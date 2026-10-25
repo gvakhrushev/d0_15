@@ -1,0 +1,154 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "831f1717f3145dd63eca4f0c9d0d9f6357b02f12",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "3fb4418f79959a53ee700efa41976a9b845e237d995ae069f8769a0103f4b88e",
+  "collector_sha256": "60aeabe322759d218dd32c0449ceee913225b0522cfd94c2c2165fd039c03f3b",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveHodgeCARDiracSquare",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.cochainDifferenceLaplacian_eq_backward_forward"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.cochainDifferenceLaplacian N ψ = ∑ r, -D0.Geometry.backwardSite N r (D0.Geometry.forwardSite N r ψ)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 34,
+            "line": 500
+          },
+          "start": {
+            "column": 0,
+            "line": 494
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 54,
+            "line": 494
+          },
+          "start": {
+            "column": 8,
+            "line": 494
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.cochainDifferenceLaplacian N ψ = ∑ r, -D0.Geometry.backwardSite N r (D0.Geometry.forwardSite N r ψ)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracSquare",
+      "name": "D0.Geometry.cochainDifferenceLaplacian_eq_backward_forward",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.backwardDifference",
+        "D0.Geometry.backwardSite",
+        "D0.Geometry.cochainDifferenceLaplacian",
+        "D0.Geometry.forwardDifference",
+        "D0.Geometry.forwardDifferenceScale",
+        "D0.Geometry.forwardSite",
+        "D0.Geometry.roleTranslateMinus",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Role",
+        "Eq",
+        "Eq.refl",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_apply",
+        "Finset.sum_congr",
+        "Finset.sum_neg_distrib",
+        "Finset.univ",
+        "HMul.hMul",
+        "HSub.hSub",
+        "Membership.mem",
+        "Nat",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "OfNat.ofNat",
+        "Pi.addCommMonoid",
+        "Pi.instNeg",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.mk.eta",
+        "Prod.snd",
+        "Real",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instNeg",
+        "Real.instSub",
+        "SetLike.instMembership",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toAddCommMonoid",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "instFintypeProd",
+        "instHMul",
+        "instHSub",
+        "instOfNatNat",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.backwardSite",
+        "D0.Geometry.cochainDifferenceLaplacian",
+        "D0.Geometry.forwardSite",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "Nat",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Pi.addCommMonoid",
+        "Pi.instNeg",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instNeg",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean"
+    }
+  ]
+}

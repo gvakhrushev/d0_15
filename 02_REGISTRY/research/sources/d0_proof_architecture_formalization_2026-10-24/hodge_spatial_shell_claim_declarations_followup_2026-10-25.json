@@ -1,0 +1,1651 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "831f1717f3145dd63eca4f0c9d0d9f6357b02f12",
+  "worktree_dirty": true,
+  "claim_registry_sha256": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+  "lean_source_digest": "3fb4418f79959a53ee700efa41976a9b845e237d995ae069f8769a0103f4b88e",
+  "collector_sha256": "54180416b64a3fd7a20a706e5964475ed46972e756977cb721932ccc937e4820",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+  "resolution_only": false,
+  "request": {
+    "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+    "mappings": [
+      {
+        "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "module_locator": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+        "theorem_atom": "spatialRoleTransport_preserves_axisInvariant",
+        "candidate_names": [
+          "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialRoleTransport_preserves_axisInvariant",
+          "D0.Geometry.spatialRoleTransport_preserves_axisInvariant",
+          "D0.spatialRoleTransport_preserves_axisInvariant"
+        ]
+      },
+      {
+        "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "module_locator": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+        "theorem_atom": "roleTransport_movingA_not_axisInvariant",
+        "candidate_names": [
+          "D0.Geometry.ArchiveHodgeSpatialShellOperator.roleTransport_movingA_not_axisInvariant",
+          "D0.Geometry.roleTransport_movingA_not_axisInvariant",
+          "D0.roleTransport_movingA_not_axisInvariant"
+        ]
+      },
+      {
+        "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "module_locator": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+        "theorem_atom": "spatialRoleTransport_commutes_spatialLaplacian",
+        "candidate_names": [
+          "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialRoleTransport_commutes_spatialLaplacian",
+          "D0.Geometry.spatialRoleTransport_commutes_spatialLaplacian",
+          "D0.spatialRoleTransport_commutes_spatialLaplacian"
+        ]
+      },
+      {
+        "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "module_locator": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+        "theorem_atom": "spatialRoleTransport_commutes_axisInvariantHodgeSquare",
+        "candidate_names": [
+          "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialRoleTransport_commutes_axisInvariantHodgeSquare",
+          "D0.Geometry.spatialRoleTransport_commutes_axisInvariantHodgeSquare",
+          "D0.spatialRoleTransport_commutes_axisInvariantHodgeSquare"
+        ]
+      },
+      {
+        "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "module_locator": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+        "theorem_atom": "spatialShellSubmodule_finrank",
+        "candidate_names": [
+          "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialShellSubmodule_finrank",
+          "D0.Geometry.spatialShellSubmodule_finrank",
+          "D0.spatialShellSubmodule_finrank"
+        ]
+      },
+      {
+        "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "module_locator": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+        "theorem_atom": "hodgeSquare_on_spatialShell",
+        "candidate_names": [
+          "D0.Geometry.ArchiveHodgeSpatialShellOperator.hodgeSquare_on_spatialShell",
+          "D0.Geometry.hodgeSquare_on_spatialShell",
+          "D0.hodgeSquare_on_spatialShell"
+        ]
+      },
+      {
+        "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "module_locator": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+        "theorem_atom": "hodgeSquare_on_spatialShell_eq",
+        "candidate_names": [
+          "D0.Geometry.ArchiveHodgeSpatialShellOperator.hodgeSquare_on_spatialShell_eq",
+          "D0.Geometry.hodgeSquare_on_spatialShell_eq",
+          "D0.hodgeSquare_on_spatialShell_eq"
+        ]
+      },
+      {
+        "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "module_locator": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+        "theorem_atom": "spatialRoleTransport_preserves_shell",
+        "candidate_names": [
+          "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialRoleTransport_preserves_shell",
+          "D0.Geometry.spatialRoleTransport_preserves_shell",
+          "D0.spatialRoleTransport_preserves_shell"
+        ]
+      },
+      {
+        "claim_id": "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "module_locator": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+        "theorem_atom": "hoppingRoleTransport_commutes_hoppingCarDirac",
+        "candidate_names": [
+          "D0.Geometry.ArchiveHodgeSpatialShellOperator.hoppingRoleTransport_commutes_hoppingCarDirac",
+          "D0.Geometry.hoppingRoleTransport_commutes_hoppingCarDirac",
+          "D0.hoppingRoleTransport_commutes_hoppingCarDirac"
+        ]
+      }
+    ]
+  },
+  "declarations": [
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialRoleTransport_preserves_axisInvariant",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "σ",
+          "type": "D0.Role ≃ D0.Role"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hσ",
+          "type": "σ D0.A = D0.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "↥(D0.Geometry.axisInvariantCochainSubmodule N)"
+        }
+      ],
+      "conclusion_whnf": "∀ (x : D0.Geometry.ArchiveRolePhaseGroup N) (s : D0.Geometry.ArchiveFockState),\n  D0.Geometry.diagonalRoleTransport σ ↑ψ (D0.Geometry.roleTranslatePlus N D0.A x, s) =\n    D0.Geometry.diagonalRoleTransport σ ↑ψ (x, s)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 18,
+            "line": 52
+          },
+          "start": {
+            "column": 0,
+            "line": 42
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 52,
+            "line": 42
+          },
+          "start": {
+            "column": 8,
+            "line": 42
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : ℕ} (σ : Equiv.Perm D0.Role),\n  D0.Geometry.FixesRoleA σ →\n    ∀ (ψ : ↥(D0.Geometry.axisInvariantCochainSubmodule N)),\n      D0.Geometry.diagonalRoleTransport σ ↑ψ ∈ D0.Geometry.axisInvariantCochainSubmodule N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      "name": "D0.Geometry.spatialRoleTransport_preserves_axisInvariant",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.A",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.FixesRoleA.symm",
+        "D0.Geometry.RoleFockPermutation.signedTransport",
+        "D0.Geometry.axisInvariantCochainSubmodule",
+        "D0.Geometry.diagonalRoleTransport",
+        "D0.Geometry.permuteRoleSite",
+        "D0.Geometry.permuteRoleSite_translatePlus",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Role",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Equiv",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "Equiv.symm",
+        "EquivLike.toFunLike",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "HMul.hMul",
+        "Int.cast",
+        "Membership.mem",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instIntCast",
+        "Real.instMul",
+        "Real.semiring",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.property",
+        "Subtype.val",
+        "congr",
+        "congrArg",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.axisInvariantCochainSubmodule",
+        "D0.Geometry.diagonalRoleTransport",
+        "D0.Role",
+        "Equiv.Perm",
+        "Membership.mem",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.val"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.spatialRoleTransport_preserves_axisInvariant",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveHodgeSpatialShellOperator.roleTransport_movingA_not_axisInvariant",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "∃ σ,\n  ¬D0.Geometry.FixesRoleA σ ∧ ∃ ψ, D0.Geometry.diagonalRoleTransport σ ↑ψ ∉ D0.Geometry.axisInvariantCochainSubmodule 1",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 22,
+            "line": 120
+          },
+          "start": {
+            "column": 0,
+            "line": 54
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 47,
+            "line": 55
+          },
+          "start": {
+            "column": 8,
+            "line": 55
+          }
+        }
+      },
+      "elaborated_type": "∃ σ,\n  ¬D0.Geometry.FixesRoleA σ ∧ ∃ ψ, D0.Geometry.diagonalRoleTransport σ ↑ψ ∉ D0.Geometry.axisInvariantCochainSubmodule 1",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      "name": "D0.Geometry.roleTransport_movingA_not_axisInvariant",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toOne",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "And",
+        "And.intro",
+        "Bool",
+        "Bool.false",
+        "Bool.false_eq_true",
+        "Bool.fintype",
+        "Bool.true",
+        "CommMonoid.toMonoid",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.A",
+        "D0.A._proof_1",
+        "D0.B",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.RoleFockPermutation.fermionSign",
+        "D0.Geometry.RoleFockPermutation.occupiedInversionCount",
+        "D0.Geometry.RoleFockPermutation.signedTransport",
+        "D0.Geometry.RoleFockPermutation.swapAB",
+        "D0.Geometry.RoleFockPermutation.transportState",
+        "D0.Geometry.axisInvariantCochainSubmodule",
+        "D0.Geometry.bVacuumCochain",
+        "D0.Geometry.bZeroIndicator",
+        "D0.Geometry.diagonalRoleTransport",
+        "D0.Geometry.fockVacuumState",
+        "D0.Geometry.permuteRoleSite",
+        "D0.Geometry.permuteRoleSite_translatePlus",
+        "D0.Geometry.roleOrderIndex",
+        "D0.Geometry.roleStep",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Geometry.witnessOrigin",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Decidable.decide",
+        "Distrib.toAdd",
+        "EmptyCollection.emptyCollection",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "Equiv",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "Equiv.swap_apply_left",
+        "Equiv.symm",
+        "EquivLike.toFunLike",
+        "Exists",
+        "Exists.intro",
+        "False",
+        "False.elim",
+        "Fin.fintype",
+        "Fin.instCommMonoid",
+        "Fin.instNeZeroHAddNatOfNat_mathlib_1",
+        "Fin.instNonUnitalCommRing",
+        "Fin.instOfNat",
+        "Finset",
+        "Finset.card",
+        "Finset.filter",
+        "Finset.filter_congr",
+        "Finset.filter_false",
+        "Finset.instEmptyCollection",
+        "Finset.instSetLike",
+        "Finset.mem_univ",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.sum_eq_single",
+        "Finset.univ",
+        "Fintype.decidablePiFintype",
+        "HAdd.hAdd",
+        "HMod.hMod",
+        "HMul.hMul",
+        "Iff.of_eq",
+        "Int",
+        "Int.cast",
+        "Int.cast_one",
+        "Int.instNegInt",
+        "LT.lt",
+        "Mathlib.Meta.NormNum.isNat_eq_false",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Membership.mem",
+        "Monoid.toMulOneClass",
+        "MulOne.toOne",
+        "MulOneClass.toMulOne",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Nat.cast_one",
+        "Nat.cast_zero",
+        "Nat.decLt",
+        "Nat.instMod",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "Neg.neg",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toMulZeroClass",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.mk.injEq",
+        "Prod.snd",
+        "RCLike.charZero_rclike",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instIntCast",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instRCLike",
+        "Real.instRing",
+        "Real.instZero",
+        "Real.semiring",
+        "Ring.toAddGroupWithOne",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.mk",
+        "Subtype.val",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.decidableEq",
+        "Zero.toOfNat0",
+        "add_zero",
+        "and_self",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_false",
+        "eq_self",
+        "false_and",
+        "funext",
+        "id",
+        "instDecidableAnd",
+        "instDecidableEqBool",
+        "instDecidableEqFin",
+        "instDecidableEqNat",
+        "instDecidableEqProd",
+        "instDecidableFalse",
+        "instDecidableNot",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMod",
+        "instHMul",
+        "instLTNat",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNat",
+        "instOfNatNat",
+        "ite",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "ite_congr",
+        "mul_one",
+        "of_decide_eq_true",
+        "of_eq_true",
+        "one_ne_zero._simp_1",
+        "zero_add"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.axisInvariantCochainSubmodule",
+        "D0.Geometry.diagonalRoleTransport",
+        "D0.Role",
+        "Equiv.Perm",
+        "Exists",
+        "Membership.mem",
+        "Nat",
+        "Not",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.val",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.roleTransport_movingA_not_axisInvariant",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialRoleTransport_commutes_spatialLaplacian",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "σ",
+          "type": "D0.Role ≃ D0.Role"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hσ",
+          "type": "σ D0.A = D0.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "φ",
+          "type": "D0.Geometry.SpatialArchivePhaseGroup N → D0.Geometry.ArchiveFockState → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.spatialDiagonalTransport σ hσ (D0.Geometry.spatialCochainLaplacian N φ) =\n  D0.Geometry.spatialCochainLaplacian N (D0.Geometry.spatialDiagonalTransport σ hσ φ)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 72,
+            "line": 164
+          },
+          "start": {
+            "column": 0,
+            "line": 141
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 54,
+            "line": 141
+          },
+          "start": {
+            "column": 8,
+            "line": 141
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : ℕ} (σ : Equiv.Perm D0.Role) (hσ : D0.Geometry.FixesRoleA σ) (φ : D0.Geometry.SpatialArchiveCochain N),\n  D0.Geometry.spatialDiagonalTransport σ hσ (D0.Geometry.spatialCochainLaplacian N φ) =\n    D0.Geometry.spatialCochainLaplacian N (D0.Geometry.spatialDiagonalTransport σ hσ φ)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      "name": "D0.Geometry.spatialRoleTransport_commutes_spatialLaplacian",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.SpatialArchiveCochain",
+        "D0.Geometry.SpatialArchivePhaseGroup",
+        "D0.Geometry.axisInvariantCochainEquivSpatial",
+        "D0.Geometry.axisInvariantCochainSubmodule",
+        "D0.Geometry.axisInvariantHodgeSquare",
+        "D0.Geometry.axisInvariant_hodgeSquare_equiv_spatialLaplacian",
+        "D0.Geometry.diagonalRoleTransport",
+        "D0.Geometry.diagonalRoleTransport_commutes_hodgeSquare",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.spatialCochainLaplacian",
+        "D0.Geometry.spatialCochainPullback",
+        "D0.Geometry.spatialCochainPullback_hodgeSquare",
+        "D0.Geometry.spatialCochainPullback_invariant",
+        "D0.Geometry.spatialDiagonalTransport",
+        "D0.Geometry.spatialRoleTransport_preserves_axisInvariant",
+        "D0.Role",
+        "DFinsupp.instEquivLikeLinearEquiv",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Equiv.Perm",
+        "EquivLike.toFunLike",
+        "LinearEquiv",
+        "Membership.mem",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.ext",
+        "Subtype.mk",
+        "Subtype.val",
+        "congrArg",
+        "id"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.SpatialArchiveCochain",
+        "D0.Geometry.spatialCochainLaplacian",
+        "D0.Geometry.spatialDiagonalTransport",
+        "D0.Role",
+        "Eq",
+        "Equiv.Perm",
+        "Nat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.spatialRoleTransport_commutes_spatialLaplacian",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialRoleTransport_commutes_axisInvariantHodgeSquare",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "σ",
+          "type": "D0.Role ≃ D0.Role"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hσ",
+          "type": "σ D0.A = D0.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "↥(D0.Geometry.axisInvariantCochainSubmodule N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.axisInvariantHodgeSquare N ⟨D0.Geometry.diagonalRoleTransport σ ↑ψ, ⋯⟩ =\n  ⟨D0.Geometry.diagonalRoleTransport σ ↑(D0.Geometry.axisInvariantHodgeSquare N ψ), ⋯⟩",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 65,
+            "line": 139
+          },
+          "start": {
+            "column": 0,
+            "line": 129
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 62,
+            "line": 129
+          },
+          "start": {
+            "column": 8,
+            "line": 129
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : ℕ} (σ : Equiv.Perm D0.Role) (hσ : D0.Geometry.FixesRoleA σ) (ψ : ↥(D0.Geometry.axisInvariantCochainSubmodule N)),\n  D0.Geometry.axisInvariantHodgeSquare N ⟨D0.Geometry.diagonalRoleTransport σ ↑ψ, ⋯⟩ =\n    ⟨D0.Geometry.diagonalRoleTransport σ ↑(D0.Geometry.axisInvariantHodgeSquare N ψ), ⋯⟩",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      "name": "D0.Geometry.spatialRoleTransport_commutes_axisInvariantHodgeSquare",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.axisInvariantCochainSubmodule",
+        "D0.Geometry.axisInvariantHodgeSquare",
+        "D0.Geometry.diagonalRoleTransport",
+        "D0.Geometry.diagonalRoleTransport_commutes_hodgeSquare",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.spatialRoleTransport_preserves_axisInvariant",
+        "D0.Role",
+        "Eq.symm",
+        "Equiv.Perm",
+        "Membership.mem",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.ext",
+        "Subtype.mk",
+        "Subtype.val"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.axisInvariantCochainSubmodule",
+        "D0.Geometry.axisInvariantHodgeSquare",
+        "D0.Geometry.diagonalRoleTransport",
+        "D0.Geometry.spatialRoleTransport_preserves_axisInvariant",
+        "D0.Role",
+        "Eq",
+        "Equiv.Perm",
+        "Membership.mem",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.mk",
+        "Subtype.val"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.spatialRoleTransport_commutes_axisInvariantHodgeSquare",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialShellSubmodule_finrank",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hL",
+          "type": "Nat.le 3 (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "Module.finrank ℝ ↥(D0.Geometry.spatialShellSubmodule N) = 96",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 61,
+            "line": 173
+          },
+          "start": {
+            "column": 0,
+            "line": 171
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 171
+          },
+          "start": {
+            "column": 8,
+            "line": 171
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ), 3 ≤ D0.archiveFibers N → Module.finrank ℝ ↥(D0.Geometry.spatialShellSubmodule N) = 96",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      "name": "D0.Geometry.spatialShellSubmodule_finrank",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.spatialShellSubmodule",
+        "D0.Geometry.spatial_shell_rank",
+        "D0.archiveFibers",
+        "Eq",
+        "LE.le",
+        "Membership.mem",
+        "Module.finrank",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "id",
+        "instLENat",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.spatialShellSubmodule",
+        "D0.archiveFibers",
+        "Eq",
+        "LE.le",
+        "Membership.mem",
+        "Module.finrank",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "instLENat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.spatialShellSubmodule_finrank",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveHodgeSpatialShellOperator.hodgeSquare_on_spatialShell",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hL",
+          "type": "Nat.le 3 (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "↥(D0.Geometry.spatialShellSubmodule N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ↑ψ) = D0.Geometry.shellEnergy (D0.archiveFibers N) ^ 2 • ↑ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 41,
+            "line": 203
+          },
+          "start": {
+            "column": 0,
+            "line": 199
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 35,
+            "line": 199
+          },
+          "start": {
+            "column": 8,
+            "line": 199
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ),\n  3 ≤ D0.archiveFibers N →\n    ∀ (ψ : ↥(D0.Geometry.spatialShellSubmodule N)),\n      D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ↑ψ) =\n        D0.Geometry.shellEnergy (D0.archiveFibers N) ^ 2 • ↑ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      "name": "D0.Geometry.hodgeSquare_on_spatialShell",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.spatialShellSubmodule",
+        "D0.Geometry.spatialShell_le_eigen",
+        "D0.archiveFibers",
+        "LE.le",
+        "Membership.mem",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.property",
+        "Subtype.val",
+        "instLENat",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.shellEnergy",
+        "D0.Geometry.spatialShellSubmodule",
+        "D0.archiveFibers",
+        "Eq",
+        "Function.hasSMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "LE.le",
+        "Membership.mem",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.semiring",
+        "Semiring.toModule",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.val",
+        "instHPow",
+        "instHSMul",
+        "instLENat",
+        "instOfNatNat",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.hodgeSquare_on_spatialShell",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveHodgeSpatialShellOperator.hodgeSquare_on_spatialShell_eq",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hL",
+          "type": "Nat.le 3 (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.spatialShellHodgeSquareCompression N hL = D0.Geometry.shellEnergy (D0.archiveFibers N) ^ 2 • LinearMap.id",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 52,
+            "line": 230
+          },
+          "start": {
+            "column": 0,
+            "line": 223
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 38,
+            "line": 223
+          },
+          "start": {
+            "column": 8,
+            "line": 223
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (hL : 3 ≤ D0.archiveFibers N),\n  D0.Geometry.spatialShellHodgeSquareCompression N hL = D0.Geometry.shellEnergy (D0.archiveFibers N) ^ 2 • LinearMap.id",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      "name": "D0.Geometry.hodgeSquare_on_spatialShell_eq",
+      "proof_dependencies": [
+        "AddCommGroup.toAddGroup",
+        "AddCommMonoid.toAddMonoid",
+        "AddGroup.toSubNegMonoid",
+        "CommMonoid.toMonoid",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeSquare_on_spatialShell",
+        "D0.Geometry.hodgeSquare_on_spatialShell_eq._simp_1_2",
+        "D0.Geometry.shellEnergy",
+        "D0.Geometry.spatialShellHodgeSquareCompression",
+        "D0.Geometry.spatialShellSubmodule",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "DistribMulAction.toDistribSMul",
+        "DistribMulAction.toMulAction",
+        "Eq",
+        "Eq.mp",
+        "Eq.trans",
+        "Function.hasSMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "LE.le",
+        "LinearMap",
+        "LinearMap.ext",
+        "LinearMap.id",
+        "LinearMap.instFunLike",
+        "LinearMap.instSMul",
+        "Membership.mem",
+        "Module.toDistribMulAction",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommGroup",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instRing",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegMonoid.toAddMonoid",
+        "Submodule",
+        "Submodule.addCommGroup",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.ext",
+        "Subtype.val",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "congr_fun",
+        "funext",
+        "id",
+        "instHPow",
+        "instHSMul",
+        "instLENat",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "smulCommClass_self"
+      ],
+      "type_dependencies": [
+        "AddCommGroup.toAddGroup",
+        "AddCommMonoid.toAddMonoid",
+        "AddGroup.toSubNegMonoid",
+        "CommMonoid.toMonoid",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.shellEnergy",
+        "D0.Geometry.spatialShellHodgeSquareCompression",
+        "D0.Geometry.spatialShellSubmodule",
+        "D0.archiveFibers",
+        "DistribMulAction.toDistribSMul",
+        "DistribMulAction.toMulAction",
+        "Eq",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "LE.le",
+        "LinearMap",
+        "LinearMap.id",
+        "LinearMap.instSMul",
+        "Membership.mem",
+        "Module.toDistribMulAction",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommGroup",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instCommMonoid",
+        "Real.instMonoid",
+        "Real.instRing",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegMonoid.toAddMonoid",
+        "Submodule",
+        "Submodule.addCommGroup",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "instHPow",
+        "instHSMul",
+        "instLENat",
+        "instOfNatNat",
+        "smulCommClass_self"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.hodgeSquare_on_spatialShell_eq",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveHodgeSpatialShellOperator.spatialRoleTransport_preserves_shell",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "σ",
+          "type": "D0.Role ≃ D0.Role"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hσ",
+          "type": "σ D0.A = D0.A"
+        }
+      ],
+      "conclusion_whnf": "Submodule.map (↑(D0.Geometry.diagonalRoleLinearEquiv σ)) (D0.Geometry.spatialShellSubmodule N) =\n  D0.Geometry.spatialShellSubmodule N",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 39,
+            "line": 320
+          },
+          "start": {
+            "column": 0,
+            "line": 292
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 44,
+            "line": 292
+          },
+          "start": {
+            "column": 8,
+            "line": 292
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : ℕ} (σ : Equiv.Perm D0.Role),\n  D0.Geometry.FixesRoleA σ →\n    Submodule.map (↑(D0.Geometry.diagonalRoleLinearEquiv σ)) (D0.Geometry.spatialShellSubmodule N) =\n      D0.Geometry.spatialShellSubmodule N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      "name": "D0.Geometry.spatialRoleTransport_preserves_shell",
+      "proof_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommMonoid.toAddMonoid",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "And",
+        "And.intro",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.FixesRoleA.symm",
+        "D0.Geometry.RoleFockPermutation.fermionSign",
+        "D0.Geometry.RoleFockPermutation.transportState",
+        "D0.Geometry.ShellHarmonic",
+        "D0.Geometry.SpatialAxis",
+        "D0.Geometry.diagonalRoleLinearEquiv",
+        "D0.Geometry.diagonalRoleTransport",
+        "D0.Geometry.diagonalRoleTransport_add",
+        "D0.Geometry.diagonalRoleTransport_right_inv",
+        "D0.Geometry.diagonalRoleTransport_shellCochain",
+        "D0.Geometry.diagonalRoleTransport_smul",
+        "D0.Geometry.permutedShellAxis",
+        "D0.Geometry.shellCochain",
+        "D0.Geometry.spatialShellSubmodule",
+        "D0.Geometry.spatialShellSubmodule.eq_1",
+        "D0.Role",
+        "DFunLike.coe",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.ndrec",
+        "Equiv.Perm",
+        "Equiv.symm",
+        "Exists.casesOn",
+        "Exists.intro",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Int.cast",
+        "LE.le",
+        "LinearEquiv.toLinearMap",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.map_span_le",
+        "Membership.mem",
+        "Module.toDistribMulAction",
+        "MulZeroClass.toSMulWithZero",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toDistribSMul",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "PartialOrder.toPreorder",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instAdd",
+        "Pi.instZero",
+        "Pi.smulWithZero",
+        "Pi.smulZeroClass",
+        "Preorder.toLE",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instIntCast",
+        "Real.instMul",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "RingHomSurjective.ids",
+        "SMulZeroClass.toSMul",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "Set",
+        "Set.instMembership",
+        "Set.range",
+        "SetLike.coe",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.add_mem",
+        "Submodule.instPartialOrder",
+        "Submodule.map",
+        "Submodule.setLike",
+        "Submodule.smul_mem",
+        "Submodule.span",
+        "Submodule.span_induction",
+        "Submodule.subset_span",
+        "Submodule.zero_mem",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "id",
+        "instHAdd",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instSMulOfMul",
+        "le_antisymm",
+        "propext",
+        "rfl",
+        "smul_zero",
+        "zero_smul"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.FixesRoleA",
+        "D0.Geometry.diagonalRoleLinearEquiv",
+        "D0.Geometry.spatialShellSubmodule",
+        "D0.Role",
+        "Eq",
+        "Equiv.Perm",
+        "LinearEquiv.toLinearMap",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "RingHomSurjective.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Submodule",
+        "Submodule.map"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.spatialRoleTransport_preserves_shell",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveHodgeSpatialShellOperator.hoppingRoleTransport_commutes_hoppingCarDirac",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "σ",
+          "type": "D0.Role ≃ D0.Role"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.CARHilbertPoint n → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hoppingRoleTransport n σ (Matrix.mulVec (D0.Geometry.hoppingCarDirac n) v) =\n  Matrix.mulVec (D0.Geometry.hoppingCarDirac n) (D0.Geometry.hoppingRoleTransport n σ v)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 46,
+            "line": 529
+          },
+          "start": {
+            "column": 0,
+            "line": 384
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 53,
+            "line": 384
+          },
+          "start": {
+            "column": 8,
+            "line": 384
+          }
+        }
+      },
+      "elaborated_type": "∀ (n : ℕ) (σ : Equiv.Perm D0.Role) (v : D0.Geometry.CARHilbertPoint n → ℝ),\n  D0.Geometry.hoppingRoleTransport n σ (Matrix.mulVec (D0.Geometry.hoppingCarDirac n) v) =\n    Matrix.mulVec (D0.Geometry.hoppingCarDirac n) (D0.Geometry.hoppingRoleTransport n σ v)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      "name": "D0.Geometry.hoppingRoleTransport_commutes_hoppingCarDirac",
+      "proof_dependencies": [
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "Bool",
+        "Bool.fintype",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint",
+        "D0.Geometry.ArchiveRolePhaseProductCarrier.permuteRole",
+        "D0.Geometry.CARHilbertPoint",
+        "D0.Geometry.RoleFockPermutation.signedTransport",
+        "D0.Geometry.fockGamma",
+        "D0.Geometry.fockGamma_signed_commute",
+        "D0.Geometry.hoppingCarDirac",
+        "D0.Geometry.hoppingRoleTransport",
+        "D0.Geometry.spatialDiracComponent",
+        "D0.Geometry.spatialDiracComponent_permute",
+        "D0.Role",
+        "D0.archiveFibers",
+        "D0.archivePhaseIndex",
+        "DFunLike.coe",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.rec",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Equiv",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "Equiv.sum_comp",
+        "EquivLike.toFunLike",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_comm",
+        "Finset.sum_congr",
+        "Finset.sum_mul",
+        "Finset.univ",
+        "Fintype.sum_prod_type",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Int.cast",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Matrix.mulVec",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Prod",
+        "Prod.casesOn",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instCommSemiring",
+        "Real.instIntCast",
+        "Real.instMul",
+        "Real.instSemigroup",
+        "Real.normedCommRing",
+        "Semigroup.toMul",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Trans.trans",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "funext",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "instTransEq",
+        "mul_assoc",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint",
+        "D0.Geometry.CARHilbertPoint",
+        "D0.Geometry.hoppingCarDirac",
+        "D0.Geometry.hoppingRoleTransport",
+        "D0.Role",
+        "D0.archiveFibers",
+        "D0.archivePhaseIndex",
+        "Eq",
+        "Equiv.Perm",
+        "Fin.fintype",
+        "Matrix.mulVec",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Real",
+        "Real.normedCommRing",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.hoppingRoleTransport_commutes_hoppingCarDirac",
+      "source_path": null
+    }
+  ]
+}

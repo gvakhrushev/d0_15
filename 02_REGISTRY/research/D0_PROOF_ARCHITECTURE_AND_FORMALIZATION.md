@@ -5283,6 +5283,15 @@ header explicitly distinguishes it from the Hodge/difference operator.
 inequality. Their statements do not refer to `ker (carDirac n)` or its
 `Module.finrank`.
 
+A follow-up finite proof now closes the literal hopping matrix at `L=2` only:
+`carDirac_square_eq_four_id_at_zero` proves `D² = 4 I`, and
+`carDirac_zero_kernel_trivial_at_zero` proves every vector in its kernel is
+zero. This is a counterexample to reading the scaffold's value 16 as the
+kernel dimension of the registered hopping matrix at every period. It does
+not determine the kernel at larger periods, establish a uniform finrank
+formula, or resolve the absent Book 06 source unit; the registry row remains
+OPEN pending source reconciliation and owner review.
+
 The similarly numbered theorem
 `hodgeCarDirac_kernel_finrank (N) :
 Module.finrank ℝ (LinearMap.ker (hodgeCarDiracₗ N)) = 16` is for the distinct
@@ -5956,3 +5965,58 @@ values are:
 | `hodge_shell_energy_limit_declaration_2026-10-25.json` | `35ca1f710fc574f90ec4e71a606a3a11a5b239431c69c5c4a03af9f11ffbaed1` |
 | `hodge_shell_rank_l2_control_declaration_2026-10-25.json` | `c4514380155772062892a1fe388fffafb07cc0f57dda032f6ebe4ae07e2f92f1` |
 | `car_dirac_square_l2_no_go_declaration_2026-10-25.json` | `5166885f0aa5b9bdb1d720b5336e95c4c9727364a492926739bcab969244a3f2` |
+
+### Literal CAR hopping zero-mode follow-up: exact `L=2` exclusion (25 October 2026)
+
+The current hopping operator admits a stronger finite control than the earlier
+square-versus-Laplacian no-go. At `n=0` (`L=2`), each spatial role block is a
+coordinate flip. The exact integer spatial controls prove each block squares
+to identity and that the blocks commute. The already-owned finite CAR
+anticommutation relations then give
+`carDirac_square_eq_four_id_at_zero : carDirac 0 * carDirac 0 = 4 • 1`.
+Consequently `carDirac_zero_kernel_trivial_at_zero` proves
+`carDirac 0 *ᵥ v = 0 → v = 0` on the complete site × Fock carrier.
+
+The computation is confined to the 16-site spatial factor and uses integer
+entries; the CAR cross terms are discharged from the existing creation and
+annihilation relations. The compiled square and kernel inventories record the
+resulting exact trust footprint, including these finite `native_decide`
+controls. No new axiom or `sorry` was introduced. The dense 256-by-256
+matrix-square proof path was discarded after its narrow build remained
+CPU-bound without diagnostics; it is not part of the artifact.
+
+This is an exact mathematical counterexample to interpreting the scaffold
+`carDiracKernelDim := 16` as the kernel dimension of the current `carDirac`
+at all periods: the actual kernel is zero at `L=2`. It does not prove an
+all-period kernel formula, transfer the separate Hodge kernel, or close the
+source locator. The zero-mode and square claim rows remain OPEN, with their
+source reconciliation and owner review still outstanding; C0 and physical
+GR status are unchanged.
+
+The current-source inventories were written as follow-up snapshots rather
+than replacing the prior records. All 14 inventories have
+`lean_source_digest=3fb4418f79959a53ee700efa41976a9b845e237d995ae069f8769a0103f4b88e`,
+`snapshot_commit=831f1717f3145dd63eca4f0c9d0d9f6357b02f12`, and
+`worktree_dirty=true`:
+
+| Inventory | SHA-256 |
+|---|---|
+| `car_zero_mode_claim_declarations_followup_2026-10-25.json` | `ae52c64e8f92f68fda062430082c4e7d7a8838ca4c440e6e1d3c264fb500df3f` |
+| `car_dirac_square_claim_declarations_followup_2026-10-25.json` | `2e0b530f0c3adab47bc21b552f9e2db06d7ebdab27cdea5044a4471c38194e9d` |
+| `car_spectrum_amplification_claim_declarations_followup_2026-10-25.json` | `1ff1f7aa991f8be9a8a51681681e65dc054d273a3500f18a470245f430bc2a7c` |
+| `dirac_heattrace_multiplicity_claim_declarations_followup_2026-10-25.json` | `d31bb6b78975811265ca27ca75d0049201e242191be9b2576b20a183f6d0096b` |
+| `car_dirac_square_l2_no_go_declaration_followup_2026-10-25.json` | `c277a8cba05f37e944378462d565105f595fff0c88c1b0dcad5c770fff54b22a` |
+| `car_dirac_square_l2_identity_declaration_2026-10-25.json` | `9bb3bcd36991434534b6557e628f5dfe87254ec5d952a57bb48eca9884735a12` |
+| `car_dirac_l2_zero_kernel_trivial_declaration_2026-10-25.json` | `ae92bda5a021fc10f185b555302427a6cb7df0cc71dcf203464e585772bc1661` |
+| `hodge_car_dirac_square_declaration_followup_2026-10-25.json` | `c4db89c7eaee8f76d134de4ff1989991b045c9ad61f23567fe5b81498c2b1bb5` |
+| `hodge_car_dirac_kernel_declaration_followup_2026-10-25.json` | `b693ccc26e8e3d04434e01d119de4e6ece1111d12f038425295d187a3875fc0d` |
+| `hodge_square_backward_forward_declaration_followup_2026-10-25.json` | `48f52c57b3e3c52105dcb3eabc0ccbd0f3e4bf74e63dc15d0ab8378356809d44` |
+| `hodge_car_dirac_l2_normalization_declaration_followup_2026-10-25.json` | `bf13475a53cf68a9dc831dc33359ad313eecfdc346b22e31cd177a00fc116d1f` |
+| `hodge_spatial_shell_claim_declarations_followup_2026-10-25.json` | `5b79d0d70286ab114f5d7e602eada37ee40efbc1ebb16e03f09cd9973650a904` |
+| `hodge_shell_energy_limit_declaration_followup_2026-10-25.json` | `8027c36fa674e3a7b2c7a566c23a09dd8709f842c4a4eb9523ef4838400122d0` |
+| `hodge_shell_rank_l2_control_declaration_followup_2026-10-25.json` | `1d00bd41ad5b32e985f99474855b4a09e6a7f962b967a62f700a1daef58ea880` |
+
+The regression now checks the exact `L=2` square and kernel types and their
+axiom closures together with the existing CAR/Hodge declarations. This
+checkpoint is scoped finite mathematics; it does not promote either OPEN
+claim or change physical D0 status.

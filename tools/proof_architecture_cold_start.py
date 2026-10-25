@@ -202,6 +202,8 @@ CASES: list[dict[str, Any]] = [
             "hodgeCarDirac_kernel_finrank constant Fock fibre 16",
             "spatialShellSubmodule_finrank hodgeSquare_on_spatialShell shell rank 96 A invariant",
             "shellEnergy_tendsto_two_pi spatial_shell_rank_l2 L 2 control",
+            "carDirac_square_eq_four_id_at_zero carDirac_zero_kernel_trivial_at_zero L 2 exact CAR control",
+            "car_dirac_square_l2_identity_declaration car_dirac_l2_zero_kernel_trivial_declaration",
             "car zero mode claim declarations 2026 10 25",
             "hodge car dirac kernel declaration 2026 10 25",
             "car dirac square claim declarations 2026 10 25",
@@ -226,25 +228,32 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracShell.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_zero_mode_claim_declarations_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_kernel_declaration_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_claim_declarations_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_spectrum_amplification_claim_declarations_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/dirac_heattrace_multiplicity_claim_declarations_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_square_declaration_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_square_backward_forward_declaration_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_l2_normalization_declaration_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_spatial_shell_claim_declarations_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_shell_energy_limit_declaration_2026-10-25.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_shell_rank_l2_control_declaration_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_zero_mode_claim_declarations_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_kernel_declaration_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_claim_declarations_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_spectrum_amplification_claim_declarations_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/dirac_heattrace_multiplicity_claim_declarations_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_square_declaration_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_square_backward_forward_declaration_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_l2_normalization_declaration_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_spatial_shell_claim_declarations_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_shell_energy_limit_declaration_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_shell_rank_l2_control_declaration_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_l2_no_go_declaration_followup_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_l2_identity_declaration_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_l2_zero_kernel_trivial_declaration_2026-10-25.json",
         ],
         "scope_review": (
             "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001, D0-ARCHIVE-CAR-DIRAC-SQUARE-001, "
             "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001, and "
             "D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001 remain OPEN: their mapped "
-            "ArchiveCARDirac declarations prove arithmetic constants, not the kernel, "
-            "square, spinor decomposition, continuum modes, or heat trace of the "
-            "registered operators. Separate "
+            "ArchiveCARDirac mapped declarations remain arithmetic constants. The "
+            "finite L=2 no-kernel theorem proves D^2=4I for the literal hopping "
+            "matrix and excludes a zero mode only on that carrier; it refutes a "
+            "16-dimensional kernel reading at L=2 without proving an all-period "
+            "kernel theorem or changing the OPEN claim. The scoped L=2 square "
+            "does not prove the registered all-period square, spinor decomposition, "
+            "continuum modes, or heat trace. Separate "
             "Hodge-cochain results already prove hodgeCarDirac_sq, its four-role oriented "
             "difference formula, the 16-dimensional Hodge kernel, and the L=2 factor-two "
             "graph-diagonal comparison. The spatial shell has rank 96 and square-energy "
