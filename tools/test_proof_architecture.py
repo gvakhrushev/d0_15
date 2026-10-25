@@ -647,6 +647,78 @@ class ProofArchitectureTests(unittest.TestCase):
             0,
         )
 
+    def test_metric_provenance_pins_proper_lorentz_orbit_without_acceptance(self) -> None:
+        crosswalk_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "metric_provenance_crosswalk_2026-10-26_46328dbe.json"
+        )
+        payload = crosswalk_path.read_bytes()
+        self.assertEqual(
+            hashlib.sha256(payload).hexdigest(),
+            "203bee133a15faf74ab3db9088de8074287407fe9e08e720af8149d94bff5a7c",
+        )
+        crosswalk = json.loads(payload)
+        self.assertEqual(crosswalk["snapshot_commit"],
+                         "46328dbe01473c2188f715b9b15676cbb9ec8661")
+        self.assertFalse(crosswalk["worktree_dirty"])
+        self.assertEqual(crosswalk["explicit_declaration_locator_disposition"],
+                         "all_resolved")
+        locators = [
+            row for row in crosswalk["explicit_declaration_locators"]
+            if row.get("name")
+        ]
+        self.assertEqual(len(locators), 32)
+        self.assertEqual(
+            [row for row in crosswalk["explicit_declaration_locators"]
+             if "_omitted_items" in row],
+            [{"_omitted_items": 1}],
+        )
+        locators = {
+            row["name"]: row for row in locators
+        }
+        required = {
+            "D0.Geometry.IsProperRoleLorentz",
+            "D0.Geometry.a4dSameFrameOrientation",
+            "D0.Geometry.a4dRightLorentz_sameOrientation_isProper",
+            "D0.Geometry.a4dRightProperLorentz_gram_complete",
+        }
+        for name in required:
+            locator = locators[name]
+            self.assertEqual(locator["resolution_status"], "resolved")
+            self.assertEqual(locator["source"]["ref"],
+                             "89d80ef66a9cf1fe540360e258209c2b98bf84e8")
+            self.assertEqual(locator["compiled_declaration"]["module"],
+                             "D0.Geometry.A4DStarFiniteLorentzQuotient")
+        supplement_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "proper_role_lorentz_orbit_declarations_2026-10-26.json"
+        )
+        self.assertEqual(
+            hashlib.sha256(supplement_path.read_bytes()).hexdigest(),
+            "9a060dba84a8053b45f5a4e56ccc4b34a4db988c36cae0b55c9659cd9a11ad4c",
+        )
+        supplement = json.loads(supplement_path.read_text(encoding="utf-8"))
+        self.assertEqual(supplement["snapshot_commit"],
+                         "46328dbe01473c2188f715b9b15676cbb9ec8661")
+        self.assertTrue(supplement["worktree_dirty"])
+        self.assertEqual(supplement["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(supplement["public_import_root"], "D0.All")
+        declarations = {row["name"]: row for row in supplement["declarations"]}
+        self.assertEqual(set(declarations), required | {
+            "D0.Geometry.a4d_complete_proper_orbit_coordinates"
+        })
+        proper_field_orbit = declarations[
+            "D0.Geometry.a4d_complete_proper_orbit_coordinates"
+        ]
+        self.assertEqual(proper_field_orbit["declaration_kind"], "theorem")
+        self.assertIn("a4dSameFrameOrientation", proper_field_orbit["elaborated_type"])
+        self.assertIn("IsProperRoleLorentz", proper_field_orbit["elaborated_type"])
+        self.assertIn("time orientation unrestricted", crosswalk["reported_state"])
+        self.assertEqual(crosswalk["semantic_relation_status"], "unresolved")
+        self.assertFalse(crosswalk["acceptance_inferred"])
+
     def test_result_crosswalk_stale_current_source_is_citation_only(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)
@@ -1207,7 +1279,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26.json"
+            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_orbit.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1554,7 +1626,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26.json",
+            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_orbit.json",
             require_current=True,
         )
 
@@ -1824,7 +1896,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_orbit.json"
         )
         inventory_bytes = inventory_path.read_bytes()
         inventory = json.loads(inventory_bytes)
@@ -1882,7 +1954,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_orbit.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
@@ -1956,7 +2028,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_matrix_partial_trace_current_declarations_2026-10-26.json"
+            / "finite_matrix_partial_trace_current_declarations_2026-10-26_orbit.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -2036,13 +2108,13 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "archive_shift_topology_current_declarations_2026-10-26.json"
+            / "archive_shift_topology_current_declarations_2026-10-26_orbit.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
         self.assertEqual(
             inventory["snapshot_commit"],
-            "046181be15f5f7b5891bec409c2158e9a5a43c43",
+            "46328dbe01473c2188f715b9b15676cbb9ec8661",
         )
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
         self.assertEqual(inventory["public_import_root"], "D0.All")
@@ -2238,7 +2310,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "source_port_preparation_tensor_inventory_2026-10-26.json"
+            / "source_port_preparation_tensor_inventory_2026-10-26_orbit.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
@@ -2318,7 +2390,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "flat_tensor_shared_api_declarations_2026-10-26.json"
+            / "flat_tensor_shared_api_declarations_2026-10-26_orbit.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())

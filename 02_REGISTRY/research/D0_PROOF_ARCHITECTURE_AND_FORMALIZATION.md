@@ -7486,3 +7486,53 @@ These refreshes make declaration-level reuse evidence current and reproducible;
 they do not classify or accept the full C0 corpus. Physical premises,
 application semantics outside the compiled adapters, and independent C0 review
 remain open.
+
+### Proper determinant-component refinement (26 October 2026)
+
+The finite quotient module now records the relative determinant-orientation
+condition explicitly and proves a second orbit-completeness result. For
+nondegenerate reference solder frames, equal site Grams plus
+`0 < det(Theta) * det(Psi)` give a Lorentz witness with determinant one. At
+field level, equality of every site Gram and dressed link, together with that
+orientation condition at every site, is equivalent to one site-dependent
+determinant-one frame action relating the coframe and link fields. The
+definition `IsProperRoleLorentz` means `IsRoleLorentz` plus `det = 1`; it does
+not impose time orientation, so the `SO+(1,3)` restriction remains open.
+
+The Lean source is pinned at
+`89d80ef66a9cf1fe540360e258209c2b98bf84e8`, SHA-256
+`0e717efd1962074422afb13b4f88493da72539e4b28a87e09dae9bfd61660ac3`.
+Both the targeted `D0.Geometry.A4DStarFiniteLorentzQuotient` build and the
+public `D0.All` build passed; the latter completed **4,581/4,581** jobs. The
+updated `metric-provenance` source pin resolves all **33/33** explicit
+declaration locators in the compiled crosswalk. Its clean snapshot is
+`46328dbe01473c2188f715b9b15676cbb9ec8661`, Lean-source digest
+`7888e2076ddc1403fb94216385024c767171d3b50743f4926c0898d7f14dd610`, and
+crosswalk SHA-256 `203bee133a15faf74ab3db9088de8074287407fe9e08e720af8149d94bff5a7c`.
+The crosswalk display bounds detail arrays at 32 entries; a five-declaration
+compiled inventory supplies the full signatures for the new orientation
+definitions and theorems. That supplement is
+`sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26.json`,
+SHA-256 `9a060dba84a8053b45f5a4e56ccc4b34a4db988c36cae0b55c9659cd9a11ad4c`.
+It records the same Lean-source digest and snapshot commit with
+`worktree_dirty=true` because other evidence and test files were being added;
+all five requested declarations resolve exactly.
+
+The six current declaration inventories were recaptured at the same clean
+snapshot instead of rewriting their earlier 26 October files:
+
+| Current inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_orbit.json` | 15/15 | `382cd2db049d9c1add8b93b17de195390af07df86cd546a19b266ac5823c8d52` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_orbit.json` | 36/36 | `750cc68f8624ddf5ba32e3b72fc13acd7019650dfffa8963f52eb1b6fb6630a3` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_orbit.json` | 9/9 | `519dd21828b991afdbaa2550846b65dccc50e116b033429ae50e6b5879fd6fdc` |
+| `archive_shift_topology_current_declarations_2026-10-26_orbit.json` | 26/26 | `0b64ac7df88a658d044d88e86767f69d61b12e54084b39cf7aeaa49f0114b680` |
+| `source_port_preparation_tensor_inventory_2026-10-26_orbit.json` | 73/73 | `d29640781212be61bdadbc35ea59fd917be1a62df4d08d11cb3f020ca8ef692f` |
+| `flat_tensor_shared_api_declarations_2026-10-26_orbit.json` | 4/4 | `590effa77065bbfc80daba8cd17a2d05aaceb05189c85d5f102b21b496de30bc` |
+
+The proof-architecture suite passes **57/57** tests, including the bounded
+crosswalk and proper-orbit declaration checks. These are exact finite Lean
+results and source-location evidence only. The selected-action-to-Lean-carrier
+map, time orientation, global connection elimination, physical metric/source
+selection, semantic relation to the pinned source, exact claim locator, and
+independent C0 acceptance remain open; no physical GR closure is inferred.
