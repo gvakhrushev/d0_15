@@ -5089,3 +5089,36 @@ under Lean 4.30.0. On the final tree, repository validation passed with
 `stale=0`; the formalization-debt audit remained at five findings, its
 unchanged baseline; gravity assembly reported `valid=true` and
 `scientific_promotion=false`; and the EOL-aware diff check passed.
+
+### Clean compiled claim-candidate availability snapshot (25 October 2026)
+
+The all-claims resolver compiled the public `D0.All` import under Lean 4.30.0
+and extracted exact candidate-name availability for all 889 registry claims.
+At snapshot `14932cfd156877888716790824d637c0d0acbcd7`, the worktree was clean;
+the Lean-source digest is
+`66ef38e495f22833eab58841ce5365575e96e2ecef382473d47b4986b2a07a8b`, the
+claim-registry digest is
+`e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5`, and the
+collector digest is
+`dd33d4ab45852eb1d2aef0311f00db6249832d41f9957a50e29b5e3e51f953a8`.
+
+The registry expands to 2,751 candidate mappings: 2,575 theorem-name atoms
+and 176 rows without a theorem atom. Those mappings contain 8,458 candidate
+references to 8,323 distinct Lean names. The compiled environment contains
+2,512 of those names and does not contain 5,811. At least one candidate name
+resolves for 2,382 mappings and for 680 claim IDs; all listed theorem atoms
+resolve for 635 claim IDs. Found names span 646 owner modules. These are exact
+locator-availability results only. A matching declaration name does not
+establish that its elaborated theorem has the claim's meaning, and a missing
+candidate name does not establish that no equivalent theorem exists.
+
+The complete resolution-only artifact is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_2026-10-25.json`.
+Its Windows working-tree representation is 2,546,688 bytes (SHA-256
+`8c7961f6e4497eed7b8add7a4375593ba9eb83c19da0f7d16ce1ba098af5d480`); its
+LF-normalized representation is also 2,546,688 bytes with the same SHA-256.
+The artifact records public import root `D0.All` and `resolution_only=true`.
+It does not freeze C0, assign semantic coverage, change claim/owner status,
+or discharge the open scientific and physical premises. C0 remains open and
+independently unaccepted; #334 and the existing physical owners remain
+preserved.
