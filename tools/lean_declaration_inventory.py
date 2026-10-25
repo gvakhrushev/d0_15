@@ -52,6 +52,12 @@ def validate_collector_records(names: list[str], records: list[dict[str, Any]]) 
             )
 
 
+def write_output(path: pathlib.Path, rendered: str) -> None:
+    """Write deterministic UTF-8 JSON on Python versions before 3.10 too."""
+    with path.open("w", encoding="utf-8", newline="\n") as stream:
+        stream.write(rendered)
+
+
 def candidate_names(module: str, atom: str) -> list[str]:
     """Return plausible exact names; the elaborated environment resolves them."""
     names = []
@@ -558,7 +564,7 @@ def main() -> int:
     }
     rendered = json.dumps(output, ensure_ascii=False, indent=2) + "\n"
     if args.output:
-        args.output.write_text(rendered, encoding="utf-8", newline="\n")
+        write_output(args.output, rendered)
     else:
         print(rendered, end="")
     return 0

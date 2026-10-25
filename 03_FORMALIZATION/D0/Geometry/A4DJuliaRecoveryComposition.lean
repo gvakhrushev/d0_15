@@ -212,6 +212,15 @@ theorem archiveJuliaProperRoleLorentzEquiv_det_one
   change LinearMap.det (Matrix.toLin' Λ.transpose) = 1
   rw [LinearMap.det_toLin', Matrix.det_transpose, hDet]
 
+/-- Assemble a role-indexed family of proper row-action Lorentz matrices into
+the source-frame linear equivalences used by the Julia query constructor.
+The transpose convention is the one already proved for the coframe readout. -/
+noncomputable def archiveJuliaProperRoleLorentzFamily
+    (Λ : Role → Matrix Role Role ℝ)
+    (hDet : ∀ r, Matrix.det (Λ r) = 1) :
+    Role → RoleSpace ≃ₗ[ℝ] RoleSpace :=
+  fun r => archiveJuliaProperRoleLorentzEquiv (Λ r) (hDet r)
+
 /-- Eq. (27) applied to the concrete proper row-action Lorentz endpoint
 package. The remaining assumptions are the actual proper-Lorentz matrix and
 the non-null source shift; physical query admission is still external. -/
@@ -443,6 +452,89 @@ theorem principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery
       ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
       α r hQuery hColumn hIso hDet hInputNorm hα hCovector hBranch
   exact hJoint
+
+/-- Proper row-action Lorentz matrices supply the endpoint isometry and
+determinant witnesses needed by the joined Eq. (27)/(28) application. The
+query family is built from those same transposed maps, so the two decoders and
+the all-grade exterior lift recover one common endpoint map. The selected
+input remains non-null and Eq. (28)'s observed-covector and positive-branch
+conditions remain explicit. This is an algebraic endpoint specialization;
+physical admission of the matrix family is still external. -/
+theorem principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz
+    (F L : Matrix Role Role ℝ)
+    (Λ : Role → Matrix Role Role ℝ)
+    (hΛ : ∀ r, IsRoleLorentz (Λ r))
+    (hDet : ∀ r, Matrix.det (Λ r) = 1)
+    (α : Role → Module.Dual ℝ RoleSpace)
+    (r : Role)
+    (hInputNorm : archiveJuliaSourceLorentzForm
+      ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
+      ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ))) ≠ 0)
+    (hα : α r ((principalFrameColumnMatrix F L).mulVec
+      (Pi.single r (1 : ℝ))) = 1)
+    (hCovector : archiveJuliaQueryNullMetricCovector
+      archiveJuliaSourceLorentzForm
+      (principalFrameObservedQueryVector
+        (principalFrameJuliaQueryFamily F L
+          (archiveJuliaProperRoleLorentzFamily Λ hDet)) r)
+      (principalFrameJuliaQueryFamily F L
+        (archiveJuliaProperRoleLorentzFamily Λ hDet) r) (α r) ≠ 0)
+    (hBranch : 0 < 1 +
+      archiveJuliaSourceLorentzForm
+        (principalFrameObservedQueryVector
+          (principalFrameJuliaQueryFamily F L
+            (archiveJuliaProperRoleLorentzFamily Λ hDet)) r)
+        (principalFrameObservedQueryVector
+          (principalFrameJuliaQueryFamily F L
+            (archiveJuliaProperRoleLorentzFamily Λ hDet)) r) *
+      α r ((archiveJuliaProperRoleLorentzFamily Λ hDet r)
+        (archiveJuliaQueryNullCanonicalWitness archiveJuliaSourceLorentzForm
+          (principalFrameObservedQueryVector
+            (principalFrameJuliaQueryFamily F L
+              (archiveJuliaProperRoleLorentzFamily Λ hDet)) r)
+          (principalFrameJuliaQueryFamily F L
+            (archiveJuliaProperRoleLorentzFamily Λ hDet) r) (α r)))) :
+    (principalFrameObservedNullQueryFrameReadout
+      (fun _ => archiveJuliaSourceLorentzForm)
+      (fun _ => archiveJuliaSourceLorentzForm)
+      (principalFrameJuliaQueryFamily F L
+        (archiveJuliaProperRoleLorentzFamily Λ hDet)) α r =
+      archiveJuliaProperRoleLorentzFamily Λ hDet r) ∧
+    (archiveExteriorFrameLiftRoleReadout
+      ((archiveJuliaSourceLorentzForm
+        ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
+        ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ))))⁻¹ •
+        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm
+          ((principalFrameColumnMatrix F L).mulVec
+            (Pi.single r (1 : ℝ)))).comp
+          (principalFrameJuliaQueryFamily F L
+            (archiveJuliaProperRoleLorentzFamily Λ hDet) r -
+            archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+              ((principalFrameJuliaQueryFamily F L
+                (archiveJuliaProperRoleLorentzFamily Λ hDet) r).comp
+                archiveJuliaSourceVolumeEquiv.symm.toLinearMap))) =
+      archiveJuliaProperRoleLorentzFamily Λ hDet r) ∧
+    (archiveExteriorFrameLift
+      (archiveJuliaProperRoleLorentzFamily Λ hDet r) =
+      (archiveJuliaSourceLorentzForm
+        ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
+        ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ))))⁻¹ •
+        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm
+          ((principalFrameColumnMatrix F L).mulVec
+            (Pi.single r (1 : ℝ)))).comp
+          (principalFrameJuliaQueryFamily F L
+            (archiveJuliaProperRoleLorentzFamily Λ hDet) r -
+            archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+              ((principalFrameJuliaQueryFamily F L
+                (archiveJuliaProperRoleLorentzFamily Λ hDet) r).comp
+                archiveJuliaSourceVolumeEquiv.symm.toLinearMap))) := by
+  exact principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery
+    F L (archiveJuliaProperRoleLorentzFamily Λ hDet) α r
+    (archiveJuliaProperRoleLorentzEquiv_form_isometry (Λ r) (hΛ r) (hDet r))
+    (by
+      simpa only [archiveJuliaProperRoleLorentzFamily] using
+        archiveJuliaProperRoleLorentzEquiv_det_one (Λ r) (hDet r))
+    hInputNorm hα hCovector hBranch
 
 end
 end D0.Geometry

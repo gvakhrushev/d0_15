@@ -7,6 +7,7 @@ import json
 import pathlib
 import subprocess
 import sys
+import tempfile
 import unittest
 from unittest.mock import patch
 
@@ -15,6 +16,12 @@ import lean_declaration_inventory as inventory
 
 
 class DeclarationInventoryTests(unittest.TestCase):
+    def test_output_writer_supports_python_39_and_keeps_lf_newlines(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = pathlib.Path(directory) / "inventory.json"
+            inventory.write_output(path, '{\n  "ok": true\n}\n')
+            self.assertEqual(path.read_bytes(), b'{\n  "ok": true\n}\n')
+
     def test_candidate_names_keep_alternate_registry_qualification_forms(self):
         self.assertEqual(
             inventory.candidate_names("D0.Matter.ArchiveStressCoupling", "Matter.matterStressMatrix_symmetric"),

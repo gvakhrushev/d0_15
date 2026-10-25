@@ -2670,3 +2670,60 @@ artifact SHA-256
 `gr_assembly.py check` remains valid for 54 active results with
 `scientific_promotion=false`. This is a source-provenance refinement only;
 RAW-216 and physical GR selection remain open.
+
+### Role-indexed proper Lorentz specialization of the joined Julia recovery (25 October 2026)
+
+The source is the published #334 snapshot
+`fe5cf335da04cac14e50407b03f98b96be17dc52`, §8.4, equations (26)–(28),
+`A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, blob
+`1c8d59e5533b443d9a015dc4512cfbc160ae7e62`. The declared downstream
+consumer remains §5.1 of the exact AF radial coframe equivalence source, blob
+`734e21ae6bc04ff3446ad15858936d417fdd2e55`.
+
+`D0.Geometry.A4DJuliaRecoveryComposition` now assembles a role-indexed family
+of the repository's proper row-action Lorentz matrices into the transposed
+source-frame equivalences used by the principal-frame CAR query. The new
+`principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz`
+composes that same family with the existing Eq. (27)/(28) proof. Its
+conclusion gives one endpoint map from the observed null-query readout, the
+CAR/exterior endpoint readout, and the full exterior frame lift. The proof
+reuses `IsRoleLorentz` preservation of the fixed source form and the existing
+determinant-one map; it adds no parallel decoder or independent endpoint.
+
+The hypotheses remain exact: every role matrix has `IsRoleLorentz` and
+determinant one; the selected principal-frame source norm is nonzero; the
+input covector is normalized; and Eq. (28)'s projected-covector and positive
+branch conditions are supplied. This is the non-null chart of the finite
+algebraic composition. It does not identify an admitted physical endpoint
+with these matrices, prove time orientation or query admission, establish
+all-jet/variational transport or complete price/source selection, or close
+GR. No claim or assembly application was accepted by this specialization.
+
+The exact declaration inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_joint_recovery_inventory_2026-10-25.json`.
+It records snapshot `1ca175b68f20d4ccf26927d8d3b027aafbb48343`
+(`worktree_dirty=true`), Lean source digest
+`8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231`,
+generated collector SHA-256
+`b246de83143607fbb866612a7c5b0ce83c71307561a37497b3c2fd1dab25a8db`,
+and Lean `leanprover/lean4:v4.30.0`. Its elaborated type retains the Lorentz,
+determinant, non-null, normalization, projected-covector, and positive-branch
+hypotheses. The theorem's transitive axiom footprint is
+`Classical.choice`, `Quot.sound`, `propext`, and the existing private
+`native_decide` axiom from `archiveCreatorPermSign`; the new endpoint adapter
+does not remove or conceal that inherited computation boundary. The module
+SHA-256 is
+`c43919374a019e7a9a27f8099edf6206cfa9226f0a8fa7198114d0ec4450349a`, and the
+inventory SHA-256 is
+`34ec4a2091bb81ef36337fab5d7d8a3e219e3749045239bf13a914ece2b6aa09`.
+
+The module narrow build passed under Lean 4.30.0 (3,023 Lake jobs), and the
+public `D0.All` final build passed (4,569 jobs). The inventory extractor's
+`--output` path also had a Python 3.9.6 compatibility defect: `Path.write_text`
+does not accept `newline` there. It now writes through `Path.open`, and its
+focused tests pass 15/15. Extractor SHA-256 is
+`d2f177774f3cd95c28066b4052d0c712e43abe1f8a79ccaaa03cbb5a4abaf943`; test
+SHA-256 is
+`0768c3c5c974044ab7853c5ce70cf6bf48f80f5b4d172d85fc4066efe7f54813`.
+These build and inventory checks verify the Lean application and its recorded
+trust boundary; physical admission and semantic source acceptance remain open.
