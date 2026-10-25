@@ -308,6 +308,77 @@ theorem j2DetectorMetricPath_hasFDerivAt_symmetric_direction
 
 end J2MetricPathDerivative
 
+section J2MetricFullDerivative
+
+local notation "RoleMat" => Matrix Role Role ℝ
+
+local instance : NormedRing RoleMat := Matrix.frobeniusNormedRing
+local instance : NormedAlgebra ℝ RoleMat := Matrix.frobeniusNormedAlgebra
+
+/-- Transpose is an isometry for the Frobenius norm on finite Role matrices. -/
+def j2DetectorMetricPath_transposeIsometry : RoleMat ≃ₗᵢ[ℝ] RoleMat where
+  toLinearEquiv :=
+    { toFun := Matrix.transpose
+      invFun := Matrix.transpose
+      left_inv := by intro M; simp
+      right_inv := by intro M; simp
+      map_add' := by intro M N; exact Matrix.transpose_add M N
+      map_smul' := by intro t M; exact Matrix.transpose_smul t M }
+  norm_map' := Matrix.frobenius_norm_transpose
+
+@[simp] theorem j2DetectorMetricPath_transposeIsometry_apply (H : RoleMat) :
+    j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.toContinuousLinearMap H =
+      H.transpose := rfl
+
+/-- Continuous linear part of the nonlinear source metric at the flat frame. -/
+def j2DetectorMetricPath_tangent : RoleMat →L[ℝ] RoleMat :=
+  roleLorentzMetric •
+      j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.toContinuousLinearMap +
+    MulOpposite.op (1 : RoleMat) •
+      (ContinuousLinearMap.mul ℝ RoleMat).flip roleLorentzMetric
+
+@[simp] theorem j2DetectorMetricPath_tangent_apply (H : RoleMat) :
+    j2DetectorMetricPath_tangent H =
+      H * roleLorentzMetric + roleLorentzMetric * H.transpose := by
+  change (roleLorentzMetric •
+      j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.toContinuousLinearMap) H +
+    (MulOpposite.op (1 : RoleMat) •
+      (ContinuousLinearMap.mul ℝ RoleMat).flip roleLorentzMetric) H = _
+  simp only [ContinuousLinearMap.smul_apply,
+    j2DetectorMetricPath_transposeIsometry_apply, op_smul_eq_mul,
+    ContinuousLinearMap.flip_apply, ContinuousLinearMap.mul_apply',
+    smul_eq_mul, mul_one]
+  exact add_comm _ _
+
+/-- Full Fréchet derivative of the flat-frame metric map in the matrix variable.
+The codomain and domain use the Frobenius norm; the derivative sends `H` to
+`Hη + ηHᵀ`. -/
+theorem j2DetectorMetricPath_hasFDerivAt_flat :
+    HasFDerivAt j2DetectorMetricPath j2DetectorMetricPath_tangent 0 := by
+  let hplus : HasFDerivAt (fun H : RoleMat => (1 : RoleMat) + H)
+      (ContinuousLinearMap.id ℝ RoleMat) 0 := by
+    exact (hasFDerivAt_id (𝕜 := ℝ) (0 : RoleMat)).const_add (1 : RoleMat)
+  have hright : HasFDerivAt (fun H : RoleMat => (1 + H) * roleLorentzMetric)
+      ((ContinuousLinearMap.mul ℝ RoleMat).flip roleLorentzMetric) 0 := by
+    have h := (((ContinuousLinearMap.mul ℝ RoleMat).flip roleLorentzMetric).hasFDerivAt
+      (x := ((1 : RoleMat) + 0))).comp (0 : RoleMat) hplus
+    simpa using h
+  have htranspose : HasFDerivAt (fun H : RoleMat => (1 + H).transpose)
+      j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.toContinuousLinearMap 0 := by
+    have h := (j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.hasFDerivAt
+      (x := ((1 : RoleMat) + 0))).comp (0 : RoleMat) hplus
+    convert h using 1
+  have hproduct := hright.mul' htranspose
+  have hpath : (fun H : RoleMat => ((1 + H) * roleLorentzMetric) * (1 + H).transpose) =
+      j2DetectorMetricPath := by
+    funext H
+    rfl
+  rw [← hpath]
+  convert hproduct using 1
+  simp [j2DetectorMetricPath_tangent]
+
+end J2MetricFullDerivative
+
 /-- The role-indexed solder carrier is the pinned flat-frame carrier after
 right multiplication by `η`, which is an exact Lorentz isometry. -/
 theorem solderMetricMatrix_constant_j2DetectorMetricPath
