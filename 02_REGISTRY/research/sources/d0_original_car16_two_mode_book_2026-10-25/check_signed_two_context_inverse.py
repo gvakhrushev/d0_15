@@ -154,8 +154,19 @@ for rv,nv in samples:
     # Reconstruct all original coordinates from TWO probabilities.
     target=ratio_native
     from scipy.optimize import brentq
-    rb=brentq(lambda zz:float(ratio.subs(r,zz))-target,
-               -1/9,1/9,xtol=1e-13)
+    lower=float(ratio.subs(r,-S.Rational(1,9)))
+    upper=float(ratio.subs(r,S.Rational(1,9)))
+    # The original floating Kraus at a CLOSED endpoint may differ by
+    # 1e-15 from the exact algebraic endpoint ratio. Avoid an unphysical
+    # brentq bracket failure; interval check is separately exact.
+    if abs(target-lower)<1e-12:
+        rb=-1/9
+    elif abs(target-upper)<1e-12:
+        rb=1/9
+    else:
+        check(lower<target<upper,"actual sampled Born ratio inside chart")
+        rb=brentq(lambda zz:float(ratio.subs(r,zz))-target,
+                  -1/9,1/9,xtol=1e-13)
     nub=(4096*(1-rb*rb)**2*qstat_native/
          (pnum**3*float(B.subs(r,rb))))**.25
     near(rb,rv,1e-10,"global signed inverse native r with NO branch choice")
@@ -174,7 +185,7 @@ print(json.dumps({
     "r_inverse_lipschitz_upper":"59049/12800",
     "r_zero_jacobian_nonzero":True,
     "one_label_two_distinct_preparations":True,
-    "same_closed_system_two_paid_tests":True,
+    "physically_admitted_and_paid_two_context_experiment":False,
     "signed_born_ratio_results":results,
     "physical_two_context_task_selected_by_M1":False,
     "full42_GR_closed":False
