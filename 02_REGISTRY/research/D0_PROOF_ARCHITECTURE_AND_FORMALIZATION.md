@@ -4630,8 +4630,9 @@ The generated `claim-sources` view resolves the existing `claims.csv`
 `book/section` fields against Markdown ATX headings in the ten `01_BOOKS`
 files. It expands conservative `BOOK_01/02` shorthand, pairs equal-length
 composite book/section lists, and permits one book to carry several explicit
-sections. It leaves mismatched multi-book lists unresolved, ignores body text
-and fenced-code headings, and reports duplicate exact headings as ambiguous.
+sections. It classifies mismatched multi-book lists as malformed locator rows
+with no source selected, ignores body text and fenced-code headings, and reports
+duplicate exact headings as ambiguous.
 No source locator, claim statement, release status, or owner is rewritten.
 
 At source snapshot `84b32c7189bb3793032622dab1b990bb59307929`, the view
@@ -4653,17 +4654,27 @@ resolver does not split ranges or move a section to another book to force a
 match.
 
 The complete derived view is
-`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`
-(608,420 bytes; SHA-256
-`b7372d8eab69b9f1b2f40a833f5057846d6bb651c928b53c9f902073a7750fb7`). It
-records the `claims.csv` digest `e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5`
+`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`.
+Its Windows working-tree representation uses CRLF (608,420 bytes; SHA-256
+`b7372d8eab69b9f1b2f40a833f5057846d6bb651c928b53c9f902073a7750fb7`); the
+published Git blob uses LF (594,056 bytes; SHA-256
+`228a1a3c201ef61045746a2ae0788fa8caed1a92955cf17d16942c0ee1b292f1`). The
+line-ending conversion preserves the JSON data. It records the `claims.csv`
+digest `e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5`
 and resolver SHA-256
 `a6114ed772f36251a54953f13531694cac1734020f5ce128cafae0ae4eb8053b`;
-re-running the CLI produced byte-identical output. Exact unique headings carry
+re-running the CLI produced byte-identical output in the working-tree
+representation. Exact unique headings carry
 candidate source keys of the form
 `source:<snapshot>:<path>#L<line>: <heading>`. This is source-location
 evidence only; no C0 semantic disposition, coverage figure, or acceptance is
 inferred.
+
+An independent read-only review at published head
+`31ccbc40bdcb05baa377cda0d522931eae65c16b` reproduced the 889 claim rows, ten
+Book inputs, 731 locator pairs, 116 unique coordinates, and the row counts
+above. It accepted source-coordinate locator integrity only; it did not accept
+claim semantics, C0 dispositions, or coverage.
 
 The focused proof-architecture suite passes 43/43. Its new cases check paired
 and one-to-many locators, duplicate headings, body/fenced-code false matches,
