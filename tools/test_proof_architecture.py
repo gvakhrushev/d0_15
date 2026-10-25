@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import pathlib
 import hashlib
+import json
 import subprocess
 import tempfile
 import unittest
@@ -52,6 +53,16 @@ def dataset(root: pathlib.Path | None = None) -> dict:
 
 
 class ProofArchitectureTests(unittest.TestCase):
+    def test_all_current_crosswalk_render_preserves_complete_result_arrays(self) -> None:
+        rows = [{"id": f"result-{index}"} for index in range(40)]
+
+        complete = json.loads(proof._render_text({"results": rows}, complete_arrays=True))
+        bounded = json.loads(proof._render_text({"results": rows}))
+
+        self.assertEqual(complete["results"], rows)
+        self.assertEqual(len(bounded["results"]), 33)
+        self.assertEqual(bounded["results"][-1], {"_omitted_items": 8})
+
     def test_exact_identifier_ranks_before_textual_candidate(self) -> None:
         data = dataset()
         hits = proof.structured_search(data, "r1")
@@ -386,8 +397,15 @@ class ProofArchitectureTests(unittest.TestCase):
             source = root / source_rel
             source.parent.mkdir(parents=True)
             source.write_text("theorem bar : True := True.intro", encoding="utf-8")
+            research_rel = "02_REGISTRY/research/reuse.md"
+            research_source = root / research_rel
+            research_source.parent.mkdir(parents=True)
+            research_source.write_text("## Theorem 1\nA pinned result.\n", encoding="utf-8")
+            historical_rel = "02_REGISTRY/research/historical.md"
+            historical_source = root / historical_rel
+            historical_source.write_text("Pinned historical evidence.\n", encoding="utf-8")
             subprocess.run(["git", "init", "-q"], cwd=root, check=True)
-            subprocess.run(["git", "add", source_rel], cwd=root, check=True)
+            subprocess.run(["git", "add", source_rel, research_rel, historical_rel], cwd=root, check=True)
             subprocess.run([
                 "git", "-c", "user.name=Test", "-c", "user.email=test@example.com",
                 "commit", "-q", "-m", "pin Lean source",
@@ -399,11 +417,29 @@ class ProofArchitectureTests(unittest.TestCase):
                 ["git", "cat-file", "blob", f"{ref}:{source_rel}"], cwd=root
             )
             source_sha = hashlib.sha256(pinned_bytes).hexdigest()
+            research_sha = hashlib.sha256(
+                subprocess.check_output(
+                    ["git", "cat-file", "blob", f"{ref}:{research_rel}"], cwd=root
+                )
+            ).hexdigest()
+            historical_sha = hashlib.sha256(
+                subprocess.check_output(
+                    ["git", "cat-file", "blob", f"{ref}:{historical_rel}"], cwd=root
+                )
+            ).hexdigest()
+            historical_source.unlink()
             data = dataset(root)
             data["assembly"]["results"] = [{
                 "id": "r1", "statement": "Exact vector reconstruction",
                 "owner": "owner", "reported_state": "scoped result",
-                "evidence": [{"ref": ref, "path": source_rel, "sha256": source_sha}],
+                "evidence": [
+                    {"ref": ref, "path": source_rel, "sha256": source_sha},
+                    {"ref": ref, "path": research_rel, "sha256": research_sha,
+                     "section_ref": "Theorem 1"},
+                    {"ref": ref, "path": research_rel, "sha256": "0" * 64,
+                     "section_ref": "Theorem 1"},
+                    {"ref": ref, "path": historical_rel, "sha256": historical_sha},
+                ],
             }]
 
             class InventoryStub:
@@ -446,10 +482,41 @@ class ProofArchitectureTests(unittest.TestCase):
             view = proof.result_declaration_crosswalk_view(
                 data, InventoryStub, result_id="r1"
             )
+            all_current_view = proof.result_declaration_crosswalk_view(
+                data, InventoryStub, all_current=True
+            )
 
         self.assertEqual(view["evidence_crosswalks"][0]["pin"]["pin_status"], "verified")
         self.assertEqual(
             view["evidence_crosswalks"][0]["pin"]["current_source_status"], "matches_pin"
+        )
+        source_locators = view["source_locator_crosswalks"]
+        self.assertEqual(len(source_locators), 4)
+        self.assertEqual(
+            source_locators[0]["locator"]["source_file_key"],
+            f"source:{ref}:{source_rel}",
+        )
+        self.assertEqual(source_locators[0]["locator"]["unit_locator_status"],
+                         "section_locator_not_recorded")
+        self.assertEqual(source_locators[0]["locator"]["exact_unit_key_candidates"], [])
+        self.assertEqual(
+            source_locators[1]["locator"]["exact_unit_key_candidates"],
+            [f"source:{ref}:{research_rel}#Theorem 1"],
+        )
+        self.assertEqual(source_locators[1]["locator"]["unit_locator_status"],
+                         "candidate_section_keys_need_review")
+        self.assertEqual(source_locators[2]["locator"]["pin_status"],
+                         "pinned_sha256_mismatch")
+        self.assertIsNone(source_locators[2]["locator"]["source_file_key"])
+        self.assertEqual(source_locators[2]["locator"]["exact_unit_key_candidates"], [])
+        self.assertEqual(source_locators[2]["locator"]["unit_locator_status"],
+                         "section_reference_without_verified_source_pin")
+        self.assertEqual(source_locators[3]["locator"]["pin_status"], "verified")
+        self.assertEqual(source_locators[3]["locator"]["current_source_status"],
+                         "source_missing")
+        self.assertEqual(
+            source_locators[3]["locator"]["source_file_key"],
+            f"source:{ref}:{historical_rel}",
         )
         self.assertEqual(view["compiled_declarations"][0]["elaborated_type"], "True")
         self.assertEqual(view["compiled_declarations"][0]["proof_details_status"],
@@ -461,6 +528,15 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertFalse(view["acceptance_inferred"])
         self.assertEqual(view["declared_relations"]["declared_applications"][0]["review"]["state"],
                          "accepted")
+        self.assertEqual(all_current_view["result_count"], 1)
+        self.assertEqual(
+            all_current_view["source_locator_summary"]["pin_status_counts"],
+            {"verified": 3, "pinned_sha256_mismatch": 1},
+        )
+        self.assertEqual(
+            all_current_view["source_locator_summary"]["current_source_status_counts"],
+            {"matches_pin": 2, "unverified_pin": 1, "source_missing": 1},
+        )
 
     def test_result_crosswalk_stale_current_source_is_citation_only(self) -> None:
         with tempfile.TemporaryDirectory() as temp:

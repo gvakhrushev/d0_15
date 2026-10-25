@@ -1080,6 +1080,54 @@ def _pinned_evidence_view(root: pathlib.Path, evidence: dict[str, Any]) -> dict[
     }
 
 
+def _source_locator_crosswalk(evidence: dict[str, Any], pin: dict[str, Any]) -> dict[str, Any]:
+    """Expose a pinned file key without treating a file as a mathematical unit."""
+    ref = pin.get("ref")
+    path = pin.get("path")
+    valid_commit = isinstance(ref, str) and bool(re.fullmatch(r"[0-9a-fA-F]{40}", ref))
+    safe_path = isinstance(path, str) and pin.get("pin_status") != "unsafe_or_missing_path"
+    verified_pin = pin.get("pin_status") == "verified"
+    # A locator is exact only when the immutable bytes behind the commit/path
+    # pair have been checked against the recorded digest. The current checkout
+    # may be missing or newer; that does not invalidate a verified historical
+    # pin, but an unavailable or mismatched blob cannot name an exact source.
+    source_file_key = (
+        f"source:{ref}:{path}"
+        if valid_commit and safe_path and verified_pin else None
+    )
+    raw_sections: list[Any] = []
+    for field in ("section", "section_ref", "sections", "section_refs"):
+        value = evidence.get(field)
+        if isinstance(value, str):
+            raw_sections.append(value)
+        elif isinstance(value, list):
+            raw_sections.extend(value)
+    sections = []
+    for value in raw_sections:
+        if isinstance(value, str):
+            section = value.strip().lstrip("#").strip()
+            if section and section not in sections:
+                sections.append(section)
+    exact_unit_keys = (
+        [f"{source_file_key}#{section}" for section in sections]
+        if source_file_key else []
+    )
+    return {
+        "source_file_key": source_file_key,
+        "exact_unit_key_candidates": exact_unit_keys,
+        "section_refs": sections,
+        "unit_locator_status": (
+            "candidate_section_keys_need_review" if exact_unit_keys
+            else "section_reference_without_verified_source_pin" if sections
+            else "section_locator_not_recorded" if source_file_key
+            else "source_pin_unverified"
+        ),
+        "pin_status": pin.get("pin_status"),
+        "current_source_status": pin.get("current_source_status"),
+        "snapshot_path": evidence.get("snapshot"),
+    }
+
+
 def _module_source_path(module: str) -> str:
     return "03_FORMALIZATION/" + module.replace(".", "/") + ".lean"
 
@@ -1139,10 +1187,17 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
     for row in results:
         key = str(row.get("id", ""))
         evidence_views = []
+        source_locator_views = []
         for evidence in row.get("evidence", []):
-            if not isinstance(evidence, dict) or not str(evidence.get("path", "")).endswith(".lean"):
+            if not isinstance(evidence, dict) or not evidence.get("path"):
                 continue
             pin = _pinned_evidence_view(root, evidence)
+            source_locator_views.append({
+                "locator": _source_locator_crosswalk(evidence, pin),
+                "pin": pin,
+            })
+            if not str(evidence.get("path", "")).endswith(".lean"):
+                continue
             module = pin["current_module_locator"]
             if pin["pin_status"] == "verified" and pin["current_source_status"] == "matches_pin" and module:
                 expected_source = _module_source_path(module)
@@ -1159,6 +1214,7 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                 "formal_support_candidates": [],
             })
         per_result[key] = {"record": row, "evidence": evidence_views}
+        per_result[key]["source_locators"] = source_locator_views
 
     inventory_rows: list[dict[str, Any]] = []
     collector_sha = None
@@ -1214,6 +1270,7 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
     for key, item in per_result.items():
         row = item["record"]
         evidence = item["evidence"]
+        source_locators = item["source_locators"]
         declarations_by_name: dict[str, dict[str, Any]] = {}
         for evidence_view in evidence:
             for declaration in evidence_view["declarations"]:
@@ -1262,6 +1319,21 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
             "lean_evidence_count": len(evidence),
             "verified_pin_count": pin_verified_count,
             "current_source_match_count": current_match_count,
+            "source_evidence_count": len(source_locators),
+            "source_pin_verified_count": sum(
+                x["pin"]["pin_status"] == "verified" for x in source_locators
+            ),
+            "section_locator_count": sum(
+                bool(x["locator"]["exact_unit_key_candidates"]) for x in source_locators
+            ),
+            "source_unit_locator_disposition": (
+                "section_keys_need_review"
+                if source_locators and all(
+                    x["locator"]["exact_unit_key_candidates"] for x in source_locators
+                )
+                else "section_mapping_incomplete" if source_locators
+                else "no_pinned_source_evidence"
+            ),
             "compiled_declaration_count": (
                 len(declarations) if result_id is not None or all_current else None
             ),
@@ -1288,6 +1360,7 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                 "statement": row.get("statement"),
                 "reported_state": row.get("reported_state"),
                 "evidence_crosswalks": evidence,
+                "source_locator_crosswalks": source_locators,
                 "compiled_declarations": declarations,
                 "claim_locator_candidates": claim_candidates,
                 "formal_support_candidates": list(unique_support.values()),
@@ -1327,11 +1400,52 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
             "This generated crosswalk is retrieval and review evidence. It does not infer a semantic "
             "application, mathematical coverage, or independent acceptance."
         ),
+        "source_locator_interpretation": (
+            "A source:<commit>:<path> key is emitted only after the immutable commit:path blob "
+            "matches its recorded SHA-256; the current checkout may be missing or changed. Only "
+            "explicit section metadata yields source-unit key candidates, which still require "
+            "review. Missing section metadata remains an unresolved unit locator."
+        ),
     }
     if result_id is not None:
         return {**common, **detailed_rows[0]}
     if all_current:
-        return {**common, "result_count": len(detailed_rows), "results": detailed_rows}
+        all_source_locators = [
+            source_locator
+            for item in per_result.values()
+            for source_locator in item["source_locators"]
+        ]
+        pin_status_counts: dict[str, int] = {}
+        current_source_status_counts: dict[str, int] = {}
+        for source_locator in all_source_locators:
+            pin_status = str(source_locator["pin"].get("pin_status", "unknown"))
+            current_status = str(
+                source_locator["pin"].get("current_source_status", "unknown")
+            )
+            pin_status_counts[pin_status] = pin_status_counts.get(pin_status, 0) + 1
+            current_source_status_counts[current_status] = (
+                current_source_status_counts.get(current_status, 0) + 1
+            )
+        return {
+            **common,
+            "result_count": len(detailed_rows),
+            "source_locator_summary": {
+                "evidence_count": sum(r["source_evidence_count"] for r in summary_rows),
+                "verified_pin_count": sum(r["source_pin_verified_count"] for r in summary_rows),
+                "pin_status_counts": pin_status_counts,
+                "current_source_status_counts": current_source_status_counts,
+                "section_locator_count": sum(r["section_locator_count"] for r in summary_rows),
+                "results_with_incomplete_section_mapping": sum(
+                    r["source_unit_locator_disposition"] == "section_mapping_incomplete"
+                    for r in summary_rows
+                ),
+                "interpretation": (
+                    "Counts describe source pins and recorded section locators, not accepted C0 "
+                    "units or semantic result-to-source relations."
+                ),
+            },
+            "results": detailed_rows,
+        }
     return {**common, "result_count": len(summary_rows), "results": summary_rows}
 
 
@@ -1425,14 +1539,14 @@ def run_assembly_impact(root: pathlib.Path, base: str, ref: str | None) -> dict[
     return json.loads(proc.stdout)
 
 
-def _render_text(value: Any) -> str:
+def _render_text(value: Any, *, complete_arrays: bool = False) -> str:
     def bound(item: Any) -> Any:
         if isinstance(item, str) and len(item) > MAX_FIELD_CHARS:
             digest = hashlib.sha256(item.encode("utf-8")).hexdigest()
             return item[:MAX_FIELD_CHARS] + f"… [truncated {len(item) - MAX_FIELD_CHARS} chars; sha256={digest}]"
         if isinstance(item, list):
-            values = [bound(value) for value in item[:32]]
-            if len(item) > 32:
+            values = [bound(value) for value in (item if complete_arrays else item[:32])]
+            if len(item) > 32 and not complete_arrays:
                 values.append({"_omitted_items": len(item) - 32})
             return values
         if isinstance(item, dict):
@@ -1540,7 +1654,10 @@ def main() -> int:
     if "data" in locals():
         result.setdefault("snapshot_commit", data["snapshot_commit"])
         result.setdefault("worktree_dirty", data["worktree_dirty"])
-    print(_render_text(result) if args.json else _render_text(result))
+    print(_render_text(
+        result,
+        complete_arrays=args.command == "crosswalk" and args.all_current,
+    ))
     return 0
 
 
