@@ -25,7 +25,7 @@
     {
       "id": "metric-provenance",
       "owner": "existing CONTROL/main research owner",
-      "statement": "The pinned J² bridge reports two distinct units: (A) the selected star-action metric quotient Q=Theta eta Theta^T and (B) the flat detector tangent DQ_flat[H(q)]=q. The Lean source-convention adapter now also proves the full finite-matrix Fréchet derivative of its nonlinear metric carrier at the flat frame.",
+      "statement": "The pinned J² bridge reports two distinct units: (A) the selected star-action metric quotient Q=Theta eta Theta^T and (B) the flat detector tangent DQ_flat[H(q)]=q. The Lean source-convention adapter now also proves the full finite-matrix Fréchet derivative of its nonlinear metric carrier at the flat frame and transports it through finite solder readout in constant-coframe coordinates.",
       "interface": "star-metric-v1",
       "outcome": "positive",
       "kind": "analytic",
@@ -49,9 +49,9 @@
         ]
       },
       {
-        "ref": "5057775c28a3ff04fe827aed883debf90d8bccb9",
+        "ref": "8d35d3e56fbcf2142f1f5e58260a63d3bec49278",
         "path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
-        "sha256": "04d2ac86ae3c91f771a29171ea328297615fa31443c9954294e1a27314bf58ff",
+        "sha256": "2d1e7cdf1fc106f7b535665bd3954837417c3e820995eb8bfc71d2291e03e9d7",
           "declaration_names": [
             "D0.Geometry.coframeMetricReadout_realizes_symmetric",
           "D0.Geometry.solderMetric_realizes_symmetric_tangent",
@@ -63,7 +63,8 @@
           "D0.Geometry.j2DetectorMetricPath_symmetric_solder_adapter",
           "D0.Geometry.j2DetectorMetricPath_transposeIsometry_apply",
           "D0.Geometry.j2DetectorMetricPath_tangent_apply",
-          "D0.Geometry.j2DetectorMetricPath_hasFDerivAt_flat"
+          "D0.Geometry.j2DetectorMetricPath_hasFDerivAt_flat",
+          "D0.Geometry.solderMetricMatrix_constant_frame_hasFDerivAt"
           ]
       },
       {
@@ -75,7 +76,7 @@
         ]
         }
       ],
-    "reported_state": "Candidate reconciliation separates the source's selected-action quotient (A) from its flat detector tangent (B). The Lean source-convention adapter supplies a finite matrix witness for B, maps the source frame by right multiplication with η into the existing solder Gram carrier, retains the quadratic remainder, and proves both the directional HasFDerivAt along every matrix direction (including the pinned symmetric q path) and the full matrix-variable Fréchet derivative at the flat frame. The latter uses the Frobenius norm on finite Role matrices and has derivative H ↦ Hη + ηHᵀ. This does not connect A's selected action quotient to that Lean carrier or close global connection elimination, physical metric/source selection, or independent C0 acceptance."
+    "reported_state": "Candidate reconciliation separates the source's selected-action quotient (A) from its flat detector tangent (B). The Lean source-convention adapter supplies a finite matrix witness for B, maps the source frame by right multiplication with η into the existing solder Gram carrier, retains the quadratic remainder, and proves both the directional HasFDerivAt along every matrix direction (including the pinned symmetric q path) and the full matrix-variable Fréchet derivative at the flat frame. The latter uses the Frobenius norm on finite Role matrices and has derivative H ↦ Hη + ηHᵀ. The derivative is also transported to the actual finite solder readout in the constant-coframe coordinates H ↦ Hη; this makes no claim about arbitrary sitewise coframe variations. None of these results connects A's selected action quotient to that Lean carrier or closes global connection elimination, physical metric/source selection, or independent C0 acceptance."
     },
     {
       "id": "smooth-parametrix",
