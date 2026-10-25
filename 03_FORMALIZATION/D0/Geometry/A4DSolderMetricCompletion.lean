@@ -1,6 +1,7 @@
 import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.ArchiveRoleEquivalence
 import D0.Algebra.FiniteGramTangent
+import Mathlib.Analysis.Calculus.FDeriv.Prod
 import Mathlib.Analysis.Calculus.FDeriv.Pow
 import Mathlib.Analysis.Matrix.Normed
 
@@ -575,6 +576,35 @@ theorem solderMetricMatrix_sitewise_hasFDerivAt_flat (N : ℕ)
     exact solderMetricMatrix_sitewise_eq_j2_path N e x
   rw [hmap]
   simpa [Function.comp] using hcomp
+
+/-- The full finite field-valued metric derivative collects the pointwise
+sitewise derivatives into one continuous linear map. -/
+noncomputable def solderMetricFieldDerivative (N : ℕ) :
+    LocalCoframeField N →L[ℝ] (ArchiveRolePhaseGroup N → RoleMat) :=
+  ContinuousLinearMap.pi (fun x =>
+    j2DetectorMetricPath_tangent.comp
+      (solderCoframeFieldToJ2DirectionCLM N x))
+
+@[simp] theorem solderMetricFieldDerivative_apply (N : ℕ)
+    (e : LocalCoframeField N) (x : ArchiveRolePhaseGroup N) :
+    solderMetricFieldDerivative N e x =
+      (coframeMetricReadout N e x).toMatrix := by
+  simp [solderMetricFieldDerivative,
+    solderMetricMatrix_sitewise_derivative_apply]
+
+/-- Fréchet derivative of the entire finite sitewise metric field with
+respect to every sitewise coframe perturbation at the flat field. -/
+theorem solderMetricField_hasFDerivAt_flat (N : ℕ) :
+    HasFDerivAt
+      (fun e : LocalCoframeField N => fun x => solderMetricMatrix N e x)
+      (solderMetricFieldDerivative N) 0 := by
+  change HasFDerivAt
+      (fun e : LocalCoframeField N => fun x => solderMetricMatrix N e x)
+      (ContinuousLinearMap.pi (fun x =>
+        j2DetectorMetricPath_tangent.comp
+          (solderCoframeFieldToJ2DirectionCLM N x))) 0
+  exact hasFDerivAt_pi.mpr fun x =>
+    solderMetricMatrix_sitewise_hasFDerivAt_flat N x
 
 end J2SitewiseSolderDerivative
 
