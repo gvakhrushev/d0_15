@@ -4673,7 +4673,9 @@ inferred.
 An independent read-only review at published head
 `31ccbc40bdcb05baa377cda0d522931eae65c16b` reproduced the 889 claim rows, ten
 Book inputs, 731 locator pairs, 116 unique coordinates, and the row counts
-above. It accepted source-coordinate locator integrity only; it did not accept
+above. The reviewed view is Git blob
+`90df5b814739516b21533be239ec311b38899404`, which is unchanged at the current
+head. It accepted source-coordinate locator integrity only; it did not accept
 claim semantics, C0 dispositions, or coverage.
 
 The focused proof-architecture suite passes 43/43. Its new cases check paired
