@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "02a5a6e2c734614cfaa0bdfe16bd90cf53714053",
-  "worktree_dirty": true,
+  "snapshot_commit": "4443d184663c99ea09f003ff9fed6dd50ef17184",
+  "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db",
+  "lean_source_digest": "8909eebca5df94b496915718cd6bd853f9c2147d2b1e3bd43fd6950433abe9a8",
   "collector_sha256": "78dddb5516980fa741759730823e7fd0d5cd6280483d61237289c19061d413c8",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.Geometry.ArchiveHodgeSpatialShellOperator",

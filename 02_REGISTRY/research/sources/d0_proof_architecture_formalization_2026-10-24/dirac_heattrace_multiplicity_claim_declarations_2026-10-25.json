@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "6b41ccc5566d3b7a7e69c5591e3cb5c6fdfbc678",
-  "worktree_dirty": true,
-  "claim_registry_sha256": "e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5",
-  "lean_source_digest": "ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db",
+  "snapshot_commit": "4443d184663c99ea09f003ff9fed6dd50ef17184",
+  "worktree_dirty": false,
+  "claim_registry_sha256": "f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003",
+  "lean_source_digest": "8909eebca5df94b496915718cd6bd853f9c2147d2b1e3bd43fd6950433abe9a8",
   "collector_sha256": "94dee4f0cb4f31024c3e27090bfecac7cf16338a4745e41ebe8c93f2f012e73e",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.Geometry.ArchiveCARDirac",
