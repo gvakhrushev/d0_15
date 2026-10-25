@@ -5605,3 +5605,33 @@ locators, release labels, or the explicit limits in the claim: no `B₊`,
 `ker B₊`, `Q_H`, weighted metrics, spatial propagator, or TT dynamics. Source
 owner review and independent C0 disposition remain open; no coverage is
 reported.
+
+### Compiled claim-to-Lean reuse view for D0-HODGE-001 (25 October 2026)
+
+Ran `reuse --lean D0-HODGE-001 --import-root D0.All` on source snapshot
+`d37152b7a330e4fd616ebe9e171efb793a6dabb1`. The generated view is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/d0_hodge_001_compiled_claim_reuse_2026-10-25.json`
+(Git blob `36f03af0970fe78fc060a7cdedb9d43a7781d46b`, SHA-256
+`44474c2d42bc6356494abda57043076f8463866f5799654823842cda4ce8eeda`,
+129,620 bytes in the Git blob). Its 12 theorem-name locators all resolve to 12 compiled
+declarations; the view records each elaborated type, source range, proof/type
+dependencies, and axiom footprint. `lean_source_digest` is
+`6c459c7340129d85977a72a6ebbdadbe0fd796318859948a7789ab42c1b7f590` and the
+collector SHA-256 is
+`101d89cc1a197f2951f67eb2a43480a4ae0f20fecc0a6d8a1a380255780cae2e`.
+
+The compiled types establish the exact finite scope: scene carrier counts
+`33, 359, 1287`; boundary ranks `32, 327`; the middle range/kernel equality;
+the rational cochain adjoint identities; exact/co-exact orthogonality; and
+zero rational first homology. All 12 declarations report the same axiom set:
+`Classical.choice`, `Quot.sound`, and `propext`.
+
+The compiled dependency view contains nine candidate links. One crosses to
+`D0-GRADED-BIANCHI-EXACT-001`: `finite_d_d_zero` actually depends on
+`D0.Topology.discrete_exact_bianchi`. Eight links point to theorem locators
+inside `D0-HODGE-001`. The claim metadata has no declared assembly applications
+or assumptions. These elaborated proof dependencies are useful retrieval
+evidence, while the dependency-to-claim joins remain name-locator candidates;
+they do not create an accepted application edge or C0 disposition. The view
+therefore improves exact reuse discovery without changing claim status, owner,
+or physical scope.
