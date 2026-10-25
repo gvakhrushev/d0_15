@@ -19121,6 +19121,423 @@ print('PASS fixed four-reflection scalar route-change; exact full-Q8 signed fram
 print('PASS native m1/m2 blank-prefix membership/inventory, all-failure CI support, untouched oldRIGHT, conditional preparation and actual blank-cut return')
 ```
 
+## 7bn. Resolve the protected-Spin obstruction and compile an ORIGINAL Julia block on ordinary WORK
+
+26 October2026. SAME #334 / constitutive / native-programme-v1, input04bc6b2f.
+Phase: native realization, with the exact source/price application below.
+The parent is7bm's simultaneous SourcePort/CAR/App placement. Its
+conditional algebra remains valid, but literal7t cannot realize its
+reader when CAR is identified with protected Spin by536. We prove that
+obstruction, change to the already owned ordinary-WORK carrier of7bj,
+and supply a concrete native word for one UNCHANGED original Julia
+primitive. This is not another geometric root or a substitute action.
+
+Inputs: the owned return-algebra theorem7aj316, original
+[OrderMemoryReadout](../../03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean)
+and its right complexTurn,7c/7j's native plane and inverse constructions,
+7t's [literal execution domain](sources/d0_native_execution_domain_2026-10-24/native_execution.py),
+and the original [Julia construction](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#2-локальный-матричный-прибор-с-теми-же128-исходами).
+The original full128 factorization is [paid-writer13.1(59)--(60)](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#131-keep-the-actual-row-of-q-including-every-unprepared-column).
+No new primitive, source phase, task, field selector or physical
+admission rule is installed. Ordinary-WORK addressability is the
+explicit inherited7t interface, not a consequence of RawZone's one port.
+
+### The earlier missing placement is impossible in that protected-Spin profile
+
+For a fixed finite native G/CX/SourceI word, resolve all measured WORK
+outputs in its real computational basis. Owned316 gives each conditional
+operator on the original protected quaternion Spin4 as
+
+    K_omega=a_omega I4+b_omega L_i, a_omega,b_omega real,
+    K_omega^dagger K_omega=(a_omega^2+b_omega^2)I4,
+    ||K_raw-alpha P_b||_op >= alpha/2 on C_I,
+    ||E_raw-gamma P_b||_op >= gamma/2, gamma=alpha^2. (543)
+
+The first two statements follow from the ACTUAL primitive algebra,
+not just a centralizer dimension. They survive arbitrary finite
+workspace, depth, cap, coarse-graining and work-only feedback.
+Hence the work-record law is independent of the Spin input.
+Under536, L_i restricts to J on C_I=(0,12). For the desired rank-one
+P_b, ||[P_b,J]||=1, whereas the raw compression commutes with J;
+the commutator inequality gives the amplitude bound. The effect
+bound also follows from equal diagonal probabilities on0 and12.
+For the full decoded GOOD0/GOOD1/FAIL instruments, at least one of
+these two inputs has outcome-TV error>=gamma/2; thus half their
+diamond-norm distance is>=gamma/2. Conditioning on any nonzero
+scalar native success leaves worst-case normalized outcome-TV>=1/2.
+Small gamma, more padding and passive oldRIGHT do not remove this
+relative gap. This is not a lower bound on the whole H+J+R source
+or an N-independent primitive-step norm without its actual lift.
+
+Adding just the original common LEFT Q8 j does not fix it. All such
+resolved Kraus operators are left quaternions
+K=aI+bL_i+cL_j+dL_k, with K^dagger K=(a^2+b^2+c^2+d^2)I4.
+The already formalized RIGHT-i complexTurn commutes with all of
+them and again restricts to J on{1,i}. An enlarged/paired code
+intertwining the same logical J retains the same obstruction.
+Book03 class-conditioning describes the update of an actually read
+event; it does not admit an unprovided Spin-coordinate detector.
+The known state-conditioned CAR engine also cannot simply be called
+on C_I: its domain requires nonzero first grade m1, absent on that
+whole code. None of these shortcuts supplies537.
+
+This changes the parent route:7bm is an application of a separately
+provided CAR/App instrument, NOT its compiler on that same protected
+Spin. The native fresh-work prefix542 is unaffected. We do not
+reinterpret a profile obstruction as D0/GR impossibility.
+
+### Separate data from the phase helper, preserving the complete carrier
+
+Put the four CAR modes in ordinary WORK bits, as in7bj. Keep the
+original protected quaternion Spin4 as a DISTINCT phase helper.
+On complex work matrices define
+
+    R_i(M)=Re(M) tensorI4+Im(M) tensorL_i,
+    R_i(MN)=R_i(M)R_i(N), R_i(M^dagger)=R_i(M)^T,
+    ||R_i(M)||_op=||M||_op,
+    S_q=SWAP(P,q);SourceI(P,Spin);SWAP(P,q).          (544)
+
+The last line is chronological and is an exact7-stage word:
+six CX and one SourceI, for q different from the physical source
+port P. It implements the logical work phase diag(1,i), in the
+sense of R_i, and restores P on ALL columns. Its inverse uses
+three forward SourceI in the same route, hence9 stages.
+Spin remains live phase memory; it is not generally restored to its
+input state by a complex target. There is no Spin preparation or
+Spin-coordinate readout in this construction.
+
+This separation is essential. Now a work CAR projector has
+representation P_b^WORK tensorI4, which commutes with protected L_i.
+For example E=CX(q3,q2) on the work bits corresponding to masks8,4
+gives exact encoded G by E;G(q3);E, and CX(q3,h) supplies its
+coherent code-Z recorder. These are literal ordinary-WORK gates,
+tensor identity on helper/oldRIGHT. A terminal readout of h still
+needs its actual physical readout interface; metadata alone does
+not grant measurement. No old536/542 Spin-input promise or its
+four-SourceI bus inventory is transferred to this DIFFERENT placement.
+
+There is a separate exact arithmetic reason to use an approximation
+for the original fixed nu3/5 instrument. Every finite7t primitive
+matrix entry is in Z[a], a^4+a^2-1=0; hence every raw matrix entry
+is an algebraic integer. The original full128 blank entry is
+beta=1-9p^2/320. Its field trace from Q(a) is613/160, not an integer.
+Thus the unchanged full U cannot equal a finite raw7t word on that
+fixed computational basis, even after moving CAR into WORK. This
+does NOT forbid a normalized heralded channel with its actual
+amplitude, an unbounded paid stopping programme, or controlled
+arbitrary accuracy. It precludes silently declaring exact fullU
+membership. A nonnative basis/preparation cannot be inserted for free.
+
+### A specific original Julia block now has a literal native approximation
+
+Take the ORIGINAL first Role, the fixed flat theta0 chart,
+nu=3/5, phase i and creator order(0,2,3,1). This role has no preceding
+Jordan--Wigner signs. On logical coefficient c and this WORK mode m,
+set z=i nu, q=4/5. The original full four-column Julia operator is
+
+    J_z=[[0,0,1,0],[z,0,0,q],[q,0,0,-conj(z)],[0,1,0,0]],
+    det J_z=1,
+    J_z=X_c D R_(00,11)(asin nu) D^dagger,
+    D=diag(1,1,i,i).                                (545)
+
+The matrix is exactly J(X)=[[X,sqrt(I-XX^dagger)],
+[sqrt(I-X^dagger X),-X^dagger]], X=z|1><0|. The target nu,
+phase and both defect roots have not been replaced by a native
+Golden value. All four columns, including occupied/dirty mode
+and coefficient1, are retained. Other CAR modes are spectators.
+
+Let G=R(theta_G) be the original Golden port gate. The CHRONOLOGICAL
+word E;G_P^k;C;G_P^k;C;E, with
+E=CX(P,m), C=CX(m,P), is exactly R_(00,11)(2k theta_G),
+identity on the other two columns. This is7c's plane construction
+at this small surviving target, not a new density/candidate census.
+X_P is approximated by Z_P;G_P^ell, with Z_P=SourceI^2.
+For phase i the complete core word is
+
+    SourceI^3; E; G_P^k; C; G_P^k; C; E;
+    SourceI^3; G_P^ell,
+    epsilon_J <= ||G^(2k)-R(asin nu)||
+                   +||G^ell-R(pi/2)||,
+    k=9950, ell=2096, epsilon_J<1/2000.              (546)
+
+The native SourceI phases implement D,D^dagger and Z without a
+hidden scalar phase or choosing one helper eigenspace. To use an
+ordinary coefficient c distinct from P, surround the ENTIRE core
+by SWAP(P,c) on both sides. The unknown physical P is restored
+exactly on all columns, even for the approximate core. The actual
+two-port-profile target is I_P tensor R_i(J_z), NOT J_z tensorI_helper.
+For a physical33-scene completion, extend each port gate by identity
+on the other31 modes and retain them. The corresponding target is
+(I33-P_active)tensorI+P_active tensorR_i(J_z), with the SAME error
+bound on that full carrier. A scene-independent CAR gate on those
+other modes has not been supplied by this active-port construction.
+
+The resulting EXPANDED native word has21996 G,10 CX,6 SourceI,
+exactly22012 stages. It is constructed as an explicit Gate tuple
+and passes the existing membership/inventory validator. Its actual
+raw inverse is also generated and validated:21996 G,10 CX,88002
+SourceI, exactly110008 stages. No free inverse, reset, selective
+blank or helper measurement occurs. Every gate is identity on
+immutable oldRIGHT, including arbitrary reference entanglement.
+
+The entire column identity is verified symbolically from the
+owner's gate matrices with symbolic c_k,s_k,c_ell,s_ell and
+c_k^2+s_k^2=1. Interval fast powers then evaluate the original
+Golden rotation; this does not require expanding22012 enormous
+algebraic coefficients. Endpoints are outward-rounded INTEGERS
+over2^256, using exact multiplication and integer square roots.
+The total error upper numerator is
+33737146477725024383154314281032205909940665270932320635305619591396226208;
+times2000 it is strictly less than2^256. Decimal diagnostics are
+0.000207343332454456 for the plane and0.0000840163510950882 for X,
+total below0.000291359683549545. Floating angle search only proposes
+the integers; the bound uses no floating-point tolerance or angle fit.
+
+The same owned Golden recurrence supplies a finite word for any
+fixed requested accuracy; its actual powers and resource bounds
+must be counted. This one witness is deliberately a primitive
+prototype. It is NOT a completed controlled SELECT, all-six-face
+field map or fine-enough normalized537 reader certificate. More
+precision must be chosen after the actual call count, source norm
+and small gain, not inferred from this sample error or N epsilon.
+
+### Preserve the real multiplicities and the actual source
+
+R_i is a real *-homomorphism and a norm isometry, so its target
+and error make sense for all physical helper inputs. On EXTERNAL
+complexification it has two U sectors and two conjugate-U sectors.
+Consequently it is not a local complex-CPTP encoder of arbitrary
+unknown original complex DATA with external entangled oldRIGHT.
+In particular sigma->R_i(sigma)/4 cannot be assumed to encode that
+input: its conjugate sector would demand partial transpose.
+The compiled ALL-column comparison is to R_i(J_z) on its declared
+ordinary-work/helper carrier; it needs no such input conversion.
+
+For the actual real counting trace, ideal COMMON-carrier operators
+Delta_raw=R_i(Delta), F_raw=R_i(F), P_raw=R_i(P) obey
+
+    Tr_raw f(Delta_raw)=4 Tr_C f(Delta), rank P_raw=4 rank_C P,
+    H_raw=H+(log4)/beta, J_raw=4J,
+    Tr[(R_i(sigma)/4) R_i(Delta)]=Tr_C(sigma Delta),
+    D(H+J+R)_raw=DH+4DJ+DR at fixed beta.            (547)
+
+The representative R_i(sigma)/4 is only an equal-expectation state
+for this represented algebra, not a new physical mixed preparation.
+The entire action has NOT been multiplied by4: heat normalization
+and feedback trace transform differently. Spin's four modes occur
+once, with oldRIGHT's true multiplicity separately retained. There
+is no selected +i sector and no removed harmonic mode.
+
+There is an exact source application without preparing the helper.
+For a normalized logical vector C generated from known WORK blanks,
+let j_C=sum_j |j>tensor(Re C_j I4+Im C_j L_i).
+Then j_C^T j_C=I4, R_i(U)j_C=j_(UC), and for any Hermitian
+complete logical effect E,
+j_C^T R_i(E)j_C=(C^dagger E C)I4. Thus all complete fine-history
+probabilities are correct for ANY helper state, even correlated
+with untouched oldRIGHT. This is not an unknown-data encoder.
+The cross-family Gram is R_i(C^dagger D), not automatically a
+scalar complex Gram; source/preparation/future-test maps must
+retain that operator and the actual generated inputs.
+
+For the priced Julia cut, FIX physical P in one supplied input port
+and fix logical coefficient c0; keep all Data/helper/old inputs free.
+Its projector is |0_P><0_P| tensor |0_c><0_c| tensor I_(Data,helper,old),
+and C_return=R_i(X). For full CAR16 its rank is64q_old, and for
+oldRIGHT multiplicity q_old the IDEAL feedback at this block is
+-32q_old[log(1-zeta+zeta nu^2)+log(1-zeta)]. All eight unused
+CAR-mode spectators and all four helper coordinates are counted.
+The compiler also restores an UNKNOWN P on all columns, but that
+does not fix its Book input promise: if P is instead free on its
+active2-plane, the input rank and the feedback multiplier BOTH double.
+The source port lies in its admitted active plane; its physical
+33-scene extension retains all31 other modes. This is not permission
+to drop those modes from the actual thermal trace.
+
+For a FIXED physical utility approximation ||Uhat-U0||<=epsilon,
+on the SAME supplied smooth input/cut isometry V_y of rank r,
+write C_U(y)=V_y^dagger U V_y and J_U=-Tr log(aI+zeta C_U^dagger C_U),
+a=1-zeta. The inherited resolvent estimate gives
+
+    |J_Uhat-J_U0|<=2r zeta epsilon/a,
+    |D(J_Uhat-J_U0)[v]|
+      <=8r zeta epsilon ||D V_y[v]||/a^2.           (548)
+
+Both C are contractions, ||D(C_Uhat-C_U0)||<=2epsilon||DV||,
+and ||DC_U0||<=2||DV||; substituting these in7bj's resolvent
+bound proves548. Keep the actual physical rank, source lift and
+gain divisor. This controls the declared moving SOURCE/cut only;
+endpoint error alone gives NO gate-field first jet or independent
+native-gate normal bound. An integer word chosen at one nu does
+not become a differentiable native nu-selector. The proper-Lorentz
+field application needs its actual programme/secant source map.
+
+Nor does547 identify the compiled chronological Delta_N with an
+ideal represented Hodge at another clock. The real22012-stage
+word, its temporary swaps, phase helper, all work and scene modes
+enter the actual H_N. The owned actual-scene finite-core bound7bi
+can be applied only after its real Hodge/padding hypotheses hold
+and this ENTIRE core/accuracy is fixed. Full independent input,
+observer, gate, cut, controller, work and clock equations remain.
+
+### Parent substitution and remaining application
+
+The false protected-Spin route is now closed as a strict profile
+obstruction. On the correct already owned work-CAR carrier, an
+UNCHANGED original onsite Julia primitive has a concrete verified
+native approximate word, exact physical-port restoration, real
+inverse and complete helper/source accounting. This contracts the
+elementary-primitive premise for the original full128 consumer,
+rather than renaming a Spin-basis readout as a supplied operation.
+
+Next compose the actual label-controlled SELECT/Jordan-sign blocks
+and outer return reflection at a precision fixed by their real
+call count, then consume the whole compiled operator/source in
+the existing Book/GR argument. Original arbitrary WORK control
+and reverse-copy availability remains the declared7t physical
+interface; this result does not derive it from the narrower
+literal one-port star, nor prove M1 selects it. Full native source,
+independent joint equations and nonlinear refinement are still
+required. No new action/selector or scientific acceptance is made;
+GR_closed=false, positive_gr/raw216 remain open.
+
+Only the changed symmetry/type check, exact arithmetic obstruction,
+original4x4 Julia factorization, literal native word/inverse inventory,
+full-column symbolic reduction and integer interval bounds are run.
+The owned root/GR/clock/density/Lean and generic plane/7r channel
+theorems are consumed, not replayed. Ordinary assertions are enabled.
+
+```python
+"""One original flat Julia block, native addressed-WORK compiler and exact bounds."""
+from pathlib import Path
+import sys,math
+import sympy as s
+sys.path.insert(0,str(Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24').resolve()))
+import native_execution as ne
+I4=s.eye(4);J=ne.L_I
+eq=lambda A,B:all(s.expand(x-y)==0 for x,y in zip(A,B))
+
+# Symmetry boundary of the old protected-Spin placement, including common LEFT Q8.
+Z=s.diag(1,-1)
+turn=s.Matrix([[0,-1,0,0],[1,0,0,0],[0,0,0,1],[0,0,-1,0]])
+def left(a,b,c,d):return s.Matrix([[a,-b,-c,-d],[b,a,-d,c],[c,d,a,-b],[d,-c,b,a]])
+units=[left(1,0,0,0),left(0,1,0,0),left(0,0,1,0),left(0,0,0,1)]
+assert all(eq(turn*L,L*turn) for L in units)
+P0=s.diag(1,0,0,0);comm=P0*turn-turn*P0
+assert eq(comm.T*comm,s.diag(1,1,0,0))
+aa,bb,cc,dd=s.symbols('aa bb cc dd',real=True)
+K=left(aa,bb,cc,dd)
+assert eq(K.T*K,(aa*aa+bb*bb+cc*cc+dd*dd)*I4)
+
+# A finite native matrix element lies in Z[a]; the original blank beta does not.
+p=ne.P;a=ne.A
+beta=1-s.Rational(9,320)*p*p
+pconj=(-1-s.sqrt(5))/2
+assert s.simplify(2*(beta+beta.xreplace({s.sqrt(5):-s.sqrt(5)})))==s.Rational(613,160)
+assert s.Rational(613,160).q!=1
+
+# Literal original one-mode Julia, with SAME nu3/5 and phase i.
+nu=s.Rational(3,5);q=s.Rational(4,5)
+creator=s.Matrix([[0,0],[1,0]]);X=nu*s.I*creator
+L=s.diag(1,q);R=s.diag(q,1)
+target=X.row_join(L).col_join(R.row_join(-X.H))
+assert eq(target.H*target,s.eye(4)) and s.simplify(target.det())==1
+SX=s.diag(1,1,s.I,s.I)
+XC=s.kronecker_product(s.Matrix([[0,1],[1,0]]),s.eye(2))
+plane=s.eye(4);plane[0,0]=plane[3,3]=q;plane[0,3]=-nu;plane[3,0]=nu
+assert eq(XC*SX*plane*SX.H,target)
+
+# Positive powers are proposals from a 1D angle search; rigor comes from interval powers.
+pf=(math.sqrt(5)-1)/2;af=math.sqrt(pf);theta=math.atan2(pf,af)
+t=math.asin(.6);tol=0.001
+k=next(n for n in range(1,1000000) if abs(math.remainder(2*n*theta-t,2*math.pi))<tol/4)
+ell=next(n for n in range(1,1000000) if abs(math.remainder(n*theta-math.pi/2,2*math.pi))<tol/4)
+assert (k,ell)==(9950,2096)
+# Exact outward dyadic arithmetic; all interval endpoints are INTEGERS / 2^256.
+D=1<<256
+up=lambda x:(x+D-1)//D
+add=lambda x,y:(x[0]+y[0],x[1]+y[1])
+sub=lambda x,y:(x[0]-y[1],x[1]-y[0])
+def times(x,y):
+    v=[a*b for a in x for b in y]
+    return (min(v)//D,up(max(v)))
+def root(x):
+    assert x[0]>=0
+    return (math.isqrt(x[0]*D),math.isqrt(x[1]*D)+1)
+def square(x):
+    lo=0 if x[0]<=0<=x[1] else min(x[0]*x[0],x[1]*x[1])//D
+    return lo,up(max(x[0]*x[0],x[1]*x[1]))
+def rat(n,d):return (n*D//d,(n*D+d-1)//d)
+sqrt5=root((5*D,5*D));tmp=sub(sqrt5,(D,D))
+pi=(tmp[0]//2,(tmp[1]+1)//2);ai=root(pi)
+def mul(u,v):return (sub(times(u[0],v[0]),times(u[1],v[1])),add(times(u[1],v[0]),times(u[0],v[1])))
+def power(n):
+    out=((D,D),(0,0));base=(ai,pi)
+    while n:
+        if n&1:out=mul(out,base)
+        base=mul(base,base);n//=2
+    return out
+c2,s2=power(2*k);clv,slv=power(ell)
+er=root(add(square(sub(c2,rat(4,5))),square(sub(s2,rat(3,5)))))
+ex=root(add(square(clv),square(sub(slv,(D,D)))))
+eps=add(er,ex)
+assert eps[1]*2000<D
+
+# Actual full-column native word: physicalP0, coefficient1, mode2, Spin3/4, old5.
+port,coef,mode=0,1,2
+S=ne.Gate('SourceI',(port,3,4));G=ne.Gate('G',(port,))
+E=ne.Gate('CX',(port,mode));C=ne.Gate('CX',(mode,port))
+swap=(ne.Gate('CX',(port,coef)),ne.Gate('CX',(coef,port)),ne.Gate('CX',(port,coef)))
+gates=swap+(S,)*3+(E,)+(G,)*k+(C,)+(G,)*k+(C,E)+(S,)*3+(G,)*ell+swap
+execution=ne.Execution(6,(),(5,),gates,ne.G_CX_SOURCE_I,port,(3,4),())
+N=2*k+ell+16
+iv=ne.inventory(execution,max_qubits=6,max_expanded_stages=N)
+assert (iv.g_count,iv.cx_count,iv.source_i_count,iv.gate_count)==(2*k+ell,10,6,N)
+invword=ne.inverse_word(execution,max_qubits=6,max_expanded_stages=5*(2*k+ell)+28)
+ivinv=ne.inventory(ne.Execution(6,(),(5,),invword,ne.G_CX_SOURCE_I,port,(3,4),()),max_qubits=6,max_expanded_stages=len(invword))
+assert (ivinv.g_count,ivinv.cx_count,ivinv.source_i_count)==(2*k+ell,10,4*(2*k+ell)+18)
+
+# Exact symbolic reduction on all32 P/coef/mode/helper columns, without 22012 giant coefficient steps.
+ck,sk,cl,sl=s.symbols('ck sk cl sl',real=True)
+Rk=s.Matrix([[ck,-sk],[sk,ck]]);Rl=s.Matrix([[cl,-sl],[sl,cl]])
+e5=ne.Execution(5,(),(),(),ne.G_CX_SOURCE_I,0,(3,4),())
+mat=lambda g:ne.gate_matrix(e5,g,max_qubits=5)
+Sp=mat(S);Em=mat(E);Cm=mat(C)
+Sw=s.eye(32)
+for g in swap:Sw=mat(g)*Sw
+W=Sw*s.kronecker_product(Rl,s.eye(16))*(Sp**3)*Em*Cm*s.kronecker_product(Rk,s.eye(16))*Cm*s.kronecker_product(Rk,s.eye(16))*Em*(Sp**3)*Sw
+P=s.eye(4);P[0,0]=P[3,3]=ck*ck-sk*sk;P[0,3]=-2*ck*sk;P[3,0]=2*ck*sk
+approx=s.kronecker_product(Rl,s.eye(2))*s.diag(1,1,-1,-1)*SX*P*SX.H
+def realify(M):return s.kronecker_product(M.applyfunc(s.re),I4)+s.kronecker_product(M.applyfunc(s.im),J)
+want=s.kronecker_product(s.eye(2),realify(approx))
+gb=s.groebner([ck*ck+sk*sk-1],ck,sk,cl,sl)
+assert all(gb.reduce(s.expand(z))[1]==0 for z in W-want)
+
+# Native ordinary-work reader, source phase helper kept separate.
+# E=CX(data3,data2) encodes 00/11; copying data3 reads its logical Z exactly.
+CX=s.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+enc=CX;IC=s.zeros(4,2);IC[0,0]=IC[3,1]=1
+assert ne.exact_matrix_equal(enc*s.kronecker_product(ne.G_LOCAL,s.eye(2))*enc*IC,IC*ne.G_LOCAL)
+Zdata=s.kronecker_product(s.diag(1,-1),s.eye(2))
+assert eq(enc*Zdata,Zdata*enc)
+
+# Realification is an exact *-homomorphism, not U tensor Ihelper.
+assert eq(realify(target).T*realify(target),s.eye(16))
+eff=X.H*X
+assert s.trace(realify(eff))==4*s.trace(eff)
+# Complete logical probabilities from REAL known blank are independent of arbitrary helper/oldRIGHT.
+j0=s.kronecker_product(s.eye(4)[:,0],I4)
+Etest=s.diag(1,0,0,0)
+prob=(target.H*Etest*target)[0,0]
+assert eq(j0.T*realify(target.H*Etest*target)*j0,prob*I4)
+print('native power schedule:',{'k':k,'ell':ell,'G':iv.g_count,'CX':iv.cx_count,'SourceI':iv.source_i_count,'N':N,'inverse_N':ivinv.gate_count})
+print('Julia plane error upper, decimal display only:',er[1]/D)
+print('X correction error upper, decimal display only:',ex[1]/D)
+print('exact total upper numerator / 2^256:',eps[1])
+print('exact inequality upper*2000 < 2^256:',eps[1]*2000<D)
+print('PASS protected-Spin obstruction; nonintegral original beta; SAME originalJulia factorization; literal native code/inverse inventory; full-column symbolic routing; interval precision; ordinary-work encodedG/reader; realification and source-blank statistics')
+```
+
 ## 8. Reproduction
 
 Run from this directory:

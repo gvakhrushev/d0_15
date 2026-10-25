@@ -12761,3 +12761,98 @@ Removing7bm restoresincoming042bc primary BYTEEXACT SHA256
 55dee476c00004cc9ca6234db6a393dc6af32d6c3a862424563037a556477d07;
 incomingbrief837666bytes isanexactprefix. Onlythetwoownedpathschange.
 Thesearelocalstructural/sourcechecks,notremoteCI orphysicalGRacceptance.
+
+
+### 26 October: close the protected-Spin route and compile an original Julia primitive on ordinary WORK
+
+Phase:native realization/source composition,same#334constitutive/
+native-programme-v1 owner,input04bc6b2f. Primary7bn543--548 consumes
+owned316,fullQ8complexTurn,7c/7j nativeplane/inverse,7t domain and
+ORIGINAL fullLorentzJulia5/paidwriter59--60. Rootwritesonlyprimary
+insertion/thisbrief; boundedassistantsare read-only. No newaction,
+primitive,selector/task/acceptedphysicalclaim.
+
+Parentroutechange: everyresolvedwork-onlySpinKraus inliteral7t is
+aI+bLi and has scalarGram. The537 reader cannotbe compiled at536's
+protectedSpin placement:amplitudegap>=alpha/2,effectgap>=gamma/2,
+normalizedworstcaseTV>=1/2. EvenaddingcommonLEFTQ8j retains RIGHT-i
+complexTurn anddoesnotfix this. These are profile/instrument bounds,
+not fullHJR/rawstepnorm/gravityno-go.7bmconditionalalgebra andknown
+blankprefix542 remainvalid,butare NOTanoriginalfullCARcompiler.
+
+Positivechangedcarrier: CAR16inordinaryWORK,phaseSpin4separateas
+in7bj. R_i(M)=ReM x I4+ImM x Li is normisometricreal*homomorphism.
+NativeSWAP(P,q);SourceI;SWAP restoresP onALLcolumns and supplies
+workphaseS (7stages). Correct target isR_i(J), notJxIhelper andnot
+afree+i-sector/inputencoding. ThefullSpin/oppositecomplexsectors
+remain inphysicalheat/cut. KnownWORKblank source probabilities are
+scalarIhelper evenifhelper entangledwitholdRIGHT. Arbitraryexternal
+complexDATA encoding isnotassumed.
+
+SpecificUNCHANGEDoriginal r0flatJulia:nu3/5,phasei,q4/5,all4columns.
+Exactfactor Xc D R00,11(asin nu)Ddagger. Nativeplaneword2kG+4CX
+andXcorrectionZ;G^ell usek9950,ell2096. ENTIREcoreparkedonphysical
+P andouterSWAPsrestoreunknownP exactly. ExplicitGateTuple passes
+7t membership:21996G/10CX/6SourceI=22012 expandedstages. Actualraw
+inversegenerated/validated:21996G/10CX/88002SourceI=110008stages.
+AllgatesIoldRIGHT. Actualoperator targetI_PxR_i(J) onthe2portprofile;
+physical33completion isIoutsideactive+PactivexR_i(J),keeping31
+othermodes,notanunprovedscene-independentdataoperation.
+
+Exactsymbolicall-columnreductionfromownedprimitivematricesplus
+256-bitoutwardDYADIC INTEGER fastpowers certifiesoperatorerror<1/2000.
+Uppernumerator33737146477725024383154314281032205909940665270932320635305619591396226208
+over2^256; exactupper*2000<2^256. Floatsearchonlyproposedintegers.
+FinalrunPython3.9.6/SymPy1.14.0 exit0/PASS; allordinaryassertionson.
+Aninitialmpmath.interval calculationagreed; finalcertificateuses
+integerrounding/isqrt anddoesnotdependonmpmathorfloatprecision.
+Noexpectedvalue/scientificclaim/toleranceweakened.
+
+OriginalfullU exactmembership isalsoarithmeticallyexcludedonthis
+fixedbasis:finite7t entriesinZ[a],but beta=1-9p²/320 hasQ(a)-trace
+613/160,notinteger. Heraldednormalizedoperationsandpaidunbounded
+stoppingareNOTexcluded. Nativeapproximationisessential,nottarget
+replacementbyanothernu.
+
+Fullsource547 keepsHraw=H+log4/beta,Jraw=4J,Rmeanraw=Rmean;
+thereforeDH+4DJ+DR,not4wholeprice. Actualcompiledclock/Hodge isnot
+identifiedwithanidealrepresentedclock. Fixedutilitysource/cut548
+boundusesactualrankr andsourceJacobian:|dDeltaJ|<=8r zeta eps
+||DV||/(1-zeta)^2. ItdoesNOTsupplynativegatefieldjets/extraindependent
+normals or a smoothintegerwordselector.
+
+Nextparentapplication: label-controlledSELECT/Jordan/outerreturn
+reflection withactualcallcount/errorbudget,thenwholecompilednative
+source/clock/independentEuler. ThisoneprimitiveprototypeisNOT
+completedfull128,properboost/openfield/all42or537relativeprecision.
+Nativeordinarywork/reversecopyavailabilityremainsinheritedphysical
+interface,notderivedfromone-portstar. NooldGR/root/Lean/density/
+clock/stoppedCQreplay. GR_closedfalse,positive_gr/raw216open.
+
+Frozen7bn INCLUDINGnext-headingseparator:22031bytes,
+SHA256b5b2722ffbe2f526528fb8d94841adfc28f17f4fd867299a515f74df3bcdddc2.
+Embeddedcodeexcludingclosingnewline:6383bytes,
+SHA2566ce2960bbe7c3f6a2673c0526fb695b566ec41056d9278e61a083a796f305a92.
+Finalsource-onlyreviews/integrationfollow; code isunchangedafter
+finalintegerdyadiccalculationexit0/PASS.
+
+Source-onlyreview clarifiedtheJuliaBookcut:pricedphysicalP fixed0
+andlogicalc0,Data/helper/oldFREE,rank64q_old andmultiplier32q_old.
+ALL-columnrestorationofunknownP isstilltrue; ifP isalso FREE
+onactive2plane,rankandJmultiplierdouble. No code/calculationchanged.
+
+Finalsource-onlyACCEPT22031/b5b2722ffbe2f526528fb8d94841adfc28f17f4fd867299a515f74df3bcdddc2:
+native_source_application,stationary_root_transfer,price_geometry_bridge.
+Allreadthefinalfixed-Pcut/unknown-Pcontrast,fullword/source/interface
+andcode; nowrites/noreplay. Code6383/6ce2960b unchangedafterfinal
+integerdyadicrun. Nativeexecutionimportblob9a32a3fa2e594c087d24b9d5dec497c4c5e03f44.
+
+AffectedintegrationPASS: workvalidation,agentcold-startprotocol,
+gravityassembly(validtrue;54active/98results/5discharged/22obligations;
+scientific_promotionfalse),repository(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0),whitespace,finalfrozen
+code/AST/provenance. Latercutclarificationonlytypes theexistingJ
+formula; no code/mathchangeorreplay. Removing7bnrestoresincoming
+04bc6b2fprimaryBYTEEXACT SHA2565b089257ebccab1f24ea931ff6ae8cb2438b0c2ab8f80830cf771ce1b06f06fb;
+incomingbrief843961bytes isexactprefix. Onlythetwoownedpathschanged.
+Thesearelocalstructural/sourcechecks,notremoteCI/physicalGRacceptance.
