@@ -1548,6 +1548,13 @@ class ProofArchitectureTests(unittest.TestCase):
                 b"```markdown\n## 04.7 Example in a code fence\n```\n"
                 b"### 04.7.1 Child only\n"
             )
+            (books / "BOOK_05_TEST.md").write_bytes(
+                b"## 05.32 Other topic\nNo Bianchi result is recorded here.\n"
+            )
+            (books / "BOOK_06_TEST.md").write_bytes(
+                b"## 06.32.1 Boundary status for Hurwitz, Bianchi and gauge transformations\n"
+                b"The exact Bianchi statement is closed on the graded incidence complex.\n"
+            )
             data = dataset(root)
             data["snapshot_commit"] = "source-snapshot"
             data["worktree_dirty"] = False
@@ -1562,6 +1569,8 @@ class ProofArchitectureTests(unittest.TestCase):
                 {"claim_id": "MISMATCH", "book": "BOOK_01/02", "section": "01.8.1"},
                 {"claim_id": "SHARED-DESCRIPTION", "book": "BOOK_01/02",
                  "section": "primitive positive response"},
+                {"claim_id": "SHARED-BIANCHI", "book": "BOOK_05/06",
+                 "section": "graded incidence Bianchi closure"},
             ]
 
             view = proof.claim_source_candidate_view(data)
@@ -1609,16 +1618,29 @@ class ProofArchitectureTests(unittest.TestCase):
             ],
             "unreviewed_lexical_candidate",
         )
+        self.assertEqual(by_id["SHARED-BIANCHI"]["resolution_status"], "unresolved")
+        self.assertEqual(
+            by_id["SHARED-BIANCHI"]["resolution_reason"],
+            "multiple_books_share_one_unpaired_section_locator",
+        )
+        bianchi = by_id["SHARED-BIANCHI"]["book_heading_candidates"][1]["candidates"]
+        self.assertEqual(len(bianchi), 1)
+        self.assertEqual(bianchi[0]["path"], "01_BOOKS/BOOK_06_TEST.md")
+        self.assertEqual(bianchi[0]["match_kind"], "lexical_heading_candidate")
+        self.assertEqual(bianchi[0]["review_status"], "unreviewed_lexical_candidate")
+        self.assertEqual(set(bianchi[0]["matched_terms"]),
+                         {"graded", "incidence", "bianchi"})
         self.assertEqual(view["counts"]["fully_unique_claim_rows"], 2)
         self.assertEqual(view["counts"]["ambiguous_claim_rows"], 1)
         self.assertEqual(view["counts"]["non_book_claim_rows"], 1)
         self.assertEqual(view["counts"]["malformed_claim_rows"], 0)
-        self.assertEqual(view["counts"]["unresolved_claim_rows"], 3)
-        self.assertEqual(view["counts"]["unpaired_multi_book_claim_rows"], 2)
-        self.assertEqual(view["counts"]["claim_rows_with_ranked_heading_candidates"], 1)
-        self.assertEqual(view["counts"]["ranked_heading_candidate_count"], 1)
+        self.assertEqual(view["counts"]["unresolved_claim_rows"], 4)
+        self.assertEqual(view["counts"]["unpaired_multi_book_claim_rows"], 3)
+        self.assertEqual(view["counts"]["claim_rows_with_ranked_heading_candidates"], 2)
+        self.assertEqual(view["counts"]["ranked_heading_candidate_count"], 2)
         self.assertIn("Neither form accepts the claim statement", view["interpretation"])
 
 
 if __name__ == "__main__":
     unittest.main()
+
