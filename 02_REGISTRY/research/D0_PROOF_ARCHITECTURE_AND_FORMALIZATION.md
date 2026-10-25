@@ -5500,3 +5500,17 @@ for the expanded case set remains part of the final Ready validation.
 These results establish source retrieval, recorded exact pins, and the scoped
 CAR/Hodge distinction. They do not accept claim semantics, freeze C0, or close
 physical selection or GR.
+### Current-source guard for compiled CAR/Hodge scope inventories (25 October 2026)
+
+On head `c3f6aa1f896164819589136871e66f769d7dff91`, the strengthened
+`test_car_hodge_cold_start_keeps_distinct_operator_claims` checks ten compiled
+declarations: four CAR arithmetic scaffolds and six Hodge operator/kernel/shell
+results. It requires each inventory's `lean_source_digest` to equal the digest
+of the current Lean source tree and checks exact elaborated-type fragments,
+declaration kind, axiom-list presence, and the one-sided Hodge `formal_support`
+entries. `D0 guards` run 5163 and `D0 Lean build` run 3125 both succeeded.
+
+This closes the stale-inventory and declaration-scope regression for this
+bounded example. It still does not supply the missing CAR operator proofs or a
+transport from Hodge; semantic claim acceptance remains manual, and the complete
+cold-start replay on the expanded case set remains due at final Ready.
