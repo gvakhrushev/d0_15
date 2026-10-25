@@ -1863,6 +1863,11 @@ class ProofArchitectureTests(unittest.TestCase):
             self.assertIn("D0.Algebra.finiteMatrixTensorProduct",
                           wrapper["proof_dependencies"])
 
+        transpose_api = declarations[
+            "D0.Algebra.finiteMatrixTensorProduct_transpose"
+        ]
+        self.assertNotIn("Fintype", transpose_api["elaborated_type"])
+
         matter_wrapper = declarations["D0.Matter.kronecker_I_C"]
         self.assertEqual(matter_wrapper["declaration_kind"], "definition")
         self.assertNotIn("[Fintype N]", matter_wrapper["elaborated_type"])
@@ -1885,6 +1890,58 @@ class ProofArchitectureTests(unittest.TestCase):
         consumers = support["D0.Algebra.FiniteMatrixTensorProduct"]["referenced_by"]
         self.assertIn("D0/Spectrum/GenerationTensorExactness.lean", consumers)
         self.assertIn("D0/Matter/ArchivePartialTrace.lean", consumers)
+        self.assertIn("D0/Gauge/FlatTensorNoGo.lean", consumers)
+
+    def test_flat_tensor_compatibility_wrapper_uses_shared_operator_and_transpose_law(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "flat_tensor_shared_api_declarations_2026-10-25.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+
+        flat_tensor = declarations["D0.Gauge.flatTensor"]
+        self.assertEqual(flat_tensor["declaration_kind"], "definition")
+        self.assertIn(
+            "D0.Algebra.finiteMatrixTensorProduct",
+            flat_tensor["proof_dependencies"],
+        )
+        self.assertNotIn("Fintype", flat_tensor["elaborated_type"])
+
+        symmetry = declarations[
+            "D0.Gauge.flat_tensor_of_two_skew_is_symmetric"
+        ]
+        self.assertEqual(symmetry["declaration_kind"], "theorem")
+        self.assertNotIn("Fintype", symmetry["elaborated_type"])
+        self.assertIn(
+            "D0.Algebra.finiteMatrixTensorProduct_transpose",
+            symmetry["proof_dependencies"],
+        )
+        self.assertEqual(
+            set(symmetry["axioms"]),
+            {"Classical.choice", "Quot.sound", "propext"},
+        )
+
+        boundary_proof = declarations[
+            "D0.Gauge.naive_flat_tensor_nonabelian_boundary_proof"
+        ]
+        self.assertIn(
+            "D0.Gauge.flat_tensor_of_two_skew_is_symmetric",
+            boundary_proof["proof_dependencies"],
+        )
+
+        hits = proof.full_text_search(
+            proof.ROOT, "flatTensor finiteMatrixTensorProduct", limit=5
+        )
+        self.assertEqual(
+            hits[0]["source"],
+            "03_FORMALIZATION/D0/Gauge/FlatTensorNoGo.lean",
+        )
+        self.assertTrue(hits[0]["direct_content"])
+        self.assertEqual(hits[0]["matched_terms"], hits[0]["query_terms"])
 
     def test_claim_source_candidates_use_exact_headings_and_preserve_ambiguity(self) -> None:
         with tempfile.TemporaryDirectory() as temp:

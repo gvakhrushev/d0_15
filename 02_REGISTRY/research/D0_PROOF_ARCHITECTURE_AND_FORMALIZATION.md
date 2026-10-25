@@ -6590,3 +6590,41 @@ repository validation also passes with zero warnings on this integration.
 This is finite matrix library consolidation only. The public operator names,
 CAR/Matter/Spectrum theorem statements, carrier, and premise boundaries remain
 unchanged; no physical interpretation or scientific status changes.
+
+### Reuse the shared product-matrix API in the gauge flat-tensor no-go (25 October 2026)
+
+`D0.Gauge.flatTensor` now preserves its public name as a compatibility
+abbreviation for `D0.Algebra.finiteMatrixTensorProduct`; the duplicate local
+entrywise constructor is removed. The shared transpose law now requires only
+`[Mul R]`, since Mathlib's `kroneckerMap_transpose` is pointwise and does not
+need finite index types. The existing theorem
+`flat_tensor_of_two_skew_is_symmetric` keeps its original all-types scope and
+proves the same conditional result through the shared transpose law and
+pointwise cancellation. The naive tensor remains a no-go for the stated
+nonabelian-curvature reading; this refactor adds no physical interpretation.
+
+The Gauge target builds **2,947/2,947** jobs; the public `D0.All` build passes
+**4,580/4,580** jobs in 238.3 seconds. The compiled four-declaration inventory
+for `D0.Gauge.FlatTensorNoGo` has public root `D0.All`, no `sorryAx`, and pins
+snapshot `fcbaac7da0fc5bd52b060d6e567f8fa644ca5b17`, Lean-source digest
+`f2c3341e548000a7596cf006c8cf51a0f567d5146bf8f980568038413d39dd2c`, collector
+SHA-256 `358926670c102b53cf9cec7ac88157833a32429fb28a14e7e05dbaa755232bce`, and
+inventory SHA-256 `ce125769d2359f9c1fd1cdcc6f11bab55e8097b1167236a68a98c295fec88407`.
+The existing 36-declaration CAR/Hodge inventory and 15-declaration nonvacuum
+inventory were refreshed at the same clean snapshot and source digest; their
+file SHA-256 values are `dae88318c4ac583ac91bfc7741ad7704d04a86b58a5b7338113d819db810a5f4`
+and `51126147f971ee1e0ce962f5ad0cff83ea3572299daf2b65ebff982905c4898f`.
+Direct axiom reporting for the refactored Gauge alias and theorem retains only
+the standard `{Classical.choice, Quot.sound, propext}` footprint.
+The exact query `flatTensor finiteMatrixTensorProduct` retrieves
+`D0/Gauge/FlatTensorNoGo.lean` first as direct content, and a regression test
+pins that rediscovery together with the elaborated API dependency and
+all-types theorem signature. The proof-architecture and declaration-inventory
+suites pass **67/67**; repository validation reports 889 claims, 31 assumptions,
+58 aliases, 200 formal-support rows, and closure 932 with zero warnings;
+generated Lean views report `stale=0`; ClaimMap coverage passes; and the
+formalization-debt audit remains at five findings against its five-finding
+baseline. `git diff --check` is clean.
+
+This is a finite algebra API migration with a compatibility path. It changes no
+registry claim status, source premise, or scientific acceptance boundary.

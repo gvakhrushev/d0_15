@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "a2b66422d255d6c617413b0450a1947e3c6652a8",
+  "snapshot_commit": "fcbaac7da0fc5bd52b060d6e567f8fa644ca5b17",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "3149a01a3c2641979b255aaaa699b0fcf7532ddd3a20264a23a2e2100296aa8c",
+  "lean_source_digest": "f2c3341e548000a7596cf006c8cf51a0f567d5146bf8f980568038413d39dd2c",
   "collector_sha256": "3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -3132,18 +3132,6 @@
           "binder_info": "Lean.BinderInfo.instImplicit",
           "is_proposition": false,
           "name": "inst._@.D0.Algebra.FiniteMatrixTensorProduct.111989335._hygCtx._hyg.5",
-          "type": "Fintype X"
-        },
-        {
-          "binder_info": "Lean.BinderInfo.instImplicit",
-          "is_proposition": false,
-          "name": "inst._@.D0.Algebra.FiniteMatrixTensorProduct.111989335._hygCtx._hyg.8",
-          "type": "Fintype Y"
-        },
-        {
-          "binder_info": "Lean.BinderInfo.instImplicit",
-          "is_proposition": false,
-          "name": "inst._@.D0.Algebra.FiniteMatrixTensorProduct.111989335._hygCtx._hyg.11",
           "type": "Mul R"
         },
         {
@@ -3183,14 +3171,13 @@
           }
         }
       },
-      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [Fintype X] [Fintype Y] [inst : Mul R] (A : Matrix X X R)\n  (B : Matrix Y Y R),\n  (D0.Algebra.finiteMatrixTensorProduct A B).transpose = D0.Algebra.finiteMatrixTensorProduct A.transpose B.transpose",
+      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [inst : Mul R] (A : Matrix X X R) (B : Matrix Y Y R),\n  (D0.Algebra.finiteMatrixTensorProduct A B).transpose = D0.Algebra.finiteMatrixTensorProduct A.transpose B.transpose",
       "exists": true,
       "internal_name": false,
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
       "name": "D0.Algebra.finiteMatrixTensorProduct_transpose",
       "proof_dependencies": [
         "Eq.symm",
-        "Fintype",
         "HMul.hMul",
         "Matrix",
         "Matrix.kroneckerMap",
@@ -3203,7 +3190,6 @@
       "type_dependencies": [
         "D0.Algebra.finiteMatrixTensorProduct",
         "Eq",
-        "Fintype",
         "Matrix",
         "Matrix.transpose",
         "Mul",
