@@ -1,6 +1,7 @@
 import Mathlib.Tactic
 import Mathlib.LinearAlgebra.ExteriorPower.Basic
 import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
+import D0.Algebra.FiniteGramTangent
 import D0.Geometry.A4DRawSolderFrameAction
 import D0.Geometry.ArchiveAffineExteriorLink
 import D0.Geometry.A4DObserverPositiveExterior
@@ -57,7 +58,7 @@ task rather than a `sorry`.
 
 def a4dSiteGram (N : ℕ) (e : LocalCoframeField N)
     (x : ArchiveRolePhaseGroup N) : Matrix Role Role ℝ :=
-  rawSolderMatrix N e x * roleLorentzMetric * (rawSolderMatrix N e x).transpose
+  D0.Algebra.finiteGram roleLorentzMetric (rawSolderMatrix N e x)
 
 theorem a4dSiteGram_fullFrame_invariant
     (e : LocalCoframeField N)

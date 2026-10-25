@@ -88,18 +88,19 @@ def solderMatrix (N : ℕ) (e : LocalCoframeField N) (x : ArchiveRolePhaseGroup 
 
 /-- Nonlinear candidate; nondegeneracy is not automatic for arbitrary e. -/
 def solderMetricMatrix (N : ℕ) (e : LocalCoframeField N) (x : ArchiveRolePhaseGroup N) :
-    Matrix Role Role ℝ := solderMatrix N e x * roleLorentzMetric * (solderMatrix N e x).transpose
+    Matrix Role Role ℝ := D0.Algebra.finiteGram roleLorentzMetric (solderMatrix N e x)
 
 theorem solderMetric_symmetric (N : ℕ) (e : LocalCoframeField N)
     (x : ArchiveRolePhaseGroup N) :
     (solderMetricMatrix N e x).transpose = solderMetricMatrix N e x := by
-  simp [solderMetricMatrix, Matrix.transpose_mul, Matrix.mul_assoc]
+  exact D0.Algebra.finiteGram_symmetric roleLorentzMetric (solderMatrix N e x)
+    roleLorentzMetric_transpose
 
 theorem solderMetric_expand (N : ℕ) (e : LocalCoframeField N) (x : ArchiveRolePhaseGroup N) :
     solderMetricMatrix N e x = roleLorentzMetric + centeredCoframeMatrix N e x +
       (centeredCoframeMatrix N e x).transpose +
       centeredCoframeMatrix N e x * roleLorentzMetric * (centeredCoframeMatrix N e x).transpose := by
-  unfold solderMetricMatrix solderMatrix
+  unfold solderMetricMatrix solderMatrix D0.Algebra.finiteGram
   rw [Matrix.transpose_add, roleLorentzMetric_transpose]
   simp only [Matrix.add_mul, Matrix.mul_add, roleLorentzMetric_sq, Matrix.one_mul]
   rw [Matrix.mul_assoc (centeredCoframeMatrix N e x) roleLorentzMetric roleLorentzMetric,
@@ -120,8 +121,6 @@ theorem solderMetric_smul_expand (N : ℕ) (e : LocalCoframeField N)
       t • (coframeMetricReadout N e x).toMatrix + t^2 •
         (centeredCoframeMatrix N e x * roleLorentzMetric * (centeredCoframeMatrix N e x).transpose) := by
   rw [solderMetricMatrix, solderMatrix, centeredCoframeMatrix_smul]
-  change D0.Algebra.finiteGram roleLorentzMetric
-      (roleLorentzMetric + t • centeredCoframeMatrix N e x) - roleLorentzMetric = _
   rw [D0.Algebra.finiteGram_smul_expand roleLorentzMetric
     (centeredCoframeMatrix N e x) t roleLorentzMetric_transpose roleLorentzMetric_sq]
   rw [coframeMetricReadout_eq_centered_add_transpose]
@@ -188,11 +187,8 @@ def IsRoleLorentz (Λ : Matrix Role Role ℝ) : Prop :=
 /-- Right frame action on arbitrary solder matrices, pointwise at each site. -/
 theorem solderGram_right_lorentz_invariant (Θ Λ : Matrix Role Role ℝ) (hΛ : IsRoleLorentz Λ) :
     (Θ * Λ) * roleLorentzMetric * (Θ * Λ).transpose = Θ * roleLorentzMetric * Θ.transpose := by
-  rw [Matrix.transpose_mul]
-  calc
-    Θ * Λ * roleLorentzMetric * (Λ.transpose * Θ.transpose) =
-        Θ * (Λ * roleLorentzMetric * Λ.transpose) * Θ.transpose := by simp only [Matrix.mul_assoc]
-    _ = _ := by rw [hΛ]
+  simpa [D0.Algebra.finiteGram, IsRoleLorentz] using
+    D0.Algebra.finiteGram_right_invariant roleLorentzMetric Θ Λ hΛ
 
 /-- At the flat solder η, the right-action variation is ηa. -/
 def IsRoleLorentzTangent (a : Matrix Role Role ℝ) : Prop :=

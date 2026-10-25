@@ -95,41 +95,50 @@ duplicate imports, missing local imports, or import cycles. This is a library
 structure check, not a classification of the mathematical units above and not
 evidence that C0 is formally covered.
 
-### Reusable finite Gram tangent algebra (25 October 2026)
+### Reusable finite Gram algebra and consumer refactor (25 October 2026)
 
-The exact finite Gram expansion is now factored into the reusable algebra
-module `D0.Algebra.FiniteGramTangent`. For a symmetric involution `η`, it proves
-`(η + t C) η (η + t C)ᵀ = η + t(C + Cᵀ) + t² CηCᵀ`, retaining the full
-quadratic remainder. It also gives the explicit preimage `C=q/2` for every
-symmetric matrix `q`. The module uses only finite matrix algebra and adds no
-geometric or physical premise.
+`D0.Algebra.FiniteGramTangent` now owns the generic finite Gram map and its
+algebraic laws: symmetry for symmetric `η`, right invariance under any
+`Λ` satisfying `Λ η Λᵀ = η`, the exact expansion
+`(η + t C) η (η + t C)ᵀ = η + t(C + Cᵀ) + t² CηCᵀ` for symmetric involutive
+`η`, and the explicit preimage `C=q/2` of every symmetric `q`. The quadratic
+remainder is retained. These results depend only on finite matrix algebra.
 
-`D0.Geometry.A4DSolderMetricCompletion` now consumes both generic results: its
-concrete Role solder path reuses the Gram expansion, and its all-site witness
-reuses the half-matrix identity. The resulting application still realizes
-every symmetric Role-matrix direction at every finite lattice site, with the
-exact finite-parameter remainder. `D0.All` imports the generic module through
-the generated public view. The compiled owning-module inventory records 105
-declarations across the generic module and its concrete consumer; the new
-algebra declarations and the solder result report the standard
-`Classical.choice`, `Quot.sound`, and `propext` axiom footprint.
+The generic API is now used by concrete consumers. In
+`D0.Geometry.A4DSolderMetricCompletion`, the solder metric is defined through
+the shared Gram map; its symmetry, right-Lorentz invariance, exact tangent, and
+all-site symmetric-direction witness use the generic lemmas. The existing
+raw-solder frame adapter continues through that invariance theorem.
+`D0.Geometry.A4DPathCovariantHodge` now makes its flat Nyquist witness through
+the shared map, while `D0.Geometry.A4DStarFiniteLorentzQuotient` defines its
+site Gram through the same generic map and preserves the existing full-frame
+invariance application. This is a finite algebra refactor across distinct
+centered and raw coframe carriers; the theorem hypotheses retain their exact
+Role-Lorentz action.
 
-This refactor establishes neither physical selection of the metric path nor
+It establishes neither physical selection of the metric path nor
 finite-parameter nondegeneracy, the independent full 16+24 variation, a
 continuum field equation, refinement, or C0 coverage. It remains an exact
 finite algebra application within the metric-provenance route.
 
-The public `D0.All` build passed at Lean 4.30.0 (4,569 Lake jobs). Generated
-Lean views are current; formalization-debt, claim-map coverage, core no-sorry,
-and gravity-assembly checks passed. The inventory is
+The changed modules passed narrow Lean 4.30.0 builds: 2,980 jobs for
+`D0.Geometry.A4DSolderMetricCompletion` and 3,213 jobs for
+`D0.Geometry.A4DStarFiniteLorentzQuotient`. The public `D0.All` build passed
+(4,569 jobs). Generated Lean views are current; formalization-debt, claim-map
+coverage, core no-sorry, and gravity-assembly checks passed. The compiled
+owning-module inventory records 173 declarations across the algebra module
+and three concrete consumers; the selected declarations report the standard
+`Classical.choice`, `Quot.sound`, and `propext` footprint. Its path is
 `sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_tangent_inventory_2026-10-25.json`,
-captured at snapshot `74c89e928f19fe06d73f801b2c6c6726aab848da` with
+captured at snapshot `858f173b350581dc9e0e7f76bb0d7a952bf89441` with
 `worktree_dirty=true`, Lean source digest
-`4d28cf4e7bb25a7f1a2c90e6273ab1203368d8e69ea5c985c171f3710beef743`,
+`5b2bfa98058fb71261314f61934a2a3947641bbeb9beddef4ea8afba4ebbe93c`,
 collector SHA-256
-`d251a581dc61f8d77bb37d8731bb7bd13811a7f7a468dac842b12f11c0048ddf`, and
-artifact SHA-256
-`affd198bc595e9fd3975642146787367d3eee6d95de771c72420c1f56c258aa4`.
+`38cf062919c9e100b58cd8800f81f03ea03d26200fe3f9d414d0ed5de74150a`, and
+inventory SHA-256
+`6e2b4d3c40cc9363ac5571994681c5ffebb315940d92b6b2d8c18ab6dcac6570`. The
+generic module SHA-256 is
+`5608710839870914c5ddc007f5efbe5331453a1e560ef43f311060774f24dfc8`.
 ## Scientific boundary and reuse vertical
 
 This work does not select a physical implementation or close GR. Keep complete Book03/Cost-Info/source admission, same-execution clock/controller/work selection, physical metric descent/frame selection, original H+J+R, positive_gr, and raw216 open under their existing owners. Preserve #334; do not duplicate or retire its science. Conditional assumptions remain in theorem signatures. Connes reconstruction remains conditional when its needed object is a supplied field.

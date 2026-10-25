@@ -2,12 +2,12 @@ import Mathlib.Data.Matrix.Basic
 import Mathlib.Tactic
 
 /-!
-# Generic finite Gram-matrix tangent algebra
+# Generic finite Gram-matrix algebra
 
-This module owns only matrix algebra. It records the exact expansion of a
-Gram map around a symmetric involutive frame and the explicit half-matrix
-preimage of every symmetric direction. It makes no geometric or physical
-selection claim.
+This module owns only matrix algebra: Gram symmetry, isometry invariance, the
+exact expansion around a symmetric involutive frame, and the explicit
+half-matrix preimage of every symmetric direction. It makes no geometric or
+physical selection claim.
 -/
 
 namespace D0.Algebra
@@ -18,6 +18,25 @@ open Matrix
 def finiteGram {ι : Type*} [Fintype ι]
     (η Θ : Matrix ι ι ℝ) : Matrix ι ι ℝ :=
   Θ * η * Θ.transpose
+
+/-- A Gram matrix is symmetric when its fixed bilinear form is symmetric. -/
+theorem finiteGram_symmetric {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (η Θ : Matrix ι ι ℝ) (hη_transpose : η.transpose = η) :
+    (finiteGram η Θ).transpose = finiteGram η Θ := by
+  simp [finiteGram, Matrix.transpose_mul, hη_transpose, Matrix.mul_assoc]
+
+/-- Right multiplication by an isometry of `η` leaves its Gram matrix fixed. -/
+theorem finiteGram_right_invariant {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (η Θ Λ : Matrix ι ι ℝ)
+    (hΛ : Λ * η * Λ.transpose = η) :
+    finiteGram η (Θ * Λ) = finiteGram η Θ := by
+  unfold finiteGram
+  rw [Matrix.transpose_mul]
+  calc
+    Θ * Λ * η * (Λ.transpose * Θ.transpose) =
+        Θ * (Λ * η * Λ.transpose) * Θ.transpose := by
+          simp only [Matrix.mul_assoc]
+    _ = Θ * η * Θ.transpose := by rw [hΛ]
 
 /-- Exact symmetrization witness: every symmetric matrix is `C + Cᵀ` for
 `C = q/2`. -/
