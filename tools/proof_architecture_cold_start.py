@@ -88,13 +88,15 @@ CASES: list[dict[str, Any]] = [
         "queries": [
             "proper Lorentz same determinant orientation complete coframe link orbit coordinates",
             "det=1 same orientation Lorentz orbit русская ориентация",
-            "a4d_complete_proper_orbit_coordinates a4dRightProperLorentz_gram_complete",
+            "a4d_complete_proper_orbit_coordinates a4dRightProperLorentz_gram_complete finiteGram_right_orbit_complete",
         ],
         "required_refs": [
             "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
             "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
+            "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_46328dbe.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_b1e59692.json",
         ],
         "required_sources": [
             {
@@ -105,10 +107,12 @@ CASES: list[dict[str, Any]] = [
             },
         ],
         "scope_review": (
-            "The finite field theorem recovers a site-dependent determinant-one Lorentz "
-            "frame from equal site Grams, dressed links, and same determinant orientation "
-            "on a nondegenerate reference solder field. It leaves time orientation, the "
-            "selected-action map, physical source selection, and independent acceptance open."
+            "The shared generic finiteGram_right_orbit_complete theorem proves that equal "
+            "finite Gram matrices give a right-isometry orbit when the reference frame is "
+            "invertible; the Lorentz module specializes it to site coframes and dressed "
+            "links. The proper field theorem also requires equal determinant orientation "
+            "at every site. It leaves time orientation, the selected-action map, physical "
+            "source selection, and independent acceptance open."
         ),
     },
     {

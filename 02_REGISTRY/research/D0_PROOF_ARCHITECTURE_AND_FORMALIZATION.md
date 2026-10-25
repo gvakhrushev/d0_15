@@ -7563,3 +7563,43 @@ full-output SHA-256
 `2f33d9e53a292a1d76f73d90c3450c92d90f1ab2053cb257e10834eb217cbd03`.
 The recorded dirty flag covers the in-progress runner/test/artifact checkpoint;
 the authority digests and exact source pins are recorded in the receipt.
+
+### Shared finite-Gram orbit API and Lorentz specialization (26 October 2026)
+
+The finite Lorentz Gram-completeness proof repeated matrix algebra already
+owned by the generic finite-Gram module. That argument is now factored into
+`D0.Algebra.finiteGram_right_orbit_complete` in
+`D0.Algebra.FiniteGramTangent`. For any finite index type and real matrix
+form `η`, it proves
+
+`finiteGram η Θ = finiteGram η Ψ ↔ ∃ Λ, finiteGram η Λ = η ∧ Ψ = Θ * Λ`
+
+from invertibility of the reference frame `Θ`. The fixed form `η` need not be
+invertible. The converse reuses `finiteGram_right_invariant`; the forward
+direction constructs the frame witness `Θ⁻¹ * Ψ` and proves its isometry
+equation from Gram equality.
+
+`D0.Geometry.a4dRightLorentz_gram_complete` now specializes this common API to
+`roleLorentzMetric` and the existing `IsRoleLorentz` predicate. The compiled
+proof dependencies confirm the specialization calls the generic theorem, and
+the generic theorem calls `finiteGram_right_invariant`. The site-field and
+proper-determinant results continue through that specialization, preserving
+their existing nondegeneracy and relative-orientation hypotheses.
+
+The Lean files are pinned at commit `b1e59692ac222c0bf564f9d6a97e3d2ca64aa4f2`:
+`FiniteGramTangent.lean` SHA-256
+`ece56ab3725d39a7388278b886b68480508db02ed1d828a56e11ddaa12a70bef`, and
+`A4DStarFiniteLorentzQuotient.lean` SHA-256
+`136101ff7acec2be8be853c8b64a8ce2c1b31ab036e9c931c195554ad93610d6`. Their
+combined Lean-source digest is
+`dabf250dc4288c227cfc51c8f6b2352dae221b14717d78c8b08d705445db19de`.
+The algebra module built at **2,946/2,946** jobs, the dependent geometry module
+at **3,215/3,215**, and the final public `D0.All` integration at
+**4,581/4,581**. The two theorem declarations retain the standard
+`Classical.choice`, `Quot.sound`, and `propext` footprint; no `sorryAx` is
+introduced.
+
+The result is finite matrix orbit algebra and a typed Lean reuse edge. It does
+not establish that the selected physical action maps to this carrier, choose
+time orientation, select a physical metric/source, or close an independent C0
+disposition.

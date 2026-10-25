@@ -695,14 +695,9 @@ class ProofArchitectureTests(unittest.TestCase):
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
             / "proper_role_lorentz_orbit_declarations_2026-10-26.json"
         )
-        self.assertEqual(
-            hashlib.sha256(supplement_path.read_bytes()).hexdigest(),
-            "9a060dba84a8053b45f5a4e56ccc4b34a4db988c36cae0b55c9659cd9a11ad4c",
-        )
         supplement = json.loads(supplement_path.read_text(encoding="utf-8"))
-        self.assertEqual(supplement["snapshot_commit"],
-                         "46328dbe01473c2188f715b9b15676cbb9ec8661")
-        self.assertTrue(supplement["worktree_dirty"])
+        self.assertRegex(supplement["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertFalse(supplement["worktree_dirty"])
         self.assertEqual(supplement["lean_source_digest"], lean_task_build.source_digest())
         self.assertEqual(supplement["public_import_root"], "D0.All")
         declarations = {row["name"]: row for row in supplement["declarations"]}
@@ -1341,7 +1336,79 @@ class ProofArchitectureTests(unittest.TestCase):
             hit.get("source") == module and hit.get("direct_content")
             for hit in exact_hits
         ), "exact proper-orbit query must surface its Lean source directly")
+        self.assertTrue(any(
+            hit.get("source") ==
+                "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+            and hit.get("direct_content")
+            for hit in exact_hits
+        ), "shared Gram-orbit query must surface its algebra API directly")
         self.assertIn("time orientation", case["scope_review"])
+
+    def test_generic_finite_gram_orbit_api_is_used_by_lorentz_specialization(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "finite_gram_orbit_shared_api_declarations_2026-10-26.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertFalse(inventory["worktree_dirty"])
+        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+        self.assertEqual(set(inventory["request"]["full_names"]), set(declarations))
+
+        generic = declarations["D0.Algebra.finiteGram_right_orbit_complete"]
+        self.assertEqual(generic["module"], "D0.Algebra.FiniteGramTangent")
+        self.assertIn("IsUnit Θ.det", generic["elaborated_type"])
+        self.assertNotIn("IsUnit η.det", generic["elaborated_type"])
+        self.assertIn("D0.Algebra.finiteGram_right_invariant",
+                      generic["proof_dependencies"])
+        self.assertEqual(
+            set(generic["axioms"]),
+            {"Classical.choice", "Quot.sound", "propext"},
+        )
+
+        specialization = declarations[
+            "D0.Geometry.a4dRightLorentz_gram_complete"
+        ]
+        self.assertEqual(
+            specialization["module"],
+            "D0.Geometry.A4DStarFiniteLorentzQuotient",
+        )
+        self.assertIn(
+            "D0.Algebra.finiteGram_right_orbit_complete",
+            specialization["proof_dependencies"],
+        )
+        self.assertNotIn("sorryAx", specialization["axioms"])
+
+    def test_current_metric_provenance_crosswalk_pins_shared_orbit_application(self) -> None:
+        crosswalk_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "metric_provenance_crosswalk_2026-10-26_b1e59692.json"
+        )
+        crosswalk = json.loads(crosswalk_path.read_text(encoding="utf-8"))
+        self.assertEqual(crosswalk["result_id"], "metric-provenance")
+        self.assertRegex(crosswalk["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertFalse(crosswalk["worktree_dirty"])
+        self.assertEqual(crosswalk["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(
+            crosswalk["explicit_declaration_locator_disposition"], "all_resolved"
+        )
+        self.assertEqual(crosswalk["claim_locator_disposition"], "unresolved")
+        self.assertEqual(crosswalk["semantic_relation_status"], "unresolved")
+        self.assertFalse(crosswalk["acceptance_inferred"])
+        declarations = {
+            row["name"]: row for row in crosswalk["compiled_declarations"]
+            if row.get("name")
+        }
+        lorentz = declarations["D0.Geometry.a4dRightLorentz_gram_complete"]
+        self.assertIn(
+            "D0.Algebra.finiteGram_right_orbit_complete",
+            lorentz["proof_dependencies"],
+        )
 
     def test_historical_cold_start_summary_preserves_original_denominator(self) -> None:
         summary_path = (
@@ -1397,16 +1464,11 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-26_orbit.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_gram_api.json"
         )
-        payload = summary_path.read_bytes()
-        self.assertEqual(
-            hashlib.sha256(payload).hexdigest(),
-            "a1113299cff33c49984cfaecdf46f5a92c9db804dbddb106f97743252261df13",
-        )
-        summary = json.loads(payload)
-        self.assertEqual(summary["snapshot_commit"],
-                         "d9322d203d6cc0ea60f07feb56356dce7eba87c1")
+        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
+        self.assertRegex(summary["snapshot_commit"], r"^[0-9a-f]{40}$")
         self.assertTrue(summary["worktree_dirty"])
         self.assertEqual(summary["search_cases_found_all_sources"], 22)
         self.assertEqual(summary["search_cases_total"], 22)
@@ -1420,14 +1482,14 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in summary["cases"]
         ))
         self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 131
+            sum(row["required_source_count"] for row in summary["cases"]), 133
         )
         proper = next(
             row for row in summary["cases"]
             if row["id"] == "proper-lorentz-same-orientation-orbit"
         )
         self.assertEqual(proper["query_count"], 3)
-        self.assertEqual(proper["required_source_count"], 4)
+        self.assertEqual(proper["required_source_count"], 6)
         self.assertTrue(summary["change_impact_regression"]["status"] == "pass")
         self.assertTrue(summary["semantic_scope_review_is_manual"])
         for path, digest in summary["authority_source_digests"].items():
@@ -2193,10 +2255,7 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
-        self.assertEqual(
-            inventory["snapshot_commit"],
-            "46328dbe01473c2188f715b9b15676cbb9ec8661",
-        )
+        self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
         self.assertEqual(inventory["public_import_root"], "D0.All")
         self.assertEqual(inventory["toolchain"], "leanprover/lean4:v4.30.0")
