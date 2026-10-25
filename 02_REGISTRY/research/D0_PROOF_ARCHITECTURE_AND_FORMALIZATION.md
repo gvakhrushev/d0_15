@@ -7443,3 +7443,46 @@ time-orientation components. The selected-action-to-Lean-carrier map,
 semantic source relation, claim locator, and independent C0 acceptance remain
 open (`acceptance_inferred=false`). This exact finite endpoint identity adds
 no physical metric/source selection or GR closure.
+
+### Current compiled inventory refresh (26 October 2026)
+
+The endpoint-compatibility module changes the repository-wide Lean-source
+digest. Six inventories still named “current” were therefore recaptured from
+the compiled public import instead of rewriting their 25 October snapshots.
+Each new inventory below was generated with `D0.All` at clean snapshot
+`046181be15f5f7b5891bec409c2158e9a5a43c43`, Lean-source digest
+`7074e944b50cf71e632b4bb56a0f9a976d9409f61dfa38ed7aa8e245d78b376d`, and
+`worktree_dirty=false`; every requested declaration resolved.
+
+| Current inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26.json` | 15/15 | `ef3d7bd5876eec867317bb40eccb51b2ebff9cadedfe3e0f09379a42cd38a36b` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26.json` | 36/36 | `aae0356b58a4a4654a44962b58ece46f1ade14d47581510b41986306e265ce38` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26.json` | 9/9 | `c6bbd42966c3e0ce45f7682c4ff4b7a457085223fb56cb79f81e77f9360ce1db` |
+| `archive_shift_topology_current_declarations_2026-10-26.json` | 26/26 | `6a8e47ffa7ba02b3e829d3b82687d3ab53a8c90d64c78dc893692a6885e9cae3` |
+| `source_port_preparation_tensor_inventory_2026-10-26.json` | 73/73 | `41118ec3411e2398789d4d6eaff511557177f0403a2a204e76df252b64f16a98` |
+| `flat_tensor_shared_api_declarations_2026-10-26.json` | 4/4 | `559c04ce197d8232902f71a734eab05fbd0e34bd2289ae6dd9412669c11a9ffc` |
+
+The `metric-provenance` compiled declaration crosswalk was replayed from the
+clean public tree at `bb198943a18e9585fa9d2386327d763249f59fba`; its 28/28
+explicit locators remain resolved. The normalized replay payload is identical
+to the stored crosswalk above after removing only snapshot commit and dirty
+flag. The compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_clean_replay_2026-10-26_bb198943.json`,
+SHA-256 `1137308258a37949de2dae75b5a8cfa85569f78a43113f567d4e5e0778797fc8`.
+It retains the replay output digest and exact input/tool digests without
+duplicating the 544 KB crosswalk. Claim locator, semantic relation, and
+independent acceptance remain unresolved.
+
+The six preserved 25 October files remain the historical snapshot. The cold-
+start tests now consume the 26 October inventories, including the pinned
+snapshot commit for the archive-shift inventory. All **56/56** proof-architecture
+tests pass. The public `D0.All` build passes **4,581/4,581** jobs; repository
+validation reports zero warnings (`889` claims, `31` assumptions, `58` aliases,
+`202` formal-support rows, `933` Lean-closure rows), and `gr_assembly.py check`
+is valid with scientific promotion false.
+
+These refreshes make declaration-level reuse evidence current and reproducible;
+they do not classify or accept the full C0 corpus. Physical premises,
+application semantics outside the compiled adapters, and independent C0 review
+remain open.
