@@ -4989,3 +4989,22 @@ coordinates, give the exact all-grid root count, or compute the total site ×
 Fock kernel dimension. The exact full-cochain witness above and this root
 lower bound are mathematical properties of the declared complex carrier;
 they do not define a physical gauge quotient or select the source.
+
+Validation on the source checkpoint passed: the adapter narrow build completed
+(3,410 Lake jobs), repository validation reported zero warnings, generated
+Lean views had `stale=0`, the debt audit stayed at its five-item baseline, and
+the EOL-aware diff check passed. The refreshed selected-import inventory has
+216 declarations across the same four owning modules, including 38 in the
+adapter and no `sorryAx`. Its SHA-256 is
+`6c7bd30bf64f1db5cad67bf56bf333d7f25a1381cafbe1808bd126c5747a5d77`; Lean
+source digest is
+`c7859453678c46f50435b7e0b2eb0cf726317e8f3057e12962ace05918bd3e81`, module
+SHA-256 is
+`8635403019347dba0160d57de34d500791ad1e8e99817349d53d02e81b096b5d`, and
+collector SHA-256 is
+`cd8acaf6fa202e54f8090f9c5fb9fc210dfe03ba3197f21115581d7b7afad0cb`. It
+records snapshot `8d35e0c308e648281492cb1f9b4ed7a8cea70302` with
+`worktree_dirty=false`. The lower-bound theorem's transitive footprint is
+`Classical.choice`, `propext`, and `Quot.sound`; the full cochain witness also
+retains the existing CAR computation leaves. No claim or `formal_support`
+entry changed, and the full `D0.All` build remains a Ready-checkpoint action.
