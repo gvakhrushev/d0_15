@@ -227,5 +227,234 @@ theorem sourceMomentWeight_l1 (p : ℕ) :
     (fun r : ℕ => |sourceMomentWeightNat p r|) (p + 2)]
   simpa [sourceMomentWeightNat] using alternatingBinomialWeight_l1 (p + 1)
 
+/-- The explicit smallness threshold for the conditional finite-probe form of
+the source's Eq. (3c). `Cbase` bounds the mesh error in the paired base-action
+contrast and `Crem` bounds the weighted transfer remainder. -/
+def eq3cSmallnessThreshold (p : ℕ) (Cbase Crem : ℝ) : ℝ :=
+  min 1
+    ((9 * Real.pi ^ 2 / (400 * ((p + 2 : ℕ) : ℝ))) /
+      (Cbase / ((p + 2 : ℕ) : ℝ) + Crem + 1))
+
+/-- Conditional Lean application of the finite-probe estimate in source §3,
+Eq. (3c). The per-scale model keeps the physical base contrast, every
+finite-degree inverse-scale moment, and the paired transfer remainder
+separate. The moment identities cancel the polynomial terms exactly; the
+owned error inequality then forces at least one experiment's transfer error
+to reach the displayed scale. The curved fibers, the base-action estimate,
+and the weighted remainder estimate remain explicit caller premises. -/
+theorem eq3c_finite_probe_error_bound
+    (p : ℕ) (Cbase Crem h ε M d : ℝ)
+    (coeff : Fin (p + 1) → ℝ)
+    (errors : Fin 2 → Fin (p + 2) → ℝ)
+    (remainder : Fin (p + 2) → ℝ)
+    (hCbase : 0 ≤ Cbase)
+    (hCrem : 0 ≤ Crem)
+    (hε : 0 < ε)
+    (hεsmall : ε < eq3cSmallnessThreshold p Cbase Crem)
+    (hh : h = ε ^ 3)
+    (hd : |d + 9 * Real.pi ^ 2 / 200| ≤ Cbase * h)
+    (hrem : |∑ r : Fin (p + 2),
+      sourceMomentWeight p r * remainder r| ≤ Crem * h)
+    (hprofile : ∀ r : Fin (p + 2),
+      errors 0 r - errors 1 r =
+        ε * d * sourceMomentScale r +
+          (∑ j : Fin (p + 1),
+            coeff j * sourceMomentInversePower r j.val) + remainder r)
+    (hmax : ∀ c : Fin 2, ∀ r : Fin (p + 2), |errors c r| ≤ M) :
+    (ε * (9 * Real.pi ^ 2 /
+      (400 * ((p + 2 : ℕ) : ℝ)))) / (2 : ℝ) ^ (p + 2) ≤ M := by
+  let n : ℝ := ((p + 2 : ℕ) : ℝ)
+  let K : ℝ := Cbase / n + Crem
+  let target : ℝ := 9 * Real.pi ^ 2 / (400 * n)
+  have hn : 0 < n := by
+    dsimp [n]
+    positivity
+  have hK : 0 ≤ K := by
+    dsimp [K]
+    exact add_nonneg (div_nonneg hCbase (le_of_lt hn)) hCrem
+  have hK1 : 0 < K + 1 := by linarith
+  have hεsmall' := hεsmall
+  rw [eq3cSmallnessThreshold] at hεsmall'
+  have hεlt1 : ε < 1 :=
+    lt_of_lt_of_le hεsmall' (min_le_left _ _)
+  have hεltRatio : ε < target / (K + 1) := by
+    simpa [target, K, n] using
+      lt_of_lt_of_le hεsmall' (min_le_right _ _)
+  have hεsq : ε ^ 2 ≤ target / (K + 1) := by
+    have hεsqε : ε ^ 2 ≤ ε := by
+      nlinarith [mul_nonneg (le_of_lt hε) (sub_nonneg.mpr (le_of_lt hεlt1))]
+    exact le_trans hεsqε (le_of_lt hεltRatio)
+  have hKεsq : K * ε ^ 2 ≤ target := by
+    have hmul := mul_le_mul_of_nonneg_left hεsq (le_of_lt hK1)
+    have hKle : K ≤ K + 1 := by linarith
+    calc
+      K * ε ^ 2 ≤ (K + 1) * ε ^ 2 :=
+        mul_le_mul_of_nonneg_right hKle (sq_nonneg ε)
+      _ ≤ (K + 1) * (target / (K + 1)) := hmul
+      _ = target := by field_simp [ne_of_gt hK1]
+  have hKh : K * h ≤ ε * target := by
+    rw [hh]
+    calc
+      K * ε ^ 3 = ε * (K * ε ^ 2) := by ring
+      _ ≤ ε * target := mul_le_mul_of_nonneg_left hKεsq (le_of_lt hε)
+
+  have hscaleWeighted :
+      (∑ r : Fin (p + 2),
+        sourceMomentWeight p r * sourceMomentScale r) = 1 / n := by
+    simpa [n] using sourceMomentScale_weighted_sum p
+  have hpolyWeighted :
+      (∑ r : Fin (p + 2), sourceMomentWeight p r *
+        (∑ j : Fin (p + 1),
+          coeff j * sourceMomentInversePower r j.val)) = 0 :=
+    fixedDegreeScaleContrast_eq_zero p coeff
+  have hbaseWeighted :
+      (∑ r : Fin (p + 2),
+        sourceMomentWeight p r * (ε * d * sourceMomentScale r)) =
+        (ε * d) *
+          (∑ r : Fin (p + 2),
+            sourceMomentWeight p r * sourceMomentScale r) := by
+    calc
+      _ = ∑ r : Fin (p + 2),
+            (ε * d) *
+              (sourceMomentWeight p r * sourceMomentScale r) := by
+          apply Finset.sum_congr rfl
+          intro r hr
+          ring
+      _ = _ := by rw [Finset.mul_sum]
+  have hcontrast :
+      (∑ r : Fin (p + 2), sourceMomentWeight p r *
+        (errors 0 r - errors 1 r)) =
+        ε * d / n +
+          (∑ r : Fin (p + 2),
+            sourceMomentWeight p r * remainder r) := by
+    calc
+      _ = ∑ r : Fin (p + 2), sourceMomentWeight p r *
+            (ε * d * sourceMomentScale r +
+              (∑ j : Fin (p + 1),
+                coeff j * sourceMomentInversePower r j.val) + remainder r) := by
+          apply Finset.sum_congr rfl
+          intro r hr
+          rw [hprofile r]
+      _ = (∑ r : Fin (p + 2), sourceMomentWeight p r *
+              (ε * d * sourceMomentScale r)) +
+            (∑ r : Fin (p + 2), sourceMomentWeight p r *
+              (∑ j : Fin (p + 1),
+                coeff j * sourceMomentInversePower r j.val)) +
+            (∑ r : Fin (p + 2), sourceMomentWeight p r * remainder r) := by
+          simp_rw [mul_add]
+          rw [Finset.sum_add_distrib, Finset.sum_add_distrib]
+      _ = ε * d / n +
+            (∑ r : Fin (p + 2),
+              sourceMomentWeight p r * remainder r) := by
+          rw [hbaseWeighted, hscaleWeighted, hpolyWeighted]
+          ring
+
+  let g : ℝ := ε * d / n +
+    (∑ r : Fin (p + 2), sourceMomentWeight p r * remainder r)
+  have hpairBound : ∀ r : Fin (p + 2),
+      |errors 0 r - errors 1 r| ≤ 2 * M := by
+    intro r
+    calc
+      |errors 0 r - errors 1 r| =
+          |errors 0 r + -(errors 1 r)| := by rfl
+      _ ≤ |errors 0 r| + |-(errors 1 r)| := abs_add_le _ _
+      _ = |errors 0 r| + |errors 1 r| := by simp
+      _ ≤ M + M := add_le_add (hmax 0 r) (hmax 1 r)
+      _ = 2 * M := by ring
+  have hUpper : |g| ≤ (2 * M) *
+      (∑ r : Fin (p + 2), |sourceMomentWeight p r|) := by
+    dsimp [g]
+    exact D0.Research.NativeWeightedDiracBoundary.finite_annihilator_error_bound
+      (w := sourceMomentWeight p)
+      (x := fun r : Fin (p + 2) => errors 0 r - errors 1 r)
+      (E := 2 * M)
+      (g := ε * d / n +
+        (∑ r : Fin (p + 2), sourceMomentWeight p r * remainder r))
+      hpairBound hcontrast
+  have hUpper' : |g| ≤ (2 * M) * (2 : ℝ) ^ (p + 1) := by
+    rw [sourceMomentWeight_l1 p] at hUpper
+    exact hUpper
+
+  have hclose :
+      |g - ε * (-9 * Real.pi ^ 2 / 200) / n| ≤ K * h := by
+    dsimp [g]
+    calc
+      |(ε * d / n +
+          (∑ r : Fin (p + 2),
+            sourceMomentWeight p r * remainder r)) -
+          ε * (-9 * Real.pi ^ 2 / 200) / n| =
+        |ε * (d + 9 * Real.pi ^ 2 / 200) / n +
+          (∑ r : Fin (p + 2),
+            sourceMomentWeight p r * remainder r)| := by
+              congr 1; ring
+      _ ≤ |ε * (d + 9 * Real.pi ^ 2 / 200) / n| +
+          |∑ r : Fin (p + 2),
+            sourceMomentWeight p r * remainder r| := abs_add_le _ _
+      _ = ε * |d + 9 * Real.pi ^ 2 / 200| / n +
+          |∑ r : Fin (p + 2),
+            sourceMomentWeight p r * remainder r| := by
+              rw [abs_div, abs_mul, abs_of_pos hε, abs_of_pos hn]
+      _ ≤ ε * (Cbase * h) / n + Crem * h := by
+          apply add_le_add
+          · apply div_le_div_of_nonneg_right _ (le_of_lt hn)
+            exact mul_le_mul_of_nonneg_left hd (le_of_lt hε)
+          · exact hrem
+      _ ≤ (Cbase / n) * h + Crem * h := by
+          have hh0 : 0 ≤ h := by rw [hh]; positivity
+          have hCbaseh : 0 ≤ Cbase * h := mul_nonneg hCbase hh0
+          have hnum : ε * (Cbase * h) ≤ Cbase * h := by
+            calc
+              ε * (Cbase * h) ≤ 1 * (Cbase * h) :=
+                mul_le_mul_of_nonneg_right (le_of_lt hεlt1) hCbaseh
+              _ = Cbase * h := by ring
+          have hdiv := div_le_div_of_nonneg_right hnum (le_of_lt hn)
+          calc
+            ε * (Cbase * h) / n + Crem * h ≤
+                (Cbase * h) / n + Crem * h := add_le_add hdiv le_rfl
+            _ ≤ (Cbase / n) * h + Crem * h :=
+              add_le_add (le_of_eq (by ring)) le_rfl
+      _ = K * h := by dsimp [K]; ring
+  have hclose' :
+      |g - ε * (-9 * Real.pi ^ 2 / 200) / n| ≤ ε * target :=
+    le_trans hclose hKh
+  have hbaseAbs :
+      |ε * (-9 * Real.pi ^ 2 / 200) / n| = 2 * (ε * target) := by
+    rw [abs_div, abs_mul, abs_of_pos hε, abs_of_pos hn]
+    have hconst : 0 < 9 * Real.pi ^ 2 / 200 := by positivity
+    have hnegEq : (-9 * Real.pi ^ 2 / 200 : ℝ) =
+        -(9 * Real.pi ^ 2 / 200) := by ring
+    rw [hnegEq, abs_neg, abs_of_pos hconst]
+    dsimp [target]
+    field_simp [ne_of_gt hn]
+    ring
+  have habsSub :
+      |ε * (-9 * Real.pi ^ 2 / 200) / n - g| =
+        |g - ε * (-9 * Real.pi ^ 2 / 200) / n| := by
+    calc
+      _ = |-(g - ε * (-9 * Real.pi ^ 2 / 200) / n)| := by
+        congr 1; ring
+      _ = _ := abs_neg _
+  have htriangle :
+      |ε * (-9 * Real.pi ^ 2 / 200) / n| ≤
+        |g| + |g - ε * (-9 * Real.pi ^ 2 / 200) / n| := by
+    calc
+      _ = |g + (ε * (-9 * Real.pi ^ 2 / 200) / n - g)| := by
+        congr 1; ring
+      _ ≤ |g| + |ε * (-9 * Real.pi ^ 2 / 200) / n - g| := abs_add_le _ _
+      _ = _ := by rw [habsSub]
+  have hmin : ε * target ≤ |g| := by
+    rw [hbaseAbs] at htriangle
+    linarith [htriangle, hclose']
+  have hproduct : ε * target ≤ M * (2 : ℝ) ^ (p + 2) := by
+    calc
+      ε * target ≤ |g| := hmin
+      _ ≤ (2 * M) * (2 : ℝ) ^ (p + 1) := hUpper'
+      _ = M * (2 : ℝ) ^ (p + 2) := by
+        rw [show p + 2 = (p + 1) + 1 by omega, pow_succ]
+        ring
+  apply (div_le_iff₀ (by positivity :
+    0 < (2 : ℝ) ^ (p + 2))).2
+  simpa [target, n] using hproduct
+
 end
 end D0.Research.NativeWeightedDiracMomentIdentities

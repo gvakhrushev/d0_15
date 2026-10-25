@@ -3930,7 +3930,7 @@ capsule at the same commit has SHA-256
 | `2. Constructive weighted operator, with explicit hypotheses (positivity and grading consequences)` | **Not represented in this capsule.** It does not prove positivity of `W`, construct `W^{1/2}D_WW^{-1/2}`, or formalize degree preservation. The supplied equivalence `W` is not constrained to preserve degree. |
 | `3. Genuine mixed metric dependence is preserved (Eqs. 2–3)` | **Partial.** `inverse_weight_derivative` proves the generic inverse-operator derivative identity. The capsule does not construct the metric compound `W_Q`, prove its minor formula or diagonal agreement, evaluate the ten metric probes, or derive `Q ↦ sQ` operator homogeneity. |
 | `Finite mixed spectral moments: a quantitative contrast obstruction (generic identities and annihilator)` | **Finite-degree identities and their generic application represented.** The capsule binds the actual trace, scalar trace homogeneity, and coefficient-independent annihilator/error-bound lemmas. The companion module now proves the arbitrary-p binomial annihilator, reciprocal-weight normalization, and total variation, then applies the capsule's annihilator to every real coefficient family independent of the scale index. It still does not instantiate the physical fibers/probes or the refinement error bound. |
-| `Finite mixed spectral moments: a quantitative contrast obstruction (physical contrast, Eq. 3c)` | **Not represented as an application.** The capsule does not apply the generic tools to the two curved fibers and probes, derive the physical contrast/refinement lower bound, or prove its field/source premises. |
+| `Finite mixed spectral moments: a quantitative contrast obstruction (physical contrast, Eq. 3c)` | **Conditional finite-probe estimate formalized; physical application remains partial.** `eq3c_finite_probe_error_bound` cancels any scale-independent inverse-scale polynomial of fixed degree, applies the owned weighted-error inequality, and returns the stated lower-bound constant under explicit base-action, weighted-remainder, per-scale-profile, and smallness hypotheses. It does not construct the two curved fibers/probes or derive those physical/source hypotheses. |
 | `4. Direct flat Lorentz binding on the owned carrier (Eqs. 4–5)` | **Not represented as a full result.** The capsule has CAR/nilpotency facts and an identity-weight specialization, but not the full signed `W_eta` and site/Fock binding, Fourier symbol/dispersion, all-size spectrum, or all-role-order intertwiners. |
 | `4. Direct flat Lorentz binding on the owned carrier (Eq. 6, spatial block)` | **Isolated block lemma represented; full application partial.** `rotationBlock`, its square, and `spatial_block_has_no_positive_metric` prove the 2×2 obstruction for nonzero `L`, assuming positive diagonal entries and `DᵀG = GD`. The capsule does not prove this is an invariant restriction of the actual full Lorentz operator. |
 | `5. Complete constant-metric null-mode classification (Eq. 7)` | **Generic implication represented; actual classification not represented.** The kernel/range and half-dimension lemmas assume `D² = 0` and a supplied contraction `DK + KD = I`. The capsule does not construct the Fourier contraction on actual null modes, prove the dispersion classification/counts, or show refinement persistence. |
@@ -4000,3 +4000,57 @@ The cold-start query `finite weighted moment identities binomial scale
 contrast` returns this Lean module as the leading direct-content candidate and
 now carries the exact source commit/blob/§3 pin in its result card. No
 independent review of the new mathematical application is claimed here.
+
+### Conditional finite-probe application of Eq. (3c) (25 October 2026)
+
+The same source-pinned module now proves
+`D0.Research.NativeWeightedDiracMomentIdentities.eq3c_finite_probe_error_bound`.
+For `p+2` finite scales `s_r=1/(r+1)`, it assumes the paired error profile is
+the scale-linear base contrast plus an arbitrary degree-`p` polynomial in
+`s_r⁻¹`, plus a remainder. The arbitrary polynomial coefficients may be any
+real values but are independent of the scale index. The proof uses the
+previously formalized binomial moments to cancel that polynomial and the
+capsule's `finite_annihilator_error_bound` to show that every uniform envelope
+`M` for the two experiments' errors obeys
+`9π² ε / (400 (p+2) 2^(p+2)) ≤ M`.
+
+The statement keeps the physical inputs visible: `h=ε³`, an explicit
+`ε < eq3cSmallnessThreshold p Cbase Crem`,
+`|d + 9π²/200| ≤ Cbase*h`, and a weighted remainder bound `≤ Crem*h`.
+Thus it formalizes the finite weighted-contrast/error calculation and its
+constant. It does not construct the two curved fibers or probes, prove the
+per-scale error decomposition from their actual native source, derive the
+`d_h` estimate or weighted remainder bound, or establish their field/source
+premises. Those applications remain open; no C0 acceptance or physical GR
+selection is inferred.
+
+The refreshed inventory compiled public `D0.All` and records 42 declarations
+(34 theorems, 8 definitions; 20 source-ranged and 22 generated auxiliaries),
+with no `sorryAx`. The new theorem's elaborated type retains all of the
+conditions above; its axiom footprint is `Classical.choice`, `Quot.sound`,
+and `propext`. Inventory SHA-256 is
+`da78195683883f011ef9df904c58dd78bc0085356a6ab50fe774ee0b3d11ebdf`, the
+Lean-source digest independently recomputed from the current tree is
+`f32c5db2f5cafb1ad13d770039cb30f9eb967ef0160c8cf6ee3d22d733b003e8`, the
+Lean module SHA-256 is
+`065b01fc6a7af15ed898f2454ffff789fc1177f2c4e90568114e7e817ea334a3`, and the
+collector SHA-256 remains
+`97eb93d8f8d3ef715c4932cf33fc79d9deddb95c67ed565ab6e6d4f5841cacad`. The
+inventory records pre-commit snapshot `59ff3ab5dd20cd1b957690d1976091baf580f776`
+with `worktree_dirty=true`.
+
+The narrow Lean target built successfully (2,998 Lake jobs). The declaration
+inventory's public-import build compiled `D0.All`; this is not the Ready
+integration replay. The cold-start suite found all 18/18 required sources and
+passed all 19/19 search/impact cases. A fresh direct query returned this Lean
+module first as direct content with `pin_complete=true` and the same exact
+commit/blob/§3 source reference. Repository validation passed
+(`claims=889`, `assumptions=31`, `formal_support=191`, `lean_closure=924`, zero
+warnings); generated Lean views were current, ClaimMap coverage passed under
+Python 3.12.14, formalization-debt non-growth stayed at its five baseline
+findings, and `git diff --check` passed. The supporting source is pinned to §3 of
+`A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md` at commit
+`db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`, blob
+`2de670c0e2f9a53104be8105a3554cdd9aaa85e7`. Independent theorem review and
+application acceptance have not occurred. The PR remains Draft and the task
+remains `IN_PROGRESS`.
