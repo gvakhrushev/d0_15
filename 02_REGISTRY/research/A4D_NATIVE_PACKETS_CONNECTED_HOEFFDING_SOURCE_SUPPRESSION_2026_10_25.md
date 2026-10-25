@@ -196,3 +196,37 @@ This shows EXACT finite obstruction and SHARP n^-2 suppression on the same close
 The accompanying standalone exact rational checker \`sources/d0_native_connected_packet_suppression_2026-10-25/check_connected_packet_source.py\` proves these identities and controls k=2,3, m-support=1,2,3, dense-vs-sparse counts, and exact finite Book return first derivatives at the ORIGINAL \(\zeta=2^{-20}\). This is an interface fixture, not claimed to execute all primitive native G/CX/SourceI words or solve all42 geometry. The general theorem follows by injection counting, orthogonal projections and the owned exact first-conditional source (519), not by sampling these small n.
 
 **Conclusion:** the previously unmanaged connected full-preparation source in §7bj has an exact systematic scale \(\binom{k}{2}/\binom n2\) per bounded-arity cross-packet physical row. The local source graph can be ENLARGED without forcing these rows exactly zero. To consume at the Einstein stage still requires a physically justified, fully paid packet/clock/cut and gain envelope and control of the OTHER independent rows. \`GR_closed=false\`.
+
+
+## 7. THEOREM D — explicit dimension-free exponential majorant and one common finite Bernstein/packet source budget
+
+The sharp exact finite sums (7),(9) can be replaced by a **uniform all-k explicit bound**, without assuming the number d of CAR/geometry features stays fixed when the mesh is later varied. For \(2\le k\le n\), set
+\[
+x=\frac{k^2}{n-k+1}.
+\]
+Then
+\[
+\frac{\binom{k}{j}^2}{\binom{n}{j}}
+\le\frac{k^{2j}}{j!(n-k+1)^j}=\frac{x^j}{j!},
+\]
+since \(\binom{k}{j}\le k^j/j!\) and \(\binom{n}{j}\ge(n-k+1)^j/j!\). Thus
+\[
+\boxed{
+\Xi_{k,n}^2\le e^x-1-x
+\le \frac{x^2}{2}e^x,\qquad
+\Xi_{k,n}\le \frac{x}{\sqrt2}e^{x/2}.
+}\tag{19}
+\]
+This controls **EVERY Hilbert-normalized, even globally entangled quantum-state vertical tangent** at the actual native product base; it depends only on the actual numbers of slots and packets, and the original protected rank prefactor \(M_h\), **not** on one packet's Fock dimension or the number of possible connected histories. In particular, \(k^2/n\to0\) suffices for the exact source residual to tend to zero under unit Hilbert-state norm.
+
+For fixed physical mesh h and a declared real source gain \(\Gamma_h>0\), choose the ORIGINAL Bernstein degree m using the already owned C1 estimate
+\(e_1\le M_2(\sqrt{d/m}+2/m)\) and \(e_0\le dM_2/(2m)\). Given a prescribed positive error budget \(\varepsilon\), and fixed field lift/target constants, one finite \(m=O_h(\varepsilon^{-2})\) makes the original first-source interpolation error \(\le\varepsilon\). Then k=dm. If E≤A n local two-packet SOURCE interactions are the actually admitted graph, choose
+\[
+\boxed{n\ge \max\left\{k,\ 1+\frac{4\zeta r_h A k(k-1)}
+{(1-\zeta)\Gamma_h\varepsilon}\right\}.}\tag{20}
+\]
+Then (14) is \(\le\Gamma_h\varepsilon\), so all connected bounded-arity SOURCE normals are under the same **TRUE normalized** finite criterion. Holding fixed the actual finite field/decoder/gain constants, the PACKET COUNT alone can therefore be bounded by \(n=O_h(\varepsilon^{-5})\) in this b=2, linear-interaction model. **This is NOT a polynomial TOTAL native gate/time complexity assertion**: the required coherent QUERY compilation, full Hilbert dimension (exponential in n), routing, preparation, time and absolute Book heat must be included in the executed native programme. At varying h the constants, \(\Gamma_h\), rank, lift and E/n may vary; no uniform GR mesh claim follows.
+
+The simultaneous full-price check remains Eq.(15), with real compiled e_Q chosen after actual source register and logical circuit, then genuinely paid commuting padding N after the finite noncommuting core as §7bi. The actual \(\Gamma_{h,n}\) must be substituted if it changes with those choices. This establishes an explicit **finite resource choice** for suppressing the formerly uncovered connected preparations on a fully priced declared packet graph, not a self-selection law that M1 or D_min is proved to execute that graph. The original separate global FIELD/QUERY/clock/cut normals remain required.
+
+The exact checker exercises the finite binomial inclusion law on all ordered injections for \(n\le7,k\le4\), the true Book log derivative and both source norm rates. The inequalities above are analytical and continue without any data-dimension restriction.
