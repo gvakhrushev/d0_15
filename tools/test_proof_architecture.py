@@ -1244,6 +1244,54 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn("h ≠ 0", sourced["elaborated_type"])
 
+    def test_published_cold_start_summary_is_compact_and_source_pinned(self) -> None:
+        summary_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "proof_architecture_cold_start_summary_2026-10-25_e85c64c6.json"
+        )
+        summary_bytes = summary_path.read_bytes()
+        summary = json.loads(summary_bytes)
+        self.assertLess(len(summary_bytes), 100_000)
+        self.assertEqual(
+            summary["schema"], "d0-proof-architecture-cold-start-summary-v1"
+        )
+        self.assertEqual(
+            summary["snapshot_commit"],
+            "e85c64c6e8a6f135b928679f213860c9cad5bb2f",
+        )
+        self.assertFalse(summary["worktree_dirty"])
+        self.assertEqual(summary["search_cases_found_all_sources"], 20)
+        self.assertEqual(summary["search_cases_total"], 20)
+        self.assertEqual(summary["benchmark_cases_total"], 21)
+        self.assertTrue(summary["change_impact_regression"]["status"] == "pass")
+        self.assertEqual(
+            summary["authority_source_digests"]["02_REGISTRY/formal_support.csv"],
+            hashlib.sha256(
+                (proof.ROOT / "02_REGISTRY/formal_support.csv").read_bytes()
+            ).hexdigest(),
+        )
+        self.assertEqual(
+            [row["id"] for row in summary["cases"]],
+            [case["id"] for case in cold_start.CASES],
+        )
+        self.assertTrue(all(
+            row["all_required_sources_found"] and not row["missing_paths"]
+            for row in summary["cases"]
+        ))
+        self.assertEqual(
+            sum(row["required_source_count"] for row in summary["cases"]), 123
+        )
+        self.assertTrue(summary["semantic_scope_review_is_manual"])
+        raw_pin = summary["verbose_output_git_pin"]
+        self.assertRegex(raw_pin["commit"], r"^[0-9a-f]{40}$")
+        self.assertRegex(raw_pin["blob"], r"^[0-9a-f]{40}$")
+        self.assertEqual(
+            raw_pin["path"],
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "proof_architecture_cold_start_summary_2026-10-25_e85c64c6.json",
+        )
+
     def test_julia_cold_start_tracks_nonzero_chart_composition_boundary(self) -> None:
         case = next(
             item for item in cold_start.CASES

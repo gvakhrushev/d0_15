@@ -6689,11 +6689,17 @@ The full bilingual cold-start runner completed on clean snapshot
 **20/20** scenarios found every required source, and the **21/21** benchmark
 checks passed, including exact-source versus unrelated-prose impact. The run
 used the updated `formal_support.csv` digest
-`1edc5ddf0e53d46d72c7533beb0e7285dcb25b0d3cca0243d2f3d2c646899e1a`; its
-complete authority digests and per-query evidence are preserved in
+`1edc5ddf0e53d46d72c7533beb0e7285dcb25b0d3cca0243d2f3d2c646899e1a`. The
+compact replay record stores all authority digests, case-level results, and
+required source pins at
 `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_e85c64c6.json`,
-SHA-256 `9078db77bf2524844795e2449dd528916f784f64be7067f18360e4392e86be04`.
-The runner and search engine are pinned by SHA-256
+SHA-256 `840db313a7de8bc390c12f96a0df1597fd6ee951282c05fdbe4e8a958030df96`.
+The full verbose output remains retrievable at Git commit
+`88b336d3196d95e35f5646a423ea4e027e613815`, path
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_e85c64c6.json`,
+blob `de4aeb7ece8f4e9c556588ee0d67d723de1d8c4d` (SHA-256
+`9078db77bf2524844795e2449dd528916f784f64be7067f18360e4392e86be04`). The
+runner and search engine are pinned by SHA-256
 `7da9ed4eec1fc1f0c6a1ec217cd89e9d09bfc05ae176384e364e0d5bdbe73285` and
 `aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`,
 respectively. Semantic scope review remains manual.
