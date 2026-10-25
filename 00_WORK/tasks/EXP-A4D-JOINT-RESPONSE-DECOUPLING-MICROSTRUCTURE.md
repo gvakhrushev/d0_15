@@ -10698,3 +10698,100 @@ remain claims889/assumptions31/aliases58/formal_support183/Lean closure918;
 assembly54active/98results/5discharged/22obligations, scientific_promotion=false.
 This is local structural validation, not remote CI or physical acceptance.
 Only this brief and the inserted primary7aq differ from0e7b9d97.
+
+### 25 October: internalize the off-shell cofield in one actual source differential
+
+Phase: native realization / same-execution source composition. SAME
+PR334, constitutive/native-programme-v1; input08026646. Consume the
+owned full off-shell reserve-report theorem7al330--337, request compiler
+NR5, internally born request/whole-price identities7an347--353 and actual
+moment/physical sampling maps SM8/SM13. The exact missing parent premise
+is the type of7al's finite-price cofield: different hardwired source
+laws were not branches of one closed programme or its Euler source.
+
+Primary7ar384--390 replaces that comparison by ALL field-coordinate
+neighbours in ONE G-born readonly catalogue, on one complete initial
+blank carrier and one actual clock. Each sign pair has weights m_a p
+and m_a p^2, with asymmetric offsets p^2 delta and -p delta; unused
+labels are centre entries of this SAME catalogue. All inverses, key
+columns, SOURCE work, helper routing, protected rank and oldRIGHT are
+retained. The actual Book price is J(sum mu_l qhat_l), not sum mu_l J_l.
+This uses the original direct H+J; no second Info term is introduced.
+
+The explicit normalized-key tangent gives DJ=wa sum b_a Delta q_a/delta
+at the SAME actual native programme point. Its Hilbert lift norm is
+sqrt(sum b_a^2/(4delta^2 m_a p^3)); its full key-generator operator norm
+is max |b_a|/(2delta m_a p^(3/2)). A full-matrix comparison of two
+existing expanded tape stages supplies the stated exact paired-Dirac
+norm. It does not license a physical variation of the fixed G angle.
+Source conjugacy makes the full actual heat constant on this comparison.
+
+The actual geometry is the decoded marked-SOURCE-prefix MEAN moment.
+Its Jacobian C_delta differs from I by O(delta)+O(eta/delta), with all
+inverse-moment, density, calibration, h and physical C3 constants kept.
+The corrected lift C_delta^-1 Bhat is an exact differential right
+inverse of that readout. The asymmetric source chord has FIRST-order
+Hessian bias; its proved estimate389 retains that error, native error,
+off-shell M1 correction, actual sampling-map error and true gbar.
+It yields390's full Palatini covector on the lifted tests using the
+already owned source/refinement consistency and positive true gain.
+
+This is a supporting substitution on the existing supplied-query source
+graph, not an acceptance of original physical X_N or a new task. The
+independent free-key equation391 is retained: exact stationarity requires
+all conditional qhat_l equal. For the actual7al approximate report,
+its M1 delta first-source error stays; the distinct P5/C8 exact critical
+first jet is not imported. Arbitrary key--bank/cross-cohort normals,
+new query/cut choices and other selected terms keep their sources.
+In particular the off-primary catalogue does not inherit7ap's joint
+raw-clock theorem without a new budget. Fixed G birth, Can and finite
+native approximation do not prove the key tangent's physical admission.
+The remaining parent application is the actual source/readout/query/cut
+map into the selected original execution and its independent equations,
+with exact existence/dynamics/refinement where required. GR_closed=false.
+
+Write paths: primary7ar and this existing brief only. Three bounded
+read-only assistants reviewed source/carrier typing, nonlinear readout,
+full price, lift norm and the retained independent key equation. They
+did not create executions, edit files or rerun mathematics. Root's only
+new mathematical run is the embedded exact finite source/moment control;
+old compiler, root, READY, overlap,128 and Lean evidence is reused.
+
+One-programme cofield checkpoint: primary7ar INCLUDING next-heading
+separator16166UTF-8bytes/SHA256
+996d7d48f11c298d47aa51a20b041c7d07a3c35f036e3b1cd1f66e1b6d028bec.
+Embedded code3118bytes/SHA256
+9f3729f21d71700d36e97c39383b323a9b0927ab82ce38627b12a7cce1a142f2
+excludes its closing newline. The FIRST complete extracted-code run
+exit0/PASS, Python3.9.6/SymPy1.14.0: full8-column exact SO target
+catalogue with actual G-generated key, same-point return/price derivative,
+state/key-generator norm identities and nonzero independent key variance;
+nonlinear mean-decoder Jacobian versus endpoint chord; retained nonzero
+first-order source bias after actual readout correction. The fixture
+does not claim a newly synthesized NR5 word, native field preparation
+or physical admission. No expected evidence was rewritten.
+
+Removing only7ar restores input08026646 primary byte-for-byte
+(old whole-file SHA256
+a3583d55e715a1ef19440c043f594bc97fd0fbfa6a14f1bc8f24c9996e200495).
+The previous brief is an exact prefix. All other source/receipt/claim
+paths are unchanged; the inherited7aq/7ap and frozen7am evidence pins
+therefore retain their actual Git bytes. No lifecycle/assembly/GR
+promotion or new governance edit is made.
+
+All THREE final independent source-only reviews ACCEPT the exact
+16166-byte primary slice and unchanged3118-byte code above. Review
+corrections explicitly separated7al's genuine M1 delta residual from
+the distinct exact-critical P5/C8 processor, and specified the two
+existing expanded stage variations that realize387's raw norm. These
+text/proof clarifications do not change the executed code or inputs.
+No assistant reran mathematics or edited a file. Two reviewers also
+verified all20 inherited source and7section pins from the frozen7am
+packet and exact restoration of the prior primary/brief bytes.
+
+Final affected structural gates PASS: work, agent protocol, gravity
+assembly, repository(warnings0) and staged diff. Registry counts remain
+claims889/assumptions31/aliases58/formal_support183/Lean closure918;
+assembly54active/98results/5discharged/22obligations,
+scientific_promotion=false. This is local structural validation, not
+remote CI, accepted physical GR or retirement of the open owner.

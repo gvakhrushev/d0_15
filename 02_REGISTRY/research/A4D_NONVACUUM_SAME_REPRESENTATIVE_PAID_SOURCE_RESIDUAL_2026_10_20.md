@@ -10645,6 +10645,316 @@ Info term. GR_closed=false; positive_gr and raw216 remain open.
 
 
 
+## 7ar. One internal field catalogue has an actual same-point Book source
+
+25 October2026; SAME PR334 / constitutive owner, input08026646. The
+parent is7al332--337: its off-shell finite-price cofield compared
+different predeclared source words. Section7an347--348 put two requests
+inside one closed programme but explicitly did not identify that new
+programme's Euler source with the old fork cofield. Here ALL coordinate
+neighbours occur in ONE internally generated catalogue. A specific
+key-source differential, corrected by its ACTUAL moment readout, now
+has the full off-shell Palatini source as its limit. The construction
+uses the existing supplied-query source graph; admission of these key
+directions into original X_N is retained, not inferred from Can or from
+the fixed Golden primitive.
+
+### All neighbours belong to the same initial programme and price
+
+At one fixed h, take7al's full free coordinate chart c in R^D, centre
+c0, fixed collar, positive reserve, true source normalization gbar and
+all16+24+2 independent field components. Let q(c) be its smooth logical
+report mean, with the existing off-shell consistency330. Fix a small
+positive delta BEFORE execution. Choose r key-prefix bits with2^r>=D
+and assign a distinct prefix a to each coordinate. From fresh blanks,
+run the actual fixed G on all r+1 request bits. Prefix a has probability
+m_a>0; its last-bit outcomes have probabilities
+
+    mu_(a,+)=m_a p,       mu_(a,-)=m_a p^2,
+    c_(a,+)=c0+p^2 delta e_a,
+    c_(a,-)=c0-p delta e_a,       p+p^2=1.             (384)
+
+Every unused prefix has BOTH targets c0. These are simultaneous entries
+of one catalogue, not separate programmes with the other entries reset
+to c0. The ideal weighted coordinate displacement is exactly zero;
+the separation of each pair is delta. All entries stay in the same
+regular chart and share the SAME actual report/READY processor/collar.
+There is no request-dependent change of a field boundary coefficient.
+
+Apply the owned request-readonly compiler NR5 to ALL known whole-bank
+source targets on a common finite support. Its actual blocks Shat_l
+obey ||Shat_l-S_l||<=eta, including SOURCE work and unused columns;
+tensor identity on protected factors/unknown oldRIGHT. This is a
+PER-BRANCH bound, not a global error divided by a small key probability.
+The physical source V=D_req(G^tensor(r+1) tensor I) and its actual inverse
+are inside the same known-port echo. The new request is ACTIVE memory,
+uncomputed inside that echo; it is not a sealed record being erased.
+No unknown state is cloned. Field values are decoded from actual
+moments, not assigned by renaming a key. Shared helper/Spin is restored
+on ALL columns, and the request is private to its cohort.
+
+At the native base let psi_l=Shat_l|0>, qhat_l=<psi_l,E psi_l>, with
+E the SAME normalized query effect ignoring the request. Then
+
+    Psi=sum_l sqrt(mu_l)|l> psi_l,
+    Q=sum_l mu_l qhat_l,      |qhat_l-q(c_l)|<=2eta,
+    s_j=1-x_j Q_j,           x_j=d_j gamma_j,
+    B_M=H_M-rankP log(1-zeta+zeta product_j s_j^2),
+    a_j=2x_j/s_j,   w_M=rankP zeta product_j s_j^2/
+                                (1-zeta+zeta product_j s_j^2),
+    Gamma_M=w_M sum_j a_j gbar_j.                     (385)
+
+Use either the original7al collar or the NEW7aq377 collar with its own
+actual a_j and gain lower bound. These are not interchanged. All key
+columns, decoder blocks, true inverse stages, helper routing and clock
+are in the complete heat. Initial key blanks do not multiply rankP.
+The price is the determinant of the mean Q, not a mean of conditional
+prices. Merely varying a density outside a fixed U/P would not give385:
+here preparation really occurs inside V and hence inside U/P's generated
+graph, as in336 and347--348.
+
+### An exact same-point covector, with its actual lift norm
+
+On the real unit key sphere at k=sum_l sqrt(mu_l)|l>, define h_a with
+components +(2sqrt(mu_(a,+)))^-1 and -(2sqrt(mu_(a,-)))^-1 on its pair
+and zero elsewhere. Then <k,h_a>=0. These vectors are tangent to a
+NORMALIZED sphere; they are not unit vectors. For a coefficient vector
+b set h(b)=sum_a b_a h_a/delta. Direct differentiation at the SAME
+actual native programme point gives
+
+    DQ[h(b)]=sum_a b_a(qhat_(a,+)-qhat_(a,-))/delta,
+    DJ_M[h_j(b)]=w_M a_j DQ_j[h_j(b)],
+    ||h(b)||^2=sum_a b_a^2/(4 delta^2 m_a p^3).        (386)
+
+No scalar-price divided-difference multiplier or rho_j M1 error occurs
+in386: this is one differential of one determinant. It is not the old
+difference of two prices. It applies at noncritical fields too.
+
+There is an explicit operator comparison realizing this state tangent.
+Let J_a|a,+>=|a,->, J_a|a,->=-|a,+>. Set
+
+    L(b)=-sum_a b_a J_a/(2 delta sqrt(mu_(a,+)mu_(a,-))),
+    L(b)k=h(b),
+    ||L(b)||=max_a |b_a|/(2 delta m_a p^(3/2)).        (387)
+
+Insert exp(t L(b)) after the key generator and before D_req, with its
+generated reverse in the source inverse. At t=0 this is the actual
+native point. Equivalently multiply its last key-stage matrix on the
+left by exp(t L(b)). For its expanded reverse block, write the old
+inverse as A h B=g^dagger and change just h to
+A^dagger g(t)^dagger B^dagger. At zero this is the old native stage;
+both changed stage velocities have norm||L(b)||. Thus paired336 has
+EXACT ||D Dirac_pair||=||L(b)||/sqrt(2), without silently differentiating
+an inverse macro as one new stage. The whole source-conjugate endpoint
+has constant spectrum, so DH_M=0 on this comparison, with the ACTUAL
+clock held fixed. The transported cuts/prefixes keep their full causal
+reaction. This norm is generally large: delta^-1 and the small request
+probabilities have not disappeared by paying the compiler clock.
+
+This is a smooth finite-matrix preparation comparison in Book02's
+stated sense. It does NOT vary the fixed primitive G angle or assert
+that387 is an admitted elementary gate variation. Known individual
+comparison unitaries can be approximated using NR5's owned finite
+native constructions, retaining their new clocks; density of words
+does not prove differentiable native actuation or physical admission
+of this operator-family tangent. On7an's arbitrary-source X_task it is
+a specified source direction; its application to original X_N remains.
+
+### The common map is the derivative of the actual mean readout
+
+Use the canonical bounded SIGN/CAR moments of112--113 and SM13, with
+ideal moment map m(c) and its actual regular inverse decoder R. Thus
+R(m(c))=c on the ideal chart. Let mhat_l be their actual conditional
+moment vectors on psi_l, and mbar=sum_l mu_l mhat_l. Every coordinate
+observable has norm<=1, so ||mhat_l-m(c_l)||_infty<=2eta. The measured
+mean field is chat=R(mbar), with the original density/calibration and
+inverse/Cayley/material conventions. This is an operator expectation
+readout; separately executed estimation work is not free. These are
+marked SOURCE-prefix observables, or their explicitly transported
+tests. After the full echo the terminal bank need not be that prepared
+state; its unchanged terminal observable is not silently substituted.
+
+Take finite compact-chart bounds L_m=||Dm||_(1->infty), M_m=||D^2m||,
+R_1=||DR||_(infty->1), R_2=||D^2R||. Enlarge the moment neighbourhood
+slightly to contain mbar and the joining segments. Taylor's theorem
+and384 give
+
+    epsilon_bar=(p^3/2)M_m delta^2 sum_a m_a+2eta,
+    ||mbar-m(c0)||_infty<=epsilon_bar,
+    ||chat-c0||_1<=R_1 epsilon_bar.
+
+Differentiate the ACTUAL mean, rather than the labels or the decoded
+endpoints. Its coordinate Jacobian on386 is the matrix
+
+    C_delta[:,a]=DR(mbar)(mhat_(a,+)-mhat_(a,-))/delta,
+    D readout[h(b)]=C_delta b,
+    ||C_delta-I||_(1->1)<=chi_delta
+       :=R_1(M_m delta/2+4eta/delta)
+                                      +R_2 epsilon_bar L_m. (388)
+
+Indeed the asymmetric moment chord differs from D_a m(c0) by at most
+M_m delta/2+4eta/delta. Also DR(mbar)-DR(m(c0)) is bounded by
+R_2 epsilon_bar, and DR(m(c0))Dm(c0)=I. This is NOT7al332a's endpoint
+chord: even with eta=0 the derivative of a nonlinear mean decoder has
+an O(delta) correction. No pure eta/delta bound is imported.
+
+Choose chi_delta<1/2. For the actual physical sampling map Bhat at chat,
+the lift v -> h(C_delta^-1 Bhat v) is now an EXACT differential right
+inverse of this mean geometry readout. Its Hilbert/operator norms are
+386--387 with b=C_delta^-1 Bhat v. The finite bump extension SM8 gives
+an actual Zhat near the original Z and, on the regular chart,
+||Bhat-B||_(C3->l1)<=b_h<=K_h epsilon_bar. Require its real
+||Zhat-Z||_C3<=R_h^ext R_1 epsilon_bar to tend to zero; no uniform
+inverse or refinement constant is assumed.
+
+### Full off-shell source consistency and the independent key equation
+
+Write d_a=(qhat_(a,+)-qhat_(a,-))/delta, and let M1,M2,M3 bound
+the TRUE smooth q derivatives at this fixed h/table/strength. Then
+
+    ||d-Dq(c0)||_infty<=e_delta:=M2 delta/2+4eta/delta,
+    d_a=partial_a q(c0)-(p^3/2)delta partial_aa q(c0)
+                                     +O(M3 delta^2)+O(eta/delta).
+
+The asymmetric pair is only FIRST order. The weighted mean's balanced
+first displacement does not cancel this Hessian term. With L=||B||,
+the actual same-point physical source F_j=Bhat^* C_delta^(-T)d obeys
+
+    ||F_j/gbar_j-B_j^*Dq_j(c0)/gbar_j||_(C3*)
+     <=[(L+b_h)e_delta+(L chi_delta+b_h)M1]/
+                                   [(1-chi_delta)gbar_j]. (389)
+
+This follows from ||C_delta^-1||<=1/(1-chi_delta); the M1 correction
+is retained away from the primary family. At fixed h choose delta
+first, then eta/delta sufficiently small, including every displayed
+decoder, source, physical test and gbar factor. Every such choice is
+finite and prospective. Combine389 with the OFF-SHELL source330,
+the geometric limit333 and the positive weighted-prefix argument335:
+
+    ||sum_j w_M a_j F_j/Gamma_M-D I_PC(Z)||_(C3*) ->0. (390)
+
+Here the meshes/fields and all errors obey the same slow cofinal
+envelope with the NEW finite constants above. Repetitions ensure
+sum_j a_j gbar_j ->infinity; finite old errors stay in the numerator.
+The actual absolute gain can decay. This is now a restriction of ONE
+programme's actual source at each prefix to its stated lifted physical
+tests, not a list of prices of different supplied laws. Exact finite
+stationary existence or compactness is not inferred from consistency.
+
+The genuinely free key equation is also explicit. At a single cohort,
+allow every normalized real key-state tangent, keeping its decoder
+and all other cohorts fixed. Its complete feedback cotangent is
+
+    ||D_key B_M||=2w_M a_j sqrt(sum_l mu_l(qhat_l-Q)^2). (391)
+
+All mu_l are positive. Exact key stationarity therefore requires ALL
+qhat_l equal, rather than just a vanishing weighted field Euler row.
+In general its norm is at most
+2w_M a_j(M1 delta+M2 delta^2/2+2eta). IF the chosen report has
+exact Dq(c0)=0, the M1 delta term can be removed. This is an additional
+conditional specialization, not an identity for7al's approximate
+off-shell reserve report: that report retains its actual first-source
+error330 even at a primary geometric root. The exact P5/C8 critical
+first jet of7an is not silently transferred to this different processor.
+For the exact-critical specialization,386 gives small lifted primary
+sources as delta,eta/delta tend to zero at fixed h, retaining its finite
+constants. For7al use389 with the genuine330 error and its gbar budget.
+Neither case produces an exact finite all-preparation root.
+Arbitrary key--bank or cross-cohort
+normals retain7an350/353's full variance/score, not merely391. Distinct
+off-primary branches do not inherit7ap's coincident-request local
+source cancellation or its raw-clock bound without an extra budget.
+Any selected additional action term retains its actual derivative.
+
+### New exact source and nonlinear-readout controls
+
+This bounded calculation tests the new SAME-point source identity on a
+four-entry coherent catalogue with exact G-generated key weights, and
+the actual mean-decoder Jacobian on a nonlinear two-coordinate fixture.
+The full8-column SO catalogue is an algebraic compiler TARGET, not a
+newly synthesized native word or a replay of NR5. Its native finite
+approximation is supplied by that owned theorem. The fixture is not a
+new Palatini/root/READY/heat certificate or a physical admission proof.
+
+```python
+import sys,sympy as S
+from sympy.polys.matrices import DomainMatrix
+p=(S.sqrt(5)-1)/2;a=S.sqrt(p);K=S.QQ.algebraic_field(a)
+def dm(M): return DomainMatrix.from_Matrix(M).convert_to(K)
+def eq(A,B): assert dm(A)==dm(B)
+I4=S.eye(4);I8=S.eye(8);delta=S.Rational(1,20)
+G=S.Matrix([[a,-p],[p,a]]);key=S.kronecker_product(G,G)
+k=key[:,0];mu=[x*x for x in k];mass=[p,p*p]
+eq(key.T*key,I4);eq(k.T*k,S.ones(1,1))
+rots=[(12,5,13),(24,7,25),(15,8,17),(40,9,41)]
+blocks=[S.Matrix([[c,-s],[s,c]])/r for c,s,r in rots]
+D=S.diag(*blocks);R=S.kronecker_product(key,S.eye(2));V=D*R
+E=S.kronecker_product(I4,S.diag(0,1));M=I8-2*E
+eq(D.T*D,I8);eq(V.T*V,I8)
+psi=V[:,0];qs=[S.Rational(s*s,r*r) for c,s,r in rots]
+Q=sum(mu[l]*qs[l] for l in range(4));eq(psi.T*E*psi,S.Matrix([[Q]]))
+for j in range(2):
+    plus,minus=2*j,2*j+1
+    J=S.zeros(4);J[minus,plus]=1;J[plus,minus]=-1
+    L=-J/(2*delta*k[plus]*k[minus]);h=L*k
+    expected=S.zeros(4,1)
+    expected[plus]=1/(2*delta*k[plus]);expected[minus]=-1/(2*delta*k[minus])
+    eq(h,expected);eq(k.T*h,S.zeros(1,1))
+    eq(h.T*h,S.Matrix([[1/(4*delta**2*mass[j]*p**3)]]))
+    dV=D*S.kronecker_product(L*key,S.eye(2))
+    dQ=(dV[:,0].T*E*psi+psi.T*E*dV[:,0])[0]
+    slope=(qs[plus]-qs[minus])/delta;eq(S.Matrix([[dQ-slope]]),S.zeros(1,1))
+    U=V.T*M*V;dU=dV.T*M*V+V.T*M*dV
+    gen=R.T*S.kronecker_product(L,S.eye(2))*R
+    eq(dU,U*gen-gen*U)
+    eq(S.Matrix([[dU[0,0]+2*dQ]]),S.zeros(1,1))
+    z=S.Rational(1,1024);rank=3;other=S.Rational(7,8)
+    s=1-2*Q;ret=other*s;dret=-2*other*dQ
+    w=rank*z*ret**2/(1-z+z*ret**2);gain=4/s
+    direct=-2*rank*z*ret*dret/(1-z+z*ret**2)
+    eq(S.Matrix([[direct-w*gain*slope]]),S.zeros(1,1))
+grad=2*(S.diag(*qs)-Q*I4)*k
+variance=sum(mu[l]*(qs[l]-Q)**2 for l in range(4))
+eq(grad.T*grad,S.Matrix([[4*variance]]));assert float(variance)>0
+lam=S.Rational(2,5);alpha=S.Matrix([S.Rational(2,7),S.Rational(3,8)])
+beta=S.Rational(1,9)
+nodes=[S.Matrix([p*p*delta,0]),S.Matrix([-p*delta,0]),
+       S.Matrix([0,p*p*delta]),S.Matrix([0,-p*delta])]
+def moment(c): return S.Matrix([c[0],c[1]+lam*c[0]**2])
+mom=[moment(c) for c in nodes]
+bar=sum((mu[l]*mom[l] for l in range(4)),S.zeros(2,1))
+eq(bar,S.Matrix([0,lam*mass[0]*p**3*delta**2]))
+DR=S.Matrix([[1,0],[-2*lam*bar[0],1]])
+C=DR*S.Matrix.hstack((mom[0]-mom[1])/delta,(mom[2]-mom[3])/delta)
+eq(C,S.Matrix([[1,0],[-lam*p**3*delta,1]]));eq(C*C.inv(),S.eye(2))
+# Decoding endpoints instead would give I: it is a DIFFERENT Jacobian.
+def decode(m): return S.Matrix([m[0],m[1]-lam*m[0]**2])
+end=S.Matrix.hstack((decode(mom[0])-decode(mom[1]))/delta,
+                   (decode(mom[2])-decode(mom[3]))/delta)
+eq(end,S.eye(2));assert dm(C)!=dm(end)
+qnode=[(alpha.T*c)[0]+beta*c[0]**2 for c in nodes]
+d=S.Matrix([(qnode[0]-qnode[1])/delta,(qnode[2]-qnode[3])/delta])
+eq(d,S.Matrix([alpha[0]-beta*p**3*delta,alpha[1]]))
+F=C.inv().T*d
+eq(F-alpha,S.Matrix([(lam*alpha[1]-beta)*p**3*delta,0]))
+assert dm(F)!=dm(alpha)  # Actual readout correction does not erase Hessian bias.
+print('PASS same-point full8 source/price, key lift/variance, nonlinear mean-readout and first-order bias')
+print(sys.version.split()[0],S.__version__)
+```
+
+**Parent substitution.** The different-law price-fork/type gap in7al
+has a positive SAME-execution application on the supplied-query source
+graph:384--390 give its actual internal catalogue, complete Book price,
+mean-moment geometry, exact differential lift, source and norm. The
+query/effect and initial cut have not been derived from Can; the fixed
+G birth does not license the key rotation as a free physical parameter.
+The remaining physical substitution is admission of this source/readout
+map, or another proved equivalent one, into the original selected
+X_N execution, with all independent query/cut/upstream equations and
+the required dynamics/refinement. No new action or field constraint is
+introduced. GR_closed=false; positive_gr and raw216 remain open.
+
+
 ## 8. Reproduction
 
 Run from this directory:
