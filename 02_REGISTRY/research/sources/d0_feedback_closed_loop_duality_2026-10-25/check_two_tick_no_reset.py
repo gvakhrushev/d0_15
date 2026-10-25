@@ -71,6 +71,15 @@ check(p0==q1*q2,'no-reprep all-empty probability product exact')
 check(p0==(A2*A1).det()**2,'noncommuting 2tick Slater determinant')
 check(p0>0 and p0<1 and sum(p[1:])>0,'true archive events survive')
 
+# A DIFFERENT definition of Book03's global active cut would apply zeta
+# ONCE more to the completed two-tick feedback: not the product of two
+# individually zeta-thinned no-archive probabilities.
+Ctotal=A2*A1
+Fglobal=I2-Ctotal.T*Ctotal
+p_book_global=(I2-z*Fglobal).det()
+check(p_book_global!=p0,'ONE global zeta feedback is NOT sum of two single-tick Book J')
+check(Fglobal==Fglobal.T,'completed closed active P compression yields true feedback')
+
 print(json.dumps({
     'status':'PASS_EXACT_NO_RESET_TWO_TICK_SAME_CLOSED_ARCHIVE_BOOK',
     'checks':checks,
