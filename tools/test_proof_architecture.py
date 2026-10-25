@@ -1389,6 +1389,11 @@ class ProofArchitectureTests(unittest.TestCase):
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
         )
         current_lean_digest = lean_task_build.source_digest()
+        standard_axioms = {"Classical.choice", "Quot.sound", "propext"}
+        hodge_square_axioms = standard_axioms | {
+            "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+            "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        }
 
         def declarations(filename: str) -> dict[str, dict]:
             inventory = json.loads((inventory_root / filename).read_text(encoding="utf-8"))
@@ -1404,7 +1409,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         def has_type(
-            filename: str, name: str, *fragments: str,
+            filename: str, name: str, *fragments: str, expected_axioms=None,
         ) -> dict:
             row = declarations(filename).get(name)
             self.assertIsNotNone(row, f"compiled inventory missed {name}")
@@ -1414,6 +1419,11 @@ class ProofArchitectureTests(unittest.TestCase):
                 self.assertIn(fragment, signature, f"unexpected type for {name}")
             self.assertEqual(row.get("declaration_kind"), "theorem")
             self.assertIsInstance(row.get("axioms"), list)
+            if expected_axioms is not None:
+                self.assertEqual(
+                    set(row["axioms"]), expected_axioms,
+                    f"changed trust footprint for {name}",
+                )
             return row
 
         car_zero = "car_zero_mode_claim_declarations_2026-10-25.json"
@@ -1421,13 +1431,16 @@ class ProofArchitectureTests(unittest.TestCase):
         car_spectrum = "car_spectrum_amplification_claim_declarations_2026-10-25.json"
         car_heat = "dirac_heattrace_multiplicity_claim_declarations_2026-10-25.json"
         has_type(car_zero, "D0.Geometry.car_zero_mode_independent_of_L",
-                 "carDiracKernelDim = 16")
+                 "carDiracKernelDim = 16", expected_axioms=set())
         has_type(car_square, "D0.Geometry.carDiracSquareScalarSectorFactor_eq_fock_dim",
-                 "carDiracSquareScalarSectorFactor = Fintype.card")
+                 "carDiracSquareScalarSectorFactor = Fintype.card",
+                 expected_axioms=standard_axioms)
         has_type(car_spectrum, "D0.Geometry.car_amplification_times_spinor_eq_sixteen",
-                 "carDiracAmplificationFactor * 4 = Fintype.card")
+                 "carDiracAmplificationFactor * 4 = Fintype.card",
+                 expected_axioms=standard_axioms)
         has_type(car_heat, "D0.Geometry.diracHeatTraceMultiplicity_eq_fock_dim",
-                 "diracHeatTraceMultiplicity = Fintype.card")
+                 "diracHeatTraceMultiplicity = Fintype.card",
+                 expected_axioms=standard_axioms)
 
         has_type(
             "hodge_car_dirac_square_declaration_2026-10-25.json",
@@ -1435,33 +1448,47 @@ class ProofArchitectureTests(unittest.TestCase):
             "ArchiveCochain N",
             "hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) =",
             "cochainDifferenceLaplacian N ψ",
+            expected_axioms=hodge_square_axioms,
+        )
+        has_type(
+            "hodge_car_dirac_kernel_declaration_2026-10-25.json",
+            "D0.Geometry.hodgeCarDirac_kernel_finrank",
+            "Module.finrank ℝ",
+            "hodgeCarDiracₗ N",
+            ".ker = 16",
+            expected_axioms=hodge_square_axioms,
         )
         has_type(
             "hodge_square_backward_forward_declaration_2026-10-25.json",
             "D0.Geometry.cochainDifferenceLaplacian_eq_backward_forward",
             "∑ r, -D0.Geometry.backwardSite",
             "D0.Geometry.forwardSite",
+            expected_axioms=standard_axioms,
         )
         has_type(
             "hodge_car_dirac_l2_normalization_declaration_2026-10-25.json",
             "D0.Geometry.hodge_difference_diagonal_double_metric_at_l2",
             "=\n    2 * D0.Geometry.ArchiveRoleProductLaplacian.archiveMetricProductLaplacian",
+            expected_axioms=standard_axioms,
         )
         has_type(
             "hodge_spatial_shell_claim_declarations_2026-10-25.json",
             "D0.Geometry.spatialShellSubmodule_finrank",
             "3 ≤ D0.archiveFibers N",
             "= 96",
+            expected_axioms=standard_axioms,
         )
         has_type(
             "hodge_shell_energy_limit_declaration_2026-10-25.json",
             "D0.Geometry.shellEnergy_tendsto_two_pi",
             "nhds (2 * Real.pi)",
+            expected_axioms=standard_axioms,
         )
         has_type(
             "hodge_shell_rank_l2_control_declaration_2026-10-25.json",
             "D0.Geometry.spatial_shell_rank_l2",
             "= 48",
+            expected_axioms=standard_axioms,
         )
 
         dataset = proof.load_dataset(proof.ROOT)

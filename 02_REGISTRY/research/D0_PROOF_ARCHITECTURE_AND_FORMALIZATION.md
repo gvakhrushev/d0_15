@@ -5514,3 +5514,20 @@ This closes the stale-inventory and declaration-scope regression for this
 bounded example. It still does not supply the missing CAR operator proofs or a
 transport from Hodge; semantic claim acceptance remains manual, and the complete
 cold-start replay on the expanded case set remains due at final Ready.
+
+### Exact axiom-footprint control for the CAR/Hodge crosswalk (25 October 2026)
+
+The focused guard now checks eleven compiled declarations: four CAR arithmetic
+scaffolds and seven Hodge square, kernel, normalization, and shell results. In
+addition to the current Lean-source digest and elaborated type fragments, it
+pins each declaration's exact axiom closure. The Hodge square and kernel
+explicitly retain the two existing finite `native_decide` CAR-identity leaves;
+the other Hodge rows and three of the CAR scaffolds retain only
+`Classical.choice`, `Quot.sound`, and `propext`, while the CAR zero-mode
+constant has an empty axiom closure. The test therefore detects both stale
+inventories and an unreviewed trust-footprint change.
+
+This is still a regression guard for compiled evidence, not independent
+semantic acceptance. The Hodge operator remains distinct from the registered
+hopping CAR matrix, all four CAR claims remain OPEN, and full cold-start/C0
+acceptance and final `D0.All` integration remain outstanding.
