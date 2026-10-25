@@ -4546,3 +4546,60 @@ remains in progress: C0 is unfrozen, the 54 compiled semantic relations are
 unresolved, and full C0 dispositions, independent acceptance, remaining
 library migration, and physical GR/source selection remain open. This
 intermediate checkpoint does not satisfy the WRK-401 completion conditions.
+
+### Actual role-signed CAR square composed with the all-size Fourier symbol (25 October 2026)
+
+`D0.Geometry.ArchiveLorentzianCARDiracApplication` now closes the exact
+first-order-to-second-order operator bridge left open by the preceding Fourier
+checkpoint. It defines the source's ordinary forward creation term plus the
+explicitly role-weighted backward annihilation term on the same finite complex
+site × Fock carrier. For arbitrary real weights `w`, the CAR anticommutators
+give `D_w² = Σᵣ wᵣ(-∇⁻ᵣ∇⁺ᵣ) ⊗ I`; the proof retains the weights as input and
+does not select a metric. Instantiating the owned `roleLorentzSign` and
+composing with `archiveLorentzianDifferenceOperator_fourier_mode` proves that
+every product-cycle character tensored with an arbitrary 16-component Fock
+profile is an eigenvector of the squared operator with the Eq. (5) symbol for
+every archive period `L=N+2`.
+
+This closes the mathematical square-to-source application for the declared
+operator and sign assignment. It does not prove that an admitted D0 execution
+selects that operator or role-sign assignment, and it does not prove that the
+first-order operator itself preserves an individual character profile. The
+direct first-order Fourier action, physical action/source selection, matter
+compatibility, and GR closure remain open. The result is not a physical
+`GR_closed` claim.
+
+The module is registered in `formal_support.csv` and generated into
+`D0.All`. Its source SHA-256 is
+`749be35f4074ec7408408fb62d68cc9b3724ecfd0920eee146f7866275229e33`. The
+compiled declaration inventory is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_dirac_module_declarations_2026-10-25.json`
+(11 declarations, SHA-256
+`16be766dd280b46115472a3a3a11866c4ee684b71df16a63789e49233fc2dea0`, Lean
+source digest `f0c6d4d35672206e02a2eea043cf9dd15770c0aa09b9793461b07890b537482e`,
+collector SHA-256
+`4dfa08c1502dc0ee81bc9eb590811a536e5367dbfb39c9e552e6ec48051e388d`). It
+records the module under public import root `D0.All`, toolchain Lean 4.30.0,
+and the new `archiveLorentzianCARDirac_square_fourier_mode` declaration.
+
+The full cold-start replay found every required source in 19/19 cases and
+passed its 20th exact-source/unrelated-prose impact control. The new exact-name
+query ranked the Lean module first and its compiled declaration inventory
+second; all seven required sources in the native weighted-Dirac case were
+found. A compact target record is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_dirac_cold_start_2026-10-25.json`
+(SHA-256
+`8798d7e3eca7b2d6deb120bf096c5873a1194cbcbef5ac2d93e573090e9f0e62`). Its
+input snapshot is `84b32c7189bb3793032622dab1b990bb59307929` with a dirty
+worktree; the cold-start runner SHA-256 is
+`904ca43814330d6ce8bd669774f0f4284ee165c461ec105b483e4d880a58fd56`.
+Semantic scope review remains manual; retrieval is not physical acceptance.
+
+The final integrated `D0.All` build passed all 4,576 jobs. The focused
+proof-architecture suite passed 41/41 tests (test SHA-256
+`2fcb6789bede122d75e4e82dae94a1de739d715bb5c300b87f47ab832f879dc2`).
+Repository validation reports 889 claims, 31 assumptions, 58 aliases, 195
+formal-support rows, 928 Lean-closure rows, and zero warnings. Claim-map
+coverage, work validation, agent-protocol validation, gravity-assembly check,
+generated-view check, core sorry guard, and the CRLF-aware diff check passed.
+The PR remains Draft and WRK-401 remains in progress.

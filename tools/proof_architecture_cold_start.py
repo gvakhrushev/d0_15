@@ -405,6 +405,7 @@ CASES: list[dict[str, Any]] = [
             "roleWeightedArchiveDifferenceLaplacian_fourier all-size role weighted difference eigenvalue",
             "archiveLorentzianDifferenceLaplacian_fourier roleWeightedArchiveFourierSymbol_lorentzian",
             "archiveLorentzianDifferenceOperator_fourier_mode archiveFourierFockMode archiveLorentzianFourierSymbol",
+            "archiveLorentzianCARDirac_square_fourier_mode roleWeightedArchiveCARDirac_square roleWeightedArchiveCodifferential_cross",
             "archiveRoleFourierInversion actual archive site scalar field",
         ],
         "required_refs": [
@@ -413,6 +414,7 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean",
             "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json",
         ],
         "scope_review": (
@@ -425,9 +427,10 @@ CASES: list[dict[str, Any]] = [
             "archive period N+2 and proves the same full-carrier block and conditional obstruction there; it "
             "is separate from the Eq. (5) Fourier application. The signed scalar second-order operator now has "
             "an all-size character eigenbasis, a complete scalar site Fourier inversion, and an injective "
-            "sixteen-label Fock coefficient embedding per momentum. The first-order Lorentzian CAR symbol and "
-            "its square-to-source bridge remain open, as do role-order intertwiners, physical action/source "
-            "selection, and GR closure."
+            "sixteen-label Fock coefficient embedding per momentum. A companion module defines the explicitly "
+            "role-signed first-order CAR operator and proves its square equals that operator on the full carrier; "
+            "composition gives the Eq. (5) all-size squared-mode law for every Fock profile. Direct first-order "
+            "character-profile action, physical action/source selection, and GR closure remain open."
         ),
     },
 ]
