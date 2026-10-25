@@ -4950,6 +4950,24 @@ selection or continuum conclusion.
 
 The narrow build of
 `D0.Research.NativeWeightedDiracFourierNullModes` passed again (3,410 Lake
-jobs). Repository validation, generated Lean views, formalization-debt
-non-growth, and the EOL-aware diff check are being replayed on the final
-inventory snapshot below; no claim or `formal_support` entry changed.
+jobs). Repository validation passed (`claims=889`, `assumptions=31`,
+`aliases=58`, `formal_support=197`, `lean_closure=929`, zero warnings),
+generated Lean views passed (`stale=0`), and formalization-debt non-growth
+passed (five findings, unchanged baseline); the EOL-aware diff check passed.
+No claim or `formal_support` entry changed.
+
+The refreshed compiled declaration inventory now records 209 declarations
+across the same four owning modules, including 31 in the adapter. Inventory
+SHA-256 is
+`f2438c5ed799c9ce2267e3d465784981c8d8fb0adabdbcd26bfd1f57e01f2c77`; Lean
+source digest is
+`112436f04eb5f9eaa6648c2cea4b2fd2941ed5e873a87f1669d3e0ec8e258303`, module
+SHA-256 is
+`9081b243bef28b5e82a2e3ab28518198d66a1e43951e369f8dcae6956f2ddefd`, and the
+collector SHA-256 remains
+`cd8acaf6fa202e54f8090f9c5fb9fc210dfe03ba3197f21115581d7b7afad0cb`. Its
+snapshot is commit `59f1802f9df226cc5d6a22dc611d8fd3bf65a232` with
+`worktree_dirty=false`. The new exact cochain theorem has no `sorryAx`; its
+transitive footprint retains the existing CAR `native_decide` leaves along
+with `Classical.choice`, `propext`, and `Quot.sound`. The full `D0.All` build
+remains reserved for Ready.
