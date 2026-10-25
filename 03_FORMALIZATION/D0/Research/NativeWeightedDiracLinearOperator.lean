@@ -46,8 +46,43 @@ theorem weightedDiracMatrix_mulVec (N : ℕ)
     Matrix.mulVec (weightedDiracMatrix N W) ψ = weightedDirac N W ψ := by
   rw [weightedDiracMatrix, LinearMap.toMatrix'_mulVec, weightedDiracLinear_apply]
 
+/-- At the identity transport, the generic weighted operator is the
+repository's existing real Hodge/CAR operator as a typed linear map. -/
+theorem weightedCodiffLinear_identity_eq_hodgeCodifferential (N : ℕ) :
+    weightedCodiffLinear N (LinearEquiv.refl ℝ (ArchiveCochain N)) =
+      hodgeCodifferentialₗ N := by
+  ext ψ
+  simp [weightedCodiffLinear, hodgeCodifferentialₗ]
+
+theorem weightedDiracLinear_identity_eq_hodgeCarDirac (N : ℕ) :
+    weightedDiracLinear N (LinearEquiv.refl ℝ (ArchiveCochain N)) =
+      hodgeCarDiracₗ N := by
+  change dForwardₗ N +
+      weightedCodiffLinear N (LinearEquiv.refl ℝ (ArchiveCochain N)) =
+    hodgeCarDiracₗ N
+  rw [weightedCodiffLinear_identity_eq_hodgeCodifferential]
+  calc
+    dForwardₗ N + hodgeCodifferentialₗ N =
+        dForwardₗ N + D0.Algebra.finiteHermitianAdjoint (dForwardₗ N) := by
+          rw [finiteHermitianAdjoint_dForwardₗ_eq_hodgeCodifferentialₗ]
+    _ = D0.Algebra.finiteHermitianHodgeDirac (dForwardₗ N) := rfl
+    _ = hodgeCarDiracₗ N :=
+      (hodgeCarDiracₗ_eq_finiteHermitianHodgeDirac N).symm
+
+/-- The coordinate matrix of the existing Hodge/CAR operator acts on the
+actual site×Fock cochain vector by its registered function-level formula. -/
+theorem hodgeCarDiracMatrix_mulVec (N : ℕ) (ψ : ArchiveCochain N) :
+    Matrix.mulVec
+        (weightedDiracMatrix N (LinearEquiv.refl ℝ (ArchiveCochain N))) ψ =
+      hodgeCarDirac N ψ := by
+  rw [weightedDiracMatrix_mulVec, ← weightedDiracLinear_apply,
+    weightedDiracLinear_identity_eq_hodgeCarDirac, hodgeCarDiracₗ_apply]
+
 #print axioms weightedCodiffLinear_apply
 #print axioms weightedDiracLinear_apply
 #print axioms weightedDiracMatrix_mulVec
+#print axioms weightedCodiffLinear_identity_eq_hodgeCodifferential
+#print axioms weightedDiracLinear_identity_eq_hodgeCarDirac
+#print axioms hodgeCarDiracMatrix_mulVec
 end
 end D0.Research.NativeWeightedDiracLinearOperator

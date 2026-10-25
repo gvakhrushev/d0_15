@@ -396,6 +396,7 @@ CASES: list[dict[str, Any]] = [
         "id": "native-weighted-dirac-matrix-application",
         "queries": [
             "weightedDiracMatrix_mulVec typed weighted Hodge Dirac linear map ArchiveCochainBasis",
+            "weightedDiracLinear_identity_eq_hodgeCarDirac hodgeCarDiracMatrix_mulVec existing real Hodge CAR operator",
             "spatialNyquist_weightedDirac_matrix_block L=4 flatLorentzWeightedDiracMatrix",
             "actual full-cochain matrix B-singleton vacuum spatial Nyquist positive self-adjoint weighted Dirac Eq. 6",
         ],

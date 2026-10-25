@@ -4280,3 +4280,59 @@ as the c3ceba branch implementation delta above, not as content of the source
 pin. The review is limited to this finite mathematical application and does
 not accept C0 membership, a physical pairing, action/source selection, an
 all-size spectrum, or GR closure.
+
+### Identity-weight matrix adapter for the existing Hodge/CAR operator (25 October 2026)
+
+The reusable matrix interface now has an exact identity-transport
+specialization. `weightedCodiffLinear_identity_eq_hodgeCodifferential` reduces
+the conjugated codifferential to the owned `hodgeCodifferentialₗ`; its proof
+uses the literal identity equivalence. `weightedDiracLinear_identity_eq_hodgeCarDirac`
+then consumes the existing theorem that the counting codifferential is the
+finite-Hermitian adjoint of `dForwardₗ` and identifies the generic operator
+with `hodgeCarDiracₗ`. The resulting `hodgeCarDiracMatrix_mulVec` states that
+the matrix in the unchanged `ArchiveCochainBasis` acts exactly as the existing
+function-level Hodge/CAR operator for every cochain. This is an API/application
+bridge; it selects no nonidentity weight, positive pairing, physical Hodge
+profile, action, or source.
+
+The focused Lean build passed for
+`D0.Research.NativeWeightedDiracLinearOperator` (2,998 Lake jobs). The paired
+inventory for this adapter and its L=4 consumer was
+rebuilt by compiling the public import `D0.All` on dirty snapshot
+`8687da5602a1ca327802827a778567faa646e15f`, with Lean source digest
+`d938fdbea247eb87434f81aa5bc1859f192ef69db6faf04cbedbe1f50b00146c` and
+toolchain `leanprover/lean4:v4.30.0`. Compared with the previous paired
+inventory it adds four declarations and removes none: the three named
+theorems above plus the generated `weightedCodiffLinear.eq_1` equation
+theorem. The three named theorems have the existing
+`[Classical.choice, Quot.sound, propext]` footprint. The resulting inventory
+contains 91 declarations (77 theorems, 14 definitions); collector SHA-256 is
+`424ca2786503d04e4f7bbf9e02cc722fea312ac7a3eb5dc7340a38a077a42478`, and
+the paired JSON SHA-256 is
+`ffdde5c6f401f4b150b74fc3e6f1e8a14f019a76437dcc6dc5d5281ec1515364`.
+
+Both generated compiled views now use that same Lean source digest and
+snapshot. The 54-result assembly crosswalk has 191 evidence records (182
+verified source pins, eight unavailable pinned blobs, one pinned hash
+mismatch); all 54 semantic relations remain unresolved and no acceptance is
+inferred. Its JSON SHA-256 is
+`761bd39f097a6f7565352eb0b8bcbed67d22743ad929e9bc432b9f295d0fd1bb`.
+The 889-row claims resolution has 2,751 theorem-locator mappings and 8,458
+candidate references over 8,323 unique names; 2,512 resolve and 5,811 do not.
+At least one candidate resolves for 709 claim rows, while 180 have none.
+These are current name-locator counts, not semantic coverage or C0 status;
+its JSON SHA-256 is
+`1d6ca5a9fa93087e526060c9042ea7e13c1f8eaea9b87d3b4dd4b9d2cd6e395e`.
+
+The existing cold-start case now searches for both the supplied-weight matrix
+bridge and its identity-weight Hodge/CAR specialization. The replay found all
+required sources in 19/19 cases, and the 20-case exact-source versus unrelated
+prose impact control passed. The focused proof-architecture suite passed
+41/41. Runner SHA-256 is
+`6dd358a2f008ea8fc334db51a72c82770ab0c48f9bca567814617aa65bf93dc8`, and
+test SHA-256 is
+`d8e34623e720f425b5fd7b2a9e37c6eff3baf0a5982d5d547c1eafd7b9205f35`.
+The checkpoint consumes an existing adjoint identity and adds one concrete
+finite-carrier application; it does not freeze C0 or independently accept
+semantic mappings. Full C0 dispositions, independent C0 acceptance, broader
+library migration, and the remaining GR/physical premises stay open.

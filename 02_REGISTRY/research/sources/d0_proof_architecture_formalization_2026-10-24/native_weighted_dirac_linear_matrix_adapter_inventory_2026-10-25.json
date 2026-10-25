@@ -1,8 +1,8 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "51a1c3162fa3dd625c7513e33939bf03e023af0a",
+  "snapshot_commit": "8687da5602a1ca327802827a778567faa646e15f",
   "worktree_dirty": true,
-  "lean_source_digest": "825bf290d3252802ae9605772cfe8cee00acd7fff0ed25fc05954d2a0cae4305",
+  "lean_source_digest": "d938fdbea247eb87434f81aa5bc1859f192ef69db6faf04cbedbe1f50b00146c",
   "collector_sha256": "424ca2786503d04e4f7bbf9e02cc722fea312ac7a3eb5dc7340a38a077a42478",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -297,6 +297,153 @@
         {
           "binder_info": "Lean.BinderInfo.default",
           "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix N\n        (LinearEquiv.refl ℝ (D0.Geometry.ArchiveCochain N))).mulVec\n    ψ =\n  D0.Geometry.hodgeCarDirac N ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 72,
+            "line": 79
+          },
+          "start": {
+            "column": 0,
+            "line": 72
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 34,
+            "line": 74
+          },
+          "start": {
+            "column": 8,
+            "line": 74
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n  (D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix N\n          (LinearEquiv.refl ℝ (D0.Geometry.ArchiveCochain N))).mulVec\n      ψ =\n    D0.Geometry.hodgeCarDirac N ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracLinearOperator",
+      "name": "D0.Research.NativeWeightedDiracLinearOperator.hodgeCarDiracMatrix_mulVec",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeCarDiracₗ_apply",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Research.NativeWeightedDiracBoundary.weightedDirac",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracLinear",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracLinear_apply",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracLinear_identity_eq_hodgeCarDirac",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix_mulVec",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Fin.fintype",
+        "LinearEquiv.refl",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Matrix.mulVec",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.fintype",
+        "congrArg",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "LinearEquiv.refl",
+        "Matrix.mulVec",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "Semiring.toModule",
+        "ZMod",
+        "ZMod.fintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
           "name": "W",
           "type": "D0.Geometry.ArchiveCochain N ≃ₗ[ℝ] D0.Geometry.ArchiveCochain N"
         }
@@ -419,6 +566,78 @@
           "is_proposition": false,
           "name": "W",
           "type": "D0.Geometry.ArchiveCochain N ≃ₗ[ℝ] D0.Geometry.ArchiveCochain N"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear N W =\n  ↑W.symm ∘ₗ D0.Geometry.hodgeCodifferentialₗ N ∘ₗ ↑W",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (W : D0.Geometry.ArchiveCochain N ≃ₗ[ℝ] D0.Geometry.ArchiveCochain N),\n  D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear N W =\n    ↑W.symm ∘ₗ D0.Geometry.hodgeCodifferentialₗ N ∘ₗ ↑W",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracLinearOperator",
+      "name": "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear.eq_1",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear",
+        "Eq.refl",
+        "LinearEquiv",
+        "LinearMap",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCodifferentialₗ",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear._proof_1",
+        "Eq",
+        "LinearEquiv",
+        "LinearEquiv.symm",
+        "LinearEquiv.toLinearMap",
+        "LinearMap",
+        "LinearMap.comp",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "W",
+          "type": "D0.Geometry.ArchiveCochain N ≃ₗ[ℝ] D0.Geometry.ArchiveCochain N"
         },
         {
           "binder_info": "Lean.BinderInfo.default",
@@ -495,6 +714,132 @@
         "Real.semiring",
         "RingHom.id",
         "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear N\n    (LinearEquiv.refl ℝ (D0.Geometry.ArchiveCochain N)) =\n  D0.Geometry.hodgeCodifferentialₗ N",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 51,
+            "line": 55
+          },
+          "start": {
+            "column": 0,
+            "line": 49
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 60,
+            "line": 51
+          },
+          "start": {
+            "column": 8,
+            "line": 51
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ),\n  D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear N\n      (LinearEquiv.refl ℝ (D0.Geometry.ArchiveCochain N)) =\n    D0.Geometry.hodgeCodifferentialₗ N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracLinearOperator",
+      "name": "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear_identity_eq_hodgeCodifferential",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toOne",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Bool",
+        "Bool.instFinite",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCodifferential",
+        "D0.Geometry.hodgeCodifferentialₗ",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "Fin.fintype",
+        "Finite.instProd",
+        "Finite.of_fintype",
+        "Fintype.decidablePiFintype",
+        "LinearEquiv.refl",
+        "LinearMap",
+        "LinearMap.comp",
+        "LinearMap.ext_ring",
+        "LinearMap.instFunLike",
+        "LinearMap.pi_ext'",
+        "LinearMap.single",
+        "Nat",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.finite",
+        "Pi.module",
+        "Pi.single",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "eq_self",
+        "funext",
+        "instDecidableEqBool",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCodifferentialₗ",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear",
+        "Eq",
+        "LinearEquiv.refl",
+        "LinearMap",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
         "Semiring.toModule",
         "Semiring.toNonAssocSemiring"
       ],
@@ -683,6 +1028,139 @@
         "Real.semiring",
         "RingHom.id",
         "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracLinear N\n    (LinearEquiv.refl ℝ (D0.Geometry.ArchiveCochain N)) =\n  D0.Geometry.hodgeCarDiracₗ N",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 58,
+            "line": 70
+          },
+          "start": {
+            "column": 0,
+            "line": 57
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 53,
+            "line": 57
+          },
+          "start": {
+            "column": 8,
+            "line": 57
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ),\n  D0.Research.NativeWeightedDiracLinearOperator.weightedDiracLinear N\n      (LinearEquiv.refl ℝ (D0.Geometry.ArchiveCochain N)) =\n    D0.Geometry.hodgeCarDiracₗ N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracLinearOperator",
+      "name": "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracLinear_identity_eq_hodgeCarDirac",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteHermitianAdjoint",
+        "D0.Algebra.finiteHermitianHodgeDirac",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.dForwardₗ",
+        "D0.Geometry.finiteHermitianAdjoint_dForwardₗ_eq_hodgeCodifferentialₗ",
+        "D0.Geometry.hodgeCarDiracHermitianₗ",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeCarDiracₗ_eq_finiteHermitianHodgeDirac",
+        "D0.Geometry.hodgeCodifferentialₗ",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedCodiffLinear_identity_eq_hodgeCodifferential",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracLinear",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fin.fintype",
+        "Fintype.decidablePiFintype",
+        "HAdd.hAdd",
+        "LinearEquiv.refl",
+        "LinearMap",
+        "LinearMap.instAdd",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instField",
+        "Real.semiring",
+        "RingHom.id",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Trans.trans",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "congrArg",
+        "id",
+        "instDecidableEqBool",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHAdd",
+        "instOfNatNat",
+        "instStarRingReal",
+        "instTransEq",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracLinear",
+        "Eq",
+        "LinearEquiv.refl",
+        "LinearMap",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
         "Semiring.toModule",
         "Semiring.toNonAssocSemiring"
       ],

@@ -1234,6 +1234,10 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("c3ceba511bab5c435d715fd56382615fc1dc1505", case["scope_review"])
         self.assertIn("not physically derived", case["scope_review"])
         self.assertTrue(any("weightedDiracMatrix_mulVec" in query for query in case["queries"]))
+        self.assertTrue(any("hodgeCarDiracMatrix_mulVec" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("weightedDiracLinear_identity_eq_hodgeCarDirac" in query
+                            for query in case["queries"]))
         self.assertTrue(any("spatialNyquist_weightedDirac_matrix_block" in query
                             for query in case["queries"]))
 
