@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "472436ef795f7f6ad096eb711b8987e4d89fb13c",
+  "snapshot_commit": "a2b66422d255d6c617413b0450a1947e3c6652a8",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "a077fdd36281e539c7ec4a9dbea51cc6152268928ab1679b17b95135d3425578",
+  "lean_source_digest": "3149a01a3c2641979b255aaaa699b0fcf7532ddd3a20264a23a2e2100296aa8c",
   "collector_sha256": "3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -65,21 +65,21 @@
         "declaration": {
           "end": {
             "column": 33,
-            "line": 785
+            "line": 786
           },
           "start": {
             "column": 0,
-            "line": 784
+            "line": 785
           }
         },
         "selection": {
           "end": {
             "column": 38,
-            "line": 784
+            "line": 785
           },
           "start": {
             "column": 8,
-            "line": 784
+            "line": 785
           }
         }
       },
@@ -115,21 +115,21 @@
         "declaration": {
           "end": {
             "column": 5,
-            "line": 459
+            "line": 460
           },
           "start": {
             "column": 0,
-            "line": 456
+            "line": 457
           }
         },
         "selection": {
           "end": {
             "column": 52,
-            "line": 456
+            "line": 457
           },
           "start": {
             "column": 8,
-            "line": 456
+            "line": 457
           }
         }
       },
@@ -196,21 +196,21 @@
         "declaration": {
           "end": {
             "column": 62,
-            "line": 589
+            "line": 590
           },
           "start": {
             "column": 0,
-            "line": 541
+            "line": 542
           }
         },
         "selection": {
           "end": {
             "column": 64,
-            "line": 547
+            "line": 548
           },
           "start": {
             "column": 8,
-            "line": 547
+            "line": 548
           }
         }
       },
@@ -504,21 +504,21 @@
         "declaration": {
           "end": {
             "column": 68,
-            "line": 757
+            "line": 758
           },
           "start": {
             "column": 0,
-            "line": 718
+            "line": 719
           }
         },
         "selection": {
           "end": {
             "column": 42,
-            "line": 720
+            "line": 721
           },
           "start": {
             "column": 8,
-            "line": 720
+            "line": 721
           }
         }
       },
@@ -736,21 +736,21 @@
         "declaration": {
           "end": {
             "column": 11,
-            "line": 779
+            "line": 780
           },
           "start": {
             "column": 0,
-            "line": 759
+            "line": 760
           }
         },
         "selection": {
           "end": {
             "column": 44,
-            "line": 762
+            "line": 763
           },
           "start": {
             "column": 8,
-            "line": 762
+            "line": 763
           }
         }
       },
@@ -1006,21 +1006,21 @@
         "declaration": {
           "end": {
             "column": 5,
-            "line": 831
+            "line": 832
           },
           "start": {
             "column": 0,
-            "line": 828
+            "line": 829
           }
         },
         "selection": {
           "end": {
             "column": 49,
-            "line": 828
+            "line": 829
           },
           "start": {
             "column": 8,
-            "line": 828
+            "line": 829
           }
         }
       },
@@ -1091,21 +1091,21 @@
         "declaration": {
           "end": {
             "column": 5,
-            "line": 844
+            "line": 845
           },
           "start": {
             "column": 0,
-            "line": 841
+            "line": 842
           }
         },
         "selection": {
           "end": {
             "column": 46,
-            "line": 841
+            "line": 842
           },
           "start": {
             "column": 8,
-            "line": 841
+            "line": 842
           }
         }
       },
@@ -2250,21 +2250,21 @@
         "declaration": {
           "end": {
             "column": 11,
-            "line": 164
+            "line": 141
           },
           "start": {
             "column": 0,
-            "line": 103
+            "line": 80
           }
         },
         "selection": {
           "end": {
             "column": 56,
-            "line": 106
+            "line": 83
           },
           "start": {
             "column": 8,
-            "line": 106
+            "line": 83
           }
         }
       },
@@ -2576,22 +2576,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 62,
-            "line": 87
+            "column": 32,
+            "line": 66
           },
           "start": {
             "column": 0,
-            "line": 79
+            "line": 60
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 81
+            "line": 62
           },
           "start": {
             "column": 8,
-            "line": 81
+            "line": 62
           }
         }
       },
@@ -2601,55 +2601,11 @@
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
       "name": "D0.Algebra.finiteMatrixTensorProduct_one",
       "proof_dependencies": [
-        "AddCommMonoidWithOne.toAddMonoidWithOne",
-        "AddMonoidWithOne.toOne",
-        "And",
-        "D0.Algebra.finiteMatrixTensorProduct",
         "DecidableEq",
-        "Distrib.toMul",
-        "Eq",
-        "Eq.trans",
-        "False",
         "Fintype",
-        "HMul.hMul",
-        "Matrix",
-        "Matrix.ext",
-        "Matrix.one",
-        "Matrix.one_apply_ne",
-        "MulZeroClass.mul_zero",
-        "MulZeroClass.toZero",
-        "MulZeroOneClass.toMulOneClass",
-        "Ne",
-        "NonAssocSemiring.toAddCommMonoidWithOne",
-        "Not",
-        "OfNat.ofNat",
-        "One.toOfNat1",
-        "Prod",
-        "Prod.casesOn",
-        "Prod.mk",
-        "Prod.mk.injEq",
+        "Matrix.one_kronecker_one",
         "Semiring",
-        "Semiring.toNonAssocSemiring",
-        "True",
-        "Zero.toOfNat0",
-        "and_false",
-        "and_self",
-        "and_true",
-        "congr",
-        "congrArg",
-        "congrFun'",
-        "dite",
-        "eq_false",
-        "eq_self",
-        "instDecidableEqProd",
-        "instDistribOfSemiring",
-        "instHMul",
-        "instMulZeroClassOfSemiring",
-        "instMulZeroOneClassOfSemiring",
-        "ite_cond_eq_true",
-        "mul_one",
-        "not_false_eq_true",
-        "of_eq_true"
+        "instMulZeroOneClassOfSemiring"
       ],
       "type_dependencies": [
         "AddCommMonoidWithOne.toAddMonoidWithOne",
@@ -2854,22 +2810,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 15,
-            "line": 50
+            "column": 47,
+            "line": 34
           },
           "start": {
             "column": 0,
-            "line": 25
+            "line": 27
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 27
+            "line": 29
           },
           "start": {
             "column": 8,
-            "line": 27
+            "line": 29
           }
         }
       },
@@ -2879,74 +2835,23 @@
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
       "name": "D0.Algebra.finiteMatrixTensorProduct_mul",
       "proof_dependencies": [
-        "AddCommMonoidWithOne.toAddMonoidWithOne",
         "CommSemiring",
         "CommSemiring.toSemiring",
-        "D0.Algebra.finiteMatrixTensorProduct",
-        "Distrib.toAdd",
         "Distrib.toMul",
-        "Eq",
-        "Eq.mpr",
-        "Eq.refl",
         "Eq.symm",
-        "Finset",
-        "Finset.instSetLike",
-        "Finset.mul_sum",
-        "Finset.sum",
-        "Finset.sum_congr",
-        "Finset.sum_mul",
-        "Finset.univ",
         "Fintype",
-        "Fintype.sum_prod_type",
-        "HAdd.hAdd",
         "HMul.hMul",
-        "HPow.hPow",
-        "Mathlib.Meta.NormNum.IsNat.of_raw",
-        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
-        "Mathlib.Meta.NormNum.isNat_mul",
-        "Mathlib.Tactic.Ring.Common.add_mul",
-        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
-        "Mathlib.Tactic.Ring.Common.atom_pf",
-        "Mathlib.Tactic.Ring.Common.mul_add",
-        "Mathlib.Tactic.Ring.Common.mul_congr",
-        "Mathlib.Tactic.Ring.Common.mul_pf_left",
-        "Mathlib.Tactic.Ring.Common.mul_pf_right",
-        "Mathlib.Tactic.Ring.Common.mul_zero",
-        "Mathlib.Tactic.Ring.Common.zero_mul",
-        "Mathlib.Tactic.Ring.of_eq",
         "Matrix",
-        "Matrix.ext",
         "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
-        "Membership.mem",
-        "Monoid.toPow",
-        "MulZeroClass.toZero",
-        "Nat",
-        "Nat.instCommSemiring",
-        "Nat.rawCast",
-        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "Matrix.kroneckerMap",
+        "Matrix.mul_kronecker_mul",
         "NonAssocSemiring.toNonUnitalNonAssocSemiring",
         "NonUnitalNonAssocSemiring.toAddCommMonoid",
-        "NonUnitalNonAssocSemiring.toDistrib",
-        "OfNat.ofNat",
         "Prod",
-        "Prod.casesOn",
-        "Prod.fst",
-        "Prod.mk",
-        "Prod.snd",
-        "Semiring.toMonoid",
         "Semiring.toNonAssocSemiring",
-        "SetLike.instMembership",
-        "Zero.toOfNat0",
-        "congrArg",
-        "congrFun'",
-        "id",
         "instDistribOfSemiring",
         "instFintypeProd",
-        "instHAdd",
-        "instHMul",
-        "instHPow",
-        "instMulZeroClassOfSemiring",
-        "rfl"
+        "instHMul"
       ],
       "type_dependencies": [
         "CommSemiring",
@@ -3033,22 +2938,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 43,
-            "line": 68
+            "column": 34,
+            "line": 50
           },
           "start": {
             "column": 0,
-            "line": 61
+            "line": 44
           }
         },
         "selection": {
           "end": {
             "column": 43,
-            "line": 62
+            "line": 45
           },
           "start": {
             "column": 8,
-            "line": 62
+            "line": 45
           }
         }
       },
@@ -3058,31 +2963,11 @@
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
       "name": "D0.Algebra.finiteMatrixTensorProduct_add_right",
       "proof_dependencies": [
-        "D0.Algebra.finiteMatrixTensorProduct",
-        "Distrib.leftDistribClass",
-        "Distrib.toAdd",
-        "Distrib.toMul",
-        "Eq",
-        "Eq.trans",
         "Fintype",
-        "HAdd.hAdd",
-        "HMul.hMul",
         "Matrix",
-        "Matrix.add",
-        "Matrix.ext",
-        "Prod",
-        "Prod.casesOn",
-        "Prod.mk",
+        "Matrix.kronecker_add",
         "Semiring",
-        "True",
-        "congrArg",
-        "congrFun'",
-        "eq_self",
-        "instDistribOfSemiring",
-        "instHAdd",
-        "instHMul",
-        "mul_add",
-        "of_eq_true"
+        "instDistribOfSemiring"
       ],
       "type_dependencies": [
         "D0.Algebra.finiteMatrixTensorProduct",
@@ -3166,22 +3051,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 62,
-            "line": 77
+            "column": 35,
+            "line": 58
           },
           "start": {
             "column": 0,
-            "line": 70
+            "line": 52
           }
         },
         "selection": {
           "end": {
             "column": 44,
-            "line": 71
+            "line": 53
           },
           "start": {
             "column": 8,
-            "line": 71
+            "line": 53
           }
         }
       },
@@ -3191,35 +3076,16 @@
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
       "name": "D0.Algebra.finiteMatrixTensorProduct_smul_right",
       "proof_dependencies": [
-        "CommMagma.toMul",
-        "CommSemigroup.toCommMagma",
+        "Algebra.id",
+        "Algebra.to_smulCommClass",
         "CommSemiring",
-        "CommSemiring.toNonUnitalCommSemiring",
         "CommSemiring.toSemiring",
-        "D0.Algebra.finiteMatrixTensorProduct",
         "Distrib.toMul",
-        "Eq",
-        "Eq.trans",
         "Fintype",
-        "HMul.hMul",
-        "HSMul.hSMul",
         "Matrix",
-        "Matrix.ext",
-        "Matrix.smul",
-        "NonUnitalCommSemiring.toCommSemigroup",
-        "Prod",
-        "Prod.casesOn",
-        "Prod.mk",
-        "True",
-        "congrArg",
-        "congrFun'",
-        "eq_self",
+        "Matrix.kronecker_smul",
         "instDistribOfSemiring",
-        "instHMul",
-        "instHSMul",
-        "instSMulOfMul",
-        "mul_left_comm",
-        "of_eq_true"
+        "instSMulOfMul"
       ],
       "type_dependencies": [
         "CommSemiring",
@@ -3298,22 +3164,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 5,
-            "line": 59
+            "column": 56,
+            "line": 42
           },
           "start": {
             "column": 0,
-            "line": 52
+            "line": 36
           }
         },
         "selection": {
           "end": {
             "column": 43,
-            "line": 53
+            "line": 37
           },
           "start": {
             "column": 8,
-            "line": 53
+            "line": 37
           }
         }
       },
@@ -3323,17 +3189,16 @@
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
       "name": "D0.Algebra.finiteMatrixTensorProduct_transpose",
       "proof_dependencies": [
-        "D0.Algebra.finiteMatrixTensorProduct",
-        "Eq",
-        "Eq.refl",
+        "Eq.symm",
         "Fintype",
+        "HMul.hMul",
         "Matrix",
-        "Matrix.ext",
+        "Matrix.kroneckerMap",
+        "Matrix.kroneckerMap_transpose",
         "Matrix.transpose",
         "Mul",
         "Prod",
-        "Prod.casesOn",
-        "Prod.mk"
+        "instHMul"
       ],
       "type_dependencies": [
         "D0.Algebra.finiteMatrixTensorProduct",
@@ -4523,7 +4388,9 @@
       "source_path": "03_FORMALIZATION/D0/Algebra/FiniteCoordinateBasis.lean"
     },
     {
-      "axioms": [],
+      "axioms": [
+        "Quot.sound"
+      ],
       "binders": [
         {
           "binder_info": "Lean.BinderInfo.implicit",
@@ -4567,22 +4434,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 44,
-            "line": 23
+            "column": 22,
+            "line": 25
           },
           "start": {
             "column": 0,
-            "line": 17
+            "line": 19
           }
         },
         "selection": {
           "end": {
-            "column": 29,
-            "line": 19
+            "column": 32,
+            "line": 21
           },
           "start": {
-            "column": 4,
-            "line": 19
+            "column": 7,
+            "line": 21
           }
         }
       },
@@ -4592,12 +4459,9 @@
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
       "name": "D0.Algebra.finiteMatrixTensorProduct",
       "proof_dependencies": [
-        "D0.Algebra.finiteMatrixTensorProduct.match_1",
-        "HMul.hMul",
         "Matrix",
-        "Mul",
-        "Prod",
-        "instHMul"
+        "Matrix.kronecker",
+        "Mul"
       ],
       "type_dependencies": [
         "Matrix",
@@ -4667,22 +4531,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 44,
-            "line": 101
+            "column": 21,
+            "line": 78
           },
           "start": {
             "column": 0,
-            "line": 89
+            "line": 68
           }
         },
         "selection": {
           "end": {
             "column": 48,
-            "line": 92
+            "line": 71
           },
           "start": {
             "column": 8,
-            "line": 92
+            "line": 71
           }
         }
       },
@@ -4692,73 +4556,54 @@
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
       "name": "D0.Algebra.finiteMatrixTensorProduct_trace_one_left",
       "proof_dependencies": [
-        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddCommMonoid",
         "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
         "AddMonoid.toNSMul",
         "AddMonoidWithOne.toAddMonoid",
         "AddMonoidWithOne.toNatCast",
         "AddMonoidWithOne.toOne",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
         "D0.Algebra.finiteMatrixTensorProduct",
-        "D0.Algebra.finiteMatrixTensorProduct.match_1",
         "DecidableEq",
         "Distrib.toMul",
         "Eq",
         "Eq.mpr",
-        "Eq.refl",
         "Eq.trans",
-        "Finset",
-        "Finset.card",
-        "Finset.instSetLike",
-        "Finset.sum",
-        "Finset.sum_congr",
-        "Finset.sum_const",
-        "Finset.univ",
         "Fintype",
         "Fintype.card",
-        "Fintype.sum_prod_type",
         "HMul.hMul",
         "HSMul.hSMul",
         "Matrix",
-        "Matrix.diag",
+        "Matrix.kroneckerMap",
         "Matrix.one",
         "Matrix.trace",
-        "Membership.mem",
+        "Matrix.trace_kronecker",
+        "Matrix.trace_one",
         "MulZeroClass.toZero",
-        "MulZeroOneClass.toMulOneClass",
         "Nat",
         "Nat.cast",
         "NonAssocSemiring.toAddCommMonoidWithOne",
         "NonAssocSemiring.toNonUnitalNonAssocSemiring",
         "NonUnitalNonAssocSemiring.toAddCommMonoid",
         "NonUnitalNonAssocSemiring.toDistrib",
-        "Not",
         "OfNat.ofNat",
         "One.toOfNat1",
         "Prod",
-        "Prod.mk",
         "Semiring",
         "Semiring.toNonAssocSemiring",
-        "SetLike.instMembership",
         "True",
-        "Zero.toOfNat0",
-        "congr",
         "congrArg",
-        "congrFun'",
         "eq_self",
         "id",
-        "if_true",
-        "instDecidableTrue",
         "instDistribOfSemiring",
         "instFintypeProd",
         "instHMul",
         "instHSMul",
         "instMulZeroClassOfSemiring",
-        "instMulZeroOneClassOfSemiring",
-        "ite",
-        "ite_congr",
         "nsmul_eq_mul",
-        "of_eq_true",
-        "one_mul"
+        "of_eq_true"
       ],
       "type_dependencies": [
         "AddCommMonoidWithOne.toAddMonoidWithOne",
