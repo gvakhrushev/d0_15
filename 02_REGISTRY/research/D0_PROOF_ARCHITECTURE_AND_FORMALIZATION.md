@@ -2836,3 +2836,49 @@ compiled inventory but are not promoted to an explicitly reviewed result-to-
 declaration mapping. Recording them in the assembly result requires review of
 the exact declarations and the unchanged application hypotheses at the
 existing consumer edge.
+
+### Exact action-protocol and finite-history declaration locators (25 October 2026)
+
+The `native-actionprotocol-book03-pullback-boundary` result now pins the exact
+source sections for its Book03 boundary and records eight fully qualified Lean
+declaration names across `EndogenousActionQuantum.lean`,
+`NativeHistoryActionResponse.lean`, and `GoldenCylinderOneStepBridge.lean`.
+The generated crosswalk resolves all eight names in the compiled `D0.All`
+inventory at the recorded source lines: the `ActionProtocol` and
+`ActionExcessProfile` families and their equivalence; the same-history weight
+ratio, same-endpoint cost witness, and complete fixed-memory two-tick response;
+and the one-step cylinder match and non-product-history counterexample. The
+reported trust footprint for these declarations is
+`Classical.choice`, `Quot.sound`, and `propext`.
+
+This improves exact retrieval and type visibility for the result's scoped
+mathematical statements. Its row deliberately remains
+`declaration_disposition=ambiguous` at the whole-module level while
+`explicit_declaration_locator_disposition=all_resolved`: the exact names
+resolve, but this inventory does not itself establish that their signatures
+fully encode every research hypothesis. The semantic result relation remains
+`unresolved`, `acceptance_inferred=false`, and `declared_applications` is empty.
+No parent obligation has therefore been discharged. In particular, the
+diagnostic identification of path cost with `ActionProtocol.action` and the
+mathematical Book03 source lifts still lack the physical history-to-price and
+geometry-to-operator pullbacks stated by the result owner.
+
+The regenerated all-result crosswalk uses snapshot
+`419262368ed464a739326adbe36d4495715ecf2b` with `worktree_dirty=true`, Lean
+source digest
+`8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231`, and
+applications digest
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`. Its
+SHA-256 is
+`d92918db52b12d8b32a8a7bc1fb9cccba9d2e948a635ac81444f06f0598b5ef9`.
+The module collector SHA-256 is
+`5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1`, and
+the proof-detail collector SHA-256 is
+`e936c031368d608029317bb6e746954ad507a986885b9a29a9a4e8c54d711bdc`.
+It contains 54 result rows and 191 evidence records: 182 verified pins, eight
+unavailable pinned blobs, and one immutable SHA mismatch. Exact section
+locators total 22, and 37 results still have incomplete section mappings.
+These remain provenance and retrieval counts, not C0 coverage or acceptance.
+`gr_assembly.py check` passes with 54 active results and
+`scientific_promotion=false`. C0 remains unfrozen and independently
+unaccepted; no claim status or physical assumption changes here.

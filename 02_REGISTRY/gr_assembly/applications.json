@@ -1331,25 +1331,62 @@
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "02_REGISTRY/research/A4D_NATIVE_BOOK03_OPERATOR_VARIATION_BOUNDARY.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/owner.md",
-          "sha256": "ecdb60f750cebc10312ea0079973370920da754f08e64a4ad0cf5432768b8f02"
+          "sha256": "ecdb60f750cebc10312ea0079973370920da754f08e64a4ad0cf5432768b8f02",
+          "section_refs": [
+            "L10: 1. Exact finite operator family and all its tangents",
+            "L31: 2. Full first source and constrained stationary equations",
+            "L80: 3. Same operator state, different field source",
+            "L116: 6. One-tick golden gate and the two-tick boundary",
+            "L122: 7. A finite path-history response of the abstract action fiber",
+            "L130: 8. Exact parameterization of the formal action-protocol family",
+            "L138: 9. Full finite two-tick `Z_D` response has no cancellation loophole"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/EndogenousActionQuantum.lean",
-          "sha256": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94"
+          "sha256": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94",
+          "section_refs": [
+            "L43: ActionProtocol",
+            "L54: ActionExcessProfile",
+            "L101: actionProtocolExcessEquiv"
+          ],
+          "declaration_names": [
+            "D0.Foundation.EndogenousActionQuantum.ActionProtocol",
+            "D0.Foundation.EndogenousActionQuantum.ActionExcessProfile",
+            "D0.Foundation.EndogenousActionQuantum.actionProtocolExcessEquiv"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "03_FORMALIZATION/D0/Research/NativeHistoryActionResponse.lean",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/NativeHistoryActionResponse.lean",
-          "sha256": "fe2664a6815c685ea1477a6421bac433ce3b80e47bc739b266c3a1e29c34446d"
+          "sha256": "fe2664a6815c685ea1477a6421bac433ce3b80e47bc739b266c3a1e29c34446d",
+          "section_refs": [
+            "L196: same_history_weight_ratio",
+            "L215: same_endpoints_different_history_costs",
+            "L304: full_two_tick_ZD_response"
+          ],
+          "declaration_names": [
+            "D0.Research.NativeHistoryActionResponse.same_history_weight_ratio",
+            "D0.Research.NativeHistoryActionResponse.same_endpoints_different_history_costs",
+            "D0.Research.NativeHistoryActionResponse.full_two_tick_ZD_response"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "03_FORMALIZATION/D0/Research/GoldenCylinderOneStepBridge.lean",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/GoldenCylinderOneStepBridge.lean",
-          "sha256": "9bb5a92ec6eea4957a0f207865eb3a20097b3709ff49f0d11620f6ca474cd9c0"
+          "sha256": "9bb5a92ec6eea4957a0f207865eb3a20097b3709ff49f0d11620f6ca474cd9c0",
+          "section_refs": [
+            "L64: blank_gate_matches_one_step_cylinders",
+            "L146: one_step_marginals_do_not_force_product_history"
+          ],
+          "declaration_names": [
+            "D0.Research.GoldenCylinderOneStepBridge.blank_gate_matches_one_step_cylinders",
+            "D0.Research.GoldenCylinderOneStepBridge.one_step_marginals_do_not_force_product_history"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
@@ -1367,13 +1404,20 @@
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_01.md",
-          "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342"
+          "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342",
+          "section_refs": [
+            "L20: 01.0 Active support/foundation layer"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_03.md",
-          "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+          "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+          "section_refs": [
+            "L21: 03.0 Active action/variation layer",
+            "L226: 03.3.2 The closed feedback action component"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
