@@ -10522,3 +10522,94 @@ formal_support183, Lean closure918; assembly54active/98results/
 5discharged/22obligations, scientific_promotion=false. These local
 structural results do not claim remote CI or physical GR acceptance.
 Final change againstc1cce8cc is only this brief and primary7ao.
+
+### 25 October: transport the joint source to the packet-local clock norm and release READY
+
+Phase: native realization / final composition. SAME PR334 and existing
+constitutive/native-programme-v1 owner; input c1cce8cc475d48e71af3cc7b77e91e655c5cfd61.
+Named parents: primary7an352 fixes the unnormalized READY law, and354
+retains an unresolved source-prefix/Dirac norm factor. Consume7w217's
+full-column inverse-closed native compiler, RC19's full critical packet
+conditional,7u199--202's RAW stage amplification budget, KI1--KI8's
+dedicated-helper known-port layout, and7ai's actual whole Book gain/heat.
+Changed input: separately compiled actual packets with every source step
+paid, coincident internally generated key branches, and deeper actual
+coherent amplification. Do not add a query/selector, task or independent PR.
+
+Exact target: on the specified packet-address/normalized-query graph,
+prove the whole source divided by its actual Gamma tends to zero in the
+unweighted paired-clock operator norm; permit operator-valued readiness
+variations. Keep fixed normalized successful effects, physical predicates,
+initial boundary, middle/cut, and the paired inverse/causal graph. Retain
+arbitrary source-sphere normals at their existing different norm; do not
+identify this graph with original X_N. Source-helper placement must be
+the actual dedicated KI layout, not a guessed single-port model.
+
+The proof substitutes conditional packet cancellation BEFORE applying a
+raw word-length bound; uses source precision times true compiled length;
+and applies the full polar READY differential at the scalar native base.
+Whole heat is neutral by local conjugacy of the actual cohort product,
+NOT by the inapplicable involutive theorem7ad. Exact tensor-price formulas
+are not asserted throughout helper-breaking comparison neighborhoods.
+Remaining physical application: actual normalized query/admission,
+middle/cut and any original additional Cost-Info/stack source.
+
+Write paths: primary7ap and this existing brief only. Smallest decisive
+checks: first-conditional cancellation and its trace-norm perturbation;
+noncommuting READY anticommutator with full-unitary sqrt(gamma*failure)
+bound; frozen scalar-corner logdet coefficient; local product conjugacy;
+raw5^s versus failure144^(-s) and real compiled-length budget. Then only
+the affected structural validation. No old root/128/Lean replay.
+
+Joint packet/READY clock checkpoint: primary7ap16370UTF-8bytes/SHA256
+8bc36e109d66a66454535129332bbd1dcb5a9ef744a3157152879c9727c81ce0.
+Equations365--373 replace a whole-source-prefix length estimate by the
+critical one-packet conditional followed by the true stage adjoint, and
+replace fixed unnormalized READY by the full polar readiness normal.
+Actual raw length times failure amplitude is summable. Whole heat uses
+local conjugacy at the known-port base, explicitly not the inapplicable
+involutive-endpoint theorem. Original normalized query, control admission,
+middle/cut and any extra selected full-price source remain hypotheses.
+
+The exact finite-matrix checks used SymPy1.12.1/Python3.11.9. For
+P_3=I/2+(X1X2+X1X3+X2X3)/6 and base|000>, all three one-packet
+rows are0, while the retained entangled |110> row is1/3. For the
+normalized rational packet phi=((1-t^2),2t)/(1+t^2), t=1/7, the
+conditional is exactly qI/3+2H/3 and its local row is118048/390625,
+so the critical cancellation was not applied off the primary point.
+The real two-input READY fixture with amplitudes3/5,4/5 and cross-range
+Z generator has D G=diag(24/25,-24/25), a genuinely nonscalar derivative;
+D F={E,D G}/2 holds exactly for E=(I+X)/2. Two private rational rotations
+(3/5,4/5) and(5/13,12/13) with noncommuting shared-helper insertions
+J tensor I tensor X and I tensor J tensor Z satisfy the full product
+commutator identity exactly. The scalar-corner logdet coefficient is
+w*a/gamma, and the actual squared amplifier count/failure ratio25/144
+is strictly below1. These are narrow new-identity/negative-control
+checks, not a native word, old root,128 or Lean replay.
+
+Concurrent remote8cda7a68 is preserved in full, including its entire
+fixed-Golden7ao355--364 and task brief. Our initially reviewed7ao
+14855bytes/f1d3146b7ef1a3f8132286cbe968989b16fac258e5fd858810247adc16efe65a
+is renumbered7ap365--373, with an explicit no-C1 comparison scope and
+an application to7ao's fixed-node extension. The new whole heat and
+return gain are retained; its free incoming-state countercontrol remains.
+Deleting our inserted section and brief tail restores both remote input
+files byte-for-byte. No other paths or shared governance files changed.
+
+Work validator, agent-protocol validator, gravity assembly check and
+repository validator passed on the integrated scientific input; repository
+warnings0. The result template retains independent physical admission
+and complete-price identification, and the original raw terminal. Final
+reference repairs and this receipt change no mathematical/checker input;
+git diff --check remains the final textual check. GR_closed=false.
+
+Both independent read-only reviewers, native_continuation_map and
+native_valuation_map, accepted the exact final16370-byte primary slice
+8bc36e109d66a66454535129332bbd1dcb5a9ef744a3157152879c9727c81ce0.
+They separately checked the polar/operator source, dedicated-helper
+support, corrected local-conjugacy heat row, true clock norm and the
+fixed-Golden extension. All11 renumbered internal references are repaired;
+external7ao359/364 remain. Reversing the renumbering and removing only
+the explicit no-C1/compatibility additions restores the original accepted
+14855-byte proof exactly. These scoped reviews do not promote the
+original constitutive/physical GR obligation or retire its owner.

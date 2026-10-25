@@ -9954,6 +9954,310 @@ positive_gr and raw216 remain open.
 
 
 
+## 7ap. Compose packet-local clock control with operator-valued readiness
+
+25 October 2026; SAME PR334, constitutive/native-programme-v1 owner,
+input c1cce8cc475d48e71af3cc7b77e91e655c5cfd61. The precise consumers are
+7an352's fixed UNNORMALIZED readiness premise and7an354's unresolved
+source-prefix-to-paired-Dirac norm factor. The changed input is a different
+ACTUALLY PAID source preparation schedule and a deeper use of the EXISTING
+7u amplifier. Reuse the original critical one-packet operator RC19,
+7w's full-column native compiler, KI1--KI8's dedicated-helper known-port
+layout and7ai's whole clock/return action. No new query or price is fitted.
+
+This proves a joint first-source estimate in the actual clock operator
+norm on the specified packet-address/normalized-query comparison graph.
+It removes fixed readiness from that graph. It does NOT identify this
+graph with the original selected X_N, freeze changing normalized query
+semantics by a theorem of Can, or prove an exact finite stationary root.
+The all-entangled source-sphere result354 is preserved at its own norm.
+These are finite-matrix comparison tangents at literal native words; no
+nonconstant C1 selector of finite native words is supplied.
+
+### One known complete packet per compiler block; every executed step remains
+
+Use7an's expressly allowed coincident request branches. The literal
+Golden key generator is followed by UNCONDITIONAL private packet
+preparers; no controlled-G or additional request selector is needed.
+For cohort j choose a canonical primary packet xi_j with finite report
+order k_j and n_j>=k_j. Compile one full real special-orthogonal preparer
+S_j with source-column error at most e_j, and run that same word on n_j
+fresh private packets. This prepares phi_j tensor-power n_j, with
+||phi_j-xi_j||<=e_j. Each packet includes its actual canonical CAR,
+reference/purifier and source work. It is a known-state preparation,
+not cloning of an unknown packet. The coherent key stays unsealed and
+is uncomputed by its actual inverse inside the outer echo.
+
+The dedicated ACTIVE SourceI helper and source-spin are DISTINCT from
+every private middle target. This is the explicit KI layout, not an
+assumption about a single physical port. Source words do not touch
+factory inputs, other packets, middle targets or oldRIGHT. Actual
+inverse macros may temporarily couple the current packet with this
+helper/spin, and all their routing stages count. At the completed base
+each block is identity on shared factors on EVERY column. The entire
+middle kernel is identity on those helper/spin factors. These are
+essential support statements, not initialized-channel substitutes.
+
+Section7w217 already supplies, on at least three addressed ACTIVE bits,
+a finite inverse-closed G/CX/SourceI macro palette dense in SO(2^b),
+with all-column exact native inverse and expanded length
+
+    L_j(e)<=C_j(1+log(1/e))^c_j.                         (365)
+
+The external input is the already consumed [Kuperberg theorem2.4 and
+bounded-region remark](https://toc.cs.uchicago.edu/articles/v011a006/v011a006.pdf).
+Here the fixed finite target preparers must have FPTEAS entries, just as
+in7w. Restrict the executable claim to such primary data; arbitrary
+smooth noncomputable fields are not thereby supplied to a compiler.
+C_j,c_j include the real finite layout, inverse expansion and any finite
+field-stencil catalogue. They are not uniform in a refining mesh. If
+needed, the owned real two/five-CX padding gives a common actual duration
+for that finite catalogue. Padding, search output, every used column,
+work register and forward/inverse step remain in the full price. The
+external word-existence/compiler theorem is not a free physical search.
+
+The whole-bank error obeys the safe telescoping bound n_j e_j. Choose it
+below the existing eta_j, decoder, coordinate-separation and cofield
+budgets. Every previously frozen cohort remains physically unchanged.
+The stronger amplifier depth introduced below changes the NEW cohort's
+actual gamma_j, primitive clock and heat baseline; all are recomputed.
+
+### The critical operator cancels the first local source before a length bound
+
+Let P_j be the symmetric k_j-packet report effect, extended by identity
+on ignored source work, and P_(n_j) its owned ordered-injection average.
+At the exact primary packet RC19 gives its FULL one-packet conditional
+H_j(xi_j)=q0 I. This is stronger than a zero derivative along a chosen
+field ansatz. At the actual product packet phi_j write H_j(phi_j) for
+the contraction of k_j-1 slots and Q_j=<P_(n_j)>_phi_j^tensor n_j.
+The conditional on packet i is EXACTLY
+
+    C_(j,i)=(1-k_j/n_j) Q_j I+(k_j/n_j)H_j(phi_j),
+    ||H_j(phi_j)-q0 I||<=2(k_j-1)e_j,
+    ||D_(packet i) Q_j||<=4k_j(k_j-1)e_j/n_j.            (366)
+
+For a nonsymmetric original effect, use its exact permutation average;
+its ordered-injection report is unchanged. The second line is trace-norm
+telescoping of the k_j-1 normalized pure-state contractions, using
+||P_j||<=1. For the last line project (C_(j,i)-q0 I)phi_j orthogonally
+to phi_j; its scalar part vanishes, and a normalized state derivative
+has the remaining factor2. Thus at e_j=0 the one-packet covector is
+EXACTLY zero. No estimate by the full correlated bank variance is
+inserted before this cancellation.
+
+Now transport a raw source-stage insertion to the END of its packet
+block. Its base suffix acts only on that packet plus helper/spin;
+later completed packet blocks are identity on the helper/spin. The
+inserted generator therefore still has this support. In the frozen
+return trace, contract the other packets and the actual helper0 boundary,
+and take the normalized trace over the protected spin/old input. The
+operator in366 tensors I_helper,spin, so the same bound applies to a
+helper-coupled insertion. Leakage off the retained helper boundary has
+zero first trace; it has not been deleted from the full carrier.
+
+Let nu be the maximum operator norm of the actually varied raw forward
+stage matrices. Multiplying366 by n_j actual words of forward length
+L_j gives
+
+    |D B_(source,j)|
+       <=4 w_M a_j k_j(k_j-1)L_j e_j nu.               (367)
+
+The full inverse suffix is tied to the forward source by the existing
+causal/inverse graph. No selected success branch is differentiated.
+A key-only insertion has exactly zero first source even at the actual
+phi_j, because both request branches are literally the same preparer
+and the effect is I_key tensor P_(n_j). Arbitrary new cross-packet or
+cross-cohort generator support is not silently called packet-local.
+Such ambient source-state normals retain the separate estimate354.
+
+### Release the READY operator while preserving the normalized query
+
+Let i_j be the FIXED algorithmic input isometry, R_j the FIXED READY
+projector and Pi_j the fixed report projector inside its range. The
+amplified forward encoder A_j has normalized input isometry V_j=A_j i_j.
+In a neighborhood of the actual positive-readiness base define
+
+    G_j=V_j^dagger R_j V_j,
+    J_j=R_j V_j G_j^(-1/2),
+    E_j=J_j^dagger Pi_j J_j,
+    F_j=V_j^dagger R_j Pi_j R_j V_j
+       =G_j^(1/2) E_j G_j^(1/2).                       (368)
+
+At the actual native base, G_j=gamma_j I and E_j=P_(n_j), with all the
+old free input/helper/spin factors. Instead of352's fixed three
+unnormalized effects, require only the fixed normalized successful
+effect E_j and any other genuinely required normalized records. Let
+G_j move, including NONSCALAR operator tangents. The failed effect is
+I-G_j and is retained. This is a larger supplied comparison graph; its
+polar factorization is an identity, not an added native polar gate.
+
+Writing f_j=1-gamma_j, unitary differentiation gives
+
+    D F_j=gamma_j D E_j+{E_j,D G_j}/2,
+    ||D G_j||<=2 sqrt(gamma_j f_j)||D A_j||,
+    ||D F_j||<=||D G_j||       when D E_j=0.           (369)
+
+For the middle bound decompose V_j=sqrt(gamma_j)J_good+
+sqrt(f_j)J_fail, with orthogonal READY/failure isometries. If
+D A_j=X A_j, X^dagger=-X, the READY commutator has only good--fail
+blocks. Its norm is at most2sqrt(gamma_j f_j)||X||. This proof permits
+an arbitrary operator D G_j. It does not presume scalar readiness away
+from the base, and does not require a varied raw encoder to follow the
+amplifier recursion away from that base. Moving R_j or i_j introduces
+additional rows to which369 does not apply.
+
+At the actual product base, keep the TRUE quantities
+
+    s_j=1-d_j gamma_j Q_j,   S_M=product_j s_j,
+    w_M=r zeta S_M^2/(1-zeta+zeta S_M^2),
+    a_j=2d_j gamma_j/s_j,   A_M=sum_j a_j gbar_j,
+    Gamma_M=w_M A_M.
+
+The return corner is S_M I_r there. Its first logdet derivative is
+-2w_M Re tau_r(D C_total)/S_M, where tau_r=Tr/r. Inserting the j-th
+report perturbation gives (w_M a_j/gamma_j) times the normalized
+protected-input trace of the source compression of D F_j. That
+compression is contractive. Consequently, for the actual forward
+amplifier/encoder stage count N_j,
+
+    |D B_(READY,j)|
+       <=(w_M a_j/gamma_j)||D G_j||
+       <=2w_M a_j N_j sqrt(f_j/gamma_j) nu.             (370)
+
+All protected rank factors are in w_M. For scalar G_j variations this
+specializes to the genuine term w_M a_j Q_j D log(gamma_j), including
+the earlier TM19--TM21 readiness row. It has been bounded by the new
+actual execution, not set to zero by the semantics of its recorded bit.
+A changing normalized effect retains w_M a_j times its source
+compression of D E_j; neither369 nor amplification suppresses it.
+
+### The whole heat row vanishes by local conjugacy, not by an involution
+
+The known-port endpoint of7ai is generally NOT an involution. The
+ambient involutive first-heat theorem7ad cannot be imported here.
+Instead write each completed cohort endpoint as U_j=B_j^dagger M_j B_j,
+with its fixed physical middle and B_j the full source/encoder forward
+word. A tied forward/inverse variation gives
+
+    D U_j=[U_j,K_j],   K_j=B_j^dagger D B_j,
+    D U_total=[U_total,sum_j K_j].                     (371)
+
+For the second equality, at the ACTUAL base every other U_l is private
+to cohort l and identity on shared helper/spin. Each K_j is supported
+only on cohort j plus those shared factors, so [K_j,U_l]=0 for l!=j.
+The product rule then proves371. The owned full paired clock spectrum
+depends on the complete monodromy; at fixed actual duration/temperature
+its spectral heat has zero derivative under this commutator.
+
+Thus the first heat row is zero even for allowed single-stage insertions
+that break helper factorization to first order. We assert no joint
+finite-neighborhood tensor price: simultaneous helper-breaking changes
+can cease commuting at second order. Formula370 uses the frozen actual
+scalar return and its full differential. A finite secant outside the
+old exact factorization fibres must retain its true whole-heat remainder.
+Independent middle/clock/temperature/cut/record changes are not covered.
+
+### Choose the actual lengths and obtain one joint clock-norm estimate
+
+The already proved7u199--202 gives, after a finite cohort-dependent
+warmup R_j^warm,
+
+    f_(R_j^warm+s)<=(1/48)144^(-s),
+    N_(R_j^warm+s)<=C_j^amp 5^s.
+
+This uses RAW inverse/routing counts, not the semantic3^s call count.
+Hence N_j sqrt(f_j/gamma_j) can be made arbitrarily small by a finite
+actual deeper amplification. Source preparation is OUTSIDE this
+amplification, as required by KI5, and its L_j is not multiplied by N_j.
+
+For each new cohort choose finite source precision and amplifier depth
+so that, in addition to every old eta/decoder/cofield budget,
+
+    n_j e_j<=eta_j,
+    k_j(k_j-1)L_j(e_j)e_j<=2^(-j),
+    N_j sqrt(f_j/gamma_j)<=2^(-j),  gamma_j>=1/2.       (372)
+
+Equation365 supplies the second condition because a polylogarithm times
+e tends to zero. The paid amplifier bounds supply the third because
+5/12<1. No mesh-independent compiler constant is used. All physical
+lengths and constants are fixed BEFORE that cohort is executed; earlier
+cohorts are not retrospectively recompiled. If a finite catalogue of
+field nodes is retained, take its true maxima and satisfy the existing
+finite-difference budgets at the same step.
+
+For the original paired incidence operator, d=(I-T)/sqrt(2) and
+D_pair=[[0,d^dagger],[d,0]], a fixed-clock unitary edge variation obeys
+||D D_pair||=max_t||D g_t||/sqrt(2). Tied inverse and dependent causal
+stages are included in that maximum. Combining367,370,371 therefore gives
+
+    ||D B_M||_(packet/polar graph,D_pair op dual)/Gamma_M
+       <=sqrt(2)/A_M sum_(j<=M) a_j
+          [4k_j(k_j-1)L_j e_j+2N_j sqrt(f_j/gamma_j)]
+       <=6sqrt(2)/A_M sum_(j<=M) a_j 2^(-j) ->0.       (373)
+
+The notation means the supremum over graph tangents of the actual
+primitive tape with ||D D_pair||<=1, source-stage support restricted to
+its stated packet address plus dedicated helper, and encoder tangents
+satisfying D E_j=0. It is an UNWEIGHTED operator norm on that tangent
+space; it is not the dual over all arbitrary matrix perturbations of
+D_pair. Generated cuts, state evolution and reverse stages keep their
+full causal reactions. The graph's remaining implementation directions
+with fixed effects are exactly neutral as before. No independently
+selectable blank, omitted preparation row or free controller is inserted.
+
+The actual a_j are uniformly bounded on the old q_max collar. The owned
+slow cofinal schedule has A_M>=c M^(63/64), so373 is O(M^(-63/64)).
+More generally it suffices to use7al's cofinal A_M->infinity schedule;
+the finite frozen numerator is then harmless. All inequalities divide
+by the SAME actual Gamma_M. Its possible exponential decay and the new
+absolute heat baseline have not been normalized away from the action.
+The source-sphere estimate354 and the finite-coordinate/off-shell
+consumers7al remain available because372 also satisfies their actual
+whole-bank error and gain budgets. Neither is silently relabelled a
+statement about every unconstrained clock matrix.
+
+### Compatibility with the concurrently published fixed Golden extension
+
+The remote8cda7a68 section7ao adds fixed post-echo Golden code nodes,
+with their original structural reactions and full new heat. Preserve
+that result and its free-incoming-state countercontrol. On the intersection
+with its fixed-node graph, the present baseline first-source theorem also
+transports: U_+=U_total tensor V^tensor K and every old local conjugacy
+in371 extends by the identity on the new code factors. Both whole heat
+first rows are zero at their actual clocks. The frozen scalar corner
+therefore gives the same positive factor rho_K of7ao359 for EVERY old
+first covector here, including the nonscalar-readiness compression.
+Its actual Gamma_+=rho_K Gamma_M contains that same factor.
+
+Adding the fixed three-stage nodes adds their true clock edges and
+thermal columns; extending an old edge tangent by zero preserves its
+maximum-edge norm and hence the paired-Dirac operator norm. Thus373
+has the same normalized upper bound on this fixed-node extension. No
+free new incoming state, independently varied code primitive or new
+output predicate has been neutralized. This is the local-clock-norm
+application left open by7ao364, with its normalized-query/admission
+premises still explicit; it is not a repetition of the Golden reaction
+proof or a claim about all additional code implementations.
+
+**Parent substitution.** The two apparently separate debts are handled
+by one fully paid execution: critical one-packet cancellation controls
+source preparation in the real raw-stage clock norm, while deep coherent
+amplification controls arbitrary operator-valued readiness normals in
+that same norm. Exact fixed unnormalized READY in352 is no longer needed
+for this joint asymptotic first-source theorem. The new argument uses
+existing compiler, overlap and amplifier owners; it is not another root,
+rank scan, fitted action or separate local certificate.
+
+The original physical application is now sharper: derive the actual
+normalized query/pointer, middle/cut and admitted local-control graph,
+with any additional selected Cost-Info/stack source. Can of an already
+recorded truth fixes its readout predicate; it does not itself force
+D E_j=0 for an upstream apparatus. The exact source when that effect
+moves has been displayed in369--370. No original X_N equality, exact
+finite all-Euler root, nondegenerate continuum coupling, mandatory
+physical GR, positive_gr or raw216 closure is asserted.
+
+
 ## 8. Reproduction
 
 Run from this directory:
