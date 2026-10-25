@@ -73,6 +73,31 @@ For three actual full-Book prices B0,B+,B− with physical source gain Γ>0, sou
 
 New operational falsifier: compute the two canonical complete history codes and absolute Book prices on the actual §7ay source words. If a nonzero source produces a physically same-task and strictly shorter coded alternative, the alleged D_min-selected root is rejected; if no alternative is shorter and the native code/Book bridge, precision/gain and full field lift meet the theorem, the source must vanish. Keep independent controller/cut/preparation, scene HJR and spatial-refinement obligations; a purely free QUERY tangent remains the known 7au obstruction. `GR_closed=false`.
 
+## 25 October — NEW full connected-state native SOURCE bound: paid local correlations shrink without being forbidden
+
+[New exact theorem and rational checker](A4D_NATIVE_PACKETS_CONNECTED_HOEFFDING_SOURCE_SUPPRESSION_2026_10_25.md) consume the CURRENT original §7bj (515)–(520) packet-symmetric complete COLD query and §7bi paid all-stage heat, NOT a fitted action, new detector or independent gravitational root. The existing native k=dm read-once SIGN slots are averaged over n genuine private source packets by the actual ordered-injection U-statistic. The initially prepared packet source is \(\psi_A^{\otimes n}\), with the original full DATA, oldRIGHT, unused work and all true paid stages retained.
+
+Orthogonal product-state excitation sectors give an EXACT dimension-free estimate for EVERY globally entangled normalized source-state first tangent:
+\[
+\left|DJ_{\rm Book}[\delta\Phi]-
+D_rJ_m\,D\bar r[\delta\Phi]\right|
+\le\frac{4\zeta r_h}{1-\zeta}\underbrace{
+\sqrt{\sum_{j=2}^k\frac{\binom kj^2}{\binom nj}}
+}_{\Xi_{k,n}=O(k^2/n)}\|\delta\Phi\| .
+\]
+The zero/one-packet components are the ALREADY OWNED native moment source, not silently deleted. The previously hostile **connected two-packet tangent with \(D\bar r=0\)** has nonzero but exactly controlled per-gate source:
+\[
+|DJ_{\rm connected}|
+\le \frac{4\zeta r_h}{1-\zeta}
+\frac{\binom k2}{\binom n2}\|X_{\{i,j\}}\|
+=O(k^2/n^2).
+\]
+For E **genuinely counted** independently varied pair-interaction gates with gate-max norm≤1, the whole source is ≤the same bound times E. If the actual permitted SOURCE graph has at most E≤A n such gates, it is O(Ak²/n) — including every correlated native row rather than POSTULATING that those rows are zero. The proof uses the complete finite Book determinant, exact first-conditional §7bj519, original rank \(r_h\) and true \(\zeta=2^{-20}\), and no packet-dimension/eigenspectrum assumption. The original §7bi heat C_H A_core/N and query compiler debts remain paid and are simply added to this exact source bound before dividing by the true physical gain \(\Gamma_h\).
+
+**Sharp negative control:** permitting all \(\binom n2\) pair gates at independent gate-max norm one leaves an O(1) residual; mere bounded primitive arity or abstract closedness does NOT select a sparse graph. A concrete exact rational Book cold kernel has a strictly nonzero finite pair source \(-2/[4194301\binom n2]\), normalized Hilbert global source \(O(1/n)\), sparse E=n−1 gate-max \(O(1/n)\), and dense \(\binom n2\) gate-max O(1). Thus the missing physical question is precisely the admitted **interaction DENSITY/COST** and the real task selection, not whether every retained interpacket quantum correlation has to be banned. 207 independent exact rational/source/injection controls were replayed locally; the committed standalone script has not yet been independently CI-certified.
+
+At FIXED mesh/gain/field norm the owned Bernstein first-source error allows m=O(ε^-2), k=dm, and the connected source bound allows a PAID packet count n=O_h(ε^-5) for the E≤An two-packet graph. This is ONLY a count of necessary known-source packets, not total native gate complexity or physical D_min optimality; the compiler, clocks, spatial scene, packet rank and future tests retain their true resource contributions. Actual native full physical task/cut, all independent QUERY and clock variation domains, global 42D sources and GR refinement remain OPEN. `GR_closed=false`.
+
 ## Source composition first: backward search and forward proof
 
 **User-confirmed focus, 22 October 2026.** Start from the existing exact
