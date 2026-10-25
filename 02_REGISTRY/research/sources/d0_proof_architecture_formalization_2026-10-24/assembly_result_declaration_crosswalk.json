@@ -1,12 +1,12 @@
 {
-  "snapshot_commit": "d9ad77ac9e45645cd99879f7b89cfd62088a7ecf",
+  "snapshot_commit": "796bba3bb09cfa0b8b7a65f63f5bf1ef6c9fd4c3",
   "worktree_dirty": false,
   "source_digests": {
     "02_REGISTRY/claims.csv": "8ba9bfbac99a5fe0d8e8f2b6ef8d69f3190f8c1073051eca9f005e5a93b578cf",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
     "02_REGISTRY/formal_support.csv": "ae7d19fea7750aa1f03b1706992c1fe1adef45e6bfdb29838dfe771b393835d6",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
-    "02_REGISTRY/gr_assembly/applications.json": "f4019a4ec88f4d98c59cb4284d2fc6149122155844ac24739625d3369a98c3cb",
+    "02_REGISTRY/gr_assembly/applications.json": "f71bc2202effbe37e234ad54cbd050a729fb7736e06d328d3821ee036e54a1e4",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
   },
@@ -46,10 +46,10 @@
       "changed_since_pin": 2,
       "unverified_pin": 6
     },
-    "section_locator_count": 9,
-    "ranked_section_candidate_count": 169,
-    "results_with_ranked_section_candidates": 43,
-    "results_with_incomplete_section_mapping": 45,
+    "section_locator_count": 12,
+    "ranked_section_candidate_count": 160,
+    "results_with_ranked_section_candidates": 40,
+    "results_with_incomplete_section_mapping": 42,
     "interpretation": "Counts describe source pins and recorded section locators, not accepted C0 units or semantic result-to-source relations."
   },
   "results": [
@@ -1049,125 +1049,14 @@
         {
           "locator": {
             "source_file_key": "source:9cd16820d020aed107b6db6215c44cfe3b7ea6f2:02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:9cd16820d020aed107b6db6215c44cfe3b7ea6f2:02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md#L1: D0 → ОТО: ПРОРЫВНАЯ exact 40→3→1 Palatini reduction for ARBITRARY time-dependent Brinkmann geometry, plus real CAR matter",
-                "section_ref": "L1: D0 → ОТО: ПРОРЫВНАЯ exact 40→3→1 Palatini reduction for ARBITRARY time-dependent Brinkmann geometry, plus real CAR matter",
-                "heading": "D0 → ОТО: ПРОРЫВНАЯ exact 40→3→1 Palatini reduction for ARBITRARY time-dependent Brinkmann geometry, plus real CAR matter",
-                "heading_line": 1,
-                "matched_terms": [
-                  "16",
-                  "24",
-                  "book03",
-                  "brinkmann",
-                  "connection",
-                  "corrected",
-                  "einstein",
-                  "equation",
-                  "euler",
-                  "exactly",
-                  "family",
-                  "finite",
-                  "golden",
-                  "link",
-                  "lorentz",
-                  "null",
-                  "one",
-                  "plaquette",
-                  "poisson",
-                  "reduce",
-                  "roots",
-                  "rows",
-                  "scalar",
-                  "scene",
-                  "six",
-                  "smooth",
-                  "star",
-                  "step",
-                  "three",
-                  "tick",
-                  "transverse",
-                  "two"
-                ],
-                "query_term_count": 39,
-                "overlap_fraction": 0.8205,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:9cd16820d020aed107b6db6215c44cfe3b7ea6f2:02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md#L98: 3. The SAME corrected Book-feedback supplies an arbitrarily time-dependent genuine null CAR matter source",
-                "section_ref": "L98: 3. The SAME corrected Book-feedback supplies an arbitrarily time-dependent genuine null CAR matter source",
-                "heading": "3. The SAME corrected Book-feedback supplies an arbitrarily time-dependent genuine null CAR matter source",
-                "heading_line": 98,
-                "matched_terms": [
-                  "16",
-                  "24",
-                  "brinkmann",
-                  "corrected",
-                  "einstein",
-                  "equation",
-                  "euler",
-                  "exactly",
-                  "family",
-                  "finite",
-                  "geometric",
-                  "gives",
-                  "golden",
-                  "link",
-                  "lorentz",
-                  "null",
-                  "one",
-                  "rows",
-                  "scalar",
-                  "scene",
-                  "smooth",
-                  "star",
-                  "tick",
-                  "transverse",
-                  "two"
-                ],
-                "query_term_count": 39,
-                "overlap_fraction": 0.641,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:9cd16820d020aed107b6db6215c44cfe3b7ea6f2:02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md#L38: 2. EXACT symbolic universal theorem: 40 original Euler rows collapse to THREE",
-                "section_ref": "L38: 2. EXACT symbolic universal theorem: 40 original Euler rows collapse to THREE",
-                "heading": "2. EXACT symbolic universal theorem: 40 original Euler rows collapse to THREE",
-                "heading_line": 38,
-                "matched_terms": [
-                  "16",
-                  "24",
-                  "brinkmann",
-                  "connection",
-                  "equation",
-                  "euler",
-                  "exactly",
-                  "family",
-                  "finite",
-                  "link",
-                  "lorentz",
-                  "null",
-                  "one",
-                  "poisson",
-                  "rows",
-                  "scalar",
-                  "six",
-                  "smooth",
-                  "star",
-                  "three",
-                  "tick",
-                  "transverse",
-                  "two",
-                  "unrestricted"
-                ],
-                "query_term_count": 39,
-                "overlap_fraction": 0.6154,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:9cd16820d020aed107b6db6215c44cfe3b7ea6f2:02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md#L1: D0 → ОТО: ПРОРЫВНАЯ exact 40→3→1 Palatini reduction for ARBITRARY time-dependent Brinkmann geometry, plus real CAR matter"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: D0 → ОТО: ПРОРЫВНАЯ exact 40→3→1 Palatini reduction for ARBITRARY time-dependent Brinkmann geometry, plus real CAR matter"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "source_missing",
             "snapshot_path": null
@@ -1254,7 +1143,8 @@
             {
               "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
               "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
-              "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+              "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+              "section_ref": "L1: D0 → ОТО: ПРОРЫВНАЯ exact 40→3→1 Palatini reduction for ARBITRARY time-dependent Brinkmann geometry, plus real CAR matter"
             },
             {
               "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
@@ -1649,96 +1539,14 @@
         {
           "locator": {
             "source_file_key": "source:a66687228405a7cd3feaf6c5781b61f53ebdb7c3:02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:a66687228405a7cd3feaf6c5781b61f53ebdb7c3:02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md#L171: 5. NEW full-instrument lift: six-direction reconstruction WITHOUT success postselection or a fitted reference phase",
-                "section_ref": "L171: 5. NEW full-instrument lift: six-direction reconstruction WITHOUT success postselection or a fitted reference phase",
-                "heading": "5. NEW full-instrument lift: six-direction reconstruction WITHOUT success postselection or a fitted reference phase",
-                "heading_line": 171,
-                "matched_terms": [
-                  "373248",
-                  "bad",
-                  "car",
-                  "car16",
-                  "complete",
-                  "determinant",
-                  "directions",
-                  "existing",
-                  "good",
-                  "grade",
-                  "instrument",
-                  "julia",
-                  "lorentz",
-                  "one",
-                  "original",
-                  "positive",
-                  "proper",
-                  "response",
-                  "six",
-                  "states",
-                  "two",
-                  "unconditioned"
-                ],
-                "query_term_count": 27,
-                "overlap_fraction": 0.8148,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:a66687228405a7cd3feaf6c5781b61f53ebdb7c3:02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md#L18: 1. Entire original six-dimensional Lorentz algebra using ONLY its two null generators",
-                "section_ref": "L18: 1. Entire original six-dimensional Lorentz algebra using ONLY its two null generators",
-                "heading": "1. Entire original six-dimensional Lorentz algebra using ONLY its two null generators",
-                "heading_line": 18,
-                "matched_terms": [
-                  "car",
-                  "car16",
-                  "complete",
-                  "directions",
-                  "exact",
-                  "grade",
-                  "julia",
-                  "lorentz",
-                  "one",
-                  "original",
-                  "positive",
-                  "proper",
-                  "six",
-                  "states",
-                  "two"
-                ],
-                "query_term_count": 27,
-                "overlap_fraction": 0.5556,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:a66687228405a7cd3feaf6c5781b61f53ebdb7c3:02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md#L114: 4. Stronger PHYSICAL-OBSERVABLE theorem — six actual CAR number/coherence readouts, determinant 8/6561",
-                "section_ref": "L114: 4. Stronger PHYSICAL-OBSERVABLE theorem — six actual CAR number/coherence readouts, determinant 8/6561",
-                "heading": "4. Stronger PHYSICAL-OBSERVABLE theorem — six actual CAR number/coherence readouts, determinant 8/6561",
-                "heading_line": 114,
-                "matched_terms": [
-                  "car",
-                  "car16",
-                  "complete",
-                  "determinant",
-                  "exact",
-                  "grade",
-                  "jacobian",
-                  "julia",
-                  "lorentz",
-                  "one",
-                  "original",
-                  "positive",
-                  "proper",
-                  "six",
-                  "two"
-                ],
-                "query_term_count": 27,
-                "overlap_fraction": 0.5556,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:a66687228405a7cd3feaf6c5781b61f53ebdb7c3:02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md#L171: 5. NEW full-instrument lift: six-direction reconstruction WITHOUT success postselection or a fitted reference phase"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L171: 5. NEW full-instrument lift: six-direction reconstruction WITHOUT success postselection or a fitted reference phase"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "source_missing",
             "snapshot_path": null
@@ -1804,7 +1612,8 @@
             {
               "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
               "path": "02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md",
-              "sha256": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7"
+              "sha256": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7",
+              "section_ref": "L171: 5. NEW full-instrument lift: six-direction reconstruction WITHOUT success postselection or a fitted reference phase"
             },
             {
               "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
@@ -2710,127 +2519,14 @@
         {
           "locator": {
             "source_file_key": "source:2f930abe5dca9b8753609384cdab22f93155405a:02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:2f930abe5dca9b8753609384cdab22f93155405a:02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md#L1: D0 → ОТО: БЕЗ НОВОГО DECODER — оригинальные золотые 4D boxes + inverse-PF + moving volume дают ОДНУ exact-root/GENERAL-EINSTEIN программу",
-                "section_ref": "L1: D0 → ОТО: БЕЗ НОВОГО DECODER — оригинальные золотые 4D boxes + inverse-PF + moving volume дают ОДНУ exact-root/GENERAL-EINSTEIN программу",
-                "heading": "D0 → ОТО: БЕЗ НОВОГО DECODER — оригинальные золотые 4D boxes + inverse-PF + moving volume дают ОДНУ exact-root/GENERAL-EINSTEIN программу",
-                "heading_line": 1,
-                "matched_terms": [
-                  "addresses",
-                  "arbitrary",
-                  "book03",
-                  "box",
-                  "brinkmann",
-                  "einstein",
-                  "exact",
-                  "finite",
-                  "first",
-                  "golden",
-                  "inverse",
-                  "mean",
-                  "moving",
-                  "native",
-                  "nonuniform",
-                  "null",
-                  "off",
-                  "operand",
-                  "original",
-                  "quantile",
-                  "roots",
-                  "same",
-                  "scalar",
-                  "scene",
-                  "tick",
-                  "transfers",
-                  "true",
-                  "two",
-                  "volume",
-                  "weights"
-                ],
-                "query_term_count": 36,
-                "overlap_fraction": 0.8333,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:2f930abe5dca9b8753609384cdab22f93155405a:02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md#L278: 6. Reproducible native counts + REAL moving-volume two-tick source check",
-                "section_ref": "L278: 6. Reproducible native counts + REAL moving-volume two-tick source check",
-                "heading": "6. Reproducible native counts + REAL moving-volume two-tick source check",
-                "heading_line": 278,
-                "matched_terms": [
-                  "arbitrary",
-                  "book03",
-                  "box",
-                  "brinkmann",
-                  "einstein",
-                  "equality",
-                  "exact",
-                  "finite",
-                  "first",
-                  "golden",
-                  "inverse",
-                  "mean",
-                  "moving",
-                  "native",
-                  "nonuniform",
-                  "null",
-                  "off",
-                  "original",
-                  "quantile",
-                  "roots",
-                  "same",
-                  "scalar",
-                  "scene",
-                  "tick",
-                  "time",
-                  "true",
-                  "two",
-                  "volume",
-                  "weights"
-                ],
-                "query_term_count": 36,
-                "overlap_fraction": 0.8056,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:2f930abe5dca9b8753609384cdab22f93155405a:02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md#L119: 3. ONE proposed operand of the ORIGINAL full double-tick Book03 J₂: old inverse-PF AND physical volume quantile TOGETHER",
-                "section_ref": "L119: 3. ONE proposed operand of the ORIGINAL full double-tick Book03 J₂: old inverse-PF AND physical volume quantile TOGETHER",
-                "heading": "3. ONE proposed operand of the ORIGINAL full double-tick Book03 J₂: old inverse-PF AND physical volume quantile TOGETHER",
-                "heading_line": 119,
-                "matched_terms": [
-                  "book03",
-                  "box",
-                  "einstein",
-                  "finite",
-                  "first",
-                  "golden",
-                  "inverse",
-                  "mean",
-                  "moving",
-                  "native",
-                  "null",
-                  "off",
-                  "operand",
-                  "original",
-                  "plus",
-                  "quantile",
-                  "same",
-                  "scalar",
-                  "scene",
-                  "tick",
-                  "true",
-                  "two",
-                  "unchanged",
-                  "volume"
-                ],
-                "query_term_count": 36,
-                "overlap_fraction": 0.6667,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:2f930abe5dca9b8753609384cdab22f93155405a:02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md#L1: D0 → ОТО: БЕЗ НОВОГО DECODER — оригинальные золотые 4D boxes + inverse-PF + moving volume дают ОДНУ exact-root/GENERAL-EINSTEIN программу"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: D0 → ОТО: БЕЗ НОВОГО DECODER — оригинальные золотые 4D boxes + inverse-PF + moving volume дают ОДНУ exact-root/GENERAL-EINSTEIN программу"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "source_missing",
             "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/theorem.md"
@@ -2920,7 +2616,8 @@
               "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
               "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md",
               "snapshot": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/theorem.md",
-              "sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8"
+              "sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8",
+              "section_ref": "L1: D0 → ОТО: БЕЗ НОВОГО DECODER — оригинальные золотые 4D boxes + inverse-PF + moving volume дают ОДНУ exact-root/GENERAL-EINSTEIN программу"
             },
             {
               "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
