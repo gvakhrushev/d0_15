@@ -5635,3 +5635,36 @@ evidence, while the dependency-to-claim joins remain name-locator candidates;
 they do not create an accepted application edge or C0 disposition. The view
 therefore improves exact reuse discovery without changing claim status, owner,
 or physical scope.
+
+### Independent review of the compiled Hodge reuse view (25 October 2026)
+
+An independent read-only review at published PR head
+`5e91b1be54732aa3590338cf97ca419535b7c941` returned scoped PASS for the 12
+compiled locator records. Every claim atom resolves to exactly one declaration,
+and each selected source range contains the declaration named by the locator.
+The reviewed ranges are `BoundaryBoundary.lean:5–7`,
+`FiniteCochainNoAxion.lean:15–18`, `SceneCochainComplex.lean:55–62, 64–77,
+79–86, 101–134`, and `SceneHodgeDecomposition.lean:34–62, 64–92, 94–123,
+125–132, 140–146, 148–163`. The recorded types match these declarations.
+
+The review sharpened two scope boundaries. First, the implicit parameters of
+`scene_first_homology_zero` and the corresponding conjunction component
+pretty-print as `FirstHomology` without their fixed indices; their source
+specializes to `sceneP/Q/R = 8/10/12`, so this is the rational `K(9,11,13)`
+case, not a general first-homology theorem. Second, the module name
+`SceneHodgeDecomposition` does not imply a full direct-sum Hodge decomposition:
+the recorded results are the listed adjoint/cochain identities, orthogonality,
+and `H¹=0` only. The tetrahedron certificate remains separate from the scene
+complex.
+
+The direct elaborated dependency from `finite_d_d_zero` to
+`D0.Topology.discrete_exact_bianchi` is genuine. The latter declaration is
+defined in `D0.Topology.GradedIncidenceComplex` at lines 39–41, whereas the
+claim row's module field says `D0.Gauge.GradedBianchiIdentity`; that field is
+only the claim's registered locator/import context, not the declaration owner.
+The reviewer confirmed the claim row and all mapped Lean-file blobs are
+unchanged between the artifact snapshot and the published review head. This
+remains a candidate claim crosswalk, with no assembly application or owner
+acceptance. The independent review accepts artifact integrity and the stated
+finite scope only; it does not accept the claim semantics, freeze C0, or close
+a physical premise.
