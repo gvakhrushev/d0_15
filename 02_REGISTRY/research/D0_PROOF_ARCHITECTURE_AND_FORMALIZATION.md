@@ -6942,6 +6942,26 @@ iterate and transitivity theorems. The narrow build of
 algebraic partial-trace result: it does not select a physical shift or close a
 physical GR premise.
 
+### Entrywise shift covariance and the lifted tensor consumer
+
+`D0.Topology.commute_with_shift_entries` now states the full covariance
+`M i j = M (f i) (f j)` from exact commutation with a permutation shift;
+the existing diagonal step is its specialization. `GenerationTensorExactness`
+adapts `cyclicShiftMatrix` to `finRotate` and identifies
+`kronecker_C_I (cyclicShiftMatrix n)` with the shift permutation on
+`Fin n × N`. This replaces the hand-expanded pair of double sums in
+`flavor_blindness_step` with the generic entrywise theorem. The existing
+`flavor_blindness_step` signature remains available; the new
+`flavor_blindness_step_of_commute` removes the off-generation-zero premise,
+which this proof does not require. The partial-trace consumer uses the shared
+Spectrum adapter for its matrix and iterate bridges.
+
+The archive-shift cold-start case now resolves all three concrete consumers:
+the ZMod geometry adapter, the Fin partial-trace adapter, and the lifted
+generation/flavor tensor theorem. Its compiled declaration regression pins
+the entrywise covariance dependency and the weaker-premise theorem. These are
+finite algebraic results and do not select a physical shift or GR source.
+
 The rebuilt 15-declaration archive-shift inventory and five refreshed
 digest-gated inventories were extracted through `D0.All` at clean Lean-source
 snapshot `cacb895eb20616a36043b25d0e500b9a28128ac1`, Lean 4.30.0, with common

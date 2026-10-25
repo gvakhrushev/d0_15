@@ -2055,6 +2055,16 @@ class ProofArchitectureTests(unittest.TestCase):
             generic_diagonal["proof_dependencies"],
         )
         self.assertIn("∀ (i j : N)", generic_diagonal["elaborated_type"])
+        generic_entries = declarations["D0.Topology.commute_with_shift_entries"]
+        self.assertIn("M i j = M (f i) (f j)", generic_entries["elaborated_type"])
+        self.assertIn(
+            "D0.Topology.shift_matrix_mul_right",
+            generic_entries["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Topology.commute_with_shift_entries",
+            declarations["D0.Topology.commute_with_shift_step"]["proof_dependencies"],
+        )
 
         shift_matrix = declarations["D0.Geometry.archiveShiftMatrix"]
         self.assertIn("NeZero n", shift_matrix["elaborated_type"])
@@ -2097,6 +2107,27 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Topology.abstract_shift_commute_implies_diagonal_constant",
             matter_uniform["proof_dependencies"],
         )
+        spectrum_adapter = declarations[
+            "D0.Spectrum.cyclicShiftMatrix_eq_topology_shift"
+        ]
+        self.assertIn(
+            "D0.Topology.shiftMatrix",
+            spectrum_adapter["proof_dependencies"],
+        )
+        flavor_step = declarations["D0.Spectrum.flavor_blindness_step_of_commute"]
+        self.assertNotIn("h_off", flavor_step["elaborated_type"])
+        self.assertIn(
+            "D0.Topology.commute_with_shift_entries",
+            flavor_step["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Spectrum.flavor_blindness_step_of_commute",
+            declarations["D0.Spectrum.flavor_blindness_step"]["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Spectrum.flavor_blindness_step",
+            declarations["D0.Spectrum.flavor_blindness_step_k"]["proof_dependencies"],
+        )
         self.assertTrue(all(
             "sorryAx" not in axiom
             for name in (
@@ -2109,6 +2140,11 @@ class ProofArchitectureTests(unittest.TestCase):
                 "D0.Matter.diag_eq_of_comm_shift",
                 "D0.Matter.diag_eq_of_comm_shift_k",
                 "D0.Matter.partial_trace_density_uniform_under_shift",
+                "D0.Topology.commute_with_shift_entries",
+                "D0.Spectrum.cyclicShiftMatrix_eq_topology_shift",
+                "D0.Spectrum.flavor_blindness_step_of_commute",
+                "D0.Spectrum.flavor_blindness_step",
+                "D0.Spectrum.flavor_blindness_step_k",
             )
             for axiom in declarations[name]["axioms"]
         ))
@@ -2120,6 +2156,8 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("D0/Geometry/ArchivePhaseShift.lean",
                       support["D0.Topology.ArchiveShiftTopology"]["referenced_by"])
         self.assertIn("D0/Matter/ArchivePartialTrace.lean",
+                      support["D0.Topology.ArchiveShiftTopology"]["referenced_by"])
+        self.assertIn("D0/Spectrum/GenerationTensorExactness.lean",
                       support["D0.Topology.ArchiveShiftTopology"]["referenced_by"])
 
     def test_archive_shift_reuse_is_discoverable_from_a_cold_start_query(self) -> None:
@@ -2138,6 +2176,7 @@ class ProofArchitectureTests(unittest.TestCase):
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
             "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
             "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
+            "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean",
         ):
             self.assertIn(path, sources)
 

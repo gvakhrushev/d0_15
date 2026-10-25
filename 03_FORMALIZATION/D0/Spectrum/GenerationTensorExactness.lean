@@ -2,8 +2,10 @@ import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Data.Fintype.Basic
 import Mathlib.Data.Real.Basic
+import Mathlib.Logic.Equiv.Fin.Rotate
 import D0.Algebra.FiniteMatrixTensorProduct
 import D0.Algebra.FiniteMatrixPartialTrace
+import D0.Topology.ArchiveShiftTopology
 
 open scoped BigOperators
 
@@ -32,12 +34,54 @@ theorem stage1_tensor_exactness {G N : Type} [Fintype G] [DecidableEq G] [Fintyp
 def cyclicShiftMatrix (n : Nat) : Matrix (Fin n) (Fin n) ℝ :=
   fun i j => if j.val = (i.val + 1) % n then 1 else 0
 
+theorem cyclicShiftMatrix_eq_topology_shift {n : Nat} :
+    cyclicShiftMatrix n = D0.Topology.shiftMatrix (finRotate n) := by
+  ext i j
+  have h_rotate : (finRotate n i).val = (i.val + 1) % n := by
+    rw [finRotate_apply]
+    simp [Fin.val_add]
+  change (if j.val = (i.val + 1) % n then (1 : ℝ) else 0) =
+    (if j = finRotate n i then 1 else 0)
+  have h_condition : j.val = (i.val + 1) % n ↔ j = finRotate n i := by
+    constructor
+    · intro h_val
+      exact Fin.ext (h_val.trans h_rotate.symm)
+    · intro h_eq
+      subst j
+      exact h_rotate
+  simp [h_condition]
+
 /-- Compatibility name for the shared finite matrix tensor product `C_G ⊗ 1`. -/
 def kronecker_C_I {G N : Type} [Fintype G] [DecidableEq G] [DecidableEq N] (C_G : Matrix G G ℝ) : Matrix (G × N) (G × N) ℝ :=
   D0.Algebra.finiteMatrixTensorProduct C_G (1 : Matrix N N ℝ)
 
 def shift_g {n : Nat} [NeZero n] (g : Fin n) (k : Nat) : Fin n :=
   ⟨(g.val + k) % n, Nat.mod_lt _ (NeZero.pos n)⟩
+
+private def generationShiftPerm {N : Type} (n : Nat) : Equiv.Perm (Fin n × N) where
+  toFun x := (finRotate n x.1, x.2)
+  invFun x := ((finRotate n).symm x.1, x.2)
+  left_inv x := by
+    rcases x with ⟨g, n'⟩
+    apply Prod.ext
+    · exact Equiv.symm_apply_apply _ _
+    · rfl
+  right_inv x := by
+    rcases x with ⟨g, n'⟩
+    apply Prod.ext
+    · exact Equiv.apply_symm_apply _ _
+    · rfl
+
+private lemma kronecker_C_I_cyclicShift_eq_topology_shift {N : Type} [Fintype N] [DecidableEq N]
+    {n : Nat} [NeZero n] :
+    kronecker_C_I (cyclicShiftMatrix n) =
+      D0.Topology.shiftMatrix (generationShiftPerm (N := N) n) := by
+  ext ⟨g1, m1⟩ ⟨g2, m2⟩
+  change (cyclicShiftMatrix n) g1 g2 * (1 : Matrix N N ℝ) m1 m2 =
+    (if (g2, m2) = generationShiftPerm (N := N) n (g1, m1) then (1 : ℝ) else 0)
+  rw [Matrix.one_apply, cyclicShiftMatrix_eq_topology_shift]
+  by_cases hg : g2 = g1 + 1 <;> by_cases hm : m1 = m2 <;>
+    simp [D0.Topology.shiftMatrix, generationShiftPerm, hg, hm, eq_comm]
 
 lemma shift_g_zero {n : Nat} [NeZero n] (g : Fin n) : shift_g g 0 = g := by
   unfold shift_g
@@ -60,80 +104,50 @@ lemma shift_g_step {n : Nat} [NeZero n] (g : Fin n) (k : Nat) :
     have h_eq : g.val + (k + 1) = g.val + k + 1 := by omega
     rw [h_eq, h_mod, h1]
 
-lemma flavor_blindness_step {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
+lemma shift_g_one_eq_finRotate {n : Nat} [NeZero n] (g : Fin n) :
+    shift_g g 1 = finRotate n g := by
+  apply Fin.ext
+  change (g.val + 1) % n = (finRotate n g).val
+  rw [finRotate_apply]
+  simp [Fin.val_add]
+
+lemma shift_g_eq_finRotate_iterate {n : Nat} [NeZero n] (g : Fin n) (k : Nat) :
+    shift_g g k = ((finRotate n : Fin n → Fin n)^[k]) g := by
+  induction k with
+  | zero =>
+      rw [shift_g_zero]
+      rfl
+  | succ k ih =>
+      rw [shift_g_step, shift_g_one_eq_finRotate]
+      rw [Function.iterate_succ', ih]
+      rfl
+
+lemma flavor_blindness_step_of_commute {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
     (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ)
-    (h_off : ∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift ⟨g1, n1⟩ ⟨g2, n2⟩ = 0)
     (h_comm : Γ_lift * (kronecker_C_I (cyclicShiftMatrix n)) = (kronecker_C_I (cyclicShiftMatrix n)) * Γ_lift)
     (g : Fin n) (n1 n2 : N) :
     Γ_lift (g, n1) (g, n2) = Γ_lift (shift_g g 1, n1) (shift_g g 1, n2) := by
-  let target_g : Fin n := shift_g g 1
-  have h_comm_v := congr_fun (congr_fun h_comm (g, n1)) (target_g, n2)
-  rw [Matrix.mul_apply, Matrix.mul_apply] at h_comm_v
-  change
-    (∑ x : Fin n × N,
-      Γ_lift (g, n1) x *
-        ((if target_g.val = (x.1.val + 1) % n then (1 : ℝ) else 0) *
-          (if x.2 = n2 then (1 : ℝ) else 0))) =
-    (∑ x : Fin n × N,
-      ((if x.1.val = (g.val + 1) % n then (1 : ℝ) else 0) *
-        (if n1 = x.2 then (1 : ℝ) else 0)) *
-        Γ_lift x (target_g, n2)) at h_comm_v
-  have h_lhs_corr : (∑ x : Fin n × N, Γ_lift (g, n1) x * ((if target_g.val = (x.1.val + 1) % n then (1 : ℝ) else 0) * (if x.2 = n2 then (1 : ℝ) else 0))) = Γ_lift (g, n1) (g, n2) := by
-    rw [Fintype.sum_prod_type]
-    dsimp
-    have h_zero : ∀ (g' : Fin n) (n' : N), g' ≠ g → Γ_lift (g, n1) (g', n') * ((if target_g.val = (g'.val + 1) % n then (1 : ℝ) else 0) * (if n' = n2 then (1 : ℝ) else 0)) = 0 := by
-      intro g' n' hne
-      rw [h_off g g' n1 n' hne.symm, zero_mul]
-    have h_sum_g : (∑ g' : Fin n, ∑ n' : N, Γ_lift (g, n1) (g', n') * ((if target_g.val = (g'.val + 1) % n then (1 : ℝ) else 0) * (if n' = n2 then (1 : ℝ) else 0))) =
-        ∑ n' : N, Γ_lift (g, n1) (g, n') * ((if target_g.val = (g.val + 1) % n then (1 : ℝ) else 0) * (if n' = n2 then (1 : ℝ) else 0)) := by
-      rw [Finset.sum_eq_single g]
-      · intro g' _ hne
-        rw [Finset.sum_eq_zero]
-        intro n' _
-        exact h_zero g' n' hne
-      · intro h
-        exact False.elim (h (Finset.mem_univ _))
-    rw [h_sum_g]
-    have h_sum_n : (∑ n' : N, Γ_lift (g, n1) (g, n') * ((if target_g.val = (g.val + 1) % n then (1 : ℝ) else 0) * (if n' = n2 then (1 : ℝ) else 0))) = Γ_lift (g, n1) (g, n2) := by
-      have h_cond : target_g.val = (g.val + 1) % n := rfl
-      simp only [h_cond, if_true, one_mul]
-      rw [Finset.sum_eq_single n2]
-      · simp
-      · intro n' _ hne
-        rw [if_neg hne, mul_zero]
-      · intro h
-        exact False.elim (h (Finset.mem_univ _))
-    exact h_sum_n
+  have h_topology : Γ_lift * D0.Topology.shiftMatrix (generationShiftPerm n) =
+      D0.Topology.shiftMatrix (generationShiftPerm n) * Γ_lift := by
+    rw [kronecker_C_I_cyclicShift_eq_topology_shift] at h_comm
+    exact h_comm
+  have h_entries := D0.Topology.commute_with_shift_entries
+    Γ_lift (generationShiftPerm n) h_topology (g, n1) (g, n2)
+  have h_rotate : shift_g g 1 = finRotate n g := by
+    apply Fin.ext
+    change (g.val + 1) % n = (finRotate n g).val
+    rw [finRotate_apply]
+    simp [Fin.val_add]
+  rw [h_rotate]
+  exact h_entries
 
-  have h_rhs_corr : (∑ x : Fin n × N, ((if x.1.val = (g.val + 1) % n then (1 : ℝ) else 0) * (if n1 = x.2 then (1 : ℝ) else 0)) * Γ_lift x (target_g, n2)) = Γ_lift (target_g, n1) (target_g, n2) := by
-    rw [Fintype.sum_prod_type]
-    dsimp
-    have h_zero : ∀ (g' : Fin n) (n' : N), g' ≠ target_g → ((if g'.val = (g.val + 1) % n then (1 : ℝ) else 0) * (if n1 = n' then (1 : ℝ) else 0)) * Γ_lift (g', n') (target_g, n2) = 0 := by
-      intro g' n' hne
-      rw [h_off g' target_g n' n2 hne, mul_zero]
-    have h_sum_g : (∑ g' : Fin n, ∑ n' : N, ((if g'.val = (g.val + 1) % n then (1 : ℝ) else 0) * (if n1 = n' then (1 : ℝ) else 0)) * Γ_lift (g', n') (target_g, n2)) =
-        ∑ n' : N, ((if target_g.val = (g.val + 1) % n then (1 : ℝ) else 0) * (if n1 = n' then (1 : ℝ) else 0)) * Γ_lift (target_g, n') (target_g, n2) := by
-      rw [Finset.sum_eq_single target_g]
-      · intro g' _ hne
-        rw [Finset.sum_eq_zero]
-        intro n' _
-        exact h_zero g' n' hne
-      · intro h
-        exact False.elim (h (Finset.mem_univ _))
-    rw [h_sum_g]
-    have h_sum_n : (∑ n' : N, ((if target_g.val = (g.val + 1) % n then (1 : ℝ) else 0) * (if n1 = n' then (1 : ℝ) else 0)) * Γ_lift (target_g, n') (target_g, n2)) = Γ_lift (target_g, n1) (target_g, n2) := by
-      have h_cond : target_g.val = (g.val + 1) % n := rfl
-      simp only [h_cond, if_true, one_mul]
-      rw [Finset.sum_eq_single n1]
-      · simp
-      · intro n' _ hne
-        rw [if_neg hne.symm, zero_mul]
-      · intro h
-        exact False.elim (h (Finset.mem_univ _))
-    exact h_sum_n
-
-  rw [h_lhs_corr, h_rhs_corr] at h_comm_v
-  exact h_comm_v
+lemma flavor_blindness_step {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
+    (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ)
+    (_h_off : ∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift ⟨g1, n1⟩ ⟨g2, n2⟩ = 0)
+    (h_comm : Γ_lift * (kronecker_C_I (cyclicShiftMatrix n)) = (kronecker_C_I (cyclicShiftMatrix n)) * Γ_lift)
+    (g : Fin n) (n1 n2 : N) :
+    Γ_lift (g, n1) (g, n2) = Γ_lift (shift_g g 1, n1) (shift_g g 1, n2) :=
+  flavor_blindness_step_of_commute Γ_lift h_comm g n1 n2
 
 lemma flavor_blindness_step_k {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
     (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ)

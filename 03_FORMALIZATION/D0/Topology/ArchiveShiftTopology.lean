@@ -43,13 +43,19 @@ theorem shift_matrix_mul_left {N : Type} [Fintype N] [DecidableEq N] (M : Matrix
   · intro h
     exact False.elim (h (Finset.mem_univ _))
 
-theorem commute_with_shift_step {N : Type} [Fintype N] [DecidableEq N] (M : Matrix N N ℝ) (f : Equiv.Perm N)
-    (h : M * shiftMatrix f = shiftMatrix f * M) (i : N) :
-    M i i = M (f i) (f i) := by
-  have h_comm := congr_fun (congr_fun h i) (f i)
+theorem commute_with_shift_entries {N : Type} [Fintype N] [DecidableEq N]
+    (M : Matrix N N ℝ) (f : Equiv.Perm N)
+    (h : M * shiftMatrix f = shiftMatrix f * M) (i j : N) :
+    M i j = M (f i) (f j) := by
+  have h_comm := congr_fun (congr_fun h i) (f j)
   rw [shift_matrix_mul_right, shift_matrix_mul_left] at h_comm
   rw [Equiv.symm_apply_apply] at h_comm
   exact h_comm
+
+theorem commute_with_shift_step {N : Type} [Fintype N] [DecidableEq N] (M : Matrix N N ℝ) (f : Equiv.Perm N)
+    (h : M * shiftMatrix f = shiftMatrix f * M) (i : N) :
+    M i i = M (f i) (f i) :=
+  commute_with_shift_entries M f h i i
 
 lemma commute_with_shift_iterate {N : Type} [Fintype N] [DecidableEq N] (M : Matrix N N ℝ) (f : Equiv.Perm N)
     (h : M * shiftMatrix f = shiftMatrix f * M) (i : N) (k : ℕ) :

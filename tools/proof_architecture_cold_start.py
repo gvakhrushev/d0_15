@@ -597,11 +597,13 @@ CASES: list[dict[str, Any]] = [
             "ArchiveTopology abstract_shift_commute_implies_diagonal_constant shiftMatrix commute_with_shift_iterate",
             "ArchivePartialTrace density_uniform_from_commute commute_with_shift_implies_diagonal_constant",
             "Fin finRotate cyclicShiftMatrix finRotateArchiveTopology partial_trace_density_uniform_under_shift",
+            "GenerationTensorExactness flavor_blindness_step_of_commute commute_with_shift_entries kronecker_C_I",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
             "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
             "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
+            "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean",
         ],
         "required_sources": [
             {"path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
@@ -610,12 +612,15 @@ CASES: list[dict[str, Any]] = [
              "scope_query_indexes": [0, 1]},
             {"path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
              "scope_query_indexes": [1, 2]},
+            {"path": "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean",
+             "scope_query_indexes": [3]},
         ],
         "scope_review": (
             "For a finite carrier, a transitive permutation, and exact commutation with its shift matrix, "
-            "the generic theorem forces constant diagonal. ZMod n and Fin n adapters reuse the generic "
-            "step, iterate and transitivity results while retaining existing public names. This is an "
-            "algebraic matrix result only."
+            "the generic theorem forces constant diagonal; a stronger entrywise covariance theorem handles "
+            "the lifted Fin n × N tensor shift. ZMod n and Fin n adapters reuse the generic step, iterate "
+            "and transitivity results while retaining existing public names. This is an algebraic matrix "
+            "result only."
         ),
     },
 ]
