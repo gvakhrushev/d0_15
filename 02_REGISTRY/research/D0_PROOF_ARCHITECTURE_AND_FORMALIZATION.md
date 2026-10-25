@@ -5709,3 +5709,55 @@ source-locator regression passes, and the complete proof-architecture suite
 passes 45/45. This parser/candidate improvement adds no Lean theorem, claim
 status, C0 disposition, or physical conclusion; source-unit review and
 independent C0 acceptance remain outstanding.
+
+### Candidate C0 crosswalk for the graded Bianchi claim (25 October 2026)
+
+The exact compiled reuse view for `D0-GRADED-BIANCHI-EXACT-001` is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/d0_graded_bianchi_compiled_claim_reuse_2026-10-25.json`
+(SHA-256
+`5c3d5b9f41b96ac892a9a1e68afcae7edef8e3e4954c12e2d91ab22a6ce81c7d`),
+collected at `c042c1a73c7463a750a6631a37973194152ffaa9`. The registered claim
+row at that snapshot is pinned by blob
+`f5a01cd7a74ea8940dc40e0ddfd511f1b7d88611` and SHA-256
+`f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003`.
+Its original `BOOK_05/06 / graded incidence Bianchi closure` locator has no
+unique pairing. The current candidate view correctly leaves it unresolved and
+unpaired. A manually identified source-unit candidate is
+`source:c042c1a73c7463a750a6631a37973194152ffaa9:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L1121: 06.32.1 Boundary status for Hurwitz, Bianchi and gauge transformations`
+(Book 06 blob `99721fb50de66688564638f5f2b449a38675d7bd`, SHA-256
+`592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7`). That
+section names `D0.Gauge.GradedBianchiIdentity` and explicitly limits the
+ungraded non-abelian matrix residual to its recorded no-go. The Book 05/06
+claim locator still needs source-owner reconciliation; this candidate does
+not update the registry or accept the source mapping.
+
+At the same immutable snapshot, `D0.All` resolves all five theorem atoms to
+compiled declarations. `GradedIncidenceComplex.lean` supplies
+`D0.Topology.graded_nilpotency` and
+`D0.Topology.discrete_exact_bianchi` for
+`GradedCellComplex`, plus `D0.Topology.graded_bianchi_exact` for
+`GradedCellComplex3`; `GradedBianchiIdentity.lean` supplies the two Gauge
+compatibility wrappers. The elaborated types and exact source ranges are in the
+view. The Topology source blob is
+`536ebd764d874651f30032eed6a2915043e711c0` (SHA-256
+`959e38f191ff40ff895ad93f0fc650d9db7a3f473a631751386acba131f1d813`); the
+Gauge source blob is `e1112312bc36b42631cdae2089a4794bf4cfd41e` (SHA-256
+`840a3e61aa8ad4680b8626d53d0ccfb898af28380e21ba1e280f7a7254ea06a2`). All
+five declarations have the same transitive axiom footprint:
+`Classical.choice`, `Quot.sound`, and `propext`.
+
+The scope is conditional on the supplied finite complex. Its
+`boundary_nilpotency` field is an input to `discrete_exact_bianchi`; the
+three-cell extension supplies `boundary_nilpotency2`, and
+`graded_bianchi_exact` returns that field. Thus the finite-sum theorem proves
+`d₁(d₀ A)=0` from the declared boundary-composition law, while the separate
+three-cell equation is carried by the structure. The Gauge wrappers preserve
+those types. This does not instantiate a concrete D0 mesh, derive physical
+curvature identities, or discharge a gauge/source application.
+
+The compiled Hodge reuse view records the real Lean proof dependency from
+`finite_d_d_zero` to `D0.Topology.discrete_exact_bianchi`. That is proof-level
+reuse evidence; the join to the Bianchi claim ID remains a locator candidate,
+and neither claim declares a reviewed assembly application. Claim status stays
+`LEAN_PROVED` / `CORE-FORMALIZED` at its own finite conditional scope. No C0
+membership or semantic acceptance is inferred.
