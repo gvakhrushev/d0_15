@@ -167,13 +167,8 @@ def fockParityMatrix : Matrix ArchiveFockState ArchiveFockState ℝ :=
 
 theorem fockParityMatrix_symmetric :
     fockParityMatrix.transpose = fockParityMatrix := by
-  ext bra ket
-  simp only [transpose_apply, fockParityMatrix]
-  by_cases h : bra = ket
-  · subst h
-    rfl
-  · have h2 : ket ≠ bra := Ne.symm h
-    simp [h, h2]
+  have hdiag : fockParityMatrix = Matrix.diagonal fockParitySign := rfl
+  rw [hdiag, Matrix.diagonal_transpose]
 
 theorem fockParityMatrix_sq :
     fockParityMatrix * fockParityMatrix = fockIdMatrix := by
@@ -212,13 +207,9 @@ def spatialIdMatrix (n : ℕ) :
 
 theorem spatialIdMatrix_symmetric (n : ℕ) :
     (spatialIdMatrix n).transpose = spatialIdMatrix n := by
-  ext x y
-  simp only [Matrix.transpose_apply, spatialIdMatrix]
-  by_cases h : x = y
-  · subst y
-    rfl
-  · have h' : y ≠ x := Ne.symm h
-    simp [h, h']
+  have hdiag : spatialIdMatrix n =
+      Matrix.diagonal (fun _ : ArchiveRolePhasePoint n => (1 : ℝ)) := rfl
+  rw [hdiag, Matrix.diagonal_transpose]
 
 theorem spatialIdMatrix_mul {n : ℕ}
     (A : Matrix (ArchiveRolePhasePoint n) (ArchiveRolePhasePoint n) ℝ) :

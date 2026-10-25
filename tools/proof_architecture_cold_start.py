@@ -209,6 +209,8 @@ CASES: list[dict[str, Any]] = [
             "car_dirac_square_l2_identity_declaration car_dirac_l2_zero_kernel_trivial_declaration",
             "car_hodge_current_declaration_inventory_2026-10-25 current compiled types",
             "car_hodge_transpose_current_declaration_inventory_2026-10-25 current compiled types",
+            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25 "
+            "compiled diagonal transpose dependencies",
             "car zero mode claim declarations 2026 10 25",
             "hodge car dirac kernel declaration 2026 10 25",
             "car dirac square claim declarations 2026 10 25",
@@ -250,6 +252,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_l2_zero_kernel_trivial_declaration_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_current_declaration_inventory_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_transpose_current_declaration_inventory_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json",
         ],
         "scope_review": (
             "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001, D0-ARCHIVE-CAR-DIRAC-SQUARE-001, "

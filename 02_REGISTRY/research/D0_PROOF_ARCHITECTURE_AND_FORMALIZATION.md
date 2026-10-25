@@ -6111,3 +6111,26 @@ The focused CAR/Hodge cold-start regression passes and checks exact trust
 footprints plus the compiled dependency chain from shared transpose law to
 parity symmetry. The previous current inventory remains preserved at its
 original digest and is now historical evidence.
+
+### Diagonal CAR factor symmetries use the standard matrix theorem (25 October 2026)
+
+The spatial identity and Fock parity matrices are definitionally diagonal.
+Their symmetry proofs now expose that representation and apply Mathlib's
+`Matrix.diagonal_transpose`, replacing two separate entrywise equality
+arguments. The compiled dependency inventory confirms both symmetry theorems
+depend on that exact library result; `totalParityOperator_symmetric` continues
+to consume the shared tensor-transpose theorem and both factor symmetries.
+The represented operators, carrier, period scope, and claims are unchanged.
+
+The refreshed 25-declaration inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json`,
+SHA-256 `611f1f7f538d0b387c299a5428a444a7d1d8f6cc2e3dc14374e32f8aeecb1c64`.
+It was collected at snapshot `ce780d53f88491f2aacc2436e80bc9bbe568853e`
+with `worktree_dirty=true`, public import `D0.All`, Lean-source digest
+`d719580bd7b35b7effebcfe67533e484890dd30c0911dff6780638316295cb94`,
+collector SHA-256
+`2508e85ff81ddc89abe8eb60617dd2a5dad8ae0bdb8d24e044416d16ec6d8ae4`, and
+Lean 4.30.0. The successful inventory run built the public import before
+reading its elaborated declarations. The changed CAR module SHA-256 is
+`00f497a9b6175a04efba8557f97623b52657023320696af81ccc89139f7200f5`.
+The CAR/Hodge cold-start regression passes against this current inventory.

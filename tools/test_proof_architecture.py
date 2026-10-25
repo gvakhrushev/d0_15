@@ -1423,7 +1423,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_transpose_current_declaration_inventory_2026-10-25.json",
+            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json",
             require_current=True,
         )
 
@@ -1577,6 +1577,14 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Geometry.fockParityMatrix.transpose",
             "D0.Geometry.fockParityMatrix",
             expected_axioms=standard_axioms,
+        )
+        self.assertIn(
+            "Matrix.diagonal_transpose",
+            spatial_identity_symmetry["proof_dependencies"],
+        )
+        self.assertIn(
+            "Matrix.diagonal_transpose",
+            fock_parity_symmetry["proof_dependencies"],
         )
         has_type(
             "D0.Algebra.finiteMatrixTensorProduct_one",
