@@ -779,24 +779,6 @@ theorem dTwistedAdjoint_add (N : ℕ) (H : Role → ℂ) (ψ φ : ArchiveCochain
   simp [Pi.neg_apply, Pi.add_apply]
   ring
 
-theorem hodgeCarDiracTwisted_sq (N : ℕ) (H : Role → ℂ)
-    (hunit : ∀ r, star (H r) * H r = 1) (ψ : ArchiveCochainC N) :
-    hodgeCarDiracTwisted N H (hodgeCarDiracTwisted N H ψ) =
-      twistedDifferenceLaplacian N H ψ := by
-  have hcross := hodgeCarDiracTwisted_cross N H hunit ψ
-  unfold hodgeCarDiracTwisted
-  rw [dTwisted_add, dTwistedAdjoint_add, dTwisted_sq, dTwistedAdjoint_sq]
-  simp only [zero_add, add_zero]
-  exact hcross
-
-theorem hodgeCarDiracTwisted_sq_fibre (N : ℕ) (H : Role → ℂ)
-    (hunit : ∀ r, star (H r) * H r = 1) (ψ : ArchiveCochainC N)
-    (p : ArchiveCochainBasis N) :
-    hodgeCarDiracTwisted N H (hodgeCarDiracTwisted N H ψ) p =
-      twistedScalarLaplacian N H (fun x => ψ (x, p.2)) p.1 := by
-  rw [hodgeCarDiracTwisted_sq N H hunit]
-  rfl
-
 /-! ## Adjoint -/
 
 theorem cochainPairingC_conj (N : ℕ) (ψ φ : ArchiveCochainC N) :
@@ -1025,6 +1007,29 @@ theorem hodgeCarDiracTwisted_finiteHermitian_square
   have h := congrArg (fun L : ArchiveCochainC N →ₗ[ℂ] ArchiveCochainC N => L ψ)
     (hodgeCarDiracTwistedLinear_square N H)
   simpa [LinearMap.comp_apply, LinearMap.add_apply] using h
+
+theorem hodgeCarDiracTwisted_sq (N : ℕ) (H : Role → ℂ)
+    (hunit : ∀ r, star (H r) * H r = 1) (ψ : ArchiveCochainC N) :
+    hodgeCarDiracTwisted N H (hodgeCarDiracTwisted N H ψ) =
+      twistedDifferenceLaplacian N H ψ := by
+  have hsquare := hodgeCarDiracTwisted_finiteHermitian_square N H hunit ψ
+  simp only [LinearMap.comp_apply, LinearMap.add_apply] at hsquare
+  change hodgeCarDiracTwisted N H (hodgeCarDiracTwisted N H ψ) =
+    dTwisted N H (D0.Algebra.finiteHermitianAdjoint (dTwistedLinear N H) ψ) +
+      D0.Algebra.finiteHermitianAdjoint (dTwistedLinear N H) (dTwisted N H ψ)
+    at hsquare
+  rw [← dTwistedAdjoint_eq_finiteHermitianAdjoint N H hunit ψ,
+    ← dTwistedAdjoint_eq_finiteHermitianAdjoint N H hunit (dTwisted N H ψ)] at hsquare
+  simpa only [dTwistedLinear] using
+    hsquare.trans (hodgeCarDiracTwisted_cross N H hunit ψ)
+
+theorem hodgeCarDiracTwisted_sq_fibre (N : ℕ) (H : Role → ℂ)
+    (hunit : ∀ r, star (H r) * H r = 1) (ψ : ArchiveCochainC N)
+    (p : ArchiveCochainBasis N) :
+    hodgeCarDiracTwisted N H (hodgeCarDiracTwisted N H ψ) p =
+      twistedScalarLaplacian N H (fun x => ψ (x, p.2)) p.1 := by
+  rw [hodgeCarDiracTwisted_sq N H hunit]
+  rfl
 
 theorem dTwistedAdjoint_adjoint (N : ℕ) (H : Role → ℂ)
     (hunit : ∀ r, star (H r) * H r = 1) (ψ φ : ArchiveCochainC N) :

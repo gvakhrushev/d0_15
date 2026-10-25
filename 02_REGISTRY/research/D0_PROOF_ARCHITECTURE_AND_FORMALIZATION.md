@@ -3195,6 +3195,67 @@ presupposition edges
 The replay verifies rediscovery and compatibility routing only; it does not
 accept semantic coverage or select physical Hodge/GR data.
 
+### Existing twisted-CAR Laplacian theorem now consumes the generic square (25 October 2026)
+
+The existing pointwise theorem `hodgeCarDiracTwisted_sq` keeps its statement:
+the square of the complex site × Fock Hodge--Dirac equals the registered
+`twistedDifferenceLaplacian`. Its proof now composes the generic pointwise
+Hermitian Hodge-square law with the explicit
+`dTwistedAdjoint_eq_finiteHermitianAdjoint` adapter and the already-owned
+cross-term identity `hodgeCarDiracTwisted_cross`. Thus the generic
+anticommutator is transported to the existing CAR Laplacian without repeating
+the square expansion. The fibre corollary keeps its public name and result.
+
+The refreshed exact declaration inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hodge_laplacian_from_generic_square_2026-10-25.json`
+(SHA-256 `437e3a49c2e5afd33bc1d760fc73df88726fb257e71603a413e29b6dedf08372`,
+collector `8cfca97ab7f6a886ef713b80465b7ad51e23da2331af8fcac144ed42afa945da`).
+It was compiled with import root
+`D0.Geometry.ArchiveTwistedHodgeDirac`, Lean 4.30.0, source snapshot
+`56023287037a872a03d616863e7e8cec93e1734d`, `worktree_dirty=true`, and Lean
+source digest `9f86e52334d192c8e772b3a48ff6775c45b6e8f120984df39154677d788c2d91`.
+Its trust footprint includes the existing
+`car_create_anticommutator_int` and `car_mixed_anticommutator_int`
+`native_decide` declarations reached through the owned cross-term proof, along
+with `Classical.choice`, `Quot.sound`, and `propext`; this refactor adds no new
+trust assumption. The narrow module build passes (2,985 jobs). No physical
+holonomy, action, source, or GR selection follows.
+
+### Cold-start replay after twisted-CAR square refactor (25 October 2026)
+
+The `finite-hermitian-adjoint-twisted-car-application` case now has ten
+exact-name queries and eleven required sources, including the preserved
+pointwise Laplacian theorem and its refreshed compiled inventory. All 11/11
+sources were found as direct content. The full suite found all required
+sources in 18/18 cases; all 19/19 benchmark checks passed, including the
+exact-source-versus-unrelated-prose impact control. Semantic scope review
+remains manual.
+
+Replay used candidate limit 18 at snapshot
+`56023287037a872a03d616863e7e8cec93e1734d` with `worktree_dirty=true`. The
+runner SHA-256 was
+`5debd99f51990fcfdb201c4ba05c4b5b13acd716b31128feae1bd8a002239136`; the
+primary artifact at replay time had SHA-256
+`f90a9ee4a379a73d5fa84f8cb98049f89e8a3ffed9aa01cd1f0f71a045226568`. The
+seven authority digests were: `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`aa783fa732b9a5a6e5fa351e064cb2013c394848d6e1e43f273efbeb5c3289c2`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+
+This replay establishes rediscovery and scoped source routing; it does not
+establish semantic acceptance, physical source/holonomy selection, C0 freeze,
+or GR closure.
+
 ### Hermitian Hodge square and cubical anticommutator application (25 October 2026)
 
 The generic finite Hermitian API now also proves that adjoints reverse

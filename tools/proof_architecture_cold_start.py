@@ -313,6 +313,7 @@ CASES: list[dict[str, Any]] = [
             "hodgeCarDiracTwisted_finiteHermitian_square unitary holonomy",
             "dTwistedAdjoint_adjoint compatibility wrapper finiteHermitianPairing_adjoint_right",
             "hodgeCarDiracTwisted_self_adjoint compatibility wrapper generic Hermitian self-adjoint",
+            "hodgeCarDiracTwisted_sq generic Hodge anticommutator twistedDifferenceLaplacian",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
@@ -324,6 +325,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_pointwise_square_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hermitian_right_adjoint_wrapper_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hermitian_self_adjoint_wrapper_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hodge_laplacian_from_generic_square_2026-10-25.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
