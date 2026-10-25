@@ -5173,8 +5173,11 @@ existing end-to-end owner in
 `visible_only_memory_cannot_decode_hiddenBit_futures` theorem shows that any
 decoder satisfying the complete future-profile equation would force the
 visible-only encoder to be injective, contradicting two states with the same
-visible bit and different future archives. Its
-`erased_hiddenBit_operation_map_is_impossible` theorem uses the actual
+visible bit and different future archives. The supporting
+`hiddenBit_sufficient_encoder_injective` lemma now derives this implication
+through the generic `FutureExecution.sufficient_memory_reflects_future` result
+and quotient exactness, instead of duplicating its profile-equality argument.
+The companion `erased_hiddenBit_operation_map_is_impossible` theorem uses the actual
 `Interpretation` structure and rules out the identity state map paired with an
 empty action word: the archive-revealing operation contradicts
 `step_commutes`. The positive
@@ -5188,11 +5191,13 @@ the finite-spectral-triple and external metric-reconstruction statements as
 fields; the theorem only returns their supplied witnesses. The bridge therefore
 remains conditional and does not select a physical execution or close GR.
 
-The actual application owner passed its narrow build (2,971 Lake jobs under
-Lean 4.30.0). The two negative controls report only `propext`; the positive
-foundation/transfer composition reports `propext`, `Classical.choice`, and
-`Quot.sound`; the Connes projection theorem reports no axioms. The focused
-proof-architecture suite passes 44/44, and the final cold-start run found every
-required source in all 19 cases (20 benchmark cases including the impact
-regression). These checks reuse existing Lean results; no duplicate theorem or
-physical selector was added.
+The refactored application owner passed its narrow build (2,971 Lake jobs
+under Lean 4.30.0). The decoder control and supporting injection now inherit
+`propext` and `Quot.sound` through the generic future quotient; the operation
+map control reports only `propext`. The positive foundation/transfer
+composition reports `propext`, `Classical.choice`, and `Quot.sound`; the Connes
+projection theorem reports no axioms. The focused proof-architecture suite
+passes 44/44, and the final cold-start run found every required source in all
+19 cases (20 benchmark cases including the impact regression). These checks
+reuse existing Lean results; no duplicate theorem or physical selector was
+added.

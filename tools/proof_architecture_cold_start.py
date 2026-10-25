@@ -158,7 +158,7 @@ CASES: list[dict[str, Any]] = [
         "queries": [
             "verification_core representedRecord complete future kernel",
             "Interpretation.transfer_theorem translated regime premise source_proof",
-            "visible_only_memory_cannot_decode_hiddenBit_futures hiddenBit_sufficient_encoder_injective complete future decoder",
+            "visible_only_memory_cannot_decode_hiddenBit_futures hiddenBit_sufficient_encoder_injective sufficient_memory_reflects_future complete future decoder",
             "erased_hiddenBit_operation_map_is_impossible step_commutes hidden archive action",
             "verified_visibleFalseReadout_transfers_to_common_execution verifiedStateImageEquiv transfer_theorem",
             "ConnesReconstructionBridge connes_reconstruction_conditional metricEqualsSpectrum supplied witness assumption",
@@ -172,7 +172,7 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
             "03_FORMALIZATION/D0/Bridge/ConnesReconstructionBridge.lean",
         ],
-        "scope_review": "VerificationTransferApplication.visible_only_memory_cannot_decode_hiddenBit_futures rejects a decoder from visible-only memory using complete future-profile injectivity; erased_hiddenBit_operation_map_is_impossible rejects the identity-state map that erases the archive-revealing operation at step_commutes. The positive verified_visibleFalseReadout_transfers_to_common_execution composes the verified foundation state with the actual transfer. ConnesReconstructionBridge.connes_reconstruction_conditional remains conditional on supplied ConnesReconstruction fields. These finite controls do not select a physical execution.",
+        "scope_review": "VerificationTransferApplication.visible_only_memory_cannot_decode_hiddenBit_futures rejects a decoder from visible-only memory through hiddenBit_sufficient_encoder_injective and the generic sufficient_memory_reflects_future result; erased_hiddenBit_operation_map_is_impossible rejects the identity-state map that erases the archive-revealing operation at step_commutes. The positive verified_visibleFalseReadout_transfers_to_common_execution composes the verified foundation state with the actual transfer. ConnesReconstructionBridge.connes_reconstruction_conditional remains conditional on supplied ConnesReconstruction fields. These finite controls do not select a physical execution.",
     },
     {
         "id": "top-hodge-inverse-spectral-outside-gr",

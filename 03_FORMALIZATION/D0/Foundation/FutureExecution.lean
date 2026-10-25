@@ -223,7 +223,8 @@ theorem hiddenBit_sufficient_encoder_injective {C : Type}
     Function.Injective encode := by
   intro s t h
   apply hiddenBit_futureProfile_injective
-  exact (correct s).symm.trans ((congrArg decode h).trans (correct t))
+  exact Quotient.exact
+    (hiddenBitExecution.sufficient_memory_reflects_future encode decode correct h)
 
 /-- The lower bound is FOUR archived states, not TWO current Boolean
 outcomes. It is independent of the choice of source encodings. -/

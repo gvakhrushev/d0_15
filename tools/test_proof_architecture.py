@@ -1242,6 +1242,10 @@ class ProofArchitectureTests(unittest.TestCase):
         for declaration in required_names:
             self.assertTrue(any(declaration in query for query in case["queries"]))
             self.assertIn(declaration, case["scope_review"])
+        self.assertTrue(any(
+            "sufficient_memory_reflects_future" in query for query in case["queries"]
+        ))
+        self.assertIn("sufficient_memory_reflects_future", case["scope_review"])
         self.assertIn("conditional on supplied ConnesReconstruction fields",
                       case["scope_review"])
         self.assertIn("do not select a physical execution", case["scope_review"])
