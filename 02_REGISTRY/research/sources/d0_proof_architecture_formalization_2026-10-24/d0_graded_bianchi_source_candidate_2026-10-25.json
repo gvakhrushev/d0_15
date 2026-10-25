@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "generated_by": "tools/proof_architecture.py --json claim-sources",
+  "snapshot_commit": "8c6e961b4c62aef911ba1696618d3bbc0f9d71ef",
+  "worktree_dirty": false,
+  "claim_registry_sha256": "f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003",
+  "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+  "registered_locator": {
+    "book": "BOOK_05/06",
+    "section": "graded incidence Bianchi closure"
+  },
+  "resolution_status": "unresolved",
+  "resolution_reason": "multiple_books_share_one_unpaired_section_locator",
+  "locator_pairs": [],
+  "book_heading_candidates": [
+    {
+      "book_locator": "BOOK_05",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "book_locator": "BOOK_06",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+          "line": 1121,
+          "heading": "06.32.1 Boundary status for Hurwitz, Bianchi and gauge transformations",
+          "source_sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+          "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
+          "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
+          "matches_snapshot_commit": true,
+          "match_kind": "lexical_heading_candidate",
+          "title_matched_terms": [
+            "bianchi"
+          ],
+          "matched_terms": [
+            "bianchi",
+            "closure",
+            "graded",
+            "incidence"
+          ],
+          "query_term_count": 4,
+          "overlap_fraction": 1,
+          "review_status": "unreviewed_lexical_candidate",
+          "candidate_source_unit_key": "source:8c6e961b4c62aef911ba1696618d3bbc0f9d71ef:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L1121: 06.32.1 Boundary status for Hurwitz, Bianchi and gauge transformations"
+        }
+      ]
+    }
+  ],
+  "interpretation": "The BOOK_05/06 locator is not paired. The Book 06 heading is a retrieval candidate only; it does not establish the intended source mapping or accept the claim."
+}
