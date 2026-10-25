@@ -60,7 +60,10 @@
           "D0.Geometry.j2DetectorMetricPath_hasFDerivAt_direction",
           "D0.Geometry.j2DetectorMetricPath_hasFDerivAt_symmetric_direction",
           "D0.Geometry.solderMetricMatrix_constant_j2DetectorMetricPath",
-          "D0.Geometry.j2DetectorMetricPath_symmetric_solder_adapter"
+          "D0.Geometry.j2DetectorMetricPath_symmetric_solder_adapter",
+          "D0.Geometry.j2DetectorMetricPath_transposeIsometry_apply",
+          "D0.Geometry.j2DetectorMetricPath_tangent_apply",
+          "D0.Geometry.j2DetectorMetricPath_hasFDerivAt_flat"
           ]
       },
       {
