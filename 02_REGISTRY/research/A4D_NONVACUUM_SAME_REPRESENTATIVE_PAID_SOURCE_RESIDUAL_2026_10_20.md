@@ -12654,6 +12654,339 @@ selects that entire sector. Literal exact finite roots, generic GR,
 positive_gr and raw216 retain their existing status. No new task,
 selector, registry promotion or original action is introduced.
 
+## 7ax. Paid terminal geometry meters preserve the complete field source
+
+25 October2026; SAME PR334 / constitutive/native-programme-v1,
+inputa7063ecb. Section7av already supplies realizable alternative
+future tests; an always-on reader is NOT a universal GR prerequisite.
+Here is a stronger OPTIONAL realization: the same finite execution
+itself leaves a terminal geometry-response tuple, with its detector
+backreaction and every new local calibration row included in the
+original Book price. No neutral measurement or extra action is assumed.
+The regularized solution protocol7aw remains available; original
+physical-domain admission is not inferred from this extension.
+
+### Allocate actual pointers before their seal
+
+Use7at's unconditional query, full SIGN packets and compiled extractors.
+For each free coordinate a choose one genuine designated feature bank
+and its SIGN bit immediately after extraction. Add a fresh blank
+pointer h_a and an ACTUAL CX from this SIGN to h_a. All subsequent
+old source/query/Boolean macro addresses, including routing, helper
+and spectator choices, exclude h_a. Existing never-read labels are
+untouched. The old query does not read these new pointers. Their
+inverse copies are included in B^dagger; they need not restore h_a
+to0 on the actual output. No such restoration is used below.
+Use the existing exact-readonly working-key source interface, with
+all subsequent query/extractor/Boolean addresses excluding that key.
+Any changed spectator allocation is included in the actual base
+carrier/clock before counting the additional meter resources.
+
+Each pointer controls a separate THREE-bit meter, initially000. ALL
+other source/query words exclude these meters. Let P_a=|1><1|_(h_a)
+at the middle. The actual report projector Theta, every P_b and all
+these P_a commute. The known SIGN orientation is explicit: write its
+flag1 effect as (I+sigma_a O_a)/2, sigma_a=+/-1. For7as393's block
+ordering sigma_a=-1. No free X or changed old table is inserted.
+
+The new pointers can dephase off-diagonal compiler errors in the old
+query effect. Therefore recompute ACTUAL Q with the new B, and compare
+it to the NEW ideal diagonal circuit. Only the ideal polynomial q_m
+is unchanged by these copies. Include them in the real L_pref,N_B and
+the full-column Delta/error budgets of406. Approximate extractors are
+not silently replaced by their ideal moment operators.
+
+### A near-identity native meter with a certified nonzero signal
+
+Consume7aq's exact-predicate-readonly SO(8) compiler with predicate P_a.
+On its true block use the rational target V_* = R_t directsum I_6,
+
+    R_t=[[1-t^2,-2t],[2t,1-t^2]]/(1+t^2),
+    0<t<=1/4,   ||V_a-V_*||<=t^2/16.
+
+The false block is EXACT identity. Every expanded native stage,
+inverse letter, helper and unused column remains paid. At the actual
+compiled block put
+
+    delta_a=||V_a-I||<=3t,
+    epsilon_a=1-(V_a)_00,   0<=epsilon_a<=delta_a^2/2,
+    ell_a=1-(V_a)_00^2=epsilon_a(2-epsilon_a)>=t^2/2,
+    R_a=(I-P_a) tensor I_8+P_a tensor V_a.             (424)
+
+The bounds follow from orthogonality, the rational target and its
+certified full-column error. In particular the ACTUAL ell is positive;
+neither the ideal angle nor an uncomputed success probability is used
+as calibration. At fixed finite layout L_a is polylogarithmic in1/t
+by the already owned compiler. A bare integer G-power approximation
+would not by itself prove delta_a L_a->0.
+
+Use the old main middle M_0=(I-Theta)tensor I+Theta tensor V_0 and
+the new fixed middle M_+=M_0 product_a R_a in
+U_+=B^dagger M_+ B. All these completed blocks commute and restore
+helper/Spin on ALL columns. Outer B^dagger never addresses any meter.
+For x_a=<B0,P_a B0> the actual terminal event is therefore EXACTLY
+
+    p_a=Pr(meter_a!=000)=ell_a x_a,
+    mu_a^obs=sigma_a(2p_a/ell_a-1).                  (425)
+
+This holds on all source inputs. Subsequent private cohorts do not
+address old meter wires, so the event stays readable after their seal.
+It is a positive finite response, without physical pinching or a
+second information credit. For each coordinate the SIGN-extractor
+error contributes at most4eta_ex to the reconstructed moment. Error
+rho in the terminal Born probability contributes2rho/ell_a. A genuine
+whole-state error leaking into the meter would also keep its1/ell
+debt; source-state errors on the meter-disjoint source interface are
+instead contracted by ell_a and cancel on decoding.
+
+### The detector has a real full-price source
+
+Compress the OLD main target and every meter in their true blank000.
+With D_P=product_a(I-epsilon_a P_a), E=sum_a epsilon_a,
+
+    c=<B0,(I-d Theta) D_P B0>,
+    s=1-d Q,     |c-s|<=E,
+    t_j^+=c_j^2,   w_+=rankP zeta product_j t_j^+/
+                                (1-zeta+zeta product_j t_j^+),
+    a_j^+=2d_j/c_j,  A_+=sum_j a_j^+ gbar_j,
+    Gamma_+=w_+ A_+,
+    B_+=H_+-rankP log(1-zeta+zeta product_j t_j^+).    (426)
+
+For one meter, c=s-epsilon(x-d y), y=<P Theta>. This term is not zero
+even at a primary field root. For several meters use the PRODUCT D_P,
+not a sum of separately assigned detector prices. If E<=1/4 and the
+old actual s>=1/2, c>=1/4. Unitarity gives c<=1; hence3<=a^+<=16.
+All new weights and the actual w_+ must be recomputed.
+
+For d_O chosen coordinates there are4d_O genuinely new blank wires,
+thermal dimension2^(4d_O) times the old one, unchanged protected rank,
+2d_O new CX stages from copies/inverse copies, and sum_a L_a new
+middle stages. There is NO outer inverse of the meters themselves.
+All remaining source/query/middle/inverse stages keep their actual
+expanded lengths. The entire new2N_+d_+ heat is retained.
+
+### All added local rows are bounded, including meter calibration
+
+Let nu=max_t||Dg_t||. Old B-stage supports exclude every NEW meter
+target, though they may retain the old target-mixing directions379a.
+Since ||(I-dTheta)(D_P-I)||<=E, their extra corner source is at most
+2N_B E nu. The old joint-source bound406 is reapplied to the new ideal
+circuit and actual B with the new copy lengths/error margins.
+
+For a raw insertion inside meter a, fold to its completed macro.
+Its generator H_a has support in h_a, its three targets and the shared
+helper/Spin, excluding old Theta/work/targets and all other h_b/meters.
+Other completed blocks are identity on the shared factors. Compressing
+the old target and OTHER meters leaves
+K=(I-dTheta) product_(b!=a)(I-epsilon_b P_b), a Hermitian contraction
+commuting with H_a. Thus ReTr compression(KH_a)=0 at R_a=I. At the
+actual R_a the remainder is at most rankP delta_a||H_a||.
+This even permits H_a to mix its OWN h_a control: K contains no P_a.
+The exact readout425 is a BASE-word identity, not a law imposed on
+those free calibration tangents. Every raw meter stage is covered,
+not just a postulated variable ideal angle.
+
+Old predicate-preserving middle generators commute with every new P_a.
+Their blank-meter compression D_P is Hermitian of norm<=1, so their
+old delta_0 L_0 bound is retained; there is no uncontrolled t L_0 term.
+Retain379a's old-target error. Set D_meter=sum_a delta_a L_a and let
+e_old=epsilon_joint+4delta_0 L_0+16delta_0 M_raw, evaluated on the NEW
+query/source schedule. The genuine new graph obeys
+
+    ||D B_+||_(graph,Dirac dual)/Gamma_+
+     <=sqrt(2)/A_+ sum_j a_j^+[
+           e_old,j+(2N_B,j E_j+D_meter,j)/d_j]
+             +sqrt(2)N_+ L_(N_+)(beta)/Gamma_+.        (427)
+
+The real part of the full protected trace is the determinant source;
+the proof does not claim its whole matrix differential vanishes.
+The graph frees old stages on their stated supports, new copy stages
+in their packet prefixes and every meter raw stage on the above local
+support. Joint cross-meter/work interactions, independent reverse
+words, new cuts and other selected action terms keep their own rows.
+The whole heat term is the actual ambient estimate380, not an exact
+involution assertion for M_+. It includes every new mode and stage.
+
+### Use the terminal geometry in the SAME physical source map
+
+Apply the original regular decoder R to the calibrated moments425.
+On a key/source variation the meter blocks are held fixed and the
+same local Walsh cells7at407 change the branch weights. Thus the
+actual mean-readout Jacobian C_obs is the derivative of these terminal
+responses, with the real extractor/source errors retained. It is not
+an assigned field label. Use its inverse and the actual Bhat once its
+original regular margin is certified, as in388--389.
+
+On every catalogue branch l let c_l=s_l+e_l, |e_l|<=E. The exact
+same-point key differential gives the OLD principal report covector
+plus -(e_(a,+)-e_(a,-))/(d delta_field). Consequently its extra
+physical-cofield error, BEFORE the old409 budgets, is at most
+
+    2E ||Bhat|| ||C_obs^-1||/
+                                (d delta_field gbar). (428)
+
+The new readout/chord error includes4eta_ex and actual probability/
+calibration errors from425, divided by the true chord scale and
+inverse margins. This direct estimate avoids multiplying a small
+operator residual by an uncontrolled field-lift norm. The main target
+remains7at's open-field reserve/Bernstein report, with its genuine
+weak-strength defect; no exact-primary P5/C8 identity is imported.
+
+At each finite h FIRST choose the source/extractor/old-query
+precisions and dedicated copies to meet the original moment/chord
+bounds. Freeze the resulting actual B,N_B, field step, gbar and
+all decoder/lift margins. THEN choose t_a and compiled meters so
+that, for any desired eta_j>0,
+
+    (2N_B E+D_meter)/gbar<=eta_j,
+    E/(delta_field gbar)<=eta_j.                     (429)
+
+This is feasible because E=O(d_O t^2) and
+D_meter=O_h(t log^c(1/t)) at fixed layout. AFTER these meters are
+fixed, choose only terminal probability/calibration/arithmetic reading
+errors to meet the actual chord/ell/inverse budgets. The calibrated
+moments425 on the meter-disjoint source interface are independent of
+ell; source precision need not change after B was frozen. All choices
+are prospective. Probability estimation, arithmetic,
+repetition and re-detection are finite real future protocols, with
+their own cost if performed. An exact Born mean is not claimed to be
+the deterministic output of a single finite trial.
+
+Use7at's same slow diagonal mesh envelope, updated finite constants
+and actual repetitions so A_+ diverges. The positive weighted source
+and cofield errors tend to zero by427--429. Since c_j^2>=1/16,
+Gamma_+>=rankP zeta16^(-M) A_+; the fixed-beta factorial heat bound at
+the NEW N_+>=M still tends to zero at this gain. The same nonvacuum
+geometry and matter limit is now obtained from actual terminal meter
+responses. No large absolute heat or detector covector was subtracted.
+
+### A terminal response for the complete field source
+
+There is also a simple terminal source test. The private-j all-zero
+event has probability t_j^+=c_j^2>=1/16, for arbitrary normalized
+protected input, on the scalar-corner field/source family. It is a
+finite computational effect on the actual private output. Future
+cohorts leave it and the meter events unchanged. Their Heisenberg
+responses extend exactly by tensor identity, or use7av418--419 in
+the actual endpoint frame. This is a test/response tower, NOT an
+intertwiner of the cyclic price-clock Dirac.
+
+For the genuine field-key family the full heat derivative is zero by
+conjugacy to the fixed new middle. Put
+
+    L_return=-sum_j log t_j^+,
+    D_field B_+=w_+ D_field L_return,
+    (D_field B_+)/Gamma_+
+                   =-(1/A_+)sum_j D_field t_j^+/t_j^+. (430)
+
+L_return is an affine sum of convex finite response functions of
+these terminal probabilities. It is a proved SOURCE-EQUIVALENT
+potential on this family, not a replacement for the full Book action.
+The true w_+ cancels in430, without an exponentially small cumulative
+return measurement. Geometry calibration still keeps its1/ell debt.
+At each finite prefix both factors in the source equivalence are
+positive; on this field chart the exact zero predicates agree. This
+does not turn an approximate zero into an exact stationary native
+representative, or reconstruct every independent normal from scalars.
+
+The finite terminal response germ, its actual field-readout Jacobian
+and the declared calibration/source units determine430. Thus the owned
+empirical-factorization theorem can be applied to this joint tuple as
+well as to7av's alternative future tests. Neither representation
+licenses new variations in original X_N. Under7aw's original effective
+input conditions the updated errors can meet the same regularized
+PASS tolerance; that protocol is not a new stationarity axiom.
+
+### New bounded exact controls
+
+The rational fixture below checks the full64-column middle/effects
+for two simultaneous meters, the genuine geometry source, a free
+control-mixing meter calibration and the coupled return-source identity.
+It also checks why actual copy/dephasing and SIGN orientation cannot
+be ignored. The two-dimensional target planes are a small algebraic
+fixture for the SO compiler targets, NOT newly synthesized native
+meters or a simulation of the complete GR execution. The general
+three-target/unused-column statement is the analytic construction424.
+No old root, query,128, READY, heat or Lean replay is performed.
+
+```python
+import sys,sympy as S
+rat=S.Rational;I2=S.eye(2);I8=S.eye(8);J=S.Matrix([[0,-1],[1,0]])
+def rot(t):return S.Matrix([[1-t*t,-2*t],[2*t,1-t*t]])/(1+t*t)
+v0=S.Matrix([[-rat(4,5),-rat(3,5)],[rat(3,5),-rat(4,5)]])
+u1,u2=rat(1,20),rat(1,30);vs=[rot(u1),rot(u2)]
+eps=[1-v[0,0] for v in vs];ell=[e*(2-e) for e in eps]
+d=1-v0[0,0]
+Theta=S.diag(*[(i>>2)&1 for i in range(8)])
+P=[S.diag(*[(i>>1)&1 for i in range(8)]),S.diag(*[i&1 for i in range(8)])]
+def blocks(use_first=True):
+    return [S.kronecker_product(v0 if ((i>>2)&1) else I2,
+        vs[0] if use_first and ((i>>1)&1) else I2,vs[1] if (i&1) else I2)
+        for i in range(8)]
+bs=blocks();assert all(b.T*b==I8 and b.det()==1 for b in bs)
+M=S.diag(*bs);zero=S.zeros(8,1);zero[0]=1;i0=S.kronecker_product(I8,zero)
+K0=I8-d*Theta;D=(I8-eps[0]*P[0])*(I8-eps[1]*P[1])
+C=i0.T*M*i0;assert C==K0*D
+for a,bit in enumerate([1,0]):
+    Pi=S.diag(*[(i>>bit)&1 for i in range(64)])
+    assert i0.T*M.T*Pi*M*i0==ell[a]*P[a]
+assert all(abs(x)<=sum(eps) for x in (C-K0).diagonal())
+source=S.kronecker_product(S.Matrix([[rat(12,13),-rat(5,13)],[rat(5,13),rat(12,13)]]),
+    S.Matrix([[rat(3,5),-rat(4,5)],[rat(4,5),rat(3,5)]]),
+    S.Matrix([[rat(5,13),-rat(12,13)],[rat(12,13),rat(5,13)]]))
+phi=source[:,0];hp=S.kronecker_product(I2,J,I2)*phi
+q=(phi.T*Theta*phi)[0];x=[(phi.T*p*phi)[0] for p in P]
+s=1-d*q;c=(phi.T*C*phi)[0]
+dc=(hp.T*C*phi+phi.T*C*hp)[0];dx=(hp.T*P[0]*phi+phi.T*P[0]*hp)[0]
+assert (hp.T*Theta*phi+phi.T*Theta*hp)[0]==0
+assert c==s*(1-eps[0]*x[0])*(1-eps[1]*x[1]) and c>=rat(1,4)
+assert dc==-s*eps[0]*(1-eps[1]*x[1])*dx and dc!=0
+# A folded raw calibration can mix its OWN control; other pointers are excluded.
+H4=S.kronecker_product(J,S.diag(1,0));H=S.zeros(64)
+for row in range(64):
+    for col in range(64):
+        if (row&(~((1<<4)|(1<<1))))==(col&(~((1<<4)|(1<<1)))):
+            ri=2*((row>>4)&1)+((row>>1)&1);ci=2*((col>>4)&1)+((col>>1)&1)
+            H[row,col]=H4[ri,ci]
+assert H.T==-H and H*S.kronecker_product(P[0],I8)!=S.kronecker_product(P[0],I8)*H
+dC=i0.T*H*M*i0;herm=(dC+dC.T)/2
+XP=S.kronecker_product(I2,S.Matrix([[0,1],[1,0]]),I2)
+assert herm==eps[0]*K0*(I8-eps[1]*P[1])*XP/2
+assert all(v<=4*u1*u1/(1+u1*u1) for v in (herm.T*herm).diagonal())
+dC0=i0.T*H*S.diag(*blocks(False))*i0;assert dC0+dC0.T==S.zeros(8)
+# ONE cumulative determinant, not a sum of separately selected prices.
+z=rat(1,1024);rank=3;c2=rat(3,4);dc2=rat(1,37)
+tau=(c*c2)**2;dt=[2*c*dc,2*c2*dc2];tt=[c*c,c2*c2]
+w=rank*z*tau/(1-z+z*tau)
+direct=-2*rank*z*tau*(dc/c+dc2/c2)/(1-z+z*tau)
+assert direct==-w*sum(v/t for v,t in zip(dt,tt))
+Aplus=(2*d/c)*rat(1,23)+(rat(7,2)/c2)*rat(1,29)
+assert direct/(w*Aplus)==-sum(v/t for v,t in zip(dt,tt))/Aplus
+# Native copy leaves a DIAGONAL ideal effect unchanged, not every compiled effect.
+CX=S.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+zz=S.Matrix([1,0]);inc=S.kronecker_product(I2,zz);X=S.Matrix([[0,1],[1,0]])
+off=I2/2+X/10;diag=S.diag(rat(1,5),rat(1,3))
+assert inc.T*CX.T*S.kronecker_product(diag,I2)*CX*inc==diag
+assert inc.T*CX.T*S.kronecker_product(off,I2)*CX*inc==I2/2 and off!=I2/2
+# The inherited extractor's physical flag1 is MINUS; its decoder keeps that sign.
+bp=(I2+X)/2;bm=(I2-X)/2
+U=bp.row_join(-bm).col_join(bm.row_join(bp));flag1=S.diag(0,0,1,1)
+inj=S.eye(4)[:,:2]
+assert U.T*U==S.eye(4) and inj.T*U.T*flag1*U*inj==(I2-X)/2
+print('PASS full64 meter effects/corner, real detector source, control-mixing calibration, coupled return source, copy and SIGN controls')
+print(sys.version.split()[0],S.__version__)
+```
+
+**Parent substitution.** This OPTIONAL priced extension supplies a
+single-history terminal geometry map and a response realization of
+its complete field source, with all added local apparatus rows and
+backreaction controlled. It strengthens the readout witness for the
+same native GR realization; it is not an extra required detector on
+the already valid7av route. Original physical admission/selection of
+the task/role graph, uncovered normal equations and general refinement
+scope remain. GR_closed=false; positive_gr and raw216 stay open.
+
+
 ## 8. Reproduction
 
 Run from this directory:

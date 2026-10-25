@@ -11233,3 +11233,107 @@ and diff whitespace. Earlier f1332688 retained the successful complete
 structural integration; no registry, assembly contract, source checker
 or mathematical inputs changed in this follow-up. No remote CI or
 physical acceptance is inferred.
+
+### 25 October: paid terminal geometry and a source-equivalent return response
+
+Phase: native realization / joint geometry-readout and full-source
+composition. SAME PR334, constitutive/native-programme-v1;
+inputa7063ecb. Consume7at's matched source/local key lift,7av's native
+future-test/empirical descent and7aw's ORIGINAL regularized solution
+protocol. Exact finite roots are not reintroduced as a universal
+prerequisite. Alternative future tests remain a valid realization;
+an always-on reader is not newly required.
+
+Primary7ax424--430 constructs an OPTIONAL stronger witness: actual
+terminal geometry responses in the SAME paid execution, preserving
+the original Palatini source up to a quantified complete apparatus
+remainder. This supplies a concrete joint readout witness for the
+same native GR interpretation without an unpriced prefix measurement.
+Every added quantum interaction is included in the original H+J.
+
+For each canonical feature use one dedicated exact CX SIGN-copy and
+a new3-bit meter controlled only by that pointer. Never read old
+protected labels. Later old macro addresses exclude all new pointers/
+meters, including routing and spectators. The compiled predicate-
+readonly SO meter approaches a rational near-identity rotation with
+positive ACTUAL ell=1-V00^2; its output probability ell*x reads the
+existing post-extractor moment. The physical plus/minus SIGN convention
+is retained explicitly. The inverse copy is executed; blank restoration
+of that pointer is not assumed. Ideal diagonal q_m is unchanged by
+copying; ACTUAL Q is recomputed and its compiler/dephasing errors kept.
+
+The new corner is exactly
+c=<(I-dTheta)product_a(I-epsilon_a P_a)>, rather than1-dQ.
+All new covectors, true cumulative determinant, a+=2d/c, w+, Gamma+,
+clock and dimension are recomputed. Meter calibration rows are freed
+on their actual local supports, including mixing their own control.
+The full source bound427 contains their sum delta_a L_a and the
+2N_B sum epsilon_a prefix remainder. The original middle bound stays;
+no uncontrolled t L_middle term or old heat baseline is imported.
+
+The actual terminal-geometry Jacobian supplies the old physical key
+lift, with real extractor/ell/chord/inverse errors. Direct cofield
+estimate428 controls the detector remainder at the TRUE
+delta_field*gbar scale, rather than a small residual times an
+uncontrolled lift. The owned polylog compiler permits all new budgets
+simultaneously after the finite base layout is fixed. Source coframes,
+proper links, original CAR matter, PF/quadrature and lambda_minus are
+unchanged. All new wires/stages and every thermal mode remain priced.
+
+The cohort-private all-zero return event has actual probability
+t_j=c_j^2>=1/16. On the genuine field family its measured return
+potential L=-sum log(t_j) satisfies D_field B=w+ D_field L EXACTLY;
+DB/Gamma+=-sum Dt_j/t_j/A+. This is a source-equivalent potential,
+not a newly chosen action or a sum replacing the cumulative determinant.
+Both terminal geometry and terminal source tests survive future private
+cohorts by exact tensor extension. It is response naturality, not raw
+cyclic price-Dirac intertwining, and does not enlarge7au's variation
+domain or assert physical admission of matrix calibration directions.
+
+Write paths: existing primary7ax and this existing brief only.
+Bounded read-only assistants check meter/control source, true gain/
+heat/field norms, physical pointer typing and actual probability
+calibration. No independent execution/task row, claim, lifecycle or
+governance edit. The decisive new calculation tests the simultaneous
+meter corner/effects and a control-mixing calibration, the nonzero
+detector source, coupled logdet/return identity, actual copy dephasing
+and SIGN orientation. The finite rational compiler-target fixture does
+not claim to emit the final native GR word. Reuse old root/query/
+READY/128/heat/Lean evidence.
+
+Original physical admission/selection and additional native normal
+equations remain;7aw's regularized finite PASS is applied with the
+updated source/readout budgets. No GR_closed, positive_gr or raw216
+promotion is inferred from this stronger observation construction.
+
+Checkpoint: final7ax INCLUDING the separator before section8 is17310
+bytes, SHA256
+64dc85ef59c1260455c1be874001f2f457f20f28114adf6719abf698ba3b2a63.
+The extracted Python block excluding its closing newline is3502 bytes,
+SHA256 e6fa51eb17515e40c4497a2b9226805a70e816b3483429d9fdac5a247784699a.
+The integrator ran this exact code once: exit0 / PASS on Python3.9.6
+and SymPy1.14.0. Its64-column target fixture covers the simultaneous
+meter effects/corner, nonzero detector source, control-mixing raw
+calibration, coupled return source, copy dephasing and SIGN controls.
+It is not a synthesized full native GR execution or physical admission.
+
+Source-only price_geometry_bridge, stationary_root_transfer and
+native_source_application reviews ACCEPTED the final proof/code pins. The former requested the now-fixed
+429 order: source/extractor/query precisions and copies first; freeze
+the actual B,N_B and decoder/chord margins; compile meters second;
+only terminal probability/calibration/arithmetic reading accuracy is
+chosen afterward. Calibrated source moments are independent of ell.
+No formula or checked code changed after the calculation. Reviewers
+made no edits and ran no duplicate mathematical calculations.
+
+Preservation PASS: removing only7ax restores the incoming a7063ecb
+primary BYTE EXACT, SHA256
+b230cfbfa67611d6e5d7a5c097208edaee0a69892da68fbe3f31bc29d924deb6;
+the old brief remains a byte-exact prefix. Affected structural checks
+PASS: validate_work, validate_agent_protocol, gr_assembly check and
+validate_repo (889claims,31assumptions,58aliases,183formal_support,
+918lean_closure; warnings0), with scientific_promotion=false and
+unchanged54active/98totalresults,5discharged/22obligations. Whitespace
+check PASS. No remote CI, physical acceptance or status promotion is
+inferred. Original support/role-domain admission and uncovered normals
+remain the next native parent application; no new geometry search.
