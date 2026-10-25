@@ -1,4 +1,5 @@
 import D0.Research.NativeWeightedDiracBoundary
+import D0.Research.NativeWeightedDiracLinearOperator
 import D0.Geometry.A4DMetricStarSignatureBoundary
 import Mathlib.Tactic
 
@@ -439,32 +440,33 @@ theorem spatialNyquist_weightedDirac_block :
     rw [dForward_nyqB_zero, weightedCodiff_nyqB]
     simp
 
-/-! The following adapter uses the actual finite coordinate carrier
-`ArchiveCochainBasis 2` and the existing `toMatrix'` representation. -/
-
-noncomputable def flatLorentzWeightedDiracLinear :
-    ArchiveCochain 2 →ₗ[ℝ] ArchiveCochain 2 :=
-  D0.Geometry.dForwardₗ 2 +
-    (flatLorentzWeightEquiv 2).symm.toLinearMap.comp
-      ((D0.Geometry.hodgeCodifferentialₗ 2).comp
-        (flatLorentzWeightEquiv 2).toLinearMap)
-
-theorem flatLorentzWeightedDiracLinear_apply (ψ : ArchiveCochain 2) :
-    flatLorentzWeightedDiracLinear ψ = weightedDirac 2 (flatLorentzWeightEquiv 2) ψ := rfl
+/-! The application uses the generic typed matrix adapter in the actual finite
+`ArchiveCochainBasis 2` coordinates. -/
 
 noncomputable def flatLorentzWeightedDiracMatrix :
     Matrix (ArchiveCochainBasis 2) (ArchiveCochainBasis 2) ℝ :=
-  LinearMap.toMatrix' flatLorentzWeightedDiracLinear
+  D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix 2
+    (flatLorentzWeightEquiv 2)
 
 theorem spatialNyquist_weightedDirac_matrix_block :
     Matrix.mulVec flatLorentzWeightedDiracMatrix spatialNyquistVacuum = (-8 : ℝ) • spatialNyquistBState ∧
     Matrix.mulVec flatLorentzWeightedDiracMatrix spatialNyquistBState = (8 : ℝ) • spatialNyquistVacuum := by
   have hblock := spatialNyquist_weightedDirac_block
   constructor
-  · simpa only [flatLorentzWeightedDiracMatrix, LinearMap.toMatrix'_mulVec,
-      flatLorentzWeightedDiracLinear_apply] using hblock.1
-  · simpa only [flatLorentzWeightedDiracMatrix, LinearMap.toMatrix'_mulVec,
-      flatLorentzWeightedDiracLinear_apply] using hblock.2
+  · calc
+      Matrix.mulVec flatLorentzWeightedDiracMatrix spatialNyquistVacuum =
+          weightedDirac 2 (flatLorentzWeightEquiv 2) spatialNyquistVacuum := by
+        simpa only [flatLorentzWeightedDiracMatrix] using
+          D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix_mulVec
+            2 (flatLorentzWeightEquiv 2) spatialNyquistVacuum
+      _ = (-8 : ℝ) • spatialNyquistBState := hblock.1
+  · calc
+      Matrix.mulVec flatLorentzWeightedDiracMatrix spatialNyquistBState =
+          weightedDirac 2 (flatLorentzWeightEquiv 2) spatialNyquistBState := by
+        simpa only [flatLorentzWeightedDiracMatrix] using
+          D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix_mulVec
+            2 (flatLorentzWeightEquiv 2) spatialNyquistBState
+      _ = (8 : ℝ) • spatialNyquistVacuum := hblock.2
 
 /-- The actual L=4 flat-Lorentz CAR/Hodge matrix cannot be self-adjoint for
 any positive-definite bilinear pairing on the full cochain carrier. This is

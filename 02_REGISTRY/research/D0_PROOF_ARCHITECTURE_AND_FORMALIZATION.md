@@ -4161,3 +4161,74 @@ view checks. The generated `D0.All` file retained its repository-standard
 CRLF line endings; the EOL-aware diff check passed. This is a supporting
 mathematical result, not independent source acceptance or physical GR
 selection. The PR remains Draft and the execution remains in progress.
+
+### Reusable typed matrix interface for the weighted Hodge--Dirac operator (25 October 2026)
+
+The new support module
+`D0.Research.NativeWeightedDiracLinearOperator` provides one reusable API
+between the function-level weighted operator and the finite cochain matrix.
+`weightedCodiffLinear` conjugates the owned `hodgeCodifferentialₗ` by the
+caller-supplied equivalence `W`; `weightedDiracLinear` adds the owned
+`dForwardₗ`; and `weightedDiracMatrix` uses `LinearMap.toMatrix'` in the
+unchanged `ArchiveCochainBasis` coordinates. The theorem
+`weightedDiracMatrix_mulVec` proves that multiplying this matrix by any
+cochain vector is exactly `weightedDirac N W ψ`. Thus later applications reuse
+the same typed transport instead of rebuilding a bespoke matrix wrapper.
+
+The L=4 flat-Lorentz Nyquist adapter now consumes this generic matrix API and
+still proves the same two exact vacuum/B-singleton action equations and the
+conditional full-carrier positive-form/self-adjointness obstruction. The
+generic API carries only `Classical.choice`, `Quot.sound`, and `propext`; the
+specific CAR application retains the five existing `native_decide` leaves
+listed in the prior checkpoint. Neither module selects a positive `W`, a
+physical pairing, or a native action.
+
+Both focused Lean targets pass: `D0.Research.NativeWeightedDiracLinearOperator`
+(2,998 Lake jobs) and `D0.Research.NativeWeightedDiracNyquistApplication`
+(3,006 Lake jobs). After removing the redundant application-local linear-map
+wrapper, the paired-module declaration inventory compiled the public import
+`D0.All` and records 87 declarations (73 theorems, 14 definitions; 58
+source-ranged, 29 generated/range-less). Its exact snapshot is
+`51a1c3162fa3dd625c7513e33939bf03e023af0a` with `worktree_dirty=true`;
+Lean source digest is
+`825bf290d3252802ae9605772cfe8cee00acd7fff0ed25fc05954d2a0cae4305`, paired
+inventory SHA-256 is
+`acb4b9baa771ac53e347495aa7acb5c80f7754812f98b62a22e176e0a56a3f8c`, module
+collector SHA-256 is
+`424ca2786503d04e4f7bbf9e02cc722fea312ac7a3eb5dc7340a38a077a42478`, and
+the two Lean source SHA-256 values are
+`d3d36f1994dce386d192984f16ba6c14feeb021ff3097370aa7030c806736fb0` and
+`dd09c1f72e436b77c303abd75c4bd839b77ad8dcbfe94886b37c027ba9b6c732`. The
+inventory is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_linear_matrix_adapter_inventory_2026-10-25.json`.
+
+The compiled all-result crosswalk and all-claims name-resolution snapshot
+were regenerated from that same public-import source digest and pre-commit
+snapshot. The crosswalk contains 54 results and 191 evidence records: 182
+verified source pins, eight unavailable blobs, and one pinned hash mismatch.
+It shows 22 exact section references and 140 ranked heading candidates across
+35 results; 37 result rows still have incomplete section mapping. All 54
+semantic relations remain unresolved and `acceptance_inferred=false`. The
+compiled view enumerates 1,001 co-located declarations, ten explicit
+declaration locators, 18 claim-locator candidates, and nine formal-support
+candidates; these are review inputs, not accepted edges. The refreshed file
+is `02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json`,
+SHA-256 `b5bb87576d899d48cb0c3f063432084010cc3efbf632409ff8ea7b0a92a4b8e4`;
+its collectors are `5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1`
+and `e936c031368d608029317bb6e746954ad507a986885b9a29a9a4e8c54d711bdc`.
+
+The resolution-only view records the same Lean source digest, claims registry
+SHA-256 `e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5`,
+and 889 claim rows. It expands 2,751 theorem-locator mappings and 8,458
+candidate references to 8,323 unique names; 2,512 resolve and 5,811 do not.
+At the mapping level 2,553 have at least one match, including four ambiguous
+mappings; 176 have no candidate name and 22 have candidates but no match. A
+total of 709 claim rows have at least one match and 180 have none. These are
+exact current-name availability counts, not semantic coverage or C0
+acceptance. The file is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json`,
+SHA-256 `fc3701d1ab339e009d57aaf74603c0127448f0ef219d3c63e93b78960916bc35`,
+collector SHA-256
+`dd33d4ab45852eb1d2aef0311f00db6249832d41f9957a50e29b5e3e51f953a8`.
+Both refreshed views remain provenance and locator evidence only; C0 stays
+unfrozen and independent semantic acceptance remains outstanding.

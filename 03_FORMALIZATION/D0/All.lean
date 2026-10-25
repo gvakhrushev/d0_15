@@ -640,6 +640,7 @@ import D0.Research.GoldenCylinderOneStepBridge
 import D0.Research.MemoryTangentSpan
 import D0.Research.NativeHistoryActionResponse
 import D0.Research.NativeWeightedDiracBoundary
+import D0.Research.NativeWeightedDiracLinearOperator
 import D0.Research.NativeWeightedDiracMomentIdentities
 import D0.Research.NativeWeightedDiracNyquistApplication
 import D0.Research.PrimitiveJetComposition

@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "c5f430df76975f9aae7d3aa48eaa9896601fd5ac",
+  "snapshot_commit": "51a1c3162fa3dd625c7513e33939bf03e023af0a",
   "worktree_dirty": true,
-  "claim_registry_sha256": "e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718",
-  "lean_source_digest": "c367897a077f251765b6a11ca60dd30098ea1b6c4bfe3b1dec34c213ffd5dd08",
-  "collector_sha256": "3750d31d4ea3e3c94ea72ef8ed247d3c06d372f687007c8abd637391bf220a11",
+  "claim_registry_sha256": "e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5",
+  "lean_source_digest": "825bf290d3252802ae9605772cfe8cee00acd7fff0ed25fc05954d2a0cae4305",
+  "collector_sha256": "dd33d4ab45852eb1d2aef0311f00db6249832d41f9957a50e29b5e3e51f953a8",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": true,
@@ -23217,6 +23217,16 @@
           "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_positive_profile_application",
           "D0.Geometry.cubicalWeightedHodgeDirac_positive_profile_application",
           "D0.cubicalWeightedHodgeDirac_positive_profile_application"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+        "module_locator": "D0.Geometry.ArchiveWeightedHodgeDirac",
+        "theorem_atom": "cubicalWeightedHodgeDirac_standard_representative_application",
+        "candidate_names": [
+          "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_standard_representative_application",
+          "D0.Geometry.cubicalWeightedHodgeDirac_standard_representative_application",
+          "D0.cubicalWeightedHodgeDirac_standard_representative_application"
         ]
       },
       {
@@ -63558,6 +63568,22 @@
     {
       "exists": false,
       "name": "D0.cubicalWeightedHodgeDirac_positive_profile_application",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_standard_representative_application",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+      "name": "D0.Geometry.cubicalWeightedHodgeDirac_standard_representative_application",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.cubicalWeightedHodgeDirac_standard_representative_application",
       "source_path": null
     },
     {
