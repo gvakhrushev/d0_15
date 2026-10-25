@@ -7405,3 +7405,41 @@ The source section keys remain candidate locators pending review; the claim
 locator and semantic relation remain unresolved, and `acceptance_inferred=false`.
 This is a compiled formalization of finite quotient-coordinate completeness,
 not independent C0 acceptance, physical action selection, or GR closure.
+
+### Exact dressed-link metric compatibility (26 October 2026)
+
+The source's next finite equation, §1.2 of the same pinned nonlinear J²
+bridge, is now formalized on the existing raw-solder carrier. For
+`K = Θ_x L Θ_y⁻¹`, `Q_x = Θ_x η Θ_xᵀ`, and `Q_y = Θ_y η Θ_yᵀ`,
+`a4dDressedLink_metric_compatible` proves
+`K Q_y Kᵀ = Q_x` whenever `L` satisfies `IsRoleLorentz` and `Θ_y` is
+invertible. No invertibility premise at `x` is needed for this one-edge
+identity. `a4dDressedLinkField_metric_compatible` transports it to the finite
+site/link field and its existing `a4dSiteGram` readout; its determinant
+premise is only at the destination site. The implication is one-way from the
+Lorentz-link premise: this theorem does not infer the group property from
+metric compatibility or constrain the link carrier by itself.
+
+The exact Lean source is pinned at
+`c8a2a5b5f919dfaaddf6d4052f97b6aba537587c`, SHA-256
+`af4758a6e9f3979275912ba1eda3202cfff60086801e6326d60334ebdc8fb434`.
+The targeted `D0.Geometry.A4DStarFiniteLorentzQuotient` build passed
+**3,215/3,215** jobs. The fresh compiled `D0.All` crosswalk resolves **28/28**
+explicit declaration names, including all five declarations in the current
+quotient module. Its artifact is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_c8a2a5b5.json`,
+SHA-256 `fa40543f2ce189e57132515330ac901249cf779a4ed6dd37952fefb6643db21d`.
+The snapshot is `c8a2a5b5f919dfaaddf6d4052f97b6aba537587c` with
+`worktree_dirty=true`, Lean-source digest
+`7074e944b50cf71e632b4bb56a0f9a976d9409f61dfa38ed7aa8e245d78b376d`, and
+`applications.json` SHA-256
+`4165aef44623cbf61eabad3976ad44dd5262064aefed56c0d78c0c963ccbc7b9`.
+The new declarations report `Classical.choice`, `Quot.sound`, and `propext`.
+
+The source describes proper local-Lorentz links, while `IsRoleLorentz` still
+states the full `O(1,3)` isometry equation; the current theorem therefore
+retains that wider matrix predicate and does not encode orientation or
+time-orientation components. The selected-action-to-Lean-carrier map,
+semantic source relation, claim locator, and independent C0 acceptance remain
+open (`acceptance_inferred=false`). This exact finite endpoint identity adds
+no physical metric/source selection or GR closure.
