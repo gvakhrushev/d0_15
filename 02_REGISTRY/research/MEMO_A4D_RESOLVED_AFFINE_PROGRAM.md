@@ -37,6 +37,23 @@ The same Book J is \(\log\sum_n\zeta^n\operatorname{Tr}(\mathrm{Sym}^nF)\), with
 
 No original Book/action/claims/selection statuses changed; `GR_closed=false`.
 
+## 25 October — original CAR16 self-calibration is now GLOBAL and MINIMAL on the SIGNED native boost chart
+
+[Exact theorem with analytic signed inverse, no-gap stationary polynomial and original full128 sample/source replay](A4D_ORIGINAL_CAR16_TWO_CONTEXT_GLOBAL_SIGNED_BOOST_INVERSE_AND_STATIONARY_POLYNOMIAL_2026_10_25.md) strengthens the OWNED original CAR2 two-probability theorem without inventing a new detector or field/action. The same existing native fine label \(K_1\) is read on exactly TWO **internally canonical physical DATA preparations**: (i) unique full128 no-reset stationary \(\rho_*\), (ii) unique CAR4 annihilation vacuum \(|0\rangle\). Both preparations must be ACTUALLY paid when performed. On the entire signed original chart \(-1/9\le r\le1/9\), \(0<\nu\le3/5\), with original Julia phases,
+\[
+q_{\rm stat}=\frac{p^3\nu^4B(r)}{4096(1-r^2)^2},\quad
+q_{\rm vac}=\frac{p^3\nu^4(27r^2-50r+25)}{4096(1-r)^2}.
+\]
+Their ratio \(q_{\rm vac}/q_{\rm stat}=(1+r)^2(27r^2-50r+25)/B(r)\) has a strict derivative \(>12800/59049\) on the WHOLE signed chart. Hence the ratio determines sign and \(r\) GLOBALLY, including \(r=0\) (ratio 1), and \(q_{\rm stat}\) determines \(\nu\) with the original positive root. This upgrades old LOCAL positive-boost identifiability to a uniform signed inverse. The actual two-component Jacobian remains \(-125p^6\nu^7/2^{21}\ne0\) at zero boost, where previous two-one-preparation q0/q1 inverse was singular.
+
+The prepared stationary DATA is itself an EXACT quadratic CAR polynomial,
+\[
+\rho_*=(sI-\Delta)/(8s),\quad \Delta^2-s\Delta+tI=0,
+\]
+so its real moving native source is available without an inverse eigenbasis or a gap. The genuine first Book \(J_{\rm pre}\) and its source descend from the same TWO moving K1 Born jets, globally on this chart; no extra filled-Slater self-audit hardware is needed for this specific scalar/source readout. In the class of **continuous scalar** observation statistics on an open real two-parameter domain, TWO is also SHARPLY MINIMAL (antipodal-circle IVT proof); these two chosen preparations are canonical because original CAR vacuum and original mixed fixed state are separately unique.
+
+**Keep the scientific firewall:** the full ORIGINAL future-observable algebra is still \(M_8\oplus M_8\), with all128 quantum labels and oldRIGHT retained. Two different actual prepared contexts are two *PAID alternative experiments*, not one free simultaneous input or a single new compulsory physical task. The result does not reconstruct all42 coframe/link/material fields, identify original complete Book action/cut/clock with the scalar Jpre, or derive M1's compulsory GR dynamics. This narrows actual original Born/source readout, but physical self-selection/whole Price−Info, apparatus controls and refinement remain load-bearing. `GR_closed=false`.
+
 ## 25 October — a finite D_min → Euler *binary fork* on the already paid #334 native source
 
 [Exact three-paid-native-word theorem and 461 rational hostile controls](A4D_DMIN_THREE_PAID_WORDS_TO_EULER_FORK_2026_10_25.md) change the final physical proof search. Consume the EXISTING original-native *common-clock* actual 0,+,− finite-word comparisons of the main source owner §7ay (431)–(435). No new continuum programme variations, action, geometry detector, clock or history are introduced.
