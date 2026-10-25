@@ -10346,3 +10346,85 @@ controller obligations are recorded in
 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/INTEGRATION_REVIEW.md.
 No physical price, independentvariation or GR status promoted.
 GR_closed=false.
+
+### 25 October: close the internal request source and compose the joint task graph
+
+Phase: native realization / final composition. SAME PR334 and existing
+constitutive/native-programme-v1 owner; input95b3d38a684e0508ad47f75ce7885085b75e2c15.
+Named parent:7ai314 leaves independent decoder/request/preparation and
+implementation equations;7al336-337 supplies the original finite operator
+stationarity law but not a complete stationary domain. Consume NR5's actual
+read-only native request compiler, the exact constant primary report RC2/RC4,
+7ai's full entangled-bank score, and TM17-18/7s182-184 full-effect fidelity.
+The changed input is ONE internally G-born coherent request from blank0,
+with two actual source branches on the owned exact primary family and
+the SAME fixed processor/collar data. Coincident targets give an explicit
+valid construction; distinct same-boundary primary roots are not asserted. Its price
+is evaluated before any branch conditioning. Apply the full bank variance
+identity, retaining all key/bank entanglement and every old contribution.
+
+Proved scoped parent substitution: remove a supplied sharp request value from this
+finite configured process and prove normalized joint source convergence on
+its COMPLETE supplied-task graph of arbitrary source preparations and all
+response-preserving encoders. Do not constrain source preparations to the
+canonical field section. Keep the real whole-state norm, actual cumulative
+Gamma, marked conditional readout and all-column protected factorization.
+The physical premise that this supplied unnormalized query/fixed clock/middle/
+cut is the actual Book X_N task is retained, as are any extra selected source
+and the transport to an unweighted paired-Dirac norm. Different externally
+stored programme labels do not share the same COMPLETE initial state.
+
+Write paths: primary7an and this existing brief only. Read-only same-owner
+assistants check the generated request/whole price and the full normal source.
+No independent task, new selector, spectral scan, geometry root or Lean module.
+Smallest decisive checks: exact two-branch variance decomposition; feedback
+on a coherent key is j(sum w q), not sum w j(q); common q0 removes key normals
+while each branch keeps all42 field rows; exact effect fidelity removes every
+implementation tangent; approximate source errors retain their actual norm.
+Then replay only affected structural gates. Physical GR remains open.
+
+Joint supplied-task checkpoint: primary7an15499UTF-8bytes/SHA256
+2ab0697835ea2ca51a8d964ae78ca27fe34370024d6229eebc0eb2ab78914b7d.
+Equations347-351 supply the actual internal request, true whole price,
+compressed key effect and full-key/bank variance;352-354 compose exact
+implementation neutrality with arbitrary entangled preparation sources.
+The complete general source price352a uses the expectation of the product
+kernel, not the product of expectations away from its product base.
+The initial key is blank physically but FREE in the logical READY interface:
+protected rank is unchanged and its complete thermal columns remain paid.
+
+Exact SymPy1.12.1 check: variance equals mean conditional variance plus
+variance of branch means; unequal means retain w(1-w)(q0-q1)^2; equal
+means cancel exactly; p+p^2=1; full price curvature is
+2*r*c^2*z*(z*(1-c*q)^2-(1-z))/(1-z+z*(1-c*q)^2)^2, ruling out averaging
+branch prices; joint product-score variance retains its cross term v0*v1.
+The proof itself records the actual state-error bound2Var+2eta^2 and the
+old full-score/cofinal theorem application. No old nativecompiler,128,
+Cartan, critical-overlap, sourcefork or Lean replay was required.
+
+Both independent read-only reviewers accepted the exact final primary
+slice after correction of the common-processor frozen-collar condition.
+Actual vs ideal decoder, coherent vs sealed record, arbitrary entangled
+source vs product base, and weighted source norm vs full Dirac norm remain
+explicit. Complete-initial-controller semantics of the earlier externally
+supplied forks is clarified; they are not retroactively reidentified with
+this new coherent process. The original X_N query/admission, extra-source
+and true norm/refinement applications remain open. No lifecycle or physical
+GR acceptance change is made.
+
+Concurrent integration parentbe53b7a7 preserves the entire published Golden
+code-completion section7am and its packet. Our previously reviewed7am
+14427bytes/a5eb1b1b669a2007b169ea36dd27ea011fe799924009bfa162df4dba6324db99
+is renumbered7an347-354 and gains an explicit compatibility paragraph:
+retained post-process code and unsealed internal echo request have different
+return operators/controller rows. No controlled-G clean-gate claim is made.
+The previously published global-source7al and all concurrent sources are
+preserved byte-for-byte. Symbolic and structural checks are retained at
+that unchanged scientific input scope; final assembly is checked separately.
+
+Final integration checks on parentbe53b7a7 plus this slice: work validator,
+agent-protocol validator, gravity assembly check and repository validator
+all PASS (repository warnings0); git diff --check clean. Removing7an
+restores the complete published primary byte-for-byte, and removing the
+new brief tail restores the published brief. The7am-to7an renumber is
+exactly reversible after removing its explicit compatibility paragraph.

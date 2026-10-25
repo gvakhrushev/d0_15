@@ -9367,6 +9367,294 @@ and the stronger native GR realization/refinement remain. The direct
 Book route requires no second Info term. GR_closed=false.
 
 
+## 7an. Internally born requests and the complete supplied-task source graph
+
+25 October2026, SAME PR334/constitutive owner, input95b3d38a. The parent
+is7al's remaining joint-stationary application: a field source does not
+settle the genuinely independent source/controller/implementation rows.
+The change here is ONE actually generated coherent request, followed by
+the full bank norm and the complete response-preserving implementation
+fibre. Source preparations are NOT restricted to a chosen field section
+when estimating the joint source. The original physical query/domain
+selection remains a distinct application.
+
+### Generate the request inside the same closed execution
+
+Use [NR5](sources/d0_native_cofinal_reflected_source_2026-10-25/NATIVE_REQUEST.md)
+on a COMMON finite source support, with two computable real orthogonal
+source targets S_0,S_1, their unused columns and actual source work.
+Its literal native decoder is exactly request-read-only:
+
+    D_req,eta=sum_(k=0,1) |k><k| tensor Shat_k,
+    ||Shat_k-S_k||<=eta.
+
+Each block is a genuine unitary; its full-column approximation error
+relative to the target is at most eta. The maximum, not the sum of the
+two block errors, bounds the controlled operator error. Tensor the
+owned unused ACTIVE bit if needed for determinant+1. All native integer
+search output lengths, addressed and unaddressed blocks, work, helper
+routing and inverses count. This does not supply a free interpreter.
+
+On a fresh ACTUAL blank request bit apply the original native G, whose
+first column is (sqrt(p),p), p+p²=1, and then execute D_req. The ideal
+source target and its actual unconditional approximation are
+
+    Psi_j=sqrt(p)|0> tensor xi(Y_j0)^n_j
+                       +p|1> tensor xi(Y_j1)^n_j,
+    ||Psitilde_j-Psi_j||<=eta_j.                       (347)
+
+The zero source ancillas are included in both states. This is one
+fixed finite programme from one complete initial blank state, with an
+internally generated request; there is no externally supplied sharp
+choice between its branches. The source compiler is still the supplied
+finite native word. Neither M1-compulsory choice of this word nor the
+physical preparation of arbitrary dirty apparatus follows.
+
+Use the SAME report P_j=P_(h_j,n_j), raw ALL-READY processor and middle
+on both branches. The logical report ignores the request, so its effect
+is E_j=I_request tensor P_j, with identity on ignored source work. The
+request is a FREE logical input of READY and its amplifier, never a
+key0 factory condition. Its ACTUAL physical initial cut remains blank0:
+the protected rank r is unchanged, while the full thermal carrier
+includes both request columns. Place
+the complete request generator V_j=D_req,eta(G tensor I) and its true inverse
+inside the known-port echo of7ai. Its return scalar and price depend on
+
+    Q_j=<Psitilde_j,E_j Psitilde_j>
+        =p q_j0+p² q_j1,
+    s_j=1-d_j gamma_j Q_j,  t_j=s_j²,
+    B_M=H_M-r log(1-zeta+zeta product_j t_j).           (348)
+
+The weights are EXACT because the actual decoder is request-read-only.
+The original full heat H_M includes every key column and actual clock
+stage, and is constant under source conjugacy at that fixed template.
+It is neither a selected-branch price nor a weighted average of branch
+prices. Even for one cohort, j(p q_0+p² q_1) generally differs from
+p j(q_0)+p² j(q_1). Do not substitute either conditional cost into(348).
+
+**Complete-initial-state clarification.** The finite forks in7ah/7al
+share the stated quantum blanks and layout. If their different programme
+labels are physically stored, the complete initial controller states
+differ. If the chronological word is supplied as the law, they are
+comparisons of different supplied laws. Those forks were not thereby
+proved to be branches of one fixed closed controller. Construction(347)
+now supplies an actual coherent two-branch execution, with the different
+price(348); it does not turn the old fork cofield into its Euler source.
+
+The request is coherent ACTIVE memory inside the echo. Its inverse may
+uncompute that fresh memory. It is not an already sealed classical
+choice or an oldRIGHT record. Copying/reading/sealing the request and
+retaining that record changes the word/cut and must use the actual full
+record price;7ak's record construction is not inserted for free. OldRIGHT
+remains protected throughout. No extra primitive history comparison is
+introduced: the internal branch correlation is made by G and D_req,eta.
+
+### Apply the exact family before differentiating the full source
+
+Choose both Y_jk on the OWNED exact primary nonvacuum family, with the
+same h, source conventions and ALL data of the fixed P_j processor,
+including its frozen collar coefficients (GEOMETRIC_MAP GM14). Both
+points must belong to that common-processor fibre. Coincident targets
+already give the stated internal-key construction; existence of two
+distinct primary solutions at arbitrary fixed boundary is not claimed.
+RC2/RC4 and7af281 give q_h(Y_jk)=q0 and Dq_h(Y_jk)=0 on ALL16+24+2
+independent field directions. This is not merely constancy on a
+one-parameter solution ansatz. Write D_req,0=sum_k |k><k| tensor S_k for the ideal target. On its
+prepared-bank interface,
+
+    i_B^dagger D_req,0^dagger E_j D_req,0 i_B
+               =diag(q_h(Y_j0),q_h(Y_j1))=q0 I_key.    (349)
+
+Here i_B initializes the source bank, leaving the request free. Thus
+EVERY key-only preparer, including its key-only purifiers and scratch,
+has exactly zero report/Book first source. Independent branch field
+variations also give zero at those ideal primary points. A different
+branch with a different q would have a genuine key source. No equality
+of full branch histories or all future observations is asserted.
+
+Equation(349) does NOT kill arbitrary key--bank preparation normals.
+For arbitrary normalized branch states psi_k and key weights w_k, the
+exact retained identity is
+
+    Var_Psi(I_key tensor P)
+       =sum_k w_k Var_psi_k(P)
+                         +sum_k w_k(q_k-Q)²,
+    Q=sum_k w_k q_k.                                 (350)
+
+Orthogonal internal key states remove the cross terms; the second term
+is retained unless the means actually agree. At our ideal primary
+points it is zero. Apply the already proved critical one-slot/overlap
+bound separately in each branch and take the larger finite constant:
+
+    Var_Psi_j(E_j)<=C_h k_h^4/n_j²,
+    |Q_j-q0|<=2eta_j,
+    Var_Psitilde_j(E_j)<=2 C_h k_h^4/n_j²+2eta_j².     (351)
+
+For the last bound use Var_x(E)=min_c||(E-cI)x||², c=q0,
+||E-q0I||<=1 and(347). It is a WHOLE-state estimate, including native
+source work/purifiers; a conditional factory fidelity is insufficient.
+This applies the old critical theorem rather than claiming an IID
+coherent request or proving another overlap census. The actual
+finite native source points need not be exact critical states.
+
+The marked moment decoder still reads the REAL source. At the marked
+post-decoder prefix, conditioning its represented moment on key k uses
+the actual projector |k><k| and probability w_k in{p,p²}. Moment errors
+are bounded by2eta_j/min(w_k), followed by the original inverse-map
+norm. This is the existing observable interface, not a free additional
+measurement inserted in(348). Distinct branch fields give two
+conditional geometries; their unconditional mixture is not declared a
+Lorentz metric. For one common classical readout choose the two exact
+primary families with Y_h0,Y_h1 converging to the SAME regular curved
+metric/material limit within the common-processor fibre; choosing both
+branches equal to the owned representative is an explicit such choice.
+Retain the actual collar, extension and decoder constants. Different
+collars require a new request-controlled report and its full source;
+vanishing differences of collar values do not justify using this P_j.
+
+### The implementation equations and the source equations compose
+
+For each supplied logical query require its ACTUAL UNNORMALIZED full-
+input effects, on every bank/key input including correlated inputs:
+
+    e_READY=gamma_j I,
+    e_READY,report=gamma_j E_j,
+    e_READY,other=gamma_j(I-E_j),
+    e_fail=(1-gamma_j)I.                              (352)
+
+This is TM17-18/7s182-184 applied to the present controller, including
+any other separately required records. It is a supplied correctness
+predicate, not an Einstein equation or a claim that all physical
+apparatus changes must preserve this predicate. Hold fixed its actual
+middle, clock, cut and protected all-column endpoint factorization.
+All phase/failure/unused columns remain in the carrier. The all-input
+known-port kernel is then EXACTLY I-d_j gamma_j E_j, independently of
+HOW the encoder realizes(352). Each full endpoint is conjugate to its
+fixed middle; completed private endpoints preserve the shared factors.
+Consequently the COMPLETE heat(312) and whole-source feedback(352a)
+are independent of every such implementation coordinate, for arbitrary
+source states; at the product base the latter is exactly(348).
+
+This includes all differentiable tangents of the fidelity fibre, not
+only the few literal garbage words used as examples in7s. In the real
+private finite-operator representation its regular part can also be
+parametrized directly: for forward isometry V=A i_aux and the three
+orthogonal outcomes, V_k=Pi_k V satisfies V_k^T V_k=e_k, hence
+V_k=J_k sqrt(e_k), J_k^T J_k=I on the support of e_k. Complete the
+isometry by all orthogonal full columns. Fixed-rank strata suffice; no
+strict spectral collar is inferred from the mean q. Real private
+completions are tensored with identity on the protected factors; this
+parametrization grants no arbitrary spin/quaternion native gate. A
+native word in the fibre and a smooth finite-matrix tangent in its
+representation retain their different operational types.
+
+Let X_task be this complete fixed-template fidelity/causal graph,
+with arbitrary normalized whole source state Psi and these encoder
+implementations. Generated intermediate states, cuts and reverse
+stages obey the original causal equations, including
+
+    W_(t+1)=g_t W_t,
+    rho_t=W_t rho_in W_t^dagger,
+    P_t=W_t P_in W_t^dagger,
+    delta(g_t^dagger)=-g_t^dagger(delta g_t)g_t^dagger.
+
+The original Book-I derived-holonomy rule and paid-writer10.5 eliminate
+these dependent rows with the full reaction retained. They do not
+remove any genuinely free source/controller coordinate. On this graph
+B is EXACTLY a function of Psi through the fixed effects E_j:
+
+    K_total=tensor_j(I-d_j gamma_j E_j),
+    B(Psi,A)=H_M-r log[1-zeta+zeta<Psi,K_total Psi>²].  (352a)
+
+This holds for arbitrary whole entangled Psi; the product formula(348)
+is its value at the product-of-cohorts base only. Its implementation
+differential is zero. In particular we have NOT
+imposed Psi=Psi(Y), product preparations, fixed correlations or a
+chosen source eigenvector as constraints on X_task.
+
+At the actual product-of-cohorts base, each cohort may contain all the
+key--bank entanglement of(347). For EVERY whole joint preparation
+tangent, including old/new and cross-cohort entangling ones, the
+existing exact score formula now reads
+
+    R_j=(I-d_j gamma_j E_j)/s_j
+         =I-(a_j/2)(E_j-Q_j I),
+    a_j=2d_j gamma_j/s_j,
+    v_j=(a_j²/4)Var_Psitilde_j(E_j),
+    w_M=r zeta product_j t_j/(1-zeta+zeta product_j t_j),
+    ||D_Psi B_M||=4w_M sqrt[product_j(1+v_j)-1],
+    Gamma_M=w_M sum_j a_j gbar_hj.                   (353)
+
+There is no new discarded controller covector: request/source-work
+normals are inside this sphere cotangent, and all remaining graph
+implementation normals are zero by(352). Readiness-changing directions
+are outside this fibre and keep their genuine source. Fixing only the
+conditional report would not prove this result.
+
+Use7ag--7ai's SAME slow cofinal envelope with the maxima of the two
+branch constants and their actual conditional decoder/source lifts.
+The two fixed positive weights add only a fixed readout factor; the
+key is one extra physical source register per cohort. The owned
+n_j=ceil(k_hj² j^(3/4)), summable whole-state eta_j errors and actual
+K_ind source-lift norm therefore give
+
+    ||D(B_M|X_task)||_source/Gamma_M
+       :=K_ind,M ||D_Psi B_M||/Gamma_M
+                            =O(M^(-3/32)) ->0.       (354)
+
+Here the source test norm means ||delta Psi||<=K_ind,M; implementation
+tangents may be arbitrary within the exact fibre because their source
+is identically zero. Add the finite branch/key lift constants to the
+slow envelope BEFORE choosing the mesh schedule. The proof is exactly
+(351) substituted into(313)-(314), with the same true cumulative gain.
+It includes every finite old residual and keeps the whole trace/price.
+The absolute Gamma may decay exponentially; raw smallness is not the
+claim. No noncritical/off-shell variance rate is imported into(354).
+
+This norm is not silently the unweighted operator norm of7al336.
+Extracting a source prefix of ell actual stages from that Dirac has
+||delta S||<=sqrt(2)ell||delta Dirac||. Transporting(354) to that norm
+needs the actual ratio sqrt(2)ell/K_ind and its convergence budget.
+The potentially large literal compiler clock is already paid in H_M,
+but paying it does not prove this norm ratio harmless. Additional
+selected action terms likewise keep their true source/Gamma budget.
+
+### Compatibility with the concurrently published Golden code completion
+
+Section7am (remote inputbe53b7a7) inserts an actual coin/code AFTER the
+old process and retains that new output. Its new blank return is
+sqrt(p) C_old and its independent coin row is nonzero by7am346 even
+at the code-Gibbs point. Here the generated request and exact inverse
+are INSIDE the complete source echo, before the same fixed middle,
+and the request has not become a sealed code record. Equality of the
+compressed query means, not Golden code entropy neutrality, gives349.
+Thus this construction does not cancel or contradict7am's real new
+coin/controller source. Appending that completion to this process
+would require its NEW gain/heat and the retained extra row. Likewise
+NR5 approximates controlled source targets; it does not assert the
+exact CLEAN controlled-G excluded by7am338-339. The common all-input
+query(352) is the separate supplied-task premise that still needs its
+original physical application. Both results are preserved at their
+actual carriers and boundary conditions.
+
+**Parent substitution.** A supplied sharp key has been replaced by an
+actual internal Golden request in one closed finite programme; its
+correct whole price is(348). The exact primary family makes its key-only
+source vanish and permits the old ALL-preparation estimate to include
+its full coherent controller. Complete supplied-query implementation
+equations now compose with that estimate on X_task, without freezing
+the source or throwing away entangled normals. This is joint normalized
+asymptotic stationarity on the stated task graph, not merely42 field
+rows or an implementation minimum. It is not an exact finite all-Euler
+root, a physical theorem selecting(352), an unweighted Dirac bound or
+an identification of X_task with original Book03 X_N. The remaining
+physical application is the actual self-reading query/cut and admitted
+control graph of that same action, with any extra stack terms and the
+required refinement norm. The global off-shell consumer7al and exact
+primary GR recovery remain available at their own distinct hypotheses.
+No physical GR_closed, positive_gr or raw216 claim is promoted.
+
+
 ## 8. Reproduction
 
 Run from this directory:
