@@ -7091,3 +7091,51 @@ zero warnings, generated Lean views have zero stale entries, and formalization
 debt remains five findings against baseline five. This strengthens only the
 finite algebraic theorem and its explicit application scope; it changes no
 physical selector, claim status or GR conclusion.
+
+### Strong covariance theorem is consumed by tensor reconstruction
+
+`stage3_tensor_exactness` now calls
+`stage2_flavor_blindness_of_commute` directly to transport the diagonal block
+from its anchor generation. Its public theorem still carries the original
+off-generation-zero premise because `stage1_tensor_exactness` separately uses
+that fact to reconstruct the full tensor product. The compiled dependency
+inventory confirms both facts at once: the strong commutation-only theorem is
+the diagonal transport dependency, while the stronger theorem's consumer
+still exposes the exact independent off-block premise.
+
+The refreshed 26-declaration ArchiveShift inventory is pinned to clean source
+snapshot `5be41d7cb83e0a7dbeaa55491d8a8fcc99dce1fd`, Lean 4.30.0, source digest
+`81857a8868b81cfa73e3b85503fc17f5a476e12c9a9820b1eea590b970602b81`, and
+SHA-256 `36c4cc30e2a31d4509d2b1e1665a65b3c9d5faf3f2ee52298fedadb24449e8ab`.
+The current Spectrum source SHA-256 is
+`2ec8fd610bff3a09f0f67a6e1ec43f313cddf2db2ac6ad520e2a6d96e5cfc36c`. The
+other refreshed nonvacuum, CAR/Hodge, partial-trace, SourcePort and flat-tensor
+inventories contain 15, 36, 9, 73 and 4 declarations and have SHA-256 values
+`5e3f1ac45faf503c18439a26dd2af87ce1025e3c33534c240d4d229c9d81d36f`,
+`182ee417061895e2afce3bca5dca61cedf7d988ca30b7aab4f683fb676954c08`,
+`bcbcf40298a7126b619f2093118f8f8572e2e58e40f8514d92db9bbcb8bb249f`,
+`8682ced8d10122ea30280055195c211cef2960fcd9dc02a16e736dea2a98650c` and
+`f3fdc6aa8d5b381f3f9b5c2f4e2fe2a99b17f77ad409774818eecdc38d41b7ac`.
+The inventory collector SHA-256 remains
+`d10e1c5a6bd9ac9930968f6a5db22a94255d93374ddb4f759de6bd72f6c95386`.
+
+The cold-start replay on this clean snapshot found every required source in
+**21/21** cases, passed **22/22** benchmarks and resolved **127/127** required
+source records. The updated query finds `GenerationTensorExactness.lean` as its
+top direct-content candidate. Its compact report
+`proof_architecture_cold_start_summary_2026-10-25_5be41d7c.json` has SHA-256
+`060c4a131ff652fed23971052055f30757e01491121c66edfa5d199e64b1c437`; the
+6,991,517-byte full output has SHA-256
+`4335f6433c40892a0b29f36263df6853a2b789e19c8cdf9706d06ceb9a368299`. It
+binds `formal_support.csv` SHA-256
+`b538abd4bfbb919f948cbf619dbf2e24859223532e0443ece644c512d050568a`, runner
+SHA-256 `67362b36a94a7ec338af265637ce814c482199ab9b2c682fd7b906750e40daf9`
+and search-engine SHA-256
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`.
+
+The Spectrum narrow build passed **2,949/2,949** jobs and the dependent Matter
+partial-trace build passed **2,981/2,981**. Proof-architecture tests pass
+**56/56**, declaration-inventory tests **16/16**, repository validation reports
+zero warnings, generated Lean views have zero stale entries, and debt remains
+five findings against baseline five. This is a checked mathematical reuse
+improvement; it does not remove the physical-source or GR-selection premises.

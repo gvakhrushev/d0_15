@@ -1248,7 +1248,7 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-25_533fe587.json"
+            / "proof_architecture_cold_start_summary_2026-10-25_5be41d7c.json"
         )
         summary_bytes = summary_path.read_bytes()
         summary = json.loads(summary_bytes)
@@ -1258,7 +1258,7 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             summary["snapshot_commit"],
-            "533fe58714e80d4d2026f80b3916c1dde57cc1b6",
+            "5be41d7cb83e0a7dbeaa55491d8a8fcc99dce1fd",
         )
         self.assertFalse(summary["worktree_dirty"])
         self.assertEqual(summary["search_cases_found_all_sources"], 21)
@@ -2042,7 +2042,7 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertFalse(inventory["worktree_dirty"])
         self.assertEqual(
             inventory["snapshot_commit"],
-            "533fe58714e80d4d2026f80b3916c1dde57cc1b6",
+            "5be41d7cb83e0a7dbeaa55491d8a8fcc99dce1fd",
         )
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
         self.assertEqual(inventory["public_import_root"], "D0.All")
