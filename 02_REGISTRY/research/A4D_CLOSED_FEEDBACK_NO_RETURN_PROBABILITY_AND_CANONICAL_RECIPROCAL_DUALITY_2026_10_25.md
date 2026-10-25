@@ -124,7 +124,7 @@ The differential has a particularly decisive matrix form, even with noncommuting
 \boxed{
 D\mathcal R_\zeta(F)[H]
 =-a(I-\zeta F)^{-1}H(I-\zeta F)^{-1},\quad
-DJ(\mathcal R_\zeta(F))[D\mathcal R_\zeta(H)]
+DJ(\mathcal R_\zeta(F))[D\mathcal R_\zeta(F)[H]]
 =-DJ(F)[H].
 }\tag{14}
 \]
@@ -176,3 +176,57 @@ If the first two are proved, THEOREM C forces the full Book determinant without 
 
 Companion exact rational and high-precision replay:
 \`sources/d0_feedback_closed_loop_duality_2026-10-25/check_reciprocal_loop.py\`.
+
+
+## 7. THEOREM F — ONE finite closed CAR/Slater Born test EXACTLY produces the Book no-return determinant, without assuming independent one-particle detectors
+
+This upgrades the abstract probability construction (3) to an exact **finite closed unitary+Born instrument**. It does not upgrade the **physical G0/native compiler admission**. Use the SAME actual positive finite \(F\) and \(0<\zeta<1\), \(d=\operatorname{rank}P\). Define on \(H_P\)
+\[
+A=(I-\zeta F)^{1/2},\qquad B=(\zeta F)^{1/2},\quad
+A^2+B^2=I,\ [A,B]=0.
+\]
+Take ONE auxiliary internal copy \(H_{\rm arc}\cong H_P\); on the **closed one-particle space** \(E=H_P\oplus H_{\rm arc}\), define
+\[
+\boxed{
+V_F=\begin{pmatrix}A&-B\\B&A\end{pmatrix},\quad
+V_F^\dagger V_F=I_E.
+}\tag{17}
+\]
+Unlike a diagonal eigenmode probability table, this is an explicit unitary that acts on EVERY input and archive column. It is real special orthogonal for the real positive F chart and has a canonical complex unitary reading.
+
+Now use the **fermionic fixed-number subspace** \(\Lambda^d E\), of dimension \(\binom{2d}{d}\), as one finite closed register. The fully occupied input \(\Omega=e_1\wedge\cdots\wedge e_d\in\Lambda^d H_P\) is defined up to global phase — changing the orthonormal active basis only changes that phase. Apply the genuine unitary exterior-power representation \(\Lambda^d V_F\). Read the one-dimensional event projector onto \(\Lambda^d H_P\), i.e. **no particle escaped into the internal archive**. The exact amplitude and ordinary Born probability are
+\[
+\boxed{
+\langle\Omega,\Lambda^d V_F\,\Omega\rangle=\det A,\quad
+\Pr_{\rm Slater}(\text{archive empty})
+=|\det A|^2
+=\det(I-\zeta F).
+}\tag{18}
+\]
+**Proof:** the coefficient of \(e_1\wedge\cdots\wedge e_d\) under the wedge of the full one-particle unitary is the \(d\times d\) active-to-active minor \(\det A\), and every other occupied-mode configuration is an orthogonal failed/noisy outcome, retained by the same exterior unitary. Exterior powers preserve unitarity, so all \(\binom{2d}{d}\) outcomes have total Born weight 1. No postselection, normalization reset, hidden empty-history condition or quantum cloning is used in (18). The full Book \(J\) is therefore EXACTLY the self-information of one well-defined **finite** binary event on this algebraic CAR/Slater realization.
+
+The operator \(F\), its spectrum, \(\zeta\), its noncommuting geometric jets, and real protected rank are ALREADY inputs of the original Book carrier; (17) adds NO new fitted source parameter. But it **does** enlarge the execution to a very large finite fermionic Fock register and requires preparing its fully occupied state, realizing the \(F\)-dependent \(V_F\), measuring its actual rank-one archive-empty outcome and paying its complete clock/work/cut/history. The native original CAR16 is a FOUR-mode Fock representation, not automatically this \(\operatorname{rank}P\)-mode filled Slater hardware. We therefore do NOT assert (17) is a currently admitted D0 physical word or that its all-archive output law equals the ORIGINAL Julia/full128 law. The exact theorem is a **constructive finite Born realization** and physical compiler target, not a magical identity of distinct quantum instruments.
+
+A two-active/two-archive mode rational fixture at the **unchanged** \(\zeta=2^{-20}\) appears in
+`sources/d0_feedback_closed_loop_duality_2026-10-25/check_slater_no_return.py`. It constructs a real rational \(V_F\in SO(4)\), its entire \(\Lambda^2V_F\in SO(6)\), all SIX nonzero occupation records, and checks
+\(\Pr(\emptyset)=\det(I-\zeta F)\) exactly by rational arithmetic. No stochastic sampling or diagonal-eigenmode shortcut is used.
+
+### Critical NO-GO: ordinary single-particle Born and P+Q closure do NOT force the determinant without the multi-particle/occupation realization
+
+At \(H=\mathbb C^2\), \(F=\operatorname{diag}(f,g)\) and one **single-particle** prepared mixture \(\rho=I/2\), the original weak no-click effect \(I-\zeta F\) has Born probability
+\[
+p_{\rm single}=\operatorname{Tr}\rho(I-\zeta F)
+=1-\frac{\zeta}{2}(f+g).
+\]
+But the Book no-return probability is
+\[
+p_{\rm Book}=(1-\zeta f)(1-\zeta g)
+=1-\zeta(f+g)+\zeta^2fg.
+\]
+They are GENERICALLY DIFFERENT. Hence simply citing M1 closedness, the finite Born rule and a direct-sum decomposition of a **single-particle** carrier does **not** prove premise(ii) of THEOREM C. In (18), **fermionic filled-state antisymmetry** supplies the missing multi-mode multiplication from ONE unitary, instead of assuming a free family of independent one-particle tests. The fully occupied input / exterior representation must still be selected from the original D0 native closed physics. This is a genuine mathematical proof boundary, not a proposal to modify the Book formula.
+
+### Two correct but physically DISTINCT archive representations
+
+The formal positive repeatable **symmetric Fock occupation ensemble** of THEOREM B and the **antisymmetric d-particle no-archive Born instrument** of THEOREM F give exactly the SAME scalar \(p_\emptyset(F)\) and all of its field derivatives, but their OTHER outcomes and full future memory are NOT the same. Equality of this single positive observable does not authorize resetting registers or identifying the whole instruments — in agreement with the prior exact full128 3-tick future-algebra theorem. This makes the physical problem sharply testable: D0 must choose an ACTUAL complete instrument/task if it is to use the no-return feedback price, not just a convenient operator factorization.
+
+**Consequent strategy:** the missing Book03→M1 forcing theorem can now be tested at the level of ONE already known positive feedback \(F\) and a concrete no-archive Born event. If the original physical CAR/record/clock laws select such a full-occupation/no-return test (or a future-faithful equivalent with all costs), THEOREM A/C/F then force the original full feedback determinant without a continuum Lagrangian. The parent 42-source and Einstein limit still require admission on the SAME retained execution. No `GR_closed` change.
