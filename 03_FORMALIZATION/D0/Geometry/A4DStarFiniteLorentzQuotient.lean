@@ -204,8 +204,7 @@ theorem a4dDressedLinkField_metric_compatible
 
 theorem a4dDressedLink_frame_invariant
     (Θx L Θy Λx Λy : Matrix Role Role ℝ)
-    (hΛx : IsRoleLorentz Λx) (hΛy : IsRoleLorentz Λy)
-    (_hΘy : IsUnit Θy.det) :
+    (hΛx : IsRoleLorentz Λx) (hΛy : IsRoleLorentz Λy) :
     a4dDressedLink (Θx * Λx) (Λx⁻¹ * L * Λy) (Θy * Λy) =
       a4dDressedLink Θx L Θy := by
   simpa [a4dDressedLink] using
@@ -299,7 +298,7 @@ theorem a4d_complete_orbit_coordinates
       simpa [a4dFiniteLorentzLinkAction] using
         (a4dDressedLink_frame_invariant
           (rawSolderMatrix N e x) (L x r) (rawSolderMatrix N e y)
-          (Λ x) (Λ y) (hΛ x) (hΛ y) (hnd y))
+          (Λ x) (Λ y) (hΛ x) (hΛ y))
 
 /-- On the all-site nondegenerate sector, equality of every site Gram,
 every dressed link, and the relative determinant-orientation tags is
