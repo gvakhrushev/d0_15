@@ -221,3 +221,38 @@ This is a globally valid two-context original-Born → exact original-PRE-Book-s
 **Physical validation test:** to claim these source jets are empirically readable, use the original already-owned finite response/future-test and source-secant protocols with PAID separate initializations \(\rho_*\) and vacuum, and keep their true finite statistics and moving-generator comparison costs. Neither (18) nor (21) asserts an exactly measured real source from one finite sample. Original 128 fine histories and the complete future algebra still remain on the full unitary carrier.
 
 An exact symbolic Jacobian of (18)–(21) combined with moving original K1 finite-source checks is part of the companion verifier. On any actual chart with \(q\ge q_{\min}>0\), \(|R'|>\kappa\), and finite \(\partial_rJ,\partial_\nu J\), the source/readout map has an explicit finite Lipschitz budget. At \(\nu=0\), K1 has zero probability and this observation interface is NOT injective: no unearned uniform zero-amplitude limit is claimed.
+
+
+## 8. THEOREM G — two canonical INTERNAL preparations, and TWO is the provably minimum number of independent real Born statistics for the native signed two-field chart
+
+The main two-context experiment did not choose a new externally specified ray. The two input states are uniquely characterized by the ORIGINAL native algebra/transition law:
+
+**Original CAR4 vacuum.** Let \(c_j\) denote the unchanged four original creation matrices in the existing canonical CAR order, and \(a_j=c_j^\dagger\) their annihilation maps. The common zero-excitation CAR vacuum line is
+\[
+\boxed{\bigcap_{j=0}^{3}\ker a_j=\mathbb C|0\rangle.}\tag{22}
+\]
+Proof: for any \(\psi\) in the intersection,
+\[
+0=\sum_j\|a_j\psi\|^2
+=\langle\psi,N\psi\rangle,\qquad N=\sum_j c_j a_j\ge0.
+\]
+On the actual four-creator CAR Fock representation \(N\) has integer eigenvalues \(0,\ldots,4\) and exactly ONE zero eigenvector, the literal original all-blank \(|0\rangle\). The vacuum RAY is therefore uniquely determined by the **original native creator/annihilator operators**; no new fermionic basis, phase or arbitrary input-state catalogue is used. Physically making a fresh blank in an actual experiment still has its complete apparatus/work cost.
+
+**Original asymptotic stationary native DATA state.** The already-owned original three-tick primitive full128 channel has a unique fixed density \(\rho_*=\Delta^{-1}/\operatorname{Tr}\Delta^{-1}\), independently of input. Here THEOREM A strengthens it to the EXACT polynomial \(\rho_*=(sI-\Delta)/(8s)\). Hence neither input is a fitted or selected eigenvector, and neither varies freely as an external field: it is completely determined by the SAME original CAR / Julia128 words, with the native Poisson derivative kept in source (20). Actual finite-time approach to the stationary limit and its separate input/history cost remain real.
+
+**Sharp two-real-scalar minimality.** On the open two-parameter physical domain
+\(\mathcal U=\{(r,\nu):-1/9<r<1/9,\ 0<\nu<3/5\}\),
+NO **single continuous real-valued scalar** observation \(f:\mathcal U\to\mathbb R\) can uniquely identify every physical point. This has an elementary proof that does NOT assume differentiability or invoke an unproved model-physics theorem: take any small closed physical disk centered at any interior point and restrict f to its circular boundary. Parameterize the circle by \(\theta\mapsto x(\theta)\), and define \(g(\theta)=f(x(\theta))-f(x(\theta+\pi))\). It is continuous and obeys \(g(\theta+\pi)=-g(\theta)\). By the intermediate value theorem, some g vanishes; two DIFFERENT antipodal physical states have the SAME f. Therefore \(f\) is not injective.
+
+THEOREM C supplies an EXACTLY TWO-component map
+\[
+\boxed{
+(r,\nu)\longmapsto
+(\Pr_{\rho_*}[\mathrm{K1}],\Pr_{|0\rangle}[\mathrm{K1}])
+\in(0,1)^2
+}
+\tag{23}
+\]
+that IS globally injective with a uniformly controlled signed-r inverse for any fixed \(\nu_{\min}>0\), by (9)–(17). Hence **two independent REAL scalar outcome statistics are both necessary and sufficient** for global identification of this fully specified native two-dimensional chart. This is a genuine finite operational MINIMALITY claim, compatible with D_min's emphasis on no redundant independent tests; it is NOT a theorem that the entire 128-slot fine archive can be replaced by two outcomes, nor a global shortest-gate/whole-history code theorem.
+
+This closes a nontrivial physical-preparation objection: on the owned chart the two measurement contexts are intrinsically selected by the original algebra (unique vacuum) and its actual dynamics (unique stationary DATA state), not by a new arbitrary self-audit protocol or external temporal observer. What remains is to derive/charge their **joint use as a compulsory closed task**, rather than mistake mathematical canonicity of two accessible states for compulsory physical execution or for Einstein dynamics.
