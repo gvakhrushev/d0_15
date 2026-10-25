@@ -20617,6 +20617,669 @@ if __name__=='__main__':
     inventory()
 ```
 
+## 7bp. A literal native SOURCE factory realizes the ORIGINAL boost matrix jet, with its independent price reaction
+
+26 October2026. SAME #334 / constitutive / native-programme-v1, inputc01564dc.
+Phase: native realization and source composition. Consume7bl530's ORIGINAL
+role1 boost and7bo's named next SOURCE/field application. A constant flat
+QUERY table cannot produce that nonzero source: summing its complete SIGN
+effects gives identity, while rotating only a FREE full-CAR input conjugates
+the return and leaves its logdet unchanged. A changed density inside the SAME
+full input support also leaves J unchanged; it contributes only to an actual
+state-dependent term. We instead execute a fresh blank-source factory INSIDE
+the word, keep its true blank cut, and compute its full-CAR matrix derivative.
+This is a new native source-comparison execution, not the unchanged full128
+instrument or an assertion of physical GR. No action, Info assignment, new promise on DATA/Spin/oldRIGHT, continuous
+Golden primitive or physical admission rule is added. Fresh SOURCE/P blanks
+are the stated incoming WORK resources, not an erasure of unknown inputs;
+any actual initialization/recording continuation keeps its real price.
+
+The distinction between a cold source map and a full-unitary programmer is
+necessary. Suppose a fixed unitary processor at a pure programme psi0 induces
+an EXACT unitary channel U0 on every DATA input. For any orthogonal programme
+velocity v its two input isometries obey V0dagger Vv=0. Since
+V0=U0 tensor e0, the e0 component of Vv is zero, so the reduced channel has
+zero first derivative. If its cold compression itself is unitary, unitarity
+also makes both off-diagonal programme blocks zero and the cold derivative
+vanishes. A varying unprepare does not change that channel argument. Thus a
+nonzero exact full-unitary jet cannot simply be read from a varying pure
+programme at that boundary. The strictly contractive cold operator below
+avoids that boundary; it does not evade it by discarding failures.
+
+Inputs:7bn544's represented complex algebra and actual native inverse;
+7bo's frozen conservative builder (embedded33418bytes,
+SHA2561255c4d7a7804b2b7726b94d9cc3ec3a86ee4985f7a6437a47caccc938e2a31f);
+7t [literal domain](sources/d0_native_execution_domain_2026-10-24/native_execution.py),
+Gitblob9a32a3fa2e594c087d24b9d5dec497c4c5e03f44; original
+[full128 constructor](sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py),
+Gitblobee8de4635d24c668949ac9a0186616ab7d59f2ed; and7bi's complete
+actual-scene heat bound. Ordinary-WORK/SourceI actuation remains the inherited
+7t interface, with the same explicit physical boundary as7bn--7bo.
+
+### An exact blank-source cell, with no controlled Golden gate or fair preparation
+
+Let H=U Z_d Udagger be ANY exact native Hermitian involution on ordinary
+DATA/WORK, represented with the same phase Spin when complex. CH_s is the
+chronological word Udagger;CZ(s,d);U, using the exact native CZ of7bo.
+For two fresh SOURCE bits s0,s1, put A=G_s0 G_s1 and
+M=Z_s0 CH_s0 CH_s1; for H=I the middle is simply Z_s0. Execute A;M;Adagger,
+using the real raw inverse. SOURCE bits control coherently; there is no
+intermediate measurement, reset, heralding or normalization. The four
+SOURCE blocks00,01,10,11 and their actual cold corner are
+
+    M=(I,H,-H,-I),
+    C_H(q0,q1)=(1-q0-q1)I+(q1-q0)H,
+    q0=q1=p^2 at the native birth, C_H=p^3 I=cI,
+    partial_0 C_H=-2ap(I+H), partial_1 C_H=-2ap(I-H).       (556)
+
+q_j is the probability of bit1 in the EXECUTED source state, not a free
+incoming density left inside a full-rank input cut. The derivative rows use
+the finite-operator comparison G(theta)=exp(theta J) at theta_G; they do NOT
+install theta as a native continuously adjustable primitive. Symmetric
+comparison speeds(k,k) give -4apk I; antisymmetric(k,-k) give -4apk H.
+All SOURCE failure columns remain in M and in the price. For a complex H,
+R_i(H) acts on the LIVE phase Spin; it is not H tensor I_Spin. Only physical
+P is restored on all its input columns. The complete cell's cold cI is,
+however, scalar on DATA AND Spin and on any untouched oldRIGHT.
+
+### The ORIGINAL matrix jet lies in an exact four-reflection native frame
+
+Use the literal CAR creators c_r in Jordan order(0,2,3,1), nu=3/5,
+d=nu/16=3/80 and the original phases(i,i,-1,-i). The original Walsh row is
+A=d sum_r[(phase_r-1)c_r+(conj(phase_r)-1)c_rdagger]. For the SAME
+original role1 boost generator T=c0 c1dagger+c1 c0dagger, differentiating
+x1=nu i c1 exp(theta T) gives A'=(x1'+x1'dagger)/16. Direct CAR algebra gives
+
+    Delta'=A'dagger A+Adagger A'
+       =d^2[-I+Z1+PX+PY], Tr16 Delta'=-9/400,
+    PX=X0 Z2 Z3 X1, PY=X0 Z2 Z3 Y1,
+    D=B'_original=-2p^2 Delta', Tr16 D=9p^2/200.          (557)
+
+The checker derives this from the literal creators, rather than assigning a
+price gradient. It keeps all16 CAR grades; no code-only restriction erases
+530's nonzero trace. Define F=CX(1,0) CZ(1,2) CZ(1,3), with roles as wire
+addresses after the declared permutation. Put s=2ap and c=p^3. The exact
+native reflections are I,Z1 and
+
+    Hx=F G1 Z1 G1dagger Fdagger=c Z1+s PX,
+    Hy=F S1 G1 Z1 G1dagger S1dagger Fdagger=c Z1+s PY,
+    D=wI I+wZ Z1+wx Hx+wy Hy,
+    wI=+2p^2d^2,
+    wZ=-2p^2d^2(1-2c/s), wx=wy=-2p^2d^2/s.
+
+Each nonidentity H is Hermitian, squares to I and has trace0. No exact X/H
+primitive is assumed: the named Pauli strings are the algebraic decomposition,
+while the IMPLEMENTED reflections use only the native G, S, CX/CZ and their
+charged inverses. In particular wI is POSITIVE, as required by Tr D>0.
+
+### Four cells supply a genuine native centre and the full matrix differential
+
+Use four fresh SOURCE pairs, with H=(I,Z1,Hx,Hy), sharing DATA and one phase
+Spin. Their fixed cold corners are all cI. Thus, without assuming the
+reflections commute, their composition satisfies
+
+    C_native(0)=chi I, chi=c^4=p^12,
+    DC_native=c^3 sum_j DC_Hj,
+    k_j=-w_j/(4apc^3) gives DC_native/dy=D,               (558)
+
+using symmetric source speeds(kI,kI) in the I-cell and antisymmetric
+(k_j,-k_j) in the other three. These speeds are derived from the ORIGINAL
+operator matrix557. There is no fitted price, source subtraction or new
+field potential. Their numerical values are approximately
+(-0.04201724,0.02160239,0.04323933,0.04323933).
+The exact SOURCE-state speed obeys ||Psi'||^2=2 sum k_j^2; the maximum raw
+G-stage speed is L_y=max_j |k_j|, about0.04324. Both forward and inverse
+G-stage derivatives are counted. Independent inverse-stage variations are
+not identified with this generated paired curve.
+
+A literal layout is SOURCE pairs(0,1),(2,3),(4,5),(6,7), dedicated physical
+P8, CAR ROLE wires(9,10,11,12), protected Spin(13,14), oldRIGHT15. The role
+ordering is the explicit CAR-to-wire permutation; role0 is bit0 of the
+original CAR mask, irrespective of its position in a full tensor index.
+SOURCE8 and P are supplied blanks; DATA16/Spin4/oldRIGHT remain arbitrary.
+All G, including SOURCE births, are parked on physical P8. Every SourceI
+uses exactly(8,13,14), and no G/CX touches Spin or oldRIGHT. Native CZ and
+reflection frames restore P on every input column. Extending port gates by
+identity on the other31 physical scene modes gives identity there for each
+completed cell: controlled-reflection frames cancel even when an ordinary
+CX in the frame acts outside the source plane. Every raw inverse remains
+a true inverse on that completion because ALL G are physical-port G.
+All31 modes are retained in the actual heat.
+
+| Literal core cell | G | CX | SourceI | Raw stages |
+|---|---:|---:|---:|---:|
+| I | 4 | 30 | 10 | 44 |
+| Z1 | 4 | 70 | 20 | 94 |
+| Hx | 8 | 258 | 108 | 374 |
+| Hy | 8 | 282 | 116 | 406 |
+| Total | 24 | 640 | 254 | 918 |
+
+The reproduction prints the exact component inventory; the TOTAL and native
+inverse are materialized and validated as ordinary Gate tuples. The full raw
+inverse costs24G+640CX+858SourceI=1522 stages and equals the owned inverse
+leaf-by-leaf. SOURCE forward/inverse words themselves contain16G+96CX+
+32SourceI=144 stages; the rest is the fixed QUERY. All256 terminal SOURCE
+histories remain; metadata alone adds no free recording operation. At true
+oldRIGHT dimension128 the input cut rank is r=4*16*128=8192, with the helper
+counted ONCE. Active full dimension is4194304 and physical33 completion is
+69206016 before clock/padding. Fresh source blanks increase full thermal
+space, not input rank. This factory is NOT an unknown-complex-DATA encoder.
+
+### A positive, derived comparison of the COMPLETE cut Book first source
+
+For the SAME common input DATA/Spin/oldRIGHT space, let zeta=2^-20,
+a0=1-zeta, beta=1-9p^2/320, Qchi=a0+zeta chi^2 and Qbeta=a0+zeta beta^4.
+The original two-call corner at the stated flat point is beta^2 I, with
+original derivative2beta D. The present native corner is chi I with
+actual comparison derivative D. Their full escape-effect and Book rows obey
+
+    DF_native=[chi/(2beta^3)] DF_original,
+    DJ_native=Lambda DJ_original,
+    Lambda=chi Qbeta/(2beta^3 Qchi)>0.                     (559)
+
+The actual raw trace is used, with identical input rank r, full16 CAR,
+Spin4 and genuine oldRIGHT. Explicitly DJ_native=-2zeta chi Tr_r(D)/Qchi
+and DJ_original=-4zeta beta^3 Tr_r(D)/Qbeta. Lambda is about0.00160395083.
+The numerical raw rows at oldRIGHT128 are about-5.21298e-8 and-3.25009e-5.
+The gate/field lift and division by Lambda cannot be dropped.
+
+This is an OPERATOR and whole-cut first-jet source identity on this one
+specified original boost direction. It is not equality of base effects,
+actions, full128 instruments, all future effects, full42 fields or their
+refinement. In particular J_native=-r log Qchi, not Lambda times the old
+absolute J. The true native centre chi differs from beta^2; the already
+owned arithmetic obstruction to exact beta in7bn is not bypassed. No beta
+operation is used in the circuit: beta occurs only in the derived comparison.
+The real-phase norm isometry544 makes the common-input identification exact;
+it does not copy the original GOOD/FAIL channel into this different factory.
+
+### Independent preparation normals remain, including a connected control
+
+The actual factory permits a complete source calculation, rather than hiding
+preparation in an external field key. At the scalar base, compression of
+any other private cell is cI on DATA/P/Spin, even though its FULL unconditioned
+query may act on phase Spin. Thus a raw insertion confined to one cell has
+DC_total=c^3 DC_cell. This cold-scalar contraction is the correct support
+argument;7bj's stronger QUERY=I_Spin hypothesis is not silently reused.
+For any independently supplied one-cell differential,
+DJ=-2zeta chi c^3 ReTr_r(DC_cell)/Qchi. All raw prefix/suffix inverse,
+QUERY and cut rows still use504; there is no claim that they vanish.
+
+For the generated independent SOURCE birth-angle comparisons specifically,
+
+    partial_(j,0) J=4zeta ap chi c^3 (r+Tr_r Hj)/Qchi,
+    partial_(j,1) J=4zeta ap chi c^3 (r-Tr_r Hj)/Qchi.     (560)
+
+Each traceless cell has TWO equal strictly positive rows
+j0=4r zeta ap chi c^3/Qchi, about6.20338e-7. The antisymmetric lift in558
+cancels only their chosen combination. The I-cell rows are2j0 and0.
+Its negative kI supplies the required negative original source559; the
+unselected symmetric directions have not become stationary. The one-cell
+matched Hermitian return also splits the REAL paired row equally between
+independently varied forward/reverse source legs; all individual raw-stage
+rows are retained by their true prefix/suffix formula. No compulsory
+apparatus normal is inferred merely from a larger matrix tangent space.
+
+A connected SOURCE comparison detects the higher score. Write
+psi=(a,p), v=(p,-a), with psi^T v=0. Replace two psi factors, one SOURCE0
+in the I-cell and one SOURCE0 in the Z-cell, by v to form eta; keep all
+other six factors psi. Every single-bit marginal has ZERO first variation,
+but conditional contraction of the remaining cells gives
+
+    DC[eta]=s^2 c^2(I+Z1),
+    DJ[eta]=-2r zeta chi s^2 c^2/Qchi !=0.               (561)
+
+This is about-2.55352e-6 at the actual cut rank. It is a hostile control on
+replacing the whole SOURCE score by eight independent moments. Whether this
+entangling comparison is in the original admitted variation domain is still
+its physical application; it is not inserted as a new mandatory constraint.
+The existing whole-price, reference, input and future-test obligations remain.
+
+### The ACTUAL paid heat does not remove this independent source reaction
+
+Use7bh501--502's DECLARED same-scene Hodge, with both grades and every
+zero mode; its selection is still a physical premise. The four-cell product
+is generally noninvolutive and the core gates need not commute with scene
+weights. Therefore do NOT infer DH=0 from the scalar cold return, endpoint
+conjugacy or fixed Golden parameters. Apply7bi's full-covector estimate:
+
+    |D_y H01|<=C1 A_core L_y/N,
+    |D_y(H01+J)_native/Lambda-D_yJ_original|
+                   <=C1 A_core L_y/(N Lambda).          (562)
+
+The second line is for the selected lift558. Any ACTUAL selected R/Info/work
+source must be added with its own lift, divided by Lambda. No entropy is
+assigned from one SOURCE-feature probability. All other independently
+admitted scene/clock/cut/source equations remain.
+
+There is a finite, fully paid consequence for an independent traceless-cell
+angle row with L=1. Here A_core<=2*918=1836. At beta_heat=2p^2<1 the owned
+constant C1=(2exp(2beta_heat)/22)(1+2beta_heat/22)<1. The checker certifies
+e^2<8 by a rational Taylor tail and uses p>3/5,a>3/4 to prove
+j0>(3/128)(3/5)^22>1/4000000. Choose actual raw N=16000000*918=14688000000.
+Add three fresh QUERY-work wires16,17,18, initially blank but ALL eight
+columns in the heat. On them let A=CX(16,17), B=CX(17,18), C=CX(16,18).
+The two native words AA and ABABC are identity on ALL their columns and
+commute with every scene weight. Append7343999536 AA loops and TWO ABABC
+loops. Thus the new word really has24G+14687999722CX+254SourceI=N stages,
+unchanged cold corner and the same rank8192, not uncharged idle time.
+
+The whole heat covector, INCLUDING all new padding rows, is bounded in the
+owned raw gate-max dual norm. Hence for that admitted angle comparison
+|D_theta H01|<=1/8000000<j0/2 and D_theta(H01+J)>j0/2>0. The padding
+feedback rows themselves vanish by the same blank-work/unitary partial-trace
+calculation consumed in7bi. The scalar-normal reaction is therefore not
+cured by making the chronological heat small. This is a scoped route change
+on this declared H01+J/angle graph, not a no-go for the positive GR family,
+an actual additional selected source, another price graph or a field
+constraint whose physical derivation has been proved.
+
+All absolute thermal factors remain. With true oldRIGHT128 and new WORK8,
+full scene/fibre dimension before clock is553648128. The two Hodge dimensions
+are n0=8131983704064000000, n1=96598109454336000000, with index
+88466125750272000000 INSIDE502's logarithm. These are finite dimensions,
+not matrix allocations or feasible execution claims. The whole padding is
+validated by its finite constructor, loop identities and exact integer
+counts; no fourteen-billion-gate tuple or clock matrix is materialized.
+Terminal reporting/closing is not made free or identified with raw N.
+
+### Parent substitution and exact remaining application
+
+The original boost's full-CAR cold-matrix jet now has an explicit finite
+native SOURCE factory, an exact common-input comparison559, a computed
+positive gain, a materialized918-stage word and its real inverse. It does
+not need a continuously selected family of new compiled QUERY words, a
+beta oracle, a fair factory, a fitted action or a repeated geometric root.
+This supplies the missing OPERATIONAL first-jet model after7bo, at its stated
+scope; it changes the route from an impossible exact unitary programmer to
+an explicit cold-source comparison with visible preparation reaction.
+
+The unremoved physical application is precise: derive which actual
+SOURCE/field/constraint operations admit the comparison558 in the same X_N,
+and solve or causally eliminate its genuine independent preparation and
+whole-price equations, rather than declaring the chosen line exhaustive.
+The original full128 future instruments, all42 open-field source transport,
+selected actual Hodge/Cost-Info/work/controller, gain-normalized residual and
+refinement still require their own same-execution maps. The positive normal
+560 must be cancelled by a proved actual mechanism or the present stationary
+route must change. Literal native gates at the centre do not prove physical
+freedom to vary the fixed Golden angle. No stationarity, physical GR,
+positive_gr or raw216 is promoted. GR_closed=false.
+
+The following SINGLE new checker loads ONLY the pinned conservative builder
+prefix from7bo's existing fenced code. It does NOT replay the old SELECT,
+angle certificates or old fixtures. It materializes918 native gates and the
+1522-gate inverse; two NEW64-column examples check the cell on all inputs;
+the original16-mode matrix calculation checks557--561; exact integer counts
+and two NEW8-column loop checks prove the stated padding. Numeric displays
+are not decision tolerances. Run from the repository root.
+
+```python
+"""Four literal native cold-jet cells; no imported full-SELECT test execution.
+
+This loads only the conservative Word/Compiler definitions from the pinned
+7bo standalone program, before its SECOND mathematical checker docstring.
+It does not install continuously variable G as a native primitive.  The
+finite-operator SOURCE curves in the companion proof remain a separate
+admission question.  No repository writes are performed.
+"""
+import sys
+sys.dont_write_bytecode = True
+from pathlib import Path
+import hashlib
+import json
+import types
+
+BUILDER_FILE = Path('02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md').resolve()
+BUILDER_CODE_SHA256 = '1255c4d7a7804b2b7726b94d9cc3ec3a86ee4985f7a6437a47caccc938e2a31f'
+BUILDER_MARKER = '"""Actual full flat SELECT/U compiler: exact power certificates, complete native rows."""'
+
+
+def load_builder():
+    source = BUILDER_FILE.read_text()
+    start = source.index('## 7bo. ')
+    start = source.index('```python\n', start) + len('```python\n')
+    end = source.index('\n```', start)
+    code = source[start:end].encode()
+    raw = code + b'\n'
+    if hashlib.sha256(code).hexdigest() != BUILDER_CODE_SHA256:
+        raise RuntimeError('frozen 7bo builder/checker source pin changed')
+    prefix = raw.decode('utf-8').split(BUILDER_MARKER, 1)[0]
+    if len(prefix.encode('utf-8')) == len(raw):
+        raise RuntimeError('builder/checker separation marker absent')
+    module = types.ModuleType('_d0_cold_jet_owned_builder')
+    module.__file__ = str(BUILDER_FILE)
+    sys.modules[module.__name__] = module
+    exec(compile(prefix, str(BUILDER_FILE), 'exec'), module.__dict__)
+    module.PROVENANCE = {
+        'builder_source_path': str(BUILDER_FILE),
+        'builder_source': 'frozen7bo fencedcode; fullcurrentmemo length not pinned',
+        'fenced_program_with_newline_bytes': len(raw),
+        'fenced_program_with_newline_sha256': hashlib.sha256(raw).hexdigest(),
+        'builder_fenced_code_bytes': len(code),
+        'builder_fenced_code_sha256': hashlib.sha256(code).hexdigest(),
+        'loaded_prefix_bytes': len(prefix.encode('utf-8')),
+        'loaded_prefix_sha256': hashlib.sha256(prefix.encode('utf-8')).hexdigest(),
+        'full_select_math_was_executed': False,
+    }
+    return module
+
+
+owned = load_builder()
+Compiler = owned.Compiler
+ne = owned.ne
+
+
+def parked_g(c, q):
+    return c.park(q, c.g(q))
+
+
+def controlled_reflection(c, source, data_target, frame):
+    """Chronology U†;CZ(source,d);U, hence controlled H=U Z_d U†."""
+    return c.seq(c.inv(frame), c.cz(source, data_target), frame)
+
+
+def cold_cell(c, source_pair, data_target, frame=None, identity=False):
+    """A;M;A† with M blocks I,H,-H,-I.  No source/target measurement."""
+    s0, s1 = tuple(source_pair)
+    for q in (s0, s1, data_target):
+        c._work(q)
+    if len({s0, s1, data_target}) != 3:
+        raise ne.DomainError('SOURCE pair and DATA target must be disjoint')
+    if frame is None:
+        frame = c.seq()
+    c._check_tree(frame)
+    # Frame support must be DATA/helper only, not this cell's SOURCE bits.
+    leaves = c._leaves(frame, tuple(range(c.qubits)))
+    if any(set(g.wires).intersection((s0, s1)) for g in leaves):
+        raise ne.DomainError('reflection frame touches its SOURCE control')
+    A = c.seq(parked_g(c, s0), parked_g(c, s1))
+    if identity:
+        middle = c.phase(s0, 2)
+    else:
+        middle = c.seq(c.phase(s0, 2),
+                       controlled_reflection(c, s0, data_target, frame),
+                       controlled_reflection(c, s1, data_target, frame))
+    word = c.seq(A, middle, c.inv(A))
+    return {'birth': A, 'middle': middle, 'birth_inverse': c.inv(A),
+            'frame': frame, 'word': word, 'identity_reflection': identity,
+            'source_pair': (s0, s1), 'data_target': data_target}
+
+
+def build_four_cells():
+    """Actual requested 16-wire layout.  No 65536-dimensional matrix built."""
+    c = Compiler(16, 8, (13, 14), (15,))
+    data = (9, 10, 11, 12)
+    d0, d1, d2, d3 = data
+    F = c.seq(c.cx(d1, d0), c.cz(d1, d2), c.cz(d1, d3))
+    Ux = c.seq(parked_g(c, d1), F)
+    Uy = c.seq(parked_g(c, d1), c.phase(d1), F)
+    frames = (c.seq(), c.seq(), Ux, Uy)
+    names = ('I', 'Z1', 'Hx', 'Hy')
+    cells = tuple(cold_cell(c, (2*j, 2*j+1), d1, frames[j], identity=(j == 0))
+                  for j in range(4))
+    word = c.seq(*(cell['word'] for cell in cells))
+    return {'compiler': c, 'data': data, 'frames': frames,
+            'names': names, 'cells': cells, 'word': word,
+            'blank_wires': tuple(range(9)),
+            'report_bits': tuple(range(8))}
+
+
+def inventory_report():
+    """Materialize only the small 918-stage WORD, never a full CAR matrix."""
+    built = build_four_cells()
+    c, word = built['compiler'], built['word']
+    validation = c.validate(word)
+    counts = c.counts(word)
+    leaves = c._leaves(word, tuple(range(c.qubits)))
+    assert all(g.wires == (8,) for g in leaves if g.op == 'G')
+    assert all(g.wires == (8, 13, 14) for g in leaves if g.op == 'SourceI')
+    assert all(set(g.wires).isdisjoint(c.old) for g in leaves)
+    assert all(set(g.wires).isdisjoint(c.spin) for g in leaves if g.op != 'SourceI')
+    execution = c.execution(word, blank_wires=built['blank_wires'],
+                            report_bits=built['report_bits'],
+                            max_expanded_stages=counts.n)
+    iv = ne.inventory(execution, max_qubits=16, max_expanded_stages=counts.n)
+    assert (iv.g_count, iv.cx_count, iv.source_i_count, iv.gate_count) == (
+        counts.g, counts.cx, counts.source_i, counts.n)
+    assert iv.cut_rank == 16*4*2
+    inverse = tuple(c.iter_raw(c.inv(word)))
+    wanted = ne.inverse_word(execution, max_qubits=16,
+                             max_expanded_stages=len(inverse))
+    assert inverse == wanted
+    assert len(inverse) == c.counts(c.inv(word)).n
+    components = {}
+    for name, cell in zip(built['names'], built['cells']):
+        components[name] = {k: c.counts(cell[k]).as_dict()
+                            for k in ('frame', 'birth', 'middle', 'birth_inverse', 'word')}
+    return {
+        'layout': {'qubits': 16, 'physical_port': 8,
+                   'SOURCE_pairs': ((0, 1), (2, 3), (4, 5), (6, 7)),
+                   'CAR_role_wires': built['data'], 'phase_Spin': (13, 14),
+                   'immutable_oldRIGHT': (15,),
+                   'blank_wires': built['blank_wires'],
+                   'unknown_wires': iv.unknown_wires},
+        'components': components,
+        'total': counts.as_dict(),
+        'raw_inverse_total': c.counts(c.inv(word)).as_dict(),
+        'unique_leaf_validation': validation,
+        'literal_full_word_validated': True,
+        'literal_full_word_gates': len(execution.gates),
+        'literal_inverse_equals_owned': True,
+        'input_rank_with_one_old_qubit': iv.cut_rank,
+        'full_dimension_with_one_old_qubit': iv.full_dimension,
+        'general_input_rank': '64 * genuine_oldRIGHT_rank',
+        'general_full_dimension': '32768 * genuine_oldRIGHT_dimension',
+        'initial_cut': 'SOURCE8+physicalP blank; CAR16+Spin4+oldRIGHT free',
+        'completed_physical_port': 'identity on every P input column',
+        'four_CAR_matrix_was_built': False,
+        'fresh_source_is_free_incoming_density': False,
+        'AST_is_native_primitive': False,
+    }
+
+
+def run_small_fixtures():
+    """Only two NEW 64-column examples, with H=Z and H=GZG†."""
+    import sympy as s
+    c = Compiler(6, 0, (4, 5))
+    I = s.eye(64)
+    passed = []
+
+    def mat(word):
+        e = c.execution(word)
+        return ne.word_matrix(e, max_qubits=6, max_expanded_stages=len(e.gates))
+
+    for name, frame in (('Z', c.seq()), ('GZGdagger', parked_g(c, 3))):
+        parts = cold_cell(c, (1, 2), 3, frame)
+        e = c.execution(parts['word'], blank_wires=(0, 1, 2))
+        N = len(e.gates)
+        M = mat(parts['middle'])
+        W = ne.word_matrix(e, max_qubits=6, max_expanded_stages=N)
+        G = ne.G_LOCAL
+        H = s.diag(1, -1) if name == 'Z' else G*s.diag(1, -1)*G.T
+        blocks = (s.eye(2), H, -H, -s.eye(2))
+        target = s.zeros(64)
+        # Wire0 is P,1/2 are SOURCE,3 DATA,4/5 Spin.  P and Spin are
+        # arbitrary on EVERY one of the 64 columns, not selected helpers.
+        for column in range(64):
+            src = (column >> 3) & 3
+            data_in = (column >> 2) & 1
+            for data_out in (0, 1):
+                row = (column & ~(1 << 2)) | (data_out << 2)
+                target[row, column] = blocks[src][data_out, data_in]
+        assert ne.exact_matrix_equal(M, target)
+        assert ne.exact_matrix_equal(M.T*M, I)
+        assert ne.exact_matrix_equal(W.T*W, I)
+        assert ne.exact_matrix_equal(W*W, I)
+        j = ne.input_isometry(e, max_qubits=6, max_expanded_stages=N)
+        cold = j.T*W*j
+        assert ne.exact_matrix_equal(cold, ne.P**3*s.eye(8))
+        # The COMPLETE operator is I_P tensor a matrix on source/DATA/Spin.
+        assert ne.exact_matrix_equal(W[:32, :32], W[32:, 32:])
+        assert ne.exact_matrix_equal(W[:32, 32:], s.zeros(32))
+        assert ne.exact_matrix_equal(W[32:, :32], s.zeros(32))
+        actual_inverse = tuple(c.iter_raw(c.inv(parts['word'])))
+        wanted_inverse = ne.inverse_word(e, max_qubits=6,
+                                        max_expanded_stages=len(actual_inverse))
+        assert actual_inverse == wanted_inverse
+        passed.append({'fixture': name, 'all_columns': 64,
+                       'counts': c.counts(parts['word']).as_dict(),
+                       'middle_diagonal_blocks': 'I,H,-H,-I',
+                       'cold_corner': 'p^3 I8', 'Spin_all_columns': True,
+                       'port_all_columns_restored': True,
+                       'owned_raw_inverse': True})
+    return passed
+
+
+def main():
+    report = inventory_report()
+    tests = run_small_fixtures()
+    print('PROVENANCE', json.dumps(owned.PROVENANCE, sort_keys=True))
+    print('EXACT_FOUR_CELL_INVENTORY', json.dumps(report, sort_keys=True))
+    print('NEW_BOUNDED_FIXTURES', json.dumps(tests, sort_keys=True))
+    print('PASS 2 new complete 64-column cold cells; actual full word/inverse membership; no full-CAR matrix or old suite')
+    return report, tests
+
+"""Changed native cold-jet application: exact original D and native reflection frame."""
+from pathlib import Path
+import sys
+sys.dont_write_bytecode=True
+sys.path.insert(0,str(Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24').resolve()))
+import native_execution as ne
+import sympy as sp
+p=ne.P;a=ne.A;I=sp.eye(16);nu=sp.Rational(3,5);d=nu/16
+order=(0,2,3,1);cs=[]
+for role in range(4):
+    C=sp.zeros(16)
+    for mask in range(16):
+        if not (mask>>role)&1:
+            C[mask|(1<<role),mask]=(-1)**sum((mask>>j)&1 for j in order[:order.index(role)])
+    cs.append(C)
+phases=(sp.I,sp.I,-1,-sp.I)
+A=sum(((phase-1)*C+(sp.conjugate(phase)-1)*C.H for phase,C in zip(phases,cs)),sp.zeros(16))*d
+T=cs[0]*cs[1].H+cs[1]*cs[0].H
+dx=nu*sp.I*cs[1]*T
+Ad=(dx+dx.H)/16
+Delta_d=(Ad.H*A+A.H*Ad).applyfunc(sp.simplify)
+
+def bit_matrix(role,local):
+    ans=sp.zeros(16)
+    for col in range(16):
+        for u in (0,1):ans[(col&~(1<<role))|(u<<role),col]=local[u,(col>>role)&1]
+    return ans
+Z=bit_matrix(1,sp.diag(1,-1));X=sp.Matrix([[0,1],[1,0]]);Y=sp.Matrix([[0,-sp.I],[sp.I,0]])
+F=sp.zeros(16)
+for col in range(16):
+    val=(-1)**(((col>>1)&1)*(((col>>2)&1)+((col>>3)&1)))
+    F[col^(((col>>1)&1)<<0),col]=val
+PX=F*bit_matrix(1,X)*F.H;PY=F*bit_matrix(1,Y)*F.H
+assert (Delta_d-d*d*(-I+Z+PX+PY)).applyfunc(sp.expand)==sp.zeros(16)
+assert sp.trace(Delta_d)==-sp.Rational(9,400)
+G=bit_matrix(1,ne.G_LOCAL);S=bit_matrix(1,sp.diag(1,sp.I));c=p**3;s=2*a*p
+Hx=F*G*Z*G.H*F.H;Hy=F*S*G*Z*G.H*S.H*F.H
+assert ne.exact_matrix_equal(Hx,c*Z+s*PX)
+assert ne.exact_matrix_equal(Hy,c*Z+s*PY)
+for H in (Z,Hx,Hy):
+    assert ne.exact_matrix_equal(H.H,H)
+    assert ne.exact_matrix_equal(H*H,I)
+    assert sp.simplify(sp.trace(H))==0
+D=-2*p*p*Delta_d
+w=[2*p*p*d*d,-2*p*p*d*d*(1-2*c/s),-2*p*p*d*d/s,-2*p*p*d*d/s]
+Hs=(I,Z,Hx,Hy)
+assert ne.exact_matrix_equal(sum((v*H for v,H in zip(w,Hs)),sp.zeros(16)),D)
+# Four literal 2-SOURCE cells have C0=cI; their composition has chi=c^4.
+chi=c**4;kappa=[-v/(4*a*p*c**3) for v in w]
+assert ne.exact_matrix_equal(c**3*sum((-4*a*p*k*H for k,H in zip(kappa,Hs)),sp.zeros(16)),D)
+assert ne.exact_matrix_equal(sp.Matrix([[sp.trace(D)]]),sp.Matrix([[9*p*p/200]]))
+zeta=sp.Rational(1,2**20);a0=1-zeta;beta=1-9*p*p/320
+Qn=a0+zeta*chi**2;Qo=a0+zeta*beta**4
+qold=128;r=4*16*qold
+j_native=-8*qold*zeta*chi*sp.trace(D)/Qn
+j_original=-16*qold*zeta*beta**3*sp.trace(D)/Qo
+gain=chi*Qo/(2*beta**3*Qn)
+assert sp.simplify(j_native-gain*j_original)==0
+# Native local SOURCE normal reactions, not silently stationary apparatus.
+normal_traceless=4*r*zeta*a*p*chi*c**3/Qn
+normal_I0=2*normal_traceless
+assert normal_traceless.is_positive is True
+print('PASS original full16 boost matrix jet; exact4-reflection frame; native4cell operator-jet lift; positive derived Book-source gain')
+print('SOURCE_GAIN',sp.N(gain,24))
+print('BOOK_ROWS',{'native':str(sp.N(j_native,24)),'original_two_calls':str(sp.N(j_original,24)),'independent_traceless_cell_angle':str(sp.N(normal_traceless,24)),'I_cell_first_angle':str(sp.N(normal_I0,24))})
+print('ACTUAL_SOURCE_SPEEDS',[str(sp.N(k,24)) for k in kappa])
+print('NATIVE_COLD',{'c':str(sp.N(c,24)),'chi':str(sp.N(chi,24)),'full_cut_rank':r})
+# Connected SOURCE comparison: one I-cell bit and one Z-cell bit move jointly.
+psi=sp.Matrix([a,p]);v=sp.Matrix([p,-a]);Z2=sp.diag(1,-1)
+assert ne.exact_matrix_equal(psi.T*v,sp.zeros(1))
+base2=sp.kronecker_product(psi,psi);eta2=sp.kronecker_product(v,v)
+for mask in (sp.diag(1,0),sp.diag(0,1)):
+    for O in (sp.kronecker_product(mask,sp.eye(2)),sp.kronecker_product(sp.eye(2),mask)):
+        assert ne.exact_matrix_equal(2*eta2.T*O*base2,sp.zeros(1))
+conditional_Z=[p*I+p*p*Z,-p*Z-p*p*I]
+off_I=(v.T*Z2*psi)[0]
+off_Z=a*p*(conditional_Z[0]-conditional_Z[1])
+assert ne.exact_matrix_equal(sp.Matrix([[off_I]]),sp.Matrix([[s]]))
+assert ne.exact_matrix_equal(off_Z,s*(I+Z)/2)
+connected_DC=2*c*c*off_I*off_Z
+assert ne.exact_matrix_equal(connected_DC,s*s*c*c*(I+Z))
+connected_J=-2*r*zeta*chi*s*s*c*c/Qn
+assert connected_J.is_negative is True
+# Bounds for the actual 7bi complete-heat consumer; never endpoint DH=0.
+assert (p-sp.Rational(3,5)).is_positive is True
+assert (a-sp.Rational(3,4)).is_positive is True
+normal_lower=sp.Rational(3,128)*sp.Rational(3,5)**22
+assert normal_lower>sp.Rational(1,4_000_000)
+# e^2 < 8: rational Taylor tail with decreasing term ratio, not a float claim.
+K=12
+exp2_upper=sum((sp.Rational(2)**k/sp.factorial(k) for k in range(K+1)),sp.Integer(0))
+exp2_upper+=(sp.Rational(2)**(K+1)/sp.factorial(K+1))/(1-sp.Rational(2,K+2))
+assert exp2_upper<8
+assert sp.Rational(2*8,22)*(1+sp.Rational(2,22))<1
+# Thus C1<1, A_core<=2N_core; N>=16e6*N_core makes |D_theta H|<j0/2.
+assert sp.Rational(2,16_000_000)==sp.Rational(1,8_000_000)
+source_state_speed_sq=2*sum((k*k for k in kappa),sp.Integer(0))
+print('PASS connected SOURCE normal with zero single-bit marginals; strict j0 lower bound; rational complete-heat padding consumer')
+print('CONNECTED_SOURCE_ROW',sp.N(connected_J,24))
+print('SOURCE_LIFT',{'state_speed_squared':str(sp.N(source_state_speed_sq,24)),'gate_max_speed':str(sp.N(max(kappa,key=lambda x:abs(float(x))),24)),'padding_ratio_sufficient':16_000_000})
+
+
+# Same full literal918-stage core; actual commuting QUERY-work padding.
+def padding_report():
+    built=build_four_cells();core=built['word'];nc=built['compiler'].counts(core).n
+    assert nc==918
+    cpad=Compiler(19,8,(13,14),(15,))
+    AA=cpad.cx(16,17);BB=cpad.cx(17,18);CC=cpad.cx(16,18)
+    pair=cpad.seq(AA,AA);five=cpad.seq(AA,BB,AA,BB,CC)
+    N=16_000_000*nc;remaining=N-nc-10
+    assert remaining>=0 and remaining%2==0
+    padding=cpad.seq(cpad.repeat(pair,remaining//2),cpad.repeat(five,2))
+    word=cpad.seq(core,padding);report=cpad.validate(word)
+    assert report['counts']['N']==N
+    assert report['counts']['g_off']==0
+    assert report['counts']['G']==24 and report['counts']['SourceI']==254
+    # New bounded8-column identity checks. No huge word or clock matrix.
+    for steps in (((16,17),(16,17)),((16,17),(17,18),(16,17),(17,18),(16,18))):
+        shift={16:0,17:1,18:2}
+        e=ne.Execution(3,(),(),tuple(ne.Gate('CX',tuple(shift[q] for q in pair)) for pair in steps),ne.G_CX)
+        ne.validate_execution(e,max_qubits=3,max_expanded_stages=5)
+        assert ne.word_matrix(e,max_qubits=3,max_expanded_stages=5)==sp.eye(8)
+    d=2**8*16*4*128*8
+    return {'core_N':nc,'actual_N':N,'pair_loops':remaining//2,'five_loops':2,
+            'total_counts':report['counts'],'unique_raw_leaves':report['unique_raw_leaves'],
+            'new_QUERY_work_wires':(16,17,18),'new_work_input':'all3blank; all8columns kept',
+            'full_physical_dimension_before_clock':33*d,
+            'n0':33*N*d,'n1':392*N*d,'index':359*N*d,
+            'full_cut_rank':8192,'strict_heat_normal_upper':str(sp.Rational(1,8_000_000)),
+            'Book_normal_strict_lower':str(sp.Rational(1,4_000_000)),
+            'C1_strict_upper':1,'Acore_upper':2*nc,
+            'positive_H01_plus_J_row_lower':str(sp.Rational(1,8_000_000)),
+            'padding_word_literal_materialized':False,'padding_clock_matrix_built':False}
+
+if __name__=='__main__':
+    report,fixtures=main()
+    print('ACTUAL_PAID_PADDING',json.dumps(padding_report(),sort_keys=True))
+    print('PASS exact operator/source jet, retained native preparation normals and complete-heat paid-padding consumer')
+```
+
 ## 8. Reproduction
 
 Run from this directory:

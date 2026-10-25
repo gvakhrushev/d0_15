@@ -12954,3 +12954,115 @@ incomingbrief849309bytes isexactprefix SHA256
 961dd8d1a208b59fd3bc337c6a7e7b777885fcfae163fa7930c8768915d3cf29.
 Onlytwoownedpathschanged. Thesearelocalproof/structuralchecks,
 notremoteCI/physicalGRacceptance;parent#334remainsDraftandunmerged.
+
+### 26 October2026 — literal SOURCE factory for the original boost matrix jet and its full preparation reaction
+
+Same#334/constitutive/native-programme-v1; basec01564dc. Phase:native
+realization/sourcecomposition. Existingprimary7bp556--562 consumes
+7bl530's actualoriginalboost and7bo's namedSOURCE/field application.
+Supportingoperator/sourcejet withanexplicitremainingphysicalmap;
+nonewclaim/task/registry/selector/action/admissionorGRpromotion.
+
+Unchangedinput:originalnu3/5CAR16/order(0,2,3,1),role1boostT.
+ActualmatrixDelta'=d²[-I+Z1+X0Z2Z3(X1+Y1)],d3/80;
+D=B'_original=−2p²Delta',Tr16D=+9p²/200. ExactnativeframeI,Z1,
+Hx=F G1Z1G1dagFdag,Hy=F S1G1Z1G1dagS1dagFdag,
+F=CX(1,0)CZ(1,2)CZ(1,3),spansDwithderivedweightswIpositive.
+NoassignedEulergradient/nosource-fitInfo/noPauliXoracle.
+
+Literal2SOURCEcell:blankSOURCEGbirth+controllednativeHreflections+
+genuinerawinverse. FourmiddleblocksI,H,-H,-I;nativecoldc=p³I.
+Fourfreshpairs H(I,Z1,Hx,Hy) givechi=c4=p12Iexactly,notβ²oracle.
+Derivedsymmetric/antisymmetricSOURCEanglespeedsκ=−w/(4apc³)
+produceDCnative=D. Thesearefinite-operatorCOMPARISONspeedsatactual
+nativebase,notnewtunableGoldenprimitivesnorproofX_Nadmission.
+Nocontinuousintegerwordselector,controlledG,fairfactoryorpostselection.
+
+Actualwordmaterialized/validated:24G+640CX+254SourceI=918stages;
+actualinverse24G+640CX+858SourceI=1522,tupleEXACTownedinverse.
+AllGphysicalP8;allSourceI(8,13,14);noSpinG/CXoroldRIGHT15action.
+SOURCEpairs0..7,P8blank,CARrolewires9..12,Spin13/14andold15free.
+Rankr=64q_old=8192fortrueold128;Spinonce;fullphysical33completion
+retains31modes. FullHyUSESphaseSpin;one-cellsourceproofusesOTHER
+cells'coldcI,notfalseunconditionedQUERY=I_Spin. All256SOURCEfine
+historieskept;freshblanks/recording/initializationnotunknown-inputerasure.
+
+Aftertheexplicitcommoninputmap,fullcutescapeeffectandBookfirstjet
+comparetooriginaltwo-callC0β²I,C'=2βDbyderivedpositivegain
+Lambda=chi(a0+zetaβ4)/(2β³(a0+zetachi²))≈0.00160395083031852365.
+RawBookrowsold128≈−5.2129793888e-8(native),−3.2500867796e-5(original).
+ThisisONEoriginalboostjet,notactionvalue/full128instrument/all42
+sourceequivalence/refinement. Nativechi≠β²remains;oldringobstruction
+notbypassed. Truegain/rawfieldliftmustremainindividederrors.
+
+Allindependentpreparationreactionretained:tracelessHcellbothSOURCE
+birth-anglerowsj0=4r*zeta*ap*chi*c³/Qchi>0,≈6.2033820669e-7.
+Icellrows2j0,0. Designatedantisymmetricliftcancelsonlyitscombination.
+AconnectedI/Ztwo-bitSOURCEtangenthasALLsingle-bitmarginalderivatives0,
+butDJ=−2r*zeta*chi*s²*c²/Qchi≈−2.5535242482e-6. Keepthisfullscore;
+entanglingtangentadmissionremainsitsownphysicalapplication.
+Rawinverse/query/cutrowsusethetrueprefix/suffix;noneclaimedzero.
+
+CompleteheatconsumerisDECLARED7bh501H01withbothgrades,notan
+endpoint/involutionheat. Owned7biC1<1,Acore<=1836,actualrawliftL,
+|D_yH|<=C1AcoreL/N;normalizebyactualLambda. Foroneindependent
+angleL1,j0>1/4000000strict. ChooseN=14688000000=16e6*918,with
+threegenuinequeryWORK16..18blank/all8thermalcolumns. Append
+7343999536AAloopsand2ABABCloops(CNOT2/5identitiesonALLcolumns).
+Total24G+14687999722CX+254SI=N; allpaddingrowsinwholecovectorbound.
+|DθH|<=1/8000000<j0/2,soDθ(H01+J)>j0/2>0onthedeclaredanglegraph.
+ThusheatsuppressiondoesNOTsolvejointSOURCEstationarity. Other
+actuallyselectedR/Info/work/constraints mustreactifthisrouteisused.
+Newfullpreclockdimension553648128;n0/n1/indexallinsideactualheat;
+nohugeclockmatrixor14.7billion-gatetupleruntimeclaim.
+
+Preciseparentapplication:explicitnativecoldoperator-jetactuatorwith
+itspositivegainandretainedpreparationnormalafter7bo. Missingphysical
+substitution:actualSOURCE/field/constraintlawadmittingthiscomparison
+andcancelling/causallyeliminatingallgenuineSOURCE/fullpriceequations;
+originalfull128futuretests,open42fieldbinding,selectedD/U/P/Hodge,
+CostInfo/work/controller,gain-normalizedresidualandrefinementremain.
+DoNOTdefineX_Nasthechosenlineorcountmatrixdensityasthissubstitution.
+GR_closed=false,positive_gr/raw216open;nostationary-realizationclaim.
+
+Frozen7bpINCLUDINGnext-headingseparator:34892bytes,
+SHA2566539b42c97c185927ce5b0fb3ede4db13b18b65be7219922574fa12e9754c164.
+Embeddedcodeexcludingclosingnewline:17596bytes,
+SHAc658c3f67d8e61d91a339e9ffd6ad5c1b26922979ebf707e8aaa6b9caf0f77dc.
+LoadsONLYfrozen7bobuilderprefix22247bytes/SHA5e53f361a7d2e579fc90b3f3668dac33f6efef98df993eaa9ac7e07b4aabaa5d;
+itsentirefence33418/1255c4d7pincheckedbeforeno-old-testimport.
+Neinputblob9a32a3fa2e594c087d24b9d5dec497c4c5e03f44;
+originalconstructoree8de4635d24c668949ac9a0186616ab7d59f2ed.
+Finalsource-onlyreviews/affectedstructuralintegrationfollow.
+
+Finalsource-onlyACCEPT34892/6539b42c97c185927ce5b0fb3ede4db13b18b65be7219922574fa12e9754c164:
+native_source_application,stationary_root_transfer,price_geometry_bridge.
+Allreadentireproof+codeandfinalprovenancekeys;nowrites/mathreplays.
+Allreviewsexplicitlyretainphysicalangleadmission,fullprice/remaining
+normalsandLOCALpaddingfeedbackscope;notphysicalacceptance.
+
+RootNEWcombinedmathematicalcheckerexit0:twoNEW64-columnnativecells
+(allSOURCE/P/Spininputs,actualcoldcI,fullinverse);literal918Gateword
+and1522Gateinverse/ownedtuplemembership;full16-CARmatrixD/reflection
+frame/gain;connectedSOURCEcontrol;strictj0lower/rationalheatconstant;
+actualN/paddingcountsandtwoNEW8-column2/5loopidentities. No old
+7boSELECT/intervalpower/GR/root/Lean/clockcertificate fixturesrun.
+Actualexecutedcode17559/SHA058a33f00eb7d094ae4b107e4be81b2cae3c6d93790d022c682c31fa2e78c4ac.
+TheONLYsubsequentcodechange renamed3PROVENANCEdictionarykeys to
+preciselyidentifythepinnedFENCEprogramratherthantheentirecurrentmemo.
+Finalc658c3f6'smathematicalbodyisBYTEIDENTICALtothatexecutedbody:
+reversing3keyrenamesrestorestheexact058a33f0hash. ChangedloaderONLY
+revalidatedexit0againstactualeditedprimary,pinned7boprefix5e53f361.
+Finalfence/AST/exacthash/provenancevalidated;unchangedmatrixfixtures
+notreplayedmerelyforprovenancewording. No numericdecisiontolerances.
+
+AffectedintegrationPASS:workvalidation,agentprotocol,gravityassembly
+(validtrue;54active/98results/5discharged/22obligations;scientific_
+promotionfalse),repository(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0),diffwhitespace.
+Removing7bprestoresincomingc01564dcprimaryBYTEEXACT SHA256
+bf543199e51dc43e341b10d70df73be542d1ae58f8c0dcfd0dbffbfbea86ed3a;
+incomingbrief855099bytes remainsEXACTprefix SHA256
+21f96db3bceb35e9bf3713e956272fe59a53b894c4c490d01472e8e338649ed0.
+Onlythetwoownedpathschanged. Thesearelocalproof/structuralchecks,
+notremoteCI/GRacceptance. Existing#334keptDraft/unmerged.
