@@ -1892,6 +1892,86 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("D0/Matter/ArchivePartialTrace.lean", consumers)
         self.assertIn("D0/Gauge/FlatTensorNoGo.lean", consumers)
 
+    def test_source_port_preparation_consumes_shared_tensor_api(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "source_port_preparation_tensor_inventory_2026-10-25.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["snapshot_commit"], "efd8ffcf8fb6c0e0fc3303dd2d88d3ee40cf619e")
+        self.assertFalse(inventory["worktree_dirty"])
+        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+
+        for name in (
+            "D0.Representation.SourcePortPreparation.coupled",
+            "D0.Representation.SourcePortPreparation.jointMetric",
+            "D0.Representation.SourcePortPreparation.interactionGenerator",
+        ):
+            self.assertIn(
+                "D0.Algebra.finiteMatrixTensorProduct",
+                declarations[name]["proof_dependencies"],
+            )
+
+        quarter_turn = declarations[
+            "D0.Representation.SourcePortPreparation.coupled_fourth"
+        ]
+        self.assertIn("coupled ^ 4 = 1", quarter_turn["elaborated_type"])
+        self.assertIn(
+            "D0.Algebra.finiteMatrixTensorProduct_mul",
+            quarter_turn["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Algebra.finiteMatrixTensorProduct_one",
+            quarter_turn["proof_dependencies"],
+        )
+
+        product_control = declarations[
+            "D0.Representation.SourcePortPreparation.independent_actions_zero_minor"
+        ]
+        self.assertIn(
+            "interactionMinor (D0.Algebra.finiteMatrixTensorProduct A B) = 0",
+            product_control["elaborated_type"],
+        )
+        nonfactorization = declarations[
+            "D0.Representation.SourcePortPreparation.coupled_not_independent"
+        ]
+        self.assertIn(
+            "D0.Algebra.finiteMatrixTensorProduct A B",
+            nonfactorization["elaborated_type"],
+        )
+        self.assertIn(
+            "D0.Representation.SourcePortPreparation.independent_actions_zero_minor",
+            nonfactorization["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Representation.SourcePortPreparation.coupled_interaction_witness",
+            nonfactorization["proof_dependencies"],
+        )
+        self.assertFalse(any(
+            "sorryAx" in axiom
+            for declaration in inventory["declarations"]
+            for axiom in declaration.get("axioms", [])
+        ))
+
+        support = {
+            row["lean_module"]: row
+            for row in proof.load_dataset(proof.ROOT)["formal_support"]
+        }
+        consumers = support["D0.Algebra.FiniteMatrixTensorProduct"]["referenced_by"]
+        self.assertIn("D0/Representation/SourcePortPreparation.lean", consumers)
+
+        hits = proof.full_text_search(
+            proof.ROOT, "SourcePortPreparation finiteMatrixTensorProduct", limit=10
+        )
+        self.assertTrue(any(
+            hit["source"] == "03_FORMALIZATION/D0/Representation/SourcePortPreparation.lean"
+            and hit["direct_content"]
+            for hit in hits
+        ))
+
     def test_flat_tensor_compatibility_wrapper_uses_shared_operator_and_transpose_law(self) -> None:
         inventory_path = (
             proof.ROOT
