@@ -9814,3 +9814,77 @@ this is bounded research review, not physical/assembly acceptance.
 Analytical inherited inputs and complete replay scope are pinned in
 INTEGRATION_REVIEW.md. Removing7af recovers793558a8 primary exactly;
 oldbrief and packets are preserved. No scientific status promoted.
+
+### 25 October: a cofinal reflected source with the actual physical lift
+
+Phase: native realization / refinement composition. SAME PR334,
+constitutive/native-programme-v1; input6eb11a2f. Parent:7af's
+fixed-mesh restriction. Consume its exact report, scalar Gram,
+uniform readiness/rotation and complete product-score to construct
+ONE upfront locally finite private-cohort sequence across the owned
+permitted meshes, retaining every completed old register/channel
+and the actual full primitive price at every prefix.
+
+Use the owned affine-null-scalar/quadratic-H nonvacuum member and
+its exact midpoint roots, with explicit regular full-field centres
+Z_h and Sample_h Z_h=Y_h. The ambient common comparison is
+Sample_h(Z_h+v), including independent coframe/connection/CAR tests.
+Retain density/calibration, Cayley(h omega), material slack and
+mu_h=c_quad,h*h4. Physical gain uses bar_g_h=c_quad,h*g_h.
+The actual packet lift ell_h includes the UNWEIGHTED geometry sum
+and full CAR/purifier covariance, not just the number of packets.
+
+Proposed substitution: monotone cofinal mesh schedule with a finite
+envelope of k_h²,ell_h²,bar_g_h^-1 and actual readout/decoder
+constants at most j^(1/64). Fresh counts n_j proportional to
+k_hj²*j^(3/4) make variance summable. The real physical product
+lift is bounded by sqrt(sum n_j ell_hj²), and the true-gain-normalized
+joint source is O(M^(-3/32)) at EVERY prefix. Whole native bank errors
+remain summably budgeted. Native centre preparers are chosen once;
+old words/catalogues are never upgraded retroactively.
+
+This constructs a native-ENDPOINT source process and record tower,
+not a physical C1 controller or independent fixed-h diagonal limits.
+No exact arbitrary-smooth coarse-to-fine decoder, common infinite
+cyclic heat, generic off-shell P5/C8 Einstein identity, or continuous
+actuation from finite-word density is inferred. Complete physical X_N,
+source/controller admission and independent input/cut/clock/stopping
+equations keep their own physical application obligations.
+
+Inputs:7af and its proofs/processor;7k(128)-(129) full ambient sampling;
+paid-writer12(51)-(54) corrected operator decoder; original midpoint
+exact family and7q/s canonical packet lift/covariance. Write paths:
+primary7ag, this brief and sources/d0_native_cofinal_reflected_source_2026-10-25/
+only. Bounded disjoint map/theorem/code assistants in this existing PR.
+Decisive checks: all-prefix envelope/product-norm proof; explicit ambient
+centre/lift application; finite native private-prefix inventory and
+protection; exact quadrature-gain control; failure of too-fast cofinal
+refinement. No old root/rank/geometry/Lean or full research replay.
+
+The bounded native request lane also constructs a finite READ-ONLY
+catalogue decoder from7c's star-plane words and Walsh character
+cancellation, with exact7j inverse macros. Nonselected request blocks
+are EXACT identity; finite selected SO targets are approximated without
+a known-one, Toffoli or new controlled primitive. Full key carrier,
+preparation and complement columns stay in the word/heat. This replaces
+an assumed finite decoder, not physical key birth, smooth field actuation
+or arbitrary change of the cut. NATIVE_REQUEST.md and its narrow
+all-column control share this packet/write surface and consumer7ag.
+
+Final7ag/source pins and exact inherited owners are in
+02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/INTEGRATION_REVIEW.md.
+RootfinalCLIexit0/PASS47; stdout equals saved receipt;10input and2section
+pins verified. Receipt9075bytes/SHA256
+08af63435343d8bc0de3e9b4b6f29d000b581fabcd6fedaaae814d693628c26a.
+Final source-only reviews accept the scoped mathematics and keep native
+C1/controller admission and independent physical rows open. No old-root,
+large native suite, Lean or mathematical corpus replay was performed.
+
+Next consuming construction to investigate: predeclare finite native
+centre/plus/minus catalogues at each new cohort's OWN stencil spacing,
+match their real clocks before execution, and vary only a growing fresh
+tail after one unchanged completed prefix. Its actual divided gain would
+retain the stencil factors and old full-product price. This could supply
+actual endpoint tests without retroactively refining old catalogues or
+claiming a C1 word selector. It is a proposed application, not a proved
+admissible physical variation law or a newly registered execution.

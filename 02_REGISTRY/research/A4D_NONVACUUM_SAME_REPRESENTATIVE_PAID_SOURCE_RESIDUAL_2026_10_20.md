@@ -7823,6 +7823,233 @@ generic Einstein universality, positive_gr or raw216 is obtained from
 (288). GR_closed=false.
 
 
+## 7ag. One cofinal native endpoint process with a real request decoder and physical norm
+
+25 October, SAME PR334/constitutive owner, input6eb11a2f. The parent is
+7af's fixed-mesh restriction and its supplied finite source-request
+implementation. Section7m already gives private-prefix composition on
+the declared ideal source-X chart; that theorem is consumed, not repeated.
+The changed input is7af's literal native reflected processor, exact report,
+uniform rotation/readiness, and full product score for imperfect banks.
+It now permits ONE cofinal native-ENDPOINT process with a quantified
+physical lift at every completed prefix. It does not supply a continuous
+native controller or all independent apparatus stationary equations.
+
+The detailed consumers are [GEOMETRIC_MAP.md](sources/d0_native_cofinal_reflected_source_2026-10-25/GEOMETRIC_MAP.md),
+[COFINAL_THEOREM.md](sources/d0_native_cofinal_reflected_source_2026-10-25/COFINAL_THEOREM.md)
+and [NATIVE_REQUEST.md](sources/d0_native_cofinal_reflected_source_2026-10-25/NATIVE_REQUEST.md).
+The new bounded code is [cofinal_source.py](sources/d0_native_cofinal_reflected_source_2026-10-25/cofinal_source.py)
+and [check_cofinal_source.py](sources/d0_native_cofinal_reflected_source_2026-10-25/check_cofinal_source.py).
+
+### A finite read-only request decoder is an executed native word
+
+Consume the star-plane operation D_(a,k) of7c(29), with
+K=2^(n-1) and generator J_(0,a). For d genuinely retained request bits
+q and subset S, replace EVERY G_0^k slot by its conjugation with the
+literal parity-CX word from S to data wire0. At request q the generator
+changes by chi_S(q)=(-1)^(S.q). Products over all S with integer exponent
+sign chi_S(q*) therefore give exactly
+
+    D_(a,k,q*)|_q
+      =exp[K k theta sum_S chi_S(q*)chi_S(q) J_(0,a)]
+      =I (q!=q*),
+       exp[K 2^d k theta J_(0,a)] (q=q*).              (291)
+
+Negative G letters use the actual7j SourceI inverse. The request is NEVER
+a gate target. All data, dirty helper/spin and nonselected request columns
+remain in the exact word. No known-one, ideal Boolean predicate, Toffoli
+or new controlled rotation is needed. The old irrational-angle theorem
+and a finite product of star-plane rotations then approximate any fixed
+finite real SO request catalogue uniformly on ALL its input columns,
+while keeping the request read-only EXACTLY. This is a constructive finite
+decoder, with all primitive powers, controls, routing and inverse stages
+paid. It is not an efficient or installed cost-free universal compiler.
+
+Inside the reflected echo, a known request0 is a genuine private input
+blank; its WHOLE key carrier remains in the heat. It does not multiply
+the cut rank as an arbitrary-input key would. All other keys still act
+through their actual decoder blocks. A generated distribution over keys
+must use its actual coherent state and full price, not a chosen sharp
+conditional branch. The source of key birth, physical code selection,
+independent decoder controls and native smooth actuation are not inferred
+from(291). The finite decoder removes that construction premise only.
+
+### Use the existing exact roots and the actual full ambient sampling
+
+For a nonempty concrete member of the owned original family take affine
+null scalar Psi and quadratic transverse H, including a nonzero harmonic
+quadratic part if desired. The owned midpoint right inverse supplies exact
+all16+24+2 roots Y_h on each sufficiently fine permitted mesh with its real
+collar and material slack. No new metric, coupling or root search occurs.
+For this member there are explicit uniformly C3 centres
+Z_h=(e_op,h,omega_h,psi_prepared,h)
+with Y_h=Sample_h Z_h and Z_h->Z in C2; the link coefficients are the
+original backward differences divided by h. The affine material is its
+actual midpoint history, not an independently assigned scalar source.
+The fixed calibration is Psi_read=s² psi_prepared, so H uses
+||Psi_read'||²=s4||psi_prepared'||² with the original lambda_minus.
+
+Use7k(128)-(129)'s FULL ambient map at those centres:
+
+    F_h(v)=Sample_h(Z_h+v),
+    delta U_r=D Cayley_(h omega_r)[h delta omega_r].    (292)
+
+All independent coframe/connection/CAR directions remain; v is a common
+compactly supported physical C3 test, not a tangent to the pp-wave ansatz.
+The corrected inverse-coframe, actual density/calibration and material
+data of paid-writer12 remain. The finite source quadrature is
+mu_h=c_quad,h h4. Thus define
+
+    E_h^cont=(D Phi_h composed with D Sample_h)/c_quad,h,
+    bar_g_h=c_quad,h g_h>0.                            (293)
+
+This is the actual source-unit transport. Substituting g_h alone into a
+continuum gain silently drops quadrature. The owned exact trace-count/
+inverse-PF identity gives sum_(a anchored at x)c_a/rho_x=m_h independent
+of x, with m_h=nu*528*K_AF*wbar. Thus the actual unequal-PF source is
+Phi_h=m_h sum_x(fhat_x+lambda_minus qhat_x) and
+c_quad,h=m_h h^(-4) in this counting convention. No uniform Born
+weights are substituted. Rescaling Phi_h changes g_h inversely, leaving
+bar_g_h invariant. The source identity of7af is
+used only at its primary two-jet family. Neither P5/C8 nor this section
+asserts generic off-shell Einstein-source equality.
+
+Let xi_h be the SAME pure canonical packet, including its actual CAR
+purifier/reference. Extra source work is a fixed blank TARGET factor,
+with zero derivative here, and its actual leakage is included in the
+whole-state eta_j. Independently moving source work keeps its own lift.
+The calibrated packet speed is
+
+    ell_h=||D(xi_h composed with F_h)(0)||_(C3->sphere).
+
+Its square contains sum_a dot(t_a)^2/[4(1-t_a²)] for the geometry factors
+WITHOUT a normalized site weight, plus the actual weighted CAR term
+sum_x w_x[||dot(psi_x)||²+(psi_x.dot(psi_x))²/d_x²]. Positive slack/gaps
+give a finite computable upper bound at each h. A growing number of
+geometry features can make ell_h grow. The spatial operator transport
+also retains its real decoder norm kappa_h and operator chord scale;
+neither injectivity nor the five/nine-point profile inverse bounds this
+full ambient norm uniformly.
+
+### Slow cofinal execution controls the full product normal at every prefix
+
+For each permitted mesh h_m choose a monotone finite bound C_m>=1 on
+k_hm², ell_hm², bar_g_hm^(-1) and any additional actual readout/decoder
+constants used by the consumer, also requiring C_m>=m. Define integer
+thresholds J_m=C_m^64. For each cohort j use
+m(j)=max({1} union {m:J_m<=j}), with the initial finite segment
+treated separately. Equal thresholds may skip redundant coarse levels.
+This one computable schedule is fixed upfront. It is nondecreasing and
+cofinal, and its used constants are at most j^(1/64). It can be extremely
+slow. No physical efficient runtime or externally forced mesh clock is
+claimed. At every j append actual native centre preparation and reflected
+report words on fresh private resources, with whole-bank errors eta_j
+chosen square-summably and inside the actual q_max<1/2 collar.
+
+Take n_j=ceil(k_hj² j^(3/4)), enlarged to at least2. Every old word stays
+executed at its original accuracy. There is one finite-prefix stage list,
+one true closing cut, r_M=4*2^M in the spin-only protected sector,
+and the same actual full heat formula as
+7af with its new total clock/dimension. Full request/key complements stay
+in that heat; a decoder is never replaced by its one selected block.
+An additional independently supplied oldRIGHT support of rank r_old
+multiplies this cut rank, w_M and Gamma_M ONCE by r_old; it is never
+silently omitted or allocated anew at each cohort.
+
+At the canonical centres put
+
+    a_j=alpha_j gamma_j(1-2gamma_j q0)/t_j,
+    A_M=sum_(j<=M) a_j bar_g_hj,
+    Gamma_M^phys=w_M A_M,
+    DJ_M composed with the common lift
+             =w_M sum_j a_j bar_g_hj E_hj^cont.         (294)
+
+Use actual q_j and its positive slope for actual prepared states and
+retain any genuine first-source/lift errors. All source gains are derived
+from the one cumulative determinant; no multiplier derivative is omitted.
+The exact product score and ambient bank norm of7af remain
+
+    R_j=I-(a_j/2)(P_(n_j)-q0 I),
+    ||D_Psi J_M||=4w_M sqrt[product_j(1+v_j)-1].       (295)
+
+Complete first-conditionals vanish at the owned all42 centres. Hence
+v_j=O(k_hj^4/n_j²), summable by the chosen schedule. Whole-bank/source-
+work errors add their actual O(eta_j²) variance debt; they are not treated
+as per-packet errors or a C1 controller theorem. To compare THROUGH an
+actual endpoint, a fixed orthogonal transport can take its target whole
+cohort state to its actual prepared state. Applying that same fixed
+transport to the local smooth state chart preserves its speed. This is
+a mathematical state comparison, not a supplied native continuous actuator.
+For real normalized states at distance eta_j<1 the transport can satisfy
+||T_j-I||=eta_j. Its whole-cohort report-jet error is at most
+4eta_j sqrt(n_j)ell_hj in the stated physical dual norm. Exponentially
+small chosen eta_j therefore controls both variance and the error divided
+by bar_g_hj under the same slow envelope.
+
+The calibrated common comparison speed K_M obeys
+
+    K_M²=sup_(||v||C3<=1) sum_j n_j
+                 ||D(xi_hj composed with F_hj)(0)[v]||²
+         <=sum_j n_j ell_hj².                         (296)
+
+It cannot be replaced by total packet count N_M=sum_j n_j. The envelope
+gives N_M=O(M^(113/64)), K_M=O(M^(57/64)), A_M>=c M^(63/64).
+With V=sum_j v_j<infinity, the TRUE-gain-normalized full preparation
+source therefore satisfies
+
+    K_M ||D_Psi J_M||/Gamma_M^phys
+       =4K_M/A_M sqrt[product_j(1+v_j)-1]
+       =O(M^(-3/32)) ->0                              (297)
+
+at EVERY prefix, including finite early inaccuracies. This bounds any
+genuine admitted physical field lift with that speed bound. It does not
+manufacture such a native lift; any additional actual lift contribution
+must be budgeted separately. If a genuine pulled-back report source is
+Dq_j=bar_g_hj(E_hj^cont+e_j), its remainder is the actual positive weighted
+mean with weights a_j bar_g_hj; normalized errors must tend to0 in that
+same physical dual norm. Independent readiness/rotation/controller rows are
+added before applying this mean. A nonzero limiting genuine report
+source cannot be hidden: its pairing with an actual unit-speed physical
+test is bounded by the left side of(297). This is not an off-shell GR
+claim about the polynomial report.
+
+Arbitrary cofinal h_j is insufficient. If bar_g_hj decays like2^(-j),
+sum_j a_j bar_g_hj can stay finite; any retained nonzero early preparation
+variance then leaves a floor, amplified by growing physical speed. The
+slow mesh schedule addresses precisely that failure mechanism, while
+preserving the true rank/gain and all old errors.
+
+### Retained records have one limit; the absolute heat is not that limit
+
+Consume7m's private-factor prefix map with the new scalar-GRAM blocks.
+Completed old observables embed by A->A tensor I; the completed dynamics
+commutes with these embeddings on all columns. Finite cylinder tests and
+their retained states therefore define one consistent local record tower.
+This is a single upfront sequence, not separately selected fixed-h limits.
+The newest decoded primary geometry converges to the SAME curved
+nonvacuum metric through the owned exact-root/midpoint readout, with
+native state/readout errors chosen using their actual finite decoder bounds.
+
+Old samples do not determine arbitrary finer smooth fields; a smooth bump
+can vanish on every coarse node and remain nonzero on a new fine node.
+The common smooth comparison in(292) supplies the shared parent, not a
+new coarse-sample oracle. Nor does the record tower identify all growing
+cyclic Hodge operators or their absolute heat/determinant prices. Every
+finite price is computed on its actual new full carrier and clock.
+
+**Parent consequence.** The fixed-h endpoint/source-normal result of7af
+now has one spatially cofinal native-word consumer with a convergent
+curved readout and the actual physical lift/gain at every prefix. The
+finite read-only decoder is explicitly constructed. This removes those
+two construction premises within the declared native profile. Physical
+port/primitive admission, key/source birth and same-process C1 or actual
+finite-secant variation graph, all independent apparatus/cut/clock/stopping
+equations and complete selected-action binding remain. No old catalogue
+is retroactively refined; pointwise native density does not prove those
+missing controls. Full physical joint stationarity, generic GR,
+positive_gr and raw216 remain open. GR_closed=false.
+
+
 ## 8. Reproduction
 
 Run from this directory:
