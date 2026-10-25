@@ -18231,6 +18231,413 @@ assert eq(s.Matrix([[B0[0,0]]]),s.Matrix([[p]]))
 print('PASS literal star commutant/lower-bound identity; native heralded fresh+; all4 measured-bus branches and quiet cuts; exact heralded logicalCX; positive J-feedback contrast')
 ```
 
+## 7bl. The ORIGINAL full128 has an exact heralded CAR reader and paid intrinsic rotors; its full Book source survives
+
+25 October2026. SAME #334 / constitutive / native-programme-v1; continuation
+of7bk's concrete nonterminal-reader question, not a new action or a new
+execution owner. The changed mathematical input is the actual original
+CAR16 Kraus palette, which was explicitly OUTSIDE7bk521's literal
+port-star. We consume the [original constructor](sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py),
+Git blob ee8de4635d24c668949ac9a0186616ab7d59f2ed, lines51--103, and
+the [complete original unitary](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#131-keep-the-actual-row-of-q-including-every-unprepared-column)
+(59)--(60). The existing [forward-only Book owner](A4D_ORIGINAL_FULL128_FORWARD_ONLY_FIXED_INPUT_HODGE_CLOCK_THEOREM_2026_10_22.md#1-exact-original-complete-forward-stinespring-and-completion-independent-native-input-cut)
+supplies the fixed-input-cut identity. None of those results supplies
+the missing physical placement in the33-scene SourcePort frame or
+selects the full original Hodge/action. This is a native-INSTRUMENT
+operation/source substitution at its already declared carrier.
+
+The parent consumer is7bk525's required nonterminal nondemolition
+reader, together with7bj's addressed packet actuation. We now exhibit
+that reader intrinsically on ONE explicitly encoded CAR plane, with
+oldRIGHT retained. Its transport to the mutable work bit in525 is
+still missing. Operator identities below use the full16-dimensional
+CAR space, operator norm, genuine branch amplitudes and unnormalized
+CP instruments; there is no survival/gain normalization in the action.
+
+### Two literal histories implement the reader, including an open amplitude family
+
+Use precisely creator order (0,2,3,1), bit masks0,...,15, phases
+(i,i,-1,-i), original flat boost theta=0, and common0<nu<1.
+Write n_r=c_r c_r^dagger, Z_r=I-2n_r, s=sqrt(1-nu^2).
+The actual Walsh coefficient rows N_(l,c) obey
+
+    A=N_(0,0)=(nu/16) sum_r [(phi_r-1)c_r+(conj(phi_r)-1)c_r^dagger],
+    A=A^dagger, A^2=kappa I16, kappa=5nu^2/128,
+    N_(4,1)=(1+s)I16/2,
+    N_(6,1)=(1-s)(Z0+Z1+Z2+Z3)/8,
+    N_(14,1)=(1-s)(Z0-Z1+Z2-Z3)/8,
+    K_(4l+2c+1)=-2p sqrt(p) N_(l,c)^dagger A.       (528)
+
+Here p=phi^-1 and p^2+p=1. The square-root formula is literal:
+left_r=I-(1-s)n_r and right_r=sI+(1-s)n_r. Duplicated Julia
+words followed by the original Walsh transform give528, without
+choosing a new Kraus decomposition. CAR anticommutation gives
+sum_r|phi_r-1|^2=10 and hence the scalar kappa.
+
+Let i_C=(|0>,|5>) embed a logical qubit; |5> occupies modes0 and2.
+For chronological histories (first,second), the full16 identities are
+
+    K27 K19=alpha (Z0+Z1+Z2+Z3)/4,
+    K59 K19=alpha (Z0-Z1+Z2-Z3)/4,
+    alpha=5nu^4 p^3/128,
+    K27 K19 i_C=alpha i_C P0,
+    K59 K19 i_C=-alpha i_C P1,
+    E_GOOD i_C=alpha^2 i_C.                         (529)
+
+P0=diag(1,0), P1=diag(0,1), and
+E_GOOD=(K27K19)^dagger(K27K19)+(K59K19)^dagger(K59K19)
+on the FULL CAR space. The factors (1+s)(1-s)=nu^2 are essential;
+at nu3/5, alpha=81p^3/16000. It is an AMPLITUDE; success is gamma=alpha^2.
+On an unknown input supported on C, including arbitrary oldRIGHT
+entanglement, the two accepted CP maps are exactly gamma P_b(.)P_b.
+After heralding GOOD their instrument is the exact logical Luders
+instrument, and the live DATA remains in the same C. Every operation
+is tensor I_oldRIGHT. Conditioning on a particular b can of course
+change the correlated oldRIGHT state by ordinary conditioning; no
+operation or reset is performed on that reference.
+
+Both native rounds act on the PREVIOUS DATA, with separate fresh App
+registers and both fine labels retained. All128^2 formal histories stay
+in the complete instrument, including dark slots; everything except
+(19,27),(19,59) is FAIL. Completeness follows from the original
+Walsh Parseval sum N^dagger N=I and p^2+p=1. Restricted to C the FAIL
+effect is exactly(1-gamma)I, but its individual CP maps and record law
+are not erased. There is no repeat-until-success on unknown DATA:
+failure generally disturbs it. Access to an arbitrary state in C is
+an input promise, not a new preparation theorem. The two accepted
+histories differ in their FINE label, not their port: both second
+ports equal1. Indeed the whole port1 effect is
+4p^3 A^dagger A=(5nu^2p^3/32)I16 at flat. Outward copying only that
+Golden-port factor does not implement the fine-label reader.
+
+This is not a deterministic replacement for525. In any complete finite
+depth<=n protocol of these original instruments with intervening
+unitary DATA controls, K0=I-2p^2 Delta>=p^3 I is invertible.
+Its all-quiet terminal leaf has smallest singular value>=p^(3n).
+Whichever reported binary outcome receives it therefore has compressed
+effect>=p^(6n)I on C; its operator distance from a nontrivial target
+projector is at leastp^(6n). It cannot be an exact complete two-outcome
+Luders reader. Assigning quiet to a THIRD FAIL outcome evades this
+obstruction, exactly as529 does. Larger carriers, coherent nonblank-App
+controls and genuinely different instruments keep their own scope.
+The added FAIL language and its real source must be composed before
+using529 inside525; conditioning does not erase those branches.
+
+### Exact first-jet guard prevents a false open-field transport
+
+Keep nu3/5 and the ORIGINAL role1 proper boost coordinate theta of the
+literal constructor, x1(theta)=nu i c1 exp(theta T),
+T=c0 c1^dagger+c1 c0^dagger. Differentiate its true defect roots by
+the Sylvester equation, not a frozen square root. At theta0,
+
+    i_C^dagger E'_GOOD i_C
+      =gamma [[-1/90,(1+i)/180],[(1-i)/180,0]],
+    (I-i_C i_C^dagger)(K27K19)' i_C |1>
+      =alpha[-|6>/8+|15>/360],
+    Tr16 Delta'=-9/400,
+    i_C^dagger Delta' i_C=0, Delta=A^dagger A.      (530)
+
+Thus the reader is exact on the entire FLAT common-amplitude family,
+not on an already proved open Lorentz/42-field chart. The nonscalar
+GOOD jet cannot be removed by an arbitrary C1 moving isometric code
+i(theta) with i(0)=i_C:529 gives
+D(i^dagger E_GOOD i)=i_C^dagger E'_GOOD i_C+
+gamma D(i^dagger i)=i_C^dagger E'_GOOD i_C.
+Allowing a scalar retuning of gamma also cannot remove its traceless
+part. Changing the histories, controls or success projector would be
+a different construction with its own full source. This is a narrow
+first-jet obstruction when THIS native boost varies. Fixed flat utility
+hardware with a varying encoded input or a separate field block is
+not excluded; its actual preparation/coupling/source map still must be
+proved. No open-field variation of every utility device is made a new
+universal prerequisite. This is not a no-go for another native reader,
+a coupled physical cancellation or the owned GR family.
+
+### There are actual noncommuting CAR controls, with paid forward inverses
+
+The same flat palette has intrinsic gates; observational effect span
+is not the argument. At nu3/5 set kappa9/640 and
+u_j=N_(8j,0)/sqrt(kappa), v_j=iN_(8j+2,0)/sqrt(kappa), j0,...,3.
+They are Hermitian Clifford unit vectors. The u_j span a real
+four-plane Gamma and v_j span its orthogonal four-plane Delta_M
+(this Majorana plane is NOT the Book Hodge Delta).
+With lambda=2p sqrt(p)kappa, literal accepted leaves give
+
+    K_(32j+1)=-lambda u_j u_0, j=1,2,3,
+    K_(32j+9)=-i lambda v_j u_0, j=0,1,2,3,
+    K_(32j+9) K9=lambda^2 v_j v_0, j=1,2,3.        (531)
+
+Each first line is a full16 unitary times lambda, with success lambda^2
+on EVERY input, tensor I_oldRIGHT. The two-leaf last line has success
+lambda^4. For both weighted Walsh sets the inner products with the
+zeroth vector are(1/5,-1/5,-1/5); their four vectors are independent.
+Each rotor circle is densely covered by its positive powers: if its
+angle were rational pi, the rational root-of-unity trace2cos(theta)
+=+/-2/5 would be an integer, a contradiction. Three independent star
+bivectors u0 wedge uj span u0 wedge u0-perp; their brackets give all
+six so4 directions. The identical proof applies to v0 wedge vj.
+Even Clifford products on orthogonal four-planes commute. Precisely
+these FIRST-LINE u rotors and TWO-LEAF last-line v rotors densely
+generate the represented connected Spin(Gamma4) times Spin(Delta_M4)
+subgroup, with its representation kernel. The single mixed leaves
+-i v_j u0 can lie in discrete split-preserving components outside that
+connected subgroup; they are not asserted to belong to it. This is a
+structural Lie proof, not a new rank or gate census.
+
+The inverse of U_j=-u_j u0 is also an actual forward accepted word.
+At this fixture K19=-eta u0 with eta=(9/5)p sqrt(p)sqrt(kappa):
+
+    K19 K_(32j+1) K19=eta^2 lambda U_j^dagger,
+    <3|U_1|0>=+2i/5.                               (532)
+
+The first equation is chronological(19,32j+1,19); its success is
+eta^4 lambda^2. It uses three new forward rounds and keeps every new
+failure record. It is NOT a reversal of an already measured tape.
+The second equation proves that these controls do not preserve C.
+The actual normalized Kraus phase is MINUS u1u0; the unnegated rotor
+has coefficient-2i/5. Phases cannot be silently discarded in a
+coherent Book corner. No uniform success lower bound survives
+arbitrarily long dense approximations, and every complete length and
+fine failure remains physically charged.
+
+Do not turn531 into Spin8 or arbitrary addressed G/CX. For all flat
+coefficient0 rows, Hermitianizing them puts the vector ENTIRELY in
+Gamma or ENTIRELY in Delta_M: (phi_r+1)/(phi_r-1) is purely imaginary.
+Their induced Majorana rotations preserve that orthogonal split.
+The remaining coefficient1 rows are scalar/zero or
+(1/40)sum sigma_r Z_r at nu3/5. Every such nonconstant signed sum has
+a zero occupation eigenvector. A product containing one is singular,
+so cannot be a full16-input unitary times a nonzero scalar. Thus
+finite branch PRODUCTS from this repeated measured palette do not
+acquire the missing mixed continuous Clifford generators. This does
+not constrain coherent reuse of nonblank App under the full U(59),
+new paid App processing, or possible encoded singular-filter gates;
+those are separate actual operations, not supplied by a density claim.
+
+### Preserve the ORIGINAL full-CAR cut and its surviving Book source
+
+The actual two-fresh-App coherent column is
+V2=sum_(a,b)|a,b> tensor K_b K_a, tensor I_oldRIGHT.
+Before any further physical factory/scene registers, full dimension is
+D=16*128^2*q_old, where the genuine original oldRIGHT has q_old=128.
+There is no second extra128 multiplier. Its ORIGINAL free-CAR input
+cut P16=I16 tensor|00><00|_App tensor I_old has rank16q_old.
+Its quiet corner and the deliberately DIFFERENT code cuts are
+
+    C16(Y)=B(Y)^2, B=I-t Delta, t=2p^2,
+    C_C(Y)=i_C^dagger B(Y)^2 i_C, rank2q_old,
+    c_v(Y)=<v|B(Y)^2|v>, rankq_old for a codeblank,
+    F=I-C^dagger C on the corresponding prepared cut. (533)
+
+Each fixed corner follows from the full forward column without a
+chosen unitary completion. For C_C away from flat,
+C_C^dagger C_C is NOT automatically i_C^dagger B^4 i_C:
+quiet-App DATA can leak out of the code. A smaller code or codeblank
+cut is a NEW declared input/cut experiment, not a consequence of the
+logical input promise or529. The original full-CAR cut remains.
+The GOOD amplitudes alpha P_b are nonblank histories and do not
+replace any of these quiet corners.
+
+At the flat family b=1-5p^2nu^2/64, every quiet corner is b^2 times
+identity on its chosen cut. Put Q=1-zeta+zeta b^4. The ordinary
+feedback is J_r=-r log Q, with r=16q_old,2q_old or q_old respectively.
+For the original full input, at nu3/5 and the actual theta jet530,
+
+    DC16=-2tb DDelta,
+    DJ16=(4q_old zeta t b^3/Q) Tr16(DDelta),
+    (DJ16)[partial_theta]=-9q_old zeta t b^3/(100Q),
+    (DJ_C)[partial_theta]=0.                        (534)
+
+The last equality is the DIFFERENT code cut, using its trace of the
+compressed Delta' in530. Replacing the original cut by that one would
+erase a genuine original first-source term. The code's exact logical
+reader and state-independent acceptance do not make the full Book
+action/source neutral. More generally code-cut DJ is the same formula
+with Tr_C(i_C^dagger DDelta i_C), not the full trace. The full-CAR
+nu derivative is10q_old zeta p^2 nu b^3/Q, also nonzero.
+
+The original complete action retains H(Delta_actual)+J+
+Tr(sigma Delta_actual), all independent preparation/cut/metric,
+oldRIGHT, controller, recorder and clock variations. These two ticks
+are actual full128 calls; their factory primitive lengths, fresh App
+space and scene embedding are not free. Only for the ALREADY DECLARED
+paired-cut Hodge, not the original scene Hodge, its flat thermal trace
+is D-2r+2r exp[-beta(1-b^4)], retaining ALL harmonic zeros. No new
+sigma, compulsory Info term or negative counterterm is selected.
+This fixed-depth two-tick language does not satisfy the old
+first-match stopping rule, so its m+1/CQ stationary-price multiplier
+cannot be imported. The actual physical scene heat and whole work
+source still require their same-execution map.
+
+### Parent substitution, scope and exact new check
+
+We have replaced an unspecified reader by the literal native
+history pair529 at a concrete encoded input, and supplied actual
+intrinsic unitary resources531--532. This is supporting work for525,
+not discharge of its RawZone/work-reader premise: a paid reference-safe
+intertwiner must still bind that mutable bit, port copies, encoded
+input, fine-label recorder and the full33-scene completion.530 prevents
+the immediate smooth transport of THIS fixed pair when its own native
+boost is the varying field; fixed utility hardware keeps its separate
+legitimate application.534 preserves the original absolute source that a
+code-only replacement would hide.7bj and the connected-packet theorem
+retain their conditional addressed interface and true gain/norm; no
+extra prerequisite, restriction on physical short memory interactions,
+or Banach/root/Einstein claim is introduced. Full GR dynamics, physical
+selection and refinement remain open; GR_closed=false, positive_gr
+and raw216 are not promoted.
+
+Only the changed exact CAR/Walsh identities, specified histories,
+their original proper-boost Sylvester jet, full-input rotor phases
+and fixed-code Book jet are evaluated below. The elementary Clifford
+Lie/finite-depth proofs use those matrices, not a finite catalogue as
+a substitute for proof. Original root/GR/clock/density/Lean and stopped
+CQ theorems are consumed without another replay. The embedded check
+uses ordinary Python assertions (run without -O).
+
+```python
+"""NEW exact original full128 two-tick encoded reader; no GR/root replay."""
+import sympy as s
+
+I=s.eye(16); Z=s.zeros(16); nu=s.Rational(3,5)
+order=(0,2,3,1)
+cs=[]
+for r in range(4):
+    c=s.zeros(16); before=order[:order.index(r)]
+    for bits in range(16):
+        if not (bits>>r)&1:
+            c[bits|(1<<r),bits]=(-1)**sum((bits>>j)&1 for j in before)
+    cs.append(c)
+ns=[c*c.H for c in cs]
+zs=[I-2*n for n in ns]
+ph=(s.I,s.I,-1,-s.I)
+words=[]
+for r,c in enumerate(cs):
+    x=nu*ph[r]*c
+    left=I-ns[r]/5; right=4*I/5+ns[r]/5
+    for w in ((x,left),(x.H,right),(-nu*c,-left),(-nu*c.H,-right)):
+        words.extend((w,w))
+rows=[]
+for lab in range(32):
+    signs=[(-1)**(bin(lab&j).count('1')&1) for j in range(32)]
+    for b in (0,1):
+        rows.append(sum((signs[j]*words[j][b] for j in range(32)),s.zeros(16))/32)
+eq=lambda X,Y:all(s.simplify(a-b)==0 for a,b in zip(X,Y))
+assert eq(sum((N.H*N for N in rows),s.zeros(16)),I)
+A=rows[0]; kap=s.Rational(9,640)
+assert eq(A.H,A) and eq(A*A,kap*I)
+assert eq(rows[9],9*I/10)
+assert eq(rows[13],sum(zs,s.zeros(16))/40)
+assert eq(rows[29],(zs[0]-zs[1]+zs[2]-zs[3])/40)
+# Write odd-port products directly: each single tick coefficient is -2p sqrt(p).
+# Two-tick coefficient is 4p^3; no division by a physical branch probability.
+T0=4*rows[13].H*A*rows[9].H*A
+T1=4*rows[29].H*A*rows[9].H*A
+alpha0=s.Rational(81,16000)
+E=s.zeros(16,2); E[0,0]=E[5,1]=1
+P0=s.diag(1,0);P1=s.diag(0,1)
+assert eq(T0*E,alpha0*E*P0)
+assert eq(T1*E,-alpha0*E*P1)
+assert eq(E.H*(T0.H*T0+T1.H*T1)*E,alpha0**2*s.eye(2))
+# Full16 operator identity and leakage-free code; no deletion of other CAR modes.
+assert eq(T0,alpha0*sum(zs,s.zeros(16))/4)
+assert eq(T1,alpha0*(zs[0]-zs[1]+zs[2]-zs[3])/4)
+assert eq((I-E*E.H)*T0*E,s.zeros(16,2))
+assert eq((I-E*E.H)*T1*E,s.zeros(16,2))
+
+# Full instrument completeness follows exactly from Parseval and p^2+p=1.
+p=s.symbols('p',real=True)
+def reduce_p(x):
+    return s.rem(s.Poly(s.expand(x),p),s.Poly(p*p+p-1,p)).as_expr()
+assert reduce_p(-4*p*p+4*p**4+4*p**3)==0
+# K0=B is scalar at flat. Original blank-App two-tick corner is B^2,
+# not one of the selected successful histories.
+beta=1-2*p*p*kap
+Cquiet=beta**2
+assert s.simplify(s.diff(Cquiet,p)+8*kap*p*beta)==0
+
+# The first proper boost jet is built by the ORIGINAL defect Sylvester law.
+gen=cs[0]*cs[1].H+cs[1]*cs[0].H
+dwords=[]
+for r,c in enumerate(cs):
+    x=nu*ph[r]*c; dx=nu*ph[r]*c*gen if r==1 else s.zeros(16)
+    L=I-ns[r]/5; R=4*I/5+ns[r]/5
+    yl=-(dx*x.H+x*dx.H);yr=-(dx.H*x+x.H*dx)
+    dL=s.Matrix(16,16,lambda i,j:yl[i,j]/(L[i,i]+L[j,j]))
+    dR=s.Matrix(16,16,lambda i,j:yr[i,j]/(R[i,i]+R[j,j]))
+    assert eq(L*dL+dL*L,yl) and eq(R*dR+dR*R,yr)
+    for dw in ((dx,dL),(dx.H,dR),(Z,Z),(Z,Z)):
+        dwords.extend((dw,dw))
+drows=[]
+for lab in range(32):
+    signs=[(-1)**(bin(lab&j).count('1')&1) for j in range(32)]
+    for b in (0,1):
+        drows.append(sum((signs[j]*dwords[j][b] for j in range(32)),s.zeros(16))/32)
+dA=drows[0]
+dTs=[]
+for ix in (13,29):
+    N=rows[ix]; dN=drows[ix]; M=rows[9]; dM=drows[9]
+    dT=4*(dN.H*A*M.H*A+N.H*dA*M.H*A+N.H*A*dM.H*A+N.H*A*M.H*dA)
+    dTs.append(s.simplify(dT))
+dE=s.simplify(E.H*(dTs[0].H*T0+T0.H*dTs[0]+dTs[1].H*T1+T1.H*dTs[1])*E)
+leak=[s.simplify((I-E*E.H)*dT*E) for dT in dTs]
+print('GOOD effect derivative /p^6:',dE)
+print('nonzero code-leakage derivative entries:',[[(i,j,M[i,j]) for i in range(16) for j in range(2) if M[i,j]!=0] for M in leak])
+print('compression derivatives /p^3:',[E.H*dT*E for dT in dTs])
+print('dDelta scalar trace:',s.simplify(s.trace(dA.H*A+A.H*dA)),'; zero?',eq(dA.H*A+A.H*dA,Z))
+dDel=s.simplify(dA.H*A+A.H*dA)
+print('code dDelta:',s.simplify(E.H*dDel*E))
+assert eq(dE,alpha0**2*s.Matrix([[-s.Rational(1,90),(1+s.I)/180],[(1-s.I)/180,0]]))
+assert eq((T0.H*T0+T1.H*T1)*E,alpha0**2*E)
+assert all(not eq(M,s.zeros(16,2)) for M in leak)
+
+# Same original flat family, not a one-point coincidence: q=sqrt(1-nu^2).
+# The general two-tick scalar uses (1+q)(1-q)=nu^2, so alpha=5nu^4 p^3/128.
+v,q=s.symbols('v q',real=True)
+Ag=A*v/nu; kg=s.Rational(5,128)*v*v
+Ng4=(1+q)*I/2
+Ng6=(1-q)*sum(zs,s.zeros(16))/8
+Ng14=(1-q)*(zs[0]-zs[1]+zs[2]-zs[3])/8
+for Ng,T in ((Ng6,T0),(Ng14,T1)):
+    Tg=4*Ng*Ag*Ng4*Ag
+    want=T*(s.Rational(5,128)*v**4)/alpha0
+    assert all(s.rem(s.Poly(s.expand(x-y),q),s.Poly(q*q+v*v-1,q)).as_expr()==0 for x,y in zip(Tg,want))
+
+# Intrinsic full-CAR rotors from named ORIGINAL single leaves, not addressed gates.
+us=[rows[16*j] for j in range(4)]
+vs=[s.I*rows[16*j+4] for j in range(4)]
+for W in us+vs:
+    assert eq(W.H,W) and eq(W*W,kap*I)
+for U in us:
+    for V in vs:assert eq(U*V+V*U,Z)
+for group in (us,vs):
+    for j in (1,2,3):
+        dot=s.trace(group[j]*group[0])/(16*kap)
+        assert s.simplify(dot) in (s.Rational(1,5),-s.Rational(1,5))
+        assert eq(group[j]*group[0]+group[0]*group[j],2*dot*kap*I)
+    # Weighted Walsh independence is all the linear algebra the Lie proof uses.
+    gram=s.Matrix(4,4,lambda j,k:s.trace(group[j]*group[k])/(16*kap))
+    assert gram.det()!=0
+rot=[-U*A/kap for U in us[1:]]
+assert all(eq(U.H*U,I) for U in rot)
+assert not eq(rot[0]*rot[1],rot[1]*rot[0])
+for U in rot:
+    # Actual forward accepted (19,33/65/97,19), NOT reversal of a measured tape.
+    assert eq((-A)*U*(-A)/kap,U.H)
+# Actual Kraus normalized phase is MINUS u1*u0. Creator order fixes this plus sign.
+# Direct expansion: <3|A8*A|0>=-i*nu^2/64=-2i*kap/5.
+assert s.simplify((us[1]*A)[3,0])==-2*s.I*kap/5
+assert s.simplify(rot[0][3,0])==2*s.I/5
+for j in (1,2,3):
+    # Actual chronological (9,32j+9), retaining the minus-i single-branch phases.
+    N0=rows[4];Nj=rows[16*j+4]
+    assert eq(Nj.H*A*N0.H*A/kap**2,vs[j]*vs[0]/kap)
+# Quiet-code first Book jet: not the GOOD effect derivative. All field rows retained.
+assert eq(E.H*dDel*E,s.zeros(2))
+# At a flat scalar B, differentiating compressed B^2 gives -2t*b*compressed dDelta.
+print('PASS original Walsh Parseval; exact full16 encoded reader/general-nu family; complete failures; nonscalar boost jet and leakage; named full-CAR rotors and phases; fixed-code Book jet')
+```
+
 ## 8. Reproduction
 
 Run from this directory:

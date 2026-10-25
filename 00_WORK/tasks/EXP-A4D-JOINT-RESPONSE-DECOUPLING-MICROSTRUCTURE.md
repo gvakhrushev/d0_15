@@ -12552,3 +12552,107 @@ primary BYTE EXACT, SHA256ea6cb272868bdd822d8c49fc5f41d604bfcd1422af2948ae015229
 incoming brief is an exact prefix. This is local source/structural
 validation, not remote CI or physical GR acceptance. Only the two owned
 insertion paths change.
+
+
+### 25 October: original full128 encoded reader and the surviving full-CAR Book source
+
+Phase: native realization/source composition, same owner and interface.
+Primary7bl528--534 consumes7bk's named nonterminal-reader premise with
+the ACTUAL original Kraus palette (constructor blobee8de4635d24c668949ac9a0186616ab7d59f2ed),
+full original completion59--60 and owned forward fixed-cut theorem.
+No task, workflow, action, selector or physical acceptance is added.
+Root writes only the primary insertion and this existing brief; bounded
+read-only assistants supply source derivations/independent hostile review.
+
+Precise positive result: on the complete original flat common-amplitude
+family0<nu<1, actual chronological histories19->27 and19->59 restrict
+to alpha P0 and-alpha P1 on C=span(mask0,mask5), alpha=5nu^4p^3/128.
+They give a live encoded Luders instrument conditional on GOOD, with
+input-independent successalpha^2, tensor identity on untouched oldRIGHT.
+All128^2 fine slots and failures remain. Unknown code input is a promise;
+no arbitrary encoding/preparation is manufactured. This is fine-label
+readout, not the nondistinguishing port1 marginal. The complete finite
+binary-reader quiet-leaf obstruction remains; a third FAIL outcome is
+essential and its full source is retained.
+
+The decisive ORIGINAL proper-boost Sylvester jet atnu3/5 has nonscalar
+iC^dagger E'_GOOD iC=gamma[[-1/90,(1+i)/180],[(1-i)/180,0]] and nonzero
+code leakage. BecauseE_GOOD iC=gamma iC, every C1 moving isometric code
+has the SAME derivative; scalar retuning cannot remove its traceless
+part. This prevents immediate open-field transport of THAT history pair,
+not another native construction or the positive GR family.
+
+Actual leaves33,65,97 and two-leaf histories9->41/73/105 give full16
+intrinsic rotors with paid state-independent success. A structural
+weighted-Clifford proof supplies Spin4xSpin4 density at its represented
+scope; no Spin8 or arbitrary addressed controls. Forward19->33/65/97->19
+supplies a paid exact inverse of the accepted rotor. These controls do
+not preserve the reader code; the literal normalizedU33 coefficient
+<3|U33|0>=+2i/5. A new test initially used the opposite global-phase
+convention for this witness and failed; direct creator expansion fixes
+<3|A8A|0>=-2i*kappa/5 and actualU33=-A8A/kappa, yielding the plus sign.
+This is a corrected symbolic expectation, not rewritten scientific
+evidence or a weakened test. The final changed check retains BOTH
+phase identities and paid inverse checks.
+
+Full original input cut rank16q_old is preserved, q_old=128 once.
+Its two-tick quiet corner is B^2, with b=1-5p^2nu^2/64 at flat and
+J16=-16q_old log(1-zeta+zeta b^4). The actual boost source is
+-9q_old zeta t b^3/(100Q), t=2p^2,Q=1-zeta+zeta b^4.
+The different code cut rank2q_old would have zero boost Book jet: it
+CANNOT replace the original cut or erase that source. Away from flat
+compressed(B^2)^dagger compressed(B^2) need not be compressed(B^4).
+Actual scene heat, whole work, all preparation/clock/recorder and any
+additional physical factory registers remain; no old stopped-match CQ
+price multiplier is imported into this two-tick fixed-depth language.
+
+Parent substitution is supporting ONLY: native encoded nonterminal
+reader and actual intrinsic controls are now explicit. The remaining
+application is a paid reference-safe map to525's mutable RawZone/work
+bit, its port copies and fine recorder on the full33-scene carrier,
+with compatible open-field source and all failures.7bj and the connected
+packet result retain their actual gain/norm and conditional interface.
+No source gate, root, GR dynamics/selection/refinement is accepted;
+GR_closed=false,positive_gr and raw216 remain open.
+
+Changed decisive calculation: exact literal CAR/Walsh Parseval, generalnu
+reader identities, complete-failure effect, actual Sylvester boost jet,
+full16/code source distinction, named rotor algebra/phases and paid
+forward inverses. Final run Python3.9.6/SymPy1.14.0 exit0/PASS; ordinary
+assertions enabled. Earlier source tests stay consumed, no old GR/root,
+Lean, density, heat or stopped-CQ replay. Frozen section/code pins and
+final independent source-only reviews/integration checks follow.
+
+Frozen7bl INCLUDING next-heading separator:20619bytes,
+SHA25677dcb1a656c69417b87a98d0bce64b1c8043e698f3f890ee467ea7a70bfdb9d9.
+Embedded code excluding closing newline:6056bytes,
+SHA256891975e46720768951533f552ff02da63771f1d3e83fb776412b084c934ce274.
+Source-only review clarified531: the first-line u and two-leaf v rotors
+generate the connected subgroup; the single mixed leaves may occupy
+discrete split-preserving components outside it. All code/calculations
+unchanged after the final successful run; no mathematical replay for
+this source wording. Final-pin reviews and integration follow.
+
+Scope clarification: the theta obstruction varies this reader
+hardware itself. Using fixed flat utility hardware with a varying
+encoded input/other field block remains legitimate conditional work;
+its physical preparation/coupling/source map is still required. No
+open-field motion of every utility device is a new prerequisite.
+
+Final source-only ACCEPT20619/77dcb1a656c69417b87a98d0bce64b1c8043e698f3f890ee467ea7a70bfdb9d9:
+price_geometry_bridge and native_source_application. stationary_root_transfer
+accepted20265/467cb931 before the final own-boost/fixed-utility scope
+clarification; its complete math/code remains unchanged, with no pending
+review presented as complete. No reviewer edited files or ran calculations.
+
+Affected integration PASS: work validation, cold-start agent protocol,
+gravity assembly(valid=true;54active/98results/5discharged/22obligations;
+scientific_promotion=false), repository(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0). Later changes are source-only
+TYPE/scope clarifications and this evidence record, code unchanged.
+Final byte/AST/provenance checks and whitespace PASS; no unnecessary
+mathematical replay. Removing7bl restores incomingc3bd primary BYTE EXACT,
+SHA256ec9459d74a6cff807ca557823fda486694291f26bca5b19a3c6a117bb3926d1d;
+incoming brief831388bytes is an exact prefix. Only the two owned paths
+change. These are local structural/source checks, not remote CI or physical
+GR acceptance.
