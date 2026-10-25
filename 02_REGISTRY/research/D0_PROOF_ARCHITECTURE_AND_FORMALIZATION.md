@@ -3929,7 +3929,7 @@ capsule at the same commit has SHA-256
 | `2. Constructive weighted operator, with explicit hypotheses (Eq. 1)` | **Represented at the algebraic core.** For caller-supplied invertible `W` on the actual finite cochains, the capsule defines the weighted codifferential, Dirac map, and pairing, then proves the square, nilpotency, adjoint, and symmetry identities under their stated symmetry hypotheses. The CAR kernel and nilpotency leaves are also rebuilt. It does not prove positivity of `W`, the square-root representative, or the grading consequence. |
 | `2. Constructive weighted operator, with explicit hypotheses (positivity and grading consequences)` | **Not represented in this capsule.** It does not prove positivity of `W`, construct `W^{1/2}D_WW^{-1/2}`, or formalize degree preservation. The supplied equivalence `W` is not constrained to preserve degree. |
 | `3. Genuine mixed metric dependence is preserved (Eqs. 2–3)` | **Partial.** `inverse_weight_derivative` proves the generic inverse-operator derivative identity. The capsule does not construct the metric compound `W_Q`, prove its minor formula or diagonal agreement, evaluate the ten metric probes, or derive `Q ↦ sQ` operator homogeneity. |
-| `Finite mixed spectral moments: a quantitative contrast obstruction (generic identities and annihilator)` | **Partial.** The capsule proves actual trace binding, scalar trace homogeneity, and generic coefficient-independent finite-moment annihilator/error-bound lemmas. It does not formalize the explicit binomial identities. |
+| `Finite mixed spectral moments: a quantitative contrast obstruction (generic identities and annihilator)` | **Finite-degree identities and their generic application represented.** The capsule binds the actual trace, scalar trace homogeneity, and coefficient-independent annihilator/error-bound lemmas. The companion module now proves the arbitrary-p binomial annihilator, reciprocal-weight normalization, and total variation, then applies the capsule's annihilator to every real coefficient family independent of the scale index. It still does not instantiate the physical fibers/probes or the refinement error bound. |
 | `Finite mixed spectral moments: a quantitative contrast obstruction (physical contrast, Eq. 3c)` | **Not represented as an application.** The capsule does not apply the generic tools to the two curved fibers and probes, derive the physical contrast/refinement lower bound, or prove its field/source premises. |
 | `4. Direct flat Lorentz binding on the owned carrier (Eqs. 4–5)` | **Not represented as a full result.** The capsule has CAR/nilpotency facts and an identity-weight specialization, but not the full signed `W_eta` and site/Fock binding, Fourier symbol/dispersion, all-size spectrum, or all-role-order intertwiners. |
 | `4. Direct flat Lorentz binding on the owned carrier (Eq. 6, spatial block)` | **Isolated block lemma represented; full application partial.** `rotationBlock`, its square, and `spatial_block_has_no_positive_metric` prove the 2×2 obstruction for nonzero `L`, assuming positive diagonal entries and `DᵀG = GD`. The capsule does not prove this is an invariant restriction of the actual full Lorentz operator. |
@@ -3949,3 +3949,51 @@ independently recomputed and matches the committed Lean tree at `db3091ad`.
 The review accepts this source-to-Lean scope reconciliation only. It does not
 make the C0 disposition, semantic package acceptance, physical selection, or
 GR closure.
+
+### Arbitrary finite-moment identities in Lean (25 October 2026)
+
+The companion module
+`D0.Research.NativeWeightedDiracMomentIdentities` formalizes the generic
+identities used in source §3 for every fixed finite degree `p`. With
+`s_r = 1/(r+1)` and `w_r = (-1)^r * choose(p+1,r)`, it proves
+`sum_r w_r * s_r^(-j) = 0` for `0 <= j <= p`,
+`sum_r w_r * s_r = 1/(p+2)`, and `sum_r |w_r| = 2^(p+1)`. The theorem
+`fixedDegreeScaleContrast_eq_zero` applies the already-owned
+`finite_moment_annihilator` to any real coefficient family independent of the
+scale index. The proof of the first identity uses a Pascal recurrence and the
+binomial expansion of the shifted power; the two normalization identities
+use the alternating-binomial sum and the row-sum identity.
+
+This vertical slice consumes the generic capsule result and closes its
+explicit finite-degree algebraic gap. It does not derive the actual curved
+fibers, the physical action/source coefficient binding, the contrast transfer
+error bound, or its refinement premise from a native execution. The §3 Eq.
+(3c) application remains outside this Lean module.
+
+The module is registered through the existing `formal_support.csv` authority
+and generated public `D0.All` import; it does not add a claim or change claim
+status. Its focused build passed (2,998 Lake jobs). The declaration inventory
+compiled public `D0.All` and records 29 declarations (22 theorems, 7
+definitions; 18 source-ranged and 11 generated auxiliaries), all with
+elaborated types and collected proof details. Axiom closures contain only
+`Classical.choice`, `Quot.sound`, and `propext`; no `sorryAx` occurs. Inventory
+SHA-256 is
+`dbd60a7eee440057339e5f96e5a33f0edfb3d45293b71ce9f6d74d1498afa367`, Lean
+source digest
+`df7a98243fea6a821b30b041df127f5efb21f64b60538f45f5b12124504ce607`, and
+collector SHA-256
+`97eb93d8f8d3ef715c4932cf33fc79d9deddb95c67ed565ab6e6d4f5841cacad`.
+The Lean module SHA-256 is
+`944e9f9f97057ac5c835dff787abda7114223e4f65151f1b4bcaa98d040bf29b`.
+The inventory records `snapshot_commit=c11b5cc00276c391ae0951153249e8e70182991b`
+and `worktree_dirty=true`; that provenance describes generation before this
+checkpoint commit. This is a formalized generic identity/application, not
+independent C0 acceptance or physical GR closure.
+
+Structural validation on the final local slice passed: repo validation
+(`claims=889`, `assumptions=31`, `formal_support=191`, `lean_closure=924`, zero
+warnings), work/protocol checks, gravity assembly check/render, generated
+Lean-view check, ClaimMap coverage, formalization-debt non-growth (5 findings,
+all baseline), and the EOL-aware diff check. The declaration inventory built
+the public import, but this checkpoint is not the final Ready `D0.All` replay.
+No independent review of the new mathematical application is claimed here.
