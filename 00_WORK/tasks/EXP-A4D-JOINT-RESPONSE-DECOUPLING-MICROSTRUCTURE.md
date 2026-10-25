@@ -10613,3 +10613,88 @@ external7ao359/364 remain. Reversing the renumbering and removing only
 the explicit no-C1/compatibility additions restores the original accepted
 14855-byte proof exactly. These scoped reviews do not promote the
 original constitutive/physical GR obligation or retire its owner.
+
+### 25 October: realize a predicate-preserving stationary middle with actual native words
+
+Phase: native realization / full controller-source composition. SAME
+PR334, constitutive/native-programme-v1; input0e7b9d97. Consume the
+incoming7ap packet/polar raw-clock theorem as owned input; do not repeat
+its source/READY proof. The named remaining parent premise is its FIXED
+middle. Construct an actual computational-predicate-readonly middle
+approaching I-2Theta, where Theta is the EXISTING raw READY/report
+projector. No new query, desired field equation, action or selector.
+
+Use exact multi-controlled EVEN-G words on three private target bits,
+Möbius expansion of the given flag predicate, all-column source inverses
+and target-CNOT conjugates. Apply the already consumed fixed-dimension
+inverse-closed SO compiler to the controlled SO(8), not the abelian
+rotation subgroup. All false columns remain exactly identity. Uniform
+native-letter inventories and a charged identity letter give matched
+finite catalogues and reverse words; no free idle, Boolean gate or
+controlled oddG. Every target column, source helper and spin is paid.
+
+At native Mhat within delta of I-2Theta, a free middle tangent preserving
+Theta has H Mstar anti-Hermitian, so its actual scalar-base logdet row
+is bounded by4w a delta ||H||. Choose actual delta times expanded middle
+length summable. Source/READY rows keep7ap's budgets; whole heat now uses
+its genuine ambient factorial bound, not an exact involution theorem at
+Mhat. Recompute d in[3/2,2], s>=1/2, a in[3/2,8] and actual gain lower
+base1/4 (p/4 with fixed post-code coins). Do not reuse9/16 or finitefork
+log-slope4/3; the latter becomes4. All generated inverses/causal rows and
+true initial boundary, cut, clock, rank, normalized effects and required
+records remain explicit.
+
+Write paths: primary7aq and this existing brief only. Bounded read-only
+assistants check native predicate/compiler typing, middle cotangent and
+whole-source/gain composition. Smallest decisive new check: full-column
+actual controlled signed-G predicate word with negative control, exact
+inventory/read-only/helper-spin restoration; scalar logdet differential;
+anti-Hermitian central-phase row with a retained cross-predicate hostile
+control; true new gain/collar and divided-slope identities. Reuse all
+old native, root, READY, overlap,128, Lean and compiler-source evidence.
+The result enlarges7ap's local comparison graph by middle calibration
+rows; it does not identify it with original physical X_N, remove
+normalized-query/cut selection, or solve every intercohort/new-input
+control. GR_closed=false.
+
+Conditional-middle checkpoint: final primary7aq20537UTF-8bytes/SHA256
+7c7e777705fb732b520de7b0655eb82313c96ca6d33da0c536f5bd99741a4cf4
+(excluding the next-heading separator). Embedded final code3754bytes/
+SHA25631fcc16520a05bcf226228633aa221418573f554b277a9d4edfc015f40ecf5c8
+EXCLUDES its final newline; including that newline3755bytes/SHA256
+da3d230a1e82643e937690f9ca12b55da2b4e06887bebb5a1f7da76f6d4d9aec.
+Root final extracted-code run exit0/PASS in Python3.9.6/SymPy1.14.0:
+new actual184-stage predicate word and same-inventory identity both
+verified on ALL64 columns, including arbitrary flag/helper/Spin inputs;
+central-phase, cross-predicate, target-mixing encoder, scalar logdet,
+new collar and divided-slope controls pass. This is not a numerical
+synthesis of the final SO8 reflection or a new Lie/old-root replay.
+
+One initial harness invocation was rejected BEFORE matrix calculation
+because SourceI omitted its explicit frame addresses; it was corrected
+to(0,4,5). The first complete run passed. Source review then renamed an
+SK prefactor colliding with integerC_Theta and root retained an additional
+real target-mixing encoder row379a. The new controlDC=24/4225 withDG=DE=0
+shows why the old polar-only row would be insufficient. The strengthened
+budget delta(L_mid+4N_enc) is feasible; final complete run above includes
+that control and both native words. No expected evidence was rewritten.
+
+All THREE final independent read-only source reviews ACCEPT the exact
+final20537-byte slice, including379a/381/382, computational-predicate
+native typing, new4^-M gain, full heat and all physical-domain boundaries.
+No assistant reran calculations or changed files. The reused external
+compiler theorem and all native inverse/Lie/critical/polar owners remain
+at their stated scopes. All20 inherited source and7section pins from the
+frozen7am packet are unchanged. Incoming7ap INCLUDING separator remains
+16370bytes/SHA2568bc36e109d66a66454535129332bbd1dcb5a9ef744a3157152879c9727c81ce0.
+Removing only7aq restores input0e7b9d97 primary byte-for-byte; its brief
+is an exact prefix. No other source/claims/governance paths are changed.
+The original physical normalized-query/pointer/cut/local-domain and
+extra-action/refinement applications remain open. GR_closed=false.
+
+Final affected structural gates PASS: work, agent protocol, gravity
+assembly, repository(warnings0) and staged-diff check. Registry counts
+remain claims889/assumptions31/aliases58/formal_support183/Lean closure918;
+assembly54active/98results/5discharged/22obligations, scientific_promotion=false.
+This is local structural validation, not remote CI or physical acceptance.
+Only this brief and the inserted primary7aq differ from0e7b9d97.

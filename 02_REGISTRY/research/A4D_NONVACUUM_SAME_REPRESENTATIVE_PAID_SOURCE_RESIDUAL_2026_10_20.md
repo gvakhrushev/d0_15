@@ -10258,6 +10258,393 @@ finite all-Euler root, nondegenerate continuum coupling, mandatory
 physical GR, positive_gr or raw216 closure is asserted.
 
 
+## 7aq. Compile a stationary conditional middle without fixing its angle or spectrum
+
+25 October 2026; SAME PR334 / constitutive owner, input0e7b9d97. Consume
+7ap's packet-local and operator-READY theorem; it is not reproved here.
+Its remaining FIXED-MIDDLE premise has a positive native application.
+We replace that middle by a full-column predicate-readonly native word
+near a conditional reflection, and bound its freely varying calibration
+rows in the SAME original paired-clock operator norm. The normalized
+query, physical pointer/cut and the admission of this local graph keep
+their original open application; no Einstein constraint or price term
+is added.
+
+### A native controlled SO group, with exact false columns
+
+Let Theta_j=R_READY Pi_report be the ACTUAL fixed computational raw
+flag predicate of the owned query. These are mutable unsealed flags,
+not immutable oldRIGHT. Its Boolean truth function is a finite
+multilinear polynomial b_Theta(c)=sum_S mu_S product_(i in S)c_i,
+with integer coefficients. This is the given query's pointer predicate,
+not an arbitrary noncomputational projector supplied as an oracle.
+Keep all other required pointer/record laws too.
+
+Allocate THREE private middle target bits, known initially000, distinct
+from the dedicated SourceI helper, protected Spin, source banks and all
+predicate flags. All eight target columns remain in the thermal carrier.
+For K flag bits put m=2^(K+1). The [owned controlled-even-G word](sources/d0_exact_report_reflected_cohorts_2026-10-25/reflected_report.py)
+W_s(L) applies G^(2^s L) exactly when its s controls are1 and identity
+otherwise, on EVERY input column. For each nonzero mu_S use
+L_S=m mu_S/2^|S|, an even integer. These rotations commute, so
+
+    product_S W_|S|(L_S)
+         =I_(Theta=0) tensor I +Theta tensor G_i^m.       (374)
+
+No flag is targeted. Negative controls arise from the integer Boolean
+polynomial, not a free X/AND gate. All its intermediate false branches,
+source inversions, routing and cancelled rotations are executed and paid.
+The empty-control factor is the ordinary signed G power. There is no
+exact odd controlled-G claim or contradiction with7am's ring boundary.
+
+For explicit inventory, implement each G_i^+ by swapping private i to
+the dedicated helper, running G;SourceI^4 and swapping back; G_i^- uses
+SourceI^2;G;SourceI^2 between the same swaps. Both are exact on ALL
+columns, restoring helper/Spin, and both have counts(1G,4SI,6CX), length11.
+Let P range over a finite target-CNOT group, with chosen word lengths
+at most R. Conjugate374 by P and pad with real CX^2 pairs. Put
+
+    B_Theta=m sum_S |mu_S|,
+    C_Theta=sum_(mu_S!=0) 2(2^|S|-1),
+    inventory(letter)=(B_Theta G,4B_Theta SI,
+                       (6B_Theta+C_Theta+2R) CX),
+    length(letter)=11B_Theta+C_Theta+2R.                  (375)
+
+All inverses have this same inventory: invert the abstract signed recipe
+before its positive-native expansion. Since B_Theta and C_Theta are even,
+an identity letter with the same inventory is B_Theta/2 pairs G^+;G^-
+plus C_Theta+2R actual CX in cancelling pairs. Padding is a real word.
+This permits equal inventory/duration for a finite catalogue by padding
+at LETTER level. The algebraic P G^m P^-1 executes chronologically
+P^-1;G^m;P. Target permutations do not target the predicate flags.
+
+The true target components of these finitely many letters are dense in
+SO(8). Indeed let H be their CLOSED generated subgroup. Irrationality
+of m theta/pi puts the original G_i in H as limits. The finite CNOT
+group normalizes H; their product is closed and contains the original
+owned dense Golden/CX group. It is therefore SO(8), and connectedness
+excludes a proper closed finite-index H. This uses the [owned Lie closure](A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md),
+not a new rank census or a finite-index assertion about exact words.
+
+Apply7w's already imported [Kuperberg theorem2.4](https://toc.cs.uchicago.edu/articles/v011a006/v011a006.pdf)
+INSIDE SO(8). The target -I_8 has determinant+1 and rational entries;
+the finite symmetric generators have algebraic entries. The FPTEAS
+hypotheses therefore hold for this fixed target and layout. Embedding
+the resulting word in the controlled group gives
+
+    Mhat_j=I_(Theta=0) tensor I_8
+                         +Theta tensor Vhat_j,
+    ||Vhat_j+I_8||<=delta_j,
+    L_mid,j<=C_SK(Theta_j)(1+log(1/delta_j))^c_SK(Theta_j),
+    Mstar_j=I-2Theta_j tensor I_8.                      (376)
+
+The first false block is EXACT, not an error on one initialized column.
+Constants depend on the finite flag predicate/layout; no uniform mesh
+constant or installed universal compiler is claimed. All raw gates of
+this construction leave the flag values unchanged. Thus every completed
+word is genuinely predicate-readonly, including on coherent inputs.
+Q identically0 is the trivial identity exception, with no source signal.
+
+The same letter construction with Theta=I and m=2 gives a common-inventory
+SO source alphabet. It can strengthen7ap's finite packet-node catalogue:
+choose all its full-column errors first, pad to its maximum abstract
+length using the charged identity letter, and use abstract inverse
+letters on the reverse leg. The maximum length is still polylogarithmic
+at each fixed finite catalogue. It is not an exact read-only request
+compiler on arbitrary request bits: here source letters act ONLY on the
+private packet. The coincident internal request of7ap is untouched.
+
+### The actual return and gain change; the old collar is not reused
+
+Keep the given known target000 and the true forward source/query encoder
+B_j. At the actual scalar-readiness base its compressed hit effect is
+F_j=gamma_j P_(n_j); denote q_j=<P_(n_j)> on the actual prepared bank.
+From the EXACT controlled form in376, the source-return kernel is
+I-d_j F_j, where d_j=1-<000|Vhat_j|000>. Thus for delta_j<=1/2,
+
+    3/2<=d_j<=2,   1/2<=gamma_j<=1,   0<q_j<=1/4,
+    s_j=1-d_j gamma_j q_j>=1/2,
+    a_j=2d_j gamma_j/s_j in[3/2,8],
+    S_M=product_j s_j,
+    C_total=S_M I_r,
+    w_M=r zeta S_M^2/(1-zeta+zeta S_M^2),
+    A_M=sum_j a_j gbar_j,   Gamma_M=w_M A_M.             (377)
+
+All target bits are blanks, so protected rank r is unchanged. Their
+full thermal dimensions ARE present. Replacing the old single middle
+bit by three multiplies the target factor by four; any additional
+required record registers also count. The new raw L_mid changes its clock. Evaluate the entire new action at
+these actual data; do not add a coin heat or reuse a previous baseline.
+
+Here I-d_j gamma_j P_(n_j) is a Hermitian contraction but can have
+negative eigenvalues. Positivity of this kernel is not assumed. The
+centered score is still Hermitian with mean1, ||R_j||<=2 and
+||R_j-I||<=4; its variance formula needs no positivity. The old numerical
+bounds d<1, s>=3/4, a<=8/3 and gain base9/16 do NOT apply. The unchanged
+report first source and lambda_minus retain their actual new positive
+gain, rather than a fitted coupling.
+
+### The middle's complete first source is small on its predicate stabilizer
+
+Let a middle unitary vary with H_j=(D M_j)Mhat_j^dagger, H_j^dagger=-H_j,
+and [H_j,Theta_j]=0. This permits conditional target rotations, false
+sector rotations and changing spectra/angles. It does not hold the
+middle or return effect fixed. Preserve all other required records as
+well; readonly Theta alone is not equality of a full future profile.
+Because Mstar is central in this stabilizer,
+
+    (H_j Mstar_j)^dagger=-H_j Mstar_j,
+    Herm(B_j^dagger H_j Mstar_j B_j)=0,
+    ||Herm D C_j||<=delta_j ||H_j||.                    (378)
+
+The compression is on ALL r protected columns, not a selected spin
+state or success branch. This statement is valid for the ACTUAL source
+isometry B_j, regardless of its preparation error. With normalized
+protected trace tau_r=Tr/r and the other completed private cohorts,
+the genuine scalar-base determinant differential is
+
+    D J_M=-(2w_M/s_j) Re tau_r(D C_j),
+    |D J_(mid,j)|<=(2w_M/s_j)delta_j||H_j||
+                    <=4w_M a_j delta_j||H_j||.          (379)
+
+No rank or Spin factor is discarded. The other baseline endpoints are
+private and identity on shared helper/Spin on ALL columns, as in7ap371;
+this is what cancels their old return factors. It is a local-cohort
+first-source statement, not a formula for arbitrary intercohort middle
+couplings or finite helper-breaking neighborhoods.
+
+For actual middle-stage velocities nu=max_t||Dg_t||, unitary product
+differentiation gives ||H_j||<=L_mid,j nu. Since delta times a
+polylogarithmic length tends to zero, choose a genuine native word
+satisfying delta_j(L_mid,j+4N_enc,j)<=2^-j after the query/amplifier
+layout and actual encoder count are fixed.
+A search over certified full-column words with this strict budget
+terminates by376; it does not require known uniform C_SK values.
+No inverse branch is postselected, no target is reset, and no primitive
+G angle is varied physically by fiat. These are finite-matrix comparison
+tangents at the supplied literal native points, as in7ap.
+
+The limiting reflection is a nontrivial stationary CONTROL branch of
+the same feedback action, not a new minimum principle. The +I branch
+would erase the signal. No claim that prospective minimization selects
+this -I branch, or that a finite native word equals Mstar exactly, is made.
+
+### Combine source, operator-READY and free middle rows in the original norm
+
+Use7ap367 for source rows with the actual new d_j,a_j of377. For
+encoder variations an extra error must be kept if they couple the private
+middle targets. At the actual base A_j=A_query,j tensor I_target; define
+M_ref,j=I-d_j Theta_j tensor I_target, holding d_j fixed in this encoder
+partial differential. This is an algebraic reference, not a new unitary
+gate. D_tar=Mhat_j-M_ref,j has norm at most2delta_j and zero000 target
+compression. For arbitrary encoder velocities,
+
+    D_A C_j=-d_j compression(D_A F_j)+error_j,
+    ||error_j||<=4delta_j||D A_j||,
+    |D J_(encoder error,j)|<=16w_M a_j delta_j||D A_j||. (379a)
+
+The first line follows by differentiating A^dagger D_tar A; both terms
+are retained. The last line uses the scalar-base determinant, s_j>=1/2
+and a_j>=1. The reference part has precisely7ap369--370's FULL polar
+READY row. Thus target-mixing encoder directions are covered instead of
+being frozen or incorrectly assigned the polar-only bound. The source
+words remain target-disjoint, so their367 needs no such extra term.
+A changing normalized effect retains its full w_M a_j times source
+compression of D E_j. The algorithmic query input leaves the new targets
+FREE, whereas the Book input prepares000; these are distinct cuts, just
+as in RC7. Factory inputs and the given physical cut remain explicit.
+
+Mhat is only APPROXIMATELY involutive. Therefore do not use an exact
+involution theorem or claim zero heat on every middle tangent. The
+owned all-mode heat bound gives for the complete tape
+
+    |DH_M|<=L_N(beta)||DU_total||,
+    ||DU_total||<=N max_t||Dg_t||,
+    ||D Dirac_pair||=max_t||Dg_t||/sqrt(2),
+    ||DH_M||_(Dirac op dual)<=sqrt(2)N L_N(beta).        (380)
+
+All2Nd thermal modes, including unused target/failure columns, remain.
+Only the derivative estimate cancels their common multiplicities.
+
+The local comparison graph has the existing packet-address source
+support, normalized successful query/predicates and fixed initial cut;
+its READY operator can vary, and its PRIVATE middle varies throughout
+the predicate stabilizer just described. Generated source/encoder
+inverses stay in their own roles. Role stage projections contract the
+maximum-edge norm. This does not silently include arbitrary global
+source lifts, new interpacket/intercohort supports, moving predicates
+or independent reverse operations. On this larger-than7ap graph,
+
+    ||D B_M||_(graph,Dirac op dual)/Gamma_M
+      <=sqrt(2)/A_M sum_j a_j[
+           4k_j(k_j-1)L_src,j e_j
+           +2N_enc,j sqrt(f_j/gamma_j)
+           +4L_mid,j delta_j+16N_enc,j delta_j]
+           +sqrt(2)N L_N(beta)/Gamma_M.                (381)
+
+L_src is the TRUE one-packet source length used in367, including routing;
+N_enc includes the true amplified forward stages (using both legs is a
+safe larger count), and f_j=1-gamma_j. The actual source words are run
+n_j times; that count was cancelled only AFTER the conditional-operator
+estimate366. Source, readiness, middle and heat sources are all in381.
+
+Choose source precision and the already owned deeper coherent amplifier
+as in7ap372, and THEN choose the compiled middle. All three finite
+conditions can hold before that cohort executes:
+
+    k_j(k_j-1)L_src,j e_j<=2^-j,
+    N_enc,j sqrt(f_j/gamma_j)<=2^-j,
+    delta_j(L_mid,j+4N_enc,j)<=2^-j,
+    n_j e_j<=the existing eta/decoder/node budgets.      (382)
+
+Every compiled stage is paid, including identity padding and the real
+source/encoder inverse expansions. An old completed cohort is not
+recompiled. The first three terms of381 are at most
+10sqrt(2)sum_j a_j2^-j/A_M=O(M^-63/64). For the heat term the NEW bound is
+
+    S_M^2>=4^-M,
+    Gamma_M>=r zeta 4^-M A_M,
+    A_M>=c M^(63/64),   N>=M.
+
+At fixed beta the [actual-factorial heat estimate](sources/d0_known_port_task_source_2026-10-25/HEAT_TRANSFER.md) therefore
+yields sqrt(2)N L_N/Gamma_M<=C_beta N M^-63/64(2beta)^N/N! ->0, uniformly
+in the literal compiler length. Paying a longer compiler has not been
+used as a substitute for source control; source and middle needed their
+separate precision-times-length budgets in382.
+
+This supplies joint normalized asymptotic first-source control in the
+UNWEIGHTED paired-clock operator norm on the declared local graph while
+releasing BOTH fixed READY and fixed middle. It is not an exact finite
+all-Euler root or an assertion that this graph exhausts original X_N.
+
+### Field/readout consumers and fixed Golden post-processing
+
+The source/report/calibration maps are unchanged. Each finite field
+catalogue can use the common-inventory source alphabet above, its one
+fixed encoder/amplifier and its one fixed new middle word. Thus its
+actual whole heat is still equal on the source-conjugate node endpoints
+at their matched N; all coframe/link/matter rows precede the physical
+pullback. Source correctness has not been inferred from endpoint means.
+
+For the noncritical7al fork/readout consumer, the algebraic identity is
+unchanged but its numerical collar constant changes. Put x=d gamma,
+s=1-xq and c=zeta times the OTHER true return factors. Then
+
+    d_q log J_q'=(x/s)(c s²-(1-zeta))/(c s²+(1-zeta)),
+    |d_q log J_q'|<=4,   not4/3.                       (383)
+
+Use exp(+-4u_j) and rho_j=exp(4u_j)-1 in its secant/readout budgets.
+Those budgets can be made small prospectively just as before; they do
+not acquire an inverse tiny history gain. The full off-shell Palatini
+consumer and original lambda_minus retain their exact conventions.
+The original all-source-sphere estimate has the new bounded constants;
+it is not relabelled a theorem about every clock-matrix normal.
+
+Optional7ao fixed post-echo code nodes are also compatible. For one per
+cohort the source feedback and gain get the same exact positive rho_M,
+but the full varying-middle heat need NOT get that multiplier. Recompute
+the new whole heat at its new N,d and apply380. The true gain lower base
+is now p/4 rather than9p/16. Fixed new primitive nodes use their original
+constraint reactions; free incoming-state countercontrols remain.
+
+### New bounded native/control calculation
+
+The following control emits and checks a REAL new184-stage predicate
+word on all64 columns. Its predicate is c0(1-c1), with both input flags
+free. It tests one target rotation generator; density/approximation of
+-I_8 on three targets is the analytic compiler application above, not a
+claim to have synthesized that final reflection in this small fixture.
+The central-phase and cross-predicate controls test precisely the new
+cotangent distinction. No old root, READY,128 or Lean calculation runs.
+
+```python
+from pathlib import Path
+import importlib.util,sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+src=Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py')
+spec=importlib.util.spec_from_file_location('_middle_native',src)
+ne=importlib.util.module_from_spec(spec);sys.modules[spec.name]=ne;spec.loader.exec_module(ne)
+def swap(a,b):
+    return [ne.Gate('CX',(a,b)),ne.Gate('CX',(b,a)),ne.Gate('CX',(a,b))]
+def rot(sign):
+    si=ne.Gate('SourceI',(0,4,5))
+    mid=([ne.Gate('G',(0,))]+[si]*4 if sign==1 else [si]*2+[ne.Gate('G',(0,))]+[si]*2)
+    return swap(0,3)+mid+swap(0,3)
+def inv(word):
+    return [('R',-a) if op=='R' else (op,a) for op,a in reversed(word)]
+def controlled(flags,L):
+    if not flags:return [('R',1 if L>0 else -1)]*abs(L)
+    w=controlled(flags[:-1],L);c=('C',flags[-1])
+    return w+[c]+inv(w)+[c]
+def expand(word):
+    out=[]
+    for op,a in word:out+=rot(a) if op=='R' else [ne.Gate('CX',(a,3))]
+    return tuple(out)
+def exe(word):
+    return ne.Execution(6,(0,3),(),expand(word),ne.G_CX_SOURCE_I,0,(4,5))
+def eq(A,B):
+    return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(ne.GOLDEN_FIELD)==DomainMatrix.from_Matrix(S.Matrix(B)).convert_to(ne.GOLDEN_FIELD)
+w=controlled([1],4)+inv(controlled([1,2],2))
+ex=exe(w);counts=ne.inventory(ex,max_qubits=6,max_expanded_stages=1000)
+assert (counts.g_count,counts.source_i_count,counts.cx_count,counts.gate_count)==(16,64,104,184)
+U=ne.word_matrix(ex,max_qubits=6,max_expanded_stages=1000)
+Q=S.diag(*[int(((i>>4)&1)==1 and ((i>>3)&1)==0) for i in range(64)])
+G8=ne.G_LOCAL**8;target=S.kronecker_product(S.eye(8),G8,S.eye(4))
+assert eq(U,S.eye(64)-Q+Q*target)
+for bit in (1,2):
+    Z=S.diag(*[(-1)**((i>>(5-bit))&1) for i in range(64)])
+    assert eq(U*Z,Z*U)
+identity=[('R',1),('R',-1)]*8+[('C',1)]*8
+ci=ne.inventory(exe(identity),max_qubits=6,max_expanded_stages=1000)
+assert (ci.g_count,ci.source_i_count,ci.cx_count)==(16,64,104)
+assert eq(ne.word_matrix(exe(identity),max_qubits=6,max_expanded_stages=1000),S.eye(64))
+J=S.Matrix([[0,-1],[1,0]]);Q4=S.diag(0,0,1,1);Mstar=S.eye(4)-2*Q4
+H=S.diag(J,J);assert H*Q4==Q4*H and (H*Mstar).T==-H*Mstar
+t=S.Rational(1,7);co=-(1-t*t)/(1+t*t);si=2*t/(1+t*t)
+V=S.Matrix([[co,-si],[si,co]]);M=S.diag(S.eye(2),V)
+chi=S.Matrix([S.Rational(12,13),0,S.Rational(5,13),0])
+assert (chi.T*H*Mstar*chi)[0]==0
+dc=(chi.T*H*M*chi)[0];delta2=2+2*co
+assert dc*dc<=delta2 and delta2<=S.Rational(1,4)
+Hcross=S.zeros(4);Hcross[2,0]=1;Hcross[0,2]=-1
+assert Hcross*Q4!=Q4*Hcross and (chi.T*Hcross*Mstar*chi)[0]==S.Rational(120,169)
+# A target-only encoder motion has DG=DE=0 but can change actual return.
+O4=S.eye(4);O4[0,0]=O4[2,2]=S.Rational(3,5)
+O4[0,2]=-S.Rational(4,5);O4[2,0]=S.Rational(4,5)
+V4=O4*S.diag(V,-S.eye(2))*O4.T
+T4=S.zeros(4);T4[2,0]=1;T4[0,2]=-1
+Henc=S.kronecker_product(S.eye(2),T4);Theta8=S.diag(*([0]*4+[1]*4))
+M8=S.diag(S.eye(4),V4)
+ch8=S.Matrix([S.Rational(12,13),0,0,0,S.Rational(5,13),0,0,0])
+assert V4.T*V4==S.eye(4) and Henc*Theta8==Theta8*Henc
+assert (ch8.T*(M8*Henc-Henc*M8)*ch8)[0]==S.Rational(24,4225)
+z,s,e=S.symbols('z s e',positive=True);d00,d01,d10,d11=S.symbols('d00 d01 d10 d11',real=True)
+D=S.Matrix([[d00,d01],[d10,d11]]);C=s*S.eye(2)+e*D
+price=-S.log(((1-z)*S.eye(2)+z*C.T*C).det())
+assert S.simplify(S.diff(price,e).subs(e,0)+2*z*s*(d00+d11)/(1-z+z*s*s))==0
+f=S.Rational(25,169);d=1-co;s0=1-d*f;a0=2*d/s0
+assert S.Rational(3,2)<=d<=2 and s0>=S.Rational(1,2) and S.Rational(3,2)<=a0<=8
+q,x,cc,r=S.symbols('q x cc r',positive=True);ss=1-x*q
+slope=S.diff(-r*S.log(1-z+cc*ss*ss),q)
+assert S.simplify(S.diff(slope,q)/slope-(x/ss)*(cc*ss*ss-(1-z))/(cc*ss*ss+(1-z)))==0
+print('PASS new native predicate/identity words, full64 columns, and middle/logdet/collar controls')
+```
+
+**Parent substitution.** The earlier joint packet/polar theorem can now
+use freely varying predicate-preserving middle calibrations at actual
+native controller words, instead of a fixed angle/spectrum. Its full
+source, readiness, middle and thermal residuals are controlled at the
+same true gain and original clock norm. The normalized query/effect,
+physical pointer/cut and admitted local control graph remain the precise
+physical application. Moving those predicates, arbitrary intercohort
+controls, separately free input/reverse states and extra selected action
+terms retain their own sources; no claim of their absence follows from
+compilation. The action remains the original Book H+J, without a second
+Info term. GR_closed=false; positive_gr and raw216 remain open.
+
+
+
 ## 8. Reproduction
 
 Run from this directory:
