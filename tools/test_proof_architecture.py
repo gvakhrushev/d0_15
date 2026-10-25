@@ -1423,7 +1423,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_finite_coordinate_current_declaration_inventory_2026-10-25.json",
+            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json",
             require_current=True,
         )
 
@@ -1665,7 +1665,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_finite_coordinate_current_declaration_inventory_2026-10-25.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json"
         )
         inventory_bytes = inventory_path.read_bytes()
         inventory = json.loads(inventory_bytes)
