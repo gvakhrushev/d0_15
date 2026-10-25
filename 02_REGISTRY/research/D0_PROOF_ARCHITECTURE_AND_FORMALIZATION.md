@@ -5546,8 +5546,11 @@ registered `D_L`/`Delta_L^(4)` tensor formulation, and no matching exact Book
 The claim ID, book/section locator, module/theorem locator, `OPEN` status and
 `PROOF-TARGET` release status are unchanged. `proof_architecture show`
 confirmed the revised note while returning the same open claim; generated
-`ClaimMap.lean` remains current. `validate_repo.py` passes with zero warnings,
-`generate_lean_views.py --check` passes, and
+`ClaimMap.lean` remains current. The cold-start test now checks that the note
+records the proved Hodge square and missing typed transfer, preserves `OPEN`,
+and does not restore the former `EXACT MISSING: D_H squared` wording.
+`validate_repo.py` passes with zero warnings, `generate_lean_views.py --check`
+passes, and
 `check_claim_map_coverage.py` passes under Python 3.12.14.
 
 The regenerated exact-heading candidate view is

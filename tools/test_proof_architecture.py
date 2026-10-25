@@ -1505,6 +1505,11 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001",
         ):
             self.assertEqual(claims[claim_id]["lean_status"], "OPEN")
+        square_note = claims["D0-ARCHIVE-CAR-DIRAC-SQUARE-001"]["notes"]
+        self.assertIn("ArchiveHodgeCARDiracSquare proves the exact square", square_note)
+        self.assertIn("typed map from hodgeCarDirac", square_note)
+        self.assertIn("Keep OPEN", square_note)
+        self.assertNotIn("EXACT MISSING: D_H squared", square_note)
         self.assertEqual(
             claims["D0-SPATIAL-HODGE-SHELL-OPERATOR-001"]["lean_status"],
             "LEAN_PROVED",
