@@ -407,6 +407,7 @@ import D0.Geometry.ArchiveLaplacianRG
 import D0.Geometry.ArchiveLatremoliereTorusInstantiation
 import D0.Geometry.ArchiveLightProfinite
 import D0.Geometry.ArchiveLocalLaplacianVariation
+import D0.Geometry.ArchiveLorentzianFourierApplication
 import D0.Geometry.ArchiveMetricLaplacianScaleNoGo
 import D0.Geometry.ArchiveMetricMeasureHodgeLift
 import D0.Geometry.ArchiveModeExponent

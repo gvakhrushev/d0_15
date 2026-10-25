@@ -1227,6 +1227,14 @@ class ProofArchitectureTests(unittest.TestCase):
             case["required_refs"],
         )
         self.assertIn(
+            "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json",
+            case["required_refs"],
+        )
+        self.assertIn(
             "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
             case["required_refs"],
         )
@@ -1249,8 +1257,16 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertTrue(any("flatLorentzWeightedDiracEven_no_positive_selfadjoint_pairing"
                             in query for query in case["queries"]))
         self.assertIn("even archive period N+2", case["scope_review"])
-        self.assertIn("Eq. (5) Fourier dispersion", case["scope_review"])
+        self.assertIn("all-size character eigenbasis", case["scope_review"])
+        self.assertIn("first-order Lorentzian CAR symbol", case["scope_review"])
+        self.assertIn("square-to-source bridge remain open", case["scope_review"])
         self.assertIn("physical action/source selection", case["scope_review"])
+        self.assertTrue(any("archiveLorentzianDifferenceLaplacian_fourier" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("archiveLorentzianDifferenceOperator_fourier_mode" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("archiveRoleFourierInversion" in query
+                            for query in case["queries"]))
 
 
 if __name__ == "__main__":

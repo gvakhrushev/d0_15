@@ -4412,10 +4412,13 @@ matrix `G` that is positive on every nonzero real cochain and satisfies
 `DᵀG = GD` yields a contradiction. This is conditional on those two
 hypotheses; it derives neither the positive pairing nor self-adjointness from
 a physical source. The formalized parent substitution is specifically the
-all-even finite-carrier extension of Eq. (6). Eq. (5)'s Fourier dispersion,
-the complete all-size spectrum, all-role-order intertwiners, physical action
-or source selection, independent source acceptance, and GR closure remain
-open. No C0 disposition or acceptance is inferred.
+all-even finite-carrier extension of Eq. (6). The signed scalar second-order
+dispersion from Eq. (5) now has an all-size Fourier application on the actual
+site × Fock carrier, recorded below. The first-order CAR symbol and its
+square-to-source bridge, the full first-order Dirac spectrum, all-role-order
+intertwiners, physical action or source selection, independent source
+acceptance, and GR closure remain open. No C0 disposition or acceptance is
+inferred.
 
 The source remains pinned to §4, Eq. (6) of
 `02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md` at commit
@@ -4478,13 +4481,68 @@ SHA-256 is
 focused test SHA-256 is
 `030b5248d3c01115697ddf5dae57c2af7b0b04967340ba8d8cc1ac8808837273`.
 
-The affected structural checks passed: `validate_repo.py` reports 889 claims,
-31 assumptions, 58 aliases, 193 formal-support rows, 926 Lean-closure rows,
-and zero warnings; `validate_work.py`, `validate_agent_protocol.py`,
-`gr_assembly.py check`, `gr_assembly.py render --check`,
-`render_work_status.py --check`, `generate_lean_views.py --check`, and
-`git diff --check` also pass. The task remains in progress: C0 is unfrozen,
-the 54 compiled semantic relations are unresolved, and full C0 dispositions,
-independent acceptance, remaining library migration, and physical GR/source
-selection remain open. This intermediate checkpoint does not satisfy the
-WRK-401 completion conditions.
+### All-size signed Fourier application for the Eq. (5) scalar symbol (25 October 2026)
+
+`D0.Geometry.ArchiveLorentzianFourierApplication` composes the owned generic
+product-cycle coordinate-difference eigenvalue with the archive carrier
+`Role → ZMod (N+2)`. For arbitrary real role weights it proves that every
+product character is an eigenvector of the finite signed second-difference
+expression. Specializing the existing `roleLorentzSign` gives the exact
+`A/B/C/D` symbol
+`4L²(sin²(πk_A/L) − sin²(πk_B/L) − sin²(πk_C/L) − sin²(πk_D/L))` for every
+`L=N+2`, with no extra period or mode premise. The Fockwise lift has the same
+eigenvalue for every coefficient profile; its mode embedding is injective,
+and the existing product Fourier inversion is specialized to every archive
+scalar site field. The existing Fock carrier has 16 labels, so this preserves
+all sixteen coefficients over each Fourier mode without asserting a global
+eigenvalue multiplicity when distinct momenta share an eigenvalue.
+
+This result does **not** construct the first-order Lorentzian CAR operator
+`Dη(k)=Σ[aᵣcᵣ†−εᵣbᵣcᵣ]`, prove that its square is the signed difference
+expression on the actual carrier, or select a physical role metric/source.
+The weights are the already-declared role-sign assignment. Therefore the
+source Eq. (5) first-order-to-second-order application and full Dirac spectrum
+remain open; the formalized theorem is its all-size scalar-symbol consequence,
+not a completed Eq. (5) physical claim.
+
+The compiled declaration inventory uses Lean 4.30.0 and import root `D0.All`;
+it records 28 elaborated declarations from the owning module, with signatures,
+dependencies, axiom footprints, source paths, and current Lean source digest
+`6645b9c4163233883a8c614242345a2990e00ad7d6574e25b0705e83bb0cb543`. Its
+collector SHA-256 is
+`68f8eb4de8ff4110b0cc4174a2cf4877efb707ddfb3326020d7cd22c46b7b87a`; the
+inventory JSON SHA-256 is
+`8b81f6b1a54733396c8b6474d8ad1c3551a0e95b46e8dc03382c0e232555211a`. The
+inventory records source snapshot `d63ffb2dd737f70a801a6ef79c5d39369d056ed1`
+and a dirty worktree. The new Lean module SHA-256 is
+`bdb424320b5171227297c069a1fbcf12590e5ee192d8510fe2ad924aa99a4474`.
+
+The final 19-case cold-start run found all required source sets; all four
+new exact-declaration queries rank the application module first, and the
+compiled inventory ranks second for the signed Laplacian and Fock-mode
+queries. The 20th exact-source/unrelated-prose impact control passed. The
+complete output is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_cold_start_2026-10-25.json`
+(SHA-256 `88a73db2d582499ccd342726b0e9462c54c427bd0880a91e5c717f1fbbc25927`).
+Its input snapshot is `d63ffb2dd737f70a801a6ef79c5d39369d056ed1` with a dirty
+worktree; the `formal_support.csv` digest is
+`288b76ab1e583de5cca75dc9cb55d93863d82bedbb06697c66fa6422dc96c436`. The
+cold-start runner SHA-256 is
+`059f053ef9b83b7e0d81e46c8904573c5ad12f82a330e7cb6a05c65dcba6cb22`, and the
+focused test SHA-256 is
+`b445e77f86f83cab4b1d170087c24c05a867a3c9264806a4b44144502aeb8e5e`.
+Semantic scope review remains manual; retrieval results are not application
+acceptance.
+
+The affected structural checks passed: `D0.All` built 4,575 jobs; 41/41
+proof-architecture tests passed; `validate_repo.py` reports 889 claims,
+31 assumptions, 58 aliases, 194 formal-support rows, 927 Lean-closure rows,
+and zero warnings. `check_claim_map_coverage.py`, `validate_work.py`,
+`validate_agent_protocol.py`, `gr_assembly.py check`,
+`gr_assembly.py render --check`, `render_work_status.py --check`,
+`generate_lean_views.py --check`, `check_no_sorry_in_core.py`, and the
+CRLF-aware `git -c core.whitespace=cr-at-eol diff --check` also pass. The task
+remains in progress: C0 is unfrozen, the 54 compiled semantic relations are
+unresolved, and full C0 dispositions, independent acceptance, remaining
+library migration, and physical GR/source selection remain open. This
+intermediate checkpoint does not satisfy the WRK-401 completion conditions.

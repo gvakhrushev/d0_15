@@ -1,0 +1,3107 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "d63ffb2dd737f70a801a6ef79c5d39369d056ed1",
+  "worktree_dirty": true,
+  "lean_source_digest": "6645b9c4163233883a8c614242345a2990e00ad7d6574e25b0705e83bb0cb543",
+  "collector_sha256": "68f8eb4de8ff4110b0cc4174a2cf4877efb707ddfb3326020d7cd22c46b7b87a",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Geometry.ArchiveLorentzianFourierApplication"
+  ],
+  "module_prefix": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Geometry.FiniteCycleFourier.1699830251._hygCtx._hyg.5",
+          "type": "NeZero n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Geometry.FiniteCycleFourier.1699830251._hygCtx._hyg.9",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Geometry.FiniteCycleFourier.1699830251._hygCtx._hyg.12",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Geometry.FiniteCycleFourier.1699830251._hygCtx._hyg.12",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "(ι → ZMod n) → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "(ι → ZMod n) → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "e_f",
+          "type": "f✝ = f"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "ι → ZMod n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "ι → ZMod n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "e_k",
+          "type": "k✝ = k"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.FiniteCycleFourier.fourierCoeff f✝ k✝ = D0.Geometry.FiniteCycleFourier.fourierCoeff f k",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ {n : ℕ} [inst : NeZero n] {ι : Type u_1} [inst_1 : Fintype ι] {inst_2 : DecidableEq ι} [inst_3 : DecidableEq ι]\n  (f f_1 : (ι → ZMod n) → ℂ),\n  f = f_1 →\n    ∀ (k k_1 : ι → ZMod n),\n      k = k_1 → D0.Geometry.FiniteCycleFourier.fourierCoeff f k = D0.Geometry.FiniteCycleFourier.fourierCoeff f_1 k_1",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.FiniteCycleFourier.fourierCoeff.congr_simp",
+      "proof_dependencies": [
+        "Complex",
+        "D0.Geometry.FiniteCycleFourier.fourierCoeff",
+        "Decidable",
+        "DecidableEq",
+        "Eq",
+        "Eq.ndrec",
+        "Eq.rec",
+        "Eq.refl",
+        "Fintype",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "Pi.instSubsingleton",
+        "Subsingleton.elim",
+        "ZMod",
+        "instSubsingletonDecidable"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "D0.Geometry.FiniteCycleFourier.fourierCoeff",
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.ArchiveCochainBasis N → ℂ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 55,
+            "line": 149
+          },
+          "start": {
+            "column": 0,
+            "line": 145
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 26,
+            "line": 146
+          },
+          "start": {
+            "column": 4,
+            "line": 146
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Role → ZMod (D0.archiveFibers N)) → (D0.Geometry.ArchiveFockState → ℂ) → D0.Geometry.ArchiveCochainC N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.archiveFourierFockMode",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Prod.fst",
+        "Prod.snd",
+        "ZMod",
+        "instFintypeProd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Nat",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N × D0.Geometry.ArchiveFockState"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.archiveFourierFockMode N k v p = v p.2 * D0.Geometry.FiniteCycleFourier.piCycleChar k p.1",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)) (v : D0.Geometry.ArchiveFockState → ℂ)\n  (p : D0.Geometry.ArchiveCochainBasis N),\n  D0.Geometry.archiveFourierFockMode N k v p = v p.2 * D0.Geometry.FiniteCycleFourier.piCycleChar k p.1",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.archiveFourierFockMode.eq_1",
+      "proof_dependencies": [
+        "Complex",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq.refl",
+        "Nat",
+        "ZMod"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Prod.fst",
+        "Prod.snd",
+        "ZMod",
+        "instFintypeProd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "∀ ⦃a₁ a₂ : D0.Geometry.ArchiveFockState → ℂ⦄,\n  D0.Geometry.archiveFourierFockMode N k a₁ = D0.Geometry.archiveFourierFockMode N k a₂ → a₁ = a₂",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 52,
+            "line": 178
+          },
+          "start": {
+            "column": 0,
+            "line": 166
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 169
+          },
+          "start": {
+            "column": 8,
+            "line": 169
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)), Function.Injective (D0.Geometry.archiveFourierFockMode N k)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.archiveFourierFockMode_injective",
+      "proof_dependencies": [
+        "CommMonoid.toMonoid",
+        "CommRing.toCommMonoid",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.commRing",
+        "Complex.instMul",
+        "Complex.instOne",
+        "Complex.instSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.cycleChar",
+        "D0.Geometry.FiniteCycleFourier.cycleChar_zero_right",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Eq.mp",
+        "Eq.refl",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.prod",
+        "Finset.prod_congr",
+        "Finset.prod_const_one",
+        "Finset.univ",
+        "HMul.hMul",
+        "Membership.mem",
+        "Monoid.toMulOneClass",
+        "MulOne.toOne",
+        "MulOneClass.toMulOne",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.instZero",
+        "Prod.fst",
+        "Prod.mk",
+        "SetLike.instMembership",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "id",
+        "instFintypeProd",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNatNat",
+        "mul_one",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Function.Injective",
+        "Nat",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveDifferenceLaplacian N D0.Geometry.roleLorentzSign\n    (D0.Geometry.FiniteCycleFourier.piCycleChar k) x =\n  ↑(D0.Geometry.archiveLorentzianFourierSymbol N k) * D0.Geometry.FiniteCycleFourier.piCycleChar k x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 48,
+            "line": 214
+          },
+          "start": {
+            "column": 0,
+            "line": 203
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 52,
+            "line": 206
+          },
+          "start": {
+            "column": 8,
+            "line": 206
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)) (x : D0.Geometry.ArchiveRolePhaseGroup N),\n  D0.Geometry.roleWeightedArchiveDifferenceLaplacian N D0.Geometry.roleLorentzSign\n      (D0.Geometry.FiniteCycleFourier.piCycleChar k) x =\n    ↑(D0.Geometry.archiveLorentzianFourierSymbol N k) * D0.Geometry.FiniteCycleFourier.piCycleChar k x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.archiveLorentzianDifferenceLaplacian_fourier",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian_fourier",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol_lorentzian",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "ZMod",
+        "congrArg",
+        "id",
+        "instFintypeProd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "ZMod",
+        "instFintypeProd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveDifferenceOperator N D0.Geometry.roleLorentzSign\n    (D0.Geometry.archiveFourierFockMode N k v) =\n  fun p => ↑(D0.Geometry.archiveLorentzianFourierSymbol N k) * D0.Geometry.archiveFourierFockMode N k v p",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 237
+          },
+          "start": {
+            "column": 0,
+            "line": 216
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 56,
+            "line": 219
+          },
+          "start": {
+            "column": 8,
+            "line": 219
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)) (v : D0.Geometry.ArchiveFockState → ℂ),\n  D0.Geometry.roleWeightedArchiveDifferenceOperator N D0.Geometry.roleLorentzSign\n      (D0.Geometry.archiveFourierFockMode N k v) =\n    fun p => ↑(D0.Geometry.archiveLorentzianFourierSymbol N k) * D0.Geometry.archiveFourierFockMode N k v p",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.archiveLorentzianDifferenceOperator_fourier_mode",
+      "proof_dependencies": [
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.archiveLorentzianDifferenceLaplacian_fourier",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian_const_mul",
+        "D0.Geometry.roleWeightedArchiveDifferenceOperator",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Fin.fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "OfNat.ofNat",
+        "Prod.fst",
+        "Prod.snd",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "Zero.toOfNat0",
+        "congrArg",
+        "funext",
+        "id",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.ofReal",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveDifferenceOperator",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "HMul.hMul",
+        "Nat",
+        "ZMod",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 68,
+            "line": 189
+          },
+          "start": {
+            "column": 0,
+            "line": 180
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 48,
+            "line": 183
+          },
+          "start": {
+            "column": 18,
+            "line": 183
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Role → ZMod (D0.archiveFibers N)) → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.archiveLorentzianFourierSymbol",
+      "proof_dependencies": [
+        "D0.A",
+        "D0.B",
+        "D0.C",
+        "D0.D",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol._proof_1",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DivInvMonoid.toDiv",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.cast",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "Real.pi",
+        "Real.sin",
+        "ZMod",
+        "ZMod.val",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Role",
+        "D0.archiveFibers",
+        "Nat",
+        "Real",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "↑(D0.archiveFibers N) ^ Fintype.card D0.Role * f x =\n  ∑ k, D0.Geometry.FiniteCycleFourier.fourierCoeff f k * D0.Geometry.FiniteCycleFourier.piCycleChar k x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 45,
+            "line": 250
+          },
+          "start": {
+            "column": 0,
+            "line": 239
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 35,
+            "line": 242
+          },
+          "start": {
+            "column": 8,
+            "line": 242
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (f : D0.Geometry.ArchiveRolePhaseGroup N → ℂ) (x : D0.Geometry.ArchiveRolePhaseGroup N),\n  ↑(D0.archiveFibers N) ^ Fintype.card D0.Role * f x =\n    ∑ k, D0.Geometry.FiniteCycleFourier.fourierCoeff f k * D0.Geometry.FiniteCycleFourier.piCycleChar k x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.archiveRoleFourierInversion",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.instNatCast",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.fourierCoeff",
+        "D0.Geometry.FiniteCycleFourier.fourier_inversion",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "Fintype.card",
+        "Fintype.card_fin",
+        "Fintype.card_prod",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.cast",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Prod",
+        "Semiring.toMonoid",
+        "ZMod",
+        "ZMod.fintype",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instHPow",
+        "instMulNat",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.instNatCast",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.fourierCoeff",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "Fintype.card",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.cast",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Semiring.toMonoid",
+        "ZMod",
+        "ZMod.fintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instHPow",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a._@._internal._hyg.0",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "ℂ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 75,
+            "line": 32
+          },
+          "start": {
+            "column": 0,
+            "line": 26
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 42,
+            "line": 29
+          },
+          "start": {
+            "column": 4,
+            "line": 29
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Role → ℝ) → (D0.Geometry.ArchiveRolePhaseGroup N → ℂ) → D0.Geometry.ArchiveRolePhaseGroup N → ℂ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.instNeg",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.twistedBackwardDifference",
+        "D0.Geometry.twistedForwardDifference",
+        "D0.Role",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "HMul.hMul",
+        "Nat",
+        "Neg.neg",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "instFintypeProd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Role",
+        "Nat",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.roleWeightedArchiveDifferenceLaplacian N w fun x => c * f x) = fun x =>\n  c * D0.Geometry.roleWeightedArchiveDifferenceLaplacian N w f x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 164
+          },
+          "start": {
+            "column": 0,
+            "line": 151
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 56,
+            "line": 151
+          },
+          "start": {
+            "column": 8,
+            "line": 151
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (c : ℂ) (f : D0.Geometry.ArchiveRolePhaseGroup N → ℂ),\n  (D0.Geometry.roleWeightedArchiveDifferenceLaplacian N w fun x => c * f x) = fun x =>\n    c * D0.Geometry.roleWeightedArchiveDifferenceLaplacian N w f x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.roleWeightedArchiveDifferenceLaplacian_const_mul",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.commRing",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNeg",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+        "D0.Geometry.twistedBackwardDifference",
+        "D0.Geometry.twistedBackwardDifference_const_mul",
+        "D0.Geometry.twistedForwardDifference",
+        "D0.Geometry.twistedForwardDifference_const_mul",
+        "D0.Role",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "funext",
+        "id",
+        "inferInstance",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+        "D0.Role",
+        "Eq",
+        "HMul.hMul",
+        "Nat",
+        "Real",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveDifferenceLaplacian N w (D0.Geometry.FiniteCycleFourier.piCycleChar k) x =\n  ↑(D0.Geometry.roleWeightedArchiveFourierSymbol N w k) * D0.Geometry.FiniteCycleFourier.piCycleChar k x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 22,
+            "line": 136
+          },
+          "start": {
+            "column": 0,
+            "line": 66
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 54,
+            "line": 69
+          },
+          "start": {
+            "column": 8,
+            "line": 69
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (k : D0.Role → ZMod (D0.archiveFibers N)) (x : D0.Geometry.ArchiveRolePhaseGroup N),\n  D0.Geometry.roleWeightedArchiveDifferenceLaplacian N w (D0.Geometry.FiniteCycleFourier.piCycleChar k) x =\n    ↑(D0.Geometry.roleWeightedArchiveFourierSymbol N w k) * D0.Geometry.FiniteCycleFourier.piCycleChar k x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.roleWeightedArchiveDifferenceLaplacian_fourier",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.addGroupWithOne",
+        "Complex.commRing",
+        "Complex.instCommSemiring",
+        "Complex.instDivInvMonoid",
+        "Complex.instMul",
+        "Complex.instNatCast",
+        "Complex.instNeg",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.instRing",
+        "Complex.instSemiring",
+        "Complex.instSub",
+        "Complex.ofReal",
+        "Complex.ofReal_div",
+        "Complex.ofReal_mul",
+        "Complex.ofReal_pow",
+        "Complex.ofReal_sin",
+        "Complex.ofReal_sum",
+        "Complex.sin",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar_coordinate_difference",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleTranslateMinus",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Geometry.roleTranslate_inverse_plus",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol._proof_1",
+        "D0.Geometry.twistedBackwardDifference",
+        "D0.Geometry.twistedBackwardDifference.eq_1",
+        "D0.Geometry.twistedForwardDifference",
+        "D0.Geometry.twistedRoleShift",
+        "D0.Geometry.twistedRoleShiftInv",
+        "D0.Geometry.twistedRoleShift_one",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivInvMonoid.toDiv",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.sum_mul",
+        "Finset.univ",
+        "Function.update",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Mathlib.Tactic.RingNF.add_assoc_rev",
+        "Mathlib.Tactic.RingNF.add_neg",
+        "Mathlib.Tactic.RingNF.int_rawCast_neg",
+        "Mathlib.Tactic.RingNF.mul_assoc_rev",
+        "Mathlib.Tactic.RingNF.mul_neg",
+        "Mathlib.Tactic.RingNF.nat_rawCast_1",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Nat.cast",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instRing",
+        "Real.normedCommRing",
+        "Real.pi",
+        "Real.sin",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Trans.trans",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.val",
+        "Zero.toOfNat0",
+        "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.roleTranslateMinus_eq_update",
+        "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.roleTranslatePlus_eq_update",
+        "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.twistedRoleShiftInv_one_archive",
+        "add_zero",
+        "congr",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "inferInstance",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instTransEq",
+        "mul_one",
+        "of_eq_true",
+        "pow_one",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "ZMod",
+        "instFintypeProd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.ArchiveCochainBasis N → ℂ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 29,
+            "line": 143
+          },
+          "start": {
+            "column": 0,
+            "line": 138
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 41,
+            "line": 140
+          },
+          "start": {
+            "column": 4,
+            "line": 140
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Role → ℝ) → D0.Geometry.ArchiveCochainC N → D0.Geometry.ArchiveCochainC N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.roleWeightedArchiveDifferenceOperator",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+        "D0.Role",
+        "Nat",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Role",
+        "Nat",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 64,
+            "line": 39
+          },
+          "start": {
+            "column": 0,
+            "line": 34
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 50,
+            "line": 35
+          },
+          "start": {
+            "column": 18,
+            "line": 35
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Role → ℝ) → (D0.Role → ZMod (D0.archiveFibers N)) → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.roleWeightedArchiveFourierSymbol",
+      "proof_dependencies": [
+        "D0.Dyad",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol._proof_1",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DivInvMonoid.toDiv",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.cast",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instDivInvMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.pi",
+        "Real.sin",
+        "ZMod",
+        "ZMod.val",
+        "instFintypeProd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Role",
+        "D0.archiveFibers",
+        "Nat",
+        "Real",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "(3 + 1).AtLeastTwo",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "(3 + 1).AtLeastTwo",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.roleWeightedArchiveFourierSymbol._proof_1",
+      "proof_dependencies": [
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "HAdd.hAdd",
+        "Nat",
+        "Nat.AtLeastTwo",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveFourierSymbol N D0.Geometry.roleLorentzSign k =\n  D0.Geometry.archiveLorentzianFourierSymbol N k",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 201
+          },
+          "start": {
+            "column": 0,
+            "line": 191
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 51,
+            "line": 191
+          },
+          "start": {
+            "column": 8,
+            "line": 191
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)),\n  D0.Geometry.roleWeightedArchiveFourierSymbol N D0.Geometry.roleLorentzSign k =\n    D0.Geometry.archiveLorentzianFourierSymbol N k",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "D0.Geometry.roleWeightedArchiveFourierSymbol_lorentzian",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubtractionMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toIntCast",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toOne",
+        "AddZero.toAdd",
+        "AddZeroClass.toAddZero",
+        "And",
+        "CommMonoid.toMonoid",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.A",
+        "D0.A._proof_1",
+        "D0.B",
+        "D0.C",
+        "D0.D",
+        "D0.Dyad",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleRoleSigEquiv",
+        "D0.Geometry.roleRoleSigEquiv._proof_1",
+        "D0.Geometry.roleRoleSigEquiv._proof_2",
+        "D0.Geometry.roleRoleSigEquiv.match_1",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol._proof_1",
+        "D0.Role",
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "D0.archiveFibers",
+        "D0.instReprRoleSig.repr.match_1",
+        "D0.roleSign",
+        "DFunLike.coe",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivInvMonoid.toDiv",
+        "Eq",
+        "Eq.mpr",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Equiv",
+        "Equiv.instEquivLike",
+        "Equiv.mk",
+        "Equiv.mk.congr_simp",
+        "EquivLike.toFunLike",
+        "False",
+        "Fin",
+        "Fin.fintype",
+        "Fin.instCommMonoid",
+        "Fin.instNeZeroHAddNatOfNat_mathlib_1",
+        "Fin.instNonUnitalCommRing",
+        "Fin.instOfNat",
+        "Fin.sum_univ_two",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "Fintype.sum_prod_type",
+        "Function.LeftInverse",
+        "Function.RightInverse",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "HasDistribNeg.toInvolutiveNeg",
+        "Int",
+        "Int.cast",
+        "Int.cast_neg",
+        "Int.cast_one",
+        "Int.instNegInt",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "InvolutiveNeg.toNeg",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Membership.mem",
+        "Monoid.toMulOneClass",
+        "Monoid.toPow",
+        "MulOne.toOne",
+        "MulOneClass.toMulOne",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Nat.cast",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toHasDistribNeg",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNonAssocSemiring.toMulZeroClass",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Prod.mk",
+        "Prod.mk.injEq",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instIntCast",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.normedCommRing",
+        "Real.pi",
+        "Real.semiring",
+        "Real.sin",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "True",
+        "Unit",
+        "ZMod",
+        "ZMod.cast",
+        "ZMod.natCast_val",
+        "ZMod.val",
+        "Zero.toOfNat0",
+        "and_false",
+        "and_true",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "id",
+        "inferInstance",
+        "instDecidableAnd",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNat",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "ite",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "ite_congr",
+        "neg_mul",
+        "one_mul",
+        "one_ne_zero._simp_1",
+        "rfl",
+        "zero_ne_one._simp_1"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Nat",
+        "Real",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "(match D0.RoleSig.A with\n  | D0.RoleSig.A => h_1 ()\n  | D0.RoleSig.B => h_2 ()\n  | D0.RoleSig.C => h_3 ()\n  | D0.RoleSig.D => h_4 ()) =\n  h_1 ()",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (motive : D0.RoleSig → Sort u_1) (h_1 : Unit → motive D0.RoleSig.A) (h_2 : Unit → motive D0.RoleSig.B)\n  (h_3 : Unit → motive D0.RoleSig.C) (h_4 : Unit → motive D0.RoleSig.D),\n  (match D0.RoleSig.A with\n    | D0.RoleSig.A => h_1 ()\n    | D0.RoleSig.B => h_2 ()\n    | D0.RoleSig.C => h_3 ()\n    | D0.RoleSig.D => h_4 ()) =\n    h_1 ()",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.roleRoleSigEquiv.match_1.eq_1",
+      "proof_dependencies": [
+        "D0.Geometry.roleRoleSigEquiv.match_1",
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Eq.refl",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.roleRoleSigEquiv.match_1",
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Eq",
+        "Unit",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "(match D0.RoleSig.B with\n  | D0.RoleSig.A => h_1 ()\n  | D0.RoleSig.B => h_2 ()\n  | D0.RoleSig.C => h_3 ()\n  | D0.RoleSig.D => h_4 ()) =\n  h_2 ()",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (motive : D0.RoleSig → Sort u_1) (h_1 : Unit → motive D0.RoleSig.A) (h_2 : Unit → motive D0.RoleSig.B)\n  (h_3 : Unit → motive D0.RoleSig.C) (h_4 : Unit → motive D0.RoleSig.D),\n  (match D0.RoleSig.B with\n    | D0.RoleSig.A => h_1 ()\n    | D0.RoleSig.B => h_2 ()\n    | D0.RoleSig.C => h_3 ()\n    | D0.RoleSig.D => h_4 ()) =\n    h_2 ()",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.roleRoleSigEquiv.match_1.eq_2",
+      "proof_dependencies": [
+        "D0.Geometry.roleRoleSigEquiv.match_1",
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Eq.refl",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.roleRoleSigEquiv.match_1",
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Eq",
+        "Unit",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "(match D0.RoleSig.C with\n  | D0.RoleSig.A => h_1 ()\n  | D0.RoleSig.B => h_2 ()\n  | D0.RoleSig.C => h_3 ()\n  | D0.RoleSig.D => h_4 ()) =\n  h_3 ()",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (motive : D0.RoleSig → Sort u_1) (h_1 : Unit → motive D0.RoleSig.A) (h_2 : Unit → motive D0.RoleSig.B)\n  (h_3 : Unit → motive D0.RoleSig.C) (h_4 : Unit → motive D0.RoleSig.D),\n  (match D0.RoleSig.C with\n    | D0.RoleSig.A => h_1 ()\n    | D0.RoleSig.B => h_2 ()\n    | D0.RoleSig.C => h_3 ()\n    | D0.RoleSig.D => h_4 ()) =\n    h_3 ()",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.roleRoleSigEquiv.match_1.eq_3",
+      "proof_dependencies": [
+        "D0.Geometry.roleRoleSigEquiv.match_1",
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Eq.refl",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.roleRoleSigEquiv.match_1",
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Eq",
+        "Unit",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "(match D0.RoleSig.D with\n  | D0.RoleSig.A => h_1 ()\n  | D0.RoleSig.B => h_2 ()\n  | D0.RoleSig.C => h_3 ()\n  | D0.RoleSig.D => h_4 ()) =\n  h_4 ()",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (motive : D0.RoleSig → Sort u_1) (h_1 : Unit → motive D0.RoleSig.A) (h_2 : Unit → motive D0.RoleSig.B)\n  (h_3 : Unit → motive D0.RoleSig.C) (h_4 : Unit → motive D0.RoleSig.D),\n  (match D0.RoleSig.D with\n    | D0.RoleSig.A => h_1 ()\n    | D0.RoleSig.B => h_2 ()\n    | D0.RoleSig.C => h_3 ()\n    | D0.RoleSig.D => h_4 ()) =\n    h_4 ()",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.roleRoleSigEquiv.match_1.eq_4",
+      "proof_dependencies": [
+        "D0.Geometry.roleRoleSigEquiv.match_1",
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Eq.refl",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.roleRoleSigEquiv.match_1",
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Eq",
+        "Unit",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s._@.D0.Geometry.ArchiveRoleEquivalence.3825280642._hygCtx._hyg.61",
+          "type": "D0.RoleSig"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "motive s✝",
+      "declaration_kind": "definition",
+      "declaration_ranges": null,
+      "elaborated_type": "(motive : D0.RoleSig → Sort u_1) →\n  (s : D0.RoleSig) →\n    (Unit → motive D0.RoleSig.A) →\n      (Unit → motive D0.RoleSig.B) → (Unit → motive D0.RoleSig.C) → (Unit → motive D0.RoleSig.D) → motive s",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.roleRoleSigEquiv.match_1.splitter",
+      "proof_dependencies": [
+        "D0.Geometry.roleRoleSigEquiv.match_1"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleTranslateMinus N r x = Function.update x r (x r - 1)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 58,
+            "line": 58
+          },
+          "start": {
+            "column": 0,
+            "line": 50
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 44,
+            "line": 50
+          },
+          "start": {
+            "column": 16,
+            "line": 50
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N),\n  D0.Geometry.roleTranslateMinus N r x = Function.update x r (x r - 1)",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.roleTranslateMinus_eq_update",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Geometry.roleTranslateMinus",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "False",
+        "Function.update",
+        "Function.update_of_ne",
+        "Function.update_self",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast_one",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.instNeg",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "add_zero",
+        "congr",
+        "congrArg",
+        "dite",
+        "eq_false",
+        "eq_self",
+        "funext",
+        "id",
+        "inferInstance",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "neg_zero",
+        "not_false_eq_true",
+        "of_eq_true",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toRing",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleTranslateMinus",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Function.update",
+        "HSub.hSub",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Ring.toAddGroupWithOne",
+        "SubNegMonoid.toSub",
+        "ZMod",
+        "ZMod.commRing",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleTranslatePlus N r x = Function.update x r (x r + 1)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 57,
+            "line": 48
+          },
+          "start": {
+            "column": 0,
+            "line": 41
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 43,
+            "line": 41
+          },
+          "start": {
+            "column": 16,
+            "line": 41
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N),\n  D0.Geometry.roleTranslatePlus N r x = Function.update x r (x r + 1)",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.roleTranslatePlus_eq_update",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq",
+        "Eq.ndrec",
+        "Eq.symm",
+        "Eq.trans",
+        "False",
+        "Function.update",
+        "Function.update_of_ne",
+        "Function.update_self",
+        "HAdd.hAdd",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Ring.toAddGroupWithOne",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "add_zero",
+        "congr",
+        "congrArg",
+        "dite",
+        "eq_false",
+        "eq_self",
+        "funext",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "not_false_eq_true",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq",
+        "Function.update",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.twistedRoleShiftInv N r 1 f = fun x => f (D0.Geometry.roleTranslateMinus N r x)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 28,
+            "line": 64
+          },
+          "start": {
+            "column": 0,
+            "line": 60
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 47,
+            "line": 60
+          },
+          "start": {
+            "column": 16,
+            "line": 60
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (r : D0.Role) (f : D0.Geometry.ArchiveRolePhaseGroup N → ℂ),\n  D0.Geometry.twistedRoleShiftInv N r 1 f = fun x => f (D0.Geometry.roleTranslateMinus N r x)",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.Geometry.twistedRoleShiftInv_one_archive",
+      "proof_dependencies": [
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instField",
+        "Complex.instInv",
+        "Complex.instMul",
+        "Complex.instOne",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleTranslateMinus",
+        "D0.Geometry.twistedRoleShiftInv",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "Eq",
+        "Eq.refl",
+        "Eq.trans",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "Inv.inv",
+        "InvOneClass.toOne",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Semifield.toCommGroupWithZero",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.decidableEq",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "inv_one",
+        "ite",
+        "ite_congr",
+        "ite_self",
+        "of_eq_true",
+        "one_mul"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instOne",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleTranslateMinus",
+        "D0.Geometry.twistedRoleShiftInv",
+        "D0.Role",
+        "Eq",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "(match D0.RoleSig.A with\n  | D0.RoleSig.A => h_1 ()\n  | D0.RoleSig.B => h_2 ()\n  | D0.RoleSig.C => h_3 ()\n  | D0.RoleSig.D => h_4 ()) =\n  h_1 ()",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (motive : D0.RoleSig → Sort u_1) (h_1 : Unit → motive D0.RoleSig.A) (h_2 : Unit → motive D0.RoleSig.B)\n  (h_3 : Unit → motive D0.RoleSig.C) (h_4 : Unit → motive D0.RoleSig.D),\n  (match D0.RoleSig.A with\n    | D0.RoleSig.A => h_1 ()\n    | D0.RoleSig.B => h_2 ()\n    | D0.RoleSig.C => h_3 ()\n    | D0.RoleSig.D => h_4 ()) =\n    h_1 ()",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.instReprRoleSig.repr.match_1.eq_1",
+      "proof_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "D0.instReprRoleSig.repr.match_1",
+        "Eq.refl",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "D0.instReprRoleSig.repr.match_1",
+        "Eq",
+        "Unit",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "(match D0.RoleSig.B with\n  | D0.RoleSig.A => h_1 ()\n  | D0.RoleSig.B => h_2 ()\n  | D0.RoleSig.C => h_3 ()\n  | D0.RoleSig.D => h_4 ()) =\n  h_2 ()",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (motive : D0.RoleSig → Sort u_1) (h_1 : Unit → motive D0.RoleSig.A) (h_2 : Unit → motive D0.RoleSig.B)\n  (h_3 : Unit → motive D0.RoleSig.C) (h_4 : Unit → motive D0.RoleSig.D),\n  (match D0.RoleSig.B with\n    | D0.RoleSig.A => h_1 ()\n    | D0.RoleSig.B => h_2 ()\n    | D0.RoleSig.C => h_3 ()\n    | D0.RoleSig.D => h_4 ()) =\n    h_2 ()",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.instReprRoleSig.repr.match_1.eq_2",
+      "proof_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "D0.instReprRoleSig.repr.match_1",
+        "Eq.refl",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "D0.instReprRoleSig.repr.match_1",
+        "Eq",
+        "Unit",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "(match D0.RoleSig.C with\n  | D0.RoleSig.A => h_1 ()\n  | D0.RoleSig.B => h_2 ()\n  | D0.RoleSig.C => h_3 ()\n  | D0.RoleSig.D => h_4 ()) =\n  h_3 ()",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (motive : D0.RoleSig → Sort u_1) (h_1 : Unit → motive D0.RoleSig.A) (h_2 : Unit → motive D0.RoleSig.B)\n  (h_3 : Unit → motive D0.RoleSig.C) (h_4 : Unit → motive D0.RoleSig.D),\n  (match D0.RoleSig.C with\n    | D0.RoleSig.A => h_1 ()\n    | D0.RoleSig.B => h_2 ()\n    | D0.RoleSig.C => h_3 ()\n    | D0.RoleSig.D => h_4 ()) =\n    h_3 ()",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.instReprRoleSig.repr.match_1.eq_3",
+      "proof_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "D0.instReprRoleSig.repr.match_1",
+        "Eq.refl",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "D0.instReprRoleSig.repr.match_1",
+        "Eq",
+        "Unit",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "(match D0.RoleSig.D with\n  | D0.RoleSig.A => h_1 ()\n  | D0.RoleSig.B => h_2 ()\n  | D0.RoleSig.C => h_3 ()\n  | D0.RoleSig.D => h_4 ()) =\n  h_4 ()",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (motive : D0.RoleSig → Sort u_1) (h_1 : Unit → motive D0.RoleSig.A) (h_2 : Unit → motive D0.RoleSig.B)\n  (h_3 : Unit → motive D0.RoleSig.C) (h_4 : Unit → motive D0.RoleSig.D),\n  (match D0.RoleSig.D with\n    | D0.RoleSig.A => h_1 ()\n    | D0.RoleSig.B => h_2 ()\n    | D0.RoleSig.C => h_3 ()\n    | D0.RoleSig.D => h_4 ()) =\n    h_4 ()",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.instReprRoleSig.repr.match_1.eq_4",
+      "proof_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "D0.instReprRoleSig.repr.match_1",
+        "Eq.refl",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "D0.instReprRoleSig.repr.match_1",
+        "Eq",
+        "Unit",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "D0.RoleSig → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Algebra.RoleSignature.2944616082._hygCtx.12.D0.Algebra.RoleSignature.682344310._hygCtx._hyg.9",
+          "type": "D0.RoleSig"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive D0.RoleSig.A"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "Unit → motive D0.RoleSig.B"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive D0.RoleSig.C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_4",
+          "type": "Unit → motive D0.RoleSig.D"
+        }
+      ],
+      "conclusion_whnf": "motive x✝",
+      "declaration_kind": "definition",
+      "declaration_ranges": null,
+      "elaborated_type": "(motive : D0.RoleSig → Sort u_1) →\n  (x : D0.RoleSig) →\n    (Unit → motive D0.RoleSig.A) →\n      (Unit → motive D0.RoleSig.B) → (Unit → motive D0.RoleSig.C) → (Unit → motive D0.RoleSig.D) → motive x",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianFourierApplication",
+      "name": "_private.D0.Geometry.ArchiveLorentzianFourierApplication.0.D0.instReprRoleSig.repr.match_1.splitter",
+      "proof_dependencies": [
+        "D0.instReprRoleSig.repr.match_1"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.RoleSig",
+        "D0.RoleSig.A",
+        "D0.RoleSig.B",
+        "D0.RoleSig.C",
+        "D0.RoleSig.D",
+        "Unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean"
+    }
+  ]
+}

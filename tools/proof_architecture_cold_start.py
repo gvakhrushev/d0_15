@@ -402,12 +402,18 @@ CASES: list[dict[str, Any]] = [
             "actual full-cochain matrix B-singleton vacuum spatial Nyquist positive self-adjoint weighted Dirac Eq. 6",
             "spatialNyquistEven_weightedDirac_matrix_block every even archive period N+2",
             "flatLorentzWeightedDiracEven_no_positive_selfadjoint_pairing",
+            "roleWeightedArchiveDifferenceLaplacian_fourier all-size role weighted difference eigenvalue",
+            "archiveLorentzianDifferenceLaplacian_fourier roleWeightedArchiveFourierSymbol_lorentzian",
+            "archiveLorentzianDifferenceOperator_fourier_mode archiveFourierFockMode archiveLorentzianFourierSymbol",
+            "archiveRoleFourierInversion actual archive site scalar field",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
             "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
             "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean",
             "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json",
         ],
         "scope_review": (
             "The generic theorem identifies matrix multiplication in the existing ArchiveCochainBasis "
@@ -417,8 +423,11 @@ CASES: list[dict[str, Any]] = [
             "B-singleton action equations and applies that conditional transfer. The supplied positive form and "
             "self-adjointness premise are not physically derived. The all-even extension requires an even "
             "archive period N+2 and proves the same full-carrier block and conditional obstruction there; it "
-            "does not prove the Eq. (5) Fourier dispersion, the complete all-size spectrum, role-order "
-            "intertwiners, physical action/source selection, or GR closure."
+            "is separate from the Eq. (5) Fourier application. The signed scalar second-order operator now has "
+            "an all-size character eigenbasis, a complete scalar site Fourier inversion, and an injective "
+            "sixteen-label Fock coefficient embedding per momentum. The first-order Lorentzian CAR symbol and "
+            "its square-to-source bridge remain open, as do role-order intertwiners, physical action/source "
+            "selection, and GR closure."
         ),
     },
 ]
