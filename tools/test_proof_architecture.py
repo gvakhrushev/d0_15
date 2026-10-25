@@ -2105,13 +2105,13 @@ class ProofArchitectureTests(unittest.TestCase):
             item for item in cold_start.CASES
             if item["id"] == "archive-phase-shift-reuses-transitive-permutation-theorem"
         )
-        query = case["queries"][0]
+        queries = case["queries"]
         self.assertIn(
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
             case["required_refs"],
         )
-        hits = proof.full_text_search_many(proof.ROOT, [query], limit=24)[0]
-        sources = {hit["source"] for hit in hits}
+        hits_by_query = proof.full_text_search_many(proof.ROOT, queries, limit=18)
+        sources = {hit["source"] for hits in hits_by_query for hit in hits}
         for path in (
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
             "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",

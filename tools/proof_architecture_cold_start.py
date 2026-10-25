@@ -594,8 +594,8 @@ CASES: list[dict[str, Any]] = [
     {
         "id": "archive-phase-shift-reuses-transitive-permutation-theorem",
         "queries": [
-            "ArchiveShiftTopology ArchivePhaseShift commute_with_shift_implies_diagonal_constant",
-            "ZMod cyclic shift matrix commutant diagonal constant transitive permutation",
+            "ArchiveTopology abstract_shift_commute_implies_diagonal_constant shiftMatrix commute_with_shift_iterate",
+            "ArchivePartialTrace density_uniform_from_commute commute_with_shift_implies_diagonal_constant",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
@@ -603,9 +603,12 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
         ],
         "required_sources": [
-            {"path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"},
-            {"path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean"},
-            {"path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean"},
+            {"path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+             "scope_query_indexes": [0]},
+            {"path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+             "scope_query_indexes": [0, 1]},
+            {"path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
+             "scope_query_indexes": [1]},
         ],
         "scope_review": (
             "For a finite carrier, a transitive permutation, and exact commutation with its shift matrix, "
