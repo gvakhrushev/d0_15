@@ -1661,6 +1661,21 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertTrue(any("hodgeCarDirac_kernel_finrank" in query
                             for query in case["queries"]))
 
+    def test_shared_linear_map_coordinate_action_is_rediscoverable(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "finite-hermitian-adjoint-twisted-car-application"
+        )
+        query = "finiteLinearMap_apply_eq_sum_single finite coordinate basis action"
+        source = "03_FORMALIZATION/D0/Algebra/FiniteCoordinateBasis.lean"
+        self.assertIn(query, case["queries"])
+        self.assertIn(source, case["required_refs"])
+        hits = proof.full_text_search_many(proof.ROOT, [query], limit=18)[0]
+        self.assertTrue(any(
+            hit["source"] == source and hit["direct_content"]
+            for hit in hits
+        ))
+
     def test_shared_finite_coordinate_expansion_is_in_both_adjoint_proofs(self) -> None:
         inventory_path = (
             proof.ROOT

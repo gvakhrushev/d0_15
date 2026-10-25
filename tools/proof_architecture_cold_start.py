@@ -414,6 +414,7 @@ CASES: list[dict[str, Any]] = [
         "id": "finite-hermitian-adjoint-twisted-car-application",
         "queries": [
             "finiteHermitianAdjoint_unique coordinate finite Hermitian pairing conjugate transpose",
+            "finiteLinearMap_apply_eq_sum_single finite coordinate basis action",
             "dTwistedAdjoint_eq_finiteHermitianAdjoint unit holonomy CAR annihilation formula",
             "dTwistedLinear_comp_self_eq_zero actual twisted exterior differential",
             "hodgeCarDiracTwisted_eq_finiteHermitianHodgeDirac",
@@ -425,6 +426,7 @@ CASES: list[dict[str, Any]] = [
             "hodgeCarDiracTwisted_sq generic Hodge anticommutator twistedDifferenceLaplacian",
         ],
         "required_refs": [
+            "03_FORMALIZATION/D0/Algebra/FiniteCoordinateBasis.lean",
             "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveTwistedHodgeDirac.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_differential_nilpotency_adapter_2026-10-25.json",
