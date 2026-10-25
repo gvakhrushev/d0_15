@@ -24,7 +24,7 @@ import sympy as S
 
 ROOT = Path(__file__).resolve().parent.parent / "d0_native65_causal_source_2026-10-22"
 sys.path.insert(0, str(ROOT))
-from native_excerpt import native  # unchanged original CAR16/Julia/Walsh/Golden128
+from native_excerpt import native, creators  # unchanged original CAR16/Julia/Walsh/Golden128
 
 r,nu,p = S.symbols("r nu p",real=True,positive=True)
 # For signed r, symbolic r is not constrained positive in all sympy versions:
@@ -93,6 +93,32 @@ check(ratio.subs(r,-S.Rational(1,9))<1<
       ratio.subs(r,S.Rational(1,9)),
       "exact signed boost sign is the sign of qvac-qstat")
 
+# Full original CAR vacuum is the UNIQUE common kernel of the original
+# four ANNIHILATORS. This is the state of original four empty source
+# grades, not a new chosen eigenvector or U(16) resource.
+annihilators=np.vstack([cc.conj().T for cc in creators()])
+singular_values=np.linalg.svd(annihilators,compute_uv=False)
+check(int(np.sum(singular_values>1e-12))==15,
+      "true original four CAR annihilators have 1D COMMON vacuum kernel")
+check(np.linalg.norm(annihilators@I16[:,0])<1e-12,
+      "the ORIGINAL computational allblank is the canonical CAR vacuum")
+# Exact joint SOURCE inversion. No eigenvalue gap or division by r:
+# rdot is reconstructed from the ratio of genuine q1 jets;
+# nudot/nu then from the original qstat source.
+rprime=S.diff(ratio,r)
+dr_from_r=S.factor((qstat*S.diff(qvac,r)-qvac*S.diff(qstat,r))
+                   /(qstat*qstat*rprime))
+dr_from_nu=S.factor((qstat*S.diff(qvac,nu)-qvac*S.diff(qstat,nu))
+                    /(qstat*qstat*rprime))
+check(S.cancel(dr_from_r-1)==0 and S.cancel(dr_from_nu)==0,
+      "two native Born SOURCE jets EXACTLY recover dr even at r=0")
+coef=S.diff(B,r)/B+4*r/(1-r*r)
+dn_from_r=S.factor((S.diff(qstat,r)/qstat-coef*dr_from_r)/4)
+dn_from_nu=S.factor((S.diff(qstat,nu)/qstat-coef*dr_from_nu)/4)
+check(S.cancel(dn_from_r)==0 and
+      S.cancel(dn_from_nu-1/nu)==0,
+      "two native Born SOURCE jets EXACTLY recover moving dnu/nu")
+
 # Original whole 16x16 native CAR/Julia/Walsh constructor, including
 # every one of the 128 fine outcomes and all dark operators.
 I16=np.eye(16,dtype=np.complex128)
@@ -122,6 +148,13 @@ for rv,nv in samples:
          "true self-prepared full128 state POLYNOMIAL not new free rho")
     near(float(np.trace(rho2).real),1,1e-13,
          "original physical stationary DATA trace exactly one")
+    # Input-independent stationary native Kraus channel is the owner.
+    rho_after=np.einsum("aij,jk,alk->il",K,rho2,K.conj(),optimize=True)
+    near(np.linalg.norm(rho_after-rho2),0,1e-11,
+         "TRUE ORIGINAL full128 channel fixes generated stationary rho")
+    parity=np.diag([1 if (i.bit_count()%2==0) else -1 for i in range(16)])
+    near(abs(np.trace(rho2@parity)),0,1e-12,
+         "both genuinely distinguishable CAR parity sectors have mass1/2")
     qstat_native=float(np.trace(rho@K[1].conj().T@K[1]).real)
     qvac_native=float(np.vdot(K[1][:,0],K[1][:,0]).real)
     qstat_theory=float(qstat.subs({r:rv,nu:nv,p:pnum}))
