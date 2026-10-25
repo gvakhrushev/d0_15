@@ -2,10 +2,11 @@
 
 25 October 2026. Existing Draft PR #334, task
 EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE, constitutive slot,
-native-programme-v1. Input owner commit
-49b78ad87365a2b62b99439781b2c244e7fac51f; refreshed main
-8b94198c8dfbdf5983ad0b350b058fb30bb68a54. Primary consumer: section7al
-of A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md,
+native-programme-v1. Scientific input49b78ad87365a2b62b99439781b2c244e7fac51f;
+local frozen checkpoint6f05c4ea; concurrent remote source checkpoint
+95b3d38a684e0508ad47f75ce7885085b75e2c15. Refreshed main was
+8b94198c8dfbdf5983ad0b350b058fb30bb68a54. Final primary consumer is
+section7am of A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md,
 applying section7ak's conditional Golden code point to native execution.
 No new task, action, selector, registry claim or assembly acceptance.
 
@@ -32,18 +33,43 @@ law is nontrivial and one explicitly computed failure effect depends
 on the control. Raw Boolean-unready records and their real source/price
 transport remain retained obligations, not inferred from scalar success.
 
+## Concurrent source preservation and numbering
+
+The remote advanced after the pre-integration checks, adding a DIFFERENT
+full moving-density/open-field source theorem as7al in the same primary
+and brief. No remote update was overwritten. Removing ONLY final7am,
+including its separator, recovers the95b3d38a primary byte for byte;
+the95b3d38a brief is an exact prefix of the final brief. Its7al, all
+prior packets and acceptance states are unchanged.
+
+Our local6f05c4ea Golden section was mechanically renamed7al->7am and
+equations329-337->338-346. Inverting ONLY those replacements recovers
+its exact old10289-byte slice. CLEAN_BOUNDARY and HERALDED_CONTROL change
+only the consumer heading7al->7am. ALL_BRANCHES is byte-identical.
+The mathematical checker prefix before def pin is byte-identical.
+Its only changes add final7am and the immutable pre-integration receipt
+to provenance. Both scientific conclusions and all24 result groups
+remain equal. The old9151-byte receipt is retained exactly as
+PRE_INTEGRATION_CHECK_RESULT.json and equals the old captured stdout.
+
+The new7al and7am have distinct retained interfaces and hypotheses.
+This integration does not assert that the Golden extension has already
+been applied to every new off-null reporter, or that either result
+solves the complete native controller/normal equations.
+
 ## Smallest decisive calculation and replay boundary
 
-Root final CLI, executed once on frozen proof and primary inputs:
+Root bounded CLI on the final integrated proof/primary inputs:
 
     python3 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/check_golden_extension.py --output 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/CHECK_RESULT.json
 
-Exit0, PASS24. The saved receipt is byte-identical to captured stdout.
-All19 source pins and six primary-section pins were rehashed. Removing
-only7al, including its separator, recovers the input primary byte for
-byte; the old task brief remains an exact prefix. All earlier packets
-are unchanged. The intended final diff has two existing text files and
-six new packet files, with disjoint author write paths.
+Exit0, PASS24. Final receipt is byte-identical to merged captured stdout.
+All20 source pins and seven primary-section pins were rehashed. The
+prior unchanged-mathematics run at6f05c4ea also passed24 checks; the final
+bounded run refreshes provenance after the concurrent integration and
+numbering change. Every scientific receipt field excluding timestamp,
+source pins and section pins agrees EXACTLY between both outputs.
+No expected result or old evidence is rewritten.
 
 The checker performs exact ring arithmetic and the actual16-column
 native coin matrix/container length effect. It validates/counts the
@@ -59,11 +85,10 @@ X outcomes at Boolean READY. It neither emits nor matrix-replays the
 analytic recipe inventory. The explicit GOOD0/10/10 effect and full
 conditional GramI4 prevent replacing the whole outcome law by success.
 
-An initial root development run passed23 checks. Source review then
-strengthened the factorized fine-failure assertion, added the exact
-actual-parent compactness check and five provenance pins; final PASS24
-above exercises those changes. No author ran a duplicate mathematical
-replay. Numerical entropy and success-probability displays use100-digit
+An earlier development run passed23 checks; the next source-strengthened
+run added the actual-parent compactness guard and exact factorized
+failure assertion. No assistant ran duplicate mathematical checks.
+Numerical entropy and success-probability displays use100-digit
 arithmetic and are not interval enclosures; exact identities and the
 analytic sign/source bounds carry the stated conclusions. No old
 READY/root/rank/Cartan/full128/Lean/corpus replay was performed.
@@ -72,9 +97,9 @@ READY/root/rank/Cartan/full128/Lean/corpus replay was performed.
 
 | Source (repository relative) | Bytes | SHA256 |
 | --- | ---: | --- |
-| 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/check_golden_extension.py | 14448 | 2aba91f177eaf35be1f2eaf0a16a455526d45f349e8816d3033ca98ea04bf3b2 |
-| 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/CLEAN_BOUNDARY.md | 13208 | 6114c19600f5d8aaee788f94bac4e806a6d7b58d17748663da761c605a9c9758 |
-| 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/HERALDED_CONTROL.md | 16750 | 8d478d915264340ae65522777225227293feb6c94e90812e3f2ec2bc2bb7bd60 |
+| 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/check_golden_extension.py | 14515 | 17b2c146c1f064122096d1626c66e7877c71d06c39de450c017253f94723ca5f |
+| 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/CLEAN_BOUNDARY.md | 13208 | ff68d62d353eea87950044b67d4c22e307ff89ea3fe93c8dfad368262cb14f3e |
+| 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/HERALDED_CONTROL.md | 16750 | 721fcd9909d9c047c5c7c8053cf3ea377bff1c9b5978e7899b621fd7f648b9d3 |
 | 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/ALL_BRANCHES.md | 17917 | 45e37487700f95b8cacaa6ad37e7bed43642d081f5caef725b4ca048f20850b8 |
 | 02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py | 17833 | 222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c |
 | 02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/book_price.py | 9896 | 7c325fe6322298e13c2380522e9645cc228d8d5db2d7741368310690b80b095c |
@@ -91,9 +116,10 @@ READY/root/rank/Cartan/full128/Lean/corpus replay was performed.
 | 02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/COFIELD_THEOREM.md | 26868 | 41b8f08cbffc3de99df1ec92c589f652ee9bc1dca2139a1f5834650a721ccd11 |
 | 02_REGISTRY/research/A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md | 14746 | 4e6a9b41bd5cd0bd19d9946a77a2418d1844574b79fad9d0ed540577dc8bcb46 |
 | 02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md | 240407 | 10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05 |
-| 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/CHECK_RESULT.json | 9151 | 455cf2803fb177b7ed1e549882d267e94956105c4971fb836a2ea8cdd4442fe8 |
+| 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/PRE_INTEGRATION_CHECK_RESULT.json | 9151 | 455cf2803fb177b7ed1e549882d267e94956105c4971fb836a2ea8cdd4442fe8 |
+| 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/CHECK_RESULT.json | 9543 | 333bea4281e0124f9a815dcef8c8d333d4c698de5d7ef214a85d1a4338ac82c6 |
 
-Primary section pins exclude the newline starting the next `## ` heading.
+Section pins exclude the newline starting the next `## ` heading.
 
 | Section | Bytes | SHA256 |
 | --- | ---: | --- |
@@ -102,18 +128,20 @@ Primary section pins exclude the newline starting the next `## ` heading.
 | ## 7ai. | 8847 | b85894771aefa1b9a72829a82d6d05e10d4a5d1c5571ed3ad7b2648ebe7f2022 |
 | ## 7aj. | 9239 | 7ce0153406c8d6b163e059eae5046da4d0a750da9558d8b10ab9e1be6f0d48be |
 | ## 7ak. | 10616 | fbd5dfbb3c632c621dea184acf324342616648b900a1046026f21bf224a575cd |
-| ## 7al. | 10289 | 8596e4606479ef097f2b6ab39fc0a6eb4971356a9c67ed3d5fc660a13fcfc65a |
+| ## 7al. | 18515 | 287858debe4d6c5fea5ddbbacd20dc30964d6f5ddf6ad3d8eeab34681b62eac8 |
+| ## 7am. | 10289 | c19cc8051909f9c45e81a4f5c83321e3ee0937c53517a3f7ae9c36875ce408b0 |
 
-## Review and physical boundary
+## Source review and remaining physical application
 
 Three disjoint same-PR assistants supplied CLEAN_BOUNDARY,
 HERALDED_CONTROL and ALL_BRANCHES. The final proofs, checker and primary
-were cross-read without mathematical reruns. Two independent final
-source reviews accepted checker14448/SHA2562aba91f177eaf35be1f2eaf0a16a455526d45f349e8816d3033ca98ea04bf3b2,
-primary7al10289/SHA2568596e4606479ef097f2b6ab39fc0a6eb4971356a9c67ed3d5fc660a13fcfc65a,
-and the final herald proof16750/SHA2568d478d915264340ae65522777225227293feb6c94e90812e3f2ec2bc2bb7bd60.
-This is source review, not independent physical GR acceptance. The final
-receipt/provenance review and structural guards are recorded below.
+were cross-read without mathematical reruns. Two independent source
+reviews accepted all final pre-integration proof and primary bytes.
+A separate pinned-source review accepted all19 source/six section pins,
+20 file-table/six section-table rows, stdout identity, exact49b78ad8
+primary recovery and brief preservation at6f05c4ea. The merged-input
+provenance/preservation review is recorded below. This is research
+source review, not independent physical GR acceptance.
 
 The code point now has an exact actual all-branches realization and
 explicit common field/source/gain map. The next application retains
@@ -122,19 +150,18 @@ conditional-only serial Emit, actual full physical price/task/variation
 selection and native GR realization/refinement. Direct Book requires no
 second Info term. positive_gr, raw216 and GR_closed remain open.
 Local guards or a receipt do not remove any of these physical premises.
-No merge or physical status promotion is made.
+No merge of the PR or physical status promotion is made.
 
-Pre-integration independent pinned-source audit ACCEPT: all19 source
-pins, six section pins, all20 file-table and six section-table rows,
-receipt/stdout identity, exact49b78ad8 primary recovery, old-brief prefix
-and the exact eight-path diff were verified without a mathematical rerun.
-Local work/protocol/assembly/repository and staged-diff guards PASS,
-warnings0. Counts remain claims889, assumptions31, aliases58,
+Final independent merged pinned-source review ACCEPT: all20 source pins,
+seven section pins, all21 file-table and seven section-table rows were
+rehashed; both stdout identities, equal scientific receipt fields,
+exact95b3d38a preservation, reversible6f05c4ea numbering and the nine-path
+diff were verified without mathematical reruns. Remote7al including
+its separator is18516bytes/SHA256
+3fbb1b910d38794ca90b05ef55090f28f400a36cfeba6a6f67ab97a069d1a68a,
+matching its incoming brief pin; our table excludes that separator.
+Final local work/protocol/assembly/repository and staged-diff guards
+PASS, warnings0. Counts remain claims889, assumptions31, aliases58,
 formal_support183, Lean closure918; assembly54active/98results/
-5discharged/22obligations, scientific_promotion=false.
-
-Before push the owner remote advanced to95b3d38a684e0508ad47f75ce7885085b75e2c15,
-adding a different open-field/moving-density source theorem in the same
-primary and brief. This local checkpoint is retained before integrating
-that concurrent result; no remote update is overwritten. Final integration
-provenance and section numbering will be recorded in the merged result.
+5discharged/22obligations, scientific_promotion=false. These structural
+checks are distinct from remote CI and physical source/GR acceptance.

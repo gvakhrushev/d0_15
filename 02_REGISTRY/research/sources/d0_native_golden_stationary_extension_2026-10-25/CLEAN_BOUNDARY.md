@@ -1,7 +1,7 @@
 # An exact integral-ring boundary for a clean controlled Golden gate
 
 25 October 2026. SAME PR334 / constitutive owner. Input publication
-`49b78ad87365a2b62b99439781b2c244e7fac51f`; consumer: primary §7al.
+`49b78ad87365a2b62b99439781b2c244e7fac51f`; consumer: primary §7am.
 This note closes one finite-word implementation question raised by
 §7ak's positive conditional Gibbs point. It concerns the precise
 literal G/CX/SourceI profile and computational clean-return interface.

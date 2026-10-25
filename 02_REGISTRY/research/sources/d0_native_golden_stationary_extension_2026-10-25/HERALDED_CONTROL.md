@@ -1,7 +1,7 @@
 # Exact heralded controlled Golden rotation, with its complete raw failure sector
 
 25 October 2026. SAME PR334 / constitutive owner; input publication
-49b78ad8. Consumer: primary §7al and §7ak's positive conditional Gibbs
+49b78ad8. Consumer: primary §7am and §7ak's positive conditional Gibbs
 point. This constructs a finite native success instrument, not a new
 controlled-G primitive, a discarded failure law or a full-price stationary
 realization. The distinct clean-unitary boundary is in

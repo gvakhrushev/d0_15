@@ -274,7 +274,8 @@ def main():
               SOURCES/'d0_native_price_cofield_forks_2026-10-25/COFIELD_THEOREM.md',
               SOURCES.parent/'A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md',
               SOURCES.parent/'A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md']
-    result['source_pins']=[pin(p) for p in paths];result['section_pins']=[section_pin('## '+s+'.') for s in ('7j','7y','7ai','7aj','7ak','7al')]
+    paths.append(PACKET/'PRE_INTEGRATION_CHECK_RESULT.json')
+    result['source_pins']=[pin(p) for p in paths];result['section_pins']=[section_pin('## '+s+'.') for s in ('7j','7y','7ai','7aj','7ak','7al','7am')]
     result['generated_utc']=datetime.now(timezone.utc).isoformat()
     text=json.dumps(result,ensure_ascii=False,indent=2,sort_keys=True)+'\n'
     if args.output:args.output.write_text(text)

@@ -42,7 +42,7 @@
     "whole_parent_dimension": 8192,
     "whole_parent_stages": 135
   },
-  "generated_utc": "2026-10-25T08:20:14.686571+00:00",
+  "generated_utc": "2026-10-25T08:26:06.649546+00:00",
   "heralded": {
     "Gamma_Bool": "(2p^3)^14 (4p^3)^28 (16p^9)^8",
     "gamma_total_noninterval": "0.0000000000018016302183484672058383642976003585307619188957985749098047832272",
@@ -107,26 +107,31 @@
       "sha256": "fbd5dfbb3c632c621dea184acf324342616648b900a1046026f21bf224a575cd"
     },
     {
-      "bytes": 10289,
+      "bytes": 18515,
       "heading": "## 7al.",
-      "sha256": "8596e4606479ef097f2b6ab39fc0a6eb4971356a9c67ed3d5fc660a13fcfc65a"
+      "sha256": "287858debe4d6c5fea5ddbbacd20dc30964d6f5ddf6ad3d8eeab34681b62eac8"
+    },
+    {
+      "bytes": 10289,
+      "heading": "## 7am.",
+      "sha256": "c19cc8051909f9c45e81a4f5c83321e3ee0937c53517a3f7ae9c36875ce408b0"
     }
   ],
   "source_pins": [
     {
-      "bytes": 14448,
+      "bytes": 14515,
       "path": "02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/check_golden_extension.py",
-      "sha256": "2aba91f177eaf35be1f2eaf0a16a455526d45f349e8816d3033ca98ea04bf3b2"
+      "sha256": "17b2c146c1f064122096d1626c66e7877c71d06c39de450c017253f94723ca5f"
     },
     {
       "bytes": 13208,
       "path": "02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/CLEAN_BOUNDARY.md",
-      "sha256": "6114c19600f5d8aaee788f94bac4e806a6d7b58d17748663da761c605a9c9758"
+      "sha256": "ff68d62d353eea87950044b67d4c22e307ff89ea3fe93c8dfad368262cb14f3e"
     },
     {
       "bytes": 16750,
       "path": "02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/HERALDED_CONTROL.md",
-      "sha256": "8d478d915264340ae65522777225227293feb6c94e90812e3f2ec2bc2bb7bd60"
+      "sha256": "721fcd9909d9c047c5c7c8053cf3ea377bff1c9b5978e7899b621fd7f648b9d3"
     },
     {
       "bytes": 17917,
@@ -207,6 +212,11 @@
       "bytes": 240407,
       "path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
       "sha256": "10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05"
+    },
+    {
+      "bytes": 9151,
+      "path": "02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/PRE_INTEGRATION_CHECK_RESULT.json",
+      "sha256": "455cf2803fb177b7ed1e549882d267e94956105c4971fb836a2ea8cdd4442fe8"
     }
   ],
   "status": "PASS"

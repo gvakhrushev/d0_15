@@ -8816,7 +8816,349 @@ Physical ledger/Info selection, actual independent variations and
 full joint GR realization/refinement remain. GR_closed=false.
 
 
-## 7al. Execute the Golden code point and retain the real controller/return source
+## 7al. One native open-field source and its full equation-class consumer
+
+25 October2026, SAME PR334/constitutive owner, input49b78ad8. The changed
+parent input is precise:7ai(ST6) uses the primary P5/C8 first jet, while
+7k(121)-(129) has a genuine off-null source but fixes the TOTAL tag mass.
+Compose the latter with the effect-agnostic known-port implementation
+and actual finite price forks. This removes BOTH restrictions from the
+source-consistency theorem. It does not select a new physical action,
+assert that an arbitrary task-code edge is a native Euler row, or use
+small absolute closing gain as evidence of stationarity.
+
+### A positive reserve branch retains every moving-density direction
+
+Use the original regular compact field box of7k, its exact inverse/
+Cayley/material operands, fixed quadrature mu_s>0 and actual density
+rho_s(Y)>0. Write a_s=f_s/rho_s, b_s=q_s/rho_s and
+I_h=sum_s mu_s(f_s+lambda_minus q_s). Choose ONE fixed rational bound
+Omegabar_h>sup_Y sum_s mu_s rho_s(Y). The logical tag partition is
+
+    pi_s=mu_s rho_s/Omegabar_h  (s>=1),
+    pi_0=1-sum_(s>=1)pi_s>0,
+    Q_tau=sum_(s>=1)pi_s r(tau a_s,tau b_s)+pi_0 r0
+         =r0+sum_(s>=1)pi_s[r(tau a_s,tau b_s)-r0].     (329)
+
+The new tag0 is a real positive branch returning EXACTLY the original
+r0=r(0,0), not a negative counterterm or a subtraction from Book. The
+ORIGINAL sigma-minus polynomial, a0=r_x(0,0)>0 and
+lambda_minus=r_y(0,0)/a0 remain those in paid-writer(34). The physical
+rho and marked geometric decoder are unchanged. Omegabar is a fixed
+finite implementation bound, not a field-dependent calibration.
+
+Compile the full positive tag vector INCLUDING tag0 by7k(121): at each
+Bernstein node use a positive Q(p) vector whose sum is EXACTLY1. Its
+rounded-node C1 convergence holds on the same compact box. Compile the
+real operands independently with their existing fixed Lambda_h and
+fresh coordinate packets for EACH sign occurrence. Prepare ALL rows
+before live selection. For tag0 use the exact fixed Q(p) Bernoulli row
+r0 (or the exact original zero-operand experiment). The existing
+[positive partition factory, section6](sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md)
+supplies it with its genuine failed branches and work. No exact H,
+Toffoli, free density loader or new primitive is granted.
+
+All table/operand/dummy resources share the ONE actual ALL-READY event.
+The all-input factorization and native amplification
+[RC7-RC9](sources/d0_exact_report_reflected_cohorts_2026-10-25/PROOF.md)
+apply to this finite positive logical processor after recomputing its
+raw readiness, feature count, controls, full carrier and true clock.
+The input predicate leaves the whole incident bank/reference, port,
+helper, spin and amplification rebit free as required there; actual
+source preparation remains OUTSIDE that amplifier. Thus gamma>=1/2
+is obtained at a finite paid depth, uniformly on the full bank input.
+All failures and all unselected resources remain in the execution.
+These are applications of the owned factory/interface proofs, not an
+assertion that the old P5/C8 table equals the new off-null table.
+
+An approximate dummy constant is insufficient: if it is r0+e0, its
+extra normalized source is Omegabar_h e0 Dpi_0/(a0 tau). We use exact
+r0 specifically to avoid that inverse-strength debt. In contrast,
+approximations of the real tag/operand FUNCTIONS retain the structured
+cancellation below. Their errors are not divided by tau.
+
+Put v_s=(tilde a_s,tilde b_s),
+Itilde_h=Omegabar_h sum_(s>=1)tilde pi_s(tilde a_s+lambda_minus tilde b_s),
+and epsilon_geo=||D Itilde_h-D I_h||_(V_h*). In the SAME full field norm
+as7k, define the finite constant
+
+    T_tag=Omegabar_h sup_(||V||<=1) sum_(s>=1)
+       [tilde pi_s ||v_s|| ||Dv_s[V]||
+          +(1/2)||v_s||^2 |Dtilde pi_s[V]|].
+
+Taylor's formula with the owned M_r=2*10^-5 on |x|,|y|<=0.01 gives
+
+    ||Omegabar_h DQ_tau/(a0 tau)-D I_h||_(V_h*)
+                    <=epsilon_geo+(M_r tau/a0)T_tag.  (330)
+
+Indeed r(tau v)=r0+a0 tau(1,lambda_minus).v+R_tau(v), with
+|R_tau(v)|<=M_r tau^2||v||^2/2 and
+||D_v R_tau||<=M_r tau^2||v||. Differentiate(329), INCLUDING every tag
+row, and apply these bounds. The baseline cancels because the EXTENDED
+partition sums1 exactly, even when the original total density moves.
+Equivalently, append report weight rho_0=Omegabar_h pi_0 and zero
+operands to7k(124); its extended total weight is constant and its
+remainder is zero. This changes no physical density or field variable.
+
+A decisive moving-volume control is one cell with mu=1, rho=1+t,
+f=rho, q=0 and Omegabar=4 on |t|<1/2. The old normalized report is
+r(tau,0), with identically zero t-source although DI_h/dt=1. The actual
+reserve report has derivative [r(tau,0)-r0]/4, so its normalized source
+tends to1. This is the missing volume row, not another on-shell test.
+
+### Full Book price and off-shell finite price comparisons
+
+For this processor use the actual known-port word and all-column source
+inverse of7ai, with its genuine amplified readiness gamma_j and middle
+d_j=1-cos(2m_j theta) in(1/2,1). Choose the fixed weak strength and point
+accuracy so every actual baseline/node q lies in the SAME positive
+collar q_min<=q<=1/4. For the original report this is possible since
+r0>0 and the real weak operands converge uniformly to zero. The source
+kernel is I-d_j gamma_j P_j on every bank input; no P5 criticality is
+used. Hence, on the actual native baseline,
+
+    s_j=1-d_j gamma_j q_j,  t_j=s_j^2,
+    a_j=2d_j gamma_j/s_j in[1/2,8/3],
+    T_M=product_(j<=M)t_j,  w_M=r zeta T_M/(1-zeta+zeta T_M),
+    B_M=H_M-r log(1-zeta+zeta T_M),  r=4 r_old,
+    g_h=a0 tau_h/Omegabar_h,
+    gbar_h=c_quad,h g_h,
+    A_M=sum_(j<=M)a_j gbar_(h_j),  Gamma_M=w_M A_M.     (331)
+
+This is the one cumulative determinant, not a sum of local prices.
+The true full thermal dimension and expanded clock include the new
+reserve/tag factories and all amplification/recording. Matched source
+preparations conjugate the SAME fixed middle on the SAME complete
+clock/carrier, so their H_M values agree exactly. The protected spin
+rank is counted once. Every independent change of cut, clock, beta,
+readiness, middle or other selected stack term retains its own source.
+
+On a smooth comparison of the generated fields, the exact chain rule
+DJ_M=w_M sum_j a_j Dq_j and(330) give the positive weighted mean of the
+original OFF-SHELL covectors. This alone is not a continuous native
+actuator. To give it actual finite price data, consume the existing
+[matched native fork construction](sources/d0_native_price_cofield_forks_2026-10-25/NATIVE_GRAPH.md)
+and [known-port divided slope ST17-ST18](sources/d0_known_port_native_cofield_2026-10-25/SOURCE_TRANSFER.md).
+Unlike the old critical-only estimate, retain the NONZERO first derivative.
+
+At cohort j fix a compact chart, centre c_j, all c_j+/-Delta_j e_a,
+and their unconditional native source words BEFORE its first execution.
+Use the same finite report/READY/middle throughout, whole-state error
+eta_j at every node, matched real inventory/clock and fixed source
+auxiliary targets. No old point word or sealed record is later revised.
+Let B_j=Dchi_h DSample_h be its true physical test map and
+L_j=||B_j||_(C3 -> l1). Let M1,j and M3,j bound the maximum absolute
+first and third coordinate derivatives of the smooth logical Q_j on
+these segments. For q_j^0 the actual centre mean, put
+
+    u_j=max_(a,sign)|q_(j,a)^sign-q_j^0|
+                         <=M1,j Delta_j+4eta_j,
+    e_j=M3,j Delta_j^2/6+2eta_j/Delta_j,
+    rho_j=exp(4u_j/3)-1.
+
+For a single-row fork the genuine whole-price divided slope beta obeys
+exp(-4u_j/3)<=beta/(w_M a_j)<=exp(4u_j/3) for EVERY future M>=j.
+This bound contains no inverse old-return probability. Define the
+LINEAR cofield from the actual finite price differences by
+
+    d^B_(M,j,a)=[B_(M;j,a)^+-B_(M;j,a)^-]/(2Delta_j),
+    Fhat_(M,j)=B_j^*d^B_(M,j).
+
+Central Taylor's formula and the two actual node-state errors now give
+
+    ||Fhat_(M,j)/(w_M a_j gbar_j)
+                      -B_j^*DQ_j(c_j)/gbar_j||_(C3*)
+       <=(L_j/gbar_j)[(1+rho_j)e_j+rho_j M1,j]
+       =epsilon_sec,j.                              (332)
+
+The last term is essential away from the primary family. It is absent
+from the earlier critical formula because DQ_j=0 there. At fixed h,
+table and strength, first choose Delta_j, then eta_j, to make(332)
+arbitrarily small. The bounds are finite on this fixed chart. These
+choices are prospective and frozen. The error requirement is local
+eta_j/(Delta_j gbar_j), NOT eta_j/(Delta_j Gamma_M); the actual w_M
+cancels in the proved divided-slope comparison uniformly in all later
+prefixes. Equal endpoint values use the continuous divided derivative
+of the KNOWN scalar price, not a smooth selector of native words.
+
+
+The observed field chords keep their OWN norm. Consume the actual bounded
+moment readout and inverse of [STENCIL_MAP SM13](sources/d0_native_price_cofield_forks_2026-10-25/STENCIL_MAP.md).
+Let C_j have columns (c_actual,a^+-c_actual,a^-)/(2Delta_j). With the
+finite inverse-moment norm R_h^mom,
+
+    ||c_actual^0-c_j||_1<=2R_h^mom eta_j,
+    ||C_j-I||_(1->1)<=chi_j=2R_h^mom eta_j/Delta_j.
+
+Choose chi_j<=1/2. Then C_j is invertible and ||C_j^-1-I||<=2chi_j.
+The owned finite bump extension of the ACTUAL decoded centre gives
+Zhat_j with ||Zhat_j-Z_m||_C3<=2R_h^ext R_h^mom eta_j; these constants
+include the true h^-1 connection conversion, inverse-coframe and material
+calibration. Require this quantity to tend to zero. On this regular
+compact chart its actual sampling/coordinate map Bhat_j obeys a finite
+bound b_j=||Bhat_j-B_j||_(C3->l1)<=K_h eta_j. No h-uniform inverse or
+readout bound is assumed. The cofield corrected to the actual chords is
+Fhat_read,(M,j)=Bhat_j^* C_j^(-T) d^B_(M,j). Consequently
+
+    ||Fhat_read,(M,j)-Fhat_(M,j)||_(C3*)/(w_M a_j gbar_j)
+       <=[2L_j chi_j+2b_j](1+rho_j)(M1,j+e_j)/gbar_j
+       =epsilon_read,j.                             (332a)
+
+This follows from the inverse bounds and
+||d^B/(w_M a_j)||_infty<=(1+rho_j)(M1,j+e_j). All new errors can be
+made small by the same prospective choice of eta_j after Delta_j is
+fixed. Thus mathematical source labels are not substituted for the
+actual readout coordinates. The equation concerns operator expectation
+readout; any separately EXECUTED estimation/decoder work keeps its true
+price/source and is not supplied for free by this error estimate.
+
+### One retained process has the whole Palatini source as its limit
+
+Take the regular uniformly C3 sampled families Z_m of7k(128)-(129),
+h_m->0, Z_m->Z in C2, with its fixed calibration/orientation, inverse
+coframe gap, actual quadrature mu_s=c_quad,h h^4 and full sampled-test
+norm. Set E_m=D I_(h_m) composed with DSample_(h_m)/c_quad,h.
+The already owned geometric theorem gives
+
+    ||E_m-D I_PC(Z)||_(C3*)
+                 <=C(h_m+||Z_m-Z||_C2).              (333)
+
+Here I_PC is EXACTLY7k(129)'s coframe/independent-connection/two-scalar
+action, with the original material and volume conventions. No new
+matter normalization, orientation, or metric conformal law is inferred.
+Choose at level m the fixed Bernstein tables, native weak flags and
+source/step accuracy so ALL
+
+    [(epsilon_geo+(M_r tau_h/a0)T_tag)/c_quad,h]
+                ||DSample_h||_(C3 -> V_h) <=epsilon_m,
+    epsilon_sec,j<=epsilon_m,  epsilon_read,j<=epsilon_m,
+    2R_h^ext R_h^mom eta_j<=epsilon_m,  epsilon_m->0.  (334)
+
+This uses the structured operand error of(330), followed by the finite
+stencil estimate(332). It requires no h-uniform P5 approximation or
+critical variance bound. Every coefficient and source word is finite.
+A supplied effective sequence of fields/bounds gives an effective
+native schedule; no finite algorithm for arbitrary noncomputable real
+field data is asserted.
+
+Repeat the fixed level-m construction R_m>=ceil(2/gbar_m) fresh times,
+then pass to level m+1. Every R_m is finite. Completed cohorts are
+private and sealed; the shared helper/spin is restored on ALL columns.
+Each level contributes at least1 to A_M, since a_j>=1/2. Thus A_M->infinity
+at EVERY cofinal prefix, even if gbar_m is extremely small. It follows
+from(330)-(334) that the single baseline-gain-normalized ACTUAL-readout
+cofield obeys
+
+    ||sum_(j<=M)Fhat_read,(M,j)/Gamma_M-D I_PC(Z)||_(C3*)
+       <=sum_(j<=M) a_j gbar_j
+           [3epsilon_(m(j))+C(h_(m(j))+||Z_(m(j))-Z||_C2)]/A_M
+       ->0.                                         (335)
+
+To prove the final implication, split at any fixed completed level.
+Its finite frozen numerator divided by A_M tends to zero; the entire
+tail is bounded by the supremum of its displayed errors. No old finite
+error is repaired or erased, and no rate from7ag/7ah's critical
+Hoeffding calculation is imported. A one-row fork is another possible
+history declared before its cohort, not a comparison operation on two
+already completed histories or a copied unknown state.
+
+The ACTUAL gain stays positive but may tend to zero exponentially:
+Gamma_M>=r zeta(9/16)^M A_M. Formula(335) does not confuse this decay
+with source convergence. If D I_PC(Z) is nonzero, the normalized
+cofield converges to that NONZERO covector. A genuine extra selected
+source R_M needs its separately proved ||R_M||/Gamma_M budget. In
+particular a fixed old additive Info/work debt is NOT a local q-error
+and is not washed out by this weighted-mean proof. The genuine free
+clock/cut/controller equations are not removed by fixing them in a
+field-source comparison.
+
+### Apply the original finite stationary law on its actual operator carrier
+
+The law itself is already present: Book03 sections03.3.0b/03.8 call
+finite stack stationarity the primitive, and03.25 states delta B_N=0
+for the displayed master action. Book02's finite-deformation clause
+[explicitly permits a derivative along a frozen finite matrix family](../../01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#finite-deformation-and-pressure).
+Thus a smooth selector of discrete native WORDS is not an additional
+requirement for the DIRECT finite-operator pullback. It remains a
+different question from the finite-programme comparison in(332).
+
+On the SAME paired-clock carrier used in(331), insert the owned smooth
+ideal source-preparation section into its fixed finite template; let
+g_t(Y) denote all its resulting full-column stage matrices, including
+the corresponding inverse stages. With the actual fixed P_in define
+
+    T(Y)=sum_(t<N)|t+1 mod N><t| tensor g_t(Y),
+    d(Y)=(I-T(Y))/sqrt(2),
+    Dirac_N(Y)=[[0,d(Y)^dagger],[d(Y),0]],
+    Delta_pair(Y)=Dirac_N(Y)^2,
+    P_t(Y)=W_t(Y) P_in W_t(Y)^dagger,
+    W_t(Y)=g_(t-1)(Y)...g_0(Y).                       (336)
+
+This is exactly7t(186), now as a frozen finite operator family, with
+its full paired trace and original closing-feedback cut. It is not
+exchanged for7k's differently normalized scene-times-clock heat. All
+operators, generated cuts and prefix equations are finite; no field
+metric was supplied independently of their marked source preparation.
+The new reserve/report work is included in the very same template.
+
+The existing marked-prefix field inverse has a DIRECT paired-carrier
+application. Recover d as a block of Dirac_N and T=I-sqrt(2)d, extract
+each marked g_t, multiply its source prefix S, and apply the existing
+actual moment/decoder formulas7k(112)-(113). On the ideal section,
+
+    R_pair(Dirac_N(Y);marked stages,rho_in)=Y,
+    D R_pair composed with D Dirac_N=I_Y.             (337)
+
+For a source segment of ell unitary stages, its operator tangent obeys
+||delta S||<=sqrt(2)ell||delta Dirac_N|| and each bounded normalized
+moment has derivative at most2sqrt(2)ell||delta Dirac_N||. Multiplying
+by the ACTUAL inverse-moment/field decoder norm gives a finite inverse
+norm. The value26 from7k's scene-clock extraction is not transplanted
+to this carrier. Finite-native point errors/readout chords remain those
+of(332a); no exact continuous native preparation is inferred from(337).
+
+This explicitly supplies the finite incidence/operator TYPE and every
+field tangent, rather than identifying X_N with the finite parser set
+X_run. It does not define the complete constraint system of X_N or say
+that every ambient matrix variation is an allowed physical control.
+At an actual full stationary scene, for a field section iota_N into its
+admitted domain, the ordinary chain rule is
+D S_stack[iota_N' v]=D(S_stack composed with iota_N)[v]=0.
+For the selected direct B_N, this consumes(330)-(337); any additional
+selected stack term keeps its source. Conversely, a field critical
+point or vanishing reconstructed cofield does not solve independent
+normal/control equations of the full scene. Existence and selection of
+such complete stationary executions remain a mathematical/physical
+application of the GIVEN law, not a missing new stationary postulate.
+
+**Global parent substitution.** The configured native report/known-port
+execution now supplies a full-open-field source and an actual finite-
+price cofield consumer, including changing total density. The restriction
+to the exact Brinkmann first jet is removed for THIS consistency theorem.
+Its regular stationary limit has every Palatini coframe, connection and
+specified matter Euler row zero, provided the actual selected native
+stationary law applies to these comparison directions with vanishing
+normalized residual. By the OWNED whole-equation-class theorem this
+includes the entire vacuum Ricci-flat class on the covered chart,
+including nonzero Weyl curvature; its nonvacuum conclusion retains the
+original constrained two-scalar current/volume conditions.
+
+For direct Book03 bootstrap this is a source application to H+J; a
+second -H(P) or an independent Cost-Info identification is not required.
+For another selected full action its SAME-execution source binding and
+all additional terms remain required. Book03's primitive finite
+stationarity, existence of these native code forks, and admission of
+their field limit into its X_N equation domain are distinct statements.
+The first is not re-derived from a cost minimum, and the last is not
+supplied merely by a compiler. This theorem supplies consistency and a
+conditional global Euler consumer. It does not prove that the full scene
+has stationary executions inside this sector, compactness of arbitrary
+executions or physical D0 selection. The exact
+primary solutions, old critical full-bank estimates and7ak's complete
+record source remain intact; no GR_closed/raw216 status is promoted.
+
+
+## 7am. Execute the Golden code point and retain the real controller/return source
 
 25 October2026, SAME PR334/constitutive owner, input49b78ad8. The parent
 is7ak's positive code-Gibbs point and its native implementation/price
@@ -8842,7 +9184,7 @@ nilpotent part:
     R -> F2[x]/((x²+x+1)²),
     t=x²+x+1!=0, t²=0,
     Gbar*1=(1+t)*1,
-    Wbar*1=(1+t)^(number_of_actual_G)*1.              (329)
+    Wbar*1=(1+t)^(number_of_actual_G)*1.              (338)
 
 CX and the actual SourceI signed permutation preserve1 after reduction.
 The vector1 is an algebraic witness, not a free physically prepared
@@ -8853,7 +9195,7 @@ orthogonality, so adding any finite number of clean computational
 ancillas cannot repair this mismatch:
 
     W(psi tensor0_aux)=CG psi tensor0_aux
-       on EVERY logical input is impossible in this profile.    (330)
+       on EVERY logical input is impossible in this profile.    (339)
 
 This excludes a particular exact coherent operator and clean interface,
 not D0 operations generally, approximation, a measured controller or
@@ -8880,7 +9222,7 @@ Before the common raw Boolean success factor the exact transfer is
     K_suc=2p4 CG,
     K_suc^dagger K_suc=4p8 I_(cD),
     gamma_CG=4p8 Gamma_Bool,
-    Gamma_Bool=(2p3)^14(4p3)^28(16p9)^8>0.           (331)
+    Gamma_Bool=(2p3)^14(4p3)^28(16p9)^8>0.           (340)
 
 This is uniform on all four logical inputs, including entanglement.
 The fourteen fresh plus-resource preparations include the shared
@@ -8893,8 +9235,8 @@ instrument at Boolean READY; it neither emits nor matrix-replays the
 entire960-stage Boolean factory or its unready sectors.
 
 The herald factor2p4 is even in the integral ring, so its block can
-vanish under(329); a normalized successful operator is not a clean
-full unitary. There is no contradiction with(330). For target0 and
+vanish under(338); a normalized successful operator is not a clean
+full unitary. There is no contradiction with(339). For target0 and
 c1, normalized successful target probability is EXACTLY p².
 
 Fine failures are substantive. Even conditional on Boolean READY,
@@ -8903,13 +9245,13 @@ GOOD0 with transcripts10/10 has the actual effect
     E_fail=diag(w0 I2,w1 I2),
     w0=4p6(2ap+p²)²,
     w1=4p6 a²(a+p)²,
-    w0-w1=4p7(a+p-1)(3ap+1)>0.                      (332)
+    w0-w1=4p7(a+p-1)(3ap+1)>0.                      (341)
 
 Thus a scalar total success/abort effect does not fix the fine
 failure law. The bounded model sums over both GOOD values and every
 X-cycle result and obtains full GramI4; no failure is omitted. Raw
 Boolean-unready sectors still require their own actual maps. The
-successful(331) does not imply U_raw j=j, a fixed old blank corner,
+successful(340) does not imply U_raw j=j, a fixed old blank corner,
 or the CM4–7 conjugacy application. Its full raw preparation, C/F,
 joint records P(T,m), cap/abort and complete Cost/Info cannot be
 replaced by gamma times the successful binary branch.
@@ -8920,7 +9262,7 @@ There is also an actual no-abort extension using only already
 available native operations. Add fresh known z,t0,t1,lambda and run
 
     V: G_z;CX(z,t0);CX(z,lambda),
-    V|0000>=sqrt(p)|0;000>+p|1;101>.                 (333)
+    V|0000>=sqrt(p)|0;000>+p|1;101>.                 (342)
 
 The same owned parser reads000/101 as raw codewords0/10 of length1/2.
 The untouched tail t1 is retained. All old branches, including a
@@ -8933,7 +9275,7 @@ factor preserves the old channel by partial trace and adds exactly
 
     Delta I_reg=h(p²),  Delta C_code=1+p²,
     ell Delta C_code-Delta I_reg=0,
-    ell=log(phi),  h(p²)=ell(p+2p²)=ell(1+p²).       (334)
+    ell=log(phi),  h(p²)=ell(p+2p²)=ell(1+p²).       (343)
 
 Copies of the same new bit count as one outcome. This is the complete
 supplied two-leaf CODE component with all conditional quantum work,
@@ -8950,7 +9292,7 @@ For old monodromy U, ALL old phases phi_a and actual old d,N,
     C_new=sqrt(p) C_old,
     J_new=-log det[(1-zeta)I+zeta p C_old^dagger C_old],
     Z_new=8 sum_a [K_(N_new)(phi_a)+K_(N_new)(phi_a+pi)
-                     +K_(N_new)(phi_a+theta)+K_(N_new)(phi_a-theta)]. (335)
+                     +K_(N_new)(phi_a+theta)+K_(N_new)(phi_a-theta)]. (344)
 
 The full paired mode count is2N_new d_new. No invalid container,
 unused tail, zero mode or thermal complement is discarded. This is
@@ -8963,7 +9305,7 @@ One fresh gadget after every prospective old cohort gives
 
     T_new,M=p^M product_j s_j²,
     w_new,M=r zeta T_new,M/(1-zeta+zeta T_new,M),
-    Gamma_new,M=w_new,M sum_j a_j gbar_j.             (336)
+    Gamma_new,M=w_new,M sum_j a_j gbar_j.             (345)
 
 The old field/report slopes a_j=2d_j gamma_j/s_j and ORIGINAL
 lambda_minus remain. At fixed new clocks/carriers the whole spectrum
@@ -8988,7 +9330,7 @@ fixed, nevertheless gives
 
     J(u)=-r log[1-zeta+zeta(1-u)tau],
     partial_u J=w(u)/(1-u)>0,
-    partial_u J|_(p²)=w_new/p.                       (337)
+    partial_u J|_(p²)=w_new/p.                       (346)
 
 At beta=1, zeta=2^-20, r>=4, the old SINGLE-body tau>=9/16 and
 actual N_new>=135, the owned all-mode bound proves
@@ -9005,7 +9347,7 @@ or finite-code secant needs its actual map/spacing and remaining work.
 The compact single-body condition is not imposed on an attenuated
 whole M-prefix.
 
-For the old132-stage recorded fixture, actual addition(333) gives
+For the old132-stage recorded fixture, actual addition(342) gives
 135 stages,13qubits,d=8192,r=4 and2211840 paired modes. The new word
 V is checked on ALL16 columns and the full enlarged code is validated/
 counted; no8192-column or large cyclic matrix replay is claimed.
