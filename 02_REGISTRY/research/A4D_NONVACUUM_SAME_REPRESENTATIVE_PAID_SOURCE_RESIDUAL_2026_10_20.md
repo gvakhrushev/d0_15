@@ -12511,6 +12511,149 @@ print('PASS all-column response tower, Golden presentation, actual-G moment fram
 print(sys.version.split()[0],S.__version__)
 ```
 
+## 7aw. The original regularized solution protocol removes the finite-root detour
+
+25 October2026; SAME PR334 / constitutive/native-programme-v1. Consume
+7at405--410 and7av417--422 on their declared execution and variation
+graph. This application changes the route: exact finite roots are NOT a
+necessary intermediate for a correctly declared regularized D0 problem.
+It does not identify that graph with the full original physical domain.
+
+### Original permission and the precise solution being asserted
+
+Preserved original source: commit 4f99c2c46e646d21ae5b9b0491da17bd1b094da0,
+`99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/books/BOOK_V_MATHEMATICS_GOLDEN_PASS30.txt`,
+blob de9ddebb4df6d9b5b59e2f47bf53fd862d9dd338. Its DEF21.3.1--3
+(lines91--110) defines resource-dependent observational equivalence;
+PROTOCOL23.1(lines250--256) explicitly permits canonical regularization
+by Can, kappa-equivalence or the fixed epsilon-squared tolerance BEFORE
+solving the resulting finite PASS/FAIL problem. Lines267--271 retain
+its finite test and no-hidden-normalization requirements. This is an
+original definition of a REGULARIZED problem, not a theorem asserting
+that its accepted finite configurations are exact roots of an earlier
+unregularized equation.
+
+Current Book03:387--393 and1131--1137 still states exact finite
+stationarity. That stronger literal equation remains intact. The
+x^2+phi^(-k) example at7av excludes its exact-root lifting; it does not
+exclude a regularized solution under PROTOCOL23.1. Requiring equality
+between exact-root acceptance and the regularized acceptance predicate
+would contradict the distinction that this original protocol permits.
+
+Keep the actual whole action B_M=H_M-rankP log(1-zeta+zeta S_M^2),
+positive Gamma_M=w_M A_M, the original local Dirac operator norm and
+the original physical C3 test norm. They are the SAME source, scale
+and norms as408--409/420; no new scalar rescaling is chosen to make a
+residual small. Let e_loc(M) be an actual certified upper bound from408.
+For the physical source use its direct same-point reconstruction420:
+
+    E_M = (D B_M restricted to the physical lift)/Gamma_M.
+
+Its norm must be bounded DIRECTLY by409/422 or its finite reconstruction,
+not by multiplying408 by the possibly divergent key-lift norm. For
+arbitrary fields a consistency error with D I_PC is NOT a zero-source
+bound: it must be added to the actual norm of that target, or replaced
+by a bound on E_M itself. At the owned nonvacuum primary D I_PC=0,
+so422 supplies a genuine zero-source bound e_field(M).
+
+The concrete sufficient acceptance test for this declared sector is
+
+    e_loc(M) <= epsilon^2,
+    e_field(M)+e_read(M) <= epsilon^2,
+    epsilon^2=phi^(-16).                              (423)
+
+Here e_read includes the actual reconstruction conditioning L_M,
+probability/moment intervals and arithmetic error of7av. Each e is an
+outward certified bound, not an empirical point estimate. A finite
+certificate for a bound is checked against the stated source formulas
+and actual input pins. This is a conservative, sound acceptance test;
+its rejection need not prove a lower bound on the true source. It is
+not claimed to be identical to every possible implementation of a
+regularized predicate, nor to decide exact equality of arbitrary reals.
+
+There are two legitimate ways to obtain the finite reading intervals.
+For effectively given finite circuit/field inputs, certified finite
+arithmetic can evaluate the actual algebraic probabilities and the
+already supplied complete-source bounds. Strict margins in423 avoid
+an undecidable equality test at its threshold. Alternatively, the
+physically performed statistical continuation of7av yields intervals
+with its explicitly stated confidence. In that case acceptance has
+that confidence; a finite random sample is NOT a deterministic proof
+of its Born mean. Both computation and physical testing retain their
+actual work, records, clock and error. This paragraph does not identify
+the checking continuation's action with the original B_M.
+
+### Constructive composition, using the whole preceding result
+
+Assume the original executable-input conditions of7at/7av: a specified
+regular primary field, effective finite data and the actual effective
+regularity, inverse-margin and refinement/error moduli. They are
+needed for a constructor, not inferred merely from FPTEAS point entries.
+The following witness construction uses the existing maps, not a new
+choice of action or a new root search.
+
+1. Use the simultaneous true-length/precision construction410 and the
+   slow cofinal mesh envelope to make the bound408 less than
+   epsilon^2/4. Keep every old cohort and its full absolute heat.
+2. Independently use409 and422 to make the primary physical residual
+   less than epsilon^2/4. The same envelope can satisfy both finite
+   inequalities. Old errors lose their actual positive weight as A_M
+   grows; new errors tend to zero with the supplied effective moduli.
+3. Produce finite certified reading/arithmetic bounds with total
+   e_read<epsilon^2/4. For an executed statistical test retain alpha
+   and the Kn genuine trials of7av, with actual repetitions per scalar
+   probability. Its confidence remains part of the result.
+4. Encode the resulting finite word, inputs, intervals and their
+   checking procedure. Strict slack in423 gives a terminating finite
+   sufficient PASS witness. For a deterministic certification choose
+   the finite-arithmetic alternative, not a random-sample guarantee.
+
+Every step is effective under the named hypotheses. The geometric
+sequence already has the fixed nonvacuum limit and its material
+recovery. Further cofinal refinements can reduce both certified source
+residuals to zero; their exact observable object is the RETAINED
+response tuple of418--419. The aggregate is computed from that tuple
+and the actual weights. Its variation under refinement has the proved
+remainder422. It is not a falsely asserted exact cylindrical scalar,
+and no fitted refinement counterterm is added.
+
+The total paid budget of each witness, including any selected checking
+continuation, determines its resource level. An envelope index cannot
+simply be renamed kappa. No polynomial resource bound, nor an error
+phi^(-k) at cost exactly phi^k, follows from the construction. The
+fixed epsilon^2 problem nevertheless has a finite constructive witness.
+This proves a regularized field-equation solution ON THIS GRAPH. It
+does not prove full observational equivalence of entire programmes,
+CORE promotion of an arbitrary aggregate, or equality on untested
+physical variations.
+
+### What is removed and what the actual remaining application is
+
+For this regularized problem the parent premise of exact finite
+stationary representatives is removed, using the ORIGINAL solution
+protocol. It is unnecessary to rederive the generic kernel, demand an
+always-on detector, or seek a new all-mesh exact root solely to establish
+423. The physical domain application remains a distinct exact map:
+
+    D iota_N(T G_local) subset T_(iota_N(x)) X_N^(task,roles),
+
+with the SAME whole D,U,P, actual clock and primitive addresses. The
+causal graph already generates P_t=W_t P_in W_t^dagger and the inverse
+variation; they are not additional independent knobs. But original
+retention does not imply tensor identity on a record factor: controlled
+reading can preserve every record projector. Thus it does not by
+itself imply every support restriction used in7at.7au's whole-query
+comparison cannot be silently added to423's tested domain.
+
+The remaining scientific application is physical admission and any
+additional native normal equations of that source/role graph, together
+with the retained original sector-selection and general-refinement
+scope. We have a constructive regularized solution of a specified
+native comparison sector, not an assertion that D0 already physically
+selects that entire sector. Literal exact finite roots, generic GR,
+positive_gr and raw216 retain their existing status. No new task,
+selector, registry promotion or original action is introduced.
+
 ## 8. Reproduction
 
 Run from this directory:

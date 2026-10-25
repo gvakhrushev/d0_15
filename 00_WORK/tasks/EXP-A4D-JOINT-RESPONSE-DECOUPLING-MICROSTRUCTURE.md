@@ -11172,3 +11172,64 @@ counts remain claims889/assumptions31/aliases58/formal_support183/Lean
 closure918; assembly54active/98results/5discharged/22obligations with
 scientific_promotion=false. These are local structural checks, not
 remote CI or physical acceptance. No unchanged mathematics was replayed.
+
+### 25 October: consume the original regularized solution protocol
+
+Phase: native realization / final composition on the declared sector;
+SAME PR334 and constitutive/native-programme-v1. Input f1332688.
+Primary7aw423 consumes the WHOLE7at/7av source and native observation
+argument. Original BookV PROTOCOL23.1, commit 4f99c2c46e646d21ae5b9b0491da17bd1b094da0,
+blob de9ddebb4df6d9b5b59e2f47bf53fd862d9dd338, explicitly permits
+canonical regularization before the finite solution test. Therefore
+exact finite stationary roots are not an obligatory parent premise
+for this regularized problem. Requiring its acceptance predicate to
+be identical to the exact zero-set would be an added restriction.
+
+The constructive witness uses actual normalized full source bound408
+and the INDEPENDENT physical source409/422, with true reading and
+arithmetic bounds, original epsilon^2 and genuine total budget. The
+primary zero-source conclusion consumes its existing exact geometry;
+for arbitrary fields consistency with D I_PC alone is not a zero bound.
+A deterministic finite certification uses certified arithmetic, while
+executed statistical reading keeps its confidence. Original literal
+Book03 finite stationarity remains stronger and unproved here. No
+polynomial cost or error-at-fictitious-resource-level is claimed.
+
+This removes the exact-finite-root detour for the DECLARED regularized
+sector. Remaining parent application: physical admission of the actual
+local cut/support/calibration graph in original X_N with the same full
+D,U,P, clock and primitive-address map, plus any additional admissible
+normal equations and the retained native sector-selection/refinement
+scope. It does not require uniqueness of every D0 programme. The actual
+causal graph already determines intermediate P_t and generated inverse;
+these are not independent external choices. Retention of a record only
+forces preservation of its record predicates, not tensor identity or
+a ban on controlled reading. Do not silently infer the full support
+restriction or admit the7au whole-query direction.
+
+The old nondegenerate42-root route was also checked READ-ONLY, not
+replayed. Its K100M/K58.5M consumer concerns a generated renewal HJR
+action close to the nonlinear Golden-entropy source D S_N1.7at instead
+converges to D Phi_h. At a fixed actual catalogue Q(u)=constant+
+sum u_a Delta qhat_a and D_u B=w a Delta qhat; recentering catalogues
+does not construct a continuous moving-source family on the old root
+cube. Thus the old Brouwer estimate is reusable only after that precise
+source/carrier/continuity application, not merely from42 coordinates
+or smaller compiler errors. No new IFT proof or root census is needed.
+
+Write paths: primary7aw and this brief only. Exact inserted proof:
+8074 bytes, SHA256
+d76d40740a56551bda860c5c49d0262270e152e171cf9469b02a2b860437f742.
+Both native_continuation_map and native_valuation_map independently
+ACCEPTED this exact source pin after reading the original protocol.
+No reviewer edited files or ran calculations. This is analytical
+composition of the already checked estimates, with no new numerical
+input or mathematical replay. Removing only7aw and this brief tail
+restores f1332688 byte-for-byte. No action, task, registry, lifecycle
+or GR/positive_gr/raw216 promotion is introduced.
+
+Affected final text/brief checks PASS: work validation, agent protocol
+and diff whitespace. Earlier f1332688 retained the successful complete
+structural integration; no registry, assembly contract, source checker
+or mathematical inputs changed in this follow-up. No remote CI or
+physical acceptance is inferred.
