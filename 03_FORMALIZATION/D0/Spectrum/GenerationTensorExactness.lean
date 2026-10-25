@@ -207,7 +207,7 @@ theorem stage3_tensor_exactness {N : Type} [Fintype N] [DecidableEq N] {n : Nat}
     Γ_lift = tensor_product_I Γ_SM := by
   apply stage1_tensor_exactness Γ_lift Γ_SM h_off
   intro g n1 n2
-  rw [stage2_flavor_blindness Γ_lift h_off h_comm g g0 n1 n2]
+  rw [stage2_flavor_blindness_of_commute Γ_lift h_comm g g0 n1 n2]
   exact h_g0 n1 n2
 
 theorem stage3_trace_relation {G N : Type} [Fintype G] [DecidableEq G] [Fintype N]

@@ -2048,7 +2048,7 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(inventory["public_import_root"], "D0.All")
         self.assertEqual(inventory["toolchain"], "leanprover/lean4:v4.30.0")
         declarations = {row["name"]: row for row in inventory["declarations"]}
-        self.assertEqual(len(declarations), 25)
+        self.assertEqual(len(declarations), 26)
         self.assertEqual(
             set(inventory["request"]["full_names"]), set(declarations)
         )
@@ -2165,6 +2165,16 @@ class ProofArchitectureTests(unittest.TestCase):
             "g1 ≠ g2",
             declarations["D0.Spectrum.stage2_flavor_blindness"]["elaborated_type"],
         )
+        stage3 = declarations["D0.Spectrum.stage3_tensor_exactness"]
+        self.assertIn("g1 ≠ g2", stage3["elaborated_type"])
+        self.assertIn(
+            "D0.Spectrum.stage2_flavor_blindness_of_commute",
+            stage3["proof_dependencies"],
+        )
+        self.assertNotIn(
+            "D0.Spectrum.stage2_flavor_blindness",
+            stage3["proof_dependencies"],
+        )
         self.assertTrue(all(
             "sorryAx" not in axiom
             for name in (
@@ -2187,6 +2197,7 @@ class ProofArchitectureTests(unittest.TestCase):
                 "D0.Spectrum.flavor_blindness_step_k_of_commute",
                 "D0.Spectrum.stage2_flavor_blindness_of_commute",
                 "D0.Spectrum.stage2_flavor_blindness",
+                "D0.Spectrum.stage3_tensor_exactness",
             )
             for axiom in declarations[name]["axioms"]
         ))

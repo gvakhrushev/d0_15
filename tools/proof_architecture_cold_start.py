@@ -598,7 +598,7 @@ CASES: list[dict[str, Any]] = [
             "ArchivePartialTrace density_uniform_from_commute commute_with_shift_implies_diagonal_constant",
             "Fin finRotate cyclicShiftMatrix finRotateArchiveTopology partial_trace_density_uniform_under_shift",
             "GenerationTensorExactness flavor_blindness_step_of_commute commute_with_shift_entries kronecker_C_I",
-            "GenerationTensorExactness flavor_blindness_step_k_of_commute stage2_flavor_blindness_of_commute no h_off",
+            "GenerationTensorExactness flavor_blindness_step_k_of_commute stage2_flavor_blindness_of_commute stage3_tensor_exactness no h_off",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
