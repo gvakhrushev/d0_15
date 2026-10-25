@@ -392,6 +392,29 @@ CASES: list[dict[str, Any]] = [
             "in the bilinear API, and no geometric or physical Hodge profile is selected."
         ),
     },
+    {
+        "id": "native-weighted-dirac-matrix-application",
+        "queries": [
+            "weightedDiracMatrix_mulVec typed weighted Hodge Dirac linear map ArchiveCochainBasis",
+            "spatialNyquist_weightedDirac_matrix_block L=4 flatLorentzWeightedDiracMatrix",
+            "actual full-cochain matrix B-singleton vacuum spatial Nyquist positive self-adjoint weighted Dirac Eq. 6",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
+            "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
+            "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean",
+            "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
+        ],
+        "scope_review": (
+            "The generic theorem identifies matrix multiplication in the existing ArchiveCochainBasis "
+            "with the supplied-weight function operator. The original source pin db3091aded8f6cfe8d39dcd973ccf30ec40dfb08 "
+            "contains the isolated 2x2 obstruction; the full-carrier transfer is a separate branch formalization "
+            "delta at c3ceba511bab5c435d715fd56382615fc1dc1505. The exact L=4 application proves the vacuum and "
+            "B-singleton action equations and applies that conditional transfer. The supplied positive form and "
+            "self-adjointness premise are not physically derived; no profile, action, source, all-size spectrum, "
+            "or GR selection is inferred."
+        ),
+    },
 ]
 
 

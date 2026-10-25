@@ -1212,6 +1212,31 @@ class ProofArchitectureTests(unittest.TestCase):
             for query in case["queries"]
         ))
 
+    def test_native_weighted_dirac_cold_start_keeps_source_and_transfer_scopes(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "native-weighted-dirac-matrix-application"
+        )
+
+        self.assertIn(
+            "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
+            case["required_refs"],
+        )
+        self.assertIn("db3091aded8f6cfe8d39dcd973ccf30ec40dfb08", case["scope_review"])
+        self.assertIn("c3ceba511bab5c435d715fd56382615fc1dc1505", case["scope_review"])
+        self.assertIn("not physically derived", case["scope_review"])
+        self.assertTrue(any("weightedDiracMatrix_mulVec" in query for query in case["queries"]))
+        self.assertTrue(any("spatialNyquist_weightedDirac_matrix_block" in query
+                            for query in case["queries"]))
+
 
 if __name__ == "__main__":
     unittest.main()

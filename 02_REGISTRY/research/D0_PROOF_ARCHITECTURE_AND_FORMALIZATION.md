@@ -4057,16 +4057,23 @@ remains `IN_PROGRESS`.
 
 ### Conditional full-carrier transfer of the Eq. (6) spatial-block obstruction (25 October 2026)
 
-The source-pinned capsule now adds `matrix_adjoint_pairing`, deriving the
-vector bilinear identity from the full matrix equation `TᵀG=GT`, and
-`positive_selfadjoint_spatial_invariant_block_impossible`. The latter takes a
-positive quadratic pairing on the finite carrier, full-matrix self-adjointness,
-and two nonzero vectors `u,v` with `Tu=-2L v` and `Tv=2L u` for `L≠0`; it
-derives a zero sum of their positive diagonal pairings and closes the
-contradiction. The existing isolated `spatial_block_has_no_positive_metric`
-lemma remains as the explicit 2×2 matrix proof; the new theorem makes the
-full-carrier restriction argument available without assuming the pairing is
-diagonal or the full carrier is two-dimensional.
+The PR branch extends the capsule mirror with `matrix_adjoint_pairing`, which
+derives the vector bilinear identity from the full matrix equation
+`TᵀG=GT`, and `positive_selfadjoint_spatial_invariant_block_impossible`.
+The latter takes a positive quadratic pairing on the finite carrier,
+full-matrix self-adjointness, and two nonzero vectors `u,v` with
+`Tu=-2L v` and `Tv=2L u` for `L≠0`; it derives a zero sum of their positive
+diagonal pairings and closes the contradiction. The exact source-pinned
+capsule at commit `db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`, blob
+`166922e1057cc20f495393e9c53947b52912e3ce`, contains the isolated
+`spatial_block_has_no_positive_metric` 2×2 proof, not these two transfer
+lemmas. The branch extension was added at commit
+`c3ceba511bab5c435d715fd56382615fc1dc1505`; its capsule blob is
+`7bb3b8e92c8d9b816ab61f9cb8027061b4820dd9` (SHA-256
+`960b0fb2ff4cf0d8fc7f22d99dfa620617b8fc997189d2e00d59aad8d17b0906`).
+This is a separately reviewable Lean formalization delta from the pinned
+source. The full-carrier theorem does not assume the pairing is diagonal or
+the carrier is two-dimensional.
 
 This closes only the conditional linear-algebra transfer in source §4, Eq.
 (6). It does not define the selected full Lorentz CAR matrix, construct the
@@ -4097,8 +4104,10 @@ mathematical result, not an independent acceptance of the source application.
 The separately registered adapter
 `D0.Research.NativeWeightedDiracNyquistApplication` in
 `03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean`
-consumes the pinned conditional obstruction without editing its capsule or
-receipt. It uses the existing `flatLorentzSubsetWeight` on the actual
+consumes the branch-local full-carrier transfer lemma recorded above. The
+source pin remains the original §4 Eq. (6) memo and capsule; the L=4 adapter
+does not claim that the new transfer lemma was present in that pinned blob.
+It uses the existing `flatLorentzSubsetWeight` on the actual
 `ArchiveRolePhaseGroup 2 × ArchiveFockState` cochain carrier and the owned
 `dForward`/Hodge-CAR codifferential. For the period-four B character at
 `L=4`, it proves the two operator equations
@@ -4127,8 +4136,10 @@ This architecture WORKER has no scientific assembly binding; the prescribed
 returns `unknown scientific binding`, so no gravity assembly result/status was
 created.
 The adapter is explicitly registered by `formal_support.csv` and the generated
-`D0.All` import. The original conditional capsule and its certificate snapshot
-remain unchanged. Its source input is pinned to §4, Eq. (6) of
+`D0.All` import. The original pinned source bytes and receipt remain
+unchanged; the PR branch adds the separately identified formalization delta
+to the capsule mirror as recorded above. Its source input is pinned to §4,
+Eq. (6) of
 `02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md` at commit
 `db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`, Git blob
 `2de670c0e2f9a53104be8105a3554cdd9aaa85e7`.
@@ -4232,3 +4243,40 @@ collector SHA-256
 `dd33d4ab45852eb1d2aef0311f00db6249832d41f9957a50e29b5e3e51f953a8`.
 Both refreshed views remain provenance and locator evidence only; C0 stays
 unfrozen and independent semantic acceptance remains outstanding.
+
+### Cold-start replay and independent review of the weighted-Dirac matrix adapter (25 October 2026)
+
+The repeatable cold-start set now includes a distinct case for the generic
+typed matrix bridge and its exact L=4 consumer. The 19-case replay at snapshot
+`16b7b62e59f5f43c2db94d33f808c733d1992137` found all required source paths in
+19/19 cases; the 20th benchmark control also passed, showing that a declared
+source edit changes its dependent input while unrelated prose leaves it
+unchanged. The new case found the generic API at rank 1, the L=4 application
+at rank 2, the source memo at rank 2, and the capsule mirror at rank 15, all
+as direct content with a candidate window of 18. Its required references are
+the §4 source memo, the certificate capsule mirror, and the two Lean modules.
+The case states that the original pin supplies the isolated 2×2 result while
+the full-carrier transfer is a separately identified PR delta; the search
+results remain retrieval candidates, not accepted semantic edges.
+
+The focused `tools.test_proof_architecture` suite passes 41/41 tests,
+including a regression that keeps the db309 source pin separate from the
+c3ceba full-carrier implementation delta. The cold-start runner SHA-256 is
+`9d3bb55cdfbfec94895ad1030a9b9fc74b95865af9108d6a2beb5daafa4fbdc5`; its
+focused test module SHA-256 is
+`825014016b7372fb31f8c4b9f4ce6cc2535baf4fad2ce0e40e8c06577673196c`.
+The replay used `worktree_dirty=true` on the published base commit shown above;
+the Lean-source digest and registered authority inputs are the same as the
+paired inventory and refreshed crosswalk documented immediately above.
+
+An independent read-only review confirmed that `weightedDiracMatrix_mulVec`
+uses the unchanged `ArchiveCochainBasis` coordinates, the L=4 specialization
+retains the site×Fock carrier and proves the stated −8/+8 action equations,
+and the paired inventory reports the same five existing CAR `native_decide`
+leaves with no `sorryAx`. The reviewer found no mathematical or coordinate
+composition error. It separately identified that the full-carrier transfer
+lemma was absent from the original db309 capsule blob; this is now recorded
+as the c3ceba branch implementation delta above, not as content of the source
+pin. The review is limited to this finite mathematical application and does
+not accept C0 membership, a physical pairing, action/source selection, an
+all-size spectrum, or GR closure.
