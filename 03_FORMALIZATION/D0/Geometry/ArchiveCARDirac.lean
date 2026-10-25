@@ -477,6 +477,130 @@ theorem archive_car_dirac_square_owner :
     (Fintype.card ArchiveFockState = 16) :=
   ⟨rfl, card_archive_fock_state⟩
 
+/-- Spatially constant vacuum vector on the actual site × Fock carrier. -/
+def archiveConstantVacuumVector (n : ℕ) : CARHilbertPoint n → ℝ :=
+  fun p => if p.2 = fockVacuumState then 1 else 0
+
+/-- Origin site in the four finite cyclic coordinates. -/
+def archiveZeroSite (n : ℕ) : ArchiveRolePhasePoint n :=
+  fun _ => ⟨0, by unfold archiveFibers; omega⟩
+
+/-- The tensor product of a site operator with Fock identity acts on a
+spatially constant vacuum vector by its site action. -/
+theorem tensorProduct_fockId_mulVec_constant_vacuum (n : ℕ)
+    (M : Matrix (ArchiveRolePhasePoint n) (ArchiveRolePhasePoint n) ℝ) :
+    tensorProduct M fockIdMatrix *ᵥ archiveConstantVacuumVector n =
+      fun p => if p.2 = fockVacuumState then
+        (M *ᵥ (fun _ => (1 : ℝ))) p.1 else 0 := by
+  classical
+  funext ⟨x, f⟩
+  simp only [Matrix.mulVec, dotProduct, tensorProduct]
+  rw [Fintype.sum_prod_type]
+  by_cases hf : f = fockVacuumState
+  · subst f
+    simp [fockIdMatrix, archiveConstantVacuumVector]
+  · simp [fockIdMatrix, archiveConstantVacuumVector, hf]
+
+/-- The actual hopping matrix moves the constant vacuum into a nonzero
+singleton component already at the smallest archive period `L = 2`. -/
+private theorem carAnnihilate_singleton_vacuum_zero (r s : Role) :
+    carAnnihilate r (fockSingletonState s) fockVacuumState = 0 := by
+  by_contra h
+  have h_occ :=
+    (carAnnihilate_support r (fockSingletonState s) fockVacuumState h).1
+  simp [fockVacuumState] at h_occ
+
+private theorem fockGamma_singleton_vacuum (r s : Role) :
+    fockGamma r (fockSingletonState s) fockVacuumState = roleDelta r s := by
+  unfold fockGamma
+  rw [carAnnihilate_singleton_vacuum_zero, carCreate_singleton_vacuum]
+  simp
+
+private theorem carDirac_mulVec_constant_vacuum_singleton (n : ℕ)
+    (x : ArchiveRolePhasePoint n) (s : Role) :
+    (carDirac n *ᵥ archiveConstantVacuumVector n)
+      (x, fockSingletonState s) =
+        ∑ y : ArchiveRolePhasePoint n, spatialDiracComponent n s x y := by
+  classical
+  simp only [Matrix.mulVec, dotProduct, carDirac, archiveConstantVacuumVector]
+  rw [Fintype.sum_prod_type]
+  simp [fockGamma_singleton_vacuum, roleDelta]
+
+theorem carDirac_constant_vacuum_nonzero_at_singleton_A :
+    (carDirac 0 *ᵥ archiveConstantVacuumVector 0)
+      (archiveZeroSite 0, fockSingletonState D0.A) ≠ 0 := by
+  classical
+  rw [carDirac_mulVec_constant_vacuum_singleton]
+  let oneIndex : archivePhaseIndex 0 := ⟨1, by unfold archiveFibers; omega⟩
+  let y : ArchiveRolePhasePoint 0 := Function.update (archiveZeroSite 0) D0.A oneIndex
+  have hterm : spatialDiracComponent 0 D0.A (archiveZeroSite 0) y = 1 := by
+    norm_num [spatialDiracComponent, y, oneIndex, archiveZeroSite,
+      diracDerivativeScale, archiveFibers, archivePhaseIndex, Function.update]
+  have hnonneg : ∀ z ∈ Finset.univ,
+      0 ≤ spatialDiracComponent 0 D0.A (archiveZeroSite 0) z := by
+    intro z _
+    simp only [spatialDiracComponent]
+    split_ifs <;> norm_num [diracDerivativeScale, archiveFibers]
+  have hbound : 1 ≤
+      ∑ z : ArchiveRolePhasePoint 0,
+        spatialDiracComponent 0 D0.A (archiveZeroSite 0) z := by
+    calc
+      1 = spatialDiracComponent 0 D0.A (archiveZeroSite 0) y := hterm.symm
+      _ ≤ ∑ z : ArchiveRolePhasePoint 0,
+          spatialDiracComponent 0 D0.A (archiveZeroSite 0) z :=
+        Finset.single_le_sum hnonneg (Finset.mem_univ y)
+  exact ne_of_gt (lt_of_lt_of_le (by norm_num) hbound)
+
+/-- Scoped no-go for the literal `carDirac`: at `L = 2` its square cannot be
+the owned metric role-product Laplacian tensored with the Fock identity. The
+constant mode is killed by the Laplacian, while self-adjointness and the
+explicit vacuum-to-singleton matrix entry rule out a zero square there.
+This does not decide a different operator or repair the unresolved source
+locator of `D0-ARCHIVE-CAR-DIRAC-SQUARE-001`. -/
+theorem carDirac_square_ne_archiveMetricProductLaplacian_at_zero :
+    carDirac 0 * carDirac 0 ≠
+      tensorProduct (archiveMetricProductLaplacian 0) fockIdMatrix := by
+  intro hsq
+  let v := archiveConstantVacuumVector 0
+  have htarget :
+      tensorProduct (archiveMetricProductLaplacian 0) fockIdMatrix *ᵥ v = 0 := by
+    rw [tensorProduct_fockId_mulVec_constant_vacuum]
+    have hconstant := archiveMetricProductLaplacian_constant_zero 0 1
+    rw [hconstant]
+    funext p
+    simp
+  have hD2 : (carDirac 0 * carDirac 0) *ᵥ v = 0 := by
+    rw [hsq]
+    exact htarget
+  have hD2' : carDirac 0 *ᵥ (carDirac 0 *ᵥ v) = 0 := by
+    rw [Matrix.mulVec_mulVec]
+    exact hD2
+  have hnorm : dotProduct (carDirac 0 *ᵥ v) (carDirac 0 *ᵥ v) = 0 := by
+    calc
+      dotProduct (carDirac 0 *ᵥ v) (carDirac 0 *ᵥ v) =
+          dotProduct v ((carDirac 0).transpose *ᵥ (carDirac 0 *ᵥ v)) := by
+            exact (Matrix.dotProduct_transpose_mulVec (carDirac 0) v
+              (carDirac 0 *ᵥ v)).symm
+      _ = dotProduct v (carDirac 0 *ᵥ (carDirac 0 *ᵥ v)) := by
+            rw [carDirac_self_adjoint]
+      _ = 0 := by rw [hD2']; simp
+  have hentry :
+      (carDirac 0 *ᵥ v)
+        (archiveZeroSite 0, fockSingletonState D0.A) = 0 := by
+    have hentry_sq : ∀ i : CARHilbertPoint 0, (carDirac 0 *ᵥ v) i = 0 := by
+      intro i
+      have hle : (carDirac 0 *ᵥ v) i ^ 2 ≤
+          dotProduct (carDirac 0 *ᵥ v) (carDirac 0 *ᵥ v) := by
+        unfold dotProduct
+        simpa [pow_two, mul_comm] using
+          (Finset.single_le_sum
+            (fun j _ => sq_nonneg ((carDirac 0 *ᵥ v) j))
+            (Finset.mem_univ i))
+      rw [hnorm] at hle
+      nlinarith
+    exact hentry_sq _
+  exact carDirac_constant_vacuum_nonzero_at_singleton_A hentry
+
 /-- Declared integer 16.  This definition does not identify `ker hoppingCarDirac`. -/
 def carDiracKernelDim : ℕ := 16
 

@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "60e4007f7dda87d106b3d54a545a5d03294d30c1",
-  "worktree_dirty": false,
+  "snapshot_commit": "29ce093a9596089a522b9a066caa351af8a53fc6",
+  "worktree_dirty": true,
   "claim_registry_sha256": "f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003",
-  "lean_source_digest": "d775d429420bea2867f256924cdb55389f29c4dc4653cddfba4576629c9db3bb",
+  "lean_source_digest": "089f0e6d888039facb2fc3354eec21f40be34530bb5fde39d32c6a5c67974768",
   "collector_sha256": "af4bb36ec3a07464348919b3448e8a4f2d8eb1d80c6b87589bebde59b938db97",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.Geometry.ArchiveCARDirac",
@@ -52,21 +52,21 @@
         "declaration": {
           "end": {
             "column": 5,
-            "line": 530
+            "line": 654
           },
           "start": {
             "column": 0,
-            "line": 527
+            "line": 651
           }
         },
         "selection": {
           "end": {
             "column": 49,
-            "line": 527
+            "line": 651
           },
           "start": {
             "column": 8,
-            "line": 527
+            "line": 651
           }
         }
       },
@@ -143,21 +143,21 @@
         "declaration": {
           "end": {
             "column": 12,
-            "line": 535
+            "line": 659
           },
           "start": {
             "column": 0,
-            "line": 532
+            "line": 656
           }
         },
         "selection": {
           "end": {
             "column": 48,
-            "line": 532
+            "line": 656
           },
           "start": {
             "column": 8,
-            "line": 532
+            "line": 656
           }
         }
       },
@@ -198,4 +198,3 @@
     }
   ]
 }
-

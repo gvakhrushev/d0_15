@@ -5892,3 +5892,67 @@ GitHub `D0 guards` run 5188 and `D0 Lean build` run 3150 both passed on
 reproducible finite declarations and retrieval; they do not freeze or
 accept C0, change claim statuses or owners, select a physical source, or
 close the remaining physical GR premises.
+
+### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)
+
+The mapped OPEN row `D0-ARCHIVE-CAR-DIRAC-SQUARE-001` names the literal
+nearest-neighbour `carDirac`/`hoppingCarDirac` and the identity
+`D_L^2 = Delta_L^(4) tensor I_16`. A scoped counterexample is now formalized
+in `D0.Geometry.ArchiveCARDirac`:
+`carDirac_square_ne_archiveMetricProductLaplacian_at_zero` proves
+`carDirac 0 * carDirac 0 != tensorProduct
+(archiveMetricProductLaplacian 0) fockIdMatrix`, where `n=0` means the actual
+two-site period `L=2`.
+
+The proof uses the constant spatial vacuum vector. The metric product
+Laplacian kills its spatially constant profile. For the current hopping
+matrix, its image has a nonzero singleton-A component at the origin: the
+component is the sum of nonnegative nearest-neighbour coefficients and the
+site obtained by updating only coordinate A from 0 to 1 contributes exactly
+1. If the square identity held, self-adjointness would force the dot product
+`(D v) dot (D v)` to vanish; coordinatewise nonnegativity would then make
+every entry of `D v` zero, contradicting that component. The compiled
+declaration inventory records the exact type and axiom closure, including the
+existing finite `native_decide` support lemmas; no new axiom or `sorry` was
+introduced.
+
+This is a no-go only for the current `carDirac` matrix, the owned metric graph
+Laplacian, and the `L=2` carrier. It does not transfer the Hodge/cochain square
+to the CAR carrier, rule on a differently normalized or selected operator,
+or identify the absent `BOOK_06/06.spectral` source unit. The claim and
+`formal_support` rows remain unchanged and OPEN pending source/operator
+reconciliation and owner review. It is not a C0 disposition or a physical
+interpretation.
+
+The narrow Lean build passed for `D0.Geometry.ArchiveCARDirac` (2,977 Lake
+jobs) on Lean 4.30.0. The new compiled record is
+`sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_l2_no_go_declaration_2026-10-25.json`
+(SHA-256 `5166885f0aa5b9bdb1d720b5336e95c4c9727364a492926739bcab969244a3f2`),
+collected at snapshot `29ce093a9596089a522b9a066caa351af8a53fc6` with
+`worktree_dirty=true`, public import root `D0.Geometry.ArchiveCARDirac`, and
+Lean-source digest
+`089f0e6d888039facb2fc3354eec21f40be34530bb5fde39d32c6a5c67974768`. The
+CAR/Hodge declaration-scope regression now checks this type and its exact
+trust footprint alongside the prior eleven declarations. This checkpoint
+does not run final `D0.All`, freeze C0, or accept the OPEN claim.
+
+All eleven pre-existing CAR/Hodge inventories were regenerated from the same
+dirty worktree snapshot so the current-source guard continues to cover the
+changed Lean tree. The new no-go inventory uses the same Lean-source digest
+and snapshot; all twelve records have `worktree_dirty=true`. Their SHA-256
+values are:
+
+| Inventory | SHA-256 |
+|---|---|
+| `car_zero_mode_claim_declarations_2026-10-25.json` | `6e59e54a77c618260d5b297f033d5466642fcaf00b88c0f50a4d84c7009163e7` |
+| `car_dirac_square_claim_declarations_2026-10-25.json` | `9aef69306d3190f29713adc14aedd5a20eb0a99cd0aacc0a08d27248f0521587` |
+| `car_spectrum_amplification_claim_declarations_2026-10-25.json` | `4de444d2eb117e70499ffd568771b80ec981a7d7297f651d96f52c1a9da6fd52` |
+| `dirac_heattrace_multiplicity_claim_declarations_2026-10-25.json` | `b35421bd30117a67e3bf7af3fb147c4ff60ebd22c49ca6578051c4a11535dbf5` |
+| `hodge_car_dirac_square_declaration_2026-10-25.json` | `7b803bfbc096e5bbf39bc790ca101f569d3003796475ae71fe9334ef7e49fdbd` |
+| `hodge_car_dirac_kernel_declaration_2026-10-25.json` | `f0a77381c0d6b186568bce2a23a31daf72d58385c011a3f80f06ba6ab920f081` |
+| `hodge_square_backward_forward_declaration_2026-10-25.json` | `d986a114125f5733acf07b09d09b0ded8a7d73693e2f6aa8a470f23460fcb8b5` |
+| `hodge_car_dirac_l2_normalization_declaration_2026-10-25.json` | `e67fdc0c8f56644d772ff4697ef93ff852240a7e0843c01e8b7e347fca35a196` |
+| `hodge_spatial_shell_claim_declarations_2026-10-25.json` | `fd085633b6155ef29e92a3b009a6e32186ce6b97a1bcdba26aa563897e14436e` |
+| `hodge_shell_energy_limit_declaration_2026-10-25.json` | `35ca1f710fc574f90ec4e71a606a3a11a5b239431c69c5c4a03af9f11ffbaed1` |
+| `hodge_shell_rank_l2_control_declaration_2026-10-25.json` | `c4514380155772062892a1fe388fffafb07cc0f57dda032f6ebe4ae07e2f92f1` |
+| `car_dirac_square_l2_no_go_declaration_2026-10-25.json` | `5166885f0aa5b9bdb1d720b5336e95c4c9727364a492926739bcab969244a3f2` |

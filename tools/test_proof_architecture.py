@@ -1394,6 +1394,10 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
             "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
         }
+        car_square_l2_no_go_axioms = standard_axioms | {
+            "D0.Geometry.carAnnihilateInt_support._native.native_decide.ax_1_1",
+            "D0.Geometry.carCreateInt_singleton_vacuum._native.native_decide.ax_1_1",
+        }
 
         def declarations(filename: str) -> dict[str, dict]:
             inventory = json.loads((inventory_root / filename).read_text(encoding="utf-8"))
@@ -1435,6 +1439,14 @@ class ProofArchitectureTests(unittest.TestCase):
         has_type(car_square, "D0.Geometry.carDiracSquareScalarSectorFactor_eq_fock_dim",
                  "carDiracSquareScalarSectorFactor = Fintype.card",
                  expected_axioms=standard_axioms)
+        has_type(
+            "car_dirac_square_l2_no_go_declaration_2026-10-25.json",
+            "D0.Geometry.carDirac_square_ne_archiveMetricProductLaplacian_at_zero",
+            "D0.Geometry.carDirac 0 * D0.Geometry.carDirac 0 ≠",
+            "D0.Geometry.tensorProduct",
+            "archiveMetricProductLaplacian 0",
+            expected_axioms=car_square_l2_no_go_axioms,
+        )
         has_type(car_spectrum, "D0.Geometry.car_amplification_times_spinor_eq_sixteen",
                  "carDiracAmplificationFactor * 4 = Fintype.card",
                  expected_axioms=standard_axioms)
