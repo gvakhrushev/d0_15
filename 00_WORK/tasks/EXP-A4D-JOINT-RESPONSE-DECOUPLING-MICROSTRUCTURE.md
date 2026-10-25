@@ -12442,3 +12442,113 @@ warnings0), and whitespace. Removing7bj restores the FULL a078b107
 primary BYTE EXACT, SHA256e1740b631c5b9e8302595c938f08f2b3e6c264462e35e178009c63ea539f9315;
 incoming brief remains an exact prefix. Local checks are not remote CI
 or physical GR acceptance. Only the two owned insertion paths change.
+
+### 25 October: test actual record activation before using the addressed packet compiler
+
+Phase: native realization / actual actuation of7bj SOURCE and QUERY.
+SAME PR334, constitutive/native-programme-v1, scientific input10539bb1.
+Write paths are existing primary7bk521--527 and this brief only. No new
+task, claim, action, selector, hardware-admission axiom or registry change.
+
+Exact parent premise tested: source-port universality does NOT supply
+independently addressed G/CX on retained record/work bits. The owned
+SourcePort frame gives one active2-plane inside RawZone3 collective
+quotient of the physical33scene; it does not tensorize ports. Literal
+G_port/SourceI/commonSpin/outward-copy primitives all commute X_record.
+Thus every closed word does, and port/other-register-only measured leaves
+do too. The logical target G_record has commutator-2p Z_record, giving
+operator-distance >=p at ALL lengths/precisions. Any complete commuting
+blank-record instrument has<X_record>=0; its distance from G|0> is at
+leastap, and READY-conditioned target success obeys gamma<=(1+2ap)^-1.
+Blank reflections that would evade this bound are themselves the missing
+noncommuting record operation. The genuine original full128 CAR/App
+instrument is a DIFFERENT route/carrier and is not ruled out here.
+
+Positive native source control: G;C;G with the existing port readout
+prepares a fresh |+> record conditionally, with probability2p^3<1/2;
+its complementary branch exactly balances the X expectation. This is
+not an unconditional all-input gate. A reverse controlled-copy would
+provide encoded SWAP/activation, but its physical unitary completion
+on all31 complementary scene modes remains part of the missing map.
+No33-dimensional scene is silently exchanged with a2D record.
+
+One explicit alternative is calculated completely as an INSTRUMENT:
+G_port^k;outward-copy;nonterminal local Lüders Z_r with saved b;
+G_port^j;outward-copy again;G_port^l;port readout c. The mutable work r
+is reused; oldRIGHT is not measured. All four Kraus maps are525,
+K_bc=X^b E_c G^j D_k X^b, with sumK^daggerK=I. At k=l1,j0, bothc1
+branches equalapI, giving exact all-input identity success2p^3. An
+inserted outward CX to another mutable unknown bit gives ap CX on the
+b0,c1 branch. Arbitrary-reference entanglement is covered by these
+operator identities; failures and classical outcomes are retained.
+The original outward coupling must be available on all columns, not
+only promised fresh-blank target inputs.
+
+Near-balanced native port powers provide a controlled heralded G^j
+approximation, without any recordG angle. Success need not be exactly
+input independent at finite precision. Nonterminal Lüders UPDATE is an
+explicit missing operational interface: the scalar probability of Z_r
+alone does not supply it. Neither deferred measurement nor the Boolean
+matrix copy C_(r,B) is claimed to prove its physical availability.
+
+The actual prepared Book cut is different from the successful branch:
+for PORT/B/C blanks and FREE r, quietC_ret=K00 and determinant526 gives
+J_free; ifr is also SOURCE blank, quietC_ret=c_k c_l c_j with527, not
+the rank2 determinant. At the identity-success fixture this corner is p,
+notapI. Fine failures retain input-dependent statistics. Exact j0/j1
+feedback contrast is positive, but their durations AND logical tasks
+differ, so this is neither a whole-price nor a D_min same-task result.
+Full heat, recorder/controller, all original33scene modes and physical
+clock remain in the true action. The existing finite-core heat theorem
+only applies if its actual Hodge/padding hypotheses are proved.
+
+New decisive calculation only: literal generator commutants and exact
+norm witness; native G,C,G fresh+ branches; full4-qubit recorder-model
+unitarity and every branch for j0/1/2; both quiet input promises; exact
+5-qubit logical-CX branch; strict algebraic J-feedback contrast. The
+record-to-recorder gate occurs ONLY as the declared missing reader in
+that model; using a matrix helper is not original-native validation.
+First run exit0/PASS, Python3.9.6/SymPy1.14.0. No expected outputs or
+scientific statements changed after this run; later edits only clarify
+full128 and physical33/RawZone3/active2 carrier scope. No old GR/root,
+source-amplifier, clock, density or Lean replay.
+
+Frozen7bk INCLUDING next-heading separator:17255bytes,
+SHA256c11817c88a6381e3b5317a26d9c0b5b6e1a06dc767a473cba2d4c7b1bbef8d10.
+Embedded code excluding closing newline:4040bytes,
+SHA256ad604053b1c689df3f6dede562196e1acf7fe62d102a509f17d648fa2cf4f9f6.
+Final pinned reviews and affected integration checks follow.
+
+Parent route change:7bj remains mathematically valid on its supplied
+addressed interface; transport from the literal port-star palette fails.
+The next concrete actual coupling is an all-column record activation,
+or the precise nonterminal local recorder plus a complete measured
+controller-to-Book map. Known conditional channels, same operator algebra
+and the old stopped128 CQ owner do not discharge that physical step.
+No global GR no-go or completed selection/refinement is reported;
+GR_closed=false,positive_gr and raw216 remain open.
+
+Integration after incominge66bec5e: connected-Hoeffding source proof,
+checker and current-route update remain completely preserved. Its
+correlated preparation suppression is reused at its declared packet
+interface; our literal-star actuation test neither forbids physical
+short-range memory interactions nor invents a prerequisite for that
+independent estimate. No changed calculation or code, and no duplicate
+source/correlation replay.
+
+Final source-only ACCEPT17255/c11817c88a6381e3b5317a26d9c0b5b6e1a06dc767a473cba2d4c7b1bbef8d10:
+price_geometry_bridge and stationary_root_transfer. native_source_application
+accepted16826/a8830851 before the final connected-source scope paragraph;
+its numerical/scientific content is unchanged, and no pending final
+review is represented as complete. All code unchanged; no reviewer
+edited files or reran calculations.
+
+Affected final integration on incominge66bec5e PASS: work validation,
+agent protocol, gravity assembly(valid=true;54active/98results/
+5discharged/22obligations;scientific_promotion=false), repository
+(889claims/31assumptions/58aliases/183formal_support/918Leanclosure;
+warnings0), and whitespace. Removing7bk restores complete incoming
+primary BYTE EXACT, SHA256ea6cb272868bdd822d8c49fc5f41d604bfcd1422af2948ae015229267dfad497;
+incoming brief is an exact prefix. This is local source/structural
+validation, not remote CI or physical GR acceptance. Only the two owned
+insertion paths change.

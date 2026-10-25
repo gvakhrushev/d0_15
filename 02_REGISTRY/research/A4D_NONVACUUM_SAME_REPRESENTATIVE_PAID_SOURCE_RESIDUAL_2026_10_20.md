@@ -17888,6 +17888,349 @@ assert s.expand(bern)==(1+x*x)/2 and s.diff(bern-x*x,x)==-x
 print('PASS native actual-packet moments; full cold-matrix one-slot law; all16 local generators; independent-leg half; nonlocal hostile control; genuine Bernstein C1 debt')
 ```
 
+## 7bk. Literal port actuation, measured work transfer, and its different Book return
+
+25 October2026; same PR334 / constitutive/native-programme-v1. This tests
+the ACTUAL actuation premise of7bj, consuming its private-packet SOURCE
+map rather than another density theorem. SourcePortPreparation and
+GoldenOrderInterferometer already state that matrix-algebra membership
+and a source-derived port do not prove addressed physical availability.
+The result below identifies the missing interaction and computes one
+explicit measured alternative with ALL branches and its true cold cut.
+Neither alternative is silently admitted as new D0 physics.
+
+### The source gives one port, not arbitrary addressed packet wires
+
+Reuse the owned weighted active frame
+V=[q/sqrt(63),Kq/sqrt(178920)], V^T G_q V=I2, which sends the original
+RawZone Golden to G=[[a,-p],[p,a]], a=sqrt(p), and signalPort to P1.
+Tensor Spin gives the original SourceI=diag(I4,L_i). Its neutral scene
+complement and other dark modes are not removed by this coordinate map.
+It does not tensorize independent ports or move that action to a record.
+
+For one mutable work bit r, write X_r for its bit flip, and consider
+ONLY the literal port-star generators
+
+    G_port, SourceI_port,Spin, common Spin actions,
+    C_(port,r)=(I-P1) tensor I_r+P1 tensor X_r.       (521)
+
+Other work bits have analogous outward copies. Every generator and
+its inverse commutes with X_r. Thus every closed word does, for every
+finite length and every retained environment. If intermediate tests act
+only on the port, Spin or OTHER work bits, every fully resolved Kraus
+leaf also commutes with X_r. Adaptive classical branch composition and
+finite stopping do not change that conclusion when every leaf still
+uses this alphabet and those tests. This is NOT the class containing a
+measurement of r itself or a coherent controller already controlled by
+its Z predicate.
+
+For the desired literal G_r, [G_r,X_r]=-2p Z_r. Consequently
+
+    inf_([W,X_r]=0) ||W-G_r tensor V_env|| >=p         (522)
+
+for every unitary environment factor V_env. The same estimate follows
+from ||[W-G_r tensor V_env,X_r]||<=2||W-G_r tensor V_env||.
+It is an all-column operator-norm obstruction, independent of length,
+thermal padding or catalogue precision. A change of logical encoding
+needs its own explicit map;522 is not a classification of every possible
+native carrier. In particular7bg/7bj's density result on an ALREADY
+addressed G/CX interface is preserved, but cannot prove that interface
+from521. The separately specified original full128 CAR/App instrument
+is another operation/carrier, not a word of521. Using it for activation
+requires its own physical admission and exact work-bit/App map; this
+invariant does not rule out that separate route.
+
+There are two useful state/instrument consequences. Starting r in its
+actual blank, any complete unitary or TP instrument of the commuting
+class has <X_r>=0 after retaining/tracing other systems. Its reduced
+state is at trace distance at least ap from G|0><0|G^T, since that target
+has <X_r>=2ap. A clean heralded gate gamma G_r(.)G_r^dagger with gamma>0
+is also impossible in this SAME-r unmeasured class: positivity and the
+rank-one unitary Choi matrix force every successful Kraus leaf to be a
+scalar G_r, contradicting its commutator. This reuses the owned positive
+Kraus/pure-channel argument; there is no rank search.
+
+### Heralding can prepare coherence, but does not amplify away this symmetry
+
+If READY also commutes with X_r and its normalized successful r state
+is G|0>, keeping every unsuccessful branch gives
+
+    0=gamma(2ap)+(1-gamma)x_fail,
+    gamma<=1/(1+2ap),   -1<=x_fail<=1.               (523)
+
+For a successful |+> record the same bound is gamma<=1/2. It applies to
+every finite complete stopped tape in the stated class; an alleged
+almost-sure finite successful protocol obeys it by the same positive
+sum of its resolved finite leaves. It does not cover discarding failed
+tapes or measuring/resetting r under an extra operation.
+
+The bound is not a ban on coherent conditional states. The literal
+native three-operation sequence G_port;C_(port,r);G_port from |0,0>
+has port-readout branches
+
+    port0: p|0>-p^2|1>,
+    port1: ap(|0>+|1>),  Pr(port1)=2p^3<1/2.
+
+Their unnormalized X expectations cancel exactly. This is an explicit
+native heralded fresh-record |+> state; no G_r gate was used. It does
+not supply an unconditional private-packet preparer or all-input gate.
+
+The missing action is visible in the existing source constructors.
+A blank-r phase reflection I-2|0><0|=-Z_r does NOT commute with X_r.
+Nor does the generic record-controlled source coupling
+(I-P_r) tensor I+P_r tensor L_i. paid-writer20 supplies that coupling
+only IF it is available on EACH actual control projector; one signalPort
+cannot be renamed all App or work projectors. The off-port inverse's
+SWAP in7j also uses both CX directions. A proved C_(r,port), together
+with the outward C_(port,r), would give
+
+    SWAP=C_(port,r) C_(r,port) C_(port,r),
+    G_r=SWAP G_port SWAP.                            (524)
+
+Equation524 is an all-column identity on the ENCODED active two-port
+plane, tensor work/Spin. The original scene is33 dimensional; RawZone is
+its3-dimensional collective quotient. Neither is an independent binary
+port tensor factor. A physical transport must specify its unitary
+completion on the other31 scene modes, retain their heat/source rows,
+and prove the common map;524 alone is not G_r tensor I33 on all physical
+columns. It does not declare the missing coupling available. An already
+sealed or measured oldRIGHT is never a mutable r in this statement.
+
+### A distinct measured route has an exact all-input instrument
+
+Here is a concrete construction under a SMALLER EXPLICIT additional
+interface, rather than arbitrary addressed G/CX. Let r be mutable work,
+possibly entangled with untouched oldRIGHT. Start the original port at
+its input state. Use the original all-column outward copies and port
+powers in this chronological order:
+
+    G_port^k; C_(port,r); LOCAL Z_r readout b;
+    G_port^j; C_(port,r); G_port^l; port readout c.
+
+The local readout means the NONTERMINAL nondemolition/Luders instrument
+I_b=id_port tensor(P_b(.)P_b), with r left in |b>, port coherence
+retained and b written to a separate history record. Availability of the
+scalar Z_r probability does NOT establish that update or the ability to
+continue with the live conditional state. It is the exact added interface
+to prove. The r wire is reused after readout; its prior b is kept in
+history. No performed oldRIGHT measurement is undone.
+
+Put c_t=cos(t theta),s_t=sin(t theta),G^t=R(t theta). Then the FOUR
+unnormalized input-r to output-r maps are
+
+    D_k=diag(c_k,s_k),
+    E_0(l)=diag(c_l,-s_l), E_1(l)=diag(s_l,c_l),
+    K_bc=X^b E_c(l) G^j D_k X^b,
+    sum_(b,c) K_bc^dagger K_bc=I.                   (525)
+
+The two X factors are essential because the SECOND copy targets the
+same r, already in |b>. They are algebraic factors of the branch map,
+not extra physical X_r correction gates. Completeness follows by summing
+E_c^dagger E_c=I and then D_k^2+X D_k^2 X=I. It includes every unknown
+input column and every reference entanglement.
+
+At k=l=1,j=0 this gives
+K_01=K_11=ap I, K_00=diag(p,-p^2), K_10=diag(-p^2,p).
+Thus c=1 is exact identity-success with probability2p^3 on ALL inputs.
+The other two full-rank filters remain physical outcomes. If instead
+of G^j one inserts the existing outward C_(port,r2), with r2 another
+mutable unknown work bit, K_01=ap CX_(r,r2) and
+K_11=ap X_(r2) CX_(r,r2). This is an exact heralded logical CX, not a
+coherent unconditional CX_r or a permission to correct b for free.
+Using an outward copy on unknown r2 needs its stated all-column hardware;
+a primitive promised only on a fresh blank target would not suffice.
+
+A nontrivial G_r can be approximated on the heralded b=0,c=1 branch.
+Owned infinite-order Golden recurrence supplies native k,l in the
+positive quadrant with c_k,s_k,c_l,s_l arbitrarily close to1/sqrt2.
+For e_t=max(|c_t-1/sqrt2|,|s_t-1/sqrt2|) and delta=e_k+e_l,
+||K_01-G^j/2||<=delta. Its success probability is within delta+delta^2
+of1/4 for EVERY input. For delta+delta^2<1/4 the normalized successful
+output, including oldRIGHT, is within trace distance
+(delta+delta^2)/(1/4-delta-delta^2) of the intended unitary output.
+This is a finite heralded approximation, with actual lengths k,l paid.
+No exact balanced port, free feed-forward, runtime search or coherent
+inverse of a measured execution is inferred.
+
+### The successful gate is not the unchanged prepared Book return
+
+To compare with Book, specify the recorder and cut. The natural coherent
+column for525 is
+
+    V|psi>=sum_(b,c)|c>_port |b>_B |c>_C K_bc|psi>_r.
+
+It is an isometry by completeness. A concrete all-column dilation uses
+the original G/copies and ONE extra recorder C_(r,B) before the second
+port-to-r copy, then the outward port-to-C copy. That C_(r,B), or an
+actually specified alternative physical readout instrument/recorder,
+is NOT synthesized by521. Deferred-measurement notation does not
+provide its actuation. On the active plane this closed matrix word has
+k+j+l Golden letters and4 copy gates, with Spin spectator. The original
+31 complementary scene modes and every label/work column remain in
+its full physical carrier and heat.
+
+For the declared fresh-blank PORT,B,C cut with r a FREE input, the quiet
+corner is C_ret=K_00, NOT K_01. For z_t=c_t^2-s_t^2 and a_B=1-zeta,
+
+    det_2(a_B I+zeta C_ret^dagger C_ret)
+      =a_B^2+(a_B zeta/2)(1+z_k z_l z_j)
+        +(zeta^2/16)(1-z_k^2)(1-z_l^2),
+    J_free=-q log det_2(a_B I+zeta C_ret^dagger C_ret). (526)
+
+Only a genuine free spectator rank q supplies the multiplicity. If r
+is a SOURCE blank, as in7bj, it is a DIFFERENT smaller cut: compress
+K_00 once more. C_ret,blank=c_k c_l c_j, and
+
+    J_blank=-q log[a_B+zeta c_k^2 c_l^2 c_j^2].       (527)
+
+For k=l=1,j=0 the latter corner is p, not apI. Even the exact identity
+success does not make either full prepared feedback zero. The four fine
+records also retain input-dependent failure probabilities. At these
+parameters q_b1=p^3 and q_b0=p^2 rho_bb+p^4 rho_(1-b,1-b).
+A port-click marginal or conditional successful channel is not the full
+record, its Info or its Book cut.
+
+For example the exact actual j=0 versus j=1 words at k=l=1 have different
+J_free and J_blank: both increase at j=1. Their clock lengths also differ,
+so this is NOT a whole-price ordering. H_N, both readout devices, their
+controller/quantum memory and any permitted paid common clock remain
+in the actual action. If the same-scene Hodge and genuinely commuting
+padding of7bi are physically supplied, its all-row heat bound can be
+used after the FULL recorder core is counted. This does not manufacture
+that recorder, prove padding permission or identify the selected d_N.
+There is no literal adjoint for an actually dephased measured tape;
+a coherent larger-carrier implementation needs its real all-column map.
+
+### Parent route change and smallest next physical proof
+
+This closes a precise false shortcut: source-port universality does not
+imply private addressed-packet actuation.522 prevents that literal
+transport even approximately;523 shows why READY amplification cannot
+supply it while preserving the same commutant.7bj's mathematical local
+SOURCE map remains valid on its declared addressed interface, but its
+physical application must prove the missing activation/encoding map.
+The concurrent [connected-packet SOURCE theorem](A4D_NATIVE_PACKETS_CONNECTED_HOEFFDING_SOURCE_SUPPRESSION_2026_10_25.md)
+is preserved: it controls correlated normals on its declared packet
+interface without forbidding short-range quantum memory interactions.
+It does not claim to synthesize that interface from521. Neither result
+is a new prerequisite for the other; the actuator and source-norm maps
+are separate applications.
+
+The positive escape is now concrete rather than an unspecified new
+gate:525 gives full measured identity/CX transfer and an approximate
+logical G using the port plus a nonterminal LOCAL work readout. Its
+recorder/conditional-state availability and full source/heat map still
+must be proved, and526--527 show exactly why it cannot simply replace
+7bj's coherent pure-packet word at the old price. Another legitimate
+encoding may retain its own hypotheses; this is not a no-go for all D0
+or for the owned positive GR family. No action, selector, physical
+postulate, source-neutrality assumption or physical GR status is added.
+GR_closed=false; positive_gr and raw216 remain open.
+
+### One new exact check
+
+The embedded check verifies the literal generators' commutant, the exact
+norm witness, native three-step heralded |+>, every branch of the coherent
+recorder model for j=0,1,2, both actual input promises, and the all-input
+logical-CX success. It includes the NOT-IN-STAR record-to-recorder copy
+ONLY in the explicitly declared measured/dilated model; its matrix
+construction is not native validation or physical actuation evidence.
+The algebraic feedback contrast is exact. Full SourcePort frame, old
+GR/root/clock/density/Lean results are consumed, not needlessly replayed.
+
+```python
+# New exact native-port/address boundary and declared measured-bus interface.
+# R->B is the REQUIRED recorder, not claimed synthesized by the star palette.
+from pathlib import Path
+import sys,sympy as s
+sys.path.insert(0,str(Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24').resolve()))
+import native_execution as ne
+p=ne.P;a=ne.A;G=s.Matrix([[a,-p],[p,a]]);I=s.eye(2)
+X=s.Matrix([[0,1],[1,0]]);Z=s.diag(1,-1)
+eq=lambda A,B:ne.exact_matrix_equal(s.Matrix(A),s.Matrix(B))
+kp=s.kronecker_product
+P0=s.diag(1,0);P1=s.diag(0,1)
+Li=s.Matrix([[0,-1,0,0],[1,0,0,0],[0,0,0,-1],[0,0,1,0]])
+Lj=s.Matrix([[0,0,-1,0],[0,0,0,1],[1,0,0,0],[0,-1,0,0]])
+Qx=kp(s.eye(8),X)
+Gs=kp(G,s.eye(4),I)
+Ss=kp(P0,s.eye(4),I)+kp(P1,Li,I)
+Cs=kp(P0,s.eye(4),I)+kp(P1,s.eye(4),X)
+Ys=kp(I,Lj,I)
+for T in (Gs,Ss,Cs,Ys):
+    assert eq(T.T*T,s.eye(16)) and eq(T*Qx,Qx*T)
+Gr=kp(s.eye(8),G)
+assert eq(Gr*Qx-Qx*Gr,-2*p*kp(s.eye(8),Z))
+assert eq((Gr*Qx-Qx*Gr).T*(Gr*Qx-Qx*Gr),4*p*p*s.eye(16))
+# Native heralded fresh-record + state; both branches retained.
+Cpr=kp(P0,I)+kp(P1,X)
+state=kp(G,I)*Cpr*kp(G,I)*s.eye(4)[:,0]
+fresh0=state[:2,0];fresh1=state[2:,0]
+assert eq(fresh0,s.Matrix([p,-p*p])) and eq(fresh1,a*p*s.ones(2,1))
+assert eq(fresh0.T*X*fresh0+fresh1.T*X*fresh1,s.zeros(1))
+assert eq(fresh1.T*fresh1,s.Matrix([[2*p**3]]))
+assert s.simplify(s.Rational(1,2)-2*p**3).is_positive is True
+
+# Explicit four-qubit isometry/quiet-return test: P,R,B,C, wire0 MSB.
+def op_gate(n,op,wires):
+    # Matrix construction only; the missing R->B interaction is never inferred from validation.
+    e=ne.Execution(n,tuple(range(n)),(),(),ne.G_CX)
+    return ne.gate_matrix(e,ne.Gate(op,tuple(wires)),max_qubits=n)
+def word(n,gates):
+    U=s.eye(2**n)
+    for op,w in gates:U=op_gate(n,op,w)*U
+    return U
+def bus(j):
+    return word(4,[('G',(0,)),('CX',(0,1)),('CX',(1,2))]+[('G',(0,))]*j+[('CX',(0,1)),('G',(0,)),('CX',(0,3))])
+def branch(U,b,c):
+    M=s.zeros(2)
+    for r in range(2):
+        for v in range(2):M[r,v]=U[(c<<3)|(r<<2)|(b<<1)|c,v<<2]
+    return M
+z=s.symbols('z',real=True);abar=1-z
+for j in (0,1,2):
+    U=bus(j);assert eq(U.T*U,s.eye(16))
+    W=G**j;D=s.diag(a,p)
+    Ks={}
+    for b in (0,1):
+        for c in (0,1):
+            Ec=s.diag(G[c,0],G[c,1])
+            K=branch(U,b,c);Ks[b,c]=K
+            assert eq(K,(X**b)*Ec*W*D*(X**b))
+    assert eq(sum((K.T*K for K in Ks.values()),s.zeros(2)),I)
+    cut=s.zeros(16,2);cut[0,0]=cut[4,1]=1
+    assert eq(cut.T*U*cut,Ks[0,0])
+    K=Ks[0,0];zk=p-p*p;zj=W[0,0]**2-W[1,0]**2
+    tr=(K.T*K).trace();det=(K.T*K).det()
+    assert eq(s.Matrix([[tr]]),s.Matrix([[(1+zk*zk*zj)/2]]))
+    assert eq(s.Matrix([[det]]),s.Matrix([[(1-zk*zk)**2/16]]))
+    # SOURCE-blank cut is one column, not the free-R rank2 cut.
+    assert eq(s.Matrix([[U[0,0]]]),s.Matrix([[a*a*W[0,0]]]))
+    if j==0:
+        assert eq(K,s.diag(p,-p*p))
+        assert eq(Ks[1,0],s.diag(-p*p,p))
+        assert eq(Ks[0,1],a*p*I) and eq(Ks[1,1],a*p*I)
+# Native logical CX branch: P,R,T,B,C. C_R->B remains the declared readout input.
+U=word(5,[('G',(0,)),('CX',(0,1)),('CX',(1,3)),('CX',(0,2)),('CX',(0,1)),('G',(0,)),('CX',(0,4))])
+assert eq(U.T*U,s.eye(32))
+CXlogical=kp(P0,I)+kp(P1,X)
+for b in (0,1):
+    K=s.zeros(4)
+    for r in range(2):
+        for t in range(2):
+            for v in range(2):
+                for w in range(2):K[2*r+t,2*v+w]=U[(1<<4)|(r<<3)|(t<<2)|(b<<1)|1,(v<<3)|(w<<2)]
+    assert eq(K,a*p*(kp(I,X**b))*CXlogical)
+# Exact finite J-feedback contrast at same initial promise; no whole-heat ordering asserted.
+z0=s.Rational(1,2**20);ab0=1-z0
+B0=branch(bus(0),0,0);B1=branch(bus(1),0,0)
+det0=(ab0*I+z0*B0.T*B0).det();det1=(ab0*I+z0*B1.T*B1).det()
+assert s.simplify(det0-det1).is_positive is True
+# Boundary filter identity uses unknown/free R; blank initial R has scalar p, not apI.
+assert eq(s.Matrix([[B0[0,0]]]),s.Matrix([[p]]))
+print('PASS literal star commutant/lower-bound identity; native heralded fresh+; all4 measured-bus branches and quiet cuts; exact heralded logicalCX; positive J-feedback contrast')
+```
+
 ## 8. Reproduction
 
 Run from this directory:
