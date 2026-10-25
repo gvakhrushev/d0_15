@@ -5531,3 +5531,35 @@ This is still a regression guard for compiled evidence, not independent
 semantic acceptance. The Hodge operator remains distinct from the registered
 hopping CAR matrix, all four CAR claims remain OPEN, and full cold-start/C0
 acceptance and final `D0.All` integration remain outstanding.
+
+### Correct stale Hodge proof list in the open CAR square registry note (25 October 2026)
+
+The source review found that `claims.csv` row 815 still listed the Hodge
+square, L=2 diagonal comparison, kernel, shell rank, and energy limit as
+missing even though their scoped Lean declarations are present. The row note
+now records those results and their exact Hodge/cochain scope, including the
+factor-two L=2 comparison. It also states the remaining boundary: no operator
+square/kernel for the distinct hopping `carDirac`, no typed map to the
+registered `D_L`/`Delta_L^(4)` tensor formulation, and no matching exact Book
+06 heading.
+
+The claim ID, book/section locator, module/theorem locator, `OPEN` status and
+`PROOF-TARGET` release status are unchanged. `proof_architecture show`
+confirmed the revised note while returning the same open claim; generated
+`ClaimMap.lean` remains current. `validate_repo.py` passes with zero warnings,
+`generate_lean_views.py --check` passes, and
+`check_claim_map_coverage.py` passes under Python 3.12.14.
+
+The regenerated exact-heading candidate view is
+`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`,
+at clean source snapshot `4b0630b1b3220857e5ef52f3e4041803277b71c7`. Its
+`claims.csv` SHA-256 is
+`f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003`; the
+view SHA-256 is
+`005703883c253df5a2e51659293dbefba086452c06eb4f1229721fe4d8ec2537`. It
+still reports 889 claim rows, 94 uniquely resolved rows, four partial rows,
+zero ambiguous rows, 611 unresolved rows, and 170 malformed composite rows.
+These are locator-resolution counts only. The existing full cold-start
+summary remains pinned to its earlier registry snapshot; regenerate it with
+the expanded case set at final Ready. No C0 freeze, coverage acceptance,
+operator transfer, or physical closure follows from this note correction.

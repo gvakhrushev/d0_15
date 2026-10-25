@@ -1,9 +1,9 @@
 {
   "schema": "d0-claim-source-candidate-view-v1",
-  "snapshot_commit": "84b32c7189bb3793032622dab1b990bb59307929",
-  "worktree_dirty": true,
+  "snapshot_commit": "4b0630b1b3220857e5ef52f3e4041803277b71c7",
+  "worktree_dirty": false,
   "collector_sha256": "a6114ed772f36251a54953f13531694cac1734020f5ce128cafae0ae4eb8053b",
-  "claim_registry_sha256": "e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5",
+  "claim_registry_sha256": "f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003",
   "book_sources": {
     "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md": {
       "path": "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
@@ -110,7 +110,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2341: 02.34a Operator recognition without a preselected tripartite class"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2341: 02.34a Operator recognition without a preselected tripartite class"
             }
           ]
         }
@@ -136,7 +136,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -153,7 +153,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
             }
           ]
         }
@@ -179,7 +179,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -196,7 +196,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
             }
           ]
         },
@@ -220,7 +220,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L589: 08.12.5 The positive bridge is the normalized active scene operator"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L589: 08.12.5 The positive bridge is the normalized active scene operator"
             }
           ]
         }
@@ -246,7 +246,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -263,7 +263,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
             }
           ]
         },
@@ -296,7 +296,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -313,7 +313,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
             }
           ]
         },
@@ -330,7 +330,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L688: 08.12.6 The quadratic is forced already by the top-Hodge spectrum"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L688: 08.12.6 The quadratic is forced already by the top-Hodge spectrum"
             }
           ]
         }
@@ -356,7 +356,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -373,7 +373,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
             }
           ]
         },
@@ -390,7 +390,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L688: 08.12.6 The quadratic is forced already by the top-Hodge spectrum"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L688: 08.12.6 The quadratic is forced already by the top-Hodge spectrum"
             }
           ]
         }
@@ -416,7 +416,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -433,7 +433,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
             }
           ]
         },
@@ -450,7 +450,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L688: 08.12.6 The quadratic is forced already by the top-Hodge spectrum"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L688: 08.12.6 The quadratic is forced already by the top-Hodge spectrum"
             }
           ]
         }
@@ -492,7 +492,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1522: 02.18.4 The zone matrix `M`: a stochastic spectrum, not the fractal tick [clarification]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1522: 02.18.4 The zone matrix `M`: a stochastic spectrum, not the fractal tick [clarification]"
             }
           ]
         },
@@ -509,7 +509,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L589: 08.12.5 The positive bridge is the normalized active scene operator"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L589: 08.12.5 The positive bridge is the normalized active scene operator"
             }
           ]
         }
@@ -535,7 +535,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1522: 02.18.4 The zone matrix `M`: a stochastic spectrum, not the fractal tick [clarification]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1522: 02.18.4 The zone matrix `M`: a stochastic spectrum, not the fractal tick [clarification]"
             }
           ]
         }
@@ -561,7 +561,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -578,7 +578,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
             }
           ]
         }
@@ -604,7 +604,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L533: 08.12.4 The cubic-vs-quadratic window fork is spectrally closed"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L533: 08.12.4 The cubic-vs-quadratic window fork is spectrally closed"
             }
           ]
         }
@@ -630,7 +630,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -647,7 +647,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L2121: 02.34 Master Evolution and φ-quasicrystal proof spine"
             }
           ]
         }
@@ -673,7 +673,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -690,7 +690,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L531: 04.4 Matter as defects and gap-labeled spectra over the φ-quasicrystalline hull"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L531: 04.4 Matter as defects and gap-labeled spectra over the φ-quasicrystalline hull"
             }
           ]
         }
@@ -716,7 +716,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         },
@@ -733,7 +733,7 @@
               "source_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "snapshot_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
             }
           ]
         }
@@ -759,7 +759,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1111: 01.8.1 Homology reads the quotient scene, not a preferred label"
             }
           ]
         }
@@ -785,7 +785,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
             }
           ]
         }
@@ -811,7 +811,7 @@
               "source_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "snapshot_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
             }
           ]
         }
@@ -837,7 +837,7 @@
               "source_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "snapshot_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
             }
           ]
         }
@@ -863,7 +863,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2068: 01.20 Capacity closure of four terminal roles A,B,C,D, Ω8 and V9"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2068: 01.20 Capacity closure of four terminal roles A,B,C,D, Ω8 and V9"
             }
           ]
         },
@@ -880,7 +880,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2617: 01.24 Mobius-Witness topological halting"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2617: 01.24 Mobius-Witness topological halting"
             }
           ]
         }
@@ -972,7 +972,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L999: 01.7.1C Spin-`1/2` and three transport directions from `Q_8`"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L999: 01.7.1C Spin-`1/2` and three transport directions from `Q_8`"
             }
           ]
         }
@@ -4457,7 +4457,7 @@
               "source_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "snapshot_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L2079: 07.51.3 The causal partition is forced (rank-3 = causal cone)"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L2079: 07.51.3 The causal partition is forced (rank-3 = causal cone)"
             }
           ]
         }
@@ -4483,7 +4483,7 @@
               "source_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "snapshot_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L2079: 07.51.3 The causal partition is forced (rank-3 = causal cone)"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L2079: 07.51.3 The causal partition is forced (rank-3 = causal cone)"
             }
           ]
         }
@@ -4534,7 +4534,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1552: 01.14 Integrated theorem: φ-rigidity and dimension-graded detector quantum"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1552: 01.14 Integrated theorem: φ-rigidity and dimension-graded detector quantum"
             }
           ]
         }
@@ -4560,7 +4560,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L999: 01.7.1C Spin-`1/2` and three transport directions from `Q_8`"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L999: 01.7.1C Spin-`1/2` and three transport directions from `Q_8`"
             }
           ]
         }
@@ -4926,7 +4926,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L658: 04.5 Terminal matter triad"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L658: 04.5 Terminal matter triad"
             }
           ]
         }
@@ -4952,7 +4952,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L658: 04.5 Terminal matter triad"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L658: 04.5 Terminal matter triad"
             }
           ]
         }
@@ -4978,7 +4978,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L623: 04.4.6 CKM↔PMNS hierarchy inversion from rank-nullity"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L623: 04.4.6 CKM↔PMNS hierarchy inversion from rank-nullity"
             }
           ]
         }
@@ -5020,7 +5020,7 @@
               "source_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "snapshot_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
             }
           ]
         }
@@ -5046,7 +5046,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
             }
           ]
         }
@@ -5072,7 +5072,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
             }
           ]
         }
@@ -5107,7 +5107,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -5133,7 +5133,7 @@
               "source_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "snapshot_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L1062: 07.26 Lorentz and smoothness transition theorem"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L1062: 07.26 Lorentz and smoothness transition theorem"
             }
           ]
         }
@@ -5159,7 +5159,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
             }
           ]
         }
@@ -5185,7 +5185,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1042: 02.13.4 Electromagnetic runtime normalization"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1042: 02.13.4 Electromagnetic runtime normalization"
             }
           ]
         }
@@ -5211,7 +5211,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1042: 02.13.4 Electromagnetic runtime normalization"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1042: 02.13.4 Electromagnetic runtime normalization"
             }
           ]
         }
@@ -5237,7 +5237,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1042: 02.13.4 Electromagnetic runtime normalization"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L1042: 02.13.4 Electromagnetic runtime normalization"
             }
           ]
         }
@@ -5281,7 +5281,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L456: 04.2 The theorem owners used by this book"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L456: 04.2 The theorem owners used by this book"
             }
           ]
         }
@@ -5307,7 +5307,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -5333,7 +5333,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -5368,7 +5368,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -5394,7 +5394,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -5420,7 +5420,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -5446,7 +5446,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -5472,7 +5472,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -5498,7 +5498,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -5524,7 +5524,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -5550,7 +5550,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
             }
           ]
         }
@@ -5576,7 +5576,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
             }
           ]
         }
@@ -5602,7 +5602,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
             }
           ]
         }
@@ -5628,7 +5628,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -5654,7 +5654,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -5680,7 +5680,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -5754,7 +5754,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -5780,7 +5780,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -5806,7 +5806,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -6088,7 +6088,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L632: 02.9 Minimal positive-response theorem for the base equation"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L632: 02.9 Minimal positive-response theorem for the base equation"
             }
           ]
         }
@@ -6130,7 +6130,7 @@
               "source_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "snapshot_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L1857: 07.50 Finite horizon capacity and A/4 witness"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L1857: 07.50 Finite horizon capacity and A/4 witness"
             }
           ]
         }
@@ -6156,7 +6156,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L1218: 06.35 Internal cone speed and the role of time"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L1218: 06.35 Internal cone speed and the role of time"
             }
           ]
         }
@@ -6182,7 +6182,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L1218: 06.35 Internal cone speed and the role of time"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L1218: 06.35 Internal cone speed and the role of time"
             }
           ]
         }
@@ -6208,7 +6208,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1552: 01.14 Integrated theorem: φ-rigidity and dimension-graded detector quantum"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1552: 01.14 Integrated theorem: φ-rigidity and dimension-graded detector quantum"
             }
           ]
         }
@@ -6234,7 +6234,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1552: 01.14 Integrated theorem: φ-rigidity and dimension-graded detector quantum"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L1552: 01.14 Integrated theorem: φ-rigidity and dimension-graded detector quantum"
             }
           ]
         }
@@ -6276,7 +6276,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -6318,7 +6318,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
             }
           ]
         }
@@ -6344,7 +6344,7 @@
               "source_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "snapshot_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
             }
           ]
         }
@@ -6370,7 +6370,7 @@
               "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#L974: 02.13 Gauge and coefficient proof cells"
             }
           ]
         }
@@ -6396,7 +6396,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -6422,7 +6422,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -6448,7 +6448,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -6474,7 +6474,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L981: 06.30a Time evolution over the φ-quasicrystalline hull"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L981: 06.30a Time evolution over the φ-quasicrystalline hull"
             }
           ]
         }
@@ -6564,7 +6564,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1712: 04.16 Higgs scalar projector + Yukawa section (closed)"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1712: 04.16 Higgs scalar projector + Yukawa section (closed)"
             }
           ]
         }
@@ -6622,7 +6622,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L400: 06.8 Normalized discrete evolution step operator"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L400: 06.8 Normalized discrete evolution step operator"
             }
           ]
         }
@@ -6648,7 +6648,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L400: 06.8 Normalized discrete evolution step operator"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L400: 06.8 Normalized discrete evolution step operator"
             }
           ]
         }
@@ -6674,7 +6674,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
             }
           ]
         }
@@ -6700,7 +6700,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
             }
           ]
         }
@@ -6774,7 +6774,7 @@
               "source_blob_sha1": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
               "snapshot_blob_sha1": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md#L123: 03.3 Action as a finite admissible operator stack"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md#L123: 03.3 Action as a finite admissible operator stack"
             }
           ]
         }
@@ -6832,7 +6832,7 @@
               "source_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "snapshot_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
             }
           ]
         }
@@ -6858,7 +6858,7 @@
               "source_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "snapshot_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
             }
           ]
         }
@@ -6964,7 +6964,7 @@
               "source_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "snapshot_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md#L339: 05.6 Status vocabulary"
             }
           ]
         }
@@ -7310,7 +7310,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -7384,7 +7384,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1000: 04.8 Charged leptons as a concrete finite variational selector family"
             }
           ]
         }
@@ -8082,7 +8082,7 @@
               "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md#L1386: 08.51 The archive phason: a forced gapless dark mode"
             }
           ]
         }
@@ -9324,7 +9324,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2007: 01.19a Cut-and-project origin of visible branches"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2007: 01.19a Cut-and-project origin of visible branches"
             }
           ]
         }
@@ -9350,7 +9350,7 @@
               "source_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "snapshot_blob_sha1": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L2045: 07.51 Horizonless arrest and the causal compactness ceiling"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md#L2045: 07.51 Horizonless arrest and the causal compactness ceiling"
             }
           ]
         }
@@ -9501,7 +9501,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L261: 06.6 Finite phi-ordered finite evolution and depth contraction"
             }
           ]
         }
@@ -9696,7 +9696,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1712: 04.16 Higgs scalar projector + Yukawa section (closed)"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L1712: 04.16 Higgs scalar projector + Yukawa section (closed)"
             }
           ]
         }
@@ -10002,7 +10002,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L598: 01.6.1b Gleason-2D loophole and the Fibonacci fusion route [^b01-28]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L598: 01.6.1b Gleason-2D loophole and the Fibonacci fusion route [^b01-28]"
             }
           ]
         }
@@ -10028,7 +10028,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L573: 01.6.1a Two independent forcings of `\\varphi` [^b01-27]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L573: 01.6.1a Two independent forcings of `\\varphi` [^b01-27]"
             }
           ]
         }
@@ -10054,7 +10054,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2289: 01.21.3 `φ` as a quantized index value (Jones subfactor index) [forcing-owner]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2289: 01.21.3 `φ` as a quantized index value (Jones subfactor index) [forcing-owner]"
             }
           ]
         }
@@ -10134,7 +10134,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
             }
           ]
         }
@@ -10192,7 +10192,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
             }
           ]
         },
@@ -10225,7 +10225,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
             }
           ]
         },
@@ -10258,7 +10258,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
             }
           ]
         }
@@ -10284,7 +10284,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
             }
           ]
         },
@@ -10301,7 +10301,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L242: 01.3 No-monopoly verification and the measurement dyad"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L242: 01.3 No-monopoly verification and the measurement dyad"
             }
           ]
         }
@@ -10327,7 +10327,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L981: 06.30a Time evolution over the φ-quasicrystalline hull"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L981: 06.30a Time evolution over the φ-quasicrystalline hull"
             }
           ]
         }
@@ -10353,7 +10353,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L622: 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]"
             }
           ]
         },
@@ -10370,7 +10370,7 @@
               "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2212: 01.21.1 Duality lemma `φ/M1`: the operational and the algebraic minimizer coincide [^b01-52]"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#L2212: 01.21.1 Duality lemma `φ/M1`: the operational and the algebraic minimizer coincide [^b01-52]"
             }
           ]
         }
@@ -10396,7 +10396,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L981: 06.30a Time evolution over the φ-quasicrystalline hull"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L981: 06.30a Time evolution over the φ-quasicrystalline hull"
             }
           ]
         }
@@ -12387,7 +12387,7 @@
               "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L18: 04.0 Active matter sector law"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#L18: 04.0 Active matter sector law"
             }
           ]
         }
@@ -13783,7 +13783,7 @@
               "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
               "matches_snapshot_commit": true,
-              "candidate_source_unit_key": "source:84b32c7189bb3793032622dab1b990bb59307929:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L192: 06.3 Evolution cannot precede registration"
+              "candidate_source_unit_key": "source:4b0630b1b3220857e5ef52f3e4041803277b71c7:01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#L192: 06.3 Evolution cannot precede registration"
             }
           ]
         }
