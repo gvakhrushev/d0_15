@@ -230,3 +230,39 @@ They are GENERICALLY DIFFERENT. Hence simply citing M1 closedness, the finite Bo
 The formal positive repeatable **symmetric Fock occupation ensemble** of THEOREM B and the **antisymmetric d-particle no-archive Born instrument** of THEOREM F give exactly the SAME scalar \(p_\emptyset(F)\) and all of its field derivatives, but their OTHER outcomes and full future memory are NOT the same. Equality of this single positive observable does not authorize resetting registers or identifying the whole instruments — in agreement with the prior exact full128 3-tick future-algebra theorem. This makes the physical problem sharply testable: D0 must choose an ACTUAL complete instrument/task if it is to use the no-return feedback price, not just a convenient operator factorization.
 
 **Consequent strategy:** the missing Book03→M1 forcing theorem can now be tested at the level of ONE already known positive feedback \(F\) and a concrete no-archive Born event. If the original physical CAR/record/clock laws select such a full-occupation/no-return test (or a future-faithful equivalent with all costs), THEOREM A/C/F then force the original full feedback determinant without a continuum Lagrangian. The parent 42-source and Einstein limit still require admission on the SAME retained execution. No `GR_closed` change.
+
+
+## 8. THEOREM G — reuse the ORIGINAL archive K=QUP: the weak closed-return column is canonically fixed with NO EXTRA one-particle destination beyond P+Q
+
+The finite Slater test of THEOREM F was presented with an abstract isomorphic archive copy. That was mathematically convenient but is **not necessary for the PREPARED weak effect**. Use the ACTUAL original D0 closed Hilbert splitting \(H=H_P\oplus H_Q\) and its given unitary \(U\). Put
+\[
+K=QUP:H_P\to H_Q,\quad F=K^\dagger K,\quad
+A_\zeta=\sqrt{I_P-\zeta F}.
+\]
+Define the **prepared column into the very SAME original complete \(P\oplus Q\)**:
+\[
+\boxed{
+\mathcal V_{\zeta,U}:\psi\mapsto
+A_\zeta\psi\ \oplus\ \sqrt{\zeta}\,K\psi.
+}\tag{19}
+\]
+For ANY source state \(\psi\), including one entangled with untouched oldRIGHT,
+\[
+\boxed{\mathcal V_{\zeta,U}^\dagger\mathcal V_{\zeta,U}
+=A_\zeta^2+\zeta K^\dagger K=I_P.}\tag{20}
+\]
+Thus this is a genuine isometry using **only the original Q destination**, with absolutely no dropped failure columns. Its archive output retains the TRUE original complex/noncommuting K orientation, only weakened by the fixed inherited \(\sqrt\zeta\). On any finite H a full unitary completing the prepared column EXISTS because all orthonormal prepared images can be extended to an orthonormal basis of the SAME full H. Its action on unprepared columns is **not specified** or declared physically free; that exact ambiguity affects physical Book heat, clock and native primitive inventory.
+
+**Strong uniqueness at the prepared original interface.** Fix K and \(\zeta\) and require only that the active leg is the positive selfadjoint map \(A\ge0\) and the archive leg is exactly \(\sqrt\zeta\,K\). Isometry forces \(A^2=I-\zeta K^\dagger K\); hence \(A=A_\zeta\) is UNIQUE. The original no-return Born effect \(A_\zeta^\dagger A_\zeta=I-\zeta F\) and its derivatives are thereby unique on the honest prepared column. If the chosen original archive is *minimal* with \(\operatorname{rank}K=d\), then no smaller **one-particle auxiliary destination** can carry this full-rank weak archive leg, because any realization must satisfy \(B^\dagger B=\zeta F\) and hence \(\dim H_{\rm aux}\ge d\). The native full128 old Q has ample room; we are NOT claiming the original whole 128-slot fine channel is unchanged by replacing U with this isometry.
+
+Apply THEOREM F's \(\Lambda^d\) construction directly to an arbitrary full unitary completion of \(\mathcal V_{\zeta,U}\) on the **same** \(H_P\oplus H_Q\), using the antisymmetric filled input \(\Omega\in\Lambda^d H_P\). Its exact "no occupancy in original Q" amplitude is \(\det A_\zeta\), and the FINITE Born probability is STILL
+\[
+\boxed{\Pr_{\Lambda^d\mathcal U_{\zeta,U}}(\text{no original Q occupancy})=\det(I-\zeta K^\dagger K).}\tag{21}
+\]
+The result is completion-independent on the prepared filled input because the entire first d columns are fixed by (19). This is one mathematical full closed-unitary realization, with ACTUAL original \(K\) rather than a surrogate scalar effect. The \(\Lambda^d H\) preparation is a many-copy antisymmetric state on the already typed active system; it is not the four-fermion CAR16's original grade-four state when \(d=16\). That new **resource preparation, its many-copy implementation and the physical task** must be natively priced/selected. Equation(21) does not recover the ORIGINAL full128 fine outcome law, even though it reuses its K escape operator.
+
+**Why the filled input has a genuine canonicity argument WITHIN its selected fermionic representation.** For \(H_P\simeq\mathbb C^d\), if no preferred mode basis is admitted and a PURE input ray in \(\Lambda^k H_P\) must be invariant under *every* internal basis change \(U(d)\) (up to phase), then the ONLY possible grades are \(k=0\) and \(k=d\). The k=0 vacuum is physically sterile for an archive-escape query. For k=d the top Slater ray is unique because \(\Lambda^d U=\det U\), an unobservable global phase. For \(0<k<d\), invariance under the diagonal phase torus forces one basis wedge index set I; swapping one i∈I with one j∉I sends it to a distinct orthogonal wedge, contradiction. This is a valid finite **uniqueness-of-full-occupancy theorem relative to an all-mode U(d)-basis symmetry and nontrivial pure return task**.
+
+It is NOT yet proved that native D0 physically admits U(d) as a gauge symmetry on the entire \(\operatorname{ran}P\) or that the active d-dimensional carrier must be newly treated as a one-particle fermionic mode space. The actual original CAR16 is a four-mode system with a 16-dimensional many-particle state space. Claiming the above conditional top-wedge uniqueness as unconditionally M1-forced would cross precisely the physical representation boundary we are trying to solve. The correct next step is to consume original future-test equivalence and actual multi-copy native pricing to verify WHETHER the full antisymmetric input is the shortest all-mode no-return self-test.
+
+The mathematical simplification nevertheless matters decisively: **the unknown is not an additional external archive Hilbert space, a free sign or a continuum action oracle. The entire proposed no-return response is fixed by original \(P,Q,U,\zeta\)**; only admission of its internally prepared full-memory Born tester and selection of the original complete task/price remain.
