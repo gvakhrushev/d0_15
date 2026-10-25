@@ -364,6 +364,45 @@ theorem archiveLorentzian_unit_null_fibre_classification (N : ℕ) :
   · omega
   · simp [archiveFibers]
 
+/-- Distinct positive frequencies below the period give distinct members of
+the exact diagonal null family. -/
+theorem archiveLorentzian_diagonal_null_momentum_fin_injective (N : ℕ) :
+    Function.Injective (fun i : Fin (archiveFibers N - 1) =>
+      archiveLorentzianDiagonalMomentum N (i.val + 1)) := by
+  intro i j hij
+  apply Fin.ext
+  have hA := congrFun hij D0.A
+  have hcast : ((i.val + 1 : ℕ) : ZMod (archiveFibers N)) =
+      ((j.val + 1 : ℕ) : ZMod (archiveFibers N)) := by
+    simpa [archiveLorentzianDiagonalMomentum, D0.A] using hA
+  have hval := congrArg ZMod.val hcast
+  have hi : i.val + 1 < archiveFibers N := by omega
+  have hj : j.val + 1 < archiveFibers N := by omega
+  have hfreq : i.val + 1 = j.val + 1 := by
+    simpa only [ZMod.val_natCast_of_lt hi, ZMod.val_natCast_of_lt hj] using hval
+  omega
+
+/-- The exact diagonal family supplies at least `N+1` distinct nonzero null
+momenta on the period `N+2` grid. This is a structural lower bound on the
+root count, not an exact classification of every null momentum. -/
+theorem archiveLorentzian_nonzero_null_momentum_count_lower_bound (N : ℕ) :
+    archiveFibers N - 1 ≤
+      Fintype.card {k : Role → ZMod (archiveFibers N) //
+        k ≠ 0 ∧ archiveLorentzianFourierSymbol N k = 0} := by
+  classical
+  let f : Fin (archiveFibers N - 1) →
+      {k : Role → ZMod (archiveFibers N) //
+        k ≠ 0 ∧ archiveLorentzianFourierSymbol N k = 0} := fun i =>
+    ⟨archiveLorentzianDiagonalMomentum N (i.val + 1),
+      ⟨archiveLorentzian_diagonal_momentum_ne_zero N (i.val + 1) (by omega) (by omega),
+        archiveLorentzian_diagonal_momentum_is_null N (i.val + 1)⟩⟩
+  have hf : Function.Injective f := by
+    intro i j hij
+    apply archiveLorentzian_diagonal_null_momentum_fin_injective N
+    exact congrArg Subtype.val hij
+  have hcard := Fintype.card_le_of_injective f hf
+  simpa using hcard
+
 /-- On every archive period, the full site × Fock Lorentzian CAR operator has
 a nonzero exact cochain in its image whose next image is zero. The witness is
 supported in the persistent unit-frequency Fourier subspace. -/

@@ -4971,3 +4971,21 @@ snapshot is commit `59f1802f9df226cc5d6a22dc611d8fd3bf65a232` with
 transitive footprint retains the existing CAR `native_decide` leaves along
 with `Classical.choice`, `propext`, and `Quot.sound`. The full `D0.All` build
 remains reserved for Ready.
+
+### Structural lower bound on the all-grid null-root count (25 October 2026)
+
+The same exact family now yields a finite cardinality result. For the period
+`L=N+2`, the adapter proves the map
+`i ↦ (i+1,i+1,0,0)`, `i : Fin (L-1)`, is injective in the actual
+`Role → ZMod L` carrier by recovering the natural representative through
+`ZMod.val`. Each image is a nonzero root of the exact Eq. (5) symbol. The
+compiled theorem `archiveLorentzian_nonzero_null_momentum_count_lower_bound`
+therefore proves that the full nonzero null shell contains at least
+`L-1 = N+1` momenta for every archive period.
+
+This is the exact cardinality of the explicit diagonal subfamily and a lower
+bound for the whole shell. It does not classify roots with other role
+coordinates, give the exact all-grid root count, or compute the total site ×
+Fock kernel dimension. The exact full-cochain witness above and this root
+lower bound are mathematical properties of the declared complex carrier;
+they do not define a physical gauge quotient or select the source.
