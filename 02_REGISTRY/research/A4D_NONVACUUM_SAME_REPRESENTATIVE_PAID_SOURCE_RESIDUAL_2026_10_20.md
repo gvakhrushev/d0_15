@@ -7003,6 +7003,211 @@ Reproduce only this changed operation from repository root:
     python3 02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/check_native_echo.py --output /tmp/native_bilinear_return_echo.json
 
 
+## 7ac. Generate the two-band return from one canonical bank, retaining its matrix source
+
+**25 October joint-source application.** Consume7ab's literal return
+processor and7s's canonical geometry/CAR bank, read-only polynomial
+encoder and first-conditional theorem. The changed mathematical input is
+the FULL two-band matrix return, rather than7s's scalar weak reporter.
+This construction generates the joint programme law on the prepared
+section and controls arbitrary correlated pure-bank tangents there.
+It does not infer independence from stationarity or discard7ab's native
+correlation edit. Independent processor/control variations remain.
+
+The [proof](sources/d0_native_matrix_collective_return_2026-10-25/PROOF.md)
+and [bounded check](sources/d0_native_matrix_collective_return_2026-10-25/check_matrix_collective.py)
+use the existing same-owner source interfaces. This is native realization
+and source composition; the parent substitution is the previously
+uncontrolled joint programme-input source of the implemented J2 return.
+It is supporting work, not acceptance of the full native X_N domain.
+
+### The actual return averages amplitudes before taking its determinant
+
+Let a complete fresh ACTIVE bank be the deduplicated canonical state
+xi(r) of7s, with its true geometry/material covariance and field
+Jacobian. This ONE rank8-cut construction uses the explicit GLOBAL
+aggregates A_h(Y)=sum_i c_i f_i(Y), M_h(Y)=sum_i c_i q_i(Y), with the
+owned original fields, inverse-PF dictionary and actual fixed integer
+counts c_i. Set X_h=tau_h A_h, Y_h=tau_h M_h and
+E=p^2(1+X_h), b=(p-p^2 Y_h)^2. On a fixed compact chart choose a
+computable constant tau_h>0 keeping both probabilities strictly inside
+(0,1). These are the functions approximated by the encoder. There is
+one global determinant; it is not a sum of local determinants off Sigma.
+
+Every raw coordinate occurrence in the fixed E,b encoder uses
+a distinct bank slot, as in7s(177); pad to a common finite k. Keep all
+unused factors, source purifiers and scratch. Prepare n>=k fresh banks
+from the SAME classical source setting; this does not clone an unknown
+input or use immutable oldRIGHT as work.
+
+A fixed finite real orthogonal A_* coherently prepares the uniform
+ordered-injection label, routes distinct banks to these slots, and
+executes the read-only coefficient encoders. On its logical comparison,
+these encoders generate the two programme bits with the full joint
+response on every raw input. Their polynomial/C1 approximation error
+is retained; two mean values on a tied field curve are insufficient.
+DATA and protected source-spin are untouched by A_*.
+
+All injection labels are ACTIVE work, starting in real blanks. With
+V the actual11-stage middle of7ab, the complete echo is
+
+    S_Psi ; A_* ; V ; A_* inverse ; S_Psi inverse.      (262)
+
+Here S_Psi prepares the ENTIRE bank from blanks inside this same echo.
+It is not an independently supplied state outside the clock. Its
+inverse also returns the label/encoder/source work to the fixed cut.
+All failed return amplitudes remain in the complement. The cut retains
+DATA2 and the original arbitrary spin4, hence rank8. In particular the
+injection label is not added to the protected input rank.
+
+For the Hermitian DATA-valued k-bank kernel K of the fixed encoder,
+orthogonality of the injection labels gives the true return
+
+    K_n = (n)_k^(-1) sum_iota K_iota,
+    C_n(Psi) = <Psi,K_n Psi>_banks tensor I4,
+    J_n(Psi) = -4 log det[(1-zeta)I2+zeta C_n,2^2].     (263)
+
+On xi(r)^n, C_n,2 equals the unsymmetrized generated return, including
+both bands. It equals the original C2(E,b) only to the accuracy of the
+actual canonical encoder. Equation(263) is an AMPLITUDE compression:
+neither the defects F_iota nor their log determinants are averaged.
+The finite checks retain a correlated direction on which these
+substitutions give different answers.
+
+### A fixed native compiler supplies the processor without a free herald
+
+A_* is one finite, computable, field-INDEPENDENT real orthogonal map.
+The owned7w Golden/CX density on at least three legally addressed active
+bits applies to its full active block. If needed, tensor one unused
+ACTIVE blank bit with identity to obtain determinant+1. Its entire
+two-dimensional complement remains in the heat. Positive G powers
+approximate G inverse by compact rotation recurrence, so positive
+G/CX words have the same dense closure. Enumerate those finite
+words and certified error bounds until ||Ahat-A_*||<delta;
+density and computability prove termination. No efficient installed
+compiler or mesh-uniform complexity bound is asserted.
+
+This deterministic full-column approximation replaces the fixed
+selector/Boolean/coefficient circuit, including its preparation columns.
+There is no conditional READY normalization in(263). Compiling this
+fixed circuit does NOT itself prepare xi. For the source bank use actual
+unconditional native preparations from fresh active blanks approximating
+the full pure target at finite COMPUTABLE field points, with their state
+error eta retained. The same fixed-dimension density argument supplies
+such finite endpoint words;
+it does not erase the old raw CAR seed's READY flag by conditioning.
+An immutable unknown reference cannot be used in those preparations.
+S_point acts only on the complete source bank and its own source
+ancillas; the distinct injection/programme/encoder-work blanks stay
+exactly zero before Ahat. Their independently admitted variation would
+be an additional initial-work equation, outside this bank estimate.
+The compiler acts only on active bank/programme/work bits, tensor
+identity on DATA, source-spin and immutable oldRIGHT. The inverse
+macros may use dirty source-spin but restore it on every column.
+
+Reverse each ACTUAL raw word with7j's all-column SourceI inverse. A
+finite comparison catalogue has one carrier and a common primitive
+clock T, padded by the owned real two/five-CX identities. Every forward,
+inverse, routing and padding stage is paid. No C1 finite-word selector
+is inferred from the catalogue.
+If the whole forward bank/encoder word has g_port port-G, g_off other
+G and c CX letters, its closed body has exactly
+6g_port+12g_off+2c+11 primitive stages before real padding.
+
+The actual whole endpoint remains conjugate to V tensor I_allwork,
+even when Ahat is imperfect. If D_full is its complete fibre dimension,
+the two spectral multiplicities are D_full/2 each, and the paired heat is
+
+    Z_T = D_full [K_T(0)+K_T(pi)].                      (264)
+
+All2T D_full modes, including det-fix, unused banks and label work, are
+present. This absolute heat has zero source at fixed actual T and
+carrier; changing the clock, cut or fixed middle retains its own source.
+The selective SourceI profile is the same conditional apparatus premise
+as7ab, not a newly derived physical primitive.
+
+### The full matrix logdet has a controlled correlated preparation normal
+
+For the finite IDEAL encoder at a stated IID base, freeze its actual
+return matrix C and Q=(1-zeta)I+zeta C^2. The compiled encoder generally
+loses the exact one-slot alphabet; its gradient includes the separate
+implementation debt below.
+For one local spin4 copy, define the Hermitian bank score
+
+    L = -8 zeta Sym_k Tr_DATA[(Q^(-1) C) K].           (265)
+
+Its first differential is dJ=2 Re<dPsi,L_n Psi>, where L_n is the
+ordered-injection average of L. Freezing this cotangent is only the
+evaluation of the first derivative; no derivative of L is omitted from
+a second-derivative claim. The site counts c_i are INSIDE the aggregate
+encoder. Additional physically protected copies, if supplied, multiply
+the price, score and gain once; they are not inferred from those counts.
+
+The exact one-slot alphabet of7s gives its first conditional
+L1=<L>I+(1/k) sum_a g_a(O_a-r_a I), where g is the complete canonical
+feature differential d_r J. The true covariance is Sigma of7s(179),
+including CAR correlations. Put G^2=g^T Sigma g, choose
+B_L>=||L-bI|| for a fixed scalar b, and use the actual comparison
+field-source gain Gamma_h=4a0 tau_h>0. The owned overlap theorem gives
+
+    G/Gamma_h <= sqrt(n)||D_Psi J_n||/(2 Gamma_h)
+      <= sqrt[G^2/Gamma_h^2
+            + B_L^2 k^2(k-1)^2/(2 Gamma_h^2(n-1))].   (266)
+
+This is the ambient normalized PURE-bank norm at the IID base,
+including cross-bank entangled directions. Its sqrt(n) normalization
+prevents false suppression of a nonzero field source. A directly
+supplied E,b bank has G!=0 at7ab's product point and fails this test.
+Only the canonical invertible field/feature map can transport the
+GLOBAL all42 zero to G=0; vanishing along an ansatz curve is insufficient.
+
+For the exact C2 aggregate comparison on Sigma, all f_i=q_i=0 and
+the GLOBAL source is exactly
+4a0 tau_h D[sum_i c_i(f_i+lambda_minus q_i)], retaining EVERY ambient
+field direction. Apply the original inverse-PF density and16+24+2
+theorem ON THAT comparison. Its G=0 then controls the entire
+correlated bank source by(266). The actual finite Bernstein/native
+encoder keeps its nonzero C1 field error. That error, transported by
+the real canonical Jacobian and Sigma, supplies the nonzero first term
+of(266); it is never assigned an exact finite all42 root.
+
+There is a useful uniform implementation bound. If the complete n-bank
+Hermitian kernel changes by epsilon in operator norm, its full score changes by at
+most32 zeta epsilon/(1-zeta)^2. Thus ||Ahat-A_*||<=delta contributes
+at most128 zeta delta/(1-zeta)^2 to the pure gradient norm. Multiply
+by the actual total copy weight W for the global price. Define eta as
+the norm distance of the ENTIRE normalized n-bank/purifier/work input
+from its ideal product state (with its own source work, excluding the
+fixed encoder blanks); per-bank error eta0 gives, for example,
+eta<=n eta0. This whole-state error contributes at most
+256 zeta W eta/(1-zeta)^2. Here W=1 for the one-cut construction;
+any larger W requires actual extra protected copies. Divide
+by the SAME gain and keep the sqrt(n) factor in(266). These errors can
+be chosen after h,n,k and all norms are fixed; their longer actual
+clock changes(264)'s value but not its field source.
+
+Choose the existing polynomial/source accuracy to bound G/Gamma_h,
+then n for the second term, then fixed-processor and unconditional
+bank accuracy for these implementation debts. Ideal comparison tests
+retain the preparation lift of7q/s. Pointwise native preparer words do
+not inherit that C1 lift: actual endpoint/secant tests keep their own
+norm and source-normalized word/mesh error divided by the actual
+stencil spacing. Neither sphere differentiability nor smooth
+admissibility of the full native programme space follows.
+
+**Parent consequence.** The implemented two-band return now has a
+generated joint-law construction and a full matrix preparation-source
+budget, consuming the original nonvacuum all42 source and its existing
+curved recovery. This supplies controlled source recovery, rather than
+an exact finite joint stationary execution. The aggregate determinant
+does not inherit the original local action's Hessian, off-shell
+equivalence or generic Einstein equation class. The original scene/AF
+embedding, full future-test and physical X_N tangent map, independent
+encoder/middle/cut/clock equations and same-process refinement remain.
+No product-law postulate, new action, fitted subtraction or physical
+GR acceptance is added. GR_closed=false; raw216 remains open.
+
+
 ## 8. Reproduction
 
 Run from this directory:

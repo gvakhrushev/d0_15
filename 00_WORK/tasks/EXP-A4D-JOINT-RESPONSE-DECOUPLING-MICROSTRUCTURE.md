@@ -9422,3 +9422,97 @@ No claimofsamefuture-taskadmission orindependentprepEulerclosure.
 Reproduce only the changed operation from repository root:
 
     python3 02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/check_native_echo.py --output /tmp/native_bilinear_return_echo.json
+
+### 25 October: canonical-bank generation and the full matrix J2 source
+
+Phase: native realization / source composition. SAME existing PR334,
+constitutive/native-programme-v1 owner, scientific input fabbdd9c.
+Consume7ab's literal two-band RETURN and7s's deduplicated canonical
+geometry/CAR bank, read-only one-slot alphabet, true covariance and
+invertible field Jacobian. Reuse the owned collective overlap theorem
+and native all-column SO approximation / exact SourceI inverse.
+
+The named missing parent application is the joint programme law and
+its correlated preparation source, not a new geometric root. Construct
+one rank8-cut matrix-return execution. Fixed encoder A_* coherently
+routes distinct banks through the entire E,b coefficient programme;
+all labels, banks and work are prepared inside the echo and reversed.
+The genuine corner is the amplitude expectation of the ordered-
+injection operator kernel. The physical price takes that corner's
+single determinant. It is neither averaged defects nor averaged
+determinants; injection labels remain ACTIVE blank work, not extra
+protected input or a hidden normalization.
+
+For the one-cut global consumer, define X=tau_h sum_i c_i f_i and
+Y=tau_h sum_i c_i q_i with the original actual fixed counts and density
+dictionary; E=p²(1+X), b=(p-p²Y)². Choose computable tau_h>0 from a
+fixed compact chart. On Sigma the complete ambient source is exactly
+4a0 tau_h D sum_i c_i(f_i+lambda_minus q_i). Thus the existing original
+all16+24+2 nonvacuum zero applies to this comparison's first source.
+No sum of local determinants, off-shell action equivalence, Hessian
+transfer or generic Einstein class is inferred from this aggregate.
+
+Freeze the true matrix logdet cotangent at the stated IID base and
+apply the one-slot/overlap theorem to its Hermitian bank score. Its
+first conditional is controlled by the COMPLETE canonical field
+covector, rather than two independently supplied programme means.
+The sqrt(n)-scaled ambient pure-bank norm includes cross-bank
+correlated tangents. With true gain4a0 tau_h and the actual chart,
+score and degree constants, the higher-order residual tends to zero.
+The finite encoder retains its Bernstein C1 source error; no exact
+finite joint Euler root is assigned.
+
+The fixed finite computable A_* has deterministic all-column native
+approximants by the owned density theorem; finite enumeration with a
+certified error bound suffices, with no efficiency claim. Its actual
+inverse restores arbitrary dirty source-spin. The complete raw echo
+has6g_port+12g_off+2c+11 stages before real common-clock padding.
+Whole-spectrum heat is exactly conjugacy-constant even for an
+imperfect encoder; every bank, selector and det-fix mode remains paid.
+No new global compiled word is asserted to have been emitted by the
+bounded matrix checker.
+
+Unconditional pure-bank preparer endpoints at computable targets
+have their OWN full-state error; compiling A_* alone does not drop
+the original CAR seed's READY/failure source. Fixed source settings
+prepare fresh banks, without cloning or oldRIGHT scratch. All-column
+processor error and whole-bank state error carry the true sqrt(n)
+and gain factors. Ideal C1 lifts do not automatically transfer to
+pointwise native code catalogues; endpoint/secant errors keep their
+actual spacing and norms.
+
+Write paths: primary7ac, this existing brief and
+sources/d0_native_matrix_collective_return_2026-10-25/ only. Proof
+and helper/checker are disjoint bounded implementation subtasks in
+this same PR. Decisive check: small exact-type coherent routing and
+full matrix return; logdet cotangent on correlated directions; true
+first/second conditional norms; hostile averaged-defect control;
+full operator/state error constants and raw inverse inventory.
+No old root/full128/Lean or broad research-certificate replay.
+
+Remaining parent application: actual original scene/AF and future
+test binding, physical X_N tangent image, independent fixed-processor/
+cut/clock/controller equations and same-process refinement. This is
+controlled joint-source recovery at the owned curved family, not
+an exact native stationary sequence or physical GR acceptance.
+GR_closed=false; raw216 remains open.
+
+Reproduce only this changed matrix-source calculation:
+
+    python3 02_REGISTRY/research/sources/d0_native_matrix_collective_return_2026-10-25/check_matrix_collective.py --output /tmp/native_matrix_collective_return.json
+
+Final7ac11421bytes/SHA256
+076ff074a394e37734b336e8ee171978424d07c777838150ea6366d02e406de9.
+PROOF19194bytes/SHA256
+0c626bcb01f335d864f986a6783ba9e5ce04a5a9e015cae96cd4c9f45359da29.
+matrix_collective.py4520bytes/SHA256
+dc1e4c76d77485ab69890236b25e06803e9dfb0c99ee63fe748b677b4ed1fbc0.
+check_matrix_collective.py15699bytes/SHA256
+33a5124cc33a998a840d89aa33ce4ba79ffec6cc48bd268156872eb940e0f192.
+Actualfinalreceipt6710bytes/SHA256
+78641aa60cf283478123b05bf432f517c61d954265ab2500b66adb0e1d8a5fbf.
+RootactualfinalCLIexit0/PASS28; stdout=savedreceipt and all8input+
+3sectionpins verified. Independent final pinned-source review ACCEPT
+rehashed every input and all new sources without another replay.
+Removing7ac recovers fabbdd9c primary exactly; old brief preserved
+as a byte-identical prefix. No scientific/physical status is promoted.
