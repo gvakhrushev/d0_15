@@ -4,6 +4,7 @@ import D0.Research.NativeWeightedDiracBoundary
 namespace D0.Research.NativeWeightedDiracFourierNullModes
 
 open D0.Geometry
+open scoped ComplexConjugate
 
 /-!
 # Exact CAR contraction on null Fourier fibres
@@ -133,6 +134,92 @@ compatibility map. -/
 theorem archiveFourierFockModeLinear_apply (N : ℕ)
     (k : Role → ZMod (archiveFibers N)) (v : ArchiveFockState → ℂ) :
     archiveFourierFockModeLinear N k v = archiveFourierFockMode N k v := rfl
+
+/-- Fourier coefficient extraction on the actual product-cycle carrier kills
+every distinct character and recovers the matching Fock profile up to the
+finite group cardinality. -/
+private theorem archiveFourierFockMode_fourier_projection (N : ℕ)
+    (k l : Role → ZMod (archiveFibers N)) (v : ArchiveFockState → ℂ)
+    (s : ArchiveFockState) :
+    (∑ x : ArchiveRolePhaseGroup N,
+      archiveFourierFockMode N k v (x, s) *
+        conj (FiniteCycleFourier.piCycleChar l x)) =
+      if k = l then (archiveFibers N : ℂ) ^ Fintype.card Role * v s else 0 := by
+  classical
+  calc
+    _ = ∑ x : ArchiveRolePhaseGroup N,
+        (v s) * FiniteCycleFourier.piCycleChar (k - l) x := by
+          refine Finset.sum_congr rfl ?_
+          intro x hx
+          unfold archiveFourierFockMode
+          calc
+            (v s * FiniteCycleFourier.piCycleChar k x) *
+                conj (FiniteCycleFourier.piCycleChar l x) =
+              v s * (FiniteCycleFourier.piCycleChar k x *
+                FiniteCycleFourier.piCycleChar (-l) x) := by
+                  rw [FiniteCycleFourier.piCycleChar_conj]
+                  ring
+            _ = v s * FiniteCycleFourier.piCycleChar (k + -l) x := by
+                  rw [← FiniteCycleFourier.piCycleChar_add_left]
+            _ = v s * FiniteCycleFourier.piCycleChar (k - l) x := by
+                  congr 1
+                  congr 1
+                  ext r
+                  simp [sub_eq_add_neg]
+    _ = (v s) * ∑ x : ArchiveRolePhaseGroup N,
+          FiniteCycleFourier.piCycleChar (k - l) x := by
+          rw [Finset.mul_sum]
+    _ = (v s) * (if k - l = 0 then
+          (archiveFibers N : ℂ) ^ Fintype.card Role else 0) := by
+          rw [FiniteCycleFourier.sum_piCycleChar]
+    _ = if k = l then
+          (archiveFibers N : ℂ) ^ Fintype.card Role * v s else 0 := by
+          by_cases hkl : k = l
+          · subst l
+            simp [sub_self]
+            ring
+          · have hdiff : k - l ≠ 0 := by
+              intro hzero
+              exact hkl (sub_eq_zero.mp hzero)
+            simp [hkl, hdiff]
+
+/-- The same character projection separates any finite family of profiles
+carried by pairwise distinct product-cycle momenta. -/
+private theorem archiveFourierFockMode_sum_fourier_projection
+    {ι : Type*} [Fintype ι] [DecidableEq ι] (N : ℕ)
+    (k : ι → Role → ZMod (archiveFibers N)) (hk : Function.Injective k)
+    (v : ι → ArchiveFockState → ℂ) (j : ι) (s : ArchiveFockState) :
+    (∑ x : ArchiveRolePhaseGroup N,
+      (∑ i : ι, archiveFourierFockMode N (k i) (v i) (x, s)) *
+        conj (FiniteCycleFourier.piCycleChar (k j) x)) =
+      (archiveFibers N : ℂ) ^ Fintype.card Role * v j s := by
+  classical
+  calc
+    _ = ∑ x : ArchiveRolePhaseGroup N, ∑ i : ι,
+          archiveFourierFockMode N (k i) (v i) (x, s) *
+            conj (FiniteCycleFourier.piCycleChar (k j) x) := by
+          refine Finset.sum_congr rfl ?_
+          intro x hx
+          rw [Finset.sum_mul]
+    _ = ∑ i : ι, ∑ x : ArchiveRolePhaseGroup N,
+          archiveFourierFockMode N (k i) (v i) (x, s) *
+            conj (FiniteCycleFourier.piCycleChar (k j) x) := by
+          rw [Finset.sum_comm]
+    _ = ∑ i : ι,
+          (if k i = k j then
+            (archiveFibers N : ℂ) ^ Fintype.card Role * v i s else 0) := by
+          refine Finset.sum_congr rfl ?_
+          intro i hi
+          exact archiveFourierFockMode_fourier_projection N (k i) (k j) (v i) s
+    _ = (archiveFibers N : ℂ) ^ Fintype.card Role * v j s := by
+          rw [Finset.sum_eq_single j]
+          · simp
+          · intro i hi hne
+            have hneq : k i ≠ k j := by
+              intro heq
+              exact hne (hk heq)
+            simp [hneq]
+          · simp
 
 /-- The full typed CAR operator intertwines with the existing finite
 sixteen-component operator on every Fourier subspace. -/
@@ -477,6 +564,148 @@ theorem archiveLorentzian_nonzero_null_momentum_count_lower_bound (N : ℕ) :
     exact congrArg Subtype.val hij
   have hcard := Fintype.card_le_of_injective f hf
   simpa using hcard
+
+/-- Orthogonality lets the diagonal roots contribute additively on the actual
+full cochain carrier. Including the sixteen-dimensional zero fibre, the full
+operator kernel has dimension at least `16 + 8 (N+1)` on every archive grid.
+This is a lower bound from the explicit family, not the exact total kernel. -/
+theorem archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family
+    (N : ℕ) :
+    16 + 8 * (archiveFibers N - 1) ≤ Module.finrank ℂ
+      (LinearMap.ker (archiveLorentzianCARDiracLinear N)) := by
+  classical
+  let I := Fin (archiveFibers N - 1)
+  let J := Option I
+  let k : J → Role → ZMod (archiveFibers N) := fun j =>
+    match j with
+    | none => 0
+    | some i => archiveLorentzianDiagonalMomentum N (i.val + 1)
+  let fibreOp (j : J) :=
+    roleWeightedArchiveFourierFockActionLinear N roleLorentzSign (k j)
+  let fibreKer (j : J) := LinearMap.ker (fibreOp j)
+  let modeMap (j : J) := archiveFourierFockModeLinear N (k j)
+  let family := ∀ j : J, fibreKer j
+  let raw : family →ₗ[ℂ] ArchiveCochainC N :=
+    ∑ j : J, (modeMap j).comp
+      ((fibreKer j).subtype.comp (LinearMap.proj (R := ℂ) j))
+  have hraw_coordinate (u : family) (j : J) :
+      (fibreKer j).subtype (LinearMap.proj (R := ℂ) j u) =
+        (u j : ArchiveFockState → ℂ) := by
+    rfl
+  have hraw_apply (u : family) :
+      raw u = ∑ j : J, modeMap j (u j) := by
+    simp only [raw, LinearMap.sum_apply, LinearMap.comp_apply]
+    apply Finset.sum_congr rfl
+    intro j hj
+    exact congrArg (modeMap j) (hraw_coordinate u j)
+  have hk : Function.Injective k := by
+    intro a b hab
+    cases a with
+    | none =>
+      cases b with
+      | none => rfl
+      | some j =>
+        have hzero : archiveLorentzianDiagonalMomentum N (j.val + 1) = 0 := by
+          simpa [k] using hab.symm
+        exact False.elim
+          (archiveLorentzian_diagonal_momentum_ne_zero N (j.val + 1)
+            (by omega) (by omega) hzero)
+    | some i =>
+      cases b with
+      | none =>
+        have hzero : archiveLorentzianDiagonalMomentum N (i.val + 1) = 0 := by
+          simpa [k] using hab
+        exact False.elim
+          (archiveLorentzian_diagonal_momentum_ne_zero N (i.val + 1)
+            (by omega) (by omega) hzero)
+      | some j =>
+        have hij : archiveLorentzianDiagonalMomentum N (i.val + 1) =
+            archiveLorentzianDiagonalMomentum N (j.val + 1) := by
+          simpa [k] using hab
+        have heq : i = j :=
+          archiveLorentzian_diagonal_null_momentum_fin_injective N hij
+        simp [heq]
+  have hraw_mem : ∀ u : family,
+      raw u ∈ LinearMap.ker (archiveLorentzianCARDiracLinear N) := by
+    intro u
+    change archiveLorentzianCARDiracLinear N (raw u) = 0
+    rw [hraw_apply u]
+    rw [map_sum]
+    apply Finset.sum_eq_zero
+    intro j hj
+    calc
+      archiveLorentzianCARDiracLinear N (modeMap j (u j)) =
+          modeMap j (fibreOp j (u j)) := by
+            simpa [modeMap, fibreOp] using
+              archiveLorentzianCARDiracLinear_fourier_mode N (k j) (u j)
+      _ = 0 := by
+        rw [(u j).property]
+        exact (modeMap j).map_zero
+  have hraw_injective : Function.Injective raw := by
+    intro u v huv
+    funext j
+    apply Subtype.ext
+    funext s
+    let projector := fun ψ : ArchiveCochainC N =>
+      ∑ x : ArchiveRolePhaseGroup N,
+        ψ (x, s) * conj (FiniteCycleFourier.piCycleChar (k j) x)
+    have hprojected : projector (raw u) = projector (raw v) :=
+      congrArg projector huv
+    have hprojected_sum :
+        (∑ x : ArchiveRolePhaseGroup N,
+          (∑ t : J, archiveFourierFockMode N (k t) (u t) (x, s)) *
+            conj (FiniteCycleFourier.piCycleChar (k j) x)) =
+        (∑ x : ArchiveRolePhaseGroup N,
+          (∑ t : J, archiveFourierFockMode N (k t) (v t) (x, s)) *
+            conj (FiniteCycleFourier.piCycleChar (k j) x)) := by
+      simpa [projector, hraw_apply, modeMap, archiveFourierFockModeLinear] using hprojected
+    have hu := archiveFourierFockMode_sum_fourier_projection N k hk
+      (fun t => (u t : ArchiveFockState → ℂ)) j s
+    have hv := archiveFourierFockMode_sum_fourier_projection N k hk
+      (fun t => (v t : ArchiveFockState → ℂ)) j s
+    have hscalar :
+        (archiveFibers N : ℂ) ^ Fintype.card Role * (u j : ArchiveFockState → ℂ) s =
+          (archiveFibers N : ℂ) ^ Fintype.card Role *
+            (v j : ArchiveFockState → ℂ) s := by
+      calc
+        _ = projector (raw u) := by
+          simpa [projector, hraw_apply, modeMap, archiveFourierFockModeLinear] using hu.symm
+        _ = projector (raw v) := hprojected
+        _ = _ := by
+          simpa [projector, hraw_apply, modeMap, archiveFourierFockModeLinear] using hv
+    have hperiod : (archiveFibers N : ℂ) ≠ 0 := by
+      exact_mod_cast (show archiveFibers N ≠ 0 by simp [archiveFibers])
+    exact mul_left_cancel₀ (pow_ne_zero _ hperiod) hscalar
+  let lift : family →ₗ[ℂ]
+      LinearMap.ker (archiveLorentzianCARDiracLinear N) :=
+    LinearMap.codRestrict _ raw hraw_mem
+  have hlift : Function.Injective lift := by
+    intro u v huv
+    have hraw_eq : raw u = raw v := by
+      simpa [lift, LinearMap.codRestrict_apply] using congrArg Subtype.val huv
+    exact hraw_injective hraw_eq
+  have hfibre_rank (j : J) : Module.finrank ℂ (fibreKer j) =
+      if j = none then 16 else 8 := by
+    cases j with
+    | none =>
+      simp [fibreKer, fibreOp, k,
+        roleWeightedArchiveFourierFockActionLinear_ker_finrank_at_zero]
+    | some i =>
+      have hi0 : 0 < i.val + 1 := by omega
+      have hiL : i.val + 1 < archiveFibers N := by omega
+      simpa [fibreKer, fibreOp, k] using
+        (archiveLorentzian_diagonal_null_fibre_classification N
+          (i.val + 1) hi0 hiL).2.1
+  have hfamily_rank : Module.finrank ℂ family =
+      16 + 8 * (archiveFibers N - 1) := by
+    rw [Module.finrank_pi_fintype, Fintype.sum_option]
+    simp_rw [hfibre_rank]
+    simp [I, Fintype.card_fin, Finset.sum_const, Nat.mul_comm]
+  have hdimle := LinearMap.finrank_le_finrank_of_injective hlift
+  calc
+    16 + 8 * (archiveFibers N - 1) = Module.finrank ℂ family := hfamily_rank.symm
+    _ ≤ Module.finrank ℂ
+          (LinearMap.ker (archiveLorentzianCARDiracLinear N)) := hdimle
 
 /-- On every archive period, the full site × Fock Lorentzian CAR operator has
 a nonzero exact cochain in its image whose next image is zero. The witness is
