@@ -141,6 +141,58 @@ theorem carMatrixEnd_comp_apply {K : Type*} [CommSemiring K]
           intro ket _
           rw [← Finset.sum_mul]
 
+/-- Composition of two finite matrix actions is itself the action of the
+ordinary matrix product on the same Fock-profile space. -/
+theorem carMatrixEnd_comp {K : Type*} [CommSemiring K]
+    (M N : ArchiveFockState → ArchiveFockState → K) :
+    (carMatrixEnd M).comp (carMatrixEnd N) =
+      carMatrixEnd (fun bra ket =>
+        ∑ mid : ArchiveFockState, M bra mid * N mid ket) := by
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  exact carMatrixEnd_comp_apply M N ψ bra
+
+theorem carMatrixEnd_add {K : Type*} [CommSemiring K]
+    (M N : ArchiveFockState → ArchiveFockState → K) :
+    carMatrixEnd (fun bra ket => M bra ket + N bra ket) =
+      carMatrixEnd M + carMatrixEnd N := by
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  change (∑ ket : ArchiveFockState,
+      (M bra ket + N bra ket) * ψ ket) =
+    (∑ ket : ArchiveFockState, M bra ket * ψ ket) +
+      (∑ ket : ArchiveFockState, N bra ket * ψ ket)
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro ket _
+  ring
+
+theorem carMatrixEnd_smul {K : Type*} [CommSemiring K] (c : K)
+    (M : ArchiveFockState → ArchiveFockState → K) :
+    carMatrixEnd (fun bra ket => c * M bra ket) = c • carMatrixEnd M := by
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  simp [carMatrixEnd, Finset.mul_sum, mul_assoc]
+
+@[simp] theorem carMatrixEnd_zero {K : Type*} [CommSemiring K] :
+    carMatrixEnd (fun _ _ : ArchiveFockState => (0 : K)) = 0 := by
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  simp [carMatrixEnd]
+
+theorem carMatrixEnd_diagonalIdentity {K : Type*} [CommSemiring K] :
+    carMatrixEnd (fun bra ket : ArchiveFockState =>
+      if bra = ket then (1 : K) else 0) = LinearMap.id := by
+  classical
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  simp [carMatrixEnd]
+
 /-- Integral shadow of `carCreate`. -/
 def carCreateInt (r : Role) (bra ket : ArchiveFockState) : ℤ :=
   carAnnihilateInt r ket bra

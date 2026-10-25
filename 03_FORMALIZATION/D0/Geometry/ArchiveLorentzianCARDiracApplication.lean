@@ -386,6 +386,29 @@ noncomputable def archiveFourierBackwardMultiplier (N : ℕ)
     (k : Role → ZMod (archiveFibers N)) (r : Role) : ℂ :=
   (archiveFibers N : ℂ) * (1 - FiniteCycleFourier.cycleChar (k r) (-1))
 
+/-- A role has nonzero forward Fourier multiplier exactly when its momentum
+coordinate is nonzero. The converse uses primitivity of the standard ZMod
+character and the fact that every archive period is nonzero. -/
+theorem archiveFourierForwardMultiplier_ne_zero_iff (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role) :
+    archiveFourierForwardMultiplier N k r ≠ 0 ↔ k r ≠ 0 := by
+  have hperiod : (archiveFibers N : ℂ) ≠ 0 := by
+    exact_mod_cast (NeZero.ne (archiveFibers N))
+  have hcharacter : FiniteCycleFourier.cycleChar (k r) 1 = 1 ↔ k r = 0 := by
+    simpa [FiniteCycleFourier.cycleChar] using
+      AddChar.IsPrimitive.zmod_char_eq_one_iff (archiveFibers N)
+        (ZMod.isPrimitive_stdAddChar (archiveFibers N)) (k r)
+  unfold archiveFourierForwardMultiplier
+  constructor
+  · intro hmultiplier
+    by_contra hmom
+    have hone : FiniteCycleFourier.cycleChar (k r) 1 = 1 :=
+      hcharacter.mpr hmom
+    simp [hone] at hmultiplier
+  · intro hmom
+    apply mul_ne_zero hperiod
+    exact sub_ne_zero.mpr (fun hone => hmom (hcharacter.mp hone))
+
 /-- Creation on the sixteen-component Fock coefficient at fixed momentum,
 represented by the shared finite matrix action. -/
 def archiveFourierCreateProfileLinear (r : Role) :
@@ -442,6 +465,163 @@ theorem roleWeightedArchiveFourierFockActionLinear_apply (N : ℕ)
     archiveFourierCreateProfile, archiveFourierAnnihilateProfile,
     archiveFourierCreateProfileLinear, archiveFourierAnnihilateProfileLinear,
     carMatrixEnd]
+
+private theorem archiveFourierAnnihilateProfileLinear_anticommutator
+    (r s : Role) :
+    (archiveFourierAnnihilateProfileLinear r).comp
+        (archiveFourierAnnihilateProfileLinear s) +
+      (archiveFourierAnnihilateProfileLinear s).comp
+        (archiveFourierAnnihilateProfileLinear r) = 0 := by
+  calc
+    _ = carMatrixEnd (fun bra ket =>
+          (∑ mid : ArchiveFockState,
+            (carAnnihilate r bra mid : ℂ) * carAnnihilate s mid ket) +
+          (∑ mid : ArchiveFockState,
+            (carAnnihilate s bra mid : ℂ) * carAnnihilate r mid ket)) := by
+          change
+            (carMatrixEnd (fun bra mid => (carAnnihilate r bra mid : ℂ))).comp
+                (carMatrixEnd (fun mid ket => (carAnnihilate s mid ket : ℂ))) +
+              (carMatrixEnd (fun bra mid => (carAnnihilate s bra mid : ℂ))).comp
+                (carMatrixEnd (fun mid ket => (carAnnihilate r mid ket : ℂ))) = _
+          rw [carMatrixEnd_comp, carMatrixEnd_comp, ← carMatrixEnd_add]
+    _ = carMatrixEnd (fun _ _ : ArchiveFockState => (0 : ℂ)) := by
+          congr 1
+          funext bra ket
+          have h := congrArg (fun x : ℝ => (x : ℂ))
+            (car_annihilate_anticommutator r s bra ket)
+          simpa [anticommutator] using h
+    _ = 0 := carMatrixEnd_zero
+
+private theorem archiveFourierAnnihilateCreateProfileLinear_anticommutator
+    (r s : Role) :
+    (archiveFourierAnnihilateProfileLinear r).comp
+        (archiveFourierCreateProfileLinear s) +
+      (archiveFourierCreateProfileLinear s).comp
+        (archiveFourierAnnihilateProfileLinear r) =
+      (if r = s then (1 : ℂ) else 0) • LinearMap.id := by
+  let δ : ℂ := if r = s then 1 else 0
+  calc
+    _ = carMatrixEnd (fun bra ket =>
+          (∑ mid : ArchiveFockState,
+            (carAnnihilate r bra mid : ℂ) * carCreate s mid ket) +
+          (∑ mid : ArchiveFockState,
+            (carCreate s bra mid : ℂ) * carAnnihilate r mid ket)) := by
+          change
+            (carMatrixEnd (fun bra mid => (carAnnihilate r bra mid : ℂ))).comp
+                (carMatrixEnd (fun mid ket => (carCreate s mid ket : ℂ))) +
+              (carMatrixEnd (fun bra mid => (carCreate s bra mid : ℂ))).comp
+                (carMatrixEnd (fun mid ket => (carAnnihilate r mid ket : ℂ))) = _
+          rw [carMatrixEnd_comp, carMatrixEnd_comp, ← carMatrixEnd_add]
+    _ = carMatrixEnd (fun bra ket =>
+          δ * (if bra = ket then (1 : ℂ) else 0)) := by
+          congr 1
+          funext bra ket
+          have hcoeff :
+              (∑ mid : ArchiveFockState,
+                (carAnnihilate r bra mid : ℂ) * carCreate s mid ket) +
+              (∑ mid : ArchiveFockState,
+                (carCreate s bra mid : ℂ) * carAnnihilate r mid ket) =
+                δ * (if bra = ket then (1 : ℂ) else 0) := by
+            have h := congrArg (fun x : ℝ => (x : ℂ))
+              (car_mixed_anticommutator r s bra ket)
+            calc
+              _ = Complex.ofReal (roleDelta r s * fockIdentity bra ket) := by
+                    simpa [anticommutator] using h
+              _ = δ * (if bra = ket then (1 : ℂ) else 0) := by
+                    by_cases hrs : r = s <;> by_cases hbk : bra = ket <;>
+                      simp [δ, roleDelta, fockIdentity, hrs, hbk]
+          exact hcoeff
+    _ = δ • LinearMap.id := by
+          rw [carMatrixEnd_smul, carMatrixEnd_diagonalIdentity]
+
+private theorem linearMap_sum_anticommutator
+    {ι : Type*} [Fintype ι] {V : Type*} [AddCommMonoid V] [Module ℂ V]
+    (F : ι → V →ₗ[ℂ] V) (K : V →ₗ[ℂ] V) :
+    (∑ i : ι, F i).comp K + K.comp (∑ i : ι, F i) =
+      ∑ i : ι, ((F i).comp K + K.comp (F i)) := by
+  apply LinearMap.ext
+  intro v
+  simp only [LinearMap.comp_apply, LinearMap.add_apply, LinearMap.sum_apply,
+    map_sum]
+  rw [← Finset.sum_add_distrib]
+
+private theorem linearMap_smul_comp_smul
+    {V : Type*} [AddCommMonoid V] [Module ℂ V]
+    (a c : ℂ) (F G : V →ₗ[ℂ] V) :
+    (a • F).comp (c • G) = (a * c) • F.comp G := by
+  rw [LinearMap.smul_comp, LinearMap.comp_smul, smul_smul]
+
+private theorem fourierCARTerm_contraction
+    (a b c : ℂ) (C A Ar : (ArchiveFockState → ℂ) →ₗ[ℂ]
+      (ArchiveFockState → ℂ)) :
+    (a • C - b • A).comp (c • Ar) +
+        (c • Ar).comp (a • C - b • A) =
+      (a * c) • (C.comp Ar + Ar.comp C) -
+        (b * c) • (A.comp Ar + Ar.comp A) := by
+  rw [LinearMap.sub_comp, LinearMap.comp_sub,
+    linearMap_smul_comp_smul, linearMap_smul_comp_smul,
+    linearMap_smul_comp_smul, linearMap_smul_comp_smul]
+  rw [smul_add, smul_add, mul_comm c a, mul_comm c b]
+  abel
+
+/-- The explicit CAR contraction associated with one nonzero forward Fourier
+multiplier. It is an algebraic auxiliary operator on the sixteen-component
+fibre; no physical admission is implied. -/
+noncomputable def roleWeightedArchiveFourierCARContraction (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role) :
+    (ArchiveFockState → ℂ) →ₗ[ℂ] (ArchiveFockState → ℂ) :=
+  (archiveFourierForwardMultiplier N k r)⁻¹ •
+    archiveFourierAnnihilateProfileLinear r
+
+/-- CAR gives the exact contracting homotopy identity `D K + K D = I` on
+every Fourier fibre with a nonzero forward multiplier. The identity is
+stronger than the null-mode instance, which additionally uses `D^2 = 0`. -/
+theorem roleWeightedArchiveFourierFockActionLinear_contraction
+    (N : ℕ) (w : Role → ℝ) (k : Role → ZMod (archiveFibers N)) (r : Role)
+    (ha : archiveFourierForwardMultiplier N k r ≠ 0) :
+    (roleWeightedArchiveFourierFockActionLinear N w k).comp
+        (roleWeightedArchiveFourierCARContraction N k r) +
+      (roleWeightedArchiveFourierCARContraction N k r).comp
+        (roleWeightedArchiveFourierFockActionLinear N w k) = LinearMap.id := by
+  classical
+  let a : Role → ℂ := archiveFourierForwardMultiplier N k
+  let b : Role → ℂ := fun q =>
+    (w q : ℂ) * archiveFourierBackwardMultiplier N k q
+  let A := archiveFourierAnnihilateProfileLinear
+  let C := archiveFourierCreateProfileLinear
+  let F : Role → (ArchiveFockState → ℂ) →ₗ[ℂ] (ArchiveFockState → ℂ) :=
+    fun q => a q • C q - b q • A q
+  let K := (a r)⁻¹ • A r
+  have hsum := linearMap_sum_anticommutator F K
+  change (∑ q : Role, F q).comp K + K.comp (∑ q : Role, F q) = _
+  rw [hsum]
+  calc
+    (∑ q : Role, ((F q).comp K + K.comp (F q))) =
+        ∑ q : Role, (
+          (a q * (a r)⁻¹) •
+              ((C q).comp (A r) + (A r).comp (C q)) -
+            (b q * (a r)⁻¹) •
+              ((A q).comp (A r) + (A r).comp (A q))) := by
+          apply Finset.sum_congr rfl
+          intro q _
+          dsimp [F, K]
+          simpa [A, C] using fourierCARTerm_contraction
+            (a q) (b q) ((a r)⁻¹) (C q) (A q) (A r)
+    _ = ∑ q : Role, (
+          (a q * (a r)⁻¹) •
+              ((if q = r then (1 : ℂ) else 0) • LinearMap.id)) := by
+          apply Finset.sum_congr rfl
+          intro q _
+          have hCA : (C q).comp (A r) + (A r).comp (C q) =
+              (if q = r then (1 : ℂ) else 0) • LinearMap.id := by
+            simpa [A, C, add_comm, eq_comm] using
+              archiveFourierAnnihilateCreateProfileLinear_anticommutator r q
+          have hAA : (A q).comp (A r) + (A r).comp (A q) = 0 := by
+            simpa [A] using archiveFourierAnnihilateProfileLinear_anticommutator q r
+          rw [hCA, hAA]
+          simp
+    _ = LinearMap.id := by
+          simp [a, ha]
 
 private theorem archiveFourierCharacter_zero (N : ℕ)
     (k : Role → ZMod (archiveFibers N)) :

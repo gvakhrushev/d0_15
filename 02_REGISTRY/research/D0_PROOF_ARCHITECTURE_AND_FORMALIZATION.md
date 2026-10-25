@@ -4779,3 +4779,75 @@ The public `D0.All` replay is deferred to the task's Ready integration
 checkpoint under the repository validation budget. The focused inventory and
 the five changed-consumer narrow builds are complete. The inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/archive_car_matrix_linear_operator_refactor_declarations_2026-10-25.json`.
+
+### Exact CAR contraction and eight-dimensional kernel on nonconstant null Fourier fibres (25 October 2026)
+
+The new application module
+`D0.Research.NativeWeightedDiracFourierNullModes` consumes the actual complex
+first-order Fourier-fibre `LinearMap` on `ArchiveFockState → ℂ`, retaining all
+sixteen Fock coefficients. For every period, momentum, real role-weight
+function, and role `r` whose forward multiplier `a_r` is nonzero,
+`roleWeightedArchiveFourierFockActionLinear_contraction` constructs
+`K = a_r⁻¹ A_r` from the existing annihilation map and proves the operator
+identity `D K + K D = I`. The proof uses the shared finite CAR matrix action
+and the actual creation/annihilation anticommutators.
+
+The role condition is now derived from the momentum. The new
+`archiveFourierForwardMultiplier_ne_zero_iff` proves that the forward
+multiplier is nonzero exactly when that role's `ZMod (N+2)` coordinate is
+nonzero, using primitivity of the standard finite-cycle character. Thus every
+nonzero product momentum supplies a contracting role. Composing this result
+with the existing exact square-to-symbol theorem and the capsule's generic
+nilpotent-kernel implications gives, for every supplied nonconstant
+zero-symbol fibre, `ker D = range D` and complex kernel dimension exactly 8.
+The zero-symbol equation and the explicit real role weights remain hypotheses;
+this does not prove the full dispersion/root count or refinement persistence.
+The final specialization
+`archiveLorentzian_nonzero_null_mode_classification` binds the result to the
+repository's existing `roleLorentzSign` and `archiveLorentzianFourierSymbol`;
+it proves kernel equals range and that both spaces have complex dimension 8.
+
+This formalizes the actual Fourier-contraction and kernel/half-dimension
+application in §5 (Eq. 7) of
+`A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md`, pinned at commit
+`db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`, blob
+`2de670c0e2f9a53104be8105a3554cdd9aaa85e7`. The branch-local capsule mirror
+widens its two generic linear-map implications from real vector spaces to
+division-ring modules so the existing theorem can be applied over `ℂ`; its
+real specialization is unchanged. This separate mirror delta is at Git blob
+`60de6702e232d6b68fc3b707a058383c4c09b2ff` (SHA-256
+`fdf62644f086ba78c5d1ef203a4d3b7989488395c68afb0920bfa211f5c1d0f3`); the
+new adapter source SHA-256 is
+`a01c082a329f97cde560b226ae57bc0aa484f1ce4d932703dcd634f1600559c8` and the
+updated geometric application SHA-256 is
+`3d7858a61101347807d9784579f1475739a1a75223dc2f5888d77362c9f699af`. The
+pinned source memo and its original source blobs are not rewritten.
+
+The new declarations are registered in `formal_support.csv` and imported by
+the generated `D0.All`; no claim status, C0 acceptance, gravity obligation,
+or physical source choice changes. The focused compiled inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json`
+(188 declarations across four owning modules, including 10 in the new adapter;
+SHA-256 `81437857a96ca0fc59dd5039b6a95d7f6b066951b8d7bafe08520c58e5fc0181`). It uses
+import root `D0.Research.NativeWeightedDiracFourierNullModes`, Lean source
+digest `55c6b6f00ec2a945e553bf6d15dc00463d7ffb210c6e3a67b1541f3d7829db8a`,
+collector SHA-256
+`cd8acaf6fa202e54f8090f9c5fb9fc210dfe03ba3197f21115581d7b7afad0cb`, and
+pre-commit snapshot `408a74fb3118d50ec2e726eb9e47cb9fdb364f56` with a dirty
+worktree. The contraction theorem's axiom footprint includes the existing
+finite annihilation and mixed-CAR `native_decide` leaves plus
+`Classical.choice`, `propext`, and `Quot.sound`; the null-kernel application
+also inherits the creation-CAR leaf through the square theorem. No `sorryAx`
+is present in these declarations.
+
+The focused Lean builds passed for
+`D0.Geometry.ArchiveLorentzianCARDiracApplication` (3,395 Lake jobs) and
+`D0.Research.NativeWeightedDiracFourierNullModes` (3,410 jobs). The public
+`D0.All` import was updated; generated-view validation passed (`stale=0`),
+`validate_repo.py` passed (`claims=889`, `assumptions=31`, `aliases=58`,
+`formal_support=197`, `lean_closure=929`, zero warnings), the formalization-debt
+audit remained at its five-item baseline, and the CRLF-aware diff check passed.
+The full public-import Lean replay remains deferred to the task's Ready
+checkpoint. The physical CAR/source/action selection, matter compatibility,
+all-size dispersion classification, and GR closure remain open. This is a
+conditional mathematical application, not physical `GR_closed`.

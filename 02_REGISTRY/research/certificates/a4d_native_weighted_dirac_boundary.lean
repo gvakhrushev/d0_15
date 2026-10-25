@@ -431,8 +431,8 @@ theorem finite_annihilator_error_bound
 /-- On a nonzero null Fourier mode, an explicit CAR contraction gives
 DK+KD=id. The independently computed contraction is not an Euler gate. -/
 theorem null_mode_kernel_eq_range
-    {V : Type} [AddCommGroup V] [Module ℝ V]
-    (D K : V →ₗ[ℝ] V) (hD : ∀ v, D (D v) = 0)
+    {F : Type*} [DivisionRing F] {V : Type} [AddCommGroup V] [Module F V]
+    (D K : V →ₗ[F] V) (hD : ∀ v, D (D v) = 0)
     (hK : ∀ v, D (K v) + K (D v) = v) :
     LinearMap.ker D = LinearMap.range D := by
   ext v
@@ -445,10 +445,11 @@ theorem null_mode_kernel_eq_range
     exact (LinearMap.mem_ker).mpr (hD u)
 
 theorem null_mode_kernel_half_dimension
-    {V : Type} [AddCommGroup V] [Module ℝ V] [FiniteDimensional ℝ V]
-    (D K : V →ₗ[ℝ] V) (hD : ∀ v, D (D v) = 0)
+    {F : Type*} [DivisionRing F] {V : Type} [AddCommGroup V]
+    [Module F V] [FiniteDimensional F V]
+    (D K : V →ₗ[F] V) (hD : ∀ v, D (D v) = 0)
     (hK : ∀ v, D (K v) + K (D v) = v) :
-    2*Module.finrank ℝ (LinearMap.ker D) = Module.finrank ℝ V := by
+    2*Module.finrank F (LinearMap.ker D) = Module.finrank F V := by
   have h := LinearMap.finrank_range_add_finrank_ker D
   rw [← null_mode_kernel_eq_range D K hD hK] at h
   omega
