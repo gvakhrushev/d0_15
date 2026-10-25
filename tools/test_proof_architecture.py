@@ -1248,17 +1248,17 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-25_e85c64c6.json"
+            / "proof_architecture_cold_start_summary_2026-10-25_f191c304.json"
         )
         summary_bytes = summary_path.read_bytes()
         summary = json.loads(summary_bytes)
         self.assertLess(len(summary_bytes), 100_000)
         self.assertEqual(
-            summary["schema"], "d0-proof-architecture-cold-start-summary-v1"
+            summary["schema"], "d0-proof-architecture-cold-start-summary-v2"
         )
         self.assertEqual(
             summary["snapshot_commit"],
-            "e85c64c6e8a6f135b928679f213860c9cad5bb2f",
+            "f191c30475281622bcae0901856e66f05aff8ef9",
         )
         self.assertFalse(summary["worktree_dirty"])
         self.assertEqual(summary["search_cases_found_all_sources"], 20)
@@ -1283,13 +1283,23 @@ class ProofArchitectureTests(unittest.TestCase):
             sum(row["required_source_count"] for row in summary["cases"]), 123
         )
         self.assertTrue(summary["semantic_scope_review_is_manual"])
-        raw_pin = summary["verbose_output_git_pin"]
-        self.assertRegex(raw_pin["commit"], r"^[0-9a-f]{40}$")
-        self.assertRegex(raw_pin["blob"], r"^[0-9a-f]{40}$")
+        replay = summary["replay"]
+        self.assertEqual(replay["source_commit"], summary["snapshot_commit"])
         self.assertEqual(
-            raw_pin["path"],
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
-            "proof_architecture_cold_start_summary_2026-10-25_e85c64c6.json",
+            replay["command"], "python3 tools/proof_architecture_cold_start.py"
+        )
+        self.assertRegex(replay["full_output_sha256"], r"^[0-9a-f]{64}$")
+        self.assertEqual(
+            replay["runner_sha256"],
+            hashlib.sha256(
+                (proof.ROOT / "tools/proof_architecture_cold_start.py").read_bytes()
+            ).hexdigest(),
+        )
+        self.assertEqual(
+            replay["search_engine_sha256"],
+            hashlib.sha256(
+                (proof.ROOT / "tools/proof_architecture.py").read_bytes()
+            ).hexdigest(),
         )
 
     def test_julia_cold_start_tracks_nonzero_chart_composition_boundary(self) -> None:

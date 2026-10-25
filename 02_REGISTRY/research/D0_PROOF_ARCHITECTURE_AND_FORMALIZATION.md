@@ -6708,3 +6708,70 @@ GitHub `D0 Lean build` run **3183** and `D0 guards` run **5221** both succeeded
 on `e85c64c6`. These checks and retrieval results verify this engineering
 checkpoint only; they do not freeze C0, accept claim semantics, or close the
 remaining mathematical, physical, and independent-review obligations.
+
+### Generic finite partial trace and its CAR consumer (25 October 2026)
+
+`D0.Algebra.FiniteMatrixPartialTrace` now owns the generic left-factor partial
+trace. Over arbitrary finite carriers, it proves trace preservation for an
+additive commutative monoid and proves that if an operator on `V × N` commutes
+with `1 ⊗ C`, its partial trace over `V` commutes with `C` over any
+commutative semiring. The exact algebraic premise remains visible; the theorem
+does not assume a state, positivity, or a selected physical weight.
+
+`D0.Matter.ArchivePartialTrace` keeps its existing public names and types.
+`partialTraceV` delegates to the shared definition, `trace_partialTrace`
+consumes the generic trace law, and `partial_trace_commutes_with_shift`
+consumes the generic intertwining result. This replaces the local 50-line
+coordinate derivation while preserving the CAR consumer's `ℝ` carrier and
+commutation premise. The substitution is a reusable finite-matrix identity;
+it accepts no claim or C0 disposition and supplies no physical interpretation.
+
+Both narrow Lean targets pass: `D0.Algebra.FiniteMatrixPartialTrace`
+**2,947/2,947** jobs and `D0.Matter.ArchivePartialTrace` **2,980/2,980** jobs.
+Declaration extraction from compiled public import `D0.All` records the six
+shared API/consumer declarations with no `sorryAx`. Its clean source snapshot
+is `f191c30475281622bcae0901856e66f05aff8ef9`, Lean 4.30.0, source digest
+`d972c29cfa1de8b86778da6e6311ef02efd370a6039b9a1cfa73f509b4bccb88`;
+collector SHA-256 is
+`8f19aae5e1e058bd8e3724f6a5033d405600edbc46ae35083fcd7732e6b932c5`, and the
+inventory at
+`sources/d0_proof_architecture_formalization_2026-10-24/finite_matrix_partial_trace_current_declarations_2026-10-25.json`
+has SHA-256
+`2ce47be1dcb83f5c2b475bd90cdd93dd7ee0d9451ca96a69594f03d07be36eb4`.
+The compiled types retain the generic `CommSemiring R` and `1 ⊗ C` premise,
+and the CAR consumer's proof depends on the shared intertwining theorem.
+
+To keep current declaration records aligned with the whole Lean-tree digest,
+the 36-declaration CAR/Hodge, four-declaration Gauge, 15-declaration
+nonvacuum, and 73-declaration SourcePort inventories were refreshed at that
+same clean snapshot and digest. Their file SHA-256 values, in that order, are
+`634d0aa28fab39cca36903750130fa67f60f55e8093041e0aed06fc1f7bcc3ed`,
+`8db6437e44434ea01280f036b4a5a6681d0d4dc9d2ca0014e81851c01688b1ac`,
+`91b6413be1d4fda712d2b4970bfe5e4f6d7619cbea581bbd81acec57d0100edf`, and
+`84d114e4bfe17a7d1bca9059c661d248f33825492a9cb4a2a222c79322e4cc3e`.
+Their earlier blobs remain in branch history.
+
+The full cold-start replay on the same clean source snapshot found every
+required source in **20/20** cases and passed **21/21** benchmark checks,
+including exact-source versus unrelated-prose impact. All **123** required
+source records were found. The compact record is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_f191c304.json`,
+SHA-256
+`42071e0879044653d0b5f26cbf6266aaaf80167aa7634b221751ce97e9dfb417`; it binds
+the updated `formal_support.csv` digest
+`4520818e1940d8844ba94198f3d9107803ec63202b3f4f6dec67146237c66e94`, every
+case result, each required path and its declared exact source pin where present,
+and the SHA-256
+`bb32739c6d1396486272e5c15cb6d94ccdc833e08525416fb53151735435fa39` of the
+full replay output. The pinned runner and search engine hashes remain
+`7da9ed4eec1fc1f0c6a1ec217cd89e9d09bfc05ae176384e364e0d5bdbe73285` and
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`.
+Semantic source classification remains manual.
+
+The proof-architecture suite passes **54/54**, declaration-inventory tests
+**16/16**, and generated-view tests **27/27**. Repository validation passes
+with 889 claims, 31 assumptions, 58 aliases, 201 formal-support rows, closure
+933, and zero warnings. Generated Lean views are current; formalization-debt
+findings remain five against the five-finding baseline; the EOL-aware diff
+check is clean. C0 freeze and independent acceptance, remaining mathematical
+migrations, final Ready integration, and physical GR premises remain open.

@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "f8430243ace312c1abc0c393b465bfa6c72b1c1b",
+  "snapshot_commit": "f191c30475281622bcae0901856e66f05aff8ef9",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "7612be00391142e8332473911e83202aefe309b5b43525d10dee622da429f75c",
+  "lean_source_digest": "d972c29cfa1de8b86778da6e6311ef02efd370a6039b9a1cfa73f509b4bccb88",
   "collector_sha256": "3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -4984,21 +4984,21 @@
         "declaration": {
           "end": {
             "column": 34,
-            "line": 26
+            "line": 24
           },
           "start": {
             "column": 0,
-            "line": 24
+            "line": 22
           }
         },
         "selection": {
           "end": {
             "column": 17,
-            "line": 25
+            "line": 23
           },
           "start": {
             "column": 4,
-            "line": 25
+            "line": 23
           }
         }
       },
@@ -5090,22 +5090,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 14,
-            "line": 79
+            "column": 66,
+            "line": 31
           },
           "start": {
             "column": 0,
-            "line": 28
+            "line": 26
           }
         },
         "selection": {
           "end": {
             "column": 41,
-            "line": 28
+            "line": 26
           },
           "start": {
             "column": 8,
-            "line": 28
+            "line": 26
           }
         }
       },
@@ -5115,88 +5115,21 @@
       "module": "D0.Matter.ArchivePartialTrace",
       "name": "D0.Matter.partial_trace_commutes_with_shift",
       "proof_dependencies": [
-        "AddCommMonoid.toAddMonoid",
-        "AddMonoid.toAddZeroClass",
-        "AddZero.toZero",
-        "AddZeroClass.toAddZero",
+        "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor",
         "D0.Matter.kronecker_I_C",
-        "D0.Matter.partialTraceV",
         "DecidableEq",
-        "Distrib.toMul",
         "Eq",
-        "Eq.mp",
-        "Eq.mpr",
-        "Eq.refl",
-        "Eq.trans",
-        "False.elim",
-        "Finset",
-        "Finset.instSetLike",
-        "Finset.mem_univ",
-        "Finset.mul_sum",
-        "Finset.sum",
-        "Finset.sum_comm",
-        "Finset.sum_congr",
-        "Finset.sum_const_zero",
-        "Finset.sum_eq_single",
-        "Finset.sum_mul",
-        "Finset.univ",
         "Fintype",
-        "Fintype.sum_prod_type",
         "HMul.hMul",
         "Matrix",
-        "Matrix.ext",
-        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
         "Matrix.instMulOfFintypeOfAddCommMonoid",
-        "Matrix.mul_apply",
-        "Matrix.one",
-        "Membership.mem",
-        "MulZeroClass.mul_zero",
-        "MulZeroClass.toZero",
-        "MulZeroClass.zero_mul",
-        "MulZeroOneClass.toMulOneClass",
-        "Ne",
-        "Ne.symm",
-        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
-        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
-        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
-        "NonUnitalNonAssocSemiring.toAddCommMonoid",
-        "NonUnitalNonAssocSemiring.toDistrib",
-        "NonUnitalNormedCommRing.toNonUnitalCommRing",
-        "NormedCommRing.toNonUnitalNormedCommRing",
-        "Not",
-        "OfNat.ofNat",
-        "One.toOfNat1",
         "Prod",
-        "Prod.fst",
-        "Prod.mk",
-        "Prod.snd",
         "Real",
         "Real.instAddCommMonoid",
+        "Real.instCommSemiring",
         "Real.instMul",
-        "Real.instOne",
-        "Real.instZero",
-        "Real.normedCommRing",
-        "Real.semiring",
-        "SetLike.instMembership",
-        "True",
-        "Zero.toOfNat0",
-        "congr",
-        "congrArg",
-        "congrFun'",
-        "congr_fun",
-        "eq_false",
-        "eq_self",
-        "id",
         "instFintypeProd",
-        "instHMul",
-        "instMulZeroClassOfSemiring",
-        "instMulZeroOneClassOfSemiring",
-        "ite",
-        "ite_cond_eq_false",
-        "ite_cond_eq_true",
-        "of_eq_true",
-        "one_mul",
-        "rfl"
+        "instHMul"
       ],
       "type_dependencies": [
         "D0.Matter.kronecker_I_C",
