@@ -1,0 +1,2927 @@
+{
+  "key": "D0-HODGE-001",
+  "matches": [
+    {
+      "item": {
+        "kind": "claim-metadata",
+        "key": "D0-HODGE-001",
+        "label": "BOOK_07 §finite Hodge complex core",
+        "source": "02_REGISTRY/claims.csv",
+        "record": {
+          "claim_id": "D0-HODGE-001",
+          "book": "BOOK_07",
+          "section": "finite Hodge complex core",
+          "lean_module": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "lean_theorem": "boundary_boundary_zero;finite_d_d_zero;scene_carrier_cardinalities;scene_d1_d0_zero;scene_boundary_ranks;scene_cochain_exact;adjoint_identity_01;adjoint_identity_12;codifferential_nilpotency;exact_coexact_orthogonal;scene_first_homology_zero;scene_hodge_identities_owner",
+          "lean_status": "LEAN_PROVED",
+          "uses_bridge_assumptions": "False",
+          "assumption_ids": "",
+          "python_cert": "vp_finite_hodge_complex_core.py",
+          "release_status": "CORE-FORMALIZED",
+          "notes": "The generic finite cochain identity is now supplemented by a literal rational K(9,11,13) specialization derived from actual tripartite incidence maps. The literal owner proves carrier cardinalities, incidence ranks, d₁d₀=0, middle cochain exactness, Euclidean adjointness, exact/co-exact orthogonality and vanishing H₁. It does not yet define B₊, ker B₊, Q_H, weighted metrics, a spatial propagator or TT dynamics."
+        },
+        "search_terms": [
+          "D0-HODGE-001",
+          "BOOK_07",
+          "finite Hodge complex core",
+          "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "boundary_boundary_zero",
+          "finite_d_d_zero",
+          "scene_carrier_cardinalities",
+          "scene_d1_d0_zero",
+          "scene_boundary_ranks",
+          "scene_cochain_exact",
+          "adjoint_identity_01",
+          "adjoint_identity_12",
+          "codifferential_nilpotency",
+          "exact_coexact_orthogonal",
+          "scene_first_homology_zero",
+          "scene_hodge_identities_owner",
+          "The generic finite cochain identity is now supplemented by a literal rational K(9,11,13) specialization derived from actual tripartite incidence maps. The literal owner proves carrier cardinalities, incidence ranks, d₁d₀=0, middle cochain exactness, Euclidean adjointness, exact/co-exact orthogonality and vanishing H₁. It does not yet define B₊, ker B₊, Q_H, weighted metrics, a spatial propagator or TT dynamics."
+        ]
+      },
+      "declared_applications": [],
+      "declared_result": null,
+      "target_obligation": null,
+      "target_interface": null,
+      "registered_assumptions": [],
+      "scoped_attempts": [
+        {
+          "id": "phase-count-shortcut",
+          "result": "phase-count-counterexample",
+          "interface": "resonance-divisor-v1",
+          "work_key": "phase-count-nullity-shortcut",
+          "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+          "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+          "question": {
+            "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+            "assumes": []
+          }
+        },
+        {
+          "id": "dmin-canonicality-source-bound-inference",
+          "result": "dmin-canonicality-source-bound-countermodel",
+          "interface": "complete-history-code-source-v1",
+          "work_key": "dmin-same-object-competitive-source",
+          "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+          "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+          "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+          "question": {
+            "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+            "assumes": [
+              "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+              "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+              "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+            ]
+          },
+          "review": {
+            "state": "proposed"
+          }
+        },
+        {
+          "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+          "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+          "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+          "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+          "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+          "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+          "question": {
+            "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+            "assumes": [
+              "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+              "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+              "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+            ]
+          }
+        },
+        {
+          "id": "double-null-degree5-ward-selected-rref",
+          "result": "double-null-degree5-selected-rref-ward-obstruction",
+          "interface": "double-null-degree5-coframe-gradient-ward-v1",
+          "work_key": "double-null-selected-rref-degree5-ward-extension",
+          "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+          "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+          "question": {
+            "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+            "assumes": [
+              "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+              "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+              "The fifth-order Lorentz exponential includes all terms through degree five."
+            ]
+          }
+        }
+      ],
+      "conceptual_presupposition_edges": [],
+      "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+    }
+  ],
+  "snapshot_commit": "d37152b7a330e4fd616ebe9e171efb793a6dabb1",
+  "source_digests": {
+    "02_REGISTRY/claims.csv": "f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "e926db5c0b36d3e17c45b8e35b8b534530331f5b3339310e4943b3d6f6b0ea6e",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "compiled_claim_reuse": [
+    {
+      "claim_id": "D0-HODGE-001",
+      "claim_locator_mappings": [
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "boundary_boundary_zero",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.boundary_boundary_zero",
+            "D0.Topology.FiniteCochainNoAxion.boundary_boundary_zero",
+            "D0.Geometry.SceneCochainComplex.boundary_boundary_zero",
+            "D0.Geometry.SceneHodgeDecomposition.boundary_boundary_zero",
+            "D0.Topology.boundary_boundary_zero",
+            "D0.Geometry.boundary_boundary_zero",
+            "D0.boundary_boundary_zero"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.implicit",
+                  "is_proposition": false,
+                  "name": "m",
+                  "type": "ℕ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.implicit",
+                  "is_proposition": false,
+                  "name": "n",
+                  "type": "ℕ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.implicit",
+                  "is_proposition": false,
+                  "name": "k",
+                  "type": "ℕ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "I",
+                  "type": "D0.IncidencePair m n k"
+                }
+              ],
+              "conclusion_whnf": "I.d1 * I.d2 = 0",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 14,
+                    "line": 7
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 5
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 30,
+                    "line": 5
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 5
+                  }
+                }
+              },
+              "elaborated_type": "∀ {m n k : ℕ} (I : D0.IncidencePair m n k), I.d1 * I.d2 = 0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Topology.BoundaryBoundary",
+              "name": "D0.boundary_boundary_zero",
+              "proof_dependencies": [
+                "D0.IncidencePair",
+                "D0.IncidencePair.compatible",
+                "Nat"
+              ],
+              "type_dependencies": [
+                "D0.IncidencePair",
+                "D0.IncidencePair.d1",
+                "D0.IncidencePair.d2",
+                "Eq",
+                "Fin",
+                "Fin.fintype",
+                "HMul.hMul",
+                "Int",
+                "Int.instAddCommMonoid",
+                "Int.instMul",
+                "Int.instSemiring",
+                "Matrix",
+                "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+                "Matrix.zero",
+                "MulZeroClass.toZero",
+                "Nat",
+                "OfNat.ofNat",
+                "Zero.toOfNat0",
+                "instMulZeroClassOfSemiring"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Topology/BoundaryBoundary.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "finite_d_d_zero",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.finite_d_d_zero",
+            "D0.Topology.FiniteCochainNoAxion.finite_d_d_zero",
+            "D0.Geometry.SceneCochainComplex.finite_d_d_zero",
+            "D0.Geometry.SceneHodgeDecomposition.finite_d_d_zero",
+            "D0.Topology.finite_d_d_zero",
+            "D0.Geometry.finite_d_d_zero",
+            "D0.finite_d_d_zero"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "C",
+                  "type": "D0.Topology.GradedCellComplex"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "A",
+                  "type": "C.V → ℝ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "f",
+                  "type": "C.3"
+                }
+              ],
+              "conclusion_whnf": "D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 26,
+                    "line": 18
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 15
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 23,
+                    "line": 16
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 16
+                  }
+                }
+              },
+              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Topology.FiniteCochainNoAxion",
+              "name": "D0.Topology.finite_d_d_zero",
+              "proof_dependencies": [
+                "D0.Topology.GradedCellComplex",
+                "D0.Topology.discrete_exact_bianchi"
+              ],
+              "type_dependencies": [
+                "D0.Topology.GradedCellComplex",
+                "D0.Topology.GradedCellComplex.F",
+                "D0.Topology.GradedCellComplex.V",
+                "D0.Topology.d0",
+                "D0.Topology.d1",
+                "Eq",
+                "OfNat.ofNat",
+                "Real",
+                "Real.instZero",
+                "Zero.toOfNat0"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Topology/FiniteCochainNoAxion.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "scene_carrier_cardinalities",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.scene_carrier_cardinalities",
+            "D0.Topology.FiniteCochainNoAxion.scene_carrier_cardinalities",
+            "D0.Geometry.SceneCochainComplex.scene_carrier_cardinalities",
+            "D0.Geometry.SceneHodgeDecomposition.scene_carrier_cardinalities",
+            "D0.Topology.scene_carrier_cardinalities",
+            "D0.Geometry.scene_carrier_cardinalities",
+            "D0.scene_carrier_cardinalities"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "Fintype.card D0.Geometry.SceneCochainComplex.SceneVertex = 33 ∧\n  Fintype.card D0.Geometry.SceneCochainComplex.SceneEdge = 359 ∧\n    Fintype.card D0.Geometry.SceneCochainComplex.SceneTriangle = 1287",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 74,
+                    "line": 62
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 55
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 35,
+                    "line": 57
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 57
+                  }
+                }
+              },
+              "elaborated_type": "Fintype.card D0.Geometry.SceneCochainComplex.SceneVertex = 33 ∧\n  Fintype.card D0.Geometry.SceneCochainComplex.SceneEdge = 359 ∧\n    Fintype.card D0.Geometry.SceneCochainComplex.SceneTriangle = 1287",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneCochainComplex",
+              "name": "D0.Geometry.SceneCochainComplex.scene_carrier_cardinalities",
+              "proof_dependencies": [
+                "And",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                "Eq",
+                "Eq.trans",
+                "Fin",
+                "Fin.fintype",
+                "Fintype.card",
+                "Fintype.card_fin",
+                "Fintype.card_prod",
+                "Fintype.card_sum",
+                "HAdd.hAdd",
+                "HMul.hMul",
+                "Nat",
+                "OfNat.ofNat",
+                "Prod",
+                "Sum",
+                "True",
+                "and_self",
+                "congr",
+                "congrArg",
+                "congrFun'",
+                "eq_self",
+                "instAddNat",
+                "instFintypeProd",
+                "instFintypeSum",
+                "instHAdd",
+                {
+                  "_omitted_items": 4
+                }
+              ],
+              "type_dependencies": [
+                "And",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                "Eq",
+                "Fin",
+                "Fin.fintype",
+                "Fintype.card",
+                "HAdd.hAdd",
+                "Nat",
+                "OfNat.ofNat",
+                "Prod",
+                "Sum",
+                "instAddNat",
+                "instFintypeProd",
+                "instFintypeSum",
+                "instHAdd",
+                "instOfNatNat"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "scene_d1_d0_zero",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.scene_d1_d0_zero",
+            "D0.Topology.FiniteCochainNoAxion.scene_d1_d0_zero",
+            "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+            "D0.Geometry.SceneHodgeDecomposition.scene_d1_d0_zero",
+            "D0.Topology.scene_d1_d0_zero",
+            "D0.Geometry.scene_d1_d0_zero",
+            "D0.scene_d1_d0_zero"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "A",
+                  "type": "D0.Geometry.SceneCochainComplex.SceneVertex → ℚ"
+                }
+              ],
+              "conclusion_whnf": "D0.Geometry.SceneCochainComplex.d1 (D0.Geometry.SceneCochainComplex.d0 A) = 0",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 6,
+                    "line": 77
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 64
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 24,
+                    "line": 65
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 65
+                  }
+                }
+              },
+              "elaborated_type": "∀ (A : D0.Geometry.SceneCochainComplex.SceneC0),\n  D0.Geometry.SceneCochainComplex.d1 (D0.Geometry.SceneCochainComplex.d0 A) = 0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneCochainComplex",
+              "name": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+              "proof_dependencies": [
+                "CommMagma.toMul",
+                "D0.Geometry.SceneCochainComplex.SceneC0",
+                "D0.Geometry.SceneCochainComplex.SceneC2",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneCochainComplex.d1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Topology.GenericTripartiteHomology.GenericEdge",
+                "D0.Topology.GenericTripartiteHomology.GenericTriangle",
+                "D0.Topology.GenericTripartiteHomology.GenericVertex",
+                "D0.Topology.GenericTripartiteHomology.boundary1",
+                "D0.Topology.GenericTripartiteHomology.boundary2",
+                "D0.Topology.GenericTripartiteHomology.boundary_squared_zero",
+                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                "Distrib.toMul",
+                "Eq",
+                "Eq.mpr",
+                "Eq.refl",
+                "Eq.symm",
+                "Eq.trans",
+                "Fin",
+                "Fin.fintype",
+                "HAdd.hAdd",
+                "HMul.hMul",
+                "Matrix",
+                "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+                {
+                  "_omitted_items": 47
+                }
+              ],
+              "type_dependencies": [
+                "D0.Geometry.SceneCochainComplex.SceneC0",
+                "D0.Geometry.SceneCochainComplex.SceneC2",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneCochainComplex.d1",
+                "Eq",
+                "MulZeroClass.toZero",
+                "OfNat.ofNat",
+                "Pi.instZero",
+                "Rat",
+                "Rat.semiring",
+                "Zero.toOfNat0",
+                "instMulZeroClassOfSemiring"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "scene_boundary_ranks",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.scene_boundary_ranks",
+            "D0.Topology.FiniteCochainNoAxion.scene_boundary_ranks",
+            "D0.Geometry.SceneCochainComplex.scene_boundary_ranks",
+            "D0.Geometry.SceneHodgeDecomposition.scene_boundary_ranks",
+            "D0.Topology.scene_boundary_ranks",
+            "D0.Geometry.scene_boundary_ranks",
+            "D0.scene_boundary_ranks"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "D0.Geometry.SceneCochainComplex.sceneBoundary1.rank = 32 ∧ D0.Geometry.SceneCochainComplex.sceneBoundary2.rank = 327",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 64,
+                    "line": 86
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 79
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 28,
+                    "line": 80
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 80
+                  }
+                }
+              },
+              "elaborated_type": "D0.Geometry.SceneCochainComplex.sceneBoundary1.rank = 32 ∧ D0.Geometry.SceneCochainComplex.sceneBoundary2.rank = 327",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneCochainComplex",
+              "name": "D0.Geometry.SceneCochainComplex.scene_boundary_ranks",
+              "proof_dependencies": [
+                "And.intro",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Topology.GenericTripartiteHomology.boundary1_rank",
+                "D0.Topology.GenericTripartiteHomology.boundary2_rank",
+                "Eq",
+                "Fin",
+                "Fin.fintype",
+                "HAdd.hAdd",
+                "Matrix.rank",
+                "Nat",
+                "OfNat.ofNat",
+                "Prod",
+                "Rat",
+                "Rat.commRing",
+                "Sum",
+                "id",
+                "instAddNat",
+                "instFintypeProd",
+                "instFintypeSum",
+                "instHAdd",
+                "instOfNatNat"
+              ],
+              "type_dependencies": [
+                "And",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "Eq",
+                "Fin",
+                "Fin.fintype",
+                "HAdd.hAdd",
+                "Matrix.rank",
+                "Nat",
+                "OfNat.ofNat",
+                "Prod",
+                "Rat",
+                "Rat.commRing",
+                "Sum",
+                "instAddNat",
+                "instFintypeProd",
+                "instFintypeSum",
+                "instHAdd",
+                "instOfNatNat"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "scene_cochain_exact",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.scene_cochain_exact",
+            "D0.Topology.FiniteCochainNoAxion.scene_cochain_exact",
+            "D0.Geometry.SceneCochainComplex.scene_cochain_exact",
+            "D0.Geometry.SceneHodgeDecomposition.scene_cochain_exact",
+            "D0.Topology.scene_cochain_exact",
+            "D0.Geometry.scene_cochain_exact",
+            "D0.scene_cochain_exact"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "D0.Geometry.SceneCochainComplex.sceneBoundary1.transpose.mulVecLin.range =\n  D0.Geometry.SceneCochainComplex.sceneBoundary2.transpose.mulVecLin.ker",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 23,
+                    "line": 134
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 101
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 27,
+                    "line": 103
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 103
+                  }
+                }
+              },
+              "elaborated_type": "D0.Geometry.SceneCochainComplex.sceneBoundary1.transpose.mulVecLin.range =\n  D0.Geometry.SceneCochainComplex.sceneBoundary2.transpose.mulVecLin.ker",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneCochainComplex",
+              "name": "D0.Geometry.SceneCochainComplex.scene_cochain_exact",
+              "proof_dependencies": [
+                "AddCommGroup.toAddCommMonoid",
+                "And",
+                "And.left",
+                "And.right",
+                "CommMagma.toMul",
+                "CommSemiring.toSemiring",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Geometry.SceneCochainComplex.scene_boundary_ranks",
+                "D0.Geometry.SceneCochainComplex.scene_carrier_cardinalities",
+                "D0.Geometry.SceneCochainComplex.scene_cochain_exact._proof_1_1",
+                "D0.Geometry.SceneCochainComplex.scene_cochain_range_ranks",
+                "D0.Topology.GenericTripartiteHomology.GenericEdge",
+                "D0.Topology.GenericTripartiteHomology.GenericTriangle",
+                "D0.Topology.GenericTripartiteHomology.GenericVertex",
+                "D0.Topology.GenericTripartiteHomology.boundary1",
+                "D0.Topology.GenericTripartiteHomology.boundary2",
+                "D0.Topology.GenericTripartiteHomology.boundary_squared_zero",
+                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                "Decidable.byContradiction",
+                "Distrib.toMul",
+                "DivisionRing.toDivisionSemiring",
+                "DivisionSemiring.toSemiring",
+                "Eq",
+                "Eq.mp",
+                "Eq.mpr",
+                {
+                  "_omitted_items": 95
+                }
+              ],
+              "type_dependencies": [
+                "CommSemiring.toSemiring",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                "Eq",
+                "Fin",
+                "Fin.fintype",
+                "HAdd.hAdd",
+                "LinearMap.ker",
+                "LinearMap.range",
+                "Matrix.mulVecLin",
+                "Matrix.transpose",
+                "Nat",
+                "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+                "NonUnitalNonAssocSemiring.toAddCommMonoid",
+                "OfNat.ofNat",
+                "Pi.Function.module",
+                "Pi.addCommMonoid",
+                "Prod",
+                "Rat",
+                "Rat.commSemiring",
+                "RingHom.id",
+                "RingHomSurjective.ids",
+                "Semiring.toModule",
+                "Semiring.toNonAssocSemiring",
+                "Submodule",
+                {
+                  "_omitted_items": 6
+                }
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "adjoint_identity_01",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.adjoint_identity_01",
+            "D0.Topology.FiniteCochainNoAxion.adjoint_identity_01",
+            "D0.Geometry.SceneCochainComplex.adjoint_identity_01",
+            "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_01",
+            "D0.Topology.adjoint_identity_01",
+            "D0.Geometry.adjoint_identity_01",
+            "D0.adjoint_identity_01"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "A",
+                  "type": "D0.Geometry.SceneCochainComplex.SceneVertex → ℚ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "B",
+                  "type": "D0.Geometry.SceneCochainComplex.SceneEdge → ℚ"
+                }
+              ],
+              "conclusion_whnf": "D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A) B =\n  D0.Geometry.SceneHodgeDecomposition.inner0 A (D0.Geometry.SceneHodgeDecomposition.delta0 B)",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 14,
+                    "line": 62
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 34
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 27,
+                    "line": 35
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 35
+                  }
+                }
+              },
+              "elaborated_type": "∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (B : D0.Geometry.SceneHodgeDecomposition.SceneC1),\n  D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A) B =\n    D0.Geometry.SceneHodgeDecomposition.inner0 A (D0.Geometry.SceneHodgeDecomposition.delta0 B)",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneHodgeDecomposition",
+              "name": "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_01",
+              "proof_dependencies": [
+                "AddCommMonoidWithOne.toAddMonoidWithOne",
+                "CommSemiring.toSemiring",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+                "D0.Geometry.SceneHodgeDecomposition.delta0",
+                "D0.Geometry.SceneHodgeDecomposition.inner0",
+                "D0.Geometry.SceneHodgeDecomposition.inner1",
+                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                "Distrib.toAdd",
+                "Distrib.toMul",
+                "Eq",
+                "Eq.mpr",
+                "Eq.refl",
+                "Eq.symm",
+                "Fin",
+                "Fin.fintype",
+                "Finset",
+                "Finset.instSetLike",
+                "Finset.mul_sum",
+                "Finset.sum",
+                "Finset.sum_comm",
+                "Finset.sum_congr",
+                "Finset.sum_mul",
+                "Finset.univ",
+                "HAdd.hAdd",
+                {
+                  "_omitted_items": 59
+                }
+              ],
+              "type_dependencies": [
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+                "D0.Geometry.SceneHodgeDecomposition.delta0",
+                "D0.Geometry.SceneHodgeDecomposition.inner0",
+                "D0.Geometry.SceneHodgeDecomposition.inner1",
+                "Eq",
+                "Rat"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "adjoint_identity_12",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.adjoint_identity_12",
+            "D0.Topology.FiniteCochainNoAxion.adjoint_identity_12",
+            "D0.Geometry.SceneCochainComplex.adjoint_identity_12",
+            "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_12",
+            "D0.Topology.adjoint_identity_12",
+            "D0.Geometry.adjoint_identity_12",
+            "D0.adjoint_identity_12"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "B",
+                  "type": "D0.Geometry.SceneCochainComplex.SceneEdge → ℚ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "F",
+                  "type": "D0.Geometry.SceneCochainComplex.SceneTriangle → ℚ"
+                }
+              ],
+              "conclusion_whnf": "D0.Geometry.SceneHodgeDecomposition.inner2 (D0.Geometry.SceneCochainComplex.d1 B) F =\n  D0.Geometry.SceneHodgeDecomposition.inner1 B (D0.Geometry.SceneHodgeDecomposition.delta1 F)",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 14,
+                    "line": 92
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 64
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 27,
+                    "line": 65
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 65
+                  }
+                }
+              },
+              "elaborated_type": "∀ (B : D0.Geometry.SceneHodgeDecomposition.SceneC1) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n  D0.Geometry.SceneHodgeDecomposition.inner2 (D0.Geometry.SceneCochainComplex.d1 B) F =\n    D0.Geometry.SceneHodgeDecomposition.inner1 B (D0.Geometry.SceneHodgeDecomposition.delta1 F)",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneHodgeDecomposition",
+              "name": "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_12",
+              "proof_dependencies": [
+                "AddCommMonoidWithOne.toAddMonoidWithOne",
+                "CommSemiring.toSemiring",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.d1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+                "D0.Geometry.SceneHodgeDecomposition.delta1",
+                "D0.Geometry.SceneHodgeDecomposition.inner1",
+                "D0.Geometry.SceneHodgeDecomposition.inner2",
+                "Distrib.toAdd",
+                "Distrib.toMul",
+                "Eq",
+                "Eq.mpr",
+                "Eq.refl",
+                "Eq.symm",
+                "Fin",
+                "Fin.fintype",
+                "Finset",
+                "Finset.instSetLike",
+                "Finset.mul_sum",
+                "Finset.sum",
+                "Finset.sum_comm",
+                "Finset.sum_congr",
+                "Finset.sum_mul",
+                "Finset.univ",
+                "HAdd.hAdd",
+                "HMul.hMul",
+                {
+                  "_omitted_items": 58
+                }
+              ],
+              "type_dependencies": [
+                "D0.Geometry.SceneCochainComplex.d1",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+                "D0.Geometry.SceneHodgeDecomposition.delta1",
+                "D0.Geometry.SceneHodgeDecomposition.inner1",
+                "D0.Geometry.SceneHodgeDecomposition.inner2",
+                "Eq",
+                "Rat"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "codifferential_nilpotency",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.codifferential_nilpotency",
+            "D0.Topology.FiniteCochainNoAxion.codifferential_nilpotency",
+            "D0.Geometry.SceneCochainComplex.codifferential_nilpotency",
+            "D0.Geometry.SceneHodgeDecomposition.codifferential_nilpotency",
+            "D0.Topology.codifferential_nilpotency",
+            "D0.Geometry.codifferential_nilpotency",
+            "D0.codifferential_nilpotency"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "F",
+                  "type": "D0.Geometry.SceneCochainComplex.SceneTriangle → ℚ"
+                }
+              ],
+              "conclusion_whnf": "D0.Geometry.SceneHodgeDecomposition.delta0 (D0.Geometry.SceneHodgeDecomposition.delta1 F) = 0",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 22,
+                    "line": 123
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 94
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 33,
+                    "line": 95
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 95
+                  }
+                }
+              },
+              "elaborated_type": "∀ (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n  D0.Geometry.SceneHodgeDecomposition.delta0 (D0.Geometry.SceneHodgeDecomposition.delta1 F) = 0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneHodgeDecomposition",
+              "name": "D0.Geometry.SceneHodgeDecomposition.codifferential_nilpotency",
+              "proof_dependencies": [
+                "AddCommMonoid.toAddMonoid",
+                "AddCommMonoidWithOne.toAddMonoidWithOne",
+                "AddMonoid.toAddZeroClass",
+                "AddZero.toZero",
+                "AddZeroClass.toAddZero",
+                "CommSemiring.toSemiring",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+                "D0.Geometry.SceneHodgeDecomposition.delta0",
+                "D0.Geometry.SceneHodgeDecomposition.delta1",
+                "D0.Topology.GenericTripartiteHomology.GenericEdge",
+                "D0.Topology.GenericTripartiteHomology.GenericTriangle",
+                "D0.Topology.GenericTripartiteHomology.GenericVertex",
+                "D0.Topology.GenericTripartiteHomology.boundary1",
+                "D0.Topology.GenericTripartiteHomology.boundary2",
+                "D0.Topology.GenericTripartiteHomology.boundary_squared_zero",
+                "Distrib.toAdd",
+                "Distrib.toMul",
+                "Eq",
+                "Eq.mpr",
+                "Eq.refl",
+                "Eq.symm",
+                "Fin",
+                "Fin.fintype",
+                {
+                  "_omitted_items": 78
+                }
+              ],
+              "type_dependencies": [
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+                "D0.Geometry.SceneHodgeDecomposition.delta0",
+                "D0.Geometry.SceneHodgeDecomposition.delta1",
+                "Eq",
+                "MulZeroClass.toZero",
+                "OfNat.ofNat",
+                "Pi.instZero",
+                "Rat",
+                "Rat.semiring",
+                "Zero.toOfNat0",
+                "instMulZeroClassOfSemiring"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "exact_coexact_orthogonal",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.exact_coexact_orthogonal",
+            "D0.Topology.FiniteCochainNoAxion.exact_coexact_orthogonal",
+            "D0.Geometry.SceneCochainComplex.exact_coexact_orthogonal",
+            "D0.Geometry.SceneHodgeDecomposition.exact_coexact_orthogonal",
+            "D0.Topology.exact_coexact_orthogonal",
+            "D0.Geometry.exact_coexact_orthogonal",
+            "D0.exact_coexact_orthogonal"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "A",
+                  "type": "D0.Geometry.SceneCochainComplex.SceneVertex → ℚ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "F",
+                  "type": "D0.Geometry.SceneCochainComplex.SceneTriangle → ℚ"
+                }
+              ],
+              "conclusion_whnf": "D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A)\n    (D0.Geometry.SceneHodgeDecomposition.delta1 F) =\n  0",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 6,
+                    "line": 132
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 125
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 32,
+                    "line": 126
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 126
+                  }
+                }
+              },
+              "elaborated_type": "∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n  D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A)\n      (D0.Geometry.SceneHodgeDecomposition.delta1 F) =\n    0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneHodgeDecomposition",
+              "name": "D0.Geometry.SceneHodgeDecomposition.exact_coexact_orthogonal",
+              "proof_dependencies": [
+                "AddCommMonoid.toAddMonoid",
+                "AddMonoid.toAddZeroClass",
+                "AddZero.toZero",
+                "AddZeroClass.toAddZero",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+                "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_01",
+                "D0.Geometry.SceneHodgeDecomposition.codifferential_nilpotency",
+                "D0.Geometry.SceneHodgeDecomposition.delta0",
+                "D0.Geometry.SceneHodgeDecomposition.delta1",
+                "D0.Geometry.SceneHodgeDecomposition.inner0",
+                "D0.Geometry.SceneHodgeDecomposition.inner1",
+                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                "Eq",
+                "Eq.mpr",
+                "Eq.refl",
+                "Eq.trans",
+                "Fin",
+                "Fin.fintype",
+                "Finset",
+                "Finset.instSetLike",
+                "Finset.sum",
+                "Finset.sum_congr",
+                "Finset.sum_const_zero",
+                "Finset.univ",
+                {
+                  "_omitted_items": 38
+                }
+              ],
+              "type_dependencies": [
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+                "D0.Geometry.SceneHodgeDecomposition.delta1",
+                "D0.Geometry.SceneHodgeDecomposition.inner1",
+                "Eq",
+                "OfNat.ofNat",
+                "Rat",
+                "Rat.instOfNat"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "scene_first_homology_zero",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.scene_first_homology_zero",
+            "D0.Topology.FiniteCochainNoAxion.scene_first_homology_zero",
+            "D0.Geometry.SceneCochainComplex.scene_first_homology_zero",
+            "D0.Geometry.SceneHodgeDecomposition.scene_first_homology_zero",
+            "D0.Topology.scene_first_homology_zero",
+            "D0.Geometry.scene_first_homology_zero",
+            "D0.scene_first_homology_zero"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "Module.finrank ℚ D0.Topology.GenericTripartiteHomology.FirstHomology = 0",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 70,
+                    "line": 146
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 140
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 33,
+                    "line": 142
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 142
+                  }
+                }
+              },
+              "elaborated_type": "Module.finrank ℚ D0.Topology.GenericTripartiteHomology.FirstHomology = 0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneHodgeDecomposition",
+              "name": "D0.Geometry.SceneHodgeDecomposition.scene_first_homology_zero",
+              "proof_dependencies": [
+                "CommSemiring.toSemiring",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Topology.GenericTripartiteHomology.FirstHomology",
+                "D0.Topology.GenericTripartiteHomology.GenericEdge",
+                "D0.Topology.GenericTripartiteHomology.GenericVertex",
+                "D0.Topology.GenericTripartiteHomology.boundary1",
+                "D0.Topology.GenericTripartiteHomology.firstHomologyBoundaries",
+                "D0.Topology.GenericTripartiteHomology.first_homology_finrank",
+                "Eq",
+                "Fin",
+                "Fin.fintype",
+                "HAdd.hAdd",
+                "LinearMap.ker",
+                "Matrix.mulVecLin",
+                "Membership.mem",
+                "Module.finrank",
+                "Nat",
+                "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+                "NonUnitalNonAssocSemiring.toAddCommMonoid",
+                "NormedCommRing.toNormedRing",
+                "NormedField.toNormedCommRing",
+                "NormedRing.toRing",
+                "OfNat.ofNat",
+                "Pi.Function.module",
+                "Pi.addCommGroup",
+                "Pi.addCommMonoid",
+                "Prod",
+                "Rat",
+                "Rat.addCommGroup",
+                "Rat.commSemiring",
+                {
+                  "_omitted_items": 20
+                }
+              ],
+              "type_dependencies": [
+                "CommSemiring.toSemiring",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Topology.GenericTripartiteHomology.FirstHomology",
+                "D0.Topology.GenericTripartiteHomology.GenericEdge",
+                "D0.Topology.GenericTripartiteHomology.GenericVertex",
+                "D0.Topology.GenericTripartiteHomology.boundary1",
+                "D0.Topology.GenericTripartiteHomology.firstHomologyBoundaries",
+                "Eq",
+                "Fin",
+                "Fin.fintype",
+                "HAdd.hAdd",
+                "LinearMap.ker",
+                "Matrix.mulVecLin",
+                "Membership.mem",
+                "Module.finrank",
+                "Nat",
+                "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+                "NonUnitalNonAssocSemiring.toAddCommMonoid",
+                "NormedCommRing.toNormedRing",
+                "NormedField.toNormedCommRing",
+                "NormedRing.toRing",
+                "OfNat.ofNat",
+                "Pi.Function.module",
+                "Pi.addCommGroup",
+                "Pi.addCommMonoid",
+                "Prod",
+                "Rat",
+                "Rat.addCommGroup",
+                "Rat.commSemiring",
+                "Rat.instNormedField",
+                {
+                  "_omitted_items": 18
+                }
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-HODGE-001",
+          "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition",
+          "theorem_atom": "scene_hodge_identities_owner",
+          "candidate_names": [
+            "D0.Topology.BoundaryBoundary.scene_hodge_identities_owner",
+            "D0.Topology.FiniteCochainNoAxion.scene_hodge_identities_owner",
+            "D0.Geometry.SceneCochainComplex.scene_hodge_identities_owner",
+            "D0.Geometry.SceneHodgeDecomposition.scene_hodge_identities_owner",
+            "D0.Topology.scene_hodge_identities_owner",
+            "D0.Geometry.scene_hodge_identities_owner",
+            "D0.scene_hodge_identities_owner"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "(∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (B : D0.Geometry.SceneHodgeDecomposition.SceneC1),\n    D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A) B =\n      D0.Geometry.SceneHodgeDecomposition.inner0 A (D0.Geometry.SceneHodgeDecomposition.delta0 B)) ∧\n  (∀ (B : D0.Geometry.SceneHodgeDecomposition.SceneC1) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n      D0.Geometry.SceneHodgeDecomposition.inner2 (D0.Geometry.SceneCochainComplex.d1 B) F =\n        D0.Geometry.SceneHodgeDecomposition.inner1 B (D0.Geometry.SceneHodgeDecomposition.delta1 F)) ∧\n    (∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n        D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A)\n            (D0.Geometry.SceneHodgeDecomposition.delta1 F) =\n          0) ∧\n      D0.Geometry.SceneCochainComplex.sceneBoundary1.transpose.mulVecLin.range =\n          D0.Geometry.SceneCochainComplex.sceneBoundary2.transpose.mulVecLin.ker ∧\n        Module.finrank ℚ D0.Topology.GenericTripartiteHomology.FirstHomology = 0",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 30,
+                    "line": 163
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 148
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 36,
+                    "line": 151
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 151
+                  }
+                }
+              },
+              "elaborated_type": "(∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (B : D0.Geometry.SceneHodgeDecomposition.SceneC1),\n    D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A) B =\n      D0.Geometry.SceneHodgeDecomposition.inner0 A (D0.Geometry.SceneHodgeDecomposition.delta0 B)) ∧\n  (∀ (B : D0.Geometry.SceneHodgeDecomposition.SceneC1) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n      D0.Geometry.SceneHodgeDecomposition.inner2 (D0.Geometry.SceneCochainComplex.d1 B) F =\n        D0.Geometry.SceneHodgeDecomposition.inner1 B (D0.Geometry.SceneHodgeDecomposition.delta1 F)) ∧\n    (∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n        D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A)\n            (D0.Geometry.SceneHodgeDecomposition.delta1 F) =\n          0) ∧\n      D0.Geometry.SceneCochainComplex.sceneBoundary1.transpose.mulVecLin.range =\n          D0.Geometry.SceneCochainComplex.sceneBoundary2.transpose.mulVecLin.ker ∧\n        Module.finrank ℚ D0.Topology.GenericTripartiteHomology.FirstHomology = 0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneHodgeDecomposition",
+              "name": "D0.Geometry.SceneHodgeDecomposition.scene_hodge_identities_owner",
+              "proof_dependencies": [
+                "And",
+                "And.intro",
+                "CommSemiring.toSemiring",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneCochainComplex.d1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+                "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_01",
+                "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_12",
+                "D0.Geometry.SceneHodgeDecomposition.delta0",
+                "D0.Geometry.SceneHodgeDecomposition.delta1",
+                "D0.Geometry.SceneHodgeDecomposition.exact_coexact_orthogonal",
+                "D0.Geometry.SceneHodgeDecomposition.inner0",
+                "D0.Geometry.SceneHodgeDecomposition.inner1",
+                "D0.Geometry.SceneHodgeDecomposition.inner2",
+                "D0.Geometry.SceneHodgeDecomposition.scene_exactness",
+                "D0.Geometry.SceneHodgeDecomposition.scene_first_homology_zero",
+                "D0.Topology.GenericTripartiteHomology.FirstHomology",
+                "D0.Topology.GenericTripartiteHomology.GenericEdge",
+                "D0.Topology.GenericTripartiteHomology.GenericVertex",
+                "D0.Topology.GenericTripartiteHomology.boundary1",
+                "D0.Topology.GenericTripartiteHomology.firstHomologyBoundaries",
+                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                {
+                  "_omitted_items": 45
+                }
+              ],
+              "type_dependencies": [
+                "And",
+                "CommSemiring.toSemiring",
+                "D0.Geometry.SceneCochainComplex.SceneEdge",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.SceneVertex",
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneCochainComplex.d1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneP",
+                "D0.Geometry.SceneCochainComplex.sceneQ",
+                "D0.Geometry.SceneCochainComplex.sceneR",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+                "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+                "D0.Geometry.SceneHodgeDecomposition.delta0",
+                "D0.Geometry.SceneHodgeDecomposition.delta1",
+                "D0.Geometry.SceneHodgeDecomposition.inner0",
+                "D0.Geometry.SceneHodgeDecomposition.inner1",
+                "D0.Geometry.SceneHodgeDecomposition.inner2",
+                "D0.Topology.GenericTripartiteHomology.FirstHomology",
+                "D0.Topology.GenericTripartiteHomology.GenericEdge",
+                "D0.Topology.GenericTripartiteHomology.GenericVertex",
+                "D0.Topology.GenericTripartiteHomology.boundary1",
+                "D0.Topology.GenericTripartiteHomology.firstHomologyBoundaries",
+                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                "Eq",
+                "Fin",
+                "Fin.fintype",
+                "HAdd.hAdd",
+                "LinearMap.ker",
+                "LinearMap.range",
+                {
+                  "_omitted_items": 39
+                }
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+            }
+          ]
+        }
+      ],
+      "compiled_declarations": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.implicit",
+              "is_proposition": false,
+              "name": "m",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.implicit",
+              "is_proposition": false,
+              "name": "n",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.implicit",
+              "is_proposition": false,
+              "name": "k",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "I",
+              "type": "D0.IncidencePair m n k"
+            }
+          ],
+          "conclusion_whnf": "I.d1 * I.d2 = 0",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 14,
+                "line": 7
+              },
+              "start": {
+                "column": 0,
+                "line": 5
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 30,
+                "line": 5
+              },
+              "start": {
+                "column": 8,
+                "line": 5
+              }
+            }
+          },
+          "elaborated_type": "∀ {m n k : ℕ} (I : D0.IncidencePair m n k), I.d1 * I.d2 = 0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Topology.BoundaryBoundary",
+          "name": "D0.boundary_boundary_zero",
+          "proof_dependencies": [
+            "D0.IncidencePair",
+            "D0.IncidencePair.compatible",
+            "Nat"
+          ],
+          "type_dependencies": [
+            "D0.IncidencePair",
+            "D0.IncidencePair.d1",
+            "D0.IncidencePair.d2",
+            "Eq",
+            "Fin",
+            "Fin.fintype",
+            "HMul.hMul",
+            "Int",
+            "Int.instAddCommMonoid",
+            "Int.instMul",
+            "Int.instSemiring",
+            "Matrix",
+            "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+            "Matrix.zero",
+            "MulZeroClass.toZero",
+            "Nat",
+            "OfNat.ofNat",
+            "Zero.toOfNat0",
+            "instMulZeroClassOfSemiring"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Topology/BoundaryBoundary.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "C",
+              "type": "D0.Topology.GradedCellComplex"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "A",
+              "type": "C.V → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "f",
+              "type": "C.3"
+            }
+          ],
+          "conclusion_whnf": "D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 26,
+                "line": 18
+              },
+              "start": {
+                "column": 0,
+                "line": 15
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 23,
+                "line": 16
+              },
+              "start": {
+                "column": 8,
+                "line": 16
+              }
+            }
+          },
+          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Topology.FiniteCochainNoAxion",
+          "name": "D0.Topology.finite_d_d_zero",
+          "proof_dependencies": [
+            "D0.Topology.GradedCellComplex",
+            "D0.Topology.discrete_exact_bianchi"
+          ],
+          "type_dependencies": [
+            "D0.Topology.GradedCellComplex",
+            "D0.Topology.GradedCellComplex.F",
+            "D0.Topology.GradedCellComplex.V",
+            "D0.Topology.d0",
+            "D0.Topology.d1",
+            "Eq",
+            "OfNat.ofNat",
+            "Real",
+            "Real.instZero",
+            "Zero.toOfNat0"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Topology/FiniteCochainNoAxion.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "Fintype.card D0.Geometry.SceneCochainComplex.SceneVertex = 33 ∧\n  Fintype.card D0.Geometry.SceneCochainComplex.SceneEdge = 359 ∧\n    Fintype.card D0.Geometry.SceneCochainComplex.SceneTriangle = 1287",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 74,
+                "line": 62
+              },
+              "start": {
+                "column": 0,
+                "line": 55
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 35,
+                "line": 57
+              },
+              "start": {
+                "column": 8,
+                "line": 57
+              }
+            }
+          },
+          "elaborated_type": "Fintype.card D0.Geometry.SceneCochainComplex.SceneVertex = 33 ∧\n  Fintype.card D0.Geometry.SceneCochainComplex.SceneEdge = 359 ∧\n    Fintype.card D0.Geometry.SceneCochainComplex.SceneTriangle = 1287",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneCochainComplex",
+          "name": "D0.Geometry.SceneCochainComplex.scene_carrier_cardinalities",
+          "proof_dependencies": [
+            "And",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            "Eq",
+            "Eq.trans",
+            "Fin",
+            "Fin.fintype",
+            "Fintype.card",
+            "Fintype.card_fin",
+            "Fintype.card_prod",
+            "Fintype.card_sum",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "Nat",
+            "OfNat.ofNat",
+            "Prod",
+            "Sum",
+            "True",
+            "and_self",
+            "congr",
+            "congrArg",
+            "congrFun'",
+            "eq_self",
+            "instAddNat",
+            "instFintypeProd",
+            "instFintypeSum",
+            "instHAdd",
+            {
+              "_omitted_items": 4
+            }
+          ],
+          "type_dependencies": [
+            "And",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            "Eq",
+            "Fin",
+            "Fin.fintype",
+            "Fintype.card",
+            "HAdd.hAdd",
+            "Nat",
+            "OfNat.ofNat",
+            "Prod",
+            "Sum",
+            "instAddNat",
+            "instFintypeProd",
+            "instFintypeSum",
+            "instHAdd",
+            "instOfNatNat"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "A",
+              "type": "D0.Geometry.SceneCochainComplex.SceneVertex → ℚ"
+            }
+          ],
+          "conclusion_whnf": "D0.Geometry.SceneCochainComplex.d1 (D0.Geometry.SceneCochainComplex.d0 A) = 0",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 6,
+                "line": 77
+              },
+              "start": {
+                "column": 0,
+                "line": 64
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 24,
+                "line": 65
+              },
+              "start": {
+                "column": 8,
+                "line": 65
+              }
+            }
+          },
+          "elaborated_type": "∀ (A : D0.Geometry.SceneCochainComplex.SceneC0),\n  D0.Geometry.SceneCochainComplex.d1 (D0.Geometry.SceneCochainComplex.d0 A) = 0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneCochainComplex",
+          "name": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+          "proof_dependencies": [
+            "CommMagma.toMul",
+            "D0.Geometry.SceneCochainComplex.SceneC0",
+            "D0.Geometry.SceneCochainComplex.SceneC2",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneCochainComplex.d1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Topology.GenericTripartiteHomology.GenericEdge",
+            "D0.Topology.GenericTripartiteHomology.GenericTriangle",
+            "D0.Topology.GenericTripartiteHomology.GenericVertex",
+            "D0.Topology.GenericTripartiteHomology.boundary1",
+            "D0.Topology.GenericTripartiteHomology.boundary2",
+            "D0.Topology.GenericTripartiteHomology.boundary_squared_zero",
+            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            "Distrib.toMul",
+            "Eq",
+            "Eq.mpr",
+            "Eq.refl",
+            "Eq.symm",
+            "Eq.trans",
+            "Fin",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "Matrix",
+            "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+            {
+              "_omitted_items": 47
+            }
+          ],
+          "type_dependencies": [
+            "D0.Geometry.SceneCochainComplex.SceneC0",
+            "D0.Geometry.SceneCochainComplex.SceneC2",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneCochainComplex.d1",
+            "Eq",
+            "MulZeroClass.toZero",
+            "OfNat.ofNat",
+            "Pi.instZero",
+            "Rat",
+            "Rat.semiring",
+            "Zero.toOfNat0",
+            "instMulZeroClassOfSemiring"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "D0.Geometry.SceneCochainComplex.sceneBoundary1.rank = 32 ∧ D0.Geometry.SceneCochainComplex.sceneBoundary2.rank = 327",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 64,
+                "line": 86
+              },
+              "start": {
+                "column": 0,
+                "line": 79
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 28,
+                "line": 80
+              },
+              "start": {
+                "column": 8,
+                "line": 80
+              }
+            }
+          },
+          "elaborated_type": "D0.Geometry.SceneCochainComplex.sceneBoundary1.rank = 32 ∧ D0.Geometry.SceneCochainComplex.sceneBoundary2.rank = 327",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneCochainComplex",
+          "name": "D0.Geometry.SceneCochainComplex.scene_boundary_ranks",
+          "proof_dependencies": [
+            "And.intro",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Topology.GenericTripartiteHomology.boundary1_rank",
+            "D0.Topology.GenericTripartiteHomology.boundary2_rank",
+            "Eq",
+            "Fin",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "Matrix.rank",
+            "Nat",
+            "OfNat.ofNat",
+            "Prod",
+            "Rat",
+            "Rat.commRing",
+            "Sum",
+            "id",
+            "instAddNat",
+            "instFintypeProd",
+            "instFintypeSum",
+            "instHAdd",
+            "instOfNatNat"
+          ],
+          "type_dependencies": [
+            "And",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "Eq",
+            "Fin",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "Matrix.rank",
+            "Nat",
+            "OfNat.ofNat",
+            "Prod",
+            "Rat",
+            "Rat.commRing",
+            "Sum",
+            "instAddNat",
+            "instFintypeProd",
+            "instFintypeSum",
+            "instHAdd",
+            "instOfNatNat"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "D0.Geometry.SceneCochainComplex.sceneBoundary1.transpose.mulVecLin.range =\n  D0.Geometry.SceneCochainComplex.sceneBoundary2.transpose.mulVecLin.ker",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 23,
+                "line": 134
+              },
+              "start": {
+                "column": 0,
+                "line": 101
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 27,
+                "line": 103
+              },
+              "start": {
+                "column": 8,
+                "line": 103
+              }
+            }
+          },
+          "elaborated_type": "D0.Geometry.SceneCochainComplex.sceneBoundary1.transpose.mulVecLin.range =\n  D0.Geometry.SceneCochainComplex.sceneBoundary2.transpose.mulVecLin.ker",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneCochainComplex",
+          "name": "D0.Geometry.SceneCochainComplex.scene_cochain_exact",
+          "proof_dependencies": [
+            "AddCommGroup.toAddCommMonoid",
+            "And",
+            "And.left",
+            "And.right",
+            "CommMagma.toMul",
+            "CommSemiring.toSemiring",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Geometry.SceneCochainComplex.scene_boundary_ranks",
+            "D0.Geometry.SceneCochainComplex.scene_carrier_cardinalities",
+            "D0.Geometry.SceneCochainComplex.scene_cochain_exact._proof_1_1",
+            "D0.Geometry.SceneCochainComplex.scene_cochain_range_ranks",
+            "D0.Topology.GenericTripartiteHomology.GenericEdge",
+            "D0.Topology.GenericTripartiteHomology.GenericTriangle",
+            "D0.Topology.GenericTripartiteHomology.GenericVertex",
+            "D0.Topology.GenericTripartiteHomology.boundary1",
+            "D0.Topology.GenericTripartiteHomology.boundary2",
+            "D0.Topology.GenericTripartiteHomology.boundary_squared_zero",
+            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            "Decidable.byContradiction",
+            "Distrib.toMul",
+            "DivisionRing.toDivisionSemiring",
+            "DivisionSemiring.toSemiring",
+            "Eq",
+            "Eq.mp",
+            "Eq.mpr",
+            {
+              "_omitted_items": 95
+            }
+          ],
+          "type_dependencies": [
+            "CommSemiring.toSemiring",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            "Eq",
+            "Fin",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "LinearMap.ker",
+            "LinearMap.range",
+            "Matrix.mulVecLin",
+            "Matrix.transpose",
+            "Nat",
+            "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+            "NonUnitalNonAssocSemiring.toAddCommMonoid",
+            "OfNat.ofNat",
+            "Pi.Function.module",
+            "Pi.addCommMonoid",
+            "Prod",
+            "Rat",
+            "Rat.commSemiring",
+            "RingHom.id",
+            "RingHomSurjective.ids",
+            "Semiring.toModule",
+            "Semiring.toNonAssocSemiring",
+            "Submodule",
+            {
+              "_omitted_items": 6
+            }
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "A",
+              "type": "D0.Geometry.SceneCochainComplex.SceneVertex → ℚ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "B",
+              "type": "D0.Geometry.SceneCochainComplex.SceneEdge → ℚ"
+            }
+          ],
+          "conclusion_whnf": "D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A) B =\n  D0.Geometry.SceneHodgeDecomposition.inner0 A (D0.Geometry.SceneHodgeDecomposition.delta0 B)",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 14,
+                "line": 62
+              },
+              "start": {
+                "column": 0,
+                "line": 34
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 27,
+                "line": 35
+              },
+              "start": {
+                "column": 8,
+                "line": 35
+              }
+            }
+          },
+          "elaborated_type": "∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (B : D0.Geometry.SceneHodgeDecomposition.SceneC1),\n  D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A) B =\n    D0.Geometry.SceneHodgeDecomposition.inner0 A (D0.Geometry.SceneHodgeDecomposition.delta0 B)",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneHodgeDecomposition",
+          "name": "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_01",
+          "proof_dependencies": [
+            "AddCommMonoidWithOne.toAddMonoidWithOne",
+            "CommSemiring.toSemiring",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+            "D0.Geometry.SceneHodgeDecomposition.delta0",
+            "D0.Geometry.SceneHodgeDecomposition.inner0",
+            "D0.Geometry.SceneHodgeDecomposition.inner1",
+            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            "Distrib.toAdd",
+            "Distrib.toMul",
+            "Eq",
+            "Eq.mpr",
+            "Eq.refl",
+            "Eq.symm",
+            "Fin",
+            "Fin.fintype",
+            "Finset",
+            "Finset.instSetLike",
+            "Finset.mul_sum",
+            "Finset.sum",
+            "Finset.sum_comm",
+            "Finset.sum_congr",
+            "Finset.sum_mul",
+            "Finset.univ",
+            "HAdd.hAdd",
+            {
+              "_omitted_items": 59
+            }
+          ],
+          "type_dependencies": [
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+            "D0.Geometry.SceneHodgeDecomposition.delta0",
+            "D0.Geometry.SceneHodgeDecomposition.inner0",
+            "D0.Geometry.SceneHodgeDecomposition.inner1",
+            "Eq",
+            "Rat"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "B",
+              "type": "D0.Geometry.SceneCochainComplex.SceneEdge → ℚ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "F",
+              "type": "D0.Geometry.SceneCochainComplex.SceneTriangle → ℚ"
+            }
+          ],
+          "conclusion_whnf": "D0.Geometry.SceneHodgeDecomposition.inner2 (D0.Geometry.SceneCochainComplex.d1 B) F =\n  D0.Geometry.SceneHodgeDecomposition.inner1 B (D0.Geometry.SceneHodgeDecomposition.delta1 F)",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 14,
+                "line": 92
+              },
+              "start": {
+                "column": 0,
+                "line": 64
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 27,
+                "line": 65
+              },
+              "start": {
+                "column": 8,
+                "line": 65
+              }
+            }
+          },
+          "elaborated_type": "∀ (B : D0.Geometry.SceneHodgeDecomposition.SceneC1) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n  D0.Geometry.SceneHodgeDecomposition.inner2 (D0.Geometry.SceneCochainComplex.d1 B) F =\n    D0.Geometry.SceneHodgeDecomposition.inner1 B (D0.Geometry.SceneHodgeDecomposition.delta1 F)",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneHodgeDecomposition",
+          "name": "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_12",
+          "proof_dependencies": [
+            "AddCommMonoidWithOne.toAddMonoidWithOne",
+            "CommSemiring.toSemiring",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.d1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+            "D0.Geometry.SceneHodgeDecomposition.delta1",
+            "D0.Geometry.SceneHodgeDecomposition.inner1",
+            "D0.Geometry.SceneHodgeDecomposition.inner2",
+            "Distrib.toAdd",
+            "Distrib.toMul",
+            "Eq",
+            "Eq.mpr",
+            "Eq.refl",
+            "Eq.symm",
+            "Fin",
+            "Fin.fintype",
+            "Finset",
+            "Finset.instSetLike",
+            "Finset.mul_sum",
+            "Finset.sum",
+            "Finset.sum_comm",
+            "Finset.sum_congr",
+            "Finset.sum_mul",
+            "Finset.univ",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            {
+              "_omitted_items": 58
+            }
+          ],
+          "type_dependencies": [
+            "D0.Geometry.SceneCochainComplex.d1",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+            "D0.Geometry.SceneHodgeDecomposition.delta1",
+            "D0.Geometry.SceneHodgeDecomposition.inner1",
+            "D0.Geometry.SceneHodgeDecomposition.inner2",
+            "Eq",
+            "Rat"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "F",
+              "type": "D0.Geometry.SceneCochainComplex.SceneTriangle → ℚ"
+            }
+          ],
+          "conclusion_whnf": "D0.Geometry.SceneHodgeDecomposition.delta0 (D0.Geometry.SceneHodgeDecomposition.delta1 F) = 0",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 22,
+                "line": 123
+              },
+              "start": {
+                "column": 0,
+                "line": 94
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 33,
+                "line": 95
+              },
+              "start": {
+                "column": 8,
+                "line": 95
+              }
+            }
+          },
+          "elaborated_type": "∀ (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n  D0.Geometry.SceneHodgeDecomposition.delta0 (D0.Geometry.SceneHodgeDecomposition.delta1 F) = 0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneHodgeDecomposition",
+          "name": "D0.Geometry.SceneHodgeDecomposition.codifferential_nilpotency",
+          "proof_dependencies": [
+            "AddCommMonoid.toAddMonoid",
+            "AddCommMonoidWithOne.toAddMonoidWithOne",
+            "AddMonoid.toAddZeroClass",
+            "AddZero.toZero",
+            "AddZeroClass.toAddZero",
+            "CommSemiring.toSemiring",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+            "D0.Geometry.SceneHodgeDecomposition.delta0",
+            "D0.Geometry.SceneHodgeDecomposition.delta1",
+            "D0.Topology.GenericTripartiteHomology.GenericEdge",
+            "D0.Topology.GenericTripartiteHomology.GenericTriangle",
+            "D0.Topology.GenericTripartiteHomology.GenericVertex",
+            "D0.Topology.GenericTripartiteHomology.boundary1",
+            "D0.Topology.GenericTripartiteHomology.boundary2",
+            "D0.Topology.GenericTripartiteHomology.boundary_squared_zero",
+            "Distrib.toAdd",
+            "Distrib.toMul",
+            "Eq",
+            "Eq.mpr",
+            "Eq.refl",
+            "Eq.symm",
+            "Fin",
+            "Fin.fintype",
+            {
+              "_omitted_items": 78
+            }
+          ],
+          "type_dependencies": [
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+            "D0.Geometry.SceneHodgeDecomposition.delta0",
+            "D0.Geometry.SceneHodgeDecomposition.delta1",
+            "Eq",
+            "MulZeroClass.toZero",
+            "OfNat.ofNat",
+            "Pi.instZero",
+            "Rat",
+            "Rat.semiring",
+            "Zero.toOfNat0",
+            "instMulZeroClassOfSemiring"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "A",
+              "type": "D0.Geometry.SceneCochainComplex.SceneVertex → ℚ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "F",
+              "type": "D0.Geometry.SceneCochainComplex.SceneTriangle → ℚ"
+            }
+          ],
+          "conclusion_whnf": "D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A)\n    (D0.Geometry.SceneHodgeDecomposition.delta1 F) =\n  0",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 6,
+                "line": 132
+              },
+              "start": {
+                "column": 0,
+                "line": 125
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 32,
+                "line": 126
+              },
+              "start": {
+                "column": 8,
+                "line": 126
+              }
+            }
+          },
+          "elaborated_type": "∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n  D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A)\n      (D0.Geometry.SceneHodgeDecomposition.delta1 F) =\n    0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneHodgeDecomposition",
+          "name": "D0.Geometry.SceneHodgeDecomposition.exact_coexact_orthogonal",
+          "proof_dependencies": [
+            "AddCommMonoid.toAddMonoid",
+            "AddMonoid.toAddZeroClass",
+            "AddZero.toZero",
+            "AddZeroClass.toAddZero",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+            "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_01",
+            "D0.Geometry.SceneHodgeDecomposition.codifferential_nilpotency",
+            "D0.Geometry.SceneHodgeDecomposition.delta0",
+            "D0.Geometry.SceneHodgeDecomposition.delta1",
+            "D0.Geometry.SceneHodgeDecomposition.inner0",
+            "D0.Geometry.SceneHodgeDecomposition.inner1",
+            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            "Eq",
+            "Eq.mpr",
+            "Eq.refl",
+            "Eq.trans",
+            "Fin",
+            "Fin.fintype",
+            "Finset",
+            "Finset.instSetLike",
+            "Finset.sum",
+            "Finset.sum_congr",
+            "Finset.sum_const_zero",
+            "Finset.univ",
+            {
+              "_omitted_items": 38
+            }
+          ],
+          "type_dependencies": [
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+            "D0.Geometry.SceneHodgeDecomposition.delta1",
+            "D0.Geometry.SceneHodgeDecomposition.inner1",
+            "Eq",
+            "OfNat.ofNat",
+            "Rat",
+            "Rat.instOfNat"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "Module.finrank ℚ D0.Topology.GenericTripartiteHomology.FirstHomology = 0",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 70,
+                "line": 146
+              },
+              "start": {
+                "column": 0,
+                "line": 140
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 33,
+                "line": 142
+              },
+              "start": {
+                "column": 8,
+                "line": 142
+              }
+            }
+          },
+          "elaborated_type": "Module.finrank ℚ D0.Topology.GenericTripartiteHomology.FirstHomology = 0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneHodgeDecomposition",
+          "name": "D0.Geometry.SceneHodgeDecomposition.scene_first_homology_zero",
+          "proof_dependencies": [
+            "CommSemiring.toSemiring",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Topology.GenericTripartiteHomology.FirstHomology",
+            "D0.Topology.GenericTripartiteHomology.GenericEdge",
+            "D0.Topology.GenericTripartiteHomology.GenericVertex",
+            "D0.Topology.GenericTripartiteHomology.boundary1",
+            "D0.Topology.GenericTripartiteHomology.firstHomologyBoundaries",
+            "D0.Topology.GenericTripartiteHomology.first_homology_finrank",
+            "Eq",
+            "Fin",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "LinearMap.ker",
+            "Matrix.mulVecLin",
+            "Membership.mem",
+            "Module.finrank",
+            "Nat",
+            "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+            "NonUnitalNonAssocSemiring.toAddCommMonoid",
+            "NormedCommRing.toNormedRing",
+            "NormedField.toNormedCommRing",
+            "NormedRing.toRing",
+            "OfNat.ofNat",
+            "Pi.Function.module",
+            "Pi.addCommGroup",
+            "Pi.addCommMonoid",
+            "Prod",
+            "Rat",
+            "Rat.addCommGroup",
+            "Rat.commSemiring",
+            {
+              "_omitted_items": 20
+            }
+          ],
+          "type_dependencies": [
+            "CommSemiring.toSemiring",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Topology.GenericTripartiteHomology.FirstHomology",
+            "D0.Topology.GenericTripartiteHomology.GenericEdge",
+            "D0.Topology.GenericTripartiteHomology.GenericVertex",
+            "D0.Topology.GenericTripartiteHomology.boundary1",
+            "D0.Topology.GenericTripartiteHomology.firstHomologyBoundaries",
+            "Eq",
+            "Fin",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "LinearMap.ker",
+            "Matrix.mulVecLin",
+            "Membership.mem",
+            "Module.finrank",
+            "Nat",
+            "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+            "NonUnitalNonAssocSemiring.toAddCommMonoid",
+            "NormedCommRing.toNormedRing",
+            "NormedField.toNormedCommRing",
+            "NormedRing.toRing",
+            "OfNat.ofNat",
+            "Pi.Function.module",
+            "Pi.addCommGroup",
+            "Pi.addCommMonoid",
+            "Prod",
+            "Rat",
+            "Rat.addCommGroup",
+            "Rat.commSemiring",
+            "Rat.instNormedField",
+            {
+              "_omitted_items": 18
+            }
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "(∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (B : D0.Geometry.SceneHodgeDecomposition.SceneC1),\n    D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A) B =\n      D0.Geometry.SceneHodgeDecomposition.inner0 A (D0.Geometry.SceneHodgeDecomposition.delta0 B)) ∧\n  (∀ (B : D0.Geometry.SceneHodgeDecomposition.SceneC1) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n      D0.Geometry.SceneHodgeDecomposition.inner2 (D0.Geometry.SceneCochainComplex.d1 B) F =\n        D0.Geometry.SceneHodgeDecomposition.inner1 B (D0.Geometry.SceneHodgeDecomposition.delta1 F)) ∧\n    (∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n        D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A)\n            (D0.Geometry.SceneHodgeDecomposition.delta1 F) =\n          0) ∧\n      D0.Geometry.SceneCochainComplex.sceneBoundary1.transpose.mulVecLin.range =\n          D0.Geometry.SceneCochainComplex.sceneBoundary2.transpose.mulVecLin.ker ∧\n        Module.finrank ℚ D0.Topology.GenericTripartiteHomology.FirstHomology = 0",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 30,
+                "line": 163
+              },
+              "start": {
+                "column": 0,
+                "line": 148
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 36,
+                "line": 151
+              },
+              "start": {
+                "column": 8,
+                "line": 151
+              }
+            }
+          },
+          "elaborated_type": "(∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (B : D0.Geometry.SceneHodgeDecomposition.SceneC1),\n    D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A) B =\n      D0.Geometry.SceneHodgeDecomposition.inner0 A (D0.Geometry.SceneHodgeDecomposition.delta0 B)) ∧\n  (∀ (B : D0.Geometry.SceneHodgeDecomposition.SceneC1) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n      D0.Geometry.SceneHodgeDecomposition.inner2 (D0.Geometry.SceneCochainComplex.d1 B) F =\n        D0.Geometry.SceneHodgeDecomposition.inner1 B (D0.Geometry.SceneHodgeDecomposition.delta1 F)) ∧\n    (∀ (A : D0.Geometry.SceneHodgeDecomposition.SceneC0) (F : D0.Geometry.SceneHodgeDecomposition.SceneC2),\n        D0.Geometry.SceneHodgeDecomposition.inner1 (D0.Geometry.SceneCochainComplex.d0 A)\n            (D0.Geometry.SceneHodgeDecomposition.delta1 F) =\n          0) ∧\n      D0.Geometry.SceneCochainComplex.sceneBoundary1.transpose.mulVecLin.range =\n          D0.Geometry.SceneCochainComplex.sceneBoundary2.transpose.mulVecLin.ker ∧\n        Module.finrank ℚ D0.Topology.GenericTripartiteHomology.FirstHomology = 0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneHodgeDecomposition",
+          "name": "D0.Geometry.SceneHodgeDecomposition.scene_hodge_identities_owner",
+          "proof_dependencies": [
+            "And",
+            "And.intro",
+            "CommSemiring.toSemiring",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneCochainComplex.d1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+            "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_01",
+            "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_12",
+            "D0.Geometry.SceneHodgeDecomposition.delta0",
+            "D0.Geometry.SceneHodgeDecomposition.delta1",
+            "D0.Geometry.SceneHodgeDecomposition.exact_coexact_orthogonal",
+            "D0.Geometry.SceneHodgeDecomposition.inner0",
+            "D0.Geometry.SceneHodgeDecomposition.inner1",
+            "D0.Geometry.SceneHodgeDecomposition.inner2",
+            "D0.Geometry.SceneHodgeDecomposition.scene_exactness",
+            "D0.Geometry.SceneHodgeDecomposition.scene_first_homology_zero",
+            "D0.Topology.GenericTripartiteHomology.FirstHomology",
+            "D0.Topology.GenericTripartiteHomology.GenericEdge",
+            "D0.Topology.GenericTripartiteHomology.GenericVertex",
+            "D0.Topology.GenericTripartiteHomology.boundary1",
+            "D0.Topology.GenericTripartiteHomology.firstHomologyBoundaries",
+            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            {
+              "_omitted_items": 45
+            }
+          ],
+          "type_dependencies": [
+            "And",
+            "CommSemiring.toSemiring",
+            "D0.Geometry.SceneCochainComplex.SceneEdge",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.SceneVertex",
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneCochainComplex.d1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneP",
+            "D0.Geometry.SceneCochainComplex.sceneQ",
+            "D0.Geometry.SceneCochainComplex.sceneR",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC0",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC1",
+            "D0.Geometry.SceneHodgeDecomposition.SceneC2",
+            "D0.Geometry.SceneHodgeDecomposition.delta0",
+            "D0.Geometry.SceneHodgeDecomposition.delta1",
+            "D0.Geometry.SceneHodgeDecomposition.inner0",
+            "D0.Geometry.SceneHodgeDecomposition.inner1",
+            "D0.Geometry.SceneHodgeDecomposition.inner2",
+            "D0.Topology.GenericTripartiteHomology.FirstHomology",
+            "D0.Topology.GenericTripartiteHomology.GenericEdge",
+            "D0.Topology.GenericTripartiteHomology.GenericVertex",
+            "D0.Topology.GenericTripartiteHomology.boundary1",
+            "D0.Topology.GenericTripartiteHomology.firstHomologyBoundaries",
+            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            "Eq",
+            "Fin",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "LinearMap.ker",
+            "LinearMap.range",
+            {
+              "_omitted_items": 39
+            }
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean"
+        }
+      ],
+      "compiled_dependency_claim_links": [
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Topology.finite_d_d_zero",
+          "dependency_declaration": "D0.Topology.discrete_exact_bianchi",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+              "theorem_atom": "Topology.discrete_exact_bianchi",
+              "module_locator": "D0.Gauge.GradedBianchiIdentity"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Geometry.SceneCochainComplex.scene_cochain_exact",
+          "dependency_declaration": "D0.Geometry.SceneCochainComplex.scene_boundary_ranks",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-HODGE-001",
+              "theorem_atom": "scene_boundary_ranks",
+              "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Geometry.SceneCochainComplex.scene_cochain_exact",
+          "dependency_declaration": "D0.Geometry.SceneCochainComplex.scene_carrier_cardinalities",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-HODGE-001",
+              "theorem_atom": "scene_carrier_cardinalities",
+              "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Geometry.SceneHodgeDecomposition.exact_coexact_orthogonal",
+          "dependency_declaration": "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_01",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-HODGE-001",
+              "theorem_atom": "adjoint_identity_01",
+              "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Geometry.SceneHodgeDecomposition.exact_coexact_orthogonal",
+          "dependency_declaration": "D0.Geometry.SceneHodgeDecomposition.codifferential_nilpotency",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-HODGE-001",
+              "theorem_atom": "codifferential_nilpotency",
+              "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Geometry.SceneHodgeDecomposition.scene_hodge_identities_owner",
+          "dependency_declaration": "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_01",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-HODGE-001",
+              "theorem_atom": "adjoint_identity_01",
+              "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Geometry.SceneHodgeDecomposition.scene_hodge_identities_owner",
+          "dependency_declaration": "D0.Geometry.SceneHodgeDecomposition.adjoint_identity_12",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-HODGE-001",
+              "theorem_atom": "adjoint_identity_12",
+              "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Geometry.SceneHodgeDecomposition.scene_hodge_identities_owner",
+          "dependency_declaration": "D0.Geometry.SceneHodgeDecomposition.exact_coexact_orthogonal",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-HODGE-001",
+              "theorem_atom": "exact_coexact_orthogonal",
+              "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Geometry.SceneHodgeDecomposition.scene_hodge_identities_owner",
+          "dependency_declaration": "D0.Geometry.SceneHodgeDecomposition.scene_first_homology_zero",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-HODGE-001",
+              "theorem_atom": "scene_first_homology_zero",
+              "module_locator": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion;D0.Geometry.SceneCochainComplex;D0.Geometry.SceneHodgeDecomposition"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        }
+      ],
+      "declared_metadata_relations": {
+        "declared_applications": [],
+        "declared_result": null,
+        "target_obligation": null,
+        "target_interface": null,
+        "registered_assumptions": [],
+        "scoped_attempts": [
+          {
+            "id": "phase-count-shortcut",
+            "result": "phase-count-counterexample",
+            "interface": "resonance-divisor-v1",
+            "work_key": "phase-count-nullity-shortcut",
+            "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+            "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+            "question": {
+              "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+              "assumes": []
+            }
+          },
+          {
+            "id": "dmin-canonicality-source-bound-inference",
+            "result": "dmin-canonicality-source-bound-countermodel",
+            "interface": "complete-history-code-source-v1",
+            "work_key": "dmin-same-object-competitive-source",
+            "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+            "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+            "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+            "question": {
+              "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+              "assumes": [
+                "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+                "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+                "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+              ]
+            },
+            "review": {
+              "state": "proposed"
+            }
+          },
+          {
+            "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+            "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+            "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+            "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+            "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+            "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+            "question": {
+              "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+              "assumes": [
+                "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+                "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+                "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+              ]
+            }
+          },
+          {
+            "id": "double-null-degree5-ward-selected-rref",
+            "result": "double-null-degree5-selected-rref-ward-obstruction",
+            "interface": "double-null-degree5-coframe-gradient-ward-v1",
+            "work_key": "double-null-selected-rref-degree5-ward-extension",
+            "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+            "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+            "question": {
+              "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+              "assumes": [
+                "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+                "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+                "The fifth-order Lorentz exponential includes all terms through degree five."
+              ]
+            }
+          }
+        ],
+        "conceptual_presupposition_edges": [],
+        "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+      },
+      "collector_sha256": "101d89cc1a197f2951f67eb2a43480a4ae0f20fecc0a6d8a1a380255780cae2e",
+      "lean_source_digest": "6c459c7340129d85977a72a6ebbdadbe0fd796318859948a7789ab42c1b7f590",
+      "public_import_root": "D0.All",
+      "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
+    }
+  ],
+  "compiled_claim_alias_reuse": [],
+  "worktree_dirty": false
+}
