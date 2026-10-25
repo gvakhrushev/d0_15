@@ -115,7 +115,8 @@
         {
           "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
           "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
-          "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+          "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+          "section_ref": "L1: D0 → ОТО: ПРОРЫВНАЯ exact 40→3→1 Palatini reduction for ARBITRARY time-dependent Brinkmann geometry, plus real CAR matter"
         },
         {
           "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
@@ -181,7 +182,8 @@
         {
           "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
           "path": "02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md",
-          "sha256": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7"
+          "sha256": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7",
+          "section_ref": "L171: 5. NEW full-instrument lift: six-direction reconstruction WITHOUT success postselection or a fitted reference phase"
         },
         {
           "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
@@ -304,7 +306,8 @@
           "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
           "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/theorem.md",
-          "sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8"
+          "sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8",
+          "section_ref": "L1: D0 → ОТО: БЕЗ НОВОГО DECODER — оригинальные золотые 4D boxes + inverse-PF + moving volume дают ОДНУ exact-root/GENERAL-EINSTEIN программу"
         },
         {
           "ref": "2f930abe5dca9b8753609384cdab22f93155405a",

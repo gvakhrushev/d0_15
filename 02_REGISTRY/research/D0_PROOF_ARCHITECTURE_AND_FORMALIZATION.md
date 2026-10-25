@@ -812,8 +812,10 @@ the expected and observed blob hashes remain visible in the generated JSON.
 The eight unavailable objects are listed individually there. No expected hash
 was rewritten.
 
-Nine evidence records now have explicit `section_ref` values for nine result
-rows: `phase-count-counterexample` and the eight existing double-null results
+Twelve evidence records now have explicit `section_ref` values for twelve result
+rows: `phase-count-counterexample`, `brinkmann-j2-null-family`,
+`original-golden-inverse-pf-moving-mean-j2`,
+`two-line-full-julia-car-observability`, and the eight existing double-null results
 `double-null-cubic-uniform-control`,
 `double-null-cubic-polynomial-chart-obstruction`,
 `double-null-continuum-fourth-order-ricci-jet`,
@@ -821,11 +823,32 @@ rows: `phase-count-counterexample` and the eight existing double-null results
 `double-null-finite-quartic-selected-cubic-branch-obstruction`,
 `double-null-finite-mixed-quartic-euler-jet`,
 `double-null-finite-asymmetric-quartic-euler-jet`, and
-`double-null-degree5-selected-rref-ward-obstruction`. Each locator names the
-line-1 heading in its pinned source. An independent read-only reviewer
-verified the phase-count pin and all eight double-null pins, hashes, and
-heading coordinates. The locators identify source sections only; they do not
-establish semantic result-to-source acceptance or close C0.
+`double-null-degree5-selected-rref-ward-obstruction`. Each locator names an exact heading coordinate in its pinned source. An independent read-only reviewer
+verified all twelve pins, hashes, and heading coordinates, and checked that
+each section supports its result statement at the recorded scope. The locators identify source sections only; they do not establish C0 membership,
+semantic acceptance, or closure of a parent application. The
+independent read-only review also checked each section against its exact
+assembly-result statement and recorded the following scope boundaries:
+
+| Result | Supported statement and retained boundary |
+|---|---|
+| `phase-count-counterexample` | The witness `(-1,-1,i,i)` has rank 22 and nullity 2 where the proposed phase-count rule predicts 4. This refutes that rule; it does not classify the full divisor or its rank strata. |
+| `brinkmann-j2-null-family` | On the declared six-plaquette Lorentz-star family, all 16+24 geometric rows reduce to three, with the link equations fixing the one-u-step connection and the remaining equation a transverse Poisson equation. The composed corrected two-tick Golden AF×scene J2 gives the stated finite roots and smooth Einstein-scalar family. This is a mathematical AF-star instrument result; compulsory foundational D0 selection and the original fixed-g/tau raw terminal remain open. |
+| `original-golden-inverse-pf-moving-mean-j2` | On original golden-box addresses with true nonuniform weights, the specified inverse-PF and moving-volume operand of the same two-tick AF×scene J2 transfers Brinkmann roots with exact finite first-source equality and yields the conditional off-null mean source. The original weights, source-compatible factor, moving-volume map, and J2 are hypotheses; physical programme selection, full H+J+R/clock/preparation Euler, and raw #216 remain open. |
+| `two-line-full-julia-car-observability` | For two specified grade-one CAR16 probes, the complete positive Julia GOOD/BAD instrument gives a nonsingular six-by-six Jacobian from the original proper-Lorentz directions to unconditioned CAR responses, with determinant `1/373248`. The result is local and does not select probes, measurements, or their cost, or identify the response with the full Book action or Palatini link Euler. |
+| `double-null-cubic-uniform-control` | For the fixed coframe, a site-independent cubic correction fails at the origin and adjacent node for `[a²b]` and `[ab²]`. Spatially varying corrections, lower-order coframe modes, and a full root remain open. |
+| `double-null-cubic-polynomial-chart-obstruction` | A degree-at-most-two spatial polynomial correction chart is inconsistent at `[a²b]`. Arbitrary lattice corrections, higher-degree corrections, other branches, and physical selection remain open. |
+| `double-null-continuum-fourth-order-ricci-jet` | The continuum jet supports the `k=3/1024` cancellation and harmonic area radius through degree four for the stated arbitrary orthogonal slopes. It establishes no finite Euler solution, all-order root, or native D0 selection. |
+| `double-null-finite-cubic-euler-jet` | On `H=a*x, J=b*y, h=1`, site-dependent degree-at-most-three corrections solve the specified Euler coefficients through total amplitude degree three. Higher orders, arbitrary slopes, refinement, sources, and full Cost-Info selection are not proved. |
+| `double-null-finite-quartic-selected-cubic-branch-obstruction` | For the selected cubic representative with free parameters set to zero, no degree-at-most-five spatial-polynomial quartic correction solves `[a²b²]`. Other cubic representatives and correction classes remain open. |
+| `double-null-finite-mixed-quartic-euler-jet` | In the checked truncated ring, the selected joint cubic/free-mode solution includes the `[a²b²]` correction. Pure cubic coefficients, all-order behavior, arbitrary slopes, refinement, and physical selection remain open. |
+| `double-null-finite-asymmetric-quartic-euler-jet` | The selected branch supports the 13 retained coefficients, including `[a³b]`, `[ab³]`, and `[a²b²]`. It is not a complete fourth-order jet; `[a⁴]`, `[b⁴]`, `[a³b²]`, `[a²b³]`, and `[a³b³]` are unchecked. |
+| `double-null-degree5-selected-rref-ward-obstruction` | Nonzero fifth-order Ward projections rule out extension of the one selected RREF representative. Other lower-order free modes may change the source; this is not a general crossed-null obstruction or GR closure. |
+
+These are evidence-to-result matches with explicit mathematical scope, not
+accepted C0 dispositions or result-to-parent applications. The assembly
+registry makes these nine results C0 candidates; independent acceptance of
+the C0 denominator and dispositions remains pending.
 
 For verified pinned Markdown sources without an explicit section locator, the
 view ranks up to three heading candidates by lexical overlap with the
