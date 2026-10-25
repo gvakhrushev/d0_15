@@ -5252,6 +5252,9 @@ includes a query for the generic injectivity/cardinality results and a
 filename query for their compiled inventory. The exact theorem query returns
 the primary artifact and `FutureExecution.lean` as direct-content candidates;
 the filename query returns the six-declaration inventory at rank 2. Its
-focused case test passes. The full 19-case search batch was not replayed after
-this query addition; the batch run was stopped after exceeding 90 seconds, so
-only the changed retrieval path is claimed here.
+focused case test passes. The full cold-start replay then completed on clean
+snapshot `56125b5cec3f6687d9fcd7fb2bb49364228acb2b`: all 19/19 cases found
+every required source, including this inventory, and all 20 benchmark cases
+ran. The `exact-source-vs-unrelated-prose` impact control passed, confirming
+that a declared source edit changes its dependent result while unrelated
+prose leaves that source digest unchanged.
