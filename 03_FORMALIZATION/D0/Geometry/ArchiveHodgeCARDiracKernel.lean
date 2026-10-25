@@ -19,17 +19,32 @@ identifies that kernel with `ker D_H`. The parameter space is one real
 amplitude for each of the 16 Fock states.
 -/
 
+noncomputable def hodgeCarDiracₗ (N : ℕ) : ArchiveCochain N →ₗ[ℝ] ArchiveCochain N :=
+  hodgeCarDiracHermitianₗ N
+
+/-- The legacy function-level Hodge/CAR operator and its canonical typed
+Hermitian map have the same action on every cochain. -/
+theorem hodgeCarDiracₗ_apply (N : ℕ) (ψ : ArchiveCochain N) :
+    hodgeCarDiracₗ N ψ = hodgeCarDirac N ψ := by
+  exact (hodgeCarDirac_eq_finiteHermitianHodgeDirac N ψ).symm
+
 theorem hodgeCarDirac_add (N : ℕ) (ψ φ : ArchiveCochain N) :
     hodgeCarDirac N (ψ + φ) = hodgeCarDirac N ψ + hodgeCarDirac N φ := by
-  unfold hodgeCarDirac
-  rw [dForward_add, hodgeCodifferential_add]
-  abel
+  calc
+    hodgeCarDirac N (ψ + φ) = hodgeCarDiracₗ N (ψ + φ) :=
+      (hodgeCarDiracₗ_apply N (ψ + φ)).symm
+    _ = hodgeCarDiracₗ N ψ + hodgeCarDiracₗ N φ :=
+      (hodgeCarDiracₗ N).map_add ψ φ
+    _ = hodgeCarDirac N ψ + hodgeCarDirac N φ := by
+      rw [hodgeCarDiracₗ_apply, hodgeCarDiracₗ_apply]
 
 theorem hodgeCarDirac_smul (N : ℕ) (a : ℝ) (ψ : ArchiveCochain N) :
     hodgeCarDirac N (a • ψ) = a • hodgeCarDirac N ψ := by
-  unfold hodgeCarDirac
-  rw [dForward_smul, hodgeCodifferential_smul]
-  rw [smul_add]
+  calc
+    hodgeCarDirac N (a • ψ) = hodgeCarDiracₗ N (a • ψ) :=
+      (hodgeCarDiracₗ_apply N (a • ψ)).symm
+    _ = a • hodgeCarDiracₗ N ψ := (hodgeCarDiracₗ N).map_smul a ψ
+    _ = a • hodgeCarDirac N ψ := by rw [hodgeCarDiracₗ_apply]
 
 theorem hodgeCarDirac_zero (N : ℕ) : hodgeCarDirac N (0 : ArchiveCochain N) = 0 := by
   simpa using hodgeCarDirac_smul N 0 (0 : ArchiveCochain N)
@@ -308,19 +323,11 @@ theorem hodgeCarDirac_eq_zero_iff_section (N : ℕ) (ψ : ArchiveCochain N) :
     have hy := congrFun h (y, s)
     simpa [hodgeKernelSection] using hx.trans hy.symm
 
-def hodgeCarDiracₗ (N : ℕ) : ArchiveCochain N →ₗ[ℝ] ArchiveCochain N where
-  toFun := hodgeCarDirac N
-  map_add' := hodgeCarDirac_add N
-  map_smul' := hodgeCarDirac_smul N
-
 /-- The pre-existing kernel-facing linear map is exactly the generic Hermitian
 Hodge--Dirac adapter of the registered real forward CAR differential. -/
 theorem hodgeCarDiracₗ_eq_finiteHermitianHodgeDirac (N : ℕ) :
     hodgeCarDiracₗ N = hodgeCarDiracHermitianₗ N := by
-  apply LinearMap.ext
-  intro ψ
-  change hodgeCarDirac N ψ = hodgeCarDiracHermitianₗ N ψ
-  exact hodgeCarDirac_eq_finiteHermitianHodgeDirac N ψ
+  rfl
 
 def hodgeKernelSectionₗ (N : ℕ) :
     (ArchiveFockState → ℝ) →ₗ[ℝ] ArchiveCochain N where
@@ -331,7 +338,10 @@ def hodgeKernelSectionₗ (N : ℕ) :
 theorem hodgeKernelSection_mem_ker (N : ℕ) (c : ArchiveFockState → ℝ) :
     hodgeKernelSectionₗ N c ∈ LinearMap.ker (hodgeCarDiracₗ N) := by
   rw [LinearMap.mem_ker]
-  exact (hodgeCarDirac_eq_zero_iff_section N _).mpr rfl
+  calc
+    hodgeCarDiracₗ N (hodgeKernelSectionₗ N c) =
+        hodgeCarDirac N (hodgeKernelSectionₗ N c) := hodgeCarDiracₗ_apply N _
+    _ = 0 := (hodgeCarDirac_eq_zero_iff_section N _).mpr rfl
 
 noncomputable def hodgeKernelEquiv (N : ℕ) :
     LinearMap.ker (hodgeCarDiracₗ N) ≃ₗ[ℝ] (ArchiveFockState → ℝ) where
@@ -339,7 +349,11 @@ noncomputable def hodgeKernelEquiv (N : ℕ) :
   invFun c := ⟨hodgeKernelSectionₗ N c, hodgeKernelSection_mem_ker N c⟩
   left_inv ψ := by
     apply Subtype.ext
-    have hzero : hodgeCarDirac N ψ.1 = 0 := ψ.2
+    have hzero : hodgeCarDirac N ψ.1 = 0 := by
+      calc
+        hodgeCarDirac N ψ.1 = hodgeCarDiracₗ N ψ.1 :=
+          (hodgeCarDiracₗ_apply N ψ.1).symm
+        _ = 0 := ψ.2
     have hconst :=
       (hodgeCarDirac_sq_eq_zero_iff_constant N ψ.1).mp
         ((hodgeCarDirac_eq_zero_iff_sq_zero N ψ.1).mp hzero)

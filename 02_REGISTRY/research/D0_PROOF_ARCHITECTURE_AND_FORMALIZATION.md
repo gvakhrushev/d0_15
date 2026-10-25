@@ -3709,3 +3709,72 @@ assembly contract
 `72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
 presupposition edges
 `7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+
+### Canonical map refactor for the real Hodge/CAR kernel API (25 October 2026)
+
+The kernel-facing `hodgeCarDiracₗ` now aliases the already-proved generic
+finite Hermitian Hodge--Dirac map on the same site × Fock carrier. This removes
+the second manually assembled `LinearMap`. The public function-level
+`hodgeCarDirac` remains available: `hodgeCarDiracₗ_apply` is the compiled
+pointwise bridge, and the existing `hodgeCarDirac_add` and
+`hodgeCarDirac_smul` theorems now follow from the canonical map's own linearity
+laws. The adapter equality is reflexive. Kernel membership/equivalence proofs,
+the weighted-pairing application and spatial-shell compression now use the
+bridge explicitly where the old implementation relied on definitional
+reduction. Existing theorem statements and the 16-dimensional kernel result
+are preserved.
+
+The compiled declaration inventory for the full kernel module is
+`sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_canonical_map_refactor_2026-10-25.json`
+(SHA-256 `30b4e32d3327379baba9e9f4b7935486434863c1772e9ddae269f49cdf630531`,
+collector SHA-256 `7043a40e051ae7717f95638b649187c90c25a31f2e4b9b446fbc3545f8237eb2`,
+public import root `D0.Geometry.ArchiveHodgeCARDiracKernel`). It contains 38
+declarations with elaborated types, dependencies and trust footprints, and
+records source digest `74b6c15666c7de63f098cc92d74772c1e4e65fe0643c43fe296ab7ce79f5600e`
+at snapshot `d67eb595f09e13e682a4c26035efec4d45f24a03` with
+`worktree_dirty=true`, Lean 4.30.0. `formal_support.csv` now records the
+kernel as a consumer of the generic Hermitian API; the real Hodge/CAR
+cold-start case includes the new bridge and inventory.
+
+Narrow builds passed for `ArchiveHodgeCARDiracKernel` (2,985 jobs),
+`ArchiveWeightedHodgeDirac` (2,989),
+`ArchiveHodgeSpatialShellOperator` (3,405),
+`A4DLocatedTopologicalStar` (2,991),
+`ArchiveHodgeGradingSymmetry` (2,989), and
+`TwistedHodgeZeroModeLifting` (2,988). The first dependent build exposed the
+weighted-pairing proof's reliance on definitional reduction; the final proof
+uses the exact bridge, and the dependent builds then pass. This remains an
+algebraic refactor on the stated finite carrier. It selects no weighted or
+geometric profile, physical source, or GR dynamics, and it changes no C0 or
+physical-closure status.
+
+### Cold-start replay after the canonical Hodge/CAR map refactor (25 October 2026)
+
+The updated `real-unit-profile-weighted-hermitian-bridge` case searches for
+the canonical `hodgeCarDiracₗ` definition, its explicit function-level bridge,
+the generic linearity applications, and the compiled 38-declaration
+inventory. The full replay found all required sources in all 18/18 cases at
+candidate limit 18. The 19/19 benchmark passed, including the exact-source vs
+unrelated-prose impact regression. The replay result is retrieval evidence;
+semantic scope review remains manual and no physical profile or GR obligation
+is closed.
+
+Replay used snapshot `d67eb595f09e13e682a4c26035efec4d45f24a03` with
+`worktree_dirty=true`. Runner SHA-256 is
+`1ac6614700d3acc99e2000d47c00e761af63c0943f3cf59009034c5f4bd2844c`; the
+primary artifact at replay time had SHA-256
+`a16a0bbd1077b142f2969c88ec35b38503a275e2f6d20e6fb17cad6c437c4b02`.
+Authority digests were `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`852690a586e3b3f504dd9d78ccdfd622a38933aa448d093e920b48a52872dd54`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.

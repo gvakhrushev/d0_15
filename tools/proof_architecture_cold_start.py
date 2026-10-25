@@ -353,6 +353,8 @@ CASES: list[dict[str, Any]] = [
             "hodgeCarDiracHermitian_square",
             "hodgeCarDirac_sq generic Hodge anticommutator",
             "hodgeCarDiracₗ_eq_finiteHermitianHodgeDirac",
+            "hodgeCarDiracₗ_apply canonical compatibility bridge",
+            "hodgeCarDirac_add hodgeCarDirac_smul generic linear map laws",
             "finiteHermitianAdjoint_finiteHermitianHodgeDirac_eq_self",
         ],
         "required_refs": [
@@ -373,6 +375,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_unit_profile_adjoint_self_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_square_from_generic_hermitian_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_generic_adjoint_self_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_canonical_map_refactor_2026-10-25.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
@@ -383,6 +386,8 @@ CASES: list[dict[str, Any]] = [
             "identified as the standard Hermitian adjoint of its forward differential. The existing function-level "
             "square is then recovered from the generic anticommutator and the owned CAR cross-term Laplacian. A "
             "generic typed adjoint-equality corollary is also consumed by the real Hodge/CAR self-adjoint theorem. "
+            "The kernel-facing `hodgeCarDiracₗ` is now the same generic Hermitian map, while a compiled pointwise "
+            "bridge preserves the legacy function-level API and its kernel/shell applications. "
             "The concrete profile equality is only at the unit profile: arbitrary nonzero weighted profiles remain "
             "in the bilinear API, and no geometric or physical Hodge profile is selected."
         ),

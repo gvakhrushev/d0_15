@@ -76,7 +76,14 @@ theorem hodgeCarDirac_diagonal_weight_adjoint (N : ℕ)
       D0.Algebra.finiteWeightedPairing w ψ
         (hodgeCarDiracDiagonalAdjoint N w φ) := by
   intro hw
-  exact D0.Algebra.finiteWeightedPairing_adjoint w hw (hodgeCarDiracₗ N) ψ φ
+  calc
+    D0.Algebra.finiteWeightedPairing w (hodgeCarDirac N ψ) φ =
+        D0.Algebra.finiteWeightedPairing w (hodgeCarDiracₗ N ψ) φ := by
+          rw [← hodgeCarDiracₗ_apply]
+    _ = D0.Algebra.finiteWeightedPairing w ψ
+        (hodgeCarDiracDiagonalAdjoint N w φ) := by
+          simpa [hodgeCarDiracDiagonalAdjoint] using
+            D0.Algebra.finiteWeightedPairing_adjoint w hw (hodgeCarDiracₗ N) ψ φ
 
 /-- At the real unit profile, the existing Hodge/CAR weighted adjoint is the
 standard finite Hermitian adjoint. This identifies the two algebraic APIs on
