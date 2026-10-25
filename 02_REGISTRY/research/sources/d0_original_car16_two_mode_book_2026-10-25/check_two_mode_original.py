@@ -186,6 +186,37 @@ check(abs(float(sp.N(Dtheta_direct,30))+1.8312595190037388e-8)<1e-20,
 check(vanish(sp.diff(d,r).subs(fixture))==False,
       "Book input source not frozen/zero")
 
+# Exact interval sign of the actual prepared Book proper-boost response:
+# NO sign inference from an eigenvector/gap or a floating root.
+slopeS=nu**2*(1+r*r)*(r*r+4*r-1)/(64*(1-r*r)**3)
+slopeT=2*nu**4*(3*r**4+14*r**3-6*r*r+18*r-5)/(
+    16384*(1-r*r)**3)
+check(vanish(sp.diff(s,r)-slopeS) and
+      vanish(sp.diff(t,r)-slopeT),
+      "ALL-r original symmetric-polynomial first derivatives exactly factored")
+boundS=Q(177147,5120000)
+boundT=Q(6908733,32768000000)
+check(boundS<Q(1,4) and boundT<1,
+      "uniform strict parameter-chart native invariants rational bounds")
+check(Q(1,81)+Q(4,9)-1<0,
+      "strict negative actual s' on 0<=r<=1/9")
+check(Q(3,6561)+Q(14,729)+2-5<0,
+      "strict negative actual t' on 0<=r<=1/9")
+check(12*zeta<2 and 0<p**2<1,
+      "entire original Book survival mixed partials strictly negative")
+for rv,nv in samples:
+    if rv<0:
+        continue
+    sj=s.subs({r:rv,nu:nv})
+    tj=t.subs({r:rv,nu:nv})
+    check(sj>0 and sj<boundS and tj>0 and tj<boundT,
+          "native sampled response inside rigorous compact bound")
+    check(slopeS.subs({r:rv,nu:nv})<0 and
+          slopeT.subs({r:rv,nu:nv})<0,
+          "true nonzero original symmetric-invariant decrease")
+    check(float(sp.N(jtheta.subs({r:rv,nu:nv}),30))<0,
+          "strict full original Book Lorentz source on compact native chart")
+
 # Theorem E classification (pure independent parity-basis covariant wedge).
 def invariant_subsets(n):
     whole=set(range(n))
