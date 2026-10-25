@@ -11483,3 +11483,99 @@ formal_support183/Lean closure918; assembly54active/98results/5discharged/
 not remote CI or physical acceptance. The embedded mathematical check
 is byte-identical to its passed input; no unchanged mathematics was
 replayed for intake, renumbering or the analytical conjugation identity.
+
+### 25 October: complete paid input records control whole-query source
+
+Phase: native realization / original physical-domain application.
+SAME PR334, constitutive/native-programme-v1, inputea1cb5fc.
+Consume7as/7at's unconditional sampler,7ax's fully paid weak meters,
+7an352's all-input task fibre and7au's larger-query obstruction.
+No new task, carrier, claim, registry or original action is introduced.
+
+The exact missing parent premise is the admissible query-comparison
+domain after the complete input-record frontier. Primary7ba443--447
+replaces the sufficient restriction to bounded local QUERY supports
+with the larger all-input record-effect fibre. It does NOT identify
+that fibre with original X_N or silently promote physical admission.
+
+Every SIGN and EVERY physical Golden coin is copied before the ideal
+Boolean suffix, with actual dedicated copies and their inverses paid.
+Use the SAME actual source/extractor/coin isometry in both comparisons.
+The ideal Boolean truth projector F(P) is a0/1 function of those full
+input records, not a fractional Bernstein probability. Actual compiled
+suffix error gives ||(Theta-F)J||<=Delta_Q on ALL inputs, including
+entangled references. This is only a prepared-isometry defect; the
+full thermal operator Theta is never replaced by F.
+
+For any whole private-cohort query H preserving these records,
+normalized actual feedback source is <=2Delta_Q||H|| in wa-units.
+Nearby varied controllers need not remain Boolean-correct or preserve
+the report effect. More generally the all-input joint record effects
+may be preserved only to first jet, with error rho_rec; the actual raw
+word norm gives rho_rec/d+2N_Q Delta_Q in445. Source-prefix/first-copy,
+old-target, meter calibration, clock/cut and cross-cohort rows retain
+their own budgets. The full heat is zero only on the stated generated
+query-conjugacy family; every actual thermal mode remains priced.
+
+The record law has a concrete terminal response: joint weak-click
+effects are the tensor triangular transform446 of actual input-record
+POVM effects. It is invertible for actual ell>0. The true product
+conditioning, source/readout errors, trial/confidence and all work are
+retained. This is not lossless single-trial history recovery or a new
+Info credit. The vertical constraint leaves genuine horizontal birth,
+source and field variations free. The geometry decoder/direct cofield
+of428 remains on the same execution with all K meters charged.
+
+At fixed logical layout the owned polylog compiler permits
+N_Q Delta_Q/gbar->0. Freeze the actual new B,N_B,K and decoder margins
+before selecting meters for429; select reading accuracy only after
+ell/446 are known. The original slow cofinal envelope, true Gamma,
+absolute Book action, nonvacuum Palatini/CAR limit and regularized
+protocol are retained. No polynomial resource or exact finite root
+claim is added.
+
+Decisive control: NEW exact rational calculation only, testing the
+joint inverse for a noncommuting input POVM, the all-input truth gap,
+record-controlled query gradient with actual price multiplier, and
+a Boolean-correct hostile rotation that changes the complete record
+law. Root run exit0/PASS, Python3.9.6/SymPy1.14.0. No old root,
+compiler, READY, heat,128 or Lean replay.
+
+Frozen7ba INCLUDING the next-heading separator:15434 bytes,
+SHA256 ff6eab4302855721518156644e82aadbd177c66617199f91289cfa99d1071b84.
+Extracted code excluding closing newline:2394 bytes,
+SHA256 cb6ad4b79363a8dbaee2a2266f19a88209ff47cc1a6df553bce82018a44d7baa.
+Write paths: existing primary7ba and this existing brief only.
+
+The next physical application is exact/bounded birth-record retention
+or the original constraint/edit predicate selecting this comparison
+space. Installing meters and finite epsilon^2 tests with strict slack
+do not supply that first-jet law. New geometry-only records alone
+cannot remove7au's broader normal. Original physical admission,
+uncovered normals and general-refinement scope remain; GR_closed,
+positive_gr and raw216 are not promoted.
+
+Concurrent integration: ea1cb5fc supplies actual whole-word secants7ay
+and the different exact projection/involution stationary carrier7az.
+They are preserved BYTE EXACT.7ba applies to the original7at carrier;
+it does not impose a record restriction on7az or claim to derive its
+constitutive encoder. The inserted proof was mechanically renumbered
+443--447; the checked Python code is BYTE IDENTICAL. No math replay.
+
+Final source-only native_source_application, price_geometry_bridge and
+stationary_root_transfer reviews ACCEPTED section15434/ff6eab4302855721
+and code2394/cb6ad4b79363a8db. They checked the complete rebased pins,
+443--447, actual price/gain, birth/query splitting, conditioning and
+incoming7ay/7az compatibility. No reviewer changed files or reran math.
+
+Preservation PASS: removing only7ba plus its separator restores
+incoming ea1cb5fc primary BYTE EXACT, SHA256
+d9e4ca8e2da3f93684d058a03602f2d52b0de006b202dedc1bd58edf3df86461;
+the old brief remains a byte-exact prefix. Affected final structural
+checks PASS: validate_work, validate_agent_protocol, gr_assembly check
+and validate_repo (889claims,31assumptions,58aliases,183formal_support,
+918lean_closure; warnings0). Assembly retains54active/98totalresults,
+5discharged/22obligations, scientific_promotion=false. Whitespace PASS.
+No remote CI or physical acceptance is inferred. This is supporting
+native source composition with its retained physical application,
+not an independent accepted discharge of original X_N or constitutive.

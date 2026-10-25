@@ -13644,6 +13644,305 @@ print('PASS exact native CX, complete P/U feedback Euler equations, full paired 
 print(sys.version.split()[0],S.__version__)
 ```
 
+## 7ba. Complete paid input records control whole-query source
+
+25 October2026; SAME PR334, constitutive/native-programme-v1,
+inputea1cb5fc. Consume7as/7at's actual unconditional Boolean sampler,
+7ax's fully priced weak meters and7au's whole-query boundary. The
+missing parent application is a query comparison domain allowing
+whole-controller changes and reads of retained records. We supply a
+larger sufficient domain using the ACTUAL complete input-record law,
+without fixing the desired report effect or requiring neighbouring
+controllers to compute the same Boolean function. This is a positive
+source theorem on that operational task fibre; its original physical
+admission is still a separate application.
+
+Incoming7ay431--435 proves that the larger7au direction also has actual
+native-word secants; the present bound does not deny its realizability.
+Incoming7az436--442 supplies a DIFFERENT projection/involution corner
+with exact full native stationarity and an action-germ application.
+It needs no query-record restriction from this section. We retain that
+stronger stationary result and its missing constitutive/source binding.
+The following is an alternative continuation of7at's already derived
+source/readout carrier, not an extra prerequisite for7az or a selection
+of its encoded action.
+
+### Record every logical input before the Boolean suffix
+
+In7as/7at all unconditional physical Golden coins can be born before
+the classical sampler. Use the actual XOR, injection/counter, lookup
+and threshold logic as one suffix. Its finite classical inputs are
+ALL extracted SIGN bits and EVERY individual physical coin, rather
+than only the final parity. Their quantum state, oldRIGHT correlation,
+extractor errors and source preparation remain actual and arbitrary.
+
+After their birth and before the Boolean suffix give each such input
+one dedicated exact CX pointer h_a. Reuse7ax pointers when they are
+already these copies; add only missing ones. All actual suffix and
+outer-word addresses, including routing and spectators, exclude these
+pointers. Include their inverse copies in the genuine outer inverse;
+no blank restoration of h_a is assumed. Existing redundant labels and
+source-prefix error budgets stay. Every new copy length and changed
+allocation is counted in the NEW B,N_B and406, as in7ax. Copying may
+change the actual query error, so recompute its actual effect Q.
+
+At the middle the projectors P_a=|1><1|_(h_a) commute with each other
+and with the actual report projector Theta. Write Pi_z for their
+complete joint projectors, z in{0,1}^K. The fixed ideal reversible
+Boolean program has a finite function f(z) in{0,1}; put
+
+    F=sum_z f(z)Pi_z,    D=Theta-F,   ||D||<=1.
+
+Let J_pre be the SAME actual copied-input isometry in both comparisons,
+including real extractors, coins, source work and protected input. Let
+U_* be the ideal Boolean permutation and U_hat its compiled suffix,
+with every unused column and spectator retained. For
+J=U_hat J_pre and J_*=U_* J_pre, ideal correctness gives
+
+    (Theta-F)J_*=0,
+    ||U_hat-U_*||<=Delta_Q  =>  ||D J||<=Delta_Q.      (443)
+
+This is an ALL-INPUT operator estimate, including arbitrary entangled
+references. It does not assume classical/dephased source states or
+exact native Boolean permutations. Only the suffix is replaced in the
+comparison, so extractor error is not part of Delta_Q in443; its
+separate field/source debts are unchanged. Delta_Q may be bounded by
+the sum of the suffix full-column compiler errors.
+
+### Large query tangents need only preserve the actual record law
+
+Give every new pointer the actual weak three-bit meter424. Write
+D_P=product_a(I-epsilon_a P_a) and E=sum_a epsilon_a. All meter
+parameters are fixed in the present vertical query comparison. The
+true compressed kernel is J^dagger(I-dTheta)D_P J and the actual base
+corner c, cumulative w_+, a_j^+=2d_j/c_j and Gamma_+=w_+A_+ are426.
+No old gain or unmodified heat is imported.
+
+First take any anti-Hermitian whole-query generator H which excludes
+the OLD main target and NEW meter targets, preserves the protected
+factorization and satisfies [H,P_a]=0 for every input pointer. H may
+read/control on these records and act globally on the rest of its
+private cohort; bounded local query support is not required. Since
+[H,F]=[H,D_P]=0,443 gives
+
+    ||J^dagger[Theta,H]J||<=2Delta_Q||H||,
+    |ReTr D C_query|<=2 rankP d Delta_Q||H||,
+    |D J_feedback|/(w_+ a_j^+)<=2Delta_Q||H||.        (444)
+
+For the trace statement use C_query=J^dagger(I-dTheta)D_P J.
+The commutator with F vanishes; the two remaining terms contain
+D D_P J, whose norm is at most Delta_Q. This controls the complete
+protected trace, not just a selected source probability. The full
+heat differential is zero by the same generated endpoint conjugacy
+and paired-clock identity312. The other completed cohorts keep their
+identity action on the shared factors.
+
+There is a strictly larger sufficient domain. Define the ACTUAL
+all-input record effects e_z=J^dagger Pi_z J, not an assigned target
+law. Suppose a vertical query tangent preserves every e_z to first
+order. Then the differential of
+J^dagger (I-dF)D_P J=sum_z(1-d f(z))D_P(z)e_z is zero. Splitting
+
+    (I-dTheta)D_P=(I-dF)D_P-d(Theta-F)D_P
+
+again proves444, even if H mixes pointer coordinates. The retained law
+is VERTICAL to the query, not a freezing of the source. At the base,
+the query excludes the pointers on every input, so e_z equals the
+actual birth-record effect for every prefix state. Horizontal prefix,
+field and preparation changes keep their full derivative of that birth
+law; only the query contribution is zero. Linear splitting at this
+base therefore needs no unbounded projection onto a fixed-source fibre.
+More generally retain rho_rec such that, with nu=max_t||Dg_t||,
+
+    sum_z ||D e_z|| <=rho_rec nu.
+
+Since |(1-d f(z))D_P(z)|<=1, the extra wa-unit bound is
+rho_rec/d+2N_Q Delta_Q. Here H is the transported TOTAL query-word
+generator and ||H||<=N_Q nu, where N_Q is its ACTUAL expanded length.
+The error is not merely2Delta_Q per arbitrary native word.
+
+Thus427 on the enlarged comparison graph has the safe additional
+term inside its weighted bracket
+
+    e_record-query=rho_rec/d+2N_Q Delta_Q,
+    extra normalized bound
+       <=sqrt(2)/A_+ sum_j a_j^+ e_record-query,j.    (445)
+
+The old local query rows may be bounded redundantly by e_old; all
+pre-birth source, first-copy and generated-prefix rows retain406.
+Old target-mixing directions retain379a. Meter-target changes retain
+their actual427 calibration rows; they are not silently included in H.
+Independent clock/cut edits, cross-cohort global controls and other
+selected action terms keep their separate sources.
+
+Crucially the varied controllers need NOT remain Boolean-correct,
+and their E or report mean is NOT frozen. At Delta_Q=0 a tangent may
+leave the correct-code subspace at second order while its first source
+is zero. At finite compiler error that row has the explicit444 bound.
+This avoids the unproved exact native Boolean fidelity premise352.
+
+### The complete record law is an actual paid terminal response
+
+For y in{0,1}^K let T_y be the terminal effect of the joint pattern of
+nonblank/blank meters. Formula425 generalizes on ALL input columns:
+
+    T_y=sum_z M_(y,z)e_z,
+    M=tensor_a [[1,1-ell_a],[0,ell_a]],
+    e_z=sum_y (M^(-1))_(z,y)T_y,
+    ||M^(-1)||_(1->1)=product_a (2-ell_a)/ell_a.      (446)
+
+Indeed the meter effect is ell_a P_a for a click and I-ell_a P_a
+otherwise. These commuting effects multiply before compression by J.
+The old middle commutes with all P_a; the outer inverse never addresses
+meter targets. Every actual ell_a>0, so the finite tensor inverse exists.
+This is not single-trial recovery of every hidden z or an information
+credit H(z); the weak output remains a genuinely noisy record.
+The reconstructed e_z can be noncommuting POVM effects on the input;
+no sharp classical input state is assumed. Signed inverse coefficients
+are postprocessing, not new negative response events or action terms.
+
+This realizes the complete record algebra, beyond7ax's coordinate
+moments. Its all-input terminal response germ and actual calibration
+determine the record-law fibre and its first jet. It does not certify
+an exact all-input equality from finitely many noisy frequencies.
+Response/calibration errors must carry the displayed inverse norm;
+derivative errors also keep their true finite-difference scale. Actual
+statistical tests retain their trial count, confidence and work as in7av.
+For testing report/record correctness correlations use an additional
+actually priced report response or7av's alternative future test; the
+input-meter tuple alone does not measure the actual report bit.
+
+### Simultaneous budgets and the exact remaining physical application
+
+For K total dedicated pointer/meter pairs the resources relative to
+7at are4K wires,2K CX copy/inverse stages and sum L_a middle stages.
+For the increment relative to7ax subtract every actually reused pair
+and its already counted stages. The full dimension, cut rank, clock,
+D_P backreaction and local meter calibration covectors are426--429
+with this ACTUAL K. These are coherent input copies, not an unpriced
+strong history measurement or a free physical dephasing.
+
+At each finite mesh choose the logical sampler and source precisions;
+compile its Boolean suffix sufficiently accurately that
+
+    N_Q Delta_Q/gbar ->0,
+    rho_rec/(d gbar) ->0                             (447)
+
+along the same slow cofinal envelope. The second quantity is zero on
+the exact record-effect fibre. At fixed logical layout the owned
+polylogarithmic compiler makes N_Q Delta_Q arbitrarily small; a bare
+unpriced integer-G search would not prove this. Freeze the resulting
+new B,N_B,K, field step, actual gbar and decoder margins. Only then
+choose weak meters to meet429, now for all K pointers. Finally choose
+terminal reading accuracy AFTER their actual ell and446 condition norm
+are known. No polynomial resource claim is made. All added dimensions
+and stages remain in the actual whole heat bound; use the same updated
+slow envelope and true Gamma_+ rather than deleting old cohorts.
+
+The geometry pointers are a subset of this complete input ledger.
+Their calibrated moments, observed Jacobian and DIRECT physical
+cofield bound428 retain the original Palatini/CAR limit. The new
+vertical query budget445 composes with that field map; it does not
+multiply an operator residual by a divergent field lift. On the exact
+primary nonvacuum family both normalized bounds can therefore vanish
+on this enlarged record-law graph. Original7aw's regularized solution
+protocol applies with the updated errors and resources.
+
+This changes the parent route precisely: bounded local QUERY support
+or an exact fixed report-effect fidelity fibre is no longer needed
+AFTER the input-record frontier, provided its actual complete record
+law is retained to the stated first-jet budget. Query comparisons
+may perform controlled reads and global within-cohort computation.
+The stronger7au direction is not disproved: a nonvanishing row under
+its premises cannot simultaneously satisfy the record-law bound447
+and444; it must change this complete record law or another retained
+hypothesis. Geometry-only records do not have this property.
+
+Installing the meters DOES NOT force all physical variations to
+preserve e_z. Nor do finite epsilon^2 task tests with strict slack:
+such finitely many continuous inequalities leave an open neighbourhood
+and cannot remove an otherwise admitted infinitesimal row. The
+remaining original physical substitution is the birth/retention or
+constraint/edit law selecting these comparisons, or the actual source
+of any additional admitted direction. This proof supplies its explicit
+paid operational carrier and a strictly larger source-controlled
+application, not that missing physical selection itself. Original
+X_N, all upstream and general-refinement obligations retain scope.
+GR_closed=false; positive_gr and raw216 remain open.
+
+### New bounded exact controls
+
+The small rational fixture checks the NEW joint-record inversion on
+a noncommuting POVM, all-input truth defect and record-controlled
+query rows, plus an exactly Boolean-correct rotation that nevertheless
+changes the complete input record law. It also keeps the TRUE feedback
+price multiplier. It is a compiler-target/operator fixture, not a
+newly emitted whole native word. No old certificate or Lean replay.
+
+```python
+import sys,sympy as S
+R=S.Rational;I2=S.eye(2);I4=S.eye(4);J2=S.Matrix([[0,-1],[1,0]])
+def rot(t):return S.Matrix([[1-t*t,-2*t],[2*t,1-t*t]])/(1+t*t)
+def embed(a,b,t):
+    m=S.eye(4);v=rot(t)
+    for i,x in enumerate([a,b]):
+        for j,y in enumerate([a,b]):m[x,y]=v[i,j]
+    return m
+# Actual record effects need not commute on the original input.
+Q=embed(0,2,R(1,2))*embed(1,2,R(1,3))*embed(1,3,R(1,4))
+V=Q[:,:2];ee=[V.row(i).T*V.row(i) for i in range(4)]
+assert V.T*V==I2 and sum(ee,S.zeros(2))==I2
+assert ee[0]*ee[1]!=ee[1]*ee[0]
+ells=[4*u*u/(1+u*u)**2 for u in [R(1,20),R(1,30)]]
+Ts=[S.Matrix([[1,1-l],[0,l]]) for l in ells]
+T=S.kronecker_product(*Ts);Ti=T.inv()
+ff=[sum((T[y,z]*ee[z] for z in range(4)),S.zeros(2)) for y in range(4)]
+assert all(sum((Ti[z,y]*ff[y] for y in range(4)),S.zeros(2))==ee[z] for z in range(4))
+assert max(sum(abs(Ti[i,j]) for i in range(4)) for j in range(4))==S.prod((2-l)/l for l in ells)
+# h and report are distinct; ideal report equals the retained input h.
+Theta=S.diag(0,1,0,1);F=S.diag(0,0,1,1);D=Theta-F
+Vstar=S.zeros(4,2);Vstar[0,0]=Vstar[3,1]=1
+u=R(1,20);U=S.kronecker_product(I2,rot(u));A=U*Vstar
+Delta=2*u/(1+u*u)
+assert D*Vstar==S.zeros(4,2) and A.T*A==I2
+assert (D*A).T*(D*A)==Delta**2*I2
+H=S.diag(J2,-J2);assert H.T==-H and H*F==F*H and H.T*H==I4
+comm=Theta*H-H*Theta;dcq=A.T*comm*A
+assert all(abs(v)<=2*Delta for v in dcq.diagonal())
+assert dcq[0,1]==dcq[1,0]==0
+for P in [F,I4-F]:assert A.T*(P*H-H*P)*A==S.zeros(2)
+# Complete actual detector corner and true positive logdet gain.
+src=S.Matrix([R(12,13),R(5,13)]);psi=A*src
+d=R(9,5);t=R(1,30);eps=2*t*t/(1+t*t);DP=I4-eps*F
+C=(I4-d*Theta)*DP;c=(psi.T*C*psi)[0]
+dc=(psi.T*(C*H-H*C)*psi)[0]
+assert c>=R(1,4) and abs(dc)<=2*d*Delta
+z=R(1,1024);rank=3;w=rank*z*c*c/(1-z+z*c*c);aa=2*d/c
+price_derivative=-2*rank*z*c*dc/(1-z+z*c*c)
+assert price_derivative/(w*aa)==-dc/d
+assert abs(price_derivative/(w*aa))<=2*Delta
+# Truth consistency ALONE permits a history-changing rotation.
+Hb=S.zeros(4);Hb[3,0]=1;Hb[0,3]=-1
+assert D*Hb*Vstar==S.zeros(4,2) and Hb*F!=F*Hb
+idealpsi=Vstar*src
+badq=(idealpsi.T*(Theta*Hb-Hb*Theta)*idealpsi)[0]
+badrecord=(idealpsi.T*(F*Hb-Hb*F)*idealpsi)[0]
+assert badq==badrecord and badq!=0
+print('PASS joint noncommuting record inversion, all-input truth defect, whole record-controlled query source and Boolean-only hostile control')
+print(sys.version.split()[0],S.__version__)
+```
+
+**Parent substitution.** The complete paid input-record law now has
+an exact all-input terminal response representation and controls whole
+query tangents through the actual Boolean base defect. This removes
+the need to postulate exact native Boolean correctness on neighbouring
+implementations or bounded local query support on that record-law
+fibre. Its physical birth/retention admission, pre-frontier sources,
+other normals and general refinement remain explicit. It is not a
+promotion based on tomography, a supplied acceptance test or a small
+absolute derivative.
+
+
 ## 8. Reproduction
 
 Run from this directory:
