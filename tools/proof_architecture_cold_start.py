@@ -192,6 +192,38 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "car-hopping-zero-mode-vs-hodge-kernel",
+        "queries": [
+            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 actual carDirac hoppingCarDirac kernel dimension",
+            "hodgeCarDirac_kernel_finrank Hodge difference constant Fock fibre 16",
+            "car zero mode claim declarations 2026 10 25",
+            "hodge car dirac kernel declaration 2026 10 25",
+            "ArchiveHodgeCARDirac not carDirac hoppingCarDirac difference operator",
+            "BOOK_06 06.spectral actual CAR Dirac zero mode ClaimMap OPEN",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/claims.csv",
+            "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_zero_mode_claim_declarations_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_kernel_declaration_2026-10-25.json",
+        ],
+        "scope_review": (
+            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 remains OPEN: its mapped CAR declarations "
+            "prove only a declared integer constant, not finrank ker(carDirac n). "
+            "hodgeCarDirac_kernel_finrank proves dimension 16 for the distinct "
+            "forward/backward Hodge difference operator on cubical cochains; there is "
+            "no operator equality or kernel transport to carDirac, so this theorem "
+            "cannot discharge the CAR claim. formal_support.csv lists only the Hodge "
+            "kernel module, not ArchiveCARDirac. The BOOK_06 06.spectral locator has no "
+            "exact heading. Compiled narrow inventories preserve the exact types and "
+            "axiom footprints; they do not accept C0 or select physical D0."
+        ),
+    },
+    {
         "id": "top-hodge-inverse-spectral-outside-gr",
         "queries": [
             "top Hodge inverse spectral full D H M2 equal unordered positive tripartite zone sizes Vieta roots",

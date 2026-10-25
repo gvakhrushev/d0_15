@@ -1369,6 +1369,34 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertTrue(any("archiveRoleFourierInversion" in query
                             for query in case["queries"]))
 
+    def test_car_zero_mode_cold_start_keeps_hopping_and_hodge_scopes(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "car-hopping-zero-mode-vs-hodge-kernel"
+        )
+        hits_by_query = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=18
+        )
+        query_pairs = list(zip(case["queries"], hits_by_query))
+
+        for path in case["required_refs"]:
+            status = cold_start._required_source_status(query_pairs, {"path": path})
+            self.assertTrue(status["found"], f"cold-start search missed {path}")
+
+        support_modules = {
+            row["lean_module"] for row in proof.load_dataset(proof.ROOT)["formal_support"]
+        }
+        self.assertIn("D0.Geometry.ArchiveHodgeCARDiracKernel", support_modules)
+        self.assertNotIn("D0.Geometry.ArchiveCARDirac", support_modules)
+        self.assertIn("remains OPEN", case["scope_review"])
+        self.assertIn("distinct", case["scope_review"])
+        self.assertIn("cannot discharge the CAR claim", case["scope_review"])
+        self.assertIn("formal_support.csv", case["scope_review"])
+        self.assertIn("no exact heading", case["scope_review"])
+        self.assertTrue(any("actual carDirac" in query for query in case["queries"]))
+        self.assertTrue(any("hodgeCarDirac_kernel_finrank" in query
+                            for query in case["queries"]))
+
     def test_claim_source_candidates_use_exact_headings_and_preserve_ambiguity(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

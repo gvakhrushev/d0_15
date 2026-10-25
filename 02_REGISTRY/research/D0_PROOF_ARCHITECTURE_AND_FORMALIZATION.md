@@ -5316,6 +5316,13 @@ SHA-256 `cd4d6a4bf092088bf0d6a554c2d38f7ab6516fa7bcaaddbee4a87ffada2a0dbb`.
 Each inventory builds and imports only its named owner module; neither invokes
 the full `D0.All` Ready replay.
 
+Cold-start case `car-hopping-zero-mode-vs-hodge-kernel` now retrieves the claim,
+both operator modules, `ClaimMap`, the primary crosswalk, and both compiled
+inventories in the bounded search window. Its focused test separately reads
+`formal_support.csv` as structured data and confirms that support is recorded
+for the Hodge-kernel module only. This is a retrieval negative control, not an
+automatic semantic acceptance; the focused case passes.
+
 The claimed Book locator `BOOK_06 / 06.spectral kernel dimension of the actual
 CAR Dirac operator` has no exact heading match in the source-candidate view;
 the current Book 06 contains no CAR/Dirac/zero-mode passage. A read-only
