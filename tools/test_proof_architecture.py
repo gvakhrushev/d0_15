@@ -1629,6 +1629,13 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("D0.Geometry.ArchiveHodgeCARDiracShell", support_modules)
         self.assertNotIn("D0.Geometry.ArchiveCARDirac", support_modules)
         claims = {row["claim_id"]: row for row in dataset["claims"]}
+        source_view = json.loads(
+            (inventory_root / "claim_source_candidates_current.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(source_view["schema"], "d0-claim-source-candidate-view-v3")
+        source_rows = {row["claim_id"]: row for row in source_view["rows"]}
         for claim_id in (
             "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001",
             "D0-ARCHIVE-CAR-DIRAC-SQUARE-001",
@@ -1636,6 +1643,12 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001",
         ):
             self.assertEqual(claims[claim_id]["lean_status"], "OPEN")
+            source_row = source_rows[claim_id]
+            self.assertEqual(source_row["resolution_status"], "unresolved")
+            self.assertEqual(source_row["literal_claim_id_mentions"], [])
+            self.assertFalse(any(
+                pair.get("candidates") for pair in source_row["locator_pairs"]
+            ))
         square_note = claims["D0-ARCHIVE-CAR-DIRAC-SQUARE-001"]["notes"]
         self.assertIn("ArchiveHodgeCARDiracSquare proves the exact square", square_note)
         self.assertIn("typed map from hodgeCarDirac", square_note)

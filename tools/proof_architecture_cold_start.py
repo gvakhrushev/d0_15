@@ -195,6 +195,7 @@ CASES: list[dict[str, Any]] = [
         "id": "car-scaffolds-vs-hodge-operator-claims",
         "queries": [
             "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 D0-ARCHIVE-CAR-DIRAC-SQUARE-001 actual carDirac hoppingCarDirac",
+            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 literal claim ID source candidate view",
             "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001 D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001 arithmetic spinor decomposition heat trace",
             "car_amplification_times_spinor_eq_sixteen diracHeatTraceMultiplicity_eq_fock_dim",
             "hodgeCarDirac_sq cochainDifferenceLaplacian_eq_backward_forward Hodge square four roles",
@@ -228,6 +229,7 @@ CASES: list[dict[str, Any]] = [
         "required_refs": [
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
             "02_REGISTRY/claims.csv",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
             "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
             "03_FORMALIZATION/D0/Algebra/FiniteMatrixTensorProduct.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean",
@@ -272,6 +274,8 @@ CASES: list[dict[str, Any]] = [
             "to 2*pi, while the L=2 shell rank is 48. These Hodge results have no operator "
             "intertwiner to the hopping matrix. formal_support.csv lists the Hodge modules, "
             "not ArchiveCARDirac. The BOOK_06 06.spectral locator has no exact heading. "
+            "The v3 literal-ID source view records no exact claim-ID mention for these four "
+            "open CAR rows in the book files; their source-unit mapping remains unresolved. "
             "Compiled narrow inventories preserve types and trust footprints; they do not "
             "accept the open claims, C0, or physical D0."
         ),
