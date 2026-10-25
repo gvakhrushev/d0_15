@@ -153,12 +153,14 @@ class DeclarationInventoryTests(unittest.TestCase):
         )
         with patch.object(inventory.lean_task_build, "build_lock",
                           side_effect=lambda _path: contextlib.nullcontext()) as lock:
-            with patch.object(inventory.lean_task_build, "source_digest",
-                              side_effect=["current", "current", "current"]):
-                with patch.object(inventory.subprocess, "run",
-                                  side_effect=[build, collect]) as run:
-                    rows, _collector_sha, source_sha = inventory.run_inventory(
-                        [declaration], "D0.Foo")
+            with patch.object(inventory.lean_task_build, "materialize_windows_lean_symlinks",
+                              side_effect=lambda: contextlib.nullcontext()):
+                with patch.object(inventory.lean_task_build, "source_digest",
+                                  side_effect=["current", "current", "current"]):
+                    with patch.object(inventory.subprocess, "run",
+                                      side_effect=[build, collect]) as run:
+                        rows, _collector_sha, source_sha = inventory.run_inventory(
+                            [declaration], "D0.Foo")
 
         self.assertEqual(run.call_args_list[0].args[0], ["lake", "build", "D0.Foo"])
         self.assertEqual(rows[0]["name"], declaration)
@@ -171,11 +173,13 @@ class DeclarationInventoryTests(unittest.TestCase):
         build = subprocess.CompletedProcess(["lake", "build", "D0.Foo"], 0, "", "")
         with patch.object(inventory.lean_task_build, "build_lock",
                           side_effect=lambda _path: contextlib.nullcontext()):
-            with patch.object(inventory.lean_task_build, "source_digest",
-                              side_effect=["before-build", "after-build"]):
-                with patch.object(inventory.subprocess, "run", return_value=build) as run:
-                    with self.assertRaisesRegex(RuntimeError, "changed while the import root"):
-                        inventory.run_inventory(["D0.Foo.bar"], "D0.Foo")
+            with patch.object(inventory.lean_task_build, "materialize_windows_lean_symlinks",
+                              side_effect=lambda: contextlib.nullcontext()):
+                with patch.object(inventory.lean_task_build, "source_digest",
+                                  side_effect=["before-build", "after-build"]):
+                    with patch.object(inventory.subprocess, "run", return_value=build) as run:
+                        with self.assertRaisesRegex(RuntimeError, "changed while the import root"):
+                            inventory.run_inventory(["D0.Foo.bar"], "D0.Foo")
         run.assert_called_once()
 
 

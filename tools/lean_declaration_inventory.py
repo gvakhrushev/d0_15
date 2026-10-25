@@ -252,27 +252,28 @@ def run_inventory(names: list[str], import_root: str, resolution_only: bool = Fa
         script.write_bytes(script_bytes)
         try:
             with lean_task_build.build_lock(lean_task_build.LOCK):
-                source_digest_before_build = lean_task_build.source_digest()
-                build = subprocess.run(
-                    ["lake", "build", import_root], cwd=FORMAL,
-                    capture_output=True, text=True, encoding="utf-8", errors="replace",
-                )
-                source_digest_after_build = lean_task_build.source_digest()
-                if build.returncode:
-                    raise RuntimeError(
-                        f"Lean import root is not current/buildable ({build.returncode}):\n"
-                        f"{build.stderr}\n{build.stdout}"
+                with lean_task_build.materialize_windows_lean_symlinks():
+                    source_digest_before_build = lean_task_build.source_digest()
+                    build = subprocess.run(
+                        ["lake", "build", import_root], cwd=FORMAL,
+                        capture_output=True, text=True, encoding="utf-8", errors="replace",
                     )
-                if source_digest_before_build != source_digest_after_build:
-                    raise RuntimeError(
-                        "Lean sources changed while the import root was being built; "
-                        "discard this result and rerun."
+                    source_digest_after_build = lean_task_build.source_digest()
+                    if build.returncode:
+                        raise RuntimeError(
+                            f"Lean import root is not current/buildable ({build.returncode}):\n"
+                            f"{build.stderr}\n{build.stdout}"
+                        )
+                    if source_digest_before_build != source_digest_after_build:
+                        raise RuntimeError(
+                            "Lean sources changed while the import root was being built; "
+                            "discard this result and rerun."
+                        )
+                    proc = subprocess.run(
+                        ["lake", "env", "lean", str(script)], cwd=FORMAL,
+                        capture_output=True, text=True, encoding="utf-8", errors="replace",
                     )
-                proc = subprocess.run(
-                    ["lake", "env", "lean", str(script)], cwd=FORMAL,
-                    capture_output=True, text=True, encoding="utf-8", errors="replace",
-                )
-                source_digest_after = lean_task_build.source_digest()
+                    source_digest_after = lean_task_build.source_digest()
         except lean_task_build.BuildLockBusy as exc:
             raise RuntimeError(
                 "D0 Lean build/cache is busy; retry declaration extraction after it finishes."
@@ -426,27 +427,28 @@ def run_module_inventory(modules: list[str], import_root: str,
         script.write_bytes(script_bytes)
         try:
             with lean_task_build.build_lock(lean_task_build.LOCK):
-                source_digest_before_build = lean_task_build.source_digest()
-                build = subprocess.run(
-                    ["lake", "build", import_root], cwd=FORMAL,
-                    capture_output=True, text=True, encoding="utf-8", errors="replace",
-                )
-                source_digest_after_build = lean_task_build.source_digest()
-                if build.returncode:
-                    raise RuntimeError(
-                        f"Lean import root is not current/buildable ({build.returncode}):\n"
-                        f"{build.stderr}\n{build.stdout}"
+                with lean_task_build.materialize_windows_lean_symlinks():
+                    source_digest_before_build = lean_task_build.source_digest()
+                    build = subprocess.run(
+                        ["lake", "build", import_root], cwd=FORMAL,
+                        capture_output=True, text=True, encoding="utf-8", errors="replace",
                     )
-                if source_digest_before_build != source_digest_after_build:
-                    raise RuntimeError(
-                        "Lean sources changed while the import root was being built; "
-                        "discard this result and rerun."
+                    source_digest_after_build = lean_task_build.source_digest()
+                    if build.returncode:
+                        raise RuntimeError(
+                            f"Lean import root is not current/buildable ({build.returncode}):\n"
+                            f"{build.stderr}\n{build.stdout}"
+                        )
+                    if source_digest_before_build != source_digest_after_build:
+                        raise RuntimeError(
+                            "Lean sources changed while the import root was being built; "
+                            "discard this result and rerun."
+                        )
+                    proc = subprocess.run(
+                        ["lake", "env", "lean", str(script)], cwd=FORMAL,
+                        capture_output=True, text=True, encoding="utf-8", errors="replace",
                     )
-                proc = subprocess.run(
-                    ["lake", "env", "lean", str(script)], cwd=FORMAL,
-                    capture_output=True, text=True, encoding="utf-8", errors="replace",
-                )
-                source_digest_after = lean_task_build.source_digest()
+                    source_digest_after = lean_task_build.source_digest()
         except lean_task_build.BuildLockBusy as exc:
             raise RuntimeError(
                 "D0 Lean build/cache is busy; retry declaration extraction after it finishes."

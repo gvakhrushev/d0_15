@@ -53,6 +53,74 @@ class BuildLockTests(unittest.TestCase):
 
         self.assertEqual(lf_digest, crlf_digest)
 
+    def test_windows_symlink_materialization_preserves_dereferenced_digest(self):
+        with tempfile.TemporaryDirectory(prefix="d0-windows-symlink-") as directory:
+            root = Path(directory)
+            formal = root / "03_FORMALIZATION"
+            link = formal / "D0" / "Research" / "Alias.lean"
+            target = root / "02_REGISTRY" / "research" / "proof.lean"
+            link.parent.mkdir(parents=True)
+            target.parent.mkdir(parents=True)
+            source = b"theorem source : True := by trivial\n"
+            target.write_bytes(source)
+            link_text = b"../../../02_REGISTRY/research/proof.lean"
+            link.write_bytes(link_text)
+
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "config", "core.symlinks", "false"], cwd=root, check=True)
+            blob = subprocess.check_output(
+                ["git", "hash-object", "-w", "--stdin"], cwd=root, input=link_text
+            ).decode().strip()
+            subprocess.run(
+                ["git", "update-index", "--add", "--cacheinfo",
+                 f"120000,{blob},03_FORMALIZATION/D0/Research/Alias.lean"],
+                cwd=root,
+                check=True,
+            )
+
+            with patch.object(lean_task_build, "ROOT", root), patch.object(
+                lean_task_build, "FORMAL", formal
+            ):
+                placeholder_digest = lean_task_build.source_digest()
+                with lean_task_build.materialize_windows_lean_symlinks(enabled=True):
+                    self.assertEqual(link.read_bytes(), source)
+                    self.assertEqual(lean_task_build.source_digest(), placeholder_digest)
+                self.assertEqual(link.read_bytes(), link_text)
+                self.assertEqual(lean_task_build.source_digest(), placeholder_digest)
+
+    def test_windows_symlink_materialization_refuses_local_placeholder_edits(self):
+        with tempfile.TemporaryDirectory(prefix="d0-windows-symlink-edit-") as directory:
+            root = Path(directory)
+            formal = root / "03_FORMALIZATION"
+            link = formal / "D0" / "Research" / "Alias.lean"
+            target = root / "02_REGISTRY" / "research" / "proof.lean"
+            link.parent.mkdir(parents=True)
+            target.parent.mkdir(parents=True)
+            link_text = b"../../../02_REGISTRY/research/proof.lean"
+            link.write_bytes(b"local edit\n")
+            target.write_bytes(b"theorem source : True := by trivial\n")
+
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "config", "core.symlinks", "false"], cwd=root, check=True)
+            blob = subprocess.check_output(
+                ["git", "hash-object", "-w", "--stdin"], cwd=root, input=link_text
+            ).decode().strip()
+            subprocess.run(
+                ["git", "update-index", "--add", "--cacheinfo",
+                 f"120000,{blob},03_FORMALIZATION/D0/Research/Alias.lean"],
+                cwd=root,
+                check=True,
+            )
+            original = link.read_bytes()
+
+            with patch.object(lean_task_build, "ROOT", root), patch.object(
+                lean_task_build, "FORMAL", formal
+            ):
+                with self.assertRaisesRegex(RuntimeError, "local edits"):
+                    with lean_task_build.materialize_windows_lean_symlinks(enabled=True):
+                        self.fail("a locally edited symlink placeholder was accepted")
+            self.assertEqual(link.read_bytes(), original)
+
     def test_cross_process_exclusion_preserves_lock_file_and_releases(self):
         with tempfile.TemporaryDirectory(prefix="d0-build-lock-") as directory:
             lock_path = Path(directory) / "d0-task-build.lock"

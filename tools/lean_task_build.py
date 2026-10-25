@@ -23,6 +23,100 @@ LOCK = LAKE / "d0-task-build.lock"
 STAMP = LAKE / "d0-final-build.sha256"
 
 
+def _tracked_lean_symlink_targets() -> dict[str, tuple[bytes, pathlib.Path]]:
+    """Return project Lean symlink entries and their checked-in target text.
+
+    On Windows, Git commonly checks a symlink out as a regular file containing
+    the link target. Lake then tries to parse that path as Lean source. Keep the
+    target bytes from Git's index so both the digest and the temporary build
+    view can use the source that a symlink-capable checkout reads.
+    """
+    try:
+        entries = subprocess.check_output(
+            ["git", "ls-files", "--stage", "-z", "--", "03_FORMALIZATION"],
+            cwd=ROOT,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+
+    targets: dict[str, tuple[bytes, pathlib.Path]] = {}
+    for entry in entries.split(b"\0"):
+        if not entry:
+            continue
+        metadata, raw_path = entry.split(b"\t", 1)
+        mode, blob_sha, stage = metadata.split()
+        if mode != b"120000" or stage != b"0" or not raw_path.endswith(b".lean"):
+            continue
+        relative = os.fsdecode(raw_path)
+        link_text = subprocess.check_output(
+            ["git", "cat-file", "blob", os.fsdecode(blob_sha)], cwd=ROOT
+        )
+        link_target = pathlib.Path(os.fsdecode(link_text))
+        link_path = ROOT / pathlib.Path(relative)
+        target_path = (link_path.parent / link_target).resolve(strict=True)
+        try:
+            target_path.relative_to(ROOT.resolve())
+        except ValueError as exc:
+            raise RuntimeError(
+                f"tracked Lean symlink escapes the repository: {relative} -> {link_target}"
+            ) from exc
+        if not target_path.is_file():
+            raise RuntimeError(
+                f"tracked Lean symlink target is not a file: {relative} -> {link_target}"
+            )
+        targets[relative] = (link_text, target_path)
+    return targets
+
+
+@contextmanager
+def materialize_windows_lean_symlinks(enabled: bool | None = None):
+    """Temporarily expose tracked Lean symlink targets to native Windows Lake."""
+    if enabled is None:
+        enabled = os.name == "nt"
+    if not enabled:
+        yield
+        return
+
+    materialized: list[tuple[pathlib.Path, bytes]] = []
+    try:
+        for relative, (link_text, target_path) in _tracked_lean_symlink_targets().items():
+            link_path = ROOT / pathlib.Path(relative)
+            if link_path.is_symlink():
+                continue
+            current = link_path.read_bytes()
+            target_bytes = target_path.read_bytes()
+            if current == target_bytes:
+                continue
+            if current != link_text:
+                raise RuntimeError(
+                    f"tracked Lean symlink placeholder has local edits: {relative}"
+                )
+            materialized.append((link_path, current))
+            link_path.write_bytes(target_bytes)
+        yield
+    finally:
+        for link_path, link_text in reversed(materialized):
+            link_path.write_bytes(link_text)
+
+
+def _source_bytes(path: pathlib.Path, symlink_targets: dict[str, tuple[bytes, pathlib.Path]]) -> bytes:
+    """Read the bytes Lean sees, including a dereferenced Windows symlink."""
+    source = path.read_bytes()
+    try:
+        relative = path.relative_to(ROOT).as_posix()
+    except ValueError:
+        return source
+    target = symlink_targets.get(relative)
+    if target is None or path.is_symlink():
+        return source
+    link_text, target_path = target
+    if source == link_text:
+        return target_path.read_bytes()
+    if source == target_path.read_bytes():
+        return source
+    raise RuntimeError(f"tracked Lean symlink placeholder has local edits: {relative}")
+
+
 class BuildLockBusy(Exception):
     """Raised when another process owns the shared Lake build cache."""
 
@@ -83,10 +177,11 @@ def source_digest() -> str:
         p = FORMAL / extra
         if p.exists():
             files.append(p)
+    symlink_targets = _tracked_lean_symlink_targets()
     for p in sorted(set(files)):
         h.update(p.relative_to(FORMAL).as_posix().encode())
         h.update(b"\0")
-        h.update(p.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n"))
+        h.update(_source_bytes(p, symlink_targets).replace(b"\r\n", b"\n").replace(b"\r", b"\n"))
         h.update(b"\0")
     return h.hexdigest()
 
@@ -95,11 +190,12 @@ def run_locked(command: list[str], target: str) -> int:
     LAKE.mkdir(parents=True, exist_ok=True)
     try:
         with build_lock(LOCK):
-            before = source_digest()
-            started = time.monotonic()
-            proc = subprocess.run(command, cwd=FORMAL)
-            elapsed = time.monotonic() - started
-            after = source_digest()
+            with materialize_windows_lean_symlinks():
+                before = source_digest()
+                started = time.monotonic()
+                proc = subprocess.run(command, cwd=FORMAL)
+                elapsed = time.monotonic() - started
+                after = source_digest()
             print(f"D0_BUILD target={target} seconds={elapsed:.1f} returncode={proc.returncode}")
             if before != after:
                 print(
