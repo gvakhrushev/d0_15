@@ -1,0 +1,139 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "560739696d60e14417d6054185933dc2ea249385",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db",
+  "collector_sha256": "ce7211c09b82e6fce3ac1d3db75ea985bf1c6e516c152d706de5ebe52a186560",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.hodgeCarDirac_kernel_finrank"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "Module.finrank ℝ ↥(D0.Geometry.hodgeCarDiracₗ N).ker = 16",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 28,
+            "line": 371
+          },
+          "start": {
+            "column": 0,
+            "line": 368
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 36,
+            "line": 368
+          },
+          "start": {
+            "column": 8,
+            "line": 368
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ), Module.finrank ℝ ↥(D0.Geometry.hodgeCarDiracₗ N).ker = 16",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDirac_kernel_finrank",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.card_archive_fock_state",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeKernelEquiv",
+        "D0.Role",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin.fintype",
+        "Fintype.card",
+        "LinearEquiv.finrank_eq",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Module.finrank",
+        "Module.finrank_fintype_fun_eq_card",
+        "Nat",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instNontrivial",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "commRing_strongRankCondition",
+        "congrArg",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "Eq",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Module.finrank",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    }
+  ]
+}

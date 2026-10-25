@@ -5292,6 +5292,30 @@ There is no operator equality or kernel-transport theorem connecting it to
 `ArchiveCARDirac` or CAR zero-mode support row. Both modules being imported
 into `D0.All` does not identify their operators.
 
+The narrow compiled inventories were generated at PR commit
+`560739696d60e14417d6054185933dc2ea249385`, Lean 4.30.0, with unchanged
+Lean-source digest
+`ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db`. The CAR
+query used public import `D0.Geometry.ArchiveCARDirac` from a clean snapshot;
+`car_zero_mode_independent_of_L` elaborates to
+`∀ n, D0.Geometry.carDiracKernelDim = 16` with no axioms, and
+`archive_car_zero_mode_owner` elaborates to that constant equality plus a size
+inequality, with `Classical.choice`, `Quot.sound`, and `propext` in its axiom
+closure. The Hodge query used public import
+`D0.Geometry.ArchiveHodgeCARDiracKernel` and confirms the kernel-finrank type
+above; its recorded axiom closure includes the two existing `native_decide`
+CAR-identity proofs, `Classical.choice`, `Quot.sound`, and `propext`. The Hodge
+inventory's `worktree_dirty=true` records that the earlier CAR inventory JSON
+was already present; its Lean-source digest and exact declaration are pinned.
+The machine records are
+[`car_zero_mode_claim_declarations_2026-10-25.json`](sources/d0_proof_architecture_formalization_2026-10-24/car_zero_mode_claim_declarations_2026-10-25.json),
+SHA-256 `12752bfed1ce3613efbca34b6456a3a05940306e21785c92368088174179d860`,
+and
+[`hodge_car_dirac_kernel_declaration_2026-10-25.json`](sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_kernel_declaration_2026-10-25.json),
+SHA-256 `cd4d6a4bf092088bf0d6a554c2d38f7ab6516fa7bcaaddbee4a87ffada2a0dbb`.
+Each inventory builds and imports only its named owner module; neither invokes
+the full `D0.All` Ready replay.
+
 The claimed Book locator `BOOK_06 / 06.spectral kernel dimension of the actual
 CAR Dirac operator` has no exact heading match in the source-candidate view;
 the current Book 06 contains no CAR/Dirac/zero-mode passage. A read-only
