@@ -12092,3 +12092,160 @@ the incoming brief is an exact prefix. Combined insertion22475 bytes,
 SHA2561c3c6ef027bfc0599eaa3f9eafeff5bd9056963ff699968688ec011b6e2038c0.
 The existing primary positive family, all40+2 owner, enlarged-cut7be
 experiment, original-Walsh source and all prior limitations are retained.
+
+### 25 October: positive G/CX realize the new whole-price targets and amplified-SOURCE query
+
+Phase: native realization / remove a concrete implementation premise.
+SAME PR334, constitutive/native-programme-v1, mathematical input1ec32b66, integrated aftera26570b9.
+Consume the ALREADY OWNED7w/7ac positive G/CX density and finite word
+search, TC9--12 true-clock bounds, and the new7bd--7be geometric and
+full128 material targets. No new gate-density classification, physical
+clock assertion, action, selector, scientific task or registry change.
+
+Existing primary7bg491--495 compiles the COMPLETE real SO target
+DIRECTLY using the original G_CX profile. No exact SourceI pulse,
+source-port inverse, sign/Hadamard gate or involutive native endpoint
+is assumed. All active modes are dyadic with b>=3; immutable RIGHT
+and protected spectators remain exact identity factors and are never
+addressed. Their actual multiplicity is preserved. Non-dyadic and
+determinant-minus targets need explicit separate completions.
+
+For whole endpoint error epsilon, the same-actual-N full heat error
+is <=epsilon and true rank-r feedback error <=2r zeta epsilon/(1-zeta).
+The complete-price bound [1+2r zeta/(1-zeta)]epsilon is independent
+of unknown search length. DATA-only Stiefel source rows of the ideal
+scalar kernel have <=4r zeta epsilon/(1-zeta) times their actual
+input tangent norm. This consumes7be's full-column null kernel; it
+is not an arbitrary cut/WORK tangent result. Actual source preparation
+and kernel residuals retain their precision budgets.
+
+Thus finite precision is fixed first, a mathematical dovetail finds
+hardwired words next, and their genuine common duration is charged
+using old2/5-CX identities. Field stencils keep the real epsilon/
+(a_h delta) gain budget and all RIGHT/face ranks. Mathematical search
+is not a free autonomous runtime compiler. Density gives no N*epsilon
+bound. Only heat may use its already-owned factorial N L_N estimate;
+raw feedback/WORK/source-preparer rows require their own estimates
+WHEN admitted by original task/domain. No unrestricted WORK Euler
+premise or new physical norm is introduced.
+
+An optional explicit-CX-middle completion U directsum I uses one real
+blank bit and has3:1 multiplicities. Its target H/X are only matrices
+inside the computable conjugator, not extra exact native gates. The
+bit doubles full heat, not prepared rank. Direct compilation needs
+no such extra bit for the old balanced SO targets.
+
+Decisive NEW control only: literal N20 word G^18;CX;G in G_CX,
+19G/1CX/0SourceI,D16,r4, with oldRIGHT bit3 untouched. Exact algebraic
+endpoint-error square and a rational root-isolation bound certify
+error<1/8. The actual endpoint is explicitly NOT involutive. All640
+paired-clock modes and the true determinant are retained; display-only
+80-digit whole-price diagnostic is consistent with the analytic bound.
+A separate small rational DATA fixture has a nonzero prep source
+within493, preventing a false exact-zero claim. No old density,
+full-CAR, gravity/root, compiler, clock or Lean replay.
+
+Integrator execution: exit0/PASS, Python3.9.6/SymPy1.14.0.
+Endpoint diagnostic0.0921459718022; whole-price difference
+-2.05269453996e-7. The executable code is unchanged; only an equation-number comment
+changed during7bg renumbering (AST equality verified). The combined DATA estimate retains actualr_h/a_h including face factors;
+epsilon/eta_h^2 alone is only the isolated-matter specialization.
+The exact inequalities are proved analytically
+and by rational isolation; diagnostics are not interval certificates.
+
+Frozen7bg and final source-only review are recorded below after integration.
+Extracted code excluding closingnewline:3192 bytes,
+SHA256ada4695d1d3fae35b19ff3714b1855eb6ab9134bbfdfce60d2dd0ef1deba0a96.
+Write paths: existing primary7bg and this existing brief only.
+
+Parent substitution: SourceI-free finite native realization now covers
+the stated whole-price/source-stencil and DATA consumers; exact source-
+port availability and exact inverse/middle no longer enter those
+particular estimates. Original scene/Role mapping, retained input span,
+field/arm/readback admission and independent physical source equations
+remain. It does not negate the new exact original CAR16 two-mode
+source on its separate instrument/cut, create a mandatory unrestricted
+control domain, or establish full GR by programmability. No promotion
+of GR_closed,positive_gr or raw216.
+
+Current-input composition aftera26570b9 (new7bf retained BYTE EXACT):
+7bg496--498 retains the ACTUAL SourceI amplifier and BOTH paid source
+legs, but compiles the complete material QUERY endpoint directly in
+G_CX. The proven W-resolvent bound controls the lost Hermiticity:
+SOURCE error adds4q zeta N_SOURCE e_Q/(1-zeta)^2, with totalr_h
+instead ofq for a whole multi-arm approximation. Density supplies no
+QUERYlength*error theorem; raw QUERY rows remain their actual domain
+application. No global removal of SourceI from amplification is claimed.
+
+The owned33scene Fourier majorant gives actual weighted heat bound496;
+no bare-clock constant is substituted. Tensoring the OWNED weighted
+Js/Jt endpoint maps with a finite internal module supplies an explicit
+homogeneous placement model, retaining the path histories separately.
+It does not identify its Role fields with the original33scene metric.
+All final2/5-CX duration padding uses three QUERY-work wires reserved
+at the outset, with actual blanks/modes paid. It adds no SOURCE count
+after source depth/precision have been chosen.
+
+Generic endpoint density need not preserve READY pointers. The actual
+unconditioned LEFT/QUERY variant498 instead leaves every declared
+protected flag/transcript/rebit/RIGHT wire unaddressed and pays all
+failed executions. Its real, possibly NONSCALAR failed-state corner replaces the old
+conditioned baseline; no helper-factorization hypothesis is inserted. Additional field-secant error is explicitly
+4q zeta epsilon_r/[(1-zeta)delta_h] before physical normalization.
+Exact arm-reader tasks retain their own layout/readback budget.
+
+NEW changed-step rational SOURCE check: exit0/PASS, all32 independently
+varied forward/reverse rows across16 complex unitary generators; retained
+failure, non-Hermitian compression, nonscalar corner and exact W bound.
+2020 bytes, SHA25651984555234d229df677a8556352006416b2526aae405e12b2de3a5ca69fdcf7.
+The earlier literal G_CX example was not rerun, nor any owned amplifier,
+GR/root, compiler, clock or Lean build.
+
+Frozen integrated7bg INCLUDING next-heading separator:26905 bytes,
+SHA2563287d00a65f9198adf6b4ff9455b2c2b154edba30011ff16572f9897f02bd8bc.
+Source-only final reviews and affected structural checks follow.
+
+Pinned source-only reviews: native_source_application and
+stationary_root_transfer ACCEPT26629/b3af844bec96598b038992859993c22027a3c73274ca25dde6e4e9846e0d8f27.
+price_geometry_bridge independently confirmed the W constant,
+protected-pointer variant, QUERY-only padding and full-rank guard;
+its final whole-section pin review is not represented as completed here.
+No reviewer changed files or reran calculations.
+
+Affected final structural checks PASS after integrating incomingd41b2922:
+work, agent protocol, gravity assembly(valid=true;54active/98results/
+5discharged/22obligations;scientific_promotion=false), repository
+(889claims/31assumptions/58aliases/183formal_support/918Leanclosure;
+warnings0), plus whitespace. This is local structural/source validation,
+not remote CI or physical acceptance. Removing7bg restores the complete
+incoming primary BYTE EXACT, SHA256
+f827a5cc428fc515a3f2958a221d211419a0d1f93eddadff03acf19657800df4;
+the incoming brief remains an exact prefix. Only the two owned paths
+are changed. Final proof/code pins above are retained.
+
+Final boundary clarification after the third review: protected flag/
+transcript readback in498 is at the QUERY boundary; A_r^dagger remains
+in the complete word and may uncompute its own SOURCE flags. This is
+not a permanent terminal archive. If the actual task requires such a
+seal,7bc's changed price/source remains mandatory. price_geometry_bridge
+confirmed all price/source mathematics and requested this explicit
+scope sentence. It changes no calculation or code. The two pinned
+ACCEPT reviews above refer to the proof before this clarification;
+the final section hash records the added boundary.
+
+The checkpoint was rebased onto incoming71b4752a after a normal push
+was rejected by concurrent progress. Its new original two-context
+Born-to-Book source proofs and checks are preserved completely. Their
+write paths are disjoint from this insertion; no duplicate replay or
+claim promotion is inferred from their intake.
+
+Both native_source_application and stationary_root_transfer subsequently
+ACCEPT the exact FINAL26905/3287d00a65f9198adf6b4ff9455b2c2b154edba30011ff16572f9897f02bd8bc
+source, including the QUERY-boundary clarification. No replay or edits.
+
+Final third source-only review: price_geometry_bridge ACCEPTs the exact
+FINAL26905/3287d00a65f9198adf6b4ff9455b2c2b154edba30011ff16572f9897f02bd8bc
+proof and both code pins, including QUERY-boundary/terminal separation.
+All three reviews therefore cover the final scientific text. No new runs.
+The further disjoint original-context/minimal-readout intake545d3e28
+is also preserved; it does not change this calculation's inputs.
