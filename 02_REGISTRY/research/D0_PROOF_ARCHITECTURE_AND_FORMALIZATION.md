@@ -2472,3 +2472,61 @@ unrelated-prose impact regression. The exact theorem query returned this
 artifact, `A4DJuliaRecoveryComposition.lean`, and the owning-module inventory
 as its first three direct-content candidates. This validates retrieval and
 scope routing; semantic and physical acceptance remain separate.
+
+### All-site symmetric metric tangent composition (25 October 2026)
+
+The existing `D0.Geometry.A4DSolderMetricCompletion` module already defines
+the finite solder Gram map `Theta * eta * Thetaᵀ`, its exact expansion, and its
+flat difference quotient. The new
+`coframeMetricReadout_realizes_symmetric` makes the missing linear application
+explicit: for every finite lattice size `N` and every symmetric `Role` matrix
+`q`, one constant field `e(x,r,a)=q(r,a)/2` realizes `q` at every site.
+`solderMetric_realizes_symmetric_tangent` composes that same witness with the
+nonlinear Gram path. For every site and every real `t`, the path is exactly
+`eta + t q + t² C eta Cᵀ`; when `t ≠ 0`, its difference quotient is exactly
+`q + t C eta Cᵀ`. Thus the first-order coefficient is an arbitrary symmetric
+metric direction, with its finite-parameter remainder retained rather than
+discarded.
+
+This theorem has no nondegeneracy premise on `q`, and it does not claim that
+the finite-`t` Gram remains nondegenerate. It formalizes the all-site finite
+solder-Gram tangent used by the metric-provenance route; it does not prove
+selection of this map by the physical star action or an admitted execution,
+the full independent 16+24 variation, a continuum field equation, or
+refinement. The owned nonlinear quotient and Einstein detector remain at the
+source memo's stated research scope; physical metric/source selection and
+global all-mode connection elimination remain open.
+
+The compiled `D0.All` owning-module inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/solder_metric_tangent_inventory_2026-10-25.json`.
+It records 99 declarations in `D0.Geometry.A4DSolderMetricCompletion`,
+including both new theorems with the quantified symmetric-matrix statement,
+explicit coframe witness, exact quadratic remainder, and difference quotient.
+The inventory is at snapshot `981a543df11e1acc7c62ac515939692c8103ae9c`,
+with the project Lean source digest
+`8fb449ea0985ce8efbd85b1ef2ca5315283d875e755b138c4853eea2f04953ba`,
+collector SHA-256
+`1a4b7f2476594e0c124609dfcdd97d1c76dad72ee01f9af157c4e491d5767531`, and
+Lean `leanprover/lean4:v4.30.0`. The declarations report the standard
+`Classical.choice`, `Quot.sound`, and `propext` footprint. The module SHA-256
+is `64e61c514b1e57cc89fc46c879fee59540427900eb09a9a66b67d79ce8d530c2`.
+
+The changed module passed the narrow build (2,979 Lake jobs); the public
+`D0.All` final build passed (4,568 Lake jobs). The direct source pin is added
+to the existing `metric-provenance` evidence record; it is a formal locator
+for this algebraic tangent, not a new application acceptance or C0 status.
+The refreshed all-result declaration crosswalk keeps all 54 active results;
+it records 191 evidence references, 182 verified pins, and the new module pin
+with all 99 owning-module declarations. For `metric-provenance`, the pin is
+verified but the semantic relation remains `unresolved` and
+`acceptance_inferred=false`. The captured crosswalk snapshot is at
+`981a543df11e1acc7c62ac515939692c8103ae9c` with `worktree_dirty=true`, Lean
+source digest `8fb449ea0985ce8efbd85b1ef2ca5315283d875e755b138c4853eea2f04953ba`,
+collector SHA-256
+`5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1`, and
+artifact SHA-256
+`a938dc26f8151e0b6ec64c67d64a6d8aa90761d9b5b364ff67c88af71ad14fd5`.
+`python3 -m unittest tools.test_proof_architecture` passed 40/40, and
+`gr_assembly.py check` reports a valid 54-result assembly with
+`scientific_promotion=false`. These are pin, build, and routing checks only;
+they do not accept a semantic or physical link.

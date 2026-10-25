@@ -37,9 +37,14 @@
             "L16: A. The selected finite action already owns a nonlinear metric carrier",
             "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
           ]
+        },
+        {
+          "ref": "981a543df11e1acc7c62ac515939692c8103ae9c",
+          "path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+          "sha256": "64e61c514b1e57cc89fc46c879fee59540427900eb09a9a66b67d79ce8d530c2"
         }
       ],
-      "reported_state": "Main-owned metric provenance; global all-mode elimination remains obstructed."
+      "reported_state": "Main-owned metric provenance remains scoped: the pinned source owns the star-action quotient, and the pinned Lean module proves an all-site finite solder-Gram tangent for every symmetric Role matrix with an explicit coframe witness. Global all-mode connection elimination and physical metric/source selection remain open."
     },
     {
       "id": "smooth-parametrix",
