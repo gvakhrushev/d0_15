@@ -121,6 +121,41 @@ class BuildLockTests(unittest.TestCase):
                         self.fail("a locally edited symlink placeholder was accepted")
             self.assertEqual(link.read_bytes(), original)
 
+    def test_windows_symlink_materialization_recovers_after_interrupted_run(self):
+        with tempfile.TemporaryDirectory(prefix="d0-windows-symlink-recover-") as directory:
+            root = Path(directory)
+            formal = root / "03_FORMALIZATION"
+            link = formal / "D0" / "Research" / "Alias.lean"
+            target = root / "02_REGISTRY" / "research" / "proof.lean"
+            link.parent.mkdir(parents=True)
+            target.parent.mkdir(parents=True)
+            source = b"theorem source : True := by trivial\n"
+            target.write_bytes(source)
+            link_text = b"../../../02_REGISTRY/research/proof.lean"
+            link.write_bytes(link_text)
+
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "config", "core.symlinks", "false"], cwd=root, check=True)
+            blob = subprocess.check_output(
+                ["git", "hash-object", "-w", "--stdin"], cwd=root, input=link_text
+            ).decode().strip()
+            subprocess.run(
+                ["git", "update-index", "--add", "--cacheinfo",
+                 f"120000,{blob},03_FORMALIZATION/D0/Research/Alias.lean"],
+                cwd=root,
+                check=True,
+            )
+
+            # Simulate a process killed after materializing the pointer but
+            # before its finally block restored the checked-out representation.
+            link.write_bytes(source)
+            with patch.object(lean_task_build, "ROOT", root), patch.object(
+                lean_task_build, "FORMAL", formal
+            ):
+                with lean_task_build.materialize_windows_lean_symlinks(enabled=True):
+                    self.assertEqual(link.read_bytes(), source)
+                self.assertEqual(link.read_bytes(), link_text)
+
     def test_cross_process_exclusion_preserves_lock_file_and_releases(self):
         with tempfile.TemporaryDirectory(prefix="d0-build-lock-") as directory:
             lock_path = Path(directory) / "d0-task-build.lock"

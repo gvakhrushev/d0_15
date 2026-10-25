@@ -69,7 +69,7 @@ def _tracked_lean_symlink_targets() -> dict[str, tuple[bytes, pathlib.Path]]:
 
 
 @contextmanager
-def materialize_windows_lean_symlinks(enabled: bool | None = None):
+def materialize_windows_lean_symlinks(enabled=None):
     """Temporarily expose tracked Lean symlink targets to native Windows Lake."""
     if enabled is None:
         enabled = os.name == "nt"
@@ -86,6 +86,9 @@ def materialize_windows_lean_symlinks(enabled: bool | None = None):
             current = link_path.read_bytes()
             target_bytes = target_path.read_bytes()
             if current == target_bytes:
+                # Recover from an earlier interrupted process that left the
+                # temporary dereferenced bytes in place.
+                materialized.append((link_path, link_text))
                 continue
             if current != link_text:
                 raise RuntimeError(
