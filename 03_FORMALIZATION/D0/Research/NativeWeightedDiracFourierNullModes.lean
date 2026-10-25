@@ -111,6 +111,95 @@ theorem archiveFockProfile_complex_finrank :
     Module.finrank ℂ (ArchiveFockState → ℂ) = 16 := by
   rw [Module.finrank_fintype_fun_eq_card, card_archive_fock_state]
 
+/-- The zero-momentum Fourier fibre has no forward or backward difference,
+so its actual profile operator is zero. -/
+theorem roleWeightedArchiveFourierFockActionLinear_eq_zero_at_zero (N : ℕ)
+    (w : Role → ℝ) :
+    roleWeightedArchiveFourierFockActionLinear N w 0 = 0 := by
+  apply LinearMap.ext
+  intro v
+  funext S
+  simp [roleWeightedArchiveFourierFockActionLinear,
+    archiveFourierForwardMultiplier, archiveFourierBackwardMultiplier,
+    FiniteCycleFourier.cycleChar_zero_left]
+
+/-- The zero momentum retains the entire sixteen-dimensional Fock kernel. -/
+theorem roleWeightedArchiveFourierFockActionLinear_ker_finrank_at_zero (N : ℕ)
+    (w : Role → ℝ) :
+    Module.finrank ℂ
+      (LinearMap.ker (roleWeightedArchiveFourierFockActionLinear N w 0)) = 16 := by
+  rw [roleWeightedArchiveFourierFockActionLinear_eq_zero_at_zero]
+  rw [LinearMap.ker_zero, finrank_top, archiveFockProfile_complex_finrank]
+
+/-- The explicit inverse of a non-null Fourier-fibre Dirac map. -/
+noncomputable def roleWeightedArchiveFourierFockActionLinearInverse (N : ℕ)
+    (w : Role → ℝ) (k : Role → ZMod (archiveFibers N)) :
+    (ArchiveFockState → ℂ) →ₗ[ℂ] (ArchiveFockState → ℂ) :=
+  (Complex.ofReal (roleWeightedArchiveFourierSymbol N w k))⁻¹ •
+    roleWeightedArchiveFourierFockActionLinear N w k
+
+/-- When the exact Fourier symbol is nonzero, the scaled Dirac map is a
+two-sided inverse on the actual complex profile space. -/
+theorem roleWeightedArchiveFourierFockActionLinear_inverse_spec
+    (N : ℕ) (w : Role → ℝ) (k : Role → ZMod (archiveFibers N))
+    (hsymbol : roleWeightedArchiveFourierSymbol N w k ≠ 0) :
+    (roleWeightedArchiveFourierFockActionLinear N w k).comp
+        (roleWeightedArchiveFourierFockActionLinearInverse N w k) = LinearMap.id ∧
+    (roleWeightedArchiveFourierFockActionLinearInverse N w k).comp
+        (roleWeightedArchiveFourierFockActionLinear N w k) = LinearMap.id := by
+  let D := roleWeightedArchiveFourierFockActionLinear N w k
+  let c : ℂ := Complex.ofReal (roleWeightedArchiveFourierSymbol N w k)
+  have hc : c ≠ 0 := by
+    dsimp [c]
+    exact_mod_cast hsymbol
+  have hsquare : D.comp D = c • LinearMap.id := by
+    simpa [D, c] using roleWeightedArchiveFourierFockActionLinear_square N w k
+  have hleft : D.comp (c⁻¹ • D) = LinearMap.id := by
+    calc
+      D.comp (c⁻¹ • D) = c⁻¹ • (D.comp D) := by rw [LinearMap.comp_smul]
+      _ = c⁻¹ • (c • LinearMap.id) := by rw [hsquare]
+      _ = LinearMap.id := by rw [smul_smul]; simp [hc]
+  have hright : (c⁻¹ • D).comp D = LinearMap.id := by
+    calc
+      (c⁻¹ • D).comp D = c⁻¹ • (D.comp D) := by rw [LinearMap.smul_comp]
+      _ = c⁻¹ • (c • LinearMap.id) := by rw [hsquare]
+      _ = LinearMap.id := by rw [smul_smul]; simp [hc]
+  constructor
+  · simpa [roleWeightedArchiveFourierFockActionLinearInverse, D, c] using hleft
+  · simpa [roleWeightedArchiveFourierFockActionLinearInverse, D, c] using hright
+
+/-- A nonzero Fourier symbol makes the actual finite profile map injective. -/
+theorem roleWeightedArchiveFourierFockActionLinear_ker_eq_bot_of_nonzero_symbol
+    (N : ℕ) (w : Role → ℝ) (k : Role → ZMod (archiveFibers N))
+    (hsymbol : roleWeightedArchiveFourierSymbol N w k ≠ 0) :
+    LinearMap.ker (roleWeightedArchiveFourierFockActionLinear N w k) = ⊥ := by
+  apply LinearMap.ker_eq_bot.mpr
+  intro v u huv
+  have hinv := roleWeightedArchiveFourierFockActionLinear_inverse_spec N w k hsymbol
+  have hcancel := congrArg (roleWeightedArchiveFourierFockActionLinearInverse N w k) huv
+  have hrestore (x : ArchiveFockState → ℂ) :
+      roleWeightedArchiveFourierFockActionLinearInverse N w k
+          (roleWeightedArchiveFourierFockActionLinear N w k x) = x := by
+    have h := congrArg (fun T : (ArchiveFockState → ℂ) →ₗ[ℂ]
+        (ArchiveFockState → ℂ) => T x) hinv.2
+    simpa [LinearMap.comp_apply, LinearMap.id_apply] using h
+  calc
+    v = roleWeightedArchiveFourierFockActionLinearInverse N w k
+        (roleWeightedArchiveFourierFockActionLinear N w k v) := (hrestore v).symm
+    _ = roleWeightedArchiveFourierFockActionLinearInverse N w k
+        (roleWeightedArchiveFourierFockActionLinear N w k u) := hcancel
+    _ = u := hrestore u
+
+/-- The non-null fibre therefore has zero-dimensional complex kernel. -/
+theorem roleWeightedArchiveFourierFockActionLinear_ker_finrank_zero_of_nonzero_symbol
+    (N : ℕ) (w : Role → ℝ) (k : Role → ZMod (archiveFibers N))
+    (hsymbol : roleWeightedArchiveFourierSymbol N w k ≠ 0) :
+    Module.finrank ℂ
+      (LinearMap.ker (roleWeightedArchiveFourierFockActionLinear N w k)) = 0 := by
+  rw [roleWeightedArchiveFourierFockActionLinear_ker_eq_bot_of_nonzero_symbol
+    N w k hsymbol]
+  simp
+
 /-- Exact eight-dimensional complex kernel for every supplied zero-symbol
 fibre with a nonzero forward multiplier. -/
 theorem null_mode_kernel_finrank
@@ -133,6 +222,38 @@ theorem null_mode_kernel_finrank_of_nonzero_momentum
       (LinearMap.ker (roleWeightedArchiveFourierFockActionLinear N w k)) = 8 := by
   obtain ⟨r, hforward⟩ := exists_role_with_nonzero_forward_multiplier N k hk
   exact null_mode_kernel_finrank N w k r hsymbol hforward
+
+/-- Complete per-fibre complex kernel-dimension classification for the
+role-weighted operator: zero momentum contributes 16, nonconstant null fibres
+contribute 8, and non-null fibres contribute 0. -/
+theorem roleWeightedArchiveFourierFockActionLinear_kernel_finrank_cases
+    (N : ℕ) (w : Role → ℝ) (k : Role → ZMod (archiveFibers N)) :
+    Module.finrank ℂ
+        (LinearMap.ker (roleWeightedArchiveFourierFockActionLinear N w k)) =
+      if k = 0 then 16 else
+        if roleWeightedArchiveFourierSymbol N w k = 0 then 8 else 0 := by
+  by_cases hk : k = 0
+  · subst k
+    simp [roleWeightedArchiveFourierFockActionLinear_ker_finrank_at_zero]
+  · by_cases hsymbol : roleWeightedArchiveFourierSymbol N w k = 0
+    · rw [if_neg hk, if_pos hsymbol]
+      exact null_mode_kernel_finrank_of_nonzero_momentum N w k hsymbol hk
+    · rw [if_neg hk, if_neg hsymbol]
+      exact roleWeightedArchiveFourierFockActionLinear_ker_finrank_zero_of_nonzero_symbol
+        N w k hsymbol
+
+/-- The same three-case kernel-dimension theorem specialized to the
+repository's exact role signs and Eq. (5) symbol. -/
+theorem archiveLorentzian_kernel_finrank_cases
+    (N : ℕ) (k : Role → ZMod (archiveFibers N)) :
+    Module.finrank ℂ
+        (LinearMap.ker
+          (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign k)) =
+      if k = 0 then 16 else
+        if archiveLorentzianFourierSymbol N k = 0 then 8 else 0 := by
+  simpa [roleWeightedArchiveFourierSymbol_lorentzian] using
+    roleWeightedArchiveFourierFockActionLinear_kernel_finrank_cases
+      N roleLorentzSign k
 
 /-- Eq. (7)'s kernel/range and rank-eight conclusion for the repository's
 role-signed archive Fourier operator, conditional on its exact Eq. (5) null

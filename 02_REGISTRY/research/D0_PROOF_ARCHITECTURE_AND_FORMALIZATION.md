@@ -4780,7 +4780,7 @@ checkpoint under the repository validation budget. The focused inventory and
 the five changed-consumer narrow builds are complete. The inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/archive_car_matrix_linear_operator_refactor_declarations_2026-10-25.json`.
 
-### Exact CAR contraction and eight-dimensional kernel on nonconstant null Fourier fibres (25 October 2026)
+### Complete per-fibre kernel classification for the weighted Fourier operator (25 October 2026)
 
 The new application module
 `D0.Research.NativeWeightedDiracFourierNullModes` consumes the actual complex
@@ -4802,6 +4802,22 @@ nilpotent-kernel implications gives, for every supplied nonconstant
 zero-symbol fibre, `ker D = range D` and complex kernel dimension exactly 8.
 The zero-symbol equation and the explicit real role weights remain hypotheses;
 this does not prove the full dispersion/root count or refinement persistence.
+
+The same fibre module now closes all three kernel-dimension cases. At zero
+momentum, both difference multipliers vanish, so the sixteen-component map is
+zero and its complex kernel has dimension 16. For a nonzero symbol, the module
+constructs the two-sided inverse `symbol⁻¹ • D` directly from the exact
+square-to-symbol theorem; the kernel dimension is then 0. The new generic
+`roleWeightedArchiveFourierFockActionLinear_kernel_finrank_cases` and its
+`archiveLorentzian_kernel_finrank_cases` specialization state the exact split:
+16 at zero momentum, 8 at a nonconstant null symbol, and 0 off the null shell.
+The nonconstant null case additionally proves kernel equals range, with each
+space of complex dimension 8.
+
+This is a classification on each actual finite Fourier fibre. The number of
+momenta on the null shell, total-kernel counts on a grid, and their refinement
+behavior remain open; no all-size root count is inferred from the per-fibre
+result.
 The final specialization
 `archiveLorentzian_nonzero_null_mode_classification` binds the result to the
 repository's existing `roleLorentzSign` and `archiveLorentzianFourierSymbol`;
@@ -4818,7 +4834,7 @@ real specialization is unchanged. This separate mirror delta is at Git blob
 `60de6702e232d6b68fc3b707a058383c4c09b2ff` (SHA-256
 `fdf62644f086ba78c5d1ef203a4d3b7989488395c68afb0920bfa211f5c1d0f3`); the
 new adapter source SHA-256 is
-`a01c082a329f97cde560b226ae57bc0aa484f1ce4d932703dcd634f1600559c8` and the
+`7b88a6a550ca540336540ba4b030fdb16e142c30489c0eb42810d631849f4da2` and the
 updated geometric application SHA-256 is
 `3d7858a61101347807d9784579f1475739a1a75223dc2f5888d77362c9f699af`. The
 pinned source memo and its original source blobs are not rewritten.
@@ -4827,14 +4843,16 @@ The new declarations are registered in `formal_support.csv` and imported by
 the generated `D0.All`; no claim status, C0 acceptance, gravity obligation,
 or physical source choice changes. The focused compiled inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json`
-(188 declarations across four owning modules, including 10 in the new adapter;
-SHA-256 `67e50092ea59e8f87baa2c20d098efb7754176024b5e988e2f3760e5ed447a9b`). It uses
+(200 declarations across four owning modules, including 22 in the new adapter;
+SHA-256 `f289f58373c417e9c58a13a18d249d71d6fffa458c5745a30e639c0003869eab`). It uses
 import root `D0.Research.NativeWeightedDiracFourierNullModes`, Lean source
-digest `55c6b6f00ec2a945e553bf6d15dc00463d7ffb210c6e3a67b1541f3d7829db8a`,
+digest `c038d0b12cbf6064a7a370532bba2487104e55e243577b316f71a39f9ced606a`,
 collector SHA-256
 `cd8acaf6fa202e54f8090f9c5fb9fc210dfe03ba3197f21115581d7b7afad0cb`, and
-source snapshot `a6ff3f2fc7e0e6b94d673c2cd713cb4faeb94004` with a clean
-worktree. The contraction theorem's axiom footprint includes the existing
+source snapshot `86449dfab26c8d18fa904647e912de3afa2a2939` with a dirty
+worktree. The non-null inverse and null-kernel classification inherit the
+existing square theorem's CAR proof leaves. The contraction theorem's axiom
+footprint includes the existing
 finite annihilation and mixed-CAR `native_decide` leaves plus
 `Classical.choice`, `propext`, and `Quot.sound`; the null-kernel application
 also inherits the creation-CAR leaf through the square theorem. No `sorryAx`
