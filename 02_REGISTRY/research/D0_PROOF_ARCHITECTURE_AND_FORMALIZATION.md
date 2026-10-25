@@ -7698,3 +7698,57 @@ unrelated-prose impact control. Its semantic scope review remains manual. This
 is generic matrix algebra and a finite Lorentz application; it adds no physical
 selection or C0 acceptance, and leaves time orientation and the
 selected-action-to-carrier map open.
+
+### Shared endpoint frame-action law (26 October 2026)
+
+The Lorentz link frame-invariance proof repeated the same two-sided matrix
+cancellation locally. `D0.Algebra.finiteMatrix_dressed_transport_frame_invariant`
+now proves the general finite-matrix identity
+
+`(Theta_x * Lambda_x) * (Lambda_x⁻¹ * L * Lambda_y) *
+ (Theta_y * Lambda_y)⁻¹ = Theta_x * L * Theta_y⁻¹`
+
+from invertibility of the two frame changes. The geometry theorem
+`a4dDressedLink_frame_invariant` now specializes that API using the existing
+Lorentz determinant-unit facts. Its public endpoint-frame condition remains
+unchanged; the generic identity itself does not need that additional condition.
+The compiled dependency graph confirms the specialization consumes the new
+algebra theorem.
+
+Lean source commit `a42496ebe38827110fb61323ca4a6ab52a731068` pins
+`FiniteGramTangent.lean` SHA-256
+`1b7a33bdf95ec693eb55b4979d710b139bf750f1be7b947eb25558ec53eb733b` and
+`A4DStarFiniteLorentzQuotient.lean` SHA-256
+`dfa944e30f107bb36d2f749b033a903debedbe5e9f7acadb7fc8306762533f96`. The
+algebra module built at **2,946/2,946**, the geometry module at **3,215/3,215**,
+and the final public `D0.All` build at **4,581/4,581**.
+
+Eight declaration inventories were captured from that clean source snapshot
+with Lean-source digest
+`3d9b1ed85f4abef6bcb7b49d4afee37556ca7671f92f55ebc43722f971d58936` and
+`worktree_dirty=false`:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_frame_invariance.json` | 15/15 | `902fda2e3cadc51e274bf443919cdd2dad98f9a4cd1b647aa311fb810e666c4a` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_frame_invariance.json` | 36/36 | `15e0fbbe6b89f11760ccb53566ba50d16989f7a7b1eaa9a640a07c24bca0d708` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_frame_invariance.json` | 9/9 | `6eaa0588c3c1f2f883b4dab4534a0c7df524092e825486edd83fefea60293f9a` |
+| `archive_shift_topology_current_declarations_2026-10-26_frame_invariance.json` | 26/26 | `634e8f59d4dc6f0bfd8c6e5c0d9d927e65d40ecb7dc103740aad81a59426a368` |
+| `source_port_preparation_tensor_inventory_2026-10-26_frame_invariance.json` | 73/73 | `011023e876344caf5b734709c0f8f29dba92dbc5e775a4f7d102532860336d24` |
+| `flat_tensor_shared_api_declarations_2026-10-26_frame_invariance.json` | 4/4 | `31e32232608874ce0950b9a0745704881fd084b0043a86a3ec043e005da89030` |
+| `proper_role_lorentz_orbit_declarations_2026-10-26_frame_invariance.json` | 5/5 | `98eab5fb0e2f00fd819f3fa82da2ca7c0c4b53753b8054a0955b421980110c58` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_frame_invariance.json` | 15/15 | `522f4c0d5f2a747d62cf9138dff7539e326370a95761f8e4991d1597b32a0512` |
+
+The updated shared-API inventory records both the generic frame-action theorem
+and its Lorentz specialization, including their elaborated types, source
+ranges, proof dependencies and axiom closures. The updated cold-start receipt
+is `proof_architecture_cold_start_summary_2026-10-26_frame_invariance.json`,
+SHA-256 `9d31054f94c26ecc1e25354a952d7646ca5e8584339705602b41f1e1a0d60954`.
+It finds all sources in **22/22** cases, passes the **23-case** benchmark,
+checks **133** required references and passes the source-change versus
+unrelated-prose impact control.
+
+This remains a finite algebra refactor and typed Lorentz application. The
+metric-provenance crosswalk remains pinned to its earlier clean snapshot; this
+refactor adds no assembly acceptance edge. The selected physical action,
+source transport, time orientation and independent C0 disposition remain open.

@@ -1281,7 +1281,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_gram_transport.json"
+            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_frame_invariance.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1355,7 +1355,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_gram_orbit_shared_api_declarations_2026-10-26_gram_transport.json"
+            / "finite_gram_orbit_shared_api_declarations_2026-10-26_frame_invariance.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1406,7 +1406,26 @@ class ProofArchitectureTests(unittest.TestCase):
             endpoint["proof_dependencies"],
         )
 
-    def test_current_metric_provenance_crosswalk_pins_shared_orbit_application(self) -> None:
+        frame_action = declarations[
+            "D0.Algebra.finiteMatrix_dressed_transport_frame_invariant"
+        ]
+        self.assertEqual(frame_action["module"], "D0.Algebra.FiniteGramTangent")
+        self.assertIn("IsUnit Λx.det", frame_action["elaborated_type"])
+        self.assertIn("IsUnit Λy.det", frame_action["elaborated_type"])
+        self.assertNotIn("IsUnit Θy.det", frame_action["elaborated_type"])
+        self.assertNotIn("sorryAx", frame_action["axioms"])
+
+        frame_specialization = declarations[
+            "D0.Geometry.a4dDressedLink_frame_invariant"
+        ]
+        self.assertIn("IsUnit Θy.det", frame_specialization["elaborated_type"])
+        self.assertIn(
+            "D0.Algebra.finiteMatrix_dressed_transport_frame_invariant",
+            frame_specialization["proof_dependencies"],
+        )
+        self.assertNotIn("sorryAx", frame_specialization["axioms"])
+
+    def test_historical_metric_provenance_crosswalk_pins_shared_orbit_application(self) -> None:
         crosswalk_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
@@ -1414,9 +1433,15 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         crosswalk = json.loads(crosswalk_path.read_text(encoding="utf-8"))
         self.assertEqual(crosswalk["result_id"], "metric-provenance")
-        self.assertRegex(crosswalk["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertEqual(
+            crosswalk["snapshot_commit"],
+            "e89fbab65d24613875fcbbde4cf5b14dcffee760",
+        )
         self.assertFalse(crosswalk["worktree_dirty"])
-        self.assertEqual(crosswalk["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(
+            crosswalk["lean_source_digest"],
+            "0cac96c00908285378d7eb922ac268eb69cc67737afad40f0a7b41cb83b95df5",
+        )
         self.assertEqual(
             crosswalk["explicit_declaration_locator_disposition"], "all_resolved"
         )
@@ -1494,7 +1519,7 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-26_gram_transport.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_frame_invariance.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -1799,7 +1824,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_gram_transport.json",
+            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_frame_invariance.json",
             require_current=True,
         )
 
@@ -2069,7 +2094,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_gram_transport.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_frame_invariance.json"
         )
         inventory_bytes = inventory_path.read_bytes()
         inventory = json.loads(inventory_bytes)
@@ -2127,7 +2152,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_gram_transport.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_frame_invariance.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
@@ -2201,7 +2226,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_matrix_partial_trace_current_declarations_2026-10-26_gram_transport.json"
+            / "finite_matrix_partial_trace_current_declarations_2026-10-26_frame_invariance.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -2281,7 +2306,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "archive_shift_topology_current_declarations_2026-10-26_gram_transport.json"
+            / "archive_shift_topology_current_declarations_2026-10-26_frame_invariance.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -2480,7 +2505,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "source_port_preparation_tensor_inventory_2026-10-26_gram_transport.json"
+            / "source_port_preparation_tensor_inventory_2026-10-26_frame_invariance.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
@@ -2560,7 +2585,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "flat_tensor_shared_api_declarations_2026-10-26_gram_transport.json"
+            / "flat_tensor_shared_api_declarations_2026-10-26_frame_invariance.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
