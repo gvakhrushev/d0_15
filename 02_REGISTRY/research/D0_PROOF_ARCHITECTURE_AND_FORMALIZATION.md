@@ -7153,14 +7153,14 @@ blob SHA-256 `ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc`:
    `DQ_flat[H] = Hη + ηHᵀ` and the symmetric-direction convention
    `H(q) = qη/2`, giving the first-order coefficient `q`.
 
-The previous Lean pin is retained as historical provenance:
+The original Lean pin is retained as historical provenance:
 `4aff58affff315eae09572640166b90cb0e5bdde`,
 `03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean`, SHA-256
 `6234a6480aad6ca2a78caa3a64f59def4c50dc38beeb3c8ab1cc3df94c6db3cb`.
 It proved the finite Role-indexed solder-Gram symmetric tangent, but did not
 encode the source convention or its map to `Q`.
 
-The new vertical slice adds the shared
+The subsequent vertical slice adds the shared
 `D0.Algebra.finiteGram_one_smul_expand` API and uses it in the current
 `D0.Geometry.A4DSolderMetricCompletion` source adapter. The exact source path
 `Q(1+tH) = (1+tH)η(1+tH)ᵀ` expands with linear term `Hη+ηHᵀ` and retains the
@@ -7170,30 +7170,39 @@ maps the source frame to the existing solder carrier by `Θ' = Θη`; the
 identity `ηηηᵀ=η` proves this right multiplication preserves the finite Gram
 matrix. `j2DetectorMetricPath_symmetric_solder_adapter` supplies an explicit
 coframe whose existing readout is `q` and whose nonlinear solder-Gram path
-equals the source path. No topological limit theorem is claimed by the
-difference-quotient identity.
+equals the source path.
 
-The code snapshot is `150c34ad0ff1a1f4eb0edfb06363d7d6bfa45bab`. The geometry
-module SHA-256 is
-`deab902987ff9c518407b637a633547672ca78d6f8dd36a24d6f9879d74fde49`; the
-generic Gram module SHA-256 is
-`26864e383f68dc793907ae14d07982c967346459500aad92d057cfa81c13f900`. The
-targeted `D0.Geometry.A4DSolderMetricCompletion` build passed **2,980/2,980**
-jobs. The updated `metric-provenance` record splits source A and B and pins
-the new declarations without changing its owner or outcome. The generated
-`02_REGISTRY/gr_assembly/SYNTHESIS.md` view was regenerated from that record;
-the assembly README and shared dispatcher were not modified.
+The added theorem `j2DetectorMetricPath_hasFDerivAt_direction` proves, for
+every matrix direction `H`, that the scalar path `t ↦ Q(1+tH)` has derivative
+`Hη + ηHᵀ` at `t=0`. Its symmetric-direction corollary proves the pinned `q`
+derivative for `H(q)=qη/2`. The proof locally equips the finite Role matrices
+with the explicit nested sup norm needed for `HasFDerivAt`. This is a Fréchet
+derivative of each real-parameter path; it is not a full Fréchet derivative
+of the matrix-valued map as a function of its matrix argument. The exact
+quadratic remainder and difference-quotient theorem remain available
+alongside the derivative result.
 
-The clean `D0.All` crosswalk snapshot is `199a35de3f31c19d3ea193cce046fb3ebda46418`,
-with Lean-source digest
-`7838ba5057e0fc4850096d56ffdafa42f0d471594008de8311d18f6af881aa94` and
+The current geometry source is pinned at commit
+`051c30ea5e5a02db2816fb5e5cebe5ea63938910`, SHA-256
+`7293a532763ff09418bb2b42690e3753c8c2e22a92faf5e09ec8b1af48135f74`.
+The shared Gram API remains pinned at `150c34ad0ff1a1f4eb0edfb06363d7d6bfa45bab`,
+SHA-256 `26864e383f68dc793907ae14d07982c967346459500aad92d057cfa81c13f900`.
+The targeted `D0.Geometry.A4DSolderMetricCompletion` build passed
+**3,087/3,087** jobs. The `metric-provenance` record splits source A and B and
+pins the current declarations without changing its owner or outcome. The
+generated `02_REGISTRY/gr_assembly/SYNTHESIS.md` view is derived from that
+record; the assembly README and shared dispatcher were not modified.
+
+The fresh clean `D0.All` crosswalk snapshot is
+`2e5038da397e1027c4b760456efede546630a7df`, with Lean-source digest
+`a8fe81dbc2537b936bc0beef34ecd7c4b8efe8d8cea7a61980e4ac3ed3c7a0d9` and
 `applications.json` SHA-256
-`fef562348c1009b4b91b80970c6ef277f1e6534c0ddc0c7ec860b267bf32094b`. Both
-source sections are verified but remain candidate section locators requiring
-review. All seven requested explicit Lean declaration locators resolve in the
-compiled environment. The compact recorded crosswalk is
-`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-25_199a35de.json`,
-SHA-256 `18609f5bb0359260e4d45148fc0b45e08674f9ccac9240699de56198bbd700b5`.
+`e38c5d4deba94bba6ff72f4bdf0b22caa2a81330250dd7c9ca599a54ddfed8e4`.
+Both source sections are verified but remain candidate section locators
+requiring review. All nine requested explicit Lean declaration locators
+resolve in the compiled environment. The compact recorded crosswalk is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-25_2e5038da.json`,
+SHA-256 `fbb13fe71fc5b4cd99c42a3c366eee8ab4be95918cedf11850f68066313b4b71`.
 The semantic relation remains unresolved, claim locators remain unresolved,
 and `acceptance_inferred=false`.
 
