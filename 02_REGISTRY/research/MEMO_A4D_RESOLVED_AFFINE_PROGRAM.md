@@ -7,6 +7,23 @@
 `dff7498b9071ad4d9fd1580b80829d91eb55f534`. Current research inputs retain their
 exact source pins in the [assembly](../gr_assembly/README.md#current-scientific-gate).
 
+## 25 October — a finite D_min → Euler *binary fork* on the already paid #334 native source
+
+[Exact three-paid-native-word theorem and 461 rational hostile controls](A4D_DMIN_THREE_PAID_WORDS_TO_EULER_FORK_2026_10_25.md) change the final physical proof search. Consume the EXISTING original-native *common-clock* actual 0,+,− finite-word comparisons of the main source owner §7ay (431)–(435). No new continuum programme variations, action, geometry detector, clock or history are introduced.
+
+For three actual full-Book prices B0,B+,B− with physical source gain Γ>0, source-sec error η1 and their true normalized EVEN source bound (B++B−−2B0)/Γ ≤ C2 t²+η2, the exact two-word fork proves
+
+\[
+|DI_h(Y)[v]|\le\eta_1+\frac{C_2t}{2}+\frac{\eta_2}{2t}
++\frac{(B_0-B_+)_++(B_0-B_-)_+}{\Gamma t}.
+\]
+
+**Contrapositive:** if the original independently calculated full-field Euler source exceeds the first three error terms, at least ONE of those two already executable native words has a strictly CHEAPER complete Book price. It is a FINITE, observable comparison, not another field root or an action picked from the Einstein target. The even bound comes from the same genuine J curvature and the actual signed price compiler error; central secants alone are logically insufficient. Saddles need NOT be minima: an O(t²) Book deficit still yields zero first Euler in the t→0 limit.
+
+**The one selected missing foundation/application bridge is now a TWO-CODE finite test**, not a universal code catalogue: on ONE common initial closed task with every retained memory/future distinction, show the physical D_min-canonical shortest COMPLETE code also selects (or controls within an explicit margin) the actual measured whole-Book ordering among these two physically admissible alternative words. A quantitative native code/Book alignment \( |(\ell_\pm-\ell_0)-\kappa(B_\pm-B_0)|\le r_{\rm code}\) would give the extra Euler residual \(2r_{\rm code}/(\kappa\Gamma t)\). **This alignment is NOT proved.** The already owned equal primitive inventories and fixed-clock echoes do NOT imply it: code lengths of the whole recorded *history*, not histogram-only gate counts, must be derived. A pair of words accomplishing DIFFERENT internally required future tasks cannot be compared in one D_min equivalence class.
+
+New operational falsifier: compute the two canonical complete history codes and absolute Book prices on the actual §7ay source words. If a nonzero source produces a physically same-task and strictly shorter coded alternative, the alleged D_min-selected root is rejected; if no alternative is shorter and the native code/Book bridge, precision/gain and full field lift meet the theorem, the source must vanish. Keep independent controller/cut/preparation, scene HJR and spatial-refinement obligations; a purely free QUERY tangent remains the known 7au obstruction. `GR_closed=false`.
+
 ## Source composition first: backward search and forward proof
 
 **User-confirmed focus, 22 October 2026.** Start from the existing exact
