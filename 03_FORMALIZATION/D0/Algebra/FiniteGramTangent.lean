@@ -87,6 +87,49 @@ theorem finiteMatrix_dressed_transport_frame_invariant {ι : Type*}
           simp only [Matrix.mul_assoc]
     _ = Θx * L * Θy⁻¹ := by rw [hx1, hy1]; simp
 
+/-- With invertible endpoint frames, equality of dressed transports is
+equivalent to the corresponding two-sided change of the undressed link. -/
+theorem finiteMatrix_dressed_transport_eq_iff_frame_action {ι : Type*}
+    [Fintype ι] [DecidableEq ι]
+    (Θx Θy Λx Λy L L' : Matrix ι ι ℝ)
+    (hΘx : IsUnit Θx.det) (hΘy : IsUnit Θy.det)
+    (hΛx : IsUnit Λx.det) (hΛy : IsUnit Λy.det) :
+    (Θx * Λx) * L' * (Θy * Λy)⁻¹ = Θx * L * Θy⁻¹ ↔
+      L' = Λx⁻¹ * L * Λy := by
+  constructor
+  · intro h
+    have hcancel : Λx * L' * Λy⁻¹ = L := by
+      have h' := congrArg (fun M : Matrix ι ι ℝ => Θx⁻¹ * M * Θy) h
+      rw [Matrix.mul_inv_rev] at h'
+      change Θx⁻¹ * ((Θx * Λx) * L' * (Λy⁻¹ * Θy⁻¹)) * Θy =
+          Θx⁻¹ * (Θx * L * Θy⁻¹) * Θy at h'
+      have hleft : Θx⁻¹ * Θx = 1 := Matrix.nonsing_inv_mul Θx hΘx
+      have hright : Θy⁻¹ * Θy = 1 := Matrix.nonsing_inv_mul Θy hΘy
+      calc
+        Λx * L' * Λy⁻¹ = 1 * (Λx * L' * Λy⁻¹) * 1 := by simp
+        _ = (Θx⁻¹ * Θx) * (Λx * L' * Λy⁻¹) * (Θy⁻¹ * Θy) := by
+              rw [hleft, hright]
+        _ = Θx⁻¹ * ((Θx * Λx) * L' * (Λy⁻¹ * Θy⁻¹)) * Θy := by
+              noncomm_ring
+        _ = Θx⁻¹ * (Θx * L * Θy⁻¹) * Θy := h'
+        _ = L := by
+              calc
+                Θx⁻¹ * (Θx * L * Θy⁻¹) * Θy =
+                    (Θx⁻¹ * Θx) * L * (Θy⁻¹ * Θy) := by noncomm_ring
+                _ = L := by rw [hleft, hright]; simp
+    have hleft : Λx⁻¹ * Λx = 1 := Matrix.nonsing_inv_mul Λx hΛx
+    have hright : Λy⁻¹ * Λy = 1 := Matrix.nonsing_inv_mul Λy hΛy
+    have h' := congrArg (fun M : Matrix ι ι ℝ => Λx⁻¹ * M * Λy) hcancel
+    calc
+      L' = 1 * L' * 1 := by simp
+      _ = (Λx⁻¹ * Λx) * L' * (Λy⁻¹ * Λy) := by rw [hleft, hright]
+      _ = Λx⁻¹ * (Λx * L' * Λy⁻¹) * Λy := by noncomm_ring
+      _ = Λx⁻¹ * L * Λy := h'
+  · intro hL
+    rw [hL]
+    exact finiteMatrix_dressed_transport_frame_invariant
+      Θx L Θy Λx Λy hΛx hΛy
+
 /-- On a nondegenerate left frame, equality of finite Gram matrices is exactly
 membership in the right orbit of the isometry group of the fixed form. The
 fixed form `η` itself need not be invertible; only the reference frame `Θ`

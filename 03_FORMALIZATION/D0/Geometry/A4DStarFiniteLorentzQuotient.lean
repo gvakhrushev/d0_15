@@ -223,40 +223,11 @@ theorem a4dDressedLink_eq_iff_rightAction
     a4dDressedLink (Θx * Λx) L' (Θy * Λy) =
         a4dDressedLink Θx L Θy ↔
       L' = Λx⁻¹ * L * Λy := by
-  constructor
-  · intro h
-    have hcancel : Λx * L' * Λy⁻¹ = L := by
-      have h' := congrArg (fun M : Matrix Role Role ℝ => Θx⁻¹ * M * Θy) h
-      rw [a4dDressedLink, a4dDressedLink, Matrix.mul_inv_rev] at h'
-      change Θx⁻¹ * ((Θx * Λx) * L' * (Λy⁻¹ * Θy⁻¹)) * Θy =
-          Θx⁻¹ * (Θx * L * Θy⁻¹) * Θy at h'
-      have hleft : Θx⁻¹ * Θx = 1 := Matrix.nonsing_inv_mul Θx hΘx
-      have hright : Θy⁻¹ * Θy = 1 := Matrix.nonsing_inv_mul Θy hΘy
-      calc
-        Λx * L' * Λy⁻¹ = 1 * (Λx * L' * Λy⁻¹) * 1 := by simp
-        _ = (Θx⁻¹ * Θx) * (Λx * L' * Λy⁻¹) * (Θy⁻¹ * Θy) := by
-              rw [hleft, hright]
-        _ = Θx⁻¹ * ((Θx * Λx) * L' * (Λy⁻¹ * Θy⁻¹)) * Θy := by
-              noncomm_ring
-        _ = Θx⁻¹ * (Θx * L * Θy⁻¹) * Θy := h'
-        _ = L := by
-              calc
-                Θx⁻¹ * (Θx * L * Θy⁻¹) * Θy =
-                    (Θx⁻¹ * Θx) * L * (Θy⁻¹ * Θy) := by noncomm_ring
-                _ = L := by rw [hleft, hright]; simp
-    have hΛxUnit : IsUnit Λx.det := isRoleLorentz_det_isUnit Λx hΛx
-    have hΛyUnit : IsUnit Λy.det := isRoleLorentz_det_isUnit Λy hΛy
-    have hleft : Λx⁻¹ * Λx = 1 := Matrix.nonsing_inv_mul Λx hΛxUnit
-    have hright : Λy⁻¹ * Λy = 1 := Matrix.nonsing_inv_mul Λy hΛyUnit
-    have h' := congrArg (fun M : Matrix Role Role ℝ => Λx⁻¹ * M * Λy) hcancel
-    calc
-      L' = 1 * L' * 1 := by simp
-      _ = (Λx⁻¹ * Λx) * L' * (Λy⁻¹ * Λy) := by rw [hleft, hright]
-      _ = Λx⁻¹ * (Λx * L' * Λy⁻¹) * Λy := by noncomm_ring
-      _ = Λx⁻¹ * L * Λy := h'
-  · intro hL
-    rw [hL]
-    exact a4dDressedLink_frame_invariant Θx L Θy Λx Λy hΛx hΛy hΘy
+  simpa [a4dDressedLink] using
+    D0.Algebra.finiteMatrix_dressed_transport_eq_iff_frame_action
+      Θx Θy Λx Λy L L' hΘx hΘy
+      (isRoleLorentz_det_isUnit Λx hΛx)
+      (isRoleLorentz_det_isUnit Λy hΛy)
 
 /-- On the all-site nondegenerate sector, equality of every site Gram and
 every solder-dressed link is equivalent to one site-dependent Lorentz frame
