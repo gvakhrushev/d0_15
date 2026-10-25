@@ -51,7 +51,7 @@ def book_data(n,k,c,alpha,beta,gamma):
     # k=3: cI + beta/3*sum Xj + alpha*X1*X2 + gamma*X1*X2*X3
     # These operators COMMUTE and ||K||<=c+beta+alpha+gamma<1,
     # while the real P/Q feedback is the exact book kernel.
-    assert k in (2,3)
+    check(k in (2,3), "only original k=2/3 finite controls in this fixture")
     check(c+alpha+beta+gamma<1,"full k-slot cold query is contractive")
     w=c/(a+z*c*c)
     M=2*z/a
