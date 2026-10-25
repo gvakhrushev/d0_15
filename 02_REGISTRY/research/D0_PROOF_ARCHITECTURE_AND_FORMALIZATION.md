@@ -5008,3 +5008,57 @@ records snapshot `8d35e0c308e648281492cb1f9b4ed7a8cea70302` with
 `Classical.choice`, `propext`, and `Quot.sound`; the full cochain witness also
 retains the existing CAR computation leaves. No claim or `formal_support`
 entry changed, and the full `D0.All` build remains a Ready-checkpoint action.
+
+### Typed full-cochain CAR operator and additive null-kernel bound (25 October 2026)
+
+The full site × Fock CAR operator has a typed `LinearMap` API for arbitrary
+supplied role weights, with a specialized typed Lorentzian operator for the
+repository's declared role signs. The established function-level definitions
+remain available through exact compatibility theorems. The Fourier-mode
+embedding also has a typed linear-map form, and its intertwining identity
+transports each classified null-fibre kernel into the kernel of the actual
+full cochain operator.
+
+The new theorem
+`archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family` proves
+`16 + 8 * (archiveFibers N - 1) ≤ finrank ℂ (ker D_full)`. Its family contains
+the sixteen-dimensional zero-frequency fibre and each of the `N+1`
+constructed, distinct diagonal null frequencies, whose fibre kernels have
+dimension eight. Exact character orthogonality on the finite product-cycle
+carrier proves that the sum of these mode embeddings is injective, so their
+dimensions add on the full site × Fock carrier. This strengthens the earlier
+one-fibre lower bound without requiring an exact total kernel computation.
+
+This remains a lower bound from an explicit family. The exact total null-root
+count and full kernel dimension, the physical gauge quotient, and
+source/action selection remain open. The role-sign assignment remains a
+mathematical input, not physical selection; no claim status or
+`formal_support` entry changed. The owning-module declaration inventory is
+stored at
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json`.
+It enumerates 240 declarations across the four selected owning modules
+(76/60/49/55); no declaration has `sorryAx`. The inventory SHA-256 is
+`08624b561817f68f2b39b2c3a721971a99c9a44715853d80ac57e54249ce6653`, its
+Lean-source digest is
+`584f100caaff6b217aa7cef2d8b1779406c9fd0f7b8ff23b0dc6d9c206c556b7`, and
+the collector SHA-256 is
+`cd8acaf6fa202e54f8090f9c5fb9fc210dfe03ba3197f21115581d7b7afad0cb`. It
+records snapshot `95cbbcfffd8441d529b0d4549b92d74bcd81b7db` with
+`worktree_dirty=false`. The geometry adapter source SHA-256 is
+`cb9aaa751c755402d28ac7c6aaf4fbc63e31b9cd6e4e1d566f6096aced391509`; the
+Fourier adapter source SHA-256 is
+`8dd722212e61f8ba1137ea5ab92c5f9963001fa1cda317269d4b66f25cfa0a13`. The
+aggregate theorem's transitive footprint consists of the existing CAR
+anticommutator `native_decide` leaves, `Classical.choice`, `propext`, and
+`Quot.sound`; no new axiom or `sorryAx` is introduced. A full `D0.All` replay
+remains reserved for the Ready checkpoint.
+
+The source checkpoint is published commit
+`95cbbcfffd8441d529b0d4549b92d74bcd81b7db`. The narrow build of
+`D0.Research.NativeWeightedDiracFourierNullModes` passed with 3,410 Lake jobs
+under Lean 4.30.0. On the final tree, repository validation passed with
+`claims=889`, `assumptions=31`, `aliases=58`, `formal_support=197`,
+`lean_closure=929`, and zero warnings; generated Lean views reported
+`stale=0`; the formalization-debt audit remained at five findings, its
+unchanged baseline; gravity assembly reported `valid=true` and
+`scientific_promotion=false`; and the EOL-aware diff check passed.

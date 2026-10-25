@@ -1,8 +1,8 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "8d35e0c308e648281492cb1f9b4ed7a8cea70302",
+  "snapshot_commit": "95cbbcfffd8441d529b0d4549b92d74bcd81b7db",
   "worktree_dirty": false,
-  "lean_source_digest": "c7859453678c46f50435b7e0b2eb0cf726317e8f3057e12962ace05918bd3e81",
+  "lean_source_digest": "584f100caaff6b217aa7cef2d8b1779406c9fd0f7b8ff23b0dc6d9c206c556b7",
   "collector_sha256": "cd8acaf6fa202e54f8090f9c5fb9fc210dfe03ba3197f21115581d7b7afad0cb",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.Research.NativeWeightedDiracFourierNullModes",
@@ -704,21 +704,21 @@
         "declaration": {
           "end": {
             "column": 43,
-            "line": 432
+            "line": 477
           },
           "start": {
             "column": 0,
-            "line": 429
+            "line": 474
           }
         },
         "selection": {
           "end": {
             "column": 35,
-            "line": 430
+            "line": 475
           },
           "start": {
             "column": 4,
-            "line": 430
+            "line": 475
           }
         }
       },
@@ -841,21 +841,21 @@
         "declaration": {
           "end": {
             "column": 61,
-            "line": 422
+            "line": 467
           },
           "start": {
             "column": 0,
-            "line": 418
+            "line": 463
           }
         },
         "selection": {
           "end": {
             "column": 41,
-            "line": 420
+            "line": 465
           },
           "start": {
             "column": 4,
-            "line": 420
+            "line": 465
           }
         }
       },
@@ -1001,21 +1001,21 @@
         "declaration": {
           "end": {
             "column": 71,
-            "line": 387
+            "line": 432
           },
           "start": {
             "column": 0,
-            "line": 384
+            "line": 429
           }
         },
         "selection": {
           "end": {
             "column": 50,
-            "line": 385
+            "line": 430
           },
           "start": {
             "column": 18,
-            "line": 385
+            "line": 430
           }
         }
       },
@@ -1178,21 +1178,21 @@
         "declaration": {
           "end": {
             "column": 39,
-            "line": 427
+            "line": 472
           },
           "start": {
             "column": 0,
-            "line": 424
+            "line": 469
           }
         },
         "selection": {
           "end": {
             "column": 31,
-            "line": 425
+            "line": 470
           },
           "start": {
             "column": 4,
-            "line": 425
+            "line": 470
           }
         }
       },
@@ -1315,21 +1315,21 @@
         "declaration": {
           "end": {
             "column": 57,
-            "line": 416
+            "line": 461
           },
           "start": {
             "column": 0,
-            "line": 412
+            "line": 457
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 414
+            "line": 459
           },
           "start": {
             "column": 4,
-            "line": 414
+            "line": 459
           }
         }
       },
@@ -1475,21 +1475,21 @@
         "declaration": {
           "end": {
             "column": 68,
-            "line": 382
+            "line": 427
           },
           "start": {
             "column": 0,
-            "line": 379
+            "line": 424
           }
         },
         "selection": {
           "end": {
             "column": 49,
-            "line": 380
+            "line": 425
           },
           "start": {
             "column": 18,
-            "line": 380
+            "line": 425
           }
         }
       },
@@ -1638,21 +1638,21 @@
         "declaration": {
           "end": {
             "column": 65,
-            "line": 410
+            "line": 455
           },
           "start": {
             "column": 0,
-            "line": 389
+            "line": 434
           }
         },
         "selection": {
           "end": {
             "column": 51,
-            "line": 392
+            "line": 437
           },
           "start": {
             "column": 8,
-            "line": 392
+            "line": 437
           }
         }
       },
@@ -1853,6 +1853,181 @@
           "is_proposition": false,
           "name": "N",
           "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.ArchiveCochainC N →ₗ[ℂ] D0.Geometry.ArchiveCochainC N",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 53,
+            "line": 142
+          },
+          "start": {
+            "column": 0,
+            "line": 138
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 35,
+            "line": 140
+          },
+          "start": {
+            "column": 4,
+            "line": 140
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → D0.Geometry.ArchiveCochainC N →ₗ[ℂ] D0.Geometry.ArchiveCochainC N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.archiveLorentzianCARDiracLinear",
+      "proof_dependencies": [
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveCARDiracLinear",
+        "Nat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "LinearMap",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.archiveLorentzianCARDiracLinear N) ψ = D0.Geometry.archiveLorentzianCARDirac N ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 78,
+            "line": 147
+          },
+          "start": {
+            "column": 0,
+            "line": 144
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 45,
+            "line": 145
+          },
+          "start": {
+            "column": 8,
+            "line": 145
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochainC N),\n  (D0.Geometry.archiveLorentzianCARDiracLinear N) ψ = D0.Geometry.archiveLorentzianCARDirac N ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.archiveLorentzianCARDiracLinear_apply",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.archiveLorentzianCARDiracLinear",
+        "DFunLike.coe",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.archiveLorentzianCARDirac",
+        "D0.Geometry.archiveLorentzianCARDiracLinear",
+        "DFunLike.coe",
+        "Eq",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
         },
         {
           "binder_info": "Lean.BinderInfo.default",
@@ -1873,21 +2048,21 @@
         "declaration": {
           "end": {
             "column": 70,
-            "line": 865
+            "line": 910
           },
           "start": {
             "column": 0,
-            "line": 857
+            "line": 902
           }
         },
         "selection": {
           "end": {
             "column": 46,
-            "line": 860
+            "line": 905
           },
           "start": {
             "column": 8,
-            "line": 860
+            "line": 905
           }
         }
       },
@@ -1952,21 +2127,21 @@
         "declaration": {
           "end": {
             "column": 62,
-            "line": 355
+            "line": 400
           },
           "start": {
             "column": 0,
-            "line": 350
+            "line": 395
           }
         },
         "selection": {
           "end": {
             "column": 40,
-            "line": 352
+            "line": 397
           },
           "start": {
             "column": 8,
-            "line": 352
+            "line": 397
           }
         }
       },
@@ -2027,21 +2202,21 @@
         "declaration": {
           "end": {
             "column": 62,
-            "line": 369
+            "line": 414
           },
           "start": {
             "column": 0,
-            "line": 357
+            "line": 402
           }
         },
         "selection": {
           "end": {
             "column": 53,
-            "line": 361
+            "line": 406
           },
           "start": {
             "column": 8,
-            "line": 361
+            "line": 406
           }
         }
       },
@@ -2131,21 +2306,21 @@
         "declaration": {
           "end": {
             "column": 48,
-            "line": 940
+            "line": 985
           },
           "start": {
             "column": 0,
-            "line": 932
+            "line": 977
           }
         },
         "selection": {
           "end": {
             "column": 52,
-            "line": 934
+            "line": 979
           },
           "start": {
             "column": 8,
-            "line": 934
+            "line": 979
           }
         }
       },
@@ -9080,6 +9255,431 @@
           "is_proposition": false,
           "name": "w",
           "type": "D0.Role → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.ArchiveCochainC N →ₗ[ℂ] D0.Geometry.ArchiveCochainC N",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 51,
+            "line": 131
+          },
+          "start": {
+            "column": 0,
+            "line": 125
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 127
+          },
+          "start": {
+            "column": 4,
+            "line": 127
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Role → ℝ) → D0.Geometry.ArchiveCochainC N →ₗ[ℂ] D0.Geometry.ArchiveCochainC N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCARDiracLinear",
+      "proof_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddHom.mk",
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCARDirac",
+        "D0.Geometry.roleWeightedArchiveCARDirac_add",
+        "D0.Geometry.roleWeightedArchiveCARDirac_smul",
+        "D0.Role",
+        "LinearMap.mk",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Role",
+        "LinearMap",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.roleWeightedArchiveCARDiracLinear N w) ψ = D0.Geometry.roleWeightedArchiveCARDirac N w ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 86,
+            "line": 136
+          },
+          "start": {
+            "column": 0,
+            "line": 133
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 47,
+            "line": 134
+          },
+          "start": {
+            "column": 8,
+            "line": 134
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (ψ : D0.Geometry.ArchiveCochainC N),\n  (D0.Geometry.roleWeightedArchiveCARDiracLinear N w) ψ = D0.Geometry.roleWeightedArchiveCARDirac N w ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCARDiracLinear_apply",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCARDiracLinear",
+        "D0.Role",
+        "DFunLike.coe",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCARDirac",
+        "D0.Geometry.roleWeightedArchiveCARDiracLinear",
+        "D0.Role",
+        "DFunLike.coe",
+        "Eq",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "φ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveCARDirac N w (ψ + φ) =\n  D0.Geometry.roleWeightedArchiveCARDirac N w ψ + D0.Geometry.roleWeightedArchiveCARDirac N w φ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 115
+          },
+          "start": {
+            "column": 0,
+            "line": 104
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 39,
+            "line": 107
+          },
+          "start": {
+            "column": 8,
+            "line": 107
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (ψ φ : D0.Geometry.ArchiveCochainC N),\n  D0.Geometry.roleWeightedArchiveCARDirac N w (ψ + φ) =\n    D0.Geometry.roleWeightedArchiveCARDirac N w ψ + D0.Geometry.roleWeightedArchiveCARDirac N w φ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCARDirac_add",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instAdd",
+        "Complex.instOne",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.dTwisted",
+        "D0.Geometry.dTwisted_add",
+        "D0.Geometry.roleWeightedArchiveCARDirac",
+        "D0.Geometry.roleWeightedArchiveCARDirac_add._abel_1_1",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Geometry.roleWeightedArchiveCodifferential_add",
+        "D0.Role",
+        "Eq",
+        "Eq.mpr",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.instAdd",
+        "Real",
+        "congrArg",
+        "funext",
+        "id",
+        "instHAdd"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instAdd",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCARDirac",
+        "D0.Role",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "Pi.instAdd",
+        "Real",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "φ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N × D0.Geometry.ArchiveFockState"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.dTwisted N (fun x => 1) ψ p + D0.Geometry.dTwisted N (fun x => 1) φ p +\n    (D0.Geometry.roleWeightedArchiveCodifferential N w ψ p + D0.Geometry.roleWeightedArchiveCodifferential N w φ p) =\n  D0.Geometry.dTwisted N (fun x => 1) ψ p + D0.Geometry.roleWeightedArchiveCodifferential N w ψ p +\n    (D0.Geometry.dTwisted N (fun x => 1) φ p + D0.Geometry.roleWeightedArchiveCodifferential N w φ p)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (ψ φ : D0.Geometry.ArchiveCochainC N) (p : D0.Geometry.ArchiveCochainBasis N),\n  D0.Geometry.dTwisted N (fun x => 1) ψ p + D0.Geometry.dTwisted N (fun x => 1) φ p +\n      (D0.Geometry.roleWeightedArchiveCodifferential N w ψ p + D0.Geometry.roleWeightedArchiveCodifferential N w φ p) =\n    D0.Geometry.dTwisted N (fun x => 1) ψ p + D0.Geometry.roleWeightedArchiveCodifferential N w ψ p +\n      (D0.Geometry.dTwisted N (fun x => 1) φ p + D0.Geometry.roleWeightedArchiveCodifferential N w φ p)",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCARDirac_add._abel_1_1",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "Complex",
+        "Complex.addCommGroup",
+        "Complex.addGroupWithOne",
+        "Complex.instAdd",
+        "Complex.instOne",
+        "Complex.instZero",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.dTwisted",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Role",
+        "Eq.symm",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "Int",
+        "Mathlib.Tactic.Abel.const_add_termg",
+        "Mathlib.Tactic.Abel.subst_into_addg",
+        "Mathlib.Tactic.Abel.term_add_constg",
+        "Mathlib.Tactic.Abel.term_atomg",
+        "Mathlib.Tactic.Abel.termg",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Zero.toOfNat0",
+        "instHAdd",
+        "instOfNat",
+        "zero_add"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instAdd",
+        "Complex.instOne",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.dTwisted",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Role",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
         },
         {
           "binder_info": "Lean.BinderInfo.default",
@@ -9100,21 +9700,21 @@
         "declaration": {
           "end": {
             "column": 76,
-            "line": 855
+            "line": 900
           },
           "start": {
             "column": 0,
-            "line": 809
+            "line": 854
           }
         },
         "selection": {
           "end": {
             "column": 48,
-            "line": 812
+            "line": 857
           },
           "start": {
             "column": 8,
-            "line": 812
+            "line": 857
           }
         }
       },
@@ -9292,6 +9892,135 @@
     {
       "axioms": [
         "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveCARDirac N w (c • ψ) = c • D0.Geometry.roleWeightedArchiveCARDirac N w ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 70,
+            "line": 123
+          },
+          "start": {
+            "column": 0,
+            "line": 117
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 118
+          },
+          "start": {
+            "column": 8,
+            "line": 118
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (c : ℂ) (ψ : D0.Geometry.ArchiveCochainC N),\n  D0.Geometry.roleWeightedArchiveCARDirac N w (c • ψ) = c • D0.Geometry.roleWeightedArchiveCARDirac N w ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCARDirac_smul",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Complex",
+        "Complex.addGroupWithOne",
+        "Complex.instAdd",
+        "Complex.instMul",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.dTwisted",
+        "D0.Geometry.dTwisted_smul",
+        "D0.Geometry.roleWeightedArchiveCARDirac",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Geometry.roleWeightedArchiveCodifferential_smul",
+        "D0.Role",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.addZeroClass",
+        "Pi.distribSMul",
+        "Pi.instAdd",
+        "Real",
+        "SMulZeroClass.toSMul",
+        "congrArg",
+        "id",
+        "instDistribSMul",
+        "instHAdd",
+        "instHSMul",
+        "instSMulOfMul",
+        "smul_add"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCARDirac",
+        "D0.Role",
+        "Eq",
+        "Function.hasSMul",
+        "HSMul.hSMul",
+        "Nat",
+        "Real",
+        "instHSMul",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
         "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
         "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
         "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
@@ -9324,21 +10053,21 @@
         "declaration": {
           "end": {
             "column": 49,
-            "line": 348
+            "line": 393
           },
           "start": {
             "column": 0,
-            "line": 339
+            "line": 384
           }
         },
         "selection": {
           "end": {
             "column": 42,
-            "line": 339
+            "line": 384
           },
           "start": {
             "column": 8,
-            "line": 339
+            "line": 384
           }
         }
       },
@@ -9681,21 +10410,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 337
+            "line": 382
           },
           "start": {
             "column": 0,
-            "line": 176
+            "line": 221
           }
         },
         "selection": {
           "end": {
             "column": 47,
-            "line": 176
+            "line": 221
           },
           "start": {
             "column": 8,
-            "line": 176
+            "line": 221
           }
         }
       },
@@ -10166,21 +10895,21 @@
         "declaration": {
           "end": {
             "column": 46,
-            "line": 174
+            "line": 219
           },
           "start": {
             "column": 0,
-            "line": 104
+            "line": 149
           }
         },
         "selection": {
           "end": {
             "column": 48,
-            "line": 104
+            "line": 149
           },
           "start": {
             "column": 8,
-            "line": 104
+            "line": 149
           }
         }
       },
@@ -10390,21 +11119,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 883
+            "line": 928
           },
           "start": {
             "column": 0,
-            "line": 867
+            "line": 912
           }
         },
         "selection": {
           "end": {
             "column": 58,
-            "line": 869
+            "line": 914
           },
           "start": {
             "column": 8,
-            "line": 869
+            "line": 914
           }
         }
       },
@@ -10537,21 +11266,21 @@
         "declaration": {
           "end": {
             "column": 43,
-            "line": 574
+            "line": 619
           },
           "start": {
             "column": 0,
-            "line": 567
+            "line": 612
           }
         },
         "selection": {
           "end": {
             "column": 58,
-            "line": 570
+            "line": 615
           },
           "start": {
             "column": 18,
-            "line": 570
+            "line": 615
           }
         }
       },
@@ -10667,21 +11396,21 @@
         "declaration": {
           "end": {
             "column": 46,
-            "line": 442
+            "line": 487
           },
           "start": {
             "column": 0,
-            "line": 434
+            "line": 479
           }
         },
         "selection": {
           "end": {
             "column": 40,
-            "line": 436
+            "line": 481
           },
           "start": {
             "column": 4,
-            "line": 436
+            "line": 481
           }
         }
       },
@@ -10866,21 +11595,21 @@
         "declaration": {
           "end": {
             "column": 48,
-            "line": 453
+            "line": 498
           },
           "start": {
             "column": 0,
-            "line": 444
+            "line": 489
           }
         },
         "selection": {
           "end": {
             "column": 60,
-            "line": 447
+            "line": 492
           },
           "start": {
             "column": 18,
-            "line": 447
+            "line": 492
           }
         }
       },
@@ -11214,21 +11943,21 @@
         "declaration": {
           "end": {
             "column": 17,
-            "line": 467
+            "line": 512
           },
           "start": {
             "column": 0,
-            "line": 455
+            "line": 500
           }
         },
         "selection": {
           "end": {
             "column": 56,
-            "line": 457
+            "line": 502
           },
           "start": {
             "column": 8,
-            "line": 457
+            "line": 502
           }
         }
       },
@@ -11449,21 +12178,21 @@
         "declaration": {
           "end": {
             "column": 22,
-            "line": 624
+            "line": 669
           },
           "start": {
             "column": 0,
-            "line": 576
+            "line": 621
           }
         },
         "selection": {
           "end": {
             "column": 62,
-            "line": 579
+            "line": 624
           },
           "start": {
             "column": 8,
-            "line": 579
+            "line": 624
           }
         }
       },
@@ -11755,21 +12484,21 @@
         "declaration": {
           "end": {
             "column": 55,
-            "line": 930
+            "line": 975
           },
           "start": {
             "column": 0,
-            "line": 915
+            "line": 960
           }
         },
         "selection": {
           "end": {
             "column": 57,
-            "line": 917
+            "line": 962
           },
           "start": {
             "column": 8,
-            "line": 917
+            "line": 962
           }
         }
       },
@@ -11949,21 +12678,21 @@
         "declaration": {
           "end": {
             "column": 16,
-            "line": 913
+            "line": 958
           },
           "start": {
             "column": 0,
-            "line": 885
+            "line": 930
           }
         },
         "selection": {
           "end": {
             "column": 51,
-            "line": 888
+            "line": 933
           },
           "start": {
             "column": 8,
-            "line": 888
+            "line": 933
           }
         }
       },
@@ -12105,21 +12834,21 @@
         "declaration": {
           "end": {
             "column": 57,
-            "line": 807
+            "line": 852
           },
           "start": {
             "column": 0,
-            "line": 759
+            "line": 804
           }
         },
         "selection": {
           "end": {
             "column": 47,
-            "line": 761
+            "line": 806
           },
           "start": {
             "column": 8,
-            "line": 761
+            "line": 806
           }
         }
       },
@@ -12479,21 +13208,21 @@
         "declaration": {
           "end": {
             "column": 57,
-            "line": 757
+            "line": 802
           },
           "start": {
             "column": 0,
-            "line": 709
+            "line": 754
           }
         },
         "selection": {
           "end": {
             "column": 43,
-            "line": 711
+            "line": 756
           },
           "start": {
             "column": 8,
-            "line": 711
+            "line": 756
           }
         }
       },
@@ -19488,21 +20217,21 @@
         "declaration": {
           "end": {
             "column": 66,
-            "line": 113
+            "line": 114
           },
           "start": {
             "column": 0,
-            "line": 111
+            "line": 112
           }
         },
         "selection": {
           "end": {
             "column": 42,
-            "line": 111
+            "line": 112
           },
           "start": {
             "column": 8,
-            "line": 111
+            "line": 112
           }
         }
       },
@@ -19579,6 +20308,751 @@
     },
     {
       "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.ArchiveFockState → ℂ) →ₗ[ℂ] D0.Geometry.ArchiveCochainC N",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 8,
+            "line": 130
+          },
+          "start": {
+            "column": 0,
+            "line": 116
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 32,
+            "line": 118
+          },
+          "start": {
+            "column": 4,
+            "line": 118
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Role → ZMod (D0.archiveFibers N)) → (D0.Geometry.ArchiveFockState → ℂ) →ₗ[ℂ] D0.Geometry.ArchiveCochainC N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear",
+      "proof_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddHom.mk",
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear._proof_1",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear._proof_2",
+        "D0.Role",
+        "D0.archiveFibers",
+        "LinearMap.mk",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Role",
+        "D0.archiveFibers",
+        "LinearMap",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.archiveFourierFockMode N k (v + w) =\n  D0.Geometry.archiveFourierFockMode N k v + D0.Geometry.archiveFourierFockMode N k w",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)) (v w : D0.Geometry.ArchiveFockState → ℂ),\n  D0.Geometry.archiveFourierFockMode N k (v + w) =\n    D0.Geometry.archiveFourierFockMode N k v + D0.Geometry.archiveFourierFockMode N k w",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear._proof_1",
+      "proof_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommMonoid.toAddMonoid",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddMonoid.toAddSemigroup",
+        "AddSemigroup.toAdd",
+        "Complex",
+        "Complex.instMul",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.rightDistribClass",
+        "Eq",
+        "Eq.trans",
+        "Fin.fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.addCommMonoid",
+        "Prod.fst",
+        "Prod.snd",
+        "True",
+        "ZMod",
+        "add_mul",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instOfNatNat",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "Complex",
+        "Complex.instNormedField",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.addCommMonoid",
+        "ZMod",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.archiveFourierFockMode N k (c • v) = (RingHom.id ℂ) c • D0.Geometry.archiveFourierFockMode N k v",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)) (c : ℂ) (v : D0.Geometry.ArchiveFockState → ℂ),\n  D0.Geometry.archiveFourierFockMode N k (c • v) = (RingHom.id ℂ) c • D0.Geometry.archiveFourierFockMode N k v",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear._proof_2",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Fin.fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Module.toDistribMulAction",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Prod.fst",
+        "Prod.snd",
+        "RingHom",
+        "RingHom.id",
+        "RingHom.instFunLike",
+        "SMulZeroClass.toSMul",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "Zero.toOfNat0",
+        "congrArg",
+        "funext",
+        "id",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "HSMul.hSMul",
+        "Module.toDistribMulAction",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom",
+        "RingHom.id",
+        "RingHom.instFunLike",
+        "SMulZeroClass.toSMul",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "instHSMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear N k =\n  { toFun := D0.Geometry.archiveFourierFockMode N k, map_add' := ⋯, map_smul' := ⋯ }",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)),\n  D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear N k =\n    { toFun := D0.Geometry.archiveFourierFockMode N k, map_add' := ⋯, map_smul' := ⋯ }",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear.eq_1",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq.refl",
+        "LinearMap",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddHom.mk",
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear._proof_1",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear._proof_2",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "LinearMap",
+        "LinearMap.mk",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear N k) v =\n  D0.Geometry.archiveFourierFockMode N k v",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 76,
+            "line": 136
+          },
+          "start": {
+            "column": 0,
+            "line": 132
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 42,
+            "line": 134
+          },
+          "start": {
+            "column": 8,
+            "line": 134
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)) (v : D0.Geometry.ArchiveFockState → ℂ),\n  (D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear N k) v =\n    D0.Geometry.archiveFourierFockMode N k v",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear_apply",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.archiveLorentzianCARDiracLinear N)\n    ((D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear N k) v) =\n  (D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear N k)\n    ((D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign k) v)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 55,
+            "line": 235
+          },
+          "start": {
+            "column": 0,
+            "line": 224
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 52,
+            "line": 226
+          },
+          "start": {
+            "column": 8,
+            "line": 226
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)) (v : D0.Geometry.ArchiveFockState → ℂ),\n  (D0.Geometry.archiveLorentzianCARDiracLinear N)\n      ((D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear N k) v) =\n    (D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear N k)\n      ((D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign k) v)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianCARDiracLinear_fourier_mode",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.archiveLorentzianCARDirac",
+        "D0.Geometry.archiveLorentzianCARDiracLinear",
+        "D0.Geometry.archiveLorentzianCARDirac_fourier_mode",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveFourierFockAction",
+        "D0.Geometry.roleWeightedArchiveFourierFockActionLinear",
+        "D0.Geometry.roleWeightedArchiveFourierFockActionLinear_apply",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "congrArg",
+        "id"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveLorentzianCARDiracLinear",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveFourierFockActionLinear",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
         "Quot.sound",
         "propext"
       ],
@@ -19608,21 +21082,21 @@
         "declaration": {
           "end": {
             "column": 10,
-            "line": 291
+            "line": 453
           },
           "start": {
             "column": 0,
-            "line": 284
+            "line": 446
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 286
+            "line": 448
           },
           "start": {
             "column": 4,
-            "line": 286
+            "line": 448
           }
         }
       },
@@ -19763,21 +21237,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 307
+            "line": 469
           },
           "start": {
             "column": 0,
-            "line": 293
+            "line": 455
           }
         },
         "selection": {
           "end": {
             "column": 51,
-            "line": 296
+            "line": 458
           },
           "start": {
             "column": 8,
-            "line": 296
+            "line": 458
           }
         }
       },
@@ -19960,21 +21434,21 @@
         "declaration": {
           "end": {
             "column": 7,
-            "line": 321
+            "line": 483
           },
           "start": {
             "column": 0,
-            "line": 309
+            "line": 471
           }
         },
         "selection": {
           "end": {
             "column": 51,
-            "line": 311
+            "line": 473
           },
           "start": {
             "column": 8,
-            "line": 311
+            "line": 473
           }
         }
       },
@@ -20208,21 +21682,21 @@
         "declaration": {
           "end": {
             "column": 61,
-            "line": 344
+            "line": 506
           },
           "start": {
             "column": 0,
-            "line": 323
+            "line": 485
           }
         },
         "selection": {
           "end": {
             "column": 60,
-            "line": 327
+            "line": 489
           },
           "start": {
             "column": 8,
-            "line": 327
+            "line": 489
           }
         }
       },
@@ -20305,21 +21779,21 @@
         "declaration": {
           "end": {
             "column": 7,
-            "line": 383
+            "line": 545
           },
           "start": {
             "column": 0,
-            "line": 367
+            "line": 529
           }
         },
         "selection": {
           "end": {
             "column": 62,
-            "line": 369
+            "line": 531
           },
           "start": {
             "column": 8,
-            "line": 369
+            "line": 531
           }
         }
       },
@@ -20879,6 +22353,1048 @@
           "is_proposition": false,
           "name": "N",
           "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "(16 + 8 * (D0.archiveFibers N - 1)).le (Module.finrank ℂ ↥(D0.Geometry.archiveLorentzianCARDiracLinear N).ker)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 71,
+            "line": 708
+          },
+          "start": {
+            "column": 0,
+            "line": 568
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 72,
+            "line": 572
+          },
+          "start": {
+            "column": 8,
+            "line": 572
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ), 16 + 8 * (D0.archiveFibers N - 1) ≤ Module.finrank ℂ ↥(D0.Geometry.archiveLorentzianCARDiracLinear N).ker",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoid.toNSMul",
+        "AddMonoidHomClass.toZeroHomClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "And",
+        "And.left",
+        "And.right",
+        "Bool",
+        "Bool.instFinite",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.addCommGroup",
+        "Complex.addGroupWithOne",
+        "Complex.commRing",
+        "Complex.instCharZero",
+        "Complex.instCommSemiring",
+        "Complex.instField",
+        "Complex.instMul",
+        "Complex.instNatCast",
+        "Complex.instNontrivial",
+        "Complex.instNormedField",
+        "Complex.instRing",
+        "Complex.instSemiring",
+        "Complex.instStarRing",
+        "Complex.instZero",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.archiveLorentzianCARDiracLinear",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveFourierFockActionLinear",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianCARDiracLinear_fourier_mode",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_momentum_ne_zero",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_null_fibre_classification",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_null_momentum_fin_injective",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family._proof_1_4",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family._proof_1_5",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family._proof_1_7",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1",
+        "D0.Research.NativeWeightedDiracFourierNullModes.roleWeightedArchiveFourierFockActionLinear_ker_finrank_at_zero",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Decidable.byContradiction",
+        "DistribMulActionSemiHomClass.toAddMonoidHomClass",
+        "DivisionSemiring.toGroupWithZero",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "False",
+        "False.elim",
+        "Field.toSemifield",
+        "Fin",
+        "Fin.fintype",
+        "Fin.val",
+        "Finite.instProd",
+        "Finite.of_fintype",
+        "FiniteDimensional.finiteDimensional_pi'",
+        "FiniteDimensional.finiteDimensional_self",
+        "FiniteDimensional.finiteDimensional_submodule",
+        "Finset",
+        "Finset.card",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_apply",
+        "Finset.sum_congr",
+        "Finset.sum_const",
+        "Finset.sum_eq_zero",
+        "Finset.univ",
+        "Fintype.card",
+        "Fintype.card_fin",
+        "Fintype.card_prod",
+        "Fintype.sum_option",
+        "Function.Injective",
+        "GroupWithZero.toNoZeroSMulDivisors",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "HSub.hSub",
+        "Ideal.instIsTorsionFreeSubtypeMemSubmodule",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "IsDomain.toIsCancelMulZero",
+        "IsScalarTower.left",
+        "LE.le",
+        "LT.lt",
+        "LinearMap",
+        "LinearMap.addCommMonoid",
+        "LinearMap.codRestrict",
+        "LinearMap.comp",
+        "LinearMap.finrank_le_finrank_of_injective",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "LinearMap.map_coe_ker",
+        "LinearMap.map_zero",
+        "LinearMap.proj",
+        "LinearMap.range",
+        "LinearMap.semilinearMapClass",
+        "LinearMap.sum_apply",
+        "Membership.mem",
+        "Module.Projective.of_free",
+        "Module.finrank",
+        "Module.finrank_pi_fintype",
+        "Module.free_of_finite_type_torsion_free'",
+        "Module.instFiniteDimensionalOfIsReflexive",
+        "Module.instIsReflexiveOfFiniteOfProjective",
+        "Module.toDistribMulAction",
+        "Monoid.toMulAction",
+        "Monoid.toPow",
+        "MonoidWithZero.toMonoid",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.add_eq_zero_iff._simp_1",
+        "Nat.add_left_cancel_iff._simp_1",
+        "Nat.cast",
+        "Nat.cast_inj._simp_1",
+        "Nat.cast_zero",
+        "Nat.decLt",
+        "Nat.instAddCommMonoid",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCharZero",
+        "Nat.instNeZeroSucc",
+        "Nat.mul_comm",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormMulClass.toNoZeroDivisors",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toNormedRing",
+        "NormedDivisionRing.toDivisionRing",
+        "NormedDivisionRing.toNormMulClass",
+        "NormedField.toNormedCommRing",
+        "NormedField.toNormedDivisionRing",
+        "Not",
+        "OfNat.ofNat",
+        "OfNat.ofNat_ne_zero._simp_1",
+        "Option",
+        "Option.casesOn",
+        "Option.ctorIdx",
+        "Option.decidableEqNone",
+        "Option.instDecidableEq",
+        "Option.none",
+        "Option.some",
+        "Pi.Function.module",
+        "Pi.addCommGroup",
+        "Pi.addCommMonoid",
+        "Pi.finite",
+        "Pi.instFintype",
+        "Pi.instModuleIsTorsionFree",
+        "Pi.instZero",
+        "Pi.isScalarTower",
+        "Pi.module",
+        "Prod",
+        "Prod.mk",
+        "Ring.toAddCommGroup",
+        "Ring.toSemiring",
+        "RingHom",
+        "RingHom.id",
+        "RingHom.instFunLike",
+        "RingHomCompTriple.ids",
+        "RingHomSurjective.ids",
+        "Semifield.toCommSemiring",
+        "Semifield.toDivisionSemiring",
+        "SemilinearMapClass.distribMulActionSemiHomClass",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toMonoidWithZero",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegMonoid.toAddMonoid",
+        "SubNegZeroMonoid.toSubNegMonoid",
+        "Submodule",
+        "Submodule.addCommGroup",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Submodule.subtype",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Subtype",
+        "Subtype.ext",
+        "Subtype.property",
+        "Subtype.val",
+        "Trans.trans",
+        "True",
+        "Unit",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "_private.D0.Research.NativeWeightedDiracFourierNullModes.0.D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockMode_sum_fourier_projection",
+        "and_false",
+        "cast",
+        "commRing_strongRankCondition",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_false'",
+        "eq_self",
+        "funext",
+        "id",
+        "instAddNat",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDecidableTrue",
+        "instFintypeOption",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instHSub",
+        "instIsDomain",
+        "instIsPrincipalIdealRingOfIsSemisimpleRing",
+        "instIsSemisimpleModuleOfIsSimpleModule",
+        "instIsSimpleModule",
+        "instIsTorsionFreeOfIsDomainOfNoZeroSMulDivisors",
+        "instLENat",
+        "instLTNat",
+        "instMulNat",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "instSubNat",
+        "instTransEq",
+        "isReduced_of_noZeroDivisors",
+        "ite",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "ite_congr",
+        "map_sum",
+        "map_zero",
+        "mul_left_cancel₀",
+        "noConfusion_of_Nat",
+        "not_false_eq_true",
+        "of_eq_true",
+        "pow_ne_zero",
+        "rfl",
+        "starRingEnd"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.archiveLorentzianCARDiracLinear",
+        "D0.archiveFibers",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HSub.hSub",
+        "LE.le",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Module.finrank",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "instAddNat",
+        "instHAdd",
+        "instHMul",
+        "instHSub",
+        "instLENat",
+        "instMulNat",
+        "instOfNatNat",
+        "instSubNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "j",
+          "type": "Fin (D0.archiveFibers N - 1)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal.0.D0.Research.NativeWeightedDiracFourierNullModes.2103245656._hygCtx._hyg.481",
+          "type": "0 < ↑j + 1 → False"
+        }
+      ],
+      "conclusion_whnf": "False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (j : Fin (D0.archiveFibers N - 1)), ¬0 < ↑j + 1 → False",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family._proof_1_4",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.true",
+        "D0.archiveFibers",
+        "Decidable.decide",
+        "Eq",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Fin",
+        "Fin.val",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "Int",
+        "Int.instAdd",
+        "Int.instLEInt",
+        "Int.instNegInt",
+        "Int.instSub",
+        "Int.natCast_add",
+        "Int.natCast_nonneg",
+        "Int.sub_nonneg_of_le",
+        "LT.lt",
+        "Lean.Omega.Coeffs.ofList",
+        "Lean.Omega.Constraint.addInequality_sat",
+        "Lean.Omega.Constraint.combine_sat'",
+        "Lean.Omega.Constraint.isImpossible",
+        "Lean.Omega.Constraint.mk",
+        "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+        "Lean.Omega.Int.add_congr",
+        "Lean.Omega.Int.ofNat_le_of_le",
+        "Lean.Omega.Int.sub_congr",
+        "Lean.Omega.LinearCombo",
+        "Lean.Omega.LinearCombo.add_eval",
+        "Lean.Omega.LinearCombo.coordinate",
+        "Lean.Omega.LinearCombo.coordinate_eval_0",
+        "Lean.Omega.LinearCombo.eval",
+        "Lean.Omega.LinearCombo.instAdd",
+        "Lean.Omega.LinearCombo.instSub",
+        "Lean.Omega.LinearCombo.mk",
+        "Lean.Omega.LinearCombo.sub_eval",
+        "Lean.Omega.tidy_sat",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "Nat.cast",
+        "Nat.le_of_not_lt",
+        "Neg.neg",
+        "Not",
+        "OfNat.ofNat",
+        "Option.none",
+        "Option.some",
+        "id",
+        "instAddNat",
+        "instDecidableEqBool",
+        "instHAdd",
+        "instHSub",
+        "instLTNat",
+        "instNatCastInt",
+        "instOfNat",
+        "instOfNatNat",
+        "instSubNat",
+        "le_of_le_of_eq",
+        "of_decide_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.archiveFibers",
+        "False",
+        "Fin",
+        "Fin.val",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "LT.lt",
+        "Nat",
+        "Not",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instHSub",
+        "instLTNat",
+        "instOfNatNat",
+        "instSubNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "j",
+          "type": "Fin (D0.archiveFibers N - 1)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal.0.D0.Research.NativeWeightedDiracFourierNullModes.2103245656._hygCtx._hyg.485",
+          "type": "↑j + 1 < D0.archiveFibers N → False"
+        }
+      ],
+      "conclusion_whnf": "False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (j : Fin (D0.archiveFibers N - 1)), ¬↑j + 1 < D0.archiveFibers N → False",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family._proof_1_5",
+      "proof_dependencies": [
+        "And",
+        "And.right",
+        "Bool",
+        "Bool.true",
+        "D0.archiveFibers",
+        "Decidable.decide",
+        "Eq",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "False",
+        "Fin",
+        "Fin.isLt",
+        "Fin.val",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "Int",
+        "Int.add_one_le_of_lt",
+        "Int.instAdd",
+        "Int.instLEInt",
+        "Int.instNegInt",
+        "Int.instSub",
+        "Int.natCast_add",
+        "Int.natCast_nonneg",
+        "Int.sub_eq_zero_of_eq",
+        "Int.sub_nonneg_of_le",
+        "LE.le",
+        "LT.lt",
+        "Lean.Omega.Coeffs.ofList",
+        "Lean.Omega.Constraint.addEquality_sat",
+        "Lean.Omega.Constraint.addInequality_sat",
+        "Lean.Omega.Constraint.combine_sat'",
+        "Lean.Omega.Constraint.isImpossible",
+        "Lean.Omega.Constraint.mk",
+        "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+        "Lean.Omega.Int.add_congr",
+        "Lean.Omega.Int.ofNat_le_of_le",
+        "Lean.Omega.Int.ofNat_lt_of_lt",
+        "Lean.Omega.Int.ofNat_sub_dichotomy",
+        "Lean.Omega.Int.sub_congr",
+        "Lean.Omega.LinearCombo",
+        "Lean.Omega.LinearCombo.add_eval",
+        "Lean.Omega.LinearCombo.coordinate",
+        "Lean.Omega.LinearCombo.coordinate_eval_0",
+        "Lean.Omega.LinearCombo.coordinate_eval_1",
+        "Lean.Omega.LinearCombo.coordinate_eval_2",
+        "Lean.Omega.LinearCombo.eval",
+        "Lean.Omega.LinearCombo.instAdd",
+        "Lean.Omega.LinearCombo.instSub",
+        "Lean.Omega.LinearCombo.mk",
+        "Lean.Omega.LinearCombo.sub_eval",
+        "Lean.Omega.combo_sat'",
+        "Lean.Omega.tidy_sat",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "Nat.cast",
+        "Nat.le_of_not_lt",
+        "Neg.neg",
+        "Not",
+        "OfNat.ofNat",
+        "Option.none",
+        "Option.some",
+        "Or.elim",
+        "id",
+        "instAddNat",
+        "instDecidableEqBool",
+        "instHAdd",
+        "instHSub",
+        "instLENat",
+        "instLTNat",
+        "instNatCastInt",
+        "instOfNat",
+        "instOfNatNat",
+        "instSubNat",
+        "le_of_le_of_eq",
+        "of_decide_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.archiveFibers",
+        "False",
+        "Fin",
+        "Fin.val",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "LT.lt",
+        "Nat",
+        "Not",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instHSub",
+        "instLTNat",
+        "instOfNatNat",
+        "instSubNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "Fin (D0.archiveFibers N - 1)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hi0",
+          "type": "(Nat.succ 0).le (↑i + 1)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal.0.D0.Research.NativeWeightedDiracFourierNullModes.2103245656._hygCtx._hyg.1562",
+          "type": "↑i + 1 < D0.archiveFibers N → False"
+        }
+      ],
+      "conclusion_whnf": "False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (i : Fin (D0.archiveFibers N - 1)), 0 < ↑i + 1 → ¬↑i + 1 < D0.archiveFibers N → False",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family._proof_1_7",
+      "proof_dependencies": [
+        "And",
+        "And.right",
+        "Bool",
+        "Bool.true",
+        "D0.archiveFibers",
+        "Decidable.decide",
+        "Eq",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "False",
+        "Fin",
+        "Fin.isLt",
+        "Fin.val",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "Int",
+        "Int.add_one_le_of_lt",
+        "Int.instAdd",
+        "Int.instLEInt",
+        "Int.instNegInt",
+        "Int.instSub",
+        "Int.natCast_add",
+        "Int.sub_eq_zero_of_eq",
+        "Int.sub_nonneg_of_le",
+        "LE.le",
+        "LT.lt",
+        "Lean.Omega.Coeffs.ofList",
+        "Lean.Omega.Constraint.addEquality_sat",
+        "Lean.Omega.Constraint.addInequality_sat",
+        "Lean.Omega.Constraint.combine_sat'",
+        "Lean.Omega.Constraint.isImpossible",
+        "Lean.Omega.Constraint.mk",
+        "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+        "Lean.Omega.Int.add_congr",
+        "Lean.Omega.Int.ofNat_le_of_le",
+        "Lean.Omega.Int.ofNat_lt_of_lt",
+        "Lean.Omega.Int.ofNat_sub_dichotomy",
+        "Lean.Omega.Int.sub_congr",
+        "Lean.Omega.LinearCombo",
+        "Lean.Omega.LinearCombo.add_eval",
+        "Lean.Omega.LinearCombo.coordinate",
+        "Lean.Omega.LinearCombo.coordinate_eval_0",
+        "Lean.Omega.LinearCombo.coordinate_eval_1",
+        "Lean.Omega.LinearCombo.coordinate_eval_2",
+        "Lean.Omega.LinearCombo.eval",
+        "Lean.Omega.LinearCombo.instAdd",
+        "Lean.Omega.LinearCombo.instSub",
+        "Lean.Omega.LinearCombo.mk",
+        "Lean.Omega.LinearCombo.sub_eval",
+        "Lean.Omega.combo_sat'",
+        "Lean.Omega.tidy_sat",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "Nat.cast",
+        "Nat.le_of_not_lt",
+        "Neg.neg",
+        "Not",
+        "OfNat.ofNat",
+        "Option.none",
+        "Option.some",
+        "Or.elim",
+        "id",
+        "instAddNat",
+        "instDecidableEqBool",
+        "instHAdd",
+        "instHSub",
+        "instLENat",
+        "instLTNat",
+        "instNatCastInt",
+        "instOfNat",
+        "instOfNatNat",
+        "instSubNat",
+        "le_of_le_of_eq",
+        "of_decide_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.archiveFibers",
+        "False",
+        "Fin",
+        "Fin.val",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "LT.lt",
+        "Nat",
+        "Not",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instHSub",
+        "instLTNat",
+        "instOfNatNat",
+        "instSubNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "I",
+          "type": "Type"
+        }
+      ],
+      "conclusion_whnf": "(motive : Option I → Sort u_1) → (j : Option I) → (Unit → motive none) → ((i : I) → motive (some i)) → motive j",
+      "declaration_kind": "definition",
+      "declaration_ranges": null,
+      "elaborated_type": "(I : Type) →\n  let J := Option I;\n  (motive : J → Sort u_1) → (j : J) → (Unit → motive none) → ((i : I) → motive (some i)) → motive j",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1",
+      "proof_dependencies": [
+        "Option",
+        "Option.casesOn",
+        "Option.none",
+        "Option.some",
+        "Unit",
+        "Unit.unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Option",
+        "Option.none",
+        "Option.some",
+        "Unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hsymbol",
+          "type": "D0.Geometry.archiveLorentzianFourierSymbol N k = 0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hk",
+          "type": "k = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "Nat.le 8 (Module.finrank ℂ ↥(D0.Geometry.archiveLorentzianCARDiracLinear N).ker)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 71,
+            "line": 444
+          },
+          "start": {
+            "column": 0,
+            "line": 406
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 62,
+            "line": 410
+          },
+          "start": {
+            "column": 8,
+            "line": 410
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)),\n  D0.Geometry.archiveLorentzianFourierSymbol N k = 0 →\n    k ≠ 0 → 8 ≤ Module.finrank ℂ ↥(D0.Geometry.archiveLorentzianCARDiracLinear N).ker",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_eight",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidHomClass.toZeroHomClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "And",
+        "And.left",
+        "And.right",
+        "Bool",
+        "Bool.instFinite",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.addCommGroup",
+        "Complex.commRing",
+        "Complex.instField",
+        "Complex.instNontrivial",
+        "Complex.instNormedField",
+        "Complex.instRing",
+        "Complex.instSemiring",
+        "Complex.instZero",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.archiveFourierFockMode_injective",
+        "D0.Geometry.archiveLorentzianCARDiracLinear",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveFourierFockActionLinear",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockModeLinear",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianCARDiracLinear_fourier_mode",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_nonzero_null_mode_classification",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "DistribMulActionSemiHomClass.toAddMonoidHomClass",
+        "DivisionSemiring.toGroupWithZero",
+        "Eq",
+        "Eq.mpr",
+        "Eq.symm",
+        "Eq.trans",
+        "Field.toSemifield",
+        "Fin.fintype",
+        "Finite.instProd",
+        "Finite.of_fintype",
+        "FiniteDimensional.finiteDimensional_pi'",
+        "FiniteDimensional.finiteDimensional_self",
+        "FiniteDimensional.finiteDimensional_submodule",
+        "Function.Injective",
+        "GroupWithZero.toNoZeroSMulDivisors",
+        "LE.le",
+        "LinearMap",
+        "LinearMap.codRestrict",
+        "LinearMap.comp",
+        "LinearMap.finrank_le_finrank_of_injective",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "LinearMap.range",
+        "LinearMap.semilinearMapClass",
+        "Membership.mem",
+        "Module.Projective.of_free",
+        "Module.finrank",
+        "Module.free_of_finite_type_torsion_free'",
+        "Module.instFiniteDimensionalOfIsReflexive",
+        "Module.instIsReflexiveOfFiniteOfProjective",
+        "Module.toDistribMulAction",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedDivisionRing.toDivisionRing",
+        "NormedField.toNormedCommRing",
+        "NormedField.toNormedDivisionRing",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommGroup",
+        "Pi.addCommMonoid",
+        "Pi.finite",
+        "Pi.instZero",
+        "Real",
+        "Real.instZero",
+        "Ring.toAddCommGroup",
+        "Ring.toSemiring",
+        "RingHom",
+        "RingHom.id",
+        "RingHom.instFunLike",
+        "RingHomCompTriple.ids",
+        "RingHomSurjective.ids",
+        "Semifield.toCommSemiring",
+        "Semifield.toDivisionSemiring",
+        "SemilinearMapClass.distribMulActionSemiHomClass",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegMonoid.toAddMonoid",
+        "SubNegZeroMonoid.toSubNegMonoid",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Submodule.subtype",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Subtype",
+        "Subtype.ext",
+        "Subtype.property",
+        "Subtype.val",
+        "Trans.trans",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "commRing_strongRankCondition",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instIsDomain",
+        "instIsPrincipalIdealRingOfIsSemisimpleRing",
+        "instIsSemisimpleModuleOfIsSimpleModule",
+        "instIsSimpleModule",
+        "instIsTorsionFreeOfIsDomainOfNoZeroSMulDivisors",
+        "instLENat",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "instTransEq",
+        "map_zero",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.archiveLorentzianCARDiracLinear",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "LE.le",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Module.finrank",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Real",
+        "Real.instZero",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instLENat",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
         },
         {
           "binder_info": "Lean.BinderInfo.default",
@@ -20893,21 +23409,21 @@
         "declaration": {
           "end": {
             "column": 25,
-            "line": 257
+            "line": 379
           },
           "start": {
             "column": 0,
-            "line": 246
+            "line": 368
           }
         },
         "selection": {
           "end": {
             "column": 46,
-            "line": 248
+            "line": 370
           },
           "start": {
             "column": 8,
-            "line": 248
+            "line": 370
           }
         }
       },
@@ -21075,21 +23591,21 @@
         "declaration": {
           "end": {
             "column": 16,
-            "line": 282
+            "line": 404
           },
           "start": {
             "column": 0,
-            "line": 259
+            "line": 381
           }
         },
         "selection": {
           "end": {
             "column": 58,
-            "line": 262
+            "line": 384
           },
           "start": {
             "column": 8,
-            "line": 262
+            "line": 384
           }
         }
       },
@@ -21230,21 +23746,21 @@
         "declaration": {
           "end": {
             "column": 19,
-            "line": 404
+            "line": 566
           },
           "start": {
             "column": 0,
-            "line": 385
+            "line": 547
           }
         },
         "selection": {
           "end": {
             "column": 65,
-            "line": 388
+            "line": 550
           },
           "start": {
             "column": 8,
-            "line": 388
+            "line": 550
           }
         }
       },
@@ -21645,21 +24161,21 @@
         "declaration": {
           "end": {
             "column": 24,
-            "line": 365
+            "line": 527
           },
           "start": {
             "column": 0,
-            "line": 346
+            "line": 508
           }
         },
         "selection": {
           "end": {
             "column": 56,
-            "line": 350
+            "line": 512
           },
           "start": {
             "column": 8,
-            "line": 350
+            "line": 512
           }
         }
       },
@@ -21866,21 +24382,21 @@
         "declaration": {
           "end": {
             "column": 54,
-            "line": 445
+            "line": 749
           },
           "start": {
             "column": 0,
-            "line": 406
+            "line": 710
           }
         },
         "selection": {
           "end": {
             "column": 62,
-            "line": 409
+            "line": 713
           },
           "start": {
             "column": 8,
-            "line": 409
+            "line": 713
           }
         }
       },
@@ -22061,21 +24577,21 @@
         "declaration": {
           "end": {
             "column": 69,
-            "line": 39
+            "line": 40
           },
           "start": {
             "column": 0,
-            "line": 25
+            "line": 26
           }
         },
         "selection": {
           "end": {
             "column": 51,
-            "line": 28
+            "line": 29
           },
           "start": {
             "column": 8,
-            "line": 28
+            "line": 29
           }
         }
       },
@@ -22199,21 +24715,21 @@
         "declaration": {
           "end": {
             "column": 67,
-            "line": 63
+            "line": 64
           },
           "start": {
             "column": 0,
-            "line": 41
+            "line": 42
           }
         },
         "selection": {
           "end": {
             "column": 33,
-            "line": 43
+            "line": 44
           },
           "start": {
             "column": 8,
-            "line": 43
+            "line": 44
           }
         }
       },
@@ -22403,21 +24919,21 @@
         "declaration": {
           "end": {
             "column": 58,
-            "line": 73
+            "line": 74
           },
           "start": {
             "column": 0,
-            "line": 65
+            "line": 66
           }
         },
         "selection": {
           "end": {
             "column": 53,
-            "line": 67
+            "line": 68
           },
           "start": {
             "column": 8,
-            "line": 67
+            "line": 68
           }
         }
       },
@@ -22568,21 +25084,21 @@
         "declaration": {
           "end": {
             "column": 7,
-            "line": 214
+            "line": 336
           },
           "start": {
             "column": 0,
-            "line": 204
+            "line": 326
           }
         },
         "selection": {
           "end": {
             "column": 32,
-            "line": 206
+            "line": 328
           },
           "start": {
             "column": 8,
-            "line": 206
+            "line": 328
           }
         }
       },
@@ -22933,21 +25449,21 @@
         "declaration": {
           "end": {
             "column": 57,
-            "line": 225
+            "line": 347
           },
           "start": {
             "column": 0,
-            "line": 216
+            "line": 338
           }
         },
         "selection": {
           "end": {
             "column": 52,
-            "line": 219
+            "line": 341
           },
           "start": {
             "column": 8,
-            "line": 219
+            "line": 341
           }
         }
       },
@@ -23110,21 +25626,21 @@
         "declaration": {
           "end": {
             "column": 73,
-            "line": 98
+            "line": 99
           },
           "start": {
             "column": 0,
-            "line": 75
+            "line": 76
           }
         },
         "selection": {
           "end": {
             "column": 39,
-            "line": 77
+            "line": 78
           },
           "start": {
             "column": 8,
-            "line": 77
+            "line": 78
           }
         }
       },
@@ -23401,21 +25917,21 @@
         "declaration": {
           "end": {
             "column": 64,
-            "line": 109
+            "line": 110
           },
           "start": {
             "column": 0,
-            "line": 100
+            "line": 101
           }
         },
         "selection": {
           "end": {
             "column": 59,
-            "line": 102
+            "line": 103
           },
           "start": {
             "column": 8,
-            "line": 102
+            "line": 103
           }
         }
       },
@@ -23563,21 +26079,21 @@
         "declaration": {
           "end": {
             "column": 52,
-            "line": 140
+            "line": 262
           },
           "start": {
             "column": 0,
-            "line": 135
+            "line": 257
           }
         },
         "selection": {
           "end": {
             "column": 67,
-            "line": 136
+            "line": 258
           },
           "start": {
             "column": 18,
-            "line": 136
+            "line": 258
           }
         }
       },
@@ -23867,21 +26383,21 @@
         "declaration": {
           "end": {
             "column": 43,
-            "line": 125
+            "line": 247
           },
           "start": {
             "column": 0,
-            "line": 115
+            "line": 237
           }
         },
         "selection": {
           "end": {
             "column": 66,
-            "line": 117
+            "line": 239
           },
           "start": {
             "column": 8,
-            "line": 117
+            "line": 239
           }
         }
       },
@@ -24096,21 +26612,21 @@
         "declaration": {
           "end": {
             "column": 80,
-            "line": 170
+            "line": 292
           },
           "start": {
             "column": 0,
-            "line": 142
+            "line": 264
           }
         },
         "selection": {
           "end": {
             "column": 63,
-            "line": 144
+            "line": 266
           },
           "start": {
             "column": 8,
-            "line": 144
+            "line": 266
           }
         }
       },
@@ -24327,21 +26843,21 @@
         "declaration": {
           "end": {
             "column": 23,
-            "line": 192
+            "line": 314
           },
           "start": {
             "column": 0,
-            "line": 172
+            "line": 294
           }
         },
         "selection": {
           "end": {
             "column": 79,
-            "line": 173
+            "line": 295
           },
           "start": {
             "column": 8,
-            "line": 173
+            "line": 295
           }
         }
       },
@@ -24469,21 +26985,21 @@
         "declaration": {
           "end": {
             "column": 74,
-            "line": 133
+            "line": 255
           },
           "start": {
             "column": 0,
-            "line": 127
+            "line": 249
           }
         },
         "selection": {
           "end": {
             "column": 70,
-            "line": 128
+            "line": 250
           },
           "start": {
             "column": 8,
-            "line": 128
+            "line": 250
           }
         }
       },
@@ -24634,21 +27150,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 202
+            "line": 324
           },
           "start": {
             "column": 0,
-            "line": 194
+            "line": 316
           }
         },
         "selection": {
           "end": {
             "column": 85,
-            "line": 195
+            "line": 317
           },
           "start": {
             "column": 8,
-            "line": 195
+            "line": 317
           }
         }
       },
@@ -24788,21 +27304,21 @@
         "declaration": {
           "end": {
             "column": 21,
-            "line": 244
+            "line": 366
           },
           "start": {
             "column": 0,
-            "line": 227
+            "line": 349
           }
         },
         "selection": {
           "end": {
             "column": 71,
-            "line": 230
+            "line": 352
           },
           "start": {
             "column": 8,
-            "line": 230
+            "line": 352
           }
         }
       },
@@ -24963,21 +27479,21 @@
         "declaration": {
           "end": {
             "column": 63,
-            "line": 535
+            "line": 580
           },
           "start": {
             "column": 0,
-            "line": 495
+            "line": 540
           }
         },
         "selection": {
           "end": {
             "column": 74,
-            "line": 495
+            "line": 540
           },
           "start": {
             "column": 16,
-            "line": 495
+            "line": 540
           }
         }
       },
@@ -25235,21 +27751,21 @@
         "declaration": {
           "end": {
             "column": 30,
-            "line": 493
+            "line": 538
           },
           "start": {
             "column": 0,
-            "line": 469
+            "line": 514
           }
         },
         "selection": {
           "end": {
             "column": 68,
-            "line": 469
+            "line": 514
           },
           "start": {
             "column": 16,
-            "line": 469
+            "line": 514
           }
         }
       },
@@ -25418,21 +27934,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 707
+            "line": 752
           },
           "start": {
             "column": 0,
-            "line": 692
+            "line": 737
           }
         },
         "selection": {
           "end": {
             "column": 58,
-            "line": 692
+            "line": 737
           },
           "start": {
             "column": 16,
-            "line": 692
+            "line": 737
           }
         }
       },
@@ -25613,21 +28129,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 674
+            "line": 719
           },
           "start": {
             "column": 0,
-            "line": 665
+            "line": 710
           }
         },
         "selection": {
           "end": {
             "column": 53,
-            "line": 665
+            "line": 710
           },
           "start": {
             "column": 16,
-            "line": 665
+            "line": 710
           }
         }
       },
@@ -25799,21 +28315,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 690
+            "line": 735
           },
           "start": {
             "column": 0,
-            "line": 682
+            "line": 727
           }
         },
         "selection": {
           "end": {
             "column": 57,
-            "line": 682
+            "line": 727
           },
           "start": {
             "column": 16,
-            "line": 682
+            "line": 727
           }
         }
       },
@@ -25994,21 +28510,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 663
+            "line": 708
           },
           "start": {
             "column": 0,
-            "line": 656
+            "line": 701
           }
         },
         "selection": {
           "end": {
             "column": 52,
-            "line": 656
+            "line": 701
           },
           "start": {
             "column": 16,
-            "line": 656
+            "line": 701
           }
         }
       },
@@ -26152,21 +28668,21 @@
         "declaration": {
           "end": {
             "column": 8,
-            "line": 654
+            "line": 699
           },
           "start": {
             "column": 0,
-            "line": 644
+            "line": 689
           }
         },
         "selection": {
           "end": {
             "column": 51,
-            "line": 644
+            "line": 689
           },
           "start": {
             "column": 16,
-            "line": 644
+            "line": 689
           }
         }
       },
@@ -26320,21 +28836,21 @@
         "declaration": {
           "end": {
             "column": 8,
-            "line": 642
+            "line": 687
           },
           "start": {
             "column": 0,
-            "line": 632
+            "line": 677
           }
         },
         "selection": {
           "end": {
             "column": 48,
-            "line": 632
+            "line": 677
           },
           "start": {
             "column": 16,
-            "line": 632
+            "line": 677
           }
         }
       },
@@ -26462,21 +28978,21 @@
         "declaration": {
           "end": {
             "column": 48,
-            "line": 630
+            "line": 675
           },
           "start": {
             "column": 0,
-            "line": 626
+            "line": 671
           }
         },
         "selection": {
           "end": {
             "column": 44,
-            "line": 626
+            "line": 671
           },
           "start": {
             "column": 16,
-            "line": 626
+            "line": 671
           }
         }
       },
@@ -26612,21 +29128,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 565
+            "line": 610
           },
           "start": {
             "column": 0,
-            "line": 554
+            "line": 599
           }
         },
         "selection": {
           "end": {
             "column": 42,
-            "line": 554
+            "line": 599
           },
           "start": {
             "column": 16,
-            "line": 554
+            "line": 599
           }
         }
       },
@@ -27049,21 +29565,21 @@
         "declaration": {
           "end": {
             "column": 58,
-            "line": 552
+            "line": 597
           },
           "start": {
             "column": 0,
-            "line": 548
+            "line": 593
           }
         },
         "selection": {
           "end": {
             "column": 40,
-            "line": 548
+            "line": 593
           },
           "start": {
             "column": 16,
-            "line": 548
+            "line": 593
           }
         }
       },
@@ -27210,21 +29726,21 @@
         "declaration": {
           "end": {
             "column": 31,
-            "line": 546
+            "line": 591
           },
           "start": {
             "column": 0,
-            "line": 537
+            "line": 582
           }
         },
         "selection": {
           "end": {
             "column": 44,
-            "line": 537
+            "line": 582
           },
           "start": {
             "column": 16,
-            "line": 537
+            "line": 582
           }
         }
       },
@@ -27338,21 +29854,21 @@
         "declaration": {
           "end": {
             "column": 28,
-            "line": 680
+            "line": 725
           },
           "start": {
             "column": 0,
-            "line": 676
+            "line": 721
           }
         },
         "selection": {
           "end": {
             "column": 47,
-            "line": 676
+            "line": 721
           },
           "start": {
             "column": 16,
-            "line": 676
+            "line": 721
           }
         }
       },
@@ -27426,6 +29942,722 @@
         "One.toOfNat1"
       ],
       "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "l",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "D0.Role → Bool"
+        }
+      ],
+      "conclusion_whnf": "∑ x,\n    D0.Geometry.archiveFourierFockMode N k v (x, s) * (starRingEnd ℂ) (D0.Geometry.FiniteCycleFourier.piCycleChar l x) =\n  if k = l then ↑(D0.archiveFibers N) ^ Fintype.card D0.Role * v s else 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 29,
+            "line": 184
+          },
+          "start": {
+            "column": 0,
+            "line": 138
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 57,
+            "line": 141
+          },
+          "start": {
+            "column": 16,
+            "line": 141
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (k l : D0.Role → ZMod (D0.archiveFibers N)) (v : D0.Geometry.ArchiveFockState → ℂ)\n  (s : D0.Geometry.ArchiveFockState),\n  ∑ x,\n      D0.Geometry.archiveFourierFockMode N k v (x, s) *\n        (starRingEnd ℂ) (D0.Geometry.FiniteCycleFourier.piCycleChar l x) =\n    if k = l then ↑(D0.archiveFibers N) ^ Fintype.card D0.Role * v s else 0",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "_private.D0.Research.NativeWeightedDiracFourierNullModes.0.D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockMode_fourier_projection",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroup.toSubtractionMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNatCast",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "Complex.instStarRing",
+        "Complex.instZero",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar_add_left",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar_conj",
+        "D0.Geometry.FiniteCycleFourier.sum_piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.ndrec",
+        "Eq.rec",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "Fintype",
+        "Fintype.card",
+        "Fintype.card_fin",
+        "Fintype.card_prod",
+        "Fintype.decidablePiFintype",
+        "HAdd.hAdd",
+        "HMul",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Iff.mp",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instCommSemiring",
+        "Nat.instMulZeroClass",
+        "Nat.rawCast",
+        "Ne",
+        "NeZero",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "Not",
+        "OfNat.ofNat",
+        "Pi.addGroup",
+        "Pi.instAdd",
+        "Pi.instFintype",
+        "Pi.instNeg",
+        "Pi.instSub",
+        "Pi.instZero",
+        "Prod",
+        "Prod.mk",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "RingHom",
+        "RingHom.instFunLike",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegMonoid.toAddMonoid",
+        "SubNegMonoid.toNeg",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Trans.trans",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "dite",
+        "eq_false",
+        "eq_self",
+        "funext",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulNat",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "instTransEq",
+        "ite",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "of_eq_true",
+        "rfl",
+        "starRingEnd",
+        "sub_eq_add_neg",
+        "sub_eq_zero",
+        "sub_self"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNatCast",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "Complex.instStarRing",
+        "Complex.instZero",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "Fintype.card",
+        "Fintype.decidablePiFintype",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.cast",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Prod.mk",
+        "RingHom",
+        "RingHom.instFunLike",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instHPow",
+        "instOfNatNat",
+        "ite",
+        "starRingEnd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.NativeWeightedDiracFourierNullModes.1806909498._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.NativeWeightedDiracFourierNullModes.1806909498._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "ι → D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hk",
+          "type": "∀ ⦃a₁ a₂ : ι⦄, k a₁ = k a₂ → a₁ = a₂"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "ι → D0.Geometry.ArchiveFockState → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "j",
+          "type": "ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "D0.Role → Bool"
+        }
+      ],
+      "conclusion_whnf": "∑ x,\n    (∑ i, D0.Geometry.archiveFourierFockMode N (k i) (v i) (x, s)) *\n      (starRingEnd ℂ) (D0.Geometry.FiniteCycleFourier.piCycleChar (k j) x) =\n  ↑(D0.archiveFibers N) ^ Fintype.card D0.Role * v j s",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 16,
+            "line": 222
+          },
+          "start": {
+            "column": 0,
+            "line": 186
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 61,
+            "line": 188
+          },
+          "start": {
+            "column": 16,
+            "line": 188
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [DecidableEq ι] (N : ℕ) (k : ι → D0.Role → ZMod (D0.archiveFibers N)),\n  Function.Injective k →\n    ∀ (v : ι → D0.Geometry.ArchiveFockState → ℂ) (j : ι) (s : D0.Geometry.ArchiveFockState),\n      ∑ x,\n          (∑ i, D0.Geometry.archiveFourierFockMode N (k i) (v i) (x, s)) *\n            (starRingEnd ℂ) (D0.Geometry.FiniteCycleFourier.piCycleChar (k j) x) =\n        ↑(D0.archiveFibers N) ^ Fintype.card D0.Role * v j s",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "_private.D0.Research.NativeWeightedDiracFourierNullModes.0.D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockMode_sum_fourier_projection",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.addGroupWithOne",
+        "Complex.instCharZero",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNatCast",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "Complex.instStarRing",
+        "Complex.instZero",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "False",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mem_univ._simp_1",
+        "Finset.sum",
+        "Finset.sum_comm",
+        "Finset.sum_congr",
+        "Finset.sum_eq_single",
+        "Finset.sum_mul",
+        "Finset.univ",
+        "Fintype",
+        "Fintype.card",
+        "Fintype.card_fin",
+        "Fintype.card_prod",
+        "Fintype.decidablePiFintype",
+        "Function.Injective",
+        "HMul.hMul",
+        "HPow.hPow",
+        "IsEmpty.forall_iff._simp_1",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MonoidWithZero.toMonoid",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.cast",
+        "Nat.cast_eq_zero._simp_1",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCharZero",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormMulClass.toNoZeroDivisors",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toNormedRing",
+        "NormedDivisionRing.toNormMulClass",
+        "NormedField.toNormedCommRing",
+        "NormedField.toNormedDivisionRing",
+        "Not",
+        "OfNat.ofNat",
+        "OfNat.ofNat_ne_zero._simp_1",
+        "Or",
+        "Pi.instFintype",
+        "Prod",
+        "Prod.mk",
+        "RingHom",
+        "RingHom.instFunLike",
+        "Semiring.toMonoid",
+        "Semiring.toMonoidWithZero",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Trans.trans",
+        "True",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "_private.D0.Research.NativeWeightedDiracFourierNullModes.0.D0.Research.NativeWeightedDiracFourierNullModes.archiveFourierFockMode_fourier_projection",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_false",
+        "eq_self",
+        "id",
+        "implies_congr",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instHPow",
+        "instIsEmptyFalse",
+        "instMulNat",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "instTransEq",
+        "isReduced_of_noZeroDivisors",
+        "ite",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "mul_eq_zero._simp_1",
+        "not_false_eq_true",
+        "not_true_eq_false",
+        "of_eq_true",
+        "pow_eq_zero_iff._simp_1",
+        "rfl",
+        "starRingEnd"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNatCast",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "Complex.instStarRing",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.FiniteCycleFourier.piCycleChar",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "Fintype",
+        "Fintype.card",
+        "Function.Injective",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.cast",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Prod.mk",
+        "RingHom",
+        "RingHom.instFunLike",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.fintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instHPow",
+        "instOfNatNat",
+        "starRingEnd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "I",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "Option I → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive none"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "(i : I) → motive (some i)"
+        }
+      ],
+      "conclusion_whnf": "(match none with\n  | none => h_1 ()\n  | some i => h_2 i) =\n  h_1 ()",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (I : Type) (motive : Option I → Sort u_1) (h_1 : Unit → motive none) (h_2 : (i : I) → motive (some i)),\n  (match none with\n    | none => h_1 ()\n    | some i => h_2 i) =\n    h_1 ()",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "_private.D0.Research.NativeWeightedDiracFourierNullModes.0.D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1.eq_1",
+      "proof_dependencies": [
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1",
+        "Eq.refl",
+        "Option",
+        "Option.none",
+        "Option.some",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1",
+        "Eq",
+        "Option",
+        "Option.none",
+        "Option.some",
+        "Unit",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "I",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "Option I → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "I"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive none"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "(i : I) → motive (some i)"
+        }
+      ],
+      "conclusion_whnf": "(match some i with\n  | none => h_1 ()\n  | some i => h_2 i) =\n  h_2 i",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (I : Type) (motive : Option I → Sort u_1) (i : I) (h_1 : Unit → motive none) (h_2 : (i : I) → motive (some i)),\n  (match some i with\n    | none => h_1 ()\n    | some i => h_2 i) =\n    h_2 i",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "_private.D0.Research.NativeWeightedDiracFourierNullModes.0.D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1.eq_2",
+      "proof_dependencies": [
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1",
+        "Eq.refl",
+        "Option",
+        "Option.none",
+        "Option.some",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1",
+        "Eq",
+        "Option",
+        "Option.none",
+        "Option.some",
+        "Unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "I",
+          "type": "Type"
+        }
+      ],
+      "conclusion_whnf": "(motive : Option I → Sort u_1) → (j : Option I) → (Unit → motive none) → ((i : I) → motive (some i)) → motive j",
+      "declaration_kind": "definition",
+      "declaration_ranges": null,
+      "elaborated_type": "(I : Type) →\n  let J := Option I;\n  (motive : J → Sort u_1) → (j : J) → (Unit → motive none) → ((i : I) → motive (some i)) → motive j",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "_private.D0.Research.NativeWeightedDiracFourierNullModes.0.D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1.splitter",
+      "proof_dependencies": [
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family.match_1_1"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Option",
+        "Option.none",
+        "Option.some",
+        "Unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
     }
   ]
 }
