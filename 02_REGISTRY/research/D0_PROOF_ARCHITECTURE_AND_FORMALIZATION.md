@@ -3137,6 +3137,64 @@ presupposition edges
 This verifies source rediscovery, not physical holonomy/action/source
 selection, semantic acceptance, C0 freeze, or GR closure.
 
+### Existing twisted-CAR adjoint theorems now reuse the generic API (25 October 2026)
+
+The public `dTwistedAdjoint_adjoint` and
+`hodgeCarDiracTwisted_self_adjoint` statements keep their existing signatures
+and unitary-holonomy premise. Their proof bodies now bridge the established
+`cochainPairingC` to `finiteHermitianPairing`, then consume respectively the
+generic right-adjoint identity through
+`dTwistedAdjoint_eq_finiteHermitianAdjoint`, and the generic Hodge
+self-adjointness application. This removes the duplicated conjugation and
+pairing calculations while retaining both compatibility theorem names.
+
+The two compiled declaration inventories were extracted from
+`D0.Geometry.ArchiveTwistedHodgeDirac` at snapshot
+`2fe468c3d8ba889ddad49e3f9a73a094e5a95867`, with `worktree_dirty=true`, source
+digest `998d8f0ad9ab02577931130f4614d4c89a088bf4b3b54325a3b7d1cfa476cf05`, and
+Lean 4.30.0:
+
+- `sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hermitian_right_adjoint_wrapper_2026-10-25.json` (SHA-256 `8592d75640eabe9f27db38a0ef0a4f4dc079e46ce59363cc856e9f597ebfc044`, collector `35beb5ad6a2fbc906da1c32e4ccfe0cd328dff39e37871e0c50100c5f4150de3`);
+- `sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hermitian_self_adjoint_wrapper_2026-10-25.json` (SHA-256 `1feb993ab81de1f1dd83aeceb83f508bde0871f608ab763dbff4b393d6ca0c01`, collector `fc2dc85814c81ed8a7c7967b6167328939dc835fe9301e9648609f06b1f4cac3`).
+
+Both report the existing `Classical.choice`, `Quot.sound`, and `propext`
+footprint. The narrow `D0.Geometry.ArchiveTwistedHodgeDirac` build passes
+(2,985 jobs). This is a proof-library refactor under the unchanged finite
+pairing and holonomy assumptions; it selects no physical inner product,
+holonomy, source, or GR realization.
+
+### Cold-start replay after twisted-CAR wrapper refactor (25 October 2026)
+
+The twisted-CAR case now has nine exact-name queries, including both retained
+compatibility theorem names, and ten required sources. All 10/10 sources were
+found as direct content. The complete suite found every required source in
+18/18 cases; its 19/19 benchmark passed, including the exact-source-versus-
+unrelated-prose impact control. Semantic scope review remains manual.
+
+Replay used candidate limit 18 at snapshot
+`2fe468c3d8ba889ddad49e3f9a73a094e5a95867` with `worktree_dirty=true`. The
+runner SHA-256 was
+`9cb9c9bced36a3330ab94e86ef6520d7e81672ce60f2b3aec739595c2ae7e2c2`; the
+primary artifact at replay time had SHA-256
+`5404b3dccdf14d0c83fe342148dbd8c3993e7bc9fae284e2dcf6d30990237427`. The
+seven authority digests were: `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`aa783fa732b9a5a6e5fa351e064cb2013c394848d6e1e43f273efbeb5c3289c2`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+
+The replay verifies rediscovery and compatibility routing only; it does not
+accept semantic coverage or select physical Hodge/GR data.
+
 ### Hermitian Hodge square and cubical anticommutator application (25 October 2026)
 
 The generic finite Hermitian API now also proves that adjoints reverse

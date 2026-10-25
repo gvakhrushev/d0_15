@@ -1030,19 +1030,19 @@ theorem dTwistedAdjoint_adjoint (N : ℕ) (H : Role → ℂ)
     (hunit : ∀ r, star (H r) * H r = 1) (ψ φ : ArchiveCochainC N) :
     cochainPairingC N (dTwistedAdjoint N H ψ) φ =
       cochainPairingC N ψ (dTwisted N H φ) := by
-  have h := dTwisted_adjoint N H hunit φ ψ
-  have hstar := congrArg star h
-  rw [cochainPairingC_conj, cochainPairingC_conj] at hstar
-  exact hstar.symm
+  rw [cochainPairingC_eq_finiteHermitianPairing,
+    cochainPairingC_eq_finiteHermitianPairing,
+    dTwistedAdjoint_eq_finiteHermitianAdjoint N H hunit ψ]
+  exact D0.Algebra.finiteHermitianPairing_adjoint_right
+    (dTwistedLinear N H) ψ φ
 
 theorem hodgeCarDiracTwisted_self_adjoint (N : ℕ) (H : Role → ℂ)
     (hunit : ∀ r, star (H r) * H r = 1) (ψ φ : ArchiveCochainC N) :
     cochainPairingC N (hodgeCarDiracTwisted N H ψ) φ =
       cochainPairingC N ψ (hodgeCarDiracTwisted N H φ) := by
-  unfold hodgeCarDiracTwisted
-  rw [cochainPairingC_add_left, cochainPairingC_add_right,
-    dTwisted_adjoint N H hunit, dTwistedAdjoint_adjoint N H hunit]
-  ring
+  rw [cochainPairingC_eq_finiteHermitianPairing,
+    cochainPairingC_eq_finiteHermitianPairing]
+  exact hodgeCarDiracTwisted_finiteHermitian_self_adjoint N H hunit ψ φ
 
 /-! ## Parity, degree, and radius one -/
 
