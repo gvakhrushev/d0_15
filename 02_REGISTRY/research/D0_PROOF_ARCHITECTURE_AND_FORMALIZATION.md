@@ -6073,4 +6073,9 @@ passes 45/45 and `test_lean_declaration_inventory.py` passes 16/16.
 `check_claim_map_coverage.py`, `check_no_sorry_in_core.py --all`, generated
 Lean-view checks and the formalization-debt audit pass (`findings=5`,
 `baseline=5`). `gr_assembly.py check` remains valid with scientific promotion
-false. This refactor creates no new claim or acceptance row.
+false. The scope regression also checks that the generic reduction has only
+the two structural proposition inputs (`hAcomm`, `hGanti`) and that its
+elaborated proof dependencies include the shared addition/scalar laws; the
+compatibility multiplication theorem must depend on the shared multiplication
+declaration. This rejects a type-shaped premise shell or a name-only wrapper.
+This refactor creates no new claim or acceptance row.

@@ -1516,22 +1516,40 @@ class ProofArchitectureTests(unittest.TestCase):
             "= 48",
             expected_axioms=standard_axioms,
         )
-        has_type(
+        tensor_square = has_type(
             "D0.Algebra.finiteMatrixTensorProduct_sum_square_eq_diagonal",
             "finiteMatrixTensorProduct",
             "G i * G j + G j * G i",
             "if i = j then 2 else 0",
             expected_axioms=standard_axioms,
         )
+        self.assertEqual(
+            {binder["name"] for binder in tensor_square["binders"]
+             if binder["is_proposition"]},
+            {"hAcomm", "hGanti"},
+        )
+        tensor_square_dependencies = set(tensor_square["proof_dependencies"])
+        self.assertIn(
+            "D0.Algebra.finiteMatrixTensorProduct_add_right",
+            tensor_square_dependencies,
+        )
+        self.assertIn(
+            "D0.Algebra.finiteMatrixTensorProduct_smul_right",
+            tensor_square_dependencies,
+        )
         has_type(
             "D0.Algebra.finiteMatrixTensorProduct_one",
             "D0.Algebra.finiteMatrixTensorProduct 1 1 = 1",
             expected_axioms={"Quot.sound", "propext"},
         )
-        has_type(
+        tensor_mul = has_type(
             "D0.Geometry.tensorProduct_mul",
             "D0.Geometry.tensorProduct A B * D0.Geometry.tensorProduct C D",
             expected_axioms=standard_axioms,
+        )
+        self.assertIn(
+            "D0.Algebra.finiteMatrixTensorProduct_mul",
+            tensor_mul["proof_dependencies"],
         )
 
         dataset = proof.load_dataset(proof.ROOT)
