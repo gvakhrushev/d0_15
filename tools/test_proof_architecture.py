@@ -1751,7 +1751,10 @@ class ProofArchitectureTests(unittest.TestCase):
             )
             (books / "BOOK_04_TEST.md").write_bytes(
                 b"# Intro\nThe body mentions 04.7 but does not define it.\n"
-                b"```markdown\n## 04.7 Example in a code fence\n```\n"
+                b"Claim BODY-ONLY is referenced here.\n"
+                b"PREFIX-BODY-ONLY-SUFFIX is a distinct token.\n"
+                b"```markdown\n```python\nFENCE-ONLY appears only in code.\n"
+                b"## 04.7 Example in a code fence\n```\n"
                 b"### 04.7.1 Child only\n"
             )
             (books / "BOOK_05_TEST.md").write_bytes(
@@ -1771,6 +1774,7 @@ class ProofArchitectureTests(unittest.TestCase):
                  "section": "01.20/01.24"},
                 {"claim_id": "AMBIGUOUS", "book": "BOOK_03", "section": "03.1"},
                 {"claim_id": "BODY-ONLY", "book": "BOOK_04", "section": "04.7"},
+                {"claim_id": "FENCE-ONLY", "book": "BOOK_04", "section": "04.99"},
                 {"claim_id": "NON-BOOK", "book": "METROLOGY", "section": "scope"},
                 {"claim_id": "MISMATCH", "book": "BOOK_01/02", "section": "01.8.1"},
                 {"claim_id": "SHARED-DESCRIPTION", "book": "BOOK_01/02",
@@ -1787,7 +1791,7 @@ class ProofArchitectureTests(unittest.TestCase):
                 for row in heading_candidates
             }
 
-        self.assertEqual(view["schema"], "d0-claim-source-candidate-view-v2")
+        self.assertEqual(view["schema"], "d0-claim-source-candidate-view-v3")
         self.assertEqual(view["counts"]["book_heading_count"], len(heading_candidates))
         self.assertEqual(
             view["counts"]["book_headings_without_claim_heading_candidate"],
@@ -1802,7 +1806,8 @@ class ProofArchitectureTests(unittest.TestCase):
         exact_heading = by_heading[("BOOK_01", "01.8.1 Primitive positive response source")]
         self.assertIn("PAIR", exact_heading["exact_heading_candidate_claim_ids"])
         self.assertIn("SHARED-DESCRIPTION", exact_heading["ranked_heading_candidate_claim_ids"])
-        self.assertIn("not accepted mathematical units", view["interpretation"])
+        self.assertIn("Neither kind identifies accepted mathematical units",
+                      view["interpretation"])
         self.assertEqual(by_id["PAIR"]["resolution_status"], "unique")
         self.assertEqual([x["book_locator"] for x in by_id["PAIR"]["locator_pairs"]],
                          ["BOOK_01", "BOOK_02"])
@@ -1817,6 +1822,17 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(len(by_id["AMBIGUOUS"]["locator_pairs"][0]["candidates"]), 2)
         self.assertEqual(by_id["BODY-ONLY"]["resolution_status"], "unresolved")
         self.assertEqual(by_id["BODY-ONLY"]["locator_pairs"][0]["candidates"], [])
+        body_mentions = by_id["BODY-ONLY"]["literal_claim_id_mentions"]
+        self.assertEqual(len(body_mentions), 1)
+        self.assertEqual(body_mentions[0]["line"], 3)
+        self.assertEqual(body_mentions[0]["nearest_heading"], "Intro")
+        self.assertEqual(body_mentions[0]["nearest_heading_line"], 1)
+        self.assertIsNone(body_mentions[0]["candidate_coordinate_key"])
+        self.assertEqual(
+            body_mentions[0]["review_status"],
+            "unreviewed_literal_claim_id_mention_candidate",
+        )
+        self.assertEqual(by_id["FENCE-ONLY"]["literal_claim_id_mentions"], [])
         self.assertNotIn(
             "ranked_heading_candidates",
             by_id["BODY-ONLY"]["locator_pairs"][0],
@@ -1861,10 +1877,15 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(view["counts"]["ambiguous_claim_rows"], 1)
         self.assertEqual(view["counts"]["non_book_claim_rows"], 1)
         self.assertEqual(view["counts"]["malformed_claim_rows"], 0)
-        self.assertEqual(view["counts"]["unresolved_claim_rows"], 4)
+        self.assertEqual(view["counts"]["unresolved_claim_rows"], 5)
         self.assertEqual(view["counts"]["unpaired_multi_book_claim_rows"], 3)
         self.assertEqual(view["counts"]["claim_rows_with_ranked_heading_candidates"], 2)
         self.assertEqual(view["counts"]["ranked_heading_candidate_count"], 2)
+        self.assertEqual(view["counts"]["literal_claim_id_mention_count"], 1)
+        self.assertEqual(view["counts"]["claim_rows_with_literal_claim_id_mentions"], 1)
+        self.assertEqual(
+            view["counts"]["book_source_files_with_literal_claim_id_mentions"], 1
+        )
         self.assertIn("None of these fields accepts a claim statement", view["interpretation"])
 
     def test_current_claim_source_view_lists_unlocated_book_headings_as_candidates(self) -> None:
@@ -1875,7 +1896,7 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         view_bytes = path.read_bytes()
         view = json.loads(view_bytes)
-        self.assertEqual(view["schema"], "d0-claim-source-candidate-view-v2")
+        self.assertEqual(view["schema"], "d0-claim-source-candidate-view-v3")
         self.assertRegex(view["snapshot_commit"], r"^[0-9a-f]{40}$")
         self.assertEqual(view["claim_registry_sha256"], hashlib.sha256(
             (proof.ROOT / "02_REGISTRY/claims.csv").read_bytes()
@@ -1901,6 +1922,63 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             view["counts"]["book_headings_without_claim_heading_candidate"], 445
         )
+        mention_rows = [
+            (claim_row["claim_id"], mention)
+            for claim_row in view["rows"]
+            for mention in claim_row["literal_claim_id_mentions"]
+        ]
+        self.assertEqual(
+            view["counts"]["literal_claim_id_mention_count"], len(mention_rows)
+        )
+        self.assertEqual(
+            view["counts"]["claim_rows_with_literal_claim_id_mentions"],
+            len({claim_id for claim_id, _mention in mention_rows}),
+        )
+        self.assertEqual(view["counts"]["literal_claim_id_mention_count"], 833)
+        self.assertEqual(
+            view["counts"]["claim_rows_with_literal_claim_id_mentions"], 424
+        )
+        self.assertEqual(
+            view["counts"]["book_source_files_with_literal_claim_id_mentions"], 9
+        )
+        for _claim_id, mention in mention_rows:
+            pin = view["book_sources"][mention["path"]]
+            self.assertEqual(mention["matches_snapshot_commit"],
+                             pin["matches_snapshot_commit"])
+            expected_key = (
+                f"source:{view['snapshot_commit']}:{mention['path']}"
+                f"#L{mention['line']}:O[{mention['start_offset_0based']}"
+                f",{mention['end_offset_0based_exclusive']})"
+                if pin["matches_snapshot_commit"] else None
+            )
+            self.assertEqual(mention["candidate_coordinate_key"], expected_key)
+            self.assertEqual(
+                mention["review_status"],
+                "unreviewed_literal_claim_id_mention_candidate",
+            )
+        bridge = next(
+            row for row in view["rows"]
+            if row["claim_id"] == "D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001"
+        )
+        self.assertEqual(bridge["resolution_status"], "unique")
+        self.assertEqual(
+            [(mention["path"], mention["line"], mention["nearest_heading_line"])
+             for mention in bridge["literal_claim_id_mentions"]],
+            [(
+                "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+                238,
+                226,
+            )],
+        )
+        bridge_mention = bridge["literal_claim_id_mentions"][0]
+        self.assertEqual(bridge_mention["claim_id_text"], bridge["claim_id"])
+        self.assertEqual(
+            bridge_mention["nearest_heading"],
+            "03.3.2 The closed feedback action component",
+        )
+        self.assertIn(bridge["claim_id"], bridge_mention["literal_text_excerpt"])
+        self.assertEqual(bridge_mention["match_kind"], "literal_claim_id_mention")
+        self.assertTrue(bridge_mention["matches_snapshot_commit"])
         for row in headings:
             pin = view["book_sources"][row["path"]]
             self.assertEqual(row["matches_snapshot_commit"], pin["matches_snapshot_commit"])
@@ -1914,7 +1992,8 @@ class ProofArchitectureTests(unittest.TestCase):
             and not row["ranked_heading_candidate_claim_ids"]
             for row in headings
         ))
-        self.assertIn("not accepted mathematical units", view["interpretation"])
+        self.assertIn("Neither kind identifies accepted mathematical units",
+                      view["interpretation"])
 
 
 if __name__ == "__main__":

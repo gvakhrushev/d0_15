@@ -209,6 +209,10 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
     book_sources: dict[str, dict[str, Any]] = {}
     book_headings: dict[str, list[dict[str, Any]]] = {}
     book_heading_texts: dict[str, dict[tuple[str, int], str]] = {}
+    claim_id_pattern = _claim_id_pattern(
+        claim.get("claim_id", "") for claim in dataset["claims"]
+    )
+    claim_id_mentions: dict[str, list[dict[str, Any]]] = {}
     for path in sorted((root / "01_BOOKS").glob("BOOK_*.md")):
         match = _BOOK_HEADING_RE.match(path.name)
         if not match:
@@ -218,7 +222,8 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         pin = _book_source_pin(root, path)
         book_sources[pin["path"]] = pin
         book_text = path.read_text(encoding="utf-8-sig")
-        for line_number, heading, body in _markdown_sections(book_text):
+        sections = _markdown_sections(book_text)
+        for line_number, heading, body in sections:
             book_headings.setdefault(key, []).append({
                 "path": pin["path"],
                 "line": line_number,
@@ -231,6 +236,56 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
             book_heading_texts.setdefault(key, {})[(pin["path"], line_number)] = (
                 heading + "\n" + body
             )
+        headings_by_line = sorted(
+            (line, heading) for line, heading, _body in sections
+        )
+        heading_index = 0
+        nearest_heading: str | None = None
+        nearest_heading_line: int | None = None
+        fence_char: str | None = None
+        fence_length = 0
+        for line_number, line in enumerate(book_text.splitlines(), start=1):
+            fence_char, fence_length, is_fence_line = _markdown_fence_transition(
+                line, fence_char, fence_length
+            )
+            if is_fence_line:
+                continue
+            if fence_char is not None:
+                continue
+            while (heading_index < len(headings_by_line)
+                   and headings_by_line[heading_index][0] == line_number):
+                nearest_heading_line, nearest_heading = headings_by_line[heading_index]
+                heading_index += 1
+            for mention in claim_id_pattern.finditer(line):
+                claim_id = mention.group("claim_id")
+                column_start = mention.start()
+                column_end = mention.end()
+                excerpt_start = max(0, column_start - MAX_SNIPPET // 2)
+                excerpt_end = min(len(line), max(column_end, excerpt_start + MAX_SNIPPET))
+                if excerpt_end - excerpt_start < MAX_SNIPPET:
+                    excerpt_start = max(0, excerpt_end - MAX_SNIPPET)
+                occurrence = {
+                    "book_locator": key,
+                    "path": pin["path"],
+                    "line": line_number,
+                    "start_offset_0based": column_start,
+                    "end_offset_0based_exclusive": column_end,
+                    "claim_id_text": claim_id,
+                    "nearest_heading": nearest_heading,
+                    "nearest_heading_line": nearest_heading_line,
+                    "literal_text_excerpt": line[
+                        excerpt_start:excerpt_end
+                    ].strip(),
+                    "matches_snapshot_commit": pin["matches_snapshot_commit"],
+                    "candidate_coordinate_key": (
+                        f"source:{dataset['snapshot_commit']}:{pin['path']}"
+                        f"#L{line_number}:O[{column_start},{column_end})"
+                        if pin["matches_snapshot_commit"] else None
+                    ),
+                    "match_kind": "literal_claim_id_mention",
+                    "review_status": "unreviewed_literal_claim_id_mention_candidate",
+                }
+                claim_id_mentions.setdefault(claim_id, []).append(occurrence)
 
     rows: list[dict[str, Any]] = []
     counts = {
@@ -248,6 +303,9 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         "unpaired_multi_book_claim_rows": 0,
         "claim_rows_with_ranked_heading_candidates": 0,
         "ranked_heading_candidate_count": 0,
+        "literal_claim_id_mention_count": 0,
+        "claim_rows_with_literal_claim_id_mentions": 0,
+        "book_source_files_with_literal_claim_id_mentions": 0,
     }
 
     for claim in dataset["claims"]:
@@ -263,6 +321,7 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
                 "section_locator": section_field,
                 "resolution_status": "non_book_locator",
                 "locator_pairs": [],
+                "literal_claim_id_mentions": claim_id_mentions.get(claim_id, []),
                 "interpretation": "The declared source is not a BOOK_XX locator; no book heading was inferred.",
             })
             continue
@@ -306,6 +365,7 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
                 "resolution_reason": "multiple_books_share_one_unpaired_section_locator",
                 "locator_pairs": [],
                 "book_heading_candidates": book_candidates,
+                "literal_claim_id_mentions": claim_id_mentions.get(claim_id, []),
                 "interpretation": (
                     "Multiple books share one section locator, so no book/section pairing was inferred. "
                     "Heading matches are retrieval candidates requiring source-unit review."
@@ -324,6 +384,7 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
                 "resolution_status": "malformed_locator",
                 "parse_error": parse_error,
                 "locator_pairs": [],
+                "literal_claim_id_mentions": claim_id_mentions.get(claim_id, []),
                 "interpretation": "The locator could not be paired conservatively; no source was selected.",
             })
             continue
@@ -395,12 +456,14 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
             counts["unresolved_claim_rows"] += 1
         if any(pair.get("ranked_heading_candidates") for pair in pair_rows):
             counts["claim_rows_with_ranked_heading_candidates"] += 1
+        mentions = claim_id_mentions.get(claim_id, [])
         rows.append({
             "claim_id": claim_id,
             "book_locator": book_field,
             "section_locator": section_field,
             "resolution_status": overall,
             "locator_pairs": pair_rows,
+            "literal_claim_id_mentions": mentions,
             "interpretation": "Exact heading coordinates are source candidates, not semantic claim acceptance or C0 disposition.",
         })
 
@@ -452,6 +515,18 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
             })
 
     counts.update({
+        "literal_claim_id_mention_count": sum(
+            len(mentions) for mentions in claim_id_mentions.values()
+        ),
+        "claim_rows_with_literal_claim_id_mentions": sum(
+            bool(claim_id_mentions.get(claim.get("claim_id", "")))
+            for claim in dataset["claims"]
+        ),
+        "book_source_files_with_literal_claim_id_mentions": len({
+            mention["path"]
+            for mentions in claim_id_mentions.values()
+            for mention in mentions
+        }),
         "book_heading_count": len(book_heading_source_candidates),
         "book_headings_with_exact_heading_candidate": sum(
             bool(row["exact_heading_candidate_claim_ids"])
@@ -474,7 +549,7 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
     })
 
     return {
-        "schema": "d0-claim-source-candidate-view-v2",
+        "schema": "d0-claim-source-candidate-view-v3",
         "snapshot_commit": dataset["snapshot_commit"],
         "worktree_dirty": dataset.get("worktree_dirty"),
         "collector_sha256": sha256(pathlib.Path(__file__).resolve()),
@@ -487,10 +562,24 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         "interpretation": (
             "Derived locator view only. Exact heading matches identify candidate source coordinates; "
             "ranked headings are retrieval candidates, not exact source links. The exhaustive heading list "
-            "contains source coordinates, not accepted mathematical units or C0 dispositions. None of these "
-            "fields accepts a claim statement, proves semantic coverage, freezes C0, or changes owner/status."
+            "contains source coordinates, while literal claim-ID mentions identify textual coordinates that may "
+            "be citations or cross-references. Neither kind identifies accepted mathematical units or C0 "
+            "dispositions. None of these fields accepts a claim statement, proves semantic coverage, freezes C0, "
+            "or changes owner/status."
         ),
     }
+
+
+def _claim_id_pattern(claim_ids: Any) -> re.Pattern[str]:
+    """Match exact claim-ID tokens without matching them inside longer IDs."""
+    identifiers = sorted({str(value) for value in claim_ids if str(value)},
+                         key=lambda value: (-len(value), value))
+    if not identifiers:
+        return re.compile(r"(?!)")
+    alternatives = "|".join(re.escape(value) for value in identifiers)
+    return re.compile(
+        rf"(?<![A-Za-z0-9_-])(?P<claim_id>{alternatives})(?![A-Za-z0-9_-])"
+    )
 
 
 def sha256(path: pathlib.Path) -> str:
@@ -1544,13 +1633,10 @@ def _markdown_sections(text: str) -> list[tuple[int, str, str]]:
     fence_char: str | None = None
     fence_length = 0
     for line_number, line in enumerate(text.splitlines(), start=1):
-        fence = re.match(r"^\s{0,3}(`{3,}|~{3,})", line)
-        if fence:
-            marker = fence.group(1)
-            if fence_char is None:
-                fence_char, fence_length = marker[0], len(marker)
-            elif marker[0] == fence_char and len(marker) >= fence_length:
-                fence_char, fence_length = None, 0
+        fence_char, fence_length, is_fence_line = _markdown_fence_transition(
+            line, fence_char, fence_length
+        )
+        if is_fence_line:
             if current_line is not None:
                 current_body.append(line)
             continue
@@ -1568,6 +1654,24 @@ def _markdown_sections(text: str) -> list[tuple[int, str, str]]:
     if current_line is not None:
         sections.append((current_line, current_title, "\n".join(current_body)))
     return sections
+
+
+def _markdown_fence_transition(
+    line: str, fence_char: str | None, fence_length: int
+) -> tuple[str | None, int, bool]:
+    """Track Markdown fences; a closing marker may have trailing whitespace only."""
+    marker_match = re.match(r"^\s{0,3}(`{3,}|~{3,})(.*)$", line)
+    if not marker_match:
+        return fence_char, fence_length, False
+    marker, suffix = marker_match.groups()
+    if fence_char is None:
+        if marker[0] == "`" and "`" in suffix:
+            return None, 0, False
+        return marker[0], len(marker), True
+    if (marker[0] == fence_char and len(marker) >= fence_length
+            and not suffix.strip()):
+        return None, 0, True
+    return fence_char, fence_length, True
 
 
 def _locator_terms(text: str) -> set[str]:
