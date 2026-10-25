@@ -1,8 +1,8 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "2d0c2e2c7ffaa54d3b7d44fd6a674a7bf2619dbb",
+  "snapshot_commit": "0421706162e663513ca39a03590c72ffccdc1eac",
   "worktree_dirty": false,
-  "lean_source_digest": "c038d0b12cbf6064a7a370532bba2487104e55e243577b316f71a39f9ced606a",
+  "lean_source_digest": "8f510881a8dbd744acff07050e813af51cace498b41c5e4c36381f1577b7548b",
   "collector_sha256": "cd8acaf6fa202e54f8090f9c5fb9fc210dfe03ba3197f21115581d7b7afad0cb",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.Research.NativeWeightedDiracFourierNullModes",
@@ -19488,21 +19488,21 @@
         "declaration": {
           "end": {
             "column": 66,
-            "line": 112
+            "line": 113
           },
           "start": {
             "column": 0,
-            "line": 110
+            "line": 111
           }
         },
         "selection": {
           "end": {
             "column": 42,
-            "line": 110
+            "line": 111
           },
           "start": {
             "column": 8,
-            "line": 110
+            "line": 111
           }
         }
       },
@@ -19579,6 +19579,715 @@
     },
     {
       "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "m",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a._@._internal._hyg.0",
+          "type": "D0.Dyad × D0.Dyad"
+        }
+      ],
+      "conclusion_whnf": "Fin (N + 1 + 1)",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 10,
+            "line": 291
+          },
+          "start": {
+            "column": 0,
+            "line": 284
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 286
+          },
+          "start": {
+            "column": 4,
+            "line": 286
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → ℕ → D0.Role → ZMod (D0.archiveFibers N)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.A",
+        "D0.B",
+        "D0.Dyad",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast",
+        "OfNat.ofNat",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "ite"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Role",
+        "D0.archiveFibers",
+        "Nat",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "m",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m r =\n  if r = D0.A then ↑m else if r = D0.B then ↑m else 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N m : ℕ) (r : D0.Role),\n  D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m r =\n    if r = D0.A then ↑m else if r = D0.B then ↑m else 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum.eq_1",
+      "proof_dependencies": [
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq.refl",
+        "Nat",
+        "ZMod"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.A",
+        "D0.B",
+        "D0.Dyad",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast",
+        "OfNat.ofNat",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "ite"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "m",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.archiveLorentzianFourierSymbol N\n    (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m) =\n  0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 307
+          },
+          "start": {
+            "column": 0,
+            "line": 293
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 51,
+            "line": 296
+          },
+          "start": {
+            "column": 8,
+            "line": 296
+          }
+        }
+      },
+      "elaborated_type": "∀ (N m : ℕ),\n  D0.Geometry.archiveLorentzianFourierSymbol N\n      (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m) =\n    0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_momentum_is_null",
+      "proof_dependencies": [
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "And",
+        "CharP.cast_eq_zero",
+        "CharP.ofCharZero",
+        "CommMonoid.toMonoid",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.A",
+        "D0.A._proof_1",
+        "D0.B",
+        "D0.C",
+        "D0.D",
+        "D0.Dyad",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleWeightedArchiveFourierSymbol._proof_1",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DivInvMonoid.toDiv",
+        "DivisionSemiring.toGroupWithZero",
+        "Eq",
+        "Eq.mpr",
+        "Eq.trans",
+        "False",
+        "Field.toSemifield",
+        "Fin.instCommMonoid",
+        "Fin.instNeZeroHAddNatOfNat_mathlib_1",
+        "Fin.instNonUnitalCommRing",
+        "Fin.instOfNat",
+        "GroupWithZero.toMonoidWithZero",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toMulOneClass",
+        "Monoid.toPow",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulOne.toOne",
+        "MulOneClass.toMulOne",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.cast",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCharZero",
+        "Nat.instNeZeroSucc",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toMulZeroClass",
+        "Not",
+        "OfNat.ofNat",
+        "OfNat.ofNat_ne_zero._simp_1",
+        "Prod",
+        "Prod.mk",
+        "Prod.mk.injEq",
+        "RCLike.charZero_rclike",
+        "Real",
+        "Real.instAddGroup",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instMonoid",
+        "Real.instMonoidWithZero",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instRCLike",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.pi",
+        "Real.semiring",
+        "Real.sin",
+        "Real.sin_zero",
+        "Ring.toAddGroupWithOne",
+        "Semifield.toDivisionSemiring",
+        "SubNegMonoid.toAddMonoid",
+        "True",
+        "ZMod",
+        "ZMod.cast",
+        "ZMod.commRing",
+        "ZMod.natCast_val",
+        "ZMod.val",
+        "ZMod.val_zero",
+        "Zero.toOfNat0",
+        "and_false",
+        "and_self",
+        "and_true",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "ite",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "not_false_eq_true",
+        "of_eq_true",
+        "one_ne_zero._simp_1",
+        "sub_self",
+        "zero_div",
+        "zero_ne_one._simp_1",
+        "zero_pow"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "Eq",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "m",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hm0",
+          "type": "(Nat.succ 0).le m"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hmL",
+          "type": "m.succ.le (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m = 0 → False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 7,
+            "line": 321
+          },
+          "start": {
+            "column": 0,
+            "line": 309
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 51,
+            "line": 311
+          },
+          "start": {
+            "column": 8,
+            "line": 311
+          }
+        }
+      },
+      "elaborated_type": "∀ (N m : ℕ),\n  0 < m →\n    m < D0.archiveFibers N → D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m ≠ 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_momentum_ne_zero",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.A",
+        "D0.A._proof_1",
+        "D0.B",
+        "D0.Dyad",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_momentum_ne_zero._proof_1_2",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Dvd.dvd",
+        "Eq",
+        "Eq.mp",
+        "Fin.instOfNat",
+        "Iff.mp",
+        "LE.le",
+        "LT.lt",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast",
+        "Nat.instDvd",
+        "Nat.le_of_dvd",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Prod.mk",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.natCast_eq_zero_iff",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "eq_self",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instLENat",
+        "instLTNat",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "ite",
+        "ite_cond_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "D0.Role",
+        "D0.archiveFibers",
+        "LT.lt",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instLTNat",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "m",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hmL",
+          "type": "m.succ.le (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hperiod_le",
+          "type": "(D0.archiveFibers N).le m"
+        }
+      ],
+      "conclusion_whnf": "False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N m : ℕ), m < D0.archiveFibers N → D0.archiveFibers N ≤ m → False",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_momentum_ne_zero._proof_1_2",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.true",
+        "D0.archiveFibers",
+        "Decidable.decide",
+        "Eq",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "HMod.hMod",
+        "HSub.hSub",
+        "Int",
+        "Int.add_one_le_of_lt",
+        "Int.instAdd",
+        "Int.instLEInt",
+        "Int.instMod",
+        "Int.instNegInt",
+        "Int.instSub",
+        "Int.sub_nonneg_of_le",
+        "LE.le",
+        "LT.lt",
+        "Lean.Omega.Coeffs.ofList",
+        "Lean.Omega.Constraint.addInequality_sat",
+        "Lean.Omega.Constraint.combine_sat'",
+        "Lean.Omega.Constraint.isImpossible",
+        "Lean.Omega.Constraint.mk",
+        "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+        "Lean.Omega.Int.add_congr",
+        "Lean.Omega.Int.ofNat_le_of_le",
+        "Lean.Omega.Int.ofNat_lt_of_lt",
+        "Lean.Omega.Int.sub_congr",
+        "Lean.Omega.LinearCombo",
+        "Lean.Omega.LinearCombo.add_eval",
+        "Lean.Omega.LinearCombo.coordinate",
+        "Lean.Omega.LinearCombo.coordinate_eval_0",
+        "Lean.Omega.LinearCombo.coordinate_eval_1",
+        "Lean.Omega.LinearCombo.eval",
+        "Lean.Omega.LinearCombo.instAdd",
+        "Lean.Omega.LinearCombo.instSub",
+        "Lean.Omega.LinearCombo.mk",
+        "Lean.Omega.LinearCombo.sub_eval",
+        "Lean.Omega.tidy_sat",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "Nat.cast",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Option.none",
+        "Option.some",
+        "id",
+        "instDecidableEqBool",
+        "instHAdd",
+        "instHMod",
+        "instHSub",
+        "instLENat",
+        "instLTNat",
+        "instNatCastInt",
+        "instOfNat",
+        "instOfNatNat",
+        "le_of_le_of_eq",
+        "of_decide_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.archiveFibers",
+        "False",
+        "LE.le",
+        "LT.lt",
+        "Nat",
+        "instLENat",
+        "instLTNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "m",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hm0",
+          "type": "(Nat.succ 0).le m"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hmL",
+          "type": "m.succ.le (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n        (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m)).ker =\n    (D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n        (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m)).range ∧\n  Module.finrank ℂ\n        ↥(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n              (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m)).ker =\n      8 ∧\n    Module.finrank ℂ\n        ↥(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n              (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m)).range =\n      8",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 61,
+            "line": 344
+          },
+          "start": {
+            "column": 0,
+            "line": 323
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 60,
+            "line": 327
+          },
+          "start": {
+            "column": 8,
+            "line": 327
+          }
+        }
+      },
+      "elaborated_type": "∀ (N m : ℕ),\n  0 < m →\n    m < D0.archiveFibers N →\n      (D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n              (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m)).ker =\n          (D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n              (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m)).range ∧\n        Module.finrank ℂ\n              ↥(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n                    (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m)).ker =\n            8 ∧\n          Module.finrank ℂ\n              ↥(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n                    (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N m)).range =\n            8",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_null_fibre_classification",
+      "proof_dependencies": [
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_momentum_is_null",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_momentum_ne_zero",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_nonzero_null_mode_classification",
+        "D0.archiveFibers",
+        "LT.lt",
+        "Nat",
+        "OfNat.ofNat",
+        "instLTNat",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveFourierFockActionLinear",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "D0.archiveFibers",
+        "Eq",
+        "LT.lt",
+        "LinearMap.ker",
+        "LinearMap.range",
+        "Membership.mem",
+        "Module.finrank",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "RingHomSurjective.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "instLTNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
         "Classical.choice",
         "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
         "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
@@ -19606,21 +20315,21 @@
         "declaration": {
           "end": {
             "column": 25,
-            "line": 256
+            "line": 257
           },
           "start": {
             "column": 0,
-            "line": 245
+            "line": 246
           }
         },
         "selection": {
           "end": {
             "column": 46,
-            "line": 247
+            "line": 248
           },
           "start": {
             "column": 8,
-            "line": 247
+            "line": 248
           }
         }
       },
@@ -19788,21 +20497,21 @@
         "declaration": {
           "end": {
             "column": 16,
-            "line": 281
+            "line": 282
           },
           "start": {
             "column": 0,
-            "line": 258
+            "line": 259
           }
         },
         "selection": {
           "end": {
             "column": 58,
-            "line": 261
+            "line": 262
           },
           "start": {
             "column": 8,
-            "line": 261
+            "line": 262
           }
         }
       },
@@ -19926,6 +20635,227 @@
     {
       "axioms": [
         "Classical.choice",
+        "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n        (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N 1)).ker =\n    (D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n        (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N 1)).range ∧\n  Module.finrank ℂ\n        ↥(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n              (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N 1)).ker =\n      8 ∧\n    Module.finrank ℂ\n        ↥(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n              (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N 1)).range =\n      8",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 24,
+            "line": 365
+          },
+          "start": {
+            "column": 0,
+            "line": 346
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 56,
+            "line": 350
+          },
+          "start": {
+            "column": 8,
+            "line": 350
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ),\n  (D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n          (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N 1)).ker =\n      (D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n          (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N 1)).range ∧\n    Module.finrank ℂ\n          ↥(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n                (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N 1)).ker =\n        8 ∧\n      Module.finrank ℂ\n          ↥(D0.Geometry.roleWeightedArchiveFourierFockActionLinear N D0.Geometry.roleLorentzSign\n                (D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum N 1)).range =\n        8",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_unit_null_fibre_classification",
+      "proof_dependencies": [
+        "AddCancelCommMonoid.toAddLeftCancelMonoid",
+        "AddCommMagma.toAdd",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddLeftCancelMonoid.toAddLeftCancelSemigroup",
+        "AddLeftCancelSemigroup.toIsLeftCancelAdd",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_diagonal_null_fibre_classification",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_unit_null_fibre_classification._proof_1_1",
+        "Decidable.byContradiction",
+        "DistribLattice.toLattice",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "IsLeftCancelAdd.addLeftReflectLE_of_addLeftReflectLT",
+        "IsOrderedAddMonoid.toAddLeftMono",
+        "IsRightCancelAdd.addRightStrictMono_of_addRightMono",
+        "LE.le",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "LinearOrderedCommMonoidWithZero.toIsBotZeroClass",
+        "Nat",
+        "Nat.decLt",
+        "Nat.instAddCancelCommMonoid",
+        "Nat.instAddCommMonoid",
+        "Nat.instAddCommSemigroup",
+        "Nat.instAddMonoid",
+        "Nat.instIsOrderedAddMonoid",
+        "Nat.instLinearOrder",
+        "Nat.instLinearOrderedCommMonoidWithZero",
+        "Nat.instNoMaxOrder",
+        "Nat.instOne",
+        "Nat.instPartialOrder",
+        "Nat.instPreorder",
+        "Nat.instSuccAddOrder",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Order.lt_add_one_iff._simp_1",
+        "PartialOrder.toPreorder",
+        "Preorder.toLE",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "True",
+        "Zero.toOfNat0",
+        "addRightReflectLE_of_addLeftReflectLE",
+        "contravariant_lt_of_covariant_le",
+        "contravariant_swap_add_of_contravariant_add",
+        "covariant_swap_add_of_covariant_add",
+        "instAddNat",
+        "instDistribLatticeOfLinearOrder",
+        "instHAdd",
+        "instIsRightCancelAddOfAddRightReflectLE",
+        "instLTNat",
+        "instOfNatNat",
+        "lt_add_iff_pos_left._simp_1",
+        "of_eq_true",
+        "zero_le._simp_1"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "Complex",
+        "Complex.instNormedField",
+        "Complex.instSemiring",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveFourierFockActionLinear",
+        "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzianDiagonalMomentum",
+        "Eq",
+        "LinearMap.ker",
+        "LinearMap.range",
+        "Membership.mem",
+        "Module.finrank",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "RingHomSurjective.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal.0.D0.Research.NativeWeightedDiracFourierNullModes.2558721840._hygCtx._hyg.86",
+          "type": "0 < 1 → False"
+        }
+      ],
+      "conclusion_whnf": "False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "¬0 < 1 → False",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.NativeWeightedDiracFourierNullModes",
+      "name": "D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_unit_null_fibre_classification._proof_1_1",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.true",
+        "Decidable.decide",
+        "Eq",
+        "Eq.refl",
+        "HSub.hSub",
+        "Int",
+        "Int.instLEInt",
+        "Int.instNegInt",
+        "Int.instSub",
+        "Int.sub_nonneg_of_le",
+        "LT.lt",
+        "Lean.Omega.Coeffs.ofList",
+        "Lean.Omega.Constraint.addInequality_sat",
+        "Lean.Omega.Constraint.isImpossible",
+        "Lean.Omega.Constraint.mk",
+        "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+        "Lean.Omega.Int.ofNat_le_of_le",
+        "Lean.Omega.LinearCombo.eval",
+        "Lean.Omega.LinearCombo.mk",
+        "Lean.Omega.tidy_sat",
+        "List.nil",
+        "Nat",
+        "Nat.cast",
+        "Nat.le_of_not_lt",
+        "Neg.neg",
+        "Not",
+        "OfNat.ofNat",
+        "Option.none",
+        "Option.some",
+        "id",
+        "instDecidableEqBool",
+        "instHSub",
+        "instLTNat",
+        "instNatCastInt",
+        "instOfNat",
+        "instOfNatNat",
+        "le_of_le_of_eq",
+        "of_decide_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "False",
+        "LT.lt",
+        "Nat",
+        "Not",
+        "OfNat.ofNat",
+        "instLTNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
         "Quot.sound",
         "propext"
       ],
@@ -19955,21 +20885,21 @@
         "declaration": {
           "end": {
             "column": 69,
-            "line": 38
+            "line": 39
           },
           "start": {
             "column": 0,
-            "line": 24
+            "line": 25
           }
         },
         "selection": {
           "end": {
             "column": 51,
-            "line": 27
+            "line": 28
           },
           "start": {
             "column": 8,
-            "line": 27
+            "line": 28
           }
         }
       },
@@ -20093,21 +21023,21 @@
         "declaration": {
           "end": {
             "column": 67,
-            "line": 62
+            "line": 63
           },
           "start": {
             "column": 0,
-            "line": 40
+            "line": 41
           }
         },
         "selection": {
           "end": {
             "column": 33,
-            "line": 42
+            "line": 43
           },
           "start": {
             "column": 8,
-            "line": 42
+            "line": 43
           }
         }
       },
@@ -20297,21 +21227,21 @@
         "declaration": {
           "end": {
             "column": 58,
-            "line": 72
+            "line": 73
           },
           "start": {
             "column": 0,
-            "line": 64
+            "line": 65
           }
         },
         "selection": {
           "end": {
             "column": 53,
-            "line": 66
+            "line": 67
           },
           "start": {
             "column": 8,
-            "line": 66
+            "line": 67
           }
         }
       },
@@ -20462,21 +21392,21 @@
         "declaration": {
           "end": {
             "column": 7,
-            "line": 213
+            "line": 214
           },
           "start": {
             "column": 0,
-            "line": 203
+            "line": 204
           }
         },
         "selection": {
           "end": {
             "column": 32,
-            "line": 205
+            "line": 206
           },
           "start": {
             "column": 8,
-            "line": 205
+            "line": 206
           }
         }
       },
@@ -20827,21 +21757,21 @@
         "declaration": {
           "end": {
             "column": 57,
-            "line": 224
+            "line": 225
           },
           "start": {
             "column": 0,
-            "line": 215
+            "line": 216
           }
         },
         "selection": {
           "end": {
             "column": 52,
-            "line": 218
+            "line": 219
           },
           "start": {
             "column": 8,
-            "line": 218
+            "line": 219
           }
         }
       },
@@ -21004,21 +21934,21 @@
         "declaration": {
           "end": {
             "column": 73,
-            "line": 97
+            "line": 98
           },
           "start": {
             "column": 0,
-            "line": 74
+            "line": 75
           }
         },
         "selection": {
           "end": {
             "column": 39,
-            "line": 76
+            "line": 77
           },
           "start": {
             "column": 8,
-            "line": 76
+            "line": 77
           }
         }
       },
@@ -21295,21 +22225,21 @@
         "declaration": {
           "end": {
             "column": 64,
-            "line": 108
+            "line": 109
           },
           "start": {
             "column": 0,
-            "line": 99
+            "line": 100
           }
         },
         "selection": {
           "end": {
             "column": 59,
-            "line": 101
+            "line": 102
           },
           "start": {
             "column": 8,
-            "line": 101
+            "line": 102
           }
         }
       },
@@ -21457,21 +22387,21 @@
         "declaration": {
           "end": {
             "column": 52,
-            "line": 139
+            "line": 140
           },
           "start": {
             "column": 0,
-            "line": 134
+            "line": 135
           }
         },
         "selection": {
           "end": {
             "column": 67,
-            "line": 135
+            "line": 136
           },
           "start": {
             "column": 18,
-            "line": 135
+            "line": 136
           }
         }
       },
@@ -21761,21 +22691,21 @@
         "declaration": {
           "end": {
             "column": 43,
-            "line": 124
+            "line": 125
           },
           "start": {
             "column": 0,
-            "line": 114
+            "line": 115
           }
         },
         "selection": {
           "end": {
             "column": 66,
-            "line": 116
+            "line": 117
           },
           "start": {
             "column": 8,
-            "line": 116
+            "line": 117
           }
         }
       },
@@ -21990,21 +22920,21 @@
         "declaration": {
           "end": {
             "column": 80,
-            "line": 169
+            "line": 170
           },
           "start": {
             "column": 0,
-            "line": 141
+            "line": 142
           }
         },
         "selection": {
           "end": {
             "column": 63,
-            "line": 143
+            "line": 144
           },
           "start": {
             "column": 8,
-            "line": 143
+            "line": 144
           }
         }
       },
@@ -22221,21 +23151,21 @@
         "declaration": {
           "end": {
             "column": 23,
-            "line": 191
+            "line": 192
           },
           "start": {
             "column": 0,
-            "line": 171
+            "line": 172
           }
         },
         "selection": {
           "end": {
             "column": 79,
-            "line": 172
+            "line": 173
           },
           "start": {
             "column": 8,
-            "line": 172
+            "line": 173
           }
         }
       },
@@ -22363,21 +23293,21 @@
         "declaration": {
           "end": {
             "column": 74,
-            "line": 132
+            "line": 133
           },
           "start": {
             "column": 0,
-            "line": 126
+            "line": 127
           }
         },
         "selection": {
           "end": {
             "column": 70,
-            "line": 127
+            "line": 128
           },
           "start": {
             "column": 8,
-            "line": 127
+            "line": 128
           }
         }
       },
@@ -22528,21 +23458,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 201
+            "line": 202
           },
           "start": {
             "column": 0,
-            "line": 193
+            "line": 194
           }
         },
         "selection": {
           "end": {
             "column": 85,
-            "line": 194
+            "line": 195
           },
           "start": {
             "column": 8,
-            "line": 194
+            "line": 195
           }
         }
       },
@@ -22682,21 +23612,21 @@
         "declaration": {
           "end": {
             "column": 21,
-            "line": 243
+            "line": 244
           },
           "start": {
             "column": 0,
-            "line": 226
+            "line": 227
           }
         },
         "selection": {
           "end": {
             "column": 71,
-            "line": 229
+            "line": 230
           },
           "start": {
             "column": 8,
-            "line": 229
+            "line": 230
           }
         }
       },

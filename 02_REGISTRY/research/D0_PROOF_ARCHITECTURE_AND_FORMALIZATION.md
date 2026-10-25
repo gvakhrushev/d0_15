@@ -4843,8 +4843,10 @@ The new declarations are registered in `formal_support.csv` and imported by
 the generated `D0.All`; no claim status, C0 acceptance, gravity obligation,
 or physical source choice changes. The focused compiled inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json`
-(200 declarations across four owning modules, including 22 in the new adapter;
-SHA-256 `528512daf3d95794f1c43033f67bdbeef929aa2fc145da1aeb61913a07d5fbfd`). It uses
+(at the prior per-fibre checkpoint: 200 declarations across four owning
+modules, including 22 in the adapter; historical SHA-256
+`528512daf3d95794f1c43033f67bdbeef929aa2fc145da1aeb61913a07d5fbfd`; refreshed
+after the fixed-mode persistence result below). It uses
 import root `D0.Research.NativeWeightedDiracFourierNullModes`, Lean source
 digest `c038d0b12cbf6064a7a370532bba2487104e55e243577b316f71a39f9ced606a`,
 collector SHA-256
@@ -4908,3 +4910,19 @@ dimensions, and any physical gauge quotient remain outside this result. The
 theorem proves persistence of one explicit mathematical family on the given
 carrier; it does not prove physical selection, a continuum limit, or GR
 closure.
+
+The refreshed declaration inventory compiles the selected adapter import and
+records 208 declarations across the same four owning modules, including 30 in
+the adapter (eight newly elaborated declarations, counting generated helper
+declarations). Inventory SHA-256 is
+`d6a8a177ea18307d1ee8417f0a884a379fa84325d03342190254a792f9c87a67`; the Lean
+source digest is
+`8f510881a8dbd744acff07050e813af51cace498b41c5e4c36381f1577b7548b`, and the
+module SHA-256 is
+`8f7bb090857a60e55adf6c2e50fbe2f651b59a4983454baef5eec59ef198b976`. The
+inventory snapshot is commit `0421706162e663513ca39a03590c72ffccdc1eac` with
+`worktree_dirty=false`; no new declaration has `sorryAx`. The exact symbol and
+nonzero-frequency lemmas have only the standard `Classical.choice`,
+`propext`, and `Quot.sound` footprint; the composed fibre classification also
+retains the existing finite CAR `native_decide` leaves. The public `D0.All`
+import list is current, while its full build remains reserved for Ready.
