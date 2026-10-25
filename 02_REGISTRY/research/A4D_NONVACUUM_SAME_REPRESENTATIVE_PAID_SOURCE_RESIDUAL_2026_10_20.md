@@ -15525,6 +15525,441 @@ has been established for it. Thus neither form is a proved obstruction
 to the actual X_N. The route keeps ONE shared-execution/domain application,
 not a newly required unrestricted-WORK stationarity theorem.
 
+## 7bf. The paid fresh-source factory and null query close every SOURCE-stage first row
+
+25 October 2026; same PR334 / constitutive/native-programme-v1. Input
+07a9efdd, preserving its independently derived original-Walsh Book source
+and future-parity result. This is the missing APPLICATION of7u to7be:
+the former controls the genuine raw clock but previously left changes of
+the successful logical state; the latter annihilates precisely those
+changes. Together they bound every independently varied SOURCE stage of
+one actual full Book word, including its literal reverse. Neither an
+unpaid preparation oracle nor an efficient approximation compiler for
+source states is needed.
+
+The input here is the actual PURE fresh factory, not7be's larger free
+Stiefel-input experiment. Its full physical carrier still contains every
+fresh RIGHT, failed branch, source flag, oldRIGHT and work column. The
+changed cut removes a previously unnecessary rank128^8 input requirement.
+It does not discard those modes or erase their future distinctions.
+
+### The factory fixes a smaller input support, not a smaller physical space
+
+Let H_old contain exactly the genuinely free protected old inputs, with
+rank q; a genuinely free dirty helper belongs there too. All newly
+allocated SOURCE registers (four CAR/reference copies, flags, scratch
+and amplification rebit) and QUERY-work begin at their declared pure
+blanks. Write j_S v=|0_SOURCE> tensor v and j0=|0_QUERY> tensor j_S.
+Thus P0=j0 j0^dagger has rank q on each actual arm. The full family of
+allowed v determines this as its least support. Fresh RIGHT is part of
+SOURCE, not a new independent input in H_old.
+
+For an ideal successful factory the pre-query family has support
+|C>^tensor4 tensor H_old, with its retained success transcript factors;
+C=vec(M) from471 has norm1, even though M^dagger M=I128/128. Its RIGHT
+marginal rank128 does NOT make that pure joint state128 free columns.
+The elementary least-support rule and the time-typed prepared/cylinder
+cuts of [the native future-memory owner](A4D_NATIVE_FUTURE_KRYLOV_BOOK_INNOVATION_AND_GOLDEN_CYLINDER_2026_10_22.md#3-theorem-c-the-original-golden-gate-closes-the-book01-cylinder-exactly-at-one-tick)
+apply before the query. No future-invariance condition is imposed on
+this prepared boundary. Identifying it with a compulsory Book01/M1 cut
+is still a distinct native admission, not a consequence of purity.
+
+The larger rank128^8 q cut declared in7be remains a valid DIFFERENT
+input experiment. It is not required for the actual fresh pure factory.
+Geometry's probe/reflection input is also blank; its only free protected
+factor can be the same H_old. Use the same q in each reciprocal geometry
+arm and the single material arm. Whole-carrier padding stays in heat. The pure C expectation equals
+Tr(W^dagger D E W)/128 on each varied copy, so478 retains its same
+normalized geometric trace with d replaced by q. No coframe/link field
+direction is removed by replacing the enlarged input promise.
+
+### Consume the literal raw factory, not an abstract unitary dilation
+
+Use [paid-writer9.1](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#91-one-literal-coherent-forward-word-including-its-failed-branches):
+one raw attempt per logical H/CZ/CCZ/Boolean operation, copied pointers,
+coherent corrections, and ALL subsequent gates executed even after a
+failed flag. The result is one literal native positive-G/CX word A0.
+All its oldRIGHT inputs are untouched, every new transcript remains
+active, and its genuine all-READY probability gamma0 is positive.
+
+Its successful logical source may be the explicit finite-word orbit in
+[four-copy8](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md#8-native-palette-cost-and-a-concrete-reproducible-orbit):
+
+    m(u)=sqrt(p)|1>+p cos(2 k(u) theta)|14>
+                       +p sin(2 k(u) theta)|15>.          (483)
+
+Take a finite nonconstant u-sequence k(u), constant in v,x,y, on the
+positive-cosine slack chart. Site-controlled L uses unconditional G and
+its paid inverse plus Boolean K_b, not controlled G. Choose dyadic site
+counts with L_u a multiple of512. The fresh471 Gray reference is H on
+seven label bits, reversible finite character/Gray lookup and Boolean
+signs; replace those logical gates by the SAME real raw factories.
+A fixed maximum schedule/catalogue makes gamma0 common across a finite
+field stencil. No exact ideal H is admitted as a native primitive.
+All corrected successful branches have the exact logical C and retained
+transcripts. The old Fourier reference is not silently changed.
+
+This supplies the ACTUAL all-input premise195 for SOURCE A0. The
+algorithmic P_ref checks only its initial computational SOURCE blanks;
+it is identity on old inputs, the dirty source spin, amplification rebit
+and future QUERY-work. READY R uses genuine source success flags only.
+The physical P0 is smaller than P_ref where the rebit is actually blank.
+Apply the exact common-phase recursion196 with expanded inverses and
+routing. On the physical input, for Phi_r=A_r j_S,
+
+    Phi_r^dagger R Phi_r=gamma_r I_q,
+    epsilon_r=1-gamma_r,
+    R Phi_r has the exact successful logical C^tensor4.  (484)
+
+The retained success phase/rebit can depend on gamma_r. It does not
+change the logical source or get discarded. No claim is made that a
+prescribed arbitrary smooth matter profile is an EXACT finite Golden
+word. Formula483 supplies a nonempty nonvacuum native family; further
+continuum approximation must retain its actual field/difference errors.
+
+### Put BOTH preparation legs inside the same full Book word
+
+Take7be's global effect E_h, preserving its true involution-sum bound,
+Gamma factors, uniform physical sum and v-invariant complete uv weight.
+Let S implement that effect on a fresh cold QUERY-work bank. Condition
+S on R, with an EXACT identity false block, and let Z=I-2Pi_B be its
+balanced report reflection. In this experiment the report bit is part
+of the initially cold QUERY bank, not an independent free input.
+
+    S_R=(I-R) tensor I + R S,
+    V=S_R (A_r tensor I_QUERY),  U=V^dagger Z V,
+    K=<0_QUERY|S_R^dagger Z S_R|0_QUERY>=I-2R E_h.       (485)
+
+K is a COMPRESSED Hermitian contraction on SOURCE/old, not the full
+unitary. This distinction is essential: when |c0|<1 the complete echo
+has nonzero output into noncold QUERY-work. No full-unitary eigenvector
+claim is made. S acts on LEFT/QUERY, reads READY, and leaves fresh
+RIGHT, oldRIGHT, successful transcripts and rebit as spectators.
+The controlled-SO construction7aq/7at compiles S_R on all columns with
+exact false blocks. It requires neither an unknown-M inverse nor a
+projector oracle onto the successful source image.
+
+At the primary null fields,474 gives Q_h M=0. It therefore also gives
+(Q_h tensor I_RIGHT) C=0. The polynomial four-copy effect obeys
+E_h C^tensor4=B0 C^tensor4, with B0=4p^3 and c0=1-2B0. On failure K=I.
+Consequently the exact COMPRESSED residual and actual Book corner are
+
+    (K-c0)Phi_r=(1-c0)(I-R)Phi_r,
+    ||(K-c0)Phi_r||=(1-c0)sqrt(epsilon_r),
+    C_r=j0^dagger U j0=c_r I_q,
+    c_r=1-2gamma_r B0, D_r=1-zeta+zeta c_r^2,
+    J_m=-q log D_r.                                    (486)
+
+Every raw source gate, its expanded inverse, phase, routing and flag is
+inside V or V^dagger. The resulting endpoint is exactly involutive. Use the owned homogeneous
+scene tensor clock tensor internal-fibre realization: SOURCE and QUERY
+gates act on the internal fibre, commuting with the fixed scene B_S,R_S.
+Their permitted SOURCE comparisons preserve this placement. For the
+full scene heat, the exact character is
+k_N(theta)=sum_l Tr_scene exp[-beta(I-B_S-2 R_S^2
+ cos((theta+2pi l)/N))]. It is even and2pi-periodic, even if B_S and
+R_S^2 do not commute, so k_N'(0)=k_N'(pi)=0. Thus whole true-duration
+H_N has zero first derivative for EVERY internal endpoint unitary tangent,
+with all scene/clock multiplicities retained, extending7ad. Fixed scene
+data alone would not suffice if gates acted on those SAME scene
+coordinates: their conjugated weights would remain. Such a RawZone
+placement needs the original-scene map below; it is not assumed equal. In particular the forward and reverse source
+legs need NOT remain paired under variation. Their adjacent endpoints
+need not be involutions. At fixed N this is a first-variation result,
+not a minimization over programme lengths or the discrete rank clock.
+
+### Independent forward AND reverse SOURCE stages: the full paid norm
+
+SOURCE variations act only on the actual source registers and their
+helpers; they exclude the cold QUERY bank. A forward variation has
+DC=Phi_r^dagger K DPhi_r, and an independent reverse variation has
+DC=DtildePhi_r^dagger K Phi_r. Both DPhi are isometry tangents at the
+base; they need not be equal. Subtract c0I in K. The remaining c0 term
+has zero real trace, because Phi_r^dagger DPhi_r is skew-Hermitian.
+The feedback derivative is
+
+    DJ=-2zeta Re Tr[(a I+zeta C^dagger C)^(-1) C^dagger DC],
+    a=1-zeta.
+
+It follows for EITHER independently varied leg that
+
+    |DJ| <= (2q zeta/a)(1-c0)sqrt(epsilon_r)
+                                      ||D A_leg||.      (487)
+
+This bounds changes of the successful logical state, fresh RIGHT,
+flags, rebit, readiness and source scratch simultaneously. It is not
+only a bound on Dgamma_r. No normalized conditional abort derivative
+and no division by sqrt(gamma_r) occurs.
+
+If ||S_Q-S_R||<=epsilon_Q on all columns, U_Q remains an exact echo,
+and its cold compression K_Q differs from K by at most2epsilon_Q.
+At this base the compiled corner C_Q=Phi_r^dagger K_Q Phi_r is Hermitian,
+possibly NONSCALAR. The matrix (aI+zeta C_Q^2)^(-1)C_Q is Hermitian and
+has norm at most1/a. Thus its trace against the subtracted c0 skew term
+still has zero real part. The SAME independent-leg argument gives
+
+    |DJ_Q| <= (2q zeta/a)[(1-c0)sqrt(epsilon_r)+2epsilon_Q]
+                                                   ||D A_leg||.
+
+For raw stage generators X_t=g_t^dagger Dg_t, ||D A_leg||<=sum_t||X_t||.
+Count both preparation legs with their actual SourceI/inverse/routing
+expansions, writing N_SOURCE for that total. In the dual of the maximum
+per-stage operator norm,
+
+    ||DB_SOURCE||_(infinity*) <= (2q zeta/a) N_SOURCE
+                         [(1-c0)sqrt(epsilon_r)+2epsilon_Q]. (488)
+
+The heat term is zero at the actual full echo; nothing is subtracted
+from its value. The maximum norm may overestimate the actual admitted
+SOURCE tangent space and so is safe. Query stages are a different
+support and are not included in this zero-source assertion. If the
+normalized successful source only approximates the kernel, add
+2 sqrt(gamma_r)||(E_h-B0)S_good|| to the bracket in488. Amplification
+of READY alone does not reduce that extra logical eigen-residual;483
+uses the exact kernel and hence has no such extra term.
+
+Consume200-201 with the ACTUAL finite gamma_min, factory size, phase
+word and inverse inventory. After its finite warmup R0,
+
+    epsilon_(R0+s)<=(1/48)144^(-s),
+    N_SOURCE<=C_h 5^s,
+    N_SOURCE sqrt(epsilon_(R0+s))
+                         <=C_h/sqrt(48) (5/12)^s.        (489)
+
+C_h may depend arbitrarily on the mesh, finite catalogue and warmup.
+This is the crucial paid convergence: it needs no theorem that a generic
+SO approximation word satisfies length times error ->0. All SOURCE
+amplification gates are exact native words. For each h fix the actual
+query scale eta_h first; choose s(h) so the last member of489 divided
+by eta_h^2 tends to zero. THEN choose query precision so
+N_SOURCE epsilon_Q/eta_h^2 tends to zero. The all-column query compiler
+exists at each finite tolerance; its possibly huge own clock stays
+in H_N. Its QUERY-stage covector is not bounded by N_SOURCE.
+
+### The same geometric plus material source, with its genuine readiness coefficient
+
+On that same fixed homogeneous scene tensor interface, compose the
+reciprocal7bd geometry on every oriented face with one material arm485. Apply the common source preparation before the active
+direct sum and its actual inverse after it. Geometry acts exactly as
+identity on SOURCE; its compiler uses other work and preserves that
+identity. Hence the source preparation cancels from its endpoint but
+its gates and clock remain paid. Independent SOURCE-leg first rows in
+the geometry arms vanish by tensor identity and the same skew-trace
+argument. The material contribution488 uses q, not the sum of all arm
+ranks. No free arm mix is asserted to be an admitted SOURCE generator.
+
+Keep tau_h=eta_h^2 exactly as7be, INDEPENDENT of gamma_r. Set
+D_p=a+zeta p^2, kappa0=2q zeta p^2/D_p. For geometric variations with
+this fixed factory schedule, the actual material row is
+
+    DJ_m=32 sigma q zeta gamma_r eta_h^2 p^6 c_r/D_r DI_q,h.
+
+Thus the full field source, before the declared compiler errors, is
+
+    DB_full=kappa0 eta_h^2[DI_star,h+lambda_r DI_q,h]+DR_geo,h,
+    lambda_r=16 sigma gamma_r p^4 c_r D_p/D_r.           (490)
+
+The gamma_r factor is necessary: conditioning the material query does
+not rescale the geometric area operand. No derivative of a fictitious
+gamma-dependent geometry strength is discarded. Actual independent
+SOURCE changes of gamma_r are already covered by488. For gamma_r ->1,
+lambda_r ->lambda_echo with error O(epsilon_r); for sufficiently advanced
+amplification c_r<0 and sigma=+1 gives the primary negative-coupling
+nonvacuum convention. The exact all40+2 owner accepts this derived
+coupling; it is not reset to an externally preferred value.
+
+The primary geometry remainder keeps7be's gain-normalized smooth/coframe
+O(h^4) and complete raw-link O(h^2) bounds on its stated regular family.
+New SOURCE rows converge by488-489 in their actual time-summed norm.
+Keep the finite geometry remainder, matter/geometry approximation errors
+and all field-stencil denominators from482. A fixed limiting coupling
+may instead be used with its explicit O(epsilon_r) source discrepancy.
+No exact finite critical root, h^-2-rescaled link closure, arbitrary
+continuum source preparation or field-writer C1 theorem follows merely
+from these bounds.
+
+### Full Book price and exact remaining application
+
+Use the ORIGINAL single bootstrap of Book03 §03.25, B_N=H_N+J_N,
+including the whole fixed-duration connection spectrum, absolute
+geometric anchors, material baseline486 and complete work/carrier.
+Book03 §03.3.2 identifies its history partition and determinant as two
+readings of the same admissible object. It does not command adding a
+second Shannon entropy, generic per-gate fee or an R from a different
+sector to EVERY bootstrap execution. If a particular actual native
+execution supplies an additional physical term, retain that term and
+its source; this application does not prove such a term neutral.
+
+The paid-writer10.5 whole-word adjoint applies directly to these real
+gates: T_(t+1)=g_t T_t, P_t=T_t P0 T_t^dagger,
+Lambda_N=K_H-zeta A Q^(-1),
+Lambda_t=g_t^dagger Lambda_(t+1). Here A=P0 U P0,
+Q=aI+zeta A^dagger A, and K_H is the ACTUAL full-heat cotangent.
+Explicitly K_H=(1/2)E_actual*(rho_th) when the actual weighted wrap
+variation is DDelta=-(E_actual(DU)+E_actual(DU)^dagger)/2. This map
+retains both R_S weights and the factor2 for full scene heat; it is not
+identified with the bare cycle-block extraction. Moving scene weights
+or other independently variable geometry of that operator retain their
+additional heat source.
+Every generated interior prefix row is solved by this adjoint. The
+remaining physical source is exactly
+2 Re sum_t Tr Lambda_(t+1)^dagger (Dg_t)T_t, whose SOURCE terms are488.
+Neither rho_th nor the adjoints are additional prepared physical states.
+A genuinely free initial input/cut has its original boundary reaction;
+the experiment's explicit blank input is not an independently variable
+unknown state frozen after the fact.
+
+This removes the fresh-source/cut multiplicity error and the unpaid or
+uncontrolled preparation premise for the stated nonempty native family.
+It composes the existing logical null kernel with the actual raw-word
+readiness and clock theorem; another preparation catalogue is unnecessary.
+The ONE remaining native use is still the admitted original-scene map
+x_native ->(e,U,Q_h,source,input cut) and its genuine variation domain,
+with the complete source above. The known intrinsic readback7bd and
+CAR exterior lift identify variables within a fixed representation;
+they do not by themselves prove this incidence-to-field map or turn
+an arbitrary out-of-image Choi change into an allowed physical field.
+QUERY/controller changes require that same domain/constraint application;
+an independently admitted query or input-cut normal is not set to zero.
+The new original-Walsh strict boost source in incoming07a9efdd remains
+valid on its own isolated prepared-Book carrier and is not identified
+with this composed geometry/material programme. GR_closed=false.
+
+### One changed-step exact check and source review
+
+The embedded test below verifies the actual compressed/full-unitary
+distinction, pure rank q, independent forward and reverse SOURCE rows
+for all64 unitary generators of a finite source fixture, retained
+failure, a genuinely NONSCALAR compiled corner, the readiness field
+coefficient, the different enlarged-cut control and paid contraction.
+It is an interface fixture, not a newly emitted native huge word.
+Its first run exits0; no expected mathematical result was changed.
+The actual source-word and amplifier constructors remain their owned
+inputs and were not needlessly replayed.
+
+SOURCE proof before this checker:15712 bytes, SHA256
+b1eb5bbcc5340f6512e7f30972e3af4d5699c90145cb7fe9055cb8b24e8cfbd8.
+The subsequent source review corrected the copied bare-clock adjoint
+to the actual weighted cotangent and stated its tensor-placement
+hypothesis explicitly; the checked source calculus is unchanged.
+Final proof:16859 bytes, SHA256 151cb45add50ff51b65de33b7668a3d01800e2bea9fc98374d9f2da856759339.
+All three source-only reviewers physical_query_binding,
+native_valuation_map and native_continuation_map ACCEPT this exact
+final pin. No reviewer edited sources or reran the checker.
+Checker:4270 bytes, SHA256 d6cff289bc321465ec4f3abafa8dfae928ef0c68facad6ece7b5b626ece2562f.
+
+```python
+# Changed-step exact fixture for 7bf, not an emitted large native word.
+import sympy as s
+from itertools import combinations
+R=s.Rational
+z=R(1,2**20);a=1-z;q=2
+c0=-R(3,5);B0=(1-c0)/2
+K=s.diag(c0,c0,R(5,13),1)
+L=s.diag(R(4,5),R(4,5),R(12,13),0)
+H=K.row_join(L).col_join(L.row_join(-K))
+assert H.T*H==s.eye(8) and H*H==s.eye(8) and s.trace(H)==0
+ready=s.diag(1,1,1,0)
+g=s.Matrix([R(3,5),R(4,5),0,0]);f=s.eye(4)[:,3]
+
+def hh(v):
+    d=s.eye(4)[:,0]-v
+    return s.eye(4)-2*d*d.T/(d.T*d)[0]
+
+def deriv(Phi,K0,X,reverse=False):
+    C=Phi.conjugate().T*K0*Phi
+    W=(a*s.eye(q)+z*C.conjugate().T*C).inv()*C.conjugate().T
+    dPhi=X*Phi
+    dC=dPhi.conjugate().T*K0*Phi if reverse else Phi.conjugate().T*K0*dPhi
+    return s.simplify(-2*z*s.re(s.trace(W*dC)))
+
+def generators(n):
+    for j in range(n):
+        X=s.zeros(n);X[j,j]=s.I;yield X
+    for j,k in combinations(range(n),2):
+        X=s.zeros(n);X[j,k]=1;X[k,j]=-1;yield X
+        Y=s.zeros(n);Y[j,k]=s.I;Y[k,j]=s.I;yield Y
+
+# Pure fresh rank q; complete source/RIGHT carrier remains in H.
+Phi0=s.kronecker_product(g,s.eye(q));Kbig=s.kronecker_product(K,s.eye(q))
+assert Phi0.conjugate().T*Phi0==s.eye(q)
+assert Phi0.rank()==q and Kbig.rows==4*q
+assert (Kbig-c0*s.eye(8))*Phi0==s.zeros(8,2)
+# Full unitary is NOT scalar on the cold fibre: the omitted query output is nonzero.
+jcold=g.col_join(s.zeros(4,1))
+assert ((H-c0*s.eye(8))*jcold).dot((H-c0*s.eye(8))*jcold)==1-c0*c0>0
+for X in generators(8):
+    assert deriv(Phi0,Kbig,X)==0 and deriv(Phi0,Kbig,X,True)==0
+
+# Actual failure amplitude retained. Both independent legs have a nonzero row.
+alpha=R(12,13);b=R(5,13);gamma=alpha**2;eps=b*b
+v=alpha*g+b*f;A=hh(v)
+assert A.T*A==s.eye(4) and A[:,0]==v
+whole=s.diag(A.T,A.T)*H*s.diag(A,A)
+assert whole*whole==s.eye(8)
+cr=1-2*gamma*B0
+assert whole[0,0]==cr
+Phi=s.kronecker_product(v,s.eye(q));C=Phi.T*Kbig*Phi
+assert C==cr*s.eye(q)
+res=(Kbig-c0*s.eye(8))*Phi
+assert res.T*res==(1-c0)**2*eps*s.eye(q)
+G=f*g.T-g*f.T;X=s.kronecker_product(G,s.eye(q))
+D=a+z*cr*cr
+expected=-2*q*z*cr/D*alpha*b*(1-c0)
+assert deriv(Phi,Kbig,X)==expected!=0
+assert deriv(Phi,Kbig,X,True)==expected
+bound=2*q*z/a*(1-c0)*b
+for X in generators(8):
+    for reverse in [False,True]:
+        assert abs(deriv(Phi,Kbig,X,reverse))<=bound
+
+# A genuine reflection perturbation yields a NONSCALAR compressed corner.
+# Rational rotation, conditional on one free helper, followed by a helper rotation.
+ct=R(5100,5101);st=R(101,5101)
+assert ct*ct+st*st==1
+V=s.eye(8);V[0,0]=ct;V[6,6]=ct;V[0,6]=-st;V[6,0]=st
+O=s.Matrix([[R(3,5),-R(4,5)],[R(4,5),R(3,5)]])
+V=V*s.kronecker_product(s.eye(4),O)
+# The final helper rotation commutes with Kbig, so the perturbation remains small.
+Kc=s.simplify(V.T*Kbig*V)
+Lc=V.T*s.kronecker_product(L,s.eye(q))*V
+Uc=Kc.row_join(Lc).col_join(Lc.row_join(-Kc))
+assert Uc*Uc==s.eye(16)
+Cc=Phi.T*Kc*Phi
+assert Cc==Cc.T and Cc!=s.trace(Cc)/q*s.eye(q)
+eQ=R(1,20);delta=Kc-Kbig
+assert s.trace(delta.T*delta)<(2*eQ)**2
+Wc=(a*s.eye(q)+z*Cc*Cc).inv()*Cc
+assert Wc==Wc.T
+boundc=2*q*z/a*((1-c0)*b+2*eQ)
+for X in generators(8):
+    for reverse in [False,True]:
+        assert abs(deriv(Phi,Kc,X,reverse))<=boundc
+
+# Pure-input multiplicity and actual readiness coefficient (independent field jet).
+t=s.symbols('t',real=True)
+Et=s.eye(q)*(gamma*(B0+t))
+Ct=s.eye(q)-2*Et
+jt=-(a*s.eye(q)+z*Ct.T*Ct).det().diff(t)/(a*s.eye(q)+z*Ct.T*Ct).det()
+assert s.simplify(jt.subs(t,0)-4*q*z*cr*gamma/D)==0
+assert s.simplify(jt.subs(t,0)-4*q*z*cr/D)!=0
+# The enlarged free-source cut has different rank/value; it is a different experiment.
+assert s.det(a*s.eye(8)+z*Kbig*Kbig)!=(a+z*c0*c0)**q
+
+# Owned contraction and actual expanded inventory imply paid source convergence.
+cmax=R(1,16);emax=R(1,48)
+assert cmax+(1-cmax)*emax<R(1,12)
+ng,ncx,ni,nt=s.symbols('g n i t', nonnegative=True)
+W=5*ng+ncx+ni
+Winv=9*ng+ncx+6*nt+3*ni
+assert s.expand(3*W-Winv)==6*(ng-nt)+2*ncx
+assert R(5,12)<1
+print('PASS exact full reflection; compressed-vs-full eigenvector control; pure rank q')
+print('PASS all64 unitary source generators, both independent legs, ideal/failure/nonscalar cases')
+print('PASS retained failure norm; actual readiness field factor; wrong enlarged-cut control')
+print('PASS paid 5^s inventory against 144^-s failure; no native efficiency assumption')
+```
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -11992,3 +11992,103 @@ proved. Native_valuation_map traced the original lines; integrator checked
 Book01:28–39 and Book03:29–33,385–393,1137. The pinned19110-byte proof
 and4669-byte checker are unchanged. Only source-text/whitespace validation
 is needed for this clarification; no duplicate mathematical replay.
+
+
+## 25 October checkpoint: the full paid SOURCE covector consumes the null kernel
+
+Same existing Draft PR334 / constitutive/native-programme-v1.
+Phase: native realization and final composition. Input07a9efdd; preserve
+its independent original-Walsh/Slater/parity source result. Primary
+artifact is the existing paid-source residual §7bf, Eq.483–490.
+No new task, catalogue, registry or physical claim. GR_closed=false.
+
+Exact parent substitution:7u supplied a genuine coherent source factory,
+exact native fixed-point amplification and the full expanded5^s clock,
+but left arbitrary changes of its successful logical output.7be supplies
+the missing eigenkernel for that output. On the ACTUAL pure-fresh input
+cut q=rank(H_old), the conditional query compression K has residual
+||(K-c0)Phi_r||=(1-c0)sqrt(epsilon_r). Fresh RIGHT and all failed/work
+columns remain in the full physical space; they do not multiply this
+input rank by128^8. This changes the input experiment and preserves
+all geometric parameter directions and the pure-Choi trace identity.
+
+Both preparation legs are now executed INSIDE the same Book echo.
+They can vary independently. Even for a nonscalar compiled corner,
+the scalar leading term has zero real trace against the Hermitian
+Book weight. The ENTIRE raw SOURCE covector, in the dual of maximum
+per-stage operator norm, is bounded by
+(2q zeta/(1-zeta)) N_SOURCE[(1-c0)sqrt(epsilon_r)+2epsilon_Q].
+N_SOURCE counts both forward and expanded reverse/routing/SourceI
+stages. The owned epsilon<=144^-s/48 and N_SOURCE<=C_h5^s
+therefore give actual paid convergence, without a source SO compiler
+efficiency assumption. Choose amplification after the finite mesh
+constants/eta_h, then query precision after N_SOURCE. Failed branches,
+readiness, actual true-N heat and absolute Book baselines stay paid.
+
+Native realization input: the literal paid-writer9.1 raw H/Boolean
+factory, new Gray-reference lookup and the known finite material orbit
+483. Every successful logical source is EXACTLY in the null kernel;
+only its success is amplified. For an approximated kernel retain its
+extra eigen-residual; readiness alone does not improve it. QUERY stages
+and cold QUERY-input motions are outside the SOURCE support bound.
+
+Geometric tau=eta_h^2 is unchanged and independent of readiness.
+The actual material coefficient is
+lambda_r=16 sigma gamma_r p^4 c_r D_p/D_r, tending to lambda_echo.
+The additional gamma_r is retained; no area rescaling is assumed.
+For an ordering without a coupling/normalization loop, use the stated
+fixed limiting-coupling family, fix its query scale first, and retain
+the O(epsilon_r) discrepancy from490. All existing finite geometric,
+field-stencil and matter-approximation errors remain. Exact finite
+new-price roots and stronger rescaled link norms are not promoted.
+
+Heat interface: owned homogeneous scene tensor clock tensor internal
+fibre, with SOURCE and QUERY gates commuting with fixed scene B_S,R_S.
+The full scene character is even/periodic and stationary at0/pi even
+when the two scene weights do not commute. The actual weighted heat
+cotangent K_H, not a bare cycle block, enters the causal prefix adjoint.
+Moving scene weights retain their own source. Original RawZone placement
+is NOT inferred from abstract internal placement; that is part of the
+remaining original-incidence-to-field map and actual variation domain.
+
+Original price: Book03 §03.25 selects the single finite H_N+J_N bootstrap
+for this application. Prefix adjoints/thermal weights are not new
+physical state preparations. A second entropy/per-gate fee/R from a
+different sector is not automatically added. Any term genuinely selected
+by the actual same execution retains its source. Thus the parent now
+has an explicit full paid SOURCE application, not a normalized report
+or another unattached preparation certificate. The remaining native
+application is joint scene/field/query/cut admission with actual allowed
+variations; no unrestricted QUERY normal or independent input boundary
+has been silently set to zero.
+
+Final source proof:16859 bytes, SHA256
+151cb45add50ff51b65de33b7668a3d01800e2bea9fc98374d9f2da856759339.
+All three source-only reviewers ACCEPT the exact final pin. The weighted
+heat cotangent/tensor placement was tightened after valuation review;
+no equation in the changed-step SOURCE checker changed. The pre-check
+15712-byte source hash and precise correction are retained in the primary.
+Checker:4270 bytes, SHA256
+d6cff289bc321465ec4f3abafa8dfae928ef0c68facad6ece7b5b626ece2562f.
+First run exit0: full reflection with nonzero noncold leakage; pure q;
+all64 unitary generators and independent legs; failure and nonscalar
+corner; readiness factor; enlarged-cut negative control; paid growth.
+No old GR/all40/Lean or amplifier-constructor replay. Affected local
+validation is recorded below; publication requires remote head/blob checks.
+
+Affected structural checks on07a9efdd plus this exact scientific insertion
+PASS: validate_work, validate_agent_protocol, gr_assembly check(valid=true;
+54 active/98 results/5 discharged/22 obligations;scientific_promotion=false),
+validate_repo(889 claims/31 assumptions/58 aliases/183 formal_support/
+918 Lean closure;warnings0), and git diff --check. Changed checker runtime:
+Python3.11.9/SymPy1.12.1. This is local validation, not remote CI or physical
+acceptance. The independent incoming3c97a157 sequence is preserved; its
+new original-U Slater flag result and old checker extension touch neither
+owned file nor any input consumed by483–490. No unchanged mathematical
+replay follows merely from that disjoint intake.
+
+Removing only the7bf insertion restores the incoming primary BYTE EXACT;
+the incoming brief is an exact prefix. Combined insertion22475 bytes,
+SHA2561c3c6ef027bfc0599eaa3f9eafeff5bd9056963ff699968688ec011b6e2038c0.
+The existing primary positive family, all40+2 owner, enlarged-cut7be
+experiment, original-Walsh source and all prior limitations are retained.
