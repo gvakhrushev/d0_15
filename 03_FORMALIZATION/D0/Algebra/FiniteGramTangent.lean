@@ -68,6 +68,25 @@ theorem finiteGram_dressed_transport_compatible {ι : Type*}
     _ = Θx * η * Θx.transpose := by
           exact congrArg (fun M : Matrix ι ι ℝ => Θx * M * Θx.transpose) hL
 
+/-- Frame-dressed transport is invariant under independent endpoint frame
+changes when the link transforms by the corresponding two-sided action. -/
+theorem finiteMatrix_dressed_transport_frame_invariant {ι : Type*}
+    [Fintype ι] [DecidableEq ι]
+    (Θx L Θy Λx Λy : Matrix ι ι ℝ)
+    (hΛx : IsUnit Λx.det) (hΛy : IsUnit Λy.det) :
+    (Θx * Λx) * (Λx⁻¹ * L * Λy) * (Θy * Λy)⁻¹ =
+      Θx * L * Θy⁻¹ := by
+  have hx1 : Λx * Λx⁻¹ = (1 : Matrix ι ι ℝ) :=
+    Matrix.mul_nonsing_inv Λx hΛx
+  have hy1 : Λy * Λy⁻¹ = (1 : Matrix ι ι ℝ) :=
+    Matrix.mul_nonsing_inv Λy hΛy
+  rw [Matrix.mul_inv_rev]
+  calc
+    (Θx * Λx) * (Λx⁻¹ * L * Λy) * (Λy⁻¹ * Θy⁻¹) =
+        Θx * (Λx * Λx⁻¹) * L * (Λy * Λy⁻¹) * Θy⁻¹ := by
+          simp only [Matrix.mul_assoc]
+    _ = Θx * L * Θy⁻¹ := by rw [hx1, hy1]; simp
+
 /-- On a nondegenerate left frame, equality of finite Gram matrices is exactly
 membership in the right orbit of the isometry group of the fixed form. The
 fixed form `η` itself need not be invertible; only the reference frame `Θ`

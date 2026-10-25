@@ -208,17 +208,11 @@ theorem a4dDressedLink_frame_invariant
     (_hΘy : IsUnit Θy.det) :
     a4dDressedLink (Θx * Λx) (Λx⁻¹ * L * Λy) (Θy * Λy) =
       a4dDressedLink Θx L Θy := by
-  have hx1 : Λx * Λx⁻¹ = (1 : Matrix Role Role ℝ) :=
-    Matrix.mul_nonsing_inv Λx (isRoleLorentz_det_isUnit Λx hΛx)
-  have hy1 : Λy * Λy⁻¹ = (1 : Matrix Role Role ℝ) :=
-    Matrix.mul_nonsing_inv Λy (isRoleLorentz_det_isUnit Λy hΛy)
-  unfold a4dDressedLink
-  rw [Matrix.mul_inv_rev]
-  calc
-    (Θx * Λx) * (Λx⁻¹ * L * Λy) * (Λy⁻¹ * Θy⁻¹) =
-        Θx * (Λx * Λx⁻¹) * L * (Λy * Λy⁻¹) * Θy⁻¹ := by
-          simp only [Matrix.mul_assoc]
-    _ = Θx * L * Θy⁻¹ := by rw [hx1, hy1]; simp
+  simpa [a4dDressedLink] using
+    D0.Algebra.finiteMatrix_dressed_transport_frame_invariant
+      Θx L Θy Λx Λy
+      (isRoleLorentz_det_isUnit Λx hΛx)
+      (isRoleLorentz_det_isUnit Λy hΛy)
 
 /-- With invertible solder frames at both endpoints, equality of dressed links
 forces exactly the sitewise Lorentz transport of the undressed link. -/
