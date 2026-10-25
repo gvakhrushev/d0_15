@@ -98,23 +98,8 @@ theorem fibreComposeC {N : ℕ}
     (∑ mid, M bra mid * ∑ ket, Nmat mid ket * ψ (x, ket)) =
       ∑ ket, (∑ mid, M bra mid * Nmat mid ket) * ψ (x, ket) := by
   classical
-  calc
-    (∑ mid, M bra mid * ∑ ket, Nmat mid ket * ψ (x, ket)) =
-        ∑ mid, ∑ ket, M bra mid * (Nmat mid ket * ψ (x, ket)) := by
-          apply Finset.sum_congr rfl
-          intro mid _
-          rw [Finset.mul_sum]
-    _ = ∑ ket, ∑ mid, M bra mid * Nmat mid ket * ψ (x, ket) := by
-          rw [Finset.sum_comm]
-          apply Finset.sum_congr rfl
-          intro ket _
-          apply Finset.sum_congr rfl
-          intro mid _
-          ring
-    _ = ∑ ket, (∑ mid, M bra mid * Nmat mid ket) * ψ (x, ket) := by
-          apply Finset.sum_congr rfl
-          intro ket _
-          rw [← Finset.sum_mul]
+  simpa only [carMatrixEnd] using
+    (carMatrixEnd_comp_apply M Nmat (fun ket => ψ (x, ket)) bra)
 
 theorem createActionC_comp_apply (N : ℕ) (r s : Role)
     (ψ : ArchiveCochainC N) (p : ArchiveCochainBasis N) :

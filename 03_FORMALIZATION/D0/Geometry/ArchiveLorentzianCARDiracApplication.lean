@@ -386,15 +386,27 @@ noncomputable def archiveFourierBackwardMultiplier (N : ℕ)
     (k : Role → ZMod (archiveFibers N)) (r : Role) : ℂ :=
   (archiveFibers N : ℂ) * (1 - FiniteCycleFourier.cycleChar (k r) (-1))
 
-/-- Creation on the sixteen-component Fock coefficient at fixed momentum. -/
+/-- Creation on the sixteen-component Fock coefficient at fixed momentum,
+represented by the shared finite matrix action. -/
+def archiveFourierCreateProfileLinear (r : Role) :
+    (ArchiveFockState → ℂ) →ₗ[ℂ] (ArchiveFockState → ℂ) :=
+  carMatrixEnd (fun bra ket => (carCreate r bra ket : ℂ))
+
+/-- Annihilation on the sixteen-component Fock coefficient, represented by the
+same shared finite matrix action. -/
+def archiveFourierAnnihilateProfileLinear (r : Role) :
+    (ArchiveFockState → ℂ) →ₗ[ℂ] (ArchiveFockState → ℂ) :=
+  carMatrixEnd (fun bra ket => (carAnnihilate r bra ket : ℂ))
+
+/-- Function-valued compatibility view of the creation matrix action. -/
 def archiveFourierCreateProfile (r : Role) (v : ArchiveFockState → ℂ) :
     ArchiveFockState → ℂ :=
-  fun S => ∑ ket, (carCreate r S ket : ℂ) * v ket
+  archiveFourierCreateProfileLinear r v
 
-/-- Annihilation on the sixteen-component Fock coefficient at fixed momentum. -/
+/-- Function-valued compatibility view of the annihilation matrix action. -/
 def archiveFourierAnnihilateProfile (r : Role) (v : ArchiveFockState → ℂ) :
     ArchiveFockState → ℂ :=
-  fun S => ∑ ket, (carAnnihilate r S ket : ℂ) * v ket
+  archiveFourierAnnihilateProfileLinear r v
 
 /-- Exact finite-dimensional CAR action induced on one archive Fourier fibre.
 The source weights act only on the backward annihilation term. -/
@@ -405,6 +417,31 @@ def roleWeightedArchiveFourierFockAction (N : ℕ) (w : Role → ℝ)
     archiveFourierForwardMultiplier N k r * archiveFourierCreateProfile r v S -
       (w r : ℂ) * archiveFourierBackwardMultiplier N k r *
         archiveFourierAnnihilateProfile r v S)
+
+/-- The same Fourier-fibre CAR action as an endomorphism of the finite
+sixteen-component complex profile space. This is the typed operator API used
+for composition and matrix-level applications. -/
+noncomputable def roleWeightedArchiveFourierFockActionLinear (N : ℕ)
+    (w : Role → ℝ) (k : Role → ZMod (archiveFibers N)) :
+    (ArchiveFockState → ℂ) →ₗ[ℂ] (ArchiveFockState → ℂ) :=
+  ∑ r : Role,
+    (archiveFourierForwardMultiplier N k r • archiveFourierCreateProfileLinear r -
+      ((w r : ℂ) * archiveFourierBackwardMultiplier N k r) •
+        archiveFourierAnnihilateProfileLinear r)
+
+/-- Applying the typed Fourier-fibre operator recovers the established
+function-valued compatibility view exactly. -/
+theorem roleWeightedArchiveFourierFockActionLinear_apply (N : ℕ)
+    (w : Role → ℝ) (k : Role → ZMod (archiveFibers N))
+    (v : ArchiveFockState → ℂ) :
+    roleWeightedArchiveFourierFockActionLinear N w k v =
+      roleWeightedArchiveFourierFockAction N w k v := by
+  funext S
+  simp [roleWeightedArchiveFourierFockActionLinear,
+    roleWeightedArchiveFourierFockAction,
+    archiveFourierCreateProfile, archiveFourierAnnihilateProfile,
+    archiveFourierCreateProfileLinear, archiveFourierAnnihilateProfileLinear,
+    carMatrixEnd]
 
 private theorem archiveFourierCharacter_zero (N : ℕ)
     (k : Role → ZMod (archiveFibers N)) :
@@ -521,6 +558,7 @@ theorem twistedCreateDirection_fourier_mode (N : ℕ)
           FiniteCycleFourier.piCycleChar k p.1 := by ring
   simp_rw [hdiff]
   unfold archiveFourierFockMode archiveFourierCreateProfile
+    archiveFourierCreateProfileLinear carMatrixEnd
   calc
     (∑ ket, (carCreate r p.2 ket : ℂ) *
         (v ket * archiveFourierForwardMultiplier N k r *
@@ -570,6 +608,7 @@ theorem twistedAnnihilateDirection_fourier_mode (N : ℕ)
           FiniteCycleFourier.piCycleChar k p.1 := by ring
   simp_rw [hdiff]
   unfold archiveFourierFockMode archiveFourierAnnihilateProfile
+    archiveFourierAnnihilateProfileLinear carMatrixEnd
   calc
     (∑ ket, (carAnnihilate r p.2 ket : ℂ) *
         (v ket * archiveFourierBackwardMultiplier N k r *
@@ -692,6 +731,23 @@ theorem roleWeightedArchiveFourierFockAction_square (N : ℕ)
             funext p
             simp [archiveFourierFockMode]
             ring
+
+/-- As a genuine finite-dimensional linear operator, the Fourier-fibre CAR
+map composes with itself to the scalar Eq. (5) symbol. -/
+theorem roleWeightedArchiveFourierFockActionLinear_square (N : ℕ)
+    (w : Role → ℝ) (k : Role → ZMod (archiveFibers N)) :
+    (roleWeightedArchiveFourierFockActionLinear N w k).comp
+        (roleWeightedArchiveFourierFockActionLinear N w k) =
+      (Complex.ofReal (roleWeightedArchiveFourierSymbol N w k)) • LinearMap.id := by
+  apply LinearMap.ext
+  intro v
+  funext S
+  change roleWeightedArchiveFourierFockActionLinear N w k
+      (roleWeightedArchiveFourierFockActionLinear N w k v) S = _
+  rw [roleWeightedArchiveFourierFockActionLinear_apply,
+    roleWeightedArchiveFourierFockActionLinear_apply,
+    roleWeightedArchiveFourierFockAction_square]
+  simp [LinearMap.id_apply, Pi.smul_apply, smul_eq_mul]
 
 /-- With the repository role signs, the induced Fock-fibre map squares to the
 Eq. (5) symbol on every profile and every archive Fourier momentum. -/

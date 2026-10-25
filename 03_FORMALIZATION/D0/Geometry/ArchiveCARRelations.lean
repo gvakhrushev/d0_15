@@ -1,5 +1,6 @@
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Tactic
+import Mathlib.Algebra.Module.LinearMap.Defs
 import D0.Core.FiniteTypes
 import D0.Core.DyadABCD
 import D0.Geometry.ArchiveCARFockCarrier
@@ -80,6 +81,65 @@ def carAnnihilateInt (r : Role) (bra ket : ArchiveFockState) : ℤ :=
 /-- Creation operator matrix elements: `c_r† = (c_r)^T`. -/
 def carCreate (r : Role) (bra ket : ArchiveFockState) : ℝ :=
   carAnnihilate r ket bra
+
+/-! ## Finite matrix action on Fock profiles
+
+The CAR matrices act on coefficient profiles over either the real or complex
+field.  Keep the finite-matrix action at the carrier layer so concrete
+representations do not each reimplement the same sum as a function. -/
+
+/-- The linear action of a finite Fock matrix on coefficient profiles over a
+commutative semiring. The coefficient domain is inferred from `M`. -/
+def carMatrixEnd {K : Type*} [CommSemiring K]
+    (M : ArchiveFockState → ArchiveFockState → K) :
+    (ArchiveFockState → K) →ₗ[K] (ArchiveFockState → K) where
+  toFun ψ bra := ∑ ket : ArchiveFockState, M bra ket * ψ ket
+  map_add' ψ φ := by
+    ext bra
+    simp [mul_add, Finset.sum_add_distrib]
+  map_smul' c ψ := by
+    ext bra
+    simp only [Pi.smul_apply, smul_eq_mul, Finset.mul_sum]
+    refine Finset.sum_congr rfl ?_
+    intro ket _
+    simp [RingHom.id_apply, mul_left_comm]
+
+@[simp] theorem carMatrixEnd_apply {K : Type*} [CommSemiring K]
+    (M : ArchiveFockState → ArchiveFockState → K)
+    (ψ : ArchiveFockState → K) (bra : ArchiveFockState) :
+    carMatrixEnd M ψ bra = ∑ ket : ArchiveFockState, M bra ket * ψ ket := rfl
+
+/-- Composition of finite matrix actions is matrix multiplication on the
+same Fock carrier. -/
+theorem carMatrixEnd_comp_apply {K : Type*} [CommSemiring K]
+    (M N : ArchiveFockState → ArchiveFockState → K)
+    (ψ : ArchiveFockState → K) (bra : ArchiveFockState) :
+    carMatrixEnd M (carMatrixEnd N ψ) bra =
+      ∑ ket : ArchiveFockState,
+        (∑ mid : ArchiveFockState, M bra mid * N mid ket) * ψ ket := by
+  classical
+  unfold carMatrixEnd
+  calc
+    (∑ mid : ArchiveFockState,
+        M bra mid * ∑ ket : ArchiveFockState, N mid ket * ψ ket) =
+      ∑ mid : ArchiveFockState, ∑ ket : ArchiveFockState,
+        M bra mid * (N mid ket * ψ ket) := by
+          refine Finset.sum_congr rfl ?_
+          intro mid _
+          rw [Finset.mul_sum]
+    _ = ∑ ket : ArchiveFockState, ∑ mid : ArchiveFockState,
+          M bra mid * N mid ket * ψ ket := by
+          rw [Finset.sum_comm]
+          refine Finset.sum_congr rfl ?_
+          intro ket _
+          refine Finset.sum_congr rfl ?_
+          intro mid _
+          simp [← mul_assoc]
+    _ = ∑ ket : ArchiveFockState,
+          (∑ mid : ArchiveFockState, M bra mid * N mid ket) * ψ ket := by
+          apply Finset.sum_congr rfl
+          intro ket _
+          rw [← Finset.sum_mul]
 
 /-- Integral shadow of `carCreate`. -/
 def carCreateInt (r : Role) (bra ket : ArchiveFockState) : ℤ :=

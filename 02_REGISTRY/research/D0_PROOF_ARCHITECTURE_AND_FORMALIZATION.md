@@ -4729,3 +4729,53 @@ generated-view check and the CRLF-aware diff check passed. The goal remains
 in progress: C0 and independent acceptance are still open, as are the 54
 assembly semantic relations, native source/physical selection, matter
 compatibility and GR closure.
+
+### Shared finite CAR matrix action and typed Fourier-fibre operator (25 October 2026)
+
+The 16-state CAR matrix action now has one owner at the carrier layer:
+`D0.Geometry.carMatrixEnd` is generic over a commutative semiring, with a
+compiled composition theorem identifying composition with finite matrix
+multiplication. The previous real-only definition in
+`ArchiveExteriorFrameLift` was removed; its real `carCreateEnd` and
+`carAnnihilateEnd` APIs retain the same types. The complex Fourier application
+now builds its creation/annihilation profile maps from this same API.
+
+The role-weighted first-order Fourier-fibre map is additionally exposed as an
+actual complex `LinearMap` on the sixteen-component Fock-profile space. Its
+application equals the existing function-valued API, and its self-composition
+is proved equal to multiplication by the exact Eq. (5) Fourier symbol. The
+proof reuses the existing full-carrier CAR-square theorem and generic scalar
+Fourier theorem; it does not add another independent CAR-square calculation.
+The existing complex `fibreComposeC` theorem now delegates to the shared
+finite-matrix composition result, so the established create/create,
+annihilate/annihilate and mixed CAR composition lemmas consume the refactored
+API.
+
+The edited support row for `ArchiveCARRelations` records an existing source
+and the already registered CAR claim locator. It does not revise that claim's
+status, accept its semantic scope independently, or infer a physical
+application. The operator result remains conditional on explicit role
+weights; no physical sign, action/source, metric, matter coupling, or
+refinement is selected. Full-source physical selection and GR closure remain
+open.
+
+Narrow builds passed for `ArchiveCARRelations`, `ArchiveExteriorFrameLift`,
+`ArchiveTwistedHodgeDirac`, `ArchiveJuliaRaisingOperatorReadout`, and
+`ArchiveLorentzianCARDiracApplication`. The focused compiled inventory
+enumerates 247 declarations from `ArchiveCARRelations`,
+`ArchiveTwistedHodgeDirac`, and `ArchiveLorentzianCARDiracApplication`, using
+the latter as its import root. Its SHA-256 is
+`66df83fd8691df082585f0debd0d5ba4b25b40432855ae071d1ea146397ab480`; the
+Lean source digest is
+`0a3b065f3343293c07246f078e41b6a0dce10e334f5dcd273ae46313ca2f2688`, and the
+collector SHA-256 is
+`608448595c1dd37cc1ac7ad9b77d7378d812388ce299b1a40ba27004bf10310d`. The
+compiled `roleWeightedArchiveFourierFockActionLinear_square` footprint is
+`Classical.choice`, `propext`, `Quot.sound`, and the three existing finite
+CAR `native_decide` anticommutator dependencies; the generic matrix action and
+function-to-operator adapter introduce no `native_decide` dependency.
+
+The public `D0.All` replay is deferred to the task's Ready integration
+checkpoint under the repository validation budget. The focused inventory and
+the five changed-consumer narrow builds are complete. The inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/archive_car_matrix_linear_operator_refactor_declarations_2026-10-25.json`.

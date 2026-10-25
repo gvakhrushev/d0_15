@@ -426,19 +426,6 @@ endomorphisms of the same 16-state carrier.  Their anticommutators are the
 theorems in `ArchiveCARRelations`.
 -/
 
-def carMatrixEnd (M : ArchiveFockState → ArchiveFockState → ℝ) :
-    (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ) where
-  toFun ψ bra := ∑ ket : ArchiveFockState, M bra ket * ψ ket
-  map_add' ψ φ := by
-    ext bra
-    simp [mul_add, Finset.sum_add_distrib]
-  map_smul' c ψ := by
-    ext bra
-    simp only [Pi.smul_apply, smul_eq_mul, Finset.mul_sum]
-    refine Finset.sum_congr rfl ?_
-    intro ket _
-    simp [RingHom.id_apply, mul_left_comm, mul_assoc]
-
 def carCreateEnd (r : Role) : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ) :=
   carMatrixEnd (carCreate r)
 
