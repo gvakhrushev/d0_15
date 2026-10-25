@@ -1,0 +1,235 @@
+{
+  "GR_closed": false,
+  "certified_native_alpha": [
+    {
+      "K": 1,
+      "alpha": [
+        "2341444836012464332282155022620981952843328949123638281/1532495540865888858358347027150309183618739122183602176",
+        "2397639512076763476256926743261816914311600216605163365569/1569275433846670190958947355801916604025588861116008628224"
+      ],
+      "bits": 96,
+      "cosine": [
+        "31142664558888973170982279131/39614081257132168796771975168",
+        "7785666139722243292745569783/9903520314283042199192993792"
+      ],
+      "m": 1,
+      "repeat": 1,
+      "sine": [
+        "1530178040625490198477465091/2475880078570760549798248448",
+        "48965697300015686351278882913/79228162514264337593543950336"
+      ]
+    },
+    {
+      "K": 2,
+      "alpha": [
+        "462778382923477568973947306660970439329821749847929403169/392318858461667547739736838950479151006397215279002157056",
+        "1851113531693910275895789241014087780255974692377434777881/1569275433846670190958947355801916604025588861116008628224"
+      ],
+      "bits": 96,
+      "cosine": [
+        "33264050428701442521281582143/39614081257132168796771975168",
+        "66528100857402885042563164453/79228162514264337593543950336"
+      ],
+      "m": 18,
+      "repeat": 9,
+      "sine": [
+        "-43024568930948166745466219141/79228162514264337593543950336",
+        "-21512284465474083372733109487/39614081257132168796771975168"
+      ]
+    }
+  ],
+  "checks": [
+    "reflected raw corner is symmetric and has the exact isotropic Gram including every failure branch",
+    "literal reflected middle equals the ALL-column ready/unready definition K1 L1",
+    "recursive controlled-word exact inverse and phase inventory is fully expanded K1 L1",
+    "literal reflected middle equals the ALL-column ready/unready definition K2 L1",
+    "recursive controlled-word exact inverse and phase inventory is fully expanded K2 L1",
+    "literal reflected middle equals the ALL-column ready/unready definition K2 L9",
+    "recursive controlled-word exact inverse and phase inventory is fully expanded K2 L9",
+    "actual raw echo rank8 corner retains meter and every dirty spin column K1",
+    "adding native Z leaves the complete old unreflected return defect and logdet unchanged K1",
+    "actual raw echo rank8 corner retains meter and every dirty spin column K2",
+    "adding native Z leaves the complete old unreflected return defect and logdet unchanged K2",
+    "a genuine unready complement contributes to x=gamma*q without conditioning",
+    "integer repetition gives a certified native alpha strictly between1and2 K1",
+    "integer repetition gives a certified native alpha strictly between1and2 K2",
+    "original two-density report has its owned Q(p) source ratio without refitting",
+    "actual rank8 reflected feedback multiplies BOTH original density sources by one strictly positive retained-readiness gain",
+    "two arbitrary scalar-Gram corners compose multiplicatively even on one reused meter",
+    "private-DATA reflected middles form an involution on their entire product carrier",
+    "involution heat first source vanishes also for a non-conjugacy endpoint perturbation",
+    "owned coherent readiness recursion preserves the conditional report and raises this actual scalar-ready example above one half",
+    "coherent amplifier API emits every real inverse phase and routing stage and excludes report from READY",
+    "critical k2 report has scalar one-RAW-slot conditionals n2 M2",
+    "cohort kappa respects the positive retained-readiness bounds n2 M2",
+    "critical k2 report has scalar one-RAW-slot conditionals n3 M2",
+    "cohort kappa respects the positive retained-readiness bounds n3 M2",
+    "literal private-DATA returned-matrix logdet gives the COMPLETE product-score bank cotangent M2",
+    "a genuine multi-cohort excitation is seen by the PRODUCT score and missed by adding local scores M2",
+    "critical k2 report has scalar one-RAW-slot conditionals n2 M3",
+    "cohort kappa respects the positive retained-readiness bounds n2 M3",
+    "critical k2 report has scalar one-RAW-slot conditionals n2 M3",
+    "cohort kappa respects the positive retained-readiness bounds n2 M3",
+    "critical k2 report has scalar one-RAW-slot conditionals n2 M3",
+    "cohort kappa respects the positive retained-readiness bounds n2 M3",
+    "literal private-DATA returned-matrix logdet gives the COMPLETE product-score bank cotangent M3",
+    "a genuine multi-cohort excitation is seen by the PRODUCT score and missed by adding local scores M3",
+    "integer j^(3/4) cohort schedule has bounded overlap sum and subquadratic total work M8",
+    "old finite errors enter a bounded-positive weighted Cesaro average M8",
+    "integer j^(3/4) cohort schedule has bounded overlap sum and subquadratic total work M64",
+    "old finite errors enter a bounded-positive weighted Cesaro average M64",
+    "integer j^(3/4) cohort schedule has bounded overlap sum and subquadratic total work M512",
+    "old finite errors enter a bounded-positive weighted Cesaro average M512",
+    "displayed bounded-positive weighted old-error averages decrease across the finite schedule"
+  ],
+  "checks_passed": 42,
+  "coherent_readiness_example": {
+    "actual_Book_input_rank_helper0_rebit0": 8,
+    "actual_full_dimension": 128,
+    "actual_stages": 4404,
+    "algorithmic_Pref_rank_rebit_free": 32,
+    "algorithmic_initial_controls": [
+      1,
+      2
+    ],
+    "amplified_gamma": "0.7618973064564100301005472914140952134787",
+    "constructor_embedding_rank_rebit0_helper_free": 16,
+    "long_physical_word_matrix_replayed": false,
+    "native_phase_multiplier": 624,
+    "raw_gamma": "0.3819660112501051517954131656343618822797"
+  },
+  "cohort_growth": [
+    {
+      "cohorts": 8,
+      "sum_inverse_n_nminus1": "1.6000000000000000000",
+      "total_packets": 28,
+      "weighted_old_error": "0.35559523809523809524"
+    },
+    {
+      "cohorts": 64,
+      "sum_inverse_n_nminus1": "2.0345737168038285282",
+      "total_packets": 872,
+      "weighted_old_error": "0.076265156958744043917"
+    },
+    {
+      "cohorts": 512,
+      "sum_inverse_n_nminus1": "2.1956470324753823735",
+      "total_packets": 31797,
+      "weighted_old_error": "0.013583888376750413393"
+    }
+  ],
+  "consumed_sections_sha256": {
+    "7ac": "076ff074a394e37734b336e8ee171978424d07c777838150ea6366d02e406de9",
+    "7ad": "4acffc06de6fa77459bcfa1ce5ad9c8fe946970f1079a69b9d738aee65c0ebfb",
+    "7af": "9c05f47ec0feee99204aa6cdfab418e8eba7b9ec27fd6307ffa9c037005d6aea"
+  },
+  "continuous_native_word_selector_proved": false,
+  "exact_finite_bank_stationarity_claimed": false,
+  "executed_at": "2026-10-25T03:56:31.832302+00:00",
+  "inputs_sha256": {
+    "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md": "10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05",
+    "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/COHORT_THEOREM.md": "c90e41bd4c97e63427e38e849c8a96a842c8abc2615f1770e6669a917c8efaa0",
+    "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/PROOF.md": "627be34a64654c6a407bf5a542295f89d156c158feb584961a5e1870e3bbb3a7",
+    "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/check_reflected_report.py": "e6bc57c38ffde486c1de19ab37b1839546b89ad7cb28758d1ea8c4eae95d995a",
+    "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/reflected_report.py": "b248c31f3fd3bcf377a5bb4548507d7c62f8c8d28dca0626285a8a9cec9112b7",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_matrix_collective_return_2026-10-25/PROOF.md": "0c626bcb01f335d864f986a6783ba9e5ce04a5a9e015cae96cd4c9f45359da29",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/READINESS_AMPLIFICATION.md": "8d161314c96b145c2392d473a01576e32ce5238e168625b7d20bb0f46b0a2775",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/amplified_execution.py": "e0d5d8401896d555a26c51d333926a6f2b747c34eeb24857ab9ba1730fa9a3a8",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d",
+    "02_REGISTRY/research/sources/d0_native_task_clock_source_2026-10-25/PROOF.md": "09c11fd8c74ed7c6e2a791bafccc3820f14b9077c2fda4e8e517e4b8d72079fd"
+  },
+  "joint_product_score_models": [
+    {
+      "Gamma_over_W": "2160/1249",
+      "bank_dimension": 32,
+      "cohort_sizes": [
+        2,
+        3
+      ],
+      "gradient_norm_squared": "9706225690800/286286433840001",
+      "joint_excitation_source": "-24300/16920001",
+      "private_DATA_dimension": 4,
+      "product_variance": "606639105675/623002398720256",
+      "shared_spin_rank_once": 4,
+      "sum_score_wrongly_gives": "0",
+      "true_input_rank": 16
+    },
+    {
+      "Gamma_over_W": "3240/1249",
+      "bank_dimension": 64,
+      "cohort_sizes": [
+        2,
+        2,
+        2
+      ],
+      "gradient_norm_squared": "136350134632873469700/703545983571652680001",
+      "joint_excitation_source": "4920750/26524441249",
+      "private_DATA_dimension": 8,
+      "product_variance": "34087533658218367425/15550149840095969284096",
+      "shared_spin_rank_once": 4,
+      "sum_score_wrongly_gives": "0",
+      "true_input_rank": 32
+    }
+  ],
+  "logical_normalized_effect_inserted_without_readiness": false,
+  "matrix_scope": "native middles ALL32/64 including unready flags and dirty helper/spin; raw echoes ALL32/64; rational cohort diagnostics ALL joint-bank cotangent components",
+  "measured_nested_cap_treated_as_raw_unitary": false,
+  "native_middle_rows": [
+    {
+      "CX": 20,
+      "G": 3,
+      "K": 1,
+      "L": 1,
+      "SourceI": 10,
+      "all_columns": 32,
+      "m": 1,
+      "paired_clock_mode_count": 2112,
+      "stages": 33,
+      "true_input_rank": 8
+    },
+    {
+      "CX": 36,
+      "G": 6,
+      "K": 2,
+      "L": 1,
+      "SourceI": 18,
+      "all_columns": 64,
+      "m": 2,
+      "paired_clock_mode_count": 7680,
+      "stages": 60,
+      "true_input_rank": 8
+    },
+    {
+      "CX": 228,
+      "G": 54,
+      "K": 2,
+      "L": 9,
+      "SourceI": 146,
+      "all_columns": 64,
+      "m": 18,
+      "paired_clock_mode_count": 54784,
+      "stages": 428,
+      "true_input_rank": 8
+    }
+  ],
+  "native_physical_XN_or_compulsory_selection_proved": false,
+  "old_P5_C8_source_suite_replayed": false,
+  "original_report": {
+    "g_h_tau1": "0.0000000191688316936114739934989170249244880579280102",
+    "lambda_minus": "-23.4164067518840749728955820648952527442631785",
+    "q0": "0.00000185123957848820307628439505498340366171697988",
+    "reflected_rank8_gain": "0.000000000000167583202757769741609165393301525778522216371"
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "same_reused_DATA_prefix_claimed_involution": false,
+  "schema": "d0.exact-report-reflected-cohorts-check/1",
+  "status": "PASS",
+  "sum_of_cohort_source_norms_used": false,
+  "sum_of_local_prefix_logdets_claimed": false,
+  "unconditional_arbitrary_rational_probability_claimed": false
+}
