@@ -2881,4 +2881,8 @@ locators total 22, and 37 results still have incomplete section mappings.
 These remain provenance and retrieval counts, not C0 coverage or acceptance.
 `gr_assembly.py check` passes with 54 active results and
 `scientific_promotion=false`. C0 remains unfrozen and independently
-unaccepted; no claim status or physical assumption changes here.
+unaccepted; no claim status or physical assumption changes here. The checkpoint
+is published on PR #402 at commit `99c4bba26f43f374dc558f9c5678be2a529229b5`;
+remote Git tree blob IDs match all three changed artifacts. GitHub `guards`
+(run `40153040215`) and `lean-build` (run `40153040195`) both passed on that
+head. This updates no Lean source digest and is not a final `D0.All` replay.
