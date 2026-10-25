@@ -1423,7 +1423,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json",
+            "car_hodge_finite_coordinate_current_declaration_inventory_2026-10-25.json",
             require_current=True,
         )
 
@@ -1660,6 +1660,51 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertTrue(any("hodgeCarDirac_sq" in query for query in case["queries"]))
         self.assertTrue(any("hodgeCarDirac_kernel_finrank" in query
                             for query in case["queries"]))
+
+    def test_shared_finite_coordinate_expansion_is_in_both_adjoint_proofs(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "car_hodge_finite_coordinate_current_declaration_inventory_2026-10-25.json"
+        )
+        inventory_bytes = inventory_path.read_bytes()
+        inventory = json.loads(inventory_bytes)
+        self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        self.assertEqual(inventory["toolchain"], "leanprover/lean4:v4.30.0")
+
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+        basis = declarations["D0.Algebra.finiteCoordinate_eq_sum_single"]
+        hermitian = declarations["D0.Algebra.finiteHermitianPairing_adjoint"]
+        weighted = declarations["D0.Algebra.finiteWeightedPairing_adjoint"]
+        standard_axioms = {"Classical.choice", "Quot.sound", "propext"}
+
+        self.assertEqual(basis["module"], "D0.Algebra.FiniteCoordinateBasis")
+        self.assertEqual(basis["conclusion_whnf"], "x = ∑ i, x i • Pi.single i 1")
+        self.assertEqual(set(basis["axioms"]), standard_axioms)
+        self.assertFalse(any(binder["is_proposition"] for binder in basis["binders"]))
+        for consumer in (hermitian, weighted):
+            self.assertEqual(consumer["declaration_kind"], "theorem")
+            self.assertIn(
+                "D0.Algebra.finiteCoordinate_eq_sum_single",
+                consumer["proof_dependencies"],
+            )
+            self.assertEqual(set(consumer["axioms"]), standard_axioms)
+        self.assertFalse(any(binder["is_proposition"] for binder in hermitian["binders"]))
+        self.assertEqual(
+            {binder["name"] for binder in weighted["binders"]
+             if binder["is_proposition"]},
+            {"hw"},
+        )
+
+        dataset = proof.load_dataset(proof.ROOT)
+        support = {row["lean_module"]: row for row in dataset["formal_support"]}
+        self.assertIn("D0.Algebra.FiniteCoordinateBasis", support)
+        consumers = support["D0.Algebra.FiniteCoordinateBasis"]["referenced_by"]
+        self.assertIn("FiniteHermitianAdjoint.lean", consumers)
+        self.assertIn("FiniteWeightedAdjoint.lean", consumers)
 
     def test_claim_source_candidates_use_exact_headings_and_preserve_ambiguity(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
