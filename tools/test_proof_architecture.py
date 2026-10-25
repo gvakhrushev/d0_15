@@ -403,9 +403,22 @@ class ProofArchitectureTests(unittest.TestCase):
             research_source.write_text("## Theorem 1\nA pinned result.\n", encoding="utf-8")
             historical_rel = "02_REGISTRY/research/historical.md"
             historical_source = root / historical_rel
-            historical_source.write_text("Pinned historical evidence.\n", encoding="utf-8")
+            historical_source.write_text(
+                "# Exact vector reconstruction\n\n"
+                "Pinned historical evidence for exact vector reconstruction.\n",
+                encoding="utf-8",
+            )
+            candidate_rel = "02_REGISTRY/research/candidate.md"
+            candidate_source = root / candidate_rel
+            candidate_source.write_text(
+                "# Exact vector reconstruction\n\n"
+                "This section records the exact vector reconstruction result.\n",
+                encoding="utf-8",
+            )
             subprocess.run(["git", "init", "-q"], cwd=root, check=True)
-            subprocess.run(["git", "add", source_rel, research_rel, historical_rel], cwd=root, check=True)
+            subprocess.run([
+                "git", "add", source_rel, research_rel, historical_rel, candidate_rel
+            ], cwd=root, check=True)
             subprocess.run([
                 "git", "-c", "user.name=Test", "-c", "user.email=test@example.com",
                 "commit", "-q", "-m", "pin Lean source",
@@ -427,6 +440,11 @@ class ProofArchitectureTests(unittest.TestCase):
                     ["git", "cat-file", "blob", f"{ref}:{historical_rel}"], cwd=root
                 )
             ).hexdigest()
+            candidate_sha = hashlib.sha256(
+                subprocess.check_output(
+                    ["git", "cat-file", "blob", f"{ref}:{candidate_rel}"], cwd=root
+                )
+            ).hexdigest()
             historical_source.unlink()
             data = dataset(root)
             data["assembly"]["results"] = [{
@@ -439,6 +457,7 @@ class ProofArchitectureTests(unittest.TestCase):
                     {"ref": ref, "path": research_rel, "sha256": "0" * 64,
                      "section_ref": "Theorem 1"},
                     {"ref": ref, "path": historical_rel, "sha256": historical_sha},
+                    {"ref": ref, "path": candidate_rel, "sha256": candidate_sha},
                 ],
             }]
 
@@ -491,7 +510,7 @@ class ProofArchitectureTests(unittest.TestCase):
             view["evidence_crosswalks"][0]["pin"]["current_source_status"], "matches_pin"
         )
         source_locators = view["source_locator_crosswalks"]
-        self.assertEqual(len(source_locators), 4)
+        self.assertEqual(len(source_locators), 5)
         self.assertEqual(
             source_locators[0]["locator"]["source_file_key"],
             f"source:{ref}:{source_rel}",
@@ -509,6 +528,7 @@ class ProofArchitectureTests(unittest.TestCase):
                          "pinned_sha256_mismatch")
         self.assertIsNone(source_locators[2]["locator"]["source_file_key"])
         self.assertEqual(source_locators[2]["locator"]["exact_unit_key_candidates"], [])
+        self.assertEqual(source_locators[2]["locator"]["ranked_section_candidates"], [])
         self.assertEqual(source_locators[2]["locator"]["unit_locator_status"],
                          "section_reference_without_verified_source_pin")
         self.assertEqual(source_locators[3]["locator"]["pin_status"], "verified")
@@ -518,6 +538,20 @@ class ProofArchitectureTests(unittest.TestCase):
             source_locators[3]["locator"]["source_file_key"],
             f"source:{ref}:{historical_rel}",
         )
+        self.assertEqual(
+            source_locators[3]["locator"]["ranked_section_candidates"][0][
+                "candidate_source_unit_key"
+            ],
+            f"source:{ref}:{historical_rel}#L1: Exact vector reconstruction",
+        )
+        self.assertEqual(
+            source_locators[4]["locator"]["ranked_section_candidates"][0][
+                "candidate_source_unit_key"
+            ],
+            f"source:{ref}:{candidate_rel}#L1: Exact vector reconstruction",
+        )
+        self.assertEqual(source_locators[4]["locator"]["unit_locator_status"],
+                         "ranked_heading_candidates_need_review")
         self.assertEqual(view["compiled_declarations"][0]["elaborated_type"], "True")
         self.assertEqual(view["compiled_declarations"][0]["proof_details_status"],
                          "collected_for_exact_claim_locator")
@@ -531,11 +565,18 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(all_current_view["result_count"], 1)
         self.assertEqual(
             all_current_view["source_locator_summary"]["pin_status_counts"],
-            {"verified": 3, "pinned_sha256_mismatch": 1},
+            {"verified": 4, "pinned_sha256_mismatch": 1},
         )
         self.assertEqual(
             all_current_view["source_locator_summary"]["current_source_status_counts"],
-            {"matches_pin": 2, "unverified_pin": 1, "source_missing": 1},
+            {"matches_pin": 3, "unverified_pin": 1, "source_missing": 1},
+        )
+        self.assertEqual(
+            all_current_view["source_locator_summary"]["ranked_section_candidate_count"], 2
+        )
+        self.assertEqual(
+            all_current_view["source_locator_summary"]["results_with_ranked_section_candidates"],
+            1,
         )
 
     def test_result_crosswalk_stale_current_source_is_citation_only(self) -> None:

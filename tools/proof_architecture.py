@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import functools
 import hashlib
 import json
 import os
@@ -34,6 +35,16 @@ MAX_FIELD_CHARS = 8000
 MAX_SEARCH_EVIDENCE = 3
 MAX_SEARCH_SOURCE_REFS = 3
 MAX_SEARCH_DETAIL_CHARS = 160
+SOURCE_LOCATOR_STOPWORDS = frozenset("""
+a an and are as at be been by can do does for from has have if in into is it its
+of on or our that the their then this to under was were what when where which
+with without would you all any every fixed actual stated declared specified
+theorem result source section field proof claim mathematical unit
+для или над при без из из-за как где когда который которая которые это этот
+эта эти был была были есть для по от до как что если уже настоящий заданный
+указанный исходный полный точный точная точное результат источник раздел
+математический утверждение доказательство
+""".split())
 
 
 def read_json(root: pathlib.Path, relative: pathlib.Path) -> Any:
@@ -1080,7 +1091,90 @@ def _pinned_evidence_view(root: pathlib.Path, evidence: dict[str, Any]) -> dict[
     }
 
 
-def _source_locator_crosswalk(evidence: dict[str, Any], pin: dict[str, Any]) -> dict[str, Any]:
+@functools.lru_cache(maxsize=512)
+def _pinned_markdown_text(root: str, ref: str, path: str) -> str:
+    return subprocess.check_output(
+        ["git", "cat-file", "blob", f"{ref}:{path}"], cwd=root
+    ).decode("utf-8", errors="replace")
+
+
+def _markdown_sections(text: str) -> list[tuple[int, str, str]]:
+    """Return pinned ATX heading sections as (line, title, body) tuples."""
+    sections: list[tuple[int, str, str]] = []
+    current_line: int | None = None
+    current_title = ""
+    current_body: list[str] = []
+    fence_char: str | None = None
+    fence_length = 0
+    for line_number, line in enumerate(text.splitlines(), start=1):
+        fence = re.match(r"^\s{0,3}(`{3,}|~{3,})", line)
+        if fence:
+            marker = fence.group(1)
+            if fence_char is None:
+                fence_char, fence_length = marker[0], len(marker)
+            elif marker[0] == fence_char and len(marker) >= fence_length:
+                fence_char, fence_length = None, 0
+            if current_line is not None:
+                current_body.append(line)
+            continue
+        heading = None if fence_char is not None else re.match(
+            r"^\s{0,3}(#{1,6})\s+(.+?)\s*#*\s*$", line
+        )
+        if heading:
+            if current_line is not None:
+                sections.append((current_line, current_title, "\n".join(current_body)))
+            current_line = line_number
+            current_title = heading.group(2).strip()
+            current_body = []
+        elif current_line is not None:
+            current_body.append(line)
+    if current_line is not None:
+        sections.append((current_line, current_title, "\n".join(current_body)))
+    return sections
+
+
+def _locator_terms(text: str) -> set[str]:
+    tokens = re.findall(r"(?u)[^\W_]{3,}|(?<!\w)\d{2,}(?!\w)", text.casefold())
+    return {token for token in tokens if token not in SOURCE_LOCATOR_STOPWORDS}
+
+
+def _ranked_section_candidates(root: pathlib.Path, evidence: dict[str, Any],
+                                pin: dict[str, Any], source_file_key: str | None,
+                                statement: str) -> list[dict[str, Any]]:
+    path = pin.get("path")
+    ref = pin.get("ref")
+    if (not source_file_key or pin.get("pin_status") != "verified"
+            or not isinstance(path, str) or not path.lower().endswith((".md", ".markdown"))):
+        return []
+    query_terms = _locator_terms(statement)
+    if not query_terms:
+        return []
+    text = _pinned_markdown_text(str(root), str(ref), path)
+    minimum_matches = min(len(query_terms), max(3, (len(query_terms) + 4) // 5))
+    candidates = []
+    for line, title, body in _markdown_sections(text):
+        shared = query_terms & _locator_terms(title + "\n" + body)
+        if len(shared) < minimum_matches:
+            continue
+        section_ref = f"L{line}: {title}"
+        candidates.append({
+            "candidate_source_unit_key": f"{source_file_key}#{section_ref}",
+            "section_ref": section_ref,
+            "heading": title,
+            "heading_line": line,
+            "matched_terms": sorted(shared),
+            "query_term_count": len(query_terms),
+            "overlap_fraction": round(len(shared) / len(query_terms), 4),
+            "review_status": "unreviewed_lexical_candidate",
+        })
+    candidates.sort(key=lambda item: (
+        -item["overlap_fraction"], -len(item["matched_terms"]), item["heading_line"]
+    ))
+    return candidates[:3]
+
+
+def _source_locator_crosswalk(root: pathlib.Path, evidence: dict[str, Any],
+                              pin: dict[str, Any], statement: str) -> dict[str, Any]:
     """Expose a pinned file key without treating a file as a mathematical unit."""
     ref = pin.get("ref")
     path = pin.get("path")
@@ -1112,13 +1206,20 @@ def _source_locator_crosswalk(evidence: dict[str, Any], pin: dict[str, Any]) -> 
         [f"{source_file_key}#{section}" for section in sections]
         if source_file_key else []
     )
+    section_candidates = (
+        [] if sections else _ranked_section_candidates(
+            root, evidence, pin, source_file_key, statement
+        )
+    )
     return {
         "source_file_key": source_file_key,
         "exact_unit_key_candidates": exact_unit_keys,
         "section_refs": sections,
+        "ranked_section_candidates": section_candidates,
         "unit_locator_status": (
             "candidate_section_keys_need_review" if exact_unit_keys
             else "section_reference_without_verified_source_pin" if sections
+            else "ranked_heading_candidates_need_review" if section_candidates
             else "section_locator_not_recorded" if source_file_key
             else "source_pin_unverified"
         ),
@@ -1193,7 +1294,9 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                 continue
             pin = _pinned_evidence_view(root, evidence)
             source_locator_views.append({
-                "locator": _source_locator_crosswalk(evidence, pin),
+                "locator": _source_locator_crosswalk(
+                    root, evidence, pin, str(row.get("statement", ""))
+                ),
                 "pin": pin,
             })
             if not str(evidence.get("path", "")).endswith(".lean"):
@@ -1403,8 +1506,9 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
         "source_locator_interpretation": (
             "A source:<commit>:<path> key is emitted only after the immutable commit:path blob "
             "matches its recorded SHA-256; the current checkout may be missing or changed. Only "
-            "explicit section metadata yields source-unit key candidates, which still require "
-            "review. Missing section metadata remains an unresolved unit locator."
+            "explicit section metadata yields exact section-key candidates. When it is absent, "
+            "ranked headings from verified pinned Markdown may be shown as lexical candidates; "
+            "all section candidates require review and none is accepted by this view."
         ),
     }
     if result_id is not None:
@@ -1435,6 +1539,15 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                 "pin_status_counts": pin_status_counts,
                 "current_source_status_counts": current_source_status_counts,
                 "section_locator_count": sum(r["section_locator_count"] for r in summary_rows),
+                "ranked_section_candidate_count": sum(
+                    len(source_locator["locator"]["ranked_section_candidates"])
+                    for source_locator in all_source_locators
+                ),
+                "results_with_ranked_section_candidates": sum(
+                    any(source_locator["locator"]["ranked_section_candidates"]
+                        for source_locator in item["source_locators"])
+                    for item in per_result.values()
+                ),
                 "results_with_incomplete_section_mapping": sum(
                     r["source_unit_locator_disposition"] == "section_mapping_incomplete"
                     for r in summary_rows
