@@ -7357,3 +7357,51 @@ still require review; claim locators and the semantic relation are unresolved,
 and `acceptance_inferred=false`. This result covers the complete finite
 sitewise metric map only; it does not establish continuum variation, physical
 source selection, connection elimination, or independent C0 acceptance.
+
+### Complete finite Lorentz orbit coordinates (26 October 2026)
+
+This slice formalizes the corresponding source-A coordinates Q_x = Θ_x η Θ_xᵀ
+and K_(x,r) = Θ_x L_(x,r) Θ_(x+r)⁻¹ from §A of the pinned nonlinear J²
+bridge. The source pin is commit `77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f`,
+file `02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md`, blob
+`ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc`. On the finite raw-solder carrier, `D0.Geometry.A4DStarFiniteLorentzQuotient` formalizes the coordinate-completeness statement as an application candidate. At one site,
+`a4dRightLorentz_gram_complete` shows that equality of the Gram matrices is
+equivalent to a right action by `IsRoleLorentz`, provided the reference solder
+matrix is invertible. `a4dDressedLink_eq_iff_rightAction` proves that equality
+of the dressed links then forces exactly the corresponding endpoint action on
+the undressed link. The field theorem `a4d_complete_orbit_coordinates`
+combines these statements: on an all-site nondegenerate reference coframe,
+equality of every site Gram and every dressed link is equivalent to one
+site-dependent Lorentz field relating both the complete coframe and link
+fields. Its signature retains the all-site determinant-unit premise. The link
+field carrier is arbitrary matrix-valued data; no hidden link-group premise is
+used.
+
+The Lean predicate `IsRoleLorentz` is exactly
+Λ * η * Λ.transpose = η, so this theorem covers the full orthogonal group
+O(1,3). It does not encode the discrete orientation and
+time-orientation labels needed to restrict the result to a fixed
+SO⁺(1,3) component. Nor does it prove that the source's selected finite
+action descends to this Lean carrier: the action-to-carrier map and its
+independent semantic review remain open.
+
+The exact Lean source is pinned at `81f0ca500e3ccfdddf5f18041bc73d103154ea05`,
+SHA-256 `f78e99f451a4917820014f143346e34a3ea6dc1dcee1de59292c3bafdb60c8a4`.
+Its narrow `D0.Geometry.A4DStarFiniteLorentzQuotient` build passed; the final
+public `D0.All` build passed **4,581/4,581** jobs. The updated
+`metric-provenance` evidence names the three exact declarations above. The
+fresh compiled crosswalk resolves all **26/26** requested declarations and is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_81f0ca50.json`,
+SHA-256 `7431680abf8e7f8df82e8a7a11ebd6172bc4206a0c4a3768ea746ea377f84792`.
+It records snapshot `81f0ca500e3ccfdddf5f18041bc73d103154ea05`,
+`worktree_dirty=true`, Lean-source digest
+`1e86b5d64e8dcee98e39f78714425c63565437262340c782c3cd027416d6a80c`, and
+`applications.json` SHA-256
+`29da15543eda0dfe0cfc7a42ad631bed83d26a50761b42c4d535a81fabae605b`. The
+three new declarations report the standard `Classical.choice`, `Quot.sound`,
+and `propext` axiom footprint.
+
+The source section keys remain candidate locators pending review; the claim
+locator and semantic relation remain unresolved, and `acceptance_inferred=false`.
+This is a compiled formalization of finite quotient-coordinate completeness,
+not independent C0 acceptance, physical action selection, or GR closure.

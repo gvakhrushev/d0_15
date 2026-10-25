@@ -25,7 +25,7 @@
     {
       "id": "metric-provenance",
       "owner": "existing CONTROL/main research owner",
-      "statement": "The pinned J² bridge reports two distinct units: (A) the selected star-action metric quotient Q=Theta eta Theta^T and (B) the flat detector tangent DQ_flat[H(q)]=q. The Lean source-convention adapter proves the full finite-matrix Fréchet derivative and transports it through the complete finite solder metric field map for arbitrary sitewise coframe perturbations.",
+      "statement": "The pinned J2 bridge reports two distinct units: (A) the nonlinear metric quotient coordinates Q_x=Theta_x eta Theta_x^T and dressed links K_(x,r)=Theta_x L_(x,r) Theta_(x+r)^(-1), and (B) the flat detector tangent DQ_flat[H(q)]=q. The Lean module proves finite raw-solder orbit completeness for its full IsRoleLorentz group: on an all-site nondegenerate reference solder field, equality of every Q and K is equivalent to one site-dependent Lorentz frame relating the coframe and link fields. It separately proves the full finite-matrix Frechet derivative and its transport through the arbitrary sitewise solder metric field map.",
       "interface": "star-metric-v1",
       "outcome": "positive",
       "kind": "analytic",
@@ -84,9 +84,19 @@
           "declaration_names": [
             "D0.Algebra.finiteGram_one_smul_expand"
           ]
+        },
+        {
+          "ref": "81f0ca500e3ccfdddf5f18041bc73d103154ea05",
+          "path": "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
+          "sha256": "f78e99f451a4917820014f143346e34a3ea6dc1dcee1de59292c3bafdb60c8a4",
+          "declaration_names": [
+            "D0.Geometry.a4dRightLorentz_gram_complete",
+            "D0.Geometry.a4dDressedLink_eq_iff_rightAction",
+            "D0.Geometry.a4d_complete_orbit_coordinates"
+          ]
         }
       ],
-      "reported_state": "Candidate reconciliation separates the source selected-action quotient (A) from its flat detector tangent (B). The Lean source-convention adapter supplies a finite matrix witness for B, maps the source frame by right multiplication with eta into the existing solder Gram carrier, retains the quadratic remainder, and proves the full matrix-variable Fréchet derivative at the flat frame. The derivative composes with the finite solder readout over arbitrary LocalCoframeField N perturbations and is then collected into one Fréchet derivative for the entire output field x ↦ solderMetricMatrix N e x. Its value at each site is exactly the existing coframeMetricReadout. The matrix derivatives use the Frobenius norm and the full input/output fields use inherited finite Pi norms. No result connects A selected-action quotient to that Lean carrier, establishes global connection elimination or physical metric/source selection, or grants independent C0 acceptance."
+      "reported_state": "The source A and B units remain distinct. For A, the Lean adapter formalizes complete Q/K orbit coordinates on the finite raw-solder carrier, assuming IsUnit det(rawSolderMatrix N e x) at every reference site; IsRoleLorentz denotes the full O(1,3) isometry group, so fixed proper/time-oriented components are not encoded. For B, the source-convention adapter maps its frame by right multiplication with eta into the existing solder Gram carrier, retains the quadratic remainder, and proves the full matrix-variable Frechet derivative at the flat frame. The derivative composes with the finite solder readout over arbitrary LocalCoframeField N perturbations and is collected into one Frechet derivative for the whole output field x ↦ solderMetricMatrix N e x, whose value at each site is exactly the existing coframeMetricReadout. Matrix derivatives use the Frobenius norm and full fields use inherited finite Pi norms. The selected-action-to-Lean-carrier map, source A component restriction to SO+(1,3), global connection elimination, physical metric/source selection and independent C0 acceptance remain open; acceptance_inferred=false."
     },
     {
       "id": "smooth-parametrix",
