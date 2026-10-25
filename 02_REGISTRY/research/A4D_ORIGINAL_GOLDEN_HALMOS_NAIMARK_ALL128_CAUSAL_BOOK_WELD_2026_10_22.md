@@ -388,3 +388,49 @@ D_\theta J_{\rm pre}/d_R
 The opposite signs on ONE TRUE original θ direction show WHY the actual Row/Info/Heat/Clock source cannot be deleted and the Book feedback alone cannot be relabelled as the whole measured original price. These are bounded original numerical diagnostics, NOT 42-field physical Einstein/Book source interval certificates. The exact equations (23)–(29) do not rely on decimal precision.
 
 **The principal positive consequence:** a COMPLETE original Golden action/record and its PRE Book return now live on ONE **exact** native \((\Delta,W)\) instrument without any Boolean-vs-CAR surrogate. Every previously missing original 17-plus Kraus poststate is kept; the remaining gravitational bottleneck is the genuine M1/Book03 *selection of which complete price/Info/SCENE heat/clock functional is compulsory* and the physical all42 coframe/link/material writer, NOT a missing algebraic physical-channel intertwiner.
+
+
+## 9. 25 October direct ORIGINAL all128 K→Book no-return Born application (closed exact mathematics, native test admission OPEN)
+
+[New fully proved feedback/no-return/Slater reciprocity and its exact matrix tests](A4D_CLOSED_FEEDBACK_NO_RETURN_PROBABILITY_AND_CANONICAL_RECIPROCAL_DUALITY_2026_10_25.md) consume this file's *ACTUAL* original Kraus family (1)–(2), not an independent model or supplied Einstein action.
+
+On the original true prepared blank α=0, define the ONE genuine complement block column
+\[
+\mathcal K_{\ne0}=(K_1,K_2,\ldots,K_{127})^T,\qquad
+\mathcal K_{\ne0}^\dagger\mathcal K_{\ne0}
+=I-K_0^\dagger K_0
+=F_{\rm pre}=4p^2\Delta(I-p^2\Delta).
+\tag{31}
+\]
+Keep each literal original j>0 / odd Kraus complex matrix and all dark zeros. Then the **canonical weak prepared column on the SAME P/Q destination** is
+\[
+\boxed{
+\mathcal V_\zeta=
+\begin{pmatrix}
+\sqrt{I-\zeta F_{\rm pre}}\\
+\sqrt\zeta\,\mathcal K_{\ne0}
+\end{pmatrix},\quad
+\mathcal V_\zeta^\dagger\mathcal V_\zeta=I.
+}
+\tag{32}
+\]
+The active positive root is uniquely fixed by normality/isometry and the unchanged original complex complement, with NO additional eigenvector orientation, scalar coupling, or erased Kraus. For every original nonblank α, the weak branch conditional quantum DATA/oldRIGHT POSTSTATE is the unchanged original conditional poststate because \(\sqrt\zeta K_\alpha\) differs by the SAME positive scalar. The blank branch is different, so this is a NEW mathematical weak self-test on the ORIGINAL carrier — NOT the unchanged original future-law/instrument or an automatically admitted original G/CX native word.
+
+Take the filled antisymmetric \(\Lambda^{16}\) state over the original DATA **STATE-space treated as a one-particle space** and a complete unitary extension of (32), with the actual existing pointer archive as Q. The entirely finite all-archive-empty Born probability is
+\[
+\boxed{
+p_{\emptyset}^{\rm original\ weak}
+=\det[I-\zeta F_{\rm pre}],\quad
+-\ln p_\emptyset^{\rm original\ weak}
+=J_{\rm pre}.
+}
+\tag{33}
+\]
+Thus the ALREADY DERIVED original prepared Book feedback in §4 is the exact self-information of an explicit closed Slater archive test which preserves EVERY actual original failure amplitude in its destination. The result is BASIS INVARIANT and completion-independent on the prepared column, and its **true moving noncommuting source** is exactly (17), including original \(\Delta(Y)\) and its whole source. A literal mathematical code test for a two-mode block at the same \(\zeta\), with all six real fermionic results and 28 rational controls including K-source jets, is in
+`sources/d0_feedback_closed_loop_duality_2026-10-25/check_slater_no_return.py`.
+
+**Physical firewall:** original CAR16 is a Fock space of FOUR modes. Using a top wedge over its 16-dimensional STATE-space, preparing that many-copy antisymmetric occupied input, and paying a complete weakened original archive test is a new implementation task, NOT secretly an already-owned original CAR16 detector. The universal product test
+\(\Pr(\hbox{all original archives empty})=\prod_t\det(I-\zeta F_{{\rm pre},t})\)
+is exact for paid newly supplied archive blocks and no DATA reset, even when original K at different times fails to commute. However it is **not generally** the single \(\det(I-\zeta F_{\rm global})\) computed from Book03's *whole* monodromy and one global P cut. The original native Book P/clock/task selection and full HJR/CQ Info/source remain separate obligations; `GR_closed=false`.
+
+This is an exact operator-to-Born closure of the **prepared** ORIGINAL full128 Book feedback; it is not yet a forcing of the *physically selected* complete D0 action or Einstein's full equations.
