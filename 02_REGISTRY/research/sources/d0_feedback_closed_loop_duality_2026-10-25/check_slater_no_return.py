@@ -60,6 +60,30 @@ check(zero(p_empty-(I2-z*F).det()),'Book survival determinant is ONE Born record
 check(p_empty<1 and p_empty>(1-z)**2,'strict Book archive event range')
 check(1-p_empty>0 and sum(p[1:])==1-p_empty,'all five failure alternatives retained')
 
+# SAME original active/archive split: the true original leakage K can be
+# retained at a weakened amplitude WITHOUT any additional destination modes.
+sqrt_z=r(1,1024)
+K=B/sqrt_z
+real_original_F=K.T*K
+check(real_original_F==F,'the actual K dagger K effect is unchanged')
+column=A.col_join(sqrt_z*K)
+check(column.T*column==I2,'native P plus its SAME original Q is an isometry')
+check(U[:,:2]==column,'the full closed SO4 unitary completes that prepared column')
+check(K.det()!=0 and B.det()!=0,'rank2 original Q destination is minimal for full-rank K')
+# Noncommuting honest variation of the ORIGINAL K leg, solving the unique
+# positive-root Sylvester equation for the moving active prepared leg.
+L=S.Matrix([[r(1,17),r(1,19)],[-r(1,23),r(1,29)]])
+dF=K.T*L+L.T*K
+check(dF*F!=F*dF,'true moving archive K has noncommuting field source')
+xx=S.symbols('x00 x01 x10 x11')
+X=S.Matrix(2,2,xx)
+sol=S.solve(list(A*X+X*A+z*dF),list(xx),dict=True)
+check(len(sol)==1,'unique derivative of positive active block')
+dA=X.subs(sol[0])
+check(zero(A*dA+dA*A+z*dF),'noncommuting positive-root Sylvester derivative')
+dCol=dA.col_join(sqrt_z*L)
+check(zero(column.T*dCol+dCol.T*column),'whole prepared column source remains normalized')
+
 # Symbolic genuine source derivative with ORIGINAL ζ, not a fitted field.
 t=S.symbols('t',real=True)
 aa,bb=amplitudes(t)
