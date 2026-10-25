@@ -410,6 +410,8 @@ CASES: list[dict[str, Any]] = [
             "roleWeightedArchiveCARDirac_fourier_mode roleWeightedArchiveFourierFockAction_square archiveLorentzianCARFourierFockAction_square",
             "archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family archiveLorentzian_kernel_finrank_cases archiveLorentzian_nonzero_null_mode_classification",
             "null_mode_kernel_eq_range null_mode_kernel_half_dimension DivisionRing finrank complex fibre",
+            "finiteHermitianPairing_weightSquareRoot finiteWeightedConjugate_self_adjoint positive profile",
+            "cubicalWeightedHodgeDirac_standard_representative_application cubicalWeightedHodgeDirac_square_degree_preserving",
             "archiveRoleFourierInversion actual archive site scalar field",
         ],
         "required_refs": [
@@ -423,6 +425,9 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_fourier_fiber_action_declarations_2026-10-25.json",
             "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json",
+            "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_hodge_standard_representative_claim_reuse_2026-10-25.json",
         ],
         "scope_review": (
             "The generic theorem identifies matrix multiplication in the existing ArchiveCochainBasis "
@@ -445,7 +450,10 @@ CASES: list[dict[str, Any]] = [
             "quotient, broader refinement classification, and physical/source selection remain open. Its "
             "complex-fibre contraction uses the DivisionRing generalization at "
             "a6ff3f2fc7e0e6b94d673c2cd713cb4faeb94004, capsule blob "
-            "60de6702e232d6b68fc3b707a058383c4c09b2ff."
+            "60de6702e232d6b68fc3b707a058383c4c09b2ff. The positive-profile "
+            "standard-Hilbert representative is a separate cubical application for "
+            "caller-supplied positive diagonal weights; it does not derive general W, "
+            "the Lorentz-induced W_Q, geometry, or physical selection."
         ),
     },
 ]

@@ -1250,6 +1250,18 @@ class ProofArchitectureTests(unittest.TestCase):
             case["required_refs"],
         )
         self.assertIn(
+            "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_hodge_standard_representative_claim_reuse_2026-10-25.json",
+            case["required_refs"],
+        )
+        self.assertIn(
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json",
             case["required_refs"],
         )
@@ -1278,6 +1290,14 @@ class ProofArchitectureTests(unittest.TestCase):
         ))
         self.assertTrue(any(
             "null_mode_kernel_eq_range null_mode_kernel_half_dimension DivisionRing" in query
+            for query in case["queries"]
+        ))
+        self.assertTrue(any(
+            "finiteHermitianPairing_weightSquareRoot finiteWeightedConjugate_self_adjoint" in query
+            for query in case["queries"]
+        ))
+        self.assertTrue(any(
+            "cubicalWeightedHodgeDirac_standard_representative_application" in query
             for query in case["queries"]
         ))
         self.assertTrue(any("weightedDiracMatrix_symmetric_of_finiteHermitianAdjoint_eq_self"
