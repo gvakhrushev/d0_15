@@ -5258,3 +5258,50 @@ every required source, including this inventory, and all 20 benchmark cases
 ran. The `exact-source-vs-unrelated-prose` impact control passed, confirming
 that a declared source edit changes its dependent result while unrelated
 prose leaves that source digest unchanged.
+
+### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)
+
+This is one unresolved source-unit crosswalk, not a C0 freeze, acceptance, or
+coverage result. The inspected snapshot is PR head
+`c3c56c15ad2e84a0dba796a6fb42e03bf9438118`. Current source pins are:
+
+| Candidate source | Git blob | SHA-256 | Scope |
+|---|---|---|---|
+| `02_REGISTRY/claims.csv` | `609336b5d57600383ce141cc62cb1e7ec15b9e21` | `e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5` | Claim `D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001`, row 816 |
+| `01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md` | `99721fb50de66688564638f5f2b449a38675d7bd` | `592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7` | Claimed source locator does not resolve to a heading |
+| `03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean` | `032cb37242abebee30f6a8715b90a61235bec348` | `d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388` | Actual hopping operator and arithmetic scaffold |
+| `03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean` | `5b6ee2265a9abec3eacfb8905cd45d4ef3c95b73` | `7ab9550c7a25464131ec23a21e9eeac9f38eb651ee23c8d65296415aa593ab58` | Separately typed finite-difference operator |
+| `03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean` | `5d5193361fc5f4a564018a03f66b02e5ef1effd3` | `e0d69896a6e667a9a87380c281dc9adff196c0d4608a68b9515acfac999e1832` | Hodge-operator kernel theorem |
+| `02_REGISTRY/formal_support.csv` | `26500cdabd22dc6286b1741640420ca43690b886` | `e926db5c0b36d3e17c45b8e35b8b534530331f5b3339310e4943b3d6f6b0ea6e` | Explicit support exists for the Hodge kernel only |
+
+The claim and generated `ClaimMap` both leave the zero-mode obligation `OPEN`.
+`ArchiveCARDirac.lean` defines `carDirac` / `hoppingCarDirac` as a finite
+nearest-neighbour Clifford hopping matrix on `CARHilbertPoint n`; its module
+header explicitly distinguishes it from the Hodge/difference operator.
+`carDiracKernelDim := 16`, `car_zero_mode_independent_of_L`, and
+`archive_car_zero_mode_owner` establish only an integer constant and a size
+inequality. Their statements do not refer to `ker (carDirac n)` or its
+`Module.finrank`.
+
+The similarly numbered theorem
+`hodgeCarDirac_kernel_finrank (N) :
+Module.finrank ℝ (LinearMap.ker (hodgeCarDiracₗ N)) = 16` is for the distinct
+forward/backward finite-difference operator on the cubical cochain carrier.
+There is no operator equality or kernel-transport theorem connecting it to
+`carDirac`. `formal_support.csv` records this Hodge kernel at row 99 and has no
+`ArchiveCARDirac` or CAR zero-mode support row. Both modules being imported
+into `D0.All` does not identify their operators.
+
+The claimed Book locator `BOOK_06 / 06.spectral kernel dimension of the actual
+CAR Dirac operator` has no exact heading match in the source-candidate view;
+the current Book 06 contains no CAR/Dirac/zero-mode passage. A read-only
+independent scope review reached the same result and verified the claim's
+Lean-name mapping. No claim row, `formal_support` row, or operator definition
+was changed to manufacture a source correspondence.
+
+**Disposition:** retain this registry entry as unresolved pending an actual
+kernel theorem or a scoped counterexample for `carDirac` / `hoppingCarDirac`.
+The Hodge theorem remains a separate mathematical result and cannot discharge
+this claim. The Book locator, exact C0 membership, semantic acceptance, and
+all broader formalization/refactoring obligations remain open. This slice
+removes no scientific premise and reports no C0 coverage.
