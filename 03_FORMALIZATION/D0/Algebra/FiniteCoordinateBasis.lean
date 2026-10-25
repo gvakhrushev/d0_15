@@ -25,4 +25,17 @@ theorem finiteCoordinate_eq_sum_single (x : ι → K) :
     simp [hij]
   · simp
 
+/-- Each coordinate of a finite linear-map image is the corresponding sum
+over the images of the standard basis vectors. -/
+theorem finiteLinearMap_apply_eq_sum_single
+    (A : (ι → K) →ₗ[K] (ι → K)) (x : ι → K) (j : ι) :
+    A x j = ∑ i, x i * A (Pi.single i (1 : K)) j := by
+  have hExpand : A x = ∑ i, x i • A (Pi.single i (1 : K)) := by
+    calc
+      A x = A (∑ i, x i • Pi.single i (1 : K)) :=
+        congrArg A (finiteCoordinate_eq_sum_single x)
+      _ = ∑ i, x i • A (Pi.single i (1 : K)) := by simp
+  rw [hExpand]
+  simp only [Finset.sum_apply, Pi.smul_apply, smul_eq_mul]
+
 end D0.Algebra

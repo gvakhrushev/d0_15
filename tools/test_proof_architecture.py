@@ -1677,6 +1677,9 @@ class ProofArchitectureTests(unittest.TestCase):
 
         declarations = {row["name"]: row for row in inventory["declarations"]}
         basis = declarations["D0.Algebra.finiteCoordinate_eq_sum_single"]
+        linear_map_action = declarations[
+            "D0.Algebra.finiteLinearMap_apply_eq_sum_single"
+        ]
         hermitian = declarations["D0.Algebra.finiteHermitianPairing_adjoint"]
         weighted = declarations["D0.Algebra.finiteWeightedPairing_adjoint"]
         standard_axioms = {"Classical.choice", "Quot.sound", "propext"}
@@ -1685,10 +1688,20 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(basis["conclusion_whnf"], "x = ∑ i, x i • Pi.single i 1")
         self.assertEqual(set(basis["axioms"]), standard_axioms)
         self.assertFalse(any(binder["is_proposition"] for binder in basis["binders"]))
+        self.assertEqual(linear_map_action["module"], "D0.Algebra.FiniteCoordinateBasis")
+        self.assertEqual(
+            linear_map_action["conclusion_whnf"],
+            "A x j = ∑ i, x i * A (Pi.single i 1) j",
+        )
+        self.assertIn(
+            "D0.Algebra.finiteCoordinate_eq_sum_single",
+            linear_map_action["proof_dependencies"],
+        )
+        self.assertEqual(set(linear_map_action["axioms"]), standard_axioms)
         for consumer in (hermitian, weighted):
             self.assertEqual(consumer["declaration_kind"], "theorem")
             self.assertIn(
-                "D0.Algebra.finiteCoordinate_eq_sum_single",
+                "D0.Algebra.finiteLinearMap_apply_eq_sum_single",
                 consumer["proof_dependencies"],
             )
             self.assertEqual(set(consumer["axioms"]), standard_axioms)

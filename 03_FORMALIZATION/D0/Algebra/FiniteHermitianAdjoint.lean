@@ -60,15 +60,7 @@ theorem finiteHermitianPairing_adjoint
     (A : (ι → K) →ₗ[K] (ι → K)) (x y : ι → K) :
     finiteHermitianPairing (A x) y =
       finiteHermitianPairing x (finiteHermitianAdjoint A y) := by
-  have hAx : A x = ∑ i, x i • A (Pi.single i (1 : K)) := by
-    calc
-      A x = A (∑ i, x i • Pi.single i (1 : K)) :=
-        congrArg A (finiteCoordinate_eq_sum_single x)
-      _ = ∑ i, x i • A (Pi.single i (1 : K)) := by simp
-  have hAx_apply (j : ι) :
-      A x j = ∑ i, x i * A (Pi.single i (1 : K)) j := by
-    rw [hAx]
-    simp only [Finset.sum_apply, Pi.smul_apply, smul_eq_mul]
+  have hAx_apply (j : ι) := finiteLinearMap_apply_eq_sum_single A x j
   change (∑ j, star (A x j) * y j) =
     ∑ i, star (x i) * (finiteHermitianAdjoint A y) i
   rw [show (∑ i, star (x i) * (finiteHermitianAdjoint A y) i) =

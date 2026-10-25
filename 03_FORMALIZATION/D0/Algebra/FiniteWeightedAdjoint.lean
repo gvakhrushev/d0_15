@@ -46,15 +46,7 @@ theorem finiteWeightedPairing_adjoint (w : ι → K) (hw : ∀ i, w i ≠ 0)
     (A : (ι → K) →ₗ[K] (ι → K)) (x y : ι → K) :
     finiteWeightedPairing w (A x) y =
       finiteWeightedPairing w x (finiteWeightedAdjoint w A y) := by
-  have hAx : A x = ∑ i, x i • A (Pi.single i (1 : K)) := by
-    calc
-      A x = A (∑ i, x i • Pi.single i (1 : K)) :=
-        congrArg A (finiteCoordinate_eq_sum_single x)
-      _ = ∑ i, x i • A (Pi.single i (1 : K)) := by simp
-  have hAx_apply (j : ι) :
-      A x j = ∑ i, x i * A (Pi.single i (1 : K)) j := by
-    rw [hAx]
-    simp only [Finset.sum_apply, Pi.smul_apply, smul_eq_mul]
+  have hAx_apply (j : ι) := finiteLinearMap_apply_eq_sum_single A x j
   change (∑ j, w j * A x j * y j) =
     ∑ i, w i * x i *
       ((w i)⁻¹ * ∑ j, w j * A (Pi.single i 1) j * y j)
