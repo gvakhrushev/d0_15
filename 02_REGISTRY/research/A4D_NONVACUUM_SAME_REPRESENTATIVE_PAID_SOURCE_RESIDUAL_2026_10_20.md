@@ -10955,6 +10955,425 @@ the required dynamics/refinement. No new action or field constraint is
 introduced. GR_closed=false; positive_gr and raw216 remain open.
 
 
+## 7as. Realize the query with freely varying internal stages and its complete source
+
+25 October 2026; SAME PR334 / constitutive/native-programme-v1 owner,
+input080266469d0b6ccec8a0e02b78cb890884a11a20. The parent is7aq381,
+whose normalized query was still held fixed. Here that premise is
+replaced by a finite native implementation and a bound for EVERY raw
+query stage on its specified local support. The new implementation
+consumes the old exact all42 reporter, RC19 and the native compiler;
+it does not fit a new field functional, root or Info term. Source,
+query, middle, actual inverse, retained work and whole heat are composed
+below at ONE actual gain and the original paired-clock operator norm.
+
+This is a prospective construction of native finite words, with finite
+computable accuracy budgets, not an assertion that a particular enormous
+word has been emitted. Its physical input cut and support/role graph
+remain explicit. The result removes the fixed-query comparison premise
+on that graph; original X_N admission and exact finite stationary roots
+are not consequences of approximate source control.
+
+### Transport the exact reporter before compiling any operation
+
+Fix one of the owned finite meshes/charts and its exact read-only
+k-slot report P_h from COHORT_THEOREM RC1--RC3, with 0<=P_h<=I.
+Use the same weak-report collar 0<q<1/4, lambda_minus, field Jacobian
+and positive source coefficient g_h. Fixed boundary/collar data remain
+the task's coefficients, not extra varying source moments. The
+independent free-feature alphabet in7s177 is, after removing duplicate
+entries,
+
+    I, O_a;   O_a in {Z_j, A_(x,0), A_(x,15)}.
+
+It is linearly independent: the geometry Z's act on different factors;
+the matter pairs use different matrix units. Each O_a has trace zero;
+their trace Gram is diagonal with positive diagonal. This statement
+requires the actual independent feature chart of RC2/7s179, not merely
+a zero derivative along the primary ansatz.
+
+Replace one complete bank by a COMPLETE SIGN packet: for EACH a,
+physically prepare a fresh bank xi(Y), and read ONLY O_a on that bank.
+Every unused factor, reference, work bit and outcome is retained.
+There is no cloning map on an unknown bank. The source setting Y is
+shared by these actually executed preparers as in7ap, and all their
+independent local calibration rows below are retained. Separate banks
+are essential: A_(x,0) and A_(x,15) do not commute on one CAR input.
+
+There is a fixed real, full-column SIGN extractor. With
+B_+=( (I+O_a)/2 )^(1/2), B_-=( (I-O_a)/2 )^(1/2), take
+
+    U_a=[[B_+,-B_-],[B_-,B_+]] in SO(2 dim(bank)).
+    U_a(psi tensor|0>) has SIGN effects (I+/-O_a)/2.      (393)
+
+The two square roots commute and their squares sum to I; in the real
+spectral basis this is a direct sum of determinant-one rotations.
+It is identity on unused reference/helper/Spin. Compile it using7w/7aq's
+full-column alphabet; an exact finite native U_a is NOT asserted.
+For the present finite algebraic alphabet the target entries satisfy
+the compiler's FPTEAS hypothesis. No postselection or READY factory
+is required by this new implementation.
+
+Before any index/role selection, extract ALL features in EVERY packet.
+An original raw occurrence reads one specified SIGN coordinate of a
+DISTINCT complete packet. Never put two occurrences in one packet.
+The old read-only coefficient work defines a genuine table
+f(z_1,...,z_k) in[0,1]: condition on all raw SIGNs and take the actual
+normalized successful report probability of that old work. Its
+all-input scalar-success identity, including the full SIGN interface,
+justifies positivity for EVERY bit string, not only physically sampled
+means. It is a finite computable table on the same executable data.
+Average that table over the original ordered injections into n>=k
+packets, giving F_n(X) in[0,1]. The new exact SIGN law obeys
+
+    E_Y F_n=q_h(Y),
+    E[F_n | X_i=x] at primary =q0 for EVERY vector x.    (394)
+
+For the second assertion first symmetrize the old k-slot effect, which
+does not change its ordered-injection average. Because each occurrence
+uses a distinct packet, its one-slot classical conditional is AFFINE:
+c+sum_a c_a x_a. The corresponding old operator is cI+sum_a c_a O_a.
+RC19 says this operator is q0 I. Linear independence forces c=q0 and
+EVERY c_a=0. The absent-packet component of the n-slot conditional is
+also q0. This proves394, rather than using aggregate field criticality
+to cancel faults in independently selected extractor occurrences.
+It also proves that arbitrary local packet/source/extractor/fanout
+isometry variations have zero ideal first source at the primary.
+
+### A bounded table with native randomness and permanent labels
+
+Choose T bits and integers m(X) in[0,2^T] such that
+|m(X)/2^T-F_n(X)|<=2^-T. Compute the Boolean predicate u<m(X)
+reversibly, where u is a T-bit integer; retain the input, lookup work,
+carry bits and output until the actual outer inverse. A finite truth
+table gives a finite bounded-arity reversible Boolean circuit. This
+may be very large; no efficient-in-mesh claim is made.
+
+Each proposed fair bit is the XOR of r_c independent ACTUAL Golden
+coins, prepared by G on fresh blanks. Write b=p-p^2=p^3 in(0,1).
+Their parity bias is b^r_c. No measurements, rejection, reset or
+conditional-success division occurs. For every fixed SIGN array,
+product-law total variation gives the uniform table error
+
+    eta=2^-T+(T/2)b^r_c,
+    ||E_coin-E_uniform||op <=(T/2)b^r_c.                (395)
+
+The operator bound holds also on entangled logical inputs, since the
+conditional report operators satisfy 0<=F_u<=I. These actual coins
+are INSIDE the full echo, not the sealed post-code coins of7am.
+
+Before mixing anything, copy every extracted SIGN and EVERY individual
+physical coin into R retained computational labels. Copying is coherent
+CNOT fanout, not cloning an arbitrary state. Choose R larger than the
+number of label wires in the full support of ANY one classical macro,
+including its native routing, spectator and shared helper/Spin. The
+later ideal Boolean circuit NEVER READS OR WRITES these permanent labels.
+They are retained spectators until the outer inverse. The algorithm
+reads only each designated working SIGN; each working physical coin
+enters only its own XOR, and later logic reads the parity word. Thus
+all ideal suffix effects tensor identity on the permanent labels,
+even when a prefix fault makes their copies inconsistent. All
+scratch/garbage is retained. Gate
+arity is bounded independently of T and r_c. An odd permutation is
+made special orthogonal by tensoring one extra retained spectator bit;
+this changes neither its logical action nor any initialized assumption.
+At least three addressed ACTIVE bits are used. Compile each such
+SO permutation full-column with the owned native alphabet.
+
+At any ideal classical macro boundary its input isometry has form
+J=sum_x |code(x),work(x)> M_x, allowing arbitrary quantum M_x and
+entangled original input. The pulled-back terminal predicate Pi_t is
+diagonal. For a local anti-Hermitian insertion K on that macro support,
+
+    J^dagger [Pi_t,K] J=0.                              (396)
+
+For x=y its diagonal commutator is zero, also on the ignored environment.
+For x!=y a label outside the support distinguishes the codewords, so
+K cannot connect them. This proves operatorwise first-source neutrality
+of ALL ideal classical computation rows, including the threshold and
+report-writing stages. It does NOT cover the preceding first copies,
+coin preparation or quantum extractors; their rows are computed next.
+
+A raw native insertion inside a macro folds through that macro's suffix
+to an insertion on the same full macro support, with norm at most
+nu=max_t||Dg_t||. Thus396 applies to raw-stage comparisons too, after
+retaining the actual approximation error. Full-column native letters
+restore shared helper/Spin EXACTLY at their endpoints. Temporary raw
+coupling to them is allowed; it cannot propagate through a later ideal
+macro into an uncounted input. A merely initialized-helper identity
+would not justify this argument.
+
+### Every prefix row and every approximation error has a price
+
+Let L_pref be the TRUE expanded forward length of one complete packet's
+preparation, all extractors and initial fanout. Its source preparers
+produce the same product packet on each copy, at distance e_pkt from
+the exact split packet before the ideal extractors. Independent raw
+variations of these identical base words remain independent; they are
+not forced to vary together. A safe bound is e_pkt<=d_O e for d_O
+coordinate preparations of error e. Use n genuinely separate packets.
+
+The other k-1 packets' outcome laws differ from their ideal laws by
+at most2(k-1)e_pkt in l1. Apply394 and trace preservation to the
+conditional of ONE packet. A stage insertion has channel derivative
+norm at most2nu. The ideal ordered-injection part consequently gives
+4k(k-1)e_pkt nu/n. The FULL-table error eta in395 contributes at most
+2eta nu per packet stage. It has NO k/n factor: approximate uniform
+injection weights need not preserve exact permutation cancellation.
+Summing the actual n packet prefixes gives
+
+    |D Q|_packet <=[4k(k-1)L_pref e_pkt
+                                  +2n L_pref eta] nu.  (397)
+
+This includes a fault before the first SIGN or copy, even if it entangles
+all coordinates of that one packet and the shared helper. The conditional
+constant multiplies the identity on that entire local input and its
+work; trace preservation cancels it. Arbitrary multi-packet faults are
+not renamed packet-local faults.
+
+Let L_coin be the expanded length of ONE Golden coin/fanout module.
+For a fault in that module, average the other r_c-1 coins of its parity
+group. Their product bias is b^(r_c-1). The resulting conditional
+operator differs from an operator constant on the current module by
+at most b^(r_c-1)/2. Its constant part cancels by
+J^dagger DJ+(DJ)^dagger J=0. The module and its helper do not act on
+logical data. Hence each such stage contributes at most
+b^(r_c-1)nu, and the complete coin-prefix bound is
+
+    |D Q|_coin <=T r_c L_coin b^(r_c-1)nu.              (398)
+
+In particular a freely varying single Golden coin is NOT stationary;
+the other actually prepared coins suppress its source. Initial fanout
+errors belong here, not to396. Faults jointly reaching s coins would
+instead retain b^(r_c-s); such an enlarged support needs its own budget.
+
+For compilation let Delta=sum_m ||Uhat_m-U_m||, summing ALL approximated
+extractor, fanout and Boolean macros in this cohort. Exact source
+preparers and exact G coins are kept in both comparison products.
+Let M_raw be the TRUE total number of their primitive stages, safely
+including the source stages and both legs of the full encoder.
+Every prefix/suffix boundary comparison has error at most Delta.
+Folding an insertion to its macro boundary gives a norm-nu insertion
+there; telescoping its surrounding products yields derivative error
+at most4Delta nu in the report effect. Summation gives4M_raw Delta nu.
+The length of a macro cannot replace M_raw in this estimate.
+Thus for freely varying query and packet/coin stages on these supports,
+
+    |D Q|<= epsilon_q nu,
+    epsilon_q=4k(k-1)L_pref e_pkt+2n L_pref eta
+              +T r_c L_coin b^(r_c-1)+4M_raw Delta.      (399)
+
+No normalized-effect constraint DE=0 is imposed. Only the IDEAL
+classical-work contribution was zero; all actual query rows and all
+approximation debts are present in399. At the actual native base the
+circuit is unitary without postselection, so gamma=1 and READY=I.
+There is no residual amplifier-failure row or borrowed old success rate.
+
+### Substitute the entire query into the full Book source
+
+Use the actual7aq middle controlled by the new report bit, with its
+three target bits, delta, d in[3/2,2], and its full raw length L_mid.
+All previous registers, unused columns and inverse stages stay in the
+carrier. All completed cohorts are private and identity on protected
+oldRIGHT and shared helper/Spin on ALL columns. At the actual base
+compute q_j from THIS circuit, not the ideal table, and set
+s_j=1-d_j q_j, a_j=2d_j/s_j, S=product s_j,
+w=r zeta S^2/(1-zeta+zeta S^2), A=sum a_j gbar_j, Gamma=w A.
+Choose the finite errors within the inherited strict q<1/4 collar.
+Then s>=1/2 and the7aq bounds on a, gain and secants still hold.
+
+The exact return is S I_r. The scalar-corner logdet differential
+therefore multiplies399 by w a_j. Retain7aq379a's conservative
+16w a_j delta M_raw target-mixing error, and379's free
+predicate-preserving middle source. Generated states/inverses use the
+same whole-action terminal adjoint. The ENTIRE new paired heat uses
+its actual N,d and380, including every new label/coin/work column.
+Consequently the fixed-normalized-query term in381 is replaced by
+
+    ||D B_M||_(local graph,Dirac op dual)/Gamma_M
+      <=sqrt(2)/A_M sum_j a_j[
+             epsilon_q,j+4delta_j L_mid,j
+                         +16delta_j M_raw,j]
+         +sqrt(2)N L_N(beta)/Gamma_M.                  (400)
+
+The graph frees EVERY raw query stage on its declared macro support,
+every raw packet/coin preparation stage on its declared local support,
+and all predicate-preserving middle stages. The original input cut,
+role/inverse constraints and retained-record interface remain. Taking
+a stage projection contracts the maximum-edge norm; the owned exact
+identity nu=sqrt(2)||D Dirac_pair|| gives400 without an arbitrary norm
+weight. Additional intercohort/interpacket supports, independently free
+reverse words, moving cuts/pointers and new physical action terms retain
+their genuine sources.
+
+The budgets in400 are attainable simultaneously. First fix mesh, n,
+the source/feature layout and finite table F_n. Let u tend to infinity,
+choose T=O(u), r_c=O(u) with b^r_c<=exp(-2u), source error exp(-u),
+and every bounded-support compiler error sufficiently below exp(-u).
+The table has a fixed finite number of input rows; its reversible
+threshold width and number of bounded-arity macros grow polynomially
+in u. All source/extractor dimensions and macro supports are fixed.
+The inherited fixed-dimension compiler has polylogarithmic raw length.
+Thus L_pref,L_coin,M_raw and the sum defining Delta have polynomial
+factors in u, while all four terms of399 tend to zero exponentially.
+This joint choice avoids making a previously fixed source error times
+a later, arbitrarily longer extractor blow up. Choose epsilon_q,j<=2^-j,
+then choose the stationary middle so that
+ delta_j(L_mid,j+4M_raw,j)<=2^-j. All inverse/padding stages are real.
+An old cohort is never recompiled. Finite precision searches terminate
+on FPTEAS source data by the owned compiler; computation is not declared
+free physical work if its implementation is included in the process.
+
+The same actual gbar_j used by7al/7aq is preserved: split packets change
+neither the ideal polynomial q_h(Y) nor its field covector. Thus the
+existing diagonal choice A_M>=c M^(63/64) applies. The numerator query
+and middle sums are bounded, S^2>=4^-M and Gamma>=r zeta4^-M A.
+The same whole factorial heat bound with the NEW true N>=M makes the
+last term of400 tend to zero. This proves joint normalized asymptotic
+stationarity on this larger graph; no small absolute gain is mistaken
+for a small normalized source.
+
+### Keep the off-shell field/readout application and its actual errors
+
+The exact split implementation satisfies E_Y F_n=q_h(Y) throughout the
+original regular feature chart, not just on the primary solutions.
+For the dyadic/coin table error, write P=n d_O and
+T_l=max_a sup_Y ||D_Y^l mu_a||_(V_h^l to R), equivalently using the
+output maximum norm. These are the actual declared field-norm bounds.
+Differentiating the product Bernoulli law gives the explicit bounds
+
+    C0: eta,
+    C1: eta P T1,
+    C2: eta(P^2 T1^2+P T2),
+    C3: eta(P^3 T1^3+3P^2 T1 T2+P T3).                 (401)
+
+Each differentiated Bernoulli factor has l1 derivative norm1; there
+are at most P^l ordered choices. No inverse probability margin occurs.
+Fixed quantum compiler error contributes at most2Delta times the
+finite derivative norms of the actual smooth source density, through
+order3. For finite native node catalogues use the actual state errors,
+matched inventories and retained coordinate-separation margins of7al;
+do not claim a differentiable selector of discrete words. Include every
+fresh coordinate bank in the new decoder/readout error constants.
+Choose these errors below the inherited node/secant budgets, with the
+new exp(+-4u_j) collar from383. The original source-prefix decoder can
+still read its designated genuine coordinate bank and the actual new
+clock positions; no inaccessible ideal field is substituted. Its local
+norm constants are recomputed, not borrowed from a smaller carrier.
+Equation401 preserves the chosen polynomial q_h and its jets; RC2
+only identifies its P5/C8 FIRST JET on the primary family with the
+Palatini–CAR source. It does not identify q_h off that family with
+7al's different open-chart target. Any application to7al must use the
+SAME target or an already proved transport and retain EVERY old
+q_h-to-target consistency/source error as well as the new401 errors.
+Under that pre-existing target/transport and its refinement budgets,
+the implementation preserves the C3-dual consumer and lambda_minus.
+No new off-shell identification or exact finite root follows here.
+
+### Composition with the concurrently published internal field catalogue
+
+Inputc00be1c6 adds7ar384--392 in the SAME owner. Its new same-point
+cofield389--390 uses a controlled catalogue of distinct nearby source
+branches and an actual mean-readout differential. Preserve that entire
+result and its measured lift norm. The present construction can supply
+its previously fixed query: the classical-work neutrality, Golden-coin
+bound and compiled query-effect bound hold on ALL source inputs, also
+on its coherent request/catalogue input. Use that catalogue's SAME
+report target/table and include the new finite table/compiler errors
+in its per-branch query/source budget.
+
+The primary packet-prefix cancellation397 uses coincident independent
+packets and the exact critical conditional. It is NOT a bound for all
+key-controlled preparers of7ar. Its distinct off-primary branches retain
+7ar391's key equation, genuine first-source consistency error and any
+additional controlled-prefix/cross-packet source. Nor does the existence
+of7ar's matrix tangent387 establish its elementary-gate admission.
+Thus the two results have explicit compatible query maps and a named
+remaining source/admission application; they are not declared a complete
+joint physical closure by adjoining their separately valid estimates.
+
+**Parent substitution.** The query in7aq is now an internally executed
+source/extraction/randomness/classical computation, with ALL its local
+raw first-source rows bounded in400. The proof consumes the same exact
+nonvacuum all42 reporter and source identity and composes them with
+native controller words and the whole Book price. It does not assume
+the computed query remains invariant under those variations. The
+remaining physical application is the original admission of this
+execution/cut/support graph and its required stationary/refinement
+interpretation, including any genuinely additional native directions.
+This is a constructive enlargement of the covered execution, not a
+claim that no such directions exist. GR_closed=false; positive_gr and
+raw216 remain open.
+
+### Bounded exact controls for the new substitution
+
+The following exact calculation tests the whole SIGN-vector conditional,
+the failure of unsymmetrized occurrence cancellation, noncommuting
+material SIGN extraction, local-copy neutrality and its unprotected
+negative control, and the independent Golden-parity derivative. It
+does not enumerate the final compiled GR query. No old native/root/
+READY/128/Lean calculation is replayed.
+
+```python
+from itertools import product, permutations, combinations
+import sympy as S
+# Whole SIGN-vector conditional, with distinct packet for every occurrence.
+a,b,q0,c=S.Rational(1,3),-S.Rational(1,4),S.Rational(1,8),S.Rational(1,32)
+xs=list(product((-1,1),repeat=2))
+def prob(x): return (1+a*x[0])*(1+b*x[1])/4
+def table(X):
+    return q0+c*sum((X[i][0]-a)*(X[j][1]-b) for i,j in permutations(range(3),2))/6
+values=[table(X) for X in product(xs,repeat=3)]
+assert min(values)>0 and max(values)<1
+for fixed in xs:
+    conditional=sum(prob(y)*prob(z)*table((fixed,y,z)) for y,z in product(xs,repeat=2))
+    assert conditional==q0
+# Unsymmetrized cancellation is not enough for independently varied occurrences.
+t1,t2,t=S.symbols('t1 t2 t')
+unsym=t1*t2-2*a*t1+a*a
+assert S.diff(unsym.subs({t1:t,t2:t}),t).subs(t,a)==0
+assert S.diff(unsym,t1).subs({t1:a,t2:a})==-a
+# Noncommuting material features and exact full-column real SIGN extractor.
+A=S.Matrix([[0,1,0],[1,0,0],[0,0,0]])
+B=S.Matrix([[0,0,0],[0,0,1],[0,1,0]])
+assert A*B!=B*A
+assert S.Matrix([list(S.eye(3)),list(A),list(B)]).rank()==3
+Pp=(A*A+A)/2;Pm=(A*A-A)/2;Pz=S.eye(3)-A*A
+Bp=Pp+Pz/S.sqrt(2);Bm=Pm+Pz/S.sqrt(2)
+U=Bp.row_join(-Bm).col_join(Bm.row_join(Bp))
+assert S.simplify(U.T*U)==S.eye(6) and S.simplify(U.det())==1
+assert S.simplify(Bp.T*Bp-(S.eye(3)+A)/2)==S.zeros(3)
+# Three retained labels: every two-wire local real skew generator is neutral.
+J=S.zeros(16,2);J[0,0]=1;J[15,1]=1
+Pi=S.diag(*[i&1 for i in range(16)])
+checked=0
+for support in combinations(range(4),2):
+    for v,w in combinations(range(4),2):
+        K=S.zeros(16)
+        for bits in product((0,1),repeat=2):
+            rest=[i for i in range(4) if i not in support]
+            def idx(x):
+                digit=[0]*4
+                for k,wire in enumerate(rest): digit[wire]=bits[k]
+                for k,wire in enumerate(support): digit[wire]=(x>>(1-k))&1
+                return sum(digit[k]<<(3-k) for k in range(4))
+            i,j=idx(v),idx(w);K[i,j]=1;K[j,i]=-1
+        assert J.T*(Pi*K-K*Pi)*J==S.zeros(2)
+        checked+=1
+K=S.Matrix([[0,-1],[1,0]]);P=S.diag(0,1)
+assert P*K-K*P!=S.zeros(2) # unprotected query is not neutral
+# Exact parity and its independent first-coin response, no discarded branches.
+u,v,w=S.symbols('u v w')
+parity=sum(S.prod((1+z*d)/2 for z,d in zip(bits,(u,v,w)))
+           for bits in product((-1,1),repeat=3) if S.prod(bits)==1)
+assert S.expand(parity-(1+u*v*w)/2)==0
+assert S.diff(parity,u).expand()==v*w/2
+p=(S.sqrt(5)-1)/2
+assert S.simplify(p-p*p-p**3)==0
+print('PASS complete-vector conditional, unsymmetrized hostile control, real SIGN extractor,',checked,'local-copy controls, and Golden parity source')
+```
+
+
 ## 8. Reproduction
 
 Run from this directory:

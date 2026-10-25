@@ -10795,3 +10795,96 @@ claims889/assumptions31/aliases58/formal_support183/Lean closure918;
 assembly54active/98results/5discharged/22obligations,
 scientific_promotion=false. This is local structural validation, not
 remote CI, accepted physical GR or retirement of the open owner.
+
+
+### 25 October: discharge the fixed normalized query by a paid internal execution
+
+Phase: native realization / complete source composition. SAME PR334,
+constitutive/native-programme-v1; input080266469d0b6ccec8a0e02b78cb890884a11a20.
+The exact parent premise is7aq381's fixed normalized-query effect.
+Consume the exact all42 reporter/RC19, the full7s177 physical alphabet,
+7w full-column native compiler and7aq middle/heat/gain. Source and
+variation conventions are the same full Book H+J paired-clock operator
+norm, actual protected rank, lambda_minus and all42 field map.
+
+Primary7as393--401 replaces that premise with a concrete finite-word
+construction: independent physically generated bank per feature,
+all SIGN extraction before role selection, complete bounded table,
+native Golden-XOR randomness, reversible Boolean computation and
+permanent read-never labels. Different occurrences read distinct whole
+packets. Linear independence of the physical alphabet transports RC19
+into a constant conditional on EVERY full SIGN vector; this is the
+parent substitution that covers individual source/extractor/fanout
+rows, not a repetition of aggregate field stationarity.
+
+All actual query rows are retained. The bound399 includes packet-source
+error, the full-table2nL_pref eta term, T r_c L_coin b^(r_c-1), and
+4M_raw Delta with real primitive counts and summed full-column errors.
+No exact dyadic injection law, free fair coin, uncharged copying,
+postselection or fixed normalized query is assumed. Gamma is recomputed
+with gamma=1 and actual q. Equation400 composes the result with7aq's
+free predicate-preserving middle, target-mixing error and complete new
+heat, all at the same actual gain. Joint precision/length choices close
+its budgets;401 and the retained7al node/secant bounds preserve the
+original off-shell source/readout consumer at its own hypotheses.
+
+Write paths: existing primary7as and this brief only. No new task,
+claim, governance change or assembly promotion. Smallest decisive check:
+exact complete-vector conditional plus unsymmetrized negative control;
+real noncommuting SIGN extraction; every two-wire skew insertion in a
+four-wire retained-label fixture; unprotected-query hostile control;
+exact three-coin parity and independent first-coin derivative. Original
+root/native128/READY/compiler/Lean owners are reused, not replayed.
+
+Result-template boundary: analytic supporting application on
+native-programme-v1, parent7aq381, method explicit source/interface
+transport. The source/cut/support/role graph has NOT been identified
+with all original X_N. Actual physical admission, any extra independent
+native directions or action terms, and exact finite on-shell/refinement
+interpretation remain. The existing raw-terminal question and its owner
+are unchanged. This result does not retire the task or claim physical GR.
+
+Reviewed proof before integration:18181 UTF-8bytes, SHA256
+f1b1c6b2842820b8a8968610a9420e4b13c1bba04bdd99e041d340e24bd1389b.
+Independent read-only reviewers native_continuation_map, native_valuation_map and
+physical_query_binding ACCEPT this exact proof at the stated scope.
+Their hostile review required permanent labels to be READ-NEVER and
+WRITE-NEVER spectators until the outer inverse; the algorithm reads
+only designated working SIGNs and parities. This prevents arbitrary
+fanout faults from leaking through inconsistent extra copies. The
+correction is included in the pinned proof. The earlier compressed-only
+CAR concern was resolved with the newer full-physical7p153/7s177--179
+and COHORT_THEOREM325--337, not by weakening the upstream source domain.
+
+Complete7as slice including controls:22614 UTF-8bytes, SHA256
+7c09c52e26d294f3402d0fdc6e7261e923359fe5f6c22938f82de9da81286a3a.
+Embedded checker INCLUDING its final newline:2674 UTF-8bytes, SHA256
+57ed48cb2b2ef537c7edb41cd1804c3904084857a1e44faeb326d551ea69b2df.
+Author run: Python3.11.9 / SymPy1.12.1, exit0. All exact controls pass,
+including36 local skew generators. This is a narrow mathematical
+substitution test, not an emitted enormous GR compiler word or an
+independent physical acceptance. Both prior files are preserved as an
+exact prefix/insertion: removing only this brief tail and primary7as
+restores integration inputc00be1c6 byte-for-byte. GR_closed=false.
+
+Concurrent remote c00be1c6 adds its own7ar internal same-point cofield.
+It is preserved byte-for-byte. Our proof is renumbered7as393--401; the
+new compatibility paragraph distinguishes the all-input query-core
+bounds from the packet-prefix bound, which cannot be transferred to
+its different off-primary controlled source without a new budget.
+The same-target and original physical admission premises remain.
+Final integrated proof 19488 UTF-8bytes/SHA256
+94a1bd9832cc828a0e10d7fdb788577640113cd6a5b904db10ff51106eff8724.
+
+Affected structural gates PASS: work, agent protocol, assembly and
+repository(warnings0). This is local validation, not remote CI or
+physical acceptance. The final scope clarification and integration
+introduce no additional mathematical/checker input; textual and exact
+preservation checks are repeated on the integrated files.
+
+Independent final integration review: native_continuation_map and
+native_valuation_map both ACCEPT the exact19488-byte proof
+94a1bd9832cc828a0e10d7fdb788577640113cd6a5b904db10ff51106eff8724.
+Removing the compatibility paragraph and reversing only section/equation
+renumbering restores the previously accepted18181 bytes exactly.
+No independent calculation replay or physical promotion is claimed.
