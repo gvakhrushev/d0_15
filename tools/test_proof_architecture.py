@@ -1369,10 +1369,10 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertTrue(any("archiveRoleFourierInversion" in query
                             for query in case["queries"]))
 
-    def test_car_zero_mode_cold_start_keeps_hopping_and_hodge_scopes(self) -> None:
+    def test_car_hodge_cold_start_keeps_distinct_operator_claims(self) -> None:
         case = next(
             item for item in cold_start.CASES
-            if item["id"] == "car-hopping-zero-mode-vs-hodge-kernel"
+            if item["id"] == "car-hopping-vs-hodge-operator-claims"
         )
         hits_by_query = proof.full_text_search_many(
             proof.ROOT, case["queries"], limit=18
@@ -1383,17 +1383,30 @@ class ProofArchitectureTests(unittest.TestCase):
             status = cold_start._required_source_status(query_pairs, {"path": path})
             self.assertTrue(status["found"], f"cold-start search missed {path}")
 
-        support_modules = {
-            row["lean_module"] for row in proof.load_dataset(proof.ROOT)["formal_support"]
-        }
+        dataset = proof.load_dataset(proof.ROOT)
+        support_modules = {row["lean_module"] for row in dataset["formal_support"]}
         self.assertIn("D0.Geometry.ArchiveHodgeCARDiracKernel", support_modules)
+        self.assertIn("D0.Geometry.ArchiveHodgeCARDiracSquare", support_modules)
+        self.assertIn("D0.Geometry.ArchiveHodgeCARDiracShell", support_modules)
         self.assertNotIn("D0.Geometry.ArchiveCARDirac", support_modules)
-        self.assertIn("remains OPEN", case["scope_review"])
-        self.assertIn("distinct", case["scope_review"])
-        self.assertIn("cannot discharge the CAR claim", case["scope_review"])
+        claims = {row["claim_id"]: row for row in dataset["claims"]}
+        for claim_id in (
+            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001",
+            "D0-ARCHIVE-CAR-DIRAC-SQUARE-001",
+        ):
+            self.assertEqual(claims[claim_id]["lean_status"], "OPEN")
+        self.assertEqual(
+            claims["D0-SPATIAL-HODGE-SHELL-OPERATOR-001"]["lean_status"],
+            "LEAN_PROVED",
+        )
+        self.assertIn("remain OPEN", case["scope_review"])
+        self.assertIn("no operator intertwiner", case["scope_review"])
         self.assertIn("formal_support.csv", case["scope_review"])
         self.assertIn("no exact heading", case["scope_review"])
-        self.assertTrue(any("actual carDirac" in query for query in case["queries"]))
+        self.assertIn("L=2 shell rank is 48", case["scope_review"])
+        self.assertTrue(any("actual" in query and "carDirac" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("hodgeCarDirac_sq" in query for query in case["queries"]))
         self.assertTrue(any("hodgeCarDirac_kernel_finrank" in query
                             for query in case["queries"]))
 

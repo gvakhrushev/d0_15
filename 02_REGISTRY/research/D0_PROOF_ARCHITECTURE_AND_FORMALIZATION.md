@@ -5316,12 +5316,14 @@ SHA-256 `cd4d6a4bf092088bf0d6a554c2d38f7ab6516fa7bcaaddbee4a87ffada2a0dbb`.
 Each inventory builds and imports only its named owner module; neither invokes
 the full `D0.All` Ready replay.
 
-Cold-start case `car-hopping-zero-mode-vs-hodge-kernel` now retrieves the claim,
-both operator modules, `ClaimMap`, the primary crosswalk, and both compiled
-inventories in the bounded search window. Its focused test separately reads
-`formal_support.csv` as structured data and confirms that support is recorded
-for the Hodge-kernel module only. This is a retrieval negative control, not an
-automatic semantic acceptance; the focused case passes.
+Cold-start case `car-hopping-vs-hodge-operator-claims` retrieves both CAR
+claims, the CAR and Hodge operator modules, `ClaimMap`, the source crosswalk,
+and the narrow compiled inventories in the bounded search window. Its focused
+test separately reads `formal_support.csv` as structured data and confirms
+that support is recorded for the Hodge square, kernel, and shell modules, but
+not `ArchiveCARDirac`; it also checks the two OPEN CAR statuses and the
+independently LEAN_PROVED shell status. This is a retrieval negative control,
+not an automatic semantic acceptance; the focused case passes.
 
 The claimed Book locator `BOOK_06 / 06.spectral kernel dimension of the actual
 CAR Dirac operator` has no exact heading match in the source-candidate view;
@@ -5336,3 +5338,100 @@ The Hodge theorem remains a separate mathematical result and cannot discharge
 this claim. The Book locator, exact C0 membership, semantic acceptance, and
 all broader formalization/refactoring obligations remain open. This slice
 removes no scientific premise and reports no C0 coverage.
+
+### Candidate C0 source-unit reconciliation: CAR square and Hodge operator (25 October 2026)
+
+This is a source/operator crosswalk, not acceptance of the square claim or a
+C0 freeze. The inspected source snapshot is PR head
+`02a5a6e2c734614cfaa0bdfe16bd90cf53714053`; the exact source identities are:
+
+| Candidate source | Git blob | SHA-256 | Scope |
+|---|---|---|---|
+| `02_REGISTRY/claims.csv` | `609336b5d57600383ce141cc62cb1e7ec15b9e21` | `e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5` | Row 815 keeps `D0-ARCHIVE-CAR-DIRAC-SQUARE-001` OPEN; row 816 keeps the zero-mode claim OPEN; row 868 keeps the spatial Hodge shell claim LEAN_PROVED |
+| `01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md` | `99721fb50de66688564638f5f2b449a38675d7bd` | `592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7` | `BOOK_06 / 06.spectral` has no exact heading match for the asserted CAR square |
+| `03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean` | `b86e4246ad91a85e3fbc154def85b8b9f14e5c09` | `53337b3ce2d6490bc60e789f2e118ef397de775ef170fbe39fe2f24631e90c4b` | Row 1948 maps the square claim to the CAR arithmetic scaffold; row 2107 independently maps the proved spatial-shell claim |
+| `03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean` | `032cb37242abebee30f6a8715b90a61235bec348` | `d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388` | Lines 29–35 distinguish the self-adjoint hopping matrix from the Hodge operator; lines 467–495 define the square and kernel arithmetic scaffolds |
+| `03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean` | `5b6ee2265a9abec3eacfb8905cd45d4ef3c95b73` | `7ab9550c7a25464131ec23a21e9eeac9f38eb651ee23c8d65296415aa593ab58` | Defines `hodgeCarDirac` on cubical cochains and explicitly distinguishes it from `carDirac` |
+| `03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean` | `f387d8badc868eed5ff3eba872fafd560b3b3b20` | `d504f2c5bd4959e779cca38ea1d484bce9aafbf31d5aea0fa7c116c920f1df7d` | Proves the Hodge square and oriented difference formula; records the L=2 graph-diagonal factor |
+| `03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean` | `5d5193361fc5f4a564018a03f66b02e5ef1effd3` | `e0d69896a6e667a9a87380c281dc9adff196c0d4608a68b9515acfac999e1832` | Proves the 16-dimensional kernel for the Hodge operator |
+| `03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracShell.lean` | `631db44c0b5fd3c33d2376768c3fb400352764f4` | `870d9d4b1f849a2fda7465bc157ba561432d67bd1a22098af75da9d780930caa` | Proves the Hodge shell, its large-L rank, energy limit, and the L=2 rank control |
+| `03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean` | `9ff627b325126bfefc19e3903eb73faa0224599f` | `4c7004ee4422c8d020bc58230b50abe9213db408f4440e7876e5ab873503b5fa` | Packages the spatial-shell operator claim and role-preserving symmetry results |
+| `02_REGISTRY/formal_support.csv` | `26500cdabd22dc6286b1741640420ca43690b886` | `e926db5c0b36d3e17c45b8e35b8b534530331f5b3339310e4943b3d6f6b0ea6e` | Rows 90, 99, and 101 support Hodge square, kernel, and shell modules; no `ArchiveCARDirac` support row exists |
+
+The mapped `ArchiveCARDirac` declarations do not state a square of the
+operator. `carDiracSquareScalarSectorFactor_eq_fock_dim` elaborates only to
+`carDiracSquareScalarSectorFactor = Fintype.card ArchiveFockState`, and
+`archive_car_dirac_square_owner` elaborates only to the two equalities that
+those quantities are 16. Both have axiom closure
+`Classical.choice`, `Quot.sound`, and `propext`; neither mentions
+`carDirac`, `hoppingCarDirac`, or an operator composition. The claim row itself
+describes the massless owner as `hodgeCarDirac`, so these mapped declarations
+cannot serve as its operator proof either.
+
+The independent Hodge results do establish substantial parts of the written
+target on their own typed cochain carrier:
+
+* `hodgeCarDirac_sq` proves `hodgeCarDirac N (hodgeCarDirac N ψ) =
+  cochainDifferenceLaplacian N ψ` for every `N` and cochain `ψ`.
+  `cochainDifferenceLaplacian_eq_backward_forward` expands this as the sum of
+  negative backward-after-forward differences over the four roles. Its
+  recorded axiom closure includes `Classical.choice`, `Quot.sound`,
+  `propext`, and the two existing `native_decide` CAR anticommutator proof
+  constants.
+* `hodge_difference_diagonal_double_metric_at_l2` proves that the L=2
+  oriented point-mass diagonal is twice the undirected graph-metric diagonal.
+  This is a factor-two normalization mismatch for an exact graph-operator
+  identification under the current conventions; it must be reconciled in the
+  target statement, not silently normalized away.
+* The separately inventoried kernel theorem gives Hodge kernel finrank 16.
+  For `3 ≤ archiveFibers N`, the spatial shell has finrank 96 and the squared
+  Hodge operator acts there by `shellEnergy²`; its energy tends to `2*pi`.
+  At L=2, the sine modes collapse and the cosine shell has rank 48.
+  The shell restriction requires the A-axis-preserving subspace; role
+  transports that move A are explicitly not covered by that invariance.
+
+These are Hodge/cochain theorems, while `carDirac` / `hoppingCarDirac` is a
+matrix operator on `CARHilbertPoint n = ArchiveRolePhasePoint n ×
+ArchiveFockState`. The carrier sets have a pointwise correspondence, but no
+proved linear operator intertwiner transports the Hodge square, kernel, or
+shell statements to the hopping matrix. The theorem
+`hoppingRoleTransport_commutes_hoppingCarDirac` proves a symmetry commutation
+only; it is not a square or kernel theorem. Thus the exact graph normalization
+and typed map needed by the registered square target remain unresolved, and
+the actual hopping-operator square/kernel are also unproved if that operator
+is intended. `D0-SPATIAL-HODGE-SHELL-OPERATOR-001` remains a separate proved
+claim and does not close `D0-ARCHIVE-CAR-DIRAC-SQUARE-001` by registry status
+alone.
+
+Seven narrow compiled inventories are pinned beside the prior CAR and Hodge
+kernel inventories. All use Lean 4.30.0 and the unchanged Lean-source digest
+`ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db`; the CAR
+scaffold inventory was generated from clean snapshot `02a5a6e2...`, and the
+six subsequent inventories record `worktree_dirty=true` because earlier
+inventory JSON files were present. Their exact SHA-256 values are:
+
+| Inventory | SHA-256 |
+|---|---|
+| `car_dirac_square_claim_declarations_2026-10-25.json` | `feec6ad683826f291bf96dc16776b321fb7261a55c0ad6edd009a0b5d8427524` |
+| `hodge_car_dirac_square_declaration_2026-10-25.json` | `3b1fae9af8586afe3ce8bbfe984a45cf2cf64e3383535b838f65f75b0b2612de` |
+| `hodge_square_backward_forward_declaration_2026-10-25.json` | `12886618d9a5fe4b7fab837cf1d7be60a096f2440d49156eb3f9ba839f6754e2` |
+| `hodge_car_dirac_l2_normalization_declaration_2026-10-25.json` | `d40be0ddfeb0f82f01e0280f654b9222ae34c88bf5213ae171b427f2d289e644` |
+| `hodge_spatial_shell_claim_declarations_2026-10-25.json` | `1c0c418960a0e263d05dc020e329b9ff14ea90826e36850432441ea43c55a096` |
+| `hodge_shell_energy_limit_declaration_2026-10-25.json` | `c8ae36d12687b13ec628383349d15f8182d1e03a4460acfbab1d2b66708be2fb` |
+| `hodge_shell_rank_l2_control_declaration_2026-10-25.json` | `e09f6f27c111c8bd65f51661e422a4cbebde8b6785c52468059f2a781adc3265` |
+
+The cold-start retrieval case now covers both open CAR claims, the distinct
+Hodge operator results and all seven inventories. Its test reads
+`formal_support.csv` as structured data, checks that both CAR claims remain
+OPEN while the spatial-shell claim remains LEAN_PROVED, and verifies the
+operator-scope statements. This is a source-retrieval control, not semantic
+claim acceptance. The narrow inventories query only their named public import
+roots; this slice does not run the full `D0.All` Ready replay.
+
+**Disposition:** keep `D0-ARCHIVE-CAR-DIRAC-SQUARE-001` OPEN. The Hodge square,
+kernel and shell results are genuine proved mathematics at their declared
+scope. The original source-unit/normalization reconciliation and any typed
+transport to the intended registered operator remain to be supplied before
+the square target can be accepted. No claim row, `formal_support` row,
+operator definition, or physical interpretation is changed here; this closes
+no C0 or GR obligation.

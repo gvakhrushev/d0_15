@@ -1,0 +1,144 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "02a5a6e2c734614cfaa0bdfe16bd90cf53714053",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db",
+  "collector_sha256": "81bee6c4445a8de3a3626746cf7eb7c7e000e429cf4b3d1a33ec250a5948ed66",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.spatial_shell_rank_l2"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "Module.finrank ℝ ↥(Submodule.span ℝ (Set.range fun p => D0.Geometry.shellCosCochain p.1 p.2)) = 48",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 79,
+            "line": 691
+          },
+          "start": {
+            "column": 0,
+            "line": 685
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 685
+          },
+          "start": {
+            "column": 8,
+            "line": 685
+          }
+        }
+      },
+      "elaborated_type": "Module.finrank ℝ ↥(Submodule.span ℝ (Set.range fun p => D0.Geometry.shellCosCochain p.1 p.2)) = 48",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracShell",
+      "name": "D0.Geometry.spatial_shell_rank_l2",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "Bool.true",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.SpatialAxis",
+        "D0.Geometry.card_archive_fock_state",
+        "D0.Geometry.instFintypeSpatialAxis",
+        "D0.Geometry.shellCosCochain",
+        "D0.Geometry.shellCosCochain_linearIndependent_l2",
+        "D0.Role",
+        "Decidable.decide",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin.fintype",
+        "Fintype.card",
+        "Fintype.card_prod",
+        "HMul.hMul",
+        "Membership.mem",
+        "Module.finrank",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Prod",
+        "Prod.fst",
+        "Prod.snd",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instNontrivial",
+        "Real.semiring",
+        "Semiring.toModule",
+        "Set.range",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Submodule.span",
+        "Subtype",
+        "commRing_strongRankCondition",
+        "congrArg",
+        "finrank_span_eq_card",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqNat",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instMulNat",
+        "instOfNatNat",
+        "of_decide_eq_true"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.SpatialAxis",
+        "D0.Geometry.shellCosCochain",
+        "Eq",
+        "Membership.mem",
+        "Module.finrank",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Prod",
+        "Prod.fst",
+        "Prod.snd",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "Semiring.toModule",
+        "Set.range",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Submodule.span",
+        "Subtype",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracShell.lean"
+    }
+  ]
+}

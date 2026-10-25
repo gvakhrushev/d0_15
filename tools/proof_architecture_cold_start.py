@@ -192,14 +192,25 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
-        "id": "car-hopping-zero-mode-vs-hodge-kernel",
+        "id": "car-hopping-vs-hodge-operator-claims",
         "queries": [
-            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 actual carDirac hoppingCarDirac kernel dimension",
-            "hodgeCarDirac_kernel_finrank Hodge difference constant Fock fibre 16",
+            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 D0-ARCHIVE-CAR-DIRAC-SQUARE-001 actual carDirac hoppingCarDirac",
+            "hodgeCarDirac_sq cochainDifferenceLaplacian_eq_backward_forward Hodge square four roles",
+            "hodge_difference_diagonal_double_metric_at_l2 oriented graph Laplacian double count",
+            "hodgeCarDirac_kernel_finrank constant Fock fibre 16",
+            "spatialShellSubmodule_finrank hodgeSquare_on_spatialShell shell rank 96 A invariant",
+            "shellEnergy_tendsto_two_pi spatial_shell_rank_l2 L 2 control",
             "car zero mode claim declarations 2026 10 25",
             "hodge car dirac kernel declaration 2026 10 25",
+            "car dirac square claim declarations 2026 10 25",
+            "hodge car dirac square declaration 2026 10 25",
+            "hodge square backward forward declaration 2026 10 25",
+            "hodge car dirac l2 normalization declaration 2026 10 25",
+            "hodge spatial shell claim declarations 2026 10 25",
+            "hodge shell energy limit declaration 2026 10 25",
+            "hodge shell rank l2 control declaration 2026 10 25",
             "ArchiveHodgeCARDirac not carDirac hoppingCarDirac difference operator",
-            "BOOK_06 06.spectral actual CAR Dirac zero mode ClaimMap OPEN",
+            "BOOK_06 06.spectral actual CAR Dirac square zero mode ClaimMap OPEN",
         ],
         "required_refs": [
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
@@ -207,20 +218,33 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracShell.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_zero_mode_claim_declarations_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_kernel_declaration_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_claim_declarations_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_square_declaration_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_square_backward_forward_declaration_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_l2_normalization_declaration_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_spatial_shell_claim_declarations_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_shell_energy_limit_declaration_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_shell_rank_l2_control_declaration_2026-10-25.json",
         ],
         "scope_review": (
-            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 remains OPEN: its mapped CAR declarations "
-            "prove only a declared integer constant, not finrank ker(carDirac n). "
-            "hodgeCarDirac_kernel_finrank proves dimension 16 for the distinct "
-            "forward/backward Hodge difference operator on cubical cochains; there is "
-            "no operator equality or kernel transport to carDirac, so this theorem "
-            "cannot discharge the CAR claim. formal_support.csv lists only the Hodge "
-            "kernel module, not ArchiveCARDirac. The BOOK_06 06.spectral locator has no "
-            "exact heading. Compiled narrow inventories preserve the exact types and "
-            "axiom footprints; they do not accept C0 or select physical D0."
+            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 and D0-ARCHIVE-CAR-DIRAC-SQUARE-001 "
+            "remain OPEN: their mapped ArchiveCARDirac declarations prove arithmetic "
+            "constants, not the kernel or square of carDirac/hoppingCarDirac. Separate "
+            "Hodge-cochain results already prove hodgeCarDirac_sq, its four-role oriented "
+            "difference formula, the 16-dimensional Hodge kernel, and the L=2 factor-two "
+            "graph-diagonal comparison. The spatial shell has rank 96 and square-energy "
+            "eigenvalue only under 3 <= L and positive-role-A invariance; its energy tends "
+            "to 2*pi, while the L=2 shell rank is 48. These Hodge results have no operator "
+            "intertwiner to the hopping matrix. formal_support.csv lists the Hodge modules, "
+            "not ArchiveCARDirac. The BOOK_06 06.spectral locator has no exact heading. "
+            "Compiled narrow inventories preserve types and trust footprints; they do not "
+            "accept the open claims, C0, or physical D0."
         ),
     },
     {

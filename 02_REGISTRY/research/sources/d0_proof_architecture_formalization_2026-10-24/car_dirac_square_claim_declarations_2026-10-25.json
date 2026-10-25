@@ -1,0 +1,215 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "02a5a6e2c734614cfaa0bdfe16bd90cf53714053",
+  "worktree_dirty": false,
+  "claim_registry_sha256": "e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5",
+  "lean_source_digest": "ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db",
+  "collector_sha256": "5aba0ddb8a5b3e88c46883bcdead4d61beb57e19d8c0b95539ab4b80f28a2179",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveCARDirac",
+  "resolution_only": false,
+  "request": {
+    "claim_id": "D0-ARCHIVE-CAR-DIRAC-SQUARE-001",
+    "mappings": [
+      {
+        "claim_id": "D0-ARCHIVE-CAR-DIRAC-SQUARE-001",
+        "module_locator": "D0.Geometry.ArchiveCARDirac",
+        "theorem_atom": "carDiracSquareScalarSectorFactor_eq_fock_dim",
+        "candidate_names": [
+          "D0.Geometry.ArchiveCARDirac.carDiracSquareScalarSectorFactor_eq_fock_dim",
+          "D0.Geometry.carDiracSquareScalarSectorFactor_eq_fock_dim",
+          "D0.carDiracSquareScalarSectorFactor_eq_fock_dim"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-CAR-DIRAC-SQUARE-001",
+        "module_locator": "D0.Geometry.ArchiveCARDirac",
+        "theorem_atom": "archive_car_dirac_square_owner",
+        "candidate_names": [
+          "D0.Geometry.ArchiveCARDirac.archive_car_dirac_square_owner",
+          "D0.Geometry.archive_car_dirac_square_owner",
+          "D0.archive_car_dirac_square_owner"
+        ]
+      }
+    ]
+  },
+  "declarations": [
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveCARDirac.carDiracSquareScalarSectorFactor_eq_fock_dim",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.carDiracSquareScalarSectorFactor = Fintype.card D0.Geometry.ArchiveFockState",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 5,
+            "line": 473
+          },
+          "start": {
+            "column": 0,
+            "line": 470
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 52,
+            "line": 470
+          },
+          "start": {
+            "column": 8,
+            "line": 470
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.carDiracSquareScalarSectorFactor = Fintype.card D0.Geometry.ArchiveFockState",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCARDirac",
+      "name": "D0.Geometry.carDiracSquareScalarSectorFactor_eq_fock_dim",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.carDiracSquareScalarSectorFactor",
+        "D0.Geometry.card_archive_fock_state",
+        "D0.Role",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "congrArg",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.carDiracSquareScalarSectorFactor",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.carDiracSquareScalarSectorFactor_eq_fock_dim",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveCARDirac.archive_car_dirac_square_owner",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.carDiracSquareScalarSectorFactor = 16 ∧ Fintype.card D0.Geometry.ArchiveFockState = 16",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 32,
+            "line": 478
+          },
+          "start": {
+            "column": 0,
+            "line": 475
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 38,
+            "line": 475
+          },
+          "start": {
+            "column": 8,
+            "line": 475
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.carDiracSquareScalarSectorFactor = 16 ∧ Fintype.card D0.Geometry.ArchiveFockState = 16",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCARDirac",
+      "name": "D0.Geometry.archive_car_dirac_square_owner",
+      "proof_dependencies": [
+        "And.intro",
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.carDiracSquareScalarSectorFactor",
+        "D0.Geometry.card_archive_fock_state",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "And",
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.carDiracSquareScalarSectorFactor",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_car_dirac_square_owner",
+      "source_path": null
+    }
+  ]
+}
