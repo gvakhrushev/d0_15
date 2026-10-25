@@ -5668,3 +5668,44 @@ remains a candidate claim crosswalk, with no assembly application or owner
 acceptance. The independent review accepts artifact integrity and the stated
 finite scope only; it does not accept the claim semantics, freeze C0, or close
 a physical premise.
+
+### Conservative C0 claim-source candidate resolution (25 October 2026)
+
+The claim-source view previously labeled 170 rows `malformed_locator` because
+each listed multiple books but only one descriptive section string. The new
+resolver preserves these as **unresolved, unpaired** source sets. It emits a
+separate candidate group per listed book; an exact heading or ranked lexical
+heading remains a retrieval candidate and never creates a book/section pair.
+Single-book descriptive locators also receive up to three ranked heading
+candidates. Numeric section IDs receive no lexical fallback when their exact
+heading is absent. Lexical suggestions require at least two locator terms in
+the heading and at least 75% of the locator terms in the heading's section
+text, with a one-term locator requiring its single term. This keeps malformed
+source syntax, missing exact headings, and unreviewed search suggestions
+distinct.
+
+The refreshed view is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`
+(SHA-256
+`81b8fe55cb2afee4b99d1c9ce941399ad842a4fa99c2fa0d68df8448018580ef`),
+collected cleanly at `6a160a11f5f732c6c964864075cc94b7c6e2b010`. Its collector
+SHA-256 is
+`cb4d6c92b777d5daeb590d952dc8dd9de6bb81e681237179916a458a30b54d52`, and the
+`claims.csv` SHA-256 remains
+`f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003`.
+For the same 889 claim rows, the view now reports 94 exact unique rows, four
+partial rows, zero ambiguous rows, 781 unresolved rows, 10 non-book rows and
+zero malformed rows. Its 731 actual locator pairs are unchanged: 116 exact
+unique and 615 unresolved. The 170 shared-book rows remain unresolved with no
+paired locator; 242 rows expose 416 ranked heading candidates. These counts
+describe source-location retrieval only, not C0 membership, semantic coverage,
+or accepted claim-to-source maps.
+
+As controls, `D0-FOUND-001` remains unresolved while the view surfaces
+unreviewed candidates in both listed books. `D0-HODGE-001` still has no exact
+Book 07 heading candidate, and the pseudo-section `06.spectral` for
+`D0-ARCHIVE-CAR-DIRAC-SQUARE-001` receives no lexical fallback. The focused
+source-locator regression passes, and the complete proof-architecture suite
+passes 45/45. This parser/candidate improvement adds no Lean theorem, claim
+status, C0 disposition, or physical conclusion; source-unit review and
+independent C0 acceptance remain outstanding.
