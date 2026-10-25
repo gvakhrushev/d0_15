@@ -9607,3 +9607,104 @@ first-source neutrality, strict native finite contrast, weighted
 observable quotient and two-block cotangent non-transfer. No duplicate
 calculation/old large replay. Removing7ad recovers4c2b6100 primary;
 all previous packet bytes remain unchanged. Scientific promotion=false.
+
+### 25 October: an adjugate pair with compatible cumulative field sources
+
+Phase: native realization / source composition. SAME PR334,
+constitutive/native-programme-v1 owner; input742735cd. Parent:
+7ad(273)'s exact two-band cumulative coefficient drift. The changed
+mathematical input is an executed scalar-return operation, not a
+new boundary, additive price, action term or geometry search.
+
+Two independent fresh calls of the SAME actual DATA-blind processor
+give C=alphaI-betaX. Execute V1 and the band-flipped second V inside
+one paid echo. The fixed native middle simplifies to
+M=Z_e1 Z_b1 Z_b2 CX(e1,d)CX(e2,d), and the complete returned amplitude
+is C Z C Z=det(C)I. Scalarity is exact even with within-copy programme
+correlations or fixed compiler errors; it needs actual identical
+copies and fresh independent private inputs, not merely equal means.
+Unknown DATA and immutable oldRIGHT are not cloned or reset.
+
+The middle costs20 stages with source=e1,26 with a dedicated helper.
+Actual four-G examples have62/74 primitive stages, D128/256 and cut8.
+A finite native request graph also exists: the exact9/15-stage cell
+D_t(q)=G;G;CX(q,t);InvG;CX(q,t) has blocks G/G³. SAME private two-bit
+keys generate both preparations, then the actual structured inverse
+closes all work. Whole words cost162/186; no Toffoli, free Boolean,
+fair factory or generic decoder is assumed. Fixed request00 keeps
+cut8; all allowed key inputs give cut32 and the true branch trace.
+All key/complement columns stay in the full heat at either cut.
+
+For the product reference s=(1-2E)(1-2b)^2, sSigma=p9, the true rank8
+price is-8log(1-zeta+zeta s²). Its DERIVED source has positive
+a_pair=32zeta p17/(1-zeta+zeta p18) and lambda_pair=-4p.
+The original lambda_minus metric/collar and interval budget are
+not borrowed. Native same-marginal correlation controls still give
+s_corr=p3 and nonzero source; the canonical map remains necessary.
+
+Private DATA/work/keys per macro, sharing only an ACTIVE helper/spin
+restored on ALL columns, give exact old-channel partial-trace
+compatibility after each completed macro. No later primitive touches
+old sealed registers. The SINGLE cumulative cut has R_M=4*2^M,
+J_M=-R_M log(1-zeta+zeta product(s_j)^2), not sum(J_j).
+Nevertheless every block field covector has the SAME ratio-4p and
+its actual positive Gamma_Mj=4R_M zeta p^(18M-1)tau_j/Q_M.
+Actual scalar returns give their own exact log-derivative gain;
+no multiplier derivative or tiny-gain normalization is omitted.
+
+Substitute this full ambient source into the owned universal Cartan
+rows6–9 and CAR rows11–12, linear in the material coefficient.
+The same Poisson/midpoint proof gives a nonflat all16+24+2 REFERENCE
+field root with lambda_pair, compatible collars and one fixed curved
+continuum metric at every valid mesh/prefix. This is a new source
+substitution corollary; it does not claim the old configured J2
+lambda_minus theorem had already proved this new price.
+
+Two-copy/fixed-M full score and overlap bounds retain arbitrary
+entangled pure-bank tangents; they are not sums of marginal norms.
+Actual compiled-processor, unconditional source, C1/word/secant
+and physical-lift errors stay divided by the true Gamma_Mj.
+Scalarity and whole heat are exact at duplicated native endpoints;
+native exact all-joint stationarity and an infinite controlled
+source tower do not follow from finite approximation estimates.
+Later blocks preserve an old normalized residual rather than repair
+it. The cumulative heat includes every inverse, old column, request
+branch and padding stage; no clock/stopping equation is solved.
+
+Write paths: primary7ae, this existing brief and
+sources/d0_native_adjugate_pair_prefix_2026-10-25/ only. Disjoint
+bounded proof/code and read-only review inside this owned PR.
+Decisive checks: exact62/74 protected columns, all128/256 middle
+columns, actual raw inverse/request cells,162/186 inventories,
+M1–3 cumulative determinant/source/ratio and private-prefix map,
+joint cross-group normal and whole operator error. No old root,
+full128 scientific suite, Lean or generic compiler search replay.
+
+Remaining parent: full native field/preparation graph, physically
+admitted non-fibre controls, actual scene/geometric future-context
+binding and complete joint/profinite refinement. This is a positive
+removal of the cumulative two-band field-source mismatch by a new
+fully priced native operation, not acceptance of physical GR,
+generic Einstein universality or raw216. GR_closed=false.
+
+Reproduce only the changed pair/prefix calculation:
+
+    python3 02_REGISTRY/research/sources/d0_native_adjugate_pair_prefix_2026-10-25/check_paired_return.py --output /tmp/native_adjugate_pair_prefix.json
+
+Final7ae10216bytes/SHA256
+4138adf4f9b3f3115508f4dc7912e7cf67d12dd0279630b00342e72228d142c9.
+PROOF30985bytes/SHA256
+f0f9acee9d794f3560772b6944090335e4dec97b474242c8ed62e0b78dfdc69c.
+paired_return.py7983bytes/SHA256
+f394cc61abced54abfc7d38977acbc44951ec69d5a0c1147a9d236125245fcdf.
+check_paired_return.py17119bytes/SHA256
+b71a9e2d92f15625de78f053a0e328f7eebf4f69248848e56b2cbd96ce548e41.
+Actualfinalreceipt9333bytes/SHA256
+c282eec489a29610b7c5e2bb4db7200ea9149b35cbb2cbda051033b36e6edd79.
+RootactualCLIexit0/PASS34; stdout=savedreceipt;7input+3sectionpins
+verified. Final independent pinned-source review ACCEPT, every pin
+rehashed with no replay. The owned universal geometry/midpoint
+inputs are pinned separately in INTEGRATION_REVIEW.md; the all42
+application is analytic, not a new numerical root certificate.
+Removing7ae recovers742735cd primary; old brief/packets preserved.
+No physical claim or assembly status is promoted.
