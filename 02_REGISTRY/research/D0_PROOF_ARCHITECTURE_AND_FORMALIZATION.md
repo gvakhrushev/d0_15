@@ -6435,3 +6435,44 @@ control. An independent read-only review found no issue in the query,
 candidate-only wording, or four-row status guard. This closes a retrieval
 consumer for the new source view only; it does not resolve the missing
 Book 06 source unit, accept a claim, freeze C0, or change any physical owner.
+
+### Current compiled Bianchi reuse at the retrieval-tool head (25 October 2026)
+
+The 29-declaration CAR/Hodge inventory previously recorded at snapshot
+5818c7dbc8a630c4156ac7cdec4c98614e68f372 has source digest
+61626928b804f4e4c14f2c763e9f9ef303693b44a1b320dc9277e076cf8f3743, which
+does not match the current Windows source resolver. The same exact 29
+declaration names were recollected at clean snapshot
+cb5cf7d0045865a6e25bd8800eb03dba9cb64986, public import D0.All, Lean 4.30.0.
+That current inventory records source digest
+151ed9a7b44aa795987d2c4c2b14c5cdaa67323fd3cd15585885dcee0b0ca2d8, SHA-256
+689c85a8de404cf58b1a537b183851c39d4230bf1242106b4f35b84f0d160694, and
+collector SHA-256
+2a41ca981b50bd5131a022d1315e5fca68b0f696651ff6b441f4f80016e434b7. All
+requested declarations resolve. Later commits through c9c7448 changed
+retrieval tooling and cold-start coverage but no Lean source, so this digest
+remains current for the present D0.All source tree.
+
+At the same Lean-source digest, the current proof-architecture reuse view for
+D0-GRADED-BIANCHI-EXACT-001 is
+d0_graded_bianchi_proof_architecture_reuse_d0_all_2026-10-25.json, SHA-256
+5bd8e35810e5649a0fb2a3d5d58d20e34eebbbc7b1b0d55b63d237c7d1f354f6. Its
+snapshot is 00c56c5242d2b20d1e23134886069919569b0960; the resolved literal
+consumer is a theorem for every A : SceneVertex → ℚ with conclusion
+d1 (d0 A) = 0. The compiled proof depends on sceneGradedComplex and the
+generic D0.Topology.discrete_exact_bianchi theorem, and reports only the
+standard axiom footprint {Classical.choice, Quot.sound, propext}. The
+D0-HODGE-001 compiled reuse view is also refreshed at 00c56c5 and the same
+Lean-source digest; its artifact SHA-256 is
+2b5a0d16c1ba6ff181a44fcd008824eff502d2df1cecbb05973db75d008e59c4.
+
+The reusable source is the coefficient-generic graded incidence complex over
+a commutative semiring with Real as its compatibility default. The concrete
+consumer uses the actual transposed tripartite incidence matrices over ℚ at
+(p,q,r)=(8,10,12): zones (9,11,13), with 33 vertices, 359 edges, and 1,287
+triangles. The registry row D0-GRADED-BIANCHI-EXACT-001 remains LEAN_PROVED
+and CORE-FORMALIZED under its existing owner. This application is a discrete
+cochain identity only; it supplies no Hodge/metric/dynamics/matter equation,
+physical weight choice, or GR source selection.
+
+Final integration checks at retrieval-tool head 00c56c5242d2b20d1e23134886069919569b0960 pass: the proof-architecture, declaration-inventory, generated-view, and Lean-build-helper suites report 97/97 tests; generated Lean views have stale=0; ClaimMap coverage passes; the formalization-debt audit reports findings=3 against baseline=5; gr_assembly check is valid with scientific_promotion=false; and the EOL-aware diff check is clean.

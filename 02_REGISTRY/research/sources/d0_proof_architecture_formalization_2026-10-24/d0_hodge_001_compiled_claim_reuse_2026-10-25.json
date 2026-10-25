@@ -127,11 +127,11 @@
       "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
     }
   ],
-  "snapshot_commit": "d37152b7a330e4fd616ebe9e171efb793a6dabb1",
+  "snapshot_commit": "00c56c5242d2b20d1e23134886069919569b0960",
   "source_digests": {
-    "02_REGISTRY/claims.csv": "f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003",
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
-    "02_REGISTRY/formal_support.csv": "e926db5c0b36d3e17c45b8e35b8b534530331f5b3339310e4943b3d6f6b0ea6e",
+    "02_REGISTRY/formal_support.csv": "e726f66e2b3e418ba129a486768d85a9245eb9db106a4109d92db4724706545b",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
     "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
@@ -273,13 +273,13 @@
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "C",
-                  "type": "D0.Topology.GradedCellComplex"
+                  "type": "D0.Topology.GradedCellComplex ℝ"
                 },
                 {
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "A",
-                  "type": "C.V → ℝ"
+                  "type": "C.V ℝ → ℝ"
                 },
                 {
                   "binder_info": "Lean.BinderInfo.default",
@@ -312,14 +312,16 @@
                   }
                 }
               },
-              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex ℝ) (A : C.V ℝ → ℝ) (f : C.F ℝ), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
               "exists": true,
               "internal_name": false,
               "module": "D0.Topology.FiniteCochainNoAxion",
               "name": "D0.Topology.finite_d_d_zero",
               "proof_dependencies": [
                 "D0.Topology.GradedCellComplex",
-                "D0.Topology.discrete_exact_bianchi"
+                "D0.Topology.discrete_exact_bianchi",
+                "Real",
+                "Real.instCommSemiring"
               ],
               "type_dependencies": [
                 "D0.Topology.GradedCellComplex",
@@ -330,6 +332,7 @@
                 "Eq",
                 "OfNat.ofNat",
                 "Real",
+                "Real.instCommSemiring",
                 "Real.instZero",
                 "Zero.toOfNat0"
               ],
@@ -365,21 +368,21 @@
                 "declaration": {
                   "end": {
                     "column": 74,
-                    "line": 62
+                    "line": 95
                   },
                   "start": {
                     "column": 0,
-                    "line": 55
+                    "line": 88
                   }
                 },
                 "selection": {
                   "end": {
                     "column": 35,
-                    "line": 57
+                    "line": 90
                   },
                   "start": {
                     "column": 8,
-                    "line": 57
+                    "line": 90
                   }
                 }
               },
@@ -487,22 +490,22 @@
               "declaration_ranges": {
                 "declaration": {
                   "end": {
-                    "column": 6,
-                    "line": 77
+                    "column": 65,
+                    "line": 102
                   },
                   "start": {
                     "column": 0,
-                    "line": 64
+                    "line": 97
                   }
                 },
                 "selection": {
                   "end": {
                     "column": 24,
-                    "line": 65
+                    "line": 98
                   },
                   "start": {
                     "column": 8,
-                    "line": 65
+                    "line": 98
                   }
                 }
               },
@@ -512,41 +515,22 @@
               "module": "D0.Geometry.SceneCochainComplex",
               "name": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
               "proof_dependencies": [
-                "CommMagma.toMul",
                 "D0.Geometry.SceneCochainComplex.SceneC0",
                 "D0.Geometry.SceneCochainComplex.SceneC2",
-                "D0.Geometry.SceneCochainComplex.SceneEdge",
                 "D0.Geometry.SceneCochainComplex.SceneTriangle",
-                "D0.Geometry.SceneCochainComplex.SceneVertex",
                 "D0.Geometry.SceneCochainComplex.d0",
                 "D0.Geometry.SceneCochainComplex.d1",
-                "D0.Geometry.SceneCochainComplex.sceneBoundary1",
-                "D0.Geometry.SceneCochainComplex.sceneBoundary2",
-                "D0.Geometry.SceneCochainComplex.sceneP",
-                "D0.Geometry.SceneCochainComplex.sceneQ",
-                "D0.Geometry.SceneCochainComplex.sceneR",
-                "D0.Topology.GenericTripartiteHomology.GenericEdge",
-                "D0.Topology.GenericTripartiteHomology.GenericTriangle",
-                "D0.Topology.GenericTripartiteHomology.GenericVertex",
-                "D0.Topology.GenericTripartiteHomology.boundary1",
-                "D0.Topology.GenericTripartiteHomology.boundary2",
-                "D0.Topology.GenericTripartiteHomology.boundary_squared_zero",
-                "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
-                "Distrib.toMul",
-                "Eq",
-                "Eq.mpr",
-                "Eq.refl",
-                "Eq.symm",
-                "Eq.trans",
-                "Fin",
-                "Fin.fintype",
-                "HAdd.hAdd",
-                "HMul.hMul",
-                "Matrix",
-                "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
-                {
-                  "_omitted_items": 47
-                }
+                "D0.Geometry.SceneCochainComplex.sceneGradedComplex",
+                "D0.Topology.discrete_exact_bianchi",
+                "MulZeroClass.toZero",
+                "OfNat.ofNat",
+                "Pi.instZero",
+                "Rat",
+                "Rat.commSemiring",
+                "Rat.semiring",
+                "Zero.toOfNat0",
+                "funext",
+                "instMulZeroClassOfSemiring"
               ],
               "type_dependencies": [
                 "D0.Geometry.SceneCochainComplex.SceneC0",
@@ -595,21 +579,21 @@
                 "declaration": {
                   "end": {
                     "column": 64,
-                    "line": 86
+                    "line": 111
                   },
                   "start": {
                     "column": 0,
-                    "line": 79
+                    "line": 104
                   }
                 },
                 "selection": {
                   "end": {
                     "column": 28,
-                    "line": 80
+                    "line": 105
                   },
                   "start": {
                     "column": 8,
-                    "line": 80
+                    "line": 105
                   }
                 }
               },
@@ -707,21 +691,21 @@
                 "declaration": {
                   "end": {
                     "column": 23,
-                    "line": 134
+                    "line": 159
                   },
                   "start": {
                     "column": 0,
-                    "line": 101
+                    "line": 126
                   }
                 },
                 "selection": {
                   "end": {
                     "column": 27,
-                    "line": 103
+                    "line": 128
                   },
                   "start": {
                     "column": 8,
-                    "line": 103
+                    "line": 128
                   }
                 }
               },
@@ -879,6 +863,7 @@
                 "D0.Geometry.SceneCochainComplex.SceneVertex",
                 "D0.Geometry.SceneCochainComplex.d0",
                 "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+                "D0.Geometry.SceneCochainComplex.sceneGradedComplex",
                 "D0.Geometry.SceneCochainComplex.sceneP",
                 "D0.Geometry.SceneCochainComplex.sceneQ",
                 "D0.Geometry.SceneCochainComplex.sceneR",
@@ -888,6 +873,7 @@
                 "D0.Geometry.SceneHodgeDecomposition.inner0",
                 "D0.Geometry.SceneHodgeDecomposition.inner1",
                 "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+                "D0.Topology.d0",
                 "Distrib.toAdd",
                 "Distrib.toMul",
                 "Eq",
@@ -903,10 +889,8 @@
                 "Finset.sum_comm",
                 "Finset.sum_congr",
                 "Finset.sum_mul",
-                "Finset.univ",
-                "HAdd.hAdd",
                 {
-                  "_omitted_items": 59
+                  "_omitted_items": 60
                 }
               ],
               "type_dependencies": [
@@ -994,6 +978,7 @@
                 "D0.Geometry.SceneCochainComplex.SceneTriangle",
                 "D0.Geometry.SceneCochainComplex.d1",
                 "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+                "D0.Geometry.SceneCochainComplex.sceneGradedComplex",
                 "D0.Geometry.SceneCochainComplex.sceneP",
                 "D0.Geometry.SceneCochainComplex.sceneQ",
                 "D0.Geometry.SceneCochainComplex.sceneR",
@@ -1002,6 +987,7 @@
                 "D0.Geometry.SceneHodgeDecomposition.delta1",
                 "D0.Geometry.SceneHodgeDecomposition.inner1",
                 "D0.Geometry.SceneHodgeDecomposition.inner2",
+                "D0.Topology.d1",
                 "Distrib.toAdd",
                 "Distrib.toMul",
                 "Eq",
@@ -1018,10 +1004,8 @@
                 "Finset.sum_congr",
                 "Finset.sum_mul",
                 "Finset.univ",
-                "HAdd.hAdd",
-                "HMul.hMul",
                 {
-                  "_omitted_items": 58
+                  "_omitted_items": 59
                 }
               ],
               "type_dependencies": [
@@ -1628,13 +1612,13 @@
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "C",
-              "type": "D0.Topology.GradedCellComplex"
+              "type": "D0.Topology.GradedCellComplex ℝ"
             },
             {
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "A",
-              "type": "C.V → ℝ"
+              "type": "C.V ℝ → ℝ"
             },
             {
               "binder_info": "Lean.BinderInfo.default",
@@ -1667,14 +1651,16 @@
               }
             }
           },
-          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex ℝ) (A : C.V ℝ → ℝ) (f : C.F ℝ), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
           "exists": true,
           "internal_name": false,
           "module": "D0.Topology.FiniteCochainNoAxion",
           "name": "D0.Topology.finite_d_d_zero",
           "proof_dependencies": [
             "D0.Topology.GradedCellComplex",
-            "D0.Topology.discrete_exact_bianchi"
+            "D0.Topology.discrete_exact_bianchi",
+            "Real",
+            "Real.instCommSemiring"
           ],
           "type_dependencies": [
             "D0.Topology.GradedCellComplex",
@@ -1685,6 +1671,7 @@
             "Eq",
             "OfNat.ofNat",
             "Real",
+            "Real.instCommSemiring",
             "Real.instZero",
             "Zero.toOfNat0"
           ],
@@ -1703,21 +1690,21 @@
             "declaration": {
               "end": {
                 "column": 74,
-                "line": 62
+                "line": 95
               },
               "start": {
                 "column": 0,
-                "line": 55
+                "line": 88
               }
             },
             "selection": {
               "end": {
                 "column": 35,
-                "line": 57
+                "line": 90
               },
               "start": {
                 "column": 8,
-                "line": 57
+                "line": 90
               }
             }
           },
@@ -1808,22 +1795,22 @@
           "declaration_ranges": {
             "declaration": {
               "end": {
-                "column": 6,
-                "line": 77
+                "column": 65,
+                "line": 102
               },
               "start": {
                 "column": 0,
-                "line": 64
+                "line": 97
               }
             },
             "selection": {
               "end": {
                 "column": 24,
-                "line": 65
+                "line": 98
               },
               "start": {
                 "column": 8,
-                "line": 65
+                "line": 98
               }
             }
           },
@@ -1833,41 +1820,22 @@
           "module": "D0.Geometry.SceneCochainComplex",
           "name": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
           "proof_dependencies": [
-            "CommMagma.toMul",
             "D0.Geometry.SceneCochainComplex.SceneC0",
             "D0.Geometry.SceneCochainComplex.SceneC2",
-            "D0.Geometry.SceneCochainComplex.SceneEdge",
             "D0.Geometry.SceneCochainComplex.SceneTriangle",
-            "D0.Geometry.SceneCochainComplex.SceneVertex",
             "D0.Geometry.SceneCochainComplex.d0",
             "D0.Geometry.SceneCochainComplex.d1",
-            "D0.Geometry.SceneCochainComplex.sceneBoundary1",
-            "D0.Geometry.SceneCochainComplex.sceneBoundary2",
-            "D0.Geometry.SceneCochainComplex.sceneP",
-            "D0.Geometry.SceneCochainComplex.sceneQ",
-            "D0.Geometry.SceneCochainComplex.sceneR",
-            "D0.Topology.GenericTripartiteHomology.GenericEdge",
-            "D0.Topology.GenericTripartiteHomology.GenericTriangle",
-            "D0.Topology.GenericTripartiteHomology.GenericVertex",
-            "D0.Topology.GenericTripartiteHomology.boundary1",
-            "D0.Topology.GenericTripartiteHomology.boundary2",
-            "D0.Topology.GenericTripartiteHomology.boundary_squared_zero",
-            "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
-            "Distrib.toMul",
-            "Eq",
-            "Eq.mpr",
-            "Eq.refl",
-            "Eq.symm",
-            "Eq.trans",
-            "Fin",
-            "Fin.fintype",
-            "HAdd.hAdd",
-            "HMul.hMul",
-            "Matrix",
-            "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
-            {
-              "_omitted_items": 47
-            }
+            "D0.Geometry.SceneCochainComplex.sceneGradedComplex",
+            "D0.Topology.discrete_exact_bianchi",
+            "MulZeroClass.toZero",
+            "OfNat.ofNat",
+            "Pi.instZero",
+            "Rat",
+            "Rat.commSemiring",
+            "Rat.semiring",
+            "Zero.toOfNat0",
+            "funext",
+            "instMulZeroClassOfSemiring"
           ],
           "type_dependencies": [
             "D0.Geometry.SceneCochainComplex.SceneC0",
@@ -1899,21 +1867,21 @@
             "declaration": {
               "end": {
                 "column": 64,
-                "line": 86
+                "line": 111
               },
               "start": {
                 "column": 0,
-                "line": 79
+                "line": 104
               }
             },
             "selection": {
               "end": {
                 "column": 28,
-                "line": 80
+                "line": 105
               },
               "start": {
                 "column": 8,
-                "line": 80
+                "line": 105
               }
             }
           },
@@ -1994,21 +1962,21 @@
             "declaration": {
               "end": {
                 "column": 23,
-                "line": 134
+                "line": 159
               },
               "start": {
                 "column": 0,
-                "line": 101
+                "line": 126
               }
             },
             "selection": {
               "end": {
                 "column": 27,
-                "line": 103
+                "line": 128
               },
               "start": {
                 "column": 8,
-                "line": 103
+                "line": 128
               }
             }
           },
@@ -2149,6 +2117,7 @@
             "D0.Geometry.SceneCochainComplex.SceneVertex",
             "D0.Geometry.SceneCochainComplex.d0",
             "D0.Geometry.SceneCochainComplex.sceneBoundary1",
+            "D0.Geometry.SceneCochainComplex.sceneGradedComplex",
             "D0.Geometry.SceneCochainComplex.sceneP",
             "D0.Geometry.SceneCochainComplex.sceneQ",
             "D0.Geometry.SceneCochainComplex.sceneR",
@@ -2158,6 +2127,7 @@
             "D0.Geometry.SceneHodgeDecomposition.inner0",
             "D0.Geometry.SceneHodgeDecomposition.inner1",
             "D0.Topology.GenericTripartiteHomology.instFintypeTreeIndex",
+            "D0.Topology.d0",
             "Distrib.toAdd",
             "Distrib.toMul",
             "Eq",
@@ -2173,10 +2143,8 @@
             "Finset.sum_comm",
             "Finset.sum_congr",
             "Finset.sum_mul",
-            "Finset.univ",
-            "HAdd.hAdd",
             {
-              "_omitted_items": 59
+              "_omitted_items": 60
             }
           ],
           "type_dependencies": [
@@ -2247,6 +2215,7 @@
             "D0.Geometry.SceneCochainComplex.SceneTriangle",
             "D0.Geometry.SceneCochainComplex.d1",
             "D0.Geometry.SceneCochainComplex.sceneBoundary2",
+            "D0.Geometry.SceneCochainComplex.sceneGradedComplex",
             "D0.Geometry.SceneCochainComplex.sceneP",
             "D0.Geometry.SceneCochainComplex.sceneQ",
             "D0.Geometry.SceneCochainComplex.sceneR",
@@ -2255,6 +2224,7 @@
             "D0.Geometry.SceneHodgeDecomposition.delta1",
             "D0.Geometry.SceneHodgeDecomposition.inner1",
             "D0.Geometry.SceneHodgeDecomposition.inner2",
+            "D0.Topology.d1",
             "Distrib.toAdd",
             "Distrib.toMul",
             "Eq",
@@ -2271,10 +2241,8 @@
             "Finset.sum_congr",
             "Finset.sum_mul",
             "Finset.univ",
-            "HAdd.hAdd",
-            "HMul.hMul",
             {
-              "_omitted_items": 58
+              "_omitted_items": 59
             }
           ],
           "type_dependencies": [
@@ -2719,7 +2687,20 @@
             {
               "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
               "theorem_atom": "Topology.discrete_exact_bianchi",
-              "module_locator": "D0.Gauge.GradedBianchiIdentity"
+              "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-HODGE-001",
+          "source_declaration": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+          "dependency_declaration": "D0.Topology.discrete_exact_bianchi",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+              "theorem_atom": "Topology.discrete_exact_bianchi",
+              "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex"
             }
           ],
           "relation": "compiled-proof-dependency-to-claim-locator"
@@ -2917,11 +2898,11 @@
         "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
       },
       "collector_sha256": "101d89cc1a197f2951f67eb2a43480a4ae0f20fecc0a6d8a1a380255780cae2e",
-      "lean_source_digest": "6c459c7340129d85977a72a6ebbdadbe0fd796318859948a7789ab42c1b7f590",
+      "lean_source_digest": "151ed9a7b44aa795987d2c4c2b14c5cdaa67323fd3cd15585885dcee0b0ca2d8",
       "public_import_root": "D0.All",
       "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
     }
   ],
   "compiled_claim_alias_reuse": [],
-  "worktree_dirty": false
+  "worktree_dirty": true
 }

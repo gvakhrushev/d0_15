@@ -11,26 +11,31 @@
           "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
           "book": "BOOK_05/06",
           "section": "graded incidence Bianchi closure",
-          "lean_module": "D0.Gauge.GradedBianchiIdentity",
-          "lean_theorem": "Topology.graded_nilpotency;Topology.discrete_exact_bianchi;Topology.graded_bianchi_exact;Gauge.abelian_bianchi_exact;Gauge.graded_bianchi_exact",
+          "lean_module": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
+          "lean_theorem": "Topology.graded_nilpotency;Topology.discrete_exact_bianchi;Topology.graded_bianchi_exact;Gauge.abelian_bianchi_exact;Gauge.graded_bianchi_exact;D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
           "lean_status": "LEAN_PROVED",
           "uses_bridge_assumptions": "False",
           "assumption_ids": "",
           "python_cert": "",
           "release_status": "CORE-FORMALIZED",
-          "notes": "Bianchi is exact on a graded incidence complex by boundary nilpotency."
+          "notes": "Bianchi is exact on a graded incidence complex by boundary nilpotency; the literal rational K(9",
+          "null": [
+            "11",
+            "13) specialization is a compiled application."
+          ]
         },
         "search_terms": [
           "D0-GRADED-BIANCHI-EXACT-001",
           "BOOK_05/06",
           "graded incidence Bianchi closure",
-          "D0.Gauge.GradedBianchiIdentity",
+          "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
           "Topology.graded_nilpotency",
           "Topology.discrete_exact_bianchi",
           "Topology.graded_bianchi_exact",
           "Gauge.abelian_bianchi_exact",
           "Gauge.graded_bianchi_exact",
-          "Bianchi is exact on a graded incidence complex by boundary nilpotency."
+          "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+          "Bianchi is exact on a graded incidence complex by boundary nilpotency; the literal rational K(9"
         ]
       },
       "declared_applications": [],
@@ -120,11 +125,11 @@
       "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
     }
   ],
-  "snapshot_commit": "60e4007f7dda87d106b3d54a545a5d03294d30c1",
+  "snapshot_commit": "00c56c5242d2b20d1e23134886069919569b0960",
   "source_digests": {
-    "02_REGISTRY/claims.csv": "f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003",
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
-    "02_REGISTRY/formal_support.csv": "e926db5c0b36d3e17c45b8e35b8b534530331f5b3339310e4943b3d6f6b0ea6e",
+    "02_REGISTRY/formal_support.csv": "e726f66e2b3e418ba129a486768d85a9245eb9db106a4109d92db4724706545b",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
     "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
@@ -136,11 +141,13 @@
       "claim_locator_mappings": [
         {
           "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-          "module_locator": "D0.Gauge.GradedBianchiIdentity",
+          "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
           "theorem_atom": "Topology.graded_nilpotency",
           "candidate_names": [
             "D0.Gauge.GradedBianchiIdentity.Topology.graded_nilpotency",
+            "D0.Geometry.SceneCochainComplex.Topology.graded_nilpotency",
             "D0.Gauge.Topology.graded_nilpotency",
+            "D0.Geometry.Topology.graded_nilpotency",
             "D0.Topology.graded_nilpotency"
           ],
           "resolution_status": "resolved",
@@ -153,10 +160,22 @@
               ],
               "binders": [
                 {
+                  "binder_info": "Lean.BinderInfo.implicit",
+                  "is_proposition": false,
+                  "name": "R",
+                  "type": "Type"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.instImplicit",
+                  "is_proposition": false,
+                  "name": "inst._@.D0.Topology.GradedIncidenceComplex.2989555640._hygCtx._hyg.3",
+                  "type": "CommSemiring R"
+                },
+                {
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "C",
-                  "type": "D0.Topology.GradedCellComplex"
+                  "type": "D0.Topology.GradedCellComplex R"
                 },
                 {
                   "binder_info": "Lean.BinderInfo.default",
@@ -177,36 +196,39 @@
                 "declaration": {
                   "end": {
                     "column": 33,
-                    "line": 37
+                    "line": 42
                   },
                   "start": {
                     "column": 0,
-                    "line": 35
+                    "line": 40
                   }
                 },
                 "selection": {
                   "end": {
                     "column": 25,
-                    "line": 35
+                    "line": 40
                   },
                   "start": {
                     "column": 8,
-                    "line": 35
+                    "line": 40
                   }
                 }
               },
-              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (f : C.F) (v : C.V), ∑ e, C.boundary2 f e * C.boundary1 e v = 0",
+              "elaborated_type": "∀ {R : Type} [inst : CommSemiring R] (C : D0.Topology.GradedCellComplex R) (f : C.F) (v : C.V),\n  ∑ e, C.boundary2 f e * C.boundary1 e v = 0",
               "exists": true,
               "internal_name": false,
               "module": "D0.Topology.GradedIncidenceComplex",
               "name": "D0.Topology.graded_nilpotency",
               "proof_dependencies": [
+                "CommSemiring",
                 "D0.Topology.GradedCellComplex",
                 "D0.Topology.GradedCellComplex.F",
                 "D0.Topology.GradedCellComplex.V",
                 "D0.Topology.GradedCellComplex.boundary_nilpotency"
               ],
               "type_dependencies": [
+                "CommSemiring",
+                "CommSemiring.toSemiring",
                 "D0.Topology.GradedCellComplex",
                 "D0.Topology.GradedCellComplex.E",
                 "D0.Topology.GradedCellComplex.F",
@@ -214,17 +236,20 @@
                 "D0.Topology.GradedCellComplex.boundary1",
                 "D0.Topology.GradedCellComplex.boundary2",
                 "D0.Topology.GradedCellComplex.fintypeE",
+                "Distrib.toMul",
                 "Eq",
                 "Finset.sum",
                 "Finset.univ",
                 "HMul.hMul",
+                "MulZeroClass.toZero",
+                "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+                "NonUnitalNonAssocSemiring.toAddCommMonoid",
                 "OfNat.ofNat",
-                "Real",
-                "Real.instAddCommMonoid",
-                "Real.instMul",
-                "Real.instZero",
+                "Semiring.toNonAssocSemiring",
                 "Zero.toOfNat0",
-                "instHMul"
+                "instDistribOfSemiring",
+                "instHMul",
+                "instMulZeroClassOfSemiring"
               ],
               "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean"
             }
@@ -232,11 +257,13 @@
         },
         {
           "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-          "module_locator": "D0.Gauge.GradedBianchiIdentity",
+          "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
           "theorem_atom": "Topology.discrete_exact_bianchi",
           "candidate_names": [
             "D0.Gauge.GradedBianchiIdentity.Topology.discrete_exact_bianchi",
+            "D0.Geometry.SceneCochainComplex.Topology.discrete_exact_bianchi",
             "D0.Gauge.Topology.discrete_exact_bianchi",
+            "D0.Geometry.Topology.discrete_exact_bianchi",
             "D0.Topology.discrete_exact_bianchi"
           ],
           "resolution_status": "resolved",
@@ -249,16 +276,28 @@
               ],
               "binders": [
                 {
+                  "binder_info": "Lean.BinderInfo.implicit",
+                  "is_proposition": false,
+                  "name": "R",
+                  "type": "Type"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.instImplicit",
+                  "is_proposition": false,
+                  "name": "inst._@.D0.Topology.GradedIncidenceComplex.3459593985._hygCtx._hyg.3",
+                  "type": "CommSemiring R"
+                },
+                {
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "C",
-                  "type": "D0.Topology.GradedCellComplex"
+                  "type": "D0.Topology.GradedCellComplex R"
                 },
                 {
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "A",
-                  "type": "C.V → ℝ"
+                  "type": "C.V → R"
                 },
                 {
                   "binder_info": "Lean.BinderInfo.default",
@@ -273,25 +312,25 @@
                 "declaration": {
                   "end": {
                     "column": 14,
-                    "line": 70
+                    "line": 75
                   },
                   "start": {
                     "column": 0,
-                    "line": 39
+                    "line": 44
                   }
                 },
                 "selection": {
                   "end": {
                     "column": 30,
-                    "line": 39
+                    "line": 44
                   },
                   "start": {
                     "column": 8,
-                    "line": 39
+                    "line": 44
                   }
                 }
               },
-              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+              "elaborated_type": "∀ {R : Type} [inst : CommSemiring R] (C : D0.Topology.GradedCellComplex R) (A : C.V → R) (f : C.F),\n  D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
               "exists": true,
               "internal_name": false,
               "module": "D0.Topology.GradedIncidenceComplex",
@@ -302,6 +341,7 @@
                 "AddMonoid.toAddZeroClass",
                 "AddZero.toZero",
                 "AddZeroClass.toAddZero",
+                "CommSemiring",
                 "CommSemiring.toSemiring",
                 "D0.Topology.GradedCellComplex",
                 "D0.Topology.GradedCellComplex.E",
@@ -328,22 +368,23 @@
                 "Finset.sum_comm",
                 "Finset.sum_congr",
                 "Finset.sum_const_zero",
-                "Finset.sum_mul",
                 {
-                  "_omitted_items": 58
+                  "_omitted_items": 48
                 }
               ],
               "type_dependencies": [
+                "CommSemiring",
+                "CommSemiring.toSemiring",
                 "D0.Topology.GradedCellComplex",
                 "D0.Topology.GradedCellComplex.F",
                 "D0.Topology.GradedCellComplex.V",
                 "D0.Topology.d0",
                 "D0.Topology.d1",
                 "Eq",
+                "MulZeroClass.toZero",
                 "OfNat.ofNat",
-                "Real",
-                "Real.instZero",
-                "Zero.toOfNat0"
+                "Zero.toOfNat0",
+                "instMulZeroClassOfSemiring"
               ],
               "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean"
             }
@@ -351,11 +392,13 @@
         },
         {
           "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-          "module_locator": "D0.Gauge.GradedBianchiIdentity",
+          "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
           "theorem_atom": "Topology.graded_bianchi_exact",
           "candidate_names": [
             "D0.Gauge.GradedBianchiIdentity.Topology.graded_bianchi_exact",
+            "D0.Geometry.SceneCochainComplex.Topology.graded_bianchi_exact",
             "D0.Gauge.Topology.graded_bianchi_exact",
+            "D0.Geometry.Topology.graded_bianchi_exact",
             "D0.Topology.graded_bianchi_exact"
           ],
           "resolution_status": "resolved",
@@ -368,10 +411,22 @@
               ],
               "binders": [
                 {
+                  "binder_info": "Lean.BinderInfo.implicit",
+                  "is_proposition": false,
+                  "name": "R",
+                  "type": "Type"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.instImplicit",
+                  "is_proposition": false,
+                  "name": "inst._@.D0.Topology.GradedIncidenceComplex.1414831896._hygCtx._hyg.3",
+                  "type": "CommSemiring R"
+                },
+                {
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "C",
-                  "type": "D0.Topology.GradedCellComplex3"
+                  "type": "D0.Topology.GradedCellComplex3 R"
                 },
                 {
                   "binder_info": "Lean.BinderInfo.default",
@@ -392,30 +447,31 @@
                 "declaration": {
                   "end": {
                     "column": 34,
-                    "line": 84
+                    "line": 92
                   },
                   "start": {
                     "column": 0,
-                    "line": 82
+                    "line": 90
                   }
                 },
                 "selection": {
                   "end": {
                     "column": 28,
-                    "line": 82
+                    "line": 90
                   },
                   "start": {
                     "column": 8,
-                    "line": 82
+                    "line": 90
                   }
                 }
               },
-              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex3) (c : C.C3) (e : C.E), ∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+              "elaborated_type": "∀ {R : Type} [inst : CommSemiring R] (C : D0.Topology.GradedCellComplex3 R) (c : C.C3) (e : C.E),\n  ∑ f, C.boundary3 c f * C.boundary2 f e = 0",
               "exists": true,
               "internal_name": false,
               "module": "D0.Topology.GradedIncidenceComplex",
               "name": "D0.Topology.graded_bianchi_exact",
               "proof_dependencies": [
+                "CommSemiring",
                 "D0.Topology.GradedCellComplex.E",
                 "D0.Topology.GradedCellComplex3",
                 "D0.Topology.GradedCellComplex3.C3",
@@ -423,6 +479,8 @@
                 "D0.Topology.GradedCellComplex3.toGradedCellComplex"
               ],
               "type_dependencies": [
+                "CommSemiring",
+                "CommSemiring.toSemiring",
                 "D0.Topology.GradedCellComplex.E",
                 "D0.Topology.GradedCellComplex.F",
                 "D0.Topology.GradedCellComplex.boundary2",
@@ -431,17 +489,20 @@
                 "D0.Topology.GradedCellComplex3.C3",
                 "D0.Topology.GradedCellComplex3.boundary3",
                 "D0.Topology.GradedCellComplex3.toGradedCellComplex",
+                "Distrib.toMul",
                 "Eq",
                 "Finset.sum",
                 "Finset.univ",
                 "HMul.hMul",
+                "MulZeroClass.toZero",
+                "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+                "NonUnitalNonAssocSemiring.toAddCommMonoid",
                 "OfNat.ofNat",
-                "Real",
-                "Real.instAddCommMonoid",
-                "Real.instMul",
-                "Real.instZero",
+                "Semiring.toNonAssocSemiring",
                 "Zero.toOfNat0",
-                "instHMul"
+                "instDistribOfSemiring",
+                "instHMul",
+                "instMulZeroClassOfSemiring"
               ],
               "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean"
             }
@@ -449,11 +510,13 @@
         },
         {
           "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-          "module_locator": "D0.Gauge.GradedBianchiIdentity",
+          "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
           "theorem_atom": "Gauge.abelian_bianchi_exact",
           "candidate_names": [
             "D0.Gauge.GradedBianchiIdentity.Gauge.abelian_bianchi_exact",
+            "D0.Geometry.SceneCochainComplex.Gauge.abelian_bianchi_exact",
             "D0.Gauge.Gauge.abelian_bianchi_exact",
+            "D0.Geometry.Gauge.abelian_bianchi_exact",
             "D0.Gauge.abelian_bianchi_exact"
           ],
           "resolution_status": "resolved",
@@ -469,13 +532,13 @@
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "C",
-                  "type": "D0.Topology.GradedCellComplex"
+                  "type": "D0.Topology.GradedCellComplex ℝ"
                 },
                 {
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "A",
-                  "type": "C.V → ℝ"
+                  "type": "C.V ℝ → ℝ"
                 },
                 {
                   "binder_info": "Lean.BinderInfo.default",
@@ -508,7 +571,7 @@
                   }
                 }
               },
-              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex ℝ) (A : C.V ℝ → ℝ) (f : C.F ℝ), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
               "exists": true,
               "internal_name": false,
               "module": "D0.Gauge.GradedBianchiIdentity",
@@ -518,7 +581,8 @@
                 "D0.Topology.GradedCellComplex.F",
                 "D0.Topology.GradedCellComplex.V",
                 "D0.Topology.discrete_exact_bianchi",
-                "Real"
+                "Real",
+                "Real.instCommSemiring"
               ],
               "type_dependencies": [
                 "D0.Topology.GradedCellComplex",
@@ -529,6 +593,7 @@
                 "Eq",
                 "OfNat.ofNat",
                 "Real",
+                "Real.instCommSemiring",
                 "Real.instZero",
                 "Zero.toOfNat0"
               ],
@@ -538,11 +603,13 @@
         },
         {
           "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-          "module_locator": "D0.Gauge.GradedBianchiIdentity",
+          "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
           "theorem_atom": "Gauge.graded_bianchi_exact",
           "candidate_names": [
             "D0.Gauge.GradedBianchiIdentity.Gauge.graded_bianchi_exact",
+            "D0.Geometry.SceneCochainComplex.Gauge.graded_bianchi_exact",
             "D0.Gauge.Gauge.graded_bianchi_exact",
+            "D0.Geometry.Gauge.graded_bianchi_exact",
             "D0.Gauge.graded_bianchi_exact"
           ],
           "resolution_status": "resolved",
@@ -558,7 +625,7 @@
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "C",
-                  "type": "D0.Topology.GradedCellComplex3"
+                  "type": "D0.Topology.GradedCellComplex3 ℝ"
                 },
                 {
                   "binder_info": "Lean.BinderInfo.default",
@@ -570,10 +637,10 @@
                   "binder_info": "Lean.BinderInfo.default",
                   "is_proposition": false,
                   "name": "e",
-                  "type": "C.toGradedCellComplex.2"
+                  "type": "(C.toGradedCellComplex ℝ).2"
                 }
               ],
-              "conclusion_whnf": "∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+              "conclusion_whnf": "∑ f, C.boundary3 ℝ c f * (C.toGradedCellComplex ℝ).boundary2 ℝ f e = 0",
               "declaration_kind": "theorem",
               "declaration_ranges": {
                 "declaration": {
@@ -597,7 +664,7 @@
                   }
                 }
               },
-              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex3) (c : C.C3) (e : C.E), ∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+              "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex3 ℝ) (c : C.C3 ℝ) (e : (C.toGradedCellComplex ℝ).E ℝ),\n  ∑ f, C.boundary3 ℝ c f * (C.toGradedCellComplex ℝ).boundary2 ℝ f e = 0",
               "exists": true,
               "internal_name": false,
               "module": "D0.Gauge.GradedBianchiIdentity",
@@ -607,7 +674,9 @@
                 "D0.Topology.GradedCellComplex3",
                 "D0.Topology.GradedCellComplex3.C3",
                 "D0.Topology.GradedCellComplex3.toGradedCellComplex",
-                "D0.Topology.graded_bianchi_exact"
+                "D0.Topology.graded_bianchi_exact",
+                "Real",
+                "Real.instCommSemiring"
               ],
               "type_dependencies": [
                 "D0.Topology.GradedCellComplex.E",
@@ -625,12 +694,102 @@
                 "OfNat.ofNat",
                 "Real",
                 "Real.instAddCommMonoid",
+                "Real.instCommSemiring",
                 "Real.instMul",
                 "Real.instZero",
                 "Zero.toOfNat0",
                 "instHMul"
               ],
               "source_path": "03_FORMALIZATION/D0/Gauge/GradedBianchiIdentity.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+          "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
+          "theorem_atom": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+          "candidate_names": [
+            "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "A",
+                  "type": "D0.Geometry.SceneCochainComplex.SceneVertex → ℚ"
+                }
+              ],
+              "conclusion_whnf": "D0.Geometry.SceneCochainComplex.d1 (D0.Geometry.SceneCochainComplex.d0 A) = 0",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 65,
+                    "line": 102
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 97
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 24,
+                    "line": 98
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 98
+                  }
+                }
+              },
+              "elaborated_type": "∀ (A : D0.Geometry.SceneCochainComplex.SceneC0),\n  D0.Geometry.SceneCochainComplex.d1 (D0.Geometry.SceneCochainComplex.d0 A) = 0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.SceneCochainComplex",
+              "name": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+              "proof_dependencies": [
+                "D0.Geometry.SceneCochainComplex.SceneC0",
+                "D0.Geometry.SceneCochainComplex.SceneC2",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneCochainComplex.d1",
+                "D0.Geometry.SceneCochainComplex.sceneGradedComplex",
+                "D0.Topology.discrete_exact_bianchi",
+                "MulZeroClass.toZero",
+                "OfNat.ofNat",
+                "Pi.instZero",
+                "Rat",
+                "Rat.commSemiring",
+                "Rat.semiring",
+                "Zero.toOfNat0",
+                "funext",
+                "instMulZeroClassOfSemiring"
+              ],
+              "type_dependencies": [
+                "D0.Geometry.SceneCochainComplex.SceneC0",
+                "D0.Geometry.SceneCochainComplex.SceneC2",
+                "D0.Geometry.SceneCochainComplex.SceneTriangle",
+                "D0.Geometry.SceneCochainComplex.d0",
+                "D0.Geometry.SceneCochainComplex.d1",
+                "Eq",
+                "MulZeroClass.toZero",
+                "OfNat.ofNat",
+                "Pi.instZero",
+                "Rat",
+                "Rat.semiring",
+                "Zero.toOfNat0",
+                "instMulZeroClassOfSemiring"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
             }
           ]
         }
@@ -644,10 +803,22 @@
           ],
           "binders": [
             {
+              "binder_info": "Lean.BinderInfo.implicit",
+              "is_proposition": false,
+              "name": "R",
+              "type": "Type"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.instImplicit",
+              "is_proposition": false,
+              "name": "inst._@.D0.Topology.GradedIncidenceComplex.2989555640._hygCtx._hyg.3",
+              "type": "CommSemiring R"
+            },
+            {
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "C",
-              "type": "D0.Topology.GradedCellComplex"
+              "type": "D0.Topology.GradedCellComplex R"
             },
             {
               "binder_info": "Lean.BinderInfo.default",
@@ -668,36 +839,39 @@
             "declaration": {
               "end": {
                 "column": 33,
-                "line": 37
+                "line": 42
               },
               "start": {
                 "column": 0,
-                "line": 35
+                "line": 40
               }
             },
             "selection": {
               "end": {
                 "column": 25,
-                "line": 35
+                "line": 40
               },
               "start": {
                 "column": 8,
-                "line": 35
+                "line": 40
               }
             }
           },
-          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (f : C.F) (v : C.V), ∑ e, C.boundary2 f e * C.boundary1 e v = 0",
+          "elaborated_type": "∀ {R : Type} [inst : CommSemiring R] (C : D0.Topology.GradedCellComplex R) (f : C.F) (v : C.V),\n  ∑ e, C.boundary2 f e * C.boundary1 e v = 0",
           "exists": true,
           "internal_name": false,
           "module": "D0.Topology.GradedIncidenceComplex",
           "name": "D0.Topology.graded_nilpotency",
           "proof_dependencies": [
+            "CommSemiring",
             "D0.Topology.GradedCellComplex",
             "D0.Topology.GradedCellComplex.F",
             "D0.Topology.GradedCellComplex.V",
             "D0.Topology.GradedCellComplex.boundary_nilpotency"
           ],
           "type_dependencies": [
+            "CommSemiring",
+            "CommSemiring.toSemiring",
             "D0.Topology.GradedCellComplex",
             "D0.Topology.GradedCellComplex.E",
             "D0.Topology.GradedCellComplex.F",
@@ -705,17 +879,20 @@
             "D0.Topology.GradedCellComplex.boundary1",
             "D0.Topology.GradedCellComplex.boundary2",
             "D0.Topology.GradedCellComplex.fintypeE",
+            "Distrib.toMul",
             "Eq",
             "Finset.sum",
             "Finset.univ",
             "HMul.hMul",
+            "MulZeroClass.toZero",
+            "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+            "NonUnitalNonAssocSemiring.toAddCommMonoid",
             "OfNat.ofNat",
-            "Real",
-            "Real.instAddCommMonoid",
-            "Real.instMul",
-            "Real.instZero",
+            "Semiring.toNonAssocSemiring",
             "Zero.toOfNat0",
-            "instHMul"
+            "instDistribOfSemiring",
+            "instHMul",
+            "instMulZeroClassOfSemiring"
           ],
           "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean"
         },
@@ -727,16 +904,28 @@
           ],
           "binders": [
             {
+              "binder_info": "Lean.BinderInfo.implicit",
+              "is_proposition": false,
+              "name": "R",
+              "type": "Type"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.instImplicit",
+              "is_proposition": false,
+              "name": "inst._@.D0.Topology.GradedIncidenceComplex.3459593985._hygCtx._hyg.3",
+              "type": "CommSemiring R"
+            },
+            {
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "C",
-              "type": "D0.Topology.GradedCellComplex"
+              "type": "D0.Topology.GradedCellComplex R"
             },
             {
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "A",
-              "type": "C.V → ℝ"
+              "type": "C.V → R"
             },
             {
               "binder_info": "Lean.BinderInfo.default",
@@ -751,25 +940,25 @@
             "declaration": {
               "end": {
                 "column": 14,
-                "line": 70
+                "line": 75
               },
               "start": {
                 "column": 0,
-                "line": 39
+                "line": 44
               }
             },
             "selection": {
               "end": {
                 "column": 30,
-                "line": 39
+                "line": 44
               },
               "start": {
                 "column": 8,
-                "line": 39
+                "line": 44
               }
             }
           },
-          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+          "elaborated_type": "∀ {R : Type} [inst : CommSemiring R] (C : D0.Topology.GradedCellComplex R) (A : C.V → R) (f : C.F),\n  D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
           "exists": true,
           "internal_name": false,
           "module": "D0.Topology.GradedIncidenceComplex",
@@ -780,6 +969,7 @@
             "AddMonoid.toAddZeroClass",
             "AddZero.toZero",
             "AddZeroClass.toAddZero",
+            "CommSemiring",
             "CommSemiring.toSemiring",
             "D0.Topology.GradedCellComplex",
             "D0.Topology.GradedCellComplex.E",
@@ -806,22 +996,23 @@
             "Finset.sum_comm",
             "Finset.sum_congr",
             "Finset.sum_const_zero",
-            "Finset.sum_mul",
             {
-              "_omitted_items": 58
+              "_omitted_items": 48
             }
           ],
           "type_dependencies": [
+            "CommSemiring",
+            "CommSemiring.toSemiring",
             "D0.Topology.GradedCellComplex",
             "D0.Topology.GradedCellComplex.F",
             "D0.Topology.GradedCellComplex.V",
             "D0.Topology.d0",
             "D0.Topology.d1",
             "Eq",
+            "MulZeroClass.toZero",
             "OfNat.ofNat",
-            "Real",
-            "Real.instZero",
-            "Zero.toOfNat0"
+            "Zero.toOfNat0",
+            "instMulZeroClassOfSemiring"
           ],
           "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean"
         },
@@ -833,10 +1024,22 @@
           ],
           "binders": [
             {
+              "binder_info": "Lean.BinderInfo.implicit",
+              "is_proposition": false,
+              "name": "R",
+              "type": "Type"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.instImplicit",
+              "is_proposition": false,
+              "name": "inst._@.D0.Topology.GradedIncidenceComplex.1414831896._hygCtx._hyg.3",
+              "type": "CommSemiring R"
+            },
+            {
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "C",
-              "type": "D0.Topology.GradedCellComplex3"
+              "type": "D0.Topology.GradedCellComplex3 R"
             },
             {
               "binder_info": "Lean.BinderInfo.default",
@@ -857,30 +1060,31 @@
             "declaration": {
               "end": {
                 "column": 34,
-                "line": 84
+                "line": 92
               },
               "start": {
                 "column": 0,
-                "line": 82
+                "line": 90
               }
             },
             "selection": {
               "end": {
                 "column": 28,
-                "line": 82
+                "line": 90
               },
               "start": {
                 "column": 8,
-                "line": 82
+                "line": 90
               }
             }
           },
-          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex3) (c : C.C3) (e : C.E), ∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+          "elaborated_type": "∀ {R : Type} [inst : CommSemiring R] (C : D0.Topology.GradedCellComplex3 R) (c : C.C3) (e : C.E),\n  ∑ f, C.boundary3 c f * C.boundary2 f e = 0",
           "exists": true,
           "internal_name": false,
           "module": "D0.Topology.GradedIncidenceComplex",
           "name": "D0.Topology.graded_bianchi_exact",
           "proof_dependencies": [
+            "CommSemiring",
             "D0.Topology.GradedCellComplex.E",
             "D0.Topology.GradedCellComplex3",
             "D0.Topology.GradedCellComplex3.C3",
@@ -888,6 +1092,8 @@
             "D0.Topology.GradedCellComplex3.toGradedCellComplex"
           ],
           "type_dependencies": [
+            "CommSemiring",
+            "CommSemiring.toSemiring",
             "D0.Topology.GradedCellComplex.E",
             "D0.Topology.GradedCellComplex.F",
             "D0.Topology.GradedCellComplex.boundary2",
@@ -896,17 +1102,20 @@
             "D0.Topology.GradedCellComplex3.C3",
             "D0.Topology.GradedCellComplex3.boundary3",
             "D0.Topology.GradedCellComplex3.toGradedCellComplex",
+            "Distrib.toMul",
             "Eq",
             "Finset.sum",
             "Finset.univ",
             "HMul.hMul",
+            "MulZeroClass.toZero",
+            "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+            "NonUnitalNonAssocSemiring.toAddCommMonoid",
             "OfNat.ofNat",
-            "Real",
-            "Real.instAddCommMonoid",
-            "Real.instMul",
-            "Real.instZero",
+            "Semiring.toNonAssocSemiring",
             "Zero.toOfNat0",
-            "instHMul"
+            "instDistribOfSemiring",
+            "instHMul",
+            "instMulZeroClassOfSemiring"
           ],
           "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean"
         },
@@ -921,13 +1130,13 @@
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "C",
-              "type": "D0.Topology.GradedCellComplex"
+              "type": "D0.Topology.GradedCellComplex ℝ"
             },
             {
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "A",
-              "type": "C.V → ℝ"
+              "type": "C.V ℝ → ℝ"
             },
             {
               "binder_info": "Lean.BinderInfo.default",
@@ -960,7 +1169,7 @@
               }
             }
           },
-          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex ℝ) (A : C.V ℝ → ℝ) (f : C.F ℝ), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
           "exists": true,
           "internal_name": false,
           "module": "D0.Gauge.GradedBianchiIdentity",
@@ -970,7 +1179,8 @@
             "D0.Topology.GradedCellComplex.F",
             "D0.Topology.GradedCellComplex.V",
             "D0.Topology.discrete_exact_bianchi",
-            "Real"
+            "Real",
+            "Real.instCommSemiring"
           ],
           "type_dependencies": [
             "D0.Topology.GradedCellComplex",
@@ -981,6 +1191,7 @@
             "Eq",
             "OfNat.ofNat",
             "Real",
+            "Real.instCommSemiring",
             "Real.instZero",
             "Zero.toOfNat0"
           ],
@@ -997,7 +1208,7 @@
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "C",
-              "type": "D0.Topology.GradedCellComplex3"
+              "type": "D0.Topology.GradedCellComplex3 ℝ"
             },
             {
               "binder_info": "Lean.BinderInfo.default",
@@ -1009,10 +1220,10 @@
               "binder_info": "Lean.BinderInfo.default",
               "is_proposition": false,
               "name": "e",
-              "type": "C.toGradedCellComplex.2"
+              "type": "(C.toGradedCellComplex ℝ).2"
             }
           ],
-          "conclusion_whnf": "∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+          "conclusion_whnf": "∑ f, C.boundary3 ℝ c f * (C.toGradedCellComplex ℝ).boundary2 ℝ f e = 0",
           "declaration_kind": "theorem",
           "declaration_ranges": {
             "declaration": {
@@ -1036,7 +1247,7 @@
               }
             }
           },
-          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex3) (c : C.C3) (e : C.E), ∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+          "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex3 ℝ) (c : C.C3 ℝ) (e : (C.toGradedCellComplex ℝ).E ℝ),\n  ∑ f, C.boundary3 ℝ c f * (C.toGradedCellComplex ℝ).boundary2 ℝ f e = 0",
           "exists": true,
           "internal_name": false,
           "module": "D0.Gauge.GradedBianchiIdentity",
@@ -1046,7 +1257,9 @@
             "D0.Topology.GradedCellComplex3",
             "D0.Topology.GradedCellComplex3.C3",
             "D0.Topology.GradedCellComplex3.toGradedCellComplex",
-            "D0.Topology.graded_bianchi_exact"
+            "D0.Topology.graded_bianchi_exact",
+            "Real",
+            "Real.instCommSemiring"
           ],
           "type_dependencies": [
             "D0.Topology.GradedCellComplex.E",
@@ -1064,12 +1277,91 @@
             "OfNat.ofNat",
             "Real",
             "Real.instAddCommMonoid",
+            "Real.instCommSemiring",
             "Real.instMul",
             "Real.instZero",
             "Zero.toOfNat0",
             "instHMul"
           ],
           "source_path": "03_FORMALIZATION/D0/Gauge/GradedBianchiIdentity.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "A",
+              "type": "D0.Geometry.SceneCochainComplex.SceneVertex → ℚ"
+            }
+          ],
+          "conclusion_whnf": "D0.Geometry.SceneCochainComplex.d1 (D0.Geometry.SceneCochainComplex.d0 A) = 0",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 65,
+                "line": 102
+              },
+              "start": {
+                "column": 0,
+                "line": 97
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 24,
+                "line": 98
+              },
+              "start": {
+                "column": 8,
+                "line": 98
+              }
+            }
+          },
+          "elaborated_type": "∀ (A : D0.Geometry.SceneCochainComplex.SceneC0),\n  D0.Geometry.SceneCochainComplex.d1 (D0.Geometry.SceneCochainComplex.d0 A) = 0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.SceneCochainComplex",
+          "name": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+          "proof_dependencies": [
+            "D0.Geometry.SceneCochainComplex.SceneC0",
+            "D0.Geometry.SceneCochainComplex.SceneC2",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneCochainComplex.d1",
+            "D0.Geometry.SceneCochainComplex.sceneGradedComplex",
+            "D0.Topology.discrete_exact_bianchi",
+            "MulZeroClass.toZero",
+            "OfNat.ofNat",
+            "Pi.instZero",
+            "Rat",
+            "Rat.commSemiring",
+            "Rat.semiring",
+            "Zero.toOfNat0",
+            "funext",
+            "instMulZeroClassOfSemiring"
+          ],
+          "type_dependencies": [
+            "D0.Geometry.SceneCochainComplex.SceneC0",
+            "D0.Geometry.SceneCochainComplex.SceneC2",
+            "D0.Geometry.SceneCochainComplex.SceneTriangle",
+            "D0.Geometry.SceneCochainComplex.d0",
+            "D0.Geometry.SceneCochainComplex.d1",
+            "Eq",
+            "MulZeroClass.toZero",
+            "OfNat.ofNat",
+            "Pi.instZero",
+            "Rat",
+            "Rat.semiring",
+            "Zero.toOfNat0",
+            "instMulZeroClassOfSemiring"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
         }
       ],
       "compiled_dependency_claim_links": [
@@ -1081,7 +1373,7 @@
             {
               "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
               "theorem_atom": "Topology.discrete_exact_bianchi",
-              "module_locator": "D0.Gauge.GradedBianchiIdentity"
+              "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex"
             }
           ],
           "relation": "compiled-proof-dependency-to-claim-locator"
@@ -1094,7 +1386,20 @@
             {
               "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
               "theorem_atom": "Topology.graded_bianchi_exact",
-              "module_locator": "D0.Gauge.GradedBianchiIdentity"
+              "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+          "source_declaration": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+          "dependency_declaration": "D0.Topology.discrete_exact_bianchi",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+              "theorem_atom": "Topology.discrete_exact_bianchi",
+              "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex"
             }
           ],
           "relation": "compiled-proof-dependency-to-claim-locator"
@@ -1187,13 +1492,12 @@
         "conceptual_presupposition_edges": [],
         "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
       },
-      "collector_sha256": "6d3b9fc7e65a135a5727905b22b83c1f18131e51639b6e1daaa7420267ab8cb5",
-      "lean_source_digest": "d775d429420bea2867f256924cdb55389f29c4dc4653cddfba4576629c9db3bb",
+      "collector_sha256": "10aa139ef59284a137e1a51566165a7c223bd0b2f3cd9eaff08ca03c23b04e79",
+      "lean_source_digest": "151ed9a7b44aa795987d2c4c2b14c5cdaa67323fd3cd15585885dcee0b0ca2d8",
       "public_import_root": "D0.All",
       "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
     }
   ],
   "compiled_claim_alias_reuse": [],
-  "worktree_dirty": false
+  "worktree_dirty": true
 }
-
