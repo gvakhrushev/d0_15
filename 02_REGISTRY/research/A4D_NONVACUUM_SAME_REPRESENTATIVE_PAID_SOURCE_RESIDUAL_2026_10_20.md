@@ -8433,6 +8433,180 @@ selected-action binding remain. Generic GR, positive_gr, raw216 and
 full physical joint stationarity are not promoted. GR_closed=false.
 
 
+## 7aj. Bind the known-port return test and control the complete task-source heat
+
+25 October2026, SAME PR334/constitutive owner, input054d5eeb. The parent
+is7ai's remaining implementation-source component outside fixed-middle
+conjugacy. Its endpoint is not involutive and its absolute gain may
+vanish. The OWNED general all-mode heat bound7ad/TC9–12 nevertheless
+applies. The additional application is the literal input/return map,
+not a new geometric action, field selector or independent execution.
+
+The exact operational map and remaining admission hypotheses are in
+[TASK_MAP.md](sources/d0_known_port_task_source_2026-10-25/TASK_MAP.md),
+and the source estimate is in
+[HEAT_TRANSFER.md](sources/d0_known_port_task_source_2026-10-25/HEAT_TRANSFER.md).
+The changed bounded certificate is
+[check_task_source.py](sources/d0_known_port_task_source_2026-10-25/check_task_source.py).
+
+### The actual palette fixes a stronger return algebra than commutation
+
+Keep the SAME G/CX/SourceI profile, source frame and protected Q8 input.
+After reordering ACTIVE, spin and passive oldRIGHT factors, EVERY
+validated native word has the form
+
+    U=(A tensor I4+B tensor L_i) tensor I_old,
+    (A+iB)(C+iD)=(AC-BD)+i(AD+BC),                    (316)
+
+with REAL work matrices over the original Golden number field. This
+follows from the actual generators: G/CX act as I on spin, while
+SourceI=P_port0 tensor I4+P_port1 tensor L_i and L_i²=-I4.
+It does not follow merely from commuting with L_i; its full centralizer
+is larger. No SourceJ, free spin pulse or complex work coefficient is
+added to the grammar.
+
+For ALL ACTIVE initially known blank and only spin plus passive old
+support unknown, write a=A_00,b=B_00. The actual protected corner and
+return defect are therefore
+
+    C=(aI4+bL_i) tensor I_oldsupport,
+    C^dagger C=tau I_r,  tau=a²+b²,
+    F=(1-tau)I_r,  r=4r_old,
+    J=-r log(1-zeta+zeta tau).                        (317)
+
+Consequently ONE unconditional COMPLETE blank-return probability fixes
+the entire F on this physical input in this palette. No spin tomography
+or external distribution over unknown spin inputs is needed. This
+special statement does not hold for a different cut, extra arbitrary
+ACTIVE inputs, spin-addressing primitives or an arbitrary-bank logical
+subroutine. In particular it does not turn7ai's known-input cut into
+the all-bank algorithmic P_ref used by the report/amplifier proof.
+
+### Supply the complete record event and distinguish its actual task fibre
+
+A readout-bit name alone is not a physical operation. Apply the OWNED
+balanced final-label recording of7f/7l to a new private cohort BEFORE
+its work is sealed. For k copied private labels, use actual fresh blank
+record wires and the real CX product D_j on BOTH legs:
+
+    U'_j=D_j(U_j tensor I_record)D_j,
+    N'_j=N_j+2k,  D'_full,j=2^k D_full,j.             (318)
+
+The initial copy fixes the supplied blank input. The final copy records
+the actual labels, with every failed branch retained. Thus its protected
+corner is unchanged. At the7ai base, completed helper/spin identity and
+private support preserve the strong old-record maps and append-only
+cohort process; earlier measured records are never inverted or copied
+as quantum scratch. The full spectrum is that of U_j tensor I_record
+at the NEW clock. Both record columns stay in the absolute heat. The
+shared-helper return boundary must remain part of the actual complete
+event; a private record0 test alone cannot hide helper leakage.
+
+The joint record's all-zero label is an ordinary outcome of the complete
+record family, not a free coherent AND gate, conditioned successful
+state or postselected reset. Its identification with the full return
+uses the copied support and actual helper boundary stated in TASK_MAP.
+Additional observer/predicate/Cost/Info work keeps its own price. This
+constructs the supplied recorded Book experiment; it does not prove that
+the original physical problem compulsorily selects this experiment.
+
+At fixed native bounds, cut/frame/carrier/clock and a supplied actual
+full-return law tau_* given exactly in the Golden field or by a native
+reference word, the set of codes with tau(U)=tau_* is a decidable
+algebraic feedback fibre. Equality to an arbitrary computable real law
+is not asserted decidable. No Einstein equation or desired
+field root occurs in this membership predicate. Preservation of the
+SAME actual task/future profile implies preservation of its already
+available return event and hence (317), so DJ=0 on those directions.
+The feedback fibre can be larger than full future-profile equality.
+It is not declared to be the whole X_run or the selected physical X_N.
+Native field-coordinate branches generally CHANGE tau and retain their
+source; they are not silently absorbed into this vertical fibre.
+
+The new exact native controls make these distinctions concrete. On
+four qubits, the matched9-stage words G_port;SourceI^(+/-1);InvG_port
+(with real CX padding) have C_+=pI+p²L_i and C_-=pI-p²L_i. Both have
+tau=p²+p4. A real27-stage PRE-readout future context, the raw inverse of
+the plus word, makes their return probabilities1 and p6; it never
+reverses an already sealed or measured record. Thus the same full
+return does not imply the same future profile. A separate N1 native
+pair agrees on every known-work input but differs when a bank wire is
+made an arbitrary subroutine input. A real13-stage balanced-copy word
+on64 full columns verifies (318) and its actual joint record0 effect.
+These are interface controls, not new GR field roots.
+
+### The existing clock estimate now dominates the actual inverse gain
+
+On7ai's actual collar s_j>=3/4, a_j>=1/2 and Q_M<=1. Its enlarged
+cofinal envelope gives gbar_j>=j^(-1/64) after a fixed finite exception.
+For all sufficiently large M,
+
+    A_M=sum_j a_j gbar_j >= M^(63/64)/4,
+    Gamma_M=w_M A_M
+       >=(r zeta/4)(9/16)^M M^(63/64).               (319)
+
+This is an exponential LOWER bound on the actual positive gain; it
+does not undo its possible exponential decay. The recorded realization
+uses its true expanded N_M, including all copying, with N_M>=M.
+No new padding or change in stopping duration is used for this estimate.
+
+Consume TC9–10 at fixed beta>0, fixed cut/carrier/clock and unitary
+endpoint variations. With q_N=[beta/(2(N+1))]^N<1,
+
+    |DH_N[dot U]|<=L_N(beta)||dot U||,
+    L_N<=min{1/N,
+       2 exp(beta+beta²/4)(beta/2)^N/[beta N!(1-q_N)²]}.
+
+For an ACTUAL comparison-space norm V let B_infty,M be the operator
+norm of its map v -> (g_l^dagger Dg_l[v])_l with gate maximum norm.
+The literal product rule and (319) give
+
+    ||DH_M||_(V*)/Gamma_M
+       <=N_M L_(N_M)(beta) B_infty,M/Gamma_M
+       <=C_beta B_infty,M N_M M^(-63/64)
+                              (8beta/9)^(N_M)/(N_M!),              (320)
+
+where C_beta=32 exp(beta+beta²/4)/(r zeta beta) after the finite
+exception. The gate-ell2 form replaces N_M B_infty,M by
+sqrt(N_M)B_2,M; the endpoint form keeps its actual B_U,M. All full
+carrier and paired factors cancel in the derivative estimate only,
+remaining in the absolute heat. At fixed beta the right side tends
+to zero faster than any inverse power in gate unit norm. An actual
+physical lift with log(max(1,B_infty,M))=o(N_M log N_M) also suffices.
+No physical norm is assigned by decoding a field or enumerating words.
+
+On the genuine full-return task fibre, DJ=0, so (320) controls the
+complete H+J implementation source beyond fixed-middle conjugacy.
+For two actual same-clock/carrier/cut codes with the same F, TC12 also
+gives |Delta B|<=pi L_N, with their TRUE controller secant spacing kept
+in the denominator. If that declared spacing is the actual counted
+number d_edit>=1 of primitive code edits, the bound is uniform over
+the entire same-F code fibre: |Delta B|/(Gamma_M d_edit)<=pi L_N/Gamma_M.
+This is a code-comparison norm, not a physical42 norm or an equality
+of action Cost with edit distance. Endpoint J equality suffices; an intervening smooth
+SO comparison path is a proof device and need not preserve the task
+or be a native actuator. Conditional report equality alone is insufficient.
+
+This supplies a third controlled component beside7ai's complete-bank
+O(M^(-3/32)) and finite-coordinate cofield O(M^(-63/64)) estimates.
+A sum in one combined dual norm requires the actual comparison/lift map;
+the three norms are not identified by terminology. Fixed old local rows
+need not vanish in their own units, and no finite prefix becomes exactly
+stationary merely from these globally normalized estimates.
+
+**Parent consequence.** The non-involutive known-port process now has
+an explicit scalar feedback/test map and a controlled whole-clock
+implementation remainder at its actual gain. Fixed-spectrum conjugacy
+is no longer needed to bound that heat component. Growing beta,
+uncontrolled physical lift, moving input/cut/Gram/carrier/clock, non-task
+feedback, an independently selected spatial scene and extra Cost/Info/
+work/stopping sources retain their actual equations. The physical
+selection of the supplied task/edit domain, full native stationary law
+and stronger GR realization/refinement obligations remain. No full
+physical stationary root, positive_gr, raw216 or GR_closed promotion
+is made. GR_closed=false.
+
+
 ## 8. Reproduction
 
 Run from this directory:

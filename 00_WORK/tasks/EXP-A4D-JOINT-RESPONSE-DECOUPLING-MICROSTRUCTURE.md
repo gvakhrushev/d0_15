@@ -10028,3 +10028,78 @@ Exact replay, analytical provenance and source-review scope are in
 02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/INTEGRATION_REVIEW.md.
 Original primaryeadb0272 is recovered exactly after7ai removal; the old
 brief and packets are preserved. No scientific/physical status promoted.
+
+### 25 October: apply whole-clock bounds to the known-port implementation source
+
+Phase: native realization / same-task source composition. SAME PR334,
+constitutive/native-programme-v1; input054d5eeb. Parent7ai kept general
+controller heat outside fixed-middle conjugacy because its endpoint is
+not involutive. Consume OWNED7ad/TC9–12, not a new spectral campaign.
+The NEW actual s_j>=3/4 collar supplies Gamma_M>=c r zeta (9/16)^M
+M^(63/64), while the true expanded N_M>=M. Thus the owned factorial
+heat-source estimate dominates this possible exponential inverse gain.
+
+Exact intended substitution: all fixed-beta, fixed-cut/carrier/clock
+unitary gate-source directions have relative heat source bounded by
+N_M L_(N_M) B_infty,M/Gamma_M. The actual physical gate-lift norm
+B_infty,M remains explicit; gate-infinity unit norm and subfactorial
+lift give convergence without new padding. Native finite controller
+secants keep their own declared spacing. For task-preserving changes,
+feedback neutrality additionally requires the FULL actual return effect
+or full terminal law, not merely a conditional logical report. Bind this
+condition to the existing actual input/return test and FutureExecution
+profile at its supplied context coverage; do not add a test, prescribe
+Einstein output or declare arbitrary code changes correct by definition.
+
+Inputs: primary7l input/task/return effect and semantic-fibre boundary;
+7t explicit finite native domain; 7ad whole-clock controller estimates;
+7ai and known-port SOURCE_TRANSFER actual gain, norms and cofinal process;
+original Book03 bootstrap/input and existing FutureExecution transfer.
+Carrier/source: same full paired cyclic clock and original positive
+known-port determinant, fixed beta,zeta and r=4*r_old once. Norm is the
+actual gate-infinity/physical lift, independent of the field-bank norm.
+No dimension normalization or new action multiplier is introduced.
+
+Write paths: new sources/d0_known_port_task_source_2026-10-25/ packet,
+primary7aj and this brief only. Disjoint bounded same-PR assistants:
+HEAT_TRANSFER.md for the analytic source estimate, TASK_MAP.md for the
+actual operational fibre and its retained assumptions; root owns primary,
+small changed-calculation checker, receipt and pinned integration review.
+Decisive check: actual gain LOWER bound plus factorial clock estimate,
+including true norm/spacing and hostile growing-beta/lift/moving-cut
+cases; operator-polarization test of the actual return law, with a
+conditional-report countercontrol. Existing native32/64/READY/root/
+Cartan/Lean suites are not replayed. This changes a named heat-source
+component; arbitrary non-task feedback, additional scene/Cost/Info/work,
+free clocks/cuts/stopping and physical admission retain their equations.
+No exact finite native stationary root or GR_closed promotion is claimed.
+
+Actual return-test application: use the OWNED balanced final-label copy
+of7f/7l before sealing each new private block, never copy or invert an
+already immutable oldRIGHT record. Both native CX legs are paid. A
+k-bit recording bank gives U'_j=D_j(U_j tensor I_record)D_j, actual
+N'_j=N_j+2k, full fibre dimension multiplied by2^k and unchanged
+protected corner at the known blank input. Retain the shared-helper
+boundary and full unconditioned joint record event; a port-only marginal
+is not the complete return. Any internal observer/predicate/Cost/Info
+work beyond this recorded Book sector remains separately priced.
+This is an actual use of existing registration, not a new correct-task
+selector. The literal palette has stronger algebra than mere Li
+commutation: U=A tensor I+B tensor Li, so on ALL-ACTIVE-known-blank
+input C=aI+bLi and F=(1-a²-b²)I. A single ACTUAL full-return law fixes
+F in this scope. It does not identify full future profiles or the
+arbitrary-bank logical subroutine law. New small native9-stage +/-
+complex corners, their27-stage future context and real13-stage balanced
+recording are decisive controls of those distinctions; they are not
+old native/geometry replays or new GR stationary roots.
+
+Known-port task-source checkpoint: primary7aj9239bytes/SHA256
+7ce0153406c8d6b163e059eae5046da4d0a750da9558d8b10ab9e1be6f0d48be.
+RootfinalCLIexit0/PASS27, stdoutidentical;16source and6section pins
+verified. Receipt9457bytes/SHA256
+2c42e2bb5403bbc950d66f9e17843b127a8dd1bef6fa571af5382ff35b9be654.
+Replay, actual recording/cut map, inherited pins and source-review scope:
+02_REGISTRY/research/sources/d0_known_port_task_source_2026-10-25/INTEGRATION_REVIEW.md.
+Original primary054d5eeb and oldbrief preserved; no physical or registry
+status promoted. Actual extra scene/Cost/Info/work and independently
+selected task/variation/stopping rows remain open; GR_closed=false.
