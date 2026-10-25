@@ -2886,3 +2886,45 @@ is published on PR #402 at commit `99c4bba26f43f374dc558f9c5678be2a529229b5`;
 remote Git tree blob IDs match all three changed artifacts. GitHub `guards`
 (run `40153040215`) and `lean-build` (run `40153040195`) both passed on that
 head. This updates no Lean source digest and is not a final `D0.All` replay.
+
+### Compiled exact-name locators for the conditional redshift passport (25 October 2026)
+
+The `D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001` row used theorem atoms
+without the namespace declared by its Lean source. I changed only its
+`lean_theorem` locator field to the two fully qualified names
+`D0.Bridge.BridgeAssumption.represented_physicalOnePlusRedshift_eq_internal`
+and `D0.Bridge.BridgeAssumption.represented_physical_redshift_drift_relation`;
+the import-module locator remains
+`D0.Bridge.PhysicalRedshiftDetection`. The status remains
+`LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS`, and the row retains
+`ASSUMP-PREREGISTERED-SELF-RETURN-FREQUENCY-REPRESENTATION`.
+
+Both names resolve in the compiled `D0.All` environment as theorem
+declarations owned by `D0.Bridge.PhysicalRedshiftDetection`, at source lines
+22 and 30 of `03_FORMALIZATION/D0/Bridge/PhysicalRedshiftDetection.lean`.
+Their compiled types quantify over a
+`PreregisteredSelfReturnFrequencyRepresentation` and a
+`FrequencyComparison`; the first equates the represented physical ratio to
+the internal ratio, and the second states the represented one-tick drift law.
+These signatures expose the external protocol representation required by the
+claim. They do not establish that an actual apparatus supplies it.
+
+The regenerated all-claims resolution artifact is
+`sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json`,
+SHA-256 `400cfc7f3dfe82619579bb4599fdbed9301e9f839a7a91b1d776e4b37604ba4f`.
+It records snapshot `2d839f582ffe84763a9ac487c7060a9e32f8e4e1`
+(`worktree_dirty=true`), Lean source digest
+`b76d89ea4cc4e983eeb80ff1fa2784eaf147e0a8a5ec4521a60d936711d80976`, claims
+registry SHA-256 `6566b397c0ca892ea278466da1b2c717fe230bd1b87c8ee358a1f276ee8e1b57`,
+collector SHA-256
+`7d84b5232692eb49f44de507610990c584b9417c5938f7e0706049ffdba81bce`, and
+Lean 4.30.0. The two corrected names now resolve as exact single-name
+candidates. The inventory contains 889 claim rows and 2,747 locator mappings;
+2,508 of 8,313 unique exact names resolve. These are locator counts, not
+semantic coverage.
+
+`generate_lean_views.py --check` passes, and the compiled inventory query
+built `D0.All` successfully. The change updates no assembly result,
+application receipt, or physical assumption. No reviewed consumer edge was
+found for this claim in the current assembly registry, so no parent obligation
+is discharged by this locator correction.

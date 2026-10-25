@@ -1643,7 +1643,7 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "dynamic_shares_partition_unity;dynamic_archive_share_eq_redshift_fraction;first_dynamic_archive_share_eq_golden_trace;dynamic_measure_ne_static_dimension_share;self_unfolding_observable_relations",
       leanStatus := "LEAN_PROVED", releaseStatus := "CORE-FORMALIZED", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001", moduleName := "D0.Bridge.PhysicalRedshiftDetection",
-      theoremName := "represented_physicalOnePlusRedshift_eq_internal;represented_physical_redshift_drift_relation",
+      theoremName := "D0.Bridge.BridgeAssumption.represented_physicalOnePlusRedshift_eq_internal;D0.Bridge.BridgeAssumption.represented_physical_redshift_drift_relation",
       leanStatus := "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS", releaseStatus := "BRIDGE-ASSUMPTIONS-EXPLICIT", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001", moduleName := "D0.Cosmology.PhysicalRedshiftDetectionPassport",
       theoremName := "rawProtocolForRatio;raw_double_detection_realises_every_positive_ratio;raw_double_detection_does_not_force_redshift;rival_redshift_requires_relativeCalibration_defect",

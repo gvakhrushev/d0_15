@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "5c1d07ab4a743eefcf6d42b9f9c47c6f53ccb50d",
+  "snapshot_commit": "2d839f582ffe84763a9ac487c7060a9e32f8e4e1",
   "worktree_dirty": true,
-  "claim_registry_sha256": "8ba9bfbac99a5fe0d8e8f2b6ef8d69f3190f8c1073051eca9f005e5a93b578cf",
-  "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
-  "collector_sha256": "2ceba4405c8b46ac0cc924318d33955e59b7a3296be9a88afb57dfb8f4451818",
+  "claim_registry_sha256": "6566b397c0ca892ea278466da1b2c717fe230bd1b87c8ee358a1f276ee8e1b57",
+  "lean_source_digest": "b76d89ea4cc4e983eeb80ff1fa2784eaf147e0a8a5ec4521a60d936711d80976",
+  "collector_sha256": "7d84b5232692eb49f44de507610990c584b9417c5938f7e0706049ffdba81bce",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": true,
@@ -17702,21 +17702,17 @@
       {
         "claim_id": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
         "module_locator": "D0.Bridge.PhysicalRedshiftDetection",
-        "theorem_atom": "represented_physicalOnePlusRedshift_eq_internal",
+        "theorem_atom": "D0.Bridge.BridgeAssumption.represented_physicalOnePlusRedshift_eq_internal",
         "candidate_names": [
-          "D0.Bridge.PhysicalRedshiftDetection.represented_physicalOnePlusRedshift_eq_internal",
-          "D0.Bridge.represented_physicalOnePlusRedshift_eq_internal",
-          "D0.represented_physicalOnePlusRedshift_eq_internal"
+          "D0.Bridge.BridgeAssumption.represented_physicalOnePlusRedshift_eq_internal"
         ]
       },
       {
         "claim_id": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
         "module_locator": "D0.Bridge.PhysicalRedshiftDetection",
-        "theorem_atom": "represented_physical_redshift_drift_relation",
+        "theorem_atom": "D0.Bridge.BridgeAssumption.represented_physical_redshift_drift_relation",
         "candidate_names": [
-          "D0.Bridge.PhysicalRedshiftDetection.represented_physical_redshift_drift_relation",
-          "D0.Bridge.represented_physical_redshift_drift_relation",
-          "D0.represented_physical_redshift_drift_relation"
+          "D0.Bridge.BridgeAssumption.represented_physical_redshift_drift_relation"
         ]
       },
       {
@@ -55162,34 +55158,16 @@
       "source_path": null
     },
     {
-      "exists": false,
-      "name": "D0.Bridge.PhysicalRedshiftDetection.represented_physicalOnePlusRedshift_eq_internal",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Bridge.PhysicalRedshiftDetection",
+      "name": "D0.Bridge.BridgeAssumption.represented_physicalOnePlusRedshift_eq_internal",
+      "source_path": "03_FORMALIZATION/D0/Bridge/PhysicalRedshiftDetection.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Bridge.represented_physicalOnePlusRedshift_eq_internal",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.represented_physicalOnePlusRedshift_eq_internal",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Bridge.PhysicalRedshiftDetection.represented_physical_redshift_drift_relation",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Bridge.represented_physical_redshift_drift_relation",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.represented_physical_redshift_drift_relation",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Bridge.PhysicalRedshiftDetection",
+      "name": "D0.Bridge.BridgeAssumption.represented_physical_redshift_drift_relation",
+      "source_path": "03_FORMALIZATION/D0/Bridge/PhysicalRedshiftDetection.lean"
     },
     {
       "exists": true,
