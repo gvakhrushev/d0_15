@@ -2080,6 +2080,23 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Topology.abstract_shift_commute_implies_diagonal_constant",
             diagonal["proof_dependencies"],
         )
+        matter_step = declarations["D0.Matter.diag_eq_of_comm_shift"]
+        self.assertIn(
+            "D0.Topology.commute_with_shift_step",
+            matter_step["proof_dependencies"],
+        )
+        matter_iterate = declarations["D0.Matter.diag_eq_of_comm_shift_k"]
+        self.assertIn(
+            "D0.Topology.commute_with_shift_iterate",
+            matter_iterate["proof_dependencies"],
+        )
+        matter_uniform = declarations[
+            "D0.Matter.partial_trace_density_uniform_under_shift"
+        ]
+        self.assertIn(
+            "D0.Topology.abstract_shift_commute_implies_diagonal_constant",
+            matter_uniform["proof_dependencies"],
+        )
         self.assertTrue(all(
             "sorryAx" not in axiom
             for name in (
@@ -2089,6 +2106,9 @@ class ProofArchitectureTests(unittest.TestCase):
                 "D0.Geometry.shift_matrix_mul_left",
                 "D0.Geometry.commute_with_shift_k",
                 "D0.Geometry.commute_with_shift_implies_diagonal_constant",
+                "D0.Matter.diag_eq_of_comm_shift",
+                "D0.Matter.diag_eq_of_comm_shift_k",
+                "D0.Matter.partial_trace_density_uniform_under_shift",
             )
             for axiom in declarations[name]["axioms"]
         ))
@@ -2098,6 +2118,8 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in proof.load_dataset(proof.ROOT)["formal_support"]
         }
         self.assertIn("D0/Geometry/ArchivePhaseShift.lean",
+                      support["D0.Topology.ArchiveShiftTopology"]["referenced_by"])
+        self.assertIn("D0/Matter/ArchivePartialTrace.lean",
                       support["D0.Topology.ArchiveShiftTopology"]["referenced_by"])
 
     def test_archive_shift_reuse_is_discoverable_from_a_cold_start_query(self) -> None:

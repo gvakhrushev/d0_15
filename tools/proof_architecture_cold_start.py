@@ -596,6 +596,7 @@ CASES: list[dict[str, Any]] = [
         "queries": [
             "ArchiveTopology abstract_shift_commute_implies_diagonal_constant shiftMatrix commute_with_shift_iterate",
             "ArchivePartialTrace density_uniform_from_commute commute_with_shift_implies_diagonal_constant",
+            "Fin finRotate cyclicShiftMatrix finRotateArchiveTopology partial_trace_density_uniform_under_shift",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
@@ -608,12 +609,13 @@ CASES: list[dict[str, Any]] = [
             {"path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
              "scope_query_indexes": [0, 1]},
             {"path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
-             "scope_query_indexes": [1]},
+             "scope_query_indexes": [1, 2]},
         ],
         "scope_review": (
             "For a finite carrier, a transitive permutation, and exact commutation with its shift matrix, "
-            "the generic theorem forces constant diagonal. The ZMod n adapter proves the cyclic action "
-            "is transitive and retains the existing public names. This is an algebraic matrix result only."
+            "the generic theorem forces constant diagonal. ZMod n and Fin n adapters reuse the generic "
+            "step, iterate and transitivity results while retaining existing public names. This is an "
+            "algebraic matrix result only."
         ),
     },
 ]

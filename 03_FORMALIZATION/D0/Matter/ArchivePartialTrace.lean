@@ -2,11 +2,13 @@ import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Data.Fintype.Basic
 import Mathlib.Data.Real.Basic
+import Mathlib.Logic.Equiv.Fin.Rotate
 import D0.Algebra.FiniteMatrixPartialTrace
 import D0.Matter.LocalTraceSource
 import D0.Matter.RepresentationCarrier
 import D0.Spectrum.GenerationTensorExactness
 import D0.Geometry.ArchivePhaseShift
+import D0.Topology.ArchiveShiftTopology
 
 open scoped BigOperators
 
@@ -30,68 +32,75 @@ theorem partial_trace_commutes_with_shift {V N : Type} [Fintype V] [DecidableEq 
   apply D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor
   simpa [kronecker_I_C, D0.Spectrum.tensor_product_I] using h_comm
 
+private lemma cyclicShiftMatrix_eq_topology_shift {n : Nat} :
+    D0.Spectrum.cyclicShiftMatrix n = D0.Topology.shiftMatrix (finRotate n) := by
+  ext i j
+  have h_rotate : (finRotate n i).val = (i.val + 1) % n := by
+    rw [finRotate_apply]
+    simp [Fin.val_add]
+  change (if j.val = (i.val + 1) % n then (1 : ℝ) else 0) =
+    (if j = finRotate n i then 1 else 0)
+  have h_condition : j.val = (i.val + 1) % n ↔ j = finRotate n i := by
+    constructor
+    · intro h_val
+      exact Fin.ext (h_val.trans h_rotate.symm)
+    · intro h_eq
+      subst j
+      exact h_rotate
+  simp [h_condition]
+
+private lemma shift_g_one_eq_finRotate {n : Nat} [NeZero n] (i : Fin n) :
+    D0.Spectrum.shift_g i 1 = finRotate n i := by
+  apply Fin.ext
+  change (i.val + 1) % n = (finRotate n i).val
+  rw [finRotate_apply]
+  simp [Fin.val_add]
+
+private lemma shift_g_eq_finRotate_iterate {n : Nat} [NeZero n] (i : Fin n) (k : Nat) :
+    D0.Spectrum.shift_g i k = ((finRotate n : Fin n → Fin n)^[k]) i := by
+  induction k with
+  | zero =>
+      rw [D0.Spectrum.shift_g_zero]
+      rfl
+  | succ k ih =>
+      rw [D0.Spectrum.shift_g_step, shift_g_one_eq_finRotate]
+      rw [Function.iterate_succ', ih]
+      rfl
+
+private def finRotateArchiveTopology {n : Nat} [NeZero n] :
+    D0.Topology.ArchiveTopology (Fin n) where
+  shift := finRotate n
+  is_single_orbit := by
+    intro i j
+    let k := j.val + n - i.val
+    refine ⟨k, ?_⟩
+    have h_val : (i.val + (j.val + n - i.val)) % n = j.val := by
+      have h_sum : i.val + (j.val + n - i.val) = j.val + n := by omega
+      rw [h_sum, Nat.add_mod_right]
+      exact Nat.mod_eq_of_lt j.isLt
+    have h_shift : D0.Spectrum.shift_g i k = j := Fin.ext h_val
+    rw [shift_g_eq_finRotate_iterate] at h_shift
+    exact h_shift
+
 lemma diag_eq_of_comm_shift {n : Nat} [NeZero n] (A : Matrix (Fin n) (Fin n) ℝ)
     (h : A * (D0.Spectrum.cyclicShiftMatrix n) = (D0.Spectrum.cyclicShiftMatrix n) * A) (i : Fin n) :
     A i i = A (D0.Spectrum.shift_g i 1) (D0.Spectrum.shift_g i 1) := by
-  let target : Fin n := D0.Spectrum.shift_g i 1
-  have h_comm_v := congr_fun (congr_fun h i) target
-  rw [Matrix.mul_apply, Matrix.mul_apply] at h_comm_v
-  unfold D0.Spectrum.cyclicShiftMatrix at h_comm_v
-  have h_lhs : (∑ j : Fin n, A i j * (if target.val = (j.val + 1) % n then (1 : ℝ) else 0)) = A i i := by
-    rw [Finset.sum_eq_single i]
-    · simp [target, D0.Spectrum.shift_g]
-    · intro j _ hne
-      have h_ne_mod : target.val ≠ (j.val + 1) % n := by
-        intro h_eq
-        have h_eq_val : i.val = j.val := by
-          have h_t_val : target.val = (i.val + 1) % n := rfl
-          have hi := i.isLt
-          have hj := j.isLt
-          have hn : n > 0 := Nat.pos_of_ne_zero (NeZero.ne n)
-          have h_i_cases : i.val + 1 < n ∨ i.val + 1 = n := by omega
-          have h_j_cases : j.val + 1 < n ∨ j.val + 1 = n := by omega
-          rcases h_i_cases with hi1 | hi2
-          · rcases h_j_cases with hj1 | hj2
-            · rw [Nat.mod_eq_of_lt hi1] at h_t_val
-              rw [Nat.mod_eq_of_lt hj1] at h_eq
-              omega
-            · rw [Nat.mod_eq_of_lt hi1] at h_t_val
-              rw [hj2, Nat.mod_self] at h_eq
-              omega
-          · rcases h_j_cases with hj1 | hj2
-            · rw [hi2, Nat.mod_self] at h_t_val
-              rw [Nat.mod_eq_of_lt hj1] at h_eq
-              omega
-            · omega
-        exact hne (Fin.ext h_eq_val).symm
-      rw [if_neg h_ne_mod, mul_zero]
-    · intro h
-      exact False.elim (h (Finset.mem_univ _))
-  have h_rhs : (∑ j : Fin n, (if j.val = (i.val + 1) % n then (1 : ℝ) else 0) * A j target) = A target target := by
-    rw [Finset.sum_eq_single target]
-    · simp [target, D0.Spectrum.shift_g]
-    · intro j _ hne
-      have h_ne_val : j.val ≠ (i.val + 1) % n := by
-        intro h_eq
-        unfold target D0.Spectrum.shift_g at hne
-        exact hne (Fin.ext h_eq)
-      rw [if_neg h_ne_val, zero_mul]
-    · intro h
-      exact False.elim (h (Finset.mem_univ _))
-  rw [h_lhs, h_rhs] at h_comm_v
-  exact h_comm_v
+  have h_topology : A * D0.Topology.shiftMatrix (finRotate n) =
+      D0.Topology.shiftMatrix (finRotate n) * A := by
+    simpa [cyclicShiftMatrix_eq_topology_shift] using h
+  have h_step := D0.Topology.commute_with_shift_step A (finRotate n) h_topology i
+  rw [shift_g_one_eq_finRotate]
+  exact h_step
 
 lemma diag_eq_of_comm_shift_k {n : Nat} [NeZero n] (A : Matrix (Fin n) (Fin n) ℝ)
     (h : A * (D0.Spectrum.cyclicShiftMatrix n) = (D0.Spectrum.cyclicShiftMatrix n) * A) (i : Fin n) (k : Nat) :
     A i i = A (D0.Spectrum.shift_g i k) (D0.Spectrum.shift_g i k) := by
-  induction k with
-  | zero =>
-    rw [D0.Spectrum.shift_g_zero]
-  | succ k ih =>
-    rw [ih]
-    have h_step := diag_eq_of_comm_shift A h (D0.Spectrum.shift_g i k)
-    rw [D0.Spectrum.shift_g_step]
-    exact h_step
+  have h_topology : A * D0.Topology.shiftMatrix (finRotate n) =
+      D0.Topology.shiftMatrix (finRotate n) * A := by
+    simpa [cyclicShiftMatrix_eq_topology_shift] using h
+  have h_iterate := D0.Topology.commute_with_shift_iterate A (finRotate n) h_topology i k
+  rw [← shift_g_eq_finRotate_iterate] at h_iterate
+  exact h_iterate
 
 theorem partial_trace_density_uniform_under_shift {V : Type} [Fintype V] {n : Nat} [NeZero n]
     (M : Matrix (V × Fin n) (V × Fin n) ℝ)
@@ -99,14 +108,11 @@ theorem partial_trace_density_uniform_under_shift {V : Type} [Fintype V] {n : Na
     ∀ i j : Fin n, (partialTraceV M) i i = (partialTraceV M) j j := by
   intro i j
   let A := partialTraceV M
-  have h_eq := diag_eq_of_comm_shift_k A h_comm i (j.val + n - i.val)
-  have h_val : (i.val + (j.val + n - i.val)) % n = j.val := by
-    have : i.val + (j.val + n - i.val) = j.val + n := by omega
-    rw [this, Nat.add_mod_right]
-    exact Nat.mod_eq_of_lt j.isLt
-  have : D0.Spectrum.shift_g i (j.val + n - i.val) = j := Fin.ext h_val
-  rw [this] at h_eq
-  exact h_eq
+  have h_topology : A * D0.Topology.shiftMatrix (finRotate n) =
+      D0.Topology.shiftMatrix (finRotate n) * A := by
+    simpa [A, cyclicShiftMatrix_eq_topology_shift] using h_comm
+  exact D0.Topology.abstract_shift_commute_implies_diagonal_constant
+    A finRotateArchiveTopology h_topology i j
 
 theorem archive_density_from_total_trace {V : Type} [Fintype V] {n : Nat} [NeZero n]
     (M : Matrix (V × Fin n) (V × Fin n) ℝ) (R : MatterRep)

@@ -6920,3 +6920,24 @@ and `D0 guards` run [5226](https://github.com/gvakhrushev/d0_15/actions/runs/402
 both passed on published head `8c8f8a100d5784e51463a0e97a3f05594b729619`.
 The execution remains on open Draft PR #402 and task lifecycle
 `IN_PROGRESS`; no merge or physical-closure claim is made.
+
+### Fin-indexed archive-shift consumers use the same topology API
+
+The `Fin n` partial-trace path now adapts Mathlib's `finRotate` to the existing
+`D0.Spectrum.cyclicShiftMatrix`, proving their matrix equality once. Its
+one-step diagonal lemma delegates to
+`D0.Topology.commute_with_shift_step`; the `k`-step lemma delegates to
+`commute_with_shift_iterate`. The concrete `Fin n` cyclic-orbit witness is
+retained as a private `ArchiveTopology` adapter, and
+`partial_trace_density_uniform_under_shift` now delegates to
+`abstract_shift_commute_implies_diagonal_constant`. The public lemma names and
+types are unchanged, including the existing `NeZero n` scope.
+
+`formal_support.csv` now lists `ArchivePartialTrace.lean` as a direct consumer
+of `ArchiveShiftTopology.lean`. The existing archive-shift cold-start case
+also queries the `Fin n` specialization, and its compiled declaration
+regression checks that the old public statements depend on the generic step,
+iterate and transitivity theorems. The narrow build of
+`D0.Matter.ArchivePartialTrace` passes **2,981/2,981** jobs. This remains an
+algebraic partial-trace result: it does not select a physical shift or close a
+physical GR premise.
