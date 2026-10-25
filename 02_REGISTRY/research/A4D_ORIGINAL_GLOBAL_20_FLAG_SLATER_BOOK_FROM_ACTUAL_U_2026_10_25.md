@@ -1,8 +1,8 @@
-# D0 → GR: one GLOBAL twenty-fair-bit flag + the ORIGINAL U gives EXACT Book feedback as ONE closed Born all-no-archive event, with no matrix-root compiler
+# D0 → GR: ONE global-time native U with per-MODE twenty-bit flags yields exact Slater Book no-archive Born determinant; a shared flag does NOT
 
 25 October 2026. New positive **whole-original-operator** mathematical construction in scientific Draft #334. Consume original Books00–03 closed retained/traced split and fixed \(\zeta=2^{-20}\); original full128 prepared Stinespring unitary \(U\), all its true Kraus/future memory from \`A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md\`; already implemented retained 20-fair-bit detector/Boolean control in \`sources/d0_native_joint_field_minimum_2026-10-20/inputs/GOLDEN_EXACT_DETECTOR.md\`; exact closed Slater/event probability \`A4D_CLOSED_FEEDBACK_NO_RETURN_PROBABILITY_AND_CANONICAL_RECIPROCAL_DUALITY_2026_10_25.md\`; original future-even CAR algebra \`A4D_ORIGINAL_FULL128_THREE_TICK_CANONICAL_FUTURE_EVEN_ALGEBRA_2026_10_22.md\`.
 
-**NEW parent advance:** Remove the ENTIRE field-dependent matrix-square-root gate from the closed Slater no-return proposal. The exact original Book \(-\log\det(I-\zeta F)\) is the Born self-information of a **single global controlled execution of the ACTUAL original full unitary \(U\)**, with all 20 fair-bit flags and all original P/Q archive/failure outcomes retained. There is no chosen eigenbasis, no new likelihood kernel, no postselection, no data reset, no independent free reference sector, no fitted Einstein action and no new continuous efficiency \(\zeta\).
+**NEW parent advance:** Remove the ENTIRE field-dependent matrix-square-root gate from the closed Slater no-return proposal. The exact original Book \(-\log\det(I-\zeta F)\) is the Born self-information of a **one global-IN-TIME **one-particle** controlled execution of the ACTUAL original full unitary \(U\)**, with independent internal twenty-bit flags in the one-particle representation (not one 20-bit control physically shared by all d fermions) and all original P/Q archive/failure outcomes retained. There is no chosen eigenbasis, no new likelihood kernel, no postselection, no data reset, no independent free reference sector, no fitted Einstein action and no new continuous efficiency \(\zeta\).
 
 **Physical boundary:** the *logical* controlled-\(U\) and Slater exterior-power test are fully specified mathematically, not proved a presently admitted and correctly paid raw original G/CX/SourceI/Julia128 circuit for the ORIGINAL full protected-state family. The 20 fair-bit preparation, the controller, AND predicate, each false column, filled exterior-power preparation, extra clock/Hodge and actual future-retained history must all be included in an actual physical executable if the Book determinant is to be FORCED by M1. We do not assume that having a complete original \(U\) automatically supplies the controlled-\(U\) word for free. \`GR_closed=false; full_D0_action_selected=false\`.
 
@@ -24,14 +24,14 @@ The literal all-ones predicate \(\Pi=|1^{20}\rangle\langle1^{20}|\) has
 \langle\chi_{20}|\Pi|\chi_{20}\rangle=2^{-20}=\zeta.
 \tag{2}
 \]
-On the **complete** Hilbert \(H_{\rm flags}\otimes H\) define one global controlled ORIGINAL unitary
+On the **complete ONE-PARTICLE** Hilbert \(H_{\rm flags}\otimes H\) define one global-IN-TIME controlled ORIGINAL unitary
 \[
 \boxed{
 \mathcal U_{\rm global}
 =(I_{\rm flags}-\Pi)\otimes I_H+\Pi\otimes U.
 }\tag{3}
 \]
-It is unitary on ALL \(2^{20}\dim H\) columns, including all non-event flag words and all originally dark/failure/oldRIGHT columns. The source input is the real prepared isometry \(i|\psi\rangle=|\chi_{20}\rangle\otimes|\psi\rangle\), \(\psi\in P H\). The **no-entry-into-original-archive** projection is \(R=I_{\rm flags}\otimes P\). The exact complete prepared effect is
+It is unitary on ALL \(2^{20}\dim H\) columns, including all non-event flag words and all originally dark/failure/oldRIGHT columns. The source input is the real prepared isometry \(i|\psi\rangle=|\chi_{20}\rangle\otimes|\psi\rangle\), \(\psi\in P H\). The **no-entry-into-original-archive** projection on the one-particle space is \(R=I_{\rm flags}\otimes P\). In the d-particle Slater representation each occupied fermion sees its OWN flag orbital/label; this is NOT one ordinary 20-bit register shared by all fermions. The exact complete prepared effect is
 \[
 \boxed{
 \begin{aligned}
@@ -67,13 +67,37 @@ i.e. the already owned original Book source, not a selected Golden source coeffi
 
 **Exact specialization to the original full128:** use the unchanged original prepared cut and whole real \(U=I-2LL^\dagger\) on the original App128×DATA×oldRIGHT support. Then \(C\) is the actual original \(K_0\), and \(K\) is precisely the column of remaining 127 original fine Kraus. Equation(4) has the original positive \(F_{\rm pre}=I-K_0^\dagger K_0\) with **ALL original nonblank conditional state orientations kept**. The strong original 16→4→2 proper-boost theorem \`A4D_ORIGINAL_CAR16_TWO_MODE_BOOK_SOURCE_AND_FUTURE_PARITY_AUDIT_2026_10_25.md\` now computes (5)/(6) as a radical-free Golden rational function on the actual proper-boost family. This does NOT identify the 16-dimensional CAR4 state with a native 16-particle Slater input, or recover the unflagged full128 fine law on the inactive flag branches.
 
+### SHARP NO-GO: a *single globally shared physical flag* is NOT the required Slater determinant
+
+The phrases "ONE global-time run of the entire U" and "ONE common control bit for ALL occupied fermions" denote DIFFERENT operations. Theorem (5) second-quantizes a **one-particle** internal flagged operator \(\mathcal U_{\rm global}\) and therefore gives a flag DEGREE OF FREEDOM to every occupied one-particle mode. A cheaper alternative uses ONE globally shared flag on the already-formed d-particle Hilbert:
+\[
+W_{\rm shared}
+=(I-\Pi)\otimes I_{\Lambda^dH}
++\Pi\otimes\Lambda^d U .
+\]
+At initial \(\chi_{20}\otimes\Omega\), the probability that ALL occupied particles stay in P is exactly
+\[
+\boxed{p_{\rm shared}=(1-\zeta)+\zeta\,\det(C^\dagger C)
+=(1-\zeta)+\zeta\,\det(I-F),}\tag{6a}
+\]
+which is GENERICALLY NOT \(\det(I-\zeta F)\).
+
+Already for d=2, \(F=\operatorname{diag}(f_1,f_2)\) with both effects nonzero,
+\[
+\boxed{
+p_{\rm shared}-p_{\rm mode\text{-}wise}
+=\zeta(1-\zeta)f_1f_2>0.
+}\tag{6b}
+\]
+The original 20 fair bits therefore do NOT automatically supply the Book determinant as one cheap shared flag. This one-line negative control is ESSENTIAL to any M1/MDL price comparison. If a D0 realization uses a shared bank, it has a different Book response and different retained memory; only a real many-body mode-wise compiler (or a proved future-faithful equivalent with full price) may claim (5). The theorem's one-particle Cauchy-Binet identity remains exact without change; its resource demand is more substantial than a naïve global-control cartoon.
+
 ## 3. THEOREM C — twenty fair bits are SHARPLY MINIMAL for the literal probability 2^-20 within THIS finite fair-word controller class
 
-If an event is defined as a deterministic Boolean subset of \(m\) *independently uniform* fair recorded bits, its probability is \(N/2^m\), \(N\) a nonnegative INTEGER. For the exact original \(\zeta=2^{-20}\), equality \(N/2^m=2^{-20}\) implies \(N=2^{m-20}\in\mathbb Z\), hence
+If an event is defined as a deterministic Boolean subset of \(m\) *independently uniform* fair recorded bits, its probability is \(N/2^m\), \(N\) a nonnegative INTEGER. For the exact original \(\zeta=2^{-20}\), PER OCCUPIED one-particle flag bank, equality \(N/2^m=2^{-20}\) implies \(N=2^{m-20}\in\mathbb Z\), hence
 \[
 \boxed{m\ge20.}\tag{7}
 \]
-The original all-ones 20-bit predicate ATTAINS that minimum with exactly one word. Any one marked 20-bit word is equivalent under a permutation of address labels; the actual original all-ones pattern fixes the physical address, and the full controller must still pay to compute/recover that predicate. This is a **real exact MDL/memory-cardinality bound relative to fair independent bit-event generators**. It does NOT derive the numerical exponent 20 from M1, exclude Golden-biased lower-bit coins or arbitrary coherent amplitude syntheses, or imply that the entire Slater compiler is globally the shortest D0 programme.
+The original all-ones 20-bit predicate ATTAINS that minimum with exactly one word. Any one marked 20-bit word is equivalent under a permutation of address labels; the actual original all-ones pattern fixes the physical address, and the full controller must still pay to compute/recover that predicate. This is a **real exact fair-bit cardinality bound PER ONE-PARTICLE controller relative to fair independent bit-event generators**. It is NOT a 20-bit bound on the complete d-fermion apparatus: a direct distinguishable-mode implementation may require d such banks; more efficient actual second-quantized native programmes remain a separate unproved question. It does NOT derive the numerical exponent 20 from M1, exclude Golden-biased lower-bit coins or arbitrary coherent amplitude syntheses, or imply that the entire Slater compiler is globally the shortest D0 programme.
 
 ## 4. THEOREM D — noncommuting two-tick history NEGATIVE CONTROL: independent flags are NOT one global native Book source
 
