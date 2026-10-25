@@ -11977,3 +11977,18 @@ not remote CI or physical acceptance. Removing7be plus its embedded
 check restores incoming20baaf62 primary BYTE EXACT; incoming brief is
 an exact prefix. Combined insertion25105bytes, SHA256
  f8ede69cd10fb20ea6922e8b3b44a2ab69362d7b0747482265e3d961008e1480.
+
+Original-domain clarification (same7be; source-only, no changed calculation):
+Book01 §01.0 supplies a typed retained/traced cut; Book03 §03.0/03.8
+requires admissible finite scene variations, not all Grassmannian WORK
+rotations. The explicit nonzero WORK normal is therefore a diagnostic,
+NOT an automatically missing physical Euler row. A fixed actual task may
+keep WORK cold. The remaining map is H_ret ≅ ran(i_W), with the same
+full input family, tick/readback and actual field/source/gate variations.
+The fixed-P conjugation lifting that normal also needs native admission;
+no unknown-source projector oracle is granted. This removes an unsupported
+extra condition rather than declaring the needed shared-execution map
+proved. Native_valuation_map traced the original lines; integrator checked
+Book01:28–39 and Book03:29–33,385–393,1137. The pinned19110-byte proof
+and4669-byte checker are unchanged. Only source-text/whitespace validation
+is needed for this clarification; no duplicate mathematical replay.

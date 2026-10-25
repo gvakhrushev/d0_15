@@ -15488,6 +15488,43 @@ print('lambda_echo(sigma=+1,q_m=q_g)=',sp.N(lam,24))
 print('effect upper bound=',sp.N(upper,18),'bad_weight_nonzero_entries=',np.count_nonzero(bad))
 ```
 
+### Original variation domain: the WORK control is not an extra mandatory Euler premise
+
+Source-domain clarification after the pinned proof. [Book01](../../01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md)
+§01.0 supplies the retained/traced split and P_N,Q_N.
+[Book03](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md)
+§03.0 differentiates ADMISSIBLE finite variations; §03.8 names the finite
+scene variables X_N without identifying their tangent space with all
+unitary or Grassmannian directions. Its §03.25 rank evolution is discrete.
+Consequently the nonzero WORK-cut control after478 is a diagnostic in a
+larger mathematical domain, NOT an established missing physical Euler
+row. Requiring its cancellation without proving native admission would
+add an unsupported premise to the parent route.
+
+For this construction the exact candidate is
+ i_W=(W tensor I_RIGHT)^tensor4 tensor I_old tensor |0_WORK>,
+ P_cold=i_W i_W^T.
+Once that ENTIRE input family is physically specified, its support span
+fixes this cut by the already-owned7l support result. A fixed task may
+keep WORK cold. Conversely the sources do not say that P is fixed under
+EVERY change of native history; genuine cut changes must come from the
+actual retained/task/history map. One pure preparation does not establish
+the entire free input span. The concrete application is
+ H_N^ret isomorphic to ran(i_W)
+with the same full RIGHT, source Gram, return comparison and native tick,
+and the joint field/source/gate variation map. Book03 §03.26.1's actual
+blank-port/arbitrary-spin prototype is a different supplied input span;
+its apparatus/admission assumptions are retained.
+
+Even a fixed-P reformulation of the diagnostic does not manufacture
+admission. With n=(I-P)Ui/sqrt(F0) and K=n i^T-i n^T, the mathematical
+family U(t)=exp(-tK) U exp(tK) remains involutive and reproduces the
+same nonzero corner derivative. But K depends on the source and leakage
+subspaces; no primitive actuation or unknown-source projector oracle
+has been established for it. Thus neither form is a proved obstruction
+to the actual X_N. The route keeps ONE shared-execution/domain application,
+not a newly required unrestricted-WORK stationarity theorem.
+
 ## 8. Reproduction
 
 Run from this directory:
