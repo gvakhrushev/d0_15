@@ -99,10 +99,8 @@ check(vanish(sp.trace(m)-s),"ALL-r rational sum of original 2 eigenvalues")
 check(vanish(m.det()-t),"ALL-r rational product of original 2 eigenvalues")
 check(vanish(sp.trace(m2)-s) and vanish(m2.det()-t),
       "even and odd active 2x2 sectors EXACT isospectral")
-check(vanish(a4*a4+3*nu*nu*sp.eye(4)/128-
-             sp.kronecker_product(sp.eye(2),sp.eye(2))
-             * (a4*a4+3*nu*nu*sp.eye(4)/128)),
-      "trivial reference field unchanged") # explicit no-op structural guard
+check(vanish(a4*parA+parA*a4),
+      "original two-mode Walsh a01 is parity ODD, not an arbitrary 4x4")
 
 Gamma2=cs[2]+cs[2].T
 par=sp.diag(*[(-1)**i.bit_count() for i in range(16)])
@@ -140,12 +138,12 @@ for rv,nv in samples:
     check(vanish(D*Gamma2-Gamma2*D) and
           vanish(D*par-par*D),
           "true original feedback even and parity-conjugate")
-    check(vanish(small.charpoly().as_expr().subs(
-        {"lambda":sp.symbols("u")}) -
-        (sp.symbols("u")**2-s.subs({r:rv,nu:nv})*sp.symbols("u")+
-         t.subs({r:rv,nu:nv}))**2) if False else
-        vanish(sp.trace(m.subs({r:rv,nu:nv}))-s.subs({r:rv,nu:nv})),
-        "nontrivial native two-mode quadratic internal invariant")
+    char_x=sp.symbols("x")
+    s_num=s.subs({r:rv,nu:nv})
+    t_num=t.subs({r:rv,nu:nv})
+    check(vanish(small.charpoly(char_x).as_expr()-
+                 (char_x*char_x-s_num*char_x+t_num)**2),
+          "ACTUAL original 4x4 graded CAR charpoly is exact quadratic squared")
     # Per-parity feedback determinants are provably identical, without
     # ever discarding one parity from the genuine future-complete task.
     Fb=4*p*p*D*(eye16-p*p*D)
