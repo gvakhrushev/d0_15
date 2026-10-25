@@ -5669,7 +5669,11 @@ acceptance. The independent review accepts artifact integrity and the stated
 finite scope only; it does not accept the claim semantics, freeze C0, or close
 a physical premise.
 
-### Conservative C0 claim-source candidate resolution (25 October 2026)
+### Historical C0 claim-source candidate snapshot at `6a160a11` (25 October 2026)
+
+This subsection preserves the first regenerated snapshot. It is superseded as
+the current view by the `eb405cbd` checkpoint below; its counts and artifact
+hash refer only to the historical snapshot.
 
 The claim-source view previously labeled 170 rows `malformed_locator` because
 each listed multiple books but only one descriptive section string. The new
@@ -5684,7 +5688,7 @@ text, with a one-term locator requiring its single term. This keeps malformed
 source syntax, missing exact headings, and unreviewed search suggestions
 distinct.
 
-The refreshed view is
+The historical view is
 `02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`
 (SHA-256
 `81b8fe55cb2afee4b99d1c9ce941399ad842a4fa99c2fa0d68df8448018580ef`),
@@ -5693,7 +5697,7 @@ SHA-256 is
 `cb4d6c92b777d5daeb590d952dc8dd9de6bb81e681237179916a458a30b54d52`, and the
 `claims.csv` SHA-256 remains
 `f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003`.
-For the same 889 claim rows, the view now reports 94 exact unique rows, four
+For the same 889 claim rows, that snapshot reports 94 exact unique rows, four
 partial rows, zero ambiguous rows, 781 unresolved rows, 10 non-book rows and
 zero malformed rows. Its 731 actual locator pairs are unchanged: 116 exact
 unique and 615 unresolved. The 170 shared-book rows remain unresolved with no
@@ -5780,3 +5784,63 @@ four locator terms. Book 05 has no candidate. The source row is recorded in
 `BOOK_05/06` locator remains unresolved and unpaired. This changes candidate
 retrieval only: it does not assign the Book 06 source, update the claim row,
 change status or owner, accept C0, or close a physical premise.
+
+### Source-candidate and compiled Bianchi checkpoint at `eb405cbd` (25 October 2026)
+
+The checkpoint candidate view is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`
+(SHA-256
+`218ef724270ae90c4cf88a6d6e6b10c9ccd2dde1bb841713a62d08920fbacf8d`),
+generated cleanly from snapshot `eb405cbd36c591203efe867526ccef2e3e173a5c`
+with collector SHA-256
+`c18c5e32cc3176c0a2527627f1e4a56681acfffa13ebf11469522c36b547d93d`.
+`claims.csv` remains pinned by SHA-256
+`f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003`.
+Across the same 889 claim rows it reports 94 exact unique, four partial, zero
+ambiguous, 781 unresolved, 10 non-book and zero malformed rows. There are 731
+locator pairs (116 exact unique, 615 unresolved), 170 unresolved unpaired
+multi-book rows, 380 rows with ranked heading candidates, and 711 ranked
+candidates. These remain retrieval counts, not source acceptance or C0
+coverage.
+
+The resolver at this checkpoint requires at least one matched locator term in the
+heading and at least 75% of the locator terms in that section's text. Numeric
+section IDs still receive no lexical fallback when their exact heading is
+absent. For `D0-GRADED-BIANCHI-EXACT-001`, Book 06 §06.32.1 is surfaced as an
+unreviewed lexical candidate matching all four terms (`graded`, `incidence`,
+`bianchi`, `closure`); Book 05 has no candidate. The shared `BOOK_05/06`
+locator remains unresolved and unpaired. The current row records the source
+key against `eb405cbd` and the matching Book 06 blob; no source pairing or
+semantic claim acceptance is inferred.
+
+The checkpoint compiled declaration inventory is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/d0_graded_bianchi_compiled_claim_reuse_current_2026-10-25.json`
+(SHA-256
+`6ad6daa9d57630a96322d9849b643ea29f7526cde419fbfd69808c27e0af1eaf`). It
+was collected cleanly at the same snapshot with public import root
+`D0.Gauge.GradedBianchiIdentity`, Lean source digest
+`8909eebca5df94b496915718cd6bd853f9c2147d2b1e3bd43fd6950433abe9a8`, and
+collector SHA-256
+`6488dd50771c225d45c7874452c9e54028486d358f9130e7ff146fdd360562a4`. It
+resolves the same five declarations: the three generic Topology theorems and
+two Gauge wrappers. Each reports axioms `Classical.choice`, `Quot.sound`, and
+`propext`. The wrapper source blob at this snapshot is
+`8ea893bd9e826d00b205bb1c75994c2ec5b8d7d0`; `GradedBianchiIdentity.lean`
+keeps both public theorem signatures and delegates directly to
+`D0.Topology.discrete_exact_bianchi` and
+`D0.Topology.graded_bianchi_exact`. The narrow build succeeded for
+`D0.Gauge.GradedBianchiIdentity` (2,949 Lake jobs).
+
+The direct wrapper reuse is a small compatibility-layer refactor; it does not
+strengthen the generic theorem premises. `discrete_exact_bianchi` still uses
+the supplied `GradedCellComplex.boundary_nilpotency` field, and the three-cell
+statement remains conditional on `GradedCellComplex3.boundary_nilpotency2`.
+The theorem family is not an instantiated D0 mesh, physical curvature law, or
+accepted C0 application.
+
+The Lean source change made the existing CAR/Hodge source-digest guards reject
+11 stale declaration inventories. All 11 were regenerated at clean source
+snapshot `4443d184663c99ea09f003ff9fed6dd50ef17184`; their 57 declaration rows
+were unchanged. The proof-architecture suite then passed 45/45, and the
+focused Lean module build passed. This refresh records source provenance; it
+does not revise any claim, assembly edge, or physical interpretation.
