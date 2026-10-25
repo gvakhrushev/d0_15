@@ -1,17 +1,17 @@
 {
-  "snapshot_commit": "0fdf2537a5c78d5d43a1fed42c253f1928b10577",
+  "snapshot_commit": "d9ad77ac9e45645cd99879f7b89cfd62088a7ecf",
   "worktree_dirty": false,
   "source_digests": {
     "02_REGISTRY/claims.csv": "8ba9bfbac99a5fe0d8e8f2b6ef8d69f3190f8c1073051eca9f005e5a93b578cf",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
     "02_REGISTRY/formal_support.csv": "ae7d19fea7750aa1f03b1706992c1fe1adef45e6bfdb29838dfe771b393835d6",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
-    "02_REGISTRY/gr_assembly/applications.json": "9d73f377ee03670d39055da7d53f4893d2ae32260a96633e50bf0c5f3fb73ff0",
+    "02_REGISTRY/gr_assembly/applications.json": "f4019a4ec88f4d98c59cb4284d2fc6149122155844ac24739625d3369a98c3cb",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
   },
   "tool_source_digests": {
-    "tools/proof_architecture.py": "5bc00d8c0d6937e1f552279da1615ad138c770c02b69b2f341b807c8e06b0a4a",
+    "tools/proof_architecture.py": "d17e13c6bd15ff32c89de35d15da3b5c3f16bcfa8580d4973b0389d517f51300",
     "tools/lean_declaration_inventory.py": "d0e9f62697184c2969cb5d082d8b6c58ce088fc330c6f177264605327fd6d1ac"
   },
   "public_import_root": "D0.All",
@@ -46,10 +46,10 @@
       "changed_since_pin": 2,
       "unverified_pin": 6
     },
-    "section_locator_count": 1,
-    "ranked_section_candidate_count": 177,
-    "results_with_ranked_section_candidates": 49,
-    "results_with_incomplete_section_mapping": 53,
+    "section_locator_count": 9,
+    "ranked_section_candidate_count": 169,
+    "results_with_ranked_section_candidates": 43,
+    "results_with_incomplete_section_mapping": 45,
     "interpretation": "Counts describe source pins and recorded section locators, not accepted C0 units or semantic result-to-source relations."
   },
   "results": [
@@ -4688,44 +4688,14 @@
         {
           "locator": {
             "source_file_key": "source:14174fc45e69004a3e7dd8348d48472d32019d0a:02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:14174fc45e69004a3e7dd8348d48472d32019d0a:02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md#L1: Exact cubic uniform-correction control",
-                "section_ref": "L1: Exact cubic uniform-correction control",
-                "heading": "Exact cubic uniform-correction control",
-                "heading_line": 1,
-                "matched_terms": [
-                  "24",
-                  "adjacent",
-                  "cancel",
-                  "chosen",
-                  "coframe",
-                  "connection",
-                  "correction",
-                  "crossed",
-                  "cubic",
-                  "exact",
-                  "independent",
-                  "leaves",
-                  "link",
-                  "node",
-                  "nonzero",
-                  "null",
-                  "origin",
-                  "original",
-                  "profile",
-                  "rows",
-                  "six",
-                  "there"
-                ],
-                "query_term_count": 30,
-                "overlap_fraction": 0.7333,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:14174fc45e69004a3e7dd8348d48472d32019d0a:02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md#L1: Exact cubic uniform-correction control"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: Exact cubic uniform-correction control"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md"
@@ -4900,7 +4870,8 @@
               "ref": "14174fc45e69004a3e7dd8348d48472d32019d0a",
               "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
               "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
-              "sha256": "4a37dd52888e8062dd9073b8961a91c0faca9f805e3264332b923853594cd298"
+              "sha256": "4a37dd52888e8062dd9073b8961a91c0faca9f805e3264332b923853594cd298",
+              "section_ref": "L1: Exact cubic uniform-correction control"
             },
             {
               "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
@@ -5067,41 +5038,14 @@
         {
           "locator": {
             "source_file_key": "source:d4b57047458075b03872ab1cf234888ce5ac2a91:02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:d4b57047458075b03872ab1cf234888ce5ac2a91:02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md#L1: Cubic crossed-null polynomial-chart obstruction",
-                "section_ref": "L1: Cubic crossed-null polynomial-chart obstruction",
-                "heading": "Cubic crossed-null polynomial-chart obstruction",
-                "heading_line": 1,
-                "matched_terms": [
-                  "16",
-                  "24",
-                  "coframe",
-                  "corrections",
-                  "degree",
-                  "euler",
-                  "exact",
-                  "finite",
-                  "links",
-                  "lorentz",
-                  "most",
-                  "order",
-                  "original",
-                  "published",
-                  "rows",
-                  "site",
-                  "spatial",
-                  "total",
-                  "two"
-                ],
-                "query_term_count": 25,
-                "overlap_fraction": 0.76,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:d4b57047458075b03872ab1cf234888ce5ac2a91:02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md#L1: Cubic crossed-null polynomial-chart obstruction"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: Cubic crossed-null polynomial-chart obstruction"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md"
@@ -5268,7 +5212,8 @@
               "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
               "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
               "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
-              "sha256": "3d0f2424cf5c9fb7f54bbcba0d2dd3fe351fc607d2d5f99525481d5a5f937200"
+              "sha256": "3d0f2424cf5c9fb7f54bbcba0d2dd3fe351fc607d2d5f99525481d5a5f937200",
+              "section_ref": "L1: Cubic crossed-null polynomial-chart obstruction"
             },
             {
               "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
@@ -5435,46 +5380,14 @@
         {
           "locator": {
             "source_file_key": "source:1f8474a4f641f75a8d1a682b155b3416bdc2b4fc:02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:1f8474a4f641f75a8d1a682b155b3416bdc2b4fc:02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md#L1: Crossed-null continuum Ricci jet through fourth amplitude order",
-                "section_ref": "L1: Crossed-null continuum Ricci jet through fourth amplitude order",
-                "heading": "Crossed-null continuum Ricci jet through fourth amplitude order",
-                "heading_line": 1,
-                "matched_terms": [
-                  "1024",
-                  "16",
-                  "amplitude",
-                  "arbitrary",
-                  "area",
-                  "cancels",
-                  "conformal",
-                  "continuum",
-                  "degree",
-                  "entries",
-                  "four",
-                  "harmonic",
-                  "kappa",
-                  "killing",
-                  "order",
-                  "profile",
-                  "radius",
-                  "real",
-                  "ricci",
-                  "slopes",
-                  "through",
-                  "total",
-                  "transverse",
-                  "two"
-                ],
-                "query_term_count": 26,
-                "overlap_fraction": 0.9231,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:1f8474a4f641f75a8d1a682b155b3416bdc2b4fc:02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md#L1: Crossed-null continuum Ricci jet through fourth amplitude order"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: Crossed-null continuum Ricci jet through fourth amplitude order"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md"
@@ -5529,7 +5442,8 @@
               "ref": "1f8474a4f641f75a8d1a682b155b3416bdc2b4fc",
               "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
               "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
-              "sha256": "9f37c24c8223e7e352e6799c3f0f69e51ae14a4759153491daaa095567e4c5f9"
+              "sha256": "9f37c24c8223e7e352e6799c3f0f69e51ae14a4759153491daaa095567e4c5f9",
+              "section_ref": "L1: Crossed-null continuum Ricci jet through fourth amplitude order"
             }
           ],
           "reported_state": "All 16 Ricci entries vanish and the two-Killing area-radius Laplacian is zero through total amplitude degree four. This is separate from the finite cubic polynomial-chart obstruction and does not establish a finite D0 root."
@@ -5684,43 +5598,14 @@
         {
           "locator": {
             "source_file_key": "source:1f3889f98dca73f182c31381ae8990c944e17444:02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:1f3889f98dca73f182c31381ae8990c944e17444:02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md#L1: Exact finite crossed-null Euler jet through cubic amplitude order",
-                "section_ref": "L1: Exact finite crossed-null Euler jet through cubic amplitude order",
-                "heading": "Exact finite crossed-null Euler jet through cubic amplitude order",
-                "heading_line": 1,
-                "matched_terms": [
-                  "16",
-                  "24",
-                  "action",
-                  "amplitude",
-                  "both",
-                  "coframe",
-                  "corrections",
-                  "degree",
-                  "dependent",
-                  "euler",
-                  "identically",
-                  "lorentz",
-                  "most",
-                  "original",
-                  "plaquette",
-                  "site",
-                  "six",
-                  "three",
-                  "through",
-                  "total",
-                  "vanish"
-                ],
-                "query_term_count": 28,
-                "overlap_fraction": 0.75,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:1f3889f98dca73f182c31381ae8990c944e17444:02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md#L1: Exact finite crossed-null Euler jet through cubic amplitude order"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: Exact finite crossed-null Euler jet through cubic amplitude order"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md"
@@ -5800,7 +5685,8 @@
               "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
               "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
               "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
-              "sha256": "5ceb5f2ffe107391154797c64e463bb708dac073ea91255d0b0eae19c91249e6"
+              "sha256": "5ceb5f2ffe107391154797c64e463bb708dac073ea91255d0b0eae19c91249e6",
+              "section_ref": "L1: Exact finite crossed-null Euler jet through cubic amplitude order"
             },
             {
               "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
@@ -5961,48 +5847,14 @@
         {
           "locator": {
             "source_file_key": "source:427fdcba0718044a648da7b743d7bcf14cde9c27:02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:427fdcba0718044a648da7b743d7bcf14cde9c27:02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md#L1: Selected cubic representative: quartic-order chart obstruction",
-                "section_ref": "L1: Selected cubic representative: quartic-order chart obstruction",
-                "heading": "Selected cubic representative: quartic-order chart obstruction",
-                "heading_line": 1,
-                "matched_terms": [
-                  "16",
-                  "24",
-                  "40",
-                  "coframe",
-                  "corrections",
-                  "cubic",
-                  "degree",
-                  "euler",
-                  "explicit",
-                  "five",
-                  "free",
-                  "lorentz",
-                  "most",
-                  "original",
-                  "parameters",
-                  "particular",
-                  "plaquette",
-                  "polynomial",
-                  "quartic",
-                  "rows",
-                  "set",
-                  "six",
-                  "solutions",
-                  "spatial",
-                  "three",
-                  "zero"
-                ],
-                "query_term_count": 31,
-                "overlap_fraction": 0.8387,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:427fdcba0718044a648da7b743d7bcf14cde9c27:02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md#L1: Selected cubic representative: quartic-order chart obstruction"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: Selected cubic representative: quartic-order chart obstruction"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md"
@@ -6105,7 +5957,8 @@
               "ref": "427fdcba0718044a648da7b743d7bcf14cde9c27",
               "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
               "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
-              "sha256": "8a7ab9b73ddbeea90452648b1167822c87efb5189900149339a3b86146b5eda3"
+              "sha256": "8a7ab9b73ddbeea90452648b1167822c87efb5189900149339a3b86146b5eda3",
+              "section_ref": "L1: Selected cubic representative: quartic-order chart obstruction"
             },
             {
               "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
@@ -6272,41 +6125,14 @@
         {
           "locator": {
             "source_file_key": "source:7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8:02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8:02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md#L1: Mixed quartic crossed-null jet with free cubic modes",
-                "section_ref": "L1: Mixed quartic crossed-null jet with free cubic modes",
-                "heading": "Mixed quartic crossed-null jet with free cubic modes",
-                "heading_line": 1,
-                "matched_terms": [
-                  "16",
-                  "24",
-                  "40",
-                  "action",
-                  "checked",
-                  "coefficient",
-                  "coframe",
-                  "corrections",
-                  "cubic",
-                  "degree",
-                  "euler",
-                  "five",
-                  "identically",
-                  "lorentz",
-                  "most",
-                  "original",
-                  "plaquette",
-                  "rows",
-                  "six"
-                ],
-                "query_term_count": 28,
-                "overlap_fraction": 0.6786,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8:02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md#L1: Mixed quartic crossed-null jet with free cubic modes"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: Mixed quartic crossed-null jet with free cubic modes"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md"
@@ -6388,7 +6214,8 @@
               "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
               "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
               "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
-              "sha256": "7dd2736ddd5d28a391bc21a4124f6d74deef898d495cad9b1778c8dffbc845f5"
+              "sha256": "7dd2736ddd5d28a391bc21a4124f6d74deef898d495cad9b1778c8dffbc845f5",
+              "section_ref": "L1: Mixed quartic crossed-null jet with free cubic modes"
             },
             {
               "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
@@ -6549,42 +6376,14 @@
         {
           "locator": {
             "source_file_key": "source:12245f705982260c32512e648788a7dcd13b0b5b:02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:12245f705982260c32512e648788a7dcd13b0b5b:02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md#L1: Selected crossed-null branch: pure cubic and asymmetric quartic coefficients",
-                "section_ref": "L1: Selected crossed-null branch: pure cubic and asymmetric quartic coefficients",
-                "heading": "Selected crossed-null branch: pure cubic and asymmetric quartic coefficients",
-                "heading_line": 1,
-                "matched_terms": [
-                  "13",
-                  "40",
-                  "amplitude",
-                  "branch",
-                  "coefficients",
-                  "corrections",
-                  "crossed",
-                  "degree",
-                  "euler",
-                  "five",
-                  "identically",
-                  "most",
-                  "null",
-                  "original",
-                  "pure",
-                  "retained",
-                  "rows",
-                  "selected",
-                  "six",
-                  "solution"
-                ],
-                "query_term_count": 29,
-                "overlap_fraction": 0.6897,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:12245f705982260c32512e648788a7dcd13b0b5b:02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md#L1: Selected crossed-null branch: pure cubic and asymmetric quartic coefficients"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: Selected crossed-null branch: pure cubic and asymmetric quartic coefficients"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md"
@@ -6711,7 +6510,8 @@
               "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
               "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
               "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
-              "sha256": "4776e03dbcb502622fd03644f9628e2eebe47b2417d6d25c8430c7a7024cac00"
+              "sha256": "4776e03dbcb502622fd03644f9628e2eebe47b2417d6d25c8430c7a7024cac00",
+              "section_ref": "L1: Selected crossed-null branch: pure cubic and asymmetric quartic coefficients"
             },
             {
               "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
@@ -37228,37 +37028,14 @@
         {
           "locator": {
             "source_file_key": "source:a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f:02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/scope.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f:02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/scope.md#L1: Fifth-order Ward compatibility on one selected crossed-null branch",
-                "section_ref": "L1: Fifth-order Ward compatibility on one selected crossed-null branch",
-                "heading": "Fifth-order Ward compatibility on one selected crossed-null branch",
-                "heading_line": 1,
-                "matched_terms": [
-                  "13",
-                  "amplitude",
-                  "coframe",
-                  "correction",
-                  "exact",
-                  "fifth",
-                  "gradient",
-                  "lower",
-                  "nonzero",
-                  "order",
-                  "registered",
-                  "representative",
-                  "rref",
-                  "selected",
-                  "ward"
-                ],
-                "query_term_count": 19,
-                "overlap_fraction": 0.7895,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f:02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/scope.md#L1: Fifth-order Ward compatibility on one selected crossed-null branch"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: Fifth-order Ward compatibility on one selected crossed-null branch"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": null
@@ -37409,7 +37186,8 @@
             {
               "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
               "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/scope.md",
-              "sha256": "8013e61ca5abc172a7d32ca5d840891785d0886efda669021d6ce2e2719c8ba2"
+              "sha256": "8013e61ca5abc172a7d32ca5d840891785d0886efda669021d6ce2e2719c8ba2",
+              "section_ref": "L1: Fifth-order Ward compatibility on one selected crossed-null branch"
             },
             {
               "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
