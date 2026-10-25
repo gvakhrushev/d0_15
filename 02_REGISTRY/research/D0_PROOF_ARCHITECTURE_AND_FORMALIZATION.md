@@ -94,6 +94,42 @@ baseline heartbeat-override findings and no proof holes, self/umbrella imports,
 duplicate imports, missing local imports, or import cycles. This is a library
 structure check, not a classification of the mathematical units above and not
 evidence that C0 is formally covered.
+
+### Reusable finite Gram tangent algebra (25 October 2026)
+
+The exact finite Gram expansion is now factored into the reusable algebra
+module `D0.Algebra.FiniteGramTangent`. For a symmetric involution `η`, it proves
+`(η + t C) η (η + t C)ᵀ = η + t(C + Cᵀ) + t² CηCᵀ`, retaining the full
+quadratic remainder. It also gives the explicit preimage `C=q/2` for every
+symmetric matrix `q`. The module uses only finite matrix algebra and adds no
+geometric or physical premise.
+
+`D0.Geometry.A4DSolderMetricCompletion` now consumes both generic results: its
+concrete Role solder path reuses the Gram expansion, and its all-site witness
+reuses the half-matrix identity. The resulting application still realizes
+every symmetric Role-matrix direction at every finite lattice site, with the
+exact finite-parameter remainder. `D0.All` imports the generic module through
+the generated public view. The compiled owning-module inventory records 105
+declarations across the generic module and its concrete consumer; the new
+algebra declarations and the solder result report the standard
+`Classical.choice`, `Quot.sound`, and `propext` axiom footprint.
+
+This refactor establishes neither physical selection of the metric path nor
+finite-parameter nondegeneracy, the independent full 16+24 variation, a
+continuum field equation, refinement, or C0 coverage. It remains an exact
+finite algebra application within the metric-provenance route.
+
+The public `D0.All` build passed at Lean 4.30.0 (4,569 Lake jobs). Generated
+Lean views are current; formalization-debt, claim-map coverage, core no-sorry,
+and gravity-assembly checks passed. The inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_tangent_inventory_2026-10-25.json`,
+captured at snapshot `74c89e928f19fe06d73f801b2c6c6726aab848da` with
+`worktree_dirty=true`, Lean source digest
+`4d28cf4e7bb25a7f1a2c90e6273ab1203368d8e69ea5c985c171f3710beef743`,
+collector SHA-256
+`d251a581dc61f8d77bb37d8731bb7bd13811a7f7a468dac842b12f11c0048ddf`, and
+artifact SHA-256
+`affd198bc595e9fd3975642146787367d3eee6d95de771c72420c1f56c258aa4`.
 ## Scientific boundary and reuse vertical
 
 This work does not select a physical implementation or close GR. Keep complete Book03/Cost-Info/source admission, same-execution clock/controller/work selection, physical metric descent/frame selection, original H+J+R, positive_gr, and raw216 open under their existing owners. Preserve #334; do not duplicate or retire its science. Conditional assumptions remain in theorem signatures. Connes reconstruction remains conditional when its needed object is a supplied field.

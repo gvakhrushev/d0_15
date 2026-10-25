@@ -1,5 +1,6 @@
 import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.ArchiveRoleEquivalence
+import D0.Algebra.FiniteGramTangent
 
 /-!
 # Finite solder Gram completion of the centered coframe readout
@@ -66,6 +67,13 @@ theorem coframeMetricReadout_eq_centered_add_transpose (N : ℕ) (e : LocalCofra
     centeredCoframeMatrix N 0 x = 0 := by
   ext r a
   simp [centeredCoframeMatrix, backwardAverage]
+
+@[simp] theorem centeredCoframeMatrix_constant (N : ℕ)
+    (C : Matrix Role Role ℝ) (x : ArchiveRolePhaseGroup N) :
+    centeredCoframeMatrix N (fun _ r a => C r a) x = C := by
+  ext r a
+  simp [centeredCoframeMatrix, backwardAverage]
+
 @[simp] theorem centeredCoframeMatrix_smul (N : ℕ) (e : LocalCoframeField N)
     (t : ℝ) (x : ArchiveRolePhaseGroup N) :
     centeredCoframeMatrix N (t • e) x = t • centeredCoframeMatrix N e x := by
@@ -111,9 +119,13 @@ theorem solderMetric_smul_expand (N : ℕ) (e : LocalCoframeField N)
     solderMetricMatrix N (t • e) x - roleLorentzMetric =
       t • (coframeMetricReadout N e x).toMatrix + t^2 •
         (centeredCoframeMatrix N e x * roleLorentzMetric * (centeredCoframeMatrix N e x).transpose) := by
-  rw [solderMetric_minus_background, coframeMetricReadout_eq_centered_add_transpose,
-    centeredCoframeMatrix_smul, coframeMetricReadout_eq_centered_add_transpose]
-  simp only [Matrix.transpose_smul, smul_add, Matrix.smul_mul, Matrix.mul_smul, smul_smul, pow_two]
+  rw [solderMetricMatrix, solderMatrix, centeredCoframeMatrix_smul]
+  change D0.Algebra.finiteGram roleLorentzMetric
+      (roleLorentzMetric + t • centeredCoframeMatrix N e x) - roleLorentzMetric = _
+  rw [D0.Algebra.finiteGram_smul_expand roleLorentzMetric
+    (centeredCoframeMatrix N e x) t roleLorentzMetric_transpose roleLorentzMetric_sq]
+  rw [coframeMetricReadout_eq_centered_add_transpose]
+  abel
 
 /-- Difference quotient with its exact remainder, requiring no calculus API. -/
 theorem solderMetric_flat_tangent (N : ℕ) (e : LocalCoframeField N)
@@ -131,16 +143,12 @@ theorem coframeMetricReadout_realizes_symmetric (N : ℕ)
     (q : Matrix Role Role ℝ) (hq : q.transpose = q) :
     ∃ e : LocalCoframeField N,
       ∀ x : ArchiveRolePhaseGroup N, (coframeMetricReadout N e x).toMatrix = q := by
-  refine ⟨fun _ r a => q r a / 2, ?_⟩
+  let C : Matrix Role Role ℝ := (2 : ℝ)⁻¹ • q
+  refine ⟨fun _ r a => C r a, ?_⟩
   intro x
   rw [coframeMetricReadout_eq_centered_add_transpose]
-  ext r a
-  have hsym : q a r = q r a := by
-    have h := congrArg (fun M : Matrix Role Role ℝ => M a r) hq
-    simpa [Matrix.transpose_apply] using h.symm
-  simp [centeredCoframeMatrix, backwardAverage]
-  rw [hsym]
-  ring
+  rw [centeredCoframeMatrix_constant]
+  simpa [C] using D0.Algebra.symmetricMatrix_half q hq
 
 /-- Exact composition of the finite symmetric-direction witness with the
 nonlinear solder Gram path. Every symmetric `q` is its linear coefficient,
