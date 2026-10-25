@@ -256,3 +256,72 @@ THEOREM C supplies an EXACTLY TWO-component map
 that IS globally injective with a uniformly controlled signed-r inverse for any fixed \(\nu_{\min}>0\), by (9)–(17). Hence **two independent REAL scalar outcome statistics are both necessary and sufficient** for global identification of this fully specified native two-dimensional chart. This is a genuine finite operational MINIMALITY claim, compatible with D_min's emphasis on no redundant independent tests; it is NOT a theorem that the entire 128-slot fine archive can be replaced by two outcomes, nor a global shortest-gate/whole-history code theorem.
 
 This closes a nontrivial physical-preparation objection: on the owned chart the two measurement contexts are intrinsically selected by the original algebra (unique vacuum) and its actual dynamics (unique stationary DATA state), not by a new arbitrary self-audit protocol or external temporal observer. What remains is to derive/charge their **joint use as a compulsory closed task**, rather than mistake mathematical canonicity of two accessible states for compulsory physical execution or for Einstein dynamics.
+
+
+## 9. THEOREM H — a CERTIFIED signed collision for the old ONE-preparation \`q0,q1\` pair, separated by the single added canonical vacuum K1 test
+
+This addresses why our second native preparation is a **physically necessary new distinction for a SIGNED globally complete task**, not an arbitrary choice of convenient reference.
+
+The prior original two-outcome theorem on the SAME self-prepared \(\rho_*\) shows
+\[
+q_1=4p^3t,\quad
+q_0=1-8p^2t/s+4p^4t.
+\]
+Hence it depends ONLY on the spectrum invariants \(s,t\). Introduce their dimensionless spectral ratio
+\[
+\boxed{
+R_{\rm spec}(r)=t/s^2
+=\frac{B(r)(1-r^2)^2}{4A(r)^2}.
+}\tag{24}
+\]
+The exact derivative is
+\[
+\boxed{
+R_{\rm spec}'(r)=
+-\frac{r(1-r^2)H(r)}{2A(r)^3},\quad
+H(r)=8r^7+25r^6+32r^5-15r^4-56r^3+39r^2+15.
+}\tag{25}
+\]
+For \(|r|\le1/9\), elementary rational bounds give
+\[
+H(r)\ge15-\frac8{9^7}-\frac{32}{9^5}
+-\frac{15}{9^4}-\frac{56}{9^3}>14>0,\quad
+A(r)>4.
+\]
+Therefore \(R_{\rm spec}\) is STRICTLY increasing on \([-1/9,0]\) and STRICTLY decreasing on \([0,1/9]\), with the common maximum \(R_{\rm spec}(0)=1/4\). There is an EXACT explicit two-branch collision as follows. Fix
+\[
+r_+=1/20,\ \nu_+=3/5,\qquad
+R_{\rm spec}(-1/9)=\frac{67476800}{270306481}
+<
+R_{\rm spec}(1/20)=\frac{622052912943}{2488979522500}
+<1/4.
+\]
+By continuity and strict monotonicity there is exactly ONE \(r_-\in(-1/9,0)\) with \(R_{\rm spec}(r_-)=R_{\rm spec}(r_+)\). Let
+\[
+\nu_-^2=\nu_+^2
+\frac{A(r_+)/(1-r_+^2)^2}{A(r_-)/(1-r_-^2)^2}.
+\tag{26}
+\]
+Since \(f(r)=A(r)/(1-r^2)^2\) is strictly decreasing throughout the whole signed interval (proved in §3), \(\nu_-<\nu_+=3/5\). The two physically REGULAR original CAR signed-boost parameter pairs satisfy EXACTLY
+\[
+\boxed{
+(r_-,\nu_-)\ne(r_+,\nu_+),\quad
+s_-=s_+,\quad t_-=t_+,\quad
+q_{0,-}^{\rho_*}=q_{0,+}^{\rho_*},\quad
+q_{1,-}^{\rho_*}=q_{1,+}^{\rho_*}.
+}\tag{27}
+\]
+Thus NO decoder from just the two \(\rho_*\)-prepared j0 Born numbers can distinguish BOTH signed configurations on this chart — a provable SAME-OBSERVATION collision, not speculation about negative boosts. Their original prepared \(J_{\rm pre}\) also agrees exactly, so a scalar Book determinant alone cannot remove this sign ambiguity.
+
+Now read the SAME original fine outcome K1 on the intrinsically defined CAR vacuum. At equal s,t, equation (8) gives the STRICT signed distinguishing gap
+\[
+\boxed{
+q_{{\rm vac},+}-q_{{\rm vac},-}
+=4p^3\frac{5s}{128}(\nu_+^2-\nu_-^2)>0.
+}\tag{28}
+\]
+Hence the paid original vacuum future test is a CONCRETE permitted readout witness *if* the actual physics demands identification of signed boosts, and it does not add a new fundamental comparison operation or new operator alphabet.
+
+This exact collision is the strongest route to a prospective **TASK** justification for the second context: if the ORIGINAL M1 task requires distinguishing BOTH regular signed boosts, the former stationary-only \((q_0,q_1)\) protocol cannot meet that goal, and some additional record/test is NECESSARY. Within the class of single native fine K1 binary records, the existing canonical vacuum preparation supplies the *minimal two-context* completion by §§3,8. This theorem alone does NOT prove that M1 must include signed boosts in the admitted physical input family, nor that the vacuum readout wins a global D_min comparison against every possible OTHER native future test. The full original future-equivalent relation and actual paid task determine that, not a desired Einstein outcome.
+
+An independent exact-rational check of (24)–(28), together with original full128 numeric cross-check of the signed collision and its vacuum response, is included in the companion \`check_signed_two_context_inverse.py\` source.
