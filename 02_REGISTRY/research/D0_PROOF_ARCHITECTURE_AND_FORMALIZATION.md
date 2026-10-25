@@ -7321,3 +7321,39 @@ need review, claim locators and the semantic relation remain unresolved, and
 `acceptance_inferred=false`. It proves no arbitrary continuum field variation,
 global connection elimination, physical metric/source selection, or
 independent C0 acceptance; no claim status changes.
+
+### Fréchet derivative of the full finite metric field (26 October 2026)
+
+The sitewise result now assembles into one derivative for the complete map
+`e ↦ (x ↦ solderMetricMatrix N e x)`. Its domain is the full finite
+`LocalCoframeField N` and its codomain is the finite field of Role matrices.
+`solderMetricFieldDerivative` is a continuous linear map assembled with
+Mathlib's Pi API; `solderMetricField_hasFDerivAt_flat` proves the field-valued
+Fréchet derivative by the exact pointwise derivative theorem. The application
+lemma `solderMetricFieldDerivative_apply` identifies the derivative at every
+site with `(coframeMetricReadout N e x).toMatrix`. Thus the constant-frame
+chart and the per-site theorem are special cases of one whole finite-field
+calculus statement.
+
+The new declarations explicitly import `Mathlib.Analysis.Calculus.FDeriv.Prod`
+for the Pi derivative API. The targeted
+`D0.Geometry.A4DSolderMetricCompletion` build passed **3,087/3,087** jobs.
+The fresh crosswalk subsequently completed `lake build D0.All`; its Lean-source
+digest is
+`b7878598aebf4eaf896c72f921ec72fe6c66416f8c49e884efadbf146b2a1fbc`. All
+**22/22** geometry declarations and the generic finite-Gram algebra declaration
+resolve in the elaborated public import. The geometry source is pinned at
+`1d94612f754864580a6268e56aabdff285a3581b`, SHA-256
+`bf1e83ce2e835937d617940c92fc1d78b5ec0c0d62f475e6335053cd218bec02`; the
+crosswalk used `applications.json` SHA-256
+`d0cec242fe9fa51480a0d10d0d49556f049e529c010f65d77cca5a0e9b3ad149`. The
+compact compiled-declaration crosswalk is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_1d94612f.json`,
+SHA-256
+`0f80dc72b798626de1e8159f0c60e6bb4e4cc473cc9f23fb00c0d054df57d3c7`.
+
+The source A action-to-carrier relation remains absent. Source section locators
+still require review; claim locators and the semantic relation are unresolved,
+and `acceptance_inferred=false`. This result covers the complete finite
+sitewise metric map only; it does not establish continuum variation, physical
+source selection, connection elimination, or independent C0 acceptance.
