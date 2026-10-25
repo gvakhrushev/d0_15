@@ -578,6 +578,10 @@ class ProofArchitectureTests(unittest.TestCase):
             all_current_view["source_locator_summary"]["results_with_ranked_section_candidates"],
             1,
         )
+        self.assertEqual(
+            all_current_view["source_locator_summary"]["results_with_incomplete_section_mapping"],
+            0,
+        )
 
     def test_result_crosswalk_stale_current_source_is_citation_only(self) -> None:
         with tempfile.TemporaryDirectory() as temp:

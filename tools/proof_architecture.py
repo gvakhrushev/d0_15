@@ -1431,7 +1431,7 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
             ),
             "source_unit_locator_disposition": (
                 "section_keys_need_review"
-                if source_locators and all(
+                if source_locators and any(
                     x["locator"]["exact_unit_key_candidates"] for x in source_locators
                 )
                 else "section_mapping_incomplete" if source_locators

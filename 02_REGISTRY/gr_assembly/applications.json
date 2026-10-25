@@ -544,7 +544,8 @@
           "ref": "14174fc45e69004a3e7dd8348d48472d32019d0a",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
-          "sha256": "4a37dd52888e8062dd9073b8961a91c0faca9f805e3264332b923853594cd298"
+          "sha256": "4a37dd52888e8062dd9073b8961a91c0faca9f805e3264332b923853594cd298",
+          "section_ref": "L1: Exact cubic uniform-correction control"
         },
         {
           "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
@@ -594,7 +595,8 @@
           "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
-          "sha256": "3d0f2424cf5c9fb7f54bbcba0d2dd3fe351fc607d2d5f99525481d5a5f937200"
+          "sha256": "3d0f2424cf5c9fb7f54bbcba0d2dd3fe351fc607d2d5f99525481d5a5f937200",
+          "section_ref": "L1: Cubic crossed-null polynomial-chart obstruction"
         },
         {
           "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
@@ -643,7 +645,8 @@
           "ref": "1f8474a4f641f75a8d1a682b155b3416bdc2b4fc",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
-          "sha256": "9f37c24c8223e7e352e6799c3f0f69e51ae14a4759153491daaa095567e4c5f9"
+          "sha256": "9f37c24c8223e7e352e6799c3f0f69e51ae14a4759153491daaa095567e4c5f9",
+          "section_ref": "L1: Crossed-null continuum Ricci jet through fourth amplitude order"
         }
       ],
       "reported_state": "All 16 Ricci entries vanish and the two-Killing area-radius Laplacian is zero through total amplitude degree four. This is separate from the finite cubic polynomial-chart obstruction and does not establish a finite D0 root."
@@ -682,7 +685,8 @@
           "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
-          "sha256": "5ceb5f2ffe107391154797c64e463bb708dac073ea91255d0b0eae19c91249e6"
+          "sha256": "5ceb5f2ffe107391154797c64e463bb708dac073ea91255d0b0eae19c91249e6",
+          "section_ref": "L1: Exact finite crossed-null Euler jet through cubic amplitude order"
         },
         {
           "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
@@ -727,7 +731,8 @@
           "ref": "427fdcba0718044a648da7b743d7bcf14cde9c27",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
-          "sha256": "8a7ab9b73ddbeea90452648b1167822c87efb5189900149339a3b86146b5eda3"
+          "sha256": "8a7ab9b73ddbeea90452648b1167822c87efb5189900149339a3b86146b5eda3",
+          "section_ref": "L1: Selected cubic representative: quartic-order chart obstruction"
         },
         {
           "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
@@ -780,7 +785,8 @@
           "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
-          "sha256": "7dd2736ddd5d28a391bc21a4124f6d74deef898d495cad9b1778c8dffbc845f5"
+          "sha256": "7dd2736ddd5d28a391bc21a4124f6d74deef898d495cad9b1778c8dffbc845f5",
+          "section_ref": "L1: Mixed quartic crossed-null jet with free cubic modes"
         },
         {
           "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
@@ -826,7 +832,8 @@
           "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
-          "sha256": "4776e03dbcb502622fd03644f9628e2eebe47b2417d6d25c8430c7a7024cac00"
+          "sha256": "4776e03dbcb502622fd03644f9628e2eebe47b2417d6d25c8430c7a7024cac00",
+          "section_ref": "L1: Selected crossed-null branch: pure cubic and asymmetric quartic coefficients"
         },
         {
           "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
@@ -1702,7 +1709,8 @@
         {
           "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/scope.md",
-          "sha256": "8013e61ca5abc172a7d32ca5d840891785d0886efda669021d6ce2e2719c8ba2"
+          "sha256": "8013e61ca5abc172a7d32ca5d840891785d0886efda669021d6ce2e2719c8ba2",
+          "section_ref": "L1: Fifth-order Ward compatibility on one selected crossed-null branch"
         },
         {
           "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
