@@ -8816,6 +8816,215 @@ Physical ledger/Info selection, actual independent variations and
 full joint GR realization/refinement remain. GR_closed=false.
 
 
+## 7al. Execute the Golden code point and retain the real controller/return source
+
+25 October2026, SAME PR334/constitutive owner, input49b78ad8. The parent
+is7ak's positive code-Gibbs point and its native implementation/price
+map. There is no universal need for one microscopic implementation:
+a proved same-source physical realization can suffice. This application
+separates a clean-word obstruction, an actual heralded construction and
+a fully executed all-branches alternative, keeping their different
+carriers, input maps, failures and remaining source obligations.
+
+The exact proofs are
+[CLEAN_BOUNDARY.md](sources/d0_native_golden_stationary_extension_2026-10-25/CLEAN_BOUNDARY.md),
+[HERALDED_CONTROL.md](sources/d0_native_golden_stationary_extension_2026-10-25/HERALDED_CONTROL.md)
+and [ALL_BRANCHES.md](sources/d0_native_golden_stationary_extension_2026-10-25/ALL_BRANCHES.md).
+The changed bounded calculation is
+[check_golden_extension.py](sources/d0_native_golden_stationary_extension_2026-10-25/check_golden_extension.py).
+
+### Exact clean control has a structural boundary, not a missing gate search
+
+Put a=sqrt(p). Every literal G/CX/SourceI matrix has entries in
+R=Z[a], a4+a²-1=0. Reduce the INTEGRAL ring modulo2, retaining its
+nilpotent part:
+
+    R -> F2[x]/((x²+x+1)²),
+    t=x²+x+1!=0, t²=0,
+    Gbar*1=(1+t)*1,
+    Wbar*1=(1+t)^(number_of_actual_G)*1.              (329)
+
+CX and the actual SourceI signed permutation preserve1 after reduction.
+The vector1 is an algebraic witness, not a free physically prepared
+plus state. Hence every finite full word has one uniform reduced row
+sum, either1 or1+t. The desired CG=diag(I,G) has both row sums. An
+exactly returned computational auxiliary subspace is reducing by
+orthogonality, so adding any finite number of clean computational
+ancillas cannot repair this mismatch:
+
+    W(psi tensor0_aux)=CG psi tensor0_aux
+       on EVERY logical input is impossible in this profile.    (330)
+
+This excludes a particular exact coherent operator and clean interface,
+not D0 operations generally, approximation, a measured controller or
+a specified scalar probability. Controlled EVEN powers remain possible
+and pass the invariant, consistent with the owned W_1(L). Reducing to
+the smaller field with t=0 would lose this distinction. No new rank,
+circuit or gravity-root census is needed.
+
+### The Golden conditional operation has an exact heralded construction
+
+Consume the OWNED raw Boolean/H/X factories and their coherent
+all-row expansion in paid-writer9.1. Prepare two resources G|0>_u,
+G|0>_v. On free logical c,D, compute
+GOOD=(not-c AND not-u AND not-v) OR (c AND v), apply J_D=XZ_D when
+cuv=111, and return predicate scratch to0. The stated reversible
+logical recipe has7 Toffoli,1 CCZ,6 X; those are FACTORY TARGETS,
+not additional native letters. Every actual success/failure column
+of their positive-G/CX expansions stays in the physical word.
+
+Use two COMPLETE raw X cycles, not ideal plus projections, and select
+GOOD1 with transcripts10/10. Their other X outcomes and GOOD0 remain.
+Before the common raw Boolean success factor the exact transfer is
+
+    K_suc=2p4 CG,
+    K_suc^dagger K_suc=4p8 I_(cD),
+    gamma_CG=4p8 Gamma_Bool,
+    Gamma_Bool=(2p3)^14(4p3)^28(16p9)^8>0.           (331)
+
+This is uniform on all four logical inputs, including entanglement.
+The fourteen fresh plus-resource preparations include the shared
+known-one byproduct once. All later stages execute on failure too;
+no reset, unbounded retry or successful-branch primitive is supplied.
+One stated raw recipe has274 G and686 CX before separately required
+terminal/controller operations. That is an analytic recipe count.
+The checker verifies the logical64-column target and complete raw-X
+instrument at Boolean READY; it neither emits nor matrix-replays the
+entire960-stage Boolean factory or its unready sectors.
+
+The herald factor2p4 is even in the integral ring, so its block can
+vanish under(329); a normalized successful operator is not a clean
+full unitary. There is no contradiction with(330). For target0 and
+c1, normalized successful target probability is EXACTLY p².
+
+Fine failures are substantive. Even conditional on Boolean READY,
+GOOD0 with transcripts10/10 has the actual effect
+
+    E_fail=diag(w0 I2,w1 I2),
+    w0=4p6(2ap+p²)²,
+    w1=4p6 a²(a+p)²,
+    w0-w1=4p7(a+p-1)(3ap+1)>0.                      (332)
+
+Thus a scalar total success/abort effect does not fix the fine
+failure law. The bounded model sums over both GOOD values and every
+X-cycle result and obtains full GramI4; no failure is omitted. Raw
+Boolean-unready sectors still require their own actual maps. The
+successful(331) does not imply U_raw j=j, a fixed old blank corner,
+or the CM4–7 conjugacy application. Its full raw preparation, C/F,
+joint records P(T,m), cap/abort and complete Cost/Info cannot be
+replaced by gamma times the successful binary branch.
+
+### A complete three-stage alternative attains the code point without heralding
+
+There is also an actual no-abort extension using only already
+available native operations. Add fresh known z,t0,t1,lambda and run
+
+    V: G_z;CX(z,t0);CX(z,lambda),
+    V|0000>=sqrt(p)|0;000>+p|1;101>.                 (333)
+
+The same owned parser reads000/101 as raw codewords0/10 of length1/2.
+The untouched tail t1 is retained. All old branches, including a
+factoryflag0, receive this coin and code. This is a DIFFERENT physical
+completion from leaving that new target0 when an old control is0.
+It does not silently replace the unchanged-C conditional target.
+
+For ANY old state, channel and full registered law, the new independent
+factor preserves the old channel by partial trace and adds exactly
+
+    Delta I_reg=h(p²),  Delta C_code=1+p²,
+    ell Delta C_code-Delta I_reg=0,
+    ell=log(phi),  h(p²)=ell(p+2p²)=ell(1+p²).       (334)
+
+Copies of the same new bit count as one outcome. This is the complete
+supplied two-leaf CODE component with all conditional quantum work,
+not the full physical cost of the generator/reader/controller. Actual
+additional work W_extra leaves source ell D W_extra. Both branches
+execute three real gates; length1/2 is not their branch runtime.
+No unknown physical tariff is assigned from the code convention.
+
+The FULL16-column V has phases0,pi,+theta,-theta, each multiplicity4.
+For old monodromy U, ALL old phases phi_a and actual old d,N,
+
+    U_new=U tensor V,
+    N_new=N+3, d_new=16d, r_new=r,
+    C_new=sqrt(p) C_old,
+    J_new=-log det[(1-zeta)I+zeta p C_old^dagger C_old],
+    Z_new=8 sum_a [K_(N_new)(phi_a)+K_(N_new)(phi_a+pi)
+                     +K_(N_new)(phi_a+theta)+K_(N_new)(phi_a-theta)]. (335)
+
+The full paired mode count is2N_new d_new. No invalid container,
+unused tail, zero mode or thermal complement is discarded. This is
+one clock's phase convolution, not H_old+H_coin or the old absolute
+heat with a normalization. Clock-sensitive future tests retain the
+new clock; no equality of the enlarged complete future profile is
+inferred from old-channel retention.
+
+One fresh gadget after every prospective old cohort gives
+
+    T_new,M=p^M product_j s_j²,
+    w_new,M=r zeta T_new,M/(1-zeta+zeta T_new,M),
+    Gamma_new,M=w_new,M sum_j a_j gbar_j.             (336)
+
+The old field/report slopes a_j=2d_j gamma_j/s_j and ORIGINAL
+lambda_minus remain. At fixed new clocks/carriers the whole spectrum
+is field-independent on the same old conjugacy/source family. Hence
+the original all16+24+2 reference source, bank score and actual finite
+coordinate cofield consume exactly the NEW gain. Normalizing the
+kernel sqrt(p)K_j by sqrt(p)s_j leaves the old product score unchanged;
+old/cross-bank and one-row gain estimates still have their true w
+factor. The former normalized rates persist at their stated physical
+norm/lift, not by reusing an old absolute gain or fitting a multiplier.
+The lower bound is now proportional to(9p/16)^M M^(63/64); fixed-beta
+factorial heat suppression still dominates its exponential inverse.
+New coin/controller rows are separate, and old fine-Info discrepancies
+are not cancelled by an additional neutral code component.
+
+### The real Book controller equation prevents a false stationary conclusion
+
+The new native G is exactly the code-Gibbs point u=p² of
+P_code(u)=ell(1+u)-h(u), with P_code=0 and P_code'=0. A matrix comparison
+varying that new coin, with every other actual return factor tau held
+fixed, nevertheless gives
+
+    J(u)=-r log[1-zeta+zeta(1-u)tau],
+    partial_u J=w(u)/(1-u)>0,
+    partial_u J|_(p²)=w_new/p.                       (337)
+
+At beta=1, zeta=2^-20, r>=4, the old SINGLE-body tau>=9/16 and
+actual N_new>=135, the owned all-mode bound proves
+
+    partial_u J>2^-19,
+    |partial_u H|<2^-129,
+    partial_u(H+J)>0.
+
+The source of the code component is zero but the complete Book coin
+row is not. This comparison uses the whole new thermal carrier and
+its true source norm ||partial_u V||=1/(2p sqrt(p)); it does not grant
+a continuously tunable native gate. An admitted physical variation
+or finite-code secant needs its actual map/spacing and remaining work.
+The compact single-body condition is not imposed on an attenuated
+whole M-prefix.
+
+For the old132-stage recorded fixture, actual addition(333) gives
+135 stages,13qubits,d=8192,r=4 and2211840 paired modes. The new word
+V is checked on ALL16 columns and the full enlarged code is validated/
+counted; no8192-column or large cyclic matrix replay is claimed.
+The heralded Boolean target is separately checked on64 logical columns;
+its complete GOOD/X failure effect belongs to that specified model,
+not an uncomputed raw-factory simulation.
+
+**Parent consequence.** Exact native Golden code attainment and a
+complete new field/source/gain map are now supplied for an all-branches
+process. A clean conditional gate is structurally excluded only in the
+specified literal interface; an exact heralded conditional operation
+exists with its actual failure obligations. None of these statements
+redefines the old physical task or removes its full Cost/Info/work
+reaction. Coupled controller stationarity, the heralded raw-return map,
+conditional-only serial Emit, physical task/action/variation selection
+and the stronger native GR realization/refinement remain. The direct
+Book route requires no second Info term. GR_closed=false.
+
+
 ## 8. Reproduction
 
 Run from this directory:

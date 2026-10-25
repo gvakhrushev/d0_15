@@ -10184,3 +10184,67 @@ Exact replay/charge scope, actualrecording and inherited source pins:
 02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/INTEGRATION_REVIEW.md.
 Inputprimaryc8c85ef1, oldbrief and all priorpackets preserved. No physical
 Cost/Info selection, native stationary attainment or GR status promoted.
+
+### 25 October: realize the Golden code point and keep the actual Book/controller map
+
+Phase: native realization / physical-operation and complete-source transport.
+SAME PR334, constitutive/native-programme-v1; input49b78ad8. Parent7ak
+has a positive conditional Gibbs point u*=p² but no native execution/
+full-price application. This is NOT a new universal prerequisite: one
+faithful source-equivalent paid realization can suffice. Keep the direct
+Book route and the original all42 family; do not add a second Info action.
+
+Synthesize existing inputs before dispatch: original G exactly prepares
+(p,p²), and7y's ACTUAL two-CX three-bitcontainer writes0/10, cost1+b.
+A full all-branches completion with this3stage V exists without a free
+conditionalG. It preservesoldchannel/profile byidentityonoldregisters,
+but changes C_new=√p C_old, fullclock N+3 andcarrier×16. Derive its
+FULL spectrum/convolution, truew/Γ, oldfield/bank/cofield transport,
+complete newcodeInfo and codecharge, plus retainedgenerator/controller
+source. ExactcodeKraftneutrality is not fullBookstationarity: at u=p²,
+D_uJ_new=w_new/p>0. Do not call this the unchanged-C conditional-only
+completion or infer actualphysicalCost from containerlength/runtime.
+
+Conditional-only alternative: prove the structural integral-ring boundary
+for exact CLEAN fullinputcontrolledG in finiteG/CX/SourceI words. In
+R=F2[a]/((a²+a+1)^2), t=a²+a+1≠0,t²0; eachG multipliesones by1+t,
+CX/SourceI preserveones. Allnativewordrowsumsuniform1or1+t, whileCG
+hasboth; computationalancillas returnedexactly keepthis obstruction.
+This appliesONLYto this literalword/clean-return interface, notallD0
+operations or heraldedsuccess. Avoid a new circuitsearch/census.
+
+UseOWNED nativeBoolean/H/Xfactories to construct a real heralded controlledG:
+resourcesu,v=G0; J_DATA iff cuv111; GOOD=(¬c¬u¬v)∨(cv); uncompute truth
+scratch; two complete raw X-cycles accept10/10 withGOOD1. The successful
+Kraus is2p4 CG, success4p8 Γ_Bool independentunknownlogicalinput. Keep
+allrawfactory/GOOD/Xfailure columns and records; successfulK is NOT
+fullrawunitaryR and cannotreplace CM4–7's blank-fixing completion. State
+its remaining actualrawC/jointP(T,m)/price transport, cap/abort and
+controllerwork explicitly. No gate/postselection primitive is granted.
+
+Inputs:7akfullCQ/Gibbs/source;7ajliteralpalette/clock;7ytypedwriter;
+GOLDEN_EXACT_DETECTOR §§2–3 andpaidwriter9.1 allrowrawcompilation;
+originalknownportsource/gainandnativegrammar. DisjointsamePR writepaths:
+sources/d0_native_golden_stationary_extension_2026-10-25/ CLEAN_BOUNDARY.md,
+HERALDED_CONTROL.md, ALL_BRANCHES.md androothelper/checker/receipt/review;
+primary7al andthisbrief. No newtask/claim/registry/processwrite.
+Smallestchecks: finite-ring invariantinclnilpotentnegativecontrol;
+full16-column3stageV, realcontainerparser/effect/spectrum; oldfullinput
+source commonmap and actualmatchedcarrier/clockinventory; exactGolden
+code-price stationarity withnonzeroBookcontrollerrow; smalllogical
+resource/GOOD/X successmatrix forheraldedCG with allfailureeffect retained,
+not a claim to have matrixreplayedthehugeBooleanfactory. No oldroot,
+rank, READY,128carrier, Lean orcorpusreplay. Exactfieldsource/gaintransport
+is a positive application; unchanged-C conditionalphysicalcontroller,
+actualfullCost/Info and independentrawrowsremainopen. GR_closed=false.
+
+Golden execution/source checkpoint: primary7al10289bytes/SHA256
+8596e4606479ef097f2b6ab39fc0a6eb4971356a9c67ed3d5fc660a13fcfc65a.
+RootfinalCLIexit0/PASS24; stdout equals receipt;19source and6section
+pins verified. Receipt9151bytes/SHA256
+455cf2803fb177b7ed1e549882d267e94956105c4971fb836a2ea8cdd4442fe8.
+Exact replay boundary, full field/source/gain application and retained
+rawfactory/controller obligations are recorded in
+02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/INTEGRATION_REVIEW.md.
+Inputprimary49b78ad8, oldbrief and all priorpackets preserved. No physical
+price, independentvariation or GR status promoted. GR_closed=false.
