@@ -105,6 +105,74 @@ theorem a4dRightLorentz_gram_complete
   · rintro ⟨Λ, hΛ, rfl⟩
     exact (D0.Algebra.finiteGram_right_invariant roleLorentzMetric Θ Λ hΛ).symm
 
+/-- The determinant-one subgroup of the finite Lorentz isometries. This
+records spatial orientation; it does not impose a time-orientation component. -/
+def IsProperRoleLorentz (Λ : Matrix Role Role ℝ) : Prop :=
+  IsRoleLorentz Λ ∧ Matrix.det Λ = 1
+
+/-- Two nondegenerate solder frames lie in the same determinant-orientation
+component exactly when the product of their determinants is positive. -/
+def a4dSameFrameOrientation (Θ Ψ : Matrix Role Role ℝ) : Prop :=
+  0 < Θ.det * Ψ.det
+
+/-- A Lorentz frame witness between equally oriented invertible solder frames
+has determinant one, so it belongs to the proper determinant component. -/
+theorem a4dRightLorentz_sameOrientation_isProper
+    (Θ Ψ Λ : Matrix Role Role ℝ)
+    (hΘ : IsUnit Θ.det) (hΛ : IsRoleLorentz Λ)
+    (hΨ : Ψ = Θ * Λ)
+    (hOrientation : a4dSameFrameOrientation Θ Ψ) :
+    IsProperRoleLorentz Λ := by
+  have hdetEq : Ψ.det = Θ.det * Λ.det := by
+    rw [hΨ, Matrix.det_mul]
+  have hΘne : Θ.det ≠ 0 := (isUnit_iff_ne_zero).mp hΘ
+  have hΘsq : 0 < Θ.det ^ 2 := sq_pos_of_ne_zero hΘne
+  have hOrientation' : 0 < Θ.det * Ψ.det := by
+    change 0 < Θ.det * Ψ.det at hOrientation
+    exact hOrientation
+  have hdetProduct : 0 < Θ.det ^ 2 * Λ.det := by
+    calc
+      0 < Θ.det * Ψ.det := hOrientation'
+      _ = Θ.det ^ 2 * Λ.det := by rw [hdetEq]; ring
+  have hdetPos : 0 < Λ.det :=
+    (mul_pos_iff_of_pos_left hΘsq).mp hdetProduct
+  have hdetSq : Λ.det ^ 2 = 1 := by
+    simpa only [pow_two] using isRoleLorentz_det_sq Λ hΛ
+  have hfactor : (Λ.det - 1) * (Λ.det + 1) = 0 := by
+    nlinarith [hdetSq]
+  rcases mul_eq_zero.mp hfactor with hOne | hMinus
+  · exact ⟨hΛ, by linarith⟩
+  · have hdetEqMinus : Λ.det = -1 := by linarith
+    rw [hdetEqMinus] at hdetPos
+    exact False.elim (by linarith)
+
+/-- Adding the relative orientation tag refines the full `O(1,3)` Gram
+classification to its determinant-one subgroup. -/
+theorem a4dRightProperLorentz_gram_complete
+    (Θ Ψ : Matrix Role Role ℝ) (hΘ : IsUnit Θ.det) :
+    (D0.Algebra.finiteGram roleLorentzMetric Θ =
+        D0.Algebra.finiteGram roleLorentzMetric Ψ ∧
+      a4dSameFrameOrientation Θ Ψ) ↔
+      ∃ Λ : Matrix Role Role ℝ,
+        IsProperRoleLorentz Λ ∧ Ψ = Θ * Λ := by
+  constructor
+  · rintro ⟨hgram, hOrientation⟩
+    rcases (a4dRightLorentz_gram_complete Θ Ψ hΘ).mp hgram with
+      ⟨Λ, hΛ, hΨ⟩
+    exact ⟨Λ, a4dRightLorentz_sameOrientation_isProper
+      Θ Ψ Λ hΘ hΛ hΨ hOrientation, hΨ⟩
+  · rintro ⟨Λ, ⟨hΛ, hdetΛ⟩, hΨ⟩
+    constructor
+    · exact (a4dRightLorentz_gram_complete Θ Ψ hΘ).mpr
+        ⟨Λ, hΛ, hΨ⟩
+    · change 0 < Θ.det * Ψ.det
+      have hdetΨ : Ψ.det = Θ.det := by
+        rw [hΨ, Matrix.det_mul, hdetΛ]
+        ring
+      rw [hdetΨ]
+      simpa only [pow_two] using
+        sq_pos_of_ne_zero ((isUnit_iff_ne_zero).mp hΘ)
+
 theorem a4dSiteGram_fullFrame_invariant
     (e : LocalCoframeField N)
     (Λ : ArchiveRolePhaseGroup N → Matrix Role Role ℝ)
@@ -306,6 +374,55 @@ theorem a4d_complete_orbit_coordinates
         (a4dDressedLink_frame_invariant
           (rawSolderMatrix N e x) (L x r) (rawSolderMatrix N e y)
           (Λ x) (Λ y) (hΛ x) (hΛ y) (hnd y))
+
+/-- On the all-site nondegenerate sector, equality of every site Gram,
+every dressed link, and the relative determinant-orientation tags is
+equivalent to one site-dependent determinant-one Lorentz frame relating the
+complete coframe and link fields. This selects the proper determinant
+component but leaves time orientation unrestricted. -/
+theorem a4d_complete_proper_orbit_coordinates
+    (e e' : LocalCoframeField N) (L L' : A4DLinearLinkField N)
+    (hnd : ∀ x, IsUnit (rawSolderMatrix N e x).det) :
+    ((∀ x, a4dSiteGram N e' x = a4dSiteGram N e x) ∧
+      (∀ x r, a4dDressedLinkField N e' L' x r =
+        a4dDressedLinkField N e L x r) ∧
+      (∀ x, a4dSameFrameOrientation (rawSolderMatrix N e x)
+        (rawSolderMatrix N e' x))) ↔
+    ∃ Λ : ArchiveRolePhaseGroup N → Matrix Role Role ℝ,
+      (∀ x, IsProperRoleLorentz (Λ x)) ∧
+      e' = rawFullSolderFrameAction N e Λ ∧
+      L' = a4dFiniteLorentzLinkAction N L Λ := by
+  constructor
+  · rintro ⟨hgram, hlink, hOrientation⟩
+    rcases (a4d_complete_orbit_coordinates e e' L L' hnd).mp
+        ⟨hgram, hlink⟩ with ⟨Λ, hLorentz, hcoframe, hlinks⟩
+    have hproper (x : ArchiveRolePhaseGroup N) :
+        IsProperRoleLorentz (Λ x) := by
+      have hframe : rawSolderMatrix N e' x =
+          rawSolderMatrix N e x * Λ x := by
+        rw [hcoframe, rawFullSolderFrameAction_matrix]
+      exact a4dRightLorentz_sameOrientation_isProper
+        (rawSolderMatrix N e x) (rawSolderMatrix N e' x) (Λ x)
+        (hnd x) (hLorentz x) hframe (hOrientation x)
+    exact ⟨Λ, hproper, hcoframe, hlinks⟩
+  · rintro ⟨Λ, hproper, rfl, rfl⟩
+    have hcoordinates :=
+      (a4d_complete_orbit_coordinates e
+        (rawFullSolderFrameAction N e Λ) L
+        (a4dFiniteLorentzLinkAction N L Λ) hnd).mpr
+        ⟨Λ, (fun x => (hproper x).1), rfl, rfl⟩
+    refine ⟨hcoordinates.1, hcoordinates.2, ?_⟩
+    intro x
+    have hdet :
+        (rawSolderMatrix N (rawFullSolderFrameAction N e Λ) x).det =
+          (rawSolderMatrix N e x).det := by
+      rw [rawFullSolderFrameAction_matrix, Matrix.det_mul, (hproper x).2]
+      simp
+    change 0 < (rawSolderMatrix N e x).det *
+      (rawSolderMatrix N (rawFullSolderFrameAction N e Λ) x).det
+    rw [hdet]
+    simpa only [pow_two] using
+      sq_pos_of_ne_zero ((isUnit_iff_ne_zero).mp (hnd x))
 
 theorem invertibleSolder_trivial_right_stabilizer
     (Θ Λ : Matrix Role Role ℝ) (hΘ : IsUnit Θ.det)
