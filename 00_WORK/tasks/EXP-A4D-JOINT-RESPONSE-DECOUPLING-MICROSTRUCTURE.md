@@ -11892,3 +11892,88 @@ Combined insertion20023bytes, SHA256
 27eaac6c8ccc1fd21eda5eb484fac051bb8035c2e8304f934526f62b0d90baa0.
 These are local source/structural checks, not remote CI, an accepted
 physical GR claim or completion of the scientific goal.
+
+
+## 25 October checkpoint: global material query closes the full DATA preparation source
+
+Same scientific owner / Draft PR334 / constitutive/native-programme-v1.
+Phase: native realization and final composition. Research remains scoped;
+GR_closed=false, exact finite new-price roots and original raw216 remain open.
+Input0a5ab964, integrated on incoming20baaf62. Primary artifact is
+A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md §7be,
+Eq.471–482. Existing source/brief only; no new task, route registry or
+independent proof campaign.
+
+Exact parent substitution: the four-copy module's scalar material report
+is no longer assumed to be a scalar Book block. A fresh null-aligned
+full128 Gray reference has exact RIGHT-Gram and nonzero rational neighbor
+overlaps. With the ACTUAL overlap-compensated global LEFT operator
+Q_h=h^4 sum_z Qphys,z, every128 source column satisfies Q_h W=0.
+The original nonzero null coframe stress remains by the full-field
+observable identity. A query-only coherent echo has actual all-column
+corner c0 I; no unknown source inverse is used. Its entire DATA-Stiefel
+preparation covector vanishes, including four independent preparations.
+
+The physical fresh RIGHTs are retained and free. The specified cut is
+(WW^T tensor I_RIGHT)^tensor4 tensor I_oldprotected, with actual rank
+128^8 r_oldprotected; it is not silently128^4 or a pure-state cut. The
+same rank is protected by both geometry and matter. The all-column
+four-copy effect, whole balanced-involution heat and true direct sum
+produce a computed lambda_echo, approximately-2.0741879336566 for
+sigma=+1 and equal actual multiplicities. The required selector Lambda
+bounds its true involution coefficient sum in the old normalization
+lattice, not merely operator norm. All absolute Book anchors remain.
+
+With the common actual weak-query scale tau=eta_h^2, gain-normalized
+geometry remainders remain O(h^4) on smooth/coframe sources and O(h^2)
+on the complete raw-link dual norm. The ideal material first-source
+and DATA preparation identities are exact on the null carrier. Native
+all-column approximation retains exact endpoint involution and paid
+clock, with explicit epsilon/eta^2 preparation and epsilon/(eta^2 delta)
+field-stencil budgets. Source-preparation approximation preserves the
+RIGHT-Gram but retains its actual Q norm and separately selected prices.
+
+Remaining application: physical admission of this joint source/cut/field
+birth and readback graph, including actual geometry-code variation and
+cold WORK. An explicit unrestricted WORK-cut normal is nonzero, even
+at the ideal query. Correctness removes implementation first rows only
+on the genuine full-instrument fibre. The old measured module's readiness,
+abort law and CQ entropy are not silently reassigned to this different
+coherent echo. Eq.479 states the full readiness source if its deferred
+instrument is used instead. Arbitrary PF/tag weights and boundary sources
+are retained. Extra original HJR/Cost-Info/work/preparation terms are not
+claimed neutral. The owned all40+2 family consumes the computed coupling
+at the source level; finite geometric error does not give exact roots.
+
+Final proof pin:19110 bytes, SHA256
+ a4becf3422bc1873db8bb7154f63e324b7cfb5778c6c54d400c10c673840ca95.
+Independent source-only physical_query_binding, native_continuation_map
+and native_valuation_map ACCEPT this exact pin. They checked full RIGHT
+rank, global normalization, kernel/PF boundaries, computed source gain,
+compiler budgets and physical scope; none repeated the checker or edited
+files. The one requested LCU coefficient-normalization repair is included.
+
+Changed-step checker:4669 bytes, SHA256
+ d55e30d1e8f5bf1412683229f4f83c713596690736feb63f38dbb6b0d3368d0c.
+Exit0 Python3.11.9/NumPy2.2.6/SciPy1.16.3/SymPy1.12.1: exact512x128 Gray
+Gram, full2048x128 kernel, nonzero stress, v-weight failure, four-copy
+trace coefficient and physical RIGHT multiplicity, whole effect positivity,
+WORK-normal and readiness controls. The initial sparse/dense test-API
+mismatch was repaired; no mathematical expected result was changed.
+No unchanged all40, finite-root, full128 or Lean replay.
+
+Concurrent20baaf62 and its predecessors are preserved in full. Their
+closed Slater Born realization, SAME original K=QUP target, no-reset
+multi-tick memory and global-cut negative control have their own exact
+source/representation scope. They are not treated as compulsory physical
+admission of the new query or as equality of its entire record instrument.
+
+Affected structural checks PASS on the final scientific inputs: work,
+agent protocol, gravity assembly(valid=true;54 active/98 results/
+5 discharged/22 obligations;scientific_promotion=false), repository
+(889 claims/31 assumptions/58 aliases/183 formal_support/918 Lean closure;
+warnings0), and whitespace. This is local source/structural validation,
+not remote CI or physical acceptance. Removing7be plus its embedded
+check restores incoming20baaf62 primary BYTE EXACT; incoming brief is
+an exact prefix. Combined insertion25105bytes, SHA256
+ f8ede69cd10fb20ea6922e8b3b44a2ab69362d7b0747482265e3d961008e1480.

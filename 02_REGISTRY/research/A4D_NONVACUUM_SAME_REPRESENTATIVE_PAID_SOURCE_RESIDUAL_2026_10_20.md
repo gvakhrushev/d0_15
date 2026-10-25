@@ -15009,6 +15009,485 @@ print('PASS noncommuting all16 mark/Cayley source; odd cubic cancellation; boost
 print('gain',S.N(kap0,18),'python SymPy',S.__version__)
 ```
 
+## 7be. One global null-reference query supplies the matter Book source and all data-preparation rows
+
+25 October 2026; SAME PR334 / constitutive/native-programme-v1, input
+0a5ab964. This composes7bd with the actual four-copy LEFT material
+observable, rather than appending its scalar probability as an assumed
+Book block. A new explicit full128 reference makes the GLOBAL material
+operator annihilate every source column. The query-only echo then has a
+scalar return on the entire actual four-copy input. Its full Book first
+source is the original material covector, with a computed coefficient,
+while ALL independent DATA-source preparation first rows vanish. No
+unknown preparation inverse is used. The construction is a new admitted-
+programme target, with controlled native approximation; compulsory field
+birth, unrestricted WORK normals and extra physical stack terms remain
+separate applications.
+
+Inputs reused: [four-copy response](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md)
+(its actual LEFT observable, original CAR masks, polynomial effect and
+common finite-code normalization); [all40+2 consumer](../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md#51-the-entire-arbitrary-brinkmann-family-requires-only-the-two-native-source-jets-not-an-infinite-action-expansion)
+(the already-proved arbitrary derived coupling);7ad (whole-heat first
+variation at an involution),7bd (oriented geometric source and compiler).
+This is a changed input to the preparation-normal problem: a global
+query and a freshly constructed null-aligned reference, not a repeated
+scalar zero-expectation argument.
+
+### A full128 null reference with rational nonzero stencil overlaps
+
+Use a finite uniform rectangular site set with S sites, L_u a multiple
+of512, and the original16 CAR and128 RIGHT dimensions. In the u coordinate
+let g(u) be the cyclic reflected nine-bit Gray code of u modulo512.
+Let K contain all nine-bit characters of Hamming weight at most3, except
+T1={0,1,2} and T2={0,1,3}. There are1+9+36+84-2=128 of them. Define
+
+    chiHat_u=(1/sqrt(128)) sum_(k in K) (-1)^(k dot g(u)) |k>,
+    chi_z=chiHat_u/sqrt(S),
+    M_z=(sqrt(p)|1>+psi_0(u)|0>+d(u)|14>+psi_4(u)|15>) chi_z^T,
+    d(u)=sqrt(1-p-|Psi(u)|^2)>0,   W=sqrt(128) M.       (471)
+
+M denotes the stacked LEFT-site/CAR by RIGHT matrix, not one local
+block. Character orthogonality over every complete Gray cycle gives
+M^T M=I_128/128, hence W^T W=I_128. This uses the full pointwise CAR
+normalization and is independent of the nonconstant Psi(u). All128
+RIGHT columns and both scalar/top fields remain. The fixed grade-one
+anchor remains sqrt(p), as in the primary carrier.
+
+Each Gray step, including511 to0, flips one bit b. Among all weight<=3
+characters that bit occurs37 times; deleting T1,T2 leaves35,36 or37.
+Consequently
+
+    Gamma_(z,z+u)=<chiHat_(u+1),chiHat_u>
+                   in {27/64,28/64,29/64},
+    Gamma_(z,z+v)=Gamma_(z,z+x)=Gamma_(z,z+y)=1.       (472)
+
+Every cross-stencil difference involving one u-step has the same
+corresponding Gamma_u; all others have overlap1. These rational positive
+numbers have a uniform gap. Unlike a sharply localized orthogonal site
+reference, this frame does not destroy the actual difference readout.
+
+This is an explicit NEW fresh preparation on the SAME full carrier and
+RIGHT-Gram, not a claim that the old Fourier purification has changed
+without a physical operation. It is not a conversion/reset of an unknown
+oldRIGHT. At the ideal logical level H on seven fresh reference bits,
+reversible Gray/character computation and a Boolean sign prepare it.
+Exact H is NOT inferred from density of the original Golden gate set.
+Actual native realization is by the all-column approximation below, or
+by a separately paid exact logical instrument with its real readiness.
+
+### The original observable, summed before taking a scalar price
+
+For a site z let d_(A,r)=|z+e_r,a(A)>-|z,a(A)>, a(0)=0,a(4)=15, and
+Mkin_z=sum_(A,r,t) gHat_z^(rt) d_(A,r) d_(A,t)^T. Use the same original
+operational inverse metric gHat and h as the four-copy owner, including
+its density/calibration factors. Define the actual LEFT matrix by
+ENTRYWISE reference compensation, for its site/CAR indices a,b:
+
+    (Qphys_z)_(a,b) = (S/h^2) (Mkin_z)_(a,b) / Gamma_(site(a),site(b)),
+    Q_h = h^4 sum_z Qphys_z,
+    I_q,h = h^4 sum_z sum_(A,r,t) gHat_z^(rt) D_r^+psi_A D_t^+psi_A.
+    (1/128) Tr(W^T Q_h W) = Tr(M^T Q_h M) = I_q,h.  (473)
+
+Zero unsupported entries stay zero. The factor S is essential: this
+is NOT the site multiplication operator with a missing1/S. Formula473
+is the original contraction proof with the explicitly given new Gamma.
+It holds for every field in the stated CAR section and EVERY independent
+geometric coefficient, not only along the solution family. Gamma is held
+fixed under those field variations. For the old inverse-PF query this
+is Qphys_z=rho_z Q_z. If actual AF weights are used instead of uniform
+physical site summation, retain their exact weights/rho and transport;
+do not identify an arbitrary weighted sum with473.
+
+On the primary Brinkmann chart gHat has only the uv mixed term, the vv
+term proportional to H(u,x,y), and transverse diagonal terms, with the
+original fixed scale. Let D_v=S_v-I and
+
+    Dtilde_u=gamma_u^(-1) S_u-I,
+    gamma_u=Gamma_(u,u+1).
+
+Entrywise compensation converts the summed uv operator EXACTLY into
+Dtilde_u^T M_b D_v + D_v^T M_b Dtilde_u. The vv and transverse terms
+are D_v^T M_c D_v and D_a^T M_da D_a. Here b contains the COMPLETE
+actual summation weight, metric coefficient and any inverse-PF factor.
+For473 it is v-independent. Choose periodic v, or an actual difference/
+adjoint boundary condition annihilating v-constant columns; do not use
+unreported zero-extension Dirichlet boundaries. Each scalar/top column
+f(u)=psi_A(u) chi_j(u) then satisfies
+
+    D_v f=D_x f=D_y f=0,
+    D_v^T (b Dtilde_u f)=0,
+    Q_h W=0.                                      (474)
+
+The other CAR grades are outside the support of Q_h. Thus474 is a FULL
+128-column kernel identity, not merely Tr(M^T Q_h M)=0. No u-periodic
+matter condition is needed for the v cancellation; when u is periodic
+choose a periodic nonconstant Psi. A finite u collar can also be retained.
+Transverse boundaries must retain the actual constant-preserving edge
+operator or their boundary source. If b depends on v, the leftover is
+D_v^T(b Dtilde_u f), generally nonzero: metric nullness alone does not
+permit erasing arbitrary PF/tag weights.
+
+The null material energy is not zero: Psi can have any small nonzero
+u-gradient. Differentiating473 with respect to the original coframe
+still yields its nonzero null stress. In contrast, at fixed Q_h every
+independent Stiefel tangent of W has derivative
+2 Tr(delta W^T Q_h W)/128=0. This removes precisely the previously
+unresolved DATA-source normal G_eff M=M Lambda, with Lambda=0; it does
+not address a positive spatial Hodge operator or an additional source
+preparation price absent from the present Book functional.
+
+### Query-only echo on the entire actual input, without inverse M
+
+Decompose Q_h=sum_l a_l V_l into the original signed involutions.
+Choose one common Lambda_h>=max(1,max_code sum_l |a_l(code)|), in the
+original dyadic/Q(p) normalization lattice after common denominator
+clearing, and eta_h^2=1/(64 Lambda_h). This supplies the actual positive
+selector weights and implies Lambda_h>=||Q_h||; an operator-norm bound
+alone would not supply that selector. The rational overlaps
+in472 preserve the old finite Q(p) coefficient/selector construction
+whenever the supplied geometry coefficients have that field. Put
+
+    R_j=p I+sigma p^2 eta_h^2 Q_h,j,  sigma in {+1,-1},
+    E=4 R_1 R_2 (I-R_3 R_4),   B0=4p^3=1-p^6.       (475)
+
+The j label denotes four independent complete LEFT inputs; each RIGHT
+is a spectator. This is the ACTUAL all-input effect of the original
+ordered four-copy query, not a scalar effect assigned from its output
+law. The owned uniform bound and Boolean Golden-prefix construction
+give0<E<I and a finite real coherent target S for the query, including
+selector coins, four flags, arithmetic and report. Its initially blank
+query work is retained. If Pi_B is the complete report-one projector,
+
+    <0_work| S^T Pi_B S |0_work>=E,
+    U=S^T (I-2Pi_B) S,    U^2=I,
+    K=<0_work|U|0_work>=I-2E.                        (476)
+
+Only the QUERY is reversed. S does not prepare W, does not know the
+unknown material amplitudes, and does not contain an inverse of M.
+The middle sign has equally many plus/minus modes because the report
+is a full actual bit; it is a conjugate of the old exact SourceI^2
+middle on the whole carrier. A fixed sign/basis alignment and determinant
+correction are included when compiling the conjugator.
+
+The physical fresh reference is distinct from the abstract column index
+of W: |C>=(W tensor I_RIGHT)|Omega_128>. To retain every fresh RIGHT
+as a FREE identity spectator, choose the explicit DATA cut
+P_DATA=(W W^T tensor I_RIGHT)^(tensor4) tensor I_oldprotected.
+It contains the actual four-copy state, and its isometry is
+i=(W_1 tensor I_RIGHT) tensor ... tensor (W_4 tensor I_RIGHT)
+tensor I_oldprotected. All four W_j equal W at the primary point but
+have INDEPENDENT subsequent DATA-preparation variations. The active
+rank is d=128^8 r_oldprotected, where r_oldprotected is the ACTUAL
+further free input rank. It is not128^4: the four physical fresh RIGHT
+registers contribute another128^4. A rank-one pure-state cut or a
+diagonal LEFT/RIGHT-paired cut would be a DIFFERENT programme. The
+present full DATA cut and blank query WORK are specified explicitly;
+the old scalar-report theorem alone does not select this cut. Blank
+work does not multiply d.
+At474, R_j i=p i and E i=B0 i. Hence on ALL free input columns
+
+    C=i^T K i=c0 I_d, c0=1-2B0,
+    F=I-C^T C=F0 I_d, F0=4B0(1-B0),
+    J=-Tr log(I-zeta F)=-d log D0,
+    D0=1-zeta+zeta c0^2=1-zeta F0>0.                (477)
+
+This is the missing prepared-cut type check. Knowledge of the expectation
+B(q) alone would not imply477. The new column-wise kernel474 does.
+Every output and unprepared column is still in the whole unitary; no
+branch is discarded to obtain477.
+
+For a geometric variation, tracing the derivative of475 at474 gives
+
+    Tr_d(i^T delta E i)=8 sigma d p^6 eta_h^2 delta I_q,h,
+    delta J=32 sigma d zeta p^6 eta_h^2 c0/D0 * delta I_q,h.  (478)
+
+For independent variations of ANY W_j within its entire LEFT DATA
+Stiefel space, the corresponding first derivative of C is zero: K i=c0 i
+and delta(i^T i)=0. Therefore all these independent first rows of J
+vanish, not only the two scalar/top coordinate rows. Whole heat has no
+W-dependence at fixed operator and is stationary for every endpoint
+unitary variation at U^2=I by7ad. Coupled variations combine these facts
+linearly. Arbitrary changes of the initially cold WORK fibre are not
+Stiefel DATA variations and have NOT been declared zero. Indeed, for
+the full prepared projector P, n=(I-P)U i/sqrt(F0) and
+i(t)=cos(t)i+sin(t)n give delta C=2sqrt(F0) I, hence
+delta J=-4 d zeta c0 sqrt(F0)/D0, nonzero. This explicit WORK normal
+exists even for the exact ideal query.
+
+The measured finite-cap implementation in the four-copy owner has
+completion alpha, not1. This section uses a DIFFERENT coherent native
+approximation of476, and never relabels that old instrument as exact
+coherent S. If instead its full deferred-record dilation is used, its
+unconditional effect is alpha E, so replace B0 by alpha B0 and478 by
+
+    delta J=(4 zeta c_alpha/D_alpha)
+       [alpha Tr(i^T delta E i)+B0 d delta alpha],
+    c_alpha=1-2alpha B0, D_alpha=1-zeta+zeta c_alpha^2. (479)
+
+All aborts and readiness are then retained. In particular alpha=1/(2B0)
+kills the matter first source, and varying readiness adds a genuine
+normal. A conditional report cannot silently remove these terms.
+
+### One full Book price with geometric and material Euler sources
+
+Use7bd on ALL genuine oriented faces, protecting the same whole four-copy
+source image and all its RIGHT inputs, and take a true active direct sum
+with ONE global matter arm476. Geometry acts as identity on that entire
+source DATA factor. The common protected multiplicity is therefore
+q_g=q_m=d=128^8 r_oldprotected, unless actual extra free spectators
+dictate a stated ratio.
+The input rank is (2 N_faces+1)d; the complete work/heat dimension is
+larger and is kept. Extend/pad whole blocks to the actual common layout;
+blank padding affects heat, not active rank. Both reciprocal geometry
+and matter remain balanced involutions, so the actual entire fixed-clock
+heat is stationary and its absolute value is retained.
+
+Normalize the TWO query strengths by the same known weak-query factor:
+set tau_h=eta_h^2 and use A_f=tau_h h^2 X_(B_f) in7bd. This is a declared
+area-to-probe coupling of the constructed programme, not a physical
+metric dilation or Golden scale law. The geometric coefficient is
+kappa0=2 q_g zeta p^2/(1-zeta+zeta p^2). At the primary null family,
+
+    delta B_full = a_h [delta I_star,h + lambda_echo delta I_q,h]
+                      + delta R_geo,h,
+    a_h=kappa0 eta_h^2>0,
+    lambda_echo=16 sigma (q_m/q_g) p^4 c0
+                   (1-zeta+zeta p^2)/(1-zeta+zeta c0^2). (480)
+
+The absolute geometry anchors, matter baseline477 and whole true-N heat
+stay in B_full. They were not cancelled from its value or declared a
+spatial HJR/Info/work identity. This coefficient is COMPUTED from the
+same operator/cut, not chosen to reproduce the old lambda_minus. Since
+c0<0, sigma=+1 gives lambda_echo<0 in the existing all40 source convention.
+The old exact nonvacuum consumer accepts this actually derived ratio;
+no old special coupling is forced onto the new price.
+
+The weaker area operand does not spoil7bd's estimate. Uniformly for
+0<tau_h<=1, its bound is proportional to tau_h:
+R_site=O(tau_h h^8), so after N_faces=O(h^-4) summation and division by
+a_h, action/smooth-field source error is O(h^4), all independent raw-link
+covector error O(h^2), unscaled-coframe source error O(h^4), integrated
+w=h e source error O(h^3). The same fixed-q qualifications apply. This
+uses x=||A||=O(tau_h h^2), y=||log P||=O(h^2) in the explicit7bd bounds;
+no uncontrolled division by a vanishing gain is hidden. The raw h^-2
+link norm, uniform Hessian and exact finite critical roots remain open.
+The material first-source identity478 itself is exact at474.
+
+Thus the existing arbitrary-Brinkmann Poisson family with the ratio480
+has the correct limiting FULL geometric plus scalar/top covector here,
+and has ZERO ideal DATA-preparation covector. Its finite geometric
+remainder is retained, so it is not relabelled an exact finite root of
+this new Book price. The all40+2 exact roots belong to their exact-source
+owner; a separate controlled continuation theorem would be needed to
+transfer finite critical points.
+
+### Actual native precision, paid work and the remaining physical map
+
+For each supplied finite geometry code, compile the ENTIRE real query
+conjugator S in operator norm using the same owned native SO compiler
+as7bd. Set U_epsilon=S_epsilon^T (I-2Pi_B) S_epsilon with the exact
+native balanced middle and actual paid inverse. Then U_epsilon^2=I
+EXACTLY, its complete heat is stationary at its true duration, and
+||U_epsilon-U||<=2epsilon. All intermediate work and clock stages stay.
+There is no irreversible measurement/retry hidden in this different
+unitary approximation. It does not assert an exact finite Golden word
+for logical H or for the whole ideal S.
+
+For an exact474 input and a pure DATA-source tangent, compression gives
+||delta C_epsilon||<=4epsilon ||delta i||. Hence
+
+    |delta J_epsilon| <= 8 d zeta epsilon/(1-zeta)
+                              sum_(j=1)^4 ||delta W_j||. (481)
+
+This is an actual input derivative of a FIXED native word, not a C1
+selector of words. The ideal source normal is zero and the finite error
+is explicit. Its gain-normalized disappearance requires epsilon/eta_h^2
+->0. Field finite differences also retain the7bd price-error budget:
+with geometry and matter precisions epsilon_g,epsilon_m, a sufficient
+central-stencil bound is
+
+    E_total <= [8 q_g zeta N_faces epsilon_g
+                              +4 q_m zeta epsilon_m]/(1-zeta),
+    source error <= E_total/(a_h delta).             (482)
+
+Use actual stencil coefficients for other differences. Endpoint accuracy
+alone does not supply a differentiable physical field writer.
+
+Fresh source preparation has its own genuine precision. Given a KNOWN
+full-rank initial source isometry on the same LEFT carrier, an orthogonal
+LEFT alignment to W exists; choose an SO extension using unused modes
+and compile it. Every native LEFT approximation preserves RIGHT-Gram
+EXACTLY. If ||W_hat-W||<=epsilon_W, then
+||Q_h W_hat||<=||Q_h|| epsilon_W. This is not an inverse of an unknown
+state and not a claim that source-preparation cost vanishes. After the
+normalization in475, matter/preparation errors are controlled by the
+actual ||Q_h|| epsilon_W and derivative norms; divide by the actual gain
+before asserting a refining source limit. The source-word, its inverse
+if actually used, and any separately selected preparation/Info/clock
+price must still be included in the native full process. No silent
+source-normal cancellation is asserted for those additional charges.
+
+For literal final recording,7f/7g allow C_copy(U tensor I_bank)C_copy
+ONLY when C_copy fixes the entire actual prepared input. Copy genuine
+blank WORK flags; exclude free arm/RIGHT and noncomputational source
+coordinates. The final bank then coherently records those output labels,
+J is unchanged, and the enlarged heat and two copies are paid. This is
+not dephasing/immutable-history equivalence. On the verification fibre
+of the full output instrument, correctness fixes the full return effect;
+7ad then removes every implementation first row, even tangents whose
+nearby endpoints are not involutions. A single tested probability is
+insufficient for this fibre.
+
+The parent substitution is now explicit: the old scalar material report
+is replaced by ONE all-input global effect, an actual query-only Book
+corner, its non-fitted coupling, and a full128 DATA preparation kernel.
+This is more than an implementation or scalar-null certificate. It
+composes material and geometric source maps on the SAME protected input,
+with actual normalizations and all source rows in the stated domain.
+The remaining native application is the compulsory joint birth/readback
+and variation graph connecting these coframes, proper links, query code,
+source and cold work, plus whatever original Cost-Info/HJR/controller
+terms that execution actually selects. The known original scene-edge
+-> four-Role Lorentz representation is not supplied by defining that
+correctness graph. No unrestricted WORK-source stationarity, generic
+metric-only locality, prospective minimum, physical GR closure or raw216
+acceptance follows from480. These distinctions preserve the positive
+construction rather than replacing its missing application by a claim.
+
+### New decisive exact check for471–482
+
+Embedded Python below is the complete changed-step check. It verifies
+all512x128 integer character entries and the full2048x128 uv/vv kernel,
+its nonzero geometric response, failure under an actual v-dependent
+weight, the whole-effect bound and sixteen-column four-copy source,
+RIGHT multiplicity and WORK/readiness controls. The finite echo block
+is a dimension-independent interface fixture, not an emitted huge native
+word. The omitted transverse part is proved by its difference factorization
+above. This check does not replay the owned all40/GR/Lean calculations.
+
+Proof before this check:19110 UTF-8 bytes,
+SHA256 a4becf3422bc1873db8bb7154f63e324b7cfb5778c6c54d400c10c673840ca95.
+Checker:4669 UTF-8 bytes,
+SHA256 d55e30d1e8f5bf1412683229f4f83c713596690736feb63f38dbb6b0d3368d0c.
+Python3.11.9 / NumPy2.2.6 / SciPy1.16.3 / SymPy1.12.1: exit0.
+The nonzero v-weight negative control has262144 nonzero entries;
+lambda_echo(sigma=+1,q_m=q_g)=-2.07418793365660126112214 and the
+rigorous-expression whole-effect upper bound evaluates to0.974031724585965481.
+An initial sparse-matrix assertion used the dense NumPy API; that test
+API was corrected before the successful run, without changing the operator
+or expected identity. No failing mathematical input was removed.
+
+```python
+from itertools import combinations
+from fractions import Fraction as F
+import math
+import numpy as np
+import sympy as sp
+from scipy.sparse import coo_matrix
+
+# Actual 512-site, all128-column Gray reference. Integer signs are exact.
+K=[sum(1<<b for b in t) for n in range(4) for t in combinations(range(9),n)]
+K.remove((1<<0)|(1<<1)|(1<<2)); K.remove((1<<0)|(1<<1)|(1<<3))
+assert len(K)==128
+G=[u^(u>>1) for u in range(512)]
+V=np.array([[(-1)**((k&g).bit_count()) for k in K] for g in G],dtype=np.int64)
+assert np.array_equal(V.T@V,512*np.eye(128,dtype=np.int64))
+flip=[G[u]^G[(u+1)%512] for u in range(512)]
+assert all(x.bit_count()==1 for x in flip)
+nums=np.sum(V*np.roll(V,-1,axis=0),axis=1)
+assert set(nums)=={54,56,58}
+counts=[sum(bool(k&(1<<b)) for k in K) for b in range(9)]
+assert set(counts)=={35,36,37}
+assert all(nums[u]==128-2*counts[flip[u].bit_length()-1] for u in range(512))
+
+# Exact integer compensated uv+vv operator on512x4. The omitted transverse
+# terms annihilate the x,y-constant columns by their exact difference form.
+Nv=4; N=512*Nv; scale=math.lcm(27,28,29)
+def ix(u,v):return (u%512)*Nv+v%Nv
+def makeQ(bad=False):
+    rr=[];cc=[];aa=[]
+    def add(i,j,v):rr.append(i);cc.append(j);aa.append(v)
+    for u in range(512):
+        gamma_inv_scaled=scale*128//int(nums[u])
+        assert gamma_inv_scaled*int(nums[u])==scale*128
+        for v in range(Nv):
+            z=ix(u,v);zu=ix(u+1,v);zv=ix(u,v+1)
+            b=1+u%5+(v if bad else 0)
+            # du dv^T+dv du^T, entrywise divided by actual overlaps.
+            for i,j,s,hasu in [(zu,zv,1,True),(zu,z,-1,True),
+                               (z,zv,-1,False),(z,z,1,False)]:
+                a=b*s*(gamma_inv_scaled if hasu else scale)
+                add(i,j,a);add(j,i,a)
+            c=-(1+u%7)
+            for i,j,s in [(zv,zv,1),(zv,z,-1),(z,zv,-1),(z,z,1)]:
+                add(i,j,c*s*scale)
+    return coo_matrix((np.array(aa,dtype=np.int64),(rr,cc)),shape=(N,N)).tocsr()
+Q=makeQ(); psi=np.array([10+u%7 for u in range(512)],dtype=np.int64)
+W=np.repeat(psi[:,None]*V,Nv,axis=0)
+assert np.count_nonzero(Q@W)==0
+badQ=makeQ(True); bad=badQ@W
+assert np.count_nonzero(bad)>0
+assert (Q-Q.T).count_nonzero()==0
+# All-column kernel not a trace test; every one of2048x128 entries checked.
+# Geometric uu response survives and has EXACT compensated normalization.
+for u in [0,1,3,127,255,510,511]:
+    w=(u+1)%512
+    row0=psi[u]*V[u];row1=psi[w]*V[w]
+    response=F(int(row1@row1+row0@row0),128)-2*F(int(row1@row0),int(nums[u]))
+    assert response==int(psi[w]-psi[u])**2
+assert any(psi[(u+1)%512]!=psi[u] for u in range(512))
+
+p=(sp.sqrt(5)-1)/2;z=sp.Rational(1,2**20);a=1-z
+red=lambda x:sp.simplify(sp.expand(x))
+B0=4*p**3;c0=1-2*B0;F0=4*B0*(1-B0);D0=a+z*c0**2
+assert red(B0-(1-p**6))==0
+assert red(1-c0*c0-F0)==0
+assert float(c0)<0 and 0<float(F0)<1
+# Whole-carrier effect bound for the actual normalization eta^2||Q||<=1/64.
+delta=p*p/64
+upper=4*(p+delta)**2*(1-(p-delta)**2)
+assert float(upper)<1 and float(p-delta)>0
+
+# Full16-column four-copy compression derivative, with independent inputs.
+I2=sp.eye(2);A=sp.Matrix([[2,3],[3,4]])
+emb=[]
+for j in range(4):
+    factors=[I2]*4;factors[j]=A
+    emb.append(sp.kronecker_product(*factors))
+eta2=sp.Rational(1,640);k=p*p*eta2
+DE=4*k*(p*(1-p*p)*(emb[0]+emb[1])-p**3*(emb[2]+emb[3]))
+d=16;Dq=sp.trace(A)/2
+assert red(sp.trace(DE)-8*d*p**6*eta2*Dq)==0
+DJ=4*z*c0*sp.trace(DE)/D0
+kap=2*d*z*p*p/(a+z*p*p)
+lam=16*p**4*c0*(a+z*p*p)/D0
+assert red(DJ/(kap*eta2*Dq)-lam)==0
+# Explicit physical RIGHT spectators multiply true rank, preserving lambda.
+assert red(128**4*DJ/(128**4*kap*eta2*Dq)-lam)==0
+assert 128**8>128**4
+
+# A small full echo carrier verifies the operator/cold-WORK distinction.
+# Exact rational balanced involution with nonzero leakage, all input columns.
+# This is an interface fixture; full128 reference is checked above.
+c=sp.Rational(3,5);s=sp.Rational(4,5);Id=sp.eye(3)
+U=sp.BlockMatrix([[c*Id,s*Id],[s*Id,-c*Id]]).as_explicit()
+i=sp.eye(6)[:,:3];n=sp.eye(6)[:,3:]
+assert U*U==sp.eye(6)
+assert i.T*U*i==c*Id
+assert n.T*U*i+i.T*U*n==2*s*Id
+normal=-4*3*z*c*s/(a+z*c*c)
+assert normal!=0
+# Readiness cannot be normalized away; its zero-source case is exact.
+alpha=1/(2*B0)
+assert red(1-2*alpha*B0)==0
+
+print('PASS: exact512x128 Gray Gram; all stencil overlaps; 2048x128 full kernel')
+print('PASS: nonzero geometric source; v-weight negative control; full16-column trace gain')
+print('PASS: retained physical RIGHT rank; whole effect bound; actual WORK-normal/readiness controls')
+print('lambda_echo(sigma=+1,q_m=q_g)=',sp.N(lam,24))
+print('effect upper bound=',sp.N(upper,18),'bad_weight_nonzero_entries=',np.count_nonzero(bad))
+```
+
 ## 8. Reproduction
 
 Run from this directory:
