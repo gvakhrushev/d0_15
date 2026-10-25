@@ -10951,3 +10951,40 @@ Affected structural validation PASS: work, agent protocol, assembly,
 repository(warnings0), and diff whitespace. No mathematical replay was
 needed after the final scope clarifications. This is local structural
 validation, not remote CI or accepted physical closure.
+
+Direct bootstrap route decision after7at (same owner; no new task):
+Book03:201,387--393,1137 already supplies the finite stationary law.
+A separate prospective/minimality or Cost-Info derivation is NOT required
+for this direct H+J application, and a justified constrained sector need
+not exhaust all D0 programmes. The new7at theorem establishes joint
+normalized asymptotic realization and the physical source limit; it does
+not establish exact finite stationary attainment.
+
+Books01:1709--1743 and02:760--768,1171--1179 identify the precise
+alternative consumer: native finite response tests, compatible
+refinement/forgetting, and their kappa-stable zero class. A realizable
+finite source contrast can be read without continuously tuning G; its
+normalization cancels wa/Gamma to1/gbar. This observation alone does
+not apply the original stationary law. The next missing substitution
+is the ACTUAL changing7at query/return/source family into that native
+halt/response quotient, with all price and normalized-source budgets,
+or exact stationary continuation on a justified native sector.
+
+Do not replace this by another density proof or generic condensed
+comparison. Ordinary prefix truncation fails to intertwine a cyclic
+clock at its old terminal edge. Paid identity subdivision admits an
+explicit stroboscopic/Schur comparison but preserves the feedback
+residual; it does not describe7at's changing query and improving source.
+Likewise an unscaled fixed-exponent history-weight concentration does
+not follow from the normalized residual bound or from A tending to
+infinity when the actual closing gain tends to zero. These are route
+boundaries for this existing application, not new universal prerequisites
+or a no-go against the native physical bridge.
+
+The marked-prefix/transported source observations in7ar are not already
+retained terminal records: the request is uncomputed. The cancellation
+of w in the normalized contrast avoids an inverse-w readout factor,
+but does not pay a new detector. An appended detector must retain its
+real work, records, clock and resulting complete source. Numerical
+phi^-k bounds alone do not establish Book01 projective operator/response
+naturality or physical stationary admission.
