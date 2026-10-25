@@ -1,12 +1,12 @@
 {
-  "snapshot_commit": "796bba3bb09cfa0b8b7a65f63f5bf1ef6c9fd4c3",
+  "snapshot_commit": "938166589cd5f95e2fbb94e5591d9de3b8ccaaab",
   "worktree_dirty": false,
   "source_digests": {
     "02_REGISTRY/claims.csv": "8ba9bfbac99a5fe0d8e8f2b6ef8d69f3190f8c1073051eca9f005e5a93b578cf",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
     "02_REGISTRY/formal_support.csv": "ae7d19fea7750aa1f03b1706992c1fe1adef45e6bfdb29838dfe771b393835d6",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
-    "02_REGISTRY/gr_assembly/applications.json": "f71bc2202effbe37e234ad54cbd050a729fb7736e06d328d3821ee036e54a1e4",
+    "02_REGISTRY/gr_assembly/applications.json": "56e00d713a006d2981d098488d6f50bc51a8e8d2be19935a2c5d49cd292b316f",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
   },
@@ -46,10 +46,10 @@
       "changed_since_pin": 2,
       "unverified_pin": 6
     },
-    "section_locator_count": 12,
-    "ranked_section_candidate_count": 160,
-    "results_with_ranked_section_candidates": 40,
-    "results_with_incomplete_section_mapping": 42,
+    "section_locator_count": 15,
+    "ranked_section_candidate_count": 151,
+    "results_with_ranked_section_candidates": 37,
+    "results_with_incomplete_section_mapping": 39,
     "interpretation": "Counts describe source pins and recorded section locators, not accepted C0 units or semantic result-to-source relations."
   },
   "results": [
@@ -245,71 +245,16 @@
         {
           "locator": {
             "source_file_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md#L16: A. The selected finite action already owns a nonlinear metric carrier",
-                "section_ref": "L16: A. The selected finite action already owns a nonlinear metric carrier",
-                "heading": "A. The selected finite action already owns a nonlinear metric carrier",
-                "heading_line": 16,
-                "matched_terms": [
-                  "action",
-                  "eta",
-                  "flat",
-                  "metric",
-                  "nondegenerate",
-                  "quotient",
-                  "selected",
-                  "star",
-                  "theta"
-                ],
-                "query_term_count": 12,
-                "overlap_fraction": 0.75,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md#L802: 12. Navarro/Lovelock audit",
-                "section_ref": "L802: 12. Navarro/Lovelock audit",
-                "heading": "12. Navarro/Lovelock audit",
-                "heading_line": 802,
-                "matched_terms": [
-                  "action",
-                  "eta",
-                  "flat",
-                  "metric",
-                  "owned",
-                  "quotient",
-                  "selected",
-                  "star",
-                  "theta"
-                ],
-                "query_term_count": 12,
-                "overlap_fraction": 0.75,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md#L1024: 16. Theorem-ready statements",
-                "section_ref": "L1024: 16. Theorem-ready statements",
-                "heading": "16. Theorem-ready statements",
-                "heading_line": 1024,
-                "matched_terms": [
-                  "action",
-                  "einstein",
-                  "eta",
-                  "flat",
-                  "metric",
-                  "quotient",
-                  "star",
-                  "tangent",
-                  "theta"
-                ],
-                "query_term_count": 12,
-                "overlap_fraction": 0.75,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md#L16: A. The selected finite action already owns a nonlinear metric carrier",
+              "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md#L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L16: A. The selected finite action already owns a nonlinear metric carrier",
+              "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": null
@@ -345,7 +290,11 @@
             {
               "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
               "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
-              "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc"
+              "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+              "section_refs": [
+                "L16: A. The selected finite action already owns a nonlinear metric carrier",
+                "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+              ]
             }
           ],
           "reported_state": "Main-owned metric provenance; global all-mode elimination remains obstructed."
@@ -454,69 +403,14 @@
         {
           "locator": {
             "source_file_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L9: 0. Verdict and proof boundary",
-                "section_ref": "L9: 0. Verdict and proof boundary",
-                "heading": "0. Verdict and proof boundary",
-                "heading_line": 9,
-                "matched_terms": [
-                  "center",
-                  "coupled",
-                  "exact",
-                  "fourier",
-                  "normal",
-                  "parametrix",
-                  "remains",
-                  "rescue",
-                  "smooth",
-                  "tail"
-                ],
-                "query_term_count": 13,
-                "overlap_fraction": 0.7692,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L66: 1.2 The theorem's hypotheses",
-                "section_ref": "L66: 1.2 The theorem's hypotheses",
-                "heading": "1.2 The theorem's hypotheses",
-                "heading_line": 66,
-                "matched_terms": [
-                  "coupled",
-                  "exact",
-                  "fourier",
-                  "normal",
-                  "open",
-                  "realization",
-                  "rescue",
-                  "smooth"
-                ],
-                "query_term_count": 13,
-                "overlap_fraction": 0.6154,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L227: 4.2 A proof parametrix with uniform Wiener radius",
-                "section_ref": "L227: 4.2 A proof parametrix with uniform Wiener radius",
-                "heading": "4.2 A proof parametrix with uniform Wiener radius",
-                "heading_line": 227,
-                "matched_terms": [
-                  "exact",
-                  "fourier",
-                  "normal",
-                  "parametrix",
-                  "realization",
-                  "rescue",
-                  "smooth"
-                ],
-                "query_term_count": 13,
-                "overlap_fraction": 0.5385,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L9: 0. Verdict and proof boundary"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L9: 0. Verdict and proof boundary"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": null
@@ -552,7 +446,8 @@
             {
               "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
               "path": "02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
-              "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a"
+              "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a",
+              "section_ref": "L9: 0. Verdict and proof boundary"
             }
           ],
           "reported_state": "PARTIAL / refinement-uniform full coupled stationary estimate unresolved"
@@ -7549,116 +7444,16 @@
         {
           "locator": {
             "source_file_key": "source:518ee207d790fdf9c13692a784ba3255625fd001:02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:518ee207d790fdf9c13692a784ba3255625fd001:02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md#L30: 2. NEW full-source inverse — not even the clock priors, early acceptances or κ are external numerical inputs",
-                "section_ref": "L30: 2. NEW full-source inverse — not even the clock priors, early acceptances or κ are external numerical inputs",
-                "heading": "2. NEW full-source inverse — not even the clock priors, early acceptances or κ are external numerical inputs",
-                "heading_line": 30,
-                "matched_terms": [
-                  "32",
-                  "absolute",
-                  "acceptances",
-                  "action",
-                  "analytic",
-                  "book",
-                  "closed",
-                  "common",
-                  "depth",
-                  "endpoint",
-                  "equality",
-                  "full",
-                  "function",
-                  "hence",
-                  "implies",
-                  "inverse",
-                  "jets",
-                  "one",
-                  "original",
-                  "path",
-                  "perron",
-                  "positive",
-                  "record",
-                  "scalar",
-                  "shared",
-                  "similarities",
-                  "smooth",
-                  "two",
-                  "verification",
-                  "weight"
-                ],
-                "query_term_count": 39,
-                "overlap_fraction": 0.7692,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:518ee207d790fdf9c13692a784ba3255625fd001:02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md#L94: 4. CRITICAL NECESSITY: recording the stage is not enough if the two depths have independently varying VERIFICATION filters",
-                "section_ref": "L94: 4. CRITICAL NECESSITY: recording the stage is not enough if the two depths have independently varying VERIFICATION filters",
-                "heading": "4. CRITICAL NECESSITY: recording the stage is not enough if the two depths have independently varying VERIFICATION filters",
-                "heading_line": 94,
-                "matched_terms": [
-                  "143484",
-                  "absolute",
-                  "action",
-                  "book",
-                  "both",
-                  "closed",
-                  "common",
-                  "depth",
-                  "full",
-                  "function",
-                  "one",
-                  "original",
-                  "path",
-                  "positive",
-                  "record",
-                  "scalar",
-                  "shared",
-                  "smooth",
-                  "two",
-                  "verification",
-                  "verifier"
-                ],
-                "query_term_count": 39,
-                "overlap_fraction": 0.5385,
-                "review_status": "unreviewed_lexical_candidate"
-              },
-              {
-                "candidate_source_unit_key": "source:518ee207d790fdf9c13692a784ba3255625fd001:02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md#L112: 5. Consequence for D0→Einstein — an actual source, but NOT the entire selected physics",
-                "section_ref": "L112: 5. Consequence for D0→Einstein — an actual source, but NOT the entire selected physics",
-                "heading": "5. Consequence for D0→Einstein — an actual source, but NOT the entire selected physics",
-                "heading_line": 112,
-                "matched_terms": [
-                  "143484",
-                  "32",
-                  "absolute",
-                  "action",
-                  "book",
-                  "closed",
-                  "common",
-                  "complete",
-                  "depth",
-                  "endpoint",
-                  "full",
-                  "jets",
-                  "one",
-                  "original",
-                  "path",
-                  "perron",
-                  "positive",
-                  "scalar",
-                  "two",
-                  "verification",
-                  "verifier"
-                ],
-                "query_term_count": 39,
-                "overlap_fraction": 0.5385,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:518ee207d790fdf9c13692a784ba3255625fd001:02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md#L5: 1. The correct archived clock variable is WHERE the run stopped, not only the final depth",
+              "source:518ee207d790fdf9c13692a784ba3255625fd001:02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md#L30: 2. NEW full-source inverse — not even the clock priors, early acceptances or κ are external numerical inputs"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L5: 1. The correct archived clock variable is WHERE the run stopped, not only the final depth",
+              "L30: 2. NEW full-source inverse — not even the clock priors, early acceptances or κ are external numerical inputs"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "source_missing",
             "snapshot_path": null
@@ -7724,7 +7519,11 @@
             {
               "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
               "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
-              "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+              "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef",
+              "section_refs": [
+                "L5: 1. The correct archived clock variable is WHERE the run stopped, not only the final depth",
+                "L30: 2. NEW full-source inverse — not even the clock priors, early acceptances or κ are external numerical inputs"
+              ]
             },
             {
               "ref": "518ee207d790fdf9c13692a784ba3255625fd001",

@@ -857,8 +857,8 @@ For verified pinned Markdown sources without an explicit section locator, the
 view ranks up to three heading candidates by lexical overlap with the
 assembly-result statement. Candidate records contain matched terms, overlap
 fraction, and the exact pinned line/heading coordinate, and remain labeled
-`unreviewed_lexical_candidate`. The current output contains 160 ranked
-suggestions across 40 result rows; 42 result-to-unit mappings remain
+`unreviewed_lexical_candidate`. The current output contains 151 ranked
+suggestions across 37 result rows; 39 result-to-unit mappings remain
 incomplete. Independent read-only review checked the earlier 178 ranked
 candidates against 59 unique pinned Git blobs; the current 169 are a subset.
 The reviewer also recomputed the 54-result/190-evidence summary. These checks
@@ -869,8 +869,8 @@ row.
 The regenerated artifact
 `sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json`
 was built from clean snapshot
-`796bba3bb09cfa0b8b7a65f63f5bf1ef6c9fd4c3`; its SHA-256 is
-`573c78203842bfe5a3abf367124ca457cb7187d8f5f1023ce0bce90917de4968`.
+`938166589cd5f95e2fbb94e5591d9de3b8ccaaab`; its SHA-256 is
+`040dccf0c6ea8b85585341a3ee9a79a87fc18fe3929eb8051f2541fffb35ae2c`.
 Its `D0.All` pass enumerates 899 co-located declarations in nine current
 modules. Lean source digest
 `e2d01817a8f7a3c11b64f0e84a9a44aa58e82304715793c0fb95ddffcbae4dae` and the
