@@ -4546,3 +4546,52 @@ remains in progress: C0 is unfrozen, the 54 compiled semantic relations are
 unresolved, and full C0 dispositions, independent acceptance, remaining
 library migration, and physical GR/source selection remain open. This
 intermediate checkpoint does not satisfy the WRK-401 completion conditions.
+
+
+### Exact claim BOOK/section source-key candidate pass (25 October 2026)
+
+The generated `claim-sources` view resolves the existing `claims.csv`
+`book/section` fields against Markdown ATX headings in the ten `01_BOOKS`
+files. It expands conservative `BOOK_01/02` shorthand, pairs equal-length
+composite book/section lists, and permits one book to carry several explicit
+sections. It leaves mismatched multi-book lists unresolved, ignores body text
+and fenced-code headings, and reports duplicate exact headings as ambiguous.
+No source locator, claim statement, release status, or owner is rewritten.
+
+At source snapshot `84b32c7189bb3793032622dab1b990bb59307929`, the view
+contains all 889 claim rows and all 731 parseable source pairs. There are 94
+rows with only unique exact heading matches, four partially resolved rows,
+zero ambiguous rows, 611 rows with no exact heading match, 170 malformed rows
+whose composite BOOK and section counts do not pair, and ten non-BOOK source
+rows. The pair-level counts are 116 unique and 615 unresolved. The row
+categories are disjoint. All ten current book files match their Git blobs at
+the snapshot; the current `claims.csv` SHA-256 also equals its snapshot blob.
+
+The fully resolved `D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001` example now
+has exact candidate source keys at Book 01 §01.8.1 (line 1111) and Book 02
+§02.34 (line 2121). Four partial rows remain explicit: the intrinsic-quotient
+claim has no exact Book 04 §04.11 heading; the automorphism/Hodge claim has no
+heading for the literal §08.12.5-6 range; two cascade-floor claims have no
+Book 01 headings for their literal §03.23.2 and §03.23.4 references. The
+resolver does not split ranges or move a section to another book to force a
+match.
+
+The complete derived view is
+`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`
+(608,420 bytes; SHA-256
+`b7372d8eab69b9f1b2f40a833f5057846d6bb651c928b53c9f902073a7750fb7`). It
+records the `claims.csv` digest `e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5`
+and resolver SHA-256
+`a6114ed772f36251a54953f13531694cac1734020f5ce128cafae0ae4eb8053b`;
+re-running the CLI produced byte-identical output. Exact unique headings carry
+candidate source keys of the form
+`source:<snapshot>:<path>#L<line>: <heading>`. This is source-location
+evidence only; no C0 semantic disposition, coverage figure, or acceptance is
+inferred.
+
+The focused proof-architecture suite passes 43/43. Its new cases check paired
+and one-to-many locators, duplicate headings, body/fenced-code false matches,
+non-BOOK sources, malformed composite pairs, and UTF-8 CLI output on a legacy
+Windows code page. C0 remains unfrozen and unaccepted; existing scientific
+owners, physical premises, and the 54 unresolved assembly semantic relations
+remain unchanged.

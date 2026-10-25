@@ -47,6 +47,14 @@ theorem result source section field proof claim mathematical unit
 """.split())
 
 
+def _configure_stdout_utf8(stream: Any | None = None) -> None:
+    """Keep JSON CLI output usable on Windows consoles with legacy code pages."""
+    target = sys.stdout if stream is None else stream
+    reconfigure = getattr(target, "reconfigure", None)
+    if callable(reconfigure):
+        reconfigure(encoding="utf-8", errors="replace")
+
+
 def read_json(root: pathlib.Path, relative: pathlib.Path) -> Any:
     return json.loads((root / relative).read_text(encoding="utf-8-sig"))
 
@@ -54,6 +62,250 @@ def read_json(root: pathlib.Path, relative: pathlib.Path) -> Any:
 def read_csv(root: pathlib.Path, relative: pathlib.Path) -> list[dict[str, str]]:
     with (root / relative).open(encoding="utf-8-sig", newline="") as stream:
         return list(csv.DictReader(stream))
+
+
+_BOOK_HEADING_RE = re.compile(r"^BOOK_(\d+)(?:_|\.|$)", re.IGNORECASE)
+_BOOK_TOKEN_RE = re.compile(r"^BOOK[_ -]?(\d+)$", re.IGNORECASE)
+_SECTION_ID_RE = re.compile(
+    r"^(?:§\s*)?\d+(?:\.\d+)*(?:[a-z])?(?:\s*[-–]\s*\d+(?:\.\d+)*(?:[a-z])?)?$",
+    re.IGNORECASE,
+)
+_HEADING_SECTION_RE = re.compile(
+    r"^(?:§\s*)?(\d+(?:\.\d+)*(?:[a-z])?(?:[-–]\d+(?:\.\d+)*(?:[a-z])?)?)(?=$|[\s:：—–])",
+    re.IGNORECASE,
+)
+
+
+def _parse_claim_book_tokens(value: str) -> tuple[list[str], str | None]:
+    """Expand BOOK_01/02 shorthand without guessing at other source names."""
+    parts = [part.strip() for part in value.split("/") if part.strip()]
+    if not parts:
+        return [], "missing_book_locator"
+    numbers: list[str] = []
+    current: str | None = None
+    for part in parts:
+        full = _BOOK_TOKEN_RE.fullmatch(part)
+        if full:
+            current = f"{int(full.group(1)):02d}"
+            numbers.append(current)
+            continue
+        if part.isdecimal() and current is not None:
+            current = f"{int(part):02d}"
+            numbers.append(current)
+            continue
+        return [], "malformed_book_locator"
+    return [f"BOOK_{number}" for number in numbers], None
+
+
+def _claim_section_tokens(value: str) -> list[str]:
+    """Split slash-separated section IDs, preserving prose labels verbatim."""
+    value = value.strip()
+    if not value:
+        return []
+    parts = [part.strip() for part in value.split("/")]
+    if len(parts) > 1 and all(_SECTION_ID_RE.fullmatch(part) for part in parts):
+        return parts
+    return [value]
+
+
+def _normalize_heading_label(value: str) -> str:
+    value = re.sub(r"^§\s*", "", value.strip(), flags=re.IGNORECASE)
+    value = re.sub(r"\s+", " ", value)
+    return value.casefold()
+
+
+def _section_matches_heading(section: str, heading: str) -> bool:
+    """Match a section ID at the beginning of a Markdown heading, never body text."""
+    section_id = _normalize_heading_label(section).replace("–", "-")
+    if _SECTION_ID_RE.fullmatch(section):
+        match = _HEADING_SECTION_RE.match(heading)
+        return bool(match and match.group(1).casefold().replace("–", "-") == section_id)
+    return _normalize_heading_label(heading) == _normalize_heading_label(section)
+
+
+def _book_source_pin(root: pathlib.Path, path: pathlib.Path) -> dict[str, Any]:
+    relative = path.relative_to(root).as_posix()
+    blob_sha1: str | None = None
+    head_blob_sha1: str | None = None
+    try:
+        blob_sha1 = subprocess.check_output(
+            ["git", "hash-object", "--", str(path)], cwd=root,
+            text=True, encoding="utf-8", stderr=subprocess.DEVNULL,
+        ).strip()
+        head_blob_sha1 = subprocess.check_output(
+            ["git", "rev-parse", f"HEAD:{relative}"], cwd=root,
+            text=True, encoding="utf-8", stderr=subprocess.DEVNULL,
+        ).strip()
+    except (OSError, subprocess.CalledProcessError):
+        pass
+    return {
+        "path": relative,
+        "source_sha256": sha256(path),
+        "source_blob_sha1": blob_sha1,
+        "snapshot_blob_sha1": head_blob_sha1,
+        "matches_snapshot_commit": bool(blob_sha1 and blob_sha1 == head_blob_sha1),
+    }
+
+
+def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
+    """Resolve existing claim book/section locators to exact heading candidates.
+
+    This generated view reports source-location candidates only. It does not
+    accept claim semantics, application edges, or any C0 disposition.
+    """
+    root: pathlib.Path = dataset["root"]
+    book_paths: dict[str, list[pathlib.Path]] = {}
+    book_sources: dict[str, dict[str, Any]] = {}
+    book_headings: dict[str, list[dict[str, Any]]] = {}
+    for path in sorted((root / "01_BOOKS").glob("BOOK_*.md")):
+        match = _BOOK_HEADING_RE.match(path.name)
+        if not match:
+            continue
+        key = f"BOOK_{int(match.group(1)):02d}"
+        book_paths.setdefault(key, []).append(path)
+        pin = _book_source_pin(root, path)
+        book_sources[pin["path"]] = pin
+        book_text = path.read_text(encoding="utf-8-sig")
+        for line_number, heading, _body in _markdown_sections(book_text):
+            book_headings.setdefault(key, []).append({
+                "path": pin["path"],
+                "line": line_number,
+                "heading": heading,
+                "source_sha256": pin["source_sha256"],
+                "source_blob_sha1": pin["source_blob_sha1"],
+                "snapshot_blob_sha1": pin["snapshot_blob_sha1"],
+                "matches_snapshot_commit": pin["matches_snapshot_commit"],
+            })
+
+    rows: list[dict[str, Any]] = []
+    counts = {
+        "claim_rows": len(dataset["claims"]),
+        "fully_unique_claim_rows": 0,
+        "partially_resolved_claim_rows": 0,
+        "ambiguous_claim_rows": 0,
+        "unresolved_claim_rows": 0,
+        "non_book_claim_rows": 0,
+        "malformed_claim_rows": 0,
+        "locator_pairs": 0,
+        "unique_locator_pairs": 0,
+        "ambiguous_locator_pairs": 0,
+        "unresolved_locator_pairs": 0,
+    }
+
+    for claim in dataset["claims"]:
+        claim_id = claim.get("claim_id", "")
+        book_field = claim.get("book", "").strip()
+        section_field = claim.get("section", "").strip()
+        recognized_book = bool(re.search(r"\bBOOK[_ -]?\d+", book_field, re.IGNORECASE))
+        if not recognized_book:
+            counts["non_book_claim_rows"] += 1
+            rows.append({
+                "claim_id": claim_id,
+                "book_locator": book_field,
+                "section_locator": section_field,
+                "resolution_status": "non_book_locator",
+                "locator_pairs": [],
+                "interpretation": "The declared source is not a BOOK_XX locator; no book heading was inferred.",
+            })
+            continue
+
+        book_tokens, book_error = _parse_claim_book_tokens(book_field)
+        section_tokens = _claim_section_tokens(section_field)
+        parse_error = book_error
+        if not section_tokens:
+            parse_error = parse_error or "missing_section_locator"
+        elif book_tokens and len(book_tokens) != 1 and len(book_tokens) != len(section_tokens):
+            parse_error = "book_section_count_mismatch"
+
+        if parse_error:
+            counts["malformed_claim_rows"] += 1
+            rows.append({
+                "claim_id": claim_id,
+                "book_locator": book_field,
+                "section_locator": section_field,
+                "resolution_status": "malformed_locator",
+                "parse_error": parse_error,
+                "locator_pairs": [],
+                "interpretation": "The locator could not be paired conservatively; no source was selected.",
+            })
+            continue
+
+        pairs = ([(book_tokens[0], section) for section in section_tokens]
+                 if len(book_tokens) == 1 else list(zip(book_tokens, section_tokens)))
+        pair_rows: list[dict[str, Any]] = []
+        for book_key, section in pairs:
+            paths = book_paths.get(book_key, [])
+            candidates = [
+                dict(heading) for heading in book_headings.get(book_key, [])
+                if _section_matches_heading(section, heading["heading"])
+            ]
+            for candidate in candidates:
+                candidate["candidate_source_unit_key"] = (
+                    f"source:{dataset['snapshot_commit']}:{candidate['path']}"
+                    f"#L{candidate['line']}: {candidate['heading']}"
+                    if candidate["matches_snapshot_commit"] else None
+                )
+            if len(paths) == 0:
+                status = "unresolved"
+                reason = "book_file_missing"
+            elif len(candidates) == 1 and len(paths) == 1:
+                status = "unique"
+                reason = None
+            elif candidates:
+                status = "ambiguous"
+                reason = "multiple_exact_heading_candidates"
+            else:
+                status = "unresolved"
+                reason = "no_exact_heading_match"
+            counts["locator_pairs"] += 1
+            counts[f"{status}_locator_pairs"] += 1
+            pair_row: dict[str, Any] = {
+                "book_locator": book_key,
+                "section_locator": section,
+                "resolution_status": status,
+                "candidates": candidates,
+            }
+            if reason:
+                pair_row["reason"] = reason
+            pair_rows.append(pair_row)
+
+        statuses = [row["resolution_status"] for row in pair_rows]
+        if all(status == "unique" for status in statuses):
+            overall = "unique"
+            counts["fully_unique_claim_rows"] += 1
+        elif "ambiguous" in statuses:
+            overall = "ambiguous"
+            counts["ambiguous_claim_rows"] += 1
+        elif "unique" in statuses:
+            overall = "partial"
+            counts["partially_resolved_claim_rows"] += 1
+        else:
+            overall = "unresolved"
+            counts["unresolved_claim_rows"] += 1
+        rows.append({
+            "claim_id": claim_id,
+            "book_locator": book_field,
+            "section_locator": section_field,
+            "resolution_status": overall,
+            "locator_pairs": pair_rows,
+            "interpretation": "Exact heading coordinates are source candidates, not semantic claim acceptance or C0 disposition.",
+        })
+
+    return {
+        "schema": "d0-claim-source-candidate-view-v1",
+        "snapshot_commit": dataset["snapshot_commit"],
+        "worktree_dirty": dataset.get("worktree_dirty"),
+        "collector_sha256": sha256(pathlib.Path(__file__).resolve()),
+        "claim_registry_sha256": dataset["source_digests"].get(CLAIMS.as_posix()),
+        "book_sources": book_sources,
+        "book_source_count": len(book_sources),
+        "counts": counts,
+        "rows": rows,
+        "interpretation": (
+            "Derived locator view only. Exact heading matches identify candidate source coordinates; "
+            "they do not accept the claim statement, prove semantic coverage, freeze C0, or change owner/status."
+        ),
+    }
 
 
 def sha256(path: pathlib.Path) -> str:
@@ -1783,6 +2035,7 @@ def _render_text(value: Any, *, complete_arrays: bool = False) -> str:
 
 
 def main() -> int:
+    _configure_stdout_utf8()
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     search = sub.add_parser("search", help="search structured authorities and bounded full-text candidates")
@@ -1810,6 +2063,8 @@ def main() -> int:
                            help="compiled public import used for declaration enumeration")
     crosswalk.add_argument("--all-current", action="store_true",
                            help="enumerate all verified current pinned Lean evidence sources in one pass")
+    sub.add_parser("claim-sources",
+                   help="resolve claims.csv book/section locators to exact heading candidates")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -1874,6 +2129,8 @@ def main() -> int:
                 data, lean_declaration_inventory, result_id=args.key,
                 import_root=args.import_root, all_current=args.all_current,
             )
+        elif args.command == "claim-sources":
+            result = claim_source_candidate_view(data)
         else:
             if not args.key:
                 parser.error("impact requires KEY unless --base is supplied")
@@ -1883,7 +2140,8 @@ def main() -> int:
         result.setdefault("worktree_dirty", data["worktree_dirty"])
     print(_render_text(
         result,
-        complete_arrays=args.command == "crosswalk" and args.all_current,
+        complete_arrays=(args.command == "crosswalk" and args.all_current)
+        or args.command == "claim-sources",
     ))
     return 0
 
