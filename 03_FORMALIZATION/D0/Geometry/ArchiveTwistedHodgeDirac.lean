@@ -1,5 +1,6 @@
 import Mathlib.Data.Complex.Basic
 import Mathlib.Tactic
+import D0.Algebra.FiniteHermitianAdjoint
 import D0.Geometry.ArchiveHodgeCARDirac
 import D0.Geometry.ArchiveTwistedRoleDifference
 
@@ -40,6 +41,15 @@ def ScalarSeamHolonomy.untwisted {N : ℕ} (H : ScalarSeamHolonomy N) : Prop :=
 
 def cochainPairingC (N : ℕ) (ψ φ : ArchiveCochainC N) : ℂ :=
   ∑ x, ∑ s, star (ψ (x, s)) * φ (x, s)
+
+/-- The nested site/Fock pairing is the standard finite Hermitian pairing on
+the actual site × Fock coordinate carrier. -/
+theorem cochainPairingC_eq_finiteHermitianPairing (N : ℕ)
+    (ψ φ : ArchiveCochainC N) :
+    cochainPairingC N ψ φ = D0.Algebra.finiteHermitianPairing ψ φ := by
+  classical
+  unfold cochainPairingC D0.Algebra.finiteHermitianPairing
+  rw [Fintype.sum_prod_type]
 
 def HomogeneousCochainC (N k : ℕ) (ψ : ArchiveCochainC N) : Prop :=
   ∀ x S, fockDegree S ≠ k → ψ (x, S) = 0
@@ -702,6 +712,53 @@ theorem dTwisted_add (N : ℕ) (H : Role → ℂ) (ψ φ : ArchiveCochainC N) :
   intro r _
   exact twistedCreateDirection_add N H r ψ φ
 
+theorem twistedCreateDirection_smul (N : ℕ) (H : Role → ℂ) (r : Role)
+    (c : ℂ) (ψ : ArchiveCochainC N) :
+    twistedCreateDirection N H r (c • ψ) =
+      c • twistedCreateDirection N H r ψ := by
+  classical
+  funext p
+  unfold twistedCreateDirection createActionC twistedForwardSite
+  simp only [Pi.smul_apply, smul_eq_mul]
+  calc
+    (∑ ket, (carCreate r p.2 ket : ℂ) *
+        twistedForwardDifference N r (H r)
+          (fun x => c * ψ (x, ket)) p.1) =
+        ∑ ket, c * ((carCreate r p.2 ket : ℂ) *
+          twistedForwardDifference N r (H r) (fun x => ψ (x, ket)) p.1) := by
+            apply Finset.sum_congr rfl
+            intro ket _
+            rw [congrFun (twistedForwardDifference_const_mul N r (H r) c
+              (fun x => ψ (x, ket))) p.1]
+            ring
+    _ = c * ∑ ket, (carCreate r p.2 ket : ℂ) *
+          twistedForwardDifference N r (H r) (fun x => ψ (x, ket)) p.1 := by
+            rw [Finset.mul_sum]
+
+theorem dTwisted_smul (N : ℕ) (H : Role → ℂ) (c : ℂ)
+    (ψ : ArchiveCochainC N) :
+    dTwisted N H (c • ψ) = c • dTwisted N H ψ := by
+  classical
+  funext p
+  unfold dTwisted
+  simp only [Finset.sum_apply, Pi.smul_apply, smul_eq_mul]
+  calc
+    (∑ r, twistedCreateDirection N H r (c • ψ) p) =
+        ∑ r, c * twistedCreateDirection N H r ψ p := by
+          apply Finset.sum_congr rfl
+          intro r _
+          exact congrFun (twistedCreateDirection_smul N H r c ψ) p
+    _ = c * ∑ r, twistedCreateDirection N H r ψ p := by
+          rw [Finset.mul_sum]
+
+/-- The concrete twisted exterior differential as a finite linear operator on
+the existing site × Fock carrier. -/
+def dTwistedLinear (N : ℕ) (H : Role → ℂ) :
+    ArchiveCochainC N →ₗ[ℂ] ArchiveCochainC N where
+  toFun := dTwisted N H
+  map_add' := dTwisted_add N H
+  map_smul' := dTwisted_smul N H
+
 theorem dTwistedAdjoint_add (N : ℕ) (H : Role → ℂ) (ψ φ : ArchiveCochainC N) :
     dTwistedAdjoint N H (ψ + φ) = dTwistedAdjoint N H ψ + dTwistedAdjoint N H φ := by
   unfold dTwistedAdjoint
@@ -870,6 +927,35 @@ theorem dTwisted_adjoint (N : ℕ) (H : Role → ℂ)
   refine Finset.sum_congr rfl ?_
   intro r _
   exact twistedCreateDirection_adjoint N H r (hunit r) ψ φ
+
+/-- Under the supplied unit-holonomy condition, the explicit CAR annihilation
+formula is exactly the canonical finite Hermitian adjoint of `dTwistedLinear`.
+This identifies the native formula with the generic finite-operator API; it
+does not select the holonomy or an inner product physically. -/
+theorem dTwistedAdjoint_eq_finiteHermitianAdjoint (N : ℕ) (H : Role → ℂ)
+    (hunit : ∀ r, star (H r) * H r = 1) (φ : ArchiveCochainC N) :
+    dTwistedAdjoint N H φ =
+      D0.Algebra.finiteHermitianAdjoint (dTwistedLinear N H) φ := by
+  funext p
+  have hgeneric (ψ : ArchiveCochainC N) :
+      D0.Algebra.finiteHermitianPairing (dTwistedLinear N H ψ) φ =
+        D0.Algebra.finiteHermitianPairing ψ
+          (D0.Algebra.finiteHermitianAdjoint (dTwistedLinear N H) φ) :=
+    D0.Algebra.finiteHermitianPairing_adjoint (dTwistedLinear N H) ψ φ
+  have hexplicit (ψ : ArchiveCochainC N) :
+      D0.Algebra.finiteHermitianPairing (dTwisted N H ψ) φ =
+        D0.Algebra.finiteHermitianPairing ψ (dTwistedAdjoint N H φ) := by
+    calc
+      D0.Algebra.finiteHermitianPairing (dTwisted N H ψ) φ =
+          cochainPairingC N (dTwisted N H ψ) φ :=
+        (cochainPairingC_eq_finiteHermitianPairing N _ _).symm
+      _ = cochainPairingC N ψ (dTwistedAdjoint N H φ) :=
+        dTwisted_adjoint N H hunit ψ φ
+      _ = D0.Algebra.finiteHermitianPairing ψ (dTwistedAdjoint N H φ) :=
+        cochainPairingC_eq_finiteHermitianPairing N _ _
+  have hcoord := (hgeneric (Pi.single p (1 : ℂ))).symm.trans
+    (hexplicit (Pi.single p (1 : ℂ)))
+  simpa only [D0.Algebra.finiteHermitianPairing_single_left] using hcoord.symm
 
 theorem dTwistedAdjoint_adjoint (N : ℕ) (H : Role → ℂ)
     (hunit : ∀ r, star (H r) * H r = 1) (ψ φ : ArchiveCochainC N) :

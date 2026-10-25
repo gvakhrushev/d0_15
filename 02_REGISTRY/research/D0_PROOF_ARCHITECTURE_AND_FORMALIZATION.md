@@ -2976,3 +2976,62 @@ equivalence dependency from `protocolTheoryVerification`. It still reports
 accepted application edge. This is a finite mathematical application, not an
 external physical apparatus, causal-independence proof, cost selection, or
 physical D0 realization. No physical or assembly premise is discharged.
+
+### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)
+
+This vertical slice adds `D0.Algebra.FiniteHermitianAdjoint` as a general
+finite-coordinate API and connects it to the existing complex twisted CAR
+implementation. For a finite carrier over a field with `StarRing`, the module
+defines the standard sesquilinear pairing, proves its conjugate symmetry,
+constructs the coordinatewise conjugate-transpose operator, proves the
+adjoint identity, and proves uniqueness from evaluation on coordinate basis
+vectors. It asserts no weighted or physically selected metric.
+
+The concrete consumer is the existing finite site × Fock carrier in
+`D0.Geometry.ArchiveTwistedHodgeDirac`. The new `dTwistedLinear` packages the
+already-defined differential as a genuine complex-linear map, and
+`cochainPairingC_eq_finiteHermitianPairing` identifies its nested site/Fock
+sum with the generic coordinate pairing. Under the existing explicit premise
+`∀ r, star (H r) * H r = 1`,
+`dTwistedAdjoint_eq_finiteHermitianAdjoint` proves that the existing CAR
+annihilation formula is exactly the generic adjoint. The unit-holonomy premise
+remains quantified; this does not select `H`, a Hodge profile, a physical
+inner product, or an action.
+
+The generic declarations are in
+`03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean`:
+`finiteHermitianPairing_conj`, `finiteHermitianAdjoint`,
+`finiteHermitianPairing_adjoint`, `finiteHermitianPairing_single_left`, and
+`finiteHermitianAdjoint_unique`. The application declarations are in
+`03_FORMALIZATION/D0/Geometry/ArchiveTwistedHodgeDirac.lean`:
+`cochainPairingC_eq_finiteHermitianPairing`, `dTwistedLinear`, and
+`dTwistedAdjoint_eq_finiteHermitianAdjoint` (the theorem begins at line 935;
+the inventory declaration range is 931–958, including its doc comment).
+The adapter retains the existing detailed `dTwisted_adjoint` proof as its
+dependency. `formal_support.csv` records the concrete consumer, and
+the generated `D0.All` view now imports the general Algebra module. No claim
+status, bridge assumption, assembly application, or physical premise changes.
+
+Compiled declaration inventories are stored at
+`sources/d0_proof_architecture_formalization_2026-10-24/finite_hermitian_adjoint_module_declarations_2026-10-25.json`
+(SHA-256
+`240668cf139904e9d4e677a783c79bf4569a8d8e76e07a58bf5064492dcf54a8`) and
+`sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hermitian_adjoint_application_2026-10-25.json`
+(SHA-256
+`4d56681d078ff994d020bafa2a5d46badbfb4ce682ba3abedd959a738877df98`). Both
+were collected against snapshot
+`cf15304e9e69472ecf9ba7a977585af8e3f41dcf` with
+`worktree_dirty=true`, Lean 4.30.0, and common Lean-source digest
+`9a93491afc17e98ccb519a36708e4b632cbeec4e94ea8a6af90b5f5da596f594`.
+Their declaration collectors have SHA-256
+`f158ffe2996c7b579add2dc96b967571088ec838d7efcb36b9b337bb0f4e342b` for the
+generic module and
+`440dd0248e99da01879635f9d08d7abeb46b780d75b099b00aa6863e89ee1a85` for the
+concrete application. The compiled trust footprint of the adjoint identity
+and concrete adapter is `Classical.choice`, `Quot.sound`, and `propext`; this
+checkpoint removes none of those trust dependencies.
+
+The narrow `D0.Geometry.ArchiveTwistedHodgeDirac` target builds with the new
+API imported. This is a compiled finite mathematical adapter, not a positive
+metric theorem or a physical Hodge/GR application. No assembly receipt is
+created from a matching declaration name.
