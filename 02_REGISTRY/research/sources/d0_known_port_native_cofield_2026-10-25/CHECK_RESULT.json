@@ -1,0 +1,324 @@
+{
+  "aa_support": {
+    "CX": 1894,
+    "G": 1254,
+    "SourceI": 1256,
+    "actual_book_blanks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "actual_expanded_stages": 4404,
+    "algorithmic_Pref_rank": 64,
+    "amplifier_rebit": 3,
+    "bank": 7,
+    "base_declared_input_rank": 32,
+    "full_dimension": 256,
+    "initial_controls": [
+      1,
+      2
+    ],
+    "known_port": 4,
+    "physical_Book_rank": 4,
+    "qubits": 8,
+    "ready_controls": [
+      1
+    ],
+    "report_bit": 2,
+    "scope": "owned API inventory/support only; bank7 spectator in this fixture, real reports may read banks; no long AA matrix or gamma theorem replay"
+  },
+  "absolute_gain_decay_model": [
+    "0.00001141034658439614632525268051542936352902090014538234338335252842708889",
+    "0.0000000002129849747794601531465773983097526420380533917841848940057431155780107",
+    "1.496647703945892182959173486504243945943833430126498193027155875169543e-54"
+  ],
+  "check_names": [
+    "literal W_K has its exact ALL-column identity/controlled-G definition K1 L1",
+    "completed W_K restores the dedicated helper and arbitrary Q8 spin on ALL columns K1 L1",
+    "known-port middle counts every true inverse and has rank4 rather than an unknown meter rank8 K1 L1",
+    "the actual compact native choice has d=alpha_old/2 strictly between one half and one K1 L1",
+    "the full real spectral multiplicities include every unready work/helper/spin column K1 L1",
+    "literal W_K has its exact ALL-column identity/controlled-G definition K2 L9",
+    "completed W_K restores the dedicated helper and arbitrary Q8 spin on ALL columns K2 L9",
+    "known-port middle counts every true inverse and has rank4 rather than an unknown meter rank8 K2 L9",
+    "the actual compact native choice has d=alpha_old/2 strictly between one half and one K2 L9",
+    "the full real spectral multiplicities include every unready work/helper/spin column K2 L9",
+    "actual source G^r has the known-port rank4 scalar Q8 corner r4",
+    "whole source echo is I_helper,spin on EVERY completed column r4",
+    "the SAME word with unknown port has a genuinely different rank8 return task r4",
+    "known-port source and true inverse clocks62/74/134 are matched by real two-CX words r4",
+    "the source contrast has its certified actual positive q below one quarter r4",
+    "actual source G^r has the known-port rank4 scalar Q8 corner r5",
+    "whole source echo is I_helper,spin on EVERY completed column r5",
+    "the SAME word with unknown port has a genuinely different rank8 return task r5",
+    "known-port source and true inverse clocks62/74/134 are matched by real two-CX words r5",
+    "the source contrast has its certified actual positive q below one quarter r5",
+    "actual source G^r has the known-port rank4 scalar Q8 corner r10",
+    "whole source echo is I_helper,spin on EVERY completed column r10",
+    "the SAME word with unknown port has a genuinely different rank8 return task r10",
+    "known-port source and true inverse clocks62/74/134 are matched by real two-CX words r10",
+    "the source contrast has its certified actual positive q below one quarter r10",
+    "actual full paired heat is constant across fixed-middle source forks while feedback changes",
+    "old reflected-middle known-port compression is cos(theta)I on ALL remaining work/spin inputs",
+    "old reflected known-cut amplitude cannot be substituted for the new source-bearing W_K corner",
+    "known ports are private BLANK work, so protected Q8/oldRIGHT rank stays constant M2",
+    "counterfactual source fork preserves earlier native stages and future base blocks M2",
+    "every later completed block leaves sealed private work and immutable oldRIGHT unaddressed M2",
+    "actual known-port private corners compose into ONE scalar protected return M2",
+    "known ports are private BLANK work, so protected Q8/oldRIGHT rank stays constant M3",
+    "counterfactual source fork preserves earlier native stages and future base blocks M3",
+    "every later completed block leaves sealed private work and immutable oldRIGHT unaddressed M3",
+    "actual known-port private corners compose into ONE scalar protected return M3",
+    "a fixed known-port fork itself is append-only as new base cohorts are added",
+    "known-port true FIRST source has its derived new scalar-Gram coefficient",
+    "known-port log relative edge gain has its history-independent coefficient bounded by2",
+    "new fixed-rank product score includes all entangling bank excitations M2",
+    "new fixed-rank product score includes all entangling bank excitations M3",
+    "known-port rank is4 and its actual gain never borrows the old rank-growing lower bound M16",
+    "known-port rank is4 and its actual gain never borrows the old rank-growing lower bound M128",
+    "known-port rank is4 and its actual gain never borrows the old rank-growing lower bound M1024",
+    "the actual positive absolute source gain CAN decay despite the surviving normalized source identities",
+    "owned AA API actually keeps the reused target port out of its input predicate and raw gate support",
+    "actual AA word retains a free-bank input leg while the separate physical Book cut fixes its known source and port",
+    "free-port AA support is sufficient reuse, NOT a universal prohibition on every port-controlled construction",
+    "real26-stage middle edit has the SAME complete known-input output isometry on arbitrary Q8 input",
+    "configured FULL paired middle heat is strictly different; old involutive ambient heat-zero cannot be transplanted"
+  ],
+  "checks": 50,
+  "constant_rank_prefixes": [
+    {
+      "cohorts": 2,
+      "full_dimension": 256,
+      "paired_clock_modes": 137216,
+      "scope": "literal fork/protection/inventory and actual private corner; no huge clock replay",
+      "spin_only_input_rank": 4,
+      "stages": 268,
+      "with_one_arbitrary_oldRIGHT_rank": 8
+    },
+    {
+      "cohorts": 3,
+      "full_dimension": 1024,
+      "paired_clock_modes": 823296,
+      "scope": "literal fork/protection/inventory and actual private corner; no huge clock replay",
+      "spin_only_input_rank": 4,
+      "stages": 402,
+      "with_one_arbitrary_oldRIGHT_rank": 8
+    }
+  ],
+  "generated_utc": "2026-10-25T06:00:34.221502+00:00",
+  "known_middle_rows": [
+    {
+      "CX": 8,
+      "G": 2,
+      "K": 1,
+      "L": 1,
+      "SourceI": 4,
+      "full_columns": 32,
+      "known_input_rank": 4,
+      "one_degree_phase_multiplicities": [
+        16,
+        8,
+        8
+      ],
+      "paired_clock_modes": 896,
+      "stages": 14,
+      "theta_power": 2
+    },
+    {
+      "CX": 114,
+      "G": 36,
+      "K": 2,
+      "L": 9,
+      "SourceI": 72,
+      "full_columns": 64,
+      "known_input_rank": 4,
+      "one_degree_phase_multiplicities": [
+        48,
+        8,
+        8
+      ],
+      "paired_clock_modes": 28416,
+      "stages": 222,
+      "theta_power": 36
+    }
+  ],
+  "matched_middle_heat_control": {
+    "D": 32,
+    "H_L1": "6.652893979888332550663527137972506398296619596572497423492104890899698171632276676722682462986132758",
+    "H_L2": "6.652893979888332550663527137972506365170695873995122593279936508870555964429915878541402627549266192",
+    "N": 26,
+    "bessel_tail_certificate": "2711643554525430121988671748487823200645666916/747154411453299948950818219543849778413927394432975816030283474445661573064865554272137095",
+    "beta": 1,
+    "heat_difference": "3.312592372257737483021216838202914220720236079818127983543686656658739e-35",
+    "paired_modes": 1664,
+    "rank": 4,
+    "scope": "apparatus contrast; L2 outside chosen compact d route, not a GR no-go"
+  },
+  "native_source_rows": [
+    {
+      "CX": 104,
+      "G": 10,
+      "SourceI": 20,
+      "body_stages": 62,
+      "cut_rank": 4,
+      "feedback": "0.00000112817128779412224086187697197964969149022716918646450546086376812832392075828342819221665",
+      "full_dimension": 32,
+      "full_paired_heat": "12.1080906960302644146284172827001073163064110975713482600397982419632034912515854806478735",
+      "matched_stages": 134,
+      "paired_clock_modes": 8576,
+      "q_exact_interval": [
+        "88668686519261870236229760984207399143481647311404070981765828969/421249166674228746791672110734681729275580381602196445017243910144",
+        "88668686519261870236229760984212163509520159784763303271494030041/421249166674228746791672110734681729275580381602196445017243910144"
+      ],
+      "scope": "native source contrast, not an original GR centre",
+      "source_G_power": 4
+    },
+    {
+      "CX": 98,
+      "G": 12,
+      "SourceI": 24,
+      "body_stages": 74,
+      "cut_rank": 4,
+      "feedback": "0.000000204220251192706449699655357996382563759543880684148503041088225226254188852993166173583111",
+      "full_dimension": 32,
+      "full_paired_heat": "12.1080906960302644146284172827001073163064110975713482600397982419632034912515854806478735",
+      "matched_stages": 134,
+      "paired_clock_modes": 8576,
+      "q_exact_interval": [
+        "14963247139709662950381831624655743013253874719789550500526389889/421249166674228746791672110734681729275580381602196445017243910144",
+        "59852988558838651801527326498636183083052463200156901295694898249/1684996666696914987166688442938726917102321526408785780068975640576"
+      ],
+      "scope": "native source contrast, not an original GR centre",
+      "source_G_power": 5
+    },
+    {
+      "CX": 68,
+      "G": 22,
+      "SourceI": 44,
+      "body_stages": 134,
+      "cut_rank": 4,
+      "feedback": "0.00000075689423472300140586058191479146395062090175793651695623572452170907078125489208190600845",
+      "full_dimension": 32,
+      "full_paired_heat": "12.1080906960302644146284172827001073163064110975713482600397982419632034912515854806478735",
+      "matched_stages": 134,
+      "paired_clock_modes": 8576,
+      "q_exact_interval": [
+        "3607933916745672503364751363707049472162830768043313852382311289/26328072917139296674479506920917608079723773850137277813577744384",
+        "230907770671723040215344087277313634941189864525142771762305104401/1684996666696914987166688442938726917102321526408785780068975640576"
+      ],
+      "scope": "native source contrast, not an original GR centre",
+      "source_G_power": 10
+    }
+  ],
+  "numerical_scope": "110-digit configured heat values; algebraic identities, native intervals and stated Bessel sign certificate are exact",
+  "scope": [
+    "all32/64 changed native matrices and exact known-port scalar return",
+    "all failures/complements in full paired heat; no unknown private DATA2 cut",
+    "new rational product scores are diagnostics, not new physical gate primitives",
+    "no long AA/old Cartan/root/large-native suite replay",
+    "no SU compiler, SourceJ, physical C1/X_N/selected-action or GR-closure promotion"
+  ],
+  "section_pins": [
+    {
+      "bytes": 10728,
+      "heading": "## 7e.",
+      "sha256": "404f8156dc7949ac47716406cc95befbb9a1fdc3bd303a9771f6d522674006c5"
+    },
+    {
+      "bytes": 8847,
+      "heading": "## 7ai.",
+      "sha256": "b85894771aefa1b9a72829a82d6d05e10d4a5d1c5571ed3ad7b2648ebe7f2022"
+    }
+  ],
+  "source_pins": [
+    {
+      "bytes": 7437,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/known_port.py",
+      "sha256": "0e40a798dfb966aae4151437075dee691aa0ecd030f5288a3b20ea31155375bd"
+    },
+    {
+      "bytes": 19445,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/check_known_port.py",
+      "sha256": "5d36d48b00965d8b25b00654dfc8d89f606f632085a0b22a65ee4e19a02acc0d"
+    },
+    {
+      "bytes": 13532,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/NATIVE_IMPLEMENTATION.md",
+      "sha256": "bbab7e03eb9acff6265e7e88959f28902c0a9efb5075940327717af83fa3b9ba"
+    },
+    {
+      "bytes": 26168,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/SOURCE_TRANSFER.md",
+      "sha256": "b30663e5365ccdebf2b21e35820f39f063671e246d69f29abad891ac18285e19"
+    },
+    {
+      "bytes": 18063,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/INPUT_AND_RECORD_MAP.md",
+      "sha256": "be7e38a0e02d5fc64855ae976995320202e92d1d70654b72424c8c99c8e465bd"
+    },
+    {
+      "bytes": 8246,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/reflected_report.py",
+      "sha256": "b248c31f3fd3bcf377a5bb4548507d7c62f8c8d28dca0626285a8a9cec9112b7"
+    },
+    {
+      "bytes": 21592,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/PROOF.md",
+      "sha256": "627be34a64654c6a407bf5a542295f89d156c158feb584961a5e1870e3bbb3a7"
+    },
+    {
+      "bytes": 25854,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/COHORT_THEOREM.md",
+      "sha256": "c90e41bd4c97e63427e38e849c8a96a842c8abc2615f1770e6669a917c8efaa0"
+    },
+    {
+      "bytes": 19464,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/GEOMETRIC_MAP.md",
+      "sha256": "09d5d67b16ef54a36cdfc27688178ce3ec3b0e44d9b909ed4a411380c22a37ce"
+    },
+    {
+      "bytes": 29783,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/COFINAL_THEOREM.md",
+      "sha256": "805df65ba3eb7802d132609ef533763ef3f007c78168c6306ad91b1e455d9722"
+    },
+    {
+      "bytes": 15841,
+      "path": "02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/NATIVE_GRAPH.md",
+      "sha256": "825f40efd91cdfb85253f14abb07276793b201d1ff05d8932cefc24cb05bd4de"
+    },
+    {
+      "bytes": 17377,
+      "path": "02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/STENCIL_MAP.md",
+      "sha256": "1d3025d4bddcc6ecc3d3d4ccaf7a57cbc04f1c64245bfa8c9b9a8b6348552dc2"
+    },
+    {
+      "bytes": 26868,
+      "path": "02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/COFIELD_THEOREM.md",
+      "sha256": "41b8f08cbffc3de99df1ec92c589f652ee9bc1dca2139a1f5834650a721ccd11"
+    },
+    {
+      "bytes": 17833,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "bytes": 11187,
+      "path": "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py",
+      "sha256": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d"
+    },
+    {
+      "bytes": 5927,
+      "path": "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/amplified_execution.py",
+      "sha256": "e0d5d8401896d555a26c51d333926a6f2b747c34eeb24857ab9ba1730fa9a3a8"
+    },
+    {
+      "bytes": 22425,
+      "path": "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/READINESS_AMPLIFICATION.md",
+      "sha256": "8d161314c96b145c2392d473a01576e32ce5238e168625b7d20bb0f46b0a2775"
+    }
+  ],
+  "status": "PASS"
+}

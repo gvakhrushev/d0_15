@@ -8261,6 +8261,178 @@ Full physical joint stationarity, generic GR, positive_gr and raw216
 remain open. GR_closed=false.
 
 
+## 7ai. Apply the native source and cofield bounds on the original known-port input
+
+25 October, SAME PR334/constitutive owner, inputeadb0272. The parent is
+7af–ah's need for a genuine unknown private meter2 at every cohort.
+The required positive known-input operation is ALREADY7e(54)–(58),
+with7j's exact raw inverse and7m's retained private-prefix construction.
+Here the new exact report, full bank norms and actual finite-price
+cofields are applied to that owned operation. No complex phase compiler,
+new action, geometry root or extra unknown DATA input is needed.
+
+The explicit consumer is [NATIVE_IMPLEMENTATION.md](sources/d0_known_port_native_cofield_2026-10-25/NATIVE_IMPLEMENTATION.md),
+with [INPUT_AND_RECORD_MAP.md](sources/d0_known_port_native_cofield_2026-10-25/INPUT_AND_RECORD_MAP.md)
+and [SOURCE_TRANSFER.md](sources/d0_known_port_native_cofield_2026-10-25/SOURCE_TRANSFER.md).
+The bounded new code is [known_port.py](sources/d0_known_port_native_cofield_2026-10-25/known_port.py)
+and [check_known_port.py](sources/d0_known_port_native_cofield_2026-10-25/check_known_port.py).
+
+### The physical input cut and the algorithmic input predicate are different
+
+Use the original conditional apparatus input |0_ACTIVE> tensor v_spin,
+with arbitrary v in the SAME Q8 spin4. All private source/work/port/key/
+rebit inputs are genuine known blanks. Only one shared unknown spin is
+provided, together with any actual retained oldRIGHT support. Thus the
+declared initial-family cut and rank are
+
+    P_M=|0_all ACTIVE><0_all ACTIVE| tensor I_spin4 tensor P_old,
+    r_M=4 r_old.                                      (308)
+
+There is no2^M private-DATA multiplier. Fresh known ports still cost
+real qubits, source actions and clock stages and remain in the FULL
+thermal carrier. A shared helper has its own initial blank support;
+its Hilbert dimension belongs in heat, not in the unknown input rank.
+Additional oldRIGHT Hilbert dimension and protected support rank are
+counted separately, once, as in7ag.
+
+Reuse7af's SAME all-input report/amplifier A_j. Its algorithmic predicate
+leaves SOURCE, helper, spin, target port and amplifier rebit free; its
+report effect on SOURCE is gamma_j P_(n_j), with gamma_j>=1/2. The
+physical cut(308) may additionally initialize that target port0. We do
+not add port0 to the old amplification predicate or change its proved
+operator interface merely because it is known in the physical input.
+This strict support is a sufficient reuse contract, not a claim that
+every other separately proved port-controlled amplifier is impossible.
+
+### Use the owned controlled rotation, without the old reflection
+
+On the actual K_j READY/report controls use their literal native word
+
+    W_j=(I-Pi_j)tensor I_port+Pi_j tensor G_port^(2m_j),
+    m_j=2^(K_j-1)L_j,
+    d_j=1-cos(2m_j theta)=alpha_7af,j/2 in(1/2,1).     (309)
+
+There is NO leading G^(-m_j) and NO Z. All inverse G letters in W_j
+are the exact7j macros, with shared helper/spin restored on every
+completed column. Its expanded counts are G=2m_j, SourceI=4m_j,
+CX=6m_j+2^(K_j+1)-2. Every failed control receives I, rather than a
+selected successful branch being normalized into a new primitive.
+Known target port0 gives the operator kernel and actual corner
+
+    K_j^bank=I-d_j gamma_j P_(n_j),
+    C_j=s_j I_spin,  s_j=1-d_j gamma_j q_j,
+    t_j=s_j².                                        (310)
+
+Here q_j is the mean in the ENTIRE actual source-bank state. At a
+compact actual q_max<=1/4, s_j>=3/4 and t_j>=9/16. The source preparer
+and its inverse use the same complete private source support, excluding
+separate factory inputs and immutable oldRIGHT. All old moments,
+CAR/reference purifiers, SOURCE leakage and eta/delta budgets remain.
+
+This is a different native middle, not a relabelling of the cut of7af's
+reflected word. Blindly using that reflected word with port0 would give
+corner cos(m_j theta)I independent of q_j and lose the field source.
+The existing7e operation supplies the required nonzero known-cut map.
+
+Completed blocks are I on shared helper/spin on ALL columns. The strong
+old-channel/instrument/record map of7m therefore applies directly, even
+on entangled old/new input. There is no live-spin covariance detour,
+inverse of a measured success tape or reset of sealed data. Transient
+source-spin interactions inside inverse macros still occur and are paid.
+
+### Keep the fixed input rank and recompute the full paired heat
+
+The ONE cumulative closing cut gives, with S_M=product_j s_j,
+
+    J_M=-r_M log(1-zeta+zeta S_M²),
+    w_M=r_M zeta S_M²/(1-zeta+zeta S_M²),
+    a_j=2d_j gamma_j/s_j,
+    D J_M=w_M sum_j a_j Dq_j,
+    Gamma_M=w_M sum_j a_j gbar_hj.                    (311)
+
+This is the actual price and positive first-source gain, not a sum
+of local actions. For q_max<=1/4, 1/2<=a_j<=8/3. The ORIGINAL
+lambda_minus and gbar_h=c_quad,h g_h come from the unchanged exact
+r_poly first jet, inverse-PF copy counts and fixed s4 material map.
+Thus the owned all16+24+2 nonvacuum reference zeros and curved readout
+remain the same. No new source coefficient is fitted.
+
+Let D_j be the complete private ACTIVE dimension, including its known
+port, and let D_shared include the actual helper/spin/past Hilbert factors
+ONCE. The middle W_j has phases0,±Theta_j, Theta_j=2m_j theta, with
+
+    m_(j,0)=D_j(1-2^(-K_j)),
+    m_(j,±)=D_j 2^(-K_j-1).
+
+At the real WHOLE clock N_M the full PAIRED heat trace is
+
+    Z_M=2D_shared sum_(sigma in {0,+,-}^M)
+              [product_j m_(j,sigma_j)]
+                        K_(N_M)(sum_j sigma_j Theta_j).            (312)
+
+It counts exactly2N_M D_shared product_j D_j modes. No input projector,
+success fraction or rank normalization is inserted into the heat.
+This paired convention includes a factor2 relative to the old single-
+Hodge-block formula7e(58). All node words have fixed middle spectra and
+matched actual clocks, so their whole source/preparer heat is constant
+by conjugacy. The global entangled SOURCE-preparer comparison also
+has that conjugacy. The new endpoint is generally NOT an involution;
+the ambient first-heat-zero theorem of7ad is NOT transferred. Other
+middle/clock/beta/cut/readiness variations keep their real equations.
+
+### The normalized estimates survive; a nonvanishing absolute gain does not
+
+The new Hermitian kernel has the normalized exact product score
+
+    R_j=(I-d_j gamma_j P_(n_j))/s_j
+       =I-(a_j/2)(P_(n_j)-q_j I),  <R_j>=1,
+    L_M=-2w_M tensor_j R_j,
+    ||D_Psi J_M||=4w_M sqrt[product_j(1+v_j)-1],
+    v_j=(a_j²/4)Var_actual(P_(n_j)).                   (313)
+
+This retains all old and cross-bank entangling normals. The safe bound
+is ||R_j||<=1/(1-q_max), not an untyped reuse of the former sqrt2.
+Use the canonical critical-overlap bound, whole-state eta errors,
+actual packet/source lift and enlarged slow envelope of7ag–ah. Since
+the same w_M occurs in(311),(313), the controlled normalized bank and
+native-coordinate cofield rates remain respectively
+
+    K_ind,M ||D_Psi B_M||/Gamma_M=O(M^(-3/32)),
+    ||Fhat_M||_(block-dual)/Gamma_M=O(M^(-63/64)).     (314)
+
+The one-coordinate relative-gain proof also holds: now
+
+    d log(w a_j)/dq
+       =a_j[1/2-(1-zeta)/(1-zeta+zeta T_M)],
+    |d log(w a_j)/dq|<=4/3.                           (315)
+
+Every actual old product, coordinate spacing, field/readout norm and
+global-vs-local old error qualification of7ah stays. These estimates
+are not exact finite-N stationarity or a native C1 source selector.
+Exact IID noncritical first-projection guards require their IID base;
+approximate actual points retain the actual variance/eta lower debt.
+
+Crucially, the old w_M>=4zeta bound is FALSE here. A common positive
+q_min gives S_M²<= (1-q_min/4)^(2M), so w_M decays exponentially.
+The enlarged upper-gbar envelope permits Gamma_M to decay too. Raw
+source values can consequently tend to0 even for a nonzero report
+source; only the explicit division by the ACTUAL Gamma_M distinguishes
+it. For Dq_j=gbar_j E with E nonzero, (311) gives DJ_M/Gamma_M=E,
+not0. Any additional physical residual must meet its true R/Gamma_M
+budget. This is no assertion of a nondegenerate continuum coupling or
+a rescaling of the native action. Absolute heat and feedback are kept.
+
+**Parent consequence.** The literal cofinal/source-cofield construction
+now has a known-ACTIVE-input consumer with ONE original unknown Q8
+input. It removes the growing private unknown-meter requirement while
+retaining the paid fresh known work, full old-record maps and actual
+small gain. Physical primitive/preparation admission, the original
+task's compulsory closing P_N and permitted edit image, independently
+admitted apparatus/initial/observer/cut/clock/stopping rows and full
+selected-action binding remain. Generic GR, positive_gr, raw216 and
+full physical joint stationarity are not promoted. GR_closed=false.
+
+
 ## 8. Reproduction
 
 Run from this directory:

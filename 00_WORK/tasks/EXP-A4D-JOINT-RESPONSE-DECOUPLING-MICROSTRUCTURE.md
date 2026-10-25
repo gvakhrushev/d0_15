@@ -9965,3 +9965,66 @@ source norms must first be proved. Completed identity on that shared
 spin cannot be borrowed from7af; neither can rank/gain or physical cut
 admission. This is a proposed bounded consumer of the remaining original
 input-family/cut seam, not a new postulate, task or independent execution.
+
+### 25 October: consume the owned known-port middle instead of adding a new phase compiler
+
+Phase: native realization / input-cut composition. SAME PR334,
+constitutive/native-programme-v1; inputeadb0272. Parent:7ah's use of
+a genuine private unknown DATA2 per cohort. The readonly composition
+found the required positive operation ALREADY in7e(54)-(58), with7j
+exact raw inverses and7m private-prefix composition. Therefore the
+complex-phase/SU candidate above is not needed for this application.
+
+Use W_K(L), the literal controlled G^(2^K L), WITHOUT G^(-m) or Z.
+Each private target port is a genuine known0 work bit. The all-input
+report/AA body of7af is reused unchanged, including its strict support
+which leaves the port/helper/spin free in the algorithmic predicate;
+the ACTUAL Book cut additionally fixes the port0. This is a sufficient
+reuse contract, not a universal prohibition on other port-controlled
+amplifiers proved on their own interface. All factory/failure columns,
+rebit/source work and every primitive stage remain.
+
+Exact target: s_j=1-d_j gamma_j q_j, d_j=alpha_7af/2 in(1/2,1),
+t_j=s_j². All completed blocks are I_helper,spin on ALL columns.
+The closing cut has rank4*r_old ONCE, not4*2^M*r_old. Source/clock
+parameters and true s_j stay in J_M=-r log(1-zeta+zeta product t_j).
+The real weight w_M may decay to0; its old nonvanishing lower bound
+is NOT transferred. Exact source gain Gamma_M=w_M sum_j a_j gbar_j,
+a_j=2d_j gamma_j/s_j, is retained in every residual and norm.
+
+Consume the original exact r_poly jet and all42 nonvacuum family.
+The Hermitian product kernel R_j=(I-d_j gamma_j P_n)/s_j has the
+same complete cross-bank score, so7ag/7ah cofinal/source-cofield
+proofs apply with explicit new coefficients and actual gain. Recompute
+the FULL PAIRED heat from phases0,±Theta_j and all multiplicities;
+old7e's one-block heat convention needs its actual paired factor2.
+Fixed-spectrum conjugacy gives source/preparer heat-neutrality only;
+ambient/involution heat-zero is not available here. No new geometry,
+action, coupling or logical equality law is introduced.
+
+Inputs:7e known input and six-condition finite section,7j inverse,
+7m prefix/source,7af exact report/AA,7ag calibrated norm/refinement,
+7ah actual finite cofields. Write paths: primary7ai, this brief and
+sources/d0_known_port_native_cofield_2026-10-25/ only. Disjoint bounded
+native/code, source-transfer and input/record/heat assistants in this PR.
+Decisive checks: all-column native W_K at known cut; exact scalar return,
+rank4 vs unknown-port rank8, completed helper/spin identity; K1 source
+words r4/r5/r10 with62/74/134 stages matched to134; full spectral/paired
+heat counts; fixed-rank whole product price and normalized source/score;
+known-cut failure of blindly retaining the old reflected middle; a real
+matched-clock middle edit showing heat is not ambient-neutral. No old
+root/rank/large READY/Lean/corpus replay. The construction removes an
+extra UNKNOWN-input requirement, not the fresh KNOWN work cost or the
+physical admission of the complete original task/P_N/edit image.
+Independent middle/readiness/factory/initial/observer/cut/clock/stopping
+and selected-action rows remain open; GR_closed=false.
+
+Known-port checkpoint: primary7ai8847bytes/SHA256
+b85894771aefa1b9a72829a82d6d05e10d4a5d1c5571ed3ad7b2648ebe7f2022.
+Root finalCLIexit0/PASS50; stdout equals receipt;17source and2section
+pins verified. Receipt14998bytes/SHA256
+5f004ddb26d47105cc26d1bc90236a3223e5179192630e5f75c161e5a1ce8d07.
+Exact replay, analytical provenance and source-review scope are in
+02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/INTEGRATION_REVIEW.md.
+Original primaryeadb0272 is recovered exactly after7ai removal; the old
+brief and packets are preserved. No scientific/physical status promoted.
