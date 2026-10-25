@@ -10988,3 +10988,102 @@ but does not pay a new detector. An appended detector must retain its
 real work, records, clock and resulting complete source. Numerical
 phi^-k bounds alone do not establish Book01 projective operator/response
 naturality or physical stationary admission.
+
+### 25 October: bound whole-query directions beyond the composed local realization
+
+Phase: native realization / actual variation-domain application. SAME
+PR334, constitutive/native-programme-v1; integration input96870f13.
+Consume POSITIVE7as400 and7at405--410: one matched open-field report,
+actual internal field catalogue, local native-word key lift, full local
+implementation source and true whole price. The fixed-query and global
+key-lift gaps are removed on that graph. Do not restore DE=0 or reprove
+the existing compiler/conditional/label/source construction.
+
+Primary7au411--416 tests the different remaining question: can that
+local source conclusion be promoted to arbitrary whole-query matrices
+merely by finite compilation? A specified whole-private-bank output
+rotation has norm<=1/4, preserves READY, is target-blind and changes the
+normalized effect by DE=E(I-E). It uses ALL actual input columns and no
+fit to the chosen source. Its matrix comparison keeps the generated
+inverse, initial cut/rank, whole heat conjugacy and original positive
+gain. Its full-source floor stays strictly positive after normalization.
+It may mix required records and has support outside the declared local
+graph; physical or wire-local admission is NOT asserted.
+
+The original P5/C8 operator margin is proved from the TWO actual paid
+z-efficiency masks. Its old logical effect satisfies E<=(2zeta-zeta^2)I
+on arbitrary input. The unconditional7as implementation keeps that
+margin with its actual table/coin/compiler errors. The now MATCHED
+7at Bernstein report uses its own coefficient/extension bound instead:
+R_ext<1/4, coefficient accuracy keeps q_i<3/8, and eta+2Delta<=1/8 gives
+actual E<=I/2. Its genuine weak-strength shift and all target/source/
+query errors stay in q>=r0/2; no P5/C8 exact-primary identity is imported.
+Original GM18 count/PF normalization and its actual reserve denominator
+give gbar<=a0 through the stated Cauchy bound. Arbitrary slow envelopes
+or unrelated spatial/source conventions do not inherit that bound.
+
+Consequently unrestricted whole-query enlargement admitting412 cannot
+share408's vanishing normalized source. Any actual source-preserving
+tangent lift into this query direction has norm at least the positive
+source floor divided by the local normalized-source bound. This is NOT
+the key lift407, whose actual norm and direct physical-source409 remain
+valid. Generic variance inequality416 is separately product-scoped;
+the actual operator-margin proof needs no whole-preparation assumption.
+
+The positive application remains the original admission and stationary/
+finite-response law on the actual local cut/role/support graph, including
+the paid kappa-response/source substitution pinned in the preceding
+route decision or a justified exact stationary continuation. This
+boundary does not add a universal requirement to admit whole-query
+controls, uniquely fix E, or insert a compensating physical source.
+No new action, selector, task, lifecycle/assembly status or physical
+GR/raw216 promotion is introduced. GR_closed=false.
+
+Write paths: primary7au and this existing brief only. Three bounded
+read-only reviewers checked the query-direction mathematics; final
+integration review includes both incoming positive results and the
+new matched-report error/count application. No assistant edited or
+ran mathematics. Root's only new mathematical run exited0/PASS in
+Python3.9.6/SymPy1.14.0: rational full6-column SO encoder TARGET,
+all-input READY/report/failure derivative, bounded generator, whole
+feedback source, Boolean mask event order and exact cumulative
+true-gain ratio with zero preparation variance. It is not a newly
+compiled native query, physical admission, old-root or heavy replay.
+
+The successful code before integration had2473bytes/SHA256
+c756a2218d08cfd5c867ee154d90a0f73627842e9084962c2362b8922bd42977.
+Two remote advances were integrated while this result was unpublished.
+All incoming text was preserved; ours was renamed7au411--416 and
+explicitly composed with the new positive local field/query theorem.
+The only code change is its explanatory inequality-reference comment;
+parsed ASTs match the executed code EXACTLY. The final2473-byte code
+SHA256 (excluding closing newline) is
+bc7a43d451eaafdc3ad794659c99dca8d027fccf5f3275d63b3e5d71d4c9d7b3.
+No changed mathematical input or failed calculation was hidden. The
+earlier unpublished9db42bdb remains recoverable; no remote history was
+rewritten or force-pushed, and its rejected stale push changed no branch.
+
+Primary7au INCLUDING next-heading separator15438bytes/SHA256
+591900fa94c2e3f71b7f2026c356d8062481c63df18501217bf9c28c2024ca9b.
+Removing only7au restores96870f13 primary byte-for-byte, whole SHA256
+e6d0350944b3ca569b2c31f860b2ae30037533d39e33cf47d1a25a3511623e41.
+The prior brief is an exact prefix. All incoming7as/7at,7ar and older
+proof/source/receipt pins and all other paths remain unchanged.
+
+Final independent source-only integration review by
+native_source_application ACCEPTS the exact15438-byte7au and2473-byte
+code above after reading the complete incoming7at. The matched-report
+operator/mean budgets, actual reserve/PF normalization, whole-price
+direction and support distinction all check. The preceding13561-byte
+version had all THREE pinned source-only accepts; the additional
+integration retains both new positive substitutions and adds the
+explicit matched-report/Cauchy applications without a code-input change.
+No reviewer edited files or repeated a mathematical calculation.
+
+Final affected structural gates PASS: work, agent protocol, gravity
+assembly, repository(warnings0) and staged-diff check. Counts remain
+claims889/assumptions31/aliases58/formal_support183/Lean closure918;
+assembly54active/98results/5discharged/22obligations with
+scientific_promotion=false. This is local structural validation, not
+remote CI or physical acceptance. Only7au and this brief tail differ
+from integration input96870f13.

@@ -11786,6 +11786,309 @@ print('PASS actual96-stage full64 identity/Walsh lift, first-distinct law, and r
 print(sys.version.split()[0],S.__version__)
 ```
 
+## 7au. A bounded free-query direction excludes unrestricted controller closure
+
+25 October2026; SAME PR334 / constitutive owner, input96870f13. Consume
+the incoming7as400 and7at405--410 positive theorems: the normalized
+query can vary through all specified local stages, the report is now
+matched to the open-field source, and the key/field lift has an actual
+local native-word realization with its true norm. Those premises are
+removed on THAT graph. The remaining physical application is its actual
+support/role/boundary domain and stationary attainment, not a demand
+to restore DE=0. Here a specified WHOLE-private-query direction of norm
+at most1/4 has positive source at the same actual gain. It cannot be
+added to408's graph while retaining its source conclusion.
+Source, READY and middle precision do not suppress that additional row.
+No new physical variation is postulated: the theorem tests an extension
+that actually admits the displayed direction. It may be excluded by
+the native structural/local/record graph, which still needs its own
+physical derivation. Both results retain their distinct actual supports.
+
+### The actual report has an operator bound, not merely a small mean
+
+For the exact P5/C8 processor consume the REAL positive polynomial
+construction [NATIVE_POLYNOMIAL_FIRST_JET section8](sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md).
+Its final Boolean report is
+
+    click=(A AND z1) OR (B2 AND z2),
+
+where z1,z2 are TWO independent actual zeta-efficiency registers,
+each using twenty paid fair bits, zeta=2^-20. They are prepared before
+the live query, with input-independent factory acceptance. They are
+retained coherent resources, not Bernoulli outcomes sampled for free.
+On the all-READY logical input the final event projector is bounded
+by the z1-OR-z2 projector. Compressing their independent preparation
+therefore proves, on EVERY bank/reference input,
+
+    0<=P_h<=c_z I,       c_z=2zeta-zeta^2<1/4,
+    0<=E_j=P_(h,n)<=c_z I,
+    E_j(I-E_j)>=(1-c_z)E_j.                          (411)
+
+The actual geometry/CAR pullbacks are unital positive maps, as is the
+ordered-injection average RC3; both preserve this bound. The owned
+coherent amplifier preserves the NORMALIZED logical effect, so it
+also preserves411. No false assertion P_h is a projector is used.
+This is a new application of the existing resource circuit, not an
+inference from its primary mean q0 or the scalar q<=1/4 collar.
+
+For the new unconditional implementation7as, EVERY old table entry
+f(X) is bounded by c_z by the same resource-event argument. Thus its
+averaged F_n(X)<=c_z for every complete SIGN vector. The dyadic/parity
+approximation7as395 has uniform error eta, and full-column compiler
+error Delta changes the compressed effect by at most2Delta. Hence on
+every algorithmic source input its ACTUAL native effect satisfies
+0<=E_new<=(c_z+eta+2Delta)I. The prospective budgets can, and for this
+application do, make that upper bound at most c_*=1/4. This proof uses
+the actual table/coin/compiler errors, not the old postselected gamma.
+The new implementation has gamma=1. In413--414 use c_* for this new
+effect, or c_z for the old exact logical effect; write either as c_*.
+
+For the now MATCHED open-field report7at, use its actual Bernstein
+coefficients, not the distinct P5/C8 mask. Its positive extension
+stays below1/4 on the chosen weak-report box, including the constant
+r0 exterior. Node accuracy can therefore keep every coefficient below
+c_table=3/8. The ideal sampler/lookup is a positive mixture of these
+coefficients on ALL SIGN inputs. Retaining7at404's actual fallback,
+threshold and Golden-parity error eta and its full-column Delta gives
+E_new<=(c_table+eta+2Delta)I. The existing prospective budgets can also
+impose eta+2Delta<=1/8, hence c_*=1/2. This is a precision budget on
+the SAME open-field target, not substitution of the old reporter.
+Use this c_* in413--414 for the joint execution7at408--410.
+
+For the distinct Bernstein reserve report7al, strictly positive fixed
+table coefficients q_i<1/2 give instead 0<=E_j<=(1/2)I by the same
+all-input positive pullback. Its useful factor below is1/2; the sharper
+c_z is not transported to that different processor. All its actual
+first-source/decoder errors retain330/389's budgets.
+
+### A full-input query direction with fixed READY and fixed pointer
+
+At the ACTUAL native encoder A_j let i append its exact factory blanks
+and leave every algorithmic bank/reference input free. Write
+
+    V_b=Pi_b A_j i,    b=0,1,
+    V_1^dagger V_1=gamma_j E_j,
+    V_0^dagger V_0=gamma_j(I-E_j),
+    V_1^dagger V_0=0,
+    H_j=(V_1 V_0^dagger-V_0 V_1^dagger)/(2gamma_j).
+
+Here Pi_1 is READY/report and Pi_0 is READY/other. Failures remain
+orthogonal and H_j is zero on their output sector. This construction
+uses all input columns and no fit to the chosen source state. Extend
+identity on immutable oldRIGHT/protected factors where appropriate;
+they do not become control wires. A polar decomposition of V_b gives
+
+    H_j^dagger=-H_j,    [H_j,Pi_READY]=0,
+    ||H_j||=(1/2)||sqrt(E_j(I-E_j))||<=1/4.
+
+Set A_j(t)=exp(t H_j)A_j, with its generated true inverse. It has
+EXACTLY the same READY effect G_j(t)=gamma_j I and fixed pointer,
+whereas its normalized query changes by
+
+    D E_j=E_j(I-E_j).                                (412)
+
+Indeed V^dagger[Pi_1,H_j]V=gamma_j E_j(I-E_j), while
+V^dagger[Pi_READY,H_j]V=0. This proves412 also at zero eigenvalues,
+without an inverse of E or a spectral-gap assumption. The generator
+is disjoint from7aq's private middle targets. Thus379a's extra target
+term is ZERO on this path; the exact prepared kernel is
+I-d_j gamma_j E_j(t), even when its actual middle only approximates
+a reflection. No exact-involution heat theorem is invoked.
+
+The complete endpoint is source/encoder-conjugate to its fixed actual
+middle. Completed cohorts are private and identity on shared helper/
+Spin on ALL columns, so varying these private encoders preserves the
+whole endpoint spectrum. Hence the FULL counting heat has DH_M=0 on
+this path, with actual N,d,beta,cut and rank retained. As in387, change
+the last forward encoder stage by exp(t H_j) and one existing expanded
+inverse stage by its exact generated reverse. Both stage velocities
+have norm||H_j||. Simultaneous cohort directions consequently have
+
+    ||D Dirac_pair||<=1/(4sqrt(2)),
+    D B_M=D J_M=w_M sum_j a_j T_j,
+    T_j=<Psi_j,E_j(I-E_j)Psi_j>
+                          >=(1-c_*)q_j.             (413)
+
+These are finite-M matrix comparison tangents at native points, not
+a claim that exp(tH_j) is a primitive gate or a wire-local variation.
+H_j may mix other required records and has whole private-bank support.
+The original local graph7aq and a physical task may exclude it. No
+initial apparatus, reverse, sealed record or unknown reference is
+silently reinitialized; all generated cuts/prefixes keep their reactions.
+
+### Apply the actual positive gain; additional precision cannot remove the row
+
+The exact primary report has mesh-independent
+
+    q0=1-(1-zeta(1-p^6))(1-zeta(1-p^12))>0.
+
+For the old exact processor, late source errors eta_j<=q0/4 give
+q_j>=q0/2. For7as include its actual table/coin/compiler errors too;
+their prospective budgets can likewise keep the total mean error
+below q0/2. For7at retain the genuine R_tau-r0 weak-strength shift,
+Bernstein/node error, nearby-branch displacement and all source/query
+errors as well. R_ext-r0 is uniformly O_h(tau) on its compact feature
+box, and every other displayed error can be made arbitrarily small
+at fixed h. Its simultaneous budgets can therefore keep the same
+q_j>=q0/2 at birth; no exact P5/C8 primary-value identity is borrowed
+for that different report. Use the
+ACTUAL gbar_j>0, A_M=sum_j a_j gbar_j, Gamma_M=w_M A_M of377/385.
+At fixed mesh gbar is a positive constant. More generally, in a
+declared sector with gbar_j<=gmax<infinity and A_M->infinity,
+
+    liminf D B_M/Gamma_M >=(1-c_*)q0/(2gmax)>0,
+    liminf ||D B_M||_(extended graph,Dirac dual)/Gamma_M
+                    >=2sqrt(2)(1-c_*)q0/gmax.        (414)
+
+To prove this, sum413 over the late cohorts. Their omitted initial
+sum of a_j is finite, whereas sum a_j>=A_M/gmax diverges. The stage
+norm bound in413 converts the value into the displayed dual norm.
+There is no factor delta_j, failure probability, source accuracy,
+compiler length or tiny w_M on the right of414. Those parameters do
+not tune away this admitted row. w_M may decay exponentially; quoting
+only the absolute derivative would hide it.
+
+The uniform gmax here is an actual source-unit condition, NOT the
+generic slow-envelope bound gbar_j<=j^(1/64). For the ORIGINAL fixed-PF
+copy sector it has a concrete application: GM18a--c gives
+c_quad=nu_h*528*K_AF*sum_x w_x, equal to the total active addressed
+copy weight. The report's W_h includes those weights (and any inactive
+ones), so c_quad<=W_h. Its actual first-source factor is
+g_h=a0 tau_h/W_h, 0<tau_h<=1; hence gbar_h=c_quad g_h<=a0.
+The matched moving-density reserve7at uses its genuine Omega_bar
+instead. For the SAME fixed-PF sector rho_x=w_x/barw,
+Omega=sum_a c_a rho_(x(a))=nu_h*528*K_AF sum_x w_x^2/barw.
+Since barw=L^-4 sum_x w_x, Cauchy's inequality gives
+Omega>=nu_h*528*K_AF sum_x w_x=c_quad. Its real chosen
+Omega_bar>Omega therefore also gives gbar=a0 tau c_quad/Omega_bar<=a0
+for the actual weak strengths tau<=1. This uses that specific reserve
+denominator and PF map, not a universal W_h identification.
+On any other spatial/source convention use its own proved gmax, or
+retain the exact finite expression sum a_j T_j/A_M rather than claim
+a uniform limit. This does not add a universal normalization prerequisite.
+
+For another positive contraction E_j with no proved operator upper
+gap, retain the exact identity
+
+    T_j=q_j(1-q_j)-Var_Psi_j(E_j).                    (415)
+
+Thus a small mean alone does NOT give the operator bound411. On the
+present product-cohort base the owned whole-preparation score353 gives
+P_M=||D_Psi B_M||/Gamma_M=4sqrt(product(1+a_j^2 Var_j/4)-1)/A_M.
+If 0<amin<=a_j<=amax, put kappa=amin/[4(1+amax^2/16)] and
+C_M=sum a_j q_j(1-q_j)/A_M. Then
+
+    sum a_j T_j/A_M
+     >=C_M-log(1+(A_M P_M/4)^2)/(kappa A_M).          (416)
+
+Indeed Var_j<=1/4 and log(1+u)>=u/(1+u) give
+log product(1+a_j^2 Var_j/4)>=kappa sum a_j Var_j.
+Consequently bounded P_M, A_M->infinity and liminf C_M>0 also forbid
+vanishing query source. This alternative needs no borrowed operator
+gap. It is not the product-score formula for a new globally entangled
+base, a zero-return/zero-gain branch or another cut; those require their
+actual whole-price/source/readout map. The stronger411 application
+already settles the current branch without a preparation-score premise.
+
+### New exact query-direction and true-gain controls
+
+The following rational six-dimensional fixture checks412--413 on ALL
+algorithmic input columns, including the failure sector. It uses an
+explicit SO encoder target, not a newly compiled native query word.
+Its source preparation is inside the echo. The second control keeps
+the real cumulative w_M and verifies that a vanishing preparation row
+and decaying absolute query source do not remove its normalized source.
+No old root, compiler, READY, heat or Lean replay is performed.
+
+```python
+import itertools,sys,sympy as S
+I2=S.eye(2);I6=S.eye(6);rat=S.Rational
+gamma=rat(16,25);E=S.diag(rat(25,169),rat(49,625))
+Rgamma=S.Matrix([[rat(4,5),0,-rat(3,5)],[0,1,0],[rat(3,5),0,rat(4,5)]])
+blocks=[]
+for c,s,r in [(12,5,13),(24,7,25)]:
+    Re=S.Matrix([[rat(c,r),-rat(s,r),0],[rat(s,r),rat(c,r),0],[0,0,1]])
+    blocks.append(Re*Rgamma)
+A=S.diag(*blocks);i=S.zeros(6,2);i[0,0]=i[3,1]=1
+P0=S.diag(1,0,0,1,0,0);P1=S.diag(0,1,0,0,1,0);Ready=P0+P1
+V=A*i;V0=P0*V;V1=P1*V
+assert A.T*A==I6 and V.T*V==I2
+assert V1.T*V1==gamma*E and V0.T*V0==gamma*(I2-E)
+H=(V1*V0.T-V0*V1.T)/(2*gamma)
+assert H.T==-H and H*Ready==Ready*H
+assert H.T*H==S.diag(*[H.T.row(j).dot(H[:,j]) for j in range(6)])
+assert all(x<=rat(1,16) for x in (H.T*H).diagonal())
+assert V.T*(P1*H-H*P1)*V==gamma*E*(I2-E)
+assert V.T*(Ready*H-H*Ready)*V==S.zeros(2)
+source=S.kronecker_product(S.Matrix([[rat(3,5),-rat(4,5)],[rat(4,5),rat(3,5)]]),S.eye(3))
+B=A*source;dB=H*B;M=I6-2*P1
+U=B.T*M*B;dU=dB.T*M*B+B.T*M*dB
+gen=B.T*H*B
+assert U.T*U==I6 and dU==U*gen-gen*U
+phi=S.Matrix([rat(3,5),rat(4,5)])
+q=(phi.T*E*phi)[0];T=(phi.T*E*(I2-E)*phi)[0]
+variance=(phi.T*E*E*phi)[0]-q*q
+assert T==q*(1-q)-variance and T>0
+assert T>=(1-max(E.diagonal()))*q
+s=1-2*gamma*q;assert U[0,0]==s and dU[0,0]==-2*gamma*T
+z=rat(1,1024);rank=3
+w=rank*z*s*s/(1-z+z*s*s);aa=4*gamma/s
+direct=-2*rank*z*s*dU[0,0]/(1-z+z*s*s)
+assert direct==w*aa*T
+for aa0,bb,z1,z2 in itertools.product(range(2),repeat=4):
+    assert ((aa0 and z1) or (bb and z2)) <= (z1 or z2)
+eff=S.symbols('eff',nonnegative=True)
+assert S.expand(1-(1-eff)**2)==2*eff-eff**2
+# Exact product gain, Var=0, E=q0 I: a source eigeninput still has a query row.
+q0=rat(1,8);gbar=rat(1,16);s0=1-q0;aa0=2/s0
+for count in [1,2,5,10]:
+    whole_w=rank*z*s0**(2*count)/(1-z+z*s0**(2*count))
+    true_gain=whole_w*count*aa0*gbar
+    query_source=whole_w*count*aa0*q0*(1-q0)
+    assert query_source/true_gain==rat(7,4)
+# The analytic scalar inequality used in416 has a nonnegative derivative.
+x=S.symbols('x',positive=True)
+assert S.simplify(S.diff(S.log(1+x)-x/(1+x),x)-x/(1+x)**2)==0
+av=[rat(3,2),2,rat(8,3)];vv=[rat(1,100),rat(3,200),rat(1,80)]
+gg=[rat(1,20),rat(1,30),rat(1,40)]
+Ag=sum(a*g for a,g in zip(av,gg));prod=S.prod(1+a*a*v/4 for a,v in zip(av,vv))
+prep=4*S.sqrt(prod-1)/Ag
+assert S.simplify(1+(Ag*prep/4)**2-prod)==0
+print('PASS full6 query direction, READY/failure, complete price, event operator bound and true product-gain controls')
+print(sys.version.split()[0],S.__version__)
+```
+
+**Parent route change.** The incoming7as400/7at408 results POSITIVELY
+release the normalized query and compose the field source on their
+declared local stage supports. The present theorem does not reverse
+those substitutions. It shows why their conclusion cannot be
+promoted to unrestricted whole-query matrices admitting412. In the
+ideal copied implementation,7as396's unchanged label outside a local
+support blocks precisely the global connection that H can make. A
+universal finite compiler is not a bounded differential lift across
+those two domains.
+
+Quantitatively, if epsilon_M is408's normalized local-source bound and
+a proposed source-preserving tangent lift realizes the direction413,
+its actual norm is at least
+[(1-c_*)q0/(2gmax)+o(1)]/epsilon_M. It cannot be uniformly bounded
+when epsilon_M->0. This concerns an actual source-preserving lift;
+endpoint approximation or a different word/clock does not supply it.
+This concerns the QUERY direction412, not7at407's already proved
+local key lift. Its potentially divergent field norm and the direct
+field-source estimate409 remain intact.
+
+The remaining physical application is the actual native locality,
+task/boundary and role graph, or its genuine complete-action source
+if it admits the larger direction. A freely adjustable negative
+residual is not supplied. Fixing E is one sufficient specification,
+not a universal necessary axiom of GR or a requirement for7at408.
+Finite observable admission and faithful task transfer do not identify
+either variation graph with original X_N. Existing positive field/
+readout results remain valid; GR_closed=false, positive_gr and raw216
+remain open.
+
+
 ## 8. Reproduction
 
 Run from this directory:
