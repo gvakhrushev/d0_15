@@ -7180,7 +7180,9 @@ generic Gram module SHA-256 is
 `26864e383f68dc793907ae14d07982c967346459500aad92d057cfa81c13f900`. The
 targeted `D0.Geometry.A4DSolderMetricCompletion` build passed **2,980/2,980**
 jobs. The updated `metric-provenance` record splits source A and B and pins
-the new declarations without changing its owner or outcome.
+the new declarations without changing its owner or outcome. The generated
+`02_REGISTRY/gr_assembly/SYNTHESIS.md` view was regenerated from that record;
+the assembly README and shared dispatcher were not modified.
 
 The clean `D0.All` crosswalk snapshot is `199a35de3f31c19d3ea193cce046fb3ebda46418`,
 with Lean-source digest
