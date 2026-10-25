@@ -6941,3 +6941,40 @@ iterate and transitivity theorems. The narrow build of
 `D0.Matter.ArchivePartialTrace` passes **2,981/2,981** jobs. This remains an
 algebraic partial-trace result: it does not select a physical shift or close a
 physical GR premise.
+
+The rebuilt 15-declaration archive-shift inventory and five refreshed
+digest-gated inventories were extracted through `D0.All` at clean Lean-source
+snapshot `cacb895eb20616a36043b25d0e500b9a28128ac1`, Lean 4.30.0, with common
+Lean source digest
+`11f1d22fac61ca5f1090ba2bad4432661ab28e5c11abe32bdda79d13c2c317cd`. The new
+archive-shift inventory SHA-256 is
+`c41879a8744e1c222036a50b407145fbfe4bb6547734d09199631651f104d4a3`; its
+collector SHA-256 is
+`e899e5510353ed5be18018d463f612c4c978e06c4af32eec55a26cd80c4908f3`. The
+nonvacuum, CAR/Hodge, partial-trace, SourcePort and flat-tensor inventories
+contain 15, 36, 9, 73 and 4 declarations; their SHA-256 values are
+`14b024ee3ce64fe6979b8bd61e73e9355e33fb20a33933f467e53d6981356f1d`,
+`4dce363ea1be68b98d56a84bf2d8a72d51a1d4a8dd6da20413e56708a04f3666`,
+`79c34602ccfb8dc420564a8cc71718a58f0c74e65857eee23a68d20242091894`,
+`da8cf7f2ad3d08e3bd77202525fe702bd40405ced4d664c5d9d94bc535a90ebf` and
+`cd7f24fa5c9020bfbf4c86dd7e1002312c894a647dfe79b772bf038ddb483965`.
+
+The full cold-start replay on clean snapshot
+`cacb895eb20616a36043b25d0e500b9a28128ac1` found all required sources in
+**21/21** cases, passed **22/22** benchmarks and found **126/126** required
+source records. Its compact report is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_cacb895e.json`,
+SHA-256 `8d5e6c71dbe64b7656d38e46206e270060f013385f2868cfcb965efd879fcbf7`;
+the 6,951,679-byte full replay output SHA-256 is
+`583b51911d5e39ac66f2b802f6db56c54ef82bad9a119a9f4c99bef9f2851286`. The
+replay binds `formal_support.csv` SHA-256
+`c0f2f9b5a68d9a15c851971f50cabc8632a7755c34fd85c3f3312bf366b212c1`, runner
+SHA-256 `63b3c3d3a6b00384cc0bec3c34729478e671cd9ca1a702cfc2bbde024aff0320` and
+search-engine SHA-256
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`.
+
+The focused proof-architecture regression passes **56/56**, declaration
+inventory tests pass **16/16**, repository validation passes with zero
+warnings, generated Lean views have zero stale entries, and formalization-debt
+findings remain five against the five-finding baseline. No claim status or
+physical interpretation changed.

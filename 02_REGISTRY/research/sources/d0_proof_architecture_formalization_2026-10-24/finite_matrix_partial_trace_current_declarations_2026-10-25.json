@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "db3a201a7e8f4529e45effa4d71e578d1d0e3733",
+  "snapshot_commit": "cacb895eb20616a36043b25d0e500b9a28128ac1",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "84495a35213e0664f044c79b1642f135386189a139d85b6d25b1cb0309d34b3b",
+  "lean_source_digest": "11f1d22fac61ca5f1090ba2bad4432661ab28e5c11abe32bdda79d13c2c317cd",
   "collector_sha256": "41b6ae7c600534ec0142643958aca0a5d5281afa53c3863e7ec828f5caafdc6d",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -617,21 +617,21 @@
         "declaration": {
           "end": {
             "column": 43,
-            "line": 16
+            "line": 18
           },
           "start": {
             "column": 0,
-            "line": 15
+            "line": 17
           }
         },
         "selection": {
           "end": {
             "column": 17,
-            "line": 15
+            "line": 17
           },
           "start": {
             "column": 4,
-            "line": 15
+            "line": 17
           }
         }
       },
@@ -700,21 +700,21 @@
         "declaration": {
           "end": {
             "column": 55,
-            "line": 20
+            "line": 22
           },
           "start": {
             "column": 0,
-            "line": 18
+            "line": 20
           }
         },
         "selection": {
           "end": {
             "column": 26,
-            "line": 18
+            "line": 20
           },
           "start": {
             "column": 8,
-            "line": 18
+            "line": 20
           }
         }
       },
@@ -812,21 +812,21 @@
         "declaration": {
           "end": {
             "column": 66,
-            "line": 31
+            "line": 33
           },
           "start": {
             "column": 0,
-            "line": 26
+            "line": 28
           }
         },
         "selection": {
           "end": {
             "column": 41,
-            "line": 26
+            "line": 28
           },
           "start": {
             "column": 8,
-            "line": 26
+            "line": 28
           }
         }
       },
@@ -915,21 +915,21 @@
         "declaration": {
           "end": {
             "column": 55,
-            "line": 148
+            "line": 154
           },
           "start": {
             "column": 0,
-            "line": 140
+            "line": 146
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 142
+            "line": 148
           },
           "start": {
             "column": 8,
-            "line": 142
+            "line": 148
           }
         }
       },
@@ -1090,21 +1090,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 212
+            "line": 218
           },
           "start": {
             "column": 0,
-            "line": 202
+            "line": 208
           }
         },
         "selection": {
           "end": {
             "column": 46,
-            "line": 202
+            "line": 208
           },
           "start": {
             "column": 8,
-            "line": 202
+            "line": 208
           }
         }
       },
