@@ -5201,3 +5201,57 @@ passes 44/44, and the final cold-start run found every required source in all
 19 cases (20 benchmark cases including the impact regression). These checks
 reuse existing Lean results; no duplicate theorem or physical selector was
 added.
+
+### Generic finite-memory lower bound from future-profile separation (25 October 2026)
+
+`D0.Foundation.FutureExecution` now owns the reusable consequence needed by
+the hidden-bit control. Given an injective complete future profile and a
+decoder satisfying `decode (encode s) = F.profile s` for every state, the
+generic theorem
+`FutureExecution.sufficient_encoder_injective_of_profile_injective`
+proves `Function.Injective encode`. With finite native-state and memory types,
+`FutureExecution.sufficient_memory_cardinality_lower_bound` derives
+`Fintype.card F.State ≤ Fintype.card C`. Both conclusions consume the existing
+`sufficient_memory_reflects_future` theorem; the cardinality result then uses
+Mathlib's finite-cardinality bound for an injective map.
+
+The existing `hiddenBit_sufficient_encoder_injective` and
+`hiddenBit_minimum_future_memory_four` results are now applications of these
+generic theorems, supplying the already-proved injectivity of the concrete
+hidden-bit future profile. The explicit local `Fintype` instance exposes the
+definitional `Bool × Bool` state carrier; it adds no cardinality assumption to
+the theorem statement. The exact compiled declarations were queried from the
+`D0.Foundation.FutureExecution` import. Their elaborated types retain profile
+injectivity, total decoder correctness, and finite-type assumptions. The
+reported proof dependencies show the chain through
+`sufficient_memory_reflects_future`, `Quotient.exact`, and
+`Fintype.card_le_of_injective`. The axiom closure is
+`Classical.choice`, `Quot.sound`, and `propext`; `sorryAx` is absent.
+
+The six-declaration compiled inventory is saved at
+`sources/d0_proof_architecture_formalization_2026-10-24/future_profile_memory_cardinality_declarations_2026-10-25.json`.
+It records pre-edit snapshot `b649e766d0adf049ddb3d263e30d83fd3fcc347f`
+with `worktree_dirty=true`, source SHA-256
+`22a3071bef687e2009ccb7ebfed6d6fad469c8f35be57cc2b0a7fa39a8d36da6`, Lean
+source digest `ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db`,
+collector SHA-256
+`fc9aae28d37ec54fca3267ca2957f09893d2ea23f9ad9ddb4ff8b1ebe0667e14`, and
+inventory SHA-256
+`62f9e5c2ce527fa3a9929ca866e594b1895ae2625e6ba423e9bfdf41478c5ddd`.
+
+On the tree based at `b649e766d0adf049ddb3d263e30d83fd3fcc347f`, narrow
+Lean 4.30.0 builds passed for `D0.Foundation.FutureExecution` (2,960 Lake
+jobs) and its concrete consumer
+`D0.Foundation.VerificationTransferApplication` (2,971 jobs). No claim,
+`formal_support` row, assembly edge, or physical-selection premise changed.
+This strengthens the reusable mathematical kernel and its existing finite
+control; it does not freeze C0 or report coverage.
+
+The existing cold-start case `verification-kernel-transfer-outside-gr` now
+includes a query for the generic injectivity/cardinality results and a
+filename query for their compiled inventory. The exact theorem query returns
+the primary artifact and `FutureExecution.lean` as direct-content candidates;
+the filename query returns the six-declaration inventory at rank 2. Its
+focused case test passes. The full 19-case search batch was not replayed after
+this query addition; the batch run was stopped after exceeding 90 seconds, so
+only the changed retrieval path is claimed here.

@@ -159,6 +159,8 @@ CASES: list[dict[str, Any]] = [
             "verification_core representedRecord complete future kernel",
             "Interpretation.transfer_theorem translated regime premise source_proof",
             "visible_only_memory_cannot_decode_hiddenBit_futures hiddenBit_sufficient_encoder_injective sufficient_memory_reflects_future complete future decoder",
+            "sufficient_encoder_injective_of_profile_injective sufficient_memory_cardinality_lower_bound finite future memory decoder profile separation",
+            "future_profile_memory_cardinality_declarations_2026-10-25.json sufficient_memory_cardinality_lower_bound declaration axioms",
             "erased_hiddenBit_operation_map_is_impossible step_commutes hidden archive action",
             "verified_visibleFalseReadout_transfers_to_common_execution verifiedStateImageEquiv transfer_theorem",
             "ConnesReconstructionBridge connes_reconstruction_conditional metricEqualsSpectrum supplied witness assumption",
@@ -170,9 +172,24 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
             "03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean",
             "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/future_profile_memory_cardinality_declarations_2026-10-25.json",
             "03_FORMALIZATION/D0/Bridge/ConnesReconstructionBridge.lean",
         ],
-        "scope_review": "VerificationTransferApplication.visible_only_memory_cannot_decode_hiddenBit_futures rejects a decoder from visible-only memory through hiddenBit_sufficient_encoder_injective and the generic sufficient_memory_reflects_future result; erased_hiddenBit_operation_map_is_impossible rejects the identity-state map that erases the archive-revealing operation at step_commutes. The positive verified_visibleFalseReadout_transfers_to_common_execution composes the verified foundation state with the actual transfer. ConnesReconstructionBridge.connes_reconstruction_conditional remains conditional on supplied ConnesReconstruction fields. These finite controls do not select a physical execution.",
+        "scope_review": (
+            "VerificationTransferApplication.visible_only_memory_cannot_decode_hiddenBit_futures "
+            "rejects a decoder from visible-only memory through hiddenBit_sufficient_encoder_injective "
+            "and the generic sufficient_memory_reflects_future result. The generic "
+            "sufficient_encoder_injective_of_profile_injective and "
+            "sufficient_memory_cardinality_lower_bound require injective complete profiles, "
+            "decoder correctness and, for cardinality, finite state and memory types. "
+            "The hidden-bit finite control supplies these conditions and proves its four-state lower bound. "
+            "erased_hiddenBit_operation_map_is_impossible rejects the identity-state map that erases "
+            "the archive-revealing operation at step_commutes. The positive "
+            "verified_visibleFalseReadout_transfers_to_common_execution composes the verified "
+            "foundation state with the actual transfer. ConnesReconstructionBridge."
+            "connes_reconstruction_conditional remains conditional on supplied ConnesReconstruction "
+            "fields. These finite controls do not select a physical execution."
+        ),
     },
     {
         "id": "top-hodge-inverse-spectral-outside-gr",

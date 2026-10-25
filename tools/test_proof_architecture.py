@@ -1226,6 +1226,8 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         required_names = (
             "visible_only_memory_cannot_decode_hiddenBit_futures",
+            "sufficient_encoder_injective_of_profile_injective",
+            "sufficient_memory_cardinality_lower_bound",
             "erased_hiddenBit_operation_map_is_impossible",
             "verified_visibleFalseReadout_transfers_to_common_execution",
             "connes_reconstruction_conditional",
@@ -1237,6 +1239,10 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn(
             "03_FORMALIZATION/D0/Bridge/ConnesReconstructionBridge.lean",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/future_profile_memory_cardinality_declarations_2026-10-25.json",
             case["required_refs"],
         )
         for declaration in required_names:

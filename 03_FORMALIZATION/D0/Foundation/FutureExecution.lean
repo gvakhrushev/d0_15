@@ -119,6 +119,33 @@ theorem FutureExecution.sufficient_memory_reflects_future
   apply Quotient.sound
   exact (correct s).symm.trans ((congrArg decode heq).trans (correct t))
 
+/-- If a complete future profile distinguishes native states, then any
+memory that decodes every future profile must encode those states injectively. -/
+theorem FutureExecution.sufficient_encoder_injective_of_profile_injective
+    (F : FutureExecution) (profile_injective : Function.Injective F.profile)
+    {C : Type}
+    (encode : F.State → C)
+    (decode : C → List F.Action → F.Test → F.Outcome)
+    (correct : ∀ s, decode (encode s) = F.profile s) :
+    Function.Injective encode := by
+  intro s t heq
+  apply profile_injective
+  exact Quotient.exact
+    (F.sufficient_memory_reflects_future encode decode correct heq)
+
+/-- A finite memory that decodes all future profiles needs at least as many
+states as the native carrier whenever those profiles separate its states. -/
+theorem FutureExecution.sufficient_memory_cardinality_lower_bound
+    (F : FutureExecution) [Fintype F.State] {C : Type} [Fintype C]
+    (profile_injective : Function.Injective F.profile)
+    (encode : F.State → C)
+    (decode : C → List F.Action → F.Test → F.Outcome)
+    (correct : ∀ s, decode (encode s) = F.profile s) :
+    Fintype.card F.State ≤ Fintype.card C := by
+  exact Fintype.card_le_of_injective encode
+    (F.sufficient_encoder_injective_of_profile_injective
+      profile_injective encode decode correct)
+
 /-- In any sufficiently expressive future-complete memory, the canonical
 future equivalence is EXACTLY the coarsest relation preserved by every
 allowed state transition and every current readout. -/
@@ -221,10 +248,8 @@ theorem hiddenBit_sufficient_encoder_injective {C : Type}
        hiddenBitExecution.Test → hiddenBitExecution.Outcome)
     (correct : ∀ s, decode (encode s) = hiddenBitExecution.profile s) :
     Function.Injective encode := by
-  intro s t h
-  apply hiddenBit_futureProfile_injective
-  exact Quotient.exact
-    (hiddenBitExecution.sufficient_memory_reflects_future encode decode correct h)
+  exact hiddenBitExecution.sufficient_encoder_injective_of_profile_injective
+    hiddenBit_futureProfile_injective encode decode correct
 
 /-- The lower bound is FOUR archived states, not TWO current Boolean
 outcomes. It is independent of the choice of source encodings. -/
@@ -234,9 +259,11 @@ theorem hiddenBit_minimum_future_memory_four {C : Type} [Fintype C]
        hiddenBitExecution.Test → hiddenBitExecution.Outcome)
     (correct : ∀ s, decode (encode s) = hiddenBitExecution.profile s) :
     4 ≤ Fintype.card C := by
-  have hinj := hiddenBit_sufficient_encoder_injective encode decode correct
-  simpa using
-    (Fintype.card_le_of_injective (fun s : Bool × Bool => encode s) hinj)
+  letI : Fintype hiddenBitExecution.State := by
+    change Fintype (Bool × Bool)
+    infer_instance
+  simpa using hiddenBitExecution.sufficient_memory_cardinality_lower_bound
+    hiddenBit_futureProfile_injective encode decode correct
 
 
 /-! ## Exact impossibility for an uncoupled future-memory bit
