@@ -35,7 +35,7 @@ theorem finiteMatrixTensorProduct_mul {X Y R : Type*}
 
 /-- Transposition acts factorwise on the finite matrix tensor product. -/
 theorem finiteMatrixTensorProduct_transpose {X Y R : Type*}
-    [Fintype X] [Fintype Y] [Mul R]
+    [Mul R]
     (A : Matrix X X R) (B : Matrix Y Y R) :
     (finiteMatrixTensorProduct A B).transpose =
       finiteMatrixTensorProduct A.transpose B.transpose := by
