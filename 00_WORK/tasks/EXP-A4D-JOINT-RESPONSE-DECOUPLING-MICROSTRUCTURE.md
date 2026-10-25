@@ -9888,3 +9888,80 @@ retain the stencil factors and old full-product price. This could supply
 actual endpoint tests without retroactively refining old catalogues or
 claiming a C1 word selector. It is a proposed application, not a proved
 admissible physical variation law or a newly registered execution.
+
+### 25 October: actual price cofields from predeclared native coordinate forks
+
+Phase: native realization / source composition. SAME PR334,
+constitutive/native-programme-v1; inputfd2226a7. Parent:7ag's missing
+actual finite native field-comparison graph; do not assume a C1 selector.
+Changed input: its literal reflected processor, finite request/source
+construction, exact scalar Gram and cofinal physical norm/gain.
+
+Predeclare each NEW cohort's centre and2D_h coordinate nodes
+c_h plus/minus delta_j e_a in the full moment/Cayley/material chart.
+Compile all unconditional native source preparers on one common private
+carrier, match their REAL clocks before first execution and freeze them.
+Every node uses the same initial blanks and fixed report/middle; all
+failure/complement/source/key modes and actual inverses stay. Baseline
+and each fixed single-cohort fork form append-only histories. A fork at j
+preserves its actual prefix through j-1 and all records within that branch;
+it never rewrites an already completed baseline history. The young-half
+subgraph is available when one common later prefix must be fixed.
+
+The decisive new map uses ONE coordinate/cohort per full-price contrast.
+Then the divided whole-price gain divided by its TRUE BASE chain gain
+approaches1 uniformly in the number/size of old blocks. Reconstruct a
+literal LINEAR finite cofield with the actual B_h=Dchi_h DSample_h and
+L_h=||B_h||C3->l1. This is actual price data with coordinate distance,
+not a new action or a nonlinear menu silently called a covector.
+Retain delta_j, whole-bank eta_j/delta_j, all derivative/readout norms
+and gbar=c_quad*g_h. Expand the slow envelope to bound gbar both ways,
+LM3/gbar,L/gbar,M2 and the finite collar/readout constants. Fixed rational
+delta_j=1/j after finitely many chart exceptions and eta_j=O(2^-j)
+make the weighted cofield error summable. Normalization by the SAME
+base Gamma_M as7ag then gives the independent-block l1 cofield bound
+O(M^(-63/64)) and full old/cross-bank certificate O(M^(-3/32)).
+
+This is a globally normalized certificate; a fixed old row can retain
+its finite local stencil error. It is not exact finite-N stationarity,
+independent controller/cut/clock equations or complete physical X_N
+selection. Simultaneously changing an entire tail can have an exponential
+mean-value-gain drift, so its raw secant gain cannot replace the base
+gain in the joint certificate. Preserve that hostile control.
+
+Inputs:7ag and its exact geometry/packet norms,7af report/source and
+product score,7j inverse,7c SO point compilation, paid-writer8/10.4/12
+finite cofield/sampling consumers and existing2/5-CX clock padding.
+Write paths: primary7ah, this brief and
+sources/d0_native_price_cofield_forks_2026-10-25/ only. Disjoint bounded
+graph/cofield/map/code assistants in this same PR; no new task or slot.
+Decisive checks: actual native matched-clock forks and their cut/record
+maps; one-row relative gain uniform in the OLD product; full coordinate
+reconstruction/actual field chords; mixed whole-price controls and the
+false whole-tail gain transfer. No new geometric root/rank/Lean/full
+corpus replay. Full selected action, physical admission and independently
+admitted apparatus/source/initial/stopping rows remain open.
+
+Final7ah10832bytes/SHA256
+60315b154b45ec39ecce5dd05902ce557ed3aeb602fe3ff904f0c774e116b20b.
+RootfinalCLIexit0/PASS51; stdout equals saved receipt;12input and2section
+pins verified. Receipt15059bytes/SHA256
+4e4a7d984b3ba48bf0a31196664cc3e312a8fd0e8f6064c47407c846cdac1a13.
+Frozen source and inherited analytical pins, exact replay scope and source
+reviews live in 02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/INTEGRATION_REVIEW.md.
+The original primary recovers fd2226a7 exactly after7ah removal; oldbrief
+and packets are preserved. No physical/scientific status is promoted.
+
+Next physical-cut candidate, NOT yet a result: test a known-ACTIVE-port
+reporter with only the original unknown Q8 source input. Current7af–ah
+use a genuine unknown private meter2 at every cohort; a known meter0
+cannot silently replace that cut. The literal G/CX/SourceI palette
+commutes with the source complex structure L_i, suggesting a scalar
+complex returned corner on one protected spin4. A controlled i-phase
+report would have |1-x+i x|²=1-2x(1-x), with original failure branches
+and source normalization. Actual native phase synthesis/determinant
+complement, shared-LIVE-spin causal record map, complete heat and joint
+source norms must first be proved. Completed identity on that shared
+spin cannot be borrowed from7af; neither can rank/gain or physical cut
+admission. This is a proposed bounded consumer of the remaining original
+input-family/cut seam, not a new postulate, task or independent execution.

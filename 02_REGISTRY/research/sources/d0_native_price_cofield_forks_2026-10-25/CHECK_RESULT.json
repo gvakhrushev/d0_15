@@ -1,0 +1,265 @@
+{
+  "check_names": [
+    "actual matched native source fork has its full rank8 corner and scalar Gram r4",
+    "new full-column native fork remains a symmetric orthogonal involution r4",
+    "shared helper and arbitrary source spin are identity on EVERY completed fork column r4",
+    "native source contrast stays inside its actual positive q below one quarter collar r4",
+    "clock matching retains the complete true inverse and every literal2CX padding stage r4",
+    "actual matched native source fork has its full rank8 corner and scalar Gram r5",
+    "new full-column native fork remains a symmetric orthogonal involution r5",
+    "shared helper and arbitrary source spin are identity on EVERY completed fork column r5",
+    "native source contrast stays inside its actual positive q below one quarter collar r5",
+    "clock matching retains the complete true inverse and every literal2CX padding stage r5",
+    "actual matched native source fork has its full rank8 corner and scalar Gram r10",
+    "new full-column native fork remains a symmetric orthogonal involution r10",
+    "shared helper and arbitrary source spin are identity on EVERY completed fork column r10",
+    "native source contrast stays inside its actual positive q below one quarter collar r10",
+    "clock matching retains the complete true inverse and every literal2CX padding stage r10",
+    "all matched forks have identical COMPLETE heat while their true feedback prices differ",
+    "single-cohort native fork shares its TRUE earlier word prefix and unchanged future base blocks M2",
+    "no later native fork block addresses any sealed private or immutable oldRIGHT register M2",
+    "full fork carrier, true cut, oldRIGHT and clock inventory are identical to baseline M2",
+    "ACTUAL native meter corners compose into the ONE full protected-prefix determinant M2",
+    "single-cohort native fork shares its TRUE earlier word prefix and unchanged future base blocks M3",
+    "no later native fork block addresses any sealed private or immutable oldRIGHT register M3",
+    "full fork carrier, true cut, oldRIGHT and clock inventory are identical to baseline M3",
+    "ACTUAL native meter corners compose into the ONE full protected-prefix determinant M3",
+    "each FIXED counterfactual fork itself has a literal append-only later prefix",
+    "additional arbitrary oldRIGHT input rank is counted once across all branch cohorts",
+    "single-edge derivative is the TRUE base whole-product chain coefficient",
+    "full closing price retains cross-cohort control derivatives",
+    "log whole-price weight has the history-independent derivative needed by relative gains",
+    "log local slope retains its exact compact-collar derivative",
+    "single-edge relative gain is uniformly bounded even when OLD Gram is2^-0",
+    "single-edge relative gain is uniformly bounded even when OLD Gram is2^-16",
+    "single-edge relative gain is uniformly bounded even when OLD Gram is2^-1024",
+    "single-edge relative gain is uniformly bounded even when OLD Gram is2^-8192",
+    "zero report chords have their continuous gain extension and zero actual cofield value",
+    "finite price axes reconstruct a LINEAR physical cofield with actual heterogeneous gains and sampling scales",
+    "endpoint source error is divided by true coordinate spacing and physical gbar",
+    "actual prepared-coordinate chord keeps its readout norm and eta-over-delta debt",
+    "a sufficiently controlled ACTUAL coordinate chord matrix remains full rank",
+    "whole-tail mean-value gain cannot be silently replaced by the TRUE BASE chain gain",
+    "critical EVEN-drift control is a genuine positive effect with scalar first conditional and nonzero higher excitation",
+    "critical symmetric equal-report tail can lose its BASE gain exponentially M16",
+    "actual1/j half-window divided gain keeps its step factor and is not the base order-M gain M16",
+    "critical symmetric equal-report tail can lose its BASE gain exponentially M128",
+    "actual1/j half-window divided gain keeps its step factor and is not the base order-M gain M128",
+    "critical symmetric equal-report tail can lose its BASE gain exponentially M2048",
+    "actual1/j half-window divided gain keeps its step factor and is not the base order-M gain M2048",
+    "even critical drift survives zero odd price contrast and gives no uniform base-relative gain",
+    "slow-envelope weighted coordinate errors have a summable Taylor exponent",
+    "exponentially small native errors retain a summable actual eta-over-spacing bound",
+    "all-row cofield and full correlated-bank certificates have their distinct true-gain rates"
+  ],
+  "checks": 51,
+  "cofield_model_errors": [
+    "0.00000000000010363893454275068714675504172222999993432572361056",
+    "0.0000000000000010363893454285734713505666011693381910552339216498",
+    "1.0363893454285841373493967761320932346632626633549e-17"
+  ],
+  "critical_even_drift": {
+    "critical_even_drift_ratios": [
+      "0.80854880539251996496309108096659061846092892505945",
+      "0.18266267316294591607820439806090764618602418303928",
+      "0.0000000000015360202602617583741974594268085889642577519947312"
+    ],
+    "one_over_j_step_factors": [
+      {
+        "B_tail_over_A": "95549/2306304",
+        "cohorts": 16
+      },
+      {
+        "B_tail_over_A": "9204159030559409899503223815970003359186125226214526531/1709280779647668682163679898168350277444975704070281216000",
+        "cohorts": 128
+      },
+      {
+        "B_tail_over_A": "2853645642505394204200585758706164117768349845224732191504099445468566282819251689742600739992409816280987848400458836427562164081418994665915926092461406912361745845473651045728375707029776813446337894011288227473457140209089300194295182022377181874319103388437176815267430078993349866070997185857789055695260980833851445993676956956448994041819658481482480365653825216994141708034776595308470961364611720421349692762007799685405461182276951551692954798928200545920524968584140850040507402732365024952808616338947200341043074402387967940791649448421999281050375410704967462027578563933519739702337691142290934908574956399634758837638360038033126305105757680537275688244252373471443467027880309259733794769877395686883118744827008147156613011345237824191266556350693401519855577316515358705834940611316218119109118416195879717465251430950974664309094778356413014472776150256876154668757/8434464039393701851982171702808061297434195547756238658625021672757026095882119449137873103962675999634244363345148986687588771459958740840206387984244126742278088977098024255697691924492433518271968946494014697051352765066650419150077651379472102674341189197218704942078046926302097245103676809094159309985014524506236446425396235647798931051561561290266518761908420018280798009884333973159289333412679058205354320330611368463562521955593541592356791338967237980860072253365310936374371510107669978203561548856120823863905577597157653669234198101219573217067556624406339116767912492551610148721346940713865531153023252196872777295405043268672159874583858422523729723265805965291118126904640066363074526347988231097318022386968224829059352429974945128276906576915273068094131808976036281620162123354249174406810032147222159892672388882768646251279677313701021941937947546908237238894592000",
+        "cohorts": 2048
+      }
+    ]
+  },
+  "exact_scope": [
+    "actual32-column native changed source echoes and exact full corners",
+    "all2ND clock modes retained by exact involution multiplicities and owned Floquet theorem",
+    "M2/3 native prefix inventories/protection, not a large clock simulation",
+    "rational cofield models are diagnostics, not new native primitives or GR roots",
+    "no old READY/Cartan/large native suite replay; no physical C1 or X_N promotion"
+  ],
+  "generated_utc": "2026-10-25T05:04:09.315355+00:00",
+  "hostile_whole_tail_ratios": [
+    "1.0054090722080333809311404573734531884073042182315",
+    "1.3477097757251764047697156143488524608930647446756",
+    "76738991.782272766524911395725336241221642597217755"
+  ],
+  "native_forks": [
+    {
+      "CX": 116,
+      "G": 11,
+      "SourceI": 26,
+      "actual_stages": 153,
+      "body_stages": 81,
+      "cut_rank": 8,
+      "feedback_numeric": "0.00000193715226530207762950005268013266877228067481076042635561534627147465000352985381604097122",
+      "full_dimension": 32,
+      "full_heat_numeric": "12.2975165838038702631323043882662196395074840842129098307657443346612306837378249126686575",
+      "paired_clock_modes": 9792,
+      "q_certified_interval": [
+        "88668686519261870236229760984207399143481647311404070981765828969/421249166674228746791672110734681729275580381602196445017243910144",
+        "88668686519261870236229760984212163509520159784763303271494030041/421249166674228746791672110734681729275580381602196445017243910144"
+      ],
+      "scope": "native contrast fixture, not an original GR field root",
+      "source_G_power": 4
+    },
+    {
+      "CX": 110,
+      "G": 13,
+      "SourceI": 30,
+      "actual_stages": 153,
+      "body_stages": 93,
+      "cut_rank": 8,
+      "feedback_numeric": "0.000000399350567866327137687096838171212319616173383437438654560832863259431525288475098191923861",
+      "full_dimension": 32,
+      "full_heat_numeric": "12.2975165838038702631323043882662196395074840842129098307657443346612306837378249126686575",
+      "paired_clock_modes": 9792,
+      "q_certified_interval": [
+        "14963247139709662950381831624655743013253874719789550500526389889/421249166674228746791672110734681729275580381602196445017243910144",
+        "59852988558838651801527326498636183083052463200156901295694898249/1684996666696914987166688442938726917102321526408785780068975640576"
+      ],
+      "scope": "native contrast fixture, not an original GR field root",
+      "source_G_power": 5
+    },
+    {
+      "CX": 80,
+      "G": 23,
+      "SourceI": 50,
+      "actual_stages": 153,
+      "body_stages": 153,
+      "cut_rank": 8,
+      "feedback_numeric": "0.00000137849830416700362726764302941572378424637303252343930657107805128619518626801641330997304",
+      "full_dimension": 32,
+      "full_heat_numeric": "12.2975165838038702631323043882662196395074840842129098307657443346612306837378249126686575",
+      "paired_clock_modes": 9792,
+      "q_certified_interval": [
+        "3607933916745672503364751363707049472162830768043313852382311289/26328072917139296674479506920917608079723773850137277813577744384",
+        "230907770671723040215344087277313634941189864525142771762305104401/1684996666696914987166688442938726917102321526408785780068975640576"
+      ],
+      "scope": "native contrast fixture, not an original GR field root",
+      "source_G_power": 10
+    }
+  ],
+  "native_prefixes": [
+    {
+      "actual_stages": 306,
+      "cohorts": 2,
+      "cut_rank": 32,
+      "fork_at": 2,
+      "full_dimension": 256,
+      "paired_modes": 156672,
+      "scope": "literal prefix/protection/inventory; private all-column identity consumed"
+    },
+    {
+      "actual_stages": 459,
+      "cohorts": 3,
+      "cut_rank": 64,
+      "fork_at": 2,
+      "full_dimension": 1024,
+      "paired_modes": 940032,
+      "scope": "literal prefix/protection/inventory; private all-column identity consumed"
+    }
+  ],
+  "numerical_scope": "110-digit non-interval configured values; algebraic identities and rational collar bounds are exact",
+  "relative_gain_rows": [
+    {
+      "old_product": "2^-0",
+      "ratio": "1.00000761420791377632730941197589731906841001012192477107046318575715770796976039196921452"
+    },
+    {
+      "old_product": "2^-16",
+      "ratio": "1.00000761421319788891268152499340250772662422849438330554580254982008066213282386841240511"
+    },
+    {
+      "old_product": "2^-1024",
+      "ratio": "1.00000761421319796954314720812182741116751269035532994923857868020304568527918781725888325"
+    },
+    {
+      "old_product": "2^-8192",
+      "ratio": "1.00000761421319796954314720812182741116751269035532994923857868020304568527918781725888325"
+    }
+  ],
+  "section_pins": [
+    {
+      "bytes": 12595,
+      "heading": "## 7ag.",
+      "sha256": "1ee4711d957ccc8e4edc9e978f933c3b449230b0dbb96386e396355962b5e464"
+    },
+    {
+      "bytes": 10832,
+      "heading": "## 7ah.",
+      "sha256": "60315b154b45ec39ecce5dd05902ce557ed3aeb602fe3ff904f0c774e116b20b"
+    }
+  ],
+  "source_pins": [
+    {
+      "bytes": 7571,
+      "path": "02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/price_cofield.py",
+      "sha256": "6e149d14038f798ce383da0bc7e45fb4e49fa3cdcd44eec73597a3bb144d6360"
+    },
+    {
+      "bytes": 17964,
+      "path": "02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/check_price_cofield.py",
+      "sha256": "e58f9a639470752d484ca771634824e562c65cc32478158c0712b1d722a23dde"
+    },
+    {
+      "bytes": 15841,
+      "path": "02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/NATIVE_GRAPH.md",
+      "sha256": "825f40efd91cdfb85253f14abb07276793b201d1ff05d8932cefc24cb05bd4de"
+    },
+    {
+      "bytes": 17377,
+      "path": "02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/STENCIL_MAP.md",
+      "sha256": "1d3025d4bddcc6ecc3d3d4ccaf7a57cbc04f1c64245bfa8c9b9a8b6348552dc2"
+    },
+    {
+      "bytes": 26868,
+      "path": "02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/COFIELD_THEOREM.md",
+      "sha256": "41b8f08cbffc3de99df1ec92c589f652ee9bc1dca2139a1f5834650a721ccd11"
+    },
+    {
+      "bytes": 8246,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/reflected_report.py",
+      "sha256": "b248c31f3fd3bcf377a5bb4548507d7c62f8c8d28dca0626285a8a9cec9112b7"
+    },
+    {
+      "bytes": 21592,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/PROOF.md",
+      "sha256": "627be34a64654c6a407bf5a542295f89d156c158feb584961a5e1870e3bbb3a7"
+    },
+    {
+      "bytes": 25854,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/COHORT_THEOREM.md",
+      "sha256": "c90e41bd4c97e63427e38e849c8a96a842c8abc2615f1770e6669a917c8efaa0"
+    },
+    {
+      "bytes": 19464,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/GEOMETRIC_MAP.md",
+      "sha256": "09d5d67b16ef54a36cdfc27688178ce3ec3b0e44d9b909ed4a411380c22a37ce"
+    },
+    {
+      "bytes": 29783,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/COFINAL_THEOREM.md",
+      "sha256": "805df65ba3eb7802d132609ef533763ef3f007c78168c6306ad91b1e455d9722"
+    },
+    {
+      "bytes": 9947,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/NATIVE_REQUEST.md",
+      "sha256": "fc2532c5ac9704f6df2126558949a78eadeab3f37f317e0c5d9eb79a552fa087"
+    },
+    {
+      "bytes": 17833,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  ],
+  "status": "PASS"
+}

@@ -8050,6 +8050,217 @@ missing controls. Full physical joint stationarity, generic GR,
 positive_gr and raw216 remain open. GR_closed=false.
 
 
+## 7ah. Actual native coordinate forks give a linear price cofield at the same base gain
+
+25 October, SAME PR334/constitutive owner, inputfd2226a7. The named
+parent is7ag's actual finite source-comparison graph. Its constant
+orthogonal chart through native points was explicitly a mathematical
+comparison, not a native C1 actuator. This section constructs finite
+native PRICE tests instead. It consumes the exact reflected processor,
+unconditional point preparation, physical sampling and product-normal
+theorems; it does not repeat a geometric root or introduce a new action.
+
+The full native fork construction is in
+[NATIVE_GRAPH.md](sources/d0_native_price_cofield_forks_2026-10-25/NATIVE_GRAPH.md),
+the field/readout map in
+[STENCIL_MAP.md](sources/d0_native_price_cofield_forks_2026-10-25/STENCIL_MAP.md),
+and the exact common-gain proof in
+[COFIELD_THEOREM.md](sources/d0_native_price_cofield_forks_2026-10-25/COFIELD_THEOREM.md).
+The bounded new code is
+[price_cofield.py](sources/d0_native_price_cofield_forks_2026-10-25/price_cofield.py)
+and [check_price_cofield.py](sources/d0_native_price_cofield_forks_2026-10-25/check_price_cofield.py).
+
+### Predeclare real alternatives before the baseline is executed
+
+At each new cohort j use the full independent chart
+c=chi_h(Y)=(D_16,K_24,psi_prepared,2), on all free sites, with its
+original fixed collar, density/calibration and reference. The exact
+affine-scalar/quadratic-wave centres of7ag have c_j in Q(p). Choose ONCE
+the finite catalogue
+
+    c_j^0=c_j,  c_(j,a)^±=c_j±delta_j e_a,
+    a=1,...,D_h,  delta_j>0 in Q.                      (298)
+
+These are all finite independent field coordinates, not a pp-wave
+parameterization. Eventually delta_j=1/j; finitely many initial chart
+exceptions use smaller certified rational steps. Decode the actual
+inverse coframe and proper Cayley links, not a label declared to be a
+metric. Native targets are the same full pure canonical banks and their
+purifiers. Approximate each entire target by an unconditional native
+SOURCE preparer from the SAME zero blanks, with error eta_j uniform over
+the catalogue. The separate report/AA/factory blanks are untouched.
+No exact sharp-one key, chosen successful factory branch, unknown-state
+clone or continuously selected native gate is used. An internal request
+implementation retains the full key carrier and its real preparation;
+the direct finite word family already suffices.
+
+Use one common hardware support for the finite catalogue and include
+each actual source inverse. All source-plus-inverse lengths have the
+same parity. Real two-CX identities therefore match clocks; the owned
+two/five-CX padding also covers the more general case. Padding is part
+of the actual word, full heat and stage count. Choose the common T_j
+BEFORE the baseline word u_j^0 is executed. This constructs a new
+catalogue-ready realization; it does not pad an already completed7ag
+history retroactively.
+
+For fixed beta=(j,a,±), the compared full word is
+
+    W_M^beta=u_1^0...u_(j-1)^0 u_(j,a)^±
+                                      u_(j+1)^0...u_M^0.           (299)
+
+Each fixed fork and the baseline are themselves append-only families.
+The fork preserves its actual prefix through j-1 and every record
+generated within that branch. It is a counterfactual execution from
+the same complete initial blanks, not an operation rewriting the
+already sealed baseline past. When the physical task fixes a later
+prefix through floor(M/2), use only j>floor(M/2). The main full-history
+certificate below retains all j; those are distinct boundary scopes.
+
+The template keeps the actual carrier, cut rank, clock, beta and all
+report parameters identical between compared nodes at every M. Shared
+helper/spin are identity on all completed columns, immutable oldRIGHT
+is never addressed, and the whole endpoint remains a balanced involution.
+Consequently the COMPLETE paired heat is the same actual absolute value
+at every node. All unused work/key/failure/old-column modes stay. A free
+clock/cut/stopping row is not declared zero by this fixed-template test.
+
+### One changed row has a gain uniform in the size of the old history
+
+Let q_j^0 and q_(j,a)^± be the ACTUAL prepared report means, not ideal
+values assigned to their codes. Keep their scalar Grams and whole price:
+
+    t_j(q)=1-alpha_j gamma_j q(1-gamma_j q),
+    T_M^0=product_j t_j(q_j^0),  r_M=4*2^M,
+    J_M^0=-r_M log(1-zeta+zeta T_M^0),
+    w_M^0=r_M zeta T_M^0/(1-zeta+zeta T_M^0),
+    a_j^0=alpha_j gamma_j(1-2gamma_j q_j^0)/t_j(q_j^0).             (300)
+
+Additional independently supplied protected support multiplies r_M,
+w_M and every gain once; its full thermal dimension is counted separately.
+The ordinary spin-only sector uses the displayed r_M. On the actual
+q_max<1/2 collar the slope a_j(q) stays between positive constants.
+For ONE coordinate/cohort edge define its true divided coefficient
+
+    beta_(M;j,a)=(B_(M;j,a)^+-B_(M;j,a)^-)
+                                      /(q_(j,a)^+-q_(j,a)^-).      (301)
+
+At coincident q values use the continuous positive divided value. The
+complete heat cancels, so beta is the divided slope of the ONE cumulative
+determinant, with every other factor fixed at its actual base value.
+It is not a standalone price or a sum of block actions. With z=log T,
+0<d log w/dz<=1. Also
+
+    d log a_j/dq=-2gamma_j/(1-2gamma_j q)+a_j(q).
+
+Thus, for C_beta=8+2/(1-2q_max) and
+u_(j,a)=max_±|q_(j,a)^±-q_j^0|,
+
+    exp(-C_beta u_(j,a))
+      <=beta_(M;j,a)/(w_M^0 a_j^0)
+      <=exp(C_beta u_(j,a)).                         (302)
+
+This is uniform in M, r_M, all old Grams and how small the actual gain
+is. Only ONE log t changes. At the primary all-field zero,
+u_(j,a)<=M_(2,h)delta_j²/2+4eta_j. There is no accumulating Mdelta²
+shift in(302), unlike a simultaneous change of the entire tail.
+
+### Reconstruct a genuine finite cofield from the actual price values
+
+Define the price-coordinate vector and its physical sampling map by
+
+    (b_(M,j))_a=(B_(M;j,a)^+-B_(M;j,a)^-)/(2delta_j),
+    B_h=D chi_h D Sample_h,  L_h=||B_h||_(C3->l1),
+    Fhat_M[(v_j)]=sum_(j<=M) b_(M,j)[B_hj v_j],
+    Gamma_M=w_M^0 A_M,
+    A_M=sum_(j<=M) a_j^0 gbar_hj,
+    gbar_h=c_quad,h g_h.                              (303)
+
+Fhat is a LINEAR finite cofield because its finite coordinate entries
+are now fixed price data. It is not a nonlinear menu of simultaneous
+finite changes silently called a covector. For independent physical
+block tests use max_j||v_j||_C3; its dual norm is the SUM of block norms.
+All16+24+2 rows are taken before the physical pullback or root ansatz.
+The actual source-copy/inverse-PF identity, density, s4 material
+calibration and all operator/readout norms of7ag remain in B_h and gbar.
+
+Let Q_h(c) be the TRUE exact logical polynomial report on the finite
+chart. P5/C8 is used only for its full first jet at the primary centre;
+Q_h is not replaced by the original inverse/Cayley action off that family.
+Uniform whole-bank node errors give the actual central-difference bound
+
+    |Delta q_actual/(2delta_j)-D_a Q_h(c_j)|
+       <=M_(3,h)delta_j²/6+2eta_j/delta_j.             (304)
+
+At the exact all-field centre DQ_h=0. Combining(302)-(304) bounds each
+physical block by w_M^0 a_j^0 gbar_hj epsilon_j, where
+
+    epsilon_j<=C (L_hj/gbar_hj)
+                        [M_(3,hj)delta_j²/6+2eta_j/delta_j].      (305)
+
+The constant uses the actual compact q collar; no history-length factor
+is discarded. Actual averaged canonical moments also approximate the
+prepared field chord. Their coordinate decoder error is O(R_h eta_j),
+so the divided chord keeps O(R_h eta_j/delta_j), followed by the real
+inverse/operator norm if that readout is used. Mathematical labels are
+not substituted for these observable means or physical chord scales.
+
+Expand7ag's slow envelope to include gbar_h BOTH above and below,
+L_h M_(3,h)/gbar_h, L_h/gbar_h, M_(2,h), the chart/physical extension
+radius and actual readout constants. Keep epsilon=1/64 and the same
+n_j=ceil(k_hj² j^(3/4)) construction. Rational delta_j=1/j after the
+initial exceptions and eta_j=O(2^-j) give
+
+    epsilon_j=O(j^(1/64-2)+2^-j j^(1+1/64)),
+    sum_j a_j^0 gbar_hj epsilon_j<infinity,
+    ||Fhat_M/Gamma_M||_(block-dual)=O(M^(-63/64)).     (306)
+
+Finite inaccurate early field stencils stay in the numerator. Their
+individual locally normalized errors need not vanish; this is the
+stated GLOBAL block norm with the true cumulative gain. A genuine
+nonzero source on a set carrying a positive asymptotic FRACTION of A_M
+is not hidden by that normalization. Mere cofinality or positive
+individual weights do not suffice. An isolated frozen historical error
+is a different claim.
+
+The SAME base Gamma_M is used by7ag's full preparation certificate.
+For independent block lifts use K_ind,M²=sum_j n_j ell_hj²; its bound
+also covers arbitrary old/cross-bank pure-state normals. Therefore
+
+    K_ind,M ||D_Psi B_M^0||/Gamma_M=O(M^(-3/32)).      (307)
+
+Equations(306)-(307) are one common-gain endpoint/finite-code certificate.
+No derivative of a native word selector is assumed. They do not assert
+exact finite-N stationarity or close an independently free decoder,
+middle, birth-state, clock, observer, cut or stopping equation.
+
+### Why simultaneous tail secants cannot replace these coordinate edges
+
+If all young blocks move at once, the true divided price coefficient is
+Wbar times sum_j abar_j delta_j gbar_j. It keeps EVERY stencil spacing
+and the old product. At a critical positive two-slot report
+q(u)=q0+d u², the symmetric probes even have equal plus/minus prices,
+yet their common log Gram differs from the base by
+D_M comparable to sum_young delta_j². The ratio w_base/Wbar can grow
+like exp(D_M). With a retained nonzero old preparation variance this
+mean-value gain does not control the full old/cross-bank source, for
+any choice of the tail spacings in that model. This is a scoped
+positive-effect countercontrol, not a contradiction to the original
+GR family. The actual single-row tests(301)-(302) avoid its mechanism.
+
+**Parent consequence.** Full-field finite stencils now have literal
+native words, matched paid clocks, actual field chords and a linear
+whole-price cofield with the same gain as the preparation estimate.
+This removes the supplied finite native comparison-construction premise
+within the declared operational profile. Physical source/port admission,
+the original task's permitted counterfactual boundaries, common-source
+control law, all remaining independently admitted apparatus/initial/
+clock/cut/stopping rows and full selected-action binding retain their
+own application obligations. The reconstructed cofield is not itself
+one executed simultaneous common-Y motion or a physical C1 controller.
+Full physical joint stationarity, generic GR, positive_gr and raw216
+remain open. GR_closed=false.
+
+
 ## 8. Reproduction
 
 Run from this directory:
