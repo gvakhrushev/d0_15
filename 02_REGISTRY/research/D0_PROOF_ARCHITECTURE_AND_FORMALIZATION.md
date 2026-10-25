@@ -5761,3 +5761,22 @@ reuse evidence; the join to the Bianchi claim ID remains a locator candidate,
 and neither claim declares a reviewed assembly application. Claim status stays
 `LEAN_PROVED` / `CORE-FORMALIZED` at its own finite conditional scope. No C0
 membership or semantic acceptance is inferred.
+
+
+### Bianchi lexical source-candidate retrieval follow-up (25 October 2026)
+
+The lexical fallback now allows one matched heading term when the section text
+matches at least three quarters of the locator terms. Commits
+`8ba7119e6364bd9e4935fd081e52f5f2e04a3b31` and
+`8c6e961b4c62aef911ba1696618d3bbc0f9d71ef` add this retrieval rule and a
+focused regression for the unpaired Bianchi locator. The regression passes.
+
+On source snapshot `8c6e961b4c62aef911ba1696618d3bbc0f9d71ef`, the resolver
+surfaces Book 06 §06.32.1 as one `unreviewed_lexical_candidate`, matching all
+four locator terms. Book 05 has no candidate. The source row is recorded in
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/d0_graded_bianchi_source_candidate_2026-10-25.json`
+(Git blob `1c30937508e44b74171d0aabdaae58f0f4765f88`; artifact commit
+`d895310f2e4efce2fb890dea23bcd05732ad0d83`). The original
+`BOOK_05/06` locator remains unresolved and unpaired. This changes candidate
+retrieval only: it does not assign the Book 06 source, update the claim row,
+change status or owner, accept C0, or close a physical premise.
