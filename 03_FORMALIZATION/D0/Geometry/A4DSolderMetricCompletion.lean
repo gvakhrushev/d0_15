@@ -14,6 +14,11 @@ Directional centering does not preserve arbitrary sitewise skew fields.
 Readout-nullity below is unconditional for constant frame directions and
 conditional on a literal centered lift for variable directions. No odd-cycle
 kernel equality or removal of the even-cycle Nyquist residue is asserted.
+
+Every symmetric Role-matrix direction is attained at every site by one
+constant coframe field. The resulting nonlinear metric path has the exact
+quadratic remainder recorded below; this is finite algebra, not a physical
+metric selection or continuum field equation.
 -/
 
 namespace D0.Geometry
@@ -118,6 +123,48 @@ theorem solderMetric_flat_tangent (N : ℕ) (e : LocalCoframeField N)
         (centeredCoframeMatrix N e x * roleLorentzMetric * (centeredCoframeMatrix N e x).transpose) := by
   rw [solderMetric_smul_expand]
   simp [smul_add, smul_smul, pow_two, ht]
+
+/-- Every symmetric metric direction is the readout of one constant coframe
+field at every site. The witness is explicit: its components are `q/2`.
+This is a surjectivity statement for the finite linear readout only. -/
+theorem coframeMetricReadout_realizes_symmetric (N : ℕ)
+    (q : Matrix Role Role ℝ) (hq : q.transpose = q) :
+    ∃ e : LocalCoframeField N,
+      ∀ x : ArchiveRolePhaseGroup N, (coframeMetricReadout N e x).toMatrix = q := by
+  refine ⟨fun _ r a => q r a / 2, ?_⟩
+  intro x
+  rw [coframeMetricReadout_eq_centered_add_transpose]
+  ext r a
+  have hsym : q a r = q r a := by
+    have h := congrArg (fun M : Matrix Role Role ℝ => M a r) hq
+    simpa [Matrix.transpose_apply] using h.symm
+  simp [centeredCoframeMatrix, backwardAverage]
+  rw [hsym]
+  ring
+
+/-- Exact composition of the finite symmetric-direction witness with the
+nonlinear solder Gram path. Every symmetric `q` is its linear coefficient,
+and the only finite-parameter error is the displayed quadratic term. -/
+theorem solderMetric_realizes_symmetric_tangent (N : ℕ)
+    (q : Matrix Role Role ℝ) (hq : q.transpose = q) :
+    ∃ e : LocalCoframeField N,
+      (∀ x : ArchiveRolePhaseGroup N,
+        (coframeMetricReadout N e x).toMatrix = q) ∧
+      (∀ x : ArchiveRolePhaseGroup N, ∀ t : ℝ,
+        solderMetricMatrix N (t • e) x - roleLorentzMetric =
+          t • q + t^2 •
+            (centeredCoframeMatrix N e x * roleLorentzMetric *
+              (centeredCoframeMatrix N e x).transpose)) ∧
+      (∀ x : ArchiveRolePhaseGroup N, ∀ t : ℝ, t ≠ 0 →
+        t⁻¹ • (solderMetricMatrix N (t • e) x - roleLorentzMetric) =
+          q + t • (centeredCoframeMatrix N e x * roleLorentzMetric *
+            (centeredCoframeMatrix N e x).transpose)) := by
+  obtain ⟨e, he⟩ := coframeMetricReadout_realizes_symmetric N q hq
+  refine ⟨e, he, ?_, ?_⟩
+  · intro x t
+    rw [solderMetric_smul_expand, he x]
+  · intro x t ht
+    rw [solderMetric_flat_tangent N e t ht x, he x]
 
 theorem solderMetric_forwardGauge_flat_tangent (N : ℕ) (xi : LocalRoleVector N)
     (t : ℝ) (x : ArchiveRolePhaseGroup N) :
