@@ -1248,7 +1248,7 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-25_1fa15d55.json"
+            / "proof_architecture_cold_start_summary_2026-10-25_533fe587.json"
         )
         summary_bytes = summary_path.read_bytes()
         summary = json.loads(summary_bytes)
@@ -1258,7 +1258,7 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             summary["snapshot_commit"],
-            "1fa15d5584144813c8b2811ebeb48ba7fbccd23b",
+            "533fe58714e80d4d2026f80b3916c1dde57cc1b6",
         )
         self.assertFalse(summary["worktree_dirty"])
         self.assertEqual(summary["search_cases_found_all_sources"], 21)
@@ -2040,7 +2040,10 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
-        self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertEqual(
+            inventory["snapshot_commit"],
+            "533fe58714e80d4d2026f80b3916c1dde57cc1b6",
+        )
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
         self.assertEqual(inventory["public_import_root"], "D0.All")
         self.assertEqual(inventory["toolchain"], "leanprover/lean4:v4.30.0")
@@ -2137,7 +2140,7 @@ class ProofArchitectureTests(unittest.TestCase):
             declarations["D0.Spectrum.flavor_blindness_step"]["proof_dependencies"],
         )
         self.assertIn(
-            "D0.Spectrum.flavor_blindness_step",
+            "D0.Spectrum.flavor_blindness_step_k_of_commute",
             declarations["D0.Spectrum.flavor_blindness_step_k"]["proof_dependencies"],
         )
         flavor_step_k = declarations[
@@ -2205,6 +2208,7 @@ class ProofArchitectureTests(unittest.TestCase):
             if item["id"] == "archive-phase-shift-reuses-transitive-permutation-theorem"
         )
         queries = case["queries"]
+        self.assertIn("stage2_flavor_blindness_of_commute", queries[4])
         self.assertIn(
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
             case["required_refs"],

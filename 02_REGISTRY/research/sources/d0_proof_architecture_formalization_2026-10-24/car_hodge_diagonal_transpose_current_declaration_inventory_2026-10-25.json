@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "1fa15d5584144813c8b2811ebeb48ba7fbccd23b",
+  "snapshot_commit": "533fe58714e80d4d2026f80b3916c1dde57cc1b6",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "aef360e0b6f96eae699c8d9f96ed448289c817327711892f23ef999ec20761a6",
+  "lean_source_digest": "d66ddf0d2a669075aea355fbf1bef2807e29333f04984afcc9d83a6d38b14793",
   "collector_sha256": "3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -4857,21 +4857,21 @@
         "declaration": {
           "end": {
             "column": 48,
-            "line": 209
+            "line": 229
           },
           "start": {
             "column": 0,
-            "line": 193
+            "line": 213
           }
         },
         "selection": {
           "end": {
             "column": 29,
-            "line": 193
+            "line": 213
           },
           "start": {
             "column": 8,
-            "line": 193
+            "line": 213
           }
         }
       },

@@ -7039,3 +7039,55 @@ Lean views have zero stale entries, and formalization-debt findings remain
 five against baseline five. The three narrow builds pass: Spectrum **2,949**,
 Matter **2,981** and Geometry **1,280** jobs. This remains finite algebraic
 covariance; no physical selector, claim status or GR closure changed.
+
+### Iterated flavor blindness from commutation alone
+
+The exact shift-commutation premise now proves the one-step, arbitrary
+`k`-step and cross-generation equality of diagonal flavor blocks without an
+off-generation-zero premise. The existing `flavor_blindness_step`,
+`flavor_blindness_step_k` and `stage2_flavor_blindness` retain their former
+argument lists and delegate to the stronger statements. The separate
+`stage3_tensor_exactness` still requires off-generation-zero entries for its
+independent tensor-product reconstruction step; this result does not remove
+that hypothesis or claim a full tensor reconstruction from commutation alone.
+
+The 25-declaration ArchiveShift inventory was extracted through `D0.All` at
+clean snapshot `533fe58714e80d4d2026f80b3916c1dde57cc1b6`, Lean 4.30.0, with
+Lean-source digest
+`d66ddf0d2a669075aea355fbf1bef2807e29333f04984afcc9d83a6d38b14793`. Its
+SHA-256 is
+`1bf66c4227087fb06f668b180e2186196149e102684e72fd82969fddcd52fe40`; the
+Spectrum source SHA-256 is
+`9eae6a6503565c6302745710787cbaa68697b4ff5c7afdcecf9b25f32cae5fee`. The
+other refreshed nonvacuum, CAR/Hodge, partial-trace, SourcePort and flat-tensor
+inventories contain 15, 36, 9, 73 and 4 declarations and have SHA-256 values
+`f1be6d4f3ad11b4287956cae4b32071f5c207faa8b1d91a3d6e19e15cd2a6241`,
+`542520fe6be8a491a2b822f57026d12eb4a8d3d3976bcc8c1c35a7b87fde72c2`,
+`855ae51c4c092469f16f6b9a530df39c595d041a6205f1d4b7dc76a36abc2142`,
+`43011eba0c845f4c933b8bce3497c7e78deffc7c7949694149480f4f06ac17e7` and
+`668cabb994f00422856565d0b477f24ca0fb86ba1850918cbd05830f5b9cf927`.
+The inventory collector SHA-256 is
+`d10e1c5a6bd9ac9930968f6a5db22a94255d93374ddb4f759de6bd72f6c95386`.
+
+The cold-start replay on the same clean source snapshot found every required
+source in **21/21** cases, passed **22/22** benchmarks and resolved **127/127**
+required source records. Its fifth archive-shift query directly finds the
+iterated and cross-generation result in `GenerationTensorExactness.lean`. The
+compact summary
+`proof_architecture_cold_start_summary_2026-10-25_533fe587.json` has SHA-256
+`873ffa66376d96e1261a715bf97f4725df4b0705fea8fa7740074a6b4dca77cd`; the
+6,991,605-byte replay output has SHA-256
+`535481a84924ec2fea1b5b311d9fe845846ab5eeed5c6ea5b9366da172dd6c1e`. It
+binds `formal_support.csv` SHA-256
+`b538abd4bfbb919f948cbf619dbf2e24859223532e0443ece644c512d050568a`, runner
+SHA-256 `63f2b140a1d0c3127aa27a5cb47ee5059a186f1466e1840d038a17769edb8824`
+and search-engine SHA-256
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`.
+
+The Spectrum narrow build passed **2,949/2,949** jobs; the dependent Matter
+partial-trace build passed **2,981/2,981**. Proof-architecture tests pass
+**56/56**, declaration-inventory tests **16/16**, repository validation has
+zero warnings, generated Lean views have zero stale entries, and formalization
+debt remains five findings against baseline five. This strengthens only the
+finite algebraic theorem and its explicit application scope; it changes no
+physical selector, claim status or GR conclusion.

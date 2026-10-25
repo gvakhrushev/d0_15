@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "1fa15d5584144813c8b2811ebeb48ba7fbccd23b",
+  "snapshot_commit": "533fe58714e80d4d2026f80b3916c1dde57cc1b6",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "aef360e0b6f96eae699c8d9f96ed448289c817327711892f23ef999ec20761a6",
-  "collector_sha256": "814b2dd09cd69b392373e27857ec052efab92121285dfb85499441ebd1294bd8",
+  "lean_source_digest": "d66ddf0d2a669075aea355fbf1bef2807e29333f04984afcc9d83a6d38b14793",
+  "collector_sha256": "e5a971e9f025000ad7ed925ae78adb63498002633794ddbc656692f1ec86668c",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": false,
@@ -31,7 +31,10 @@
       "D0.Spectrum.shift_g_eq_finRotate_iterate",
       "D0.Spectrum.flavor_blindness_step_of_commute",
       "D0.Spectrum.flavor_blindness_step",
-      "D0.Spectrum.flavor_blindness_step_k"
+      "D0.Spectrum.flavor_blindness_step_k",
+      "D0.Spectrum.flavor_blindness_step_k_of_commute",
+      "D0.Spectrum.stage2_flavor_blindness_of_commute",
+      "D0.Spectrum.stage2_flavor_blindness"
     ]
   },
   "declarations": [
@@ -2588,7 +2591,7 @@
         {
           "binder_info": "Lean.BinderInfo.default",
           "is_proposition": true,
-          "name": "_h_off",
+          "name": "h_off",
           "type": "∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift (g1, n1) (g2, n2) = 0"
         },
         {
@@ -2621,8 +2624,8 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 56,
-            "line": 150
+            "column": 64,
+            "line": 152
           },
           "start": {
             "column": 0,
@@ -2791,22 +2794,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 16,
-            "line": 165
+            "column": 68,
+            "line": 176
           },
           "start": {
             "column": 0,
-            "line": 152
+            "line": 168
           }
         },
         "selection": {
           "end": {
             "column": 29,
-            "line": 152
+            "line": 168
           },
           "start": {
             "column": 6,
-            "line": 152
+            "line": 168
           }
         }
       },
@@ -2817,7 +2820,170 @@
       "name": "D0.Spectrum.flavor_blindness_step_k",
       "proof_dependencies": [
         "D0.Spectrum.cyclicShiftMatrix",
-        "D0.Spectrum.flavor_blindness_step",
+        "D0.Spectrum.flavor_blindness_step_k_of_commute",
+        "D0.Spectrum.kronecker_C_I",
+        "DecidableEq",
+        "Eq",
+        "Fin",
+        "Fin.fintype",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instMulOfFintypeOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "Ne",
+        "NeZero",
+        "OfNat.ofNat",
+        "Prod",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instDecidableEqFin",
+        "instFintypeProd",
+        "instHMul"
+      ],
+      "type_dependencies": [
+        "D0.Spectrum.cyclicShiftMatrix",
+        "D0.Spectrum.kronecker_C_I",
+        "D0.Spectrum.shift_g",
+        "DecidableEq",
+        "Eq",
+        "Fin",
+        "Fin.fintype",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instMulOfFintypeOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "Ne",
+        "NeZero",
+        "OfNat.ofNat",
+        "Prod",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instDecidableEqFin",
+        "instFintypeProd",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.1561267905._hygCtx._hyg.3",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.1561267905._hygCtx._hyg.6",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.1561267905._hygCtx._hyg.10",
+          "type": "NeZero n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Γ_lift",
+          "type": "Fin n × N → Fin n × N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h_comm",
+          "type": "Γ_lift * D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) =\n  D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) * Γ_lift"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "g",
+          "type": "Fin n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n1",
+          "type": "N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n2",
+          "type": "N"
+        }
+      ],
+      "conclusion_whnf": "Γ_lift (g, n1) (g, n2) = Γ_lift (D0.Spectrum.shift_g g k, n1) (D0.Spectrum.shift_g g k, n2)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 16,
+            "line": 166
+          },
+          "start": {
+            "column": 0,
+            "line": 154
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 154
+          },
+          "start": {
+            "column": 6,
+            "line": 154
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : Type} [inst : Fintype N] [inst_1 : DecidableEq N] {n : ℕ} [inst_2 : NeZero n]\n  (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ),\n  Γ_lift * D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) =\n      D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) * Γ_lift →\n    ∀ (g : Fin n) (k : ℕ) (n1 n2 : N),\n      Γ_lift (g, n1) (g, n2) = Γ_lift (D0.Spectrum.shift_g g k, n1) (D0.Spectrum.shift_g g k, n2)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Spectrum.GenerationTensorExactness",
+      "name": "D0.Spectrum.flavor_blindness_step_k_of_commute",
+      "proof_dependencies": [
+        "D0.Spectrum.cyclicShiftMatrix",
+        "D0.Spectrum.flavor_blindness_step_of_commute",
         "D0.Spectrum.kronecker_C_I",
         "D0.Spectrum.shift_g",
         "D0.Spectrum.shift_g_step",
@@ -2837,7 +3003,6 @@
         "Nat",
         "Nat.instMulZeroClass",
         "Nat.recAux",
-        "Ne",
         "NeZero",
         "OfNat.ofNat",
         "Prod",
@@ -2845,8 +3010,6 @@
         "Real",
         "Real.instAddCommMonoid",
         "Real.instMul",
-        "Real.instZero",
-        "Zero.toOfNat0",
         "congrArg",
         "id",
         "instAddNat",
@@ -2860,6 +3023,347 @@
         "D0.Spectrum.cyclicShiftMatrix",
         "D0.Spectrum.kronecker_C_I",
         "D0.Spectrum.shift_g",
+        "DecidableEq",
+        "Eq",
+        "Fin",
+        "Fin.fintype",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instMulOfFintypeOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "Prod",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "instDecidableEqFin",
+        "instFintypeProd",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.1918172307._hygCtx._hyg.3",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.1918172307._hygCtx._hyg.6",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.1918172307._hygCtx._hyg.10",
+          "type": "NeZero n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Γ_lift",
+          "type": "Fin n × N → Fin n × N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h_comm",
+          "type": "Γ_lift * D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) =\n  D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) * Γ_lift"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "g1",
+          "type": "Fin n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "g2",
+          "type": "Fin n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n1",
+          "type": "N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n2",
+          "type": "N"
+        }
+      ],
+      "conclusion_whnf": "Γ_lift (g1, n1) (g1, n2) = Γ_lift (g2, n1) (g2, n2)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 12,
+            "line": 190
+          },
+          "start": {
+            "column": 0,
+            "line": 178
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 42,
+            "line": 178
+          },
+          "start": {
+            "column": 8,
+            "line": 178
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : Type} [inst : Fintype N] [inst_1 : DecidableEq N] {n : ℕ} [NeZero n] (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ),\n  Γ_lift * D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) =\n      D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) * Γ_lift →\n    ∀ (g1 g2 : Fin n) (n1 n2 : N), Γ_lift (g1, n1) (g1, n2) = Γ_lift (g2, n1) (g2, n2)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Spectrum.GenerationTensorExactness",
+      "name": "D0.Spectrum.stage2_flavor_blindness_of_commute",
+      "proof_dependencies": [
+        "D0.Spectrum.cyclicShiftMatrix",
+        "D0.Spectrum.flavor_blindness_step_k_of_commute",
+        "D0.Spectrum.kronecker_C_I",
+        "D0.Spectrum.shift_g",
+        "D0.Spectrum.stage2_flavor_blindness_of_commute._proof_1_1",
+        "Decidable.byContradiction",
+        "DecidableEq",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Fin",
+        "Fin.ext",
+        "Fin.fintype",
+        "Fin.isLt",
+        "Fin.val",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMod.hMod",
+        "HMul.hMul",
+        "HSub.hSub",
+        "Matrix",
+        "Matrix.instMulOfFintypeOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.add_mod_right",
+        "Nat.instMod",
+        "Nat.instMulZeroClass",
+        "Nat.mod_eq_of_lt",
+        "NeZero",
+        "Not",
+        "Prod",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "congrArg",
+        "id",
+        "instAddNat",
+        "instDecidableEqFin",
+        "instDecidableEqNat",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMod",
+        "instHMul",
+        "instHSub",
+        "instSubNat"
+      ],
+      "type_dependencies": [
+        "D0.Spectrum.cyclicShiftMatrix",
+        "D0.Spectrum.kronecker_C_I",
+        "DecidableEq",
+        "Eq",
+        "Fin",
+        "Fin.fintype",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instMulOfFintypeOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "Prod",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "instDecidableEqFin",
+        "instFintypeProd",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.49414476._hygCtx._hyg.3",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.49414476._hygCtx._hyg.6",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.49414476._hygCtx._hyg.10",
+          "type": "NeZero n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Γ_lift",
+          "type": "Fin n × N → Fin n × N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h_off",
+          "type": "∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift (g1, n1) (g2, n2) = 0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h_comm",
+          "type": "Γ_lift * D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) =\n  D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) * Γ_lift"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "g1",
+          "type": "Fin n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "g2",
+          "type": "Fin n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n1",
+          "type": "N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n2",
+          "type": "N"
+        }
+      ],
+      "conclusion_whnf": "Γ_lift (g1, n1) (g1, n2) = Γ_lift (g2, n1) (g2, n2)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 70,
+            "line": 200
+          },
+          "start": {
+            "column": 0,
+            "line": 192
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 192
+          },
+          "start": {
+            "column": 8,
+            "line": 192
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : Type} [inst : Fintype N] [inst_1 : DecidableEq N] {n : ℕ} [NeZero n] (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ),\n  (∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift (g1, n1) (g2, n2) = 0) →\n    Γ_lift * D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) =\n        D0.Spectrum.kronecker_C_I (D0.Spectrum.cyclicShiftMatrix n) * Γ_lift →\n      ∀ (g1 g2 : Fin n) (n1 n2 : N), Γ_lift (g1, n1) (g1, n2) = Γ_lift (g2, n1) (g2, n2)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Spectrum.GenerationTensorExactness",
+      "name": "D0.Spectrum.stage2_flavor_blindness",
+      "proof_dependencies": [
+        "D0.Spectrum.cyclicShiftMatrix",
+        "D0.Spectrum.kronecker_C_I",
+        "D0.Spectrum.stage2_flavor_blindness_of_commute",
+        "DecidableEq",
+        "Eq",
+        "Fin",
+        "Fin.fintype",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instMulOfFintypeOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "Ne",
+        "NeZero",
+        "OfNat.ofNat",
+        "Prod",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instDecidableEqFin",
+        "instFintypeProd",
+        "instHMul"
+      ],
+      "type_dependencies": [
+        "D0.Spectrum.cyclicShiftMatrix",
+        "D0.Spectrum.kronecker_C_I",
         "DecidableEq",
         "Eq",
         "Fin",
