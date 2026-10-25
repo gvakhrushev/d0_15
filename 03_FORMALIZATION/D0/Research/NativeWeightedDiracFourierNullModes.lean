@@ -364,6 +364,47 @@ theorem archiveLorentzian_unit_null_fibre_classification (N : ℕ) :
   · omega
   · simp [archiveFibers]
 
+/-- On every archive period, the full site × Fock Lorentzian CAR operator has
+a nonzero exact cochain in its image whose next image is zero. The witness is
+supported in the persistent unit-frequency Fourier subspace. -/
+theorem archiveLorentzian_unit_null_mode_exact_cochain_witness (N : ℕ) :
+    ∃ v : ArchiveFockState → ℂ,
+      archiveLorentzianCARDirac N (archiveFourierFockMode N
+        (archiveLorentzianDiagonalMomentum N 1) v) ≠ 0 ∧
+      archiveLorentzianCARDirac N
+        (archiveLorentzianCARDirac N (archiveFourierFockMode N
+          (archiveLorentzianDiagonalMomentum N 1) v)) = 0 := by
+  let k := archiveLorentzianDiagonalMomentum N 1
+  let T := roleWeightedArchiveFourierFockActionLinear N roleLorentzSign k
+  have hdim : Module.finrank ℂ (LinearMap.ker T) = 8 := by
+    simpa [T, k] using (archiveLorentzian_unit_null_fibre_classification N).2.1
+  have hT : T ≠ 0 := by
+    intro hzero
+    have h := hdim
+    rw [hzero, LinearMap.ker_zero, finrank_top, archiveFockProfile_complex_finrank] at h
+    norm_num at h
+  have hex : ∃ v : ArchiveFockState → ℂ, T v ≠ 0 := by
+    by_contra hnone
+    have hvanish : ∀ v : ArchiveFockState → ℂ, T v = 0 := by
+      intro v
+      by_contra hv
+      exact hnone ⟨v, hv⟩
+    exact hT (LinearMap.ext hvanish)
+  obtain ⟨v, hv⟩ := hex
+  refine ⟨v, ?_, ?_⟩
+  · rw [archiveLorentzianCARDirac_fourier_mode]
+    intro hmode
+    have hprofile : roleWeightedArchiveFourierFockAction N roleLorentzSign k v = 0 := by
+      have hzeroMode : archiveFourierFockMode N k (0 : ArchiveFockState → ℂ) = 0 := by
+        funext p
+        simp [archiveFourierFockMode]
+      apply archiveFourierFockMode_injective N k
+      exact hmode.trans hzeroMode.symm
+    exact hv (by simpa [T, roleWeightedArchiveFourierFockActionLinear_apply] using hprofile)
+  · rw [archiveLorentzianCARDirac_square_fourier_mode]
+    funext p
+    simp [archiveLorentzian_diagonal_momentum_is_null]
+
 end
 
 end D0.Research.NativeWeightedDiracFourierNullModes

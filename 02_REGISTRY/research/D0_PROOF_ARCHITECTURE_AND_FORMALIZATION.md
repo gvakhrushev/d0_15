@@ -4926,3 +4926,30 @@ nonzero-frequency lemmas have only the standard `Classical.choice`,
 `propext`, and `Quot.sound` footprint; the composed fibre classification also
 retains the existing finite CAR `native_decide` leaves. The public `D0.All`
 import list is current, while its full build remains reserved for Ready.
+
+### Lift of the persistent null fibre to a full exact cochain (25 October 2026)
+
+The adapter now composes the eight-dimensional unit-frequency fibre result
+with the actual site × Fock Fourier intertwining theorem. Since the fibre map
+has an eight-dimensional kernel inside the sixteen-dimensional profile
+space, it is nonzero. `archiveLorentzian_unit_null_mode_exact_cochain_witness`
+therefore proves, for every archive period, existence of a profile `v` whose
+full complex cochain `D v` is nonzero and whose next image is exactly zero:
+`D(D v)=0`. The profile is carried by the fixed unit-frequency mode
+`(1,1,0,0)` in `Role → ZMod (N+2)`; this is an existential exact witness on
+the full operator, not only a fibre-level kernel statement.
+
+This consumes the preceding fibre classification plus
+`archiveLorentzianCARDirac_fourier_mode` and
+`archiveLorentzianCARDirac_square_fourier_mode` on the actual complex
+site × Fock carrier. It strengthens the scoped §5 null-cochain application
+from tested even grids to every declared period. It does not give an explicit
+closed-form profile, a real-valued representative on each grid, a gauge
+quotient, or the total cochain kernel dimension. It supplies no physical
+selection or continuum conclusion.
+
+The narrow build of
+`D0.Research.NativeWeightedDiracFourierNullModes` passed again (3,410 Lake
+jobs). Repository validation, generated Lean views, formalization-debt
+non-growth, and the EOL-aware diff check are being replayed on the final
+inventory snapshot below; no claim or `formal_support` entry changed.
