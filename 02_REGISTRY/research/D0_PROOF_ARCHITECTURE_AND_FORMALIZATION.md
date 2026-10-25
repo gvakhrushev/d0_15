@@ -6519,3 +6519,29 @@ inventory SHA-256
 The proof-architecture suite passes **49/49**; the added regression checks
 actual elaborated signatures and dependency edges. No theorem status or
 scientific acceptance boundary changed.
+
+### Clean cold-start replay after the shared tensor API integration (25 October 2026)
+
+The full bilingual runner completed on clean source commit
+`0668f20acf507fb58bb0d8cff586cd52136fd7d8` (`worktree_dirty=false`). All
+**20/20** cold-start cases found every required source, and all **21/21**
+benchmark controls passed, including the exact-source versus unrelated-prose
+impact regression. The CAR/Hodge case found **28/28** required references.
+Its v3 claim-source query returned the candidate view as direct content at
+rank 1; the existing generic CAR/Hodge algebra query returned
+`D0/Algebra/FiniteMatrixTensorProduct.lean` as direct content at rank 1.
+
+The compact replay record is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_0668f20a.json`,
+SHA-256
+`a6cc6abf3fafd9f5ccb837ca57d75a6aeac435fc0ca5fd49606fb067703a94fe`.
+It pins runner SHA-256
+`762a3664ced0012ea56810836e7cc93c556d32778f4b96e2f2ae5018fadcfef0`,
+search-engine SHA-256
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`, and
+the updated formal-support digest
+`c1bb2183581ca009694908c5b77e2632f9c4122eee2eaa1ba660ffcab80e7296`.
+
+This validates retrieval and compiled reuse metadata on the current corpus.
+It does not accept the four OPEN CAR claims, change C0, or promote any
+physical interpretation.
