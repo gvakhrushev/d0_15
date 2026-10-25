@@ -6,10 +6,7 @@ import Mathlib.Tactic
 # Finite moment identities for the native weighted-Dirac source
 
 This module formalizes the arbitrary finite-degree binomial identities used
-in §3 of `A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md`. The contrast theorem below
-applies the capsule's generic finite-moment annihilator to the source's exact
-weights and inverse-scale powers. It does not construct the curved fibers or
-prove their physical source/refinement hypotheses.
+in §3 of `A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md`. Source pin: commit `db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`, path `02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md` §3, blob `2de670c0e2f9a53104be8105a3554cdd9aaa85e7`. The contrast theorem below applies the capsule's generic finite-moment annihilator to the source's exact weights and inverse-scale powers. It does not construct the curved fibers or prove their physical source/refinement hypotheses.
 -/
 
 namespace D0.Research.NativeWeightedDiracMomentIdentities

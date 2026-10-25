@@ -3978,14 +3978,14 @@ definitions; 18 source-ranged and 11 generated auxiliaries), all with
 elaborated types and collected proof details. Axiom closures contain only
 `Classical.choice`, `Quot.sound`, and `propext`; no `sorryAx` occurs. Inventory
 SHA-256 is
-`dbd60a7eee440057339e5f96e5a33f0edfb3d45293b71ce9f6d74d1498afa367`, Lean
+`8b22aaf3a2b6483f1584684417f2b17e90f899951c44c00485debc9089904e33`, Lean
 source digest
-`df7a98243fea6a821b30b041df127f5efb21f64b60538f45f5b12124504ce607`, and
+`e1e6aa4c7ca3e2c395a1864e7eea72e77b6480cb9dc1135dec297cd4f04d9478`, and
 collector SHA-256
 `97eb93d8f8d3ef715c4932cf33fc79d9deddb95c67ed565ab6e6d4f5841cacad`.
 The Lean module SHA-256 is
-`944e9f9f97057ac5c835dff787abda7114223e4f65151f1b4bcaa98d040bf29b`.
-The inventory records `snapshot_commit=c11b5cc00276c391ae0951153249e8e70182991b`
+`eeb9cec30eaea1192d41f42be32a0eb4f720bfaeb8b9fbec3e8bf514a388b98f`.
+The inventory records `snapshot_commit=6ac2da8113003c8141cfba10dbb14c0499a205d7`
 and `worktree_dirty=true`; that provenance describes generation before this
 checkpoint commit. This is a formalized generic identity/application, not
 independent C0 acceptance or physical GR closure.
@@ -3996,4 +3996,7 @@ warnings), work/protocol checks, gravity assembly check/render, generated
 Lean-view check, ClaimMap coverage, formalization-debt non-growth (5 findings,
 all baseline), and the EOL-aware diff check. The declaration inventory built
 the public import, but this checkpoint is not the final Ready `D0.All` replay.
-No independent review of the new mathematical application is claimed here.
+The cold-start query `finite weighted moment identities binomial scale
+contrast` returns this Lean module as the leading direct-content candidate and
+now carries the exact source commit/blob/§3 pin in its result card. No
+independent review of the new mathematical application is claimed here.
