@@ -3072,6 +3072,67 @@ assembly contract
 presupposition edges
 `7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
 
+### Real Hodge/CAR operator self-adjointness through the Hermitian API (25 October 2026)
+
+The real nested counting pairing on the site × Fock carrier is now identified
+with `finiteHermitianPairing`. This bridge consumes the existing
+`hodgeCarDirac_self_adjoint` result to prove the stronger typed operator
+equality
+`finiteHermitianAdjoint (hodgeCarDiracₗ N) = hodgeCarDiracₗ N`. Composing it
+with the previously proved real unit-profile bridge shows that the supplied
+weighted adjoint at `w=1` is the existing Hodge/CAR operator itself. The
+arbitrary nonzero-profile weighted API and its conditions are unchanged.
+
+Three compiled inventories record the pairing adapter, typed operator
+self-adjointness, and unit-profile specialization:
+
+- `sources/d0_proof_architecture_formalization_2026-10-24/real_counting_pairing_hermitian_adapter_2026-10-25.json` (SHA-256 `fb8c094c2f28f2b654e0f7ad695b8d3008b933329c4aad0e9209b788ce8f68f3`, collector `8df7c417ae85695a479c9aa41e9434bbf39bc9392e75b67b1bdae383b048b274`);
+- `sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_hermitian_adjoint_self_2026-10-25.json` (SHA-256 `675440bb95def09816429ec70fc47b1e4bdbc36b54634767a642273447280d7d`, collector `1f5aec36799d23bb3be8c0ddd6f93f9047b7f19241d640c43744b459ffe9e4b9`);
+- `sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_unit_profile_adjoint_self_2026-10-25.json` (SHA-256 `c0f473e10b6bf5fdb36a3ceddf4d947d5ccf68d4a5af689f29dea0feec47d30d`, collector `bfd39f925bf01281dfbe752cf72ff83a2a7cda6709633ea3e80fdfbe103f4482`).
+
+All three use import root `D0.Geometry.ArchiveWeightedHodgeDirac`, snapshot
+`0c6bd55d33dfa654aa2f12931c32bb1a1cb2802c`, `worktree_dirty=true`, Lean 4.30.0,
+and Lean-source digest
+`ebed062fe0aa1f43bf76636fb42a0fc0c5cc03bf8ffb01474b4dbba319655209`. Their
+trust footprint is `Classical.choice`, `Quot.sound`, and `propext`. The narrow
+consumer build passes (2,989 jobs). This identifies the algebraic unit-profile
+specialization only; it does not derive a geometric Hodge profile or select a
+physical metric/source.
+
+### Cold-start replay after the real Hodge/CAR adjoint application (25 October 2026)
+
+The `real-unit-profile-weighted-hermitian-bridge` case now includes exact-name
+queries for the real counting-pairing adapter, typed finite-Hermitian operator
+self-adjointness, and its unit-profile weighted consequence. All 14/14
+required sources were found as direct content. The full suite found all sources
+in 18/18 cases; the 19/19 benchmark passed, including the exact-source-versus-
+unrelated-prose impact control. Semantic scope review remains manual.
+
+Replay used candidate limit 18 at snapshot
+`0c6bd55d33dfa654aa2f12931c32bb1a1cb2802c` with `worktree_dirty=true`. Runner
+SHA-256 was
+`b833bd3d4e77c87f2fc50e7c15ca3d748e5a2b2d6d13b9e122b38164aa8ef3df`; the
+primary artifact at replay time had SHA-256
+`67ba7ad29aea83c25f4eb19221732ef6f6361dd068911c45695552dddc1fd416`. The
+seven authority digests were: `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`aa783fa732b9a5a6e5fa351e064cb2013c394848d6e1e43f273efbeb5c3289c2`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+
+This replay confirms rediscovery of the real algebraic unit-profile adapter;
+it does not derive a geometric Hodge profile, select physical source/action,
+accept semantic C0 coverage, or close GR.
+
 ### Complex twisted-CAR Hodge adapter and square (25 October 2026)
 
 The existing complex `dTwisted` on the actual site × Fock carrier now has a

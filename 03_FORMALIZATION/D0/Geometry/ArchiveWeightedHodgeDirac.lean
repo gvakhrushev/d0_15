@@ -1,6 +1,7 @@
 import Mathlib.Data.Real.Basic
 import D0.Core.FiniteTypes
 import D0.Core.DyadABCD
+import D0.Algebra.FiniteHermitianAdjoint
 import D0.Algebra.FiniteWeightedAdjoint
 import D0.Geometry.ArchiveCubicalCochainCarrier
 import D0.Geometry.ArchiveCubicalCoboundary
@@ -88,6 +89,38 @@ theorem hodgeCarDirac_unit_profile_adjoint_eq_finiteHermitianAdjoint
   simpa [hodgeCarDiracDiagonalAdjoint] using
     (D0.Algebra.finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint
       (A := hodgeCarDiracₗ N))
+
+/-- The existing nested counting pairing is the real finite Hermitian pairing
+on the actual site × Fock coordinate carrier. -/
+theorem cochainPairing_eq_finiteHermitianPairing (N : ℕ)
+    (ψ φ : ArchiveCochain N) :
+    cochainPairing N ψ φ = D0.Algebra.finiteHermitianPairing ψ φ := by
+  classical
+  unfold cochainPairing D0.Algebra.finiteHermitianPairing
+  rw [Fintype.sum_prod_type]
+  simp [star_trivial]
+
+/-- The registered real Hodge/CAR operator is self-adjoint as a typed finite
+linear map for the generic Hermitian API. The proof reuses the existing
+counting-pairing theorem and its exact finite-carrier bridge. -/
+theorem hodgeCarDirac_finiteHermitianAdjoint_eq_self (N : ℕ) :
+    D0.Algebra.finiteHermitianAdjoint (hodgeCarDiracₗ N) =
+      hodgeCarDiracₗ N := by
+  apply D0.Algebra.finiteHermitianAdjoint_unique
+  intro ψ φ
+  change D0.Algebra.finiteHermitianPairing (hodgeCarDirac N ψ) φ =
+    D0.Algebra.finiteHermitianPairing ψ (hodgeCarDirac N φ)
+  rw [← cochainPairing_eq_finiteHermitianPairing N (hodgeCarDirac N ψ) φ,
+    ← cochainPairing_eq_finiteHermitianPairing N ψ (hodgeCarDirac N φ)]
+  exact hodgeCarDirac_self_adjoint N ψ φ
+
+/-- At the real unit profile, the supplied weighted adjoint of the existing
+Hodge/CAR operator is the operator itself, via the standard Hermitian API. -/
+theorem hodgeCarDirac_unit_profile_adjoint_eq_self (N : ℕ) :
+    hodgeCarDiracDiagonalAdjoint N (fun _ => (1 : ℝ)) =
+      hodgeCarDiracₗ N := by
+  rw [hodgeCarDirac_unit_profile_adjoint_eq_finiteHermitianAdjoint,
+    hodgeCarDirac_finiteHermitianAdjoint_eq_self]
 
 /-- The weighted adjoint of the squared Hodge/CAR operator is the square of
 the supplied-profile adjoint. This is a concrete application of the generic
