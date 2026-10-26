@@ -1656,14 +1656,14 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in summary["cases"]
         ))
         self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 156
+            sum(row["required_source_count"] for row in summary["cases"]), 157
         )
         labelled = next(
             row for row in summary["cases"]
             if row["id"] == "labelled-native-raising-inverse"
         )
-        self.assertEqual(labelled["query_count"], 16)
-        self.assertEqual(labelled["required_source_count"], 11)
+        self.assertEqual(labelled["query_count"], 17)
+        self.assertEqual(labelled["required_source_count"], 12)
         proper = next(
             row for row in summary["cases"]
             if row["id"] == "proper-lorentz-same-orientation-orbit"
