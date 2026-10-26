@@ -39,7 +39,7 @@ CASES: list[dict[str, Any]] = [
             "principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_hasFDerivAt hasFDerivAt_pi",
             "roleLorentzTangentEndpointFDeriv_apply julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26",
             "roleLorentzTangentParameters_finrank roleLorentzTangent_finrank four Julia links 24 coordinates",
-            "roleLorentzTangentParametersEquivCoordinates roleLorentzTangentEndpointFDerivInCoordinates_apply explicit RolePair coordinates Julia endpoint derivative",
+            "principalFrameJuliaEndpointChartReadoutAlongLorentzTangentInCoordinates_hasFDerivAt roleLorentzTangentParametersEquivCoordinates roleLorentzTangentEndpointFDerivInCoordinates explicit 24 RolePair coordinates",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -52,7 +52,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_dimension_reuse_declarations_2026-10-26.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_coordinates_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_coordinate_chart_declarations_2026-10-26.json",
         ],
         "required_sources": [
             {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -68,7 +68,7 @@ CASES: list[dict[str, Any]] = [
              "sections": ["5.1"], "scope_query_indexes": [6],
              "scope_query_sections": {"6": ["5.1"]}},
         ],
-        "scope_review": ("Owner all-jet null-leg inverse and the concrete consumer are distinct. The compiled pathwise derivative composes its Eq. (27)/(28) endpoint readout with proper-Lorentz link paths on the finite CAR carrier. Its joint-path specialization allows coframe, column data and normalized covector to vary pointwise; exact recovery removes the need to assume differentiability of those paths. The tangent corollary integrates each rolewise Lorentz tangent by an exponential path, proves det = 1 along that path, and gives the endpoint derivative at t = 0. The Fréchet specialization proves the full derivative on the product of the four role-indexed Lorentz tangent subspaces, with its action exposed role by role. It reuses the canonical six-dimensional tangent coordinates from A4DSolderMetricCompletion and proves that the four-factor parameter has real dimension 24. A concrete linear equivalence identifies that parameter with Role → RolePair → ℝ, and the coordinate-form Fréchet derivative states the reconstructed generator's transpose action at each role. This does not construct a six-coordinate local chart for the whole Lorentz group, connect every determinant-one link to the identity, establish physical price selection, or close GR."),
+        "scope_review": ("Owner all-jet null-leg inverse and the concrete consumer are distinct. The compiled pathwise derivative composes its Eq. (27)/(28) endpoint readout with proper-Lorentz link paths on the finite CAR carrier. Its joint-path specialization allows coframe, column data and normalized covector to vary pointwise; exact recovery removes the need to assume differentiability of those paths. The tangent corollary integrates each rolewise Lorentz tangent by an exponential path, proves det = 1 along that path, and gives the endpoint derivative at t = 0. The Fréchet specialization proves the full derivative on the product of the four role-indexed Lorentz tangent subspaces, with its action exposed role by role. It reuses the canonical six-dimensional tangent coordinates from A4DSolderMetricCompletion and proves that the four-factor parameter has real dimension 24. A concrete linear equivalence identifies that parameter with Role → RolePair → ℝ, and the coordinate-form Fréchet derivative states the reconstructed generator's transpose action at each role. The actual chart-selected endpoint readout now also has a Fréchet derivative after coordinate substitution, by composition with that linear equivalence. This does not construct a six-coordinate local chart for the whole Lorentz group, connect every determinant-one link to the identity, establish physical price selection, or close GR."),
     },
     {
         "id": "positive-nonvacuum-recovery",
@@ -114,7 +114,7 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
             "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26_fintype_only_core.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinates.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinate_chart.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_fe15cd8c.json",
         ],
         "required_sources": [
@@ -147,14 +147,14 @@ CASES: list[dict[str, Any]] = [
         "queries": [
             "finiteGram_add_smul_expand finite Gram expansion arbitrary base frame quadratic remainder",
             "finiteGram_add_smul_difference_quotient exact normalized Gram difference full quadratic remainder",
-            "finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinates.json finiteGram_add_smul_difference_quotient",
+            "finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinate_chart.json finiteGram_add_smul_difference_quotient",
             "finite Gram expansion Theta plus t C two sided linear variation exact quadratic term",
             "A4D Solder Metric Completion finiteGram_add_smul_difference_quotient solderMetric_flat_tangent j2DetectorMetricPath_symmetric_difference_quotient",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
             "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinates.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinate_chart.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
