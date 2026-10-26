@@ -20,7 +20,8 @@ and chart-selected endpoint readout.
 
 The module proves both pathwise directional recovery and a Fréchet derivative
 on the product of the four Lorentz tangent subspaces. It reuses the shared
-six-dimensional tangent coordinates, so this product has real dimension 24.
+six-dimensional tangent coordinates, so this product has real dimension 24
+and a concrete linear coordinate equivalence with `Role → RolePair → ℝ`.
 Every declared Lorentz tangent has an exponential path through the identity,
 with properness and its endpoint derivative proved in Lean. This does not
 construct a full six-coordinate chart, identify every Lorentz link with these
@@ -333,6 +334,22 @@ theorem roleLorentzTangentParameters_finrank :
     roleLorentzTangent_finrank, Finset.sum_const, Finset.card_univ, card_role]
   norm_num
 
+/-- Four rolewise endpoint-link tangents are parameterized by four copies of
+the canonical six coordinates owned by the finite solder metric module. -/
+def roleLorentzTangentParametersEquivCoordinates :
+    RoleLorentzTangentParameters ≃ₗ[ℝ] (Role → RolePair → ℝ) :=
+  LinearEquiv.piCongrRight fun _ => rolePairsEquivLorentzTangent.symm
+
+@[simp] theorem roleLorentzTangentParametersEquivCoordinates_apply
+    (p : RoleLorentzTangentParameters) (r : Role) :
+    roleLorentzTangentParametersEquivCoordinates p r =
+      rolePairsEquivLorentzTangent.symm (p r) := rfl
+
+@[simp] theorem roleLorentzTangentParametersEquivCoordinates_symm_apply
+    (q : Role → RolePair → ℝ) (r : Role) :
+    roleLorentzTangentParametersEquivCoordinates.symm q r =
+      rolePairsEquivLorentzTangent (q r) := rfl
+
 private def roleLorentzTangentCoordinateLinearMap (r : Role) :
     RoleLorentzTangentParameters →ₗ[ℝ] Matrix Role Role ℝ :=
   roleLorentzTangentSubmodule.subtype.comp (LinearMap.proj r)
@@ -377,6 +394,23 @@ theorem roleLorentzTangentEndpointFDeriv_apply
     roleLorentzTangentCoordinateCLM, roleLorentzTangentCoordinateLinearMap,
     Matrix.toLin'_apply'] using
       (Matrix.vecMul_transpose ((p r : Matrix Role Role ℝ).transpose) x)
+
+/-- The same endpoint differential expressed in the canonical 24 real
+coordinates, with the rolewise inverse coordinate map applied before the
+matrix-exponential link derivative. -/
+noncomputable def roleLorentzTangentEndpointFDerivInCoordinates (x : RoleSpace) :
+    (Role → RolePair → ℝ) →L[ℝ] (Role → RoleSpace) :=
+  (roleLorentzTangentEndpointFDeriv x).comp
+    (roleLorentzTangentParametersEquivCoordinates.symm.toLinearMap.toContinuousLinearMap)
+
+/-- In six-coordinate form, each role's endpoint variation is the transpose
+action of the Lorentz generator reconstructed by the shared coordinate API. -/
+theorem roleLorentzTangentEndpointFDerivInCoordinates_apply
+    (x : RoleSpace) (q : Role → RolePair → ℝ) (r : Role) :
+    roleLorentzTangentEndpointFDerivInCoordinates x q r =
+      ((rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ).transpose.mulVec x) := by
+  simp [roleLorentzTangentEndpointFDerivInCoordinates,
+    roleLorentzTangentEndpointFDeriv_apply]
 
 /-- The actual chart-selected Julia endpoint readout, parameterized by an
 arbitrary tuple of Lorentz tangent generators through their proper exponential
