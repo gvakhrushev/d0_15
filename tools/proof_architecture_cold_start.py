@@ -40,8 +40,8 @@ CASES: list[dict[str, Any]] = [
             "roleLorentzTangentEndpointFDeriv_apply julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26",
             "roleLorentzTangentParameters_finrank roleLorentzTangent_finrank four Julia links 24 coordinates",
             "principalFrameJuliaJointCoframeEndpointReadoutAlongLorentzTangent_hasDerivAt principalFrameJuliaEndpointChartReadoutAlongLorentzTangentInCoordinates_hasFDerivAt roleLorentzTangentParametersEquivCoordinates same Julia query family 16 coframe 24 Lorentz endpoint RolePair coordinates",
-            "principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt local coframe neighborhood full 40-dimensional Frechet derivative 16 coframe 24 role Lorentz coordinates",
-            "principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt arbitrary proper Lorentz base links right-trivialized 24 RolePair tangent coordinates coframe Julia endpoint readout",
+            "principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet",
+            "principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt julia_joint_coframe_base_link_frechet_declarations_2026-10-26",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",

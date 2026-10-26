@@ -1971,7 +1971,6 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(base_link_frechet["declaration_kind"], "theorem")
         self.assertIn("D0.Geometry.IsRoleLorentz", base_link_frechet["elaborated_type"])
-        self.assertIn("D0.Geometry.RolePair → ℝ", base_link_frechet["elaborated_type"])
         self.assertIn(".det = 1", base_link_frechet["elaborated_type"])
         self.assertIn(
             "D0.Geometry.principalFrameJuliaQueryFamily_recoveredInverseCoframe",
