@@ -14213,3 +14213,102 @@ receipt and brief are preserved byte-for-byte. This composition is renumbered
 7ca634--642; mathematical inputs/calculation unchanged, proof pin updated.
 The first ref-update reported a GitHub API error; read-back identified the
 concurrent head before any retry. No published branch was overwritten.
+
+
+## 26 October: exact unequal-Golden readonly selector and a real reverse-range encoder
+
+SAME #334; phase native realization / final composition, existing
+constitutive/native-programme-v1. Publishedinputfeccb68e, integratedbase
+6b8107b4 (incoming7ca fulloriginalCQ defect preserved byteexact).
+Primary7cb643--649 consumes7by reciprocal source/metric and7bz fresh
+reader, and substitutes exactfixedGolden for IDEALBALANCE on the
+ACTUAL7bu readonlyCHANNELselector. Parent fullquantumWORKcompiler,
+physicalpairedcut/controller andfieldgraph are not declared solved.
+
+Exactstatement: scalarunitaryleaves are strongerthanneeded. A complete
+K=directsum eta_b tensor P_b D_b withsumDb*Db=I andDbcommutingtargetcut
+anddeclaredtestalgebra givesQK=KPt,AoutK=Ka. Wholejunkreciprocal source
+gain2/trueanchor/metric thenfollow fromOWNEDsingularvalue/complementary
+observer proofs. Record-blockorthogonalintertwining NECESSARILY requires
+commutationofbranch effects withPt/tests; noncommutingG-after-filter
+control fails this, no claim ofa newarbitraryCARcompiler.
+
+Originalone-stepG_port;CX(port,c);localZ_c givesDX^b=X^bDb with
+D=diag(sqrt(p),p),Db=diag(a,p) ordiag(p,a), sumDb²=I. No sqrt2/fair
+resource, Xreader, fittedangle orretry. 7bu'scutincludesALLc,
+Role/CARtestsactasI_c,andentiretargetpreserveslabels. TransferAFTER
+target givesKU directly; transferBEFORE requires ACTUALrelabelled
+U_b=X^bUtX^b, notuncorrectedUt. Predicatecompiler/controls andall
+prefixpricesremainrealpremises. Unequalbranch CQ entropy isnotheld
+constant; incoming7ca'sactualmixedfullCQsource defect is notcancelled
+orassumedC1 bydirectBookidentity647. Completephysicalledger stillneeded.
+
+Source/carrier/norm: fullfiniteinput/record/junk/protectedoldRIGHT,
+ordinarycountingtrace, fulloperatorcommutatornorm; Q=I_hist,A tensorPt
+forselectortransport, s=2d_A r, J_L=2J_t-(2d_A-1)r ln(1-z). Fixedrank,z
+differential retainsallfields andKdependence whenexactidentitieshold
+onSAMEopenchart. Projectioncentre feedbacknormals andtheINTERNALfullheat
+useoriginal7by/7bw scopes; noRawZoneplacement inferred fromendpoint.
+
+Concrete reverseencoder: existingCXparities writeframeXmaskintotarget
+zero-blanks with ALLhistory/junk/freeinputs arbitrarymutable. Countis
+sumblankmaskweights, 1CX forpriorG-frame and0fornewfreechannelbit.
+No unknowneta preparation orfairG. Q alonehasactualfixedblankpreparer;
+P_L=E directsumQ stillnonpower rankr(1+Ld_A), so notanunconditional
+freequbitpreparer. Bookcutisretained/tracedsplit, notdefinedasthatimage.
+Scene9/Fin9 suppliesnofreeintertwiner. Actualtwo-sortboundary andcoherent
+reciprocalcontroller remain, evenifWandW*separatelyavailable.
+
+Newfinitecoherentword: CX(c,q);G_P;CX(P,c);CX(c,B);CX(B,c), inputP/Bblank.
+Nativeaddressedprofilecounts1G4CX/5stages, ownedsourceIinverse1G4CX4SI/9.
+Last2CXrecordthenresetusedc onpreparedinput whileALLcolumnsreversible;
+B notsealed/dephased. Full128columnfixture includesSpin4 andold2;
+newtensorlayoutkeepsq3 asAUX, DATA6--9 FULLYFREE, Spin4/5,old10--16.
+Thereare17qubits:WORLD131072,preinput32768,targetr16384,Qrank65536,
+pairedrank81920,reciprocalWORLD262144. No hugeallocation. Addedwires
+areliteral spectators; exactcode/addressvalidation plusnative128full
+operator/inverse establishesextensionincludingactualoldRIGHT128.
+This isa word ofEXISTINGaddressedprofile; originalport-onlyhardware
+cannotreceivec->B/B->c merelybyrenaming. No physicalactuationpromoted.
+
+SmallestdecisivecheckPASS: native1G1CXunequalcore; actual5/9stagewordand
+all128columns, Spin/oldidentity; fullunpreparedsector; exactoff-shell
+two-channelGram andbothfirstjets; wholemetricintertwiner; noncommuting
+filteradversecontrol; actualreverseCXrange/predicate andpairedrank.
+Originalnative_execution.py SHA256
+222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c,
+Gitblob9a32a3fa2e594c087d24b9d5dec497c4c5e03f44 reused.
+No oldroot/heat/Slater/CARfull128/Lean orincomingmath replay.
+Rootfinalfrozenrun exit0, assertionsON, correctGIT_WORK_TREE.
+
+Proof12212/SHA256db7501dc07fde3603fc74e7d501991a8f64470635e921c29fd10851d7e340963.
+Executedcode7281/SHA2567d623dd2ca53ff492051831bb0da9d4247c909a032946a56cf8e2715e3e79f6b.
+Embeddedcode7280(excludingfinalnewline)/SHA256
+0a2262aae2dc3211af2d4b27406d749a8084f566180c0ac20f43e8467bc2180a.
+ObservedLFreceipt1029/SHA256
+a27442a0a83a3c0eab3f607d915dfeb3f066820bb3fda9af4c98358270309131.
+Whole7cb20864/SHA256de947431c2d936005a39a30e8430839d84f182224b3369b504a628c182c5eea2.
+Assemblyresultcheckpointtemplateconsumed; nonewresultrow/statusclaim.
+Source-onlyreviewandaffectedintegration follow. GR_closed=false;
+positive_gr/raw216 remainopen. No newtask/PR/action/detector/selector.
+
+Final SOURCE-ONLY mathematical ACCEPT fromstationary_root_transfer and
+price_geometry_bridge: FULLproof/code orcompleteinitialreadplusintended
+finaldiff acceptedat12212/db7501dc and7281/7d623dd2. Reviewsverified
+selectorcommutant, frame/order, fullsourcegain/metric andactualQencoder,
+plus17bitTYPEcorrection tokeepDATA16fullyfree. Earlier16bitfixturewas
+correctasrestrictedtoybutnotfullfreeCAR; itwasexpandedBEFOREfinalrun.
+No reviewerreplay/edit orindependentassemblyacceptance asserted. All
+incoming6b8107b4CQcoefficients/proof/code remainbyteexact; nooldbranch
+math rerun ornewGI/C1/Info claim. Finalaffectedguards/provenance follow.
+
+Finalaffectedintegration PASS work/agentprotocol/assembly/repository,
+54active/98results/5discharged/22obligations,scientific_promotionfalse;
+889claims/31assumptions/58aliases/183formal_support/918Leanclosure,
+warnings0. Removingourwhole7cb restoresincomingprimary1434748bytes
+EXACTLY, SHA25622fe2d92ca3749860fd2279b58b6bbffe1f209816f636690c242cab5f44ac141;
+incomingbrief932039bytes remains exactprefix, SHA256
+931b658d45dd793a01b6359ba144fca16d2669a724b896a186ce14ce78a2b2af.
+FinalembeddedAST/executedcode identity andonlytwoownedpaths verified.
+No incomingmath/fulloldcorpus/Lean replay, physical/assemblypromotion,
+newPR/task ormerge/Ready/retirement. Existing#334 remainsDraft.

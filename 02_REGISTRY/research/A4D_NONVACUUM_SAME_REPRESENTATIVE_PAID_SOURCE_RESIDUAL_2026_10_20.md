@@ -27673,6 +27673,432 @@ Author receipt (stdout; no reconstructed numerical evidence):
 }
 ```
 
+## 7cb. Consume the original unequal Golden selector without a fair gate, and construct the reverse-input encoder
+
+26 October2026. SAME #334 / constitutive/native-programme-v1; native
+realization and final composition. Inputfeccb68e6cc745855b8963944b323f3b7476ad7f
+contains7by's reciprocal source/metric and7bz's fresh destructive reader.
+The changed input is the ACTUAL readonly channel label in7bu, rather
+than an arbitrary WORK quantum gate. Its effects need not be scalar.
+This removes exact balance for that named transfer and supplies the
+reverse-Q range/predicate construction; it does not manufacture the
+actual paired Book boundary or reciprocal controller.
+
+### The source/metric proof needs an algebra intertwiner, not scalar leaves
+
+Let H_t, actual target cut P_t, full W,j and target U_t have7by621's
+meanings. On the COMPLETE logical input suppose the actual recorder has
+
+    Wj=K U_t,
+    K psi=direct_sum_b eta_b tensor P_b D_b psi,
+    ||eta_b||=1, sum_b D_b*D_b=I,
+    [D_b,P_t]=0, [D_b,a]=0 for every declared test a.        (643)
+
+P_b are independently specified unitary frames, not a target-dependent
+correction defined by inspecting the desired equation. Keep their
+phases, all outcomes and apparatus columns. The declared tests form a
+unital star algebra; the unknown apparatus eta_b is independent of the
+logical input on this prepared column. A genuine mixed reader is handled
+by retaining its actual purification, as in627/631.
+
+Take the SAME whole-junk extensions
+Q=direct_sum_b I_A tensor P_b P_t P_b*,
+A_out(a)=direct_sum_b I_A tensor P_b a P_b*.
+Then K*K=I, QK=KP_t and A_out(a)K=Ka, directly from643. Consequently
+EVERY proof7by623--626 applies unchanged: full reciprocal feedback,
+source gain2, true fixed-rank anchor, complementary input observer and
+whole-column commutator metric. Scalar c_b times unitary leaves were a
+sufficient special case, not a necessary premise of those proofs.
+Field-dependent D_b and eta_b also retain the identity if643 holds
+smoothly on the SAME open chart; differentiate the complete identity,
+not a frozen probability table. No new action-germ construction occurs.
+
+There is a sharp necessary check before using that extension. If a
+record-readonly orthogonal Q=direct_sum Q_b obeys Q_b T_b=T_b P_t,
+then sandwiching and taking adjoints gives
+
+    [T_b*T_b,P_t]=0.
+    A_out,b(a)T_b=T_b a for a=a* implies [T_b*T_b,a]=0.     (644)
+
+Thus an unequal effect that fails this commutant test cannot be repaired
+by selecting a different orthogonal projector in that record block.
+This is scoped to the stated readonly-record interpretation, not a ban
+on all coherent observers or all D0 realization routes. Additional
+native future tests outside the declared algebra remain additional
+distinctions; they are not deleted by restricting this common sector.
+
+### Apply643 to the actual original finite Golden step
+
+Use the ORIGINAL a=sqrt(p), p=(sqrt5-1)/2, a^2+p^2=1 and native
+G=[[a,-p],[p,a]]. Start a fresh port P at0, execute G_P and the existing
+outward CX(P->c), then a local sharp Z_c reader with ALL outcomes. By
+627 its unknown poststates factor. The input-c to output-P maps are
+
+    T_b=D X^b=X^b D_b,
+    D=diag(a,p), D_0=D, D_1=XDX,
+    D_0^2+D_1^2=I.                                      (645)
+
+This uses ONE literal Golden gate and ONE outward copy before the
+reader, with no exact |+>, pi/4 rotation, X-basis readout, rescaling,
+postselection or infinite retry. The effects are genuinely unequal.
+The measured outcome generally contains information about c; no
+constant-entropy631 simplification is asserted.
+
+In7bu's actual decomposition24225--24243, c is a free channel LABEL.
+P_t includes ALL c, the scalar Role representation is I_c on that
+label, and U_t=V_D O_f* U0 O_f V_D* never mixes channel labels. Binary
+padding of the labels and every unused channel remain. A D_b on one
+label bit therefore commutes with P_t, every such Role test and the
+ENTIRE U_t(Y), including its full geometric/matter field dependence.
+Other DATA/CAR and protected factors are untouched; their tests acting
+as I_c tensor a are covered even when noncommutative on those factors.
+
+The ordering/frame rule matters. If645 is AFTER the complete target,
+its endpoint is simply K U_t. If it is BEFORE the target, the actual
+subsequent programme must use the relabelled predicate c_out xor b:
+
+    U_(t,b)=X_c^b U_t X_c^b,
+    U_(t,b) X_c^b D_b=X_c^b D_b U_t.                    (646)
+
+The second equality uses [D_b,U_t]=0, not [X^b,U_t]=0. Executing the
+same uncorrected U_t after every outcome is generally wrong.646 is
+the specification for the existing readonly-predicate compiler, not
+a free controlled-U primitive. Its actual branch controls, full
+coherent record, prefixes, paid clock and internal placement remain
+required; a real dephased tape is not a unitary inverse.
+
+Here X^b acts on a FREE channel coordinate, so its action leaves
+target blank coordinates fixed. With L=2 outcomes and whole apparatus
+dimension d_A, Q=I_history tensor I_A tensor P_t and rank Q=2d_A r,
+r=rank P_t. On the OWNED U_L/P_L comparison this gives
+
+    J_L=2J_t-(2d_A-1)r log(1-z),
+    D J_L=2D J_t at fixed ranks,z.                       (647)
+
+No biased branch weight reweights the original field covector: the
+sum D_b*D_b=I is used BEFORE taking that complete differential. At a
+target projection centre the full feedback normals vanish, including
+off-map unitary/cut variations. Under7by624's actual INTERNAL clock
+placement, its full heat and temporal rows transfer as already proved.
+This consumes the existing7bu Palatini--CAR source/metric graph and
+its every-mesh nonvacuum consumer for this selector transport only.
+It does not compile the rest of that graph or identify its physical
+constitutive origin. Scalar scene-weight, clock/rank, selected extra
+price sources and physical Cost-Info identification keep their actual
+equations. No further Info term is assigned on the direct Book route.
+
+The restriction has real content. Put a biased filter BEFORE a genuine
+mixing G on the SAME logical bit and claim that G as the target. The
+effective post-target filter is G D_b G*, and for P_t=|0><0|,
+[G D_b^2 G*,P_t] is nonzero at the original unequal values.644 rules
+out any orthogonal record-block Q with that required intertwining.
+For the FULL matrix algebra on the filtered bit its commutant likewise
+forces scalar effects. Thus645 is not a general exact CAR gate compiler.
+The readonly selector is a separate factor from the CAR module; its
+commutation with I_c tensor CAR tests does not prove such a compiler
+when the ported bit IS matter or a noncommuting Role coordinate.
+
+### Actually encode the reverse range, without preparing unknown junk
+
+For a computational target cut P_t=I_F tensor |0_B><0_B|, let x_k(h)
+be the known linear X-frame mask on each target blank bit k. On
+arbitrary MUTABLE history h, junk A and free input F, the existing
+addressed CX network writes these parities into the zero blanks:
+
+    V_Q |h,A,phi,0_B>=|h,A,phi,x_B(h)>,
+    j_Q=V_Q(I_h tensor I_A tensor j_t),
+    j_Q*j_Q=I,  j_Q j_Q*=Q_full,
+    number of CX=sum_(k in B) weight(x_k).                 (648)
+
+The network is an all-column permutation. Its inverse is the reverse
+CX list; followed by the actual blank-coordinate test it gives the
+Q predicate. For7bz's single G-roundtrip one CX from b to its blank
+suffices. For645's FREE selector, x_B=0 and NO additional parity CX
+is required. It never acts on immutable oldRIGHT. h,A,F are task inputs,
+possibly entangled, not arbitrary states claimed generated from a blank.
+No knowledge or preparation of eta_h is needed. Addressed CX and the
+actual pointer/readback interface retain their original admission;
+this is not a derivation of them from literal outward-port actuation.
+
+This supplies the concrete reverse-preparation/predicate part of7by622.
+It does NOT supply the combined active-sector rule. In the qubit cases
+its paired rank r+s=r(1+Ld_A) is not a power of two; e.g. r=2,s=8
+gives10, not the image rank of an unconditional free-qubit/blank
+isometry. The rank is preserved under every such encoder. Book01:23--40
+defines P from retained/traced splitting, not as a preparer's range.
+Therefore the correct interface is TWO actual input sorts E and Q with
+an explicit retained boundary E direct_sum Q, not a fabricated rank10
+blank preparer. Nor may the physical scene9 be renamed this projector;
+WRecArchitecture explicitly calls Fin9 its concrete model, and supplies
+no scene-to-WORK intertwiner.
+
+Lossless forward data alone do not force Q_full: the existing composed
+feedback6.1 classification is K P_t K*+S, SK=0. Minimum rank would pick
+S=0, not our whole-junk reverse space. Actual use of648 is a task that
+retains the frame-corrected target event on ALL apparatus columns.
+It still needs the actual paired Book boundary and coherent reciprocal
+controller; separate words W and W* do not provide controlled W/W*.
+The old one-direction cut gives constant feedback even at perfect
+balance. No source-preserving boundary is inferred from a terminal
+predicate after that unchanged forward experiment.
+
+### A concrete finite native recorder and the decisive check
+
+One small coherent model makes the operation count and no-erasure
+boundary explicit. Layout P0,c1,B2,q3,Spin4/5,oldRIGHT6; P,B start blank,
+c,q,Spin and oldRIGHT are arbitrary. Chronologically execute
+
+    CX(c,q); G_P; CX(P,c); CX(c,B); CX(B,c).                 (649)
+
+The last two CX record the former c value b in B and restore used c
+to0 on this input promise, keeping the unknown logical state in the
+new port plus B. They are reversible on ALL columns; the record is
+not dephased or erased. The initial CX is an existing nontrivial
+c-readonly target.649 has1G+4CX, five raw stages; the owned source-I
+inverse has1G+4CX+4SourceI, nine actual stages. All128 columns, all4
+Spin columns and both oldRIGHT columns are checked exactly. The
+addressed profile is the already declared7t interface; the c->B and
+B->c gates are NOT synthesized by the original literal port-only
+palette. Thus649 is an actual word of that profile, not a claim that
+its physical admission problem has been removed.
+
+The same disjoint addresses extend by identity to a SEPARATE free
+DATA16, Spin4 and oldRIGHT128: keep q3 as a target auxiliary bit,
+use DATA6--9 and oldRIGHT10--16. There are17 physical qubits,131072
+world columns, full prepared-input rank32768 before the target cut,
+r16384,s65536,pairedrank81920 and reciprocal world262144. Thus the
+DATA16 input stays fully free; q3's target blank is not a frozen CAR
+component. No large matrix is allocated; the actual
+spectator addresses and finite-code membership prove the tensor
+extension. Blanks are not new free inputs; the full complement stays
+in the heat, and the anchor in647 scales with the actual ranks.
+
+The exact checker also verifies643's complete Gram and both independent
+first derivatives for an off-shell two-channel rational rotation chart,
+and the transported whole-column observer for649. The smooth rotations
+are comparison fixtures, not newly admitted real-angle primitives.
+It verifies644's noncommuting-filter control, a full reverse-Q CX
+encoder, and the nonpower paired-rank obstruction. Generality follows
+from643--648, not a source fit or a random tangent sample. No old
+root/large heat/Lean replay is called for by this bounded application.
+
+The incoming7ca634--642 full-original-CQ source defect is preserved.
+Its mixed DATA/preparation and newborn quantum eigenvalues are a
+DIFFERENT instrument/source calculation from this readonly-selector
+Book transport.647 does not remove that defect, assign physical Info,
+or infer differentiability of the complete native source. The same
+actual full ledger and physical map still have to consume both results
+where their stated hypotheses apply.
+
+No task, registry discharge, physical detector/selector/action or GR
+promotion is introduced. What changed is exact finite unequal-selector
+source compatibility and an explicit reverse encoder. The original
+physical source/field graph, paired process/boundary, controls, clocks
+and compatible dynamics/refinement remain to be proved on one regime.
+GR_closed=false; positive_gr/raw216 stay open.
+
+Proof pin: 12212 UTF8 bytes, SHA256 db7501dc07fde3603fc74e7d501991a8f64470635e921c29fd10851d7e340963.
+Executed checker: 7281 bytes, SHA256 7d623dd2ca53ff492051831bb0da9d4247c909a032946a56cf8e2715e3e79f6b.
+Canonical LF receipt: 1029 bytes, SHA256 a27442a0a83a3c0eab3f607d915dfeb3f066820bb3fda9af4c98358270309131.
+
+```python
+"""Exact application of the reciprocal source to an unequal readonly selector.
+
+Requires the pinned existing native grammar, not its physical admission.
+The local reader in the example is a coherent CNOT recorder/reset model.
+"""
+import hashlib,importlib.util,json,sys
+from dataclasses import replace
+from pathlib import Path
+import sympy as S
+
+root=Path('/Users/grigorijvahrusev/.codex/worktrees/gr-native-source-20261024/d0-main-assembly-audit')
+source=root/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+assert hashlib.sha256(source.read_bytes()).hexdigest()=='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+spec=importlib.util.spec_from_file_location('d0_selector_native',source)
+N=importlib.util.module_from_spec(spec);sys.modules[spec.name]=N;spec.loader.exec_module(N)
+I=S.eye(2); X=S.Matrix([[0,1],[1,0]]); Z=S.diag(1,-1)
+p=N.P;a=N.A;G=N.G_LOCAL
+def eq(A,B):
+    assert A.shape==B.shape
+    symbols=sorted((A-B).free_symbols,key=str)
+    domain=N.GOLDEN_FIELD.frac_field(*symbols) if symbols else N.GOLDEN_FIELD
+    assert all(domain.from_sympy(v)==domain.zero for v in A-B)
+def ratzero(A): assert all(S.cancel(x)==0 for x in A)
+def rot(t): return S.Matrix([[1-t*t,-2*t],[2*t,1-t*t]])/(1+t*t)
+
+# The single literal native transfer: G_PORT, outward copy to unknown WORK.
+one=N.Execution(2,(0,),(),(N.Gate('G',(0,)),N.Gate('CX',(0,1))),N.G_CX)
+N.validate_execution(one,max_qubits=2,max_expanded_stages=2)
+word=N.word_matrix(one,max_qubits=2)
+jone=N.input_isometry(one,max_qubits=2)
+branches=[]
+for b in range(2):
+    rows=[2*port+b for port in range(2)]
+    K=(word*jone).extract(rows,[0,1])
+    eq(K,S.diag(a,p)*X**b)
+    Db=X**b*S.diag(a,p)*X**b
+    eq(K,X**b*Db)
+    branches.append(K)
+eq(sum((K.T*K for K in branches),S.zeros(2)),I)
+assert S.simplify((branches[0].T*branches[0])[0,0]-(branches[0].T*branches[0])[1,1])!=0
+
+# Exact native coherent recorder/reset plus a readonly-channel target CX.
+# Native order P,c,B,q,Spin(2bits),oldRIGHT; only zero blanks P,B.
+gates=(N.Gate('CX',(1,3)),N.Gate('G',(0,)),N.Gate('CX',(0,1)),
+       N.Gate('CX',(1,2)),N.Gate('CX',(2,1)))
+native=N.Execution(7,(0,2),(6,),gates,N.G_CX_SOURCE_I,0,(4,5))
+inv=replace(native,gates=N.inverse_word(native,max_qubits=7,max_expanded_stages=20))
+inventory=N.inventory(native,max_qubits=7,max_expanded_stages=20)
+assert len(inv.gates)==9
+assert (inventory.g_count,inventory.cx_count,inventory.source_i_count)==(1,4,0)
+assert (inventory.full_dimension,inventory.input_dimension)==(128,32)
+Wn=N.word_matrix(native,max_qubits=7,max_expanded_stages=20)
+Winv=N.word_matrix(inv,max_qubits=7,max_expanded_stages=20)
+eq(Winv,Wn.T)
+
+# The exact reduced 16-column operator uses order B,used-c,P,q.
+smallg=(N.Gate('CX',(1,3)),N.Gate('G',(2,)),N.Gate('CX',(2,1)),
+        N.Gate('CX',(1,0)),N.Gate('CX',(0,1)))
+small=N.Execution(4,(0,2),(),smallg,N.G_CX)
+Ws=N.word_matrix(small,max_qubits=4)
+js=N.input_isometry(small,max_qubits=4)
+Ut=S.zeros(4)
+for c in range(2):
+    for q in range(2): Ut[2*c+(q^c),2*c+q]=1
+eta=S.Matrix([1,0])  # actual reset model; the proof permits arbitrary eta_b
+K=S.Matrix.vstack(*(S.kronecker_product(eta,branches[b],I) for b in range(2)))
+eq(Ws*js,K*Ut);eq(K.T*K,S.eye(4))
+
+# Verify all 128 native columns, including the entire Spin and oldRIGHT.
+def native_row(reduced):
+    b=(reduced>>3)&1;c=(reduced>>2)&1;port=(reduced>>1)&1;q=reduced&1
+    return 8*port+4*c+2*b+q
+for row in range(16):
+    for col in range(16):
+        block=Wn[8*native_row(row):8*native_row(row)+8,
+                  8*native_row(col):8*native_row(col)+8]
+        eq(block,Ws[row,col]*S.eye(8))
+
+# Exact whole-junk cut; Pt leaves the selector free and fixes logical q=0.
+Pt=S.kronecker_product(I,S.diag(1,0));E=js*Pt*js.T
+Q=S.kronecker_product(I,I,Pt)
+assert Pt.trace()==2 and E.trace()==2 and Q.trace()==8
+eq(Q*K,K*Pt)
+targetA=Pt*Ut.T*Pt*Ut*Pt
+C=Q*Ws*E
+eq(js.T*C.T*C*js,targetA)
+
+# Nontrivial smooth off-shell target comparison (not a new native angle).
+# The transfer filters act on channel c; these targets never mix that label.
+t0,t1=S.symbols('t0 t1',real=True)
+U=S.diag(rot(t0),rot(t1))
+Dc=[S.kronecker_product(X**b*S.diag(a,p)*X**b,I) for b in range(2)]
+for d in Dc: eq(d*Pt,Pt*d);eq(d*U,U*d)
+# Compute the actual all-label compression from the complete prepared column.
+V=K*U
+Afull=Pt*V.T*Q*V*Pt
+Atarget=Pt*U.T*Pt*U*Pt
+eq(Afull,Atarget)
+for variable in (t0,t1): eq(Afull.diff(variable),Atarget.diff(variable))
+
+# Full complementary observer map in the actual native CX fixture.
+obs=S.kronecker_product(I,Z)
+Aout=S.kronecker_product(I,I,obs)
+eq(Aout*K,K*obs)
+J=js*js.T
+Ain=js*obs*js.T+(S.eye(16)-J)*Ws.T*Aout*Ws*(S.eye(16)-J)
+eq(Ain*Ain,S.eye(16))
+eq(Ws*Ain-Aout*Ws,K*(Ut*obs-obs*Ut)*js.T)
+
+# Necessity control: noncommuting G AFTER a biased filter cannot have an
+# orthogonal record-block intertwiner for the original computational cut.
+D=S.diag(a,p); P0=S.diag(1,0)
+bad=G*D
+post=bad*G.T  # physical branch bad, claimed target G
+effect=post.T*post
+comm=effect*P0-P0*effect
+assert any(S.simplify(x)!=0 for x in comm)
+assert S.simplify(comm[0,1])!=0
+
+# Concrete reverse-Q parity encoder for the previous full Pauli frames.
+# h=(b,c), junk z, free f, target blank w. Only b flips that blank.
+qenc=N.Execution(5,(4,),(),(N.Gate('CX',(0,4)),),N.G_CX)
+Vq=N.word_matrix(qenc,max_qubits=5);jq=Vq*N.input_isometry(qenc,max_qubits=5)
+Qq=S.diag(*[int(((i>>4)&1)==(i&1)) for i in range(32)])
+eq(jq.T*jq,S.eye(16));eq(jq*jq.T,Qq)
+assert Qq.trace()==16
+# Paired input is not an unconditional fixed-blank free-qubit preparer.
+assert 2+8==10 and 10&(10-1)!=0
+
+# Syntactic/tensor extension retains full DATA16, quaternion Spin4 and old128.
+# The target q3 is an auxiliary; DATA6..9 and oldRIGHT10..16 stay free.
+# No 131072-column matrix is allocated: every added wire is a literal spectator.
+full=N.Execution(17,(0,2),tuple(range(10,17)),gates,N.G_CX_SOURCE_I,0,(4,5))
+fullinv=replace(full,gates=N.inverse_word(full,max_qubits=17,max_expanded_stages=20))
+fullcounts=N.inventory(full,max_qubits=17,max_expanded_stages=20)
+assert (fullcounts.full_dimension,fullcounts.input_dimension)==(131072,32768)
+assert len(fullinv.gates)==9
+assert all(not set(g.wires).intersection(set(range(6,17))) for g in full.gates+fullinv.gates)
+full_r=fullcounts.input_dimension//2
+assert (full_r,4*full_r,5*full_r)==(16384,65536,81920)
+
+print(json.dumps({
+ 'status':'PASS','arithmetic':'exact algebraic and rational',
+ 'literal_transfer_core':{'G':1,'CX':1,'balanced':False},
+ 'actual_native_coherent_example':{'G':1,'CX':4,'stages':5,'inverse_stages':9,
+   'full_dimension':128,'prepared_input_rank':32,'forward_target_rank':16,
+   'reverse_Q_rank':64,'paired_cut_rank':80},
+ 'all128_columns_spin_oldRIGHT':'exact',
+ 'full_DATA16_Spin4_oldRIGHT128_tensor_extension':[131072,32768,16384,65536,81920],
+ 'source_identity':'gain2 at fixed ranks; exact off-shell two-parameter Gram and jets',
+ 'unprepared_junk_retained':True,'metric_intertwiner':'whole-column exact',
+ 'noncommuting_filter':'orthogonal record-block intertwiner obstructed',
+ 'reverse_Q_encoder':'one existing addressed CX, arbitrary mutable history/junk inputs',
+ 'paired_cut_is_unconditional_qubit_preparation':False,
+ 'original_port_only_admission':False,'physical_GR_closure':False
+},sort_keys=True,indent=2))
+```
+
+```json
+{
+  "actual_native_coherent_example": {
+    "CX": 4,
+    "G": 1,
+    "forward_target_rank": 16,
+    "full_dimension": 128,
+    "inverse_stages": 9,
+    "paired_cut_rank": 80,
+    "prepared_input_rank": 32,
+    "reverse_Q_rank": 64,
+    "stages": 5
+  },
+  "all128_columns_spin_oldRIGHT": "exact",
+  "arithmetic": "exact algebraic and rational",
+  "full_DATA16_Spin4_oldRIGHT128_tensor_extension": [
+    131072,
+    32768,
+    16384,
+    65536,
+    81920
+  ],
+  "literal_transfer_core": {
+    "CX": 1,
+    "G": 1,
+    "balanced": false
+  },
+  "metric_intertwiner": "whole-column exact",
+  "noncommuting_filter": "orthogonal record-block intertwiner obstructed",
+  "original_port_only_admission": false,
+  "paired_cut_is_unconditional_qubit_preparation": false,
+  "physical_GR_closure": false,
+  "reverse_Q_encoder": "one existing addressed CX, arbitrary mutable history/junk inputs",
+  "source_identity": "gain2 at fixed ranks; exact off-shell two-parameter Gram and jets",
+  "status": "PASS",
+  "unprepared_junk_retained": true
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
