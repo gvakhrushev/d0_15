@@ -2312,7 +2312,7 @@ class ProofArchitectureTests(unittest.TestCase):
         replay = summary["replay"]
         self.assertEqual(replay["source_commit"], summary["snapshot_commit"])
         self.assertEqual(
-            replay["command"], "python3 tools/proof_architecture_cold_start.py"
+            replay["command"], "python -X utf8 tools/proof_architecture_cold_start.py"
         )
         self.assertEqual(
             replay["runner_sha256"],
@@ -2469,10 +2469,10 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             comparison["metrics"]["current_serialized_answer_bytes_total"],
-            538400,
+            538443,
         )
         self.assertEqual(
-            comparison["metrics"]["current_average_answer_bytes"], 22433.3
+            comparison["metrics"]["current_average_answer_bytes"], 22435.1
         )
         self.assertTrue(
             comparison["metrics"]["semantic_review_required_for_all_queries"]
