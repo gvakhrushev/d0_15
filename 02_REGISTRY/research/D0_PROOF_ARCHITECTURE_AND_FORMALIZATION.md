@@ -10148,3 +10148,25 @@ The extracted pin records blob
 against dirty source snapshot `f3063366bd90156ec6286e2c924916c97ed99fae`;
 it verifies retrieval and immutable source resolution only, not mathematical
 acceptance of the parent claim or C0 as a whole.
+
+### Validation after the nonvacuum source-crosswalk review (26 October 2026)
+
+The scope corrections and independent-review boundary above are published at
+`80d0064b261c21b6c8d823c27dd37bc57e030445`. GitHub D0 guards run 5343
+completed successfully. D0 Lean build run 3305 also completed successfully,
+but its Draft job skipped release-proof closure and native checkpoint capsule
+compilation; it did not run a new `D0.All` build.
+
+The previous full local `D0.All` build remains applicable to the current Lean
+tree: comparison of the code-bearing commit `82868719e5e52884441f1694ee1baf973becd62f`
+with `80d0064` shows that the seven later commits changed only the primary
+artifact and proof-architecture tooling/tests, with no Lean source changes.
+The two nonvacuum modules still match their published Git blobs
+(`NonvacuumBrinkmannStencil.lean`: `4e7dfc846e7ab0b87b70278d19d4c49e9b3af4fc`;
+`MidpointQuadrature.lean`: `e14c9518cbe97e8d817f24dc6962b8b697ebceb8`).
+The prior narrow nonvacuum build (3,302/3,302 jobs) and public `D0.All`
+integration (4,616/4,616 jobs) were recorded against complete Lean-source
+digest `1b72e00be09115a6471500f8265e49ca7088ed743b5dedefc82ab680e5f2c307`.
+These results establish the sampled scalar application only; they do not
+formalize Eq. (24)'s vector-norm bound or normalized-CAR slack, accept C0, or
+close physical GR selection.
