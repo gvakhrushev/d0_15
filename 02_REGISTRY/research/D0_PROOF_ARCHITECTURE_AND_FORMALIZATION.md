@@ -8320,3 +8320,14 @@ toolchain `leanprover/lean4:v4.30.0`. The inventory preserves exact
 elaborated types, dependencies and inherited axiom footprints at
 `sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json`,
 SHA-256 `2dd1f258e6e6137bd361b986c668d4a0f07c7173670e352436d5206b692c6fd7`.
+
+The clean cold-start replay at `1a9148afaf9fdb83dd47ef8f703d838baf4a46af`
+found all **24/24** cases, passed the **25-case** benchmark, and found all
+**143** required source references. The Julia case found **12/12** sources;
+the exact all-role theorem query ranked the Lean module and this compiled
+inventory first and second. The targeted source-vs-unrelated-prose impact
+regression passed. The 8,058,091-byte replay output has SHA-256
+`29df3dab2bf6da8350a35d9340b45e5be79561e1aca5d64dbd33fc5ede962238`; its
+compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_all_role_chart_coverage.json`,
+SHA-256 `1ad831896465014dd25226915100e7f26df88536b134feec958ccfa1b887a2ce`.
