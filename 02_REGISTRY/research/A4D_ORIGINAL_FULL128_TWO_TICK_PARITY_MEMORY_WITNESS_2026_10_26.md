@@ -168,3 +168,38 @@ The parity-sensitive trace in (14) proves the chronological contrast is ALSO dis
 In the previously owned 65-label causal predictor the two corresponding chronological coarse histories are \((5,46)\) and \((46,5)\), each with original scaling \(p^2\). The true noncommuting order difference is therefore also preserved and its **mathematical** coarse conditional probability contrast is the fine one divided by \(p^2>0\). The independent Golden fine-port randomness still retains its priced physical contribution and cannot be deleted from the actual recorded history.
 
 **No false gravitational promotion:** This exact two-tick ordered-memory theorem proves one nontrivial physical property of the ORIGINAL finite CAR16 foundation. It does not by itself select Book03's H+J+R physical action, guarantee these two initial input states are the compulsory universe source, prove geometric Euler equations, identify the original spacetime metric or close OTO.
+
+
+## 6. THEOREM E — the FIRST positive ORIGINAL internal information about the parity bit is born at tick two
+
+Retain precisely the same genuine mixed parity states \(\rho_\pm=P_\pm/8\) and let the internally defined source parity variable \(B\in\{+,-\}\) have an equiprobable preparation prior (this prior is specified for the discrimination TEST, not asserted to be selected by M1). At horizon one, the entire fine 128-label distribution is identical by (5), so **for ANY classical processing of that existing first recorded tick** its mutual information with B is ZERO. No standalone "history" comparator is added.
+
+At horizon two, mark the one existing fine cylinder \(\gamma=(9,91)\) by the true binary registered event \(Z=1_{\{\gamma\}}\). Its conditional probabilities \(q_\pm\in(0,1)\) differ strictly by the already CERTIFIED original algebraic effect (8). Thus the original finite *Shannon information in the inherited Golden base*, not a chosen action, satisfies
+\[
+\boxed{
+I_\varphi(B;Z)
+=h_\varphi\!\left(\frac{q_++q_-}{2}\right)
+-\frac{h_\varphi(q_+)+h_\varphi(q_-)}2
+>0,\quad
+h_\varphi(x)=
+-\frac{x\ln x+(1-x)\ln(1-x)}{\ln\varphi}.
+}\tag{17}
+\]
+Strict positivity follows **without estimating a tiny difference**: \(h_\varphi''(x)=-[x(1-x)\ln\varphi]^{-1}<0\) on (0,1) and \(q_+\ne q_-\) exactly. The coarsened 65-label two-tick path also has strictly positive information because its parity bias is the genuine positive scalar rescaling \(p^{-2}\) of the fine path, not an invented measurement.
+
+The real one-bit parity mixture \(\rho_\eta=(1+\eta)\rho_+/2+(1-\eta)\rho_-/2\), \(\eta\in[-1,1]\), has a **native outcome probability**
+\[
+q(\eta)=\frac{q_++q_-}{2}+\frac\eta2(q_+-q_-).
+\]
+Hence this TWO-TICK true-record test has strictly positive classical Fisher information about \(\eta\) at \(\eta=0\):
+\[
+\boxed{
+\mathcal I_{\rm Fisher}(0)
+=\frac{(q_+-q_-)^2}
+{4\bar q(1-\bar q)}>0,\qquad
+\bar q=(q_++q_-)/2.
+}\tag{18}
+\]
+The matching one-tick test family has Fisher score ZERO for this parity contrast. This is an exact **operational emergence of test sensitivity from retained interaction order**, not an independent physical time, action quantum, observer, matter mass or spacetime metric.
+
+**Critical price rule:** the second original tick and its genuine retained archive must actually occur, with their original work and clock; exact positive mutual information does not make the information physically free, and \(I_\varphi\) is not automatically the whole selected Book03 Info/Cost functional. We have proved *when* this specific future distinction becomes available and what exact native event carries it, not that D0 must select a particular gravitational action to pay for it.
