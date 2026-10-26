@@ -1639,7 +1639,7 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_joint_coframe_frechet.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_julia_base_link_frechet.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -1657,14 +1657,14 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in summary["cases"]
         ))
         self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 157
+            sum(row["required_source_count"] for row in summary["cases"]), 158
         )
         labelled = next(
             row for row in summary["cases"]
             if row["id"] == "labelled-native-raising-inverse"
         )
-        self.assertEqual(labelled["query_count"], 17)
-        self.assertEqual(labelled["required_source_count"], 12)
+        self.assertEqual(labelled["query_count"], 18)
+        self.assertEqual(labelled["required_source_count"], 13)
         proper = next(
             row for row in summary["cases"]
             if row["id"] == "proper-lorentz-same-orientation-orbit"
@@ -1823,6 +1823,9 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("RolePair → ℝ", case["scope_review"])
         self.assertIn("same constructed Julia query family", case["scope_review"])
         self.assertIn("joint directional derivative", case["scope_review"])
+        self.assertIn("any supplied proper rolewise Lorentz link", case["scope_review"])
+        self.assertIn("right-translates those same tangent coordinates", case["scope_review"])
+        self.assertIn("not a claim that the exponential is a global chart", case["scope_review"])
         self.assertIn(
             "full Fréchet derivative on the 16 coframe matrix entries and 24 canonical Lorentz tangent coordinates",
             case["scope_review"],
@@ -1842,6 +1845,11 @@ class ProofArchitectureTests(unittest.TestCase):
             in query
             for query in case["queries"]
         ))
+        self.assertTrue(any(
+            "principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt"
+            in query
+            for query in case["queries"]
+        ))
         self.assertIn(
             "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
             case["required_refs"],
@@ -1851,6 +1859,11 @@ class ProofArchitectureTests(unittest.TestCase):
             "julia_lorentz_tangent_dimension_reuse_declarations_2026-10-26.json",
             case["required_refs"],
         )
+        base_link_inventory_rel = (
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "julia_joint_coframe_base_link_frechet_declarations_2026-10-26.json"
+        )
+        self.assertIn(base_link_inventory_rel, case["required_refs"])
         coordinate_inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
@@ -1918,6 +1931,54 @@ class ProofArchitectureTests(unittest.TestCase):
                 "_private.D0.Geometry.ArchiveJuliaRaisingOperatorReadout.0.D0.Geometry.archiveCreatorPermSign._native.native_decide.ax_1_1",
             },
         )
+        base_link_inventory = json.loads(
+            (proof.ROOT / base_link_inventory_rel).read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            base_link_inventory["schema"], "d0-lean-declaration-inventory-v1"
+        )
+        self.assertRegex(base_link_inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertFalse(base_link_inventory["worktree_dirty"])
+        self.assertEqual(
+            base_link_inventory["lean_source_digest"], lean_task_build.source_digest()
+        )
+        base_link_declarations = {
+            row["name"]: row for row in base_link_inventory["declarations"]
+        }
+        self.assertEqual(
+            set(base_link_inventory["request"]["full_names"]),
+            set(base_link_declarations),
+        )
+        base_link_frechet = base_link_declarations[
+            "D0.Geometry.principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt"
+        ]
+        self.assertEqual(
+            base_link_frechet["module"], "D0.Geometry.A4DJuliaLinkPathDifferential"
+        )
+        self.assertEqual(base_link_frechet["declaration_kind"], "theorem")
+        self.assertIn("D0.Geometry.IsRoleLorentz", base_link_frechet["elaborated_type"])
+        self.assertIn("D0.Geometry.RolePair → ℝ", base_link_frechet["elaborated_type"])
+        self.assertIn(".det = 1", base_link_frechet["elaborated_type"])
+        self.assertIn(
+            "D0.Geometry.principalFrameJuliaQueryFamily_recoveredInverseCoframe",
+            base_link_frechet["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.principalFrameJuliaEndpointChartReadout_eq",
+            base_link_frechet["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.archiveJuliaProperRoleLorentzEquiv_form_isometry",
+            base_link_frechet["proof_dependencies"],
+        )
+        self.assertEqual(
+            set(base_link_frechet["axioms"]), set(joint_frechet["axioms"])
+        )
+        base_link_differential = base_link_declarations[
+            "D0.Geometry.principalFrameJuliaJointCoframeEndpointFDerivAtBaseInCoordinates_apply"
+        ]
+        self.assertIn("RolePair → ℝ", base_link_differential["elaborated_type"])
+        self.assertIn("Λ₀ r", base_link_differential["elaborated_type"])
         inventory = json.loads(coordinate_inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
         self.assertFalse(inventory["worktree_dirty"])
@@ -2033,6 +2094,18 @@ class ProofArchitectureTests(unittest.TestCase):
             joint_frechet_inventory_path.relative_to(proof.ROOT).as_posix(),
             joint_frechet_surfaced,
         )
+        base_link_query = next(
+            query for query in case["queries"]
+            if "principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt"
+            in query
+        )
+        base_link_hits = proof.full_text_search(proof.ROOT, base_link_query, limit=8)
+        base_link_surfaced = {hit["source"] for hit in base_link_hits}
+        self.assertIn(
+            "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
+            base_link_surfaced,
+        )
+        self.assertIn(base_link_inventory_rel, base_link_surfaced)
 
     def test_transfer_cold_start_pins_actual_controls_and_conditional_bridge(self) -> None:
         case = next(
