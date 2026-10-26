@@ -8157,3 +8157,36 @@ This refactor keeps the exact remainder and finite-carrier scope. The crosswalk
 still records `semantic_relation_status=unresolved`,
 `claim_locator_disposition=unresolved`, and `acceptance_inferred=false`; it
 does not close C0, physical source selection, continuum variation, or GR.
+
+### Fixed-link derivative of the Julia principal-frame coframe readout (26 October 2026)
+
+The existing Julia principal-frame constructor now has a compiled derivative
+for its actual query-derived inverse-coframe readout. For every inverse-coframe
+matrix `F`, row-action Lorentz matrix `Λ`, and role endpoint family `M`, the
+`IsRoleLorentz Λ` hypothesis lets the existing Eq. (30a) readout simplify to
+`F * (Λ.transpose)⁻¹`. Therefore its Fréchet derivative in the full 16-entry
+inverse-coframe-matrix variable is `H ↦ H * (Λ.transpose)⁻¹`, with the Lorentz
+link and endpoint maps held fixed. The proof composes
+`principalFrameJuliaQueryFamily_columnMatrix` with the existing
+`principalFrame_inverse_coframe_readout`, then applies the continuous-linear
+derivative of right multiplication.
+
+The exact new declaration is
+`D0.Geometry.principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt`
+in `A4DJuliaPrincipalFrameRecovery.lean`. Its narrow Lean build passed
+**3,125/3,125 jobs**. The public-`D0.All` declaration inventory at clean
+commit `52adc51b69b3067471bb6425c9cdc54e06690575` resolves the new theorem and
+both composed declarations, records the current source path and elaborated
+types, and reports the inherited trust footprint (`Classical.choice`,
+`Quot.sound`, the CAR `native_decide` dependency, and `propext`). The inventory
+uses Lean source digest
+`b04dd12eb734fcec50a037dc24c6da48c507704e10a358197c939aee74baf220`, Lean
+4.30.0, and SHA-256
+`acffe8f2b698d4752ad0ecc57b5fd864f746ba7956f88ef06f644ec931552437` at
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_principal_frame_fixed_link_derivative_declarations_2026-10-26.json`.
+
+This supports the finite coframe block of the Julia Eq. (30a) application;
+it does not discharge the full application or prove the 24 link directions,
+the joint all-jet identity
+`D R D Φ = I`, variational pullback, physical admission or price/source
+selection. It creates no claim-status change and does not freeze or accept C0.
