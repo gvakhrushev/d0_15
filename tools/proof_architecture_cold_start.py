@@ -40,7 +40,7 @@ CASES: list[dict[str, Any]] = [
             "roleLorentzTangentEndpointFDeriv_apply julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26",
             "roleLorentzTangentParameters_finrank roleLorentzTangent_finrank four Julia links 24 coordinates",
             "principalFrameJuliaJointCoframeEndpointReadoutAlongLorentzTangent_hasDerivAt principalFrameJuliaEndpointChartReadoutAlongLorentzTangentInCoordinates_hasFDerivAt roleLorentzTangentParametersEquivCoordinates same Julia query family 16 coframe 24 Lorentz endpoint RolePair coordinates",
-            "principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet",
+            "principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history",
             "principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt julia_joint_coframe_base_link_frechet_declarations_2026-10-26",
         ],
         "required_refs": [
@@ -53,7 +53,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_base_link_frechet_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_dimension_reuse_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_tangent_path_declarations_2026-10-26.json",
@@ -80,12 +80,13 @@ CASES: list[dict[str, Any]] = [
             "positive nonvacuum harmonic cubic fixed nonlinear Brinkmann metric",
             "transverseFivePoint_nonvacuumBrinkmannProfile_eq_source harmonicBrinkmannCubic radial quadratic",
             "nonvacuumProfile_source_eq_finiteMidpointMatterNorm finiteMatterForwardGradient_midpointStep twoComponentMatterNormSq",
+            "finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm finiteMatterMidpointHistory chronological rate same two-component stencil source",
             "native finite matter midpoint exact energy five point source same interval",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
             "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_declarations_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json",
         ],
         "required_sources": [
             {
@@ -93,14 +94,17 @@ CASES: list[dict[str, Any]] = [
                 "commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
                 "blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
                 "sections": ["7.1", "7.2"],
-                "scope_query_indexes": [0, 3],
-                "scope_query_sections": {"0": ["7.1"], "3": ["7.2"]},
+                "scope_query_indexes": [0, 4],
+                "scope_query_sections": {"0": ["7.1"], "4": ["7.2"]},
             },
         ],
         "scope_review": (
             "The compiled NonvacuumBrinkmannStencil result proves the exact five-point "
             "harmonic/radial readout and binds its source norm to the same finite midpoint "
             "matter record. This is only the pointwise stencil/source fragment: the original "
+            "time-indexed extension additionally proves that each natural-indexed midpoint "
+            "history step supplies the exact rate used by that site's profile, without adding "
+            "smoothness or a continuum-limit premise. The original "
             "CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, refinement "
             "estimate, and physical native Book/clock/source selection remain separate and open."
         ),

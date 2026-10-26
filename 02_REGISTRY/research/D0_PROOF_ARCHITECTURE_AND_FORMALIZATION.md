@@ -9187,3 +9187,45 @@ also pass.
 The comparison and replay remain retrieval evidence only. They do not accept
 claim semantics, freeze C0, establish applications, or change any physical
 selection premise.
+
+### Exact time-indexed midpoint source on the nonvacuum stencil (26 October 2026)
+
+The existing finite nonvacuum fragment now extends from one arbitrary
+two-component midpoint step to a chronological rate sequence
+`rate : ℕ → Fin 2 → ℝ`. `finiteMatterMidpointHistory` constructs each next
+record from the same step rate, while `finiteTimeNonvacuumBrinkmannProfile`
+uses that rate's squared norm for the profile at the same site. The compiled
+theorem `finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm` composes
+the exact five-point profile equation with the actual adjacent record values:
+
+```text
+Δ_h^⊥ H_n(x,y)
+  = -4 coupling * ||(Ψ_(n+1) - Ψ_n)/h||²
+```
+
+for every `h ≠ 0`, every `n`, arbitrary two-component rate and base record,
+and arbitrary time-dependent quadratic/cubic harmonic coefficients. This is a
+finite discrete same-history source identity; it assumes no smooth rate law
+and proves no continuum convergence estimate. It makes explicit that the
+sitewise profile source and the history gradient use the same rate rather
+than an independently supplied energy value.
+
+The narrow module build passed **2,946/2,946** jobs and the public-import
+`D0.All` build passed **4,585/4,585** jobs with Lean 4.30.0. The Lean-source
+digest is `4a1a705e04e028b14e0b43e0616e5d976ba091bd3137aa140b0b22cb9ec74150`.
+The source remains `D0.Geometry.NonvacuumBrinkmannStencil` under its existing
+explicit-support entry in `formal_support.csv`. A consolidated compiled
+inventory now resolves **215/215** exact declarations across 22 reused modules,
+including the new time-indexed theorem and the current shared-adapter set. This
+provides one source-digest-current inventory for these consumers while leaving
+all earlier per-slice inventories intact as historical snapshots:
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json`.
+Its clean source snapshot and checksum are recorded after this checkpoint is
+committed.
+
+This extends only the already formalized finite stencil/midpoint component.
+It does not formalize the original CAR construction, the unrestricted 40→3→1
+Cartan variation, all 16+24+2 Euler equations, the O(h²) continuum recovery,
+or physical Book03/source/clock selection. Those remain separate mathematical
+and physical obligations; the positive family remains research evidence and
+no GR assembly status changes.

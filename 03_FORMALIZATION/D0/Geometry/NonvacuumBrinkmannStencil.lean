@@ -123,6 +123,76 @@ theorem nonvacuumProfile_source_eq_finiteMidpointMatterNorm
     h coupling (twoComponentMatterNormSq rate) a2 b2 a3 b3 x y hh]
   rw [twoComponentMatterNormSq_midpointGradient_eq_rate h rate base hh]
 
+/-- A chronological finite matter record driven by a two-component rate at each step. -/
+def finiteMatterMidpointHistory
+    (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ) :
+    ℕ → Fin 2 → ℝ
+  | 0 => base
+  | n + 1 => fun i => finiteMatterMidpointHistory h rate base n i + h * rate n i
+
+/-- Each adjacent pair in the history is the specified midpoint update. -/
+theorem finiteMatterMidpointHistory_next
+    (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ)
+    (n : ℕ) (i : Fin 2) :
+    finiteMatterMidpointHistory h rate base (n + 1) i =
+      finiteMatterMidpointHistory h rate base n i + h * rate n i := by
+  rfl
+
+/-- The actual forward difference of every history step recovers its rate. -/
+theorem finiteMatterForwardGradient_midpointHistory
+    (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ)
+    (n : ℕ) (i : Fin 2) (hh : h ≠ 0) :
+    finiteMatterForwardGradient h
+      (finiteMatterMidpointHistory h rate base n)
+      (finiteMatterMidpointHistory h rate base (n + 1)) i = rate n i := by
+  unfold finiteMatterForwardGradient
+  rw [finiteMatterMidpointHistory_next]
+  field_simp [hh]
+  ring
+
+/-- The squared gradient norm of one chronological step is its rate energy. -/
+theorem twoComponentMatterNormSq_midpointHistoryGradient_eq_rate
+    (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ)
+    (n : ℕ) (hh : h ≠ 0) :
+    twoComponentMatterNormSq
+      (finiteMatterForwardGradient h
+        (finiteMatterMidpointHistory h rate base n)
+        (finiteMatterMidpointHistory h rate base (n + 1))) =
+      twoComponentMatterNormSq (rate n) := by
+  unfold twoComponentMatterNormSq
+  apply Finset.sum_congr rfl
+  intro i hi
+  rw [finiteMatterForwardGradient_midpointHistory h rate base n i hh]
+
+/-- The time-indexed Brinkmann profile uses the rate of that same history step. -/
+def finiteTimeNonvacuumBrinkmannProfile
+    (coupling : ℝ) (rate : ℕ → Fin 2 → ℝ)
+    (a2 b2 a3 b3 : ℕ → ℝ) (n : ℕ) (x y : ℝ) : ℝ :=
+  nonvacuumBrinkmannProfile coupling (twoComponentMatterNormSq (rate n))
+    (a2 n) (b2 n) (a3 n) (b3 n) x y
+
+/--
+At every chronological site and every nonzero mesh width, the exact
+Brinkmann stencil source is the energy of the adjacent two-component history
+values. The geometry and matter term therefore share the same rate input.
+-/
+theorem finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm
+    (h coupling : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ)
+    (a2 b2 a3 b3 : ℕ → ℝ) (n : ℕ) (x y : ℝ) (hh : h ≠ 0) :
+    transverseFivePointLaplacian h
+      (fun x y => finiteTimeNonvacuumBrinkmannProfile
+        coupling rate a2 b2 a3 b3 n x y) x y =
+      -4 * coupling * twoComponentMatterNormSq
+        (finiteMatterForwardGradient h
+          (finiteMatterMidpointHistory h rate base n)
+          (finiteMatterMidpointHistory h rate base (n + 1))) := by
+  dsimp [finiteTimeNonvacuumBrinkmannProfile]
+  rw [transverseFivePoint_nonvacuumBrinkmannProfile_eq_source
+    h coupling (twoComponentMatterNormSq (rate n))
+    (a2 n) (b2 n) (a3 n) (b3 n) x y hh]
+  rw [twoComponentMatterNormSq_midpointHistoryGradient_eq_rate
+    h rate base n hh]
+
 end
 
 end D0.Geometry

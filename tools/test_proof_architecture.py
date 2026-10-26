@@ -1447,6 +1447,8 @@ class ProofArchitectureTests(unittest.TestCase):
                             for query in case["queries"]))
         self.assertTrue(any("nonvacuumProfile_source_eq_finiteMidpointMatterNorm" in query
                             for query in case["queries"]))
+        self.assertTrue(any("finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm" in query
+                            for query in case["queries"]))
         self.assertIn(module, case["required_refs"])
         self.assertIn("all 16+24+2 Euler rows", case["scope_review"])
         self.assertIn("physical native Book/clock/source selection remain separate and open",
@@ -1470,7 +1472,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_julia_base_link_frechet.json"
+            / "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1506,6 +1508,45 @@ class ProofArchitectureTests(unittest.TestCase):
             sourced["proof_dependencies"],
         )
         self.assertIn("h ≠ 0", sourced["elaborated_type"])
+
+        history_inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
+        )
+        history_inventory = json.loads(history_inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(history_inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertEqual(history_inventory["public_import_root"], "D0.All")
+        self.assertEqual(history_inventory["lean_source_digest"], lean_task_build.source_digest())
+        history_declarations = {row["name"]: row for row in history_inventory["declarations"]}
+        required_history_declarations = {
+            "D0.Geometry.finiteMatterMidpointHistory",
+            "D0.Geometry.finiteMatterMidpointHistory_next",
+            "D0.Geometry.finiteMatterForwardGradient_midpointHistory",
+            "D0.Geometry.twoComponentMatterNormSq_midpointHistoryGradient_eq_rate",
+            "D0.Geometry.finiteTimeNonvacuumBrinkmannProfile",
+            "D0.Geometry.finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm",
+        }
+        self.assertTrue(required_history_declarations.issubset(history_declarations))
+        for name in required_history_declarations:
+            row = history_declarations[name]
+            self.assertEqual(row["module"], module_name)
+            self.assertEqual(set(row["axioms"]), standard_axioms)
+            self.assertEqual(row["source_path"], module)
+            self.assertGreater(row["declaration_ranges"]["declaration"]["start"]["line"], 0)
+        chronological_source = history_declarations[
+            "D0.Geometry.finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm"
+        ]
+        self.assertIn(
+            "D0.Geometry.transverseFivePoint_nonvacuumBrinkmannProfile_eq_source",
+            chronological_source["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.twoComponentMatterNormSq_midpointHistoryGradient_eq_rate",
+            chronological_source["proof_dependencies"],
+        )
+        self.assertIn("ℕ", chronological_source["elaborated_type"])
+        self.assertIn("h ≠ 0", chronological_source["elaborated_type"])
 
     def test_proper_lorentz_orbit_is_discoverable_from_pinned_owner_and_lean(self) -> None:
         case = next(
@@ -1551,7 +1592,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_gram_orbit_shared_api_declarations_2026-10-26_julia_base_link_frechet.json"
+            / "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1829,7 +1870,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_midpoint_history.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -1900,7 +1941,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-26_10_results.json"
+            / "proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
@@ -2208,7 +2249,7 @@ class ProofArchitectureTests(unittest.TestCase):
         coordinate_inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
-            "julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet.json"
+            "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         self.assertIn(
             coordinate_inventory_path.relative_to(proof.ROOT).as_posix(),
@@ -2217,7 +2258,7 @@ class ProofArchitectureTests(unittest.TestCase):
         joint_frechet_inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
-            "julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet.json"
+            "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         self.assertIn(
             joint_frechet_inventory_path.relative_to(proof.ROOT).as_posix(),
@@ -2650,7 +2691,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_julia_base_link_frechet.json",
+            "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json",
             require_current=True,
         )
 
@@ -2920,7 +2961,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_julia_base_link_frechet.json"
+            / "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         inventory_bytes = inventory_path.read_bytes()
         inventory = json.loads(inventory_bytes)
@@ -2978,7 +3019,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_julia_base_link_frechet.json"
+            / "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
@@ -3052,7 +3093,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_matrix_partial_trace_current_declarations_2026-10-26_julia_base_link_frechet.json"
+            / "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -3137,7 +3178,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "archive_shift_topology_current_declarations_2026-10-26_julia_base_link_frechet.json"
+            / "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -3336,7 +3377,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "source_port_preparation_tensor_inventory_2026-10-26_julia_base_link_frechet.json"
+            / "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
@@ -3416,7 +3457,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "flat_tensor_shared_api_declarations_2026-10-26_julia_base_link_frechet.json"
+            / "proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
