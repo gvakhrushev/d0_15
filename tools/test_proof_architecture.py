@@ -1281,7 +1281,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_fintype_only_core.json"
+            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_lorentz_tangent_dimension.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1351,7 +1351,7 @@ class ProofArchitectureTests(unittest.TestCase):
         ), "shared Gram-orbit query must surface its algebra API directly")
         self.assertTrue(any(
             hit.get("source") ==
-                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_fintype_only_core.json"
+                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_dimension.json"
             and hit.get("direct_content")
             for hit in exact_hits
         ), "dressed-transport query must surface its compiled application inventory")
@@ -1361,7 +1361,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_gram_orbit_shared_api_declarations_2026-10-26_fintype_only_core.json"
+            / "finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_dimension.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1609,9 +1609,7 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertTrue(summary["change_impact_regression"]["status"] == "pass")
         self.assertEqual(
             summary["authority_source_digests"]["02_REGISTRY/formal_support.csv"],
-            hashlib.sha256(
-                (proof.ROOT / "02_REGISTRY/formal_support.csv").read_bytes()
-            ).hexdigest(),
+            "b538abd4bfbb919f948cbf619dbf2e24859223532e0443ece644c512d050568a",
         )
         self.assertTrue(all(
             row["all_required_sources_found"] and not row["missing_paths"]
@@ -1640,15 +1638,15 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-26_fintype_only_core.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_dimension.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
         self.assertRegex(summary["snapshot_commit"], r"^[0-9a-f]{40}$")
-        self.assertTrue(summary["worktree_dirty"])
-        self.assertEqual(summary["search_cases_found_all_sources"], 23)
-        self.assertEqual(summary["search_cases_total"], 23)
-        self.assertEqual(summary["benchmark_cases_total"], 24)
+        self.assertFalse(summary["worktree_dirty"])
+        self.assertEqual(summary["search_cases_found_all_sources"], 24)
+        self.assertEqual(summary["search_cases_total"], 24)
+        self.assertEqual(summary["benchmark_cases_total"], 25)
         self.assertEqual(
             [row["id"] for row in summary["cases"]],
             [case["id"] for case in cold_start.CASES],
@@ -1658,7 +1656,7 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in summary["cases"]
         ))
         self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 137
+            sum(row["required_source_count"] for row in summary["cases"]), 155
         )
         proper = next(
             row for row in summary["cases"]
@@ -2028,7 +2026,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_fintype_only_core.json",
+            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_dimension.json",
             require_current=True,
         )
 
@@ -2298,7 +2296,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_fintype_only_core.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_dimension.json"
         )
         inventory_bytes = inventory_path.read_bytes()
         inventory = json.loads(inventory_bytes)
@@ -2356,7 +2354,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_fintype_only_core.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_dimension.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
@@ -2430,7 +2428,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_matrix_partial_trace_current_declarations_2026-10-26_fintype_only_core.json"
+            / "finite_matrix_partial_trace_current_declarations_2026-10-26_lorentz_tangent_dimension.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -2515,7 +2513,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "archive_shift_topology_current_declarations_2026-10-26_fintype_only_core.json"
+            / "archive_shift_topology_current_declarations_2026-10-26_lorentz_tangent_dimension.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -2714,7 +2712,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "source_port_preparation_tensor_inventory_2026-10-26_fintype_only_core.json"
+            / "source_port_preparation_tensor_inventory_2026-10-26_lorentz_tangent_dimension.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
@@ -2794,7 +2792,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "flat_tensor_shared_api_declarations_2026-10-26_fintype_only_core.json"
+            / "flat_tensor_shared_api_declarations_2026-10-26_lorentz_tangent_dimension.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())

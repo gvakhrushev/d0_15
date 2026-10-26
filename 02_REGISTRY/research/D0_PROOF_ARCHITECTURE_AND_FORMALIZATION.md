@@ -8719,3 +8719,27 @@ Its clean source snapshot is `7f281bfaebc727e1a4f2ad36aca1d7f0b306f53f`
 The dimension theorem inherits the existing `rolePair_card` `native_decide`
 footprint and the standard classical axioms; the Julia derivative retains its
 existing archive-creator `native_decide` dependency. No new axiom is added.
+
+### Current compiled inventories after the Julia tangent refactor (26 October 2026)
+
+The Lean-source digest changed with the Julia tangent refactor, so the seven
+current compiled-inventory inputs used by architecture tests were extracted
+again from `D0.All`. The previous `*_fintype_only_core.json` snapshots remain
+unchanged. Each new file below was collected at clean snapshot
+`746ab3ecc2a9b57720e371a0ea102bf156f3bfb5`, with Lean-source digest
+`d81a7ad4f011da75b64419ff8b688ee22e8e46d05904c6b7ba54870304a83133` and
+Lean 4.30.0; every requested declaration resolved.
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_dimension.json` | 25/25 | `b16f0c49d622572509e780c3a0c63a59640cf602d71225d1f31ff0c34bfe4af7` |
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_lorentz_tangent_dimension.json` | 15/15 | `f13863a90271044ed5b6ebca126248418af231865104d22161cae101c775a754` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_dimension.json` | 36/36 | `082d76d1e75e354320434162c1934c1831e4aa0daaa75bba48c51ddfa3381ac5` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_lorentz_tangent_dimension.json` | 9/9 | `9166063b0ef7babebbab8cb98a8f85156e08c023d22535a79cae09e6abe87f64` |
+| `archive_shift_topology_current_declarations_2026-10-26_lorentz_tangent_dimension.json` | 26/26 | `b73df9589dabd6a01b28e514d62e51f93f0c8aec048063012b41009b68dea88f` |
+| `source_port_preparation_tensor_inventory_2026-10-26_lorentz_tangent_dimension.json` | 73/73 | `3ce333c70882704bc887b97fb57089187140aae790adbd412b68e6cff9496698` |
+| `flat_tensor_shared_api_declarations_2026-10-26_lorentz_tangent_dimension.json` | 4/4 | `a844923fa9adea8cd21f1eea5ead9af2311782d232c382b38053ea386bec99ce` |
+
+These are declaration-level current-source receipts, not semantic or C0
+acceptance. The declared theorem scopes, source and carrier obligations, and
+all physical selection premises keep their existing status.
