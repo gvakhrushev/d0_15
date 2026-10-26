@@ -269,3 +269,51 @@ Thus **all** \(\binom n2\) pair readouts, even after arbitrary future native bit
 **Book-cost guard:** (22) is the future **observation** quotient for the stated \(\lambda\) tests. If an allowed physically measured/paid history price or other original future CAR16/full128 test distinguishes \(x\) and \(x+1^n\), it must be INCLUDED in the admissible profile; then the alleged n−1-bit quotient is NOT a full physical D0 equivalence class. In particular no abstract finite bit-table symmetry can be promoted to a gravitational gauge or permission to omit Book source/cut/clock. The result instead supplies the exact mathematical test: prove the proposed equivalence preserves the **FULL original cost- and future-sensitive return profile** before applying D_min's shortest-description rule.
 
 This connects directly to the user's founding point: a register's distinguishable previous interaction exists as its CURRENT physical state; a further measurement does not need a third primordial historical comparator. When a distinction is invisible to every truly admissible future action/readout, the minimal faithful physical memory can quotient it. But no recorded state or source is erased **merely** because one convenient scalar action is unchanged. The scope is rigorous on this native Boolean subcarrier; the original four-fermion Julia128 and full all42 GR field interface retain their separate native algebra and admission hypotheses.
+
+
+## 9. THEOREM G — the SAME literal linear-clock native Golden global test has an EXPONENTIAL absolute original Book feedback rank; no unpaid free input
+
+The original n-bit global parity word of Theorem D is a concrete **full feedback** example, not merely a Born measurement. Keep EXACTLY its original full-column \(W_n\in\mathrm{SO}(2^{n+1})\), with n freely variable DATA bits x and one actual internally blank helper h. The ACTUAL input isometry is
+\[
+i:\mathbb C^{2^n}\to\mathbb C^{2^{n+1}},\quad
+i|x\rangle=|x\rangle|0_h\rangle,\quad
+P=ii^\dagger,\quad \operatorname{rank}P=2^n.
+\]
+There is no hidden independence premise: \(\mathbb C^{2^n}\) includes ALL superpositions/entanglements of the true n unknown input bits. This is a different CUT from the \(\psi_A^{\otimes n}\) known-blank SOURCE-preparation graph of §7bj, whose growing packets do NOT automatically multiply the protected input rank.
+
+From the EXACT original native word blocks (15) and original Golden \(p+p^2=1\),
+\[
+(G^2)_{00}=p-p^2=p^3,\qquad
+[(G^2)_{10}]^2=4p^3=1-p^6.
+\]
+Hence the TRUE active compression and feedback operator on ALL \(2^n\) free input columns are
+\[
+\boxed{
+C=i^\dagger W_n i
+=\sum_{\pi(x)=0}p^3|x\rangle\langle x|
++\sum_{\pi(x)=1}|x\rangle\langle x|,
+}
+\tag{24}
+\]
+\[
+\boxed{
+F=i^\dagger W_n^\dagger(I-P)W_n i
+=I-C^\dagger C
+=4p^3 P_{\rm even}.
+}
+\tag{25}
+\]
+Both parity subspaces have dimension \(2^{n-1}\) for n≥1, so the **complete original finite Book feedback determinant** is
+\[
+\boxed{
+\det(I-\zeta F)
+=(1-4\zeta p^3)^{2^{n-1}},\qquad
+J_n=-2^{n-1}\ln(1-4\zeta p^3)>0.
+}
+\tag{26}
+\]
+This is an EXACT source-owned \(\{G,CX\}\) formula with TRUE original \(\zeta=2^{-20}\), no new path-count law, no matrix-root/Slater tester, no phase-eigenvector choice, no thrown-away modes, no faked spectator rank and no uncharged RESET. Adding truly free oldRIGHT spectators multiplies this J by their honest protected input multiplicity. Adding genuinely BLANK work changes the full thermal dimension/clock but NOT automatically this protected rank.
+
+**Decisive physical scaling:** the COMPLETE primitive execution has linear length \(N=2n+2\), while the feedback INPUT CUT has \(r=2^n\) independent columns. Thus the positive J price increases like \(2^{n-1}\), even though the per-register observable h click remains a fixed \(4p^3\) for even and 0 for odd inputs. The normalized price \(J_n/\operatorname{rank}P=-\frac12\ln(1-4\zeta p^3)\) is constant in n; the absolute full price is not. This furnishes a fully native strong NO-GO against deriving \(\Gamma\)-normalized source suppression from short *code* or short *raw primitive clock* alone while silently growing independent input rank.
+
+This is still ONLY original Book feedback J. The full Book \(H+J+\mathrm{Info/Cost/other\ real\ terms}\) has its own TRUE scene, N, clock and all-mode thermal trace; (26) is not a claim its H cancels, or that this parity word is an Einstein-native stationary history. The exact unitary-source, geometry and M1 physical task selection remain separate obligations. But the example already ties the three crucial intrinsic quantities to ONE actual native carrier: real clock N, physical cut rank r and the full closed return spectrum.
