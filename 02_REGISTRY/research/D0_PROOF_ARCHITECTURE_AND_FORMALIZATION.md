@@ -9245,7 +9245,7 @@ or physical Book03/source/clock selection. Those remain separate mathematical
 and physical obligations; the positive family remains research evidence and
 no GR assembly status changes.
 
-### Midpoint-history retrieval checkpoint (26 October 2026)
+### Initial time-indexed midpoint-history retrieval checkpoint (26 October 2026)
 
 After the time-indexed midpoint theorem was added, the cold-start replay at
 clean snapshot `a7778a0327f3b6ca04674b403444603b1f584663` found all **158**
@@ -9276,3 +9276,29 @@ records runner SHA-256
 `94e8cb948cacc14b770350a14baf0c98329c689291ebc13635320b4870cdb5d8`.
 Neither retrieval replay changes a scientific acceptance or physical-selection
 status.
+
+### Accumulated midpoint-history refactor retrieval replay (26 October 2026)
+
+After the history was refactored through the canonical one-step API and the
+endpoint rate-sum theorem was added, a clean replay at snapshot
+`e625c3ef07a3a5c233466cae288bf22a59fae1cb` again found all **158** required
+references across **24/24** cases and passed **25/25** retrieval/source-impact
+checks. The positive nonvacuum case now uses six queries and finds all three
+required sources. The 8,961,344-byte raw output has SHA-256
+`09ac986188a29892ba10c600f0ac55e05bc39cf3737a4a8b98916d6782516cc7`; its
+7,959-byte compact receipt has SHA-256
+`8e18969dc94f73174eca02033992a16e7f00802288e13ff0ad122e0b318d90fb`.
+The runner SHA-256 is
+`993f2f66dd77b6e52fd83128405f4bee01cae55a82c61c09860ad3ea20d2002b`; the
+search engine SHA-256 is
+`adf78c418665c8c8c8f26367aed0d702df4ec6ec324e2365415d01a80402e26b`.
+
+The refreshed same-snapshot process comparison still finds the expected source
+for **7/7** explicitly source-scoped queries, compared with **0/7** for legacy
+assembly search. It retains the same response-size and owner-link limitations
+described above; no semantic review is inferred. Its 79,464-byte report has
+SHA-256 `866b257de1ac29411ba641b5ae504d051c45ab6215ad46e3acb12e8b327cd13c`.
+The replay receipts are
+[`proof_architecture_cold_start_summary_2026-10-26_midpoint_history.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_midpoint_history.json)
+and
+[`proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json).
