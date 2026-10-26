@@ -28736,3 +28736,221 @@ hostile reviews: the new finite step is the exact grading/block estimate
 No new executable certificate, Lean result, accepted assembly edge, task,
 registry status or claim is created. The affected structural checks and
 input provenance are recorded in the existing task brief.
+
+
+## 7ce. Generated time and the actual birth residual: composition with both complete field-source routes
+
+26 October2026. SAME #334 / constitutive/native-programme-v1. Phase:
+native realization and final composition. Input d23ca74a is preserved.
+The changed application is to the ACTUAL constrained history, rather than
+an independently varied preparation at every clock stage. Consume the
+causal-state and scalar-input theorems in
+sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md
+Sections2--3; paid-writer10.5,14.3; and7bq567,7bu595--598,7bw605--611,
+7cd657--672. No new clock, preparation selector or finite certificate is
+introduced. The two consumers are the remaining Rayleigh-source premise
+of the configured full-field bootstrap and of the original chronological
+Julia scale test. The residual binding in this section is explicitly the
+owned birth-state Rayleigh binding, not every operator called R.
+
+### 7ce.1 The clock is generated; its independently free variables must be identified
+
+Book01 states that time is recursion depth (Section01.6.1c), and its
+finite-section compatibility is P_(N+1,N) T_(bullet,N+1)=
+T_(bullet,N) P_(N+1,N). Book06 Sections06.8.F and06.40 give the archive
+return expansion and the scalar Golden recursion. These owners do not
+require an external clock. They also do not require the finite carrier
+dimension to increase at every tick: powers (QUQ)^k can circulate in the
+same archive. The return term PUQ(QUQ)^kQUP has k internal archive
+circulations and k+2 factors U; PUP is the separate direct term. Its index
+k is not automatically the number of all paid primitive operations.
+The AF inclusion index, recursive history depth and paid gate count keep
+their actual maps instead of being identified by notation.
+
+On an actual word T_(t+1)=g_t T_t, generated prefixes, cuts, factory flags
+and clock states are functions of the genuinely admitted controls.
+Paid-writer43--44 already supplies their backward adjoint on its stated
+canonical clock carrier. Here the general causal theorem is applied with
+the ACTUAL gradient of the full scene-stage H+J+R, including its preparation
+and work terms; the numerical cotangent43 is not transferred between
+different incidence operators. Therefore a free Euler equation for every independently
+mixed clock-preparation state is NOT an additional parent premise.
+This removes the previously proposed mandatory [Delta,rho_birth]=0
+condition on an unproved whole-clock unitary orbit. It does not remove a
+source of an actually free initial input, scene, observer or control.
+
+For clarity, if a different selected binding uses an actual normalized
+history amplitude Z, with s=Tr Z*Z and rho=ZZ*/s, its Rayleigh derivative is
+
+    delta R = Tr(rho delta Delta)
+              +(2/s) Re Tr[Z*(Delta-R I) delta Z].             (673)
+
+At Z=Gamma i M all three terms delta Gamma, delta i and delta M remain
+inside delta Z. This is a chain-rule application, not permission to
+replace the birth state below by a normalized whole-history ground state.
+The latter would change the physical preparation and price interface.
+
+### 7ce.2 Apply the existing scalar-effect theorem at the true birth boundary
+
+Use the SAME full33-scene, both Hodge grades and cyclic N>=3 incidence
+operator of7bh501/7bw605. Its exact C0 stage0 compression is
+
+    <0|Delta_hist|0> = (I-B_S) tensor I_internal,              (674)
+
+independent of EVERY temporal gate g_t. Keep an actual normalized scene
+vector chi and the birth embedding i_chi=|0> tensor chi tensor I_DATA,
+with zero C1 support. DATA here contains the complete admitted internal
+input fibre; blank and protected factors retain their original placement.
+Let M* M=Sigma_RIGHT with Tr Sigma_RIGHT=1. The feedback cut is the whole
+declared input fibre, not a projector chosen anew from the state M.
+Then the actual effect and expectation of the Rayleigh component are
+
+    G_R=i_chi* Delta_hist i_chi=lambda_chi I_DATA,
+    lambda_chi=<chi,(I-B_S)chi>,
+    R_birth=Tr M*G_R M=lambda_chi,
+    D_M R_birth=0 on M* M=Sigma_RIGHT.                       (675)
+
+Thus causal-boundary Theorem2 APPLIES: every allowed DATA preparation at
+fixed RIGHT-Gram solves this residual's preparation equation. No scene
+eigenvector, dark state, reset or new blank preparation is needed. The
+same statement holds for a supplied mixed scene and all preparations
+preserving its actual scene marginal. The full oldRIGHT multiplicity is
+not multiplied into a normalized expectation a second time.
+
+For an actually variable normalized scene marginal xi_S and graph B_S,
+the exact remaining source is
+
+    R_birth=1-Tr(xi_S B_S),
+    delta R_birth=-Tr(xi_S delta B_S)-Tr(B_S delta xi_S).     (676)
+
+If xi_S=Xi(theta) is generated by an upstream paid preparation, retain
+-Tr(B_S D Xi[delta theta]) together with that preparation's other price
+terms. Causal elimination determines this pullback; it does not erase it.
+Only if the admitted scene tangents span the full unitary orbit does its
+stationarity require [B_S,xi_S]=0. That commutator is NOT a requirement
+for DATA preparation within i_chi, nor for every recursively generated
+intermediate state. Likewise, a moved feedback cut which also moves the
+actual birth embedding keeps (676) or the full (673). The zero feedback
+cut derivative in7bw607 alone does not kill this Rayleigh boundary term.
+
+### 7ce.3 Consume the full bootstrap source, intrinsic metric and archive tower together
+
+First compare continuations with the SAME complete initial state and task.
+On7bu's internal field chart, the actual scene and B_S are fixed and all
+coframe, proper-Lorentz and matter coordinates enter its full internal
+operator/gate map. Hence675 is constant on that ENTIRE chart, not merely
+on the known Einstein solution family. Define the declared full master
+
+    S_hist=H01+J+R_birth.
+
+At each archive level n of7bw609--611, with the same actual scene marginal
+and normalized input, R_birth,n=lambda_chi. The original absolute anchor
+and complete field covector are consequently
+
+    S_hist,n(y)=H_n0(0)+beta^(-1)log rho_n
+                +rho_n J_n0(0)+lambda_chi
+                +rho_n[f_h(y)-f_h(0)],
+    D_y S_hist,n=rho_n D_y f_h.                              (677)
+
+Here rho_n=r_n/r_n0 is the actual positive trace multiplicity, not a time
+or physical-scale calibration. This consumes595 and611 without changing
+any action control, price normalization or source gain. The commutator
+metric592--594/596 and the AF metric transport604 are unchanged because
+the operator, representation and full paid word are unchanged. For the
+owned nonvacuum f_h=I_h(Y_h*+y), ALL16+24+2 field equations therefore
+persist in S_hist, including transverse directions to that family.
+The primitive implementation, metric-error and physical-refinement
+hypotheses remain exactly those of7bu/7bw; a compiler lookup is not
+silently differentiated.
+
+At the ACTUAL compiled involution centre,607 supplies zero H01+J source
+on every temporal unitary gate tangent, even scene-mixing tangents at
+that internal background. Equation674 supplies zero R_birth derivative
+on the same tangents with fixed actual birth input. Equation675 also
+solves every independent DATA-preparation tangent at fixed RIGHT-Gram:
+
+    D_(temporal gates, DATA preparation) S_hist |centre=0.  (678)
+
+Generated clock/prefix rows are eliminated by their owned causal adjoint.
+The existing H+J fixed-rank-cut rows remain zero, but the total S_hist cut
+rows vanish only when the same cut motion has zero ACTUAL birth-source
+pullback. Independent scene preparation, scalar conductances, Gram or
+normalization changes, and any additional work/Info effect retain their
+sources. Spatial-connection608 is not extended to R without evaluating
+Tr(rho_birth delta Delta), retaining internal correlations, and any actual
+preparation derivative in673;676 covers its stated scalar-scene variation.
+The configured source/metric regime now includes its
+true Rayleigh term and DATA-preparation equations; no larger free input
+orbit has been assumed in order to obstruct it.
+
+This is a substitution of the residual/application premise, not a
+selection of Einstein: the same argument works for any supplied smooth
+f_h allowed by7az. The actual placement/addressed WORK interface and the
+constitutive relation selecting the field graph remain the explicit
+native-application premises of7bw. No uniqueness of the microscopic
+formula is added as another veto to a declared theory interpretation.
+
+### 7ce.4 The same residual also closes the original Julia candidate's escape hatch
+
+Now apply674--676 to the DIFFERENT actual chronological Julia word and
+coherent cut of7cd. On its fixed-initial-state, fixed-scene field chart,
+R_birth is constant under its full original coframe/link variations.
+In particular along the exact radial direction of7cd659,
+
+    D_rad S_hist = D_rad(H_hist+J) > 0                     (679)
+
+on all sufficiently fine periodic meshes in7cd's uniformly controlled,
+freely dilatable domain. Its proof and all-n estimate666 are unchanged.
+Thus adding the owned birth Rayleigh value cannot cancel that candidate's
+positive scale source. This is a conditional exclusion for the declared
+H+J+R_birth, stronger than the previous H+J-only application; it is not an
+exclusion of every D0 realization or every residual binding.
+
+Internal time is compatible with this statement. Paid-writer14.4's
+retained calibration alpha_h=p^2 h^2/128 and 2n_h alpha_h=2p^2 forces
+n_h=128 h^(-2), when that horizon is integral. The all-n bound already
+includes it. Holding a word's discrete type/length fixed while varying
+its field gates does not posit an independently running external clock.
+Conversely, if a genuinely derived same-execution law makes alpha depend
+on the field, that dependence MUST enter the source. At fixed integer n,
+Q'=2Q changes the exact feedback derivative to
+
+    J'=2 kappa n z (alpha'+2alpha)
+         Tr[F^(-1) B^(2n-1) Q],
+    B=I-alpha Q, F=(1-z)I+z B^(2n).
+
+In the continuum the corresponding argument is delta(tau Q)=
+tau delta Q+(delta tau)Q. These formulas identify where an actual recursive
+calibration would act; no alpha' is chosen to enforce a desired equation.
+The Golden scalar recursion and the Feshbach path index alone do not
+supply that field-dependent map. Admission of the radial direction is
+still a retained premise of679, not a conclusion of counting ticks.
+
+### 7ce.5 Exact parent substitution and remaining application
+
+The application now uses the WHOLE declared H+J+R_birth on both owned
+routes. The configured source/metric tower keeps its all42 equations and
+actual DATA-preparation stationarity; the original Julia chart keeps a
+strictly positive scale source. Generated-time equations introduce no
+extra independently free clock-preparation obstacle. These are finite
+identities and existing analytic estimates, so no new numerical fixture
+or repeated Lean clock lemma is their decisive test.
+
+For a different selected native residual sum_omega xi_omega K_omega*
+K_omega, retain that actual operator and its complete paid-tape derivative;
+675 is not an identification theorem for it. The exact common-execution
+Gibbs/Info equation of paid-writer82 remains
+beta D S_hist+ell D P=D mathfrak D on its scene-marginal-preserving
+application. For wider scene-mixing temporal variations, the birth energy
+is still constant but the terminal energy need not be: retain the actual
+additional beta D(R_birth-R_terminal), as in7bs. Even D S_hist=0 does not
+imply D P=0 without the complete discrepancy source. A changed whole-history
+initial preparation must use673/676. No desired Info or compensating
+counterterm is assigned.
+
+The remaining parent task is the actual admitted field-and-preparation
+image and its selected complete valuation, consumed by the existing
+source-equivalence theorem. It is not to demand independent variation
+of every state on a generated time ladder. GR_closed=false; positive_gr,
+raw216 and physical D0-to-GR remain open. No independent assembly
+acceptance, lifecycle change or new task is asserted.

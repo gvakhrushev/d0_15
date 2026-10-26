@@ -14564,3 +14564,72 @@ validate_agent_protocol.py, validate_repo.py (889claims,31assumptions,
 The final review/provenance notes change no validated mathematical input or
 work metadata. Both incoming files remain exact prefixes; all new text uses
 LF. Publication is limited to these two owned paths; remote verification follows.
+
+
+### 26 October 2026 — generated time and the actual birth residual on both full-source routes
+
+Same #334; constitutive/native-programme-v1; native realization/final
+composition. Input d23ca74a is preserved. Primary7ce673--679 consumes the
+existing causal elimination and scalar-input preparation theorems,
+paid-writer10.5/14.3, full bootstrap source/metric/AF application7bu/7bw,
+and original chronological scale exclusion7cd. No new clock construction,
+certificate family, task, selector, registry or lifecycle state.
+
+Exact parent substitution: the actual stage0 birth compression is the
+scalar effect lambda_chi I_DATA for ANY actual normalized scene chi.
+Thus its full Rayleigh term is constant on the entire fixed-scene internal
+field chart, and every fixed-RIGHT DATA preparation is already stationary.
+The full declared H+J+R_birth now inherits the all16+24+2 source, metric and
+positive AF source gain of7bu/7bw, with its nonzero absolute residual value
+retained. At the actual compiled centre all temporal-gate and DATA-input
+first sources vanish. This does not extend blindly to cuts which move the
+birth embedding, independent scene preparations or moving graph/Gram rows.
+
+The SAME exact residual application strengthens7cd to H+J+R_birth:
+it cannot cancel that chronological candidate's positive radial source.
+The existing all-n estimate includes the clock/mesh schedule forced by
+the retained calibration. Admission of the free-scale direction remains
+conditional; a derived field-dependent clock step must be differentiated.
+No independent external clock or free variation of every generated prefix
+is required. The former mandatory whole-clock preparation commutator and
+scene commutator for DATA-only preparation are withdrawn as unjustified
+extensions of the actual variation domain.
+
+Retained source: -Tr(xi_S delta B_S)-Tr(B_S delta xi_S), pulled back through
+any actual upstream preparation together with its own complete price.
+The general paid-tape residual sum xi K* K is not replaced by this Rayleigh
+binding, and the Gibbs identity does not equate HJR stationarity with
+Cost-Info stationarity. Remaining application is the admitted joint field/
+preparation image and its selected complete valuation. Arbitrary supplied
+action germs still pass the bootstrap, so no Einstein selection is inferred.
+GR_closed=false; physical closure and original acceptance scope unchanged.
+
+Smallest decisive check is the exact stage0 compression plus the owned
+scalar-effect and full-source identities. No executable mathematical input
+changes and no prior mathematical suite or Lean proof is replayed. Source
+review and affected structural validation follow.
+
+
+Final source-only review ACCEPT: full_path_metric_application and
+selected_bootstrap_application. Their corrections are applied: the actual
+spatial-connection residual uses the full retained state, not only its
+scene marginal; the wider temporal Gibbs identity retains the birth-minus-
+terminal energy source; the radial definition is7cd659. These are scoped
+source reviews, not independent assembly acceptance. The assembly template
+was consumed; no positive physical-selection premise is marked discharged.
+Final section7ce canonical-LF SHA256:
+c1c370ce377cf6b85c4325c5b4d05c6ad69792a9f91f3782f7a58d09d2899ea4.
+
+Concurrent published commits fc0cebf3 and54674930 (original24-ray
+future-complete predictor and checker) were inspected and incorporated
+unchanged. They touch neither owned path and are not replayed for this
+application. Publication base is546749303e2d7a1dc261d25b50d03809b92093d1;
+only the two existing owned paths receive this synthesis.
+
+Affected structural validation PASS: validate_work.py,
+validate_agent_protocol.py, validate_repo.py (889claims/31assumptions/
+58aliases/183formal_support/918Leanclosure; warnings0), and git diff --check.
+Only the final reference/review/provenance notes followed those checks;
+no executable proof, registry or lifecycle input changed. No mathematical
+replay or new independent acceptance is claimed. Both original owned
+files remain exact prefixes; publication and remote blob verification follow.
