@@ -13,6 +13,46 @@ Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 Assembly-Carrier: `native-programme-v1`
 Assembly-Slot: `constitutive`
 
+## 26 October: internal-time capacity and the original scene-source application
+
+Same #334, native realization/final composition; this is a route correction,
+not a new certificate or physical-selection claim. Consume the user's intended
+endogenous-time regime: the current readable memory is saturated, future blank
+registers are not supplied in advance, and the next registered distinction must
+preserve the required old distinctions. A preallocated finite clock cannot
+refute the resulting need for more memory. `FixedDetectorTimeLadder` uses
+unbounded integer-valued states and does not prove retention of a full history
+in saturated finite memory. Reuse Book00 section00.3a's orthogonal-registration
+bound, `PreparationMemoryBound` and the existing
+[path-archive growth owner](../../02_REGISTRY/research/A4D_NATIVE_BOOK_PATH_ARCHIVE_GROWTH_AND_PERRON_PRESSURE_FORCING_2026_10_19.md).
+
+The [native Fibonacci record activation](../../02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md)
+already embeds the full four-coordinate recorder in three AF refinements,
+preserves every old LEFT/RIGHT observable and activates a nonzero new-detail
+component. Use that actual map; passive inclusion alone does not create a
+record. Its three-level resource theorem is not yet an automatic physical
+tick law. Preserve the actual code-depth map F->0, R->10 and its pending sector;
+do not identify primitive count, code depth, full GNS dimension and active
+rank(P) merely because all are indexed by integers. A new distinguishable
+record at exhausted capacity forces growth of its full readable carrier;
+growth of rank(P) on every machine operation is a separate statement.
+
+For the direct Book03 default, keep the same scene Laplacian element on its
+represented finite module: Delta_full=pi(L_sym). With the actual tensor
+representation this is L_sym tensor I_K, with the full additive heat price
+log(dim K)/beta retained. Noncommuting RawZone gates do not invalidate that
+definition or require temporal-incidence501. The complete joint derivative
+is already owned in `A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS`, section6.7;
+do not reconstruct it. Neither the metric of7bu nor the heat exclusion7cd
+transfers from their declared501 operator to this default without a map.
+
+Next parent application: derive the SAME history/refinement update of the
+scene, pairing, actual Book cut and chronological source primitives, then
+apply that existing whole-source derivative and the GR recovery owners.
+The actual field/scene map and selected full valuation remain open. No new
+external clock, independent variation of every generated prefix, or compulsory
+Cartesian history graph is a prerequisite. GR_closed=false.
+
 ## 22 October: consume real original 0/10 paid-code full42 root and quantified complete-source robustness
 
 The [exact unpadded 0/10 42-root receipt](../../02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json) now includes ALL 16+24+2 original finite fields and literal F/R output charges 1 and 2; its open-ended nonflat rank-two exact stationary theorem renders historical pureboost all42 root searches obsolete for the full field space. The [new strict all42 source robust consumer](../../02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md) consumes its completed interval proof without changing original receipt or scientific source: ANY continuous additional correctly normalized all42 source of sup <=1e-22 on the radius-1e-20 ball has an exact mathematical root, no "other 41 compatible rows" premise; if Lip<=0.01 the root is unique. A genuine C2 correction with Hessian norm<=0.01 cannot make the still-indefinite full-field Hessian a minimum. New narrow checker: sources/d0_original_unpadded42_2026-10-22/check_unpadded42_full_source_robustness.py.
@@ -14347,8 +14387,10 @@ heat. Its cutoff suppression does not extend to128 outcomes.
 The direct-source consumer is still Section19(130), with full moving cuts,
 pairings, preparation, scene and actual stage derivatives. Monolith7bh500
 shows why the scene-homogeneous formula cannot be silently assigned to the
-actual RawZone source port: [C_S,R_port]_(01)=-11/8520. For that placement use
-7bh501-504's complete cochain differential, not an endpoint-only character.
+actual RawZone source port: [C_S,R_port]_(01)=-11/8520. If the declared501
+incidence realization is retained, use7bh501-504's complete cochain
+differential, not an endpoint-only character. This is not a requirement to
+replace the original Book03 default scene Laplacian by501.
 Book01 Section01.4.1 supplies six observable-section obligations; it does not
 identify any one of the proposed active cuts or its field tangent image.
 Book06 Section06.1 lists distinct forgetting interfaces. Keep their types.
