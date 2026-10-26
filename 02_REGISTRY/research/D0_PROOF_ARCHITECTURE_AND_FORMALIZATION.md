@@ -8434,11 +8434,19 @@ footprint for the definition. That declaration's footprint is
 readout definition alone, not the finite CAR applications that consume it.
 
 The Julia cold-start case now has **25** queries and **16** required source
-references, including the exact readout inventory. Its targeted replay found
-all **16/16** sources; the exact API query ranked the compiled inventory and
-Lean module first and second. The full aggregate replay after this query and
-inventory addition remains pending. The source owner remains pinned to #334
-commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
+references, including the exact readout inventory. The full replay ran at
+clean commit `e50f141dc1209a8adc7c320be98e272c73eaf602`: all **24/24** search
+cases found their required sources, the **25-case** benchmark passed, all
+**147** required source references were found, and the source-change/unrelated-
+prose impact control passed. The Julia case found **16/16** sources. Its exact
+API query ranked the compiled inventory, this primary artifact, and the Lean
+module in positions 1–3. The 8,260,324-byte output has SHA-256
+`78798e6396de210c92f2411927be7c03254463c28b76d8c40b28479bae88e9fe`; the
+compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_eq27_readout_api.json`,
+SHA-256 `12f1d2186515af79bd41697c4b42cc3d0eb95667509de17f46eb52629cc9bd59`.
+The source owner remains pinned to #334 commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
 `1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §§8.4–8.5. The refactor does not
 prove the 24 link derivatives, full all-jet pullback, physical admission,
 complete price/source selection, #334 acceptance, `GR_closed`, or independent
