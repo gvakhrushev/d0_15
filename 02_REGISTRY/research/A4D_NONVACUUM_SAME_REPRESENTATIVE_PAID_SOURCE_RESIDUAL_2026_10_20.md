@@ -28108,3 +28108,317 @@ Run from this directory:
 The NumPy/SciPy script reconstructs all16 exterior grades, all32 paired Julia factors and their true derivatives; verifies the finite configured source equation and actual midpoint CAR increments; computes the complete two-round port source, all40 column variations and full two material rows; checks the normalized preparation finite difference; reads the same Ricci/Weyl via the covariantly transported probes; and checks the exact parity controls. On the smaller L4 fixture it reconstructs all64 original Walsh controller rows and all128 port maps, and compares the direct two-round conditional-port sum with (5). The latter includes all16384 ordered records by exact contraction, not an independence assumption.
 
 Author replay: Python3.13.5, NumPy2.3.5, SciPy1.17.0. The complete receipt contains the actual source vector and explicit false status flags for unproved physical identifications. This packet adds no BOOK/claim/assembly status or workflow change. Independent scientific review is required before an accepted parent substitution.
+
+
+## 7cc. Execute the coherent comparison controller and cut with even Golden words
+
+26 October 2026. SAME #334, constitutive/native-programme-v1; native
+realization and final composition, input11b4f523ddece8878e5348b9c1d47404f61078df.
+This is a bounded application INSIDE the existing7by/7cb reciprocal owner.
+The changed input is a KNOWN coherent even-Golden recorder and an actual
+Hermitian target. It supplies its controller and coherent cut/readback;
+it does not derive a new gravitational source or select a constitutive law.
+
+### Use the owned even-power control, not the forbidden controlled G
+
+Put p=phi^-1, a=sqrt(p), let P be the actual source port, c an ACTIVE
+logical bit, and C=CX(P,c). Define the complete recorder
+
+    R=C G_P^2 C,
+    R(|0>_P tensor psi)=p^3 |0>_P tensor psi
+                        +2pa |1>_P tensor X_c psi.            (650)
+
+Here p^6+4p^3=1. This is an actual coherent random-frame recorder on c,
+with the port as its frame register. It is a DIFFERENT word and interface
+from7cb649's one-G transfer/reset. All input and failure columns remain.
+Its two frames I,X are known and no fair resource or unknown eta is prepared.
+
+Consume the already-owned controlled-G^2 echo (full-source13ag boundary,
+lines1341-1342) and the actual source-I inverse7j. Chronologically,
+
+    S: C; CX(o,P); InvG_P; CX(o,P); G_P; C,
+    S=diag(I,R) on the free orientation bit o,
+    InvG_P=SourceI; SourceI; G_P; SourceI; SourceI.            (651)
+
+Thus S has EXACTLY2G+4SourceI+4CX, ten raw stages. Exchange G and InvG
+in that echo for the optimized S*: its inventory is identical.
+No controlled-CX, Toffoli, CZ, conditioned target or matrix-root primitive
+is used. Source Spin is restored on EVERY column, not just a prepared
+spin ray; oldRIGHT is untouched. This uses the declared addressed
+G_CX_SOURCE_I profile and its ONE physical source-port/spin interface.
+It does not derive inward CX or internal placement from the literal
+outward-only RawZone hardware. The odd-G obstruction7am338-339 remains.
+
+### Keep both controller values; no known-one preparation is needed
+
+Let U_t(Y) be the existing complete Hermitian-involution target, with its
+already supplied computational-blank/protected-input cut P_t of rank r,
+full Role/test representation a, and actual target word. This is the
+intended7bu cut, not an arbitrary rank-r plane declared preparable. An
+alternative target cut must bring its own already paid encoder. Introduce
+the port as a genuine spectator extension
+T=I_P tensor U_t before the recorder, and E=|0><0|_P tensor P_t.
+The identity on P must hold on ALL columns. If the target borrows the
+physical source port, use the owned full-column SWAP routing to its
+logical target port and include every routing primitive in N_t; an
+unrestored target-port state cannot be called this spectator extension.
+Keep TWO free ACTIVE controller bits k,o, with arbitrary joint inputs,
+including entanglement with the target and protected oldRIGHT. Put
+
+    P0=I_(k,o) tensor E,       M=CX(k,o) tensor T,
+    U_enc=S M S*,             P_enc=S P0 S*.                  (652)
+
+T is independent of k,o. Hence M and U_enc are full Hermitian unitaries,
+including every k=0 column. On k=1, U_enc is the actual reciprocal
+[[0,T R*],[R T,0]]. On k=0 it is diag(T,R T R*). Both sectors are retained;
+the second is not called an orientation-flipping comparison. Only ONE
+ordinary target execution occurs in M. The controller overhead for U_enc
+is21 raw stages, including the real CX(k,o).
+
+Since CX(k,o) preserves the entire free controller input space, exact
+compression gives, on the complete retained space,
+
+    F_enc=S (I_(k,o) tensor [|0><0|_P tensor F_t]) S*,
+    F_t=P_t U_t*(I-P_t)U_t P_t,
+    rank P_enc=4r,    J_enc=4J_t,    D J_enc=4D J_t.           (653)
+
+The derivative identity is on any supplied differentiable target family
+with this fixed carrier and clock. It does not construct a smooth selector
+of discrete native words; finite-word source contrasts retain their owned
+common-clock/error application.
+The gain4 is the actual free-input multiplicity, not a branch average,
+postselection, likelihood renormalization or new physical coefficient.
+There is no rank anchor: this uses the minimal COHERENT reverse space
+R E R*, whose rank is r. All complementary columns remain in the heat.
+
+For the ALL-COLUMN representation A_enc=S(I_(k,o,P) tensor a)S*,
+
+    [U_enc,A_enc]=S(CX(k,o) tensor [T,I_P tensor a])S*,
+    ||[U_enc,A_enc]||=||[U_t,a]||.                            (654)
+
+Thus the existing prefix/Role commutator metric is transported without
+attenuation or a new complement-extension oracle. Involutivity alone
+does not make F_t zero: that would additionally require [U_t,P_t]=0.
+
+P_enc is genuinely prepared by the SAME ten-stage S from the ordinary
+blank input P0, and coherently read back by S*. It is NOT the previous
+readonly whole-record Q_full. Generally it fails to commute with the
+fine port-pointer projectors; its predicate uses inverse coherent
+readback before the actual target/blank test. A permanently sealed or
+dephased new tape cannot be substituted for this mutable coherent work.
+
+### Charge preparation and readback in the very same complete clock
+
+The following actual chronological cycle includes them both:
+
+    S; [S*; CX(k,o); target; S]; S*.                          (655)
+
+The middle bracket is the executed U_enc. The complete endpoint is M
+on ALL columns. It has N=40+N_t+1 raw stages, not N_t and not21+N_t.
+Starting the same cyclic history just after its first S instead gives
+the monodromy U_enc and transported cut P_enc. This is the same paid
+cycle in a different marked frame, not a free initial preparation.
+
+On the inherited INTERNAL placement g_j=I_scene tensor u_j, use the
+complete paired Hodge from501 and the involution/prefix theorem7bw.
+If U_t has d_+,d_- eigenvectors at +1,-1, the full endpoint has
+
+    m_+=2(3d_+ + d_-),    m_-=2(d_+ +3d_-),
+    Z01=m_+ z_N(0)+m_- z_N(pi),
+    B_cycle=beta^-1 log Z01 +4J_t.                           (656)
+
+z_N is exactly7by624's full33-scene/392-cochain function, including
+its359N excess modes. The port contributes its TWO full columns,
+although it is blank on the retained input. Source Spin, controllers,
+unused target columns and oldRIGHT retain their actual multiplicities.
+No log baseline is removed. Fixed beta,z and the actual fixed N are
+hypotheses of a field derivative; rank/time comparisons keep their price.
+
+For a target conjugate to a fixed involution, m_+,m_- are field constant.
+Consequently the COMPLETE field covector is4D J_t. At the existing7bu
+projection-return centre, all independent full temporal-unitary and
+fixed-rank-cut sources vanish by7az437/7bw606, including directions
+breaking the constructed conjugacy. The heat part alone vanishes on
+the stated internal background; a general unsharp F_t does NOT acquire
+zero independent feedback normals. Scalar scene weights, pairings,
+coframes, physical placement and any genuinely additional price terms
+retain their original equations and application obligations.
+
+For the supplied7bu GR target, whose J_t(Y)-J_t(Y*)=I_h(Y)-I_h(Y*),
+this is the whole-source comparison D B_cycle=4D I_h with the SAME
+metric and the existing exact all-mesh nonvacuum consumer. No new
+field action is inferred: setting the target to identity makes the
+entire return source zero. The recorder does not generate Einstein
+dynamics. Target implementation/constitutive selection, actual internal
+placement, physical h-refinement and GR evolution remain open.
+
+### The decisive changed-word check and its exact scope
+
+The checker below uses the ORIGINAL native_execution.py matrices and
+validation, SHA256222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+It executes all256 columns for k,o,P,c,q, Spin4 and oldRIGHT2. The
+nontrivial literal target is G_q CX(c,q) G_q^-1, including its six
+actual routing CX. The comparator has34 stages; the fully paid cycle
+has54:10G+24CX+20SourceI. Its heat multiplicities are160/96, cut rank64,
+and J=-32 log(1-z p^6), four times the actual target determinant.
+This fixture has UNsharp return0,p^6 and is not the primary projection
+centre. The algebraic theorem, not this small fixture, supplies the
+conditional whole-field application.
+
+The code also validates the genuine tensor extension with FULL CAR16
+free on wires7-10 and oldRIGHT128 on11-17, source Spin5/6, and the actual
+logical/controller wires0-4. Full dimension262144 and input rank65536
+include every spectator; no large array is allocated and no new full-CAR
+gravity calculation is claimed. The noncommuting Role test, non-readonly
+cut, complete paid-cycle cancellation and no-target/no-source control
+are retained. The new check is reproduced below; no old heat, gravity,
+Slater, full128, Lean or incoming-math suite is replayed.
+
+**Exact parent application:** replace the abstract controlled-target,
+unknown reverse-state preparation and nonpower paired-rank prerequisites
+of THIS coherent comparison by651-655 in the already declared profile.
+Do not transfer that replacement to7cb's different readonly/irreversible
+task. Complete-cycle endpoint cancellation is explicit: this is a paid
+implementation of the existing target source, not an additional source,
+a mandatory physical Book-boundary choice or an assembly discharge.
+GR_closed=false; #334 stays Draft, positive_gr/raw216 retain their scope.
+
+
+```python
+import importlib.util, json, sys, hashlib
+from pathlib import Path
+import sympy as sp
+from sympy.polys.matrices import DomainMatrix as DM
+ROOT=Path.cwd().resolve()
+SRC=ROOT/"02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+spec=importlib.util.spec_from_file_location("native_even26",SRC)
+N=importlib.util.module_from_spec(spec);sys.modules[spec.name]=N;spec.loader.exec_module(N)
+K=N.GOLDEN_FIELD
+checks=0
+def require(x,label):
+    global checks
+    checks+=1
+    if not x: raise AssertionError(label)
+def dm(x): return DM.from_Matrix(sp.Matrix(x)).convert_to(K)
+def eq(x,y): return x.shape==y.shape and (x-y).is_zero_matrix
+# ALL inputs: k0,o1,P2,c3,q4,Spin5/6,oldRIGHT7. Only P,q are blank.
+k,o,P,c,q=0,1,2,3,4
+SI=N.Gate("SourceI",(P,5,6))
+def G(w): return N.Gate("G",(w,))
+def CX(a,b): return N.Gate("CX",(a,b))
+def exe(gs,blanks=(P,q)):
+    return N.Execution(8,blanks,(7,),tuple(gs),N.G_CX_SOURCE_I,P,(5,6),(P,c,q))
+def inv(gs): return N.inverse_word(exe(gs),max_qubits=8,max_expanded_stages=1000)
+cache={}
+def gm(g):
+    if g not in cache: cache[g]=dm(N.gate_matrix(exe(()),g,max_qubits=8))
+    return cache[g]
+I=DM.eye((256,256),K)
+def word(gs):
+    N.validate_execution(exe(gs),max_qubits=8,max_expanded_stages=1000)
+    w=I
+    for g in gs: w=gm(g).matmul(w)
+    return w
+C=CX(P,c);B=CX(o,P)
+IG=(SI,SI,G(P),SI,SI)
+Sg=(C,B,*IG,B,G(P),C)
+# Controlled inverse is the same echo with G and InvG exchanged.
+Sig=(C,B,G(P),B,*IG,C)
+S=word(Sg);Sinv=word(Sig)
+require(len(Sg)==len(Sig)==10,"real ten-stage controller")
+require(eq(Sinv,S.transpose()),"optimized ALL-column inverse")
+require(eq(S.matmul(Sinv),I),"controller orthogonality")
+R=word((C,G(P),G(P),C))
+def diag_bit(w,value):
+    return dm(sp.diag(*[int(((j>>(7-w))&1)==value) for j in range(256)]))
+O0=diag_bit(o,0);O1=diag_bit(o,1)
+require(eq(S,O0+O1.matmul(R)),"actual controlled recorder")
+# Actual nonconstant target: G_q CX(c,q) G_q^-1, with raw port routing.
+tg=(*inv((G(q),)),CX(c,q),G(q))
+T=word(tg)
+require(eq(T,T.transpose()) and eq(T.matmul(T),I),"full target involution")
+Qg=gm(CX(k,o))
+M=Qg.matmul(T)
+require(eq(M,M.transpose()) and eq(M.matmul(M),I),"all free-k sectors")
+ug=(*Sig,CX(k,o),*tg,*Sg)
+U=word(ug)
+require(eq(U,S.matmul(M).matmul(Sinv)),"executed complete reciprocal extension")
+require(eq(U,U.transpose()) and eq(U.matmul(U),I),"whole enlarged involution")
+E=dm(N.cut_projector(exe(()),max_qubits=8))
+Enc=S.matmul(E).matmul(Sinv)
+F=lambda u,p: p-p.matmul(u.transpose()).matmul(p).matmul(u).matmul(p)
+FM=F(M,E);FU=F(U,Enc)
+require(eq(FU,S.matmul(FM).matmul(Sinv)),"full escape transport")
+# Target leakage on c=1 is p^6, all c=0 rows zero; FOUR k/o copies retained.
+lam=K.from_sympy(N.P**6)
+Ec1=E.matmul(diag_bit(c,1))
+require(eq(FM,Ec1.scalarmul(lam)),"nonconstant actual target leakage, multiplicity32")
+require(sp.trace(Enc.to_Matrix())==64,"actual encoded cut rank64")
+require(sp.trace(Ec1.to_Matrix())==32,"true source multiplicity32")
+# Full source determinant, symbol z: four times the d=32 target with rank16.
+z=sp.symbols("z")
+det_target=(1-z*N.P**6)**8
+require(sp.expand(det_target**4-(1-z*N.P**6)**32)==0,"determinant source gain4")
+# Noncommuting target test and complete operator identity.
+A=diag_bit(q,0)-diag_bit(q,1)
+AL=S.matmul(A).matmul(Sinv)
+lhs=U.matmul(AL)-AL.matmul(U)
+rhs=S.matmul(Qg).matmul(T.matmul(A)-A.matmul(T)).matmul(Sinv)
+require(eq(lhs,rhs) and not lhs.is_zero_matrix,"all-column noncommuting metric intertwiner")
+# Qmin is coherent, NOT the existing readonly pointer hull.
+require(not (Enc.matmul(diag_bit(P,0))-diag_bit(P,0).matmul(Enc)).is_zero_matrix,
+        "encoded cut not readonly-pointer cut")
+# Full blank-to-blank paid cycle: preparer, comparator, readback; never discard stages.
+cyc=(*Sg,*ug,*Sig)
+W=word(cyc)
+require(eq(W,M),"paid cycle exact endpoint")
+require(eq(F(W,E),FM),"paid complete blank-cut feedback")
+for gs,want in [(Sg,(2,4,4)),(Sig,(2,4,4)),(tg,(2,7,4)),(ug,(6,16,12)),(cyc,(10,24,20))]:
+    v=N.inventory(exe(gs),max_qubits=8,max_expanded_stages=1000)
+    require((v.g_count,v.cx_count,v.source_i_count)==want,"literal primitive inventory")
+require(len(ug)==34 and len(cyc)==54,"actual complete clocks")
+# All unprepared columns count.  T has multiplicities192/64 in dimension256.
+trT=sp.trace(T.to_Matrix());trM=sp.trace(M.to_Matrix())
+require(trT==128 and trM==64,"whole heat plus/minus counts")
+require((256+trM)//2==160 and (256-trM)//2==96,"heat multiplicities160/96")
+# tensor extension retains FULL CAR16 and oldRIGHT128, not a 2D CAR substitute.
+extended=N.Execution(18,(P,q),tuple(range(11,18)),tuple(cyc),N.G_CX_SOURCE_I,P,(5,6),(P,c,q))
+N.validate_execution(extended,max_qubits=18,max_expanded_stages=1000)
+vi=N.inventory(extended,max_qubits=18,max_expanded_stages=1000)
+require(vi.full_dimension==262144 and vi.cut_rank==65536,"full tensor extension")
+# Remove the target: recorder does NOT itself produce an Einstein source.
+require(eq(F(word((*Sig,CX(k,o),*Sg)),Enc),dm(sp.zeros(256))),"no target no source")
+result=json.dumps({"checks":checks,"ordinary_python_assertions":__debug__,
+ "native_source_sha256":hashlib.sha256(SRC.read_bytes()).hexdigest(),
+ "all_columns":256,"controller_stages":10,"comparator_stages":34,
+ "fully_paid_cycle_stages":54,"cut_rank":64,"heat_multiplicities":[160,96],
+ "source_gain":4,"target_escape":"p^6, multiplicity8; lifted multiplicity32",
+ "extended_full_dimension":vi.full_dimension,"extended_cut_rank":vi.cut_rank,
+ "scope":"coherent addressed-profile application; target and internal placement supplied; no GR closure"},indent=2)
+print(result)
+Path(__file__).with_suffix(".json").write_text(result+"\n",encoding="utf-8")
+```
+
+Observed final ordinary-Python receipt (exit0, assertions enabled):
+
+```json
+{
+  "checks": 27,
+  "ordinary_python_assertions": true,
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "all_columns": 256,
+  "controller_stages": 10,
+  "comparator_stages": 34,
+  "fully_paid_cycle_stages": 54,
+  "cut_rank": 64,
+  "heat_multiplicities": [
+    160,
+    96
+  ],
+  "source_gain": 4,
+  "target_escape": "p^6, multiplicity8; lifted multiplicity32",
+  "extended_full_dimension": 262144,
+  "extended_cut_rank": 65536,
+  "scope": "coherent addressed-profile application; target and internal placement supplied; no GR closure"
+}
+```

@@ -14405,3 +14405,78 @@ Its entire proof/checker/receipt and brief are retained byte-for-byte.
 That positive result narrows the reciprocal compiler premise; its actual
 paired cut, controller, internal placement and field graph remain explicit.
 No incoming calculation was replayed for this routing edit.
+
+
+### 26 October 2026 — actual even-Golden coherent controller and paid cut application
+
+Same #334, native realization/final composition, constitutive/native-programme-v1.
+Primary7cc650-656 applies the existing7by/7cb reciprocal result rather than
+opening a new certificate family. Input11b4f523 is preserved byte-for-byte.
+The changed input is a known R=CX(P,c) G_P^2 CX(P,c), not the odd-G649 word.
+
+Exact bounded substitution: the actual10-stage controlled-R and its10-stage
+inverse provide the coherent rank-preserving cut preparer/readback. One
+ordinary Hermitian target execution suffices; no primitive controlled-target,
+Toffoli, unknown apparatus state or sharp known-one preparation is required.
+Both controller bits are free actual inputs. The complete source is4DJ_t
+and the complete commutator metric is unchanged. This is a multiplicity gain
+of an existing source, not a new gravitational action.
+
+The very same blank-input cycle pays preparation, comparator and readback:
+N=40+N_t+1. Its endpoint is CX(k,o) tensor U_t; its marked post-preparation
+frame has the encoded controller/cut. Both descriptions retain every clock,
+Spin, unused column and oldRIGHT mode. The heat uses this actual N.
+The concrete routed target has N_t=13: the whole54-stage word has
+10G+24CX+20SourceI, full dimension256, cut64, heat multiplicities160/96,
+and exact J=-32log(1-z p^6). This unsharp fixture is not claimed to have
+zero ambient feedback source. The existing GR projection centre separately
+supplies the inherited all-normal zero theorem under its own hypotheses.
+
+Retained application: actual target implementation and constitutive selection,
+internal scene placement, physical mesh/clock interpretation and evolution.
+The coherent cut is not the readonly whole-record hull; the new recorder work
+is reversibly uncomputed. No permanent/sealed tape or mandatory D_min choice
+is claimed. The owned no-target control gives zero source. GR_closed=false.
+No assembly discharge, new task/PR, registry/BOOK edit or lifecycle change.
+
+Smallest decisive test: only the new native-word/source/metric application;
+ordinary CPython with assertions enabled, final exit0,27 explicit require
+checks on all256 columns. The original native_execution.py source hash is
+unchanged222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+The exact eighteen-wire tensor extension keeps FULL CAR16 and oldRIGHT128;
+its dimension262144 and cut65536 are validated without a large allocation.
+No prior math/Lean/full128/Slater/heat suite replay is claimed.
+The first successful calculation used an absolute repository path; the final
+reproduction uses the repository working directory and writes its observed
+receipt. Mathematical inputs and checks were unchanged.
+
+Embedded executed checker5658bytes SHA256
+d97655b0e374d3077842ec4c7d9d7c8d6f90ea5c1be074acf9092c01b4336c9d.
+Observed receipt SHA256
+b5ff09c372106aea4a15589e9f75e5665cbbe87931593a0c6823f7a800bf5ef3.
+Initial whole7cc15033bytes SHA256
+0e44b59d12e73ae6ce2cc8323aa2d3223fd5c7d47d66b697017e26871af63c06.
+Assembly template consumed; this is supporting implementation with its exact
+remaining physical application, not an invented positive acceptance edge.
+Final source-only review and affected structural validation follow.
+
+
+Final source-only reviews ACCEPT from selected_bootstrap_application and
+full_path_metric_application. Their cut-type correction is applied: the
+target brings its computational-blank/protected-input cut or its own paid
+encoder; the port is restored on ALL columns and routing is counted in N_t.
+The final text also retains the supplied differentiable-family / fixed-clock
+hypothesis. No checker input or result changed after its final run.
+Final whole7cc15749bytes SHA256
+dfbf5990a9a763c5ed46159843047610e995b22bb6eeea11bb81fde158242f28.
+This is source review, not independent assembly acceptance.
+
+Affected final validation PASS: validate_work.py, validate_agent_protocol.py,
+validate_repo.py (889claims/31assumptions/58aliases/183formal_support/
+918Leanclosure; warnings0), and git diff --check. No registry, assembly
+binding or Lean input changed; no other mathematical replay is claimed.
+The embedded checker is byte-exact to the executed file. Removing7cc
+restores the incoming primary exactly, SHA256
+197d0bf8f64daa4ff09e0d54e8488a89f1912111595e30d6a0965cb9dbb72a71.
+The incoming brief is preserved as an exact prefix. Only the two existing
+owned paths change. Publication and remote blob verification follow.
