@@ -8768,3 +8768,71 @@ All **63/63** proof-architecture tests then passed against the refreshed
 compiled inventories and summary. Semantic scope review remains manual;
 neither retrieval success nor this finite tangent application accepts C0 or
 closes a physical premise.
+
+### Explicit canonical coordinates for the Julia endpoint differential (26 October 2026)
+
+The next application now consumes the shared six-coordinate Lorentz tangent
+equivalence directly. `roleLorentzTangentParametersEquivCoordinates` is a
+linear equivalence from the four-role tangent parameter to
+`Role → RolePair → ℝ`; its inverse reconstructs each role's tangent generator
+with `rolePairsEquivLorentzTangent`. The new continuous-linear map
+`roleLorentzTangentEndpointFDerivInCoordinates` gives the Julia endpoint
+Fréchet differential in those explicit 24 real coordinates. Its pointwise
+theorem states that the output at role `r` is the transpose action on `x` of
+the tangent reconstructed from that role's six `RolePair` coordinates.
+
+This makes the earlier dimension result an actual coordinate-level consumer
+of the canonical solder API, rather than only a `finrank = 24` statement. It
+does not provide a six-coordinate chart for the full Lorentz group, prove
+surjectivity of the exponential onto determinant-one links, discharge the
+source's full variational pullback (31), or select physical endpoint
+admission, price, or source. Physical GR and independent C0 acceptance remain
+open.
+
+The Lean application is commit `52b99b3ad19176525ef6ef4f79a371c4af6a8ea6`
+on the existing formalization branch. Its source SHA-256 is
+`e886a3b23ba05231a61da3f17d76a10207efe5c336bdc57e9cb740fd8335b27c`.
+The focused module build passed **3,216/3,216** jobs, and the public-import
+`D0.All` build passed **4,585/4,585** jobs with Lean 4.30.0. The compiled
+declaration inventory resolved all 12 requested declarations from a clean
+source snapshot (`worktree_dirty=false`), with Lean-source digest
+`a6e637439c822b8ce50d1e997a98f8b9fa376ee174f98daeccc4b7fef8eff570` and
+collector SHA-256 `4bdf434970fee8ab585d3dcf4b4759b400c6cc85243d81c3d4384a1f0bdea038b`.
+Its file is
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_coordinates_declarations_2026-10-26.json`,
+SHA-256 `bb8b8c7957e2950daf633cb7acdbe6f7cefa36b5438f77f6bc3ac030e5bce593`.
+No new axiom was introduced; the coordinate declarations use the standard
+classical footprint already present in the tangent and Julia modules.
+
+The seven dependent compiled inventories were refreshed at clean snapshot
+`add9f1480a795df5049d75abdcb3023afe6cce3b`, all against the same Lean-source
+digest above. Every requested declaration resolved:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinates.json` | 25/25 | `fd8e985a5b8730b9bb097bc5fda12ace53167d7ff4dd0f959ed9baba6728f642` |
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_lorentz_tangent_coordinates.json` | 15/15 | `6323948f1985960e64a762d1701835ed632345de178850a264a351d18c113497` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_coordinates.json` | 36/36 | `eeae83468f53a2fe02534517077c199fab4019520c4e6a69baac3ebdda4add75` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_lorentz_tangent_coordinates.json` | 9/9 | `a7709c9ebb290e8c494a17111d85af5673c81beb729bbcde518a1adaeafa33e0` |
+| `archive_shift_topology_current_declarations_2026-10-26_lorentz_tangent_coordinates.json` | 26/26 | `7e41290095b41f055ad604b687d3c897cefbebdc0f01b07e196c1eb72838af26` |
+| `source_port_preparation_tensor_inventory_2026-10-26_lorentz_tangent_coordinates.json` | 73/73 | `911ae4405de6eea1853578f358e47ddeaed9b8bf7baf0bfb685f3db25906d13c` |
+| `flat_tensor_shared_api_declarations_2026-10-26_lorentz_tangent_coordinates.json` | 4/4 | `53624ef1aff75c20eaf10670fd7a6816edd3a3d36476388ff6d42da569abc59b` |
+
+Cold-start retrieval then completed at clean snapshot
+`bc96fe661655c6551367ffcc84b9e17852fd58fb`: **24/24** cases found every
+required source (**156** references), the **25-case** benchmark passed, and
+the exact-source-versus-unrelated-prose impact regression passed. The labelled
+native raising-inverse case now has **16** queries and found all **11/11**
+references. Its coordinate-specific query ranks
+`A4DJuliaLinkPathDifferential.lean` first and the new compiled inventory
+second. The 8,727,404-byte full output has SHA-256
+`0ee3d1882c434013ebb14233972ee3239d197b67eae9ab822b1fda843041ea1a` and is
+kept outside Git. The compact summary is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_coordinates.json`,
+SHA-256 `4ee3366865a87ec35b0a689b83c869f98587fb7acf5a201d83301a963eaa2607`;
+the query-level receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_lorentz_tangent_coordinates.json`,
+SHA-256 `5633a74ac635b198fbae9eeea07933d84209690fd835b1280d902f151f8a9108`.
+These are declaration and retrieval receipts, not semantic or C0 acceptance.
+All **63/63** proof-architecture tests passed against the refreshed compiled
+inventories and compact cold-start summary.
