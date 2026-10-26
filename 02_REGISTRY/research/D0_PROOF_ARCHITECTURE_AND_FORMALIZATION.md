@@ -10051,3 +10051,49 @@ On this source, the narrow `D0.Geometry.NonvacuumBrinkmannStencil` build passed
 and its successful-build stamp matches the complete Lean-source digest above.
 `git diff --check` passes. The inventory is compiled declaration evidence,
 not an independent semantic acceptance of the source application.
+
+### Fixed continuum profile at the half-step coframe readout (26 October 2026)
+
+The follow-up formalizes the site map left open above. The source convention
+assigns coframe site `j` the readout
+`τⱼ = x₀ + j h - h/2`; the midpoint of cell `n` is exactly `τ_(n+1)`. The
+Lean theorem `sampledNonvacuumBrinkmannProfile_eq_fixedReadout` identifies the
+finite profile with the original fixed continuum profile sampled at that
+readout, with each of the four harmonic coefficients sampled at the same
+`τ_(n+1)`. The theorem
+`sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter` then proves that
+the fixed-profile five-point stencil at this site equals the matter source
+`-4 coupling · ‖ψ'(τ_(n+1))‖²`. These are exact scalar algebraic identities
+for arbitrary functions and nonzero `h`.
+
+Independent review returned **scoped PASS** for the half-step index shift,
+common coefficient readout, and finite stencil/source equality. It reviewed
+only this scalar profile/site identity. It did not establish smoothness,
+`h=1/L`, positive mesh or coupling, finite-interval/free-site hypotheses,
+the 16 coframe or 24 Lorentz-link equations, normalized CAR admissibility or
+the Eq. (24) slack, the full 40+2 Euler system, refinement, or physical
+selection. The earlier source-to-history review likewise remains limited to
+its finite algebraic identity. Neither review accepts C0 or the full positive
+GR case.
+
+The updated Lean declaration inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_fixed_readout_application_2026-10-26.json`
+(SHA-256 `3eabe60d0e264d0779d435292b166caed55a31e3baeda0d1d0b7686977424ac5`).
+It was collected through `D0.All` with Lean 4.30.0 from dirty snapshot
+`f3063366bd90156ec6286e2c924916c97ed99fae`, and records complete Lean-source
+digest `1b72e00be09115a6471500f8265e49ca7088ed743b5dedefc82ab680e5f2c307`
+and collector SHA-256
+`d18b3624fa8a7307532a39a24f8e3885b17a2da919d3f4f44f4ec22a16baa50b`.
+All ten requested declarations resolve with elaborated types, proof
+dependencies, source ranges and axiom closures. The footprint remains
+`Classical.choice`, `Quot.sound`, and `propext`; no `sorryAx` or axiom-free
+claim is inferred.
+
+The narrow `D0.Geometry.NonvacuumBrinkmannStencil` build passes (3,302/3,302
+jobs). The final public `D0.All` integration build passes (4,616/4,616 jobs),
+and its successful-build stamp matches Lean-source digest
+`1b72e00be09115a6471500f8265e49ca7088ed743b5dedefc82ab680e5f2c307` in the
+inventory. `git diff --check` passes. This adds the finite
+continuum-profile/site map, while the CAR positivity and slack calculation,
+full variation, common native source/price/admission, C0 acceptance, and GR
+selection remain with their existing owners and open status.

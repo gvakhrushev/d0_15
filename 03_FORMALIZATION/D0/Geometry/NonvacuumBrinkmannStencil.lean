@@ -419,6 +419,124 @@ theorem sampledMatterMidpointProfile_source_eq_derivativeNorm
     h (sampledMatterMidpointRate ψ x₀ h)
     (sampledMatterExactValues ψ x₀ h 0) n hh]
 
+/-- The half-step readout assigned to coframe site `j` in the source carrier. -/
+def nonvacuumCoframeReadoutTime (x₀ h : ℝ) (j : ℕ) : ℝ :=
+  x₀ + (j : ℝ) * h - h / 2
+
+/-- Sample a continuum profile coefficient at the next coframe readout. -/
+def sampleNonvacuumCoefficientAtNextSite
+    (a : ℝ → ℝ) (x₀ h : ℝ) (n : ℕ) : ℝ :=
+  a (nonvacuumCoframeReadoutTime x₀ h (n + 1))
+
+/-- The fixed continuum Brinkmann profile built from its original fields. -/
+def fixedNonvacuumBrinkmannProfileFromFields
+    (coupling : ℝ) (ψ : ℝ → Fin 2 → ℝ)
+    (a2 b2 a3 b3 : ℝ → ℝ) (u x y : ℝ) : ℝ :=
+  nonvacuumBrinkmannProfile coupling
+    (twoComponentMatterNormSq (fun i => deriv (fun t : ℝ => ψ t i) u))
+    (a2 u) (b2 u) (a3 u) (b3 u) x y
+
+/-- The midpoint of cell `n` is the declared readout at site `n + 1`. -/
+theorem sampledMatterMidpointTime_eq_nextCoframeReadout
+    (x₀ h : ℝ) (n : ℕ) :
+    x₀ + (n : ℝ) * h + h / 2 =
+      nonvacuumCoframeReadoutTime x₀ h (n + 1) := by
+  simp only [nonvacuumCoframeReadoutTime, Nat.cast_add, Nat.cast_one]
+  ring
+
+/-- The sampled midpoint derivative is evaluated at that same next site. -/
+theorem sampledMatterMidpointRate_eq_nextCoframeReadout
+    (ψ : ℝ → Fin 2 → ℝ) (x₀ h : ℝ) (n : ℕ) :
+    sampledMatterMidpointRate ψ x₀ h n =
+      fun i => deriv (fun t : ℝ => ψ t i)
+        (nonvacuumCoframeReadoutTime x₀ h (n + 1)) := by
+  funext i
+  simp only [sampledMatterMidpointRate]
+  rw [sampledMatterMidpointTime_eq_nextCoframeReadout]
+
+/--
+The finite profile at step `n` is the fixed continuum profile evaluated at
+the declared coframe readout `τ_(n+1)`, with all four harmonic coefficients
+sampled at that same time.
+-/
+theorem sampledNonvacuumBrinkmannProfile_eq_fixedReadout
+    (x₀ h coupling : ℝ) (ψ : ℝ → Fin 2 → ℝ)
+    (a2 b2 a3 b3 : ℝ → ℝ) (n : ℕ) (x y : ℝ) :
+    finiteTimeNonvacuumBrinkmannProfile coupling
+      (sampledMatterMidpointRate ψ x₀ h)
+      (sampleNonvacuumCoefficientAtNextSite a2 x₀ h)
+      (sampleNonvacuumCoefficientAtNextSite b2 x₀ h)
+      (sampleNonvacuumCoefficientAtNextSite a3 x₀ h)
+      (sampleNonvacuumCoefficientAtNextSite b3 x₀ h) n x y =
+    fixedNonvacuumBrinkmannProfileFromFields coupling ψ a2 b2 a3 b3
+      (nonvacuumCoframeReadoutTime x₀ h (n + 1)) x y := by
+  change nonvacuumBrinkmannProfile coupling
+      (twoComponentMatterNormSq (sampledMatterMidpointRate ψ x₀ h n))
+      (a2 (nonvacuumCoframeReadoutTime x₀ h (n + 1)))
+      (b2 (nonvacuumCoframeReadoutTime x₀ h (n + 1)))
+      (a3 (nonvacuumCoframeReadoutTime x₀ h (n + 1)))
+      (b3 (nonvacuumCoframeReadoutTime x₀ h (n + 1))) x y =
+    nonvacuumBrinkmannProfile coupling
+      (twoComponentMatterNormSq
+        (fun i => deriv (fun t : ℝ => ψ t i)
+          (nonvacuumCoframeReadoutTime x₀ h (n + 1))))
+      (a2 (nonvacuumCoframeReadoutTime x₀ h (n + 1)))
+      (b2 (nonvacuumCoframeReadoutTime x₀ h (n + 1)))
+      (a3 (nonvacuumCoframeReadoutTime x₀ h (n + 1)))
+      (b3 (nonvacuumCoframeReadoutTime x₀ h (n + 1))) x y
+  rw [sampledMatterMidpointRate_eq_nextCoframeReadout]
+
+/--
+At every nonzero mesh width, the fixed continuum profile sampled on the
+half-step coframe readout has exactly the source of the same midpoint matter
+increment. This is the algebraic site/source map only; smoothness, normalized
+CAR admissibility and the full Euler system remain separate obligations.
+-/
+theorem sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter
+    (x₀ h coupling : ℝ) (ψ : ℝ → Fin 2 → ℝ)
+    (a2 b2 a3 b3 : ℝ → ℝ) (n : ℕ) (x y : ℝ) (hh : h ≠ 0) :
+    transverseFivePointLaplacian h
+      (fun x y => fixedNonvacuumBrinkmannProfileFromFields coupling ψ a2 b2 a3 b3
+        (nonvacuumCoframeReadoutTime x₀ h (n + 1)) x y) x y =
+      -4 * coupling * twoComponentMatterNormSq
+        (fun i => deriv (fun t : ℝ => ψ t i)
+          (nonvacuumCoframeReadoutTime x₀ h (n + 1))) := by
+  have hprofile :
+      (fun x y => fixedNonvacuumBrinkmannProfileFromFields coupling ψ a2 b2 a3 b3
+        (nonvacuumCoframeReadoutTime x₀ h (n + 1)) x y) =
+      (fun x y => finiteTimeNonvacuumBrinkmannProfile coupling
+        (sampledMatterMidpointRate ψ x₀ h)
+        (sampleNonvacuumCoefficientAtNextSite a2 x₀ h)
+        (sampleNonvacuumCoefficientAtNextSite b2 x₀ h)
+        (sampleNonvacuumCoefficientAtNextSite a3 x₀ h)
+        (sampleNonvacuumCoefficientAtNextSite b3 x₀ h) n x y) := by
+    funext x y
+    exact (sampledNonvacuumBrinkmannProfile_eq_fixedReadout
+      x₀ h coupling ψ a2 b2 a3 b3 n x y).symm
+  calc
+    transverseFivePointLaplacian h
+        (fun x y => fixedNonvacuumBrinkmannProfileFromFields coupling ψ a2 b2 a3 b3
+          (nonvacuumCoframeReadoutTime x₀ h (n + 1)) x y) x y =
+      transverseFivePointLaplacian h
+        (fun x y => finiteTimeNonvacuumBrinkmannProfile coupling
+          (sampledMatterMidpointRate ψ x₀ h)
+          (sampleNonvacuumCoefficientAtNextSite a2 x₀ h)
+          (sampleNonvacuumCoefficientAtNextSite b2 x₀ h)
+          (sampleNonvacuumCoefficientAtNextSite a3 x₀ h)
+          (sampleNonvacuumCoefficientAtNextSite b3 x₀ h) n x y) x y := by
+            rw [hprofile]
+    _ = -4 * coupling * twoComponentMatterNormSq
+        (sampledMatterMidpointRate ψ x₀ h n) :=
+          sampledMatterMidpointProfile_source_eq_derivativeNorm h coupling x₀ ψ
+            (sampleNonvacuumCoefficientAtNextSite a2 x₀ h)
+            (sampleNonvacuumCoefficientAtNextSite b2 x₀ h)
+            (sampleNonvacuumCoefficientAtNextSite a3 x₀ h)
+            (sampleNonvacuumCoefficientAtNextSite b3 x₀ h) n x y hh
+    _ = -4 * coupling * twoComponentMatterNormSq
+        (fun i => deriv (fun t : ℝ => ψ t i)
+          (nonvacuumCoframeReadoutTime x₀ h (n + 1))) := by
+            rw [sampledMatterMidpointRate_eq_nextCoframeReadout]
+
 end
 
 
