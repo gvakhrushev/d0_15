@@ -8593,6 +8593,32 @@ endpoint/query admission, full price/source selection, #334 acceptance,
 `GR_closed`, and independent C0 acceptance remain open.
 
 The narrow module target passed (**3,216/3,216 jobs**); the public-import
-`D0.All` integration build passed **4,585/4,585 jobs** with Lean 4.30.0. The compiled declaration
-inventory and matching cold-start receipt for this extension will be recorded
-from a clean snapshot after the durable source checkpoint.
+`D0.All` integration build passed **4,585/4,585 jobs** with Lean 4.30.0. The
+compiled inventory for the shared readout, chart recovery, joint-path theorem,
+tangent-generated theorem, and fixed-data specialization was extracted
+through `D0.All` at clean source snapshot
+`f0ad51e807fbbdad11513dcfcbecba558f20e5ae` (`worktree_dirty=false`). Its Lean
+source digest is
+`19a80a35d70cf637f5a74425bf33c04b52e621b60706f405dfa2d62da7be93e8`, collector
+SHA-256 `8d44fc9264a7c9ec2fe1f181ad54a06d08f3f63fa2d766847e630160d5114286`, and
+inventory SHA-256
+`c41130a87fe21d2f70fc7bac48127dfe28a789059255365d4c401811c36e8ba0` at
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json`.
+The new theorem inherits `Classical.choice`, `Quot.sound`, `propext`, and the
+existing CAR `archiveCreatorPermSign` `native_decide` axiom; it introduces no
+new axiom.
+
+The clean cold-start replay ran at commit
+`d36a0667f0b38584b3608496cdd5b6608e9e9a79` with `worktree_dirty=false`. All
+**24/24** search cases found every required source (**152** source references
+total); the **25-case** benchmark and exact-source-vs-unrelated-prose impact
+regression passed. The Julia case found all **7/7** required sources across
+twelve queries. The new tangent API query ranked the Lean module first; the
+inventory query ranked this artifact, the module, and the compiled inventory
+first through third. The 8,503,690-byte full output has SHA-256
+`d654a82ae84a0888d5889a6adc6d1acf2b32adf5825cf18cae5444c449f34f47` and is
+kept outside Git. The compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_joint_coframe_lorentz_tangent_derivative.json`,
+SHA-256 `5e9ea78dc8d4f1829e967e393f1894380e7ce8061fc21e970ac9b837b2462159`.
+This is retrieval and provenance evidence; semantic scope review remains
+manual, and the physical and composition limits above remain open.
