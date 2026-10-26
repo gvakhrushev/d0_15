@@ -9220,8 +9220,11 @@ including the new time-indexed theorem and the current shared-adapter set. This
 provides one source-digest-current inventory for these consumers while leaving
 all earlier per-slice inventories intact as historical snapshots:
 `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json`.
-Its clean source snapshot and checksum are recorded after this checkpoint is
-committed.
+It resolves **215/215** requested declarations from clean source snapshot
+`7665c4d611132e9737e3e9b9f96ba8b2ae1a8dd7` with source digest
+`4a1a705e04e028b14e0b43e0616e5d976ba091bd3137aa140b0b22cb9ec74150`,
+Lean 4.30.0, and `worktree_dirty=false`; its SHA-256 is
+`0282dfee8cae801ab71d22a64c1c482e49cbdba64794459f62f36a6c2f27f3ce`.
 
 This extends only the already formalized finite stencil/midpoint component.
 It does not formalize the original CAR construction, the unrestricted 40→3→1
