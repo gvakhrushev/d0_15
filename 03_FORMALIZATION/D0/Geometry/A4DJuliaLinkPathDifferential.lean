@@ -517,6 +517,45 @@ theorem principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_hasFDerivAt
   rw [hReadout]
   exact hModel
 
+/-- The selected Julia endpoint readout is Fréchet differentiable in the
+canonical 24 real coordinates, obtained by composing the tangent-space
+derivative with the shared rolewise Lorentz coordinate equivalence. -/
+theorem principalFrameJuliaEndpointChartReadoutAlongLorentzTangentInCoordinates_hasFDerivAt
+    (F L : Matrix Role Role ℝ)
+    (α : Role → Module.Dual ℝ RoleSpace)
+    (hAlpha : ∀ r,
+      α r ((principalFrameColumnMatrix F L).mulVec
+        (Pi.single r (1 : ℝ))) = 1)
+    (hShift : ∀ r,
+      (principalFrameColumnMatrix F L).mulVec
+        (Pi.single r (1 : ℝ)) ≠ 0)
+    (x : RoleSpace) :
+    HasFDerivAt
+      (fun q r => principalFrameJuliaEndpointChartReadoutAlongLorentzTangent
+        F L α (roleLorentzTangentParametersEquivCoordinates.symm q) r x)
+      (roleLorentzTangentEndpointFDerivInCoordinates x) 0 := by
+  have hCoordinateMap :
+      HasFDerivAt
+        (fun q : Role → RolePair → ℝ =>
+          roleLorentzTangentParametersEquivCoordinates.symm q)
+        (roleLorentzTangentParametersEquivCoordinates.symm.toLinearMap.toContinuousLinearMap) 0 :=
+    (roleLorentzTangentParametersEquivCoordinates.symm.toLinearMap.toContinuousLinearMap).hasFDerivAt
+      (x := 0)
+  have hReadout :=
+    principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_hasFDerivAt
+      F L α hAlpha hShift x
+  have hReadoutAtCoordinateZero :
+      HasFDerivAt
+        (fun p r => principalFrameJuliaEndpointChartReadoutAlongLorentzTangent
+          F L α p r x)
+        (roleLorentzTangentEndpointFDeriv x)
+        (roleLorentzTangentParametersEquivCoordinates.symm
+          (0 : Role → RolePair → ℝ)) := by
+    simpa using hReadout
+  have hComposed := hReadoutAtCoordinateZero.comp
+    (0 : Role → RolePair → ℝ) hCoordinateMap
+  simpa [roleLorentzTangentEndpointFDerivInCoordinates] using hComposed
+
 /-- Compatibility specialization of the joint path theorem when the coframe,
 column data, and normalized covector are fixed. The four role-indexed proper
 Lorentz links may still vary independently. -/
