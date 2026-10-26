@@ -14912,3 +14912,148 @@ BEFORE mathematics, with source bytes unchanged. Receipt:
 No scientific replay was repeated. The original positive replay remains the
 pinned source of its four process and three exact-receipt checks. All later
 changes are proof labels, incoming-context and validation/provenance prose.
+
+
+### 26 October — direct native reporter on the actual SOURCE field image
+
+Same existing #334 / constitutive/native-programme-v1; phase native
+realization and final composition, starting from b46824a2. This is a
+bounded application of owned results inside the same parent, with no new
+execution, registry entry, action or physical selector.
+
+The attempted fixed-processor/free-code shortcut does not identify its
+full Book source with the current code's conditional source. A finite test
+base of genuinely supplied classical fieldcodes is allowed by Book01;
+its actual input, event/boundary, updates and coarsening still require their
+maps. Neither universal microscopic uniqueness nor a continuous selector
+of finite words is a new prerequisite. The generic verification/transfer,
+finite-code domain7t and existing source factories are reused.
+
+The chosen next substitution is more direct: feed the original positive
+Golden-J2 weak report of paid-writer34--40 into7bj515--520's fixed cold
+processor. Its fields are the actual prepared SOURCE moments and owned
+decoder, including independently varied forward/reverse legs. The target
+is an operator return derived from the native report, not an assigned
+Einstein action germ. Intended output: its full pulled-back Book covector,
+actual positive gain, field/Bernstein/QUERY/heat error bound and precise
+remaining admission/other-source equations. The owned original lambda_-
+ratio must be preserved. The proof does not infer exact joint roots from
+small source error or transfer7bu/7ce projection-centre normals to an
+unsharp averaged return.
+
+Inputs are paid-writer10/12, primary7s/7ac/7bj, complete-scene source501--504,
+finite-core508--513 and birth-Rayleigh675--678. Norms retain the real SOURCE
+lift, cold input rank, all expanded SOURCE/inverse counts and the actual
+normalization before any GR/refinement comparison. Write paths remain only
+this brief and the existing primary artifact. Smallest decisive check is
+analytic substitution of the native reporter's whole cold return and its
+chain rule; no new geometry/finite root/rank census or old suite replay.
+
+
+### 26 October — returned SOURCE composition and exact-reflection QUERY interface
+
+SAME #334; primary7ch687--700 is the bounded native-realization application.
+It consumes the existing actual-SOURCE reader7bj with the original positive
+weak-Book report34--40. The new table contains that report's cold return
+operator, not I_h or an assigned Einstein functional. Its actual prepared
+moments define Y_A; independent forward/reverse SOURCE legs retain their
+half-rows and the same locally invertible coframe/Cayley/material decoder.
+The original lambda_minus is unchanged. SOURCE displacement from the known
+Einstein representative remains an error; no finite A is assigned a root.
+
+The complete bound696 retains weak-query error times the true field lift,
+matrix-Bernstein error times the SOURCE moment lift, full rank, true positive
+gain and literal SOURCE/inverse counts. Gamma is evaluated as a covector gain,
+not differentiated as Gamma*I_h. Original reporter readiness is a target
+coefficient, not readiness of the new compiled QUERY. For the product extension
+with one genuinely prepared scene input, logical meter2, protected Spin4 and
+untouched oldRIGHT128, r=1024; free scene input would add its actual rank.
+Fresh SOURCE/reference banks are blank inputs and keep their full heat modes
+without multiplying r. Realification belongs to the logical packet, not a
+chosen protected-Spin eigenstate.
+
+A new exact implementation consequence improves the complete heat debt.
+The fixed balanced ideal QUERY is V Z_q V*. Compile only V, execute its
+LITERAL raw inverse and the native routed8-stage Z_q. The actual QUERY is
+therefore an exact involution on every column, with error at most2*epsilon_V.
+At matched preparation, the complete endpoint is also an exact involution.
+Owned606 then makes the WHOLE incidence-heat SOURCE covector exactly zero
+on an INTERNAL base, including independent forward/reverse temporal rows.
+No large QUERY word or new universality theorem is claimed materialized.
+Unsharp feedback and independent QUERY/cut normals remain;597/678 are not
+transferred. The matrix approximation still pays its actual SOURCE length.
+
+Default Book03 tensor heat is treated separately: fixed L_sym tensor I on
+the SAME actual carrier has its full log(dim K)/beta price and zero SOURCE
+field row. Noncommuting RawZone gates do not require changing that default
+to501. If501 is the selected realization, noninternal stages retain503 or
+the actual7bi commuting-padding bound. No chronological metric is identified
+with the default scene operator by notation. Bare H+J gets no invented Info
+or R term;675 is consumed only if the same valuation actually contains its
+birth-Rayleigh contribution. Actual CQ binding82 remains a separate equation.
+
+Only one new narrow native check was executed: ordinary Python/assertions,
+16 checks, ALL32 columns for the8-stage Z and26-stage QUERY (2G+18CX+6SI),
+with actual7j inverse, helper/oldRIGHT restoration, rank8 cold corner p^3 I,
+unsharp escape4p^3 I and nonzero QUERY feedback calibration. It also checks
+the scalar cold-return and gain identities. This small test is not a full
+SOURCE/GR/heat calculation; the heat statement consumes the owned proof606.
+No old root, full128/Choi, geometry, Slater or Lean suite was replayed.
+
+Code4189 bytes/SHA256
+4c117dd594d245d5b26f51b60d5f16f17f8407688dee163273eccc72d0d8dfc7;
+observed receipt1886/SHA256
+18fcfe6f57196bf0c211da91261229e5c3437850234419e667aaf150e5b32b6c.
+The exact code and receipt are embedded in7ch. Proof18904/SHA256
+39e339d785c0832fed6438f9375d5cbcc7f018fd7bf48881aa23993b6ced4b01;
+whole section25714/SHA256
+e35f38a0c2d2887e0736b093b62bea755e16f46939fd6bd7f6bd6a5c7b8d2252.
+
+Full SOURCE-ONLY mathematical ACCEPT: native_source_application and
+stationary_root_transfer read the complete proof/code and its intended final
+scope diff, then accepted the final pins above. They checked the r/Gamma
+multiplicities, half-rows, actual lift/covariance factors, default/incidence
+heat distinction and unsharp-return control. Their final two-sentence delta
+checks made gamma<=1/alpha_K<=4 explicit and distinguished the two Bernstein
+degrees. No reviewer replay or independent assembly acceptance is asserted.
+
+Incoming303ccc4bcf9d490105e9e31aef30af920de32e0f is retained in full:
+primary2261789 bytes/SHA256
+336e386e32da778a590b638fda0a9938759d2370d30eb3c6b5724ccc7d21793d;
+brief975016 bytes/SHA256
+8734ff6c36200cb12270b86ef0c30dc5fef60d52a0068ef234cabd794830da38.
+Removing7ch restores the entire incoming primary; the incoming brief is an
+exact prefix. Its growing-AF history/default-source route7cg, new actual
+Choi/resource/mixing results and changed default-source routing are preserved.
+In particular lambda_rec=2*sigma*p is not substituted for lambda_minus here.
+The endogenous growing-history route does not depend on this finite SOURCE
+protocol, and the SOURCE banks do not refute saturated-memory growth.
+
+Remaining parent application: actual same-programme SOURCE/pulse/role and
+retained-boundary admission, physical field/scene/tangent map, full selected
+valuation, genuinely independent QUERY/cut/cross-bank sources, and exact joint
+stationary refining states. Small error does not discharge those premises.
+GR_closed=false; no new task/result row/claim, no Ready/retirement/merge.
+Affected structural checks and exact preservation validation follow.
+
+
+Final proof scope makes697's AMBIENT normalized pure-bank Hilbert norm
+explicitly different from696's raw gate-max norm; a constrained physical
+subspace inherits the upper bound via its actual lift, while a converse needs
+its own tangent coverage. Both source reviewers accepted this final narrowing
+at proof18904/39e339d7 and section25714/e35f38a0; code/receipt unchanged.
+
+The narrow executed environment is CPython3.9.6 / SymPy1.14.0. An exact
+preservation check validates the embedded code/receipt, Python AST and JSON,
+all incoming303 primary bytes and its full brief prefix. The current diff
+contains only the two owned paths and passes whitespace validation. The
+assembly checkpoint template was consumed without adding a result or
+acceptance row; registry capacity and scientific scope remain unchanged.
+
+Final affected integration PASS on the final scientific inputs: work, agent
+protocol, assembly and repository guards;889 claims,31 assumptions,58 aliases,
+183 formal_support,918 Lean closure,zero warnings. Assembly remains54 active /
+98 results /5 discharged /22 obligations,scientific_promotion=false. Only this
+validation/provenance note follows those checks; no executable proof changed.
+No prior mathematical suite is repeated for prose. Publication and immutable
+remote blob verification follow in the same existing Draft.

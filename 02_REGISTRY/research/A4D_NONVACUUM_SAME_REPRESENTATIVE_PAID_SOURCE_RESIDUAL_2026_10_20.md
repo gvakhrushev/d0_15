@@ -78140,6 +78140,345 @@ if __name__=='__main__':main()
 }
 ```
 
+## 7ch. Read the native weak-Book source from executed fields and keep its complete SOURCE residual
+
+26 October 2026. SAME #334 / constitutive/native-programme-v1; native realization and final composition. This bounded application consumes the native weak reporter and the existing actual-SOURCE reader. It is supporting research, not an admission certificate or an accepted parent discharge. The owner inputs were read at b46824a2; concurrent303ccc4b is preserved in full.
+
+### 1. The changed input and its fixed physical types
+
+Replace ONLY 7bj's chosen target 514 by the cold return of the already owned native weak Book reporter. Do not insert the Einstein action into a target table, identify CQ entropy with Book heat, or reuse the old geometric/material target rank `(2N_faces+1)q`.
+
+Use paid-writer34–40: original sigma-minus r(x,y), exact inverse/Cayley/material operands, genuine mu_s,rho_s, fixed Omega, common tau_h, and positive Bernstein report Q_h,d. On a compact chart,
+
+    b_h <= Q_h,d(u) <= q_max < 1/2,
+    x_h(Y) = gamma_h Q_h,d(u(Y)),
+    j_*(x) = -r log[1-zeta alpha_K x(1-x)],
+    Gamma_h(Y) = j_*'(x_h(Y)) gamma_h a0 tau_h/Omega > 0.   (687)
+
+Here 0<gamma_h<=1 is the fixed genuine reporter readiness and alpha_K=4 sin^2(m_K theta_G) lies in (0,4]; consequently 0<x_h<1/2. The rank r is the TRUE NEW input rank. The original writer9 has d_h=2 without spectators. The new SOURCE inverse uses separate protected Spin, counted in r ONCE; oldRIGHT contributes only its actually declared input multiplicity, with no default128. For an explicit product-free extension r=2 d_s r_old. Fresh SOURCE banks remain blank, not free input factors. This is the old return SHAPE with its derived new multiplicity, not equality to the unextended old price. Gamma_h is a first-covector gain, never differentiated as Gamma_h I_h. Moving gamma, alpha or Omega keeps its source. Old gamma is a target coefficient, not new QUERY readiness.
+
+Set a=1-zeta and on this rank-r input define
+
+    c_h(Y)=sqrt(1-alpha_K x_h(Y)(1-x_h(Y))),
+    C_*(Y)=c_h(Y) I_r,
+    U_*(Y)=[[C_*, sqrt(I-C_*^2)],
+            [sqrt(I-C_*^2), -C_*]].                       (688)
+
+This symmetric orthogonal involution has r eigenvalues of each sign and top-block input embedding i_h. Exactly,
+
+    -log det(aI_r+zeta C_*^2)=j_*(x_h(Y)).                  (689)
+
+Strict margins 0<c_min<=c_h<=c_max<1 give finite derivatives; use the owned smooth clamp to the feature cube. This NEW operator realizes the reporter return shape, not its old channel. All work, labels, source copies and complement modes are paid. If an SO compiler needs determinant correction, tensor a genuine unused input-blank work bit: full dimension changes, rank r does not. Original Spin/oldRIGHT stay exact spectators.
+
+### 2. The actual SOURCE-to-field map and its independent legs
+
+Use 7s176's deduplicated coordinates z=(t,s), fixed one-packet observables O_a, and its actual locally invertible field chart z_h(Y). Let R_h be that chart inverse, including inverse coframe, proper Cayley coordinates, density, frame and the original material calibration. Complex CAR moments use the owned realification on an ordinary rebit included in psi_A, O_a and heat, not the protected Spin.
+
+Prepare n private packets by the SAME actual unconditional positive-G/CX word A, from the declared blanks. Denote its endpoint psi_A and ACTUAL moments z_A,a=<psi_A,O_a psi_A>. Choose A so these moments lie inside the regular decoder box; define Y_A=R_h(z_A). Preparation accuracy only locates Y_A and preserves covariance, not a global-state debt in the exact differential. Fresh references/purifiers are charged; no unknown input is cloned or oldRIGHT addressed.
+
+Apply 7bj515–516 to 688: read each chosen packet ONCE with (I+-O_a)/2, compute its fixed Bernstein node, apply the WHOLE U_*(R_h(node)), and undo the readout/count/routing work. Coherently average ordered injections into the n packets. At SOURCE interpolation degree m, put k=d_feat*m with d_feat the number of deduplicated features and n>=k. The degree in the already fixed reporter Q_h,d is a separate quantity. The ideal full cold kernel is
+
+    K_n=(n)_k^-1 sum_iota K_iota,
+    C_m(z)=<psi^n,K_n psi^n>=B_m[C_ext](z),
+    J_m(z)=-log det(aI_r+zeta C_m(z)^2).                   (690)
+
+Average C before its determinant. The full-packet alphabet I,O_a includes CAR/reference/padding; all correlations remain.
+
+Let j_S fix only the supplied SOURCE/helper blanks and be identity on genuinely protected source Spin of dimension d_s. For independently varied forward and reverse words A_tot and B_tot, put
+
+    Phi_f=A_tot j_S,  Phi_b=B_tot^dagger j_S,
+    mu_f,a=Tr_spin(Phi_f^dagger O_bar,a Phi_f)/d_s,
+    mu_b,a=Tr_spin(Phi_b^dagger O_bar,a Phi_b)/d_s,
+    z_diamond=(mu_f+mu_b)/2,  Phi=R_h(z_diamond).           (691)
+
+Evaluate at the actual matched base B_tot=A_tot^dagger. Other protected inputs are SOURCE spectators. The normalized protected trace is an operator reader, not mixed-Spin preparation. d_s occurs in r and g_m once.
+
+Freeze W=(aI_r+zeta C_m^2)^-1 C_m and L_n=-2zeta Tr_target(W K_n). The 7bj519 first-conditional identity gives, for EVERY supported one-packet-plus-completed-helper SOURCE tangent,
+
+    D_SOURCE J_m = g_m dot D z_diamond
+                  = (D_Y J_m)(Y_A) D Phi,
+    g_m=D_z J_m(z_A).                                    (692)
+
+A single forward leg has half the Born-moment row; the independent reverse leg has the other half, without equal velocities. Every local vertical D Phi=0 has ZERO ideal RETURN row, even if g_m!=0. This uses the invertible deduplicated chart, not an equality imposed between independent encodings.
+
+### 3. The complete original field covector, with the actual lift
+
+The field source supplied by the OLD reporter is exactly paid-writer39. Combining its40 with the target 688, define
+
+    E_PC,h=D I_h,
+    I_h=sum_s mu_s(f_s+lambda_minus q_s),
+    lambda_minus=r_y(0,0)/a0,
+    epsilon_weak,h= M_r tau_h T_h/a0
+                  +Omega L_h e1,h/(a0 tau_h).             (693)
+
+Here M_r=2*10^-5 is allowed, T_h is FULL36–37, L_h=||D u||_(V_h->ell1). Thus ||Gamma_h^-1 D_Y J_*-E_PC,h||<=epsilon_weak,h. The new common multiplicity r cancels in Gamma_h, so40 is unchanged. No off-primary P5/C8 equality is used.
+
+Use ORIGINAL lambda_minus and34–37's exact orientation, density, material and quadrature calibration. Instantiate the owned all-mesh nonvacuum family at that coupling. Do not import lambda_echo/lambda_pair or a sign-reversed curvature coordinate. A mismatched coupling/calibration remains as a source discrepancy, not a retuning.
+
+Let e0,e1 be the matrix Bernstein errors for C_ext and M1 its first-derivative bound. The true rank-r resolvent estimate 7bj517 gives
+
+    delta_B=2r zeta[e1/a+(1+zeta)M1 e0/a^2],
+    |(D_z J_m-D_z J_*)v|<=delta_B ||v||_1.                (694)
+
+Put e_weak,h=Gamma_h^-1 D_Y J_*-E_PC,h, whose norm is bounded by epsilon_weak,h. At 691 the EXACT decomposition is
+
+    D_SOURCE J_m-Gamma_h E_PC,h D Phi
+      =Gamma_h e_weak,h D Phi
+         +(D_z J_m-D_z J_*)D z_diamond.                   (695)
+
+Keep L_Phi=||D Phi||, L_z=||D z_diamond||, the actual DR_h, and L_Phi<=||DR_h||L_z. On the invertible chart L_z<=||D z_h||L_Phi. No lift is dropped.
+
+Compile the ONE fixed complete QUERY after m,n,A and the literal inverse count N_SOURCE are fixed. For all-column query error e_Q, let mathcal H_SOURCE be the norm of the ACTUAL heat source on these same SOURCE tangents. The complete same-source estimate is
+
+    ||Gamma_h^-1 D_SOURCE B_actual-E_PC,h D Phi||
+       <=epsilon_weak,h L_Phi +delta_B L_z/Gamma_h
+         +4r zeta N_SOURCE e_Q/(a^2 Gamma_h)
+         +mathcal H_SOURCE/Gamma_h.                       (696)
+
+The heat term uses the SAME chosen full operator; the following two typed applications are available.
+
+For Book03's DEFAULT tensor representation Delta=L_sym tensor I_K on the actual common full carrier, fixed scene and module, mathcal H_SOURCE=0. Its heat is (log Z_scene+log dim K)/beta with every physical mode retained. Temporal RawZone noncommutation does not by itself require changing this operator to501. If the actual field/scene representation, pairing or valuation moves, retain that actual source instead. This default is not identified with7bu's chronological Dirac or its metric by notation.
+
+For the separately DECLARED incidence realization501, one may use the exact-reflection implementation below on an INTERNAL base, giving mathcal H_SOURCE=0 even on independent forward/reverse rows. On a noninternal501 sequence keep503; only with the genuine7bi paid commuting-padding map may it be bounded by C_H A_core/N. Neither endpoint symmetry alone nor a default-scene formula establishes that bound. All33-scene/both-grade modes of501 remain; these are not extra grades inserted into the default heat. Query precision follows frozen N_SOURCE; no QUERY-length-times-error claim is used. N is the paid clock.
+
+The table contains the native weak return shape 688; E_PC appears only by the proved weak-query theorem. At E_PC,h(Y_h*)=0, actual Y_A retains its displacement/continuity error; finite A is not assigned that root.
+
+### 4. Full-bank normals and the exact scope of the conclusion
+
+For an arbitrary correlated preparation tangent, 692 need not hold. Keep the k-slot frozen score L, its full averaged L_n, actual covariance Sigma_A, G^2=g_m^T Sigma_A g_m, and B_L>=||L-bI||. For the MATCHED state functional (both legs varied together), 7s/7ac gives
+
+    G/Gamma_h <=sqrt(n)||D_Psi J_m||/(2Gamma_h)
+       <=sqrt[(G/Gamma_h)^2
+             +B_L^2 k^2(k-1)^2/(2Gamma_h^2(n-1))].        (697)
+
+The norm in697 is the AMBIENT normalized pure-bank Hilbert-sphere norm, not the raw gate-max norm in696. A smaller constrained physical preparation space inherits its upper bound through the actual lift; the lower-bound/converse needs its own tangent coverage. Independent Euclidean forward/reverse Hilbert-pair norm is the matched norm divided by sqrt(2). Keep the actual gain, sqrt(n) and compiled-kernel debt. Cross-bank entangling normals are not declared neutral. This SOURCE identity does not solve free QUERY/middle/cut/scene/clock rows. Zero projection-centre normals597/678 do NOT transfer to averaged C_m from involutive table entries.
+
+Here B_actual denotes the declared H+J master. Only IF the same execution's actual valuation additionally contains its birth-Rayleigh term does675 give the stated zero SOURCE row at fixed scene/stage0/RIGHT-Gram; moving birth/scene retains673/676. This construction adds neither R nor Info to the default master. Prefix states use their causal adjoints.
+
+Owned finite A_k/stencils keep common carrier/clock and all complements; no continuous native selector or pulse/role admission is inferred. If a proposed alternative uses the reducing cyclic cut of a future algebra containing EVERY temporary SIGN projector of an exactly read-only processor, its constant-live-support compression is the direct sum of the fixed C_z, not690's Born average. The conditional support ranks, rather than the Born weights, multiply those determinants. This is a different boundary experiment; the temporary SIGNs are not made permanent records here. The generic approximate QUERY compiler is not assumed to preserve that exact label algebra. Thus this route keeps its paid SOURCE preparation/readback and actual cut; no future-support or unknown-state inverse oracle is silently substituted.
+
+No CQ-to-Book equality is used. Binding82 keeps beta D S_hist+ell D P_CQ=D mathscrD with actual D mathscrD, not a fitted Info/fee. The conclusion is direct Book-return SOURCE composition 696 and 697, not GR closure.
+
+### 5. Compile the fixed QUERY through an exact native reflection
+
+This is an exact compiler interface consuming7j/7w/7ac/7bw606, not a new universality proof. The small fixed word below is checked; the large SOURCE-reader conjugator is not claimed to have been materialized.
+
+The ideal fixed QUERY Q_* is the readout/routing conjugate of a direct sum of 688 target involutions. Keep the WHOLE ordinary-work space and a balanced fixed completion of any unused binary columns. Then Q_* is a real symmetric involution with equal +1/-1 multiplicities. Tensoring blank-work padding preserves this balance. Protected source Spin and oldRIGHT are exact identity factors. Balance on the physical FULL space, not just its input corner, is required.
+
+Choose a fixed ordinary QUERY bit q and Z_q. The two balanced eigenspaces give a real orthogonal conjugator V with Q_*=V Z_q V*. Its determinant can be made +1 by reversing one eigenbasis vector, which does not change the conjugation. Thus V may be the target of the already owned real-SO compiler. This finite basis choice is a mathematical compiler input, not a new primitive.
+
+Compile V on ordinary QUERY work, excluding dedicated source helper, protected Spin and oldRIGHT, to an ACTUAL finite native V_hat with ||V_hat-V||<=epsilon_V. Execute
+
+    Q_hat=V_hat Z_q V_hat*,
+    ||Q_hat-Q_*||<=2epsilon_V=:epsilon_Q,
+    Q_hat*=Q_hat,  Q_hat^2=I                         (698)
+
+on EVERY column. V_hat* is the exact expanded7j inverse, not a separate approximate inverse. Routed Z_q is the actual eight-stage SWAP(P,q);SourceI^2;SWAP(P,q): six CX and two SourceI, with helper and Spin restored on all columns. All forward/inverse/routing stages and complements belong to the clock. No numerical endpoint or efficiently bounded compiler length is asserted here.
+
+At the matched SOURCE base the entire endpoint is
+
+    U_base=A_tot* Q_hat A_tot=U_base*, U_base^2=I.       (699)
+
+On the declared INTERNAL base placement, every raw stage is I_scene tensor its actual internal unitary. Therefore the full33-scene, both-grade Hodge theorem7bw606 applies to 699, INCLUDING independent forward/reverse SOURCE-stage tangents and ambient scene-mixing temporal tangents at that base. Its heat first source is EXACTLY zero at any actual fixed paid N. The proof uses the real prefix frame and whole heat blocks, not an endpoint replacement or deletion of cochains. This removes the N_SOURCE L_scene,N term in this placement; no padding is needed merely to make that first heat row small.
+
+The ideal-return source remains 692–695. In this placement the actual normalized local SOURCE bound improves to
+
+    ||Gamma_h^-1 D_SOURCE B_actual-E_PC,h D Phi||
+      <=epsilon_weak,h ||D Phi||
+        +(delta_B/Gamma_h)||D z_diamond||
+        +4r zeta N_SOURCE epsilon_Q/(a^2 Gamma_h).      (700)
+
+All factors r, protected trace, decoder lift and Gamma_h are those of the new execution. Query precision is chosen after the actual SOURCE word. 698 restores exact involutivity but NOT projection-valued return: the generally unsharp C_m and its feedback QUERY/middle/cut rows remain. Hence597/607/678's feedback-zero conclusion is not inherited. 697's full correlated-score bound remains required.
+
+For a non-INTERNAL RawZone sequence using DECLARED501, 699 alone does not imply606: stage commutation with the scene weights is a BASE hypothesis. Keep actual503, or the incoming C_H A_core/N bound only with its genuine paid commuting-pad map. This restriction is not imposed on the different fixed default tensor heat above. Moving beta, scene, pairing, input/cut, rank or duration also keeps its own source. This is a scoped exact compiler interface consuming existing native words, not evidence that the particular V_hat has already been emitted or that its primitive/role domain is admitted.
+
+### 6. Parent application and the concurrent growing-history route
+
+The new substitution is the complete LOCAL SOURCE pullback for a specified native reporter: its table contains the original native click/return operator, and the source is evaluated at the actual prepared moments Y_A. It no longer treats Y as an external runtime request or inserts I_h as a target-table action. The original lambda_minus is kept; the physical state/control domain and every actually independent QUERY/cut/scene source still require their own application. Small source error does not provide an exact finite joint root.
+
+The concurrent7cg growing-AF two-record source has its DIFFERENT derived ratio lambda_rec=2 sigma p and its actual working-module multiplicities. It remains an independent stronger route for endogenous retained-history growth, not a consumer that must first pass this finite SOURCE protocol. No comparison here assumes an unlimited stock of future blanks in a saturated memory: the finite SOURCE copies are explicitly allocated resources of this candidate experiment. Applying it inside an endogenous AF execution needs the actual record-activation/carrier/trace map; a qubit-array dimension or a table lookup does not provide it. No incoming Choi/predictor/capacity calculation is replayed or used to erase any physical history.
+
+The classical field-code attempt also retains its precise type. A finite test base of actual supplied fieldcodes is allowed by Book01; it need not be a free quantum code register. For a free code cut I_code tensor P, a fixed block processor U=direct_sum U_i gives J=sum J_i and the repeated test algebra gives a maximum commutator norm. Preparing a different code state does not change that full action. A genuinely supplied code-boundary section may instead use P_i and its paid event/preparer/readback. Its actual Query/retention, update and refinement squares must then be proved. Neither a hidden conditional source nor a mandatory P_all is introduced.
+
+The same-execution CQ binding remains paid-writer82 with its actual discrepancy source. No equality to Shannon/CQ Cost-minus-Info follows by naming the native scalar, and no Info/counterterm is chosen. GR_closed=false; positive_gr/raw216 and the independent source owners retain their scope. No new task, registry result, acceptance or lifecycle state is asserted.
+
+### 7. Smallest decisive changed check
+
+The new literal test uses the unchanged native_execution.py matrices and validator. On physical port0, logical QUERY bit1, protected Spin2/3 and oldRIGHT4, Z_q has8 stages (6CX+2SourceI), V=parked G has7, and its literal raw inverse has11. The chronological word V_inverse;Z_q;V has26 stages (2G+18CX+6SourceI). ALL32 columns verify exact Hermiticity/involutivity, balanced16/16 eigenmultiplicities and complete helper/oldRIGHT restoration. On the supplied blank port/query cut, r=8=4Spin*2oldRIGHT; C=p^3 I_8 and F=4p^3 I_8 are unsharp. The nonzero QUERY feedback calibration is an explicit hostile control against transferring597/678. That mathematical calibration is not declared a new variable Golden-angle primitive.
+
+The same narrow check verifies the scalar return/gain algebra used in687--689. The large fixed QUERY, original geometric roots, old heat matrices, full128/CAR/Slater and Lean are not replayed. The full heat result is the owned analytic606 application, not a new small-array thermal computation.
+
+Proof inputs: unchanged paid-writer owner240407 bytes/SHA256
+10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05;
+original native_execution.py SHA256
+222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+Incoming303ccc4b primary2261789 bytes/SHA256
+336e386e32da778a590b638fda0a9938759d2370d30eb3c6b5724ccc7d21793d.
+The b468 owner sections7s/7ac/7bj/7bw and paid-writer34--42 are unchanged;
+new7cg/default-source corrections are retained at their own types.
+
+Executed source 4189 bytes / SHA256 4c117dd594d245d5b26f51b60d5f16f17f8407688dee163273eccc72d0d8dfc7:
+
+```python
+"""Narrow exact check of the fixed-QUERY reflection compiler and its unsharp control."""
+from pathlib import Path
+from dataclasses import asdict
+import hashlib, importlib.util, json, os, sys
+import sympy as S
+
+ROOT=Path(os.environ.get('D0_REPO_ROOT',str(Path.cwd()))).resolve()
+OWNER=ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+assert hashlib.sha256(OWNER.read_bytes()).hexdigest()==PIN
+spec=importlib.util.spec_from_file_location('source_reflection_native',OWNER)
+N=importlib.util.module_from_spec(spec);sys.modules[spec.name]=N;spec.loader.exec_module(N)
+K=N.GOLDEN_FIELD
+checks=0
+def require(ok,label):
+    global checks
+    checks+=1
+    if not ok:raise AssertionError(label)
+def equal(A,B):
+    return A.shape==B.shape and all(K.from_sympy(S.expand(x-y))==K.zero for x,y in zip(A,B))
+port,q=0,1
+spin=(2,3);old=(4,)
+SI=N.Gate('SourceI',(port,*spin))
+swap=(N.Gate('CX',(port,q)),N.Gate('CX',(q,port)),N.Gate('CX',(port,q)))
+def ex(gates):
+    return N.Execution(5,(port,q),old,tuple(gates),N.G_CX_SOURCE_I,port,spin)
+def matrix(gates):return N.word_matrix(ex(gates),max_qubits=5)
+def inv(gates):return N.inverse_word(ex(gates),max_qubits=5,max_expanded_stages=1000)
+Zword=swap+(SI,SI)+swap
+Vword=swap+(N.Gate('G',(port,)),)+swap
+Vinv=inv(Vword)
+Qword=Vinv+Zword+Vword
+Iz=S.eye(8);I=S.eye(32)
+Z2=S.diag(1,-1);G=S.Matrix(N.G_LOCAL)
+Z=matrix(Zword);V=matrix(Vword);Q=matrix(Qword)
+require(equal(Z,S.kronecker_product(S.eye(2),Z2,Iz)),'logical Z all32 columns')
+require(equal(V,S.kronecker_product(S.eye(2),G,Iz)),'parked G all32 columns')
+require(equal(matrix(Vinv),V.T),'literal raw inverse all32 columns')
+require(equal(Q,V*Z*V.T),'chronology V_inverse;Z;V')
+require(equal(Q.T,Q) and equal(Q*Q,I),'exact full involution')
+require(equal(Q,S.kronecker_product(S.eye(2),G*Z2*G.T,Iz)),'port Spin and oldRIGHT exact spectators')
+require(S.simplify(S.trace(Q))==0,'balanced16 plus16 minus')
+selected=list(range(8));r=len(selected)
+C=Q.extract(selected,selected)
+require(equal(C,N.P**3*S.eye(r)),'unsharp cold return')
+F=S.eye(r)-C.T*C
+require(equal(F,4*N.P**3*S.eye(r)),'full cold escape and all free factors')
+require(not equal(F*F,F),'unsharp feedback is not a projection centre')
+Jrot=S.kronecker_product(S.eye(2),S.Matrix([[0,-1],[1,0]]),Iz)
+dQ=Jrot*Q-Q*Jrot;dC=dQ.extract(selected,selected)
+require(equal(dC,-4*N.A*N.P*S.eye(r)),'nonzero QUERY calibration row')
+c=N.P**3;dc=-4*N.A*N.P
+require(K.from_sympy(S.expand(-2*c*dc))==K.from_sympy(8*N.A*N.P**4),'positive feedback derivative numerator')
+counts={name:asdict(N.inventory(ex(word),max_qubits=5,max_expanded_stages=1000)) for name,word in [('Z',Zword),('V',Vword),('V_inverse',Vinv),('QUERY',Qword)]}
+require((counts['Z']['g_count'],counts['Z']['cx_count'],counts['Z']['source_i_count'],counts['Z']['gate_count'])==(0,6,2,8),'Z native inventory')
+require((counts['QUERY']['g_count'],counts['QUERY']['cx_count'],counts['QUERY']['source_i_count'],counts['QUERY']['gate_count'])==(2,18,6,26),'QUERY native inventory')
+x,z,alpha,rank=S.symbols('x z alpha rank',real=True)
+M=1-z*alpha*x*(1-x)
+gain=S.diff(-rank*S.log(M),x)
+require(S.simplify(gain-rank*z*alpha*(1-2*x)/M)==0,'derived reporter gain')
+cvar,svar=S.symbols('c s',real=True)
+U=S.Matrix([[cvar,svar],[svar,-cvar]])
+require(U*U==(cvar**2+svar**2)*S.eye(2),'whole cold target involution algebra')
+wordhash=hashlib.sha256(json.dumps([{'op':g.op,'wires':list(g.wires)} for g in Qword],sort_keys=True,separators=(',',':')).encode()).hexdigest()
+result={'status':'PASS','checks':checks,'native_owner_sha256':PIN,'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'full_columns':32,'cold_rank':r,'query_word_sha256':wordhash,'inventories':counts,'balanced_eigen_multiplicity':[16,16],'cold_return':'p^3 I_8','escape':'4 p^3 I_8','QUERY_feedback_calibration_nonzero':True,'complete_heat_replay':False,'GR_closed':False,'scope':'fixed QUERY compiler identity; internal heat uses owned606; no angle-admission or field-root claim'}
+Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))
+```
+
+Observed ordinary-Python receipt 1886 bytes / SHA256 18fcfe6f57196bf0c211da91261229e5c3437850234419e667aaf150e5b32b6c:
+
+```json
+{
+  "status": "PASS",
+  "checks": 16,
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "source_sha256": "4c117dd594d245d5b26f51b60d5f16f17f8407688dee163273eccc72d0d8dfc7",
+  "full_columns": 32,
+  "cold_rank": 8,
+  "query_word_sha256": "9d7e9c1d205cdf2071e2fa6afb36635f0bb19d5cffbdd414466c4ea1bbc1db00",
+  "inventories": {
+    "Z": {
+      "qubits": 5,
+      "blank_count": 2,
+      "unknown_wires": [
+        2,
+        3,
+        4
+      ],
+      "gate_count": 8,
+      "g_count": 0,
+      "cx_count": 6,
+      "source_i_count": 2,
+      "full_dimension": 32,
+      "input_dimension": 8,
+      "cut_rank": 8
+    },
+    "V": {
+      "qubits": 5,
+      "blank_count": 2,
+      "unknown_wires": [
+        2,
+        3,
+        4
+      ],
+      "gate_count": 7,
+      "g_count": 1,
+      "cx_count": 6,
+      "source_i_count": 0,
+      "full_dimension": 32,
+      "input_dimension": 8,
+      "cut_rank": 8
+    },
+    "V_inverse": {
+      "qubits": 5,
+      "blank_count": 2,
+      "unknown_wires": [
+        2,
+        3,
+        4
+      ],
+      "gate_count": 11,
+      "g_count": 1,
+      "cx_count": 6,
+      "source_i_count": 4,
+      "full_dimension": 32,
+      "input_dimension": 8,
+      "cut_rank": 8
+    },
+    "QUERY": {
+      "qubits": 5,
+      "blank_count": 2,
+      "unknown_wires": [
+        2,
+        3,
+        4
+      ],
+      "gate_count": 26,
+      "g_count": 2,
+      "cx_count": 18,
+      "source_i_count": 6,
+      "full_dimension": 32,
+      "input_dimension": 8,
+      "cut_rank": 8
+    }
+  },
+  "balanced_eigen_multiplicity": [
+    16,
+    16
+  ],
+  "cold_return": "p^3 I_8",
+  "escape": "4 p^3 I_8",
+  "QUERY_feedback_calibration_nonzero": true,
+  "complete_heat_replay": false,
+  "GR_closed": false,
+  "scope": "fixed QUERY compiler identity; internal heat uses owned606; no angle-admission or field-root claim"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
