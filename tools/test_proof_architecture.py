@@ -1641,6 +1641,19 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(refactor_inventory["schema"], "d0-lean-declaration-inventory-v1")
         self.assertEqual(refactor_inventory["public_import_root"], "D0.All")
         self.assertFalse(refactor_inventory["worktree_dirty"])
+        self.assertEqual(
+            refactor_inventory["snapshot_commit"],
+            "102e76893f1fd68d4ab7762e5d2dfd370bc9778b",
+        )
+        self.assertEqual(
+            refactor_inventory["lean_source_digest"],
+            "6120fc0d9b4961e5563cb43bb4abcd59f657a240b275ecd7e28f7dd8ff461a33",
+        )
+        self.assertEqual(len(refactor_inventory["declarations"]), 48)
+        self.assertEqual(
+            hashlib.sha256(refactor_inventory_path.read_bytes()).hexdigest(),
+            "8e4a7319d50069718da54d60c067816f0ded8bf09c157e8eaeba3ffdb0a461f9",
+        )
         refactor_declarations = {
             row["name"]: row for row in refactor_inventory["declarations"]
         }

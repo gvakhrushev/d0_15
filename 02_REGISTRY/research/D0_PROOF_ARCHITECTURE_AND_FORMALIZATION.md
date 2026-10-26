@@ -9508,8 +9508,16 @@ theorem composes that result with the existing finite accumulation bound.
 `formal_support.csv` records the reusable analysis module and its geometry
 consumer; the generated `D0.All` import view includes it. The earlier C3
 inventory remains pinned to its original source snapshot and namespace as
-historical evidence. A new two-module compiled inventory and cold-start receipt
-will record the refactored declaration ownership and dependency edge.
+historical evidence. The new two-module compiled inventory records 48
+declarations on clean source snapshot
+`102e76893f1fd68d4ab7762e5d2dfd370bc9778b`, with Lean source digest
+`6120fc0d9b4961e5563cb43bb4abcd59f657a240b275ecd7e28f7dd8ff461a33` and
+inventory SHA-256
+`8e4a7319d50069718da54d60c067816f0ded8bf09c157e8eaeba3ffdb0a461f9`. The
+compiled dependency list for `sampledMatterMidpointLocalDefect_abs_le` includes
+the shared `D0.Analysis.midpointQuadrature_error_abs_le_of_thirdDerivative_bound`.
+A refreshed cold-start receipt will record retrieval of both modules and this
+inventory.
 
 The narrow Lean 4.30.0 builds pass for `D0.Analysis.MidpointQuadrature`
 (**3,301/3,301** jobs) and
