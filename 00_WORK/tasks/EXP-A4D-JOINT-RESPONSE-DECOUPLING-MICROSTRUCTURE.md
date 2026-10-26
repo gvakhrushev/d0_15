@@ -13948,3 +13948,94 @@ Rebased final work/agent/gravity/repository guards PASS with unchanged
 889claims/31assumptions/58aliases/183formal_support/918Leanclosure,
 warnings0 and scientific_promotionfalse. No upstream scientific replay
 or remoteCI pass is inferred from these structural checks.
+
+
+## 26 October2026 — all-record reciprocal source/metric composition (7by)
+
+SAME #334 / constitutive / native-programme-v1; native realization and
+final composition. Scientific inputbfea3aa6; concurrent intake through
+d2e91d302d69c88e6fc59ded8718a17ddb3b45ed preserved. Previous turn PROGRESS.
+Consume existing recorded comparer89--93,7bu offdiagonal lift/prefix
+metric,7az437 and7bw606--613. Parent application: resolve the measured
+route's cold-attenuation, full metric and independent-normal mismatch
+on one explicitly enlarged coherent comparison apparatus.
+
+Actual full recorder Wj=KU_t with every branch K_b=c_b P_b U_t and all
+coherent phases/failures retained; not a mere successful channel. For
+E=jP_tj* and Q=directsum P_bP_tP_b*, use U_L=[[0,W*],[W,0]] and the
+ACTUAL active cutP_L=diag(E,Q), rankr+s. The forward orientation executes
+W and retains the entire tape; reverse inputs execute W*, with immutable
+oldRIGHT untouched. All complementary input columns remain. Exact full
+feedback has singular-paired blocks I-C*C,I-CC*, so
+J_L=2J_t-(s-r)log(1-z), with true positive absolute rank anchor and no
+z_eff, postselection or attenuation. Moving coherent branch weights are
+allowed when the actual smooth W satisfies the stated identity.
+
+The whole lift is an involution for every W, with +/- multiplicitiesD,D.
+Actual internal placement and fixed paidN give constant FULL501 two-grade
+heat, including every index/dark/helper mode;7bw supplies ALL ambient raw
+temporal normals. Target projection return implies full lift projection
+return, so all independent unitary/cut feedback normals vanish as well.
+For7bu (whose target heat is field constant), the complete field covector
+is EXACTLY2dI_h and the original primary nonvacuum centre solves all these
+normal equations. Other target varying heat is not asserted doubled.
+
+For full output Role representation Aout with AoutK=Ka and J=jj*, use
+Ain=jaj*+(I-J)W*AoutW(I-J). It is a full faithful unital representation;
+W Ain-Aout W=K[U_t,a]j*. Thus the entire operator norm and7bu actual-prefix
+Dirac metric transport exactly, without assuming full-column W factorization.
+The complementary INITIAL observer now depends onW. This is an explicit
+common-sector readback, not equality to the unchanged canonical7bv tests.
+Actual paid predicate/readback and all other native future tests remain.
+
+Physical inputs retained: complete coherent mutable-WORK reader/recorder,
+all conditional W/W* raw controls and placement, actual rank-r+s active
+return task (including reverse inputs), full price identification and the
+observer readback. A dephased tape, approximate balanced bus or final
+predicate alone does not meet these conditions. Old one-direction cut
+would give F=P and constantJ, an exact adverse control. No autonomous
+selection of GR field graph, new field root, physical causal-time or
+spatial-refinement theorem is claimed. Original7bu programmable-action
+boundary remains; no uniqueness veto is added for one declared regime.
+Incoming7bx correlated-SOURCE K operators generally do not satisfy621;
+its strict fixed-angle contrast remains valid and independent.
+GR_closed=false; positive_gr/raw216 open; no task/claim/assembly promotion.
+
+Smallest decisive check: exact rational target4, four records, WORLD16,
+lift32, actual cutr2+s8=10; nonprojection and two projection centres,
+changed unprepared full-column completion, full determinant/absolute
+anchor, five independent noncommuting source rows, exact full ambient
+projection-source commutator and metric Gram identity. Naive fixed
+complement tests have column norm-squared544/625 exceeding target16/25.
+The initial checker assertion omitted the target determinant square;
+corrected to the proved two-sector identity before the final PASS run.
+No theorem/input/expected physical claim weakened. No old heat/GR/Lean
+suite replay; the owned501/7bw heat theorem is consumed with its explicit
+complete multiplicities in624. Python3.11.9/SymPy1.12.1, assertions enabled.
+
+Final proof13520bytes/SHA8ab23a5b3327a256971ef90f7997015d302428792862941b0c037463567d25ff;
+checker4198bytes/SHAaac94566b36e6f9e412c4d0312bbd35649b0693ae73c37188b77e1baeb7ab9c4;
+receipt1324bytes/SHAebecedeb020c392f9311cc486d69adab65768f483a19b9f9d8a9be9104f74564.
+
+Two source-only mathematical reviews ACCEPT the composition; final
+renumbering references were corrected as requested. Final proof pin above
+is8ab23a5b3327a256971ef90f7997015d302428792862941b0c037463567d25ff.
+No reviewer replay, independent assembly acceptance or physical promotion.
+
+Affected integration PASS on final mathematical inputs: validate_work.py,
+validate_agent_protocol.py, gr_assembly.py check (validtrue;54active/
+98results/5discharged/22obligations;scientific_promotionfalse),
+validate_repo.py (889claims/31assumptions/58aliases/183formal_support/
+918Leanclosure;warnings0), and git diff --check. Existing checkpoint
+template consumed; no registry/interface/status changed. References/proof
+pins only changed after these checks; no new mathematical replay required.
+
+Removing7by restores incoming primary1370138bytes/SHA
+91141ab5aa6311ce891a352fb59d19e3ef5bb95d889f43915a590d4b54b6139b.
+Incoming brief915759bytes/SHA
+706392db65868ed224b1951bab44a9a2d0734be49e4d818b9fadd14af7f8c700
+remains an exact prefix. The entire concurrent7bx and all previous
+proof/checker/source pins are preserved byte-for-byte. The embedded
+checker is identical to the actually executed4198byte source. These
+are local exact/source/structural checks, not remote CI or physical
+acceptance. #334 remains Draft/open/unmerged.

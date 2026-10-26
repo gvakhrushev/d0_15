@@ -26232,6 +26232,449 @@ if __name__=='__main__':
         'old_math_or_huge_native_heat_replayed':False},indent=2))
 ```
 
+## 7by. All-record reciprocal comparison transports the source and metric together without cold-branch attenuation
+
+26 October2026. SAME #334 / constitutive / native-programme-v1; native
+realization and final composition, published input bfea3aa649de62954823901239163470b39e18c8.
+Concurrent correlated-SOURCE intake through d2e91d302d69c88e6fc59ded8718a17ddb3b45ed
+is preserved in7bx. It changes none of the input lemmas used here.
+The previous turn was PROGRESS:7bw supplied full temporal normals and the
+inherited metric/source tower. This next application consumes the OWNED
+recorded comparer (paid-writer15.2--15.3,89--93),7bu's Hermitian offdiagonal
+lift and prefix metric,7az437, and7bw606--613. It addresses the actual
+attenuation/normal mismatch613; it does not repeat the measured-bus proof.
+
+### Fix the complete recorder and its two actual return sectors
+
+Let H_t be the target's COMPLETE finite logical input, not its cold cut.
+Let j:H_t->WORLD be the actual blank-input isometry, W a full unitary on
+WORLD, and U_t the target unitary. Every outcome b, phase, retained flag
+and failure must be included in the claimed coherent identity
+
+    W j = K U_t,
+    K psi = direct_sum_b c_b P_b psi,
+    sum_b |c_b|^2=1,       K* K=I.                         (621)
+
+The P_b are known unitary correction frames, not the Book projector.
+The outcome sectors are orthogonal. The amplitudes may vary smoothly
+with the fields if the actual W does; their phases are never discarded.
+Equal probabilities are unnecessary. This hypothesis is stronger than
+agreement of a successful branch or measured output probabilities: a
+failure with a different logical action must first be included through
+its proved correction, or621 is false. The finite unequal Golden
+teleportation filters of7bk525 cannot be renamed scalar c_b merely
+because their probabilities sum to one. A dephased measured channel
+alone does not provide this full coherent W or its inverse.
+
+For the actual target cut P_t of rank r, take
+
+    E=j P_t j*,
+    Q=direct_sum_b P_b P_t P_b*,    rank Q=s=Lr,
+    C=Q W E:E WORLD -> Q WORLD.
+
+Q is zero on any explicitly retained additional output complement; all
+such columns stay in W and the heat. QK=KP_t gives
+
+    C*C = j P_t U_t* P_t U_t P_t j*,
+    I_E-C*C = j F_t j*,
+    F_t=P_t U_t*(I-P_t)U_t P_t restricted to ran P_t.
+
+For a computational blank target cut and the actual Pauli frames612,
+Q is the finite Boolean predicate that the output blank pattern agrees
+with the retained frame. It does not need a field-eigenvector oracle.
+Its actual reversible predicate computation, however, still needs
+admitted controls and its full paid implementation. An abstract positive
+effect or Book01 Query predicate alone is not that physical instrument.
+
+Now use a real orientation bit with the COMPLETE operator and cut
+
+    U_L = [[0,W*],[W,0]],       P_L=diag(E,Q).            (622)
+
+A realization is V X_orientation V*, V=diag(I,W), including every
+primitive of both conditional words. On orientation0/E input only the
+FORWARD W is applied; its entire record goes into orientation1/Q or its
+complement. W* acts on the other input orientation. This is not an echo
+that undoes a measured tape. Immutable oldRIGHT remains untouched by W;
+mutable coherent flags are retained on the actual forward outcome.
+The operation can be priced at its actual finite N without treating
+controlled W, its inverse or its scratch as free native primitives.
+Use the same501 complete-history convention: cut at stage0 with the
+actual prepared scene vector and zero C1 support, and return T^N with
+identity on C1. All scene/cochain modes remain in the heat. Genuine
+free scene or oldRIGHT inputs multiply the actual r,s and WORLD ranks;
+prepared blanks do not acquire a free-input multiplicity.
+
+Crucially P_L must be the ACTUAL admitted active/return sector of this
+comparison task, including every reverse Q input. Its rank is r+s,
+not r and not the rank of the one prepared forward state. A terminal
+predicate after an unchanged blank-only experiment does not establish
+this cut. Its physical selection is a remaining application premise.
+As a sharp adverse control, the old one-direction cut diag(E,0) obeys
+P_cold U_L P_cold=0, so its F=P_cold and its J=-r log(1-z) is field
+constant. Merely adding the orientation bit to the old task loses the
+wanted source. The two-sector task and its actual cut cannot be omitted.
+
+### Both directions give one complete source with its absolute anchor
+
+The full escape on ran P_L is exactly
+
+    F_L=diag(I_E-C*C, I_Q-CC*),
+    det(I-z F_L)=(1-z)^(s-r) det(I-z F_t)^2,
+    J_L=2 J_t-(s-r)log(1-z).                             (623)
+
+Indeed C*C and CC* have the same nonzero singular spectrum; the Q block
+has s-r additional eigenvalues1 in its escape. This proves623 even at
+zero singular values and with arbitrary unprepared complementary WORLD
+columns. No record branch has been postselected. The additive term is
+the real positive fixed-rank return price, not a subtraction or a free
+bank multiplicity. It changes under actual rank/branch-set comparisons.
+At fixed ranks,z, the entire noncommuting first derivative is
+DJ_L=2 DJ_t, with moving W, preparation, fields and branch amplitudes
+retained whenever621 and the stated cut map hold. Independent off-map
+apparatus normals are handled below; they are not claimed to obey621.
+
+Unlike613, neither z nor the feedback spectrum is attenuated. If F_t is
+a projection, C is a partial isometry and BOTH escape blocks in623 are
+projections. Thus the already owned7az437 applies on the entire enlarged
+carrier: DJ_L=0 for every independent ambient unitary and fixed-rank-cut
+tangent, including variations that break the paired construction622.
+No independently adjustable forward, inverse or preparer row is frozen.
+
+U_L is selfadjoint and unitary for EVERY W, with exactly D positive and
+D negative eigenvalues, D=dim WORLD. On the actual stagewise INTERNAL
+placement of501, let
+
+    k_N(theta)=sum_(l=0)^(N-1) Tr_scene exp[-beta(I-B
+                      -2 R^2 cos((theta+2pi l)/N))],
+    z_N(theta)=2 k_N(theta)+359N.
+
+Then the COMPLETE two-grade heat partition and action are
+
+    Z_L=D[z_N(0)+z_N(pi)],
+    B_L=beta^(-1)log Z_L+2J_t-(s-r)log(1-z).            (624)
+
+All33 scene modes,392 one-cochain modes per stage/fibre, true extra
+helpers and all359N(2D) excess one-cochain zero modes remain. There is
+no discarded log baseline. N is the ACTUAL full conditional primitive
+clock; fixed N is a hypothesis of each field derivative, not a proposed
+free delay or a minimum over programme lengths.
+
+Along the supplied internal family the heat in624 is constant. More
+strongly7bw606 proves that its complete temporal covector vanishes on
+EVERY independent ambient unitary raw-stage tangent, including scene
+mixing, at each internal-background U_L. Hence at a target projection
+centre BOTH H and J normals vanish, even when the varied forward and
+reverse rows cease to be inverses. The spatial fibre-unitary extension
+has7bw608's exact scope. Scalar weights/Gram normalization, beta,z,
+rank/time comparisons and genuinely selected extra price terms keep
+their actual sources. RawZone placement cannot inherit624 from endpoint
+involution alone;500 and the old counterexample remain decisive.
+
+Apply this to the EXISTING7bu target: its own full heat is field constant
+and J_t(y)-J_t(0)=f_h(y)-f_h(0). Therefore
+
+    B_L(y)-B_L(0)=2[f_h(y)-f_h(0)],
+    D_y B_L=2 D_y I_h,
+    full temporal/cut D B_L|_(primary centre)=0.          (625)
+
+The native finite Palatini--CAR equations, their42 independent field
+rows and the exact every-mesh nonvacuum family are the existing consumer.
+This is a positive source transport with its original normalization,
+not a new action encoder. For an arbitrary OTHER target with nonconstant
+heat only DJ doubles;625 must not be asserted for that target's full B.
+The absolute old and new prices and their clocks are different.
+
+### Full operator metric transport needs no full-column unitary factorization
+
+Let a denote the same faithful scalar Role representation on H_t. On
+ALL WORLD output columns choose a unital *representation A_out with
+
+    A_out(a) K=K a.
+
+On the displayed outcome direct sum take A_out(a)=direct_sum_b P_b a P_b*.
+Any added helper/output complement needs an explicit unital extension;
+zero there is not a unital representation. Put J=j j*. Since Wj=KU_t,
+W* A_out(a)W j=j U_t* a U_t. Consequently J reduces this entire
+representation. Define
+
+    A_in(a)=j a j*+(I-J)W* A_out(a)W(I-J),
+    pi_L(a)=diag(A_in(a),A_out(a)).
+
+A_in is a faithful unital *representation, as a direct sum on J and Jperp.
+The prepared-input restriction is exactly j*A_in(a)j=a. On all columns,
+
+    W A_in(a)-A_out(a)W=K[U_t,a]j*,
+    ||[U_L,pi_L(a)]||=||[U_t,a]||.                      (626)
+
+The right side is an isometric compression-extension, not deletion of
+unprepared states. The complement contributes zero to this particular
+commutator because its tests are genuinely transported; its complete
+state, heat, cut and other native future tests remain. Formula626 avoids
+the stronger and unnecessary claim that W factors on EVERY input as
+fixed unitaries times U_t tensor I. Correctness621 on the full logical
+input is sufficient with the displayed complementary observer map.
+
+Consume7bu592 with the ACTUAL primitive prefixes of622. The complete
+chronological Dirac commutator for pi_L has norm
+(1/sqrt22)||[U_t,a]||. Thus the same finite original CAR metric estimates
+593--594 and calibration transfer exactly, with no branch attenuation
+or new metric error. Their original target approximation and physical
+refinement bounds remain; a positive norm metric is not Lorentz time.
+
+This is a declared common-sector/future-readback observer family. Its
+complementary INITIAL tests depend on the actual W, unlike the fixed
+canonical initial representation in7bv. All derivatives retain this
+movement and the actual prefix movement. A physical readback uses the
+admitted blank/complement distinction and the paid W/output-test/inverse
+apparatus; the abstract formula does not supply that instrument. It is
+not a proof that the unchanged canonical path observer selects these
+tests, nor a license to erase other native distinctions.
+
+### Exact parent substitution and the narrowed physical application
+
+The source and metric now compose on ONE enlarged operator, cut and
+observer:621--626 retain all outcomes and complementary columns, give
+exact positive source gain2, preserve the intrinsic metric, and restore
+all temporal/cut centre equations. Thus the attenuation and lost-normal
+objection613 is specific to its cold cut; it is not an unavoidable
+consequence of using a recorded comparison. This is the actual changed
+input and parent route improvement, not a re-run of the old bus.
+
+The mandatory remaining inputs are concrete: an admitted COMPLETE
+coherent recorder621 (the original live mutable-WORK reader is still
+unproved), controlled W/W* with real internal placement and costs, the
+ACTUAL paired rank-r+s return sector622, and the stated observable
+readback. The output instrument alone, an approximate fair bus or a
+terminal predicate supplies none of these by itself. If any required
+history is already sealed/dephased, a matching coherent lift needs its
+actual physical map rather than an asserted inverse on that history.
+
+The originalBook01 finite-section and canonical AF representation
+results already admit representations; do not dispatch another algebra
+universality proof. The existing Fibonacci record activation14--20,
+196--208 retains physical preparation/admission, including the actual
+blank trace weight p^6. This result neither requires unique microscopic
+selection for ONE regime nor proves the constitutive field graph chosen.
+It applies to the declared7bu graph, whose freedom to encode other
+critical actions still survives. GR time evolution, spatial refinement,
+full native Cost-Info identification and physical selection remain open.
+The concurrent fixed-Golden SOURCE instrument7bx615 is generally not a
+scalar-times-unitary corrected instrument621; its strict whole-price
+contrast620 remains a different positive input, not an application of
+this lift by relabelling its fine operators. Neither result is made an
+extra prerequisite of the other.
+No assembly discharge, new task, source-fitted Info or GR promotion.
+
+### Smallest decisive check and source review
+
+The embedded checker uses exact rationals on a four-outcome coherent
+recorder, target dimension4, WORLD16 and full lifted dimension32. It
+keeps the actual rank2 forward and rank8 reverse sectors, hence rank10
+Book cut and the full -6 log(1-z) anchor. The three target angles include
+both types of projection centre and one nonprojection field. A changed
+full-column completion fixes every true input while changing the
+unprepared sector. Exact determinants, five independent noncommuting
+source rows, the full ambient projection-source commutator and the full
+metric Gram identity are checked. A one-direction-cut control gives
+constant feedback; the unchanged naive complement tests fail the metric
+bound. No large heat replay is needed:624 consumes the already verified
+all-size501/7bw theorem with the explicit equal multiplicities.
+
+The first checker run exposed a transcription error in its assertion:
+the target determinant was not squared. The assertion was corrected to
+the independently derived623, with no change to the construction or
+scope; the final complete run and receipt below are authoritative.
+
+Proof pin:13520 UTF8 bytes, SHA256 8ab23a5b3327a256971ef90f7997015d302428792862941b0c037463567d25ff.
+Changed checker:4198 bytes, SHA256 aac94566b36e6f9e412c4d0312bbd35649b0693ae73c37188b77e1baeb7ab9c4.
+Observed canonical-LF receipt:1324 bytes, SHA256 ebecedeb020c392f9311cc486d69adab65768f483a19b9f9d8a9be9104f74564.
+
+Source-only mathematical ACCEPT by full_path_metric_application and
+selected_bootstrap_application. The first reviewed13054bytes/94b67f200f83c744b4230d4a8db304aedaac5b4dea7a0994414a1f06b9a76426;
+the second reviewed integrated13520bytes/111939b4416680ead5d744064dfcb471ba89a6f9ee320c8908101c60da34753f.
+Its required stale-reference corrections are included in the final proof
+pin above; mathematical inputs and checker are unchanged. No reviewer
+replay or independent assembly/physical acceptance is claimed.
+
+```python
+from pathlib import Path
+import json, platform
+import sympy as S
+
+I=S.eye
+Q=S.Rational
+z=Q(1,2**20)
+nt,nb=4,4
+D=nt*nb
+j=S.zeros(D,nt); j[:nt,:]=I(nt)
+J=j*j.T
+Pt=S.diag(1,1,0,0)
+a=S.diag(0,0,1,1)
+x=S.Matrix([[0,1],[1,0]])
+zp=S.diag(1,-1)
+frames=[I(nt),S.kronecker_product(x,I(2)),S.kronecker_product(zp,I(2)),S.kronecker_product(x*zp,I(2))]
+R=Q(1,2)*S.diag(1,1,1,-1)*S.Matrix([[1,1,1,1],[1,-1,1,-1],[1,1,-1,-1],[1,-1,-1,1]])
+CP=S.diag(*frames)
+K=S.Matrix.vstack(*[R[b,0]*frames[b] for b in range(nb)])
+Aout=S.diag(*[P*a*P.T for P in frames])
+Qout=S.diag(*[P*Pt*P.T for P in frames])
+E=j*Pt*j.T
+P=S.diag(E,Qout)
+ids=[k for k in range(2*D) if P[k,k]==1]
+r,s=2,8
+assert len(ids)==r+s
+
+def require(v,msg):
+    if not bool(v): raise AssertionError(msg)
+def zero(A): return all(S.simplify(v)==0 for v in A)
+def target(c,sn):
+    U=I(nt); U[1,1]=c; U[1,2]=sn; U[2,1]=sn; U[2,2]=-c
+    return U
+def fixture(c,sn,changed=False):
+    U=target(c,sn)
+    W=CP*S.kronecker_product(R,U)
+    if changed:
+        V=I(D); V[4,4]=Q(3,5); V[4,6]=Q(4,5); V[6,4]=-Q(4,5); V[6,6]=Q(3,5)
+        require(zero(V*j-j),'completion fixes every true input')
+        W=W*V
+    lift=S.BlockMatrix([[S.zeros(D),W.T],[W,S.zeros(D)]]).as_explicit()
+    Fin=P*lift.T*(I(2*D)-P)*lift*P
+    f=Fin.extract(ids,ids)
+    ft=(Pt-Pt*U.T*Pt*U*Pt)[:2,:2]
+    Ain=j*a*j.T+(I(D)-J)*W.T*Aout*W*(I(D)-J)
+    require(zero(W.T*W-I(D)),'whole W orthogonal')
+    require(zero(W*j-K*U),'all four branches, including phase')
+    require(zero(Qout*K-K*Pt),'same output event on every frame')
+    require(zero(lift*lift-I(2*D)),'whole lift involution')
+    require(S.trace(lift)==0,'equal full plus/minus multiplicities')
+    require(S.factor((I(r+s)-z*f).det()-(1-z)**(s-r)*(I(r)-z*ft).det()**2)==0,'full determinant and exact rank mismatch')
+    require(zero(Ain*Ain-Ain),'full initial observable algebra projection')
+    C=W*Ain-Aout*W
+    require(zero(C-K*(U*a-a*U)*j.T),'full commutator identity')
+    require(zero(C.T*C-j*(U*a-a*U).T*(U*a-a*U)*j.T),'full norm Gram identity')
+    cold=S.diag(E,S.zeros(D))
+    require(zero(cold*lift*cold),'old one-direction cold cut loses source')
+    return U,W,lift,f,ft,Ain,C
+
+checks=[]
+for c,sn in [(Q(3,5),Q(4,5)),(Q(0),Q(1)),(Q(1),Q(0))]:
+    for changed in [False,True]:
+        U,W,L,f,ft,Ain,C=fixture(c,sn,changed)
+        checks.append({'c':str(c),'s':str(sn),'completion_changed':changed,'target_eigenvalues':[str(v) for v in ft.eigenvals()]})
+        if c in [0,1]:
+            require(zero(f*f-f),'all active feedback projection at centre')
+            M=I(2*D)-z*(P*L.T*(I(2*D)-P)*L*P)
+            A=L*P*M.inv()*P*L.T
+            require(zero(A*(I(2*D)-P)-(I(2*D)-P)*A),'entire ambient unitary feedback covector zero')
+
+# Exact first-source transport for independent W rows, beyond the corrected branch family.
+U,W,L,f,ft,Ain,C=fixture(Q(3,5),Q(4,5),True)
+M=(I(r+s)-z*f).inv()
+Mtarget=(I(r)-z*ft).inv()
+for i,k in [(0,1),(0,6),(1,9),(7,14),(4,15)]:
+    X=S.zeros(D); X[i,k]=1; X[k,i]=-1
+    dW=X*W
+    dL=S.BlockMatrix([[S.zeros(D),dW.T],[dW,S.zeros(D)]]).as_explicit()
+    dfull=(P*(dL.T*(I(2*D)-P)*L+L.T*(I(2*D)-P)*dL)*P).extract(ids,ids)
+    dtarget=-(E*(dW.T*Qout*W+W.T*Qout*dW)*E)[:2,:2]
+    require(S.simplify(z*S.trace(M*dfull)-2*z*S.trace(Mtarget*dtarget))==0,'full noncommuting first-source identity')
+
+# Naive fixed complement tests do not enjoy the repaired norm equality.
+naive=S.kronecker_product(I(nb),a)
+Cn=W*naive-Aout*W
+hostile=[]
+for k in range(D):
+    val=S.factor((Cn.T*Cn)[k,k])
+    if val>Q(16,25): hostile.append((k,str(val)))
+require(len(hostile)>0,'adverse undeclared fixed-test shortcut')
+
+out={'status':'PASS','arithmetic':'exact rational','world_dimension':D,'lift_dimension':2*D,
+     'forward_rank':r,'reverse_rank':s,'actual_cut_rank':r+s,'target_source_gain':2,
+     'absolute_rank_term':'-6 log(1-z)','field_fixtures':checks,
+     'independent_source_rows':5,'naive_test_column_witness':hostile[0],
+     'one_direction_cut':'F=P, field source zero','physical_admission':False,
+     'python':platform.python_version(),'sympy':S.__version__}
+print(json.dumps(out,indent=2))
+Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf8')
+```
+
+```json
+{
+  "status": "PASS",
+  "arithmetic": "exact rational",
+  "world_dimension": 16,
+  "lift_dimension": 32,
+  "forward_rank": 2,
+  "reverse_rank": 8,
+  "actual_cut_rank": 10,
+  "target_source_gain": 2,
+  "absolute_rank_term": "-6 log(1-z)",
+  "field_fixtures": [
+    {
+      "c": "3/5",
+      "s": "4/5",
+      "completion_changed": false,
+      "target_eigenvalues": [
+        "0",
+        "16/25"
+      ]
+    },
+    {
+      "c": "3/5",
+      "s": "4/5",
+      "completion_changed": true,
+      "target_eigenvalues": [
+        "0",
+        "16/25"
+      ]
+    },
+    {
+      "c": "0",
+      "s": "1",
+      "completion_changed": false,
+      "target_eigenvalues": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "c": "0",
+      "s": "1",
+      "completion_changed": true,
+      "target_eigenvalues": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "c": "1",
+      "s": "0",
+      "completion_changed": false,
+      "target_eigenvalues": [
+        "0"
+      ]
+    },
+    {
+      "c": "1",
+      "s": "0",
+      "completion_changed": true,
+      "target_eigenvalues": [
+        "0"
+      ]
+    }
+  ],
+  "independent_source_rows": 5,
+  "naive_test_column_witness": [
+    6,
+    "544/625"
+  ],
+  "one_direction_cut": "F=P, field source zero",
+  "physical_admission": false,
+  "python": "3.11.9",
+  "sympy": "1.12.1"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
