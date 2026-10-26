@@ -13434,3 +13434,132 @@ Original brief875792bytes remains exact prefix SHA256
 Only the two existing owned paths changed. Local exact/numerical checks,
 source review and structural guards are not remote CI or GR acceptance.
 #334 remains Draft, open and unmerged; no new task/PR/selector/discharge.
+
+### 26 October2026 — test the actual STOP ledger: monitored birth changes the complete instrument (7bt)
+
+Existing #334 / constitutive / native-programme-v1, inpute04110f44bbc4d856f1a5e71de24724d6aaccc41.
+Phase: native realization / full-price application. Consumer7br575's real
+quiet WORK/controller operand after7bs's mathematical stopped Book map.
+Changed mathematical input: literal retention of BOTH birth SOURCE bits
+inside the native attempt, testing the proposed internal Golden readout
+price. No new research task, registry state, geometric root or selector.
+
+New7bt586--591 makes two concrete route changes. Finite closed unitary
+HALT invariance U ranP subsetranP forces UPU*=P and PU(I-P)=0, so a
+reachable permanently absorbing state is not supplied by that clock.
+The actual7bs U_forward sends V_K back to j0 on its next tick; it is a
+mathematical completion, not an autonomous variable-runtime controller.
+Original halt is EVENT-class stabilization. Readout/conditional continuation
+or a proved active-work effect remains the actual native layer to apply.
+
+Add real CX1->12,CX2->13 between birthA and middleM, retain original
+terminal copies10/11: new100=(4G76CX20SI), ownedinverse156=(4G76CX76SI).
+Native14 wires, same DATA/Spin/old9, blankP/SOURCE/birth/terminal cuts.
+Trueold128 rank8192, activeD1048576, physical33D17301504. Two extra
+birth WORK bits multiply full capacity4; no dark-complement identity or
+old98/body heat transferred. No actual measurement/dispatcher was emitted.
+
+Full16-branch instrument K_(b,h)=<h|A*|b><b|A|00>M_b, M_b=(I,H,-H,-I).
+Every fine effect is positive scalarI, so computational h is H-sign blind.
+Native quiet h00 CP map=p6(3rho+2HrhoH), probability5p6;11positive.
+AfterK quiet, abort DATA/reference=PinchHrho+5^-K(rho-PinchHrho),
+not pristine input. ALLbirth+terminal0000 instead gives K=p²I,probp4,
+also the actual blank-input Bookcorner. The old p3 quiet, p6 tail,
+Lueders sign task, clean abort,575 Info/cap sources cannot be inherited.
+
+Complete registered CQ I=2[h(q0)+h(q1)] for arbitrary mixed/entangled
+DATA/oldRIGHT; allconditionalstates are unitary images, S_in retained.
+At native I/ell=4(1+p²). The100-word only stores4pointerbits. A DISTINCT
+explicit terminal writer E(b,h) using four original0/10 letters has
+conditional code component L=4+|b|+|h| IFactuallyemitted, not compiled
+hardwareCost. Its C=4+Σ(3qi−2qi²), native C−I/ell=2p5>0 and individual
+matched-qi source1−4p². Quiet lengths4/5/6 have probabilities
+(2+p)/5,2/5,p²/5; mean5−1/sqrt5≠6. If allfourrecords0000, length4.
+An actual extraquiet4 for the old unchanged570 component is not obtained
+by this monitoring: it is a different instrument and price, not overhead.
+
+Exact format control: invertible e=h XOR b gives4independentBern(qi) bits.
+IF that DIFFERENT E(b,e) writer is executed, native code component C=I/ell
+(the owned Golden Kraft cancellation); actual decoder/XOR/writer/thermal
+work is not priced away. Neither code-format gap nor cancellation restores
+H-sign or chooses full native Cost. Whole supplied first-h!=00/cap protocol retains allfine birth/h histories
+and abort: mu=5p6,TtildeK=Σmu^j, I_K=TtildeK I1,CcodeK=TtildeK C1.
+Native BH-codegap2p5*TtildeK; alternateXORgap0. No extraH(time/status),
+which is a deterministic function of record/cap. Fullsource keeps product
+rule TtildeDgap1+gap1DTtilde; nativegapvalue is not openchart identity.
+Generic ordered operator WORK remains
+independent;591 is a sufficient priced representation/directG_cost operand,
+not a universal new measured-transcript admission requirement.
+
+Precise parent route change: internal birth monitoring cannot supply k0=6
+on the SAME scalar-quiet stopped tape. Closed unitary completion cannot
+supply actual absorbing runtime. The surviving step is native detector/
+conditional continuation plus true full priced instrument or equivalent
+ordered WORK operator, coherent work, actual cut/controller/clock and full
+Book source. Original nonvacuum writer/preparation/all42gain/refinement
+remain open. No action/tariff/physicaladmission is inserted. GR_closed=false;
+positive_gr/raw216 and original selected physical HJR remain open.
+
+Combined checker root authorrun exit0 with assertions ON. New literal100
+membership/156leafwiseinverse; independent rational ALL128-column unitary,
+ALL16 signed Kraus/effects, TP, finalSOURCE=terminal, nonzero11, quietCP
+on all4matrixunits and disturbed mixed input, trueblankcorner256/625I.
+Native polynomial identities reduced exactly mod p²+p−1. Explicit16
+prefix0/10 words encoded/decoded and independent XOR probability law
+checked; abort offdiagonal factors1/5,1/25,1/125,1/3125. Complete64-CQ
+mixed entangled-reference fixture retains initialentropy0.8369882167858,
+gain2.613672779174807 equals4h(9/25), tolerance2e-11. Rational codefee
+3526/625, quietmean1510/337. New cap2 checks76complete fine leaves,
+16abort leaves, exact BH-code1777788044/244140625 and XOR-code68570384/9765625,
+abortprob12897917761/152587890625; direct wholeCQ3.3735632210515507
+vs chainrule3.3735632210515525 at same2e-11 tolerance.
+No actual14-native huge matrix/fullheat,
+oldmath/full128/root/Lean/corpus or fullsource suite replay.
+
+Frozen7bt including next-heading separator34319bytes,
+SHA2564d2a7d825773e43de70919c11b7246425a8e9879714a80430810eafcc40eac95.
+Proof15543/eaefe60190fec19ef8b45688a2b4cacd4fbed4b6965b3e9a64f35cbe186cb26a.
+Embeddedcode excludingclosingnewline18760bytes,
+SHA256ba8349f8ec4645d4402c456cdc685fdf69dc34f2941532bcb1b272159217a97e.
+Executed source includesfinalnewline18761bytes,
+SHA25646740e775d72f0266bc90935db0f65fccfd42dd346a302f32f3305dce227c415.
+Final combined __main__ explicitly calls native inventory, rational128,
+price algebra/encoder and completeCQ. Native helper author separately ran
+its boundednewnative/rational portion once; finalcombined runs allnew
+consumers. No old checker suite imports execute. Pinned7br25785/83ee4892
+helperprefix11002/b59989879c10f33c0d47e4f1ee803aa9dbfcb461f295a2c6da9455f36cc9fbc6
+and nested7bp/7bo definitions reused.
+
+All three final SOURCE-ONLY reviews ACCEPT proof15543/eaefe601 and
+combinedcode18761/46740e77: native_source_application,
+price_geometry_bridge, stationary_root_transfer. Full proof/code read;
+no review edits/replays. Final591 clarification permits direct ordered
+quantum WORK rather than forcing a new measured transcript.
+
+Original Book01 checked at4f99c2c46e646d21ae5b9b0491da17bd1b094da0,
+Gitblobcbd79ad54b537406f30d15114f99a7c8a579215d (six obligations and
+EVENT-class halt). Current conditioning prose is not falsely attributed
+to that frozen original. Reused formal EndogenousActionQuantum Gitblob
+605d451b74d5f76ad9a087f08cdd0af9acf4d9b1 and FiniteProtocolClock
+14e5e8404fc729eac4035ea1e708fc6ccdfea566; no Lean reproof/build.
+Final affected structural checks and insertion-only provenance follow.
+
+Final affected integration PASS on the frozen combined source: work,
+agent protocol, gravity assembly(validtrue;54active/98results/
+5discharged/22obligations;scientific_promotionfalse), repository
+(889claims/31assumptions/58aliases/183formal_support/918Leanclosure;
+warnings0). Existing result checkpoint template read; no registry or
+acceptance target was changed. Actual final fence AST/executed-source pin
+and all four named check calls verified. Scientific input extension to
+fullcap was run before this final affected pass; only later qualification
+prose changed. No old mathematical suite rerun for prose/checkpoint edits.
+
+Removing7bt restores incoming primary1230103bytes EXACTLY, SHA256
+26f97a9064066236b68ef3c05e4127a3ada285b3950c157668aeef42940e0510.
+Incoming brief883644bytes remains exact prefix, SHA256
+bece0deccda107eb5aca56f03ecdebf5200257e4d73c66f2a668e2e8d1264b38.
+All prior science retained, including frozen7bs29109bytes/SHA256
+744d65d212e95acb0d149e4a211749da6a8b45c3737505a566913d02a09b270a.
+Only two existing owned paths changed. Structural/source/finite-control
+PASS is not remote CI or physical GR acceptance. Existing #334 remains
+Draft/open/unmerged; no new task/PR/physical admission or discharge.

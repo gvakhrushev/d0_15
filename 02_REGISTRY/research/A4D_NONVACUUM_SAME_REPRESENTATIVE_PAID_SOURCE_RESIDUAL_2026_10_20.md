@@ -23423,6 +23423,673 @@ if __name__ == '__main__':
         'old_checkers_or_matrix_suites_executed':False},indent=2))
 ```
 
+## 7bt. Test the missing STOP price on the actual tape: internal Golden monitoring changes the instrument
+
+26 October2026. SAME #334 / constitutive / native-programme-v1, inpute04110f4.
+Phase: native realization / full-price application. The named parent premise
+is7br575's actual quiet WORK and controller charge, after7bs supplied a
+mathematical stopped Book operator. The changed input is a concrete attempt
+to obtain that charge by recording the existing internal Golden outcomes.
+We compute its ENTIRE instrument, complete quantum information and a precisely
+specified report-code component. This changes the next physical route: birth
+monitoring cannot price the old scalar-quiet tape while leaving its observable,
+abort state or Book cut unchanged. The positive GR family is not re-searched.
+
+### Consume the existing unitary clock at its exact scope
+
+The owned [FiniteProtocolClock](../../03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean)
+uses(c,s)->(c+1,U_c s); its stage count is independent of the arm. It compiles
+SUPPLIED reversible operations, not a detector, variable gate-list execution
+or a numerical runtime fee. Original Book01's halt is stabilization of an
+EVENT class; its finite quotient/operator/positive-response obligations do
+not say that the entire finite world stops evolving. Current Book03's
+conditioning update likewise does not supply this particular dispatcher or
+its Cost. The native Gate contract expressly contains no measurement or
+reset; report_bits are metadata, not an added readout primitive.
+
+There is a short exact obstruction to one tempting application. For a
+finite-dimensional unitary U and proposed permanently absorbing HALT
+projector P, invariance and equal ranks force
+
+    U ran(P) subset ran(P) => U P U^*=P
+                            => P U(I-P)=0.              (586)
+
+Thus no ACTIVE state can first enter that absorbing subspace. This is a
+restriction on a CLOSED finite unitary controller, not on the original D0
+measurement/quotient layer. In the already constructed7bs582 completion it
+is explicit: U_forward j0=V_K and U_forward V_K=j0. Repeating that unitary
+as an autonomous tick immediately returns the whole stopped input. A finite
+idle-counter chain can delay the return, with its actual extra clock and
+modes; it cannot infer permanently absent work from DATA identity.
+
+Consequently the physical route must apply the native registered-readout/
+conditional-continuation layer or prove a particular active-work effect,
+including the actual clock/controller. This consumes the owned stopped-rule
+admission warning after its equation4; it is not a new stopping theorem or
+a claim that irreversible readout is forbidden. The bound1 for a nontrivial
+transition in EndogenousActionQuantum also leaves its independent excess
+profile: it does not assign Cost to a98-letter word.
+
+### Build one actual monitored native word and retain every fine branch
+
+Write A=G_0 tensor G_1 on the TWO SOURCE controls, with matched birth/inverse
+on each control, M=diag(I,H,-H,-I), H^*=H,H^2=I on the entire DATA+Spin+old
+input. In7br, A;M;A^* is coherent until its balanced terminal copy. Now add
+TWO actual native CX gates from SOURCE1/2 into fresh blank birth archives12/13
+BETWEEN A and M. Keep the original balanced terminal copies to10/11 and
+retain the new archives through terminal readout. This is the concrete
+changed programme, not an assumed assignment of six payments.
+
+It has100 stages:4G+76CX+20SourceI; its exact owned inverse has156 stages.
+The input cut has the same free rank8192 at true oldRIGHT128, with the two
+new birth registers BLANK. Full capacity is multiplied by4: active1048576,
+physical33 completion17301504. Neither birth record is a free incoming key.
+The new CX gates act on unprepared columns too; no old completed-dark identity
+or old98 heat is inherited. The100-stage tuple is a unitary word with pointer
+copies, not a compiled measurement/STOP controller or a full-price receipt.
+
+Let b=(b0,b1) be the retained birth pair and h=(h0,h1) the final SOURCE pair.
+For real Golden rotations G_i=[[sqrt(1-q_i),-sqrt(q_i)],
+[sqrt(q_i),sqrt(1-q_i)]], the full fine Kraus operator is
+
+    K_(b,h)=<h|A^*|b><b|A|00> M_b,
+    M_b=(I,H,-H,-I)_b,
+    K_(b,h)^*K_(b,h)=w_(b,h) I,
+    sum_(b,h) w_(b,h)=1.                               (587)
+
+At native q0=q1=p^2, the one-control factor is
+ t_(b,h)=[[p,-ap],[p^2,ap]], so K_(b,h)=t_(b0,h0)t_(b1,h1) M_b.
+ALL16 fine weights are positive. Every branch is scalar times UNITARY,
+not a projector onto an H-eigenspace. Even if birth is only marginalized for
+the final report, retaining its physical which-path record removes the
+original source-path interference. The computational final h has exactly
+identical laws on H's two eigenspaces; it no longer supplies7br570's sign
+measurement. In particular11 is now a nonzero output, not a structural fault
+of zero amplitude. Full future information in DATA/birth is retained; this
+claim concerns the specified computational h readout, not every possible
+later joint test or a free erasure of the birth registers.
+
+### The true quiet channel and abort state exclude transfer of safe retries
+
+For the marginal terminal h=00, sum over the retained birth histories gives
+
+    Q00(rho)=(p^4+p^8)rho+2p^6 H rho H
+             =p^6(3rho+2H rho H),
+    Pr(h=00)=mu=5p^6,
+    Pr(h=00,01,10,11)=p^6(5,2sqrt5,2sqrt5,4),
+    rho_abort,K=Pinch_H(rho)+5^(-K)[rho-Pinch_H(rho)]
+       =[(1+5^(-K))rho+(1-5^(-K))HrhoH]/2.              (588)
+
+All formulas include old references inside rho. The last line is the DATA/
+reference marginal after K terminal00 outcomes, not erasure of their full
+birth histories. It follows by iterating the conditional channel
+(3/5)id+(2/5)Ad_H; mu is input-independent. Unknown input is disturbed unless
+HrhoH=rho, even on an abort. The old p^6 cap tail, pristine abort, sign test,
+source575 and diamond comparison from571 cannot be transferred. A corrected
+byproduct would require its real controlled-H operations/clock/work and would
+still leave the computational h weights input-independent.
+
+If one changes quiet to mean ALL birth+terminal0000, then K=p^2I and its
+probability is p^4. That is a different rule, with every other fine record
+retained as an outcome; it does not recover the old p^3 quiet amplitude or
+the original sign instrument.
+
+### Compute the whole CQ information before testing a literal reporting charge
+
+Every conditional DATA/Spin/old state in587 is a unitary image M_b rho M_b^*.
+Thus its entropy is S(rho) even for a mixed entangled input. The branch law
+is: birth bits independently Bernoulli(q_i), then h_i differs from b_i with
+probability q_i. Entropy chain rule gives, with h(x) in NATURAL units,
+
+    I_fine=2[h(q0)+h(q1)],
+    I_fine/ell=4(1+p^2) at q_i=p^2, ell=log(phi).        (589)
+
+This is the whole fine registered CQ gain. It is not565's h(4p^3) term or
+574's stopped-Lueders information, and it has no8192 rank factor. On the
+fixed-q H comparison this I_fine has zero source because all fine conditional
+states are unitary images, not because input entropy was discarded.
+Independent q/input/controller/work reactions remain their own operands.
+
+The100-word stores FOUR pointer bits; that alone is not a primitive price
+ledger. To test the proposed four-Golden-readout accounting concretely,
+specify a terminal report format E(b,h)=sigma(b0)sigma(b1)sigma(h0)sigma(h1),
+with sigma(0)=0, sigma(1)=10. The16 distinct finite prefix words are explicitly
+encoded/parsed in the checker. IF this report is actually emitted, its code
+length component is L_(b,h)=4+|b|+|h|. The100 quantum word does NOT compile
+that variable-length writer or declare its hardware/code length the whole
+physical Cost. Conditional on this precise format, the actual branch weights
+from587 yield
+
+    C_4code=4+sum_i(3q_i-2q_i^2),
+    C_4code(native)=4+2p^2+4p^3,
+    C_4code-I_fine/ell=2p^5>0 at native,
+    partial_(q_i)(C_4code-I_fine/ell)=1-4p^2 !=0,
+    E[L|h00]=5-1/sqrt5, NOT6.                           (590)
+
+For h00 the lengths4,5,6 have conditional probabilities(2+p)/5,2/5,p^2/5.
+If ALL four records are0000, the length is4, not6. These are actual code
+lengths for the stated writer, never a charge inferred from -log p^6.
+The derivative in590 is on a matched-angle mathematical comparison family;
+it does not admit continuous native Golden pulse angles. For a full cost
+operator W_(b,h), the first-cost effect instead retains
+sum_(b,h)w_(b,h)M_b^*W_(b,h)M_b, including all moving W and source/initial
+reactions. That full WORK may be H-dependent even though this code component
+and I_fine are H-blind. No complete price or native stationary law is claimed.
+
+An exact report-coordinate control reinforces this boundary. The invertible
+recoding e=h XOR b makes the FOUR bits(b,e) independent Bernoulli(q_i),
+two for each i. If the DIFFERENT format E(b,e) is actually written using
+the same0/10 letters, its mean code length is4+2(q0+q1), equal to
+I_fine/ell at the native point. This is the already owned Golden Kraft
+cancellation, applied to these actual fine branches. It does not price the
+recoding/writer hardware, choose between physical formats or restore the
+H-sign instrument. In particular neither a nonzero code-format gap nor
+its cancellation alone selects the full native action.
+
+The same computation now applies to the WHOLE supplied stopped protocol.
+Continue only at h00, stop at any other h (including its now-positive11),
+and retain cap abort and ALL fine birth/final records. Every complete leaf
+still acts as scalar times a unitary product on DATA/oldRIGHT. Conditional
+on a live prefix the next fine law is the same input-independent587 law.
+For mu=5p^6 and Ttilde_K=sum_(j=0)^(K-1)mu^j, the bounded entropy chain
+rule and actually emitted per-attempt codes therefore give exactly
+
+    I_fine,K=Ttilde_K I_fine, C_4code,K=Ttilde_K C_4code,
+    (C_4code-I_fine/ell)_K=2p^5 Ttilde_K at native.
+
+The full source is Ttilde_K D(C_4code-I_fine/ell)
++(C_4code-I_fine/ell) D Ttilde_K, retaining moving operands and cap effects.
+The native value2p^5 is not an identity on an open source-comparison chart.
+For the alternate(b,e) format the native code component cancels at every
+finite cap. Status/time are functions of the complete record and the known
+cap; H(T) is not added again. Initial quantum entropy cancels because EVERY
+full fine leaf is a unitary image of the same rho and total trace is1.
+These are the full stopped CODE components on the specified readout rule,
+including abort; controller/writer/init/closing and all other work/heat
+prices are still separate. No runtime admission or H-observable is recovered.
+The new independent cap2 fixture retains76 fine leaves, including16 abort
+leaves, and checks their actual complete quantum entropy and both code sums.
+
+For comparison, on the ORIGINAL unchanged570 instrument the already supplied
+actual TWO-bit word component577 gives C_word,infinity=2/u. At fixed H/input,
+its uncapped C-I/ell derivative at r=p^6 is4/u^2>0. Thus a further quiet
+component4 would be necessary for575's displayed fixed-fee component balance,
+IF all remaining source terms vanished. Recording the internal birth bits
+does not provide that component on the same instrument:588--590 prove the
+changed probabilities, price and DATA task. No extra4 is assigned, and finite
+cap/abort/controller boundary sources remain exactly as in575.
+
+### The actual Book cut and minimal priced instrument keep their distinct types
+
+The new birth registers are blank in the SAME physical initial cut, even if
+one does not print them. Complete blank return therefore retains b=00 AND
+h=00. Directly from587 it is C=(1-q0)(1-q1)I=p^2I at native, agreeing with
+owned569. Its feedback is1-p^4, with rank8192, not the marginal h00 effect
+muI and not old1-p^6. A free birth-input cut would multiply input rank by4
+and change the programme. Different report tests do not change the input cut
+by implication. The additional birth CX gates and their whole thermal carrier
+also prevent transferring7bs/7bi's old heat without the new actual graph.
+Only the full heat/operator adjoint on THAT declared graph can supply its
+remaining source; no zero total H+J+R result is inferred from H-blind labels.
+
+The smallest remaining price input can be stated without choosing a tariff.
+For the true complete same-execution priced instrument, let Phi_(t,h) be
+its Laplace mark of the ALREADY established path cost, including readout,
+conditional continuation, controller and all fine work records. Then
+
+    G_(cost,h)=-partial_t Phi_(t,h)^*(I)|t=0,
+    C=Tr rho sum_h G_(cost,h),
+    D C=Tr(D rho)sum_h G_(cost,h)+Tr rho sum_h D G_(cost,h).
+                                                               (591)
+
+The scalar test575 needs G_(cost,quiet)=r k0 I on the actual quiet interface,
+plus every retained Dk0/initial/controller source. Knowing only Kquiet=cI or
+its probability does NOT give591. The mark is a calculation on a justified
+ledger, not an added filter, fitted event weight or physical selector.
+An operator WORK valuation need not be converted into a new measured
+classical transcript: retain its actually derived ordered first-price map
+or directly its G_cost.591 is a sufficient representation of the missing
+operand, not a new universal admission condition.
+The original full128 0/10 price belongs to ITS reported port primitive; it
+is not a tariff for each unrecorded G/CX/SourceI stage of this other tape.
+
+### Parent route change and exact verification boundary
+
+The hoped-for substitution 'read the internal Golden bits, obtain k0=6 and
+reuse the scalar-quiet stopped GR interface' fails on the literal100-stage
+candidate. The failure is the changed full instrument, not merely an omitted
+overhead or one mismatched entropy number. The alternative 'a finite unitary
+completion is already an absorbing runtime controller' also fails by586.
+Both are scoped route changes, not no-go theorems for original D0 or GR.
+
+The surviving parent step is the original detector-channel/conditional
+continuation application with a genuinely complete priced instrument591
+or an equivalently derived full WORK operator,
+respecting coherent work where the source requires interference, the actual
+initial cut and the whole clock. It must then bind to the original Book03
+field writer/preparation equations and full42 source with the real gain and
+refinement. All owned exact nonvacuum solutions remain available; no new
+geometry, rank search, task, action, tariff, selector or assembly discharge is
+introduced. GR_closed=false; positive_gr/raw216 and selected physical HJR
+remain open. This candidate calculation removes a concrete false price
+construction; it does not replace the goal by successful compilation.
+
+The new checker loads only pinned7br helper definitions; its nested7bp/7bo
+loaders exclude old suites. It constructs the literal100-word and owned156
+inverse, then independently checks a NEW exact rational128-column semantic
+unitary and every fine branch on a non-diagonal H. Polynomial reduction in
+p^2+p-1 proves the native588--590 identities. A mixed entangled DATA/old
+fixture checks the complete64-dimensional CQ entropy with tolerance2e-11;
+all initial entropy is retained. Its76-leaf cap2 application also checks
+whole stopped CQ, both code sums and abort probability. This is a narrow changed-source/control
+calculation, not a full native16384-column thermal replay, selected physical
+measurement implementation or new whole-source certificate.
+Run from repository root with assertions enabled.
+
+```python
+"""Changed per-birth SOURCE monitoring: one native100 word and a rational fixture.
+
+Import has no source-loading or calculation side effects.  main() loads ONLY
+the pinned 7br definitions prefix, then validates the NEW native Gate tuple and
+runs a NEW rational all128-column diagnostic.  It never executes old checkers
+or a huge actual14-qubit matrix.  No price is assigned to any primitive G.
+"""
+import sys
+sys.dont_write_bytecode = True
+from pathlib import Path
+import hashlib
+import json
+import types
+
+
+PRIMARY = Path('02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md').resolve()
+STOP_CODE_BYTES = 25785
+STOP_CODE_SHA256 = '83ee489241b4262b896f43c7e78e9c90eaabb1bb0239a65828b19df86febf3c3'
+STOP_MATH_MARKER = '"""Exact scalar-quiet specialization of the OWNED first-event/cap calculus.'
+
+
+def load_owned_definitions():
+    """Load 7br helpers only; its nested 7bp/7bo imports also exclude mathematics."""
+    source = PRIMARY.read_text(encoding='utf-8')
+    section = source.index('## 7br. ')
+    a = source.index('```python\n', section) + len('```python\n')
+    b = source.index('\n```', a)
+    code = source[a:b].encode('utf-8')
+    if len(code) != STOP_CODE_BYTES or hashlib.sha256(code).hexdigest() != STOP_CODE_SHA256:
+        raise RuntimeError('frozen 7br fenced code pin changed')
+    text = code.decode('utf-8')
+    if STOP_MATH_MARKER not in text:
+        raise RuntimeError('7br definitions/mathematics separator absent')
+    prefix = text.split(STOP_MATH_MARKER, 1)[0]
+    owner = types.ModuleType('_d0_birth_monitor_owned_attempt')
+    owner.__file__ = str(PRIMARY)
+    sys.modules[owner.__name__] = owner
+    exec(compile(prefix, str(PRIMARY), 'exec'), owner.__dict__)
+    owner.MONITOR_PROVENANCE = {
+        'primary_source_path': str(PRIMARY),
+        '7br_fenced_code_bytes': len(code),
+        '7br_fenced_code_sha256': hashlib.sha256(code).hexdigest(),
+        '7br_definitions_prefix_bytes': len(prefix.encode('utf-8')),
+        '7br_definitions_prefix_sha256': hashlib.sha256(prefix.encode('utf-8')).hexdigest(),
+        'nested_7bp_7bo_provenance': owner.owned.owned.PROVENANCE,
+        'old_math_and_matrix_fixtures_executed': False,
+    }
+    return owner
+
+
+def build_native_variant(owner):
+    """The ACTUAL14-wire word: Dterm;A;Cbirth;M;A_inverse;Dterm."""
+    c = owner.Compiler(14, 0, (7, 8), (9,))
+    parts = owner.owned.cold_cell(c, (1, 2), 4, c.seq())
+    terminal_copy = c.seq(c.cx(1, 10), c.cx(2, 11))
+    birth_copy = c.seq(c.cx(1, 12), c.cx(2, 13))
+    word = c.seq(terminal_copy, parts['birth'], birth_copy,
+                 parts['middle'], parts['birth_inverse'], terminal_copy)
+    execution = c.execution(word, blank_wires=(0, 1, 2, 10, 11, 12, 13),
+                            report_bits=(10, 11, 12, 13),
+                            max_expanded_stages=100)
+    return {'compiler': c, 'parts': parts, 'word': word,
+            'execution': execution, 'terminal_copy': terminal_copy,
+            'birth_copy': birth_copy}
+
+
+def native_inventory_report(owner):
+    built = build_native_variant(owner)
+    c, word, e = built['compiler'], built['word'], built['execution']
+    ne = owner.ne
+    counts = c.counts(word).as_dict()
+    assert counts == {'G': 4, 'CX': 76, 'SourceI': 20,
+                      'N': 100, 'g_port': 4, 'g_off': 0}
+    assert len(e.gates) == 100
+    iv = ne.inventory(e, max_qubits=14, max_expanded_stages=100)
+    assert (iv.g_count, iv.cx_count, iv.source_i_count, iv.gate_count) == (4, 76, 20, 100)
+    assert iv.cut_rank == 128 and iv.full_dimension == 16384
+    leaves = c._leaves(word, tuple(range(14)))
+    assert all(g.wires == (0,) for g in leaves if g.op == 'G')
+    assert all(g.wires == (0, 7, 8) for g in leaves if g.op == 'SourceI')
+    assert all(9 not in g.wires for g in leaves)
+    assert all(set(g.wires).isdisjoint((7, 8)) for g in leaves if g.op != 'SourceI')
+    for source, archive in ((1, 10), (2, 11)):
+        assert tuple(g for g in e.gates if archive in g.wires) == (
+            ne.Gate('CX', (source, archive)),) * 2
+    for source, archive in ((1, 12), (2, 13)):
+        assert tuple(g for g in e.gates if archive in g.wires) == (
+            ne.Gate('CX', (source, archive)),)
+    inverse = tuple(c.iter_raw(c.inv(word)))
+    assert inverse == ne.inverse_word(e, max_qubits=14,
+                                      max_expanded_stages=len(inverse))
+    assert len(inverse) == 156
+    assert c.counts(c.inv(word)).as_dict() == {
+        'G': 4, 'CX': 76, 'SourceI': 76,
+        'N': 156, 'g_port': 4, 'g_off': 0}
+    return {
+        'layout': {'qubits': 14, 'physical_port': 0, 'SOURCE': (1, 2),
+                   'DATA_roles': (3, 4, 5, 6), 'H': 'Z_role1 on wire4',
+                   'phase_Spin': (7, 8), 'immutable_oldRIGHT': (9,),
+                   'terminal_archive': (10, 11), 'BIRTH_archive': (12, 13),
+                   'blank_wires': e.blank_wires, 'unknown_wires': iv.unknown_wires},
+        'native_counts': counts,
+        'raw_inverse_counts': c.counts(c.inv(word)).as_dict(),
+        'raw_inverse_leafwise_equals_owned': True,
+        'unique_leaf_validation': c.validate(word),
+        'input_rank_one_old_qubit': iv.cut_rank,
+        'true_oldRIGHT128_input_rank': 8192,
+        'true_oldRIGHT128_active_dimension': 2*4*4*4*16*4*128,
+        'true_oldRIGHT128_physical33_dimension': 33*4*4*4*16*4*128,
+        'actual14_qubit_matrix_allocated': False,
+        'unbalanced_BIRTH_copy_was_uncomputed': False,
+        'old_completed_dark_identity_inherited': False,
+        'all_dark_and_unprepared_columns_must_be_retained': True,
+        'nonterminal_readout_or_runtime_controller_compiled': False,
+        'native_G_or_return_cost_tariff_assigned': False,
+    }
+
+
+def run_rational_fixture():
+    """Independent NEW SOURCE4 x BIRTH4 x TERMINAL4 x DATA2 all128 fixture."""
+    import sympy as sp
+    R = sp.Rational
+    sparse = sp.MutableSparseMatrix
+    I2, I4, I128 = sparse.eye(2), sparse.eye(4), sparse.eye(128)
+    g = sparse([[R(4, 5), -R(3, 5)], [R(3, 5), R(4, 5)]])
+    H = sparse([[R(3, 5), R(4, 5)], [R(4, 5), -R(3, 5)]])
+    assert g.T*g == I2 and H.T == H and H*H == I2
+    U_birth_blocks = (I2, H, -H, -I2)
+    A = sparse(sp.kronecker_product(g, g, I4, I4, I2))
+    M = sparse(sp.diag(*(sp.kronecker_product(I4, I4, U)
+                         for U in U_birth_blocks)))
+
+    def index(source, birth, terminal, data):
+        return 2*(16*source+4*birth+terminal)+data
+
+    Cbirth, Dterminal = sparse.zeros(128, 128), sparse.zeros(128, 128)
+    for source in range(4):
+        for birth in range(4):
+            for terminal in range(4):
+                for data in range(2):
+                    col = index(source, birth, terminal, data)
+                    Cbirth[index(source, birth ^ source, terminal, data), col] = 1
+                    Dterminal[index(source, birth, terminal ^ source, data), col] = 1
+    assert Cbirth*Cbirth == I128 and Dterminal*Dterminal == I128
+    # Chronology Dterminal;A;Cbirth;M;A_inverse;Dterminal.
+    full = Dterminal*A.T*M*Cbirth*A*Dterminal
+    assert full.T*full == I128
+    initial = sparse.zeros(128, 2)
+    for data in range(2):
+        initial[index(0, 0, 0, data), data] = 1
+    output = full*initial
+    assert output.T*output == I2
+    # At this prepared input the terminal copy is EXACT: source == terminal.
+    for source in range(4):
+        for birth in range(4):
+            for terminal in range(4):
+                if source != terminal:
+                    for data in range(2):
+                        assert output[index(source, birth, terminal, data), :] == sp.zeros(1, 2)
+    # Independent closed formula t_(birth,final) = psi_birth (g†)_(final,birth).
+    q = R(9, 25)
+    t = sparse([[1-q, -R(12, 25)], [q, R(12, 25)]])
+    kraus, scalar_prob = {}, {}
+    for birth in range(4):
+        for terminal in range(4):
+            b0, b1 = (birth >> 1) & 1, birth & 1
+            h0, h1 = (terminal >> 1) & 1, terminal & 1
+            coefficient = t[b0, h0]*t[b1, h1]
+            extracted = sparse([[output[index(terminal, birth, terminal, data_out), data_in]
+                                 for data_in in range(2)] for data_out in range(2)])
+            assert extracted == coefficient*U_birth_blocks[birth]
+            assert extracted.T*extracted == coefficient**2*I2
+            kraus[(birth, terminal)] = extracted
+            scalar_prob[(birth, terminal)] = coefficient**2
+    assert sum((K.T*K for K in kraus.values()), sparse.zeros(2, 2)) == I2
+    m, v = (1-q)**2+q**2, 2*q*(1-q)
+    expected_h = (m*m, m*v, m*v, v*v)
+    for terminal in range(4):
+        effect = sum((kraus[(birth, terminal)].T*kraus[(birth, terminal)]
+                      for birth in range(4)), sparse.zeros(2, 2))
+        assert effect == expected_h[terminal]*I2
+        assert sum(scalar_prob[(birth, terminal)] for birth in range(4)) == expected_h[terminal]
+    assert expected_h[3] > 0  # The old structural-zero11 has been destroyed.
+
+    def quiet(X):
+        return sum((kraus[(birth, 0)]*X*kraus[(birth, 0)].T
+                    for birth in range(4)), sparse.zeros(2, 2))
+
+    alpha, beta = (1-q)**4+q**4, 2*q*q*(1-q)**2
+    mu = alpha+beta
+    assert mu == m*m
+    # Check the CP map on ALL four matrix units, not just one input density.
+    for i in range(2):
+        for j in range(2):
+            unit = sparse.zeros(2, 2)
+            unit[i, j] = 1
+            assert quiet(unit) == alpha*unit+beta*H*unit*H
+    rho = sparse([[R(3, 5), R(1, 5)], [R(1, 5), R(2, 5)]])
+    assert rho.trace() == 1 and rho.det() == R(1, 5)
+    assert H*rho*H != rho and quiet(rho) != mu*rho
+    assert quiet(rho).trace() == mu
+    # The TRUE allblank return fixes BOTH archives, not just the final label.
+    assert initial.T*full*initial == (1-q)**2*I2
+    assert kraus[(0, 0)] == (1-q)**2*I2
+    assert (1-q)**2 != 1-2*q
+    return {
+        'fixture_kind': 'new rational diagnostic; NOT a native Golden14 matrix',
+        'full_world_dimension': 128,
+        'layout': 'SOURCE4 x BIRTH4 x TERMINAL4 x DATA2',
+        'g': [[str(x) for x in row] for row in g.tolist()],
+        'non_diagonal_involution_H': [[str(x) for x in row] for row in H.tolist()],
+        'q': str(q), 'all128_columns_unitary_exact': True,
+        'all16_signed_Kraus_extracted_and_checked': True,
+        'complete_TP': True,
+        'terminal_SOURCE_and_archive_labels_equal': True,
+        'every_fine_effect_scalar': True,
+        'final_h_probabilities_DATAblind': [str(x) for x in expected_h],
+        'final11_has_positive_probability': True,
+        'quiet_CP_coefficients': {'identity': str(alpha), 'Ad_H': str(beta),
+                                  'probability': str(mu)},
+        'quiet_CP_checked_on_full_matrix_basis': True,
+        'quiet_normalized_DATA_channel_is_identity': False,
+        'true_BIRTHblank_terminalblank_corner': str((1-q)**2)+' I2',
+        'no_Golden_tariff_or_controller_admission_inferred': True,
+    }
+
+
+def main():
+    owner = load_owned_definitions()
+    native = native_inventory_report(owner)
+    fixture = run_rational_fixture()
+    print('PROVENANCE', json.dumps(owner.MONITOR_PROVENANCE, sort_keys=True))
+    print('ACTUAL_NATIVE100', json.dumps(native, sort_keys=True))
+    print('NEW_RATIONAL128', json.dumps(fixture, sort_keys=True))
+    print('PASS native100/inverse156 membership; NEW all128 rational instrument; no old math or huge native matrix')
+    return native, fixture
+
+
+"""New complete-price calculation for the monitored birth/terminal record."""
+import json
+import sympy as S
+import numpy as np
+
+
+def run_price_algebra():
+    p = S.symbols('p', real=True)
+    rem = lambda t: S.rem(S.expand(t),p*p+p-1,p)
+    q = p*p
+    assert rem((p*p+p**4)**2-5*p**6) == 0
+    assert rem(p**4+p**8-3*p**6) == 0
+    assert rem(1-4*p**3-p**6) == 0
+    ccode, iphi = 4+2*p*p+4*p**3,4*(1+p*p)
+    assert rem(ccode-iphi-2*p**5) == 0
+    quiet_probs = ((2+p)/5,S.Rational(2,5),p*p/5)
+    assert rem(sum(quiet_probs)-1) == 0
+    quiet_cost = sum(pr*c for pr,c in zip(quiet_probs,(4,5,6)))
+    assert rem(quiet_cost-(4+2*(1+p*p)/5)) == 0
+    assert rem((quiet_cost-5)**2-S.Rational(1,5)) == 0
+    # Native point lies1/2<p<2/3, fixing positive values and sqrt branch.
+    assert S.Rational(1,2)**2+S.Rational(1,2)-1 < 0
+    assert S.Rational(2,3)**2+S.Rational(2,3)-1 > 0
+    assert rem((1-4*p*p)-(4*p-3)) == 0
+    # An explicit FOUR-letter 0/10 writer, not an encoding cost inferred from
+    # the100 quantum stages or silently attached to its pointer-bit storage.
+    words = {}
+    for b in range(4):
+        for h in range(4):
+            bits = ((b>>1)&1,b&1,(h>>1)&1,h&1)
+            code = ''.join('10' if x else '0' for x in bits)
+            cursor,decoded = 0,[]
+            while cursor < len(code):
+                if code[cursor] == '0':
+                    decoded.append(0);cursor += 1
+                else:
+                    assert code[cursor:cursor+2] == '10'
+                    decoded.append(1);cursor += 2
+            assert tuple(decoded) == bits
+            assert len(code) == 4+bin(b).count('1')+bin(h).count('1')
+            words[b,h] = code
+    assert len(set(words.values())) == 16
+    # Reversible CLASSICAL report recoding e=h XOR b. Its conditional flip
+    # bits are independentBern(q); a different written code has its ownprice.
+    q0,q1=S.symbols('q0 q1',positive=True)
+    weight_sum,delta_cost=S.Integer(0),S.Integer(0)
+    for b in range(4):
+        for h in range(4):
+            e=h^b
+            prob=S.Integer(1)
+            for j,qj in enumerate((q0,q1)):
+                bj,ej=(b>>j)&1,(e>>j)&1
+                prob*=qj**(bj+ej)*(1-qj)**(2-bj-ej)
+            weight_sum+=prob
+            delta_cost+=prob*(4+bin(b).count('1')+bin(e).count('1'))
+    assert S.simplify(weight_sum-1)==0
+    assert S.simplify(delta_cost-(4+2*q0+2*q1))==0
+    assert all(not(v.startswith(w)) for k,w in words.items() for j,v in words.items() if k != j)
+    # Exact reference-sensitive abort disturbance after any finite retry count.
+    Z = S.diag(1,-1)
+    rho = S.Matrix([[S.Rational(1,2),S.Rational(1,2)],
+                    [S.Rational(1,2),S.Rational(1,2)]])
+    aborts = []
+    for cap in (1,2,3,5):
+        final = (rho+Z*rho*Z)/2+(rho-Z*rho*Z)/(2*5**cap)
+        iterative = rho
+        for _ in range(cap):
+            iterative = S.Rational(3,5)*iterative+S.Rational(2,5)*Z*iterative*Z
+        assert iterative == final and iterative != rho
+        aborts.append({'cap':cap,'offdiagonal_factor':str(S.Rational(1,5**cap))})
+    return {'native_quiet_probability':'5*p^6',
+        'native_quiet_DATA_channel':'(3*rho+2*H*rho*H)/5',
+        'native_quiet_conditional_fourletter_cost':'5-1/sqrt(5), not6',
+        'native_literal_fourletter_Cost_minus_CQ_Info_phi':'2*p^5',
+        'native_matched_angle_qi_source_of_that_component':'1-4*p^2',
+        'fourletter_writer_words':list(words.values()),
+        'abort_controls':aborts,
+        'alternative_recode_b_e_native_code_component':'C_code=I_fine/ell onlyifthatdifferentwriterispaid',
+        'writer_code_not_assigned_as_quantum_gate_tariff':True}
+
+
+def run_complete_quantum_info():
+    # Independent probabilities/matrices; no native word or old fixture replay.
+    R = S.Rational
+    G = S.Matrix([[R(4,5),-R(3,5)],[R(3,5),R(4,5)]])
+    A = S.kronecker_product(G,G)
+    H = S.Matrix([[R(3,5),R(4,5)],[R(4,5),-R(3,5)]])
+    Ms = (S.eye(2),H,-H,-S.eye(2))
+    # Full unknown DATA + old reference, with nonzero initial entropy.
+    bell = S.Matrix([1,0,0,1])
+    rho = R(2,3)*(bell*bell.T/2)+R(1,3)*S.eye(4)/4
+    blocks, mean_cost, quiet_cost, quiet_prob = [],S.Integer(0),S.Integer(0),S.Integer(0)
+    fine = []
+    for b in range(4):
+        for h in range(4):
+            K = A[b,h]*A[b,0]*Ms[b]
+            KR = S.kronecker_product(K,S.eye(2))
+            block = KR*rho*KR.T
+            prob = S.trace(block)
+            assert prob > 0
+            assert S.trace(block*block)/(prob*prob) == S.trace(rho*rho)
+            length = 4+bin(b).count('1')+bin(h).count('1')
+            mean_cost += prob*length
+            if h == 0:
+                quiet_cost += prob*length;quiet_prob += prob
+            blocks.append(block)
+            fine.append((K,prob,length,4+bin(b).count('1')+bin(h^b).count('1'),h))
+    q = R(9,25)
+    assert mean_cost == 4+6*q-4*q*q
+    def entropy(M):
+        eig = np.linalg.eigvalsh(np.array(M,dtype=float))
+        return float(-sum(v*np.log(v) for v in eig if v > 1e-14))
+    info = entropy(S.diag(*blocks))-entropy(rho)
+    hq = -float(q)*np.log(float(q))-float(1-q)*np.log(float(1-q))
+    assert abs(info-4*hq) < 2e-11
+    assert sum((S.trace(x) for x in blocks),S.Integer(0)) == 1
+    # Entire supplied first-nonzero-h/cap2 interface, including positive11,
+    # allBIRTH records and16 abort leaves. No new native dispatcher is asserted.
+    leaves = []
+    for K1,w1,c1,e1,h1 in fine:
+        if h1:
+            leaves.append((K1,w1,c1,e1,False))
+        else:
+            for K2,w2,c2,e2,h2 in fine:
+                leaves.append((K2*K1,w1*w2,c1+c2,e1+e2,h2==0))
+    assert len(leaves) == 76 and sum(v[4] for v in leaves) == 16
+    assert sum(v[1] for v in leaves) == 1
+    mu = ((1-q)**2+q*q)**2
+    assert sum(v[1] for v in leaves if v[4]) == mu*mu
+    ccap = sum(v[1]*v[2] for v in leaves)
+    ecap = sum(v[1]*v[3] for v in leaves)
+    assert ccap == mean_cost*(1+mu)
+    assert ecap == (4+4*q)*(1+mu)
+    full_entropy = 0.0
+    for K,w,_,_,_ in leaves:
+        KR = S.kronecker_product(K,S.eye(2))
+        block = KR*rho*KR.T
+        assert S.trace(block) == w
+        full_entropy += entropy(block)
+    full_info = full_entropy-entropy(rho)
+    assert abs(full_info-float(1+mu)*4*hq) < 2e-11
+    return {'full_CQ_dimension':64,'DATA_old_dimension':4,
+        'complete_fine_branches':16,'complete_CQ_gain':info,
+        'chain_rule_gain':4*hq,'entropy_tolerance':2e-11,
+        'rational_fourletter_mean_cost':str(mean_cost),
+        'rational_conditional_quiet_mean_cost':str(quiet_cost/quiet_prob),
+        'initial_entropy_retained':entropy(rho),
+        'cap2_full_fine_leaves':76,'cap2_abort_leaves':16,
+        'cap2_mean_b_h_code':str(ccap),'cap2_mean_b_e_code':str(ecap),
+        'cap2_direct_complete_quantum_gain':full_info,
+        'cap2_chain_rule_gain':float(1+mu)*4*hq,
+        'cap2_abort_probability':str(mu*mu)}
+
+
+if __name__ == '__main__':
+    assert __debug__, 'run with assertions enabled'
+    owner = load_owned_definitions()
+    print(json.dumps({'provenance':owner.MONITOR_PROVENANCE,
+        'native_literal100':native_inventory_report(owner),
+        'new_all128_instrument':run_rational_fixture(),
+        'new_price_algebra':run_price_algebra(),
+        'new_complete_CQ':run_complete_quantum_info(),
+        'old_suites_or_full_native_heat_replayed':False},indent=2))
+```
+
 ## 8. Reproduction
 
 Run from this directory:
