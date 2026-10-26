@@ -1,5 +1,8 @@
 import D0.Geometry.ArchiveJuliaRaisingOperatorReadout
 import D0.Geometry.A4DRawSolderFrameAction
+import Mathlib.Analysis.Calculus.FDeriv.Linear
+import Mathlib.Analysis.Calculus.FDeriv.Mul
+import Mathlib.Analysis.Matrix.Normed
 
 /-!
 # Julia observation to principal-frame coframe recovery
@@ -27,8 +30,11 @@ from nondegeneracy and the canonical witness.
 This is finite matrix/query composition only. The module does not derive the
 raising-query representation hypothesis for an arbitrary externally supplied
 family, constrain `M_r` to the source's proper-Lorentz endpoint family, or
-prove smoothness of the full inverse and `D R D Φ = I`. The open-chart result
-retains symmetric endpoint forms, their isometry, a normalized covector, a
+prove smoothness of the full inverse and `D R D Φ = I`. For the canonical
+query family with a fixed Lorentz link map, it now proves the coframe block of
+the readout derivative in all 16 matrix directions; the link directions are
+still held fixed. The open-chart result retains symmetric endpoint forms,
+their isometry, a normalized covector, a
 nonzero projected metric covector, and the positive square-root branch. The
 null specialization additionally retains nondegeneracy and one selected
 nonzero null shift. The separate
@@ -342,6 +348,45 @@ theorem principalFrameJuliaQueryFamily_metric_invariant
         e.transpose * roleLorentzMetric * e := by
   rw [principalFrameJuliaQueryFamily_coframeRecovery F e Λ M hFe hΛ]
   exact principalFrame_metric_invariant_of_roleLorentz e Λ hΛ
+
+section JuliaPrincipalFrameCoframeDerivative
+
+local notation "RoleMat" => Matrix Role Role ℝ
+
+local instance : NormedAddCommGroup RoleMat := Matrix.normedAddCommGroup
+local instance : NormedSpace ℝ RoleMat := Matrix.normedSpace
+local instance : NormedRing RoleMat := Matrix.frobeniusNormedRing
+local instance : NormedAlgebra ℝ RoleMat := Matrix.frobeniusNormedAlgebra
+
+/-- The actual Julia query-family inverse-coframe readout is Fréchet
+differentiable in every one of the 16 coframe-matrix directions when its
+Lorentz link map is held fixed. Its derivative is the right transport by the
+inverse link. This is the coframe block only; it does not assert link jets,
+smoothness of the joint inverse, or the full `D R D Φ = I` identity. -/
+theorem principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt
+    (F Λ : RoleMat)
+    (M : Role → RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (hΛ : IsRoleLorentz Λ) :
+    HasFDerivAt
+      (fun Z : RoleMat => principalFrameInverseCoframeReadout
+        (principalFrameObservedQueryColumnMatrix
+          (principalFrameJuliaQueryFamily Z Λ.transpose M)))
+      ((ContinuousLinearMap.mul ℝ RoleMat).flip ((Λ.transpose)⁻¹)) F := by
+  have hLorentz : Λ * roleLorentzMetric * Λ.transpose = roleLorentzMetric := by
+    simpa [IsRoleLorentz] using hΛ
+  have hreadout :
+      (fun Z : RoleMat => principalFrameInverseCoframeReadout
+        (principalFrameObservedQueryColumnMatrix
+          (principalFrameJuliaQueryFamily Z Λ.transpose M))) =
+        fun Z : RoleMat => Z * (Λ.transpose)⁻¹ := by
+    funext Z
+    rw [principalFrameJuliaQueryFamily_columnMatrix]
+    exact principalFrame_inverse_coframe_readout Z Λ.transpose hLorentz
+  rw [hreadout]
+  exact (((ContinuousLinearMap.mul ℝ RoleMat).flip ((Λ.transpose)⁻¹)).hasFDerivAt
+    (x := F))
+
+end JuliaPrincipalFrameCoframeDerivative
 
 end
 end D0.Geometry
