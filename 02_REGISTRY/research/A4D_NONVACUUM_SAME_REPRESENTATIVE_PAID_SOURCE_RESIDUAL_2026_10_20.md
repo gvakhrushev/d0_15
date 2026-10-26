@@ -25073,6 +25073,484 @@ if __name__ == '__main__':
 }
 ```
 
+## 7bw. Full temporal stationary equations and an inherited joint source/metric tower
+
+26 October2026; SAME #334, constitutive/native-programme-v1. Phase:
+native realization and composition. Consume7az437,7bh501--504,
+7bi508--509,7bu592--598 and7bv599--604; current inputbe7edccd.
+The parent is the remaining application of the canonical history map to
+the SAME complete bootstrap source and independent apparatus equations.
+Two applications below enlarge its stationary tangent class and transport
+the source through the actual AF tower WITHOUT retuning the action
+channels. Absolute prices remain different. This is not another GR root,
+an alternative physical action or an accepted closure claim.
+
+### The involution centre solves every temporal unitary normal
+
+Keep the original33-vertex scene,359 spatial edges, N>=3 paid cyclic
+stages and whole retained internal fibre K of dimension d. Let
+R=(D_S+2I)^(-1/2), B=R A_S R and g_t=I_S tensor u_t at the BASE
+programme, with full endpoint U=u_(N-1)...u_0 selfadjoint and unitary.
+The base has internal placement stage by stage. The varied temporal
+matrices, however, are allowed to have arbitrary INDEPENDENT tangents
+delta g_t=X_t g_t, X_t*=-X_t, on the entire scene times K.
+
+Use precisely7bh's normalized two-term Hodge, with
+
+    Delta=I-B-R(T_g+T_g*)R,
+    E=exp(-beta Delta),  Z0=Tr E,
+    Z01=2 Z0+359 N d.                                      (605)
+
+Identities use scene operators tensored with the appropriate identities.
+All C0/C1 modes, including the positive one-cochain index, remain present.
+No truncation or normalization of the heat trace is made.
+
+Apply the FIXED base-prefix frame diag(V_t), V_t=u_(t-1)...u_0. It
+commutes with the scene weights, sends the base gates to I,...,I,U, and
+conjugates arbitrary raw skew tangents bijectively. This is a fixed
+coordinate change while differentiating; it discards no moving-frame
+reaction. Write U=P_+-P_- and A=I-B, C=R^2. In each sigma=+1,-1 sector,
+
+    Delta_sigma=I_N tensor A-(S_sigma+S_sigma*) tensor C,
+    S_sigma^N=sigma I.
+
+The clock phases obey exp(iN theta)=sigma. For every such theta,
+E_theta=exp[-beta(A-2 cos(theta) C)] is Hermitian. Pairing theta with
+-theta shows that
+
+    K_sigma=(1/N) sum_theta cos(theta) E_theta
+
+is Hermitian. Each nonclosing adjacent heat block is K_sigma, and the
+closing block is sigma K_sigma. Its base closing gate cancels the sign.
+Thus, back in the original frame,
+
+    M_t=g_t R E_(t,t+1) R=M_t*,  for EVERY t,
+    D H0=D H01=0                                             (606)
+
+for all independent ambient temporal unitary tangents. This follows
+directly from7bi509, whose full dual norm is
+(4/Z01) sum_t ||skew(M_t)||_1 for H01. No commutation of B with R is
+assumed, and there is no uncontrolled extension from finitely sampled
+directions. This extends the owned identity-endpoint reference proof to
+the involution endpoint already supplied by7az/7bu.
+
+At7bu's actual compiled centre the return defect is a projection. Its
+owned437 first source vanishes for all independent unitary and fixed-rank
+cut tangents. Combining with606 gives
+
+    D_(all temporal unitary gates, fixed-rank cuts) B=0.       (607)
+
+Consequently the word 'internal' in597 restricts the BASE placement,
+not the temporal tangent space. Scene-mixing tangents are included in607.
+This removes that unused temporal-normal hypothesis from the application.
+
+The distinction is essential: an involutive internal ENDPOINT does not
+make a noninternal sequence satisfy606. Intermediate gates must commute
+with B,R in the background. The unchanged RawZone failures500/507 and
+7bi's adverse identity-loop example remain valid. The checker below also
+uses a cancelling noninternal scene loop with an internal involution
+endpoint and finds a resolved nonzero ambient source. Nor does zero first
+derivative identify the prices of distinct finite words or prove a minimum.
+
+### Spatial connection normals, if that variation family is admitted
+
+For the natural unitary spatial-connection extension, let a spatial row
+at fixed t and edge x->y be
+
+    d_e psi=r_y psi_y-v_e r_x psi_x,
+    r_x=(deg(x)+2)^(-1/2),   v_e*=v_e^(-1).
+
+At the SAME internal background take v_e=I and independently vary
+delta v_e=X_e=-X_e*. Unitarity cancels the diagonal first variations;
+delta Delta_xy=r_x r_y X_e and delta Delta_yx=-r_x r_y X_e.
+In the fixed prefix frame every equal-clock heat block E_yx is a sum of
+REAL symmetric scene entries times the Hermitian P_sigma, hence E_yx is
+Hermitian. The prefix transport preserves this property. Therefore
+
+    delta H0=-(2 r_x r_y/Z0) Re Tr(E_yx X_e)=0,
+    delta H01=-(4 r_x r_y/Z01) Re Tr(E_yx X_e)=0.             (608)
+
+A fixed row conductance w_e multiplies these factors by w_e. There is no
+additional1/N factor. Feedback on the existing fixed U_hist is unchanged
+by this purely spatial d-row variation; for any separately supplied
+unitary variation of U_hist,437 already gives its zero first source.
+Equation608 is conditional on admission of this spatial connection
+variation, not a new declaration that Book02 selects it. Scalar
+conductances, coframes, Gram matrices or normalization R can have nonzero
+sources and are not covered. The actual binary-scene passport is not an
+open continuous weighted graph. The checker retains the true moving-R
+scalar-conductance derivative as a nonzero control.
+
+### The same archive map transports the full bootstrap first source
+
+Fix ONE physical mesh h and its supplied Role map, target D_h and smooth
+field action f_h used in7bu. At initial archive level n0 use7bv's entire
+READY construction, full GNS/CAR module and rotor. Let r_n denote its
+actual rotor/module dimension at archive level n. For the real16-CAR
+presentation without additional padding,
+
+    r_n=2*16*(a_n^2+b_n^2),
+    rho_n=r_n/r_n0>0.                                      (609)
+
+Include actual realification and fixed tensor padding in both ranks;
+level-dependent direct-sum padding does not automatically obey this rule.
+Keep all auxiliary channel, tag, spectator and input-cut multiplicities
+from7bu. Archive level n and the paid stage count N are different indices.
+
+Use the actual amplified AF inclusion603, but now on the WHOLE algebraic
+7bu programme: its geometry gates, scalar action controls, fixed auxiliary
+U0 and input cut. Require each factor in the chosen decomposition to
+belong to the amplified AF algebra. This holds for the ideal decomposition
+in595: its action controls O_f are scalar on the module, its geometry
+V_D is obtained by functional calculus of d_n, and U0 is auxiliary only.
+Use the SAME O_f from level n0, with NO recalibration of its gains.
+Unitality, multiplication and functional calculus commute with iota, so
+U_n=V_n O_f* U0 O_f V_n* and V_n fixes the entire actual P0,n pointwise.
+
+There are two separate reasons that the COMPLETE traces have the needed
+scaling, despite603 not preserving ordinary regular trace in general.
+
+First, U_n is conjugate to the SAME auxiliary involution U0. Its plus and
+minus multiplicities are fixed proportions of r_n. In the internal-prefix
+frame, every temporal heat-character sum in605 therefore scales by
+rho_n, and so does the359 N dimK index. With fixed beta and stage count,
+
+    Z01,n(y)=rho_n Z01,n0(y),
+    H_n(y)=H_n0(y)+beta^(-1) log rho_n.                      (610)
+
+This is the actual full heat of the algebraic word, including both Hodge
+grades. It is constant in y because the endpoint remains conjugate to U0.
+It is NOT invariance of ordinary trace under an arbitrary AF inclusion.
+
+Second, V_n fixes P0,n; the compressed return therefore sees only the
+auxiliary scalar action channels. Their entire return-eigenvalue list is
+repeated r_n times. On the full fixed-cut feedback determinant this gives
+
+    J_n(y)=rho_n J_n0(y),
+    B_n(y)-B_n(0)=rho_n [f_h(y)-f_h(0)],
+    D_y B_n=rho_n D_y f_h.                                 (611)
+
+The original absolute anchor is retained explicitly:
+
+    B_n(0)=H_n0(0)+beta^(-1)log rho_n+rho_n J_n0(0).
+
+Thus unchanged action controls yield a known POSITIVE SOURCE GAIN, not
+price equality and not a new rank-dependent selector. This improves7bv's
+warning: recalibration is unnecessary for identical field zero sets.
+The entire source covector, including every original16+24+2 field
+direction, is transported by611; dividing by rho_n is a stated comparison
+of equations, not a subtraction from the physical price. Absolute price,
+clock and rank comparisons must still use the displayed full baseline.
+
+Together with604, this is one joint metric/source archive family. The
+Role commutator norm stays EXACTLY fixed while the full field source has
+the EXACT factor rho_n. At a root Df_h(0)=0,607 also kills every independent
+temporal apparatus row and fixed-rank cut row at that background;608
+applies when its spatial unitary domain is present. This uses all modes,
+not a source-neutrality claim only along the Brinkmann family.
+
+### Apply it to the existing nonlinear GR consumer without adding a veto
+
+Put f_h(y)=I_h(Y_h*+y), using the original fully varied Palatini--CAR action
+and its existing nonvacuum all42 stationary mesh Y_h*. Its whole open
+field chart, coframe/link/matter conventions and declared pairing stay
+unchanged. Equations601,606--611 now give, on the SAME supplied regime:
+the canonical intrinsic observer metric, the complete configured field
+covector with positive gain, all temporal/cut normal equations, and a
+compatible fixed-h archive tower. The original h-refining Einstein family
+remains the consumer. No new solution or geometric coefficients are fitted.
+
+Book01 section01.4.1 defines its finite observable sections by six explicit
+descent conditions. The already proved Boolean/clock application13.2 in
+`A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md`
+supplies the finite operator/test representation. It does not require an
+additional gate-palette compilation merely to REPRESENT a supplied finite
+observable. `M1ClassAdmissibility` allows many catalogue-independent
+candidates; unique microscopic selection is not an extra prerequisite for
+ONE declared theory interpretation. Book02 also permits derivatives of a
+declared smooth finite operator family; exact finite compilation at every
+real field is not a universal requirement of that calculus.
+
+These facts narrow, rather than remove, the physical execution premise.
+For this implementation the concrete unresolved origin map is the actual
+availability and placement g_t=I_scene tensor u_t of the required
+addressed WORK operations, preparation and readable pointers, with the
+specified501 discrepancy. 7t assumes that interface. 7bk's literal
+single-port words cannot approximate an ordinary-work G_r below distance
+p, and the actual RawZone source gate fails the needed scene commutation
+by500's -11/8520 entry. Calling the same matrix 'native' does not supply
+this placement map. If it is explicitly a hypothesis of a declared regime,
+no further unspecified matrix-admission or uniqueness veto is added here.
+
+The operational tests in that regime already have explicit maps: retain
+the full input/WORK/CAR/RIGHT/clock/record state, translate each action to
+its actual expanded word, and transport its prefix/Role test by V_t a V_t*.
+An executed future readback uses7av417's actual inverse/marked-prefix/
+retained-record construction and pays for that additional experiment.
+These are programme-observation maps; they do not by themselves supply
+the missing GR time-evolution or spatial-interlevel map.
+
+There are still substantive boundaries. A generic compiled G/CX word can
+leave the amplified AF algebra at intermediate stages even when its
+endpoint belongs to it;610 cannot be transferred to such a word merely
+from endpoint membership. Actual compiler lengths can also depend on n.
+Those implementations need their own full paid prefixes and clocks.
+Nor do611 and604 prove physical h-refinement, faithful full-density
+preparation, clock/rank optimality, Lorentzian causal readout, compulsory
+Cost-Info/Book identification or the constitutive relation choosing the
+GR field graph. The independent metric/same-price control in7bu survives.
+These equations establish a constructive conditional source/metric
+application, not full D0->GR. GR_closed=false; positive_gr/raw216 remain
+open and no assembly acceptance is changed.
+
+### Reuse the measured-port owner as a different common-sector interpretation
+
+The next primitive-origin attempt must not rediscover7bk525--527. Those
+equations ALREADY construct the measured roundtrip and its actual blank
+Book corner. They also give the following all-branch application. Under
+ideal balanced preparation and an X-port readout, retain the first local
+Z_r result b and final port result c, reusing r in its measured state |b>.
+With the stated outcome convention the branch operator is
+
+    K_bc=(1/2) X_r^b Z_r^c U X_r^b.
+
+For an adaptive port rotation U_b=G^((-1)^b j), the relation XGX=G^(-1)
+gives K_bc=(-1)^(bc) Z_r^c G_r^j/2. Replacing the intermediate rotation
+by the existing outward copy to unknown s gives
+
+    K_bc=(-1)^(bc) Z_r^c X_s^b CX_(r->s)/2.                  (612)
+
+Every branch has probability1/4 on every input, including reference
+entanglement. Its logical gate is recovered by a RETAINED Pauli frame;
+frame-dependent future tests give the common-sector observation map.
+For an incoming X^x Z^z frame, replace the port G exponent by
+(-1)^(b+x+z)j and update the outgoing frame to X^x Z^(z+c), up to the
+retained branch phase. Standard CX conjugation updates the two frames.
+This uses classical feedforward and live retained outcomes; the phase
+cannot be dropped if claiming a coherent dilation. It supplies neither
+the forbidden coherent G_r word nor a free correction/reset. Exact
+balancing is a supplied interface;525 already owns finite Golden
+approximation with its paid lengths and source-relevant errors.
+
+The full-price consequence reuses7m135 as well as526--527. If M COMPLETE
+roundtrips and the actual cut/recorder map give
+C_new=2^(-M) C_target (or the same compression Gram with a unitary
+return-frame factor), put epsilon=4^(-M), c_z=1-z+z epsilon. Then
+
+    F_new=(1-epsilon)P+epsilon F_target,
+    z_eff=z epsilon/c_z,
+    J_new=-rank(P) log c_z
+          -Tr log(I-z_eff F_target).                        (613)
+
+A one-way transfer contributes1/sqrt2, not1/2. The physical zero-record
+corner and return-frame/cut commutation must be checked; renaming a
+measured outcome does not change the prepared blank cut. At fixed M,z,
+613 is a source at z_eff, generally NOT a constant multiple of the old
+z-source. Changing attenuation, clocks or apparatus adds their genuine
+derivatives. No original action-germ calibration is silently inherited.
+
+Moreover, on ker(F_target restricted to ranP), the new feedback equals
+1-epsilon. When this kernel is nonzero (as in7bu), F_new is not a
+projection for0<epsilon<1; the exceptional F_target=P remains unchanged.
+The all-apparatus
+stationarity theorem cannot be transported from the successful logical
+gate. A measured instrument also supplies no unitary prefix inverse or
+full heat; a coherent dilation needs its actual whole recorder operator.
+Thus612 narrows the logical access interface, while613 identifies the
+precise source/normal problem that its application must solve.
+
+The required operation remains the NONTERMINAL local Lueders Z_r reader
+on unknown mutable WORK, with retained outcome and conditional continued
+execution. 7bk requires C_(r,B), or a proved equivalent instrument;
+Book01 Query_O specifies readable predicates, not that backaction map.
+The actual heralded reader7bm537--541 lives on its CAR code and expressly
+does not transfer unknown ordinary WORK into it. Its balance, failure,
+feedforward, coherent flag and clock prices stay paid. This is an
+application/routing of owned results, not another detector or certificate
+and not a substitute for the same-source physical placement obligation.
+
+### Changed application check
+
+The checker uses all33 scene vertices,359 edges, five actual matrix
+stages and four internal columns: n0=660,n1=7840,index7180. It computes
+the full temporal skew-covector blocks, not random variation samples,
+and all1795 spatial edge blocks. The two-term trace is evaluated by
+the exact605 identity, retaining the full C1 surplus. The cancelling
+RawZone-type bright-scene loop is an adverse matrix example, not a
+claimed compiled primitive word. A scalar conductance control retains
+the actual derivative of R. Exact symbolic multiplicities check the
+joint heat/logdet source gain89/34 for full module ranks1088->2848.
+The analytic proof supplies the all-size statement. Numerical controls
+are not interval certificates or physical-admission evidence.
+
+Proof text above: 16725 UTF8 bytes, SHA256 502fb34a874b79cbad701f87f2e4a532a9aab63a6d4431debad2ba11ef8c4378.
+Checker: 5647 bytes, SHA256 5770f97989dd67706ab716312cf8da2bccbfe19499ac594bbede0aad026982ec.
+Canonical LF JSON receipt: 753 bytes, SHA256 76637cdd3df9cff2d1914674b8ee9d33e23f8b19d952e181cfb4d3fc8c0040b0.
+Source-only reviews by full_path_metric_application and
+selected_bootstrap_application cover the all-normal, archive/source and
+measured-port applications. The nonzero input-kernel qualification from
+the final review is included. Neither reviewer replayed the calculation
+or claimed independent assembly acceptance. Earlier proof/checker
+sections remain byte-identical.
+
+```python
+"""Changed involution normal map; full 33-scene C0 and exact C1 index."""
+import json
+import platform
+import numpy as np
+import scipy
+import scipy.linalg as la
+import sympy as sy
+
+
+def require(test, label):
+    if not bool(test):
+        raise RuntimeError(label)
+
+
+def main():
+    p = (np.sqrt(5)-1)/2
+    beta = 3-np.sqrt(5)
+    zone = np.repeat(np.arange(3), [9, 11, 13])
+    adj = (zone[:, None] != zone[None, :]).astype(float)
+    degree = adj.sum(axis=1)
+    rs = np.diag(1/np.sqrt(degree+2))
+    bs = rs@adj@rs
+    dim, stages = 4, 5
+    r = np.kron(rs, np.eye(dim))
+    b = np.kron(bs, np.eye(dim))
+    g = np.array([[np.sqrt(p), -p], [p, np.sqrt(p)]])
+    g1, g2 = np.kron(g, np.eye(2)), np.kron(np.eye(2), g)
+    cx = np.array([[1.,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+    word = [np.kron(np.eye(33), x) for x in [g1, g2, cx, g2.T, g1.T]]
+    m, n0, n1 = 33*dim, 33*stages*dim, 392*stages*dim
+    index = n1-n0
+
+    def evaluate(gates):
+        transfer = np.zeros((n0, n0))
+        endpoint = np.eye(m)
+        for t, gate in enumerate(gates):
+            s = (t+1)%stages
+            transfer[s*m:(s+1)*m, t*m:(t+1)*m] = gate
+            endpoint = gate@endpoint
+        rr = np.kron(np.eye(stages), r)
+        delta = np.eye(n0)-np.kron(np.eye(stages), b)-rr@(transfer+transfer.T)@rr
+        eig, vec = la.eigh(delta)
+        e = (vec*np.exp(-beta*eig))@vec.T
+        z0 = float(np.trace(e)); z01 = 2*z0+index
+        skews = []
+        for t, gate in enumerate(gates):
+            s = (t+1)%stages
+            w = r@e[t*m:(t+1)*m, s*m:(s+1)*m]@r
+            mat = gate@w
+            skews.append((mat-mat.T)/2)
+        dual = 4/z01*sum(float(la.svdvals(a).sum()) for a in skews)
+        return dict(e=e, delta=delta, z0=z0, z01=z01, transfer=transfer,
+                    endpoint=endpoint, dual=dual,
+                    skew_max=max(float(la.norm(a)) for a in skews),
+                    spec=[float(eig[0]), float(eig[-1])])
+
+    base = evaluate(word)
+    require(la.norm(base['endpoint']-base['endpoint'].T) < 2e-14,
+            'actual background endpoint is selfadjoint')
+    require(base['skew_max'] < 3e-15 and base['dual'] < 2e-15,
+            'complete ambient temporal covector vanishes')
+    # All spatial edges at every time, not sampled skew directions.
+    spatial_defect = 0.
+    for t in range(stages):
+        for x in range(33):
+            for y in range(x+1, 33):
+                if adj[x, y]:
+                    block = base['e'][(t*33+y)*dim:(t*33+y+1)*dim,
+                                      (t*33+x)*dim:(t*33+x+1)*dim]
+                    spatial_defect = max(spatial_defect, float(la.norm(block-block.T)))
+    require(spatial_defect < 2e-14, 'every spatial connection source block is Hermitian')
+    # Same involutive internal endpoint, but a noninternal cancelling prefix loop.
+    first = np.zeros(33); first[:9] = 1/3
+    second = np.zeros(33); second[9:20] = 1/np.sqrt(11)
+    aa = np.eye(33)+(3/5-1)*(np.outer(first,first)+np.outer(second,second))
+    aa += 4/5*(np.outer(second,first)-np.outer(first,second))
+    raw = np.kron(aa, np.eye(dim))
+    badword = [raw, raw.T, np.kron(np.eye(33), cx), np.eye(m), np.eye(m)]
+    bad = evaluate(badword)
+    require(la.norm(bad['endpoint']-np.kron(np.eye(33), cx)) < 1e-13,
+            'adverse loop has exactly the same endpoint involution class')
+    require(bad['dual'] > 1e-10 and bad['dual'] > 1e6*base['dual'],
+            'adverse full temporal dual must exceed the stationary numerical control')
+    # Scalar conductance jet includes the TRUE derivative of normalization R.
+    da = np.zeros((33,33)); da[0,9]=da[9,0]=1
+    dd = da.sum(axis=1)
+    drs = np.diag(-.5*dd/(degree+2)**1.5)
+    dbs = drs@adj@rs + rs@da@rs + rs@adj@drs
+    rr = np.kron(np.eye(stages), r)
+    drr = np.kron(np.eye(stages), np.kron(drs, np.eye(dim)))
+    temporal = base['transfer']+base['transfer'].T
+    ddelta = -np.kron(np.eye(stages), np.kron(dbs, np.eye(dim)))
+    ddelta -= drr@temporal@rr + rr@temporal@drr
+    weight_source = -2*float(np.trace(base['e']@ddelta))/base['z01']
+    require(abs(weight_source) > 1e-9, 'scalar conductance source was not erased')
+    # Exact positive source/absolute-price scaling from the full regular ranks.
+    rho = sy.Rational(89,34)
+    r0, r1 = 2*16*34, 2*16*89
+    require(sy.Rational(r1,r0) == rho, 'full defining-CAR plus rotor rank ratio')
+    # A common auxiliary involution has 3:1 positive/negative multiplicity.
+    zp, zm, zx, yy = sy.symbols('Zplus Zminus Zindex y', positive=True)
+    heat0 = 3*r0*zp+r0*zm+r0*zx
+    heat1 = 3*r1*zp+r1*zm+r1*zx
+    require(sy.expand(heat1-rho*heat0) == 0, 'all heat characters and index scale')
+    zeta = sy.Rational(1,7)
+    returned = 1-zeta+zeta*yy**2
+    j0, j1 = -r0*sy.log(returned), -r1*sy.log(returned)
+    require(sy.simplify(sy.diff(j1,yy)-rho*sy.diff(j0,yy)) == 0,
+            'whole repeated Book logdet first source scales exactly')
+    print(json.dumps(dict(input_ref='be7edccd', python=platform.python_version(),
+        numpy=np.__version__, scipy=scipy.__version__, sympy=sy.__version__,
+        status='PASS', n0=n0, n1=n1, exact_cochain_index=index, stages=stages,
+        beta=beta, full_temporal_dual=base['dual'], max_temporal_skew=base['skew_max'],
+        spatial_edge_rows=359*stages, max_spatial_skew=spatial_defect,
+        baseline_spectrum=base['spec'], adverse_temporal_dual=bad['dual'],
+        moving_normalization_weight_source=weight_source,
+        archive_full_ranks=[r0,r1], archive_positive_gain=str(rho),
+        exact_heat_and_book_gain=True, physical_admission=False), indent=2, sort_keys=True))
+
+
+if __name__ == '__main__':
+    main()
+```
+
+```json
+{
+  "adverse_temporal_dual": 3.438652812057279e-7,
+  "archive_full_ranks": [
+    1088,
+    2848
+  ],
+  "archive_positive_gain": "89/34",
+  "baseline_spectrum": [
+    -7.923529333650864e-16,
+    1.6159224667236216
+  ],
+  "beta": 0.7639320225002102,
+  "exact_cochain_index": 7180,
+  "exact_heat_and_book_gain": true,
+  "full_temporal_dual": 2.326433470423162e-18,
+  "input_ref": "be7edccd",
+  "max_spatial_skew": 2.6296233435628295e-16,
+  "max_temporal_skew": 1.0967227406652015e-16,
+  "moving_normalization_weight_source": -1.5230411238303528e-7,
+  "n0": 660,
+  "n1": 7840,
+  "numpy": "2.2.6",
+  "physical_admission": false,
+  "python": "3.11.9",
+  "scipy": "1.16.3",
+  "spatial_edge_rows": 1795,
+  "stages": 5,
+  "status": "PASS",
+  "sympy": "1.12.1"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

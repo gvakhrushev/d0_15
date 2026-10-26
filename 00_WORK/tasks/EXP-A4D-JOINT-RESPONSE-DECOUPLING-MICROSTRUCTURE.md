@@ -13699,3 +13699,103 @@ Concurrent disjoint parity/future-memory intake through3116f73f is retained;
 it changes none of the canonical carrier, observer or AF inclusion inputs.
 These are local finite/source/structural checks, not remote CI or physical
 GR acceptance. #334 remains Draft/open/unmerged.
+
+
+## 26 October2026 — full temporal normals and unchanged-control source/metric archive tower (7bw)
+
+Same #334, constitutive/native-programme-v1; native realization and
+composition. Consume7az437,7bh501--504,7bi509,7bu592--598 and7bv599--604
+on scientific inputbe7edccd; concurrent intake through48474f01 preserved.
+Exact parent application: remove7bu internal-only TEMPORAL tangent
+restriction, and apply the actual archive inclusion to the same source
+without requiring full-price invariance or retuning action controls.
+
+The fixed-prefix gauge and periodic/antiperiodic endpoint decomposition
+prove Hermiticity of EVERY raw temporal heat-source block at an INTERNAL
+background with involutive endpoint. Thus all independent temporal
+scene/WORK/CAR unitary tangents vanish, including scene-mixing normals.
+Together with437 this yields full temporal/cut stationarity. The natural
+spatial fibre-unitary extension also has zero rows when separately
+admitted. Scalar weights, Gram matrices and moving normalization retain
+their sources. An internal endpoint alone is insufficient: stagewise
+internal placement remains necessary for this proof.
+
+At fixed h and fixed stage clock, inherit the ideal algebra-valued whole
+programme through actual AF inclusion. SAME scalar action controls;
+no gain retuning. With actual full rotor/GNS/CAR rank ratio rho_n>0,
+Z01_n=rho_n Z01_n0, J_n=rho_n J_n0 and
+B_n(y)-B_n(0)=rho_n[f_h(y)-f_h(0)]. Absolute baseline includes
+log(rho_n)/beta and the full multiplied feedback; nothing is subtracted.
+The metric norm is invariant while the complete field source has this
+known positive gain. Apply directly to the old Palatini--CAR germ and
+all42 stationary centre. This supplies a joint fixed-mesh archive
+metric/source family with the extra temporal equations included.
+
+Remaining assumptions: specified501 discrepancy and addressed INTERNAL
+WORK/preparation/readout interface; actual constitutive field graph;
+full native Cost-Info/clock/work identification; original h-refinement,
+causal/time and physical execution maps. Generic compiled intermediate
+gates need not lie in the AF algebra, and changing compiler clocks are
+not covered by ideal-word archive transport. Fixed tensor padding and
+complex realification retain their true multiplicities; direct-sum
+padding is a separate calculation. Book01 six observable-section
+conditions and existing13.2 do not require a new gate-palette compiler
+merely for representation, and microscopic uniqueness is not an extra
+veto on ONE declared regime. The concrete primitive-origin condition is
+the actual placement I_scene tensor u_t;7t assumes it and the literal
+single-port/RawZone controls do not prove it. No selected physical GR
+claim, task, selector, assembly discharge or lifecycle change.
+
+Changed-step check only: original33scene/359edges, five matrix stages,
+full660 C0 and7840 C1 with exact index7180. Full temporal covector dual
+2.326433470423162e-18; all1795 spatial edge Hermiticity defects <=2.63e-16.
+Noninternal cancelling bright-scene loop retains an internal involutive
+endpoint but gives resolved raw dual3.438652812057279e-7; the true moving-R
+scalar-weight source is-1.5230411238303528e-7. Exact symbolic fullrank
+1088->2848 heat/index/logdet source gain89/34. The mathematical proof
+owns the all-size result; these floating controls are not intervals.
+An initial arbitrary adverse magnitude guard1e-6 exceeded the observed
+nonzero control (first one-vertex loop1.014e-7; bright loop3.439e-7).
+The final diagnostic checks separation from the stationary roundoff
+control (>1e6 times that value, and >1e-10); no physical bound or theorem
+was weakened or relabelled as interval evidence. No old suite/Lean replay.
+
+Source-only final ACCEPT: full_path_metric_application for605--608 and
+selected_bootstrap_application for609--611/admission. Final proof
+16725bytes/SHA502fb34a874b79cbad701f87f2e4a532a9aab63a6d4431debad2ba11ef8c4378;
+checker5647bytes/SHA5770f97989dd67706ab716312cf8da2bccbfe19499ac594bbede0aad026982ec;
+complete observed receipt reproduced in7bw with its own pin. Neither
+source review is independent assembly acceptance. Existing checkpoint
+interface unchanged; GR_closed=false, positive_gr/raw216 open.
+
+The direct native origin attempt is routed through EXISTING7bk525--527
+and7m135, not a new teleportation/reader certificate. 612 gives all-branch
+logical G/CX with retained Pauli frames under actual balanced live
+Lueders readout and feedforward. 613 gives the precise full Book
+attenuation/parameter transport on the verified same cold cut. It is
+not old-z source equivalence: z_eff differs, former zero feedback
+eigenvalues become1-epsilon, and437/607 all-apparatus stationarity
+cannot be inherited. Actual nonterminal WORK reader/recorder, full
+coherent dilation, all branches, failures, clock and heat remain the
+concrete application. The CAR-code reader537--541 does not supply
+unknown ordinary-WORK input. This records the tested route to avoid
+repeating its already owned finite instrument or losing its full price.
+
+Final affected validation PASS: validate_work.py, validate_agent_protocol.py,
+gr_assembly.py check (validtrue;54active/98results/5discharged/22obligations;
+scientific_promotionfalse), validate_repo.py (889claims/31assumptions/
+58aliases/183formal_support/918Leanclosure;warnings0), and git diff --check.
+The source reviewers also accepted612--613; the final prose incorporates
+the requested qualification: attenuation destroys the projection only
+when ker(F_target restricted to ranP) is nonzero, as in7bu; the exceptional
+F_target=P is unchanged. This qualification changes no numerical input.
+No reviewer replay or independent physical/assembly acceptance is claimed.
+
+Removing7bw restores incoming primary1311643bytes/SHA
+3ca58b391a612ace2c76e96c8091a0086842777cf14dc34896de796082881807.
+Incoming brief900221bytes/SHA
+b665ce8da769ec098843a8ef2d1735bf74903d9b37708e4c0eb2e850c5b35faa
+is an exact prefix. Earlier proof/checker pins and all concurrent disjoint
+intake through48474f01be0515e3ca26cad94497b74e631f9ea7 are preserved.
+These are local mathematical/source/structural checks, not remote CI.
+#334 remains Draft/open/unmerged; no claim or lifecycle promotion.
