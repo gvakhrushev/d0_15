@@ -9516,8 +9516,34 @@ inventory SHA-256
 `8e4a7319d50069718da54d60c067816f0ded8bf09c157e8eaeba3ffdb0a461f9`. The
 compiled dependency list for `sampledMatterMidpointLocalDefect_abs_le` includes
 the shared `D0.Analysis.midpointQuadrature_error_abs_le_of_thirdDerivative_bound`.
-A refreshed cold-start receipt will record retrieval of both modules and this
+A refreshed cold-start receipt records retrieval of both modules and this
 inventory.
+
+The replay on clean snapshot
+`94496b8ac173022db41c8486fed7931f53e7c029` found all **161/161** required
+references in **24/24** cases and passed the **25/25** retrieval/source-impact
+checks. The positive nonvacuum case now has nine queries and six required
+references, all found. The 9,156,766-byte full output has SHA-256
+`b5df63f14b99632e44e634a7f45dd919c67ff1b0d26f9fbc4af39c1e79554a03`; the
+7,963-byte compact receipt has SHA-256
+`a44bf9aa05461c154bce0111043717fbd0cd4a3c4a94979f46ffd42a08c069c1`. The
+cold-start runner SHA-256 is
+`3a77ae890785c122c0374fa0908461fb7a964e1e49a9925233fe768a4dd01e39`; the
+search-engine SHA-256 remains
+`adf78c418665c8c8c8f26367aed0d702df4ec6ec324e2365415d01a80402e26b`.
+
+The identical-question comparison retains seven source-scoped cases: current
+search found the expected source in **7/7**, while legacy assembly search found
+**0/7**. Current serialized answers total 864,808 bytes versus 48 for legacy
+responses. One expected source has a direct assembly-owner link; seven remain
+without one, so owner correctness and full hypothesis preservation remain
+manual review. The 79,464-byte comparison report has SHA-256
+`6d79c65612fa8fa197be1c8275381d2f924438ab8ff5e434cfddc99ed841d418`. These
+retrieval receipts do not accept the mathematical application or select a
+physical price/source. Receipts:
+[`proof_architecture_cold_start_summary_2026-10-26_midpoint_c3_refactor.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_midpoint_c3_refactor.json)
+and
+[`proof_architecture_search_process_comparison_2026-10-26_midpoint_c3_refactor.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_midpoint_c3_refactor.json).
 
 The narrow Lean 4.30.0 builds pass for `D0.Analysis.MidpointQuadrature`
 (**3,301/3,301** jobs) and
