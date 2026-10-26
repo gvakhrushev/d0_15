@@ -13629,3 +13629,73 @@ scientific promotion. git diff --check passed. Concurrent source/architecture
 intake through e80763cd is preserved; none changes the7bu input statements.
 validate_repo.py also passed on the checked tree:889 claims,31 assumptions,
 58 aliases,183 formal_support,918 Lean closure entries; zero warnings.
+
+
+## 26 October2026 — canonical history carrier and inherited archive metric application (7bv)
+
+Same #334, constitutive/native-programme-v1; native realization and
+composition, input7bu672dfd50 and current e92ab522. Existing GNS fold and
+actual Golden AF inclusion are reused, not reproved or reselected.
+
+Exact supporting parent application: one original READY transition
+bijects all P_k with the ENTIRE READY block of A_(k+1). A supplied fixed
+surjective Role map is lifted by its canonical equal-fibre isometry;
+J D_h J* preserves the complete Role commutator norm, scalar kernel and
+quotient radius. Lift to full regular AF LEFT/RIGHT module tensor defining
+CAR16, retaining the ORIGINAL observer on both READY/PENDING blocks and
+all offdiagonal/complementary states. Actual7bu rank is2*16*(m²+n²), plus
+any real padding and complex-to-real multiplicity when required; its
+full price/action-germ assumptions are retained.
+This applies the joint intrinsic metric and stationary Palatini--CAR germ
+to canonical history algebra without arbitrary prefix representatives.
+
+For fixed physical mesh, propagate the same element and observer by
+iota(A,B)=(diag(A,B),A). Faithful full block norm proves exact Role Lip
+preservation; the owned GNS isometry intertwines D and observables at
+every archive depth. Rebuilding a fresh READY-only corner fails because
+the inherited element has a nonzero PENDING copy. This supplies a real
+archive-metric tower, not a spatial limit or a full-price programme tower.
+The preserved AF trace is not ordinary Book heat trace; at the tested
+step the same central projection has ordinary CAR rank400 then1040.
+Action-channel recalibration at a new depth is a separate application,
+not proof that the complete priced programme intertwines.
+
+Parent route correction: full noncommutative path-Connes-metric equality
+is NOT required by the accepted first-positive-GR/commonExecution
+interface. The full native state and other experiments remain available;
+NativeContextCoverage is the stronger separate hypothesis. 7bv explicitly
+corrects that overstrong reading of7bu without rewriting its pinned proof.
+Actual state/action/test maps, physical admission, selected Role/field
+writer, discrepancy501, complete WORK/Info/clock source and spatial
+refinement remain open. Neither the operator embedding nor the archive
+tower proves them. 7bu inequivalent-metric/same-source control survives.
+No task, interface, registry, selector, assembly discharge or physical
+claim is introduced. GR_closed=false; positive_gr/raw216 unchanged.
+
+Smallest changed check only: one k2 instance, fibre sizes2/1/1/1, full
+CAR16, actual M5+M3 -> M8+M5, full GNS dimensions544->1424. Exact
+symbolic generic Role identities; zero full numerical Dirac/observer/
+isometry residuals; complete commutator norms12.686516249028 match;
+wrong re-zeroed PENDING residual35.82465349. Source/receipt reproduced
+in7bv with exact SHA pins. No old research/Lean/heat suite replay.
+
+Final source-only review by selected_bootstrap_application and
+full_path_metric_application accepted the map and its application scope;
+their required realification multiplicity clarification is included.
+Reviewed final proof11860bytes/SHA81b7dd0d625e9d3356a88f7f9f2fd9c7cade9e1ad0fab8a5fbebf8202d51df11;
+checker6565bytes/SHA546426ff1f4edab43e7695cf524356ee70051c746abedaf9c9572bbb09bbedf3.
+No reviewer replay, file edits or independent assembly acceptance.
+
+Affected structural checks PASS: work, agent protocol, gravity assembly
+(validtrue;54active/98results/5discharged/22obligations;scientific_promotionfalse),
+and git diff --check. Repository validation PASS:889claims/31assumptions/
+58aliases/183formal_support/918Leanclosure;warnings0. Existing checkpoint
+template read; no registry or acceptance target changed. Removing7bv
+restores incoming primary1291789bytes/SHAa27db7d2a45962e753db1214ad13aca8328aab6326a37d6725d219c2f1ef4c23;
+incoming brief895870bytes/SHA557ccba24312b8ec20d98c78fb0249f465b3f99304d2fbf14dd756f18d1f02c6
+remains an exact prefix. All earlier proof/checker pins are untouched.
+
+Concurrent disjoint parity/future-memory intake through3116f73f is retained;
+it changes none of the canonical carrier, observer or AF inclusion inputs.
+These are local finite/source/structural checks, not remote CI or physical
+GR acceptance. #334 remains Draft/open/unmerged.

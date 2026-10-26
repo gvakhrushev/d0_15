@@ -24642,6 +24642,437 @@ if __name__ == '__main__':
 }
 ```
 
+## 7bv. Apply the joint metric/source construction to the canonical history algebra and its actual archive tower
+
+Existing #334; native realization and composition. Input:7bu at672dfd50,
+the full GNS fold F1--F2 in
+`A4D_GNS_TWO_SIDED_PATH_UNFOLDING_AND_ARCHIVE_SOURCE_2026_10_18.md`,
+the actual inclusion (3)--(9) in `A4D_NATIVE_GOLDEN_COST_REFINEMENT.md`,
+and the accepted `D0/Foundation/TheoryTransfer.lean` common-execution
+interface. Concurrent input through e92ab522 is retained. The consumer is
+7bu's still abstract site/Role representation on the native history
+carrier. This section supplies that representation and its fixed-mesh
+archive extension; it does not change the native physical selection claim.
+
+### Correct the parent interface before applying it
+
+The sentence following598 that lists full path-algebra descent among the
+remaining premises must be read with its scope corrected here. Equality
+with the Connes distance of EVERY noncommutative native test is an extra
+claim, not a prerequisite in the accepted first-positive-GR interface.
+`Interpretation.commonExecution` retains the entire native state carrier
+and exposes the interpreted theory's operations and tests; all other
+native experiments remain available in the original execution. Its
+`common_profile_eq_iff` proves empirical faithfulness on that sector.
+`NativeContextCoverage` is the additional input for the stronger statement
+about every native experiment. Likewise `gr-operational-closure-v1`
+requires actual commuting observations, complete physical source/dynamics,
+clocks and refinement, not equality of every path distance with spacetime.
+
+This is a correction of an overstrong requirement in7bu, not a relaxation
+of the owned physical contract. We still owe its actual state/action/test
+maps and physical admission. An operator embedding alone is not an
+`Interpretation`, a state-preparation theorem or a selected field writer.
+No conditional expectation erases the other history distinctions below.
+
+### One READY transition supplies a canonical complete block
+
+Let P_k be ALL k-edge R/P paths of the original Fibonacci graph, including
+both initial vertices, and let m=|P_k|=F_(k+3), n=F_(k+2). Each terminal
+vertex has exactly one outgoing transition to READY. Consequently
+
+    P_k -> P_(k+1,R),  w |-> wR
+
+is a bijection onto the ENTIRE READY block. Set N0=k+1. The original
+algebra and its full faithful regular module are
+
+    A_N0=M_m direct-sum M_n,
+    H_N0=(C^m_LEFT tensor C^m_RIGHT)
+          direct-sum (C^n_LEFT tensor C^n_RIGHT).             (599)
+
+There is no selected set of representatives, discarded offdiagonal matrix
+unit, or field-dependent READY corner. For the ORIGINAL coarse LEFT
+prefix projection P_w, its READY action is |w><w| tensor I_RIGHT;
+its actual PENDING action is retained as well. The already owned GNS fold
+identifies these with prefixes of length k<=N0 in the doubled path. RIGHT
+tests become reversed suffix tests. It is only a field-independent change
+of coordinates, applied to the whole operator, cut and readout; no extra
+executed gate, clock saving or preparation is inferred. Fine folded-leaf
+tests that inspect RIGHT are not silently treated as free LEFT access.
+In binary indexing R is0: this is one appended0, AF level k+1 and native
+cost-word length k+2. Physical execution of an archive step still has its
+actual continuation/clock price.
+
+### A fixed Role partition needs no chosen prefix representative
+
+Let ell:P_k->X_h be an ALREADY supplied surjective, field-independent
+Role/address partition for the finite geometric mesh, with fibre sizes
+s_x>0. No Fibonacci restriction on |X_h| remains. Define
+
+    J_addr |x> = (1/sqrt(s_x)) sum_(ell(w)=x) |w>,
+    J=J_addr tensor I_CAR,
+    a_ell(w)=a(ell(w)),       D_X=J D_h J*.                   (600)
+
+Here D_h is the selfadjoint finite full16-CAR operator in its declared
+Hilbert pairing. A moving physical pairing must first be transported by
+the owned unitary identification;600 does not replace it by an arbitrary
+counting pairing. J*J=I, a_ell J=J a, and JJ* commutes with a_ell. Thus,
+with D_X zero on the orthogonal complement of ranJ,
+
+    [D_X,a_ell]=J[D_h,a]J*,
+    ||[D_X,a_ell]||=||[D_h,a]||,
+    inf_c ||a_ell-cI||=inf_c ||a-cI||.                       (601)
+
+The scalar kernel and quotient radius R_D used in594 are identical on
+this Role algebra. The equal fibre sum is fixed by the given partition
+and its canonical orthonormal LEFT basis, independent of the target field
+and D_h. It is an operator definition, not a claim that this superposition
+is prepared or that the actual blank cut is ranJ. Finer LEFT tests remain
+present and need not have the same metric. The supplied Role map, coherent
+LEFT actuation and original physical observer interpretation remain inputs.
+
+Take the amplified algebra element d_N0=(D_X,0), and represent it on
+H_N0 tensor C^16_CAR by regular LEFT multiplication and the DEFINING CAR
+representation. After only a tensor-factor permutation this is
+
+    D_lift=(D_X tensor I_(m,RIGHT)) direct-sum 0_PENDING.
+
+Extend a_ell as the ORIGINAL coarse-prefix multiplier on BOTH blocks,
+not as a new READY-only observable. Equations600--601 then give exactly
+the target commutator norm on the full H_N0 tensor CAR. The entire RIGHT
+algebra commutes with D_lift and its field derivatives. PENDING and all
+RIGHT/offdiagonal states remain in the Hilbert space and complete price.
+We do not use the regular representation of A_N0 tensor M_16, which would
+incorrectly square the defining CAR multiplicity.
+
+### Apply7bu on this full carrier, keeping its actual price
+
+Use this D_lift in the SAME geometry rotor of593--596. On its orthogonal
+complement the rotor is identity; this does not remove those columns from
+the full heat or input cut. Equations601 give exactly the old kappa and
+R_D, hence exactly594's ideal/compiled metric estimates for the Role tests.
+The full internal role/CAR/rotor rank entering595 is now
+
+    r=2*16*(m^2+n^2)                                       (602)
+
+for the real coframe/CAR realization, before any REAL additional compiler
+padding. A complex D_h requires the extra realification multiplicity used
+in7bu unless its real structure is supplied; include that factor in r.
+All realification, padding, auxiliary
+action/geometry channels, protected spectators and actual scene/input
+conventions retain7bu's separate multiplicities. In particular P0 is the
+full7bu input cut, not the central READY projection or JJ*. Ordinary heat
+trace and absolute Book factors are not divided by m, s_x or tau_N(1).
+
+The same scalar representation acts on the action channels, so their
+rotations still commute with it. With the actual r (602 before the stated
+enlargements), the owned signed
+action-channel calibration supplies B-B_base=f_h-f_h(0) on the SAME smooth
+field chart, and597 still applies to an actual compiled centre under its
+original internal-placement/common-clock hypotheses. Thus the original
+Palatini--CAR nonvacuum all-field germ and this intrinsic finite observer
+metric can coexist on the canonical GNS history carrier, not merely on an
+unidentified site factor. This is an application of7az/7bu, not a new root
+or an independent action choice claimed to be physically forced.
+
+Ideal RIGHT commutation is exact. For a generic all-column epsilon
+compiler, only ||[W_hat,R(B)]||<=2epsilon||R(B)|| follows; exact compiled
+RIGHT neutrality needs an actual LEFT/CAR-only implementation. The literal
+one-port obstruction and ordinary-WORK admission/price from7bk--7bt remain.
+No silent address gate, target-dependent initial cut or unpriced inverse
+has been introduced.
+
+### Use the actual AF inclusion instead of rebuilding a READY corner
+
+At fixed physical mesh h, continue the SAME element and observer by the
+owned unital star-inclusion, with CAR amplification throughout:
+
+    iota(A,B)=(diag(A,B),A),
+    d_N=iota^(N-N0)(d_N0),   a_N=iota^(N-N0)(a_N0),
+    D_N=(lambda_N tensor id_CAR)(d_N).                       (603)
+
+The complete block norm obeys ||iota(A,B)||=max(||A||,||B||), also after
+CAR amplification. Faithful weighted regular LEFT multiplication has that
+same norm. Multiplicativity therefore proves, on every full archive level,
+
+    ||[D_N,a_N]||=||[D_h,a]||.
+
+This equality uses the actual isometric star-inclusion, not merely a
+compression to old states. The owned trace-preserving GNS map
+J_N[x]=[iota(x)] further satisfies, with Q_N=J_N tensor I_CAR,
+
+    D_(N+1) Q_N=Q_N D_N,
+    a_(N+1) Q_N=Q_N a_N.                                   (604)
+
+These follow directly from multiplication. In the normalized matrix-unit
+basis a READY unit has two children with amplitudes (sqrt(p),p); a PENDING
+unit has its single READY child with amplitude1. In folded coordinates
+the map inserts a matched edge/reversed-edge pair at the central join,
+not two independent appended bits. Entire complementary fine modes remain.
+Functional calculus gives the same intertwining for the ideal rotor.
+
+The use of603 is essential: iota(I_m,0)=(diag(I_m,0_n),I_m) differs from
+the fresh central READY projector (I_(m+n),0), and
+iota(D_X,0)=(diag(D_X,0),D_X). Re-zeroing the new PENDING block would break
+604. This explicit inherited construction removes that archive mismatch.
+
+The tower is at FIXED h. It proves no spatial h->0 limit, Lorentz time,
+Golden physical metric rescaling, actual runtime law or compatible faithful
+full-density preparation. In particular compressing a faithful fine density
+onto ranQ_N cannot preserve unit trace with a nonzero complement.
+
+Nor does603 preserve ordinary paid heat traces, input ranks or clocks.
+The trace preserved by the AF inclusion is tau_N, not the full Hilbert trace
+of Book03. At a new depth one can apply7bu using its actual new rank and
+clock; reproducing the same f_h by recalibrating action channels is a new
+depth-dependent application, not proof that the whole priced programme
+intertwines. If one instead inherits the complete old controls by iota,
+their original absolute price/source must be recomputed. No compatible
+full-price tower is claimed by604.
+
+### Exact consequence for the parent argument
+
+The previously missing canonical carrier map is now explicit:
+
+    supplied mesh Role map -> ALL original LEFT prefixes
+    -> entire one-step READY block -> full regular GNS/CAR module
+    -> same7bu paid observer metric and stationary action germ
+    -> norm-identical inherited archive metric at fixed mesh.
+
+This removes arbitrary representative choice, a Fibonacci site-count
+restriction and the naive READY/refinement mismatch from this application.
+It also removes the overstrong full-path-metric requirement from the
+first-positive-GR reading. It does not determine the supplied Role map,
+physical discrepancy501, admitted coherent field operations, their full
+Cost-Info/WORK/clock valuation, or their spatial refinement and physical
+selection. The two-site inequivalent-metric/same-source control in7bu
+still applies:601 and604 do not turn realizability into Einstein selection.
+The primary exact nonvacuum carrier and both universality routes remain
+the downstream consumers once their actual hypotheses are supplied.
+No assembly discharge or promotion; GR_closed=false, positive_gr/raw216
+and original full selected HJR remain open.
+
+### Changed-map check
+
+The check below uses ONE k=2 instance: five coarse prefixes, a four-site
+Role partition with sizes(2,1,1,1), ALL16 CAR grades, and the actual
+M5+M3 -> M8+M5 inclusion. Exact symbolic identities check the generic
+Role intertwining; numerical full-module identities check the544->1424
+GNS/CAR map and both complete commutator norms. It rejects re-zeroing
+PENDING and compares the unchanged AF trace with the changed ordinary
+regular trace. It neither reruns7bu nor replaces the analytical all-level
+proof by a finite census. No physical actuation or spatial limit is tested.
+
+Proof text above: 11860 UTF8 bytes, SHA256 81b7dd0d625e9d3356a88f7f9f2fd9c7cade9e1ad0fab8a5fbebf8202d51df11.
+Checker: 6565 bytes, SHA256 546426ff1f4edab43e7695cf524356ee70051c746abedaf9c9572bbb09bbedf3.
+Canonical LF JSON receipt: 717 bytes, SHA256 447b76a1800398a2ee8e52a28eab547abca9979171e01aab379b32264160cf7f.
+Author check exit0 with explicit failure guards; all full-module intertwining
+residuals0, target/full commutator norms agree within4e-14, and the wrong
+PENDING construction has residual35.82465. Exact generic identities and
+the analytical proof own the statement; floating results are regression
+controls. No old suite, Lean build or independent acceptance is implied.
+
+```python
+"""One changed canonical carrier map; no physical-admission or spatial-limit claim."""
+import json
+import platform
+import numpy as np
+import scipy
+import scipy.linalg as la
+import scipy.sparse as sp
+import sympy as sy
+
+
+def require(value, name):
+    if not bool(value):
+        raise RuntimeError(name)
+
+
+def residual(matrix):
+    return float(sp.linalg.norm(matrix) if sp.issparse(matrix) else la.norm(matrix))
+
+
+def paths(k):
+    out = [(0,), (1,)]
+    for _ in range(k):
+        out = [w+(0,) for w in out] + [w+(1,) for w in out if w[-1] == 0]
+    return out
+
+
+def exact_role():
+    role = [0, 0, 1, 2, 3]
+    j = sy.zeros(5, 4)
+    for w, x in enumerate(role):
+        j[w, x] = 1/sy.sqrt(role.count(x))
+    a = sy.diag(*sy.symbols('a:4', real=True))
+    ar = sy.diag(*[a[x, x] for x in role])
+    d = sy.Matrix(4, 4, sy.symbols('d:16'))
+    dx = j*d*j.T
+    require(j.T*j == sy.eye(4), 'exact fibre isometry')
+    require(ar*j == j*a, 'exact Role intertwining')
+    require(sy.simplify(dx*ar-ar*dx-j*(d*a-a*d)*j.T) == sy.zeros(5),
+            'exact generic commutator identity')
+    require(ar*j*j.T == j*j.T*ar, 'full range complement is invariant')
+    return role, np.array(j, dtype=float)
+
+
+def regular(matrix, size):
+    # Input order LEFT,CAR; full output order LEFT,RIGHT,CAR.
+    car = matrix.shape[0]//size
+    old = sp.kron(sp.csr_matrix(matrix), sp.eye(size), format='csr')
+    perm = np.array([(left*car+c)*size+right
+                     for left in range(size) for right in range(size)
+                     for c in range(car)])
+    return old[perm, :][:, perm]
+
+
+def norm(matrix):
+    # Commutators here are real skew-adjoint; largest |eigenvalue(iK)|.
+    herm = (1j*matrix).astype(complex)
+    value = sp.linalg.eigsh(herm, k=1, which='LM', return_eigenvectors=False,
+                           v0=np.linspace(1, 2, matrix.shape[0]), tol=1e-11)[0]
+    return float(abs(value))
+
+
+def main():
+    p = (np.sqrt(5)-1)/2
+    coarse = paths(2)
+    fine = paths(3)
+    ready = [w for w in fine if w[-1] == 0]
+    require(ready == [w+(0,) for w in coarse], 'one READY step is entire block')
+    require((len(coarse), len(ready), len(fine)-len(ready)) == (5, 5, 3),
+            'actual path sizes')
+    role, j = exact_role()
+    x = np.array([[0., 1.], [1., 0.]])
+    z = np.diag([1., -1.])
+    gamma = []
+    for k in range(4):
+        g = np.ones((1, 1))
+        for bit in range(4):
+            g = np.kron(g, z if bit < k else x if bit == k else np.eye(2))
+        gamma.append(g)
+    for k in range(4):
+        for l in range(4):
+            require(residual(gamma[k]@gamma[l]+gamma[l]@gamma[k]
+                             -(2*np.eye(16) if k == l else 0)) < 1e-13,
+                    'complete sixteen-grade CAR Clifford identity')
+    dh = np.kron(np.diag([1., -2., 3., 0.]), gamma[3])
+    for k in range(3):
+        e = np.zeros((4, 4)); e[k, k+1] = e[k+1, k] = k+1
+        dh += np.kron(e, gamma[k])
+    jc = np.kron(j, np.eye(16))
+    dx = jc@dh@jc.T
+    aval = np.array([-2., 1., 3., 7.])
+    ar = aval[role]
+    # PENDING extensions exist for precisely the first three READY-ending prefixes.
+    require(all(w[-1] == 0 for w in coarse[:3]), 'canonical READY-first path order')
+    ap = ar[:3]
+    a0 = la.block_diag(np.kron(np.diag(ar), np.eye(16)),
+                       np.kron(np.diag(ap), np.eye(16)))
+    d0 = la.block_diag(dx, np.zeros((48, 48)))
+    d1r = la.block_diag(dx, np.zeros((48, 48)))
+    d1p = dx.copy()
+    d1 = la.block_diag(d1r, d1p)
+    a1r = a0.copy()
+    a1p = np.kron(np.diag(ar), np.eye(16))
+    a1 = la.block_diag(a1r, a1p)
+    dreg0 = sp.block_diag((regular(dx, 5), regular(np.zeros((48, 48)), 3)), format='csr')
+    areg0 = sp.block_diag((regular(a0[:80, :80], 5), regular(a0[80:, 80:], 3)), format='csr')
+    dreg1 = sp.block_diag((regular(d1r, 8), regular(d1p, 5)), format='csr')
+    areg1 = sp.block_diag((regular(a1r, 8), regular(a1p, 5)), format='csr')
+    q = np.zeros((89, 34))
+    for left in range(5):
+        for right in range(5):
+            col = left*5+right
+            q[left*8+right, col] = np.sqrt(p)
+            q[64+left*5+right, col] = p
+    for left in range(3):
+        for right in range(3):
+            q[(left+5)*8+(right+5), 25+left*3+right] = 1
+    qc = sp.kron(sp.csr_matrix(q), sp.eye(16), format='csr')
+    errs = dict(isometry=residual(qc.T@qc-sp.eye(544)),
+                dirac=residual(dreg1@qc-qc@dreg0),
+                observer=residual(areg1@qc-qc@areg0))
+    require(max(errs.values()) < 3e-13, 'complete archive intertwining')
+    ast = np.kron(np.diag(aval), np.eye(16))
+    target = float(la.norm(dh@ast-ast@dh, 2))
+    norms = [norm(dreg0@areg0-areg0@dreg0), norm(dreg1@areg1-areg1@dreg1)]
+    require(max(abs(n-target) for n in norms) < 2e-9, 'full GNS commutator norms')
+    # RIGHT multiplication by an arbitrary non-diagonal matrix is retained.
+    right = np.arange(25.).reshape(5, 5); right = right+right.T
+    rightreg = sp.block_diag((sp.kron(sp.eye(5), sp.kron(right.T, sp.eye(16))),
+                              sp.eye(144)), format='csr')
+    right_error = residual(dreg0@rightreg-rightreg@dreg0)
+    require(right_error < 1e-11, 'full RIGHT commutation')
+    # An isometry alone would miss the discarded new PENDING copy.
+    wrong = sp.block_diag((regular(d1r, 8), sp.csr_matrix((400, 400))), format='csr')
+    wrong_error = residual(wrong@qc-qc@dreg0)
+    require(wrong_error > 1, 'fresh READY-only reconstruction fails')
+    # Exact ordinary-rank and normalized AF-trace comparison on the actual central E.
+    ordinary_ranks = [5*5*16, (5*8+5*5)*16]
+    tau0, tau1 = 5*p**4, 5*p**5+5*p**6
+    require(abs(tau0-tau1) < 1e-14 and ordinary_ranks == [400, 1040],
+            'AF trace preservation is not ordinary trace preservation')
+    # The chosen D is a genuine selfadjoint algebra element, not a compression-only rule.
+    require(residual(d0-d0.T) == 0 and residual(d1-d1.T) == 0,
+            'selfadjoint amplified elements')
+    print(json.dumps(dict(input_ref='e92ab522c543a1c16c2cdd70aaaa23da896bbe03',
+        python=platform.python_version(), numpy=np.__version__, scipy=scipy.__version__,
+        sympy=sy.__version__, status='PASS', coarse_prefixes=5, role_fibres=[2, 1, 1, 1],
+        car_grades=16, full_dimensions=[544, 1424], exact_generic_role_identity=True,
+        errors=errs, target_norm=target, full_norms=norms, right_error=right_error,
+        wrong_pending_residual=wrong_error, ordinary_E_ranks=ordinary_ranks,
+        normalized_E_trace=[tau0, tau1]), indent=2, sort_keys=True))
+
+
+if __name__ == '__main__':
+    main()
+```
+
+```json
+{
+  "car_grades": 16,
+  "coarse_prefixes": 5,
+  "errors": {
+    "dirac": 0,
+    "isometry": 0,
+    "observer": 0
+  },
+  "exact_generic_role_identity": true,
+  "full_dimensions": [
+    544,
+    1424
+  ],
+  "full_norms": [
+    12.686516249028099,
+    12.686516249028076
+  ],
+  "input_ref": "e92ab522c543a1c16c2cdd70aaaa23da896bbe03",
+  "normalized_E_trace": [
+    0.7294901687515776,
+    0.7294901687515776
+  ],
+  "numpy": "2.2.6",
+  "ordinary_E_ranks": [
+    400,
+    1040
+  ],
+  "python": "3.11.9",
+  "right_error": 0,
+  "role_fibres": [
+    2,
+    1,
+    1,
+    1
+  ],
+  "scipy": "1.16.3",
+  "status": "PASS",
+  "sympy": "1.12.1",
+  "target_norm": 12.686516249028063,
+  "wrong_pending_residual": 35.82465349169972
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
