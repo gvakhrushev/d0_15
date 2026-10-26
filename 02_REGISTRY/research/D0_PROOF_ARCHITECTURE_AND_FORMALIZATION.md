@@ -9384,3 +9384,34 @@ The prior 23-declaration receipt remains pinned to its original clean source
 snapshot and is retained as historical evidence rather than refreshed in
 place. The cold-start case now targets this current inventory and theorem;
 its refreshed replay receipt is recorded below after replay.
+
+### Midpoint-refinement cold-start replay (26 October 2026)
+
+After the nonvacuum cold-start case was extended to query the refinement
+theorem, a replay on clean snapshot
+`fc76e2a221d629297af93e74583b6d413c0b97d5` found all **158/158** required
+references in **24/24** cases and passed the **25/25** retrieval/source-impact
+checks. The positive nonvacuum case now has eight queries and finds the exact
+§§7.1–7.2 source, the Lean module and the current compiled inventory. The
+9,082,766-byte full output has SHA-256
+`6e439197830121a730b2fc801df2852ae24c9e5d42674f366f077bcbcc018832`; the
+7,959-byte compact receipt has SHA-256
+`47c85d77d3782158b5858a880c6ccb99c0095cd277c0a6a2f7afc669f1c227b2`. The
+runner SHA-256 is
+`f587cf47125b6c143624655133958c88ff6cfa2371e5945c22cae0f07a02a431`; the
+search-engine SHA-256 remains
+`adf78c418665c8c8c8f26367aed0d702df4ec6ec324e2365415d01a80402e26b`.
+
+The refreshed same-question comparison has seven explicitly source-scoped
+cases: current search found the expected source in **7/7**, while legacy
+assembly search found **0/7**. Current answers total 864,808 serialized bytes
+versus 48 for legacy responses. Only one expected source has a direct
+assembly-owner link; seven remain without one, and owner correctness and
+hypothesis preservation still need manual review. The 79,464-byte comparison
+report has SHA-256
+`4dc8d9ad5343ca5975b050d12aaf8405a527ab6c024a0ec635bb82877f425fb6`.
+These are search and provenance results only; they do not accept the
+mathematical application or select physical price/source. Receipts:
+[`proof_architecture_cold_start_summary_2026-10-26_midpoint_refinement.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_midpoint_refinement.json)
+and
+[`proof_architecture_search_process_comparison_2026-10-26_midpoint_refinement.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_midpoint_refinement.json).
