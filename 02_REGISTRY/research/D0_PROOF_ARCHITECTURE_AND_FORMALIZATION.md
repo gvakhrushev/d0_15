@@ -9964,10 +9964,12 @@ The consolidated cold-start replay found every required source in **24/24**
 cases (**161/161** references), including the shared analysis module and its
 sampled nonvacuum application. The positive nonvacuum case now contains twelve
 questions and six required sources. The exact-source-versus-unrelated-prose
-impact check passed. Its compact receipt and the same-question retrieval
-comparison are pinned under
-[`sources/d0_proof_architecture_formalization_2026-10-24/reports/`](sources/d0_proof_architecture_formalization_2026-10-24/reports/);
-the receipts record the clean source commit, runner and search-engine hashes,
+impact check passed. The compact receipt and same-question retrieval
+comparison are pinned at
+[`proof_architecture_cold_start_summary_2026-10-26_final_v10.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v10.json)
+and
+[`proof_architecture_search_process_comparison_2026-10-26_final_v10.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_final_v10.json).
+The receipts record the clean source commit, runner and search-engine hashes,
 and full-output digest.
 
 In the comparison, all seven explicitly source-scoped questions found their
