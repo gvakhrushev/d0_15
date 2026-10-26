@@ -8649,5 +8649,16 @@ closure and independent C0 acceptance remain open.
 
 The narrow module build passed **3,216/3,216 jobs** and the public-import
 `D0.All` build passed **4,585/4,585 jobs** with Lean 4.30.0. A compiled
-declaration inventory and a clean cold-start retrieval receipt for this new
-application are recorded in the following checkpoint.
+declaration inventory was extracted through `D0.All` at clean source snapshot
+`40f086fa011eafd91b6ed2e2ed6c24ba7aaa2ee8` (`worktree_dirty=false`). It records
+61 module declarations; the new derivative theorem's axiom footprint is
+`Classical.choice`, `Quot.sound`, `propext`, and the already-owned CAR
+`archiveCreatorPermSign` `native_decide` dependency, with no `sorryAx` and no new
+axiom. The Lean-source digest is
+`afbf08818c7bd5c09f9926365cb4ce7e27ea636fee825d96b9898ab6157932a4`, collector
+SHA-256 `09641471b75f6769ccd7ad30f29417b05332e260b220904568a85d89b7c57415`, and
+inventory SHA-256
+`bece356e44cb92045e217872298ac9ca2dc157f524c42e7b09e9c9ea69caed91` at
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json`.
+A clean cold-start retrieval receipt for this application is recorded in the
+following checkpoint.

@@ -36,6 +36,8 @@ CASES: list[dict[str, Any]] = [
             "jointCoframeAndLorentzPath julia_joint_coframe_link_path_derivative_declarations_2026-10-26",
             "principalFrameJuliaEndpointChartReadout_hasDerivAt_of_jointCoframeAndLorentzTangent exponential tangent proper Lorentz path",
             "jointCoframeAndLorentzTangent julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26",
+            "principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_hasFDerivAt full Frechet derivative product of four role Lorentz tangent links",
+            "roleLorentzTangentEndpointFDeriv_apply julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -45,6 +47,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
         ],
         "required_sources": [
             {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -60,7 +63,7 @@ CASES: list[dict[str, Any]] = [
              "sections": ["5.1"], "scope_query_indexes": [6],
              "scope_query_sections": {"6": ["5.1"]}},
         ],
-        "scope_review": ("Owner all-jet null-leg inverse and the concrete consumer are distinct. The compiled pathwise derivative composes its Eq. (27)/(28) endpoint readout with proper-Lorentz link paths on the finite CAR carrier. Its joint-path specialization allows coframe, column data and normalized covector to vary pointwise; exact recovery removes the need to assume differentiability of those paths. The new tangent corollary integrates each rolewise Lorentz tangent by an exponential path, proves det = 1 along that path, and gives the endpoint derivative at t = 0. It still does not construct a full six-coordinate chart, connect every determinant-one link to the identity, establish physical price selection, or close GR."),
+        "scope_review": ("Owner all-jet null-leg inverse and the concrete consumer are distinct. The compiled pathwise derivative composes its Eq. (27)/(28) endpoint readout with proper-Lorentz link paths on the finite CAR carrier. Its joint-path specialization allows coframe, column data and normalized covector to vary pointwise; exact recovery removes the need to assume differentiability of those paths. The tangent corollary integrates each rolewise Lorentz tangent by an exponential path, proves det = 1 along that path, and gives the endpoint derivative at t = 0. The Fréchet specialization proves the full derivative on the product of the four role-indexed Lorentz tangent subspaces, with its action exposed role by role. It does not prove that each tangent subspace has dimension six, construct a full six-coordinate chart, connect every determinant-one link to the identity, establish physical price selection, or close GR."),
     },
     {
         "id": "positive-nonvacuum-recovery",
