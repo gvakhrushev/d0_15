@@ -1468,9 +1468,27 @@ class ProofArchitectureTests(unittest.TestCase):
                             for query in case["queries"]))
         self.assertTrue(any("midpointQuadrature_error_abs_le_of_thirdDerivative_bound" in query
                             for query in case["queries"]))
+        self.assertTrue(any("D0.Analysis.MidpointQuadrature" in query
+                            for query in case["queries"]))
         self.assertTrue(any("sampledMatterMidpointHistory_error_le_refinementBound" in query
                             for query in case["queries"]))
         self.assertIn(module, case["required_refs"])
+        self.assertIn("03_FORMALIZATION/D0/Analysis/MidpointQuadrature.lean",
+                      case["required_refs"])
+        self.assertIn(
+            "D0.Analysis.MidpointQuadrature,D0/Analysis/MidpointQuadrature.lean,"
+            "EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean;"
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            (proof.ROOT / "02_REGISTRY/formal_support.csv").read_text(encoding="utf-8"),
+        )
+        self.assertIn(
+            "import D0.Analysis.MidpointQuadrature",
+            (proof.ROOT / "03_FORMALIZATION/D0/All.lean").read_text(encoding="utf-8"),
+        )
+        self.assertIn(
+            "D0.Analysis.midpointQuadrature_error_abs_le_of_thirdDerivative_bound",
+            (proof.ROOT / module).read_text(encoding="utf-8"),
+        )
         self.assertIn("all 16+24+2 Euler rows", case["scope_review"])
         self.assertIn("derives its O(h^3) defect from C^3 regularity",
                       case["scope_review"])
@@ -1574,7 +1592,10 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertFalse(c3_inventory["worktree_dirty"])
         self.assertEqual(c3_inventory["snapshot_commit"],
                          "986c05d72956f95c1eeeab7e17df0e3824992db5")
-        self.assertEqual(c3_inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(
+            c3_inventory["lean_source_digest"],
+            "00788714716bf31665b8f7bedcf058b9e40dd454e2d7f737e15a20dae88d2e0f",
+        )
         c3_declarations = {row["name"]: row for row in c3_inventory["declarations"]}
         c3_required = {
             "D0.Geometry.midpointQuadrature_error_abs_le_of_thirdDerivative_bound",
@@ -1608,6 +1629,54 @@ class ProofArchitectureTests(unittest.TestCase):
             c3_global["proof_dependencies"],
         )
         self.assertIn("duration * M * h ^ 2 / 24", c3_global["elaborated_type"])
+
+        refactor_inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_brinkmann_stencil_midpoint_c3_refactor_declarations_2026-10-26.json"
+        )
+        refactor_inventory = json.loads(
+            refactor_inventory_path.read_text(encoding="utf-8")
+        )
+        self.assertEqual(refactor_inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertEqual(refactor_inventory["public_import_root"], "D0.All")
+        self.assertFalse(refactor_inventory["worktree_dirty"])
+        refactor_declarations = {
+            row["name"]: row for row in refactor_inventory["declarations"]
+        }
+        generic_midpoint = refactor_declarations[
+            "D0.Analysis.midpointQuadrature_error_abs_le_of_thirdDerivative_bound"
+        ]
+        self.assertEqual(generic_midpoint["module"], "D0.Analysis.MidpointQuadrature")
+        self.assertEqual(
+            generic_midpoint["source_path"],
+            "03_FORMALIZATION/D0/Analysis/MidpointQuadrature.lean",
+        )
+        self.assertEqual(set(generic_midpoint["axioms"]), standard_axioms)
+        self.assertIn("ContDiff", generic_midpoint["elaborated_type"])
+        self.assertIn("M * h ^ 3 / 24", generic_midpoint["elaborated_type"])
+        sampled_local = refactor_declarations[
+            "D0.Geometry.sampledMatterMidpointLocalDefect_abs_le"
+        ]
+        self.assertEqual(sampled_local["module"], module_name)
+        self.assertEqual(sampled_local["source_path"], module)
+        self.assertEqual(set(sampled_local["axioms"]), standard_axioms)
+        self.assertIn(
+            "D0.Analysis.midpointQuadrature_error_abs_le_of_thirdDerivative_bound",
+            sampled_local["proof_dependencies"],
+        )
+        sampled_history = refactor_declarations[
+            "D0.Geometry.sampledMatterMidpointHistory_error_le_refinementBound"
+        ]
+        self.assertIn(
+            "D0.Geometry.sampledMatterMidpointLocalDefect_abs_le",
+            sampled_history["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.finiteMatterMidpointHistory_error_le_refinementBound",
+            sampled_history["proof_dependencies"],
+        )
+        self.assertEqual(set(sampled_history["axioms"]), standard_axioms)
 
         history_inventory_path = (
             proof.ROOT
@@ -1989,7 +2058,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-26_midpoint_c3_error.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_midpoint_c3_refactor.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -2007,7 +2076,7 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in summary["cases"]
         ))
         self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 159
+            sum(row["required_source_count"] for row in summary["cases"]), 161
         )
         labelled = next(
             row for row in summary["cases"]
@@ -2020,7 +2089,7 @@ class ProofArchitectureTests(unittest.TestCase):
             if row["id"] == "positive-nonvacuum-recovery"
         )
         self.assertEqual(positive["query_count"], 9)
-        self.assertEqual(positive["required_source_count"], 3)
+        self.assertEqual(positive["required_source_count"], 6)
         proper = next(
             row for row in summary["cases"]
             if row["id"] == "proper-lorentz-same-orientation-orbit"
@@ -2066,7 +2135,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-26_midpoint_c3_error.json"
+            / "proof_architecture_search_process_comparison_2026-10-26_midpoint_c3_refactor.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(

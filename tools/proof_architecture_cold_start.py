@@ -84,14 +84,16 @@ CASES: list[dict[str, Any]] = [
             "finiteMatterMidpointHistory_eq_base_add_rateSum chronological midpoint record finite sum endpoint",
             "twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum complete finite history gradient rate energies",
             "finiteMatterMidpointHistory_error_le_refinementBound local midpoint defect sum M h^3 over 24 global O(h^2) uniform mesh points",
-            "midpointQuadrature_error_abs_le_of_thirdDerivative_bound sampledMatterMidpointLocalDefect_abs_le sampledMatterMidpointHistory_error_le_refinementBound Taylor Lagrange C3 third derivative M h^3 over 24",
+            "D0.Analysis.MidpointQuadrature midpointQuadrature_error_abs_le_of_thirdDerivative_bound sampledMatterMidpointLocalDefect_abs_le sampledMatterMidpointHistory_error_le_refinementBound shared Taylor Lagrange C3 third derivative M h^3 over 24",
             "native finite matter midpoint exact energy five point source same interval",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
             "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+            "03_FORMALIZATION/D0/Analysis/MidpointQuadrature.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_refinement_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_refactor_declarations_2026-10-26.json",
         ],
         "required_sources": [
             {
@@ -111,9 +113,9 @@ CASES: list[dict[str, Any]] = [
             "endpoint rate-sum law and the finite-horizon squared-gradient energy sum, and "
             "supplies that same rate to each site's profile without adding a continuum-limit premise. "
             "The error composition proves a uniform componentwise O(h^2) bound at every mesh point. "
-            "The new local Taylor theorem derives its O(h^3) defect from C^3 regularity plus an "
-            "explicit uniform third-derivative bound on the sampled interval; the sampled-history "
-            "specialization composes both results. It does not assert the same constant for the "
+            "The shared D0.Analysis Taylor theorem derives its O(h^3) defect from C^3 regularity "
+            "plus an explicit uniform third-derivative bound on the sampled interval; the geometry "
+            "specialization composes it with the sampled-history result. It does not assert the same constant for the "
             "Euclidean vector norm. The original CAR construction, 40-to-3-to-1 substitution, all "
             "16+24+2 Euler rows, and physical native Book/clock/source selection remain separate and open."
         ),

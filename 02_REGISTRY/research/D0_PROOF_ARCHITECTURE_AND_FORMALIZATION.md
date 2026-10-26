@@ -9459,5 +9459,64 @@ digest `00788714716bf31665b8f7bedcf058b9e40dd454e2d7f737e15a20dae88d2e0f`.
 Inventory:
 [`nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json)
 (SHA-256 `2ad2bee1b0dc6ddea930eeb96fe3ffb6315838ca21a446f51142cb9a4c2a2f36`).
-The refreshed retrieval receipts are recorded in the next checkpoint after
-replay.
+
+### C^3 midpoint retrieval replay (26 October 2026)
+
+The refreshed cold-start search on clean snapshot
+`f3a219efd784635ac554fd8fd43bb73559428b52` found all **159/159** required
+references in **24/24** cases and passed the **25/25** search/source-impact
+checks. The positive nonvacuum case has nine queries and surfaces both the new
+local Taylor theorem and its compiled declaration inventory. The 9,142,987-byte
+full output has SHA-256
+`2f2dc1ce3c53dc847653215532151dc5c12900bf0e69e12e7cab0f340b7573d9`; the
+7,960-byte compact receipt has SHA-256
+`fd2e628e08bad56012427008c3854300484f6f59e36b6ab5c5f6b16130a5f138`. The
+cold-start runner SHA-256 is
+`7f0f4f5eb95099327fb3d129cf3b7fcc395088259b4f78e136f953786348b2dc`; the
+search engine SHA-256 remains
+`adf78c418665c8c8c8f26367aed0d702df4ec6ec324e2365415d01a80402e26b`.
+
+The same-question comparison retains seven explicitly source-scoped cases:
+current search found the expected source in **7/7**, while legacy assembly
+search found **0/7**. Serialized current answers total 864,808 bytes versus 48
+for legacy responses. One expected source has a direct assembly-owner link;
+seven remain without one. Owner correctness, hypothesis preservation and
+whether new mathematics is needed still require semantic review. The
+79,464-byte comparison report has SHA-256
+`461073b68fef3b4927f0a95ab4de5a47053f64fcb9a73fe66bf4470ed8bf8a59`. These
+retrieval receipts do not accept the mathematical application or select a
+physical price/source. Receipts:
+[`proof_architecture_cold_start_summary_2026-10-26_midpoint_c3_error.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_midpoint_c3_error.json)
+and
+[`proof_architecture_search_process_comparison_2026-10-26_midpoint_c3_error.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_midpoint_c3_error.json).
+
+### Shared midpoint quadrature API refactor (26 October 2026)
+
+The scalar Taylor/Lagrange estimate has been moved out of the nonvacuum
+geometry module into the reusable `D0.Analysis.MidpointQuadrature` module.
+Its theorem
+`D0.Analysis.midpointQuadrature_error_abs_le_of_thirdDerivative_bound`
+retains the same statement: for a scalar `C^3` function with third derivative
+bounded by `M` on the cell, the midpoint increment defect is at most
+`M * h^3 / 24`. The quadratic terms still cancel at the midpoint, and the two
+endpoint remainders still contribute `M * h^3 / 48` each.
+
+`D0.Geometry.NonvacuumBrinkmannStencil` now contains the concrete two-component
+application. `sampledMatterMidpointLocalDefect_abs_le` applies the shared
+calculus theorem to each exact sampled component, and the sampled-history
+theorem composes that result with the existing finite accumulation bound.
+`formal_support.csv` records the reusable analysis module and its geometry
+consumer; the generated `D0.All` import view includes it. The earlier C3
+inventory remains pinned to its original source snapshot and namespace as
+historical evidence. A new two-module compiled inventory and cold-start receipt
+will record the refactored declaration ownership and dependency edge.
+
+The narrow Lean 4.30.0 builds pass for `D0.Analysis.MidpointQuadrature`
+(**3,301/3,301** jobs) and
+`D0.Geometry.NonvacuumBrinkmannStencil` (**3,302/3,302** jobs); the public
+`D0.All` integration build passes (**4,616/4,616** jobs). The move changes
+where the analytic lemma is owned, not its assumptions or scope. It remains a
+componentwise conditional estimate for sampled functions: it neither derives
+the derivative bound from CAR nor identifies the functions with an admitted
+D0 execution, selects native Book/clock/source, proves the 40→3→1 physical
+substitution, or closes the independent 16+24+2 Euler equations.

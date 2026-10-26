@@ -24,6 +24,7 @@ import D0.Algebra.SedenionBrownS3
 import D0.Algebra.SedenionClifford8
 import D0.Algebra.SedenionTower
 import D0.Algebra.Sedenions
+import D0.Analysis.MidpointQuadrature
 import D0.Born
 import D0.Bridge.AdlerWeissBridge
 import D0.Bridge.Assumptions.BellissardGapLabel
