@@ -1893,6 +1893,47 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             comparison["metrics"]["current_expected_source_owner_link_count"], 1
         )
+        lorentz = next(
+            row for row in comparison["cases"]
+            if row["case_id"] == "proper-lorentz-same-orientation-orbit"
+        )
+        owner_detail = next(
+            detail for detail in lorentz["current"]["expected_source_link_details"]
+            if detail["source"].endswith("MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md")
+        )
+        self.assertTrue(owner_detail["candidate_surfaced"])
+        self.assertEqual(
+            owner_detail["owner_status"],
+            "declared_by_exact_assembly_evidence_link",
+        )
+        self.assertEqual(owner_detail["owners"], ["existing CONTROL/main research owner"])
+        self.assertEqual(
+            [result["result_id"] for result in owner_detail["assembly_results"]],
+            ["metric-provenance"],
+        )
+        self.assertEqual(
+            owner_detail["assembly_results"][0]["interface_contract"]["id"],
+            "star-metric-v1",
+        )
+        self.assertEqual(
+            owner_detail["assembly_results"][0]["evidence"][0]["ref"],
+            "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+        )
+        labelled = next(
+            row for row in comparison["cases"]
+            if row["case_id"] == "labelled-native-raising-inverse"
+        )
+        labelled_detail = labelled["current"]["expected_source_link_details"][0]
+        self.assertEqual(
+            labelled_detail["owner_status"], "no_exact_assembly_owner_link"
+        )
+        self.assertEqual(
+            len(labelled_detail["formal_support_locators"]), 3
+        )
+        self.assertTrue(all(
+            link["status"] == "metadata_locator_only"
+            for link in labelled_detail["formal_support_locators"]
+        ))
         self.assertTrue(all(
             row["semantic_review"]["hypothesis_preservation"]
             == "not_assessed_by_search_output"

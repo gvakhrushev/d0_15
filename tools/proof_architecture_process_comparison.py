@@ -139,6 +139,34 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
         expected_owner_links_list = [
             expected_owner_links[key] for key in sorted(expected_owner_links)
         ]
+        expected_source_link_details = []
+        for expected_source in expected:
+            candidate = next((
+                item for item in new_text
+                if proof._normalized_source_path(item.get("source"))
+                == proof._normalized_source_path(expected_source)
+            ), None)
+            if candidate is None:
+                expected_source_link_details.append({
+                    "source": expected_source,
+                    "candidate_surfaced": False,
+                    "owner_status": "candidate_not_surfaced",
+                    "owners": [],
+                    "assembly_results": [],
+                    "formal_support_locators": [],
+                    "source_refs": [],
+                })
+                continue
+            source_links = candidate.get("declared_source_links", {})
+            expected_source_link_details.append({
+                "source": expected_source,
+                "candidate_surfaced": True,
+                "owner_status": source_links.get("owner_status"),
+                "owners": source_links.get("owners", []),
+                "assembly_results": source_links.get("assembly_results", []),
+                "formal_support_locators": source_links.get("formal_support_locators", []),
+                "source_refs": candidate.get("source_refs", []),
+            })
         expected_sources_without_owner_link = sorted(
             source for source in expected if not any(
                 link["source"] == source for link in expected_owner_links_list
@@ -175,6 +203,7 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
                 "text_candidate_count": len(new_text),
                 "expected_source_hits": new_source_hits,
                 "expected_source_owner_links": expected_owner_links_list,
+                "expected_source_link_details": expected_source_link_details,
                 "expected_sources_without_direct_owner_link": expected_sources_without_owner_link,
                 "relevant_text_candidate_count": new_relevant_candidates,
                 "text_candidate_count_not_in_scoped_source_set": (
@@ -210,8 +239,9 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
         "comparison_scope": {
             "legacy": "gr_assembly.search over the existing assembly result records",
             "current": (
-                "proof_architecture search over structured authorities and ten "
-                "bounded text candidates"
+                "proof_architecture search over structured authorities, ten "
+                "bounded text candidates, and exact-path links to existing "
+                "assembly/formal-support records"
             ),
             "questions": (
                 "one identical existing query per real cold-start case, chosen "
