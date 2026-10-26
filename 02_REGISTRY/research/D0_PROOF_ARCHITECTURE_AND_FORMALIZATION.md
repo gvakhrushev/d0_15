@@ -8622,3 +8622,32 @@ kept outside Git. The compact receipt is
 SHA-256 `5e9ea78dc8d4f1829e967e393f1894380e7ce8061fc21e970ac9b837b2462159`.
 This is retrieval and provenance evidence; semantic scope review remains
 manual, and the physical and composition limits above remain open.
+
+### Full joint Fréchet differential on the Julia Lorentz tangent product (26 October 2026)
+
+`D0.Geometry.A4DJuliaLinkPathDifferential` now packages the four
+`IsRoleLorentzTangent` spaces as the product parameter space and defines the
+actual chart-selected Julia endpoint readout along their matrix-exponential
+links. `principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_hasFDerivAt`
+proves one Fréchet derivative for the complete four-role output at the
+identity parameter. Its continuous linear derivative is exposed as
+`roleLorentzTangentEndpointFDeriv`; the companion
+`roleLorentzTangentEndpointFDeriv_apply` states its exact action at each role:
+the role's tangent generator, transposed, applied to the recovered endpoint
+vector. The proof factors through the existing exact Eq. (27)/(28) chart
+recovery and the Fréchet derivative of the matrix exponential at zero.
+
+This consumes the prior pathwise derivative result and removes the need to
+assume a separate one-parameter path for each directional derivative. Its
+domain is precisely the product of the four declared Lorentz tangent
+subspaces, with fixed coframe, column data, and normalized covectors satisfying
+the existing chart hypotheses. It does not prove that the tangent subspace has
+dimension six, give a six-coordinate chart for the whole group, cover links
+outside the identity exponential image, supply the full source's variational
+pullback (31), or select physical endpoint admission or price/source. GR
+closure and independent C0 acceptance remain open.
+
+The narrow module build passed **3,216/3,216 jobs** and the public-import
+`D0.All` build passed **4,585/4,585 jobs** with Lean 4.30.0. A compiled
+declaration inventory and a clean cold-start retrieval receipt for this new
+application are recorded in the following checkpoint.
