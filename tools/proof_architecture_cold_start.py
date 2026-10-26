@@ -40,7 +40,7 @@ CASES: list[dict[str, Any]] = [
             "roleLorentzTangentEndpointFDeriv_apply julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26",
             "roleLorentzTangentParameters_finrank roleLorentzTangent_finrank four Julia links 24 coordinates",
             "principalFrameJuliaJointCoframeEndpointReadoutAlongLorentzTangent_hasDerivAt principalFrameJuliaEndpointChartReadoutAlongLorentzTangentInCoordinates_hasFDerivAt roleLorentzTangentParametersEquivCoordinates same Julia query family 16 coframe 24 Lorentz endpoint RolePair coordinates",
-            "principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history",
+            "principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet",
             "principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt julia_joint_coframe_base_link_frechet_declarations_2026-10-26",
         ],
         "required_refs": [
@@ -53,7 +53,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_base_link_frechet_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_dimension_reuse_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_tangent_path_declarations_2026-10-26.json",
@@ -86,7 +86,7 @@ CASES: list[dict[str, Any]] = [
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
             "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_history_declarations_2026-10-26.json",
         ],
         "required_sources": [
             {

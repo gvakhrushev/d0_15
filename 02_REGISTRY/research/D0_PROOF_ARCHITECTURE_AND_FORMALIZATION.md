@@ -9214,17 +9214,18 @@ The narrow module build passed **2,946/2,946** jobs and the public-import
 `D0.All` build passed **4,585/4,585** jobs with Lean 4.30.0. The Lean-source
 digest is `4a1a705e04e028b14e0b43e0616e5d976ba091bd3137aa140b0b22cb9ec74150`.
 The source remains `D0.Geometry.NonvacuumBrinkmannStencil` under its existing
-explicit-support entry in `formal_support.csv`. A consolidated compiled
-inventory now resolves **215/215** exact declarations across 22 reused modules,
-including the new time-indexed theorem and the current shared-adapter set. This
-provides one source-digest-current inventory for these consumers while leaving
-all earlier per-slice inventories intact as historical snapshots:
-`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_compiled_reuse_inventory_2026-10-26_midpoint_history.json`.
-It resolves **215/215** requested declarations from clean source snapshot
-`7665c4d611132e9737e3e9b9f96ba8b2ae1a8dd7` with source digest
-`4a1a705e04e028b14e0b43e0616e5d976ba091bd3137aa140b0b22cb9ec74150`,
-Lean 4.30.0, and `worktree_dirty=false`; its SHA-256 is
-`0282dfee8cae801ab71d22a64c1c482e49cbdba64794459f62f36a6c2f27f3ce`.
+explicit-support entry in `formal_support.csv`. A targeted compiled inventory
+resolves the module's **21/21** public declarations, including the six new
+time-indexed declarations, from one `D0.All` environment. The shared Julia,
+finite-Gram, CAR/Hodge, partial-trace, topology and source-preparation
+inventories remain pinned to their earlier clean source snapshot
+`f337b30e039efcc1fd30d355df35e7e6bbaf5478` and digest
+`33d522c7340f186f551d2560ec694833548068c528523378d3503b5558c1d21a`; they
+remain historical evidence and are not relabelled as current after this
+unrelated module change. The new target inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_history_declarations_2026-10-26.json`.
+Its clean source snapshot and checksum are recorded after this checkpoint is
+committed.
 
 This extends only the already formalized finite stencil/midpoint component.
 It does not formalize the original CAR construction, the unrestricted 40→3→1
