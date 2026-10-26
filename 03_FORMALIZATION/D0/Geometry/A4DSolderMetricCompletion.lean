@@ -1,5 +1,6 @@
 import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.ArchiveRoleEquivalence
+import D0.Algebra.FiniteGramDerivative
 import D0.Algebra.FiniteGramTangent
 import Mathlib.Analysis.Calculus.FDeriv.Prod
 import Mathlib.Analysis.Calculus.FDeriv.Pow
@@ -346,15 +347,8 @@ local instance : NormedRing RoleMat := Matrix.frobeniusNormedRing
 local instance : NormedAlgebra ℝ RoleMat := Matrix.frobeniusNormedAlgebra
 
 /-- Transpose is an isometry for the Frobenius norm on finite Role matrices. -/
-def j2DetectorMetricPath_transposeIsometry : RoleMat ≃ₗᵢ[ℝ] RoleMat where
-  toLinearEquiv :=
-    { toFun := Matrix.transpose
-      invFun := Matrix.transpose
-      left_inv := by intro M; simp
-      right_inv := by intro M; simp
-      map_add' := by intro M N; exact Matrix.transpose_add M N
-      map_smul' := by intro t M; exact Matrix.transpose_smul t M }
-  norm_map' := Matrix.frobenius_norm_transpose
+def j2DetectorMetricPath_transposeIsometry : RoleMat ≃ₗᵢ[ℝ] RoleMat :=
+  D0.Algebra.finiteMatrixTransposeIsometry
 
 @[simp] theorem j2DetectorMetricPath_transposeIsometry_apply (H : RoleMat) :
     j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.toContinuousLinearMap H =
@@ -362,50 +356,33 @@ def j2DetectorMetricPath_transposeIsometry : RoleMat ≃ₗᵢ[ℝ] RoleMat wher
 
 /-- Continuous linear part of the nonlinear source metric at the flat frame. -/
 def j2DetectorMetricPath_tangent : RoleMat →L[ℝ] RoleMat :=
-  roleLorentzMetric •
-      j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.toContinuousLinearMap +
-    MulOpposite.op (1 : RoleMat) •
-      (ContinuousLinearMap.mul ℝ RoleMat).flip roleLorentzMetric
+  D0.Algebra.finiteGramTangent roleLorentzMetric 1
 
 @[simp] theorem j2DetectorMetricPath_tangent_apply (H : RoleMat) :
     j2DetectorMetricPath_tangent H =
       H * roleLorentzMetric + roleLorentzMetric * H.transpose := by
-  change (roleLorentzMetric •
-      j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.toContinuousLinearMap) H +
-    (MulOpposite.op (1 : RoleMat) •
-      (ContinuousLinearMap.mul ℝ RoleMat).flip roleLorentzMetric) H = _
-  simp only [ContinuousLinearMap.smul_apply,
-    j2DetectorMetricPath_transposeIsometry_apply, op_smul_eq_mul,
-    ContinuousLinearMap.flip_apply, ContinuousLinearMap.mul_apply',
-    smul_eq_mul, mul_one]
-  exact add_comm _ _
+  simp [j2DetectorMetricPath_tangent]
 
 /-- Full Fréchet derivative of the flat-frame metric map in the matrix variable.
 The codomain and domain use the Frobenius norm; the derivative sends `H` to
 `Hη + ηHᵀ`. -/
 theorem j2DetectorMetricPath_hasFDerivAt_flat :
     HasFDerivAt j2DetectorMetricPath j2DetectorMetricPath_tangent 0 := by
-  let hplus : HasFDerivAt (fun H : RoleMat => (1 : RoleMat) + H)
+  have hplus : HasFDerivAt (fun H : RoleMat => (1 : RoleMat) + H)
       (ContinuousLinearMap.id ℝ RoleMat) 0 := by
     exact (hasFDerivAt_id (𝕜 := ℝ) (0 : RoleMat)).const_add (1 : RoleMat)
-  have hright : HasFDerivAt (fun H : RoleMat => (1 + H) * roleLorentzMetric)
-      ((ContinuousLinearMap.mul ℝ RoleMat).flip roleLorentzMetric) 0 := by
-    have h := (((ContinuousLinearMap.mul ℝ RoleMat).flip roleLorentzMetric).hasFDerivAt
-      (x := ((1 : RoleMat) + 0))).comp (0 : RoleMat) hplus
-    simpa using h
-  have htranspose : HasFDerivAt (fun H : RoleMat => (1 + H).transpose)
-      j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.toContinuousLinearMap 0 := by
-    have h := (j2DetectorMetricPath_transposeIsometry.toContinuousLinearEquiv.hasFDerivAt
-      (x := ((1 : RoleMat) + 0))).comp (0 : RoleMat) hplus
-    convert h using 1
-  have hproduct := hright.mul' htranspose
-  have hpath : (fun H : RoleMat => ((1 + H) * roleLorentzMetric) * (1 + H).transpose) =
-      j2DetectorMetricPath := by
-    funext H
+  have houter := D0.Algebra.finiteGram_hasFDerivAt
+    roleLorentzMetric (1 : RoleMat)
+  have houter' : HasFDerivAt
+      (fun X : RoleMat => D0.Algebra.finiteGram roleLorentzMetric X)
+      (D0.Algebra.finiteGramTangent roleLorentzMetric 1) (1 + 0) := by
+    simpa using houter
+  have hcomp := houter'.comp (0 : RoleMat) hplus
+  have hpath : (fun H : RoleMat =>
+      D0.Algebra.finiteGram roleLorentzMetric (1 + H)) = j2DetectorMetricPath := by
     rfl
   rw [← hpath]
-  convert hproduct using 1
-  simp [j2DetectorMetricPath_tangent]
+  simpa [j2DetectorMetricPath_tangent] using hcomp
 
 end J2MetricFullDerivative
 
