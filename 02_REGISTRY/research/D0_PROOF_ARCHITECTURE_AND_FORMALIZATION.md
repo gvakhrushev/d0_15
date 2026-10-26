@@ -8379,9 +8379,14 @@ admission, actual same-execution endpoint selection, the 24 link derivatives,
 full all-jet pullback, complete price/source selection, #334 acceptance,
 `GR_closed`, and independent C0 acceptance remain open.
 
-The pre-correction full cold-start replay found all required sources in 23/24
-search cases; the Julia case missed the pinned §8.4 source on its Eq. (26)
-query. After adding the Eq. (27), Eq. (26), and three exact inventory queries,
-the targeted 24-query Julia replay found all **15/15** required sources. The
-full 24-case aggregate has not been replayed on these corrected inputs, so no
-aggregate pass is claimed.
+The first full replay after adding the Eq. (27), Eq. (26), and three exact
+inventory queries ran at clean commit
+`6e9d5f322d6e569ebdd2aa8e73e9cbabaefbf308`: all **24/24** search cases found
+their required sources, the **25-case** benchmark passed, all **146** required
+source references were found, and the source-change/unrelated-prose impact
+control passed. Review of that run showed that the semantic Eq. (26) query
+ranked older documents ahead of the new countercontrol. The query is now
+`principalFrameJuliaEq26_blind_to_ABSignFlip_links vacuum-column endpoint
+blindness`; it ranks this artifact and the Lean module first and second. The
+targeted 24-query Julia case still finds all **15/15** required sources. The
+full aggregate replay on this revised query is pending.

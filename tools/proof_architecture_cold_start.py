@@ -483,7 +483,7 @@ CASES: list[dict[str, Any]] = [
             "principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz hΓ hΛ",
             "principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz hα hShift",
             "archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective Eq 27 nonzero Lorentz norm q Gamma_x(u) recover U exact CAR raising query all 16 grades",
-            "Eq 26 X|0>=C(u)|0> vacuum весь вектор u читается без знания M Lambda M тождественно на grade0",
+            "principalFrameJuliaEq26_blind_to_ABSignFlip_links vacuum-column endpoint blindness",
             "archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective julia_nonnull_endpoint_map_injectivity_declaration_2026-10-26",
             "principalFrameJuliaEq26_blind_to_ABSignFlip_links julia_eq26_link_blindness_declaration_2026-10-26",
             "principalFrameJuliaNonNullQuery_separates_ABSignFlip_links julia_nonnull_query_link_separation_declaration_2026-10-26",
