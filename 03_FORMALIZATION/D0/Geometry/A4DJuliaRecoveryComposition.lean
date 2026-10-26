@@ -50,6 +50,19 @@ theorem archiveExteriorFrameLiftRoleReadout_frameLift
   rw [archiveExteriorCreator_on_vacuum_eq_ι]
   exact ExteriorAlgebra.ι_leftInverse (M v)
 
+/-- The Eq. (27) degree-one endpoint-map readout applied to a complete CAR
+query. It is defined for any operator; the recovery theorem below supplies the
+non-null, isometry, and determinant hypotheses under which it returns the
+actual endpoint map. -/
+def archiveJuliaSourceEq27EndpointMapReadout
+    (u : RoleSpace) (Q : ArchiveJuliaQueryOperator) :
+    RoleSpace → RoleSpace :=
+  archiveExteriorFrameLiftRoleReadout
+    ((archiveJuliaSourceLorentzForm u u)⁻¹ •
+      (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
+        (Q - archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+          (Q.comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap)))
+
 /-- Eq. (27) alone recovers the endpoint role map on its non-null chart. The
 determinant-one hypothesis is used only by the owned Eq. (27) frame-lift
 recovery; this degree-one readout adds no Eq. (28) covector or branch premise. -/
@@ -59,13 +72,9 @@ theorem archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_o
       archiveJuliaSourceLorentzForm x y)
     (hDet : LinearMap.det M.toLinearMap = 1)
     (hq : archiveJuliaSourceLorentzForm u u ≠ 0) :
-    archiveExteriorFrameLiftRoleReadout
-      ((archiveJuliaSourceLorentzForm u u)⁻¹ •
-        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
-          (archiveJuliaCARRaisingQuery u M -
-            archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-              ((archiveJuliaCARRaisingQuery u M).comp
-                archiveJuliaSourceVolumeEquiv.symm.toLinearMap))) = M := by
+    archiveJuliaSourceEq27EndpointMapReadout u
+      (archiveJuliaCARRaisingQuery u M) = M := by
+  unfold archiveJuliaSourceEq27EndpointMapReadout
   rw [← archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_det_one
     u M hIso hDet hq]
   exact archiveExteriorFrameLiftRoleReadout_frameLift M
@@ -259,26 +268,23 @@ theorem archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective
     (hQuery : archiveJuliaCARRaisingQuery u M =
       archiveJuliaCARRaisingQuery u N) :
     M = N := by
-  let recover : ArchiveJuliaQueryOperator → RoleSpace → RoleSpace := fun Q =>
-    archiveExteriorFrameLiftRoleReadout
-      ((archiveJuliaSourceLorentzForm u u)⁻¹ •
-        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
-          (Q - archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-            (Q.comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap)))
-  have hM : recover (archiveJuliaCARRaisingQuery u M) = M := by
-    simpa [recover] using
-      archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_one
-        u M hIsoM hDetM hq
-  have hN : recover (archiveJuliaCARRaisingQuery u N) = N := by
-    simpa [recover] using
-      archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_one
-        u N hIsoN hDetN hq
+  have hM : archiveJuliaSourceEq27EndpointMapReadout u
+      (archiveJuliaCARRaisingQuery u M) = M :=
+    archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_one
+      u M hIsoM hDetM hq
+  have hN : archiveJuliaSourceEq27EndpointMapReadout u
+      (archiveJuliaCARRaisingQuery u N) = N :=
+    archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_one
+      u N hIsoN hDetN hq
   ext x r
   calc
-    M x r = recover (archiveJuliaCARRaisingQuery u M) x r :=
+    M x r = archiveJuliaSourceEq27EndpointMapReadout u
+        (archiveJuliaCARRaisingQuery u M) x r :=
       congrFun (congrFun hM.symm x) r
-    _ = recover (archiveJuliaCARRaisingQuery u N) x r :=
-      congrArg (fun Q => recover Q x r) hQuery
+    _ = archiveJuliaSourceEq27EndpointMapReadout u
+        (archiveJuliaCARRaisingQuery u N) x r :=
+      congrArg (fun Q => archiveJuliaSourceEq27EndpointMapReadout u Q x r)
+        hQuery
     _ = N x r := congrFun (congrFun hN x) r
 
 private def archiveJuliaABSignFlip : Matrix Role Role ℝ :=
@@ -396,21 +402,11 @@ theorem principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage
         ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
         ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ))) ≠ 0 ∧
       (LinearMap.det (M r).toLinearMap = 1 →
-      archiveExteriorFrameLiftRoleReadout
-        ((archiveJuliaSourceLorentzForm
+        archiveJuliaSourceEq27EndpointMapReadout
           ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
-          ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ))))⁻¹ •
-          (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm
-            ((principalFrameColumnMatrix F L).mulVec
-              (Pi.single r (1 : ℝ)))).comp
-            (archiveJuliaCARRaisingQuery
-                ((principalFrameColumnMatrix F L).mulVec
-                  (Pi.single r (1 : ℝ))) (M r) -
-              archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-                ((archiveJuliaCARRaisingQuery
-                    ((principalFrameColumnMatrix F L).mulVec
-                      (Pi.single r (1 : ℝ))) (M r)).comp
-                  archiveJuliaSourceVolumeEquiv.symm.toLinearMap))) = M r)) ∨
+          (archiveJuliaCARRaisingQuery
+            ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
+            (M r)) = M r)) ∨
     (archiveJuliaSourceLorentzForm
         ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
         ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ))) = 0 ∧
@@ -447,13 +443,8 @@ def principalFrameJuliaEndpointChartCoverage
   exact
     (archiveJuliaSourceLorentzForm u u ≠ 0 ∧
       (LinearMap.det (M r).toLinearMap = 1 →
-        archiveExteriorFrameLiftRoleReadout
-          ((archiveJuliaSourceLorentzForm u u)⁻¹ •
-            (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
-              (archiveJuliaCARRaisingQuery u (M r) -
-                archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-                  ((archiveJuliaCARRaisingQuery u (M r)).comp
-                    archiveJuliaSourceVolumeEquiv.symm.toLinearMap))) = M r)) ∨
+        archiveJuliaSourceEq27EndpointMapReadout u
+          (archiveJuliaCARRaisingQuery u (M r)) = M r)) ∨
     (archiveJuliaSourceLorentzForm u u = 0 ∧
       principalFrameObservedNullQueryFrameReadout
         (fun _ => archiveJuliaSourceLorentzForm)
@@ -492,11 +483,7 @@ theorem archiveJuliaSourceQuery_nonNull_open_chart_joint_recovery
     (principalFrameObservedNullQueryFrameReadout
       (fun _ => archiveJuliaSourceLorentzForm)
       (fun _ => archiveJuliaSourceLorentzForm) X α r = M) ∧
-    (archiveExteriorFrameLiftRoleReadout
-      ((archiveJuliaSourceLorentzForm u u)⁻¹ •
-        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
-          (X r - archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-            ((X r).comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap))) = M) ∧
+    (archiveJuliaSourceEq27EndpointMapReadout u (X r) = M) ∧
     (archiveExteriorFrameLift M =
       (archiveJuliaSourceLorentzForm u u)⁻¹ •
         (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
@@ -524,13 +511,10 @@ theorem archiveJuliaSourceQuery_nonNull_open_chart_joint_recovery
           (X r - archiveJuliaSourceVolumeEquiv.toLinearMap.comp
             ((X r).comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap)) := by
     simpa only [← hQueryCAR] using hEq27
-  have hEq27Readout : archiveExteriorFrameLiftRoleReadout
-      ((archiveJuliaSourceLorentzForm u u)⁻¹ •
-        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
-          (X r - archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-            ((X r).comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap))) = M := by
-    rw [← hEq27']
-    exact archiveExteriorFrameLiftRoleReadout_frameLift M
+  have hEq27Readout : archiveJuliaSourceEq27EndpointMapReadout u (X r) = M := by
+    rw [hQueryCAR]
+    exact archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_one
+      u M hIso hDet hq
   exact ⟨hEq28, hEq27Readout, hEq27'⟩
 
 /-- Concrete principal-frame instance of the joint recovery. Eq. (26)'s
