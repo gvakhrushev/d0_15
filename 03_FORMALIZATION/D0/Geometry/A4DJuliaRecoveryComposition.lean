@@ -302,6 +302,31 @@ theorem principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage
       archiveJuliaSourceLorentzForm_symmetric
       archiveJuliaSourceLorentzForm_nondegenerate hIso hα hu hq0
 
+/-- Reusable proposition for the two exact endpoint-recovery charts of one
+role query. A non-null source shift uses the Eq. (27) decoder when the endpoint
+determinant is one; a null shift uses the Eq. (28) query decoder. -/
+def principalFrameJuliaEndpointChartCoverage
+    (F L : Matrix Role Role ℝ)
+    (M : Role → RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (α : Role → Module.Dual ℝ RoleSpace)
+    (r : Role) : Prop := by
+  let u := (principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ))
+  exact
+    (archiveJuliaSourceLorentzForm u u ≠ 0 ∧
+      (LinearMap.det (M r).toLinearMap = 1 →
+        archiveExteriorFrameLiftRoleReadout
+          ((archiveJuliaSourceLorentzForm u u)⁻¹ •
+            (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
+              (archiveJuliaCARRaisingQuery u (M r) -
+                archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+                  ((archiveJuliaCARRaisingQuery u (M r)).comp
+                    archiveJuliaSourceVolumeEquiv.symm.toLinearMap))) = M r)) ∨
+    (archiveJuliaSourceLorentzForm u u = 0 ∧
+      principalFrameObservedNullQueryFrameReadout
+        (fun _ => archiveJuliaSourceLorentzForm)
+        (fun _ => archiveJuliaSourceLorentzForm)
+        (principalFrameJuliaQueryFamily F L M) α r = M r)
+
 /-- Joint Eq. (27)/(28) application for one actual role query. The supplied
 `hQuery` and `hColumn` bind the operator and full vacuum readout to the same
 shift and endpoint map. The conclusion records the Eq. (28) endpoint decoder,
@@ -597,6 +622,46 @@ theorem principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper
     principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz
       F Γ.transpose Λ hΛ hDet α r hInputNorm hα hCovector hBranch
   exact ⟨hCoframe, hEndpoint.1⟩
+
+/-- Whole-family version of the coframe/endpoint composition. The common
+Eq. (30a) readout recovers the complete 16-entry coframe matrix, while each
+role query is placed in one of the existing endpoint charts: Eq. (27) for a
+non-null shift and Eq. (28) for a null shift. The explicit nonzero-shift and
+normalized-covector assumptions supply the null-chart hypotheses. This is a
+finite algebraic recovery result; it does not establish physical admission or
+differentiate the full link field. -/
+theorem principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz
+    (F Γ : Matrix Role Role ℝ)
+    (Λ : Role → Matrix Role Role ℝ)
+    (hΓ : IsRoleLorentz Γ)
+    (hΛ : ∀ r, IsRoleLorentz (Λ r))
+    (hDet : ∀ r, Matrix.det (Λ r) = 1)
+    (α : Role → Module.Dual ℝ RoleSpace)
+    (hα : ∀ r, α r ((principalFrameColumnMatrix F Γ.transpose).mulVec
+      (Pi.single r (1 : ℝ))) = 1)
+    (hShift : ∀ r, (principalFrameColumnMatrix F Γ.transpose).mulVec
+      (Pi.single r (1 : ℝ)) ≠ 0) :
+    (principalFrameInverseCoframeReadout
+      (principalFrameObservedQueryColumnMatrix
+        (principalFrameJuliaQueryFamily F Γ.transpose
+          (archiveJuliaProperRoleLorentzFamily Λ hDet))) * Γ.transpose = F) ∧
+    (∀ r, principalFrameJuliaEndpointChartCoverage F Γ.transpose
+      (archiveJuliaProperRoleLorentzFamily Λ hDet) α r) := by
+  have hCoframe := principalFrameJuliaQueryFamily_recoveredInverseCoframe
+    F Γ (archiveJuliaProperRoleLorentzFamily Λ hDet) hΓ
+  refine ⟨hCoframe, ?_⟩
+  intro r
+  have hIso : ∀ x y,
+      archiveJuliaSourceLorentzForm
+        ((archiveJuliaProperRoleLorentzFamily Λ hDet r) x)
+        ((archiveJuliaProperRoleLorentzFamily Λ hDet r) y) =
+      archiveJuliaSourceLorentzForm x y := by
+    simpa only [archiveJuliaProperRoleLorentzFamily] using
+      archiveJuliaProperRoleLorentzEquiv_form_isometry (Λ r) (hΛ r) (hDet r)
+  simpa only [principalFrameJuliaEndpointChartCoverage] using
+    principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage
+      F Γ.transpose (archiveJuliaProperRoleLorentzFamily Λ hDet) α r
+      hIso (hα r) (hShift r)
 
 end
 end D0.Geometry

@@ -8288,3 +8288,24 @@ prose impact control passed. The 8,019,845-byte replay output has SHA-256
 compact receipt is
 `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_joint_coframe_endpoint.json`,
 SHA-256 `9ef5eaa356e8df48c7f785e12d9f68c9baebec0953ded3cce3b19eb19c5b820f`.
+
+### All-role chart coverage with the shared coframe readout (26 October 2026)
+
+`principalFrameJuliaEndpointChartCoverage` names the existing per-role
+disjunction: the Eq. (27) degree-one decoder applies on a non-null shift when
+the endpoint determinant is one; the Eq. (28) query decoder applies on the
+null shift. The new
+`D0.Geometry.principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz`
+composes that owned coverage theorem with the shared Eq. (30a) coframe
+readout. It returns one transported 16-entry coframe identity and, for every
+role query of the same constructed family, the corresponding valid endpoint
+chart. The rolewise nonzero-shift and normalized-covector conditions remain
+explicit, as do proper row-action Lorentz and determinant-one endpoint
+matrices.
+
+The narrow build of `D0.Geometry.A4DJuliaRecoveryComposition` passed
+**3,127/3,127 jobs**. This composes the static finite readouts across the
+whole role-indexed query family. It does not prove derivatives in the link
+field, the 24 link directions or the full all-jet pullback, and does not
+establish physical admission, complete price/source selection, GR closure or
+C0 acceptance.
