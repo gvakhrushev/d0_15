@@ -21,11 +21,14 @@ displayed harmonic quadratic/cubic family, sends the radial quadratic to
 four, and therefore reads the profile source as `-4 * coupling * energy`.
 It also proves that the actual finite two-component midpoint update has
 forward gradient exactly equal to its midpoint rate, so its norm is the
-energy used by that readout.
+energy used by that readout. For a sampled exact history, it decomposes the
+global midpoint error into local increment defects and composes a uniform
+per-step defect bound into a uniform bound at every mesh point.
 
 This is an exact finite algebraic application. It does not formalize the
 original CAR construction, the 40 varied Cartan equations, all 16+24+2
-Euler rows, refinement error bounds, or selection of a physical Book,
+Euler rows, or the local C^3 midpoint quadrature estimate needed to discharge
+the per-step refinement hypothesis. It does not select a physical Book,
 clock, source, or execution.
 -/
 
@@ -193,6 +196,101 @@ theorem twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum
   intro k hk
   exact twoComponentMatterNormSq_midpointHistoryGradient_eq_rate
     h rate base k hh
+
+/--
+The local midpoint quadrature defect in one real component: sampled increment
+minus the exact increment between adjacent values.
+-/
+def finiteMatterMidpointLocalDefect
+    (h : ℝ) (rate exact : ℕ → Fin 2 → ℝ) (n : ℕ) (i : Fin 2) : ℝ :=
+  h * rate n i - (exact (n + 1) i - exact n i)
+
+/--
+The accumulated finite-history error is exactly the sum of its local
+midpoint increment defects. No smoothness or error estimate is assumed.
+-/
+theorem finiteMatterMidpointHistory_error_eq_localDefectSum
+    (h : ℝ) (rate exact : ℕ → Fin 2 → ℝ) (n : ℕ) (i : Fin 2) :
+    finiteMatterMidpointHistory h rate (exact 0) n i - exact n i =
+      ∑ k ∈ Finset.range n, finiteMatterMidpointLocalDefect h rate exact k i := by
+  induction n with
+  | zero => simp [finiteMatterMidpointHistory]
+  | succ n ih =>
+      calc
+        finiteMatterMidpointHistory h rate (exact 0) (n + 1) i - exact (n + 1) i =
+            (finiteMatterMidpointHistory h rate (exact 0) n i - exact n i) +
+              finiteMatterMidpointLocalDefect h rate exact n i := by
+                rw [finiteMatterMidpointHistory_next]
+                simp [finiteMatterMidpointLocalDefect]
+                ring
+        _ = (∑ k ∈ Finset.range n,
+              finiteMatterMidpointLocalDefect h rate exact k i) +
+              finiteMatterMidpointLocalDefect h rate exact n i := by rw [ih]
+        _ = ∑ k ∈ Finset.range (n + 1),
+              finiteMatterMidpointLocalDefect h rate exact k i := by
+                rw [Finset.sum_range_succ]
+
+/-- The absolute accumulated error is bounded by the sum of absolute local defects. -/
+theorem finiteMatterMidpointHistory_error_abs_le_localDefectSum
+    (h : ℝ) (rate exact : ℕ → Fin 2 → ℝ) (n : ℕ) (i : Fin 2) :
+    |finiteMatterMidpointHistory h rate (exact 0) n i - exact n i| ≤
+      ∑ k ∈ Finset.range n, |finiteMatterMidpointLocalDefect h rate exact k i| := by
+  rw [finiteMatterMidpointHistory_error_eq_localDefectSum]
+  exact Finset.abs_sum_le_sum_abs _ _
+
+/--
+If every step has defect at most `C`, the error after `n` steps is at most
+`n * C`. This is the discrete composition step in the midpoint refinement
+estimate; the local calculus estimate remains a separate premise.
+-/
+theorem finiteMatterMidpointHistory_error_abs_le_localDefectBound
+    (h C : ℝ) (rate exact : ℕ → Fin 2 → ℝ) (n : ℕ) (i : Fin 2)
+    (hLocal : ∀ k ∈ Finset.range n,
+      |finiteMatterMidpointLocalDefect h rate exact k i| ≤ C) :
+    |finiteMatterMidpointHistory h rate (exact 0) n i - exact n i| ≤
+      (n : ℝ) * C := by
+  calc
+    |finiteMatterMidpointHistory h rate (exact 0) n i - exact n i|
+        ≤ ∑ k ∈ Finset.range n,
+            |finiteMatterMidpointLocalDefect h rate exact k i| :=
+          finiteMatterMidpointHistory_error_abs_le_localDefectSum h rate exact n i
+    _ ≤ ∑ _k ∈ Finset.range n, C := by
+          apply Finset.sum_le_sum
+          intro k hk
+          exact hLocal k hk
+    _ = (n : ℝ) * C := by simp
+
+/--
+The standard `|I| * M * h^2 / 24` global rate follows from the per-cell
+`M * h^3 / 24` midpoint defect bound, uniformly at every grid point and for
+both real matter components. The theorem composes that local estimate; it
+does not prove it from differentiability hypotheses.
+-/
+theorem finiteMatterMidpointHistory_error_le_refinementBound
+    (h M duration : ℝ) (rate exact : ℕ → Fin 2 → ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M)
+    (h_duration : (N : ℝ) * h = duration)
+    (hLocal : ∀ k < N, ∀ i : Fin 2,
+      |finiteMatterMidpointLocalDefect h rate exact k i| ≤ M * h ^ 3 / 24) :
+    ∀ n ≤ N, ∀ i : Fin 2,
+      |finiteMatterMidpointHistory h rate (exact 0) n i - exact n i| ≤
+        duration * M * h ^ 2 / 24 := by
+  intro n hn i
+  have hPrefix : ∀ k ∈ Finset.range n,
+      |finiteMatterMidpointLocalDefect h rate exact k i| ≤ M * h ^ 3 / 24 := by
+    intro k hk
+    exact hLocal k (Finset.mem_range.mp hk |>.trans_le hn) i
+  have hCount := finiteMatterMidpointHistory_error_abs_le_localDefectBound
+    h (M * h ^ 3 / 24) rate exact n i hPrefix
+  have hCell_nonneg : 0 ≤ M * h ^ 3 / 24 := by positivity
+  calc
+    |finiteMatterMidpointHistory h rate (exact 0) n i - exact n i|
+        ≤ (n : ℝ) * (M * h ^ 3 / 24) := hCount
+    _ ≤ (N : ℝ) * (M * h ^ 3 / 24) := by
+          exact mul_le_mul_of_nonneg_right (Nat.cast_le.mpr hn) hCell_nonneg
+    _ = duration * M * h ^ 2 / 24 := by
+          rw [← h_duration]
+          ring
 
 /-- The time-indexed Brinkmann profile uses the rate of that same history step. -/
 def finiteTimeNonvacuumBrinkmannProfile
