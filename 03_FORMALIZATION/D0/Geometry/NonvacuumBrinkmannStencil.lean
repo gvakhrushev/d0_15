@@ -19,9 +19,10 @@ nonvacuum recovery case, source-pinned at main commit
 `02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`,
 §§7.1–7.2. The corresponding unmerged scientific-owner source is pinned at
 PR #334 commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, same path, blob
-`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`. That version gives the explicit
-CAR-slack threshold in Eq. (24); this module formalizes only the componentwise
-midpoint defect and finite-stencil source identities, not the slack conclusion.
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`. That version gives the vector-norm
+CAR-slack threshold in Eq. (24). This module also proves a conservative
+componentwise sufficient condition for positivity of the two-component
+complement amplitude; it does not prove Eq. (24)'s vector estimate or threshold.
 
 It proves that the centered five-point transverse stencil annihilates the
 displayed harmonic quadratic/cubic family, sends the radial quadratic to
@@ -34,9 +35,9 @@ that estimate into a uniform second-order error bound at every mesh point.
 
 This is an exact finite algebraic and calculus application. It does not
 formalize the original CAR construction, the 40 varied Cartan equations, or
-all 16+24+2 Euler rows. The C^3 estimate is conditional on a supplied bound
-for the same sampled component functions; it does not select a physical Book,
-clock, source, or execution.
+all 16+24+2 Euler rows. Its C^3 estimate and complementary-amplitude criterion
+are conditional on supplied component bounds; it does not select a physical
+Book, clock, source, or execution.
 -/
 
 /-- The centered five-point transverse Laplacian with nonzero mesh width. -/
@@ -367,6 +368,100 @@ theorem sampledMatterMidpointHistory_error_le_refinementBound
   intro k hk i
   exact sampledMatterMidpointLocalDefect_abs_le ψ x₀ h M duration N k i
     h_nonneg h_duration hk hC3 hThird
+
+/-- The radicand of the complementary amplitude in a two-component CAR record. -/
+def twoComponentCARComplementRadicand (p : ℝ) (v : Fin 2 → ℝ) : ℝ :=
+  1 - p - twoComponentMatterNormSq v
+
+/-- The nonnegative square-root representative of the two-component CAR complement. -/
+def twoComponentCARComplementAmplitude (p : ℝ) (v : Fin 2 → ℝ) : ℝ :=
+  Real.sqrt (twoComponentCARComplementRadicand p v)
+
+/-- A uniform component bound controls the squared two-component Euclidean norm. -/
+theorem twoComponentMatterNormSq_le_two_mul_sq_of_abs_le
+    (v : Fin 2 → ℝ) (B : ℝ) (hv : ∀ i : Fin 2, |v i| ≤ B) :
+    twoComponentMatterNormSq v ≤ 2 * B ^ 2 := by
+  unfold twoComponentMatterNormSq
+  calc
+    (∑ i : Fin 2, v i ^ 2) ≤ ∑ _i : Fin 2, B ^ 2 := by
+      apply Finset.sum_le_sum
+      intro i hi
+      have habs := abs_le.mp (hv i)
+      have hleft : 0 ≤ B - v i := by linarith
+      have hright : 0 ≤ B + v i := by linarith
+      nlinarith [mul_nonneg hleft hright]
+    _ = 2 * B ^ 2 := by simp
+
+/--
+The existing componentwise midpoint estimate implies a conservative CAR
+complement bound. If each continuum component is bounded by `A`, and each
+component's accumulated history error is bounded by `B`, then the squared
+two-component amplitude is at most `2 * (A + B)^2`. This is a componentwise
+sufficient condition, not the vector-norm estimate in the source's Eq. (24).
+-/
+theorem sampledMatterMidpointCARComplement_positive_of_componentwiseSlack
+    (ψ : ℝ → Fin 2 → ℝ) (x₀ h M duration A p : ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
+    (h_duration : (N : ℝ) * h = duration)
+    (hC3 : ∀ i : Fin 2, ContDiff ℝ 3 (fun t : ℝ => ψ t i))
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ∀ i : Fin 2,
+      |iteratedDeriv 3 (fun u : ℝ => ψ u i) t| ≤ M)
+    (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ∀ i : Fin 2,
+      |ψ t i| ≤ A)
+    (hSlack : 2 * (A + duration * M * h ^ 2 / 24) ^ 2 < 1 - p) :
+    ∀ n ≤ N,
+      0 < twoComponentCARComplementAmplitude p
+        (finiteMatterMidpointHistory h (sampledMatterMidpointRate ψ x₀ h)
+          (sampledMatterExactValues ψ x₀ h 0) n) := by
+  have hduration_nonneg : 0 ≤ duration := by
+    rw [← h_duration]
+    positivity
+  have hErrorBound_nonneg : 0 ≤ duration * M * h ^ 2 / 24 := by
+    positivity
+  have hComponentBound_nonneg : 0 ≤ A + duration * M * h ^ 2 / 24 := by
+    positivity
+  have hHistoryError :=
+    sampledMatterMidpointHistory_error_le_refinementBound
+      ψ x₀ h M duration N h_nonneg M_nonneg h_duration hC3 hThird
+  intro n hn
+  have hnGrid : x₀ + (n : ℝ) * h ∈ Set.Icc x₀ (x₀ + duration) := by
+    constructor
+    · exact le_add_of_nonneg_right (mul_nonneg (Nat.cast_nonneg n) h_nonneg)
+    · rw [← h_duration]
+      have hn' : (n : ℝ) ≤ (N : ℝ) := Nat.cast_le.mpr hn
+      nlinarith [mul_le_mul_of_nonneg_right hn' h_nonneg]
+  have hHistoryComponent : ∀ i : Fin 2,
+      |finiteMatterMidpointHistory h (sampledMatterMidpointRate ψ x₀ h)
+          (sampledMatterExactValues ψ x₀ h 0) n i| ≤
+        A + duration * M * h ^ 2 / 24 := by
+    intro i
+    have hApprox := hHistoryError n hn i
+    have hExact := hEnvelope (x₀ + (n : ℝ) * h) hnGrid i
+    calc
+      |finiteMatterMidpointHistory h (sampledMatterMidpointRate ψ x₀ h)
+          (sampledMatterExactValues ψ x₀ h 0) n i| =
+        |(finiteMatterMidpointHistory h (sampledMatterMidpointRate ψ x₀ h)
+            (sampledMatterExactValues ψ x₀ h 0) n i -
+              sampledMatterExactValues ψ x₀ h n i) +
+          sampledMatterExactValues ψ x₀ h n i| := by ring_nf
+      _ ≤
+        |finiteMatterMidpointHistory h (sampledMatterMidpointRate ψ x₀ h)
+            (sampledMatterExactValues ψ x₀ h 0) n i -
+              sampledMatterExactValues ψ x₀ h n i| +
+          |sampledMatterExactValues ψ x₀ h n i| := abs_add_le _ _
+      _ ≤ duration * M * h ^ 2 / 24 + A := add_le_add hApprox hExact
+      _ = A + duration * M * h ^ 2 / 24 := by ring
+  have hHistoryNorm := twoComponentMatterNormSq_le_two_mul_sq_of_abs_le
+    (finiteMatterMidpointHistory h (sampledMatterMidpointRate ψ x₀ h)
+      (sampledMatterExactValues ψ x₀ h 0) n)
+    (A + duration * M * h ^ 2 / 24) hHistoryComponent
+  have hRadicand :
+      0 < twoComponentCARComplementRadicand p
+        (finiteMatterMidpointHistory h (sampledMatterMidpointRate ψ x₀ h)
+          (sampledMatterExactValues ψ x₀ h 0) n) := by
+    unfold twoComponentCARComplementRadicand
+    linarith
+  exact Real.sqrt_pos.2 hRadicand
 
 /-- The time-indexed Brinkmann profile uses the rate of that same history step. -/
 def finiteTimeNonvacuumBrinkmannProfile
