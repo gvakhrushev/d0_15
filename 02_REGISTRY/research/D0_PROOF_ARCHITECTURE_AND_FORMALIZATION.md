@@ -8232,3 +8232,15 @@ This is a left inverse only in the fixed-link coframe sector. It does not
 recover or differentiate the 24 Lorentz-link directions, prove the owner's
 full joint all-jet inverse, or close its physical/application premises. No
 claim or C0 disposition changes.
+
+The updated exact-name cold-start replay at clean commit
+`3af807498d053b7cea39f0a987e9cec9d5907749` finds sources in **24/24** cases,
+passes the **25-case** benchmark, checks **141** required source references,
+and passes the source-change/unrelated-prose impact control. All **10/10**
+required sources in the Julia case are found. The exact theorem-name query
+ranks the compiled Lean module and the `D0.All` declaration inventory first
+and second. The 7,986,086-byte output has SHA-256
+`28c1a5baf236ebc409fd47d8505c1b9cfa3b24182f460993c5dd18f1ac139b4c`; its
+compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_recovered_identity.json`,
+SHA-256 `f1766fe681f650747185d87cb574e6b7c1230ed74003932ee0872d682f8b9271`.
