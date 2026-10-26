@@ -8451,3 +8451,50 @@ The source owner remains pinned to #334 commit
 prove the 24 link derivatives, full all-jet pullback, physical admission,
 complete price/source selection, #334 acceptance, `GR_closed`, or independent
 C0 acceptance.
+
+### Chart-complete pathwise derivative recovery for endpoint links (26 October 2026)
+
+The next link-side application is now compiled in
+`D0.Geometry.A4DJuliaLinkPathDifferential`. Its canonical
+`principalFrameJuliaEndpointChartReadout` chooses the owned Eq. (27) decoder
+off the null locus and the observed-query Eq. (28) decoder on the null locus.
+`principalFrameJuliaEndpointChartReadout_eq` proves that this selected
+readout returns each actual role endpoint `M r` for the same constructed
+Julia query family, using the existing two-chart coverage theorem. It keeps
+the source-form isometry, determinant-one, normalized covector, and nonzero
+shift assumptions explicit; on the null branch, the existing coverage proof
+derives the projected-covector and positive-branch conditions.
+
+`principalFrameJuliaEndpointChartReadout_hasDerivAt_of_properRoleLorentzPath`
+then considers any differentiable path of four role-indexed proper-Lorentz
+endpoint matrices, with the coframe fixed and each link allowed to vary
+independently. For every role and input vector, when the path remains
+Lorentz, determinant one, and inside the same nonzero-shift charts, the
+query-to-readout path has exactly the derivative of that endpoint acting on
+the vector. The proof uses the same concrete CAR query and chart-selected
+decoder at each path parameter, covering both non-null Eq. (27) and nonzero
+null Eq. (28) cases.
+
+The narrow module build passed **3,208/3,208 jobs**; the current full
+`D0.All` integration build passed **4,583/4,583 jobs** with Lean 4.30.0.
+The compiled inventory for the new definition and two theorems was extracted
+through public import `D0.All` at clean snapshot
+`38c3bb5be20c7af7ea18e5a0aee274356e7bf7cd` (`worktree_dirty=false`). Its Lean
+source digest is
+`35c8dbe5f7e0f8006364508736c950595dc634d78ca39326b7e90fe68c7287ba`,
+collector SHA-256
+`96ac1f819ff971e6343f568ec4dd3753e46afcf549fc04691eff8b4f8cb9ee1b`, and
+inventory SHA-256
+`3232acc242711e89f1f2ff85046a97601cf7c1fe0cedbd25cbd973336614a3e3` at
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json`.
+The declaration axiom footprints are recorded individually; the two proof
+declarations inherit the already-owned CAR `native_decide` dependency along
+with `Classical.choice`, `Quot.sound`, and `propext`.
+
+This is a pathwise derivative composition for the endpoint-link block. It
+does not exhibit a local six-coordinate chart for each Lorentz link, prove
+that every tangent is integrated by a path in Lean, vary coframe and links
+simultaneously, or establish the source's full joint `D R D Φ = I` and
+variational pullback (31). Physical endpoint/query admission, complete
+price/source selection, #334 acceptance, `GR_closed`, and independent C0
+acceptance remain open.
