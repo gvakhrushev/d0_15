@@ -1898,7 +1898,12 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             set(joint_frechet["axioms"]),
-            {"Classical.choice", "Quot.sound", "propext"},
+            {
+                "Classical.choice",
+                "Quot.sound",
+                "propext",
+                "_private.D0.Geometry.ArchiveJuliaRaisingOperatorReadout.0.D0.Geometry.archiveCreatorPermSign._native.native_decide.ax_1_1",
+            },
         )
         inventory = json.loads(coordinate_inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
