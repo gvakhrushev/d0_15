@@ -487,7 +487,7 @@ CASES: list[dict[str, Any]] = [
             "archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective julia_nonnull_endpoint_map_injectivity_declaration_2026-10-26",
             "principalFrameJuliaEq26_blind_to_ABSignFlip_links julia_eq26_link_blindness_declaration_2026-10-26",
             "principalFrameJuliaNonNullQuery_separates_ABSignFlip_links julia_nonnull_query_link_separation_declaration_2026-10-26",
-            "archiveJuliaSourceEq27EndpointMapReadout canonical complete-query Eq 27 endpoint decoder julia_eq27_endpoint_map_readout_declaration_2026-10-26",
+            "archiveJuliaSourceEq27EndpointMapReadout Eq27 endpoint map readout",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",

@@ -8404,3 +8404,42 @@ the working tree still found all **15/15** Julia sources. In that later replay,
 the Eq. (26) query ranked this artifact, the receipt, and the Lean module in
 positions 1–3; the full aggregate counts above are pinned to the clean
 `7da7a596` snapshot.
+
+### Canonical Eq. (27) endpoint readout API (26 October 2026)
+
+The Eq. (27) endpoint formula had been repeated in the single-query recovery,
+injectivity, endpoint-chart, and same-query composition statements. The module
+now names that shared map
+`archiveJuliaSourceEq27EndpointMapReadout (u) (Q)`. It is defined on every
+finite query operator `Q`; the recovery theorem retains the source isometry,
+determinant-one, and non-null hypotheses required for this expression to
+return the actual endpoint. The recovery, injectivity, chart, and joint-query
+consumers now refer to the same definition, removing the repeated formula
+without changing its mathematical scope.
+
+The narrow build of `D0.Geometry.A4DJuliaRecoveryComposition` passed
+**3,207/3,207 jobs** with Lean 4.30.0. The declaration inventory was extracted
+through public import `D0.All` at clean published commit
+`9cf18c2ccf103fc29d2f246fc364efd83dcd7905`, with Lean-source digest
+`da0cf4d3aced544e344a957989ac3f4d84f67244c3e950a0f78837005404e139`,
+collector SHA-256
+`4f6a32214c57df4b54e278975886cd453399bfb4e78d4c7edfe75b62b07b7ffc`, and
+toolchain Lean 4.30.0. The inventory at
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_eq27_endpoint_map_readout_declaration_2026-10-26.json`
+has SHA-256
+`e72976bca38be6bbd700e4e57d3dd0b563054c8f5beb8e77aa7c8d7728e50e10`.
+It records the elaborated type, source location, dependencies, and axiom
+footprint for the definition. That declaration's footprint is
+`Classical.choice`, `Quot.sound`, and `propext`; this statement is about the
+readout definition alone, not the finite CAR applications that consume it.
+
+The Julia cold-start case now has **25** queries and **16** required source
+references, including the exact readout inventory. Its targeted replay found
+all **16/16** sources; the exact API query ranked the compiled inventory and
+Lean module first and second. The full aggregate replay after this query and
+inventory addition remains pending. The source owner remains pinned to #334
+commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
+`1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §§8.4–8.5. The refactor does not
+prove the 24 link derivatives, full all-jet pullback, physical admission,
+complete price/source selection, #334 acceptance, `GR_closed`, or independent
+C0 acceptance.
