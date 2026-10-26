@@ -8116,3 +8116,44 @@ This is a supporting formalization/application slice only. The crosswalk keeps
 `semantic_relation_status=unresolved`, `claim_locator_disposition=unresolved`,
 and `acceptance_inferred=false`; no C0 unit or physical premise is accepted by
 the algebra proof or retrieval replay.
+
+### J² directional-path derivative reuses the generic Gram API (26 October 2026)
+
+- Commit `2a5ddd1598df796df01756b2c22ffe1b0d96b48e` refactors
+  `j2DetectorMetricPath_hasFDerivAt_direction` to compose
+  `finiteGram_hasFDerivAt` at the identity with the straight source path
+  `t ↦ 1 + tH`. The flat matrix-variable derivative composes the same generic
+  theorem with `H ↦ 1 + H`. The duplicated local quadratic differentiation and
+  its `FDeriv.Pow` import are removed; the exact quadratic remainder stays in
+  its separate algebraic theorem.
+- The narrow `D0.Geometry.A4DSolderMetricCompletion` build passed
+  (**3,087/3,087 jobs**). At the code commit,
+  `A4DSolderMetricCompletion.lean` has SHA-256
+  `daedb152b6a8a2b68ff0079876c8fe0795700d86146e23297181d1f8a7ac783b`;
+  `FiniteGramDerivative.lean` has SHA-256
+  `65b89305864cb933306cb930edf20afef8faf395a5203cb7f5dfdc63d9d43d5e`.
+- The compiled public-`D0.All` crosswalk at clean snapshot
+  `b1fb6bc7a9bd9fbd692049dd55f0368724d08e01` resolves the generic Gram
+  derivative and both J² consumers. It records Lean-source digest
+  `e892a47e1ddf7d032198ce35dbb1df73b69a9a8392084e5b10f1ae5c019cc468`,
+  `applications.json` SHA-256
+  `b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d`, and
+  crosswalk SHA-256
+  `1f90e1b472699d5bff0006c2008d3a519706a8b586b917b57944446ae5bb1e3d`.
+- Cold-start at clean commit
+  `f89dba585dea8edc08a283b715d2c0823f851336` finds all sources in **24/24**
+  cases, passes the **25-case** benchmark, checks **141** required source
+  references, and passes the changed-source/unrelated-prose impact control.
+  The new case finds the algebra module, geometry consumer, assembly
+  application, and compiled crosswalk as direct content at ranks 5, 17, 2,
+  and 7. The 7,981,702-byte output is represented by SHA-256
+  `8afebe2a2fc576832d86b0d63495755ccb64480125367863441aa6ed4f3b08b7`; its
+  compact receipt is
+  `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_finite_gram_derivative_reuse.json`,
+  SHA-256
+  `7f8dc056b523f32adfb4772a44d35c0731d4ccb42044c531ce4c5b50397c775d`.
+
+This refactor keeps the exact remainder and finite-carrier scope. The crosswalk
+still records `semantic_relation_status=unresolved`,
+`claim_locator_disposition=unresolved`, and `acceptance_inferred=false`; it
+does not close C0, physical source selection, continuum variation, or GR.
