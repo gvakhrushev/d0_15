@@ -8900,3 +8900,66 @@ These records verify the formal API and retrieval only; physical and global
 composition obligations remain open.
 All **63/63** proof-architecture tests passed against this compiled inventory
 and the coordinate-chart cold-start summary.
+
+### Joint coframe and Lorentz-tangent Julia path derivative (26 October 2026)
+
+The next pathwise application now pairs the exact Eq. (30a) inverse-coframe
+recovery with all four Eq. (27)/(28) endpoint readouts on the same constructed
+Julia query family. The new theorem
+`principalFrameJuliaJointCoframeEndpointReadoutAlongLorentzTangent_hasDerivAt`
+assumes a coframe path `F` with derivative `H` at zero, one fixed
+`IsRoleLorentz Γ`, and a normalized covector `α(t,r)` plus nonzero shifted
+column at every path parameter and role. For each coordinate direction
+`q : Role → RolePair → ℝ`, it differentiates the path whose Lorentz tangent is
+`t • roleLorentzTangentParametersEquivCoordinates.symm q` and returns
+`(H, fun r => (rolePairsEquivLorentzTangent (q r)).transpose.mulVec x)`.
+
+The proof consumes the already-owned exact coframe recovery
+`principalFrameJuliaQueryFamily_recoveredInverseCoframe` and the joint
+coframe/Lorentz-tangent endpoint derivative
+`principalFrameJuliaEndpointChartReadout_hasDerivAt_of_jointCoframeAndLorentzTangent`.
+The compiled focused inventory resolves **20/20** requested declarations at
+snapshot `f41e18ff426aa6040ee6e07daca50612f9953b95`; its SHA-256 is
+`d0389471640dead7c02ebdb0c3b114edd6a431350d93b58c047f30b2b27faf5a`, and its
+Lean-source digest is
+`cf8ed60474519b74927c2abe21e85d0718d2351499080ede096af99c8d8c4f89`.
+The narrow build passed **3216/3216** targets and the final `D0.All` build
+passed **4585/4585** targets. No new axiom or admitted proof was added.
+
+The seven shared compiled inventories were refreshed at clean snapshot
+`4ff09d4c3b88e6ccc88e67229898e3317b90b61f`, with the same Lean-source digest;
+all requested declarations resolved:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json` | 25/25 | `be811c6881e5520aa1986c2af970715c017ca1794fda6043eabd7027e9a94e13` |
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json` | 15/15 | `04530411b2b631b95508eb7340eebec9e6e750d8816d2b537bf991cfddf5ca1d` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_joint_coframe_path.json` | 36/36 | `18ba6234fa7aaddf03fb9adafb7a561f354afecbdf64631665b53e5bf4853d5d` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json` | 9/9 | `1aa9fcc70a6d51f5ab5b15ab43b4f81b8cf99f7674725d597c7f9093b5d5de7a` |
+| `archive_shift_topology_current_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json` | 26/26 | `edb46606e606dd690b22639291519ea4050343e4ef65278e00fdf58f7b5ffde6` |
+| `source_port_preparation_tensor_inventory_2026-10-26_lorentz_tangent_joint_coframe_path.json` | 73/73 | `7f78d3c8e3e075ec32127da4ddb579c999c74ec3b12f9bdec40a50f575e1504c` |
+| `flat_tensor_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json` | 4/4 | `0516f7fbeed3dbc2f4bdb6ded39922c0373305e4f67c0341b881158cd32d701a` |
+
+The final cold-start ran at clean snapshot
+`eca9a4fe56745e83d1a35b40147c81b2da12b514`: **24/24** cases found all
+**156** required references, the **25-case** benchmark passed, and the exact
+source-versus-unrelated-prose regression passed. The labelled native
+raising-inverse case has **16** queries and finds all **11/11** references.
+The joint-path query ranks the Lean module first and its compiled theorem
+inventory third in the displayed candidates. The source-sensitive search also
+keeps the `ArchivePhaseShift.lean` source in both declared scoped queries after
+the query names its transitive theorem directly. The **8,761,637-byte** full
+output has SHA-256
+`5274db8249338f80d4f819f55978c8d4eecf58527b9af65324df7fed9c8fffa4` and is kept
+outside Git. The compact summary is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_joint_coframe_path.json`,
+SHA-256 `a76642dccf45a7e2c41cf42f54e63c230c5780e5aabb9f767228bf5bca136117`;
+the query-level receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_lorentz_tangent_joint_coframe_path.json`,
+SHA-256 `0af3885d88b6275bcf35adef015e90631abd7f04ef7e11f5da15b9318e65b072`.
+
+This is a joint directional path derivative using explicit pointwise chart
+conditions, not a full 40-dimensional Fréchet theorem or a local chart covering
+the whole Lorentz group. It does not connect every determinant-one link to the
+identity, establish physical price selection, or close GR; those application
+and physical-selection obligations remain open.
