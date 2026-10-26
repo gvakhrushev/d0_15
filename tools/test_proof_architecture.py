@@ -2556,10 +2556,10 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             comparison["metrics"]["current_serialized_answer_bytes_total"],
-            538443,
+            531238,
         )
         self.assertEqual(
-            comparison["metrics"]["current_average_answer_bytes"], 22435.1
+            comparison["metrics"]["current_average_answer_bytes"], 22134.9
         )
         self.assertTrue(
             comparison["metrics"]["semantic_review_required_for_all_queries"]

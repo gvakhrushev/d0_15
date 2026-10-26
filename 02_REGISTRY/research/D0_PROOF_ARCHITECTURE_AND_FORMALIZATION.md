@@ -10274,6 +10274,28 @@ prove physical source selection, the original 40 varied Cartan equations, all
 16+24+2 Euler rows, C0 acceptance, or GR closure. The earlier componentwise
 criterion remains available as a separate sufficient condition.
 
-The exact narrow build and `D0.All` integration, declaration inventory,
-source digests, and proof-architecture cold-start receipt are recorded in the
-following checkpoint entry after the final source tree is fixed.
+The vector-norm refinement slice is now recorded against compiled public
+declarations. Inventory
+`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_vector_norm_car_margin_2026-10-26.json`
+(SHA-256 `c896eb2bbec77094b3ad2aec6b9e0fc6bcc2a1edb96a51e8a9b25e8e68bb1cbe`)
+was collected through `D0.All` from clean source snapshot
+`826c5a43d972bffda54186f91c00d4cdeb149509`. It records complete Lean-source
+digest `98acfef40a996ad98700415adb53192359d0ed6e5a248e9d110e826f4c91607f`
+and collector SHA-256
+`ad6e909bce72da71b5d39bec0f8fa5c537b9505d4d57c0053c0b0cba8fc504a0`.
+All eight requested declarations resolve with elaborated types, source ranges,
+proof dependencies and axiom closures; the footprint is
+`Classical.choice`, `Quot.sound`, and `propext`.
+
+Narrow builds passed for `D0.Analysis.MidpointQuadrature` (3,339 jobs) and
+`D0.Geometry.NonvacuumBrinkmannStencil` (3,340 jobs). The final public
+`D0.All` integration passed (4,626 jobs) on the same complete Lean-source
+digest. The clean cold-start retrieval receipt and bounded search-process
+comparison are recorded at
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v12_vector_norm.json`
+and
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_final_v12_vector_norm.json`.
+The former records the exact #334 §7.2 owner pin separately from the main
+registration blob. Retrieval, declaration extraction and compilation are
+evidence for this conditional mathematical slice; they do not derive its
+analytic bounds from CAR preparation or select a physical source.
