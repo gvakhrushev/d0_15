@@ -115,8 +115,7 @@ def original_generator_certificate(row):
     c0,c1,c2,c3=creators
     G=(mul(c0,c1.T)+mul(c1,c0.T))%mod
     U=(I+inv(40)*mul(G,G)+9*inv(40)*G)%mod
-    require(np.array_equal(mul(U,U),(I+41*inv(20)*G*G+9*inv(20)*G)%mod)
-            if False else np.array_equal(mul(mul(G,G),G),G),
+    require(np.array_equal(mul(mul(G,G),G),G),
             "TRUE original G^3=G")
     nu=3*inv(5)%mod
     root_observed=(0,9*inv(25)%mod,7929*inv(20000)%mod)
