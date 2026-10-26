@@ -175,3 +175,90 @@ For Book03 this is an operational type firewall, NOT a new action. The full orig
 ## 6. Reproducibility
 
 \`sources/d0_original_full128_choi_rank18_2026-10-26/check_original_choi_18_24_64.py\` imports the unchanged exact ORIGINAL finite-field constructor and the eight already certified split embeddings; it checks the full \(128\times256\) literal original K rank18, its 64 live original labels, the specified SAME 18 actual original Kraus row/column minor residues (6), and the 17+1 CAR generator upper bound, all modulo eight original good primes. The actual modular certificate is a **nonzero original minor**; zero rank upper comes from §1 operator identities, not modular absence. The 24 and64 recorded-instrument Choi ranks are independent elementary direct-sum proofs consuming already owned true labelled original Kraus/projective-rayed class count. No new physical assumption, fixed-Born observer task or external rank cutoff is introduced. Independent CI replay is still required before an accepted publication certificate. \`GR_closed=false\`.
+
+
+## 7. THEOREM D — THREE original no-reset ticks saturate the entire 256-dimensional Kraus OPERATOR algebra
+
+The complete finite original memory argument can be made **dynamical**, not only a one-tick rank count. For each fixed chronological fine word \(\gamma=(\alpha_1,\ldots,\alpha_t)\), KEEP its actual raw full128 products
+\[
+K_\gamma=K_{\alpha_t}\cdots K_{\alpha_1};
+\]
+DATA is NEVER reset, and every real fine outcome remains separately stored in the uncoarsened physical execution. The unobserved t-tick map is the actual CPTP composition \(\Phi^t\), whose Kraus family consists of these true ordered products.
+
+The same unchanged eight algebraic split primes, same native \(r=1/9,\nu=3/5\), and original field constructor give the following **exact NONZERO MINOR lower bounds**, over the actual original ordered K words:
+\[
+\begin{array}{c|c|c}
+\text{ticks }t&\text{certified rank lower bound for }\mathrm{span}\{K_\gamma:|\gamma|=t\}
+&\text{universal linear upper bound}\\\hline
+1&18&18\text{ (proved in §1)}\\
+2&144&256\\
+3&256&256.
+\end{array}\tag{15}
+\]
+No **characteristic-zero upper bound of 144 for t=2** is asserted; 144 is the exact verified rank in EACH modular specialization and hence a rigorous characteristic-zero LOWER bound. In particular we do NOT silently promote "first saturation occurs at t=3" without excluding higher rank at two ticks. For t=3 the upper bound 256 is the entire original \(M_{16}(\mathbb C)\), and an actual 256-minor is nonzero, so
+\[
+\boxed{\operatorname{span}_{\mathbb C}
+\{K_{\alpha_3}K_{\alpha_2}K_{\alpha_1}\}
+=M_{16}(\mathbb C),\quad
+\operatorname{rank}J_{\rm Choi}(\Phi^3)=256.}\tag{16}
+\]
+This is **maximal finite Kraus rank** at THREE ORIGINAL internally registered ticks, not a new primitive or compiled channel.
+
+### One fixed 256-word ORIGINAL proof, not eight unrelated rank guesses
+
+The companion \`check_original_choi_three_ticks.py\` constructs, deterministically at the source's already certified split prime q=1009, 18 ACTUAL one-tick linearly independent original nonzero fine labels, then 144 ACTUAL independent two-tick ordered products, then a 256-word three-tick pivot basis. It performs a **four-word exact exchange** to make the SAME frozen 256 original three-tick words independent at all eight known original split prime embeddings. The fixed chronological word list has SHA-256
+\[
+\texttt{78f343fe8a763998dd062310d1fb45c1a295771d3344f43016201f146924ed78}.
+\]
+Every actual selected word has length **exactly three**, including real order and any repeated true label; none is a synthetic linear combination. The exact determinants of the FULL 256×256 original 3-tick Kraus-vector matrix for this SAME word list, with all 256 original matrix coordinates (row-major), have residues
+\[
+\boxed{
+\begin{array}{c|rrrrrrrr}
+q&229&401&521&709&761&809&941&1009\\\hline
+\det V_{256} \bmod q&106&39&111&264&404&277&641&260
+\end{array}.}\tag{17}
+\]
+All eight are nonzero. A SINGLE good split reduction already establishes exact characteristic-zero nonvanishing; the eight-prime agreement is an independent robust reproducibility control. The original CAR/Julia/Golden branch of the field, all positive roots, the true Kraus CPTP identity and the original 64 live/dark labels are unchanged and verified by the imported frozen source. No floating numerical rank threshold is involved.
+
+## 8. THEOREM E — three-tick strict positivity, inevitable DATA mixing and the NONERASURE of physical archive
+
+Because the original three-tick Kraus products span **all** matrices \(M_{16}\), its (unconditioned) Choi matrix \(J_3:=J_{\rm Choi}(\Phi^3)\) is POSITIVE DEFINITE on \(\mathbb C^{16}\otimes\mathbb C^{16}\). Let
+\[
+\boxed{\delta=\lambda_{\min}(J_3)>0.}\tag{18}
+\]
+No unproved quantitative bound on \(\delta\) is made: the good-reduction determinants prove the exact **strict positivity**, not a convenient universal spectral gap number.
+
+The Choi correspondence gives a completely positive decomposition
+\[
+\boxed{\Phi^3(\rho)=\delta\,\operatorname{Tr}(\rho)I_{16}
++(1-16\delta)\Psi(\rho),}\tag{19}
+\]
+where \(\Psi\) is CPTP for \(16\delta<1\), since \(J_3-\delta I_{256}\succeq0\) and \(\Phi^3\) is TP. (If \(16\delta=1\), \(\Phi^3\) is already the depolarizing channel and the contraction factor is zero.) Hence for **EVERY** pair of DATA density states,
+\[
+\boxed{\|\Phi^3(\rho)-\Phi^3(\sigma)\|_1
+\le(1-16\delta)\|\rho-\sigma\|_1,\quad
+0\le1-16\delta<1.}\tag{20}
+\]
+Moreover \(\Phi^3(\rho)\succeq\delta I_{16}\) for all trace-one positive \(\rho\). This is a true original three-tick, **strictly positivity-improving**, uniform quantum Doeblin contraction, not an entropy rule imposed on external noise. It implies uniqueness and full rank of the stationary DATA density, plus exponential mixing under repeated REAL native ticks:
+\[
+\boxed{
+\|\Phi^{3n}(\rho)-\rho_*\|_1
+\le(1-16\delta)^n\|\rho-\rho_*\|_1.}\tag{21}
+\]
+Here the independently owned exact original stationary state \(\rho_*=\Delta^{-1}/\operatorname{Tr}\Delta^{-1}\) is CONSUMED, not assumed for the contraction proof; the strict positivity gives independent finite support for its uniqueness at the certified original fixture. Positivity survives on a nonempty regular original-source neighborhood by continuity, and no uniform mesh limit in h is inferred.
+
+**Why this is a fundamental D0 result rather than physical erasure:** the map \(\Phi\) arises by tracing the private ORIGINAL record/work archive after one honest unitary execution. The **entire combined DATA+ARCHIVE state**, including all fine labelled outcomes and their causal order, is not reset or erased in the closed universe. The reduced DATA marginal can forget its initial condition at an exponential 3-step rate even though the fully closed state retains a record of where the information flowed. This mathematically realizes the user's distinction between endogenous physical memory and a free external history log. Forgetting in the local marginal is NOT the destruction of the physically accumulated archive. An exact realization of the repeated CPTP composite as a globally closed physical word must pay its actual newly retained registers; the current theorem does not make them free.
+
+## 9. THEOREM F — at least 256 coherent bath dimensions for the complete three-tick unobserved channel, despite only 18 for one tick
+
+Minimal Stinespring dimension equals Choi rank at **each** declared quantum task horizon. Therefore the same original channel gives:
+\[
+\boxed{
+\dim E_{\min}(\Phi)=18,\qquad
+\dim E_{\min}(\Phi^3)=256.}\tag{22}
+\]
+The complete three-tick unobserved channel cannot be realized as a pure-input closed-system Stinespring dilation on the original 16D DATA with a single **unchanged 18D environment and no additional resource**, while reproducing the EXACT \(\Phi^3\) on every input. There must be sufficient coherent complementary capacity for 256 independently required Kraus directions across the three stages (or an operationally equivalent actual paid implementation). This is a SHARP Hilbert-dimension lower bound, not a statement that D0 must install 256 physical "Kraus buttons" or measure 256 distinct terminal outcomes. The original fully labelled three-tick archive has a vastly different, separately priced physical history resource and its own CQ map; it is not replaced by (22).
+
+The significance for Book03 and \(D_{\min}\): short code/one-tick minimal work, complete recorded future memory, local forgetting speed, and complete global closed work capacity are four noninterchangeable physical interface properties. The original full128 primitive now supplies a concrete **growing-horizon necessity** from its own positive operator algebra, without adding a new physics axiom or a supplied Einstein target. The remaining physical choice of compulsory task, full Hodge/feedback/Cost−Info/clock, actual all42 field dynamics and uniform Einstein limit remain OPEN. \`GR_closed=false\`.
+
+**Independent exact replay:** \`sources/d0_original_full128_choi_rank18_2026-10-26/check_original_choi_three_ticks.py\` imports ONLY the frozen original source modular constructor and reconstructs the same deterministic 256 chronological words, their SHA-256 and all eight exact original field-residue determinants. The proof uses universal Choi/operator algebra theorems plus the explicit verified original positive 256-minor; no accidental no-reset or iid assumptions are added.
