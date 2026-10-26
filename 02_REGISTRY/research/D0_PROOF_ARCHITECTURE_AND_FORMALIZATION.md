@@ -9192,11 +9192,19 @@ selection premise.
 
 The existing finite nonvacuum fragment now extends from one arbitrary
 two-component midpoint step to a chronological rate sequence
-`rate : ℕ → Fin 2 → ℝ`. `finiteMatterMidpointHistory` constructs each next
-record from the same step rate, while `finiteTimeNonvacuumBrinkmannProfile`
-uses that rate's squared norm for the profile at the same site. The compiled
-theorem `finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm` composes
-the exact five-point profile equation with the actual adjacent record values:
+`rate : ℕ → Fin 2 → ℝ`. The recursive `finiteMatterMidpointHistory` now uses
+the canonical `finiteMatterMidpointStep` at every successor. Its compiled
+telescoping theorem `finiteMatterMidpointHistory_eq_base_add_rateSum` proves
+the exact endpoint law
+
+```text
+Ψ_n = Ψ_0 + h * ∑_{k < n} rate_k.
+```
+
+The profile `finiteTimeNonvacuumBrinkmannProfile` uses that same step rate's
+squared norm at each site. The compiled theorem
+`finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm` composes the exact
+five-point profile equation with the actual adjacent record values:
 
 ```text
 Δ_h^⊥ H_n(x,y)
@@ -9207,16 +9215,16 @@ for every `h ≠ 0`, every `n`, arbitrary two-component rate and base record,
 and arbitrary time-dependent quadratic/cubic harmonic coefficients. This is a
 finite discrete same-history source identity; it assumes no smooth rate law
 and proves no continuum convergence estimate. It makes explicit that the
-sitewise profile source and the history gradient use the same rate rather
-than an independently supplied energy value.
+sitewise profile source and the history gradient use the same rate rather than
+an independently supplied energy value.
 
 The narrow module build passed **2,946/2,946** jobs and the public-import
 `D0.All` build passed **4,585/4,585** jobs with Lean 4.30.0. The Lean-source
-digest is `4a1a705e04e028b14e0b43e0616e5d976ba091bd3137aa140b0b22cb9ec74150`.
+digest is `cfcca7bb045aaa6e2d4d92edec2947e462d7b565d78e69c04e4bf546c848b717`.
 The source remains `D0.Geometry.NonvacuumBrinkmannStencil` under its existing
 explicit-support entry in `formal_support.csv`. A targeted compiled inventory
-resolves the module's **21/21** public declarations, including the six new
-time-indexed declarations, from one `D0.All` environment. The shared Julia,
+resolves the module's **22/22** requested declarations, including seven
+chronological-history declarations, from one `D0.All` environment. The shared Julia,
 finite-Gram, CAR/Hodge, partial-trace, topology and source-preparation
 inventories remain pinned to their earlier clean source snapshot
 `f337b30e039efcc1fd30d355df35e7e6bbaf5478` and digest
@@ -9224,11 +9232,11 @@ inventories remain pinned to their earlier clean source snapshot
 remain historical evidence and are not relabelled as current after this
 unrelated module change. The new target inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_history_declarations_2026-10-26.json`.
-It resolves **21/21** declarations from clean source snapshot
-`e0fc89ee12b42b1e043b94b8e1cc7b801b983b05` with source digest
-`4a1a705e04e028b14e0b43e0616e5d976ba091bd3137aa140b0b22cb9ec74150`,
-Lean 4.30.0, and `worktree_dirty=false`; its SHA-256 is
-`7ccb3c79dc7c4ec514eb328905a744b2d4b8446cf3557422a296c852532ccbfd`.
+It resolves **22/22** declarations from clean source snapshot
+`687992542af28b57d7b18020fe9c9448438a9ac1` with source digest
+`cfcca7bb045aaa6e2d4d92edec2947e462d7b565d78e69c04e4bf546c848b717`, Lean
+4.30.0, and `worktree_dirty=false`; its SHA-256 is
+`27110cb4fcce1d5d85364831ab371a15059bc8192fc66923cb5aeab4a6374cb9`.
 
 This extends only the already formalized finite stencil/midpoint component.
 It does not formalize the original CAR construction, the unrestricted 40→3→1
