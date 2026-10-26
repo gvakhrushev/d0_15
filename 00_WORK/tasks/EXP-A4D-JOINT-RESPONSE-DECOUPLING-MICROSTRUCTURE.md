@@ -14312,3 +14312,96 @@ incomingbrief932039bytes remains exactprefix, SHA256
 FinalembeddedAST/executedcode identity andonlytwoownedpaths verified.
 No incomingmath/fulloldcorpus/Lean replay, physical/assemblypromotion,
 newPR/task ormerge/Ready/retirement. Existing#334 remainsDraft.
+
+
+### 26 October 2026 — direct-master application checkpoint; no new certificate
+
+Same existing #334 execution, constitutive/native-programme-v1; phase native
+realization and final composition. This is a source-routing correction after
+reading the user's closed-feedback/Slater/CAR2 synthesis, not a new theorem,
+independent execution, parent discharge or change to the scientific claim.
+Only this existing brief is edited. The previous 7ca result keeps its scope.
+
+**Consume the already completed maps.** Book03 Sections03.8/03.25 and
+A4D_BOOK03_ALL42_SOURCE_DESCENT_AND_COHERENT_SADDLE_SYNTHESIS_2026_10_22,
+Section3 RouteI, permit the direct finite stationary law. Do not make either
+D_min-to-price ordering, a Slater audit, a scalar likelihood normalizer or a
+separate Shannon/CQ-price identification an added prerequisite for that route.
+Those stronger interpretations retain their own premises. In particular the
+original full128 normalization owner already proves N=W*W=I, DN=0 on the
+unmarked complete instrument, and full normalized Book J is invariant under
+W->WL for every invertible input-coordinate change. A common scalar is neither
+a missing Book denominator nor an adjustable physical compensation.
+
+A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21 already supplies ALL of the following:
+Section13(59) fixes the original ALL-COLUMN U; Section14(73)-(77) includes the
+seven actual CX copies per event and complete all-n replica heat; (78)-(82)
+retains its conditional Cost/Info/birth binding; Section17(105)-(109) embeds
+the weighted even-algebra GNS in the ACTUAL DATA plus retained archive after
+three paid warmup rounds, on its stated pure-complete-state regime and original
+regular instrument chart; Section19(129)-(139) applies the direct master to
+the actual primitive clock and distinguishes coherent and record-hull cuts.
+Do not rebuild those operators or import v10's different four-outcome QND
+heat. Its cutoff suppression does not extend to128 outcomes.
+
+The direct-source consumer is still Section19(130), with full moving cuts,
+pairings, preparation, scene and actual stage derivatives. Monolith7bh500
+shows why the scene-homogeneous formula cannot be silently assigned to the
+actual RawZone source port: [C_S,R_port]_(01)=-11/8520. For that placement use
+7bh501-504's complete cochain differential, not an endpoint-only character.
+Book01 Section01.4.1 supplies six observable-section obligations; it does not
+identify any one of the proposed active cuts or its field tangent image.
+Book06 Section06.1 lists distinct forgetting interfaces. Keep their types.
+
+**Stop the new Jones-cut shortcut at its application boundary.** Two read-only
+assistants independently checked the finite algebra, with no new checker run.
+The proposed conditional-expectation projection e_A on regular GNS obeys
+(e_A L_V e_A)|_(L2(A))=L_(E_A(V)); this is a supplied GNS realization, not the
+physical cut identification. The owned full-source Section6.73(13ht)-(13hv)
+already distinguishes that extra Jones actuator from LEFT multiplication:
+e_A commutes with RIGHT(A), generally not the entire protected RIGHT(M).
+
+Moreover, the ACTUAL copied word changes the tempting bare-U source. For
+V=C_copy U and A=End(App tensor DATA) tensor Diag(BANK), its bank diagonal
+block is Pi_(App=0) U. Thus the compressed Gram U*Pi_0 U is a projection and
+the Book determinant has constant rank spectrum. The same argument holds
+for n fresh pairs, since old copies commute with later fresh events and
+Pi_allApp0 replaces Pi_0. If App is additionally pinched, only allApp=0 has
+a nonzero diagonal block B^n: this recovers the old blank-return determinant
+with the actual BANK/right multiplicities and a constant rank term. It does
+not supply a new source. Equality of prepared CQ records does not identify
+these different full-space cuts. No new native admission, negative physics
+claim, numerical certificate or independent acceptance is inferred.
+
+Likewise the existing pure-boost CQ birth coefficient7ca cannot be transported
+to the primary refining null-link carrier by merely writing r~h or nu~h:
+fixed physical inverse legs keep nu fixed, the primary link is unipotent,
+the original fixed phases are not fixed physical Fourier momenta, and its
+actual preparation and dual source gain differ. No new local coefficient
+calculation is dispatched without that common map.
+
+**Exact remaining application.** Derive from the same complete admitted
+history, Query_O and controller the selected (Delta_heat,P_N,U_N) and the
+image of the physical coframe/link/matter plus independent internal tangents.
+Then evaluate the OWNED full stationary covector and consume the existing
+nonvacuum/source-continuation result with its real gain and norm. If claiming
+D_min selection or Cost-Info equivalence as well, prove their separate actual
+order/valuation map; do not add them as vetoes to direct master use. The
+naked-star Pauli-Fierz/Schur and squared-ideal results retain their configured
+source: no native full-Book massless-spin2 premise was found that would make
+self-coupling an already applicable shortcut.
+
+No new mathematical parent substitution was established in this checkpoint.
+It prevents repeating completed heat/normalization/GNS constructions and
+records the failed application before another certificate is commissioned.
+Existing all42/nonvacuum proofs, Golden/Lovelock alternatives and raw216 keep
+their exact scope. GR_closed=false; #334 remains Draft, no lifecycle change.
+Validation is limited to the affected documentation/work guard and whitespace;
+no prior mathematical suite, Lean proof or remote CI replay is claimed.
+
+Concurrent intake preserved: 1ac29e4dcf01010ac819062c935dea6a38964ea7
+adds7cb643-649, the exact unequal-Golden readonly-selector application.
+Its entire proof/checker/receipt and brief are retained byte-for-byte.
+That positive result narrows the reciprocal compiler premise; its actual
+paired cut, controller, internal placement and field graph remain explicit.
+No incoming calculation was replayed for this routing edit.
