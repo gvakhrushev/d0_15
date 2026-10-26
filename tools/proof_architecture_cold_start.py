@@ -149,6 +149,64 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "finite-gram-frechet-derivative",
+        "queries": [
+            "finiteGram_hasFDerivAt finiteGramTangent arbitrary finite matrix frame two sided Frechet derivative",
+            "finiteGramTangent_apply H eta Theta transpose Theta eta H transpose Frobenius norm",
+            "j2DetectorMetricPath_hasFDerivAt_flat generic finiteGram derivative through H ↦ 1 + H",
+            "производная Фреше отображения Грама на конечных матрицах полный двусторонний касательный оператор",
+            "finiteGram_hasFDerivAt metric-provenance crosswalk current D0.Algebra.FiniteGramDerivative",
+        ],
+        "required_refs": [
+            "03_FORMALIZATION/D0/Algebra/FiniteGramDerivative.lean",
+            "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+            "02_REGISTRY/gr_assembly/applications.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_aaae64c2.json",
+        ],
+        "required_sources": [
+            {
+                "path": "03_FORMALIZATION/D0/Algebra/FiniteGramDerivative.lean",
+                "commit": "4b1db2654ed0b3314efc97859fc64a554fcc2d13",
+                "blob": "a606bacf28f55db0f97f241cde0f324b92ea8fac",
+                "scope_query_indexes": [0, 1, 3],
+            },
+            {
+                "path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+                "commit": "4b1db2654ed0b3314efc97859fc64a554fcc2d13",
+                "blob": "6681d92847c3bac0bd6ad0ec6903bc5e763ec6d1",
+                "scope_query_indexes": [2],
+            },
+            {
+                "path": "02_REGISTRY/gr_assembly/applications.json",
+                "commit": "aaae64c2fb815e29bdee97c0768e34be88343841",
+                "blob": "2bda5ae38c718f4885588a50f3b259b99bccf5d1",
+                "scope_query_indexes": [0, 2, 4],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_aaae64c2.json",
+                "commit": "07248354b918581efcd940c7782a58fe1ba7f6a6",
+                "blob": "67b795e8141054a91dd6104b59e1e3886ddeae7c",
+                "scope_query_indexes": [0, 1, 2, 4],
+            },
+            {
+                "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                "commit": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                "blob": "e5e31819492d670c81fc4a2871e1ef8cfa205c08",
+                "scope_query_indexes": [2],
+            },
+        ],
+        "scope_review": (
+            "The generic API proves the full finite-matrix Fréchet derivative of "
+            "finiteGram at every frame, with both terms HηΘᵀ + ΘηHᵀ and its "
+            "Frobenius-norm continuous-linear realization. The J2 flat-frame "
+            "derivative is its specialization through H ↦ 1 + H, and the solder "
+            "field consumer composes that derivative with the finite sitewise "
+            "coframe map. These are finite algebra/calculus results only: the "
+            "selected-action-to-carrier map, physical source choice, continuum "
+            "variation, and independent C0 acceptance remain open."
+        ),
+    },
+    {
         "id": "golden-step-vs-internal-ratio",
         "queries": ["Golden physical metric step internal Perron scale ratio native HJR countercontrol"],
         "required_refs": [
