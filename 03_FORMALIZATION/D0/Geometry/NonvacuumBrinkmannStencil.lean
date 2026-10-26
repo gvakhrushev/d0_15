@@ -179,6 +179,21 @@ theorem twoComponentMatterNormSq_midpointHistoryGradient_eq_rate
   intro i hi
   rw [finiteMatterForwardGradient_midpointHistory h rate base n i hh]
 
+/-- The complete finite-history gradient energy equals the sum of its rate energies. -/
+theorem twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum
+    (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ)
+    (n : ℕ) (hh : h ≠ 0) :
+    (∑ k ∈ Finset.range n,
+      twoComponentMatterNormSq
+        (finiteMatterForwardGradient h
+          (finiteMatterMidpointHistory h rate base k)
+          (finiteMatterMidpointHistory h rate base (k + 1)))) =
+    ∑ k ∈ Finset.range n, twoComponentMatterNormSq (rate k) := by
+  apply Finset.sum_congr rfl
+  intro k hk
+  exact twoComponentMatterNormSq_midpointHistoryGradient_eq_rate
+    h rate base k hh
+
 /-- The time-indexed Brinkmann profile uses the rate of that same history step. -/
 def finiteTimeNonvacuumBrinkmannProfile
     (coupling : ℝ) (rate : ℕ → Fin 2 → ℝ)
