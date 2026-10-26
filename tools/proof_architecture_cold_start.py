@@ -94,8 +94,8 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
             "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
             "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26_frame_domain.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_frame_domain.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26_affine_gram.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_affine_gram.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_fe15cd8c.json",
         ],
         "required_sources": [
@@ -114,13 +114,35 @@ CASES: list[dict[str, Any]] = [
             "the endpoint Gram identity from the transport isometry and invertibility of "
             "the target frame; its Lorentz adapter preserves those hypotheses. The generic "
             "finiteMatrix_dressed_transport_frame_invariant theorem factors the two-sided "
-            "frame cancellation, and the Lorentz link-invariance theorem consumes it while "
+            "frame cancellation, and the Lorentz link-invariance theorem consumes it "
             "without requiring target-frame invertibility for this identity. The generic equality iff theorem "
             "then characterizes equality of dressed transports by exactly the corresponding "
             "two-sided link action, and the Lorentz equivalence specializes that result. The proper "
             "field theorem also requires equal determinant orientation "
             "at every site. It leaves time orientation, the selected-action map, physical "
             "source selection, and independent acceptance open."
+        ),
+    },
+    {
+        "id": "finite-gram-affine-quadratic-expansion",
+        "queries": [
+            "finiteGram_add_smul_expand finite Gram expansion arbitrary base frame quadratic remainder",
+            "finite_gram_orbit_shared_api_declarations_2026-10-26_affine_gram.json finiteGram_add_smul_expand",
+            "finite Gram expansion Theta plus t C two sided linear variation exact quadratic term",
+            "A4D Solder Metric Completion finiteGram_smul_expand solderMetric_smul_expand",
+        ],
+        "required_refs": [
+            "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
+            "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_affine_gram.json",
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        ],
+        "scope_review": (
+            "finiteGram_add_smul_expand proves the exact finite quadratic Gram identity "
+            "at an arbitrary base frame. The two prior expansion APIs specialize it, and "
+            "the solder-metric and J2 paths consume those specializations. This preserves "
+            "the full linear source and quadratic remainder; it proves no physical action, "
+            "source choice, or continuum curvature law."
         ),
     },
     {

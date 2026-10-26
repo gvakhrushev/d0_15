@@ -7844,3 +7844,53 @@ benchmark, checks **133** required-source references, and passes the
 source-change versus unrelated-prose control. This is a finite matrix domain
 refinement and typed Lean reuse edge; it adds no physical selection or C0
 acceptance.
+
+### Exact affine finite-Gram expansion (26 October 2026)
+
+`D0.Algebra.finiteGram_add_smul_expand` now gives the exact finite quadratic
+expansion at an arbitrary baseline matrix:
+
+`finiteGram η (Θ + t • C) = finiteGram η Θ +
+ t • (C * η * Θ.transpose + Θ * η * C.transpose) +
+ t^2 • (C * η * C.transpose)`.
+
+The statement retains both first-order sides and the quadratic remainder. The
+prior `finiteGram_smul_expand` and `finiteGram_one_smul_expand` declarations
+remain as specializations and their compiled proof dependencies now point to
+the shared theorem. The typed consumer inventory also records
+`solderMetric_smul_expand` and `j2DetectorMetricPath_smul_expand` using those
+specializations, followed by their corresponding symmetric-tangent application
+theorems. The source maps therefore retain the complete linear and quadratic
+terms instead of duplicating the algebraic expansion.
+
+Lean source commit `bf9057f9f7a58d80881928493a601886e3a52010` pins
+`FiniteGramTangent.lean` SHA-256
+`157b69b6dee820470ac22ddfe235365d57d45c27177c0a7455126c4acd4a34cf` and
+`A4DSolderMetricCompletion.lean` SHA-256
+`bf1e83ce2e835937d617940c92fc1d78b5ec0c0d62f475e6335053cd218bec02`. The
+algebra module passed **2,946/2,946** jobs and final public `D0.All` passed
+**4,581/4,581**. Eight compiled declaration inventories use Lean-source digest
+`3059a9e519af571ffc5021a288a89c3047ff0de235bed91fc3ce50254fa3f3df`, were
+captured at that clean commit, and record `worktree_dirty=false`:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_affine_gram.json` | 15/15 | `d4594762240e95530495f505b82101418ad665f1c4d9f5e4b3bc5199b6621573` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_affine_gram.json` | 36/36 | `4d97b021dddfe1e6e24f734f24e4b310b2f192d7e9496810aca204aa1b3f12a8` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_affine_gram.json` | 9/9 | `8a958ea393a0dcdf74aa62fab80024e0a8431d8fd11e81ef78e77e030798e0db` |
+| `archive_shift_topology_current_declarations_2026-10-26_affine_gram.json` | 26/26 | `46167c6fc3524be87aa3f9857089db65d0970912c1fb3a45821859db4d794251` |
+| `source_port_preparation_tensor_inventory_2026-10-26_affine_gram.json` | 73/73 | `d86bf74d5d8a5d55783928e9cde2622d5389a0260eb5ef926af7542a04fb94fa` |
+| `flat_tensor_shared_api_declarations_2026-10-26_affine_gram.json` | 4/4 | `2559bfc5c8b75ee1afdd21aec08ad1e60f72b88e38ef8a5343a3abac9ec4a1c1` |
+| `proper_role_lorentz_orbit_declarations_2026-10-26_affine_gram.json` | 5/5 | `dcb1eb8787ff4be6a1595180166468d13fad562d6b54a50623c757a8c7e527a4` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_affine_gram.json` | 21/21 | `1871d7cc4f80755d219308190eb9b10b8344a013f2f02f308d294e4684897f65` |
+
+This is an exact finite-matrix identity and its existing geometry applications.
+It adds no physical action or source selection, continuum curvature law,
+assembly acceptance edge, or independent C0 disposition.
+
+The cold-start receipt is
+`proof_architecture_cold_start_summary_2026-10-26_affine_gram.json`,
+SHA-256 `07670e2461c5ce4bf34c0ec8a43c8a1c57a5b625464b89155cfd05676b49feab`.
+Its replay finds all sources in **23/23** cases, passes the **24-case**
+benchmark, checks **137** required-source references, and passes the
+source-change versus unrelated-prose impact control.
