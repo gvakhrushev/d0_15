@@ -10325,5 +10325,25 @@ or GR closure.
 The narrow `D0.Geometry.NonvacuumBrinkmannStencil` build passes (3,340/3,340
 jobs), and the final public `D0.All` build passes (4,626/4,626 jobs) with this
 theorem. The compiled declaration inventory and clean retrieval receipts are
-recorded in the following checkpoint section after their source snapshot is
-captured.
+recorded below. Inventory
+`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_vector_norm_uniform_mesh_2026-10-26.json`
+(SHA-256 `a0cc0376cbb9e6bf1a80f9bd002af2c7620570696e062a3fbf0d0edd254ac692`)
+was collected through `D0.All` from clean source snapshot
+`f25e0d9df5cbba5fc6f8cc89e38238c892b04a1d`. It records complete Lean-source
+digest `bdf2cf01bd6ba54a7a25f8cc7dde87635e85bf2d064ee9ae870138e6203af458`
+and collector SHA-256
+`e7b1acdd301c0f1692195d7f4b6be7ba323e1d8a9742f54ae291bd206b8619a7`.
+All nine requested declarations resolve with elaborated types, source ranges,
+proof dependencies and axiom closures; the footprint is
+`Classical.choice`, `Quot.sound`, and `propext`. The inventory's public
+`D0.All` import corresponds to the narrow geometry build (3,340 jobs) and final
+integration build (4,626 jobs) at that same Lean-source digest.
+
+The source owner pin is #334 commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`, §7.2. That source supplies Eq.
+(24)'s finite-step error estimate and explicitly states that fixed small
+normalized CAR slack survives for sufficiently fine `h`. The new Lean theorem
+turns that statement into an eventual natural-number threshold under the
+displayed analytic hypotheses. The retrieval receipt and search-process
+comparison for this exact source and compiled declaration follow below.

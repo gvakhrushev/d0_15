@@ -92,7 +92,7 @@ CASES: list[dict[str, Any]] = [
             "cubic nonvacuum midpoint cumulative matter record componentwise O(h^2) bound",
             "D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound vector norm Euclidean error duration M h^2 over 24",
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin Eq.24 delta over 2 same two-component CAR recurrence Euclidean lift",
-            "Eq.24 max u_j in I Psi_j^(h) - Psi(u_j) |I| sup_I Psi''' h^2 / 24 compound midpoint quadrature integral of Psi'",
+            "Eq.24 max u_j in I Psi_j^(h) - Psi(u_j) |I| sup_I Psi''' h^2 / 24 compound midpoint quadrature integral of Psi' fixed small normalized CAR slack survives for all sufficiently fine h",
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes h duration over N exists N0 delta over 2 every uniform refinement",
         ],
         "required_refs": [
@@ -119,8 +119,8 @@ CASES: list[dict[str, Any]] = [
                 "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
                 "blob": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
                 "sections": ["7.2"],
-                "scope_query_indexes": [14, 15],
-                "scope_query_sections": {"14": ["7.2"], "15": ["7.2"]},
+                "scope_query_indexes": [14],
+                "scope_query_sections": {"14": ["7.2"]},
             },
         ],
         "scope_review": (
@@ -139,7 +139,10 @@ CASES: list[dict[str, Any]] = [
             "two-component finite recurrence. Global C^3 regularity, vector third-derivative and "
             "envelope bounds remain supplied hypotheses. The new uniform-mesh theorem derives an "
             "N0 threshold from the same delta-over-two estimate and proves the existing CAR "
-            "complement positive for every N >= N0 with h=duration/N. The actual CAR preparation "
+            "complement positive for every N >= N0 with h=duration/N. Section 7.2 supplies the "
+            "finite-step Eq. (24) error and states that fixed small normalized CAR slack survives "
+            "for sufficiently fine h; the Lean result makes this eventual refinement claim "
+            "explicit under the supplied analytic bounds. The actual CAR preparation "
             "and generator are not reconstructed. "
             "The original CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, "
             "and physical native Book/clock/source selection remain separate and open."
