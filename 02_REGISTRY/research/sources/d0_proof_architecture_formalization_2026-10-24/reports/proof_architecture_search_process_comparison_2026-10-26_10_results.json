@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-search-comparison-v1",
-  "snapshot_commit": "30cabccc34283c655ef2ff93d1252a5d0d356e2c",
+  "snapshot_commit": "daec0239eff5473528c2c9dd802221b423ebe8d0",
   "worktree_dirty": false,
   "authority_source_digests": {
     "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
@@ -11,7 +11,7 @@
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
   },
-  "runner_sha256": "883b3fa9fa6d284109f6972e8f8558c8f1846fbd674cb914dc32af383bbf538b",
+  "runner_sha256": "94e8cb948cacc14b770350a14baf0c98329c689291ebc13635320b4870cdb5d8",
   "query_fixture_sha256": "dbbe10bad334798693ab6f92f5fbce3d75a9d6ee68226f2f3b8433ede40be55a",
   "comparison_scope": {
     "legacy": "gr_assembly.search over the existing assembly result records",
@@ -26,13 +26,15 @@
     "legacy_scoped_queries_with_expected_source": 0,
     "current_scoped_queries_with_expected_source": 7,
     "legacy_serialized_answer_bytes_total": 48,
-    "current_serialized_answer_bytes_total": 863415,
+    "current_serialized_answer_bytes_total": 864783,
     "legacy_average_answer_bytes": 2.0,
-    "current_average_answer_bytes": 35975.6,
+    "current_average_answer_bytes": 36032.6,
     "legacy_owner_bearing_queries": 0,
     "current_owner_bearing_queries": 8,
     "current_scoped_queries_with_expected_source_owner_link": 1,
     "current_expected_source_owner_link_count": 1,
+    "current_scoped_queries_with_expected_source_header_owner_declaration": 1,
+    "current_expected_source_header_owner_declaration_count": 1,
     "current_scoped_expected_sources_without_direct_owner_link": 7,
     "semantic_review_required_for_all_queries": true
   },
@@ -105,6 +107,13 @@
                 "status": "metadata_locator_only"
               }
             ],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
+            "source_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+            "source_blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+            "pin_status": "verified",
+            "direct_content": true,
             "source_refs": [
               {
                 "path": "A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
@@ -123,7 +132,7 @@
         ],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 30341
+        "serialized_answer_bytes": 30437
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -188,6 +197,20 @@
                 "status": "metadata_locator_only"
               }
             ],
+            "source_header_owner_declarations": [
+              {
+                "line": 4,
+                "field": "Existing owner",
+                "value": "PR #334, `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`",
+                "status": "source_document_declaration_only"
+              }
+            ],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "16850557ba85a3cf648a3a425a4b41ac9c9658982bb1ac55336e3939b1b1f896",
+            "source_commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+            "source_blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+            "pin_status": "verified",
+            "direct_content": true,
             "source_refs": []
           }
         ],
@@ -196,7 +219,7 @@
         ],
         "relevant_text_candidate_count": 2,
         "text_candidate_count_not_in_scoped_source_set": 8,
-        "serialized_answer_bytes": 57245
+        "serialized_answer_bytes": 57877
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -323,13 +346,20 @@
               }
             ],
             "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+            "source_commit": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+            "source_blob": "e5e31819492d670c81fc4a2871e1ef8cfa205c08",
+            "pin_status": "verified",
+            "direct_content": true,
             "source_refs": []
           }
         ],
         "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 39144
+        "serialized_answer_bytes": 39208
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -378,7 +408,7 @@
         "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 45842
+        "serialized_answer_bytes": 45874
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -427,7 +457,7 @@
         "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 51288
+        "serialized_answer_bytes": 51352
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -473,7 +503,7 @@
         "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 41113
+        "serialized_answer_bytes": 41145
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -527,6 +557,13 @@
             "owners": [],
             "assembly_results": [],
             "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "a63fe848bcd39cbf5fa0cbb8d823cf68b4080d0e6a703fd726e6917970818e56",
+            "source_commit": "4873b3c245a91bd8c9cb25bceeb82662e9f62944",
+            "source_blob": "6395c736c54d0c0a704d22ffdf046dbfc2c6c84b",
+            "pin_status": "verified",
+            "direct_content": true,
             "source_refs": [
               {
                 "path": "sources/d0_curved_native_preparation_2026-10-20/README.md",
@@ -545,7 +582,7 @@
         ],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 35012
+        "serialized_answer_bytes": 35108
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -599,6 +636,13 @@
             "owners": [],
             "assembly_results": [],
             "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "1318f8a3719bffd11c8d319a04beede4bd2c872365fc87960a1110c01a2274a7",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
             "source_refs": [
               {
                 "path": "sources/d0_same_history_price_composition_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/original_record_source.md",
@@ -635,7 +679,7 @@
         ],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 40386
+        "serialized_answer_bytes": 40450
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -681,7 +725,7 @@
         "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 35460
+        "serialized_answer_bytes": 35556
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -727,7 +771,7 @@
         "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 35751
+        "serialized_answer_bytes": 35815
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -819,7 +863,7 @@
         "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 41020
+        "serialized_answer_bytes": 41052
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -867,7 +911,7 @@
         "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 65371
+        "serialized_answer_bytes": 65403
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -1210,6 +1254,13 @@
                 "status": "metadata_locator_only"
               }
             ],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
+            "source_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+            "source_blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+            "pin_status": "verified",
+            "direct_content": true,
             "source_refs": [
               {
                 "path": "A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md#4-actual-two-step-price-with-the-original-readout-retained)",
@@ -1228,7 +1279,7 @@
         ],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 32816
+        "serialized_answer_bytes": 32848
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -1276,7 +1327,7 @@
         "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 38913
+        "serialized_answer_bytes": 38945
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -1432,6 +1483,13 @@
                 "status": "metadata_locator_only"
               }
             ],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "f6daf8f0ac5573b8be8d305ecf32f87f92b72f9b2276dd6f535a7465550114cc",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
             "source_refs": []
           },
           {
@@ -1441,6 +1499,13 @@
             "owners": [],
             "assembly_results": [],
             "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "076007feb29e5ea9f699d8f6411467499c4ff00809f9d30ac6499f9de49f074e",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
             "source_refs": []
           }
         ],
