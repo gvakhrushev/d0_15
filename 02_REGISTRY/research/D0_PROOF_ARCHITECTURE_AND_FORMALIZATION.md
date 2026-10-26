@@ -9224,8 +9224,11 @@ inventories remain pinned to their earlier clean source snapshot
 remain historical evidence and are not relabelled as current after this
 unrelated module change. The new target inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_history_declarations_2026-10-26.json`.
-Its clean source snapshot and checksum are recorded after this checkpoint is
-committed.
+It resolves **21/21** declarations from clean source snapshot
+`e0fc89ee12b42b1e043b94b8e1cc7b801b983b05` with source digest
+`4a1a705e04e028b14e0b43e0616e5d976ba091bd3137aa140b0b22cb9ec74150`,
+Lean 4.30.0, and `worktree_dirty=false`; its SHA-256 is
+`7ccb3c79dc7c4ec514eb328905a744b2d4b8446cf3557422a296c852532ccbfd`.
 
 This extends only the already formalized finite stencil/midpoint component.
 It does not formalize the original CAR construction, the unrestricted 40→3→1
