@@ -49,9 +49,9 @@
           ]
         },
         {
-          "ref": "1d94612f754864580a6268e56aabdff285a3581b",
+          "ref": "4b1db2654ed0b3314efc97859fc64a554fcc2d13",
           "path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
-          "sha256": "bf1e83ce2e835937d617940c92fc1d78b5ec0c0d62f475e6335053cd218bec02",
+          "sha256": "bd2c82c118c0532654a35610997940dcaf058251b6fe80e91227c53a76bbf7e8",
           "declaration_names": [
             "D0.Geometry.coframeMetricReadout_realizes_symmetric",
             "D0.Geometry.solderMetric_realizes_symmetric_tangent",
@@ -90,6 +90,18 @@
           ]
         },
         {
+          "ref": "4b1db2654ed0b3314efc97859fc64a554fcc2d13",
+          "path": "03_FORMALIZATION/D0/Algebra/FiniteGramDerivative.lean",
+          "sha256": "65b89305864cb933306cb930edf20afef8faf395a5203cb7f5dfdc63d9d43d5e",
+          "declaration_names": [
+            "D0.Algebra.finiteMatrixTransposeIsometry",
+            "D0.Algebra.finiteMatrixTransposeIsometry_apply",
+            "D0.Algebra.finiteGramTangent",
+            "D0.Algebra.finiteGramTangent_apply",
+            "D0.Algebra.finiteGram_hasFDerivAt"
+          ]
+        },
+        {
           "ref": "fe15cd8c9df4dccda2957e22acd66365e6908469",
           "path": "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
           "sha256": "6e3ac022152a2d6c3f2e5274626e9b9d223e830e2ebf5b26bb3dbbeaf158cbc0",
@@ -107,7 +119,7 @@
           ]
         }
       ],
-      "reported_state": "The source A and B units remain distinct. For A, the Lean adapter formalizes complete Q/K orbit coordinates on the finite raw-solder carrier, assuming IsUnit det(rawSolderMatrix N e x) at every reference site. The generic finiteGram_right_orbit_complete theorem in D0.Algebra is the shared orbit API and is directly consumed by the concrete IsRoleLorentz specialization; it requires an invertible reference frame but does not require eta to be invertible. The generic finiteGram_dressed_transport_compatible theorem now owns the frame-dressed endpoint Gram identity, and a4dDressedLink_metric_compatible specializes it with the existing IsRoleLorentz hypothesis and target-frame invertibility condition unchanged. The field theorem retains all-site nondegeneracy and refines to the determinant-one subgroup only when the two solder fields have equal determinant orientation at every site. This records proper determinant orientation but leaves time orientation unrestricted; the stronger SO+(1,3) source restriction is still open. The pinned source's endpoint isometry is proved for each link satisfying IsRoleLorentz, with invertibility required only at its target solder frame; the field corollary states the exact Q/K metric relation. For B, the source-convention adapter maps its frame by right multiplication with eta into the existing solder Gram carrier, retains the quadratic remainder, and proves the full matrix-variable Frechet derivative at the flat frame. The derivative composes with the finite solder readout over arbitrary LocalCoframeField N perturbations and is collected into one Frechet derivative for the whole output field x ↦ solderMetricMatrix N e x, whose value at each site is exactly the existing coframeMetricReadout. Matrix derivatives use the Frobenius norm and full fields use inherited finite Pi norms. The selected-action-to-Lean-carrier map, global connection elimination, physical metric/source selection and independent C0 acceptance remain open; acceptance_inferred=false."
+      "reported_state": "The source A and B units remain distinct. For A, the Lean adapter formalizes complete Q/K orbit coordinates on the finite raw-solder carrier, assuming IsUnit det(rawSolderMatrix N e x) at every reference site. The generic finiteGram_right_orbit_complete theorem in D0.Algebra is the shared orbit API and is directly consumed by the concrete IsRoleLorentz specialization; it requires an invertible reference frame but does not require eta to be invertible. The generic finiteGram_dressed_transport_compatible theorem now owns the frame-dressed endpoint Gram identity, and a4dDressedLink_metric_compatible specializes it with the existing IsRoleLorentz hypothesis and target-frame invertibility condition unchanged. The field theorem retains all-site nondegeneracy and refines to the determinant-one subgroup only when the two solder fields have equal determinant orientation at every site. This records proper determinant orientation but leaves time orientation unrestricted; the stronger SO+(1,3) source restriction is still open. The pinned source's endpoint isometry is proved for each link satisfying IsRoleLorentz, with invertibility required only at its target solder frame; the field corollary states the exact Q/K metric relation. For B, the source-convention adapter maps its frame by right multiplication with eta into the existing solder Gram carrier, retains the quadratic remainder, and proves the full finite-matrix Frechet derivative at the flat frame. The shared algebra layer now proves the generic finiteGram derivative at every frame; the pinned flat J2 derivative is its specialization through H ↦ 1+H. That derivative composes with the finite solder readout over arbitrary LocalCoframeField N perturbations and is collected into one Frechet derivative for the whole output field x ↦ solderMetricMatrix N e x, whose value at each site is exactly the existing coframeMetricReadout. Matrix derivatives use the Frobenius norm and full fields use inherited finite Pi norms. The selected-action-to-Lean-carrier map, global connection elimination, physical metric/source selection and independent C0 acceptance remain open; acceptance_inferred=false."
     },
     {
       "id": "smooth-parametrix",
