@@ -95,8 +95,8 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
             "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
             "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26_gram_quotient.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_gram_quotient.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26_fintype_only.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_fintype_only.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_fe15cd8c.json",
         ],
         "required_sources": [
@@ -129,14 +129,14 @@ CASES: list[dict[str, Any]] = [
         "queries": [
             "finiteGram_add_smul_expand finite Gram expansion arbitrary base frame quadratic remainder",
             "finiteGram_add_smul_difference_quotient exact normalized Gram difference full quadratic remainder",
-            "finite_gram_orbit_shared_api_declarations_2026-10-26_gram_quotient.json finiteGram_add_smul_difference_quotient",
+            "finite_gram_orbit_shared_api_declarations_2026-10-26_fintype_only.json finiteGram_add_smul_difference_quotient",
             "finite Gram expansion Theta plus t C two sided linear variation exact quadratic term",
             "A4D Solder Metric Completion finiteGram_add_smul_difference_quotient solderMetric_flat_tangent j2DetectorMetricPath_symmetric_difference_quotient",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
             "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_gram_quotient.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_fintype_only.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
