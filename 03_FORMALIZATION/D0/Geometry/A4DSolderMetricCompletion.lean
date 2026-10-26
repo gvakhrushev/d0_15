@@ -3,7 +3,6 @@ import D0.Geometry.ArchiveRoleEquivalence
 import D0.Algebra.FiniteGramDerivative
 import D0.Algebra.FiniteGramTangent
 import Mathlib.Analysis.Calculus.FDeriv.Prod
-import Mathlib.Analysis.Calculus.FDeriv.Pow
 import Mathlib.Analysis.Matrix.Normed
 
 /-!
@@ -285,45 +284,41 @@ local instance : NormedAddCommGroup (Matrix Role Role ℝ) := Matrix.normedAddCo
 local instance : NormedSpace ℝ (Matrix Role Role ℝ) := Matrix.normedSpace
 
 /-- Directional Fréchet derivative of the source Gram path at the flat frame.
-The derivative map sends a scalar path parameter to that scalar times the
-full linear coefficient; the exact quadratic remainder gives the limit. -/
+It follows by composing the generic finite Gram derivative with the straight
+source path `t ↦ 1 + tH`; the exact quadratic remainder is recorded separately. -/
 theorem j2DetectorMetricPath_hasFDerivAt_direction (H : Matrix Role Role ℝ) :
     HasFDerivAt (fun t : ℝ => j2DetectorMetricPath (t • H))
       ((1 : ℝ →L[ℝ] ℝ).smulRight
         (H * roleLorentzMetric + roleLorentzMetric * H.transpose)) 0 := by
-  let L : Matrix Role Role ℝ := H * roleLorentzMetric + roleLorentzMetric * H.transpose
-  let R : Matrix Role Role ℝ := H * roleLorentzMetric * H.transpose
-  have hlinear : HasFDerivAt (fun t : ℝ => t • L)
-      ((1 : ℝ →L[ℝ] ℝ).smulRight L) 0 := by
-    simpa using (hasFDerivAt_id (0 : ℝ)).smul_const L
-  have hpow : HasFDerivAt (fun t : ℝ => t ^ 2)
-      (0 : ℝ →L[ℝ] ℝ) 0 := by
-    simpa using (hasFDerivAt_pow (𝕜 := ℝ) 2 (x := (0 : ℝ)))
-  have hquadratic : HasFDerivAt (fun t : ℝ => t ^ 2 • R)
-      (0 : ℝ →L[ℝ] Matrix Role Role ℝ) 0 := by
-    simpa using hpow.smul_const R
-  have hconstant : HasFDerivAt (fun _ : ℝ => roleLorentzMetric)
-      (0 : ℝ →L[ℝ] Matrix Role Role ℝ) 0 :=
-    hasFDerivAt_const _ _
-  have hpolynomial_eq :
-      (fun t : ℝ => roleLorentzMetric + t • L + t ^ 2 • R) =
-        ((fun _ : ℝ => roleLorentzMetric) + (fun t : ℝ => t • L) +
-          (fun t : ℝ => t ^ 2 • R)) := by
-    funext t
-    rfl
-  have hpolynomial_sum := (hconstant.add hlinear).add hquadratic
-  have hpolynomial : HasFDerivAt
-      (fun t : ℝ => roleLorentzMetric + t • L + t ^ 2 • R)
-      ((1 : ℝ →L[ℝ] ℝ).smulRight L) 0 := by
-    rw [hpolynomial_eq]
-    exact hpolynomial_sum.congr_fderiv (by abel)
-  have hpath : (fun t : ℝ => j2DetectorMetricPath (t • H)) =
-      (fun t : ℝ => roleLorentzMetric + t • L + t ^ 2 • R) := by
-    funext t
-    dsimp [L, R]
-    exact j2DetectorMetricPath_smul_expand H t
-  rw [hpath]
-  exact hpolynomial
+  have hcurve : HasFDerivAt
+      (fun t : ℝ => (1 : Matrix Role Role ℝ) + t • H)
+      ((1 : ℝ →L[ℝ] ℝ).smulRight H) 0 := by
+    have h : HasFDerivAt (fun t : ℝ => t • H)
+        ((1 : ℝ →L[ℝ] ℝ).smulRight H) 0 :=
+      (hasFDerivAt_id (0 : ℝ)).smul_const H
+    exact h.const_add (1 : Matrix Role Role ℝ)
+  have houter := D0.Algebra.finiteGram_hasFDerivAt
+    roleLorentzMetric (1 : Matrix Role Role ℝ)
+  have houter' : HasFDerivAt
+      (fun X : Matrix Role Role ℝ => D0.Algebra.finiteGram roleLorentzMetric X)
+      (D0.Algebra.finiteGramTangent roleLorentzMetric 1)
+      ((1 : Matrix Role Role ℝ) + (0 : ℝ) • H) := by
+    simpa using houter
+  have hcompose := houter'.comp (0 : ℝ) hcurve
+  have hderivative :
+      (D0.Algebra.finiteGramTangent roleLorentzMetric
+        (1 : Matrix Role Role ℝ)).comp ((1 : ℝ →L[ℝ] ℝ).smulRight H) =
+      (1 : ℝ →L[ℝ] ℝ).smulRight
+        (H * roleLorentzMetric + roleLorentzMetric * H.transpose) := by
+    apply ContinuousLinearMap.ext
+    intro t
+    change D0.Algebra.finiteGramTangent roleLorentzMetric
+        (1 : Matrix Role Role ℝ) (t • H) =
+      t • (H * roleLorentzMetric + roleLorentzMetric * H.transpose)
+    rw [D0.Algebra.finiteGramTangent_apply]
+    simp
+  have hcompose' := hcompose.congr_fderiv hderivative
+  simpa [Function.comp_def, j2DetectorMetricPath] using hcompose'
 
 /-- On the pinned symmetric direction `H(q)=qη/2`, the directional
 derivative above evaluates to `q`. -/
