@@ -25551,6 +25551,687 @@ if __name__ == '__main__':
 }
 ```
 
+## 7bx. A correlated native SOURCE gives a strict full Book-price contrast with every Golden gate fixed
+
+26 October2026. SAME #334 / constitutive / native-programme-v1, calculation input92d025db; integration inputbfea3aa6.
+Phase: native realization / SOURCE-to-controls composition. The named input
+is7bp556--558's native controlled-reflection factory, not a new geometric
+root or action. The original product preparation made each cell's cold
+corner cI, so that construction's displayed boost jet used a comparison of
+SOURCE pulse angles. Here one ACTUAL native preparation correlates the three
+controls; chronological order then changes the return at fixed native G.
+The decisive result is a finite two-programme comparison, not a replacement
+of a free SOURCE angle by an unadmitted continuous QUERY angle.
+
+This consumes the previously preserved shared-source lead. Its870-stage
+inventory was previously only an unverified proposal. We now construct it,
+remove an exact redundant factor on ALL columns, derive every fine operator
+and compare two actual fixed-G words with equal native inventory. A genuine
+paid common clock makes the full declared scene-Hodge H01+J contrast strict.
+The programme-to-original-GR field map, physical original-palette admission,
+complete Cost/Info/WORK valuation and all42 source/refinement remain open.
+
+The concurrent7bu--7bw metric/stationary/archive applications are retained
+unchanged. Their606--607 use an INTERNAL base at every stage with a
+projection/involution return. Our physical-port RawZone words are a different
+base and have the nonscalar corners below; we use the finite VALUE bound,
+not606--607 or their AF source gain611. There is no contradiction or duplicate
+source-germ proof. Nor is unique microscopic selection or equality of every
+native path metric a prerequisite added to the first-positive-GR interface.
+
+### One shared preparation, with its actual full carrier and cancelled factor
+
+Keep7bp's exact16-wire layout: root SOURCE0, utility1, copies2/4/6,
+utilities3/5/7, physical P8, CAR roles9..12, LIVE Spin13/14 and immutable
+oldRIGHT15. SOURCE0..7 and P start blank; DATA/Spin/oldRIGHT are arbitrary.
+Let Fcopy=CX(0,2)CX(0,4)CX(0,6). For the four owned middles
+M_I,M_Z,M_Hx,M_Hy, prepare
+
+    A_full=Fcopy [G0 G1 G3 G5 G7],
+    U_full=A_full^* M_Hy M_Hx M_Z M_I A_full.           (614)
+
+Every SOURCE G is parked on physical P with its real charged inverse; none
+is a free ordinary-WORK rotation. M_H acts as(I,H,-H,-I) on its pair, and
+M_I is the owned Z_root. Hx,Hy are EXACT previous native reflections from
+557; no X/Y/H gate primitive or adjustable angle is added.
+
+The actual tuple has18G+610CX+242SourceI=870 stages, inverse1426. Utility1
+is unused by EVERY other completed factor. Its parked G1 commutes with the
+rest and cancels exactly with its inverse on all columns, including the
+physical33 completion. Therefore A_red omitting G1 gives the SAME endpoint
+operator with16G+598CX+238SourceI=852 stages, inverse1392. Bit1 stays as a
+passive BLANK in the same16-wire carrier; its unprepared heat modes are not
+deleted. The two raw chronological heats of870/852 need not agree even
+though their endpoints do. We use only852 below.
+
+Physical G remains wire8; every SourceI uses(8,13,14); no G/CX touches Spin,
+and old15 is never acted on. SOURCE copies2/4/6 and utility1 return0 on the
+actual promised input. That does not make the other columns free or turn
+those registers into arbitrary protected inputs. At true oldRIGHT128 the
+input rank is8192; active full dimension4194304 and physical33 dimension
+69206016, before clock/padding. Spin's multiplicity is counted once.
+
+### Complete source instrument: correlated controls do not inherit the old scalar corner
+
+For a Hermitian involution H define
+
+    A_H=pI+p^2H, B_H=p^2I+pH, E_H=ap(H-I),
+    A_H^2+E_H^2=B_H^2+E_H^2=I.
+
+Let h encode the three final utilities3/5/7 and form ordered products V0_h
+of A_H/E_H and V1_h of B_H/E_H, with the extra sign(-1)^|h| in V1_h.
+This sign includes the I-cell's root phase. The whole prepared column has
+16 fine operator positions on root0 plus the three utilities (all nonzero
+for the owned frames below; degenerate other H may give zero branches):
+
+    K_(0,h)=p V0_h+p^2 V1_h,
+    K_(1,h)=ap(V1_h-V0_h),
+    sum_(root,h) K^*K=p sum_h V0_h^*V0_h
+                       +p^2 sum_h V1_h^*V1_h=I.         (615)
+
+The16-output statement is for the prepared column only; all256 SOURCE
+basis columns stay in the uncut unitary and full heat. No SOURCE outcome
+is survival-normalized or deleted. The checker derives
+this independently from actual SOURCE preparation/fanout/middles/unfanout/
+inverse as exact noncommutative polynomials, and verifies every output and
+TP for arbitrary DATA/Spin/oldRIGHT. It does not allocate a65536-column
+native matrix. These products are valid in either QUERY order below.
+
+The actual full blank-input corner for chronological order(H1,H2,H3) is
+
+    C=p A_H3 A_H2 A_H1+p^2 B_H3 B_H2 B_H1.              (616)
+
+It is generally NONSCALAR and non-Hermitian. With the actual cut, full
+feedback uses F=I-C^*C, Q=(1-zeta)I+zeta C^*C, J=-Tr log Q. Its genuine
+first source, if an admitted comparison lift is supplied, is
+DJ=-2zeta ReTr(Q^-1 C^*DC), not the old chiI/boost-gain formula559.
+For C=<psi|M|psi>, retain BOTH preparation legs and the middle variation:
+DC=<Dpsi|M|psi>+<psi|M|Dpsi>+<psi|DM|psi>. Because M need not be Hermitian,
+the first two MATRIX terms cannot be replaced by2Re. No independent SOURCE
+normal, input/preparation or controlled-frame reaction is silently frozen.
+
+The full registered CQ state, IF the corresponding readout is actually run,
+is direct-sum K rho K^*. Its conditional quantum entropies must be retained:
+these fine K are not generally scalar times unitary. Actual WORK operators
+still give sum K^*W_K K with all their derivatives. No old574/7bt Info,
+original0/10 tariff or whole Cost−Info law is transferred to this new tape.
+The finite comparison below is for the already declared Book functional;
+there is no new measurement/dispatcher, probability filter or fitted price.
+
+### Two actual programmes change only chronological QUERY order
+
+Take order0=(I,Z1,Hx,Hy) and order1=(I,Hx,Z1,Hy). SOURCE preparation, native
+G/SI values, actual input, all outputs, raw primitive inventory and carrier
+are identical. We permute complete existing middle blocks only; no SOURCE
+or QUERY pulse is continuously varied. Both852-stage core tuples and both
+1392-stage inverses are materialized/validated, leaf-by-leaf against the
+owned native inverse. They are different operator configurations and are
+NOT asserted to implement the same supplied future task or to be equivalent
+prospective implementations.
+
+The three owned Pauli elements X=PX,Y=PY,Z=Z1 obey the usual2x2 algebra with
+multiplicity8 on ALL original CAR16 grades. The fixed native frames are
+
+    H1=Z, H2=cZ+sX, H3=cZ+sY,
+    c=p^3=sqrt5-2, s=2ap, s^2=4c, c^2+4c-1=0.
+
+This is an exact algebraic reduction, not a code-only truncation. Keeping
+the real phase Spin produces the conjugate complex blocks with their true
+multiplicities. At genuine oldRIGHT128, the full rank8192 trace is4096 times
+the corresponding Pauli2 trace. Passive SOURCE/work columns belong in HEAT,
+not an extra multiplier of this initialized cut.
+
+Let C0,C1 be616 for the two orders; Ti=Tr2(Ci^*Ci), Di=|det2 Ci|^2. Direct
+Gaussian-rational polynomial reduction in the displayed c/s relations gives
+
+    DeltaT=T1-T0=288c^6=4c^3s^2(1+c^4)>0,
+    DeltaD=D1-D0=-32c^11(4+9c)
+                       =8c^8s^2(32-137c)<0.            (617)
+
+Both nonscalar/non-Hermitian corners are used, with their actual singular
+values. Qdet_i=(1-zeta)^2+(1-zeta)zeta Ti+zeta^2 Di. No scalar replacement
+of either eigenband or transfer of the old beta/chi common map is made.
+
+For zeta=2^-20, c lies strictly between7/30 and1/4. TP615 makes each Ci a
+contraction, so0<Qdet_i<=1 and DeltaD>=-1. Consequently
+
+    Qdet_1-Qdet_0
+      >zeta[(1-zeta)288(7/30)^6-zeta]>zeta/24,
+    J0-J1=4096 log(Qdet_1/Qdet_0)>1/6144.                (618)
+
+The last bound uses log(y)>(y-1)/y for y>1 and Qdet_1<=1. All numerical
+inequality decisions in the checker are rational; the two polynomial
+identities617 are exact, not floating eigenvalue/rank evidence. SOURCE
+Golden gates remain fixed throughout. This is already a genuine finite
+feedback-price contrast between explicit native words in the DECLARED
+addressed G/CX/SourceI profile. Membership in that profile is not a proof of
+its selection by the original literal-star palette or full G0 physics.
+
+### Include the whole raw scene heat with a real paid clock
+
+Use EXACTLY7bh501--502's declared scene/raw-cycle cochain on S=K(9,11,13),
+all33 scene modes, normalized D_S+2I and BOTH Hodge grades. The common input
+cut is stage0 with SOURCE/P/padding blanks, free DATA/Spin/oldRIGHT. Its
+feedback completion U_hist=T^N on C0 and identity on C1 compresses to the
+actual endpoint C_i. The determinant occurs once; it is not multiplied byN,
+and pricing both heat grades does not double its feedback.
+
+We cannot declare the RawZone heat constant from an endpoint spectrum or
+macro-block identity: actual raw port gates need not commute with scene
+weights. Instead consume7bi's FULL VALUE bound. At beta=2p^2<1, its
+constant C0_heat=exp(2beta)/11<1. Take the SAME reference word for both
+comparisons: identity in the core slots and the actual commuting padding
+in the rest. Its total product isI. Reference identity slots are only a
+mathematical comparison device, never inserted as uncharged native stages.
+Each actual core has m=852, A_i=sum||g_i-h_i||<=1704. Therefore
+
+    |H01,1-H01,0| <= C0_heat(A0+A1)/N <3408/N.           (619)
+
+Every raw stage, dark mode, work column and both Hodge grades is included.
+The absolute trace is not rank-normalized. The common baseline and the
+index term remain in the logarithm. No endpoint-only heat or native
+physical action law is assumed to obtain619.
+
+Choose the literal common length N=852*32768=27918336. Append13958742
+actual two-stage CX(16,17);CX(16,17) identity loops to EACH core. These are
+ordinary native gates on fresh QUERY-work bits16/17;18 is the third reserved
+passive blank retained in the carrier. The loops commute with scene weights
+and multiply to identity on ALL columns. Their expanded count is27917484,
+not one macro stage. The complete native inventories are identically
+16G+(N-254)CX+238SourceI=N; all G/SI addressing and oldRIGHT protections
+still hold. Every preparation, core and padding gate is counted.
+
+The finite conservative Word constructor validates this large expansion by
+structural induction and its actual raw leaves; it is not a new native
+primitive. Only the852-stage core tuples are materialized. The27-million
+Gate tuple/heat matrix is intentionally not allocated. The exact constructor,
+repeat count and complete leaf validation define the entire finite word.
+All8 blank padding modes stay in heat and input rank stays8192. The physical
+WORLD is33*2^24, with n0=33N*2^24, n1=392N*2^24 and the index359N*2^24
+INSIDE502's log. Constant-rank input is not a deletion of those columns.
+
+Combining the rational bounds gives the strict full declared price result
+
+    (H01+J)_0-(H01+J)_1
+          >1/6144-1/8192=1/24576>0.                    (620)
+
+Under the SAME explicitly declared stage0 Rayleigh realization567, the
+endpoint restores the physical P0 scene input in both programmes. Their
+Rayleigh VALUES agree, so620 also compares that S_hist. R is not set to0.
+An independently changed scene, cut, WORK or another selected R functional
+still needs its actual source; this equality is not an identification with
+the original physical H+J+R/Cost−Info programme.
+
+### Exact parent application and remaining physical bridge
+
+Correlated SOURCE preparation now provides an actual fixed-angle native
+operator family whose full-cut Book return and complete declared H01+J
+price depend on ordered QUERY operations. The old scalar-corner blindness
+is removed by a concrete preparation/control map. The result is stronger
+than a nonzero formal pulse derivative: both finite programmes are explicit
+native words with the same carrier, clock and inventory, and620 includes
+the whole declared scene heat. The cost of actual padding is retained.
+
+This is supporting native SOURCE-to-controls work, not the final substitution
+of the physical GR source. There is no proved map making these two word
+configurations actual variations of the original coframe/link/matter fields
+at fixed complete initial state, no all42 covector/gain or Hessian match,
+and no actual Book/cut/Info/work binding to the original field execution. Finite programme edits do
+not by themselves establish continuous Euler stationarity, a preferred
+field configuration, a same-task minimum or refinement. The original
+nonvacuum Einstein family remains unchanged and available to its eventual
+consumer. No new action, detector, tariff, task, selector or assembly
+acceptance/discharge is introduced. GR_closed=false; positive_gr/raw216
+and selected native physical HJR remain open.
+
+The new SINGLE checker below loads only pinned7bp/nested7bo helper
+definitions, excluding old math suites. It constructs/verifies the new
+870/852 words and inverses, every prepared SOURCE output and generic TP,
+both new padded852 cores/inverses and the finite large-word construction.
+It checks both complete16-Pauli Kraus families, exact617 and rational618--620,
+including a native8-column CX² control. No original CAR/boost/root/full128,
+Lean, old heat certificate or enormous padded matrix is replayed. All final
+counts/certificates come from the new literal inputs; no old scalar gain or
+physical closure status is promoted. Run from repository root with assertions
+enabled.
+
+```python
+"""One shared SOURCE, partial native fanout, and the actual four owned middles.
+
+Definitions-only imports exclude old
+matrix/math suites.  Native Gate tuples and inverses are small; prepared-output
+identities are checked as EXACT noncommutative polynomials in the three owned
+Hermitian involutions, not as a huge native matrix.  The same16-wire carrier,
+including the passive blank utility1, is retained in the reduced word.
+"""
+import sys
+sys.dont_write_bytecode = True
+from pathlib import Path
+import hashlib
+import json
+import types
+
+
+PRIMARY = Path('02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md').resolve()
+CODE_BYTES = 17596
+CODE_SHA256 = 'c658c3f67d8e61d91a339e9ffd6ad5c1b26922979ebf707e8aaa6b9caf0f77dc'
+MATH_MARKER = '"""Changed native cold-jet application: exact original D and native reflection frame."""'
+
+
+def load_owned_definitions():
+    source = PRIMARY.read_text(encoding='utf-8')
+    section = source.index('## 7bp. ')
+    a = source.index('```python\n', section) + len('```python\n')
+    b = source.index('\n```', a)
+    code = source[a:b].encode('utf-8')
+    if len(code) != CODE_BYTES or hashlib.sha256(code).hexdigest() != CODE_SHA256:
+        raise RuntimeError('owned 7bp fenced-code pin changed')
+    text = code.decode('utf-8')
+    if MATH_MARKER not in text:
+        raise RuntimeError('definitions/mathematics separator absent')
+    prefix = text.split(MATH_MARKER, 1)[0]
+    owner = types.ModuleType('_d0_correlated_source_owned')
+    owner.__file__ = str(PRIMARY)
+    sys.modules[owner.__name__] = owner
+    exec(compile(prefix, str(PRIMARY), 'exec'), owner.__dict__)
+    owner.CORRELATED_PROVENANCE = {
+        'primary_source_path': str(PRIMARY),
+        '7bp_fenced_code_bytes': len(code),
+        '7bp_fenced_code_sha256': hashlib.sha256(code).hexdigest(),
+        '7bp_definitions_prefix_bytes': len(prefix.encode('utf-8')),
+        '7bp_definitions_prefix_sha256': hashlib.sha256(prefix.encode('utf-8')).hexdigest(),
+        'nested_7bo': owner.owned.PROVENANCE,
+        'old_math_or_matrix_suites_executed': False,
+    }
+    return owner
+
+
+def build_variant(owner, reduced=False):
+    if type(reduced) is not bool:
+        raise owner.ne.DomainError('reduced must be Boolean')
+    c = owner.Compiler(16, 8, (13, 14), (15,))
+    cells = owner.build_four_cells()['cells']
+    middle = c.seq(*(cell['middle'] for cell in cells))
+    source_births = (0, 3, 5, 7) if reduced else (0, 1, 3, 5, 7)
+    birth = c.seq(*(owner.parked_g(c, q) for q in source_births))
+    fanout = c.seq(c.cx(0, 2), c.cx(0, 4), c.cx(0, 6))
+    A = c.seq(birth, fanout)
+    word = c.seq(A, middle, c.inv(A))
+    e = c.execution(word, blank_wires=tuple(range(9)), report_bits=tuple(range(8)),
+                    max_expanded_stages=852 if reduced else 870)
+    return {'compiler': c, 'source_births': source_births, 'birth': birth,
+            'fanout': fanout, 'preparer': A, 'middle': middle,
+            'word': word, 'execution': e, 'reduced': reduced}
+
+
+def native_inventory_report(owner):
+    result = []
+    for reduced in (False, True):
+        built = build_variant(owner, reduced)
+        c, word, e = built['compiler'], built['word'], built['execution']
+        counts = c.counts(word).as_dict()
+        expected = ({'G': 18, 'CX': 610, 'SourceI': 242, 'N': 870,
+                     'g_port': 18, 'g_off': 0} if not reduced else
+                    {'G': 16, 'CX': 598, 'SourceI': 238, 'N': 852,
+                     'g_port': 16, 'g_off': 0})
+        assert counts == expected and len(e.gates) == expected['N']
+        iv = owner.ne.inventory(e, max_qubits=16, max_expanded_stages=expected['N'])
+        assert iv.cut_rank == 128 and iv.full_dimension == 65536
+        leaves = c._leaves(word, tuple(range(16)))
+        assert all(g.wires == (8,) for g in leaves if g.op == 'G')
+        assert all(g.wires == (8, 13, 14) for g in leaves if g.op == 'SourceI')
+        assert all(15 not in g.wires for g in leaves)
+        assert all(set(g.wires).isdisjoint((13, 14)) for g in leaves if g.op != 'SourceI')
+        if reduced:
+            assert all(1 not in g.wires for g in e.gates)
+        inverse = tuple(c.iter_raw(c.inv(word)))
+        expected_inverse = owner.ne.inverse_word(e, max_qubits=16,
+                                                max_expanded_stages=len(inverse))
+        assert inverse == expected_inverse
+        inv_counts = c.counts(c.inv(word)).as_dict()
+        assert inv_counts == ({'G': 18, 'CX': 610, 'SourceI': 798, 'N': 1426,
+                               'g_port': 18, 'g_off': 0} if not reduced else
+                              {'G': 16, 'CX': 598, 'SourceI': 778, 'N': 1392,
+                               'g_port': 16, 'g_off': 0})
+        result.append({'reduced': reduced, 'counts': counts, 'inverse_counts': inv_counts,
+                       'inverse_leafwise_owned': True, 'validation': c.validate(word),
+                       'blank_wires': e.blank_wires, 'unknown_wires': iv.unknown_wires,
+                       'input_rank_one_old_qubit': iv.cut_rank,
+                       'active_dimension_one_old_qubit': iv.full_dimension})
+    # This factorization is on ALL columns, not merely input utility1=0.
+    # A = G1 A_rest; [G1,A_rest]=[G1,M]=0 for COMPLETED parked factors.
+    # All other completed factors exclude bit1, and parkedG1 restores P/Spin.
+    full = build_variant(owner, False)
+    reduced = build_variant(owner, True)
+    c = full['compiler']
+    for w in (reduced['birth'], reduced['fanout'], reduced['middle']):
+        assert all(1 not in g.wires for g in c._leaves(w, tuple(range(16))))
+    utility = owner.parked_g(c, 1)
+    assert c.counts(utility).as_dict() == {'G': 1, 'CX': 6, 'SourceI': 0,
+                                         'N': 7, 'g_port': 1, 'g_off': 0}
+    assert c.counts(c.inv(utility)).as_dict() == {'G': 1, 'CX': 6, 'SourceI': 4,
+                                                'N': 11, 'g_port': 1, 'g_off': 0}
+    return {
+        'layout': {'qubits': 16, 'SOURCE_root': 0, 'copies': (2, 4, 6),
+                   'utilities_original': (1, 3, 5, 7), 'physical_port': 8,
+                   'DATA_roles': (9, 10, 11, 12), 'phase_Spin': (13, 14),
+                   'immutable_oldRIGHT': (15,)},
+        'variants': result,
+        'same_full_carrier_and_true_blank_cut': True,
+        'true_oldRIGHT128_input_rank': 8192,
+        'true_oldRIGHT128_active_dimension': 4194304,
+        'true_oldRIGHT128_physical33_dimension': 69206016,
+        'all_column_utility1_cancellation':
+            'A=G1*Arest; completedG1 commutes with Arest/M; Arest†G1†MG1Arest=Arest†MArest',
+        'cancellation_support_check': 'all other completed factors and their raw leaves excludewire1',
+        'parked_factor_identity_consumed': 'G1 tensor I_P,Spin on activeplane; identityonphysical31complement',
+        'raw_stages_removed': 18,
+        'passive_bit1_thermal_columns_or_blank_boundary_dropped': False,
+        'old_or_new_full_native_matrix_allocated': False,
+        'identical_endpoint_implies_identical_raw_clock_heat': False,
+        'source_continuous_actor_or_controller_admission_inferred': False,
+    }
+
+
+def run_prepared_semantics(owner):
+    """EXACT prepared-column and TP identities in the free involution algebra."""
+    F = owner.ne.GOLDEN_FIELD
+    a, p = F.convert(owner.ne.A), F.convert(owner.ne.P)
+    one, zero = F.one, F.zero
+    c, s = p**3, 2*a*p
+    # A polynomial maps a noncommuting word in Z,Hx,Hy to a REAL Q(a) scalar.
+    def clean(poly):
+        return {w:v for w,v in poly.items() if v != zero}
+    def add(P, Q):
+        ans = dict(P)
+        for w,v in Q.items(): ans[w] = ans.get(w,zero)+v
+        return clean(ans)
+    def scale(P, x):
+        return clean({w:x*v for w,v in P.items()})
+    def reduce_word(w):
+        stack=[]
+        for h in w:
+            if stack and stack[-1] == h: stack.pop()
+            else: stack.append(h)
+        return tuple(stack)
+    def mul(P, Q):
+        ans={}
+        for w,v in P.items():
+            for u,t in Q.items():
+                z=reduce_word(w+u);ans[z]=ans.get(z,zero)+v*t
+        return clean(ans)
+    ident={():one}
+    invol=tuple({(j,):one} for j in range(3))
+    def source_g(state, q, inverse=False):
+        out={};mask=1<<(7-q)
+        for bits,poly in state.items():
+            out[bits]=add(out.get(bits,{}),scale(poly,a))
+            factor=(p if bits&mask else -p) if inverse else (-p if bits&mask else p)
+            out[bits^mask]=add(out.get(bits^mask,{}),scale(poly,factor))
+        return {b:P for b,P in out.items() if P}
+    def fanout(state):
+        out={}
+        for bits,poly in state.items():
+            dest=bits ^ (((1<<5)|(1<<3)|(1<<1)) if bits&(1<<7) else 0)
+            out[dest]=add(out.get(dest,{}),poly)
+        return {b:P for b,P in out.items() if P}
+    def middle(state):
+        out={}
+        for bits,poly in state.items():
+            # I-cell contributes Z_root. Target products multiply on the LEFT.
+            ans=scale(poly,-one if bits&(1<<7) else one)
+            for j,(left,right) in enumerate(((2,3),(4,5),(6,7))):
+                z0,z1=(bits>>(7-left))&1,(bits>>(7-right))&1
+                if z0 != z1: ans=mul(invol[j],ans)
+                if z0: ans=scale(ans,-one)
+            out[bits]=ans
+        return out
+    final_states=[]
+    for reduced in (False, True):
+        births=(0,3,5,7) if reduced else (0,1,3,5,7)
+        state={0:ident}
+        for q in births:state=source_g(state,q)
+        state=fanout(state)
+        assert all(((bits>>7)&1)==((bits>>5)&1)==((bits>>3)&1)==((bits>>1)&1)
+                   for bits in state)
+        state=middle(state)
+        state=fanout(state) # exact uncopy; every middle is SOURCE-diagonal
+        assert all(bits & ((1<<5)|(1<<3)|(1<<1)) == 0 for bits in state)
+        for q in reversed(births):state=source_g(state,q,True)
+        assert all(bits & ((1<<6)|(1<<5)|(1<<3)|(1<<1)) == 0 for bits in state)
+        assert len(state)==16
+        final_states.append(state)
+    assert final_states[0]==final_states[1]
+    state=final_states[0]
+    # Independent formula for ALL16 root+utility outputs.
+    V0,V1={},{}
+    for h in range(8):
+        P0,P1=ident,ident
+        for j in range(3):
+            bit=(h>>(2-j))&1
+            A=add(scale(ident,p),scale(invol[j],p*p))
+            B=add(scale(ident,p*p),scale(invol[j],p))
+            E=scale(add(invol[j],scale(ident,-one)),a*p)
+            P0=mul(E if bit else A,P0)
+            P1=mul(E if bit else B,P1)
+        V0[h],V1[h]=P0,scale(P1,-one if bin(h).count('1')%2 else one)
+        for root in (0,1):
+            expected=(add(scale(V0[h],p),scale(V1[h],p*p)) if root==0 else
+                      scale(add(V1[h],scale(V0[h],-one)),a*p))
+            bits=(root<<7)|(((h>>2)&1)<<4)|(((h>>1)&1)<<2)|(h&1)
+            assert state[bits]==expected
+    total={}
+    for K in state.values():
+        adj={tuple(reversed(w)):v for w,v in K.items()} # coefficients are REAL
+        total=add(total,mul(adj,K))
+    assert total==ident
+    # A finite Pauli-algebra image verifies a genuinely nonscalar SOURCE jet.
+    # The three owned involutions are Z, cZ+sX, cZ+sY; this is NOT a new CAR scan.
+    def ca(x,y):return (x[0]+y[0],x[1]+y[1])
+    def cm(x,y):return (x[0]*y[0]-x[1]*y[1],x[0]*y[1]+x[1]*y[0])
+    def pm(P,Q):
+        out={}
+        for i,x in P.items():
+            for j,y in Q.items():
+                if i==0:k,phase=j,(one,zero)
+                elif j==0:k,phase=i,(one,zero)
+                elif i==j:k,phase=0,(one,zero)
+                else:
+                    k=6-i-j
+                    sign=one if (i,j) in ((1,2),(2,3),(3,1)) else -one
+                    phase=(zero,sign)
+                out[k]=ca(out.get(k,(zero,zero)),cm(cm(x,y),phase))
+        return {i:x for i,x in out.items() if x!=(zero,zero)}
+    Himage=({3:(one,zero)},{3:(c,zero),1:(s,zero)},{3:(c,zero),2:(s,zero)})
+    def image(P):
+        ans={}
+        for w,v in P.items():
+            product={0:(v,zero)}
+            for h in w:product=pm(product,Himage[h])
+            for i,x in product.items():ans[i]=ca(ans.get(i,(zero,zero)),x)
+        return {i:x for i,x in ans.items() if x!=(zero,zero)}
+    derivative=image(add(V1[0],scale(V0[0],-one)))
+    assert derivative[3] == (-c*c*(one+c+c*c),-c*c*s*s)
+    cold=state[0]
+    assert image(cold).get(3,(zero,zero)) != (zero,zero)
+    return {
+        'method': 'exact Q(a) noncommutative Hermitian-involution polynomial; no huge matrix',
+        'source_basis_preparation': 'root0 fanout to2,4,6; utilities1,3,5,7 native G',
+        'copied_SOURCE_bits_return_exact0': (2,4,6),
+        'unused_utility1_returns_exact0': True,
+        'fine_output_wires': (0,3,5,7),
+        'number_nonzero_fine_operator_outputs': len(state),
+        'all16_fine_K_match_independent_V0_V1_formula': True,
+        'exact_TP_in_free_involution_algebra': True,
+        'original_and_reduced_prepared_columns_match_exactly': True,
+        'phase_Spin_may_be_LIVE_inside_Hy': True,
+        'root_q_derivative_cold_kernel': 'B_Hy B_Hx B_Z − A_Hy A_Hx A_Z',
+        'exact_Z_coefficient_of_that_jet': '−c²[(1+c+c²)+i s²] !=0',
+        'native_cold_corner_is_old_chi_scalar': False,
+        'old_boost_gain_Info_or_wholePrice_inherited': False,
+        'source_upstream_reaction_or_continuous_admission_removed': False,
+    }
+
+
+def main():
+    owner=load_owned_definitions()
+    inventory=native_inventory_report(owner)
+    semantics=run_prepared_semantics(owner)
+    print('PROVENANCE',json.dumps(owner.CORRELATED_PROVENANCE,sort_keys=True))
+    print('ACTUAL_CORRELATED_NATIVE',json.dumps(inventory,sort_keys=True))
+    print('EXACT_PREPARED_SOURCE',json.dumps(semantics,sort_keys=True))
+    print('PASS native870/reduced852 tuple/inverses; exact sixteen fine outputs and TP; no old math or native huge matrix')
+    return inventory,semantics
+
+
+"""Changed actual fixed-Golden programme comparison on the same full carrier."""
+import sympy as S
+
+
+def run_ordered_pauli_certificate():
+    c,s=S.symbols('c s',real=True)
+    gb=S.groebner((s*s-4*c,c*c+4*c-1),s,c,domain=S.QQ_I)
+    reduce=lambda x:gb.reduce(S.expand(x))[1]
+    red=lambda M:S.Matrix(M).applyfunc(reduce)
+    I=S.eye(2);X=S.Matrix([[0,1],[1,0]]);Y=S.Matrix([[0,-S.I],[S.I,0]]);Z=S.diag(1,-1)
+    p,q=(1+c)/2,(1-c)/2
+    H=(Z,c*Z+s*X,c*Z+s*Y)
+    A=tuple(red(p*I+q*h) for h in H)
+    B=tuple(red(q*I+p*h) for h in H)
+    E=tuple(red(s*(h-I)/2) for h in H)
+    assert all(red(h*h-I)==S.zeros(2) for h in H)
+    result=[]
+    for order in ((0,1,2),(1,0,2)):
+        fine=[]
+        for h in range(8):
+            v0=v1=I
+            for j in order:
+                bit=(h>>(2-j))&1
+                v0=red((E[j] if bit else A[j])*v0)
+                v1=red((E[j] if bit else B[j])*v1)
+            v1=(-1)**bin(h).count('1')*v1
+            fine.extend((red(p*v0+q*v1),red(s*(v1-v0)/2)))
+        assert all(k!=S.zeros(2) for k in fine)
+        assert red(sum((k.conjugate().T*k for k in fine),S.zeros(2)))==I
+        C=fine[0]
+        assert C!=C.conjugate().T and C!=S.trace(C)*I/2
+        T=reduce(S.trace(C.conjugate().T*C))
+        D=reduce(C.det()*S.conjugate(C.det()))
+        result.append((C,T,D))
+    dT=reduce(result[1][1]-result[0][1]);dD=reduce(result[1][2]-result[0][2])
+    assert reduce(dT-288*c**6)==0
+    assert reduce(dD+32*c**11*(4+9*c))==0
+    assert reduce(dT-4*c**3*s*s*(1+c**4))==0
+    assert reduce(dD-8*c**8*s*s*(32-137*c))==0
+    # Strict log bound, all rational decisions. Contraction follows from fullTP.
+    lo,hi=S.Rational(7,30),S.Rational(1,4)
+    f=lambda t:t*t+4*t-1
+    assert 0<lo<hi and f(lo)<0<f(hi)
+    zeta=S.Rational(1,2**20)
+    # |detC|^2 in[0,1], so dD>=-1, while dT>288lo^6.
+    q_gap_lower=zeta*((1-zeta)*288*lo**6-zeta)
+    assert q_gap_lower>zeta/24
+    rank=8192
+    j_gap_lower=rank*zeta/48
+    assert j_gap_lower==S.Rational(1,6144)
+    # C0_heat=e^(2beta)/11<e^2/11<8/11<1. No spectral replay.
+    taylor=sum(S.Rational(2**n,S.factorial(n)) for n in range(9))
+    exp2_bound=taylor+S.Rational(2**9,S.factorial(9))/(1-S.Rational(1,5))
+    assert exp2_bound<8 and S.Rational(8,11)<1
+    core=852;N=core*32768
+    heat_gap_bound=S.Rational(4*core,N)
+    assert heat_gap_bound==S.Rational(1,8192)
+    full_gap=j_gap_lower-heat_gap_bound
+    assert full_gap==S.Rational(1,24576)>0
+    return {'orders':((0,1,2),(1,0,2)),
+        'full16_fine_TP_each_order':True,'true_corner_nonscalar_nonHermitian':True,
+        'delta_Tr_CstarC':'288c^6 =4c^3s^2(1+c^4)',
+        'delta_absdetC_squared':'-32c^11(4+9c)',
+        'c_isolating_interval':(str(lo),str(hi)),
+        'feedback_zeta':str(zeta),'initialized_cut_rank':rank,
+        'true_full_cut_J0_minus_J1_strict_lower':str(j_gap_lower),
+        'full_scene_heat_gap_strict_upper':str(heat_gap_bound),
+        'full_H01_plus_J_0_minus_1_strict_lower':str(full_gap),
+        'C0_heat_bound':'exp(2beta)/11<8/11<1',
+        'both_Hodge_grades_all_dark_work_modes_included':True,
+        'continuous_SOURCE_or_QUERY_pulse_assumed':False,
+        'old_chi_gain_CQ_or_GR_source_transferred':False}
+
+
+def run_padded_native_pair(owner):
+    reports=[]
+    from collections import Counter
+    core_multisets=[]
+    gate=owner.ne.Gate('CX',(1,2))
+    probe=owner.ne.Execution(3,(),(),(gate,),owner.ne.G_CX)
+    matrix=owner.ne.gate_matrix(probe,gate,max_qubits=3)
+    assert matrix*matrix==S.eye(8)
+    N=852*32768
+    padding_stages=N-852
+    assert padding_stages%2==0 and padding_stages//2==13958742
+    for order in ((0,1,2,3),(0,2,1,3)):
+        c=owner.Compiler(19,8,(13,14),(15,))
+        cells=owner.build_four_cells()['cells']
+        birth=c.seq(*(owner.parked_g(c,j) for j in (0,3,5,7)))
+        fanout=c.seq(c.cx(0,2),c.cx(0,4),c.cx(0,6))
+        prep=c.seq(birth,fanout)
+        middle=c.seq(*(cells[j]['middle'] for j in order))
+        core=c.seq(prep,middle,c.inv(prep))
+        blanks=tuple(range(9))+(16,17,18)
+        e=c.execution(core,blank_wires=blanks,report_bits=tuple(range(8)),max_expanded_stages=852)
+        assert c.counts(core).as_dict()=={
+            'G':16,'CX':598,'SourceI':238,'N':852,'g_port':16,'g_off':0}
+        assert len(e.gates)==852
+        core_multisets.append(Counter(e.gates))
+        iv=owner.ne.inventory(e,max_qubits=19,max_expanded_stages=852)
+        assert iv.cut_rank==128 and iv.full_dimension==2**19
+        inv=tuple(c.iter_raw(c.inv(core)))
+        assert inv==owner.ne.inverse_word(e,max_qubits=19,max_expanded_stages=1392)
+        pad_letter=c.cx(16,17)
+        loop=c.seq(pad_letter,pad_letter)
+        padding=c.repeat(loop,padding_stages//2)
+        padded=c.seq(core,padding)
+        expected={'G':16,'CX':N-254,'SourceI':238,'N':N,'g_port':16,'g_off':0}
+        assert c.counts(padded).as_dict()==expected
+        validation=c.validate(padded,max_expanded_stages=N)
+        assert validation['literal_expansion_membership']
+        leaves=c._leaves(padded,tuple(range(19)))
+        assert all(15 not in g.wires and 1 not in g.wires for g in leaves)
+        assert all(g.wires==(8,) for g in leaves if g.op=='G')
+        assert all(g.wires==(8,13,14) for g in leaves if g.op=='SourceI')
+        assert all(18 not in g.wires for g in leaves)  # Passive but kept in carrier.
+        reports.append({'middle_order':order,'literal_core_counts':c.counts(core).as_dict(),
+            'raw_inverse_leafwise_owned':True,'padded_counts':expected,
+            'compact_literal_expansion_validation':validation})
+    assert reports[0]['padded_counts']==reports[1]['padded_counts']
+    assert core_multisets[0]==core_multisets[1]
+    # Exactly8 padding modes, same inputrank. Actual physical33 is NOT2.
+    fibre=256*16*4*128*8
+    assert fibre==2**24
+    return {'pair':reports,'same_native_primitive_inventory_and_clock':True,
+        'same_FULL_Gate_multiset_including_addresses':True,
+        'padding_CX2_loops':13958742,'actual_expanded_N':N,
+        'padding_word_monodromy_identity_on_all_columns':True,
+        'extra_blank_work_bits':(16,17,18),'retained_padding_modes':8,
+        'true_oldRIGHT128_cut_rank':8192,'physical_WORLD_dimension':33*fibre,
+        'Hodge_C0_dimension':33*N*fibre,'Hodge_C1_dimension':392*N*fibre,
+        'index_inside_log':359*N*fibre,
+        'huge_Gate_tuple_or_heat_matrix_materialized':False,
+        'padding_AST_is_not_a_new_native_primitive':True,
+        'same_grammar_membership_is_physical_D0_selection':False}
+
+
+if __name__=='__main__':
+    assert __debug__, 'run with assertions enabled'
+    owner=load_owned_definitions()
+    print(json.dumps({'provenance':owner.CORRELATED_PROVENANCE,
+        'literal_factory':native_inventory_report(owner),
+        'all_prepared_columns':run_prepared_semantics(owner),
+        'new_exact_Pauli_order_certificate':run_ordered_pauli_certificate(),
+        'actual_padded_native_pair':run_padded_native_pair(owner),
+        'old_math_or_huge_native_heat_replayed':False},indent=2))
+```
+
 ## 8. Reproduction
 
 Run from this directory:

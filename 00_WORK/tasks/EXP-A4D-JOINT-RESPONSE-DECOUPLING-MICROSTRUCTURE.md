@@ -13799,3 +13799,152 @@ is an exact prefix. Earlier proof/checker pins and all concurrent disjoint
 intake through48474f01be0515e3ca26cad94497b74e631f9ea7 are preserved.
 These are local mathematical/source/structural checks, not remote CI.
 #334 remains Draft/open/unmerged; no claim or lifecycle promotion.
+
+### 26 October2026 — correlated SOURCE, fixed native angles and a strict complete Book contrast (7bx)
+
+Existing #334 / constitutive / native-programme-v1, calculation input92d025dbfda427df83fba7350ffe5941494b74c8;
+integration inputbfea3aa649de62954823901239163470b39e18c8.
+Phase: native realization / SOURCE-to-controls composition. Changed input:
+one actual shared-root/fanout preparation replaces7bp's product SOURCE
+preparation. Consumer is the native SOURCE/control operation needed before
+an original-field pullback, not a new geometric root or action. This is
+supporting source-capability work; it does not discharge physical GR.
+
+Actual root0 copied to2/4/6; utilities1/3/5/7; physicalP8,CAR9..12,
+LIVEphaseSpin13/14, immutableold15. A=fanout(G0G1G3G5G7), fourowned
+middlesI,Z,Hx,Hy then A*. Literal870=(18G610CX242SI), inverse1426.
+Unusedutility1 parkedG commutes with rest and cancels ALLcolumns exactly,
+includingphysical33. Reduced852=(16G598CX238SI), inverse1392. Bit1
+stays passiveBLANK in SAMEcarrier, never removed fromheat. Sourcecopies
+2/4/6 andunused1 return0 onlyonstatedinputpromise. Trueold128cutrank8192,
+activeD4194304,physical33D69206016 before clock/padding. EveryGphysical8,
+allSI(8,13,14), noG/CXonSpin andold15neveraddressed.
+
+Complete16 finepositions: K0h=pV0h+p²V1h,K1h=ap(V1h−V0h), V0products
+A_H/E_H,V1productsB_H/E_H withsign(−1)^|h|. A=pI+p²H,B=p²I+pH,
+E=ap(H−I); exactTP from both completeutilityfamilies androotcross-term
+cancellation. All16 nonzero for the two OWNEDframeorders; genericdegenerate
+H mayzero branches. All256 SOURCEbasis columns stay in uncutunitary/heat.
+New coldC=p A3A2A1+p²B3B2B1 is NONSCALAR/non-Hermitian; use trueC†C,
+notoldchiI/boostgain. DC retains both distinct SOURCEpreparationlegs and
+middlederivative; cannot replace matrixlegsby2Re. CQ=⊕KρK† hasgenuine
+conditionalquantum terms, not7bt scalar×unitary entropy; actualWORK
+ΣK†W_KK andallinput/controller/upstreamnormals remain. No tariff/Info
+selection is inserted and no SOURCE/prep equation is frozen by this result.
+
+The decisive finite comparison uses reducedmiddle orders(I,Z,Hx,Hy)
+and(I,Hx,Z,Hy). SOURCE/QUERYGvalues, prep,cut,carrier,period and FULL
+actualGate multiset INCLUDINGaddresses are identical. Only completeblock
+order changes. No continuously variable SOURCE or QUERYpulse is assumed.
+These are different operatorconfigurations, not same-task implementations
+or a prospective minimum. On the owned Pauli2 algebra (multiplicity8 in
+allCAR16, realSpin4 andold128), fullcutJ is4096×Tr2. Forc=p³=√5−2,
+s²=4c, c²+4c−1=0, exact invariants are
+DeltaTr(C†C)=288c6=4c3s²(1+c4),
+Delta|detC|²=−32c11(4+9c)=8c8s²(32−137c).
+Withzeta2^-20,7/30<c<1/4 andcontractionfromTP give
+DeltaQdet>zeta/24; trueJ0−J1>1/6144. Bothbands retained; oldoriginal
+beta/chi/sourcegain is not transferred.
+
+WholeactualRawZone sceneheat consumes7bi VALUEbound, not endpoint
+isospectrality. Bothcoresm852, A_i<=1704, sharedcommutingreference,
+C0_heat=exp(2beta)/11<1 atbeta2p². Thus|H01,1−H01,0|<3408/N on
+complete33-scene/rawcycle/bothHodgegrades/allworkdarkmodes. Actual
+N852*32768=27918336 obtained by13958742 genuineCX(16,17)^2 loops
+percore. Eightpaddingmodes inclpassive18 stay inheat; noinputrankincrease.
+Fullinventories16G+27918082CX+238SI=N, identical. Compactliteral
+constructor validatesfull expansion/leaves; not a nativeASTprimitive or
+materialized27-millionGate tuple. TrueWORLD553648128=33*2^24,
+n0=15456934463275008,n1=183609645745569792,index168152711282294784
+INSIDE log. Absoluteheat unnormalized. Referenceidentity is onlyproofdevice,
+neveranunchargednativeword. Entirepaidpadding retained.
+
+Strict complete DECLAREDfunctional result:
+(H01+J)0−(H01+J)1>1/6144−1/8192=1/24576.
+Under existingstage0scene-restoringRayleigh567, Rvaluesagree andsamegap
+holdsforTHAT S_hist; Rnotzeroed. OtherphysicalR/WORK/CostInfo sources
+needtheiractualmaps. Profilemembership is notoriginalliteral-star/G0
+selection. This supplies fixed-angle finite native source responsiveness;
+physicalfieldwriter/commonall42covector/gain/Hessian/initialvariation,
+continuousEulerlaw, selectedfullBookCostInfo andrefinementremainopen.
+PrimaryexactnonvacuumGRfamily unchanged. No task/registry/selector/
+physicalaction/discharge added. GR_closed=false,positive_gr/raw216open.
+
+New combinedchecker finalrootrunexit0 with assertionsON. Actual870/852
+cores+1426/1392 ownedinverses; exactfreeinvolutionpreparedSOURCE
+propagation/16operatoroutputs/TP; actualboth852 reordered19-wirecores+
+1392inverses, FULLGateCounter equality, actual8-columnnativeCX²;
+conservative27Mexpansionnativeleaf/stagecounts. ExactGaussian-polynomial
+Pauli617 both16K, positivity/contraction and allrational gap estimates;
+e²<8 certifiedbyrationalTaylorbound. No enormousmatrices, originalCAR/
+boost/full128/root/Lean/oldheatsuite replay; pinned7bp/nested7bo
+definitions-only builders reused. Nativehelper author ran itsnew870/852
+membership/semantics once; root finalcombined consumes those andneworder/
+padding controls. Logical reduction is not removedthermalcapacity.
+
+Frozen7bx including next-headingseparator34657bytes,
+SHA256819484be61220bf71cf59f5372bfd312b0971bffe5d7c925e1e728b25017bba7.
+Integrated proof13762/e2af8fa95267a69a970bebff361bb65607cead6d3b7dedb19dd845040e5e7836.
+Embeddedcode excludingclosingnewline20879bytes,
+SHA25639d240525f027299008fe282a10ec75fafe64ac39c2165c9aa84247d0be3b556.
+Executedsource includesfinalnewline20880bytes,
+SHA2560d83ad8ea155bb6651c0c3f62fc93dd50e78c3bbb8a20f440d9c9620fb4260bb.
+Allthree mathematicalSOURCE-ONLY ACCEPT on original proof13170/0181ca2e
+and unchangedchecker20880/0d83ad8e: native_source_application,
+price_geometry_bridge, stationary_root_transfer. Fullproof/code read;
+last615 qualifier and exactnonnullassert reviewed; noreviewedits/replays.
+
+Existing result checkpoint template read:constitutive/native-programme-v1,
+no assemblyresult/status/acceptance orpublicclaim promotion. Final affected
+structural/provenance checks follow on these frozen inputs.
+
+Final affected integration PASS: work validation, agent protocol, gravity
+assembly(validtrue;54active/98results/5discharged/22obligations;
+scientific_promotionfalse), repository(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0), whitespace and provenance.
+New combined checker finalinput/env replay exit0 with GIT_WORK_TREE set
+to this exact managed checkout and assertions ON. Earlier iteration runs
+were limited to changed native/polynomial/leaf assertions, no old suites.
+Actual final fence AST and executed20880/source20879 byte identity verified.
+
+Removing7bx restores incoming primary1335481bytes EXACTLY, SHA256
+f970a9e0ea7f12a701379c93e8d4673066c9279eca6414dc700c3aae18a975dc.
+Incoming brief906429bytes remains exact prefix, SHA256
+ed99fc94965385e94711003dfb1ec745574f8cbb4068950f8de5098a0a5c6f4b.
+Prior7bt remains34319bytes/SHA256
+4d2a7d825773e43de70919c11b7246425a8e9879714a80430810eafcc40eac95.
+Only the two existing owned paths changed; all prior proofs/IDs/history
+retained. This local scientific/source review/structural evidence is not
+remote CI, original native physics acceptance or GR closure. Existing
+#334 remains Draft/open/unmerged; no additional task/PR or assembly
+discharge/publicclaim is created by the finite comparison.
+
+Integration after normalpush rejected concurrentupdate: incoming bfea3aa6
+contains new7bu--7bw metric/GNS/AF/stationary applications plus original
+full128 parity/ordered-memory work. ALL incoming bytes retained; our own
+section alone renumbered7bx with614--620. No direct scientific duplicate.
+Incoming606--607 requires an INTERNAL base/projection centre; our physical-
+port RawZone pair uses the distinct VALUE bound, not their stationary
+covector or AFgain611. Neither branch becomes a new prerequisite for the
+other. No universal fullpathmetric or unique microscopic selection veto is
+added. Input7bp/7bo/7bi and all pre92d primarybytes are unchanged, so our
+scientific calculation inputs/code pin remain exact; no incoming scientific
+checker or our identical calculation is replayed merely for this rebase.
+Final renumbering/context and whole rebased structural/provenance checks
+follow. Sourcebranch remains Draft; noforcepush/merge/retirement.
+
+Final integrated SOURCE-ONLY ACCEPT: stationary_root_transfer read the
+incoming7bu--7bw prose and the complete intended proof diff, confirmed
+no duplicate/contradictory carrier or extra universal prerequisite. Its
+review caught a numerical inventory that was accidentally renumbered;
+598CX was restored in our prose/brief to match the unchanged checked Gate
+tuple (equation620 remains the new label). Final integrated proof13762/
+e2af8fa95267a69a970bebff361bb65607cead6d3b7dedb19dd845040e5e7836 accepted;
+executedcode20880/0d83ad8ea155bb6651c0c3f62fc93dd50e78c3bbb8a20f440d9c9620fb4260bb
+is byte-identical to the three-reviewed scientific input. No mathematical
+rerun for label/context changes. All incoming primary/brief bytes remain
+exact, including new metric/AF/parity histories and their source pins.
+Rebased final work/agent/gravity/repository guards PASS with unchanged
+889claims/31assumptions/58aliases/183formal_support/918Leanclosure,
+warnings0 and scientific_promotionfalse. No upstream scientific replay
+or remoteCI pass is inferred from these structural checks.
