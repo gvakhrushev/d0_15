@@ -8181,9 +8181,22 @@ types, and reports the inherited trust footprint (`Classical.choice`,
 `Quot.sound`, the CAR `native_decide` dependency, and `propext`). The inventory
 uses Lean source digest
 `b04dd12eb734fcec50a037dc24c6da48c507704e10a358197c939aee74baf220`, Lean
-4.30.0, and SHA-256
+4.30.0. The Lean module SHA-256 is
+`156e986892e96a070e16b55b3d0e106acb28626ce5d6dae84a20216d18e3a653`; the
+inventory SHA-256 is
 `acffe8f2b698d4752ad0ecc57b5fd864f746ba7956f88ef06f644ec931552437` at
 `sources/d0_proof_architecture_formalization_2026-10-24/julia_principal_frame_fixed_link_derivative_declarations_2026-10-26.json`.
+
+The clean cold-start replay at commit
+`1ec35f35833554e86b91ca84c122a4db5e310dc7` finds sources in **24/24** cases,
+passes the **25-case** benchmark, checks **141** required source references,
+and passes the source-change/unrelated-prose impact control. The new exact
+query ranks the compiled inventory, this primary artifact, and the Lean module
+at **1, 2, and 3**. Its 8,030,310-byte full output has SHA-256
+`6efdbad7a21a757a148f26ceb0cdc12d4aa5d0e4498bddf9978391098e4e8008`; the
+compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_fixed_link_derivative.json`,
+SHA-256 `32886aa2e897579bc27b149ab7b66b21f9125f3a1174db4a2490c0e3506a147a`.
 
 This supports the finite coframe block of the Julia Eq. (30a) application;
 it does not discharge the full application or prove the 24 link directions,

@@ -1,0 +1,77 @@
+{
+  "receipt": "d0-proof-architecture-cold-start/1",
+  "snapshot_commit": "1ec35f35833554e86b91ca84c122a4db5e310dc7",
+  "worktree_dirty": false,
+  "runner": {
+    "path": "tools/proof_architecture_cold_start.py",
+    "commit": "1ec35f35833554e86b91ca84c122a4db5e310dc7",
+    "git_blob": "36f6be08e08a34605aced04827376797046fb18c",
+    "sha256": "0297da18b8657ce3ded6f11a35c5c7104711d8479a2529f44da59cca9a4a9e5d"
+  },
+  "search_engine": {
+    "path": "tools/proof_architecture.py",
+    "git_blob": "c2549bd7ebbe10606976f28eb4b7f5b4eae6db6d",
+    "sha256": "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
+    "test_path": "tools/test_proof_architecture.py",
+    "test_git_blob": "6ada547fd89acfccf83d7ef3a9d7d4a456f65c49",
+    "test_sha256": "35d6da45ccf43c0e3c823e120268092a85692b3916017ebf3490d90478db8e3a"
+  },
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "b538abd4bfbb919f948cbf619dbf2e24859223532e0443ece644c512d050568a",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "search_limit": 18,
+  "search_cases_found_all_sources": 24,
+  "search_cases_total": 24,
+  "benchmark_cases_total": 25,
+  "required_source_ref_count": 141,
+  "case_id": "julia-query-principal-frame-coframe-recovery",
+  "case_found_all_required_sources": true,
+  "case_required_source_count": 10,
+  "query_discovery": {
+    "query": "principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt fixed Lorentz link derivative",
+    "top_candidates": [
+      {
+        "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_principal_frame_fixed_link_derivative_declarations_2026-10-26.json",
+        "direct_content": true,
+        "matched_terms": 4
+      },
+      {
+        "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        "direct_content": true,
+        "matched_terms": 4
+      },
+      {
+        "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+        "direct_content": true,
+        "matched_terms": 4
+      }
+    ]
+  },
+  "compiled_inventory": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_principal_frame_fixed_link_derivative_declarations_2026-10-26.json",
+    "sha256": "acffe8f2b698d4752ad0ecc57b5fd864f746ba7956f88ef06f644ec931552437",
+    "snapshot_commit": "52adc51b69b3067471bb6425c9cdc54e06690575",
+    "public_import_root": "D0.All",
+    "worktree_dirty": false
+  },
+  "full_output": {
+    "sha256": "6efdbad7a21a757a148f26ceb0cdc12d4aa5d0e4498bddf9978391098e4e8008",
+    "bytes": 8030310,
+    "stored": false
+  },
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true,
+  "scope_review": "The fixed-link Julia inverse-coframe derivative is discoverable in the compiled inventory, the task artifact, and its Lean module. This is a finite coframe-block derivative with link and endpoint maps held fixed; it does not prove the remaining link jets, the joint all-jet pullback, physical admission, price/source selection, or C0 acceptance."
+}
