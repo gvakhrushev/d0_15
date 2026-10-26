@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "15abe1bf580af80b40e0baa5e9f5f89b81afdc9e",
+  "snapshot_commit": "731b66a533efe7eeb78d061155759097a5a7142e",
   "worktree_dirty": false,
   "search_cases_found_all_sources": 24,
   "search_cases_total": 24,
@@ -23,18 +23,6 @@
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
   },
   "semantic_scope_review_is_manual": true,
-  "replay": {
-    "source_commit": "15abe1bf580af80b40e0baa5e9f5f89b81afdc9e",
-    "command": "python3 tools/proof_architecture_cold_start.py",
-    "runner_sha256": "dbbe10bad334798693ab6f92f5fbce3d75a9d6ee68226f2f3b8433ede40be55a",
-    "runner_git_blob": "7d0a95bb72937f6244b4ad5d5f5ad01d9c71cf3a",
-    "search_engine_sha256": "38e6f20cbd52b23893f35a9a514695f37f7a62443d0fa69c69d01ad81fd28dad",
-    "search_engine_git_blob": "f90ee004e2f98a87b082f7b4b48b85ea964bc77e",
-    "test_sha256": "b9a64e5df5fd0ca0294d3732f586786d760a02a12617a9d09fd53f107cdcef0a",
-    "test_git_blob": "5113486a00344ded5f875f0d3ab4d585db5b3916",
-    "full_output_sha256": "d884b4759b56c0291d3ff4bf35d9ed3f2e846e9206ac3612cf7d778c5e47ccf9",
-    "full_output_bytes": 8855702
-  },
   "cases": [
     {
       "id": "labelled-native-raising-inverse",
@@ -204,5 +192,17 @@
       "all_required_sources_found": true,
       "missing_paths": []
     }
-  ]
+  ],
+  "replay": {
+    "source_commit": "731b66a533efe7eeb78d061155759097a5a7142e",
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "runner_sha256": "dbbe10bad334798693ab6f92f5fbce3d75a9d6ee68226f2f3b8433ede40be55a",
+    "runner_git_blob": "7d0a95bb72937f6244b4ad5d5f5ad01d9c71cf3a",
+    "search_engine_sha256": "89a3751b14d4a859437cb9318578a392f789aebe15c3416aba3c5ab17bd6a26e",
+    "search_engine_git_blob": "03495e13663d21daba563d88f21b975e975f7dca",
+    "test_sha256": "82302039b4ac4e092d8f2b985ff1bc0a01daa41b1a0383f272750623ea25cd1a",
+    "test_git_blob": "607c59c83190cac7a15ad26442c50a2ca5cecd1b",
+    "full_output_sha256": "28756f817bd61b08f69217cd733c2343e6e214f145cc651d7bae20c0e66749a3",
+    "full_output_bytes": 8855665
+  }
 }

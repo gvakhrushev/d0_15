@@ -9141,18 +9141,18 @@ retrieval-stage comparison, not completion of the whole old/new workflow
 review requested by Stage E. Those answer-level checks remain open.
 
 The query-level comparison report is 53,643 bytes, SHA-256
-`b68ce23894e99709c7b9074353833497c5d47cffcb691f0850292bcb2003e321`; it
+`4a462d63d460afa328e925a149fc68e470ecad1f97d4395cd0ee168ec909173c`; it
 records runner SHA-256 `55f980cd1b08244ae4da37e85bdce07b91909d780642692ebb826bb0be36f49e`
-and clean source snapshot `15abe1bf580af80b40e0baa5e9f5f89b81afdc9e`.
+and clean source snapshot `731b66a533efe7eeb78d061155759097a5a7142e`.
 
 The clean cold-start replay on the compared search implementation found all
 158 required references across 24/24 cases and passed 25/25 retrieval and
 source-impact checks. Its compact receipt is
 [`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json).
 The receipt SHA-256 is
-`58cdcac24221e703324ead1d79b43956d0f4ea61d780fff23764656e9fd96536`; the
-8,855,702-byte full replay output has SHA-256
-`d884b4759b56c0291d3ff4bf35d9ed3f2e846e9206ac3612cf7d778c5e47ccf9` at the
+`ced0a7cc3c21e1dff05ae635f0d65eb665b1a6ae698dd902ea4a5611cfa19b05`; the
+8,855,665-byte full replay output has SHA-256
+`28756f817bd61b08f69217cd733c2343e6e214f145cc651d7bae20c0e66749a3` at the
 same clean source snapshot.
 The comparison and replay remain retrieval evidence only. They do not accept
 claim semantics, freeze C0, establish applications, or change any physical
