@@ -8331,3 +8331,57 @@ regression passed. The 8,058,091-byte replay output has SHA-256
 compact receipt is
 `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_all_role_chart_coverage.json`,
 SHA-256 `1ad831896465014dd25226915100e7f26df88536b134feec958ccfa1b887a2ce`.
+
+### Eq. (26) endpoint blindness and non-null Eq. (27) separation (26 October 2026)
+
+The endpoint-map application now distinguishes what the two pinned Julia
+readouts can establish. `archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective`
+reuses the existing Eq. (27) recovery map: for a common source vector with
+nonzero Lorentz norm, two source-form-preserving, determinant-one linear
+equivalences that give the same complete CAR raising query must be equal.
+This is a direct composition of the owned endpoint decoder, not a second
+derivation of its formula.
+
+The concrete countercontrol uses the diagonal A/B sign flip
+`archiveJuliaABSignFlip`. Its determinant is one, it preserves the source
+Lorentz form, and its induced endpoint equivalence differs from identity.
+Nevertheless, the assembled Eq. (26) vacuum-column matrix is identical for
+the identity and sign-flip endpoint families. For the non-null A basis source,
+the complete CAR query separates that same pair. The controlled result shows
+why vacuum-column equality alone cannot be used as the 24-link inverse; it
+does not compute the link derivative or the full `D R D Φ = I`.
+
+The three application declarations are in
+`03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean`; the existing
+public `D0.All` import resolves them. The narrow build of
+`D0.Geometry.A4DJuliaRecoveryComposition` passed **3,207/3,207 jobs** with
+Lean 4.30.0. The declaration inventories were collected through `D0.All` at
+snapshot `f04dba0ce54b9dd98929bc77ece06d71b117149f`, with
+`worktree_dirty=true` and Lean-source digest
+`0ed7f3982d6a4ae4a1000c0c32a4f4258e6a225605239c58c0e1df2bbbd6afde`:
+
+| Declaration | Inventory | SHA-256 |
+|---|---|---|
+| `archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective` | `sources/d0_proof_architecture_formalization_2026-10-24/julia_nonnull_endpoint_map_injectivity_declaration_2026-10-26.json` | `c4a6cbb7de182940191678c3288fd62ed8d5f435ca65b15b2842766fbb6f155e` |
+| `principalFrameJuliaEq26_blind_to_ABSignFlip_links` | `sources/d0_proof_architecture_formalization_2026-10-24/julia_eq26_link_blindness_declaration_2026-10-26.json` | `f57c4335fe29514a0d9834facb8604f7ed0a16058f9333a2df64c339283312e0` |
+| `principalFrameJuliaNonNullQuery_separates_ABSignFlip_links` | `sources/d0_proof_architecture_formalization_2026-10-24/julia_nonnull_query_link_separation_declaration_2026-10-26.json` | `ee94ec23876c5eb824f59d9ad5a27c7345000e765a762289458780e9e059c8fb` |
+
+Each inventory records the elaborated signature, source range, proof/type
+dependencies and axiom footprint. All three inherit
+`Classical.choice`, `Quot.sound`, `propext`, and the existing private
+`archiveCreatorPermSign` native-decision axiom from the CAR creator
+representation; these declarations are not axiom-free. The exact owner source
+remains #334 commit `fe5cf335da04cac14e50407b03f98b96be17dc52`,
+`A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, blob
+`1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §8.4 (Eq. (26)–(27)) and §8.5
+(all-jet owner scope). This is a scoped formal application only: physical
+admission, actual same-execution endpoint selection, the 24 link derivatives,
+full all-jet pullback, complete price/source selection, #334 acceptance,
+`GR_closed`, and independent C0 acceptance remain open.
+
+The pre-correction full cold-start replay found all required sources in 23/24
+search cases; the Julia case missed the pinned §8.4 source on its Eq. (26)
+query. After adding the Eq. (27), Eq. (26), and three exact inventory queries,
+the targeted 24-query Julia replay found all **15/15** required sources. The
+full 24-case aggregate has not been replayed on these corrected inputs, so no
+aggregate pass is claimed.

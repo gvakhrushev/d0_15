@@ -482,6 +482,11 @@ CASES: list[dict[str, Any]] = [
             "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt",
             "principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz hΓ hΛ",
             "principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz hα hShift",
+            "archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective Eq 27 nonzero Lorentz norm q Gamma_x(u) recover U exact CAR raising query all 16 grades",
+            "Eq 26 X|0>=C(u)|0> vacuum весь вектор u читается без знания M Lambda M тождественно на grade0",
+            "archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective julia_nonnull_endpoint_map_injectivity_declaration_2026-10-26",
+            "principalFrameJuliaEq26_blind_to_ABSignFlip_links julia_eq26_link_blindness_declaration_2026-10-26",
+            "principalFrameJuliaNonNullQuery_separates_ABSignFlip_links julia_nonnull_query_link_separation_declaration_2026-10-26",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -491,6 +496,9 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_joint_recovery_inventory_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_same_query_coframe_endpoint_recovery_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_nonnull_endpoint_map_injectivity_declaration_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_eq26_link_blindness_declaration_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_nonnull_query_link_separation_declaration_2026-10-26.json",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
@@ -501,12 +509,12 @@ CASES: list[dict[str, Any]] = [
             {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
-             "sections": ["8.4", "8.5"], "scope_query_indexes": [1, 2, 4, 5, 6, 7, 8, 9, 15],
+             "sections": ["8.4", "8.5"], "scope_query_indexes": [1, 2, 4, 5, 6, 7, 8, 9, 15, 19],
              "scope_query_sections": {"1": ["8.5"], "2": ["8.5"],
                                       "4": ["8.4"], "5": ["8.4"],
                                       "6": ["8.4"], "7": ["8.4"],
                                       "8": ["8.4"], "9": ["8.4"],
-                                      "15": ["8.4"]}},
+                                      "15": ["8.4"], "19": ["8.4"]}},
             {"path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
@@ -543,7 +551,15 @@ CASES: list[dict[str, Any]] = [
             "endpoint_chart_coverage_of_proper_roleLorentz` composes that coframe identity with the existing "
             "non-null Eq. (27)/null Eq. (28) chart disjunction for every role, retaining the normalized "
             "covector and nonzero-shift premises. Both compositions keep the coframe link fixed and do not "
-            "fill the 24 link directions."
+            "fill the 24 link directions. The endpoint-map injectivity theorem reuses the owned Eq. (27) "
+            "decoder: on a common non-null source, equality of complete CAR raising queries for two "
+            "Lorentz-form-preserving determinant-one endpoint maps forces the maps equal. An explicit diagonal "
+            "A/B sign flip has determinant one, preserves the source Lorentz form, and is distinct from identity. "
+            "The assembled Eq. (26) vacuum-column matrix is nevertheless identical for those two link families; "
+            "the complete non-null CAR query separates them. This is a finite exact countercontrol for using "
+            "vacuum columns as a full link inverse, and a scoped application of the existing Eq. (27) decoder. "
+            "It does not prove the 24 link derivatives, full `D R D Φ = I`, physical admission, complete "
+            "price/source selection, GR closure, or independent C0 acceptance."
         ),
     },
     {

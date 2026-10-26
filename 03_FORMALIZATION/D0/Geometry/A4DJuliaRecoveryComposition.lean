@@ -1,5 +1,6 @@
 import D0.Geometry.A4DJuliaNonNullGammaRecovery
 import D0.Geometry.A4DJuliaPrincipalFrameRecovery
+import D0.Geometry.A4DObserverPositiveExterior
 
 /-!
 # Composition of the non-null and open-chart Julia recoveries
@@ -242,6 +243,138 @@ theorem archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz
     u (archiveJuliaProperRoleLorentzEquiv Λ hDet)
     (archiveJuliaProperRoleLorentzEquiv_form_isometry Λ hΛ hDet)
     (archiveJuliaProperRoleLorentzEquiv_det_one Λ hDet) hq
+
+/-- On the non-null Eq. (27) chart, the complete CAR raising query is
+injective in its proper endpoint map. The proof reuses the compiled endpoint
+decoder; the vacuum-only Eq. (26) readout below deliberately has weaker scope. -/
+theorem archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective
+    (u : RoleSpace) (M N : RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (hIsoM : ∀ x y, archiveJuliaSourceLorentzForm (M x) (M y) =
+      archiveJuliaSourceLorentzForm x y)
+    (hIsoN : ∀ x y, archiveJuliaSourceLorentzForm (N x) (N y) =
+      archiveJuliaSourceLorentzForm x y)
+    (hDetM : LinearMap.det M.toLinearMap = 1)
+    (hDetN : LinearMap.det N.toLinearMap = 1)
+    (hq : archiveJuliaSourceLorentzForm u u ≠ 0)
+    (hQuery : archiveJuliaCARRaisingQuery u M =
+      archiveJuliaCARRaisingQuery u N) :
+    M = N := by
+  let recover : ArchiveJuliaQueryOperator → RoleSpace → RoleSpace := fun Q =>
+    archiveExteriorFrameLiftRoleReadout
+      ((archiveJuliaSourceLorentzForm u u)⁻¹ •
+        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
+          (Q - archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+            (Q.comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap)))
+  have hM : recover (archiveJuliaCARRaisingQuery u M) = M := by
+    simpa [recover] using
+      archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_one
+        u M hIsoM hDetM hq
+  have hN : recover (archiveJuliaCARRaisingQuery u N) = N := by
+    simpa [recover] using
+      archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_one
+        u N hIsoN hDetN hq
+  ext x r
+  calc
+    M x r = recover (archiveJuliaCARRaisingQuery u M) x r :=
+      congrFun (congrFun hM.symm x) r
+    _ = recover (archiveJuliaCARRaisingQuery u N) x r :=
+      congrArg (fun Q => recover Q x r) hQuery
+    _ = N x r := congrFun (congrFun hN x) r
+
+private def archiveJuliaABSignFlip : Matrix Role Role ℝ :=
+  Matrix.diagonal (fun r => if r = A then -1 else if r = B then -1 else 1)
+
+/-- A diagonal proper Lorentz link gives a small exact witness for the
+coframe-only blindness control. -/
+theorem archiveJuliaABSignFlip_det_one :
+    Matrix.det archiveJuliaABSignFlip = 1 := by
+  rw [archiveJuliaABSignFlip, Matrix.det_diagonal, Fintype.prod_prod_type]
+  norm_num [A, B, C, D, Role, Dyad]
+
+theorem archiveJuliaABSignFlip_isRoleLorentz :
+    IsRoleLorentz archiveJuliaABSignFlip := by
+  unfold IsRoleLorentz
+  ext r s
+  fin_cases r <;> fin_cases s <;>
+    norm_num [archiveJuliaABSignFlip, roleLorentzMetric,
+      Matrix.diagonal_apply, Matrix.mul_apply, Matrix.transpose_apply,
+      roleLorentzSign, roleRoleSigEquiv, roleSign, Fintype.sum_prod_type,
+      A, B, C, D]
+
+noncomputable def archiveJuliaABSignFlipEquiv :
+    RoleSpace ≃ₗ[ℝ] RoleSpace :=
+  archiveJuliaProperRoleLorentzEquiv archiveJuliaABSignFlip
+    archiveJuliaABSignFlip_det_one
+
+theorem archiveJuliaABSignFlipEquiv_ne_refl :
+    archiveJuliaABSignFlipEquiv ≠ LinearEquiv.refl ℝ RoleSpace := by
+  intro h
+  have hvalue := congrArg
+    (fun L : RoleSpace ≃ₗ[ℝ] RoleSpace => (L (archiveRoleBasis A)) A) h
+  norm_num [archiveJuliaABSignFlipEquiv,
+    archiveJuliaProperRoleLorentzEquiv_apply, archiveJuliaABSignFlip,
+    Matrix.mulVec, archiveRoleBasis, A, B, C, D, Role, Dyad] at hvalue
+
+/-- The Eq. (26) vacuum-column matrix ignores the endpoint-map parameter even
+for two distinct proper links. This is an explicit negative control against
+using the coframe-only observation as the full 24-link inverse. -/
+theorem principalFrameJuliaEq26_blind_to_ABSignFlip_links
+    (F L : Matrix Role Role ℝ) :
+    principalFrameObservedQueryColumnMatrix
+        (principalFrameJuliaQueryFamily F L
+          (fun _ => LinearEquiv.refl ℝ RoleSpace)) =
+      principalFrameObservedQueryColumnMatrix
+        (principalFrameJuliaQueryFamily F L
+          (fun _ => archiveJuliaABSignFlipEquiv)) ∧
+    (fun _ : Role => LinearEquiv.refl ℝ RoleSpace) ≠
+      (fun _ : Role => archiveJuliaABSignFlipEquiv) := by
+  constructor
+  · rw [principalFrameJuliaQueryFamily_columnMatrix,
+      principalFrameJuliaQueryFamily_columnMatrix]
+  · intro h
+    have hvalue := congrFun h A
+    exact archiveJuliaABSignFlipEquiv_ne_refl hvalue.symm
+
+/-- The complete non-null CAR query separates the same identity/sign-flip pair
+that Eq. (26)'s assembled vacuum columns identify. The tested A-column has a
+nonzero timelike source norm; no null-chart or physical-admission claim is
+made here. -/
+theorem principalFrameJuliaNonNullQuery_separates_ABSignFlip_links :
+    archiveJuliaCARRaisingQuery (archiveRoleBasis A)
+        (LinearEquiv.refl ℝ RoleSpace) ≠
+      archiveJuliaCARRaisingQuery (archiveRoleBasis A)
+      archiveJuliaABSignFlipEquiv := by
+  intro hQuery
+  have hq : archiveJuliaSourceLorentzForm (archiveRoleBasis A)
+      (archiveRoleBasis A) ≠ 0 := by
+    rw [archiveJuliaSourceLorentzForm_basis_basis]
+    simp [archiveJuliaSourceLorentzSign, A]
+  have hIsoId : ∀ x y,
+      archiveJuliaSourceLorentzForm
+        ((LinearEquiv.refl ℝ RoleSpace) x)
+        ((LinearEquiv.refl ℝ RoleSpace) y) =
+      archiveJuliaSourceLorentzForm x y := by
+    intro x y
+    rfl
+  have hIsoFlip : ∀ x y,
+      archiveJuliaSourceLorentzForm
+        (archiveJuliaABSignFlipEquiv x)
+        (archiveJuliaABSignFlipEquiv y) =
+      archiveJuliaSourceLorentzForm x y := by
+    simpa [archiveJuliaABSignFlipEquiv] using
+      archiveJuliaProperRoleLorentzEquiv_form_isometry
+        archiveJuliaABSignFlip archiveJuliaABSignFlip_isRoleLorentz
+        archiveJuliaABSignFlip_det_one
+  have hDetId : LinearMap.det
+      (LinearEquiv.refl ℝ RoleSpace).toLinearMap = 1 := by simp
+  have hDetFlip : LinearMap.det
+      archiveJuliaABSignFlipEquiv.toLinearMap = 1 := by
+    exact archiveJuliaProperRoleLorentzEquiv_det_one archiveJuliaABSignFlip
+      archiveJuliaABSignFlip_det_one
+  have hLinks := archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective
+    (archiveRoleBasis A) (LinearEquiv.refl ℝ RoleSpace)
+    archiveJuliaABSignFlipEquiv hIsoId hIsoFlip hDetId hDetFlip hq hQuery
+  exact archiveJuliaABSignFlipEquiv_ne_refl hLinks.symm
 
 /-- Every nonzero principal-frame shift lies in one of the two owned inverse
 charts. Eq. (27) decodes the endpoint map when its source norm is nonzero. On
