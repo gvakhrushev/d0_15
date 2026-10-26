@@ -1281,7 +1281,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_lorentz_tangent_dimension.json"
+            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_lorentz_tangent_coordinates.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1351,7 +1351,7 @@ class ProofArchitectureTests(unittest.TestCase):
         ), "shared Gram-orbit query must surface its algebra API directly")
         self.assertTrue(any(
             hit.get("source") ==
-                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_dimension.json"
+                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinates.json"
             and hit.get("direct_content")
             for hit in exact_hits
         ), "dressed-transport query must surface its compiled application inventory")
@@ -1361,7 +1361,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_dimension.json"
+            / "finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinates.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1638,7 +1638,7 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_dimension.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_coordinates.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -1656,8 +1656,14 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in summary["cases"]
         ))
         self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 155
+            sum(row["required_source_count"] for row in summary["cases"]), 156
         )
+        labelled = next(
+            row for row in summary["cases"]
+            if row["id"] == "labelled-native-raising-inverse"
+        )
+        self.assertEqual(labelled["query_count"], 16)
+        self.assertEqual(labelled["required_source_count"], 11)
         proper = next(
             row for row in summary["cases"]
             if row["id"] == "proper-lorentz-same-orientation-orbit"
@@ -1813,6 +1819,12 @@ class ProofArchitectureTests(unittest.TestCase):
             for query in case["queries"]
         ))
         self.assertIn("real dimension 24", case["scope_review"])
+        self.assertIn("RolePair → ℝ", case["scope_review"])
+        self.assertTrue(any(
+            "roleLorentzTangentParametersEquivCoordinates" in query
+            and "roleLorentzTangentEndpointFDerivInCoordinates_apply" in query
+            for query in case["queries"]
+        ))
         self.assertIn(
             "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
             case["required_refs"],
@@ -1821,6 +1833,55 @@ class ProofArchitectureTests(unittest.TestCase):
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
             "julia_lorentz_tangent_dimension_reuse_declarations_2026-10-26.json",
             case["required_refs"],
+        )
+        coordinate_inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "julia_lorentz_tangent_coordinates_declarations_2026-10-26.json"
+        )
+        self.assertIn(
+            coordinate_inventory_path.relative_to(proof.ROOT).as_posix(),
+            case["required_refs"],
+        )
+        inventory = json.loads(coordinate_inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertFalse(inventory["worktree_dirty"])
+        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+        self.assertEqual(set(inventory["request"]["full_names"]), set(declarations))
+        self.assertEqual(
+            declarations[
+                "D0.Geometry.roleLorentzTangentParametersEquivCoordinates"
+            ]["module"],
+            "D0.Geometry.A4DJuliaLinkPathDifferential",
+        )
+        self.assertIn(
+            "D0.Geometry.rolePairsEquivLorentzTangent",
+            declarations[
+                "D0.Geometry.roleLorentzTangentEndpointFDerivInCoordinates_apply"
+            ]["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Role → D0.Geometry.RolePair → ℝ",
+            declarations[
+                "D0.Geometry.roleLorentzTangentEndpointFDerivInCoordinates"
+            ]["elaborated_type"],
+        )
+        coordinate_query = next(
+            query for query in case["queries"]
+            if "roleLorentzTangentParametersEquivCoordinates" in query
+        )
+        coordinate_hits = proof.full_text_search(
+            proof.ROOT, coordinate_query, limit=8
+        )
+        surfaced = {hit["source"] for hit in coordinate_hits}
+        self.assertIn(
+            "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
+            surfaced,
+        )
+        self.assertIn(
+            coordinate_inventory_path.relative_to(proof.ROOT).as_posix(),
+            surfaced,
         )
 
     def test_transfer_cold_start_pins_actual_controls_and_conditional_bridge(self) -> None:
@@ -2026,7 +2087,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_dimension.json",
+            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_coordinates.json",
             require_current=True,
         )
 
@@ -2296,7 +2357,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_dimension.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_coordinates.json"
         )
         inventory_bytes = inventory_path.read_bytes()
         inventory = json.loads(inventory_bytes)
@@ -2354,7 +2415,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_dimension.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_coordinates.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
@@ -2428,7 +2489,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_matrix_partial_trace_current_declarations_2026-10-26_lorentz_tangent_dimension.json"
+            / "finite_matrix_partial_trace_current_declarations_2026-10-26_lorentz_tangent_coordinates.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -2513,7 +2574,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "archive_shift_topology_current_declarations_2026-10-26_lorentz_tangent_dimension.json"
+            / "archive_shift_topology_current_declarations_2026-10-26_lorentz_tangent_coordinates.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -2712,7 +2773,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "source_port_preparation_tensor_inventory_2026-10-26_lorentz_tangent_dimension.json"
+            / "source_port_preparation_tensor_inventory_2026-10-26_lorentz_tangent_coordinates.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
@@ -2792,7 +2853,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "flat_tensor_shared_api_declarations_2026-10-26_lorentz_tangent_dimension.json"
+            / "flat_tensor_shared_api_declarations_2026-10-26_lorentz_tangent_coordinates.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
