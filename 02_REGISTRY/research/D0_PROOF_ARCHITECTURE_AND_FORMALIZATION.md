@@ -8277,3 +8277,14 @@ SHA-256 `eebbe3413fea702f29acaf757baf24ff30fb48a489ae87e70f330342d63802be`.
 Its inherited axiom footprint includes `Classical.choice`, `Quot.sound`,
 `propext`, and the private `archiveCreatorPermSign` native-decision axiom from
 the existing CAR creator representation; this declaration is not axiom-free.
+
+At clean snapshot `5b4d06adbdc657e97a338e0cf38b9877622b9027`, the updated
+cold-start replay found all **24/24** cases, passed the **25-case** benchmark,
+and found all **142** required source references. The Julia case found **11/11**
+sources; the exact composed-theorem query ranked the Lean module and compiled
+`D0.All` declaration inventory first and second. The source-change/unrelated-
+prose impact control passed. The 8,019,845-byte replay output has SHA-256
+`5cdeefb15f032967c760b3489b44b488dfc06282c3ad1e2184f1319555b5906d`. Its
+compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_joint_coframe_endpoint.json`,
+SHA-256 `9ef5eaa356e8df48c7f785e12d9f68c9baebec0953ded3cce3b19eb19c5b820f`.
