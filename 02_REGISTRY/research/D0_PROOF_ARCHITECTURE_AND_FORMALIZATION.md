@@ -9236,3 +9236,35 @@ Cartan variation, all 16+24+2 Euler equations, the O(h²) continuum recovery,
 or physical Book03/source/clock selection. Those remain separate mathematical
 and physical obligations; the positive family remains research evidence and
 no GR assembly status changes.
+
+### Midpoint-history retrieval checkpoint (26 October 2026)
+
+After the time-indexed midpoint theorem was added, the cold-start replay at
+clean snapshot `a7778a0327f3b6ca04674b403444603b1f584663` found all **158**
+required source references in **24/24** cases and passed the **25-case**
+retrieval/source-impact suite. Its compact receipt is
+[`proof_architecture_cold_start_summary_2026-10-26_midpoint_history.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_midpoint_history.json)
+(7,959 bytes, SHA-256
+`c3fef968b7a68a217d39bebba91ab5ad6175fed714114dc218107cb8ba583f0f`); the
+8,902,961-byte full replay output has SHA-256
+`d18b62167f23395c4dc03e940c2be7a1a2ee893cfbea5129a29b2812275fdfa6`.
+The cold-start runner and search engine were pinned by SHA-256
+`8c435c19cf5f3fd0f45adab75c41080331095a9037d3c6e95964aac99fd5c375` and
+`adf78c418665c8c8c8f26367aed0d702df4ec6ec324e2365415d01a80402e26b`.
+
+The same-snapshot legacy/current comparison used one query per case. Of seven
+explicitly source-scoped questions, legacy assembly search surfaced **0/7**
+expected sources and the current search surfaced **7/7**. Current serialized
+answers total 864,808 bytes (36,033 average); the legacy empty responses total
+48 bytes. Eight responses contain an owner field on some candidate, while
+only one expected-source path links directly to an assembly owner; seven
+remain without that link. Semantic relevance, owner correctness and hypothesis
+preservation still require manual review. The comparison is retrieval evidence,
+not completion of the old/new workflow review. Its report is
+[`proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json)
+(79,464 bytes, SHA-256
+`6194ba1002cd7036876bd2c8cc7bd2790a7e0887f553a7616a869061c7fad5b5`); it
+records runner SHA-256
+`94e8cb948cacc14b770350a14baf0c98329c689291ebc13635320b4870cdb5d8`.
+Neither retrieval replay changes a scientific acceptance or physical-selection
+status.

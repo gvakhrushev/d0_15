@@ -1,0 +1,232 @@
+{
+  "schema": "d0-proof-architecture-cold-start-summary-v2",
+  "snapshot_commit": "a7778a0327f3b6ca04674b403444603b1f584663",
+  "worktree_dirty": false,
+  "search_cases_found_all_sources": 24,
+  "search_cases_total": 24,
+  "benchmark_cases_total": 25,
+  "required_source_ref_count": 158,
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "2320a1f8d64ba8921dd22050222a13f0e13989179a5f3128b998218595416c4c",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "semantic_scope_review_is_manual": true,
+  "cases": [
+    {
+      "id": "labelled-native-raising-inverse",
+      "query_count": 18,
+      "required_source_count": 13,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "positive-nonvacuum-recovery",
+      "query_count": 5,
+      "required_source_count": 3,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "proper-lorentz-same-orientation-orbit",
+      "query_count": 4,
+      "required_source_count": 6,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-gram-affine-quadratic-expansion",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-gram-frechet-derivative",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "golden-step-vs-internal-ratio",
+      "query_count": 1,
+      "required_source_count": 1,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "fixedright-stationary-and-minimum-scopes",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "same-fields-do-not-fix-price-source",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "same-prefix-two-ending-prospective-price",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "clock-dirac-incidence-curvature",
+      "query_count": 4,
+      "required_source_count": 3,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "gain-readiness-vs-trace-multiplicity",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "conditional-transfer-does-not-select-execution",
+      "query_count": 1,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "verification-kernel-transfer-outside-gr",
+      "query_count": 8,
+      "required_source_count": 8,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "car-scaffolds-vs-hodge-operator-claims",
+      "query_count": 28,
+      "required_source_count": 28,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "top-hodge-inverse-spectral-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "dense-operator-scene-reconstruction-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "scoped-nogo-vs-positive-existence",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-affine-carrier-parameter-recovery",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-julia-null-chart-inverse",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "julia-query-principal-frame-coframe-recovery",
+      "query_count": 25,
+      "required_source_count": 16,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-hermitian-adjoint-twisted-car-application",
+      "query_count": 11,
+      "required_source_count": 12,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "real-unit-profile-weighted-hermitian-bridge",
+      "query_count": 18,
+      "required_source_count": 19,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "native-weighted-dirac-matrix-application",
+      "query_count": 18,
+      "required_source_count": 13,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "archive-phase-shift-reuses-transitive-permutation-theorem",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    }
+  ],
+  "replay": {
+    "source_commit": "a7778a0327f3b6ca04674b403444603b1f584663",
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "runner_sha256": "8c435c19cf5f3fd0f45adab75c41080331095a9037d3c6e95964aac99fd5c375",
+    "runner_git_blob": "b22a49ffb3681aef5ee2aa445f4baa44a34e6bfe",
+    "search_engine_sha256": "adf78c418665c8c8c8f26367aed0d702df4ec6ec324e2365415d01a80402e26b",
+    "search_engine_git_blob": "637bbb50e900225c03d271c5ae881d2d29f5a485",
+    "test_sha256": "681725618515d9a189069e9980255d9e80a9059fd4e99d7b32fd20c2375f11f0",
+    "test_git_blob": "294ec0e34af472c7ffddc00dfa743bc40e673d31",
+    "full_output_sha256": "d18b62167f23395c4dc03e940c2be7a1a2ee893cfbea5129a29b2812275fdfa6",
+    "full_output_bytes": 8902961
+  },
+  "search_process_comparison": {
+    "report": "proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json",
+    "sha256": "6194ba1002cd7036876bd2c8cc7bd2790a7e0887f553a7616a869061c7fad5b5",
+    "bytes": 79464,
+    "snapshot_commit": "a7778a0327f3b6ca04674b403444603b1f584663",
+    "metrics": {
+      "query_count": 24,
+      "query_count_with_explicit_source_scope": 7,
+      "legacy_scoped_queries_with_expected_source": 0,
+      "current_scoped_queries_with_expected_source": 7,
+      "legacy_serialized_answer_bytes_total": 48,
+      "current_serialized_answer_bytes_total": 864808,
+      "legacy_average_answer_bytes": 2.0,
+      "current_average_answer_bytes": 36033.7,
+      "legacy_owner_bearing_queries": 0,
+      "current_owner_bearing_queries": 8,
+      "current_scoped_queries_with_expected_source_owner_link": 1,
+      "current_expected_source_owner_link_count": 1,
+      "current_scoped_queries_with_expected_source_header_owner_declaration": 1,
+      "current_expected_source_header_owner_declaration_count": 1,
+      "current_scoped_expected_sources_without_direct_owner_link": 7,
+      "semantic_review_required_for_all_queries": true
+    }
+  }
+}

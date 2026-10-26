@@ -2283,11 +2283,7 @@ class ProofArchitectureTests(unittest.TestCase):
             joint_frechet_inventory["schema"], "d0-lean-declaration-inventory-v1"
         )
         self.assertRegex(joint_frechet_inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
-        self.assertFalse(joint_frechet_inventory["worktree_dirty"])
-        self.assertEqual(
-            joint_frechet_inventory["lean_source_digest"],
-            lean_task_build.source_digest(),
-        )
+        assert_historical_compiled_inventory(self, joint_frechet_inventory)
         joint_frechet_declarations = {
             row["name"]: row for row in joint_frechet_inventory["declarations"]
         }
