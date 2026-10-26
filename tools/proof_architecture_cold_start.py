@@ -481,6 +481,7 @@ CASES: list[dict[str, Any]] = [
             "правый Lorentz endpoint одновременно CAR Eq 27 и query Eq 28 один recovered endpoint",
             "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt",
             "principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz hΓ hΛ",
+            "principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz hα hShift",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -489,6 +490,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_endpoint_inventory_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_joint_recovery_inventory_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_same_query_coframe_endpoint_recovery_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
@@ -537,8 +539,11 @@ CASES: list[dict[str, Any]] = [
             "`principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz` now "
             "pairs that transported Eq. (30a) coframe identity with the Eq. (28) endpoint decoder on the "
             "same concrete query family; the established Eq. (27) and exterior-lift outputs remain in the "
-            "companion joint endpoint theorem. The pair still fixes the coframe link and does not fill the "
-            "24 link directions."
+            "companion joint endpoint theorem. `principalFrameJuliaQueryFamily_joint_coframe_all_role_"
+            "endpoint_chart_coverage_of_proper_roleLorentz` composes that coframe identity with the existing "
+            "non-null Eq. (27)/null Eq. (28) chart disjunction for every role, retaining the normalized "
+            "covector and nonzero-shift premises. Both compositions keep the coframe link fixed and do not "
+            "fill the 24 link directions."
         ),
     },
     {

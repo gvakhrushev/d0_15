@@ -1730,6 +1730,10 @@ class ProofArchitectureTests(unittest.TestCase):
             "principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz"
             in query for query in case["queries"]
         ))
+        self.assertTrue(any(
+            "principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz"
+            in query for query in case["queries"]
+        ))
         self.assertIn("composes the exact right-link transport to identity", scope)
         self.assertIn("identity derivative", scope)
         self.assertIn("24 link jets", scope)
@@ -1758,7 +1762,21 @@ class ProofArchitectureTests(unittest.TestCase):
             [
                 "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
                 "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
-                "julia_same_query_coframe_endpoint_recovery_declarations_2026-10-26.json",
+                "julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json",
+            ],
+        )
+        all_role_query = next(
+            query for query in case["queries"]
+            if "principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz"
+            in query
+        )
+        all_role_hits = proof.full_text_search(proof.ROOT, all_role_query, limit=3)
+        self.assertEqual(
+            [row["source"] for row in all_role_hits[:2]],
+            [
+                "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+                "julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json",
             ],
         )
         self.assertIn(15, source_pin["scope_query_indexes"])

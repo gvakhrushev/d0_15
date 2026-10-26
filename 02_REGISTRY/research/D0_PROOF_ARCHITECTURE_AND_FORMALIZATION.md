@@ -8309,3 +8309,14 @@ whole role-indexed query family. It does not prove derivatives in the link
 field, the 24 link directions or the full all-jet pullback, and does not
 establish physical admission, complete price/source selection, GR closure or
 C0 acceptance.
+
+The five declaration records for the reusable chart proposition, the owned
+per-role coverage theorem, the coframe identity, and both joint compositions
+were extracted through public import `D0.All` at clean source commit
+`37ee0b7b9414962344addc84a06f95a105cd23df`, with `worktree_dirty=false`,
+Lean source digest
+`4c25e0ea8ab7e66d0870d52c7e527ec98c944adb88f3b84cf198263339d7d734`, and
+toolchain `leanprover/lean4:v4.30.0`. The inventory preserves exact
+elaborated types, dependencies and inherited axiom footprints at
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json`,
+SHA-256 `2dd1f258e6e6137bd361b986c668d4a0f07c7173670e352436d5206b692c6fd7`.
