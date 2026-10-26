@@ -43,6 +43,10 @@ MAX_FIELD_CHARS = 8000
 MAX_SEARCH_EVIDENCE = 3
 MAX_SEARCH_SOURCE_REFS = 3
 MAX_SEARCH_DETAIL_CHARS = 160
+MAX_DECLARED_SOURCE_RESULTS = 3
+MAX_DECLARED_SOURCE_APPLICATIONS = 3
+MAX_DECLARED_SOURCE_ATTEMPTS = 3
+MAX_FORMAL_SUPPORT_LOCATORS = 5
 SOURCE_LOCATOR_STOPWORDS = frozenset("""
 a an and are as at be been by can do does for from has have if in into is it its
 of on or our that the their then this to under was were what when where which
@@ -1425,13 +1429,146 @@ def full_text_search(root: pathlib.Path, query: str,
 
 
 def _search_summary(item: dict[str, Any]) -> dict[str, Any]:
-    """Keep the search response small; use `show` for the full source record."""
-    return {"kind": item.get("kind"), "key": item.get("key"),
-            "label": str(item.get("label", ""))[:MAX_SNIPPET],
-            "source": item.get("source")}
+    """Expose typed fields from exact authority matches; use `show` for detail."""
+    record = item.get("record", {})
+    summary = {"kind": item.get("kind"), "key": item.get("key"),
+               "label": str(item.get("label", ""))[:MAX_SNIPPET],
+               "source": item.get("source")}
+    for key in (
+        "owner", "statement", "interface", "outcome", "scope_level", "scope",
+        "hypotheses", "hypothesis_map", "consumer", "consumer_location",
+        "result", "obligation", "method", "review", "carrier", "action",
+        "variations", "normalization", "refinement", "role", "lean_file",
+        "referenced_by", "status", "failure_meaning",
+    ):
+        if key in record:
+            summary[key] = record[key]
+    evidence = record.get("evidence")
+    if isinstance(evidence, list):
+        summary["evidence"] = evidence[:MAX_SEARCH_SOURCE_REFS]
+        summary["evidence_omitted"] = max(0, len(evidence) - MAX_SEARCH_SOURCE_REFS)
+    return summary
 
 
-def _search_candidate_summary(item: dict[str, Any]) -> dict[str, Any]:
+def _normalized_source_path(value: Any) -> str:
+    path = pathlib.PurePosixPath(str(value or "").replace("\\", "/")).as_posix()
+    return path[2:] if path.startswith("./") else path
+
+
+def _declared_source_links(dataset: dict[str, Any], source_path: str) -> dict[str, Any]:
+    """Join only exact source-path fields to their existing typed records.
+
+    These are registry links, not semantic validation of the source or its
+    owner. Missing links stay explicit instead of being inferred from prose.
+    """
+    source_path = _normalized_source_path(source_path)
+    results = dataset.get("assembly", {}).get("results", [])
+    applications = dataset.get("assembly", {}).get("applications", [])
+    attempts = dataset.get("assembly", {}).get("attempts", [])
+    interface_rows = _as_rows(dataset.get("contract", {}).get("interfaces", []))
+    obligation_rows = _as_rows(dataset.get("contract", {}).get("obligations", []))
+    declared_results = []
+
+    for result in results:
+        evidence = [
+            item for item in result.get("evidence", [])
+            if isinstance(item, dict)
+            and _normalized_source_path(item.get("path")) == source_path
+        ]
+        if not evidence:
+            continue
+        result_id = str(result.get("id", ""))
+        interface_id = result.get("interface")
+        interface_contract = next(
+            (row for row in interface_rows if row.get("id") == interface_id), None
+        )
+        linked_applications = [
+            row for row in applications if row.get("result") == result_id
+        ]
+        linked_attempts = [
+            row for row in attempts if row.get("result") == result_id
+        ]
+        compact_applications = []
+        for application in linked_applications[:MAX_DECLARED_SOURCE_APPLICATIONS]:
+            obligation_id = application.get("obligation")
+            obligation = next(
+                (row for row in obligation_rows if row.get("id") == obligation_id), None
+            )
+            compact_applications.append({
+                "id": application.get("id"),
+                "obligation": obligation_id,
+                "method": application.get("method"),
+                "consumer_location": application.get("consumer_location"),
+                "hypothesis_map": application.get("hypothesis_map"),
+                "review": application.get("review"),
+                "target_hypotheses": obligation.get("hypotheses") if obligation else None,
+            })
+        compact_attempts = [
+            {key: row.get(key) for key in ("id", "work_key", "scope", "reopen_when", "review")
+             if key in row}
+            for row in linked_attempts[:MAX_DECLARED_SOURCE_ATTEMPTS]
+        ]
+        declared_results.append({
+            "result_id": result_id,
+            "owner": result.get("owner"),
+            "statement": result.get("statement"),
+            "interface": interface_id,
+            "interface_contract": interface_contract,
+            "outcome": result.get("outcome"),
+            "scope_level": result.get("scope_level"),
+            "hypotheses": result.get("hypotheses"),
+            "reported_state": result.get("reported_state"),
+            "evidence": evidence[:MAX_SEARCH_SOURCE_REFS],
+            "evidence_omitted": max(0, len(evidence) - MAX_SEARCH_SOURCE_REFS),
+            "declared_applications": compact_applications,
+            "applications_omitted": max(
+                0, len(linked_applications) - len(compact_applications)
+            ),
+            "scoped_attempts": compact_attempts,
+            "attempts_omitted": max(0, len(linked_attempts) - len(compact_attempts)),
+        })
+
+    formal_support = []
+    for row in dataset.get("formal_support", []):
+        referenced = {
+            _normalized_source_path(item)
+            for item in str(row.get("referenced_by", "")).split(";")
+            if item.strip()
+        }
+        if source_path in referenced:
+            formal_support.append({
+                "lean_module": row.get("lean_module"),
+                "lean_file": row.get("lean_file"),
+                "role": row.get("role"),
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only",
+            })
+
+    owners = sorted({str(row["owner"]) for row in declared_results if row.get("owner")})
+    if owners:
+        owner_status = "declared_by_exact_assembly_evidence_link"
+    elif declared_results:
+        owner_status = "exact_assembly_evidence_link_without_owner"
+    else:
+        owner_status = "no_exact_assembly_owner_link"
+    return {
+        "source_path": source_path,
+        "link_basis": "exact source-path field match only",
+        "owner_status": owner_status,
+        "owners": owners,
+        "assembly_results": declared_results[:MAX_DECLARED_SOURCE_RESULTS],
+        "assembly_results_omitted": max(
+            0, len(declared_results) - MAX_DECLARED_SOURCE_RESULTS
+        ),
+        "formal_support_locators": formal_support[:MAX_FORMAL_SUPPORT_LOCATORS],
+        "formal_support_locators_omitted": max(
+            0, len(formal_support) - MAX_FORMAL_SUPPORT_LOCATORS
+        ),
+    }
+
+
+def _search_candidate_summary(item: dict[str, Any],
+                              dataset: dict[str, Any] | None = None) -> dict[str, Any]:
     """Return a compact search card while preserving exact pin coordinates."""
     references = item.get("source_refs", [])
     evidence = item.get("evidence_lines", [])
@@ -1471,6 +1608,10 @@ def _search_candidate_summary(item: dict[str, Any]) -> dict[str, Any]:
     for key in ("source_commit", "source_blob"):
         if item.get(key):
             summary[key] = item[key]
+    if dataset is not None and item.get("source"):
+        summary["declared_source_links"] = _declared_source_links(
+            dataset, str(item["source"])
+        )
     return summary
 
 
@@ -2542,7 +2683,7 @@ def main() -> int:
             text_hits = full_text_search(root, query)
             seen = {(x["kind"], x["key"]) for x in structured}
             result = {"query": query, "structured_matches": [_search_summary(x) for x in structured],
-                      "text_candidates": [_search_candidate_summary(x) for x in text_hits
+                      "text_candidates": [_search_candidate_summary(x, data) for x in text_hits
                                           if (x["kind"], x["key"]) not in seen],
                       "snapshot_commit": data["snapshot_commit"],
                       "source_digests": data["source_digests"],

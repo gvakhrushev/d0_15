@@ -964,6 +964,80 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(card["source_commit"], "b" * 40)
         self.assertEqual(card["source_blob"], "c" * 40)
 
+    def test_structured_search_summary_exposes_registered_owner_and_scope(self) -> None:
+        data = dataset()
+        result = data["assembly"]["results"][0]
+        result.update({
+            "owner": "Recorded research owner",
+            "statement": "Exact model-level statement.",
+            "interface": "i1",
+            "outcome": "positive",
+            "scope_level": "model",
+            "hypotheses": {"h": "explicit retained condition"},
+            "evidence": [{
+                "ref": "a" * 40,
+                "path": "02_REGISTRY/research/reuse.md",
+                "sha256": "b" * 64,
+                "section_refs": ["L5: exact statement"],
+            }],
+        })
+        item = next(
+            row for row in proof.records(data)
+            if row["kind"] == "assembly-result" and row["key"] == "r1"
+        )
+
+        summary = proof._search_summary(item)
+
+        self.assertEqual(summary["owner"], "Recorded research owner")
+        self.assertEqual(summary["interface"], "i1")
+        self.assertEqual(summary["scope_level"], "model")
+        self.assertEqual(summary["hypotheses"], {"h": "explicit retained condition"})
+        self.assertEqual(summary["evidence"][0]["path"], "02_REGISTRY/research/reuse.md")
+
+    def test_text_candidate_shows_only_exact_declared_owner_and_application_links(self) -> None:
+        data = dataset()
+        result = data["assembly"]["results"][0]
+        source_path = "02_REGISTRY/research/reuse.md"
+        result.update({
+            "owner": "Recorded research owner",
+            "interface": "i1",
+            "hypotheses": {"source_condition": "retained"},
+            "evidence": [{
+                "ref": "a" * 40,
+                "path": source_path,
+                "sha256": "b" * 64,
+                "section_refs": ["L5: exact source"],
+            }],
+        })
+        data["formal_support"][0]["referenced_by"] = source_path
+        candidate = {
+            "kind": "text-candidate", "key": source_path, "source": source_path,
+            "source_refs": [], "evidence_lines": [],
+        }
+
+        card = proof._search_candidate_summary(candidate, data)
+        links = card["declared_source_links"]
+        exact_result = links["assembly_results"][0]
+        application = exact_result["declared_applications"][0]
+        locator = links["formal_support_locators"][0]
+
+        self.assertEqual(links["link_basis"], "exact source-path field match only")
+        self.assertEqual(links["owner_status"], "declared_by_exact_assembly_evidence_link")
+        self.assertEqual(links["owners"], ["Recorded research owner"])
+        self.assertEqual(exact_result["result_id"], "r1")
+        self.assertEqual(exact_result["evidence"][0]["path"], source_path)
+        self.assertEqual(exact_result["hypotheses"], {"source_condition": "retained"})
+        self.assertEqual(application["id"], "r1-to-o1")
+        self.assertEqual(application["hypothesis_map"], {"h": {"target_hypothesis": "h"}})
+        self.assertEqual(application["target_hypotheses"], {"h": "given"})
+        self.assertEqual(locator["status"], "metadata_locator_only")
+
+        unmatched = proof._declared_source_links(
+            data, "02_REGISTRY/research/other/reuse.md"
+        )
+        self.assertEqual(unmatched["owner_status"], "no_exact_assembly_owner_link")
+        self.assertEqual(unmatched["assembly_results"], [])
+
     def test_text_search_finds_russian_content_and_reports_section_line(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)
@@ -1813,11 +1887,20 @@ class ProofArchitectureTests(unittest.TestCase):
             comparison["metrics"]["semantic_review_required_for_all_queries"]
         )
         self.assertEqual(
-            comparison["metrics"]["current_owner_bearing_queries"], 0
+            comparison["metrics"]["current_scoped_queries_with_expected_source_owner_link"],
+            1,
+        )
+        self.assertEqual(
+            comparison["metrics"]["current_expected_source_owner_link_count"], 1
         )
         self.assertTrue(all(
             row["semantic_review"]["hypothesis_preservation"]
             == "not_assessed_by_search_output"
+            for row in comparison["cases"]
+        ))
+        self.assertTrue(all(
+            row["semantic_review"]["owner_correctness"]
+            == "exact registered links are shown; independent owner correctness is not assessed by search output"
             for row in comparison["cases"]
         ))
         self.assertEqual(

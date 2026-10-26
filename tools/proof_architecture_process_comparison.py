@@ -62,7 +62,7 @@ def _new_cli_answer(dataset: dict[str, Any], query: str,
         "query": query,
         "structured_matches": [proof._search_summary(item) for item in structured],
         "text_candidates": [
-            proof._search_candidate_summary(item)
+            proof._search_candidate_summary(item, dataset)
             for item in text_hits
             if (item["kind"], item["key"]) not in seen
         ],
@@ -88,12 +88,17 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
         old_paths = _old_paths(old_hits)
         new_structured = new_answer["structured_matches"]
         new_text = new_answer["text_candidates"]
-        new_owner_values = sorted({
-            str(owner)
-            for item in [*new_structured, *new_text]
-            for owner in ([item.get("owner")] + list(item.get("owners", [])))
-            if owner
-        })
+        new_owner_values = set()
+        for item in [*new_structured, *new_text]:
+            new_owner_values.update(
+                str(owner) for owner in
+                ([item.get("owner")] + list(item.get("owners", []))) if owner
+            )
+            source_links = item.get("declared_source_links", {})
+            new_owner_values.update(
+                str(owner) for owner in source_links.get("owners", []) if owner
+            )
+        new_owner_values = sorted(new_owner_values)
         expected = expected_sources(case, query_index)
 
         old_relevant_candidates = sum(
@@ -110,6 +115,35 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
             source for source in expected
             if any(_path_matches(path, source) for path in new_text_paths)
         ]
+        expected_owner_links: dict[tuple[str, str, str], dict[str, Any]] = {}
+        for item in new_text:
+            candidate_path = str(item.get("source", ""))
+            source_links = item.get("declared_source_links", {})
+            for expected_source in expected:
+                if (proof._normalized_source_path(candidate_path)
+                        != proof._normalized_source_path(expected_source)):
+                    continue
+                for result in source_links.get("assembly_results", []):
+                    owner = result.get("owner")
+                    result_id = str(result.get("result_id", ""))
+                    if not owner:
+                        continue
+                    key = (expected_source, result_id, str(owner))
+                    expected_owner_links[key] = {
+                        "source": expected_source,
+                        "result_id": result_id,
+                        "owner": str(owner),
+                        "interface": result.get("interface"),
+                        "evidence": result.get("evidence", []),
+                    }
+        expected_owner_links_list = [
+            expected_owner_links[key] for key in sorted(expected_owner_links)
+        ]
+        expected_sources_without_owner_link = sorted(
+            source for source in expected if not any(
+                link["source"] == source for link in expected_owner_links_list
+            )
+        )
         old_serialized = json.dumps(old_hits, ensure_ascii=False, indent=2)
         new_serialized = json.dumps(new_answer, ensure_ascii=False, indent=2)
         rows.append({
@@ -140,6 +174,8 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
                 "structured_match_count": len(new_structured),
                 "text_candidate_count": len(new_text),
                 "expected_source_hits": new_source_hits,
+                "expected_source_owner_links": expected_owner_links_list,
+                "expected_sources_without_direct_owner_link": expected_sources_without_owner_link,
                 "relevant_text_candidate_count": new_relevant_candidates,
                 "text_candidate_count_not_in_scoped_source_set": (
                     len(new_text) - new_relevant_candidates if expected else None
@@ -147,7 +183,10 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
                 "serialized_answer_bytes": len(new_serialized.encode("utf-8")),
             },
             "semantic_review": {
-                "owner_correctness": "not_assessed_by_search_output",
+                "owner_correctness": (
+                    "exact registered links are shown; independent owner correctness "
+                    "is not assessed by search output"
+                ),
                 "hypothesis_preservation": "not_assessed_by_search_output",
                 "new_mathematics_required": "not_assessed_by_search_output",
             },
@@ -195,6 +234,18 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
             ),
             "current_owner_bearing_queries": sum(
                 bool(row["current"]["owners"]) for row in rows
+            ),
+            "current_scoped_queries_with_expected_source_owner_link": sum(
+                bool(row["current"]["expected_source_owner_links"])
+                for row in scoped
+            ),
+            "current_expected_source_owner_link_count": sum(
+                len(row["current"]["expected_source_owner_links"])
+                for row in scoped
+            ),
+            "current_scoped_expected_sources_without_direct_owner_link": sum(
+                len(row["current"]["expected_sources_without_direct_owner_link"])
+                for row in scoped
             ),
             "semantic_review_required_for_all_queries": True,
         },
