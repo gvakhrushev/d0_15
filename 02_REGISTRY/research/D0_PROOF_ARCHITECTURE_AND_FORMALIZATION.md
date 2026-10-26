@@ -7983,3 +7983,40 @@ The replay finds all sources in **23/23** cases, passes the **24-case**
 benchmark, checks **137** required-source references, and passes the
 source-change versus unrelated-prose impact control. Its full output is pinned
 by SHA-256 `c3102d212a74c445156862a334c6fbe7ad30bd8a9ea4a4c7ffd4b5cffbe37820`.
+
+### Fintype-only Gram symmetry and isometry invariance (26 October 2026)
+
+The generic `finiteGram_symmetric` and `finiteGram_right_invariant`
+declarations now require only `[Fintype ι]`; their matrix identities do not
+use decidable equality on the finite index type. Inverse-based orbit and
+dressed-transport results retain their existing assumptions. No theorem
+statement or geometric source convention changed, and the actual solder-metric
+consumer still builds.
+
+Lean source commit `605a9751c24efd613390fe1edd7ba291ea76f2ab` pins
+`FiniteGramTangent.lean` SHA-256
+`d64f088cc95c3ee3e37b15391a006c16ba6b9ea3b2541c4f995afd21113e12fd`. The
+algebra module passed **2,946/2,946**, the geometry consumer passed
+**3,087/3,087**, and final `D0.All` passed **4,581/4,581**. Eight declaration
+inventories use Lean-source digest
+`cc3e93226fe796e0bf9773a7e2f23e26929db6617a6ee96d523639648a51c47e`, were
+captured at that clean commit, and record `worktree_dirty=false`:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_fintype_only_core.json` | 15/15 | `c20e60983290e251a9baf8274e1133bf4dcf65f4fc8e355152a27387973bcfda` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_fintype_only_core.json` | 36/36 | `ff29d1139e223423a66348408926490df80f50f6ebd791aba0bff119352b453c` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_fintype_only_core.json` | 9/9 | `459aa6765a682ce7c43e0b3afef7b5e1c8b7ab48a6e1514cbe3e14377b9500a` |
+| `archive_shift_topology_current_declarations_2026-10-26_fintype_only_core.json` | 26/26 | `a657a00d28dee915b73200e22b6161667026bc93ee8230be1db6cd785063876e` |
+| `source_port_preparation_tensor_inventory_2026-10-26_fintype_only_core.json` | 73/73 | `2f972dab47911b55268f0553f5a28b473b644b73a15c2ed1178f8e7164a680c6` |
+| `flat_tensor_shared_api_declarations_2026-10-26_fintype_only_core.json` | 4/4 | `17d6ed5bc2fd1817012d17d76e43262c758f2190a485f7e594d11425c2050d23` |
+| `proper_role_lorentz_orbit_declarations_2026-10-26_fintype_only_core.json` | 5/5 | `7b99c30f250203dac70a3e1de4d8a91825de90ac1ab1d139bd1c07a9affa151b` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_fintype_only_core.json` | 25/25 | `dc11c69f94f24ea5c0b44c5202634efc5dccdfa7ab627bd33f37c5bfbd4c7e88` |
+
+The current cold-start receipt is
+`proof_architecture_cold_start_summary_2026-10-26_fintype_only_core.json`,
+SHA-256 `22ad676a471b02024e58a41cd8070a7e4722224d34bc3fdf7c868469d30348cc`.
+The replay finds all sources in **23/23** cases, passes the **24-case**
+benchmark, checks **137** required-source references, and passes the
+source-change versus unrelated-prose impact control. Its full output is pinned
+by SHA-256 `20cf043adcdd3beb8879d2ff846650a6c79289550fa3a8d27e0ceb8931e30c96`.
