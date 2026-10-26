@@ -13563,3 +13563,69 @@ All prior science retained, including frozen7bs29109bytes/SHA256
 Only two existing owned paths changed. Structural/source/finite-control
 PASS is not remote CI or physical GR acceptance. Existing #334 remains
 Draft/open/unmerged; no new task/PR/physical admission or discharge.
+
+
+## 26 October2026 — one paid Dirac carries the intrinsic observer metric and the full stationary germ
+
+SAME #334, constitutive/native-programme-v1; native realization and final
+composition. Input scientific state92d025db; concurrent intake through
+4cfdbdfe is preserved. No new task, interface, action, selector, assembly
+acceptance or closure status is introduced. The primary artifact's7bu
+composes7bh's COMPLETE two-term Hodge,7k's real prefixes, paid-writer11.1,
+7az's projection/involution/full action germ and7aq's controlled compiler.
+
+Exact parent substitution:7az's decoded geometry now has an explicit
+RESTRICTED same-operator metric application. Fixed scalar site tests
+are transported by the ACTUAL prefixes on all C0/C1 rows. Their full
+Dirac commutator norm is ||[U,a]||/sqrt22, with the closing test fixed at
+clock0. A complete rotor W_delta(D) for the original finite full-CAR D
+yields its metric with multiplicative error kappa/sqrt(1-kappa^2) and
+all-column compiler error eta=2epsilon R_D/delta. No N factor is hidden
+in that comparison; every primitive and work column stays in the price.
+
+On one geometry channel and the existing signed action channels, the SAME
+scalar site representation gives this metric together with the whole
+source identity B-B_base=f-f(0). The absolute heat/rank anchor is retained.
+At an actual finite compiled centre, all internal primitive and fixed-rank
+cut first rows vanish exactly, despite metric approximation error. Apply
+the old f=Palatini--CAR germ and its original nonvacuum all-field centre;
+no new geometric root, Hessian census or action-germ theorem is needed.
+The actual native centre and the smooth source chart have explicitly
+different precision/differentiability claims.
+
+Remaining hypotheses and exact scope: independently fixed readable site
+sector and declared edge-test lift; selected7bh scene/internal placement;
+ordinary-WORK addressability (not forced by RawZone's literal single port);
+full input preparation, actual compiler/inverse/common clock and any extra
+same-execution Cost-Info/R terms; the target finite metric's own Lorentz/
+observer/refinement interpretation; selected constitutive field writer.
+This is NOT faithfulness of the entire original path algebra, a proved
+physical scale law, or full Book03 geometry/GR closure. No assembly premise
+is marked discharged. The consumed theorem is supporting composition until
+that physical application is justified.
+
+The exact two-site control strengthens the route decision: target distances
+1/3 and1/4 occur at the same full endpoint spectrum and projection return,
+with zero complete fixed-clock first source. Therefore intrinsic observer
+metric plus stationarity still does not select Einstein; the remaining
+constitutive relation is mathematically substantive, not a missing decoder
+label. Incoming7bk--7bt literal-actuation and full WORK-price boundaries
+are preserved. The primary positive family and both universality routes
+remain consumers after their actual hypotheses are supplied.
+
+Smallest decisive check: the embedded7bu Python constructs33 scene vertices,
+359 edges,528 C0 and6272 C1 modes; verifies the exact closing-block formula
+numerically; rejects the fixed-test/noninternal substitutions; proves the
+96-dimensional joint projection/action fixture with exact rationals; and
+checks the positive-square-root/compiler inequalities. It uses explicit
+failure guards, retains the complete input ranks and publishes its full
+source/receipt in the primary artifact. No old mathematical suite or Lean
+module was rerun. Proof SHA/byte pin and checker/receipt SHA pins are in7bu.
+
+Validation on the final7bu mathematical inputs: the changed checker passed;
+validate_work.py, validate_agent_protocol.py and gr_assembly.py check passed,
+with54 active results,98 results,5 discharged obligations out of22 and no
+scientific promotion. git diff --check passed. Concurrent source/architecture
+intake through e80763cd is preserved; none changes the7bu input statements.
+validate_repo.py also passed on the checked tree:889 claims,31 assumptions,
+58 aliases,183 formal_support,918 Lean closure entries; zero warnings.

@@ -24090,6 +24090,558 @@ if __name__ == '__main__':
         'old_suites_or_full_native_heat_replayed':False},indent=2))
 ```
 
+## 7bu. The same paid Dirac can carry an intrinsic observer metric and the complete stationary action germ
+
+26 October2026. SAME #334 / constitutive/native-programme-v1. Phase:
+native realization and final composition. Inputs a078b107 and the concurrent
+intake through92d025db are preserved. The parent is7az's explicit remaining
+metric objection: terminal field storage alone is not the metric of the
+priced Dirac. The changed input is the ACTUAL causal transport of an
+independently fixed internal test algebra. Compose7bh's full incidence,
+paid-writer11.1's commutator norm,7k's prefix frame,7az's stationary
+projection/involution and whole action germ, and7aq's controlled compiler.
+This supplies a restricted same-operator metric realization, with explicit
+errors, on the declared internal-module placement. It does not identify the
+whole Book03 path metric or select an Einstein constitutive law.
+
+### One complete paid operator, with the tests transported by its real prefixes
+
+Keep7bh501 without removing a cochain, paid stage, failure or work column.
+On S=K(9,11,13), let b_S have359 rows and33 columns,
+R_S=(D_S+2I)^(-1/2), ||R_S||=1/sqrt22. Take ACTUAL primitive gates
+g_t=I_S tensor u_t on a retained internal space K, for0<=t<N. This is
+7bf/7bi's INTERNAL placement: gates commute with the scene incidence and
+weights. It is not the original RawZone port placement;7bh500 and the new
+7bk/7bn admission distinctions still apply. In particular ordinary-WORK
+G/CX addressability is7t's inherited interface, not derived from one port.
+
+Let A be an independently fixed unital represented test algebra on K.
+For the application below it is the scalar algebra of a fixed operational
+site/phase register X: a=sum_x a(x)P_x, with every P_x nonzero and all CAR,
+clock, control, helper and protected columns retained. X and these tests are
+specified BEFORE choosing a target metric; no numerical field decoder is
+used to define a. Put V_0=I, V_t=u_(t-1)...u_0, U=V_N, and a_t=V_t a V_t*.
+The subscript t ranges from0 to N-1 only. On C0 use I_S tensor a_t; on
+spatial C1 rows at t use I_359 tensor a_t. On temporal C1 row t use a_(t+1)
+if t<N-1 and a_0 if t=N-1, always tensor the scene identity. Denote this
+whole faithful unital *representation by pi_g. The closing row is the
+SAME clock0 test; it does not impose UaU*=a or introduce a new a_N.
+
+For the actual two-term D01=[[0,d*],[d,0]], all spatial and interior temporal
+rows of K(a)=d pi0(a)-pi1(a)d vanish. The sole closing row, from stage N-1,
+is R_S tensor[(aU-Ua)V_(N-1)*]. Consequently, for a=a*,
+
+    L_g(a)=||[D01,pi_g(a)]||
+          =||R_S|| ||[U,a]||=||[U,a]||/sqrt22.       (592)
+
+This is an ALL-MODE block-operator norm, with no1/N or sqrt2 factor:
+[D01,pi_g(a)]=[[0,-K(a)*],[K(a),0]]. It has no rank multiplier. Equivalently
+conjugate C0 by V_t*, spatial C1 by V_t*, and temporal C1 by V_(t+1)*,
+using identity on the closing row. This is a unitary frame change of the
+SAME D01: interior differences become ordinary differences, while the last
+one is R_S psi0-(R_S tensor U)psi_(N-1). The same change makes every test
+constant. It does not replace the heat by an endpoint heat or execute a
+free inverse. Full n0=33N dimK and n1=392N dimK remain in502.
+
+There is an operational rather than decoder interpretation of these tests.
+With E_t=|t+1><t| tensor u_t and F_t=E_(t-1)...E_0, the C0 operator is
+sum_t F_t (|0><0| tensor a) F_t*. Thus it belongs to the algebra generated
+by the actual clock paths and the initial fixed tests. Faithfulness follows
+already from its t=0 block. Book01's Query_O admits a specified readable
+predicate sector;7av supplies paid future inverse/readback tests when those
+readouts are actually executed. Their apparatus is not free or silently
+appended to this price. The edge test lift above belongs to the DECLARED
+7bh discrepancy test. Book03's faithful representation of its OWN full
+path algebra is not replaced by faithfulness of this smaller A.
+
+The former fixed-site result paid-writer11.1 remains true: its representation
+repeats a at every stage and its seminorm is the largest primitive
+commutator. Here the tests follow the actual prefix. Under field variation
+pi_g varies too; the commutator differential retains both
+[delta D01,pi_g]+[D01,delta pi_g]. No norm derivative is asserted at a singular
+value crossing. A scene-dependent test has spatial rows even when U=I;
+592 cannot be extended to that different algebra by renaming its points.
+
+### Encode the finite full-CAR metric, with a bound in its actual units
+
+Let D=D* be the desired FINITE operator on the original site/CAR module,
+with positive pairing whitened by the OWNED joint-adjoint transport. Scalar
+site tests commute with its site-local Gram factor; all16 CAR degrees and
+the original density stay in D. This uses that transport, not a new
+conditional filter. For a complex D use realification, preserving operator
+norm and the real scalar site algebra. Choose a FIXED delta>0 on the finite
+field patch with kappa=delta||D||<1, and put
+
+    S=(I-delta^2 D^2)^(1/2),
+    W_delta(D)=[[S,-delta D],[delta D,S]],
+    a^+=diag(a,a),      s=sqrt(1-kappa^2).
+
+W_delta is unitary (real orthogonal in the real presentation), lies in the
+identity component, and keeps every rotor column. Its off-diagonal
+commutator compression gives the lower bound below. For C=[S,a],
+SC+CS=-delta^2(D[D,a]+[D,a]D); the integral inverse of the positive
+Sylvester map gives ||C||<=delta^2||D|| ||[D,a]||/s. The two remaining block
+norms therefore prove
+
+    L_D(a)<=||[W_delta,a^+]||/delta
+            <=(1+kappa/s)L_D(a),   L_D(a)=||[D,a]||. (593)
+
+No spectral truncation, successful-branch compression or continuum symbol
+is used. A completely compiled target W_hat with ALL-COLUMN error
+||W_hat-W_delta tensor I_work||<=epsilon has commutator error at most
+2epsilon inf_c||a-cI||. Define the finite quotient radius
+
+    R_D=sup_(a=a*, L_D(a)<=1) inf_(c real)||a-cI||,
+    eta=2epsilon R_D/delta.
+
+Require ker L_D=real scalars and eta<1. For the fixed scalar site algebra,
+connectedness of the graph of nonzero blocks D_xy is sufficient: each block
+gives |a(x)-a(y)|<=L_D(a)/||D_xy||. A shortest-path diameter with edge lengths
+1/||D_xy|| bounds2R_D from above, so the precision input is finite and
+computable. If that graph is disconnected, retain its finite-distance
+components or the genuine infinite distances; the full matrix algebra
+usually has a larger commutant and must not be substituted for this A.
+
+For L_hat=||[W_hat,a^+]||/delta and its state distance d_hat, (593) gives
+
+    (1-eta)L_D<=L_hat<=(1+kappa/s+eta)L_D,
+    d_D/(1+kappa/s+eta)<=d_hat<=d_D/(1-eta).           (594)
+
+This follows by inclusion of the Lipschitz balls, for every pair of states
+of this SAME A. In592 the calibrated seminorm is
+L_phys=L_g/(delta||R_S||), and the calibrated distance is
+(delta/sqrt22)d_g. Delta is an explicitly supplied dimensional calibration,
+fixed on the field patch; it is not a proved Golden physical-scale law.
+Compilation error has NO raw-length multiplier in594, because pi_g uses
+prefixes of the ACTUAL compiled word, not approximate ideal prefixes.
+Its full physical price still pays those raw stages and every work column.
+
+### Join that intrinsic metric to the existing complete Palatini--CAR germ
+
+Here the source and the metric inhabit one carrier. Use7az's actual tag,
+blank a and blank spectator s. Factor its genuinely free ACTIVE channel
+input as a channel label c times the rotor/site/CAR module K_D of dimension r.
+Keep q genuinely free protected columns, and any additional scratch blank
+only on the input cut. Choose at least2n+1 channel sectors, padded if needed,
+where n is the number of independent coordinates of the supplied field
+chart. P0 includes ALL r module inputs and all channel labels; no blank is
+renamed a free input. Without extra scratch its rank is2Crq and its whole
+fibre dimension is8Crq. On the complete7bh carrier put this cut at clock0
+with one genuinely prepared normalized scene vector and zero C1 support,
+as in the original stage0 completion. Its actual preparation is included;
+a free scene-input rank instead multiplies the stated input counts. The
+whole heat has33 and392 scene/cochain multiplicities regardless of this
+cut. Any binary padding of K_D is included in r, the input cut and heat;
+its fixed test/operator extension must satisfy the same scalar-kernel and
+all-column bounds, rather than discarding padding states. Use the same
+scalar site representation a^+ on EVERY
+channel, with identity on controls and protected/helper factors.
+
+Reserve one channel c=g for geometry. Let O_f(y) be7az's action-germ encoder
+on the other2n channels, with identity on K_D. In its439 calibration replace
+q by the ACTUAL rq. Set O_f=I in the geometry channel and unused channels.
+There is no new action-germ proof: for any supplied smooth f with Df(0)=0,
+7az440 supplies f(y)-f(0) in the full original J. Its complete primitive
+implementation away from the centre retains the old smooth-chart caveat.
+
+On c=g and a=1 act by W_delta(D(Y)), and elsewhere by identity. Call this
+controlled operator V_D. It fixes P0 pointwise, not just its range. Its
+native version is the existing7aq predicate-readonly compiler of7az442;
+both controls and the false branches are exact, and the true branch is its
+ACTUAL all-column W_hat. For every completed block all stated helpers are
+restored as in that owner. Define the full endpoint
+
+    U_f,D=V_D O_f(y)* U0 O_f(y) V_D*,
+    U0=CX(tag,a) tensor I,
+    B_base=H_(actual N,full carrier)(U0)-Crq log(1-zeta).
+
+It is an involution for every y,Y. V_D fixes P0, so its full return
+compression is exactly the old action-germ compression. Its whole endpoint
+spectrum is that of U0. On the internal placement, the owned7bf character
+with BOTH Hodge grades502 therefore gives, at fixed actual N and carrier,
+
+    B_f,D(y,Y)-B_base=f(y)-f(0),
+    D_(y,Y)B_f,D=D_(y,Y)f(y).                         (595)
+
+Every geometry/control/work column is in that SAME absolute heat; the index
+359N dimK remains INSIDE its logarithm. There is no fee assigned to cancel
+a source and no equality to the shorter uncompiled clock. Every asserted
+native catalogue must use a genuinely paid common N/carrier as in7az/7bi.
+Extra original Cost-Info/R sources, if present, are not declared constant.
+
+On all action channels U_f,D commutes with a^+, because O_f and U0 act only
+on tag,a,s. On the geometry channel its tag0 block is identity; its tag1
+block in the a=0,1 decomposition is [[0,W_delta*],[W_delta,0]]. Thus
+
+    ||[U_f,D,a^+]||=||[W_delta,a^+]||,
+    L_g(a)=||R_S|| ||[W_delta,a^+]||.                 (596)
+
+The equality holds with W_hat too and is independent of the supplied f.
+Unlike a character assigned to auxiliary channels, the representation here
+is the SAME faithful scalar site algebra on every channel. This is the
+explicit simultaneous application of592,593 and the old full-source440.
+It is stronger than merely having a terminal field label or an endpoint
+spectrum resembling D: its full chronological Dirac commutator yields the
+specified finite operational metric with594's error.
+
+At y=0, O_f=I and the endpoint is V_D U0 V_D*. Its actual compressed escape
+F is a projection, regardless of the finite compiler error in W_hat. Hence
+7az437 gives DJ=0 for EVERY independent unitary and fixed-rank-cut first
+variation. The homogeneous full-heat character is even and2pi-periodic,
+with derivative zero at0 andpi, so DH=0 for EVERY independent INTERNAL raw
+primitive-edge tangent, including separate preparer and reverse legs.
+Full-history projection cuts obey the same437. Consequently
+
+    full D_(internal primitive edges,fixed-rank cuts) B|_(y=0)=0
+                                                               (597)
+
+at an ACTUAL compiled centre, not only along the selected y pullback.
+This does not cover independent changes of scene weights, arbitrary
+non-internal RawZone gates, beta,zeta, rank, total duration, or a freely
+chosen different geometric test. They keep their original source terms.
+The retained all-column inverse in V_D U0 V_D* is the owned finite raw
+inverse; a promised successful inverse is insufficient.
+
+Apply595 to f_h(y)=I_h(Y_h*+y), with the original coframe/proper-Lorentz/
+CAR finite action and ALL independent interior coordinates of the owned
+nonvacuum mesh. Take D(Y) from the original full-CAR operator with the owned
+moving pairing and density, and set Y=Y_h*+y in the SAME map. The existing
+all16+24+2 equations imply Df_h(0)=0, so595 supplies the whole field covector
+and597 its exact native centre normals. In parallel596 supplies that finite
+D(Y)'s scalar-test metric. The primary-family version uses7az's pointwise
+zero action and its SAME O_h(lambda,y), rather than choosing a new germ for
+each root. The geometry channel varies with that same lambda,y.
+
+A smooth matrix chart is not an exact finite word at every real field.
+The finite centre uses actual W_hat and has594's metric error and597's exact
+stationarity; ideal595 is not asserted as the derivative of a discrete
+compiler lookup. If the target D also has a finite codec error, include it
+in the true W approximation budget or compare to the actually encoded D.
+At fixed mesh on a compact regular chart choose delta from the uniform
+operator bound and epsilon from the true R_D bound. Along refinement,
+
+    delta_h ||D_h|| ->0,
+    epsilon_h R_(D_h)/delta_h ->0                    (598)
+
+suffice for relative metric recovery, with the actual clock and carrier
+budget paid separately. This transports any ALREADY proved target metric
+limit; it does not prove one from a small-momentum symbol. In particular
+positive norm distance alone is not a Lorentz time separation. The original
+observer/causal readout, full path-algebra descent and geometric refinement
+remain typed premises, not silently supplied by598.
+
+### The exact parent consequence also rules out an overstated conclusion
+
+The missing restricted metric map in7az is now explicit: fixed role tests
+-> actual prefix tests of the SAME paid D01 ->596 -> the finite original
+CAR seminorm with594. The complete action germ and its native stationary
+centre can coexist with that map, all fields and source directions present.
+This does not remove7bh's selected geometric-test/placement hypothesis or
+replace original Book03's full path algebra by an internal site sector.
+
+There is a decisive reason this is not yet physical Einstein selection.
+Construction595 works with OTHER smooth critical actions, and596 can vary
+D independently. At y=0 every such geometry still satisfies597. For example
+on two sites take D=d[[0,1],[1,0]] and the same scalar site algebra. For any
+fixed delta*d<1, S is scalar, so596 gives L_phys(a)=d|a1-a0| EXACTLY.
+Changing d changes its actual intrinsic two-point distance to1/d, while
+the full endpoint eigenvalues, projection return and full stationary first
+source remain the same at fixed N/carrier. No external decoder is involved
+in this control. Thus adding an intrinsic observer metric to the stationary
+corner cannot by itself force its field equation. The native constitutive
+relation between the selected geometric test, actual field writer and full
+price remains the exact physical parent substitution. The new7bk--7bt
+ordinary-WORK, monitored instrument and true-WORK-price boundaries are
+preserved; no source-neutral compiler trick pays those separate operands.
+
+This gives a positive same-carrier synthesis and narrows its physical
+application, not another root search or a claim of full D0->GR. The primary
+nonvacuum solution, both universality routes and independent source routes
+remain available. GR_closed=false; positive_gr/raw216 are unchanged.
+
+### Changed-step verification and reproducible control
+
+The analytical argument above owns592--598. The following bounded check
+constructs ALL33 scene vertices,359 spatial edges and every C0/C1 row for
+a finite internal word, verifies the closing-block identity, and rejects
+the repeated fixed-test and noninternal-placement shortcuts. An exact
+rational two-site/control calculation composes the FULL projection corner,
+same scalar representation on action/geometry channels, both signed action
+increments and the geometry metric. A separate finite Hermitian example
+checks the square-root/compiled inequalities. Numerical controls are not an
+interval proof or a new physical-admission certificate. No old certificate,
+full research suite or Lean proof is rerun for this transport.
+
+Proof text preceding this paragraph: 16472 UTF8 bytes, SHA256 bea8b834fa3a865af87e1fa0976b4d3664779abed5bdf0f0c798e95e75691ccc.
+Checker below: 9067 bytes, SHA256 945a1508ded136a3e2e552b544fc92bfdda74497a3f58d959c7e0bc786f99305.
+Canonical LF JSON receipt: 1114 bytes, SHA256 bb3d14b153f2dcc691a2e70466d3eeea4b52cca2d701f51509c89bc3eda59aa6.
+Run with Python3.11.9, NumPy2.2.6, SciPy1.16.3, SymPy1.12.1.
+The code uses explicit failures even under optimized Python. The exact
+projection/action checks and the full-row numerical comparison passed;
+the latter has closing-block residual below2e-15. This is a research proof
+and bounded regression, not a new independent assembly acceptance.
+
+```python
+"""Changed transport only: complete incidence norm and joint metric/action corner.
+No native-admission claim, no old suite replay, no finite spectral truncation.
+"""
+import json
+import platform
+import numpy as np
+import scipy
+import scipy.linalg as la
+import scipy.sparse as sp
+import scipy.sparse.csgraph as cg
+import sympy as sy
+
+
+def require(test, label):
+    if not bool(test):
+        raise RuntimeError(label)
+
+
+def op(a):
+    return float(la.norm(np.asarray(a), 2))
+
+
+def complete_incidence():
+    zones = [9, 11, 13]
+    labels = np.repeat(np.arange(3), zones)
+    edges = [(x, y) for x in range(33) for y in range(x+1, 33)
+             if labels[x] != labels[y]]
+    require(len(edges) == 359, 'actual complete tripartite scene')
+    b = np.zeros((359, 33))
+    for j, (x, y) in enumerate(edges):
+        b[j, x], b[j, y] = -1, 1
+    degree = np.sum(b*b, axis=0)
+    r = np.diag(1/np.sqrt(degree+2))
+    p = (np.sqrt(5)-1)/2
+    golden = np.array([[np.sqrt(p), -p], [p, np.sqrt(p)]])
+    cx = np.array([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0.]])
+    gates = [np.kron(golden,np.eye(2)), cx,
+             np.kron(np.eye(2),golden), cx]
+    m, n = 4, len(gates)
+    obs = np.diag([0., 1., 3., 6.])
+    prefixes = [np.eye(m)]
+    for gate in gates:
+        prefixes.append(gate @ prefixes[-1])
+    tests = [v @ obs @ v.T for v in prefixes[:-1]]
+    rows = []
+    pi1_blocks = []
+    for t, gate in enumerate(gates):
+        row_sp = [None]*n
+        row_sp[t] = sp.kron(b@r, np.eye(m), format='csr')
+        row_tm = [None]*n
+        row_tm[t] = sp.kron(-r, gate, format='csr')
+        row_tm[(t+1)%n] = sp.kron(r, np.eye(m), format='csr')
+        rows.extend([row_sp, row_tm])
+        pi1_blocks.extend([sp.kron(sp.eye(359), tests[t]),
+                           sp.kron(sp.eye(33), tests[(t+1)%n])])
+    d = sp.bmat(rows, format='csr')
+    pi0 = sp.block_diag([sp.kron(sp.eye(33), a) for a in tests], format='csr')
+    pi1 = sp.block_diag(pi1_blocks, format='csr')
+    k = d@pi0-pi1@d
+    u = prefixes[-1]
+    closing = np.kron(r, (obs@u-u@obs)@prefixes[-2].T)
+    target = sp.lil_matrix(k.shape)
+    target[((n-1)*392+359)*m:n*392*m, (n-1)*33*m:n*33*m] = closing
+    error = float(sp.linalg.norm(k-target.tocsr()))
+    got = float(np.sqrt(max(0, la.eigvalsh((k.T@k).toarray())[-1])))
+    expected = op(u@obs-obs@u)/np.sqrt(22)
+    require(d.shape == (392*n*m,33*n*m), 'all C0 and C1 rows retained')
+    require(error < 1e-12 and abs(got-expected) < 1e-12, 'closing commutator identity')
+    # The old repeated-test representation is a different observer, not this theorem.
+    p0_fixed = sp.kron(sp.eye(n*33), obs, format='csr')
+    p1_fixed = sp.kron(sp.eye(n*392), obs, format='csr')
+    fixed_k = d@p0_fixed-p1_fixed@d
+    fixed_norm = float(np.sqrt(max(0, la.eigvalsh((fixed_k.T@fixed_k).toarray())[-1])))
+    require(abs(fixed_norm-got) > 1e-3, 'fixed observer is not causal observer')
+    # A raw scene-controlled internal gate destroys the required commutation with R.
+    v = np.zeros(33); v[0] = v[9] = 1/np.sqrt(2)
+    port = np.outer(v,v)
+    raw = np.eye(33*m)+np.kron(port,gates[0]-np.eye(m))
+    a1 = raw@np.kron(np.eye(33),obs)@raw.T
+    rr = np.kron(r,np.eye(m))
+    raw_defect = op(rr@a1-a1@rr)
+    require(raw_defect > 1e-4, 'RawZone placement cannot inherit internal proof')
+    return dict(n0=d.shape[1], n1=d.shape[0], stages=n,
+                closing_residual=error, full_norm=got, endpoint_norm=expected,
+                fixed_test_norm=fixed_norm, noninternal_R_defect=raw_defect)
+
+
+def exact_joint_corner():
+    R = sy.Rational
+    i2, i4, i8 = sy.eye(2), sy.eye(4), sy.eye(8)
+    cx = sy.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+    u0 = sy.kronecker_product(cx, i2)
+    u, v, w = i8[:,0], i8[:,4], i8[:,6]
+    rr = (i8[:,5]-i8[:,7])/sy.sqrt(2)
+    ia = sy.Matrix.hstack(u,v)
+    pa = ia*ia.T
+    z = R(1,7)
+    role = sy.diag(0,1,0,1)
+    role_full = sy.kronecker_product(i8,role)
+    j = sy.kronecker_product(ia,i4)
+    cut = j*j.T
+    swap = sy.Matrix([[0,1],[1,0]])
+    base = sy.kronecker_product(u0,i4)
+    base_c = j.T*base*j
+    geom = []
+    metric_squares = []
+    for co, si in [(R(4,5),R(3,5)),(R(3,5),R(4,5))]:
+        rotor = (co*i2).row_join(-si*swap).col_join(
+                 (si*swap).row_join(co*i2))
+        require(rotor.T*rotor == i4 and rotor.det() == 1, 'whole rotor SO')
+        vg = sy.diag(*[rotor if ((k//2)%2) else i4 for k in range(8)])
+        ug = vg*base*vg.T
+        require(vg*j == j and vg.T*j == j, 'geometry fixes entire initial cut')
+        require(ug.T == ug and ug*ug == sy.eye(32), 'exact full involution')
+        require(j.T*ug*j == base_c, 'same full Book compression')
+        f = cut*ug.T*(sy.eye(32)-cut)*ug*cut
+        require(f*f == f, 'full escape projection including complementary columns')
+        # Exact complete unitary/cut Euler control from the owned source formula.
+        pi = z*sy.eye(32)+(z*z/(1-z))*f
+        q = sy.eye(32)-cut
+        ret = ug.T*q*ug
+        gp = ret*cut*pi+pi*cut*ret
+        gq = ug*cut*pi*cut*ug.T
+        require(cut*(gp-gq)-(gp-gq)*cut == sy.zeros(32), 'all cut rows')
+        require(q*gq-gq*q == sy.zeros(32), 'all unitary rows')
+        comm = rotor*role-role*rotor
+        require(comm.T*comm == si*si*i4, 'exact rotor metric norm')
+        full_comm = ug*role_full-role_full*ug
+        require(full_comm.T*full_comm == sy.diag(sy.zeros(16),si*si*sy.eye(16)),
+                'same role algebra, complete tag/spectator metric')
+        require(ug.trace() == base.trace(), 'same endpoint multiplicities and heat')
+        geom.append(ug); metric_squares.append(str(si*si))
+    # Both old signed source channels act trivially on exactly the SAME role algebra.
+    ct, st = R(4,5), R(3,5)
+    ce, se = R(5,13), R(12,13)
+    op = i8+(ct-1)*(u*u.T+rr*rr.T)+st*(rr*u.T-u*rr.T)
+    om = i8+(ce-1)*(v*v.T+w*w.T)+se*(w*v.T-v*w.T)
+    ep = sy.kronecker_product(sy.simplify(op.T*u0*op),i4)
+    em = sy.kronecker_product(om.T*u0*om,i4)
+    require(ep*role_full == role_full*ep and em*role_full == role_full*em,
+            'action channels have no extra role seminorm')
+    cp, cm = j.T*ep*j, j.T*em*j
+    require(cp == sy.kronecker_product(sy.diag(ct*ct-st*st,0),i4), 'positive channel')
+    require(cm == sy.kronecker_product(sy.diag(1,2*ce*se),i4), 'negative channel')
+    cold = sy.diag(j.T*geom[0]*j,cp,cm)
+    f_cold = sy.eye(24)-cold.T*cold
+    actual_det = (sy.eye(24)-z*f_cold).det()
+    expected_det = ((1-z)**12*(1-z*(2*ct*st)**2)**4
+                    *(1+z*(2*ce*se)**2/(1-z))**4)
+    require(sy.simplify(actual_det-expected_det) == 0, 'whole absolute logdet with both signs')
+    return dict(full_fibre=96, input_rank=24, geometry_channels=1,
+                action_channels=2, exact_metric_squares=metric_squares,
+                fixed_delta='1/5', target_d=['3','4'], distances=['1/3','1/4'],
+                input_rank_feedback_power=12, all_unitary_and_cut_rows=True,
+                full_signed_action_determinant=True)
+
+
+def compiled_bound():
+    d = np.array([[.3,.7,-.2],[.7,-.4,.4],[-.2,.4,.1]])
+    delta = .15
+    kappa = delta*op(d)
+    sval = np.sqrt(1-kappa*kappa)
+    eig, vec = la.eigh(np.eye(3)-delta*delta*d@d)
+    s = (vec*np.sqrt(eig))@vec.T
+    w = np.block([[s,-delta*d],[delta*d,s]])
+    skew = np.zeros((6,6)); skew[0,4]=1; skew[4,0]=-1
+    what = la.expm(1e-5*skew)@w
+    eps = op(what-w)
+    lengths = np.zeros((3,3))
+    for x in range(3):
+        for y in range(3):
+            if x != y:
+                lengths[x,y] = 1/abs(d[x,y])
+    radius_bound = float(np.max(cg.shortest_path(lengths,directed=False))/2)
+    eta = 2*eps*radius_bound/delta
+    require(eta < 1, 'finite compiled precision')
+    rng = np.random.default_rng(607)
+    margins = []
+    for _ in range(31):
+        a = np.diag(rng.normal(size=3))
+        aa = la.block_diag(a,a)
+        ld = op(d@a-a@d)
+        ideal = op(w@aa-aa@w)/delta
+        actual = op(what@aa-aa@what)/delta
+        margins.append([ideal-ld,(1+kappa/sval)*ld-ideal,
+                        actual-(1-eta)*ld,(1+kappa/sval+eta)*ld-actual])
+    require(np.min(margins) > -1e-12, 'full square-root and compiler bounds')
+    require(op(s@(s@np.diag([1.,2.,4.])-np.diag([1.,2.,4.])@s)
+               +(s@np.diag([1.,2.,4.])-np.diag([1.,2.,4.])@s)@s
+               +delta**2*(d@(d@np.diag([1.,2.,4.])-np.diag([1.,2.,4.])@d)
+               +(d@np.diag([1.,2.,4.])-np.diag([1.,2.,4.])@d)@d)) < 1e-12,
+            'positive Sylvester commutator identity')
+    return dict(kappa=kappa, epsilon=eps, radius_upper=radius_bound,
+                eta=eta, min_inequality_margin=float(np.min(margins)), tests=31)
+
+
+def main():
+    result = dict(input_ref='92d025dbfda427df83fba7350ffe5941494b74c8',
+                  python=platform.python_version(), numpy=np.__version__,
+                  scipy=scipy.__version__, sympy=sy.__version__,
+                  incidence=complete_incidence(), joint=exact_joint_corner(),
+                  compiled=compiled_bound(), status='PASS')
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+
+if __name__ == '__main__':
+    main()
+```
+
+```json
+{
+  "compiled": {
+    "epsilon": 0.00000999999999999473,
+    "eta": 0.00026190476190462395,
+    "kappa": 0.15169376479569371,
+    "min_inequality_margin": 0.00007332512968805105,
+    "radius_upper": 1.9642857142857144,
+    "tests": 31
+  },
+  "incidence": {
+    "closing_residual": 1.9542826413883433e-15,
+    "endpoint_norm": 0.7979183958247018,
+    "fixed_test_norm": 0.6588264456679643,
+    "full_norm": 0.7979183958247017,
+    "n0": 528,
+    "n1": 6272,
+    "noninternal_R_defect": 0.012373056050470458,
+    "stages": 4
+  },
+  "input_ref": "92d025dbfda427df83fba7350ffe5941494b74c8",
+  "joint": {
+    "action_channels": 2,
+    "all_unitary_and_cut_rows": true,
+    "distances": [
+      "1/3",
+      "1/4"
+    ],
+    "exact_metric_squares": [
+      "9/25",
+      "16/25"
+    ],
+    "fixed_delta": "1/5",
+    "full_fibre": 96,
+    "full_signed_action_determinant": true,
+    "geometry_channels": 1,
+    "input_rank": 24,
+    "input_rank_feedback_power": 12,
+    "target_d": [
+      "3",
+      "4"
+    ]
+  },
+  "numpy": "2.2.6",
+  "python": "3.11.9",
+  "scipy": "1.16.3",
+  "status": "PASS",
+  "sympy": "1.12.1"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
