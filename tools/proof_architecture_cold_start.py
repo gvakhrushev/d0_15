@@ -89,13 +89,14 @@ CASES: list[dict[str, Any]] = [
             "proper Lorentz same determinant orientation complete coframe link orbit coordinates",
             "det=1 same orientation Lorentz orbit русская ориентация",
             "a4d_complete_proper_orbit_coordinates a4dRightProperLorentz_gram_complete finiteGram_right_orbit_complete finiteGram_dressed_transport_compatible finiteMatrix_dressed_transport_frame_invariant a4dDressedLink_frame_invariant finiteMatrix_dressed_transport_eq_iff_frame_action a4dDressedLink_eq_iff_rightAction",
+            "a4dRightProperLorentz_gram_complete a4d_complete_proper_orbit_coordinates finiteGram_right_orbit_complete",
         ],
         "required_refs": [
             "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
             "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
             "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26_affine_gram.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_affine_gram.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26_gram_quotient.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_gram_quotient.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_fe15cd8c.json",
         ],
         "required_sources": [
@@ -127,22 +128,24 @@ CASES: list[dict[str, Any]] = [
         "id": "finite-gram-affine-quadratic-expansion",
         "queries": [
             "finiteGram_add_smul_expand finite Gram expansion arbitrary base frame quadratic remainder",
-            "finite_gram_orbit_shared_api_declarations_2026-10-26_affine_gram.json finiteGram_add_smul_expand",
+            "finiteGram_add_smul_difference_quotient exact normalized Gram difference full quadratic remainder",
+            "finite_gram_orbit_shared_api_declarations_2026-10-26_gram_quotient.json finiteGram_add_smul_difference_quotient",
             "finite Gram expansion Theta plus t C two sided linear variation exact quadratic term",
-            "A4D Solder Metric Completion finiteGram_smul_expand solderMetric_smul_expand",
+            "A4D Solder Metric Completion finiteGram_add_smul_difference_quotient solderMetric_flat_tangent j2DetectorMetricPath_symmetric_difference_quotient",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
             "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_affine_gram.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_gram_quotient.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
             "finiteGram_add_smul_expand proves the exact finite quadratic Gram identity "
-            "at an arbitrary base frame. The two prior expansion APIs specialize it, and "
-            "the solder-metric and J2 paths consume those specializations. This preserves "
-            "the full linear source and quadratic remainder; it proves no physical action, "
-            "source choice, or continuum curvature law."
+            "at an arbitrary base frame, and finiteGram_add_smul_difference_quotient "
+            "retains its full quadratic remainder in the normalized difference. The old "
+            "expansion APIs remain specializations; solderMetric_flat_tangent and the J2 "
+            "symmetric quotient consume the generic quotient theorem directly. This proves "
+            "no physical action, source choice, or continuum curvature law."
         ),
     },
     {

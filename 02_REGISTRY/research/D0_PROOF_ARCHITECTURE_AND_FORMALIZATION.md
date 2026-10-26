@@ -7894,3 +7894,55 @@ SHA-256 `07670e2461c5ce4bf34c0ec8a43c8a1c57a5b625464b89155cfd05676b49feab`.
 Its replay finds all sources in **23/23** cases, passes the **24-case**
 benchmark, checks **137** required-source references, and passes the
 source-change versus unrelated-prose impact control.
+
+### Shared exact finite-Gram difference quotient (26 October 2026)
+
+`D0.Algebra.finiteGram_add_smul_difference_quotient` now derives the exact
+normalized difference from the arbitrary-baseline expansion, for `t ≠ 0`:
+
+`t⁻¹ • (finiteGram η (Θ + t • C) - finiteGram η Θ) =
+ (C * η * Θ.transpose + Θ * η * C.transpose) +
+ t • (C * η * C.transpose)`.
+
+The complete two-sided linear source and the finite-parameter quadratic
+remainder are retained. `solderMetric_flat_tangent` and
+`j2DetectorMetricPath_symmetric_difference_quotient` now consume this generic
+quotient directly; their prior hand-written cancellation and scalar
+simplification proofs are removed. The solder adapter separately proves its
+flat baseline identity `finiteGram η η = η` from the declared Lorentz metric
+transpose and involution facts. This is an exact finite difference identity,
+not a continuum derivative or physical field equation.
+
+Lean source commit `3a99235783362a5975e40631452e57fa62cd2491` pins
+`FiniteGramTangent.lean` SHA-256
+`035af491eb2a66c021d78287590ab251e38bbbebf1f45bd218bd0d3b5f8d7723` and
+`A4DSolderMetricCompletion.lean` SHA-256
+`8ede51b4c558d30006ba625a53dbe22fc9416a88dd5c5062d4f763b65b038c9f`.
+The algebra module passed **2,946/2,946**, the geometry module passed
+**3,087/3,087**, and final `D0.All` passed **4,581/4,581**. Eight compiled
+declaration inventories use Lean-source digest
+`3fa27f48145ee51eae87605a0836a251eadc9be98d8a92e4674b46a98c074e0c`, were
+captured at that clean commit, and record `worktree_dirty=false`:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_gram_quotient.json` | 15/15 | `e3384f7314991b1705401ddf4aea2319ad1f01cd4ccbee18b238071c7534bc3b` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_gram_quotient.json` | 36/36 | `ceff8dde7184e053cae170a4613d4e2d9ddec88b777b18b08ae2a06ce75fa005` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_gram_quotient.json` | 9/9 | `bd3385857de6d553087cdf08dd26ca9023edd40d1a4c6b55b39d38c858a9751a` |
+| `archive_shift_topology_current_declarations_2026-10-26_gram_quotient.json` | 26/26 | `9baeb727b55ba1af8819f7d12ae34cf512a65063143b3900ca9ab47a7d17959b` |
+| `source_port_preparation_tensor_inventory_2026-10-26_gram_quotient.json` | 73/73 | `fc6bab4a8c930cf4e3be59657fcee1909d83f0b49f79fd1618f069b39bbe1b61` |
+| `flat_tensor_shared_api_declarations_2026-10-26_gram_quotient.json` | 4/4 | `88a48a72158b50bba5ee71c87ad95ad2a8435d8a40bec5534dd1e2bacbe2123f` |
+| `proper_role_lorentz_orbit_declarations_2026-10-26_gram_quotient.json` | 5/5 | `31eaefd4c71b568e3b8e83affd3aff2d8951b61cdbf46a398fb5e0d995616be4` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_gram_quotient.json` | 25/25 | `6630a3bc13a3315ab3ccccdc596ccfea882f03ad27b21ab1b9d16c18eb717afb` |
+
+The compiled proof graph records the generic quotient's use of the shared
+quadratic expansion and both geometry applications' direct use of that
+quotient. The adapter scopes and physical-source boundaries above remain
+unchanged.
+
+The cold-start receipt is
+`proof_architecture_cold_start_summary_2026-10-26_gram_quotient.json`,
+SHA-256 `f36a15c83dce33c6ef65d2f3dcd9fe9d242b3b83f9c9376aac7ba885aa6e822f`.
+Its replay finds all sources in **23/23** cases, passes the **24-case**
+benchmark, checks **137** required-source references, and passes the
+source-change versus unrelated-prose impact control.
