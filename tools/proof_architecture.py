@@ -676,10 +676,11 @@ def alias_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
             continue
 
         counts["legacy_ids_with_existing_book_locator_count"] += 1
+        label_pattern = _claim_id_pattern([alias_id])
         occurrence_lines = [index for index, line in enumerate(lines, start=1)
-                            if alias_id and alias_id in line]
+                            if label_pattern.search(line)]
         line_text_value = lines[line_number - 1]
-        line_has_label = bool(alias_id and alias_id in line_text_value)
+        line_has_label = bool(label_pattern.search(line_text_value))
         if line_has_label:
             counts["legacy_locator_line_with_label_count"] += 1
         if occurrence_lines:

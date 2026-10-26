@@ -2984,7 +2984,8 @@ class ProofArchitectureTests(unittest.TestCase):
                 "## Alias source candidates\n"
                 "`OLD-EXACT` names the historical assertion.\n"
                 "An equation is recorded here without the legacy label.\n"
-                "Later label: `OLD-DELAYED`.\n",
+                "Later label: `OLD-DELAYED`.\n"
+                "The longer token OLD-SUBSTRING-EXTENDED is not an exact label.\n",
                 encoding="utf-8",
             )
             data = dataset(root)
@@ -3001,6 +3002,9 @@ class ProofArchitectureTests(unittest.TestCase):
                 {"legacy_id": "OLD-INVALID", "kind": "LEGACY_BOOK_LABEL",
                  "canonical_claim_id": "", "first_reference": "../BOOK_01_TEST.md:1",
                  "note": "Traversal control."},
+                {"legacy_id": "OLD-SUBSTRING", "kind": "LEGACY_BOOK_LABEL",
+                 "canonical_claim_id": "", "first_reference": "BOOK_01_TEST.md:1",
+                 "note": "Longer-token control."},
                 {"legacy_id": "OLD-CANONICAL", "kind": "CANONICAL_TARGET",
                  "canonical_claim_id": "CLM-1", "first_reference": "BOOK_01_TEST.md",
                  "note": "Explicit target."},
@@ -3010,8 +3014,9 @@ class ProofArchitectureTests(unittest.TestCase):
 
         by_id = {row["alias_id"]: row for row in view["rows"]}
         self.assertEqual(view["schema"], "d0-alias-source-candidate-view-v1")
-        self.assertEqual(view["counts"]["legacy_book_label_count"], 4)
-        self.assertEqual(view["counts"]["legacy_ids_with_existing_book_locator_count"], 2)
+        self.assertEqual(view["counts"]["legacy_book_label_count"], 5)
+        self.assertEqual(view["counts"]["legacy_ids_with_existing_book_locator_count"], 3)
+        self.assertEqual(view["counts"]["legacy_ids_with_label_in_designated_book_count"], 2)
         self.assertEqual(view["counts"]["legacy_locator_line_with_label_count"], 1)
         self.assertEqual(by_id["OLD-EXACT"]["resolution_status"],
                          "existing_line_anchor_with_label")
@@ -3021,6 +3026,9 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(by_id["OLD-MISSING"]["resolution_status"], "book_source_missing")
         self.assertEqual(by_id["OLD-INVALID"]["resolution_status"],
                          "invalid_book_line_reference")
+        self.assertEqual(by_id["OLD-SUBSTRING"]["resolution_status"],
+                         "existing_line_anchor_without_label_text")
+        self.assertEqual(by_id["OLD-SUBSTRING"]["alias_occurrence_count_in_designated_book"], 0)
         self.assertTrue(by_id["OLD-CANONICAL"]["target_claim_found"])
         self.assertIn("do not establish semantic equivalence", view["interpretation"])
 
