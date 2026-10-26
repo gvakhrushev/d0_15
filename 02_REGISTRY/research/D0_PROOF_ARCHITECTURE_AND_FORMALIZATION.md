@@ -10104,6 +10104,7 @@ The following is a source-keyed disposition for the bounded candidate input
 `02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`,
 #334 commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
 `67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`, §§7.1–7.2, Eqs. (17)–(24).
+The Eq. (24) nonvacuum midpoint CAR-slack threshold source pin is commit `fe5cf335da04cac14e50407b03f98b96be17dc52` for `02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`, blob `67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`, §§7.1–7.2.
 The main registration snapshot has a different blob and abbreviates the
 explicit Eq. (24) CAR-slack threshold; it is not substituted for the owner
 source. This row-level disposition is evidence for this bounded source slice,
@@ -10127,3 +10128,14 @@ On published Draft head `fe4ce480b3a1cc7328916f04bb203cf2825b71c2`, GitHub
 `D0 Lean build` run 3300 and `D0 guards` run 5338 completed successfully.
 This validates the published source and this disposition at that head; the
 PR remains Draft and its task lifecycle remains `IN_PROGRESS`.
+
+The targeted bounded-search query `nonvacuum CAR-slack threshold midpoint`
+returns the Lean module and this source disposition as direct-content
+candidates, then follows the same-line exact owner pin to the verified
+pinned candidate
+`02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md@fe5cf335da04cac14e50407b03f98b96be17dc52`.
+The extracted pin records blob
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213` and §§7.1–7.2. The check ran
+against dirty source snapshot `f3063366bd90156ec6286e2c924916c97ed99fae`;
+it verifies retrieval and immutable source resolution only, not mathematical
+acceptance of the parent claim or C0 as a whole.
