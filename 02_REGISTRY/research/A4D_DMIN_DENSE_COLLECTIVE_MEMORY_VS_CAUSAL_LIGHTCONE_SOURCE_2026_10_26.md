@@ -317,3 +317,68 @@ This is an EXACT source-owned \(\{G,CX\}\) formula with TRUE original \(\zeta=2^
 **Decisive physical scaling:** the COMPLETE primitive execution has linear length \(N=2n+2\), while the feedback INPUT CUT has \(r=2^n\) independent columns. Thus the positive J price increases like \(2^{n-1}\), even though the per-register observable h click remains a fixed \(4p^3\) for even and 0 for odd inputs. The normalized price \(J_n/\operatorname{rank}P=-\frac12\ln(1-4\zeta p^3)\) is constant in n; the absolute full price is not. This furnishes a fully native strong NO-GO against deriving \(\Gamma\)-normalized source suppression from short *code* or short *raw primitive clock* alone while silently growing independent input rank.
 
 This is still ONLY original Book feedback J. The full Book \(H+J+\mathrm{Info/Cost/other\ real\ terms}\) has its own TRUE scene, N, clock and all-mode thermal trace; (26) is not a claim its H cancels, or that this parity word is an Einstein-native stationary history. The exact unitary-source, geometry and M1 physical task selection remain separate obligations. But the example already ties the three crucial intrinsic quantities to ONE actual native carrier: real clock N, physical cut rank r and the full closed return spectrum.
+
+
+## 10. THEOREM H — original exact G/CX serial-vs-parallel parity memories give the SAME WHOLE UNITARY and Book J but DIFFERENT true PAID physical clocks, even at large n
+
+This is the complete physical-history version of the global-causal-cone argument, and uses ONLY the original legal positive-alphabet native CX/G primitives, no Toffoli, free \`G^{-1}\`, non-native macro or hypothetical physical sign.
+
+Take n=2^m independently addressable original DATA bits (n≥2), ONE actual blank h, and original raw CX gates. The serial parity copier \(C_{\rm seq}\) has the n native gates \(\mathrm{CX}(x_i,h)\), so
+\[
+N_{\rm seq,C}=n,\quad \mathrm{depth}_{\rm seq,C}=n.
+\]
+Build an alternative EXACT native circuit \(C_{\rm tree}\):
+at level \(\ell=0,\ldots,m-1\), for each group of \(2^{\ell+1}\) DATA bits execute \(\mathrm{CX}(x_{j+2^\ell},x_j)\) in disjoint pairs, so the first bit of each block contains its XOR parity; the groups execute in genuine logically parallel/disjoint rounds, but EVERY CX remains one physically paid stage. Then execute the ONE \(\mathrm{CX}(x_0,h)\), and reverse the entire block tree using its original self-inverse CX letters. It has
+\[
+\boxed{
+N_{\rm tree,C}=2(n-1)+1=2n-1,\quad
+\mathrm{rounds}_{\rm tree,C}=2\log_2 n+1.
+}\tag{27}
+\]
+Each raw gate acts on genuinely addressable DATA/helper wires, not oldRIGHT or free non-native measurement. Every DATA bit is restored by the ACTUAL paid reverse traversal, and on EVERY x,h input column
+\[
+\boxed{C_{\rm tree}|x,h\rangle
+=C_{\rm seq}|x,h\rangle
+=|x,h\oplus\pi(x)\rangle.}\tag{28}
+\]
+This is full-unitary equality, stronger than only equality of Born means; no unknown-input cloning or "erase the counters for free" occurs. The intermediate physical histories differ, so they need not be future-equivalent if their actual clocks, intermediate records and work are required distinctions.
+
+Insert EITHER literal native C into the SAME previously constructed original Golden readout \(W(C)=G_h C G_h C\). Then
+\[
+\boxed{
+W(C_{\rm tree})=W(C_{\rm seq})=W_n
+\quad\text{ON ALL }2^{n+1}\text{ full columns}.}\tag{29}
+\]
+The RAW physical stage counts differ:
+\[
+\boxed{N_{\rm seq,W}=2n+2,\qquad
+N_{\rm tree,W}=4n.}\tag{30}
+\]
+Both variants have the EXACT SAME source full P/Q cut and complete feedback \(F=4p^3P_{\rm even}\) and hence EXACT SAME Book J from (26). But the complete Book HODE / clock term is a functional of the actual staged physical word, not just F. One cannot equate their whole \(H+J\) or raw history Cost/Info because the same ENDPOINT unitary is attained with different physical stage counts and memory pathways.
+
+**Explicit bare paired cyclic-clock witness (correctly SCOPED):** Use the previously OWNED standard bare two-grade cyclic tick \(D_N=(I-T_N)/\sqrt2\), with the true n-dependent full operator W_n as monodromy; write
+\[
+K_N(\alpha)=\sum_{j=0}^{N-1}
+\exp\left[-\beta\left(1-\cos\frac{2\pi j+\alpha}{N}\right)\right].
+\]
+For this declared bare full-carrier clock (NOT an assertion about the differently weighted full 33-scene Hodge), the eigenphases of W_n are:
+0 with multiplicity \(2^n\), \(+2\theta\) with \(2^{n-1}\), and \(-2\theta\) with \(2^{n-1}\), where \(G=R(\theta)\) and \(\sin^2\theta=p^2,\cos^2\theta=p\). Thus the TRUE paired Hodge trace, with all unprepared full columns retained, is exactly
+\[
+\boxed{
+Z_{N,n}=2^{n+1}[K_N(0)+K_N(2\theta)],\quad
+H_{N,n}=\beta^{-1}\log Z_{N,n}.
+}\tag{31}
+\]
+Because the original smooth periodic summand has \(K_N(\alpha)/N\to \mathcal I_\beta>0\) uniformly for fixed \(\alpha\), the two different TRUE native lengths (30) imply
+\[
+\boxed{
+H_{4n,n}-H_{2n+2,n}
+=\beta^{-1}\log
+\frac{K_{4n}(0)+K_{4n}(2\theta)}
+{K_{2n+2}(0)+K_{2n+2}(2\theta)}
+\longrightarrow\frac{\log 2}{\beta}\ne0.
+}\tag{32}
+\]
+So even an arbitrarily large family of EXACTLY identical endpoint unitary/feedback readouts can retain a strictly different **full paid thermal clock price**. The difference is not an externally assigned correction; it comes from the original actual clock/rank trace. This is an independently valuable exact warning for \`D_min\`: "equivalent under final U" is NOT "equivalent under complete closed physical time/history/price".
+
+The accompanying literal original-native checker now builds both exact CX words and verifies (28)–(30) on ALL columns at n=2,4 and8, with no large-matrix shortcut; its spectral/numerical witness of the bare two-grade thermal trace checks (31) and the nonzero limit (32) against the exact eigenphase formula. It does not claim native 33-scene heat equality or selected physical D_min price. The positive causal-depth source theorem of §3 remains a sufficient conditional theorem for ORIGINAL properly bounded source lightcones; the existence of this tree/serial family proves that programme length, computation rounds, history payment and final full operator must NEVER be conflated.
