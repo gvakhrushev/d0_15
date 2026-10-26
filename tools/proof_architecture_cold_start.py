@@ -499,7 +499,7 @@ CASES: list[dict[str, Any]] = [
             "покрытие всех ненулевых сдвигов через Eq 27 Eq 28 principalFrameJuliaQueryFamily",
             "archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz IsRoleLorentz",
             "proper row action Lorentz endpoint det one CAR Julia recovery adapter",
-            "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz Eq27 Eq28",
+            "D0.Geometry.principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz",
             "правый Lorentz endpoint одновременно CAR Eq 27 и query Eq 28 один recovered endpoint",
             "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt",
             "principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz hΓ hΛ",

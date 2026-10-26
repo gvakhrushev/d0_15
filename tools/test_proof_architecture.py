@@ -1809,6 +1809,20 @@ class ProofArchitectureTests(unittest.TestCase):
             in query
             for query in case["queries"]
         ))
+        exact_joint_recovery_query = next(
+            query for query in case["queries"]
+            if query.startswith(
+                "D0.Geometry.principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz"
+            )
+        )
+        exact_joint_recovery_hits = proof.full_text_search(
+            proof.ROOT, exact_joint_recovery_query, limit=18
+        )
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "proper_role_lorentz_joint_recovery_inventory_2026-10-25.json",
+            [row["source"] for row in exact_joint_recovery_hits],
+        )
 
     def test_julia_tangent_cold_start_reuses_exact_24_dimensional_api(self) -> None:
         case = next(
