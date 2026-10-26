@@ -22059,6 +22059,802 @@ if __name__=='__main__':
     print('PASS complete256-label CQ source, paid terminal archives, retained quantum entropy and nonstationary actual Gibbs discrepancy')
 ```
 
+## 7br. Scalar-quiet native readout supplies a real negative WORK source through paid stopping
+
+26 October2026. SAME #334 / constitutive / native-programme-v1, input984b4bef.
+Phase: native realization and complete-source composition. Consume7bq's
+named missing WORK/controller operand and7bp556's exact native scalar quiet
+corner. Fixed934 has no skipped execution or recycling: every label pays the
+same schedule, so a genuinely fixed per-operation ledger has zero source.
+Here an ACTUAL registered early stop changes the number of executed rounds.
+It gives a negative duration/WORK source with positive charges, rather than
+an invented negative tariff. It also supplies a preparation-safe terminal
+future test for the unknown DATA needed by the positive GR observation route.
+The selected Einstein source, complete physical Cost and original Book
+binding are not inferred from either result.
+
+Use the EXISTING [first-event/cap owner](sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md),
+its retained isometry(3), marked operator(6), source and cost(19)--(22).
+The changed input is one LITERAL native scalar-quiet cell, not another
+Bellman/controller theorem or original128^K enumeration. The source file
+is15686bytes/SHA25675845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036.
+The [TRIZ one-source handoff](D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md)
+continues to apply: true executed time, all fine records and their whole
+price are retained; no Beatty indexing, fitted mark, new selector or
+canonical-cost inference from a probability is added.
+
+### ONE native attempt is concrete; conditional STOP remains its actual interface
+
+For an actual native frame V let Hhat=V Z_d Vdagger, implemented with the
+charged EXACT raw inverse. Hhat is an EXACT Hermitian involution even if V
+approximates a desired fixed observable. Its COMPLETED frame acts as
+I_P tensor V_(DATA,phaseSpin), identity on SOURCE controls, records and
+oldRIGHT; temporary port routing is still paid. An arbitrary raw word that
+leaves P or a control entangled is outside this DATA-observable corollary.
+7bp's two-SOURCE cell followed by7bq's balanced terminal copy has the
+complete actual round instrument
+
+    K00=cI, K10=-s P_+, K01=-s P_-, K11=0,
+    P_+=(I+Hhat)/2, P_-=(I-Hhat)/2,
+    c=p^3, s=2ap, r=c^2=p^6, u=s^2=4p^3, r+u=1.       (570)
+
+The physical input can be arbitrary, mixed and entangled across DATA,
+phase Spin and oldRIGHT. Quiet is scalar on that ENTIRE input. It therefore
+preserves every unknown conditional state and reference correlation exactly;
+there is no unknown-DATA reset or assumption that a failed general Julia
+instrument can be retried. The live complex-module Spin is not prepared or
+projected onto one sector. This new reader is a different instrument from
+the original full128, with its own history, cut and price.
+
+The explicit Z-role1 attempt uses P0, SOURCE1/2, CAR roles3..6 with target4,
+Spin7/8, immutable oldRIGHT9 and fresh archive10/11. SOURCE/P/archive are
+blank; DATA/Spin/oldRIGHT remain free. Its ordinary native Gate tuple has
+4G+74CX+20SourceI=98 stages; its raw inverse has4G+74CX+76SourceI=154 and
+equals the owned inverse leaf-by-leaf. Every G is physical P0, every SourceI
+uses(0,7,8), no G/CX touches Spin, and oldRIGHT9 is never addressed.
+At true oldRIGHT128 the input rank is8192, active full dimension262144,
+physical33 completion4325376. The already owned cell/copy semantics are
+reused under this explicit wire permutation; no old matrix suite runs.
+98 is the cost of THIS Z attempt, not of an arbitrary compiled observable.
+For another V all its actual frame/inverse/routing stages must be paid.
+
+Instantiate the owned stopping rule: after each complete registered round,
+append its actual label and time; continue only after00 and only below capK;
+stop at01/10, report11 as a retained structural-zero fault, and abort after
+the Kth00. Each next attempt uses genuinely fresh SOURCE/archive bits;
+previous records are excluded from later gate supports. Shared DATA is never
+reset and the physical port has returned0. The checker prints all12
+transition rows and all10 leaves for K3, INCLUDING zero11 and cap abort.
+
+This is an instance of the existing rule, not a new native STOP primitive.
+The nonterminal readout, genuine conditional skip, controller, counter,
+initialization/allocation and closing have their real admission and prices.
+The ONLY ne.Execution constructed here is one98-stage attempt. A coherent
+fixed body of98K gates has a different executed clock and does not acquire
+the negative duration source below. All comparisons of source strength
+retain the same physical-admission boundary as7bp--7bq.
+
+### Safe retries preserve the complete capped instrument and the unknown input
+
+Write P_b for the two projectors and rho for the normalized complete input.
+On the stated round interface, the owned stopped isometry specializes to
+
+    K_(n,b)=-s c^(n-1) P_b, n=1,...,K,
+    K_abort=c^K I, K_(n,11)=0,
+    sum_(n,b) K_(n,b)^dagger K_(n,b)+K_abort^dagger K_abort=I,
+    T_K=E[min(T,K)]=sum_(j=0)^(K-1) r^j=(1-r^K)/u.       (571)
+
+No branch is survival-normalized or deleted. Abort's normalized DATA/old
+state is EXACTLY the incoming rho, including its quantum correlations.
+The DATA marginal is r^K rho+(1-r^K)Pinch_Hhat(rho). Eventual exiting
+sign/DATA marginal is the exact Lueders instrument P_b rho P_b, but time
+is still retained in the full archive. This is not a claim that forgetting
+time is a permitted physical erasure or future equivalence.
+
+On the common full time/sign/abort direct sum, capped and infinite retained
+instruments agree through nK. Their remaining blocks are an abort of trace
+r^K and an orthogonal infinite tail of the same trace. Thus their diamond
+distance is EXACTLY2r^K, including any old reference. No compiler error
+accumulates on quiet retries: Hhat^2=I exactly and K00=cI exactly. If a fixed
+ideal H obeys ||Hhat-H||<=delta_H, its Lueders instrument error is at most
+sqrt2 delta_H once, plus2r^K; the sign-probability TV error is at most
+delta_H/2 before the cap. This follows from the Stinespring difference
+norm delta_H/sqrt2. It is not K delta_H. The result is a terminal registered
+future test, NOT a replacement for7bj's coherent SIGN/uncompute query.
+
+At the native point E T=1/(4p^3)=1.059016994..., r<1/10. Thus cap10 has
+normalized trace error<1e-10 for this observable task. This is an instrument
+error, not a bound on complete price source or the original42-field residual.
+All cap resources remain physical: with true oldRIGHT128 the active full
+capacity is2^14*16^K and physical33 capacity33*8192*16^K BEFORE its stopped
+clock. Unexecuted blank registers, allocation and their unprepared columns
+are not removed from any heat or declared free by the expected count.
+
+### Actual elapsed work can decrease although every executed charge is positive
+
+For a controller that REALLY stops executing later attempts, the native
+attempt inventory is(4G,74CX,20SourceI)T_K in expectation, PLUS its actual
+controller/readout/closing ledger. For any provided fixed positive attempt
+fee kappa,
+
+    C_schedule=kappa T_K,
+    dT_K/du=-sum_(j=1)^(K-1) j r^(j-1)<0 for K>=2.      (572)
+
+No charge has been made negative. The saving is fewer executed attempts.
+For K3 the actual attempt count is1.058833710... and its raw98-stage
+component has expectation103.76570358..., with u-source-108.92270564....
+These are operation-count quantities, not an identification of physical
+Cost with gatecount or with the old G-readout cylinder weights.
+
+The actual WORK operand can be an operator. If C_att is a genuinely
+supplied entering-attempt effect and W_b,W_A are ADDITIONAL terminal bright
+and abort effects, the complete scalar-quiet cost effect is
+
+    G_K=C_init+T_K C_att+(1-r^K) G_B+r^K W_A+G_ctrl,K,
+    G_B=sum_b P_b W_b P_b,
+    C_K=Tr(rho G_K),
+    DC_K=Tr(D rho G_K)+Tr(rho D G_K).                    (573)
+
+The ledger owners must be disjoint: a bright charge already in C_att is
+not charged again through W_b. D G_K keeps D C_init, D C_att, D W,
+D P_b, the derivative of r^K, all controller/time terms and true inputs.
+For scalar quiet/success/abort total charges k0,kB,kA, an equivalent
+outcome-charge convention is C_K=k0 rT_K+kB(1-r^K)+kA r^K+C_ctrl,K.
+These are supplied charges, not chosen to fit a stationary source.
+If an actual variation makes quiet B non-scalar, preserve the ordered
+sum (Bdagger)^j C_att B^j and the full amplitude/entropy source instead of573's
+scalar simplification. This reduces to the owned B^j C_att B^j on its
+Hermitian quiet chart; a non-Hermitian quiet is not silently squared. The checker includes a noncommuting ordered-source
+control; no independent preparation row is suppressed.
+
+### Complete retained quantum information includes the random duration
+
+Let DeltaS_H=S(Pinch_Hhat rho)-S(rho), in0..log2, with DATA, phase Spin,
+oldRIGHT and previous retained records ALL inside the states. The full capped
+CQ archive has bright blocks u r^(n-1)P_b rho P_b and abort r^K rho. Hence
+
+    H(time,status)=T_K h(u),
+    I_K=S(Gamma_K)-S(rho)
+        =T_K h(u)+(1-r^K)DeltaS_H
+        =(1-r^K)[h(u)/u+DeltaS_H].                      (574)
+
+Here status is EXIT versus ABORT; the bright sign and its conditional DATA
+state are inside Pinch_Hhat rho. No stationary DATA preparation or iid
+replacement of noncommuting DATA histories is used. Independence of the waiting TIME from unknown DATA is
+proved here by the scalar quiet effect, not assumed for general full128.
+The stop at timeK and the abort at timeK are distinct labels. The exact
+mixed nondiagonal quantum fixture and an entangled-reference abort control
+keep the initial entropy and all conditional terminal terms. As before,
+this is the registered CQ gain convention IF actually selected; coherent
+whole-state entropy and physical readout fees remain their own objects.
+Normalized I_K has no raw input-rank multiplier.
+
+Its full source is
+D I_K=h(u)D T_K+T_K log(r/u)D u+K r^(K-1)DeltaS_H D u
+       +(1-r^K)D DeltaS_H.
+Input and moving-H reactions are inside D DeltaS_H, not frozen by one
+source-angle calculation. Structural zero branches are kept; no entropy
+Hessian or free maximally mixed input is required.
+
+In the uncapped limit u>0, with fixed H/input/actual fees,
+C_infinity=k0 r/u+kB+C_ctrl and I_infinity=h(u)/u+DeltaS_H. Therefore
+
+    ell dP_infinity/du=-(ell k0+log r)/u^2
+                                  +ell C_ctrl',
+    P=C-I/ell, ell=log(phi).                            (575)
+
+At native r=p^6 the displayed fixed-fee component is stationary only if
+the ACTUAL quiet charge k0 is6 and the remaining reactions vanish. Six
+is a NECESSARY tariff test, not a value inferred from r=p^6: this coherent
+quiet event is not six registered Golden F steps. The native birth0/10
+code and the original full128 port ledger are different words/interfaces;
+they are not silently reused for this98-attempt process. The controlled
+runtime/controller and any moving fees must be computed from the same run.
+Nothing here adds an extra -Info to bare Book03 H+J.
+
+Finite cap is not an exact stationary point just because575 vanishes.
+For fixed fees and no extra init/controller term, exactly
+P_K=(1-r^K)P_infinity+r^K kA, so its derivative retains
+K r^(K-1)(P_infinity-kA). D init/controller and abort work add their true
+sources. No cap-dependent payment is assigned to cancel this boundary.
+The original finite-cap/source owner supplies the general noncommutative
+version; the present result is its changed scalar-quiet application.
+
+### Retain the marked clock; eventual YES alone loses the source
+
+On the SAME full time record the marked exit and abort effects are
+
+    E_(K,x)=u x [1-(rx)^K]/(1-rx) I,
+    A_(K,x)=(rx)^K I, Z_(K,x)=E_(K,x)+A_(K,x),
+    partial_x Z_(K,x)|x1=T_K I,
+    E_(infinity,x)=u x/(1-rx) I,
+    partial_u E_(infinity,x)=x(1-x)/(1-rx)^2 I.           (576)
+
+At x1 eventual exit is I with zero fixed-support u-source. At any fixed
+0<x<1 the retained waiting operator has a nonzero source and recovers u
+by u=E_x(1-x)/[x(1-E_x)]. The mark is a statistic of actual executed time,
+not a new free quantum filter or a selector tuned to gravity. OldRIGHT,
+cap abort and all record-source derivatives remain as in the owned stopped
+clock theorem. Replacing an original Book F_N with eventual exit would
+lose this information; no such replacement is made here.
+
+In particular expected raw duration is NOT an Hodge space dimension or a
+substitute for fixed N. This variable-duration recorded tree does not inherit
+7bi's old fixed-cycle heat by setting N=E T. The actual stopped-clock
+geometric test/Dirac operator, its heat on every allocated mode, the controller
+and the common Book cut must be constructed/selected before an H+J/R source
+comparison. No new stopped-heat formula or originalGR source equality is
+claimed. These remain the exact physical application, not uncharged overhead.
+
+### Earliest STOP has a derived storage-CQ optimum in the supplied measurement task
+
+This is a further application of the OWNED stopping-policy/entropy calculus,
+not a second Bellman theorem. Suppose the given task is already achieved at
+first bright and later SAME-H records are not required by that task. After
+that bright b, the entire conditional DATA/old state is supported in P_b.
+Every later same-H attempt is scalar on it, preserving every DATA/reference
+future test. It generates only quiet/click record entropy h(u). For a bounded
+predictable policy with L extra executed rounds and no unpriced fresh policy
+randomness, the conditional entropy chain rule and actual emitted TWO-bit
+archive WORD give
+
+    I_extra=h(u) E L, C_word,extra=2 E L,
+    Delta P_word-CQ=(2-h(u)/ell)E L
+                       >=(2-log2/ell)E L>0 if Pr(L>0)>0. (577)
+
+Duration entropy is already inside this chain rule; H(L) is not added again.
+Predictably varying available strengths u_v preserve the bound by h(u_v)<=log2.
+Strictness uses log2<2log(phi), not a fair physical coin. No optimal flag is
+assumed. Before bright the supplied first-event/cap task still needs its next
+round; after bright earliest reporting attains this COMPONENT lower bound.
+This compares permitted continuations of the SAME supplied measurement task,
+not arbitrary alternative implementations or a compulsory D0 measurement goal.
+
+The charge2 is for an ACTUAL emitted two-bit word, not a second charge for
+prepaid2K archive capacity. Actual seed entropy/cost, different required future
+time records and moving WORK change the problem. Nonnegative EXTRA fees
+strengthen this VALUE comparison, not its derivative and not a full Book
+minimum. The entire later time/record law differs between policies and is
+not called future-equivalent when the task requires it. DATA/oldRIGHT
+preservation is the stated comparison. All unused blank thermal modes remain.
+
+### Parent substitution and remaining physical application
+
+The missing possible negative WORK source after7bq now has a concrete origin:
+positive payment on actually executed rounds with native scalar quiet gives
+negative stopped-duration source572. The same native operation gives an
+unknown-input-safe observable, an exact capped archive including abort,
+complete quantum Info574, real operator WORK573, retained time/source576
+and an earliest-stop component result577. This is neither a negative
+counterterm nor the old fixed934 schedule given a new tariff.
+
+The unremoved premises are actual nonterminal readout/halting/controller and
+resource prices, the true canonical Cost/WORK binding (including whether the
+required quiet charge really is6), the stopped physical Book/Dirac/cut map,
+and its coupled field/preparation/source/clock equations. The native SOURCE
+angle comparison and the original42-field source/gain/refinement map are not
+supplied by a stopped readout. A measured retry process also cannot be inserted
+as7bj's coherent SIGN without changing its full price and return. The strongest
+positive nonvacuum Einstein carrier remains unchanged and is not re-searched.
+No new action, physical admission, registered research task, public claim
+or selector is added;
+GR_closed=false, positive_gr/raw216 remain open.
+
+The SINGLE new checker below loads ONLY the pinned7bp helper prefix/nested
+7bo definitions. It validates one literal98-stage attempt and154-gate inverse,
+prints the OWNED rule's cap3 instance, and checks new complete capped
+Kraus/abort, mixed CQ entropy/source, entangled-reference, ordered-cost,
+clock-mark and cap-source controls. No old matrix/math suite, full128^K
+archive, huge stopped clock or global98K ne.Execution is built.
+Run from the repository root.
+
+```python
+"""One literal scalar-quiet native attempt and an OWNED stopping-rule instance.
+
+The only ne.Execution emitted here is ONE 98-stage attempt.  The finite K=3
+transition table instantiates STOPPED_CLOCK_SOURCE.md's first-nonblank/cap
+rule; it is not another controller theorem, a native STOP gate or a free
+classical readout.  Matrix fixtures and all old mathematics are not executed.
+"""
+import sys
+sys.dont_write_bytecode = True
+from pathlib import Path
+import hashlib
+import json
+import types
+
+
+PRIMARY = Path('02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md').resolve()
+STOP_OWNER = Path('02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md').resolve()
+COLD_CODE_BYTES = 17596
+COLD_CODE_SHA256 = 'c658c3f67d8e61d91a339e9ffd6ad5c1b26922979ebf707e8aaa6b9caf0f77dc'
+COLD_MATH_MARKER = '"""Changed native cold-jet application: exact original D and native reflection frame."""'
+
+
+def load_owned_prefix():
+    """Pinned 7bp definitions only; its nested load also excludes 7bo tests."""
+    source = PRIMARY.read_text(encoding='utf-8')
+    section = source.index('## 7bp. ')
+    start = source.index('```python\n', section) + len('```python\n')
+    end = source.index('\n```', start)
+    code = source[start:end].encode('utf-8')
+    if len(code) != COLD_CODE_BYTES or hashlib.sha256(code).hexdigest() != COLD_CODE_SHA256:
+        raise RuntimeError('frozen 7bp code pin changed')
+    text = code.decode('utf-8')
+    if COLD_MATH_MARKER not in text:
+        raise RuntimeError('7bp helper/checker separator absent')
+    prefix = text.split(COLD_MATH_MARKER, 1)[0]
+    module = types.ModuleType('_d0_scalar_stop_owned_attempt')
+    module.__file__ = str(PRIMARY)
+    sys.modules[module.__name__] = module
+    exec(compile(prefix, str(PRIMARY), 'exec'), module.__dict__)
+    stop_raw = STOP_OWNER.read_bytes()
+    module.STOP_PROVENANCE = {
+        'primary_source_path': str(PRIMARY),
+        'cold_fenced_code_bytes': len(code),
+        'cold_fenced_code_sha256': hashlib.sha256(code).hexdigest(),
+        'cold_loaded_prefix_bytes': len(prefix.encode('utf-8')),
+        'cold_loaded_prefix_sha256': hashlib.sha256(prefix.encode('utf-8')).hexdigest(),
+        'nested_7bo_builder': module.owned.PROVENANCE,
+        'stopping_rule_owner': str(STOP_OWNER),
+        'stopping_rule_owner_bytes': len(stop_raw),
+        'stopping_rule_owner_sha256': hashlib.sha256(stop_raw).hexdigest(),
+        'stopping_rule_application': 'section2 equation3: first nonblank or finite cap',
+        'old_fixtures_or_math_executed': False,
+        'new_matrix_fixture_executed': False,
+    }
+    return module
+
+
+owned = load_owned_prefix()
+Compiler = owned.Compiler
+ne = owned.ne
+
+
+def build_attempt():
+    """Only ONE actual native attempt, on the requested compact 12-wire frame."""
+    c = Compiler(12, 0, (7, 8), (9,))
+    parts = owned.cold_cell(c, (1, 2), 4, c.seq())
+    copy = c.seq(c.cx(1, 10), c.cx(2, 11))
+    word = c.seq(copy, parts['word'], copy)
+    blanks = (0, 1, 2, 10, 11)
+    e = c.execution(word, blank_wires=blanks, report_bits=(10, 11),
+                    max_expanded_stages=98)
+    return {'compiler': c, 'word': word, 'copy': copy,
+            'cell': parts, 'execution': e}
+
+
+def attempt_report():
+    built = build_attempt()
+    c, word, e = built['compiler'], built['word'], built['execution']
+    validation = c.validate(word)
+    assert c.counts(built['cell']['word']).as_dict() == {
+        'G': 4, 'CX': 70, 'SourceI': 20, 'N': 94, 'g_port': 4, 'g_off': 0}
+    expected = {'G': 4, 'CX': 74, 'SourceI': 20,
+                'N': 98, 'g_port': 4, 'g_off': 0}
+    assert c.counts(word).as_dict() == expected and len(e.gates) == 98
+    iv = ne.inventory(e, max_qubits=12, max_expanded_stages=98)
+    assert (iv.g_count, iv.cx_count, iv.source_i_count, iv.gate_count) == (4, 74, 20, 98)
+    assert iv.cut_rank == 128 and iv.full_dimension == 4096
+    leaves = c._leaves(word, tuple(range(12)))
+    assert all(g.wires == (0,) for g in leaves if g.op == 'G')
+    assert all(g.wires == (0, 7, 8) for g in leaves if g.op == 'SourceI')
+    assert all(set(g.wires).isdisjoint((9,)) for g in leaves)
+    assert all(set(g.wires).isdisjoint((7, 8)) for g in leaves if g.op != 'SourceI')
+    for source, archive in ((1, 10), (2, 11)):
+        assert tuple(g for g in e.gates if archive in g.wires) == (
+            ne.Gate('CX', (source, archive)),) * 2
+    inverse = tuple(c.iter_raw(c.inv(word)))
+    assert inverse == ne.inverse_word(e, max_qubits=12,
+                                      max_expanded_stages=len(inverse))
+    assert len(inverse) == 154
+    assert c.counts(c.inv(word)).as_dict() == {
+        'G': 4, 'CX': 74, 'SourceI': 76,
+        'N': 154, 'g_port': 4, 'g_off': 0}
+    return {
+        'layout': {'qubits': 12, 'physical_port': 0, 'SOURCE': (1, 2),
+                   'DATA_roles': (3, 4, 5, 6), 'H': 'Z on role1 wire4',
+                   'phase_Spin': (7, 8), 'immutable_oldRIGHT': (9,),
+                   'terminal_archive': (10, 11),
+                   'blank_wires': e.blank_wires, 'unknown_wires': iv.unknown_wires},
+        'literal_attempt_counts': expected,
+        'literal_inverse_counts': c.counts(c.inv(word)).as_dict(),
+        'literal_inverse_equals_owned': True, 'unique_leaf_validation': validation,
+        'input_rank_one_old_qubit': iv.cut_rank,
+        'general_input_rank': '64 * genuine_oldRIGHT_rank',
+        'general_active_dimension': '2048 * genuine_oldRIGHT_dimension',
+        'true_oldRIGHT128_input_rank': 8192,
+        'true_oldRIGHT128_active_dimension': 2*4*4*16*4*128,
+        'true_oldRIGHT128_physical33_dimension': 33*4*4*16*4*128,
+        'owned_instrument': 'K00=p^3 I, K01=−2ap P_minus, K10=−2ap P_plus, K11=0',
+        'instrument_scope': 'owned7bq564; no new operator matrix fixture executed',
+        'only_one_attempt_Execution_emitted': True,
+        'DATA_reset_or_discarded': False,
+        'readout_or_STOP_primitive_emitted': False,
+        'Cost_assigned_from_Gate_count': False,
+    }
+
+
+def _cap(value):
+    if type(value) is not int or value < 1:
+        raise ne.DomainError('cap must be a positive finite integer')
+    return value
+
+
+def stopping_rule_instantiation(cap=3):
+    """Finite table INSTANCE of the OWNED first-event/cap rule, not its proof."""
+    cap = _cap(cap)
+    table = []
+    for attempt in range(1, cap+1):
+        for label in ('00', '01', '10', '11'):
+            if label == '00' and attempt < cap:
+                nxt, status = f'ACTIVE({attempt+1})', 'quiet_continue'
+            elif label == '00':
+                nxt, status = 'HALTED', 'cap_abort_after_quiet'
+            elif label in ('01', '10'):
+                nxt, status = 'HALTED', 'first_bright_stop'
+            else:
+                nxt, status = 'HALTED', 'structural_zero_label_retained'
+            table.append({'state': f'ACTIVE({attempt})', 'read_label': label,
+                          'append_record': {'attempt': attempt, 'label': label},
+                          'next_state': nxt, 'status': status,
+                          'readout_and_transition_price': 'ACTUAL_LEDGER_REQUIRED'})
+    # These are addresses for FRESH work in this instantiation, not a global
+    # fixed-body Execution.  Earlier source+archive registers are never reused.
+    resources = []
+    sealed = []
+    for attempt in range(1, cap+1):
+        if attempt == 1:
+            source, archive = (1, 2), (10, 11)
+        else:
+            start = 12+4*(attempt-2)
+            source, archive = (start, start+1), (start+2, start+3)
+        resources.append({'attempt': attempt, 'fresh_SOURCE': source,
+                          'fresh_archive': archive,
+                          'shared_port_DATA_Spin': (0, (3, 4, 5, 6), (7, 8)),
+                          'immutable_initial_oldRIGHT': (9,),
+                          'sealed_previous_attempt_registers_excluded': tuple(sealed),
+                          'shared_port_input0': 'returned by preceding attempt; no reset supplied',
+                          'DATA_input': 'actual conditional continuation state, never reset'})
+        sealed.extend(source+archive)
+    return {
+        'owned_rule': 'STOPPED_CLOCK_SOURCE.md section2 equation3',
+        'instantiation_only': True, 'cap': cap, 'initial_state': 'ACTIVE(1)',
+        'transition_table': table, 'fresh_resource_plan': resources,
+        'label_order': 'SOURCE1,2 and archive10,11 in the compact per-attempt frame',
+        'all_times_abort_and_zero_labels_registered': True,
+        'conditional_readout_and_halting_admission': 'UNCHANGED_OWNED_OBLIGATION',
+        'real_controller_and_duration_price': 'ACTUAL_LEDGER_REQUIRED',
+        'controller_was_compiled_to_G_CX_SourceI': False,
+        'coherent_fixed_98K_body_was_constructed': False,
+        'global_cap_gate_Execution_was_constructed': False,
+    }
+
+
+def terminal_branch_ledger(cap=3):
+    """All finite first-event/cap leaves and their literal ATTEMPT-only counts."""
+    cap = _cap(cap)
+    out = []
+    for attempt in range(1, cap+1):
+        for label in ('01', '10', '11'):
+            history = ('00',)*(attempt-1)+(label,)
+            out.append(_branch_entry(attempt, history,
+                        'structural_zero_retained' if label == '11' else 'first_bright'))
+    out.append(_branch_entry(cap, ('00',)*cap, 'cap_abort_unresolved'))
+    assert len(out) == 3*cap+1
+    return out
+
+
+def _branch_entry(attempts, history, status):
+    return {
+        'history': history,
+        'registered_attempt_times': tuple(range(1, attempts+1)),
+        'status': status, 'executed_attempts': attempts,
+        'attempt_primitive_counts': {'G': 4*attempts, 'CX': 74*attempts,
+                                     'SourceI': 20*attempts, 'N': 98*attempts},
+        'actual_total_primitive_duration': f'{98*attempts} + N_controller(history)',
+        'controller_readout_stopping_ledger': 'ACTUAL_LEDGER_REQUIRED; NOT ZERO',
+        'fresh_SOURCE_bits_executed': 2*attempts,
+        'fresh_archive_bits_executed': 2*attempts,
+        'previous_records_overwritten': False,
+        'all_fine_labels_retained_including_structural_zero': True,
+        'old_RIGHT_touched': False, 'DATA_reset': False,
+        'unexecuted_later_attempts_were_charged': False,
+        'unexecuted_resource_or_controller_cost_was_declared_zero': False,
+    }
+
+
+def main():
+    report = attempt_report()
+    spec = stopping_rule_instantiation(3)
+    leaves = terminal_branch_ledger(3)
+    assert len(spec['transition_table']) == 12 and len(leaves) == 10
+    print('PROVENANCE', json.dumps(owned.STOP_PROVENANCE, sort_keys=True))
+    print('ONE_LITERAL_ATTEMPT', json.dumps(report, sort_keys=True))
+    print('OWNED_STOP_RULE_K3_INSTANCE', json.dumps(spec, sort_keys=True))
+    print('ATTEMPT_ONLY_BRANCH_LEDGER', json.dumps(leaves, sort_keys=True))
+    print('PASS COUNTS ONLY: ONE98-gate attempt/inverse154; K3 owned-rule table; no matrix or cap-wide native execution')
+    return report, spec, leaves
+
+"""Exact scalar-quiet specialization of the OWNED first-event/cap calculus.
+
+Owner: d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md,
+especially its retained isometry (3), marked operator (6), and source (7).
+Changed input only: Kquiet=cI, Kbright=-sP+/-, c²+s²=1.  No new
+Bellman objective, physical stopping controller, reset or selected tariff.
+Finite cap always retains its actual abort.  Every equality below is exact;
+there is no numerical decision tolerance and no old test/fixture import.
+"""
+import json
+import sympy as sp
+
+
+def run_scalar_quiet_stop_math():
+    c, s = sp.symbols('c s', positive=True, real=True)
+    gb = sp.groebner((s*s+c*c-1,), s, c, domain=sp.QQ)
+
+    def reduce(x):
+        return gb.reduce(sp.expand(x))[1]
+
+    def eq(A, B):
+        return A.shape == B.shape and all(reduce(x-y) == 0 for x, y in zip(A, B))
+
+    I = sp.eye(2)
+    P = (sp.diag(1, 0), sp.diag(0, 1))
+    rho = sp.Matrix(((sp.Rational(3, 5), sp.Rational(1, 5)),
+                     (sp.Rational(1, 5), sp.Rational(2, 5))))
+    pinch = sum((Q*rho*Q for Q in P), sp.zeros(2))
+    assert rho.det() == sp.Rational(1, 5) and rho != pinch
+    caps = (1, 2, 3, 5)
+    for K in caps:
+        branches = tuple(-s*c**(n-1)*Q for n in range(1, K+1) for Q in P)
+        abort = c**K*I
+        assert eq(sum((L.T*L for L in branches), abort.T*abort), I)
+        channel = sum((L*rho*L.T for L in branches), abort*rho*abort.T)
+        assert eq(channel, c**(2*K)*rho+(1-c**(2*K))*pinch)
+        # The abort branch preserves the COMPLETE input, including references.
+        assert eq(abort*rho*abort.T, c**(2*K)*rho)
+        for sign, Q in enumerate(P):
+            grouped = sum((branches[2*n+sign]*rho*branches[2*n+sign].T
+                           for n in range(K)), sp.zeros(2))
+            assert eq(grouped, (1-c**(2*K))*Q*rho*Q)
+
+    # An explicit entangled old-reference test: abort is not a replacement state.
+    bell = sp.Matrix((1, 0, 0, 1))/sp.sqrt(2)
+    Omega = bell*bell.T
+    Qref = tuple(sp.kronecker_product(Q, I) for Q in P)
+    pinched_Omega = sum((Q*Omega*Q for Q in Qref), sp.zeros(4))
+    reference_drift = Omega-pinched_Omega
+    assert sorted(reference_drift.eigenvals().items(), key=lambda x: x[0]) == [
+        (-sp.Rational(1, 2), 1), (sp.Integer(0), 2), (sp.Rational(1, 2), 1)]
+    # Thus the unflagged Bell-state trace distance is c^(2K)/2.
+    # With an explicit abort flag, the cap-vs-eventual instrument difference
+    # has negative bright blocks -r^K Q Omega Q and positive abort r^K Omega.
+    # Their orthogonal-flag trace norms sum to 2r^K for EVERY normalized Omega:
+    # half diamond distance is exactly r^K (after time is marginalised).
+    assert sp.trace(Omega)+sum(sp.trace(Q*Omega*Q) for Q in Qref) == 2
+
+    u = sp.symbols('u', positive=True, real=True)
+    r = 1-u
+    h = lambda q: -q*sp.log(q)-(1-q)*sp.log(1-q)
+
+    def log_normal(x):
+        # Domain: 0<u<1, positive rational eigenvalues; structural zeros omitted.
+        return sp.simplify(sp.expand(sp.expand_log(x, force=True)))
+
+    lam = (sp.Rational(1, 2)+sp.sqrt(5)/10,
+           sp.Rational(1, 2)-sp.sqrt(5)/10)
+    Srho = -sum(q*sp.log(q) for q in lam)
+    t = sp.Rational(3, 5)
+    DeltaS = h(t)-Srho
+    derivative_records = []
+    for K in caps:
+        exit_weights = tuple(u*r**(n-1) for n in range(1, K+1))
+        abort_weight = r**K
+        w = 1-r**K
+        T = sum(r**j for j in range(K))
+        assert sp.simplify(T-w/u) == 0
+        assert sp.simplify(sum(exit_weights)+abort_weight-1) == 0
+        # Complete capped prefix: status distinguishes exit at K from abort at K.
+        Hprefix = -sum(q*sp.log(q) for q in exit_weights)
+        Hprefix -= abort_weight*sp.log(abort_weight)
+        assert log_normal(Hprefix-T*h(u)) == 0
+        # All actual quantum eigenbranches: two abort eigenvalues and two
+        # rank-one bright eigenvalues per n. Other branch eigenvalues are zero.
+        nonzero = tuple(abort_weight*q for q in lam)
+        nonzero += tuple(q*a for q in exit_weights for a in (t, 1-t))
+        Sgamma = -sum(q*sp.log(q) for q in nonzero)
+        Info = Sgamma-Srho
+        claimed = T*h(u)+w*DeltaS
+        assert log_normal(Info-claimed) == 0
+        Tp = sp.diff(T, u)
+        wp = K*r**(K-1)
+        derivative = Tp*h(u)+T*sp.log(r/u)+wp*DeltaS
+        assert log_normal(sp.diff(Info, u)-derivative) == 0
+        # Actual positive elapsed-stage count can have a NEGATIVE source.
+        assert sp.expand(Tp+sum(j*r**(j-1) for j in range(1, K))) == 0
+        derivative_records.append({'K': K, 'T': str(sp.expand(T)),
+                                   'T_prime': str(sp.expand(Tp))})
+
+    # General cap induction: no enumeration of a 128^K tree is needed.
+    k = sp.symbols('k', positive=True, integer=True)
+    Tk = (1-r**k)/u
+    assert sp.simplify((1-r**(k+1))/u-(1+r*Tk)) == 0
+    # H_0=0 and H_(K+1)=h(u)+rH_K imply H_K=T_K h(u).
+
+    # Generic ACTUAL entering-attempt operator and ADDITIONAL terminal WORK.
+    # Components must have disjoint ledger ownership: an exit charge already
+    # included in Catt is not charged again through Wplus/Wminus.
+    # These rational observables are DIAGNOSTIC supplied operands, not tariffs
+    # attributed to the native factory. They do not commute with the input.
+    Catt = sp.Matrix(((2, sp.Rational(1, 3)), (sp.Rational(1, 3), 1)))
+    Wplus = sp.Matrix(((3, sp.Rational(1, 4)), (sp.Rational(1, 4), 2)))
+    Wminus = sp.Matrix(((1, -sp.Rational(1, 5)), (-sp.Rational(1, 5), 4)))
+    Wabort = sp.Matrix(((5, sp.Rational(1, 7)), (sp.Rational(1, 7), 6)))
+    Gbright = P[0]*Wplus*P[0]+P[1]*Wminus*P[1]
+    for K in caps:
+        T = sum(r**j for j in range(K))
+        w = 1-r**K
+        direct = sum((r**j*Catt for j in range(K)), sp.zeros(2))
+        direct += sum((u*r**j*Gbright for j in range(K)), sp.zeros(2))
+        direct += r**K*Wabort
+        compact = T*Catt+w*Gbright+r**K*Wabort
+        assert all(sp.simplify(x) == 0 for x in direct-compact)
+        derivative = sp.diff(T, u)*Catt+K*r**(K-1)*(Gbright-Wabort)
+        assert all(sp.simplify(x) == 0 for x in sp.diff(compact, u)-derivative)
+        # Independent input-preparation reaction is not removed.
+        drho = sp.Matrix(((0, sp.Rational(1, 10)), (sp.Rational(1, 10), 0)))
+        assert sp.simplify(sp.trace(drho*compact)) != 0
+
+    # Non-scalar quiet variant: the owned operator order must be retained.
+    # This is a rational matrix diagnostic, not a new native-angle realization.
+    B = sp.diag(sp.Rational(3, 5), sp.Rational(4, 5))
+    Lbright = (-sp.Rational(4, 5)*P[0], -sp.Rational(3, 5)*P[1])
+    assert Catt*B != B*Catt
+    K = 3
+    effects = sum(((L*B**j).T*(L*B**j)
+                   for j in range(K) for L in Lbright), (B**K).T*B**K)
+    assert effects == I
+    tvar = sp.symbols('tvar', real=True)
+    Bt = B+tvar*sp.diag(1, -1)
+    entered_cost = sum((Bt**j*Catt*Bt**j for j in range(K)), sp.zeros(2))
+    dB = sp.diag(1, -1)
+
+    def d_power(j):
+        return sum((B**m*dB*B**(j-1-m) for m in range(j)), sp.zeros(2))
+
+    ordered_source = sum((d_power(j)*Catt*B**j+B**j*Catt*d_power(j)
+                          for j in range(K)), sp.zeros(2))
+    assert sp.diff(entered_cost, tvar).subs(tvar, 0) == ordered_source
+
+    # Mark every ACTUALLY executed attempt; the cap abort is still present.
+    x = sp.symbols('x', positive=True, real=True)
+    for K in caps:
+        Ex = u*x*sum((r*x)**j for j in range(K))
+        complete = Ex+(r*x)**K
+        assert sp.simplify(complete.subs(x, 1)-1) == 0
+        assert sp.simplify(Ex.subs(x, 1)-(1-r**K)) == 0
+        assert sp.simplify(sp.diff(complete, x).subs(x, 1)
+                           -sum(r**j for j in range(K))) == 0
+    Einf = u*x/(1-r*x)
+    assert sp.simplify(sp.diff(Einf, u)-x*(1-x)/(1-r*x)**2) == 0
+    assert sp.simplify(sp.diff(Einf, x).subs(x, 1)-1/u) == 0
+    assert sp.simplify(Einf.subs(x, 1)-1) == 0
+    assert sp.simplify(Einf*(1-x)/(x*(1-Einf))-u) == 0
+
+    # Uncapped waiting-time Cost-Info: a REAL quiet charge is required.
+    ell, k0, kB, DS = sp.symbols('ell k0 kB DS', real=True)
+    Cinf = k0*r/u+kB
+    Iinf = h(u)/u+DS
+    derivative_price = sp.diff(ell*Cinf-Iinf, u)
+    assert log_normal(derivative_price+(ell*k0+sp.log(r))/u**2) == 0
+    pp = sp.symbols('pp', positive=True)
+    # At native r=p^6, ell=-log p, cancellation of THIS component asks k0=6.
+    assert sp.expand_log(-6*sp.log(pp)+sp.log(pp**6), force=True) == 0
+
+    return {
+        'owner_consumed': 'STOPPED_CLOCK_SOURCE retained isometry/marked-cost/source',
+        'changed_input': 'native scalar quiet cI; bright -sP+/-',
+        'caps_checked_exactly': caps,
+        'TP_cap_abort_retained': True,
+        'abort_normalized_DATA_old_reference_state': 'exactly the incoming Omega',
+        'coarse_cap_channel': 'r^K id+(1-r^K)Pinch_H',
+        'coarse_flagged_cap_vs_eventual_half_diamond': 'exactly r^K',
+        'conditional_EXIT_Luders': 'exact at every cap; not claimed as a free postselection',
+        'complete_capped_prefix_entropy': 'T_K*h(u), includes exit/abort status at time K',
+        'complete_CQ_Info': 'T_K*h(u)+(1-r^K)*DeltaS_H',
+        'Info_full_source': 'DT_K*h(u)+T_K*log((1-u)/u)*Du+Dw*DeltaS_H+w*DDeltaS_H; keep initial entropy and input/H motion',
+        'full_cost_kernel': 'Cinit+sum B^j Catt B^j+sum L_n,b^dag Wb L_n,b+B^K Wabort B^K+Ccontroller',
+        'scalar_cost_kernel': 'Cinit+T_K*Catt+(1-r^K)*Gbright+r^K*Wabort+Ccontroller',
+        'cost_source_keeps': 'operator derivatives, controller, input Tr(DOmega*Ceff), initial preparation',
+        'expected_attempts_and_duration_sources': derivative_records,
+        'raw_elapsed_stages': 'actual stages_per_attempt*T_K plus actual controller/record stages',
+        'expected_duration_requires_actually_stopped_controller': True,
+        'unrolled_fixed_cap_raw_clock_not_replaced_by_expected_time': True,
+        'uncapped_Info': 'h(u)/u+DeltaS_H',
+        'uncapped_quiet_charge_Cost_minus_Info_source': '-(ell*k0+log(1-u))/u^2 + actual controller source',
+        'native_quiet_charge_stationarity_test': 'k0=6 REQUIRED for stated component, NOT assigned from p^6',
+        'marked_exit_operator': 'u*x*(1-(r*x)^K)/(1-r*x) I; uncap u*x/(1-r*x) I',
+        'marked_cap_abort_operator': '(r*x)^K I',
+        'unmarked_eventual_exit_field_source': 'zero; marked waiting operator has nonzero u-source',
+        'physical_controller_admission_proved': False,
+        'new_Bellman_or_action_proposed': False,
+        'actual_native_tariff_provided': False,
+        'old_Book_clock_or_GR_source_transferred': False,
+        'old_fixture_or_root_replayed': False,
+        'all_evidence_is_exact': True,
+    }
+
+def run_native_stop_consumers():
+    import sympy as sp
+    p=ne.P;a=ne.A;c=p**3;u0=4*p**3;r0=p**6
+    assert ne.exact_matrix_equal(sp.Matrix([[u0+r0]]),sp.ones(1))
+    assert (sp.Rational(2,3)-p).is_positive is True
+    assert sp.Rational(2,3)**6<sp.Rational(1,10)
+    assert (1-2*p*p).is_positive is True # 2 log(phi)>log2, no fair coin used.
+    # Same-H rounds after bright preserve the COMPLETE old reference state.
+    P0=sp.diag(1,0);P1=sp.diag(0,1);I=sp.eye(2)
+    old=sp.Matrix([[sp.Rational(3,5),sp.Rational(1,5)],[sp.Rational(1,5),sp.Rational(2,5)]])
+    sigma=sp.kronecker_product(P0,old)
+    bright=2*a*p*sp.kronecker_product(P0,I)
+    wrong=2*a*p*sp.kronecker_product(P1,I)
+    assert ne.exact_matrix_equal(bright*sigma*bright.H,u0*sigma)
+    assert wrong*sigma*wrong.H==sp.zeros(4)
+    assert ne.exact_matrix_equal((c*sp.eye(4))*sigma*(c*sp.eye(4)),r0*sigma)
+    # Exact cap VALUE and SOURCE boundary; no discarded abort-price term.
+    u=sp.symbols('u',positive=True,real=True);r=1-u
+    ell,k0,kB,kA,DS=sp.symbols('ell k0 kB kA DS',real=True)
+    h=-u*sp.log(u)-r*sp.log(r)
+    Cinf=k0*r/u+kB;Iinf=h/u+DS;Qinf=ell*Cinf-Iinf
+    for K in (1,2,3,5):
+        exit=1-r**K;T=sum(r**j for j in range(K))
+        Ccap=k0*r*T+kB*exit+kA*r**K
+        Icap=T*h+exit*DS
+        Qcap=ell*Ccap-Icap
+        assert sp.simplify(Qcap-exit*Qinf-ell*r**K*kA)==0
+        derivative=exit*sp.diff(Qinf,u)+K*r**(K-1)*(Qinf-ell*kA)
+        assert sp.simplify(sp.diff(Qcap,u)-derivative)==0
+        # Per-executed-attempt native inventory component, not physicalCost.
+        assert sp.simplify((r*98*T+exit*98)-98*T)==0
+    ET3=1+r0+r0*r0
+    Dstage3=-98*(1+2*r0)
+    assert Dstage3.is_negative is True
+    # Common full time/sign/abort outputs: identical mass through cap;
+    # cap-abort and infinite tail are orthogonal flags, each trace r^K.
+    # Thus diamond distance2r^K. This is not a survival-normalized channel.
+    return {
+        'native_attempt_inventory':{'G':4,'CX':74,'SourceI':20,'raw_stages':98},
+        'native_stop_probability':str(sp.N(u0,24)),
+        'native_quiet_probability':str(sp.N(r0,24)),
+        'expected_primitive_inventory':'(4G,74CX,20SourceI)*T_K + actual controller/readout/closing ledger',
+        'expected_native_attempts_cap3':str(sp.N(ET3,24)),
+        'expected_raw_attempt_stages_cap3':str(sp.N(98*ET3,24)),
+        'raw_attempt_stage_source_cap3':str(sp.N(Dstage3,24)),
+        'expected_attempts_uncapped':str(sp.N(1/u0,24)),
+        'common_full_archive_cap_vs_infinite_diamond':'exactly2*r^K including abort and all time/sign labels',
+        'cap10_normalized_trace_error_strict':'<1e-10; r<1/10; not a price-source bound',
+        'fixed_native_reflection':'V Z Vdagger exact even when V approximates target',
+        'quiet_DATA_Spin_oldRIGHT_distortion':'exactly0 at every retry; no K*compiler_error',
+        'fixed_reflection_Luders_diamond_error':'<=sqrt(2)*||Hhat-H|| once, plus2*r^K',
+        'post_bright_given_task_extra_word_CQ_gap':'>= (2-log(2)/ell)*E(extra_rounds)>0',
+        'gap_scope':'actual emitted2bit WORD-length component and full CQ; not prepaid2Kcapacity, fullBookheat or globaloptimality',
+        'post_bright_predictable_seed_free_policy':'condition on actual retained past; new seeds require actual Cost/entropy',
+        'unvisited_fresh_work_thermal_space_retained':True,
+        'active_full_dimension_with_true_old128':'2^14 *16^K before the stopped clock',
+        'physical33_full_dimension_with_true_old128':'33*8192*16^K before the stopped clock',
+        'capped_source_has_abort_boundary':True,
+        'global_stopped_Book_Dirac_or_heat_provided':False,
+        'native_controller_or_source_angle_admission_inferred':False,
+        'native_tariff_was_assigned_from_probability':False,
+    }
+
+if __name__=='__main__':
+    main()
+    print('EXACT_SCALAR_QUIET_STOP',json.dumps(run_scalar_quiet_stop_math(),sort_keys=True))
+    print('NATIVE_STOP_CONSUMERS',json.dumps(run_native_stop_consumers(),sort_keys=True))
+    print('PASS native98attempt, completecappedCQ/abort, negativeactualduration-source and retained marked waiting information')
+```
+
 ## 8. Reproduction
 
 Run from this directory:

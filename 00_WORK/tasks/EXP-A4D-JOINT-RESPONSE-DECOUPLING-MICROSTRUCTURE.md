@@ -13185,3 +13185,128 @@ incomingbrief861705bytes remainsEXACTprefix SHA256
 9c44ee65ffdefc10cd317b4d0e6bc59db248f309c516d86acec4b2d1fee457a5.
 Onlytwoownedpathschanged. Localproof/structuralchecksarenotremoteCI
 orphysicalGRacceptance;existing#334remainsDraftandunmerged.
+
+### 26 October2026 — scalar-quiet stopping gives a negative executed-WORK source and a safe native future test
+
+Same#334/constitutive/native-programme-v1; base984b4bef. Phase:native
+realization/complete-sourcecomposition. Existingprimary7br570--577
+consumes7bq's missingWORK/controlleroperandand7bp's actualquietcI.
+PureapplicationofOWNEDfirst-event/cap calculus,notsecondBellman/
+controllerproof/newtask/action/nativeSTOPprimitiveorGRpromotion.
+STOPowner15686bytes/75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036.
+TRIZsharedhandoffandstrongpositiveGRconsumerreused,notreproved.
+
+ActualONErecordedZattempt:compact12-wireframeP0,SOURCE1/2,
+CARroles3..6(target4),Spin7/8,old9,archive10/11. SOURCE/P/archive
+blank;DATA/Spin/oldfree. Literal4G74CX20SI=98stages;rawinverse
+4G74CX76SI=154,EXACTownedtuple. AllGphysicalP0,SI(0,7,8),no
+SpinG/CX/old9address. NativeK00=cI,K10=−sPplus,K01=−sPminus,
+K11zero,c=p³,s2ap,quietr=p6,brightu4p3. QuietpreservesUNKNOWN
+DATA/phaseSpin/oldreferenceexactly;noreset/noassumedgeneralJuliaretry.
+
+GenericfuturetestusesACTUALnativeframecompletedI_PxV_DATA,Spin,
+I_SOURCE/records/old,withallrouting/trueVdagcharged. Hhat=VZVdag
+isEXACTinvolutionevenifVapproximatestarget,soquietdistortion0,
+notK*compilererror. Thisisterminalregisteredreadout,notsubstitution
+forcoherentSIGN/uncompute7bj. ArbitraryrawVleavingPentangledexcluded.
+
+RegisteredSTOPisOWNEDruleinstance:readactual4label/time,00continues
+belowcap,01/10stop,11faultretained,cap00abort. NewfreshSOURCE/archives
+eachround,neveroldrecordreuse/DATAreset. CheckerprintsK3table12rows/
+10leavesincludingstructuralzeros/abort. ONLYONE98gateExecutionemitted;
+realnonterminalreadout/conditionalhalt/counter/resourceprice/admission
+remainunchangedobligations. No coherent98KbodyorfreeCONTINUEgate.
+
+CompletecapleavesK_n,b=−s*c^(n−1)P_b,abortc^K I;TPincludesabort.
+T_K=(1−r^K)/u;DATAoutputr^Krho+(1−r^K)PinchHrho,abortstateEXACT
+incomingjointDATA/oldrho. Fullretainedtime/sign/abortdiamondto∞=2r^K.
+NativeET∞=1.059016994...;cap10normalizedtraceerror<1e-10forthismeter,
+notfullprice/root-sourcebound. Allfreshcapacity/source/registermodes
+kept:active2^14*16^K,physical33=33*8192*16^Kbeforestoppedclock.
+ExpectedtimeisNOTclockdimensionorpermissiontodeleteunusedmodes.
+
+ACTUALnegativeWORKmechanism:providedpositivefixedper-executedattempt
+chargeκgivesC_schedule=κT_K,T'_K=−sum_j j*r^(j−1)<0(K>=2).
+Nochargeisnegative;fewerroundsreallyexecute. Nativeattemptinventory
+(4G74CX20SI)*T_K + REALcontroller/readout/closingledger. K3expected
+attempts1.058833710,attemptstages103.76570358,du-source−108.92270564.
+NoCostfromGatecount/cylinderprobabilityidentification.
+
+FulloperatorledgerG_K=C_init+T_K*Catt+(1−r^K)Gbright+r^KWabort+
+Gctrl,K, Gbright=sumP_bW_bP_b;trueTr(DrhoG)+Tr(rhoDG)retained.
+Nooverlapchargesdoublecounted. Generalquietuses(Bdag)^jCattB^j;
+ownedHermitianBchartisitsownspecialcase,noncommutingcontroltested.
+CompletequantumInfoI_K=T_K h(u)+(1−r^K)DeltaS_H;DeltaS= S(PinchHrho)
+−Srho includesallDATA/Spin/old/prep/Hmotion. Time/statusentropyT_Kh(u)
+includesexit/abortatK;sign/quantumstateinPinchHrho. NotstationaryDATA/
+iidreplacement/survivalnormalization;normalizedInfohasnorankfactor.
+
+Uncappedactualquiet/successchargesk0,kB giveC∞=k0r/u+kB+Cctrl,
+I∞=h(u)/u+DeltaS. ell*dP∞/du=−(ell*k0+lnr)/u²+ell*Cctrl',
+withallmovingactualoperandsretained. Nativerp6requiresREALk0=6for
+thatcomponent'sstationaritywithotherreactions0. SixNOTinferredfrom
+probability/relabelledsixFsteps/newreportcode. Capkeepssource
+K*r^(K−1)(P∞−kA),abort/init/controller;noexactfinitecriticalclaim.
+
+OwnedclockmarkapplicationE_K,x=u*x[1−(rx)^K]/(1−rx),abort(rx)^K;
+D_xZ|1=T_K,∞exitIhasnou-sourcebutx<1markrecoveruandrealwaiting
+source. NoBeattyselector/freefilter/originalBookFsubstitution. Stopped
+physicalDirac/cut/heatnotprovided;oldfixedcyclic7biheatCANNOTbeused
+withN=ET. Actualcontroller/work/source/capfieldsremaintobecomposed.
+
+Scopedpositivechoiceconsumer:afterfirstbright,givenmeasurementgoal
+achieved,SAMEHroundspreservecompleteconditionalDATA/oldstateandgain
+onlyh(u)perextraexecutedround. Forboundedpredictablepolicywithout
+freefreshseed,extraACTUALtwo-bitWORDstorage-CQgap
+>=(2−ln2/ell)EL>0ifEL>0. Includesdurationentropy,notplusH(L).
+Taskmustnotrequireextra-time/records;fullrecordlawsarenotequated.
+Charge2notprepaid2Kcapacity;randomseeds/paymentsincludedifused.
+NonnegativeEXTRAfeesstrengthenVALUEonly,notallsource/Bookminimum.
+Nooptimalflag/globalSmin/physicalselectorassumed.
+
+Preciseparentapplication:realnegativeelapsed-WORKoperandwithall
+positivefees,unknown-inputsafeactualnativefuturetest,completecapCQ/
+operatorcost/sourceandownedclockmark. Remainingphysicalsubstitution:
+actualcontroller/sourceadmissionandcanonicalCost/work(k0),stopped
+BookHodge/cut/field/prenormalequations,full42gain/refinement. Primary
+exactnonvacuumGRfamilyunchanged;no newgeometry/root/densitycampaign.
+GR_closed=false,positive_gr/raw216open.
+
+Frozen7brINCLUDINGnext-headingseparator:42435bytes,
+SHA256e4af66de0bf369f4b13beb448b1b438b9db986b0ee4007b2fad788dbb17121fb.
+Embeddedcodeexcludingclosingnewline:25785bytes,
+SHA25683ee489241b4262b896f43c7e78e9c90eaabb1bb0239a65828b19df86febf3c3.
+Pinned7bphelper/nested7bobuilderONLY;nooldmath/fixturesrun.
+Finalsource-onlyreviews/fenceprovenance/affectedintegrationfollow.
+
+Finalsource-onlyACCEPT42435/e4af66de0bf369f4b13beb448b1b438b9db986b0ee4007b2fad788dbb17121fb:
+native_source_application,stationary_root_transfer,price_geometry_bridge.
+Allreadfullproof/code;genericVcompleted-supportclarificationexplicitly
+requiresI_PxV_DATA,SpinandI_SOURCE/records/old. ActualZattemptunchanged.
+No reviewwrites/replays. Physicalcontroller/cost/Book/GRboundariesretained.
+
+Rootfinalcombinedcheckerexit0withordinaryassertionsON:literal98
+attempt/154ownedinverse,allsource/nativeaddressguards;ownedcap3
+ruleinstance12rows/10leaves;NEWcaps1/2/3/5TP/abort,mixedCQentropy/
+source,entangledold-referenceabort,noncommutingorderedcost/source,
+markedwaitingandcap-price-boundarycontrols. Newpostbrightconditional
+old-statecontrolandstrictGoldenstorage-CQboundincluded. No old7bp/
+7bo/full128/root/Lean/corpusorclockcertificate replay. Decimalstage/
+attemptcountsaredisplays,notdecisiontolerances.
+Finalfencecode25785/83ee4892BYTEIDENTICALtoexecutedcode;onlylater
+prosesupportclarification. Actualedited-primaryfence/AST/codehash,
+chaineddefinitions-onlyloader,STOPsourcepinandneGitblobverified.
+No literalglobalcapcontroller/98Kgateword/hugeheatmatrixwasbuilt;
+registration/readout/conditionalruntimeadmissionnotinferredfromtables.
+
+AffectedfinalintegrationPASS:workvalidation,agentprotocol,gravityassembly
+(validtrue;54active/98results/5discharged/22obligations;scientific_
+promotionfalse),repository(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0),whitespace/provenance;
+existingresult-checkpointtemplateconstitutive/native-programme-v1.
+Removing7brrestoresincoming984b4befprimaryBYTEEXACT SHA256
+30a53ff55fe73afe6df9cc2c16919ad06796f7097ba9d15927bf4414231466fc;
+incomingbrief868510bytesremainsEXACTprefix SHA256
+054463542222e4834404d7f81468a0cf537bf1902f47b713fae84dbf4ba9cba0.
+Onlytwoownedpathschanged.Localproof/structuralchecksarenotremoteCI
+orphysicalGRacceptance;existing#334keptDraftandunmerged.
