@@ -1,4 +1,5 @@
 import D0.Geometry.A4DJuliaRecoveryComposition
+import D0.Geometry.A4DSolderMetricCompletion
 import Mathlib.Analysis.Calculus.FDeriv.Linear
 import Mathlib.Analysis.Calculus.Deriv.Add
 import Mathlib.Analysis.Calculus.Deriv.Mul
@@ -18,11 +19,12 @@ transfers the endpoint derivative through the same finite-carrier Julia query
 and chart-selected endpoint readout.
 
 The module proves both pathwise directional recovery and a Fréchet derivative
-on the product of the four Lorentz tangent subspaces. Every declared Lorentz
-tangent has an exponential path through the identity, with properness and its
-endpoint derivative proved in Lean. This does not construct a full
-six-dimensional chart, identify every Lorentz link with these coordinates, or
-establish physical admission or price/source selection.
+on the product of the four Lorentz tangent subspaces. It reuses the shared
+six-dimensional tangent coordinates, so this product has real dimension 24.
+Every declared Lorentz tangent has an exponential path through the identity,
+with properness and its endpoint derivative proved in Lean. This does not
+construct a full six-coordinate chart, identify every Lorentz link with these
+coordinates, or establish physical admission or price/source selection.
 -/
 
 namespace D0.Geometry
@@ -314,34 +316,22 @@ theorem principalFrameJuliaEndpointChartReadout_hasDerivAt_of_jointCoframeAndLor
     α hAlpha hShift 0 r x ((a r).transpose.mulVec x)
   exact hasDerivAt_exp_tangent_transpose_mulVec (a r) x
 
-/-- The linear tangent space at the identity of the role Lorentz group. -/
-def roleLorentzTangentSubmodule : Submodule ℝ (Matrix Role Role ℝ) where
-  carrier := {a | IsRoleLorentzTangent a}
-  zero_mem' := by simp [IsRoleLorentzTangent]
-  add_mem' := by
-    intro a b ha hb
-    change a.transpose * roleLorentzMetric + roleLorentzMetric * a = 0 at ha
-    change b.transpose * roleLorentzMetric + roleLorentzMetric * b = 0 at hb
-    change (a + b).transpose * roleLorentzMetric +
-      roleLorentzMetric * (a + b) = 0
-    rw [Matrix.transpose_add, Matrix.add_mul, Matrix.mul_add]
-    calc
-      (a.transpose * roleLorentzMetric + b.transpose * roleLorentzMetric) +
-          (roleLorentzMetric * a + roleLorentzMetric * b) =
-          (a.transpose * roleLorentzMetric + roleLorentzMetric * a) +
-            (b.transpose * roleLorentzMetric + roleLorentzMetric * b) := by abel
-      _ = 0 := by rw [ha, hb]; simp
-  smul_mem' := by
-    intro c a ha
-    change a.transpose * roleLorentzMetric + roleLorentzMetric * a = 0 at ha
-    change (c • a).transpose * roleLorentzMetric +
-      roleLorentzMetric * (c • a) = 0
-    rw [Matrix.transpose_smul, smul_mul_assoc, mul_smul_comm,
-      ← smul_add, ha]
-    simp
+/-- Compatibility name for the canonical tangent carrier owned by the
+finite solder metric module. The six independent Lorentz coordinates are
+proved there once and reused by this Julia endpoint application. -/
+abbrev roleLorentzTangentSubmodule := RoleLorentzTangent
 
 /-- One tangent generator for each of the four role-indexed endpoint links. -/
 abbrev RoleLorentzTangentParameters := Role → roleLorentzTangentSubmodule
+
+/-- Four independent endpoint-link tangent factors have 24 real coordinates:
+six canonical Lorentz directions for each of the four roles. -/
+theorem roleLorentzTangentParameters_finrank :
+    Module.finrank ℝ RoleLorentzTangentParameters = 24 := by
+  rw [Module.finrank_pi_fintype ℝ]
+  simp only [roleLorentzTangentSubmodule,
+    roleLorentzTangent_finrank, Finset.sum_const, Finset.card_univ, card_role]
+  norm_num
 
 private def roleLorentzTangentCoordinateLinearMap (r : Role) :
     RoleLorentzTangentParameters →ₗ[ℝ] Matrix Role Role ℝ :=
