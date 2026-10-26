@@ -82,6 +82,28 @@ for n in (2,3,4):
                     for x in range(2**n)])
     check(ne.exact_matrix_equal(eff,target),
           "ACTUAL prepared Born effect separates even and odd source parity")
+    # The TRUE complete Book03 feedback is an ACTIVE CUT operator on
+    # EVERY one of the 2^n independent original unknown DATA columns.
+    # Do not normalize its absolute determinant to one scalar mean.
+    compression=inj.T*u*inj
+    expected_c=S.diag(*[(p**3 if x.bit_count()%2==0 else 1)
+                          for x in range(2**n)])
+    check(ne.exact_matrix_equal(compression,expected_c),
+          "original prepared return compression has even p^3 / odd 1")
+    F=S.eye(2**n)-compression.T*compression
+    check(ne.exact_matrix_equal(F,target),
+          "FULL original native G/CX feedback equals 4p^3 even projector")
+    check(ne.exact_matrix_equal(S.eye(2**n)-p**3*S.eye(2**n),
+          (1-p**3)*S.eye(2**n)),
+          "no hidden scalar renormalization on input rank")
+    zeta=S.Rational(1,2**20)
+    determinant=(S.eye(2**n)-zeta*F).det()
+    expected_det=(1-4*zeta*p**3)**(2**(n-1))
+    check(S.simplify(determinant-expected_det)==0,
+          "EXACT original whole-rank native Book survival determinant")
+    check(S.simplify(4*p**3+p**6-1)==0,
+          "positive true Golden involutive f=1-p^6=4p^3")
+
     plain=word(n,False)
     C=ne.word_matrix(plain,max_qubits=n+1,max_expanded_stages=3*n+4)
     plaininj=ne.input_isometry(plain,max_qubits=n+1,max_expanded_stages=3*n+4)
@@ -100,7 +122,10 @@ for n in (2,3,4):
        "literal_input_rank":2**n,
        "n_CX_plain_parity_lower_bound_attained":n,
        "even_Born_bright":"4*p^3",
-       "odd_Born_bright":"0"
+       "odd_Born_bright":"0",
+       "true_book_cut_rank":2**n,
+       "true_feedback_even_multiplicity":2**(n-1),
+       "true_book_J":"-2^(n-1)*log(1-4*zeta*p^3)"
     })
 
 # A pure graph connection-count lower bound, not a D_min/CQ global
