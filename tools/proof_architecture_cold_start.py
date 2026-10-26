@@ -153,7 +153,7 @@ CASES: list[dict[str, Any]] = [
         "queries": [
             "finiteGram_hasFDerivAt finiteGramTangent arbitrary finite matrix frame two sided Frechet derivative",
             "finiteGramTangent_apply H eta Theta transpose Theta eta H transpose Frobenius norm",
-            "j2DetectorMetricPath_hasFDerivAt_flat generic finiteGram derivative through H ↦ 1 + H",
+            "j2DetectorMetricPath_hasFDerivAt_direction j2DetectorMetricPath_hasFDerivAt_flat generic finiteGram derivative through t ↦ 1 + tH and H ↦ 1 + H",
             "производная Фреше отображения Грама на конечных матрицах полный двусторонний касательный оператор",
             "finiteGram_hasFDerivAt metric-provenance crosswalk current D0.Algebra.FiniteGramDerivative",
         ],
@@ -161,15 +161,18 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Algebra/FiniteGramDerivative.lean",
             "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
             "02_REGISTRY/gr_assembly/applications.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_aaae64c2.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_b1fb6bc7.json",
         ],
         "scope_review": (
             "The generic API proves the full finite-matrix Fréchet derivative of "
             "finiteGram at every frame, with both terms HηΘᵀ + ΘηHᵀ and its "
             "Frobenius-norm continuous-linear realization. The J2 flat-frame "
-            "derivative is its specialization through H ↦ 1 + H, and the solder "
-            "field consumer composes that derivative with the finite sitewise "
-            "coframe map. These are finite algebra/calculus results only: the "
+            "derivative is its specialization through H ↦ 1 + H. The J2 "
+            "directional path derivative also composes the generic derivative "
+            "with t ↦ 1 + tH; the exact quadratic remainder remains recorded "
+            "separately. The solder field consumer composes the generic map "
+            "with the finite sitewise coframe map. These are finite "
+            "algebra/calculus results only: the "
             "selected-action-to-carrier map, physical source choice, continuum "
             "variation, and independent C0 acceptance remain open."
         ),
