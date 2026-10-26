@@ -249,7 +249,7 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
         "comparison_scope": {
             "legacy": "gr_assembly.search over the existing assembly result records",
             "current": (
-                "proof_architecture search over structured authorities, ten "
+                "proof_architecture search over structured authorities, five "
                 "bounded text candidates, and exact-path links to existing "
                 "assembly/formal-support records"
             ),

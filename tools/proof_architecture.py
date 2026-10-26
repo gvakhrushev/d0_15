@@ -36,8 +36,9 @@ DERIVED_TEXT_EXCLUDED_PREFIXES = (
     "d0_proof_architecture_formalization_2026-10-24/reports/",
 )
 MAX_STRUCTURED_SEARCH_RESULTS = 5
-MAX_SEARCH_RESULTS = 10
+MAX_SEARCH_RESULTS = 5
 MIN_PIN_VERIFICATION_WINDOW = 18
+VERIFIED_PINNED_SOURCE_BONUS = 0.18
 MAX_SNIPPET = 650
 MAX_FIELD_CHARS = 8000
 MAX_SEARCH_EVIDENCE = 3
@@ -1215,7 +1216,10 @@ def _candidate_record(rel: str, content: str, terms: list[tuple[str, tuple[str, 
         record["source_blob"] = blob
     score = hits / len(terms) + _owner_bonus(rel) + _filename_bonus(rel, terms)
     if origin == "pinned_snapshot":
-        score += 0.03
+        # A verified commit/path/blob with direct matching content is a
+        # primary source surface. Prioritize it for navigation, without
+        # treating the pin as owner validation or semantic acceptance.
+        score += VERIFIED_PINNED_SOURCE_BONUS
     return score, record
 
 

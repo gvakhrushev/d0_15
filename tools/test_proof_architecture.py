@@ -1438,12 +1438,19 @@ class ProofArchitectureTests(unittest.TestCase):
         query = case["queries"][1]
         hits = proof.full_text_search(proof.ROOT, query)
 
+        self.assertEqual(proof.MAX_SEARCH_RESULTS, 5)
         self.assertLessEqual(len(hits), proof.MAX_SEARCH_RESULTS)
-        self.assertTrue(any(
-            cold_start._path_matches(hit["source"], source["path"])
-            and hit.get("direct_content")
-            for hit in hits
-        ))
+        owner_source = next(
+            (hit for hit in hits
+             if cold_start._path_matches(hit["source"], source["path"])),
+            None,
+        )
+        self.assertIsNotNone(owner_source)
+        self.assertTrue(owner_source["direct_content"])
+        self.assertEqual(owner_source["source_origin"], "pinned_snapshot")
+        self.assertEqual(owner_source["pin_status"], "verified")
+        self.assertEqual(owner_source["source_commit"], source["commit"])
+        self.assertEqual(owner_source["source_blob"], source["blob"])
 
     def test_nonvacuum_stencil_cold_start_retrieves_the_compiled_application(self) -> None:
         case = next(
@@ -2071,7 +2078,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-26_midpoint_c3_refactor.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_five_search_cards.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -2148,7 +2155,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-26_midpoint_c3_refactor.json"
+            / "proof_architecture_search_process_comparison_2026-10-26_five_search_cards.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
@@ -2156,6 +2163,8 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertFalse(comparison["worktree_dirty"])
         self.assertRegex(comparison["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertIn("five bounded text candidates",
+                      comparison["comparison_scope"]["current"])
         self.assertEqual(
             comparison["metrics"]["query_count"], len(cold_start.CASES)
         )
@@ -2168,6 +2177,13 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             comparison["metrics"]["current_scoped_queries_with_expected_source"], 7
         )
+        self.assertEqual(
+            comparison["metrics"]["current_serialized_answer_bytes_total"],
+            538400,
+        )
+        self.assertEqual(
+            comparison["metrics"]["current_average_answer_bytes"], 22433.3
+        )
         self.assertTrue(
             comparison["metrics"]["semantic_review_required_for_all_queries"]
         )
@@ -2177,6 +2193,22 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             comparison["metrics"]["current_expected_source_owner_link_count"], 1
+        )
+        julia = next(
+            row for row in comparison["cases"]
+            if row["case_id"] == "julia-query-principal-frame-coframe-recovery"
+        )
+        julia_source = julia["current"]["expected_source_link_details"][0]
+        self.assertTrue(julia_source["candidate_surfaced"])
+        self.assertTrue(julia_source["direct_content"])
+        self.assertEqual(julia_source["pin_status"], "verified")
+        self.assertEqual(
+            julia_source["source_commit"],
+            "fe5cf335da04cac14e50407b03f98b96be17dc52",
+        )
+        self.assertEqual(
+            julia_source["source_blob"],
+            "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
         )
         self.assertEqual(
             comparison["metrics"][
