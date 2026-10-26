@@ -1156,6 +1156,26 @@ def _line_evidence(content: str, terms: list[tuple[str, tuple[str, ...]]],
     return evidence[:20]
 
 
+def _source_header_owner_declarations(content: str) -> list[dict[str, Any]]:
+    """Return only explicitly labelled owner fields from the document header.
+
+    These source-authored statements are useful provenance, but are not
+    assembly ownership records or independent owner validation.
+    """
+    pattern = re.compile(r"^\s*\*\*Existing owner:\*\*\s*(.+?)\s*$", re.IGNORECASE)
+    declarations = []
+    for line_number, line in enumerate(content.splitlines()[:40], start=1):
+        match = pattern.match(line)
+        if match:
+            declarations.append({
+                "line": line_number,
+                "field": "Existing owner",
+                "value": match.group(1),
+                "status": "source_document_declaration_only",
+            })
+    return declarations
+
+
 def _candidate_record(rel: str, content: str, terms: list[tuple[str, tuple[str, ...]]],
                       *, origin: str, source_refs: list[dict[str, Any]] | None = None,
                       commit: str | None = None, blob: str | None = None,
@@ -1186,6 +1206,9 @@ def _candidate_record(rel: str, content: str, terms: list[tuple[str, tuple[str, 
               "matched_term_names": [name for name, present in term_present.items() if present],
               "query_terms": len(terms), "source_origin": origin if direct else "filename_only",
               "direct_content": direct, "evidence_lines": evidence}
+    header_owner_declarations = _source_header_owner_declarations(content)
+    if header_owner_declarations:
+        record["source_header_owner_declarations"] = header_owner_declarations
     if commit:
         record["source_commit"] = commit
     if blob:
@@ -1331,6 +1354,9 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             except OSError:
                 continue
             record["source_sha256"] = hashlib.sha256(source_bytes).hexdigest()
+            header_owner_declarations = _source_header_owner_declarations(content)
+            if header_owner_declarations:
+                record["source_header_owner_declarations"] = header_owner_declarations
             evidence = _line_evidence(content, terms, pattern)
             if evidence:
                 record["evidence_lines"] = evidence
@@ -1608,6 +1634,12 @@ def _search_candidate_summary(item: dict[str, Any],
     for key in ("source_commit", "source_blob"):
         if item.get(key):
             summary[key] = item[key]
+    if item.get("pin_status"):
+        summary["pin_status"] = item["pin_status"]
+    if item.get("source_header_owner_declarations"):
+        summary["source_header_owner_declarations"] = item[
+            "source_header_owner_declarations"
+        ]
     if dataset is not None and item.get("source"):
         summary["declared_source_links"] = _declared_source_links(
             dataset, str(item["source"])

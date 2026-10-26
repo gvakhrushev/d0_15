@@ -154,6 +154,7 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
                     "owners": [],
                     "assembly_results": [],
                     "formal_support_locators": [],
+                    "source_header_owner_declarations": [],
                     "source_refs": [],
                 })
                 continue
@@ -165,6 +166,15 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
                 "owners": source_links.get("owners", []),
                 "assembly_results": source_links.get("assembly_results", []),
                 "formal_support_locators": source_links.get("formal_support_locators", []),
+                "source_header_owner_declarations": candidate.get(
+                    "source_header_owner_declarations", []
+                ),
+                "source_origin": candidate.get("source_origin"),
+                "source_sha256": candidate.get("source_sha256"),
+                "source_commit": candidate.get("source_commit"),
+                "source_blob": candidate.get("source_blob"),
+                "pin_status": candidate.get("pin_status"),
+                "direct_content": candidate.get("direct_content"),
                 "source_refs": candidate.get("source_refs", []),
             })
         expected_sources_without_owner_link = sorted(
@@ -272,6 +282,16 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
             "current_expected_source_owner_link_count": sum(
                 len(row["current"]["expected_source_owner_links"])
                 for row in scoped
+            ),
+            "current_scoped_queries_with_expected_source_header_owner_declaration": sum(
+                any(detail.get("source_header_owner_declarations")
+                    for detail in row["current"]["expected_source_link_details"])
+                for row in scoped
+            ),
+            "current_expected_source_header_owner_declaration_count": sum(
+                len(detail.get("source_header_owner_declarations", []))
+                for row in scoped
+                for detail in row["current"]["expected_source_link_details"]
             ),
             "current_scoped_expected_sources_without_direct_owner_link": sum(
                 len(row["current"]["expected_sources_without_direct_owner_link"])

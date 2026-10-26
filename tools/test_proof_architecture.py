@@ -1038,6 +1038,43 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(unmatched["owner_status"], "no_exact_assembly_owner_link")
         self.assertEqual(unmatched["assembly_results"], [])
 
+    def test_explicit_source_header_owner_stays_separate_from_assembly_owner(self) -> None:
+        data = dataset()
+        source_path = "02_REGISTRY/research/positive-recovery.md"
+        content = (
+            "# Positive recovery\n\n"
+            "Date: 20 October 2026\n"
+            "**Existing owner:** PR #334, `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`\n"
+        )
+        candidate = {
+            "kind": "text-candidate", "key": source_path, "source": source_path,
+            "source_refs": [], "evidence_lines": [],
+            "source_header_owner_declarations":
+                proof._source_header_owner_declarations(content),
+        }
+
+        card = proof._search_candidate_summary(candidate, data)
+
+        self.assertEqual(
+            card["source_header_owner_declarations"],
+            [{
+                "line": 4,
+                "field": "Existing owner",
+                "value": "PR #334, `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`",
+                "status": "source_document_declaration_only",
+            }],
+        )
+        self.assertEqual(
+            card["declared_source_links"]["owner_status"],
+            "no_exact_assembly_owner_link",
+        )
+        self.assertEqual(
+            proof._source_header_owner_declarations(
+                "# A memo\n\nContinuation of existing Draft #334.\n"
+            ),
+            [],
+        )
+
     def test_text_search_finds_russian_content_and_reports_section_line(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)
@@ -1893,6 +1930,49 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             comparison["metrics"]["current_expected_source_owner_link_count"], 1
         )
+        self.assertEqual(
+            comparison["metrics"][
+                "current_scoped_queries_with_expected_source_header_owner_declaration"
+            ],
+            1,
+        )
+        self.assertEqual(
+            comparison["metrics"][
+                "current_expected_source_header_owner_declaration_count"
+            ],
+            1,
+        )
+        positive = next(
+            row for row in comparison["cases"]
+            if row["case_id"] == "positive-nonvacuum-recovery"
+        )
+        nonvacuum_detail = next(
+            detail for detail in positive["current"]["expected_source_link_details"]
+            if detail["source"].endswith(
+                "A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md"
+            )
+        )
+        self.assertEqual(
+            nonvacuum_detail["owner_status"], "no_exact_assembly_owner_link"
+        )
+        self.assertEqual(
+            nonvacuum_detail["source_header_owner_declarations"][0]["line"], 4
+        )
+        self.assertEqual(
+            nonvacuum_detail["source_header_owner_declarations"][0]["status"],
+            "source_document_declaration_only",
+        )
+        self.assertEqual(nonvacuum_detail["source_origin"], "pinned_snapshot")
+        self.assertEqual(nonvacuum_detail["pin_status"], "verified")
+        self.assertEqual(
+            nonvacuum_detail["source_commit"],
+            "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+        )
+        self.assertEqual(
+            nonvacuum_detail["source_blob"],
+            "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+        )
+        self.assertTrue(nonvacuum_detail["source_sha256"])
         lorentz = next(
             row for row in comparison["cases"]
             if row["case_id"] == "proper-lorentz-same-orientation-orbit"
