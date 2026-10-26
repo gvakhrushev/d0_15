@@ -2376,6 +2376,9 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor"
         ]
         self.assertIn("CommSemiring R", generic_intertwiner["elaborated_type"])
+        self.assertIn("DecidableEq V", generic_intertwiner["elaborated_type"])
+        self.assertIn("Fintype N", generic_intertwiner["elaborated_type"])
+        self.assertNotIn("DecidableEq N", generic_intertwiner["elaborated_type"])
         self.assertIn("D0.Algebra.finiteMatrixTensorProduct",
                       generic_intertwiner["proof_dependencies"])
         self.assertFalse(any(
@@ -2394,6 +2397,8 @@ class ProofArchitectureTests(unittest.TestCase):
         consumer_intertwiner = declarations[
             "D0.Matter.partial_trace_commutes_with_shift"
         ]
+        self.assertIn("Fintype N", consumer_intertwiner["elaborated_type"])
+        self.assertNotIn("DecidableEq N", consumer_intertwiner["elaborated_type"])
         self.assertIn(
             "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor",
             consumer_intertwiner["proof_dependencies"],

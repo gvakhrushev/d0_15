@@ -8020,3 +8020,41 @@ The replay finds all sources in **23/23** cases, passes the **24-case**
 benchmark, checks **137** required-source references, and passes the
 source-change versus unrelated-prose impact control. Its full output is pinned
 by SHA-256 `20cf043adcdd3beb8879d2ff846650a6c79289550fa3a8d27e0ceb8931e30c96`.
+
+### Fintype-only partial-trace intertwiner and Matter adapter (26 October 2026)
+
+`finiteMatrixPartialTraceLeft_commutes_rightTensor` and its concrete Matter
+consumer `partial_trace_commutes_with_shift` now require only `[Fintype N]`
+on the retained factor. The left factor still requires `[DecidableEq V]` to
+form its identity matrix. Both statements and their shared compiled
+application remain otherwise unchanged.
+
+Lean source commit `63cf71d707a89e856e2c1dc6b0386725f4c91e99` pins
+`FiniteMatrixPartialTrace.lean` SHA-256
+`f269b5cc668e86066765ddfbef577ee39e3a9ced1f720971c49d95abd9451ec7` and
+`ArchivePartialTrace.lean` SHA-256
+`6a65146ad83ca55600cb3ced5d820048f3fd99d94f6c9baff5629ab5d67b7c08`. The
+algebra module passed **2,947/2,947**, the Matter consumer passed **2,981/2,981**,
+and final `D0.All` passed **4,581/4,581**. Eight declaration inventories use
+Lean-source digest
+`8825140c59c293c9cbb0ef45e8bb22413a7f4e43efc960d85507601fb604b660`, were
+captured at this clean commit, and record `worktree_dirty=false`:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_fintype_only_core.json` | 15/15 | `5c496bd1cc8733fb46288062d60aebfd61e98fe86753ecc83d948922336dc7c5` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_fintype_only_core.json` | 36/36 | `9a4e6e707d296fc321141b768a582d0eb7ad4d94ef58b98e493fb2437232d48c` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_fintype_only_core.json` | 9/9 | `7757cdb2680c500a633b60b2ba84ad84f3f8dffe25a8aa951db5bd9cb31a652e` |
+| `archive_shift_topology_current_declarations_2026-10-26_fintype_only_core.json` | 26/26 | `26a1b073387f08fdfd34d1fe7b4ee7db39b049305fa69ba72cb4677d6c2b4b0b` |
+| `source_port_preparation_tensor_inventory_2026-10-26_fintype_only_core.json` | 73/73 | `609ee712635f77c90910f7dd5dd8264e3bf2ecf80d7ed5622e43aebee51bf791` |
+| `flat_tensor_shared_api_declarations_2026-10-26_fintype_only_core.json` | 4/4 | `4a66860279dbeee066b3869bb50f7f4a696a0dbf9b94dcc2f9967df6b538d794` |
+| `proper_role_lorentz_orbit_declarations_2026-10-26_fintype_only_core.json` | 5/5 | `0c20a5fbb722e233d6b84af451c9ff03af65286e69674be638c567fbd302eb99` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_fintype_only_core.json` | 25/25 | `1355b700f7b2cb091ce1a09e869002a6352a1a4f6d9a4b9c6d2432609c5b5215` |
+
+The current cold-start receipt is
+`proof_architecture_cold_start_summary_2026-10-26_fintype_only_core.json`,
+SHA-256 `530bb253535166b164656e1e811000e2113f5cd9a181313c7a76ca7e6f4d5339`.
+The replay finds all sources in **23/23** cases, passes the **24-case**
+benchmark, checks **137** required-source references, and passes the
+source-change versus unrelated-prose impact control. Its full output is pinned
+by SHA-256 `67472e2b07d4f6d64fc0fde04c5006abc81057110809fceafe5f51593c35b323`.

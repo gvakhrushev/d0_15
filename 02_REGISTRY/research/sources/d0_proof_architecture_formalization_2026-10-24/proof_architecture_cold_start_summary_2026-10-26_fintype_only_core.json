@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "605a9751c24efd613390fe1edd7ba291ea76f2ab",
+  "snapshot_commit": "63cf71d707a89e856e2c1dc6b0386725f4c91e99",
   "worktree_dirty": true,
   "search_cases_found_all_sources": 23,
   "search_cases_total": 23,
@@ -23,11 +23,11 @@
   },
   "semantic_scope_review_is_manual": true,
   "replay": {
-    "source_commit": "605a9751c24efd613390fe1edd7ba291ea76f2ab",
+    "source_commit": "63cf71d707a89e856e2c1dc6b0386725f4c91e99",
     "command": "python3 tools/proof_architecture_cold_start.py",
     "runner_sha256": "4051de70b249f1e26b3f47ca1f897a73f371b8c61a1fe246e2a89c3c5210105a",
     "search_engine_sha256": "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
-    "full_output_sha256": "20cf043adcdd3beb8879d2ff846650a6c79289550fa3a8d27e0ceb8931e30c96"
+    "full_output_sha256": "67472e2b07d4f6d64fc0fde04c5006abc81057110809fceafe5f51593c35b323"
   },
   "cases": [
     {

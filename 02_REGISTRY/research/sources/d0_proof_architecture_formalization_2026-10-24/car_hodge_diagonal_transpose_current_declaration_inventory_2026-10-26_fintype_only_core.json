@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "605a9751c24efd613390fe1edd7ba291ea76f2ab",
+  "snapshot_commit": "63cf71d707a89e856e2c1dc6b0386725f4c91e99",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "cc3e93226fe796e0bf9773a7e2f23e26929db6617a6ee96d523639648a51c47e",
+  "lean_source_digest": "8825140c59c293c9cbb0ef45e8bb22413a7f4e43efc960d85507601fb604b660",
   "collector_sha256": "a172a51bcdb8f06389962e8ff8e63f3228275999793c4daf7a7a9c9aaefee5f5",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -5093,12 +5093,6 @@
           "type": "Fintype N"
         },
         {
-          "binder_info": "Lean.BinderInfo.instImplicit",
-          "is_proposition": false,
-          "name": "inst._@.D0.Matter.ArchivePartialTrace.3928026421._hygCtx._hyg.13",
-          "type": "(a b : N) → Decidable (a = b)"
-        },
-        {
           "binder_info": "Lean.BinderInfo.default",
           "is_proposition": false,
           "name": "M",
@@ -5141,7 +5135,7 @@
           }
         }
       },
-      "elaborated_type": "∀ {V N : Type} [inst : Fintype V] [inst_1 : DecidableEq V] [inst_2 : Fintype N] [DecidableEq N]\n  (M : Matrix (V × N) (V × N) ℝ) (C_N : Matrix N N ℝ),\n  M * D0.Matter.kronecker_I_C C_N = D0.Matter.kronecker_I_C C_N * M →\n    D0.Matter.partialTraceV M * C_N = C_N * D0.Matter.partialTraceV M",
+      "elaborated_type": "∀ {V N : Type} [inst : Fintype V] [inst_1 : DecidableEq V] [inst_2 : Fintype N] (M : Matrix (V × N) (V × N) ℝ)\n  (C_N : Matrix N N ℝ),\n  M * D0.Matter.kronecker_I_C C_N = D0.Matter.kronecker_I_C C_N * M →\n    D0.Matter.partialTraceV M * C_N = C_N * D0.Matter.partialTraceV M",
       "exists": true,
       "internal_name": false,
       "module": "D0.Matter.ArchivePartialTrace",
