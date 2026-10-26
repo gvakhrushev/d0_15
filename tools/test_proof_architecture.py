@@ -1754,8 +1754,12 @@ class ProofArchitectureTests(unittest.TestCase):
         joint_hits = proof.full_text_search(proof.ROOT, joint_query, limit=3)
         self.assertTrue(joint_hits)
         self.assertEqual(
-            joint_hits[0]["source"],
-            "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+            [row["source"] for row in joint_hits[:2]],
+            [
+                "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+                "julia_same_query_coframe_endpoint_recovery_declarations_2026-10-26.json",
+            ],
         )
         self.assertIn(15, source_pin["scope_query_indexes"])
         self.assertIn(16, source_pin["scope_query_indexes"])

@@ -488,6 +488,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_endpoint_inventory_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_joint_recovery_inventory_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_same_query_coframe_endpoint_recovery_declarations_2026-10-26.json",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",

@@ -8264,3 +8264,16 @@ composition makes two already-owned readouts available as one application on
 the same query constructor; it does not establish a 24-direction Lorentz-link
 derivative, the joint all-jet inverse or variational pullback, physical query
 admission, complete price/source selection, GR closure, or C0 acceptance.
+
+The exact declaration was extracted through public import `D0.All` at clean
+source commit `22d0cf2be32e2a72c384021113f661a933e7c2c9`, with
+`worktree_dirty=false` and Lean-source digest
+`45448fb37c1006b23ec486d5fd7fdaa577da45cf21d9a2c27be45faf9680ba1f` under
+`leanprover/lean4:v4.30.0`.
+The one-declaration inventory, including its elaborated type, dependencies
+and axiom footprint, is
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_same_query_coframe_endpoint_recovery_declarations_2026-10-26.json`,
+SHA-256 `eebbe3413fea702f29acaf757baf24ff30fb48a489ae87e70f330342d63802be`.
+Its inherited axiom footprint includes `Classical.choice`, `Quot.sound`,
+`propext`, and the private `archiveCreatorPermSign` native-decision axiom from
+the existing CAR creator representation; this declaration is not axiom-free.
