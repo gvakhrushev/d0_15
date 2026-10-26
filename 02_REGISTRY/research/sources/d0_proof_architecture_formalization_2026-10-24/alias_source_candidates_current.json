@@ -1,6 +1,6 @@
 {
   "schema": "d0-alias-source-candidate-view-v1",
-  "snapshot_commit": "647a0fbb6d6aa9005abd14863522c58d0863d5d2",
+  "snapshot_commit": "b87d37693adf7c8bade716d20b82f898efa0dfd3",
   "worktree_dirty": false,
   "alias_registry_sha256": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
   "claim_registry_sha256": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
@@ -1140,8 +1140,8 @@
       },
       "resolution_status": "existing_line_anchor_without_label_text",
       "locator_line_contains_alias_id": false,
-      "first_alias_occurrence_line_in_designated_book": 2548,
-      "alias_occurrence_count_in_designated_book": 2,
+      "first_alias_occurrence_line_in_designated_book": 2553,
+      "alias_occurrence_count_in_designated_book": 1,
       "locator_is_first_alias_occurrence_in_designated_book": false,
       "locator_line_text": ""
     },
