@@ -8660,5 +8660,20 @@ SHA-256 `09641471b75f6769ccd7ad30f29417b05332e260b220904568a85d89b7c57415`, and
 inventory SHA-256
 `bece356e44cb92045e217872298ac9ca2dc157f524c42e7b09e9c9ea69caed91` at
 `sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json`.
-A clean cold-start retrieval receipt for this application is recorded in the
-following checkpoint.
+The clean cold-start replay ran at commit
+`cca37bf75de14b7cfd109f7dd19a7901480e0d20` with
+`worktree_dirty=false`. All **24/24** search cases found their required sources
+(**153** source references); the **25-case** benchmark and exact-source-vs-
+unrelated-prose impact regression passed. The Julia case found all **8/8**
+required sources across **14** queries. The exact Fréchet API query ranked the
+Lean module first; the inventory query ranked this artifact, the module, and
+the compiled inventory first through third. The 8,542,419-byte full output has
+SHA-256
+`2a14dddfef5ea62596e7a7a00de8cbc9843f1a07e9ce369182fe0579ce1b7573` and is
+kept outside Git. The compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_joint_coframe_lorentz_frechet_derivative.json`,
+SHA-256
+`e4e2503f72909d9e7c10e604a9c0b61d89e39353bd355598ffb123a7f3def395`.
+This validates retrieval and provenance for that clean snapshot; semantic
+scope review remains manual, and the physical and composition limits above
+remain open.
