@@ -1351,7 +1351,7 @@ class ProofArchitectureTests(unittest.TestCase):
         ), "shared Gram-orbit query must surface its algebra API directly")
         self.assertTrue(any(
             hit.get("source") ==
-                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_frechet.json"
+                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json"
             and hit.get("direct_content")
             for hit in exact_hits
         ), "dressed-transport query must surface its compiled application inventory")
@@ -1891,7 +1891,19 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(joint_frechet["declaration_kind"], "theorem")
         self.assertIn("Matrix D0.Role D0.Role ℝ", joint_frechet["elaborated_type"])
-        self.assertIn("D0.Geometry.RolePair → ℝ", joint_frechet["elaborated_type"])
+        joint_coordinates = joint_frechet_declarations[
+            "D0.Geometry.principalFrameJuliaJointCoframeEndpointReadoutInCoordinates"
+        ]
+        self.assertIn("D0.Geometry.RolePair → ℝ", joint_coordinates["elaborated_type"])
+        joint_differential_apply = joint_frechet_declarations[
+            "D0.Geometry.principalFrameJuliaJointCoframeEndpointFDerivInCoordinates_apply"
+        ]
+        self.assertIn("D0.Geometry.RolePair → ℝ", joint_differential_apply["elaborated_type"])
+        self.assertIn("(H, fun r =>", joint_differential_apply["elaborated_type"])
+        self.assertIn(
+            "D0.Geometry.rolePairsEquivLorentzTangent",
+            joint_differential_apply["proof_dependencies"],
+        )
         self.assertIn(
             "D0.Geometry.principalFrameJuliaQueryFamily_recoveredInverseCoframe",
             joint_frechet["proof_dependencies"],

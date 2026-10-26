@@ -8965,3 +8965,65 @@ conditions, not a full 40-dimensional Fréchet theorem or a local chart covering
 the whole Lorentz group. It does not connect every determinant-one link to the
 identity, establish physical price selection, or close GR; those application
 and physical-selection obligations remain open.
+
+### Local joint coframe and Lorentz-tangent Fréchet derivative (26 October 2026)
+
+The new theorem
+`principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt`
+proves the local Fréchet derivative of the paired Julia readout on
+`Matrix Role Role ℝ × (Role → RolePair → ℝ)`: 16 coframe entries plus the 24
+canonical proper-Lorentz tangent coordinates. For a fixed `IsRoleLorentz Γ`,
+fixed endpoint vector `x`, and positive radius around `F₀`, it requires the
+normalized-covector and nonzero-shift conditions at every coframe in that
+neighborhood. It returns the product differential
+`(H, q) ↦ (H, fun r => (rolePairsEquivLorentzTangent (q r)).transpose.mulVec x)`.
+
+The proof combines exact Eq. (30a) recovery
+`principalFrameJuliaQueryFamily_recoveredInverseCoframe` with the exact
+Eq. (27)/(28) endpoint readout identity and the existing coordinate Fréchet
+derivative. The covector section may depend arbitrarily on the coframe; its
+differentiability is not assumed because the exact readout identity reduces
+the endpoint component locally to the exponential Lorentz action. The chart
+conditions remain explicit across the full coframe neighborhood.
+
+This closes the 40-coordinate differential of this paired readout map under
+those local chart assumptions. It does not vary the two matter coordinates,
+differentiate a selected Book/action or full physical source, select a price or
+physical execution, cover the whole proper-Lorentz group, or close GR. The
+compiled transitive axiom set is pinned: it contains `Classical.choice`,
+`Quot.sound`, `propext`, and the existing private
+`archiveCreatorPermSign._native.native_decide.ax_1_1` dependency; this change
+adds no explicit axiom or admitted proof.
+
+The focused Lean build passed **3216/3216** targets. The compiled current
+inventory records **11/11** requested declarations at clean Lean snapshot
+`6b585f2e9267c81582c2b5a6382a15db4bdce9c8`, Lean-source digest
+`c392cc424e7ca85b52caa0aa436af8006fe151bb802ebee07029f9a3f1b21613`, and
+SHA-256 `389e9154219e5c189c924fc9139bbd1ca2de9f3e9c69735468347ffa84c9bb4a`:
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26.json`.
+The seven shared compiled inventories were refreshed from the same clean Lean
+snapshot and source digest:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `archive_shift_topology_current_declarations_2026-10-26_lorentz_tangent_joint_coframe_frechet.json` | 26/26 | `2b1d90b05641aa00d0d6a03beaf2397d41bbf12f91fbe0ce694a2b5c34f12449` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_joint_coframe_frechet.json` | 36/36 | `00bf69d5509bb4e1417e9386546bef955946384ef2f9c50df6f11fb668c8ffe7` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_frechet.json` | 25/25 | `d0f2a0a0a531f8b8cab102181da15d1802cd146d570424677fa5d6d1017d4513` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_lorentz_tangent_joint_coframe_frechet.json` | 9/9 | `1d72f6f12139ebee63f34b407514907073ae599cb1c80ffad93b25a7fad4be16` |
+| `flat_tensor_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_frechet.json` | 4/4 | `61f30ae2278dcd8341b8ca01a4a89f2dc0d44920a4e95fd4da126b33e32d6c46` |
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_lorentz_tangent_joint_coframe_frechet.json` | 15/15 | `365ec158e2f0f1fed49e030754c73cf0e940a9bd81c252a305c25aaa3dcf55c8` |
+| `source_port_preparation_tensor_inventory_2026-10-26_lorentz_tangent_joint_coframe_frechet.json` | 73/73 | `afc9a8f4cfb2bd358a4d31ca2c7bf037dfa1f75a52b17bd01b314f0c18a6770d` |
+
+The final cold-start ran at clean snapshot
+`fb5622b52548bf4c9a6ef0e84c44e66a507acc00`: **24/24** cases found all **157**
+required references and the **25-case** benchmark passed. The labelled Julia
+case now has **17** queries and finds all **12/12** references. The exact local
+Fréchet query ranks its compiled inventory third and the Lean module fifth in
+the top 18 results. The **8,848,699-byte** full output has SHA-256
+`19c966d4af0f08561f51622032483b3fa0244ae7e2590104d2ada08447959159` and is
+kept outside Git. The compact summary is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_joint_coframe_frechet.json`,
+SHA-256 `4d7a9e88fd52a52490e42c51340c1ddaa33b665525fca39bc0d926d080e89290`;
+the query-level receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_joint_coframe_local_frechet.json`,
+SHA-256 `2ffe157553341b8ac326a6727bfbef4c619f96790ee52e730acf2dadde7187d6`.
