@@ -8901,6 +8901,24 @@ composition obligations remain open.
 All **63/63** proof-architecture tests passed against this compiled inventory
 and the coordinate-chart cold-start summary.
 
+### Published PR CI checkpoint for the local joint Fréchet slice (26 October 2026)
+
+At published head `eb13a1c12b0594d75179f3e523d0660227377d00`, GitHub Draft
+workflow run `40284914786` (`D0 Lean build`) completed with job conclusion
+`success`, but its decision step skipped both `Build release proof closure`
+and `Compile native checkpoint capsules`. This is a successful Draft gate,
+not a remote Lean compilation receipt. The actual compilation evidence for
+this slice remains the local focused module build (**3,216/3,216**) and the
+local public-import `D0.All` build (**4,585/4,585**) recorded above.
+
+Draft workflow run `40284914941` (`D0 guards`) completed successfully. Its
+structural, claim, metadata, source-freshness, and fast-tooling steps passed;
+the isolated research-certificate replay, registered-certificate replay, and
+long-running Bartholdi certificate were skipped by the Draft path. The guard
+job's successful result therefore does not imply those certificate replays
+ran on this head. The task remains Draft/IN_PROGRESS; no physical-selection,
+complete-price, independent C0-acceptance, or GR-closure premise is discharged.
+
 ### Joint coframe and Lorentz-tangent Julia path derivative (26 October 2026)
 
 The next pathwise application now pairs the exact Eq. (30a) inverse-coframe
