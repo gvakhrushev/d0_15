@@ -1464,8 +1464,12 @@ class ProofArchitectureTests(unittest.TestCase):
                             for query in case["queries"]))
         self.assertTrue(any("twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum" in query
                             for query in case["queries"]))
+        self.assertTrue(any("finiteMatterMidpointHistory_error_le_refinementBound" in query
+                            for query in case["queries"]))
         self.assertIn(module, case["required_refs"])
         self.assertIn("all 16+24+2 Euler rows", case["scope_review"])
+        self.assertIn("does not prove that local estimate from C^3 regularity",
+                      case["scope_review"])
         self.assertIn("physical native Book/clock/source selection remain separate and open",
                       case["scope_review"])
 
@@ -1487,12 +1491,14 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "nonvacuum_brinkmann_stencil_midpoint_history_declarations_2026-10-26.json"
+            / "nonvacuum_brinkmann_stencil_midpoint_refinement_declarations_2026-10-26.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
         self.assertEqual(inventory["public_import_root"], "D0.All")
         self.assertFalse(inventory["worktree_dirty"])
+        self.assertEqual(inventory["snapshot_commit"],
+                         "d27cafffe9592416556c9f5eb4bd069a355dca44")
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
         declarations = {row["name"]: row for row in inventory["declarations"]}
         module_name = "D0.Geometry.NonvacuumBrinkmannStencil"
@@ -1525,6 +1531,31 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn("h ≠ 0", sourced["elaborated_type"])
 
+        refinement_declarations = {
+            "D0.Geometry.finiteMatterMidpointLocalDefect",
+            "D0.Geometry.finiteMatterMidpointHistory_error_eq_localDefectSum",
+            "D0.Geometry.finiteMatterMidpointHistory_error_abs_le_localDefectSum",
+            "D0.Geometry.finiteMatterMidpointHistory_error_abs_le_localDefectBound",
+            "D0.Geometry.finiteMatterMidpointHistory_error_le_refinementBound",
+        }
+        self.assertTrue(refinement_declarations.issubset(declarations))
+        for name in refinement_declarations:
+            row = declarations[name]
+            self.assertEqual(row["module"], module_name)
+            self.assertEqual(set(row["axioms"]), standard_axioms)
+            self.assertEqual(row["source_path"], module)
+            self.assertGreater(row["declaration_ranges"]["declaration"]["start"]["line"], 0)
+        refinement = declarations[
+            "D0.Geometry.finiteMatterMidpointHistory_error_le_refinementBound"
+        ]
+        self.assertIn(
+            "D0.Geometry.finiteMatterMidpointHistory_error_abs_le_localDefectBound",
+            refinement["proof_dependencies"],
+        )
+        self.assertIn("∀ n ≤ N", refinement["elaborated_type"])
+        self.assertIn("M * h ^ 3 / 24", refinement["elaborated_type"])
+        self.assertIn("duration * M * h ^ 2 / 24", refinement["elaborated_type"])
+
         history_inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
@@ -1533,7 +1564,10 @@ class ProofArchitectureTests(unittest.TestCase):
         history_inventory = json.loads(history_inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(history_inventory["schema"], "d0-lean-declaration-inventory-v1")
         self.assertEqual(history_inventory["public_import_root"], "D0.All")
-        self.assertEqual(history_inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(history_inventory["snapshot_commit"],
+                         "82c617ae0c9ce120730819f68f7a80e76c9473eb")
+        self.assertEqual(history_inventory["lean_source_digest"],
+                         "6c73bc54dfdcbe972a58bdd615c173c2bf8cf051a3c394a57120a2112e664644")
         history_declarations = {row["name"]: row for row in history_inventory["declarations"]}
         required_history_declarations = {
             "D0.Geometry.finiteMatterMidpointHistory",
@@ -1902,7 +1936,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-26_midpoint_history.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_midpoint_refinement.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -1928,6 +1962,12 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(labelled["query_count"], 18)
         self.assertEqual(labelled["required_source_count"], 13)
+        positive = next(
+            row for row in summary["cases"]
+            if row["id"] == "positive-nonvacuum-recovery"
+        )
+        self.assertEqual(positive["query_count"], 8)
+        self.assertEqual(positive["required_source_count"], 3)
         proper = next(
             row for row in summary["cases"]
             if row["id"] == "proper-lorentz-same-orientation-orbit"
@@ -1973,7 +2013,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json"
+            / "proof_architecture_search_process_comparison_2026-10-26_midpoint_refinement.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(

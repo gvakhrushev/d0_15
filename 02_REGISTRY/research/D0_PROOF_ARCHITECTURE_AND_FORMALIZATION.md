@@ -9339,3 +9339,48 @@ Semantic owner correctness, full hypothesis preservation and whether new
 mathematics is needed still require manual review. These are retrieval checks,
 not physical admission or scientific acceptance. The receipts remain at the
 two report paths linked above.
+
+### Composed midpoint refinement error from local defects (26 October 2026)
+
+The chronological matter history now has an exact componentwise error
+decomposition against an arbitrary exact sample sequence. For each component,
+the history error at node `n` equals the sum of the signed local defects
+
+```text
+h * rate_k - (Psi_(k+1) - Psi_k),  k < n.
+```
+
+The compiled Lean theorem `finiteMatterMidpointHistory_error_eq_localDefectSum`
+proves this identity without smoothness assumptions. Its absolute-value
+corollaries show that the accumulated error is bounded by the sum of local
+absolute defects. If each component's per-cell defect is at most
+`M * h^3 / 24`, `h ≥ 0`, `M ≥ 0`, and the interval length is `N * h`, then
+`finiteMatterMidpointHistory_error_le_refinementBound` proves for both
+components and every node `n ≤ N` the uniform bound
+
+```text
+|Psi_h(n) - Psi(n)| ≤ |I| * M * h^2 / 24.
+```
+
+This formalizes the finite accumulation step in the source's Eq. (24). The
+rate sequence is still an explicit input, and the local `M * h^3 / 24` bound
+is a hypothesis: the Lean module does not yet derive it from the source's
+`C^3` regularity statement. The result is componentwise; no equal-constant
+Euclidean vector norm estimate is claimed. It also does not select the native
+CAR preparation, the original 40→3→1 Cartan variation, the 16+24+2 Euler
+rows, or the physical Book/clock/source.
+
+The changed module passes the narrow build (**2,946/2,946** jobs) and the
+public-import `D0.All` build (**4,585/4,585** jobs) with Lean 4.30.0. Exact
+source snapshot `d27cafffe9592416556c9f5eb4bd069a355dca44` is clean; the module
+digest is `369d1159021853c3ec8726a1b9c32518dfb288a0238fdd43440f31df7c4b33e5`.
+The compiled `D0.All` inventory records 39 declarations owned by the module,
+including generated auxiliaries; all five new source declarations have the
+same standard axiom footprint `{Classical.choice, Quot.sound, propext}`.
+Inventory:
+[`nonvacuum_brinkmann_stencil_midpoint_refinement_declarations_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_refinement_declarations_2026-10-26.json)
+(SHA-256 `2a3838ff0055d054e3e584254489b62f23c3a26079236f99d94ad473a9549a6f`).
+The prior 23-declaration receipt remains pinned to its original clean source
+snapshot and is retained as historical evidence rather than refreshed in
+place. The cold-start case now targets this current inventory and theorem;
+its refreshed replay receipt is recorded below after replay.
