@@ -9201,6 +9201,17 @@ the exact endpoint law
 Ψ_n = Ψ_0 + h * ∑_{k < n} rate_k.
 ```
 
+The compiled theorem `twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum`
+also proves the finite-horizon identity
+
+```text
+∑_{k < n} ||(Ψ_(k+1) - Ψ_k)/h||² = ∑_{k < n} ||rate_k||²,
+```
+
+for `h ≠ 0`, by composing the per-step history theorem. It identifies the
+actual accumulated record-gradient energy with the same sequence of rate
+energies; it does not identify a physical Cost/Info price.
+
 The profile `finiteTimeNonvacuumBrinkmannProfile` uses that same step rate's
 squared norm at each site. The compiled theorem
 `finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm` composes the exact
@@ -9220,10 +9231,10 @@ an independently supplied energy value.
 
 The narrow module build passed **2,946/2,946** jobs and the public-import
 `D0.All` build passed **4,585/4,585** jobs with Lean 4.30.0. The Lean-source
-digest is `cfcca7bb045aaa6e2d4d92edec2947e462d7b565d78e69c04e4bf546c848b717`.
+digest is `6c73bc54dfdcbe972a58bdd615c173c2bf8cf051a3c394a57120a2112e664644`.
 The source remains `D0.Geometry.NonvacuumBrinkmannStencil` under its existing
 explicit-support entry in `formal_support.csv`. A targeted compiled inventory
-resolves the module's **22/22** requested declarations, including seven
+resolves the module's **23/23** requested declarations, including eight
 chronological-history declarations, from one `D0.All` environment. The shared Julia,
 finite-Gram, CAR/Hodge, partial-trace, topology and source-preparation
 inventories remain pinned to their earlier clean source snapshot
@@ -9232,11 +9243,11 @@ inventories remain pinned to their earlier clean source snapshot
 remain historical evidence and are not relabelled as current after this
 unrelated module change. The new target inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_history_declarations_2026-10-26.json`.
-It resolves **22/22** declarations from clean source snapshot
-`687992542af28b57d7b18020fe9c9448438a9ac1` with source digest
-`cfcca7bb045aaa6e2d4d92edec2947e462d7b565d78e69c04e4bf546c848b717`, Lean
+It resolves **23/23** declarations from clean source snapshot
+`82c617ae0c9ce120730819f68f7a80e76c9473eb` with source digest
+`6c73bc54dfdcbe972a58bdd615c173c2bf8cf051a3c394a57120a2112e664644`, Lean
 4.30.0, and `worktree_dirty=false`; its SHA-256 is
-`27110cb4fcce1d5d85364831ab371a15059bc8192fc66923cb5aeab4a6374cb9`.
+`497421c721198d9f3d63f51ac66670d45fd57ef07ccb836ae639495a09079c84`.
 
 This extends only the already formalized finite stencil/midpoint component.
 It does not formalize the original CAR construction, the unrestricted 40→3→1

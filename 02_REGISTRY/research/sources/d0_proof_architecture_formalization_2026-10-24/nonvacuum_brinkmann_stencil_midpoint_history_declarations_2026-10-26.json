@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "687992542af28b57d7b18020fe9c9448438a9ac1",
+  "snapshot_commit": "82c617ae0c9ce120730819f68f7a80e76c9473eb",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "cfcca7bb045aaa6e2d4d92edec2947e462d7b565d78e69c04e4bf546c848b717",
-  "collector_sha256": "78e5f02d98dc99535e49d997ad504fd829274549e0ea43c9fc4b5b9f3bd9c302",
+  "lean_source_digest": "6c73bc54dfdcbe972a58bdd615c173c2bf8cf051a3c394a57120a2112e664644",
+  "collector_sha256": "202769b59f90eac0cbbc09f530436c3a7b8e31a7633b7daaa5cc1d730b195ce7",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": false,
@@ -31,7 +31,8 @@
       "D0.Geometry.twoComponentMatterNormSq_midpointHistoryGradient_eq_rate",
       "D0.Geometry.finiteTimeNonvacuumBrinkmannProfile",
       "D0.Geometry.finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm",
-      "D0.Geometry.finiteMatterMidpointHistory_eq_base_add_rateSum"
+      "D0.Geometry.finiteMatterMidpointHistory_eq_base_add_rateSum",
+      "D0.Geometry.twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum"
     ]
   },
   "declarations": [
@@ -2552,21 +2553,21 @@
         "declaration": {
           "end": {
             "column": 35,
-            "line": 187
+            "line": 202
           },
           "start": {
             "column": 0,
-            "line": 182
+            "line": 197
           }
         },
         "selection": {
           "end": {
             "column": 39,
-            "line": 183
+            "line": 198
           },
           "start": {
             "column": 4,
-            "line": 183
+            "line": 198
           }
         }
       },
@@ -2679,21 +2680,21 @@
         "declaration": {
           "end": {
             "column": 21,
-            "line": 209
+            "line": 224
           },
           "start": {
             "column": 0,
-            "line": 189
+            "line": 204
           }
         },
         "selection": {
           "end": {
             "column": 64,
-            "line": 194
+            "line": 209
           },
           "start": {
             "column": 8,
-            "line": 194
+            "line": 209
           }
         }
       },
@@ -2923,6 +2924,120 @@
         "Real.instMul",
         "instHAdd",
         "instHMul",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "ℕ → Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "∑ k ∈ Finset.range n,\n    D0.Geometry.twoComponentMatterNormSq\n      (D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base k)\n        (D0.Geometry.finiteMatterMidpointHistory h rate base (k + 1))) =\n  ∑ k ∈ Finset.range n, D0.Geometry.twoComponentMatterNormSq (rate k)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 20,
+            "line": 195
+          },
+          "start": {
+            "column": 0,
+            "line": 182
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 68,
+            "line": 183
+          },
+          "start": {
+            "column": 8,
+            "line": 183
+          }
+        }
+      },
+      "elaborated_type": "∀ (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ) (n : ℕ),\n  h ≠ 0 →\n    ∑ k ∈ Finset.range n,\n        D0.Geometry.twoComponentMatterNormSq\n          (D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base k)\n            (D0.Geometry.finiteMatterMidpointHistory h rate base (k + 1))) =\n      ∑ k ∈ Finset.range n, D0.Geometry.twoComponentMatterNormSq (rate k)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum",
+      "proof_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "D0.Geometry.twoComponentMatterNormSq_midpointHistoryGradient_eq_rate",
+        "Fin",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.range",
+        "Finset.sum_congr",
+        "HAdd.hAdd",
+        "Membership.mem",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instZero",
+        "SetLike.instMembership",
+        "Zero.toOfNat0",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "Eq",
+        "Fin",
+        "Finset.range",
+        "Finset.sum",
+        "HAdd.hAdd",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instAddNat",
+        "instHAdd",
         "instOfNatNat"
       ],
       "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
