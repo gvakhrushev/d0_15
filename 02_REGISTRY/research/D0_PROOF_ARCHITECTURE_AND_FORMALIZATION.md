@@ -8498,3 +8498,19 @@ simultaneously, or establish the source's full joint `D R D Φ = I` and
 variational pullback (31). Physical endpoint/query admission, complete
 price/source selection, #334 acceptance, `GR_closed`, and independent C0
 acceptance remain open.
+
+The clean cold-start replay ran at published commit
+`d2714990b2b587d320ec37acb24bdc36a296a5e2` with
+`worktree_dirty=false`. All **24/24** search cases found every required
+source (**150** source references total), and the **25-case** benchmark and
+source-vs-unrelated-prose impact regression passed. The Julia case found all
+**5/5** required sources across eight queries. Its exact path-derivative API
+query ranked this artifact first and
+`A4DJuliaLinkPathDifferential.lean` second; the compiled declaration inventory
+was also found (candidate rank 6). The 8,343,686-byte full output has SHA-256
+`0bf8302001774603bc41a4e97ed763078b4d56e9ce5683d2f0ee1075eb35c47d` and is
+kept outside Git. The compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_link_path_derivative.json`,
+SHA-256 `8ee186c72edc8f755c7784a893d4634c19690e682deb247fa5dc8ea9178ba066`.
+This is retrieval evidence only; semantic scope review remains manual, and
+the physical and composition limits above are unchanged.
