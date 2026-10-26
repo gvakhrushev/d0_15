@@ -14467,8 +14467,8 @@ target brings its computational-blank/protected-input cut or its own paid
 encoder; the port is restored on ALL columns and routing is counted in N_t.
 The final text also retains the supplied differentiable-family / fixed-clock
 hypothesis. No checker input or result changed after its final run.
-Final whole7cc15749bytes SHA256
-dfbf5990a9a763c5ed46159843047610e995b22bb6eeea11bb81fde158242f28.
+Final canonical-LF whole7cc15730bytes SHA256
+7ea5d54ed92e35c2764cd7e6dcae5e6d63f10d0a3a08e8cf10734a4811f70687.
 This is source review, not independent assembly acceptance.
 
 Affected final validation PASS: validate_work.py, validate_agent_protocol.py,
@@ -14480,3 +14480,9 @@ restores the incoming primary exactly, SHA256
 197d0bf8f64daa4ff09e0d54e8488a89f1912111595e30d6a0965cb9dbb72a71.
 The incoming brief is preserved as an exact prefix. Only the two existing
 owned paths change. Publication and remote blob verification follow.
+
+Publication normalization: the Windows receipt had CRLF lines while the
+repository index requires LF. Raw observed receipt hash above is retained;
+its identical-text embedded LF form has SHA256 85271b0eacc51cd4f6115c67c4d0a737bc9d2f29cc5345871862f66a18f09d6c.
+Only those19 line endings and this provenance note changed. No proof or
+checker input/result changed; no mathematical replay was required.
