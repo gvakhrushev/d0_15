@@ -1729,6 +1729,19 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("composes the exact right-link transport to identity", scope)
         self.assertIn("identity derivative", scope)
         self.assertIn("24 link jets", scope)
+        exact_query = next(
+            query for query in case["queries"]
+            if "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt" in query
+        )
+        hits = proof.full_text_search(proof.ROOT, exact_query, limit=3)
+        self.assertEqual(
+            [row["source"] for row in hits[:2]],
+            [
+                "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+                "julia_principal_frame_fixed_link_recovered_derivative_declarations_2026-10-26.json",
+            ],
+        )
         self.assertIn(15, source_pin["scope_query_indexes"])
         self.assertNotIn(14, source_pin["scope_query_indexes"])
         self.assertIn("IsRoleLorentz Λ", scope)

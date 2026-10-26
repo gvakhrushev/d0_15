@@ -479,7 +479,7 @@ CASES: list[dict[str, Any]] = [
             "proper row action Lorentz endpoint det one CAR Julia recovery adapter",
             "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz Eq27 Eq28",
             "правый Lorentz endpoint одновременно CAR Eq 27 и query Eq 28 один recovered endpoint",
-            "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt principalFrameJuliaQueryFamily_recoveredInverseCoframe fixed-link coframe identity",
+            "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
