@@ -101,8 +101,8 @@ CASES: list[dict[str, Any]] = [
                 "commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
                 "blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
                 "sections": ["7.1", "7.2"],
-                "scope_query_indexes": [0, 4, 7, 8],
-                "scope_query_sections": {"0": ["7.1"], "4": ["7.2"], "7": ["7.2"], "8": ["7.2"]},
+                "scope_query_indexes": [0, 4, 8],
+                "scope_query_sections": {"0": ["7.1"], "4": ["7.2"], "8": ["7.2"]},
             },
         ],
         "scope_review": (
