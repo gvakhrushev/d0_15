@@ -1235,7 +1235,9 @@ def _candidate_record(rel: str, content: str, terms: list[tuple[str, tuple[str, 
                       commit: str | None = None, blob: str | None = None,
                       content_sha256: str | None = None,
                       pattern: re.Pattern[str] | None = None,
-                      include_evidence: bool = True) -> tuple[float, dict[str, Any]] | None:
+                      include_evidence: bool = True,
+                      prioritize_verified_pin: bool = False,
+                      ) -> tuple[float, dict[str, Any]] | None:
     file_title = pathlib.PurePosixPath(rel).stem
     pattern = pattern or _term_pattern(terms)
     content_matches = _matched_term_names(_fold(content), pattern, terms)
@@ -1268,10 +1270,11 @@ def _candidate_record(rel: str, content: str, terms: list[tuple[str, tuple[str, 
     if blob:
         record["source_blob"] = blob
     score = hits / len(terms) + _owner_bonus(rel) + _filename_bonus(rel, terms)
-    if origin == "pinned_snapshot":
+    if origin == "pinned_snapshot" and prioritize_verified_pin:
         # A verified commit/path/blob with direct matching content is a
-        # primary source surface. Prioritize it for navigation, without
-        # treating the pin as owner validation or semantic acceptance.
+        # primary source surface. Prioritize it in the narrow user-facing
+        # card window, without treating the pin as owner validation or
+        # semantic acceptance. Expanded searches keep lexical evidence order.
         score += VERIFIED_PINNED_SOURCE_BONUS
     return score, record
 
@@ -1458,6 +1461,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                         commit=reference["commit"], blob=reference["blob"],
                         content_sha256=hashlib.sha256(pinned_bytes).hexdigest(),
                         pattern=pattern, include_evidence=True,
+                        prioritize_verified_pin=limit <= MAX_SEARCH_RESULTS,
                     )
                     if pinned_match is not None:
                         pinned_score, pinned_record = pinned_match
