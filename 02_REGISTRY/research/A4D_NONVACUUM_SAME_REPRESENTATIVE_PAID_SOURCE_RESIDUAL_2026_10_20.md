@@ -22855,6 +22855,574 @@ if __name__=='__main__':
     print('PASS native98attempt, completecappedCQ/abort, negativeactualduration-source and retained marked waiting information')
 ```
 
+## 7bs. Compose the stopped raw tree with a full Book operator, an explicit return code and its complete heat covector
+
+26 October2026. SAME #334 / constitutive / native-programme-v1, input38d59b88.
+Phase: native realization / operator-map composition. The changed input is
+7br570's literal98-stage attempt and its owned registered first-event/cap
+interface. The exact missing parent step is7br576's stopped Book/Hodge/cut
+map. We now construct that map on ONE declared finite branch complex,
+including every unprepared column. This consumes the owned cochain/heat
+adjoint7bh501--504 and stopped isometry571; it does not reprove the stopping
+policy, search another GR root or select a physical clock/action.
+
+The conclusion is an explicit mathematical interface, with a decisive
+boundary distinction: the forward retained-time completion has ZERO cold
+return, whereas an explicit root/abort counter-code permutation gives the
+nontrivial quiet-return source. They implement different return comparisons.
+The latter operation and actual conditional readout/controller must be
+admitted and priced if physically executed. Neither completion is silently
+identified with Book03's original bootstrap or the physical GR source.
+
+### Retain every raw stage, every readout column and the full allocated WORLD
+
+Fix finite capK>=1. The whole WORLD contains the actual scene S=K(9,11,13),
+DATA16, phaseSpin4, true oldRIGHT128 and allK SOURCE/archive pairs allocated
+by7br. It is the SAME full space at EVERY vertex, even at an early leaf.
+The fixed first layout is P0, SOURCE1/2, DATA3..6, Spin7/8, old9,
+archive10/11; for n>=2 put SOURCE at12+4(n-2),13+4(n-2) and archives at
+14+4(n-2),15+4(n-2). Previous SOURCE/archive supports stay sealed.
+The full active capacity is2^14*16^K; replacing the active two-dimensional
+port by all33 physical scene modes gives WORLD dimension33w, where
+w=8192*16^K. The actual initial blank-input cut has rank8192, not33w.
+
+For each live attempt append98 actual native unitary gate edges g_t from570,
+then FOUR readout edges L_h=Pi_h on that attempt's two physical archive bits.
+The four Pi_h are the full projectors on WORLD, with sum Pi_h=I. They are
+registered-readout maps supplied by the owned stopping interface, NOT four
+new native unit-cost gates. Below cap only the00 child continues. Keep01,
+10,11 as leaves and the last00 as ABORT_K. The11 projector is nonzero on
+unprepared columns even though its path amplitude on the actual initialized
+input is zero. No future unused SOURCE/archive or dark mode is deleted.
+
+Counting the genuine raw graph, including root, gives
+
+    V=102K+1, E=102K, leaves=3K+1,
+    internal vertices=99K, max root-to-leaf depth=99K.     (578)
+
+The102 includes98 raw edges plus FOUR alternative readout edges; an executed
+path uses98 plus ONE readout. These are different counts. The toy prepared-
+DATA comb with4K+1 vertices is not this full physical raw graph. Nor is
+98 T_K a clock-space dimension. Actual dispatcher hardware, pauses, allocation,
+readout, closing and their thermal tests are still additional physical inputs.
+
+### A finite Hodge map and source on this exact graph, without a gate/scene commutation assumption
+
+Use all359 scene-edge discrepancy rows at every vertex, with the ORIGINAL
+D_S=diag(24,22,20) by zone and b_S^*b_S=D_S-A_S. A raw branch cochain is
+
+    (d_raw chi)_(scene,v)=b_S chi_v,
+    (d_raw chi)_e=chi_child-L_e chi_parent,
+    R_v=(D_S+delta_v I)^(-1/2), d=d_raw R,
+    delta_v=1 on root/leaves, delta_v=2 otherwise,
+    T_tree=sum_e |child><parent| tensor L_e,
+    Delta0=d^*d=I-diag_v(R_v A_S R_v)-R(T_tree+T_tree^*)R,
+    Delta1=dd^*.                                        (579)
+
+Here scene matrices carry identity on allw retained fibre modes. The raw
+WORLD/scene metric is whitened as in7bh before Euclidean adjoints. At a
+single gate the outgoing sum L^*L=I; at a readout it is sum_h Pi_h=I.
+Each nonroot vertex has exactly one incoming row, whose child diagonal isI.
+Thus d_raw^*d_raw has the stated D_S+delta diagonal on ALL input columns.
+For any chi, the scene bound is sum||b_S chi_v||^2<=2 sum<chi_v,D_S chi_v>.
+The temporal bound is sum||chi_c-L_e chi_p||^2<=2 sum delta_v||chi_v||^2,
+using outgoing completeness. Therefore0<=Delta0<=2I, regardless of the
+noncommutation of an actual port gate with D_S or R_v.
+
+The full dimensions, with no reachable-subspace restriction, are
+
+    n0=33Vw, n1=(359V+33E)w,
+    n1-n0=(359V-33)w,
+    Z01=2 Tr_(C0) exp(-beta Delta0)+(359V-33)w,
+    H01=log Z01/beta, rho_eff=2 exp(-beta Delta0)/Z01,
+    DH01=2 Re Tr(R rho_eff R DT_tree).                    (580)
+
+The index term is INSIDE the logarithm. Singular-value pairing proves the
+heat identity including all kernel dimensions and rank changes. Here the
+native beta=2p^2 can be used exactly as in7bh. Pricing BOTH grades is the
+declared580 choice, not inferred from Book03's default degree-zero scene
+heat: the alternative degree-zero Z0=Tr exp(-beta Delta0) and H0 have their
+own normalization. rho_eff is the cotangent representing both grades; the
+actual C0 block of the full Gibbs state has no factor2. No Gibbs preparation
+is presumed.
+
+The displayed differential holds for fixed graph, scene, beta and a genuine
+complete gate/readout variation: outgoing sum L_e^*L_e staysI, so delta and
+R stay fixed. An arbitrary independent change breaking that identity needs
+D(d_raw^*d_raw), including the changed diagonal. Moving scene metrics,
+readout bases, initial preparations and cuts retain their genuine sources;
+scene variations also differentiate BOTH R factors and A_S. At fixed graph,
+||R||^2<=1/21 and Z01>=2n0 exp(-2beta) give the useful full-edge bound
+
+    |DH01| <= [2 exp(2beta)/(21V)] sum_e ||DL_e||_op.      (581)
+
+Indeed ||D T_e||_1<=33w||DL_e|| and ||rho_eff||<=exp(2beta)/n0.
+This is a bound for the NEW branch graph. It is generally order one on
+all98K source-bearing stages and is NOT7bi's cyclic padding/winding bound.
+No N=E T substitution, source-smallness assumption or original42-field
+normalization/gain is supplied by581.
+
+### Complete the stopped isometry on ALL columns before compressing the actual input
+
+Fix0<zeta<1. Let j0:WORLD->C0 embed root and let W_v be the ordered raw product along
+the unique root-to-v path. Outgoing completeness telescopes through the
+finite tree, so
+
+    V_K=sum_(leaf l) j_l W_l,
+    V_K^* V_K=I_WORLD, j0^* V_K=0,
+    U_forward=I-j0j0^*-V_KV_K^*+V_Kj0^*+j0V_K^*.         (582)
+
+This is a self-adjoint unitary on allC0, with U_forward j0=V_K. It swaps two
+orthogonal isometric WORLD images and is identity on their ENTIRE orthogonal
+complement. Extend by identity on allC1. This is an explicit common-carrier
+mathematical Book completion; neither the complement nor heat-only columns
+are dropped. It is not a literal compiled ne.Execution or a proof that the
+physical bootstrap selects this particular extension.
+
+Write i for the true initialized rank8192 WORLD isometry and j=j0 i for the
+actual input, retaining free DATA/Spin/oldRIGHT. Set P=jj^*, Q=I-P, cold
+C=j^*Uj, F=j^*U^*QUj=I-C^*C. Since every forward output has a different
+clock address, the SAME cut gives
+
+    C_forward=0, F_forward=I,
+    J_forward=-8192 log(1-zeta), D_fixed-cut J_forward=0. (583)
+
+This is not a claim that the complete heat or all independently moving-cut
+sources vanish. It is the exact forward-clock feedback compression. An
+initial allquiet register and a terminal quiet-timeK record live at different
+clock addresses until a real return comparison is specified.
+
+### The missing quiet-return operation is a fixed reversible counter code
+
+Let S_0A exchange ROOT and ABORT_K clock basis states, identity on all other
+nodes and on WORLD. It is a full permutation, not a partial projection or
+postselection. U_return=S_0A U_forward onC0 (identity onC1) is unitary.
+Time/sign leaves01/10 are untouched; codeROOT now means ABORT at knownK,
+and the cap plus the unchanged allquiet archive determines that time exactly.
+No retained time or record is erased. On the actual initialized cut, the
+ordered quiet path is c^K i by570--571, hence
+
+    C_return=c^K I, F_return=(1-r^K)I,
+    J_return=-8192 log(eta+zeta r^K), eta=1-zeta,
+    partial_u J_return=8192 zeta K r^(K-1)/(eta+zeta r^K)>0,
+    r=1-u, c=p^3 at the native point.                    (584)
+
+The derivative is along the declared scalar-quiet source comparison, with
+K/zeta/input and the closing code fixed. It does not admit continuously
+variable native Golden gates or replace general independent SOURCE/cut rows
+by a single common u. The ordinary full Book adjoint7bh504 still applies to
+D U_return=(D S_0A)U_forward+S_0A D U_forward and genuine D j; arbitrary
+readout/controller variations need their true amplitude source.
+
+Equations583 and584 answer different explicitly specified return tests.
+S_0A acts on the OUTPUT while j remains fixed. A passive basis change
+conjugating BOTH the operator and cut would preserve583, not produce584.
+The counter-code is the EXACT mathematical operation missing from the
+otherwise ambiguous assertion that stopped quiet gives the old c^K Book
+corner. If physically performed, its native compilation, admission, work,
+clock stages and heat tests must be inserted into the ACTUAL full execution.
+One cannot add a closing fee while keeping a body-only580 as the entire
+physical heat, or transfer that heat to a differently instrumented controller.
+If instead it is selected as a terminal comparison map, its physical test/cut
+binding must be proved. No choice is made on behalf of D0, and neither J
+formula is assigned to the original full128 or original unpadded42 chart.
+
+### Keep trajectory normalization, Rayleigh VALUE and quantum price on the same carrier
+
+The generated raw path map B:WORLD->C0, B=sum_v j_v W_v, obeys on the actual
+initialized cut
+
+    i^* B^*B i=(1+99 T_K)I,
+    i^* B^*R^(-2)B i=G_norm,
+    21(1+99T_K)I <= G_norm <=26(1+99T_K)I.              (585)
+
+For each live attempt its98 post-gate nodes and the sum of its readout child
+nodes contribute99 times its survival effect r^(n-1)I. Root contributesI.
+This proves the first equality using571, not a replacement of the whole
+allocated space by mean runtime. Raw chi=B i x satisfies the temporal
+transport rows only; it need not solve the scene rows. Normalized Hodge
+coordinates are psi=R^(-1)chi. Their Gram G_norm is generally NONSCALAR for
+noncommuting gates and retains its derivative. Neither B nor its normalized
+version is declared an isometry or full-Hodge harmonic. Normalizing a whole
+history changes its root compression and must not silently replace j.
+
+For the given fixed active-port scene input xi, the completed native attempt
+returns that scene state at every terminal record. Root and all leaves have
+delta1, and no pair of terminal support vertices is adjacent. Thus birth,
+coherent terminal and registered CQ terminal states have exactly the SAME
+Rayleigh VALUE
+
+    R_ray=Tr xi [I-R1 A_S R1], R1=(D_S+I)^(-1/2),
+    D_SOURCE R_ray=0.
+
+The same equality holds after the explicit root/abort recoding. The zero
+SOURCE derivative is restricted to the completed scene-restoring family.
+An independent raw routing or preparation change that moves the terminal
+scene retains its D R_ray, even if called a SOURCE direction. R_ray is not
+zero; independently varying the scene/input or its allowed preparation still
+has its own reaction. This concerns the GIVEN scene input and fixed support,
+not arbitrary full-cut scene normals. Let Gamma_K be the actual normalized
+terminal CQ state from574 embedded on these leaves, or its explicit recoding,
+and tau=exp[-beta(Delta0 direct-sum Delta1)]/Z01 on the WHOLE carrier.
+Then exactly as in7bq567,
+
+    beta(H01+J+R_ray)+ell(C-I_K/ell)
+      = beta J+ell C+S_in+D(Gamma_K||tau),
+    D_SOURCE D(Gamma_K||tau)=beta DH01-D_SOURCE I_K
+
+at fixed scene/initial state along that scene-restoring family. For a
+general fixed-beta variation instead use R_term=Tr(Gamma_K Delta01):
+D D(Gamma_K||tau)=beta DH01+beta D R_term-D I_K-D S_in.
+If S_hist uses the original BIRTH value R_birth, the preceding identity
+additionally retains beta(R_birth-R_term) on its right side and its full
+differential. Thus a moving terminal scene cannot silently identify the
+two Rayleigh states or discard independent input entropy.
+Here C is the actual full cost operand573,
+including controller/closing if they are executed, and I_K is the normalized
+complete CQ information574, with no8192 rank multiplier. This is the same
+Gibbs identity on the declared common carrier, not an extra -Info appended
+to bare Book H+J. A changed physically executed closing may change both
+that carrier and C and must be recomputed there. The moving tau derivative
+is retained. No total stationarity follows from equal Rayleigh values.
+
+### Exact parent substitution and the remaining physical application
+
+The stopped interface now has an explicit full-column V_K/U/cut completion,
+a full raw-stage cochain, all-mode heat and its distributed first-source
+covector, plus the precise closing operation needed for nontrivial quiet
+feedback. This replaces7br's missing MATHEMATICAL stopped-operator map for
+this declared graph and supplies a consumer for the owned7bh adjoint. It
+also identifies why eventual exit, forward return and quiet-return feedback
+cannot be interchanged merely because their DATA instrument is the same.
+
+The physical parent remains: establish the actual admitted nonterminal
+readout/dispatcher/closing execution and its canonical complete WORK, clock
+and geometry tests; bind that execution to Book03's selected full source and
+to the original nonvacuum field writer, independent preparation equations,
+actual all42 gain and refinement. A fixed coherent controlled circuit alone
+still executes its supplied clock when its active block is identity; it does
+not obtain7br572's negative elapsed-work source. No runtime tariff, native
+controller or GR constitutive map is invented here. GR_closed=false;
+positive_gr/raw216 and the original physical H+J+R selection remain open.
+
+The new checker below loads ONLY pinned7br definitions, whose nested7bp/7bo
+loaders also exclude old mathematical fixtures. It checks the ACTUAL98-word
+address/tree application for caps1/2/3/5, without building a global conditional
+ne.Execution. Its new exact rational24-column toy tests all-column isometry,
+complements, full readout/fault projectors, both return cuts, raw/normalized
+history Grams and direct-versus-transfer incidence. The toy has TWO gate
+edges per attempt and one reused test archive, explicitly not the physical98
+word or its thermal trace. Its312/496-dimensional Hodge heat verifies580's
+source by an independent finite difference with tolerance2e-8. A changed
+intermediate routing has nonzero heat source while holding the endpoint
+instrument fixed. This is a new interface control, not another endpoint-
+ispectrality assumption, old heat replay or large native heat certificate.
+Run from repository root with assertions enabled.
+
+```python
+"""Changed stopped-tree Book application; old checkers are never executed.
+
+Exact rational finite controls test the new full-column completion and
+noncommuting scene/branch cochain. A small floating heat-derivative control
+has explicit tolerance; it is not a native/GR certificate or huge heat replay.
+"""
+import sys
+sys.dont_write_bytecode = True
+import hashlib
+import json
+from pathlib import Path
+import types
+import sympy as S
+import numpy as np
+
+PRIMARY = Path('02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md').resolve()
+RAW = PRIMARY.read_text(encoding='utf-8')
+a = RAW.index('## 7br. ')
+a = RAW.index('```python\n', a) + len('```python\n')
+b = RAW.index('\n```', a)
+OLD = RAW[a:b].encode()
+assert len(OLD) == 25785
+assert hashlib.sha256(OLD).hexdigest() == '83ee489241b4262b896f43c7e78e9c90eaabb1bb0239a65828b19df86febf3c3'
+MARK = '"""Exact scalar-quiet specialization of the OWNED first-event/cap calculus.'
+PREFIX = OLD.decode().split(MARK, 1)[0]
+owned = types.ModuleType('_d0_stopped_tree_owned_attempt')
+owned.__file__ = str(PRIMARY)
+sys.modules[owned.__name__] = owned
+exec(compile(PREFIX, str(PRIMARY), 'exec'), owned.__dict__)
+
+
+def raw_tree(cap, stages):
+    assert type(cap) is int and cap >= 1 and type(stages) is int and stages >= 1
+    nodes = [('ROOT', 0, None)]
+    edges, terminal, forks = [], [], []
+    current = 0
+    for attempt in range(1, cap + 1):
+        for stage in range(stages):
+            child = len(nodes)
+            nodes.append(('GATE', attempt, stage))
+            edges.append((current, child, 'gate', attempt, stage))
+            current = child
+        forks.append(current)
+        for label in range(4):
+            child = len(nodes)
+            nodes.append(('READ', attempt, label))
+            edges.append((current, child, 'read', attempt, label))
+            if label == 0 and attempt < cap:
+                next_live = child
+            else:
+                terminal.append(child)
+        if attempt < cap:
+            current = next_live
+    return nodes, edges, terminal, forks
+
+
+def validate_native_tree():
+    built = owned.build_attempt()  # definitions-only reuse; no old fixture suite
+    gates = built['execution'].gates
+    assert len(gates) == 98
+    out = []
+    for cap in (1, 2, 3, 5):
+        nodes, edges, terminal, forks = raw_tree(cap, 98)
+        assert len(nodes) == 102*cap + 1 and len(edges) == 102*cap
+        assert len(terminal) == 3*cap + 1 and len(forks) == cap
+        incoming = [0]*len(nodes)
+        outgoing = [[] for _ in nodes]
+        depth = [0]*len(nodes)
+        for parent, child, kind, attempt, value in edges:
+            assert parent < child
+            incoming[child] += 1
+            outgoing[parent].append((kind, value))
+            depth[child] = depth[parent] + 1
+        assert incoming == [0] + [1]*(len(nodes)-1)
+        assert max(depth) == 99*cap
+        assert [v for v in range(len(nodes)) if not outgoing[v]] == terminal
+        assert sum(bool(x) for x in outgoing) == 99*cap
+        assert all(len(x) == 1 or x == [('read', h) for h in range(4)]
+                   for x in outgoing if x)
+        sealed, slots = set(), []
+        for attempt in range(1, cap+1):
+            if attempt == 1:
+                src, arch = (1, 2), (10, 11)
+            else:
+                start = 12 + 4*(attempt-2)
+                src, arch = (start, start+1), (start+2, start+3)
+            mapping = {1: src[0], 2: src[1], 10: arch[0], 11: arch[1]}
+            mapped = tuple(owned.ne.Gate(g.op, tuple(mapping.get(w, w) for w in g.wires))
+                           for g in gates)
+            assert all(not sealed.intersection(g.wires) for g in mapped)
+            assert all(9 not in g.wires for g in mapped)
+            assert all(g.wires == (0,) for g in mapped if g.op == 'G')
+            assert all(g.wires == (0, 7, 8) for g in mapped if g.op == 'SourceI')
+            sealed.update(src + arch)
+            slots.append((src, arch))
+        world_fibre = 8192*16**cap
+        nv, ne = len(nodes), len(edges)
+        n0, n1 = 33*nv*world_fibre, (359*nv + 33*ne)*world_fibre
+        assert n1 - n0 == (359*nv - 33)*world_fibre
+        out.append({'cap': cap, 'vertices': nv, 'edges': ne,
+                    'terminal_including_faults': len(terminal),
+                    'raw_path_max_depth': max(depth), 'fresh_slots': slots,
+                    'n0': n0, 'n1': n1, 'index': n1-n0})
+    return out
+
+
+R = S.Rational
+sp = lambda x: S.SparseMatrix(x)
+eye = lambda n: S.MutableSparseMatrix.eye(n)
+zero = lambda m, n: S.MutableSparseMatrix(m, n, {})
+kron = lambda *x: sp(S.kronecker_product(*x))
+
+
+def block_embed(matrix, row, col, rows, cols):
+    m, n = matrix.shape
+    return S.MutableSparseMatrix(rows*m, cols*n,
+        {(row*m+i, col*n+j): v for (i, j), v in matrix.todok().items()})
+
+
+def fixture():
+    # A SMALL arbitrary full-world cochain, not the actual98 native attempt:
+    # scene path3 x archive4 x DATA2. All24 input columns are kept, including
+    # arbitrary archive/fault inputs. One reused toy archive suffices to test
+    # the algebra; actual fresh native slots are checked separately above.
+    cap, stages, d = 2, 2, 24
+    nodes, edges, leaves, forks = raw_tree(cap, stages)
+    nv = len(nodes)
+    c, s, u = R(4, 5), R(3, 5), R(9, 25)
+    dc, ds = -1/(2*c), 1/(2*s)
+    e4 = eye(4)
+    pp, pm = sp(S.diag(1, 0)), sp(S.diag(0, 1))
+    ket0 = sp(S.Matrix([1, 0, 0, 0]))
+    ket1 = sp(S.Matrix([0, 1, 0, 0]))
+    ket2 = sp(S.Matrix([0, 0, 1, 0]))
+    inp = kron(ket0, eye(2))
+    bright = kron(ket1, pm) + kron(ket2, pp)
+    P, Q = inp*inp.T, bright*bright.T
+    A = eye(8) - P-Q + c*(P-Q) - s*(bright*inp.T + inp*bright.T)
+    DA = dc*(P-Q) - ds*(bright*inp.T + inp*bright.T)
+    assert A.T*A == eye(8)
+    rot = sp(S.Matrix([[c, -s, 0], [s, c, 0], [0, 0, 1]]))
+    drot = sp(S.Matrix([[dc, -ds, 0], [ds, dc, 0], [0, 0, 0]]))
+    g0 = kron(rot, e4, pp) + kron(eye(3), e4, pm)
+    dg0 = kron(drot, e4, pp)
+    g1 = kron(eye(3), A)*g0.T
+    dg1 = kron(eye(3), DA)*g0.T + kron(eye(3), A)*dg0.T
+    # Another variation changes ONLY intermediate scene routing, holding
+    # endpoint A/c/u and all terminal Kraus blocks fixed.
+    hgen = sp(S.Matrix([[0, -1, 0], [1, 0, 0], [0, 0, 0]]))
+    dg0_route = kron(hgen*rot, e4, pp)
+    dg1_route = kron(eye(3), A)*dg0_route.T
+    proj = [kron(eye(3), sp(S.diag(*[int(k == h) for k in range(4)])), eye(2))
+            for h in range(4)]
+    assert sum(proj, zero(d,d)) == eye(d)
+    assert all(x*x == x and x.T == x for x in proj)
+    Dscene = sp(S.diag(1, 2, 1))
+    assert kron(Dscene, eye(8))*g0 != g0*kron(Dscene, eye(8))
+    L, DL, DL_route, paths = {}, {}, {}, [eye(d)] + [None]*(nv-1)
+    for parent, child, kind, _, value in edges:
+        v = (g0, g1)[value] if kind == 'gate' else proj[value]
+        dv = (dg0, dg1)[value] if kind == 'gate' else zero(d,d)
+        dr = (dg0_route, dg1_route)[value] if kind == 'gate' else zero(d,d)
+        L[child], DL[child], DL_route[child] = v, dv, dr
+        paths[child] = v*paths[parent]
+    for vertex in range(nv):
+        outgoing = [L[ch].T*L[ch] for pa, ch, *_ in edges if pa == vertex]
+        if outgoing:
+            assert sum(outgoing, zero(d,d)) == eye(d)
+    # Leaf isometry on EVERY full WORLD column. No compression to input.
+    J = block_embed(eye(d), 0, 0, nv, 1)
+    V = sum((block_embed(paths[v], v, 0, nv, 1) for v in leaves), zero(nv*d, d))
+    assert V.T*V == eye(d) and J.T*V == zero(d,d)
+    Us = eye(nv*d) - J*J.T - V*V.T + V*J.T + J*V.T
+    assert Us.T == Us and Us*Us == eye(nv*d) and Us*J == V
+    abort = next(i for i in leaves if nodes[i] == ('READ', cap, 0))
+    perm = eye(nv)
+    perm[0,0] = perm[abort,abort] = 0
+    perm[0,abort] = perm[abort,0] = 1
+    recode = kron(perm, eye(d))
+    assert recode.T*recode == eye(nv*d)
+    # Same complete initial cut; coherent scene input makes R nonzero/nonunit.
+    xi = sp(S.Matrix([R(3,5), R(4,5), 0]))
+    j = kron(xi, inp)
+    assert j.T*j == eye(2)
+    jc = J*j
+    assert jc.T*Us*jc == zero(2,2)
+    assert jc.T*recode*Us*jc == c**cap*eye(2)
+    assert (recode*Us).T*(recode*Us) == eye(nv*d)
+    for v in leaves:
+        if nodes[v][2] == 3:
+            assert paths[v]*j == zero(d,2) and L[v] != zero(d,d)
+    raw_gram = sum((v.T*v for v in paths), zero(d,d))
+    TK = 1 + c*c
+    assert j.T*raw_gram*j == (1+(stages+1)*TK)*eye(2)
+    # Direct incidence rows, full scene/work columns, and independent transfer
+    # expression must agree BEFORE any exponentials/numerical approximation.
+    bscene = sp(S.Matrix([[-1, 1, 0], [0, -1, 1]]))
+    A_scene = Dscene - bscene.T*bscene
+    nr_scene = nv*2*8
+    nr = nr_scene + len(edges)*d
+    dr, ddr, ddr_route = zero(nr,nv*d), zero(nr,nv*d), zero(nr,nv*d)
+    for v in range(nv):
+        for (i,k), val in kron(bscene, eye(8)).todok().items():
+            dr[v*16+i, v*d+k] = val
+    T, DT, DT_route = zero(nv*d,nv*d), zero(nv*d,nv*d), zero(nv*d,nv*d)
+    for n, (pa,ch,*_) in enumerate(edges):
+        start = nr_scene+n*d
+        for (i,k), val in L[ch].todok().items():
+            dr[start+i,pa*d+k] = -val
+        for i in range(d):
+            dr[start+i,ch*d+i] = 1
+        for deriv, target in ((DL,ddr),(DL_route,ddr_route)):
+            for (i,k), val in deriv[ch].todok().items():
+                target[start+i,pa*d+k] = -val
+        T += block_embed(L[ch],ch,pa,nv,nv)
+        DT += block_embed(DL[ch],ch,pa,nv,nv)
+        DT_route += block_embed(DL_route[ch],ch,pa,nv,nv)
+    delta = [1 if v == 0 or v in leaves else 2 for v in range(nv)]
+    D = sp(S.diag(*[int(Dscene[i//8,i//8])+delta[v]
+                    for v in range(nv) for i in range(d)]))
+    As = kron(eye(nv), A_scene, eye(8))
+    assert dr.T*dr == D-As-T-T.T
+    DAraw = dr.T*ddr + ddr.T*dr
+    DAr = dr.T*ddr_route + ddr_route.T*dr
+    assert DAraw == -DT-DT.T and DAr == -DT_route-DT_route.T
+    # Normalized history is R^-1 times raw path, not the same path.
+    norm_gram = sum((paths[v].T*kron(Dscene+delta[v]*eye(3),eye(8))*paths[v]
+                     for v in range(nv)),zero(d,d))
+    input_norm_gram = j.T*norm_gram*j
+    assert input_norm_gram != S.trace(input_norm_gram)/2*eye(2)
+    assert input_norm_gram != j.T*raw_gram*j
+    assert kron(bscene,eye(8))*j != zero(16,2)  # Not full-Hodge harmonic.
+    df = np.array(D.diagonal(), dtype=float).ravel()
+    rvv = 1/np.sqrt(df)
+    rr = np.diag(rvv)
+    raw_float = np.array(dr, dtype=float)
+    Delta = rvv[:,None]*np.array(dr.T*dr,dtype=float)*rvv[None,:]
+    DDelta = rvv[:,None]*np.array(DAraw,dtype=float)*rvv[None,:]
+    DDelta_route = rvv[:,None]*np.array(DAr,dtype=float)*rvv[None,:]
+    vals, vecs = np.linalg.eigh(Delta)
+    assert vals.min() > -2e-12 and vals.max() <= 2+2e-12
+    beta = 0.7
+    index = nr - nv*d
+    expvals = np.exp(-beta*vals)
+    Z = 2*expvals.sum()+index
+    rhoeff = np.einsum('ik,jk->ij',vecs*(2*expvals/Z),vecs,optimize=False)
+    assert np.isfinite(rhoeff).all() and np.isfinite(Delta).all()
+    source = -np.einsum('ij,ji->',rhoeff,DDelta,optimize=False)
+    source_transfer = 2*np.einsum('ij,ji->',rvv[:,None]*rhoeff*rvv[None,:],
+                                   np.array(DT,dtype=float),optimize=False)
+    route_source = -np.einsum('ij,ji->',rhoeff,DDelta_route,optimize=False)
+    assert abs(route_source) > 1e-6
+    assert abs(source-source_transfer) < 2e-12
+    def heat_linear(eps):
+        # Only this finite-difference fixture linearizes the raw d at the base.
+        mat = raw_float + eps*np.array(ddr,dtype=float)
+        gram = np.einsum('ki,kj->ij',mat,mat,optimize=False)
+        lam = np.linalg.eigvalsh(rvv[:,None]*gram*rvv[None,:])
+        return np.log(2*np.exp(-beta*lam).sum()+index)/beta
+    eps = 1e-5
+    derivative = (heat_linear(eps)-heat_linear(-eps))/(2*eps)
+    assert abs(derivative-source) < 2e-8
+    # Same root/leaves diagonal; no two terminal-support nodes adjacent.
+    assert all(not(pa in leaves and ch in leaves) for pa,ch,*_ in edges)
+    rho_in = np.array(j*j.T/2,dtype=float)
+    rv = np.einsum('ij,ji->',np.array((J*j)*(J*j).T/2,dtype=float),Delta,optimize=False)
+    coherent = np.array((V*j)*(V*j).T/2,dtype=float)
+    cq = sum((np.array(block_embed(paths[v]*j,v,0,nv,1)*
+                        block_embed(paths[v]*j,v,0,nv,1).T/2,dtype=float)
+              for v in leaves),np.zeros((nv*d,nv*d)))
+    rcoh = np.einsum('ij,ji->',coherent,Delta,optimize=False)
+    rcq = np.einsum('ij,ji->',cq,Delta,optimize=False)
+    assert max(abs(rv-rcoh),abs(rv-rcq)) < 2e-12
+    # Feedback sign exact on the same ret-cut; eta=1-zeta, no Golden-a clash.
+    zeta = R(2,5)
+    dJdu = 2*zeta*cap*(c*c)**(cap-1)/(1-zeta+zeta*(c*c)**cap)
+    assert dJdu > 0
+    return {'small_fixture_only': True, 'cap':cap, 'raw_stages_per_attempt':stages,
+        'world_full_dimension':d, 'vertices':nv, 'edges':len(edges),
+        'n0':nv*d,'n1':nr,'index':index, 'min_max_Delta':(float(vals.min()),float(vals.max())),
+        'full_column_isometry_and_completion_exact':True,
+        'fault_path_zero_on_input_projector_nonzero_on_full_world':True,
+        'cold_forward':0,'cold_recode':str(c**cap),
+        'history_raw_input_gram':str(1+(stages+1)*TK),
+        'normalization_Gram_nonscalar_on_input':str(input_norm_gram), 'heat_source':float(source),
+        'heat_source_finite_difference':float(derivative),
+        'heat_source_tolerance':2e-8,'fixed_endpoint_routing_heat_source':float(route_source),
+        'Rayleigh_birth_coherent_CQ':(float(rv),float(rcoh),float(rcq)),
+        'positive_same_cut_J_u':str(dJdu),
+        'huge_native_heat_or_physical_controller_emitted':False}
+
+
+if __name__ == '__main__':
+    assert __debug__, 'run this new exact checker with assertions enabled'
+    print(json.dumps({'owned_7br_code_bytes':len(OLD),
+        'owned_7br_code_sha256':hashlib.sha256(OLD).hexdigest(),
+        'definitions_only_prefix_bytes':len(PREFIX.encode()),
+        'definitions_only_prefix_sha256':hashlib.sha256(PREFIX.encode()).hexdigest(),
+        'native_tree_structure':validate_native_tree(),
+        'changed_full_column_fixture':fixture(),
+        'old_checkers_or_matrix_suites_executed':False},indent=2))
+```
+
 ## 8. Reproduction
 
 Run from this directory:

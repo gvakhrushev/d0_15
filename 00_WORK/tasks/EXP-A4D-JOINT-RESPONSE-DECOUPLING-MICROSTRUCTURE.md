@@ -13310,3 +13310,127 @@ incomingbrief868510bytesremainsEXACTprefix SHA256
 054463542222e4834404d7f81468a0cf537bf1902f47b713fae84dbf4ba9cba0.
 Onlytwoownedpathschanged.Localproof/structuralchecksarenotremoteCI
 orphysicalGRacceptance;existing#334keptDraftandunmerged.
+
+### 26 October2026 — apply the stopped raw graph to the full Book operator and heat source (7bs)
+
+Existing #334 / constitutive / native-programme-v1; no new task or registry
+state. Phase: native realization / complete operator-map composition.
+Input38d59b8801db722f0a07c07c8bafd28757a64e62, primary Git blob
+ a249a1a22ace552a546ef59dc07452937fed3537. Consume7br570/571/576 and
+owned7bh501--504. This is the named mathematical stopped-Book/cut/Hodge
+application left open by7br; actual physical selection remains open.
+
+New7bs578--585 explicitly retains ONE full allocated WORLD at every raw
+branch vertex: scene33, DATA16, live Spin4, true oldRIGHT128 and allK fresh
+SOURCE/archive pairs. w=8192*16^K, WORLD=33w. The actual98-gate attempt
+is followed by four complete archive projector edges; only00 belowcap
+continues. Full11 readout columns and cap abort remain, even if the11 path
+vanishes on initialized input. V=102K+1,E=102K,leaves3K+1,internal99K,
+pathdepth99K. Executed path98+one readout is not102 or clock-space E T.
+Actual fresh addresses checked for caps1/2/3/5; no global conditional
+ne.Execution or STOP primitive was emitted.
+
+New declared fullscene/tree cochain uses actualgate/readout edges L and
+R_v=(D_scene+delta_v)^(-1/2), delta1 root/leaves,2 internal. Outgoing
+sum LdagL=I proves 0<=Delta0<=2 without gate/scene commutation. Full
+n0=33Vw,n1=(359V+33E)w; bothgrade heat is
+Z01=2Tr exp(-betaDelta0)+(359V-33)w. Index remains INSIDE log, all
+unprepared/dark/C1 modes retained. Gradezero default remains separate.
+At fixed graph/scene/beta and complete variations, DH01=2ReTr Rrho_effR DT,
+rho_eff=2exp(-betaDelta0)/Z01. Source bound
+|DH01|<=2exp(2beta)/(21V)*sum||DL_e||; not old7bi cyclic padding and not
+smallness/full42-gain. Scene, preparation, moving cut and noncomplete
+edge variations retain their actual reactions.
+
+All-column leafisometry V_K gives explicit selfadjoint unitary swap of
+root WORLD with its complete leaf image, identity on ALL other C0 and C1
+columns. The SAME actual initialized rank8192 cut has C_forward=0,
+F_forward=I,J_forward=-8192ln(1-zeta). OUTPUT-only root<->ABORT_K counter
+code with initial cut FIXED instead gives C_return=c^K I,
+F_return=(1-r^K)I,J_return=-8192ln(1-zeta+zeta*r^K),
+J_u=8192*zeta*K*r^(K-1)/(1-zeta+zeta*r^K)>0. Recoding is reversible and
+retains terminal time/sign/abort: codeROOT now means known capK abort.
+A passive conjugation of BOTH operator+cut cannot change forwardfeedback.
+This closes the precise mathematical return comparison mismatch; it does
+not select/admit/compile that physical closing. If executed, its full native
+stages, WORK and geometric tests change the whole physical heat; charging
+a fee alone while keeping body-only heat is forbidden.
+
+Raw generated path Gram on initialized cut is (1+99T_K)I. Hodge-normalized
+Gram is i^*B^*R^-2Bi, generally NONSCALAR and retains its derivative;
+21(1+99T_K)I<=G_norm<=26(1+99T_K)I. Raw trajectories solve temporal rows
+only, not automatically scene rows/harmonic equations. History normalization
+cannot silently change actual initial cut/preparation.
+
+For the GIVEN scene-restoring family, birth/coherent/CQ terminal Rayleigh
+VALUES agree: allterminalcodes have degree1 and are pairwise nonadjacent.
+R_ray=Tr xi(I-R1 A_scene R1) is retained, not zeroed. Independent routing
+or preparation changing terminalscene carries D R_term. On the proven
+family the owned Gibbs/wholequantumprice identity holds with complete
+I_K574 and actualoperatorWORK573. General fixed-beta differential is
+D Drel=beta DH+beta D R_term-D I_K-D S_in; if originalS_hist keeps BIRTH
+R_birth, RHS of binding additionally retains +beta(R_birth-R_term) and its
+differential. Moving tau and independent input entropy are not suppressed.
+No extra Info is appended to bare Book H+J.
+
+Precise parent substitution: explicit full-column stopped U/cut completion,
+fullraw-stage Hodge heat/cotangent and exact quiet-return closing map for
+this declared graph. Still missing: admitted physical nonterminal readout,
+real dispatcher/conditional elapsedtime, native closing, canonical complete
+WORK/clock/geometry tests and selected originalBook source; original
+nonvacuum field writer/preparation equations/all42norm-gain/refinement.
+A coherent false-I circuit does not stop its supplied physical clock.
+No tariff/action/angle-admission/selector is inferred; no freshgeometry/
+root campaign or new assembly discharge. GR_closed=false,
+positive_gr/raw216 and original physical H+J+R selection remain open.
+
+Frozen7bs including next-heading separator:29109bytes,
+SHA256744d65d212e95acb0d149e4a211749da6a8b45c3737505a566913d02a09b270a.
+Proof14973bytes/e7f59277347b5c292ef654df091b1ba5727d73eb47dcc4bf1be0d13d2ad0c7e6.
+Embeddedcode excludingclosingnewline:14120bytes,
+SHA256f3337a8e4d98d58f4427dcae1a63c22e0ecf59ea6019c02a7fc69066ece1582a.
+Executed scratch code includes one finalnewline:14121bytes,
+SHA2560175c69ae75c4f7015d7040f29cf3879f4ae05e8d4903512541d0825da5050ea.
+Definitions-only prefix from pinned7br; nested7bp/7bo loaders exclude old
+mathematical checkers. No old matrix/full128/root/Lean/corpus/huge native
+heat suite replay. Old frozen sections and existing brief prefix preserved.
+
+New checker exit0 with assertions ON: actual98-word/fresh-address/tree
+instances caps1/2/3/5; exact24-full-column rational fixture (toy two-stage
+attempts, one reused TEST archive, explicitly notactualnativegraph); full
+leafisometry, fullcomplement swap, both return comparisons, nonzero full
+fault projectors with zero initialized amplitudes; raw and NONSCALAR
+normalized Grams; exact independent incidence/transfer derivative checks.
+Toy n0=312,n1=496,index184. Numerical heat source-0.00027255455555;
+independent finite difference-0.00027255451229,tolerance2e-8. Holding
+endpoint fixed while changing intermediate scene routing gives heat source
+-0.00026165237333. Same birth/coherent/CQ Rayleigh0.60808164115; values
+retained. Exact rawGram148/25; normalized inputGram diagonal
+12587/625,12218/625. Toy feedback J_u=3200/2387>0, coldforward0,
+coldrecode16/25. These are narrow interface controls, not a physical
+fullheat certificate, new controller or GR acceptance. Physical actualcap
+WORLD was counted, never allocated as an enormous fixture.
+
+Final source-only review and affected structural integration follow.
+
+Final source-only ACCEPT on proof14973/e7f59277347b5c292ef654df091b1ba5727d73eb47dcc4bf1be0d13d2ad0c7e6
+and executed-code14121/0175c69ae75c4f7015d7040f29cf3879f4ae05e8d4903512541d0825da5050ea:
+native_source_application, price_geometry_bridge, stationary_root_transfer.
+All read full proof/code; no review writes or replay. Price/geometry review
+retained independent terminal scene, R_birth-R_term transport defect and
+initial-entropy normal. Runtime and selected physical GR source stay open.
+
+Affected final integration PASS: work validation, agent protocol, gravity
+assembly(validtrue;54active/98results/5discharged/22obligations;
+scientific_promotionfalse), repository(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0). Existing checkpoint template
+read, constitutive/native-programme-v1 unchanged. Actual final fence AST,
+code/executed-source identity, frozen7br42435/e4af66de0bf369f4b13beb448b1b438b9db986b0ee4007b2fad788dbb17121fb
+and original stopping-owner15686/75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036
+pins verified. Removing7bs restores incoming primary1200994bytes SHA256
+983083641ddba641b34d74b5b748133fb8d275cec585e1da454b199f9ec61e13.
+Original brief875792bytes remains exact prefix SHA256
+59a23256aefa5bdcf3f18d63a65339641593be705a27560ad605e3140fc9e551.
+Only the two existing owned paths changed. Local exact/numerical checks,
+source review and structural guards are not remote CI or GR acceptance.
+#334 remains Draft, open and unmerged; no new task/PR/selector/discharge.
