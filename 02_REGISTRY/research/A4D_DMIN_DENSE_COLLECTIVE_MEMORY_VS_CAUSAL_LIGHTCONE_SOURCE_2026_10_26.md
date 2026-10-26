@@ -140,3 +140,89 @@ This resolves one mathematical frontier (how source packet correlations behave u
 ## 5. Exact independent checks
 
 The runnable checker [\`check_dense_counter_lightcones.py\`](sources/d0_dmin_lightcone_future_2026-10-26/check_dense_counter_lightcones.py) verifies all chronological closed reversible counter inputs at \(n\le10\), full two-helper arbitrary input/inverse identities (not only blank input), all explicit future distinct-state witnesses for n≤7, exact immediate quotient count \(2^n-n\), actual n-bit future quotient and the sharp one-transition lower bound. It also checks the combinatorial (7) and majorant (9) for many n,k,b, and the decay of the fully gate-max E=nD bound with true \(\zeta\) and protected rank retained. The analytic induction, future-profile witness and orthogonal-source bound above hold for general n, not merely these fixtures. Actual native CCX/G source compiler is inherited as a declared application, not rebuilt or asserted exact for free. No all42/Lean/GR status upgrade.
+
+
+## 6. THEOREM D — ACTUAL ORIGINAL native G/CX alone gives a globally supported Golden future test with only linear physical clock
+
+The preceding all-pairs parity compiler uses logical CCX/Z which need their HONEST native implementation. A stronger **DIRECT ORIGINAL-CODE** theorem needs no CCX, no SourceI, no real-angle approximation and no newly charged primitive. It tests an arbitrary n-bit parity: a different, equally decisive global-causal-support task.
+
+Let \(p=\varphi^{-1}\), \(p+p^2=1\), and the UNCHANGED original Golden single-wire gate and real original CX bit flip be
+\[
+G=\begin{pmatrix}\sqrt p&-p\\p&\sqrt p\end{pmatrix},\qquad
+X=\begin{pmatrix}0&1\\1&0\end{pmatrix}.
+\]
+Take arbitrary ORIGINAL DATA input \(x=(x_1,\ldots,x_n)\in\{0,1\}^n\) and a SINGLE honestly prepared internal blank helper h. Define the literal native CX parity bus
+\[
+C_n=\mathrm{CX}(x_1,h)\cdots\mathrm{CX}(x_n,h),
+\quad C_n|x,h\rangle=|x,h\oplus\pi(x)\rangle,\quad
+\pi(x)=\bigoplus_i x_i.
+\tag{13}
+\]
+Its ordered CX stages commute and are self-inverse, but every one still costs a TRUE primitive tick. Implement the ENTIRE forward original native word
+\[
+\boxed{
+W_n=G_h\,C_n\,G_h\,C_n,
+\quad\text{chronological gates }C_n,G_h,C_n,G_h,
+\quad N_{\rm raw}=2n+2.
+}\tag{14}
+\]
+The original identity \(XGX=G^{-1}\) and the exact Golden normalization imply the ALL-DATA/ALL-HELPER column operator
+\[
+\boxed{
+W_n=\sum_{\pi(x)=0}|x\rangle\langle x|\otimes G^2
++\sum_{\pi(x)=1}|x\rangle\langle x|\otimes I_h.
+}\tag{15}
+\]
+This is an EXACT full \(\mathrm{SO}(2^{n+1})\) unitary, with every unused/helper/failure column still present. It does NOT use a conditional logical phase gate, an ideal Hadamard or an arbitrary gate G^(-1). On the actual h=0 preparation, the genuine computational h=1 future event has
+\[
+\boxed{
+\Pr(h=1\mid\pi(x)=0)=[(G^2)_{10}]^2
+=(2p\sqrt p)^2=4p^3,\qquad
+\Pr(h=1\mid\pi(x)=1)=0.
+}\tag{16}
+\]
+Both outcomes remain real and addressable. Thus an ORIGINAL native fixed-Golden/Born process with ONLY \(2n\) native CX and two native G stages can distinguish global n-bit parity, with NO dependence on a field fit, outside time or a fabricated q-table. For arbitrary quantum DATA superpositions, (15) is the true coherent parity-controlled UNITARY, entangling the helper appropriately; neither outcome is silently selected. Any actual measurement of h and its future record must still be paid through the existing D0 readout apparatus/clock.
+
+**Exact D_min-like INTERACTION lower bound, independently of a chosen code serialization:** with the existing gate alphabet \(\{G\text{ on one wire},\mathrm{CX}\text{ on two wires}\}\), any finite programme whose one fixed helper-output probability depends on EACH of n independently preparable data bits must have a connected two-wire interaction graph reaching all n inputs and the helper. Single-wire G gates cannot connect graph components. A connected graph on n+1 vertices has at least n edges, each of which needs at least one genuine CX occurrence. Therefore
+\[
+\boxed{N_{\rm CX}\ge n.}\tag{17}
+\]
+The simpler raw parity-copy \(C_n\) ATTAINS this bound with n CX for the task "write \(\pi(x)\) into the existing blank h"; (14) realizes a nontrivial Golden readout with 2n CX and 2G. This is a precise primitive COUNT minimality on the specified physical truth task, **not** automatically minimum of the complete Book Cost−Info/clock/future archive. It proves the phenomenon on the literal raw G/CX hardware, not merely a logical uncosted Toffoli compiler.
+
+A source/control perturbation acting on the h readout after C_n has an effective operator \(C_n^\dagger Z_h C_n\), which restricted to h=0 is \((-1)^{\sum_i x_i}\) on the DATA and depends on EVERY x_i. The actual full reverse lightcone is n packets despite EACH microscopic CX having 2-wire support and total native clock O(n). Therefore the packet-connected source owner CANNOT apply its b=2 bound to this shared-bus tangent; one must use its true transported b=n footprint or the Hilbert/global bound. This directly falsifies the false inference "short original G/CX programmes have bounded causal packet support".
+
+The source-tested [standalone checker](sources/d0_dmin_lightcone_future_2026-10-26/check_dense_counter_lightcones.py) now includes the FULL native Golden matrix blocks (15) and source-owned primitive \`native_execution.py\` validation for the literal raw \`G_CX\` profile, with actual x unknown, helper blank and all source/helper columns retained. It never treats h as immutable oldRIGHT or deletes the actual clock. No original GR claim upgraded.
+
+## 7. THEOREM E — completely RATIONAL finite lightcone bound whenever the observed depth really is short
+
+The analytic exponential bound (9) admits a simpler **exact-rational** physical admission criterion. Put \(b=\min(n,2^{D+1})\), \(x=b k^2/(n-k+1)^2\) as above. If the ACTUAL mesh/circuit satisfies \(x\le1/2\), then
+\[
+\begin{aligned}
+\Xi_{k,n,b}^2
+&\le\sum_{j=2}^\infty\frac{x^j}{j!}
+\le\sum_{j=2}^\infty\frac{x^j}{2}
+=\frac{x^2}{2(1-x)}
+\le x^2.
+\end{aligned}
+\tag{18}
+\]
+Therefore no floating exponential is even required for the verified packet-support/source budget:
+\[
+\boxed{
+\|DJ_{\rm Book}-g_mD\bar r\|^*_{\rm gate-max}
+\le
+2M_h nD\,\frac{b k^2}{(n-k+1)^2}.
+}\tag{19}
+\]
+If n≥2k and all D physical rounds are truly disjoint two-packet rounds (including all counted source/helper routes), then \(b\le2^{D+1}\) and
+\[
+\boxed{
+\frac{\|DJ_{\rm connected}\|^*}{\Gamma_{h,n}}
+\le
+\frac{16M_h}{\Gamma_{h,n}}\,
+\frac{D\,2^D k^2}{n}.
+}\tag{20}
+\]
+The exact finite condition \(x\le1/2\) is checkable from integer packet/slot counts before any physics continuum claim, while all real register/clock/cut/source gain variables remain untouched. An arbitrarily long shared-memory bus can violate it even with few physical gates, as theorem D shows.
+
+These two complementary native controls now give the CORRECT final distinction: **programme LENGTH** is measured in actual primitive letters/Book clock; **causal radius** is measured by Heisenberg propagation on the ACTUAL retained memory; **future-faithful sufficiency** is measured by all generated internal future tests. They are related by actual operator identities, not interchangeable because a shortest prose representation happens to look sparse.
