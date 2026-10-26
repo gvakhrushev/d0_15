@@ -32,6 +32,8 @@ CASES: list[dict[str, Any]] = [
             "все 16 coframe 24 proper Lorentz directions tangent observer jets",
             "AF radial coframe equivalence section 5.1 direct native Julia golden execution cubic Einstein vertex",
             "principalFrameJuliaEndpointChartReadout_hasDerivAt_of_properRoleLorentzPath pathwise link derivative Eq27 Eq28 Julia",
+            "principalFrameJuliaEndpointChartReadout_hasDerivAt_of_jointCoframeAndLorentzPath simultaneous coframe link derivative Julia",
+            "jointCoframeAndLorentzPath julia_joint_coframe_link_path_derivative_declarations_2026-10-26",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -39,6 +41,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json",
         ],
         "required_sources": [
             {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -54,7 +57,7 @@ CASES: list[dict[str, Any]] = [
              "sections": ["5.1"], "scope_query_indexes": [6],
              "scope_query_sections": {"6": ["5.1"]}},
         ],
-        "scope_review": ("Owner all-jet null-leg inverse and the concrete consumer are distinct. The compiled pathwise derivative composes its Eq. (27)/(28) endpoint readout with differentiable proper-Lorentz link paths on the finite CAR carrier; it does not prove a 24-dimensional chart, physical price selection, or GR closure."),
+        "scope_review": ("Owner all-jet null-leg inverse and the concrete consumer are distinct. The compiled pathwise derivative composes its Eq. (27)/(28) endpoint readout with differentiable proper-Lorentz link paths on the finite CAR carrier. Its joint-path specialization allows coframe, column data and normalized covector to vary pointwise; exact recovery removes the need to assume differentiability of those paths. It still does not prove a 24-dimensional Lorentz chart, integrability of every tangent, physical price selection, or GR closure."),
     },
     {
         "id": "positive-nonvacuum-recovery",

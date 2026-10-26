@@ -8491,13 +8491,12 @@ The declaration axiom footprints are recorded individually; the two proof
 declarations inherit the already-owned CAR `native_decide` dependency along
 with `Classical.choice`, `Quot.sound`, and `propext`.
 
-This is a pathwise derivative composition for the endpoint-link block. It
-does not exhibit a local six-coordinate chart for each Lorentz link, prove
-that every tangent is integrated by a path in Lean, vary coframe and links
-simultaneously, or establish the source's full joint `D R D Φ = I` and
-variational pullback (31). Physical endpoint/query admission, complete
-price/source selection, #334 acceptance, `GR_closed`, and independent C0
-acceptance remain open.
+This initial fixed-coframe pathwise derivative composition does not exhibit a
+local six-coordinate chart for each Lorentz link, prove that every tangent is
+integrated by a path in Lean, or establish the source's full joint
+`D R D Φ = I` and variational pullback (31). Physical endpoint/query
+admission, complete price/source selection, #334 acceptance, `GR_closed`,
+and independent C0 acceptance remain open.
 
 The clean cold-start replay ran at published commit
 `d2714990b2b587d320ec37acb24bdc36a296a5e2` with
@@ -8514,3 +8513,38 @@ kept outside Git. The compact receipt is
 SHA-256 `8ee186c72edc8f755c7784a893d4634c19690e682deb247fa5dc8ea9178ba066`.
 This is retrieval evidence only; semantic scope review remains manual, and
 the physical and composition limits above are unchanged.
+
+### Joint coframe-link path derivative and compatibility refactor (26 October 2026)
+
+`principalFrameJuliaEndpointChartReadout_hasDerivAt_of_jointCoframeAndLorentzPath`
+now transfers the same Eq. (27)/(28) chart-selected endpoint derivative along
+simultaneous paths of the coframe matrix `F`, column data `L`, normalized
+covector `α`, and all role-indexed proper-Lorentz links. For every path time,
+the proper-Lorentz and determinant-one link hypotheses, normalized-covector
+condition, and nonzero shift remain explicit. Exact endpoint recovery at each
+time makes the output path equal to the corresponding link acting on the
+input vector, so no differentiability assumption on the coframe, column, or
+covector paths is needed. The previous
+`principalFrameJuliaEndpointChartReadout_hasDerivAt_of_properRoleLorentzPath`
+signature remains available as a fixed-data compatibility specialization;
+its proof now calls the joint theorem instead of duplicating that argument.
+
+The narrow module build passed **3,208/3,208 jobs**, and the full `D0.All`
+integration build passed **4,583/4,583 jobs** with Lean 4.30.0. The compiled
+inventory for the shared readout, chart recovery, joint-path theorem, and
+fixed-data specialization was extracted through public import `D0.All` at
+clean snapshot `b85337e85f5424ac8d1d1a752e37060448653a2c`
+(`worktree_dirty=false`). Its Lean source digest is
+`ab6da6dc413c6e3b8b973f6e94ae3d440f29d3195bc737794f6e67ee4a25cd45`,
+collector SHA-256
+`7861950aae83663d67acd79e6ea7d90503cf5261c542da0d6ea4067ec50b1a1b`, and
+inventory SHA-256
+`c2327c4db74a2d97a04943531a18d1d383bd7fdf53365f7bb140431e897d6099` at
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json`.
+The joint theorem and compatibility wrapper inherit `Classical.choice`,
+`Quot.sound`, `propext`, and the existing CAR
+`archiveCreatorPermSign` `native_decide` axiom. This remains a pathwise
+composition: it does not construct a six-coordinate Lorentz chart, prove
+integrability of every tangent, supply the complete 24-direction joint
+`D R D Φ = I`, establish physical admission or price/source selection, or
+close GR or C0.
