@@ -9015,15 +9015,15 @@ snapshot and source digest:
 | `source_port_preparation_tensor_inventory_2026-10-26_lorentz_tangent_joint_coframe_frechet.json` | 73/73 | `afc9a8f4cfb2bd358a4d31ca2c7bf037dfa1f75a52b17bd01b314f0c18a6770d` |
 
 The final cold-start ran at clean snapshot
-`9df62c16917252e1c77ebd508bceea12eafa7934`: **24/24** cases found all **157**
+`f0b6a31fc6d119b77f70dc51563e03ec591c7c3f`: **24/24** cases found all **157**
 required references and the **25-case** benchmark passed. The labelled Julia
 case now has **17** queries and finds all **12/12** references. The exact local
 Fréchet query ranks its compiled inventory third and the Lean module fifth in
 the top 18 results. The **8,850,015-byte** full output has SHA-256
-`04d9b0ecc450f9f1394f4e8c43c55ce27fc838b83a1dd1f17e6a562012b9489d` and is
+`92d3ad9ae2d080bf9092e7a01c43cdd756ae889d9a8403edee88372b3ee0892d` and is
 kept outside Git. The compact summary is
 `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_joint_coframe_frechet.json`,
-SHA-256 `6dea13baa9e39c9e08dfbe19363b4c976bfb6c11a63b9f912b24c675cb14f004`;
+SHA-256 `490726fbc8aa54fb7b95bb472b2044caf30eae2a489cef25c21471b482631fdd`;
 the query-level receipt is
 `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_joint_coframe_local_frechet.json`,
-SHA-256 `1b221caa427c5780ee81d6c986d5191666042ed5cc43d4450ef8ab4748ddfe03`.
+SHA-256 `f42e48e0108233165319d273b34cc43894dc0a2cda21f09b29f28c80e5db14dc`.
