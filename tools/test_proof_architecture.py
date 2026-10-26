@@ -1812,7 +1812,7 @@ class ProofArchitectureTests(unittest.TestCase):
         exact_joint_recovery_query = next(
             query for query in case["queries"]
             if query.startswith(
-                "D0.Geometry.principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz"
+                "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz"
             )
         )
         exact_joint_recovery_hits = proof.full_text_search(
