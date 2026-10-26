@@ -10097,3 +10097,28 @@ inventory. `git diff --check` passes. This adds the finite
 continuum-profile/site map, while the CAR positivity and slack calculation,
 full variation, common native source/price/admission, C0 acceptance, and GR
 selection remain with their existing owners and open status.
+
+### C0 candidate source-unit disposition for the positive nonvacuum slice (26 October 2026)
+
+The following is a source-keyed disposition for the bounded candidate input
+`02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`,
+#334 commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`, §§7.1–7.2, Eqs. (17)–(24).
+The main registration snapshot has a different blob and abbreviates the
+explicit Eq. (24) CAR-slack threshold; it is not substituted for the owner
+source. This row-level disposition is evidence for this bounded source slice,
+not an independently accepted or frozen C0 denominator.
+
+| Source unit | Current formal representation | Disposition and exact remaining boundary |
+| --- | --- | --- |
+| Eqs. (17)–(19): fixed smooth null-scalar solution family and continuum field equations | No single Lean declaration in this application reconstructs the full metric, verifies all hypotheses, and proves the displayed continuum equations. | Owner source preserved; full family and field-equation source remain open mathematical inputs. No formalization claim. |
+| Eq. (20): half-step metric/site sampling | `D0.Geometry.nonvacuumCoframeReadoutTime`, `sampledNonvacuumBrinkmannProfile_eq_fixedReadout`, and `sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter`. | Exact scalar profile/site binding, including all four harmonic coefficients at the same readout. Scoped independent review passed this equality; this does not instantiate the 16 coframe slots. |
+| Eqs. (21)–(22): midpoint increments and exact field gradient | `D0.Geometry.sampledMatterMidpointRate_eq_nextCoframeReadout`, together with the finite history and exact-value definitions used by `sampledMatterMidpointProfile_source_eq_derivativeNorm`. | Exact midpoint/update algebra in the Lean finite-history abstraction. It is not yet a construction from the original CAR generator or normalized preparation record. |
+| Eq. (23): native transverse source | `D0.Geometry.sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter`. | Exact five-point scalar source identity at the matched coframe readout. No CAR amplitude/slack premise, full independent variation, or 40+2 Euler composition is discharged. |
+| Eq. (24): C² refinement and preserved CAR slack | `D0.Geometry.sampledMatterMidpointHistory_error_le_refinementBound` gives a componentwise midpoint-history bound under explicit C³ and third-derivative-bound hypotheses. | Partial only: the source's vector-norm constant and complementary normalized-CAR slack inequality are not established by this componentwise result. |
+| Full free-site 16+24+2 Euler conclusion after the cited 40→3→1 reduction | The source cites the scientific owner's existing reduction; the current application inventory does not include a complete Lean adapter from its full varied rows to these sampled fields. | Reuse/transport remains open. No physical GR claim or owner/status change. |
+
+This disposition identifies exactly which source equations are represented by
+the new compiled application and which remain unresolved. It does not reduce
+the larger C0 corpus, assign a coverage percentage, or replace the required
+independent acceptance of C0 composition and contents.
