@@ -201,6 +201,31 @@ theorem finiteGram_add_smul_expand {ι : Type*} [Fintype ι]
     smul_smul, pow_two]
   abel
 
+/-- Exact normalized difference of the finite Gram path at any baseline.
+The quadratic contribution remains as a linear-in-`t` remainder. -/
+theorem finiteGram_add_smul_difference_quotient {ι : Type*} [Fintype ι]
+    [DecidableEq ι] (η Θ C : Matrix ι ι ℝ) (t : ℝ) (ht : t ≠ 0) :
+    t⁻¹ • (finiteGram η (Θ + t • C) - finiteGram η Θ) =
+      (C * η * Θ.transpose + Θ * η * C.transpose) +
+        t • (C * η * C.transpose) := by
+  let L := C * η * Θ.transpose + Θ * η * C.transpose
+  let Q := C * η * C.transpose
+  rw [finiteGram_add_smul_expand]
+  change t⁻¹ • (finiteGram η Θ + t • L + t^2 • Q - finiteGram η Θ) =
+    L + t • Q
+  have hcancel :
+      finiteGram η Θ + t • L + t^2 • Q - finiteGram η Θ = t • L + t^2 • Q := by
+    abel
+  rw [hcancel]
+  simp only [smul_add, smul_smul]
+  have hlinear : t⁻¹ * t = 1 := inv_mul_cancel₀ ht
+  have hquadratic : t⁻¹ * t^2 = t := by
+    rw [pow_two]
+    calc
+      t⁻¹ * (t * t) = (t⁻¹ * t) * t := by ring
+      _ = t := by rw [hlinear]; ring
+  rw [hlinear, one_smul, hquadratic]
+
 /-- The exact quadratic expansion at a symmetric involutive frame `η`. The
 linear metric direction is `C + Cᵀ`; this compatibility theorem specializes
 the arbitrary-frame expansion above. -/

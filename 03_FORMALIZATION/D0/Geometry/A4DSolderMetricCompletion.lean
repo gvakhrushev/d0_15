@@ -144,8 +144,34 @@ theorem solderMetric_flat_tangent (N : ℕ) (e : LocalCoframeField N)
     t⁻¹ • (solderMetricMatrix N (t • e) x - roleLorentzMetric) =
       (coframeMetricReadout N e x).toMatrix + t •
         (centeredCoframeMatrix N e x * roleLorentzMetric * (centeredCoframeMatrix N e x).transpose) := by
-  rw [solderMetric_smul_expand]
-  simp [smul_add, smul_smul, pow_two, ht]
+  rw [solderMetricMatrix, solderMatrix, centeredCoframeMatrix_smul]
+  have hbase : D0.Algebra.finiteGram roleLorentzMetric roleLorentzMetric =
+      roleLorentzMetric := by
+    unfold D0.Algebra.finiteGram
+    rw [roleLorentzMetric_transpose, roleLorentzMetric_sq]
+    simp
+  have hquot := D0.Algebra.finiteGram_add_smul_difference_quotient
+    roleLorentzMetric roleLorentzMetric (centeredCoframeMatrix N e x) t ht
+  rw [hbase] at hquot
+  rw [hquot]
+  have hlinear :
+      centeredCoframeMatrix N e x * roleLorentzMetric * roleLorentzMetric.transpose +
+        roleLorentzMetric * roleLorentzMetric *
+          (centeredCoframeMatrix N e x).transpose =
+        centeredCoframeMatrix N e x + (centeredCoframeMatrix N e x).transpose := by
+    rw [roleLorentzMetric_transpose]
+    calc
+      centeredCoframeMatrix N e x * roleLorentzMetric * roleLorentzMetric +
+          roleLorentzMetric * roleLorentzMetric *
+            (centeredCoframeMatrix N e x).transpose =
+        centeredCoframeMatrix N e x * (roleLorentzMetric * roleLorentzMetric) +
+          (roleLorentzMetric * roleLorentzMetric) *
+            (centeredCoframeMatrix N e x).transpose := by noncomm_ring
+      _ = centeredCoframeMatrix N e x +
+          (centeredCoframeMatrix N e x).transpose := by
+        rw [roleLorentzMetric_sq]
+        simp
+  rw [hlinear, coframeMetricReadout_eq_centered_add_transpose]
 
 /-- Every symmetric metric direction is the readout of one constant coframe
 field at every site. The witness is explicit: its components are `q/2`.
@@ -247,15 +273,10 @@ theorem j2DetectorMetricPath_symmetric_difference_quotient
       roleLorentzMetric) =
       q + t • (j2DetectorCoframeDirection q * roleLorentzMetric *
         (j2DetectorCoframeDirection q).transpose) := by
-  rw [j2DetectorMetricPath_symmetric_tangent q hq t]
-  have hcancel : roleLorentzMetric + t • q + t^2 •
-      (j2DetectorCoframeDirection q * roleLorentzMetric *
-        (j2DetectorCoframeDirection q).transpose) - roleLorentzMetric =
-      t • q + t^2 • (j2DetectorCoframeDirection q * roleLorentzMetric *
-        (j2DetectorCoframeDirection q).transpose) := by
-    abel
-  rw [hcancel]
-  simp [smul_add, smul_smul, pow_two, ht]
+  simpa [j2DetectorMetricPath, D0.Algebra.finiteGram, Matrix.mul_assoc,
+    j2DetectorCoframeDirection_metric_tangent q hq] using
+    D0.Algebra.finiteGram_add_smul_difference_quotient roleLorentzMetric
+      (1 : Matrix Role Role ℝ) (j2DetectorCoframeDirection q) t ht
 
 section J2MetricPathDerivative
 
