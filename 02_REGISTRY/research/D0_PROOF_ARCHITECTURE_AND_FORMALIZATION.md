@@ -10226,3 +10226,10 @@ declaration evidence for the stated Lean theorem, not independent acceptance
 of the source equation, C0, CAR preparation, or a physical GR solution. The
 final `D0.All` build succeeds with 4,616/4,616 jobs; its recorded complete
 source digest matches the inventory digest above.
+
+
+### Published componentwise CAR checkpoint CI (26 October 2026)
+
+The componentwise complement application and declaration inventory are published on PR #402 head `dedb801302b58b9fbc997d5a01b03cdf927df36e`. GitHub [D0 guards run 5347](https://github.com/gvakhrushev/d0_15/actions/runs/40352561301) completed successfully. [D0 Lean build run 3309](https://github.com/gvakhrushev/d0_15/actions/runs/40352561765) also completed successfully, while Draft policy skipped both release-proof closure and native checkpoint capsule compilation; it is not a new Lean compilation result.
+
+The exact Lean source tree was separately checked by the serialized local helper: narrow `D0.Geometry.NonvacuumBrinkmannStencil` passed (3,302/3,302 jobs), and final public `D0.All` passed (4,616/4,616 jobs) at source digest `8fc9850dab7349482319c185dbc6946231661a9089f5790ff1ad4a816bb0b6f4`, matching the published declaration inventory. The documented source scope, componentwise threshold, axiom footprint, and open Eq. (24)/CAR preparation boundary are unchanged. PR #402 remains Draft and IN_PROGRESS; this checkpoint does not freeze or accept C0 and does not alter scientific owners or physical premises.
