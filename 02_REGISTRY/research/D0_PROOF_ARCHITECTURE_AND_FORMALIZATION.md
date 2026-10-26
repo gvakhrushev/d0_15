@@ -9988,3 +9988,66 @@ therefore reused that successful integration result. No Lean source changed
 after this digest was computed. The shared theorem remains conditional on the
 third-derivative bound; it does not derive that bound from CAR or discharge the
 open physical selection and full-variation premises.
+
+
+### Same-midpoint finite source and chronological history application (26 October 2026)
+
+The positive nonvacuum source is recorded as a C0 **candidate**, not as a
+frozen or independently accepted unit. The source owner pin is #334 commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`, file blob
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`,
+`02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`,
+§§7.1–7.2. The main registration snapshot is separately pinned at commit
+`8b94198c8dfbdf5983ad0b350b058fb30bb68a54`, blob
+`63c36b18af67fc1f113f9e33deb13cf43ddf4556`; it records the midpoint
+refinement but abbreviates the explicit CAR-slack threshold included in the
+unmerged owner version. The owner source and its PR remain open and unchanged.
+
+`D0.Geometry.sampledMatterMidpointProfile_source_eq_derivativeNorm` now
+specializes the existing five-point profile/source identity to the rate
+`sampledMatterMidpointRate ψ x₀ h` and the exact initial sample
+`sampledMatterExactValues ψ x₀ h 0`. The same midpoint derivative values
+therefore determine both the finite chronological update and the squared
+forward-history gradient read by the profile source. The theorem is an
+algebraic identity for arbitrary `ψ` and `h ≠ 0`; it does not assume `ψ` is
+smooth. Smooth refinement remains in the separate componentwise application
+of `D0.Analysis.midpointQuadrature_error_abs_le_of_thirdDerivative_bound`,
+which requires the stated C³ and third-derivative-bound hypotheses.
+
+The source-to-Lean correspondence is limited to the finite profile stencil
+and componentwise sampled-history estimate. Lean does not yet bind the
+indexed profile coefficients to samples of the fixed continuum `W`, establish
+the site map or `h=1/L`/positive-coupling premises, derive the vector-norm
+version of Eq. (24) and complementary CAR-amplitude positivity, or prove the
+explicit slack inequality. The full coframe/link/matter variation, native
+Book/clock/Info/work selection, preparation source, physical admission, and
+GR selection remain open. This support theorem does not alter the status or
+owner of the existing `brinkmann-j2-null-family` assembly item.
+
+Independent source-scope review returned **PASS** for this algebraic
+source-to-history linkage and explicitly incomplete for formalizing all of
+§§7.1–7.2. It verified the shared midpoint rate and initial sample in both
+the finite recurrence and stencil source. It did not accept C0, the complete
+positive case, a physical source, or GR closure. C0 membership remains
+unresolved and no coverage percentage is claimed.
+
+The compact compiled inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_midpoint_source_application_2026-10-26.json`
+(SHA-256 `7299c1091cb4120e2383e790845eee80680949ebfad7cd2490d00f654bfb4c14`).
+It was collected through `D0.All` with Lean 4.30.0 from dirty snapshot
+`f3063366bd90156ec6286e2c924916c97ed99fae`, with complete Lean-source digest
+`5493b6ce65db44a6c62e071703b7b825cf0f6512df26b001a488ad87562fd161` and
+collector SHA-256
+`cbb33533520c951f3ba06ae63276ecda82d090b1a722f0b9de09e86e1c58ba28`. All
+five requested declarations resolve in their expected modules with elaborated
+types, proof dependencies, source ranges, and axiom closures. The new source
+identity's compiled proof depends on the existing midpoint-history stencil
+identity and the same-rate forward-gradient equation. These declarations have
+the existing `Classical.choice`, `Quot.sound`, and `propext` footprint; no
+axiom-free claim is made.
+
+On this source, the narrow `D0.Geometry.NonvacuumBrinkmannStencil` build passed
+(3,302/3,302 jobs). The final `D0.All` integration passed (4,616/4,616 jobs),
+and its successful-build stamp matches the complete Lean-source digest above.
+`git diff --check` passes. The inventory is compiled declaration evidence,
+not an independent semantic acceptance of the source application.

@@ -15,7 +15,13 @@ noncomputable section
 This module formalizes the exact algebraic fragment in the positive
 nonvacuum recovery case, source-pinned at main commit
 `8b94198c8dfbdf5983ad0b350b058fb30bb68a54`, blob
-`63c36b18af67fc1f113f9e33deb13cf43ddf4556`, §§7.1–7.2.
+`63c36b18af67fc1f113f9e33deb13cf43ddf4556`, in
+`02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`,
+§§7.1–7.2. The corresponding unmerged scientific-owner source is pinned at
+PR #334 commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, same path, blob
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`. That version gives the explicit
+CAR-slack threshold in Eq. (24); this module formalizes only the componentwise
+midpoint defect and finite-stencil source identities, not the slack conclusion.
 
 It proves that the centered five-point transverse stencil annihilates the
 displayed harmonic quadratic/cubic family, sends the radial quadratic to
@@ -390,6 +396,28 @@ theorem finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm
     (a2 n) (b2 n) (a3 n) (b3 n) x y hh]
   rw [twoComponentMatterNormSq_midpointHistoryGradient_eq_rate
     h rate base n hh]
+
+/--
+For a two-component function `ψ`, the nonvacuum Brinkmann source is the norm
+of the derivative values used by that same chronological midpoint update.
+This is an algebraic source/update identity and assumes no regularity of `ψ`;
+the smooth-field refinement estimate is proved separately under its C^3 and
+third-derivative-bound hypotheses.
+-/
+theorem sampledMatterMidpointProfile_source_eq_derivativeNorm
+    (h coupling x₀ : ℝ) (ψ : ℝ → Fin 2 → ℝ)
+    (a2 b2 a3 b3 : ℕ → ℝ) (n : ℕ) (x y : ℝ) (hh : h ≠ 0) :
+    transverseFivePointLaplacian h
+      (fun x y => finiteTimeNonvacuumBrinkmannProfile
+        coupling (sampledMatterMidpointRate ψ x₀ h) a2 b2 a3 b3 n x y) x y =
+      -4 * coupling * twoComponentMatterNormSq
+        (sampledMatterMidpointRate ψ x₀ h n) := by
+  rw [finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm
+    h coupling (sampledMatterMidpointRate ψ x₀ h)
+    (sampledMatterExactValues ψ x₀ h 0) a2 b2 a3 b3 n x y hh]
+  rw [twoComponentMatterNormSq_midpointHistoryGradient_eq_rate
+    h (sampledMatterMidpointRate ψ x₀ h)
+    (sampledMatterExactValues ψ x₀ h 0) n hh]
 
 end
 
