@@ -746,7 +746,7 @@ CASES: list[dict[str, Any]] = [
         "id": "archive-phase-shift-reuses-transitive-permutation-theorem",
         "queries": [
             "ArchiveTopology abstract_shift_commute_implies_diagonal_constant shiftMatrix commute_with_shift_iterate",
-            "ArchivePartialTrace density_uniform_from_commute commute_with_shift_implies_diagonal_constant",
+            "ArchivePhaseShift commute_with_shift_implies_diagonal_constant archiveShiftTopology density_uniform_from_commute",
             "Fin finRotate cyclicShiftMatrix finRotateArchiveTopology partial_trace_density_uniform_under_shift",
             "GenerationTensorExactness flavor_blindness_step_of_commute commute_with_shift_entries kronecker_C_I",
             "GenerationTensorExactness flavor_blindness_step_k_of_commute stage2_flavor_blindness_of_commute stage3_tensor_exactness no h_off",
