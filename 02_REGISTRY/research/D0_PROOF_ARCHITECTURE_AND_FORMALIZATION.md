@@ -8836,3 +8836,67 @@ SHA-256 `5633a74ac635b198fbae9eeea07933d84209690fd835b1280d902f151f8a9108`.
 These are declaration and retrieval receipts, not semantic or C0 acceptance.
 All **63/63** proof-architecture tests passed against the refreshed compiled
 inventories and compact cold-start summary.
+
+### Full coordinate-composed Julia endpoint readout derivative (26 October 2026)
+
+The canonical coordinate map now composes through the actual selected Julia
+endpoint readout, not only its endpoint action formula. The theorem
+`principalFrameJuliaEndpointChartReadoutAlongLorentzTangentInCoordinates_hasFDerivAt`
+states Fréchet differentiability of the readout after substituting the inverse
+linear equivalence from `Role → RolePair → ℝ` into the four-role tangent
+parameter. Its derivative is exactly
+`roleLorentzTangentEndpointFDerivInCoordinates`. The proof uses the prior
+readout derivative at the identity and the continuous-linear chain rule; it
+retains the existing normalized-covector and nonzero-shift hypotheses.
+
+This closes the coordinate-level Julia derivative application. The parameters
+are still tangent generators passed through proper exponentials; this does not
+make them a chart covering the full proper-Lorentz group, nor prove physical
+price/source selection or close the GR variational/refinement obligations.
+
+The Lean change is commit `f1f2d8c822f7689527eb52981e8282bd3a189901`; source
+SHA-256 `fc45d33d119e26aeaca359eb7174d965ceb07a73bbd0ae56a1d930e00a650782`.
+The narrow Julia module build passed **3,216/3,216**, and the final public
+`D0.All` build passed **4,585/4,585** with Lean 4.30.0. The new compiled
+inventory resolves **13/13** declarations at clean source snapshot
+`f1f2d8c822f7689527eb52981e8282bd3a189901`, with Lean-source digest
+`283e45e7141649f0f3bc607a10956cec642ef005414ff8056398e8695c3d4417` and
+collector SHA-256 `c13b254eeb0852270fa8052f757d12da14f81e055efcb7733b569210f8a2df1c`.
+The inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_coordinate_chart_declarations_2026-10-26.json`,
+SHA-256 `df3879f1336532b91ac1b11b34fd22b144464b79538c8aee073d615fb235b7b8`.
+The new theorem retains only the existing standard classical and archived
+creator-computation trust footprint; it introduces no axiom.
+
+The seven current compiled inventories were refreshed at clean snapshot
+`07ff32674e2a92a9f677a5f5f4ce00dd2cb85278`, all against the same new
+Lean-source digest. Every requested declaration resolved:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_coordinate_chart.json` | 25/25 | `355b654293505d0043dcb6433c347e0262b050b7d94d03dd807d6bfb0e9dd194` |
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_lorentz_tangent_coordinate_chart.json` | 15/15 | `a8b0b1a5af60e0dd2bd14fe82d4970c4360b999e5fc6e5a5a69310d38906e4bc` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_lorentz_tangent_coordinate_chart.json` | 36/36 | `f77fd51d8f86f5c777d5247f892006b141f31f5835602801f6fb9bf62076b574` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_lorentz_tangent_coordinate_chart.json` | 9/9 | `481b4da6bb2abe6ce0545000c3571da124774341a7748eb48a3d7cc5cbc6f7ff` |
+| `archive_shift_topology_current_declarations_2026-10-26_lorentz_tangent_coordinate_chart.json` | 26/26 | `615f3f779dc6f472fea9ed7038cea35049e274686fd3d0ab604461a0443a3c07` |
+| `source_port_preparation_tensor_inventory_2026-10-26_lorentz_tangent_coordinate_chart.json` | 73/73 | `3c1061b2f16e449e8f51846d8b51aebe1e21047029ef6bca4a8b1d68bb42fdf0` |
+| `flat_tensor_shared_api_declarations_2026-10-26_lorentz_tangent_coordinate_chart.json` | 4/4 | `5079ef9de3e4d4ac6b39985c3063e3503553199c12a4f1e05510978e50d17be8` |
+
+The final coordinate-chart cold-start ran at clean snapshot
+`98d4af4f1f9c8b6d8745759819aab685d6dd5fc1`: **24/24** cases found all
+**156** required references, the **25-case** benchmark passed, and the exact
+source-versus-unrelated-prose regression passed. The labelled native
+raising-inverse case has **16** queries and finds all **11/11** references.
+The new exact query ranks the Lean module first and its compiled theorem fourth
+among the displayed candidates. The 8,723,571-byte output has SHA-256
+`9f24f2e22b6c5d72390abdc45c01a32cd691be304c5e8a20ffac0f3ac9bb90dc` and is
+kept outside Git. The compact summary is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_coordinate_chart.json`,
+SHA-256 `52ff54b6d4ab889a913cd6754f6ae1ab3dd9f16be07b4979f5e199d8ad789186`;
+the query-level receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_lorentz_tangent_coordinate_chart.json`,
+SHA-256 `2055b2b2c77a24259dc4b9072e62f892b1030f102aeb5fcd75d8581ad26542dc`.
+These records verify the formal API and retrieval only; physical and global
+composition obligations remain open.
+All **63/63** proof-architecture tests passed against this compiled inventory
+and the coordinate-chart cold-start summary.
