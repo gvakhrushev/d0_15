@@ -29,6 +29,12 @@ CONTRACT = pathlib.Path("02_REGISTRY/gr_assembly/contract.json")
 PRESUPPOSITIONS = pathlib.Path("02_REGISTRY/presupposition_edges.json")
 TEXT_ROOTS = ("01_BOOKS", "02_REGISTRY", "03_FORMALIZATION",
               "04_CERTIFICATES", "05_EXPERIMENTS", "tools")
+# Deterministic outputs from this search workflow live beside its source pins
+# for provenance, but must not rank themselves as source evidence.
+DERIVED_TEXT_EXCLUDED_PREFIXES = (
+    "02_REGISTRY/research/sources/"
+    "d0_proof_architecture_formalization_2026-10-24/reports/",
+)
 MAX_STRUCTURED_SEARCH_RESULTS = 5
 MAX_SEARCH_RESULTS = 10
 MIN_PIN_VERIFICATION_WINDOW = 18
@@ -1232,6 +1238,8 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         raw_path = data.get("path", {}).get("text")
         if not raw_path:
             continue
+        if raw_path.replace("\\", "/").startswith(DERIVED_TEXT_EXCLUDED_PREFIXES):
+            continue
         # ripgrep reports non-overlapping submatches. In a batched search, a
         # shorter term from another query can hide an overlapping declaration
         # name, so recover each query's terms from the whole matching line.
@@ -1252,7 +1260,12 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                                capture_output=True, text=True, encoding="utf-8", errors="replace")
     if all_files.returncode not in (0, 1):
         raise RuntimeError(f"rg file listing failed ({all_files.returncode}): {all_files.stderr}")
-    all_text_paths = list(filter(None, all_files.stdout.splitlines()))
+    all_text_paths = [
+        path for path in all_files.stdout.splitlines()
+        if path and not path.replace("\\", "/").startswith(
+            DERIVED_TEXT_EXCLUDED_PREFIXES
+        )
+    ]
     candidates_by_query: list[list[tuple[float, str, dict[str, Any]]]] = [[] for _ in queries]
     for index, terms in enumerate(terms_by_query):
         if not terms:

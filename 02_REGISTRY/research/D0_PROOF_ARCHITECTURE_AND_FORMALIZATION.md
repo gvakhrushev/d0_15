@@ -9119,7 +9119,7 @@ or discharge the remaining GR-selection premises.
 ### Same-question legacy/current search comparison (26 October 2026)
 
 The repeatable comparison at
-[`00_WORK/reports/proof_architecture_search_process_comparison_2026-10-26_10_results.json`](../../00_WORK/reports/proof_architecture_search_process_comparison_2026-10-26_10_results.json)
+[`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_10_results.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_10_results.json)
 uses one existing question from each of the 24 cold-start cases. It chooses
 the first question with an explicit source-scope mapping when one exists; the
 same 24 strings are passed to the legacy `gr_assembly.search` and current
@@ -9148,7 +9148,7 @@ and clean source snapshot `15abe1bf580af80b40e0baa5e9f5f89b81afdc9e`.
 The clean cold-start replay on the compared search implementation found all
 158 required references across 24/24 cases and passed 25/25 retrieval and
 source-impact checks. Its compact receipt is
-[`00_WORK/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json`](../../00_WORK/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json).
+[`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json).
 The receipt SHA-256 is
 `58cdcac24221e703324ead1d79b43956d0f4ea61d780fff23764656e9fd96536`; the
 8,855,702-byte full replay output has SHA-256

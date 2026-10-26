@@ -981,6 +981,26 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertTrue(any(row["line"] == 1 and row["heading"].startswith("## 8.4")
                             for row in hits[0]["evidence_lines"]))
 
+    def test_text_search_excludes_its_derived_comparison_reports(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            reports = (
+                root
+                / "02_REGISTRY/research/sources/"
+                / "d0_proof_architecture_formalization_2026-10-24/reports"
+            )
+            reports.mkdir(parents=True)
+            (reports / "comparison.json").write_text(
+                '{"query":"derivedreporttoken proof architecture"}',
+                encoding="utf-8",
+            )
+
+            hits = proof.full_text_search(
+                root, "derivedreporttoken proof architecture", limit=10
+            )
+
+        self.assertEqual(hits, [])
+
     def test_text_search_follows_exact_verified_git_source_pin(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)
@@ -1696,7 +1716,8 @@ class ProofArchitectureTests(unittest.TestCase):
     def test_current_cold_start_summary_covers_proper_lorentz_orbit_case(self) -> None:
         summary_path = (
             proof.ROOT
-            / "00_WORK/reports"
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports"
             / "proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
@@ -1766,7 +1787,8 @@ class ProofArchitectureTests(unittest.TestCase):
     def test_search_process_comparison_is_pinned_and_semantically_scoped(self) -> None:
         comparison_path = (
             proof.ROOT
-            / "00_WORK/reports"
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports"
             / "proof_architecture_search_process_comparison_2026-10-26_10_results.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
