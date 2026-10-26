@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-search-comparison-v1",
-  "snapshot_commit": "12c5f45e0bd2a8b15f35fbc94b96faddfc5a3389",
+  "snapshot_commit": "924e143ce7f5da23fab1dfe1e59d16b3863cbd35",
   "worktree_dirty": false,
   "authority_source_digests": {
     "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",

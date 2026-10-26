@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "12c5f45e0bd2a8b15f35fbc94b96faddfc5a3389",
+  "snapshot_commit": "924e143ce7f5da23fab1dfe1e59d16b3863cbd35",
   "worktree_dirty": false,
   "search_cases_found_all_sources": 24,
   "search_cases_total": 24,
@@ -25,16 +25,16 @@
   },
   "semantic_scope_review_is_manual": true,
   "replay": {
-    "source_commit": "12c5f45e0bd2a8b15f35fbc94b96faddfc5a3389",
+    "source_commit": "924e143ce7f5da23fab1dfe1e59d16b3863cbd35",
     "command": "python -X utf8 tools/proof_architecture_cold_start.py",
-    "elapsed_seconds": 277.8,
+    "elapsed_seconds": 251.7,
     "runner_sha256": "3d7249b18c2ac9221ff8d08a440a922ff59f8326f134629c99da2b3c52e573c2",
     "runner_git_blob": "5ac6645c3f3d1d984f760ca50bc898021b8202df",
     "search_engine_sha256": "05e2184768da649b9ce5f00046fa0ee3c89a2257e47fb1fe4e856127e1b8739c",
     "search_engine_git_blob": "dee00752765f862404e63a2b3a3f44bcfc12e8aa",
     "test_sha256": "5e1acfd17e4a2113ea129edc7c61e538535148d94f54a717ea6fd1b05cb55104",
     "test_git_blob": "f624a5f236eb8e6b14c253eda06bdc7a268869da",
-    "full_output_sha256": "4b5b6d230f96c775c5f29854d23835dd56d52df029dc56f219dc0471abd4bbbd",
+    "full_output_sha256": "c3a79914e05ac906afac9d48951decfa9f19510d5c2538fdc6b9a937cbcb958a",
     "full_output_bytes": 9433847
   },
   "cases": [
@@ -208,9 +208,9 @@
     }
   ],
   "published_source_tree": {
-    "remote_commit": "25b7ece2421f7f9781670b2d68114cd315a9ddfa",
-    "remote_tree_sha": "1ab7348d31419d7def6837bae470b6a3938a1243",
-    "local_tree_sha": "1ab7348d31419d7def6837bae470b6a3938a1243",
+    "remote_commit": "4e55c65e510f2767fbc7276e12e333d9cfae911c",
+    "remote_tree_sha": "5cd3ca8ed44c571b7b07179c8c5dacc648829ba6",
+    "local_tree_sha": "5cd3ca8ed44c571b7b07179c8c5dacc648829ba6",
     "tree_sha_matches": true
   },
   "lean_validation": {
@@ -235,11 +235,11 @@
     ]
   },
   "comparison_replay": {
-    "source_commit": "12c5f45e0bd2a8b15f35fbc94b96faddfc5a3389",
+    "source_commit": "924e143ce7f5da23fab1dfe1e59d16b3863cbd35",
     "runner_sha256": "bad94cde02e9eaaab806679fbbdc0cc4c83c492917f90eb39b844560e755612e",
     "query_fixture_sha256": "3d7249b18c2ac9221ff8d08a440a922ff59f8326f134629c99da2b3c52e573c2",
-    "elapsed_seconds": 77.1,
-    "full_output_sha256": "b3e780521267c607278ed4b246309f68ed50699442631e37a0341722b94b43fb",
+    "elapsed_seconds": 73.2,
+    "full_output_sha256": "bc82b2ca9b751e30077683244fc842f457d1442e8aeffed614d855d85153306b",
     "full_output_bytes": 71183,
     "metrics": {
       "query_count": 24,
