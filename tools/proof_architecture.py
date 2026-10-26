@@ -570,6 +570,157 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def alias_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
+    """Inspect alias targets and legacy book locators without accepting semantics."""
+    root: pathlib.Path = dataset["root"]
+    claim_rows = {row.get("claim_id", ""): row for row in dataset["claims"]}
+    rows: list[dict[str, Any]] = []
+    counts: dict[str, int] = {
+        "alias_count": len(dataset["aliases"]),
+        "legacy_book_label_count": 0,
+        "canonical_target_alias_count": 0,
+        "legacy_id_in_claim_registry_count": 0,
+        "legacy_ids_with_existing_book_locator_count": 0,
+        "legacy_ids_with_label_in_designated_book_count": 0,
+        "legacy_locator_line_with_label_count": 0,
+        "legacy_locator_is_first_label_line_count": 0,
+        "legacy_ids_without_designated_book_occurrence_count": 0,
+        "canonical_targets_found_count": 0,
+        "canonical_targets_missing_count": 0,
+    }
+    book_lines: dict[str, list[str]] = {}
+    book_pins: dict[str, dict[str, Any]] = {}
+
+    for alias in dataset["aliases"]:
+        alias_id = alias.get("legacy_id", "")
+        kind = alias.get("kind", "")
+        item: dict[str, Any] = {
+            "alias_id": alias_id,
+            "kind": kind,
+            "first_reference": alias.get("first_reference", ""),
+            "note": alias.get("note", ""),
+            "interpretation": "Lookup/source candidate only; no semantic merge or C0 disposition is inferred.",
+        }
+
+        if kind == "CANONICAL_TARGET":
+            counts["canonical_target_alias_count"] += 1
+            target_id = alias.get("canonical_claim_id", "")
+            target = claim_rows.get(target_id)
+            item.update({
+                "canonical_claim_id": target_id,
+                "target_claim_found": target is not None,
+            })
+            if target is None:
+                counts["canonical_targets_missing_count"] += 1
+            else:
+                counts["canonical_targets_found_count"] += 1
+                item["canonical_claim"] = {
+                    field: target.get(field)
+                    for field in (
+                        "claim_id", "book", "section", "lean_module", "lean_theorem",
+                        "lean_status", "uses_bridge_assumptions", "assumption_ids",
+                        "release_status",
+                    )
+                }
+            book_name = alias.get("first_reference", "")
+            valid_book_name = bool(re.fullmatch(r"BOOK_[A-Za-z0-9_.-]+\.md", book_name))
+            book_path = root / "01_BOOKS" / book_name if valid_book_name else None
+            item["book_source_path"] = (
+                book_path.relative_to(root).as_posix() if book_path is not None else None
+            )
+            item["book_source_exists"] = bool(book_path and book_path.is_file())
+            if book_path and book_path.is_file():
+                pin = _book_source_pin(root, book_path)
+                item["book_source_pin"] = pin
+                book_pins[pin["path"]] = pin
+            item["resolution_status"] = (
+                "canonical_target_found" if target is not None else "canonical_target_missing"
+            )
+            rows.append(item)
+            continue
+
+        if kind != "LEGACY_BOOK_LABEL":
+            item["resolution_status"] = "unrecognized_alias_kind"
+            rows.append(item)
+            continue
+
+        counts["legacy_book_label_count"] += 1
+        item["claim_registry_contains_legacy_id"] = alias_id in claim_rows
+        counts["legacy_id_in_claim_registry_count"] += alias_id in claim_rows
+        match = re.fullmatch(r"(BOOK_[A-Za-z0-9_.-]+\.md):([1-9][0-9]*)",
+                             alias.get("first_reference", ""))
+        if match is None:
+            item["resolution_status"] = "invalid_book_line_reference"
+            rows.append(item)
+            continue
+
+        book_name, line_text = match.groups()
+        line_number = int(line_text)
+        book_path = root / "01_BOOKS" / book_name
+        item["locator_source_path"] = book_path.relative_to(root).as_posix()
+        item["locator_line"] = line_number
+        if not book_path.is_file():
+            item["resolution_status"] = "book_source_missing"
+            rows.append(item)
+            continue
+
+        relative_path = book_path.relative_to(root).as_posix()
+        if relative_path not in book_lines:
+            book_lines[relative_path] = book_path.read_text(encoding="utf-8-sig").splitlines()
+            book_pins[relative_path] = _book_source_pin(root, book_path)
+        lines = book_lines[relative_path]
+        item["book_source_pin"] = book_pins[relative_path]
+        if line_number > len(lines):
+            item["resolution_status"] = "line_out_of_range"
+            rows.append(item)
+            continue
+
+        counts["legacy_ids_with_existing_book_locator_count"] += 1
+        occurrence_lines = [index for index, line in enumerate(lines, start=1)
+                            if alias_id and alias_id in line]
+        line_text_value = lines[line_number - 1]
+        line_has_label = bool(alias_id and alias_id in line_text_value)
+        if line_has_label:
+            counts["legacy_locator_line_with_label_count"] += 1
+        if occurrence_lines:
+            counts["legacy_ids_with_label_in_designated_book_count"] += 1
+            if occurrence_lines[0] == line_number:
+                counts["legacy_locator_is_first_label_line_count"] += 1
+        else:
+            counts["legacy_ids_without_designated_book_occurrence_count"] += 1
+
+        item.update({
+            "resolution_status": "existing_line_anchor_with_label"
+            if line_has_label else "existing_line_anchor_without_label_text",
+            "locator_line_contains_alias_id": line_has_label,
+            "first_alias_occurrence_line_in_designated_book": (
+                occurrence_lines[0] if occurrence_lines else None
+            ),
+            "alias_occurrence_count_in_designated_book": len(occurrence_lines),
+            "locator_is_first_alias_occurrence_in_designated_book": (
+                bool(occurrence_lines) and occurrence_lines[0] == line_number
+            ),
+            "locator_line_text": line_text_value,
+        })
+        rows.append(item)
+
+    return {
+        "schema": "d0-alias-source-candidate-view-v1",
+        "snapshot_commit": dataset["snapshot_commit"],
+        "worktree_dirty": dataset.get("worktree_dirty"),
+        "alias_registry_sha256": dataset["source_digests"].get(ALIASES.as_posix()),
+        "claim_registry_sha256": dataset["source_digests"].get(CLAIMS.as_posix()),
+        "counts": counts,
+        "rows": rows,
+        "book_sources": book_pins,
+        "interpretation": (
+            "Existing line anchors, literal labels, and canonical-target lookups are source candidates only. "
+            "They do not establish semantic equivalence, a mathematical-unit identity, a Lean application, "
+            "release status, or independent C0 acceptance."
+        ),
+    }
+
+
 def _claim_id_pattern(claim_ids: Any) -> re.Pattern[str]:
     """Match exact claim-ID tokens without matching them inside longer IDs."""
     identifiers = sorted({str(value) for value in claim_ids if str(value)},
@@ -2354,6 +2505,8 @@ def main() -> int:
                            help="enumerate all verified current pinned Lean evidence sources in one pass")
     sub.add_parser("claim-sources",
                    help="resolve claims.csv book/section locators to exact heading candidates")
+    sub.add_parser("alias-sources",
+                   help="inspect alias target rows and legacy book line locators as candidates")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -2420,6 +2573,8 @@ def main() -> int:
             )
         elif args.command == "claim-sources":
             result = claim_source_candidate_view(data)
+        elif args.command == "alias-sources":
+            result = alias_source_candidate_view(data)
         else:
             if not args.key:
                 parser.error("impact requires KEY unless --base is supplied")
@@ -2430,7 +2585,7 @@ def main() -> int:
     print(_render_text(
         result,
         complete_arrays=(args.command == "crosswalk" and args.all_current)
-        or args.command == "claim-sources",
+        or args.command in {"claim-sources", "alias-sources"},
     ))
     return 0
 

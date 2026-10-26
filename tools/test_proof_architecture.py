@@ -2975,6 +2975,55 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn("None of these fields accepts a claim statement", view["interpretation"])
 
+    def test_alias_source_candidates_separate_locator_integrity_from_semantic_resolution(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            books = root / "01_BOOKS"
+            books.mkdir()
+            (books / "BOOK_01_TEST.md").write_text(
+                "## Alias source candidates\n"
+                "`OLD-EXACT` names the historical assertion.\n"
+                "An equation is recorded here without the legacy label.\n"
+                "Later label: `OLD-DELAYED`.\n",
+                encoding="utf-8",
+            )
+            data = dataset(root)
+            data["aliases"] = [
+                {"legacy_id": "OLD-EXACT", "kind": "LEGACY_BOOK_LABEL",
+                 "canonical_claim_id": "", "first_reference": "BOOK_01_TEST.md:2",
+                 "note": "Historical label."},
+                {"legacy_id": "OLD-DELAYED", "kind": "LEGACY_BOOK_LABEL",
+                 "canonical_claim_id": "", "first_reference": "BOOK_01_TEST.md:3",
+                 "note": "Equation anchor."},
+                {"legacy_id": "OLD-MISSING", "kind": "LEGACY_BOOK_LABEL",
+                 "canonical_claim_id": "", "first_reference": "BOOK_99_MISSING.md:1",
+                 "note": "Missing source control."},
+                {"legacy_id": "OLD-INVALID", "kind": "LEGACY_BOOK_LABEL",
+                 "canonical_claim_id": "", "first_reference": "../BOOK_01_TEST.md:1",
+                 "note": "Traversal control."},
+                {"legacy_id": "OLD-CANONICAL", "kind": "CANONICAL_TARGET",
+                 "canonical_claim_id": "CLM-1", "first_reference": "BOOK_01_TEST.md",
+                 "note": "Explicit target."},
+            ]
+
+            view = proof.alias_source_candidate_view(data)
+
+        by_id = {row["alias_id"]: row for row in view["rows"]}
+        self.assertEqual(view["schema"], "d0-alias-source-candidate-view-v1")
+        self.assertEqual(view["counts"]["legacy_book_label_count"], 4)
+        self.assertEqual(view["counts"]["legacy_ids_with_existing_book_locator_count"], 2)
+        self.assertEqual(view["counts"]["legacy_locator_line_with_label_count"], 1)
+        self.assertEqual(by_id["OLD-EXACT"]["resolution_status"],
+                         "existing_line_anchor_with_label")
+        self.assertEqual(by_id["OLD-DELAYED"]["resolution_status"],
+                         "existing_line_anchor_without_label_text")
+        self.assertEqual(by_id["OLD-DELAYED"]["first_alias_occurrence_line_in_designated_book"], 4)
+        self.assertEqual(by_id["OLD-MISSING"]["resolution_status"], "book_source_missing")
+        self.assertEqual(by_id["OLD-INVALID"]["resolution_status"],
+                         "invalid_book_line_reference")
+        self.assertTrue(by_id["OLD-CANONICAL"]["target_claim_found"])
+        self.assertIn("do not establish semantic equivalence", view["interpretation"])
+
     def test_current_claim_source_view_lists_unlocated_book_headings_as_candidates(self) -> None:
         path = (
             proof.ROOT
