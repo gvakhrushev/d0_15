@@ -21,13 +21,13 @@ def finiteGram {ι : Type*} [Fintype ι]
   Θ * η * Θ.transpose
 
 /-- A Gram matrix is symmetric when its fixed bilinear form is symmetric. -/
-theorem finiteGram_symmetric {ι : Type*} [Fintype ι] [DecidableEq ι]
+theorem finiteGram_symmetric {ι : Type*} [Fintype ι]
     (η Θ : Matrix ι ι ℝ) (hη_transpose : η.transpose = η) :
     (finiteGram η Θ).transpose = finiteGram η Θ := by
   simp [finiteGram, Matrix.transpose_mul, hη_transpose, Matrix.mul_assoc]
 
 /-- Right multiplication by an isometry of `η` leaves its Gram matrix fixed. -/
-theorem finiteGram_right_invariant {ι : Type*} [Fintype ι] [DecidableEq ι]
+theorem finiteGram_right_invariant {ι : Type*} [Fintype ι]
     (η Θ Λ : Matrix ι ι ℝ)
     (hΛ : Λ * η * Λ.transpose = η) :
     finiteGram η (Θ * Λ) = finiteGram η Θ := by
