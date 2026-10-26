@@ -93,9 +93,6 @@ for n in (2,3,4):
     F=S.eye(2**n)-compression.T*compression
     check(ne.exact_matrix_equal(F,target),
           "FULL original native G/CX feedback equals 4p^3 even projector")
-    check(ne.exact_matrix_equal(S.eye(2**n)-p**3*S.eye(2**n),
-          (1-p**3)*S.eye(2**n)),
-          "no hidden scalar renormalization on input rank")
     zeta=S.Rational(1,2**20)
     determinant=(S.eye(2**n)-zeta*F).det()
     expected_det=(1-4*zeta*p**3)**(2**(n-1))
