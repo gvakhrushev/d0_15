@@ -9045,3 +9045,73 @@ SHA-256 `490726fbc8aa54fb7b95bb472b2044caf30eae2a489cef25c21471b482631fdd`;
 the query-level receipt is
 `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_joint_coframe_local_frechet.json`,
 SHA-256 `f42e48e0108233165319d273b34cc43894dc0a2cda21f09b29f28c80e5db14dc`.
+
+### Local 40-coordinate Julia readout at arbitrary proper base links (26 October 2026)
+
+The Julia endpoint differential now applies at any supplied rolewise
+determinant-one Lorentz link. The family
+`roleLorentzTangentProperFamilyAtBase Λ₀ hDet₀ q` is the right translation
+`Λ₀ r * exp (rolePairsEquivLorentzTangent (q r))`; `hΛ₀` retains the
+rolewise Lorentz-isometry hypotheses and `hDet₀` retains determinant one.
+The theorem
+`principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt`
+proves the Fréchet derivative at `(F₀, 0)` for the 16 coframe matrix entries
+and 24 canonical tangent coordinates `Role → RolePair → ℝ`. Its output is
+the coframe variation paired with the endpoint derivative of the
+right-translated Lorentz action on `x`.
+
+The proof composes the exact Eq. (30a) inverse-coframe recovery with the
+Eq. (27)/(28) endpoint readout identity over one Julia query family. It uses
+local normalized-covector and nonzero-shift chart conditions for every coframe
+in a positive-radius neighborhood. The covector field itself need not be
+differentiable: local equality of the exact readout with the Lorentz-action
+model supplies the derivative. `RolePair` coordinates reuse the existing
+six-dimensional Lorentz tangent API at each of four roles.
+
+The narrow module build passed **3216/3216** targets and the final public
+`D0.All` build passed **4585/4585** targets at Lean source digest
+`33d522c7340f186f551d2560ec694833548068c528523378d3503b5558c1d21a`.
+The fresh base-link inventory resolves **14/14** declarations at clean
+snapshot `f337b30e039efcc1fd30d355df35e7e6bbaf5478`; its SHA-256 is
+`e1851187b71cdf5abaa899e60bfdf2f131eb722cf74eadd3d24ab6806dc41278`:
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_base_link_frechet_declarations_2026-10-26.json`.
+The earlier local Fréchet inventory was refreshed as an additional versioned
+11/11 index. Seven shared inventories were also emitted under the
+`_julia_base_link_frechet` suffix, preserving their earlier snapshots while
+pinning the current Lean source digest:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet.json` | 11/11 | `430fcbcdf95783c19925a8418281f7edcf44ef687d8a39ac955989b231212e8c` |
+| `archive_shift_topology_current_declarations_2026-10-26_julia_base_link_frechet.json` | 26/26 | `921f5899b6d7d7fe363f077bc36e0607324b65f24bc63b9090cf287b324948f9` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_julia_base_link_frechet.json` | 36/36 | `045d81853bc251486b1f98d404f1bdb9924e59d6d0b4c51207510faa1a9dd6c8` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_julia_base_link_frechet.json` | 25/25 | `fb8ebe43d74cd663e752ac36e508bbf355a7fba69756a0734853dee68af88407` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_julia_base_link_frechet.json` | 9/9 | `01f067f3e7400f7cafb5ece028a622cd04732735cbaf8f8299a5991cdbeaccd5` |
+| `flat_tensor_shared_api_declarations_2026-10-26_julia_base_link_frechet.json` | 4/4 | `aa9f975fc0267b833ff81fd670465038346526029c393a42d2a49a7c4fae0002` |
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_julia_base_link_frechet.json` | 15/15 | `e8045d2a6c921c494c0bc18a880a6fef7b87bf32a273e0374fb870705076a9b7` |
+| `source_port_preparation_tensor_inventory_2026-10-26_julia_base_link_frechet.json` | 73/73 | `4ad161f4aa244ce6d424d507ca3f65cf5db9c2a2279d965cd6d85e1be01158ff` |
+
+The clean cold-start replay ran at snapshot
+`7729f81e1f9da4d28133edda4cdfda04b730a977`: **24/24** retrieval cases found
+all **158/158** required references; the **25-case** benchmark and exact-source
+impact regression passed. The labelled Julia case has **18** queries and
+finds **13/13** references. The arbitrary-base inventory ranks second for its
+exact theorem query; the local Fréchet inventory ranks fifth for its exact
+declaration-plus-inventory query. The earlier joint proper-Lorentz recovery
+inventory remains discoverable at rank eight. The full **8,811,694-byte**
+output is kept outside Git and has SHA-256
+`7a951f9c7a2183d0f11a31fbb8200e1ea7c683626e579ef14e5526f83706de2e`.
+The compact summary is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_julia_base_link_frechet.json`,
+SHA-256 `1abb854c1ff07be6d579ec763c85c076f99dbde89d903e7c031f8adb8e5d937e`;
+the query-level receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_base_link_frechet.json`,
+SHA-256 `26a73a420d1e34716dca46e2241e0245219c3cd8d373a2f54f7fff7eb0a4a3e1`.
+All **63/63** proof-architecture tests passed against this refreshed summary
+and the current inventory versions.
+
+This theorem differentiates the readout at supplied proper links and does
+not assert that an exponential chart covers the Lorentz group. It does not
+vary matter variables, select or differentiate the physical Book/action/
+source/price, establish the physical execution or variational pullback (31),
+or discharge the remaining GR-selection premises.
