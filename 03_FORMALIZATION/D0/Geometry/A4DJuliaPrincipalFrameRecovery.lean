@@ -31,9 +31,10 @@ This is finite matrix/query composition only. The module does not derive the
 raising-query representation hypothesis for an arbitrary externally supplied
 family, constrain `M_r` to the source's proper-Lorentz endpoint family, or
 prove smoothness of the full inverse and `D R D Φ = I`. For the canonical
-query family with a fixed Lorentz link map, it now proves the coframe block of
-the readout derivative in all 16 matrix directions; the link directions are
-still held fixed. The open-chart result retains symmetric endpoint forms,
+query family with a fixed Lorentz link map, it proves the coframe block of the
+readout derivative in all 16 matrix directions and composes its exact
+recovery with the link transport to identity; the link directions are still
+held fixed. The open-chart result retains symmetric endpoint forms,
 their isometry, a normalized covector, a
 nonzero projected metric covector, and the positive square-root branch. The
 null specialization additionally retains nondegeneracy and one selected
@@ -385,6 +386,48 @@ theorem principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt
   rw [hreadout]
   exact (((ContinuousLinearMap.mul ℝ RoleMat).flip ((Λ.transpose)⁻¹)).hasFDerivAt
     (x := F))
+
+/-- With the observed link held fixed, the canonical query family recovers
+the entire inverse-coframe matrix after applying the source's right-link
+transport. This is an exact left-inverse application of the Eq. (30a)
+readout, with no invertibility premise on `F`. -/
+theorem principalFrameJuliaQueryFamily_recoveredInverseCoframe
+    (F Λ : RoleMat)
+    (M : Role → RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (hΛ : IsRoleLorentz Λ) :
+    principalFrameInverseCoframeReadout
+      (principalFrameObservedQueryColumnMatrix
+        (principalFrameJuliaQueryFamily F Λ.transpose M)) * Λ.transpose = F := by
+  have hLorentz : Λ * roleLorentzMetric * Λ.transpose = roleLorentzMetric := by
+    simpa [IsRoleLorentz] using hΛ
+  rw [principalFrameJuliaQueryFamily_columnMatrix]
+  rw [principalFrame_inverse_coframe_readout F Λ.transpose hLorentz]
+  rw [Matrix.mul_assoc, principalFrame_lorentz_inverse_mul Λ.transpose hLorentz]
+  simp
+
+/-- Fréchet derivative of the composed Julia coframe recovery in all 16
+inverse-coframe directions. The actual query map, vacuum observation,
+Eq. (30a) inverse readout, and fixed Lorentz-link transport compose to the
+identity, so this is the fixed-link coframe block of `D R D Φ = I`. It does
+not include any variation of the 24 link directions. -/
+theorem principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt
+    (F Λ : RoleMat)
+    (M : Role → RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (hΛ : IsRoleLorentz Λ) :
+    HasFDerivAt
+      (fun Z : RoleMat => principalFrameInverseCoframeReadout
+        (principalFrameObservedQueryColumnMatrix
+          (principalFrameJuliaQueryFamily Z Λ.transpose M)) * Λ.transpose)
+      (ContinuousLinearMap.id ℝ RoleMat) F := by
+  have hfun :
+      (fun Z : RoleMat => principalFrameInverseCoframeReadout
+        (principalFrameObservedQueryColumnMatrix
+          (principalFrameJuliaQueryFamily Z Λ.transpose M)) * Λ.transpose) =
+        fun Z : RoleMat => Z := by
+    funext Z
+    exact principalFrameJuliaQueryFamily_recoveredInverseCoframe Z Λ M hΛ
+  rw [hfun]
+  exact hasFDerivAt_id (𝕜 := ℝ) F
 
 end JuliaPrincipalFrameCoframeDerivative
 
