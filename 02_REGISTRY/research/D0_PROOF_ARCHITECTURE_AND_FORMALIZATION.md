@@ -8548,3 +8548,19 @@ composition: it does not construct a six-coordinate Lorentz chart, prove
 integrability of every tangent, supply the complete 24-direction joint
 `D R D Φ = I`, establish physical admission or price/source selection, or
 close GR or C0.
+
+The clean cold-start replay for this joint-path slice ran at published commit
+`39a401dd5a4e9d1efc80f403f3287e7f148dbaa8` with `worktree_dirty=false`. All
+**24/24** search cases found every required source (**151** source references
+total); the **25-case** benchmark and exact-source-vs-unrelated-prose impact
+regression passed. The Julia case found all **6/6** required sources across
+ten queries. Its joint-path API query ranked the Lean module first; the
+inventory query ranked this artifact, the Lean module, and the compiled
+declaration inventory first through third. The 8,427,914-byte full output has
+SHA-256
+`4b41bce445530dee5def4ce72b6b6102e4b945c5d6df56e45d153ad5f233dad9` and is
+kept outside Git. The compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_joint_coframe_link_derivative.json`,
+SHA-256 `116dd142ea120ae4762c6abda8c8e934ddd4515360a5975d63007c3290e7bf92`.
+These results validate retrieval and recorded provenance only; semantic scope
+review remains manual and the physical limits above remain open.
