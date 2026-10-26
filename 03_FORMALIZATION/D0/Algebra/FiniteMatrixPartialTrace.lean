@@ -45,7 +45,7 @@ theorem finiteMatrixPartialTraceLeft_tensorProduct
 over the first factor commutes with `C`. -/
 theorem finiteMatrixPartialTraceLeft_commutes_rightTensor
     {V N R : Type*} [Fintype V] [DecidableEq V]
-    [Fintype N] [DecidableEq N] [CommSemiring R]
+    [Fintype N] [CommSemiring R]
     (M : Matrix (V × N) (V × N) R) (C : Matrix N N R)
     (h_comm :
       M * finiteMatrixTensorProduct (1 : Matrix V V R) C =
