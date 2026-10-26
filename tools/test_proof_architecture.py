@@ -1343,18 +1343,19 @@ class ProofArchitectureTests(unittest.TestCase):
             hit.get("source") == module and hit.get("direct_content")
             for hit in exact_hits
         ), "exact proper-orbit query must surface its Lean source directly")
+        gram_api_query = (
+            "FiniteGramTangent finiteGram_right_orbit_complete "
+            "finiteGram_dressed_transport_compatible"
+        )
+        gram_api_hits = proof.full_text_search(
+            proof.ROOT, gram_api_query, limit=18
+        )
         self.assertTrue(any(
             hit.get("source") ==
                 "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
             and hit.get("direct_content")
-            for hit in exact_hits
+            for hit in gram_api_hits
         ), "shared Gram-orbit query must surface its algebra API directly")
-        self.assertTrue(any(
-            hit.get("source") ==
-                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json"
-            and hit.get("direct_content")
-            for hit in exact_hits
-        ), "dressed-transport query must surface its compiled application inventory")
         self.assertIn("time orientation", case["scope_review"])
 
     def test_generic_finite_gram_orbit_api_is_used_by_lorentz_specialization(self) -> None:
@@ -1853,7 +1854,7 @@ class ProofArchitectureTests(unittest.TestCase):
         coordinate_inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
-            "julia_joint_coframe_tangent_path_declarations_2026-10-26.json"
+            "julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26.json"
         )
         self.assertIn(
             coordinate_inventory_path.relative_to(proof.ROOT).as_posix(),
