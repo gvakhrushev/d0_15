@@ -479,6 +479,7 @@ CASES: list[dict[str, Any]] = [
             "proper row action Lorentz endpoint det one CAR Julia recovery adapter",
             "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz Eq27 Eq28",
             "правый Lorentz endpoint одновременно CAR Eq 27 и query Eq 28 один recovered endpoint",
+            "principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt fixed Lorentz link derivative",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -525,7 +526,10 @@ CASES: list[dict[str, Any]] = [
             "retains `det M = 1`, while the null branch derives Eq. (28)'s projected-covector and positive-branch "
             "conditions. A physical application must still bind the admitted endpoint to the row-action matrix "
             "and prove its properness; smoothness of the full inverse or all-jet pullback, physical query admission, "
-            "price/source selection, and GR closure remain open."
+            "price/source selection, and GR closure remain open. The compiled "
+            "`principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt` theorem proves the 16-entry "
+            "inverse-coframe readout derivative with the Lorentz link and endpoint maps fixed; it supplies none "
+            "of the remaining 24 link jets or the joint all-jet identity."
         ),
     },
     {

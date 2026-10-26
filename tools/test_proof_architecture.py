@@ -1722,6 +1722,12 @@ class ProofArchitectureTests(unittest.TestCase):
             "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz",
             scope,
         )
+        self.assertTrue(any(
+            "principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt" in query
+            for query in case["queries"]
+        ))
+        self.assertIn("16-entry inverse-coframe readout derivative", scope)
+        self.assertIn("24 link jets", scope)
         self.assertIn(15, source_pin["scope_query_indexes"])
         self.assertNotIn(14, source_pin["scope_query_indexes"])
         self.assertIn("IsRoleLorentz Λ", scope)
