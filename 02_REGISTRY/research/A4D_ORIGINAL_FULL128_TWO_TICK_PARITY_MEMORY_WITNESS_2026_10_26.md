@@ -123,3 +123,48 @@ This is genuine *no-reset* chronological Kraus scaling, not a fresh state reset 
 The companion checker [check_two_tick_parity_witness.py](sources/d0_original_full128_future_even_algebra_2026-10-22/check_two_tick_parity_witness.py) IMPORTS, without editing, the original fully authenticated modular K constructor from the pre-existing same directory. It checks ALL 128 one-tick supertraces vanish mod each original prime, the one positive original two-tick (9,91) supertrace has the eight exact nonzero residues (7), each corresponding chronological original K and 65-labelling ratio is preserved, and the two normalized sector Born probabilities are distinct in every good reduction. The analytic CAR support argument above establishes (5) in characteristic zero; a finite list of modular zero tests ALONE would NOT establish one-tick blindness, so no such invalid inference is used. No original 128-tick engine reimplementation, new source mask or extra quantum primitive has been inserted.
 
 **Scientific scope:** mathematically exact native CAR16 future-memory horizon for TWO legitimate prepared DATA states and one original closed experiment. \`GR_closed=false; full_D0_action_selected=false; compulsory_M1_test_suite_selected=false\`. The original BOOK03 full observer, scene Hodge/cut/clock, retained fine history Cost/Info, all42 geometric fields, arbitrary additional future alphabets and physical preparation of the chosen mixed parity-block states retain their previous independent obligations.
+
+
+## 5. THEOREM D — one ORIGINAL two-tick chronology physically distinguishes the TWO orders of the SAME recorded labels
+
+The correct original closed-system history includes ORDER, not merely a multiset of fine Born labels. Compare the two genuine sequential histories of the SAME ORIGINAL instrument
+\[
+\gamma_{AB}=(9,91),\qquad \gamma_{BA}=(91,9).
+\]
+Their fine-label multisets, total two-tick length and per-label record symbol costs agree, but their genuine no-reset effects are
+\[
+E_{AB}=K_9^\dagger K_{91}^\dagger K_{91}K_9,\qquad
+E_{BA}=K_{91}^\dagger K_9^\dagger K_9 K_{91}.
+\tag{13}
+\]
+**They are NOT the same positive effect.** Under the very same previously owned exact original eight good split prime embeddings, the two relevant SOURCE-INDEPENDENT parity and trace functionals give
+
+\[
+\begin{array}{c|rrrrrrrr}
+\mathfrak p &229&401&521&709&761&809&941&1009\\\hline
+\operatorname{Tr}(E_{AB}-E_{BA})\pmod{\mathfrak p}
+&205&188&362&606&168&90&363&407\\
+\operatorname{Tr}[\Pi(E_{AB}-E_{BA})]\pmod{\mathfrak p}
+&61&265&238&4&23&153&677&273
+\end{array}
+\tag{14}
+\]
+All residues are strictly nonzero in their respective finite fields. A single one of these actual good reductions proves the algebraic nonvanishing of the ORIGINAL unmodified complex-matrix contrast. The source-independent ordinary trace result even proves a different raw record law on the maximally mixed \(\rho=I_{16}/16\):
+\[
+\boxed{
+\Pr_{\rho}(9,91)\ne\Pr_{\rho}(91,9).
+}\tag{15}
+\]
+The independent original complex CAR16/Julia numerical check gives
+\[
+\Pr_{I/16}(9,91)-\Pr_{I/16}(91,9)
+\simeq +1.1255754688803\cdot10^{-11}.
+\tag{16}
+\]
+The parity-sensitive trace in (14) proves the chronological contrast is ALSO distinguishable in the signed difference \(\rho_+-\rho_-\), not an artifact of one chosen mixed input.
+
+**Fundamental interpretation, properly scoped:** chronological order is encoded in \(K_{91}K_9\) versus \(K_9K_{91}\) and tested by the ACTUAL retained two-tick fine Born archive. NO third primitive \`compare history\` was added, and NO external observer time enters the formulas; two genuine internally counted ticks are enough. Equal raw label MULTISETS, equal endpoint symbol COST and equal word length are insufficient to declare two histories physically equivalent. The original prospective \(D_{\min}\) may canonize only histories whose FULL admitted future records/price/task are equivalent; sorting labels before comparing descriptions would destroy (15).
+
+In the previously owned 65-label causal predictor the two corresponding chronological coarse histories are \((5,46)\) and \((46,5)\), each with original scaling \(p^2\). The true noncommuting order difference is therefore also preserved and its **mathematical** coarse conditional probability contrast is the fine one divided by \(p^2>0\). The independent Golden fine-port randomness still retains its priced physical contribution and cannot be deleted from the actual recorded history.
+
+**No false gravitational promotion:** This exact two-tick ordered-memory theorem proves one nontrivial physical property of the ORIGINAL finite CAR16 foundation. It does not by itself select Book03's H+J+R physical action, guarantee these two initial input states are the compulsory universe source, prove geometric Euler equations, identify the original spacetime metric or close OTO.
