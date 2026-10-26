@@ -28099,6 +28099,50047 @@ print(json.dumps({
 }
 ```
 
+## 7cf. Construct the reciprocal controller and bound its error on every unitary and cut direction
+
+26 October2026. SAME #334 / constitutive/native-programme-v1; bounded
+implementation in native realization, not a new task or equation-class
+claim. Input1ac29e4d supplies the known recorder649; incoming11b4f523's
+direct-master/source-routing checkpoint is preserved. The changed input
+is an ACTUAL finite controlled word instead of an unimplemented SO
+existence theorem. The consumer is7by622's controller premise. This
+application supplies a finite implementation and a certified error for
+one SPECIFIED real-WORK recorder. Exact source substitution remains
+conditional on the comparison below and its physical application.
+Concurrent7cc650--656 now supplies a SHORT EXACT even-Golden
+recorder/controller for a Hermitian target and its coherently encoded
+cut. That result is already usable at its own hypotheses and is NOT
+made dependent on this numerical synthesis. This packet fixes the
+EARLIER one-G recorder649 and its readonly whole-record comparison;
+its target/cut/task are different. A proved source/observation transport
+may make the shorter coherent process appropriate; changing the word
+and cut is not that transport by itself. No requirement to preserve
+this particular microscopic word is added to GR closure.
+
+This implementation remains SUPPORTING work for that prescribed
+recorded task. It does not provide an unknown reader's full Stinespring
+completion,
+select the paired cut, or derive original physical scene placement.
+
+### Reuse the owned compiler theorem, and actually find the word
+
+7aq374--376 already gives inverse-closed finite native letters with an
+exact predicate-false identity and a dense actual true SO block;7at
+extends the same construction to a fixed larger WORK packet. Those
+results are consumed, not reproved. Their admitted interface is
+addressed G/CX and SourceI on a separate helper/Spin, with flags, packet,
+helper and immutable oldRIGHT disjoint. They do not identify this
+interface with the original RawZone source placement.
+
+Let W_* be the ALL-COLUMN16x16 recorder649, in order(B,c,P,q):
+CX(c,q);G_P;CX(P,c);CX(c,B);CX(B,c). Its entries lie in the original
+positive embedding Q(a), a^4+a^2-1=0, p=a^2. Exact field QR produces
+21 chronological Givens factors and verifies their product against
+ALL256 entries of W_*. Only five angle pairs occur:
+
+    (cos,sin)=(0,-1),(a,p),(p,a),(0,1),(a,-p).
+
+Thus two target words suffice: theta_G and a quarter turn; the other
+three use inverse or chronological theta^-1;quarter. This is algebraic
+factorization of the specified operator, not another native gate.
+
+For SO3 coordinates(i,j,k), use signed generators
+g1=R_(i,j)(32theta_G), g2=R_(i,k)(32theta_G). The quaternion search
+uses axes+z and-y, hence half-angle16theta_G; its PHYSICAL matrices
+use G^32. The returned words are real finite DAGs, not normalized
+successful branches. The numerical search follows the balanced
+commutator algorithm of [Dawson--Nielsen, Sections3--4](https://arxiv.org/pdf/quant-ph/0505030).
+Its finite nearest-word net is a heuristic search device; no global
+covering certificate, complexity estimate or new universality claim
+is inferred from this run. None of its floating-point endpoint/error
+diagnostics is used as scientific certification.
+
+The actual returned depths are7: lengths1,270,627 and1,282,350 signed
+letters for theta and quarter, sharing4,689 reachable DAG nodes.
+Sequence/cat children are CHRONOLOGICAL, so later matrices multiply
+on the left; inverse reverses chronology and signs. Every node length
+and both axis multiplicities are independently recomputed below.
+
+### Expand each letter into the existing primitive vocabulary
+
+For an ordered plane i!=j of the four-bit packet, an invertible target
+CNOT map sends i xor j to one pivot bit using
+t=weight(i xor j)-1<=3 copies. The other three target bits together
+with orientation o give four flag bits. Their required pattern has
+o=1. The exact Fourier identity is
+
+    2 sum_(S subset{1,2,3,4}) (-1)^[(pattern+flags).S]
+       =32 if flags=pattern, and0 otherwise.                (680)
+
+Compute each parity onto the parked pivot by ordinary CX, apply its
+signed G^2, and undo the parity. The entire pivot is parked on the
+physical helper port ONCE. A negative power is the explicit batch
+SourceI^2;G^2;SourceI^2, four SI for that entire power. Exactly eight
+Fourier cells are negative. This gives, including parking and the
+two target-linear maps,
+
+    generator counts=(32G,32SI,(70+2t)CX),
+    length=134+2t<=140.                                    (681)
+
+The completed word is I on orientation0 and all target columns outside
+{i,j}, R_ij(+-32theta_G) on orientation1, and I on EVERY helper/Spin
+column. The sign accounts for whether the mapped i has pivot value1.
+No X/AND, arbitrary pulse or new controlled primitive is inserted.
+Two literal expanded ALL256-column fixtures verify both an ordinary
+plane and a sign/relabelled plane, including dirty helper/Spin. The
+exact Fourier sum is also checked for every flag/pattern assignment.
+For the final21-factor word, ALL72 actually used plane/sign instances
+have their expanded primitive leaves, addresses and inventories checked.
+
+Fresh signed inverse macros have681's inventory. They are independently
+specified finite words with inverse ENDPOINTS. The literal raw inverse
+of an already specified macro is a DIFFERENT valid word:32G,224SI,
+(70+2t)CX, length326+2t. The final constructor explicitly chooses the
+fresh signed expansion on inverse DAG nodes; it does not silently call
+the shorter recipe the owned raw-leaf inverse.
+
+The scratch AST initially came from a variant containing one changed
+UNUSED SELECT method. That variant and its receipts were preserved.
+The final helper instead loads the EXACT first22,247 bytes of owned
+7bo's frozen33,418-byte fence, SHA256
+5e53f361a7d2e579fc90b3f3668dac33f6efef98df993eaa9ac7e07b4aabaa5d.
+The new two-macro check was rerun on that input; its native word hashes
+and all scientific fields agree with the earlier version. No committed
+7bo byte, old SELECT expectation or old mathematical suite was changed.
+
+### Independent interval certificate for the SAME returned DAG
+
+The verifier ignores the net, quaternion endpoints and printed eps.
+It builds p=(sqrt5-1)/2 and a=sqrtp by outward INTEGER dyadic arithmetic
+at256bits, computes physical G^32, and evaluates every DAG node as an
+actual3x3 SO matrix. Inverse is transpose; concatenation left-multiplies
+in its declared chronology. It pins the returned bundle, the exact
+factor JSON and the native macro helper, rejects cycles/length errors,
+checks every node is reachable, and uses all72 actual signed macro
+instances rather than an asserted generic cost. Native plane indices,
+including the third-coordinate leakage of each approximate SO3 word,
+are retained in the full16x16 product.
+
+Integer floor/ceiling multiplication and square-root enclosures give
+the final Frobenius upper bound
+
+    ||W_hat-W_*||_op <= ||W_hat-W_*||_F <= delta,
+    delta=198574703067362169189682840466080510493/2^256
+          <2e-39.                                         (682)
+
+This certifies the SAME frozen628,010-byte bundle, SHA256
+0d5d7fab0dcd22b06be115afb2da60164546c83daacf0d9be0abadf8e1d4c5ee,
+not a regenerated word with similar printed error. Exact factor JSON
+SHA256259953482ecab31a1fc8dc0e93c8e49fda2a9825cc5c3339100e6d8a7c0f7645
+is bound to its separate exact all256-entry field reconstruction.
+The witness is conservative finite-word notation. Its raw iterator
+expands only original G/CX/SourceI leaves; a DAG node is not a physical
+gate or an unpriced autonomous interpreter.
+
+### A native involution without an assumed orientation-X gate
+
+Use physical source/helper0, packet(B,c,parkedP,q)=(1,2,3,4), source
+Spin5/6, orientation7 and an EXTRA genuinely FREE ACTIVE tag8. A
+three-CX SWAP(0,3) before and after the ENTIRE controlled packet parks
+the original source-port CONTENT in ordinary WORK. These six CX are
+actually counted. Every internal macro restores its helper on all
+columns, so the final outer swap restores the parking spare. This is
+a qubit-interface construction; it is not a free SWAP of all33 original
+scene modes or a proof of their source-compatible transport.
+
+On that interface the actual finite endpoint is
+
+    V_hat=diag(I,W_hat) in orientation,
+    U_hat=V_hat CX(tag,orientation) V_hat*,
+    U_hat=I_(tag0) direct_sum [[0,W_hat*],[W_hat,0]]_(tag1).
+                                                               (683)
+
+Chronologically execute the fresh signed inverse V_hat*, the actual
+CX, then V_hat. Thus U_hat is an EXACT selfadjoint unitary, despite
+W_hat only approximating W_*. Its eigenvalue multiplicities are+1:3D,
+-1:D on tag/orientation/WORLD, with D=dimWORLD before those two bits.
+There is no new bare-X native primitive or supplied known-one input.
+
+With the declared cut P_hat=I_tag tensor diag(E,Q), the tag0 escape is
+zero and tag1 is the reciprocal escape. Thus J is J_reciprocal, not
+twice J_reciprocal merely because the tag input rank doubled. A blank
+tag0 has zero feedback on this construction; it may NOT be renamed
+a free tag. The actual paired boundary E direct_sum Q remains an
+application premise, as in622/648, not a consequence of the compiler.
+
+The actual expanded inventories, including both outer parks and the
+fresh signed inverse choice, are
+
+    V_hat: 981843712G +981843712SI +2211643252CX,
+           N_V=4175330676;
+    U_hat:1963687424G+1963687424SI+4423286505CX,
+           N=8350661353,
+    delta N <2e-29 <2^-20.                                (684)
+
+Equation684 is the exact sum of the
+returned node multiplicities and the72 checked macro inventories.
+The compressed representation avoids allocating the billions of raw
+tuples; the iterator, integer counts and primitive-closure proof define
+their unique finite expansion. No smaller-clock price is substituted.
+The code does not claim to minimize gate count, physical duration or
+the complete price of a real compiler/scheduler.
+
+### Retain the long clock in every unitary and cut source row
+
+Let U_* be683 with the specified W_*, at the SAME carrier, N and cut.
+The already owned649/647 fixture has projection-valued escape; tag0
+and parked/helper factors preserve that property. Therefore its entire
+feedback differential vanishes on all unitary/fixed-rank-cut tangents.
+Since ||U_hat-U_*||<=2delta, the error need not be treated as a free
+stationary equation. Put R=rankP and 0<z<1. For C=PUP on ranP,
+M=(1-z)I+zC*C,
+
+    J(U,P)=-Tr log M,
+    D_U J[XU]=-2z ReTr(M^-1 C* P X U P).
+
+For eta=||U_hat-U_*||, ||C_hat-C_*||<=eta,
+||M_hat-M_*||<=2z eta and ||M^-1||<=1/(1-z). Comparing the two
+displayed derivatives with the SAME skew generator X gives
+
+    |D J(U_hat)[XU_hat]|
+       <=4zR eta/(1-z)^2 ||X||
+       <=8zR delta/(1-z)^2 ||X||.                         (685)
+
+Indeed the resolvent difference is at most2z eta/(1-z)^2; the other
+two factors contribute2eta/(1-z), and 1-z+z=1. No C1 selector of
+native words or interpolation of their compiler output is assumed.
+This is a bound at the ACTUAL finite operator, on independent
+mathematical calibration directions, not an admission of variable
+primitive Golden angles.
+
+For raw-stage velocities nu=max_t||Dg_t||, product differentiation
+gives ||X||<=N nu. A simultaneous fixed-rank-cut variation with
+mu=||DP|| is transported by Y=[DP,P], ||Y||=mu, so its extra effective
+unitary generator is UYU*-Y, norm<=2mu. Hence
+
+    |D J_hat|<=8zR delta/(1-z)^2 (N nu+2mu).                (686)
+
+For the explicit DATA16/Spin4/oldRIGHT128 extension, keep q4 as AUX,
+DATA9--12 and oldRIGHT13--19 free, tag8 genuinely free, and the one
+parking spare3 a supplied BLANK. There are20 qubits,1,048,576 world
+columns; the ideal feedback projection rank is65,536. The active cut
+rank is R=2(16384+65536)=163840. The parking spare is restored on all
+columns but does not multiply R. A free spare would double R and
+requires that different bound. At z=2^-20, nu=1,mu=0, the EXACT integer
+certificate gives686<2e-29. This is an operator/raw-stage dual-norm
+bound on this SPECIFIED controller, NOT the original unpadded all42
+source gate, its chart, its gain or its physical field normalization.
+
+Under the already proved stagewise INTERNAL placement,683's exact
+0/pi spectrum also gives the COMPLETE heat from the owned character:
+Z=3D z_N(0)+D z_N(pi), including both degrees and every helper mode.
+7bw606 gives zero complete temporal heat covector even for ambient
+unitary row directions at that internal background. Its absolute
+anchor changes with the actual N/carrier and stays inside logZ.
+The present compiler does not establish that placement on the original
+RawZone scene; for that placement consume the OWNED full cochain
+source501--504. It is not bounded by simply quoting the endpoint.
+Beta,z, rank/time comparisons, scene weights and genuinely selected
+additional sources also retain their independent equations.
+
+### Apply the result at its actual physical boundary
+
+The previously unspecified qubit controller622 is now an explicit
+finite word for the known649 recorder with an independently certified
+error and a source bound retaining every raw stage. Exact gain2/
+intertwiner identities
+for W_* are NOT silently assigned to W_hat. Nor does this provide a
+computable full coherent unitary from an unknown reader's one prepared
+column.649's endpoint acts only on the ordinary WORK packet and is
+identity on protected source-Spin. An original U acting nontrivially
+on that Spin is not compiled by relabelling it as WORK; it needs its
+own admitted transport/interface. The actual selected paired cut, physical forward/reverse
+interfaces, source/observer transport and physical scene placement
+still have to be proved on the same process before applying it to GR.
+An all42 field pullback also needs its real derivative norm and source
+gain in686; a small unnormalized matrix number is insufficient. A
+continuation application also needs the uniform comparison on its
+actual field collar. This single-point controller certificate supplies
+neither that field family nor its complete residual.
+
+The direct Book03 stationary law is a legitimate route as recorded by
+incoming11b4f523. A separate D_min-to-price or Shannon/CQ identification
+is not added as a veto to that route. Conversely this word does not
+prove such an identification when it is separately claimed. The new
+full128 mixed-CQ defect7ca is retained. The binary N1 all42 interval
+code computes binary H_phi(click), with self.rho denoting PF weights;
+its two-native-query owner uses pure known inputs and pure conditional
+WORK states. It is a DIFFERENT execution from mixed rho_* and128 fine
+records. Do not add the latter correction to the former root without
+a common preparation/Kraus/readout/price map and its complete Jacobian.
+No new root search or physical Info fit follows from this compiler.
+
+The new exact coherent7cc application remains available independently.
+No accepted physical GR parent is discharged merely by this specific
+word certificate; its missing application stays the actual source/cut/
+field transport above. No action, native primitive, task, selector,
+assembly discharge or GR promotion is introduced. The underlying exact
+nonlinear GR family,
+its source-continuation alternatives and raw216 keep their full scope.
+GR_closed=false; positive_gr/raw216 remain open.
+
+### Reproduction boundary
+
+The packet below freezes the numerical word search, SAME returned DAG,
+exact field QR, native plane constructor, literal bounded fixtures,
+raw-word iterator and independent integer verifier. Candidate search
+is not certification. The immutable witness can be verified without
+re-running the heuristic net search. The two new literal256-column
+macro fixtures and the bounded tagged end-to-end fixture have their
+actual scope separately recorded; no giant raw word, heat matrix,
+old root, Lean or full research-corpus replay is claimed.
+
+Proof pin: 15976 bytes, SHA256 2943ae35c9e0220f80ec43284a91427799885291882268a7f350fffdae9059ec.
+
+Run from the repository root. This extracts ONLY the pinned replay entry,
+which creates separate frozen/run directories and checks all file guards.
+It does not rerun the heuristic search or expand billions of stages.
+Expected receipts are never output paths. Only host-specific input_pins
+are removed from receipt comparisons; owner/code hashes are checked
+separately and ALL scientific fields remain exact.
+
+```python
+from pathlib import Path
+import hashlib,re
+s=Path('02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md').read_bytes()
+m=re.search(rb'<!-- D0-CONTROLLER-FILE d0_controller_replay_20261026.py ([0-9]+) ([0-9a-f]{64}) -->\n```python\n(.*?)\n```',s,re.S)
+assert m is not None
+c=m[3]+b'\n'
+assert len(c)==int(m[1]) and hashlib.sha256(c).hexdigest()==m[2].decode()
+exec(compile(c,'d0_controller_replay_20261026.py','exec'),{'__name__':'__main__'})
+```
+
+### Frozen file: d0_controller_replay_20261026.py
+
+<!-- D0-CONTROLLER-FILE d0_controller_replay_20261026.py 5580 2b431e4dbb110a8b153cbfdd8536bf52c4af1133624d755fa7595031a6273df0 -->
+```python
+"""Materialize this owned Git packet and replay only its affected checks.
+
+Run from the repository root. Frozen inputs/observed receipts are kept in
+one directory; all newly computed outputs go to a distinct run directory.
+The heuristic SK search and the billion-stage expansion are not rerun.
+"""
+import argparse,hashlib,json,os,re,shutil,subprocess,sys,tempfile
+from pathlib import Path
+
+PRIMARY='02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+SCRIPTS=('d0_recorder_so16_factor_20261026.py','d0_so3_sk_compiler_20261026.py',
+         'd0_controlled_plane_native_20261026.py','d0_controlled_recorder_word_20261026.py',
+         'd0_controlled_recorder_interval_20261026.py')
+DATA=('d0_so3_sk_compiler_20261026.json','d0_recorder_so16_factor_20261026.json',
+      'd0_controlled_plane_native_20261026.json','d0_controlled_recorder_word_20261026.json',
+      'd0_controlled_recorder_interval_20261026.json')
+ALLOWED=set(SCRIPTS+DATA+('d0_controller_replay_20261026.py',))
+
+def sha(b):return hashlib.sha256(b).hexdigest()
+
+def main():
+    p=argparse.ArgumentParser()
+    p.add_argument('--root',type=Path,default=Path.cwd())
+    p.add_argument('--output',type=Path)
+    args=p.parse_args()
+    root=args.root.resolve();source=(root/PRIMARY).read_bytes()
+    pattern=rb'<!-- D0-CONTROLLER-FILE ([a-z0-9_.]+) ([0-9]+) ([0-9a-f]{64}) -->\n```(?:python|json)\n(.*?)\n```'
+    files={}
+    for match in re.finditer(pattern,source,re.S):
+        name=match[1].decode()
+        if name not in ALLOWED:raise ValueError('unknown marked file')
+        data=match[4]+b'\n'
+        if name in files or len(data)!=int(match[2]) or sha(data)!=match[3].decode():
+            raise ValueError('duplicate/file-size/SHA mismatch')
+        files[name]=data
+    if set(files)!=ALLOWED:raise ValueError('incomplete marked source packet')
+    if args.output:
+        workspace=args.output.resolve();workspace.mkdir(parents=True,exist_ok=False)
+    else:workspace=Path(tempfile.mkdtemp(prefix='d0-controller-replay-'))
+    frozen=workspace/'frozen';run=workspace/'run';frozen.mkdir();run.mkdir()
+    for name,data in files.items():(frozen/name).write_bytes(data)
+    for name in SCRIPTS:(run/name).write_bytes(files[name])
+    # The returned word is immutable input, not regenerated by an SK search.
+    bundle=json.loads(files[DATA[0]])
+    if bundle['compiler_sha256']!=sha(files[SCRIPTS[1]]):raise ValueError('search source provenance')
+    (run/DATA[0]).write_bytes(files[DATA[0]])
+    expected_pins=json.loads(files[DATA[2]])['input_pins']
+    owners={'native_execution':'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py',
+            'native_phase':'02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py'}
+    for owner,relative in owners.items():
+        data=(root/relative).read_bytes();pin=expected_pins[owner]
+        if len(data)!=pin['bytes'] or sha(data)!=pin['sha256']:
+            raise ValueError('owned input provenance: '+owner)
+    # Reuse the precise owned builder instead of a private SELECT variant.
+    old=source.split(b'## 7bo.',1)[1].split(b'```python\n',1)[1].split(b'\n```',1)[0]
+    if len(old)!=33418 or sha(old)!='1255c4d7a7804b2b7726b94d9cc3ec3a86ee4985f7a6437a47caccc938e2a31f':
+        raise ValueError('owned7bo fence changed')
+    prefix=old[:22247]
+    if sha(prefix)!='5e53f361a7d2e579fc90b3f3668dac33f6efef98df993eaa9ac7e07b4aabaa5d':
+        raise ValueError('owned AST prefix')
+    (run/'d0_native_select_builder_owned_20261026.py').write_bytes(prefix)
+    env=dict(os.environ);env['D0_REPO_ROOT']=str(root)
+    commands=(SCRIPTS[0],SCRIPTS[2],SCRIPTS[3],SCRIPTS[4])
+    process=[]
+    for name in commands:
+        with (run/(name+'.stdout')).open('wb') as log:
+            result=subprocess.run([sys.executable,str(run/name)],cwd=root,env=env,
+                                  stdout=log,stderr=subprocess.STDOUT)
+        if result.returncode:
+            raise RuntimeError('affected check failed: '+name+'; see '+str(log.name))
+        process.append({'script':name,'exit_code':result.returncode})
+    # Exact factor output must equal the immutable witness byte-for-byte.
+    if (run/DATA[1]).read_bytes()!=files[DATA[1]]:raise ValueError('factor witness mismatch')
+    comparisons=[]
+    for name in DATA[2:]:
+        observed=json.loads((frozen/name).read_bytes())
+        actual=json.loads((run/name).read_bytes())
+        # This one field records host-specific file paths and source receipt
+        # locations. All mathematical/native execution fields remain strict.
+        observed.pop('input_pins',None);actual.pop('input_pins',None)
+        if actual!=observed:raise ValueError('scientific replay mismatch: '+name)
+        comparisons.append({'receipt':name,'all_scientific_fields_equal':True})
+    # The source/expected inputs have never been a command's output path.
+    for name,data in files.items():
+        if (frozen/name).read_bytes()!=data:raise ValueError('frozen artifact overwritten')
+    result={'status':'PASS','mode':'frozen-word exact/interval replay',
+      'processes':process,'comparisons':comparisons,'frozen_inputs_unchanged':True,
+      'SK_search_rerun':False,'billion_stage_word_expanded':False,
+      'primary_input_sha256':sha(source),'workspace':str(workspace),
+      'GR_closed':False,'physical_Scene33_placement':False,'paired_cut_selection':False}
+    (workspace/'REPLAY_RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+    print(json.dumps(result,indent=2))
+
+if __name__=='__main__':main()
+```
+
+### Frozen file: d0_recorder_so16_factor_20261026.py
+
+<!-- D0-CONTROLLER-FILE d0_recorder_so16_factor_20261026.py 2937 5713bf57c086838d12ff124d29a1082d6f58dcb8a8b7fd6b4998ac409057ab5c -->
+```python
+"""Exact field QR of the already specified recorder W649; no native synthesis.
+
+This is a root-owned integration helper. Givens coefficients are certified
+against all target columns before any numerical gate synthesis is attempted.
+"""
+import hashlib,importlib.util,json,os,sys
+from pathlib import Path
+import sympy as S
+
+ROOT=Path(os.environ.get('D0_REPO_ROOT', str(Path.cwd()))).resolve()
+src=ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+assert hashlib.sha256(src.read_bytes()).hexdigest()=='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+spec=importlib.util.spec_from_file_location('d0_recorder_factor_native',src)
+N=importlib.util.module_from_spec(spec);sys.modules[spec.name]=N;spec.loader.exec_module(N)
+F=N.GOLDEN_FIELD
+gates=(N.Gate('CX',(1,3)),N.Gate('G',(2,)),N.Gate('CX',(2,1)),
+       N.Gate('CX',(1,0)),N.Gate('CX',(0,1)))
+execution=N.Execution(4,(0,2),(),gates,N.G_CX)
+W=N.word_matrix(execution,max_qubits=4)
+A=[[F.from_sympy(W[i,j]) for j in range(16)] for i in range(16)]
+givens=[]
+for column in range(15):
+    for row in range(15,column,-1):
+        x,y=A[column][column],A[row][column]
+        if y==F.zero: continue
+        length=F.from_sympy(S.sqrt(F.to_sympy(x*x+y*y)))
+        c,si=x/length,y/length
+        for j in range(16):
+            upper,lower=A[column][j],A[row][j]
+            A[column][j]=c*upper+si*lower
+            A[row][j]=-si*upper+c*lower
+        assert A[row][column]==F.zero
+        givens.append((column,row,c,si))
+assert all(A[i][j]==(F.one if i==j else F.zero) for i in range(16) for j in range(16))
+
+# W=R_1...R_k; chronological order is therefore reversed.
+B=[[F.one if i==j else F.zero for j in range(16)] for i in range(16)]
+for i,j,c,si in reversed(givens):
+    for k in range(16):
+        upper,lower=B[i][k],B[j][k]
+        B[i][k]=c*upper-si*lower
+        B[j][k]=si*upper+c*lower
+assert all(B[i][j]==F.from_sympy(W[i,j]) for i in range(16) for j in range(16))
+
+def coeffs(v):
+    return [str(q) for q in v.to_list()]
+unique={}
+rows=[]
+for i,j,c,si in reversed(givens):
+    key=(str(F.to_sympy(c)),str(F.to_sympy(si)))
+    if key not in unique:
+        unique[key]={'id':len(unique),'cos':key[0],'sin':key[1],
+                     'cos_coeffs':coeffs(c),'sin_coeffs':coeffs(si)}
+    k=next(v for v in range(16) if v!=i and v!=j)
+    rows.append({'i':i,'j':j,'k':k,'angle_id':unique[key]['id']})
+out={'status':'PASS','target':'W649, order B,c,P,q','dimension':16,
+     'field':'Q(a), a^4+a^2-1=0, a>0',
+     'primitive_count':5,'exact_givens':len(givens),
+     'unique_angles':list(unique.values()),'chronological_givens':rows,
+     'reconstruction':'exact all256 entries in owned algebraic field',
+     'native_compilation_completed':False}
+Path(__file__).resolve().with_suffix('.json').write_text(json.dumps(out,indent=2)+'\n')
+print(json.dumps({k:v for k,v in out.items() if k!='chronological_givens'},indent=2))
+```
+
+### Frozen file: d0_so3_sk_compiler_20261026.py
+
+<!-- D0-CONTROLLER-FILE d0_so3_sk_compiler_20261026.py 19967 6c49a4a355cd811dcdeb36d4f0d79652f6eacf7f1b431b71bc7bf191d500ec54 -->
+```python
+"""Target-specific numerical Solovay--Kitaev words over the owned SO(3) alphabet.
+
+Only signed letters +/-1,+/-2 are emitted.  +1=R_(0,1)(32 theta_G),
++2=R_(0,2)(32 theta_G), with 2x2 plane block [[cos,-sin],[sin,cos]].
+Thus their Hamilton quaternion axes are +z and -y, and the lift angle is
+16 theta_G.  Word lists/DAG children are CHRONOLOGICAL: later factors
+multiply on the LEFT.  Quaternion signs are identified only as SO(3)
+lifts.  No physical primitive, certified error, or admission is supplied.
+
+The finite base net is heuristic, not an asserted covering certificate.
+Every reported result is an explicit finite signed word/DAG with its own
+high-precision numerical endpoint.  The caller must independently certify
+the actual algebraic SO(3) matrix and physical macro expansion.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import math
+import time
+from dataclasses import dataclass
+from pathlib import Path
+
+import mpmath as mp
+import numpy as np
+from scipy.spatial import cKDTree
+
+
+def qmul(a, b):
+    """Hamilton product a*b; its SO(3) matrix is R(a)R(b)."""
+    a0, ax, ay, az = a
+    b0, bx, by, bz = b
+    return (a0*b0-ax*bx-ay*by-az*bz,
+            a0*bx+ax*b0+ay*bz-az*by,
+            a0*by-ax*bz+ay*b0+az*bx,
+            a0*bz+ax*by-ay*bx+az*b0)
+
+
+def qinv(q):
+    return (q[0], -q[1], -q[2], -q[3])
+
+
+def qnorm(q):
+    return mp.sqrt(sum(x*x for x in q))
+
+
+def unit(q):
+    n = qnorm(q)
+    return tuple(x/n for x in q)
+
+
+def near_identity_lift(q):
+    q = unit(q)
+    return tuple(-x for x in q) if q[0] < 0 else q
+
+
+def so3(q):
+    w, x, y, z = unit(q)
+    return mp.matrix([[1-2*(y*y+z*z), 2*(x*y-w*z), 2*(x*z+w*y)],
+                      [2*(x*y+w*z), 1-2*(x*x+z*z), 2*(y*z-w*x)],
+                      [2*(x*z-w*y), 2*(y*z+w*x), 1-2*(x*x+y*y)]])
+
+
+def so3_error(qtarget, qactual):
+    """SO(3) operator error from the relative quaternion, not 1-dot."""
+    q = unit(qmul(qtarget, qinv(unit(qactual))))
+    return 2*mp.sqrt(sum(x*x for x in q[1:]))
+
+
+def np_left_mul(a, bs):
+    av = np.asarray(a[1:])
+    out = np.empty_like(bs)
+    # Explicit three-term contraction avoids stale BLAS float-status warnings.
+    out[:, 0] = a[0]*bs[:, 0] - np.sum(bs[:, 1:]*av, axis=1)
+    out[:, 1:] = a[0]*bs[:, 1:] + bs[:, 0, None]*av + np.cross(av, bs[:, 1:])
+    return out
+
+
+class BaseNet:
+    """Finite reduced words plus a bounded nearest-product query."""
+    def __init__(self, generators, depth=11, pivots=128, seed=20261026):
+        self.depth = int(depth)
+        self.pivot_count = int(pivots)
+        signed = (1, -1, 2, -2)
+        gf = {s: np.asarray([float(v) for v in generators[s]]) for s in signed}
+        quats = [np.asarray([[1., 0., 0., 0.]])]
+        parents = [np.asarray([-1], dtype=np.int64)]
+        letters = [np.asarray([0], dtype=np.int8)]
+        layer_q = quats[0]
+        layer_ids = np.asarray([0], dtype=np.int64)
+        layer_last = letters[0]
+        offset = 1
+        for _ in range(self.depth):
+            qs, ps, ls = [], [], []
+            for s in signed:
+                mask = layer_last != -s
+                qs.append(np_left_mul(gf[s], layer_q[mask]))
+                ps.append(layer_ids[mask])
+                ls.append(np.full(int(mask.sum()), s, dtype=np.int8))
+            layer_q = np.concatenate(qs)
+            if not np.isfinite(layer_q).all():
+                raise ArithmeticError('Nonfinite base-net quaternion')
+            layer_q /= np.linalg.norm(layer_q, axis=1)[:, None]
+            layer_last = np.concatenate(ls)
+            layer_ids = np.arange(offset, offset+len(layer_q), dtype=np.int64)
+            offset += len(layer_q)
+            quats.append(layer_q)
+            parents.append(np.concatenate(ps))
+            letters.append(layer_last)
+        self.q = np.concatenate(quats)
+        self.parent = np.concatenate(parents)
+        self.last = np.concatenate(letters)
+        self.tree = cKDTree(np.concatenate((self.q, -self.q)), compact_nodes=True)
+        rng = np.random.default_rng(seed)
+        chosen = rng.choice(len(self.q), max(0, self.pivot_count-1), replace=False)
+        self.pivots = np.concatenate((np.asarray([0]), chosen))
+        self.pq = self.q[self.pivots]
+        self.pqi = self.pq.copy()
+        self.pqi[:, 1:] *= -1
+        self.calls = 0
+
+    def letters(self, index):
+        result = []
+        while index:
+            result.append(int(self.last[index]))
+            index = int(self.parent[index])
+        result.reverse()
+        return tuple(result)
+
+    def approximate(self, target):
+        """Find B*A~target; return chronological word(A),word(B)."""
+        tf = np.asarray([float(v) for v in unit(target)])
+        desired_b = np_left_mul(tf, self.pqi)
+        distances, indices = self.tree.query(desired_b, k=1, workers=1)
+        winner = int(np.argmin(distances))
+        aidx = int(self.pivots[winner])
+        bidx = int(indices[winner]) % len(self.q)
+        self.calls += 1
+        return self.letters(aidx)+self.letters(bidx)
+
+
+@dataclass(frozen=True)
+class Word:
+    node: int
+    length: int
+
+
+class SKCompiler:
+    def __init__(self, multiplier=32, dps=100, net_depth=11, pivots=128):
+        if multiplier != 32:
+            raise ValueError('This packet owns only the multiplier-32 alphabet')
+        mp.mp.dps = int(dps)
+        self.dps = int(dps)
+        self.multiplier = multiplier
+        self.p = (mp.sqrt(5)-1)/2
+        self.a = mp.sqrt(self.p)
+        self.theta = mp.atan2(self.p, self.a)
+        c, s = mp.cos(multiplier*self.theta/2), mp.sin(multiplier*self.theta/2)
+        self.generators = {1: (c, mp.mpf(0), mp.mpf(0), s),
+                           2: (c, mp.mpf(0), -s, mp.mpf(0))}
+        self.generators[-1] = qinv(self.generators[1])
+        self.generators[-2] = qinv(self.generators[2])
+        self.nodes = [{'kind': 'seq', 'letters': [], 'length': 0}]
+        self.endpoints = [(mp.mpf(1), mp.mpf(0), mp.mpf(0), mp.mpf(0))]
+        self.seq_cache = {(): Word(0, 0)}
+        self.inv_cache = {0: Word(0, 0)}
+        self.compile_cache = {}
+        self.max_base_error = mp.mpf(0)
+        self.net = BaseNet(self.generators, depth=net_depth, pivots=pivots)
+
+    def sequence(self, letters):
+        key = tuple(int(s) for s in letters)
+        if any(s not in self.generators for s in key):
+            raise ValueError('Unknown alphabet letter')
+        # Adjacent exact inverse cancellation is an ordinary word identity.
+        reduced = []
+        for s in key:
+            if reduced and reduced[-1] == -s:
+                reduced.pop()
+            else:
+                reduced.append(s)
+        key = tuple(reduced)
+        if key in self.seq_cache:
+            return self.seq_cache[key]
+        q = self.endpoints[0]
+        for s in key:
+            q = qmul(self.generators[s], q)
+        result = Word(len(self.nodes), len(key))
+        self.nodes.append({'kind': 'seq', 'letters': list(key), 'length': len(key)})
+        self.endpoints.append(q)
+        self.seq_cache[key] = result
+        return result
+
+    def inverse(self, word):
+        if word.node in self.inv_cache:
+            return self.inv_cache[word.node]
+        node = self.nodes[word.node]
+        if node['kind'] == 'inv':
+            child = int(node['child'])
+            return Word(child, int(self.nodes[child]['length']))
+        result = Word(len(self.nodes), word.length)
+        self.nodes.append({'kind': 'inv', 'child': word.node, 'length': word.length})
+        self.endpoints.append(qinv(self.endpoints[word.node]))
+        self.inv_cache[word.node] = result
+        self.inv_cache[result.node] = word
+        return result
+
+    def concatenate(self, *words):
+        children = [w for w in words if w.length]
+        if not children:
+            return Word(0, 0)
+        if len(children) == 1:
+            return children[0]
+        q = self.endpoints[0]
+        for w in children:
+            q = qmul(self.endpoints[w.node], q)
+        length = sum(w.length for w in children)
+        result = Word(len(self.nodes), length)
+        self.nodes.append({'kind': 'cat', 'children': [w.node for w in children],
+                           'length': length})
+        self.endpoints.append(q)
+        return result
+
+    def iter_letters(self, word):
+        """Expand only when explicitly requested; inverse reverses chronology."""
+        stack = [(word.node, False)]
+        while stack:
+            index, inverse = stack.pop()
+            node = self.nodes[index]
+            if node['kind'] == 'seq':
+                seq = node['letters']
+                yield from (-s for s in reversed(seq)) if inverse else seq
+            elif node['kind'] == 'inv':
+                stack.append((int(node['child']), not inverse))
+            else:
+                cs = node['children']
+                stack.extend((int(i), inverse) for i in (cs if inverse else reversed(cs)))
+
+    @staticmethod
+    def balanced_commutator(residual):
+        """Return v,w with v*w*v^-1*w^-1=residual in the near+I lift."""
+        r = near_identity_lift(residual)
+        rv = mp.sqrt(sum(x*x for x in r[1:]))
+        if not rv:
+            identity = (mp.mpf(1), mp.mpf(0), mp.mpf(0), mp.mpf(0))
+            return identity, identity
+        # sin(phi)^2=sin(eta/2), where cos(eta)=r[0].
+        s2 = rv/mp.sqrt(2*(1+r[0]))
+        s = mp.sqrt(s2)
+        c = mp.sqrt(1-s2)
+        v0 = (c, s, mp.mpf(0), mp.mpf(0))
+        w0 = (c, mp.mpf(0), s, mp.mpf(0))
+        comm = qmul(qmul(qmul(v0, w0), qinv(v0)), qinv(w0))
+        axis0 = tuple(x/rv for x in comm[1:])
+        axis1 = tuple(x/rv for x in r[1:])
+        dot = sum(x*y for x, y in zip(axis0, axis1))
+        cross = (axis0[1]*axis1[2]-axis0[2]*axis1[1],
+                 axis0[2]*axis1[0]-axis0[0]*axis1[2],
+                 axis0[0]*axis1[1]-axis0[1]*axis1[0])
+        if 1+dot > mp.mpf(10)**(-mp.mp.dps//2):
+            align = unit((1+dot, *cross))
+        else:
+            # An explicit pi rotation about a perpendicular axis.
+            k = min(range(3), key=lambda i: abs(axis0[i]))
+            e = tuple(mp.mpf(int(i == k)) for i in range(3))
+            perp = (axis0[1]*e[2]-axis0[2]*e[1],
+                    axis0[2]*e[0]-axis0[0]*e[2],
+                    axis0[0]*e[1]-axis0[1]*e[0])
+            align = unit((mp.mpf(0), *perp))
+        return (qmul(qmul(align, v0), qinv(align)),
+                qmul(qmul(align, w0), qinv(align)))
+
+    def compile(self, target, depth):
+        target = near_identity_lift(target)
+        key = (int(depth), tuple(mp.nstr(v, self.dps-8) for v in target))
+        if key in self.compile_cache:
+            return self.compile_cache[key]
+        if depth == 0:
+            result = self.sequence(self.net.approximate(target))
+            self.max_base_error = max(self.max_base_error,
+                                      so3_error(target, self.endpoints[result.node]))
+        else:
+            previous = self.compile(target, depth-1)
+            residual = near_identity_lift(qmul(target, qinv(self.endpoints[previous.node])))
+            if mp.sqrt(sum(v*v for v in residual[1:])) < mp.mpf(10)**(-self.dps+20):
+                result = previous
+            else:
+                v, w = self.balanced_commutator(residual)
+                vh, wh = self.compile(v, depth-1), self.compile(w, depth-1)
+                # Endpoint [vh,wh]*previous: chronological previous,w^-1,v^-1,w,v.
+                improved = self.concatenate(previous, self.inverse(wh), self.inverse(vh), wh, vh)
+                result = min((previous, improved),
+                             key=lambda a: so3_error(target, self.endpoints[a.node]))
+        self.compile_cache[key] = result
+        return result
+
+    def target_plane01(self, angle):
+        return (mp.cos(angle/2), mp.mpf(0), mp.mpf(0), mp.sin(angle/2))
+
+    def numerical_report(self, name, target, word, depth):
+        q = self.endpoints[word.node]
+        error = so3_error(target, q)
+        return {'name': name, 'depth': depth, 'root': word.node,
+                'abstract_letter_length': word.length,
+                'SO3_operator_error_numerical': mp.nstr(error, 45),
+                'error_times_abstract_length': mp.nstr(error*word.length, 45),
+                'endpoint_quaternion': [mp.nstr(v, self.dps) for v in q],
+                'endpoint_SO3': [[mp.nstr(v, self.dps) for v in row]
+                                 for row in so3(q).tolist()]}
+
+    def bundle(self, reports):
+        reachable = set()
+        stack = [int(r['root']) for r in reports]
+        while stack:
+            i = stack.pop()
+            if i in reachable:
+                continue
+            reachable.add(i)
+            node = self.nodes[i]
+            stack.extend(node.get('children', []))
+            if 'child' in node:
+                stack.append(node['child'])
+        ordered = sorted(reachable)
+        remap = {old: new for new, old in enumerate(ordered)}
+        output_nodes = []
+        for old in ordered:
+            n = dict(self.nodes[old])
+            if 'children' in n:
+                n['children'] = [remap[v] for v in n['children']]
+            if 'child' in n:
+                n['child'] = remap[n['child']]
+            output_nodes.append(n)
+        output_reports = []
+        for r in reports:
+            out = dict(r)
+            out['root'] = remap[int(out['root'])]
+            output_reports.append(out)
+        return {'schema': 'd0.so3-sk-signed-word/1',
+                'semantics': 'chronological children; later matrices multiply on left',
+                'alphabet': {'1': 'R01(32 theta_G)', '2': 'R02(32 theta_G)',
+                             '-1': 'inverse of1', '-2': 'inverse of2'},
+                'theta_G': mp.nstr(self.theta, self.dps),
+                'generator_quaternions': {str(k): [mp.nstr(v, self.dps) for v in q]
+                                         for k, q in self.generators.items()},
+                'dps': self.dps, 'net_depth': self.net.depth,
+                'net_points': len(self.net.q), 'net_product_pivots': len(self.net.pivots),
+                'net_calls': self.net.calls,
+                'max_base_SO3_error_numerical': mp.nstr(self.max_base_error, 30),
+                'certified_error': False, 'physical_admission': False,
+                'nodes': output_nodes, 'targets': output_reports}
+
+
+def meaningful_convention_checks(compiler):
+    tolerance = mp.mpf(10)**(-compiler.dps+20)
+    c, s = mp.cos(32*compiler.theta), mp.sin(32*compiler.theta)
+    assert mp.norm(so3(compiler.generators[1])-mp.matrix([[c,-s,0],[s,c,0],[0,0,1]])) < tolerance
+    assert mp.norm(so3(compiler.generators[2])-mp.matrix([[c,0,-s],[0,1,0],[s,0,c]])) < tolerance
+    a = compiler.sequence((1,2,-1))
+    assert tuple(compiler.iter_letters(compiler.inverse(a))) == (1,-2,-1)
+    direct = compiler.endpoints[0]
+    for letter in compiler.iter_letters(a):
+        direct = qmul(compiler.generators[letter], direct)
+    assert so3_error(direct, compiler.endpoints[a.node]) < tolerance
+    for target in (compiler.target_plane01(mp.mpf('.003')), unit((1, .002, -.003, .001))):
+        v, w = compiler.balanced_commutator(target)
+        actual = qmul(qmul(qmul(v,w),qinv(v)),qinv(w))
+        assert so3_error(target,actual) < tolerance
+
+
+def verify_bundle_matrix(bundle, dps=150):
+    """Independent numeric endpoint check from embedded native G**32.
+
+    Uses only the serialized signed-word DAG and ordinary 3x3 matrices;
+    no recursive compiler, quaternion endpoint, half-angle, or Euler
+    decomposition is used.  These are numerical bounds, not intervals.
+    """
+    with mp.workdps(dps):
+        p = (mp.sqrt(5)-1)/2
+        a = mp.sqrt(p)
+        g1 = mp.matrix([[a,-p,0],[p,a,0],[0,0,1]])**32
+        g2 = mp.matrix([[a,0,-p],[0,1,0],[p,0,a]])**32
+        alphabet = {1:g1, -1:g1.T, 2:g2, -2:g2.T}
+        endpoints = []
+        lengths = []
+        for index, node in enumerate(bundle['nodes']):
+            kind = node['kind']
+            if kind == 'seq':
+                u = mp.eye(3)
+                for letter in node['letters']:
+                    if type(letter) is not int or letter not in alphabet:
+                        raise ValueError('Malformed serialized signed letter')
+                    u = alphabet[letter]*u
+                length = len(node['letters'])
+            elif kind == 'inv':
+                child = int(node['child'])
+                if child >= index:
+                    raise ValueError('DAG is not topologically ordered')
+                u = endpoints[child].T
+                length = lengths[child]
+            elif kind == 'cat':
+                u, length = mp.eye(3), 0
+                for child in node['children']:
+                    if type(child) is not int or child >= index:
+                        raise ValueError('DAG is not topologically ordered')
+                    u = endpoints[child]*u
+                    length += lengths[child]
+            else:
+                raise ValueError('Unknown serialized node kind')
+            if length != node['length']:
+                raise ValueError('Incorrect expanded length')
+            endpoints.append(u)
+            lengths.append(length)
+        targets = {'theta_G':mp.matrix([[a,-p,0],[p,a,0],[0,0,1]]),
+                   'quarter':mp.matrix([[0,-1,0],[1,0,0],[0,0,1]])}
+        result = []
+        for report in bundle['targets']:
+            u = endpoints[report['root']]
+            difference = u-targets[report['name']]
+            frobenius = mp.sqrt(sum(v*v for v in difference))
+            result.append({'name':report['name'],
+                'abstract_letter_length':lengths[report['root']],
+                'independent_matrix_Frobenius_error_numerical':mp.nstr(frobenius,55),
+                'independent_error_times_abstract_length':mp.nstr(frobenius*lengths[report['root']],55),
+                'orthogonality_Frobenius_residual':mp.nstr(mp.norm(u.T*u-mp.eye(3)),15)})
+        return {'dps':dps, 'method':'direct 3x3 native Golden powers and serialized DAG',
+                'is_interval_certificate':False, 'targets':result}
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument('--net-depth', type=int, default=11)
+    p.add_argument('--pivots', type=int, default=128)
+    p.add_argument('--dps', type=int, default=100)
+    p.add_argument('--levels', type=int, default=7)
+    p.add_argument('--tol', default='1e-24')
+    p.add_argument('--output', type=Path)
+    args = p.parse_args()
+    started = time.monotonic()
+    compiler = SKCompiler(dps=args.dps, net_depth=args.net_depth, pivots=args.pivots)
+    meaningful_convention_checks(compiler)
+    reports = []
+    for name, angle in (('theta_G', compiler.theta), ('quarter', mp.pi/2)):
+        target = compiler.target_plane01(angle)
+        report = None
+        for depth in range(args.levels+1):
+            word = compiler.compile(target, depth)
+            report = compiler.numerical_report(name, target, word, depth)
+            print(json.dumps({k: report[k] for k in ('name','depth','abstract_letter_length',
+                  'SO3_operator_error_numerical','error_times_abstract_length')}), flush=True)
+            if mp.mpf(report['SO3_operator_error_numerical']) <= mp.mpf(args.tol):
+                break
+        reports.append(report)
+    bundle = compiler.bundle(reports)
+    bundle['independent_matrix_verification'] = verify_bundle_matrix(bundle, max(150,args.dps+40))
+    bundle['elapsed_seconds'] = time.monotonic()-started
+    bundle['compiler_sha256'] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    if args.output:
+        args.output.write_text(json.dumps(bundle, sort_keys=True, indent=2)+'\n')
+    print(json.dumps({'status': 'NUMERICAL_WORDS_RETURNED',
+                      'elapsed_seconds': bundle['elapsed_seconds'],
+                      'DAG_nodes': len(bundle['nodes']),
+                      'net_calls': compiler.net.calls,
+                      'independent_interval_certificate_required': True}), flush=True)
+
+
+if __name__ == '__main__':
+    main()
+```
+
+### Frozen file: d0_controlled_plane_native_20261026.py
+
+<!-- D0-CONTROLLER-FILE d0_controlled_plane_native_20261026.py 11926 55929a5cc916cf9880907ec246fd7abf25366c4598320a6d63a341bbfe8f7ead -->
+```python
+"""Exact controlled two-level G**32 macros in the owned native grammar.
+
+Scratch implementation only.  The four target bits are ordinary WORK;
+physical port/helper, the two source-Spin bits and oldRIGHT are disjoint.
+Every G is parked on the physical port.  No X, AND, continuous pulse or
+new controlled-gate primitive is used.  The all-column certificate below
+checks literal expanded words; it does not prove physical placement.
+"""
+import hashlib
+import importlib.util
+import json
+import os
+import sys
+from pathlib import Path
+
+sys.dont_write_bytecode = True
+ROOT = Path(os.environ.get('D0_REPO_ROOT', str(Path.cwd()))).resolve()
+DOMAIN = ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24'
+PHASE = ROOT/'02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24'
+AST_PATH = Path(__file__).resolve().with_name('d0_native_select_builder_owned_20261026.py')
+assert hashlib.sha256(AST_PATH.read_bytes()).hexdigest() == '5e53f361a7d2e579fc90b3f3668dac33f6efef98df993eaa9ac7e07b4aabaa5d'
+sys.path.insert(0, str(DOMAIN))
+sys.path.insert(0, str(PHASE))
+import native_execution as native
+import native_phase
+
+assert Path(native.__file__).resolve() == (DOMAIN/'native_execution.py').resolve()
+assert hashlib.sha256(Path(native.__file__).read_bytes()).hexdigest() == '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+spec = importlib.util.spec_from_file_location('d0_controlled_plane_owned_ast', AST_PATH)
+ast = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = ast
+spec.loader.exec_module(ast)
+assert ast.ne is native
+Compiler, Word = ast.Compiler, ast.Word
+
+
+def _bits(value, width=4):
+    return tuple((value >> (width-1-j)) & 1 for j in range(width))
+
+
+def plane_word(compiler, targets, orientation, i, j, sign=1, m=32):
+    """Chronological native-Word recipe for orientation-1 R_ij(sign*m*theta).
+
+    R_ij has [[cos,-sin],[sin,cos]] in the ORDERED (i,j) basis.
+    Positive/negative calls are independently specified finite recipes.
+    compiler.inv(word) is separately the literal expanded-raw inverse.
+    """
+    targets = tuple(targets)
+    if (len(targets) != 4 or len(set(targets)) != 4
+            or orientation in targets or compiler.physical_port in targets+(orientation,)
+            or set(targets+(orientation,)) & set(compiler.spin+compiler.old)):
+        raise native.DomainError('four target bits, orientation, helper/Spin/old must be disjoint')
+    if type(i) is not int or type(j) is not int or not (0 <= i < 16 and 0 <= j < 16) or i == j:
+        raise native.DomainError('distinct target basis labels in 0..15 required')
+    if sign not in (-1, 1) or type(sign) is not int or type(m) is not int or m != 32:
+        raise native.DomainError('this certificate is exactly for signed G**32')
+    # Invertible GF(2) map sends i xor j to one target coordinate.
+    difference = _bits(i ^ j)
+    pivot = next(q for q in range(4) if difference[q])
+    linear = tuple((targets[pivot], targets[q]) for q in range(4)
+                   if q != pivot and difference[q])
+    mapped = list(_bits(i))
+    for _, target in linear:
+        mapped[targets.index(target)] ^= mapped[pivot]
+    controls = (orientation,) + tuple(targets[q] for q in range(4) if q != pivot)
+    pattern = (1,) + tuple(mapped[q] for q in range(4) if q != pivot)
+    # If i is target-bit 1, native (0,1) order reverses the requested plane.
+    internal_sign = sign * (1 if mapped[pivot] == 0 else -1)
+    power = m // 16
+    cells = []
+    for subset in range(16):
+        included = tuple(q for q in range(4) if (subset >> (3-q)) & 1)
+        parity = tuple(compiler.cx(controls[q], targets[pivot]) for q in included)
+        walsh_sign = -1 if sum(pattern[q] for q in included) % 2 else 1
+        # A NEW negative signed-power recipe is SI^2;G^2;SI^2 on the
+        # parked port (four SI for the whole power).  This is not inv()
+        # of two already specified raw G leaves, which would cost eight.
+        cells.append(compiler.seq(*parity,
+                     compiler.g(targets[pivot], internal_sign*walsh_sign*power),
+                     *reversed(parity)))
+    parked = compiler.park(targets[pivot], compiler.seq(*cells))
+    prefix = tuple(compiler.cx(a, b) for a, b in linear)
+    word = compiler.seq(*prefix, parked, *reversed(prefix))
+    metadata = {'i': i, 'j': j, 'sign': sign, 'm': m,
+                'targets': list(targets), 'orientation': orientation,
+                'pivot': targets[pivot], 'linear_CX': [list(pair) for pair in linear],
+                'controls': list(controls), 'pattern': list(pattern),
+                'internal_sign': internal_sign}
+    return word, metadata
+
+
+def exact_rotation(m):
+    """Physical two-dimensional G**m coefficients in Q(a), no floating trig."""
+    field = native.GOLDEN_FIELD
+    c, s = field.one, field.zero
+    a, p = field.from_sympy(native.A), field.from_sympy(native.P)
+    for _ in range(m):
+        c, s = a*c-p*s, p*c+a*s
+    return c, s
+
+
+def _literal_columns(execution):
+    """Sparse exact simulation of ALL native columns, including dirty Spin.
+
+    This is bounded to the eight-wire fixture; no logical gate replaces a
+    raw inverse.  SourceI uses the owned literal 8x8 local matrix.
+    """
+    f = native.GOLDEN_FIELD
+    one, zero = f.one, f.zero
+    local_g = [[f.from_sympy(native.G_LOCAL[r,c]) for c in range(2)] for r in range(2)]
+    local_si = []
+    for c in range(8):
+        entries = [(r, native.SOURCE_I_LOCAL[r,c]) for r in range(8)
+                   if native.SOURCE_I_LOCAL[r,c] != 0]
+        assert len(entries) == 1
+        local_si.append((entries[0][0], f.from_sympy(entries[0][1])))
+    n = execution.qubits
+    bit = lambda q: 1 << (n-1-q)
+    columns = [{c: one} for c in range(1 << n)]
+    for gate in execution.gates:
+        updated = []
+        for column in columns:
+            out = {}
+            for row, value in column.items():
+                if gate.op == 'CX':
+                    control, target = gate.wires
+                    new = row ^ bit(target) if row & bit(control) else row
+                    out[new] = out.get(new, zero) + value
+                elif gate.op == 'SourceI':
+                    wires = gate.wires
+                    old = sum(int(bool(row & bit(q))) << (2-k) for k,q in enumerate(wires))
+                    new, coefficient = local_si[old]
+                    target = row
+                    for k,q in enumerate(wires):
+                        if ((old ^ new) >> (2-k)) & 1:
+                            target ^= bit(q)
+                    out[target] = out.get(target, zero) + coefficient*value
+                else:
+                    assert gate.op == 'G'
+                    q = gate.wires[0]
+                    old = int(bool(row & bit(q)))
+                    for new in (0,1):
+                        target = (row & ~bit(q)) | (new*bit(q))
+                        out[target] = out.get(target, zero) + local_g[new][old]*value
+            updated.append({r:v for r,v in out.items() if v != zero})
+        columns = updated
+    return columns
+
+
+def _expected_columns(execution, metadata):
+    f = native.GOLDEN_FIELD
+    c, s = exact_rotation(metadata['m'])
+    s *= metadata['sign']
+    targets, orientation = metadata['targets'], metadata['orientation']
+    n = execution.qubits
+    bit = lambda q: 1 << (n-1-q)
+    result = []
+    for column in range(1 << n):
+        label = sum(int(bool(column & bit(q))) << (3-k) for k,q in enumerate(targets))
+        if not column & bit(orientation) or label not in (metadata['i'],metadata['j']):
+            result.append({column:f.one})
+            continue
+        other = metadata['j'] if label == metadata['i'] else metadata['i']
+        row = column
+        for q, old, new in zip(targets, _bits(label), _bits(other)):
+            if old != new:
+                row ^= bit(q)
+        result.append({column:c, row:(s if label == metadata['i'] else -s)})
+    return result
+
+
+def _interval_json(interval):
+    return [[str(x.p), str(x.q)] for x in interval]
+
+
+def run():
+    compiler = Compiler(8, physical_port=5, spin=(6,7))
+    fixtures = []
+    for i,j,sign in ((0,1,1),(11,4,-1)):
+        word, metadata = plane_word(compiler, (0,1,2,3), 4, i,j,sign)
+        execution = compiler.execution(word, expansion_limit=10000)
+        native.validate_execution(execution, max_qubits=8, max_expanded_stages=10000)
+        counts = compiler.counts(word).as_dict()
+        t = len(metadata['linear_CX'])
+        assert counts == {'G':32,'CX':70+2*t,'SourceI':32,
+                          'N':134+2*t,'g_port':32,'g_off':0}
+        assert _literal_columns(execution) == _expected_columns(execution,metadata)
+        inverse_word = tuple(compiler.iter_raw(compiler.inv(word)))
+        owned_inverse = native.inverse_word(execution,max_qubits=8,max_expanded_stages=10000)
+        assert inverse_word == owned_inverse
+        inverse_counts = compiler.counts(compiler.inv(word)).as_dict()
+        assert inverse_counts == {'G':32,'CX':70+2*t,'SourceI':224,
+                                  'N':326+2*t,'g_port':32,'g_off':0}
+        opposite, _ = plane_word(compiler,(0,1,2,3),4,i,j,-sign)
+        assert compiler.counts(opposite).as_dict() == counts
+        fixtures.append({**metadata,'native_counts':counts,
+                         'literal_raw_inverse_counts':inverse_counts,
+                         'native_execution_sha256':hashlib.sha256(native.canonical_json(execution).encode()).hexdigest(),
+                         'all_columns_checked':256,'all_input_helper_spin':True})
+    # Every Fourier control assignment: the exponent is 32 on one pattern,
+    # and exactly zero otherwise.  This is not a small-angle approximation.
+    for pattern in range(16):
+        for control in range(16):
+            exponent = 2*sum((-1)**(bin(pattern & subset).count('1')+bin(control & subset).count('1'))
+                             for subset in range(16))
+            assert exponent == (32 if control == pattern else 0)
+    physical = exact_rotation(32)
+    half = exact_rotation(16)
+    assert (half[0]*half[0]-half[1]*half[1],2*half[0]*half[1]) == physical
+    cp,sp = native_phase.native_rotation_intervals(32,bits=128)
+    ch,sh = native_phase.native_rotation_intervals(16,bits=128)
+    pins = {}
+    for name,path in (('native_execution',Path(native.__file__)),('owned_AST',AST_PATH),
+                      ('native_phase',Path(native_phase.__file__)),('this_helper',Path(__file__))):
+        data = path.read_bytes()
+        pins[name] = {'path':str(path),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+    return {'status':'PASS','arithmetic':'exact Q(a), literal sparse all-column propagation; outward dyadic intervals',
+            'convention':'orientation1 R_ij(32theta) ordered(i,j)=[[c,-s],[s,c]]; orientation0 and all other target columns identity',
+            'fixtures':fixtures,'uniform_counts':'G32 SI32 CX(70+2t), N134+2t, 0<=t<=3',
+            'fresh_signed_inverse_same_inventory':True,
+            'literal_inverse_is_not_silently_shortened':True,
+            'physical_G32':{'cos_coeffs':[str(v) for v in physical[0].to_list()],
+                            'sin_coeffs':[str(v) for v in physical[1].to_list()],
+                            'cos_interval':_interval_json(cp),'sin_interval':_interval_json(sp),'bits':128},
+            'SO3_quaternion_half_angle_G16':{'cos_interval':_interval_json(ch),
+                                            'sin_interval':_interval_json(sh),'bits':128,
+                                            'warning':'half-angle helper only; native physical plane is G32'},
+            'input_pins':pins,'physical_33_placement_proved':False,
+            'source_cut_or_GR_admission_proved':False}
+
+
+if __name__ == '__main__':
+    result = run()
+    text = json.dumps(result,sort_keys=True,indent=2)+'\n'
+    output = Path(__file__).resolve().with_suffix('.json')
+    output.write_text(text)
+    print(text,end='')
+```
+
+### Frozen file: d0_controlled_recorder_word_20261026.py
+
+<!-- D0-CONTROLLER-FILE d0_controlled_recorder_word_20261026.py 13928 16d39b3dafb94cea9ead7b491e9c2b8d6852eb72cdc566bff5fa6e19c06375df -->
+```python
+"""Conservative native raw iterator for the pinned controlled-recorder DAG.
+
+No SK search or giant word expansion runs here.  Every returned operation is
+an owned Gate(G/CX/SourceI); fresh signed inverse plane recipes are explicit
+finite words, not Compiler.inv of the already expanded positive recipe.
+The full word is an operational-language construction, not physical Scene33
+placement or a proof that the paired Book cut is selected.
+"""
+import hashlib
+import importlib.util
+import json
+import os
+import sys
+from pathlib import Path
+
+sys.dont_write_bytecode = True
+BASE = Path(__file__).resolve().parent
+ROOT = Path(os.environ.get('D0_REPO_ROOT', str(Path.cwd()))).resolve()
+PLANE = BASE/'d0_controlled_plane_native_20261026.py'
+BUNDLE = BASE/'d0_so3_sk_compiler_20261026.json'
+FACTOR = BASE/'d0_recorder_so16_factor_20261026.json'
+EXPECTED = {
+    PLANE:'55929a5cc916cf9880907ec246fd7abf25366c4598320a6d63a341bbfe8f7ead',
+    BUNDLE:'0d5d7fab0dcd22b06be115afb2da60164546c83daacf0d9be0abadf8e1d4c5ee',
+    FACTOR:'259953482ecab31a1fc8dc0e93c8e49fda2a9825cc5c3339100e6d8a7c0f7645'}
+for path,expected in EXPECTED.items():
+    assert hashlib.sha256(path.read_bytes()).hexdigest() == expected
+spec = importlib.util.spec_from_file_location('d0_recorder_checked_plane', PLANE)
+plane = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = plane
+spec.loader.exec_module(plane)
+native = plane.native
+
+
+def add(left,right):
+    return {key:left.get(key,0)+right.get(key,0) for key in ('G','CX','SourceI')}
+
+
+def scale(counts,n):
+    return {key:value*n for key,value in counts.items()}
+
+
+class RecorderWord:
+    targets = (1,2,3,4)  # B,c,parked physical-P,q
+    orientation, tag, physical_port, spin = 7,8,0,(5,6)
+
+    def __init__(self):
+        self.bundle = json.loads(BUNDLE.read_text())
+        self.factor = json.loads(FACTOR.read_text())
+        assert self.bundle['schema'] == 'd0.so3-sk-signed-word/1'
+        self.compiler = plane.Compiler(9,self.physical_port,self.spin)
+        self.nodes = self.bundle['nodes']
+        self.roots = {t['name']:t['root'] for t in self.bundle['targets']}
+        assert set(self.roots) == {'theta_G','quarter'}
+        self.axis_counts, self.used_letters = [], []
+        # Structural induction on ALL DAG nodes.  No endpoint floating value
+        # in the search bundle is trusted by the syntax/count construction.
+        for index,node in enumerate(self.nodes):
+            kind = node['kind']
+            if kind == 'seq':
+                letters = node['letters']
+                assert all(type(x) is int and x in (-2,-1,1,2) for x in letters)
+                counts = (sum(abs(x)==1 for x in letters),sum(abs(x)==2 for x in letters))
+                used = set(letters)
+            elif kind == 'inv':
+                child = node['child']
+                assert type(child) is int and 0 <= child < index
+                counts = self.axis_counts[child]
+                used = {-x for x in self.used_letters[child]}
+            else:
+                assert kind == 'cat'
+                children = node['children']
+                assert all(type(x) is int and 0 <= x < index for x in children)
+                counts = tuple(sum(self.axis_counts[x][k] for x in children) for k in (0,1))
+                used = set().union(*(self.used_letters[x] for x in children))
+            assert type(node['length']) is int and node['length'] == sum(counts)
+            self.axis_counts.append(counts)
+            self.used_letters.append(used)
+        for target in self.bundle['targets']:
+            root = target['root']
+            assert type(root) is int and 0 <= root < len(self.nodes)
+            assert target['abstract_letter_length'] == sum(self.axis_counts[root])
+        self.rows = self.factor['chronological_givens']
+        assert len(self.rows) == 21
+        self.macros, self.macro_reports = {}, {}
+        for row in self.rows:
+            i,j,k = (row[name] for name in ('i','j','k'))
+            assert len({i,j,k}) == 3 and all(type(v) is int and 0<=v<16 for v in (i,j,k))
+            for name,inverse in self.parts(row['angle_id']):
+                letters = self.used_letters[self.roots[name]]
+                if inverse: letters = {-x for x in letters}
+                # The full inverse V is also supplied, with the same signs
+                # flipped.  Record every actually needed signed macro.
+                for letter in letters | {-x for x in letters}:
+                    pair = (i,j) if abs(letter)==1 else (i,k)
+                    self.macro(pair[0],pair[1],1 if letter>0 else -1)
+        assert len(self.macros) == 72
+        self.outer_swap = (native.Gate('CX',(0,3)),native.Gate('CX',(3,0)),native.Gate('CX',(0,3)))
+        self.v_counts = {'G':0,'CX':6,'SourceI':0}
+        for row in self.rows:
+            i,j,k = (row[name] for name in ('i','j','k'))
+            for name,inverse in self.parts(row['angle_id']):
+                for axis,n in enumerate(self.axis_counts[self.roots[name]],1):
+                    pair = (i,j) if axis==1 else (i,k)
+                    self.v_counts = add(self.v_counts,scale(self.macro_reports[(pair[0],pair[1],1)]['counts'],n))
+        self.controller_counts = add(scale(self.v_counts,2),{'G':0,'CX':1,'SourceI':0})
+        assert self.v_counts == {'G':981843712,'CX':2211643252,'SourceI':981843712}
+        assert sum(self.v_counts.values()) == 4175330676
+        assert sum(self.controller_counts.values()) == 8350661353
+
+    @staticmethod
+    def parts(angle_id):
+        # Chronological order; angle2 is theta^-1 THEN quarter.
+        return {0:(('quarter',True),),1:(('theta_G',False),),
+                2:(('theta_G',True),('quarter',False)),
+                3:(('quarter',False),),4:(('theta_G',True),)}[angle_id]
+
+    def macro(self,i,j,sign):
+        key = (i,j,sign)
+        if key not in self.macros:
+            word,metadata = plane.plane_word(self.compiler,self.targets,self.orientation,i,j,sign)
+            execution = self.compiler.execution(word,expansion_limit=10000)
+            native.validate_execution(execution,max_qubits=9,max_expanded_stages=10000)
+            counts = {k:sum(g.op==k for g in execution.gates) for k in ('G','CX','SourceI')}
+            t = bin(i^j).count('1')-1
+            assert counts == {'G':32,'CX':70+2*t,'SourceI':32}
+            assert all(g.op!='G' or g.wires==(0,) for g in execution.gates)
+            assert all(max(g.wires)<=7 for g in execution.gates)
+            self.macros[key] = execution.gates
+            self.macro_reports[key] = {'counts':counts,'raw_stages':len(execution.gates),
+                'native_execution_sha256':hashlib.sha256(native.canonical_json(execution).encode()).hexdigest()}
+        return self.macros[key]
+
+    def sk_letters(self,index,inverse=False):
+        """Actual finite expansion semantics, not a gate or zero-cost decoder."""
+        node = self.nodes[index]
+        if node['kind']=='seq':
+            for letter in (reversed(node['letters']) if inverse else node['letters']):
+                yield -letter if inverse else letter
+        elif node['kind']=='inv':
+            yield from self.sk_letters(node['child'],not inverse)
+        else:
+            for child in (reversed(node['children']) if inverse else node['children']):
+                yield from self.sk_letters(child,inverse)
+
+    def iter_v(self,inverse=False):
+        """Conservative raw iterator; no billion-letter allocation is made."""
+        yield from self.outer_swap
+        for row in (reversed(self.rows) if inverse else self.rows):
+            i,j,k = (row[name] for name in ('i','j','k'))
+            parts = self.parts(row['angle_id'])
+            for name,part_inverse in (reversed(parts) if inverse else parts):
+                for letter in self.sk_letters(self.roots[name],part_inverse ^ inverse):
+                    pair = (i,j) if abs(letter)==1 else (i,k)
+                    yield from self.macro(pair[0],pair[1],1 if letter>0 else -1)
+        yield from self.outer_swap
+
+    def iter_controller(self):
+        # Chronology V^-1;CX(tag,orientation);V => V CX V^dagger.
+        yield from self.iter_v(True)
+        yield native.Gate('CX',(self.tag,self.orientation))
+        yield from self.iter_v(False)
+
+    def iter_small_v(self,inverse=False):
+        letters = (1,2,-1)
+        yield from self.outer_swap
+        for letter in (tuple(-x for x in reversed(letters)) if inverse else letters):
+            pair = (0,1) if abs(letter)==1 else (0,2)
+            # The diagnostic triple is separate from the returned21-factor
+            # macro cache; it must not change that word's72 used bindings.
+            small,_ = plane.plane_word(self.compiler,self.targets,self.orientation,
+                                      pair[0],pair[1],1 if letter>0 else -1)
+            yield from self.compiler.iter_raw(small)
+        yield from self.outer_swap
+
+
+def _small_expected_columns():
+    """Independent exact SO3 calculation, then physical P/park relabelling."""
+    f = native.GOLDEN_FIELD
+    c,s = plane.exact_rotation(32)
+    def mm(A,B):
+        return [[sum((A[i][k]*B[k][j] for k in range(3)),f.zero) for j in range(3)] for i in range(3)]
+    def rotation(i,j,sign=1):
+        A = [[f.one if r==q else f.zero for q in range(3)] for r in range(3)]
+        A[i][i]=c;A[j][j]=c;A[i][j]=-sign*s;A[j][i]=sign*s
+        return A
+    B = mm(rotation(0,1,-1),mm(rotation(0,2),rotation(0,1)))
+    physical_targets = (1,2,0,4)  # B,c,ORIGINAL physical-P,q
+    bit = lambda q: 1 << (8-q)
+    columns = []
+    for column in range(512):
+        if not column & bit(8):
+            columns.append({column:f.one});continue
+        old_orientation = int(bool(column & bit(7)))
+        label = sum(int(bool(column & bit(q))) << (3-k) for k,q in enumerate(physical_targets))
+        if label >= 3:
+            columns.append({column ^ bit(7):f.one});continue
+        out = {}
+        for new in range(3):
+            coefficient = B[new][label] if old_orientation==0 else B[label][new]
+            if coefficient == f.zero: continue
+            row = column ^ bit(7)
+            for k,q in enumerate(physical_targets):
+                old = (label >> (3-k)) & 1;desired = (new >> (3-k)) & 1
+                if old != desired: row ^= bit(q)
+            out[row] = coefficient
+        columns.append(out)
+    return columns
+
+
+def run():
+    word = RecorderWord()
+    # ONE new independent end-to-end all-column fixture, not the returned
+    # 8-billion-stage word: Seq(1,2,-1) on states0,1,2 plus outer park/tag.
+    gates = tuple(word.iter_small_v(True))+(native.Gate('CX',(8,7)),)+tuple(word.iter_small_v(False))
+    execution = native.Execution(9,(),(),gates,native.G_CX_SOURCE_I,0,(5,6))
+    native.validate_execution(execution,max_qubits=9,max_expanded_stages=10000)
+    assert len(gates) == 817
+    assert plane._literal_columns(execution) == _small_expected_columns()
+    # The actual20-wire code retains DATA9..12 and oldRIGHT13..19 unchanged.
+    frame = native.Execution(20,(3,),tuple(range(13,20)),(),native.G_CX_SOURCE_I,0,(5,6))
+    native.validate_execution(frame,max_qubits=20,max_expanded_stages=0)
+    assert all(not set(g.wires)&set(range(9,20)) for raw in word.macros.values() for g in raw)
+    # Prefix inspection is bounded.  Completeness follows by the structural
+    # induction above and native validation of all72 signed bottom macros.
+    iterator = word.iter_controller()
+    sample = [next(iterator) for _ in range(24)]
+    prefix_execution = native.Execution(20,(3,),tuple(range(13,20)),tuple(sample),native.G_CX_SOURCE_I,0,(5,6))
+    native.validate_execution(prefix_execution,max_qubits=20,max_expanded_stages=24)
+    pins = {}
+    for path in (PLANE,BUNDLE,FACTOR,plane.AST_PATH,Path(native.__file__),Path(__file__)):
+        data = path.read_bytes();pins[str(path)] = {'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+    return {'status':'PASS','schema':'d0.controlled-recorder-native-word/1',
+        'layout':{'physical_port':0,'target_B_c_parkedP_q':[1,2,3,4],
+                  'Spin':[5,6],'orientation':7,'free_tag':8,'DATA':[9,10,11,12],
+                  'oldRIGHT':list(range(13,20)),'additional_parking_input_blank':3},
+        'returned_word':'chronological V^-1;CX(8,7);V; V=SWAP(0,3);21 factors;SWAP(0,3)',
+        'inverse_semantics':'reverse chronology and signs, then literal fresh signed plane macro; NOT raw inverse_word',
+        'dag_nodes_checked':len(word.nodes),'factors':len(word.rows),
+        'validated_signed_native_macros':len(word.macros),
+        'macro_bindings':[{'i':k[0],'j':k[1],'sign':k[2],**v} for k,v in sorted(word.macro_reports.items())],
+        'V_counts':word.v_counts,'V_stages':sum(word.v_counts.values()),
+        'controller_counts':word.controller_counts,'controller_stages':sum(word.controller_counts.values()),
+        'full_billion_stage_word_materialized':False,'full_raw_syntax':'by DAG induction and all72 validated literal macros',
+        'new_fixture':{'abstract_letters':[1,2,-1],'basis_triple':[0,1,2],
+                       'raw_stages':len(gates),'world_dimension':512,'all_columns_exact':True,
+                       'dirty_Spin_and_parking_input':True,
+                       'expected':'tag0 I; tag1 [[0,B^T],[B,0]] on ORIGINAL physical-P WORLD',
+                       'native_execution_sha256':hashlib.sha256(native.canonical_json(execution).encode()).hexdigest()},
+        'full_extension':{'qubits':20,'world_dimension':1<<20,'paired_cut_rank_if_declared':163840,
+                          'parking_blank_not_free_input':True,'extra_cut_selection_proved':False},
+        'input_pins':pins,'actual_interval_endpoint_cert_is_separate':True,
+        'physical_Scene33_placement_proved':False,'GR_admission_proved':False}
+
+
+if __name__ == '__main__':
+    result = run()
+    text = json.dumps(result,sort_keys=True,indent=2)+'\n'
+    (BASE/'d0_controlled_recorder_word_20261026.json').write_text(text)
+    print(text,end='')
+```
+
+### Frozen file: d0_controlled_recorder_interval_20261026.py
+
+<!-- D0-CONTROLLER-FILE d0_controlled_recorder_interval_20261026.py 12132 ff1978fde37379230cdfe3e3707bddaabf09f69ceb56a679fbaf3140acfbc9a5 -->
+```python
+"""Independent dyadic certification of the returned signed SK DAG and W649.
+
+Only integer outward arithmetic and the original algebraic G enter the
+certificate; no printed quaternion, angle, net metric or float eps is trusted.
+Native plane expansion is separately bound to the owned checked macro.
+"""
+import argparse,hashlib,importlib.util,json,math,sys
+from pathlib import Path
+BASE=Path(__file__).resolve().parent
+
+def digest(b): return hashlib.sha256(b).hexdigest()
+
+class Dyadic:
+    def __init__(self,bits): self.bits=bits;self.D=1<<bits
+    def const(self,n): return (int(n)*self.D,int(n)*self.D)
+    def neg(self,a): return (-a[1],-a[0])
+    def add(self,a,b): return (a[0]+b[0],a[1]+b[1])
+    def sub(self,a,b): return self.add(a,self.neg(b))
+    def mul(self,a,b):
+        ps=[x*y for x in a for y in b]
+        return (min(ps)//self.D,-((-max(ps))//self.D))
+    def rat(self,n,d=1):
+        if d<=0: raise ValueError('positive denominator required')
+        return ((n*self.D)//d,-((-(n*self.D))//d))
+    def root(self,a):
+        if a[0]<0: raise ValueError('negative square-root endpoint')
+        low=math.isqrt(a[0]*self.D); high=math.isqrt(a[1]*self.D)
+        if high*high<a[1]*self.D: high+=1
+        return low,high
+    def identity(self,n): return [[self.const(int(i==j)) for j in range(n)] for i in range(n)]
+    def mm(self,A,B):
+        if len(A[0])!=len(B): raise ValueError('matrix dimensions')
+        return [[self.sum(self.mul(A[i][k],B[k][j]) for k in range(len(B)))
+                 for j in range(len(B[0]))] for i in range(len(A))]
+    def sum(self,vs):
+        lo=hi=0
+        for v in vs: lo+=v[0];hi+=v[1]
+        return lo,hi
+    @staticmethod
+    def tr(A): return [list(row) for row in zip(*A)]
+    def power(self,A,n):
+        if n<0: return self.power(self.tr(A),-n)
+        result=self.identity(len(A))
+        while n:
+            if n&1: result=self.mm(A,result)
+            n//=2
+            if n: A=self.mm(A,A)
+        return result
+    def plane(self,n,i,j,c,s):
+        A=self.identity(n);A[i][i]=c;A[i][j]=self.neg(s);A[j][i]=s;A[j][j]=c
+        return A
+    def frobenius_upper(self,A,B):
+        ss=sum(max(abs(v) for v in self.sub(a,b))**2 for ra,rb in zip(A,B) for a,b in zip(ra,rb))
+        r=math.isqrt(ss)
+        return r+int(r*r<ss)
+    def field_poly(self,coefficients,a):
+        value=self.const(0)
+        for coefficient in coefficients:
+            parts=coefficient.split('/')
+            term=self.rat(int(parts[0]),int(parts[1]) if len(parts)==2 else 1)
+            value=self.add(self.mul(value,a),term)
+        return value
+
+def load_checked(path,expected=None):
+    b=path.read_bytes()
+    if expected and digest(b)!=expected: raise ValueError('input SHA mismatch')
+    return json.loads(b),digest(b)
+
+def evaluate_bundle(bundle,iv):
+    if bundle['schema']!='d0.so3-sk-signed-word/1': raise ValueError('schema')
+    # p=(sqrt5-1)/2,a=sqrtp in the original positive real embedding.
+    p=iv.mul(iv.sub(iv.root(iv.const(5)),iv.const(1)),iv.rat(1,2))
+    a=iv.root(p)
+    G=[[a,iv.neg(p)],[p,a]]
+    G32=iv.power(G,32)
+    generators={1:iv.plane(3,0,1,G32[0][0],G32[1][0]),
+                2:iv.plane(3,0,2,G32[0][0],G32[1][0])}
+    generators[-1]=iv.tr(generators[1]);generators[-2]=iv.tr(generators[2])
+    matrices=[];counts=[]
+    for index,node in enumerate(bundle['nodes']):
+        kind=node['kind']
+        if kind=='seq':
+            A=iv.identity(3);n1=n2=0
+            for letter in node['letters']:
+                if type(letter) is not int or letter not in generators: raise ValueError('letter')
+                A=iv.mm(generators[letter],A)
+                n1+=int(abs(letter)==1);n2+=int(abs(letter)==2)
+        elif kind=='inv':
+            child=node['child']
+            if type(child) is not int or not 0<=child<index: raise ValueError('non-topological inverse')
+            A=iv.tr(matrices[child]);n1,n2=counts[child]
+        elif kind=='cat':
+            A=iv.identity(3);n1=n2=0
+            for child in node['children']:
+                if type(child) is not int or not 0<=child<index: raise ValueError('non-topological concatenation')
+                A=iv.mm(matrices[child],A);c1,c2=counts[child];n1+=c1;n2+=c2
+        else: raise ValueError('unknown node')
+        if type(node['length']) is not int or node['length']!=n1+n2: raise ValueError('length mismatch')
+        matrices.append(A);counts.append((n1,n2))
+    targets={}
+    for report in bundle['targets']:
+        name=report['name'];r=report['root']
+        if name not in ('theta_G','quarter') or name in targets or type(r) is not int or not 0<=r<len(matrices): raise ValueError('target')
+        ideal=iv.plane(3,0,1,a,p) if name=='theta_G' else iv.plane(3,0,1,iv.const(0),iv.const(1))
+        n1,n2=counts[r]
+        if report['abstract_letter_length']!=n1+n2: raise ValueError('report length')
+        targets[name]={'matrix':matrices[r],'counts':(n1,n2),
+                       'error_int':iv.frobenius_upper(matrices[r],ideal),'root':r}
+    if set(targets)!=set(('theta_G','quarter')): raise ValueError('missing target')
+    reached=set();pending=[t['root'] for t in targets.values()]
+    while pending:
+        i=pending.pop()
+        if i in reached: continue
+        reached.add(i);node=bundle['nodes'][i]
+        pending.extend(node.get('children',[]))
+        if 'child' in node: pending.append(node['child'])
+    if len(reached)!=len(bundle['nodes']): raise ValueError('unreachable witness nodes')
+    return targets,a,p
+
+def macro_counts(i,j):
+    t=bin(i^j).count('1')-1
+    if not 0<=t<=3: raise ValueError('plane')
+    return {'G':32,'SourceI':32,'CX':70+2*t}
+
+def main():
+    p=argparse.ArgumentParser()
+    p.add_argument('--bundle',type=Path,default=BASE/'d0_so3_sk_compiler_20261026.json')
+    p.add_argument('--factor',type=Path,default=BASE/'d0_recorder_so16_factor_20261026.json')
+    p.add_argument('--bits',type=int,default=256)
+    p.add_argument('--output',type=Path,default=BASE/'d0_controlled_recorder_interval_20261026.json')
+    args=p.parse_args()
+    if args.bits<192: raise ValueError('at least192 certificate bits')
+    bundle,bundle_sha=load_checked(args.bundle,'0d5d7fab0dcd22b06be115afb2da60164546c83daacf0d9be0abadf8e1d4c5ee')
+    factor,factor_sha=load_checked(args.factor,'259953482ecab31a1fc8dc0e93c8e49fda2a9825cc5c3339100e6d8a7c0f7645')
+    iv=Dyadic(args.bits)
+    targets,a,pg=evaluate_bundle(bundle,iv)
+    th,qu=targets['theta_G'],targets['quarter']
+    angle={0:(iv.tr(qu['matrix']),qu['counts']),1:(th['matrix'],th['counts']),
+           2:(iv.mm(qu['matrix'],iv.tr(th['matrix'])),tuple(x+y for x,y in zip(th['counts'],qu['counts']))),
+           3:(qu['matrix'],qu['counts']),4:(iv.tr(th['matrix']),th['counts'])}
+    whole=iv.identity(16);ideal_whole=iv.identity(16)
+    inventory={'G':0,'SourceI':0,'CX':0};abstract=0
+    for row in factor['chronological_givens']:
+        i,j,k,ai=(row[x] for x in ('i','j','k','angle_id'))
+        mat,counts=angle[ai]
+        embedded=iv.identity(16)
+        indices=(i,j,k)
+        for u in range(3):
+            for v in range(3): embedded[indices[u]][indices[v]]=mat[u][v]
+        whole=iv.mm(embedded,whole)
+        coeff=factor['unique_angles'][ai]
+        c=iv.field_poly(coeff['cos_coeffs'],a);s=iv.field_poly(coeff['sin_coeffs'],a)
+        ideal_whole=iv.mm(iv.plane(16,i,j,c,s),ideal_whole)
+        for count,plane in zip(counts,((i,j),(i,k))):
+            for key,value in macro_counts(*plane).items(): inventory[key]+=count*value
+        abstract+=sum(counts)
+    error_int=iv.frobenius_upper(whole,ideal_whole)
+    # Bind every actually used plane/sign to the checked owned native macro.
+    hp=BASE/'d0_controlled_plane_native_20261026.py'
+    helper_sha=digest(hp.read_bytes())
+    if helper_sha!='55929a5cc916cf9880907ec246fd7abf25366c4598320a6d63a341bbfe8f7ead':
+        raise ValueError('native plane helper SHA')
+    spec=importlib.util.spec_from_file_location('d0_recorder_interval_plane',hp)
+    H=importlib.util.module_from_spec(spec);sys.modules[spec.name]=H;spec.loader.exec_module(H)
+    compiler=H.Compiler(8,physical_port=0,spin=(5,6))
+    used=set()
+    for factor_row in factor['chronological_givens']:
+        i,j,k=(factor_row[v] for v in ('i','j','k'))
+        used.update(((i,j),(i,k)))
+    hashes=[]
+    for i,j in sorted(used):
+        for sign in (1,-1):
+            w,metadata=H.plane_word(compiler,(1,2,3,4),7,i,j,sign)
+            actual=compiler.counts(w).as_dict();expected=macro_counts(i,j)
+            if actual!={**expected,'N':sum(expected.values()),'g_port':32,'g_off':0}:
+                raise ValueError('plane native inventory binding')
+            if len(metadata['linear_CX'])!=bin(i^j).count('1')-1:
+                raise ValueError('linear plane conjugation')
+            ex=compiler.execution(w,expansion_limit=10000)
+            H.native.validate_execution(ex,max_qubits=8,max_expanded_stages=10000)
+            if any(g.op=='G' and g.wires!=(0,) for g in ex.gates):
+                raise ValueError('off-port primitive G')
+            if any(g.op=='CX' and g.wires[1]==7 for g in ex.gates):
+                raise ValueError('orientation flag is not readonly')
+            hashes.append(digest(H.native.canonical_json(ex).encode()))
+    macro_set_sha=digest(('\n'.join(hashes)+'\n').encode())
+    # One actual outer parking SWAP on each side handles the physical source
+    # port as a target coordinate. No source-port content is silently blanked.
+    inventory['CX']+=6
+    Nv=sum(inventory.values())
+    total={key:2*value for key,value in inventory.items()};total['CX']+=1
+    Ntotal=sum(total.values())
+    # Semantic inverse expands freshly signed, exact inverse macros. Literal
+    # raw inverse is a DIFFERENT conservative word with the following count.
+    literal_inverse={'G':inventory['G'],'CX':inventory['CX'],
+                     'SourceI':4*inventory['G']+3*inventory['SourceI']}
+    # Frobenius dominates operator norm; pure integer strict budgets.
+    assert error_int*10**39<2*iv.D
+    assert error_int*Ntotal*(1<<20)<iv.D
+    assert error_int*Ntotal*10**29<2*iv.D
+    # Complete feedback-normal debt at this specified projection target:
+    # |DJ|<=8 z R delta/(1-z)^2*(N nu+2 mu), R=163840 in the
+    # DATA16/Spin4/old128/free-tag extension, z=2^-20.
+    zden=1<<20;R=163840
+    debt_num=8*R*zden*error_int*Ntotal
+    debt_den=(zden-1)**2*iv.D
+    assert debt_num*10**29<2*debt_den
+    result={'status':'PASS','arithmetic':'outward dyadic integer intervals',
+      'bits':args.bits,'bundle_sha256':bundle_sha,'factor_sha256':factor_sha,
+      'reachable_nodes':len(bundle['nodes']),'exact_Givens':len(factor['chronological_givens']),
+      'angle_error_dyadics':{name:{'upper_numerator':t['error_int'],'denominator_power2':args.bits,
+         'counts_axis1_axis2':t['counts']} for name,t in targets.items()},
+      'full_SO16_error':{'upper_numerator':error_int,'denominator_power2':args.bits,
+                        'strict_bound':'<2e-39'},
+      'native_macro_helper_sha256':helper_sha,'native_macro_instance_count':len(hashes),
+      'native_macro_instance_set_sha256':macro_set_sha,'abstract_plane_letters':abstract,'controlled_V_native_inventory':inventory,
+      'controlled_V_raw_stages':Nv,'literal_inverse_inventory':literal_inverse,
+      'implemented_inverse':'fresh signed inverse macro expansion, not literal raw inverse',
+      'tagged_controller_inventory':total,'tagged_controller_stages':Ntotal,
+      'strict_delta_times_total_stages_bound':'<2e-29 (hence <2^-20)',
+      'cut_rank_promise':'FREE active tag and Spin4/DATA16/oldRIGHT128; outer parking spare BLANK, restored on all columns',
+      'feedback_source_raw_stage_dual_bound':{'numerator':debt_num,'denominator':debt_den,
+        'strict_bound':'<2e-29 for nu=1, mu=0, R=163840, z=2^-20; not a GR42 source bound'},
+      'full_matrix_target':'W649 after physical port park, all16columns and exact false sector',
+      'physical_full33_placement':False,'paired_cut_selection':False,'GR_closed':False}
+    args.output.write_text(json.dumps(result,indent=2)+'\n')
+    print(json.dumps(result,indent=2))
+
+if __name__=='__main__':main()
+```
+
+### Frozen file: d0_recorder_so16_factor_20261026.json
+
+<!-- D0-CONTROLLER-FILE d0_recorder_so16_factor_20261026.json 2859 259953482ecab31a1fc8dc0e93c8e49fda2a9825cc5c3339100e6d8a7c0f7645 -->
+```json
+{
+  "status": "PASS",
+  "target": "W649, order B,c,P,q",
+  "dimension": 16,
+  "field": "Q(a), a^4+a^2-1=0, a>0",
+  "primitive_count": 5,
+  "exact_givens": 21,
+  "unique_angles": [
+    {
+      "id": 0,
+      "cos": "0",
+      "sin": "-1",
+      "cos_coeffs": [],
+      "sin_coeffs": [
+        "-1"
+      ]
+    },
+    {
+      "id": 1,
+      "cos": "sqrt(-1/2 + sqrt(5)/2)",
+      "sin": "-1/2 + sqrt(5)/2",
+      "cos_coeffs": [
+        "1",
+        "0"
+      ],
+      "sin_coeffs": [
+        "1",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "id": 2,
+      "cos": "-1/2 + sqrt(5)/2",
+      "sin": "sqrt(-1/2 + sqrt(5)/2)",
+      "cos_coeffs": [
+        "1",
+        "0",
+        "0"
+      ],
+      "sin_coeffs": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "id": 3,
+      "cos": "0",
+      "sin": "1",
+      "cos_coeffs": [],
+      "sin_coeffs": [
+        "1"
+      ]
+    },
+    {
+      "id": 4,
+      "cos": "sqrt(-1/2 + sqrt(5)/2)",
+      "sin": "1/2 - sqrt(5)/2",
+      "cos_coeffs": [
+        "1",
+        "0"
+      ],
+      "sin_coeffs": [
+        "-1",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "chronological_givens": [
+    {
+      "i": 14,
+      "j": 15,
+      "k": 0,
+      "angle_id": 0
+    },
+    {
+      "i": 13,
+      "j": 14,
+      "k": 0,
+      "angle_id": 1
+    },
+    {
+      "i": 13,
+      "j": 15,
+      "k": 0,
+      "angle_id": 0
+    },
+    {
+      "i": 12,
+      "j": 13,
+      "k": 0,
+      "angle_id": 2
+    },
+    {
+      "i": 12,
+      "j": 15,
+      "k": 0,
+      "angle_id": 3
+    },
+    {
+      "i": 11,
+      "j": 12,
+      "k": 0,
+      "angle_id": 0
+    },
+    {
+      "i": 10,
+      "j": 13,
+      "k": 0,
+      "angle_id": 0
+    },
+    {
+      "i": 9,
+      "j": 12,
+      "k": 0,
+      "angle_id": 4
+    },
+    {
+      "i": 9,
+      "j": 13,
+      "k": 0,
+      "angle_id": 3
+    },
+    {
+      "i": 8,
+      "j": 9,
+      "k": 0,
+      "angle_id": 1
+    },
+    {
+      "i": 8,
+      "j": 12,
+      "k": 0,
+      "angle_id": 3
+    },
+    {
+      "i": 7,
+      "j": 8,
+      "k": 0,
+      "angle_id": 0
+    },
+    {
+      "i": 6,
+      "j": 9,
+      "k": 0,
+      "angle_id": 0
+    },
+    {
+      "i": 5,
+      "j": 8,
+      "k": 0,
+      "angle_id": 2
+    },
+    {
+      "i": 5,
+      "j": 10,
+      "k": 0,
+      "angle_id": 0
+    },
+    {
+      "i": 4,
+      "j": 9,
+      "k": 0,
+      "angle_id": 2
+    },
+    {
+      "i": 4,
+      "j": 11,
+      "k": 0,
+      "angle_id": 0
+    },
+    {
+      "i": 3,
+      "j": 11,
+      "k": 0,
+      "angle_id": 3
+    },
+    {
+      "i": 2,
+      "j": 10,
+      "k": 0,
+      "angle_id": 3
+    },
+    {
+      "i": 1,
+      "j": 11,
+      "k": 0,
+      "angle_id": 1
+    },
+    {
+      "i": 0,
+      "j": 10,
+      "k": 1,
+      "angle_id": 1
+    }
+  ],
+  "reconstruction": "exact all256 entries in owned algebraic field",
+  "native_compilation_completed": false
+}
+```
+
+### Frozen file: d0_controlled_plane_native_20261026.json
+
+<!-- D0-CONTROLLER-FILE d0_controlled_plane_native_20261026.json 4890 6b1e656b409c3a39e5c9adaf665b0f811463ef8ac846bbd7d34213ad2e13037a -->
+```json
+{
+  "SO3_quaternion_half_angle_G16": {
+    "bits": 128,
+    "cos_interval": [
+      [
+        "-112113213592303515503308023460747782775",
+        "340282366920938463463374607431768211456"
+      ],
+      [
+        "-112113213592303515503308023460747782615",
+        "340282366920938463463374607431768211456"
+      ]
+    ],
+    "sin_interval": [
+      [
+        "-160641461471908557275738449874023466601",
+        "170141183460469231731687303715884105728"
+      ],
+      [
+        "-80320730735954278637869224937011733261",
+        "85070591730234615865843651857942052864"
+      ]
+    ],
+    "warning": "half-angle helper only; native physical plane is G32"
+  },
+  "arithmetic": "exact Q(a), literal sparse all-column propagation; outward dyadic intervals",
+  "convention": "orientation1 R_ij(32theta) ordered(i,j)=[[c,-s],[s,c]]; orientation0 and all other target columns identity",
+  "fixtures": [
+    {
+      "all_columns_checked": 256,
+      "all_input_helper_spin": true,
+      "controls": [
+        4,
+        0,
+        1,
+        2
+      ],
+      "i": 0,
+      "internal_sign": 1,
+      "j": 1,
+      "linear_CX": [],
+      "literal_raw_inverse_counts": {
+        "CX": 70,
+        "G": 32,
+        "N": 326,
+        "SourceI": 224,
+        "g_off": 0,
+        "g_port": 32
+      },
+      "m": 32,
+      "native_counts": {
+        "CX": 70,
+        "G": 32,
+        "N": 134,
+        "SourceI": 32,
+        "g_off": 0,
+        "g_port": 32
+      },
+      "native_execution_sha256": "892dd9021353bc16b671c246f564d2c4c88c53d00939a313909f331cee8b5942",
+      "orientation": 4,
+      "pattern": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "pivot": 3,
+      "sign": 1,
+      "targets": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "all_columns_checked": 256,
+      "all_input_helper_spin": true,
+      "controls": [
+        4,
+        1,
+        2,
+        3
+      ],
+      "i": 11,
+      "internal_sign": 1,
+      "j": 4,
+      "linear_CX": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "literal_raw_inverse_counts": {
+        "CX": 76,
+        "G": 32,
+        "N": 332,
+        "SourceI": 224,
+        "g_off": 0,
+        "g_port": 32
+      },
+      "m": 32,
+      "native_counts": {
+        "CX": 76,
+        "G": 32,
+        "N": 140,
+        "SourceI": 32,
+        "g_off": 0,
+        "g_port": 32
+      },
+      "native_execution_sha256": "98af23bf6f9f771df90875b1387874421140d34489050804c8fe93da03f93250",
+      "orientation": 4,
+      "pattern": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "pivot": 0,
+      "sign": -1,
+      "targets": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "fresh_signed_inverse_same_inventory": true,
+  "input_pins": {
+    "native_execution": {
+      "bytes": 17833,
+      "path": "/Users/grigorijvahrusev/.codex/worktrees/gr-native-source-20261024/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    "native_phase": {
+      "bytes": 11187,
+      "path": "/Users/grigorijvahrusev/.codex/worktrees/gr-native-source-20261024/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py",
+      "sha256": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d"
+    },
+    "owned_AST": {
+      "bytes": 22247,
+      "path": "/private/tmp/d0_native_select_builder_owned_20261026.py",
+      "sha256": "5e53f361a7d2e579fc90b3f3668dac33f6efef98df993eaa9ac7e07b4aabaa5d"
+    },
+    "this_helper": {
+      "bytes": 11926,
+      "path": "/private/tmp/d0_controlled_plane_native_20261026.py",
+      "sha256": "55929a5cc916cf9880907ec246fd7abf25366c4598320a6d63a341bbfe8f7ead"
+    }
+  },
+  "literal_inverse_is_not_silently_shortened": true,
+  "physical_33_placement_proved": false,
+  "physical_G32": {
+    "bits": 128,
+    "cos_coeffs": [
+      "-125450935288832",
+      "0",
+      "77532941928961"
+    ],
+    "cos_interval": [
+      [
+        "-266406234133171355770967360794425919125",
+        "340282366920938463463374607431768211456"
+      ],
+      [
+        "-266406234133171355770967360794425918719",
+        "340282366920938463463374607431768211456"
+      ]
+    ],
+    "sin_coeffs": [
+      "-98623425618272",
+      "0",
+      "60952629119040",
+      "0"
+    ],
+    "sin_interval": [
+      [
+        "105853445447347249622016276585230249969",
+        "170141183460469231731687303715884105728"
+      ],
+      [
+        "52926722723673624811008138292615125087",
+        "85070591730234615865843651857942052864"
+      ]
+    ]
+  },
+  "source_cut_or_GR_admission_proved": false,
+  "status": "PASS",
+  "uniform_counts": "G32 SI32 CX(70+2t), N134+2t, 0<=t<=3"
+}
+```
+
+### Frozen file: d0_controlled_recorder_word_20261026.json
+
+<!-- D0-CONTROLLER-FILE d0_controlled_recorder_word_20261026.json 22418 bd2ea05e8704bc7b3e7cdc9de7a6eff81ee3b1fb68a38e6c91065f7a713bc061 -->
+```json
+{
+  "GR_admission_proved": false,
+  "V_counts": {
+    "CX": 2211643252,
+    "G": 981843712,
+    "SourceI": 981843712
+  },
+  "V_stages": 4175330676,
+  "actual_interval_endpoint_cert_is_separate": true,
+  "controller_counts": {
+    "CX": 4423286505,
+    "G": 1963687424,
+    "SourceI": 1963687424
+  },
+  "controller_stages": 8350661353,
+  "dag_nodes_checked": 4689,
+  "factors": 21,
+  "full_billion_stage_word_materialized": false,
+  "full_extension": {
+    "extra_cut_selection_proved": false,
+    "paired_cut_rank_if_declared": 163840,
+    "parking_blank_not_free_input": true,
+    "qubits": 20,
+    "world_dimension": 1048576
+  },
+  "full_raw_syntax": "by DAG induction and all72 validated literal macros",
+  "input_pins": {
+    "/Users/grigorijvahrusev/.codex/worktrees/gr-native-source-20261024/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": {
+      "bytes": 17833,
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    "/private/tmp/d0_controlled_plane_native_20261026.py": {
+      "bytes": 11926,
+      "sha256": "55929a5cc916cf9880907ec246fd7abf25366c4598320a6d63a341bbfe8f7ead"
+    },
+    "/private/tmp/d0_controlled_recorder_word_20261026.py": {
+      "bytes": 13928,
+      "sha256": "16d39b3dafb94cea9ead7b491e9c2b8d6852eb72cdc566bff5fa6e19c06375df"
+    },
+    "/private/tmp/d0_native_select_builder_owned_20261026.py": {
+      "bytes": 22247,
+      "sha256": "5e53f361a7d2e579fc90b3f3668dac33f6efef98df993eaa9ac7e07b4aabaa5d"
+    },
+    "/private/tmp/d0_recorder_so16_factor_20261026.json": {
+      "bytes": 2859,
+      "sha256": "259953482ecab31a1fc8dc0e93c8e49fda2a9825cc5c3339100e6d8a7c0f7645"
+    },
+    "/private/tmp/d0_so3_sk_compiler_20261026.json": {
+      "bytes": 628010,
+      "sha256": "0d5d7fab0dcd22b06be115afb2da60164546c83daacf0d9be0abadf8e1d4c5ee"
+    }
+  },
+  "inverse_semantics": "reverse chronology and signs, then literal fresh signed plane macro; NOT raw inverse_word",
+  "layout": {
+    "DATA": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "Spin": [
+      5,
+      6
+    ],
+    "additional_parking_input_blank": 3,
+    "free_tag": 8,
+    "oldRIGHT": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "orientation": 7,
+    "physical_port": 0,
+    "target_B_c_parkedP_q": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "macro_bindings": [
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 0,
+      "j": 1,
+      "native_execution_sha256": "a6efdc697241931186648542263fc096fa729ab1067144c583c22b9c95078e56",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 0,
+      "j": 1,
+      "native_execution_sha256": "5d2cf3aac1b5fba4f141a6fdefb3361a8491dfb3d27ee5c6a38ed739961b7d39",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 0,
+      "j": 10,
+      "native_execution_sha256": "be345679524dba16498daa46ee06cf4a883dc0eda97a7f15084913fc86496dfd",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 0,
+      "j": 10,
+      "native_execution_sha256": "04dbb397c1372b4a771b0867112330f8594e28c63e45195acfffd3d91a5ef601",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 1,
+      "j": 0,
+      "native_execution_sha256": "5d2cf3aac1b5fba4f141a6fdefb3361a8491dfb3d27ee5c6a38ed739961b7d39",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 1,
+      "j": 0,
+      "native_execution_sha256": "a6efdc697241931186648542263fc096fa729ab1067144c583c22b9c95078e56",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 1,
+      "j": 11,
+      "native_execution_sha256": "f65d3727b4f1c6cd0abc344a00a27a23d35d9bc5a93ec9e671e8ad42e23e089c",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 1,
+      "j": 11,
+      "native_execution_sha256": "c4f2b8bda71a921009d9905bfe5323e5ca951cd8bc21f8cf221a094993800c38",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 2,
+      "j": 0,
+      "native_execution_sha256": "91ad725e4c086c4ae670cb66197e92e1538bca63a8b019b567919e5fc25b0906",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 2,
+      "j": 0,
+      "native_execution_sha256": "0cd5cb23435dc25fbf5b3523403bc81f4b6088be10254ef094301aca6e4db2a6",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 2,
+      "j": 10,
+      "native_execution_sha256": "d7ddb31090274a516265ebb3b3ac481174c8175193dc219002f1b26c9a3bc473",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 2,
+      "j": 10,
+      "native_execution_sha256": "1dea3eb89eaac1a472eb5e87bdd1dfbe63983acaae0f4d13d867f31475bad27f",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 3,
+      "j": 0,
+      "native_execution_sha256": "f84d21a51a070feb0b858f9fbcc9ac5f312bd14dbdb70c1968f87c38f40c518c",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 3,
+      "j": 0,
+      "native_execution_sha256": "bed6c6c0dbe7d3b3b25ed0a4813d4655984d5995688154a50ce21feb974f8c99",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 3,
+      "j": 11,
+      "native_execution_sha256": "5057fe21f67895dd9ace680a7abfdb76826dd8f42d29d31fa9950510f8b2b4b7",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 3,
+      "j": 11,
+      "native_execution_sha256": "2f556a222f7309c60c42acabb3dc3a51009a1129088b21b901191fc1bfaf3348",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 4,
+      "j": 0,
+      "native_execution_sha256": "53c443f6561ee4349edf1a8a2ca70513a8e83bbc661d04af3e14bbe0062748e1",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 4,
+      "j": 0,
+      "native_execution_sha256": "8b7722cb1164d63374ccfe51cdf62c305f51287552d12439a70d5de01f87a4b8",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 4,
+      "j": 9,
+      "native_execution_sha256": "d67edc995bb3e377e0b4381f71223d1aa8f0f4fd6b7dbffc0a57d165cd30834f",
+      "raw_stages": 138,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 4,
+      "j": 9,
+      "native_execution_sha256": "2a6d9305b4d41f45e5cc9e31431d33b7f8473f70155df759c99307f3f6cc02ac",
+      "raw_stages": 138,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 76,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 4,
+      "j": 11,
+      "native_execution_sha256": "4fac587a74e144bc601194af39fd28c97be6c2dc3aeb6f136445efe4d3577f04",
+      "raw_stages": 140,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 76,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 4,
+      "j": 11,
+      "native_execution_sha256": "c548d8826a3deb3e5bfe9cabba9b5dd7aa012d3fce4fbaba0a6d96a09e848ab8",
+      "raw_stages": 140,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 5,
+      "j": 0,
+      "native_execution_sha256": "c99b79fa2f3b4d33e2e5304aeb1b5caf0aeb8c89bfe54e95af84e18564ac4710",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 5,
+      "j": 0,
+      "native_execution_sha256": "213d3d6524390e189bf0c06285afee836870982363b9b62fbadd9d8692e83385",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 5,
+      "j": 8,
+      "native_execution_sha256": "81f2e9ed439b26140bd42091a807e93ef1f56a1f279c1562b9c0e6c2da816bb7",
+      "raw_stages": 138,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 5,
+      "j": 8,
+      "native_execution_sha256": "d25e0794723c4af5f028edb98828068de856070ca7de575833263c35aa35996f",
+      "raw_stages": 138,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 76,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 5,
+      "j": 10,
+      "native_execution_sha256": "19762bb47549291b87b7dee40c2ff2b1fd745762cf6dccc1d282c422e8717d89",
+      "raw_stages": 140,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 76,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 5,
+      "j": 10,
+      "native_execution_sha256": "40a7af66b16624f8af9e86eaab21848c664a13b1f34a62c147967562502b6465",
+      "raw_stages": 140,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 6,
+      "j": 0,
+      "native_execution_sha256": "f3823ac84a89da99920c691d2beb5da9064364666f9e5e89460b76f0249bf9e3",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 6,
+      "j": 0,
+      "native_execution_sha256": "ee5c54c5ba43112b12b20ca1ccdb75baa4840d6eae44cf7df39581b42fbe858d",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 76,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 6,
+      "j": 9,
+      "native_execution_sha256": "f1b46816edb50eb0345b8b74a62c9016aeed5a79f33620c75366137c0d1607bb",
+      "raw_stages": 140,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 76,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 6,
+      "j": 9,
+      "native_execution_sha256": "c032114bd3aa7db4ac7957e3e65f3bc3aa751916436914b14a04a27c7cfc133c",
+      "raw_stages": 140,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 7,
+      "j": 0,
+      "native_execution_sha256": "38e8d71b50ef29f3edbc1210aed0b9e9f64f3a0ff4cbe179c7ce68069c256a2d",
+      "raw_stages": 138,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 7,
+      "j": 0,
+      "native_execution_sha256": "1f87975f68399867e93cf8374dc2b6ed2d41b092c49ee26176433914005602ce",
+      "raw_stages": 138,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 76,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 7,
+      "j": 8,
+      "native_execution_sha256": "d3e7fae161a066ac4c623b0e09ff8059984a8d8585cc553615d2176ce51992bd",
+      "raw_stages": 140,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 76,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 7,
+      "j": 8,
+      "native_execution_sha256": "2a89213c374ef14ebf68454e3a2989e71bd9d66588ceb47ff173ae0a2cda39a6",
+      "raw_stages": 140,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 8,
+      "j": 0,
+      "native_execution_sha256": "ea6c20cc585eea315fcfcab578f9bc1dd34150984a8d93fa65879586f75137c3",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 8,
+      "j": 0,
+      "native_execution_sha256": "91203694300be2904755ac1c81deef1ecedb8c8a3c8a3a4438a74a0c053c805a",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 8,
+      "j": 9,
+      "native_execution_sha256": "72c63a69cca5db73544f4595f153522b97228f9003c29c98975f90de83156493",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 8,
+      "j": 9,
+      "native_execution_sha256": "6f2db2353d08e6d01c6a27aa1fde6623e5c2da97c00b71f886453dd7adb86998",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 8,
+      "j": 12,
+      "native_execution_sha256": "a8bc61a19e217ceb1a6849e8ebf31e454bf22348f49e745eb28c52f74c9a084d",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 8,
+      "j": 12,
+      "native_execution_sha256": "71f8f68de7b4d0f3a3d4f5117f06a5be9802db3485822b988e7ac1f84e3585f1",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 9,
+      "j": 0,
+      "native_execution_sha256": "28e78cbf08f7b151b25f53cd833959835f554490eb08a354d7c34e70693e4b32",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 9,
+      "j": 0,
+      "native_execution_sha256": "42925d9ca10e1847c9458e6396c84528f1d46d4c2e5e27e5180c1ce58252d6d4",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 9,
+      "j": 12,
+      "native_execution_sha256": "f927e38354e90bf9ae7da7080727cdb90c0c591e72486a9e8859945c53373955",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 9,
+      "j": 12,
+      "native_execution_sha256": "a1029f5b8dcd020741e78948c9108cfbfad9efcfa9122c344f6041697c8cbc35",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 9,
+      "j": 13,
+      "native_execution_sha256": "1cd20ef689483d4fc7dd3004dea8efa3927f7354c075ad1ce91c7ccb2b7cb0d6",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 9,
+      "j": 13,
+      "native_execution_sha256": "01e1c510a389c707bd803b2a34e0133c06d4fa46e3a3636630b73b759d99277a",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 10,
+      "j": 0,
+      "native_execution_sha256": "04dbb397c1372b4a771b0867112330f8594e28c63e45195acfffd3d91a5ef601",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 10,
+      "j": 0,
+      "native_execution_sha256": "be345679524dba16498daa46ee06cf4a883dc0eda97a7f15084913fc86496dfd",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 10,
+      "j": 13,
+      "native_execution_sha256": "46e015492e7fc58128e6247b0986390e1f9db8af32cc094b441991ab2a80db84",
+      "raw_stages": 138,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 10,
+      "j": 13,
+      "native_execution_sha256": "fcc9044cca65762d6edc3ceac346d659ee5f46a04bad2c8af1536399ea38473e",
+      "raw_stages": 138,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 11,
+      "j": 0,
+      "native_execution_sha256": "3b504fb7a31dcc193ca51ff38f686b660ed324f159599c0aa9a7f782363b1b5e",
+      "raw_stages": 138,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 11,
+      "j": 0,
+      "native_execution_sha256": "40b2bf4ec433bb31dce042f3b0191d4a99c6e94f84c5d08fc6c5b203684d3553",
+      "raw_stages": 138,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 11,
+      "j": 12,
+      "native_execution_sha256": "bbabf79351b8efdddb31e073aec6d3629f41b6c423b00a60d034a6ef75e1d1a1",
+      "raw_stages": 138,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 11,
+      "j": 12,
+      "native_execution_sha256": "649118033e8fd67f6ceb16966ae6e2da58ca98419172993bd047e558f9bb1746",
+      "raw_stages": 138,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 12,
+      "j": 0,
+      "native_execution_sha256": "64eaa5f36dd672bccf4c5068ec1c15addd9620c463c9473a67d6f0db047766aa",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 12,
+      "j": 0,
+      "native_execution_sha256": "9f21ac5725ecad16e226b5d78ca4734df3a2cb814549ee215e66803583849ddd",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 12,
+      "j": 13,
+      "native_execution_sha256": "92f6bfab758fbc862b6876af9b63059e8b03d251b25eccd70a68e4f0f21dc4fe",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 12,
+      "j": 13,
+      "native_execution_sha256": "229fa084def7f5c5930f8515de07d3ddea8a61833468b6a721de0ffa286c34d7",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 12,
+      "j": 15,
+      "native_execution_sha256": "6795287e13d05adf781ce13f65413572901229f6436f1f95119f3b874a621802",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 12,
+      "j": 15,
+      "native_execution_sha256": "6b15a4490d0f0cfae3bac932e43cccd5a14d1dd0a53430fb4ac0d576167af508",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 13,
+      "j": 0,
+      "native_execution_sha256": "d7b978f15b62ceb2a34ec0b58dcaeadb8d16c8be1d4c5ca1eefe31eaed06ecc9",
+      "raw_stages": 138,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 13,
+      "j": 0,
+      "native_execution_sha256": "969ffae3c1b0525d14bf8ebb48ba8b31443b25ebd2b9dee14ff0a5f51777fc78",
+      "raw_stages": 138,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 13,
+      "j": 14,
+      "native_execution_sha256": "cf44a499e4b1066ff8fc8dec4b4af81da279ea82e87b9dc3cffe15c8904fa9da",
+      "raw_stages": 136,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 72,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 13,
+      "j": 14,
+      "native_execution_sha256": "06e6450f27d424872c86729da862cc1a1566e7d90c22f8516fa4020045f1aa4f",
+      "raw_stages": 136,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 13,
+      "j": 15,
+      "native_execution_sha256": "de385cebf641b05723e6e35b890b121c558f3bdb105b525ebc9e9ac6d36d4370",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 13,
+      "j": 15,
+      "native_execution_sha256": "72ee91474b5db18f445518a5fb0ad97584dd34fa8892b9dbeaa86ba4c24dee86",
+      "raw_stages": 134,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 14,
+      "j": 0,
+      "native_execution_sha256": "a0e279908e80b86c3e98a1cbc030f8ea466737110cf5e42d8757a9924881ef7b",
+      "raw_stages": 138,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 74,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 14,
+      "j": 0,
+      "native_execution_sha256": "a120a0dd06eac52909f83a22b5409f08a1bcdc15c7c0c5781b5b4788a1ac6fb1",
+      "raw_stages": 138,
+      "sign": 1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 14,
+      "j": 15,
+      "native_execution_sha256": "5e42f2fde7b58c276451f5acbd9efa3863390fecb91e975424983e9d75ad8d36",
+      "raw_stages": 134,
+      "sign": -1
+    },
+    {
+      "counts": {
+        "CX": 70,
+        "G": 32,
+        "SourceI": 32
+      },
+      "i": 14,
+      "j": 15,
+      "native_execution_sha256": "b685662c397245685a3a638914c7eb1b383b02fcd04f229c69a67539bdaf4284",
+      "raw_stages": 134,
+      "sign": 1
+    }
+  ],
+  "new_fixture": {
+    "abstract_letters": [
+      1,
+      2,
+      -1
+    ],
+    "all_columns_exact": true,
+    "basis_triple": [
+      0,
+      1,
+      2
+    ],
+    "dirty_Spin_and_parking_input": true,
+    "expected": "tag0 I; tag1 [[0,B^T],[B,0]] on ORIGINAL physical-P WORLD",
+    "native_execution_sha256": "974c3d3e462bdc4c02650333fcf3a1fd2a4096b3c67ae28d7a41fd324c16f49e",
+    "raw_stages": 817,
+    "world_dimension": 512
+  },
+  "physical_Scene33_placement_proved": false,
+  "returned_word": "chronological V^-1;CX(8,7);V; V=SWAP(0,3);21 factors;SWAP(0,3)",
+  "schema": "d0.controlled-recorder-native-word/1",
+  "status": "PASS",
+  "validated_signed_native_macros": 72
+}
+```
+
+### Frozen file: d0_controlled_recorder_interval_20261026.json
+
+<!-- D0-CONTROLLER-FILE d0_controlled_recorder_interval_20261026.json 2360 c49f651c20bd79707a1f044dbffbaea25abffb9465cd0ed916f3d87e9d7b709a -->
+```json
+{
+  "status": "PASS",
+  "arithmetic": "outward dyadic integer intervals",
+  "bits": 256,
+  "bundle_sha256": "0d5d7fab0dcd22b06be115afb2da60164546c83daacf0d9be0abadf8e1d4c5ee",
+  "factor_sha256": "259953482ecab31a1fc8dc0e93c8e49fda2a9825cc5c3339100e6d8a7c0f7645",
+  "reachable_nodes": 4689,
+  "exact_Givens": 21,
+  "angle_error_dyadics": {
+    "theta_G": {
+      "upper_numerator": 8847900469843613524539699049051114524,
+      "denominator_power2": 256,
+      "counts_axis1_axis2": [
+        631671,
+        638956
+      ]
+    },
+    "quarter": {
+      "upper_numerator": 72017948341755711393480029610214466392,
+      "denominator_power2": 256,
+      "counts_axis1_axis2": [
+        632863,
+        649487
+      ]
+    }
+  },
+  "full_SO16_error": {
+    "upper_numerator": 198574703067362169189682840466080510493,
+    "denominator_power2": 256,
+    "strict_bound": "<2e-39"
+  },
+  "native_macro_helper_sha256": "55929a5cc916cf9880907ec246fd7abf25366c4598320a6d63a341bbfe8f7ead",
+  "native_macro_instance_count": 72,
+  "native_macro_instance_set_sha256": "c91174dea4204bf16face4e7226d4579e9867edb4bb1a96022a27b0d2f3638cf",
+  "abstract_plane_letters": 30682616,
+  "controlled_V_native_inventory": {
+    "G": 981843712,
+    "SourceI": 981843712,
+    "CX": 2211643252
+  },
+  "controlled_V_raw_stages": 4175330676,
+  "literal_inverse_inventory": {
+    "G": 981843712,
+    "CX": 2211643252,
+    "SourceI": 6872905984
+  },
+  "implemented_inverse": "fresh signed inverse macro expansion, not literal raw inverse",
+  "tagged_controller_inventory": {
+    "G": 1963687424,
+    "SourceI": 1963687424,
+    "CX": 4423286505
+  },
+  "tagged_controller_stages": 8350661353,
+  "strict_delta_times_total_stages_bound": "<2e-29 (hence <2^-20)",
+  "cut_rank_promise": "FREE active tag and Spin4/DATA16/oldRIGHT128; outer parking spare BLANK, restored on all columns",
+  "feedback_source_raw_stage_dual_bound": {
+    "numerator": 2279054093657159760252060974452451433157609603238147789946880,
+    "denominator": 127314505687409644264881306788271353110862132211119404131984262172137071456180806615040000,
+    "strict_bound": "<2e-29 for nu=1, mu=0, R=163840, z=2^-20; not a GR42 source bound"
+  },
+  "full_matrix_target": "W649 after physical port park, all16columns and exact false sector",
+  "physical_full33_placement": false,
+  "paired_cut_selection": false,
+  "GR_closed": false
+}
+```
+
+### Frozen file: d0_so3_sk_compiler_20261026.json
+
+<!-- D0-CONTROLLER-FILE d0_so3_sk_compiler_20261026.json 628010 0d5d7fab0dcd22b06be115afb2da60164546c83daacf0d9be0abadf8e1d4c5ee -->
+```json
+{
+  "alphabet": {
+    "-1": "inverse of1",
+    "-2": "inverse of2",
+    "1": "R01(32 theta_G)",
+    "2": "R02(32 theta_G)"
+  },
+  "certified_error": false,
+  "compiler_sha256": "6c49a4a355cd811dcdeb36d4f0d79652f6eacf7f1b431b71bc7bf191d500ec54",
+  "dps": 100,
+  "elapsed_seconds": 2.678207584,
+  "generator_quaternions": {
+    "-1": [
+      "-0.3294711230757132024361448158764839620149763655308083959181181782311066298321900569209534241903160518",
+      "0.0",
+      "0.0",
+      "0.944165652340323299122367155597619836431945362580774860836825271695349597198926697405799009491945635"
+    ],
+    "-2": [
+      "-0.3294711230757132024361448158764839620149763655308083959181181782311066298321900569209534241903160518",
+      "0.0",
+      "-0.944165652340323299122367155597619836431945362580774860836825271695349597198926697405799009491945635",
+      "0.0"
+    ],
+    "1": [
+      "-0.3294711230757132024361448158764839620149763655308083959181181782311066298321900569209534241903160518",
+      "0.0",
+      "0.0",
+      "-0.944165652340323299122367155597619836431945362580774860836825271695349597198926697405799009491945635"
+    ],
+    "2": [
+      "-0.3294711230757132024361448158764839620149763655308083959181181782311066298321900569209534241903160518",
+      "0.0",
+      "0.944165652340323299122367155597619836431945362580774860836825271695349597198926697405799009491945635",
+      "0.0"
+    ]
+  },
+  "independent_matrix_verification": {
+    "dps": 150,
+    "is_interval_certificate": false,
+    "method": "direct 3x3 native Golden powers and serialized DAG",
+    "targets": [
+      {
+        "abstract_letter_length": 1270627,
+        "independent_error_times_abstract_length": "9.709109926546614799109989698309904529745787107473740149e-35",
+        "independent_matrix_Frobenius_error_numerical": "7.641195981626877753353257642337133186801309202050436634e-41",
+        "name": "theta_G",
+        "orthogonality_Frobenius_residual": "2.02215004566144e-144"
+      },
+      {
+        "abstract_letter_length": 1282350,
+        "independent_error_times_abstract_length": "7.975693042965510676912241312293542764349132125723638767e-34",
+        "independent_matrix_Frobenius_error_numerical": "6.219591408714867763802582221931253374156144676354847559e-40",
+        "name": "quarter",
+        "orthogonality_Frobenius_residual": "2.04117164823199e-144"
+      }
+    ]
+  },
+  "max_base_SO3_error_numerical": "0.0219672194780133171862353545479",
+  "net_calls": 4048,
+  "net_depth": 10,
+  "net_points": 118097,
+  "net_product_pivots": 128,
+  "nodes": [
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 2,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        0,
+        3,
+        4,
+        2,
+        1
+      ],
+      "kind": "cat",
+      "length": 93
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 7,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        6,
+        3,
+        8,
+        2,
+        7
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 12,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 11,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        10,
+        13,
+        14,
+        12,
+        11
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 15,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 9,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        5,
+        16,
+        17,
+        15,
+        9
+      ],
+      "kind": "cat",
+      "length": 477
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 21,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "child": 20,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        19,
+        22,
+        23,
+        21,
+        20
+      ],
+      "kind": "cat",
+      "length": 83
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 27,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 26,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        25,
+        28,
+        29,
+        27,
+        26
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 33,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 32,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        31,
+        34,
+        35,
+        33,
+        32
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 36,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 30,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        24,
+        37,
+        38,
+        36,
+        30
+      ],
+      "kind": "cat",
+      "length": 467
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 42,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 41,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        40,
+        43,
+        44,
+        42,
+        41
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 48,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 47,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        46,
+        49,
+        50,
+        48,
+        47
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 54,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 53,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        52,
+        55,
+        56,
+        54,
+        53
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 57,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 51,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        45,
+        58,
+        59,
+        57,
+        51
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "child": 60,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "child": 39,
+      "kind": "inv",
+      "length": 467
+    },
+    {
+      "children": [
+        18,
+        61,
+        62,
+        60,
+        39
+      ],
+      "kind": "cat",
+      "length": 2291
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 65,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 64,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        66,
+        67,
+        65,
+        64
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 71,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 70,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        69,
+        72,
+        73,
+        71,
+        70
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 77,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "child": 76,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        75,
+        78,
+        79,
+        77,
+        76
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 80,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 74,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        68,
+        81,
+        82,
+        80,
+        74
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 86,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 85,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        84,
+        87,
+        88,
+        86,
+        85
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 91,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        90,
+        44,
+        92,
+        41,
+        91
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 96,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 95,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        94,
+        97,
+        98,
+        96,
+        95
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 99,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 93,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        89,
+        100,
+        101,
+        99,
+        93
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 104,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 103,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        105,
+        106,
+        104,
+        103
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 109,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        108,
+        110,
+        98,
+        109,
+        95
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 114,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "child": 113,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        112,
+        115,
+        116,
+        114,
+        113
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 117,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 111,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        107,
+        118,
+        119,
+        117,
+        111
+      ],
+      "kind": "cat",
+      "length": 414
+    },
+    {
+      "child": 120,
+      "kind": "inv",
+      "length": 414
+    },
+    {
+      "child": 102,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "children": [
+        83,
+        121,
+        122,
+        120,
+        102
+      ],
+      "kind": "cat",
+      "length": 2152
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 125,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "child": 124,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        126,
+        127,
+        125,
+        124
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 131,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 130,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        129,
+        132,
+        133,
+        131,
+        130
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 137,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 136,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        135,
+        138,
+        139,
+        137,
+        136
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 140,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 134,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        128,
+        141,
+        142,
+        140,
+        134
+      ],
+      "kind": "cat",
+      "length": 412
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 145,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 144,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        146,
+        147,
+        145,
+        144
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 151,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 150,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        149,
+        152,
+        153,
+        151,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 157,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 156,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        155,
+        158,
+        159,
+        157,
+        156
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 160,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 154,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        148,
+        161,
+        162,
+        160,
+        154
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 165,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "child": 164,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        166,
+        167,
+        165,
+        164
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 169,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        155,
+        72,
+        170,
+        71,
+        169
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 173,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        172,
+        72,
+        174,
+        71,
+        173
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 175,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 171,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        168,
+        176,
+        177,
+        175,
+        171
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "child": 178,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "child": 163,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "children": [
+        143,
+        179,
+        180,
+        178,
+        163
+      ],
+      "kind": "cat",
+      "length": 2184
+    },
+    {
+      "child": 181,
+      "kind": "inv",
+      "length": 2184
+    },
+    {
+      "child": 123,
+      "kind": "inv",
+      "length": 2152
+    },
+    {
+      "children": [
+        63,
+        182,
+        183,
+        181,
+        123
+      ],
+      "kind": "cat",
+      "length": 10963
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 186,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 185,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        187,
+        188,
+        186,
+        185
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 191,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 190,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        192,
+        193,
+        191,
+        190
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 194,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 189,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        195,
+        196,
+        194,
+        189
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 198,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        146,
+        199,
+        145,
+        198
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "children": [
+        201,
+        78,
+        79,
+        77,
+        76
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 204,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 203,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        40,
+        205,
+        206,
+        204,
+        203
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 207,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 202,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        200,
+        208,
+        209,
+        207,
+        202
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 211,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        212,
+        146,
+        211,
+        145
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 216,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 215,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        214,
+        217,
+        218,
+        216,
+        215
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 222,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 221,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "children": [
+        220,
+        223,
+        224,
+        222,
+        221
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 225,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 219,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        213,
+        226,
+        227,
+        225,
+        219
+      ],
+      "kind": "cat",
+      "length": 396
+    },
+    {
+      "child": 228,
+      "kind": "inv",
+      "length": 396
+    },
+    {
+      "child": 210,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "children": [
+        197,
+        229,
+        230,
+        228,
+        210
+      ],
+      "kind": "cat",
+      "length": 1920
+    },
+    {
+      "child": 40,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 19,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        232,
+        233,
+        40,
+        19
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 31,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 235,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        84,
+        236,
+        237,
+        31,
+        235
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 240,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 108,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        239,
+        241,
+        242,
+        240,
+        108
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 243,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 238,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        234,
+        244,
+        245,
+        243,
+        238
+      ],
+      "kind": "cat",
+      "length": 454
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 247,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        248,
+        192,
+        247,
+        191
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 251,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        250,
+        72,
+        252,
+        71,
+        251
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 256,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 255,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        254,
+        257,
+        258,
+        256,
+        255
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 259,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 253,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        249,
+        260,
+        261,
+        259,
+        253
+      ],
+      "kind": "cat",
+      "length": 434
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 263,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        43,
+        264,
+        42,
+        263
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 268,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 267,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        266,
+        269,
+        270,
+        268,
+        267
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 273,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 272,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        145,
+        274,
+        275,
+        273,
+        272
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 276,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 271,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        265,
+        277,
+        278,
+        276,
+        271
+      ],
+      "kind": "cat",
+      "length": 418
+    },
+    {
+      "child": 279,
+      "kind": "inv",
+      "length": 418
+    },
+    {
+      "child": 262,
+      "kind": "inv",
+      "length": 434
+    },
+    {
+      "children": [
+        246,
+        280,
+        281,
+        279,
+        262
+      ],
+      "kind": "cat",
+      "length": 2158
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 284,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 283,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        285,
+        286,
+        284,
+        283
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 290,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 289,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        288,
+        291,
+        292,
+        290,
+        289
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 295,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        294,
+        248,
+        296,
+        247,
+        295
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 297,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 293,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        287,
+        298,
+        299,
+        297,
+        293
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 301,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        302,
+        193,
+        301,
+        190
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "children": [
+        304,
+        97,
+        98,
+        96,
+        95
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 307,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 306,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        25,
+        308,
+        309,
+        307,
+        306
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 310,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 305,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        303,
+        311,
+        312,
+        310,
+        305
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 315,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 314,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        316,
+        317,
+        315,
+        314
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 320,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 319,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        53,
+        321,
+        322,
+        320,
+        319
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 326,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 325,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        324,
+        327,
+        328,
+        326,
+        325
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 329,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 323,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        318,
+        330,
+        331,
+        329,
+        323
+      ],
+      "kind": "cat",
+      "length": 450
+    },
+    {
+      "child": 332,
+      "kind": "inv",
+      "length": 450
+    },
+    {
+      "child": 313,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "children": [
+        300,
+        333,
+        334,
+        332,
+        313
+      ],
+      "kind": "cat",
+      "length": 2152
+    },
+    {
+      "child": 335,
+      "kind": "inv",
+      "length": 2152
+    },
+    {
+      "child": 282,
+      "kind": "inv",
+      "length": 2158
+    },
+    {
+      "children": [
+        231,
+        336,
+        337,
+        335,
+        282
+      ],
+      "kind": "cat",
+      "length": 10540
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 339,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        248,
+        340,
+        247,
+        339
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 342,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        343,
+        193,
+        342,
+        190
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 347,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 346,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        345,
+        348,
+        349,
+        347,
+        346
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 352,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        351,
+        353,
+        153,
+        352,
+        150
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 354,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 350,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        341,
+        355,
+        356,
+        354,
+        350
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 359,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 358,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        164,
+        360,
+        361,
+        359,
+        358
+      ],
+      "kind": "cat",
+      "length": 89
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 363,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        145,
+        72,
+        364,
+        71,
+        363
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 365,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 362,
+      "kind": "inv",
+      "length": 89
+    },
+    {
+      "children": [
+        344,
+        366,
+        367,
+        365,
+        362
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "child": 368,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "child": 357,
+      "kind": "inv",
+      "length": 408
+    },
+    {
+      "children": [
+        369,
+        370,
+        368,
+        357
+      ],
+      "kind": "cat",
+      "length": 1704
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 372,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        232,
+        373,
+        40,
+        372
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 375,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        372,
+        72,
+        376,
+        71,
+        375
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 379,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        378,
+        187,
+        380,
+        186,
+        379
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 381,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 377,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        374,
+        382,
+        383,
+        381,
+        377
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 385,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        187,
+        386,
+        186,
+        385
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        1,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 389,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 388,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        52,
+        390,
+        391,
+        389,
+        388
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 394,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "children": [
+        393,
+        395,
+        106,
+        394,
+        103
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 396,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 392,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        387,
+        397,
+        398,
+        396,
+        392
+      ],
+      "kind": "cat",
+      "length": 370
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 401,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "child": 400,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        402,
+        403,
+        401,
+        400
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 406,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        405,
+        407,
+        205,
+        406,
+        204
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 411,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "child": 410,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        409,
+        412,
+        413,
+        411,
+        410
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 414,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 408,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        404,
+        415,
+        416,
+        414,
+        408
+      ],
+      "kind": "cat",
+      "length": 400
+    },
+    {
+      "child": 417,
+      "kind": "inv",
+      "length": 400
+    },
+    {
+      "child": 399,
+      "kind": "inv",
+      "length": 370
+    },
+    {
+      "children": [
+        384,
+        418,
+        419,
+        417,
+        399
+      ],
+      "kind": "cat",
+      "length": 1980
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 421,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        422,
+        233,
+        421,
+        19
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 425,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 424,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        84,
+        426,
+        427,
+        425,
+        424
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 430,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        429,
+        87,
+        431,
+        86,
+        430
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 432,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 428,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        423,
+        433,
+        434,
+        432,
+        428
+      ],
+      "kind": "cat",
+      "length": 446
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 436,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        146,
+        437,
+        145,
+        436
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        165,
+        412,
+        264,
+        411,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 442,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 441,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        440,
+        443,
+        444,
+        442,
+        441
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 445,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 439,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        438,
+        446,
+        447,
+        445,
+        439
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "children": [
+        236,
+        167,
+        31,
+        164
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 451,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 450,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        124,
+        452,
+        453,
+        451,
+        450
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "children": [
+        455,
+        386,
+        193,
+        385,
+        190
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 456,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 454,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        449,
+        457,
+        458,
+        456,
+        454
+      ],
+      "kind": "cat",
+      "length": 454
+    },
+    {
+      "child": 459,
+      "kind": "inv",
+      "length": 454
+    },
+    {
+      "child": 448,
+      "kind": "inv",
+      "length": 408
+    },
+    {
+      "children": [
+        435,
+        460,
+        461,
+        459,
+        448
+      ],
+      "kind": "cat",
+      "length": 2170
+    },
+    {
+      "child": 462,
+      "kind": "inv",
+      "length": 2170
+    },
+    {
+      "child": 420,
+      "kind": "inv",
+      "length": 1980
+    },
+    {
+      "children": [
+        371,
+        463,
+        464,
+        462,
+        420
+      ],
+      "kind": "cat",
+      "length": 10004
+    },
+    {
+      "child": 465,
+      "kind": "inv",
+      "length": 10004
+    },
+    {
+      "child": 338,
+      "kind": "inv",
+      "length": 10540
+    },
+    {
+      "children": [
+        184,
+        466,
+        467,
+        465,
+        338
+      ],
+      "kind": "cat",
+      "length": 52051
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 378,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 469,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        470,
+        471,
+        378,
+        469
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 172,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 473,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        474,
+        475,
+        172,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 476,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 472,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        477,
+        478,
+        476,
+        472
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "child": 429,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 155,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        480,
+        481,
+        429,
+        155
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 484,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 483,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        84,
+        485,
+        486,
+        484,
+        483
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 488,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        489,
+        159,
+        488,
+        156
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 490,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 487,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        482,
+        491,
+        492,
+        490,
+        487
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 494,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 496,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        494,
+        497,
+        106,
+        496,
+        103
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 500,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 499,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        283,
+        501,
+        502,
+        500,
+        499
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 503,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 498,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        504,
+        505,
+        503,
+        498
+      ],
+      "kind": "cat",
+      "length": 344
+    },
+    {
+      "child": 506,
+      "kind": "inv",
+      "length": 344
+    },
+    {
+      "child": 493,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "children": [
+        479,
+        507,
+        508,
+        506,
+        493
+      ],
+      "kind": "cat",
+      "length": 1816
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 510,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 512,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        513,
+        44,
+        512,
+        41
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        510,
+        386,
+        264,
+        385,
+        263
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 515,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 514,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        516,
+        517,
+        515,
+        514
+      ],
+      "kind": "cat",
+      "length": 340
+    },
+    {
+      "children": [
+        146,
+        192,
+        145,
+        191
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 521,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        520,
+        72,
+        522,
+        71,
+        521
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        145,
+        72,
+        73,
+        71,
+        70
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 524,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 523,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        519,
+        525,
+        526,
+        524,
+        523
+      ],
+      "kind": "cat",
+      "length": 468
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 528,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        529,
+        264,
+        528,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 532,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        531,
+        431,
+        533,
+        430,
+        532
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 537,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "child": 536,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        535,
+        538,
+        539,
+        537,
+        536
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 540,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 534,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        530,
+        541,
+        542,
+        540,
+        534
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "child": 543,
+      "kind": "inv",
+      "length": 404
+    },
+    {
+      "child": 527,
+      "kind": "inv",
+      "length": 468
+    },
+    {
+      "children": [
+        518,
+        544,
+        545,
+        543,
+        527
+      ],
+      "kind": "cat",
+      "length": 2084
+    },
+    {
+      "child": 84,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 549,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 548,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        84,
+        550,
+        551,
+        549,
+        548
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 553,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        29,
+        554,
+        26,
+        553
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 555,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 552,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        556,
+        557,
+        555,
+        552
+      ],
+      "kind": "cat",
+      "length": 320
+    },
+    {
+      "children": [
+        248,
+        437,
+        247,
+        436
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 560,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        69,
+        35,
+        561,
+        32,
+        560
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "children": [
+        563,
+        431,
+        364,
+        430,
+        363
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 564,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 562,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        559,
+        565,
+        566,
+        564,
+        562
+      ],
+      "kind": "cat",
+      "length": 458
+    },
+    {
+      "child": 250,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        568,
+        212,
+        250,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        211,
+        72,
+        340,
+        71,
+        339
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 572,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 571,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        250,
+        573,
+        574,
+        572,
+        571
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 575,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 570,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        569,
+        576,
+        577,
+        575,
+        570
+      ],
+      "kind": "cat",
+      "length": 460
+    },
+    {
+      "child": 578,
+      "kind": "inv",
+      "length": 460
+    },
+    {
+      "child": 567,
+      "kind": "inv",
+      "length": 458
+    },
+    {
+      "children": [
+        558,
+        579,
+        580,
+        578,
+        567
+      ],
+      "kind": "cat",
+      "length": 2156
+    },
+    {
+      "child": 581,
+      "kind": "inv",
+      "length": 2156
+    },
+    {
+      "child": 546,
+      "kind": "inv",
+      "length": 2084
+    },
+    {
+      "children": [
+        509,
+        582,
+        583,
+        581,
+        546
+      ],
+      "kind": "cat",
+      "length": 10296
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 586,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "child": 585,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "children": [
+        587,
+        588,
+        586,
+        585
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 590,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        591,
+        167,
+        590,
+        164
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 592,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 589,
+      "kind": "inv",
+      "length": 52
+    },
+    {
+      "children": [
+        593,
+        594,
+        592,
+        589
+      ],
+      "kind": "cat",
+      "length": 244
+    },
+    {
+      "child": 69,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        474,
+        596,
+        172,
+        69
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 598,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        494,
+        599,
+        453,
+        598,
+        450
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 602,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 601,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        378,
+        603,
+        604,
+        602,
+        601
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 605,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 600,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        597,
+        606,
+        607,
+        605,
+        600
+      ],
+      "kind": "cat",
+      "length": 468
+    },
+    {
+      "children": [
+        470,
+        373,
+        378,
+        372
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 610,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        149,
+        611,
+        486,
+        610,
+        483
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        284,
+        308,
+        257,
+        307,
+        256
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 613,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 612,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        609,
+        614,
+        615,
+        613,
+        612
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "child": 616,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "child": 608,
+      "kind": "inv",
+      "length": 468
+    },
+    {
+      "children": [
+        595,
+        617,
+        618,
+        616,
+        608
+      ],
+      "kind": "cat",
+      "length": 2028
+    },
+    {
+      "child": 288,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        620,
+        511,
+        288,
+        510
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 622,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        84,
+        623,
+        193,
+        622,
+        190
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 625,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        288,
+        291,
+        626,
+        290,
+        625
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 627,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 624,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        621,
+        628,
+        629,
+        627,
+        624
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "children": [
+        248,
+        340,
+        247,
+        339
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 633,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 632,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        531,
+        634,
+        635,
+        633,
+        632
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 637,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "children": [
+        421,
+        501,
+        638,
+        500,
+        637
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 639,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 636,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        631,
+        640,
+        641,
+        639,
+        636
+      ],
+      "kind": "cat",
+      "length": 400
+    },
+    {
+      "children": [
+        105,
+        193,
+        104,
+        190
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 645,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        644,
+        407,
+        646,
+        406,
+        645
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 649,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 648,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        65,
+        650,
+        651,
+        649,
+        648
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 652,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 647,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        643,
+        653,
+        654,
+        652,
+        647
+      ],
+      "kind": "cat",
+      "length": 434
+    },
+    {
+      "child": 655,
+      "kind": "inv",
+      "length": 434
+    },
+    {
+      "child": 642,
+      "kind": "inv",
+      "length": 400
+    },
+    {
+      "children": [
+        630,
+        656,
+        657,
+        655,
+        642
+      ],
+      "kind": "cat",
+      "length": 2108
+    },
+    {
+      "children": [
+        285,
+        547,
+        284,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        429,
+        513,
+        258,
+        512,
+        255
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 661,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        239,
+        662,
+        264,
+        661,
+        263
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 663,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 660,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        659,
+        664,
+        665,
+        663,
+        660
+      ],
+      "kind": "cat",
+      "length": 460
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 668,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 667,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        669,
+        670,
+        668,
+        667
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 674,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 673,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        672,
+        675,
+        676,
+        674,
+        673
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 680,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 679,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        678,
+        681,
+        682,
+        680,
+        679
+      ],
+      "kind": "cat",
+      "length": 97
+    },
+    {
+      "child": 683,
+      "kind": "inv",
+      "length": 97
+    },
+    {
+      "child": 677,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        671,
+        684,
+        685,
+        683,
+        677
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "children": [
+        340,
+        264,
+        339,
+        263
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 689,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        688,
+        690,
+        364,
+        689,
+        363
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 693,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        692,
+        87,
+        694,
+        86,
+        693
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 695,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 691,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        687,
+        696,
+        697,
+        695,
+        691
+      ],
+      "kind": "cat",
+      "length": 422
+    },
+    {
+      "child": 698,
+      "kind": "inv",
+      "length": 422
+    },
+    {
+      "child": 686,
+      "kind": "inv",
+      "length": 428
+    },
+    {
+      "children": [
+        666,
+        699,
+        700,
+        698,
+        686
+      ],
+      "kind": "cat",
+      "length": 2160
+    },
+    {
+      "child": 701,
+      "kind": "inv",
+      "length": 2160
+    },
+    {
+      "child": 658,
+      "kind": "inv",
+      "length": 2108
+    },
+    {
+      "children": [
+        619,
+        702,
+        703,
+        701,
+        658
+      ],
+      "kind": "cat",
+      "length": 10564
+    },
+    {
+      "children": [
+        66,
+        199,
+        65,
+        198
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 706,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        707,
+        127,
+        706,
+        124
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "child": 708,
+      "kind": "inv",
+      "length": 56
+    },
+    {
+      "child": 705,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        709,
+        710,
+        708,
+        705
+      ],
+      "kind": "cat",
+      "length": 248
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 713,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 712,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        714,
+        715,
+        713,
+        712
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 717,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        473,
+        43,
+        718,
+        42,
+        717
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        149,
+        248,
+        193,
+        247,
+        190
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 720,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 719,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        716,
+        721,
+        722,
+        720,
+        719
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 724,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "children": [
+        725,
+        596,
+        724,
+        69
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 728,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 727,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        473,
+        729,
+        730,
+        728,
+        727
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 733,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        732,
+        718,
+        734,
+        717,
+        733
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 735,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 731,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        726,
+        736,
+        737,
+        735,
+        731
+      ],
+      "kind": "cat",
+      "length": 400
+    },
+    {
+      "child": 738,
+      "kind": "inv",
+      "length": 400
+    },
+    {
+      "child": 723,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "children": [
+        711,
+        739,
+        740,
+        738,
+        723
+      ],
+      "kind": "cat",
+      "length": 1908
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 742,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        172,
+        743,
+        364,
+        742,
+        363
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 745,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        284,
+        694,
+        746,
+        693,
+        745
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 747,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 744,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        748,
+        749,
+        747,
+        744
+      ],
+      "kind": "cat",
+      "length": 352
+    },
+    {
+      "children": [
+        105,
+        730,
+        104,
+        727
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        752,
+        340,
+        264,
+        339,
+        263
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 755,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        754,
+        756,
+        302,
+        755,
+        301
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 757,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 753,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        751,
+        758,
+        759,
+        757,
+        753
+      ],
+      "kind": "cat",
+      "length": 402
+    },
+    {
+      "children": [
+        133,
+        264,
+        130,
+        263
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 763,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        762,
+        764,
+        296,
+        763,
+        295
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "children": [
+        712,
+        105,
+        730,
+        104,
+        727
+      ],
+      "kind": "cat",
+      "length": 85
+    },
+    {
+      "child": 766,
+      "kind": "inv",
+      "length": 85
+    },
+    {
+      "child": 765,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        761,
+        767,
+        768,
+        766,
+        765
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "child": 769,
+      "kind": "inv",
+      "length": 404
+    },
+    {
+      "child": 760,
+      "kind": "inv",
+      "length": 402
+    },
+    {
+      "children": [
+        750,
+        770,
+        771,
+        769,
+        760
+      ],
+      "kind": "cat",
+      "length": 1964
+    },
+    {
+      "children": [
+        285,
+        547,
+        284,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 774,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        239,
+        729,
+        775,
+        728,
+        774
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 778,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        777,
+        779,
+        206,
+        778,
+        203
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 780,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 776,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        773,
+        781,
+        782,
+        780,
+        776
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "children": [
+        236,
+        237,
+        31,
+        235
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 785,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        90,
+        604,
+        786,
+        601,
+        785
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        94,
+        205,
+        206,
+        204,
+        203
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 788,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 787,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        784,
+        789,
+        790,
+        788,
+        787
+      ],
+      "kind": "cat",
+      "length": 426
+    },
+    {
+      "children": [
+        248,
+        188,
+        247,
+        185
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 795,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 794,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        793,
+        796,
+        797,
+        795,
+        794
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 799,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        351,
+        316,
+        800,
+        315,
+        799
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 801,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 798,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        792,
+        802,
+        803,
+        801,
+        798
+      ],
+      "kind": "cat",
+      "length": 412
+    },
+    {
+      "child": 804,
+      "kind": "inv",
+      "length": 412
+    },
+    {
+      "child": 791,
+      "kind": "inv",
+      "length": 426
+    },
+    {
+      "children": [
+        783,
+        805,
+        806,
+        804,
+        791
+      ],
+      "kind": "cat",
+      "length": 2104
+    },
+    {
+      "child": 807,
+      "kind": "inv",
+      "length": 2104
+    },
+    {
+      "child": 772,
+      "kind": "inv",
+      "length": 1964
+    },
+    {
+      "children": [
+        741,
+        808,
+        809,
+        807,
+        772
+      ],
+      "kind": "cat",
+      "length": 10044
+    },
+    {
+      "child": 810,
+      "kind": "inv",
+      "length": 10044
+    },
+    {
+      "child": 704,
+      "kind": "inv",
+      "length": 10564
+    },
+    {
+      "children": [
+        584,
+        811,
+        812,
+        810,
+        704
+      ],
+      "kind": "cat",
+      "length": 51512
+    },
+    {
+      "children": [
+        620,
+        373,
+        288,
+        372
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        495,
+        475,
+        494,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 815,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 814,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        816,
+        817,
+        815,
+        814
+      ],
+      "kind": "cat",
+      "length": 280
+    },
+    {
+      "children": [
+        172,
+        407,
+        153,
+        406,
+        150
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 820,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        284,
+        821,
+        746,
+        820,
+        745
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 822,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 819,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        823,
+        824,
+        822,
+        819
+      ],
+      "kind": "cat",
+      "length": 356
+    },
+    {
+      "children": [
+        620,
+        547,
+        288,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        429,
+        92,
+        193,
+        91,
+        190
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 828,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        84,
+        72,
+        829,
+        71,
+        828
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 830,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 827,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        826,
+        831,
+        832,
+        830,
+        827
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "child": 833,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "child": 825,
+      "kind": "inv",
+      "length": 356
+    },
+    {
+      "children": [
+        818,
+        834,
+        835,
+        833,
+        825
+      ],
+      "kind": "cat",
+      "length": 1880
+    },
+    {
+      "children": [
+        480,
+        429
+      ],
+      "kind": "cat",
+      "length": 36
+    },
+    {
+      "children": [
+        206,
+        105,
+        203,
+        104
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 840,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 839,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        429,
+        841,
+        842,
+        840,
+        839
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 843,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 838,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        837,
+        844,
+        845,
+        843,
+        838
+      ],
+      "kind": "cat",
+      "length": 376
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 847,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        187,
+        848,
+        186,
+        847
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 851,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        850,
+        257,
+        852,
+        256,
+        851
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 535,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        762,
+        854,
+        212,
+        535,
+        211
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 855,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 853,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        849,
+        856,
+        857,
+        855,
+        853
+      ],
+      "kind": "cat",
+      "length": 394
+    },
+    {
+      "children": [
+        192,
+        212,
+        191,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 861,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "child": 860,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        164,
+        862,
+        863,
+        861,
+        860
+      ],
+      "kind": "cat",
+      "length": 79
+    },
+    {
+      "children": [
+        165,
+        72,
+        522,
+        71,
+        521
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 865,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 864,
+      "kind": "inv",
+      "length": 79
+    },
+    {
+      "children": [
+        859,
+        866,
+        867,
+        865,
+        864
+      ],
+      "kind": "cat",
+      "length": 418
+    },
+    {
+      "child": 868,
+      "kind": "inv",
+      "length": 418
+    },
+    {
+      "child": 858,
+      "kind": "inv",
+      "length": 394
+    },
+    {
+      "children": [
+        846,
+        869,
+        870,
+        868,
+        858
+      ],
+      "kind": "cat",
+      "length": 2000
+    },
+    {
+      "children": [
+        547,
+        480,
+        84,
+        429
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 873,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        84,
+        87,
+        874,
+        86,
+        873
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 876,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        429,
+        92,
+        877,
+        91,
+        876
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 878,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 875,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        872,
+        879,
+        880,
+        878,
+        875
+      ],
+      "kind": "cat",
+      "length": 456
+    },
+    {
+      "children": [
+        66,
+        147,
+        65,
+        144
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        75,
+        158,
+        361,
+        157,
+        358
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "children": [
+        40,
+        257,
+        258,
+        256,
+        255
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 884,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 883,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        882,
+        885,
+        886,
+        884,
+        883
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "children": [
+        199,
+        212,
+        198,
+        211
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 889,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        75,
+        890,
+        193,
+        889,
+        190
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        149,
+        72,
+        73,
+        71,
+        70
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 892,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 891,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        888,
+        893,
+        894,
+        892,
+        891
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "child": 895,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "child": 887,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "children": [
+        881,
+        896,
+        897,
+        895,
+        887
+      ],
+      "kind": "cat",
+      "length": 2216
+    },
+    {
+      "child": 898,
+      "kind": "inv",
+      "length": 2216
+    },
+    {
+      "child": 871,
+      "kind": "inv",
+      "length": 2000
+    },
+    {
+      "children": [
+        836,
+        899,
+        900,
+        898,
+        871
+      ],
+      "kind": "cat",
+      "length": 10312
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 903,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "child": 902,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        904,
+        905,
+        903,
+        902
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "children": [
+        199,
+        50,
+        198,
+        47
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 907,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 906,
+      "kind": "inv",
+      "length": 56
+    },
+    {
+      "children": [
+        908,
+        909,
+        907,
+        906
+      ],
+      "kind": "cat",
+      "length": 256
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 911,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        66,
+        912,
+        65,
+        911
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "children": [
+        914,
+        444,
+        258,
+        441,
+        255
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        288,
+        248,
+        486,
+        247,
+        483
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 916,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 915,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        913,
+        917,
+        918,
+        916,
+        915
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "children": [
+        591,
+        127,
+        590,
+        124
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 921,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        712,
+        922,
+        603,
+        921,
+        602
+      ],
+      "kind": "cat",
+      "length": 85
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 924,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        135,
+        925,
+        79,
+        924,
+        76
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 926,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 923,
+      "kind": "inv",
+      "length": 85
+    },
+    {
+      "children": [
+        920,
+        927,
+        928,
+        926,
+        923
+      ],
+      "kind": "cat",
+      "length": 410
+    },
+    {
+      "child": 929,
+      "kind": "inv",
+      "length": 410
+    },
+    {
+      "child": 919,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "children": [
+        910,
+        930,
+        931,
+        929,
+        919
+      ],
+      "kind": "cat",
+      "length": 1964
+    },
+    {
+      "children": [
+        285,
+        547,
+        284,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        72,
+        364,
+        71,
+        363
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        429,
+        72,
+        513,
+        71,
+        512
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 935,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 934,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        933,
+        936,
+        937,
+        935,
+        934
+      ],
+      "kind": "cat",
+      "length": 412
+    },
+    {
+      "children": [
+        146,
+        591,
+        145,
+        590
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 942,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 941,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        940,
+        943,
+        944,
+        942,
+        941
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        440,
+        73,
+        533,
+        70,
+        532
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 946,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 945,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        939,
+        947,
+        948,
+        946,
+        945
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "children": [
+        437,
+        167,
+        436,
+        164
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 952,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 951,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        69,
+        953,
+        954,
+        952,
+        951
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 957,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "child": 956,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        149,
+        958,
+        959,
+        957,
+        956
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 960,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 955,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        950,
+        961,
+        962,
+        960,
+        955
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "child": 963,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "child": 949,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "children": [
+        938,
+        964,
+        965,
+        963,
+        949
+      ],
+      "kind": "cat",
+      "length": 2104
+    },
+    {
+      "children": [
+        474,
+        547,
+        172,
+        84
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 968,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        239,
+        969,
+        797,
+        968,
+        794
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 972,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "child": 971,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        973,
+        974,
+        972,
+        971
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "child": 975,
+      "kind": "inv",
+      "length": 56
+    },
+    {
+      "child": 970,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        967,
+        976,
+        977,
+        975,
+        970
+      ],
+      "kind": "cat",
+      "length": 376
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 980,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "child": 979,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        981,
+        982,
+        980,
+        979
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 984,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        688,
+        943,
+        985,
+        942,
+        984
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 988,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        987,
+        989,
+        877,
+        988,
+        876
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 990,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 986,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        983,
+        991,
+        992,
+        990,
+        986
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 994,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        87,
+        995,
+        86,
+        994
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        520,
+        989,
+        877,
+        988,
+        876
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        94,
+        105,
+        264,
+        104,
+        263
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 998,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 997,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        996,
+        999,
+        1000,
+        998,
+        997
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "child": 1001,
+      "kind": "inv",
+      "length": 438
+    },
+    {
+      "child": 993,
+      "kind": "inv",
+      "length": 428
+    },
+    {
+      "children": [
+        978,
+        1002,
+        1003,
+        1001,
+        993
+      ],
+      "kind": "cat",
+      "length": 2108
+    },
+    {
+      "child": 1004,
+      "kind": "inv",
+      "length": 2108
+    },
+    {
+      "child": 966,
+      "kind": "inv",
+      "length": 2104
+    },
+    {
+      "children": [
+        932,
+        1005,
+        1006,
+        1004,
+        966
+      ],
+      "kind": "cat",
+      "length": 10388
+    },
+    {
+      "children": [
+        66,
+        437,
+        65,
+        436
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 1009,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        1010,
+        212,
+        1009,
+        211
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "child": 1011,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "child": 1008,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        1012,
+        1013,
+        1011,
+        1008
+      ],
+      "kind": "cat",
+      "length": 272
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1015,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "children": [
+        66,
+        1016,
+        65,
+        1015
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        155,
+        308,
+        309,
+        307,
+        306
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1019,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        172,
+        395,
+        1020,
+        394,
+        1019
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 1021,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 1018,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        1017,
+        1022,
+        1023,
+        1021,
+        1018
+      ],
+      "kind": "cat",
+      "length": 388
+    },
+    {
+      "child": 940,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        1025,
+        167,
+        940,
+        164
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 1027,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        712,
+        87,
+        1028,
+        86,
+        1027
+      ],
+      "kind": "cat",
+      "length": 97
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 1030,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        284,
+        1031,
+        364,
+        1030,
+        363
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 1032,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 1029,
+      "kind": "inv",
+      "length": 97
+    },
+    {
+      "children": [
+        1026,
+        1033,
+        1034,
+        1032,
+        1029
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "child": 1035,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "child": 1024,
+      "kind": "inv",
+      "length": 388
+    },
+    {
+      "children": [
+        1014,
+        1036,
+        1037,
+        1035,
+        1024
+      ],
+      "kind": "cat",
+      "length": 1928
+    },
+    {
+      "child": 914,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        285,
+        1039,
+        284,
+        914
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        494,
+        599,
+        153,
+        598,
+        150
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        288,
+        989,
+        603,
+        988,
+        602
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1042,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1041,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        1040,
+        1043,
+        1044,
+        1042,
+        1041
+      ],
+      "kind": "cat",
+      "length": 456
+    },
+    {
+      "children": [
+        92,
+        44,
+        91,
+        41
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 1049,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 1048,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1047,
+        1050,
+        1051,
+        1049,
+        1048
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 1055,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1054,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1053,
+        1056,
+        1057,
+        1055,
+        1054
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1058,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1052,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        1046,
+        1059,
+        1060,
+        1058,
+        1052
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 1063,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 1062,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        1064,
+        1065,
+        1063,
+        1062
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "children": [
+        1067,
+        87,
+        995,
+        86,
+        994
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "children": [
+        455,
+        1028,
+        35,
+        1027,
+        32
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 1069,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 1068,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        1066,
+        1070,
+        1071,
+        1069,
+        1068
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "child": 1072,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "child": 1061,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "children": [
+        1045,
+        1073,
+        1074,
+        1072,
+        1061
+      ],
+      "kind": "cat",
+      "length": 2208
+    },
+    {
+      "children": [
+        474,
+        475,
+        172,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 1077,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        84,
+        1078,
+        364,
+        1077,
+        363
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1080,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        777,
+        1081,
+        153,
+        1080,
+        150
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1082,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1079,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1076,
+        1083,
+        1084,
+        1082,
+        1079
+      ],
+      "kind": "cat",
+      "length": 456
+    },
+    {
+      "child": 440,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        1086,
+        529,
+        440,
+        528
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        266,
+        412,
+        413,
+        411,
+        410
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        586,
+        187,
+        386,
+        186,
+        385
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1089,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1088,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        1087,
+        1090,
+        1091,
+        1089,
+        1088
+      ],
+      "kind": "cat",
+      "length": 392
+    },
+    {
+      "children": [
+        236,
+        264,
+        31,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        69,
+        550,
+        603,
+        549,
+        602
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        372,
+        412,
+        413,
+        411,
+        410
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 1095,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 1094,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1093,
+        1096,
+        1097,
+        1095,
+        1094
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "child": 1098,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "child": 1092,
+      "kind": "inv",
+      "length": 392
+    },
+    {
+      "children": [
+        1085,
+        1099,
+        1100,
+        1098,
+        1092
+      ],
+      "kind": "cat",
+      "length": 2104
+    },
+    {
+      "child": 1101,
+      "kind": "inv",
+      "length": 2104
+    },
+    {
+      "child": 1075,
+      "kind": "inv",
+      "length": 2208
+    },
+    {
+      "children": [
+        1038,
+        1102,
+        1103,
+        1101,
+        1075
+      ],
+      "kind": "cat",
+      "length": 10552
+    },
+    {
+      "child": 1104,
+      "kind": "inv",
+      "length": 10552
+    },
+    {
+      "child": 1007,
+      "kind": "inv",
+      "length": 10388
+    },
+    {
+      "children": [
+        901,
+        1105,
+        1106,
+        1104,
+        1007
+      ],
+      "kind": "cat",
+      "length": 52192
+    },
+    {
+      "child": 1107,
+      "kind": "inv",
+      "length": 52192
+    },
+    {
+      "child": 813,
+      "kind": "inv",
+      "length": 51512
+    },
+    {
+      "children": [
+        468,
+        1108,
+        1109,
+        1107,
+        813
+      ],
+      "kind": "cat",
+      "length": 259459
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1111,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        66,
+        1112,
+        65,
+        1111
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        591,
+        127,
+        590,
+        124
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 1114,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "child": 1113,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        1115,
+        1116,
+        1114,
+        1113
+      ],
+      "kind": "cat",
+      "length": 288
+    },
+    {
+      "children": [
+        66,
+        199,
+        65,
+        198
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        167,
+        66,
+        164,
+        65
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 1119,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 1118,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        1120,
+        1121,
+        1119,
+        1118
+      ],
+      "kind": "cat",
+      "length": 284
+    },
+    {
+      "child": 1122,
+      "kind": "inv",
+      "length": 284
+    },
+    {
+      "child": 1117,
+      "kind": "inv",
+      "length": 288
+    },
+    {
+      "children": [
+        1123,
+        1124,
+        1122,
+        1117
+      ],
+      "kind": "cat",
+      "length": 1144
+    },
+    {
+      "children": [
+        587,
+        126,
+        586,
+        125
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1127,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "child": 531,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "children": [
+        1128,
+        1129,
+        1127,
+        531
+      ],
+      "kind": "cat",
+      "length": 48
+    },
+    {
+      "child": 1130,
+      "kind": "inv",
+      "length": 48
+    },
+    {
+      "child": 1126,
+      "kind": "inv",
+      "length": 56
+    },
+    {
+      "children": [
+        1131,
+        1132,
+        1130,
+        1126
+      ],
+      "kind": "cat",
+      "length": 208
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 1134,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        232,
+        1135,
+        40,
+        1134
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        473,
+        340,
+        264,
+        339,
+        263
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        914,
+        550,
+        551,
+        549,
+        548
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 1138,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 1137,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        1136,
+        1139,
+        1140,
+        1138,
+        1137
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 1143,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1142,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        1144,
+        1145,
+        1143,
+        1142
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        469,
+        105,
+        364,
+        104,
+        363
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        378,
+        989,
+        877,
+        988,
+        876
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1148,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1147,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        1146,
+        1149,
+        1150,
+        1148,
+        1147
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "child": 1151,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "child": 1141,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "children": [
+        1133,
+        1152,
+        1153,
+        1151,
+        1141
+      ],
+      "kind": "cat",
+      "length": 1992
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 94,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "child": 1155,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "children": [
+        1156,
+        1157,
+        94,
+        1155
+      ],
+      "kind": "cat",
+      "length": 48
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 1159,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "child": 254,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        1160,
+        1161,
+        1159,
+        254
+      ],
+      "kind": "cat",
+      "length": 40
+    },
+    {
+      "child": 1162,
+      "kind": "inv",
+      "length": 40
+    },
+    {
+      "child": 1158,
+      "kind": "inv",
+      "length": 48
+    },
+    {
+      "children": [
+        1163,
+        1164,
+        1162,
+        1158
+      ],
+      "kind": "cat",
+      "length": 176
+    },
+    {
+      "children": [
+        232,
+        495,
+        40,
+        494
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 1168,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1167,
+        1169,
+        797,
+        1168,
+        794
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        469,
+        133,
+        264,
+        130,
+        263
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 1171,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 1170,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        1166,
+        1172,
+        1173,
+        1171,
+        1170
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        620,
+        233,
+        288,
+        19
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        473,
+        187,
+        188,
+        186,
+        185
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        288,
+        1064,
+        821,
+        1063,
+        820
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 1177,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 1176,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        1175,
+        1178,
+        1179,
+        1177,
+        1176
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "child": 1180,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "child": 1174,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "children": [
+        1165,
+        1181,
+        1182,
+        1180,
+        1174
+      ],
+      "kind": "cat",
+      "length": 1964
+    },
+    {
+      "child": 1183,
+      "kind": "inv",
+      "length": 1964
+    },
+    {
+      "child": 1154,
+      "kind": "inv",
+      "length": 1992
+    },
+    {
+      "children": [
+        1125,
+        1184,
+        1185,
+        1183,
+        1154
+      ],
+      "kind": "cat",
+      "length": 9056
+    },
+    {
+      "child": 149,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        285,
+        1187,
+        284,
+        149
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        373,
+        475,
+        372,
+        473
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "child": 1189,
+      "kind": "inv",
+      "length": 64
+    },
+    {
+      "child": 1188,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        1190,
+        1191,
+        1189,
+        1188
+      ],
+      "kind": "cat",
+      "length": 264
+    },
+    {
+      "children": [
+        547,
+        620,
+        84,
+        288
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1194,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        288,
+        829,
+        1195,
+        828,
+        1194
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        294,
+        87,
+        364,
+        86,
+        363
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1197,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1196,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        1193,
+        1198,
+        1199,
+        1197,
+        1196
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "child": 294,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        233,
+        1201,
+        19,
+        294
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        84,
+        105,
+        730,
+        104,
+        727
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "children": [
+        172,
+        72,
+        153,
+        71,
+        150
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1204,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1203,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        1202,
+        1205,
+        1206,
+        1204,
+        1203
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "child": 1207,
+      "kind": "inv",
+      "length": 438
+    },
+    {
+      "child": 1200,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "children": [
+        1192,
+        1208,
+        1209,
+        1207,
+        1200
+      ],
+      "kind": "cat",
+      "length": 2044
+    },
+    {
+      "children": [
+        84,
+        92,
+        296,
+        91,
+        295
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        284,
+        431,
+        364,
+        430,
+        363
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1212,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1211,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1213,
+        1214,
+        1212,
+        1211
+      ],
+      "kind": "cat",
+      "length": 384
+    },
+    {
+      "children": [
+        248,
+        380,
+        247,
+        379
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "children": [
+        1217,
+        248,
+        730,
+        247,
+        727
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1220,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "children": [
+        1219,
+        1221,
+        317,
+        1220,
+        314
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 1222,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 1218,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        1216,
+        1223,
+        1224,
+        1222,
+        1218
+      ],
+      "kind": "cat",
+      "length": 372
+    },
+    {
+      "children": [
+        192,
+        193,
+        191,
+        190
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1228,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1227,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        304,
+        1229,
+        1230,
+        1228,
+        1227
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 1233,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1232,
+        110,
+        1234,
+        109,
+        1233
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1235,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1231,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        1226,
+        1236,
+        1237,
+        1235,
+        1231
+      ],
+      "kind": "cat",
+      "length": 458
+    },
+    {
+      "child": 1238,
+      "kind": "inv",
+      "length": 458
+    },
+    {
+      "child": 1225,
+      "kind": "inv",
+      "length": 372
+    },
+    {
+      "children": [
+        1215,
+        1239,
+        1240,
+        1238,
+        1225
+      ],
+      "kind": "cat",
+      "length": 2044
+    },
+    {
+      "children": [
+        84,
+        105,
+        252,
+        104,
+        251
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1244,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1243,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        429,
+        1245,
+        1246,
+        1244,
+        1243
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 1247,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 1242,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        1248,
+        1249,
+        1247,
+        1242
+      ],
+      "kind": "cat",
+      "length": 356
+    },
+    {
+      "children": [
+        485,
+        264,
+        484,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 1252,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        69,
+        291,
+        1253,
+        290,
+        1252
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 1256,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1255,
+        550,
+        1257,
+        549,
+        1256
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1258,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1254,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        1251,
+        1259,
+        1260,
+        1258,
+        1254
+      ],
+      "kind": "cat",
+      "length": 448
+    },
+    {
+      "children": [
+        1064,
+        821,
+        1063,
+        820
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 1264,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1263,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        455,
+        1265,
+        1266,
+        1264,
+        1263
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 1269,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 1268,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        304,
+        1270,
+        1271,
+        1269,
+        1268
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1272,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1267,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        1262,
+        1273,
+        1274,
+        1272,
+        1267
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "child": 1275,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "child": 1261,
+      "kind": "inv",
+      "length": 448
+    },
+    {
+      "children": [
+        1250,
+        1276,
+        1277,
+        1275,
+        1261
+      ],
+      "kind": "cat",
+      "length": 2156
+    },
+    {
+      "child": 1278,
+      "kind": "inv",
+      "length": 2156
+    },
+    {
+      "child": 1241,
+      "kind": "inv",
+      "length": 2044
+    },
+    {
+      "children": [
+        1210,
+        1279,
+        1280,
+        1278,
+        1241
+      ],
+      "kind": "cat",
+      "length": 10444
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 1282,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        481,
+        1283,
+        155,
+        1282
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1285,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        470,
+        1286,
+        378,
+        1285
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 1287,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 1284,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        1288,
+        1289,
+        1287,
+        1284
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "children": [
+        481,
+        1187,
+        155,
+        149
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 1293,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 1292,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        1294,
+        1295,
+        1293,
+        1292
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        429,
+        746,
+        694,
+        745,
+        693
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 1297,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 1296,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        1291,
+        1298,
+        1299,
+        1297,
+        1296
+      ],
+      "kind": "cat",
+      "length": 384
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 1301,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 129,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        1302,
+        1303,
+        1301,
+        129
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 1305,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        155,
+        1306,
+        1169,
+        1305,
+        1168
+      ],
+      "kind": "cat",
+      "length": 100
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1309,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 1308,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        172,
+        1310,
+        1311,
+        1309,
+        1308
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 1312,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 1307,
+      "kind": "inv",
+      "length": 100
+    },
+    {
+      "children": [
+        1304,
+        1313,
+        1314,
+        1312,
+        1307
+      ],
+      "kind": "cat",
+      "length": 464
+    },
+    {
+      "child": 1315,
+      "kind": "inv",
+      "length": 464
+    },
+    {
+      "child": 1300,
+      "kind": "inv",
+      "length": 384
+    },
+    {
+      "children": [
+        1290,
+        1316,
+        1317,
+        1315,
+        1300
+      ],
+      "kind": "cat",
+      "length": 1992
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 1319,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1320,
+        764,
+        1319,
+        763
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        429,
+        422,
+        193,
+        421,
+        190
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 1322,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 1321,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        1323,
+        1324,
+        1322,
+        1321
+      ],
+      "kind": "cat",
+      "length": 312
+    },
+    {
+      "children": [
+        248,
+        730,
+        247,
+        727
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1329,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1328,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1327,
+        1330,
+        1331,
+        1329,
+        1328
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1335,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "child": 1334,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1333,
+        1336,
+        1337,
+        1335,
+        1334
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 1338,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 1332,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        1326,
+        1339,
+        1340,
+        1338,
+        1332
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "children": [
+        529,
+        264,
+        528,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        124,
+        105,
+        193,
+        104,
+        190
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        165,
+        890,
+        264,
+        889,
+        263
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1344,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1343,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        1342,
+        1345,
+        1346,
+        1344,
+        1343
+      ],
+      "kind": "cat",
+      "length": 448
+    },
+    {
+      "child": 1347,
+      "kind": "inv",
+      "length": 448
+    },
+    {
+      "child": 1341,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "children": [
+        1325,
+        1348,
+        1349,
+        1347,
+        1341
+      ],
+      "kind": "cat",
+      "length": 2040
+    },
+    {
+      "children": [
+        84,
+        611,
+        694,
+        610,
+        693
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        296,
+        973,
+        295,
+        972
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "child": 1352,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "child": 1351,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        1353,
+        1354,
+        1352,
+        1351
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "children": [
+        248,
+        437,
+        247,
+        436
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 1358,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1357,
+        690,
+        1359,
+        689,
+        1358
+      ],
+      "kind": "cat",
+      "length": 95
+    },
+    {
+      "children": [
+        712,
+        316,
+        322,
+        315,
+        319
+      ],
+      "kind": "cat",
+      "length": 95
+    },
+    {
+      "child": 1361,
+      "kind": "inv",
+      "length": 95
+    },
+    {
+      "child": 1360,
+      "kind": "inv",
+      "length": 95
+    },
+    {
+      "children": [
+        1356,
+        1362,
+        1363,
+        1361,
+        1360
+      ],
+      "kind": "cat",
+      "length": 454
+    },
+    {
+      "children": [
+        192,
+        193,
+        191,
+        190
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        987,
+        72,
+        953,
+        71,
+        952
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "children": [
+        1367,
+        1306,
+        969,
+        1305,
+        968
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 1368,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 1366,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1365,
+        1369,
+        1370,
+        1368,
+        1366
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "child": 1371,
+      "kind": "inv",
+      "length": 438
+    },
+    {
+      "child": 1364,
+      "kind": "inv",
+      "length": 454
+    },
+    {
+      "children": [
+        1355,
+        1372,
+        1373,
+        1371,
+        1364
+      ],
+      "kind": "cat",
+      "length": 2080
+    },
+    {
+      "child": 1374,
+      "kind": "inv",
+      "length": 2080
+    },
+    {
+      "child": 1350,
+      "kind": "inv",
+      "length": 2040
+    },
+    {
+      "children": [
+        1318,
+        1375,
+        1376,
+        1374,
+        1350
+      ],
+      "kind": "cat",
+      "length": 10232
+    },
+    {
+      "child": 1377,
+      "kind": "inv",
+      "length": 10232
+    },
+    {
+      "child": 1281,
+      "kind": "inv",
+      "length": 10444
+    },
+    {
+      "children": [
+        1186,
+        1378,
+        1379,
+        1377,
+        1281
+      ],
+      "kind": "cat",
+      "length": 50408
+    },
+    {
+      "children": [
+        480,
+        429
+      ],
+      "kind": "cat",
+      "length": 36
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 1382,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        746,
+        1383,
+        745,
+        1382
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "children": [
+        429,
+        241,
+        242,
+        240,
+        108
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 1385,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 1384,
+      "kind": "inv",
+      "length": 56
+    },
+    {
+      "children": [
+        1381,
+        1386,
+        1387,
+        1385,
+        1384
+      ],
+      "kind": "cat",
+      "length": 336
+    },
+    {
+      "children": [
+        84,
+        485,
+        981,
+        484,
+        980
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        258,
+        841,
+        255,
+        840
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 1390,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 1389,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        1391,
+        1392,
+        1390,
+        1389
+      ],
+      "kind": "cat",
+      "length": 336
+    },
+    {
+      "child": 1393,
+      "kind": "inv",
+      "length": 336
+    },
+    {
+      "child": 1388,
+      "kind": "inv",
+      "length": 336
+    },
+    {
+      "children": [
+        1394,
+        1395,
+        1393,
+        1388
+      ],
+      "kind": "cat",
+      "length": 1344
+    },
+    {
+      "children": [
+        248,
+        1169,
+        247,
+        1168
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        340,
+        193,
+        339,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 1398,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 1397,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        1399,
+        1400,
+        1398,
+        1397
+      ],
+      "kind": "cat",
+      "length": 292
+    },
+    {
+      "children": [
+        248,
+        437,
+        247,
+        436
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "children": [
+        1403,
+        248,
+        264,
+        247,
+        263
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1405,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        688,
+        743,
+        1406,
+        742,
+        1405
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 1407,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 1404,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        1402,
+        1408,
+        1409,
+        1407,
+        1404
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "children": [
+        568,
+        212,
+        250,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        211,
+        407,
+        97,
+        406,
+        96
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 1414,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1413,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        198,
+        1415,
+        1416,
+        1414,
+        1413
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1417,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1412,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1411,
+        1418,
+        1419,
+        1417,
+        1412
+      ],
+      "kind": "cat",
+      "length": 460
+    },
+    {
+      "child": 1420,
+      "kind": "inv",
+      "length": 460
+    },
+    {
+      "child": 1410,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "children": [
+        1401,
+        1421,
+        1422,
+        1420,
+        1410
+      ],
+      "kind": "cat",
+      "length": 2072
+    },
+    {
+      "children": [
+        84,
+        248,
+        513,
+        247,
+        512
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 1426,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1425,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1427,
+        1428,
+        1426,
+        1425
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 1429,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 1424,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        1430,
+        1431,
+        1429,
+        1424
+      ],
+      "kind": "cat",
+      "length": 340
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 1433,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "children": [
+        236,
+        1434,
+        31,
+        1433
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        1134,
+        92,
+        44,
+        91,
+        41
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 1439,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1438,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        1437,
+        1440,
+        1441,
+        1439,
+        1438
+      ],
+      "kind": "cat",
+      "length": 91
+    },
+    {
+      "child": 1442,
+      "kind": "inv",
+      "length": 91
+    },
+    {
+      "child": 1436,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1435,
+        1443,
+        1444,
+        1442,
+        1436
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 1333,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1446,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        1447,
+        1448,
+        1333,
+        1446
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        673,
+        841,
+        634,
+        840,
+        633
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 1451,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        266,
+        1452,
+        364,
+        1451,
+        363
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 1453,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 1450,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        1449,
+        1454,
+        1455,
+        1453,
+        1450
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "child": 1456,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "child": 1445,
+      "kind": "inv",
+      "length": 438
+    },
+    {
+      "children": [
+        1432,
+        1457,
+        1458,
+        1456,
+        1445
+      ],
+      "kind": "cat",
+      "length": 2048
+    },
+    {
+      "child": 1459,
+      "kind": "inv",
+      "length": 2048
+    },
+    {
+      "child": 1423,
+      "kind": "inv",
+      "length": 2072
+    },
+    {
+      "children": [
+        1396,
+        1460,
+        1461,
+        1459,
+        1423
+      ],
+      "kind": "cat",
+      "length": 9584
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 1219,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 1463,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1464,
+        1465,
+        1219,
+        1463
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        147,
+        50,
+        144,
+        47
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 1467,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 1466,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        1468,
+        1469,
+        1467,
+        1466
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1472,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1471,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        1473,
+        1474,
+        1472,
+        1471
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        473,
+        248,
+        730,
+        247,
+        727
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        288,
+        1064,
+        821,
+        1063,
+        820
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 1477,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 1476,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        1475,
+        1478,
+        1479,
+        1477,
+        1476
+      ],
+      "kind": "cat",
+      "length": 392
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 52,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "child": 1481,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "children": [
+        1482,
+        1483,
+        52,
+        1481
+      ],
+      "kind": "cat",
+      "length": 48
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 1485,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        1282,
+        1486,
+        981,
+        1485,
+        980
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        155,
+        890,
+        193,
+        889,
+        190
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1488,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1487,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        1484,
+        1489,
+        1490,
+        1488,
+        1487
+      ],
+      "kind": "cat",
+      "length": 388
+    },
+    {
+      "child": 1491,
+      "kind": "inv",
+      "length": 388
+    },
+    {
+      "child": 1480,
+      "kind": "inv",
+      "length": 392
+    },
+    {
+      "children": [
+        1470,
+        1492,
+        1493,
+        1491,
+        1480
+      ],
+      "kind": "cat",
+      "length": 1856
+    },
+    {
+      "children": [
+        480,
+        511,
+        429,
+        510
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 1496,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1195,
+        1497,
+        1194,
+        1496
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        429,
+        87,
+        953,
+        86,
+        952
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1499,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1498,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        1495,
+        1500,
+        1501,
+        1499,
+        1498
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "children": [
+        1064,
+        821,
+        1063,
+        820
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        531,
+        989,
+        877,
+        988,
+        876
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 1506,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "child": 1505,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        535,
+        1507,
+        1508,
+        1506,
+        1505
+      ],
+      "kind": "cat",
+      "length": 62
+    },
+    {
+      "child": 1509,
+      "kind": "inv",
+      "length": 62
+    },
+    {
+      "child": 1504,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        1503,
+        1510,
+        1511,
+        1509,
+        1504
+      ],
+      "kind": "cat",
+      "length": 368
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 1513,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        848,
+        1514,
+        847,
+        1513
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 1517,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        1516,
+        1518,
+        779,
+        1517,
+        778
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 1521,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 1520,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        65,
+        1522,
+        1523,
+        1521,
+        1520
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1524,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1519,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        1515,
+        1525,
+        1526,
+        1524,
+        1519
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "child": 1527,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "child": 1512,
+      "kind": "inv",
+      "length": 368
+    },
+    {
+      "children": [
+        1502,
+        1528,
+        1529,
+        1527,
+        1512
+      ],
+      "kind": "cat",
+      "length": 2024
+    },
+    {
+      "children": [
+        495,
+        547,
+        494,
+        84
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 351,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "child": 1532,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "children": [
+        84,
+        1533,
+        1534,
+        351,
+        1532
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "children": [
+        429,
+        72,
+        694,
+        71,
+        693
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1536,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1535,
+      "kind": "inv",
+      "length": 66
+    },
+    {
+      "children": [
+        1531,
+        1537,
+        1538,
+        1536,
+        1535
+      ],
+      "kind": "cat",
+      "length": 392
+    },
+    {
+      "children": [
+        146,
+        437,
+        145,
+        436
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        125,
+        248,
+        106,
+        247,
+        103
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        586,
+        79,
+        497,
+        76,
+        496
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 1542,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 1541,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        1540,
+        1543,
+        1544,
+        1542,
+        1541
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "children": [
+        66,
+        212,
+        65,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        124,
+        599,
+        159,
+        598,
+        156
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 1548,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        65,
+        1031,
+        1549,
+        1030,
+        1548
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 1550,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 1547,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1546,
+        1551,
+        1552,
+        1550,
+        1547
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "child": 1553,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "child": 1545,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "children": [
+        1539,
+        1554,
+        1555,
+        1553,
+        1545
+      ],
+      "kind": "cat",
+      "length": 2112
+    },
+    {
+      "child": 1556,
+      "kind": "inv",
+      "length": 2112
+    },
+    {
+      "child": 1530,
+      "kind": "inv",
+      "length": 2024
+    },
+    {
+      "children": [
+        1494,
+        1557,
+        1558,
+        1556,
+        1530
+      ],
+      "kind": "cat",
+      "length": 10128
+    },
+    {
+      "children": [
+        66,
+        437,
+        65,
+        436
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 1561,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1448,
+        1562,
+        1446,
+        1561
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 1563,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "child": 1560,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        1564,
+        1565,
+        1563,
+        1560
+      ],
+      "kind": "cat",
+      "length": 288
+    },
+    {
+      "child": 1437,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1567,
+        596,
+        1437,
+        69
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        149,
+        690,
+        364,
+        689,
+        363
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        288,
+        611,
+        486,
+        610,
+        483
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 1570,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 1569,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        1568,
+        1571,
+        1572,
+        1570,
+        1569
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "child": 75,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1144,
+        1574,
+        1143,
+        75
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        283,
+        974,
+        1081,
+        971,
+        1080
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        378,
+        248,
+        437,
+        247,
+        436
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1577,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1576,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        1575,
+        1578,
+        1579,
+        1577,
+        1576
+      ],
+      "kind": "cat",
+      "length": 448
+    },
+    {
+      "child": 1580,
+      "kind": "inv",
+      "length": 448
+    },
+    {
+      "child": 1573,
+      "kind": "inv",
+      "length": 438
+    },
+    {
+      "children": [
+        1566,
+        1581,
+        1582,
+        1580,
+        1573
+      ],
+      "kind": "cat",
+      "length": 2060
+    },
+    {
+      "children": [
+        480,
+        286,
+        429,
+        283
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1585,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        35,
+        1586,
+        32,
+        1585
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        174,
+        412,
+        173,
+        411
+      ],
+      "kind": "cat",
+      "length": 58
+    },
+    {
+      "child": 1588,
+      "kind": "inv",
+      "length": 58
+    },
+    {
+      "child": 1587,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        1584,
+        1589,
+        1590,
+        1588,
+        1587
+      ],
+      "kind": "cat",
+      "length": 344
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 1592,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        1593,
+        568,
+        1592,
+        250
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 1596,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "child": 1595,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        90,
+        1597,
+        1598,
+        1596,
+        1595
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 1602,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1601,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        1600,
+        1603,
+        1604,
+        1602,
+        1601
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 1605,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 1599,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        1594,
+        1606,
+        1607,
+        1605,
+        1599
+      ],
+      "kind": "cat",
+      "length": 400
+    },
+    {
+      "child": 1053,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        412,
+        1609,
+        411,
+        1053
+      ],
+      "kind": "cat",
+      "length": 58
+    },
+    {
+      "children": [
+        712,
+        1533,
+        167,
+        351,
+        164
+      ],
+      "kind": "cat",
+      "length": 77
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1612,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        713,
+        1613,
+        1229,
+        1612,
+        1228
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 1614,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 1611,
+      "kind": "inv",
+      "length": 77
+    },
+    {
+      "children": [
+        1610,
+        1615,
+        1616,
+        1614,
+        1611
+      ],
+      "kind": "cat",
+      "length": 384
+    },
+    {
+      "child": 1617,
+      "kind": "inv",
+      "length": 384
+    },
+    {
+      "child": 1608,
+      "kind": "inv",
+      "length": 400
+    },
+    {
+      "children": [
+        1591,
+        1618,
+        1619,
+        1617,
+        1608
+      ],
+      "kind": "cat",
+      "length": 1912
+    },
+    {
+      "children": [
+        373,
+        547,
+        372,
+        84
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1622,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        84,
+        485,
+        1623,
+        484,
+        1622
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        943,
+        364,
+        942,
+        363
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 1625,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 1624,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        1621,
+        1626,
+        1627,
+        1625,
+        1624
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 1629,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        485,
+        1630,
+        484,
+        1629
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "children": [
+        1632,
+        829,
+        1195,
+        828,
+        1194
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "children": [
+        1634,
+        501,
+        638,
+        500,
+        637
+      ],
+      "kind": "cat",
+      "length": 75
+    },
+    {
+      "child": 1635,
+      "kind": "inv",
+      "length": 75
+    },
+    {
+      "child": 1633,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1631,
+        1636,
+        1637,
+        1635,
+        1633
+      ],
+      "kind": "cat",
+      "length": 422
+    },
+    {
+      "children": [
+        192,
+        212,
+        191,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        211,
+        402,
+        626,
+        401,
+        625
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1642,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1641,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        125,
+        1643,
+        1644,
+        1642,
+        1641
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 1645,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 1640,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        1639,
+        1646,
+        1647,
+        1645,
+        1640
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "child": 1648,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "child": 1638,
+      "kind": "inv",
+      "length": 422
+    },
+    {
+      "children": [
+        1628,
+        1649,
+        1650,
+        1648,
+        1638
+      ],
+      "kind": "cat",
+      "length": 2100
+    },
+    {
+      "child": 1651,
+      "kind": "inv",
+      "length": 2100
+    },
+    {
+      "child": 1620,
+      "kind": "inv",
+      "length": 1912
+    },
+    {
+      "children": [
+        1583,
+        1652,
+        1653,
+        1651,
+        1620
+      ],
+      "kind": "cat",
+      "length": 10084
+    },
+    {
+      "child": 1654,
+      "kind": "inv",
+      "length": 10084
+    },
+    {
+      "child": 1559,
+      "kind": "inv",
+      "length": 10128
+    },
+    {
+      "children": [
+        1462,
+        1655,
+        1656,
+        1654,
+        1559
+      ],
+      "kind": "cat",
+      "length": 50008
+    },
+    {
+      "children": [
+        480,
+        429
+      ],
+      "kind": "cat",
+      "length": 36
+    },
+    {
+      "child": 239,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1659,
+        480,
+        239,
+        429
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        364,
+        87,
+        363,
+        86
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        429,
+        841,
+        551,
+        840,
+        548
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 1662,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 1661,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        1658,
+        1663,
+        1664,
+        1662,
+        1661
+      ],
+      "kind": "cat",
+      "length": 364
+    },
+    {
+      "children": [
+        248,
+        730,
+        247,
+        727
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        429,
+        550,
+        981,
+        549,
+        980
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 1667,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 1666,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "children": [
+        1660,
+        1668,
+        1669,
+        1667,
+        1666
+      ],
+      "kind": "cat",
+      "length": 364
+    },
+    {
+      "child": 1670,
+      "kind": "inv",
+      "length": 364
+    },
+    {
+      "child": 1665,
+      "kind": "inv",
+      "length": 364
+    },
+    {
+      "children": [
+        1671,
+        1672,
+        1670,
+        1665
+      ],
+      "kind": "cat",
+      "length": 1456
+    },
+    {
+      "child": 6,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        427,
+        1674,
+        424,
+        6
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1676,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        730,
+        1677,
+        727,
+        1676
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "child": 1678,
+      "kind": "inv",
+      "length": 66
+    },
+    {
+      "child": 1675,
+      "kind": "inv",
+      "length": 66
+    },
+    {
+      "children": [
+        1679,
+        1680,
+        1678,
+        1675
+      ],
+      "kind": "cat",
+      "length": 264
+    },
+    {
+      "children": [
+        146,
+        192,
+        145,
+        191
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 1683,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        494,
+        1514,
+        1684,
+        1513,
+        1683
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        40,
+        989,
+        877,
+        988,
+        876
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1686,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1685,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1682,
+        1687,
+        1688,
+        1686,
+        1685
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1690,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        1691,
+        1644,
+        1690,
+        1641
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "children": [
+        1693,
+        730,
+        1065,
+        727,
+        1062
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 1696,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1695,
+        1697,
+        206,
+        1696,
+        203
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 1698,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 1694,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        1692,
+        1699,
+        1700,
+        1698,
+        1694
+      ],
+      "kind": "cat",
+      "length": 364
+    },
+    {
+      "child": 1701,
+      "kind": "inv",
+      "length": 364
+    },
+    {
+      "child": 1689,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "children": [
+        1681,
+        1702,
+        1703,
+        1701,
+        1689
+      ],
+      "kind": "cat",
+      "length": 1896
+    },
+    {
+      "children": [
+        248,
+        380,
+        247,
+        379
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1706,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        1707,
+        258,
+        1706,
+        255
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 1708,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 1705,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        1709,
+        1710,
+        1708,
+        1705
+      ],
+      "kind": "cat",
+      "length": 284
+    },
+    {
+      "children": [
+        756,
+        1707,
+        755,
+        1706
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 1714,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1713,
+        110,
+        1715,
+        109,
+        1714
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1718,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1717,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        421,
+        1719,
+        1720,
+        1718,
+        1717
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 1721,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 1716,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        1712,
+        1722,
+        1723,
+        1721,
+        1716
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "children": [
+        485,
+        264,
+        484,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 1728,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 1727,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1726,
+        1729,
+        1730,
+        1728,
+        1727
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 1732,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        393,
+        756,
+        1733,
+        755,
+        1732
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 1734,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 1731,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        1725,
+        1735,
+        1736,
+        1734,
+        1731
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "child": 1737,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "child": 1724,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "children": [
+        1711,
+        1738,
+        1739,
+        1737,
+        1724
+      ],
+      "kind": "cat",
+      "length": 2028
+    },
+    {
+      "child": 1740,
+      "kind": "inv",
+      "length": 2028
+    },
+    {
+      "child": 1704,
+      "kind": "inv",
+      "length": 1896
+    },
+    {
+      "children": [
+        1673,
+        1741,
+        1742,
+        1740,
+        1704
+      ],
+      "kind": "cat",
+      "length": 9304
+    },
+    {
+      "children": [
+        587,
+        1447,
+        586,
+        1333
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1745,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1746,
+        167,
+        1745,
+        164
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 1747,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 1744,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        1748,
+        1749,
+        1747,
+        1744
+      ],
+      "kind": "cat",
+      "length": 284
+    },
+    {
+      "children": [
+        232,
+        233,
+        40,
+        19
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        19,
+        248,
+        291,
+        247,
+        290
+      ],
+      "kind": "cat",
+      "length": 87
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1753,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        40,
+        1754,
+        44,
+        1753,
+        41
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 1755,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 1752,
+      "kind": "inv",
+      "length": 87
+    },
+    {
+      "children": [
+        1751,
+        1756,
+        1757,
+        1755,
+        1752
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 1760,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1759,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1761,
+        1762,
+        1760,
+        1759
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        473,
+        72,
+        153,
+        71,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        288,
+        1064,
+        821,
+        1063,
+        820
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 1765,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 1764,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        1763,
+        1766,
+        1767,
+        1765,
+        1764
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "child": 1768,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "child": 1758,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "children": [
+        1750,
+        1769,
+        1770,
+        1768,
+        1758
+      ],
+      "kind": "cat",
+      "length": 2044
+    },
+    {
+      "children": [
+        480,
+        1187,
+        429,
+        149
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        84,
+        87,
+        486,
+        86,
+        483
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1774,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        429,
+        1775,
+        403,
+        1774,
+        400
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 1776,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 1773,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        1772,
+        1777,
+        1778,
+        1776,
+        1773
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "children": [
+        386,
+        264,
+        385,
+        263
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "children": [
+        1781,
+        1775,
+        1195,
+        1774,
+        1194
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1784,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1783,
+        1785,
+        1486,
+        1784,
+        1485
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 1786,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 1782,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        1780,
+        1787,
+        1788,
+        1786,
+        1782
+      ],
+      "kind": "cat",
+      "length": 406
+    },
+    {
+      "children": [
+        187,
+        380,
+        186,
+        379
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        1481,
+        943,
+        364,
+        942,
+        363
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        1053,
+        561,
+        690,
+        560,
+        689
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1792,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1791,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        1790,
+        1793,
+        1794,
+        1792,
+        1791
+      ],
+      "kind": "cat",
+      "length": 446
+    },
+    {
+      "child": 1795,
+      "kind": "inv",
+      "length": 446
+    },
+    {
+      "child": 1789,
+      "kind": "inv",
+      "length": 406
+    },
+    {
+      "children": [
+        1779,
+        1796,
+        1797,
+        1795,
+        1789
+      ],
+      "kind": "cat",
+      "length": 2136
+    },
+    {
+      "child": 777,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1799,
+        1659,
+        777,
+        239
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        239,
+        746,
+        694,
+        745,
+        693
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 1802,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        1803,
+        1383,
+        1802,
+        1382
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "child": 1804,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "child": 1801,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        1800,
+        1805,
+        1806,
+        1804,
+        1801
+      ],
+      "kind": "cat",
+      "length": 360
+    },
+    {
+      "children": [
+        1065,
+        729,
+        1062,
+        728
+      ],
+      "kind": "cat",
+      "length": 62
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 1809,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1516,
+        1810,
+        153,
+        1809,
+        150
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        65,
+        274,
+        1549,
+        273,
+        1548
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 1812,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 1811,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        1808,
+        1813,
+        1814,
+        1812,
+        1811
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "children": [
+        237,
+        1065,
+        235,
+        1062
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 1818,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "child": 1817,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        393,
+        1819,
+        1820,
+        1818,
+        1817
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        1822,
+        248,
+        1623,
+        247,
+        1622
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 1823,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 1821,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        1816,
+        1824,
+        1825,
+        1823,
+        1821
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "child": 1826,
+      "kind": "inv",
+      "length": 404
+    },
+    {
+      "child": 1815,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "children": [
+        1807,
+        1827,
+        1828,
+        1826,
+        1815
+      ],
+      "kind": "cat",
+      "length": 2028
+    },
+    {
+      "child": 1829,
+      "kind": "inv",
+      "length": 2028
+    },
+    {
+      "child": 1798,
+      "kind": "inv",
+      "length": 2136
+    },
+    {
+      "children": [
+        1771,
+        1830,
+        1831,
+        1829,
+        1798
+      ],
+      "kind": "cat",
+      "length": 10372
+    },
+    {
+      "children": [
+        66,
+        199,
+        65,
+        198
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        707,
+        1644,
+        706,
+        1641
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "child": 1834,
+      "kind": "inv",
+      "length": 52
+    },
+    {
+      "child": 1833,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        1835,
+        1836,
+        1834,
+        1833
+      ],
+      "kind": "cat",
+      "length": 240
+    },
+    {
+      "children": [
+        66,
+        715,
+        65,
+        712
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1839,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        288,
+        1245,
+        1840,
+        1244,
+        1839
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 1842,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        155,
+        1843,
+        969,
+        1842,
+        968
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1844,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1841,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1838,
+        1845,
+        1846,
+        1844,
+        1841
+      ],
+      "kind": "cat",
+      "length": 458
+    },
+    {
+      "children": [
+        373,
+        596,
+        372,
+        69
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        19,
+        1257,
+        982,
+        1256,
+        979
+      ],
+      "kind": "cat",
+      "length": 93
+    },
+    {
+      "children": [
+        149,
+        746,
+        43,
+        745,
+        42
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 1850,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 1849,
+      "kind": "inv",
+      "length": 93
+    },
+    {
+      "children": [
+        1848,
+        1851,
+        1852,
+        1850,
+        1849
+      ],
+      "kind": "cat",
+      "length": 422
+    },
+    {
+      "child": 1853,
+      "kind": "inv",
+      "length": 422
+    },
+    {
+      "child": 1847,
+      "kind": "inv",
+      "length": 458
+    },
+    {
+      "children": [
+        1837,
+        1854,
+        1855,
+        1853,
+        1847
+      ],
+      "kind": "cat",
+      "length": 2000
+    },
+    {
+      "children": [
+        1201,
+        470,
+        294,
+        378
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 1858,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        429,
+        1859,
+        153,
+        1858,
+        150
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        429,
+        611,
+        486,
+        610,
+        483
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 1861,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 1860,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        1857,
+        1862,
+        1863,
+        1861,
+        1860
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1866,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 1865,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1867,
+        1868,
+        1866,
+        1865
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 1871,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 1870,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1822,
+        1872,
+        1873,
+        1871,
+        1870
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1875,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1047,
+        1876,
+        1441,
+        1875,
+        1438
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 1877,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 1874,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        1869,
+        1878,
+        1879,
+        1877,
+        1874
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "children": [
+        340,
+        193,
+        339,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        692,
+        206,
+        395,
+        203,
+        394
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "children": [
+        65,
+        682,
+        292,
+        679,
+        289
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 1883,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 1882,
+      "kind": "inv",
+      "length": 66
+    },
+    {
+      "children": [
+        1881,
+        1884,
+        1885,
+        1883,
+        1882
+      ],
+      "kind": "cat",
+      "length": 376
+    },
+    {
+      "child": 1886,
+      "kind": "inv",
+      "length": 376
+    },
+    {
+      "child": 1880,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "children": [
+        1864,
+        1887,
+        1888,
+        1886,
+        1880
+      ],
+      "kind": "cat",
+      "length": 2032
+    },
+    {
+      "children": [
+        495,
+        1201,
+        494,
+        294
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 1892,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 1891,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        84,
+        1893,
+        1894,
+        1892,
+        1891
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        288,
+        874,
+        626,
+        873,
+        625
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1896,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1895,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        1890,
+        1897,
+        1898,
+        1896,
+        1895
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        105,
+        44,
+        104,
+        41
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 1902,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 1901,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        164,
+        1903,
+        1904,
+        1902,
+        1901
+      ],
+      "kind": "cat",
+      "length": 91
+    },
+    {
+      "children": [
+        1532,
+        88,
+        1331,
+        85,
+        1328
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 1906,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 1905,
+      "kind": "inv",
+      "length": 91
+    },
+    {
+      "children": [
+        1900,
+        1907,
+        1908,
+        1906,
+        1905
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "children": [
+        662,
+        264,
+        661,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 1912,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1911,
+        1913,
+        561,
+        1912,
+        560
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 1916,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 1915,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        288,
+        1917,
+        1918,
+        1916,
+        1915
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 1919,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 1914,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        1910,
+        1920,
+        1921,
+        1919,
+        1914
+      ],
+      "kind": "cat",
+      "length": 468
+    },
+    {
+      "child": 1922,
+      "kind": "inv",
+      "length": 468
+    },
+    {
+      "child": 1909,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "children": [
+        1899,
+        1923,
+        1924,
+        1922,
+        1909
+      ],
+      "kind": "cat",
+      "length": 2272
+    },
+    {
+      "child": 1925,
+      "kind": "inv",
+      "length": 2272
+    },
+    {
+      "child": 1889,
+      "kind": "inv",
+      "length": 2032
+    },
+    {
+      "children": [
+        1856,
+        1926,
+        1927,
+        1925,
+        1889
+      ],
+      "kind": "cat",
+      "length": 10608
+    },
+    {
+      "child": 1928,
+      "kind": "inv",
+      "length": 10608
+    },
+    {
+      "child": 1832,
+      "kind": "inv",
+      "length": 10372
+    },
+    {
+      "children": [
+        1743,
+        1929,
+        1930,
+        1928,
+        1832
+      ],
+      "kind": "cat",
+      "length": 51264
+    },
+    {
+      "child": 1931,
+      "kind": "inv",
+      "length": 51264
+    },
+    {
+      "child": 1657,
+      "kind": "inv",
+      "length": 50008
+    },
+    {
+      "children": [
+        1380,
+        1932,
+        1933,
+        1931,
+        1657
+      ],
+      "kind": "cat",
+      "length": 252952
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 1935,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "child": 1367,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        1936,
+        1937,
+        1935,
+        1367
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "children": [
+        199,
+        167,
+        198,
+        164
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 1939,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 1938,
+      "kind": "inv",
+      "length": 52
+    },
+    {
+      "children": [
+        1940,
+        1941,
+        1939,
+        1938
+      ],
+      "kind": "cat",
+      "length": 244
+    },
+    {
+      "children": [
+        66,
+        1016,
+        65,
+        1015
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        1112,
+        167,
+        1111,
+        164
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 1944,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 1943,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "children": [
+        1945,
+        1946,
+        1944,
+        1943
+      ],
+      "kind": "cat",
+      "length": 276
+    },
+    {
+      "child": 1947,
+      "kind": "inv",
+      "length": 276
+    },
+    {
+      "child": 1942,
+      "kind": "inv",
+      "length": 244
+    },
+    {
+      "children": [
+        1948,
+        1949,
+        1947,
+        1942
+      ],
+      "kind": "cat",
+      "length": 1040
+    },
+    {
+      "children": [
+        212,
+        146,
+        211,
+        145
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        126,
+        212,
+        125,
+        211
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 1952,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "child": 1951,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        1953,
+        1954,
+        1952,
+        1951
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "children": [
+        66,
+        167,
+        65,
+        164
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        40,
+        395,
+        106,
+        394,
+        103
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        69,
+        690,
+        1913,
+        689,
+        1912
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 1958,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 1957,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        1956,
+        1959,
+        1960,
+        1958,
+        1957
+      ],
+      "kind": "cat",
+      "length": 426
+    },
+    {
+      "children": [
+        1016,
+        212,
+        1015,
+        211
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        1282,
+        248,
+        174,
+        247,
+        173
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "children": [
+        563,
+        796,
+        730,
+        795,
+        727
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 1964,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 1963,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        1962,
+        1965,
+        1966,
+        1964,
+        1963
+      ],
+      "kind": "cat",
+      "length": 388
+    },
+    {
+      "child": 1967,
+      "kind": "inv",
+      "length": 388
+    },
+    {
+      "child": 1961,
+      "kind": "inv",
+      "length": 426
+    },
+    {
+      "children": [
+        1955,
+        1968,
+        1969,
+        1967,
+        1961
+      ],
+      "kind": "cat",
+      "length": 1924
+    },
+    {
+      "children": [
+        591,
+        127,
+        590,
+        124
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        66,
+        1016,
+        65,
+        1015
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "child": 1972,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "child": 1971,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        1973,
+        1974,
+        1972,
+        1971
+      ],
+      "kind": "cat",
+      "length": 256
+    },
+    {
+      "children": [
+        470,
+        1144,
+        378,
+        1143
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        172,
+        1754,
+        413,
+        1753,
+        410
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        284,
+        522,
+        797,
+        521,
+        794
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 1978,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 1977,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        1976,
+        1979,
+        1980,
+        1978,
+        1977
+      ],
+      "kind": "cat",
+      "length": 464
+    },
+    {
+      "children": [
+        1187,
+        596,
+        149,
+        69
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 1983,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        19,
+        786,
+        1984,
+        785,
+        1983
+      ],
+      "kind": "cat",
+      "length": 91
+    },
+    {
+      "children": [
+        40,
+        734,
+        44,
+        733,
+        41
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 1986,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 1985,
+      "kind": "inv",
+      "length": 91
+    },
+    {
+      "children": [
+        1982,
+        1987,
+        1988,
+        1986,
+        1985
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "child": 1989,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "child": 1981,
+      "kind": "inv",
+      "length": 464
+    },
+    {
+      "children": [
+        1975,
+        1990,
+        1991,
+        1989,
+        1981
+      ],
+      "kind": "cat",
+      "length": 2044
+    },
+    {
+      "child": 1992,
+      "kind": "inv",
+      "length": 2044
+    },
+    {
+      "child": 1970,
+      "kind": "inv",
+      "length": 1924
+    },
+    {
+      "children": [
+        1950,
+        1993,
+        1994,
+        1992,
+        1970
+      ],
+      "kind": "cat",
+      "length": 8976
+    },
+    {
+      "child": 678,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1145,
+        1996,
+        1142,
+        678
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        1187,
+        233,
+        149,
+        19
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 1998,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 1997,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "children": [
+        1999,
+        2000,
+        1998,
+        1997
+      ],
+      "kind": "cat",
+      "length": 280
+    },
+    {
+      "children": [
+        495,
+        1201,
+        494,
+        294
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        84,
+        291,
+        954,
+        290,
+        951
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2005,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 2004,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        510,
+        2006,
+        2007,
+        2005,
+        2004
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2008,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2003,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2002,
+        2009,
+        2010,
+        2008,
+        2003
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        232,
+        233,
+        40,
+        19
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        473,
+        611,
+        486,
+        610,
+        483
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        1285,
+        248,
+        662,
+        247,
+        661
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 2014,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 2013,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        2012,
+        2015,
+        2016,
+        2014,
+        2013
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "child": 2017,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "child": 2011,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "children": [
+        2001,
+        2018,
+        2019,
+        2017,
+        2011
+      ],
+      "kind": "cat",
+      "length": 2044
+    },
+    {
+      "children": [
+        480,
+        547,
+        429,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        852,
+        105,
+        851,
+        104
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        429,
+        841,
+        551,
+        840,
+        548
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2023,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2022,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        2021,
+        2024,
+        2025,
+        2023,
+        2022
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "child": 393,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        2027,
+        192,
+        393,
+        191
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "children": [
+        2029,
+        973,
+        217,
+        972,
+        216
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 2032,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 2031,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        393,
+        2033,
+        2034,
+        2032,
+        2031
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 2035,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 2030,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        2028,
+        2036,
+        2037,
+        2035,
+        2030
+      ],
+      "kind": "cat",
+      "length": 372
+    },
+    {
+      "child": 1713,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        422,
+        2039,
+        421,
+        1713
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        164,
+        746,
+        1754,
+        745,
+        1753
+      ],
+      "kind": "cat",
+      "length": 89
+    },
+    {
+      "children": [
+        421,
+        1643,
+        264,
+        1642,
+        263
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2042,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2041,
+      "kind": "inv",
+      "length": 89
+    },
+    {
+      "children": [
+        2040,
+        2043,
+        2044,
+        2042,
+        2041
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "child": 2045,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "child": 2038,
+      "kind": "inv",
+      "length": 372
+    },
+    {
+      "children": [
+        2026,
+        2046,
+        2047,
+        2045,
+        2038
+      ],
+      "kind": "cat",
+      "length": 2032
+    },
+    {
+      "children": [
+        511,
+        547,
+        510,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        84,
+        550,
+        981,
+        549,
+        980
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 2051,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        2052,
+        1843,
+        2051,
+        1842
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 2053,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 2050,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        2049,
+        2054,
+        2055,
+        2053,
+        2050
+      ],
+      "kind": "cat",
+      "length": 388
+    },
+    {
+      "children": [
+        146,
+        237,
+        145,
+        235
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        590,
+        92,
+        44,
+        91,
+        41
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 2059,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        586,
+        110,
+        2060,
+        109,
+        2059
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 2061,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 2058,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2057,
+        2062,
+        2063,
+        2061,
+        2058
+      ],
+      "kind": "cat",
+      "length": 434
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2065,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        2066,
+        264,
+        2065,
+        263
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        1282,
+        1677,
+        1904,
+        1676,
+        1901
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        1911,
+        681,
+        953,
+        680,
+        952
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2069,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2068,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2067,
+        2070,
+        2071,
+        2069,
+        2068
+      ],
+      "kind": "cat",
+      "length": 460
+    },
+    {
+      "child": 2072,
+      "kind": "inv",
+      "length": 460
+    },
+    {
+      "child": 2064,
+      "kind": "inv",
+      "length": 434
+    },
+    {
+      "children": [
+        2056,
+        2073,
+        2074,
+        2072,
+        2064
+      ],
+      "kind": "cat",
+      "length": 2176
+    },
+    {
+      "child": 2075,
+      "kind": "inv",
+      "length": 2176
+    },
+    {
+      "child": 2048,
+      "kind": "inv",
+      "length": 2032
+    },
+    {
+      "children": [
+        2020,
+        2076,
+        2077,
+        2075,
+        2048
+      ],
+      "kind": "cat",
+      "length": 10460
+    },
+    {
+      "child": 1911,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        1283,
+        2079,
+        1282,
+        1911
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 672,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        2081,
+        1574,
+        672,
+        75
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 2082,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 2080,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        2083,
+        2084,
+        2082,
+        2080
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "children": [
+        470,
+        373,
+        378,
+        372
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        473,
+        718,
+        734,
+        717,
+        733
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        284,
+        412,
+        44,
+        411,
+        41
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 2088,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 2087,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2086,
+        2089,
+        2090,
+        2088,
+        2087
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "children": [
+        495,
+        475,
+        494,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        1167,
+        309,
+        206,
+        306,
+        203
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        283,
+        187,
+        969,
+        186,
+        968
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2094,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2093,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        2092,
+        2095,
+        2096,
+        2094,
+        2093
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "child": 2097,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "child": 2091,
+      "kind": "inv",
+      "length": 408
+    },
+    {
+      "children": [
+        2085,
+        2098,
+        2099,
+        2097,
+        2091
+      ],
+      "kind": "cat",
+      "length": 1984
+    },
+    {
+      "children": [
+        1659,
+        547,
+        239,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        248,
+        1169,
+        247,
+        1168
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        340,
+        193,
+        339,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 2103,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 2102,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        2101,
+        2104,
+        2105,
+        2103,
+        2102
+      ],
+      "kind": "cat",
+      "length": 364
+    },
+    {
+      "children": [
+        248,
+        192,
+        247,
+        191
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 2108,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        40,
+        786,
+        2109,
+        785,
+        2108
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "children": [
+        678,
+        682,
+        292,
+        679,
+        289
+      ],
+      "kind": "cat",
+      "length": 87
+    },
+    {
+      "child": 2111,
+      "kind": "inv",
+      "length": 87
+    },
+    {
+      "child": 2110,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        2107,
+        2112,
+        2113,
+        2111,
+        2110
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "children": [
+        302,
+        193,
+        301,
+        190
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        793,
+        316,
+        730,
+        315,
+        727
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 2118,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "child": 2117,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        421,
+        2119,
+        2120,
+        2118,
+        2117
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 2121,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 2116,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        2115,
+        2122,
+        2123,
+        2121,
+        2116
+      ],
+      "kind": "cat",
+      "length": 368
+    },
+    {
+      "child": 2124,
+      "kind": "inv",
+      "length": 368
+    },
+    {
+      "child": 2114,
+      "kind": "inv",
+      "length": 408
+    },
+    {
+      "children": [
+        2106,
+        2125,
+        2126,
+        2124,
+        2114
+      ],
+      "kind": "cat",
+      "length": 1916
+    },
+    {
+      "children": [
+        429,
+        92,
+        533,
+        91,
+        532
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        84,
+        22,
+        1245,
+        21,
+        1244
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 2129,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 2128,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2130,
+        2131,
+        2129,
+        2128
+      ],
+      "kind": "cat",
+      "length": 352
+    },
+    {
+      "children": [
+        187,
+        1904,
+        186,
+        1901
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        164,
+        1169,
+        797,
+        1168,
+        794
+      ],
+      "kind": "cat",
+      "length": 97
+    },
+    {
+      "children": [
+        145,
+        981,
+        258,
+        980,
+        255
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2135,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2134,
+      "kind": "inv",
+      "length": 97
+    },
+    {
+      "children": [
+        2133,
+        2136,
+        2137,
+        2135,
+        2134
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        248,
+        296,
+        247,
+        295
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        672,
+        1630,
+        242,
+        1629,
+        108
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        678,
+        681,
+        682,
+        680,
+        679
+      ],
+      "kind": "cat",
+      "length": 97
+    },
+    {
+      "child": 2141,
+      "kind": "inv",
+      "length": 97
+    },
+    {
+      "child": 2140,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2139,
+        2142,
+        2143,
+        2141,
+        2140
+      ],
+      "kind": "cat",
+      "length": 458
+    },
+    {
+      "child": 2144,
+      "kind": "inv",
+      "length": 458
+    },
+    {
+      "child": 2138,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "children": [
+        2132,
+        2145,
+        2146,
+        2144,
+        2138
+      ],
+      "kind": "cat",
+      "length": 2172
+    },
+    {
+      "child": 2147,
+      "kind": "inv",
+      "length": 2172
+    },
+    {
+      "child": 2127,
+      "kind": "inv",
+      "length": 1916
+    },
+    {
+      "children": [
+        2100,
+        2148,
+        2149,
+        2147,
+        2127
+      ],
+      "kind": "cat",
+      "length": 10160
+    },
+    {
+      "child": 2150,
+      "kind": "inv",
+      "length": 10160
+    },
+    {
+      "child": 2078,
+      "kind": "inv",
+      "length": 10460
+    },
+    {
+      "children": [
+        1995,
+        2151,
+        2152,
+        2150,
+        2078
+      ],
+      "kind": "cat",
+      "length": 50216
+    },
+    {
+      "children": [
+        386,
+        364,
+        385,
+        363
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 2155,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        84,
+        87,
+        2156,
+        86,
+        2155
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2157,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2154,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        2158,
+        2159,
+        2157,
+        2154
+      ],
+      "kind": "cat",
+      "length": 332
+    },
+    {
+      "children": [
+        84,
+        550,
+        981,
+        549,
+        980
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        264,
+        1306,
+        263,
+        1305
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 2162,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 2161,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        2163,
+        2164,
+        2162,
+        2161
+      ],
+      "kind": "cat",
+      "length": 332
+    },
+    {
+      "child": 2165,
+      "kind": "inv",
+      "length": 332
+    },
+    {
+      "child": 2160,
+      "kind": "inv",
+      "length": 332
+    },
+    {
+      "children": [
+        2166,
+        2167,
+        2165,
+        2160
+      ],
+      "kind": "cat",
+      "length": 1328
+    },
+    {
+      "children": [
+        380,
+        264,
+        379,
+        263
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        248,
+        380,
+        247,
+        379
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 2170,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "child": 2169,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        2171,
+        2172,
+        2170,
+        2169
+      ],
+      "kind": "cat",
+      "length": 284
+    },
+    {
+      "children": [
+        49,
+        212,
+        48,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 2175,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        164,
+        2176,
+        1597,
+        2175,
+        1596
+      ],
+      "kind": "cat",
+      "length": 75
+    },
+    {
+      "children": [
+        1726,
+        34,
+        35,
+        33,
+        32
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2178,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2177,
+      "kind": "inv",
+      "length": 75
+    },
+    {
+      "children": [
+        2174,
+        2179,
+        2180,
+        2178,
+        2177
+      ],
+      "kind": "cat",
+      "length": 418
+    },
+    {
+      "children": [
+        1593,
+        529,
+        1592,
+        528
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 2184,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 2183,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        75,
+        2185,
+        2186,
+        2184,
+        2183
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 2188,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        672,
+        72,
+        2189,
+        71,
+        2188
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 2190,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 2187,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        2182,
+        2191,
+        2192,
+        2190,
+        2187
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "child": 2193,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "child": 2181,
+      "kind": "inv",
+      "length": 418
+    },
+    {
+      "children": [
+        2173,
+        2194,
+        2195,
+        2193,
+        2181
+      ],
+      "kind": "cat",
+      "length": 1952
+    },
+    {
+      "children": [
+        187,
+        380,
+        186,
+        379
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        264,
+        187,
+        263,
+        186
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 2198,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 2197,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        2199,
+        2200,
+        2198,
+        2197
+      ],
+      "kind": "cat",
+      "length": 308
+    },
+    {
+      "children": [
+        187,
+        340,
+        186,
+        339
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        46,
+        890,
+        264,
+        889,
+        263
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 2204,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        52,
+        2205,
+        258,
+        2204,
+        255
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2206,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2203,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        2202,
+        2207,
+        2208,
+        2206,
+        2203
+      ],
+      "kind": "cat",
+      "length": 434
+    },
+    {
+      "children": [
+        264,
+        187,
+        263,
+        186
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 2211,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        164,
+        2212,
+        431,
+        2211,
+        430
+      ],
+      "kind": "cat",
+      "length": 99
+    },
+    {
+      "children": [
+        421,
+        626,
+        604,
+        625,
+        601
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2214,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2213,
+      "kind": "inv",
+      "length": 99
+    },
+    {
+      "children": [
+        2210,
+        2215,
+        2216,
+        2214,
+        2213
+      ],
+      "kind": "cat",
+      "length": 470
+    },
+    {
+      "child": 2217,
+      "kind": "inv",
+      "length": 470
+    },
+    {
+      "child": 2209,
+      "kind": "inv",
+      "length": 434
+    },
+    {
+      "children": [
+        2201,
+        2218,
+        2219,
+        2217,
+        2209
+      ],
+      "kind": "cat",
+      "length": 2116
+    },
+    {
+      "child": 2220,
+      "kind": "inv",
+      "length": 2116
+    },
+    {
+      "child": 2196,
+      "kind": "inv",
+      "length": 1952
+    },
+    {
+      "children": [
+        2168,
+        2221,
+        2222,
+        2220,
+        2196
+      ],
+      "kind": "cat",
+      "length": 9464
+    },
+    {
+      "children": [
+        854,
+        1129,
+        535,
+        531
+      ],
+      "kind": "cat",
+      "length": 44
+    },
+    {
+      "child": 405,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "child": 987,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        2225,
+        2226,
+        405,
+        987
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "child": 2227,
+      "kind": "inv",
+      "length": 56
+    },
+    {
+      "child": 2224,
+      "kind": "inv",
+      "length": 44
+    },
+    {
+      "children": [
+        2228,
+        2229,
+        2227,
+        2224
+      ],
+      "kind": "cat",
+      "length": 200
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 2231,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "child": 762,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        2232,
+        2233,
+        2231,
+        762
+      ],
+      "kind": "cat",
+      "length": 48
+    },
+    {
+      "children": [
+        914,
+        1306,
+        501,
+        1305,
+        500
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 2236,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        284,
+        92,
+        2237,
+        91,
+        2236
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2238,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2235,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2234,
+        2239,
+        2240,
+        2238,
+        2235
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2242,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        1937,
+        2243,
+        1367,
+        2242
+      ],
+      "kind": "cat",
+      "length": 40
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 2245,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        914,
+        2246,
+        638,
+        2245,
+        637
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        288,
+        1733,
+        264,
+        1732,
+        263
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2248,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2247,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        2244,
+        2249,
+        2250,
+        2248,
+        2247
+      ],
+      "kind": "cat",
+      "length": 392
+    },
+    {
+      "child": 2251,
+      "kind": "inv",
+      "length": 392
+    },
+    {
+      "child": 2241,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "children": [
+        2230,
+        2252,
+        2253,
+        2251,
+        2241
+      ],
+      "kind": "cat",
+      "length": 1848
+    },
+    {
+      "children": [
+        285,
+        475,
+        284,
+        473
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        510,
+        1518,
+        779,
+        1517,
+        778
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        510,
+        1876,
+        153,
+        1875,
+        150
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2257,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2256,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2255,
+        2258,
+        2259,
+        2257,
+        2256
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "children": [
+        248,
+        193,
+        247,
+        190
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 2263,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 2262,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        531,
+        2264,
+        2265,
+        2263,
+        2262
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 2268,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "child": 2267,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1047,
+        2269,
+        2270,
+        2268,
+        2267
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 2271,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 2266,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        2261,
+        2272,
+        2273,
+        2271,
+        2266
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "children": [
+        1064,
+        1065,
+        1063,
+        1062
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        124,
+        1257,
+        718,
+        1256,
+        717
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        590,
+        87,
+        2156,
+        86,
+        2155
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2277,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2276,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2275,
+        2278,
+        2279,
+        2277,
+        2276
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "child": 2280,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "child": 2274,
+      "kind": "inv",
+      "length": 408
+    },
+    {
+      "children": [
+        2260,
+        2281,
+        2282,
+        2280,
+        2274
+      ],
+      "kind": "cat",
+      "length": 2104
+    },
+    {
+      "children": [
+        474,
+        475,
+        172,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        84,
+        412,
+        193,
+        411,
+        190
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        777,
+        497,
+        153,
+        496,
+        150
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2286,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2285,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        2284,
+        2287,
+        2288,
+        2286,
+        2285
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "children": [
+        407,
+        730,
+        406,
+        727
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "children": [
+        2291,
+        797,
+        1843,
+        794,
+        1842
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 2293,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1561,
+        139,
+        2294,
+        136,
+        2293
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 2295,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 2292,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2290,
+        2296,
+        2297,
+        2295,
+        2292
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        87,
+        296,
+        86,
+        295
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        473,
+        407,
+        925,
+        406,
+        924
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        1285,
+        92,
+        2237,
+        91,
+        2236
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 2301,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 2300,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2299,
+        2302,
+        2303,
+        2301,
+        2300
+      ],
+      "kind": "cat",
+      "length": 448
+    },
+    {
+      "child": 2304,
+      "kind": "inv",
+      "length": 448
+    },
+    {
+      "child": 2298,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "children": [
+        2289,
+        2305,
+        2306,
+        2304,
+        2298
+      ],
+      "kind": "cat",
+      "length": 2208
+    },
+    {
+      "child": 2307,
+      "kind": "inv",
+      "length": 2208
+    },
+    {
+      "child": 2283,
+      "kind": "inv",
+      "length": 2104
+    },
+    {
+      "children": [
+        2254,
+        2308,
+        2309,
+        2307,
+        2283
+      ],
+      "kind": "cat",
+      "length": 10472
+    },
+    {
+      "child": 266,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        146,
+        2311,
+        145,
+        266
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        437,
+        167,
+        436,
+        164
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 2313,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 2312,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "children": [
+        2314,
+        2315,
+        2313,
+        2312
+      ],
+      "kind": "cat",
+      "length": 276
+    },
+    {
+      "children": [
+        1996,
+        1086,
+        678,
+        440
+      ],
+      "kind": "cat",
+      "length": 58
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 2318,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        914,
+        2319,
+        662,
+        2318,
+        661
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        284,
+        340,
+        364,
+        339,
+        363
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2321,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2320,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2317,
+        2322,
+        2323,
+        2321,
+        2320
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "children": [
+        373,
+        596,
+        372,
+        69
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        19,
+        412,
+        44,
+        411,
+        41
+      ],
+      "kind": "cat",
+      "length": 81
+    },
+    {
+      "children": [
+        149,
+        989,
+        877,
+        988,
+        876
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2327,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2326,
+      "kind": "inv",
+      "length": 81
+    },
+    {
+      "children": [
+        2325,
+        2328,
+        2329,
+        2327,
+        2326
+      ],
+      "kind": "cat",
+      "length": 410
+    },
+    {
+      "child": 2330,
+      "kind": "inv",
+      "length": 410
+    },
+    {
+      "child": 2324,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "children": [
+        2316,
+        2331,
+        2332,
+        2330,
+        2324
+      ],
+      "kind": "cat",
+      "length": 1956
+    },
+    {
+      "children": [
+        19,
+        743,
+        953,
+        742,
+        952
+      ],
+      "kind": "cat",
+      "length": 93
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 2335,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        288,
+        1729,
+        2336,
+        1728,
+        2335
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2337,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2334,
+      "kind": "inv",
+      "length": 93
+    },
+    {
+      "children": [
+        2338,
+        2339,
+        2337,
+        2334
+      ],
+      "kind": "cat",
+      "length": 374
+    },
+    {
+      "children": [
+        821,
+        236,
+        820,
+        31
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        1282,
+        2119,
+        2120,
+        2118,
+        2117
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2343,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        914,
+        321,
+        2344,
+        320,
+        2343
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2345,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2342,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        2341,
+        2346,
+        2347,
+        2345,
+        2342
+      ],
+      "kind": "cat",
+      "length": 402
+    },
+    {
+      "children": [
+        237,
+        187,
+        235,
+        186
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 2351,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 2350,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        201,
+        2352,
+        2353,
+        2351,
+        2350
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 2355,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        94,
+        34,
+        2356,
+        33,
+        2355
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2357,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2354,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2349,
+        2358,
+        2359,
+        2357,
+        2354
+      ],
+      "kind": "cat",
+      "length": 446
+    },
+    {
+      "child": 2360,
+      "kind": "inv",
+      "length": 446
+    },
+    {
+      "child": 2348,
+      "kind": "inv",
+      "length": 402
+    },
+    {
+      "children": [
+        2340,
+        2361,
+        2362,
+        2360,
+        2348
+      ],
+      "kind": "cat",
+      "length": 2070
+    },
+    {
+      "children": [
+        1201,
+        620,
+        294,
+        288
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2366,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 2365,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        2367,
+        2368,
+        2366,
+        2365
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        429,
+        611,
+        486,
+        610,
+        483
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2370,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2369,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        2364,
+        2371,
+        2372,
+        2370,
+        2369
+      ],
+      "kind": "cat",
+      "length": 396
+    },
+    {
+      "children": [
+        1064,
+        821,
+        1063,
+        820
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2376,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 2375,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1015,
+        2377,
+        2378,
+        2376,
+        2375
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        65,
+        348,
+        1359,
+        347,
+        1358
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2380,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2379,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2374,
+        2381,
+        2382,
+        2380,
+        2379
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "children": [
+        756,
+        1707,
+        755,
+        1706
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 2385,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        793,
+        2386,
+        775,
+        2385,
+        774
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        351,
+        308,
+        309,
+        307,
+        306
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 2388,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 2387,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2384,
+        2389,
+        2390,
+        2388,
+        2387
+      ],
+      "kind": "cat",
+      "length": 400
+    },
+    {
+      "child": 2391,
+      "kind": "inv",
+      "length": 400
+    },
+    {
+      "child": 2383,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "children": [
+        2373,
+        2392,
+        2393,
+        2391,
+        2383
+      ],
+      "kind": "cat",
+      "length": 2060
+    },
+    {
+      "child": 2394,
+      "kind": "inv",
+      "length": 2060
+    },
+    {
+      "child": 2363,
+      "kind": "inv",
+      "length": 2070
+    },
+    {
+      "children": [
+        2333,
+        2395,
+        2396,
+        2394,
+        2363
+      ],
+      "kind": "cat",
+      "length": 10216
+    },
+    {
+      "child": 2397,
+      "kind": "inv",
+      "length": 10216
+    },
+    {
+      "child": 2310,
+      "kind": "inv",
+      "length": 10472
+    },
+    {
+      "children": [
+        2223,
+        2398,
+        2399,
+        2397,
+        2310
+      ],
+      "kind": "cat",
+      "length": 50840
+    },
+    {
+      "children": [
+        852,
+        105,
+        851,
+        104
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 2402,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        800,
+        2403,
+        799,
+        2402
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 2404,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 2401,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        2405,
+        2406,
+        2404,
+        2401
+      ],
+      "kind": "cat",
+      "length": 304
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 2408,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        429,
+        2409,
+        1730,
+        2408,
+        1727
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        84,
+        248,
+        694,
+        247,
+        693
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2411,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2410,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2412,
+        2413,
+        2411,
+        2410
+      ],
+      "kind": "cat",
+      "length": 356
+    },
+    {
+      "child": 2414,
+      "kind": "inv",
+      "length": 356
+    },
+    {
+      "child": 2407,
+      "kind": "inv",
+      "length": 304
+    },
+    {
+      "children": [
+        2415,
+        2416,
+        2414,
+        2407
+      ],
+      "kind": "cat",
+      "length": 1320
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 2419,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 2418,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        2420,
+        2421,
+        2419,
+        2418
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        192,
+        852,
+        191,
+        851
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 2423,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 2422,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "children": [
+        2424,
+        2425,
+        2423,
+        2422
+      ],
+      "kind": "cat",
+      "length": 288
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 2427,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1161,
+        2428,
+        254,
+        2427
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        429,
+        413,
+        485,
+        410,
+        484
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        84,
+        248,
+        364,
+        247,
+        363
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2431,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2430,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2429,
+        2432,
+        2433,
+        2431,
+        2430
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "children": [
+        236,
+        1434,
+        31,
+        1433
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        84,
+        72,
+        106,
+        71,
+        103
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        284,
+        1562,
+        1593,
+        1561,
+        1592
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 2437,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 2436,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2435,
+        2438,
+        2439,
+        2437,
+        2436
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "child": 2440,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "child": 2434,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "children": [
+        2426,
+        2441,
+        2442,
+        2440,
+        2434
+      ],
+      "kind": "cat",
+      "length": 2000
+    },
+    {
+      "children": [
+        248,
+        340,
+        247,
+        339
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        1707,
+        193,
+        1706,
+        190
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 2445,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "child": 2444,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        2446,
+        2447,
+        2445,
+        2444
+      ],
+      "kind": "cat",
+      "length": 280
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 2449,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        2450,
+        676,
+        2449,
+        673
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2452,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        1009,
+        501,
+        2453,
+        500,
+        2452
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 2457,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 2456,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        2455,
+        2458,
+        2459,
+        2457,
+        2456
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2460,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2454,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        2451,
+        2461,
+        2462,
+        2460,
+        2454
+      ],
+      "kind": "cat",
+      "length": 392
+    },
+    {
+      "children": [
+        146,
+        237,
+        145,
+        235
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 2465,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        19,
+        848,
+        2466,
+        847,
+        2465
+      ],
+      "kind": "cat",
+      "length": 93
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 2468,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        284,
+        2469,
+        159,
+        2468,
+        156
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2470,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2467,
+      "kind": "inv",
+      "length": 93
+    },
+    {
+      "children": [
+        2464,
+        2471,
+        2472,
+        2470,
+        2467
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "child": 2473,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "child": 2463,
+      "kind": "inv",
+      "length": 392
+    },
+    {
+      "children": [
+        2448,
+        2474,
+        2475,
+        2473,
+        2463
+      ],
+      "kind": "cat",
+      "length": 1968
+    },
+    {
+      "child": 2476,
+      "kind": "inv",
+      "length": 1968
+    },
+    {
+      "child": 2443,
+      "kind": "inv",
+      "length": 2000
+    },
+    {
+      "children": [
+        2417,
+        2477,
+        2478,
+        2476,
+        2443
+      ],
+      "kind": "cat",
+      "length": 9256
+    },
+    {
+      "children": [
+        587,
+        1302,
+        586,
+        1301
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        199,
+        167,
+        198,
+        164
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 2481,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 2480,
+      "kind": "inv",
+      "length": 64
+    },
+    {
+      "children": [
+        2482,
+        2483,
+        2481,
+        2480
+      ],
+      "kind": "cat",
+      "length": 268
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 2485,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "child": 1781,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "children": [
+        2486,
+        2487,
+        2485,
+        1781
+      ],
+      "kind": "cat",
+      "length": 44
+    },
+    {
+      "children": [
+        712,
+        78,
+        79,
+        77,
+        76
+      ],
+      "kind": "cat",
+      "length": 83
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 2490,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        288,
+        2491,
+        153,
+        2490,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 2492,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 2489,
+      "kind": "inv",
+      "length": 83
+    },
+    {
+      "children": [
+        2488,
+        2493,
+        2494,
+        2492,
+        2489
+      ],
+      "kind": "cat",
+      "length": 394
+    },
+    {
+      "children": [
+        126,
+        596,
+        125,
+        69
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        172,
+        743,
+        153,
+        742,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        284,
+        694,
+        718,
+        693,
+        717
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 2498,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 2497,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2496,
+        2499,
+        2500,
+        2498,
+        2497
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "child": 2501,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "child": 2495,
+      "kind": "inv",
+      "length": 394
+    },
+    {
+      "children": [
+        2484,
+        2502,
+        2503,
+        2501,
+        2495
+      ],
+      "kind": "cat",
+      "length": 1920
+    },
+    {
+      "children": [
+        285,
+        1187,
+        284,
+        149
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        1285,
+        779,
+        364,
+        778,
+        363
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        284,
+        690,
+        1913,
+        689,
+        1912
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 2507,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 2506,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2505,
+        2508,
+        2509,
+        2507,
+        2506
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        486,
+        746,
+        483,
+        745
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "children": [
+        94,
+        2052,
+        1843,
+        2051,
+        1842
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "children": [
+        2513,
+        775,
+        554,
+        774,
+        553
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2514,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2512,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        2511,
+        2515,
+        2516,
+        2514,
+        2512
+      ],
+      "kind": "cat",
+      "length": 410
+    },
+    {
+      "children": [
+        730,
+        412,
+        727,
+        411
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "children": [
+        211,
+        353,
+        153,
+        352,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        1327,
+        1078,
+        1359,
+        1077,
+        1358
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2520,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2519,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2518,
+        2521,
+        2522,
+        2520,
+        2519
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "child": 2523,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "child": 2517,
+      "kind": "inv",
+      "length": 410
+    },
+    {
+      "children": [
+        2510,
+        2524,
+        2525,
+        2523,
+        2517
+      ],
+      "kind": "cat",
+      "length": 2104
+    },
+    {
+      "children": [
+        495,
+        475,
+        494,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 2528,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "child": 688,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        84,
+        2529,
+        2530,
+        2528,
+        688
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "children": [
+        429,
+        746,
+        43,
+        745,
+        42
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 2532,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 2531,
+      "kind": "inv",
+      "length": 66
+    },
+    {
+      "children": [
+        2527,
+        2533,
+        2534,
+        2532,
+        2531
+      ],
+      "kind": "cat",
+      "length": 376
+    },
+    {
+      "children": [
+        66,
+        437,
+        65,
+        436
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        125,
+        497,
+        153,
+        496,
+        150
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 2538,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        586,
+        2539,
+        1873,
+        2538,
+        1870
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2540,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2537,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        2536,
+        2541,
+        2542,
+        2540,
+        2537
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 2544,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        2545,
+        1644,
+        2544,
+        1641
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        1403,
+        88,
+        364,
+        85,
+        363
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        563,
+        407,
+        78,
+        406,
+        77
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 2548,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 2547,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        2546,
+        2549,
+        2550,
+        2548,
+        2547
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "child": 2551,
+      "kind": "inv",
+      "length": 438
+    },
+    {
+      "child": 2543,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "children": [
+        2535,
+        2552,
+        2553,
+        2551,
+        2543
+      ],
+      "kind": "cat",
+      "length": 2100
+    },
+    {
+      "child": 2554,
+      "kind": "inv",
+      "length": 2100
+    },
+    {
+      "child": 2526,
+      "kind": "inv",
+      "length": 2104
+    },
+    {
+      "children": [
+        2504,
+        2555,
+        2556,
+        2554,
+        2526
+      ],
+      "kind": "cat",
+      "length": 10328
+    },
+    {
+      "children": [
+        66,
+        199,
+        65,
+        198
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        66,
+        904,
+        65,
+        903
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "child": 2559,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "child": 2558,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        2560,
+        2561,
+        2559,
+        2558
+      ],
+      "kind": "cat",
+      "length": 256
+    },
+    {
+      "children": [
+        1567,
+        1135,
+        1437,
+        1134
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        473,
+        1064,
+        1065,
+        1063,
+        1062
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        129,
+        1064,
+        821,
+        1063,
+        820
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2565,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2564,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        2563,
+        2566,
+        2567,
+        2565,
+        2564
+      ],
+      "kind": "cat",
+      "length": 414
+    },
+    {
+      "children": [
+        1761,
+        1762,
+        1760,
+        1759
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        473,
+        105,
+        193,
+        104,
+        190
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        372,
+        105,
+        206,
+        104,
+        203
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2571,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2570,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2569,
+        2572,
+        2573,
+        2571,
+        2570
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "child": 2574,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "child": 2568,
+      "kind": "inv",
+      "length": 414
+    },
+    {
+      "children": [
+        2562,
+        2575,
+        2576,
+        2574,
+        2568
+      ],
+      "kind": "cat",
+      "length": 1964
+    },
+    {
+      "children": [
+        172,
+        743,
+        153,
+        742,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        284,
+        694,
+        718,
+        693,
+        717
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 2579,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 2578,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2580,
+        2581,
+        2579,
+        2578
+      ],
+      "kind": "cat",
+      "length": 368
+    },
+    {
+      "children": [
+        105,
+        264,
+        104,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 2584,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        688,
+        1447,
+        2585,
+        1333,
+        2584
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        2528,
+        412,
+        413,
+        411,
+        410
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 2587,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 2586,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2583,
+        2588,
+        2589,
+        2587,
+        2586
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "children": [
+        662,
+        264,
+        661,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        712,
+        187,
+        730,
+        186,
+        727
+      ],
+      "kind": "cat",
+      "length": 85
+    },
+    {
+      "children": [
+        713,
+        407,
+        452,
+        406,
+        451
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 2593,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 2592,
+      "kind": "inv",
+      "length": 85
+    },
+    {
+      "children": [
+        2591,
+        2594,
+        2595,
+        2593,
+        2592
+      ],
+      "kind": "cat",
+      "length": 446
+    },
+    {
+      "child": 2596,
+      "kind": "inv",
+      "length": 446
+    },
+    {
+      "child": 2590,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "children": [
+        2582,
+        2597,
+        2598,
+        2596,
+        2590
+      ],
+      "kind": "cat",
+      "length": 2092
+    },
+    {
+      "children": [
+        620,
+        547,
+        288,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        248,
+        296,
+        247,
+        295
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 2602,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        2603,
+        852,
+        2602,
+        851
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 2604,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 2601,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        2600,
+        2605,
+        2606,
+        2604,
+        2601
+      ],
+      "kind": "cat",
+      "length": 372
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 2608,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        2609,
+        167,
+        2608,
+        164
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        752,
+        340,
+        258,
+        339,
+        255
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        754,
+        1169,
+        2459,
+        1168,
+        2456
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2612,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2611,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2610,
+        2613,
+        2614,
+        2612,
+        2611
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "children": [
+        1609,
+        2027,
+        1053,
+        393
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "children": [
+        1481,
+        796,
+        775,
+        795,
+        774
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2618,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        1232,
+        2619,
+        159,
+        2618,
+        156
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2620,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2617,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        2616,
+        2621,
+        2622,
+        2620,
+        2617
+      ],
+      "kind": "cat",
+      "length": 392
+    },
+    {
+      "child": 2623,
+      "kind": "inv",
+      "length": 392
+    },
+    {
+      "child": 2615,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "children": [
+        2607,
+        2624,
+        2625,
+        2623,
+        2615
+      ],
+      "kind": "cat",
+      "length": 2040
+    },
+    {
+      "child": 2626,
+      "kind": "inv",
+      "length": 2040
+    },
+    {
+      "child": 2599,
+      "kind": "inv",
+      "length": 2092
+    },
+    {
+      "children": [
+        2577,
+        2627,
+        2628,
+        2626,
+        2599
+      ],
+      "kind": "cat",
+      "length": 10228
+    },
+    {
+      "child": 2629,
+      "kind": "inv",
+      "length": 10228
+    },
+    {
+      "child": 2557,
+      "kind": "inv",
+      "length": 10328
+    },
+    {
+      "children": [
+        2479,
+        2630,
+        2631,
+        2629,
+        2557
+      ],
+      "kind": "cat",
+      "length": 50368
+    },
+    {
+      "child": 2632,
+      "kind": "inv",
+      "length": 50368
+    },
+    {
+      "child": 2400,
+      "kind": "inv",
+      "length": 50840
+    },
+    {
+      "children": [
+        2153,
+        2633,
+        2634,
+        2632,
+        2400
+      ],
+      "kind": "cat",
+      "length": 252632
+    },
+    {
+      "child": 2635,
+      "kind": "inv",
+      "length": 252632
+    },
+    {
+      "child": 1934,
+      "kind": "inv",
+      "length": 252952
+    },
+    {
+      "children": [
+        1110,
+        2636,
+        2637,
+        2635,
+        1934
+      ],
+      "kind": "cat",
+      "length": 1270627
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "children": [
+        2639,
+        376,
+        604,
+        375,
+        601
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        1781,
+        2603,
+        206,
+        2602,
+        203
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        421,
+        55,
+        623,
+        54,
+        622
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2642,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2641,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        2640,
+        2643,
+        2644,
+        2642,
+        2641
+      ],
+      "kind": "cat",
+      "length": 458
+    },
+    {
+      "children": [
+        84,
+        291,
+        626,
+        290,
+        625
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "children": [
+        2647,
+        395,
+        317,
+        394,
+        314
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "children": [
+        2649,
+        485,
+        551,
+        484,
+        548
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 2650,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 2648,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        2646,
+        2651,
+        2652,
+        2650,
+        2648
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2654,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        510,
+        2655,
+        2459,
+        2654,
+        2456
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        1217,
+        187,
+        969,
+        186,
+        968
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        1219,
+        248,
+        730,
+        247,
+        727
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 2658,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 2657,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2656,
+        2659,
+        2660,
+        2658,
+        2657
+      ],
+      "kind": "cat",
+      "length": 434
+    },
+    {
+      "child": 2661,
+      "kind": "inv",
+      "length": 434
+    },
+    {
+      "child": 2653,
+      "kind": "inv",
+      "length": 404
+    },
+    {
+      "children": [
+        2645,
+        2662,
+        2663,
+        2661,
+        2653
+      ],
+      "kind": "cat",
+      "length": 2134
+    },
+    {
+      "children": [
+        66,
+        474,
+        65,
+        172
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 2666,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        473,
+        2667,
+        1730,
+        2666,
+        1727
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        288,
+        1893,
+        1894,
+        1892,
+        1891
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2669,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2668,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2665,
+        2670,
+        2671,
+        2669,
+        2668
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "children": [
+        248,
+        340,
+        247,
+        339
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        164,
+        730,
+        1065,
+        727,
+        1062
+      ],
+      "kind": "cat",
+      "length": 71
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 2675,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        421,
+        2676,
+        2459,
+        2675,
+        2456
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2677,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2674,
+      "kind": "inv",
+      "length": 71
+    },
+    {
+      "children": [
+        2673,
+        2678,
+        2679,
+        2677,
+        2674
+      ],
+      "kind": "cat",
+      "length": 390
+    },
+    {
+      "children": [
+        611,
+        193,
+        610,
+        190
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        644,
+        72,
+        106,
+        71,
+        103
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        65,
+        1785,
+        88,
+        1784,
+        85
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2683,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2682,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2681,
+        2684,
+        2685,
+        2683,
+        2682
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "child": 2686,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "child": 2680,
+      "kind": "inv",
+      "length": 390
+    },
+    {
+      "children": [
+        2672,
+        2687,
+        2688,
+        2686,
+        2680
+      ],
+      "kind": "cat",
+      "length": 2104
+    },
+    {
+      "children": [
+        232,
+        596,
+        40,
+        69
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        473,
+        485,
+        529,
+        484,
+        528
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2692,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        284,
+        2693,
+        237,
+        2692,
+        235
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2694,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2691,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2690,
+        2695,
+        2696,
+        2694,
+        2691
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        248,
+        662,
+        247,
+        661
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        2647,
+        764,
+        364,
+        763,
+        363
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        65,
+        348,
+        1913,
+        347,
+        1912
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2700,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2699,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2698,
+        2701,
+        2702,
+        2700,
+        2699
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "children": [
+        386,
+        193,
+        385,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "children": [
+        2705,
+        1677,
+        1064,
+        1676,
+        1063
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "children": [
+        2707,
+        675,
+        676,
+        674,
+        673
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 2708,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 2706,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2704,
+        2709,
+        2710,
+        2708,
+        2706
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "child": 2711,
+      "kind": "inv",
+      "length": 404
+    },
+    {
+      "child": 2703,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "children": [
+        2697,
+        2712,
+        2713,
+        2711,
+        2703
+      ],
+      "kind": "cat",
+      "length": 2144
+    },
+    {
+      "child": 2714,
+      "kind": "inv",
+      "length": 2144
+    },
+    {
+      "child": 2689,
+      "kind": "inv",
+      "length": 2104
+    },
+    {
+      "children": [
+        2664,
+        2715,
+        2716,
+        2714,
+        2689
+      ],
+      "kind": "cat",
+      "length": 10630
+    },
+    {
+      "children": [
+        485,
+        2458,
+        484,
+        2457
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        340,
+        264,
+        339,
+        263
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 2719,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 2718,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        2720,
+        2721,
+        2719,
+        2718
+      ],
+      "kind": "cat",
+      "length": 304
+    },
+    {
+      "children": [
+        146,
+        237,
+        145,
+        235
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        473,
+        72,
+        78,
+        71,
+        77
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "children": [
+        40,
+        395,
+        1020,
+        394,
+        1019
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 2725,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 2724,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        2723,
+        2726,
+        2727,
+        2725,
+        2724
+      ],
+      "kind": "cat",
+      "length": 398
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 2729,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        2730,
+        1644,
+        2729,
+        1641
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        211,
+        650,
+        431,
+        649,
+        430
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "children": [
+        2733,
+        746,
+        43,
+        745,
+        42
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 2734,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 2732,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2731,
+        2735,
+        2736,
+        2734,
+        2732
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "child": 2737,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "child": 2728,
+      "kind": "inv",
+      "length": 398
+    },
+    {
+      "children": [
+        2722,
+        2738,
+        2739,
+        2737,
+        2728
+      ],
+      "kind": "cat",
+      "length": 1932
+    },
+    {
+      "children": [
+        285,
+        475,
+        284,
+        473
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        84,
+        29,
+        1684,
+        26,
+        1683
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        155,
+        561,
+        1078,
+        560,
+        1077
+      ],
+      "kind": "cat",
+      "length": 100
+    },
+    {
+      "child": 2743,
+      "kind": "inv",
+      "length": 100
+    },
+    {
+      "child": 2742,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2741,
+        2744,
+        2745,
+        2743,
+        2742
+      ],
+      "kind": "cat",
+      "length": 456
+    },
+    {
+      "children": [
+        734,
+        193,
+        733,
+        190
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        1433,
+        43,
+        718,
+        42,
+        717
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        455,
+        718,
+        734,
+        717,
+        733
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2749,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2748,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        2747,
+        2750,
+        2751,
+        2749,
+        2748
+      ],
+      "kind": "cat",
+      "length": 434
+    },
+    {
+      "children": [
+        746,
+        694,
+        745,
+        693
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 2754,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        1357,
+        756,
+        2755,
+        755,
+        2754
+      ],
+      "kind": "cat",
+      "length": 87
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 2758,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        2757,
+        501,
+        2759,
+        500,
+        2758
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 2760,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 2756,
+      "kind": "inv",
+      "length": 87
+    },
+    {
+      "children": [
+        2753,
+        2761,
+        2762,
+        2760,
+        2756
+      ],
+      "kind": "cat",
+      "length": 412
+    },
+    {
+      "child": 2763,
+      "kind": "inv",
+      "length": 412
+    },
+    {
+      "child": 2752,
+      "kind": "inv",
+      "length": 434
+    },
+    {
+      "children": [
+        2746,
+        2764,
+        2765,
+        2763,
+        2752
+      ],
+      "kind": "cat",
+      "length": 2148
+    },
+    {
+      "children": [
+        1187,
+        481,
+        149,
+        155
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 10,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 2768,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        473,
+        2769,
+        2770,
+        10,
+        2768
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        149,
+        1310,
+        153,
+        1309,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 2772,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 2771,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2767,
+        2773,
+        2774,
+        2772,
+        2771
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "children": [
+        426,
+        1427,
+        425,
+        1426
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 2778,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 2777,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        211,
+        2779,
+        2780,
+        2778,
+        2777
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 2783,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 2782,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        65,
+        2784,
+        2785,
+        2783,
+        2782
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2786,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2781,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2776,
+        2787,
+        2788,
+        2786,
+        2781
+      ],
+      "kind": "cat",
+      "length": 460
+    },
+    {
+      "children": [
+        340,
+        193,
+        339,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 2791,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        421,
+        550,
+        2792,
+        549,
+        2791
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 2794,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        405,
+        2795,
+        694,
+        2794,
+        693
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 2796,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 2793,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        2790,
+        2797,
+        2798,
+        2796,
+        2793
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "child": 2799,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "child": 2789,
+      "kind": "inv",
+      "length": 460
+    },
+    {
+      "children": [
+        2775,
+        2800,
+        2801,
+        2799,
+        2789
+      ],
+      "kind": "cat",
+      "length": 2200
+    },
+    {
+      "child": 2802,
+      "kind": "inv",
+      "length": 2200
+    },
+    {
+      "child": 2766,
+      "kind": "inv",
+      "length": 2148
+    },
+    {
+      "children": [
+        2740,
+        2803,
+        2804,
+        2802,
+        2766
+      ],
+      "kind": "cat",
+      "length": 10628
+    },
+    {
+      "children": [
+        248,
+        192,
+        247,
+        191
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        1733,
+        264,
+        1732,
+        263
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 2807,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 2806,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "children": [
+        2808,
+        2809,
+        2807,
+        2806
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "child": 1047,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "children": [
+        2811,
+        1129,
+        1047,
+        531
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 2814,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 2813,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        69,
+        2815,
+        2816,
+        2814,
+        2813
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "children": [
+        2818,
+        497,
+        153,
+        496,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 2819,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 2817,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2812,
+        2820,
+        2821,
+        2819,
+        2817
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "children": [
+        66,
+        1623,
+        65,
+        1622
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 2824,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        69,
+        2825,
+        1331,
+        2824,
+        1328
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        135,
+        599,
+        159,
+        598,
+        156
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2827,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2826,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2823,
+        2828,
+        2829,
+        2827,
+        2826
+      ],
+      "kind": "cat",
+      "length": 448
+    },
+    {
+      "child": 2830,
+      "kind": "inv",
+      "length": 448
+    },
+    {
+      "child": 2822,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "children": [
+        2810,
+        2831,
+        2832,
+        2830,
+        2822
+      ],
+      "kind": "cat",
+      "length": 2032
+    },
+    {
+      "children": [
+        285,
+        474,
+        284,
+        172
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        84,
+        670,
+        2459,
+        667,
+        2456
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        155,
+        248,
+        2156,
+        247,
+        2155
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2836,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2835,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2834,
+        2837,
+        2838,
+        2836,
+        2835
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "children": [
+        248,
+        192,
+        247,
+        191
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 2842,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        2841,
+        2843,
+        533,
+        2842,
+        532
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        1301,
+        340,
+        852,
+        339,
+        851
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2845,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2844,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        2840,
+        2846,
+        2847,
+        2845,
+        2844
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "children": [
+        529,
+        193,
+        528,
+        190
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        2231,
+        174,
+        1677,
+        173,
+        1676
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        65,
+        743,
+        1820,
+        742,
+        1817
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2851,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2850,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        2849,
+        2852,
+        2853,
+        2851,
+        2850
+      ],
+      "kind": "cat",
+      "length": 426
+    },
+    {
+      "child": 2854,
+      "kind": "inv",
+      "length": 426
+    },
+    {
+      "child": 2848,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "children": [
+        2839,
+        2855,
+        2856,
+        2854,
+        2848
+      ],
+      "kind": "cat",
+      "length": 2168
+    },
+    {
+      "children": [
+        285,
+        475,
+        284,
+        473
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 2859,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        914,
+        2860,
+        489,
+        2859,
+        488
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        284,
+        1533,
+        167,
+        351,
+        164
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 2862,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 2861,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        2858,
+        2863,
+        2864,
+        2862,
+        2861
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "children": [
+        412,
+        264,
+        411,
+        263
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 2867,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        25,
+        2868,
+        153,
+        2867,
+        150
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 2871,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 2870,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        1592,
+        2872,
+        2873,
+        2871,
+        2870
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 2874,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 2869,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2866,
+        2875,
+        2876,
+        2874,
+        2869
+      ],
+      "kind": "cat",
+      "length": 426
+    },
+    {
+      "children": [
+        1064,
+        821,
+        1063,
+        820
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        19,
+        529,
+        264,
+        528,
+        263
+      ],
+      "kind": "cat",
+      "length": 99
+    },
+    {
+      "children": [
+        288,
+        1904,
+        852,
+        1901,
+        851
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 2880,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 2879,
+      "kind": "inv",
+      "length": 99
+    },
+    {
+      "children": [
+        2878,
+        2881,
+        2882,
+        2880,
+        2879
+      ],
+      "kind": "cat",
+      "length": 458
+    },
+    {
+      "child": 2883,
+      "kind": "inv",
+      "length": 458
+    },
+    {
+      "child": 2877,
+      "kind": "inv",
+      "length": 426
+    },
+    {
+      "children": [
+        2865,
+        2884,
+        2885,
+        2883,
+        2877
+      ],
+      "kind": "cat",
+      "length": 2184
+    },
+    {
+      "child": 2886,
+      "kind": "inv",
+      "length": 2184
+    },
+    {
+      "child": 2857,
+      "kind": "inv",
+      "length": 2168
+    },
+    {
+      "children": [
+        2833,
+        2887,
+        2888,
+        2886,
+        2857
+      ],
+      "kind": "cat",
+      "length": 10736
+    },
+    {
+      "child": 2889,
+      "kind": "inv",
+      "length": 10736
+    },
+    {
+      "child": 2805,
+      "kind": "inv",
+      "length": 10628
+    },
+    {
+      "children": [
+        2717,
+        2890,
+        2891,
+        2889,
+        2805
+      ],
+      "kind": "cat",
+      "length": 53358
+    },
+    {
+      "children": [
+        285,
+        286,
+        284,
+        283
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        474,
+        475,
+        172,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 2894,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 2893,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        2895,
+        2896,
+        2894,
+        2893
+      ],
+      "kind": "cat",
+      "length": 288
+    },
+    {
+      "children": [
+        480,
+        429
+      ],
+      "kind": "cat",
+      "length": 36
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 2899,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        2900,
+        316,
+        2899,
+        315
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        429,
+        72,
+        291,
+        71,
+        290
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2902,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2901,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        2898,
+        2903,
+        2904,
+        2902,
+        2901
+      ],
+      "kind": "cat",
+      "length": 372
+    },
+    {
+      "children": [
+        480,
+        511,
+        429,
+        510
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        84,
+        611,
+        513,
+        610,
+        512
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        877,
+        746,
+        876,
+        745
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 2908,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 2907,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2906,
+        2909,
+        2910,
+        2908,
+        2907
+      ],
+      "kind": "cat",
+      "length": 392
+    },
+    {
+      "child": 2911,
+      "kind": "inv",
+      "length": 392
+    },
+    {
+      "child": 2905,
+      "kind": "inv",
+      "length": 372
+    },
+    {
+      "children": [
+        2897,
+        2912,
+        2913,
+        2911,
+        2905
+      ],
+      "kind": "cat",
+      "length": 1816
+    },
+    {
+      "children": [
+        480,
+        511,
+        429,
+        510
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        105,
+        1020,
+        104,
+        1019
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        2655,
+        2459,
+        2654,
+        2456
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 2917,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 2916,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        2915,
+        2918,
+        2919,
+        2917,
+        2916
+      ],
+      "kind": "cat",
+      "length": 368
+    },
+    {
+      "children": [
+        485,
+        1623,
+        484,
+        1622
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        201,
+        718,
+        989,
+        717,
+        988
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        94,
+        690,
+        1331,
+        689,
+        1328
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2923,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2922,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2921,
+        2924,
+        2925,
+        2923,
+        2922
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "children": [
+        192,
+        50,
+        191,
+        47
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        155,
+        72,
+        97,
+        71,
+        96
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 2929,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        288,
+        2930,
+        1603,
+        2929,
+        1602
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 2931,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 2928,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2927,
+        2932,
+        2933,
+        2931,
+        2928
+      ],
+      "kind": "cat",
+      "length": 464
+    },
+    {
+      "child": 2934,
+      "kind": "inv",
+      "length": 464
+    },
+    {
+      "child": 2926,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "children": [
+        2920,
+        2935,
+        2936,
+        2934,
+        2926
+      ],
+      "kind": "cat",
+      "length": 2168
+    },
+    {
+      "children": [
+        84,
+        248,
+        1257,
+        247,
+        1256
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        554,
+        426,
+        553,
+        425
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 2939,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 2938,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        2940,
+        2941,
+        2939,
+        2938
+      ],
+      "kind": "cat",
+      "length": 328
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 2943,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "child": 2707,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        2944,
+        2945,
+        2943,
+        2707
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "children": [
+        1726,
+        152,
+        852,
+        151,
+        851
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        1481,
+        1730,
+        193,
+        1727,
+        190
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2948,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2947,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2946,
+        2949,
+        2950,
+        2948,
+        2947
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "children": [
+        1464,
+        2609,
+        1219,
+        2608
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        563,
+        34,
+        35,
+        33,
+        32
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        1634,
+        764,
+        364,
+        763,
+        363
+      ],
+      "kind": "cat",
+      "length": 89
+    },
+    {
+      "child": 2954,
+      "kind": "inv",
+      "length": 89
+    },
+    {
+      "child": 2953,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        2952,
+        2955,
+        2956,
+        2954,
+        2953
+      ],
+      "kind": "cat",
+      "length": 446
+    },
+    {
+      "child": 2957,
+      "kind": "inv",
+      "length": 446
+    },
+    {
+      "child": 2951,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "children": [
+        2942,
+        2958,
+        2959,
+        2957,
+        2951
+      ],
+      "kind": "cat",
+      "length": 2052
+    },
+    {
+      "child": 2960,
+      "kind": "inv",
+      "length": 2052
+    },
+    {
+      "child": 2937,
+      "kind": "inv",
+      "length": 2168
+    },
+    {
+      "children": [
+        2914,
+        2961,
+        2962,
+        2960,
+        2937
+      ],
+      "kind": "cat",
+      "length": 10256
+    },
+    {
+      "children": [
+        66,
+        199,
+        65,
+        198
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        199,
+        167,
+        198,
+        164
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 2965,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 2964,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        2966,
+        2967,
+        2965,
+        2964
+      ],
+      "kind": "cat",
+      "length": 276
+    },
+    {
+      "children": [
+        470,
+        1187,
+        378,
+        149
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        149,
+        650,
+        431,
+        649,
+        430
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 2972,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 2971,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        284,
+        2973,
+        2974,
+        2972,
+        2971
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 2975,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 2970,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2969,
+        2976,
+        2977,
+        2975,
+        2970
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "children": [
+        474,
+        596,
+        172,
+        69
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        494,
+        316,
+        309,
+        315,
+        306
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        40,
+        2825,
+        954,
+        2824,
+        951
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 2981,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 2980,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        2979,
+        2982,
+        2983,
+        2981,
+        2980
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "child": 2984,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "child": 2978,
+      "kind": "inv",
+      "length": 428
+    },
+    {
+      "children": [
+        2968,
+        2985,
+        2986,
+        2984,
+        2978
+      ],
+      "kind": "cat",
+      "length": 2012
+    },
+    {
+      "children": [
+        620,
+        1039,
+        288,
+        914
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        84,
+        1306,
+        1729,
+        1305,
+        1728
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        429,
+        248,
+        694,
+        247,
+        693
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 2990,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 2989,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        2988,
+        2991,
+        2992,
+        2990,
+        2989
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "children": [
+        485,
+        264,
+        484,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        75,
+        105,
+        264,
+        104,
+        263
+      ],
+      "kind": "cat",
+      "length": 100
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 2996,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        1143,
+        72,
+        2997,
+        71,
+        2996
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 2998,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 2995,
+      "kind": "inv",
+      "length": 100
+    },
+    {
+      "children": [
+        2994,
+        2999,
+        3000,
+        2998,
+        2995
+      ],
+      "kind": "cat",
+      "length": 464
+    },
+    {
+      "children": [
+        192,
+        212,
+        191,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        211,
+        87,
+        193,
+        86,
+        190
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        1015,
+        2469,
+        153,
+        2468,
+        150
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 3004,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 3003,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3002,
+        3005,
+        3006,
+        3004,
+        3003
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "child": 3007,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "child": 3001,
+      "kind": "inv",
+      "length": 464
+    },
+    {
+      "children": [
+        2993,
+        3008,
+        3009,
+        3007,
+        3001
+      ],
+      "kind": "cat",
+      "length": 2240
+    },
+    {
+      "children": [
+        373,
+        475,
+        372,
+        473
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        84,
+        44,
+        989,
+        41,
+        988
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        155,
+        841,
+        1775,
+        840,
+        1774
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 3013,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 3012,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3011,
+        3014,
+        3015,
+        3013,
+        3012
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "children": [
+        187,
+        192,
+        186,
+        191
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        1067,
+        538,
+        539,
+        537,
+        536
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        1437,
+        395,
+        106,
+        394,
+        103
+      ],
+      "kind": "cat",
+      "length": 79
+    },
+    {
+      "child": 3019,
+      "kind": "inv",
+      "length": 79
+    },
+    {
+      "child": 3018,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        3017,
+        3020,
+        3021,
+        3019,
+        3018
+      ],
+      "kind": "cat",
+      "length": 390
+    },
+    {
+      "children": [
+        248,
+        486,
+        247,
+        483
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "children": [
+        3024,
+        241,
+        1674,
+        240,
+        6
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 3026,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        440,
+        743,
+        3027,
+        742,
+        3026
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 3028,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 3025,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        3023,
+        3029,
+        3030,
+        3028,
+        3025
+      ],
+      "kind": "cat",
+      "length": 410
+    },
+    {
+      "child": 3031,
+      "kind": "inv",
+      "length": 410
+    },
+    {
+      "child": 3022,
+      "kind": "inv",
+      "length": 390
+    },
+    {
+      "children": [
+        3016,
+        3032,
+        3033,
+        3031,
+        3022
+      ],
+      "kind": "cat",
+      "length": 2036
+    },
+    {
+      "child": 3034,
+      "kind": "inv",
+      "length": 2036
+    },
+    {
+      "child": 3010,
+      "kind": "inv",
+      "length": 2240
+    },
+    {
+      "children": [
+        2987,
+        3035,
+        3036,
+        3034,
+        3010
+      ],
+      "kind": "cat",
+      "length": 10564
+    },
+    {
+      "children": [
+        66,
+        199,
+        65,
+        198
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        669,
+        1691,
+        668,
+        1690
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "child": 3039,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "child": 3038,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        3040,
+        3041,
+        3039,
+        3038
+      ],
+      "kind": "cat",
+      "length": 256
+    },
+    {
+      "children": [
+        1567,
+        1434,
+        1437,
+        1433
+      ],
+      "kind": "cat",
+      "length": 62
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 3044,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        777,
+        943,
+        3045,
+        942,
+        3044
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        378,
+        248,
+        264,
+        247,
+        263
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3047,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3046,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        3043,
+        3048,
+        3049,
+        3047,
+        3046
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "children": [
+        1161,
+        707,
+        254,
+        706
+      ],
+      "kind": "cat",
+      "length": 40
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 3052,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        712,
+        2176,
+        3053,
+        2175,
+        3052
+      ],
+      "kind": "cat",
+      "length": 87
+    },
+    {
+      "children": [
+        288,
+        97,
+        206,
+        96,
+        203
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3055,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3054,
+      "kind": "inv",
+      "length": 87
+    },
+    {
+      "children": [
+        3051,
+        3056,
+        3057,
+        3055,
+        3054
+      ],
+      "kind": "cat",
+      "length": 394
+    },
+    {
+      "child": 3058,
+      "kind": "inv",
+      "length": 394
+    },
+    {
+      "child": 3050,
+      "kind": "inv",
+      "length": 438
+    },
+    {
+      "children": [
+        3042,
+        3059,
+        3060,
+        3058,
+        3050
+      ],
+      "kind": "cat",
+      "length": 1920
+    },
+    {
+      "children": [
+        285,
+        1799,
+        284,
+        777
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        84,
+        87,
+        43,
+        86,
+        42
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        92,
+        44,
+        91,
+        41
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 3064,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 3063,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        3062,
+        3065,
+        3066,
+        3064,
+        3063
+      ],
+      "kind": "cat",
+      "length": 412
+    },
+    {
+      "children": [
+        248,
+        192,
+        247,
+        191
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        2231,
+        848,
+        775,
+        847,
+        774
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 3070,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        351,
+        3071,
+        1604,
+        3070,
+        1601
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 3072,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 3069,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        3068,
+        3073,
+        3074,
+        3072,
+        3069
+      ],
+      "kind": "cat",
+      "length": 410
+    },
+    {
+      "children": [
+        192,
+        212,
+        191,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        164,
+        28,
+        2459,
+        27,
+        2456
+      ],
+      "kind": "cat",
+      "length": 97
+    },
+    {
+      "children": [
+        1745,
+        1746,
+        127,
+        1745,
+        124
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3078,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3077,
+      "kind": "inv",
+      "length": 97
+    },
+    {
+      "children": [
+        3076,
+        3079,
+        3080,
+        3078,
+        3077
+      ],
+      "kind": "cat",
+      "length": 450
+    },
+    {
+      "child": 3081,
+      "kind": "inv",
+      "length": 450
+    },
+    {
+      "child": 3075,
+      "kind": "inv",
+      "length": 410
+    },
+    {
+      "children": [
+        3067,
+        3082,
+        3083,
+        3081,
+        3075
+      ],
+      "kind": "cat",
+      "length": 2132
+    },
+    {
+      "children": [
+        84,
+        611,
+        264,
+        610,
+        263
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 3087,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 3086,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        3088,
+        3089,
+        3087,
+        3086
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 3090,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 3085,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3091,
+        3092,
+        3090,
+        3085
+      ],
+      "kind": "cat",
+      "length": 336
+    },
+    {
+      "children": [
+        248,
+        662,
+        247,
+        661
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        1516,
+        110,
+        98,
+        109,
+        95
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        145,
+        1081,
+        153,
+        1080,
+        150
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 3096,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 3095,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3094,
+        3097,
+        3098,
+        3096,
+        3095
+      ],
+      "kind": "cat",
+      "length": 450
+    },
+    {
+      "children": [
+        611,
+        264,
+        610,
+        263
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 3101,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        324,
+        3102,
+        153,
+        3101,
+        150
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        65,
+        248,
+        953,
+        247,
+        952
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3104,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3103,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        3100,
+        3105,
+        3106,
+        3104,
+        3103
+      ],
+      "kind": "cat",
+      "length": 450
+    },
+    {
+      "child": 3107,
+      "kind": "inv",
+      "length": 450
+    },
+    {
+      "child": 3099,
+      "kind": "inv",
+      "length": 450
+    },
+    {
+      "children": [
+        3093,
+        3108,
+        3109,
+        3107,
+        3099
+      ],
+      "kind": "cat",
+      "length": 2136
+    },
+    {
+      "child": 3110,
+      "kind": "inv",
+      "length": 2136
+    },
+    {
+      "child": 3084,
+      "kind": "inv",
+      "length": 2132
+    },
+    {
+      "children": [
+        3061,
+        3111,
+        3112,
+        3110,
+        3084
+      ],
+      "kind": "cat",
+      "length": 10456
+    },
+    {
+      "child": 3113,
+      "kind": "inv",
+      "length": 10456
+    },
+    {
+      "child": 3037,
+      "kind": "inv",
+      "length": 10564
+    },
+    {
+      "children": [
+        2963,
+        3114,
+        3115,
+        3113,
+        3037
+      ],
+      "kind": "cat",
+      "length": 52296
+    },
+    {
+      "children": [
+        620,
+        373,
+        288,
+        372
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        471,
+        475,
+        469,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 3118,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 3117,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        3119,
+        3120,
+        3118,
+        3117
+      ],
+      "kind": "cat",
+      "length": 280
+    },
+    {
+      "children": [
+        1187,
+        547,
+        149,
+        84
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        429,
+        2421,
+        258,
+        2418,
+        255
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 3124,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        155,
+        3125,
+        954,
+        3124,
+        951
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3126,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3123,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3122,
+        3127,
+        3128,
+        3126,
+        3123
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "children": [
+        480,
+        1187,
+        429,
+        149
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        84,
+        611,
+        694,
+        610,
+        693
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 3132,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        3133,
+        1868,
+        3132,
+        1865
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 3134,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 3131,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3130,
+        3135,
+        3136,
+        3134,
+        3131
+      ],
+      "kind": "cat",
+      "length": 388
+    },
+    {
+      "child": 3137,
+      "kind": "inv",
+      "length": 388
+    },
+    {
+      "child": 3129,
+      "kind": "inv",
+      "length": 428
+    },
+    {
+      "children": [
+        3121,
+        3138,
+        3139,
+        3137,
+        3129
+      ],
+      "kind": "cat",
+      "length": 1912
+    },
+    {
+      "children": [
+        989,
+        296,
+        988,
+        295
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        2795,
+        1065,
+        2794,
+        1062
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "child": 3142,
+      "kind": "inv",
+      "length": 66
+    },
+    {
+      "child": 3141,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        3143,
+        3144,
+        3142,
+        3141
+      ],
+      "kind": "cat",
+      "length": 276
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 3146,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        3147,
+        2428,
+        3146,
+        2427
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        1009,
+        2156,
+        1674,
+        2155,
+        6
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        585,
+        730,
+        1677,
+        727,
+        1676
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 3150,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 3149,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        3148,
+        3151,
+        3152,
+        3150,
+        3149
+      ],
+      "kind": "cat",
+      "length": 388
+    },
+    {
+      "children": [
+        236,
+        237,
+        31,
+        235
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 3155,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        211,
+        743,
+        3156,
+        742,
+        3155
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "children": [
+        3158,
+        105,
+        364,
+        104,
+        363
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3159,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3157,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        3154,
+        3160,
+        3161,
+        3159,
+        3157
+      ],
+      "kind": "cat",
+      "length": 446
+    },
+    {
+      "child": 3162,
+      "kind": "inv",
+      "length": 446
+    },
+    {
+      "child": 3153,
+      "kind": "inv",
+      "length": 388
+    },
+    {
+      "children": [
+        3145,
+        3163,
+        3164,
+        3162,
+        3153
+      ],
+      "kind": "cat",
+      "length": 1944
+    },
+    {
+      "children": [
+        105,
+        257,
+        104,
+        256
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        1306,
+        443,
+        1305,
+        442
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 3167,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 3166,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        3168,
+        3169,
+        3167,
+        3166
+      ],
+      "kind": "cat",
+      "length": 316
+    },
+    {
+      "children": [
+        187,
+        192,
+        186,
+        191
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        52,
+        1613,
+        2265,
+        1612,
+        2262
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 3174,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 3173,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "children": [
+        65,
+        3175,
+        3176,
+        3174,
+        3173
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 3177,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 3172,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        3171,
+        3178,
+        3179,
+        3177,
+        3172
+      ],
+      "kind": "cat",
+      "length": 384
+    },
+    {
+      "children": [
+        248,
+        486,
+        247,
+        483
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        1134,
+        743,
+        2825,
+        742,
+        2824
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 3183,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        378,
+        1234,
+        3184,
+        1233,
+        3183
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 3185,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 3182,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3181,
+        3186,
+        3187,
+        3185,
+        3182
+      ],
+      "kind": "cat",
+      "length": 446
+    },
+    {
+      "child": 3188,
+      "kind": "inv",
+      "length": 446
+    },
+    {
+      "child": 3180,
+      "kind": "inv",
+      "length": 384
+    },
+    {
+      "children": [
+        3170,
+        3189,
+        3190,
+        3188,
+        3180
+      ],
+      "kind": "cat",
+      "length": 1976
+    },
+    {
+      "child": 3191,
+      "kind": "inv",
+      "length": 1976
+    },
+    {
+      "child": 3165,
+      "kind": "inv",
+      "length": 1944
+    },
+    {
+      "children": [
+        3140,
+        3192,
+        3193,
+        3191,
+        3165
+      ],
+      "kind": "cat",
+      "length": 9752
+    },
+    {
+      "children": [
+        146,
+        1447,
+        145,
+        1333
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        437,
+        167,
+        436,
+        164
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 3196,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 3195,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        3197,
+        3198,
+        3196,
+        3195
+      ],
+      "kind": "cat",
+      "length": 316
+    },
+    {
+      "children": [
+        66,
+        3147,
+        65,
+        3146
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        69,
+        485,
+        2792,
+        484,
+        2791
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        214,
+        1775,
+        1894,
+        1774,
+        1891
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3202,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3201,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3200,
+        3203,
+        3204,
+        3202,
+        3201
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "children": [
+        199,
+        167,
+        198,
+        164
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        155,
+        3089,
+        353,
+        3086,
+        352
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        172,
+        72,
+        205,
+        71,
+        204
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 3208,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 3207,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3206,
+        3209,
+        3210,
+        3208,
+        3207
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "child": 3211,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "child": 3205,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "children": [
+        3199,
+        3212,
+        3213,
+        3211,
+        3205
+      ],
+      "kind": "cat",
+      "length": 2080
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 3215,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        510,
+        3216,
+        158,
+        3215,
+        157
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        284,
+        1913,
+        604,
+        1912,
+        601
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 3218,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 3217,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3219,
+        3220,
+        3218,
+        3217
+      ],
+      "kind": "cat",
+      "length": 372
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 3222,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        954,
+        3223,
+        951,
+        3222
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        2647,
+        779,
+        153,
+        778,
+        150
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        409,
+        153,
+        407,
+        150,
+        406
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 3226,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 3225,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        3224,
+        3227,
+        3228,
+        3226,
+        3225
+      ],
+      "kind": "cat",
+      "length": 456
+    },
+    {
+      "children": [
+        257,
+        852,
+        256,
+        851
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 3231,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        164,
+        13,
+        3232,
+        12,
+        3231
+      ],
+      "kind": "cat",
+      "length": 95
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 3234,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        240,
+        274,
+        3235,
+        273,
+        3234
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3236,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3233,
+      "kind": "inv",
+      "length": 95
+    },
+    {
+      "children": [
+        3230,
+        3237,
+        3238,
+        3236,
+        3233
+      ],
+      "kind": "cat",
+      "length": 448
+    },
+    {
+      "child": 3239,
+      "kind": "inv",
+      "length": 448
+    },
+    {
+      "child": 3229,
+      "kind": "inv",
+      "length": 456
+    },
+    {
+      "children": [
+        3221,
+        3240,
+        3241,
+        3239,
+        3229
+      ],
+      "kind": "cat",
+      "length": 2180
+    },
+    {
+      "children": [
+        495,
+        547,
+        494,
+        84
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 3244,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        84,
+        718,
+        3245,
+        717,
+        3244
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 3247,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "children": [
+        155,
+        3248,
+        23,
+        3247,
+        20
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 3249,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 3246,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        3243,
+        3250,
+        3251,
+        3249,
+        3246
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "children": [
+        729,
+        529,
+        728,
+        528
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        164,
+        452,
+        797,
+        451,
+        794
+      ],
+      "kind": "cat",
+      "length": 97
+    },
+    {
+      "children": [
+        145,
+        485,
+        193,
+        484,
+        190
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3255,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3254,
+      "kind": "inv",
+      "length": 97
+    },
+    {
+      "children": [
+        3253,
+        3256,
+        3257,
+        3255,
+        3254
+      ],
+      "kind": "cat",
+      "length": 458
+    },
+    {
+      "children": [
+        248,
+        264,
+        247,
+        263
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        1437,
+        989,
+        877,
+        988,
+        876
+      ],
+      "kind": "cat",
+      "length": 93
+    },
+    {
+      "children": [
+        69,
+        973,
+        206,
+        972,
+        203
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 3261,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 3260,
+      "kind": "inv",
+      "length": 93
+    },
+    {
+      "children": [
+        3259,
+        3262,
+        3263,
+        3261,
+        3260
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "child": 3264,
+      "kind": "inv",
+      "length": 408
+    },
+    {
+      "child": 3258,
+      "kind": "inv",
+      "length": 458
+    },
+    {
+      "children": [
+        3252,
+        3265,
+        3266,
+        3264,
+        3258
+      ],
+      "kind": "cat",
+      "length": 2160
+    },
+    {
+      "child": 3267,
+      "kind": "inv",
+      "length": 2160
+    },
+    {
+      "child": 3242,
+      "kind": "inv",
+      "length": 2180
+    },
+    {
+      "children": [
+        3214,
+        3268,
+        3269,
+        3267,
+        3242
+      ],
+      "kind": "cat",
+      "length": 10760
+    },
+    {
+      "children": [
+        146,
+        192,
+        145,
+        191
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 3272,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        3273,
+        1644,
+        3272,
+        1641
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 3274,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 3271,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        3275,
+        3276,
+        3274,
+        3271
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "children": [
+        146,
+        199,
+        145,
+        198
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        84,
+        291,
+        626,
+        290,
+        625
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 3280,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        510,
+        3281,
+        2052,
+        3280,
+        2051
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 3282,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 3279,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3278,
+        3283,
+        3284,
+        3282,
+        3279
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "children": [
+        707,
+        167,
+        706,
+        164
+      ],
+      "kind": "cat",
+      "length": 58
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 3287,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        69,
+        550,
+        3288,
+        549,
+        3287
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        494,
+        187,
+        380,
+        186,
+        379
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3290,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3289,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3286,
+        3291,
+        3292,
+        3290,
+        3289
+      ],
+      "kind": "cat",
+      "length": 422
+    },
+    {
+      "child": 3293,
+      "kind": "inv",
+      "length": 422
+    },
+    {
+      "child": 3285,
+      "kind": "inv",
+      "length": 428
+    },
+    {
+      "children": [
+        3277,
+        3294,
+        3295,
+        3293,
+        3285
+      ],
+      "kind": "cat",
+      "length": 1996
+    },
+    {
+      "children": [
+        285,
+        474,
+        284,
+        172
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        84,
+        413,
+        989,
+        410,
+        988
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        155,
+        2667,
+        1859,
+        2666,
+        1858
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 3299,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 3298,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3297,
+        3300,
+        3301,
+        3299,
+        3298
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "children": [
+        146,
+        212,
+        145,
+        211
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 3304,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        164,
+        3305,
+        29,
+        3304,
+        26
+      ],
+      "kind": "cat",
+      "length": 91
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 3308,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 3307,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        65,
+        3309,
+        3310,
+        3308,
+        3307
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3311,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3306,
+      "kind": "inv",
+      "length": 91
+    },
+    {
+      "children": [
+        3303,
+        3312,
+        3313,
+        3311,
+        3306
+      ],
+      "kind": "cat",
+      "length": 450
+    },
+    {
+      "children": [
+        192,
+        212,
+        191,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 3316,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        124,
+        3245,
+        3317,
+        3244,
+        3316
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        590,
+        1078,
+        296,
+        1077,
+        295
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3319,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3318,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        3315,
+        3320,
+        3321,
+        3319,
+        3318
+      ],
+      "kind": "cat",
+      "length": 460
+    },
+    {
+      "child": 3322,
+      "kind": "inv",
+      "length": 460
+    },
+    {
+      "child": 3314,
+      "kind": "inv",
+      "length": 450
+    },
+    {
+      "children": [
+        3302,
+        3323,
+        3324,
+        3322,
+        3314
+      ],
+      "kind": "cat",
+      "length": 2252
+    },
+    {
+      "children": [
+        285,
+        475,
+        284,
+        473
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 3327,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        914,
+        72,
+        3328,
+        71,
+        3327
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        284,
+        1078,
+        364,
+        1077,
+        363
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 3330,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 3329,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        3326,
+        3331,
+        3332,
+        3330,
+        3329
+      ],
+      "kind": "cat",
+      "length": 456
+    },
+    {
+      "children": [
+        248,
+        437,
+        247,
+        436
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        1282,
+        412,
+        174,
+        411,
+        173
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        1255,
+        729,
+        237,
+        728,
+        235
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3336,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3335,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        3334,
+        3337,
+        3338,
+        3336,
+        3335
+      ],
+      "kind": "cat",
+      "length": 410
+    },
+    {
+      "children": [
+        568,
+        212,
+        250,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        211,
+        1613,
+        779,
+        1612,
+        778
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "children": [
+        250,
+        821,
+        1064,
+        820,
+        1063
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3342,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3341,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        3340,
+        3343,
+        3344,
+        3342,
+        3341
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "child": 3345,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "child": 3339,
+      "kind": "inv",
+      "length": 410
+    },
+    {
+      "children": [
+        3333,
+        3346,
+        3347,
+        3345,
+        3339
+      ],
+      "kind": "cat",
+      "length": 2124
+    },
+    {
+      "child": 3348,
+      "kind": "inv",
+      "length": 2124
+    },
+    {
+      "child": 3325,
+      "kind": "inv",
+      "length": 2252
+    },
+    {
+      "children": [
+        3296,
+        3349,
+        3350,
+        3348,
+        3325
+      ],
+      "kind": "cat",
+      "length": 10748
+    },
+    {
+      "child": 3351,
+      "kind": "inv",
+      "length": 10748
+    },
+    {
+      "child": 3270,
+      "kind": "inv",
+      "length": 10760
+    },
+    {
+      "children": [
+        3194,
+        3352,
+        3353,
+        3351,
+        3270
+      ],
+      "kind": "cat",
+      "length": 52768
+    },
+    {
+      "child": 3354,
+      "kind": "inv",
+      "length": 52768
+    },
+    {
+      "child": 3116,
+      "kind": "inv",
+      "length": 52296
+    },
+    {
+      "children": [
+        2892,
+        3355,
+        3356,
+        3354,
+        3116
+      ],
+      "kind": "cat",
+      "length": 263486
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 3358,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        3359,
+        2530,
+        3358,
+        688
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        2233,
+        1128,
+        762,
+        1127
+      ],
+      "kind": "cat",
+      "length": 44
+    },
+    {
+      "child": 3361,
+      "kind": "inv",
+      "length": 44
+    },
+    {
+      "child": 3360,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "children": [
+        3362,
+        3363,
+        3361,
+        3360
+      ],
+      "kind": "cat",
+      "length": 208
+    },
+    {
+      "children": [
+        66,
+        1746,
+        65,
+        1745
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        1644,
+        1160,
+        1641,
+        1159
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "child": 3366,
+      "kind": "inv",
+      "length": 52
+    },
+    {
+      "child": 3365,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        3367,
+        3368,
+        3366,
+        3365
+      ],
+      "kind": "cat",
+      "length": 248
+    },
+    {
+      "child": 3369,
+      "kind": "inv",
+      "length": 248
+    },
+    {
+      "child": 3364,
+      "kind": "inv",
+      "length": 208
+    },
+    {
+      "children": [
+        3370,
+        3371,
+        3369,
+        3364
+      ],
+      "kind": "cat",
+      "length": 912
+    },
+    {
+      "kind": "seq",
+      "length": 12,
+      "letters": [
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 3373,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "children": [
+        1533,
+        3374,
+        351,
+        3373
+      ],
+      "kind": "cat",
+      "length": 44
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 3376,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "children": [
+        3377,
+        50,
+        3376,
+        47
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 3378,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "child": 3375,
+      "kind": "inv",
+      "length": 44
+    },
+    {
+      "children": [
+        3379,
+        3380,
+        3378,
+        3375
+      ],
+      "kind": "cat",
+      "length": 224
+    },
+    {
+      "children": [
+        285,
+        233,
+        284,
+        19
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        172,
+        72,
+        78,
+        71,
+        77
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        284,
+        316,
+        775,
+        315,
+        774
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3384,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3383,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3382,
+        3385,
+        3386,
+        3384,
+        3383
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "children": [
+        1187,
+        596,
+        149,
+        69
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        473,
+        413,
+        412,
+        410,
+        411
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        284,
+        92,
+        44,
+        91,
+        41
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3390,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3389,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        3388,
+        3391,
+        3392,
+        3390,
+        3389
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "child": 3393,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "child": 3387,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "children": [
+        3381,
+        3394,
+        3395,
+        3393,
+        3387
+      ],
+      "kind": "cat",
+      "length": 1916
+    },
+    {
+      "children": [
+        66,
+        199,
+        65,
+        198
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        1644,
+        1160,
+        1641,
+        1159
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "child": 3398,
+      "kind": "inv",
+      "length": 52
+    },
+    {
+      "child": 3397,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        3399,
+        3400,
+        3398,
+        3397
+      ],
+      "kind": "cat",
+      "length": 240
+    },
+    {
+      "children": [
+        714,
+        715,
+        713,
+        712
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        84,
+        105,
+        730,
+        104,
+        727
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "children": [
+        372,
+        943,
+        364,
+        942,
+        363
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3404,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3403,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        3402,
+        3405,
+        3406,
+        3404,
+        3403
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "children": [
+        2945,
+        2079,
+        2707,
+        1911
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "children": [
+        172,
+        248,
+        730,
+        247,
+        727
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        284,
+        316,
+        775,
+        315,
+        774
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3410,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3409,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        3408,
+        3411,
+        3412,
+        3410,
+        3409
+      ],
+      "kind": "cat",
+      "length": 392
+    },
+    {
+      "child": 3413,
+      "kind": "inv",
+      "length": 392
+    },
+    {
+      "child": 3407,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "children": [
+        3401,
+        3414,
+        3415,
+        3413,
+        3407
+      ],
+      "kind": "cat",
+      "length": 1884
+    },
+    {
+      "child": 3416,
+      "kind": "inv",
+      "length": 1884
+    },
+    {
+      "child": 3396,
+      "kind": "inv",
+      "length": 1916
+    },
+    {
+      "children": [
+        3372,
+        3417,
+        3418,
+        3416,
+        3396
+      ],
+      "kind": "cat",
+      "length": 8512
+    },
+    {
+      "children": [
+        620,
+        286,
+        288,
+        283
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        373,
+        475,
+        372,
+        473
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "child": 3421,
+      "kind": "inv",
+      "length": 64
+    },
+    {
+      "child": 3420,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        3422,
+        3423,
+        3421,
+        3420
+      ],
+      "kind": "cat",
+      "length": 272
+    },
+    {
+      "children": [
+        1201,
+        470,
+        294,
+        378
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        294,
+        340,
+        852,
+        339,
+        851
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        1142,
+        152,
+        1065,
+        151,
+        1062
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 3427,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 3426,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        3425,
+        3428,
+        3429,
+        3427,
+        3426
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "children": [
+        474,
+        475,
+        172,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        84,
+        248,
+        237,
+        247,
+        235
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        494,
+        2603,
+        206,
+        2602,
+        203
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3433,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3432,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3431,
+        3434,
+        3435,
+        3433,
+        3432
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "child": 3436,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "child": 3430,
+      "kind": "inv",
+      "length": 428
+    },
+    {
+      "children": [
+        3424,
+        3437,
+        3438,
+        3436,
+        3430
+      ],
+      "kind": "cat",
+      "length": 2008
+    },
+    {
+      "children": [
+        480,
+        547,
+        429,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        309,
+        2403,
+        306,
+        2402
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        429,
+        734,
+        153,
+        733,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3442,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3441,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        3440,
+        3443,
+        3444,
+        3442,
+        3441
+      ],
+      "kind": "cat",
+      "length": 400
+    },
+    {
+      "children": [
+        485,
+        192,
+        484,
+        191
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        2647,
+        538,
+        974,
+        537,
+        971
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        1911,
+        92,
+        2237,
+        91,
+        2236
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3448,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3447,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        3446,
+        3449,
+        3450,
+        3448,
+        3447
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "children": [
+        49,
+        212,
+        48,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        164,
+        106,
+        407,
+        103,
+        406
+      ],
+      "kind": "cat",
+      "length": 95
+    },
+    {
+      "children": [
+        1745,
+        485,
+        193,
+        484,
+        190
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3454,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3453,
+      "kind": "inv",
+      "length": 95
+    },
+    {
+      "children": [
+        3452,
+        3455,
+        3456,
+        3454,
+        3453
+      ],
+      "kind": "cat",
+      "length": 450
+    },
+    {
+      "child": 3457,
+      "kind": "inv",
+      "length": 450
+    },
+    {
+      "child": 3451,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "children": [
+        3445,
+        3458,
+        3459,
+        3457,
+        3451
+      ],
+      "kind": "cat",
+      "length": 2140
+    },
+    {
+      "children": [
+        84,
+        87,
+        694,
+        86,
+        693
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 3462,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        3463,
+        1295,
+        3462,
+        1292
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 3464,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 3461,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3465,
+        3466,
+        3464,
+        3461
+      ],
+      "kind": "cat",
+      "length": 328
+    },
+    {
+      "children": [
+        443,
+        1643,
+        442,
+        1642
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        69,
+        1337,
+        635,
+        1334,
+        632
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        1437,
+        2185,
+        2176,
+        2184,
+        2175
+      ],
+      "kind": "cat",
+      "length": 87
+    },
+    {
+      "child": 3470,
+      "kind": "inv",
+      "length": 87
+    },
+    {
+      "child": 3469,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        3468,
+        3471,
+        3472,
+        3470,
+        3469
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "children": [
+        380,
+        264,
+        379,
+        263
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        793,
+        55,
+        2421,
+        54,
+        2418
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "children": [
+        1111,
+        2655,
+        264,
+        2654,
+        263
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3476,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3475,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        3474,
+        3477,
+        3478,
+        3476,
+        3475
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "child": 3479,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "child": 3473,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "children": [
+        3467,
+        3480,
+        3481,
+        3479,
+        3473
+      ],
+      "kind": "cat",
+      "length": 2076
+    },
+    {
+      "child": 3482,
+      "kind": "inv",
+      "length": 2076
+    },
+    {
+      "child": 3460,
+      "kind": "inv",
+      "length": 2140
+    },
+    {
+      "children": [
+        3439,
+        3483,
+        3484,
+        3482,
+        3460
+      ],
+      "kind": "cat",
+      "length": 10440
+    },
+    {
+      "children": [
+        285,
+        474,
+        284,
+        172
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 2841,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        3487,
+        475,
+        2841,
+        473
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 3488,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "child": 3486,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        3489,
+        3490,
+        3488,
+        3486
+      ],
+      "kind": "cat",
+      "length": 288
+    },
+    {
+      "children": [
+        285,
+        474,
+        284,
+        172
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 3493,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        429,
+        426,
+        3494,
+        425,
+        3493
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 3497,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 3496,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        155,
+        3498,
+        3499,
+        3497,
+        3496
+      ],
+      "kind": "cat",
+      "length": 100
+    },
+    {
+      "child": 3500,
+      "kind": "inv",
+      "length": 100
+    },
+    {
+      "child": 3495,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3492,
+        3501,
+        3502,
+        3500,
+        3495
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 3504,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1286,
+        3505,
+        1285,
+        3504
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        378,
+        551,
+        258,
+        548,
+        255
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        294,
+        248,
+        730,
+        247,
+        727
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 3508,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 3507,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3506,
+        3509,
+        3510,
+        3508,
+        3507
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "child": 3511,
+      "kind": "inv",
+      "length": 408
+    },
+    {
+      "child": 3503,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "children": [
+        3491,
+        3512,
+        3513,
+        3511,
+        3503
+      ],
+      "kind": "cat",
+      "length": 2008
+    },
+    {
+      "children": [
+        480,
+        547,
+        429,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        533,
+        92,
+        532,
+        91
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        429,
+        248,
+        1257,
+        247,
+        1256
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 3517,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 3516,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        3515,
+        3518,
+        3519,
+        3517,
+        3516
+      ],
+      "kind": "cat",
+      "length": 396
+    },
+    {
+      "children": [
+        412,
+        413,
+        411,
+        410
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        211,
+        2265,
+        3184,
+        2262,
+        3183
+      ],
+      "kind": "cat",
+      "length": 100
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 3523,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        2733,
+        3524,
+        635,
+        3523,
+        632
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3525,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3522,
+      "kind": "inv",
+      "length": 100
+    },
+    {
+      "children": [
+        3521,
+        3526,
+        3527,
+        3525,
+        3522
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "children": [
+        485,
+        486,
+        484,
+        483
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        2818,
+        72,
+        97,
+        71,
+        96
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        288,
+        2469,
+        159,
+        2468,
+        156
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3531,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3530,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        3529,
+        3532,
+        3533,
+        3531,
+        3530
+      ],
+      "kind": "cat",
+      "length": 456
+    },
+    {
+      "child": 3534,
+      "kind": "inv",
+      "length": 456
+    },
+    {
+      "child": 3528,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "children": [
+        3520,
+        3535,
+        3536,
+        3534,
+        3528
+      ],
+      "kind": "cat",
+      "length": 2196
+    },
+    {
+      "children": [
+        84,
+        146,
+        486,
+        145,
+        483
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 3539,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        3540,
+        1295,
+        3539,
+        1292
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 3541,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "child": 3538,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        3542,
+        3543,
+        3541,
+        3538
+      ],
+      "kind": "cat",
+      "length": 324
+    },
+    {
+      "child": 1600,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        3545,
+        568,
+        1600,
+        250
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 3547,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        90,
+        3548,
+        635,
+        3547,
+        632
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 3551,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 3550,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1592,
+        3552,
+        3553,
+        3551,
+        3550
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3554,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3549,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3546,
+        3555,
+        3556,
+        3554,
+        3549
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "children": [
+        412,
+        413,
+        411,
+        410
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 3560,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 3559,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1481,
+        3561,
+        3562,
+        3560,
+        3559
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 3564,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1053,
+        110,
+        3565,
+        109,
+        3564
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3566,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3563,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3558,
+        3567,
+        3568,
+        3566,
+        3563
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "child": 3569,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "child": 3557,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "children": [
+        3544,
+        3570,
+        3571,
+        3569,
+        3557
+      ],
+      "kind": "cat",
+      "length": 2068
+    },
+    {
+      "child": 3572,
+      "kind": "inv",
+      "length": 2068
+    },
+    {
+      "child": 3537,
+      "kind": "inv",
+      "length": 2196
+    },
+    {
+      "children": [
+        3514,
+        3573,
+        3574,
+        3572,
+        3537
+      ],
+      "kind": "cat",
+      "length": 10536
+    },
+    {
+      "child": 3575,
+      "kind": "inv",
+      "length": 10536
+    },
+    {
+      "child": 3485,
+      "kind": "inv",
+      "length": 10440
+    },
+    {
+      "children": [
+        3419,
+        3576,
+        3577,
+        3575,
+        3485
+      ],
+      "kind": "cat",
+      "length": 50464
+    },
+    {
+      "children": [
+        480,
+        429
+      ],
+      "kind": "cat",
+      "length": 36
+    },
+    {
+      "children": [
+        84,
+        248,
+        1623,
+        247,
+        1622
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        239,
+        340,
+        852,
+        339,
+        851
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3581,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3580,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3582,
+        3583,
+        3581,
+        3580
+      ],
+      "kind": "cat",
+      "length": 372
+    },
+    {
+      "children": [
+        890,
+        364,
+        889,
+        363
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        429,
+        551,
+        193,
+        548,
+        190
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "child": 3586,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "child": 3585,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        3579,
+        3587,
+        3588,
+        3586,
+        3585
+      ],
+      "kind": "cat",
+      "length": 352
+    },
+    {
+      "child": 3589,
+      "kind": "inv",
+      "length": 352
+    },
+    {
+      "child": 3584,
+      "kind": "inv",
+      "length": 372
+    },
+    {
+      "children": [
+        3590,
+        3591,
+        3589,
+        3584
+      ],
+      "kind": "cat",
+      "length": 1448
+    },
+    {
+      "children": [
+        248,
+        28,
+        247,
+        27
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        340,
+        193,
+        339,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 3594,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 3593,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        3595,
+        3596,
+        3594,
+        3593
+      ],
+      "kind": "cat",
+      "length": 292
+    },
+    {
+      "children": [
+        485,
+        675,
+        484,
+        674
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        531,
+        734,
+        193,
+        733,
+        190
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "children": [
+        535,
+        402,
+        403,
+        401,
+        400
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "child": 3600,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "child": 3599,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        3598,
+        3601,
+        3602,
+        3600,
+        3599
+      ],
+      "kind": "cat",
+      "length": 384
+    },
+    {
+      "children": [
+        192,
+        212,
+        191,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        124,
+        146,
+        67,
+        145,
+        64
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        590,
+        1533,
+        167,
+        351,
+        164
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 3606,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 3605,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        3604,
+        3607,
+        3608,
+        3606,
+        3605
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "child": 3609,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "child": 3603,
+      "kind": "inv",
+      "length": 384
+    },
+    {
+      "children": [
+        3597,
+        3610,
+        3611,
+        3609,
+        3603
+      ],
+      "kind": "cat",
+      "length": 1900
+    },
+    {
+      "children": [
+        248,
+        192,
+        247,
+        191
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        1733,
+        264,
+        1732,
+        263
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 3614,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 3613,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "children": [
+        3615,
+        3616,
+        3614,
+        3613
+      ],
+      "kind": "cat",
+      "length": 296
+    },
+    {
+      "children": [
+        248,
+        192,
+        247,
+        191
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        164,
+        561,
+        1078,
+        560,
+        1077
+      ],
+      "kind": "cat",
+      "length": 99
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 3620,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "children": [
+        1437,
+        3621,
+        1230,
+        3620,
+        1227
+      ],
+      "kind": "cat",
+      "length": 79
+    },
+    {
+      "child": 3622,
+      "kind": "inv",
+      "length": 79
+    },
+    {
+      "child": 3619,
+      "kind": "inv",
+      "length": 99
+    },
+    {
+      "children": [
+        3618,
+        3623,
+        3624,
+        3622,
+        3619
+      ],
+      "kind": "cat",
+      "length": 426
+    },
+    {
+      "children": [
+        529,
+        264,
+        528,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        469,
+        2759,
+        2403,
+        2758,
+        2402
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 3628,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "child": 112,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "children": [
+        378,
+        3629,
+        3630,
+        3628,
+        112
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 3631,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 3627,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        3626,
+        3632,
+        3633,
+        3631,
+        3627
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "child": 3634,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "child": 3625,
+      "kind": "inv",
+      "length": 426
+    },
+    {
+      "children": [
+        3617,
+        3635,
+        3636,
+        3634,
+        3625
+      ],
+      "kind": "cat",
+      "length": 1980
+    },
+    {
+      "child": 3637,
+      "kind": "inv",
+      "length": 1980
+    },
+    {
+      "child": 3612,
+      "kind": "inv",
+      "length": 1900
+    },
+    {
+      "children": [
+        3592,
+        3638,
+        3639,
+        3637,
+        3612
+      ],
+      "kind": "cat",
+      "length": 9208
+    },
+    {
+      "child": 1783,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        904,
+        3641,
+        903,
+        1783
+      ],
+      "kind": "cat",
+      "length": 44
+    },
+    {
+      "children": [
+        147,
+        50,
+        144,
+        47
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 3643,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 3642,
+      "kind": "inv",
+      "length": 44
+    },
+    {
+      "children": [
+        3644,
+        3645,
+        3643,
+        3642
+      ],
+      "kind": "cat",
+      "length": 240
+    },
+    {
+      "children": [
+        1302,
+        3487,
+        1301,
+        2841
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        3504,
+        72,
+        694,
+        71,
+        693
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        1301,
+        2319,
+        257,
+        2318,
+        256
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3649,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3648,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3647,
+        3650,
+        3651,
+        3649,
+        3648
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "child": 520,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        3653,
+        596,
+        520,
+        69
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 1516,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        473,
+        146,
+        3655,
+        145,
+        1516
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        284,
+        412,
+        44,
+        411,
+        41
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 3657,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 3656,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3654,
+        3658,
+        3659,
+        3657,
+        3656
+      ],
+      "kind": "cat",
+      "length": 412
+    },
+    {
+      "child": 3660,
+      "kind": "inv",
+      "length": 412
+    },
+    {
+      "child": 3652,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "children": [
+        3646,
+        3661,
+        3662,
+        3660,
+        3652
+      ],
+      "kind": "cat",
+      "length": 1936
+    },
+    {
+      "children": [
+        285,
+        233,
+        284,
+        19
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        877,
+        2186,
+        876,
+        2183
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 3666,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        510,
+        3667,
+        453,
+        3666,
+        450
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3668,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3665,
+      "kind": "inv",
+      "length": 66
+    },
+    {
+      "children": [
+        3664,
+        3669,
+        3670,
+        3668,
+        3665
+      ],
+      "kind": "cat",
+      "length": 394
+    },
+    {
+      "children": [
+        611,
+        486,
+        610,
+        483
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        2707,
+        72,
+        97,
+        71,
+        96
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        1481,
+        115,
+        539,
+        114,
+        536
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 3674,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 3673,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        3672,
+        3675,
+        3676,
+        3674,
+        3673
+      ],
+      "kind": "cat",
+      "length": 394
+    },
+    {
+      "children": [
+        662,
+        264,
+        661,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        531,
+        2825,
+        364,
+        2824,
+        363
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        1127,
+        513,
+        413,
+        512,
+        410
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 3680,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 3679,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        3678,
+        3681,
+        3682,
+        3680,
+        3679
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "child": 3683,
+      "kind": "inv",
+      "length": 428
+    },
+    {
+      "child": 3677,
+      "kind": "inv",
+      "length": 394
+    },
+    {
+      "children": [
+        3671,
+        3684,
+        3685,
+        3683,
+        3677
+      ],
+      "kind": "cat",
+      "length": 2038
+    },
+    {
+      "children": [
+        474,
+        475,
+        172,
+        473
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        239,
+        662,
+        264,
+        661,
+        263
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        777,
+        2603,
+        206,
+        2602,
+        203
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3689,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3688,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        3687,
+        3690,
+        3691,
+        3689,
+        3688
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        412,
+        413,
+        411,
+        410
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 3695,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 3694,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        393,
+        3696,
+        3697,
+        3695,
+        3694
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 3700,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 3699,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1433,
+        3701,
+        3702,
+        3700,
+        3699
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3703,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3698,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        3693,
+        3704,
+        3705,
+        3703,
+        3698
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "children": [
+        989,
+        1257,
+        988,
+        1256
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        124,
+        1064,
+        852,
+        1063,
+        851
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        1745,
+        92,
+        296,
+        91,
+        295
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 3709,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 3708,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        3707,
+        3710,
+        3711,
+        3709,
+        3708
+      ],
+      "kind": "cat",
+      "length": 450
+    },
+    {
+      "child": 3712,
+      "kind": "inv",
+      "length": 450
+    },
+    {
+      "child": 3706,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "children": [
+        3692,
+        3713,
+        3714,
+        3712,
+        3706
+      ],
+      "kind": "cat",
+      "length": 2192
+    },
+    {
+      "child": 3715,
+      "kind": "inv",
+      "length": 2192
+    },
+    {
+      "child": 3686,
+      "kind": "inv",
+      "length": 2038
+    },
+    {
+      "children": [
+        3663,
+        3716,
+        3717,
+        3715,
+        3686
+      ],
+      "kind": "cat",
+      "length": 10396
+    },
+    {
+      "children": [
+        66,
+        591,
+        65,
+        590
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        568,
+        212,
+        250,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 3720,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 3719,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        3721,
+        3722,
+        3720,
+        3719
+      ],
+      "kind": "cat",
+      "length": 288
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 3724,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        1567,
+        3725,
+        1437,
+        3724
+      ],
+      "kind": "cat",
+      "length": 58
+    },
+    {
+      "children": [
+        732,
+        87,
+        995,
+        86,
+        994
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 3729,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 3728,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1634,
+        3730,
+        3731,
+        3729,
+        3728
+      ],
+      "kind": "cat",
+      "length": 97
+    },
+    {
+      "child": 3732,
+      "kind": "inv",
+      "length": 97
+    },
+    {
+      "child": 3727,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3726,
+        3733,
+        3734,
+        3732,
+        3727
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "children": [
+        669,
+        1691,
+        668,
+        1690
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        69,
+        3288,
+        3731,
+        3287,
+        3728
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 3739,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 3738,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        65,
+        3740,
+        3741,
+        3739,
+        3738
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 3742,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 3737,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3736,
+        3743,
+        3744,
+        3742,
+        3737
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "child": 3745,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "child": 3735,
+      "kind": "inv",
+      "length": 428
+    },
+    {
+      "children": [
+        3723,
+        3746,
+        3747,
+        3745,
+        3735
+      ],
+      "kind": "cat",
+      "length": 2008
+    },
+    {
+      "children": [
+        470,
+        511,
+        378,
+        510
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 3750,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        84,
+        3751,
+        2034,
+        3750,
+        2031
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        288,
+        874,
+        35,
+        873,
+        32
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3753,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3752,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3749,
+        3754,
+        3755,
+        3753,
+        3752
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "children": [
+        248,
+        340,
+        247,
+        339
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        3758,
+        841,
+        551,
+        840,
+        548
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 3760,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        351,
+        72,
+        3761,
+        71,
+        3760
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 3762,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 3759,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        3757,
+        3763,
+        3764,
+        3762,
+        3759
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 3766,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        3767,
+        193,
+        3766,
+        190
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        712,
+        316,
+        1271,
+        315,
+        1268
+      ],
+      "kind": "cat",
+      "length": 93
+    },
+    {
+      "children": [
+        65,
+        3248,
+        1810,
+        3247,
+        1809
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 3770,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 3769,
+      "kind": "inv",
+      "length": 93
+    },
+    {
+      "children": [
+        3768,
+        3771,
+        3772,
+        3770,
+        3769
+      ],
+      "kind": "cat",
+      "length": 414
+    },
+    {
+      "child": 3773,
+      "kind": "inv",
+      "length": 414
+    },
+    {
+      "child": 3765,
+      "kind": "inv",
+      "length": 404
+    },
+    {
+      "children": [
+        3756,
+        3774,
+        3775,
+        3773,
+        3765
+      ],
+      "kind": "cat",
+      "length": 2072
+    },
+    {
+      "children": [
+        620,
+        475,
+        288,
+        473
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        84,
+        2811,
+        1609,
+        1047,
+        1053
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        510,
+        79,
+        779,
+        76,
+        778
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3779,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3778,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        3777,
+        3780,
+        3781,
+        3779,
+        3778
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 3783,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        3784,
+        1643,
+        3783,
+        1642
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        266,
+        317,
+        1518,
+        314,
+        1517
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        65,
+        2212,
+        3730,
+        2211,
+        3729
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 3787,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 3786,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        3785,
+        3788,
+        3789,
+        3787,
+        3786
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "children": [
+        380,
+        264,
+        379,
+        263
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        688,
+        1754,
+        413,
+        1753,
+        410
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        112,
+        485,
+        427,
+        484,
+        424
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 3793,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 3792,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3791,
+        3794,
+        3795,
+        3793,
+        3792
+      ],
+      "kind": "cat",
+      "length": 426
+    },
+    {
+      "child": 3796,
+      "kind": "inv",
+      "length": 426
+    },
+    {
+      "child": 3790,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "children": [
+        3782,
+        3797,
+        3798,
+        3796,
+        3790
+      ],
+      "kind": "cat",
+      "length": 2128
+    },
+    {
+      "child": 3799,
+      "kind": "inv",
+      "length": 2128
+    },
+    {
+      "child": 3776,
+      "kind": "inv",
+      "length": 2072
+    },
+    {
+      "children": [
+        3748,
+        3800,
+        3801,
+        3799,
+        3776
+      ],
+      "kind": "cat",
+      "length": 10408
+    },
+    {
+      "child": 3802,
+      "kind": "inv",
+      "length": 10408
+    },
+    {
+      "child": 3718,
+      "kind": "inv",
+      "length": 10396
+    },
+    {
+      "children": [
+        3640,
+        3803,
+        3804,
+        3802,
+        3718
+      ],
+      "kind": "cat",
+      "length": 50816
+    },
+    {
+      "children": [
+        480,
+        511,
+        429,
+        510
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 3806,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        3807,
+        3806
+      ],
+      "kind": "cat",
+      "length": 144
+    },
+    {
+      "children": [
+        84,
+        248,
+        513,
+        247,
+        512
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        302,
+        193,
+        301,
+        190
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "child": 3810,
+      "kind": "inv",
+      "length": 64
+    },
+    {
+      "child": 3809,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3806,
+        3811,
+        3812,
+        3810,
+        3809
+      ],
+      "kind": "cat",
+      "length": 380
+    },
+    {
+      "children": [
+        84,
+        248,
+        1257,
+        247,
+        1256
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        3499,
+        554,
+        3496,
+        553
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 3815,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 3814,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3816,
+        3817,
+        3815,
+        3814
+      ],
+      "kind": "cat",
+      "length": 328
+    },
+    {
+      "child": 3818,
+      "kind": "inv",
+      "length": 328
+    },
+    {
+      "child": 3813,
+      "kind": "inv",
+      "length": 380
+    },
+    {
+      "children": [
+        3808,
+        3819,
+        3820,
+        3818,
+        3813
+      ],
+      "kind": "cat",
+      "length": 1560
+    },
+    {
+      "children": [
+        554,
+        756,
+        553,
+        755
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        192,
+        258,
+        191,
+        255
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 3823,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 3822,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "children": [
+        3824,
+        3825,
+        3823,
+        3822
+      ],
+      "kind": "cat",
+      "length": 292
+    },
+    {
+      "children": [
+        1086,
+        2450,
+        440,
+        2449
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 3828,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1143,
+        348,
+        3829,
+        347,
+        3828
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 3831,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        586,
+        1903,
+        3832,
+        1902,
+        3831
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 3833,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 3830,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        3827,
+        3834,
+        3835,
+        3833,
+        3830
+      ],
+      "kind": "cat",
+      "length": 392
+    },
+    {
+      "children": [
+        49,
+        127,
+        48,
+        124
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        69,
+        943,
+        2185,
+        942,
+        2184
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 3839,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        372,
+        2319,
+        3840,
+        2318,
+        3839
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 3841,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 3838,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3837,
+        3842,
+        3843,
+        3841,
+        3838
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "child": 3844,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "child": 3836,
+      "kind": "inv",
+      "length": 392
+    },
+    {
+      "children": [
+        3826,
+        3845,
+        3846,
+        3844,
+        3836
+      ],
+      "kind": "cat",
+      "length": 1916
+    },
+    {
+      "children": [
+        187,
+        340,
+        186,
+        339
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        402,
+        1674,
+        401,
+        6
+      ],
+      "kind": "cat",
+      "length": 58
+    },
+    {
+      "child": 3849,
+      "kind": "inv",
+      "length": 58
+    },
+    {
+      "child": 3848,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        3850,
+        3851,
+        3849,
+        3848
+      ],
+      "kind": "cat",
+      "length": 272
+    },
+    {
+      "children": [
+        146,
+        192,
+        145,
+        191
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 3855,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 3854,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1143,
+        3856,
+        3857,
+        3855,
+        3854
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        378,
+        1876,
+        153,
+        1875,
+        150
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 3859,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 3858,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3853,
+        3860,
+        3861,
+        3859,
+        3858
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        2770,
+        212,
+        2768,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 3865,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 3864,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        712,
+        3866,
+        3867,
+        3865,
+        3864
+      ],
+      "kind": "cat",
+      "length": 85
+    },
+    {
+      "children": [
+        1632,
+        187,
+        340,
+        186,
+        339
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 3869,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 3868,
+      "kind": "inv",
+      "length": 85
+    },
+    {
+      "children": [
+        3863,
+        3870,
+        3871,
+        3869,
+        3868
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "child": 3872,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "child": 3862,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "children": [
+        3852,
+        3873,
+        3874,
+        3872,
+        3862
+      ],
+      "kind": "cat",
+      "length": 2060
+    },
+    {
+      "child": 3875,
+      "kind": "inv",
+      "length": 2060
+    },
+    {
+      "child": 3847,
+      "kind": "inv",
+      "length": 1916
+    },
+    {
+      "children": [
+        3821,
+        3876,
+        3877,
+        3875,
+        3847
+      ],
+      "kind": "cat",
+      "length": 9512
+    },
+    {
+      "child": 46,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        3879,
+        1156,
+        46,
+        94
+      ],
+      "kind": "cat",
+      "length": 40
+    },
+    {
+      "children": [
+        3653,
+        596,
+        520,
+        69
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 3881,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 3880,
+      "kind": "inv",
+      "length": 40
+    },
+    {
+      "children": [
+        3882,
+        3883,
+        3881,
+        3880
+      ],
+      "kind": "cat",
+      "length": 232
+    },
+    {
+      "children": [
+        373,
+        596,
+        372,
+        69
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        283,
+        877,
+        1785,
+        876,
+        1784
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        378,
+        248,
+        192,
+        247,
+        191
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 3887,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 3886,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        3885,
+        3888,
+        3889,
+        3887,
+        3886
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "children": [
+        232,
+        373,
+        40,
+        372
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        19,
+        192,
+        821,
+        191,
+        820
+      ],
+      "kind": "cat",
+      "length": 89
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "child": 3893,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        284,
+        3894,
+        2459,
+        3893,
+        2456
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3895,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3892,
+      "kind": "inv",
+      "length": 89
+    },
+    {
+      "children": [
+        3891,
+        3896,
+        3897,
+        3895,
+        3892
+      ],
+      "kind": "cat",
+      "length": 426
+    },
+    {
+      "child": 3898,
+      "kind": "inv",
+      "length": 426
+    },
+    {
+      "child": 3890,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "children": [
+        3884,
+        3899,
+        3900,
+        3898,
+        3890
+      ],
+      "kind": "cat",
+      "length": 1948
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "child": 3902,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        84,
+        3903,
+        3751,
+        3902,
+        3750
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        284,
+        1754,
+        2795,
+        1753,
+        2794
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 3905,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 3904,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        3906,
+        3907,
+        3905,
+        3904
+      ],
+      "kind": "cat",
+      "length": 372
+    },
+    {
+      "children": [
+        1483,
+        49,
+        1481,
+        48
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 3911,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        3910,
+        1819,
+        3912,
+        1818,
+        3911
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        1911,
+        2997,
+        3866,
+        2996,
+        3865
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3914,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3913,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        3909,
+        3915,
+        3916,
+        3914,
+        3913
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "child": 324,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        3918,
+        2770,
+        324,
+        2768
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        3504,
+        2843,
+        153,
+        2842,
+        150
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        1301,
+        1754,
+        44,
+        1753,
+        41
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3921,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3920,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        3919,
+        3922,
+        3923,
+        3921,
+        3920
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "child": 3924,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "child": 3917,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "children": [
+        3908,
+        3925,
+        3926,
+        3924,
+        3917
+      ],
+      "kind": "cat",
+      "length": 2124
+    },
+    {
+      "children": [
+        285,
+        547,
+        284,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        973,
+        206,
+        972,
+        203
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 3930,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        429,
+        485,
+        3931,
+        484,
+        3930
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 3932,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 3929,
+      "kind": "inv",
+      "length": 56
+    },
+    {
+      "children": [
+        3928,
+        3933,
+        3934,
+        3932,
+        3929
+      ],
+      "kind": "cat",
+      "length": 380
+    },
+    {
+      "children": [
+        485,
+        675,
+        484,
+        674
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        405,
+        734,
+        193,
+        733,
+        190
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        850,
+        550,
+        634,
+        549,
+        633
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 3938,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 3937,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "children": [
+        3936,
+        3939,
+        3940,
+        3938,
+        3937
+      ],
+      "kind": "cat",
+      "length": 412
+    },
+    {
+      "children": [
+        192,
+        212,
+        191,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        124,
+        105,
+        193,
+        104,
+        190
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        165,
+        779,
+        153,
+        778,
+        150
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 3944,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 3943,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3942,
+        3945,
+        3946,
+        3944,
+        3943
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "child": 3947,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "child": 3941,
+      "kind": "inv",
+      "length": 412
+    },
+    {
+      "children": [
+        3935,
+        3948,
+        3949,
+        3947,
+        3941
+      ],
+      "kind": "cat",
+      "length": 2084
+    },
+    {
+      "child": 3950,
+      "kind": "inv",
+      "length": 2084
+    },
+    {
+      "child": 3927,
+      "kind": "inv",
+      "length": 2124
+    },
+    {
+      "children": [
+        3901,
+        3951,
+        3952,
+        3950,
+        3927
+      ],
+      "kind": "cat",
+      "length": 10364
+    },
+    {
+      "child": 1632,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1533,
+        3954,
+        351,
+        1632
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        199,
+        212,
+        198,
+        211
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 3956,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 3955,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "children": [
+        3957,
+        3958,
+        3956,
+        3955
+      ],
+      "kind": "cat",
+      "length": 264
+    },
+    {
+      "children": [
+        285,
+        373,
+        284,
+        372
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        19,
+        453,
+        1843,
+        450,
+        1842
+      ],
+      "kind": "cat",
+      "length": 95
+    },
+    {
+      "children": [
+        284,
+        662,
+        797,
+        661,
+        794
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 3962,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 3961,
+      "kind": "inv",
+      "length": 95
+    },
+    {
+      "children": [
+        3960,
+        3963,
+        3964,
+        3962,
+        3961
+      ],
+      "kind": "cat",
+      "length": 450
+    },
+    {
+      "children": [
+        474,
+        596,
+        172,
+        69
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        494,
+        1904,
+        79,
+        1901,
+        76
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        378,
+        1257,
+        604,
+        1256,
+        601
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3968,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3967,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3966,
+        3969,
+        3970,
+        3968,
+        3967
+      ],
+      "kind": "cat",
+      "length": 448
+    },
+    {
+      "child": 3971,
+      "kind": "inv",
+      "length": 448
+    },
+    {
+      "child": 3965,
+      "kind": "inv",
+      "length": 450
+    },
+    {
+      "children": [
+        3959,
+        3972,
+        3973,
+        3971,
+        3965
+      ],
+      "kind": "cat",
+      "length": 2060
+    },
+    {
+      "children": [
+        480,
+        429
+      ],
+      "kind": "cat",
+      "length": 36
+    },
+    {
+      "children": [
+        364,
+        943,
+        363,
+        942
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        429,
+        248,
+        953,
+        247,
+        952
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 3977,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 3976,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        3975,
+        3978,
+        3979,
+        3977,
+        3976
+      ],
+      "kind": "cat",
+      "length": 372
+    },
+    {
+      "children": [
+        485,
+        237,
+        484,
+        235
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 3983,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 3982,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        531,
+        3984,
+        3985,
+        3983,
+        3982
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        421,
+        2185,
+        2176,
+        2184,
+        2175
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 3987,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 3986,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        3981,
+        3988,
+        3989,
+        3987,
+        3986
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "children": [
+        49,
+        212,
+        48,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        211,
+        152,
+        252,
+        151,
+        251
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        198,
+        105,
+        237,
+        104,
+        235
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 3993,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 3992,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        3991,
+        3994,
+        3995,
+        3993,
+        3992
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "child": 3996,
+      "kind": "inv",
+      "length": 452
+    },
+    {
+      "child": 3990,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "children": [
+        3980,
+        3997,
+        3998,
+        3996,
+        3990
+      ],
+      "kind": "cat",
+      "length": 2136
+    },
+    {
+      "children": [
+        547,
+        480,
+        84,
+        429
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        248,
+        2676,
+        247,
+        2675
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        380,
+        264,
+        379,
+        263
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 4002,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 4001,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        4000,
+        4003,
+        4004,
+        4002,
+        4001
+      ],
+      "kind": "cat",
+      "length": 356
+    },
+    {
+      "children": [
+        1086,
+        2450,
+        440,
+        2449
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "children": [
+        4007,
+        412,
+        413,
+        411,
+        410
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        440,
+        989,
+        486,
+        988,
+        483
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 4009,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 4008,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        4006,
+        4010,
+        4011,
+        4009,
+        4008
+      ],
+      "kind": "cat",
+      "length": 364
+    },
+    {
+      "children": [
+        49,
+        127,
+        48,
+        124
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 4015,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "child": 4014,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        69,
+        4016,
+        4017,
+        4015,
+        4014
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        1015,
+        764,
+        2237,
+        763,
+        2236
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 4019,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 4018,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        4013,
+        4020,
+        4021,
+        4019,
+        4018
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "child": 4022,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "child": 4012,
+      "kind": "inv",
+      "length": 364
+    },
+    {
+      "children": [
+        4005,
+        4023,
+        4024,
+        4022,
+        4012
+      ],
+      "kind": "cat",
+      "length": 1932
+    },
+    {
+      "child": 4025,
+      "kind": "inv",
+      "length": 1932
+    },
+    {
+      "child": 3999,
+      "kind": "inv",
+      "length": 2136
+    },
+    {
+      "children": [
+        3974,
+        4026,
+        4027,
+        4025,
+        3999
+      ],
+      "kind": "cat",
+      "length": 10196
+    },
+    {
+      "child": 4028,
+      "kind": "inv",
+      "length": 10196
+    },
+    {
+      "child": 3953,
+      "kind": "inv",
+      "length": 10364
+    },
+    {
+      "children": [
+        3878,
+        4029,
+        4030,
+        4028,
+        3953
+      ],
+      "kind": "cat",
+      "length": 50632
+    },
+    {
+      "child": 4031,
+      "kind": "inv",
+      "length": 50632
+    },
+    {
+      "child": 3805,
+      "kind": "inv",
+      "length": 50816
+    },
+    {
+      "children": [
+        3578,
+        4032,
+        4033,
+        4031,
+        3805
+      ],
+      "kind": "cat",
+      "length": 253360
+    },
+    {
+      "kind": "seq",
+      "length": 14,
+      "letters": [
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 4035,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "children": [
+        66,
+        4036,
+        65,
+        4035
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        199,
+        212,
+        198,
+        211
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 4038,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 4037,
+      "kind": "inv",
+      "length": 64
+    },
+    {
+      "children": [
+        4039,
+        4040,
+        4038,
+        4037
+      ],
+      "kind": "cat",
+      "length": 272
+    },
+    {
+      "children": [
+        66,
+        199,
+        65,
+        198
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 4043,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        4044,
+        167,
+        4043,
+        164
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 4045,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 4042,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        4046,
+        4047,
+        4045,
+        4042
+      ],
+      "kind": "cat",
+      "length": 292
+    },
+    {
+      "child": 4048,
+      "kind": "inv",
+      "length": 292
+    },
+    {
+      "child": 4041,
+      "kind": "inv",
+      "length": 272
+    },
+    {
+      "children": [
+        4049,
+        4050,
+        4048,
+        4041
+      ],
+      "kind": "cat",
+      "length": 1128
+    },
+    {
+      "children": [
+        66,
+        4036,
+        65,
+        4035
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        199,
+        212,
+        198,
+        211
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 4053,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 4052,
+      "kind": "inv",
+      "length": 64
+    },
+    {
+      "children": [
+        4054,
+        4055,
+        4053,
+        4052
+      ],
+      "kind": "cat",
+      "length": 272
+    },
+    {
+      "children": [
+        285,
+        233,
+        284,
+        19
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        19,
+        796,
+        322,
+        795,
+        319
+      ],
+      "kind": "cat",
+      "length": 91
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 4059,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        284,
+        4060,
+        106,
+        4059,
+        103
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4061,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4058,
+      "kind": "inv",
+      "length": 91
+    },
+    {
+      "children": [
+        4057,
+        4062,
+        4063,
+        4061,
+        4058
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "children": [
+        474,
+        596,
+        172,
+        69
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        473,
+        72,
+        153,
+        71,
+        150
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        288,
+        1064,
+        821,
+        1063,
+        820
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4067,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4066,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        4065,
+        4068,
+        4069,
+        4067,
+        4066
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "child": 4070,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "child": 4064,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "children": [
+        4056,
+        4071,
+        4072,
+        4070,
+        4064
+      ],
+      "kind": "cat",
+      "length": 2040
+    },
+    {
+      "children": [
+        66,
+        199,
+        65,
+        198
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        3641,
+        167,
+        1783,
+        164
+      ],
+      "kind": "cat",
+      "length": 58
+    },
+    {
+      "child": 4075,
+      "kind": "inv",
+      "length": 58
+    },
+    {
+      "child": 4074,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "children": [
+        4076,
+        4077,
+        4075,
+        4074
+      ],
+      "kind": "cat",
+      "length": 252
+    },
+    {
+      "children": [
+        66,
+        1135,
+        65,
+        1134
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        284,
+        943,
+        364,
+        942,
+        363
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        1282,
+        611,
+        2944,
+        610,
+        2943
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 4081,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 4080,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        4079,
+        4082,
+        4083,
+        4081,
+        4080
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "children": [
+        474,
+        596,
+        172,
+        69
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        1142,
+        3767,
+        258,
+        3766,
+        255
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        149,
+        550,
+        603,
+        549,
+        602
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4087,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4086,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        4085,
+        4088,
+        4089,
+        4087,
+        4086
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "child": 4090,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "child": 4084,
+      "kind": "inv",
+      "length": 432
+    },
+    {
+      "children": [
+        4078,
+        4091,
+        4092,
+        4090,
+        4084
+      ],
+      "kind": "cat",
+      "length": 2004
+    },
+    {
+      "child": 4093,
+      "kind": "inv",
+      "length": 2004
+    },
+    {
+      "child": 4073,
+      "kind": "inv",
+      "length": 2040
+    },
+    {
+      "children": [
+        4051,
+        4094,
+        4095,
+        4093,
+        4073
+      ],
+      "kind": "cat",
+      "length": 9216
+    },
+    {
+      "children": [
+        1996,
+        470,
+        678,
+        378
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        373,
+        596,
+        372,
+        69
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "child": 4098,
+      "kind": "inv",
+      "length": 68
+    },
+    {
+      "child": 4097,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        4099,
+        4100,
+        4098,
+        4097
+      ],
+      "kind": "cat",
+      "length": 284
+    },
+    {
+      "children": [
+        286,
+        495,
+        283,
+        494
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 4103,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        510,
+        443,
+        4104,
+        442,
+        4103
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        288,
+        989,
+        296,
+        988,
+        295
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4106,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4105,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        4102,
+        4107,
+        4108,
+        4106,
+        4105
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "children": [
+        620,
+        233,
+        288,
+        19
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        3866,
+        395,
+        3865,
+        394
+      ],
+      "kind": "cat",
+      "length": 62
+    },
+    {
+      "children": [
+        429,
+        681,
+        874,
+        680,
+        873
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 4112,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 4111,
+      "kind": "inv",
+      "length": 62
+    },
+    {
+      "children": [
+        4110,
+        4113,
+        4114,
+        4112,
+        4111
+      ],
+      "kind": "cat",
+      "length": 390
+    },
+    {
+      "child": 4115,
+      "kind": "inv",
+      "length": 390
+    },
+    {
+      "child": 4109,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "children": [
+        4101,
+        4116,
+        4117,
+        4115,
+        4109
+      ],
+      "kind": "cat",
+      "length": 1952
+    },
+    {
+      "children": [
+        480,
+        547,
+        429,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        84,
+        248,
+        1257,
+        247,
+        1256
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        1730,
+        364,
+        1727,
+        363
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 4121,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 4120,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        4119,
+        4122,
+        4123,
+        4121,
+        4120
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "children": [
+        485,
+        192,
+        484,
+        191
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 11,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 4127,
+      "kind": "inv",
+      "length": 11
+    },
+    {
+      "child": 4126,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        211,
+        4128,
+        4129,
+        4127,
+        4126
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "children": [
+        421,
+        969,
+        797,
+        968,
+        794
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 4131,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 4130,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        4125,
+        4132,
+        4133,
+        4131,
+        4130
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "children": [
+        49,
+        212,
+        48,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        211,
+        485,
+        486,
+        484,
+        483
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        1015,
+        1707,
+        258,
+        1706,
+        255
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 4137,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 4136,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        4135,
+        4138,
+        4139,
+        4137,
+        4136
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "child": 4140,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "child": 4134,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "children": [
+        4124,
+        4141,
+        4142,
+        4140,
+        4134
+      ],
+      "kind": "cat",
+      "length": 2132
+    },
+    {
+      "children": [
+        511,
+        510
+      ],
+      "kind": "cat",
+      "length": 36
+    },
+    {
+      "children": [
+        539,
+        115,
+        536,
+        114
+      ],
+      "kind": "cat",
+      "length": 62
+    },
+    {
+      "children": [
+        510,
+        2458,
+        2459,
+        2457,
+        2456
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4146,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4145,
+      "kind": "inv",
+      "length": 62
+    },
+    {
+      "children": [
+        4144,
+        4147,
+        4148,
+        4146,
+        4145
+      ],
+      "kind": "cat",
+      "length": 340
+    },
+    {
+      "children": [
+        187,
+        730,
+        186,
+        727
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "children": [
+        250,
+        959,
+        2900,
+        956,
+        2899
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 4152,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1592,
+        1522,
+        4153,
+        1521,
+        4152
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4154,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4151,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        4150,
+        4155,
+        4156,
+        4154,
+        4151
+      ],
+      "kind": "cat",
+      "length": 430
+    },
+    {
+      "children": [
+        611,
+        852,
+        610,
+        851
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        1282,
+        1868,
+        2459,
+        1865,
+        2456
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        1911,
+        995,
+        1674,
+        994,
+        6
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 4160,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 4159,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        4158,
+        4161,
+        4162,
+        4160,
+        4159
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "child": 4163,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "child": 4157,
+      "kind": "inv",
+      "length": 430
+    },
+    {
+      "children": [
+        4149,
+        4164,
+        4165,
+        4163,
+        4157
+      ],
+      "kind": "cat",
+      "length": 2040
+    },
+    {
+      "child": 4166,
+      "kind": "inv",
+      "length": 2040
+    },
+    {
+      "child": 4143,
+      "kind": "inv",
+      "length": 2132
+    },
+    {
+      "children": [
+        4118,
+        4167,
+        4168,
+        4166,
+        4143
+      ],
+      "kind": "cat",
+      "length": 10296
+    },
+    {
+      "children": [
+        285,
+        474,
+        284,
+        172
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        1286,
+        715,
+        1285,
+        712
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 4171,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 4170,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        4172,
+        4173,
+        4171,
+        4170
+      ],
+      "kind": "cat",
+      "length": 300
+    },
+    {
+      "children": [
+        285,
+        1187,
+        284,
+        149
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 4176,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1282,
+        841,
+        4177,
+        840,
+        4176
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        155,
+        2027,
+        1609,
+        393,
+        1053
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 4179,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 4178,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        4175,
+        4180,
+        4181,
+        4179,
+        4178
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "children": [
+        3954,
+        3505,
+        1632,
+        3504
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        372,
+        650,
+        513,
+        649,
+        512
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        288,
+        2795,
+        1065,
+        2794,
+        1062
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 4185,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 4184,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        4183,
+        4186,
+        4187,
+        4185,
+        4184
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "child": 4188,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "child": 4182,
+      "kind": "inv",
+      "length": 408
+    },
+    {
+      "children": [
+        4174,
+        4189,
+        4190,
+        4188,
+        4182
+      ],
+      "kind": "cat",
+      "length": 1956
+    },
+    {
+      "children": [
+        1303,
+        1201,
+        129,
+        294
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        84,
+        72,
+        296,
+        71,
+        295
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        429,
+        87,
+        43,
+        86,
+        42
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4194,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4193,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        4192,
+        4195,
+        4196,
+        4194,
+        4193
+      ],
+      "kind": "cat",
+      "length": 448
+    },
+    {
+      "children": [
+        248,
+        662,
+        247,
+        661
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 15,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 4199,
+      "kind": "inv",
+      "length": 15
+    },
+    {
+      "children": [
+        1622,
+        2033,
+        4200,
+        2032,
+        4199
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 4202,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        65,
+        1719,
+        4203,
+        1718,
+        4202
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4204,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4201,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        4198,
+        4205,
+        4206,
+        4204,
+        4201
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "children": [
+        340,
+        193,
+        339,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        1,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        4209,
+        2409,
+        981,
+        2408,
+        980
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        987,
+        386,
+        264,
+        385,
+        263
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 4211,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 4210,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        4208,
+        4212,
+        4213,
+        4211,
+        4210
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "child": 4214,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "child": 4207,
+      "kind": "inv",
+      "length": 438
+    },
+    {
+      "children": [
+        4197,
+        4215,
+        4216,
+        4214,
+        4207
+      ],
+      "kind": "cat",
+      "length": 2164
+    },
+    {
+      "children": [
+        943,
+        985,
+        942,
+        984
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        288,
+        734,
+        193,
+        733,
+        190
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 4219,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 4218,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        4220,
+        4221,
+        4219,
+        4218
+      ],
+      "kind": "cat",
+      "length": 332
+    },
+    {
+      "children": [
+        386,
+        193,
+        385,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 4224,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        2231,
+        4225,
+        2052,
+        4224,
+        2051
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "children": [
+        65,
+        110,
+        1337,
+        109,
+        1334
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4227,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4226,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        4223,
+        4228,
+        4229,
+        4227,
+        4226
+      ],
+      "kind": "cat",
+      "length": 428
+    },
+    {
+      "children": [
+        756,
+        302,
+        755,
+        301
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        1067,
+        3857,
+        974,
+        3854,
+        971
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "children": [
+        65,
+        1819,
+        1913,
+        1818,
+        1912
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4233,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4232,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "children": [
+        4231,
+        4234,
+        4235,
+        4233,
+        4232
+      ],
+      "kind": "cat",
+      "length": 412
+    },
+    {
+      "child": 4236,
+      "kind": "inv",
+      "length": 412
+    },
+    {
+      "child": 4230,
+      "kind": "inv",
+      "length": 428
+    },
+    {
+      "children": [
+        4222,
+        4237,
+        4238,
+        4236,
+        4230
+      ],
+      "kind": "cat",
+      "length": 2012
+    },
+    {
+      "child": 4239,
+      "kind": "inv",
+      "length": 2012
+    },
+    {
+      "child": 4217,
+      "kind": "inv",
+      "length": 2164
+    },
+    {
+      "children": [
+        4191,
+        4240,
+        4241,
+        4239,
+        4217
+      ],
+      "kind": "cat",
+      "length": 10308
+    },
+    {
+      "child": 4242,
+      "kind": "inv",
+      "length": 10308
+    },
+    {
+      "child": 4169,
+      "kind": "inv",
+      "length": 10296
+    },
+    {
+      "children": [
+        4096,
+        4243,
+        4244,
+        4242,
+        4169
+      ],
+      "kind": "cat",
+      "length": 50424
+    },
+    {
+      "children": [
+        78,
+        1518,
+        77,
+        1517
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        429,
+        412,
+        44,
+        411,
+        41
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 4247,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 4246,
+      "kind": "inv",
+      "length": 64
+    },
+    {
+      "children": [
+        4248,
+        4249,
+        4247,
+        4246
+      ],
+      "kind": "cat",
+      "length": 288
+    },
+    {
+      "children": [
+        84,
+        611,
+        486,
+        610,
+        483
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        206,
+        105,
+        203,
+        104
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 4252,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 4251,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        4253,
+        4254,
+        4252,
+        4251
+      ],
+      "kind": "cat",
+      "length": 324
+    },
+    {
+      "child": 4255,
+      "kind": "inv",
+      "length": 324
+    },
+    {
+      "child": 4250,
+      "kind": "inv",
+      "length": 288
+    },
+    {
+      "children": [
+        4256,
+        4257,
+        4255,
+        4250
+      ],
+      "kind": "cat",
+      "length": 1224
+    },
+    {
+      "children": [
+        248,
+        662,
+        247,
+        661
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        890,
+        193,
+        889,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 4260,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 4259,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "children": [
+        4261,
+        4262,
+        4260,
+        4259
+      ],
+      "kind": "cat",
+      "length": 292
+    },
+    {
+      "child": 1067,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "children": [
+        66,
+        4264,
+        65,
+        1067
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        2647,
+        92,
+        153,
+        91,
+        150
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 4267,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        65,
+        2377,
+        4268,
+        2376,
+        4267
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4269,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4266,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        4265,
+        4270,
+        4271,
+        4269,
+        4266
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "children": [
+        192,
+        212,
+        191,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        473,
+        72,
+        106,
+        71,
+        103
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        288,
+        1064,
+        852,
+        1063,
+        851
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4275,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4274,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        4273,
+        4276,
+        4277,
+        4275,
+        4274
+      ],
+      "kind": "cat",
+      "length": 448
+    },
+    {
+      "child": 4278,
+      "kind": "inv",
+      "length": 448
+    },
+    {
+      "child": 4272,
+      "kind": "inv",
+      "length": 440
+    },
+    {
+      "children": [
+        4263,
+        4279,
+        4280,
+        4278,
+        4272
+      ],
+      "kind": "cat",
+      "length": 2068
+    },
+    {
+      "children": [
+        248,
+        730,
+        247,
+        727
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        662,
+        264,
+        661,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "child": 4283,
+      "kind": "inv",
+      "length": 80
+    },
+    {
+      "child": 4282,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "children": [
+        4284,
+        4285,
+        4283,
+        4282
+      ],
+      "kind": "cat",
+      "length": 280
+    },
+    {
+      "children": [
+        485,
+        212,
+        484,
+        211
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        69,
+        431,
+        533,
+        430,
+        532
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        1437,
+        72,
+        106,
+        71,
+        103
+      ],
+      "kind": "cat",
+      "length": 95
+    },
+    {
+      "child": 4289,
+      "kind": "inv",
+      "length": 95
+    },
+    {
+      "child": 4288,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        4287,
+        4290,
+        4291,
+        4289,
+        4288
+      ],
+      "kind": "cat",
+      "length": 454
+    },
+    {
+      "children": [
+        192,
+        212,
+        191,
+        211
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        69,
+        1903,
+        2119,
+        1902,
+        2118
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "children": [
+        1015,
+        105,
+        153,
+        104,
+        150
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4295,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4294,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        4293,
+        4296,
+        4297,
+        4295,
+        4294
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "child": 4298,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "child": 4292,
+      "kind": "inv",
+      "length": 454
+    },
+    {
+      "children": [
+        4286,
+        4299,
+        4300,
+        4298,
+        4292
+      ],
+      "kind": "cat",
+      "length": 2028
+    },
+    {
+      "child": 4301,
+      "kind": "inv",
+      "length": 2028
+    },
+    {
+      "child": 4281,
+      "kind": "inv",
+      "length": 2068
+    },
+    {
+      "children": [
+        4258,
+        4302,
+        4303,
+        4301,
+        4281
+      ],
+      "kind": "cat",
+      "length": 9416
+    },
+    {
+      "children": [
+        66,
+        1016,
+        65,
+        1015
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        1128,
+        167,
+        1127,
+        164
+      ],
+      "kind": "cat",
+      "length": 62
+    },
+    {
+      "child": 4306,
+      "kind": "inv",
+      "length": 62
+    },
+    {
+      "child": 4305,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "children": [
+        4307,
+        4308,
+        4306,
+        4305
+      ],
+      "kind": "cat",
+      "length": 244
+    },
+    {
+      "children": [
+        2079,
+        1283,
+        1911,
+        1282
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        469,
+        49,
+        264,
+        48,
+        263
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        378,
+        989,
+        1913,
+        988,
+        1912
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 4312,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 4311,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        4310,
+        4313,
+        4314,
+        4312,
+        4311
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "child": 1634,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 732,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        4316,
+        4317,
+        1634,
+        732
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "children": [
+        4319,
+        2264,
+        3857,
+        2263,
+        3854
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "children": [
+        288,
+        386,
+        264,
+        385,
+        263
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 4321,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 4320,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        4318,
+        4322,
+        4323,
+        4321,
+        4320
+      ],
+      "kind": "cat",
+      "length": 450
+    },
+    {
+      "child": 4324,
+      "kind": "inv",
+      "length": 450
+    },
+    {
+      "child": 4315,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "children": [
+        4309,
+        4325,
+        4326,
+        4324,
+        4315
+      ],
+      "kind": "cat",
+      "length": 2032
+    },
+    {
+      "children": [
+        547,
+        620,
+        84,
+        288
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        489,
+        1840,
+        488,
+        1839
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        429,
+        248,
+        486,
+        247,
+        483
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 4330,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 4329,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        4328,
+        4331,
+        4332,
+        4330,
+        4329
+      ],
+      "kind": "cat",
+      "length": 400
+    },
+    {
+      "children": [
+        237,
+        821,
+        235,
+        820
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "children": [
+        4335,
+        2603,
+        206,
+        2602,
+        203
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        65,
+        650,
+        651,
+        649,
+        648
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 4337,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 4336,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        4334,
+        4338,
+        4339,
+        4337,
+        4336
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "children": [
+        729,
+        237,
+        728,
+        235
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "child": 4342,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1282,
+        4343,
+        159,
+        4342,
+        156
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 4346,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 4345,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1911,
+        4347,
+        4348,
+        4346,
+        4345
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4349,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4344,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "children": [
+        4341,
+        4350,
+        4351,
+        4349,
+        4344
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "child": 4352,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "child": 4340,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "children": [
+        4333,
+        4353,
+        4354,
+        4352,
+        4340
+      ],
+      "kind": "cat",
+      "length": 2156
+    },
+    {
+      "children": [
+        495,
+        1201,
+        494,
+        294
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        84,
+        1867,
+        1245,
+        1866,
+        1244
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        429,
+        746,
+        88,
+        745,
+        85
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 4358,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 4357,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        4356,
+        4359,
+        4360,
+        4358,
+        4357
+      ],
+      "kind": "cat",
+      "length": 440
+    },
+    {
+      "children": [
+        756,
+        2066,
+        755,
+        2065
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        732,
+        87,
+        953,
+        86,
+        952
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        1634,
+        651,
+        4129,
+        648,
+        4126
+      ],
+      "kind": "cat",
+      "length": 97
+    },
+    {
+      "child": 4364,
+      "kind": "inv",
+      "length": 97
+    },
+    {
+      "child": 4363,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        4362,
+        4365,
+        4366,
+        4364,
+        4363
+      ],
+      "kind": "cat",
+      "length": 456
+    },
+    {
+      "children": [
+        236,
+        264,
+        31,
+        263
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        1155,
+        743,
+        3156,
+        742,
+        3155
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 4370,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "children": [
+        1437,
+        4371,
+        4128,
+        4370,
+        4127
+      ],
+      "kind": "cat",
+      "length": 75
+    },
+    {
+      "child": 4372,
+      "kind": "inv",
+      "length": 75
+    },
+    {
+      "child": 4369,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        4368,
+        4373,
+        4374,
+        4372,
+        4369
+      ],
+      "kind": "cat",
+      "length": 406
+    },
+    {
+      "child": 4375,
+      "kind": "inv",
+      "length": 406
+    },
+    {
+      "child": 4367,
+      "kind": "inv",
+      "length": 456
+    },
+    {
+      "children": [
+        4361,
+        4376,
+        4377,
+        4375,
+        4367
+      ],
+      "kind": "cat",
+      "length": 2164
+    },
+    {
+      "child": 4378,
+      "kind": "inv",
+      "length": 2164
+    },
+    {
+      "child": 4355,
+      "kind": "inv",
+      "length": 2156
+    },
+    {
+      "children": [
+        4327,
+        4379,
+        4380,
+        4378,
+        4355
+      ],
+      "kind": "cat",
+      "length": 10672
+    },
+    {
+      "children": [
+        1156,
+        1157,
+        94,
+        1155
+      ],
+      "kind": "cat",
+      "length": 48
+    },
+    {
+      "children": [
+        1160,
+        3545,
+        1159,
+        1600
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "child": 4383,
+      "kind": "inv",
+      "length": 60
+    },
+    {
+      "child": 4382,
+      "kind": "inv",
+      "length": 48
+    },
+    {
+      "children": [
+        4384,
+        4385,
+        4383,
+        4382
+      ],
+      "kind": "cat",
+      "length": 216
+    },
+    {
+      "children": [
+        232,
+        233,
+        40,
+        19
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        473,
+        248,
+        264,
+        247,
+        263
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        284,
+        248,
+        264,
+        247,
+        263
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 4389,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 4388,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        4387,
+        4390,
+        4391,
+        4389,
+        4388
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "children": [
+        373,
+        1145,
+        372,
+        1142
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "children": [
+        294,
+        105,
+        153,
+        104,
+        150
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        19,
+        72,
+        291,
+        71,
+        290
+      ],
+      "kind": "cat",
+      "length": 91
+    },
+    {
+      "child": 4395,
+      "kind": "inv",
+      "length": 91
+    },
+    {
+      "child": 4394,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        4393,
+        4396,
+        4397,
+        4395,
+        4394
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "child": 4398,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "child": 4392,
+      "kind": "inv",
+      "length": 438
+    },
+    {
+      "children": [
+        4386,
+        4399,
+        4400,
+        4398,
+        4392
+      ],
+      "kind": "cat",
+      "length": 1976
+    },
+    {
+      "children": [
+        84,
+        1775,
+        1894,
+        1774,
+        1891
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        288,
+        874,
+        626,
+        873,
+        625
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 4403,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 4402,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        4404,
+        4405,
+        4403,
+        4402
+      ],
+      "kind": "cat",
+      "length": 372
+    },
+    {
+      "children": [
+        248,
+        193,
+        247,
+        190
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        1935,
+        2693,
+        317,
+        2692,
+        314
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "children": [
+        4409,
+        981,
+        44,
+        980,
+        41
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 4410,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 4408,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        4407,
+        4411,
+        4412,
+        4410,
+        4408
+      ],
+      "kind": "cat",
+      "length": 420
+    },
+    {
+      "children": [
+        340,
+        821,
+        339,
+        820
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        1015,
+        407,
+        153,
+        406,
+        150
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "child": 4416,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        65,
+        348,
+        4417,
+        347,
+        4416
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4418,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4415,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        4414,
+        4419,
+        4420,
+        4418,
+        4415
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "child": 4421,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "child": 4413,
+      "kind": "inv",
+      "length": 420
+    },
+    {
+      "children": [
+        4406,
+        4422,
+        4423,
+        4421,
+        4413
+      ],
+      "kind": "cat",
+      "length": 2084
+    },
+    {
+      "children": [
+        480,
+        511,
+        429,
+        510
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        239,
+        159,
+        1306,
+        156,
+        1305
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "children": [
+        510,
+        340,
+        193,
+        339,
+        190
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4427,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4426,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "children": [
+        4425,
+        4428,
+        4429,
+        4427,
+        4426
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "children": [
+        236,
+        568,
+        31,
+        250
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        2733,
+        1257,
+        604,
+        1256,
+        601
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        1592,
+        1028,
+        4128,
+        1027,
+        4127
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 4433,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 4432,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        4431,
+        4434,
+        4435,
+        4433,
+        4432
+      ],
+      "kind": "cat",
+      "length": 404
+    },
+    {
+      "children": [
+        2811,
+        1129,
+        1047,
+        531
+      ],
+      "kind": "cat",
+      "length": 52
+    },
+    {
+      "children": [
+        531,
+        3697,
+        1229,
+        3694,
+        1228
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        1047,
+        205,
+        364,
+        204,
+        363
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4439,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4438,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        4437,
+        4440,
+        4441,
+        4439,
+        4438
+      ],
+      "kind": "cat",
+      "length": 416
+    },
+    {
+      "child": 4442,
+      "kind": "inv",
+      "length": 416
+    },
+    {
+      "child": 4436,
+      "kind": "inv",
+      "length": 404
+    },
+    {
+      "children": [
+        4430,
+        4443,
+        4444,
+        4442,
+        4436
+      ],
+      "kind": "cat",
+      "length": 2084
+    },
+    {
+      "child": 4445,
+      "kind": "inv",
+      "length": 2084
+    },
+    {
+      "child": 4424,
+      "kind": "inv",
+      "length": 2084
+    },
+    {
+      "children": [
+        4401,
+        4446,
+        4447,
+        4445,
+        4424
+      ],
+      "kind": "cat",
+      "length": 10312
+    },
+    {
+      "child": 4448,
+      "kind": "inv",
+      "length": 10312
+    },
+    {
+      "child": 4381,
+      "kind": "inv",
+      "length": 10672
+    },
+    {
+      "children": [
+        4304,
+        4449,
+        4450,
+        4448,
+        4381
+      ],
+      "kind": "cat",
+      "length": 51384
+    },
+    {
+      "children": [
+        480,
+        429
+      ],
+      "kind": "cat",
+      "length": 36
+    },
+    {
+      "children": [
+        84,
+        989,
+        877,
+        988,
+        876
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        72,
+        364,
+        71,
+        363
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "child": 4454,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "child": 4453,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        4455,
+        4456,
+        4454,
+        4453
+      ],
+      "kind": "cat",
+      "length": 336
+    },
+    {
+      "children": [
+        943,
+        364,
+        942,
+        363
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        429,
+        485,
+        241,
+        484,
+        240
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 4459,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 4458,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        4452,
+        4460,
+        4461,
+        4459,
+        4458
+      ],
+      "kind": "cat",
+      "length": 384
+    },
+    {
+      "child": 4462,
+      "kind": "inv",
+      "length": 384
+    },
+    {
+      "child": 4457,
+      "kind": "inv",
+      "length": 336
+    },
+    {
+      "children": [
+        4463,
+        4464,
+        4462,
+        4457
+      ],
+      "kind": "cat",
+      "length": 1440
+    },
+    {
+      "children": [
+        1306,
+        55,
+        1305,
+        54
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        429,
+        485,
+        981,
+        484,
+        980
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 4467,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 4466,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        4468,
+        4469,
+        4467,
+        4466
+      ],
+      "kind": "cat",
+      "length": 332
+    },
+    {
+      "children": [
+        187,
+        380,
+        186,
+        379
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "child": 4472,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        2649,
+        3867,
+        4473,
+        3864,
+        4472
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 17,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 4476,
+      "kind": "inv",
+      "length": 17
+    },
+    {
+      "child": 4475,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        3910,
+        4477,
+        4478,
+        4476,
+        4475
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 4479,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 4474,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        4471,
+        4480,
+        4481,
+        4479,
+        4474
+      ],
+      "kind": "cat",
+      "length": 410
+    },
+    {
+      "child": 90,
+      "kind": "inv",
+      "length": 14
+    },
+    {
+      "children": [
+        4483,
+        982,
+        90,
+        979
+      ],
+      "kind": "cat",
+      "length": 66
+    },
+    {
+      "children": [
+        124,
+        1903,
+        3832,
+        1902,
+        3831
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        3024,
+        513,
+        44,
+        512,
+        41
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 4486,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 4485,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        4484,
+        4487,
+        4488,
+        4486,
+        4485
+      ],
+      "kind": "cat",
+      "length": 398
+    },
+    {
+      "child": 4489,
+      "kind": "inv",
+      "length": 398
+    },
+    {
+      "child": 4482,
+      "kind": "inv",
+      "length": 410
+    },
+    {
+      "children": [
+        4470,
+        4490,
+        4491,
+        4489,
+        4482
+      ],
+      "kind": "cat",
+      "length": 1948
+    },
+    {
+      "children": [
+        84,
+        248,
+        1257,
+        247,
+        1256
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        3499,
+        1684,
+        3496,
+        1683
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "child": 4494,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "child": 4493,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        4495,
+        4496,
+        4494,
+        4493
+      ],
+      "kind": "cat",
+      "length": 332
+    },
+    {
+      "children": [
+        412,
+        413,
+        411,
+        410
+      ],
+      "kind": "cat",
+      "length": 64
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "child": 4500,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "child": 4499,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        393,
+        4501,
+        4502,
+        4500,
+        4499
+      ],
+      "kind": "cat",
+      "length": 82
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 4504,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        1822,
+        1872,
+        4505,
+        1871,
+        4504
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 4506,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 4503,
+      "kind": "inv",
+      "length": 82
+    },
+    {
+      "children": [
+        4498,
+        4507,
+        4508,
+        4506,
+        4503
+      ],
+      "kind": "cat",
+      "length": 400
+    },
+    {
+      "children": [
+        989,
+        2039,
+        988,
+        1713
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        4511,
+        1523,
+        3175,
+        1520,
+        3174
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        -2,
+        -1,
+        2,
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "child": 4514,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "child": 4513,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        1367,
+        4515,
+        4516,
+        4514,
+        4513
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "child": 4517,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "child": 4512,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        4510,
+        4518,
+        4519,
+        4517,
+        4512
+      ],
+      "kind": "cat",
+      "length": 418
+    },
+    {
+      "child": 4520,
+      "kind": "inv",
+      "length": 418
+    },
+    {
+      "child": 4509,
+      "kind": "inv",
+      "length": 400
+    },
+    {
+      "children": [
+        4497,
+        4521,
+        4522,
+        4520,
+        4509
+      ],
+      "kind": "cat",
+      "length": 1968
+    },
+    {
+      "child": 4523,
+      "kind": "inv",
+      "length": 1968
+    },
+    {
+      "child": 4492,
+      "kind": "inv",
+      "length": 1948
+    },
+    {
+      "children": [
+        4465,
+        4524,
+        4525,
+        4523,
+        4492
+      ],
+      "kind": "cat",
+      "length": 9272
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 4527,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        4528,
+        3273,
+        4527,
+        3272
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        199,
+        212,
+        198,
+        211
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 4530,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 4529,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        4531,
+        4532,
+        4530,
+        4529
+      ],
+      "kind": "cat",
+      "length": 300
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 220,
+      "kind": "inv",
+      "length": 12
+    },
+    {
+      "child": 4534,
+      "kind": "inv",
+      "length": 10
+    },
+    {
+      "children": [
+        4535,
+        4536,
+        220,
+        4534
+      ],
+      "kind": "cat",
+      "length": 44
+    },
+    {
+      "children": [
+        19,
+        2176,
+        2843,
+        2175,
+        2842
+      ],
+      "kind": "cat",
+      "length": 93
+    },
+    {
+      "children": [
+        284,
+        187,
+        188,
+        186,
+        185
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 4539,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 4538,
+      "kind": "inv",
+      "length": 93
+    },
+    {
+      "children": [
+        4537,
+        4540,
+        4541,
+        4539,
+        4538
+      ],
+      "kind": "cat",
+      "length": 422
+    },
+    {
+      "children": [
+        1746,
+        127,
+        1745,
+        124
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        129,
+        248,
+        340,
+        247,
+        339
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "children": [
+        135,
+        1586,
+        550,
+        1585,
+        549
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4545,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4544,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        4543,
+        4546,
+        4547,
+        4545,
+        4544
+      ],
+      "kind": "cat",
+      "length": 436
+    },
+    {
+      "child": 4548,
+      "kind": "inv",
+      "length": 436
+    },
+    {
+      "child": 4542,
+      "kind": "inv",
+      "length": 422
+    },
+    {
+      "children": [
+        4533,
+        4549,
+        4550,
+        4548,
+        4542
+      ],
+      "kind": "cat",
+      "length": 2016
+    },
+    {
+      "children": [
+        620,
+        475,
+        288,
+        473
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        155,
+        2792,
+        954,
+        2791,
+        951
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "children": [
+        288,
+        43,
+        193,
+        42,
+        190
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4554,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4553,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "children": [
+        4552,
+        4555,
+        4556,
+        4554,
+        4553
+      ],
+      "kind": "cat",
+      "length": 432
+    },
+    {
+      "children": [
+        248,
+        340,
+        247,
+        339
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        535,
+        187,
+        675,
+        186,
+        674
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        987,
+        87,
+        1028,
+        86,
+        1027
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 4560,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 4559,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        4558,
+        4561,
+        4562,
+        4560,
+        4559
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 4564,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        4565,
+        1674,
+        4564,
+        6
+      ],
+      "kind": "cat",
+      "length": 68
+    },
+    {
+      "children": [
+        4409,
+        170,
+        797,
+        169,
+        794
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "kind": "seq",
+      "length": 10,
+      "letters": [
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "children": [
+        4568,
+        1613,
+        1697,
+        1612,
+        1696
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "child": 4569,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "child": 4567,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        4566,
+        4570,
+        4571,
+        4569,
+        4567
+      ],
+      "kind": "cat",
+      "length": 408
+    },
+    {
+      "child": 4572,
+      "kind": "inv",
+      "length": 408
+    },
+    {
+      "child": 4563,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "children": [
+        4557,
+        4573,
+        4574,
+        4572,
+        4563
+      ],
+      "kind": "cat",
+      "length": 2136
+    },
+    {
+      "children": [
+        373,
+        233,
+        372,
+        19
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        429,
+        981,
+        982,
+        980,
+        979
+      ],
+      "kind": "cat",
+      "length": 86
+    },
+    {
+      "children": [
+        155,
+        829,
+        626,
+        828,
+        625
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "child": 4578,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "child": 4577,
+      "kind": "inv",
+      "length": 86
+    },
+    {
+      "children": [
+        4576,
+        4579,
+        4580,
+        4578,
+        4577
+      ],
+      "kind": "cat",
+      "length": 438
+    },
+    {
+      "children": [
+        248,
+        662,
+        247,
+        661
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "children": [
+        345,
+        796,
+        264,
+        795,
+        263
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "kind": "seq",
+      "length": 19,
+      "letters": [
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 4584,
+      "kind": "inv",
+      "length": 19
+    },
+    {
+      "children": [
+        65,
+        4585,
+        1523,
+        4584,
+        1520
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 4586,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 4583,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        4582,
+        4587,
+        4588,
+        4586,
+        4583
+      ],
+      "kind": "cat",
+      "length": 446
+    },
+    {
+      "children": [
+        386,
+        193,
+        385,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -1,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "children": [
+        4591,
+        353,
+        364,
+        352,
+        363
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        1219,
+        72,
+        522,
+        71,
+        521
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 4593,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 4592,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        4590,
+        4594,
+        4595,
+        4593,
+        4592
+      ],
+      "kind": "cat",
+      "length": 444
+    },
+    {
+      "child": 4596,
+      "kind": "inv",
+      "length": 444
+    },
+    {
+      "child": 4589,
+      "kind": "inv",
+      "length": 446
+    },
+    {
+      "children": [
+        4581,
+        4597,
+        4598,
+        4596,
+        4589
+      ],
+      "kind": "cat",
+      "length": 2218
+    },
+    {
+      "child": 4599,
+      "kind": "inv",
+      "length": 2218
+    },
+    {
+      "child": 4575,
+      "kind": "inv",
+      "length": 2136
+    },
+    {
+      "children": [
+        4551,
+        4600,
+        4601,
+        4599,
+        4575
+      ],
+      "kind": "cat",
+      "length": 10724
+    },
+    {
+      "children": [
+        66,
+        437,
+        65,
+        436
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "child": 4604,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        4605,
+        167,
+        4604,
+        164
+      ],
+      "kind": "cat",
+      "length": 74
+    },
+    {
+      "child": 4606,
+      "kind": "inv",
+      "length": 74
+    },
+    {
+      "child": 4603,
+      "kind": "inv",
+      "length": 76
+    },
+    {
+      "children": [
+        4607,
+        4608,
+        4606,
+        4603
+      ],
+      "kind": "cat",
+      "length": 300
+    },
+    {
+      "children": [
+        146,
+        3653,
+        145,
+        520
+      ],
+      "kind": "cat",
+      "length": 80
+    },
+    {
+      "children": [
+        1142,
+        550,
+        1257,
+        549,
+        1256
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "children": [
+        469,
+        264,
+        485,
+        263,
+        484
+      ],
+      "kind": "cat",
+      "length": 100
+    },
+    {
+      "child": 4612,
+      "kind": "inv",
+      "length": 100
+    },
+    {
+      "child": 4611,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "children": [
+        4610,
+        4613,
+        4614,
+        4612,
+        4611
+      ],
+      "kind": "cat",
+      "length": 460
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "child": 4616,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "children": [
+        588,
+        4617,
+        585,
+        4616
+      ],
+      "kind": "cat",
+      "length": 56
+    },
+    {
+      "children": [
+        1634,
+        72,
+        78,
+        71,
+        77
+      ],
+      "kind": "cat",
+      "length": 85
+    },
+    {
+      "children": [
+        1282,
+        49,
+        237,
+        48,
+        235
+      ],
+      "kind": "cat",
+      "length": 92
+    },
+    {
+      "child": 4620,
+      "kind": "inv",
+      "length": 92
+    },
+    {
+      "child": 4619,
+      "kind": "inv",
+      "length": 85
+    },
+    {
+      "children": [
+        4618,
+        4621,
+        4622,
+        4620,
+        4619
+      ],
+      "kind": "cat",
+      "length": 410
+    },
+    {
+      "child": 4623,
+      "kind": "inv",
+      "length": 410
+    },
+    {
+      "child": 4615,
+      "kind": "inv",
+      "length": 460
+    },
+    {
+      "children": [
+        4609,
+        4624,
+        4625,
+        4623,
+        4615
+      ],
+      "kind": "cat",
+      "length": 2040
+    },
+    {
+      "children": [
+        285,
+        547,
+        284,
+        84
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        510,
+        1306,
+        1169,
+        1305,
+        1168
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        429,
+        72,
+        682,
+        71,
+        679
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4629,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4628,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        4627,
+        4630,
+        4631,
+        4629,
+        4628
+      ],
+      "kind": "cat",
+      "length": 456
+    },
+    {
+      "children": [
+        248,
+        730,
+        247,
+        727
+      ],
+      "kind": "cat",
+      "length": 60
+    },
+    {
+      "children": [
+        1159,
+        224,
+        153,
+        221,
+        150
+      ],
+      "kind": "cat",
+      "length": 70
+    },
+    {
+      "children": [
+        1641,
+        2319,
+        662,
+        2318,
+        661
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "child": 4635,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "child": 4634,
+      "kind": "inv",
+      "length": 70
+    },
+    {
+      "children": [
+        4633,
+        4636,
+        4637,
+        4635,
+        4634
+      ],
+      "kind": "cat",
+      "length": 376
+    },
+    {
+      "children": [
+        340,
+        193,
+        339,
+        190
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "children": [
+        3930,
+        218,
+        1597,
+        215,
+        1596
+      ],
+      "kind": "cat",
+      "length": 72
+    },
+    {
+      "kind": "seq",
+      "length": 18,
+      "letters": [
+        -2,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "child": 4641,
+      "kind": "inv",
+      "length": 18
+    },
+    {
+      "children": [
+        4568,
+        4642,
+        1230,
+        4641,
+        1227
+      ],
+      "kind": "cat",
+      "length": 84
+    },
+    {
+      "child": 4643,
+      "kind": "inv",
+      "length": 84
+    },
+    {
+      "child": 4640,
+      "kind": "inv",
+      "length": 72
+    },
+    {
+      "children": [
+        4639,
+        4644,
+        4645,
+        4643,
+        4640
+      ],
+      "kind": "cat",
+      "length": 384
+    },
+    {
+      "child": 4646,
+      "kind": "inv",
+      "length": 384
+    },
+    {
+      "child": 4638,
+      "kind": "inv",
+      "length": 376
+    },
+    {
+      "children": [
+        4632,
+        4647,
+        4648,
+        4646,
+        4638
+      ],
+      "kind": "cat",
+      "length": 1976
+    },
+    {
+      "children": [
+        474,
+        547,
+        172,
+        84
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "children": [
+        84,
+        485,
+        1623,
+        484,
+        1622
+      ],
+      "kind": "cat",
+      "length": 98
+    },
+    {
+      "children": [
+        239,
+        779,
+        206,
+        778,
+        203
+      ],
+      "kind": "cat",
+      "length": 90
+    },
+    {
+      "child": 4652,
+      "kind": "inv",
+      "length": 90
+    },
+    {
+      "child": 4651,
+      "kind": "inv",
+      "length": 98
+    },
+    {
+      "children": [
+        4650,
+        4653,
+        4654,
+        4652,
+        4651
+      ],
+      "kind": "cat",
+      "length": 452
+    },
+    {
+      "children": [
+        187,
+        340,
+        186,
+        339
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        1481,
+        943,
+        694,
+        942,
+        693
+      ],
+      "kind": "cat",
+      "length": 88
+    },
+    {
+      "kind": "seq",
+      "length": 20,
+      "letters": [
+        2,
+        1,
+        -2,
+        -1,
+        2,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "child": 4658,
+      "kind": "inv",
+      "length": 20
+    },
+    {
+      "children": [
+        1053,
+        550,
+        4659,
+        549,
+        4658
+      ],
+      "kind": "cat",
+      "length": 94
+    },
+    {
+      "child": 4660,
+      "kind": "inv",
+      "length": 94
+    },
+    {
+      "child": 4657,
+      "kind": "inv",
+      "length": 88
+    },
+    {
+      "children": [
+        4656,
+        4661,
+        4662,
+        4660,
+        4657
+      ],
+      "kind": "cat",
+      "length": 442
+    },
+    {
+      "children": [
+        3223,
+        4528,
+        3222,
+        4527
+      ],
+      "kind": "cat",
+      "length": 76
+    },
+    {
+      "kind": "seq",
+      "length": 13,
+      "letters": [
+        2,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "kind": "seq",
+      "length": 16,
+      "letters": [
+        2,
+        2,
+        -1,
+        2,
+        -1,
+        -2,
+        -1,
+        -1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "child": 4666,
+      "kind": "inv",
+      "length": 16
+    },
+    {
+      "child": 4665,
+      "kind": "inv",
+      "length": 13
+    },
+    {
+      "children": [
+        713,
+        4667,
+        4668,
+        4666,
+        4665
+      ],
+      "kind": "cat",
+      "length": 78
+    },
+    {
+      "children": [
+        1403,
+        1754,
+        44,
+        1753,
+        41
+      ],
+      "kind": "cat",
+      "length": 96
+    },
+    {
+      "child": 4670,
+      "kind": "inv",
+      "length": 96
+    },
+    {
+      "child": 4669,
+      "kind": "inv",
+      "length": 78
+    },
+    {
+      "children": [
+        4664,
+        4671,
+        4672,
+        4670,
+        4669
+      ],
+      "kind": "cat",
+      "length": 424
+    },
+    {
+      "child": 4673,
+      "kind": "inv",
+      "length": 424
+    },
+    {
+      "child": 4663,
+      "kind": "inv",
+      "length": 442
+    },
+    {
+      "children": [
+        4655,
+        4674,
+        4675,
+        4673,
+        4663
+      ],
+      "kind": "cat",
+      "length": 2184
+    },
+    {
+      "child": 4676,
+      "kind": "inv",
+      "length": 2184
+    },
+    {
+      "child": 4649,
+      "kind": "inv",
+      "length": 1976
+    },
+    {
+      "children": [
+        4626,
+        4677,
+        4678,
+        4676,
+        4649
+      ],
+      "kind": "cat",
+      "length": 10360
+    },
+    {
+      "child": 4679,
+      "kind": "inv",
+      "length": 10360
+    },
+    {
+      "child": 4602,
+      "kind": "inv",
+      "length": 10724
+    },
+    {
+      "children": [
+        4526,
+        4680,
+        4681,
+        4679,
+        4602
+      ],
+      "kind": "cat",
+      "length": 51440
+    },
+    {
+      "child": 4682,
+      "kind": "inv",
+      "length": 51440
+    },
+    {
+      "child": 4451,
+      "kind": "inv",
+      "length": 51384
+    },
+    {
+      "children": [
+        4245,
+        4683,
+        4684,
+        4682,
+        4451
+      ],
+      "kind": "cat",
+      "length": 256072
+    },
+    {
+      "child": 4685,
+      "kind": "inv",
+      "length": 256072
+    },
+    {
+      "child": 4034,
+      "kind": "inv",
+      "length": 253360
+    },
+    {
+      "children": [
+        3357,
+        4686,
+        4687,
+        4685,
+        4034
+      ],
+      "kind": "cat",
+      "length": 1282350
+    }
+  ],
+  "physical_admission": false,
+  "schema": "d0.so3-sk-signed-word/1",
+  "semantics": "chronological children; later matrices multiply on left",
+  "targets": [
+    {
+      "SO3_operator_error_numerical": "5.40314149498376286508830783304875406775502214e-41",
+      "abstract_letter_length": 1270627,
+      "depth": 7,
+      "endpoint_SO3": [
+        [
+          "0.7861513777574232860695585858429589295231368606259351502973254711932835459828743561271725309869735259",
+          "-0.6180339887498948482045868343656381177202903503682897140371304689310849064797016955708777577981506578",
+          "-1.399390707836614009356291418401810194688420742999201158823172023425057657750739819490672272471332967e-41"
+        ],
+        [
+          "0.6180339887498948482045868343656381177202903503682897140371304689310849064797016954771366586945692483",
+          "0.7861513777574232860695585858429589295231368606259351502973254711932835459828743549580628927708727506",
+          "4.636695064118038164766690924289873504136381933355490847577437805674689832392356933755180606463993431e-41"
+        ],
+        [
+          "-1.765502212107130668086959175265846732527127613942164276822113953460853635632613359793209292221125294e-41",
+          "-4.510015233881241096787859148682898287057332115681192148945554302393621598758984857665793890980858541e-41",
+          "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999988271382264601981181"
+        ]
+      ],
+      "endpoint_quaternion": [
+        "-0.9450268191319819062285046480515648047179625267933317258575866379983291008136656516014921391282036985",
+        "2.419695958047158585826510514000751988419029223315709595972529212641925343519998829453765638776706789e-41",
+        "-9.685214664246098368820183967353761945174651302666738255259566849090337458690377967978081365979815347e-43",
+        "-0.3269928303820870580239178136859266869976381136526585664428419939949177255421206385060892394648210765"
+      ],
+      "error_times_abstract_length": "6.86537746834673365797856131698323923484936051e-35",
+      "name": "theta_G",
+      "root": 2638
+    },
+    {
+      "SO3_operator_error_numerical": "4.39791526131187487138363098854153530764641989e-40",
+      "abstract_letter_length": 1282350,
+      "depth": 7,
+      "endpoint_SO3": [
+        [
+          "2.919288543625746132166458851408562801696527158709285805774266253204486433241445991245584530843561771e-40",
+          "-0.9999999999999999999999999999999999999999999999999999999999999999999999999999999035447089050752777425",
+          "-3.281586905452972240877692542915580489079851133302197691870163933159508349265490398480217247517088855e-40"
+        ],
+        [
+          "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999571357698618025896967",
+          "2.919288543625746132166458851408562801696453340925962894343664180870343725079393082475620520274873078e-40",
+          "2.249453860272581415718599755997643021986212776319455052415730382032549361589664513090116287509281764e-41"
+        ],
+        [
+          "-2.249453860272581415718599755997643021976632877261453926014183801653027701524030824990643486829861084e-41",
+          "-3.281586905452972240877692542915580489079916801351034776438528878221229399707765902043834477195195894e-40",
+          "0.9999999999999999999999999999999999999999999999999999999999999999999999999999999459029347763231662223"
+        ]
+      ],
+      "endpoint_quaternion": [
+        "-0.7071067811865475244008443621048490392849391501247459348616930967229795568204254381837220828166074827",
+        "1.239746380877637174539779474315906478475843538670558426880115648024519605334006997057560350459775571e-40",
+        "1.080685973021137286908081994197221339882775016447606947932256456949469159321229781596790150764469436e-40",
+        "-0.7071067811865475244008443621048490392847327252522021383149866412677529216416815664751204821218581729"
+      ],
+      "error_times_abstract_length": "5.63966663534328274131879919815623780176038655e-34",
+      "name": "quarter",
+      "root": 4688
+    }
+  ],
+  "theta_G": "0.6662394324925152551040048959777927206674901387259478428314738428039789893790592817079068311695811353"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -14633,3 +14633,219 @@ Only the final reference/review/provenance notes followed those checks;
 no executable proof, registry or lifecycle input changed. No mathematical
 replay or new independent acceptance is claimed. Both original owned
 files remain exact prefixes; publication and remote blob verification follow.
+
+
+## 26 October: consume the owned conditional compiler on the specified recorder
+
+Phase: native realization; bounded implementation inside SAME#334, not a
+new scientific execution/task. Parent7by622/7bz633/7cb647 stillrequires
+actual reciprocalcontroller. Currentpublishedinput1ac29e4d; existing
+7aq374--376 and7at fixedpacket extension ALREADYprove density/exactfalse
+branches; no new universality/rank/geometry theorem is delegated.
+Exact target is7cb649's specified5stage realSO16 recorder, notunknown
+readerStinespringcolumn. Requiredoutput: actualinverse-closed owned
+controlled-letter Word/DAG, all-column errorcertificate, nativeinventory,
+actualclock/helperbounds anddelta*length check. Approximation debt MUST
+remain infeedback/cut/source comparison; What!=W cannotinherit exact
+647 orprojection normals. Originalphysicalinternalplacement, actual
+pairedboundary, fieldgraph andCost/Info remainopen.
+
+Native compilation interface remains addressedG/CX plusdedicatedSourceI
+helper/Spin, restoredallcolumns; predicateflags/targets/helper disjoint.
+No newangle/oracle/primitive. Readonlysource audits found no installed
+generalSO/SK synthesizer: native_holonomy.py3 anditschecker flag
+general_SK_compiler_implemented=False;7aq saysnoinstalledcompiler, and
+7bo's interval-certified SELECT usespreselectedFourier recipes. Reuse
+those actualphase/Word machinery forcertification, notasanabsentsearch.
+Actual helper/native source physicalmap stays itsoriginalhypothesis.
+
+Bounded implementation substeps maywriteONLYprivate/tmp prototypes; root
+willintegrate acceptedprovenance/codein the TWOexistingownedpaths. One
+helper supplies a smallSO3/SU2 inverse-closed net/commutator compiler for
+2plane nativeGolden generators; one supplies plane/predicate native
+expansion andinterval/count binding. Theyare implementationassistants,
+notindependentscientificowners andmint no tasks/branches/PRs. Rootowns
+SO16 factorization, target/source application andfinalall-column check.
+
+Norm is operatornorm (Frobeniuscertificate mayupperbound it), fullnative
+length L andactual dual-sourcebudget, notsuccessprobability. Naive
+continued-fraction power O(1/delta) is insufficientfor the alreadyowned
+delta*L budget. UseownedSK existence plusan actualcomputed word/net;
+no globalrate/complexity claim fromone run. Smallestdecisivecheck is
+explicitcontrollerendpoint versus specifiedfullSO16 target, with ALL
+falsebranch/helper/Spin columns andnativeleafinventory retained.
+No fullGR/oldroot/largeheat replay iscalledfor beforethatwordexists.
+
+
+## 26 October: returned fixed-recorder controller and an independently replayed word certificate
+
+SAME#334; phase native realization/supporting implementation, notnewtask
+oracceptedphysicalparent. Primary7cf680--686 containsactualcode plus
+immutableDAG, exactfieldfactor andoutwardintegercertificate for the
+prescribedODD-Grecorder7cb649. Initialprototypeworkwasdispatchedbefore
+incomingf9dea612/c7009624's7cc; thatSHORTEXACTeven-G/controller/coherent
+cutresult isretainedbyteexact andalreadyusableonitsownHermitiantarget.
+Itisnotmadeconditionalonoursynthetic8Bword or a newreadoutrequirement.
+Theactualtasks/cutsdiffer; source/observationequivalencecanjustifyusing
+onefortheotheronlywithitsprovedmap. Thispacketdoesnotclaimoneparticular
+microscopicword necessaryforGR. No GRresultnode/discharge/publicclaim.
+
+Changedinput:7aq/7at'sownedconditionalSOexistence nowhasa returnedfinite
+signedword forSPECIFIEDknownrealWORKW649, notunknownreaderStinespring.
+ExactQRofW649 checksall256entries inQ(a),21Givens/5anglepairs. OnlythetaG
+andquarterneedSKsearch; frozenheuristicnet isnotclaimedaglobalcover.
+Returnedbundle628010/SHA256
+0d5d7fab0dcd22b06be115afb2da60164546c83daacf0d9be0abadf8e1d4c5ee
+has4689reachableDAGnodes,30,682,616embeddedabstractplaneletters.
+Allchronology,inversecounts andbothaxiscounts recomputedindependently.
+Candidatefloat/quaternioneps doesnotcertifyanything.
+
+ExactnativeplaneMacroG32+SI32+CX(70+2t),N134+2t uses16Fouriercells,
+allGphysicalhelper, completehelper/Spinrestoration andexactfalseI.
+Freshsignedinverse isnotownedliteralrawinverse(N326+2t). All72usedsigned
+macrosarematerialized/grammarvalidated. TwoactualALL256columnfixtures
+checkordinary+nontrivialsign/linearconjugation. One817stageglobaltagged
+subwordfixturechecksALL512columns includingdirtyparking/Spin against
+independentexactG32SO3 matrices. Fullbillionwordnotmaterialized.
+Theactualrawiterator conservatively expandsDAG intoONLYG/CX/SourceI.
+OriginalASTvariantwithoneunusedSELECTmethodchange anditsreceiptswere
+preserved; finalcodeusesEXACTowned7boprefix22247/5e53f361...abaa5d.
+No committedoldcode/expectedreceipt rewritten, nooldSELECTreplay.
+
+Independent256bitOUTWARDINTEGERDAG/fullSO16certificate gives
+delta=198574703067362169189682840466080510493/2^256 <2e-39.
+ActualVcounts981843712G+981843712SI+2211643252CX,N4175330676,
+includingtwoouterparkingSWAPs(6CX). Fullreturnedcontroller ischronological
+freshV^-1;CX(tag,orientation);V, N8350661353, exactinvolution.
+SourceSpin/oldRIGHTallcolumnsretained; noownedrawinversequietlyshortened.
+TheextraACTIVEtag isFREEinput, notG-bornblankrelabeledfree. Parking
+spareisBLANK (restoredallcolumns, doesn'tmultiplycutrank). DATA16 and
+oldRIGHT128 arefullyfree/untouched,20qubits/1048576worldcolumns,
+R=163840. Selector/Spin/body/cut types remainasexplicitlysupplied.
+
+Newbound685--686 atthisprojectiontarget:foractualunitarygeneratorX,
+|DJhat|<=8zRdelta/(1-z)^2||X||. Rawstage/cutnormsnu,mu give
+8zRdelta/(1-z)^2(Nnu+2mu). Atz2^-20,nu1,mu0 itis<2e-29.
+ThisisNOToriginalunpaddedGR42budget/chart/gain noruniformfieldsource.
+Physicalfieldpullbackstillneedstruegain/norm anduniformcollarwhen
+continuationisused. ActualsourceSpinnotWORK; unknownreaderfullU not
+provided. Hheat0/pi/alltemporalnormal theoremrequireseachBASEstage
+INTERNAL; originalRawZonenoncommutation/fullcochainsource501--504
+arenotdeletedbyendpointargument. Rank/time/beta/z/scalar-sceneand
+othergenuinelyselectedsourceskeep theirindependent equations.
+
+DirectBookstationarylaw remainslegitimatewithoutaddingD_min/Infoas
+universalveto. ThiscodealsodoesnotproveseparateCostInfoequivalence.
+New7ca mixedfull128CQdefectcannotbepastedintobinaryN1all42price:actual
+certified_model.py31/146--176 usesPFweights andHphi(click), original
+NativeUnpaddedCQ24--32adds1+click. TWO_NATIVE_8D_DETERMINANT_SOURCE42
+usespureknowninputs/pureconditionalWORK; the7ca mixedrho*/128fine
+instrument isanotherexecution. CommonOmega/Kraus/readout/price/Jacobian
+mapmustprecede42residualcalculation. No rerun/newroot/Infofitproposed.
+
+Frozenproof15976/SHA256
+528c2adaf0bda0b4a2e0d02491f5ac6182862446a2b39dc684b06bcd74e544ec.
+Wholepacket746269/SHA256
+d4736eba968bb13edf8b53fe14e1ee963379b420d8c96f9249cddf95319301ca.
+All11file payloads arepinnedinprimarymarkers andlocalpacketmanifest;
+searchsource6c49a4a3, QR5713bf57, plane55929a5c, iterator16d39b3d,
+intervalff1978fd andportableReplay2b431e4d unchangedafterfinalmathfreeze.
+
+ACTUALMarkdownentryextraction/replayPASS fromfreshdirectory
+/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-controller-replay-1yltegcz.
+Exactfactor,2literalmacrofixtures,817stageendtoendandintegerinterval
+all exit0; allscientificreceiptfieldsidentical, frozeninputsunchanged.
+Expectedreceiptsarenotoutputpaths; onlyhostpathinput_pinsareexcluded
+fromcomparison, withowner/codehashes separatelyguarded. NoSKsearch
+rerun,billionstageexpansion,oldheat/root/Slater/Lean/incomingmathsuite.
+Prosewasthennarrowedtoincoming7cccontext+uniformcollarwarningONLY;
+ALL11code/data payloadsarebyteidenticaltoreplayedones. No replayofan
+unchangedexpensivecalculationmerelyforthatprose/labelupdate.
+
+SOURCE-ONLYmathematicalACCEPT ofcompleteearliercoreproof14568/2baa71b3
+andall6sourcepins bynative_source_application,price_geometry_bridge,
+stationary_root_transfer; no reviewerreplay. Finalintegrationcontext
+proofbefore-renumber15976/2943ae35 andimmutableReplay5580/2b431e4d acceptedbynative
+andstationaryreviewers afterreadingincoming7ccproseandintendedscope
+diff. Theprice revieweracceptedthepriorfullcore; nofinalcontextdecision
+isrecordedforit andnoadditionalACCEPTisinferred.
+No independentassemblyacceptance/publicpromotion asserted.
+
+Allincomingc7009624primary1471342bytes/SHA256
+a10c59b6d008f197bd532f981620276714c359c56ad9c0a7df4074e940146e64
+remainexactafterremovingour7cf. Incomingbrief948942bytes/SHA256
+401339e9294183850235f527f28632240ce99023286094998926f92e3d55ede4
+remainexactprefix.7cf usesexistingbefore-Reproductionanchor; incoming
+7ccafterlegacyReproductioniskeptinitsoriginalpositionbyteexact.
+OnlytheTWOexistingownedpaths changed; nonewPR/task/branch/registry,
+noReady/merge/retirement. GR_closed=false,positive_gr/raw216open.
+NextphysicalapplicationremainstheACTUALselected(Delta,P,U) andphysical
+field/tangentmaponSAMEadmittedhistory, consumingownedfullsource/refining
+nonvacuumresults. Theexactcoherent7ccroutecanproceedindependently;
+thisparticulardensewordisnotanewGRcompletionprerequisite.
+
+
+Final affected structural checks on the exact frozen packet PASS:
+`validate_work.py`, `validate_agent_protocol.py`, `gr_assembly.py check`
+and `validate_repo.py` (889 claims, 31 assumptions, 58 aliases,
+183 formal_support, 918 Lean closure; zero warnings). The assembly remains
+54 active / 98 results / 5 discharged / 22 obligations, with
+scientific_promotion=false. `git diff --check` also passes.
+
+A separate byte-preservation check restores the exact incoming primary
+by removing this one746269-byte section, retains the full948942-byte
+incoming brief prefix, and validates all11 embedded code/data payloads
+against their frozen size/SHA pins. All Python payloads parse and all JSON
+payloads decode. The existing actual Markdown replay receipt records four
+successful processes, three exact scientific receipt comparisons and
+unchanged frozen inputs. This provenance check is not another mathematical
+replay. Only the two owned files are staged for publication in SAME#334.
+
+
+Concurrent source intake at 032f8ab8c1bf25c361f550c277f2420642a66102: the original
+chronological Julia source and its all-horizon scale exclusion (7cd), and
+the generated-time/birth-Rayleigh application (7ce), are preserved in full.
+The latter already solves the fixed-RIGHT DATA-preparation equation at its
+stated scalar birth compression; generated prefixes are not freely varied
+initial states. Our bounded recorder code adds no such prerequisite and
+changes neither their sources nor their variation domain. Incoming original
+24-ray predictor/checker paths are also retained without replay: they are
+not inputs to this fixed-recorder certificate.
+
+The insertion is renamed7cf680--686 solely to avoid the concurrent equation
+labels. Only our proof prose, its pins and this intake change; all11 embedded
+code/data payloads remain exact to the already executed Markdown replay.
+The initial incoming byte pins above identify c7009624, not the newer base.
+Removing7cf from the final primary must restore the COMPLETE newer base,
+whose primary/brief pins are recorded below. No incoming theorem or expected
+evidence is rewritten, and no extra mathematical replay is needed for labels.
+
+Final incoming base 032f8ab8c1bf25c361f550c277f2420642a66102
+primary 1500218 bytes / SHA256 de438263e3f5e061008adcffe86621c72d4fea319ff48c904d98c9f1c01f66a4
+brief 957847 bytes / SHA256 912c4e9052112b31cab070fdae031522dd5e57896116378bf934fbb1a028aeaf
+
+
+Final source-only review after concurrent intake and label resolution:
+stationary_root_transfer ACCEPT at proof15976/SHA256
+528c2adaf0bda0b4a2e0d02491f5ac6182862446a2b39dc684b06bcd74e544ec,
+section746269/SHA256
+d4736eba968bb13edf8b53fe14e1ee963379b420d8c96f9249cddf95319301ca.
+The reviewer checked that the proof diff only renumbers7cd/657--663 to
+7cf/680--686, all11 frozen blocks retain their metadata, and incoming7cd/7ce
+keep their actual Julia-source and solved DATA-preparation scopes. There
+was no reviewer execution, independent assembly acceptance or new veto.
+
+On the newer032f8ab8 base, the four affected structural guards again PASS:
+work, agent protocol, assembly and repository (889 claims,31 assumptions,
+58 aliases,183 formal_support,918 Lean closure; zero warnings). The exact
+byte check restores all1500218 incoming primary bytes by removing7cf and
+retains all957847 incoming brief bytes as a prefix. Code/data are identical
+to their executed pre-renumber versions; only two owned paths differ.
+
+Targeted failure-path validation of the frozen portable replayer also PASS:
+duplicate, missing, unknown and payload-mutated marked files are all rejected
+BEFORE mathematics, with source bytes unchanged. Receipt:
+/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-controller-replay-hostile-spa0evs6/HOSTILE_RESULT.json.
+No scientific replay was repeated. The original positive replay remains the
+pinned source of its four process and three exact-receipt checks. All later
+changes are proof labels, incoming-context and validation/provenance prose.
