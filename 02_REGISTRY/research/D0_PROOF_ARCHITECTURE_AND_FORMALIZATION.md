@@ -8743,3 +8743,28 @@ Lean 4.30.0; every requested declaration resolved.
 These are declaration-level current-source receipts, not semantic or C0
 acceptance. The declared theorem scopes, source and carrier obligations, and
 all physical selection premises keep their existing status.
+
+### Cold-start retrieval for the exact 24-dimensional Julia tangent application (26 October 2026)
+
+The updated cold-start runner completed at clean snapshot
+`60a2a98683141e56c80a1d76ebab0a0f01f7d314` (`worktree_dirty=false`). All
+**24/24** real search cases found their required sources (**155** source refs
+total); the **25-case** benchmark passed, as did the exact-source-versus-
+unrelated-prose impact regression. The labelled native raising-inverse case
+now has **15** queries and found all **10/10** required refs, including the
+canonical solder tangent owner, the Julia consumer, and the new compiled
+inventory. Its exact `roleLorentzTangentParameters_finrank` query ranks
+`A4DJuliaLinkPathDifferential.lean` first and this primary artifact second.
+
+The 8,660,976-byte full output has SHA-256
+`0a2094f6cc39a184f5643040f6d3c1de46cd0aea33749a5ecdee380c9e8769a5` and is
+kept outside Git. The compact summary is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_dimension.json`,
+SHA-256 `a621d9cda1d348c6dbb03d2fc6c2347fd89c4c48e261e91bd92048cb54e3f86f`;
+the query-level receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_lorentz_tangent_dimension.json`,
+SHA-256 `c054ed8be4f2b81cc01b96a74b5cd1da7fd9d6e388d26ac341b7a0b52f6824ad`.
+All **63/63** proof-architecture tests then passed against the refreshed
+compiled inventories and summary. Semantic scope review remains manual;
+neither retrieval success nor this finite tangent application accepts C0 or
+closes a physical premise.
