@@ -81,6 +81,7 @@ CASES: list[dict[str, Any]] = [
             "transverseFivePoint_nonvacuumBrinkmannProfile_eq_source harmonicBrinkmannCubic radial quadratic",
             "nonvacuumProfile_source_eq_finiteMidpointMatterNorm finiteMatterForwardGradient_midpointStep twoComponentMatterNormSq",
             "finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm finiteMatterMidpointHistory chronological rate same two-component stencil source",
+            "finiteMatterMidpointHistory_eq_base_add_rateSum chronological midpoint record finite sum endpoint",
             "native finite matter midpoint exact energy five point source same interval",
         ],
         "required_refs": [
@@ -102,8 +103,9 @@ CASES: list[dict[str, Any]] = [
             "The compiled NonvacuumBrinkmannStencil result proves the exact five-point "
             "harmonic/radial readout and binds its source norm to the same finite midpoint "
             "matter record. This is only the pointwise stencil/source fragment: the original "
-            "time-indexed extension additionally proves that each natural-indexed midpoint "
-            "history step supplies the exact rate used by that site's profile, without adding "
+            "time-indexed extension additionally reuses the one-step midpoint API, proves the "
+            "endpoint as its accumulated rate sum, and supplies that same rate to each site's "
+            "profile without adding "
             "smoothness or a continuum-limit premise. The original "
             "CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, refinement "
             "estimate, and physical native Book/clock/source selection remain separate and open."

@@ -128,7 +128,8 @@ def finiteMatterMidpointHistory
     (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ) :
     ℕ → Fin 2 → ℝ
   | 0 => base
-  | n + 1 => fun i => finiteMatterMidpointHistory h rate base n i + h * rate n i
+  | n + 1 => finiteMatterMidpointStep h (rate n)
+      (finiteMatterMidpointHistory h rate base n)
 
 /-- Each adjacent pair in the history is the specified midpoint update. -/
 theorem finiteMatterMidpointHistory_next
@@ -138,6 +139,18 @@ theorem finiteMatterMidpointHistory_next
       finiteMatterMidpointHistory h rate base n i + h * rate n i := by
   rfl
 
+/-- The chronological endpoint is the initial record plus its accumulated rates. -/
+theorem finiteMatterMidpointHistory_eq_base_add_rateSum
+    (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ)
+    (n : ℕ) (i : Fin 2) :
+    finiteMatterMidpointHistory h rate base n i =
+      base i + h * (∑ k ∈ Finset.range n, rate k i) := by
+  induction n with
+  | zero => simp [finiteMatterMidpointHistory]
+  | succ n ih =>
+      rw [finiteMatterMidpointHistory_next, Finset.sum_range_succ, ih]
+      ring
+
 /-- The actual forward difference of every history step recovers its rate. -/
 theorem finiteMatterForwardGradient_midpointHistory
     (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ)
@@ -145,10 +158,12 @@ theorem finiteMatterForwardGradient_midpointHistory
     finiteMatterForwardGradient h
       (finiteMatterMidpointHistory h rate base n)
       (finiteMatterMidpointHistory h rate base (n + 1)) i = rate n i := by
-  unfold finiteMatterForwardGradient
-  rw [finiteMatterMidpointHistory_next]
-  field_simp [hh]
-  ring
+  change finiteMatterForwardGradient h
+    (finiteMatterMidpointHistory h rate base n)
+    (finiteMatterMidpointStep h (rate n)
+      (finiteMatterMidpointHistory h rate base n)) i = rate n i
+  exact finiteMatterForwardGradient_midpointStep h (rate n)
+    (finiteMatterMidpointHistory h rate base n) i hh
 
 /-- The squared gradient norm of one chronological step is its rate energy. -/
 theorem twoComponentMatterNormSq_midpointHistoryGradient_eq_rate

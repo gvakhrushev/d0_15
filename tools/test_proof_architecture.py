@@ -1460,6 +1460,8 @@ class ProofArchitectureTests(unittest.TestCase):
                             for query in case["queries"]))
         self.assertTrue(any("finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm" in query
                             for query in case["queries"]))
+        self.assertTrue(any("finiteMatterMidpointHistory_eq_base_add_rateSum" in query
+                            for query in case["queries"]))
         self.assertIn(module, case["required_refs"])
         self.assertIn("all 16+24+2 Euler rows", case["scope_review"])
         self.assertIn("physical native Book/clock/source selection remain separate and open",
@@ -1534,6 +1536,7 @@ class ProofArchitectureTests(unittest.TestCase):
         required_history_declarations = {
             "D0.Geometry.finiteMatterMidpointHistory",
             "D0.Geometry.finiteMatterMidpointHistory_next",
+            "D0.Geometry.finiteMatterMidpointHistory_eq_base_add_rateSum",
             "D0.Geometry.finiteMatterForwardGradient_midpointHistory",
             "D0.Geometry.twoComponentMatterNormSq_midpointHistoryGradient_eq_rate",
             "D0.Geometry.finiteTimeNonvacuumBrinkmannProfile",
@@ -1559,6 +1562,12 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn("ℕ", chronological_source["elaborated_type"])
         self.assertIn("h ≠ 0", chronological_source["elaborated_type"])
+        accumulated_history = history_declarations[
+            "D0.Geometry.finiteMatterMidpointHistory_eq_base_add_rateSum"
+        ]
+        self.assertIn("D0.Geometry.finiteMatterMidpointHistory_next",
+                      accumulated_history["proof_dependencies"])
+        self.assertIn("Finset.range", accumulated_history["elaborated_type"])
 
     def test_proper_lorentz_orbit_is_discoverable_from_pinned_owner_and_lean(self) -> None:
         case = next(
