@@ -8058,3 +8058,61 @@ The replay finds all sources in **23/23** cases, passes the **24-case**
 benchmark, checks **137** required-source references, and passes the
 source-change versus unrelated-prose impact control. Its full output is pinned
 by SHA-256 `67472e2b07d4f6d64fc0fde04c5006abc81057110809fceafe5f51593c35b323`.
+
+### Generic finite-Gram Fréchet derivative and J² consumer (26 October 2026)
+
+The finite Gram API now has a separate calculus layer in
+`D0.Algebra.FiniteGramDerivative`. For every finite square real-matrix carrier,
+with the Frobenius norm and no symmetry or invertibility assumption on `η` or
+`Θ`, `finiteGram_hasFDerivAt` proves the full derivative of
+`X ↦ X η Xᵀ` at every frame `Θ`. Its continuous-linear derivative has the
+explicit two-sided action
+`H ↦ H η Θᵀ + Θ η Hᵀ`. The module also owns the reusable Frobenius transpose
+isometry and `finiteGramTangent_apply`.
+
+`D0.Geometry.A4DSolderMetricCompletion` now specializes that API for the
+pinned J² flat-frame chart `H ↦ finiteGram η (1 + H)`: its old
+`j2DetectorMetricPath_tangent` is a compatibility name for the generic
+tangent, and `j2DetectorMetricPath_hasFDerivAt_flat` follows by composing the
+generic derivative with `H ↦ 1 + H`. This removes the repeated local product
+and transpose derivative proof while preserving public geometry declarations.
+The existing sitewise solder-map and complete finite-field derivative continue
+to consume the same J² result. The API remains finite matrix calculus; it does
+not supply the selected-action-to-carrier map, physical source choice,
+continuum variation, or GR closure.
+
+The narrow build passed for `D0.Algebra.FiniteGramDerivative`
+(**3,053/3,053 jobs**) and `D0.Geometry.A4DSolderMetricCompletion`
+(**3,088/3,088 jobs**). The compiled public-`D0.All` metric-provenance
+crosswalk enumerates both modules and resolves all five new algebra locators
+plus `j2DetectorMetricPath_hasFDerivAt_flat`. The declaration inventory reports
+`Classical.choice`, `Quot.sound`, and `propext` as the trust footprint; the
+source adds no project axiom or admitted proof. Its source digest is
+`102620bb64320e24feea3247ab2aec3e4787ab4e039d8aec6e25669d97b0e309`; the
+clean crosswalk snapshot at `aaae64c2fb815e29bdee97c0768e34be88343841` has
+SHA-256 `9e7404e36c5fcff0c39abd1c41d2fba725ac5f1d8653ea82e146c97e7250d3db`
+and records the current `applications.json` digest.
+
+The new cold-start case finds the algebra module, geometry consumer, assembly
+application, and compiled crosswalk directly. The clean replay at
+`1d117546393323dfc0b88a3513282ba9ce6d040e` passes **24/24** cases and the
+**25-case** benchmark, checks **141** required source references, and retains
+the source-change/unrelated-prose impact control. Its 7,944,203-byte full
+output is represented by SHA-256
+`75304e165b4b52d68e9fc23f597de0070a2bda2a4ed1727c155ddd16084760d9`; the
+compact provenance receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_finite_gram_derivative.json`,
+SHA-256 `d8d94c8c9c85a9d97a5eae035c7d744dc0ee0f847b6c61624ce2958eaccf3fed`.
+
+The Lean sources are pinned at `4b1db2654ed0b3314efc97859fc64a554fcc2d13`:
+`FiniteGramDerivative.lean` SHA-256
+`65b89305864cb933306cb930edf20afef8faf395a5203cb7f5dfdc63d9d43d5e` and
+`A4DSolderMetricCompletion.lean` SHA-256
+`bd2c82c118c0532654a35610997940dcaf058251b6fe80e91227c53a76bbf7e8`. The
+compiled crosswalk is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_aaae64c2.json`.
+
+This is a supporting formalization/application slice only. The crosswalk keeps
+`semantic_relation_status=unresolved`, `claim_locator_disposition=unresolved`,
+and `acceptance_inferred=false`; no C0 unit or physical premise is accepted by
+the algebra proof or retrieval replay.
