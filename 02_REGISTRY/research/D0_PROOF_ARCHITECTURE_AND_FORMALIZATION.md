@@ -10112,12 +10112,21 @@ not an independently accepted or frozen C0 denominator.
 
 | Source unit | Current formal representation | Disposition and exact remaining boundary |
 | --- | --- | --- |
-| Eqs. (17)–(19): fixed smooth null-scalar solution family and continuum field equations | No single Lean declaration in this application reconstructs the full metric, verifies all hypotheses, and proves the displayed continuum equations. | Owner source preserved; full family and field-equation source remain open mathematical inputs. No formalization claim. |
+| Eqs. (17)–(19): fixed smooth null-scalar solution family and continuum field equations | No single Lean declaration in this application reconstructs the full metric, verifies all hypotheses, and proves the displayed continuum equations. | Retained as the #334 owner-source input; this application has not formalized or transported the owner's full family/field-equation proof. No formalization claim for Eqs. (17)–(19). |
 | Eq. (20): half-step metric/site sampling | `D0.Geometry.nonvacuumCoframeReadoutTime`, `sampledNonvacuumBrinkmannProfile_eq_fixedReadout`, and `sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter`. | Exact scalar profile/site binding, including all four harmonic coefficients at the same readout. Scoped independent review passed this equality; this does not instantiate the 16 coframe slots. |
-| Eqs. (21)–(22): midpoint increments and exact field gradient | `D0.Geometry.sampledMatterMidpointRate_eq_nextCoframeReadout`, together with the finite history and exact-value definitions used by `sampledMatterMidpointProfile_source_eq_derivativeNorm`. | Exact midpoint/update algebra in the Lean finite-history abstraction. It is not yet a construction from the original CAR generator or normalized preparation record. |
-| Eq. (23): native transverse source | `D0.Geometry.sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter`. | Exact five-point scalar source identity at the matched coframe readout. No CAR amplitude/slack premise, full independent variation, or 40+2 Euler composition is discharged. |
+| Eqs. (21)–(22): midpoint increments and exact field gradient | `D0.Geometry.sampledMatterMidpointRate_eq_nextCoframeReadout`, together with the finite history and exact-value definitions used by `sampledMatterMidpointProfile_source_eq_derivativeNorm`. | Exact midpoint/update algebra in the Lean finite-history abstraction; these identities do not require smoothness. They are not yet a construction from the original CAR generator or normalized preparation record. |
+| Eq. (23): native transverse source | `D0.Geometry.sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter`. | Exact five-point scalar source identity at the matched coframe readout. It allows arbitrary `coupling` and assumes only `h ≠ 0`; it does not bind `coupling = λ` or establish `h = 1/L` or `h > 0`. No CAR amplitude/slack premise, full independent variation, or 40+2 Euler composition is discharged. |
 | Eq. (24): O(h²) midpoint refinement and preserved CAR slack | `D0.Geometry.sampledMatterMidpointHistory_error_le_refinementBound` gives a componentwise midpoint-history bound under explicit C³ and third-derivative-bound hypotheses. | Partial only: the source's vector-norm constant and complementary normalized-CAR slack inequality are not established by this componentwise result. |
 | Full free-site 16+24+2 Euler conclusion after the cited 40→3→1 reduction | The source cites the scientific owner's existing reduction; the current application inventory does not include a complete Lean adapter from its full varied rows to these sampled fields. | Reuse/transport remains open. No physical GR claim or owner/status change. |
+
+The read-only independent scope review returned **scoped PASS** for this
+equation-to-Lean crosswalk and flagged precision points now reflected above:
+the owner's Eqs. (17)–(19) proof remains a pinned input rather than a proof
+formalized by this application; the finite identities in Eqs. (21)–(22) do
+not require smoothness; and Eq. (23) does not bind the coupling or mesh to the
+owner's physical parameters. The review accepted neither the complete §§7.1–7.2
+source application nor the full Euler system, C0, physical selection, or GR
+closure.
 
 This disposition identifies exactly which source equations are represented by
 the new compiled application and which remain unresolved. It does not reduce
