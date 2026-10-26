@@ -73,6 +73,20 @@ def main():
                 matrix_product_mod(D["Kd"][9],D["Kd"][91],
                                    D["K"][91],D["K"][9],mod=q)),
                 "TRUE chronological two-tick no-DATA-reset effect K9^dag K91^dag K91 K9")
+        # SAME two registered original labels in reverse order. The actual
+        # Kraus compositions are inequivalent even though their raw
+        # length and two-symbol cost histogram are the SAME.
+        E_reverse=effect_of_word((91,9),D)
+        trace_order=int(np.trace(E2-E_reverse)%q)
+        parity_order=supertrace((E2-E_reverse)%q,par,q)
+        EXPECT_ORDER_TRACE={229:205,401:188,521:362,709:606,
+                            761:168,809:90,941:363,1009:407}
+        EXPECT_ORDER_PARITY={229:61,401:265,521:238,709:4,
+                             761:23,809:153,941:677,1009:273}
+        require(trace_order==EXPECT_ORDER_TRACE[q] and trace_order!=0,
+                "same two original 128 fine labels in different chronological order have DISTINCT unconditional Born law")
+        require(parity_order==EXPECT_ORDER_PARITY[q] and parity_order!=0,
+                "original conditional parity law ALSO distinguishes chronological order")
         st=supertrace(E2,par,q)
         require(st==EXPECTED[q] and st != 0,
                 "EXACT algebraic nonzero two-tick parity result mod every good prime")
@@ -106,6 +120,9 @@ def main():
             "qplus_minus_qminus_mod_q":(qplus-qminus)%q,
             "65_merged_labels":[5,46],
             "65_coarse_rescaling":"1/p²",
+            "reversed_chronology":[91,9],
+            "ordered_unconditional_trace_difference_mod_q":trace_order,
+            "ordered_parity_trace_difference_mod_q":parity_order,
         }
 
     # Independent ordinary original complex source implementation:
@@ -126,6 +143,11 @@ def main():
             "physical real-source 2tick Born distributions separated in proper order")
     require(abs((plus-minus)+2.8164178574538e-11)<1e-18,
             "original independent double precision Born source agrees with algebraic sign")
+    BA=K[9] @ K[91]
+    Ereversed=BA.conj().T @ BA
+    order_bias=float((np.trace(E-Ereversed)/16).real)
+    require(abs(order_bias-1.12557546888027e-11)<1e-18,
+            "genuine ORIGINAL two-tick label order has different full Born trace")
     require(abs(sum(np.trace(x.conj().T@x).real for x in K)-16)<1e-10,
             "actual 128 Kraus preserves total input trace")
 
@@ -140,6 +162,8 @@ def main():
         "actual_Born_even":plus,
         "actual_Born_odd":minus,
         "actual_parity_probability_difference":plus-minus,
+        "reversing_same_two_labels_changes_original_Born_law":True,
+        "actual_unconditional_order_probability_difference":order_bias,
         "same_original_65_predictor_Golden_cost_retained":True,
         "general_complete_PARITY_M8_plus_M8_tomography_horizon_proved_minimal":False,
         "physical_compulsory_original_Book_action_selected":False,
