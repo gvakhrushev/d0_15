@@ -11,6 +11,7 @@ from unittest.mock import patch
 
 from tools import proof_architecture as proof
 from tools import proof_architecture_cold_start as cold_start
+from tools import proof_architecture_process_comparison as process_comparison
 from tools import lean_task_build
 
 
@@ -1244,6 +1245,63 @@ class ProofArchitectureTests(unittest.TestCase):
             cold_start.run(pathlib.Path("."), limit=5)
 
         self.assertEqual(search.call_args.args[2], 18)
+
+    def test_process_comparison_uses_only_query_scoped_sources(self) -> None:
+        case = {
+            "required_refs": ["unscoped.md"],
+            "required_sources": [
+                {"path": "owner/source.md", "scope_query_indexes": [1]},
+                {"path": "owner/other.md", "scope_query_indexes": [1, 2]},
+            ],
+        }
+
+        self.assertEqual(process_comparison.expected_sources(case, 0), [])
+        self.assertEqual(
+            process_comparison.expected_sources(case, 1),
+            ["owner/other.md", "owner/source.md"],
+        )
+        self.assertEqual(
+            process_comparison.expected_sources(case, 2), ["owner/other.md"]
+        )
+        self.assertTrue(
+            process_comparison._matches_expected(
+                ["02_REGISTRY/owner/source.md"], ["owner/source.md"]
+            )
+        )
+        self.assertFalse(
+            process_comparison._matches_expected(
+                ["02_REGISTRY/other/source.md"], ["owner/source.md"]
+            )
+        )
+
+    def test_process_comparison_selects_a_scoped_question_per_episode(self) -> None:
+        case = {
+            "queries": ["broad question", "source-specific question", "alternate"],
+            "required_sources": [
+                {"path": "owner/source.md", "scope_query_indexes": [1, 2]},
+            ],
+        }
+        fallback = {"queries": ["first", "second"], "required_sources": []}
+
+        self.assertEqual(process_comparison.selected_query(case), (1, "source-specific question"))
+        self.assertEqual(process_comparison.selected_query(fallback), (0, "first"))
+
+    def test_default_search_window_surfaces_scoped_julia_source(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "julia-query-principal-frame-coframe-recovery"
+        )
+        source = next(item for item in case["required_sources"]
+                      if 1 in item.get("scope_query_indexes", []))
+        query = case["queries"][1]
+        hits = proof.full_text_search(proof.ROOT, query)
+
+        self.assertLessEqual(len(hits), proof.MAX_SEARCH_RESULTS)
+        self.assertTrue(any(
+            cold_start._path_matches(hit["source"], source["path"])
+            and hit.get("direct_content")
+            for hit in hits
+        ))
 
     def test_nonvacuum_stencil_cold_start_retrieves_the_compiled_application(self) -> None:
         case = next(

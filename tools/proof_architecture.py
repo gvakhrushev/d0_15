@@ -29,7 +29,9 @@ CONTRACT = pathlib.Path("02_REGISTRY/gr_assembly/contract.json")
 PRESUPPOSITIONS = pathlib.Path("02_REGISTRY/presupposition_edges.json")
 TEXT_ROOTS = ("01_BOOKS", "02_REGISTRY", "03_FORMALIZATION",
               "04_CERTIFICATES", "05_EXPERIMENTS", "tools")
-MAX_SEARCH_RESULTS = 5
+MAX_STRUCTURED_SEARCH_RESULTS = 5
+MAX_SEARCH_RESULTS = 10
+MIN_PIN_VERIFICATION_WINDOW = 18
 MAX_SNIPPET = 650
 MAX_FIELD_CHARS = 8000
 MAX_SEARCH_EVIDENCE = 3
@@ -875,7 +877,8 @@ def _item_text(item: dict[str, Any]) -> str:
     return " ".join(str(value) for value in item.get("search_terms", []) if value).casefold()
 
 
-def structured_search(dataset: dict[str, Any], query: str, limit: int = MAX_SEARCH_RESULTS) -> list[dict[str, Any]]:
+def structured_search(dataset: dict[str, Any], query: str,
+                      limit: int = MAX_STRUCTURED_SEARCH_RESULTS) -> list[dict[str, Any]]:
     exact = " ".join(query.casefold().split())
     if not exact:
         return []
@@ -1299,7 +1302,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         # Reading pins is expensive. Only inspect references in the bounded
         # top-ranked candidate window; the returned source itself must still
         # pass its exact commit/path/blob and direct-content checks.
-        pin_window = candidates[:max(12, limit)]
+        pin_window = candidates[:max(MIN_PIN_VERIFICATION_WINDOW, limit)]
         pinned_candidates: list[tuple[float, str, dict[str, Any]]] = []
         for score, rel, record in pin_window:
             path = root / pathlib.Path(rel)
