@@ -306,10 +306,10 @@ import D0.Geometry.A4DGoldenCarrierWeldBoundary
 import D0.Geometry.A4DGoldenRolePhaseRGDefect
 import D0.Geometry.A4DHorizontalDressingSecondJetFreedom
 import D0.Geometry.A4DJointHolonomyResidual
+import D0.Geometry.A4DJuliaLinkPathDifferential
 import D0.Geometry.A4DJuliaNonNullGammaRecovery
 import D0.Geometry.A4DJuliaPrincipalFrameRecovery
 import D0.Geometry.A4DJuliaRecoveryComposition
-import D0.Geometry.A4DJuliaLinkPathDifferential
 import D0.Geometry.A4DLabelledEndpointLocalityPassport
 import D0.Geometry.A4DLabelledPathHolonomyDescent
 import D0.Geometry.A4DLocalReverseStarNoGo
