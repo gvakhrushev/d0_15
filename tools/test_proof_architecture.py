@@ -1726,6 +1726,10 @@ class ProofArchitectureTests(unittest.TestCase):
             "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt" in query
             for query in case["queries"]
         ))
+        self.assertTrue(any(
+            "principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz"
+            in query for query in case["queries"]
+        ))
         self.assertIn("composes the exact right-link transport to identity", scope)
         self.assertIn("identity derivative", scope)
         self.assertIn("24 link jets", scope)
@@ -1742,7 +1746,19 @@ class ProofArchitectureTests(unittest.TestCase):
                 "julia_principal_frame_fixed_link_recovered_derivative_declarations_2026-10-26.json",
             ],
         )
+        joint_query = next(
+            query for query in case["queries"]
+            if "principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz"
+            in query
+        )
+        joint_hits = proof.full_text_search(proof.ROOT, joint_query, limit=3)
+        self.assertTrue(joint_hits)
+        self.assertEqual(
+            joint_hits[0]["source"],
+            "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+        )
         self.assertIn(15, source_pin["scope_query_indexes"])
+        self.assertIn(16, source_pin["scope_query_indexes"])
         self.assertNotIn(14, source_pin["scope_query_indexes"])
         self.assertIn("IsRoleLorentz Λ", scope)
         self.assertIn("physical application must still bind the admitted endpoint", scope)

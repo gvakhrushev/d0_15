@@ -480,6 +480,7 @@ CASES: list[dict[str, Any]] = [
             "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz Eq27 Eq28",
             "правый Lorentz endpoint одновременно CAR Eq 27 и query Eq 28 один recovered endpoint",
             "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt",
+            "principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz hΓ hΛ",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -497,12 +498,12 @@ CASES: list[dict[str, Any]] = [
             {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
-             "sections": ["8.4", "8.5"], "scope_query_indexes": [1, 2, 4, 5, 6, 7, 8, 9, 15],
+             "sections": ["8.4", "8.5"], "scope_query_indexes": [1, 2, 4, 5, 6, 7, 8, 9, 15, 16],
              "scope_query_sections": {"1": ["8.5"], "2": ["8.5"],
                                       "4": ["8.4"], "5": ["8.4"],
                                       "6": ["8.4"], "7": ["8.4"],
                                       "8": ["8.4"], "9": ["8.4"],
-                                      "15": ["8.4"]}},
+                                      "15": ["8.4"], "16": ["8.4", "8.5"]}},
             {"path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
@@ -531,7 +532,12 @@ CASES: list[dict[str, Any]] = [
             "derivative in all 16 inverse-coframe coordinates with the Lorentz link fixed; its "
             "`principalFrameJuliaQueryFamily_recoveredInverseCoframe` application then composes the exact "
             "right-link transport to identity, including the identity derivative. Neither result supplies "
-            "the remaining 24 link jets or the joint all-jet identity."
+            "the remaining 24 link jets or the joint all-jet identity. "
+            "`principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz` now "
+            "pairs that transported Eq. (30a) coframe identity with the Eq. (28) endpoint decoder on the "
+            "same concrete query family; the established Eq. (27) and exterior-lift outputs remain in the "
+            "companion joint endpoint theorem. The pair still fixes the coframe link and does not fill the "
+            "24 link directions."
         ),
     },
     {

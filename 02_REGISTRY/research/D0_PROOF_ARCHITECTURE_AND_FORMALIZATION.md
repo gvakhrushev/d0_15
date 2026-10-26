@@ -8244,3 +8244,23 @@ and second. The 7,986,086-byte output has SHA-256
 compact receipt is
 `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_recovered_identity.json`,
 SHA-256 `f1766fe681f650747185d87cb574e6b7c1230ed74003932ee0872d682f8b9271`.
+
+### Same-query coframe and endpoint recovery (26 October 2026)
+
+`D0.Geometry.principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz`
+now composes the transported Eq. (30a) inverse-coframe identity with the
+Eq. (28) query endpoint decoder for the same concrete Julia query family. For
+each selected role it returns the full 16-entry coframe matrix `F` after the
+fixed principal-frame link transport and the same role's endpoint map. The
+coframe-link Lorentz condition and the endpoint family's Lorentz and
+determinant-one conditions are explicit; Eq. (28)'s nonzero source norm,
+normalized covector, nonzero projected covector, and positive branch remain
+explicit hypotheses. The companion theorem continues to provide the Eq. (27)
+degree-one decoder and all-grade exterior-lift identity.
+
+The narrow build of
+`D0.Geometry.A4DJuliaRecoveryComposition` passed **3,127/3,127 jobs**. This
+composition makes two already-owned readouts available as one application on
+the same query constructor; it does not establish a 24-direction Lorentz-link
+derivative, the joint all-jet inverse or variational pullback, physical query
+admission, complete price/source selection, GR closure, or C0 acceptance.

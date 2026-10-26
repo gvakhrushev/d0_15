@@ -536,5 +536,67 @@ theorem principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_prop
         archiveJuliaProperRoleLorentzEquiv_det_one (Λ r) (hDet r))
     hInputNorm hα hCovector hBranch
 
+/-- Compose the Eq. (30a) inverse-coframe recovery with the Eq. (28) query
+endpoint decoder on one and the same constructed Julia query family. The first
+component recovers all 16 coframe entries after fixed principal-frame link
+transport; the second recovers the proper-role-Lorentz endpoint on its explicit
+non-null open chart. The companion Eq. (27) and exterior-lift identities remain
+available from `principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz`.
+This composition does not differentiate the 24 link directions or establish
+physical admission. -/
+theorem principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz
+    (F Γ : Matrix Role Role ℝ)
+    (Λ : Role → Matrix Role Role ℝ)
+    (hΓ : IsRoleLorentz Γ)
+    (hΛ : ∀ r, IsRoleLorentz (Λ r))
+    (hDet : ∀ r, Matrix.det (Λ r) = 1)
+    (α : Role → Module.Dual ℝ RoleSpace)
+    (r : Role)
+    (hInputNorm : archiveJuliaSourceLorentzForm
+      ((principalFrameColumnMatrix F Γ.transpose).mulVec
+        (Pi.single r (1 : ℝ)))
+      ((principalFrameColumnMatrix F Γ.transpose).mulVec
+        (Pi.single r (1 : ℝ))) ≠ 0)
+    (hα : α r ((principalFrameColumnMatrix F Γ.transpose).mulVec
+      (Pi.single r (1 : ℝ))) = 1)
+    (hCovector : archiveJuliaQueryNullMetricCovector
+      archiveJuliaSourceLorentzForm
+      (principalFrameObservedQueryVector
+        (principalFrameJuliaQueryFamily F Γ.transpose
+          (archiveJuliaProperRoleLorentzFamily Λ hDet)) r)
+      (principalFrameJuliaQueryFamily F Γ.transpose
+        (archiveJuliaProperRoleLorentzFamily Λ hDet) r) (α r) ≠ 0)
+    (hBranch : 0 < 1 +
+      archiveJuliaSourceLorentzForm
+        (principalFrameObservedQueryVector
+          (principalFrameJuliaQueryFamily F Γ.transpose
+            (archiveJuliaProperRoleLorentzFamily Λ hDet)) r)
+        (principalFrameObservedQueryVector
+          (principalFrameJuliaQueryFamily F Γ.transpose
+            (archiveJuliaProperRoleLorentzFamily Λ hDet)) r) *
+      α r ((archiveJuliaProperRoleLorentzFamily Λ hDet r)
+        (archiveJuliaQueryNullCanonicalWitness archiveJuliaSourceLorentzForm
+          (principalFrameObservedQueryVector
+            (principalFrameJuliaQueryFamily F Γ.transpose
+              (archiveJuliaProperRoleLorentzFamily Λ hDet)) r)
+          (principalFrameJuliaQueryFamily F Γ.transpose
+            (archiveJuliaProperRoleLorentzFamily Λ hDet) r) (α r)))) :
+    (principalFrameInverseCoframeReadout
+      (principalFrameObservedQueryColumnMatrix
+        (principalFrameJuliaQueryFamily F Γ.transpose
+          (archiveJuliaProperRoleLorentzFamily Λ hDet))) * Γ.transpose = F) ∧
+    (principalFrameObservedNullQueryFrameReadout
+      (fun _ => archiveJuliaSourceLorentzForm)
+      (fun _ => archiveJuliaSourceLorentzForm)
+      (principalFrameJuliaQueryFamily F Γ.transpose
+        (archiveJuliaProperRoleLorentzFamily Λ hDet)) α r =
+      archiveJuliaProperRoleLorentzFamily Λ hDet r) := by
+  have hCoframe := principalFrameJuliaQueryFamily_recoveredInverseCoframe
+    F Γ (archiveJuliaProperRoleLorentzFamily Λ hDet) hΓ
+  have hEndpoint :=
+    principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz
+      F Γ.transpose Λ hΛ hDet α r hInputNorm hα hCovector hBranch
+  exact ⟨hCoframe, hEndpoint.1⟩
+
 end
 end D0.Geometry
