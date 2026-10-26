@@ -375,6 +375,13 @@ private noncomputable def roleLorentzEndpointActionCLM (x : RoleSpace) :
     Matrix Role Role ℝ →L[ℝ] RoleSpace :=
   (roleLorentzEndpointActionLinearMap x).toContinuousLinearMap
 
+private theorem roleLorentzEndpointActionCLM_apply (x : RoleSpace)
+    (A : Matrix Role Role ℝ) :
+    roleLorentzEndpointActionCLM x A = A.transpose.mulVec x := by
+  simpa [roleLorentzEndpointActionCLM, roleLorentzEndpointActionLinearMap,
+    roleVectorEndomorphismApplyLinearMap, Matrix.toLin'_apply'] using
+      (Matrix.vecMul_transpose A.transpose x)
+
 /-- The full endpoint derivative, with one role-indexed Lorentz tangent
 generator in each of the four factors. -/
 noncomputable def roleLorentzTangentEndpointFDeriv (x : RoleSpace) :
@@ -422,25 +429,86 @@ noncomputable def roleLorentzTangentProperFamily
     (fun s => det_exp_tangent_at_one (p s : Matrix Role Role ℝ)
       (p s).property)
 
+private theorem isRoleLorentz_mul (A B : Matrix Role Role ℝ)
+    (hA : IsRoleLorentz A) (hB : IsRoleLorentz B) :
+    IsRoleLorentz (A * B) := by
+  change (A * B) * roleLorentzMetric * (A * B).transpose = roleLorentzMetric
+  rw [Matrix.transpose_mul]
+  calc
+    (A * B) * roleLorentzMetric * (B.transpose * A.transpose) =
+        A * (B * roleLorentzMetric * B.transpose) * A.transpose := by
+          simp [Matrix.mul_assoc]
+    _ = A * roleLorentzMetric * A.transpose := by rw [hB]
+    _ = roleLorentzMetric := hA
+
+/-- Right-translate the shared exponential tangent chart to an arbitrary
+role-indexed determinant-one link. This gives genuine local tangent paths at
+the supplied links without asserting that the exponential covers the full
+proper Lorentz group. -/
+noncomputable def roleLorentzTangentProperFamilyAtBase
+    (Λ₀ : Role → Matrix Role Role ℝ)
+    (hDet₀ : ∀ r, Matrix.det (Λ₀ r) = 1)
+    (q : Role → RolePair → ℝ) :
+    Role → RoleSpace ≃ₗ[ℝ] RoleSpace :=
+  archiveJuliaProperRoleLorentzFamily
+    (fun r => Λ₀ r * NormedSpace.exp
+      (rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ))
+    (by
+      intro r
+      have htan : IsRoleLorentzTangent
+          (rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ) :=
+        (rolePairsEquivLorentzTangent (q r)).property
+      rw [Matrix.det_mul, hDet₀ r,
+        det_exp_tangent_at_one _ htan]
+      norm_num)
+
 /-- The Eq. (30a) inverse-coframe readout, transported back by the shared
-principal-frame Lorentz matrix. It uses the same exponentiated rolewise family
-as the endpoint readout below. -/
+principal-frame Lorentz matrix for any supplied rolewise query family. -/
+noncomputable def principalFrameJuliaInverseCoframeReadoutForFamily
+    (F Γ : Matrix Role Role ℝ)
+    (M : Role → RoleSpace ≃ₗ[ℝ] RoleSpace) : Matrix Role Role ℝ :=
+  principalFrameInverseCoframeReadout
+    (principalFrameObservedQueryColumnMatrix
+      (principalFrameJuliaQueryFamily F Γ.transpose M)) * Γ.transpose
+
+/-- Compatibility specialization of the generic Eq. (30a) readout to the
+rolewise exponential tangent family. -/
 noncomputable def principalFrameJuliaInverseCoframeReadoutAlongLorentzTangent
     (F Γ : Matrix Role Role ℝ) (p : RoleLorentzTangentParameters) :
     Matrix Role Role ℝ :=
-  principalFrameInverseCoframeReadout
-    (principalFrameObservedQueryColumnMatrix
-      (principalFrameJuliaQueryFamily F Γ.transpose
-        (roleLorentzTangentProperFamily p))) * Γ.transpose
+  principalFrameJuliaInverseCoframeReadoutForFamily F Γ
+    (roleLorentzTangentProperFamily p)
 
+/-- The Eq. (27)/(28) endpoint readout for any supplied rolewise Julia query
+family. -/
+noncomputable def principalFrameJuliaEndpointChartReadoutForFamily
+    (F L : Matrix Role Role ℝ)
+    (α : Role → Module.Dual ℝ RoleSpace)
+    (M : Role → RoleSpace ≃ₗ[ℝ] RoleSpace) :
+    Role → RoleSpace → RoleSpace :=
+  fun r => principalFrameJuliaEndpointChartReadout
+    ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
+    (principalFrameJuliaQueryFamily F L M) α r
+
+/-- Compatibility specialization of the generic endpoint readout to the
+rolewise exponential tangent family. -/
 noncomputable def principalFrameJuliaEndpointChartReadoutAlongLorentzTangent
     (F L : Matrix Role Role ℝ)
     (α : Role → Module.Dual ℝ RoleSpace)
     (p : RoleLorentzTangentParameters) : Role → RoleSpace → RoleSpace :=
-  fun r => principalFrameJuliaEndpointChartReadout
-    ((principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)))
-    (principalFrameJuliaQueryFamily F L
-      (roleLorentzTangentProperFamily p)) α r
+  principalFrameJuliaEndpointChartReadoutForFamily F L α
+    (roleLorentzTangentProperFamily p)
+
+/-- Pair the Eq. (30a) inverse-coframe and Eq. (27)/(28) endpoint readouts
+for one supplied rolewise Julia query family. -/
+noncomputable def principalFrameJuliaJointCoframeEndpointReadoutForFamily
+    (F Γ : Matrix Role Role ℝ)
+    (α : Role → Module.Dual ℝ RoleSpace)
+    (M : Role → RoleSpace ≃ₗ[ℝ] RoleSpace) (x : RoleSpace) :
+    Matrix Role Role ℝ × (Role → RoleSpace) :=
+  (principalFrameJuliaInverseCoframeReadoutForFamily F Γ M,
+    fun r => principalFrameJuliaEndpointChartReadoutForFamily
+      F Γ.transpose α M r x)
 
 /-- Pair the coframe and endpoint readouts from the same constructed Julia
 query family, retaining all 16 coframe entries and all four link endpoints. -/
@@ -449,9 +517,20 @@ noncomputable def principalFrameJuliaJointCoframeEndpointReadoutAlongLorentzTang
     (α : Role → Module.Dual ℝ RoleSpace)
     (p : RoleLorentzTangentParameters) (x : RoleSpace) :
     Matrix Role Role ℝ × (Role → RoleSpace) :=
-  (principalFrameJuliaInverseCoframeReadoutAlongLorentzTangent F Γ p,
-    fun r => principalFrameJuliaEndpointChartReadoutAlongLorentzTangent
-      F Γ.transpose α p r x)
+  principalFrameJuliaJointCoframeEndpointReadoutForFamily F Γ α
+    (roleLorentzTangentProperFamily p) x
+
+/-- Same paired readout at an arbitrary rolewise determinant-one link, using
+the shared right-translated exponential tangent coordinates. -/
+noncomputable def principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates
+    (F Γ : Matrix Role Role ℝ)
+    (Λ₀ : Role → Matrix Role Role ℝ)
+    (hDet₀ : ∀ r, Matrix.det (Λ₀ r) = 1)
+    (α : Matrix Role Role ℝ → Role → Module.Dual ℝ RoleSpace)
+    (q : Role → RolePair → ℝ) (x : RoleSpace) :
+    Matrix Role Role ℝ × (Role → RoleSpace) :=
+  principalFrameJuliaJointCoframeEndpointReadoutForFamily F Γ (α F)
+    (roleLorentzTangentProperFamilyAtBase Λ₀ hDet₀ q) x
 
 /-- Coordinate form of the paired coframe and endpoint readout. The normalized
 covector section may depend on the coframe; the local chart hypotheses below
@@ -490,6 +569,104 @@ theorem principalFrameJuliaJointCoframeEndpointFDerivInCoordinates_apply
     simp [principalFrameJuliaJointCoframeEndpointFDerivInCoordinates,
       roleLorentzTangentEndpointFDerivInCoordinates_apply]
 
+private noncomputable def roleLorentzCoordinateMatrixCLM (r : Role) :
+    (Role → RolePair → ℝ) →L[ℝ] Matrix Role Role ℝ :=
+  (roleLorentzTangentCoordinateCLM r).comp
+    (roleLorentzTangentParametersEquivCoordinates.symm.toLinearMap.toContinuousLinearMap)
+
+private theorem roleLorentzCoordinateMatrixCLM_apply (r : Role)
+    (q : Role → RolePair → ℝ) :
+    roleLorentzCoordinateMatrixCLM r q =
+      (rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ) := by
+  change roleLorentzTangentSubmodule.subtype
+    (roleLorentzTangentParametersEquivCoordinates.symm q r) = _
+  simp [roleLorentzTangentParametersEquivCoordinates_symm_apply]
+
+/-- Right-trivialized endpoint differential at an arbitrary role-indexed
+proper link. Each six-coordinate generator acts on the endpoint already
+transported by the base link. -/
+noncomputable def roleLorentzTangentEndpointFDerivAtBaseInCoordinates
+    (Λ₀ : Role → Matrix Role Role ℝ) (x : RoleSpace) :
+    (Role → RolePair → ℝ) →L[ℝ] (Role → RoleSpace) :=
+  ContinuousLinearMap.pi fun r =>
+    (roleLorentzEndpointActionCLM ((Λ₀ r).transpose.mulVec x)).comp
+      (roleLorentzCoordinateMatrixCLM r)
+
+theorem roleLorentzTangentEndpointFDerivAtBaseInCoordinates_apply
+    (Λ₀ : Role → Matrix Role Role ℝ) (x : RoleSpace)
+    (q : Role → RolePair → ℝ) (r : Role) :
+    roleLorentzTangentEndpointFDerivAtBaseInCoordinates Λ₀ x q r =
+      ((rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ).transpose.mulVec
+        ((Λ₀ r).transpose.mulVec x)) := by
+  simp only [roleLorentzTangentEndpointFDerivAtBaseInCoordinates,
+    ContinuousLinearMap.pi_apply, ContinuousLinearMap.comp_apply]
+  rw [roleLorentzEndpointActionCLM_apply, roleLorentzCoordinateMatrixCLM_apply]
+
+/-- Product differential for coframe recovery and endpoint readout at the
+arbitrary base links `Λ₀`. -/
+noncomputable def principalFrameJuliaJointCoframeEndpointFDerivAtBaseInCoordinates
+    (Λ₀ : Role → Matrix Role Role ℝ) (x : RoleSpace) :
+    (Matrix Role Role ℝ × (Role → RolePair → ℝ)) →L[ℝ]
+      (Matrix Role Role ℝ × (Role → RoleSpace)) :=
+  (ContinuousLinearMap.fst ℝ (Matrix Role Role ℝ)
+    (Role → RolePair → ℝ)).prod
+    ((roleLorentzTangentEndpointFDerivAtBaseInCoordinates Λ₀ x).comp
+      (ContinuousLinearMap.snd ℝ (Matrix Role Role ℝ)
+        (Role → RolePair → ℝ)))
+
+theorem principalFrameJuliaJointCoframeEndpointFDerivAtBaseInCoordinates_apply
+    (Λ₀ : Role → Matrix Role Role ℝ) (x : RoleSpace)
+    (H : Matrix Role Role ℝ) (q : Role → RolePair → ℝ) :
+    principalFrameJuliaJointCoframeEndpointFDerivAtBaseInCoordinates Λ₀ x (H, q) =
+      (H, fun r =>
+        ((rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ).transpose.mulVec
+          ((Λ₀ r).transpose.mulVec x))) := by
+  apply Prod.ext
+  · simp [principalFrameJuliaJointCoframeEndpointFDerivAtBaseInCoordinates]
+  · funext r
+    simp [principalFrameJuliaJointCoframeEndpointFDerivAtBaseInCoordinates,
+      roleLorentzTangentEndpointFDerivAtBaseInCoordinates_apply]
+
+private theorem roleLorentzTangentEndpointReadoutAtBaseInCoordinates_hasFDerivAt
+    (Λ₀ : Role → Matrix Role Role ℝ) (x : RoleSpace) :
+    HasFDerivAt
+      (fun q r =>
+        (Λ₀ r * NormedSpace.exp
+          (rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ)).transpose.mulVec x)
+      (roleLorentzTangentEndpointFDerivAtBaseInCoordinates Λ₀ x) 0 := by
+  apply hasFDerivAt_pi.mpr
+  intro r
+  let y : RoleSpace := (Λ₀ r).transpose.mulVec x
+  let c := roleLorentzCoordinateMatrixCLM r
+  have hCoord : HasFDerivAt (fun q => c q) c 0 := c.hasFDerivAt (x := 0)
+  have hExpAt : HasFDerivAt
+      (NormedSpace.exp : Matrix Role Role ℝ → Matrix Role Role ℝ)
+      (1 : Matrix Role Role ℝ →L[ℝ] Matrix Role Role ℝ) (c 0) := by
+    simpa [c] using (hasFDerivAt_exp_zero
+      (𝕂 := ℝ) (𝔸 := Matrix Role Role ℝ))
+  have hExp := hExpAt.comp (0 : Role → RolePair → ℝ) hCoord
+  have hAction := ((roleLorentzEndpointActionCLM y).hasFDerivAt
+      (x := NormedSpace.exp (c 0))).comp
+        (0 : Role → RolePair → ℝ) hExp
+  have hReadoutEq :
+      (fun q : Role → RolePair → ℝ =>
+        (Λ₀ r * NormedSpace.exp
+          (rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ)).transpose.mulVec x) =
+      (fun q => roleLorentzEndpointActionCLM y (NormedSpace.exp (c q))) := by
+    funext q
+    calc
+      (Λ₀ r * NormedSpace.exp
+          (rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ)).transpose.mulVec x =
+        (NormedSpace.exp
+          (rolePairsEquivLorentzTangent (q r) : Matrix Role Role ℝ)).transpose.mulVec
+            ((Λ₀ r).transpose.mulVec x) := by
+            rw [Matrix.transpose_mul, ← Matrix.mulVec_mulVec]
+      _ = roleLorentzEndpointActionCLM y (NormedSpace.exp (c q)) := by
+        rw [roleLorentzCoordinateMatrixCLM_apply, ← roleLorentzEndpointActionCLM_apply]
+  rw [hReadoutEq]
+  simpa [roleLorentzTangentEndpointFDerivAtBaseInCoordinates,
+    roleLorentzCoordinateMatrixCLM, c, y, ContinuousLinearMap.comp_apply] using hAction
+
 private theorem principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_eq
     (F L : Matrix Role Role ℝ)
     (α : Role → Module.Dual ℝ RoleSpace)
@@ -523,6 +700,7 @@ private theorem principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_eq
   have hRecovered := principalFrameJuliaEndpointChartReadout_eq
     F L M α hIso hDet hAlpha hShift r
   simpa [principalFrameJuliaEndpointChartReadoutAlongLorentzTangent, M,
+    principalFrameJuliaEndpointChartReadoutForFamily,
     roleLorentzTangentProperFamily, archiveJuliaProperRoleLorentzFamily,
     archiveJuliaProperRoleLorentzEquiv_apply]
     using congrFun hRecovered x
@@ -714,6 +892,136 @@ theorem principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt
             (roleLorentzTangentParametersEquivCoordinates.symm z.2) r x).symm
   exact hModel.congr_of_eventuallyEq hLocalEq
 
+/-- Local joint Fréchet derivative of Eq. (30a) coframe recovery and all four
+Eq. (27)/(28) endpoint readouts at arbitrary determinant-one Lorentz links.
+The link coordinates are right-trivialized: each canonical six-coordinate
+generator acts on the endpoint transported by the supplied base link. The
+chart hypotheses remain uniform over the coframe neighborhood. This proves
+the tangent derivative at every supplied proper link, without claiming a
+global exponential chart or physical source selection. -/
+theorem principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt
+    (F₀ Γ : Matrix Role Role ℝ) (hΓ : IsRoleLorentz Γ)
+    (Λ₀ : Role → Matrix Role Role ℝ)
+    (hΛ₀ : ∀ r, IsRoleLorentz (Λ₀ r))
+    (hDet₀ : ∀ r, Matrix.det (Λ₀ r) = 1)
+    (α : Matrix Role Role ℝ → Role → Module.Dual ℝ RoleSpace)
+    (ε : ℝ) (hε : 0 < ε)
+    (hAlpha : ∀ F, ‖F - F₀‖ < ε → ∀ r,
+      α F r ((principalFrameColumnMatrix F Γ.transpose).mulVec
+        (Pi.single r (1 : ℝ))) = 1)
+    (hShift : ∀ F, ‖F - F₀‖ < ε → ∀ r,
+      (principalFrameColumnMatrix F Γ.transpose).mulVec
+        (Pi.single r (1 : ℝ)) ≠ 0)
+    (x : RoleSpace) :
+    HasFDerivAt
+      (fun z : Matrix Role Role ℝ × (Role → RolePair → ℝ) =>
+        principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates
+          z.1 Γ Λ₀ hDet₀ α z.2 x)
+      (principalFrameJuliaJointCoframeEndpointFDerivAtBaseInCoordinates Λ₀ x)
+      (F₀, 0) := by
+  let z₀ : Matrix Role Role ℝ × (Role → RolePair → ℝ) := (F₀, 0)
+  let g : Matrix Role Role ℝ × (Role → RolePair → ℝ) →
+      Matrix Role Role ℝ × (Role → RoleSpace) := fun z =>
+    (z.1, fun r =>
+      (Λ₀ r * NormedSpace.exp
+        (rolePairsEquivLorentzTangent (z.2 r) : Matrix Role Role ℝ)).transpose.mulVec x)
+  have hF₀ : ‖F₀ - F₀‖ < ε := by simpa using hε
+  have hAlpha₀ := hAlpha F₀ hF₀
+  have hShift₀ := hShift F₀ hF₀
+  have hFirst : HasFDerivAt
+      (fun z : Matrix Role Role ℝ × (Role → RolePair → ℝ) => z.1)
+      (ContinuousLinearMap.fst ℝ (Matrix Role Role ℝ)
+        (Role → RolePair → ℝ)) z₀ := by
+    exact (ContinuousLinearMap.fst ℝ (Matrix Role Role ℝ)
+      (Role → RolePair → ℝ)).hasFDerivAt
+  have hEndpoint := roleLorentzTangentEndpointReadoutAtBaseInCoordinates_hasFDerivAt
+    Λ₀ x
+  have hSecond : HasFDerivAt
+      (fun z : Matrix Role Role ℝ × (Role → RolePair → ℝ) =>
+        fun r => (Λ₀ r * NormedSpace.exp
+          (rolePairsEquivLorentzTangent (z.2 r) : Matrix Role Role ℝ)).transpose.mulVec x)
+      ((roleLorentzTangentEndpointFDerivAtBaseInCoordinates Λ₀ x).comp
+        (ContinuousLinearMap.snd ℝ (Matrix Role Role ℝ)
+          (Role → RolePair → ℝ))) z₀ := by
+    have hSnd := (ContinuousLinearMap.snd ℝ (Matrix Role Role ℝ)
+      (Role → RolePair → ℝ)).hasFDerivAt (x := z₀)
+    exact hEndpoint.comp z₀ hSnd
+  have hModel : HasFDerivAt g
+      (principalFrameJuliaJointCoframeEndpointFDerivAtBaseInCoordinates Λ₀ x) z₀ := by
+    have hPair := hFirst.prodMk hSecond
+    simpa [g, principalFrameJuliaJointCoframeEndpointFDerivAtBaseInCoordinates] using hPair
+  have hLocalEq :
+      (fun z : Matrix Role Role ℝ × (Role → RolePair → ℝ) =>
+        principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates
+          z.1 Γ Λ₀ hDet₀ α z.2 x) =ᶠ[nhds z₀] g := by
+    filter_upwards [Metric.ball_mem_nhds z₀ hε] with z hz
+    have hzF : ‖z.1 - F₀‖ < ε := by
+      have hProj := norm_fst_le (z - z₀)
+      have hdist : ‖z - z₀‖ < ε := hz
+      simpa [z₀] using lt_of_le_of_lt hProj hdist
+    have hAlphaF := hAlpha z.1 hzF
+    have hShiftF := hShift z.1 hzF
+    let M := roleLorentzTangentProperFamilyAtBase Λ₀ hDet₀ z.2
+    have hLorentzM : ∀ r,
+        IsRoleLorentz (Λ₀ r * NormedSpace.exp
+          (rolePairsEquivLorentzTangent (z.2 r) : Matrix Role Role ℝ)) := by
+      intro r
+      exact isRoleLorentz_mul (Λ₀ r)
+        (NormedSpace.exp
+          (rolePairsEquivLorentzTangent (z.2 r) : Matrix Role Role ℝ))
+        (hΛ₀ r)
+        (isRoleLorentz_exp_tangent_at_one _
+          (rolePairsEquivLorentzTangent (z.2 r)).property)
+    have hDetM : ∀ r, Matrix.det (Λ₀ r * NormedSpace.exp
+        (rolePairsEquivLorentzTangent (z.2 r) : Matrix Role Role ℝ)) = 1 := by
+      intro r
+      rw [Matrix.det_mul, hDet₀ r,
+        det_exp_tangent_at_one _ (rolePairsEquivLorentzTangent (z.2 r)).property]
+      norm_num
+    have hIso : ∀ r y w,
+        archiveJuliaSourceLorentzForm ((M r) y) ((M r) w) =
+          archiveJuliaSourceLorentzForm y w := by
+      intro r y w
+      simpa [M, roleLorentzTangentProperFamilyAtBase,
+        archiveJuliaProperRoleLorentzFamily] using
+        archiveJuliaProperRoleLorentzEquiv_form_isometry
+          (Λ₀ r * NormedSpace.exp
+            (rolePairsEquivLorentzTangent (z.2 r) : Matrix Role Role ℝ))
+          (hLorentzM r) (hDetM r) y w
+    have hDet : ∀ r, LinearMap.det (M r).toLinearMap = 1 := by
+      intro r
+      simpa [M, roleLorentzTangentProperFamilyAtBase,
+        archiveJuliaProperRoleLorentzFamily] using
+        archiveJuliaProperRoleLorentzEquiv_det_one
+          (Λ₀ r * NormedSpace.exp
+            (rolePairsEquivLorentzTangent (z.2 r) : Matrix Role Role ℝ))
+          (hDetM r)
+    have hChartF := principalFrameJuliaEndpointChartReadout_eq
+      z.1 Γ.transpose M (α z.1) hIso hDet hAlphaF hShiftF
+    apply Prod.ext
+    · simpa [principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates,
+        principalFrameJuliaJointCoframeEndpointReadoutForFamily,
+        principalFrameJuliaInverseCoframeReadoutForFamily, M] using
+        (principalFrameJuliaQueryFamily_recoveredInverseCoframe
+          z.1 Γ M hΓ)
+    · funext r
+      have hReadoutF :
+          principalFrameJuliaEndpointChartReadoutForFamily z.1 Γ.transpose
+            (α z.1) M r x =
+            (Λ₀ r * NormedSpace.exp
+              (rolePairsEquivLorentzTangent (z.2 r) : Matrix Role Role ℝ)).transpose.mulVec x := by
+        simpa [principalFrameJuliaEndpointChartReadoutForFamily, M,
+          roleLorentzTangentProperFamilyAtBase, archiveJuliaProperRoleLorentzFamily,
+          archiveJuliaProperRoleLorentzEquiv_apply] using congrFun (hChartF r) x
+      dsimp [principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates,
+        principalFrameJuliaJointCoframeEndpointReadoutForFamily, g]
+      change principalFrameJuliaEndpointChartReadoutForFamily z.1 Γ.transpose
+          (α z.1) (roleLorentzTangentProperFamilyAtBase Λ₀ hDet₀ z.2) r x =
+          (Λ₀ r * NormedSpace.exp
+            (rolePairsEquivLorentzTangent (z.2 r) : Matrix Role Role ℝ)).transpose.mulVec x
+      simpa [M] using hReadoutF
+  exact hModel.congr_of_eventuallyEq hLocalEq
+
 /-- Joint directional derivative of the Eq. (30a) coframe recovery and the
 Eq. (27)/(28) endpoint readout on one constructed Julia query family. The
 coframe path may have any derivative, while the four links follow the chosen
@@ -763,6 +1071,7 @@ theorem principalFrameJuliaJointCoframeEndpointReadoutAlongLorentzTangent_hasDer
         F (fun _ => Γ.transpose) (fun s => (p s : Matrix Role Role ℝ))
         (fun s => (p s).property) α hAlpha hShift r x
     simpa [principalFrameJuliaEndpointChartReadoutAlongLorentzTangent,
+      principalFrameJuliaEndpointChartReadoutForFamily,
       roleLorentzTangentProperFamily] using hRole
   have hPair := hCoframe.prodMk hEndpoint
   simpa [principalFrameJuliaJointCoframeEndpointReadoutAlongLorentzTangent,
