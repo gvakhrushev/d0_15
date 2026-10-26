@@ -53,6 +53,27 @@ The actual field/scene map and selected full valuation remain open. No new
 external clock, independent variation of every generated prefix, or compulsory
 Cartesian history graph is a prerequisite. GR_closed=false.
 
+**26 October application: growing-history full Book source.** The same primary
+artifact, section7cg, now composes two actual internal AF cut records, the
+whole-state rectangular-to-regular isometry and the complete square Book
+feedback. Both intermediate and terminal outcomes are retained. Its true
+working carrier is H_(n+15), its determinant weights are M^12 d (not the
+ambient GNS dimension), and its full fixed-level default master source is
+`g_h D_42 sum(fhat+2 sigma p q)`, g_h>0. Its common heat/feedback carrier
+explicitly retains separate 33-vertex and 22976-port factors; their physical
+identification/admission is not inferred from a dimension count.
+The derived ratio `2 sigma p`
+feeds the already-owned arbitrary-Brinkmann all42 and midpoint recovery
+theorems; no new geometric root search is needed. This is a changed recorded
+programme, not the original same-frame T_E^2 price with a free history
+attached. Full source/cut/frame identities and the smallest exact symbolic
+check are in that section. The actual same-programme copy/lift admission,
+field-and-scene writer, orientation and complete physical continuation/rank
+valuation remain the next parent application. Do not require an independent
+future trace blank or add a new Info/R term to Book03's defined H+J master.
+Do retain additional terms if the selected physical execution actually has
+them. No physical GR, lifecycle or assembly status is promoted.
+
 ## 22 October: consume real original 0/10 paid-code full42 root and quantified complete-source robustness
 
 The [exact unpadded 0/10 42-root receipt](../../02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json) now includes ALL 16+24+2 original finite fields and literal F/R output charges 1 and 2; its open-ended nonflat rank-two exact stationary theorem renders historical pureboost all42 root searches obsolete for the full field space. The [new strict all42 source robust consumer](../../02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md) consumes its completed interval proof without changing original receipt or scientific source: ANY continuous additional correctly normalized all42 source of sup <=1e-22 on the radius-1e-20 ball has an exact mathematical root, no "other 41 compatible rows" premise; if Lip<=0.01 the root is unique. A genuine C2 correction with Hessian norm<=0.01 cannot make the still-indefinite full-field Hessian a minimum. New narrow checker: sources/d0_original_unpadded42_2026-10-22/check_unpadded42_full_source_robustness.py.

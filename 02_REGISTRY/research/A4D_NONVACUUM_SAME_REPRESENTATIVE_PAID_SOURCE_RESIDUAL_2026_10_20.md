@@ -78995,3 +78995,317 @@ source-equivalence theorem. It is not to demand independent variation
 of every state on a generated time ladder. GR_closed=false; positive_gr,
 raw216 and physical D0-to-GR remain open. No independent assembly
 acceptance, lifecycle change or new task is asserted.
+
+## 7cg. Growing retained history: two actual AF records and their complete Book source
+
+26 October 2026; same #334, native realization and final composition.
+Input HEAD `6abd6d293590579176c63c7a80f6651cc62127ea`.
+The changed input is the user's saturated-memory time requirement: a new
+readable outcome must retain the required past, without assuming a stock
+of independently prepared future registers. This section supplies one
+mathematical growing-history realization and its WHOLE fixed-level Book03
+master field source. It does not select this programme as compulsory D0
+physics. `GR_closed=false`.
+
+### 7cg.1 Consume the existing clock and source owners without identifying different words
+
+The [AF activation](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md), sections2--4,
+provides actual four-frame isometries `V_c:H_m->H_(m+3)`, with `V_0=J`,
+`V_c*V_d=delta_cd I`, and the complete identity complement. Its working
+right-module algebra is A_(m+6). The
+[history continuation](A4D_NATIVE_ENGINE_CORRELATED_CURRENT_EXTENSION_2026-10-15.md),
+section "Internal resolution and information growth", already supplies
+orthogonal nested history subspaces. Starting at1, their full working
+dimensions are F_(6k+5); their named binary-history PVM has entropy
+`k(2-p)log(phi)`. This is neither spatial volume nor global pure-state
+entropy. No clock/capacity theorem is reproved here.
+
+The [controlled record](A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md),
+section1, uses exactly `W_E=V T_E V*+I-VV*`, and the
+[local source](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md),
+equation8, already contains this recorder. However its two applications
+are `T_E^2` on one four-frame, whereas two nested history records are
+`W_(m+3)J_(m+3)W_mJ_m`. Equality of one gate does not identify those two
+programmes or their complete prices. The present construction deliberately
+retains the intermediate outcomes and computes the resulting price.
+
+An isometry alone can merely re-encode an old state. Here distinct words
+occupy orthogonal frame sectors, with their actual cut projections retained.
+This establishes a readable history algebra; physical actuation of those
+record operations remains an admission obligation.
+
+### 7cg.2 One complete two-record AF execution, without a reset to a future trace seed
+
+Put `M=[[1,1],[1,0]]`, `d=(F_(n+2),F_(n+1))`, and
+`d_r=dim H_r=F_(2r+3)`. Set
+
+    m=n+6, D=M^6 d, D'=M^12 d.
+
+The original controlled AF gate is an element of A_m, so start on its
+full regular H_m, with actual initial state x. Keep the complete scene,
+oldRIGHT and all declared spectator multiplicities. On each old LEFT
+address i use the ORIGINAL local controls
+
+    E_i=p^2(1+t^2 f_i), b_i=(p+sigma p^2 t^2 q_i)^2,
+    p+p^2=1, sigma in {+1,-1}, 0<E_i,b_i<1.
+
+Let `U=T_E tensor G_b`, including the original full complements, and
+`P_old=P_AF tensor P_s`, where `P_AF=diag(I,I,0,0)` and rank(P_s)=528.
+Let Q_c, c in Z_2^2, be the four joint projections of these two actual
+cuts and their complements. They sum to I. For the four XOR permutations
+S_c define the unitary
+
+    C_1=sum_c S_c tensor Q_c,
+    W_1=V_m C_1(I_4 tensor U)V_m*+(I-V_m V_m*),
+    P_1=V_m(I_4 tensor P_old)V_m*.                       (7cg.1)
+
+In particular `W_1 J_m x=sum_c V_c Q_c U x`. The four labels live in
+new native AF subspaces, not in an externally supplied tensor memory.
+The tensor coordinates in7cg.1 are the coordinates of the owned frame.
+Every complement and every input column remains in the full operator.
+
+To execute the next record while preserving the ENTIRE previous operator
+algebra, use the existing rectangular-to-regular representation map.
+In normalized Hilbert--Schmidt coordinates the first working module is
+`H_(m+3)=sum_j Mat(D'_j,D_j)`. If G_j is its canonical inclusion with
+`G_j*G_j=I`, then
+
+    I_m(F)_j=F_j G_j*,
+    ||I_m(F)||=||F||, I_m(aF)=a I_m(F).                 (7cg.2)
+
+It maps the actual state into H_(m+6), intertwining its complete LEFT
+A_(m+6). The old RIGHT is retained by its inherited inclusion. This is
+not resetting to Omega_(m+6) or postselecting its corner. The p^6 overlap
+with that DIFFERENT trace seed does not constitute a success probability
+or mandatory preparation payment for7cg.2. Physical implementation of
+this isometric growth must nevertheless be admitted, not inferred from
+its algebraic existence. The map follows from the owned right-module
+factorization in [canonical source, section2](A4D_NATIVE_CANONICAL_TRACE_RECORD_SOURCE.md).
+
+On this regular module extend the original U identically across all first
+history branches:
+
+    U_2=V_m(I_4 tensor U)V_m*+(I-V_m V_m*).
+
+The two cuts also extend identically across the branches; assign the
+unused complement to one fixed joint outcome so that the four new Q'_c
+still sum to I. Their intersection on the active frame is P_1. Use the
+next owned four-frame V_2=V_(m+6), form its XOR recorder C_2, and set
+
+    W_2=V_2 C_2(I_4 tensor U_2)V_2*+(I-V_2 V_2*),
+    W_tot=W_2 alpha^3(W_1),
+    P_2=V_2(I_4 tensor P_1)V_2*.                         (7cg.3)
+
+Here alpha is the canonical AF LEFT inclusion. On the actual born state
+this implements, in order, W_1 J_m, the whole-state map7cg.2, and
+W_2 J_(m+6). Explicitly define the born input in the final square carrier
+by `j_birth x=J_(m+6) I_m J_m x`. Then the intertwining identities give
+
+    W_tot j_birth x=W_2 J_(m+6) I_m W_1 J_m x.
+
+Thus the first W_1 occurs exactly once. Every generated state is
+determined by the same input.
+The completed square word acts on H_(m+9)=H_(n+15). Its complete operator
+algebra is A_(n+18), represented with RIGHT multiplicities D', not the
+regular multiplicities of that later algebra.
+
+The typed history maps from H_m into the final module are
+
+    B_dc=Q'_d U_2 I_m V_(1,c) Q_c U,
+    R_dc=V_(2,d) B_dc,
+    Pi_dc=V_2(|d><d| tensor H_c)V_2*, H_c=V_(1,c)V_(1,c)*.
+
+The actual output is sum_(d,c) R_dc x; these nested frame sectors are
+orthogonal, and sum R_dc*R_dc=I. Include the full dark complement in
+the history PVM. The full coherent input is therefore recoverable.
+On the common stratum
+E_i=b_i=p^2, each nonzero cut-history operator on the original matched
+active input is a scalar times a permutation/isometry, so its old DATA
+can also be recovered conditionally on that history. Away from that
+stratum, a conditioned measurement may filter an unknown superposition;
+do not assert conditional quantum-state preservation there. The old
+classical LEFT addresses are retained throughout. No entropy is assigned
+to the global pure state merely because its word labels are readable.
+
+### 7cg.3 The full same-cut feedback, including every record-input column
+
+`[C_2,I_4 tensor P_1]=0`: its controls read the same terminal cuts.
+Equivalently its full lift `V_2 C_2 V_2*+(I-V_2 V_2*)` commutes with P_2.
+Also
+`alpha^3(W_1)V_2=V_2(I_4 tensor W_1)`. Therefore on EVERY P_2 column,
+
+    F_tot=P_2 W_tot*(I-P_2)W_tot P_2
+         =V_2(I_4 tensor F_big)V_2*,
+    F_big=P_1 (U_2 W_1)*(I-P_1)(U_2 W_1)P_1.           (7cg.4)
+
+The complement of V_2 is invariant under alpha^3(W_1), so no missing
+complement feedback is introduced. Within V_m, F_big is the full Book
+feedback of `U C_1 U` on `I_4 tensor P_old`. It is NOT the determinant
+of a blank-prepared rectangular channel. The four incoming history
+columns are all included even though the actual birth uses V_0.
+
+The exact band calculation needs only the original small blocks. Write
+`r=sqrt(1-E)`, `b_A=sqrt(E)`, `s=sqrt(1-b)`, `b_s=sqrt(b)`:
+
+    T_E=[[r,0,-b_A,0],[0,r,0,-b_A],
+         [0,b_A,0,r],[b_A,0,r,0]],
+    G_b=[[s,-b_s],[b_s,s]].
+
+After the intermediate coherent copies, their full active compressions
+are `A_AF=(1-E)I_4-E(X tensor X)` and `A_s=(1-b)I_2-bX`.
+Their tensor product yields the four feedback bands
+
+    0, lambda_E, lambda_b, lambda_E+lambda_b-lambda_E lambda_b,
+    lambda_E=4E(1-E), lambda_b=4b(1-b).                 (7cg.5)
+
+Each band has multiplicity2 per old LEFT address before the last record.
+The last four-frame multiplies this by4. In the final WORKING module the
+actual multiplicity is therefore `8*528*nu*D'_j` per old address i in
+block j. Consequently the complete determinant is
+
+    J=-4224 nu sum_(j,i) D'_j [
+          log(1-z lambda_Ei)+log(1-z lambda_bi)
+         +log(1-z(lambda_Ei+lambda_bi-lambda_Ei lambda_bi))]. (7cg.6)
+
+The zero band contributes log1 and is retained in the cut and heat.
+All inactive original scene columns and AF complements also remain;
+their feedback pencil is identity. Define
+
+    K=sum_j d_j D'_j=d^T M^12 d=||M^6 d||^2=d_(n+6),
+    L=4p^3=1-p^6, Q=1-zL, R=1-z(1-p^12).
+
+Then on Sigma={f_i=q_i=0},
+
+    J_Sigma=-4224 nu K(2log Q+log R),
+    rank P_2=32*528*nu*K, rank F_Sigma=24*528*nu*K.       (7cg.7)
+
+The ambient AF dimension is d_(n+15)=F_(2n+33), NOT K. Pricing instead
+on the full regular GNS of A_(n+18) would replace D' by M^18d, K by
+F_(2n+21), and the ambient dimension by F_(2n+39). Those are different
+absolute prices; their equality is not used.
+
+### 7cg.4 Complete default Book field source and the existing nonlinear GR consumer
+
+Use the genuine determinant weights `pi_(j,i)=D'_j/K`. Recompute the
+existing `w_x`, `bar w`, `rho_x=w_x/bar w`, and the SAME density-dressed
+metric and inverse-weight inputs of local-source equations1--4. These
+give exactly
+
+    sum_i pi_i f_i=bar w sum_x fhat_x,
+    sum_i pi_i q_i=bar w sum_x q_x.                     (7cg.8)
+
+No probability or individual multiplicity is fitted. At Sigma,
+
+    D lambda_E=4p^5 t^2 Df_i,
+    D lambda_b=8 sigma p^6 t^2 Dq_i,
+    D lambda_mixed=p^6(D lambda_E+D lambda_b).
+
+Hence the WHOLE determinant source in all independently varied 16+24+2
+field directions is
+
+    D_42 J=g_h D_42 sum_x(fhat_x+lambda_rec q_x),
+    lambda_rec=2 sigma p,
+    g_h=4224 nu K bar w *4z p^5 t^2*(1/Q+p^6/R)>0.      (7cg.9)
+
+This new ratio is forced by the actual complete recorded word. It is
+independent of z, depth and mesh; it was not chosen to retain the old
+representative's ratio. The two partial derivatives of7cg.6 are symmetric
+at E=b=p^2. Removing the intermediate copies returns the old two-band
+word and its different ratio: an immediate hostile control against
+silently attaching a free history to the original Jloc.
+
+Book03 section03.25 defines the bare master B=H+J. Specify its common
+carrier explicitly: the 22976-dimensional port space is NOT a multiple
+of the 33-dimensional vertex space. For this realization take
+
+    H_full=C^33_vertex tensor H_(n+15) tensor C^22976_ports tensor H_spect,
+    Delta=L_sym tensor I,
+    U_full=I_33 tensor W_tot tensor I_spect,
+    P_full=I_33 tensor P_2 tensor I_spect,
+    nu=33 dim H_spect,
+    kappa_actual=d_(n+15)*22976*dim H_spect.
+
+Thus the vertex multiplicity is included in the WHOLE feedback trace
+as well as the actual heat representation. This is an explicitly
+declared faithful finite representation, not a decomposition or an
+already-forced interpretation of the 22976 ports. Its physical admission
+belongs to the same programme obligation as the cuts and copy operations.
+On that carrier,
+
+    B_Sigma=(log Z_scene+log kappa_actual)/beta
+            -4224 nu K(2log Q+log R).                  (7cg.10)
+
+The AF factor of kappa_actual is the FULL d_(n+15), with the declared
+port/CAR/reference factors also retained. At fixed scene, n, beta and z,
+`D_42 H=0`, so7cg.9 is the full master field source. No additional Info
+or Rayleigh term is invented to make this definition calculable. If an
+actual different complete valuation includes such terms, its source must
+be added and tested. Variations of beta or the level have NOT vanished:
+retain the derivative of the whole heat trace and the actual finite
+level difference of7cg.6/7cg.10.
+
+Now apply, rather than reprove, [the all40 theorem, section5.1](../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md)
+with the actually computed `b_h/a_h=lambda_rec`. With the existing
+reverse orientation sigma=-1, lambda_rec=-2/phi. Its exact finite family is
+
+    K_a(u,x)=[H(u+h,x)-H(u+h,x-h e_a)]/2,
+    Delta_h^perp H(u+h)=-4 lambda_rec |D_u^+Psi(u)|^2.   (7cg.11)
+
+Every other independently varied geometric and two material row vanishes
+by that owned proof. For a fixed smooth waveform and positive CAR slack,
+the [midpoint recovery construction](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
+applies with this constant ratio:
+
+    H_h(tau,x,y)=-lambda_rec E_h(tau)(x^2+y^2)+W_h,
+    E_h=||(Psi(tau+h/2)-Psi(tau-h/2))/h||^2.
+
+Use its actual discrete harmonic W_h and time staggering. The same proof
+gives O(h^2) recovery on its stated smooth/analytic transverse-wave class,
+with continuum `H=-lambda_rec ||Psi'||^2(x^2+y^2)+W`.
+This is a sourced, infinite-dimensional mathematical GR family with
+growing retained history and the full declared master field equations.
+It does not identify its changed continuum representative with the old
+lambda_-(2^-20) metric.
+
+### 7cg.5 Decisive check, parent substitution and remaining physical application
+
+The exact verification is the symbolic eight-column compression in7cg.5,
+the complete frame identity7cg.4 and the full derivative7cg.9. A narrow
+SymPy evaluation used symbolic r,b_A,s,b_s to form both complete copy
+unitaries, checked their four/two-column compressions, diagonalized them
+with the exact Hadamard matrix, and verified all eight eigenvalues and
+all off-diagonal zeros after r^2=1-E, b_A^2=E, s^2=1-b, b_s^2=b.
+It then checked `Dq-2*sigma*p*Df=0` and the displayed g_h coefficient
+exactly with `p=(sqrt(5)-1)/2`, symbolic z,t. Output:
+
+    EXACT PASS: full 8-column return bands, nonzero off-shell first source,
+    ratio 2*sigma*p, and native trace multiplicity identity.
+
+The all-depth trace identity follows analytically from M=M^T and the
+owned Fibonacci dimension formula, not from finite sampling. Two
+read-only reviews independently checked the band/source factors and
+the native AF module/cut/complement maps. No repeated all40 search,
+new numerical root, geometry census or Lean theorem is needed for this
+application.
+
+The substituted premise is specific: the primary mathematical Einstein
+consumer can now be fed by ONE complete square Book execution that
+records both actual intermediate and terminal cut outcomes into a
+growing AF carrier, with all trace multiplicities, birth maps and heat
+dimensions retained. A preallocated horizontal clock and a freshly
+chosen future trace preparation are not necessary premises of that
+construction. This corrects the earlier route without claiming that
+every machine gate is a new readable tick or that spatial volume equals
+GNS dimension.
+
+The remaining native application is to admit and select the SAME
+controlled-copy operations, regular isometric growth, full vertex/port
+representation, cut, field-code
+reader/writer and reverse orientation, and bind their full physical
+continuation/rank law and any genuinely additional upstream valuation.
+This proof does not derive those operations merely from matrix-algebra
+membership. It does not establish physical local Diff-natural metric
+descent or the Golden physical metric scaling needed for global Einstein
+universality. Original HJR, raw216, generic physical GR and compulsory
+prospective selection retain their prior scope. No task retirement,
+assembly acceptance or `positive_gr` promotion is asserted.
