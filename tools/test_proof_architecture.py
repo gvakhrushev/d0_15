@@ -1572,6 +1572,8 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(c3_inventory["schema"], "d0-lean-declaration-inventory-v1")
         self.assertEqual(c3_inventory["public_import_root"], "D0.All")
         self.assertFalse(c3_inventory["worktree_dirty"])
+        self.assertEqual(c3_inventory["snapshot_commit"],
+                         "986c05d72956f95c1eeeab7e17df0e3824992db5")
         self.assertEqual(c3_inventory["lean_source_digest"], lean_task_build.source_digest())
         c3_declarations = {row["name"]: row for row in c3_inventory["declarations"]}
         c3_required = {

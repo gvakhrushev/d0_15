@@ -9451,5 +9451,13 @@ example, not physical source selection or GR closure.
 
 The changed module passes the narrow Lean 4.30.0 build (**3,301/3,301** jobs)
 and the public-import `D0.All` build (**4,615/4,615** jobs). Its compiled
-declaration inventory and refreshed retrieval receipts are recorded in the
-next checkpoint after regeneration.
+`D0.All` inventory records 48 declarations owned by the module, including
+generated auxiliaries; the five new public source declarations all have the
+standard axiom footprint `{Classical.choice, Quot.sound, propext}`. The clean
+Lean source snapshot is `986c05d72956f95c1eeeab7e17df0e3824992db5` with source
+digest `00788714716bf31665b8f7bedcf058b9e40dd454e2d7f737e15a20dae88d2e0f`.
+Inventory:
+[`nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json)
+(SHA-256 `2ad2bee1b0dc6ddea930eeb96fe3ffb6315838ca21a446f51142cb9a4c2a2f36`).
+The refreshed retrieval receipts are recorded in the next checkpoint after
+replay.
