@@ -14486,3 +14486,81 @@ repository index requires LF. Raw observed receipt hash above is retained;
 its identical-text embedded LF form has SHA256 85271b0eacc51cd4f6115c67c4d0a737bc9d2f29cc5345871862f66a18f09d6c.
 Only those19 line endings and this provenance note changed. No proof or
 checker input/result changed; no mathematical replay was required.
+
+
+### 26 October 2026 — original chronological full-source limit and all-horizon scale test
+
+Same #334; native realization/final composition; constitutive/native-programme-v1.
+Primary7cd657-672 consumes the original copied full128 Julia word, full33
+clock, true-adjoint geometric inverse and existing full spatial source limit.
+Input c70096246b104a7f90ffb0e88dda9434f06b2c7d and all earlier incoming work
+are preserved. Only this brief and the existing primary artifact are edited.
+No new task, mathematical registry, assembly acceptance or lifecycle change.
+
+Exact parent substitution: the previously uncomputed continuum field covector
+of the original coherent-cut chronological H+J candidate is the feedback-only
+source668 in the strong packed raw-sum norm669. The original absolute price
+anchors remain; the spatial normalized heat/Rayleigh terms are not imported
+from recovery of D_sp. The real source multiplier is kappa=33*d_R, hence4224
+for d_R=128, not128, N or128^n. The selected cut and INTERNAL scene placement
+are explicit hypotheses of this application.
+
+New route change: for every controlled freely dilatable periodic chart with
+strict Julia margin, nondegenerate creation legs and uniformly invertible
+FULL CAR16 transports, the exact finite H+J scale source is positive on all
+sufficiently fine meshes, for EVERY n>=1. The proof combines the true entire
+U jet, original factorial clock bound, full-degree trace identity and distinct
+forward blocks. Ratio |DH_hist|/DJ <= C*h^4 holds uniformly over n. It does
+not assert an n-uniform positive lower source bound or rule out approximate
+criticality after an unproved normalization. This extends the old fixed
+DATA16 fixture, without another root/candidate/rank/horizon scan.
+
+The same-source continuum application retains the actual physical link
+scaling, independent coframe/link/observer rows, full-field operator lift
+and actual schedule tau_h=2n_h alpha_h -> tau>0. No raw h^-2 response limit
+or selected native smooth word family is inferred. Fixed-collar consequence672
+uses an interior bump at fixed tau near a flat PERIODIC field; local metric
+agreement does not identify a changed global regulator. Smaller old own-leg
+variation domains need their own admission map.
+
+The existing feedback IR theorem can now consume this original continuum
+source with M=kappa, keeping its volume/observer/connection contributions and
+its distinct large-size limit. It does not select Lorentzian GR. Remaining
+application: actual full cut/field/clock selection and whatever remaining
+source or native constraint the same admitted execution supplies. No desired
+Info/counterterm or frozen field is used to force cancellation. Full42 saddle,
+positive nonvacuum family, Golden/Lovelock routes and raw216 keep their scope.
+GR_closed=false; the full D0-to-GR goal remains open.
+
+Smallest decisive validation is analytic: full-CAR grading and offsite-block
+proof665, exact decreasing all-n ratio664, and the existing source theorem
+applied in its stated norm. There is no new executable numerical certificate.
+Two read-only assistants independently checked the mathematical application;
+final draft source review and affected structural checks are recorded below.
+No prior heat/finite-root/Slater/Lean suite replay is claimed.
+
+Pinned source blobs at c7009624:
+- paid-writer:35764378b23374ca0bff6989f13270354fbcb0fc;
+- full-Lorentz-adjoint:2c9e30fc7ae5518aa958d0ee29c08ae071150c69;
+- finite-heat-source-limit:22f74569f1659e4c60ab38637e09ac4059a49611;
+- feedback-IR:1fead3aa8c163fe2bc8e43640f570d0622df85c1.
+Incoming primary canonical-LF SHA256:
+a10c59b6d008f197bd532f981620276714c359c56ad9c0a7df4074e940146e64.
+Incoming brief canonical-LF SHA256:
+401339e9294183850235f527f28632240ce99023286094998926f92e3d55ede4.
+
+Final source-only review ACCEPT: full_path_metric_application and
+selected_bootstrap_application. Their scope clarifications are incorporated:
+the creation-leg matrix need not be positive definite; the local test starts
+from a genuinely homogeneous operator; IR consumption retains its separate
+large-size and uniform C1 heat-expansion hypotheses. Neither review is
+independent assembly acceptance. No prior executable proof input changed.
+Final section7cd canonical-LF SHA256:
+3bfd8274b728c4c6d30a06df0c9e2c502db14d482d3beeb235a4f07714ebc996.
+
+Affected structural validation PASS on the final proof inputs: validate_work.py,
+validate_agent_protocol.py, validate_repo.py (889claims,31assumptions,
+58aliases,183formal_support,918Leanclosure; warnings0), and git diff --check.
+The final review/provenance notes change no validated mathematical input or
+work metadata. Both incoming files remain exact prefixes; all new text uses
+LF. Publication is limited to these two owned paths; remote verification follows.

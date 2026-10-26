@@ -28422,3 +28422,317 @@ Observed final ordinary-Python receipt (exit0, assertions enabled):
   "scope": "coherent addressed-profile application; target and internal placement supplied; no GR closure"
 }
 ```
+
+
+## 7cd. Original chronological master: its full continuum source and all-horizon free-scale exclusion
+
+Phase: native realization / final composition, existing #334,
+constitutive / native-programme-v1. Input is
+c70096246b104a7f90ffb0e88dda9434f06b2c7d. This applies the actual inverse
+in7k101-109 to the original copied Julia execution, without supplying a
+chosen gravitational functional to a programmable reporter. It consumes
+[paid writer, Sections13-14 and19](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md),
+the [original full-Lorentz Julia interface](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md),
+and the [finite full-source limit, Sections1-6](A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md).
+Those owners already contain the complete clock/source estimates and the
+spatial source convergence; neither is re-proved or replaced by a new heat.
+
+**Parent substitution and route change.** The still unevaluated continuum
+field source of THIS original coherent-cut chronological H+J candidate is
+now identified: it is the feedback source alone. More strongly, on controlled
+freely dilatable periodic fields its exact finite H+J source cannot vanish
+for sufficiently fine h, simultaneously for every integer recording horizon
+n>=1. This strengthens paid-writer139, which concerned one fixed DATA16
+fixture, to a geometric refining family with all sites and all CAR16 modes.
+It is not a new finite gravity root search. It excludes this direct candidate
+on the stated variation domain; it neither excludes the configured full42
+saddle nor identifies the compulsory physical cut, constraint or whole price.
+
+### 7cd.1 Fix the original full word, placement, cut and gain
+
+Let h=1/L on the unit periodic four-torus, L>=3. With the actual whitened
+creation legs u_r and degree-preserving FULL CAR16 proper-link transport
+\(\mathsf M_{h,r}\), retain the true Hilbert adjoint:
+\[
+ d_h=h^{-1}\sum_{r=0}^3c(u_r(x))
+                  [\mathsf M_{h,r}(x)S_r-I],\qquad
+ D_h=d_h+d_h^*,\quad Q_h=D_h^2,\qquad
+ \alpha_h={p^2h^2\over128},\quad p=\phi^{-1}.
+                                                        \tag{657}
+\]
+The transport in(657) is the exterior/CAR representation, including
+whitening. A bound on the four-dimensional vector transport alone is not
+silently substituted for its sixteen-dimensional singular-value bound.
+Use exactly the signed original Julia SELECT and its entire negative-range
+isometry L from paid-writer59. Its row is A=hD_h/16; its entire reflection is
+U_h=I-2LL*. Do not reconstruct U_h from the initialized column.
+
+Copy each fresh 128-outcome App to its own fresh bank and retain both. The
+complete word has monodromy V_(h,n)=(C_n U_h)...(C_1 U_h), with the original
+INTERNAL placement on the 33-scene clock. N is the actual primitive length:
+N>=8n, since even treating U_h as one operation still needs seven bit copies
+per round. A finer admitted expansion only increases N. This conditional
+matrix construction does not prove a smooth family of exact primitive words.
+Within each field derivative N, register ranks, scene, calibration and
+beta_heat=2p^2 are fixed.
+
+The transported coherent cut starts with identity on ALL DATA and passive
+oldRIGHT inputs and blank on ALL Apps AND banks. Thus, with z=2^-20,
+\[
+ B_h=I-\alpha_h Q_h,\quad F_{h,n}=(1-z)I+zB_h^{2n},\qquad
+ J_{h,n}=-\kappa\operatorname{Tr}_{\mathrm{sites}\otimes\mathrm{CAR16}}
+                         \log F_{h,n},\quad
+ \kappa=r_Sd_R,\quad r_S=33.                            \tag{658}
+\]
+For the original d_R=128, kappa=4224. There is neither an N multiplier nor
+an App/bank multiplicity128^n in(658). The latter belongs to a different
+cut. The actual full heat H_hist is the logarithm of the whole scene/clock/
+work trace, with all unprepared columns and the same oldRIGHT; it is not
+beta^-1 log Tr exp(-beta Q_h). Set S_(h,n)=H_hist+J_(h,n).
+This is precisely the direct H+J candidate, not a declaration that every
+native residual, preparation, Info and work term equals it. Those additional
+terms require their own same-execution source application.
+
+### 7cd.2 One physical scale direction tests the entire exact source
+
+Assume a controlled strict original Julia chart
+max_(x,r)(||c(u_r)||,||c(u_r)mathsf M_(h,r)||)<=k<1, uniformly in h.
+Then the original operator norm bound ||hD_h||<=16k gives
+B_h>p^3 I. Put b=p^3. The point lies inside an open field chart.
+Keep density/calibration, observer, proper links and mesh fixed, and take
+\[
+ E_x(t)=e^{-t}E_x,\quad u_r(t)=e^t u_r,\quad
+ D_h(t)=e^tD_h,\quad Q_h(t)=e^{2t}Q_h.                  \tag{659}
+\]
+The inverse-coframe relation uses the actual density map in paid-writer12.1.
+This is an actual metric dilation with that density held independent, not
+an internal Bratteli level change. Uniform scaling preserves the old own-leg
+transport relation when it holds. Fixed collars or constraints tying density
+to coframe volume may forbid(659); they are not discarded.
+
+Since F,B,Q commute and 0<F<=I, exact trace differentiation yields
+\[
+ J'_{h,n}=4\kappa nz\alpha_h\operatorname{Tr}
+               [F_{h,n}^{-1}B_h^{2n-1}Q_h]
+ \ \ge 4\kappa nz T_h b^{2n-1},\qquad
+ T_h=\alpha_h\operatorname{Tr}Q_h.                     \tag{660}
+\]
+No lower spectral gap is assumed. Genuine zero modes remain in the trace;
+positivity follows as soon as Q_h is not the zero operator.
+
+The whole U_h jet, including unused columns, has a uniform bound on this
+radial path. Each original Julia operand X scales as e^t X. The derivative
+of its defect root is -XX*(I-XX*)^-1/2, also when X has a kernel. Consequently
+\[
+ \|J(X)'\|\le k+{k^2\over\sqrt{1-k^2}},\qquad
+ \|U_h'\|\le A:=4\left(k+{k^2\over\sqrt{1-k^2}}\right),\qquad
+ \|V_{h,n}'\|\le nA.                                  \tag{661}
+\]
+Indeed the derivative of a Julia matrix splits into its X/X* diagonal
+and two defect-root off-diagonal blocks. Fixed shifts, signed SELECT,
+Walsh conjugations and row restriction preserve the first bound. The fixed
+port vector has squared norm p^2+p=1; hence the same bound holds for L'.
+Differentiate U=I-2LL* and use ||L||=1 to get the factor4. This argument
+differentiates the original all-column completion, not just K0=B_h.
+
+Apply the already owned complete33-clock bound, paid-writer85 and137:
+\[
+ C_1(N)<64{22^{-N}\over N!},\qquad
+ |H'_{\mathrm{hist}}|\le nA C_1(N)
+ <64nA{22^{-8n}\over(8n)!}.                            \tag{662}
+\]
+Its denominator includes the FULL clock/work dimension. No padding, mode
+removal or free waiting was used. If the full0+1-cochain version in7bw605
+is the declared heat, retain its exact identity
+Z_01=2Z_0+359N dim K. Its derivative is
+DH_01=(2Z_0/Z_01)DH_0, so(662) still bounds it. This does not identify two
+heat values or change the actual feedback multiplicity in(658).
+
+Combining(660)-(662), for every n>=1,
+\[
+ { |H'_{\mathrm{hist}}|\over J'_{h,n}}
+ \le {16A\over\kappa zT_h}
+       {22^{-8n}b^{-(2n-1)}\over(8n)!}
+ \le {16A\over\kappa zT_h\,22^8p^3\,8!}.              \tag{663}
+\]
+The last inequality is exact and simultaneous in n, not a finite horizon
+scan: the ratio of successive middle factors is
+\[
+ {1\over22^8b^2\prod_{j=1}^8(8n+j)}<1.                \tag{664}
+\]
+Here p>1/2, so b>1/8 and already22^8b^2>1. The maximum is n=1.
+In particular T_h>16A/(kappa z22^8p^3 8!) is an explicit finite sufficient
+condition for S'_(h,n)>0 at EVERY horizon.
+
+### 7cd.3 A full-CAR trace bound makes the criterion uniform under refinement
+
+Assume the four-by-four creation-leg matrix in the positive Hilbert frame
+has least singular
+value >=gamma>0, and every FULL CAR16 transport mathsf M_(h,r) has least
+singular value >=sigma>0, uniformly in h. Controlled proper links
+mathsf M=I+O(h) supply such a sigma for small h. Then
+\[
+ \operatorname{Tr}Q_h=2\|d_h\|_{\mathrm{HS}}^2
+ \ge64\sigma^2\gamma^2h^{-6},\qquad
+ T_h\ge {p^2\sigma^2\gamma^2\over2}h^{-4}.             \tag{665}
+\]
+Proof: d raises the exterior degree by one, since the transports preserve
+it. Therefore Tr d^2=Tr (d*)^2=0; d^2 itself need NOT vanish. Expanding
+Tr(d+d*)^2 gives the equality. On the L>=3 periodic grid each forward
+(x,x+hr) block is distinct from the onsite block and the other roles, so
+its Hilbert-Schmidt square cannot be canceled by them. Hence
+||d||_HS^2>=h^-2 sum_(x,r)||c(u_r)mathsf M_(h,r)||_HS^2.
+For FULL CAR16, ||c(u)||_HS^2=8||u||^2; invertibility of mathsf M gives
+||c(u)mathsf M||_HS^2>=sigma^2||c(u)||_HS^2. At each site
+sum_r||u_r||^2>=4gamma^2, and there are h^-4 sites. Multiplication by2
+proves(665). This retains all degrees and all sites; no projected scalar
+or hand-chosen physical branch is counted in their place.
+
+Thus the complete exact ratio satisfies
+\[
+ \boxed{\sup_{n\ge1}{|H'_{\mathrm{hist}}|\over J'_{h,n}}
+ \le {32A\over\kappa z p^2\sigma^2\gamma^2\,22^8p^3\,8!}
+          h^4\longrightarrow0.}                     \tag{666}
+\]
+For sufficiently small h the complete finite H+J covector is NONZERO
+throughout this uniformly controlled freely dilatable family, for every
+n, including every refinement-dependent choice n=n_h. No smooth continuum
+limit theorem is needed for this finite exclusion. There is no assertion
+of a positive lower bound on the source uniform in n: for extremely long
+horizons J' can itself tend to zero. Approximate criticality requires its
+actual gain/norm and is not ruled out by strict finite positivity alone.
+
+### 7cd.4 Positive composition: identify the actual entire continuum source
+
+Now add the precise C6, nondegeneracy, observer, true-adjoint and first-link-
+jet assumptions of the finite-source-limit owner, Section1. Choose an actual
+schedule with tau_h=2n_h alpha_h -> tau in (0,infinity). For example
+n_h=128L^2 gives tau=2p^2, but this is a stated clock choice, not a proof of
+physical compulsory timing. Tau and beta_heat are different parameters.
+Neither is varied while computing a field source at fixed h.
+
+Use the actual independent coframe/link/observer coordinates of that owner,
+including physical link tangent delta A=h xi A. Suppose the full field lift
+of the original all-column word has
+||DU_h[delta q]||<=A_h||delta q||_max with A_h at most polynomial in h^-1.
+The strict Julia chart with uniformly controlled field lifts supplies this;
+a bound on the initialized B_h column alone would not. The actual heat obeys
+\[
+ \|DH_{\mathrm{hist}}\|_{\max^*}
+ \le n_h A_h C_1(N_h)\longrightarrow0,\qquad N_h\ge8n_h.
+                                                        \tag{667}
+\]
+The copied operations have no independent field derivative. Equations(658)
+and the owned finite-B source convergence therefore give, for fixed actual
+kappa,
+\[
+ \boxed{\quad DS_{h,n_h}\longrightarrow D\mathcal J_\tau,
+ \qquad
+ D\mathcal J_\tau[\delta q]=\kappa z\tau\operatorname{Tr}
+ \left[{e^{-\tau D^2}\over(1-z)I+ze^{-\tau D^2}}
+                   \,\delta(D^2)\right].\quad}         \tag{668}
+\]
+Cyclicity justifies this expression without commuting delta(D^2) with D^2.
+The topology is the owned strong L1 density norm, equivalently
+\[
+ \sum_{x,a}|E^{S}_{h,a}(x)-h^4j^{\mathcal J}_{a}(x)|\to0.
+                                                        \tag{669}
+\]
+Equation(667) is in the dual of the SAME full coordinate maximum norm, so
+it bounds the packed sum of the heat Euler components, not just a single
+test direction. All independent coframe, proper-link and observer slots
+are retained. The link coordinates include their actual h scaling.
+Unscaled link coordinates can change the bound by h^-1; neither(669) nor
+the spatial owner's o(1) error proves the original h^-2 raw216 terminal.
+If kappa varies with h, the direct statement is for source/kappa_h, with
+the correspondingly scaled heat bound; no unproved unnormalized limit is
+inferred from a changing fibre multiplicity.
+
+For identifying this source one may write its field-dependent primitive
+\[
+ \mathcal J^{\mathrm{dep}}_\tau
+   =-\kappa\operatorname{Tr}\log\left(I+{z\over1-z}e^{-\tau D^2}\right).
+                                                        \tag{670}
+\]
+This labels the same first source. It does not remove the actual finite
+absolute Book anchor -(kappa dim DATA)log(1-z), the actual clock entropy,
+or any full price term. No counterterm or new normalized execution is
+introduced. The spatial thermal term beta^-1 log Tr exp(-beta D^2) and the
+spatial Rayleigh term R_sp do not appear merely because7k recovers D_sp
+from L_hist. The inverse readout is not spectral equality of the two heats.
+
+In particular the limiting scale source is
+\[
+ D\mathcal J_\tau[\text{(659)}]
+ =2\kappa z\tau\operatorname{Tr}
+       {D^2e^{-\tau D^2}\over(1-z)I+ze^{-\tau D^2}}>0.    \tag{671}
+\]
+Ellipticity and nondegeneracy make D^2 nonzero, and every nonzero eigenvalue
+contributes positively. This is consistent with the uniform finite result,
+not its premise. The
+[owned feedback IR theorem](A4D_NATIVE_FEEDBACK_IR_EINSTEIN_TORSION_SELECTION_2026_10_17.md)
+can now consume THIS same feedback with its real coefficient M=kappa and
+time tau, under that owner's additional physical large-size scaling and
+uniform C1 heat-expansion hypotheses. The fixed-positive-time C6 source
+limit alone does not establish those extra hypotheses. Its Einstein-Hilbert
+term comes together with its volume and
+observer/connection terms. The positive-metric IR theorem does not by itself
+supply Lorentzian Einstein equations. Its separate large-size limit is not
+silently interchanged with refinement. In particular the old spatial H+J+R
+radial cancellation cannot be imported into the chronological H+J source.
+
+### 7cd.5 Fixed-collar consequence on its actual regulator, and exact scope
+
+There is also a local-direction consequence at a fixed tau>0. Use the SAME
+periodic continuum with constant coframe and observer and identity links
+(or an explicitly translation-invariant constant connection). Flatness of
+the Lorentz metric alone would not ensure this homogeneity. Let chi>=0 be
+smooth, nonzero, and supported inside
+the free interior, away from a fixed collar. Set delta u_r=chi u_r and keep
+independent links and observer fixed. Translation invariance of the full
+flat source and(671) give
+\[
+ D\mathcal J_\tau[\chi u]=c_\tau\int_{T^4}\chi\,dx>0,\qquad
+ c_\tau=2\kappa z\tau\operatorname{Tr}
+        {D^2e^{-\tau D^2}\over(1-z)I+ze^{-\tau D^2}}.     \tag{672}
+\]
+The torus volume is1. This is not the invalid identity delta D=chi D;
+variable chi also enters the true adjoint. Translation invariance makes
+the contracted Euler density constant after integration by parts, and the
+constant is determined by the global scale variation.
+
+The same finite-spectral-block plus UNIFORM heat-tail argument in the source
+owner, Sections3-6, gives continuity of this tested source in a controlled
+C6 neighbourhood of the flat periodic field. Keep at least half the value
+in(672). Equations(667)-(669) then imply finite-h noncriticality for each
+such nearby field and its chosen tau schedule, with collar held fixed.
+The neighbourhood depends on tau, chi and the controlled chart; this is
+not the all-horizon uniform statement(666). Local chi need not preserve
+the smaller old own-leg relation, so this corollary concerns the independent
+true-adjoint field chart and requires its variation to be admitted.
+
+A periodic completion of a local nonvacuum patch changes its global operator
+unless it was already the declared regulator. Matching a metric inside the
+patch does NOT transfer(668) or(672) to a Dirichlet/noncompact operator.
+Neither the primary fixed-collar full42 root nor its small residual budget
+is consumed without that same-regulator/source/variation map.
+
+**What is now available to the parent.** The original direct-master route
+has an explicit entire continuum covector(668)-(669) and an exact all-n
+finite exclusion(666), instead of an unspecified heat/feedback balance.
+Any proposed stationary realization on this carrier must account for the
+actual remaining-source contribution in this direction or derive an actual
+constraint that forbids it. Choosing a compensating Info, freezing a field,
+or changing the active cut by hand does not provide that application.
+Record-reducing cuts, external placements and differently selected full
+prices retain their own original equations. No compulsory primitive field
+writer, physical cut selection, joint state equation, Lorentz metric-only
+descent or complete GR refinement is asserted. GR_closed=false. The existing
+positive full42/nonvacuum and Golden/Lovelock results are preserved.
+
+Validation of this new result is analytic composition and two source-only
+hostile reviews: the new finite step is the exact grading/block estimate
+(665) and the monotone factorial ratio(664), not a numerical horizon scan.
+No new executable certificate, Lean result, accepted assembly edge, task,
+registry status or claim is created. The affected structural checks and
+input provenance are recorded in the existing task brief.
