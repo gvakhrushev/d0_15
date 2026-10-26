@@ -36,7 +36,7 @@ CASES: list[dict[str, Any]] = [
             "jointCoframeAndLorentzPath julia_joint_coframe_link_path_derivative_declarations_2026-10-26",
             "principalFrameJuliaEndpointChartReadout_hasDerivAt_of_jointCoframeAndLorentzTangent exponential tangent proper Lorentz path",
             "jointCoframeAndLorentzTangent julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26",
-            "principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_hasFDerivAt full Frechet derivative product of four role Lorentz tangent links",
+            "principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_hasFDerivAt hasFDerivAt_pi",
             "roleLorentzTangentEndpointFDeriv_apply julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26",
         ],
         "required_refs": [
