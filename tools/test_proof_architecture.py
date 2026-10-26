@@ -1466,9 +1466,13 @@ class ProofArchitectureTests(unittest.TestCase):
                             for query in case["queries"]))
         self.assertTrue(any("finiteMatterMidpointHistory_error_le_refinementBound" in query
                             for query in case["queries"]))
+        self.assertTrue(any("midpointQuadrature_error_abs_le_of_thirdDerivative_bound" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("sampledMatterMidpointHistory_error_le_refinementBound" in query
+                            for query in case["queries"]))
         self.assertIn(module, case["required_refs"])
         self.assertIn("all 16+24+2 Euler rows", case["scope_review"])
-        self.assertIn("does not prove that local estimate from C^3 regularity",
+        self.assertIn("derives its O(h^3) defect from C^3 regularity",
                       case["scope_review"])
         self.assertIn("physical native Book/clock/source selection remain separate and open",
                       case["scope_review"])
@@ -1499,7 +1503,10 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertFalse(inventory["worktree_dirty"])
         self.assertEqual(inventory["snapshot_commit"],
                          "d27cafffe9592416556c9f5eb4bd069a355dca44")
-        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(
+            inventory["lean_source_digest"],
+            "369d1159021853c3ec8726a1b9c32518dfb288a0238fdd43440f31df7c4b33e5",
+        )
         declarations = {row["name"]: row for row in inventory["declarations"]}
         module_name = "D0.Geometry.NonvacuumBrinkmannStencil"
         required_theorems = {
@@ -1555,6 +1562,50 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("∀ n ≤ N", refinement["elaborated_type"])
         self.assertIn("M * h ^ 3 / 24", refinement["elaborated_type"])
         self.assertIn("duration * M * h ^ 2 / 24", refinement["elaborated_type"])
+
+        c3_inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json"
+        )
+        c3_inventory = json.loads(c3_inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(c3_inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertEqual(c3_inventory["public_import_root"], "D0.All")
+        self.assertFalse(c3_inventory["worktree_dirty"])
+        self.assertEqual(c3_inventory["lean_source_digest"], lean_task_build.source_digest())
+        c3_declarations = {row["name"]: row for row in c3_inventory["declarations"]}
+        c3_required = {
+            "D0.Geometry.midpointQuadrature_error_abs_le_of_thirdDerivative_bound",
+            "D0.Geometry.sampledMatterExactValues",
+            "D0.Geometry.sampledMatterMidpointRate",
+            "D0.Geometry.sampledMatterMidpointLocalDefect_abs_le",
+            "D0.Geometry.sampledMatterMidpointHistory_error_le_refinementBound",
+        }
+        self.assertTrue(c3_required.issubset(c3_declarations))
+        for name in c3_required:
+            row = c3_declarations[name]
+            self.assertEqual(row["module"], module_name)
+            self.assertEqual(set(row["axioms"]), standard_axioms)
+            self.assertEqual(row["source_path"], module)
+            self.assertGreater(row["declaration_ranges"]["declaration"]["start"]["line"], 0)
+        c3_local = c3_declarations[
+            "D0.Geometry.midpointQuadrature_error_abs_le_of_thirdDerivative_bound"
+        ]
+        self.assertIn("ContDiff", c3_local["elaborated_type"])
+        self.assertIn("iteratedDeriv", c3_local["elaborated_type"])
+        self.assertIn("M * h ^ 3 / 24", c3_local["elaborated_type"])
+        c3_global = c3_declarations[
+            "D0.Geometry.sampledMatterMidpointHistory_error_le_refinementBound"
+        ]
+        self.assertIn(
+            "D0.Geometry.finiteMatterMidpointHistory_error_le_refinementBound",
+            c3_global["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.sampledMatterMidpointLocalDefect_abs_le",
+            c3_global["proof_dependencies"],
+        )
+        self.assertIn("duration * M * h ^ 2 / 24", c3_global["elaborated_type"])
 
         history_inventory_path = (
             proof.ROOT
@@ -1936,7 +1987,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-26_midpoint_refinement.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_midpoint_c3_error.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -1954,7 +2005,7 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in summary["cases"]
         ))
         self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 158
+            sum(row["required_source_count"] for row in summary["cases"]), 159
         )
         labelled = next(
             row for row in summary["cases"]
@@ -1966,7 +2017,7 @@ class ProofArchitectureTests(unittest.TestCase):
             row for row in summary["cases"]
             if row["id"] == "positive-nonvacuum-recovery"
         )
-        self.assertEqual(positive["query_count"], 8)
+        self.assertEqual(positive["query_count"], 9)
         self.assertEqual(positive["required_source_count"], 3)
         proper = next(
             row for row in summary["cases"]
@@ -2013,7 +2064,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-26_midpoint_refinement.json"
+            / "proof_architecture_search_process_comparison_2026-10-26_midpoint_c3_error.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(

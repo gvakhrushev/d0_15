@@ -9415,3 +9415,41 @@ mathematical application or select physical price/source. Receipts:
 [`proof_architecture_cold_start_summary_2026-10-26_midpoint_refinement.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_midpoint_refinement.json)
 and
 [`proof_architecture_search_process_comparison_2026-10-26_midpoint_refinement.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_midpoint_refinement.json).
+
+### C^3 midpoint defect and sampled-history refinement (26 October 2026)
+
+The remaining analytic hypothesis in the composed midpoint refinement is now
+proved for exact samples of the same two component functions. The source input
+is the chronological midpoint construction in the pinned positive case,
+`A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`, §§7.1–7.2,
+commit `8b94198c8dfbdf5983ad0b350b058fb30bb68a54`, blob
+`63c36b18af67fc1f113f9e33deb13cf43ddf4556`.
+
+`midpointQuadrature_error_abs_le_of_thirdDerivative_bound` applies the
+Lagrange remainder at the cell midpoint. The quadratic Taylor terms cancel
+between the two endpoints, and each endpoint remainder is at most
+`M * h^3 / 48`; their sum gives the local `M * h^3 / 24` defect. The theorem
+assumes `ContDiff ℝ 3 f` and an explicit bound on `|iteratedDeriv 3 f|` over
+that cell. `sampledMatterMidpointLocalDefect_abs_le` applies it to each of the
+two component functions with midpoint derivative rates and exact endpoint
+samples. `sampledMatterMidpointHistory_error_le_refinementBound` then composes
+those local bounds with the previously proved history-error identity, yielding
+for every component and node `n ≤ N`:
+
+```text
+|Psi_h(n) - Psi(n)| ≤ duration * M * h^2 / 24.
+```
+
+This supplies the classical mathematical refinement estimate for the stated
+sampled functions and a common third-derivative bound. It does not derive that
+bound from the CAR operator, select a physical matter source or clock, identify
+the sampled trajectory with an admitted D0 execution, formalize the original
+40→3→1 Cartan variation, or close the independent 16+24+2 Euler equations.
+The estimate is componentwise; no same-constant Euclidean vector norm claim is
+made. It remains a conditional mathematics input to the positive nonvacuum
+example, not physical source selection or GR closure.
+
+The changed module passes the narrow Lean 4.30.0 build (**3,301/3,301** jobs)
+and the public-import `D0.All` build (**4,615/4,615** jobs). Its compiled
+declaration inventory and refreshed retrieval receipts are recorded in the
+next checkpoint after regeneration.
