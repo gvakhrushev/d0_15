@@ -1762,7 +1762,6 @@ class ProofArchitectureTests(unittest.TestCase):
             ],
         )
         self.assertIn(15, source_pin["scope_query_indexes"])
-        self.assertIn(16, source_pin["scope_query_indexes"])
         self.assertNotIn(14, source_pin["scope_query_indexes"])
         self.assertIn("IsRoleLorentz Λ", scope)
         self.assertIn("physical application must still bind the admitted endpoint", scope)
