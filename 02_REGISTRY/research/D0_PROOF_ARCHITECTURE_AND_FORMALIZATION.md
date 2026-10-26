@@ -8203,3 +8203,32 @@ it does not discharge the full application or prove the 24 link directions,
 the joint all-jet identity
 `D R D Φ = I`, variational pullback, physical admission or price/source
 selection. It creates no claim-status change and does not freeze or accept C0.
+
+### Fixed-link Julia coframe recovery composes to identity (26 October 2026)
+
+The preceding derivative now composes with the source's right-link transport
+on the actual constructed query family. For every `F`, `Λ`, and role endpoint
+family `M` with `IsRoleLorentz Λ`, the theorem
+`D0.Geometry.principalFrameJuliaQueryFamily_recoveredInverseCoframe` proves
+that the observed Eq. (30a) inverse-coframe readout, multiplied by
+`Λ.transpose`, equals `F` exactly; no invertibility premise on `F` is used.
+The Fréchet derivative of that same query → vacuum-observation → readout →
+fixed-link-transport function is
+`ContinuousLinearMap.id ℝ (Matrix Role Role ℝ)`. Thus the fixed-link coframe
+block of `D R D Φ = I` is compiled on all 16 inverse-coframe coordinates.
+
+The declarations are in `A4DJuliaPrincipalFrameRecovery.lean`, SHA-256
+`077770263108b0ba063abca6fc14cee53db28891d14b7c10b989b699c01f4569`. The
+narrow build passed **3,125/3,125 jobs**. The five-declaration inventory was
+extracted through public import `D0.All` at clean source commit
+`d0b1b97e408e75953b93e08e8a6370e723354fc6`, Lean 4.30.0, and Lean-source
+digest `5712a5e50811060c66d602d1ec4985dcd7e9c6ddafd3a8fa9c169cd8cc5f9b90`.
+Its SHA-256 is
+`538c02c2e75ff28bca3e75bef13c5ff6bf74ef4c4b306737f3f82c4965a0289a` at
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_principal_frame_fixed_link_recovered_derivative_declarations_2026-10-26.json`.
+The exact types and inherited axiom footprint remain in that inventory.
+
+This is a left inverse only in the fixed-link coframe sector. It does not
+recover or differentiate the 24 Lorentz-link directions, prove the owner's
+full joint all-jet inverse, or close its physical/application premises. No
+claim or C0 disposition changes.

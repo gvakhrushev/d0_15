@@ -1723,10 +1723,11 @@ class ProofArchitectureTests(unittest.TestCase):
             scope,
         )
         self.assertTrue(any(
-            "principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt" in query
+            "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt" in query
             for query in case["queries"]
         ))
-        self.assertIn("16-entry inverse-coframe readout derivative", scope)
+        self.assertIn("composes the exact right-link transport to identity", scope)
+        self.assertIn("identity derivative", scope)
         self.assertIn("24 link jets", scope)
         self.assertIn(15, source_pin["scope_query_indexes"])
         self.assertNotIn(14, source_pin["scope_query_indexes"])
