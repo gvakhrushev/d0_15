@@ -8564,3 +8564,35 @@ kept outside Git. The compact receipt is
 SHA-256 `116dd142ea120ae4762c6abda8c8e934ddd4515360a5975d63007c3290e7bf92`.
 These results validate retrieval and recorded provenance only; semantic scope
 review remains manual and the physical limits above remain open.
+
+### Exponential integration of joint Lorentz tangent generators (26 October 2026)
+
+The joint path result now has a tangent-generated specialization in
+`D0.Geometry.A4DJuliaLinkPathDifferential`:
+`principalFrameJuliaEndpointChartReadout_hasDerivAt_of_jointCoframeAndLorentzTangent`.
+For any four role-indexed matrices satisfying the existing
+`IsRoleLorentzTangent` equations, it constructs the simultaneous paths
+`Λ(t,r) = exp(t • a(r))`. The path proof uses the tangent identity to show
+`Λ η Λᵀ = η`. Taking determinants gives `det(Λ)^2 = 1`; continuity of the
+matrix exponential and determinant, together with `det(Λ(0,r)) = 1`, rules
+out the negative branch for every real `t`.
+
+The endpoint derivative is proved entrywise from the matrix-exponential
+derivative and the finite sum defining `Λ(t,r)ᵀ.mulVec x`. The theorem then
+feeds these constructed Lorentz and determinant-one paths into the existing
+joint coframe/link composition. Coframe `F`, column data `L`, and normalized
+covectors may still vary with `t`, with the same pointwise normalization and
+nonzero-shift chart conditions. The derivative at the identity is exactly
+`a(r)ᵀ.mulVec x`.
+
+This removes the standalone path-existence assumption for tangent generators
+in the identity-connected exponential directions. It does not construct the
+full six-coordinate Lorentz chart or show that every determinant-one Lorentz
+link lies on such a path. The 24-direction joint `D R D Φ = I`, physical
+endpoint/query admission, full price/source selection, #334 acceptance,
+`GR_closed`, and independent C0 acceptance remain open.
+
+The narrow module target passed (**3,216/3,216 jobs**); the public-import
+`D0.All` integration build passed **4,585/4,585 jobs** with Lean 4.30.0. The compiled declaration
+inventory and matching cold-start receipt for this extension will be recorded
+from a clean snapshot after the durable source checkpoint.
