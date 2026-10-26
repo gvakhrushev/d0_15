@@ -27118,6 +27118,561 @@ print(json.dumps({
 }
 ```
 
+## 7ca. The original full quantum record leaves a source defect even after optimal row coding
+
+26 October2026. SAME #334 / constitutive / native-programme-v1, input
+7e4c6171. Phase: native realization and final-source composition. The user's
+closed-return/Slater/CAR2 synthesis is already consumed by7bh499 and the
+original signed two-context inverse. Do not reconstruct that detector or
+require an extra Slater apparatus before using its original J_pre. The NEW
+application below computes the missing conditional quantum information on
+that SAME original CAR chart and tests the differentiability premise of the
+global Golden source theorem. It does not supply the physical metric map,
+select Book03 Info, identify a mixed input with its purification, or promote
+positive_gr/raw216/GR_closed.
+
+Inputs: [original signed inverse and stationary polynomial](A4D_ORIGINAL_CAR16_TWO_CONTEXT_GLOBAL_SIGNED_BOOST_INVERSE_AND_STATIONARY_POLYNOMIAL_2026_10_25.md);
+[whole same-run Kraft/Gibbs/Holevo decomposition](A4D_ORIGINAL_FULL128_UNIQUE_KRAFT_GIBBS_HOLEVO_SAME_RUN_INFORMATION_PROJECTION_2026_10_22.md),
+especially1,7,11--12; [original exact CAR first jets](A4D_EXACT_NATIVE_FULL128_HIDDEN_CHOI_INFORMATION_COEFFICIENT_2026_10_22.md);
+[canonical full-record pinching](A4D_FUTURE_ALGEBRA_CANONICAL_PINCHING_OFFNULL_CQ_SOURCE_WELD_2026_10_22.md)2,5;
+[owned rank-birth source rule](A4D_NATIVE_MINIMAL_REFLECTION_TWO_TICK_INFORMATION_WARD_2026_10_22.md)17--22;
+[Golden metric-source rigidity](A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)G1--G12;
+and the continuous-source theorem in
+[global joint index](A4D_GLOBAL_JOINT_INDEX_AND_GR_RIGIDITY_2026_10_22.md)6.
+The standard pinching identity is reused, not claimed as a new theorem.
+
+### Keep the actual mixed preparation and every quantum block
+
+Fix the original phases(i,i,-1,-i), CAR order(0,2,3,1), nu=3/5,
+p=phi^(-1), beta=2p^2, and signed proper-boost coordinate
+r=tanh(theta/2). The ORIGINAL normalized stationary DATA is
+rho_*(r)=(sI-Delta)/(8s), analytic and positive near r=0, with
+rho_*(0)=I16/16. Use the declared product input
+Omega(r)=rho_*(r) tensor omega_RIGHT, with fixed normalized oldRIGHT state
+of fixed support. Its preparation/mixing and physical price remain paid.
+The RIGHT carrier retains its actual128 dimensions; restricting formulas
+to the fixed support of omega is not a new free preparation.
+
+For ALL128 original fine labels alpha=2j+b define
+
+    X_alpha=K_alpha rho_* K_alpha^dagger,
+    chi=directsum_alpha X_alpha tensor omega_RIGHT,
+    q_alpha=Tr X_alpha,
+    I_ptr=S(chi)-S(Omega)
+         =H(q)+sum_alpha q_alpha S(X_alpha/q_alpha)-S(rho_*).
+                                                               (634)
+
+Zero blocks remain present with 0log0=0. This is the entire mixed CQ
+information defect from the existing pinching owner. Replacing it by
+H(q), or by the entropy of the reduced coherent archive alone, changes
+the declared observable/input interface.
+
+Write a=N_0 and A_j=N_j^dagger a. For j>0, the actual original ports are
+K_2j=-2p^2 A_j and K_(2j+1)=-2p sqrt(p) A_j. Their ORIGINAL code
+orientation is not swapped. At r=0 the two j0 operators are invertible;
+they have no quadratic eigenvalue births. For each j>0 let
+
+    L_j=projection onto ker(A_j(0)^dagger),
+    R_j=projection onto ker(A_j(0)),
+    T_j=L_j A_j'(0) R_j.                                  (635)
+
+These are operator kernel projections, not a numerical singular-value
+threshold or deletion of a dark row. The old exact Julia/CAR zero-boost
+constructor gives Gaussian-rational A_j,A_j'. A Schur singular-value
+expansion shows that the sum of the r^2 eigenvalue coefficients born
+in X_2j and X_(2j+1) is
+
+    (p^4+p^3)/4 * ||T_j||_HS^2
+       = (p^2/4) ||T_j||_HS^2.                            (636)
+
+Indeed write X_alpha=M_alpha M_alpha^dagger with
+M_alpha=K_alpha sqrt(rho_*). At zero sqrt(rho_*)=I/4. The projected
+term involving Dsqrt(rho_*) vanishes because L_j K_alpha(0)=0.
+Thus the true moving preparation is included and contributes no omitted
+quadratic birth coefficient. A fixed RIGHT factor multiplies the
+coefficient by Tr omega=1. This is a coefficient of a normalized
+information functional, not an unnormalized Book cut-rank multiplier.
+
+The NEW exact rational application to the actual64 Walsh rows is
+
+    ||T_j||_HS^2 = 9/128000,
+      j in {1,5,17,21,25,33,37,41,49,53,57};
+    ||T_j||_HS^2 = 9/256000, j in {13,45};
+    ||T_j||_HS^2 = 0, all other j>0.
+
+    C_label = 99p^2/512000,
+    C_internal = 9p^2/512000,
+    C_CQ = C_label+C_internal = 27p^2/128000 > 0.          (637)
+
+The first line consumes the previously owned22 newborn fine labels.
+The SECOND line is the missing contribution: the old positive labels
+26,27,90,91 acquire quantum eigenvalues inside their already visible
+DATA blocks. They cannot be recovered by merely counting new labels.
+At zero there are34 rank16 blocks,8 rank10 blocks and86 zero blocks.
+All128 labels, full conditional DATA and actual RIGHT are retained.
+
+This is distinct from the earlier C_quant coefficient of the REDUCED
+coherent Choi archive. It also differs from a genuinely PURE joint
+DATA/RIGHT input: every conditional block is then rank one and the
+full-CQ entropy equals H(q). A purification changes the physical input;
+one must not silently use its smaller coefficient for634.
+
+### Even the unique optimal row code leaves the internal quantum source
+
+Analytic finite matrix perturbation, the owned two-sided birth rule,
+and637 give, with differentiated remainders,
+
+    Tr chi log chi = A_analytic(r)+C_CQ r^2 log(r^2)
+                          +O(r^3 |log|r||).               (638)
+
+Any higher even-order births are in this remainder and cannot cancel
+its quadratic coefficient. For a fixed smooth faithful row reference
+eta^0_j>0 and the actual original Golden port reference(p,p^2), the
+whole same-run relative-entropy score from the owned information
+projection therefore has the SAME C_CQ coefficient. Its thermal
+comparator and positive mixed input are smooth near zero; all
+nonzero eigenvalue contributions and fixed-code cross-entropies are
+smooth there. A reference with support loss is outside this assertion.
+
+More strongly, apply the OWNED exact envelope identity, without
+physically resetting or changing the row code:
+
+    L_proj = min_eta D(chi || T_eta)
+           = K_(B|J)+D(rho_*||sigma_(beta,Delta))
+                     +Holevo(JB:DATA).
+    L_proj = A_proj,analytic(r)
+             +C_internal r^2 log(r^2)
+             +O(r^3 |log|r||).                            (639)
+
+Proof: for any fixed full-support eta^0,
+D(chi||T_eta0)=D(q_J||eta^0)+L_proj.
+The already owned row term has exactly C_label r^2 log(r^2).
+Subtract it from638. This is a mathematical envelope calculation;
+eta=q_J is not assigned as a free physical code. The strictly positive
+C_internal remains even in that most favourable row-reference
+optimization. The negative conditional-entropy term in the relative-entropy score
+contributes C_internal; it does not compensate the classical label birth. In particular the
+analytic two-band formula for J_pre and its two-observation source
+does not by itself recover the complete native information source.
+
+For either fixed-reference score or projected score, put C equal to
+its positive coefficient above. Its action is C1 through r=0, while
+
+    source = A_analytic'(r)+2C r(log(r^2)+1)
+                            +O(r^2 |log|r||),
+    source derivative = A_analytic''(r)+2C log(r^2)+6C
+                            +O(r |log|r||).               (640)
+
+The first source is continuous but not differentiable at zero.
+Smooth finite H=beta^(-1)log Tr exp(-beta Delta_N), positive-cut
+J=-log det(I-zeta F), smooth fixed charges and smooth positive-input
+entropy cannot cancel this coefficient on a fixed common analytic
+carrier. Another genuinely singular term or an actual constraint/
+source transport can change the conclusion and must be kept.
+The earlier continuous-source index theorem remains applicable;
+it never required the stronger source differentiability used by Golden.
+
+### The exact compensation is an information defect, not a free work credit
+
+Use the WHOLE coherent isometric output
+rho_coh=W Omega W^dagger, W=sum_alpha |alpha> tensor K_alpha,
+including DATA, RIGHT and every record. Then S(rho_coh)=S(Omega)
+and chi=E_ptr(rho_coh). For any common faithful-on-support block
+reference T the existing pinching theorem gives EXACTLY
+
+    D(rho_coh||T)-D(chi||T)
+      =D(rho_coh||chi)=S(chi)-S(Omega)=I_ptr.              (641)
+
+Thus the actual information defect supplies the opposite singularity
+when the two mathematical terms are recombined. For fixed smooth
+faithful T the full coherent score is smooth here. This assertion
+concerns the WHOLE output, not its reduced archive (whose spectrum
+can have the independently owned Choi births).
+
+Equation641 does not prove that the physical recorder pays
+I_ptr/log(phi) as work or that Book03 selects the coherent score.
+It gives the precise source to test in the actual complete Cost-Info
+ledger. Adding it by hand, reinterpreting it as negative Cost, erasing
+the stored results, or silently replacing the mixed input by a pure
+one would not discharge the native valuation premise. With field-
+dependent eta=q_J, the reference is itself singular at newborn rows;
+smoothness of the coherent score is then not inferred from641.
+
+### Parent application: flat-source regularity or a quantified vanishing remainder
+
+The Golden blow-up theorem needs differentiability of the ONE reduced
+metric Euler source at a flat metric. The present r=0 is a ZERO
+PROPER BOOST in the original CAR chart; it has not been identified
+with that flat physical metric. Therefore640 is not a GR no-go.
+
+If an actual common-source reduction identifies a smooth physical
+metric section g(r), g(0)=eta, with the same pulled-back first source
+and no lost independent apparatus rows, a C1 metric Euler tensor and
+a C2 section would give a differentiable scalar source along r.
+The uncancelled term640 would prevent that application. If r is
+instead an independently observable link/frame or preparation
+direction, the required premise is metric-only descent or its actual
+internal stationary elimination. It must not be called flat metric
+regularity without that map.
+
+Finite microscopic non-C2 prices also need not obstruct a smooth
+continuum source. For an explicitly supplied refinement with
+r_h(g)=eps_h a(g), bounded a and Da on a fixed compact field collar,
+field-independent coefficient C_h and eps_h, and a fixed positive
+source gain Gamma_h (or its uniform positive lower bound), the displayed
+singular term in Golden code units has normalized source bounded by
+
+    const * C_h eps_h^2 (1+|log eps_h|)
+                /(log(phi) Gamma_h).                     (642)
+
+This follows directly by differentiating
+C_h eps_h^2 a^2 log(eps_h^2 a^2); a log|a| extends continuously
+through a=0. Thus vanishing of642 is a sufficient suppression
+criterion in the C0 norm of the FIRST SOURCE for THIS term. It is
+not a C1/source-derivative convergence bound: each nonzero eps_h
+still has the logarithmic second derivative at a=0. Use uniform
+source disappearance together with an independently established
+smooth limiting source. Field-dependent C_h or eps_h require their
+additional derivative terms. The bound includes the actual lift norm
+in bounded Da. Coefficients, analytic remainders, other field
+directions, clock/preparation costs and their uniform bounds remain
+separate required inputs. For many physical copies use their true
+summed C_h and gain; a normalized scalar readout cannot remove them.
+
+Precise changed parent test: after composing7bh/7by with the user's
+original CAR determinant result, test the SAME fully paid
+registered-source ledger for (i) the explicit defect641 or other
+derived compensation, (ii) a genuine stationary/constraint elimination,
+or (iii) the actual norm/gain suppression642. The two-band spectral
+simplification and row-code minimizer alone pass none of these
+tests, with the new surviving coefficient C_internal providing the
+finite original-carrier witness. This changes the physical source
+application before the global Einstein theorem; it does not repeat
+the geometry proof or start another task/selector.
+
+### Smallest decisive check and reproducible source
+
+The new calculation checks only628--630 against the pinned original
+constructor and source owners. It does not replay old GR, heat, Slater,
+Choi or Lean suites. Exact Gaussian-rational kernels and projected jets
+include all63 nonzero-index Walsh rows, both actual Golden ports, the
+moving stationary preparation and internal eigenbirths. The97 explicit
+require checks completed in normal CPython3.11.9/SymPy1.12.1, exit0,
+9.56 seconds. No optimized-mode or independent CI replay is claimed.
+
+Proof SHA256 3b15a2f7c76e0c6a5f4d7ae61ebd227a1b52a79fb2892b048286e951157fec54;
+checker8167bytes/SHA256 b359060312a6c33f052733ffaea03148ca9fc2f74373a85328df9a065fa371aa;
+receipt2433bytes/SHA256 973116d8eeef7b574e63e1df653b94035cddb4bb7df7bf4c06525d9ebedbea96.
+Two source-only reviews accept the coefficient/source composition and
+its corrected635 scope; this is not independent assembly acceptance.
+
+Save the fenced checker as a temporary .py file and run with the actual
+repository root as its first argument. It verifies the unchanged three
+Git-blob inputs before any calculation. Its word flat in diagnostic
+labels means zero boost only; the physical metric identification is
+explicitly not asserted above.
+
+```python
+"""Exact flat-chart birth coefficient of the ORIGINAL full128 mixed CQ state.
+
+Read-only repository use. Rational specialization of pinned native() at
+r=0, nu=3/5, theta=2*atanh(r), phases=(i,i,-1,-i). Includes all 128 fine
+leaves and every conditional DATA eigenvalue. It does not price an
+unselected recorder, prove GR, or replace the full fine instrument.
+All mathematical checks use require(), so python -O preserves them.
+"""
+from pathlib import Path
+import hashlib
+import json
+import sys
+import sympy as S
+
+ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(
+    r"C:\Users\kmeze\.codex\worktrees\gr-proof-synthesis\d0_15")
+PINS = {
+    "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py":
+        "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+    "02_REGISTRY/research/A4D_ORIGINAL_CAR16_TWO_CONTEXT_GLOBAL_SIGNED_BOOST_INVERSE_AND_STATIONARY_POLYNOMIAL_2026_10_25.md":
+        "eb9204f9b5bdc6527225c9880a640d5eec5f9d34",
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_UNIQUE_KRAFT_GIBBS_HOLEVO_SAME_RUN_INFORMATION_PROJECTION_2026_10_22.md":
+        "157ab6e0dce75c7f3011a68649d5804edb5cd4b4",
+}
+NTEST = 0
+
+
+def require(condition, message):
+    global NTEST
+    NTEST += 1
+    if not bool(condition):
+        raise ArithmeticError(message)
+
+
+def clean(matrix):
+    return matrix.applyfunc(S.expand)
+
+
+for relative, expected in PINS.items():
+    raw = (ROOT / relative).read_bytes()
+    actual = hashlib.sha1(b"blob " + str(len(raw)).encode("ascii") + b"\0" + raw).hexdigest()
+    require(actual == expected, "original source blob: " + relative)
+
+nu = S.Rational(3, 5)
+ident, zero = S.eye(16), S.zeros(16)
+order = (0, 2, 3, 1)
+creators = []
+for role in range(4):
+    c = S.zeros(16)
+    before = order[:order.index(role)]
+    for bits in range(16):
+        if not ((bits >> role) & 1):
+            c[bits | (1 << role), bits] = (-1) ** sum((bits >> j) & 1 for j in before)
+    creators.append(c)
+
+gen = creators[0] * creators[1].H + creators[1] * creators[0].H
+phases = (S.I, S.I, -1, -S.I)
+words, jets = [], []
+for role, c in enumerate(creators):
+    base = nu * c
+    x = base * phases[role]
+    # d exp(2 atanh(r) gen)/dr at r=0 is exactly 2 gen.
+    dx = 2 * base * gen * phases[role] if role == 1 else zero
+    left = ident - S.Rational(1, 5) * c * c.H
+    right = ident - S.Rational(1, 5) * c.H * c
+    require(clean(left * left - (ident - x * x.H)) == zero, "exact left Julia root")
+    require(clean(right * right - (ident - x.H * x)) == zero, "exact right Julia root")
+    yl, yr = dx * x.H + x * dx.H, dx.H * x + x.H * dx
+    dl = S.Matrix(16, 16, lambda i, j: -yl[i, j] / (left[i, i] + left[j, j]))
+    dr = S.Matrix(16, 16, lambda i, j: -yr[i, j] / (right[i, i] + right[j, j]))
+    require(clean(left * dl + dl * left + yl) == zero, "left root exact derivative")
+    require(clean(right * dr + dr * right + yr) == zero, "right root exact derivative")
+    for w, dw in zip(((x, left), (x.H, right), (-base, -left), (-base.H, -right)),
+                     ((dx, dl), (dx.H, dr), (zero, zero), (zero, zero))):
+        words.extend((w, w))
+        jets.extend((dw, dw))
+
+rows, drows = [], []
+for label in range(32):
+    signs = [(-1) ** ((label & j).bit_count() % 2) for j in range(32)]
+    for component in range(2):
+        rows.append(clean(sum((signs[j] * words[j][component] for j in range(32)), zero.copy()) / 32))
+        drows.append(clean(sum((signs[j] * jets[j][component] for j in range(32)), zero.copy()) / 32))
+
+a, da = rows[0], drows[0]
+delta0 = S.Rational(9, 640)
+require(clean(a * a - delta0 * ident) == zero, "actual flat Delta is 9/640 times identity")
+require(clean(a.H - a) == zero, "actual a is Hermitian")
+require(clean(da.H - da) == zero, "actual da is Hermitian")
+s0, ds0 = 2 * delta0, -nu ** 2 / 64
+delta_jet = clean(da * a + a * da)
+rho0 = (s0 * ident - delta0 * ident) / (8 * s0)
+rho_jet = clean(-delta_jet / (8 * s0) + delta0 * ds0 * ident / (8 * s0 ** 2))
+require(rho0 == ident / 16, "true stationary rho at flat")
+require(S.trace(rho_jet) == 0, "moving stationary input has zero trace derivative")
+require(clean(rho_jet.H - rho_jet) == zero, "moving stationary input jet is Hermitian")
+
+rank_counts, rank10_rows, births = {}, [], []
+for row in range(1, 64):
+    arow = clean(rows[row].H * a)
+    darow = clean(drows[row].H * a + rows[row].H * da)
+    rank = arow.rank()
+    rank_counts[rank] = rank_counts.get(rank, 0) + 1
+    if rank == 16:
+        continue
+    if rank == 0:
+        projected = darow
+    else:
+        rank10_rows.append(row)
+        nr = S.Matrix.hstack(*arow.nullspace())
+        nl = S.Matrix.hstack(*arow.H.nullspace())
+        pr = (nr * (nr.H * nr).inv() * nr.H).applyfunc(S.simplify)
+        pl = (nl * (nl.H * nl).inv() * nl.H).applyfunc(S.simplify)
+        require(clean(pr * pr - pr) == zero, "right kernel projector")
+        require(clean(pl * pl - pl) == zero, "left kernel projector")
+        require(clean(arow * pr) == zero and clean(pl * arow) == zero, "actual left/right kernels")
+        projected = (pl * darow * pr).applyfunc(S.simplify)
+        # For B=K sqrt(rho), the moving sqrt(rho) term is killed by
+        # the left kernel. rho0=I/16 then gives exactly K'/4.
+        require(clean(pl * arow * rho_jet) == zero, "moving preparation cannot cancel a birth")
+    norm_squared = S.simplify(S.trace(projected.H * projected))
+    require(norm_squared >= 0, "nonnegative eigenvalue birth coefficient")
+    if norm_squared:
+        births.append((row, rank, norm_squared))
+
+new_rows = [row for row, rank, _ in births if rank == 0]
+old_rows = [row for row, rank, _ in births if rank != 0]
+require(rank_counts == {0: 43, 16: 16, 10: 4}, "all 63 nonzero-index rows accounted")
+require(new_rows == [1, 5, 17, 21, 25, 33, 37, 41, 49, 53, 57], "all eleven native newborn rows")
+require(old_rows == [13, 45], "only two pre-existing rows have eigenbirth")
+require(all(v == S.Rational(9, 128000) for _, rank, v in births if rank == 0), "native newborn row coefficient")
+require(all(v == S.Rational(9, 256000) for _, rank, v in births if rank == 10), "internal row coefficient")
+
+# Fine ports have K_even=-2 p^2 Arow, K_odd=-2 p sqrt(p) Arow.
+# Their summed CQ eigenbirth mass is (p^4+p^3)||T||^2/4
+# = p^2 ||T||^2/4. j=0 has two full-rank leaves and no eigenbirth.
+p = (S.sqrt(5) - 1) / 2
+require(S.simplify(p ** 4 + p ** 3 - p ** 2) == 0, "unchanged Golden port normalization")
+class_over_p2 = S.simplify(sum(v for _, rank, v in births if rank == 0) / 4)
+internal_over_p2 = S.simplify(sum(v for _, rank, v in births if rank != 0) / 4)
+total_over_p2 = class_over_p2 + internal_over_p2
+require(class_over_p2 == S.Rational(99, 512000), "matches owned complete fine-label birth")
+require(internal_over_p2 == S.Rational(9, 512000), "additional conditional quantum eigenbirth")
+require(total_over_p2 == S.Rational(27, 128000), "FULL stationary mixed CQ coefficient")
+
+receipt = {
+    "status": "PASS_EXACT_RATIONAL_FLAT_CQ_BIRTH",
+    "checks": NTEST,
+    "source_git_blob_pins": PINS,
+    "chart": "original r=0, nu=3/5; derivative d/dr; phases=(i,i,-1,-i)",
+    "preparation": "moving rho_*=(sI-Delta)/(8s); rho_*(0)=I16/16; passive product RIGHT",
+    "fine_leaf_rank_counts": {"rank0": 86, "rank10": 8, "rank16": 34},
+    "rank10_rows": rank10_rows,
+    "projected_row_derivative_norm_squared": [[j, rank, str(v)] for j, rank, v in births],
+    "newborn_fine_labels": [2*j+b for j in new_rows for b in (0,1)],
+    "preexisting_fine_labels_with_internal_birth": [26,27,90,91],
+    "C_class_div_p_squared": str(class_over_p2),
+    "C_internal_div_p_squared": str(internal_over_p2),
+    "C_full_CQ_div_p_squared": str(total_over_p2),
+    "entropy_nonanalytic_part": "-2*C_full_CQ*r^2*log(abs(r))",
+    "row_optimized_information_projection_part": "+2*C_internal*r^2*log(abs(r))",
+    "fixed_faithful_row_reference_projection_part": "+2*C_full_CQ*r^2*log(abs(r))",
+    "pure_full_INPUT_purification_scope": "Each conditioned DR leaf is rank1; coefficient is C_class, not C_full_CQ",
+    "physical_scope": "No physical price selection; no new hardware or source-fitted Info; no GR promotion",
+}
+print(json.dumps(receipt, ensure_ascii=True, indent=2))
+```
+
+Author receipt (stdout; no reconstructed numerical evidence):
+
+```json
+{
+  "status": "PASS_EXACT_RATIONAL_FLAT_CQ_BIRTH",
+  "checks": 97,
+  "source_git_blob_pins": {
+    "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+    "02_REGISTRY/research/A4D_ORIGINAL_CAR16_TWO_CONTEXT_GLOBAL_SIGNED_BOOST_INVERSE_AND_STATIONARY_POLYNOMIAL_2026_10_25.md": "eb9204f9b5bdc6527225c9880a640d5eec5f9d34",
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_UNIQUE_KRAFT_GIBBS_HOLEVO_SAME_RUN_INFORMATION_PROJECTION_2026_10_22.md": "157ab6e0dce75c7f3011a68649d5804edb5cd4b4"
+  },
+  "chart": "original r=0, nu=3/5; derivative d/dr; phases=(i,i,-1,-i)",
+  "preparation": "moving rho_*=(sI-Delta)/(8s); rho_*(0)=I16/16; passive product RIGHT",
+  "fine_leaf_rank_counts": {
+    "rank0": 86,
+    "rank10": 8,
+    "rank16": 34
+  },
+  "rank10_rows": [
+    13,
+    29,
+    45,
+    61
+  ],
+  "projected_row_derivative_norm_squared": [
+    [
+      1,
+      0,
+      "9/128000"
+    ],
+    [
+      5,
+      0,
+      "9/128000"
+    ],
+    [
+      13,
+      10,
+      "9/256000"
+    ],
+    [
+      17,
+      0,
+      "9/128000"
+    ],
+    [
+      21,
+      0,
+      "9/128000"
+    ],
+    [
+      25,
+      0,
+      "9/128000"
+    ],
+    [
+      33,
+      0,
+      "9/128000"
+    ],
+    [
+      37,
+      0,
+      "9/128000"
+    ],
+    [
+      41,
+      0,
+      "9/128000"
+    ],
+    [
+      45,
+      10,
+      "9/256000"
+    ],
+    [
+      49,
+      0,
+      "9/128000"
+    ],
+    [
+      53,
+      0,
+      "9/128000"
+    ],
+    [
+      57,
+      0,
+      "9/128000"
+    ]
+  ],
+  "newborn_fine_labels": [
+    2,
+    3,
+    10,
+    11,
+    34,
+    35,
+    42,
+    43,
+    50,
+    51,
+    66,
+    67,
+    74,
+    75,
+    82,
+    83,
+    98,
+    99,
+    106,
+    107,
+    114,
+    115
+  ],
+  "preexisting_fine_labels_with_internal_birth": [
+    26,
+    27,
+    90,
+    91
+  ],
+  "C_class_div_p_squared": "99/512000",
+  "C_internal_div_p_squared": "9/512000",
+  "C_full_CQ_div_p_squared": "27/128000",
+  "entropy_nonanalytic_part": "-2*C_full_CQ*r^2*log(abs(r))",
+  "row_optimized_information_projection_part": "+2*C_internal*r^2*log(abs(r))",
+  "fixed_faithful_row_reference_projection_part": "+2*C_full_CQ*r^2*log(abs(r))",
+  "pure_full_INPUT_purification_scope": "Each conditioned DR leaf is rank1; coefficient is C_class, not C_full_CQ",
+  "physical_scope": "No physical price selection; no new hardware or source-fitted Info; no GR promotion"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

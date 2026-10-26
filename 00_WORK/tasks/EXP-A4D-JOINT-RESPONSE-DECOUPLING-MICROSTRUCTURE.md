@@ -14131,3 +14131,85 @@ Executed/fencedcodebyteidentity andAST verified. Onlytwoownedpaths; all
 previousproofs/sourcepins preserved. No incomingmath/oldroot/Lean/large
 heat replay, publicclaim orphysicalpromotion inferred. #334 staysDraft;
 no merge/Ready/retirement/newPR.
+
+
+### 26 October2026 — complete original CQ source after optimal row coding (7ca)
+
+Same #334 owner; base7e4c6171cda814067bc6c44ad4374c91e27ba42e.
+Phase: native realization and final-source composition. Interface
+native-programme-v1, parent constitutive; no new task, registry edge,
+closure flag, BOOK edit or retirement. Write paths remain this brief
+and A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md.
+The existing assembly checkpoint template was consumed; result remains
+scoped research without independent parent acceptance.
+
+Exact changed question: the user-supplied closed determinant/Slater/CAR2
+argument is already composed in7bh499. Does its analytic source, together
+with the unique row-code information projection, suffice for the complete
+original native source differentiability needed by Golden rigidity?
+Apply the owned full CQ/Kraft/Gibbs/Holevo and source-birth theorems to
+the original signed Julia/CAR chart, not a new detector or fitted action.
+
+NEW exact substitution7ca634--639: for nu3/5, original phases, actual moving
+rho_* and declared passive product RIGHT, full128 CQ eigenbirth has
+C_CQ=27p^2/128000. The owned22 new fine labels account for99p^2/512000;
+existing labels26,27,90,91 supply a further9p^2/512000. Exact original
+Gaussian-rational kernel projections give the latter through rows13,45.
+Subtracting the OWNED full row KL leaves this strictly positive internal
+coefficient even in the unique mathematical row-reference minimizer.
+Thus the native complete information source cannot be replaced by the
+analytic two-band J_pre source or its classical label part.
+
+Parent route change:640 makes the action C1 but its source non-differentiable
+at zero boost. Smooth finite H/J/fixed charges cannot cancel the displayed
+logarithm. Apply Golden only after a genuine common reduced metric map,
+actual independent internal stationary elimination or complete source
+compensation.641 identifies the exact WHOLE coherent/CQ information defect,
+not paid physical work.642 gives a norm/gain sufficient vanishing bound
+C_h eps_h^2(1+|log eps_h|)/(log(phi) Gamma_h) for this first-source term,
+with field-independent coefficients and all other remainders retained.
+It controls C0 source convergence, not C1/source-derivative convergence.
+
+Retained hypotheses: physical selection of the input and registered algebra;
+actual full Cost-Info/scene/clock/controller/preparation/RIGHT prices and
+variation domain; native metric-only descent and smooth section at a flat
+physical metric; real all42 source map/refinement gain and norm; independent
+acceptance. Zero boost is not identified with flat geometry. A pure joint
+DATA/RIGHT purification and reduced coherent archive have different
+information interfaces. The original raw216 and primary configured
+nonvacuum result keep their existing scope. GR_closed=false.
+
+Smallest decisive check: new exact kernel-source calculation only,97 explicit
+require checks, normal CPython3.11.9/SymPy1.12.1, exit0 in9.56s. All63 rows,
+both Golden ports and moving rho_* included; no floating rank cutoff.
+First exploratory diagnostic had a Windows display-encoding issue; the
+final ASCII JSON checker completed cleanly. No expected evidence was changed
+to hide a failed scientific premise. No -O/remote CI or old expensive replay
+is claimed. Full actual checker and stdout receipt are embedded in7ca.
+
+Proof12252bytes/SHA256 3b15a2f7c76e0c6a5f4d7ae61ebd227a1b52a79fb2892b048286e951157fec54;
+checker8167bytes/SHA256 b359060312a6c33f052733ffaea03148ca9fc2f74373a85328df9a065fa371aa;
+receipt2433bytes/SHA256 973116d8eeef7b574e63e1df653b94035cddb4bb7df7bf4c06525d9ebedbea96.
+Two source-only reviews ACCEPT;642 field-independence and C0-only scope
+clarifications applied before final integration.
+
+Original constructor Git blob ee8de4635d24c668949ac9a0186616ab7d59f2ed;
+signed-stationary owner eb9204f9b5bdc6527225c9880a640d5eec5f9d34;
+Kraft/Gibbs/Holevo owner157ab6e0dce75c7f3011a68649d5804edb5cd4b4.
+Removing7ca preserves the previous primary byte-for-byte, SHA256
+4b7abccc7e2f48e6daf0b81487f52c02e7a4b78e60556ae93601f6e079b7fac7. Previous brief is an exact prefix,
+SHA256 6e71886e22d3ff18026c6798c6b3858f922748988a7777e125c71d90ddbb22b8.
+
+Affected final integration PASS: validate_work.py, validate_agent_protocol.py,
+gr_assembly.py check(validtrue;54active/98results/5discharged/22obligations;
+scientific_promotionfalse), validate_repo.py(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0), and git diff --check.
+No changes to the calculation followed these checks. Existing Draft#334
+remains open; remote publication and exact blob verification follow.
+
+Publication integration: concurrent feccb68e6cc745855b8963944b323f3b7476ad7f
+added the fresh-carrier reader theorem7bz627--633. Its entire proof, checker,
+receipt and brief are preserved byte-for-byte. This composition is renumbered
+7ca634--642; mathematical inputs/calculation unchanged, proof pin updated.
+The first ref-update reported a GitHub API error; read-back identified the
+concurrent head before any retry. No published branch was overwritten.
