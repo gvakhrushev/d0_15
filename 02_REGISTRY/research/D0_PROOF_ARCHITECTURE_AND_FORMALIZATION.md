@@ -9313,3 +9313,29 @@ The replay receipts are
 [`proof_architecture_cold_start_summary_2026-10-26_midpoint_history.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_midpoint_history.json)
 and
 [`proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json).
+
+### Finite-history energy-sum retrieval replay (26 October 2026)
+
+After adding the accumulated squared-gradient theorem, the clean replay at
+snapshot `24a9b17a0488f590f795a7dff1a94521301357ef` again found all **158**
+required references across **24/24** cases and passed **25/25**
+retrieval/source-impact checks. The positive nonvacuum case now uses seven
+queries; all three required sources were found. The 9,018,495-byte raw replay
+has SHA-256
+`025cd92ce38accb85e5ed0024131a8a349e1fb824bfe4f953567647c1a092c2c`; its
+7,959-byte compact receipt has SHA-256
+`e2b99635f20b36384571adf80263181fe6133ac5668767fac8f6c36bfe87d095`.
+The runner SHA-256 is
+`e9e3ab2d4e7658679d955063025d51d30bb0b304c004238efb5b9165204c3013`, and the
+search-engine SHA-256 remains
+`adf78c418665c8c8c8f26367aed0d702df4ec6ec324e2365415d01a80402e26b`.
+
+The refreshed identical-question comparison again found **7/7** explicitly
+source-scoped expected sources in the current search and **0/7** in legacy
+assembly search. Only one expected-source path has a direct assembly-owner
+link; the other seven remain without that link. Its report has SHA-256
+`cd923d76f192e82866c89529143af021ca7d9f0f1ca19db6975193bfab1d090e`.
+Semantic owner correctness, full hypothesis preservation and whether new
+mathematics is needed still require manual review. These are retrieval checks,
+not physical admission or scientific acceptance. The receipts remain at the
+two report paths linked above.

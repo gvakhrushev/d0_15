@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "e625c3ef07a3a5c233466cae288bf22a59fae1cb",
+  "snapshot_commit": "24a9b17a0488f590f795a7dff1a94521301357ef",
   "worktree_dirty": false,
   "search_cases_found_all_sources": 24,
   "search_cases_total": 24,
@@ -33,7 +33,7 @@
     },
     {
       "id": "positive-nonvacuum-recovery",
-      "query_count": 6,
+      "query_count": 7,
       "required_source_count": 3,
       "all_required_sources_found": true,
       "missing_paths": []
@@ -194,22 +194,22 @@
     }
   ],
   "replay": {
-    "source_commit": "e625c3ef07a3a5c233466cae288bf22a59fae1cb",
+    "source_commit": "24a9b17a0488f590f795a7dff1a94521301357ef",
     "command": "python3 tools/proof_architecture_cold_start.py",
-    "runner_sha256": "993f2f66dd77b6e52fd83128405f4bee01cae55a82c61c09860ad3ea20d2002b",
-    "runner_git_blob": "b9931aa223a553e9873e685f77e4dd86772b62d1",
+    "runner_sha256": "e9e3ab2d4e7658679d955063025d51d30bb0b304c004238efb5b9165204c3013",
+    "runner_git_blob": "530d9f0af681a7a99024983d17bad4e7b86c4210",
     "search_engine_sha256": "adf78c418665c8c8c8f26367aed0d702df4ec6ec324e2365415d01a80402e26b",
     "search_engine_git_blob": "637bbb50e900225c03d271c5ae881d2d29f5a485",
-    "test_sha256": "da2da5c93e99795666ef4e1642b6112441c3ea8d45b63a3f4582c61de90d23e7",
-    "test_git_blob": "da06a4d25327f332a24d2c891cc972e84fd6a486",
-    "full_output_sha256": "09ac986188a29892ba10c600f0ac55e05bc39cf3737a4a8b98916d6782516cc7",
-    "full_output_bytes": 8961344
+    "test_sha256": "f1025a82430828a7430cb6c6464cc301381e8c4de6a324428ba5f9a260e1a565",
+    "test_git_blob": "a85d3d51e2ed5c40281e86de8ae30c3bd1ad6279",
+    "full_output_sha256": "025cd92ce38accb85e5ed0024131a8a349e1fb824bfe4f953567647c1a092c2c",
+    "full_output_bytes": 9018495
   },
   "search_process_comparison": {
     "report": "proof_architecture_search_process_comparison_2026-10-26_midpoint_history.json",
-    "sha256": "866b257de1ac29411ba641b5ae504d051c45ab6215ad46e3acb12e8b327cd13c",
+    "sha256": "cd923d76f192e82866c89529143af021ca7d9f0f1ca19db6975193bfab1d090e",
     "bytes": 79464,
-    "snapshot_commit": "e625c3ef07a3a5c233466cae288bf22a59fae1cb",
+    "snapshot_commit": "24a9b17a0488f590f795a7dff1a94521301357ef",
     "metrics": {
       "query_count": 24,
       "query_count_with_explicit_source_scope": 7,
