@@ -98,6 +98,23 @@ For E **genuinely counted** independently varied pair-interaction gates with gat
 
 At FIXED mesh/gain/field norm the owned Bernstein first-source error allows m=O(ε^-2), k=dm, and the connected source bound allows a PAID packet count n=O_h(ε^-5) for the E≤An two-packet graph. This is ONLY a count of necessary known-source packets, not total native gate complexity or physical D_min optimality; the compiler, clocks, spatial scene, packet rank and future tests retain their true resource contributions. Actual native full physical task/cut, all independent QUERY and clock variation domains, global 42D sources and GR refinement remain OPEN. `GR_closed=false`.
 
+## 26 October — original G/CX short-code global-memory NO-GO, exact future-quota D_min and causal-depth SOURCE theorem
+
+[New original native code/future-memory/lightcone proof and independent exact checkers](A4D_DMIN_DENSE_COLLECTIVE_MEMORY_VS_CAUSAL_LIGHTCONE_SOURCE_2026_10_26.md) consume the EXISTING n-packet Book Hoeffding source, §7bj fixed original moment writer and \`FutureExecution\`'s entire internal future profile. This is the forward scientific correction to our previous heuristic "D_min shortest ⇒ pair graph sparse ⇒ memory source vanishes", which is NOT a valid logical implication.
+
+**NEW exact G/CX native positive/control:** n unknown source bits + ONE real blank helper; execute the literal original word \`C_n; G_h; C_n; G_h\`, with C_n one CX from each source bit to h. All-column source identity:
+\(W_n=\sum_{\pi(x)=0}|x\rangle\langle x|\otimes G^2+\sum_{\pi(x)=1}|x\rangle\langle x|\otimes I\), \(N=2n+2\), \(\Pr(h1|\mathrm{even})=4\varphi^{-3}\), \(\Pr(h1|\mathrm{odd})=0\). It has GLOBAL n-packet causal support despite only linear original REAL primitive clock! The simpler parity-copy \`C_n\` needs n native CX, and n is a **sharp two-wire connectivity lower bound** for any original G/CX task reading all n independently unknown inputs into one blank helper. The ORIGINAL true Book active cut rank is \(2^n\), \(\operatorname{spec}F=(4p^3)^{[2^{n-1}]}\cup0^{[2^{n-1}]}\), \(J=-2^{n-1}\ln(1-4\zeta p^3)\). This exposes a second independent error: short primitive code/clock does not make a large truly free input register's feedback price small. Do NOT mistake these n unknown inputs for the separately BLANK privately prepared source packets of §7bj.
+
+**NEW full-future MDL operational theorem:** On a closed n-bit carrier with internal parity tests \(Lx\in\mathbb F_2^m\) and admissible common bit-flip actions, complete future-equivalence is EXACTLY \(\ker L\). Minimal binary record memory = \(\mathrm{rank}_{\mathbb F_2}L\), not the number of readout addresses. All pair XOR queries have \(\binom n2\) addresses but rank n−1 (global-complement quotient); one ordinary absolute-bit test restores rank n. Nonlinear pair AND future queries distinguish ALL \(2^n\) states after at most one actual flip, even though their instantaneous response has only \(2^n-n\) classes. Full paid Book price/fine history must enter the actual admitted future profile before claiming a physical gauge or D_min equivalence.
+
+**NEW positive source theorem replacing assumed SPARSITY:** for actual RAW source-stage independent gates whose correctly transported output Heisenberg lightcone touches at most \(b_t\le\min(n,2^{D_t+1})\) source packets after \(D_t\) disjoint 2-packet rounds, the original complete correlated Book derivative has the exact n,k,b Hoeffding bound. With at most E≤nD paid gate rows and \(b=\min(n,2^{D+1})\), put \(x=bk^2/(n-k+1)^2\). For \(x\le1/2\), a purely RATIONAL certified estimate is
+\[
+\|DJ_{\rm conn}\|^*_{\rm gate-max}
+\le2M_h nD\,\frac{bk^2}{(n-k+1)^2},\qquad
+M_h=\frac{2\zeta r_h}{1-\zeta}.
+\]
+For n≥2k its TRUE normalized source ≤\(16M_h D2^D k^2/(\Gamma_{h,n}n)\). This rigorously suppresses independently varied LOCAL correlations without forbidding them, provided the actual physical programme has verified packet causal depth; merely low gate count or a shared dirty memory helper does NOT imply that depth. Other independent QUERY, cut, heat, clock, Cost/Info and all42 field directions are unchanged; original selected task/depth/gain/refinement remain proof targets. \`GR_closed=false\`.
+
 ## Source composition first: backward search and forward proof
 
 **User-confirmed focus, 22 October 2026.** Start from the existing exact
