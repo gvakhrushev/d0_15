@@ -14039,3 +14039,95 @@ proof/checker/source pins are preserved byte-for-byte. The embedded
 checker is identical to the actually executed4198byte source. These
 are local exact/source/structural checks, not remote CI or physical
 acceptance. #334 remains Draft/open/unmerged.
+
+
+## 26 October: fresh-carrier local destructive transfer and whole-apparatus reciprocal application
+
+SAME PR334; phase native realization / final composition, existing
+constitutive/native-programme-v1. Input7e4c6171cda814067bc6c44ad4374c91e27ba42e
+contains incoming7by all-record reciprocal source/metric; every incoming
+byte is preserved. No new task, registry node, publicclaim or status.
+Primary7bz627--633 weakens7bw612's same-r Lueders/reuse requirement to a
+LOCAL sharp destructive reader plus genuinely fresh PORT/WORK carriers.
+No such reader/resource admission is inferred from a POVM/Query or
+original terminal formula. Original Book01 section359--366, Book03
+493--506/1222--1224 and VerificationContract62--64 checked live.
+
+Exact parent statement: local sharp effects force measure/prepare on
+the used register, even for unknown mixedpoststates. Retain all reader
+environments/phases and arbitrary input/reference/oldRIGHT: one-way
+branch is X^b/sqrt2; freshroundtripG has phase(-1)^[c(x xor b)], newframe
+(x xor b,z xor c), allbranchprob1/4. FreshcontrolCX has bothcontrolX^b
+andtargetX^b. Original measured same-r612 cannotbe copied withoutthis
+extraoutputX. Futuretestsuse the actual frame; archivedapparatus and
+extra future distinctionsremain. Reuse/knownpoststate premise removed
+ONLY for this changedfresh-carrier logical attempt, not native admission.
+
+Carrier/source: complete finite logical input plus allfreshblanks,
+retainedreaders/outcomes, usedregisters and protectedreference; operator
+norm and reference-stable channel diamond norm. Idealbalance is explicit.
+CQ entropy631 includes S(input)+log4+meanS(apparatus); output-minus-input
+subtracts initialentropy of the SAME retained readersector, including its
+purification if used. All varyingapparatusentropy/fees remain. Finite
+Golden imbalance yields actual input-dependentq and decodeddephasing
+2c_k s_k; fullretainedchannelerror<=2d_k, additiveundercomposition.
+Valuebounds are not C1/source/stationarity transport of a compiler.
+
+Apply incoming7by to the actualunknownpoststate column: Q=direct_sum
+I_A tensor P_history P_t P_history*, retaining WHOLEapparatusdimension
+d_A ratherthan projectingonto unknown readeroutputs. Fouroutcomes give
+s=4d_A r; Mroundtrips require ALLL=4^M histories ands=Ld_A r. The OWNED
+reciprocal construction gives J_L=2J_t-(Ld_A-1)r log(1-z); sourcegain2
+atfixedranks,z, full projection-feedback normals at targetprojection.
+Aout=direct_sum I_A tensor P_history a P_history* isunital andsatisfies
+AoutK=Ka; use incoming7by626's transportedcomplement metricmap. Actual
+coherentallcolumnW/W*, paired rank-r+s cut, internalstageplacement,
+completephysicalheat/price/readback and OPENchartidentity stillneeded;
+a sealedmeasuredtape, onecompiledcentre or unequalGoldenfilter doesnot
+supplythem. This is an actual conditionalapplication of the incoming
+source/metric theorem to weakerreaderpoststates, not a new actionencoder.
+OriginalPalatini--CAR/nonvacuum finiteandallmesh consumers retained;
+physicalfieldgraph, dynamics/refinement, positive_gr/raw216 remainopen.
+GR_closed=false. No action/detector/selector/fee ispostulated.
+
+Smallestchangedcheck: exactchronologicalmaps, all4 incomingGframes and
+all16 incomingCXframes withphases; TP of ALLenvironmentleaves; protected
+Bellreference; samePOVM-nonlocal adversecontrol; unbalancedchannel and
+mixedapparatusentropy. Newwholejunk reciprocalfixture WORLD16/lift32,
+r1/s8/pairedcut9 verifies -7log(1-z) anchor, doubledtargetdeterminant
+andunitalobserveridentity onALLcolumns. Rational/algebraicinterface
+fixtures only, no claimed nativeinstrument or hugeheat/root/Lean replay.
+Rootfinalfrozencheck exit0, assertionsON, correctGIT_WORK_TREE environment.
+
+Frozenproof12032bytes/SHA256
+582ef41a67343deb46df9b790cde8bb2f942794fe5a57dfa0056cef95b34676b.
+Executedcode7339bytes/SHA256
+15afa773ac449540d7c18106012fab62fbc034b40fd1f5ceb639422410651071.
+Embeddedcode7338bytes(excludingfinalnewline)/SHA256
+b529b7331e7e4c9a5bbe3f00d79da3f1a6c8589567f5fb2294179cbae8618ccb.
+ObservedLFreceipt802bytes/SHA256
+bf8be2e350f6668ddc51394e268fa1a94ff1d48af7b23dc15456bd75b98c6c90.
+Whole7bz20514bytes/SHA256
+20fc7de0ce8836e0cee9103523e46e1a7228d03f3ddfdddc1951feb6b4b1f4a6.
+Existing assemblycheckpointtemplate consumed; no acceptance/discharge
+registered. Source-only review and finalaffectedstructural checks follow.
+
+Final SOURCE-ONLY mathematical ACCEPT: stationary_root_transfer and
+price_geometry_bridge read FULL finalproof12032/582ef41a andchecker7339/
+15afa773 plusincoming7byprose. BothacceptedunknownjunkQ/ranks/anchor/gain2,
+unitalmetricmap, SAMEopenchart andphysicaladmissionboundaries. No reviewer
+replay/write or independentassemblyacceptance. Earlierthree-source review
+accepted initialfresh-transfercore; stationaryreview's SAMEretained-input
+entropyqualification is included in finalproof. Codechangedonlybyadding
+the smallwholejunk applicationfixture beforethe finalfrozenrootrun.
+
+Final affected integration PASS: work,agentprotocol,gravityassembly and
+repositoryguards;54active/98results/5discharged/22obligations,scientific
+promotionfalse. Removingwhole7bz restoresincomingprimary1390036bytes
+EXACTLY, SHA25681cee404af6f9f4f3ba7c6785f441365a9db6e6fd3439a143d22b2033195f48e;
+incomingbrief921327bytes remains EXACTprefix, SHA256
+bf99965381eca85c3557718657a412de06f8d6379ced43a85a6033eb504b0897.
+Executed/fencedcodebyteidentity andAST verified. Onlytwoownedpaths; all
+previousproofs/sourcepins preserved. No incomingmath/oldroot/Lean/large
+heat replay, publicclaim orphysicalpromotion inferred. #334 staysDraft;
+no merge/Ready/retirement/newPR.

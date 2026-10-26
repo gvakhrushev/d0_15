@@ -26675,6 +26675,449 @@ Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\n',enc
 }
 ```
 
+## 7bz. Replace same-WORK nondemolition by local destructive transfer with its actual apparatus
+
+26 October2026; SAME PR334 / constitutive/native-programme-v1. Consume
+7bk521--527 and7bw612--613. The parent is the priced internal-control lift
+needed by606--611. The changed input is a FRESH output carrier: a known
+postmeasurement state of the old WORK is then unnecessary. This removes
+the same-r Lueders/reuse requirement in that logical-access attempt,
+not reader/fresh-resource admission or the missing full-source transport.
+No operation is added to7t's finite G/CX/SourceI grammar.
+
+### Local sharp effects suffice, with arbitrary used-apparatus states
+
+Let r be mutable unknown WORK, entangled with ANY protected reference R,
+including oldRIGHT. A LOCAL sharp instrument has Kraus M_(b,alpha),
+sum_alpha M_(b,alpha)^dagger M_(b,alpha)=|b><b|, b=0,1.
+It acts as identity on PORT and R; its initial apparatus is independently
+prepared. Positivity gives M_(b,alpha)|1-b>=0, hence
+M_(b,alpha)=|v_(b,alpha)><b|. Retaining a purification of its output and
+environment, its prepared-input Stinespring column is
+
+    W_r=sum_b |b>_B |eta_b>_A <b|_r,
+    <eta_b|eta_b>=1.                                      (627)
+
+eta_b need not be orthogonal, known, or |b> on any output wire. The
+accessible poststate may be mixed. Keep ALL branch phases and actual
+environment in627; this is a column, not an admitted all-column unitary.
+An apparatus initially correlated with PORT/R needs its own proved map.
+
+Prepare a FRESH port P at |+>, execute the existing outward CX(P->r),
+then destroy/read r with627. For arbitrary |Psi>_(rR) the output is
+
+    2^(-1/2) sum_b |b>_B |eta_b>_A
+                      tensor (X_P^b tensor I_R)|Psi>_(PR). (628)
+
+Every branch has probability1/2, independent of the full input/reference.
+Archive A,B; do not reuse r or invert measured history. X^b is a RETAINED
+frame for future observations, not a free physical correction. Thus a
+local destructive reader suffices for one-way logical transfer.
+
+Locality is essential. Following a local reader by Z_P gives the SAME
+effects |b><b|_r tensor I_(PR), but output Z X^b|Psi>. The prescribed
+frame then fails even for a Bell reference. A POVM table or Query_O does
+not establish627 tensor identity on live PORT/reference. This adverse
+instrument is not asserted to be an admitted physical device.
+
+### Apply it to the owned logical G/CX maps on a fresh output
+
+After628 apply U_b on P, outward CX(P->s) to SECOND fresh WORK s at0,
+then local destructive X_P readout c, with
+<c_X|w>=(-1)^(cw)/sqrt2. Keep its actual apparatus eta'_c as well.
+The input-r to output-s branch is K_bc=Z^c U_b X^b/2, tensor those
+retained apparatus vectors. For the real Golden G, XGX=ZGZ=G^(-1).
+With incoming frame X^x Z^z, take U_b=G^((-1)^(b+x+z)j). Then
+
+    K_bc X^x Z^z
+       =(-1)^(c(x xor b)) X^(x xor b) Z^(z xor c) G^j/2.   (629)
+
+The new frame is (x xor b,z xor c). EVERY branch has probability1/4 on
+every input/reference. Keep the displayed phase for coherent records.
+Unlike612's same-r construction, a fresh output retains an extra X^b
+frame at x=z=0. Negative powers, feedforward, readers, memory and fresh
+blanks need their actual implementations and prices.
+
+For a logical CX, insert the existing outward CX(P->t) on an UNKNOWN
+target t between the transfers. The fresh control output is s:
+
+    K_bc=Z_s^c CX_(s->t) X_s^b/2
+        =(-1)^(bc)(X_s^b Z_s^c tensor X_t^b)CX_(s->t)/2.   (630)
+
+For incoming frames (xr,zr),(xt,zt), the outgoing frames are
+(xr xor b,zr xor zt xor c),(xt xor xr xor b,zt), with phase
+(-1)^(c(xr xor b)). These identities keep every outcome and unknown
+input; they do not synthesize the forbidden coherent WORK gate521.
+
+A logical future effect E is represented by the history-conditioned
+effect P_bc E P_bc^dagger on the new logical carrier, tensor identity
+on its used apparatus. The expectation is the intended logical U
+expectation.629/630 compose by their actual retained frames/history on
+fresh carriers. Extra tests of used apparatus and past outcomes remain
+additional distinctions. This instrument observation map is not yet an
+action-to-admitted-native-word or full-price TheoryTransfer application.
+
+### The entropy and finite-balance corrections remain explicit
+
+Let sigma_bc be the actual conditional retained-apparatus state, possibly
+mixed, independent of the unknown logical input. The complete MEASURED
+CQ state at ideal balance is
+
+    Omega=(1/4) direct_sum_(b,c)
+          sigma_bc tensor P_bc U rho U^dagger P_bc^dagger,
+    S(Omega)=log4+S(rho)+(1/4)sum_(b,c)S(sigma_bc).          (631)
+
+rho can include ALL protected reference/oldRIGHT. For independently
+prepared reader input omega_A, the corresponding output-minus-input
+entropy subtracts S(omega_A) of the SAME retained apparatus sector. If
+its initial purification is included, use that full joint input entropy
+(zero when pure), not the entropy of a reduced mixed apparatus. If the complete purified branch
+apparatus is retained, sigma_bc is pure; a reduced apparatus sector
+may instead have the displayed mixed-state entropy.631 concerns the
+measured/dephased record, not its coherent dilation entropy.
+
+Holding the SAME readers, sigma_bc, omega_A and round count fixed,
+varying rho and U leaves that entropy difference constant. Varying the
+apparatus retains (1/4)sum dS(sigma_bc)-dS(omega_A); rank changes need
+their own regularity. A genuinely supplied branch-charge component has
+mean (1/4)sum c_bc and differential (1/4)sum dc_bc. No Book03 Info,
+hardware/work fee or reset charge is assigned by this entropy identity.
+
+Exact |+> and X readout are IDEAL balance interfaces.525 owns their
+finite Golden approximations and paid lengths. At preparation
+c_k|0>+s_k|1>, D_k=diag(c_k,s_k), the first one-way branches are D_k X^b;
+after frame decoding they are D_k and X D_k X. Hence
+
+    q0=c_k^2 rho00+s_k^2 rho11,
+    q1=s_k^2 rho00+c_k^2 rho11,
+    (rho_decoded)01=2c_k s_k rho01.                       (632)
+
+Diagonal entries stay fixed when c_k^2+s_k^2=1. The retained record is
+generally input-dependent. For nonnegative c_k,s_k, discarding that
+record AFTER frame decoding gives dephasing with diamond-norm error
+1-2c_k s_k=(c_k-s_k)^2. This is not an error bound on the complete
+retained CQ source.
+
+For d_k=||(c_k,s_k)-(1,1)/sqrt2||_2, the COMPLETE first-transfer
+isometry differs from628 by operator norm d_k: its subsequent fixed
+operations are isometric. Its channel diamond-norm error is at most
+2d_k, including all apparatus/reference. A finite sequence telescopes
+to2 sum d_k; approximate readout bases add their actual isometry errors.
+This supplies value control, not C1 control of a field-dependent
+compiler or exact stationarity.631's uniform-source simplification
+cannot be asserted for an arbitrary finite-balanced word.
+
+### Physical consumer and source boundary
+
+Replace same-r nondemolition in612's logical-access attempt by the
+weaker LOCAL sharp destructive reader plus continued execution on fresh
+carriers. Its actual availability remains a premise. Book01 01.4.1's
+six finite-section conditions do not specify this tensor-local update.
+Book03's terminal-destructive formula493--506 supplies generic support
+loss, not sharpZ_r tensor identity on PORT/reference.03.26.4 at1222--1224
+explicitly retains fresh-resource availability, preparation, coupling
+and joint readout as bridges. VerifiabilityNecessity.lean62--64 also
+distinguishes line labels from physical causal independence. Defining
+an instrument does not prove those physical obligations.
+
+The consumer remains606--611's priced internal-control lift, with the
+ORIGINAL scene, full thermal trace, actual clock, cut/recorder,
+preparation/oldRIGHT and full work/Info on the SAME execution. The
+incoming all-record reciprocal comparison7by621--626 now supplies a
+DIFFERENT two-sector cut that avoids613's cold-cut attenuation; retain
+that construction rather than repeating the old cold-cut obstruction.
+
+Here is its application to the unknown local poststates above. On the
+COMPLETE logical H_t, let j be the actual input isometry, P_t its target
+cut of rank r, and A the whole output apparatus of dimension d_A apart
+from the four explicit outcome labels and logical output. Retain enough
+physical columns for WORLD=(direct_sum_(bc) A tensor H_t), and include
+any additional actual helpers in A. At ideal balance,628--630 give
+
+    K psi=(1/2) direct_sum_(bc) eta_bc tensor P_bc psi,
+    K* K=I,      W j=K U_t,
+    Q=direct_sum_(bc) I_A tensor P_bc P_t P_bc*,
+    Q K=K P_t,   rank Q=s=4 d_A r.                         (633)
+
+The actual coherent recorder W, including its whole unitary completion,
+is STILL a physical premise: an already dephased tape is not its inverse.
+Equation633 gives the complete prepared-input column needed by7by621,
+not that missing implementation. Crucially Q includes EVERY apparatus
+state, so it needs no knowledge of eta_bc and no projector onto those
+unknown poststates. This is a justified enlargement of7by's displayed
+outcome sectors, not removal of their unprepared columns. If the actual
+layout has extra output sectors, retain them and their stated Q action;
+use its actual s rather than manufacturing a free rank factor.
+
+With E=j P_t j*, use the OWNED reciprocal operator/cut
+U_L=[[0,W*],[W,0]], P_L=diag(E,Q). The same singular-value proof7by623
+gives J_L=2J_t-(4d_A-1)r log(1-z), at these actual ranks. The source gain
+is exactly2 for fixed ranks,z, not4^(-M); its larger absolute anchor
+stays paid. For M exact roundtrips use all L=4^M histories, actual
+whole apparatus dimension d_A, s=L d_A r and anchor
+-(L d_A-1)r log(1-z); the source gain remains2. To consume the open
+field-germ identity7by625 one still needs the COMPLETE coherent
+recorder identity on that same open chart, not just at one compiled
+centre or for one gate. Finite approximate Golden transfers below do
+not prove it. If F_t is a projection, both escape blocks are projections,
+so the full feedback normals vanish. Under7by's ACTUAL INTERNAL
+stage-placement/clock hypotheses, its624 also supplies the full heat
+and temporal rows. On the existing7bu target this consumes7by625's whole
+field-covector transfer to the original Palatini--CAR consumer. It does
+not assign that field graph or internal placement from a readout effect.
+
+For its observer take A_out(a)=direct_sum_(bc) I_A tensor P_bc a P_bc*.
+It is unital on ALL WORLD columns and A_out(a)K=Ka. Thus7by626 applies
+with its actual transported complementary A_in; the commutator metric
+is unchanged without reading or controlling the unknown eta_bc. The
+physical observer/readback and paired rank-r+s active cut still need
+their actual admission, as in the incoming theorem. Sealed records,
+controlled W/W*, whole heat on unused columns, independent apparatus
+sources and nonideal-balance filters are not supplied by633. In
+particular632's finite value error does not establish633 for a literal
+unequal Golden filter or make its source/normal error small.
+No new root, action, detector admission, selector or assembly discharge
+is introduced. Existing nonlinear finite/all-mesh GR inputs are retained.
+GR_closed=false; positive_gr/raw216 remain open.
+
+### Bounded reproduction
+
+The checker constructs chronological transfer matrices with non-Lueders
+output vectors, retaining every environment component. It verifies
+Golden inversion relations, all Pauli-frame phases, all-input TP, a Bell
+reference, the same-effect nonlocal control, unbalanced transfer and
+mixed-apparatus entropy. The proof supplies arbitrary reader/reference
+generality; the finite examples are exact rational/algebraic checks.
+A second exact small fixture applies633 with d_A=2, r=1, all4 records,
+WORLD16, reciprocal WORLD32 and actual paired cut rank9. It checks
+the full -7log(1-z) anchor, target source determinant and transported
+observer identity with nontrivial unknown-output-state fixtures. These
+are interface models, not newly synthesized native readers. No large
+clock, root, Lean or old research-suite replay is needed.
+
+Proof pin: 12032 UTF8 bytes, SHA256 582ef41a67343deb46df9b790cde8bb2f942794fe5a57dfa0056cef95b34676b.
+Executed checker: 7339 bytes, SHA256 15afa773ac449540d7c18106012fab62fbc034b40fd1f5ceb639422410651071.
+Canonical LF receipt: 802 bytes, SHA256 bf8be2e350f6668ddc51394e268fa1a94ff1d48af7b23dc15456bd75b98c6c90.
+
+```python
+"""Bounded exact check for 7by's local destructive-reader substitution.
+
+All matrices below are instrument interface models, not new native primitives.
+The analytic proof supplies arbitrary local apparatus states and references.
+"""
+import json
+import sympy as s
+
+I=s.eye(2); X=s.Matrix([[0,1],[1,0]]); Z=s.diag(1,-1)
+t=s.sqrt(2)/2
+CX=s.zeros(4)
+for r in range(2):
+    for v in range(2): CX[2*r+(v^r),2*r+v]=1
+
+def zero(A):
+    assert all(s.simplify(x)==0 for x in A), A
+
+def frame(x,z): return X**x*Z**z
+
+# Use two different non-Lueders local poststates, retaining their environment.
+eta=[s.Matrix([s.Rational(3,5),0,s.Rational(4,5),0]),
+     s.Matrix([0,s.Rational(5,13),0,s.Rational(12,13)])]
+xi=[s.Matrix([1,0]),s.Matrix([s.Rational(3,5),s.Rational(4,5)])]
+for v in eta+xi: zero(v.T*v-s.ones(1))
+
+# Direct chronological first transfer: prepare P+, outward CX(P,r), sharp r.
+A=[]
+for b in range(2):
+    B=s.zeros(2)
+    for i in range(2):
+        for p in range(2):
+            if (i^p)==b: B[p,i]+=t
+    zero(B-t*X**b)
+    A.append(B)
+V=s.zeros(16,2)
+for b in range(2):
+    for a in range(4):
+        for p in range(2):
+            for i in range(2): V[(b*4+a)*2+p,i]=eta[b][a]*A[b][p,i]
+zero(V.T*V-I)
+for b in range(2): zero(A[b].T*A[b]-I/2)
+
+# The actual Golden matrix relation used by adaptive integer powers.
+golden_p=(s.sqrt(5)-1)/2
+G=s.Matrix([[s.sqrt(golden_p),-golden_p],[golden_p,s.sqrt(golden_p)]])
+zero(G.T*G-I); zero(X*G*X-G.T); zero(Z*G*Z-G.T)
+
+# Direct fresh-output routing, arbitrary real rotation (not a native gate).
+# An exact rational sample makes every branch/phase and frame check exact.
+R=s.Matrix([[s.Rational(3,5),-s.Rational(4,5)],
+            [s.Rational(4,5),s.Rational(3,5)]])
+for x in range(2):
+    for z in range(2):
+        for b in range(2):
+            Ub=R if (b+x+z)%2==0 else R.T
+            for c in range(2):
+                K=s.zeros(2)
+                for i in range(2):
+                    for p in range(2):
+                        if (i^p)!=b: continue
+                        for w in range(2):
+                            K[w,i]+=s.Rational(1,2)*(-1)**(c*w)*Ub[w,p]
+                zero(K-Z**c*Ub*X**b/2)
+                d=b^x
+                zero(K*frame(x,z)-(-1)**(c*d)*frame(d,z^c)*R/2)
+                zero(K.T*K-I/4)
+
+# Fresh control output and one untouched unknown target; direct chronology.
+Kcx={}
+for b in range(2):
+    for c in range(2):
+        K=s.zeros(4)
+        for i in range(2):
+            for target in range(2):
+                for p in range(2):
+                    if (i^p)==b:
+                        K[2*p+(target^p),2*i+target]+=s.Rational(1,2)*(-1)**(c*p)
+        zero(K-s.kronecker_product(Z**c,I)*CX*s.kronecker_product(X**b,I)/2)
+        zero(K-(-1)**(b*c)*s.kronecker_product(frame(b,c),X**b)*CX/2)
+        zero(K.T*K-s.eye(4)/4)
+        Kcx[b,c]=K
+        for xr in range(2):
+            for zr in range(2):
+                for xs in range(2):
+                    for zs in range(2):
+                        incoming=s.kronecker_product(frame(xr,zr),frame(xs,zs))
+                        outgoing=s.kronecker_product(frame(b^xr,c^zr^zs),frame(b^xs^xr,zs))
+                        zero(K*incoming-(-1)**(c*(b^xr))*outgoing*CX/2)
+
+# Include EVERY local environment component; no heralded-outcome reduction.
+tp=s.zeros(4)
+for b in range(2):
+    for c in range(2):
+        for a in range(4):
+            for g in range(2):
+                leaf=eta[b][a]*xi[c][g]*Kcx[b,c]
+                tp+=leaf.T*leaf
+zero(tp-s.eye(4))
+
+# A protected Bell reference: decoded one-way state is unchanged per branch.
+bell=s.Matrix([t,0,0,t])
+for b in range(2):
+    decoded=s.kronecker_product(X**b*A[b],I)*bell
+    zero(decoded-t*bell)
+
+# Same sharp effects do not imply locality: add a Z on the live PORT.
+for b in range(2):
+    bad=Z*A[b]
+    zero(bad.T*bad-A[b].T*A[b])
+    decoded=s.kronecker_product(X**b*bad,I)*bell
+    overlap=s.simplify((bell.T*decoded)[0])
+    assert overlap==0
+
+# Finite unbalanced preparation: retained probabilities and decoded channel.
+c0,s0=s.symbols('c0 s0', real=True)
+D=s.diag(c0,s0)
+L=[D,X*D*X]
+q0,q1=s.symbols('q0 q1',real=True)
+r=s.symbols('r',real=True)
+rho=s.Matrix([[r,q0],[q1,1-r]])
+out=sum((K*rho*K.T for K in L),s.zeros(2))
+zero(out-s.Matrix([[(c0*c0+s0*s0)*r,2*c0*s0*q0],
+                   [2*c0*s0*q1,(c0*c0+s0*s0)*(1-r)]]))
+zero(L[0].T*L[0]-s.diag(c0*c0,s0*s0))
+zero(L[1].T*L[1]-s.diag(s0*s0,c0*c0))
+
+# Entropy factorization: diagonal mixed input, NONPURE local apparatus states.
+# Uniform branch block eigenvalues are products /4, so entropy splits exactly.
+lam=[s.Rational(1,3),s.Rational(2,3)]
+apparatus=[(s.Rational(1,4),s.Rational(3,4)),
+           (s.Rational(2,5),s.Rational(3,5)),
+           (s.Rational(1,7),s.Rational(6,7)),
+           (s.Rational(3,8),s.Rational(5,8))]
+entropy=lambda ps: -sum(p*s.log(p) for p in ps)
+eigs=[l*a/4 for branch in apparatus for l in lam for a in branch]
+assert sum(eigs)==1
+S_expected=s.log(4)+entropy(lam)+sum(entropy(v) for v in apparatus)/4
+assert s.simplify(s.expand_log(entropy(eigs)-S_expected,force=True))==0
+
+# Apply the incoming reciprocal theorem with the WHOLE unknown junk sector.
+# These explicit all-column interface matrices are not an admitted reader.
+nt, nb, da=2,4,2
+world=nt*nb*da
+j=s.zeros(world,nt); j[:nt,:]=I
+Pt=s.diag(1,0); E=j*Pt*j.T; J=j*j.T
+H=s.Matrix([[t,t],[t,-t]])
+rot=[I,R,s.Matrix([[s.Rational(5,13),-s.Rational(12,13)],
+                  [s.Rational(12,13),s.Rational(5,13)]]),
+     s.Matrix([[s.Rational(8,17),-s.Rational(15,17)],
+               [s.Rational(15,17),s.Rational(8,17)]])]
+frames=[frame(b,c) for b in range(2) for c in range(2)]
+prep=s.diag(*(s.kronecker_product(rot[h],frames[h]) for h in range(nb)))
+W=prep*s.kronecker_product(H,H,I,R)
+zero(W.T*W-s.eye(world))
+K=s.Matrix.vstack(*(s.kronecker_product(rot[h][:,0],frames[h])/2 for h in range(nb)))
+zero(K.T*K-I); zero(W*j-K*R)
+Q=s.diag(*(s.kronecker_product(I,F*Pt*F.T) for F in frames))
+assert Q.trace()==8
+zero(Q*K-K*Pt)
+C=Q*W*j*Pt
+active=[i for i in range(world) if Q[i,i]==1]
+Cr=C.extract(active,[0])
+target_F=1-(R.T*Pt*R)[0,0]
+z=s.symbols('z',real=True)
+block=s.diag(s.ones(1)-Cr.T*Cr,s.eye(8)-Cr*Cr.T)
+assert block.rows==9
+assert s.factor((s.eye(9)-z*block).det()-(1-z)**7*(1-z*target_F)**2)==0
+
+# The complementary input observer is transported, not dropped or fixed.
+a=Z
+Aout=s.diag(*(s.kronecker_product(I,F*a*F.T) for F in frames))
+Ain=j*a*j.T+(s.eye(world)-J)*W.T*Aout*W*(s.eye(world)-J)
+zero(Ain*Ain-s.eye(world))
+zero(W*Ain-Aout*W-K*(R*a-a*R)*j.T)
+
+print(json.dumps({
+    'local_reader_reuse_required':False,
+    'one_way_all_reference_branch_probability':'1/2',
+    'fresh_roundtrip_all_reference_branch_probability':'1/4',
+    'adaptive_G_frames_and_all_CX_frames':'exact',
+    'local_nonLueders_environment_components':'all retained',
+    'same_POVM_nonlocal_backaction_control':'separates Bell reference',
+    'unbalanced_decoded_dephasing_factor':'2*c_k*s_k',
+    'fixed_apparatus_CQ_entropy':'log(4)+S(input)+mean S(apparatus)',
+    'reciprocal_whole_junk_world_and_cut_ranks':[16,32,1,8,9],
+    'reciprocal_anchor':'-7 log(1-z), target source gain 2',
+    'unknown_junk_observer_map':'exact unital whole-column identity',
+    'reader_fresh_resource_native_admission':False,
+    'whole_Book_source_or_heat_transport':False,
+    'GR_closed':False
+},sort_keys=True,indent=2))
+```
+
+```json
+{
+  "GR_closed": false,
+  "adaptive_G_frames_and_all_CX_frames": "exact",
+  "fixed_apparatus_CQ_entropy": "log(4)+S(input)+mean S(apparatus)",
+  "fresh_roundtrip_all_reference_branch_probability": "1/4",
+  "local_nonLueders_environment_components": "all retained",
+  "local_reader_reuse_required": false,
+  "one_way_all_reference_branch_probability": "1/2",
+  "reader_fresh_resource_native_admission": false,
+  "reciprocal_anchor": "-7 log(1-z), target source gain 2",
+  "reciprocal_whole_junk_world_and_cut_ranks": [
+    16,
+    32,
+    1,
+    8,
+    9
+  ],
+  "same_POVM_nonlocal_backaction_control": "separates Bell reference",
+  "unbalanced_decoded_dephasing_factor": "2*c_k*s_k",
+  "unknown_junk_observer_map": "exact unital whole-column identity",
+  "whole_Book_source_or_heat_transport": false
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
