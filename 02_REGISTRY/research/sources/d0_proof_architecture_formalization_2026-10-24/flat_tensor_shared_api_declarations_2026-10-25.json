@@ -1,21 +1,16 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "5be41d7cb83e0a7dbeaa55491d8a8fcc99dce1fd",
+  "snapshot_commit": "b6e5b872098188314249b5f1986a55ad7bf72b26",
   "worktree_dirty": false,
-  "claim_registry_sha256": null,
-  "lean_source_digest": "81857a8868b81cfa73e3b85503fc17f5a476e12c9a9820b1eea590b970602b81",
-  "collector_sha256": "a3d749a3c21fc26d854f105731cb898b2f7e742e9794902e0d8fb8a05fad33e5",
+  "lean_source_digest": "65b35bc458754b5e466480651ee0a6407286695afa11acccdf06e86762f6633d",
+  "collector_sha256": "358926670c102b53cf9cec7ac88157833a32429fb28a14e7e05dbaa755232bce",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
-  "resolution_only": false,
-  "request": {
-    "full_names": [
-      "D0.Gauge.flatTensor",
-      "D0.Gauge.flat_tensor_of_two_skew_is_symmetric",
-      "D0.Gauge.naive_flat_tensor_nonabelian_boundary",
-      "D0.Gauge.naive_flat_tensor_nonabelian_boundary_proof"
-    ]
-  },
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Gauge.FlatTensorNoGo"
+  ],
+  "module_prefix": null,
   "declarations": [
     {
       "axioms": [
@@ -84,6 +79,7 @@
         "Real",
         "Real.instMul"
       ],
+      "proof_details_status": "collected",
       "type_dependencies": [
         "Matrix",
         "Prod",
@@ -205,6 +201,7 @@
         "neg_neg",
         "of_eq_true"
       ],
+      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Gauge.flatTensor",
         "Eq",
@@ -265,6 +262,7 @@
         "Real",
         "Real.instNeg"
       ],
+      "proof_details_status": "collected",
       "type_dependencies": [],
       "source_path": "03_FORMALIZATION/D0/Gauge/FlatTensorNoGo.lean"
     },
@@ -314,6 +312,7 @@
         "Real",
         "Real.instNeg"
       ],
+      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Gauge.naive_flat_tensor_nonabelian_boundary"
       ],

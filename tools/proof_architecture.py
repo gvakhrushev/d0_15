@@ -1130,6 +1130,59 @@ def _term_pattern(terms: list[tuple[str, tuple[str, ...]]]) -> re.Pattern[str]:
     return re.compile("|".join(alternatives)) if alternatives else re.compile(r"(?!)")
 
 
+def _build_multi_pattern_matcher(
+        variant_queries: dict[str, list[tuple[int, str]]]
+) -> tuple[list[dict[str, int]], list[int], list[list[tuple[int, str]]]]:
+    """Build an Aho-Corasick matcher for all folded query variants."""
+    transitions: list[dict[str, int]] = [{}]
+    failures = [0]
+    outputs: list[list[tuple[int, str]]] = [[]]
+    for variant, query_names in variant_queries.items():
+        state = 0
+        for character in variant:
+            target = transitions[state].get(character)
+            if target is None:
+                target = len(transitions)
+                transitions[state][character] = target
+                transitions.append({})
+                failures.append(0)
+                outputs.append([])
+            state = target
+        outputs[state].extend(query_names)
+
+    queue = list(transitions[0].values())
+    offset = 0
+    while offset < len(queue):
+        state = queue[offset]
+        offset += 1
+        for character, target in transitions[state].items():
+            failure = failures[state]
+            while failure and character not in transitions[failure]:
+                failure = failures[failure]
+            failures[target] = transitions[failure].get(character, 0)
+            outputs[target].extend(outputs[failures[target]])
+            outputs[target] = list(dict.fromkeys(outputs[target]))
+            queue.append(target)
+    return transitions, failures, outputs
+
+
+def _multi_pattern_matches(
+        text: str,
+        matcher: tuple[list[dict[str, int]], list[int], list[list[tuple[int, str]]]],
+) -> dict[int, set[str]]:
+    """Return every query term present, including overlapping variants."""
+    transitions, failures, outputs = matcher
+    state = 0
+    matched: dict[int, set[str]] = {}
+    for character in text:
+        while state and character not in transitions[state]:
+            state = failures[state]
+        state = transitions[state].get(character, 0)
+        for query_index, name in outputs[state]:
+            matched.setdefault(query_index, set()).add(name)
+    return matched
+
+
 def _matched_term_names(text: str, pattern: re.Pattern[str],
                         terms: list[tuple[str, tuple[str, ...]]]) -> set[str]:
     group_names = {f"t{index}": name for index, (name, _) in enumerate(terms)}
@@ -1242,6 +1295,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
     unique_variants = sorted(variant_queries)
     if not unique_variants:
         return [[] for _ in queries]
+    matcher = _build_multi_pattern_matcher(variant_queries)
     roots = [name for name in TEXT_ROOTS if (root / name).is_dir()]
     if not roots:
         return [[] for _ in queries]
@@ -1274,18 +1328,13 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         # ripgrep reports non-overlapping submatches. In a batched search, a
         # shorter term from another query can hide an overlapping declaration
         # name, so recover each query's terms from the whole matching line.
+        # Match every query variant in one pass over this line. This retains
+        # overlapping terms without rescanning the line for every query.
         line_text = _fold(data.get("lines", {}).get("text", ""))
         if not line_text:
             continue
-        for index, terms in enumerate(terms_by_query):
-            matched_names = {
-                name for name, variants in terms
-                if any(variant in line_text for variant in variants)
-            }
-            if matched_names:
-                content_groups_by_query[index].setdefault(raw_path, set()).update(
-                    matched_names
-                )
+        for index, matched_names in _multi_pattern_matches(line_text, matcher).items():
+            content_groups_by_query[index].setdefault(raw_path, set()).update(matched_names)
 
     all_files = subprocess.run(["rg", "--files", *text_globs, *roots], cwd=root,
                                capture_output=True, text=True, encoding="utf-8", errors="replace")

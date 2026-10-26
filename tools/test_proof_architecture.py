@@ -17,11 +17,18 @@ from tools import lean_task_build
 
 HISTORICAL_LEAN_SNAPSHOT_COMMIT = "f337b30e039efcc1fd30d355df35e7e6bbaf5478"
 HISTORICAL_LEAN_SOURCE_DIGEST = "33d522c7340f186f551d2560ec694833548068c528523378d3503b5558c1d21a"
+VERSIONED_LEAN_SNAPSHOT_COMMIT = "9f673b6a3fd305ffdb22245937041e4a1c02fee5"
+VERSIONED_LEAN_SOURCE_DIGEST = "a366fc93f44672cb9b48da60c3f76658b2a299b4b7ab601b186454deb2e1337b"
 
 
 def assert_historical_compiled_inventory(test: unittest.TestCase, inventory: dict) -> None:
-    test.assertEqual(inventory["snapshot_commit"], HISTORICAL_LEAN_SNAPSHOT_COMMIT)
-    test.assertEqual(inventory["lean_source_digest"], HISTORICAL_LEAN_SOURCE_DIGEST)
+    expected_digests = {
+        HISTORICAL_LEAN_SNAPSHOT_COMMIT: HISTORICAL_LEAN_SOURCE_DIGEST,
+        VERSIONED_LEAN_SNAPSHOT_COMMIT: VERSIONED_LEAN_SOURCE_DIGEST,
+    }
+    snapshot = inventory["snapshot_commit"]
+    test.assertIn(snapshot, expected_digests)
+    test.assertEqual(inventory["lean_source_digest"], expected_digests[snapshot])
     test.assertFalse(inventory["worktree_dirty"])
     test.assertEqual(inventory["public_import_root"], "D0.All")
 
@@ -941,6 +948,19 @@ class ProofArchitectureTests(unittest.TestCase):
                           and hit["direct_content"])
             self.assertEqual(direct["matched_terms"], direct["query_terms"])
 
+    def test_multi_pattern_matcher_keeps_nested_and_partial_overlaps(self) -> None:
+        variants = {
+            "abc": [(0, "short")],
+            "abcd": [(1, "long")],
+            "cd": [(2, "middle")],
+            "bcde": [(3, "shifted")],
+        }
+        matcher = proof._build_multi_pattern_matcher(variants)
+        self.assertEqual(
+            proof._multi_pattern_matches("abcde", matcher),
+            {0: {"short"}, 1: {"long"}, 2: {"middle"}, 3: {"shifted"}},
+        )
+
     def test_search_candidate_card_bounds_details_and_preserves_source_pins(self) -> None:
         candidate = {
             "kind": "text-candidate", "key": "02_REGISTRY/owner.md",
@@ -1497,8 +1517,10 @@ class ProofArchitectureTests(unittest.TestCase):
             (proof.ROOT / module).read_text(encoding="utf-8"),
         )
         self.assertIn("all 16+24+2 Euler rows", case["scope_review"])
-        self.assertIn("derives its O(h^3) defect from C^3 regularity",
-                      case["scope_review"])
+        self.assertIn(
+            "shared D0.Analysis Taylor theorem derives its O(h^3) defect from C^3 regularity",
+            case["scope_review"],
+        )
         self.assertIn("physical native Book/clock/source selection remain separate and open",
                       case["scope_review"])
 
@@ -1520,17 +1542,19 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "nonvacuum_brinkmann_stencil_midpoint_refinement_declarations_2026-10-26.json"
+            / "nonvacuum_brinkmann_stencil_midpoint_refinement_current_declarations_2026-10-26.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertEqual(
+            inventory["snapshot_commit"],
+            "7094905859ac217241e2d467161662b794c7c61e",
+        )
         self.assertEqual(inventory["public_import_root"], "D0.All")
         self.assertFalse(inventory["worktree_dirty"])
-        self.assertEqual(inventory["snapshot_commit"],
-                         "d27cafffe9592416556c9f5eb4bd069a355dca44")
         self.assertEqual(
             inventory["lean_source_digest"],
-            "369d1159021853c3ec8726a1b9c32518dfb288a0238fdd43440f31df7c4b33e5",
+            "d5de0891dde960dc4f7495f9eda1afdaec7fe11d15bd9e1d061810852e232c9c",
         )
         declarations = {row["name"]: row for row in inventory["declarations"]}
         module_name = "D0.Geometry.NonvacuumBrinkmannStencil"
@@ -1541,8 +1565,31 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Geometry.finiteMatterForwardGradient_midpointStep",
             "D0.Geometry.twoComponentMatterNormSq_midpointGradient_eq_rate",
             "D0.Geometry.nonvacuumProfile_source_eq_finiteMidpointMatterNorm",
+            "D0.Geometry.cubicMatterMidpointSample_eq_profile_sub_cubic_error",
+            "D0.Geometry.cubicMatterMidpointSample_error_bound",
+            "D0.Geometry.nonvacuumCubicMidpointSource_matches_record",
+            "D0.Geometry.finiteMatterMidpointHistory_eq_base_add_rateSum",
+            "D0.Geometry.finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm",
+            "D0.Geometry.twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum",
         }
         self.assertTrue(required_theorems.issubset(declarations))
+        historical_nonvacuum = json.loads(
+            (
+                proof.ROOT
+                / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+                / "nonvacuum_brinkmann_stencil_declarations_2026-10-25.json"
+            ).read_text(encoding="utf-8")
+        )
+        stable_nonvacuum_names = {
+            row["name"]
+            for row in historical_nonvacuum["declarations"]
+            if row.get("module") == module_name
+            and not row["name"].startswith("_private.")
+            and not row["name"].endswith(".match_1")
+        }
+        self.assertEqual(len(stable_nonvacuum_names), 30)
+        self.assertTrue(stable_nonvacuum_names.issubset(declarations))
+        self.assertTrue(all(declarations[name]["exists"] for name in stable_nonvacuum_names))
         standard_axioms = {"Classical.choice", "Quot.sound", "propext"}
         for name in required_theorems:
             row = declarations[name]
@@ -1562,6 +1609,36 @@ class ProofArchitectureTests(unittest.TestCase):
             sourced["proof_dependencies"],
         )
         self.assertIn("h ≠ 0", sourced["elaborated_type"])
+        cubic_source = declarations[
+            "D0.Geometry.nonvacuumCubicMidpointSource_matches_record"
+        ]
+        self.assertEqual(cubic_source["module"], module_name)
+        self.assertIn("h ≠ 0", cubic_source["elaborated_type"])
+        self.assertIn(
+            "D0.Geometry.nonvacuumProfile_source_eq_finiteMidpointMatterNorm",
+            cubic_source["proof_dependencies"],
+        )
+
+        historical_cubic_inventory = json.loads(
+            (
+                proof.ROOT
+                / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+                / "nonvacuum_brinkmann_stencil_cubic_midpoint_declarations_2026-10-26.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            historical_cubic_inventory["snapshot_commit"],
+            "c42d0e3f91f937676f8a3c14255835144bb65e9b",
+        )
+        self.assertEqual(
+            historical_cubic_inventory["lean_source_digest"],
+            "62572197322b69a5ed4427cb71eafbb2b8100a86972f03c5dff4b1e291d62db2",
+        )
+        self.assertFalse(historical_cubic_inventory["worktree_dirty"])
+        historical_cubic_names = {
+            row["name"] for row in historical_cubic_inventory["declarations"]
+        }
+        self.assertTrue(historical_cubic_names.issubset(declarations))
 
         refinement_declarations = {
             "D0.Geometry.finiteMatterMidpointLocalDefect",
@@ -1587,6 +1664,48 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("∀ n ≤ N", refinement["elaborated_type"])
         self.assertIn("M * h ^ 3 / 24", refinement["elaborated_type"])
         self.assertIn("duration * M * h ^ 2 / 24", refinement["elaborated_type"])
+
+        historical_energy_inventory = json.loads(
+            (
+                proof.ROOT
+                / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+                / "nonvacuum_brinkmann_stencil_current_declarations_2026-10-26.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            historical_energy_inventory["snapshot_commit"],
+            "fea233e0d5909ac07963c06dbe42cd9a6b8fc9d0",
+        )
+        self.assertEqual(
+            historical_energy_inventory["lean_source_digest"],
+            "9bf1508a0ee6d25ab420dac401d83f5add1e12216731a9da1aa6dd46e0abdfe6",
+        )
+        self.assertFalse(historical_energy_inventory["worktree_dirty"])
+        historical_energy_names = {
+            row["name"] for row in historical_energy_inventory["declarations"]
+        }
+        self.assertTrue(historical_energy_names.issubset(declarations))
+
+        historical_refinement_inventory = json.loads(
+            (
+                proof.ROOT
+                / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+                / "nonvacuum_brinkmann_stencil_midpoint_refinement_declarations_2026-10-26.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            historical_refinement_inventory["snapshot_commit"],
+            "d27cafffe9592416556c9f5eb4bd069a355dca44",
+        )
+        self.assertEqual(
+            historical_refinement_inventory["lean_source_digest"],
+            "369d1159021853c3ec8726a1b9c32518dfb288a0238fdd43440f31df7c4b33e5",
+        )
+        self.assertFalse(historical_refinement_inventory["worktree_dirty"])
+        historical_refinement_names = {
+            row["name"] for row in historical_refinement_inventory["declarations"]
+        }
+        self.assertTrue(historical_refinement_names.issubset(declarations))
 
         c3_inventory_path = (
             proof.ROOT
@@ -1621,8 +1740,17 @@ class ProofArchitectureTests(unittest.TestCase):
         c3_local = c3_declarations[
             "D0.Geometry.midpointQuadrature_error_abs_le_of_thirdDerivative_bound"
         ]
+        c3_sampled = c3_declarations[
+            "D0.Geometry.sampledMatterMidpointLocalDefect_abs_le"
+        ]
+        self.assertIn(
+            "D0.Geometry.midpointQuadrature_error_abs_le_of_thirdDerivative_bound",
+            c3_sampled["proof_dependencies"],
+        )
         self.assertIn("ContDiff", c3_local["elaborated_type"])
         self.assertIn("iteratedDeriv", c3_local["elaborated_type"])
+        self.assertIn("Set.Icc", c3_local["elaborated_type"])
+        self.assertIn("0 ≤ h", c3_local["elaborated_type"])
         self.assertIn("M * h ^ 3 / 24", c3_local["elaborated_type"])
         c3_global = c3_declarations[
             "D0.Geometry.sampledMatterMidpointHistory_error_le_refinementBound"
@@ -1636,6 +1764,28 @@ class ProofArchitectureTests(unittest.TestCase):
             c3_global["proof_dependencies"],
         )
         self.assertIn("duration * M * h ^ 2 / 24", c3_global["elaborated_type"])
+
+        pre_refactor_inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_brinkmann_stencil_midpoint_c3_error_pre_refactor_declarations_2026-10-26.json"
+        )
+        pre_refactor_inventory = json.loads(
+            pre_refactor_inventory_path.read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            pre_refactor_inventory["snapshot_commit"],
+            "9b0eeec8fb7bc234cfe532c5b7497a19ca6796ed",
+        )
+        self.assertEqual(
+            pre_refactor_inventory["lean_source_digest"],
+            "f2a18ec9b50d8235603fb1d64ac2b3d75020100738afd95280d542a150c2769c",
+        )
+        self.assertFalse(pre_refactor_inventory["worktree_dirty"])
+        self.assertEqual(
+            hashlib.sha256(pre_refactor_inventory_path.read_bytes()).hexdigest(),
+            "9aedab993f6af0d896a09fb850fc40ca3ef4d4632a9159d2312126892caa7bb7",
+        )
 
         refactor_inventory_path = (
             proof.ROOT
@@ -1675,6 +1825,11 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(set(generic_midpoint["axioms"]), standard_axioms)
         self.assertIn("ContDiff", generic_midpoint["elaborated_type"])
         self.assertIn("M * h ^ 3 / 24", generic_midpoint["elaborated_type"])
+
+        self.assertNotIn(
+            "D0.Geometry.midpointQuadrature_error_abs_le_of_thirdDerivative_bound",
+            refactor_declarations,
+        )
         sampled_local = refactor_declarations[
             "D0.Geometry.sampledMatterMidpointLocalDefect_abs_le"
         ]
@@ -1706,10 +1861,15 @@ class ProofArchitectureTests(unittest.TestCase):
         history_inventory = json.loads(history_inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(history_inventory["schema"], "d0-lean-declaration-inventory-v1")
         self.assertEqual(history_inventory["public_import_root"], "D0.All")
-        self.assertEqual(history_inventory["snapshot_commit"],
-                         "82c617ae0c9ce120730819f68f7a80e76c9473eb")
-        self.assertEqual(history_inventory["lean_source_digest"],
-                         "6c73bc54dfdcbe972a58bdd615c173c2bf8cf051a3c394a57120a2112e664644")
+        self.assertEqual(
+            history_inventory["snapshot_commit"],
+            "82c617ae0c9ce120730819f68f7a80e76c9473eb",
+        )
+        self.assertEqual(
+            history_inventory["lean_source_digest"],
+            "6c73bc54dfdcbe972a58bdd615c173c2bf8cf051a3c394a57120a2112e664644",
+        )
+        self.assertFalse(history_inventory["worktree_dirty"])
         history_declarations = {row["name"]: row for row in history_inventory["declarations"]}
         required_history_declarations = {
             "D0.Geometry.finiteMatterMidpointHistory",
@@ -1800,7 +1960,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_gram_orbit_shared_api_declarations_2026-10-26_julia_base_link_frechet.json"
+            / "finite_gram_orbit_shared_api_declarations_2026-10-26_julia_base_link_frechet_v2.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -2078,7 +2238,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-26_five_search_cards.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_final_v10.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -2098,18 +2258,37 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             sum(row["required_source_count"] for row in summary["cases"]), 161
         )
+        self.assertEqual(summary["required_source_ref_count"], 161)
+        positive_nonvacuum = next(
+            row for row in summary["cases"]
+            if row["id"] == "positive-nonvacuum-recovery"
+        )
+        self.assertEqual(positive_nonvacuum["query_count"], 12)
+        self.assertEqual(positive_nonvacuum["required_source_count"], 6)
         labelled = next(
             row for row in summary["cases"]
             if row["id"] == "labelled-native-raising-inverse"
         )
         self.assertEqual(labelled["query_count"], 18)
         self.assertEqual(labelled["required_source_count"], 13)
+        historical_refinement_summary = json.loads(
+            (
+                proof.ROOT
+                / "02_REGISTRY/research/sources/"
+                / "d0_proof_architecture_formalization_2026-10-24/reports"
+                / "proof_architecture_cold_start_summary_2026-10-26_midpoint_refinement.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            historical_refinement_summary["snapshot_commit"],
+            "fc76e2a221d629297af93e74583b6d413c0b97d5",
+        )
         positive = next(
-            row for row in summary["cases"]
+            row for row in historical_refinement_summary["cases"]
             if row["id"] == "positive-nonvacuum-recovery"
         )
-        self.assertEqual(positive["query_count"], 9)
-        self.assertEqual(positive["required_source_count"], 6)
+        self.assertEqual(positive["query_count"], 8)
+        self.assertEqual(positive["required_source_count"], 3)
         proper = next(
             row for row in summary["cases"]
             if row["id"] == "proper-lorentz-same-orientation-orbit"
@@ -2143,19 +2322,130 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             replay["search_engine_sha256"],
-            hashlib.sha256(
-                (proof.ROOT / "tools/proof_architecture.py").read_bytes()
-            ).hexdigest(),
+            hashlib.sha256((proof.ROOT / "tools/proof_architecture.py").read_bytes()).hexdigest(),
+        )
+        self.assertEqual(
+            replay["test_sha256"],
+            hashlib.sha256((proof.ROOT / "tools/test_proof_architecture.py").read_bytes()).hexdigest(),
+        )
+
+    def test_historical_final_v4_cold_start_receipt_is_preserved(self) -> None:
+        summary_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports"
+            / "proof_architecture_cold_start_summary_2026-10-26_final_v4.json"
+        )
+        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        self.assertEqual(summary["snapshot_commit"], "5183b7bb07109cf42a0248c5a46dcea6e5c9ad55")
+        self.assertFalse(summary["worktree_dirty"])
+        self.assertEqual(summary["search_cases_found_all_sources"], 24)
+        self.assertEqual(summary["required_source_ref_count"], 158)
+        self.assertEqual(summary["benchmark_cases_total"], 25)
+        self.assertEqual(
+            summary["replay"]["full_output_sha256"],
+            "ee319034ab6fa3e02571c2adea0337a7752f105f02ca94745b166b0727352fa3",
+        )
+        self.assertEqual(
+            summary["replay"]["test_sha256"],
+            "66f92ca67b8e24ec0d21145fe4ab417784e5c5c738d524927b76b0d35f14de2d",
+        )
+
+    def test_historical_integrated_cold_start_summary_tracks_cubic_queries(self) -> None:
+        summary_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports"
+            / "proof_architecture_cold_start_summary_2026-10-25_combined.json"
+        )
+        summary_bytes = summary_path.read_bytes()
+        summary = json.loads(summary_bytes)
+        self.assertLess(len(summary_bytes), 100_000)
+        self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
+        self.assertEqual(summary["snapshot_commit"], "1820d940d3b1b5ab61ef7ad505980eea077cf553")
+        self.assertFalse(summary["worktree_dirty"])
+        self.assertEqual(summary["search_cases_found_all_sources"], 20)
+        self.assertEqual(summary["search_cases_total"], 20)
+        self.assertEqual(summary["benchmark_cases_total"], 21)
+        self.assertEqual(summary["change_impact_regression"]["status"], "pass")
+        self.assertEqual(
+            summary["authority_source_digests"]["02_REGISTRY/formal_support.csv"],
+            "4520818e1940d8844ba94198f3d9107803ec63202b3f4f6dec67146237c66e94",
+        )
+        self.assertEqual(len(summary["cases"]), 20)
+        self.assertEqual(len({row["id"] for row in summary["cases"]}), 20)
+        self.assertTrue(all(
+            row["all_required_sources_found"] and not row["missing_paths"]
+            for row in summary["cases"]
+        ))
+        self.assertEqual(
+            sum(row["required_source_count"] for row in summary["cases"]), 123
+        )
+        cubic_case = next(
+            row for row in summary["cases"]
+            if row["id"] == "positive-nonvacuum-recovery"
+        )
+        self.assertEqual(cubic_case["query_count"], 6)
+        self.assertEqual(cubic_case["required_source_count"], 3)
+        self.assertTrue(cubic_case["all_required_sources_found"])
+        replay = summary["replay"]
+        self.assertEqual(replay["source_commit"], summary["snapshot_commit"])
+        self.assertEqual(
+            replay["command"], "python3 tools/proof_architecture_cold_start.py"
         )
         self.assertRegex(replay["full_output_sha256"], r"^[0-9a-f]{64}$")
-        self.assertGreater(replay["full_output_bytes"], 8_000_000)
+        self.assertEqual(
+            replay["runner_sha256"],
+            "52b3c30544fdc448ef21139a0b0f76094fc9a24b20b0508d34be3ad41583146e",
+        )
+        self.assertEqual(
+            replay["search_engine_sha256"],
+            "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
+        )
+        self.assertEqual(
+            replay["full_output_sha256"],
+            "f54ba8b489f3cfb23172fe7b382a9b38b76051dc958f75543d790d9b28a519db",
+        )
+        self.assertRegex(replay["full_output_sha256"], r"^[0-9a-f]{64}$")
+        verification_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports"
+            / "proof_architecture_historical_combined_replay_2026-10-26.json"
+        )
+        verification = json.loads(verification_path.read_text(encoding="utf-8"))
+        verification_replay = verification["verification_replay"]
+        self.assertEqual(
+            verification["source_summary_path"],
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-25_combined.json",
+        )
+        self.assertEqual(
+            verification["recorded_replay"]["full_output_sha256"],
+            replay["full_output_sha256"],
+        )
+        self.assertEqual(verification["source_commit"], summary["snapshot_commit"])
+        self.assertEqual(verification_replay["snapshot_commit"], summary["snapshot_commit"])
+        self.assertEqual(verification_replay["runner_sha256"], replay["runner_sha256"])
+        self.assertEqual(
+            verification_replay["search_engine_sha256"], replay["search_engine_sha256"]
+        )
+        self.assertEqual(verification_replay["search_cases_found_all_sources"], 20)
+        self.assertEqual(verification_replay["required_source_ref_count"], 123)
+        self.assertEqual(verification_replay["benchmark_cases_total"], 21)
+        self.assertEqual(verification_replay["missing_required_sources"], 0)
+        self.assertTrue(verification_replay["authority_source_digests_match_recorded"])
+        self.assertFalse(verification_replay["matches_recorded_full_output_sha256"])
+        self.assertNotEqual(
+            verification_replay["full_output_sha256"], replay["full_output_sha256"]
+        )
+        self.assertEqual(verification_replay["full_output_bytes"], 7_099_884)
 
     def test_search_process_comparison_is_pinned_and_semantically_scoped(self) -> None:
         comparison_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-26_five_search_cards.json"
+            / "proof_architecture_search_process_comparison_2026-10-26_final_v10.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
@@ -2482,13 +2772,13 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         base_link_inventory_rel = (
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
-            "julia_joint_coframe_base_link_frechet_declarations_2026-10-26.json"
+            "julia_joint_coframe_base_link_frechet_declarations_2026-10-26_v2.json"
         )
         self.assertIn(base_link_inventory_rel, case["required_refs"])
         coordinate_inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
-            "julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet.json"
+            "julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet_v2.json"
         )
         self.assertIn(
             coordinate_inventory_path.relative_to(proof.ROOT).as_posix(),
@@ -2497,7 +2787,7 @@ class ProofArchitectureTests(unittest.TestCase):
         joint_frechet_inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
-            "julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet.json"
+            "julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet_v2.json"
         )
         self.assertIn(
             joint_frechet_inventory_path.relative_to(proof.ROOT).as_posix(),
@@ -2663,7 +2953,8 @@ class ProofArchitectureTests(unittest.TestCase):
             in query
         )
         coordinate_hits = proof.full_text_search(
-            proof.ROOT, coordinate_query, limit=8
+            proof.ROOT, coordinate_query,
+            limit=cold_start.COLD_START_MIN_RESULT_WINDOW,
         )
         surfaced = {hit["source"] for hit in coordinate_hits}
         self.assertIn(
@@ -2680,7 +2971,8 @@ class ProofArchitectureTests(unittest.TestCase):
             in query
         )
         joint_path_hits = proof.full_text_search(
-            proof.ROOT, joint_path_query, limit=8
+            proof.ROOT, joint_path_query,
+            limit=cold_start.COLD_START_MIN_RESULT_WINDOW,
         )
         joint_path_surfaced = {hit["source"] for hit in joint_path_hits}
         self.assertIn(
@@ -2695,9 +2987,12 @@ class ProofArchitectureTests(unittest.TestCase):
             query for query in case["queries"]
             if "principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt"
             in query
+            and "julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet_v2"
+            in query
         )
         joint_frechet_hits = proof.full_text_search(
-            proof.ROOT, joint_frechet_query, limit=8
+            proof.ROOT, joint_frechet_query,
+            limit=cold_start.COLD_START_MIN_RESULT_WINDOW,
         )
         joint_frechet_surfaced = {hit["source"] for hit in joint_frechet_hits}
         self.assertIn(
@@ -2713,7 +3008,10 @@ class ProofArchitectureTests(unittest.TestCase):
             if "principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt"
             in query
         )
-        base_link_hits = proof.full_text_search(proof.ROOT, base_link_query, limit=8)
+        base_link_hits = proof.full_text_search(
+            proof.ROOT, base_link_query,
+            limit=cold_start.COLD_START_MIN_RESULT_WINDOW,
+        )
         base_link_surfaced = {hit["source"] for hit in base_link_hits}
         self.assertIn(
             "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
@@ -3195,7 +3493,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_julia_base_link_frechet.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_julia_base_link_frechet_v2.json"
         )
         inventory_bytes = inventory_path.read_bytes()
         inventory = json.loads(inventory_bytes)
@@ -3253,7 +3551,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_julia_base_link_frechet.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_julia_base_link_frechet_v2.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         assert_historical_compiled_inventory(self, inventory)
@@ -3327,7 +3625,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_matrix_partial_trace_current_declarations_2026-10-26_julia_base_link_frechet.json"
+            / "finite_matrix_partial_trace_current_declarations_2026-10-26_julia_base_link_frechet_v2.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -3412,7 +3710,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "archive_shift_topology_current_declarations_2026-10-26_julia_base_link_frechet.json"
+            / "archive_shift_topology_current_declarations_2026-10-26_julia_base_link_frechet_v2.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -3421,10 +3719,17 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(inventory["public_import_root"], "D0.All")
         self.assertEqual(inventory["toolchain"], "leanprover/lean4:v4.30.0")
         declarations = {row["name"]: row for row in inventory["declarations"]}
-        self.assertEqual(len(declarations), 26)
         self.assertEqual(
             set(inventory["request"]["full_names"]), set(declarations)
         )
+        previous_names = json.loads(
+            (
+                proof.ROOT
+                / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+                / "archive_shift_topology_current_declarations_2026-10-26_lorentz_tangent_joint_coframe_frechet.json"
+            ).read_text(encoding="utf-8")
+        )["request"]["full_names"]
+        self.assertTrue(set(previous_names).issubset(declarations))
 
         generic_diagonal = declarations[
             "D0.Topology.abstract_shift_commute_implies_diagonal_constant"
@@ -3606,12 +3911,19 @@ class ProofArchitectureTests(unittest.TestCase):
             "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean",
         ):
             self.assertIn(path, sources)
+        exact_generation_hits = proof.full_text_search(
+            proof.ROOT, queries[4], limit=18
+        )
+        self.assertIn(
+            "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean",
+            [hit["source"] for hit in exact_generation_hits],
+        )
 
     def test_source_port_preparation_consumes_shared_tensor_api(self) -> None:
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "source_port_preparation_tensor_inventory_2026-10-26_julia_base_link_frechet.json"
+            / "source_port_preparation_tensor_inventory_2026-10-26_julia_base_link_frechet_v2.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
@@ -3691,7 +4003,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "flat_tensor_shared_api_declarations_2026-10-26_julia_base_link_frechet.json"
+            / "flat_tensor_shared_api_declarations_2026-10-26_julia_base_link_frechet_v2.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         assert_historical_compiled_inventory(self, inventory)

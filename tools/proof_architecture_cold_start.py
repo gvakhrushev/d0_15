@@ -14,6 +14,7 @@ import tempfile
 from typing import Any
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+COLD_START_MIN_RESULT_WINDOW = 18
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
@@ -40,8 +41,8 @@ CASES: list[dict[str, Any]] = [
             "roleLorentzTangentEndpointFDeriv_apply julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26",
             "roleLorentzTangentParameters_finrank roleLorentzTangent_finrank four Julia links 24 coordinates",
             "principalFrameJuliaJointCoframeEndpointReadoutAlongLorentzTangent_hasDerivAt principalFrameJuliaEndpointChartReadoutAlongLorentzTangentInCoordinates_hasFDerivAt roleLorentzTangentParametersEquivCoordinates same Julia query family 16 coframe 24 Lorentz endpoint RolePair coordinates",
-            "principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet",
-            "principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt julia_joint_coframe_base_link_frechet_declarations_2026-10-26",
+            "principalFrameJuliaJointCoframeEndpointReadoutInCoordinates_hasFDerivAt julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet_v2",
+            "principalFrameJuliaJointCoframeEndpointReadoutAtBaseInCoordinates_hasFDerivAt julia_joint_coframe_base_link_frechet_declarations_2026-10-26_v2",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -53,8 +54,8 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_base_link_frechet_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet_v2.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_base_link_frechet_declarations_2026-10-26_v2.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_dimension_reuse_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_tangent_path_declarations_2026-10-26.json",
         ],
@@ -84,8 +85,11 @@ CASES: list[dict[str, Any]] = [
             "finiteMatterMidpointHistory_eq_base_add_rateSum chronological midpoint record finite sum endpoint",
             "twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum complete finite history gradient rate energies",
             "finiteMatterMidpointHistory_error_le_refinementBound local midpoint defect sum M h^3 over 24 global O(h^2) uniform mesh points",
-            "D0.Analysis.MidpointQuadrature midpointQuadrature_error_abs_le_of_thirdDerivative_bound sampledMatterMidpointLocalDefect_abs_le sampledMatterMidpointHistory_error_le_refinementBound shared Taylor Lagrange C3 third derivative M h^3 over 24",
+            "D0.Analysis.MidpointQuadrature midpointQuadrature_error_abs_le_of_thirdDerivative_bound",
+            "sampledMatterMidpointLocalDefect_abs_le sampledMatterMidpointHistory_error_le_refinementBound componentwise uniform mesh C3",
             "native finite matter midpoint exact energy five point source same interval",
+            "nonvacuumCubicMidpointSource_matches_record cubicMatterMidpointSample_eq_profile_sub_cubic_error cubicMatterMidpointSample_error_bound",
+            "cubic nonvacuum midpoint cumulative matter record componentwise O(h^2) bound",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -101,23 +105,23 @@ CASES: list[dict[str, Any]] = [
                 "commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
                 "blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
                 "sections": ["7.1", "7.2"],
-                "scope_query_indexes": [0, 4, 8],
-                "scope_query_sections": {"0": ["7.1"], "4": ["7.2"], "8": ["7.2"]},
+                "scope_query_indexes": [0, 4, 9],
+                "scope_query_sections": {"0": ["7.1"], "4": ["7.2"], "9": ["7.2"]},
             },
         ],
         "scope_review": (
             "The compiled NonvacuumBrinkmannStencil result proves the exact five-point "
-            "harmonic/radial readout and binds its source norm to the same finite midpoint "
-            "matter record. This is only the pointwise stencil/source fragment: the original "
-            "time-indexed extension additionally reuses the one-step midpoint API, proves its "
-            "endpoint rate-sum law and the finite-horizon squared-gradient energy sum, and "
-            "supplies that same rate to each site's profile without adding a continuum-limit premise. "
-            "The error composition proves a uniform componentwise O(h^2) bound at every mesh point. "
-            "The shared D0.Analysis Taylor theorem derives its O(h^3) defect from C^3 regularity "
-            "plus an explicit uniform third-derivative bound on the sampled interval; the geometry "
-            "specialization composes it with the sampled-history result. It does not assert the same constant for the "
-            "Euclidean vector norm. The original CAR construction, 40-to-3-to-1 substitution, all "
-            "16+24+2 Euler rows, and physical native Book/clock/source selection remain separate and open."
+            "harmonic/radial readout and binds its source norm to the same recursively constructed "
+            "midpoint matter record. The time-indexed extension proves that each natural-indexed "
+            "history step supplies the exact rate used by that site's profile and proves endpoint "
+            "rate-sum and finite-history energy identities. The explicit two-component cubic "
+            "family has its exact accumulated midpoint error and componentwise bound. The defect "
+            "composition proves a uniform componentwise O(h^2) bound. The shared D0.Analysis Taylor "
+            "theorem derives its O(h^3) defect from C^3 regularity and an explicit uniform bound "
+            "on the sampled interval; the geometry specialization composes it with the sampled-"
+            "history result. It does not assert the same constant for the Euclidean vector norm. "
+            "The original CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, "
+            "and physical native Book/clock/source selection remain separate and open."
         ),
     },
     {
@@ -133,7 +137,7 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
             "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26_fintype_only_core.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_julia_base_link_frechet_v2.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_fe15cd8c.json",
         ],
         "required_sources": [
@@ -166,14 +170,14 @@ CASES: list[dict[str, Any]] = [
         "queries": [
             "finiteGram_add_smul_expand finite Gram expansion arbitrary base frame quadratic remainder",
             "finiteGram_add_smul_difference_quotient exact normalized Gram difference full quadratic remainder",
-            "finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json finiteGram_add_smul_difference_quotient",
+            "finite_gram_orbit_shared_api_declarations_2026-10-26_julia_base_link_frechet_v2.json finiteGram_add_smul_difference_quotient",
             "finite Gram expansion Theta plus t C two sided linear variation exact quadratic term",
             "A4D Solder Metric Completion finiteGram_add_smul_difference_quotient solderMetric_flat_tangent j2DetectorMetricPath_symmetric_difference_quotient",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
             "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_lorentz_tangent_joint_coframe_path.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_julia_base_link_frechet_v2.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
@@ -525,6 +529,7 @@ CASES: list[dict[str, Any]] = [
             "principalFrameJuliaEq26_blind_to_ABSignFlip_links julia_eq26_link_blindness_declaration_2026-10-26",
             "principalFrameJuliaNonNullQuery_separates_ABSignFlip_links julia_nonnull_query_link_separation_declaration_2026-10-26",
             "archiveJuliaSourceEq27EndpointMapReadout Eq27 endpoint map readout",
+            "proper_role_lorentz_joint_recovery_inventory_2026-10-25 principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -768,7 +773,7 @@ CASES: list[dict[str, Any]] = [
             "ArchivePhaseShift commute_with_shift_implies_diagonal_constant archiveShiftTopology density_uniform_from_commute",
             "Fin finRotate cyclicShiftMatrix finRotateArchiveTopology partial_trace_density_uniform_under_shift",
             "GenerationTensorExactness flavor_blindness_step_of_commute commute_with_shift_entries kronecker_C_I",
-            "GenerationTensorExactness flavor_blindness_step_k_of_commute stage2_flavor_blindness_of_commute stage3_tensor_exactness no h_off",
+            "GenerationTensorExactness flavor_blindness_step_k_of_commute stage2_flavor_blindness_of_commute stage3_tensor_exactness no h_off Nat.add_mod_right Nat.mod_eq_of_lt Fin.ext",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
@@ -992,7 +997,9 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
     # Cold-start review needs enough candidates to include verified pinned
     # snapshots behind a top-ranked citation, while the user-facing CLI stays
     # at its smaller default result count.
-    all_hits = proof.full_text_search_many(root, queries, max(limit, 18))
+    all_hits = proof.full_text_search_many(
+        root, queries, max(limit, COLD_START_MIN_RESULT_WINDOW)
+    )
     offset = 0
     cases = []
     for case in CASES:
@@ -1044,7 +1051,7 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
         "snapshot_commit": dataset["snapshot_commit"],
         "worktree_dirty": dataset["worktree_dirty"],
         "authority_source_digests": dataset["source_digests"],
-        "search_limit": max(limit, 18),
+        "search_limit": max(limit, COLD_START_MIN_RESULT_WINDOW),
         "search_cases_found_all_sources": sum(c["found_all_required_sources"] for c in cases),
         "search_cases_total": len(cases),
         "benchmark_cases_total": len(cases) + 1,

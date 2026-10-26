@@ -125,11 +125,11 @@
       "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
     }
   ],
-  "snapshot_commit": "00c56c5242d2b20d1e23134886069919569b0960",
+  "snapshot_commit": "b6e5b872098188314249b5f1986a55ad7bf72b26",
   "source_digests": {
     "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
-    "02_REGISTRY/formal_support.csv": "e726f66e2b3e418ba129a486768d85a9245eb9db106a4109d92db4724706545b",
+    "02_REGISTRY/formal_support.csv": "4520818e1940d8844ba94198f3d9107803ec63202b3f4f6dec67146237c66e94",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
     "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
@@ -1493,7 +1493,7 @@
         "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
       },
       "collector_sha256": "10aa139ef59284a137e1a51566165a7c223bd0b2f3cd9eaff08ca03c23b04e79",
-      "lean_source_digest": "151ed9a7b44aa795987d2c4c2b14c5cdaa67323fd3cd15585885dcee0b0ca2d8",
+      "lean_source_digest": "65b35bc458754b5e466480651ee0a6407286695afa11acccdf06e86762f6633d",
       "public_import_root": "D0.All",
       "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
     }

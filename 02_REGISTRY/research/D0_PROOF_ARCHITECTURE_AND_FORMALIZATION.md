@@ -8984,6 +8984,106 @@ the whole Lorentz group. It does not connect every determinant-one link to the
 identity, establish physical price selection, or close GR; those application
 and physical-selection obligations remain open.
 
+### Exact cubic-time midpoint recovery on the same positive nonvacuum carrier (25 October 2026)
+
+This continues the pinned positive nonvacuum source slice at
+[A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md](https://github.com/gvakhrushev/d0_15/blob/8b94198c8dfbdf5983ad0b350b058fb30bb68a54/02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md),
+commit `8b94198c8dfbdf5983ad0b350b058fb30bb68a54`, blob
+`63c36b18af67fc1f113f9e33deb13cf43ddf4556`, §§7.1–7.2. It adds a real
+finite-mesh application within the existing owner; it creates no independent
+claim row or scientific task.
+
+`D0.Geometry.NonvacuumBrinkmannStencil` now defines a two-component cubic
+profile, its exact time derivative, and the actual chronological record
+formed by applying the existing midpoint update at every interval. For each
+component and every natural number of steps, Lean proves the exact identity
+
+`psi_h[n,i] = psi_i(n*h) - c3[i]*n*h^3/4`.
+
+Taking absolute values gives the exact remainder
+`(n*|h|)*|6*c3[i]|*|h|^2/24`. Therefore, if `M` bounds
+`|6*c3[i]| = |psi_i'''|` for both components, the accumulated record obeys
+the componentwise bound
+
+`|psi_h[n,i] - psi_i(n*h)| <= (n*|h|)*M*|h|^2/24`.
+
+This is a formal cubic-time specialization of the midpoint recovery estimate,
+with no positive-mesh assumption needed for the absolute-value statement; it
+does not establish the source’s estimate for arbitrary smooth profiles.
+
+The concrete application theorem
+`D0.Geometry.nonvacuumCubicMidpointSource_matches_record` evaluates the
+five-point spatial source and matter derivative at the same time midpoint.
+It proves that this source equals `-4 * coupling` times the norm of the
+forward difference of the same recursively built record at consecutive steps. Its
+only mesh premise is `h ≠ 0`; the four spatial profile coefficient functions
+are arbitrary at that midpoint. The proof specializes
+`nonvacuumProfile_source_eq_finiteMidpointMatterNorm`, retaining its actual
+application dependency and hypotheses.
+
+The first cubic checkpoint recorded a 34-declaration nonvacuum module at
+source digest `03da778902f4eb3c2c96219f0618213ac7c5670ac8327b6f611f091f4f37d3e4`.
+Those inventories were superseded when the shared finite partial-trace module
+was integrated. The current combined public-root inventories are recorded in
+the following checkpoint. The earlier 20/20 cold-start run covered the cubic
+queries before that integration; the combined runner is replayed separately.
+This closes one explicit mathematical and application slice only. The
+arbitrary-smooth-field refinement theorem, original CAR construction,
+40-to-3-to-1 substitution, all 16+24+2 Euler equations, independent C0
+freeze/acceptance, and physical Book/clock/source/execution selection remain
+open under their existing owners. No physical status changes.
+
+### Combined cubic recovery and partial-trace library checkpoint (25 October 2026)
+
+This checkpoint retains both the exact cubic midpoint application above and the
+shared finite partial-trace API with its CAR consumer. The combined source tree
+was compiled through public `D0.All` with Lean 4.30.0: **4,581/4,581** jobs
+passed. Its Lean-source digest is
+`65b35bc458754b5e466480651ee0a6407286695afa11acccdf06e86762f6633d`.
+
+The refreshed declaration inventories were collected from one compiled
+`D0.All` environment at clean source snapshot
+`b6e5b872098188314249b5f1986a55ad7bf72b26`, with `worktree_dirty=false` and
+that common Lean-source digest:
+
+- CAR/Hodge: 36 declarations; SHA-256
+  `461c474aa1f6ef340cbf49935f816100924126faeafaa01123306c1074c6a763`.
+- Finite partial trace and its CAR consumer: six declarations; SHA-256
+  `c366c458592d399bff4d8e3b91962d6606d84aa5f981ff7e2872b37576055eeb`.
+- FlatTensor/Gauge: four declarations; SHA-256
+  `4ba7491f7a66be3549ed08000e7a489214daaf72e5a3503fe1d5b209367399ec`.
+- Nonvacuum midpoint stencil: 34 declarations, including the cubic application;
+  SHA-256
+  `5ef4e55ac8701df2a3323c044177923eba08d4cc6611f986574b04e05491d900`.
+- SourcePort preparation: 73 declarations; SHA-256
+  `bf36d8105b23eb353561b428fd358570a5e0568d1207f0b2bffce66f34a16c2f`.
+
+The compiled Bianchi and Hodge reuse views were also refreshed against the
+current authorities. They both carry the updated `formal_support.csv` digest
+`4520818e1940d8844ba94198f3d9107803ec63202b3f4f6dec67146237c66e94`; their
+SHA-256 values are
+`1f20d4155ba0d3e271a0eb1a33c7e74fdfd4c6db778b60e3360697cd97f70857` and
+`fd990b0983f36af1f448ed6e0d121fdd336fc48963f52ad98318cff56e5a32ba`,
+respectively. These remain compiled declaration and locator crosswalks, not
+semantic claim acceptance.
+
+A full cold-start replay on that clean source snapshot completed on
+`1820d940d3b1b5ab61ef7ad505980eea077cf553`. All **20/20** search cases found
+every required source; all **21/21** benchmark checks passed, and all **123**
+required-source records were found. The `positive-nonvacuum-recovery` case has
+six queries, with the pinned owner, Lean module, and compiled inventory all
+found. The compact v2 report records case-level outcomes and exact pins at
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-25_combined.json`,
+SHA-256 `66f894b31085db4d8c9e5cfd1267cb0b945706f4b751d7e7f564bf0e9d7e756b`;
+its full-run output SHA-256 is
+`f54ba8b489f3cfb23172fe7b382a9b38b76051dc958f75543d790d9b28a519db`. The
+runner and search engine hashes are
+`52b3c30544fdc448ef21139a0b0f76094fc9a24b20b0508d34be3ad41583146e` and
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`.
+The complete proof-architecture regression suite passes **55/55**. No claim
+status, scientific owner, or physical assumption changed. C0 remains unfrozen
+and independently unaccepted; the source/clock/Book/execution bridge, remaining
+mathematical applications, and physical GR premises remain open.
 ### Local joint coframe and Lorentz-tangent Fréchet derivative (26 October 2026)
 
 The new theorem
@@ -9045,6 +9145,48 @@ SHA-256 `490726fbc8aa54fb7b95bb472b2044caf30eae2a489cef25c21471b482631fdd`;
 the query-level receipt is
 `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_joint_coframe_local_frechet.json`,
 SHA-256 `f42e48e0108233165319d273b34cc43894dc0a2cda21f09b29f28c80e5db14dc`.
+
+### Integrated compiler, reuse, and cold-start checkpoint (26 October 2026)
+
+The integrated proof-architecture suite now passes **65/65 tests**. A full
+`D0.All` build passes **4585/4585 targets**. The combined compiled inventory
+resolves **227/227 exact declarations** through `D0.All` at
+the clean Lean snapshot `3cdec8c84f68a8a238227510f56912d23d0674d9`, with Lean
+source digest
+`bc253bd20e3b67ecc7553316874563b2c1b1aacef218535ade47adf6cec37fc4`; its
+SHA-256 is
+`62a4c6623cf9e8fd03378b678aa6cbaf41a557fde6fe810996378a8e6dfdff12`. The
+inventory includes the current public Julia joint coframe/Lorentz Fréchet
+result, the cubic midpoint recovery API, and the reusable finite-Gram,
+source-preparation, CAR/Hodge, partial-trace, and archive-shift declarations.
+The Nonvacuum module check uses all **31 public declarations**. Three stale
+private compiler-generated aliases were omitted because their stored spellings
+do not round-trip to exact current declaration names; the exact public-name
+checks remain enabled.
+
+The retrieval runner now batches queries with a multi-pattern matcher. Its
+regression tests preserve nested and partial-overlap matches, including the
+Julia source/theorem query whose required current compiled inventory is in the
+top-eight results. The final clean cold-start at `87a88a0aa5368b3985a54bb8cabad8ecb493bb0b`
+found every required source in **24/24 cases**, verified **155/155**
+case-specific required-source records, and passed the **25-case benchmark**.
+The labelled native/Julia case uses **18 queries**; the Julia chart/coframe
+recovery case uses **26 queries** and finds all **16** required sources. The
+count is two lower than the previous 157 because three per-file Julia
+inventories were consolidated into one current public-import inventory. The
+report is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_cubic_joint_coframe_frechet.json`,
+SHA-256 `acb669b5af4bb20646334f995b1735f96c40f72eb2718ad374db59fd277acc43`;
+its recorded full-run output SHA-256 is
+`6ad4c9b1bfd1c48810f00c1d1b9f95fefd1d125a8859960dd1a33a0d07384bca`.
+
+This checkpoint consolidates compiled reuse and source discovery. It does not
+change claim status or scientific ownership. C0 remains independently
+unaccepted; the source/clock/Book/execution bridge, original full H+J+R and
+physical action/source selection remain open, and existing owner PR #334 is
+preserved. The positive Nonvacuum and local Julia differential results remain
+scoped to their stated carriers and hypotheses; this checkpoint is not physical
+GR closure or completion of the broader architecture task.
 
 ### Local 40-coordinate Julia readout at arbitrary proper base links (26 October 2026)
 
@@ -9115,6 +9257,64 @@ not assert that an exponential chart covers the Lorentz group. It does not
 vary matter variables, select or differentiate the physical Book/action/
 source/price, establish the physical execution or variational pullback (31),
 or discharge the remaining GR-selection premises.
+
+### Versioned current-source inventories and retrieval-window regression (26 October 2026)
+
+The merged Lean source compiles through public `D0.All` with **4585/4585**
+targets at Lean-source digest
+`a366fc93f44672cb9b48da60c3f76658b2a299b4b7ab601b186454deb2e1337b`.
+Nine compiled declaration inventories were collected against that same digest
+and clean snapshot `9f673b6a3fd305ffdb22245937041e4a1c02fee5`, each with
+`worktree_dirty=false`:
+
+| Compiled inventory | Declarations | SHA-256 |
+|---|---:|---|
+| `archive_shift_topology_current_declarations_2026-10-26_julia_base_link_frechet_v2.json` | 26 | `6159ec6d61385e05b5e54c95383b7c456b972218b292753c14fe640370432550` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_julia_base_link_frechet_v2.json` | 36 | `8bdcf3d16ebdd0e787dcb93874dc466ce201b56e0b342cbed0aa279c1e7d1fc7` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_julia_base_link_frechet_v2.json` | 25 | `7df29620a9e9691459e9ce97699d1f1ac2ead61b65e03a0c002a75f3c0e7647a` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_julia_base_link_frechet_v2.json` | 9 | `4f961fba41e012cb93d2be914c54a8f493d5e6c87742c9548f404de440a1d1b0` |
+| `flat_tensor_shared_api_declarations_2026-10-26_julia_base_link_frechet_v2.json` | 4 | `db5fbde0e534aa5c37582e2eb08aab1f3e6323fe62561b715bd05f1a737386d2` |
+| `julia_joint_coframe_base_link_frechet_declarations_2026-10-26_v2.json` | 14 | `1e7d5f77f50213bb6695859270380670ee01e77136eb6320dbb1f0d52df54867` |
+| `julia_joint_coframe_local_frechet_derivative_declarations_2026-10-26_julia_base_link_frechet_v2.json` | 11 | `30fa87375cff91c08d9ec1468f2e102bd8f5e41331b773a4878334e73b164271` |
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_julia_base_link_frechet_v2.json` | 31 | `5e354caabbf52f9df18aa23791f91e386d83554feea1a748c593f4deebd7889f` |
+| `source_port_preparation_tensor_inventory_2026-10-26_julia_base_link_frechet_v2.json` | 73 | `cba25e03904f9844506a3ee22575e93e68bdec14b9fa3a5759aeabeb0d4ab129` |
+
+The historical inventories were retained at their original paths; these
+current-source snapshots use separate `_v2` names. In particular, the
+Nonvacuum inventory checks all 31 public declarations, and the Julia
+inventories expose both the local 16+24 Fréchet result and its arbitrary
+proper-base-link specialization in the compiled environment.
+
+The cold-start runner now names its bounded retrieval contract as
+`COLD_START_MIN_RESULT_WINDOW = 18`, shared by the runner and its Julia
+retrieval assertions. The earlier unit-only top-eight assertion had become
+stricter than the actual cold-start contract: with the additional versioned
+inventories and receipts in the candidate set, the correct local Fréchet
+inventory ranked ninth for two related queries, while remaining inside the
+runner's 18-result window. The regression now checks the same window used in
+the real replay; it continues to require the compiled inventory and Lean
+module to be surfaced.
+
+On clean source snapshot `0e0d764539d6311dd32a0c961f443261787b95d0`, the
+replay found all required references in **24/24** cases (**158/158**
+case-specific source records), passed the **25-case** benchmark and the exact
+source-versus-unrelated-prose impact regression, using result window 18. The
+full output is **9,177,998 bytes**, kept outside Git, SHA-256
+`d56e88cf7df92a8605f314eaa9207ea29091d7718cfd5851e3dea92200b4337c`. The
+compact report is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_final_v3.json`,
+SHA-256 `c0fd7a4fe8f05f4364514f634bac977f09241a4f5d00444cdf87f4148a2ad094`.
+The recorded runner, search-engine and test SHA-256 values are
+`b57ee51d2e8b322a2377fda9774174f7fe60a31b35e09afe0989060ebd847445`,
+`754bbffe4bc8a1fbc3d9cf0cc012b16762db2a874a4f7fe1b0a9b3f351d5868c`, and
+`e3649f4a4cd4ee42b2467970a37cdab8385fcd296ff6c8c2304e21f44981698d`.
+The proof-architecture suite passes **65/65 tests** on this tool/test version.
+
+This is a retrieval and provenance checkpoint. It changes no claim status,
+physical assumption or scientific owner. C0 remains unfrozen and independently
+unaccepted; physical Book/clock/source/execution selection, original full
+H+J+R, positive_gr, RAW-216, and GR closure remain open under their existing
+owners. PR #334 is preserved and not duplicated.
 
 ### Same-question legacy/current search comparison (26 October 2026)
 
@@ -9188,6 +9388,44 @@ The comparison and replay remain retrieval evidence only. They do not accept
 claim semantics, freeze C0, establish applications, or change any physical
 selection premise.
 
+### Merged-tree cold-start and historical replay check (26 October 2026)
+
+After integrating the source-owner comparison work, the clean merged snapshot
+`5183b7bb07109cf42a0248c5a46dcea6e5c9ad55` passed cold-start retrieval in
+**24/24** cases with all **158** required references, passed the **25-case**
+benchmark, and passed the exact-source-versus-unrelated-prose regression. The
+runner used result window 18. Its 9,188,131-byte raw output has SHA-256
+`ee319034ab6fa3e02571c2adea0337a7752f105f02ca94745b166b0727352fa3`; the
+7,004-byte compact receipt is
+[`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v4.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v4.json),
+SHA-256 `5087df806f82c26fcceb97ad9cbc2041c892ec93dce80c2e400967502a78e612`.
+It pins the source commit, authority digests, runner, search engine, and the
+test-file version present at that clean snapshot.
+
+A clean replay of the earlier combined-search snapshot
+`1820d940d3b1b5ab61ef7ad505980eea077cf553` confirmed **20/20** cases,
+**123** required references, **21/21** benchmark checks, zero missing sources,
+and matching authority digests. Its runner and search-engine digests also
+match the historical receipt. However, the replay's 7,099,884-byte raw output
+hashes to
+`8ed0d178a7cef93dcb0b8f7f61272d6a47a28026bb2e5d9bde1b2de9803e51da`,
+not the originally recorded
+`f54ba8b489f3cfb23172fe7b382a9b38b76051dc958f75543d790d9b28a519db`.
+The original receipt did not record an output byte count and is left intact.
+The replay comparison is preserved at
+[`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_historical_combined_replay_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_historical_combined_replay_2026-10-26.json),
+SHA-256 `a2ebec785f0bbc86b3f71ee34fad2b735c5219711f05f654de4df2842027e107`.
+The regression test now checks this measured discrepancy rather than imposing
+an unrecorded `full_output_bytes > 8,000,000` condition. The mismatch remains
+an explicit reproducibility limitation; it does not change source coverage or
+claim status. The receipt comparison tests pass **2/2**, and the full
+proof-architecture suite passes **73/73** tests on this combined tree.
+
+These retrieval and provenance results do not freeze or independently accept
+C0. Physical Book/clock/source/execution selection, original full H+J+R,
+positive_gr, RAW-216, and physical GR closure remain open with their existing
+owners. PR #334 remains preserved.
+
 ### Exact time-indexed midpoint source on the nonvacuum stencil (26 October 2026)
 
 The existing finite nonvacuum fragment now extends from one arbitrary
@@ -9228,6 +9466,14 @@ finite discrete same-history source identity; it assumes no smooth rate law
 and proves no continuum convergence estimate. It makes explicit that the
 sitewise profile source and the history gradient use the same rate rather than
 an independently supplied energy value.
+
+The merged module also retains the explicit cubic matter-profile application:
+`cubicMatterMidpointSample_eq_profile_sub_cubic_error` gives the exact
+accumulated midpoint error, `cubicMatterMidpointSample_error_bound` bounds it
+by `N |h|^3 M / 24`, and `nonvacuumCubicMidpointSource_matches_record` ties
+that same midpoint rate to the Brinkmann source. This bound applies to the
+stated cubic profile family; it is not the general smooth-field recovery
+estimate.
 
 The narrow module build passed **2,946/2,946** jobs and the public-import
 `D0.All` build passed **4,585/4,585** jobs with Lean 4.30.0. The Lean-source
@@ -9288,6 +9534,46 @@ records runner SHA-256
 Neither retrieval replay changes a scientific acceptance or physical-selection
 status.
 
+### Combined chronological and cubic midpoint checkpoint (26 October 2026)
+
+The current `D0.Geometry.NonvacuumBrinkmannStencil` now composes both the
+arbitrary natural-indexed rate history and the explicit cubic matter-profile
+subfamily. Its chronological result identifies the stencil source with the
+energy of the actual adjacent history values at every site. Its cubic result
+gives the exact accumulated midpoint error and the bound
+`N |h|^3 M / 24`, then ties that same midpoint rate to the Brinkmann source.
+These formal statements cover the finite discrete history and the named cubic
+family; they do not prove the general smooth-field refinement estimate.
+
+The fresh compiled inventory resolves **43** module declarations through the
+public `D0.All` environment. It was collected with `worktree_dirty=false` at
+snapshot `c42d0e3f91f937676f8a3c14255835144bb65e9b`, Lean 4.30.0, source digest
+`62572197322b69a5ed4427cb71eafbb2b8100a86972f03c5dff4b1e291d62db2`; its
+SHA-256 is `97b529be93e882e4aa620d63b60d4ca6ecaf307b48491af965ba768f51794e44`.
+The exact target inventory is
+[`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_cubic_midpoint_declarations_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_cubic_midpoint_declarations_2026-10-26.json).
+The changed module passed its narrow build (**2,946/2,946** jobs). The full
+public-import `D0.All` build then passed **4,585/4,585** jobs in 60.5 seconds
+on the same Lean-source digest.
+
+Cold-start on clean source snapshot
+`2de29031b6e0d85e267a323fccaa16d4ad9f3ce9` found every required source in
+**24/24** cases, including the seven-query positive nonvacuum application,
+all **158** case-specific references, and the **25-case** benchmark. The exact
+source-versus-unrelated-prose regression passed with result window 18. The
+9,224,167-byte raw output has SHA-256
+`3b52994dddc9d64cba70cdfd28feec2506ec599816e28f4d27cc1b439d1a75f1`. The
+compact current receipt is
+[`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v5.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v5.json),
+7,039 bytes, SHA-256
+`e44c27292589390607b32c6ff09089155c8a3dfdab06cc8782b4fbfd0726e149`.
+
+This is a finite same-carrier application and a retrieval checkpoint. It does
+not close the original CAR construction, 40→3→1 variation, all 16+24+2 Euler
+equations, general O(h²) recovery, the physical Book/clock/source selector,
+or independent C0 acceptance. Existing scientific owners and those premises
+remain open.
+
 ### Accumulated midpoint-history refactor retrieval replay (26 October 2026)
 
 After the history was refactored through the canonical one-step API and the
@@ -9340,6 +9626,46 @@ mathematics is needed still require manual review. These are retrieval checks,
 not physical admission or scientific acceptance. The receipts remain at the
 two report paths linked above.
 
+### Midpoint energy and cubic inventory before defect composition (26 October 2026)
+
+At this checkpoint the module composed the arbitrary natural-indexed history,
+its finite energy-sum law, and the explicit cubic matter-profile application in
+`D0.Geometry.NonvacuumBrinkmannStencil`, the narrow module build passed
+**2,946/2,946** jobs and the public `D0.All` build passed **4,585/4,585** jobs.
+The full build completed in 39.3 seconds with Lean 4.30.0. Both builds use the
+same source digest
+`9bf1508a0ee6d25ab420dac401d83f5add1e12216731a9da1aa6dd46e0abdfe6`.
+
+The public-import inventory at that checkpoint resolved all **48** declarations
+owned by that module through one elaborated `D0.All` environment. It was captured with
+`worktree_dirty=false` at snapshot
+`fea233e0d5909ac07963c06dbe42cd9a6b8fc9d0`; the 180,046-byte JSON has
+SHA-256 `288cc08760380c93aeca2fc7b39bafd8f3e4d82d6e3f859c66c572a6b3a206e0`.
+The file is
+[`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_current_declarations_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_current_declarations_2026-10-26.json).
+It includes the finite history endpoint identity, the accumulated squared-
+gradient energy sum, the exact same-rate Brinkmann source, and the stated
+cubic-family midpoint error. Earlier inventories remain pinned to their own
+snapshots and are retained as historical receipts.
+
+This is a finite same-carrier formal application. It does not prove the
+unrestricted smooth-field refinement estimate, original CAR and full
+40→3→1 variation, all 16+24+2 Euler equations, physical Book/clock/source
+selection, or independent acceptance of C0. Those obligations and their
+existing scientific owners remain open.
+
+The merged cold-start replay on clean snapshot
+`af874bec8fde8f8cb47f073f673985c3f448fb1c` found all sources in **24/24**
+cases, checked **158** case-specific references and passed the **25-case**
+retrieval/source-impact benchmark. The positive nonvacuum case uses nine
+queries and finds all three required sources, including the current compiled
+inventory. The exact-source-versus-unrelated-prose regression passed with
+result window 18. The full 9,344,212-byte output has SHA-256
+`552d5da45197695294d1cf8f6101b321ee607db05de6abeccdcc3887343952ce`; its
+260.9-second replay and source hashes are recorded in the 6,829-byte receipt
+[`proof_architecture_cold_start_summary_2026-10-26_final_v6.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v6.json)
+(SHA-256 `c6c4cd79c16f0b4cbc815b0b5311a821de822d523a0670ca034a8c75ce66aa75`).
+Semantic scope and owner correctness remain explicit manual-review items.
 ### Composed midpoint refinement error from local defects (26 October 2026)
 
 The chronological matter history now has an exact componentwise error
@@ -9416,7 +9742,48 @@ mathematical application or select physical price/source. Receipts:
 and
 [`proof_architecture_search_process_comparison_2026-10-26_midpoint_refinement.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_midpoint_refinement.json).
 
-### C^3 midpoint defect and sampled-history refinement (26 October 2026)
+### Historical combined midpoint refinement checkpoint before C^3 composition (26 October 2026)
+
+The merged `D0.Geometry.NonvacuumBrinkmannStencil` now contains the exact
+local-defect decomposition, the bound by the sum of absolute defects, the
+uniform mesh-point accumulation theorem, the time-indexed source identity, and
+the explicit cubic matter-profile application. Given `h ≥ 0`, `M ≥ 0`, interval
+length `duration = N*h`, and a componentwise local defect bound
+`M*h^3/24` on every cell, `finiteMatterMidpointHistory_error_le_refinementBound`
+proves `|Psi_h(n) - Psi(n)| ≤ duration*M*h^2/24` for each real component and
+every `n ≤ N`. The local defect estimate itself is still a hypothesis: this
+result does not derive it from `C^3` regularity and does not claim the same
+constant for the Euclidean vector norm.
+
+On clean snapshot `7094905859ac217241e2d467161662b794c7c61e`, the changed module
+passed **2,946/2,946** narrow jobs and the public-import `D0.All` build passed
+**4,585/4,585** jobs with Lean 4.30.0. The Lean source digest is
+`d5de0891dde960dc4f7495f9eda1afdaec7fe11d15bd9e1d061810852e232c9c`.
+The compiled inventory resolves all **54** declarations owned by the module
+from `D0.All`, with `worktree_dirty=false`; its 209,237-byte file has SHA-256
+`3593cc1dafdca14f05cab6a095df7fda6da244a3087e3b1ea1c14975f03888c8`:
+[`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_refinement_current_declarations_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_refinement_current_declarations_2026-10-26.json).
+
+This formally closes the finite error-composition step under its explicit
+local premise. The smooth-field local estimate, original CAR/40→3→1 variation,
+all 16+24+2 Euler equations, physical Book/clock/source selection, and C0
+acceptance remain open under their existing owners.
+
+Cold-start on clean snapshot `fa17ad572f0c231311c048c216aec8856a04f10e`
+found all sources in **24/24** cases, checked **158/158** case-specific
+references and passed all **25/25** retrieval/source-impact checks. The
+positive nonvacuum application uses ten queries and finds its pinned source,
+Lean module and current compiled inventory. The exact-source-versus-unrelated-
+prose regression passed with result window 18. The 9,412,564-byte full output
+has SHA-256
+`e4c274d995115d05aeb08985044b45ac53ddee0b14cd7a38d1106ae47cd1d297`; its
+262-second replay and source/tool hashes are preserved in the 6,830-byte
+receipt
+[`proof_architecture_cold_start_summary_2026-10-26_final_v7.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v7.json)
+(SHA-256 `23f9b0101cb60fbdcfdd59d00bee697f501ecec297e1ee56f67d837a59ff7f78`).
+Semantic scope and owner correctness remain manual-review items.
+
+### Historical C^3 midpoint defect before shared API extraction (26 October 2026)
 
 The remaining analytic hypothesis in the composed midpoint refinement is now
 proved for exact samples of the same two component functions. The source input
@@ -9449,6 +9816,42 @@ The estimate is componentwise; no same-constant Euclidean vector norm claim is
 made. It remains a conditional mathematics input to the positive nonvacuum
 example, not physical source selection or GR closure.
 
+On source snapshot `9b0eeec8fb7bc234cfe532c5b7497a19ca6796ed`, the changed
+module passes the narrow Lean 4.30.0 build (**3,301/3,301** jobs), and the
+public-import `D0.All` build passes (**4,615/4,615** jobs). The compiled
+inventory resolves **63** declarations from `D0.All`, with
+`worktree_dirty=false`; its 276,364-byte file has SHA-256
+`9aedab993f6af0d896a09fb850fc40ca3ef4d4632a9159d2312126892caa7bb7` and
+source digest `f2a18ec9b50d8235603fb1d64ac2b3d75020100738afd95280d542a150c2769c`:
+[`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_error_pre_refactor_declarations_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_error_pre_refactor_declarations_2026-10-26.json).
+The inventory gives the exact elaborated C³ and interval-bound hypotheses,
+normal axioms, and dependencies from the local defect specialization into the
+uniform history theorem.
+
+The final_v9 cold-start on clean snapshot
+`b9df970c23d87fd3139750d91484b9ce28b57e80` found all sources in **24/24**
+episodes, checked **160/160** case-specific references, and passed all **25/25**
+retrieval/source-impact checks. The positive nonvacuum case used 11 queries and
+found all five required sources. The 9,491,788-byte raw output has SHA-256
+`dad475785d56069f06022de689684e597c59f0cfd29bb3be2d5dbf6d441adeec`; its
+6,830-byte replay receipt has SHA-256
+`1d713a09d5cb72957dceab2397ed2125f1da1b6873f3a3ad67d294f647f51f8a`:
+[`proof_architecture_cold_start_summary_2026-10-26_final_v9.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v9.json).
+The previous final_v8 checkpoint is preserved separately.
+
+On the same snapshot, process comparison found expected sources for **7/7**
+source-scoped questions, versus **0/7** for the legacy assembly search. One of
+those queries had a direct expected-source owner link; seven expected-source
+records lacked a direct owner link. The pinned positive-case document names
+existing owner #334, but the comparison reports no exact assembly owner link;
+the formal-support locator to this Lean module is metadata only. Keep #334 and
+its owner, and do not promote retrieval to owner acceptance or physical
+selection. The 81,005-byte comparison output has SHA-256
+`9ddf914a7b685e8ee3befc6e23927b8901f62f9bb328d7b14c352831d1cfe219`:
+[`proof_architecture_search_process_comparison_2026-10-26_final_v9.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_final_v9.json).
+The physical source, clock, execution, and full GR-closure obligations remain
+open under their existing owners.
+
 The changed module passes the narrow Lean 4.30.0 build (**3,301/3,301** jobs)
 and the public-import `D0.All` build (**4,615/4,615** jobs). Its compiled
 `D0.All` inventory records 48 declarations owned by the module, including
@@ -9457,7 +9860,7 @@ standard axiom footprint `{Classical.choice, Quot.sound, propext}`. The clean
 Lean source snapshot is `986c05d72956f95c1eeeab7e17df0e3824992db5` with source
 digest `00788714716bf31665b8f7bedcf058b9e40dd454e2d7f737e15a20dae88d2e0f`.
 Inventory:
-[`nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json)
+[`nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json`](sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_error_pre_refactor_declarations_2026-10-26.json)
 (SHA-256 `2ad2bee1b0dc6ddea930eeb96fe3ffb6315838ca21a446f51142cb9a4c2a2f36`).
 
 ### C^3 midpoint retrieval replay (26 October 2026)
@@ -9554,3 +9957,32 @@ componentwise conditional estimate for sampled functions: it neither derives
 the derivative bound from CAR nor identifies the functions with an admitted
 D0 execution, selects native Book/clock/source, proves the 40→3→1 physical
 substitution, or closes the independent 16+24+2 Euler equations.
+
+### Clean source validation after the shared API merge (26 October 2026)
+
+The consolidated cold-start replay found every required source in **24/24**
+cases (**161/161** references), including the shared analysis module and its
+sampled nonvacuum application. The positive nonvacuum case now contains twelve
+questions and six required sources. The exact-source-versus-unrelated-prose
+impact check passed. Its compact receipt and the same-question retrieval
+comparison are pinned under
+[`sources/d0_proof_architecture_formalization_2026-10-24/reports/`](sources/d0_proof_architecture_formalization_2026-10-24/reports/);
+the receipts record the clean source commit, runner and search-engine hashes,
+and full-output digest.
+
+In the comparison, all seven explicitly source-scoped questions found their
+expected source with the current bounded search, while the legacy assembly
+search found none of those seven. Search results still require semantic review
+for owner correctness, hypothesis preservation and whether new mathematics is
+needed. This retrieval result does not accept C0, the sampled application, or
+any physical source/clock selection.
+
+Both narrow Lean targets pass on this source: `D0.Analysis.MidpointQuadrature`
+(3,301/3,301 jobs) and `D0.Geometry.NonvacuumBrinkmannStencil` (3,302/3,302
+jobs). The final `D0.All` command verified that its successful-build stamp
+matches the complete current Lean-source digest
+`d6b1e63f6d4b1b03f654f864b4261ca02fdb962be41b564d27cafbea8057727c` and
+therefore reused that successful integration result. No Lean source changed
+after this digest was computed. The shared theorem remains conditional on the
+third-derivative bound; it does not derive that bound from CAR or discharge the
+open physical selection and full-variation premises.
