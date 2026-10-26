@@ -8389,4 +8389,18 @@ ranked older documents ahead of the new countercontrol. The query is now
 `principalFrameJuliaEq26_blind_to_ABSignFlip_links vacuum-column endpoint
 blindness`; it ranks this artifact and the Lean module first and second. The
 targeted 24-query Julia case still finds all **15/15** required sources. The
-full aggregate replay on this revised query is pending.
+full replay on the revised query ran at clean commit
+`7da7a596a744195c1458c897a6d7ea543aec42ec`; it again found all **24/24**
+search cases, passed the **25-case** benchmark, found all **146** required
+source references, and passed the source-change/unrelated-prose impact
+control. The Julia case found **15/15** required sources across 24 queries.
+The 8,196,585-byte output has SHA-256
+`2a3787ee327fe38b15fc0e860f44d180b33e0ce1c47126fe519f924437f0a584`; the
+compact receipt is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_eq26_endpoint_contrast.json`,
+SHA-256 `b3b79eab9400d36b6f43428bbcb5255f2c8c65487d3d9c40b530e97b1d8f6fea`.
+After the receipt and result note were added, a targeted 24-query replay on
+the working tree still found all **15/15** Julia sources. In that later replay,
+the Eq. (26) query ranked this artifact, the receipt, and the Lean module in
+positions 1–3; the full aggregate counts above are pinned to the clean
+`7da7a596` snapshot.

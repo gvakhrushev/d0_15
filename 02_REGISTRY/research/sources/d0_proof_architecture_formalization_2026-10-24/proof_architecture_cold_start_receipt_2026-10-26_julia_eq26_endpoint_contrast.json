@@ -1,0 +1,179 @@
+{
+  "receipt": "d0-proof-architecture-cold-start/1",
+  "snapshot_commit": "7da7a596a744195c1458c897a6d7ea543aec42ec",
+  "worktree_dirty": false,
+  "runner": {
+    "path": "tools/proof_architecture_cold_start.py",
+    "commit": "7da7a596a744195c1458c897a6d7ea543aec42ec",
+    "git_blob": "de87b2f5da18813c1e6fbea9d3edbbd2d13b51a7",
+    "sha256": "20d613aaaf55327fc76075ae0e68eea567232f49f6af38281e25b40cff7ff411"
+  },
+  "search_engine": {
+    "path": "tools/proof_architecture.py",
+    "git_blob": "6ffa238c447ece17329838b102f6b72a8c650a56",
+    "sha256": "901bd8a71217c3fc4c64b7057a44a0c9de0d13e46f3836494a0cfa2a432c2518",
+    "test_path": "tools/test_proof_architecture.py",
+    "test_git_blob": "391d867e5cf3123e9bd99781aa245ee40c5ee984",
+    "test_sha256": "5818d9d4a803b9e9bdeb0ff938b1fbeb0f8bd94cec8eedf93fb7eb9902de1749"
+  },
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "b538abd4bfbb919f948cbf619dbf2e24859223532e0443ece644c512d050568a",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "search_limit": 18,
+  "search_cases_found_all_sources": 24,
+  "search_cases_total": 24,
+  "benchmark_cases_total": 25,
+  "required_source_ref_count": 146,
+  "case_id": "julia-query-principal-frame-coframe-recovery",
+  "case_found_all_required_sources": true,
+  "case_query_count": 24,
+  "case_required_source_count": 15,
+  "query_discoveries": [
+    {
+      "query": "archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective Eq 27 nonzero Lorentz norm q Gamma_x(u) recover U exact CAR raising query all 16 grades",
+      "top_candidates": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "direct_content": true,
+          "matched_terms": 13
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "direct_content": true,
+          "matched_terms": 12
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
+          "direct_content": true,
+          "matched_terms": 12
+        }
+      ]
+    },
+    {
+      "query": "principalFrameJuliaEq26_blind_to_ABSignFlip_links vacuum-column endpoint blindness",
+      "top_candidates": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "direct_content": true,
+          "matched_terms": 4
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+          "direct_content": true,
+          "matched_terms": 4
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DAffineShiftExteriorBlindness.lean",
+          "direct_content": true,
+          "matched_terms": 2
+        }
+      ]
+    },
+    {
+      "query": "archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective julia_nonnull_endpoint_map_injectivity_declaration_2026-10-26",
+      "top_candidates": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "direct_content": true,
+          "matched_terms": 2
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+          "direct_content": true,
+          "matched_terms": 1
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_nonnull_endpoint_map_injectivity_declaration_2026-10-26.json",
+          "direct_content": true,
+          "matched_terms": 1
+        }
+      ]
+    },
+    {
+      "query": "principalFrameJuliaEq26_blind_to_ABSignFlip_links julia_eq26_link_blindness_declaration_2026-10-26",
+      "top_candidates": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "direct_content": true,
+          "matched_terms": 2
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+          "direct_content": true,
+          "matched_terms": 1
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_eq26_link_blindness_declaration_2026-10-26.json",
+          "direct_content": true,
+          "matched_terms": 1
+        }
+      ]
+    },
+    {
+      "query": "principalFrameJuliaNonNullQuery_separates_ABSignFlip_links julia_nonnull_query_link_separation_declaration_2026-10-26",
+      "top_candidates": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "direct_content": true,
+          "matched_terms": 2
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+          "direct_content": true,
+          "matched_terms": 1
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_nonnull_query_link_separation_declaration_2026-10-26.json",
+          "direct_content": true,
+          "matched_terms": 1
+        }
+      ]
+    }
+  ],
+  "compiled_inventories": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_nonnull_endpoint_map_injectivity_declaration_2026-10-26.json",
+      "sha256": "c4a6cbb7de182940191678c3288fd62ed8d5f435ca65b15b2842766fbb6f155e",
+      "snapshot_commit": "f04dba0ce54b9dd98929bc77ece06d71b117149f",
+      "public_import_root": "D0.All",
+      "worktree_dirty": true,
+      "lean_source_digest": "0ed7f3982d6a4ae4a1000c0c32a4f4258e6a225605239c58c0e1df2bbbd6afde"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_eq26_link_blindness_declaration_2026-10-26.json",
+      "sha256": "f57c4335fe29514a0d9834facb8604f7ed0a16058f9333a2df64c339283312e0",
+      "snapshot_commit": "f04dba0ce54b9dd98929bc77ece06d71b117149f",
+      "public_import_root": "D0.All",
+      "worktree_dirty": true,
+      "lean_source_digest": "0ed7f3982d6a4ae4a1000c0c32a4f4258e6a225605239c58c0e1df2bbbd6afde"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_nonnull_query_link_separation_declaration_2026-10-26.json",
+      "sha256": "ee94ec23876c5eb824f59d9ad5a27c7345000e765a762289458780e9e059c8fb",
+      "snapshot_commit": "f04dba0ce54b9dd98929bc77ece06d71b117149f",
+      "public_import_root": "D0.All",
+      "worktree_dirty": true,
+      "lean_source_digest": "0ed7f3982d6a4ae4a1000c0c32a4f4258e6a225605239c58c0e1df2bbbd6afde"
+    }
+  ],
+  "full_output": {
+    "sha256": "2a3787ee327fe38b15fc0e860f44d180b33e0ce1c47126fe519f924437f0a584",
+    "bytes": 8196585,
+    "stored": false
+  },
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true,
+  "scope_review": "The general compiled map keeps full-query equality and the inverse-coframe right-inverse explicit; its canonical query-family specialization removes the external query-equality premise. The Eq. (28) composition recovers M_r on its full open chart when the observed projected metric covector is nonzero and the positive square-root branch holds; its null specialization derives those conditions from nondegeneracy, normalization, and one nonzero null shift. `archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz` applies Eq. (27) to the source's row-action `IsRoleLorentz Λ` convention with `det Λ = 1`: the transposed endpoint map preserves the same source form and has determinant one. `principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz` composes this same role-indexed endpoint with Eq. (28), and the CAR decoder, query decoder, and full exterior lift return that one map on the non-null chart under the explicit source norm, normalized covector, projected-covector, and positive-branch assumptions. `principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage` joins the algebraic charts for every nonzero shift under the explicit endpoint isometry and normalized covector: the non-null branch retains `det M = 1`, while the null branch derives Eq. (28)'s projected-covector and positive-branch conditions. A physical application must still bind the admitted endpoint to the row-action matrix and prove its properness; smoothness of the full inverse or all-jet pullback, physical query admission, price/source selection, and GR closure remain open. The compiled `principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt` theorem proves the readout derivative in all 16 inverse-coframe coordinates with the Lorentz link fixed; its `principalFrameJuliaQueryFamily_recoveredInverseCoframe` application then composes the exact right-link transport to identity, including the identity derivative. Neither result supplies the remaining 24 link jets or the joint all-jet identity. `principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz` now pairs that transported Eq. (30a) coframe identity with the Eq. (28) endpoint decoder on the same concrete query family; the established Eq. (27) and exterior-lift outputs remain in the companion joint endpoint theorem. `principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz` composes that coframe identity with the existing non-null Eq. (27)/null Eq. (28) chart disjunction for every role, retaining the normalized covector and nonzero-shift premises. Both compositions keep the coframe link fixed and do not fill the 24 link directions. The endpoint-map injectivity theorem reuses the owned Eq. (27) decoder: on a common non-null source, equality of complete CAR raising queries for two Lorentz-form-preserving determinant-one endpoint maps forces the maps equal. An explicit diagonal A/B sign flip has determinant one, preserves the source Lorentz form, and is distinct from identity. The assembled Eq. (26) vacuum-column matrix is nevertheless identical for those two link families; the complete non-null CAR query separates them. This is a finite exact countercontrol for using vacuum columns as a full link inverse, and a scoped application of the existing Eq. (27) decoder. It does not prove the 24 link derivatives, full `D R D Φ = I`, physical admission, complete price/source selection, GR closure, or independent C0 acceptance."
+}
