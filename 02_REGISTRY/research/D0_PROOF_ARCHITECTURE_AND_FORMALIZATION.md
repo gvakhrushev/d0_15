@@ -8677,3 +8677,45 @@ SHA-256
 This validates retrieval and provenance for that clean snapshot; semantic
 scope review remains manual, and the physical and composition limits above
 remain open.
+
+### Canonical six-coordinate Lorentz tangent reused by the Julia differential (26 October 2026)
+
+The product-domain caveat from the preceding Fréchet result is now closed at
+the level of tangent dimension. `A4DJuliaLinkPathDifferential` no longer
+constructs a second copy of the Lorentz tangent submodule: its existing
+`roleLorentzTangentSubmodule` name is a compatibility alias for the canonical
+`RoleLorentzTangent` in `A4DSolderMetricCompletion`. That owner supplies the
+actual coordinate equivalence
+`rolePairsEquivLorentzTangent : (RolePair → ℝ) ≃ₗ[ℝ] RoleLorentzTangent`
+and the compiled theorem `roleLorentzTangent_finrank : finrank = 6`.
+
+The Julia consumer now proves
+`roleLorentzTangentParameters_finrank : Module.finrank ℝ
+RoleLorentzTangentParameters = 24`, by taking the finite product of the four
+canonical six-dimensional role spaces. Thus the prior Fréchet differential's
+domain is exactly a 24-dimensional real tangent parameter space, and its
+rolewise derivative formula remains unchanged. This is a type-preserving
+refactor and application of the shared coordinate API; it does not supply a
+six-coordinate chart for the full Lorentz group, make the exponential map
+surjective onto every determinant-one link, prove the source's full
+variational pullback (31), or select physical endpoint admission or
+price/source. Physical GR and independent C0 acceptance remain open.
+
+The Lean change is commit `7f281bfaebc727e1a4f2ad36aca1d7f0b306f53f` on the
+existing formalization PR branch. The source file SHA-256 is
+`9d25dbcc5ef2a581127088b0c5fbef5350ebb7b6bc698a6162dc4eb4c97c146c`.
+The narrow module build passed **3,216/3,216** jobs, and the public-import
+`D0.All` build passed **4,585/4,585** jobs with Lean 4.30.0. Both parameter
+dimension and differential application were resolved from the compiled
+environment rooted at `D0.All`; the current Lean-source digest is
+`d81a7ad4f011da75b64419ff8b688ee22e8e46d05904c6b7ba54870304a83133`.
+
+The focused compiled declaration inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_dimension_reuse_declarations_2026-10-26.json`,
+SHA-256 `26d30d6640e32a663a4c7f31225373a9bee0dc2a4b8502a3bedda0d01347fb4b`.
+Its clean source snapshot is `7f281bfaebc727e1a4f2ad36aca1d7f0b306f53f`
+(`worktree_dirty=false`); collector SHA-256 is
+`6b5c82b94a4ddf546f83b860e6308985107bef41511333657138b15cad5569b2`.
+The dimension theorem inherits the existing `rolePair_card` `native_decide`
+footprint and the standard classical axioms; the Julia derivative retains its
+existing archive-creator `native_decide` dependency. No new axiom is added.

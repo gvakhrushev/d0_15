@@ -1805,6 +1805,26 @@ class ProofArchitectureTests(unittest.TestCase):
             for query in case["queries"]
         ))
 
+    def test_julia_tangent_cold_start_reuses_exact_24_dimensional_api(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "labelled-native-raising-inverse"
+        )
+        self.assertTrue(any(
+            "roleLorentzTangentParameters_finrank" in query
+            for query in case["queries"]
+        ))
+        self.assertIn("real dimension 24", case["scope_review"])
+        self.assertIn(
+            "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "julia_lorentz_tangent_dimension_reuse_declarations_2026-10-26.json",
+            case["required_refs"],
+        )
+
     def test_transfer_cold_start_pins_actual_controls_and_conditional_bridge(self) -> None:
         case = next(
             item for item in cold_start.CASES
