@@ -10117,7 +10117,7 @@ not an independently accepted or frozen C0 denominator.
 | Eq. (20): half-step metric/site sampling | `D0.Geometry.nonvacuumCoframeReadoutTime`, `sampledNonvacuumBrinkmannProfile_eq_fixedReadout`, and `sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter`. | Exact scalar profile/site binding, including all four harmonic coefficients at the same readout. Scoped independent review passed this equality; this does not instantiate the 16 coframe slots. |
 | Eqs. (21)–(22): midpoint increments and exact field gradient | `D0.Geometry.sampledMatterMidpointRate_eq_nextCoframeReadout`, together with the finite history and exact-value definitions used by `sampledMatterMidpointProfile_source_eq_derivativeNorm`. | Exact midpoint/update algebra in the Lean finite-history abstraction; these identities do not require smoothness. They are not yet a construction from the original CAR generator or normalized preparation record. |
 | Eq. (23): native transverse source | `D0.Geometry.sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter`. | Exact five-point scalar source identity at the matched coframe readout. It allows arbitrary `coupling` and assumes only `h ≠ 0`; it does not bind `coupling = λ` or establish `h = 1/L` or `h > 0`. No CAR amplitude/slack premise, full independent variation, or 40+2 Euler composition is discharged. |
-| Eq. (24): O(h²) midpoint refinement and preserved CAR slack | `D0.Geometry.sampledMatterMidpointHistory_error_le_refinementBound` gives a componentwise midpoint-history bound; `sampledMatterMidpointCARComplement_positive_of_componentwiseSlack` proves a separate positive-amplitude sufficient condition. | Partial: Eq. (24)'s vector-norm constant and `δ/2` threshold remain unformalized. The Lean sufficient condition instead assumes componentwise field/third-derivative bounds and `2 * (A + duration * M * h^2 / 24)^2 < 1-p`; it is not yet bound to the original CAR preparation. |
+| Eq. (24): O(h²) midpoint refinement and preserved CAR slack | `D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound` proves the dimension-free vector-norm bound; `D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin` proves the `δ/2` implication on the existing two-component history through its Euclidean lift. The older `sampledMatterMidpointCARComplement_positive_of_componentwiseSlack` remains a separate conservative criterion. | Formalized conditionally under global C³ regularity, a uniform vector third-derivative bound and a continuum Euclidean-norm envelope. The vector history is proved equal to the existing componentwise CAR recurrence. The bounds and source are still not derived from the original CAR generator/preparation; no physical source selection, C0 acceptance, or GR closure follows. |
 | Full free-site 16+24+2 Euler conclusion after the cited 40→3→1 reduction | The source cites the scientific owner's existing reduction; the current application inventory does not include a complete Lean adapter from its full varied rows to these sampled fields. | Reuse/transport remains open. No physical GR claim or owner/status change. |
 
 The read-only independent scope review returned **scoped PASS** for this
@@ -10233,3 +10233,47 @@ source digest matches the inventory digest above.
 The componentwise complement application and declaration inventory are published on PR #402 head `dedb801302b58b9fbc997d5a01b03cdf927df36e`. GitHub [D0 guards run 5347](https://github.com/gvakhrushev/d0_15/actions/runs/40352561301) completed successfully. [D0 Lean build run 3309](https://github.com/gvakhrushev/d0_15/actions/runs/40352561765) also completed successfully, while Draft policy skipped both release-proof closure and native checkpoint capsule compilation; it is not a new Lean compilation result.
 
 The exact Lean source tree was separately checked by the serialized local helper: narrow `D0.Geometry.NonvacuumBrinkmannStencil` passed (3,302/3,302 jobs), and final public `D0.All` passed (4,616/4,616 jobs) at source digest `8fc9850dab7349482319c185dbc6946231661a9089f5790ff1ad4a816bb0b6f4`, matching the published declaration inventory. The documented source scope, componentwise threshold, axiom footprint, and open Eq. (24)/CAR preparation boundary are unchanged. PR #402 remains Draft and IN_PROGRESS; this checkpoint does not freeze or accept C0 and does not alter scientific owners or physical premises.
+
+
+### Vector-norm midpoint refinement on the existing CAR history (26 October 2026)
+
+The exact source remains #334 commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`, file blob
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`, §§7.1–7.2, Eq. (24). The
+previous Lean result established only a coordinatewise estimate and a separate
+componentwise slack condition. This follow-up formalizes the vector-norm
+refinement and its half-margin implication without replacing or renaming the
+existing two-component recurrence.
+
+In `D0.Analysis.MidpointQuadrature`,
+`midpointQuadrature_error_norm_le_of_thirdDerivative_bound` proves the local
+vector defect bound `M * h^3 / 24` in any complete real normed space, using the
+vector-valued integral Taylor remainder. The sampled-history theorem
+`sampledVectorMidpointHistory_error_le_refinementBound` composes those defects
+to `duration * M * h^2 / 24` at every mesh point, with no coordinate-count
+factor. Its assumptions are global C³ regularity and a uniform norm bound on
+the third derivative over the sampled interval.
+
+In `D0.Geometry.NonvacuumBrinkmannStencil`, the Euclidean lift of `Fin 2 → ℝ`
+preserves the existing squared matter norm. Lean proves that coordinate
+projection commutes with derivatives, that vector samples and midpoint rates
+are the lifts of the existing component samples and rates, and by induction
+that the complete Euclidean recurrence equals `finiteMatterMidpointHistory`
+pointwise after lifting. Therefore
+`sampledMatterMidpointCARComplement_positive_of_vectorMargin` gives a
+vector-norm CAR-complement result on that same finite record. If `A` bounds
+the continuum Euclidean norm, `δ = sqrt (1-p) - A > 0`, and
+`duration * M * h^2 / 24 < δ/2`, the complementary amplitude is strictly
+positive at every index `n ≤ N`.
+
+This is a conditional mathematical application of Eq. (24)'s estimate and
+half-margin criterion. The global C³ condition, vector derivative bound and
+continuum norm envelope are still supplied hypotheses; this Lean slice does
+not construct them from the actual CAR preparation or generator. It does not
+prove physical source selection, the original 40 varied Cartan equations, all
+16+24+2 Euler rows, C0 acceptance, or GR closure. The earlier componentwise
+criterion remains available as a separate sufficient condition.
+
+The exact narrow build and `D0.All` integration, declaration inventory,
+source digests, and proof-architecture cold-start receipt are recorded in the
+following checkpoint entry after the final source tree is fixed.

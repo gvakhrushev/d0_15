@@ -1,5 +1,6 @@
 import Mathlib.Data.Real.Basic
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+import Mathlib.Analysis.InnerProductSpace.PiL2
 import D0.Analysis.MidpointQuadrature
 import Mathlib.Tactic
 
@@ -19,10 +20,11 @@ nonvacuum recovery case, source-pinned at main commit
 `02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`,
 §§7.1–7.2. The corresponding unmerged scientific-owner source is pinned at
 PR #334 commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, same path, blob
-`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`. That version gives the vector-norm
-CAR-slack threshold in Eq. (24). This module also proves a conservative
-componentwise sufficient condition for positivity of the two-component
-complement amplitude; it does not prove Eq. (24)'s vector estimate or threshold.
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`. This module now proves the
+dimension-free vector midpoint estimate and Eq. (24)'s half-margin implication
+for the same finite two-component history, identified through an isometric
+Euclidean lift. It also retains the earlier, separate componentwise sufficient
+condition.
 
 It proves that the centered five-point transverse stencil annihilates the
 displayed harmonic quadratic/cubic family, sends the radial quadratic to
@@ -31,12 +33,16 @@ It also proves that the actual finite two-component midpoint update has
 forward gradient exactly equal to its midpoint rate, so its norm is the
 energy used by that readout. For a sampled exact history, it derives the
 per-cell midpoint defect from a bound on the third derivative and composes
-that estimate into a uniform second-order error bound at every mesh point.
+that estimate into a uniform second-order error bound at every mesh point,
+both for scalar components and in the vector norm. The vector CAR implication
+still assumes global C³ regularity, a vector third-derivative bound, and a
+continuum norm envelope; it does not derive those data from the CAR generator
+or preparation.
 
 This is an exact finite algebraic and calculus application. It does not
 formalize the original CAR construction, the 40 varied Cartan equations, or
 all 16+24+2 Euler rows. Its C^3 estimate and complementary-amplitude criterion
-are conditional on supplied component bounds; it does not select a physical
+are conditional on supplied analytic bounds; it does not select a physical
 Book, clock, source, or execution.
 -/
 
@@ -97,6 +103,21 @@ def finiteMatterForwardGradient
 /-- The squared Euclidean norm of the original two real matter components. -/
 def twoComponentMatterNormSq (v : Fin 2 → ℝ) : ℝ :=
   ∑ i : Fin 2, v i ^ 2
+
+/-- The same two real components represented in the Euclidean `L²` norm. -/
+def twoComponentMatterEuclidean (v : Fin 2 → ℝ) : EuclideanSpace ℝ (Fin 2) :=
+  (EuclideanSpace.equiv (Fin 2) ℝ).symm v
+
+@[simp]
+theorem twoComponentMatterEuclidean_apply (v : Fin 2 → ℝ) (i : Fin 2) :
+    twoComponentMatterEuclidean v i = v i := by
+  simp [twoComponentMatterEuclidean]
+
+/-- The Euclidean lift preserves the squared norm used by the finite stencil. -/
+theorem twoComponentMatterEuclidean_norm_sq (v : Fin 2 → ℝ) :
+    ‖twoComponentMatterEuclidean v‖ ^ 2 = twoComponentMatterNormSq v := by
+  rw [EuclideanSpace.real_norm_sq_eq]
+  simp [twoComponentMatterEuclidean, twoComponentMatterNormSq]
 
 /-- The forward gradient of the actual midpoint update is its midpoint rate. -/
 theorem finiteMatterForwardGradient_midpointStep
@@ -462,6 +483,197 @@ theorem sampledMatterMidpointCARComplement_positive_of_componentwiseSlack
     unfold twoComponentCARComplementRadicand
     linarith
   exact Real.sqrt_pos.2 hRadicand
+
+/-- The CAR complement amplitude defined by the norm of a real vector state. -/
+def vectorCARComplementAmplitude {F : Type*} [NormedAddCommGroup F]
+    (p : ℝ) (v : F) : ℝ := Real.sqrt (1 - p - ‖v‖ ^ 2)
+
+/-
+The vector-norm counterpart of the componentwise CAR result. It uses the
+same complete finite-history recurrence and the dimension-free vector
+midpoint estimate from `D0.Analysis`; no coordinate-count factor is added.
+-/
+theorem sampledVectorMidpointCARComplement_positive_of_vectorSlack
+    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
+    (ψ : ℝ → F) (x₀ h M duration A p : ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
+    (h_duration : (N : ℝ) * h = duration)
+    (hC3 : ContDiff ℝ 3 ψ)
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 ψ t‖ ≤ M)
+    (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
+    (hSlack : (A + duration * M * h ^ 2 / 24) ^ 2 < 1 - p) :
+    ∀ n ≤ N,
+      0 < vectorCARComplementAmplitude p
+        (D0.Analysis.finiteVectorMidpointHistory h
+          (D0.Analysis.sampledVectorMidpointRate ψ x₀ h)
+          (D0.Analysis.sampledVectorExactValues ψ x₀ h 0) n) := by
+  have hDuration_nonneg : 0 ≤ duration := by
+    rw [← h_duration]
+    positivity
+  have hErrorBound_nonneg : 0 ≤ duration * M * h ^ 2 / 24 := by positivity
+  have hHistoryError := D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound
+    ψ x₀ h M duration N h_nonneg M_nonneg h_duration hC3 hThird
+  intro n hn
+  let state := D0.Analysis.finiteVectorMidpointHistory h
+    (D0.Analysis.sampledVectorMidpointRate ψ x₀ h)
+    (D0.Analysis.sampledVectorExactValues ψ x₀ h 0) n
+  let exact := D0.Analysis.sampledVectorExactValues ψ x₀ h n
+  have hnGrid : x₀ + (n : ℝ) * h ∈ Set.Icc x₀ (x₀ + duration) := by
+    constructor
+    · exact le_add_of_nonneg_right (mul_nonneg (Nat.cast_nonneg n) h_nonneg)
+    · rw [← h_duration]
+      have hn' : (n : ℝ) ≤ (N : ℝ) := Nat.cast_le.mpr hn
+      nlinarith [mul_le_mul_of_nonneg_right hn' h_nonneg]
+  have hExactNorm : ‖exact‖ ≤ A := by
+    exact hEnvelope (x₀ + (n : ℝ) * h) hnGrid
+  have hStateNorm : ‖state‖ ≤ A + duration * M * h ^ 2 / 24 := by
+    have hErr := hHistoryError n hn
+    calc
+      ‖state‖ = ‖(state - exact) + exact‖ := by congr 1; abel
+      _ ≤ ‖state - exact‖ + ‖exact‖ := norm_add_le _ _
+      _ ≤ duration * M * h ^ 2 / 24 + A := add_le_add hErr hExactNorm
+      _ = A + duration * M * h ^ 2 / 24 := by ring
+  have hStateSq : ‖state‖ ^ 2 ≤ (A + duration * M * h ^ 2 / 24) ^ 2 :=
+    (sq_le_sq₀ (norm_nonneg state) (by positivity)).2 hStateNorm
+  have hRadicand : 0 < 1 - p - ‖state‖ ^ 2 := by
+    linarith
+  exact Real.sqrt_pos.2 hRadicand
+
+/-- Coordinate projection commutes with the derivative of a Euclidean-valued curve. -/
+private theorem euclideanMatter_deriv_apply
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (hC3 : ContDiff ℝ 3 ψ)
+    (t : ℝ) (i : Fin 2) :
+    deriv ψ t i = deriv (fun s : ℝ => ψ s i) t := by
+  let π : EuclideanSpace ℝ (Fin 2) →L[ℝ] ℝ := EuclideanSpace.proj i
+  have hchain := fderiv_comp_deriv
+    (l := π) (f := ψ) (x := t)
+    (by fun_prop)
+    (hC3.contDiffAt.differentiableAt (by norm_num))
+  have hprojDerivative :
+      fderiv ℝ π (ψ t) = π :=
+    ContinuousLinearMap.fderiv (𝕜 := ℝ) (f := π) (x := ψ t)
+  rw [hprojDerivative] at hchain
+  simpa [π] using hchain.symm
+
+/-- Sampling the same Euclidean-valued source gives the existing component rates. -/
+private theorem euclideanMatter_sampledRate_eq
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (hC3 : ContDiff ℝ 3 ψ)
+    (x₀ h : ℝ) (n : ℕ) :
+    D0.Analysis.sampledVectorMidpointRate ψ x₀ h n =
+      twoComponentMatterEuclidean (sampledMatterMidpointRate
+        (fun t i => ψ t i) x₀ h n) := by
+  ext i
+  simp only [D0.Analysis.sampledVectorMidpointRate,
+    twoComponentMatterEuclidean_apply, sampledMatterMidpointRate]
+  exact euclideanMatter_deriv_apply ψ hC3 _ i
+
+/-- Exact samples in Euclidean space are the lift of the original two components. -/
+private theorem euclideanMatter_sampledExact_eq
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ h : ℝ) (n : ℕ) :
+    D0.Analysis.sampledVectorExactValues ψ x₀ h n =
+      twoComponentMatterEuclidean (sampledMatterExactValues
+        (fun t i => ψ t i) x₀ h n) := by
+  ext i
+  simp [D0.Analysis.sampledVectorExactValues, sampledMatterExactValues,
+    twoComponentMatterEuclidean]
+
+/-- The Euclidean and original two-component recurrences are the same history. -/
+private theorem euclideanMatter_history_eq
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (hC3 : ContDiff ℝ 3 ψ)
+    (x₀ h : ℝ) (n : ℕ) :
+    D0.Analysis.finiteVectorMidpointHistory h
+      (D0.Analysis.sampledVectorMidpointRate ψ x₀ h)
+      (D0.Analysis.sampledVectorExactValues ψ x₀ h 0) n =
+    twoComponentMatterEuclidean
+      (finiteMatterMidpointHistory h
+        (sampledMatterMidpointRate (fun t i => ψ t i) x₀ h)
+        (sampledMatterExactValues (fun t i => ψ t i) x₀ h 0) n) := by
+  induction n with
+  | zero =>
+      simp only [D0.Analysis.finiteVectorMidpointHistory,
+        finiteMatterMidpointHistory]
+      exact euclideanMatter_sampledExact_eq ψ x₀ h 0
+  | succ n ih =>
+      simp only [D0.Analysis.finiteVectorMidpointHistory,
+        finiteMatterMidpointHistory]
+      rw [ih]
+      rw [euclideanMatter_sampledRate_eq ψ hC3 x₀ h n]
+      ext i
+      simp [twoComponentMatterEuclidean, finiteMatterMidpointStep]
+
+/--
+The vector-norm slack theorem applies to the very same two-component
+chronological CAR record already used by the Brinkmann stencil. The Euclidean
+lift preserves exact samples, midpoint rates, recurrence states, and the
+complement radicand. Its vector derivative and envelope bounds remain supplied
+hypotheses; this does not derive them from a CAR preparation or select them
+physically.
+-/
+theorem sampledMatterMidpointCARComplement_positive_of_vectorSlack
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ h M duration A p : ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
+    (h_duration : (N : ℝ) * h = duration)
+    (hC3 : ContDiff ℝ 3 ψ)
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 ψ t‖ ≤ M)
+    (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
+    (hSlack : (A + duration * M * h ^ 2 / 24) ^ 2 < 1 - p) :
+    ∀ n ≤ N,
+      0 < twoComponentCARComplementAmplitude p
+        (finiteMatterMidpointHistory h
+          (sampledMatterMidpointRate (fun t i => ψ t i) x₀ h)
+          (sampledMatterExactValues (fun t i => ψ t i) x₀ h 0) n) := by
+  have hVector := sampledVectorMidpointCARComplement_positive_of_vectorSlack
+    ψ x₀ h M duration A p N h_nonneg M_nonneg A_nonneg h_duration
+    hC3 hThird hEnvelope hSlack
+  intro n hn
+  have hLiftPositive := hVector n hn
+  rw [euclideanMatter_history_eq ψ hC3 x₀ h n] at hLiftPositive
+  simpa [vectorCARComplementAmplitude, twoComponentCARComplementAmplitude,
+    twoComponentCARComplementRadicand, twoComponentMatterEuclidean_norm_sq] using
+      hLiftPositive
+
+/--
+The source's half-margin criterion implies the direct vector slack condition
+for the same two-component midpoint history. Here `A` bounds the continuum
+Euclidean norm and `δ = sqrt (1-p) - A`; the source preparation and these
+analytic bounds are still premises rather than derived CAR data.
+-/
+theorem sampledMatterMidpointCARComplement_positive_of_vectorMargin
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ h M duration A p : ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
+    (h_duration : (N : ℝ) * h = duration)
+    (hC3 : ContDiff ℝ 3 ψ)
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 ψ t‖ ≤ M)
+    (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
+    (hMargin : 0 < Real.sqrt (1 - p) - A)
+    (hRefinement : duration * M * h ^ 2 / 24 <
+      (Real.sqrt (1 - p) - A) / 2) :
+    ∀ n ≤ N,
+      0 < twoComponentCARComplementAmplitude p
+        (finiteMatterMidpointHistory h
+          (sampledMatterMidpointRate (fun t i => ψ t i) x₀ h)
+          (sampledMatterExactValues (fun t i => ψ t i) x₀ h 0) n) := by
+  have hDuration_nonneg : 0 ≤ duration := by
+    rw [← h_duration]
+    positivity
+  have hError_nonneg : 0 ≤ duration * M * h ^ 2 / 24 := by positivity
+  have hRoot_pos : 0 < Real.sqrt (1 - p) := by linarith
+  have hRadicand_pos : 0 < 1 - p := Real.sqrt_pos.mp hRoot_pos
+  have hSum_lt : A + duration * M * h ^ 2 / 24 < Real.sqrt (1 - p) := by
+    linarith
+  have hSquare_lt :
+      (A + duration * M * h ^ 2 / 24) ^ 2 < 1 - p := by
+    have hsquares :=
+      (sq_lt_sq₀ (by positivity : 0 ≤ A + duration * M * h ^ 2 / 24)
+        (Real.sqrt_nonneg (1 - p))).2 hSum_lt
+    rw [Real.sq_sqrt (le_of_lt hRadicand_pos)] at hsquares
+    exact hsquares
+  exact sampledMatterMidpointCARComplement_positive_of_vectorSlack
+    ψ x₀ h M duration A p N h_nonneg M_nonneg A_nonneg h_duration
+    hC3 hThird hEnvelope hSquare_lt
 
 /-- The time-indexed Brinkmann profile uses the rate of that same history step. -/
 def finiteTimeNonvacuumBrinkmannProfile

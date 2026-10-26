@@ -90,6 +90,9 @@ CASES: list[dict[str, Any]] = [
             "native finite matter midpoint exact energy five point source same interval",
             "nonvacuumCubicMidpointSource_matches_record cubicMatterMidpointSample_eq_profile_sub_cubic_error cubicMatterMidpointSample_error_bound",
             "cubic nonvacuum midpoint cumulative matter record componentwise O(h^2) bound",
+            "D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound vector norm Euclidean error duration M h^2 over 24",
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin Eq.24 delta over 2 same two-component CAR recurrence Euclidean lift",
+            "Eq.24 max u_j in I Psi_j^(h) - Psi(u_j) |I| sup_I Psi''' h^2 / 24 compound midpoint quadrature integral of Psi'",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -98,6 +101,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_refinement_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_error_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_refactor_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_vector_norm_car_margin_2026-10-26.json",
         ],
         "required_sources": [
             {
@@ -107,6 +111,14 @@ CASES: list[dict[str, Any]] = [
                 "sections": ["7.1", "7.2"],
                 "scope_query_indexes": [0, 4, 9],
                 "scope_query_sections": {"0": ["7.1"], "4": ["7.2"], "9": ["7.2"]},
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+                "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+                "blob": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
+                "sections": ["7.2"],
+                "scope_query_indexes": [14],
+                "scope_query_sections": {"14": ["7.2"]},
             },
         ],
         "scope_review": (
@@ -119,7 +131,12 @@ CASES: list[dict[str, Any]] = [
             "composition proves a uniform componentwise O(h^2) bound. The shared D0.Analysis Taylor "
             "theorem derives its O(h^3) defect from C^3 regularity and an explicit uniform bound "
             "on the sampled interval; the geometry specialization composes it with the sampled-"
-            "history result. It does not assert the same constant for the Euclidean vector norm. "
+            "history result. The vector-valued Taylor/remainder composition now proves the same "
+            "dimension-free constant in Euclidean norm. Its half-margin CAR application is "
+            "transported through an isometric Euclidean lift and proved equal to the existing "
+            "two-component finite recurrence. Global C^3 regularity, vector third-derivative and "
+            "envelope bounds remain supplied hypotheses; the actual CAR preparation and generator "
+            "are not reconstructed. "
             "The original CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, "
             "and physical native Book/clock/source selection remain separate and open."
         ),
@@ -1010,11 +1027,14 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
         query_pairs = list(zip(case["queries"], query_hits))
         required_status = {}
         for required in case.get("required_sources", []):
-            required_status[required["path"]] = _required_source_status(
-                query_pairs, required
-            )
+            key = required["path"]
+            if key in required_status:
+                pin = required.get("commit") or required.get("blob") or str(len(required_status))
+                key = f"{key}@{pin}"
+            required_status[key] = _required_source_status(query_pairs, required)
         for required_path in case["required_refs"]:
-            if required_path in required_status:
+            if any(item["path"] == required_path
+                   for item in case.get("required_sources", [])):
                 continue
             required_status[required_path] = _required_source_status(
                 query_pairs, {"path": required_path}

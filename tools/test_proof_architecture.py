@@ -1499,6 +1499,14 @@ class ProofArchitectureTests(unittest.TestCase):
                             for query in case["queries"]))
         self.assertTrue(any("sampledMatterMidpointHistory_error_le_refinementBound" in query
                             for query in case["queries"]))
+        self.assertTrue(any(
+            "sampledVectorMidpointHistory_error_le_refinementBound" in query
+            for query in case["queries"]
+        ))
+        self.assertTrue(any(
+            "sampledMatterMidpointCARComplement_positive_of_vectorMargin" in query
+            for query in case["queries"]
+        ))
         self.assertIn(module, case["required_refs"])
         self.assertIn("03_FORMALIZATION/D0/Analysis/MidpointQuadrature.lean",
                       case["required_refs"])
@@ -1521,6 +1529,8 @@ class ProofArchitectureTests(unittest.TestCase):
             "shared D0.Analysis Taylor theorem derives its O(h^3) defect from C^3 regularity",
             case["scope_review"],
         )
+        self.assertIn("dimension-free constant in Euclidean norm", case["scope_review"])
+        self.assertIn("transported through an isometric Euclidean lift", case["scope_review"])
         self.assertIn("physical native Book/clock/source selection remain separate and open",
                       case["scope_review"])
 
@@ -1535,9 +1545,12 @@ class ProofArchitectureTests(unittest.TestCase):
                        if hit.get("source") == module and hit.get("direct_content")]
         self.assertTrue(module_hits, "cold-start result must surface the Lean module itself")
 
-        source = case["required_sources"][0]
-        source_status = cold_start._required_source_status(query_pairs, source)
-        self.assertTrue(source_status["found"], f"cold-start missed pinned §§7.1–7.2: {source_status}")
+        for source in case["required_sources"]:
+            source_status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                source_status["found"],
+                f"cold-start missed pinned §§7.1–7.2: {source_status}",
+            )
 
         inventory_path = (
             proof.ROOT
@@ -1916,6 +1929,60 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn("Finset.range", accumulated_energy["elaborated_type"])
 
+    def test_nonvacuum_vector_norm_c3_and_car_margin_inventory_is_compiled(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_vector_norm_car_margin_2026-10-26.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        self.assertFalse(inventory["worktree_dirty"])
+        self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertRegex(inventory["lean_source_digest"], r"^[0-9a-f]{64}$")
+        self.assertRegex(inventory["collector_sha256"], r"^[0-9a-f]{64}$")
+
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+        required = {
+            "D0.Analysis.midpointQuadrature_error_norm_le_of_thirdDerivative_bound",
+            "D0.Analysis.finiteVectorMidpointHistory_error_eq_localDefectSum",
+            "D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound",
+            "D0.Geometry.twoComponentMatterEuclidean_norm_sq",
+            "D0.Geometry.vectorCARComplementAmplitude",
+            "D0.Geometry.sampledVectorMidpointCARComplement_positive_of_vectorSlack",
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorSlack",
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin",
+        }
+        self.assertTrue(required.issubset(declarations))
+        analysis_module = "D0.Analysis.MidpointQuadrature"
+        geometry_module = "D0.Geometry.NonvacuumBrinkmannStencil"
+        standard_axioms = {"Classical.choice", "Quot.sound", "propext"}
+        for name in required:
+            row = declarations[name]
+            expected_module = analysis_module if name.startswith("D0.Analysis.") else geometry_module
+            self.assertTrue(row["exists"])
+            self.assertEqual(row["module"], expected_module)
+            self.assertEqual(set(row["axioms"]), standard_axioms)
+            self.assertGreater(row["declaration_ranges"]["declaration"]["start"]["line"], 0)
+
+        history = declarations[
+            "D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound"
+        ]
+        self.assertIn("duration * M * h ^ 2 / 24", history["elaborated_type"])
+        local = declarations[
+            "D0.Analysis.midpointQuadrature_error_norm_le_of_thirdDerivative_bound"
+        ]
+        self.assertIn("M * h ^ 3 / 24", local["elaborated_type"])
+        margin = declarations[
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin"
+        ]
+        self.assertIn("/ 2", margin["elaborated_type"])
+        self.assertIn(
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorSlack",
+            margin["proof_dependencies"],
+        )
+
     def test_proper_lorentz_orbit_is_discoverable_from_pinned_owner_and_lean(self) -> None:
         case = next(
             item for item in cold_start.CASES
@@ -2238,14 +2305,14 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-26_final_v11.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_final_v12_vector_norm.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
         self.assertRegex(summary["snapshot_commit"], r"^[0-9a-f]{40}$")
         self.assertFalse(summary["worktree_dirty"])
-        self.assertEqual(summary["search_cases_found_all_sources"], 24)
-        self.assertEqual(summary["search_cases_total"], 24)
+        self.assertEqual(summary["search_cases_found_all_sources"], len(cold_start.CASES))
+        self.assertEqual(summary["search_cases_total"], len(cold_start.CASES))
         self.assertEqual(summary["benchmark_cases_total"], 25)
         self.assertEqual(
             [row["id"] for row in summary["cases"]],
@@ -2255,16 +2322,36 @@ class ProofArchitectureTests(unittest.TestCase):
             row["all_required_sources_found"] and not row["missing_paths"]
             for row in summary["cases"]
         ))
-        self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 161
+        expected_required_count = sum(
+            len(case.get("required_sources", []))
+            + sum(
+                path not in {source["path"] for source in case.get("required_sources", [])}
+                for path in case["required_refs"]
+            )
+            for case in cold_start.CASES
         )
-        self.assertEqual(summary["required_source_ref_count"], 161)
+        self.assertEqual(
+            sum(row["required_source_count"] for row in summary["cases"]),
+            expected_required_count,
+        )
+        self.assertEqual(summary["required_source_ref_count"], expected_required_count)
         positive_nonvacuum = next(
             row for row in summary["cases"]
             if row["id"] == "positive-nonvacuum-recovery"
         )
-        self.assertEqual(positive_nonvacuum["query_count"], 12)
-        self.assertEqual(positive_nonvacuum["required_source_count"], 6)
+        positive_case = next(
+            case for case in cold_start.CASES
+            if case["id"] == "positive-nonvacuum-recovery"
+        )
+        self.assertEqual(positive_nonvacuum["query_count"], len(positive_case["queries"]))
+        self.assertEqual(
+            positive_nonvacuum["required_source_count"],
+            len(positive_case.get("required_sources", []))
+            + sum(
+                path not in {source["path"] for source in positive_case.get("required_sources", [])}
+                for path in positive_case["required_refs"]
+            ),
+        )
         labelled = next(
             row for row in summary["cases"]
             if row["id"] == "labelled-native-raising-inverse"
@@ -2445,7 +2532,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-26_final_v11.json"
+            / "proof_architecture_search_process_comparison_2026-10-26_final_v12_vector_norm.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
