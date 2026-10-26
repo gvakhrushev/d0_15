@@ -25,7 +25,7 @@ theorem trace_partialTrace {V N : Type} [Fintype V] [Fintype N] (M : Matrix (V �
 def kronecker_I_C {V N : Type} [Fintype V] [DecidableEq V] (C_N : Matrix N N ℝ) : Matrix (V × N) (V × N) ℝ :=
   D0.Spectrum.tensor_product_I C_N
 
-theorem partial_trace_commutes_with_shift {V N : Type} [Fintype V] [DecidableEq V] [Fintype N] [DecidableEq N]
+theorem partial_trace_commutes_with_shift {V N : Type} [Fintype V] [DecidableEq V] [Fintype N]
     (M : Matrix (V × N) (V × N) ℝ) (C_N : Matrix N N ℝ)
     (h_comm : M * (kronecker_I_C C_N) = (kronecker_I_C C_N) * M) :
     (partialTraceV M) * C_N = C_N * (partialTraceV M) := by
