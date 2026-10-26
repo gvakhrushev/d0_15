@@ -9115,3 +9115,45 @@ not assert that an exponential chart covers the Lorentz group. It does not
 vary matter variables, select or differentiate the physical Book/action/
 source/price, establish the physical execution or variational pullback (31),
 or discharge the remaining GR-selection premises.
+
+### Same-question legacy/current search comparison (26 October 2026)
+
+The repeatable comparison at
+[`00_WORK/reports/proof_architecture_search_process_comparison_2026-10-26_10_results.json`](../../00_WORK/reports/proof_architecture_search_process_comparison_2026-10-26_10_results.json)
+uses one existing question from each of the 24 cold-start cases. It chooses
+the first question with an explicit source-scope mapping when one exists; the
+same 24 strings are passed to the legacy `gr_assembly.search` and current
+`proof_architecture.search` surfaces. Seven questions have explicit expected
+sources. The legacy assembly search returns none of those seven; the current
+ten-candidate text window surfaces all seven. The structured authority window
+remains five results, and exact source verification examines up to 18 ranked
+text candidates before returning the ten-item answer.
+
+The current answers contain 601,966 serialized UTF-8 bytes in total, averaging
+25,081.9 bytes per question; the legacy search returned empty lists totaling
+48 bytes. These are response-size measurements, not model-token counts or
+direct file-read counts. Candidates outside an explicitly expected source
+set are not labelled irrelevant because the fixture does not adjudicate their
+semantic relevance. Neither search response exposes an owner-bearing result
+for these questions; hypothesis preservation and the need for new mathematics
+are not answerable from the search stage alone. This is a reproducible
+retrieval-stage comparison, not completion of the whole old/new workflow
+review requested by Stage E. Those answer-level checks remain open.
+
+The query-level comparison report is 53,643 bytes, SHA-256
+`b68ce23894e99709c7b9074353833497c5d47cffcb691f0850292bcb2003e321`; it
+records runner SHA-256 `55f980cd1b08244ae4da37e85bdce07b91909d780642692ebb826bb0be36f49e`
+and clean source snapshot `15abe1bf580af80b40e0baa5e9f5f89b81afdc9e`.
+
+The clean cold-start replay on the compared search implementation found all
+158 required references across 24/24 cases and passed 25/25 retrieval and
+source-impact checks. Its compact receipt is
+[`00_WORK/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json`](../../00_WORK/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json).
+The receipt SHA-256 is
+`58cdcac24221e703324ead1d79b43956d0f4ea61d780fff23764656e9fd96536`; the
+8,855,702-byte full replay output has SHA-256
+`d884b4759b56c0291d3ff4bf35d9ed3f2e846e9206ac3612cf7d778c5e47ccf9` at the
+same clean source snapshot.
+The comparison and replay remain retrieval evidence only. They do not accept
+claim semantics, freeze C0, establish applications, or change any physical
+selection premise.

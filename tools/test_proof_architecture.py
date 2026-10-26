@@ -1696,8 +1696,8 @@ class ProofArchitectureTests(unittest.TestCase):
     def test_current_cold_start_summary_covers_proper_lorentz_orbit_case(self) -> None:
         summary_path = (
             proof.ROOT
-            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-26_julia_base_link_frechet.json"
+            / "00_WORK/reports"
+            / "proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -1761,6 +1761,49 @@ class ProofArchitectureTests(unittest.TestCase):
             ).hexdigest(),
         )
         self.assertRegex(replay["full_output_sha256"], r"^[0-9a-f]{64}$")
+        self.assertGreater(replay["full_output_bytes"], 8_000_000)
+
+    def test_search_process_comparison_is_pinned_and_semantically_scoped(self) -> None:
+        comparison_path = (
+            proof.ROOT
+            / "00_WORK/reports"
+            / "proof_architecture_search_process_comparison_2026-10-26_10_results.json"
+        )
+        comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            comparison["schema"], "d0-proof-architecture-search-comparison-v1"
+        )
+        self.assertFalse(comparison["worktree_dirty"])
+        self.assertRegex(comparison["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertEqual(
+            comparison["metrics"]["query_count"], len(cold_start.CASES)
+        )
+        self.assertEqual(
+            comparison["metrics"]["query_count_with_explicit_source_scope"], 7
+        )
+        self.assertEqual(
+            comparison["metrics"]["legacy_scoped_queries_with_expected_source"], 0
+        )
+        self.assertEqual(
+            comparison["metrics"]["current_scoped_queries_with_expected_source"], 7
+        )
+        self.assertTrue(
+            comparison["metrics"]["semantic_review_required_for_all_queries"]
+        )
+        self.assertEqual(
+            comparison["metrics"]["current_owner_bearing_queries"], 0
+        )
+        self.assertTrue(all(
+            row["semantic_review"]["hypothesis_preservation"]
+            == "not_assessed_by_search_output"
+            for row in comparison["cases"]
+        ))
+        self.assertEqual(
+            comparison["runner_sha256"],
+            hashlib.sha256(
+                (proof.ROOT / "tools/proof_architecture_process_comparison.py").read_bytes()
+            ).hexdigest(),
+        )
 
     def test_julia_cold_start_tracks_nonzero_chart_composition_boundary(self) -> None:
         case = next(
