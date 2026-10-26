@@ -10117,7 +10117,7 @@ not an independently accepted or frozen C0 denominator.
 | Eq. (20): half-step metric/site sampling | `D0.Geometry.nonvacuumCoframeReadoutTime`, `sampledNonvacuumBrinkmannProfile_eq_fixedReadout`, and `sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter`. | Exact scalar profile/site binding, including all four harmonic coefficients at the same readout. Scoped independent review passed this equality; this does not instantiate the 16 coframe slots. |
 | Eqs. (21)–(22): midpoint increments and exact field gradient | `D0.Geometry.sampledMatterMidpointRate_eq_nextCoframeReadout`, together with the finite history and exact-value definitions used by `sampledMatterMidpointProfile_source_eq_derivativeNorm`. | Exact midpoint/update algebra in the Lean finite-history abstraction; these identities do not require smoothness. They are not yet a construction from the original CAR generator or normalized preparation record. |
 | Eq. (23): native transverse source | `D0.Geometry.sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter`. | Exact five-point scalar source identity at the matched coframe readout. It allows arbitrary `coupling` and assumes only `h ≠ 0`; it does not bind `coupling = λ` or establish `h = 1/L` or `h > 0`. No CAR amplitude/slack premise, full independent variation, or 40+2 Euler composition is discharged. |
-| Eq. (24): O(h²) midpoint refinement and preserved CAR slack | `D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound` proves the dimension-free vector-norm bound; `D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin` proves the `δ/2` implication on the existing two-component history through its Euclidean lift. The older `sampledMatterMidpointCARComplement_positive_of_componentwiseSlack` remains a separate conservative criterion. | Formalized conditionally under global C³ regularity, a uniform vector third-derivative bound and a continuum Euclidean-norm envelope. The vector history is proved equal to the existing componentwise CAR recurrence. The bounds and source are still not derived from the original CAR generator/preparation; no physical source selection, C0 acceptance, or GR closure follows. |
+| Eq. (24): O(h²) midpoint refinement and preserved CAR slack | `D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound` proves the dimension-free vector-norm bound; `D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin` proves the `δ/2` implication on the existing two-component history through its Euclidean lift; `D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes` derives a natural-number threshold `N₀` for every uniform mesh `h=duration/N`, `N≥N₀`. The older `sampledMatterMidpointCARComplement_positive_of_componentwiseSlack` remains a separate conservative criterion. | Formalized conditionally under positive duration, global C³ regularity, a uniform vector third-derivative bound, a continuum Euclidean-norm envelope and strict continuum CAR margin. The vector history is proved equal to the existing componentwise CAR recurrence. These analytic bounds are still not derived from the original CAR generator/preparation; no physical source selection, C0 acceptance, or GR closure follows. |
 | Full free-site 16+24+2 Euler conclusion after the cited 40→3→1 reduction | The source cites the scientific owner's existing reduction; the current application inventory does not include a complete Lean adapter from its full varied rows to these sampled fields. | Reuse/transport remains open. No physical GR claim or owner/status change. |
 
 The read-only independent scope review returned **scoped PASS** for this
@@ -10299,3 +10299,31 @@ The former records the exact #334 §7.2 owner pin separately from the main
 registration blob. Retrieval, declaration extraction and compilation are
 evidence for this conditional mathematical slice; they do not derive its
 analytic bounds from CAR preparation or select a physical source.
+
+
+### Eventual uniform-mesh CAR slack (26 October 2026)
+
+The Eq. (24) application now also derives a single natural-number threshold
+`N₀` such that the existing two-component CAR complement remains strictly
+positive for every uniform refinement `h = duration / N` with `N ≥ N₀`, at
+every sampled index `n ≤ N`. The theorem
+`D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes`
+uses the existing vector-norm error `duration * M * h² / 24` and strict
+continuum margin `δ = sqrt (1-p) - A > 0`. With
+`C = duration * M * duration² / 24`, the proof chooses `N₀ > 2C/δ`, so the
+refinement error is below `δ/2` on every mesh after that threshold.
+
+The hypotheses remain explicit: positive duration, global C³ regularity, a
+uniform vector third-derivative bound, a continuum Euclidean-norm envelope,
+and positive continuum CAR margin. This closes the elementary quantifier step
+from a fixed-mesh margin estimate to eventual positivity along uniform
+refinements. It does not derive the analytic hypotheses from the actual CAR
+generator or normalized preparation, reconstruct the original source, or
+discharge the full 40+2 variation, physical source selection, C0 acceptance,
+or GR closure.
+
+The narrow `D0.Geometry.NonvacuumBrinkmannStencil` build passes (3,340/3,340
+jobs), and the final public `D0.All` build passes (4,626/4,626 jobs) with this
+theorem. The compiled declaration inventory and clean retrieval receipts are
+recorded in the following checkpoint section after their source snapshot is
+captured.

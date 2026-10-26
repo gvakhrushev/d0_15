@@ -675,6 +675,78 @@ theorem sampledMatterMidpointCARComplement_positive_of_vectorMargin
     ψ x₀ h M duration A p N h_nonneg M_nonneg A_nonneg h_duration
     hC3 hThird hEnvelope hSquare_lt
 
+/--
+The source's fixed CAR slack survives every sufficiently fine uniform mesh.
+The threshold is obtained from the explicit `duration * M * h^2 / 24` error
+with `h = duration / N`; regularity, derivative, envelope and continuum-margin
+hypotheses remain supplied data.
+-/
+theorem sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ duration M A p : ℝ)
+    (duration_pos : 0 < duration) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
+    (hC3 : ContDiff ℝ 3 ψ)
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 ψ t‖ ≤ M)
+    (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
+    (hMargin : 0 < Real.sqrt (1 - p) - A) :
+    ∃ N₀ : ℕ, 0 < N₀ ∧ ∀ N : ℕ, N₀ ≤ N →
+      ∀ n ≤ N,
+        0 < twoComponentCARComplementAmplitude p
+          (finiteMatterMidpointHistory (duration / (N : ℝ))
+            (sampledMatterMidpointRate (fun t i => ψ t i) x₀
+              (duration / (N : ℝ)))
+            (sampledMatterExactValues (fun t i => ψ t i) x₀
+              (duration / (N : ℝ)) 0) n) := by
+  let δ : ℝ := Real.sqrt (1 - p) - A
+  let coefficient : ℝ := duration * M * duration ^ 2 / 24
+  have hδ_pos : 0 < δ := hMargin
+  have hCoefficient_nonneg : 0 ≤ coefficient := by positivity
+  have hThreshold_nonneg : 0 ≤ 2 * coefficient / δ := by positivity
+  obtain ⟨N₀, hThreshold_lt_N₀⟩ := exists_nat_gt (2 * coefficient / δ)
+  have hThreshold_lt_N₀_real : 2 * coefficient / δ < (N₀ : ℝ) :=
+    hThreshold_lt_N₀
+  have hN₀_pos_real : 0 < (N₀ : ℝ) :=
+    lt_of_le_of_lt hThreshold_nonneg hThreshold_lt_N₀_real
+  have hN₀_pos : 0 < N₀ := by exact_mod_cast hN₀_pos_real
+  refine ⟨N₀, hN₀_pos, ?_⟩
+  intro N hN₀N n hn
+  have hN_pos : 0 < N := lt_of_lt_of_le hN₀_pos hN₀N
+  have hN_real_pos : 0 < (N : ℝ) := by exact_mod_cast hN_pos
+  have hN_real_one_le : 1 ≤ (N : ℝ) := by
+    exact_mod_cast (Nat.succ_le_of_lt hN_pos)
+  have hN₀N_real : (N₀ : ℝ) ≤ (N : ℝ) := by exact_mod_cast hN₀N
+  have hThreshold_lt_N : 2 * coefficient / δ < (N : ℝ) :=
+    lt_of_lt_of_le hThreshold_lt_N₀_real hN₀N_real
+  have hThreshold_mul : 2 * coefficient < (N : ℝ) * δ :=
+    (div_lt_iff₀ hδ_pos).mp hThreshold_lt_N
+  have hCoefficient_div_N_lt : coefficient / (N : ℝ) < δ / 2 := by
+    apply (div_lt_iff₀ hN_real_pos).2
+    nlinarith [hThreshold_mul]
+  have hN_le_sq : (N : ℝ) ≤ (N : ℝ) ^ 2 := by
+    calc
+      (N : ℝ) = (N : ℝ) * 1 := by ring
+      _ ≤ (N : ℝ) * (N : ℝ) :=
+        mul_le_mul_of_nonneg_left hN_real_one_le (Nat.cast_nonneg N)
+      _ = (N : ℝ) ^ 2 := by ring
+  have hCoefficient_div_sq_le :
+      coefficient / (N : ℝ) ^ 2 ≤ coefficient / (N : ℝ) := by
+    rw [div_le_div_iff₀ (by positivity : 0 < (N : ℝ) ^ 2) hN_real_pos]
+    exact mul_le_mul_of_nonneg_left hN_le_sq hCoefficient_nonneg
+  let h : ℝ := duration / (N : ℝ)
+  have hError_eq : duration * M * h ^ 2 / 24 = coefficient / (N : ℝ) ^ 2 := by
+    dsimp [h, coefficient]
+    field_simp [ne_of_gt hN_real_pos]
+  have hRefinement : duration * M * h ^ 2 / 24 < δ / 2 := by
+    rw [hError_eq]
+    exact lt_of_le_of_lt hCoefficient_div_sq_le hCoefficient_div_N_lt
+  have hDuration : (N : ℝ) * h = duration := by
+    dsimp [h]
+    field_simp [ne_of_gt hN_real_pos]
+  have hResult := sampledMatterMidpointCARComplement_positive_of_vectorMargin
+    ψ x₀ h M duration A p N (le_of_lt (by dsimp [h]; positivity))
+    M_nonneg A_nonneg hDuration hC3 hThird hEnvelope hMargin hRefinement
+  simpa [h, δ] using hResult n hn
+
 /-- The time-indexed Brinkmann profile uses the rate of that same history step. -/
 def finiteTimeNonvacuumBrinkmannProfile
     (coupling : ℝ) (rate : ℕ → Fin 2 → ℝ)

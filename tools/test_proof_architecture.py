@@ -1507,6 +1507,10 @@ class ProofArchitectureTests(unittest.TestCase):
             "sampledMatterMidpointCARComplement_positive_of_vectorMargin" in query
             for query in case["queries"]
         ))
+        self.assertTrue(any(
+            "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes"
+            in query for query in case["queries"]
+        ))
         self.assertIn(module, case["required_refs"])
         self.assertIn("03_FORMALIZATION/D0/Analysis/MidpointQuadrature.lean",
                       case["required_refs"])
@@ -1531,6 +1535,7 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn("dimension-free constant in Euclidean norm", case["scope_review"])
         self.assertIn("transported through an isometric Euclidean lift", case["scope_review"])
+        self.assertIn("every N >= N0 with h=duration/N", case["scope_review"])
         self.assertIn("physical native Book/clock/source selection remain separate and open",
                       case["scope_review"])
 
@@ -1933,7 +1938,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "nonvacuum_vector_norm_car_margin_2026-10-26.json"
+            / "nonvacuum_vector_norm_uniform_mesh_2026-10-26.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1953,6 +1958,7 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Geometry.sampledVectorMidpointCARComplement_positive_of_vectorSlack",
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorSlack",
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin",
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes",
         }
         self.assertTrue(required.issubset(declarations))
         analysis_module = "D0.Analysis.MidpointQuadrature"
@@ -1981,6 +1987,24 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn(
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorSlack",
             margin["proof_dependencies"],
+        )
+        eventual = declarations[
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes"
+        ]
+        self.assertIn("N₀ ≤ N", eventual["elaborated_type"])
+        self.assertIn("duration / ↑N", eventual["elaborated_type"])
+        self.assertIn(
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin",
+            eventual["proof_dependencies"],
+        )
+        previous_inventory = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_vector_norm_car_margin_2026-10-26.json"
+        )
+        self.assertEqual(
+            hashlib.sha256(previous_inventory.read_bytes()).hexdigest(),
+            "c896eb2bbec77094b3ad2aec6b9e0fc6bcc2a1edb96a51e8a9b25e8e68bb1cbe",
         )
 
     def test_proper_lorentz_orbit_is_discoverable_from_pinned_owner_and_lean(self) -> None:
@@ -2305,7 +2329,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-26_final_v12_vector_norm.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_final_v13_uniform_mesh.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -2532,7 +2556,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-26_final_v12_vector_norm.json"
+            / "proof_architecture_search_process_comparison_2026-10-26_final_v13_uniform_mesh.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
