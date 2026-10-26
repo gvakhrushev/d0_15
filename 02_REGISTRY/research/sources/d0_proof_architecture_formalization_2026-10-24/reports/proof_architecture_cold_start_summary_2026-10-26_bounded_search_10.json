@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "731b66a533efe7eeb78d061155759097a5a7142e",
+  "snapshot_commit": "30cabccc34283c655ef2ff93d1252a5d0d356e2c",
   "worktree_dirty": false,
   "search_cases_found_all_sources": 24,
   "search_cases_total": 24,
@@ -194,15 +194,15 @@
     }
   ],
   "replay": {
-    "source_commit": "731b66a533efe7eeb78d061155759097a5a7142e",
+    "source_commit": "30cabccc34283c655ef2ff93d1252a5d0d356e2c",
     "command": "python3 tools/proof_architecture_cold_start.py",
     "runner_sha256": "dbbe10bad334798693ab6f92f5fbce3d75a9d6ee68226f2f3b8433ede40be55a",
     "runner_git_blob": "7d0a95bb72937f6244b4ad5d5f5ad01d9c71cf3a",
-    "search_engine_sha256": "89a3751b14d4a859437cb9318578a392f789aebe15c3416aba3c5ab17bd6a26e",
-    "search_engine_git_blob": "03495e13663d21daba563d88f21b975e975f7dca",
-    "test_sha256": "82302039b4ac4e092d8f2b985ff1bc0a01daa41b1a0383f272750623ea25cd1a",
-    "test_git_blob": "607c59c83190cac7a15ad26442c50a2ca5cecd1b",
-    "full_output_sha256": "28756f817bd61b08f69217cd733c2343e6e214f145cc651d7bae20c0e66749a3",
+    "search_engine_sha256": "041b2acb3f71e2d8a24d3954b54e1ab6bd81893ea00e674743ad3d7b21558437",
+    "search_engine_git_blob": "a9cc22241945863242ceeda2cd63f9c7352d77ed",
+    "test_sha256": "517ad1e1f4e84b03767e354fe9d659eee3830d9ec88c403295c6da94fde0740c",
+    "test_git_blob": "715d2b11c4407a6a85b1c5de36ea46791d5bfb05",
+    "full_output_sha256": "70895385714f899aeb4758572f27bf4311fdca81c48b91bff8d2aedec532df8c",
     "full_output_bytes": 8855665
   }
 }

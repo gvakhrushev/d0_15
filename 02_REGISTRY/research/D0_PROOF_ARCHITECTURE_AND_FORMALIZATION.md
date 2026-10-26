@@ -9129,30 +9129,48 @@ ten-candidate text window surfaces all seven. The structured authority window
 remains five results, and exact source verification examines up to 18 ranked
 text candidates before returning the ten-item answer.
 
-The current answers contain 601,966 serialized UTF-8 bytes in total, averaging
-25,081.9 bytes per question; the legacy search returned empty lists totaling
-48 bytes. These are response-size measurements, not model-token counts or
-direct file-read counts. Candidates outside an explicitly expected source
-set are not labelled irrelevant because the fixture does not adjudicate their
-semantic relevance. Neither search response exposes an owner-bearing result
-for these questions; hypothesis preservation and the need for new mathematics
-are not answerable from the search stage alone. This is a reproducible
-retrieval-stage comparison, not completion of the whole old/new workflow
-review requested by Stage E. Those answer-level checks remain open.
+The current answers contain 863,415 serialized UTF-8 bytes in total,
+averaging 35,975.6 bytes per question; the legacy search returned empty lists
+totaling 48 bytes. These are response-size measurements, not model-token
+counts or direct file-read counts. Candidates outside an explicitly expected
+source set are not labelled irrelevant because the fixture does not adjudicate
+their semantic relevance.
 
-The query-level comparison report is 53,643 bytes, SHA-256
-`4a462d63d460afa328e925a149fc68e470ecad1f97d4395cd0ee168ec909173c`; it
+Search cards now join text candidates to existing records only when their
+source path exactly matches an `applications.json` evidence path or a
+`formal_support.csv` `referenced_by` entry. Exact assembly links expose the
+recorded owner, scope, hypotheses, interface, evidence pin and linked
+application/hypothesis map. Formal-support hits remain metadata locators, not
+proof or owner acceptance. Among the eight expected source-path entries for
+the seven explicitly scoped queries, one has an exact assembly-owner link:
+`MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md` via `metric-provenance`, with owner
+`existing CONTROL/main research owner` and interface `star-metric-v1`. The
+other seven expected source paths have no direct assembly-owner link. This
+exposes missing structured provenance instead of inferring an owner from
+nearby prose. Independent owner correctness, hypothesis preservation across
+the whole answer, and the need for new mathematics still require semantic
+review. The comparison is not completion of the full old/new workflow review
+requested by Stage E.
+
+Eight of 24 current query responses contain an owner field on some candidate,
+but only one of the seven scoped queries connects its expected source path to
+an assembly owner. The other owner-bearing candidates do not discharge that
+source's owner lookup. The comparison report stores the full expected-source
+link details, including metadata-only formal-support locators.
+
+The query-level comparison report is 76,000 bytes, SHA-256
+`138e3134bf6ae2d1c1256e4294031942d45e3824c9fb36847b2aa982bb6456f6`; it
 records runner SHA-256 `55f980cd1b08244ae4da37e85bdce07b91909d780642692ebb826bb0be36f49e`
-and clean source snapshot `731b66a533efe7eeb78d061155759097a5a7142e`.
+and clean source snapshot `30cabccc34283c655ef2ff93d1252a5d0d356e2c`.
 
 The clean cold-start replay on the compared search implementation found all
 158 required references across 24/24 cases and passed 25/25 retrieval and
 source-impact checks. Its compact receipt is
 [`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_bounded_search_10.json).
 The receipt SHA-256 is
-`ced0a7cc3c21e1dff05ae635f0d65eb665b1a6ae698dd902ea4a5611cfa19b05`; the
+`69ef463d987459c690201ac679e458c13e2b50abeea0ad8423c876b0969943df`; the
 8,855,665-byte full replay output has SHA-256
-`28756f817bd61b08f69217cd733c2343e6e214f145cc651d7bae20c0e66749a3` at the
+`70895385714f899aeb4758572f27bf4311fdca81c48b91bff8d2aedec532df8c` at the
 same clean source snapshot.
 The comparison and replay remain retrieval evidence only. They do not accept
 claim semantics, freeze C0, establish applications, or change any physical

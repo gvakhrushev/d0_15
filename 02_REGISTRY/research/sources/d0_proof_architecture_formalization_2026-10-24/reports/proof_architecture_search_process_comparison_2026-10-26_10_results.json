@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-search-comparison-v1",
-  "snapshot_commit": "731b66a533efe7eeb78d061155759097a5a7142e",
+  "snapshot_commit": "30cabccc34283c655ef2ff93d1252a5d0d356e2c",
   "worktree_dirty": false,
   "authority_source_digests": {
     "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
@@ -11,11 +11,11 @@
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
   },
-  "runner_sha256": "55f980cd1b08244ae4da37e85bdce07b91909d780642692ebb826bb0be36f49e",
+  "runner_sha256": "883b3fa9fa6d284109f6972e8f8558c8f1846fbd674cb914dc32af383bbf538b",
   "query_fixture_sha256": "dbbe10bad334798693ab6f92f5fbce3d75a9d6ee68226f2f3b8433ede40be55a",
   "comparison_scope": {
     "legacy": "gr_assembly.search over the existing assembly result records",
-    "current": "proof_architecture search over structured authorities and ten bounded text candidates",
+    "current": "proof_architecture search over structured authorities, ten bounded text candidates, and exact-path links to existing assembly/formal-support records",
     "questions": "one identical existing query per real cold-start case, chosen from an explicitly source-scoped query where available",
     "context_measure": "serialized UTF-8 JSON answer bytes; a response-size proxy, not model-token or file-read accounting",
     "semantic_limit": "search output alone does not establish owner correctness, hypothesis preservation, or whether new mathematics is required"
@@ -26,11 +26,14 @@
     "legacy_scoped_queries_with_expected_source": 0,
     "current_scoped_queries_with_expected_source": 7,
     "legacy_serialized_answer_bytes_total": 48,
-    "current_serialized_answer_bytes_total": 601966,
+    "current_serialized_answer_bytes_total": 863415,
     "legacy_average_answer_bytes": 2.0,
-    "current_average_answer_bytes": 25081.9,
+    "current_average_answer_bytes": 35975.6,
     "legacy_owner_bearing_queries": 0,
-    "current_owner_bearing_queries": 0,
+    "current_owner_bearing_queries": 8,
+    "current_scoped_queries_with_expected_source_owner_link": 1,
+    "current_expected_source_owner_link_count": 1,
+    "current_scoped_expected_sources_without_direct_owner_link": 7,
     "semantic_review_required_for_all_queries": true
   },
   "cases": [
@@ -71,12 +74,59 @@
         "expected_source_hits": [
           "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
         ],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Geometry.A4DJuliaPrincipalFrameRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaNonNullGammaRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaRecoveryComposition",
+                "lean_file": "D0/Geometry/A4DJuliaRecoveryComposition.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_refs": [
+              {
+                "path": "A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "В старом [local inverse-PF J₂ word](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md)"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_direct_owner_link": [
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+        ],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 23360
+        "serialized_answer_bytes": 30341
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -100,7 +150,10 @@
       },
       "current": {
         "structured_matches": [],
-        "owners": [],
+        "owners": [
+          "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "registered native response research owner #334"
+        ],
         "text_candidate_paths": [
           "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
           "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
@@ -118,12 +171,35 @@
         "expected_source_hits": [
           "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md"
         ],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Geometry.NonvacuumBrinkmannStencil",
+                "lean_file": "D0/Geometry/NonvacuumBrinkmannStencil.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_direct_owner_link": [
+          "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md"
+        ],
         "relevant_text_candidate_count": 2,
         "text_candidate_count_not_in_scoped_source_set": 8,
-        "serialized_answer_bytes": 32519
+        "serialized_answer_bytes": 57245
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -147,7 +223,9 @@
       },
       "current": {
         "structured_matches": [],
-        "owners": [],
+        "owners": [
+          "existing CONTROL/main research owner"
+        ],
         "text_candidate_paths": [
           "02_REGISTRY/research/A4D_NATIVE_CONNECTION_ACTION_BOUNDARY.md",
           "02_REGISTRY/research/MEMO_A4D_STAR_DENSITY_LORENTZ_NONLINEAR_QUOTIENT.md",
@@ -165,12 +243,96 @@
         "expected_source_hits": [
           "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md"
         ],
+        "expected_source_owner_links": [
+          {
+            "source": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+            "result_id": "metric-provenance",
+            "owner": "existing CONTROL/main research owner",
+            "interface": "star-metric-v1",
+            "evidence": [
+              {
+                "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+                "section_refs": [
+                  "L16: A. The selected finite action already owns a nonlinear metric carrier"
+                ]
+              },
+              {
+                "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+                "section_refs": [
+                  "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+                ]
+              }
+            ]
+          }
+        ],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+            "candidate_surfaced": true,
+            "owner_status": "declared_by_exact_assembly_evidence_link",
+            "owners": [
+              "existing CONTROL/main research owner"
+            ],
+            "assembly_results": [
+              {
+                "result_id": "metric-provenance",
+                "owner": "existing CONTROL/main research owner",
+                "statement": "The pinned J2 bridge reports two distinct units: (A) the nonlinear metric quotient coordinates Q_x=Theta_x eta Theta_x^T and dressed links K_(x,r)=Theta_x L_(x,r) Theta_(x+r)^(-1), including the exact endpoint isometry K_(x,r) Q_(x+r) K_(x,r)^T=Q_x for Lorentz links, and (B) the flat detector tangent DQ_flat[H(q)]=q. The Lean module proves finite raw-solder orbit completeness first for the full IsRoleLorentz group and, after adjoining equal relative determinant-orientation at every site, for its determinant-one proper subgroup. In both forms, on an all-site nondegenerate reference solder field, equality of every Q and K is equivalent to one site-dependent frame relating the coframe and link fields. It separately proves the full finite-matrix Frechet derivative and its transport through the arbitrary sitewise solder metric field map.",
+                "interface": "star-metric-v1",
+                "interface_contract": {
+                  "carrier": "Nondegenerate solder quotient Q=Theta eta Theta^T and dressed compatible links",
+                  "action": "Selected literal naked star action, including its actual finite metric response",
+                  "variations": "Genuine metric quotient tangents; complete coupled normal rescue remains separate",
+                  "source": "Geometric Euler response and declared smooth comparator; no full native matter binding",
+                  "normalization": "Sheet response -G/2 with the exact owner index/density convention",
+                  "refinement": "Fixed smooth realization; parametrix is not an exact full joint refining solution",
+                  "scope": "Accepted scoped geometry and partial smooth controls only",
+                  "id": "star-metric-v1"
+                },
+                "outcome": "positive",
+                "scope_level": "family",
+                "hypotheses": {},
+                "reported_state": "The source A and B units remain distinct. For A, the Lean adapter formalizes complete Q/K orbit coordinates on the finite raw-solder carrier, assuming IsUnit det(rawSolderMatrix N e x) at every reference site. The generic finiteGram_right_orbit_complete theorem in D0.Algebra is the shared orbit API and is directly consumed by the concrete IsRoleLorentz specialization; it requires an invertible reference frame but does not require eta to be invertible. The generic finiteGram_dressed_transport_compatible theorem now owns the frame-dressed endpoint Gram identity, and a4dDressedLink_metric_compatible specializes it with the existing IsRoleLorentz hypothesis and target-frame invertibility condition unchanged. The field theorem retains all-site nondegeneracy and refines to the determinant-one subgroup only when the two solder fields have equal determinant orientation at every site. This records proper determinant orientation but leaves time orientation unrestricted; the stronger SO+(1,3) source restriction is still open. The pinned source's endpoint isometry is proved for each link satisfying IsRoleLorentz, with invertibility required only at its target solder frame; the field corollary states the exact Q/K metric relation. For B, the source-convention adapter maps its frame by right multiplication with eta into the existing solder Gram carrier, retains the quadratic remainder, and proves the full finite-matrix Frechet derivative at the flat frame. The shared algebra layer now proves the generic finiteGram derivative at every frame; both the directional J2 path derivative and the flat matrix-variable derivative consume it by chain rule through t ↦ 1 + tH and H ↦ 1 + H. That derivative composes with the finite solder readout over arbitrary LocalCoframeField N perturbations and is collected into one Frechet derivative for the whole output field x ↦ solderMetricMatrix N e x, whose value at each site is exactly the existing coframeMetricReadout. Matrix derivatives use the Frobenius norm and full fields use inherited finite Pi norms. The selected-action-to-Lean-carrier map, global connection elimination, physical metric/source selection and independent C0 acceptance remain open; acceptance_inferred=false.",
+                "evidence": [
+                  {
+                    "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                    "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                    "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+                    "section_refs": [
+                      "L16: A. The selected finite action already owns a nonlinear metric carrier"
+                    ]
+                  },
+                  {
+                    "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                    "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                    "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+                    "section_refs": [
+                      "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+                    ]
+                  }
+                ],
+                "evidence_omitted": 0,
+                "declared_applications": [],
+                "applications_omitted": 0,
+                "scoped_attempts": [],
+                "attempts_omitted": 0
+              }
+            ],
+            "formal_support_locators": [],
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 28125
+        "serialized_answer_bytes": 39144
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -192,7 +354,10 @@
       },
       "current": {
         "structured_matches": [],
-        "owners": [],
+        "owners": [
+          "existing CONTROL/main research owner",
+          "registered native response research owner #334"
+        ],
         "text_candidate_paths": [
           "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
           "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
@@ -208,12 +373,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 29496
+        "serialized_answer_bytes": 45842
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -235,7 +403,10 @@
       },
       "current": {
         "structured_matches": [],
-        "owners": [],
+        "owners": [
+          "existing CONTROL/main research owner",
+          "registered native response research owner #334"
+        ],
         "text_candidate_paths": [
           "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
           "02_REGISTRY/gr_assembly/applications.json",
@@ -251,12 +422,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 29612
+        "serialized_answer_bytes": 51288
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -294,12 +468,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 34308
+        "serialized_answer_bytes": 41113
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -341,12 +518,37 @@
         "expected_source_hits": [
           "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md"
         ],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_refs": [
+              {
+                "path": "sources/d0_curved_native_preparation_2026-10-20/README.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "The packet [d0_curved_native_preparation_2026-10-20](sources/d0_curved_native_preparation_2026-10-20/README.md)"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_direct_owner_link": [
+          "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md"
+        ],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 29688
+        "serialized_answer_bytes": 35012
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -388,12 +590,55 @@
         "expected_source_hits": [
           "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md"
         ],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_refs": [
+              {
+                "path": "sources/d0_same_history_price_composition_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/original_record_source.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "[original Gamma(H,K) source](sources/d0_same_history_price_composition_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-2"
+              },
+              {
+                "path": "sources/d0_same_history_price_composition_2026-10-20/FUTURE_LAW_APPLICATION_REVIEW.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "without a support deletion. The [pinned application review](sources/d0_same_history_price_composition_2026-10-20/FUTURE_LAW_APPLICATION_REVIEW.md)"
+              },
+              {
+                "path": "sources/d0_same_history_price_composition_2026-10-20/POSITIVE_GR_APPLICATION_REVIEW.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "The [independent application review](sources/d0_same_history_price_composition_2026-10-20/POSITIVE_GR_APPLICATION_REVIEW.md)"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_direct_owner_link": [
+          "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md"
+        ],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 35869
+        "serialized_answer_bytes": 40386
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -431,12 +676,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 29992
+        "serialized_answer_bytes": 35460
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -474,12 +722,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 28802
+        "serialized_answer_bytes": 35751
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -517,12 +768,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 15069
+        "serialized_answer_bytes": 21563
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -560,12 +814,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 34240
+        "serialized_answer_bytes": 41020
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -587,7 +844,9 @@
       },
       "current": {
         "structured_matches": [],
-        "owners": [],
+        "owners": [
+          "PR #386 / WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER (composition executor)"
+        ],
         "text_candidate_paths": [
           "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
           "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
@@ -603,12 +862,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 22273
+        "serialized_answer_bytes": 65371
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -646,12 +908,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 20932
+        "serialized_answer_bytes": 28559
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -673,7 +938,9 @@
       },
       "current": {
         "structured_matches": [],
-        "owners": [],
+        "owners": [
+          "CONTROL result from PR #375; indexed as a scoped G0/constitutive boundary"
+        ],
         "text_candidate_paths": [
           "03_FORMALIZATION/D0/Synthesis/TopHodgeInverseSpectralRigidity.lean",
           "03_FORMALIZATION/D0/Synthesis/TopHodgeSpectralSceneReconstruction.lean",
@@ -689,12 +956,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 30385
+        "serialized_answer_bytes": 44706
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -716,7 +986,9 @@
       },
       "current": {
         "structured_matches": [],
-        "owners": [],
+        "owners": [
+          "CONTROL result from PR #375; indexed as a scoped G0/constitutive boundary"
+        ],
         "text_candidate_paths": [
           "03_FORMALIZATION/D0/Synthesis/DenseOperatorSceneRigidity.lean",
           "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
@@ -732,12 +1004,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 31467
+        "serialized_answer_bytes": 47312
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -775,12 +1050,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 25389
+        "serialized_answer_bytes": 29599
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -811,12 +1089,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 3,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 3292
+        "serialized_answer_bytes": 6210
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -848,12 +1129,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 4,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 4600
+        "serialized_answer_bytes": 8008
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -895,12 +1179,59 @@
         "expected_source_hits": [
           "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
         ],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Geometry.A4DJuliaPrincipalFrameRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaNonNullGammaRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaRecoveryComposition",
+                "lean_file": "D0/Geometry/A4DJuliaRecoveryComposition.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_refs": [
+              {
+                "path": "A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md#4-actual-two-step-price-with-the-original-readout-retained)",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "старый cut при обновлении gate/observer. [Chronology owner](A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md#4-actual-two-step-price-with-the-original-readout-retained)"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_direct_owner_link": [
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+        ],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 9,
-        "serialized_answer_bytes": 23897
+        "serialized_answer_bytes": 32816
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -922,7 +1253,9 @@
       },
       "current": {
         "structured_matches": [],
-        "owners": [],
+        "owners": [
+          "registered native response research owner #334"
+        ],
         "text_candidate_paths": [
           "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean",
           "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
@@ -938,12 +1271,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 23342
+        "serialized_answer_bytes": 38913
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -981,12 +1317,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 20687
+        "serialized_answer_bytes": 28392
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -1024,12 +1363,15 @@
         "structured_match_count": 0,
         "text_candidate_count": 10,
         "expected_source_hits": [],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_direct_owner_link": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 26420
+        "serialized_answer_bytes": 33589
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
@@ -1073,12 +1415,45 @@
           "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
           "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
         ],
+        "expected_source_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Topology.ArchiveShiftTopology",
+                "lean_file": "D0/Topology/ArchiveShiftTopology.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_refs": []
+          },
+          {
+            "source": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_direct_owner_link": [
+          "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+          "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+        ],
         "relevant_text_candidate_count": 2,
         "text_candidate_count_not_in_scoped_source_set": 8,
-        "serialized_answer_bytes": 18202
+        "serialized_answer_bytes": 25775
       },
       "semantic_review": {
-        "owner_correctness": "not_assessed_by_search_output",
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
         "hypothesis_preservation": "not_assessed_by_search_output",
         "new_mathematics_required": "not_assessed_by_search_output"
       }
