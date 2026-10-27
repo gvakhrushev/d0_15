@@ -168,6 +168,20 @@ class RenderingTests(unittest.TestCase):
         rendered_ids = ', '.join(f'"{gen.esc(item)}"' for item in gen.assumption_ids(bridge))
         self.assertIn(f'assumptionIds := [{rendered_ids}]', bridge_entry)
 
+    def test_actual_entries_preserve_all_registry_assumption_ids(self):
+        text=gen.render_claimmap()
+        rows=[r for r in gen.rows('claims.csv') if r['lean_module'].strip()]
+        for r in rows:
+            entry = text.split(f'claimId := "{gen.esc(r["claim_id"])}"', 1)[1].split(
+                '    { claimId :=', 1
+            )[0]
+            ids = gen.assumption_ids(r)
+            if ids:
+                rendered_ids = ', '.join(f'"{gen.esc(item)}"' for item in ids)
+                self.assertIn(f'assumptionIds := [{rendered_ids}]', entry, r['claim_id'])
+            else:
+                self.assertNotIn('assumptionIds :=', entry, r['claim_id'])
+
     def test_import_closure_sorted_and_unique(self):
         imports=re.findall(r'^import (.+)$',gen.render_all(),re.M)
         self.assertEqual(imports,sorted(set(imports)))
