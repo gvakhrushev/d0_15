@@ -525,11 +525,11 @@ This uses the original **full closed-return** functional derivative, not an asse
 **Numerical crosscheck without fitting:** using the genuine original \(r=1/9,\nu=3/5\), fixed \(z=2^{-20}\) and all128 oldRIGHT, both eigenblock determinant and scalar recurrence give \(J_{n,z}\approx\) \(4.1014328443\cdot10^{-5}\) at n=1, \(1.2047322415\cdot10^{-4}\) at n=3, \(3.0495184983\cdot10^{-4}\) at n=8, and \(1.8232483434\cdot10^{-3}\) at n=128. This is a value-control on the actual scalarized original source; first-source S41 follows by the exact matrix trace theorem. It is NOT an all42 native Euler/GR-root replay.
 
 
-## 13. Theorem S-L — TWO existing closed native measurements are genuinely independent at EVERY original physical full128 clock
+## 13. Theorem S-L — TWO existing closed native measurements are independent at all n=128L² integer clock values on the fixed original CAR fixture
 
 A source-level obstacle to deriving a geometric/matter two-normal response would be a single information degree of freedom masquerading as two tests. S11 and S39 permit an exact positive answer, with no new measurement.
 
-Use the authentic source fixture \(r=1/9,\nu=3/5\), \(p=\varphi^{-1}\), \(z=2^{-20}\), original oldRIGHT dimension \(d_R=128\), and ACTUAL physically specified integer horizon \(n=128L^2\ge128\). Let \(0<\lambda_-<\lambda_+\) be the two original A eigenvalues, each multiplicity eight, and \(s=\lambda_-+\lambda_+\).
+Use the authentic source fixture \(r=1/9,\nu=3/5\), \(p=\varphi^{-1}\), \(z=2^{-20}\), original oldRIGHT dimension \(d_R=128\), and any integer \(n=128L^2\ge128\), the horizon formula of the separately owned original full128 coframe-clock protocol. **The simultaneous physical admission of this exact clock with the fixed algebraic fixture is not inferred from the integer equality.** Let \(0<\lambda_-<\lambda_+\) be the two original A eigenvalues, each multiplicity eight, and \(s=\lambda_-+\lambda_+\).
 
 The first actual native scalar is the all-128-Kraus stationary port1 rate, S11:
 \[
@@ -553,7 +553,7 @@ Their exact 2×2 Jacobian is
 \tag{S42}
 \]
 
-**THEOREM:** this determinant is STRICTLY POSITIVE for EVERY genuine physical horizon \(n=128L^2,\ L\ge1\), on the exact named fixture.
+**THEOREM:** this determinant is STRICTLY POSITIVE at the exact named algebraic fixture for EVERY integer \(n=128L^2,\ L\ge1\) (indeed every integer \(n\ge128\)). Applying those integers as one selected physical clock on that fixture remains a separate same-execution admission question.
 
 **Proof by a single analytic sign bound, not a numerical fit:** S6 gives
 \[
