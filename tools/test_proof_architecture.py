@@ -1,10 +1,12 @@
 from __future__ import annotations
 
 import pathlib
+import copy
 import hashlib
 import io
 import json
 import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -13,6 +15,9 @@ from tools import proof_architecture as proof
 from tools import proof_architecture_cold_start as cold_start
 from tools import proof_architecture_process_comparison as process_comparison
 from tools import lean_task_build
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import lean_declaration_inventory as inventory
 
 
 HISTORICAL_LEAN_SNAPSHOT_COMMIT = "f337b30e039efcc1fd30d355df35e7e6bbaf5478"
@@ -315,6 +320,8 @@ class ProofArchitectureTests(unittest.TestCase):
                                "lean_status": "FORMALIZED", "notes": "Supporting locator."})
 
         class InventoryStub:
+            claim_locator_crosswalk = staticmethod(inventory.claim_locator_crosswalk)
+
             @staticmethod
             def candidate_names(module: str, atom: str) -> list[str]:
                 return [atom]
@@ -362,6 +369,109 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual([row["id"] for row in view["matches"][0]["declared_applications"]],
                          ["r1-to-o1"])
 
+    def test_compiled_reuse_classifies_owner_without_changing_name_presence_or_acceptance(self) -> None:
+        cases = [
+            ("D0.Foo", "result", ["D0.result"], ["D0.Other"],
+             "resolved", "resolved_outside_declared_modules", [False]),
+            ("D0.Foo", "result", ["D0.result"], ["D0.Foo"],
+             "resolved", "resolved_in_declared_module", [True]),
+            ("D0.Foo", "result", ["D0.result", "D0.Foo.result"],
+             ["D0.Other", "D0.Foo"], "resolved",
+             "ambiguous_across_declared_and_other_modules", [False, True]),
+            ("", "result", ["D0.result"], ["D0.Other"],
+             "resolved", "resolved_without_module_locator", [False]),
+            ("D0.Foo", "", [], [], "unresolved", "no_theorem_locator", []),
+            ("D0.Foo", "result", ["D0.result"], [], "unresolved", "unresolved", []),
+        ]
+        for module, atom, names, owners, presence, owner_status, flags in cases:
+            with self.subTest(module=module, atom=atom, owners=owners):
+                data = dataset()
+                data["claims"][0].update(lean_module=module, lean_theorem=atom)
+                data["claims"].append({
+                    "claim_id": "CLM-2", "lean_module": "D0.Dependency",
+                    "lean_theorem": "D0.Dependency.lemma", "notes": "",
+                })
+                declarations = [
+                    {"name": name, "exists": True, "module": owner,
+                     "proof_dependencies": ["D0.Dependency.lemma"],
+                     "elaborated_type": "D0.Hypothesis → D0.Result"}
+                    for name, owner in zip(names, owners)
+                ]
+                # Inventory source-path enrichment is expected, but must not
+                # let mutations of the returned rows change the test oracle.
+                expected_declarations = copy.deepcopy(declarations)
+                for declaration in expected_declarations:
+                    declaration.setdefault("source_path", None)
+
+                class InventoryStub:
+                    claim_locator_crosswalk = staticmethod(inventory.claim_locator_crosswalk)
+
+                    @staticmethod
+                    def candidate_names(module_name: str, theorem: str) -> list[str]:
+                        return names if theorem == "result" else [theorem]
+
+                    @staticmethod
+                    def run_inventory(requested: list[str], import_root: str):
+                        return declarations, "collector-sha", "lean-source-sha"
+
+                    @staticmethod
+                    def module_source_path(module_name: str | None) -> str | None:
+                        return None
+
+                view = proof.reuse_view(data, "CLM-1", lean_inventory=InventoryStub)
+                compiled = view["compiled_claim_reuse"][0]
+                mapping = compiled["claim_locator_mappings"][0]
+                self.assertEqual(mapping["resolution_status"], presence)
+                self.assertEqual(mapping["owner_resolution_status"], owner_status)
+                self.assertEqual(
+                    [row["owner_matches_locator"] for row in mapping["owner_resolution_matches"]],
+                    flags,
+                )
+                self.assertEqual(mapping["resolved_declarations"], expected_declarations)
+                self.assertEqual(compiled["compiled_declarations"], expected_declarations)
+                self.assertEqual(len(compiled["compiled_dependency_claim_links"]), len(declarations))
+                self.assertEqual(compiled["declared_metadata_relations"]["declared_applications"], [])
+                self.assertIn("semantic claim acceptance are not inferred", compiled["interpretation"])
+
+    def test_compiled_reuse_keeps_owner_flags_local_to_each_claim_locator(self) -> None:
+        data = dataset()
+        data["claims"].append({
+            "claim_id": "CLM-2", "lean_module": "D0.Other",
+            "lean_theorem": "D0.Foo.bar", "notes": "",
+        })
+        shared = {"name": "D0.Foo.bar", "exists": True, "module": "D0.Foo",
+                  "proof_dependencies": [], "elaborated_type": "D0.Result"}
+        expected = copy.deepcopy(shared)
+        expected["source_path"] = "D0/Foo.lean"
+
+        class InventoryStub:
+            claim_locator_crosswalk = staticmethod(inventory.claim_locator_crosswalk)
+
+            @staticmethod
+            def candidate_names(module: str, atom: str) -> list[str]:
+                return [atom]
+
+            @staticmethod
+            def run_inventory(names: list[str], import_root: str):
+                return [shared], "collector-sha", "lean-source-sha"
+
+            @staticmethod
+            def module_source_path(module: str | None) -> str | None:
+                return "D0/Foo.lean" if module == "D0.Foo" else None
+
+        first = proof.reuse_view(data, "CLM-1", lean_inventory=InventoryStub)["compiled_claim_reuse"][0]
+        second = proof.reuse_view(data, "CLM-2", lean_inventory=InventoryStub)["compiled_claim_reuse"][0]
+        first_mapping = first["claim_locator_mappings"][0]
+        second_mapping = second["claim_locator_mappings"][0]
+        self.assertEqual(first_mapping["owner_resolution_status"], "resolved_in_declared_module")
+        self.assertEqual(second_mapping["owner_resolution_status"], "resolved_outside_declared_modules")
+        self.assertTrue(first_mapping["owner_resolution_matches"][0]["owner_matches_locator"])
+        self.assertFalse(second_mapping["owner_resolution_matches"][0]["owner_matches_locator"])
+        self.assertEqual(first_mapping["resolved_declarations"], [expected])
+        self.assertEqual(second_mapping["resolved_declarations"], [expected])
+        self.assertEqual(shared, expected)
+        self.assertNotIn("owner_matches_locator", shared)
+
     def test_compiled_reuse_follows_explicit_canonical_claim_alias(self) -> None:
         data = dataset()
         data["claims"][0]["release_status"] = "CORE-FORMALIZED"
@@ -372,6 +482,8 @@ class ProofArchitectureTests(unittest.TestCase):
         }]
 
         class InventoryStub:
+            claim_locator_crosswalk = staticmethod(inventory.claim_locator_crosswalk)
+
             @staticmethod
             def candidate_names(module: str, atom: str) -> list[str]:
                 return [atom]
@@ -457,6 +569,8 @@ class ProofArchitectureTests(unittest.TestCase):
         }]
 
         class InventoryStub:
+            claim_locator_crosswalk = staticmethod(inventory.claim_locator_crosswalk)
+
             declarations = {
                 "D0.Foo.bar": {"name": "D0.Foo.bar", "exists": True,
                                "module": "D0.Foo", "proof_dependencies": [],

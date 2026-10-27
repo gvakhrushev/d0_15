@@ -11359,3 +11359,40 @@ The matching search comparison is
 (SHA-256 `cd41368b9f0b9ed7d6bcbac2e32546e7321a99e66b8dbf25957271c853cbc587`).
 These are retrieval and declaration evidence, not physical selection or
 independent acceptance of the full C0 corpus.
+
+### 27 October actual graded Gram matrix and its counting trace
+
+The next supported consumer, `ArchiveGradedCochainGramTrace`, constructs the
+matrix `archiveGradedPullbackMatrix` from images of the actual basis cochains
+and proves its `mulVec` is the existing graded pullback. It applies the
+bilinear Gram theorem to those basis images to prove that `BᵀB` is the
+specified diagonal matrix. Summing the actual diagonal gives the general
+counting trace `((L+1) + L*c_L²)^4`; the level-zero result `50625/16` is a
+corollary of that general theorem. These theorems supersede only the preceding
+checkpoint's statement that the matrix and trace had not yet been compiled.
+They do not prove a separate fixed-sector trace, the partially normalized
+quantity 256, a unique physical Hodge metric or physical realization.
+Independent read-only scope review checked the actual operator binding and
+normalization. The trace theorem's Lean axiom report is `propext`,
+`Classical.choice`, and `Quot.sound`, without the CAR `native_decide`
+dependencies of the chain theorem. The historical unresolved theorem-name
+locator `hodge_mass_trace_sum` is retained and explicitly marked unresolved.
+
+The final public `D0.All` build passed 4,747 jobs with source digest
+`3e51f3eebf1a980c1d1608ab7052971108b57670ffe8f6e0ba9cf6d900433d92`.
+The corresponding Hodge claim remains `OPEN / PROOF-TARGET` pending the
+broader source-to-claim and physical obligations.
+
+### 27 October compiled-reuse module ownership correction
+
+`compiled_claim_reuse_view` now applies the existing declaration-inventory
+crosswalk to each claim locator. Its original name-presence result and full
+compiled rows remain available; separate owner-aware fields distinguish an
+actual declaration in a listed module from a declaration under a different
+owner, missing module locator, and ambiguous candidates. This fixes the case
+where a globally resolved declaration name was previously presented without
+flagging that its compiled owner differed from the claim's module. The added
+fields are still locator evidence: proof dependencies and declared
+applications retain their own types, and no semantic or scientific acceptance
+is inferred. Regression controls cover correct and wrong owners, mixed-owner
+ambiguity, missing locators and unresolved names.

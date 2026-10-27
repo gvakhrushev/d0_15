@@ -1848,6 +1848,15 @@ def compiled_claim_reuse_view(dataset: dict[str, Any], item: dict[str, Any],
             "resolution_status": "resolved" if resolved else "unresolved",
             "resolved_declarations": resolved,
         })
+    # Keep the historical name-presence result and full declaration rows, but
+    # classify owner matches separately using the shared inventory crosswalk.
+    # The same declaration may occur under different locators, so owner flags
+    # belong to the locator, not to the shared declaration object.
+    owner_crosswalk = lean_inventory.claim_locator_crosswalk(mappings, rows)
+    for locator_result, owner_result in zip(locator_results, owner_crosswalk["mappings"]):
+        locator_result["owner_resolution_status"] = owner_result["resolution_status"]
+        locator_result["declared_modules"] = owner_result["declared_modules"]
+        locator_result["owner_resolution_matches"] = owner_result["matches"]
     declared_claim_locators: dict[str, list[dict[str, str]]] = {}
     for claim in dataset["claims"]:
         target_claim = str(claim.get("claim_id", ""))
@@ -1882,7 +1891,9 @@ def compiled_claim_reuse_view(dataset: dict[str, Any], item: dict[str, Any],
         "public_import_root": import_root,
         "interpretation": (
             "Claim theorem strings are candidate-name locators. Compiled declaration presence and "
-            "reported Lean proof dependencies are separate evidence. A dependency joined to another "
+            "reported Lean proof dependencies are separate evidence. Name presence does not imply "
+            "that a declaration is owned by a listed module; see owner_resolution_status and "
+            "owner_resolution_matches. A dependency joined to another "
             "claim locator is a candidate crosswalk only; registry application links, conceptual "
             "edges, and semantic claim acceptance are not inferred from name matches."
         ),
