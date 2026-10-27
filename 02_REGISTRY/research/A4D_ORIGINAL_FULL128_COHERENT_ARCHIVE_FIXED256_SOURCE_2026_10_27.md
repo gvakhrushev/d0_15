@@ -369,3 +369,47 @@ No 128^n history differentiation, fresh probability floor, free continuum primit
 The coherent-archive first source is O(1) and its per-tick contribution vanishes, whereas the ACTUAL original paid port first source is exactly extensive. The limit is a real native spectral-source law, not an Einstein equation. It is NOT h-uniform: the positive delta_h, actual physical tangent norm, L_v, physical n_h, and the joint h-refinement still need their own bound.
 
 **Sharply testable field consequence:** if an actually admitted native perturbation changes A only by an internal unitary re-encoding, \(DA[v]=[X,A]\) with X^*=-X, then cyclic trace gives the EXACT right side of Q25 equal to zero. No claim is made that this internal isospectral direction is automatically a local Lorentz or geometric diffeomorphism direction. The all42 Einstein consumer must explicitly determine whether its transverse coframe source lies in that spectral kernel; if it does, real further marked-archive/scene/clock terms must carry the response. This is a concrete, non-fittable same-carrier source test.
+
+
+## 10. Theorem Q-G — the complete original internal record already supplies its own gauge Ward identity
+
+This final step uses **every full128 fine outcome and its chronological order**, not merely the asymptotic spectral normal Q25. Let U be a unitary RE-ENCODING of the same original DATA carrier, not an extra physically executed gate. Transform all actual original fine Kraus operators and the initial endogenous preparation COHERENTLY:
+
+\[
+K'_\alpha=UK_\alpha U^*,\qquad
+\rho'=U\rho U^*.
+\]
+
+For every actual n-letter fine word gamma, product composition telescopes, so \(K'_\gamma=UK_\gamma U^*\). The coherent fresh-archive density has literal matrix entries
+
+\[
+(\Omega_n)_{\gamma\beta}
+=\operatorname{Tr}_D(K_\gamma\rho K_\beta^*).
+\]
+
+Therefore cyclic trace proves the strong all-word equality
+
+\[
+\boxed{\Omega'_n=\Omega_n,\quad
+P'_{\rm fine,n}=P_{\rm fine,n},\quad
+P'_{\rm port,n}=P_{\rm port,n}.}
+\tag{Q26}
+\]
+
+This is equality of the COMPLETE fine coherent-record density, not just its eigenvalues or two selected marginal probabilities. If native fixed record code lengths are co-transported unchanged (as they must be for a pure representation relabeling), all three actually defined record statistics in Q14/Q19 and the port-Bellman P15 have identical values. The reference purification is equivalently co-transported on DATA and oldRIGHT.
+
+For an ACTUAL differentiable re-encoding path \(U(t)=e^{tX}\), \(X^*=-X\), Q26 gives the exact internal record Ward identity on its tangent:
+
+\[
+\boxed{\delta K_\alpha=[X,K_\alpha],\
+\delta\rho=[X,\rho]\quad\Longrightarrow\quad
+D\Omega_n=0,\qquad
+D\mathcal B_{\rm record,n}=0.}
+\tag{Q27}
+\]
+
+This holds at every finite n, including fine and coherent history sources, without invoking a continuum observer, diffeomorphism invariance, stationarity/minimality of the price, or the large-n limit. If one instead **physically executes** additional U gates, their real clock/work prices can differ: Q27 is only an internal equivalent representation of the SAME word, not a free physical actuation.
+
+The standard edge-typed extension is equally exact: for a history whose Kraus arrows map native fibres \(H_x\to H_y\), a coherent internal frame change \(K'_{\alpha:x\to y}=U_yK_{\alpha:x\to y}U_x^*\) telescopes on the full path to \(U_{\rm end}K_\gamma U_{\rm start}^*\). With initial state transported by U_start, the final coherent archive Gram is unchanged after tracing the transported endpoint. This is a **mathematical gauge law for represented native arrows**; showing that the physically selected D0 solder/coframe/proper-Lorentz law satisfies this transformation with its complete price is still a separate original all42 application, not a consequence of naming the arrows.
+
+**Consumer:** quotient these PROVEN pure re-encoding directions before comparing the physical full42 cofield to DJ2; do not quotient independently observable connection, observer, record, clock or matter directions. This is an exact endogenous Ward on the correctly typed internal class and removes the need to postulate a separately observing laboratory frame on that class. It is NOT off-shell gravitational Diff Ward, local Lorentz invariance of the unverified whole Book action, or a proof of Einstein dynamics.
