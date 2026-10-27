@@ -10773,3 +10773,67 @@ validation reports zero warnings; work validation passes after regenerating
 the status view. The edited Lean files contain no `sorry` or `admit`, and the
 EOL-aware diff check passes. These checks validate this finite-source slice
 only; the larger formalization and physical-composition goal remains active.
+
+## Exact Lean claim-owner crosswalk and archive scope correction (27 October 2026)
+
+`tools/lean_declaration_inventory.py` now emits a `claim_locator_crosswalk` for
+`--claim-id` and `--all-claims`. For each theorem atom it records exact
+compiled-name matches, the owning module and source path, and whether that
+module is one of the semicolon-separated `lean_module` locators. A theorem
+found through a parent namespace but owned by another module is explicitly
+reported outside the declared owner set. This remains locator evidence; it
+does not establish that the declaration proves the registry prose.
+
+The all-claims crosswalk was collected from clean snapshot
+`f25e19467f689eb66b2b58922704a8ad34db7757`, public import `D0.All`, using
+Lean 4.30.0 and Python 3.12.14. Its claim-registry digest is
+`3d04e025ffa849d07ae2d7f6100a92b7f26714066806e8ab22156472a9314c2a`, whole
+Lean-source digest `b22e81274a029862376799adb0d087124ad8d1e4d096747d15257832add27226`,
+and collector digest
+`cee480afad31f5235a5d04f633901ed210f6eb11fef7f81993c5032d36a191d5`. Across
+2,750 theorem-atom mappings, 2,533 resolve to a declared owner module, 13
+resolve only outside the declared owner set, four have multiple distinct
+matches (three within the declared module set and one crossing its boundary),
+and 22 have no exact declaration, including two already-open proof targets.
+Another 178 claim rows have no theorem locator. These counts are a locator
+audit, not a proof-coverage percentage.
+The full derived view is
+[`claim_locator_owner_crosswalk_2026-10-27.json`](sources/d0_proof_architecture_formalization_2026-10-24/claim_locator_owner_crosswalk_2026-10-27.json),
+SHA-256 `3a0d534f63f39fefbdac4fe2dd357d0e5f3d61f330bdc5a1a5480d1e64301b05`.
+
+The same compiled snapshot resolves the actual owner declarations for three
+archive claims whose additional theorem atoms were absent. Their precise
+signatures are pinned in
+[`archive_cochain_owner_declarations_2026-10-27.json`](sources/d0_proof_architecture_formalization_2026-10-24/archive_cochain_owner_declarations_2026-10-27.json),
+SHA-256 `c4490473a326c09967ec1f572d9be52046305df2ba42bbd9e99f380c33df1aba`:
+
+- `archive_cubical_cochain_carrier_owner` proves a 16-element label type, the
+  scalar Betti-number sum 16, and `card Role = 4`. The separate identity
+  equivalence compares the bare label type with the Fock-state type. This
+  module does not construct the grid-indexed cochain complex `H_L` or its
+  claimed `l²(X_L) ⊗ Λ*(C⁴)` identification.
+- `archive_1d_cochain_refinement_owner` proves fixed scalar trace equalities
+  3 and 2 and their inequality. The module does not define the vertex map
+  `B₀`, edge map `B₁`, or differential `d_L`, so the isometry and chain-map
+  equations are not formalized there.
+- `archive_refinement_hodge_weights_owner` proves the endpoint trace values,
+  the scalar weighted total 256, and `card Role = 4`; separate lemmas prove the
+  five values of its scalar `3^(4-k)` formula. The module defines no refinement
+  maps `B_S` or mass matrices `W_S`, and does not derive a unique Hodge metric
+  from the refinement.
+
+Accordingly, these three rows in `claims.csv` now use `OPEN / PROOF-TARGET`;
+their exact finite owner theorems remain available as partial support, and
+their module links are explicit in `formal_support.csv`. No mathematical
+no-go is claimed. The unresolved map, complex, and metric constructions remain
+the proof targets.
+
+The owner declarations were extracted with types, source ranges, and axiom
+footprints at the same clean snapshot and Lean-source digest as the crosswalk.
+The registry-generated `ClaimMap` builds narrowly (2 jobs), and the final
+`D0.All` replay passes (4,741 jobs). The 72 focused declaration-inventory,
+generated-view, and claim-map-coverage tests pass; the claim-map coverage
+validator passes; the formalization-debt audit remains at 5 findings against
+its 5-finding baseline; repository validation reports zero warnings; and work
+validation passes after regenerating `00_WORK/STATUS.md`. This corrects the
+formal support boundary for these three rows and does not freeze or accept C0.
