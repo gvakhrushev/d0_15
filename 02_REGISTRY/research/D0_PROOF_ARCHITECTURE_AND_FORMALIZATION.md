@@ -11468,3 +11468,16 @@ The corrected view displays none for that claim. Regression controls cover
 claims, results, obligations, applications, empty IDs, and the compiled-reuse
 consumer while retaining a real proof-dependency link. This is navigation
 integrity, not creation or acceptance of a scientific application.
+
+The clean snapshot for this correction is
+`77ea5150` (full SHA in the receipts). The actual corrected claim output is
+[`scoped_attempt_claim_reuse_2026-10-27_77ea5150.json`](sources/d0_proof_architecture_formalization_2026-10-24/scoped_attempt_claim_reuse_2026-10-27_77ea5150.json)
+(SHA-256 `90532662dc2242acd00e47254e95b6b3eca5162b0fc41141b87a119a19f26ef2`).
+The updated search comparison is
+[`proof_architecture_search_process_comparison_2026-10-27_scoped_77ea5150.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_scoped_77ea5150.json)
+(SHA-256 `223afd4baf162a34c07df4294f96841304dcd50917fdd8f0392392d2f0a5bdb7`).
+The matching cold-start replay found all 169 required references in 24/24
+cases and passed the impact control; the compact receipt is
+[`proof_architecture_cold_start_summary_2026-10-27_scoped_77ea5150.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_scoped_77ea5150.json)
+(SHA-256 `7631f8fa98155686a1f66ea6be02d979ab0e94b9e649275bf7756acc4d0a3579`).
+The counts do not establish semantic claim acceptance or full C0 coverage.
