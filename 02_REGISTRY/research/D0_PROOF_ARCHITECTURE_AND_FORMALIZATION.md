@@ -11015,3 +11015,36 @@ empty results and 530,124 bytes for the current results; this measures
 response payload, not tokens or file-reading effort. Owner correctness,
 hypothesis preservation, and whether new mathematics is needed remain manual
 review items. Retrieval success is not semantic acceptance.
+
+## Typed source-link metrics and refreshed claim-heading candidates (27 October 2026)
+
+The current claim-heading candidate view was regenerated from clean snapshot
+`0253f36601d13cb29329d735b53661bc108e0b99` after the registry locator repair.
+Its `claims.csv` digest is
+`0d9cca180d8c33a04207e69c948923231b4c450e9dbd412f826e8d162c14f07a`; the
+view SHA-256 is
+`86bb031b3064410644eacfc9a3fa73bdab828cb2326e0e6a111c74a3b1bf2e77`. It
+retains 674 book headings as candidates: 40 exact-heading candidates, 213
+ranked-heading candidates, and 444 without a claim-heading candidate. These
+remain retrieval counts, not C0 coverage or source acceptance.
+
+The same-question comparator is now schema v2, generated at clean snapshot
+`aecfeada904b0fcdcb1b398cc3e69c17ff5612e4`. It names exact assembly owner
+links separately from `formal_support` metadata locators and separately from
+source-authored owner fields. Its 24-query report is
+[`proof_architecture_search_process_comparison_2026-10-27_typed_source_links_v2.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_typed_source_links_v2.json),
+SHA-256 `a5776b9b9805e90eec4e9a09565d99cc6e250eedd6703dd1ae1e6b487a5a558a`.
+For the seven source-scoped questions, the legacy search surfaced 0/7 expected
+paths and the bounded current search surfaced 7/7. There are eight expected
+source references over seven unique paths: one reference has an exact
+assembly-owner link; four references have exact `formal_support` locators,
+with eight locator rows over three unique paths; three unique paths have
+neither assembly-owner nor formal-support links. One of the support-linked
+source files also carries a source-authored `Existing owner` field, which
+remains unpromoted.
+
+The v2 payload-size proxy is unchanged at 48 bytes for the legacy empty
+results and 530,124 bytes for current results. The comparison records these
+as response sizes, not reading cost; it does not assess semantic owner
+correctness, hypothesis preservation, or whether more mathematics is
+required. Those remain manual review obligations.
