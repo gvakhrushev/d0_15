@@ -42,7 +42,9 @@ profile and a pointwise strict chart margin; it does not derive smoothness or
 the pointwise margin from the CAR generator or preparation. Its coefficient-
 norm application derives that pointwise margin for cubic profiles on `[0,1]`
 and carries an explicit nonzero initial matter rate; this finite-dimensional
-subset is not selected by the original D0 generator.
+subset is not selected by the original D0 generator. The cubic application
+returns the same recursive record consumed by the exact stencil-source theorem;
+the final composition pairs that source identity with the CAR-complement bound.
 
 This is an exact finite algebraic and calculus application. It does not
 formalize the original CAR construction, the 40 varied Cartan equations, or
@@ -1247,6 +1249,63 @@ noncomputable def cubicMatterCoefficientNorm (c0 c1 c2 c3 : Fin 2 → ℝ) : ℝ
     ‖twoComponentMatterEuclidean c2‖ +
     ‖twoComponentMatterEuclidean c3‖
 
+/-- The analytic derivative of the cubic profile is its declared midpoint rate. -/
+theorem cubicMatterProfile_hasDerivAt
+    (c0 c1 c2 c3 : Fin 2 → ℝ) (t : ℝ) (i : Fin 2) :
+    HasDerivAt (fun s : ℝ => cubicMatterProfile c0 c1 c2 c3 s i)
+      (cubicMatterMidpointRate c1 c2 c3 t i) t := by
+  have hid : HasDerivAt (fun s : ℝ => s) 1 t := hasDerivAt_id t
+  have h1 : HasDerivAt (fun s : ℝ => c1 i * s) (c1 i) t := by
+    simpa using hid.const_mul (c1 i)
+  have h2pow : HasDerivAt (fun s : ℝ => s ^ 2) (2 * t) t := by
+    simpa using hid.pow 2
+  have h2 : HasDerivAt (fun s : ℝ => c2 i * s ^ 2) (c2 i * (2 * t)) t := by
+    simpa using h2pow.const_mul (c2 i)
+  have h3pow : HasDerivAt (fun s : ℝ => s ^ 3) (3 * t ^ 2) t := by
+    simpa using hid.pow 3
+  have h3 : HasDerivAt (fun s : ℝ => c3 i * s ^ 3) (c3 i * (3 * t ^ 2)) t := by
+    simpa using h3pow.const_mul (c3 i)
+  have h0 : HasDerivAt (fun s : ℝ => c0 i) 0 t := hasDerivAt_const t (c0 i)
+  have hsum := ((h0.add h1).add h2).add h3
+  convert hsum using 1
+  simp [cubicMatterMidpointRate]
+  ring
+
+/-- Sampling the Euclidean lift differentiates to the same cubic matter rate. -/
+theorem cubicMatterEuclideanProfile_sampledRate_eq
+    (c0 c1 c2 c3 : Fin 2 → ℝ) (h : ℝ) (n : ℕ) :
+    sampledMatterMidpointRate
+      (fun t i => cubicMatterEuclideanProfile c0 c1 c2 c3 t i) 0 h n =
+        cubicMatterMidpointRate c1 c2 c3 (((n : ℝ) + 1 / 2) * h) := by
+  funext i
+  simp only [sampledMatterMidpointRate, cubicMatterEuclideanProfile_apply]
+  have hMidpoint : 0 + (n : ℝ) * h + h / 2 = ((n : ℝ) + 1 / 2) * h := by ring
+  rw [hMidpoint]
+  exact (cubicMatterProfile_hasDerivAt c0 c1 c2 c3 _ i).deriv
+
+/--
+The Euclidean-lift midpoint history is exactly the recursively defined cubic
+matter record used by the nonvacuum stencil source theorem.
+-/
+theorem cubicMatterMidpointSample_eq_sampledHistory
+    (h : ℝ) (c0 c1 c2 c3 : Fin 2 → ℝ) (n : ℕ) :
+    cubicMatterMidpointSample h c0 c1 c2 c3 n =
+      finiteMatterMidpointHistory h
+        (sampledMatterMidpointRate
+          (fun t i => cubicMatterEuclideanProfile c0 c1 c2 c3 t i) 0 h)
+        (sampledMatterExactValues
+          (fun t i => cubicMatterEuclideanProfile c0 c1 c2 c3 t i) 0 h 0) n := by
+  induction n with
+  | zero =>
+      funext i
+      simp [cubicMatterMidpointSample, finiteMatterMidpointHistory,
+        sampledMatterExactValues, cubicMatterEuclideanProfile_apply,
+        cubicMatterProfile]
+  | succ n ih =>
+      have hRate := cubicMatterEuclideanProfile_sampledRate_eq c0 c1 c2 c3 h n
+      simp only [cubicMatterMidpointSample, finiteMatterMidpointHistory]
+      rw [ih, hRate]
+
 theorem cubicMatterEuclideanProfile_norm_le_coefficientNorm
     (c0 c1 c2 c3 : Fin 2 → ℝ) (t : ℝ)
     (ht : t ∈ Set.Icc (0 : ℝ) 1) :
@@ -1316,13 +1375,7 @@ theorem sampledCubicMatterMidpointCARComplement_positive_for_all_sufficiently_fi
     cubicMatterMidpointRate c1 c2 c3 0 ≠ 0 ∧
       ∃ N₀ : ℕ, 0 < N₀ ∧ ∀ N : ℕ, N₀ ≤ N → ∀ n ≤ N,
         0 < twoComponentCARComplementAmplitude p
-          (finiteMatterMidpointHistory (1 / (N : ℝ))
-            (sampledMatterMidpointRate
-              (fun t i => cubicMatterEuclideanProfile c0 c1 c2 c3 t i)
-              0 (1 / (N : ℝ)))
-            (sampledMatterExactValues
-              (fun t i => cubicMatterEuclideanProfile c0 c1 c2 c3 t i)
-              0 (1 / (N : ℝ)) 0) n) := by
+          (cubicMatterMidpointSample (1 / (N : ℝ)) c0 c1 c2 c3 n) := by
   let ψ : ℝ → EuclideanSpace ℝ (Fin 2) :=
     cubicMatterEuclideanProfile c0 c1 c2 c3
   have hC3 : ContDiff ℝ 3 ψ := by
@@ -1347,6 +1400,51 @@ theorem sampledCubicMatterMidpointCARComplement_positive_for_all_sufficiently_fi
   constructor
   · rw [hInitialRate]
     exact hNonzeroRate
-  · simpa [ψ] using hThreshold
+  · obtain ⟨N₀, hN₀, hPositive⟩ := hThreshold
+    refine ⟨N₀, hN₀, ?_⟩
+    intro N hN n hn
+    rw [cubicMatterMidpointSample_eq_sampledHistory
+      (1 / (N : ℝ)) c0 c1 c2 c3 n]
+    exact hPositive N hN n hn
+
+/--
+The cubic matter realization has both a positive CAR complement and the exact
+five-point stencil source on the same recursively constructed record at every
+sufficiently fine mesh. This composes the source adapter with the CAR bound;
+it does not assert physical admission or select the cubic profile.
+-/
+theorem nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource
+    (coupling p x y : ℝ) (a2 b2 a3 b3 : ℝ → ℝ)
+    (c0 c1 c2 c3 : Fin 2 → ℝ)
+    (hCoefficientMargin : cubicMatterCoefficientNorm c0 c1 c2 c3 <
+      Real.sqrt (1 - p)) (hNonzeroRate : c1 ≠ 0) :
+    cubicMatterMidpointRate c1 c2 c3 0 ≠ 0 ∧
+      ∃ N₀ : ℕ, 0 < N₀ ∧ ∀ N : ℕ, N₀ ≤ N → ∀ n ≤ N,
+        0 < twoComponentCARComplementAmplitude p
+          (cubicMatterMidpointSample (1 / (N : ℝ)) c0 c1 c2 c3 n) ∧
+        transverseFivePointLaplacian (1 / (N : ℝ))
+          (fun x y => nonvacuumBrinkmannProfile coupling
+            (twoComponentMatterNormSq
+              (cubicMatterMidpointRate c1 c2 c3
+                (((n : ℝ) + 1 / 2) * (1 / (N : ℝ)))))
+            (a2 (((n : ℝ) + 1 / 2) * (1 / (N : ℝ))))
+            (b2 (((n : ℝ) + 1 / 2) * (1 / (N : ℝ))))
+            (a3 (((n : ℝ) + 1 / 2) * (1 / (N : ℝ))))
+            (b3 (((n : ℝ) + 1 / 2) * (1 / (N : ℝ)))) x y) x y =
+          -4 * coupling * twoComponentMatterNormSq
+            (finiteMatterForwardGradient (1 / (N : ℝ))
+              (cubicMatterMidpointSample (1 / (N : ℝ)) c0 c1 c2 c3 n)
+              (cubicMatterMidpointSample (1 / (N : ℝ)) c0 c1 c2 c3 (n + 1))) := by
+  obtain ⟨hInitialRate, N₀, hN₀, hCAR⟩ :=
+    sampledCubicMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes
+      c0 c1 c2 c3 p hCoefficientMargin hNonzeroRate
+  refine ⟨hInitialRate, N₀, hN₀, ?_⟩
+  intro N hN n hn
+  refine ⟨hCAR N hN n hn, ?_⟩
+  have hNpos : 0 < N := lt_of_lt_of_le hN₀ hN
+  have hNcast : (N : ℝ) ≠ 0 := by exact_mod_cast hNpos.ne'
+  have hMesh : (1 / (N : ℝ)) ≠ 0 := div_ne_zero (by norm_num) hNcast
+  exact nonvacuumCubicMidpointSource_matches_record
+    (1 / (N : ℝ)) coupling x y a2 b2 a3 b3 c0 c1 c2 c3 n hMesh
 
 end D0.Geometry
