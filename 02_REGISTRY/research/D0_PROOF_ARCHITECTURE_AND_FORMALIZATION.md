@@ -10745,10 +10745,11 @@ have been removed. Historical candidate-resolution snapshots retain their
 original locators. The entropy and channel claims are now `OPEN` under
 `ASSUMP-HST-EXTERNAL`.
 
-The registry maps `D0-HST-ARCHIVE-001` only to the finite-source theorem and
-maps `D0-ARCHIVE-ENTROPY-001` and `D0-ARCHIVE-GAUSSIAN-CHANNEL-001` to open
-proof targets. This is a scoped repair of formal meaning and claim status,
-not an external HST proof, a BOOK transport, or acceptance of C0.
+The registry maps `D0-HST-ARCHIVE-001` only to the finite-source theorem,
+records its explicit module support in `formal_support.csv`, and maps
+`D0-ARCHIVE-ENTROPY-001` and `D0-ARCHIVE-GAUSSIAN-CHANNEL-001` to open proof
+targets. This is a scoped repair of formal meaning and claim status, not an
+external HST proof, a BOOK transport, or acceptance of C0.
 
 The focused modules passed (`D0.Probability.SubgaussianArchive`, 3,527 Lake
 jobs; `D0.Probability.FiniteArchiveHSTInput`, 3,528 jobs), and the final
