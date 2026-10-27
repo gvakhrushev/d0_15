@@ -342,3 +342,109 @@ Proof: the two continuous cotangent sections agree on the dense subset \(U^\circ
 For the reverse implication **native stationarity implies the three original Cartan/Einstein equations**, one further well-typed domain fact is needed: the ACTUAL admitted native tangent image must detect each of the original three nonzero \(16+24+2\) normal Euler rows (at every relevant site), or a proved equivalent set of normal constraints. A projected equation on a smaller variation image does NOT automatically assert all original continuum Einstein components. This is the minimal intrinsic admissibility/soundness boundary rather than a gratuitous external full-field assumption.
 
 Source-checker identities S23 and the decomposition \(v=DF[v]v_F+DQ[v]v_Q+k\), \(k\in\ker L\), are exact linear algebra. Their small symbolic replay is to be included in the existing narrow checker, not used as another Einstein root certificate.
+
+
+## 10. Theorem S-I — original full16 spectral source algebra closes on TWO traces, even for arbitrary ambient matrix variations
+
+S5 is stronger than a spectrum calculation. Fix ANY positive original CAR16 \(A\) at a regular fixture where \(A^2-sA+tI=0\), \(\operatorname{Tr}A=8s\), \(t>0\). Here \(s,t\) are the actual internal rational functions S4. An arbitrary ambient Hermitian perturbation \(\delta A\) need **not** satisfy the quadratic identity at neighboring matrices; the first-source formula below remains exact at the original point.
+
+For every supplied scalar fugacity \(z\) for which \(I-zA\) is invertible, literal multiplication and S5 give
+
+\[
+\boxed{
+(I-zA)^{-1}
+=\frac{(1-zs)I+zA}{1-zs+z^2t}.
+}
+\tag{S29}
+\]
+
+This is an **exact algebraic inverse** of the ORIGINAL full16 operator; no branch selection, spectral truncation, Taylor expansion or approximate inverse.
+
+When \(1-z\lambda_\pm>0\), the complete determinant and its logarithmic action reduce exactly to
+
+\[
+\boxed{\det(I-zA)=(1-zs+z^2t)^8,\qquad
+\mathcal J_z(A)=-\ln\det(I-zA)=-8\ln(1-zs+z^2t).}
+\tag{S30}
+\]
+
+For EVERY arbitrary ambient Hermitian matrix perturbation \(\delta A\), **even one that splits the original eightfold eigenvalue multiplicities**, the exact original first jet is
+
+\[
+\boxed{
+D\mathcal J_z[A][\delta A]
+=\frac{
+z(1-zs)\operatorname{Tr}(\delta A)
++z^2\operatorname{Tr}(A\,\delta A)}
+{1-zs+z^2t}.
+}
+\tag{S31}
+\]
+
+Proof: Jacobi's finite determinant identity gives
+\(D\mathcal J_z=\operatorname{Tr}[z(I-zA)^{-1}\delta A]\). Substitute S29 and use linearity/cyclicity of trace. S30 follows from the two exact eigenvalues each with multiplicity eight. There is **no** assumption that neighboring A still has two distinct eigenvalues.
+
+**Universal first-source span:** put \(T_1(A)=\operatorname{Tr}A\), \(T_2(A)=\operatorname{Tr}A^2\). For ANY differentiable scalar function f analytic near the two actual positive eigenvalues, spectral calculus gives
+\[
+f'(A)=\alpha_f I+\beta_f A,
+\quad
+\beta_f=\frac{f'(\lambda_+)-f'(\lambda_-)}{\lambda_+-\lambda_-},
+\quad
+\alpha_f=f'(\lambda_-)-\beta_f\lambda_-.
+\]
+Hence for EVERY ambient original-field-induced variation \(\delta A\),
+\[
+\boxed{
+D\operatorname{Tr} f(A)[\delta A]
+=\alpha_f D T_1[\delta A]
++\frac{\beta_f}{2}D T_2[\delta A].
+}
+\tag{S32}
+\]
+At a repeated eigenvalue the divided difference is interpreted by its continuous derivative limit; the claim remains valid.
+
+Thus ANY **actual native price component proved to be a spectral trace of THIS SAME A** has its full first covector in the two-dimensional intrinsic span
+\[
+\boxed{\operatorname{span}\{D\operatorname{Tr}A,\ D\operatorname{Tr}A^2\}.}
+\tag{S33}
+\]
+This source-span fact holds without freezing arbitrary coframe/link variation of A, without an imported metric, and without assuming that all Book03 heat/feedback/oldRIGHT operators are one and the same A. It is NOT a theorem that a distinct Book Hodge/scene/clock functional automatically belongs to S33; any such identification must be proved from its real operator.
+
+## 11. Theorem S-J — these TWO internal traces themselves read the original native (r,nu) chart locally
+
+For the unchanged original source family S1–S4, the two true trace invariants are
+\[
+T_1=8s(r,\nu),\qquad T_2=8(s(r,\nu)^2-2t(r,\nu)).
+\]
+The exact determinant of their Jacobian with respect to the native internal parameters (r,nu) is
+
+\[
+\boxed{
+\det\frac{\partial(T_1,T_2)}{\partial(r,\nu)}
+=
+\frac{\nu^5 r\,\bigl(
+8r^7+25r^6+32r^5-15r^4-56r^3+39r^2+15
+\bigr)}{2048(r-1)^5(r+1)^5}.
+}
+\tag{S34}
+\]
+
+At the authentic \(r=1/9,\nu=3/5\) fixture this is the EXACT nonzero rational
+
+\[
+\boxed{
+\det\frac{\partial(T_1,T_2)}{\partial(r,\nu)}
+=-\frac{18126055017}{262144000000000}\ne0 .
+}
+\tag{S35}
+\]
+
+The inverse-function theorem therefore applies on a neighborhood of this ORIGINAL internal fixture: **the two intrinsic spectral traces uniquely recover the two native boost/scale parameters locally**. No external observer or additional spectroscopy has been introduced. This is an actual internal self-reading witness in the exact four-CAR source.
+
+### One reduced physical source test, not a false GR declaration
+
+Suppose the actual same-execution native physical map from original coframe/link/matter field variations to the original full16 A is constructed and its COMPLETE selected spectral-price component is proved to be \(\operatorname{Tr}f(A)\). Then S32 gives its entire field first-source through only two native trace differentials; S19–S26 describe the separate original two NORMAL geometric density differentials \(DF,DQ\).
+
+A source equivalence can now be proved by constructing and verifying the **actual native 2×2 FIRST-JET map** between those two pairs (plus the explicit first sources of ALL non-A Book/scene/clock/oldRIGHT components), including its kernel. The map must come from genuine D0 shared CAR/plaquette history operands, not a chosen matrix sending two numbers to \(\lambda_-\). If that genuine map and full source pass S25 over the generic common-null family, S28 extends the result to its stationary Einstein roots.
+
+The crucial nontrivial boundary is now precise. Spectral self-reading of native r,nu is proved; spectral first-source closure on original A is proved. **Physical coframe/link/matter ↦ this same original A and FULL native Book valuation remain open.** M1 alone does not identify the two coordinate pairs or choose away actually distinguishable archive records. Consequently \`GR_closed=false\`. This is a real algebraic reduction in the existing physical composition, not another geometry solution or a new source fitted from Einstein.
