@@ -15461,3 +15461,142 @@ AST/JSON and unchanged native owner. Only the two owned paths changed;
 whitespace validation passes. This validation note changes no scientific
 input. Publication and immutable remote blob verification follow in the
 same existing Draft PR; no old mathematical or Lean suite is repeated.
+
+### 27 October — lift field variations through the actual shared body
+
+SAME #334 / constitutive/native-programme-v1; native realization and
+composition, input 4316d1b0. Named remaining application: 7ck's owned
+operator/readout right inverse does not itself place every desired field
+tangent inside an actual body word. Consume 7at407's signed-G identity
+cells and 7ck's shared-body map. Construct a generic explicit Walsh/CNOT
+frame for so(2^q), not another gravity rank search or Lie-algebra census.
+Every cell is a real native identity at its base; its matrix first jet
+is a transported raw G direction. Norms and literal inverse costs matter.
+
+Use the frame AFTER the body for the left speed ZW. Compose the rotor's
+actual Sylvester derivative and the same-body Choi decoder. At an actual
+compiled point use explicit right translation and a quantitative Neumann
+margin, not a derivative of a discontinuous compiler lookup. Retain the
+owned material C_psi actuator and all genuine density/frame data; a
+geometry-only lift is not automatically all 42 field coordinates.
+
+The decisive check is generic symbolic q2/q3 reconstruction, actual
+primitive inventory and one changed native identity cell/jet, plus a small
+noncommuting rotor/off-image Jacobian control if needed. No full gravity
+matrix, geometric inverse/rank, old heat/root or Lean suite is replayed.
+The matrix comparison and literal paid native-code stencil are separate
+conclusions; no continuous physical Golden-angle permission is asserted.
+Only the two owned paths may change. No new scientific execution, selector,
+action, claim or registry acceptance is created.
+
+27 October result, primary 7cl / equations 742--751. A generic explicit
+Walsh/CNOT identity-cell frame realizes every SO(2^q) body MATRIX first
+jet, with max raw G speed at most the target operator speed. No Lie/rank
+search or new gravity root is used. The cells follow the actual 7ck body
+chronologically, giving ZW; prepending would give WZ. The product is a
+first-jet synthesis, not an assertion that noncommuting cells equal exp(tZ)
+at finite t. The same body still drives SOURCE and metric.
+
+Counts are actual primitive counts. For M=d(d-1)/2 cells the forward frame
+has G2M, SourceI8M and CX=[(2q+9)d^2-(q+9)d]/2. The literal inverse has
+SourceI32M and is 24M stages longer. The q2 forward/inverse lengths are
+142/286; q3 gives 712/1384. Nothing is removed because its base endpoint
+is identity. The INTERNAL full two-term norm is max|alpha|/sqrt22, with
+all C0/C1 modes; the bare-clock 1/sqrt2 is a different operator. New frame
+and inverse stages enter the source/query precision and whole paid clock.
+
+The original rotor gives the actual noncommuting Sylvester derivative and
+its delta(1+kappa/s0) field-speed bound. Explicit right translation onto a
+nearby native body supplies derivative alignment; a compiler value error
+alone would not. The actual decoded Jacobian is corrected only after the
+effective Neumann margin 749 is satisfied. Its inverse/actuator norms,
+N_tomo l1 factor, ambient p^(-q)/delta/anchor losses and actual xi remain.
+No full GR numerical margin is inferred from the small test.
+
+Material directions consume the owned normalized CAR bank, exact s/psi
+Jacobian and slack. State-orbit cells after the fixed preparer avoid the
+unproved derivative of its whole raw factory work. READY, success factors,
+failures and references remain physical. For a mixed bank the debt is
+explicitly trace NORM, epsilon_rho=||rho-C C^T||_1, giving the stated
+2epsilon_rho||K|| bound. The linear-angle frame is only the first jet of
+an exact READY-preserving comparison; no finite-order role preservation
+is assumed for the generic product. Moving density/frame/clock data still
+need their own actuator and source.
+
+The common-field vector in all independent devices retains sum a_i=1;
+neither source gain nor stage-max norm gains a factor n. Physical cofields
+use the true lift norm. A separate literal native-code field stencil uses
+paid common inventory/clock and the same SOURCE/metric body. Its price
+error is divided by the actual spacing AND gain in 751. No bounded raw
+Dirac-stage secant or continuous physical Golden-angle permission follows.
+
+Two new exact calculations passed on their final relevant code versions.
+The Walsh checker reconstructs generic symbolic skew matrices q2/q3,
+validates full forward/inverse inventories, and tests ONE new 26-stage
+native cell and its positive jet on all 32 dirty-helper/Spin columns.
+It does not replay the full 142/712-stage matrices or compute ranks/SVDs.
+Its first Python3.9 API failure was preserved before a compatible bit-count
+replacement; only the final run has a PASS receipt. The collar checker
+uses an off-rotor-image SO4/Sym2 point with a noncommuting velocity:
+||M-I||_infinity=1034/50005<1/2 and
+||M^-1||_infinity=12755/12501<2. All three corrected field jets are EXACT.
+Its Golden-Choi inverse and 136-feature Parseval checks pass. This matrix
+point is not claimed an emitted native word or an original GR42 margin.
+
+Walsh code 6038 bytes / SHA256
+dc2e07bdbb40610c90d80cdddc9d4b8d8e733debec22e7e8eb61c148ba79e2bc;
+observed receipt 2939 / SHA256
+4a55025436aa3e8f56d512f7188628fb0dcb62e4d653e6abdc5186978f0949ef.
+Collar code 5605 / SHA256
+253124caa1e11f13dec1b61fcf2dd31fb671d9c0d8781162a41c7a60c6f8ef8f;
+observed receipt 2094 / SHA256
+d01d2fff229ae784b5eed03accd1f79d2e13da067097f3911786df27b429341b.
+Both executed code/output pairs are embedded in 7cl. Native owner remains
+222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+No old root, inverse/rank, heat, full-word, full128/CAR or Lean suite was
+replayed; expected evidence was not rewritten to force a result.
+
+Final proof 15163 / SHA256
+27be56750b363d78876fe8ce51f20ef99043831cb250b3a58a45049e7f1fb92a;
+whole section 32627 / SHA256
+dcf07d9ec84ff1895c86d45301634027fe5494415e35ad126ed9916ee871e366.
+Final complete source reviews and affected validation follow.
+
+Incoming 4316d1b0f9f965ce7faeaa826594ad8ef58dee50 is retained in full:
+primary 2382469 / SHA256
+2c4437f9f944e9fd327183bd3c144ea0d3bbc1a508dfac9fb0cff4e7597a98ad;
+brief 1008425 / SHA256
+8e251d68138e4e945e5885e18a99b02f4413fdeb7952fe4542801b4844061c88.
+Removing 7cl restores every incoming primary byte; the complete incoming
+brief is an exact prefix. Existing 7ck and all parallel result scopes stay.
+
+Parent substitution: the ordinary-body matrix-field lift now has an
+explicit finite native identity-frame base, norm and actual-point collar,
+plus a separate paid code-stencil interpretation. This is not original
+X_N/physical admission, a grant to tune native G, or proof that extra
+apparatus/global-support/cut sources vanish. Complete selected valuation,
+stationary refining realizations and physical GR closure remain open.
+GR_closed=false. No task/result/claim/acceptance edge, Ready, retirement or
+merge is added; the assembly template is consumed as supporting work only.
+
+Final full SOURCE-ONLY ACCEPT: native_source_application,
+stationary_root_transfer and retained_metric_map each read the complete
+unified proof and both complete code/receipt surfaces, then checked the
+final pins and four byte-exact fences. Reviews specifically checked frame
+orientation/chronology, literal counts, the INTERNAL norm, actual-point
+derivative alignment/Neumann inputs, material trace-NORM convention, READY
+first-jet scope and spacing/gain in 751. The trace-NORM definition removed
+an ambiguity with the half-trace-distance convention; executed code and
+receipts were unchanged. No reviewer replay or assembly/physical acceptance
+is asserted.
+
+Final affected integration PASS: work, agent protocol, assembly and
+repository guards; 889 claims, 31 assumptions, 58 aliases,
+183 formal_support, 918 Lean closure, zero warnings. Assembly remains
+54 active / 98 results / 5 discharged / 22 obligations,
+scientific_promotion=false. Exact preservation validation checks complete
+incoming primary/brief, frozen proof/section and four executed code/output
+fences, AST/JSON, unchanged native owner and the two owned changed paths.
+Whitespace validation passes. This validation note changes no scientific
+input. Normal publication and immutable remote blob verification follow in
+the same existing Draft; no old mathematical or Lean run is repeated.

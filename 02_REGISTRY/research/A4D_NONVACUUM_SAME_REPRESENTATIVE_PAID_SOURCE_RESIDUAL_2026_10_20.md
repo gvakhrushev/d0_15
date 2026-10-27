@@ -79869,6 +79869,647 @@ print(json.dumps(out,indent=2))
 ```
 
 
+## 7cl. Lift field jets through actual native identity cells
+
+27 October 2026. SAME #334 / constitutive/native-programme-v1, native realization and composition; input 4316d1b0f9f965ce7faeaa826594ad8ef58dee50. The parent is 7ck's precise missing field lift: an operator/readout inverse is not an actuator inside a body word. Consume 7at407's signed native cells, 7ck's same-body SOURCE/metric map, the owned operator inverse and original material source. The new construction is explicit Fourier/permutation algebra, not a Lie/rank catalogue or a new gravity root. It supplies a finite-matrix comparison lift at native words; physical permission to vary a Golden angle is not inferred.
+
+### 1. A generic native frame, with its exact first jet
+
+Let the FULL ordinary body target have q bits, d=2^q, including rotor, realification, padding and its declared private work. Shared SourceI helper/Spin, TAG, exit q and oldRIGHT are disjoint; use b below for a body-bit index. The owned signed words G_b^+ and G_b^- each have 11 stages, inventory (G,SourceI,CX)=(1,4,6), act as exp(+-theta_G J_b), and restore helper/Spin on ALL columns. Their raw G is on the physical helper.
+
+For every nonzero delta in F_2^q choose a pivot b with delta_b=1. Define the actual CNOT permutations
+
+    L_delta=product_(k!=b,delta_k=1)CX(b,k),
+    P_S=product_(k in S)CX(k,b),  S subset other bits.
+
+Each is self-inverse. L_delta sends e_b to delta and preserves the pivot bit. Execute the chronological cell
+
+    L_delta;P_S;G_b^+;G_b^-;P_S;L_delta.
+
+Its full endpoint is exactly I, including dirty body/helper/Spin columns. Change ONLY the raw G in G_b^+ to exp(t alpha_delta,S J_helper)G. Its matrix endpoint is exactly exp(t alpha_delta,S Ad_(L_delta P_S)J_b). This equality describes an operator comparison around the native base, not a new alphabet letter.
+
+For an address c of the q-1 other bits put x=L_delta(c0), y=L_delta(c1), E_delta,c=|y><x|-|x><y|. Every unordered pair appears exactly once: its XOR difference fixes delta and its pivot0 member fixes c. With chi_S(c)=(-1)^(S dot c),
+
+    Ad_(L_delta P_S)J_b=sum_c chi_S(c)E_delta,c,
+    alpha_delta,S=2^(-(q-1))sum_c Z_(y,x)chi_S(c),
+    sum_(delta,S)alpha_delta,S Ad_(L_delta P_S)J_b=Z,
+    max|alpha_delta,S|<=max_(x,y)|Z_(y,x)|<=||Z||_op.  (742)
+
+This holds for EVERY real skew Z. Walsh orthogonality proves it directly; no numerical rank or spectrum is used. The frame has M=d(d-1)/2 identity cells. Distinct-delta generators need not commute, so the entire frame F_Z(t) satisfies F_Z(0)=I and F_Z'(0)=Z; F_Z(t)=exp(tZ) for nonzero t is NOT asserted.
+
+For the left body speed dot W=ZW execute the frame AFTER W chronologically. The endpoint is F_Z(t)W. Prepending gives WZ and would need the right generator W^T dot W instead. The linked inverse is its genuine differentiated native inverse, not an independently imposed equality of raw velocities. Independent inverse rows still keep the 7ck adjoint/source treatment.
+
+### 2. True counts and the current Dirac norm
+
+One cell uses G2, SourceI8 and 12+2|S|+2(wt(delta)-1) CX. Summing these actual words gives
+
+    M=d(d-1)/2,
+    G_F=2M, I_F=8M,
+    CX_F=[(2q+9)d^2-(q+9)d]/2,
+    N_F=10M+CX_F.                                    (743)
+
+For q=2 this is 142 stages; q=3 gives 712. Every raw G is physical-port G. The literal inverse_word has G2M, SourceI32M, the SAME CX count, and
+
+    N_Finv=N_F+24M.                                  (744)
+
+Thus 286/1384 are the q2/q3 inverse lengths. A separately chosen signed-normal-form inverse has another inventory and must not be priced as (744). Each 7ck device gets its own frame on B_j, preserving the same-body linkage. Cells add clock stages, not free input rank; all SOURCE, TAG, route, reference and complement dimensions remain.
+
+On the DECLARED INTERNAL two-term D01, only temporal d blocks vary. They are R_scene tensor dot g_t on disjoint stage-input sectors, with ||R_scene||=1/sqrt22. Therefore, for this linked frame,
+
+    ||dot D01||=max_t||dot g_t||/sqrt22
+              =max|alpha_delta,S|/sqrt22
+              <=||dot W||_op/sqrt22.                (745)
+
+No cell-count, rank, clock average, sqrt(M), or old bare-clock factor 1/sqrt2 enters this norm. The whole C0/C1 operator is retained. Fixed default tensor heat and noninternal placements are different interfaces. The metric still uses its actual prefix representation; (745) is the primitive-operator norm of a lift, not an assertion that the metric seminorm is differentiable at every singular-value crossing.
+
+### 3. Lift the geometric field speed, with its actual calibration
+
+Use the owned augmented map Phi_h(Y)=(D(Y),xi(Y)), with R_h Phi_h=I and D R_h D Phi_h=I in the SAME V_h field norm. D is the original positive-frame full-CAR spatial operator, with density, whitening and observer/frame terms included in its derivative. xi is the required actual material/calibration data. Write K_D=||D_Y D|| and keep every corresponding norm conversion.
+
+For fixed delta>0, kappa=delta||D||<1, s0=sqrt(1-kappa^2), differentiate S=sqrt(I-delta^2D^2):
+
+    S dot S+dot S S=-delta^2(D dot D+dot D D),
+    ||dot W_delta||<=delta(1+kappa/s0)||dot D||,
+    Z_v=dot W_delta[v] W_delta^T,
+    K_W=||v->Z_v||<=delta(1+kappa/s0)K_D.              (746)
+
+The positive Sylvester inverse has norm <=1/(2s0); no commutation of D and dot D is assumed. Tensoring the prescribed work identity leaves the bound unchanged. Formula (742) explicitly realizes this speed in the actual body support, and (745) bounds its INTERNAL lift by K_W/sqrt22. Moving delta retains its genuine extra terms.
+
+At the ideal field image, the same-body Choi/owned inverse in 730 recovers v from (dot W_delta[v],D xi[v]). This is an exact field-image statement. It does not create missing xi actuation. At a given homogeneous compiled body W_a close to W_*=W_delta(D_*) tensor I_g use an EXPLICIT operator translation
+
+    dot W_a[v]=Z_v W_a,
+    ||dot W_a[v]-dot W_*[v]||
+       <=epsilon_W K_W||v||,  epsilon_W=||W_a-W_*||. (747)
+
+No derivative of a discrete compiler lookup is used. A uniformly small unrelated parametrization can have an arbitrarily large derivative; value accuracy alone would not prove (747).
+
+Along these body-generated variations the positive-anchor Choi decoder reconstructs W itself. Thus R_chi(mu(W),xi)=R_h(E(W),xi), with E the fixed symmetrized rotor10/H_g0 extraction divided by delta. This cancels no ambient inverse condition: for arbitrary readout/probe errors retain p^(-q), anchor and delta^(-1) from 729. For the specified real matrix-unit frame, N_tomo=d^2(d^2+1)/2,
+
+    ||dot mu||_2<=2||dot W||,
+    ||dot mu||_1<=2sqrt(N_tomo)||dot W||.              (748)
+
+The l1 feature count belongs in the source bound; it is not a dimension-free l1 estimate. The body simplification uses a homogeneous actual W base. Heterogeneous W_i give a mixed average density, whose decoder is not the Choi vector of one unitary; retain its actual spread and full decoder modulus instead.
+
+### 4. An actual-point right inverse requires a quantitative collar
+
+Let J_*=D Phi_h at Y_*, with norm K_J. Supply the actual xi tangent J_xi,a with error <=epsilon_xi,1 from J_xi,* and base error <=epsilon_xi,0. Independent calibration/material data cannot be manufactured by a body inverse. Set
+
+    d0=epsilon_W/delta+epsilon_xi,0,
+    J_a v=(E(Z_v W_a),J_xi,a v),
+    ||J_a-J_*||<=epsilon_W K_W/delta+epsilon_xi,1.
+
+Use the SAME bounded continuation R_h as the reporter, its actual kappa_R=sup||D R_h||, and an effective derivative modulus omega_R. A true C2 bound H_R permits omega_R(r)<=H_R r. The sufficient test is
+
+    eta=omega_R(d0)K_J
+        +kappa_R(epsilon_W K_W/delta+epsilon_xi,1)<1/2.
+    M_a=D R_h(z_a)J_a,  ||M_a-I||<=eta.               (749)
+
+With L_a the explicit body/xi lift, L=L_a M_a^(-1) then satisfies EXACTLY
+
+    D F_actual L=I,   ||L||<=||L_a||/(1-eta).          (750)
+
+Here the body tangent is left-trivialized onto the actual SO target before applying (742). Use the true product/raw norm, including the xi actuator, and (745) for the body part. No numerical eta value for a large GR word is claimed here. Given the required effective regular-chart moduli and compatible actuator accuracies, the errors can be chosen to pass this finite test; neither smoothness alone nor an old green certificate is that margin.
+
+The two material directions have an owned reference actuator. Consume 7s176/7p142 and 7q160--162 on their declared fixed positive reference weights and d_x>=d_min>0:
+
+    s_(x,a)=2sqrt(p)w_x psi_(x,a),
+    <C_psi,D C_psi[v]>=0,
+    ||D C_psi[v]||<=p||v||_w/d_min.
+
+For u_v=D C_psi[v], K_v=u_v C_psi^T-C_psi u_v^T is skew, K_v C_psi=u_v and ||K_v||=||u_v||. Apply the SAME SO frame after a fixed material preparer on the logical BANK. If only the successful bank factorization is supplied, use the READY block generator Pi_READY tensor K_v, keeping the true gamma_seed, failure/work components and full helper identity. It is a matrix-frame construction, not a new controlled-rotation primitive. The generic frame on that full ordinary target realizes its first jet as well.
+
+This avoids the unproved derivative of a recompiled factory's raw eta_psi work, explicitly left open by 162. At an actual conditional bank C_a close to C_psi, the explicit state-orbit transport has error <=epsilon_C||K_v|| and observable-jet error <=4epsilon_C||K_v|| before the true success/field normalization. If that conditional bank is mixed after tracing work, use its supplied trace-NORM debt epsilon_rho=||rho_a-C_psi C_psi^T||_1 instead: |Tr[(rho_a-C_psi C_psi^T)[O,K_v]]|<=2epsilon_rho||K_v|| for ||O||<=1. Purity of an arbitrary actual factory output is not assumed. Include these real debts in epsilon_xi,1. An exact READY-preserving finite comparison uses exp(t Pi_READY tensor K_v) and the owned predicate-readonly compiler; the generic linear-angle frame product is only its first jet and is not asserted to preserve that subgroup to every order. If reference weights move, add 2sqrt(p)psi Dw and its actual actuator. Geometry plus these two material directions is not a proof of arbitrary moving density/frame/clock actuation; those keep their own source and lift.
+
+### 5. The common-field covector and literal native-code stencils
+
+Apply the same computed comparison speed to every independent 7ck device at the common-body base. This is one vector in the full comparison space, not an equality constraint on independent variables. Since sum_i a_i=1, the SOURCE mean and gain are not multiplied by n. The raw stage-max norm is likewise a maximum, not a sum over devices. Pull 737--738 and the remaining QUERY/route/TAG budgets through L with its actual norm. Where a normalized raw covector defect is e_raw, its field contribution is at most e_raw||L||; do not drop this factor or infer physical-source control from a Hilbert-sphere residual in a different norm.
+
+All added frame/inverse stages enter the actual N_born, route/query error scheduling and full heat. At the matched whole reflection, INTERNAL606 still gives its heat FIRST-source result; the larger absolute price is retained. The field source remains the original weak native reporter with lambda_minus and its true Gamma_h. No equation is inserted as an admission condition.
+
+There is a distinct LITERAL finite-code implementation of an observational field stencil. For effectively given W_0,Z_v, compile exp(+-t Z_v)W_0 on the SAME fixed-width body target, and the corresponding material/xi endpoints when supplied. Use the owned 7ay exact identity-excursion completion to the SAME paid primitive inventory/carrier/N for all stencil endpoints. Each changed body is used in both SOURCE and metric branches by 7ck, with its genuine inverse. Initial state, initial site tests, oldRIGHT and the fixed query/task stay the same; lifted prefix tests still follow their actual executions. Frame/source precision is chosen after the actual counts and decoder conditioning.
+
+Let epsilon_prog bound the SUM of body/actuator endpoint errors over all repeated devices; n per-device errors cannot be called one error. At the common completed clock the whole INTERNAL heat is equal for these matched phase-reflection endpoints, including its absolute constant and all modes. If |t| is the stencil spacing, the conservative price contrast error is
+
+    |(B_+-B_-)/(2t Gamma_0)-J_curve'(0)/Gamma_0|
+      <=4R zeta epsilon_prog/(a_zeta |t| Gamma_0)
+         +t^2 sup_|u|<=|t| |J_curve'''(u)|/(6Gamma_0). (751)
+
+The strict return collar supplies the actual finite derivative bound; all resource-dependent parameters are evaluated at that COMMON clock. Include any additional numerical reading error divided by |t|Gamma_0. Thus require the complete error/gain ratios, not merely an unnormalized endpoint error tending to zero. The physical/source consistency of J_curve'(0) is separately 738 pulled through L. This is not a branch average of prices.
+
+The matching metric endpoint and full-operator errors are controlled through the same body/code endpoints, router errors, 740 and the actual delta/gain. If comparing whole D01 stencils after their proven actual-prefix unitary transport, keep that common map and its test representation. A finite difference of unrelated ungauged raw native stage words need not be O(t), even if their endpoints are close. No bounded raw-stage secant is inferred from (751). Nor does a norm crossing justify differentiating a maximum metric seminorm without its hypotheses.
+
+### 6. Parent consequence and verification scope
+
+The missing algebraic field actuator is explicit: actual native identity cells span every ordinary body tangent with its counted primitive norm, and the same-body map carries it to SOURCE and geometry. The actual-point continuation is replaced by the checkable collar (749), not a fresh rank survey. Material lifts consume their original normalized bank and genuine success calibration. Effective data, margin and xi-actuator hypotheses remain visible.
+
+This does not prove that the original physical X_N admits continuously varied raw G, that all native code differences share this raw norm, or that arbitrary extra source/cut/scene/global-support directions vanish. The finite matrix lift and the separate paid native-code stencil are precise constructions for the original physical-admission application. Exact finite joint roots, uniform refinement, complete selected valuation and physical GR closure are not promoted. GR_closed=false.
+
+The fresh Walsh check below reconstructs a GENERIC symbolic skew matrix for q2/q3, validates actual native forward/inverse inventories 142/286 and 712/1384, and checks one NEW 26-stage cell's endpoint/positive jet on all 32 dirty-helper/Spin columns. It does not replay a full 142/712-stage matrix, scan candidate ranks or repeat a gravity/heat/Lean certificate. An initial Python3.9 API failure was preserved before replacing bit_count by the compatible exact bit count; only the final executed receipt is PASS. The additional small rotor check, if included, tests a noncommuting derivative and an off-image Neumann correction on its stated toy matrix family, not a native GR code or a large field margin.
+
+
+### 7. Frozen changed code and observed receipts
+
+Save each block outside tracked paths and run from the repository root. These are the observed outputs of the two new calculations; the code does not run an old mathematical suite.
+
+#### Generic Walsh synthesis and one new native cell
+
+Code 6038 bytes / SHA256 dc2e07bdbb40610c90d80cdddc9d4b8d8e733debec22e7e8eb61c148ba79e2bc; observed receipt 2939 bytes / SHA256 4a55025436aa3e8f56d512f7188628fb0dcb62e4d653e6abdc5186978f0949ef.
+
+```python
+"""Fresh Walsh body-tangent frame: generic q2/q3 algebra + one native cell."""
+from pathlib import Path
+from itertools import combinations
+from dataclasses import asdict
+import hashlib,importlib.util,json,sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+ROOT=Path.cwd()
+OWNER=ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+assert hashlib.sha256(OWNER.read_bytes()).hexdigest()==PIN
+spec=importlib.util.spec_from_file_location('walsh_body_owner',OWNER)
+N=importlib.util.module_from_spec(spec);sys.modules[spec.name]=N;spec.loader.exec_module(N)
+F=N.GOLDEN_FIELD
+def dm(A):return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(F)
+def same(A,B):return dm(A)==dm(B)
+def mul(*A):
+    z=dm(A[0])
+    for b in A[1:]:z=z.matmul(dm(b))
+    return z.to_Matrix()
+J=S.Matrix([[0,-1],[1,0]])
+def mask(q,b):return 1<<(q-1-b)
+def cnot_action(q,c,t,x):return x^(mask(q,t) if x&mask(q,c) else 0)
+def perm(q,gates):
+    d=2**q;out=S.zeros(d)
+    for x in range(d):
+        y=x
+        for c,t in gates:y=cnot_action(q,c,t,y)
+        out[y,x]=1
+    return out
+def jbit(q,b):return S.kronecker_product(*[J if i==b else S.eye(2) for i in range(q)])
+def ex(q,word):return N.Execution(q+3,(),(),tuple(word),N.G_CX_SOURCE_I,0,(q+1,q+2))
+def sw(a,b):return (N.Gate('CX',(a,b)),N.Gate('CX',(b,a)),N.Gate('CX',(a,b)))
+def signed(q,b,sgn):
+    SI=N.Gate('SourceI',(0,q+1,q+2));route=sw(0,b+1)
+    core=(N.Gate('G',(0,)),)+(SI,)*4 if sgn==1 else (SI,SI,N.Gate('G',(0,)),SI,SI)
+    return route+core+route
+def cell(q,b,Lg,Pg):
+    Lw=tuple(N.Gate('CX',(c+1,t+1)) for c,t in Lg)
+    Pw=tuple(N.Gate('CX',(c+1,t+1)) for c,t in Pg)
+    return Lw+Pw+signed(q,b,1)+signed(q,b,-1)+Pw+Lw
+
+rows=[];chosen=None
+for q in (2,3):
+    d=2**q;M=d*(d-1)//2
+    Z=S.zeros(d)
+    for lo,hi in combinations(range(d),2):
+        z=S.Symbol('z_%d_%d'%(hi,lo));Z[hi,lo]=z;Z[lo,hi]=-z
+    reconstructed=S.zeros(d);word=[];padded=[];ncell=0
+    for delta in range(1,d):
+        b=next(i for i in range(q) if delta&mask(q,i))
+        others=[i for i in range(q) if i!=b]
+        Lg=[(b,k) for k in others if delta&mask(q,k)]
+        L=perm(q,Lg)
+        assert L*L==S.eye(d)
+        assert next(i for i in range(d) if L[i,mask(q,b)]==1)==delta
+        pairs=[]
+        for cc in range(2**(q-1)):
+            x=sum(mask(q,k) for t,k in enumerate(others) if cc&(1<<(q-2-t)))
+            y=x^mask(q,b)
+            v0=next(i for i in range(d) if L[i,x]==1)
+            v1=next(i for i in range(d) if L[i,y]==1)
+            assert v0^v1==delta and not(v0&mask(q,b)) and v1&mask(q,b)
+            pairs.append((cc,v0,v1))
+        for ss in range(2**(q-1)):
+            Sbits=[k for t,k in enumerate(others) if ss&(1<<(q-2-t))]
+            Pg=[(k,b) for k in Sbits];P=perm(q,Pg)
+            assert P*P==S.eye(d)
+            gen=L*P*jbit(q,b)*P*L
+            alpha=sum((-1)**bin(ss&cc).count('1')*Z[v1,v0] for cc,v0,v1 in pairs)/2**(q-1)
+            expected=S.zeros(d)
+            for cc,v0,v1 in pairs:
+                sign=(-1)**bin(ss&cc).count('1')
+                expected[v1,v0]=sign;expected[v0,v1]=-sign
+            assert gen==expected
+            reconstructed+=alpha*gen
+            cw=cell(q,b,Lg,Pg)
+            assert len(cw)==22+2*(len(Lg)+len(Pg))
+            word.extend(cw)
+            debt=(22+4*(q-1))-len(cw)
+            assert debt>=0 and debt%2==0
+            padded.extend(cw+(N.Gate('CX',(1,2)),)*debt)
+            ncell+=1
+            if q==2 and delta==3 and ss==1:chosen=(tuple(cw),b,gen,len(Lg)+len(Pg)+3)
+    assert ncell==M
+    assert all(S.expand(t)==0 for t in reconstructed-Z)
+    stats=N.inventory(ex(q,word),max_qubits=6,max_expanded_stages=4000)
+    inverse=N.inverse_word(ex(q,word),max_qubits=6,max_expanded_stages=4000)
+    invstats=N.inventory(ex(q,inverse),max_qubits=6,max_expanded_stages=4000)
+    padstats=N.inventory(ex(q,padded),max_qubits=6,max_expanded_stages=4000)
+    CX=((2*q+9)*d*d-(q+9)*d)//2
+    assert (stats.g_count,stats.source_i_count,stats.cx_count,stats.gate_count)==(2*M,8*M,CX,10*M+CX)
+    assert (invstats.g_count,invstats.source_i_count,invstats.cx_count,invstats.gate_count)==(2*M,32*M,CX,34*M+CX)
+    assert padstats.gate_count==M*(22+4*(q-1))
+    rows.append({'target_qubits':q,'dimension':d,'cells':M,'forward_inventory':asdict(stats),
+       'literal_inverse_inventory':asdict(invstats),'uniform_padded_forward_stages':padstats.gate_count,
+       'generic_skew_reconstruction':True,'alpha_bound':'eachalpha is signedaverage ofd/2 targetentries, hence maxabsalpha<=maxabsZentry<=opnormZ'})
+
+# ONE NEW q2 cell, native26 stages, all32 inputs (helper and Spin DIRTY).
+# Prefix and tail cover each raw gate once; no whole142/712word replay.
+cw,b,gen,gindex=chosen
+assert len(cw)==26 and gindex==5 and cw[gindex]==N.Gate('G',(0,))
+prefix=N.word_matrix(ex(2,cw[:gindex+1]),max_qubits=5,max_expanded_stages=30)
+tail=N.word_matrix(ex(2,cw[gindex+1:]),max_qubits=5,max_expanded_stages=30)
+assert same(mul(tail,prefix),S.eye(32))
+Jport=S.kronecker_product(J,S.eye(16))
+actual_jet=mul(tail,Jport,prefix)
+expected_jet=S.kronecker_product(S.eye(2),gen,S.eye(4))
+assert same(actual_jet,expected_jet)
+result={'status':'PASS','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'native_owner_sha256':PIN,'cases':rows,
+ 'new_native_cell':{'stages':26,'full_columns':32,'rawG_index_zero_based':gindex,'rawG_wires':[0],
+   'unknown_helper_Spin':True,'endpoint':'I','jet':'I_helper tensorAd_(Ldelta P_S)J_b tensorI_Spin, positiveorientation'},
+ 'append_chronology':'cells AFTERbody => ZW; prepend =>WZ',
+ 'Dirac_norm':'forINTERNALsceneI tensorrawtargetvelocities: nu/sqrt22, notbareclocknu/sqrt2',
+ 'scope':'genericFourier/permutationidentity andoneNEWnativecell only; nofullframewordmatrix/rankcensus/fieldroot',
+ 'physical_continuous_G_admission':False,'GR_closed':False}
+Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "dc2e07bdbb40610c90d80cdddc9d4b8d8e733debec22e7e8eb61c148ba79e2bc",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "cases": [
+    {
+      "target_qubits": 2,
+      "dimension": 4,
+      "cells": 6,
+      "forward_inventory": {
+        "qubits": 5,
+        "blank_count": 0,
+        "unknown_wires": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "gate_count": 142,
+        "g_count": 12,
+        "cx_count": 82,
+        "source_i_count": 48,
+        "full_dimension": 32,
+        "input_dimension": 32,
+        "cut_rank": 32
+      },
+      "literal_inverse_inventory": {
+        "qubits": 5,
+        "blank_count": 0,
+        "unknown_wires": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "gate_count": 286,
+        "g_count": 12,
+        "cx_count": 82,
+        "source_i_count": 192,
+        "full_dimension": 32,
+        "input_dimension": 32,
+        "cut_rank": 32
+      },
+      "uniform_padded_forward_stages": 156,
+      "generic_skew_reconstruction": true,
+      "alpha_bound": "eachalpha is signedaverage ofd/2 targetentries, hence maxabsalpha<=maxabsZentry<=opnormZ"
+    },
+    {
+      "target_qubits": 3,
+      "dimension": 8,
+      "cells": 28,
+      "forward_inventory": {
+        "qubits": 6,
+        "blank_count": 0,
+        "unknown_wires": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "gate_count": 712,
+        "g_count": 56,
+        "cx_count": 432,
+        "source_i_count": 224,
+        "full_dimension": 64,
+        "input_dimension": 64,
+        "cut_rank": 64
+      },
+      "literal_inverse_inventory": {
+        "qubits": 6,
+        "blank_count": 0,
+        "unknown_wires": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "gate_count": 1384,
+        "g_count": 56,
+        "cx_count": 432,
+        "source_i_count": 896,
+        "full_dimension": 64,
+        "input_dimension": 64,
+        "cut_rank": 64
+      },
+      "uniform_padded_forward_stages": 840,
+      "generic_skew_reconstruction": true,
+      "alpha_bound": "eachalpha is signedaverage ofd/2 targetentries, hence maxabsalpha<=maxabsZentry<=opnormZ"
+    }
+  ],
+  "new_native_cell": {
+    "stages": 26,
+    "full_columns": 32,
+    "rawG_index_zero_based": 5,
+    "rawG_wires": [
+      0
+    ],
+    "unknown_helper_Spin": true,
+    "endpoint": "I",
+    "jet": "I_helper tensorAd_(Ldelta P_S)J_b tensorI_Spin, positiveorientation"
+  },
+  "append_chronology": "cells AFTERbody => ZW; prepend =>WZ",
+  "Dirac_norm": "forINTERNALsceneI tensorrawtargetvelocities: nu/sqrt22, notbareclocknu/sqrt2",
+  "scope": "genericFourier/permutationidentity andoneNEWnativecell only; nofullframewordmatrix/rankcensus/fieldroot",
+  "physical_continuous_G_admission": false,
+  "GR_closed": false
+}
+```
+
+#### Noncommuting rotor and off-image Neumann control
+
+Code 5605 bytes / SHA256 253124caa1e11f13dec1b61fcf2dd31fb671d9c0d8781162a41c7a60c6f8ef8f; observed receipt 2094 bytes / SHA256 d01d2fff229ae784b5eed03accd1f79d2e13da067097f3911786df27b429341b.
+
+```python
+"""New exact off-image SO4 collar and Sym2 field lift; not native synthesis."""
+from pathlib import Path
+import hashlib, importlib.util, json, sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+
+ROOT=Path.cwd()
+OWNER=ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+assert hashlib.sha256(OWNER.read_bytes()).hexdigest()==PIN
+spec=importlib.util.spec_from_file_location('actual_collar_owner',OWNER)
+N=importlib.util.module_from_spec(spec)
+sys.modules[spec.name]=N
+spec.loader.exec_module(N)
+K=N.GOLDEN_FIELD
+def dm(A): return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(K)
+def same(A,B): return dm(A)==dm(B)
+def red(x): return K.to_sympy(K.from_sympy(S.expand(x)))
+def vec(A): return S.Matrix([A[i,j] for i in range(A.rows) for j in range(A.cols)])
+def unvec(v,n): return S.Matrix(n,n,lambda i,j:v[i*n+j])
+def norm_inf(A): return max(sum(abs(A[i,j]) for j in range(A.cols)) for i in range(A.rows))
+
+delta=S.Rational(1,5)
+Dstar=S.diag(0,3)
+Sstar=S.diag(1,S.Rational(4,5))
+Wstar=S.BlockMatrix([[Sstar,-delta*Dstar],[delta*Dstar,Sstar]]).as_explicit()
+assert Wstar.T*Wstar==S.eye(4) and Wstar.det()==1
+assert Sstar*Sstar==S.eye(2)-delta**2*Dstar*Dstar
+basis=[S.diag(1,0),S.diag(0,1),S.Matrix([[0,1],[1,0]])]
+assert Dstar*basis[2]!=basis[2]*Dstar
+generators=[]
+dot_rotors=[]
+for V in basis:
+    dS=S.Matrix(2,2,lambda i,j:
+        -delta**2*(Dstar[i,i]+Dstar[j,j])*V[i,j]/(Sstar[i,i]+Sstar[j,j]))
+    assert Sstar*dS+dS*Sstar==-delta**2*(Dstar*V+V*Dstar)
+    dW=S.BlockMatrix([[dS,-delta*V],[delta*V,dS]]).as_explicit()
+    Z=dW*Wstar.T
+    assert Z.T==-Z and Z*Wstar==dW
+    generators.append(Z)
+    dot_rotors.append(dW)
+
+u=S.Rational(9999,10001)
+v=S.Rational(200,10001)
+R=S.diag(1,1,1,1)
+R[:2,:2]=S.Matrix([[u,-v],[v,u]])
+assert R.T*R==S.eye(4) and R.det()==1
+Wa=R*Wstar
+assert Wa.T*Wa==S.eye(4) and Wa.det()==1
+assert Wa[:2,:2]!=Wa[:2,:2].T  # An exact OFF-rotor-image witness.
+
+def field_decoder(W):
+    B=W[2:4,0:2]
+    H=(B+B.T)/(2*delta)
+    return S.Matrix([H[0,0],H[1,1],H[0,1]])
+
+assert field_decoder(Wstar)==S.Matrix([0,3,0])
+assert field_decoder(Wa)==S.Matrix([0,3,0])
+assert S.Matrix.hstack(*[field_decoder(Z*Wstar) for Z in generators])==S.eye(3)
+M=S.Matrix.hstack(*[field_decoder(Z*Wa) for Z in generators])
+eta=norm_inf(M-S.eye(3))
+assert eta<S.Rational(1,2)
+Minv=M.inv()
+assert M*Minv==Minv*M==S.eye(3)
+assert norm_inf(Minv)<=1/(1-eta)<2
+corrected=[]
+for j in range(3):
+    Z=sum((generators[i]*Minv[i,j] for i in range(3)),S.zeros(4))
+    assert Z.T==-Z
+    assert field_decoder(Z*Wa)==S.eye(3)[:,j]
+    corrected.append(Z)
+
+# The complete weighted Golden-Choi data of this ACTUAL 4x4 body.
+# This is an operator comparison collar; Wa is NOT claimed an emitted word.
+p,a=N.P,N.A
+sqrtLambda=S.diag(p,a*p,a*p,p*p)
+invSqrtLambda=S.diag(1/p,1/(a*p),1/(a*p),1/(p*p))
+Lambda=sqrtLambda*sqrtLambda
+omega=vec(sqrtLambda)
+psi=vec(Wa*sqrtLambda)
+sigma=psi*psi.T
+t=red((omega.T*psi)[0])
+assert red(S.trace(Lambda)-1)==0
+assert same(sigma*sigma,sigma)
+assert red((omega.T*sigma*omega)[0]-t*t)==0
+assert same(sigma*omega/t,psi)
+assert same(unvec(sigma*omega/t,4)*invSqrtLambda,Wa)
+# ||Wa-Wstar||op=2/sqrt(10001)<1/50; ideal s0=4/5 gives tau>39/50.
+assert (R-S.eye(4)).T*(R-S.eye(4))==S.diag(S.Rational(4,10001),S.Rational(4,10001),0,0)
+assert S.Integer(4)<S.Rational(1,50)**2*S.Integer(10001)
+assert red(t-S.Rational(39,50)).is_positive is True
+
+jet_rows=[]
+for j,Z in enumerate(corrected):
+    dWa=Z*Wa
+    dpsi=vec(dWa*sqrtLambda)
+    H=dpsi*psi.T+psi*dpsi.T
+    dq=red((omega.T*H*omega)[0])
+    dchi=H*omega/t-psi*dq/(2*t*t)
+    assert same(dchi,dpsi)
+    dWrec=unvec(dchi,4)*invSqrtLambda
+    assert same(dWrec,dWa)
+    assert same(field_decoder(dWrec),S.eye(3)[:,j])
+    # Exact frame-count bookkeeping for the full real matrix-unit frame.
+    dmus=[H[i,i] for i in range(16)]+[2*H[i,k] for i in range(16) for k in range(i+1,16)]
+    assert len(dmus)==136
+    frob2=red(S.trace(H.T*H))
+    mu2=red(sum(x*x for x in dmus))
+    diag2=red(sum(H[i,i]**2 for i in range(16)))
+    assert red(mu2-(2*frob2-diag2))==0
+    assert red((psi.T*dpsi)[0])==0
+    assert red(frob2-2*(dpsi.T*dpsi)[0])==0
+    jet_rows.append({'field_direction':j,
+        'corrected_field_derivative':[int(i==j) for i in range(3)],
+        'exact_Choi_inverse_jet':True,'real_tomography_features':136})
+
+def strings(A): return [[str(A[i,j]) for j in range(A.cols)] for i in range(A.rows)]
+result={
+ 'status':'PASS',
+ 'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'native_owner_sha256':PIN,
+ 'delta':'1/5','Dstar':strings(Dstar),'Sstar':strings(Sstar),
+ 'R_first_two_rows':strings(R[:2,:2]),
+ 'actual_body_dimension':4,
+ 'actual_body_off_rotor_image':True,
+ 'decoded_field_point_unchanged':True,
+ 'noncommuting_symmetric_velocity':True,
+ 'M':strings(M),
+ 'M_minus_I_infinity_norm':str(eta),
+ 'M_inverse_infinity_norm':str(norm_inf(Minv)),
+ 'Neumann_margin':'||M-I||infinity<1/2',
+ 'exact_corrected_right_inverse':True,
+ 'body_error_operator_norm':'2/sqrt(10001)<1/50',
+ 'positive_anchor_lower_bound':'39/50',
+ 'Choi_Golden_pairs':2,
+ 'Choi_full_dimension':16,
+ 'lambda_min':'p^4','inverse_amplitude_condition':'p^-2',
+ 'corrected_Choi_field_jets':jet_rows,
+ 'scope':'exact SO4/Sym2 matrix comparison collar; no native identity-cell compiler, field-rank census, physical admission or GR solver',
+ 'native_body_word_emitted':False,
+ 'GR_closed':False
+}
+Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "253124caa1e11f13dec1b61fcf2dd31fb671d9c0d8781162a41c7a60c6f8ef8f",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "delta": "1/5",
+  "Dstar": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "3"
+    ]
+  ],
+  "Sstar": [
+    [
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "4/5"
+    ]
+  ],
+  "R_first_two_rows": [
+    [
+      "9999/10001",
+      "-200/10001"
+    ],
+    [
+      "200/10001",
+      "9999/10001"
+    ]
+  ],
+  "actual_body_dimension": 4,
+  "actual_body_off_rotor_image": true,
+  "decoded_field_point_unchanged": true,
+  "noncommuting_symmetric_velocity": true,
+  "M": [
+    [
+      "9999/10001",
+      "0",
+      "200/10001"
+    ],
+    [
+      "0",
+      "9999/10001",
+      "-160/10001"
+    ],
+    [
+      "-80/10001",
+      "125/10001",
+      "49996/50005"
+    ]
+  ],
+  "M_minus_I_infinity_norm": "1034/50005",
+  "M_inverse_infinity_norm": "12755/12501",
+  "Neumann_margin": "||M-I||infinity<1/2",
+  "exact_corrected_right_inverse": true,
+  "body_error_operator_norm": "2/sqrt(10001)<1/50",
+  "positive_anchor_lower_bound": "39/50",
+  "Choi_Golden_pairs": 2,
+  "Choi_full_dimension": 16,
+  "lambda_min": "p^4",
+  "inverse_amplitude_condition": "p^-2",
+  "corrected_Choi_field_jets": [
+    {
+      "field_direction": 0,
+      "corrected_field_derivative": [
+        1,
+        0,
+        0
+      ],
+      "exact_Choi_inverse_jet": true,
+      "real_tomography_features": 136
+    },
+    {
+      "field_direction": 1,
+      "corrected_field_derivative": [
+        0,
+        1,
+        0
+      ],
+      "exact_Choi_inverse_jet": true,
+      "real_tomography_features": 136
+    },
+    {
+      "field_direction": 2,
+      "corrected_field_derivative": [
+        0,
+        0,
+        1
+      ],
+      "exact_Choi_inverse_jet": true,
+      "real_tomography_features": 136
+    }
+  ],
+  "scope": "exact SO4/Sym2 matrix comparison collar; no native identity-cell compiler, field-rank census, physical admission or GR solver",
+  "native_body_word_emitted": false,
+  "GR_closed": false
+}
+```
+
+
 ## 8. Reproduction
 
 Run from this directory:
