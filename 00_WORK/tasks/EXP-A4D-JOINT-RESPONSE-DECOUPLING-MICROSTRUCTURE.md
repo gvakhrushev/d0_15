@@ -15306,3 +15306,158 @@ AST/JSON and unchanged native owner. Only the two owned paths changed and
 whitespace validation passes. This validation note changes no executable
 or scientific input; no old mathematical replay is added. Normal push and
 immutable remote blob verification follow in the same existing Draft.
+
+### 27 October — one physical body supplies both SOURCE data and metric
+
+SAME #334 / constitutive/native-programme-v1; native realization and
+composition, input bc1865ca. The named missing parent map is 7ci/7cj's
+live SOURCE/geometry linkage. A fixed SOURCE-blind processor or the actual
+feedback-cut compression cannot supply it: full commutator norm is invariant
+under SOURCE-only conjugation, and the current feedback cut has C0 support
+only. No compressed norm or new state-programming oracle is proposed.
+
+Changed input: one actual native body W_j acts on its own full-Schmidt
+Golden probe bank B_j, with one retained physical target X of the same type.
+Route X and B_j with a predicate-readonly swap controlled by TAG=j AND q=1.
+At q=0 every router is exactly false, so ALL probes receive the actual W_j
+independently of TAG. At TAG=j,q=1 that SAME body instead acts on X. It is
+not a separately compiled field-writing or testing copy. The query at TAG=j
+omits probe j and reads the other actual Choi banks. A prepared Golden TAG
+has its real weights; cold corners are averaged BEFORE logdet, not summed
+as if TAG were free input. Probe/reference/TAG work stays input blank.
+
+Use the already owned full operator inverse, paid-writer 12.1(51), with
+actual density/frame/material data. Prove the full-Schmidt SOURCE decoder
+and its true anchor, p^(-q), delta^(-1) and inverse losses; do not redo the
+geometric rank or infer matter from D_sp alone. This is a NEW Choi SOURCE
+carrier, not an assertion that the old full SOURCE operator or covariance
+is unchanged. The native weak reporter and its original lambda_minus are
+the consuming source law. The shared-body primitive map must retain every
+independent forward/reverse and router/preparation row.
+
+The decisive checks are the small exact native Golden-Choi value/jet and
+the tagged leave-one-out operator/source identities with actual prepared
+TAG weights. Do not emit a large unneeded geometry search or replay old
+suites. Assistants use private scratch; only the two owned repository paths
+may change. Physical X_N/observer admission, full selected valuation and
+general refinement remain explicit. No new task, claim, action functional,
+selector or registry acceptance is created.
+
+27 October result, primary 7ck / equations 726--741. The missing offline
+SOURCE-to-geometry lookup is replaced by a causal same-body map for
+BODY-generated geometric variations. R_j is controlled only by TAG=j AND
+q=1, its false block is exact identity, and T_j=R_j* W_j,Bj R_j. At q0 the
+actual native W_j creates its Golden-Choi SOURCE in B_j for EVERY TAG.
+At its own q1 branch the SAME body acts on the physical target X. The query
+omits its own bank j; it does not assume that bank was never prepared.
+Each body and expanded inverse is paid and independently varied. A second
+SOURCE/test copy with linked parameters would not supply this proof.
+
+Golden inputs have full known Schmidt rank on ALL ordinary body target
+wires, including H_g. The full source density reconstructs the actual body
+on its positive real anchor chart, with true p^(-b), anchor and delta^(-1)
+conditioning. The old full-operator inverse 51 is consumed with actual
+density/frame/material data. Matter is not inferred from D_sp. The metric
+keeps the FULL norm and all H_g columns; the feedback-cut compression is
+not substituted. This is a NEW Choi SOURCE carrier and its own covariance,
+not a claimed equality with the old canonical SOURCE operator.
+
+TAG is prepared from native Golden words, not counted as a free input.
+Its actual corner is C=sum w_j c_j BEFORE logdet. At the common symmetric
+query reference the independent source rows have the exact weights
+a_j=(1-w_j)/(n-1), whose sum is one. Thus the common-field gain remains
+Gamma_h at the TRUE rank R, not n Gamma_h. Approximate actual query kernels
+keep epsilon_K and their branch spread; identical source words alone do
+not guarantee identical independently compiled query kernels. TAG-birth
+rows are quiet at equal corners and otherwise retain their actual debt.
+
+Full tomography is overcomplete. The final proof uses the exact source
+g_m dot D mu_bar and compares it to g_*=(D R_chi)* D_Y J_*. It does NOT
+replace that finite Bernstein row by an exact field pullback using only a
+right inverse. The vertical derivative remainder delta_B,chi is retained
+in 737--738. Probe-preparation or calibration variations at fixed W are
+independent normal/source rows, not automatically geometric variations.
+
+The fixed Role-site algebra gives max_j b_j||[W_j,a]||/sqrt22 on the ideal
+route. True-router/query errors enter the full metric bound, while q0
+SOURCE birth remains exact. The shared one-bit role reader layer avoids
+an unproved growing-TAG quantum-predicate length estimate. All actual
+SOURCE, independent reverse, router, TAG, query and clock counts remain.
+Matched phase reflection consumes the typed INTERNAL heat theorem 606;
+default heat/noninternal/extra-valuation cases keep their separate scopes.
+
+Two NEW narrow controls passed after their final code edits. The native
+G;CX;G decoder check uses all four columns, one body call, ten tomography
+features, its ambient jet and sign/dephasing adverse controls. The n4 TAG
+check proves complete factorized operator identities, actual nonuniform
+Golden weights, cold averaging, the metric maximum, both independent
+body legs and TAG-birth cancellation. It does not allocate a 4096-square
+matrix or emit the large controlled router. Its mixed G^4 case is not
+claimed inside the positive-anchor decoder chart. The slow preliminary
+expanded scratch was terminated without a receipt; it is not counted PASS.
+
+Decoder code 4205 bytes / SHA256
+251021e19905dd158658a927b4850e218aa5ff246c55c59db0d08655ca91fc5f;
+observed receipt 864 / SHA256
+0a57d08423b1e480ae347484954cf117a16aaf1592f4c9705d4c4f6f27b9207c.
+TAG code 6114 / SHA256
+0b9928474090bd7f9f170834a1843086ea1c89d143872267a75b8b077113ba83;
+observed receipt 2844 / SHA256
+2baaa066832ff1d49f255ceb0f5c2ea95602c02c2dc02a11dca499ade6bb00e3.
+Both exact executed code/output pairs are embedded in 7ck. Native owner
+SHA256 remains 222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+No old geometric inverse/rank, root, full-word, heat, full128/CAR or Lean
+suite was replayed. Expected evidence was not rewritten.
+
+Final proof 22230 / SHA256
+26721029a7092445b14e4dceebac9a462dafebce706f17d238afdcbc2d6989bc;
+whole section 37034 / SHA256
+ee941c20c193b048002787bc3e8fb96547236cb57a788fb6fbf96ba57b2d1892.
+Only this unified proof is integrated; private comparison-penalty and
+retained-compression alternatives are not inserted as new physical laws.
+Final source reviews and affected validation follow.
+
+Incoming bc1865ca68cb7e464e44dabe3517333b51a3e7a1 is preserved in full:
+primary 2345433 / SHA256
+10d58d135edace3aea896235ecdd5bf432d86d403b771cd38fd9207837554a71;
+brief 999009 / SHA256
+6ca2d437fc07aa196d77d0d15397f208edf87445e547ad7d358bd9db138921a8.
+Removing 7ck restores every incoming primary byte. The whole incoming brief
+remains an exact prefix. Existing 7ci/7cj, growing-history/default-source
+and other source owners retain their scope.
+
+Parent consequence: the field-image source and intrinsic metric now have
+one causal operator map, with genuine independent body rows, instead of
+two code families joined by a lookup. Actual physical X_N/role/observer
+admission and the specific ideal-field lift/native-stencil inclusion still
+require their own application. The owned right inverse is not that lift.
+General refinement, independent cut/scene/global-support and additional
+selected valuation also remain open. GR_closed=false; no new task/result,
+claim, acceptance edge, Ready/retirement or merge is added. The assembly
+checkpoint template is consumed at this supporting scope only.
+
+Final full SOURCE-ONLY mathematical ACCEPT: native_source_application,
+stationary_root_transfer and retained_metric_map read the complete unified
+proof and their stated complete code/receipt surfaces, then checked the
+final proof/section pins and unchanged fences. The first two read both
+complete code/receipt pairs; the decoder owner independently checked its
+complete component and the whole unified argument. No reviewer execution,
+assembly acceptance or physical admission is inferred from these reviews.
+
+The final scope correction keeps off-diagonal TAG errors as well as the
+diagonal branch spread: 734 uses sigma_c+2epsilon_phase, the copy-zero
+statement is at the TAG-readonly reference, and epsilon_K retains TAG and
+all SOURCE packets until actual TAG preparation. The norm-one pinching
+bound supplies that extra term. No changed code or new mathematical replay
+was required for this conservative source-bound correction.
+
+Final affected integration PASS: work, agent protocol, assembly and
+repository guards; 889 claims, 31 assumptions, 58 aliases,
+183 formal_support, 918 Lean closure, zero warnings. Assembly remains
+54 active / 98 results / 5 discharged / 22 obligations and
+scientific_promotion=false. Preservation verification checks every incoming
+primary/brief byte, final proof/section, four exact code/output fences,
+AST/JSON and unchanged native owner. Only the two owned paths changed;
+whitespace validation passes. This validation note changes no scientific
+input. Publication and immutable remote blob verification follow in the
+same existing Draft PR; no old mathematical or Lean suite is repeated.

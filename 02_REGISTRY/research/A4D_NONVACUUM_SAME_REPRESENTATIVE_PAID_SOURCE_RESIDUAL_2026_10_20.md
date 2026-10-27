@@ -79327,6 +79327,548 @@ print(json.dumps(result,indent=2))
 ```
 
 
+## 7ck. One native body generates its SOURCE data and its metric branch
+
+27 October 2026. SAME #334 / constitutive/native-programme-v1; native realization and composition, input bc1865ca68cb7e464e44dabe3517333b51a3e7a1. The missing parent map in 7ci/7cj was an independent SOURCE-to-geometry code lookup. Here the SAME body call supplies both its observed operator data and its geometric action. Consume the original operator-data inverse, paid-writer12.1(51), rather than repeating a geometry/rank proof. This is a new SOURCE carrier and a new causal construction, not a claim that the old canonical SOURCE kernel is unchanged. No comparison penalty, Einstein admission predicate, new action or state-programming oracle is added.
+
+### 1. A native full-record probe of the actual body
+
+Let X=K_D tensor H_g be the complete ordinary target of a geometry body, including its rotor, realification and private geometry work. Complete it to d=2^b dimensions as in 7ci. Its physical input has free K_D and the declared blank H_g. The shared physical SourceI helper/Spin is outside X and restored on ALL completed columns; it is not a determinant-fixing or realification resource. Protected oldRIGHT is untouched.
+
+For each device i allocate a private target B_i of type X and a fresh ordinary reference. Prepare the known, full-Schmidt Golden state
+
+    Omega_Lambda=tensor_(r=1)^b(a_G|00>+p|11>),
+    Lambda_x=p^(b+popcount(x)),  Tr Lambda=1,
+    lambda_min=p^(2b),  ||Lambda^(-1/2)||=p^(-b),
+    chi_W=(W tensor I)Omega_Lambda=vec(W Lambda^(1/2)). (726)
+
+Each pair is an actual parked G followed by CX, not a free Bell/Hadamard state. References and ALL H_g probe wires start as allocated blanks. The probe entangles every ordinary body-target wire, including H_g; probing only H_g=0 would not reconstruct the full actual body. This uses the owned FULL-column compiler promise, not initialized-work correctness. Each pair costs 8 forward and 12 expanded-inverse stages with the stated parked implementation; routing, body and reader costs are additional.
+
+For the actual real unitary W, put sigma_W=chi_W chi_W^T and v=Omega_Lambda. On the chart t_W=v^T chi_W>0,
+
+    chi_W=sigma_W v/sqrt(v^T sigma_W v),
+    W=unvec(chi_W)Lambda^(-1/2).                        (727)
+
+The density cannot distinguish W and -W globally. The existing rotor supplies a proved local sign: for W_delta(D)=[[S,-delta D],[delta D,S]], S=sqrt(I-delta^2 D^2), fixed kappa=delta sup||D||<1,
+
+    t_W>=tau=sqrt(1-kappa^2)-epsilon_D>0
+
+whenever ||W-W_delta(D) tensor I_g||<=epsilon_D. Indeed Tr(Lambda(W_delta tensor I_g))>=sqrt(1-kappa^2), even if Lambda and S do not commute. This is a real anchored decoder, not a CPTP conversion of unknown complex CAR data into a program. The ordinary realification and all its columns stay in X.
+
+Use fixed norm-at-most-one real matrix-unit observables O_uu=|u><u| and O_uv=|u><v|+|v><u|. Their means reconstruct sigma_uu=mu_uu and sigma_uv=mu_uv/2, with ||D sigma||_op<=||D mu||_2. Noncommuting features are read from distinct probes in the query's read-once role layout, not simultaneously from one sample. Their recorded coherences are essential; dephasing is a different source.
+
+For an ambient density variation H at a true pure point,
+
+    D chi[H]=Hv/t_W-chi_W(v^T H v)/(2t_W^2),
+    ||D W[D mu]||_op
+       <=p^(-b)(tau^(-1)+1/(2tau^2))||D mu||_2.        (728)
+
+After reconstructing the FULL W, extract a known H_g=0 block, then its rotor10 block, and symmetrize/divide by delta. These data extractions have norm at most 1 before division. Thus D_sharp=Herm(W_10,00)/delta satisfies
+
+    ||D_sharp-D||<=epsilon_D/delta,
+    ||D D_sharp||<=C_D||D mu||_2,
+    C_D=p^(-b)(tau^(-1)+1/(2tau^2))/delta.             (729)
+
+This extracts data; it does not compress the metric or remove other H_g columns from the heat/norm. The latter keep the full epsilon_D promise. If delta varies, its genuine -D_sharp Ddelta/delta term is retained.
+
+Now apply the OWNED R_h(D_sp,xi) of paid-writer(51). xi contains the ACTUAL retained density, calibration/endpoint frames and TWO material readouts. D_sp alone does not recover matter or those data. On the original regular augmented operator image, the new observation map obeys
+
+    R_chi(mu(Y),xi(Y))=Y,
+    D R_chi D(mu,xi)(Y)=I.                             (730)
+
+Its true inverse norm includes C_D, the old operator-data norm conversion, and the owned kappa_h; none is set to 1. The field image is not all moment space. Finite compiled data may be off that image by epsilon_D/delta, and use of R_chi there requires a specified bounded smooth continuation. The rational/local inverse and positive-anchor formulas provide the relevant regular charts; use their actual derivative/error moduli. Ambient tomography/source normals are kept below, rather than declaring D(mu,xi) D R_chi=I. Material/density/frame source legs are not erased.
+
+### 2. One body call, with an exact q0 SOURCE frontier
+
+Take n=2^r with n-1>=k=d_feat*m read-once occurrences. Prepare an r-bit TAG from its genuine blank using actual parked G words. Its weights are
+
+    w_j=p^(r+popcount(j))>0,  sum_j w_j=1.              (731)
+
+TAG is not a new free input rank. Keep coherent TAG copies outside later local supports until their inverse; all these are charged work. For each j use a native predicate-readonly router R_hat,j with predicate TAG=j AND q=1. Its false block is EXACT identity on all columns; its true block approximates SWAP(X,B_j). Apply ONE q/TAG-blind native body W_j on B_j:
+
+    T_j=R_hat,j^* (W_j ON B_j) R_hat,j,
+    chronological: R_hat,j; W_j; actual_inverse(R_hat,j). (732)
+
+W_j may use the shared helper/Spin, with completed all-column restoration. Its physical word excludes TAG, q, other probes and references. The different W_j are independently variable devices, even when their executed words agree at the base. No equality constraint between separate SOURCE and geometry copies is imposed.
+
+At q=0 every router is exactly false. Therefore T_0=product_j W_j,Bj, independent of TAG, and EVERY bank j is born in its actual state (726). This includes its own TAG sector. X, including arbitrary oldRIGHT entanglement, is untouched. SOURCE tomography at this frontier is unconditional: it needs no division by a TAG probability and no postselection.
+
+With ideal SWAP, in TAG=t the q1 block is W_t,X product_(j!=t) W_j,Bj. The query Q_t reads only the n-1 banks j!=t and never X or any factor of packet t. The own bank is prepared but ignored. Its material/metadata factors are also ignored in that branch. At q0 all other banks are the same actual sources they would be without routing; true-SWAP compiler error does NOT enter this base SOURCE identity. Replacing a router by an assumed self-inverse matrix would be incorrect: both actual inverse legs are executed.
+
+The route target is a legal real-SO compiler target after genuine ordinary padding. For power-of-two dim X>=4 the full-register SWAP already has positive determinant. A two-dimensional toy requires an extra ordinary WORK spectator, not protected Spin, to approximate the SWAP while keeping an exact false block. None of the small algebra below emits that controlled native router.
+
+### 3. The native reporter on the new Choi packets
+
+One packet is now its full Choi data/reference together with actual material/metadata factors. Below mu_j denotes the complete bounded, physically normalized feature vector of that declared augmented packet, not Choi data pretending to contain matter. Fixed calibration inputs remain fixed only in their stated scope; an independently supplied xi not generated in this packet keeps its separate derivative/source term. This is NOT the old canonical-bank state or covariance. Use the new decoder (730) to evaluate the ORIGINAL positive native weak reporter of 687--689: same click function, inverse/coframe/Cayley operands, density convention, gamma_h, alpha_K and lambda_minus. The table is not I_PC, an Einstein residual, or a test accepting only a solution. Keep the clamp/readout box and all new Bernstein and codec constants.
+
+In TAG=t the query uses the 7cj injection-first role architecture on the n-1 other packets. It reads each selected packet once, with a private flag for its chosen feature. The selector omits t and its fixed fallback is also a distinct legal tuple. Use ONE shared reader layer controlled by the computed single role bit R_ia; the classical role computation includes TAG exclusion. This keeps the bank-touching reader dimension fixed at a given h. Do not silently replicate each quantum reader under n growing-width TAG predicates and then claim a polylogarithmic leading reader length. Large TAG logic is paid and keeps its compilation/spread debts. Classical/quantum support guards, full helper restoration, private exit-parity coins, literal phase and independent inverse rows are those of 7cj with this NEW packet and the actual lengths. No old full-bank covariance or correlated-state kernel is transported by notation.
+
+Write c_t for its scalar cold return after the q0 device prefix. The complete ideal controlled query is readonly in TAG and ignores bank t. Thus
+
+    C=sum_t w_t c_t I_R,
+    J=-R log[a_zeta+zeta C^2],  a_zeta=1-zeta>0.        (733)
+
+R counts the actual free K_D input, protected Spin and genuinely free oldRIGHT ONCE; H_g, TAG, probes and references remain blanks. This is neither a sum of conditional prices nor the determinant of a free-TAG experiment. All allocated modes remain in absolute heat.
+
+If an actual compiled query does not preserve TAG exactly, the untouched coherent TAG copies still select its diagonal TAG blocks in this initial-blank cold corner. Its off-diagonal TAG error is bounded by 2epsilon_phase using the norm-one diagonal pinching map. Such error matters for intermediate TAG-copy variations and is retained in (734); diagonal branch spread alone would not bound those rows.
+
+At the common-body base, all actual W_j, Golden preparations and material/metadata state laws agree. The ideal common query template then gives c_t=c_m(mu), C=c_m(mu), and J=J_single,R(mu). Actual separately compiled templates need not have identical corners. Either implement literal wire-rebound copies of one actual template through the owned predicate-controllable alphabet, or retain the measured/bounded spread sigma_c=max_t||C_t-c_m I||. Finite sampling, table and quantum/Boolean macro errors also stay in their full cold-kernel budget epsilon_K.
+
+At the TAG-readonly reference with c_t=c_m, the future cold operator at TAG birth is c_m I_TAG, identity on completed helper factors. All supported TAG birth, first-copy and independent inverse-preparation real rows vanish. This does not assert stationarity of an arbitrary single Golden coin in a different experiment. At finite spread retain the safe price debt
+
+    E_TAG<=8R zeta N_TAG(sigma_c+2epsilon_phase)
+                                               /a_zeta^2. (734)
+
+in the raw gate-max norm. If actual templates are only approximate, their spread is not silently discarded. The metric uses a maximum over full TAG blocks regardless of the Born TAG weights, because TAG preparation commutes with the independently fixed site algebra.
+
+### 4. The live source and its ambient remainder
+
+For the common symmetric query reference, freeze the complete return cotangent and put g_m=D_mu J_single,R. The symmetric n-1-packet first conditional has the usual coefficient g_m/(n-1). Device i or its source birth contributes to every TAG t!=i; its own TAG query ignores it. Consequently the EXACT reference linked first source is
+
+    D_i J=a_i g_m dot D mu_i,
+    a_i=(1-w_i)/(n-1)>0,  sum_i a_i=1.                 (735)
+
+The whole differential of the prepared-TAG corner (733) is used here, with one common logdet cotangent; individual conditional J_t are not added. At the base, a TAG weight change multiplies equal c_t and therefore has zero row. Formula (735) retains independently varied field bodies, not a shared-parameter assumption. Equations (735)--(737) apply exactly to that reference kernel or an actual implementation with its stated identical-template kernel. An approximate actual query uses (738) and its cold-kernel debt; equal source words alone do not make its independently compiled readout kernels identical.
+
+For independent forward/reverse body and preparation legs, the Hermitian-cold adjoint identity of 7cj gives equal real half-rows without identifying velocities. Form each actual two-sided Choi moment mu_i^diamond with the normalized protected trace as in 691 and set
+
+    mu_bar^diamond=sum_i a_i mu_i^diamond,
+    Phi_live=R_chi(mu_bar^diamond),
+    D_born J=g_m dot D mu_bar^diamond.                 (736)
+
+This is a first-covector identity at the common matched base. The data-reading and metric appearances change through the SAME physical device body. There is no independent A-to-V compiler lookup.
+
+Full tomography is overcomplete. It would be wrong to replace (736) exactly by (D_Y J_m)D Phi_live using only the right inverse (730). Instead let J_* be the original scalar weak target, let g_*=D_mu(J_* composed with R_chi), and retain the actual new Bernstein derivative debt ||g_m-g_*||<=delta_B,chi. For the target, g_*=(D R_chi)^*D_Y J_*; all normal components of that chosen extension are included. Therefore
+
+    D_born J-Gamma_h E_PC,h D Phi_live
+      =Gamma_h e_weak,h D Phi_live
+         +(g_m-g_*)D mu_bar^diamond.                  (737)
+
+Along a common field variation all mu_i vary together. Since sum a_i=1, the gain remains the actual rank-R Gamma_h, NOT n Gamma_h. The original weak-source discrepancy, original coupling and exact all16+24+2 nonvacuum consumer are unchanged on their stated field image. Actual finite body/source errors locate a nearby decoded point; no finite native point is assigned the exact root.
+
+Here epsilon_K is an operator bound with TAG and all n SOURCE packets retained; only QUERY input blanks are contracted. TAG is compressed only when its actual prepared state is applied. Cold-query error gives the conservative complete-source comparison
+
+    ||Gamma_h^-1 D_born B-E_PC,h D Phi_live||
+      <=epsilon_weak,h||D Phi_live||
+        +(delta_B,chi/Gamma_h)||D mu_bar^diamond||
+        +8R zeta N_born epsilon_K/(a_zeta^2 Gamma_h).   (738)
+
+Use the actual coordinate lift, C_D, inverse moduli, covariance and weights of this new SOURCE, not an old Hilbert-sphere lower bound. In particular, small individual a_i rows cannot substitute for the common-field source: their sum is 1. Full-bank/cross-device normals retain their separate support and norm requirements.
+
+### 5. The same complete operator supplies the intrinsic metric
+
+For ideal routers and query, in TAG=t conjugate Q_t by the q0/q1 device blocks above. Q_t is identity on X and B_t, so the diagonal q-blocks commute with a_X. The off-diagonal is
+
+    Q_t,01 transported on the other SOURCE banks
+                    tensor W_t,Bt^* tensor W_t,X.
+
+Its commutator norm is b_t||[W_t,a_X]||, b_t=||Q_t,01||. Hence on the SAME chronological D01 and its actual prefix test representation,
+
+    L_g(a)=1/sqrt22 max_t b_t||[W_t,a_X]||.             (739)
+
+Prepared TAG and Golden-probe unitaries commute with a_X and do not change this FULL norm. The ignored park operator W_t,Bt is a norm-one factor, not a cold expectation. If q independently routes W_t to X in BOTH q blocks, it commutes with Q_t and cancels; that different layout has no such metric. The q0 park/q1 geometry distinction is essential.
+
+Use the phase-parity query of 7cj: its ideal full b_t=s=2a_G p, independent of the report's rarity or TAG probability. All body copies agree at the geometric reference W_delta(D) tensor I_g. Let epsilon_U bound the FULL operator difference produced by actual query and true-router errors from this ideal route, using every actual router call and its inverse; an elementary telescoping bound is epsilon_phase+4 sum_t epsilon_R,t. The q0 SOURCE identities remain exact even when that true-route error is nonzero.
+
+Define L_phys=sqrt22 L_g/(s delta). With the original scalar-algebra quotient radius R_D, a safe metric error is
+
+    eta_metric=(2R_D/delta)(epsilon_D+epsilon_U/s),
+    (1-eta_metric)L_D<=L_phys
+       <=(1+kappa/sqrt(1-kappa^2)+eta_metric)L_D.       (740)
+
+The state-distance bounds follow by the same Lipschitz-ball inclusions as 711. Require eta_metric<1 and retain the original kernel/component conditions. Neither b_t nor s multiplies Gamma_h. Actual general independent W_t give the maximum of their branch metrics; the common-field realization and its error are asserted at the common geometric reference, not for arbitrary disagreeing devices. No retained-cut compression or new norm is used.
+
+### 6. Independent rows, real clock and precise remaining application
+
+Each body/pair-preparation macro has one-packet SOURCE support plus the restored shared helper, with price coefficient a_i g_m. Summing true per-device lengths gives a safe leading bound proportional to sum_i a_i L_i||g_m||, rather than an unproved n-fold reduction. Router i addresses ONLY X, its own B_i, q/TAG, private route work and shared helper/Spin. It excludes other probes, their references and the QUERY exit coins. Outside TAG copies remove off-TAG first contractions. Its diagonal q0 component has the same one-packet conditional source in other TAGs and is quiet in its own ignored sector. A raw q-mixing component keeps the 7cj contracted exit-parity factor beta^(l-1). A conservative additional budget is
+
+    E_ROUTE <=8(sum_i a_i L_ROUTE,i)||g_m||_1
+       +8R zeta s N_ROUTE beta^(l-1)/a_zeta
+       +32R zeta N_ROUTE(epsilon_K+epsilon_phase)
+                                             /a_zeta^2. (741)
+
+Here L_ROUTE,i and N_ROUTE count ALL actual route/inverse primitives; the constants are conservative trace/resolvent bounds, not selected fees. This needs those packet/label/coin support guards. Query/selector/SIGN/phase and independent inverse rows retain 723 on the Choi carrier, with n-1 active banks, its actual g_m and all new errors. Add E_QUERY/Gamma_h, E_ROUTE/Gamma_h and E_TAG/Gamma_h when asserting a whole local-graph normalized residual. No unrestricted label-, coin- or multi-packet generator is made stationary by these estimates.
+
+The raw chronology includes TAG/pointer birth, every 8b/12b Golden-probe pair prefix/inverse, ONE forward W_i and its actual expanded inverse, and each R_hat,i/inverse on BOTH outer legs. The route contribution is 2[len(R_hat,i)+len(inverse(R_hat,i))]. Add every reader, selector, role, threshold, coin, sign and label stage. Fresh dimensions enlarge absolute heat, not input rank. A merely stored inverse or declared repeated logical call is not a paid operation.
+
+Use the matched whole phase echo with genuine inverses. It is exactly selfadjoint and unitary for any actual compiled body/query/router; its INTERNAL stage placement therefore consumes 606 for the whole heat FIRST source, including independent forward/reverse temporal rows. Absolute heat, all cochains and the actual N are kept. Default tensor heat and noninternal 501 placements retain their distinct hypotheses. Birth/scene, cut, rank, duration, extra Info/R or other selected valuations are not silently added or erased.
+
+This changes the parent argument: SOURCE is now a measured record of the SAME actual device whose other q branch supplies the geometry. Its operator-data field jet and the metric have a common causal operator map, rather than a lookup between independently chosen words. This linkage is for BODY-generated geometric variations on the stated field image. An independent change of Golden-probe preparation at fixed W can change the readout without changing the metric; it remains an auxiliary source/normal with its actual calibration and bound, not another geometric direction. The same distinction applies to material/metadata/controller rows. The construction never needs to write a nonlinear unitary from an unknown quantum state.
+
+The original physical X_N/role/observer admission is still a separate application. The owned right inverse (730) does not alone prove a lift of every ideal field tangent inside a particular fixed finite native word; native word stencils and allowed matrix comparisons keep their actual scope. The full Choi decoder and word construction give the map to which that question applies. Regularization, stationary refining limits and any stronger universal equation-class claim retain their own true error and admission obligations. No exact finite joint root, new physical principle, registry acceptance, Ready/merge or GR closure is asserted. GR_closed=false.
+
+### 7. Narrow checks and their limits
+
+The Golden-Choi test below executes a new three-stage native word G;CX;G on all four columns, using the last G body ONCE. It checks full-record density/operator reconstruction, all ten real tomography features, the ambient decoder jet, unavoidable sign ambiguity and dephasing failure. Its mathematical G tangent is not permission to tune native G continuously.
+
+The other new check proves factorized all-column tagged identities: two 8-by-8 SOURCE-parity sectors with multiplicity four account for each 64-dimensional q/B/X core; references give an identity factor. Four body codes G^2/G^4 and a genuinely prepared two-Golden-bit TAG give the exact cold weights, metric maximum, independent forward/reverse source coefficients and TAG-birth cancellation at equal bodies. The mixed G^4 control is operator/source algebra only; it is not asserted to lie in the decoder's positive-anchor rotor chart. The separate decoder check uses G, and the common-body source derivative uses G^2. It does NOT build a 4096-by-4096 array or emit controlled SWAP words. The reference Schmidt factors are kept in the SOURCE contractions; they are not replaced by a free maximally mixed input. A slow preliminary expanded scratch was stopped without a receipt; only the final factorized calculation is recorded as PASS.
+
+Neither check synthesizes the large Choi reporter, repeats the original geometric inverse, computes a new gravity root or replays old heat/full128/Lean evidence. The source/metric construction is proved above with its typed remaining premises.
+
+
+### 8. Frozen changed code and observed receipts
+
+Save each Python block outside tracked paths and run from the repository root. These are the observed outputs of the two new narrow calculations; expected evidence was not rewritten.
+
+#### Native full-record Golden decoder
+
+Code 4205 bytes / SHA256 251021e19905dd158658a927b4850e218aa5ff246c55c59db0d08655ca91fc5f; observed receipt 864 bytes / SHA256 0a57d08423b1e480ae347484954cf117a16aaf1592f4c9705d4c4f6f27b9207c.
+
+```python
+"""New 4-column native Golden-Choi value/jet control; no old replay."""
+from pathlib import Path
+import hashlib, importlib.util, json, sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+
+ROOT=Path.cwd()
+OWNER=ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+assert hashlib.sha256(OWNER.read_bytes()).hexdigest()==PIN
+spec=importlib.util.spec_from_file_location('golden_choi_owner',OWNER)
+N=importlib.util.module_from_spec(spec)
+sys.modules[spec.name]=N
+spec.loader.exec_module(N)
+field=N.GOLDEN_FIELD
+def dm(A): return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(field)
+def same(A,B): return dm(A)==dm(B)
+def red(x): return field.to_sympy(field.from_sympy(S.expand(x)))
+def vec(A): return S.Matrix([A[i,j] for i in range(A.rows) for j in range(A.cols)])
+def unvec(v,n): return S.Matrix(n,n,lambda i,j:v[i*n+j])
+
+G=S.Matrix(N.G_LOCAL)
+p,a=N.P,N.A
+I=S.eye(2)
+J=S.Matrix([[0,-1],[1,0]])
+Lambda=S.diag(p,p*p)
+sqrtLambda=S.diag(a,p)
+invSqrtLambda=S.diag(1/a,1/p)
+omega=vec(sqrtLambda)
+e00=S.Matrix([1,0,0,0])
+prep=(N.Gate('G',(0,)),N.Gate('CX',(0,1)))
+word=prep+(N.Gate('G',(0,)),)
+def execution(gates):
+    return N.Execution(2,(0,1),(),tuple(gates),N.G_CX)
+E=execution(word)
+N.validate_execution(E,max_qubits=2,max_expanded_stages=3)
+U=N.word_matrix(E,max_qubits=2,max_expanded_stages=3)
+Uprep=N.word_matrix(execution(prep),max_qubits=2,max_expanded_stages=3)
+assert same(U.T*U,S.eye(4))
+assert same(Uprep*e00,omega)
+psi=U*e00
+assert same(psi,vec(G*sqrtLambda))
+sigma=psi*psi.T
+assert same(sigma*sigma,sigma) and red(S.trace(sigma))==1
+assert red((omega.T*psi)[0]-a)==0
+assert red((omega.T*sigma*omega)[0]-p)==0
+
+# Positive real phase anchor: sigma*omega/a is the ACTUAL native pure vector.
+recovered=sigma*omega/a
+assert same(recovered,psi)
+Wrec=unvec(recovered,2)*invSqrtLambda
+assert same(Wrec,G)
+assert red(Wrec[1,0]-p)==0   # W_delta(D)=G at delta=1,D=p.
+
+# All ten fixed norm<=1 real matrix-unit observables reconstruct the density.
+observables=[]
+dual=[]
+for i in range(4):
+    O=S.zeros(4);O[i,i]=1
+    observables.append(O);dual.append(O)
+for i in range(4):
+    for j in range(i+1,4):
+        O=S.zeros(4);O[i,j]=O[j,i]=1
+        observables.append(O);dual.append(O/2)
+means=[red(S.trace(sigma*O)) for O in observables]
+rho_from_means=S.zeros(4)
+for mu,B in zip(means,dual): rho_from_means+=mu*B
+assert same(rho_from_means,sigma)
+
+# A mathematical one-body tangent, not a tunable native-G permission.
+dG=J*G
+dpsi=vec(dG*sqrtLambda)
+H=dpsi*psi.T+psi*dpsi.T
+assert red((psi.T*dpsi)[0])==0
+dq=red((omega.T*H*omega)[0])
+dchi=H*omega/a-psi*dq/(2*p)
+assert same(dchi,dpsi)
+dW=unvec(dchi,2)*invSqrtLambda
+assert same(dW,dG)
+assert red(dW[1,0]-a)==0
+assert same(sum((red(S.trace(H*O))*B for O,B in zip(observables,dual)),S.zeros(4)),H)
+
+# Negative controls: density cannot globally distinguish W from -W; the
+# positive-anchor chart does. Basis probabilities alone lose the offdiagonal.
+assert same((-psi)*(-psi).T,sigma)
+assert red((omega.T*(-psi))[0]+a)==0
+dephased=S.diag(*[sigma[i,i] for i in range(4)])
+assert not same(dephased,sigma)
+assert (dephased*omega)[2]==0 and psi[2]!=0
+assert red((1/p)**2-(1/(p*p)))==0
+
+inventory=N.inventory(E,max_qubits=2,max_expanded_stages=3)
+result={
+ 'status':'PASS',
+ 'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'native_owner_sha256':PIN,
+ 'native_word':['G(0)','CX(0,1)','G(0)'],
+ 'full_columns_checked':4,
+ 'stages':inventory.gate_count,
+ 'source_Golden_pairs':1,
+ 'actual_W_body_calls':1,
+ 'lambda_min':'p^2',
+ 'inverse_amplitude_condition':'p^-1',
+ 'anchor':'sqrt(p)>0',
+ 'real_tomography_observables':len(observables),
+ 'exact_density_and_W_reconstruction':True,
+ 'exact_ambient_density_to_body_tangent':True,
+ 'global_sign_ambiguity_control':True,
+ 'dephased_record_rejected':True,
+ 'scope':'one native G body with full-Schmidt Golden input; no TAG router, large Choi writer, geometric inverse, or GR root replay',
+ 'physical_continuous_G_admission':False,
+ 'GR_closed':False
+}
+Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "251021e19905dd158658a927b4850e218aa5ff246c55c59db0d08655ca91fc5f",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_word": [
+    "G(0)",
+    "CX(0,1)",
+    "G(0)"
+  ],
+  "full_columns_checked": 4,
+  "stages": 3,
+  "source_Golden_pairs": 1,
+  "actual_W_body_calls": 1,
+  "lambda_min": "p^2",
+  "inverse_amplitude_condition": "p^-1",
+  "anchor": "sqrt(p)>0",
+  "real_tomography_observables": 10,
+  "exact_density_and_W_reconstruction": true,
+  "exact_ambient_density_to_body_tangent": true,
+  "global_sign_ambiguity_control": true,
+  "dephased_record_rejected": true,
+  "scope": "one native G body with full-Schmidt Golden input; no TAG router, large Choi writer, geometric inverse, or GR root replay",
+  "physical_continuous_G_admission": false,
+  "GR_closed": false
+}
+```
+
+#### Prepared-TAG shared-body source and metric algebra
+
+Code 6114 bytes / SHA256 0b9928474090bd7f9f170834a1843086ea1c89d143872267a75b8b077113ba83; observed receipt 2844 bytes / SHA256 2baaa066832ff1d49f255ceb0f5c2ea95602c02c2dc02a11dca499ade6bb00e3.
+
+```python
+"""Fresh n4 prepared-TAG/shared-W exact factor algebra; no emitted router."""
+from pathlib import Path
+import hashlib,importlib.util,json,sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+ROOT=Path.cwd()
+OWNER=ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+assert hashlib.sha256(OWNER.read_bytes()).hexdigest()==PIN
+spec=importlib.util.spec_from_file_location('live_choi_native',OWNER)
+N=importlib.util.module_from_spec(spec);sys.modules[spec.name]=N;spec.loader.exec_module(N)
+F=N.GOLDEN_FIELD
+def red(x):return F.to_sympy(F.from_sympy(S.expand(x)))
+def dm(A):return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(F)
+def eq(A,B):return dm(A)==dm(B)
+def mul(*A):
+    z=dm(A[0])
+    for b in A[1:]:z=z.matmul(dm(b))
+    return z.to_Matrix()
+def kron(*A):return S.kronecker_product(*A)
+G=S.Matrix(N.G_LOCAL);p,a=N.P,N.A
+I=S.eye(2);Z=S.diag(1,-1);P=S.diag(0,1);J=S.Matrix([[0,-1],[1,0]])
+v=S.Matrix([a,p]);Lam=S.diag(p,p*p);omega=S.Matrix([a,0,0,p])
+assert red((omega.T*omega)[0]-1)==0
+beta=red(p**3);s=red(2*a*p)
+W2=mul(G,G);W4=mul(W2,W2)
+c0=beta;s0=s;c1=red(W4[0,0]**2-W4[1,0]**2);s1=red(2*W4[0,0]*W4[1,0])
+A=red((c0+c1)/2);B=red((c0-c1)/2)
+assert red(c0*c0+s0*s0-1)==red(c1*c1+s1*s1-1)==0
+# Exact rational proof c1>c0>0, hence |s0|>|s1|, no numerical norm test.
+assert S.Rational(11,5)**2<5<S.Rational(9,4)**2
+assert 2*(1-2*S.Rational(5,8)**6)**2-1>S.Rational(5,8)**3
+SW=S.Matrix([[1,0,0,0],[0,0,1,0],[0,1,0,0],[0,0,0,1]])
+for W in (W2,W4):
+    # One physical W on B, routed to X only in TAG=j AND q1.
+    assert eq(mul(SW.T,kron(I,W),SW),kron(W,I))
+    assert eq(mul(W.T,W),I)
+    chi=mul(kron(W,I),omega)
+    assert eq(S.Matrix(2,2,list(chi))*S.diag(1/a,1/p),W)
+    assert red((chi.T*chi)[0]-1)==0
+
+# Other3 SOURCE-parity +/- sectors each have multiplicity4. The remaining
+# q2*ownB2*freeX2=8 sector proves the complete64-column core perTAG.
+Ws=[W2,W4,W2,W4];metric=[]
+for j,W in enumerate(Ws):
+    for cz,sz in ((c0,s0),(c1,s1)):
+        off=sz*kron(W.T,W)
+        U=S.BlockMatrix([[cz*S.eye(4),off],[off.T,-cz*S.eye(4)]]).as_explicit()
+        assert eq(U.T,U) and eq(mul(U,U),S.eye(8))
+        ax=kron(I,I,P);comm=U*ax-ax*U
+        assert eq(mul(comm.T,comm),sz*sz*W[1,0]**2*S.eye(8))
+    metric.append(str(red(s*s*W[1,0]**2)))
+
+# Golden-prepared TWO-bit TAG, no genuinely free TAG input.
+tag=mul(kron(G,G),S.Matrix([1,0,0,0]))
+w=[red(x*x) for x in tag]
+assert all(red(x-y)==0 for x,y in zip(w,[p*p,p**3,p**3,p**4]))
+assert red(sum(w)-1)==0
+coeff=[red((1-t)/3) for t in w]
+assert red(sum(coeff)-1)==0
+TG=kron(G,G);site=kron(S.eye(4),P)
+assert eq(kron(TG,I)*site,site*kron(TG,I))
+nu=[red(S.trace(Lam*mul(W.T,Z,W))) for W in Ws]
+cj=[red(A+B*S.prod(nu[k] for k in range(4) if k!=j)) for j in range(4)]
+C=red(sum(wj*cc for wj,cc in zip(w,cj)))
+
+# Common-W SOURCE derivative: each independent call is a single shared body.
+W=W2;dW=mul(J,W);vv=red(S.trace(Lam*mul(W.T,Z,W)))
+dvf=red(S.trace(Lam*mul(W.T,Z,dW)))
+dvr=red(S.trace(Lam*mul(dW.T,Z,W)))
+assert red(dvf-dvr)==0
+c=red(A+B*vv**3);zeta=S.Rational(1,4);R=2
+price_weight=red(-2*R*zeta*c/(1-zeta+zeta*c*c))
+g=red(price_weight*3*B*vv*vv)
+rows=[]
+for i in range(4):
+    # Own TAGi ignores Bi. Each independent park row is a skew expectation.
+    parkf=red(S.trace(Lam*mul(W.T,dW)))
+    parkr=red(S.trace(Lam*mul(dW.T,W)))
+    assert parkf==parkr==0
+    dc_f=red(sum(w[j]*(0 if j==i else B*vv*vv*dvf) for j in range(4)))
+    dc_r=red(sum(w[j]*(0 if j==i else B*vv*vv*dvr) for j in range(4)))
+    assert red(price_weight*dc_f-coeff[i]*g*dvf)==0
+    assert red(price_weight*dc_r-coeff[i]*g*dvr)==0
+    rows.append({'physical_W':i,'weight':str(coeff[i]),
+       'forward_price_row':'a_i*g_m*dnu_forward',
+       'inverse_price_row':'a_i*g_m*dnu_reverse'})
+for bit in (0,1):
+    dt=kron(mul(J,v),v) if bit==0 else kron(v,mul(J,v))
+    assert red((tag.T*dt)[0])==0
+    assert red((tag.T*(c*S.eye(4))*dt)[0])==0
+
+# Wrong q-INDEPENDENT routing makes W cancel completely from site action.
+for W in (W2,W4):
+    for cz,sz in ((c0,s0),(c1,s1)):
+        Q=kron(S.Matrix([[cz,sz],[sz,-cz]]),I)
+        Tw=kron(I,W)
+        Uw=mul(Tw.T,Q,Tw)
+        assert eq(Uw*kron(I,P)-kron(I,P)*Uw,S.zeros(4))
+# Own bank in query changes the CLAIMED leave-out cold/source formula.
+bad=red(A+B*vv**4)
+assert red(bad-c)!=0
+
+out={'status':'PASS','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'native_owner_sha256':PIN,'physical_operator_macros':4,'TAG_bits':2,
+ 'TAG_preparation':'G tensorG onblank00; copiedlabels outside routers if independentTAGfaults included',
+ 'TAG_weights':list(map(str,w)),'input_rank':2,
+ 'unlabelled_logical_dimension':4096,
+ 'optional_two_TAG_copy_bits':'dimension16384, inputrankstill2; actualcopy/inverseclockextra, notexecutedhere',
+ 'rank_scope':'onlyX isfree; TAG/q/4GoldenB,Rpairs allknown; appendactualprotectedSpin/oldRIGHTsupport once, not4TAGfactor',
+ 'logical_per_TAG_core':64,'factor_validation':'two8x8paritysectors eachmultiplicity4; referenceR4 tensoridentity dimension16',
+ 'probe':'tensor(a|00>+p|11>); EXACTnativeGoldenmatrix/outwardCX; fullknownSchmidtLambda',
+ 'mixed_W_codes':['G^2','G^4','G^2','G^4'],'mixed_cold_branches':list(map(str,cj)),
+ 'prepared_TAG_cold':str(C),'cold_law':'C=sum_j w_j*c_j; J=-Rlog(a_zeta+zeta*C^2), NOTsumJ',
+ 'metric_squared_by_TAG':metric,'full_metric':'max_j 2*a*p*abs(sin(angleW_j)); TAGprepcommutessitealgebra',
+ 'SOURCE_rows_common_W':rows,'diagonal_field_gain':'Gamma_single; sum_i a_i=1, noTAGrankmultiplier',
+ 'TAG_birth_first_sources_at_common_W':'zero for BOTH independentG legs because allcoldc_j=c',
+ 'wrong_q_independent_route_metric_zero':True,
+ 'own_bank_query_counter':'changesstatedleave-outformula; notno-go foralternativeall-bankdesign',
+ 'scope':'exactfactorizedlogicalrouting/probe/pricealgebra; noemittednativecontrolledrouter/clock/GRroot',
+ 'physical_TAG_cut_or_operatorvariation_admission':False,'GR_closed':False}
+Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\n')
+print(json.dumps(out,indent=2))
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "0b9928474090bd7f9f170834a1843086ea1c89d143872267a75b8b077113ba83",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "physical_operator_macros": 4,
+  "TAG_bits": 2,
+  "TAG_preparation": "G tensorG onblank00; copiedlabels outside routers if independentTAGfaults included",
+  "TAG_weights": [
+    "3/2 - sqrt(5)/2",
+    "-2 + sqrt(5)",
+    "-2 + sqrt(5)",
+    "7/2 - 3*sqrt(5)/2"
+  ],
+  "input_rank": 2,
+  "unlabelled_logical_dimension": 4096,
+  "optional_two_TAG_copy_bits": "dimension16384, inputrankstill2; actualcopy/inverseclockextra, notexecutedhere",
+  "rank_scope": "onlyX isfree; TAG/q/4GoldenB,Rpairs allknown; appendactualprotectedSpin/oldRIGHTsupport once, not4TAGfactor",
+  "logical_per_TAG_core": 64,
+  "factor_validation": "two8x8paritysectors eachmultiplicity4; referenceR4 tensoridentity dimension16",
+  "probe": "tensor(a|00>+p|11>); EXACTnativeGoldenmatrix/outwardCX; fullknownSchmidtLambda",
+  "mixed_W_codes": [
+    "G^2",
+    "G^4",
+    "G^2",
+    "G^4"
+  ],
+  "mixed_cold_branches": [
+    "9570149346143 - 4279900898560*sqrt(5)",
+    "137209541243 - 61361972276*sqrt(5)",
+    "9570149346143 - 4279900898560*sqrt(5)",
+    "137209541243 - 61361972276*sqrt(5)"
+  ],
+  "prepared_TAG_cold": "-15125607676917 + 6764377393316*sqrt(5)",
+  "cold_law": "C=sum_j w_j*c_j; J=-Rlog(a_zeta+zeta*C^2), NOTsumJ",
+  "metric_squared_by_TAG": [
+    "144 - 64*sqrt(5)",
+    "10304 - 4608*sqrt(5)",
+    "144 - 64*sqrt(5)",
+    "10304 - 4608*sqrt(5)"
+  ],
+  "full_metric": "max_j 2*a*p*abs(sin(angleW_j)); TAGprepcommutessitealgebra",
+  "SOURCE_rows_common_W": [
+    {
+      "physical_W": 0,
+      "weight": "-1/6 + sqrt(5)/6",
+      "forward_price_row": "a_i*g_m*dnu_forward",
+      "inverse_price_row": "a_i*g_m*dnu_reverse"
+    },
+    {
+      "physical_W": 1,
+      "weight": "1 - sqrt(5)/3",
+      "forward_price_row": "a_i*g_m*dnu_forward",
+      "inverse_price_row": "a_i*g_m*dnu_reverse"
+    },
+    {
+      "physical_W": 2,
+      "weight": "1 - sqrt(5)/3",
+      "forward_price_row": "a_i*g_m*dnu_forward",
+      "inverse_price_row": "a_i*g_m*dnu_reverse"
+    },
+    {
+      "physical_W": 3,
+      "weight": "-5/6 + sqrt(5)/2",
+      "forward_price_row": "a_i*g_m*dnu_forward",
+      "inverse_price_row": "a_i*g_m*dnu_reverse"
+    }
+  ],
+  "diagonal_field_gain": "Gamma_single; sum_i a_i=1, noTAGrankmultiplier",
+  "TAG_birth_first_sources_at_common_W": "zero for BOTH independentG legs because allcoldc_j=c",
+  "wrong_q_independent_route_metric_zero": true,
+  "own_bank_query_counter": "changesstatedleave-outformula; notno-go foralternativeall-bankdesign",
+  "scope": "exactfactorizedlogicalrouting/probe/pricealgebra; noemittednativecontrolledrouter/clock/GRroot",
+  "physical_TAG_cut_or_operatorvariation_admission": false,
+  "GR_closed": false
+}
+```
+
+
 ## 8. Reproduction
 
 Run from this directory:
