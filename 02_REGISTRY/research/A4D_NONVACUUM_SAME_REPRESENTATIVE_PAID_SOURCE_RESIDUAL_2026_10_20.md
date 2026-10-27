@@ -82617,6 +82617,638 @@ print(json.dumps(out, indent=2)+'\n', end='')
 }
 ```
 
+## 7cr. Literal native field stencils inherit the source estimate through a proved common map
+
+27 October2026. SAME #334 / constitutive/native-programme-v1; native realization and composition, input053d072ec5fa20c45e455017614f0c0eb50b5945. Consume7aq's common-inventory alphabet,7av417--419,7cl742--751,7cm752--759,7cn and7cq785--796. The named parent application is the transport of796 from its matrix comparison graph to complete fixed-alphabet CODE alternatives and their actual field/price contrasts. The new inputs are segmented exact-inventory completion, an explicit full paired-operator/prefix map, and a joint spacing/endpoint-accuracy schedule. No raw Golden angle becomes a primitive and no new action or physical admissibility predicate is installed.
+
+### 1. Equalize each varying call before embedding the body catalogue
+
+Fix h, all ordinary body/material dimensions, genuine blanks/free-input/oldRIGHT, INTERNAL placement, prescribed collars/context, actual calibrated reader words and positive shape constants BEFORE compiling the catalogue. Allocate at least three ordinary private body wires, including genuine padding if needed. They and their Choi/reference columns remain present in the full operator and heat. Protected Spin/oldRIGHT are not those padding wires.
+
+Use the OWNED7aq Theta=I,m=2 inverse-closed SO source alphabet. Its logical even signed-G/CX words have even signed-G count g_sigma; each signed G on an ordinary target is expanded through the physical helper into11 stages with inventory1G_port+6CX+4SourceI, for either sign. This is the existing full-column signed macro, not a new inverse primitive. Thus each forward varying call has inventory(g_sigma,c_sigma,4g_sigma). Compile the centre using this alphabet from the start; preserve that ACTUAL centre endpoint exactly when completing the catalogue. Compile only the specified off-centre shadow endpoints to their stated accuracy. A derivative of the compiler lookup is never used.
+
+Choose the common even Gmax=max_sigma g_sigma. Append (Gmax-g_sigma)/2 literal G+;G- identity pairs. They add(DeltaG,6DeltaG,4DeltaG). Set
+
+    Cmax=max_sigma[c_sigma+6(Gmax-g_sigma)]+4.
+
+Every remaining integer CX deficit>=4 is2a+5b: use pairs if even and one five-CX identity plus pairs if odd. The exact five-CX word is A;B;A;B;C with A=CX(a,b),B=CX(b,c),C=CX(a,c), on THREE already allocated ordinary wires of the SAME bank. All identities hold on every column, including dirty private work. Then every completed call has
+
+    v_forward=(Gmax,Cmax,4Gmax),
+    v_literal_inverse=(Gmax,Cmax,16Gmax),
+    N_forward=5Gmax+Cmax, N_inverse=17Gmax+Cmax.       (797)
+
+These inverse counts follow the actual port-G/SourceI map, not an assertion that inverse-of-inverse has its old inventory. Topup length is bounded by a constant times the largest original fixed-layout compiler length plus a constant. It therefore preserves the owned polylogarithmic precision overhead at fixed h. Include the fixed native Walsh lift frame before these catalogue counts, or include its identical forward/inverse inventory in every entry.
+
+Apply797 separately to every varying body/material/actuator call. Fixed reader/router/query calls retain their actual words. All completed macro-frontier timestamps, total primitive inventories and actual N now agree across the finite centre/+- catalogue, before its repeated-device embedding. Bank-private pads preserve the one-bank cones used by796; all their independent raw rows are counted in its leading lengths. They are not free waits or retrospectively discarded operations.
+
+Prepending other catalogue identity excursions INSIDE each body and then inverting the enlarged body would not be this proof: it introduces another inventory-map factor and does not by itself equalize the echo. Equation797 supplies the needed local completion directly. The original7ay outside-whole-echo construction retains its different, valid scope.
+
+### 2. A common unitary on the actual complete two-grade carrier
+
+For two completed INTERNAL words g,h at this same N>=3 and full module K, let
+
+    V_0^g=V_0^h=I, V_(t+1)^g=g_t V_t^g,
+    U_g=V_N^g, U_h=V_N^h, A_t=V_t^h(V_t^g)^*.
+
+On C0 and spatial C1 rows use A_t on their internal factor. On interior temporal row t use A_(t+1); on the closing temporal row use I. Keep each actual scene factor and every remaining mode. Call the resulting unitaries Q0,Q1 and Q=Q0 direct_sum Q1. Substituting in the DECLARED501 differential gives
+
+    Q1 d_g Q0^*=d_h+E,
+    E_close=-R_scene tensor[(U_g-U_h)(V_(N-1)^h)^*],
+    ||Q D01,g Q^*-D01,h||=||U_g-U_h||/sqrt22.         (798)
+
+Every spatial and interior temporal block agrees exactly. The only residual is that one closing input block. The full paired operator has off-diagonal blocks E,E^*, hence norm||E||. Since ||R_scene||=1/sqrt22,798 has no missing zero-cochain surplus, input-rank factor,1/N normalization, raw-clock sqrt2 or repeated-stage N loss. These are explicit finite comparison matrices, not extra physical gates.
+
+For the actual PREFIX representation of7bu592 use V_t a V_t^* on C0/spatial rows, V_(t+1)aV_(t+1)^* on interior temporal rows and the same initial a on the closing row. Then
+
+    Q pi_g(a)Q^*=pi_h(a), Q P0 Q^*=P0,
+    |L_g(a)-L_h(a)|<=2||U_g-U_h|| inf_c||a-cI||/sqrt22. (799)
+
+P0 is the actual stage0 blank/free input/return cut of this sector, not an independently moving Grassmann projector. A0=I preserves its full protected span, including arbitrary external entanglement. The intrinsic metric statement is in the same actual represented norm; no differentiability at a maximum/singular-value crossing is asserted. Converting it to the physical rotor/field metric still requires740's true delta, quotient radius and calibration.
+
+The complete history monodromy of501/502 at stage t is V_t U(V_t)^*, with its declared identity sector. The SAME map therefore gives
+
+    ||Q U_hist,g Q^*-U_hist,h||=epsilon,
+    epsilon=||U_g-U_h||,
+    |J_g-J_h|<=2R zeta epsilon/(1-zeta),
+    |H01,g-H01,h|<=epsilon/22.                       (800)
+
+The return corner differs by at most epsilon and F by at most2epsilon. The logdet estimate uses the TRUE protected input rank R and1-zeta>0. For the heat bound, the two degree-zero Laplacians differ only by a Hermitian closing edge of norm epsilon/22; N>=3 keeps its two off-diagonal blocks distinct. Use the FULL positive trace Z01=2Tr exp(-beta Delta0)+359N dimK; its effective thermal cotangent has trace<=1. No zero mode or field-dependent absolute baseline is deleted.
+
+In the matched-reflection stencil below, each endpoint is conjugate to the SAME full Qhat at the SAME N/K. Its full INTERNAL heat values are EXACTLY equal by the owned spectrum/prefix theorem. Equation800 is a more general value bound, not a reason to replace a different RawZone/default heat or an unequal clock by this one.
+
+### 3. Align the actual SOURCE marks without identifying different laboratory tests
+
+Equal endpoints alone do not determine a prefix reading. For a fixed lab effect O at stage tau retain
+
+    E_(g,tau,O)=(V_tau^g)^* O V_tau^g.
+
+It need not equal E_(h,tau,O). A co-transported O and the same fixed-laboratory O are distinct test contexts; their actual reader, address and price remain. Equation798 does not quotient those marks away.
+
+At a corresponding COMPLETED macro frontier ell,797 aligns the real clock addresses. Unitary telescoping over completed calls, not raw letters, gives
+
+    ||V_ell^sigma-V_ell^0||
+       <=sum_(completed calls j<=ell)||M_j^sigma-M_j^0||,
+    ||E_sigma-E_0||<=2||O|| ||V_ell^sigma-V_ell^0||.   (801)
+
+Include every repeated device and actual inverse call; the genuine n factor is present. Inside an unmatched compiler word/pad the prefixes may differ by order1. Equation801 does not apply there. Keep all such extra native marks explicitly. No hidden pointer column is fixed by endpoint accuracy.
+
+For a body-generated Choi mark the local bound is sharper: ||chi_W-chi_V||<=||W-V|| and ||sigma_W-sigma_V||_1<=2||W-V||. Use the actual reader-frame inverse, positive anchor, p^(-b_body), delta and augmented xi norms to decode it. Weighted common-field marginals have sum_i a_i=1; the full-prefix operator sum in801 remains a different norm. This distinction is required by the current norm/field contract.
+
+The new paid control below has g=(G_x,CX_xy,CX_xy), h=(CX_xy,CX_xy,G_x), both with endpoint G_x and the same raw inventory. Insert the SAME CX(y,r) just after their first stage. On free x and blank y,r the two actual four-stage record effects are0 and diag(0,1). Thus an endpoint-exact common-map theorem coexists with a real distinguishable marked context. The full proof never calls those two addressed tests equivalent.
+
+### 4. Lift a field speed once at the actual centre
+
+Use749's quantitative collar on the SAME fixed-boundary field chart and actual material/xi actuator, with eta<1/2. Equations742/746--750 give an explicit linked body/material first jet L_v at the actual homogeneous native centre, satisfying D Phi_actual L_v=v. Keep its true norm K_lift,h; density/frame/calibration coordinates not supplied by that actuator remain independent context sources. At fixed h, after sufficiently accurate centre preparation this norm is bounded independently of m. The raw norm remains gate-max, or its actual1/sqrt22 D01 conversion, not a sum over devices.
+
+Include the common native Walsh identity frames and all797 padding in the796 counts BEFORE its late query/error choices. Their new private-bank row lengths are at most polylogarithmic in endpoint precision, their frontier cones are one-bank, and their heat first rows use the same INTERNAL reflection theorem. Thus the augmented centre retains an actual bound e_m with
+
+    |D B_m[L_v]|/Gamma0<=e_m K_lift,h ||v||,
+    e_m<=C_h[1+log m]^c/sqrt(m)+C'_h/m.              (802)
+
+Gamma0 is792/785's derived direct-click comparison gain at this ACTUAL decoded centre and NEW common rank/clock. It is not a fictitious exact factorization of the finite compiled price. The old positive shape is fixed; R zeta/Gamma0 is bounded at fixed h. All finite compiler/weak-source differences remain in e_m and the field comparison. No derivative of a discrete compilation lookup or physical admission of the raw-angle jet is used.
+
+For a predeclared unit field direction v freeze the actual left-trivialized generators and form an analytic SHADOW prefix A(u) by replacing each corresponding body/actuator by exp(uZ_j) times its centre operator, with the actual inverse on the other leg. All routers, calibrated readers and the ACTUAL compiled Qhat are fixed. Every actual endpoint is U(u)=A(u)^*Qhat A(u). This shadow is a matrix calculation for source comparison; only its compiled endpoints below are literal codes. Its first jet is the one supplied by L_v, even though the Walsh frame product need not equal exp(uZ) away from0.
+
+Let B_v=sum_j||Z_j|| over varying calls in A. There are O_h(n) such body/material calls and B_v<=C_h n||v||. Unitary product differentiation yields ||A^(r)||<=B_v^r and ||C^(r)||<=(2B_v)^r for C=i^*U(u)i,r<=3. With a=1-zeta and D=aI+zeta C^2, the trace-log third derivative obeys
+
+    M3,v=sup |J_curve'''|
+       <=64R zeta(1+zeta)B_v^3/a^3
+       <=128R zeta B_v^3/a^3.                       (803)
+
+For clarity ||D'||<=4zeta B_v, ||D''||<=16zeta B_v^2 and ||D'''||<=64zeta B_v^3. Insert these in the noncommutative trace identity for D^-1; cyclic trace supplies the three mixed terms. No commutation of C,C',C'' is assumed. The full heat along this same-clock shadow is constant by its conjugate-reflection spectrum, not by omitting it. At fixed h,803/Gamma0 is O_h(n^3), not an unspecified uniform derivative modulus.
+
+### 5. Real code contrasts with a simultaneous error and spacing order
+
+For a finite predeclared basis v_a of the ORIGINAL free field norm V_h, compile the shadow endpoints at+-t into literal words on the same ordinary body/material targets. Use797 to equalize every varying call, and keep the actual centre endpoint exactly. Execute each changed body in BOTH of its SOURCE/metric appearances, and use the actual completed inverse everywhere. Initial span, return comparison, fixed query/task, oldRIGHT and initial site tests are common. All corresponding macro marks remain at their common addresses.
+
+Let epsilon_prog be max over catalogue entries of the SUM of native endpoint errors of EVERY repeated body/actuator call in A. It is not a per-device error relabelled as one global error. The actual U error is at most2epsilon_prog. At their common completed clock the heat cancels EXACTLY, with each finite absolute value retained. Thus the actual price contrast obeys
+
+    jhat_(m,a)=(B_(m,a,+)-B_(m,a,-))/(2t Gamma0),
+    |jhat_(m,a)-D B_m[L_(v_a)]/Gamma0|
+      <=4R zeta epsilon_prog/(a |t| Gamma0)
+            +t^2 M3,a/(6Gamma0)+epsilon_read/(|t|Gamma0). (804)
+
+The last term is added only when prices/responses are numerically or physically estimated, with its actual two-endpoint convention. Any other actually selected valuation adds its OWN real contrast divided by2tGamma0. Neither primitive-inventory equality nor echo conjugacy proves that a separate Info/work/birth/scene/cut term cancels.
+
+The shadow uses the SAME actual Qhat in every catalogue entry. Consequently no extra epsilon_QUERY/t is introduced by comparing to an unrelated ideal query. Its actual source/template errors are already in802 at the centre. Full prefix/future errors for raw COPY/comparator faults remain their796 inputs.
+
+The following explicit fixed-h order closes the new stencil ratios while preserving796:
+
+    n=O_h(m^3) as in794, t_m=m^-6,
+    base body/material error <=C_h^-1 m^-12,
+    each changed-call endpoint error <=C_h^-1 m^-12,
+    epsilon_prog<=C'_h n m^-12=O_h(m^-9),
+    4R zeta epsilon_prog/(a |t_m|Gamma0)
+            +t_m^2 M3,a/(6Gamma0)=O_h(m^-3).         (805)
+
+Choose the constants with the actual decoder/lift and gain bounds. Router C/S full metric errors<=m^-12/n and late full query-phase error<=m^-12 can be used as well. The fixed-width quantum/compiler lengths and797 topups are still O_h(polylog m). The enormous q/bank-blind C costs still belong only to their late full-error budgets; the calibrated reader words are not tightened after them. Choose all SOURCE/query/coin/classical accuracies after these ACTUAL final counts by the family-separated order of7cq. Reading error must also be o(t_mGamma0), not merely tend to0 unnormalized.
+
+The field-mark jet is a real finite response comparison. Apply the bounded C3 actual decoder continuation to the aligned homogeneous body/material endpoints. Its central difference converges to D Phi_actual L_v=v, with the stated native endpoint/reading errors divided by t_m and its actual finite inverse moduli. Local Choi marks can use their per-body error; the full-prefix mark bound801 keeps its true n. Intrinsic metric VALUES converge through799/740 with those complete operator errors. No derivative of a metric norm at a crossing is claimed.
+
+Let ellhat_m be the unique linear cofield with ellhat_m(v_a)=jhat_(m,a) on this predeclared basis; a finite contrast at another v is not silently assumed linear in v. For a finite basis let C_basis,h be a proved norm conversion satisfying ||ell||_(V_h*)<=C_basis,h max_a|ell(v_a)|. It contains the actual basis/dual norms and is not silently1. Equations802--805 give
+
+    ||ellhat_m||_(V_h*)
+       <=C_basis,h[e_m K_lift,h+O_h(m^-3)
+                      +max_a epsilon_read,a/(t_mGamma0)] ->0. (806)
+
+This is a SOURCE limit obtained from genuine finite paid code comparisons. It is not exact finite stationarity, a native local minimum, or automatic full off-shell GR soundness. At a nonstationary centre the original complete source/coefficient comparison still has to be supplied. The direct-click off-shell weak defect37 retains its real norm and original lambda_minus; no observed source is assigned from a desired Einstein output law.
+
+### 6. What the common map and source limit do NOT complete
+
+The raw-stage separation753/754 remains true for different literal arrays. Equation798 supplies a proved representation map, not a bounded UNGAUGED stage secant. Moreover B_v may be O_h(n); even the closing endpoint derivative in798 can grow with n. No uniform D01-jet Banach limit,1/n normalization or admissible continuously variable Golden primitive follows from805/806. Retain the true field lift and every source-normalization ratio when using these finite differences in Book02's allowed calculus.
+
+The common Q depends on actual prefixes. If a matrix family is differentiated, its derivative and the derivatives of represented tests/marked effects must be included. Full trace commutators vanish only under the proved common covariance. Genuine upstream preparation, input/cut, independent material/density/frame/calibration, scene, duration/rank and any actually selected extra valuation retain their sources. This construction has not identified its finite edit graph with the original whole physical X_N.
+
+### 7. A compatible addressed observation object, with its exact readout boundary
+
+For a finite ACTUAL native test word W_a and computational pointer Pi_a retain its code/prefix/time/reader address a. Put A_a=W_a^*Pi_aW_a. For a completed programme endpoint U_k, the terminal-fibre effect is
+
+    E_(a,k)=U_k A_a U_k^*, rho_k=U_k rho0 U_k^*,
+    Tr(rho_k E_(a,k))=Tr(rho0 A_a),
+    T_hg=U_h U_g^*, T_hg E_(a,g)=E_(a,h)T_hg.        (807)
+
+This is the SAME addressed test a on different terminal fibres, not equality between the SOURCE mark of code g and a DIFFERENT addressed mark of code h. Every E is positive. For projector tests D_obs=E,R_obs=E gives the actual detector/response square. A real future implementation uses the known genuine inverse of U_k, then W_a and its actual pointer/readout word. Its clock, work, new records and complete price are additional, not the original B_k. This inverse/replay application is on the coherently retained active sector with the original oldRIGHT untouched. If an experiment has already sealed NEW immutable records, an inverse that erases them is not supplied by this formula. It is neither an unpaid inverse oracle nor a copied unknown state.
+
+For growing declared test catalogues retain every born address and every finite code/clock/calibration/price certificate. Projection deletes only new addresses. With new allocated blanks,7av418/419 supplies the actual partial-trace/coisometry operator square; incompatible tests remain ALTERNATIVE contexts. Running them serially on one unknown input while sealing all outcomes is not asserted. Repetitions require actual independent preparation resources; an inverse does not erase entanglement with retained oldRIGHT.
+
+Using804/806, certified intervals for each born contrast can be enlarged by all its true errors to contain the same limiting covered source. At the null primary this is0. Their running intersections are nested, nonempty and shrink with the explicit bound; exact finite address truncation preserves all old intervals and responses. A finite tolerance halts when the certified radius is small enough. These are computed SOURCE certificates on actual finite comparisons, with every absolute price preserved.
+
+The latest jhat_m is generally NOT the strict BookV21.4.1 pro-observable satisfying F_(m-1) composed with pi=F_m. A new estimate is a new address, not an exact pullback of the old estimate. A prefix archive by itself would also archive a diverging or alternating sequence; the semantic error bound806 is essential. Nor does this prove stabilization of ALL original kappa tests, exact-equality/unguarded threshold tests or the latest absolute-price/clock test. The heat divergence757 is unchanged; no finite real continuous absolute-price limit or refinement counterterm is introduced.
+
+Arithmetic evaluation of known words/Book prices is finite reproducible metadata, not automatically a physical price measurement. To promote the NORMALIZED contrast itself to an actual response section, supply its permitted paid testMap/evaluation/readout, with true tGamma conditioning, trial/confidence/calibration and apparatus sources. Equation807 proves the positive square for actual supplied pointer tests; it does not install a diagonal PASS oracle or declare numerical certificate bits a free native detector. These are the concrete remaining observable/physical-realization operands.
+
+### 8. Changed controls, parent substitution and scope
+
+The new checker emits and validates three literal six-wire native arrays with fixed G exponents2,40,-36. Each completed body has inventory(40G,249CX,160SourceI),449 stages; each GENUINE raw inverse has(40G,249CX,640SourceI),929 stages. The complete native reflection words each have1386 stages and inventory(80G,504CX,802SourceI), input rank8 and full internal dimension64. Both2-CX and5-CX padding branches are exercised. Their64-column endpoints are factored through the owned signed-macro identities, NOT obtained by replaying a1386-stage64-column matrix. The actual arrays are deterministically generated with individual SHA256 digests.
+
+Their real Book contrast is bounded with rational outward root/log enclosures. The native spacing is the algebraic chord sin(38theta_G), approximately0.18331467, with positive cosine; the comparison shadow is R(arcsin u)G^2. Its first jet agrees with the angular rotation but its cubic modulus is calculated SEPARATELY. For |u|<=1/4, the scalar cold function has |c'|<=4,|c''|<=6,|c'''|<=8, giving M3<=Rzeta[160/a+1056zeta/a^2+1024zeta^2/a^3]. The observed contrast is approximately-0.76129967, its first source approximately-0.82618210, and their difference approximately0.06488243, below the certified cubic bound approximately0.70180980. This is a new literal-price toy, not a GR solution or an estimate using an imported variable-G primitive. The fixture does not use803's constant-generator bound for its chordal parameter.
+
+The same changed checker verifies798's closing-block and represented-test identities on a twelve-dimensional temporal core for both equal and different native endpoints, without a rank/SVD calculation. The scene factor/all-grade extension is the analytic798 proof, not a full Hodge matrix replay. It executes the new actually paid four-stage pointer contexts on all8 columns and obtains0 versus diag(0,1) at equal unmarked endpoints. It calculates no geometric root, old heat/full128 CAR, Lean proof or full GR word.
+
+The parent substitution is now exact and finite: real per-call common inventories align the original marked interfaces;798--801 provide the full common operator/test map;805--806 consume796 to give certified literal field-source contrasts. This removes the missing finite-code comparison/error-ratio application rather than reasserting matrix stationarity or repeating the palette no-go. The born positive-test square and SOURCE certificate object have their stated physical readout boundary.
+
+The remaining application is the actual finite-edit/marked-test realization of the physical regime and its full independent equations, followed by compatible native dynamics/refinement and the complete GR transfer. One faithful sector need not represent all native experiments or prove microscopic action uniqueness. It must still supply that actual regime/readout/source map; the finite graph, completion or GR conclusion is not added as a postulate. GR_closed=false; positive_gr/raw216 remain open. No task/result/claim/acceptance edge, Ready, retirement or merge is added.
+
+Input pins: incoming053d072e primary blob826e9203ab1fa5b6940fd5ec3db9e9f9aa9df4e2,2562081bytes/SHA25615f1ea109b8834dbd369562ed085edcf1a2a7f511e6f8f6b4b56a2f2b4ade37d. Native owner17833bytes/SHA256222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c; paid-writer240407bytes/SHA25610fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05. Original Book01/02/03 and preserved BookV pins remain those consumed in7cm; no original source or expected receipt is edited.
+
+
+### 9. Frozen changed code and observed native comparison receipt
+
+Save this exact Python outside tracked paths and run from the repository root. The JSON below is the actual observed result. The earlier rounded diagnostic display is preserved privately; these final printed decimal interval endpoints round OUTWARD from the internally certified rational bounds. No expected result or original source was rewritten.
+
+Code 13189 bytes / SHA256 3d7efa87453b3807a2fe8f4ffe74c0abf54ff5a07d5ca42336a5be9b298f2ddb; observed JSON 3906 bytes / SHA256 d7fc1e2f523eb95f5b11692678b7cb9ce20701d33da062f3e5461e598240b4c5.
+
+```python
+"""New literal common-inventory contrast and full-prefix transport controls."""
+from pathlib import Path
+from math import isqrt
+import hashlib
+import importlib.util
+import json
+import sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+
+owner = Path.cwd()/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+owner_sha = hashlib.sha256(owner.read_bytes()).hexdigest()
+if owner_sha != '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c':
+    raise RuntimeError('changed native owner')
+spec = importlib.util.spec_from_file_location('literal_source_jet_native_20261027', owner)
+ne = importlib.util.module_from_spec(spec);sys.modules[spec.name] = ne
+spec.loader.exec_module(ne)
+F = ne.GOLDEN_FIELD
+
+
+def need(ok, label):
+    if not ok:
+        raise RuntimeError(label)
+
+
+def dm(A):
+    return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(F)
+
+
+def eq(A, B):
+    if hasattr(A, 'shape'):
+        return dm(A) == dm(B)
+    return F.from_sympy(A-B) == F.zero
+
+
+def mul(*args):
+    out = dm(args[0])
+    for a in args[1:]:
+        out = out.matmul(dm(a))
+    return out.to_Matrix()
+
+
+def sw(a, b):
+    return (ne.Gate('CX', (a, b)), ne.Gate('CX', (b, a)), ne.Gate('CX', (a, b)))
+
+
+SI = ne.Gate('SourceI', (0, 2, 3))
+route = sw(0, 1)
+Gplus = route+(ne.Gate('G', (0,)),)+(SI,)*4+route
+Gminus = route+(SI, SI, ne.Gate('G', (0,)), SI, SI)+route
+five = (ne.Gate('CX', (1, 4)), ne.Gate('CX', (4, 5)),
+        ne.Gate('CX', (1, 4)), ne.Gate('CX', (4, 5)), ne.Gate('CX', (1, 5)))
+pair = (ne.Gate('CX', (4, 5)),)*2
+
+
+def profile(word):
+    return ne.Execution(6, (1, 4, 5), (), tuple(word), ne.G_CX_SOURCE_I, 0, (2, 3))
+
+
+def inventory(word):
+    return tuple(sum(g.op == op for g in word) for op in ('G', 'CX', 'SourceI'))
+
+
+# The five-CX pad acts on THREE ordinary body wires, not SourceSpin.
+five_core = tuple(ne.Gate(g.op, tuple((1, 4, 5).index(w) for w in g.wires)) for g in five)
+five_mat = ne.word_matrix(ne.Execution(3, (), (), five_core, ne.G_CX), max_qubits=3)
+need(eq(five_mat, S.eye(8)), 'actual five-CX identity on all8 ordinary columns')
+need(inventory(Gplus) == inventory(Gminus) == (1, 6, 4), 'signed normal form inventory')
+need(eq(ne.SOURCE_I_LOCAL**4, S.eye(8)), 'positive signed-G expansion all SourceSpin columns')
+
+# All three are LITERAL native body words; only the algebraic shadow rotates continuously.
+exponents = {'centre': 2, 'plus': 40, 'minus': -36}
+raw = {name: (Gplus if power >= 0 else Gminus)*abs(power)
+       +(five if name == 'centre' else ()) for name, power in exponents.items()}
+Gmax = max(inventory(word)[0] for word in raw.values())
+need(Gmax % 2 == 0, 'common even G count')
+g_topped = {}
+for name, word in raw.items():
+    deficit = Gmax-inventory(word)[0]
+    need(deficit >= 0 and deficit % 2 == 0, 'legal G identity topup')
+    g_topped[name] = word+(Gplus+Gminus)*(deficit//2)
+Cmax = max(inventory(word)[1] for word in g_topped.values())+4
+body = {};pad_residues = {}
+for name, word in g_topped.items():
+    deficit = Cmax-inventory(word)[1]
+    need(deficit >= 4, 'two-five semigroup margin')
+    use_five = deficit % 2
+    use_two = (deficit-5*use_five)//2
+    need(use_two >= 0 and 2*use_two+5*use_five == deficit, 'exact2/5 completion')
+    body[name] = word+five*use_five+pair*use_two
+    pad_residues[name] = {'CX_deficit': deficit, 'two_CX_pads': use_two, 'five_CX_pads': use_five}
+
+Zword = route+(SI, SI)+route
+catalogue = {};rows = []
+for name, word in body.items():
+    execution = profile(word)
+    ne.validate_execution(execution, max_qubits=6, max_expanded_stages=5000)
+    inverse = tuple(ne.inverse_word(execution, max_qubits=6, max_expanded_stages=5000))
+    need(inventory(word) == (Gmax, Cmax, 4*Gmax), 'same forward native inventory')
+    need(inventory(inverse) == (Gmax, Cmax, 16*Gmax), 'same actual inverse inventory')
+    whole = word+Zword+inverse
+    whole_inv = ne.inventory(profile(whole), max_qubits=6, max_expanded_stages=5000)
+    need(whole_inv.input_dimension == 8 and whole_inv.full_dimension == 64,
+         'blanks retain true protected input rank')
+    catalogue[name] = whole
+    encoded = json.dumps([(g.op, list(g.wires)) for g in whole], separators=(',', ':')).encode()
+    rows.append({'name': name, 'fixed_G_exponent': exponents[name],
+                 'body_inventory_G_CX_SourceI': list(inventory(word)),
+                 'inverse_inventory_G_CX_SourceI': list(inventory(inverse)),
+                 'whole_inventory_G_CX_SourceI': list(inventory(whole)),
+                 'body_stages': len(word), 'inverse_stages': len(inverse),
+                 'whole_stages': len(whole), 'raw_array_sha256': hashlib.sha256(encoded).hexdigest(),
+                 'CX_pads': pad_residues[name]})
+need(len({len(word) for word in catalogue.values()}) == 1, 'actual common paid clock')
+
+# Exact endpoint factorization: signed macros act on body bit1, pads are full identities.
+G = S.Matrix(ne.G_LOCAL);Z = S.diag(1, -1);J = S.Matrix([[0, -1], [1, 0]])
+
+
+def rotation(power):
+    factor = G if power >= 0 else G.T
+    out = S.eye(2)
+    for _ in range(abs(power)):
+        out = mul(factor, out)
+    return out
+
+
+rotations = {name: rotation(power) for name, power in exponents.items()}
+cold = {name: mul(W.T, Z, W)[0, 0] for name, W in rotations.items()}
+step_rot = rotation(38);step = step_rot[1, 0]
+need(eq(rotations['plus'], mul(step_rot, rotations['centre'])), 'plus endpoint is exact native power')
+need(eq(rotations['minus'], mul(step_rot.T, rotations['centre'])), 'minus endpoint is exact native power')
+
+# Rational outward enclosures of Q(a), using a^4+a^2-1=0 and its positive root.
+precision = 120;scale = 10**precision
+root5 = isqrt(5*scale*scale)
+p_lo = (S.Rational(root5, scale)-1)/2
+p_hi = (S.Rational(root5+1, scale)-1)/2
+a_lo = S.Rational(isqrt(int(S.floor(p_lo*scale*scale))), scale)
+a_hi = S.Rational(isqrt(int(S.floor(p_hi*scale*scale)))+1, scale)
+need(a_lo > 0 and a_lo*a_lo <= p_lo and a_hi*a_hi >= p_hi, 'certified positive embedding')
+
+
+def add(A, B):
+    return A[0]+B[0], A[1]+B[1]
+
+
+def neg(A):
+    return -A[1], -A[0]
+
+
+def times(A, B):
+    products = [a*b for a in A for b in B]
+    return min(products), max(products)
+
+
+def divide(A, B):
+    need(B[0] > 0, 'strict positive interval denominator')
+    return times(A, (1/B[1], 1/B[0]))
+
+
+def enclose(value):
+    out = (S.Integer(0), S.Integer(0))
+    for coeff in F.from_sympy(value).to_list():
+        coeff = S.Rational(coeff)
+        out = add(times(out, (a_lo, a_hi)), (coeff, coeff))
+    return out
+
+
+def minus_log(A):
+    lo, hi = A;need(0 < lo <= hi <= 1, 'log interval in the genuine return collar')
+    yl, yu = (1-hi)/(1+hi), (1-lo)/(1+lo)
+    terms = 20
+    lower = 2*sum(yl**(2*k+1)/S.Integer(2*k+1) for k in range(terms))
+    upper = 2*sum(yu**(2*k+1)/S.Integer(2*k+1) for k in range(terms))
+    upper += 2*yu**(2*terms+1)/(S.Integer(2*terms+1)*(1-yu*yu))
+    return lower, upper
+
+
+step_interval = enclose(step)
+need(0 < step_interval[0] <= step_interval[1] < S.Rational(1, 4), 'native chordal spacing positive and small')
+need(enclose(step_rot[0, 0])[0] > 0, 'principal chordal shadow branch')
+rank = 8;zeta = S.Rational(1, 16);az = 1-zeta
+prices = {name: times((rank, rank), minus_log(enclose(az+zeta*c*c)))
+          for name, c in cold.items()}
+contrast = divide(add(prices['plus'], neg(prices['minus'])),
+                  times((2, 2), step_interval))
+W0 = rotations['centre'];dc0 = mul(W0.T, Z*J-J*Z, W0)[0, 0]
+source = -2*rank*zeta*cold['centre']*dc0/(az+zeta*cold['centre']**2)
+source_interval = enclose(source)
+error = add(contrast, neg(source_interval))
+# On |u|<=1/4, C(u)=c0(1-2u^2)-2s0u sqrt(1-u^2) has derivatives <=4,6,8.
+r15 = S.Rational(15, 16)
+need(S.Rational(4)/r15 <= 9 and S.Rational(9, 4) <= 4*r15**3
+     and 36 <= 64*r15**5, 'rational derivative-bound margins')
+M3 = rank*zeta*(160/az+1056*zeta/az**2+1024*zeta**2/az**3)
+Taylor = step_interval[1]**2*M3/6
+need(max(abs(error[0]), abs(error[1])) <= Taylor, 'certified actual price contrast versus analytic first source')
+
+# New literal full-prefix square: equal endpoint is not equality of laboratory marks.
+gates_g = (ne.Gate('G', (0,)), ne.Gate('CX', (0, 1)), ne.Gate('CX', (0, 1)))
+gates_h = (ne.Gate('CX', (0, 1)), ne.Gate('CX', (0, 1)), ne.Gate('G', (0,)))
+gates_k = (ne.Gate('CX', (0, 1)), ne.Gate('G', (0,)), ne.Gate('CX', (0, 1)))
+
+
+def prefixes(gates):
+    ex = ne.Execution(2, (), (), tuple(gates), ne.G_CX)
+    V = [S.eye(4)];matrices = []
+    for gate in gates:
+        A = S.Matrix(ne.gate_matrix(ex, gate, max_qubits=2))
+        matrices.append(A);V.append(mul(A, V[-1]))
+    return V, matrices
+
+
+def clock_d(matrices):
+    out = S.zeros(12)
+    for t, A in enumerate(matrices):
+        out[4*t:4*t+4, 4*t:4*t+4] = -A
+        nxt = (t+1) % 3
+        out[4*t:4*t+4, 4*nxt:4*nxt+4] = S.eye(4)
+    return out
+
+
+Vg, gm = prefixes(gates_g);dg = clock_d(gm)
+transport_rows = []
+for label, target_word in (('equal_endpoint', gates_h), ('different_endpoint', gates_k)):
+    Vh, hm = prefixes(target_word);dh = clock_d(hm)
+    A = [mul(Vh[t], Vg[t].T) for t in range(3)]
+    Q0 = S.diag(*A);Q1 = S.diag(A[1], A[2], S.eye(4))
+    endpoint_difference = Vg[-1]-Vh[-1]
+    Eclose = -mul(endpoint_difference, Vh[2].T)
+    expected = S.zeros(12);expected[8:12, 8:12] = Eclose
+    residual = mul(Q1, dg, Q0.T)-dh
+    need(eq(residual, expected), 'all prefix mismatch lies in the single closing block')
+    need(eq(mul(Eclose.T, Eclose), mul(Vh[2], endpoint_difference.T, endpoint_difference, Vh[2].T)),
+         'exact singular-value identity without SVD')
+    O = S.diag(1, -1, 1, -1)
+    pig = S.diag(*[mul(V, O, V.T) for V in Vg[:-1]])
+    pih = S.diag(*[mul(V, O, V.T) for V in Vh[:-1]])
+    need(eq(mul(Q0, pig, Q0.T), pih), 'represented test algebra transported exactly')
+    P0 = S.diag(S.eye(4), S.zeros(8))
+    need(eq(mul(Q0, P0, Q0.T), P0), 'entire stage0 free-input cut fixed')
+    if label == 'equal_endpoint':
+        need(eq(endpoint_difference, S.zeros(4)) and eq(residual, S.zeros(12)), 'equal endpoints give exact intertwining')
+    else:
+        need(not eq(endpoint_difference, S.zeros(4)), 'nontrivial closing defect control')
+    transport_rows.append({'case': label, 'clock_stages': 3, 'internal_dimension': 4,
+                           'clock_core_dimension': 12, 'single_closing_block_verified': True})
+
+# ACTUAL paid extra pointer contexts, not an arithmetic mark oracle.
+pointer = ne.Gate('CX', (1, 2))
+marked = [gates_g[:1]+(pointer,)+gates_g[1:], gates_h[:1]+(pointer,)+gates_h[1:]]
+record_effects = []
+Pr = S.diag(*[j % 2 for j in range(8)])
+for word in marked:
+    ex = ne.Execution(3, (1, 2), (), tuple(word), ne.G_CX)
+    U = ne.word_matrix(ex, max_qubits=3)
+    i = ne.input_isometry(ex, max_qubits=3)
+    record_effects.append(mul(i.T, U.T, Pr, U, i))
+need(eq(record_effects[0], S.zeros(2)) and eq(record_effects[1], S.diag(0, 1)),
+     'same unmarked endpoint but distinct actually paid fixed-prefix records')
+
+
+def decimal_at(integer, digits=22):
+    sign = '-' if integer < 0 else ''
+    integer = abs(integer);scale = 10**digits
+    return sign+str(integer//scale)+'.'+str(integer % scale).zfill(digits)
+
+
+def decimal_interval(A):
+    scale = 10**22
+    return [decimal_at(int(S.floor(A[0]*scale))),
+            decimal_at(int(S.ceiling(A[1]*scale)))]
+
+
+out = {'status': 'PASS', 'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+       'native_owner_sha256': owner_sha,
+       'literal_catalogue': rows,
+       'common_context': {'full_internal_dimension': 64, 'input_rank': 8,
+                           'whole_clock': len(catalogue['centre']),
+                           'full_two_grade_mode_count': 425*len(catalogue['centre'])*64,
+                           'absolute_prices': 'H_common(actual clock,dimK64)+J_sigma; heat not computed or removed'},
+       'new_native_price_contrast': {'parameter': 'positive algebraic sin(38 theta_G), not a variable primitive angle',
+                                     'spacing_enclosure': decimal_interval(step_interval),
+                                     'contrast_enclosure': decimal_interval(contrast),
+                                     'analytic_first_source_enclosure': decimal_interval(source_interval),
+                                     'error_enclosure': decimal_interval(error),
+                                     'certified_cubic_bound': decimal_interval((Taylor, Taylor))[1],
+                                     'printed_bounds': 'outward decimal rationals; full rational bounds used internally',
+                                     'enclosure_method': 'rational positive-root brackets and atanh log-series tail'},
+       'prefix_transport_core': transport_rows,
+       'new_paid_pointer_contexts': {'native_stages_each': 4, 'executed_columns_each': 8,
+                                     'record_effects': ['0', 'diag(0,1)']},
+       'scope': 'raw arrays emitted and inventory-validated; large64-column endpoints factored via owned signed macros; no full Hodge matrix computed',
+       'GR_root_rank_SVD_heat_full128_Lean_replayed': False,
+       'physical_admission_or_kappa_completion_proved': False, 'GR_closed': False}
+print(json.dumps(out, indent=2)+'\n', end='')
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "3d7efa87453b3807a2fe8f4ffe74c0abf54ff5a07d5ca42336a5be9b298f2ddb",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "literal_catalogue": [
+    {
+      "name": "centre",
+      "fixed_G_exponent": 2,
+      "body_inventory_G_CX_SourceI": [
+        40,
+        249,
+        160
+      ],
+      "inverse_inventory_G_CX_SourceI": [
+        40,
+        249,
+        640
+      ],
+      "whole_inventory_G_CX_SourceI": [
+        80,
+        504,
+        802
+      ],
+      "body_stages": 449,
+      "inverse_stages": 929,
+      "whole_stages": 1386,
+      "raw_array_sha256": "31d6c52e50d1760fa0de9c277add80a95645b14c1a32e2a1de78c378b9096f81",
+      "CX_pads": {
+        "CX_deficit": 4,
+        "two_CX_pads": 2,
+        "five_CX_pads": 0
+      }
+    },
+    {
+      "name": "plus",
+      "fixed_G_exponent": 40,
+      "body_inventory_G_CX_SourceI": [
+        40,
+        249,
+        160
+      ],
+      "inverse_inventory_G_CX_SourceI": [
+        40,
+        249,
+        640
+      ],
+      "whole_inventory_G_CX_SourceI": [
+        80,
+        504,
+        802
+      ],
+      "body_stages": 449,
+      "inverse_stages": 929,
+      "whole_stages": 1386,
+      "raw_array_sha256": "129e5303eb86fae19c80f27f0aab719759d0f1fd327f96c61d11b36fb12ec2bb",
+      "CX_pads": {
+        "CX_deficit": 9,
+        "two_CX_pads": 2,
+        "five_CX_pads": 1
+      }
+    },
+    {
+      "name": "minus",
+      "fixed_G_exponent": -36,
+      "body_inventory_G_CX_SourceI": [
+        40,
+        249,
+        160
+      ],
+      "inverse_inventory_G_CX_SourceI": [
+        40,
+        249,
+        640
+      ],
+      "whole_inventory_G_CX_SourceI": [
+        80,
+        504,
+        802
+      ],
+      "body_stages": 449,
+      "inverse_stages": 929,
+      "whole_stages": 1386,
+      "raw_array_sha256": "2fc9be8abb5e9753e7bf31359c604f9208fdd1907244e6c22ac0d929f83702ec",
+      "CX_pads": {
+        "CX_deficit": 9,
+        "two_CX_pads": 2,
+        "five_CX_pads": 1
+      }
+    }
+  ],
+  "common_context": {
+    "full_internal_dimension": 64,
+    "input_rank": 8,
+    "whole_clock": 1386,
+    "full_two_grade_mode_count": 37699200,
+    "absolute_prices": "H_common(actual clock,dimK64)+J_sigma; heat not computed or removed"
+  },
+  "new_native_price_contrast": {
+    "parameter": "positive algebraic sin(38 theta_G), not a variable primitive angle",
+    "spacing_enclosure": [
+      "0.1833146700426517315165",
+      "0.1833146700426517315166"
+    ],
+    "contrast_enclosure": [
+      "-0.7612996737636936418916",
+      "-0.7612996737636936418915"
+    ],
+    "analytic_first_source_enclosure": [
+      "-0.8261821035053130534822",
+      "-0.8261821035053130534821"
+    ],
+    "error_enclosure": [
+      "0.0648824297416194115906",
+      "0.0648824297416194115907"
+    ],
+    "certified_cubic_bound": "0.7018097923628505852257",
+    "printed_bounds": "outward decimal rationals; full rational bounds used internally",
+    "enclosure_method": "rational positive-root brackets and atanh log-series tail"
+  },
+  "prefix_transport_core": [
+    {
+      "case": "equal_endpoint",
+      "clock_stages": 3,
+      "internal_dimension": 4,
+      "clock_core_dimension": 12,
+      "single_closing_block_verified": true
+    },
+    {
+      "case": "different_endpoint",
+      "clock_stages": 3,
+      "internal_dimension": 4,
+      "clock_core_dimension": 12,
+      "single_closing_block_verified": true
+    }
+  ],
+  "new_paid_pointer_contexts": {
+    "native_stages_each": 4,
+    "executed_columns_each": 8,
+    "record_effects": [
+      "0",
+      "diag(0,1)"
+    ]
+  },
+  "scope": "raw arrays emitted and inventory-validated; large64-column endpoints factored via owned signed macros; no full Hodge matrix computed",
+  "GR_root_rank_SVD_heat_full128_Lean_replayed": false,
+  "physical_admission_or_kappa_completion_proved": false,
+  "GR_closed": false
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

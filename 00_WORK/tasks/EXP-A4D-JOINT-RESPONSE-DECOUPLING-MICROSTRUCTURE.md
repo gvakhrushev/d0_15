@@ -16241,3 +16241,159 @@ No old certificate/heat/full128/Lean replay, CI pass or physical promotion
 is asserted. The GitHub connector had a transport failure; direct GitHub
 metadata confirms ownerd59ff834/open/Draft/unmerged, and ordinary fetch
 then succeeds with the same owner head. Same-PR publication follows.
+
+
+### 27 October - apply the coupled source to literal native field comparisons
+
+SAME #334 / constitutive/native-programme-v1; native realization and final
+composition, input053d072e. Previous goal turn made verified progress:
+7cq785--796 composes a genuine fixed-h source/metric family with its true
+clock/gain/counts. Its outstanding parent is the transport from matrix
+comparisons to actual paid native code alternatives and, where justified,
+a compatible marked source-jet section. It is not physical X_N by naming.
+
+Consume7cl742--751,7cm752--759,7cn760--770,7cq785--796 and the original
+Book01 observable-section/BookV completion criteria at their stated scope.
+Use the same initial span/cut, oldRIGHT, fixed field collars/context,
+actual same-body reader/metric map, protected rank and COMMON paid carrier,
+primitive inventory/N for stencil alternatives. Bound the actual price
+contrasts with both independent inverse rows, n-device endpoint error,
+Gamma and full lift/norm, then test actual prefix/marked observation
+transport. Endpoint closeness alone is not a raw-stage or all-future map.
+No unchanged palette/heat no-go is republished as new progress.
+
+The decisive output is a quantitative native finite-comparison/source-jet
+application (or a new concrete mismatch at that application) consuming796.
+All absolute prices and every genuinely selected extra source remain;
+there is no new action/selector/angle primitive or renormalized price.
+Any completed observational section must prove its own finite projections,
+positive readouts, calibration and marked-test compatibility; it must not
+silently erase extra native distinctions or become a physical law.
+Readonly assistants inspect disjoint inputs of this one application and
+keep scratch private. Only the existing residual primary and this brief
+may change. No new task/result/claim/acceptance edge, Ready, retirement,
+merge or scientific promotion. GR_closed=false until its full obligations
+are actually proved.
+
+
+27 October result, primary7cr797--807. Applied796 to LITERAL native field
+code contrasts, rather than relabelling its matrix comparison domain.
+All endpoints keep actual initial span/return, fixed collared task/query,
+oldRIGHT, same-body SOURCE/metric data, protected rank, complete carrier,
+located primitive inventory and genuine common clock. Every added inverse,
+pad and independent raw row remains paid. Physical X_N is not defined by
+an Einstein predicate or by a continuously tunable Golden primitive.
+
+The segmented normalization797 consumes the owned even signed-G alphabet.
+Forward body/actuator words become(Gmax,Cmax,4Gmax), with exact private
+G+;G- and2/5-CX identity topups; actual literal inverses are
+(Gmax,Cmax,16Gmax), not forward-length copies. Both endpoint operators
+and helper/Spin restoration are exact on ALL columns. Each corresponding
+logical-call boundary has the same raw timestamp. Pads stay one-bank and
+polylogarithmic in precision, so updated796 budgets still apply. Blindly
+padding inside a body then reinverting it would not prove equal inventory.
+
+The explicit full cochain Q0/Q1 prefix map798 has exactly ONE closing
+residual and paired-operator norm||Ug-Uh||/sqrt22. It preserves the
+actual prefix test representation and stage0 input cut exactly. Complete
+monodromy error is||Ug-Uh|| without an N multiplier. The general full
+INTERNAL heat value bound is epsilon/22, with all502 modes/zero index;
+matched same-Qhat reflections have EXACTLY common heat. No noninternal
+or unequal-clock price is substituted. Absolute finite prices stay recorded.
+
+Aligned completed SOURCE marks use801's actual sum of logical endpoint
+errors, including repeated devices/inverses. Inside-macro fixed lab marks
+can remain different even for equal endpoints; neither Q nor the new
+price contrast erases them. The decoded field jet uses actual749<1/2
+and its true body/material/xi lift K_lift,h; absent independent actuators
+remain explicit. Every source bound keeps this norm and basis conversion.
+
+The exact same-Qhat shadow gives M3<=128R*zeta*B_v^3/a^3 with B_v=O_h(n).
+Equation804 keeps SUM n-device endpoint errors divided by t*Gamma0,
+cubic t^2*M3/Gamma0 and actual reading/(t*Gamma0). Withn=O_h(m^3),
+t=m^-6 and per-call/base errorO_h(m^-12), both new native endpoint and
+cubic debts areO_h(m^-3). Router/query errors can be tightened to the
+same polynomial scales; quantum leading lengths remain polylog and
+huge comparator/classical precision is chosen later. Thus806 defines a
+linear cofield from the predeclared basis of real code contrasts and
+proves its covered-source norm tends0. Finite contrasts are not assumed
+linear at arbitrary directions and no exact finite stationary root/minimum
+or uniformly bounded D01-jet/physical refinement limit is asserted.
+
+The actual positive fixed-address test square807 consumes7av inverse/
+replay with its genuine price, on coherent active states with oldRIGHT
+untouched. It does not erase new sealed records or serially reuse one
+unknown input for incompatible tests. All born codes/tests/price intervals
+are retained. Shrinking certified SOURCE intervals give a Cauchy value;
+latest jhat is not automatically a strict BookV pro-observable and an
+archive alone does not prove all originalkappa tests stabilize. Finite
+arithmetic metadata is not declared a free native price detector. The
+actual scaled-contrast paidtestMap and physical finite-edit regime remain
+specific next applications, with full independentcut/input/context rows.
+
+The new native checker passed CPython3.9.6/SymPy1.14.0. Three emitted/
+validated six-wire raw arrays, G exponents2/40/-36, have identical forward
+body449 and literalinverse929 stages. Complete words each have1386
+stages, inventory80G/504CX/802SourceI, true inputrank8/fullK64; both
+2-CX and5-CX pads are exercised and exact raw-array hashes are recorded.
+Large64-column endpoints use proved signed-macro factorization; no full
+1386-stage64-column matrix was replayed. The actual chordal price contrast
+is enclosed by rational root/log bounds and a SEPARATE chordal cubic
+modulus, not803's exponential-parameter bound. Final printed decimals
+round OUTWARD; an earlier rounded diagnostic receipt is preserved privately.
+The common-map identities are checked on a new12-dimensional temporal
+core with equal/different endpoints, not a full Hodge/heat computation.
+Two new actual4-stage pointer contexts execute all8 columns and give
+recordeffects0/diag(0,1) at the same unmarked endpoint. No root/rank/SVD,
+oldheat/full128 CAR/Lean replay or largeGR-word execution is claimed.
+
+Proof24021 / SHA256
+1fadeddb03255cf1522ec42195b4beb3e8bf6edc5ed36901537bff339830dbaa;
+section41756 / SHA256
+8c135640fd78ef49870c16401e769359467b1c4a8a09c112b736d97960f18b2a.
+Code13189 / SHA256
+3d7efa87453b3807a2fe8f4ffe74c0abf54ff5a07d5ca42336a5be9b298f2ddb;
+observedJSON3906 / SHA256
+d7fc1e2f523eb95f5b11692678b7cb9ce20701d33da062f3e5461e598240b4c5.
+Complete final executed code/observedreceipt are embedded byte-exactly.
+Nativeowner17833/222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c
+and paid-writer240407/10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05
+are unchanged. No expected receipt or original source was edited.
+
+Incoming053d072e primary2562081 / SHA256
+15f1ea109b8834dbd369562ed085edcf1a2a7f511e6f8f6b4b56a2f2b4ade37d;
+brief1055180 / SHA256
+0bed67cff9104d0ad8994b53131b801224972d0d583fa09b68de00ba31dee2d5.
+Removing7cr restores EVERY incoming primary byte; the incoming brief is
+an exact prefix. Only these same two owned paths change. GR_closed=false;
+positive_gr/raw216 remain open. No new task/result/claim/acceptance edge,
+Ready, retirement, merge or scientific promotion. Supporting assembly
+metadata does not establish physical acceptance.
+
+Final FULL SOURCE-ONLY ACCEPT by native_source_application,
+retained_metric_map and stationary_root_transfer. Each read the ENTIRE
+797--807 proof, full final code and JSON. All verified finalmanifest/pins,
+exact proof prefix, both byte-exact fences, executedsourceSHA and original
+input-source pins. Reviews covered common inventories/inverse counts,
+all-mode cochain/test/cut/price transport, marked-address distinctions,
+actualQhat and lift/spacing/gain ratios, cubic constant and separate
+chordal fixture, rational outward display and807's physical-readout/
+coherent-unsealed/alternative-context boundaries. No reviewer reran the
+mathematical code or changed repository files. These source reviews are
+not independent assembly/physical acceptance or CI completion.
+
+
+Affected final guards PASS with explicit GIT_WORK_TREE: validate_work.py,
+validate_agent_protocol.py, gr_assembly.py check and validate_repo.py.
+Assembly unchanged54 active/98 results/5 discharged/22 obligations,
+scientific_promotion=false; repository889 claims/31 assumptions/58 aliases/
+183 formal_support/918 lean_closure, zero warnings. Supporting template
+parsed without acceptance mutation. Final preservation verifies all pins,
+AST/JSON/sourceSHA, two exact fences, unchanged native/paid-writer/three
+original-book owners and EVERY incoming primary/brief byte. Only the same
+two insertion paths change; whitespace check passes. Direct GitHub metadata
+and ordinary fetch verify053d072e is still the open/Draft/unmerged owner.
+This validation note changes no scientific input. No original certificate,
+heat/full128/Lean replay, CI pass or physical/GR promotion is asserted.
+Same-PR publication retains the stated actual readout/admission/refinement
+operands and every independent external source.
