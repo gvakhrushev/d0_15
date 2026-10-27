@@ -186,6 +186,32 @@ def main():
     source_eig=s.trace((alph*s.eye(d)+beta*A0)*D)
     equal(source_moments,source_eig,
           "whole closed HJR arbitrary ambient first source in two traces")
+    # TWO honest native scalar records, q(port) and J(full128 HJR),
+    # are analytically independent for EVERY physical n=128 L^2.
+    lower_eig,upper_eig=expected_eigen
+    check(bool(lower_eig>s.Rational(1,80)) and
+          bool(upper_eig<s.Rational(1,60)),
+          "exact authentic eigenspectral interval")
+    check(bool(s.simplify(p*p-s.Rational(3,8))>0),
+          "Golden p^2 > 3/8")
+    check(bool(zf<s.Rational(1,10**6)),
+          "original z=2^-20 small")
+    nmin=128
+    bound=s.Rational(160)-s.Rational(3,4)*(2*nmin-1) +4*nmin*zf/(1-zf)
+    slope=-s.Rational(3,2)+4*zf/(1-zf)
+    check(bool(bound<0) and bool(slope<0),
+          "all physical n>=128 log(lambda^2 fprime) strictly decreases")
+    first=s.N(lower_eig,50)
+    second=s.N(upper_eig,50)
+    def native_HJR_slope_at(lam,n):
+        bx=1-2*s.N(p,50)**2*lam
+        return (4*n*s.N(p,50)**2*s.N(zf,50)*bx**(2*n-1)
+                /(1-s.N(zf,50)+s.N(zf,50)*bx**(2*n)))
+    # Numeric control of the exact already-proved sign, not a finite-n proof.
+    n_actual=128
+    g0=first**2*native_HJR_slope_at(first,n_actual)
+    g1=second**2*native_HJR_slope_at(second,n_actual)
+    check(bool(g0>g1),"actual two native readout sources independent")
     print("PASS_ORIGINAL_CAR16_TWO_EIGENVALUE_CLOSED_FORM")
     print(" symbolic CAR16 all-r,all-nu minimal polynomial: PASS")
     print(" actual fixture eigenvalue multiplicities: 8+8")
@@ -196,6 +222,7 @@ def main():
     print(" native full16 logdet SOURCE spans two traces even off quadratic chart")
     print(" native 2x2 moment Jacobian at original fixture is NONZERO")
     print(" whole original full128 closed HJR: 2nd-order recurrence and first source PASS")
+    print(" two ACTUAL native port/HJR sources independently span two directions at every n>=128")
     print(" GR_closed=false; complete native-price/source selection still open")
 
 
