@@ -138,16 +138,17 @@ theorem midpointQuadrature_error_abs_le_of_thirdDerivative_bound
 private theorem taylorWithinEval_two_eq_of_uniqueDiff_vector
     {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
     (f : ℝ → F) (s : Set ℝ) (m y : ℝ)
-    (hs : UniqueDiffOn ℝ s) (hm : m ∈ s) (hf : ContDiff ℝ 3 f) :
+    (hs : UniqueDiffOn ℝ s) (hm : m ∈ s)
+    (hfAt : ContDiffAt ℝ 3 f m) :
     taylorWithinEval f 2 s m y =
       f m + (y - m) • deriv f m + ((y - m) ^ 2 / 2) • iteratedDeriv 2 f m := by
   have h1 : iteratedDerivWithin 1 f s m = deriv f m := by
     rw [iteratedDerivWithin_eq_iteratedDeriv hs
-      ((hf.contDiffAt (x := m)).of_le (by norm_num)) hm,
+      (hfAt.of_le (by norm_num)) hm,
       iteratedDeriv_one]
   have h2 : iteratedDerivWithin 2 f s m = iteratedDeriv 2 f m := by
     rw [iteratedDerivWithin_eq_iteratedDeriv hs
-      ((hf.contDiffAt (x := m)).of_le (by norm_num)) hm]
+      (hfAt.of_le (by norm_num)) hm]
   have hFirst : taylorWithinEval f 1 s m y = f m + (y - m) • deriv f m := by
     rw [taylorWithinEval_succ]
     simp [taylor_within_zero_eval, h1, Nat.factorial]
@@ -228,10 +229,10 @@ estimate, when the norm of the third derivative is bounded by `M`. The proof
 uses the vector-valued integral Taylor remainder, so it does not introduce a
 dimension-dependent factor by estimating components separately.
 -/
-theorem midpointQuadrature_error_norm_le_of_thirdDerivative_bound
+theorem midpointQuadrature_error_norm_le_of_thirdDerivative_bound_on_interval
     {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
     (f : ℝ → F) (x h M : ℝ) (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M)
-    (hf : ContDiff ℝ 3 f)
+    (hC3At : ∀ y ∈ Set.Icc x (x + h), ContDiffAt ℝ 3 f y)
     (hthird : ∀ y ∈ Set.Icc x (x + h), ‖iteratedDeriv 3 f y‖ ≤ M) :
     ‖h • deriv f (x + h / 2) - (f (x + h) - f x)‖ ≤ M * h ^ 3 / 24 := by
   by_cases hh : h = 0
@@ -267,29 +268,37 @@ theorem midpointQuadrature_error_norm_le_of_thirdDerivative_bound
         ‖iteratedDerivWithin 3 f sRight t‖ ≤ M := by
       intro t ht
       rw [iteratedDerivWithin_eq_iteratedDeriv hsRight
-        ((hf.contDiffAt (x := t)).of_le (by norm_num)) ht]
+        ((hC3At t (hCellRight t ht)).of_le (by norm_num)) ht]
       exact hthird t (hCellRight t ht)
     have hThirdLeft : ∀ t ∈ sLeft,
         ‖iteratedDerivWithin 3 f sLeft t‖ ≤ M := by
       intro t ht
       rw [iteratedDerivWithin_eq_iteratedDeriv hsLeft
-        ((hf.contDiffAt (x := t)).of_le (by norm_num)) ht]
+        ((hC3At t (hCellLeft t ht)).of_le (by norm_num)) ht]
       exact hthird t (hCellLeft t ht)
+    have hC3Right : ContDiffOn ℝ 3 f sRight := by
+      intro t ht
+      exact (hC3At t (hCellRight t ht)).contDiffWithinAt
+    have hC3Left : ContDiffOn ℝ 3 f sLeft := by
+      intro t ht
+      exact (hC3At t (hCellLeft t ht)).contDiffWithinAt
     let pRight : F := f m + (x + h - m) • deriv f m +
       ((x + h - m) ^ 2 / 2) • iteratedDeriv 2 f m
     let pLeft : F := f m + (x - m) • deriv f m +
       ((x - m) ^ 2 / 2) • iteratedDeriv 2 f m
     have hTaylorPolyRight :=
       taylorWithinEval_two_eq_of_uniqueDiff_vector f sRight m (x + h)
-        hsRight (by simp [sRight]) hf
+        hsRight (by simp [sRight])
+        (hC3At m (by constructor <;> dsimp [m] <;> linarith))
     have hTaylorPolyLeft :=
       taylorWithinEval_two_eq_of_uniqueDiff_vector f sLeft m x
-        hsLeft (by simp [sLeft]) hf
+        hsLeft (by simp [sLeft])
+        (hC3At m (by constructor <;> dsimp [m] <;> linarith))
     have hRight := taylor_remainder_norm_le_of_thirdDerivativeWithin_bound
-      f m (x + h) M (hf.contDiffOn.mono (Set.subset_univ _))
+      f m (x + h) M hC3Right
       M_nonneg hThirdRight
     have hLeft := taylor_remainder_norm_le_of_thirdDerivativeWithin_bound
-      f m x M (hf.contDiffOn.mono (Set.subset_univ _))
+      f m x M hC3Left
       M_nonneg hThirdLeft
     have hRight' : ‖f (x + h) -
         taylorWithinEval f 2 sRight m (x + h)‖ ≤ M * |x + h - m| ^ 3 / 6 := hRight
@@ -330,6 +339,16 @@ theorem midpointQuadrature_error_norm_le_of_thirdDerivative_bound
       _ ≤ ‖f x - pLeft‖ + ‖f (x + h) - pRight‖ := norm_sub_le _ _
       _ ≤ M * h ^ 3 / 48 + M * h ^ 3 / 48 := add_le_add hLeftBound hRightBound
       _ = M * h ^ 3 / 24 := by ring
+
+/-- The global-smoothness API is a compatibility wrapper for the interval-local proof. -/
+theorem midpointQuadrature_error_norm_le_of_thirdDerivative_bound
+    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
+    (f : ℝ → F) (x h M : ℝ) (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M)
+    (hf : ContDiff ℝ 3 f)
+    (hthird : ∀ y ∈ Set.Icc x (x + h), ‖iteratedDeriv 3 f y‖ ≤ M) :
+    ‖h • deriv f (x + h / 2) - (f (x + h) - f x)‖ ≤ M * h ^ 3 / 24 := by
+  exact midpointQuadrature_error_norm_le_of_thirdDerivative_bound_on_interval
+    f x h M h_nonneg M_nonneg (fun y _ => hf.contDiffAt (x := y)) hthird
 
 /-- A chronological midpoint record in a real normed vector space. -/
 def finiteVectorMidpointHistory {F : Type*} [AddCommGroup F] [Module ℝ F]
@@ -406,12 +425,12 @@ the classical `duration * M * h^2 / 24` bound under a vector third-derivative
 bound. The estimate composes local vector defects without a component-count
 loss.
 -/
-theorem sampledVectorMidpointHistory_error_le_refinementBound
+theorem sampledVectorMidpointHistory_error_le_refinementBound_on_interval
     {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
     (f : ℝ → F) (x₀ h M duration : ℝ) (N : ℕ)
     (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M)
     (h_duration : (N : ℝ) * h = duration)
-    (hf : ContDiff ℝ 3 f)
+    (hC3At : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ContDiffAt ℝ 3 f t)
     (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
       ‖iteratedDeriv 3 f t‖ ≤ M) :
     ∀ n ≤ N,
@@ -437,8 +456,9 @@ theorem sampledVectorMidpointHistory_error_le_refinementBound
     have hNextSite : x₀ + ((k : ℝ) + 1) * h = xₖ + h := by
       dsimp [xₖ]
       ring
-    have hLocal := midpointQuadrature_error_norm_le_of_thirdDerivative_bound
-      f xₖ h M h_nonneg M_nonneg hf (fun y hy => hThird y (hCell y hy))
+    have hLocal := midpointQuadrature_error_norm_le_of_thirdDerivative_bound_on_interval
+      f xₖ h M h_nonneg M_nonneg (fun y hy => hC3At y (hCell y hy))
+      (fun y hy => hThird y (hCell y hy))
     simpa [finiteVectorMidpointLocalDefect, sampledVectorMidpointRate,
       sampledVectorExactValues, xₖ, hNextSite] using hLocal
   have hC : 0 ≤ M * h ^ 3 / 24 := by positivity
@@ -455,6 +475,23 @@ theorem sampledVectorMidpointHistory_error_le_refinementBound
     _ ≤ (N : ℝ) * (M * h ^ 3 / 24) :=
       mul_le_mul_of_nonneg_right hnN hC
     _ = duration * M * h ^ 2 / 24 := by rw [← h_duration]; ring
+
+/-- The global-smoothness history API remains as a wrapper over the local theorem. -/
+theorem sampledVectorMidpointHistory_error_le_refinementBound
+    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
+    (f : ℝ → F) (x₀ h M duration : ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M)
+    (h_duration : (N : ℝ) * h = duration)
+    (hf : ContDiff ℝ 3 f)
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 f t‖ ≤ M) :
+    ∀ n ≤ N,
+      ‖finiteVectorMidpointHistory h (sampledVectorMidpointRate f x₀ h)
+          (sampledVectorExactValues f x₀ h 0) n -
+        sampledVectorExactValues f x₀ h n‖ ≤ duration * M * h ^ 2 / 24 := by
+  exact sampledVectorMidpointHistory_error_le_refinementBound_on_interval
+    f x₀ h M duration N h_nonneg M_nonneg h_duration
+    (fun t _ => hf.contDiffAt (x := t)) hThird
 
 end
 

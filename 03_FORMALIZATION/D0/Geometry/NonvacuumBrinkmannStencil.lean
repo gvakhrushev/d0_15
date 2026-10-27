@@ -493,12 +493,12 @@ The vector-norm counterpart of the componentwise CAR result. It uses the
 same complete finite-history recurrence and the dimension-free vector
 midpoint estimate from `D0.Analysis`; no coordinate-count factor is added.
 -/
-theorem sampledVectorMidpointCARComplement_positive_of_vectorSlack
+theorem sampledVectorMidpointCARComplement_positive_of_vectorSlack_on_interval
     {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
     (ψ : ℝ → F) (x₀ h M duration A p : ℝ) (N : ℕ)
     (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
     (h_duration : (N : ℝ) * h = duration)
-    (hC3 : ContDiff ℝ 3 ψ)
+    (hC3At : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ContDiffAt ℝ 3 ψ t)
     (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
       ‖iteratedDeriv 3 ψ t‖ ≤ M)
     (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
@@ -512,8 +512,8 @@ theorem sampledVectorMidpointCARComplement_positive_of_vectorSlack
     rw [← h_duration]
     positivity
   have hErrorBound_nonneg : 0 ≤ duration * M * h ^ 2 / 24 := by positivity
-  have hHistoryError := D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound
-    ψ x₀ h M duration N h_nonneg M_nonneg h_duration hC3 hThird
+  have hHistoryError := D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound_on_interval
+    ψ x₀ h M duration N h_nonneg M_nonneg h_duration hC3At hThird
   intro n hn
   let state := D0.Analysis.finiteVectorMidpointHistory h
     (D0.Analysis.sampledVectorMidpointRate ψ x₀ h)
@@ -540,21 +540,61 @@ theorem sampledVectorMidpointCARComplement_positive_of_vectorSlack
     linarith
   exact Real.sqrt_pos.2 hRadicand
 
-/-- Coordinate projection commutes with the derivative of a Euclidean-valued curve. -/
-private theorem euclideanMatter_deriv_apply
-    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (hC3 : ContDiff ℝ 3 ψ)
-    (t : ℝ) (i : Fin 2) :
+/-- Global smoothness remains a compatibility wrapper for the local CAR proof. -/
+theorem sampledVectorMidpointCARComplement_positive_of_vectorSlack
+    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
+    (ψ : ℝ → F) (x₀ h M duration A p : ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
+    (h_duration : (N : ℝ) * h = duration)
+    (hC3 : ContDiff ℝ 3 ψ)
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 ψ t‖ ≤ M)
+    (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
+    (hSlack : (A + duration * M * h ^ 2 / 24) ^ 2 < 1 - p) :
+    ∀ n ≤ N,
+      0 < vectorCARComplementAmplitude p
+        (D0.Analysis.finiteVectorMidpointHistory h
+          (D0.Analysis.sampledVectorMidpointRate ψ x₀ h)
+          (D0.Analysis.sampledVectorExactValues ψ x₀ h 0) n) := by
+  exact sampledVectorMidpointCARComplement_positive_of_vectorSlack_on_interval
+    ψ x₀ h M duration A p N h_nonneg M_nonneg A_nonneg h_duration
+    (fun t _ => hC3.contDiffAt (x := t)) hThird hEnvelope hSlack
+
+/-- Coordinate projection commutes with the derivative at a locally smooth point. -/
+private theorem euclideanMatter_deriv_apply_at
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (t : ℝ) (i : Fin 2)
+    (hC3At : ContDiffAt ℝ 3 ψ t) :
     deriv ψ t i = deriv (fun s : ℝ => ψ s i) t := by
   let π : EuclideanSpace ℝ (Fin 2) →L[ℝ] ℝ := EuclideanSpace.proj i
   have hchain := fderiv_comp_deriv
     (l := π) (f := ψ) (x := t)
     (by fun_prop)
-    (hC3.contDiffAt.differentiableAt (by norm_num))
+    (hC3At.differentiableAt (by norm_num))
   have hprojDerivative :
       fderiv ℝ π (ψ t) = π :=
     ContinuousLinearMap.fderiv (𝕜 := ℝ) (f := π) (x := ψ t)
   rw [hprojDerivative] at hchain
   simpa [π] using hchain.symm
+
+/-- Global smoothness remains a compatibility wrapper for the local derivative lemma. -/
+private theorem euclideanMatter_deriv_apply
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (hC3 : ContDiff ℝ 3 ψ)
+    (t : ℝ) (i : Fin 2) :
+    deriv ψ t i = deriv (fun s : ℝ => ψ s i) t := by
+  exact euclideanMatter_deriv_apply_at ψ t i (hC3.contDiffAt (x := t))
+
+/-- Sampling rates can be identified from local smoothness at that midpoint. -/
+private theorem euclideanMatter_sampledRate_eq_at
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2))
+    (x₀ h : ℝ) (n : ℕ)
+    (hC3At : ContDiffAt ℝ 3 ψ (x₀ + (n : ℝ) * h + h / 2)) :
+    D0.Analysis.sampledVectorMidpointRate ψ x₀ h n =
+      twoComponentMatterEuclidean (sampledMatterMidpointRate
+        (fun t i => ψ t i) x₀ h n) := by
+  ext i
+  simp only [D0.Analysis.sampledVectorMidpointRate,
+    twoComponentMatterEuclidean_apply, sampledMatterMidpointRate]
+  exact euclideanMatter_deriv_apply_at ψ _ i hC3At
 
 /-- Sampling the same Euclidean-valued source gives the existing component rates. -/
 private theorem euclideanMatter_sampledRate_eq
@@ -563,10 +603,8 @@ private theorem euclideanMatter_sampledRate_eq
     D0.Analysis.sampledVectorMidpointRate ψ x₀ h n =
       twoComponentMatterEuclidean (sampledMatterMidpointRate
         (fun t i => ψ t i) x₀ h n) := by
-  ext i
-  simp only [D0.Analysis.sampledVectorMidpointRate,
-    twoComponentMatterEuclidean_apply, sampledMatterMidpointRate]
-  exact euclideanMatter_deriv_apply ψ hC3 _ i
+  exact euclideanMatter_sampledRate_eq_at ψ x₀ h n
+    (hC3.contDiffAt (x := x₀ + (n : ℝ) * h + h / 2))
 
 /-- Exact samples in Euclidean space are the lift of the original two components. -/
 private theorem euclideanMatter_sampledExact_eq
@@ -602,6 +640,43 @@ private theorem euclideanMatter_history_eq
       ext i
       simp [twoComponentMatterEuclidean, finiteMatterMidpointStep]
 
+/-- On a finite interval, local smoothness suffices for the same recurrence identity. -/
+private theorem euclideanMatter_history_eq_on_interval
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ h duration : ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (h_duration : (N : ℝ) * h = duration)
+    (hC3At : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ContDiffAt ℝ 3 ψ t) :
+    ∀ n ≤ N,
+      D0.Analysis.finiteVectorMidpointHistory h
+        (D0.Analysis.sampledVectorMidpointRate ψ x₀ h)
+        (D0.Analysis.sampledVectorExactValues ψ x₀ h 0) n =
+      twoComponentMatterEuclidean
+        (finiteMatterMidpointHistory h
+          (sampledMatterMidpointRate (fun t i => ψ t i) x₀ h)
+          (sampledMatterExactValues (fun t i => ψ t i) x₀ h 0) n) := by
+  intro n hn
+  induction n with
+  | zero =>
+      simp only [D0.Analysis.finiteVectorMidpointHistory,
+        finiteMatterMidpointHistory]
+      exact euclideanMatter_sampledExact_eq ψ x₀ h 0
+  | succ n ih =>
+      have hnPrev : n ≤ N := Nat.le_trans (Nat.le_succ n) hn
+      have hMid : x₀ + (n : ℝ) * h + h / 2 ∈ Set.Icc x₀ (x₀ + duration) := by
+        constructor
+        · dsimp
+          linarith [mul_nonneg (Nat.cast_nonneg n) h_nonneg,
+            div_nonneg h_nonneg (by norm_num : (0 : ℝ) ≤ 2)]
+        · rw [← h_duration]
+          have hnReal : (n : ℝ) + 1 ≤ (N : ℝ) := by exact_mod_cast hn
+          nlinarith [mul_le_mul_of_nonneg_right hnReal h_nonneg]
+      have hPrev := ih hnPrev
+      simp only [D0.Analysis.finiteVectorMidpointHistory,
+        finiteMatterMidpointHistory]
+      rw [hPrev]
+      rw [euclideanMatter_sampledRate_eq_at ψ x₀ h n (hC3At _ hMid)]
+      ext i
+      simp [twoComponentMatterEuclidean, finiteMatterMidpointStep]
+
 /--
 The vector-norm slack theorem applies to the very same two-component
 chronological CAR record already used by the Brinkmann stencil. The Euclidean
@@ -610,6 +685,33 @@ complement radicand. Its vector derivative and envelope bounds remain supplied
 hypotheses; this does not derive them from a CAR preparation or select them
 physically.
 -/
+theorem sampledMatterMidpointCARComplement_positive_of_vectorSlack_on_interval
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ h M duration A p : ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
+    (h_duration : (N : ℝ) * h = duration)
+    (hC3At : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ContDiffAt ℝ 3 ψ t)
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 ψ t‖ ≤ M)
+    (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
+    (hSlack : (A + duration * M * h ^ 2 / 24) ^ 2 < 1 - p) :
+    ∀ n ≤ N,
+      0 < twoComponentCARComplementAmplitude p
+        (finiteMatterMidpointHistory h
+          (sampledMatterMidpointRate (fun t i => ψ t i) x₀ h)
+          (sampledMatterExactValues (fun t i => ψ t i) x₀ h 0) n) := by
+  have hVector := sampledVectorMidpointCARComplement_positive_of_vectorSlack_on_interval
+    ψ x₀ h M duration A p N h_nonneg M_nonneg A_nonneg h_duration
+    hC3At hThird hEnvelope hSlack
+  have hHistoryEq := euclideanMatter_history_eq_on_interval
+    ψ x₀ h duration N h_nonneg h_duration hC3At
+  intro n hn
+  have hLiftPositive := hVector n hn
+  rw [hHistoryEq n hn] at hLiftPositive
+  simpa [vectorCARComplementAmplitude, twoComponentCARComplementAmplitude,
+    twoComponentCARComplementRadicand, twoComponentMatterEuclidean_norm_sq] using
+      hLiftPositive
+
+/-- Global smoothness remains a compatibility wrapper for the local CAR proof. -/
 theorem sampledMatterMidpointCARComplement_positive_of_vectorSlack
     (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ h M duration A p : ℝ) (N : ℕ)
     (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
@@ -624,15 +726,9 @@ theorem sampledMatterMidpointCARComplement_positive_of_vectorSlack
         (finiteMatterMidpointHistory h
           (sampledMatterMidpointRate (fun t i => ψ t i) x₀ h)
           (sampledMatterExactValues (fun t i => ψ t i) x₀ h 0) n) := by
-  have hVector := sampledVectorMidpointCARComplement_positive_of_vectorSlack
+  exact sampledMatterMidpointCARComplement_positive_of_vectorSlack_on_interval
     ψ x₀ h M duration A p N h_nonneg M_nonneg A_nonneg h_duration
-    hC3 hThird hEnvelope hSlack
-  intro n hn
-  have hLiftPositive := hVector n hn
-  rw [euclideanMatter_history_eq ψ hC3 x₀ h n] at hLiftPositive
-  simpa [vectorCARComplementAmplitude, twoComponentCARComplementAmplitude,
-    twoComponentCARComplementRadicand, twoComponentMatterEuclidean_norm_sq] using
-      hLiftPositive
+    (fun t _ => hC3.contDiffAt (x := t)) hThird hEnvelope hSlack
 
 /--
 The source's half-margin criterion implies the direct vector slack condition
@@ -640,11 +736,11 @@ for the same two-component midpoint history. Here `A` bounds the continuum
 Euclidean norm and `δ = sqrt (1-p) - A`; the source preparation and these
 analytic bounds are still premises rather than derived CAR data.
 -/
-theorem sampledMatterMidpointCARComplement_positive_of_vectorMargin
+theorem sampledMatterMidpointCARComplement_positive_of_vectorMargin_on_interval
     (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ h M duration A p : ℝ) (N : ℕ)
     (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
     (h_duration : (N : ℝ) * h = duration)
-    (hC3 : ContDiff ℝ 3 ψ)
+    (hC3At : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ContDiffAt ℝ 3 ψ t)
     (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
       ‖iteratedDeriv 3 ψ t‖ ≤ M)
     (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
@@ -671,9 +767,30 @@ theorem sampledMatterMidpointCARComplement_positive_of_vectorMargin
         (Real.sqrt_nonneg (1 - p))).2 hSum_lt
     rw [Real.sq_sqrt (le_of_lt hRadicand_pos)] at hsquares
     exact hsquares
-  exact sampledMatterMidpointCARComplement_positive_of_vectorSlack
+  exact sampledMatterMidpointCARComplement_positive_of_vectorSlack_on_interval
     ψ x₀ h M duration A p N h_nonneg M_nonneg A_nonneg h_duration
-    hC3 hThird hEnvelope hSquare_lt
+    hC3At hThird hEnvelope hSquare_lt
+
+/-- Global smoothness remains a compatibility wrapper for the local margin proof. -/
+theorem sampledMatterMidpointCARComplement_positive_of_vectorMargin
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ h M duration A p : ℝ) (N : ℕ)
+    (h_nonneg : 0 ≤ h) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
+    (h_duration : (N : ℝ) * h = duration)
+    (hC3 : ContDiff ℝ 3 ψ)
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 ψ t‖ ≤ M)
+    (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
+    (hMargin : 0 < Real.sqrt (1 - p) - A)
+    (hRefinement : duration * M * h ^ 2 / 24 <
+      (Real.sqrt (1 - p) - A) / 2) :
+    ∀ n ≤ N,
+      0 < twoComponentCARComplementAmplitude p
+        (finiteMatterMidpointHistory h
+          (sampledMatterMidpointRate (fun t i => ψ t i) x₀ h)
+          (sampledMatterExactValues (fun t i => ψ t i) x₀ h 0) n) := by
+  exact sampledMatterMidpointCARComplement_positive_of_vectorMargin_on_interval
+    ψ x₀ h M duration A p N h_nonneg M_nonneg A_nonneg h_duration
+    (fun t _ => hC3.contDiffAt (x := t)) hThird hEnvelope hMargin hRefinement
 
 /--
 The source's fixed CAR slack survives every sufficiently fine uniform mesh.
@@ -681,10 +798,10 @@ The threshold is obtained from the explicit `duration * M * h^2 / 24` error
 with `h = duration / N`; regularity, derivative, envelope and continuum-margin
 hypotheses remain supplied data.
 -/
-theorem sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes
+theorem sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval
     (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ duration M A p : ℝ)
     (duration_pos : 0 < duration) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
-    (hC3 : ContDiff ℝ 3 ψ)
+    (hC3At : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ContDiffAt ℝ 3 ψ t)
     (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
       ‖iteratedDeriv 3 ψ t‖ ≤ M)
     (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
@@ -742,10 +859,31 @@ theorem sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_me
   have hDuration : (N : ℝ) * h = duration := by
     dsimp [h]
     field_simp [ne_of_gt hN_real_pos]
-  have hResult := sampledMatterMidpointCARComplement_positive_of_vectorMargin
+  have hResult := sampledMatterMidpointCARComplement_positive_of_vectorMargin_on_interval
     ψ x₀ h M duration A p N (le_of_lt (by dsimp [h]; positivity))
-    M_nonneg A_nonneg hDuration hC3 hThird hEnvelope hMargin hRefinement
+    M_nonneg A_nonneg hDuration hC3At hThird hEnvelope hMargin hRefinement
   simpa [h, δ] using hResult n hn
+
+/-- Global smoothness remains a compatibility wrapper for the local mesh theorem. -/
+theorem sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ duration M A p : ℝ)
+    (duration_pos : 0 < duration) (M_nonneg : 0 ≤ M) (A_nonneg : 0 ≤ A)
+    (hC3 : ContDiff ℝ 3 ψ)
+    (hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 ψ t‖ ≤ M)
+    (hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A)
+    (hMargin : 0 < Real.sqrt (1 - p) - A) :
+    ∃ N₀ : ℕ, 0 < N₀ ∧ ∀ N : ℕ, N₀ ≤ N →
+      ∀ n ≤ N,
+        0 < twoComponentCARComplementAmplitude p
+          (finiteMatterMidpointHistory (duration / (N : ℝ))
+            (sampledMatterMidpointRate (fun t i => ψ t i) x₀
+              (duration / (N : ℝ)))
+            (sampledMatterExactValues (fun t i => ψ t i) x₀
+              (duration / (N : ℝ)) 0) n) := by
+  exact sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval
+    ψ x₀ duration M A p duration_pos M_nonneg A_nonneg
+    (fun t _ => hC3.contDiffAt (x := t)) hThird hEnvelope hMargin
 
 /-- The time-indexed Brinkmann profile uses the rate of that same history step. -/
 def finiteTimeNonvacuumBrinkmannProfile

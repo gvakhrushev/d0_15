@@ -1511,6 +1511,15 @@ class ProofArchitectureTests(unittest.TestCase):
             "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes"
             in query for query in case["queries"]
         ))
+        self.assertTrue(any(
+            "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval"
+            in query for query in case["queries"]
+        ))
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "nonvacuum_interval_local_car_refinement_2026-10-27.json",
+            case["required_refs"],
+        )
         self.assertIn(module, case["required_refs"])
         self.assertIn("03_FORMALIZATION/D0/Analysis/MidpointQuadrature.lean",
                       case["required_refs"])
@@ -2006,6 +2015,43 @@ class ProofArchitectureTests(unittest.TestCase):
             hashlib.sha256(previous_inventory.read_bytes()).hexdigest(),
             "c896eb2bbec77094b3ad2aec6b9e0fc6bcc2a1edb96a51e8a9b25e8e68bb1cbe",
         )
+
+    def test_nonvacuum_interval_local_car_refinement_inventory_is_compiled(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_interval_local_car_refinement_2026-10-27.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        self.assertFalse(inventory["worktree_dirty"])
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+        local_names = {
+            "D0.Analysis.midpointQuadrature_error_norm_le_of_thirdDerivative_bound_on_interval",
+            "D0.Analysis.sampledVectorMidpointHistory_error_le_refinementBound_on_interval",
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin_on_interval",
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval",
+        }
+        self.assertTrue(local_names.issubset(declarations))
+        legacy_wrapper = declarations[
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes"
+        ]
+        self.assertIn(
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval",
+            legacy_wrapper["proof_dependencies"],
+        )
+        local_mesh = declarations[
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval"
+        ]
+        self.assertIn("ContDiffAt", local_mesh["elaborated_type"])
+        self.assertIn("Icc", local_mesh["elaborated_type"])
+        for name in local_names:
+            self.assertTrue(declarations[name]["exists"])
+            self.assertEqual(
+                set(declarations[name]["axioms"]),
+                {"Classical.choice", "Quot.sound", "propext"},
+            )
 
     def test_proper_lorentz_orbit_is_discoverable_from_pinned_owner_and_lean(self) -> None:
         case = next(

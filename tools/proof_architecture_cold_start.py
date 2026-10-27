@@ -94,6 +94,7 @@ CASES: list[dict[str, Any]] = [
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_of_vectorMargin Eq.24 delta over 2 same two-component CAR recurrence Euclidean lift",
             "Eq.24 max u_j in I Psi_j^(h) - Psi(u_j) |I| sup_I Psi''' h^2 / 24 compound midpoint quadrature integral of Psi' fixed small normalized CAR slack survives for all sufficiently fine h",
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes h duration over N exists N0 delta over 2 every uniform refinement",
+            "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval ContDiffAt C3 local regularity sampled interval",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -104,6 +105,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_midpoint_c3_refactor_declarations_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_vector_norm_car_margin_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_vector_norm_uniform_mesh_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_interval_local_car_refinement_2026-10-27.json",
         ],
         "required_sources": [
             {
@@ -119,8 +121,8 @@ CASES: list[dict[str, Any]] = [
                 "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
                 "blob": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
                 "sections": ["7.2"],
-                "scope_query_indexes": [14],
-                "scope_query_sections": {"14": ["7.2"]},
+                "scope_query_indexes": [14, 15],
+                "scope_query_sections": {"14": ["7.2"], "15": ["7.2"]},
             },
         ],
         "scope_review": (
@@ -136,7 +138,7 @@ CASES: list[dict[str, Any]] = [
             "history result. The vector-valued Taylor/remainder composition now proves the same "
             "dimension-free constant in Euclidean norm. Its half-margin CAR application is "
             "transported through an isometric Euclidean lift and proved equal to the existing "
-            "two-component finite recurrence. Global C^3 regularity, vector third-derivative and "
+            "two-component finite recurrence. C^3 regularity at each point of the sampled interval, vector third-derivative and "
             "envelope bounds remain supplied hypotheses. The new uniform-mesh theorem derives an "
             "N0 threshold from the same delta-over-two estimate and proves the existing CAR "
             "complement positive for every N >= N0 with h=duration/N. Section 7.2 supplies the "
