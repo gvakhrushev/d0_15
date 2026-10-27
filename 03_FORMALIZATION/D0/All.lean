@@ -613,12 +613,10 @@ import D0.Physics.QuasiGenerationsInflation
 import D0.Physics.QuasicrystalPhenomenology
 import D0.Physics.WindowFractionalCharge
 import D0.Physics.WindowOffsetChirality
-import D0.Probability.ArchiveClassicalGaussianChannel
 import D0.Probability.ArchiveFloorWaterFilling
-import D0.Probability.EntropyCouplingKernel
+import D0.Probability.FiniteArchiveHSTInput
 import D0.Probability.ForgettingChannelCP
 import D0.Probability.ForgettingChannelPTP
-import D0.Probability.HSTExternalInterface
 import D0.Representation.ArchiveFiberConservation
 import D0.Representation.CompatibleInvolutionClassification
 import D0.Representation.CompletionResidualCollapse

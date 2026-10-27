@@ -10714,3 +10714,61 @@ The generated Lean view check, claim-map coverage, formalization-debt audit
 validation, and EOL-aware diff check also passed. These are architecture and
 retrieval results only; they do not accept C0, turn registry IDs into Lean
 propositions, or discharge the physical bridge.
+
+## Finite archive sub-Gaussian source and retired external shells (27 October 2026)
+
+`D0.Probability.SubgaussianArchive` now embeds each rational finite archive
+measure as a Lean `PMF`, defines real coordinate and linear-projection random
+variables, and states sub-Gaussianity using Mathlib's actual
+`HasSubgaussianMGF`. A centered bounded projection is proved sub-Gaussian by
+Mathlib's Hoeffding lemma. For the configured eight-atom cross measure, every
+projection has support in the explicit interval with radius
+`(Σ k, |u k|)/5`; its covariance quadratic is exactly
+`(1/100) * Σ k, u k^2`, hence satisfies the registered `1/4` slack. The
+finite PMF support, centering, full-dimensional support, covariance and MGF
+facts are assembled by `archive_stage_finite_hst_source_facts` in
+`D0.Probability.FiniteArchiveHSTInput`. Full dimensionality is stated as a
+positive-mass atom outside every hyperplane through the origin. The source
+package contains only internal finite-measure facts; it is not the external
+comparison theorem's complete input record.
+
+This proves properties of the configured fixed finite distribution: it does
+not construct a refining probability family or map it to the BOOK archive
+operator `P_archive = -δ₀⁸/30 Π_N`. Nor does it prove convex-order domination
+by a Gaussian or an entropy-selected coupling. The cited source's softmax
+conclusion has convex-order and strict-slack hypotheses; see [Hua, Song, and
+Tudose, *On Talagrand's Convexity Conjecture*, Proposition 3.3](https://arxiv.org/abs/2605.10908).
+The former `HSTExternalInterface`, `EntropyCouplingKernel`, and
+`ArchiveClassicalGaussianChannel` declarations were proposition shells
+carrying caller-supplied conclusions; those source files and public imports
+have been removed. Historical candidate-resolution snapshots retain their
+original locators. The entropy and channel claims are now `OPEN` under
+`ASSUMP-HST-EXTERNAL`.
+
+The registry maps `D0-HST-ARCHIVE-001` only to the finite-source theorem and
+maps `D0-ARCHIVE-ENTROPY-001` and `D0-ARCHIVE-GAUSSIAN-CHANNEL-001` to open
+proof targets. This is a scoped repair of formal meaning and claim status,
+not an external HST proof, a BOOK transport, or acceptance of C0.
+
+The focused modules passed (`D0.Probability.SubgaussianArchive`, 3,527 Lake
+jobs; `D0.Probability.FiniteArchiveHSTInput`, 3,528 jobs), and the final
+public-import build passed for `D0.All` (4,741 jobs, Lean 4.30.0). The
+elaborated declaration inventory confirms the public theorem type
+`∀ n, D0.FiniteArchiveHSTSourceFacts n`, its source range, dependencies and
+axiom closure `[Classical.choice, Quot.sound, propext]`. The inventory was
+collected at snapshot `dc5da7cad8a545f40fd8318fb44cdbb3fe4037e1` with
+`worktree_dirty=true`; its whole-Lean-source digest is
+`3c949d1896d18aa51af7d809d7543cf7bb2cfdad4d2ff850979ad0f53992ef36`, claim
+registry digest `84e38794e87ff52377424c0a0f4d8d59c0fdcbab2fad17bf24c656170c76baee`,
+and collector digest
+`2daef4969b731f89870e4b85530ba92c89113a4767cefcfc950c9ae278a876a6`. The
+JSON is
+`sources/d0_proof_architecture_formalization_2026-10-24/finite_archive_hst_source_inventory_2026-10-27.json`,
+SHA-256 `49d203f5b66f731c9648c0131b62c9e2699b00991de1280f333e4c228ad365d0`.
+
+Generated Lean views and claim-map coverage pass; the formalization-debt
+audit remains at its baseline of five unrelated heartbeat overrides; repo
+validation reports zero warnings; work validation passes after regenerating
+the status view. The edited Lean files contain no `sorry` or `admit`, and the
+EOL-aware diff check passes. These checks validate this finite-source slice
+only; the larger formalization and physical-composition goal remains active.
