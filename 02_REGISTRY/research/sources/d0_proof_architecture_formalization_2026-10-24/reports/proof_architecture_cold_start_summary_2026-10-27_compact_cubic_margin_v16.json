@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "765c59afc5b3e222d72a5e2a90e9d9c02608e485",
+  "snapshot_commit": "77df23240f7b42dc1c0614a9219e0d9438938907",
   "worktree_dirty": false,
   "search_cases_found_all_sources": 24,
   "search_cases_total": 24,
@@ -25,15 +25,15 @@
   },
   "semantic_scope_review_is_manual": true,
   "replay": {
-    "source_commit": "765c59afc5b3e222d72a5e2a90e9d9c02608e485",
+    "source_commit": "77df23240f7b42dc1c0614a9219e0d9438938907",
     "command": "python3 tools/proof_architecture_cold_start.py",
     "runner_sha256": "a74777de7e68e029814988403b2afaf076e82498d649daefc2ca8728ef8dac50",
     "runner_git_blob": "84ecd1a81b6943aba412b50a0fc67a8494aea3dd",
     "search_engine_sha256": "e67832179431e8a288a6dd0323c9724c665734f4fd34bb9b3750114ad2c9efc3",
     "search_engine_git_blob": "eb1ba7c2bf8f6115a219617cfc252c1a7ecd2ed1",
-    "test_sha256": "2d11e2d823791a2fcc8c4b84a03b24c70497cfaf05b9e79bc3ebfe1573430034",
-    "test_git_blob": "9b1d2ba58cd72688371f9f7fadb214f95ff77236",
-    "full_output_sha256": "582cf0eea13753beb84a3be0edc5de7265139f24090a68bd2ac20d22c03f17fa",
+    "test_sha256": "69547aac9cbc187cf9d15450ec57c31d9f6d031c0f9354b8029aaf9356d816b1",
+    "test_git_blob": "2114abb5f36082c1692266487aab5fc5f24df68b",
+    "full_output_sha256": "9d02917272878ce0694a9efc805baa9f757e4b09c0817c618ddc0781e947a1ab",
     "full_output_bytes": 9721805
   },
   "cases": [
@@ -253,10 +253,10 @@
     "missing_sections": []
   },
   "comparison_replay": {
-    "source_commit": "765c59afc5b3e222d72a5e2a90e9d9c02608e485",
+    "source_commit": "77df23240f7b42dc1c0614a9219e0d9438938907",
     "runner_sha256": "bad94cde02e9eaaab806679fbbdc0cc4c83c492917f90eb39b844560e755612e",
     "query_fixture_sha256": "a74777de7e68e029814988403b2afaf076e82498d649daefc2ca8728ef8dac50",
-    "full_output_sha256": "2903c1e1b2cee94ca0ecc7c857546924b2ecfee31b3fdfc073f0b0763762eaeb",
+    "full_output_sha256": "abcc07d2abf241aff132a4514dbe6d53afdfaa0745d80a6604c5dbd711458acb",
     "full_output_bytes": 69603,
     "metrics": {
       "query_count": 24,
