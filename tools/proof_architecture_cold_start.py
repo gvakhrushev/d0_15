@@ -96,6 +96,7 @@ CASES: list[dict[str, Any]] = [
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes h duration over N exists N0 delta over 2 every uniform refinement",
             "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval ContDiffAt C3 local regularity sampled interval",
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin",
+            "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource cubic coefficient norm nonzero initial matter rate",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -108,6 +109,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_vector_norm_uniform_mesh_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_interval_local_car_refinement_2026-10-27.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json",
         ],
         "required_sources": [
             {
@@ -132,6 +134,12 @@ CASES: list[dict[str, Any]] = [
                 "blob": "82574aafa3ea94c61ca28ad9e08980c2974d4b22",
                 "scope_query_indexes": [17],
             },
+            {
+                "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+                "commit": "7d52c4193cc4b1ebfed1142d327446a6128465b7",
+                "blob": "df316992b289e0a9ada03adb2852227e8da91ed1",
+                "scope_query_indexes": [18],
+            },
         ],
         "scope_review": (
             "The compiled NonvacuumBrinkmannStencil result proves the exact five-point "
@@ -150,6 +158,12 @@ CASES: list[dict[str, Any]] = [
             "envelope bounds remain supplied hypotheses for the local API. The pointwise-margin "
             "corollary assumes global C^3 and pointwise strict chart inclusion, then uses compactness "
             "to derive the uniform derivative and envelope bounds and their positive uniform margin. "
+            "The cubic-profile application bounds the Euclidean profile by the sum of its four "
+            "coefficient norms on [0,1], derives the pointwise chart margin from that strict "
+            "coefficient bound, and composes one eventual CAR threshold with the exact stencil "
+            "source on the same recursive matter record. It returns the nonzero initial rate, "
+            "but remains a finite-dimensional subset of the source's smooth matter family, not "
+            "a reconstruction or selection of the original CAR preparation. "
             "The new uniform-mesh theorem derives an "
             "N0 threshold from the same delta-over-two estimate and proves the existing CAR "
             "complement positive for every N >= N0 with h=duration/N. Section 7.2 supplies the "

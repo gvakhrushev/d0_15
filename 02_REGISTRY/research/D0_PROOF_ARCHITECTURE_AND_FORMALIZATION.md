@@ -10456,3 +10456,36 @@ narrow geometry module (3,340 jobs) and final `D0.All` integration build
 (4,626 jobs) passed. These retrieval and build receipts do not discharge
 original CAR preparation/generator selection, the full varied rows, C0
 acceptance, native Book/clock/work selection, or GR closure.
+
+### Coefficient-bounded cubic matter profiles in the nonvacuum midpoint route (27 October 2026)
+
+The source's arbitrary smooth two-component matter class now has a concrete
+finite-dimensional application in the existing midpoint/CAR module. The
+Euclidean lift of `cubicMatterProfile` is an actual cubic vector profile on
+`[0,1]`. The sum of the four coefficient-vector norms bounds the profile
+uniformly there. If this sum is strictly below `sqrt(1-p)`, the pointwise CAR
+chart condition follows; if `c1 ≠ 0`, the theorem also proves a nonzero matter
+rate at the initial point. The sampled-rate history is proved equal to the
+existing recursively defined cubic matter record. The composed theorem then
+returns both the CAR-complement bound and the exact five-point stencil source
+for that same record, with one `N₀ > 0` valid at every site for every uniform
+mesh `h=1/N`, `N ≥ N₀`.
+
+This formalizes a controlled cubic subset of the smooth matter waveforms in
+the unmerged #334 owner, §§7.1–7.2, pinned at commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`. The coefficient margin and `p`
+remain explicit assumptions. The application does not reconstruct the
+original CAR preparation/generator, the full metric family, 40 varied Cartan
+equations or 16+24+2 Euler rows, nor physical Book/clock/work selection, C0
+acceptance, or GR closure.
+
+The initial three-declaration inventory is preserved as a historical
+pre-composition receipt at
+`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_pre_same_record_2026-10-27.json`;
+its source pin is commit `081e85f67ca3c8c79f50607bc500c2148154fd6c`, blob
+`a410f6f18a749fca40eb4ebcf186fc3d6024352e`. It covered the coefficient-bound
+and positive-CAR application before proving the sampled-history identity and
+composing the exact stencil source. The current compiled inventory for the
+eight-declaration same-record application follows after its clean build
+snapshot.

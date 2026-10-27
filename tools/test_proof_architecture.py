@@ -2105,6 +2105,80 @@ class ProofArchitectureTests(unittest.TestCase):
             {"Classical.choice", "Quot.sound", "propext"},
         )
 
+    def test_nonvacuum_cubic_profile_car_application_is_compiled(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_cubic_profile_car_margin_2026-10-27.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertRegex(inventory["lean_source_digest"], r"^[0-9a-f]{64}$")
+        self.assertFalse(inventory["worktree_dirty"])
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+        required = {
+            "D0.Geometry.cubicMatterEuclideanProfile_apply",
+            "D0.Geometry.cubicMatterEuclideanProfile_norm_le_coefficientNorm",
+            "D0.Geometry.cubicMatterProfile_hasDerivAt",
+            "D0.Geometry.cubicMatterEuclideanProfile_sampledRate_eq",
+            "D0.Geometry.cubicMatterMidpointSample_eq_sampledHistory",
+            "D0.Geometry.nonvacuumCubicMidpointSource_matches_record",
+            "D0.Geometry.sampledCubicMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes",
+            "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource",
+        }
+        self.assertEqual(set(declarations), required)
+        application = declarations[
+            "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource"
+        ]
+        self.assertEqual(application["module"], "D0.Geometry.NonvacuumBrinkmannStencil")
+        self.assertIn("c1 ≠ 0", application["elaborated_type"])
+        self.assertIn("∃ N₀", application["elaborated_type"])
+        self.assertIn("√(1 - p)", application["elaborated_type"])
+        self.assertIn("cubicMatterMidpointSample", application["elaborated_type"])
+        self.assertIn("finiteMatterForwardGradient", application["elaborated_type"])
+        self.assertIn("transverseFivePointLaplacian", application["elaborated_type"])
+        self.assertIn(
+            "D0.Geometry.cubicMatterEuclideanProfile_norm_le_coefficientNorm",
+            application["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.cubicMatterMidpointSample_eq_sampledHistory",
+            application["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.sampledCubicMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes",
+            application["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.nonvacuumCubicMidpointSource_matches_record",
+            application["proof_dependencies"],
+        )
+        for name in required:
+            self.assertTrue(declarations[name]["exists"])
+            self.assertEqual(declarations[name]["module"], "D0.Geometry.NonvacuumBrinkmannStencil")
+            self.assertEqual(
+                set(declarations[name]["axioms"]),
+                {"Classical.choice", "Quot.sound", "propext"},
+            )
+        self.assertEqual(
+            set(application["axioms"]),
+            {"Classical.choice", "Quot.sound", "propext"},
+        )
+        case = next(
+            row for row in cold_start.CASES
+            if row["id"] == "positive-nonvacuum-recovery"
+        )
+        self.assertEqual(case["queries"][18], application["name"] + " cubic coefficient norm nonzero initial matter rate")
+        source = next(
+            row for row in case["required_sources"]
+            if row["path"] == "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+        )
+        self.assertEqual(source["commit"], "7d52c4193cc4b1ebfed1142d327446a6128465b7")
+        self.assertEqual(source["blob"], "df316992b289e0a9ada03adb2852227e8da91ed1")
+        self.assertEqual(source["scope_query_indexes"], [18])
+
     def test_proper_lorentz_orbit_is_discoverable_from_pinned_owner_and_lean(self) -> None:
         case = next(
             item for item in cold_start.CASES
@@ -2427,7 +2501,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-27_compact_pointwise_margin_v15.json"
+            / "proof_architecture_cold_start_summary_2026-10-27_compact_cubic_margin_v16.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -2479,6 +2553,20 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             exact_retrieval["blob"],
             "82574aafa3ea94c61ca28ad9e08980c2974d4b22",
+        )
+        cubic_retrieval = positive_nonvacuum["cubic_family_retrieval"]
+        self.assertTrue(cubic_retrieval["found"])
+        self.assertEqual(cubic_retrieval["status"], "found_direct_content")
+        self.assertEqual(cubic_retrieval["source_origin"], "pinned_snapshot")
+        self.assertEqual(cubic_retrieval["query_index"], 18)
+        self.assertEqual(cubic_retrieval["candidate_rank"], 2)
+        self.assertEqual(
+            cubic_retrieval["commit"],
+            "081e85f67ca3c8c79f50607bc500c2148154fd6c",
+        )
+        self.assertEqual(
+            cubic_retrieval["blob"],
+            "a410f6f18a749fca40eb4ebcf186fc3d6024352e",
         )
         self.assertEqual(
             positive_nonvacuum["required_source_count"],
@@ -2668,7 +2756,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-27_compact_pointwise_margin_v15.json"
+            / "proof_architecture_search_process_comparison_2026-10-27_compact_cubic_margin_v16.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
