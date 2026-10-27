@@ -1743,6 +1743,11 @@ def source_file_view(root: pathlib.Path, key: str) -> dict[str, Any] | None:
             "content": data.decode("utf-8-sig", errors="replace")}
 
 
+def _registry_assumption_ids(value: Any) -> list[str]:
+    """Parse the existing claim-row assumption links without changing their authority."""
+    return [part.strip() for part in re.split(r"[;,]", str(value or "")) if part.strip()]
+
+
 def relation_view(dataset: dict[str, Any], item: dict[str, Any]) -> dict[str, Any]:
     """Return declared application links; never infer missing semantic edges."""
     record = item["record"]
@@ -1764,6 +1769,23 @@ def relation_view(dataset: dict[str, Any], item: dict[str, Any]) -> dict[str, An
     claim_id = record.get("claim_id") if item["kind"] == "claim-metadata" else None
     registered_assumptions = [assumption for assumption in dataset["assumptions"]
                               if claim_id and assumption.get("claim_id") == claim_id]
+    assumptions_by_id = {
+        str(assumption.get("assumption_id", "")): assumption
+        for assumption in dataset["assumptions"]
+        if assumption.get("assumption_id")
+    }
+    claim_assumption_links = [
+        {
+            "assumption_id": assumption_id,
+            "resolution_status": "resolved" if assumption_id in assumptions_by_id else "unresolved",
+            "assumption": assumptions_by_id.get(assumption_id),
+            "assumption_owner_claim_id": (
+                assumptions_by_id[assumption_id].get("claim_id")
+                if assumption_id in assumptions_by_id else None
+            ),
+        }
+        for assumption_id in _registry_assumption_ids(record.get("assumption_ids", ""))
+    ] if claim_id else []
     conceptual_edges = [edge for edge in dataset["presuppositions"].get("edges", [])
                         if claim_id and (edge.get("claim") == claim_id or edge.get("presupposes") == claim_id)]
     result_record = next((result for result in dataset["assembly"].get("results", [])
@@ -1780,9 +1802,13 @@ def relation_view(dataset: dict[str, Any], item: dict[str, Any]) -> dict[str, An
         "target_obligation": obligation_record,
         "target_interface": target_interface,
         "registered_assumptions": registered_assumptions,
+        "claim_assumption_links": claim_assumption_links,
         "scoped_attempts": attempts,
         "conceptual_presupposition_edges": conceptual_edges,
-        "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance.",
+        "warning": (
+            "Claim assumption IDs resolve to registry rows; this is separate from owner-claim "
+            "links and does not type-check Lean propositions or establish independent scientific acceptance."
+        ),
     }
 
 

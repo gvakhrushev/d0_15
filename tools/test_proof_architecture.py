@@ -193,7 +193,30 @@ class ProofArchitectureTests(unittest.TestCase):
         view = proof.relation_view(data, claim)
         self.assertEqual(view["conceptual_presupposition_edges"][0]["presupposes"], "CLM-2")
         self.assertEqual(view["registered_assumptions"][0]["assumption_id"], "ASSUMP-1")
+        self.assertEqual(view["claim_assumption_links"], [])
         self.assertEqual(view["declared_applications"], [])
+
+    def test_claim_assumption_ids_resolve_independently_of_owner_claim(self) -> None:
+        data = dataset()
+        data["claims"][0]["assumption_ids"] = " ASSUMP-1, ASSUMP-2; ASSUMP-MISSING "
+        data["assumptions"][0]["claim_id"] = "CLM-OWNER-1"
+        data["assumptions"].append({
+            "assumption_id": "ASSUMP-2",
+            "claim_id": "CLM-OWNER-2",
+            "lean_name": "D0.Bar.OtherHypothesis",
+        })
+        claim = next(x for x in proof.records(data) if x["kind"] == "claim-metadata")
+
+        view = proof.relation_view(data, claim)
+
+        links = view["claim_assumption_links"]
+        self.assertEqual([link["assumption_id"] for link in links],
+                         ["ASSUMP-1", "ASSUMP-2", "ASSUMP-MISSING"])
+        self.assertEqual([link["resolution_status"] for link in links],
+                         ["resolved", "resolved", "unresolved"])
+        self.assertEqual([link["assumption_owner_claim_id"] for link in links],
+                         ["CLM-OWNER-1", "CLM-OWNER-2", None])
+        self.assertEqual([row["assumption_id"] for row in view["registered_assumptions"]], [])
 
     def test_assumption_is_an_explicit_metadata_record_with_failure_scope(self) -> None:
         match = proof.find_exact(dataset(), "ASSUMP-1")
