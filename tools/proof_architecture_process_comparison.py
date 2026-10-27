@@ -69,6 +69,79 @@ def _new_cli_answer(dataset: dict[str, Any], query: str,
     }
 
 
+def exact_source_link_metrics(scoped: list[dict[str, Any]]) -> dict[str, int]:
+    """Separate assembly owners from exact formal-support metadata links."""
+    references = [
+        detail
+        for row in scoped
+        for detail in row["current"]["expected_source_link_details"]
+    ]
+    unique_paths: dict[str, list[dict[str, Any]]] = {}
+    for detail in references:
+        key = proof._normalized_source_path(detail["source"])
+        unique_paths.setdefault(key, []).append(detail)
+
+    def has_assembly_owner(detail: dict[str, Any]) -> bool:
+        return bool(detail.get("owners"))
+
+    def has_formal_support(detail: dict[str, Any]) -> bool:
+        return bool(detail.get("formal_support_locators"))
+
+    paths_with_support = {
+        path for path, details in unique_paths.items()
+        if any(has_formal_support(detail) for detail in details)
+    }
+    paths_without_registry_link = {
+        path for path, details in unique_paths.items()
+        if not any(has_assembly_owner(detail) or has_formal_support(detail)
+                   for detail in details)
+    }
+    return {
+        "expected_source_reference_count": len(references),
+        "unique_expected_source_path_count": len(unique_paths),
+        "current_scoped_queries_with_expected_source_assembly_owner_link": sum(
+            bool(row["current"]["expected_source_assembly_owner_links"])
+            for row in scoped
+        ),
+        "current_expected_source_assembly_owner_link_count": sum(
+            len(row["current"]["expected_source_assembly_owner_links"])
+            for row in scoped
+        ),
+        "current_expected_source_references_with_assembly_owner_link": sum(
+            has_assembly_owner(detail) for detail in references
+        ),
+        "current_expected_source_references_with_formal_support_locator": sum(
+            has_formal_support(detail) for detail in references
+        ),
+        "current_expected_source_formal_support_locator_count": sum(
+            len(detail.get("formal_support_locators", [])) for detail in references
+        ),
+        "current_unique_expected_source_paths_with_formal_support_locator": len(
+            paths_with_support
+        ),
+        "current_expected_source_references_without_assembly_or_formal_support": sum(
+            not has_assembly_owner(detail) and not has_formal_support(detail)
+            for detail in references
+        ),
+        "current_unique_expected_source_paths_without_assembly_or_formal_support": len(
+            paths_without_registry_link
+        ),
+        "current_scoped_queries_with_expected_source_header_owner_declaration": sum(
+            any(detail.get("source_header_owner_declarations")
+                for detail in row["current"]["expected_source_link_details"])
+            for row in scoped
+        ),
+        "current_expected_source_header_owner_declaration_count": sum(
+            len(detail.get("source_header_owner_declarations", []))
+            for detail in references
+        ),
+        "current_scoped_expected_sources_without_direct_assembly_owner_link": sum(
+            len(row["current"]["expected_sources_without_assembly_owner_link"])
+            for row in scoped
+        ),
+    }
+
+
 def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
     root = root.resolve()
     selected = [(case, *selected_query(case)) for case in CASES]
@@ -136,7 +209,7 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
                         "interface": result.get("interface"),
                         "evidence": result.get("evidence", []),
                     }
-        expected_owner_links_list = [
+        expected_assembly_owner_links = [
             expected_owner_links[key] for key in sorted(expected_owner_links)
         ]
         expected_source_link_details = []
@@ -177,10 +250,14 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
                 "direct_content": candidate.get("direct_content"),
                 "source_refs": candidate.get("source_refs", []),
             })
-        expected_sources_without_owner_link = sorted(
+        expected_sources_without_assembly_owner_link = sorted(
             source for source in expected if not any(
-                link["source"] == source for link in expected_owner_links_list
+                link["source"] == source for link in expected_assembly_owner_links
             )
+        )
+        expected_sources_without_assembly_or_formal_support = sorted(
+            detail["source"] for detail in expected_source_link_details
+            if not detail["owners"] and not detail["formal_support_locators"]
         )
         old_serialized = json.dumps(old_hits, ensure_ascii=False, indent=2)
         new_serialized = json.dumps(new_answer, ensure_ascii=False, indent=2)
@@ -212,9 +289,10 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
                 "structured_match_count": len(new_structured),
                 "text_candidate_count": len(new_text),
                 "expected_source_hits": new_source_hits,
-                "expected_source_owner_links": expected_owner_links_list,
+                "expected_source_assembly_owner_links": expected_assembly_owner_links,
                 "expected_source_link_details": expected_source_link_details,
-                "expected_sources_without_direct_owner_link": expected_sources_without_owner_link,
+                "expected_sources_without_assembly_owner_link": expected_sources_without_assembly_owner_link,
+                "expected_sources_without_assembly_or_formal_support": expected_sources_without_assembly_or_formal_support,
                 "relevant_text_candidate_count": new_relevant_candidates,
                 "text_candidate_count_not_in_scoped_source_set": (
                     len(new_text) - new_relevant_candidates if expected else None
@@ -238,7 +316,7 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
     legacy_bytes = sum(row["legacy"]["serialized_answer_bytes"] for row in rows)
     current_bytes = sum(row["current"]["serialized_answer_bytes"] for row in rows)
     return {
-        "schema": "d0-proof-architecture-search-comparison-v1",
+        "schema": "d0-proof-architecture-search-comparison-v2",
         "snapshot_commit": dataset["snapshot_commit"],
         "worktree_dirty": dataset["worktree_dirty"],
         "authority_source_digests": dataset["source_digests"],
@@ -251,7 +329,8 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
             "current": (
                 "proof_architecture search over structured authorities, five "
                 "bounded text candidates, and exact-path links to existing "
-                "assembly/formal-support records"
+                "assembly results and formal_support rows; assembly owner "
+                "evidence and support-module locators are reported separately"
             ),
             "questions": (
                 "one identical existing query per real cold-start case, chosen "
@@ -263,6 +342,7 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
         "metrics": {
             "query_count": len(rows),
             "query_count_with_explicit_source_scope": len(scoped),
+            **exact_source_link_metrics(scoped),
             "legacy_scoped_queries_with_expected_source": old_hits,
             "current_scoped_queries_with_expected_source": new_hits,
             "legacy_serialized_answer_bytes_total": legacy_bytes,
@@ -274,28 +354,6 @@ def run(root: pathlib.Path = ROOT) -> dict[str, Any]:
             ),
             "current_owner_bearing_queries": sum(
                 bool(row["current"]["owners"]) for row in rows
-            ),
-            "current_scoped_queries_with_expected_source_owner_link": sum(
-                bool(row["current"]["expected_source_owner_links"])
-                for row in scoped
-            ),
-            "current_expected_source_owner_link_count": sum(
-                len(row["current"]["expected_source_owner_links"])
-                for row in scoped
-            ),
-            "current_scoped_queries_with_expected_source_header_owner_declaration": sum(
-                any(detail.get("source_header_owner_declarations")
-                    for detail in row["current"]["expected_source_link_details"])
-                for row in scoped
-            ),
-            "current_expected_source_header_owner_declaration_count": sum(
-                len(detail.get("source_header_owner_declarations", []))
-                for row in scoped
-                for detail in row["current"]["expected_source_link_details"]
-            ),
-            "current_scoped_expected_sources_without_direct_owner_link": sum(
-                len(row["current"]["expected_sources_without_direct_owner_link"])
-                for row in scoped
             ),
             "semantic_review_required_for_all_queries": True,
         },

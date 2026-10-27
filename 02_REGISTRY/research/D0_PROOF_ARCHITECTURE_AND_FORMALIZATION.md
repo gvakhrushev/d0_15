@@ -11002,12 +11002,16 @@ source paths and the current bounded search surfaced **7/7**. The 24-query
 comparison is preserved at
 [`proof_architecture_search_process_comparison_2026-10-27_locator_reconciliation_2014d322.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_locator_reconciliation_2014d322.json),
 SHA-256 `60966e20e55c8b813f24886e229de8e9f273fa91e2ca40c8333e30d882c26fcb`.
-Across the eight expected source files in those seven scopes, one has an exact
-registered owner link; another source document carries an explicit
-source-authored `Existing owner` field. Seven source references still have no
-direct typed registry owner link, and the source-authored field is not
-promoted to one. The comparison's serialized-answer-size proxy is 48 bytes
-for the legacy empty results and 530,124 bytes for the current results; this
-measures response payload, not tokens or file-reading effort. Owner
-correctness, hypothesis preservation, and whether new mathematics is needed
-remain manual review items. Retrieval success is not semantic acceptance.
+The v1 report counted only assembly-result owner links in its owner-link
+metric; it did not count the separately displayed `formal_support` locators.
+Across the eight expected source references in those seven scopes, one has an
+exact assembly owner link, four references have exact formal-support locators
+spanning three distinct paths, and one source-authored `Existing owner` field
+is shown separately. Three distinct paths have neither an assembly owner nor
+a formal-support locator. The source-authored field is not promoted to a
+registry link. The v2 comparison below reports these categories separately.
+The v1 comparison's serialized-answer-size proxy is 48 bytes for the legacy
+empty results and 530,124 bytes for the current results; this measures
+response payload, not tokens or file-reading effort. Owner correctness,
+hypothesis preservation, and whether new mathematics is needed remain manual
+review items. Retrieval success is not semantic acceptance.

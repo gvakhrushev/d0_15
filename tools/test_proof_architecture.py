@@ -1500,6 +1500,74 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(process_comparison.selected_query(case), (1, "source-specific question"))
         self.assertEqual(process_comparison.selected_query(fallback), (0, "first"))
 
+    def test_process_comparison_separates_assembly_owners_from_support_locators(self) -> None:
+        def detail(source: str, *, owner: bool = False,
+                   support: int = 0, source_header: bool = False) -> dict:
+            return {
+                "source": source,
+                "owners": ["registered owner"] if owner else [],
+                "formal_support_locators": [{} for _ in range(support)],
+                "source_header_owner_declarations": ([{"value": "source claim"}]
+                                                      if source_header else []),
+            }
+
+        scoped = [
+            {
+                "expected_sources": ["support.md", "assembly.md"],
+                "current": {
+                    "expected_source_assembly_owner_links": [{"source": "assembly.md"}],
+                    "expected_source_link_details": [
+                        detail("support.md", support=2),
+                        detail("assembly.md", owner=True),
+                    ],
+                    "expected_sources_without_assembly_owner_link": ["support.md"],
+                },
+            },
+            {
+                "expected_sources": ["support.md", "unlinked.md"],
+                "current": {
+                    "expected_source_assembly_owner_links": [],
+                    "expected_source_link_details": [
+                        detail("support.md", support=2),
+                        detail("unlinked.md", source_header=True),
+                    ],
+                    "expected_sources_without_assembly_owner_link": [
+                        "support.md", "unlinked.md"
+                    ],
+                },
+            },
+        ]
+
+        metrics = process_comparison.exact_source_link_metrics(scoped)
+
+        self.assertEqual(metrics["expected_source_reference_count"], 4)
+        self.assertEqual(metrics["unique_expected_source_path_count"], 3)
+        self.assertEqual(
+            metrics["current_scoped_queries_with_expected_source_assembly_owner_link"],
+            1,
+        )
+        self.assertEqual(metrics["current_expected_source_assembly_owner_link_count"], 1)
+        self.assertEqual(
+            metrics["current_expected_source_references_with_formal_support_locator"],
+            2,
+        )
+        self.assertEqual(metrics["current_expected_source_formal_support_locator_count"], 4)
+        self.assertEqual(
+            metrics["current_unique_expected_source_paths_with_formal_support_locator"],
+            1,
+        )
+        self.assertEqual(
+            metrics["current_expected_source_references_without_assembly_or_formal_support"],
+            1,
+        )
+        self.assertEqual(
+            metrics["current_unique_expected_source_paths_without_assembly_or_formal_support"],
+            1,
+        )
+        self.assertEqual(
+            metrics["current_expected_source_header_owner_declaration_count"], 1
+        )
+
     def test_default_search_window_surfaces_scoped_julia_source(self) -> None:
         case = next(
             item for item in cold_start.CASES
@@ -2608,7 +2676,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-27_assumption_links_v18.json"
+            / "proof_architecture_cold_start_summary_2026-10-27_typed_source_links_v2.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -3039,6 +3107,74 @@ class ProofArchitectureTests(unittest.TestCase):
             row["semantic_review"]["owner_correctness"]
             == "exact registered links are shown; independent owner correctness is not assessed by search output"
             for row in comparison["cases"]
+        ))
+        self.assertEqual(
+            comparison["runner_sha256"],
+            hashlib.sha256(
+                subprocess.check_output([
+                    "git", "show",
+                    f"{comparison['snapshot_commit']}:tools/proof_architecture_process_comparison.py",
+                ])
+            ).hexdigest(),
+        )
+
+    def test_current_v2_search_comparison_separates_owner_and_support_links(self) -> None:
+        comparison_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports"
+            / "proof_architecture_search_process_comparison_2026-10-27_typed_source_links_v2.json"
+        )
+        comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            comparison["schema"], "d0-proof-architecture-search-comparison-v2"
+        )
+        self.assertFalse(comparison["worktree_dirty"])
+        self.assertRegex(comparison["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertEqual(comparison["metrics"]["query_count"], len(cold_start.CASES))
+        metrics = comparison["metrics"]
+        self.assertEqual(metrics["query_count_with_explicit_source_scope"], 7)
+        self.assertEqual(metrics["expected_source_reference_count"], 8)
+        self.assertEqual(metrics["unique_expected_source_path_count"], 7)
+        self.assertEqual(metrics["legacy_scoped_queries_with_expected_source"], 0)
+        self.assertEqual(metrics["current_scoped_queries_with_expected_source"], 7)
+        self.assertEqual(
+            metrics["current_scoped_queries_with_expected_source_assembly_owner_link"],
+            1,
+        )
+        self.assertEqual(metrics["current_expected_source_assembly_owner_link_count"], 1)
+        self.assertEqual(
+            metrics["current_expected_source_references_with_formal_support_locator"],
+            4,
+        )
+        self.assertEqual(metrics["current_expected_source_formal_support_locator_count"], 8)
+        self.assertEqual(
+            metrics["current_unique_expected_source_paths_with_formal_support_locator"],
+            3,
+        )
+        self.assertEqual(
+            metrics["current_expected_source_references_without_assembly_or_formal_support"],
+            3,
+        )
+        self.assertEqual(
+            metrics["current_unique_expected_source_paths_without_assembly_or_formal_support"],
+            3,
+        )
+        self.assertEqual(
+            metrics["current_expected_source_header_owner_declaration_count"], 1
+        )
+        self.assertTrue(metrics["semantic_review_required_for_all_queries"])
+
+        labelled = next(
+            row for row in comparison["cases"]
+            if row["case_id"] == "labelled-native-raising-inverse"
+        )
+        labelled_detail = labelled["current"]["expected_source_link_details"][0]
+        self.assertEqual(labelled_detail["owners"], [])
+        self.assertEqual(len(labelled_detail["formal_support_locators"]), 3)
+        self.assertTrue(all(
+            locator["status"] == "metadata_locator_only"
+            for locator in labelled_detail["formal_support_locators"]
         ))
         self.assertEqual(
             comparison["runner_sha256"],
