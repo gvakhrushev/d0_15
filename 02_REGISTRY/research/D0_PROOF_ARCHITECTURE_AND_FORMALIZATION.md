@@ -10426,3 +10426,33 @@ source pin remains commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
 Book/clock/work selection, C0 acceptance, and GR closure remain open.
 
 Compiled inventory for `D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin`: commit `a2c20a4dc9feeb5446b41e9e49ea8094bd14f40b`, path `02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json`, blob `82574aafa3ea94c61ca28ad9e08980c2974d4b22`.
+
+The clean cold-start replay and bounded search comparison for this exact
+declaration are recorded in
+[`proof_architecture_cold_start_summary_2026-10-27_compact_pointwise_margin_v15.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_compact_pointwise_margin_v15.json)
+and
+[`proof_architecture_search_process_comparison_2026-10-27_compact_pointwise_margin_v15.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_compact_pointwise_margin_v15.json).
+Both use clean source snapshot `508673f8099911c7d674e958826962c3b6606333`.
+Cold start found all required sources in 24/24 cases (166 source/reference
+entries; 25 benchmark cases). The exact theorem-name query at index 17 found
+the compiled inventory as verified pinned content at candidate rank 3, with
+the commit and blob recorded above. The replay's full output is 9,650,439
+bytes, SHA-256
+`b2567e3cce74d664b405bf24fc3e66a2068449c8db9a2d6ffa1bd7d223c2e036`; the
+summary artifact SHA-256 is
+`a6ba6f377dc90204273280cd51b038d36230a44773be254ec020307cc717a114`.
+
+The comparison used the same 24 questions: current search retrieved all 7/7
+explicitly scoped expected sources, while the legacy scoped search retrieved
+0/7. The response-size proxy is 48 serialized bytes for legacy output and
+531,238 for current output; it is not a token or file-read measure. The
+comparison output is 69,622 bytes, SHA-256
+`f5c57e27b67ac0714efb577e42565f694852995d39c5c10cc685623c60e0bb5c`.
+Semantic owner correctness and application remain manual review obligations.
+The declaration inventory was collected through public `D0.All` at Lean
+source digest
+`ef6a261ae86e28e0fa3dea7a1a75c18ee552e8d77d105a65b2ec24e0f260d672`; the
+narrow geometry module (3,340 jobs) and final `D0.All` integration build
+(4,626 jobs) passed. These retrieval and build receipts do not discharge
+original CAR preparation/generator selection, the full varied rows, C0
+acceptance, native Book/clock/work selection, or GR closure.
