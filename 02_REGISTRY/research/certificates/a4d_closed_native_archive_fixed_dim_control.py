@@ -187,17 +187,49 @@ def coherent_c1_limit_control():
     return entropy_source_limit,errors
 
 
+def coherent_gauge_ward_control():
+    # Literal ALL fine outcome coherent Gram, NOT an endpoint or marginal test.
+    alpha=.4
+    rho=np.diag([2/3,1/3]).astype(complex)
+    K=[math.sqrt(alpha)*np.eye(2,dtype=complex)]
+    for i in range(2):
+        for j in range(2):
+            X=np.zeros((2,2),complex)
+            X[i,j]=math.sqrt((1-alpha)*rho[i,i].real)
+            K.append(X)
+    angle=.37
+    U=np.array([[math.cos(angle),-math.sin(angle)],
+                [math.sin(angle), math.cos(angle)]],complex)
+    Kp=[U@X@U.conj().T for X in K]
+    rhop=U@rho@U.conj().T
+    words=list(itertools.product(range(len(K)),repeat=3))
+    def gram(ops,state):
+        F=[]
+        for w in words:
+            M=np.eye(2,dtype=complex)
+            for idx in w: M=ops[idx]@M
+            F.append(M)
+        G=np.array([[np.trace(X@state@Y.conj().T)
+                     for Y in F] for X in F])
+        return G
+    old,new=gram(K,rho),gram(Kp,rhop)
+    assert_close(old,new,'exact full coherent fine archive under a native unitary re-encoding',tol=2e-12)
+    return len(words),float(np.max(np.abs(old-new)))
+
+
 def main():
     rows=[reset_example(n) for n in (1,2,3,4)]
     eta=original_port_floor_test()
     first=coherent_first_source_test()
     limit,errors=coherent_c1_limit_control()
+    n_gauge,gauge_err=coherent_gauge_ward_control()
     Hfine,Hport,Scoh=native_diagonal_no_mixing_control()
     for row in rows:
         print('n=%d S_fresh=%.12f S_limit=%.12f DR=%d |words|=%d'%row)
     print('Golden original-form uniform port floor eta=%.12f'%eta)
     print('archive source analytic %.12f, finite difference %.12f'%first)
     print('C1 source limit %.12f; source errors %s'%(limit,[round(e,9) for e in errors]))
+    print('full fine archive gauge Ward: %d words, max difference %.3g'%(n_gauge,gauge_err))
     print('QND negative control: fine Shannon %.8f, port Shannon %.8f, fresh coherent %.8f'%(Hfine,Hport,Scoh))
     print('PASS_CLOSED_NATIVE_ARCHIVE_FIXED_DIM (structural tests only)')
 
