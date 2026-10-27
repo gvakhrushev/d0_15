@@ -283,6 +283,29 @@ superseded for this ID-propagation check only. This verifies registry-to-Lean
 metadata preservation; it does not prove, remove, or discharge any listed
 assumption, and no claim row, assumption ID, owner, or release status changed.
 
+The compiled declaration inventory was collected from clean snapshot
+`972f8c2a4084a86dbf20114deda2ffda65b9ea85` through public import `D0.All`,
+with `worktree_dirty=false`, Lean source digest
+`1e33bef30040fe589f9731add4ca011057ef08155151dd5611bdaa7e35f74f86`,
+collector digest
+`a2a3586e25c1c3f8359cf74128af56f0235f1606af767ef0c9f77b9828aedac5`, and
+toolchain `leanprover/lean4:v4.30.0`. The selected proposition and theorem
+have no binders or axioms; the theorem's elaborated conclusion is the exact
+equality above. The inventory also records the compiled accessor as
+`String → List String`, with no axioms. Its artifact is
+[`lean_bridge_assumption_ids_inventory_2026-10-27.json`](sources/d0_proof_architecture_formalization_2026-10-24/lean_bridge_assumption_ids_inventory_2026-10-27.json),
+blob `1f0390e1ba7d4d552cee0482a6ab6726995c2bfd`, SHA-256
+`f63260f532b5be13a40baad00a37539692b0681699598a60842b792c773aa309`.
+At the source commit, the relevant blobs are `bc244ddeb1110e28fdf9d1237b47268be01e4137`
+(`03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean`),
+`311aa97d4a32be014ec769e36ba7e200c162d3f7`
+(`03_FORMALIZATION/D0/TheoremLedger/ReleaseStatus.lean`),
+`aedaab799e55b5aebefa3c47fefb2808d3aa5db3` (`tools/generate_lean_views.py`),
+and `bde7c578470e20806a7a4cbd48ed453f57a435b2` (`02_REGISTRY/claims.csv`).
+This compiled snapshot verifies the ClaimMap declaration path; the generated
+view check and claim-map coverage check separately verify source regeneration
+and coverage.
+
 An independent read-only scope review at snapshot
 `709ea27c3e7dc6865708aac076e4230655ad0cce` accepts one claim-to-book-to-Lean
 correspondence: `D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001`. The exact source

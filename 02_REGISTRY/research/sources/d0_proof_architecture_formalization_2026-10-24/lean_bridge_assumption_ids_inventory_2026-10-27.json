@@ -1,0 +1,309 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "972f8c2a4084a86dbf20114deda2ffda65b9ea85",
+  "worktree_dirty": false,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "1e33bef30040fe589f9731add4ca011057ef08155151dd5611bdaa7e35f74f86",
+  "collector_sha256": "a2a3586e25c1c3f8359cf74128af56f0235f1606af767ef0c9f77b9828aedac5",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "full_names": [
+      "D0.ClaimMapEntry",
+      "D0.ClaimMapEntry.assumptionIds",
+      "D0.claimMap",
+      "D0.claimMapAssumptionIds",
+      "D0.BridgeAssumptionsExplicit",
+      "D0.lean_bridge_assumptions_explicit"
+    ]
+  },
+  "declarations": [
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "Type",
+      "declaration_kind": "inductive",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 22,
+            "line": 28
+          },
+          "start": {
+            "column": 0,
+            "line": 21
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 23,
+            "line": 21
+          },
+          "start": {
+            "column": 10,
+            "line": 21
+          }
+        }
+      },
+      "elaborated_type": "Type",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.TheoremLedger.ClaimMap",
+      "name": "D0.ClaimMapEntry",
+      "proof_dependencies": [],
+      "type_dependencies": [],
+      "source_path": "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "self",
+          "type": "D0.ClaimMapEntry"
+        }
+      ],
+      "conclusion_whnf": "List String",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 15,
+            "line": 25
+          },
+          "start": {
+            "column": 2,
+            "line": 25
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 15,
+            "line": 25
+          },
+          "start": {
+            "column": 2,
+            "line": 25
+          }
+        }
+      },
+      "elaborated_type": "D0.ClaimMapEntry → List String",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.TheoremLedger.ClaimMap",
+      "name": "D0.ClaimMapEntry.assumptionIds",
+      "proof_dependencies": [
+        "D0.ClaimMapEntry"
+      ],
+      "type_dependencies": [
+        "D0.ClaimMapEntry",
+        "List",
+        "String"
+      ],
+      "source_path": "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "List D0.ClaimMapEntry",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 3,
+            "line": 2214
+          },
+          "start": {
+            "column": 0,
+            "line": 30
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 12,
+            "line": 30
+          },
+          "start": {
+            "column": 4,
+            "line": 30
+          }
+        }
+      },
+      "elaborated_type": "List D0.ClaimMapEntry",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.TheoremLedger.ClaimMap",
+      "name": "D0.claimMap",
+      "proof_dependencies": [
+        "D0.ClaimMapEntry",
+        "D0.ClaimMapEntry.mk",
+        "D0.ClaimStatus.deprecated",
+        "D0.ClaimStatus.empiricalDataRequired",
+        "D0.ClaimStatus.leanBridgeAssumptionsExplicit",
+        "D0.ClaimStatus.leanCoreProved",
+        "D0.ClaimStatus.leanFactProved",
+        "D0.ClaimStatus.leanNoGoProved",
+        "D0.ClaimStatus.openObligation",
+        "D0.ClaimStatus.pythonCertClosed",
+        "List",
+        "List.cons",
+        "List.nil",
+        "String"
+      ],
+      "type_dependencies": [
+        "D0.ClaimMapEntry",
+        "List"
+      ],
+      "source_path": "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "claimId",
+          "type": "String"
+        }
+      ],
+      "conclusion_whnf": "List String",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 14,
+            "line": 2219
+          },
+          "start": {
+            "column": 0,
+            "line": 2216
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 25,
+            "line": 2216
+          },
+          "start": {
+            "column": 4,
+            "line": 2216
+          }
+        }
+      },
+      "elaborated_type": "String → List String",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.TheoremLedger.ClaimMap",
+      "name": "D0.claimMapAssumptionIds",
+      "proof_dependencies": [
+        "BEq.beq",
+        "D0.ClaimMapEntry",
+        "D0.ClaimMapEntry.assumptionIds",
+        "D0.ClaimMapEntry.claimId",
+        "D0.claimMap",
+        "D0.claimMapAssumptionIds.match_1",
+        "List",
+        "List.find?",
+        "List.nil",
+        "Option",
+        "String",
+        "Unit",
+        "instBEqOfDecidableEq",
+        "instDecidableEqString"
+      ],
+      "type_dependencies": [
+        "List",
+        "String"
+      ],
+      "source_path": "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "Prop",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 54,
+            "line": 37
+          },
+          "start": {
+            "column": 0,
+            "line": 33
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 33
+          },
+          "start": {
+            "column": 4,
+            "line": 33
+          }
+        }
+      },
+      "elaborated_type": "Prop",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.TheoremLedger.ReleaseStatus",
+      "name": "D0.BridgeAssumptionsExplicit",
+      "proof_dependencies": [
+        "D0.claimMapAssumptionIds",
+        "Eq",
+        "List",
+        "List.cons",
+        "List.nil",
+        "String"
+      ],
+      "type_dependencies": [],
+      "source_path": "03_FORMALIZATION/D0/TheoremLedger/ReleaseStatus.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "D0.claimMapAssumptionIds \"D0-LEAN-BRIDGE-001\" =\n  [\"ASSUMP-HURWITZ-GOLDEN\", \"ASSUMP-RG-SMOOTH-INTERP\", \"ASSUMP-LORENTZ-MACRO\", \"ASSUMP-SMOOTH-COVARIANCE\",\n    \"ASSUMP-SMOOTH-HEATTRACE\", \"ASSUMP-HST-EXTERNAL\"]",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 5,
+            "line": 40
+          },
+          "start": {
+            "column": 0,
+            "line": 39
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 39
+          },
+          "start": {
+            "column": 8,
+            "line": 39
+          }
+        }
+      },
+      "elaborated_type": "D0.BridgeAssumptionsExplicit",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.TheoremLedger.ReleaseStatus",
+      "name": "D0.lean_bridge_assumptions_explicit",
+      "proof_dependencies": [
+        "D0.claimMapAssumptionIds",
+        "Eq.refl",
+        "List",
+        "String"
+      ],
+      "type_dependencies": [
+        "D0.BridgeAssumptionsExplicit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/TheoremLedger/ReleaseStatus.lean"
+    }
+  ]
+}
