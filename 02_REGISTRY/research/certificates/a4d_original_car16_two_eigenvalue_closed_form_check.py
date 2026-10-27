@@ -119,6 +119,39 @@ def main():
     kern=coords-(L*coords)[0]*v_F-(L*coords)[1]*v_Q
     equal_matrix(L*kern,s.zeros(2,1),
                  "normal decomposition leaves only a kernel direction")
+    # Arbitrary ambient-matrix source: exact closed resolvent identity.
+    zz=s.symbols("z",real=True,nonzero=True)
+    denom=1-zz*total+zz*zz*product
+    inverse_numer=(1-zz*total)*s.eye(d)+zz*A
+    equal_matrix(
+        (s.eye(d)-zz*A)*inverse_numer,
+        denom*s.eye(d),
+        "all-r,all-nu exact native logdet resolvent, no inverse oracle")
+    # The first source against a Hermitian B need NOT preserve
+    # the two-eigenvalue quadratic identity away from this base.
+    B=s.zeros(d)
+    B[0,0]=1
+    B[0,1]=1
+    B[1,0]=1
+    res_source=(
+        zz*(1-zz*total)*s.trace(B)
+        +zz*zz*s.trace(A*B))/denom
+    exact_source=s.trace(zz*inverse_numer*B)/denom
+    equal(res_source,exact_source,
+          "arbitrary ambient-Hermitian first-source formula")
+    first_trace=s.trace(A)
+    second_trace=s.trace(A*A)
+    jac=s.Matrix([
+        [s.diff(first_trace,r),s.diff(first_trace,nu)],
+        [s.diff(second_trace,r),s.diff(second_trace,nu)]])
+    Pj=(8*r**7+25*r**6+32*r**5-15*r**4
+        -56*r**3+39*r**2+15)
+    jac_closed=nu**5*r*Pj/(2048*(r-1)**5*(r+1)**5)
+    equal(s.det(jac),jac_closed,
+          "original 2-spectral-moment self-reading Jacobian")
+    equal(jac_closed.subs(values),
+          -s.Rational(18126055017,262144000000000),
+          "nonzero actual exact original two-coordinate determinant")
     print("PASS_ORIGINAL_CAR16_TWO_EIGENVALUE_CLOSED_FORM")
     print(" symbolic CAR16 all-r,all-nu minimal polynomial: PASS")
     print(" actual fixture eigenvalue multiplicities: 8+8")
@@ -126,6 +159,8 @@ def main():
     print(" q_A = 69399*p^3/1257680")
     print(" rho_A = I16/8 - A/Tr(A); d_nu rho_A=0")
     print(" original configured Brinkmann normal geometric source != 0")
+    print(" native full16 logdet SOURCE spans two traces even off quadratic chart")
+    print(" native 2x2 moment Jacobian at original fixture is NONZERO")
     print(" GR_closed=false; complete native-price/source selection still open")
 
 
