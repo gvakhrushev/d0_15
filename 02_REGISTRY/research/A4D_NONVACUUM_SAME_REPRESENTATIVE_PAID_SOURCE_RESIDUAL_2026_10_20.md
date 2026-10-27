@@ -78889,6 +78889,444 @@ Observed receipt 3370 bytes / SHA256 c6896239e6a1d3a99b5ac54847cf331af56f5d6a297
 
 
 
+## 7cj. Control local QUERY and geometry rows without changing the SOURCE banks
+
+27 October 2026. SAME #334 / constitutive/native-programme-v1; native realization and composition, input c4b465910c9d3fc0a71f17f0434953350f5e5319. Consume 7ch687--700 and 7ci701--714, the native inverse/compiler, the conditional and label arguments of 7as/7at/7ba, and 7bw606. The new application is a structured implementation of the SAME cold SOURCE operator, with additional local QUERY/geometry source estimates. Its explicit role layout matters: the complete-SIGN packets of 7as are a different SOURCE carrier and are NOT substituted here. No new action, field acceptance rule or physical variation admission is added.
+
+### 1. Preserve the actual cold operator, not just its IID mean
+
+Keep the old n SOURCE packets, their actual preparation A, the deduplicated observables O_a, the decoder, protected inputs and the free geometry module. Write R for the TRUE input rank, a_zeta=1-zeta>0, and d for the number of features. Each of k=dm occurrences reads one O_a from a DISTINCT packet. Distinct observables on one CAR packet need not commute. The desired node corner and its symmetric read-once kernel are
+
+    c_z=sqrt(1-alpha_K x_z(1-x_z)),  e_z=(1-c_z)/2,
+    0<c_min<=c_z<=c_max<1,
+    K_n=sum_(iota,z) w_iota E_(iota,z)c_z,               (715)
+
+where sum w_iota E_(iota,z)=I on the FULL old SOURCE bank. These are the original 7ch node values and operator, not an Einstein-valued table. Original gamma_h, alpha_K, lambda_minus, rank-adjusted Gamma_h and all decoder/lift factors remain.
+
+Put beta=p^3, a_G=sqrt(p), s=2a_G p. Prepare l fresh Golden exit coins, one of them the dedicated q of 7ci. The other l-1 exit coins are QUERY-private. With
+
+    pi_l=(1-beta^l)/2>max_z e_z,   t_z=e_z/pi_l in(0,1), (716)
+
+an independent threshold event of probability t_z followed by the event 'exit parity AND threshold' has probability e_z. Choose l from the strict compact margin max e_z<1/2. A single q coin would require the extra, unproved bound e_z<p^2. Threshold and injection randomness use SEPARATE Golden XOR groups; their bits are not exit-parity coins.
+
+The q-blind reader/threshold unitary D produces an output bit chi. On its FULL space F=D*P_chi D is a nonzero projector, independent of every exit coin. Its desired t_z law is a cold-work correctness statement, not a statement about dirty scratch. Use a separate phase flag t and the phase oracle
+
+    O=Z_t[(I-F)+F Z_1...Z_l],
+    Q_0=B_0* Z_t B_0.                                   (717)
+
+Here B_0 includes the actual Golden births and the specified ideal quantum/Boolean macros. If parity is accumulated in a scratch y, its full-column Z_y factor is retained in the product of signs; its cold value is 1. This sign does not affect the norm argument. All redundant input copies are included and reversed; their ideal cancellation follows from the completed diagonal phase oracle. No exact AND, fair-coin, unknown-state readout or unpaid inverse primitive is granted.
+
+In the ideal uniform sampler comparison, cold contraction of (717) gives 1-2pi_l t_z=c_z. Substitution of the read-once effects in (715) gives EXACTLY K_n, including on arbitrary entangled SOURCE inputs. Averaging precedes logdet. Thus 692--695 and the full-bank score of 697 are preserved on their ORIGINAL carrier; no extra copies of the unknown/known SOURCE state, new covariance or correlated-state transport is used.
+
+There are two distinct implementation errors. Let Delta be the sum of full-column quantum/Boolean macro errors relative to B_0, with the same actual Golden births in both comparisons. The actual literal reflection has
+
+    Q_hat=B_hat* Z_t B_hat,  Q_hat*=Q_hat, Q_hat^2=I,
+    epsilon_phase=||Q_hat-Q_0||<=2Delta.                  (718)
+
+Its Z_t is the owned eight-stage routed sign and B_hat* the actual expanded native inverse. Let eta bound the ENTIRE conditional event-table error, including finite distinct-injection fallback, actual XOR bias, coefficient and threshold rounding. For example retain the owned contributions 4^(-L), coefficient error, 2^(-T), and (T_F/2)beta^u for T_F proposed bits using u physical coins each. Compress QUERY blanks only and keep SOURCE/helpers untouched. Then
+
+    epsilon_K=||j_Q*Q_hat j_Q-K_n||
+              <=2eta+epsilon_phase.                    (719)
+
+The eta-to-operator bound uses the positive read-once POVMs and the actual injection-weight error on ALL inputs. It does not assume IID SOURCE in (719). Q_0 is NOT claimed close to the old 7ch full node dilation: only the cold SOURCE kernel agrees. In 700 replace epsilon_Q by epsilon_K; SOURCE supports exclude the new QUERY work. The same resolvent argument gives
+
+    ||Gamma_h^-1 D_SOURCE B-E_PC,h D Phi||
+      <=epsilon_weak,h||D Phi||
+        +(delta_B/Gamma_h)||D z_diamond||
+        +4R zeta N_SOURCE epsilon_K/(a_zeta^2 Gamma_h).  (720)
+
+The true SOURCE clock count, independent forward/reverse rows, actual Phi=R_h(z_diamond), and 697's original ambient norm/covariance/lift remain. A cold-kernel error is not renamed a full-unitary error.
+
+### 2. A read-once primitive layout on the old banks
+
+First choose a legal ordered injection, using the owned finite sampler with a fixed DISTINCT fallback. Compute and retain role bits R_ia: packet i is assigned feature a. On every live branch at most ONE R_ia is true for each i, and exactly m packets serve each a. Compute roles with ordinary reversible Boolean logic; keep the selector inputs, carries and roles available. Give inputs/roles redundant permanent copies outside later macro supports.
+
+For EACH (i,a), allocate a private SIGN flag and private reader work. Apply the fixed-dimension SIGN extractor for O_a controlled ONLY by R_ia. Its completed false block is identity, the role is readonly, and completed blocks restore shared helper/Spin on ALL columns. At most one noncommuting O_a is therefore read on any packet. There are d such controlled extractors per packet, not k. The later count/table logic ignores an inactive SIGN flag when R_ia=0. Each stored active SIGN is excluded from the other readers' supports. SIGN copies and their actual inverse are counted.
+
+The required address guards are concrete constructor choices, not constraints on field values. A selector/role COMPUTE macro excludes SOURCE BANK DATA, still-unborn SIGN flags and private quantum-reader work. A quantum reader macro (i,a) touches only bank i, R_ia, its OWN SIGN/work and the restored shared helper/Spin; it excludes other roles, other SIGN flags, permanent labels and other banks. All born selector/role values are retained readonly for the remaining ideal computation. Dirty/invalid role columns still have a well-defined unitary action; they need not describe a legal measurement assignment.
+
+These guards give the missing prefix proof. After a completed classical selector/role macro the future effect is block diagonal in the retained classical values, with SOURCE-valued diagonal blocks, including invalid-role columns. Outside labels kill cross-input codewords. On a diagonal codeword a local skew insertion acts only on classical work/restored helper, so it commutes with that SOURCE block and has zero real feedback trace. This also covers classical role-copy rows. Coin birth/first-copy rows use the separate XOR conditional bound below, rather than this post-frontier argument. A support that touches a future SIGN blank would invalidate the diagonal-effect argument and is excluded explicitly.
+
+For a bank-touching reader row use the symmetric Bernstein conditional, rather than the complete-SIGN-carrier theorem. Use means mu_a=<O_a> and g_m=D_mu J_m at the actual IID bank state. Conditional on a valid assignment of packet i to feature b, one occurrence has operator coefficient (D_mu,b C_m)/m. Uniform injections give Pr(R_ib=1)=m/n. Thus the frozen PRICE coefficient of that one packet is g_m,b/n.
+
+A true-a reader fault retains this conditional coefficient. A false-a fault before the selected b read is a trace-preserving one-packet change with that same coefficient. After b has been read, a false-a fault excludes SIGN_ib and cannot change its stored law. Off-role insertions are killed by the permanent role copy outside the macro support. No simultaneous measurement of O_a and O_b is used. Folding a raw insertion through its macro suffix preserves its norm and one-packet support. Exact helper identity on ALL columns prevents propagation into later banks.
+
+Consequently a safe per-stage bound is 4||g_m||_1 nu/n in mean coordinates, with nu the raw gate-max norm. If L_read counts the actual per-packet quantum readers and first SIGN copies, summing the n packets gives 4L_read||g_m||_1 nu. An implementation using SIGN probabilities (1+mu)/2 retains the factor 2 in its gradient conversion. Uniform table/injection error contributes the conservative 2nL_read eta term before multiplication by the event-price coefficient. Macro errors retain their actual length-times-error debt. This is a new primitive-support application on (715), not a transfer from a d-copy SOURCE packet.
+
+### 3. Coin, inverse and literal phase rows
+
+At fixed threshold t_z, differentiating ONE exit coin gives
+
+    D C_z=-2s beta^(l-1)t_z.                            (721)
+
+Each independent forward coin leg and its reverse companion gives half this value. For arbitrary supported one-coin/helper faults the conditional of the other l-1 coins gives the owned bound proportional to beta^(l-1); summing uses the TRUE per-coin expanded length. A single coin is not assigned a zero source. The independent threshold/injection fair-bit groups keep T_F u L_F beta^(u-1). Their birth, first fanout and inverse counts remain in L_F.
+
+The phase-middle rows need their own proof. At the correct labelled isometry J, Z_t J=L J for a Hermitian truth sign L on the untouched input labels. For a folded raw middle insertion K*=-K excluding those labels, [K,L]=0 and J* K Z_t J=J* K L J is skew. The cold C is Hermitian, so its real logdet row is zero. This includes every stage of the literal eight-stage routed Z_t, even when its helper/Spin varies. At the actual compiled J_hat,
+
+    ||Herm(J_hat* K Z_t J_hat)||
+       <=||(Z_t-L)J_hat|| ||K||,
+    |D J_middle|<=2R zeta||(Z_t-L)J_hat|| nu/a_zeta.     (722)
+
+Its truth defect is bounded by the actual macro error. Merely calling the endpoint an involution would not prove (722).
+
+Independent QUERY inverse rows are also included. An insertion in an inverse macro defines, by adjoint, a forward-macro variation on the SAME support, preserving nu. Its cold variation is the adjoint of the corresponding forward one. Since W(C)=C(a_zeta I+zeta C^2)^(-1) is Hermitian, their real feedback traces agree. Each is half the linked Born row. No pairing of raw letters or equality of independent velocities is imposed. Both actual stage counts, including the longer expanded inverse, must be used.
+
+For clarity one conservative combined QUERY estimate is
+
+    |D_QUERY B| <= [4L_read||g_m||_1
+      +(32R zeta/a_zeta^2)(nL_read eta
+        +l L_exit beta^(l-1)+T_F u L_F beta^(u-1)
+        +M_QUERY Delta)] nu.                           (723)
+
+L_read, L_exit and L_F safely count both independent legs; M_QUERY counts ALL actual QUERY primitive stages, including the literal sign, selector/role logic, labels, threshold and routing. The enlarged constant covers the event/logdet conversion, telescoping and truth-defect bounds above. It is not an empirical fitted coefficient. The leading g_m term is present off shell and is NOT reduced by extra coins. Additional supports joining banks/labels/coin groups are outside (723).
+
+### 4. Nondegenerate metric and independent raw geometry rows
+
+The full q off-diagonal block of (717), after the Golden rotations and q-blind conjugation, is -s times a unitary sign times the nonzero commuting projection F. Therefore
+
+    ||(Q_0)01||=s,
+    b_hat=||(Q_hat)01||>=s-epsilon_phase.                (724)
+
+Use epsilon_phase<s/2, the ACTUAL b_hat and the original distance calibration delta*b_hat/sqrt22 in 709--711. No event probability or rank multiplier enters (724). At the same time, contracting the other l-1 physical exit coins gives an OPERATOR on the remaining SOURCE/threshold space whose off-diagonal norm is at most s beta^(l-1).
+
+Every raw geometry macro excludes SOURCE BANK DATA and all QUERY work except q. It may touch private geometry work and the same physical SourceI helper/Spin; completed SOURCE/QUERY/geometry blocks restore that shared helper on ALL columns. No second port is assumed. For an independent final-geometry fault delta U=K U, the diagonal q0 cold term is c_A P K00 P, skew even with blank-work/protected-Spin mixing. The cross-q term is bounded by s beta^(l-1)nu. The initial inverse leg has the adjoint bound. Including full NEW-phase approximation gives the safe bound
+
+    |D_GEOM B| <=N_GEOM[2R zeta s beta^(l-1)/a_zeta
+                   +8R zeta epsilon_phase/a_zeta^2]nu. (725)
+
+False-branch-breaking raw faults are included on these supports. Full metric norm (724) and contracted first-source (725) are different quantities. Source/coin-entangling geometry faults would require their own estimate.
+
+### 5. Price, parameter order and actual parent consequence
+
+All new coins, private SIGN/role flags, labels and work are fresh INPUT BLANKS. They enlarge the WHOLE carrier/heat, not R. There are n*d private reader flags/work allocations, but still n original SOURCE banks. Free geometry including its rotor/binary padding, protected Spin and genuinely free oldRIGHT multiply R once. Every native birth, CX, Boolean/quantum macro, sign and actual inverse is paid. Actual length and absolute heat differ from the old execution; no equality of their values is asserted.
+
+At fixed finite h,m,n freeze SOURCE and geometry words first. Choose l after their actual N_SOURCE/N_GEOM counts and the strict c-box; then choose sampler/threshold precisions, separate fair-bit redundancy and macro errors using the owned quantitative compiler. Its length control, not mere density, justifies M_QUERY Delta tending to zero. Check all debts in (720), (723), (725) DIVIDED BY the actual Gamma_h, and metric error (711). If zeta or other physical parameters change with the resource level, retain their true a_zeta and gain bounds; the fixed-context argument does not invent uniform moduli.
+
+The target C_m and therefore g_m are the old ones. At the owned primary the weak-source, Bernstein, actual-field displacement and decoder bounds control ||g_m||/Gamma_h; the limit still needs L_read||g_m||/Gamma_h tending to zero. The fixed-dimension readers give the owned polylog precision overhead at fixed h; selector/count logic may be polynomially large and is paid in M_QUERY. The existing slow cofinal envelope can be used only with these actual bounds. A small coin/geometry row alone is not joint stationarity.
+
+The matched U=V_A A*Q_hat A V_A* is an EXACT involution on all columns. On the declared INTERNAL base, 606 gives zero full Hodge heat first source for all temporal unitary rows, including independent SOURCE/QUERY/geometry legs. At the fixed default tensor heat the separate zero-source statement remains; that default is not identified with D01. A noninternal 501 placement retains 503 or a proved padding bound. All cochains/modes remain in the absolute price. No additional R or Info term is appended.
+
+The removed implementation gap is precise: the old SOURCE kernel can be realized with controlled local QUERY rows, including its previously uncovered read-once prefix, literal phase and independent inverse, while raw geometry rows can be suppressed without collapsing the full metric block. The live field/update map is still NOT supplied: changing SOURCE alone in a frozen geometry word leaves the metric constant. Original X_N/task/role admission, actual joint variation/refinement inclusion, independently admitted cut/scene and cross-bank/cross-coin directions and any additional selected valuation remain open. No exact finite joint root, physical GR closure, registry acceptance or lifecycle promotion is asserted. GR_closed=false.
+
+The narrow controls below check the NEW parity/phase/geometry identities and the finite Bernstein/role coefficient. They use the unchanged native G matrix and exact arithmetic; they do not emit the large reader/Boolean/metric words, replay an old full-word/heat/GR-root certificate or establish physical admission.
+
+
+### 6. Frozen changed-calculation code and observed output
+
+Run each saved Python block from the repository root. Both receipts below are the observed ordinary-Python outputs of the new narrow calculations. The native phase core reads only the pinned unchanged native matrix owner; the role check uses generic Bernstein coefficients and exact formal SOURCE monomials. The code does not materialize the large compiled controller or establish physical admission.
+
+#### Exact parity, independent coin, phase-middle and geometry controls
+
+Code 5460 bytes / SHA256 44e79f541dc3a1745f1ba2b81c0c7657e5d671ac7cc20810abf60882a2950288; observed receipt 2413 bytes / SHA256 ea42aa3243a13ca46534f23108ad100ac007455ce7da49667acd0f48a5e0fafd.
+
+```python
+"""New exact XOR/phase cold-kernel core, r=1,2,3; no old native replay."""
+from pathlib import Path
+import hashlib, importlib.util, json, sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+ROOT=Path.cwd()
+OWNER=ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+assert hashlib.sha256(OWNER.read_bytes()).hexdigest()==PIN
+spec=importlib.util.spec_from_file_location('phase_parity_owner',OWNER)
+N=importlib.util.module_from_spec(spec);sys.modules[spec.name]=N;spec.loader.exec_module(N)
+K=N.GOLDEN_FIELD
+def dm(A):return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(K)
+def same(A,B):return dm(A)==dm(B)
+def red(x):return K.to_sympy(K.from_sympy(S.expand(x)))
+def kron(*m):return S.kronecker_product(*m)
+G=S.Matrix(N.G_LOCAL);I=S.eye(2);Z=S.diag(1,-1);P1=S.diag(0,1)
+J=S.Matrix([[0,-1],[1,0]]);a,p=N.A,N.P
+beta=red(p**3);s=red(2*a*p)
+assert same(G.T*Z*G,beta*Z-s*S.Matrix([[0,1],[1,0]]))
+rows=[]
+for r in (1,2,3):
+    dim=2**(r+2)  # parity coins, independent F bit, output flag
+    rot=kron(*([G]*r+[I,I]))
+    truth=S.zeros(dim)
+    for col in range(dim):
+        bits=[(col>>(r+1-j))&1 for j in range(r+2)]
+        out=bits.copy();out[-1]^=(sum(bits[:r])%2)*bits[-2]
+        idx=sum(b<<(r+1-j) for j,b in enumerate(out))
+        truth[idx,col]=1
+    zout=kron(*([I]*(r+1)+[Z]))
+    Drot=dm(rot);Dtruth=dm(truth);Dz=dm(zout)
+    Q=Drot.transpose().matmul(Dtruth.transpose()).matmul(Dz).matmul(Dtruth).matmul(Drot).to_Matrix()
+    assert same(Q.T,Q) and same(dm(Q).matmul(dm(Q)).to_Matrix(),S.eye(dim))
+    assert red(S.trace(Q))==0
+    # Coins0 and output0, full independent F input: full operator C, not a channel.
+    inds=[0,2]
+    C=Q.extract(inds,inds)
+    pi=red((1-beta**r)/2)
+    assert same(C,I-2*pi*P1)
+    rest=kron(*([G.T*Z*G]*(r-1)+[P1,Z]))
+    q01=Q[:dim//2,dim//2:]
+    assert same(q01,-s*rest)
+    projector=kron(*([I]*(r-1)+[P1,I]))
+    assert same(dm(q01.T).matmul(dm(q01)).to_Matrix(),s*s*projector)
+    assert same(projector*projector,projector)
+    assert red(S.trace(projector)-2**r)==0
+    for coin in range(r):
+        jj=kron(*([I]*coin+[J]+[I]*(r-coin+1)))
+        # The forward encoder G and its generated inverse are independent rows.
+        plus=Drot.transpose().matmul(Dtruth.transpose()).matmul(Dz).matmul(Dtruth).matmul(dm(jj)).matmul(Drot).to_Matrix()
+        minus=-Drot.transpose().matmul(dm(jj)).matmul(Dtruth.transpose()).matmul(Dz).matmul(Dtruth).matmul(Drot).to_Matrix()
+        assert same(plus.extract(inds,inds),-s*beta**(r-1)*P1)
+        assert same(minus.extract(inds,inds),-s*beta**(r-1)*P1)
+        assert same((plus+minus).extract(inds,inds),-2*s*beta**(r-1)*P1)
+    # Partial averaging is an OPERATOR identity, with F still unknown.
+    keep=[0,2,2**(r+1),2**(r+1)+2]
+    Qpartial=Q.extract(keep,keep)
+    assert same(Qpartial[:2,2:],-s*beta**(r-1)*P1)
+    vf=S.Matrix([a,p]);IF=kron(I,vf)
+    B=dm(IF.T).matmul(dm(Qpartial)).matmul(dm(IF)).to_Matrix()
+    tt=p*p
+    assert same(B,(1-tt)*I+tt*beta**(r-1)*(G.T*Z*G))
+    W=G**2;VG=kron(S.diag(1,0),I)+kron(P1,W)
+    BG=kron(B,I);UU=dm(VG).matmul(dm(BG)).matmul(dm(VG.T)).to_Matrix()
+    kk=kron(J,I);koff=-s*beta**(r-1)*tt
+    left=dm(kk).matmul(dm(UU)).to_Matrix()[:2,:2]
+    right=dm(VG).matmul(dm(BG)).matmul(dm(kk)).matmul(dm(VG.T)).to_Matrix()[:2,:2]
+    assert same(left,-koff*W) and same(right,koff*I)
+    assert red(S.trace(left)+koff*S.trace(W))==0
+    assert red(S.trace(right)-2*koff)==0
+    rows.append({'parity_coins':r,'full_core_dimension':dim,'cold_operator':'I_F-2*pi_r*P_F1',
+       'pi_r':str(pi),'full_q01_norm':'2*a*p',
+       'q01_squared_projector_rank':2**r,
+       'one_forward_or_reverse_coin_cold_derivative':'-2*a*p*(p^3)^(r-1)*P_F1',
+       'matched_coin_cold_derivative':'-4*a*p*(p^3)^(r-1)*P_F1',
+       'geometry_fault_partial_operator':'Q01 averaged over other coins =-2*a*p*(p^3)^(r-1)*P_F1',
+       'geometry_left_reverse_trace_controls':'nonzero, with operator amplitude at most2*a*p*(p^3)^(r-1)*t; t=p^2'})
+
+# Exact phase middle with a genuine 8x2 labelled isometry, unknown WORK2.
+# M0=4I/5 and M1=3G/5 give two different nonzero conditional WORK maps.
+Jiso=S.zeros(8,2)
+Jiso[0:2,:]=S.Rational(4,5)*I
+Jiso[6:8,:]=S.Rational(3,5)*G
+L=kron(Z,I,I);Zmid=kron(I,Z,I)
+X=S.Matrix([[0,1],[1,0]])
+Ksk=kron(I,kron(J,X)+kron(I,J))
+assert same(Jiso.T*Jiso,I)
+assert same(Zmid*Jiso,L*Jiso)
+assert same(Ksk.T,-Ksk) and same(Ksk*L,L*Ksk)
+dC=dm(Jiso.T).matmul(dm(Ksk)).matmul(dm(Zmid)).matmul(dm(Jiso)).to_Matrix()
+Cmid=dm(Jiso.T).matmul(dm(Zmid)).matmul(dm(Jiso)).to_Matrix()
+assert same(Cmid,S.Rational(7,25)*I)
+assert same(dC,S.Rational(7,25)*J) and same(dC.T,-dC)
+assert red(S.trace(Cmid*dC))==0
+result={'status':'PASS','native_owner_sha256':PIN,
+ 'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'cases':rows,
+ 'scope':'exact r=1,2,3 phase operators of dimensions8,16,32; idealBoolean truth, nativeG matrices; not emitted truth compiler/GR',
+ 'all_scalar_cold_target_identity':'choose t_z=(1-c_z)/(2*pi_r); I-2*pi_r*t_z=c_z',
+ 'rare_event_full_norm_distinction':True,
+ 'middle_label_skew_identity_checked':'explicit8x2isometry, M0=4I/5 M1=3G/5; nonzero skewdeltaC=7J/25, firstpricezero',
+ 'physical_continuous_coin_or_role_admission':False,'GR_closed':False}
+Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))
+```
+
+```json
+{
+  "status": "PASS",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "source_sha256": "44e79f541dc3a1745f1ba2b81c0c7657e5d671ac7cc20810abf60882a2950288",
+  "cases": [
+    {
+      "parity_coins": 1,
+      "full_core_dimension": 8,
+      "cold_operator": "I_F-2*pi_r*P_F1",
+      "pi_r": "3/2 - sqrt(5)/2",
+      "full_q01_norm": "2*a*p",
+      "q01_squared_projector_rank": 2,
+      "one_forward_or_reverse_coin_cold_derivative": "-2*a*p*(p^3)^(r-1)*P_F1",
+      "matched_coin_cold_derivative": "-4*a*p*(p^3)^(r-1)*P_F1",
+      "geometry_fault_partial_operator": "Q01 averaged over other coins =-2*a*p*(p^3)^(r-1)*P_F1",
+      "geometry_left_reverse_trace_controls": "nonzero, with operator amplitude at most2*a*p*(p^3)^(r-1)*t; t=p^2"
+    },
+    {
+      "parity_coins": 2,
+      "full_core_dimension": 16,
+      "cold_operator": "I_F-2*pi_r*P_F1",
+      "pi_r": "-4 + 2*sqrt(5)",
+      "full_q01_norm": "2*a*p",
+      "q01_squared_projector_rank": 4,
+      "one_forward_or_reverse_coin_cold_derivative": "-2*a*p*(p^3)^(r-1)*P_F1",
+      "matched_coin_cold_derivative": "-4*a*p*(p^3)^(r-1)*P_F1",
+      "geometry_fault_partial_operator": "Q01 averaged over other coins =-2*a*p*(p^3)^(r-1)*P_F1",
+      "geometry_left_reverse_trace_controls": "nonzero, with operator amplitude at most2*a*p*(p^3)^(r-1)*t; t=p^2"
+    },
+    {
+      "parity_coins": 3,
+      "full_core_dimension": 32,
+      "cold_operator": "I_F-2*pi_r*P_F1",
+      "pi_r": "39/2 - 17*sqrt(5)/2",
+      "full_q01_norm": "2*a*p",
+      "q01_squared_projector_rank": 8,
+      "one_forward_or_reverse_coin_cold_derivative": "-2*a*p*(p^3)^(r-1)*P_F1",
+      "matched_coin_cold_derivative": "-4*a*p*(p^3)^(r-1)*P_F1",
+      "geometry_fault_partial_operator": "Q01 averaged over other coins =-2*a*p*(p^3)^(r-1)*P_F1",
+      "geometry_left_reverse_trace_controls": "nonzero, with operator amplitude at most2*a*p*(p^3)^(r-1)*t; t=p^2"
+    }
+  ],
+  "scope": "exact r=1,2,3 phase operators of dimensions8,16,32; idealBoolean truth, nativeG matrices; not emitted truth compiler/GR",
+  "all_scalar_cold_target_identity": "choose t_z=(1-c_z)/(2*pi_r); I-2*pi_r*t_z=c_z",
+  "rare_event_full_norm_distinction": true,
+  "middle_label_skew_identity_checked": "explicit8x2isometry, M0=4I/5 M1=3G/5; nonzero skewdeltaC=7J/25, firstpricezero",
+  "physical_continuous_coin_or_role_admission": false,
+  "GR_closed": false
+}
+```
+
+#### Exact read-once role, conditional and full-kernel controls
+
+Code 3985 bytes / SHA256 df1417ba4c0ba66e88141e084194bfd7579298c59dd263eff90092789ca79ffd; observed receipt 2198 bytes / SHA256 58e9eaf9fe2bd0efeb1c1f6cf70ed11e6b148f3f271a2af52bb69d2cf1b8e028.
+
+```python
+"""Fresh exact d=2,m=1/2 role/conditional algebra; no native or GR replay."""
+from collections import Counter,defaultdict
+from fractions import Fraction
+from itertools import permutations,product
+from pathlib import Path
+from math import factorial
+import hashlib,json
+import sympy as S
+
+x,y,mu,nu=S.symbols('x y mu nu',real=True)
+rows=[]
+for m in (1,2):
+    cs={(i,j):S.Symbol('c_%d_%d'%(i,j)) for i in range(m+1) for j in range(m+1)}
+    def binom(k,n,z):return S.binomial(n,k)*z**k*(1-z)**(n-k)
+    C=sum(cs[i,j]*binom(i,m,x)*binom(j,m,y) for i,j in cs)
+    Cmu=C.subs({x:(1+mu)/2,y:(1+nu)/2})
+    for a in (0,1):
+        z=x if a==0 else y
+        for h in (0,1):
+            cond=sum(cs[i+h,j]*binom(i,m-1,x)*binom(j,m,y)
+                     for i in range(m) for j in range(m+1)) if a==0 else sum(
+                     cs[i,j+h]*binom(i,m,x)*binom(j,m-1,y)
+                     for i in range(m+1) for j in range(m))
+            assert S.expand(cond-C-(h-z)*S.diff(C,z)/m)==0
+            signed=cond.subs({x:(1+mu)/2,y:(1+nu)/2})
+            mean=mu if a==0 else nu
+            assert S.expand(signed-Cmu-((2*h-1)-mean)*S.diff(Cmu,mean)/m)==0
+    for n in (2*m,2*m+1):
+        injections=list(permutations(range(n),2*m))
+        role_count=Counter()
+        pi_count=Counter()
+        for inj in injections:
+            roles=[-1]*n
+            for slot,i in enumerate(inj):
+                assert roles[i]==-1
+                roles[i]=0 if slot<m else 1
+            assert roles.count(0)==roles.count(1)==m
+            role_count[tuple(roles)]+=1
+            for i,a in enumerate(roles):
+                if a>=0:pi_count[i,a]+=1
+        assert all(v==factorial(m)**2 for v in role_count.values())
+        assert all(Fraction(pi_count[i,a],len(injections))==Fraction(m,n)
+                   for i in range(n) for a in (0,1))
+        # Complete formal SOURCE operator alphabet: no monomial reads two
+        # noncommuting features from one bank. Different banks are ordered.
+        old=defaultdict(Fraction)
+        for inj in injections:
+            for signs in product((0,1),repeat=2*m):
+                node=(sum(signs[:m]),sum(signs[m:]))
+                letters=tuple(sorted((i,0 if slot<m else 1,signs[slot])
+                                     for slot,i in enumerate(inj)))
+                assert len({i for i,a,h in letters})==2*m
+                old[(letters,node)]+=Fraction(1,len(injections))
+        new=defaultdict(Fraction)
+        for roles in role_count:
+            active=[i for i,a in enumerate(roles) if a>=0]
+            for signs in product((0,1),repeat=2*m):
+                letters=tuple((i,roles[i],h) for i,h in zip(active,signs))
+                node=tuple(sum(h for i,a,h in letters if a==b) for b in (0,1))
+                new[(letters,node)]+=Fraction(1,len(role_count))
+        assert old==new
+        # Multiplying the conditional Bernstein coefficient by a role's
+        # exact probability gives dC/n; same for any frozen logdet covector.
+        assert Fraction(m,n)*Fraction(1,m)==Fraction(1,n)
+        rows.append({'features':2,'degree_per_feature':m,'banks':n,
+          'ordered_injections':len(injections),'onehot_role_assignments':len(role_count),
+          'ordered_multiplicity_per_role':factorial(m)**2,
+          'probability_each_role':str(Fraction(m,n)),
+          'conditional_coefficient':'D_a C/m in SIGN-probability coords; D_mu C/m with signed SIGN-mu',
+          'averaged_frozen_price_coefficient':'g_a/n',
+          'full_formal_operator_monomials':len(old),
+          'same_complete_source_kernel':True})
+result={'status':'PASS','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'scope':'generic symbolic Bernstein coefficients and exact onehot/injection combinatorics only; no native reader compiler, physical admission, or GR root',
+ 'SOURCE_packet_split':False,'cases':rows}
+Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "df1417ba4c0ba66e88141e084194bfd7579298c59dd263eff90092789ca79ffd",
+  "scope": "generic symbolic Bernstein coefficients and exact onehot/injection combinatorics only; no native reader compiler, physical admission, or GR root",
+  "SOURCE_packet_split": false,
+  "cases": [
+    {
+      "features": 2,
+      "degree_per_feature": 1,
+      "banks": 2,
+      "ordered_injections": 2,
+      "onehot_role_assignments": 2,
+      "ordered_multiplicity_per_role": 1,
+      "probability_each_role": "1/2",
+      "conditional_coefficient": "D_a C/m in SIGN-probability coords; D_mu C/m with signed SIGN-mu",
+      "averaged_frozen_price_coefficient": "g_a/n",
+      "full_formal_operator_monomials": 8,
+      "same_complete_source_kernel": true
+    },
+    {
+      "features": 2,
+      "degree_per_feature": 1,
+      "banks": 3,
+      "ordered_injections": 6,
+      "onehot_role_assignments": 6,
+      "ordered_multiplicity_per_role": 1,
+      "probability_each_role": "1/3",
+      "conditional_coefficient": "D_a C/m in SIGN-probability coords; D_mu C/m with signed SIGN-mu",
+      "averaged_frozen_price_coefficient": "g_a/n",
+      "full_formal_operator_monomials": 24,
+      "same_complete_source_kernel": true
+    },
+    {
+      "features": 2,
+      "degree_per_feature": 2,
+      "banks": 4,
+      "ordered_injections": 24,
+      "onehot_role_assignments": 6,
+      "ordered_multiplicity_per_role": 4,
+      "probability_each_role": "1/2",
+      "conditional_coefficient": "D_a C/m in SIGN-probability coords; D_mu C/m with signed SIGN-mu",
+      "averaged_frozen_price_coefficient": "g_a/n",
+      "full_formal_operator_monomials": 96,
+      "same_complete_source_kernel": true
+    },
+    {
+      "features": 2,
+      "degree_per_feature": 2,
+      "banks": 5,
+      "ordered_injections": 120,
+      "onehot_role_assignments": 30,
+      "ordered_multiplicity_per_role": 4,
+      "probability_each_role": "2/5",
+      "conditional_coefficient": "D_a C/m in SIGN-probability coords; D_mu C/m with signed SIGN-mu",
+      "averaged_frozen_price_coefficient": "g_a/n",
+      "full_formal_operator_monomials": 480,
+      "same_complete_source_kernel": true
+    }
+  ]
+}
+```
+
+
 ## 8. Reproduction
 
 Run from this directory:

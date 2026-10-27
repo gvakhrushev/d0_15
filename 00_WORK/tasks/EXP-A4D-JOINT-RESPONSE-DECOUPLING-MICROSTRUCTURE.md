@@ -15173,3 +15173,136 @@ owned changed paths. Whitespace validation passes. These are structural and
 provenance checks; no old mathematical or Lean suite was replayed. This note
 does not change a scientific input. Normal publication and immutable remote
 blob verification follow in the same existing Draft PR.
+
+### 27 October — structure the QUERY without losing the actual metric block
+
+SAME #334 / constitutive/native-programme-v1; native realization and
+composition, input c4b46591. The named missing application is the local
+QUERY-stage source in 7ch/7ci: an arbitrary reflection compiler supplies
+neither 7at's coin/logic row bounds nor a stationary implementation. The
+existing full heat source is zero by 606 and is not recomputed. Existing
+7ay secants do not supply physical variation admission; no new secant
+construction or claim of physical X_N selection is planned.
+
+Changed mathematical input: realize the SAME scalar cold kernel c_z by
+a Bernoulli phase reflection with e_z = (1-c_z)/2. Include the dedicated
+geometry exit q in an r-coin Golden XOR, with actual odd probability
+pi_r = (1-p^(3r))/2. Independent threshold coins evaluate e_z/pi_r.
+The full exit off-diagonal norm can remain 2ap even while every independent
+coin row loses the true p^(3(r-1)) bias. Source gain and metric calibration
+must be computed separately, retaining actual compilation errors, all work
+columns and paid lengths. This uses the existing evaluator and local-source
+owners rather than proposing another action or query observable.
+
+The decisive new check is the exact finite parity/flag core and its cold
+kernel, full off-diagonal norm and independent coin derivatives. The
+already checked 158-stage word also provides a concrete adverse QUERY
+row; a matrix calibration diagnostic is not a new primitive. Assistants
+work only in private scratch. Only the two owned repo paths may change.
+Original task/role/variation admission and unbounded whole-query normals
+remain explicit; no task, claim, registry acceptance or new owner is added.
+
+27 October result, primary 7cj / equations 715--725. The new phase/parity
+controller preserves the full original read-once SOURCE kernel, including
+on correlated inputs, with explicit cold implementation errors. It does
+not switch to the different complete-SIGN SOURCE packet used by 7as. The
+actual original n banks, Phi, independent SOURCE half-rows, covariance and
+full-bank scope remain. Allocated private SIGN/role/coin/label work is QUERY
+blank work and is included in the actual clock and whole heat.
+
+The missing read-once prefix map is supplied by one-hot roles: choose a
+valid distinct injection first, then one controlled extractor for each
+(bank, feature), with at most one active feature on each bank. Noncommuting
+CAR observables are never jointly read. The address guards reserve future
+SIGN targets and exclude other banks/roles/SIGNs from a quantum-reader
+macro. Classical selector/role rows use the SOURCE-valued diagonal future
+effect. True/false reader faults use the actual Bernstein one-occurrence
+coefficient and role probability m/n, giving the g/n bank-cone bound.
+This proof replaces the previously unproved prefix transport, rather than
+assuming that the complete-SIGN bounds applied to the old bank.
+
+Exit XOR redundancy suppresses every supported coin row and the contracted
+independent raw geometry rows while the FULL q off-diagonal metric block
+stays 2ap before compilation. Actual metric calibration uses the actual
+b_hat, bounded below after its full-new-phase compiler error. Cold
+epsilon_K and full epsilon_phase are different interfaces; no full-unitary
+closeness to the old node dilation is claimed. Independent QUERY inverse
+rows follow by the adjoint macro map, with their actual expanded counts.
+The literal eight-stage sign/routing source is bounded by a separate
+label-skew lemma. It is not silently frozen by endpoint involutivity.
+
+The full SOURCE bound is 720, QUERY bound 723 and geometry bound 725, all
+with actual rank/gain, norm and length factors. The g_m reader term stays
+present and needs its genuine primary consistency/length limit. Exact
+matched-reflection involutivity gives the typed INTERNAL whole-Hodge first
+heat source from 606. Default tensor heat and noninternal placements retain
+their prior scopes. No extra Info/R or field-value acceptance is introduced.
+
+Two fresh exact calculations were executed once after their final relevant
+code edits. The parity/phase core checks complete dimensions 8, 16 and 32,
+every independent forward/reverse coin row, partial operator contraction,
+both geometry trace controls and an explicit labelled 8-by-2 isometry.
+The separate role check uses generic Bernstein coefficients at degrees 1
+and 2, and 2/3/4/5 banks. It verifies conditional gradients in probability
+and SIGN-mean coordinates, one-hot role multiplicity, m/n and equality of
+the FULL formal SOURCE-operator monomial dictionaries. These are new narrow
+algebraic controls, not an emitted native Boolean/reader or GR instance.
+
+Phase code 5460 bytes / SHA256
+44e79f541dc3a1745f1ba2b81c0c7657e5d671ac7cc20810abf60882a2950288;
+observed receipt 2413 / SHA256
+ea42aa3243a13ca46534f23108ad100ac007455ce7da49667acd0f48a5e0fafd.
+Role code 3985 / SHA256
+df1417ba4c0ba66e88141e084194bfd7579298c59dd263eff90092789ca79ffd;
+observed receipt 2198 / SHA256
+58e9eaf9fe2bd0efeb1c1f6cf70ed11e6b148f3f271a2af52bb69d2cf1b8e028.
+Both exact code/output pairs are embedded in 7cj. Native owner is unchanged
+at SHA256 222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+No old full-word, heat, geometric root, Slater, full128/CAR or Lean suite
+was replayed. Expected evidence was not regenerated to satisfy a check.
+
+Final proof 16455 / SHA256
+c6210d60dbb0e8bd03f522baaf303208d406a1156a8532e8bfbe7c971e9c465b;
+whole section 31558 / SHA256
+c899dd84470260f03f1dd7e5d3c65948202eb03c68b477fcf9b1d912c74fa707.
+Private alternative complete-SIGN/SOURCE-copy notes were not integrated.
+The independent source reviews and final affected guards follow.
+
+Incoming c4b465910c9d3fc0a71f17f0434953350f5e5319 is preserved in full:
+primary 2313873 / SHA256
+5443a97341ad39376e65319d239a7343635c96f8be2b1f49e3da136322642bc6;
+brief 990936 / SHA256
+0853d62349bab8bf13ed28c6a96e704e44bfe2163f4dbe205e212a986b70376b.
+Removing 7cj restores the whole incoming primary. The full incoming brief
+is an exact prefix. Original 7ci, growing-history/default-source and every
+other incoming result retain their stated scope.
+
+Parent substitution is supporting: a larger LOCAL independent
+SOURCE/QUERY/geometry comparison graph now has explicit source budgets
+without sacrificing its intrinsic metric block or original SOURCE carrier.
+This is not physical X_N/task/role admission, a live field update/refinement
+map, all cut/scene/cross-bank/cross-coin stationarity or an exact finite
+joint root. Those applications and any additional valuation remain open.
+GR_closed=false; no result/task/claim, acceptance edge, lifecycle promotion,
+retirement or merge is added. The assembly checkpoint template is consumed
+only at this supporting scope.
+
+Final full SOURCE-ONLY mathematical ACCEPT: native_source_application and
+stationary_root_transfer each read the complete unified proof and both
+executed code/receipt pairs, including the assembled fences, and accepted
+the exact proof/section pins above. Their review did not execute a suite,
+add a registry acceptance or claim physical admission. Both specifically
+checked the original SOURCE carrier, reserved future SIGN work, active and
+false reader cones, independent inverse supports, price/error units and
+full-metric versus contracted-source norms.
+
+Affected final integration PASS on these frozen scientific inputs: work,
+agent protocol, assembly and repository guards; 889 claims, 31 assumptions,
+58 aliases, 183 formal_support, 918 Lean closure, zero warnings. Assembly
+remains 54 active / 98 results / 5 discharged / 22 obligations, with
+scientific_promotion=false. Exact preservation checks cover complete
+incoming primary/brief, proof/section pins, all four code/output fences,
+AST/JSON and unchanged native owner. Only the two owned paths changed and
+whitespace validation passes. This validation note changes no executable
+or scientific input; no old mathematical replay is added. Normal push and
+immutable remote blob verification follow in the same existing Draft.
