@@ -9,6 +9,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import hashlib
 import json
+import os
 from pathlib import Path, PurePosixPath
 import re
 import subprocess
@@ -84,6 +85,51 @@ def read(root: Path, relative: str) -> bytes:
     return safe_path(root, relative).read_bytes()
 
 
+def clean_git_environment() -> dict[str, str]:
+    """Do not inherit another checkout's repository, index or object paths."""
+    env = os.environ.copy()
+    for name in ("GIT_DIR", "GIT_WORK_TREE", "GIT_COMMON_DIR", "GIT_INDEX_FILE",
+                 "GIT_OBJECT_DIRECTORY", "GIT_ALTERNATE_OBJECT_DIRECTORIES", "GIT_PREFIX",
+                 "GIT_CEILING_DIRECTORIES"):
+        env.pop(name, None)
+    return env
+
+
+def bound_git(root: Path, *args: str) -> subprocess.CompletedProcess[bytes]:
+    root = root.resolve()
+    return subprocess.run(["git", "-C", str(root), f"--work-tree={root}", *args],
+                          env=clean_git_environment(), capture_output=True, check=False)
+
+
+def linked_worktree_git_dir(root: Path) -> Path:
+    """Verify the worktree gitfile and its reciprocal Git administrative link."""
+    root = root.resolve()
+    gitfile = root / ".git"
+    if gitfile.is_symlink() or not gitfile.is_file():
+        raise ValueError("Historical input requires a linked worktree")
+    gitfile_text = gitfile.read_text(encoding="utf-8").strip()
+    if not gitfile_text.startswith("gitdir: ") or "\n" in gitfile_text:
+        raise ValueError("Invalid linked worktree gitfile")
+    declared = Path(gitfile_text.removeprefix("gitdir: "))
+    if not declared.is_absolute():
+        declared = root / declared
+    actual = bound_git(root, "rev-parse", "--absolute-git-dir")
+    if actual.returncode:
+        raise ValueError("Cannot resolve linked worktree Git directory")
+    git_dir = Path(os.fsdecode(actual.stdout).strip()).resolve()
+    if declared.resolve() != git_dir or not git_dir.is_dir():
+        raise ValueError("Linked worktree Git directory mismatch")
+    backlink = git_dir / "gitdir"
+    if backlink.is_symlink() or not backlink.is_file():
+        raise ValueError("Linked worktree Git backlink is missing")
+    backlink_path = Path(backlink.read_text(encoding="utf-8").strip())
+    if not backlink_path.is_absolute():
+        backlink_path = git_dir / backlink_path
+    if backlink_path.resolve() != gitfile.resolve():
+        raise ValueError("Linked worktree Git backlink mismatch")
+    return git_dir
+
+
 def verify_isolated_worktree(root: Path, isolation_parent: Path | None) -> str:
     if isolation_parent is None:
         raise ValueError("Historical pairing input requires an isolated runner worktree")
@@ -93,13 +139,11 @@ def verify_isolated_worktree(root: Path, isolation_parent: Path | None) -> str:
     if (parent.parent != temporary_root or not parent.name.startswith("d0-research-cert-")
             or root != parent / "tree" or not root.is_dir()):
         raise ValueError("Historical pairing input requires an isolated runner worktree")
-    gitfile = root / ".git"
-    if gitfile.is_symlink() or not gitfile.is_file():
-        raise ValueError("Historical pairing input requires a linked worktree")
+    linked_worktree_git_dir(root)
     def git(*args: str) -> subprocess.CompletedProcess[bytes]:
-        return subprocess.run(["git", "-C", str(root), *args], capture_output=True, check=False)
+        return bound_git(root, *args)
     top = git("rev-parse", "--show-toplevel")
-    if top.returncode or Path(top.stdout.decode("utf-8").strip()).resolve() != root:
+    if top.returncode or Path(os.fsdecode(top.stdout).strip()).resolve() != root:
         raise ValueError("Historical pairing input worktree root mismatch")
     branch = git("symbolic-ref", "-q", "HEAD")
     if branch.returncode != 1:
@@ -133,18 +177,15 @@ def apply(root: Path, entrypoint: str, *, isolation_parent: Path | None = None) 
     if entrypoint != ENTRYPOINT:
         return None
     root = root.resolve()
+    head = verify_isolated_worktree(root, isolation_parent)
     # A previously published snapshot predating this binding keeps its own
     # ordinary replay. Once this helper is tracked, the manifest is mandatory.
     manifest_path = root / MANIFEST
     if not manifest_path.exists():
-        tracked = subprocess.run(
-            ["git", "-C", str(root), "cat-file", "-e", "HEAD:tools/native_pairing_refinement_inputs.py"],
-            capture_output=True, check=False,
-        )
+        tracked = bound_git(root, "cat-file", "-e", "HEAD:tools/native_pairing_refinement_inputs.py")
         if tracked.returncode == 0:
             raise ValueError("Historical pairing manifest is missing")
         return None
-    head = verify_isolated_worktree(root, isolation_parent)
     manifest_bytes = read(root, MANIFEST)
     if sha256(manifest_bytes) != MANIFEST_SHA256:
         raise ValueError("Historical pairing manifest hash mismatch")

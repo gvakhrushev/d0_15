@@ -49,7 +49,14 @@ def stop_process_group(process: subprocess.Popen) -> None:
 
 
 def git(repo: Path, *args: str) -> bytes:
-    return subprocess.check_output(["git", "-C", str(repo), *args], stderr=subprocess.PIPE)
+    repo = Path(repo).resolve()
+    command = ["git", "-C", str(repo)]
+    # A common core.worktree can point at another checkout. Bind every Git
+    # operation to the requested worktree, while preserving bare/init callers.
+    if (repo / ".git").exists():
+        command.append(f"--work-tree={repo}")
+    return subprocess.check_output(command + list(args), stderr=subprocess.PIPE,
+                                   env=native_pairing_refinement_inputs.clean_git_environment())
 
 
 def certificate_timeout(source: str) -> int:
@@ -95,6 +102,7 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
             sandbox = Path(temp).resolve() / "tree"
             try:
                 git(repo, "worktree", "add", "--detach", str(sandbox), commit)
+                sandbox_git_dir = native_pairing_refinement_inputs.linked_worktree_git_dir(sandbox)
                 source = sandbox / cert
                 if not source.resolve().is_relative_to(sandbox):
                     raise ValueError("Certificate must resolve inside its isolated worktree")
@@ -113,7 +121,9 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                 with (logs / "stdout.log").open("wb") as stdout, (logs / "stderr.log").open("wb") as stderr:
                     process = subprocess.Popen(
                         [sys.executable, str(source)], cwd=sandbox,
-                        env={**os.environ, "PYTHONHASHSEED": "0"},
+                        env={**native_pairing_refinement_inputs.clean_git_environment(),
+                             "GIT_DIR": str(sandbox_git_dir), "GIT_WORK_TREE": str(sandbox),
+                             "PYTHONHASHSEED": "0"},
                         stdout=stdout, stderr=stderr, start_new_session=True,
                     )
                     try:

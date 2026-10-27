@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "fdebdc21a54eafe4fa877e51fdc684e657b4dd03",
-  "worktree_dirty": true,
-  "claim_registry_sha256": "e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5",
-  "lean_source_digest": "e156d37e8100174bed48b1db6fdc5f0b5dc97f411700b0c312cc3576ffd32c9c",
-  "collector_sha256": "dd33d4ab45852eb1d2aef0311f00db6249832d41f9957a50e29b5e3e51f953a8",
+  "snapshot_commit": "06892e82b35d32aa4905c8cd1f52415afbe43214",
+  "worktree_dirty": false,
+  "claim_registry_sha256": "965a5b3d53523d9516551484369462d2945c6a80d0507d89369ea8a735d4701f",
+  "lean_source_digest": "40b8842e1a891f8f8266f979db48f5e7dff205e7a69b2340f1090f6a7d0b9072",
+  "collector_sha256": "fe534f7af73ba4fc043a58e9efbe3eefbd84a6e34d322780bfb5f8ac01e9d98f",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": true,
@@ -1001,67 +1001,73 @@
       },
       {
         "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
-        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
         "theorem_atom": "topHodgeHarmonicMultiplicity_formula",
         "candidate_names": [
           "D0.Synthesis.TopHodgeSpectralSceneReconstruction.topHodgeHarmonicMultiplicity_formula",
+          "D0.Synthesis.TopHodgeInverseSpectralRigidity.topHodgeHarmonicMultiplicity_formula",
           "D0.Synthesis.topHodgeHarmonicMultiplicity_formula",
           "D0.topHodgeHarmonicMultiplicity_formula"
         ]
       },
       {
         "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
-        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
         "theorem_atom": "topHodgeSecondMoment_formula",
         "candidate_names": [
           "D0.Synthesis.TopHodgeSpectralSceneReconstruction.topHodgeSecondMoment_formula",
+          "D0.Synthesis.TopHodgeInverseSpectralRigidity.topHodgeSecondMoment_formula",
           "D0.Synthesis.topHodgeSecondMoment_formula",
           "D0.topHodgeSecondMoment_formula"
         ]
       },
       {
         "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
-        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
         "theorem_atom": "topHodge_spectral_data_recovers_VET",
         "candidate_names": [
           "D0.Synthesis.TopHodgeSpectralSceneReconstruction.topHodge_spectral_data_recovers_VET",
+          "D0.Synthesis.TopHodgeInverseSpectralRigidity.topHodge_spectral_data_recovers_VET",
           "D0.Synthesis.topHodge_spectral_data_recovers_VET",
           "D0.topHodge_spectral_data_recovers_VET"
         ]
       },
       {
         "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
-        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
         "theorem_atom": "reduced_scene_six_permutations",
         "candidate_names": [
           "D0.Synthesis.TopHodgeSpectralSceneReconstruction.reduced_scene_six_permutations",
+          "D0.Synthesis.TopHodgeInverseSpectralRigidity.reduced_scene_six_permutations",
           "D0.Synthesis.reduced_scene_six_permutations",
           "D0.reduced_scene_six_permutations"
         ]
       },
       {
         "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
-        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
         "theorem_atom": "reconstruct_scene_unordered_from_topHodge_spectral_data",
         "candidate_names": [
           "D0.Synthesis.TopHodgeSpectralSceneReconstruction.reconstruct_scene_unordered_from_topHodge_spectral_data",
+          "D0.Synthesis.TopHodgeInverseSpectralRigidity.reconstruct_scene_unordered_from_topHodge_spectral_data",
           "D0.Synthesis.reconstruct_scene_unordered_from_topHodge_spectral_data",
           "D0.reconstruct_scene_unordered_from_topHodge_spectral_data"
         ]
       },
       {
         "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
-        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
         "theorem_atom": "harmonic_multiplicity_is_load_bearing",
         "candidate_names": [
           "D0.Synthesis.TopHodgeSpectralSceneReconstruction.harmonic_multiplicity_is_load_bearing",
+          "D0.Synthesis.TopHodgeInverseSpectralRigidity.harmonic_multiplicity_is_load_bearing",
           "D0.Synthesis.harmonic_multiplicity_is_load_bearing",
           "D0.harmonic_multiplicity_is_load_bearing"
         ]
       },
       {
         "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
-        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
         "theorem_atom": "D0.Synthesis.TopHodgeInverseSpectralRigidity.scene_topHodge_inverse_spectral_rigidity_application",
         "candidate_names": [
           "D0.Synthesis.TopHodgeInverseSpectralRigidity.scene_topHodge_inverse_spectral_rigidity_application"
@@ -1962,43 +1968,19 @@
       },
       {
         "claim_id": "D0-HST-ARCHIVE-001",
-        "module_locator": "D0.Probability.HSTExternalInterface",
-        "theorem_atom": "hst_admissible_from_certificates",
+        "module_locator": "D0.Probability.FiniteArchiveHSTInput",
+        "theorem_atom": "archive_stage_finite_hst_source_facts",
         "candidate_names": [
-          "D0.Probability.HSTExternalInterface.hst_admissible_from_certificates",
-          "D0.Probability.hst_admissible_from_certificates",
-          "D0.hst_admissible_from_certificates"
-        ]
-      },
-      {
-        "claim_id": "D0-HST-ARCHIVE-001",
-        "module_locator": "D0.Probability.HSTExternalInterface",
-        "theorem_atom": "entropy_kernel_exists_if_HST",
-        "candidate_names": [
-          "D0.Probability.HSTExternalInterface.entropy_kernel_exists_if_HST",
-          "D0.Probability.entropy_kernel_exists_if_HST",
-          "D0.entropy_kernel_exists_if_HST"
+          "D0.Probability.FiniteArchiveHSTInput.archive_stage_finite_hst_source_facts",
+          "D0.Probability.archive_stage_finite_hst_source_facts",
+          "D0.archive_stage_finite_hst_source_facts"
         ]
       },
       {
         "claim_id": "D0-ARCHIVE-ENTROPY-001",
-        "module_locator": "D0.Probability.EntropyCouplingKernel",
-        "theorem_atom": "archive_entropy_kernel_exists_if_HST",
-        "candidate_names": [
-          "D0.Probability.EntropyCouplingKernel.archive_entropy_kernel_exists_if_HST",
-          "D0.Probability.archive_entropy_kernel_exists_if_HST",
-          "D0.archive_entropy_kernel_exists_if_HST"
-        ]
-      },
-      {
-        "claim_id": "D0-ARCHIVE-ENTROPY-001",
-        "module_locator": "D0.Probability.EntropyCouplingKernel",
-        "theorem_atom": "archive_forgetting_channel_unique",
-        "candidate_names": [
-          "D0.Probability.EntropyCouplingKernel.archive_forgetting_channel_unique",
-          "D0.Probability.archive_forgetting_channel_unique",
-          "D0.archive_forgetting_channel_unique"
-        ]
+        "module_locator": "",
+        "theorem_atom": null,
+        "candidate_names": []
       },
       {
         "claim_id": "D0-DM-CLASSICALITY-001",
@@ -2012,13 +1994,9 @@
       },
       {
         "claim_id": "D0-ARCHIVE-GAUSSIAN-CHANNEL-001",
-        "module_locator": "D0.Probability.ArchiveClassicalGaussianChannel",
-        "theorem_atom": "archive_macro_channel_classical_gaussian",
-        "candidate_names": [
-          "D0.Probability.ArchiveClassicalGaussianChannel.archive_macro_channel_classical_gaussian",
-          "D0.Probability.archive_macro_channel_classical_gaussian",
-          "D0.archive_macro_channel_classical_gaussian"
-        ]
+        "module_locator": "",
+        "theorem_atom": null,
+        "candidate_names": []
       },
       {
         "claim_id": "D0-GRAV-QNM-001",
@@ -2462,21 +2440,27 @@
       },
       {
         "claim_id": "D0-ARCHIVE-SCALAR-REDUCTION-001",
-        "module_locator": "D0.Active.ScalarPoissonReduction",
-        "theorem_atom": "scalar_stationarity_implies_archive_poisson",
+        "module_locator": "D0.Interface.ScalarPoissonReduction",
+        "theorem_atom": "D0.scalar_stationarity_implies_archive_poisson",
         "candidate_names": [
-          "D0.Active.ScalarPoissonReduction.scalar_stationarity_implies_archive_poisson",
-          "D0.Active.scalar_stationarity_implies_archive_poisson",
           "D0.scalar_stationarity_implies_archive_poisson"
         ]
       },
       {
+        "claim_id": "D0-ARCHIVE-SCALAR-REDUCTION-001",
+        "module_locator": "D0.Interface.ScalarPoissonReduction",
+        "theorem_atom": "D0.scalar_stationarity_without_neutrality_counterexample",
+        "candidate_names": [
+          "D0.scalar_stationarity_without_neutrality_counterexample"
+        ]
+      },
+      {
         "claim_id": "D0-MATTER-LOCALIZATION-001",
-        "module_locator": "D0.Active.NonzeroMatterSourceNeutrality",
+        "module_locator": "D0.Interface.MatterLocalization",
         "theorem_atom": "Matter.localized_matter_source_neutral_if_anomaly_free",
         "candidate_names": [
-          "D0.Active.NonzeroMatterSourceNeutrality.Matter.localized_matter_source_neutral_if_anomaly_free",
-          "D0.Active.Matter.localized_matter_source_neutral_if_anomaly_free",
+          "D0.Interface.MatterLocalization.Matter.localized_matter_source_neutral_if_anomaly_free",
+          "D0.Interface.Matter.localized_matter_source_neutral_if_anomaly_free",
           "D0.Matter.localized_matter_source_neutral_if_anomaly_free"
         ]
       },
@@ -2992,61 +2976,73 @@
       },
       {
         "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
-        "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+        "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
         "theorem_atom": "Algebra.commutator_self_zero",
         "candidate_names": [
           "D0.Matter.GaugeCurvatureOrigin.Algebra.commutator_self_zero",
+          "D0.Algebra.ArchiveCommutatorOperators.Algebra.commutator_self_zero",
           "D0.Matter.Algebra.commutator_self_zero",
+          "D0.Algebra.Algebra.commutator_self_zero",
           "D0.Algebra.commutator_self_zero"
         ]
       },
       {
         "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
-        "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+        "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
         "theorem_atom": "Algebra.commutator_skew_of_skew",
         "candidate_names": [
           "D0.Matter.GaugeCurvatureOrigin.Algebra.commutator_skew_of_skew",
+          "D0.Algebra.ArchiveCommutatorOperators.Algebra.commutator_skew_of_skew",
           "D0.Matter.Algebra.commutator_skew_of_skew",
+          "D0.Algebra.Algebra.commutator_skew_of_skew",
           "D0.Algebra.commutator_skew_of_skew"
         ]
       },
       {
         "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
-        "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+        "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
         "theorem_atom": "Algebra.minus_trace_square_nonnegative",
         "candidate_names": [
           "D0.Matter.GaugeCurvatureOrigin.Algebra.minus_trace_square_nonnegative",
+          "D0.Algebra.ArchiveCommutatorOperators.Algebra.minus_trace_square_nonnegative",
           "D0.Matter.Algebra.minus_trace_square_nonnegative",
+          "D0.Algebra.Algebra.minus_trace_square_nonnegative",
           "D0.Algebra.minus_trace_square_nonnegative"
         ]
       },
       {
         "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
-        "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+        "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
         "theorem_atom": "Matter.gauge_curvature_skew",
         "candidate_names": [
           "D0.Matter.GaugeCurvatureOrigin.Matter.gauge_curvature_skew",
+          "D0.Algebra.ArchiveCommutatorOperators.Matter.gauge_curvature_skew",
           "D0.Matter.Matter.gauge_curvature_skew",
+          "D0.Algebra.Matter.gauge_curvature_skew",
           "D0.Matter.gauge_curvature_skew"
         ]
       },
       {
         "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
-        "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+        "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
         "theorem_atom": "Matter.abelian_curvature_annihilates_self_interaction",
         "candidate_names": [
           "D0.Matter.GaugeCurvatureOrigin.Matter.abelian_curvature_annihilates_self_interaction",
+          "D0.Algebra.ArchiveCommutatorOperators.Matter.abelian_curvature_annihilates_self_interaction",
           "D0.Matter.Matter.abelian_curvature_annihilates_self_interaction",
+          "D0.Algebra.Matter.abelian_curvature_annihilates_self_interaction",
           "D0.Matter.abelian_curvature_annihilates_self_interaction"
         ]
       },
       {
         "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
-        "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+        "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
         "theorem_atom": "Matter.gauge_action_positive_from_origin",
         "candidate_names": [
           "D0.Matter.GaugeCurvatureOrigin.Matter.gauge_action_positive_from_origin",
+          "D0.Algebra.ArchiveCommutatorOperators.Matter.gauge_action_positive_from_origin",
           "D0.Matter.Matter.gauge_action_positive_from_origin",
+          "D0.Algebra.Matter.gauge_action_positive_from_origin",
           "D0.Matter.gauge_action_positive_from_origin"
         ]
       },
@@ -3542,52 +3538,80 @@
       },
       {
         "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
         "theorem_atom": "Topology.graded_nilpotency",
         "candidate_names": [
           "D0.Gauge.GradedBianchiIdentity.Topology.graded_nilpotency",
+          "D0.Geometry.SceneCochainComplex.Topology.graded_nilpotency",
+          "D0.Topology.GradedIncidenceComplex.Topology.graded_nilpotency",
           "D0.Gauge.Topology.graded_nilpotency",
+          "D0.Geometry.Topology.graded_nilpotency",
+          "D0.Topology.Topology.graded_nilpotency",
           "D0.Topology.graded_nilpotency"
         ]
       },
       {
         "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
         "theorem_atom": "Topology.discrete_exact_bianchi",
         "candidate_names": [
           "D0.Gauge.GradedBianchiIdentity.Topology.discrete_exact_bianchi",
+          "D0.Geometry.SceneCochainComplex.Topology.discrete_exact_bianchi",
+          "D0.Topology.GradedIncidenceComplex.Topology.discrete_exact_bianchi",
           "D0.Gauge.Topology.discrete_exact_bianchi",
+          "D0.Geometry.Topology.discrete_exact_bianchi",
+          "D0.Topology.Topology.discrete_exact_bianchi",
           "D0.Topology.discrete_exact_bianchi"
         ]
       },
       {
         "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
         "theorem_atom": "Topology.graded_bianchi_exact",
         "candidate_names": [
           "D0.Gauge.GradedBianchiIdentity.Topology.graded_bianchi_exact",
+          "D0.Geometry.SceneCochainComplex.Topology.graded_bianchi_exact",
+          "D0.Topology.GradedIncidenceComplex.Topology.graded_bianchi_exact",
           "D0.Gauge.Topology.graded_bianchi_exact",
+          "D0.Geometry.Topology.graded_bianchi_exact",
+          "D0.Topology.Topology.graded_bianchi_exact",
           "D0.Topology.graded_bianchi_exact"
         ]
       },
       {
         "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
         "theorem_atom": "Gauge.abelian_bianchi_exact",
         "candidate_names": [
           "D0.Gauge.GradedBianchiIdentity.Gauge.abelian_bianchi_exact",
+          "D0.Geometry.SceneCochainComplex.Gauge.abelian_bianchi_exact",
+          "D0.Topology.GradedIncidenceComplex.Gauge.abelian_bianchi_exact",
           "D0.Gauge.Gauge.abelian_bianchi_exact",
+          "D0.Geometry.Gauge.abelian_bianchi_exact",
+          "D0.Topology.Gauge.abelian_bianchi_exact",
           "D0.Gauge.abelian_bianchi_exact"
         ]
       },
       {
         "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
-        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
         "theorem_atom": "Gauge.graded_bianchi_exact",
         "candidate_names": [
           "D0.Gauge.GradedBianchiIdentity.Gauge.graded_bianchi_exact",
+          "D0.Geometry.SceneCochainComplex.Gauge.graded_bianchi_exact",
+          "D0.Topology.GradedIncidenceComplex.Gauge.graded_bianchi_exact",
           "D0.Gauge.Gauge.graded_bianchi_exact",
+          "D0.Geometry.Gauge.graded_bianchi_exact",
+          "D0.Topology.Gauge.graded_bianchi_exact",
           "D0.Gauge.graded_bianchi_exact"
+        ]
+      },
+      {
+        "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
+        "theorem_atom": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+        "candidate_names": [
+          "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero"
         ]
       },
       {
@@ -4176,11 +4200,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Core.detector_fixed_under_time_ladder",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Core.detector_fixed_under_time_ladder",
           "D0.Dynamics.TraceHeatCapacityGravity.Core.detector_fixed_under_time_ladder",
+          "D0.Dynamics.TraceHeatLucasCore.Core.detector_fixed_under_time_ladder",
           "D0.Core.Core.detector_fixed_under_time_ladder",
           "D0.Dynamics.Core.detector_fixed_under_time_ladder",
           "D0.Core.detector_fixed_under_time_ladder"
@@ -4188,11 +4213,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Core.readout_depends_on_time_power",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Core.readout_depends_on_time_power",
           "D0.Dynamics.TraceHeatCapacityGravity.Core.readout_depends_on_time_power",
+          "D0.Dynamics.TraceHeatLucasCore.Core.readout_depends_on_time_power",
           "D0.Core.Core.readout_depends_on_time_power",
           "D0.Dynamics.Core.readout_depends_on_time_power",
           "D0.Core.readout_depends_on_time_power"
@@ -4200,11 +4226,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Core.active_archive_trace_readout_integer",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Core.active_archive_trace_readout_integer",
           "D0.Dynamics.TraceHeatCapacityGravity.Core.active_archive_trace_readout_integer",
+          "D0.Dynamics.TraceHeatLucasCore.Core.active_archive_trace_readout_integer",
           "D0.Core.Core.active_archive_trace_readout_integer",
           "D0.Dynamics.Core.active_archive_trace_readout_integer",
           "D0.Core.active_archive_trace_readout_integer"
@@ -4212,11 +4239,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Dynamics.heat_moment_T2_eq_even_lucas_trace",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Dynamics.heat_moment_T2_eq_even_lucas_trace",
           "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.heat_moment_T2_eq_even_lucas_trace",
+          "D0.Dynamics.TraceHeatLucasCore.Dynamics.heat_moment_T2_eq_even_lucas_trace",
           "D0.Core.Dynamics.heat_moment_T2_eq_even_lucas_trace",
           "D0.Dynamics.Dynamics.heat_moment_T2_eq_even_lucas_trace",
           "D0.Dynamics.heat_moment_T2_eq_even_lucas_trace"
@@ -4224,11 +4252,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Dynamics.heat_moment_eq_even_lucas",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Dynamics.heat_moment_eq_even_lucas",
           "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.heat_moment_eq_even_lucas",
+          "D0.Dynamics.TraceHeatLucasCore.Dynamics.heat_moment_eq_even_lucas",
           "D0.Core.Dynamics.heat_moment_eq_even_lucas",
           "D0.Dynamics.Dynamics.heat_moment_eq_even_lucas",
           "D0.Dynamics.heat_moment_eq_even_lucas"
@@ -4236,11 +4265,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Dynamics.lefschetz_spectrum_unfolds_scene",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Dynamics.lefschetz_spectrum_unfolds_scene",
           "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.lefschetz_spectrum_unfolds_scene",
+          "D0.Dynamics.TraceHeatLucasCore.Dynamics.lefschetz_spectrum_unfolds_scene",
           "D0.Core.Dynamics.lefschetz_spectrum_unfolds_scene",
           "D0.Dynamics.Dynamics.lefschetz_spectrum_unfolds_scene",
           "D0.Dynamics.lefschetz_spectrum_unfolds_scene"
@@ -4248,11 +4278,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Dynamics.boundary_capacity_is_quarter_cut_weight",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Dynamics.boundary_capacity_is_quarter_cut_weight",
           "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.boundary_capacity_is_quarter_cut_weight",
+          "D0.Dynamics.TraceHeatLucasCore.Dynamics.boundary_capacity_is_quarter_cut_weight",
           "D0.Core.Dynamics.boundary_capacity_is_quarter_cut_weight",
           "D0.Dynamics.Dynamics.boundary_capacity_is_quarter_cut_weight",
           "D0.Dynamics.boundary_capacity_is_quarter_cut_weight"
@@ -4260,11 +4291,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Dynamics.saturated_region_forces_boundary_encoding",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Dynamics.saturated_region_forces_boundary_encoding",
           "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.saturated_region_forces_boundary_encoding",
+          "D0.Dynamics.TraceHeatLucasCore.Dynamics.saturated_region_forces_boundary_encoding",
           "D0.Core.Dynamics.saturated_region_forces_boundary_encoding",
           "D0.Dynamics.Dynamics.saturated_region_forces_boundary_encoding",
           "D0.Dynamics.saturated_region_forces_boundary_encoding"
@@ -4272,11 +4304,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Dynamics.black_hole_capacity_saturation_rule",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Dynamics.black_hole_capacity_saturation_rule",
           "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.black_hole_capacity_saturation_rule",
+          "D0.Dynamics.TraceHeatLucasCore.Dynamics.black_hole_capacity_saturation_rule",
           "D0.Core.Dynamics.black_hole_capacity_saturation_rule",
           "D0.Dynamics.Dynamics.black_hole_capacity_saturation_rule",
           "D0.Dynamics.black_hole_capacity_saturation_rule"
@@ -4284,11 +4317,12 @@
       },
       {
         "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
-        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+        "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
         "theorem_atom": "Dynamics.heat_trace_entropy_gradient_admits_gravity_interface",
         "candidate_names": [
           "D0.Core.FixedDetectorTimeLadder.Dynamics.heat_trace_entropy_gradient_admits_gravity_interface",
           "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.heat_trace_entropy_gradient_admits_gravity_interface",
+          "D0.Dynamics.TraceHeatLucasCore.Dynamics.heat_trace_entropy_gradient_admits_gravity_interface",
           "D0.Core.Dynamics.heat_trace_entropy_gradient_admits_gravity_interface",
           "D0.Dynamics.Dynamics.heat_trace_entropy_gradient_admits_gravity_interface",
           "D0.Dynamics.heat_trace_entropy_gradient_admits_gravity_interface"
@@ -4970,11 +5004,12 @@
       },
       {
         "claim_id": "D0-CVFT-001A",
-        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
         "theorem_atom": "Dynamics.internal_feedback_forced_by_split",
         "candidate_names": [
           "D0.Dynamics.InternalFeedbackResolvent.Dynamics.internal_feedback_forced_by_split",
           "D0.Cosmology.FeedbackPartitionFunction.Dynamics.internal_feedback_forced_by_split",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Dynamics.internal_feedback_forced_by_split",
           "D0.Dynamics.Dynamics.internal_feedback_forced_by_split",
           "D0.Cosmology.Dynamics.internal_feedback_forced_by_split",
           "D0.Dynamics.internal_feedback_forced_by_split"
@@ -4982,11 +5017,12 @@
       },
       {
         "claim_id": "D0-CVFT-001A",
-        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
         "theorem_atom": "Dynamics.internal_feedback_resolvent_series",
         "candidate_names": [
           "D0.Dynamics.InternalFeedbackResolvent.Dynamics.internal_feedback_resolvent_series",
           "D0.Cosmology.FeedbackPartitionFunction.Dynamics.internal_feedback_resolvent_series",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Dynamics.internal_feedback_resolvent_series",
           "D0.Dynamics.Dynamics.internal_feedback_resolvent_series",
           "D0.Cosmology.Dynamics.internal_feedback_resolvent_series",
           "D0.Dynamics.internal_feedback_resolvent_series"
@@ -4994,11 +5030,12 @@
       },
       {
         "claim_id": "D0-CVFT-001A",
-        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
         "theorem_atom": "Cosmology.feedback_determinant_return_cycles",
         "candidate_names": [
           "D0.Dynamics.InternalFeedbackResolvent.Cosmology.feedback_determinant_return_cycles",
           "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_determinant_return_cycles",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_determinant_return_cycles",
           "D0.Dynamics.Cosmology.feedback_determinant_return_cycles",
           "D0.Cosmology.Cosmology.feedback_determinant_return_cycles",
           "D0.Cosmology.feedback_determinant_return_cycles"
@@ -5006,11 +5043,12 @@
       },
       {
         "claim_id": "D0-CVFT-001A",
-        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
         "theorem_atom": "Cosmology.feedback_variation_universal_source",
         "candidate_names": [
           "D0.Dynamics.InternalFeedbackResolvent.Cosmology.feedback_variation_universal_source",
           "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_variation_universal_source",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_variation_universal_source",
           "D0.Dynamics.Cosmology.feedback_variation_universal_source",
           "D0.Cosmology.Cosmology.feedback_variation_universal_source",
           "D0.Cosmology.feedback_variation_universal_source"
@@ -5018,11 +5056,12 @@
       },
       {
         "claim_id": "D0-CVFT-001A",
-        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
         "theorem_atom": "Cosmology.feedback_pressure_trace_log",
         "candidate_names": [
           "D0.Dynamics.InternalFeedbackResolvent.Cosmology.feedback_pressure_trace_log",
           "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_pressure_trace_log",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_pressure_trace_log",
           "D0.Dynamics.Cosmology.feedback_pressure_trace_log",
           "D0.Cosmology.Cosmology.feedback_pressure_trace_log",
           "D0.Cosmology.feedback_pressure_trace_log"
@@ -5306,11 +5345,12 @@
       },
       {
         "claim_id": "D0-EDGE-001",
-        "module_locator": "",
-        "theorem_atom": "edge_alpha_trace_target",
+        "module_locator": "D0.Spectral.ZetaResidueAlpha",
+        "theorem_atom": "zetaEdge_neg_one",
         "candidate_names": [
-          "D0.edge_alpha_trace_target",
-          "edge_alpha_trace_target"
+          "D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one",
+          "D0.Spectral.zetaEdge_neg_one",
+          "D0.zetaEdge_neg_one"
         ]
       },
       {
@@ -8713,25 +8753,17 @@
       {
         "claim_id": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
         "module_locator": "D0.VNext.PerronGNSTower;D0.Algebra.FibonacciAFTower",
-        "theorem_atom": "gns_refinement_isometry",
+        "theorem_atom": "D0.Algebra.FibonacciAFTower.gns_refinement_isometry",
         "candidate_names": [
-          "D0.VNext.PerronGNSTower.gns_refinement_isometry",
-          "D0.Algebra.FibonacciAFTower.gns_refinement_isometry",
-          "D0.VNext.gns_refinement_isometry",
-          "D0.Algebra.gns_refinement_isometry",
-          "D0.gns_refinement_isometry"
+          "D0.Algebra.FibonacciAFTower.gns_refinement_isometry"
         ]
       },
       {
         "claim_id": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
         "module_locator": "D0.VNext.PerronGNSTower;D0.Algebra.FibonacciAFTower",
-        "theorem_atom": "phi_ne_zero",
+        "theorem_atom": "D0.Algebra.FibonacciAFTower.phi_ne_zero",
         "candidate_names": [
-          "D0.VNext.PerronGNSTower.phi_ne_zero",
-          "D0.Algebra.FibonacciAFTower.phi_ne_zero",
-          "D0.VNext.phi_ne_zero",
-          "D0.Algebra.phi_ne_zero",
-          "D0.phi_ne_zero"
+          "D0.Algebra.FibonacciAFTower.phi_ne_zero"
         ]
       },
       {
@@ -9910,12 +9942,9 @@
       {
         "claim_id": "D0-X5-ALPHA-BOUNDARY-001",
         "module_locator": "D0.Extensions.X5.AlphaBoundary",
-        "theorem_atom": "alpha_outside_x5",
+        "theorem_atom": "D0.Extensions.X5.Alpha.alpha_outside_x5",
         "candidate_names": [
-          "D0.Extensions.X5.AlphaBoundary.alpha_outside_x5",
-          "D0.Extensions.X5.alpha_outside_x5",
-          "D0.Extensions.alpha_outside_x5",
-          "D0.alpha_outside_x5"
+          "D0.Extensions.X5.Alpha.alpha_outside_x5"
         ]
       },
       {
@@ -13351,16 +13380,9 @@
       {
         "claim_id": "D0-SYMMETRIC-FUNCTION-ACTIVE-SPECTRUM-001",
         "module_locator": "D0.Synthesis.SymmetricFunctionCalculus;D0.Synthesis.ActiveSplittingFromDistinctness;D0.Synthesis.ActiveSpectrumClosedForm;D0.Synthesis.ActiveWindowIrrational;D0.Combinatorics.TripartiteVieta",
-        "theorem_atom": "scene_gap",
+        "theorem_atom": "D0.Synthesis.ActiveSpectrumClosedForm.scene_gap",
         "candidate_names": [
-          "D0.Synthesis.SymmetricFunctionCalculus.scene_gap",
-          "D0.Synthesis.ActiveSplittingFromDistinctness.scene_gap",
-          "D0.Synthesis.ActiveSpectrumClosedForm.scene_gap",
-          "D0.Synthesis.ActiveWindowIrrational.scene_gap",
-          "D0.Combinatorics.TripartiteVieta.scene_gap",
-          "D0.Synthesis.scene_gap",
-          "D0.Combinatorics.scene_gap",
-          "D0.scene_gap"
+          "D0.Synthesis.ActiveSpectrumClosedForm.scene_gap"
         ]
       },
       {
@@ -20470,11 +20492,9 @@
       {
         "claim_id": "D0-FIBONACCI-PERRON-PROFILE-CANONICITY-001",
         "module_locator": "D0.Algebra.FibonacciPerronTraceCanonicity",
-        "theorem_atom": "phi_gt_one",
+        "theorem_atom": "D0.Algebra.FibonacciPerronTraceCanonicity.phi_gt_one",
         "candidate_names": [
-          "D0.Algebra.FibonacciPerronTraceCanonicity.phi_gt_one",
-          "D0.Algebra.phi_gt_one",
-          "D0.phi_gt_one"
+          "D0.Algebra.FibonacciPerronTraceCanonicity.phi_gt_one"
         ]
       },
       {
@@ -22500,11 +22520,9 @@
       {
         "claim_id": "D0-TRIALITY-SEDENION-S3-DISJOINTNESS-GUARD-001",
         "module_locator": "D0.Algebra.Sedenions",
-        "theorem_atom": "triality_sedenion_s3_disjointness_guard",
+        "theorem_atom": "D0.Algebra.Sedenions.bare_threeset_insufficient_for_sedenion_realization",
         "candidate_names": [
-          "D0.Algebra.Sedenions.triality_sedenion_s3_disjointness_guard",
-          "D0.Algebra.triality_sedenion_s3_disjointness_guard",
-          "D0.triality_sedenion_s3_disjointness_guard"
+          "D0.Algebra.Sedenions.bare_threeset_insufficient_for_sedenion_realization"
         ]
       },
       {
@@ -23111,30 +23129,143 @@
       },
       {
         "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
-        "module_locator": "D0.Geometry.Archive1DCochainRefinement",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_b0_matrix_gram",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_b0_matrix_gram",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_matrix_gram",
+          "D0.Geometry.archive_b0_matrix_gram",
+          "D0.archive_b0_matrix_gram"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_b0_matrix_gram_diagonal",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_b0_matrix_gram_diagonal",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_matrix_gram_diagonal",
+          "D0.Geometry.archive_b0_matrix_gram_diagonal",
+          "D0.archive_b0_matrix_gram_diagonal"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
         "theorem_atom": "b1_isometry",
         "candidate_names": [
           "D0.Geometry.Archive1DCochainRefinement.b1_isometry",
+          "D0.Geometry.Archive1DCochainRefinementBinding.b1_isometry",
           "D0.Geometry.b1_isometry",
           "D0.b1_isometry"
         ]
       },
       {
         "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
-        "module_locator": "D0.Geometry.Archive1DCochainRefinement",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_b1_matrix_gram",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_b1_matrix_gram",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_b1_matrix_gram",
+          "D0.Geometry.archive_b1_matrix_gram",
+          "D0.archive_b1_matrix_gram"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_b1_matrix_mulVec",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_b1_matrix_mulVec",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_b1_matrix_mulVec",
+          "D0.Geometry.archive_b1_matrix_mulVec",
+          "D0.archive_b1_matrix_mulVec"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
         "theorem_atom": "intertwining_d_b0_eq_b1_d",
         "candidate_names": [
           "D0.Geometry.Archive1DCochainRefinement.intertwining_d_b0_eq_b1_d",
+          "D0.Geometry.Archive1DCochainRefinementBinding.intertwining_d_b0_eq_b1_d",
           "D0.Geometry.intertwining_d_b0_eq_b1_d",
           "D0.intertwining_d_b0_eq_b1_d"
         ]
       },
       {
         "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
-        "module_locator": "D0.Geometry.Archive1DCochainRefinement",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_b0_literal_projection",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_b0_literal_projection",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_literal_projection",
+          "D0.Geometry.archive_b0_literal_projection",
+          "D0.archive_b0_literal_projection"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_b0_literal_matrix",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_b0_literal_matrix",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_literal_matrix",
+          "D0.Geometry.archive_b0_literal_matrix",
+          "D0.archive_b0_literal_matrix"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_b0_matrix_eq_archive_lift",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_b0_matrix_eq_archive_lift",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_matrix_eq_archive_lift",
+          "D0.Geometry.archive_b0_matrix_eq_archive_lift",
+          "D0.archive_b0_matrix_eq_archive_lift"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_lift_operator_gram",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_lift_operator_gram",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_lift_operator_gram",
+          "D0.Geometry.archive_lift_operator_gram",
+          "D0.archive_lift_operator_gram"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_scaled_block_with_owner_scale",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_scaled_block_with_owner_scale",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_scaled_block_with_owner_scale",
+          "D0.Geometry.archive_scaled_block_with_owner_scale",
+          "D0.archive_scaled_block_with_owner_scale"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
+        "theorem_atom": "archive_unscaled_chain_fails_owner_scales",
+        "candidate_names": [
+          "D0.Geometry.Archive1DCochainRefinement.archive_unscaled_chain_fails_owner_scales",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_unscaled_chain_fails_owner_scales",
+          "D0.Geometry.archive_unscaled_chain_fails_owner_scales",
+          "D0.archive_unscaled_chain_fails_owner_scales"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001",
+        "module_locator": "D0.Geometry.Archive1DCochainRefinement;D0.Geometry.Archive1DCochainRefinementBinding",
         "theorem_atom": "archive_1d_cochain_refinement_owner",
         "candidate_names": [
           "D0.Geometry.Archive1DCochainRefinement.archive_1d_cochain_refinement_owner",
+          "D0.Geometry.Archive1DCochainRefinementBinding.archive_1d_cochain_refinement_owner",
           "D0.Geometry.archive_1d_cochain_refinement_owner",
           "D0.archive_1d_cochain_refinement_owner"
         ]
@@ -23362,11 +23493,11 @@
       {
         "claim_id": "D0-MATTER-LOCALIZATION-OBSERVABLE-CANONICITY-001",
         "module_locator": "D0.Matter.MatterLocalizationNonuniquenessNoGo",
-        "theorem_atom": "matter_neutrality_m1_forced",
+        "theorem_atom": "matter_localization_nonuniqueness_nogo_owner",
         "candidate_names": [
-          "D0.Matter.MatterLocalizationNonuniquenessNoGo.matter_neutrality_m1_forced",
-          "D0.Matter.matter_neutrality_m1_forced",
-          "D0.matter_neutrality_m1_forced"
+          "D0.Matter.MatterLocalizationNonuniquenessNoGo.matter_localization_nonuniqueness_nogo_owner",
+          "D0.Matter.matter_localization_nonuniqueness_nogo_owner",
+          "D0.matter_localization_nonuniqueness_nogo_owner"
         ]
       },
       {
@@ -25597,13 +25728,9 @@
       {
         "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
         "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
-        "theorem_atom": "affine_mul_assoc",
+        "theorem_atom": "D0.Geometry.AffineCartanMap.affine_mul_assoc",
         "candidate_names": [
-          "D0.Geometry.ArchiveAffineCartanConnection.affine_mul_assoc",
-          "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.affine_mul_assoc",
-          "D0.Geometry.ArchivePathWordAlgebra.affine_mul_assoc",
-          "D0.Geometry.affine_mul_assoc",
-          "D0.affine_mul_assoc"
+          "D0.Geometry.AffineCartanMap.affine_mul_assoc"
         ]
       },
       {
@@ -25873,49 +26000,33 @@
       {
         "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
         "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
-        "theorem_atom": "crossed_finrank",
+        "theorem_atom": "D0.Geometry.ScalarCrossed.crossed_finrank",
         "candidate_names": [
-          "D0.Geometry.ArchiveAffineCartanConnection.crossed_finrank",
-          "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.crossed_finrank",
-          "D0.Geometry.ArchivePathWordAlgebra.crossed_finrank",
-          "D0.Geometry.crossed_finrank",
-          "D0.crossed_finrank"
+          "D0.Geometry.ScalarCrossed.crossed_finrank"
         ]
       },
       {
         "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
         "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
-        "theorem_atom": "pathEval_append",
+        "theorem_atom": "D0.Geometry.ChainPath.pathEval_append",
         "candidate_names": [
-          "D0.Geometry.ArchiveAffineCartanConnection.pathEval_append",
-          "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.pathEval_append",
-          "D0.Geometry.ArchivePathWordAlgebra.pathEval_append",
-          "D0.Geometry.pathEval_append",
-          "D0.pathEval_append"
+          "D0.Geometry.ChainPath.pathEval_append"
         ]
       },
       {
         "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
         "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
-        "theorem_atom": "pathEval_reverse",
+        "theorem_atom": "D0.Geometry.ChainPath.pathEval_reverse",
         "candidate_names": [
-          "D0.Geometry.ArchiveAffineCartanConnection.pathEval_reverse",
-          "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.pathEval_reverse",
-          "D0.Geometry.ArchivePathWordAlgebra.pathEval_reverse",
-          "D0.Geometry.pathEval_reverse",
-          "D0.pathEval_reverse"
+          "D0.Geometry.ChainPath.pathEval_reverse"
         ]
       },
       {
         "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
         "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
-        "theorem_atom": "pathEval_factors_pairGroupoid_iff_trivial_holonomy",
+        "theorem_atom": "D0.Geometry.ChainPath.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
         "candidate_names": [
-          "D0.Geometry.ArchiveAffineCartanConnection.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
-          "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
-          "D0.Geometry.ArchivePathWordAlgebra.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
-          "D0.Geometry.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
-          "D0.pathEval_factors_pairGroupoid_iff_trivial_holonomy"
+          "D0.Geometry.ChainPath.pathEval_factors_pairGroupoid_iff_trivial_holonomy"
         ]
       },
       {
@@ -26179,113 +26290,57 @@
       {
         "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
         "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
-        "theorem_atom": "secondOrderCongruenceCoefficient_formula",
+        "theorem_atom": "D0.Geometry.TwoJet.secondOrderCongruenceCoefficient_formula",
         "candidate_names": [
-          "D0.Geometry.A4DSecondOrderCartanCongruence.secondOrderCongruenceCoefficient_formula",
-          "D0.Geometry.A4DAffineMatterLiftObstruction.secondOrderCongruenceCoefficient_formula",
-          "D0.Geometry.A4DActionGroupoidSecondJet.secondOrderCongruenceCoefficient_formula",
-          "D0.Geometry.A4DMovingDifferentialSecondJet.secondOrderCongruenceCoefficient_formula",
-          "D0.Geometry.A4DCellHessianTransverseModulus.secondOrderCongruenceCoefficient_formula",
-          "D0.Geometry.A4DLocatedMatterCellEnergy.secondOrderCongruenceCoefficient_formula",
-          "D0.Geometry.A4DScalarDeltaSecondJet.secondOrderCongruenceCoefficient_formula",
-          "D0.Geometry.secondOrderCongruenceCoefficient_formula",
-          "D0.secondOrderCongruenceCoefficient_formula"
+          "D0.Geometry.TwoJet.secondOrderCongruenceCoefficient_formula"
         ]
       },
       {
         "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
         "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
-        "theorem_atom": "weightedCongruence_eq",
+        "theorem_atom": "D0.Geometry.TwoJet.weightedCongruence_eq",
         "candidate_names": [
-          "D0.Geometry.A4DSecondOrderCartanCongruence.weightedCongruence_eq",
-          "D0.Geometry.A4DAffineMatterLiftObstruction.weightedCongruence_eq",
-          "D0.Geometry.A4DActionGroupoidSecondJet.weightedCongruence_eq",
-          "D0.Geometry.A4DMovingDifferentialSecondJet.weightedCongruence_eq",
-          "D0.Geometry.A4DCellHessianTransverseModulus.weightedCongruence_eq",
-          "D0.Geometry.A4DLocatedMatterCellEnergy.weightedCongruence_eq",
-          "D0.Geometry.A4DScalarDeltaSecondJet.weightedCongruence_eq",
-          "D0.Geometry.weightedCongruence_eq",
-          "D0.weightedCongruence_eq"
+          "D0.Geometry.TwoJet.weightedCongruence_eq"
         ]
       },
       {
         "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
         "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
-        "theorem_atom": "exponentialSecondJet_specialization",
+        "theorem_atom": "D0.Geometry.TwoJet.exponentialSecondJet_specialization",
         "candidate_names": [
-          "D0.Geometry.A4DSecondOrderCartanCongruence.exponentialSecondJet_specialization",
-          "D0.Geometry.A4DAffineMatterLiftObstruction.exponentialSecondJet_specialization",
-          "D0.Geometry.A4DActionGroupoidSecondJet.exponentialSecondJet_specialization",
-          "D0.Geometry.A4DMovingDifferentialSecondJet.exponentialSecondJet_specialization",
-          "D0.Geometry.A4DCellHessianTransverseModulus.exponentialSecondJet_specialization",
-          "D0.Geometry.A4DLocatedMatterCellEnergy.exponentialSecondJet_specialization",
-          "D0.Geometry.A4DScalarDeltaSecondJet.exponentialSecondJet_specialization",
-          "D0.Geometry.exponentialSecondJet_specialization",
-          "D0.exponentialSecondJet_specialization"
+          "D0.Geometry.TwoJet.exponentialSecondJet_specialization"
         ]
       },
       {
         "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
         "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
-        "theorem_atom": "backgroundJet_eq_congruence",
+        "theorem_atom": "D0.Geometry.TwoJet.backgroundJet_eq_congruence",
         "candidate_names": [
-          "D0.Geometry.A4DSecondOrderCartanCongruence.backgroundJet_eq_congruence",
-          "D0.Geometry.A4DAffineMatterLiftObstruction.backgroundJet_eq_congruence",
-          "D0.Geometry.A4DActionGroupoidSecondJet.backgroundJet_eq_congruence",
-          "D0.Geometry.A4DMovingDifferentialSecondJet.backgroundJet_eq_congruence",
-          "D0.Geometry.A4DCellHessianTransverseModulus.backgroundJet_eq_congruence",
-          "D0.Geometry.A4DLocatedMatterCellEnergy.backgroundJet_eq_congruence",
-          "D0.Geometry.A4DScalarDeltaSecondJet.backgroundJet_eq_congruence",
-          "D0.Geometry.backgroundJet_eq_congruence",
-          "D0.backgroundJet_eq_congruence"
+          "D0.Geometry.TwoJet.backgroundJet_eq_congruence"
         ]
       },
       {
         "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
         "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
-        "theorem_atom": "exponential_background_specialization",
+        "theorem_atom": "D0.Geometry.TwoJet.exponential_background_specialization",
         "candidate_names": [
-          "D0.Geometry.A4DSecondOrderCartanCongruence.exponential_background_specialization",
-          "D0.Geometry.A4DAffineMatterLiftObstruction.exponential_background_specialization",
-          "D0.Geometry.A4DActionGroupoidSecondJet.exponential_background_specialization",
-          "D0.Geometry.A4DMovingDifferentialSecondJet.exponential_background_specialization",
-          "D0.Geometry.A4DCellHessianTransverseModulus.exponential_background_specialization",
-          "D0.Geometry.A4DLocatedMatterCellEnergy.exponential_background_specialization",
-          "D0.Geometry.A4DScalarDeltaSecondJet.exponential_background_specialization",
-          "D0.Geometry.exponential_background_specialization",
-          "D0.exponential_background_specialization"
+          "D0.Geometry.TwoJet.exponential_background_specialization"
         ]
       },
       {
         "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
         "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
-        "theorem_atom": "dualInverseTranspose_quad",
+        "theorem_atom": "D0.Geometry.TwoJet.dualInverseTranspose_quad",
         "candidate_names": [
-          "D0.Geometry.A4DSecondOrderCartanCongruence.dualInverseTranspose_quad",
-          "D0.Geometry.A4DAffineMatterLiftObstruction.dualInverseTranspose_quad",
-          "D0.Geometry.A4DActionGroupoidSecondJet.dualInverseTranspose_quad",
-          "D0.Geometry.A4DMovingDifferentialSecondJet.dualInverseTranspose_quad",
-          "D0.Geometry.A4DCellHessianTransverseModulus.dualInverseTranspose_quad",
-          "D0.Geometry.A4DLocatedMatterCellEnergy.dualInverseTranspose_quad",
-          "D0.Geometry.A4DScalarDeltaSecondJet.dualInverseTranspose_quad",
-          "D0.Geometry.dualInverseTranspose_quad",
-          "D0.dualInverseTranspose_quad"
+          "D0.Geometry.TwoJet.dualInverseTranspose_quad"
         ]
       },
       {
         "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
         "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
-        "theorem_atom": "constitutiveSecondDerivative",
+        "theorem_atom": "D0.Geometry.TwoJet.constitutiveSecondDerivative",
         "candidate_names": [
-          "D0.Geometry.A4DSecondOrderCartanCongruence.constitutiveSecondDerivative",
-          "D0.Geometry.A4DAffineMatterLiftObstruction.constitutiveSecondDerivative",
-          "D0.Geometry.A4DActionGroupoidSecondJet.constitutiveSecondDerivative",
-          "D0.Geometry.A4DMovingDifferentialSecondJet.constitutiveSecondDerivative",
-          "D0.Geometry.A4DCellHessianTransverseModulus.constitutiveSecondDerivative",
-          "D0.Geometry.A4DLocatedMatterCellEnergy.constitutiveSecondDerivative",
-          "D0.Geometry.A4DScalarDeltaSecondJet.constitutiveSecondDerivative",
-          "D0.Geometry.constitutiveSecondDerivative",
-          "D0.constitutiveSecondDerivative"
+          "D0.Geometry.TwoJet.constitutiveSecondDerivative"
         ]
       },
       {
@@ -29135,6 +29190,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Synthesis.TopHodgeInverseSpectralRigidity.topHodgeHarmonicMultiplicity_formula",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Synthesis.topHodgeHarmonicMultiplicity_formula",
       "source_path": null
     },
@@ -29148,6 +29208,11 @@
       "module": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
       "name": "D0.Synthesis.TopHodgeSpectralSceneReconstruction.topHodgeSecondMoment_formula",
       "source_path": "03_FORMALIZATION/D0/Synthesis/TopHodgeSpectralSceneReconstruction.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Synthesis.TopHodgeInverseSpectralRigidity.topHodgeSecondMoment_formula",
+      "source_path": null
     },
     {
       "exists": false,
@@ -29167,6 +29232,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Synthesis.TopHodgeInverseSpectralRigidity.topHodge_spectral_data_recovers_VET",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Synthesis.topHodge_spectral_data_recovers_VET",
       "source_path": null
     },
@@ -29180,6 +29250,11 @@
       "module": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
       "name": "D0.Synthesis.TopHodgeSpectralSceneReconstruction.reduced_scene_six_permutations",
       "source_path": "03_FORMALIZATION/D0/Synthesis/TopHodgeSpectralSceneReconstruction.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Synthesis.TopHodgeInverseSpectralRigidity.reduced_scene_six_permutations",
+      "source_path": null
     },
     {
       "exists": false,
@@ -29199,6 +29274,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Synthesis.TopHodgeInverseSpectralRigidity.reconstruct_scene_unordered_from_topHodge_spectral_data",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Synthesis.reconstruct_scene_unordered_from_topHodge_spectral_data",
       "source_path": null
     },
@@ -29212,6 +29292,11 @@
       "module": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
       "name": "D0.Synthesis.TopHodgeSpectralSceneReconstruction.harmonic_multiplicity_is_load_bearing",
       "source_path": "03_FORMALIZATION/D0/Synthesis/TopHodgeSpectralSceneReconstruction.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Synthesis.TopHodgeInverseSpectralRigidity.harmonic_multiplicity_is_load_bearing",
+      "source_path": null
     },
     {
       "exists": false,
@@ -30630,67 +30715,19 @@
     },
     {
       "exists": false,
-      "name": "D0.Probability.HSTExternalInterface.hst_admissible_from_certificates",
+      "name": "D0.Probability.FiniteArchiveHSTInput.archive_stage_finite_hst_source_facts",
       "source_path": null
     },
     {
       "exists": false,
-      "name": "D0.Probability.hst_admissible_from_certificates",
+      "name": "D0.Probability.archive_stage_finite_hst_source_facts",
       "source_path": null
     },
     {
       "exists": true,
-      "module": "D0.Probability.HSTExternalInterface",
-      "name": "D0.hst_admissible_from_certificates",
-      "source_path": "03_FORMALIZATION/D0/Probability/HSTExternalInterface.lean"
-    },
-    {
-      "exists": false,
-      "name": "D0.Probability.HSTExternalInterface.entropy_kernel_exists_if_HST",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Probability.entropy_kernel_exists_if_HST",
-      "source_path": null
-    },
-    {
-      "exists": true,
-      "module": "D0.Probability.HSTExternalInterface",
-      "name": "D0.entropy_kernel_exists_if_HST",
-      "source_path": "03_FORMALIZATION/D0/Probability/HSTExternalInterface.lean"
-    },
-    {
-      "exists": false,
-      "name": "D0.Probability.EntropyCouplingKernel.archive_entropy_kernel_exists_if_HST",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Probability.archive_entropy_kernel_exists_if_HST",
-      "source_path": null
-    },
-    {
-      "exists": true,
-      "module": "D0.Probability.EntropyCouplingKernel",
-      "name": "D0.archive_entropy_kernel_exists_if_HST",
-      "source_path": "03_FORMALIZATION/D0/Probability/EntropyCouplingKernel.lean"
-    },
-    {
-      "exists": false,
-      "name": "D0.Probability.EntropyCouplingKernel.archive_forgetting_channel_unique",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Probability.archive_forgetting_channel_unique",
-      "source_path": null
-    },
-    {
-      "exists": true,
-      "module": "D0.Probability.EntropyCouplingKernel",
-      "name": "D0.archive_forgetting_channel_unique",
-      "source_path": "03_FORMALIZATION/D0/Probability/EntropyCouplingKernel.lean"
+      "module": "D0.Probability.FiniteArchiveHSTInput",
+      "name": "D0.archive_stage_finite_hst_source_facts",
+      "source_path": "03_FORMALIZATION/D0/Probability/FiniteArchiveHSTInput.lean"
     },
     {
       "exists": false,
@@ -30707,22 +30744,6 @@
       "module": "D0.Detector.WeakCouplingClassicalization",
       "name": "D0.weak_coupling_readout_classical_guardrail",
       "source_path": "03_FORMALIZATION/D0/Detector/WeakCouplingClassicalization.lean"
-    },
-    {
-      "exists": false,
-      "name": "D0.Probability.ArchiveClassicalGaussianChannel.archive_macro_channel_classical_gaussian",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Probability.archive_macro_channel_classical_gaussian",
-      "source_path": null
-    },
-    {
-      "exists": true,
-      "module": "D0.Probability.ArchiveClassicalGaussianChannel",
-      "name": "D0.archive_macro_channel_classical_gaussian",
-      "source_path": "03_FORMALIZATION/D0/Probability/ArchiveClassicalGaussianChannel.lean"
     },
     {
       "exists": false,
@@ -31429,29 +31450,25 @@
       "source_path": "03_FORMALIZATION/D0/Frozen/ConservedStressProjection.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Active.ScalarPoissonReduction.scalar_stationarity_implies_archive_poisson",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Active.scalar_stationarity_implies_archive_poisson",
-      "source_path": null
-    },
-    {
       "exists": true,
       "module": "D0.Interface.ScalarPoissonReduction",
       "name": "D0.scalar_stationarity_implies_archive_poisson",
       "source_path": "03_FORMALIZATION/D0/Interface/ScalarPoissonReduction.lean"
     },
     {
+      "exists": true,
+      "module": "D0.Interface.ScalarPoissonReduction",
+      "name": "D0.scalar_stationarity_without_neutrality_counterexample",
+      "source_path": "03_FORMALIZATION/D0/Interface/ScalarPoissonReduction.lean"
+    },
+    {
       "exists": false,
-      "name": "D0.Active.NonzeroMatterSourceNeutrality.Matter.localized_matter_source_neutral_if_anomaly_free",
+      "name": "D0.Interface.MatterLocalization.Matter.localized_matter_source_neutral_if_anomaly_free",
       "source_path": null
     },
     {
       "exists": false,
-      "name": "D0.Active.Matter.localized_matter_source_neutral_if_anomaly_free",
+      "name": "D0.Interface.Matter.localized_matter_source_neutral_if_anomaly_free",
       "source_path": null
     },
     {
@@ -32283,7 +32300,17 @@
     },
     {
       "exists": false,
+      "name": "D0.Algebra.ArchiveCommutatorOperators.Algebra.commutator_self_zero",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Matter.Algebra.commutator_self_zero",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.Algebra.commutator_self_zero",
       "source_path": null
     },
     {
@@ -32299,7 +32326,17 @@
     },
     {
       "exists": false,
+      "name": "D0.Algebra.ArchiveCommutatorOperators.Algebra.commutator_skew_of_skew",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Matter.Algebra.commutator_skew_of_skew",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.Algebra.commutator_skew_of_skew",
       "source_path": null
     },
     {
@@ -32315,7 +32352,17 @@
     },
     {
       "exists": false,
+      "name": "D0.Algebra.ArchiveCommutatorOperators.Algebra.minus_trace_square_nonnegative",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Matter.Algebra.minus_trace_square_nonnegative",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.Algebra.minus_trace_square_nonnegative",
       "source_path": null
     },
     {
@@ -32331,7 +32378,17 @@
     },
     {
       "exists": false,
+      "name": "D0.Algebra.ArchiveCommutatorOperators.Matter.gauge_curvature_skew",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Matter.Matter.gauge_curvature_skew",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.Matter.gauge_curvature_skew",
       "source_path": null
     },
     {
@@ -32347,7 +32404,17 @@
     },
     {
       "exists": false,
+      "name": "D0.Algebra.ArchiveCommutatorOperators.Matter.abelian_curvature_annihilates_self_interaction",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Matter.Matter.abelian_curvature_annihilates_self_interaction",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.Matter.abelian_curvature_annihilates_self_interaction",
       "source_path": null
     },
     {
@@ -32363,7 +32430,17 @@
     },
     {
       "exists": false,
+      "name": "D0.Algebra.ArchiveCommutatorOperators.Matter.gauge_action_positive_from_origin",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Matter.Matter.gauge_action_positive_from_origin",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.Matter.gauge_action_positive_from_origin",
       "source_path": null
     },
     {
@@ -33115,7 +33192,27 @@
     },
     {
       "exists": false,
+      "name": "D0.Geometry.SceneCochainComplex.Topology.graded_nilpotency",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.GradedIncidenceComplex.Topology.graded_nilpotency",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Gauge.Topology.graded_nilpotency",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Topology.graded_nilpotency",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.Topology.graded_nilpotency",
       "source_path": null
     },
     {
@@ -33131,7 +33228,27 @@
     },
     {
       "exists": false,
+      "name": "D0.Geometry.SceneCochainComplex.Topology.discrete_exact_bianchi",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.GradedIncidenceComplex.Topology.discrete_exact_bianchi",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Gauge.Topology.discrete_exact_bianchi",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Topology.discrete_exact_bianchi",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.Topology.discrete_exact_bianchi",
       "source_path": null
     },
     {
@@ -33147,7 +33264,27 @@
     },
     {
       "exists": false,
+      "name": "D0.Geometry.SceneCochainComplex.Topology.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.GradedIncidenceComplex.Topology.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Gauge.Topology.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Topology.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.Topology.graded_bianchi_exact",
       "source_path": null
     },
     {
@@ -33163,7 +33300,27 @@
     },
     {
       "exists": false,
+      "name": "D0.Geometry.SceneCochainComplex.Gauge.abelian_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.GradedIncidenceComplex.Gauge.abelian_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Gauge.Gauge.abelian_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Gauge.abelian_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.Gauge.abelian_bianchi_exact",
       "source_path": null
     },
     {
@@ -33179,7 +33336,27 @@
     },
     {
       "exists": false,
+      "name": "D0.Geometry.SceneCochainComplex.Gauge.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.GradedIncidenceComplex.Gauge.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Gauge.Gauge.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Gauge.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Topology.Gauge.graded_bianchi_exact",
       "source_path": null
     },
     {
@@ -33187,6 +33364,12 @@
       "module": "D0.Gauge.GradedBianchiIdentity",
       "name": "D0.Gauge.graded_bianchi_exact",
       "source_path": "03_FORMALIZATION/D0/Gauge/GradedBianchiIdentity.lean"
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.SceneCochainComplex",
+      "name": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
+      "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
     },
     {
       "exists": false,
@@ -34186,6 +34369,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Core.detector_fixed_under_time_ladder",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Core.Core.detector_fixed_under_time_ladder",
       "source_path": null
     },
@@ -34208,6 +34396,11 @@
     {
       "exists": false,
       "name": "D0.Dynamics.TraceHeatCapacityGravity.Core.readout_depends_on_time_power",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Core.readout_depends_on_time_power",
       "source_path": null
     },
     {
@@ -34238,6 +34431,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Core.active_archive_trace_readout_integer",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Core.Core.active_archive_trace_readout_integer",
       "source_path": null
     },
@@ -34260,6 +34458,11 @@
     {
       "exists": false,
       "name": "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.heat_moment_T2_eq_even_lucas_trace",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Dynamics.heat_moment_T2_eq_even_lucas_trace",
       "source_path": null
     },
     {
@@ -34290,6 +34493,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Dynamics.heat_moment_eq_even_lucas",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Core.Dynamics.heat_moment_eq_even_lucas",
       "source_path": null
     },
@@ -34312,6 +34520,11 @@
     {
       "exists": false,
       "name": "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.lefschetz_spectrum_unfolds_scene",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Dynamics.lefschetz_spectrum_unfolds_scene",
       "source_path": null
     },
     {
@@ -34342,6 +34555,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Dynamics.boundary_capacity_is_quarter_cut_weight",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Core.Dynamics.boundary_capacity_is_quarter_cut_weight",
       "source_path": null
     },
@@ -34364,6 +34582,11 @@
     {
       "exists": false,
       "name": "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.saturated_region_forces_boundary_encoding",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Dynamics.saturated_region_forces_boundary_encoding",
       "source_path": null
     },
     {
@@ -34394,6 +34617,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Dynamics.black_hole_capacity_saturation_rule",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Core.Dynamics.black_hole_capacity_saturation_rule",
       "source_path": null
     },
@@ -34416,6 +34644,11 @@
     {
       "exists": false,
       "name": "D0.Dynamics.TraceHeatCapacityGravity.Dynamics.heat_trace_entropy_gradient_admits_gravity_interface",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.TraceHeatLucasCore.Dynamics.heat_trace_entropy_gradient_admits_gravity_interface",
       "source_path": null
     },
     {
@@ -35668,6 +35901,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Dynamics.internal_feedback_forced_by_split",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Dynamics.Dynamics.internal_feedback_forced_by_split",
       "source_path": null
     },
@@ -35690,6 +35928,11 @@
     {
       "exists": false,
       "name": "D0.Cosmology.FeedbackPartitionFunction.Dynamics.internal_feedback_resolvent_series",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Dynamics.internal_feedback_resolvent_series",
       "source_path": null
     },
     {
@@ -35720,6 +35963,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_determinant_return_cycles",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Dynamics.Cosmology.feedback_determinant_return_cycles",
       "source_path": null
     },
@@ -35746,6 +35994,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_variation_universal_source",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Dynamics.Cosmology.feedback_variation_universal_source",
       "source_path": null
     },
@@ -35768,6 +36021,11 @@
     {
       "exists": false,
       "name": "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_pressure_trace_log",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_pressure_trace_log",
       "source_path": null
     },
     {
@@ -36274,26 +36532,6 @@
     },
     {
       "exists": false,
-      "name": "D0.edge_alpha_trace_target",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "edge_alpha_trace_target",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.torus_ramification_puiseux_target",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "torus_ramification_puiseux_target",
-      "source_path": null
-    },
-    {
-      "exists": false,
       "name": "D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one",
       "source_path": null
     },
@@ -36306,6 +36544,16 @@
     {
       "exists": false,
       "name": "D0.zetaEdge_neg_one",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.torus_ramification_puiseux_target",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "torus_ramification_puiseux_target",
       "source_path": null
     },
     {
@@ -36665,12 +36913,6 @@
       "exists": false,
       "name": "D0.Topology.FiniteCochainNoAxion.scene_d1_d0_zero",
       "source_path": null
-    },
-    {
-      "exists": true,
-      "module": "D0.Geometry.SceneCochainComplex",
-      "name": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
-      "source_path": "03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean"
     },
     {
       "exists": false,
@@ -40872,57 +41114,15 @@
     },
     {
       "exists": true,
-      "module": "D0.VNext.PerronGNSTower",
-      "name": "D0.VNext.PerronGNSTower.gns_refinement_isometry",
-      "source_path": "03_FORMALIZATION/D0/VNext/PerronGNSTower.lean"
-    },
-    {
-      "exists": true,
       "module": "D0.Algebra.FibonacciAFTower",
       "name": "D0.Algebra.FibonacciAFTower.gns_refinement_isometry",
       "source_path": "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean"
-    },
-    {
-      "exists": false,
-      "name": "D0.VNext.gns_refinement_isometry",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Algebra.gns_refinement_isometry",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.gns_refinement_isometry",
-      "source_path": null
-    },
-    {
-      "exists": true,
-      "module": "D0.VNext.PerronGNSTower",
-      "name": "D0.VNext.PerronGNSTower.phi_ne_zero",
-      "source_path": "03_FORMALIZATION/D0/VNext/PerronGNSTower.lean"
     },
     {
       "exists": true,
       "module": "D0.Algebra.FibonacciAFTower",
       "name": "D0.Algebra.FibonacciAFTower.phi_ne_zero",
       "source_path": "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean"
-    },
-    {
-      "exists": false,
-      "name": "D0.VNext.phi_ne_zero",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Algebra.phi_ne_zero",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.phi_ne_zero",
-      "source_path": null
     },
     {
       "exists": true,
@@ -42740,24 +42940,10 @@
       "source_path": null
     },
     {
-      "exists": false,
-      "name": "D0.Extensions.X5.AlphaBoundary.alpha_outside_x5",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Extensions.X5.alpha_outside_x5",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Extensions.alpha_outside_x5",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.alpha_outside_x5",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Extensions.X5.AlphaBoundary",
+      "name": "D0.Extensions.X5.Alpha.alpha_outside_x5",
+      "source_path": "03_FORMALIZATION/D0/Extensions/X5/AlphaBoundary.lean"
     },
     {
       "exists": true,
@@ -48290,46 +48476,10 @@
       "source_path": null
     },
     {
-      "exists": false,
-      "name": "D0.Synthesis.SymmetricFunctionCalculus.scene_gap",
-      "source_path": null
-    },
-    {
-      "exists": true,
-      "module": "D0.Synthesis.ActiveSplittingFromDistinctness",
-      "name": "D0.Synthesis.ActiveSplittingFromDistinctness.scene_gap",
-      "source_path": "03_FORMALIZATION/D0/Synthesis/ActiveSplittingFromDistinctness.lean"
-    },
-    {
       "exists": true,
       "module": "D0.Synthesis.ActiveSpectrumClosedForm",
       "name": "D0.Synthesis.ActiveSpectrumClosedForm.scene_gap",
       "source_path": "03_FORMALIZATION/D0/Synthesis/ActiveSpectrumClosedForm.lean"
-    },
-    {
-      "exists": false,
-      "name": "D0.Synthesis.ActiveWindowIrrational.scene_gap",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Combinatorics.TripartiteVieta.scene_gap",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Synthesis.scene_gap",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Combinatorics.scene_gap",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.scene_gap",
-      "source_path": null
     },
     {
       "exists": true,
@@ -58958,6 +59108,16 @@
       "source_path": null
     },
     {
+      "exists": false,
+      "name": "D0.Algebra.gns_refinement_isometry",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.gns_refinement_isometry",
+      "source_path": null
+    },
+    {
       "exists": true,
       "module": "D0.Algebra.FibonacciAFTower",
       "name": "D0.Algebra.FibonacciAFTower.fibonacci_af_tower_owner",
@@ -59218,11 +59378,6 @@
       "module": "D0.Algebra.FibonacciPerronTraceCanonicity",
       "name": "D0.Algebra.FibonacciPerronTraceCanonicity.phi_gt_one",
       "source_path": "03_FORMALIZATION/D0/Algebra/FibonacciPerronTraceCanonicity.lean"
-    },
-    {
-      "exists": false,
-      "name": "D0.Algebra.phi_gt_one",
-      "source_path": null
     },
     {
       "exists": true,
@@ -62441,21 +62596,6 @@
       "source_path": null
     },
     {
-      "exists": false,
-      "name": "D0.Algebra.Sedenions.triality_sedenion_s3_disjointness_guard",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Algebra.triality_sedenion_s3_disjointness_guard",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.triality_sedenion_s3_disjointness_guard",
-      "source_path": null
-    },
-    {
       "exists": true,
       "module": "D0.Algebra.AlbertJordan",
       "name": "D0.Algebra.AlbertJordan.majorana_with_scalar_does_not_force_b_zero",
@@ -63399,17 +63539,107 @@
     },
     {
       "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_b0_matrix_gram",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_matrix_gram",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinement",
+      "name": "D0.Geometry.archive_b0_matrix_gram",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_b0_matrix_gram",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_b0_matrix_gram_diagonal",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_matrix_gram_diagonal",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinement",
+      "name": "D0.Geometry.archive_b0_matrix_gram_diagonal",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_b0_matrix_gram_diagonal",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Geometry.Archive1DCochainRefinement.b1_isometry",
       "source_path": null
     },
     {
       "exists": false,
-      "name": "D0.Geometry.b1_isometry",
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.b1_isometry",
       "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinement",
+      "name": "D0.Geometry.b1_isometry",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean"
     },
     {
       "exists": false,
       "name": "D0.b1_isometry",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_b1_matrix_gram",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_b1_matrix_gram",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinement",
+      "name": "D0.Geometry.archive_b1_matrix_gram",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_b1_matrix_gram",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_b1_matrix_mulVec",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_b1_matrix_mulVec",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinement",
+      "name": "D0.Geometry.archive_b1_matrix_mulVec",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_b1_matrix_mulVec",
       "source_path": null
     },
     {
@@ -63419,8 +63649,14 @@
     },
     {
       "exists": false,
-      "name": "D0.Geometry.intertwining_d_b0_eq_b1_d",
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.intertwining_d_b0_eq_b1_d",
       "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinement",
+      "name": "D0.Geometry.intertwining_d_b0_eq_b1_d",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean"
     },
     {
       "exists": false,
@@ -63429,7 +63665,138 @@
     },
     {
       "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_b0_literal_projection",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_literal_projection",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinementBinding",
+      "name": "D0.Geometry.archive_b0_literal_projection",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinementBinding.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_b0_literal_projection",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_b0_literal_matrix",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_literal_matrix",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinementBinding",
+      "name": "D0.Geometry.archive_b0_literal_matrix",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinementBinding.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_b0_literal_matrix",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_b0_matrix_eq_archive_lift",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_b0_matrix_eq_archive_lift",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinementBinding",
+      "name": "D0.Geometry.archive_b0_matrix_eq_archive_lift",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinementBinding.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_b0_matrix_eq_archive_lift",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_lift_operator_gram",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_lift_operator_gram",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinementBinding",
+      "name": "D0.Geometry.archive_lift_operator_gram",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinementBinding.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_lift_operator_gram",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_scaled_block_with_owner_scale",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_scaled_block_with_owner_scale",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinementBinding",
+      "name": "D0.Geometry.archive_scaled_block_with_owner_scale",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinementBinding.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_scaled_block_with_owner_scale",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinement.archive_unscaled_chain_fails_owner_scales",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_unscaled_chain_fails_owner_scales",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.Archive1DCochainRefinementBinding",
+      "name": "D0.Geometry.archive_unscaled_chain_fails_owner_scales",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinementBinding.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_unscaled_chain_fails_owner_scales",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Geometry.Archive1DCochainRefinement.archive_1d_cochain_refinement_owner",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.Archive1DCochainRefinementBinding.archive_1d_cochain_refinement_owner",
       "source_path": null
     },
     {
@@ -63792,21 +64159,6 @@
     {
       "exists": false,
       "name": "D0.matter_localization_nonuniqueness_nogo_owner",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Matter.MatterLocalizationNonuniquenessNoGo.matter_neutrality_m1_forced",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Matter.matter_neutrality_m1_forced",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.matter_neutrality_m1_forced",
       "source_path": null
     },
     {
@@ -67761,29 +68113,10 @@
       "source_path": null
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveAffineCartanConnection.affine_mul_assoc",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.affine_mul_assoc",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchivePathWordAlgebra.affine_mul_assoc",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.affine_mul_assoc",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.affine_mul_assoc",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.ArchiveAffineCartanConnection",
+      "name": "D0.Geometry.AffineCartanMap.affine_mul_assoc",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean"
     },
     {
       "exists": false,
@@ -68358,104 +68691,28 @@
       "source_path": null
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveAffineCartanConnection.crossed_finrank",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.ArchivePathWordAlgebra",
+      "name": "D0.Geometry.ScalarCrossed.crossed_finrank",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePathWordAlgebra.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.crossed_finrank",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.ArchivePathWordAlgebra",
+      "name": "D0.Geometry.ChainPath.pathEval_append",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePathWordAlgebra.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.ArchivePathWordAlgebra.crossed_finrank",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.ArchivePathWordAlgebra",
+      "name": "D0.Geometry.ChainPath.pathEval_reverse",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePathWordAlgebra.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.crossed_finrank",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.crossed_finrank",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveAffineCartanConnection.pathEval_append",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.pathEval_append",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchivePathWordAlgebra.pathEval_append",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.pathEval_append",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.pathEval_append",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveAffineCartanConnection.pathEval_reverse",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.pathEval_reverse",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchivePathWordAlgebra.pathEval_reverse",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.pathEval_reverse",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.pathEval_reverse",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveAffineCartanConnection.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.ArchivePathWordAlgebra.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.ArchivePathWordAlgebra",
+      "name": "D0.Geometry.ChainPath.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePathWordAlgebra.lean"
     },
     {
       "exists": false,
@@ -68898,319 +69155,46 @@
       "source_path": null
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.A4DSecondOrderCartanCongruence.secondOrderCongruenceCoefficient_formula",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+      "name": "D0.Geometry.TwoJet.secondOrderCongruenceCoefficient_formula",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.A4DAffineMatterLiftObstruction.secondOrderCongruenceCoefficient_formula",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+      "name": "D0.Geometry.TwoJet.weightedCongruence_eq",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.A4DActionGroupoidSecondJet.secondOrderCongruenceCoefficient_formula",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+      "name": "D0.Geometry.TwoJet.exponentialSecondJet_specialization",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.A4DMovingDifferentialSecondJet.secondOrderCongruenceCoefficient_formula",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+      "name": "D0.Geometry.TwoJet.backgroundJet_eq_congruence",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.A4DCellHessianTransverseModulus.secondOrderCongruenceCoefficient_formula",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+      "name": "D0.Geometry.TwoJet.exponential_background_specialization",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.A4DLocatedMatterCellEnergy.secondOrderCongruenceCoefficient_formula",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+      "name": "D0.Geometry.TwoJet.dualInverseTranspose_quad",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean"
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.A4DScalarDeltaSecondJet.secondOrderCongruenceCoefficient_formula",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.secondOrderCongruenceCoefficient_formula",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.secondOrderCongruenceCoefficient_formula",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DSecondOrderCartanCongruence.weightedCongruence_eq",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DAffineMatterLiftObstruction.weightedCongruence_eq",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DActionGroupoidSecondJet.weightedCongruence_eq",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DMovingDifferentialSecondJet.weightedCongruence_eq",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DCellHessianTransverseModulus.weightedCongruence_eq",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DLocatedMatterCellEnergy.weightedCongruence_eq",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DScalarDeltaSecondJet.weightedCongruence_eq",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.weightedCongruence_eq",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.weightedCongruence_eq",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DSecondOrderCartanCongruence.exponentialSecondJet_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DAffineMatterLiftObstruction.exponentialSecondJet_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DActionGroupoidSecondJet.exponentialSecondJet_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DMovingDifferentialSecondJet.exponentialSecondJet_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DCellHessianTransverseModulus.exponentialSecondJet_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DLocatedMatterCellEnergy.exponentialSecondJet_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DScalarDeltaSecondJet.exponentialSecondJet_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.exponentialSecondJet_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.exponentialSecondJet_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DSecondOrderCartanCongruence.backgroundJet_eq_congruence",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DAffineMatterLiftObstruction.backgroundJet_eq_congruence",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DActionGroupoidSecondJet.backgroundJet_eq_congruence",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DMovingDifferentialSecondJet.backgroundJet_eq_congruence",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DCellHessianTransverseModulus.backgroundJet_eq_congruence",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DLocatedMatterCellEnergy.backgroundJet_eq_congruence",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DScalarDeltaSecondJet.backgroundJet_eq_congruence",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.backgroundJet_eq_congruence",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.backgroundJet_eq_congruence",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DSecondOrderCartanCongruence.exponential_background_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DAffineMatterLiftObstruction.exponential_background_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DActionGroupoidSecondJet.exponential_background_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DMovingDifferentialSecondJet.exponential_background_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DCellHessianTransverseModulus.exponential_background_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DLocatedMatterCellEnergy.exponential_background_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DScalarDeltaSecondJet.exponential_background_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.exponential_background_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.exponential_background_specialization",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DSecondOrderCartanCongruence.dualInverseTranspose_quad",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DAffineMatterLiftObstruction.dualInverseTranspose_quad",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DActionGroupoidSecondJet.dualInverseTranspose_quad",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DMovingDifferentialSecondJet.dualInverseTranspose_quad",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DCellHessianTransverseModulus.dualInverseTranspose_quad",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DLocatedMatterCellEnergy.dualInverseTranspose_quad",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DScalarDeltaSecondJet.dualInverseTranspose_quad",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.dualInverseTranspose_quad",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.dualInverseTranspose_quad",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DSecondOrderCartanCongruence.constitutiveSecondDerivative",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DAffineMatterLiftObstruction.constitutiveSecondDerivative",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DActionGroupoidSecondJet.constitutiveSecondDerivative",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DMovingDifferentialSecondJet.constitutiveSecondDerivative",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DCellHessianTransverseModulus.constitutiveSecondDerivative",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DLocatedMatterCellEnergy.constitutiveSecondDerivative",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.A4DScalarDeltaSecondJet.constitutiveSecondDerivative",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Geometry.constitutiveSecondDerivative",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.constitutiveSecondDerivative",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+      "name": "D0.Geometry.TwoJet.constitutiveSecondDerivative",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean"
     },
     {
       "exists": false,
@@ -71680,5 +71664,57 @@
       "name": "D0.scalarCrossedFirstJet_integrability_boundary",
       "source_path": null
     }
-  ]
+  ],
+  "compaction": {
+    "omitted_field": "claim_locator_crosswalk.mappings",
+    "reason": "The request and declaration resolutions are retained; full mappings are reproducible with the inventory tool.",
+    "crosswalk_summary": {
+      "no_theorem_locator": 178,
+      "resolved_in_declared_module": 2579,
+      "unresolved": 4
+    },
+    "unresolved_mappings": [
+      {
+        "claim_id": "D0-EDGE-002",
+        "theorem_atom": "torus_ramification_puiseux_target",
+        "module_locator": "",
+        "declared_modules": [],
+        "resolution_status": "unresolved",
+        "matches": []
+      },
+      {
+        "claim_id": "D0-ARCHIVE-CUBICAL-COCHAIN-CARRIER-001",
+        "theorem_atom": "card_cubical_cochain_carrier",
+        "module_locator": "D0.Geometry.ArchiveCubicalCochainCarrier",
+        "declared_modules": [
+          "D0.Geometry.ArchiveCubicalCochainCarrier"
+        ],
+        "resolution_status": "unresolved",
+        "matches": []
+      },
+      {
+        "claim_id": "D0-ARCHIVE-CUBICAL-COCHAIN-CARRIER-001",
+        "theorem_atom": "cubical_betti_sum_eq_sixteen",
+        "module_locator": "D0.Geometry.ArchiveCubicalCochainCarrier",
+        "declared_modules": [
+          "D0.Geometry.ArchiveCubicalCochainCarrier"
+        ],
+        "resolution_status": "unresolved",
+        "matches": []
+      },
+      {
+        "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
+        "theorem_atom": "hodge_mass_trace_sum",
+        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights",
+        "declared_modules": [
+          "D0.Geometry.ArchiveRefinementHodgeWeights"
+        ],
+        "resolution_status": "unresolved",
+        "matches": []
+      }
+    ],
+    "full_output_sha256": "c20e3035c291b7e599d0499d967353253d42d63a5f73285c44c6192d61c6b5a4",
+    "full_output_bytes": 4410649,
+    "replay_command": "python3 tools/lean_declaration_inventory.py --all-claims --resolution-only"
+  }
 }

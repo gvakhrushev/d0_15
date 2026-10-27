@@ -58,6 +58,16 @@ class PairingOverlayTests(unittest.TestCase):
             body += f"Path({self.sources[0]!r}).write_text('checker mutation\\n')\n"
         return (body + "print('historical fixture executed')\n").encode()
 
+    def poison_common_worktree(self) -> tuple[Path, bytes]:
+        wrong = self.root / "other-user-tree"
+        wrong.mkdir()
+        sentinel = wrong / "sentinel.txt"
+        sentinel.write_bytes(b"untouched other checkout\n")
+        config = self.repo / ".git" / "config"
+        self.git("config", "--file", str(config), "extensions.worktreeConfig", "true")
+        self.git("config", "--file", str(config), "core.worktree", str(wrong))
+        return wrong, sentinel.read_bytes()
+
     def prepare_artifacts(self) -> None:
         self.write(pairing.ENTRYPOINT, self.checker_body)
         self.write(pairing.BASE + ".py", b"# fixture program\n")
@@ -186,6 +196,46 @@ class PairingOverlayTests(unittest.TestCase):
         self.assertEqual(result["status"], "MUTATION", result)
         self.assertTrue(result["historical_input_mutation"])
         self.assertIn(b"checker mutation", (logs / "tracked.patch").read_bytes())
+        self.assertEqual((self.repo / self.sources[0]).read_bytes(), self.current[self.sources[0]])
+
+    def test_common_core_worktree_cannot_redirect_isolated_replay_or_checker_git(self) -> None:
+        self.checker_body = self.checker() + (
+            "import os, subprocess\n"
+            "top = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], text=True).strip()\n"
+            "assert Path(top).resolve() == Path.cwd().resolve()\n"
+            "assert Path(os.environ['GIT_WORK_TREE']).resolve() == Path.cwd().resolve()\n"
+            "assert Path(os.environ['GIT_DIR']).is_dir()\n"
+            "unbound = dict(os.environ)\n"
+            "unbound.pop('GIT_DIR', None); unbound.pop('GIT_WORK_TREE', None)\n"
+            "plain = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], text=True, env=unbound).strip()\n"
+            f"assert Path(plain).resolve() == Path({str(self.root / 'other-user-tree')!r}).resolve()\n"
+            "subprocess.run(['git', 'status', '--porcelain'], check=True)\n"
+        ).encode()
+        self.prepare_artifacts()
+        self.commit()
+        wrong, sentinel = self.poison_common_worktree()
+        result, logs = self.run_checker()
+        self.assertEqual((result["status"], result["returncode"]), ("PASS", 0), result)
+        self.assertFalse(result["tracked_mutation"])
+        self.assertEqual((wrong / "sentinel.txt").read_bytes(), sentinel)
+        self.assertEqual(sorted(p.name for p in wrong.iterdir()), ["sentinel.txt"])
+        self.assertEqual((self.repo / self.sources[0]).read_bytes(), self.current[self.sources[0]])
+        self.assertEqual((logs / "tracked-status.txt").read_bytes(), b"")
+
+    def test_common_core_worktree_cannot_hide_staged_checker_mutation(self) -> None:
+        self.checker_body = self.checker(mutation=True) + (
+            "import subprocess\n"
+            f"subprocess.run(['git', 'add', {self.sources[0]!r}], check=True)\n"
+        ).encode()
+        self.prepare_artifacts()
+        self.commit()
+        wrong, sentinel = self.poison_common_worktree()
+        result, logs = self.run_checker()
+        self.assertEqual(result["status"], "MUTATION", result)
+        self.assertTrue(result["historical_input_mutation"])
+        self.assertIn(b"checker mutation", (logs / "index.patch").read_bytes())
+        self.assertEqual((wrong / "sentinel.txt").read_bytes(), sentinel)
+        self.assertEqual(sorted(p.name for p in wrong.iterdir()), ["sentinel.txt"])
         self.assertEqual((self.repo / self.sources[0]).read_bytes(), self.current[self.sources[0]])
 
     def test_unsafe_and_symlink_paths_are_rejected(self) -> None:
