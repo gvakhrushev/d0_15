@@ -448,3 +448,78 @@ Suppose the actual same-execution native physical map from original coframe/link
 A source equivalence can now be proved by constructing and verifying the **actual native 2×2 FIRST-JET map** between those two pairs (plus the explicit first sources of ALL non-A Book/scene/clock/oldRIGHT components), including its kernel. The map must come from genuine D0 shared CAR/plaquette history operands, not a chosen matrix sending two numbers to \(\lambda_-\). If that genuine map and full source pass S25 over the generic common-null family, S28 extends the result to its stationary Einstein roots.
 
 The crucial nontrivial boundary is now precise. Spectral self-reading of native r,nu is proved; spectral first-source closure on original A is proved. **Physical coframe/link/matter ↦ this same original A and FULL native Book valuation remain open.** M1 alone does not identify the two coordinate pairs or choose away actually distinguishable archive records. Consequently \`GR_closed=false\`. This is a real algebraic reduction in the existing physical composition, not another geometry solution or a new source fitted from Einstein.
+
+
+## 12. Theorem S-K — the ACTUAL original full128 HJR return is a SECOND-ORDER SCALAR recurrence, with its complete native first source
+
+This is a direct consuming application to a previously owned SAME-execution identity, not a proposed replacement feedback. The [exact original full128 retained-history return](sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md) proves with its complete 128 fine Kraus, unchanged nonblank cut, and untouched 128-dimensional oldRIGHT reference
+\[
+F_n=V_n^\dagger Q_0V_n
+=\bigl[I_{16}-B^{2n}\bigr]\otimes I_{128},
+\quad
+B=K_0=I_{16}-2p^2A,
+\quad p=\varphi^{-1}.
+\tag{S36}
+\]
+The original physical used horizon is \(n=128L^2\) for its declared coframe-scale programme; the operator identity holds at every honest integer n. The actual field map and independently varied clock are not silently changed by evaluating it at different n.
+
+By the ORIGINAL full16 quadratic identity S5, let \(\lambda_\pm\) be the two distinct actual eigenvalues of A (multiplicity 8 each), and put
+\[
+\begin{aligned}
+\sigma_B&=(1-2p^2\lambda_+)+(1-2p^2\lambda_-)
+       =2-2p^2 s,\\
+\tau_B&=(1-2p^2\lambda_+)(1-2p^2\lambda_-)
+       =1-2p^2s+4p^4t,\\
+L_0&=2,\quad L_1=\sigma_B,\quad
+L_{k+1}=\sigma_B L_k-\tau_B L_{k-1}\quad(k\ge1).
+\end{aligned}
+\tag{S37}
+\]
+Here \(s,t\) are the SAME original S4 scalars; \(L_k=b_+^k+b_-^k\) by the elementary characteristic-polynomial recurrence. No matrix powers or spectral radicals are needed to compute the complete history determinant.
+
+For the original fixed physical fugacity \(0<z<1\) (in its configured GR input \(z=2^{-20}\)), define the exact scalar
+\[
+\boxed{\mathfrak G_{n,z}
+=(1-z)^2+z(1-z)L_{2n}+z^2\tau_B^{2n}.}
+\tag{S38}
+\]
+
+**THEOREM (full native closed-loop value):**
+\[
+\boxed{\begin{aligned}
+\det_{16\otimes128}(I-zF_n)&=\mathfrak G_{n,z}^{\,1024},\\
+J^{\rm full128}_{\rm HJR,n}(z)
+&:=-\operatorname{Tr}_{16\otimes128}\log(I-zF_n)
+=\boxed{-1024\,\ln\mathfrak G_{n,z}} .
+\end{aligned}}
+\tag{S39}
+\]
+
+Proof: on either 8-fold eigenblock of A, \(B=b_\pm I\), \(F_n=(1-b_\pm^{2n})I\), and therefore \(I-zF_n=(1-z+zb_\pm^{2n})I\). Each eigenblock carries the real original oldRIGHT multiplicity 128. The product of the two scalar factors is exactly S38. This is the ORIGINAL closed full-carrier HJR, not a prepared single-shell value or a new reporter.
+
+**THEOREM (all-ambient FIRST-SOURCE law).** For a fixed integer n, fixed p,z, and an arbitrary genuinely admitted Hermitian field-induced \(\delta A\), even one splitting the two repeated eigenvalues to first order, define
+\[
+f_{n,z}(x)=-\ln\!\bigl(1-z+z(1-2p^2x)^{2n}\bigr),\quad
+f'_{n,z}(x)=
+\frac{4np^2z(1-2p^2x)^{2n-1}}
+{1-z+z(1-2p^2x)^{2n}}.
+\tag{S40}
+\]
+Then
+\[
+\boxed{
+DJ^{\rm full128}_{\rm HJR,n}[\delta A]
+=128\left[
+\alpha_{f_{n,z}}\,D\operatorname{Tr}A[\delta A]
++\frac{\beta_{f_{n,z}}}{2}\,D\operatorname{Tr}A^2[\delta A]
+\right],
+}
+\tag{S41}
+\]
+with EXACT divided-difference coefficients \(\alpha_f,\beta_f\) from S32 evaluated at the actual original \(\lambda_\pm\).
+
+This uses the original **full closed-return** functional derivative, not an asserted value-only equivalence: \(J=128\,\operatorname{Tr}_{16}f(A)\), and the trace Fréchet first derivative is \(\operatorname{Tr}f'(A)\delta A\) for arbitrary noncommuting δA. S32 then closes it on just the two true native trace covectors. Moving fugacity, moving original p, integer clock, frame, physically different cut, or extra Book Info/work/scene terms have their own explicitly separate sources.
+
+**Consequences.** Full original DATA preparation S8, stationary paid-port COST S11, complete ORIGINAL HJR closed-return value/source S39–S41, and original coherent fresh/archive Info Q12–Q25 are now all executable from the SAME native CAR16 source; HJR and the per-tick stationary/long-history Info have particularly small two-scalar forms. The original HJR does NOT thereby equal the configured AF×scene Golden-J2 geometric action. This would require the actual original SAME-field map between the full128 return and the original geometric face operand D_rs, as well as the true compulsory full Book action and all independent apparatus/oldRIGHT/clock equations. Do not promote \`GR_closed\` from an internal spectral recurrence.
+
+**Numerical crosscheck without fitting:** using the genuine original \(r=1/9,\nu=3/5\), fixed \(z=2^{-20}\) and all128 oldRIGHT, both eigenblock determinant and scalar recurrence give \(J_{n,z}\approx\) \(4.1014328443\cdot10^{-5}\) at n=1, \(1.2047322415\cdot10^{-4}\) at n=3, \(3.0495184983\cdot10^{-4}\) at n=8, and \(1.8232483434\cdot10^{-3}\) at n=128. This is a value-control on the actual scalarized original source; first-source S41 follows by the exact matrix trace theorem. It is NOT an all42 native Euler/GR-root replay.
