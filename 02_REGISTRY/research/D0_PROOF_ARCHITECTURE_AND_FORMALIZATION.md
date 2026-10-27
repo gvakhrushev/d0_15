@@ -282,6 +282,10 @@ the generated view. The earlier reduced `True` conclusion is therefore
 superseded for this ID-propagation check only. This verifies registry-to-Lean
 metadata preservation; it does not prove, remove, or discharge any listed
 assumption, and no claim row, assumption ID, owner, or release status changed.
+The six strings are registry identifiers, not Lean `Prop` terms: the checked
+theorem has no binders and no declaration yet maps these IDs to proposition
+types. The actual conditional bridge and its semantic assumption adapter
+remain open; this crosswalk is not a formal physical bridge.
 
 The compiled declaration inventory was collected from clean snapshot
 `972f8c2a4084a86dbf20114deda2ffda65b9ea85` through public import `D0.All`,
