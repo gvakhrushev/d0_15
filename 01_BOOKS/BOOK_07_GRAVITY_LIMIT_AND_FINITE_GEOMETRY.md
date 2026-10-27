@@ -1330,10 +1330,18 @@ The non-vacuous scalar reduction is successfully closed at its Lean owner via th
 
 ```text
 scalar_stationarity_implies_archive_poisson:
-  ScalarSectorStationary n φ ρ → ArchivePoissonEquation φ ρ
+  ScalarSectorStationary n φ ρ →
+  NeutralSource ρ →
+  ArchivePoissonEquation φ ρ
 ```
 
-The predicate `ScalarSectorStationary` is a non-vacuous point-test stationarity condition, completing the weak-field reduction proof.
+The neutrality premise is necessary. `ScalarSectorStationary` tests only
+zero-sum perturbations, so it forces the Poisson residual to be constant; the
+neutral-source condition makes that constant zero. Lean also gives the exact
+counterexample `scalar_stationarity_without_neutrality_counterexample`: for
+`n = 0`, `φ = 0`, and `ρ = 1`, scalar stationarity holds while neutrality and
+the Poisson equation both fail. The weak-field reduction is therefore closed
+for neutral sources; the unconditional implication is false.
 
 ## 07.33 Final finite-geometry theorem chain
 
@@ -1359,7 +1367,7 @@ Machine ownership:
 | admissible variations see only the symmetric representative | `CORE-CLOSED` | `D0.pairing_depends_only_on_symmetric_part` |
 | canonical stress representative is symmetric and variation-equivalent | `CORE-CLOSED` | `D0.raw_gradient_equivalent_to_canonical_stress`; `D0.canonical_stress_symmetric` |
 | Poisson solvability requires neutral source and is unique modulo constants | `CORE-CLOSED` | `D0.poisson_requires_neutral_source`; `D0.poisson_solution_unique_mod_constant` |
-| scalar stationarity implies archive Poisson | `CORE-CLOSED` | `D0.scalar_stationarity_implies_archive_poisson` |
+| scalar stationarity plus neutral source implies archive Poisson | `CORE-CLOSED` under `NeutralSource ρ` | `D0.scalar_stationarity_implies_archive_poisson`; `D0.scalar_stationarity_without_neutrality_counterexample` refutes the unconditional form |
 | vector and edge equations have closed operator origins | `CORE-CLOSED` | `D0.Bridge.vector_operator_origin_closed`; `D0.Bridge.edge_stiffness_origin_closed` |
 | finite TT representative is symmetric, trace-free and transverse | `CORE-CLOSED` | `D0.Geometry.finite_spin2_tt_carrier_closed` |
 | weak-field gauge/trace quotient yields the TT representative | `CORE-CLOSED` | `D0.Geometry.finite_weak_field_quotient_yields_tt_representative` |
@@ -1369,8 +1377,9 @@ Machine ownership:
 | continuum Einstein-Hilbert reading | `BRIDGE-CALIBRATION` | finite spectral ladder plus declared smooth/continuum bridge |
 
 Thus the active scalar equation uses a point-test stationarity predicate with
-direct Lean ownership, and the continuum Einstein language remains a bridge
-calibration rather than a core smooth-manifold theorem.  The `a0/a2` trace
+direct Lean ownership and an explicit neutral-source premise, and the
+continuum Einstein language remains a bridge calibration rather than a core
+smooth-manifold theorem. The `a0/a2` trace
 ratio is a dimensionless `CORE-CLOSED` finite spectral shape.  Any `c0/c2` SI
 coefficient ratio belongs to `ExternalSICalibration`; `H0`, `G_N` and `Lambda`
 are not outputs of `DimensionlessCoreTraces`.

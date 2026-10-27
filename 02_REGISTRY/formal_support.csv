@@ -1,4 +1,5 @@
 lean_module,lean_file,role,referenced_by
+D0.Active.ScalarPoissonReduction,D0/Active/ScalarPoissonReduction.lean,EXPLICIT_SUPPORT,D0-ARCHIVE-SCALAR-REDUCTION-001;02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md
 D0.Algebra.CayleyDickson,D0/Algebra/CayleyDickson.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Algebra/Sedenions.lean
 D0.Algebra.GaloisComposite,D0/Algebra/GaloisComposite.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Synthesis/SDECubicSpectralDisjointness.lean;03_FORMALIZATION/D0/Cosmology/PhasonWDESignNormalization.lean
 D0.Algebra.FibonacciAFTower,D0/Algebra/FibonacciAFTower.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md;02_REGISTRY/claims.csv;03_FORMALIZATION/D0/VNext/PerronGNSTower.lean;03_FORMALIZATION/D0/VNext/FibonacciAFAlgebra.lean
@@ -46,6 +47,7 @@ D0.Gravity.A2CompensatorNoether,D0/Gravity/A2CompensatorNoether.lean,EXPLICIT_SU
 D0.Gravity.A4DLinearizedMetricResponse,D0/Gravity/A4DLinearizedMetricResponse.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/A4D_LOCAL_GRAVITY_RESPONSE_SEED.md
 D0.Gravity.CriticalCollapseDSS,D0/Gravity/CriticalCollapseDSS.lean,EXPLICIT_SUPPORT,01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md
 D0.Gravity.FiniteGravityResponseSingleWitness,D0/Gravity/FiniteGravityResponseSingleWitness.lean,EXPLICIT_SUPPORT,D0-SPECTRAL-EINSTEIN-001;D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001
+D0.Interface.ScalarPoissonReduction,D0/Interface/ScalarPoissonReduction.lean,EXPLICIT_SUPPORT,D0-ARCHIVE-SCALAR-REDUCTION-001;02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md
 D0.Matter.BaryonS3Symmetrizer,D0/Matter/BaryonS3Symmetrizer.lean,EXPLICIT_SUPPORT,01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md;01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md
 D0.Matter.Book04CoefficientOrigin,D0/Matter/Book04CoefficientOrigin.lean,EXPLICIT_SUPPORT,01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md
 D0.Matter.Book04ConcreteSelectors,D0/Matter/Book04ConcreteSelectors.lean,EXPLICIT_SUPPORT,01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md

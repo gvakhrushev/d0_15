@@ -10837,3 +10837,43 @@ validator passes; the formalization-debt audit remains at 5 findings against
 its 5-finding baseline; repository validation reports zero warnings; and work
 validation passes after regenerating `00_WORK/STATUS.md`. This corrects the
 formal support boundary for these three rows and does not freeze or accept C0.
+
+## Scalar stationarity requires a neutral source (27 October 2026)
+
+The exact-owner review exposed an additional scope mismatch in the `BOOK_07`
+§07.32 scalar reduction. The Lean theorem
+`D0.scalar_stationarity_implies_archive_poisson` in
+`03_FORMALIZATION/D0/Interface/ScalarPoissonReduction.lean` has the explicit
+type
+
+```text
+ScalarSectorStationary n φ ρ →
+NeutralSource ρ →
+ArchivePoissonEquation φ ρ
+```
+
+This premise is structural: `ScalarSectorStationary` tests only zero-sum
+perturbations, which imply equality of all Poisson residual entries but do not
+set their common value to zero. Neutrality makes the residual sum zero and
+therefore forces that constant to vanish. The additional compiled declaration
+`D0.scalar_stationarity_without_neutrality_counterexample` witnesses the
+failure at `n = 0`, `φ = 0`, `ρ = 1`: stationarity holds, while source
+neutrality and the Poisson equation both fail.
+
+Accordingly, the claim row now names the exact owning module and both the
+conditional theorem and counterexample; `formal_support.csv` exposes that
+module. The prior `D0.Active.ScalarPoissonReduction` path remains a one-line
+compatibility import of that canonical owner and is explicitly retained in the
+support closure; it is not listed as the theorem's owner. `BOOK_07` §07.32 and
+its theorem-chain table now state the neutral-source premise and mark the
+unconditional version false. This preserves the proved conditional finite
+result and removes the stronger unsupported wording. It does not change the
+physical GR route or its open source-selection obligations.
+
+The changed scalar module passes its narrow build; the generated `ClaimMap`
+passes its two-job narrow build; and final `D0.All` passes all 4,741 jobs.
+The 72 focused inventory/view/coverage tests pass, as do generated-view
+freshness, claim-map coverage, repository validation (zero warnings), work
+validation, and the formalization-debt non-growth check (5 findings, matching
+the 5-entry baseline). These checks validate the finite source correction;
+they do not close the physical GR obligations above.

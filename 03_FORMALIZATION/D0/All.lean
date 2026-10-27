@@ -530,6 +530,7 @@ import D0.Integration.V15.Feshbach
 import D0.Integration.V15.PhysicalBoundary
 import D0.Integration.V15.RawZone
 import D0.Integration.V15.Refinement
+import D0.Interface.ScalarPoissonReduction
 import D0.LeptonClosure.BranchIndexUnique
 import D0.LeptonClosure.BranchRowMinimalExtension
 import D0.LeptonClosure.ObservableBranchCanonicity
