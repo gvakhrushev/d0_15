@@ -2469,7 +2469,7 @@ class ProofArchitectureTests(unittest.TestCase):
         replay = summary["replay"]
         self.assertEqual(replay["source_commit"], summary["snapshot_commit"])
         self.assertEqual(
-            replay["command"], "python -X utf8 tools/proof_architecture_cold_start.py"
+            replay["command"], "python3 tools/proof_architecture_cold_start.py"
         )
         self.assertEqual(
             replay["runner_sha256"],
