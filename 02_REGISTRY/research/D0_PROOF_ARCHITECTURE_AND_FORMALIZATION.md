@@ -10672,5 +10672,45 @@ This is a registry crosswalk only. The IDs do not become Lean propositions,
 the theorem does not gain assumption binders, and the physical bridge remains
 open. A synthetic test covers mixed comma/semicolon separators and missing IDs;
 a repository regression checks all six real links and their distinct owners.
-The current-source cold-start and search-process replay receipts are recorded
-below after updating the search input.
+
+The search-input replay used clean snapshot
+`47038a6568ebde51b7f208ec1eb89c8f4e148864` (`worktree_dirty=false`). The
+[cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_assumption_links_v18.json)
+found all required sources in 24/24 cases (169 source references; 25 cases
+including the benchmark). The full output was 9,830,856 bytes, SHA-256
+`a67bf50b70786bd13853f2ae4abfb9aa666a6454f766bbce36c7216468071e02`. The
+32,944-byte summary retains per-case outcomes and selected audited retrieval
+records while omitting query fixtures and source excerpts reproducible from the
+pinned runner and snapshot. Its blob is
+`38c7395a51d4abb74bd84fdc3d0c0316e0722c05`, SHA-256
+`75b2203c03a357c68a5a763377946fe98c0e14423816f0c29379e0b496a09cb9`.
+
+The matching
+[24-query process comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_assumption_links_v18.json)
+found the scoped expected source in 7/7 current-search queries and 0/7 legacy
+queries. The serialized answer proxy was 529,927 bytes for current search and
+48 bytes for legacy search; it is not a token or file-read measure. Its 69,603
+bytes are pinned at blob `aafc66b2cd7aed3b6062496b268f1d4e7fc1002a`, SHA-256
+`6c236219e14ff4130bdc125b4017d0cc2b8f2227a1e683af9e9ed04c3ec3e29a`.
+Compared with v17, the source Lean module for the cubic-family query is now at
+pinned-content rank 7; the exact same-record refinement source and inventory
+remain at ranks 3 and 5. All expected sources remain inside the bounded
+retrieval window.
+
+At snapshot `47038a6568ebde51b7f208ec1eb89c8f4e148864`, the search engine
+source is `tools/proof_architecture.py` blob
+`8f799b0a2f23e64ed23f7e5708920282461c14b5` and the regression source is
+`tools/test_proof_architecture.py` blob
+`32361ef71567f7daace1d45a7f766f89be51097f`. The Lean source was unchanged
+from `ef49d2991f1183bced550561f8f539bc7441f172`: its digest
+`1e33bef30040fe589f9731add4ca011057ef08155151dd5611bdaa7e35f74f86` passed
+`D0.All` with 4,626 jobs under Lean 4.30.0.
+
+On the final edited sources, `tools.test_proof_architecture` passed 80 tests,
+`test_generate_lean_views` passed 29, and `test_claim_map_coverage` passed 25.
+After compacting the v18 report, its targeted current-summary regression passed.
+The generated Lean view check, claim-map coverage, formalization-debt audit
+(5 findings, baseline 5), repository validation (zero warnings), work
+validation, and EOL-aware diff check also passed. These are architecture and
+retrieval results only; they do not accept C0, turn registry IDs into Lean
+propositions, or discharge the physical bridge.
