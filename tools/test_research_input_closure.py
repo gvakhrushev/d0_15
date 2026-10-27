@@ -13,6 +13,7 @@ import unittest
 
 import research_input_closure as closure
 import run_research_certs as runner
+import native_pairing_refinement_inputs as pairing_historical
 
 
 PIN = "dfaf7c8df509d5abd83fa60a185ad530feadc9b5"
@@ -67,6 +68,43 @@ class ClosureFixture(unittest.TestCase):
 
 
 class SelectorTests(ClosureFixture):
+    def test_constant_suffixes_track_real_files_not_the_prefix(self) -> None:
+        consumer = self.write_cert(
+            "suffix_consumer.py",
+            "from pathlib import Path\nimport importlib.util\n"
+            "ROOT = Path(__file__).resolve().parents[3]\n"
+            "BASE = '02_REGISTRY/research/certificates/suffix_owner'\n"
+            "importlib.util.spec_from_file_location('owner', ROOT / (BASE + '.py'))\n"
+            "(ROOT / (BASE + '.lean')).read_text()\n",
+        )
+        self.write_cert("suffix_owner.py", "VALUE = 1\n")
+        owner = self.cert_dir / "suffix_owner.lean"
+        owner.write_text("-- old source\n", encoding="utf-8")
+        base = self.commit()
+        owner.write_text("-- changed source\n", encoding="utf-8")
+        head = self.commit()
+        report = closure.select(self.repo, head, base)
+        item = next(item for item in report["selected"] if item["certificate"] == consumer)
+        self.assertIn("changed-input", item["reasons"])
+        paths = {row["path"] for row in item["inputs"]}
+        self.assertIn(f"{runner.CERT_DIR}/suffix_owner.lean", paths)
+        self.assertIn(f"{runner.CERT_DIR}/suffix_owner.py", paths)
+        self.assertNotIn(f"{runner.CERT_DIR}/suffix_owner", paths)
+        self.assertTrue(report["provenance_ok"])
+
+    def test_pairing_manifest_change_selects_only_its_checker(self) -> None:
+        checker = self.write_cert(Path(pairing_historical.ENTRYPOINT).name, "pass\n")
+        unrelated = self.write_cert("other.py", "pass\n")
+        base = self.commit()
+        manifest = self.repo / pairing_historical.MANIFEST
+        manifest.parent.mkdir(parents=True, exist_ok=True)
+        manifest.write_text("{}\n", encoding="utf-8")
+        head = self.commit()
+        report = closure.select(self.repo, head, base)
+        selected = {item["certificate"]: item["reasons"] for item in report["selected"]}
+        self.assertIn("historical-pairing-input-binding", selected[checker])
+        self.assertNotIn(unrelated, selected)
+
     def test_imported_owner_change_selects_consumer_and_keeps_runner_narrow(self) -> None:
         consumer = self.write_cert(
             "consumer.py",

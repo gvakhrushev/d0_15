@@ -11073,3 +11073,84 @@ registry-view, retrieval-comparison, test, and documentation updates.
 Cold-start success establishes retrieval only; semantic owner review,
 hypothesis-preservation review, C0 acceptance, and the physical GR obligations
 remain open.
+
+## Supported one-dimensional cochain refinement and source boundaries (27 October 2026)
+
+The existing research result in
+[`A4D_NATIVE_COCHAIN_REFINEMENT.md`](A4D_NATIVE_COCHAIN_REFINEMENT.md) and its
+unchanged Lean capsule are the source for this migration. The capsule SHA-256
+is `c07153c478ab7ebafd361107d848a45be47650d93fceaad2c5c67bd052f96515`.
+The supported `Archive1DCochainRefinement` module now exposes its explicit
+`Fin (m+1)` to `Fin (m+2)` vertex and edge maps, oriented cyclic incidence,
+both counting Gram forms, unscaled chain identity and energy pullback. The
+edge map's standard-basis matrix has `B₁ᵀ B₁ = I`, and a separate theorem
+identifies that matrix's action with the edge map. The vertex matrix has
+`B₀ᵀ B₀ = I + E₀₀`, with diagonal 2 at the repeated vertex and 1 elsewhere.
+The module also carries the
+one-dimensional degree correction `c = (m+2)/(m+1)` for scaled incidence.
+
+The new `Archive1DCochainRefinementBinding` consumer proves that the vertex
+map is the existing archive projection and `archiveLiftOperator` on each
+`N+2` cycle, including equality of the actual lift matrix and its Gram. It
+substitutes the existing `forwardDifferenceScale` into the
+corrected one-dimensional block. At `N=0`, the first edge is an exact negative
+control: the uncorrected fine and coarse scaled expressions are 3 and 2.
+The research capsule is retained unchanged;
+`python3 tools/verify_native_cochain_supported_transport.py` builds the
+supported binding and checks definitional equality with the capsule's four
+map/scale definitions under the shared build lock, with source digest and
+axiom output. This is a finite mathematical application, not an admission of
+the physical refinement or a typed four-dimensional `dForward` theorem.
+Source-to-claim acceptance remains pending in the existing 1D claim.
+
+The next typed substitution for the graded claim uses the already supported
+`D0.archiveRolePhaseProjection` transported through
+`archiveRolePhasePointGroupEquiv`. For a fine role coordinate `i` and coarse
+size `L=N+2`, the decisive missing lemma is that projecting one fine
+`roleTranslatePlus` step gives the coarse translated point when `i<L`, and
+the unchanged coarse point on the collapsed edge `i=L`. This is a stated
+proof target, not a compiled theorem here. It supplies the masked scalar
+forward-difference application; the full graded composition additionally
+needs the occupied-role mask and the existing `carCreate_support` and
+`carCreate_degree_raise` maps. The fixed-torus readout obstruction in the
+research source remains a separate downstream boundary.
+
+The previously `LEAN_PROVED` graded-refinement row overstated its cited owner:
+that owner proves role and label cardinalities and does not define `B_S` or a
+graded chain equation. The row and module documentation now retain the 4D
+statement as an open proof target; the research note's unscaled tensor
+argument and its scale convention remain identified. In the Hodge arithmetic,
+the full counting total at `L=2` is 625, whereas 256 is the total after the
+degree-dependent partial normalization. Both numbers are recorded as scalar
+arithmetic; the Lean file does not construct the full Gram matrices or prove
+metric uniqueness. The cubical label counts similarly do not construct the
+grid-indexed complex or its homology.
+
+The edge-zeta owner proves a scalar identity for the defined expression. Its
+Lean module does not construct `F_E` or equate its operator trace to that
+expression; the deprecated trace target retains that open binding, while the
+separate Puiseux target remains open. The floating-point diagonal certificate
+is not promoted to an exact Lean trace adapter. These scope corrections await
+the required independent source-to-claim acceptance and do not close C0 or
+any physical GR premise.
+
+### Historical pairing replay and current compatibility
+
+The pairing-refinement certificate's 66-source ledger and its 12-input Lean
+receipt bind historical source commit `2f3360c5d3bfcb40d4791b23ade8e82e03f887c8`.
+Eleven Lean inputs differ in the maintained tree. Their exact historical Git
+blobs are preserved as readable, byte-pinned sources under
+[`d0_native_pairing_refinement_historical_2026-10-27`](sources/d0_native_pairing_refinement_historical_2026-10-27/README.md),
+with commit, path, blob and SHA-256 in its manifest. The isolated research
+runner admits these inputs only for the named pairing checker, verifies the
+unchanged checker and receipts plus every ledger input, restores the isolated
+tree after execution, and rejects an unbound mismatch. It preserves the old
+expected evidence rather than rewriting it for current files. The result is
+historical source and receipt replay, not a current Lean build.
+
+`tools/verify_native_pairing_current_compatibility.py` separately builds the
+actual maintained imports and compiles the unchanged pairing Lean capsule,
+recording its printed owner types, axioms, source digest and toolchain. This
+checks compatibility with current sources; it does not establish native
+admission or accept a scientific source-to-claim relation. The historical
+checker and this current-source compilation are distinct checks.

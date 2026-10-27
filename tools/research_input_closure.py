@@ -209,8 +209,12 @@ def eval_expr(node: ast.AST, consts: dict, file_path: str):
         right = eval_expr(node.right, consts, file_path)
         # compile("owner.py" + ":label") names the same pinned file.
         if (left and right and left[0] in {"path", "string"} and right[0] == "string"
-                and (right[1].startswith(":") or not looks_like_path(right[1]))):
+                and right[1].startswith(":")):
             return left
+        # Literal suffixes are real string concatenation, not a reference to
+        # the prefix itself. This covers BASE + ".lean" and BASE + ".json".
+        if left and right and left[0] in {"path", "string"} and right[0] == "string":
+            return (left[0], left[1] + right[1])
         return None
     if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Div):
         left = eval_expr(node.left, consts, file_path)
@@ -1159,6 +1163,7 @@ def provenance_status(repo: Path, commit: str, item: dict) -> dict:
 def select(repo: Path, commit: str, base: str | None) -> dict:
     """Conservative consumer selection. Does not execute certificates."""
     import native_checkpoint_inputs as historical
+    import native_pairing_refinement_inputs as pairing_historical
     repo = Path(repo)
     commit = resolve_commit(repo, commit)
     base_commit = resolve_commit(repo, base) if base is not None else None
@@ -1179,6 +1184,8 @@ def select(repo: Path, commit: str, base: str | None) -> dict:
             reasons.append("historical-input-binding")
         if cert in historical.REPORT_ENTRYPOINTS and changed_set & historical.REPORT_SELECTION_INPUTS:
             reasons.append("historical-report-input-binding")
+        if cert == pairing_historical.ENTRYPOINT and changed_set & pairing_historical.SELECTION_INPUTS:
+            reasons.append("historical-pairing-input-binding")
         inputs = info["transitive"]
         if any(item["path"] in changed_set for item in inputs):
             reasons.append("changed-input")

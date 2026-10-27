@@ -92,7 +92,9 @@ jobs:
         run: |
           python tools/test_task_dispatch.py
           python tools/test_run_research_certs.py
+          python tools/test_native_pairing_refinement_inputs.py
           python tools/test_research_input_closure.py
+          python -m tools.test_compact_proof_architecture_cold_start
           python tools/test_ci_replay_reuse.py
 
       - name: Check unchanged scientific inputs against a successful Ready run

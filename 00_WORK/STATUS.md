@@ -33,7 +33,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | BRIDGE-ASSUMPTIONS-EXPLICIT | 30 |
 | BRIDGE-CALIBRATION | 3 |
 | CERT-CLOSED | 188 |
-| CORE-FORMALIZED | 388 |
+| CORE-FORMALIZED | 387 |
 | CORE_BRIDGE_SPLIT | 17 |
 | DEPRECATED | 6 |
 | EMPIRICAL-PASSPORT | 13 |
@@ -42,5 +42,5 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | NO-GO | 133 |
 | NO_GO_PROVED | 6 |
 | PASSPORT-CLOSED | 20 |
-| PROOF-TARGET | 80 |
+| PROOF-TARGET | 81 |
 | **Total** | **889** |

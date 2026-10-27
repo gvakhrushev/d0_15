@@ -363,6 +363,7 @@ import D0.Geometry.A4DSymRoleCentralDifference
 import D0.Geometry.A4DTransportedReferenceMismatch
 import D0.Geometry.A4DUnlabelledCenterHolonomyNoGo
 import D0.Geometry.Archive1DCochainRefinement
+import D0.Geometry.Archive1DCochainRefinementBinding
 import D0.Geometry.Archive1Dto4DRGLiftNoGo
 import D0.Geometry.Archive4DCurvaturePerturbationBridge
 import D0.Geometry.ArchiveActionFunctional

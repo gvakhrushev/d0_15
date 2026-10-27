@@ -2676,7 +2676,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-27_typed_source_links_v2.json"
+            / "proof_architecture_cold_start_summary_2026-10-27_native_cochain_transport.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")

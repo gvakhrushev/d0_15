@@ -13,16 +13,14 @@ open D0
 
 Owner: `D0-ARCHIVE-GRADED-REFINEMENT-CHAIN-MAP-001`.
 
-Product refinement on every form degree:
-For each S ⊆ Role (represented by S : Role → Bool):
-  B_S = ⨂_{r ∈ S} B_1 ⊗ ⨂_{r ∉ S} B_0.
+This module proves only the role-product dimension and the cardinality of the
+finite role and cubical-cell label types. It does not define the tensor-product
+maps `B_S` or prove graded differential commutation.
 
-Exact chain-map commutation theorem:
-For every direction r ∉ S:
-  d^{fine}_r B_S = B_{S ∪ {r}} d^{coarse}_r.
-
-This lifts the scalar RG relation Bᵀ L_{L+1} B = L_L to an exact chain-map structure
-across the full graded complex of all 16 cell degrees.
+The unscaled four-dimensional chain argument is recorded in
+`02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md`. A typed full 4D Lean
+composition, including transport for the scale-corrected `dForward`, remains
+open in the supported library.
 -/
 
 /-- The 4 directions in the product torus. -/
@@ -32,11 +30,9 @@ theorem role_product_dim_eq : roleProductDim = Fintype.card Role := by
   rw [card_role]
   rfl
 
-/-- **D0-ARCHIVE-GRADED-REFINEMENT-CHAIN-MAP-001 (Owner)**:
-Graded refinement chain map theorem:
-1. Product dimension is 4 (|Role| = 4);
-2. Cochain complex has 16 graded cell sectors;
-3. Graded commutation d^{fine} B_S = B_{S ∪ {r}} d^{coarse} holds identically across all sectors. -/
+/-- **D0-ARCHIVE-GRADED-REFINEMENT-CHAIN-MAP-001 (Owner, label scope)**:
+Records that the product dimension and role cardinality are 4 and that the
+cubical-cell label type has 16 elements. No graded chain map is asserted. -/
 theorem archive_graded_refinement_chain_map_owner :
     (roleProductDim = 4) ∧
     (Fintype.card CubicalCellType = 16) ∧
