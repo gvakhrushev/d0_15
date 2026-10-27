@@ -152,3 +152,92 @@ This packet is a **new positive mathematical substitution** for the independent 
 3. Only if the complete same-execution price/source identity (or the existing rigorous nondegenerate root residual budget) is established may the already owned nonlinear GR consumer be invoked. At present no full42 price selection, compatible mesh-uniform gap, all-native soundness, off-shell Golden metric scaling, raw216 or physical GR closure follows from C1--C12.
 
 **Status: exact mathematical derivation C1--C12 with one executed independent rational control; model-specific C1 consumes the research-grade original finite modular rank owner.** No original large CAR calculation, full128 history price, Lean, CI or physical GR admission is claimed freshly rerun by the new small control. Research parent remains #334 Draft, GR_closed=false.
+
+
+## 8. Theorem C5 — SAME original full128 channel gives an exact stationary mean-port COST and source at every horizon
+
+This is a stronger, model-specific application than the general C1--C12 source-resolvent theorem. It consumes the ACTUAL all128-outcome marked-transfer owner [same-history paid price](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md), equation (1) at the original zero-cost-mark evaluation, and the exact paired-Julia unital/bistochastic recycling theorem. It uses ONE original physical instrument, not the positive two-outcome control of section 6.
+
+At fixed integer horizon n and native chart y, write p=phi^{-1}, eps=p^2 h^2/64, D_y=D_y^*, Delta_y=D_y^2>0, and let T_y be the ACTUAL original paired-Julia recycling CP map satisfying T_y(I)=I. The zero-marker, genuine unobserved DATA channel obtained by summing **all original 128 fine outcomes** is exactly
+
+\[
+\Phi_y(X)=X+\varepsilon_y\left[
+ T_y(D_y X D_y)-\frac12(\Delta_y X+X\Delta_y)\right].\tag{C13}
+\]
+
+This is the original fully determined map; complete positivity and trace preservation belong to its existing all128 Kraus representation, not to an arbitrary generic formula with an unqualified epsilon. At every point of its invertible regular chart define the **closed internal** candidate
+
+\[
+Z_y=\operatorname{Tr}_{16}(\Delta_y^{-1}),\qquad
+\boxed{\rho_y^{\rm can}=\Delta_y^{-1}/Z_y.}\tag{C14}
+\]
+
+Now D rho_can D=I/Z, T_y(I)=I and {Delta,rho_can}/2=I/Z. Substitution into the LITERAL original channel (C13) yields
+
+\[
+\boxed{\Phi_y(\rho_y^{\rm can})=\rho_y^{\rm can}}\tag{C15}
+\]
+
+**for every invertible original chart point**, with no choice of observer, ansatz for source, field potential, cost renormalization or state eigenbasis. On the certified original Choi-positive fixture and a sufficiently small regular neighborhood, C1--C4 prove this is its **unique attractive DATA marginal**. Away from that neighborhood C15 proves stationarity but not uniqueness without independent mixing evidence.
+
+The same original all-fine-history paid-port owner gives, with NO IID or reset assumption,
+
+\[
+\mathbb E_{\rho} C_{\rm port}^{(n)}(y)
+ =n+p\varepsilon_y\sum_{j=0}^{n-1}
+ \operatorname{Tr}_{16}[\Delta_y\Phi_y^j(\rho)].\tag{C16}
+\]
+
+At rho=rho_can, each term is Tr(Delta rho_can)=16/Z. Thus, for the SAME actual 128-outcome channel, arbitrary fixed genuine horizon n,
+
+\[
+\boxed{
+\mathbb E_{\rho_y^{\rm can}} C_{\rm port}^{(n)}
+  =n+\frac{16np\varepsilon_y}{\operatorname{Tr}_{16}\Delta_y^{-1}}.
+}\tag{C17}
+\]
+
+This is a complete exact FIRST-MOMENT law for the original paid 1/2 port record, not the full coherent-history entropy or logdet and not a claim of independent chronological fine outcomes. It retains the actual mandatory n base ticks. The oldRIGHT can remain entangled because the port mean is a DATA-local observable; this does NOT determine the joint archived quantum information or its entropy.
+
+There is an immediate first-source theorem for **every legitimate smooth original regular field chart**, including moving D, T and endogenous preparation, at fixed n and p:
+
+\[
+\boxed{
+D_y\mathbb E C_{\rm port}^{(n)}[v]
+ =16np\left\{
+ \frac{D\varepsilon_y[v]}{Z_y}
+ +\frac{\varepsilon_y}{Z_y^2}
+   \operatorname{Tr}_{16}
+    (\Delta_y^{-1} D\Delta_y[v]\Delta_y^{-1})
+ \right\}.
+}\tag{C18}
+\]
+
+Proof: differentiate the exact *whole-history mean* C17, using
+\(DZ[v]=-\operatorname{Tr}(\Delta^{-1}D\Delta[v]\Delta^{-1})\).
+No \(D T_y\) survives because \(T_y(I)=I\) holds as an exact identity on the entire chart, so \(DT_y(I)=0\). No missing \(D\rho^{can}\) is frozen: it is already included in differentiation of the actual inverse-trace normalization Z. Indeed,
+
+\[
+D\rho^{\rm can}[v]
+ =-\frac{\Delta^{-1}(D\Delta[v])\Delta^{-1}}Z
+ +\frac{\Delta^{-1}}{Z^2}
+     \operatorname{Tr}(\Delta^{-1}(D\Delta[v])\Delta^{-1}).\tag{C19}
+\]
+
+Equations C18--C19 are the exact original-CAR specialization of C8--C11 wherever the latter's Choi contraction is established. **This is a real computed native Price/Cost component, not a prescribed Einstein source.** On any direction with D eps=0 and Tr(Delta^{-1}D Delta Delta^{-1})=0, its stationary mean-port source vanishes, irrespective of other legitimate archive/Info/geometry sources. One scalar port mean cannot be substituted for all original 42 independent equations merely because the whole system is closed.
+
+**Physically finite preparation rather than an ideal unpriced state.** Start from any actually supplied initial DATA density rho_0 and execute m three-tick original channel blocks with new, genuinely paid work/fine archives. Let rho_m=Phi^{3m}(rho_0). For the NEXT fixed n paid port rounds, trace-norm contraction and C16 yield
+
+\[
+\boxed{
+|\mathbb E_{\rho_m} C_{\rm port}^{(n)}
+ -\mathbb E_{\rho_*} C_{\rm port}^{(n)}|
+ \le 2np\varepsilon_y\|\Delta_y\|_\infty c_y^m.
+}\tag{C20}
+\]
+
+This estimate counts the future n-round *port mean only*: the preceding 3m preparation-round costs and all their full stored outcomes must be added to a prospective complete programme score. C20 is value convergence, **not** a free C1 source-refinement theorem. For a field derivative use C18--C19 or the C9--C12 adjoint/source bounds, with the real variation of the finite preparation process.
+
+**New consumer for the primary Einstein family.** Apply C18 at the SAME original all42 field representative. Its explicitly computable spectral normal must be compared, with the real gain and norm, to the already configured Golden-J2 covector. Any missing source in a direction annihilated by C18 must come from an actual retained order/Info/heat/feedback/clock component, not an imported observer or guessed stress tensor. Complete source equality, original full Book valuation, finite 42-field native admission and mesh-uniform GR are not asserted from this first-moment identity.
+
+Exact rational smoke controls for inverse trace / moving source, at a finite nontrivial unital recycling on a diagonal two-state toy, are included as an extension of the companion checker. This is a toy algebra verification, not an original CAR16 replay.
