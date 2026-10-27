@@ -39,7 +39,10 @@ CAR implication still assumes C³ regularity on the sampled interval, a vector
 third-derivative bound, and a continuum norm envelope. The compactness
 corollary below derives the latter two uniform bounds from a globally C³
 profile and a pointwise strict chart margin; it does not derive smoothness or
-the pointwise margin from the CAR generator or preparation.
+the pointwise margin from the CAR generator or preparation. Its coefficient-
+norm application derives that pointwise margin for cubic profiles on `[0,1]`
+and carries an explicit nonzero initial matter rate; this finite-dimensional
+subset is not selected by the original D0 generator.
 
 This is an exact finite algebraic and calculus application. It does not
 formalize the original CAR construction, the 40 varied Cartan equations, or
@@ -1219,5 +1222,131 @@ theorem nonvacuumCubicMidpointSource_matches_record
       (cubicMatterMidpointRate c1 c2 c3 (((n : ℝ) + 1 / 2) * h))
       (cubicMatterMidpointSample h c0 c1 c2 c3 n) hh
   simpa [cubicMatterMidpointSample, finiteMatterMidpointStep] using hsource
+
+/-- The Euclidean lift of the same cubic matter profile used by the finite source. -/
+noncomputable def cubicMatterEuclideanProfile
+    (c0 c1 c2 c3 : Fin 2 → ℝ) (t : ℝ) : EuclideanSpace ℝ (Fin 2) :=
+  twoComponentMatterEuclidean c0 +
+    t • twoComponentMatterEuclidean c1 +
+    t ^ 2 • twoComponentMatterEuclidean c2 +
+    t ^ 3 • twoComponentMatterEuclidean c3
+
+@[simp]
+theorem cubicMatterEuclideanProfile_apply
+    (c0 c1 c2 c3 : Fin 2 → ℝ) (t : ℝ) (i : Fin 2) :
+    cubicMatterEuclideanProfile c0 c1 c2 c3 t i =
+      cubicMatterProfile c0 c1 c2 c3 t i := by
+  simp [cubicMatterEuclideanProfile, cubicMatterProfile,
+    twoComponentMatterEuclidean_apply]
+  ring
+
+/-- The coefficient norm controls this cubic profile on the unit time interval. -/
+noncomputable def cubicMatterCoefficientNorm (c0 c1 c2 c3 : Fin 2 → ℝ) : ℝ :=
+  ‖twoComponentMatterEuclidean c0‖ +
+    ‖twoComponentMatterEuclidean c1‖ +
+    ‖twoComponentMatterEuclidean c2‖ +
+    ‖twoComponentMatterEuclidean c3‖
+
+theorem cubicMatterEuclideanProfile_norm_le_coefficientNorm
+    (c0 c1 c2 c3 : Fin 2 → ℝ) (t : ℝ)
+    (ht : t ∈ Set.Icc (0 : ℝ) 1) :
+    ‖cubicMatterEuclideanProfile c0 c1 c2 c3 t‖ ≤
+      cubicMatterCoefficientNorm c0 c1 c2 c3 := by
+  rcases ht with ⟨ht0, htOne⟩
+  have ht1 : ‖t‖ ≤ 1 := by
+    simpa [Real.norm_eq_abs, abs_of_nonneg ht0] using htOne
+  have hOneSubNonneg : 0 ≤ 1 - t := sub_nonneg.mpr htOne
+  have hOneAddNonneg : 0 ≤ 1 + t := add_nonneg (by norm_num) ht0
+  have ht2_nonneg : 0 ≤ t ^ 2 := sq_nonneg t
+  have ht2_le : t ^ 2 ≤ 1 := by
+    nlinarith [mul_nonneg hOneSubNonneg hOneAddNonneg]
+  have ht2 : ‖t ^ 2‖ ≤ 1 := by
+    simpa [Real.norm_eq_abs, abs_of_nonneg ht2_nonneg] using ht2_le
+  have ht3_nonneg : 0 ≤ t ^ 3 := by positivity
+  have ht3_le : t ^ 3 ≤ 1 := by
+    have hFactorNonneg : 0 ≤ 1 + t + t ^ 2 := by positivity
+    nlinarith [mul_nonneg hOneSubNonneg hFactorNonneg]
+  have ht3 : ‖t ^ 3‖ ≤ 1 := by
+    rw [Real.norm_eq_abs, abs_of_nonneg ht3_nonneg]
+    exact ht3_le
+  let v0 := twoComponentMatterEuclidean c0
+  let v1 := twoComponentMatterEuclidean c1
+  let v2 := twoComponentMatterEuclidean c2
+  let v3 := twoComponentMatterEuclidean c3
+  have h1 : ‖t • v1‖ ≤ ‖v1‖ := by
+    calc
+      ‖t • v1‖ = ‖t‖ * ‖v1‖ := norm_smul _ _
+      _ ≤ 1 * ‖v1‖ := mul_le_mul_of_nonneg_right ht1 (norm_nonneg v1)
+      _ = ‖v1‖ := by ring
+  have h2 : ‖t ^ 2 • v2‖ ≤ ‖v2‖ := by
+    calc
+      ‖t ^ 2 • v2‖ = ‖t ^ 2‖ * ‖v2‖ := norm_smul _ _
+      _ ≤ 1 * ‖v2‖ := mul_le_mul_of_nonneg_right ht2 (norm_nonneg v2)
+      _ = ‖v2‖ := by ring
+  have h3 : ‖t ^ 3 • v3‖ ≤ ‖v3‖ := by
+    calc
+      ‖t ^ 3 • v3‖ = ‖t ^ 3‖ * ‖v3‖ := norm_smul _ _
+      _ ≤ 1 * ‖v3‖ := mul_le_mul_of_nonneg_right ht3 (norm_nonneg v3)
+      _ = ‖v3‖ := by ring
+  have h01 : ‖v0 + t • v1‖ ≤ ‖v0‖ + ‖v1‖ := by
+    exact le_trans (norm_add_le _ _) (add_le_add le_rfl h1)
+  have h012 : ‖v0 + t • v1 + t ^ 2 • v2‖ ≤
+      (‖v0‖ + ‖v1‖) + ‖v2‖ := by
+    exact le_trans (norm_add_le _ _) (add_le_add h01 h2)
+  change ‖v0 + t • v1 + t ^ 2 • v2 + t ^ 3 • v3‖ ≤ _
+  dsimp [cubicMatterCoefficientNorm, v0, v1, v2, v3]
+  calc
+    ‖v0 + t • v1 + t ^ 2 • v2 + t ^ 3 • v3‖ ≤
+        ‖v0 + t • v1 + t ^ 2 • v2‖ + ‖t ^ 3 • v3‖ := norm_add_le _ _
+    _ ≤ (‖v0‖ + ‖v1‖ + ‖v2‖) + ‖v3‖ := by
+      exact add_le_add h012 h3
+
+/--
+Every cubic two-component profile with a small coefficient norm stays inside
+the pointwise CAR chart on `[0,1]`. If its initial derivative is nonzero,
+the compactness theorem therefore gives one positive-complement threshold for
+the same midpoint history and a genuinely nonzero matter rate. This remains
+conditional on the stated coefficient margin and CAR parameter; it selects no
+physical preparation or execution.
+-/
+theorem sampledCubicMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes
+    (c0 c1 c2 c3 : Fin 2 → ℝ) (p : ℝ)
+    (hCoefficientMargin : cubicMatterCoefficientNorm c0 c1 c2 c3 <
+      Real.sqrt (1 - p)) (hNonzeroRate : c1 ≠ 0) :
+    cubicMatterMidpointRate c1 c2 c3 0 ≠ 0 ∧
+      ∃ N₀ : ℕ, 0 < N₀ ∧ ∀ N : ℕ, N₀ ≤ N → ∀ n ≤ N,
+        0 < twoComponentCARComplementAmplitude p
+          (finiteMatterMidpointHistory (1 / (N : ℝ))
+            (sampledMatterMidpointRate
+              (fun t i => cubicMatterEuclideanProfile c0 c1 c2 c3 t i)
+              0 (1 / (N : ℝ)))
+            (sampledMatterExactValues
+              (fun t i => cubicMatterEuclideanProfile c0 c1 c2 c3 t i)
+              0 (1 / (N : ℝ)) 0) n) := by
+  let ψ : ℝ → EuclideanSpace ℝ (Fin 2) :=
+    cubicMatterEuclideanProfile c0 c1 c2 c3
+  have hC3 : ContDiff ℝ 3 ψ := by
+    change ContDiff ℝ 3 (fun t =>
+      twoComponentMatterEuclidean c0 +
+        t • twoComponentMatterEuclidean c1 +
+        t ^ 2 • twoComponentMatterEuclidean c2 +
+        t ^ 3 • twoComponentMatterEuclidean c3)
+    fun_prop
+  have hPointwiseMargin : ∀ t ∈ Set.Icc (0 : ℝ) 1,
+      ‖ψ t‖ < Real.sqrt (1 - p) := by
+    intro t ht
+    exact lt_of_le_of_lt
+      (cubicMatterEuclideanProfile_norm_le_coefficientNorm c0 c1 c2 c3 t ht)
+      hCoefficientMargin
+  have hThreshold :=
+    sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin
+      ψ 0 1 p (by norm_num) hC3 (by simpa using hPointwiseMargin)
+  have hInitialRate : cubicMatterMidpointRate c1 c2 c3 0 = c1 := by
+    funext i
+    simp [cubicMatterMidpointRate]
+  constructor
+  · rw [hInitialRate]
+    exact hNonzeroRate
+  · simpa [ψ] using hThreshold
 
 end D0.Geometry
