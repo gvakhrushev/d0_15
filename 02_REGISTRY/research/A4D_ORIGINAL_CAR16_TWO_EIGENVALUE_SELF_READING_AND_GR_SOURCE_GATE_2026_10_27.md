@@ -571,7 +571,7 @@ Since \(p^2>3/8\) by the exact Golden equation, \(z=2^{-20}<10^{-6}\), and \(0<b
 <160-\frac34(2n-1)+\frac{4nz}{1-z}<0\qquad(n\ge128).
 \tag{S43}
 \]
-The final expression is already negative at n=128 and strictly decreases in n. Hence \(g_n(\lambda_-)>g_n(\lambda_+)\), so S42 is strictly positive. This works for EVERY authentic integer n≥128, not a finite search over horizons.
+The final expression is already negative at n=128 and strictly decreases in n. Hence \(g_n(\lambda_-)>g_n(\lambda_+)\), so S42 is strictly positive. This works for every integer n≥128 on this fixed original CAR fixture, not a finite search over horizons or proof of common physical clock admission.
 
 Moreover the previously proved exact nonzero rational Jacobian S35 and the distinct original eigenvalues imply that \((r,\nu)\mapsto(\lambda_+,\lambda_-)\) is locally invertible. Composition with S42 proves
 
@@ -579,12 +579,12 @@ Moreover the previously proved exact nonzero rational Jacobian S35 and the disti
 \boxed{
 \det\frac{\partial(q,J^{\rm full128}_{\rm HJR,n})}
 {\partial(r,\nu)}\ne0
-\quad\text{for ALL original }n=128L^2.
+\quad\text{for every integer }n=128L^2\text{ on the fixed fixture}.
 }
 \tag{S44}
 \]
 
-So the ORIGINAL closed D0 apparatus itself has two independent native scalar observations — a paid port probability and a full-return determinant. They are not two names for one normalized source. No extra field, observer, ad hoc second calibration, or experimental result is assumed. One exact fixture evaluation at n=128 gives \(\det\partial(q,J)/\partial(r,\nu)\approx1.6914713193\cdot10^{-7}>0\), consistent with the strict all-n proof.
+So the ORIGINAL closed D0 algebra has two independent intrinsic scalar response functionals — an actually registered paid-port probability and a computed complete-return HJR determinant. They are not two names for one normalized source. No extra matrix primitive, external observer, ad hoc second calibration, or experimental result is assumed; physical use of the HJR determinant still requires its own admitted Book selection. One exact fixture evaluation at n=128 gives \(\det\partial(q,J)/\partial(r,\nu)\approx1.6914713193\cdot10^{-7}>0\), consistent with the strict all-n proof.
 
 **What this actually removes:** local algebraic degeneracy of the ORIGINAL native two-channel response at its full clock is ruled out. Together with S19–S28, a real same-execution geometric/matter source map can try to transport two independent native measurements into the two original normal density responses \(DF,DQ\), rather than seeking a third external observable. But S44 does **NOT** identify the two target normals or select a Book Cost−Info combination. That requires the actual coframe/plaquette/source operation and complete prices to be proved, not chosen by the target Einstein ratio.
 
