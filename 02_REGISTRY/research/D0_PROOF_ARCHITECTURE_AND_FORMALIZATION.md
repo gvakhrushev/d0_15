@@ -260,13 +260,28 @@ is `D0.LeanCoreReleaseCandidate` and its reduced conclusion is
 `D0.claimMap = [] → False`, a nonempty-generated-map status check. The
 `D0-LEAN-BRIDGE-001` locator resolves to `D0.lean_bridge_assumptions_explicit`;
 its raw type is `D0.BridgeAssumptionsExplicit` and its reduced conclusion is
-`True`. Both are in `D0/TheoremLedger/ReleaseStatus.lean` at lines 26 and 31,
-respectively, with no binders or axioms. The batch query used collector
-SHA-256 `6339cdaaea69325cf514248294b2c4bde015dd550b29798d62ea67a46222f1ec`
-and the same Lean source digest above. These declarations remain exact
-registry locators but are not evidence that the mathematical core is fully
-formalized or that bridge assumptions have been discharged. No claim, owner,
-or status metadata changed.
+its raw type at that earlier snapshot is `D0.BridgeAssumptionsExplicit` and
+its reduced conclusion is `True`. Both declarations were in
+`D0/TheoremLedger/ReleaseStatus.lean` at lines 26 and 31, respectively, with
+no binders or axioms. The batch query used collector SHA-256
+`6339cdaaea69325cf514248294b2c4bde015dd550b29798d62ea67a46222f1ec` and the
+same Lean source digest above. This is historical evidence for the earlier
+metadata proposition shell; the bridge locator remains exact, but that old
+result was not evidence that its assumptions had been discharged.
+
+### ClaimMap bridge-assumption ID crosswalk (27 October 2026)
+
+The generated `ClaimMapEntry` now preserves each nonempty `assumption_ids`
+field from `claims.csv` as a Lean `List String`, with an empty default for rows
+without registry assumptions. `D0-LEAN-BRIDGE-001` is checked by a compiled
+proposition asserting the exact six IDs already listed for that row:
+`ASSUMP-HURWITZ-GOLDEN`, `ASSUMP-RG-SMOOTH-INTERP`,
+`ASSUMP-LORENTZ-MACRO`, `ASSUMP-SMOOTH-COVARIANCE`,
+`ASSUMP-SMOOTH-HEATTRACE`, and `ASSUMP-HST-EXTERNAL`. Its proof is `rfl` over
+the generated view. The earlier reduced `True` conclusion is therefore
+superseded for this ID-propagation check only. This verifies registry-to-Lean
+metadata preservation; it does not prove, remove, or discharge any listed
+assumption, and no claim row, assumption ID, owner, or release status changed.
 
 An independent read-only scope review at snapshot
 `709ea27c3e7dc6865708aac076e4230655ad0cce` accepts one claim-to-book-to-Lean

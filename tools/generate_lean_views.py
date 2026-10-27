@@ -21,6 +21,10 @@ def module_from_file(f:str)->str:
 def esc(s:str)->str:
     return s.replace('\\','\\\\').replace('"','\\"').replace('\n',' ')
 
+def assumption_ids(r):
+    raw = r.get('assumption_ids', '')
+    return [item.strip() for item in raw.replace(',', ';').split(';') if item.strip()]
+
 # Summary status is a UI/ledger classification, never a proof of a claim.
 # Preserve the two independent registry axes verbatim in every emitted entry.
 OPEN_RELEASE_STATUSES = {
@@ -86,21 +90,36 @@ def render_claimmap():
           '  | openObligation','  | deprecated','  | notInLeanScope',
           '  deriving DecidableEq, Repr','',
           'structure ClaimMapEntry where','  claimId : String','  moduleName : String',
-          '  theoremName : String','  leanStatus : String','  releaseStatus : String',
+          '  theoremName : String','  assumptionIds : List String := []',
+          '  leanStatus : String','  releaseStatus : String',
           '  status : ClaimStatus','',
           'def claimMap : List ClaimMapEntry :=','  [']
     entries=[]
     for r in cr:
         m=r.get('lean_module','').strip()
         if not m: continue
-        entries.append(
+        claim_assumption_ids = assumption_ids(r)
+        rendered_assumption_ids = ', '.join(
+            f'"{esc(item)}"' for item in claim_assumption_ids
+        )
+        entry = (
           f'    {{ claimId := "{esc(r["claim_id"])}", moduleName := "{esc(m)}",\n'
           f'      theoremName := "{esc(r.get("lean_theorem", "").strip())}",\n'
+        )
+        if claim_assumption_ids:
+            entry += f'      assumptionIds := [{rendered_assumption_ids}],\n'
+        entry += (
           f'      leanStatus := "{esc(r.get("lean_status", "").strip())}", '
           f'releaseStatus := "{esc(r.get("release_status", "").strip())}", '
-          f'status := ClaimStatus.{claim_status(r)} }}' )
+          f'status := ClaimStatus.{claim_status(r)} }}'
+        )
+        entries.append(entry)
     body.append(',\n'.join(entries))
     body += ['  ]','',
+             'def claimMapAssumptionIds (claimId : String) : List String :=',
+             '  match claimMap.find? (fun entry => entry.claimId == claimId) with',
+             '  | some entry => entry.assumptionIds',
+             '  | none => []','',
              'theorem claimMap_nonempty : claimMap ≠ [] := by',
              '  intro h',
              '  cases h',

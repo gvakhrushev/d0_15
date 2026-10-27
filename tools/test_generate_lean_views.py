@@ -104,6 +104,12 @@ class RenderingTests(unittest.TestCase):
         self.assertIn('releaseStatus := "PROOF-TARGET"', text)
         self.assertIn('status := ClaimStatus.openObligation', text)
 
+    def test_registry_assumption_ids_survive_in_generated_claimmap(self):
+        data=row(uses_bridge_assumptions='true', assumption_ids='ASSUMP-A, ASSUMP-B')
+        with patch.object(gen, 'rows', return_value=[data]): text=gen.render_claimmap()
+        self.assertIn('assumptionIds := ["ASSUMP-A", "ASSUMP-B"]', text)
+        self.assertIn('def claimMapAssumptionIds (claimId : String) : List String', text)
+
     def test_names_are_preserved_not_interpreted_as_proofs(self):
         data=row(lean_module='D0.A;D0.B',lean_theorem='foo;Bar.baz')
         with patch.object(gen,'rows',return_value=[data]): text=gen.render_claimmap()
@@ -155,6 +161,12 @@ class RenderingTests(unittest.TestCase):
         for r in rows:
             self.assertIn('leanStatus := "'+gen.esc(r['lean_status'].strip())+'", '
                           'releaseStatus := "'+gen.esc(r['release_status'].strip())+'"',text)
+        bridge = next(r for r in rows if r['claim_id'] == 'D0-LEAN-BRIDGE-001')
+        bridge_entry = text.split('claimId := "D0-LEAN-BRIDGE-001"', 1)[1].split(
+            '    { claimId :=', 1
+        )[0]
+        rendered_ids = ', '.join(f'"{gen.esc(item)}"' for item in gen.assumption_ids(bridge))
+        self.assertIn(f'assumptionIds := [{rendered_ids}]', bridge_entry)
 
     def test_import_closure_sorted_and_unique(self):
         imports=re.findall(r'^import (.+)$',gen.render_all(),re.M)
