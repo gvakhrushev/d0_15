@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "9feb0824173117c5142160b0603336616cb01fe1",
+  "snapshot_commit": "bb0ae145f0df6643fbbdbc6aacd4b97b8eeb9fdf",
   "worktree_dirty": false,
-  "claim_registry_sha256": "c3c51a8013b8a43880f659fc016b888911bb0219b57e3c9390ac793dbc72332d",
-  "lean_source_digest": "a86f9c6020631ae143f8361fef8e4af3c3c2775f64bbc9922a10a658b86f69a6",
-  "collector_sha256": "f1463779fe276c6839e5919f12c5eae104c9cbe4a6164a97d13c659d85f0055f",
+  "claim_registry_sha256": "4b89e8ed94d74b99622714f496f1fffa86ca976733c7d4340003cd5a07e5a187",
+  "lean_source_digest": "a9b170f97d9088708b7366d16896ad77917ecc1ff62d1859d8548a64ca12c7ca",
+  "collector_sha256": "d41f3391326680eb4172c117e063a9d7614d8b4008b13e4cd4204a7a44b25600",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": true,
@@ -23385,12 +23385,46 @@
       },
       {
         "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
-        "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+        "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
         "theorem_atom": "archive_metric_measure_hodge_lift_owner",
         "candidate_names": [
           "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_metric_measure_hodge_lift_owner",
+          "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_metric_measure_hodge_lift_owner",
           "D0.Geometry.archive_metric_measure_hodge_lift_owner",
           "D0.archive_metric_measure_hodge_lift_owner"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+        "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
+        "theorem_atom": "archive_graded_metric_measure_weight",
+        "candidate_names": [
+          "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_graded_metric_measure_weight",
+          "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_graded_metric_measure_weight",
+          "D0.Geometry.archive_graded_metric_measure_weight",
+          "D0.archive_graded_metric_measure_weight"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+        "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
+        "theorem_atom": "archive_graded_metric_measure_gram_diagonal",
+        "candidate_names": [
+          "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_graded_metric_measure_gram_diagonal",
+          "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_graded_metric_measure_gram_diagonal",
+          "D0.Geometry.archive_graded_metric_measure_gram_diagonal",
+          "D0.archive_graded_metric_measure_gram_diagonal"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+        "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
+        "theorem_atom": "archive_metric_measure_zero_mass_counterexample",
+        "candidate_names": [
+          "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_metric_measure_zero_mass_counterexample",
+          "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_metric_measure_zero_mass_counterexample",
+          "D0.Geometry.archive_metric_measure_zero_mass_counterexample",
+          "D0.archive_metric_measure_zero_mass_counterexample"
         ]
       },
       {
@@ -64157,6 +64191,11 @@
       "source_path": null
     },
     {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_metric_measure_hodge_lift_owner",
+      "source_path": null
+    },
+    {
       "exists": true,
       "module": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
       "name": "D0.Geometry.archive_metric_measure_hodge_lift_owner",
@@ -64165,6 +64204,69 @@
     {
       "exists": false,
       "name": "D0.archive_metric_measure_hodge_lift_owner",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_graded_metric_measure_weight",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_graded_metric_measure_weight",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+      "name": "D0.Geometry.archive_graded_metric_measure_weight",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_graded_metric_measure_weight",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_graded_metric_measure_gram_diagonal",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_graded_metric_measure_gram_diagonal",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+      "name": "D0.Geometry.archive_graded_metric_measure_gram_diagonal",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_graded_metric_measure_gram_diagonal",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_metric_measure_zero_mass_counterexample",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_metric_measure_zero_mass_counterexample",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+      "name": "D0.Geometry.archive_metric_measure_zero_mass_counterexample",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_metric_measure_zero_mass_counterexample",
       "source_path": null
     },
     {
@@ -71964,7 +72066,7 @@
     "reason": "The request and declaration resolutions are retained; full mappings are reproducible with the inventory tool.",
     "crosswalk_summary": {
       "no_theorem_locator": 178,
-      "resolved_in_declared_module": 2585,
+      "resolved_in_declared_module": 2588,
       "unresolved": 4
     },
     "unresolved_mappings": [
@@ -72010,8 +72112,8 @@
         "matches": []
       }
     ],
-    "full_output_sha256": "464bb02629e389be7bec9f9b4de0ec82d34afd69ea83c33a784a0e6378256f11",
-    "full_output_bytes": 4429043,
+    "full_output_sha256": "d7ea73096d4ef9c711208c4e0c0fc89e7539b24659c9f085f480e0ac3ab02802",
+    "full_output_bytes": 4435995,
     "replay_command": "python3 tools/lean_declaration_inventory.py --all-claims --resolution-only"
   }
 }

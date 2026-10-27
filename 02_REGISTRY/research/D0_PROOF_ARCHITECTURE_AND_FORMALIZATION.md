@@ -11508,3 +11508,21 @@ new diagonal theorem and counterexample contains `propext`,
 
 The final public `D0.All` build including this binding passed 4,749 jobs on
 Lean source digest `a9b170f97d9088708b7366d16896ad77917ecc1ff62d1859d8548a64ca12c7ca`.
+
+At clean commit `bb0ae145f0df6643fbbdbc6aacd4b97b8eeb9fdf`, the elaborated
+binding, counterexample and sector-trace declarations are recorded in
+[`archive_metric_measure_binding_declarations_2026-10-27_bb0ae145.json`](sources/d0_proof_architecture_formalization_2026-10-24/archive_metric_measure_binding_declarations_2026-10-27_bb0ae145.json)
+(SHA-256 `8eecb9d5b504a6bcca8ec500731227a95f32062d0e1ff39fc86d60b752bfae02`);
+the live owner-aware claim reuse is
+[`metric_measure_owner_reuse_2026-10-27_bb0ae145.json`](sources/d0_proof_architecture_formalization_2026-10-24/metric_measure_owner_reuse_2026-10-27_bb0ae145.json)
+(SHA-256 `512367e076128a1e9027882e52c2a7cef3616a5e0b8b2d97de25af46cab37b66`).
+The complete claim-locator replay found 2,588 atoms in declared modules,
+four unresolved atoms and 178 rows without theorem locators; none is a
+coverage or physical-acceptance measure. At the same snapshot the cold-start
+replay found all 169 required references in 24/24 cases and passed the impact
+control; its receipt is
+[`proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json)
+(SHA-256 `45d06a847365b36a99127bb8d19a1f2725a5d2d59d7536a366c8cd2f99d624c9`).
+The matching search comparison is
+[`proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json)
+(SHA-256 `74ba3f2726ecbb72ad433ac6cd5150958576d1916232b8718b438f07f16b7952`).

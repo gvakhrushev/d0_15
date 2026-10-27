@@ -1,0 +1,1107 @@
+{
+  "key": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+  "matches": [
+    {
+      "item": {
+        "kind": "claim-metadata",
+        "key": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+        "label": "BOOK_06 §06.spectral metric-measure Hodge weight formula scaffold",
+        "source": "02_REGISTRY/claims.csv",
+        "record": {
+          "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+          "book": "BOOK_06",
+          "section": "06.spectral metric-measure Hodge weight formula scaffold",
+          "lean_module": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
+          "lean_theorem": "archive_metric_measure_hodge_lift_owner;archive_graded_metric_measure_weight;archive_graded_metric_measure_gram_diagonal;archive_metric_measure_zero_mass_counterexample",
+          "lean_status": "LEAN_PROVED",
+          "uses_bridge_assumptions": "False",
+          "assumption_ids": "",
+          "python_cert": "",
+          "release_status": "FORMALISM",
+          "notes": "The original owner defines W(k,mu,prod_c)=mu^(1-k)*prod_c and proves the degree 0 and 1 identities with the 16 cell sectors. ArchiveGradedMetricMeasureBinding now proves for every level, site and Fock sector that this formula, with the explicitly constructed positive counting masses and degree-scaled conductances, equals the actual graded pullback Gram diagonal. A zero-mass counterexample retains the generic nonzero hypothesis. This prescribed algebraic realization does not select a unique or canonical Hodge metric, physical normalization, source or refinement admission."
+        },
+        "search_terms": [
+          "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+          "BOOK_06",
+          "06.spectral metric-measure Hodge weight formula scaffold",
+          "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
+          "archive_metric_measure_hodge_lift_owner",
+          "archive_graded_metric_measure_weight",
+          "archive_graded_metric_measure_gram_diagonal",
+          "archive_metric_measure_zero_mass_counterexample",
+          "The original owner defines W(k,mu,prod_c)=mu^(1-k)*prod_c and proves the degree 0 and 1 identities with the 16 cell sectors. ArchiveGradedMetricMeasureBinding now proves for every level, site and Fock sector that this formula, with the explicitly constructed positive counting masses and degree-scaled conductances, equals the actual graded pullback Gram diagonal. A zero-mass counterexample retains the generic nonzero hypothesis. This prescribed algebraic realization does not select a unique or canonical Hodge metric, physical normalization, source or refinement admission."
+        ]
+      },
+      "declared_applications": [],
+      "declared_result": null,
+      "target_obligation": null,
+      "target_interface": null,
+      "registered_assumptions": [],
+      "claim_assumption_links": [],
+      "scoped_attempts": [],
+      "conceptual_presupposition_edges": [],
+      "warning": "Claim assumption IDs resolve to registry rows; this is separate from owner-claim links and does not type-check Lean propositions or establish independent scientific acceptance."
+    }
+  ],
+  "snapshot_commit": "bb0ae145f0df6643fbbdbc6aacd4b97b8eeb9fdf",
+  "source_digests": {
+    "02_REGISTRY/claims.csv": "4b89e8ed94d74b99622714f496f1fffa86ca976733c7d4340003cd5a07e5a187",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "4cbd5e685624ae63acbc0b6f681eddf7d19e5212dad2107b1aa04a5b8ac6c680",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "compiled_claim_reuse": [
+    {
+      "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+      "claim_locator_mappings": [
+        {
+          "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+          "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
+          "theorem_atom": "archive_metric_measure_hodge_lift_owner",
+          "candidate_names": [
+            "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_metric_measure_hodge_lift_owner",
+            "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_metric_measure_hodge_lift_owner",
+            "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+            "D0.archive_metric_measure_hodge_lift_owner"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "mu",
+                  "type": "ℝ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "c_r",
+                  "type": "ℝ"
+                }
+              ],
+              "conclusion_whnf": "D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n  D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n    Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 101,
+                    "line": 53
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 44
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 47,
+                    "line": 48
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 48
+                  }
+                }
+              },
+              "elaborated_type": "∀ (mu c_r : ℝ),\n  D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n    D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n      Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+              "name": "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+              "proof_dependencies": [
+                "And",
+                "And.intro",
+                "Bool",
+                "Bool.fintype",
+                "D0.Dyad",
+                "D0.Geometry.CubicalCellType",
+                "D0.Geometry.card_archive_fock_state",
+                "D0.Geometry.hodgeMetricMeasureWeight",
+                "D0.Geometry.hodge_weight_0_eq_mu",
+                "D0.Geometry.hodge_weight_1_eq_conductance",
+                "D0.Role",
+                "D0.card_role",
+                "Eq",
+                "Fin.fintype",
+                "Fintype.card",
+                "Nat",
+                "OfNat.ofNat",
+                "One.toOfNat1",
+                "Pi.instFintype",
+                "Real",
+                "Real.instOne",
+                "instDecidableEqFin",
+                "instDecidableEqProd",
+                "instFintypeProd",
+                "instOfNatNat"
+              ],
+              "type_dependencies": [
+                "And",
+                "Bool",
+                "Bool.fintype",
+                "D0.Dyad",
+                "D0.Geometry.CubicalCellType",
+                "D0.Geometry.hodgeMetricMeasureWeight",
+                "D0.Role",
+                "Eq",
+                "Fin.fintype",
+                "Fintype.card",
+                "Nat",
+                "OfNat.ofNat",
+                "One.toOfNat1",
+                "Pi.instFintype",
+                "Real",
+                "Real.instOne",
+                "instDecidableEqFin",
+                "instDecidableEqProd",
+                "instFintypeProd",
+                "instOfNatNat"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean"
+            }
+          ],
+          "owner_resolution_status": "resolved_in_declared_module",
+          "declared_modules": [
+            "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+            "D0.Geometry.ArchiveGradedMetricMeasureBinding"
+          ],
+          "owner_resolution_matches": [
+            {
+              "name": "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+              "module": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean",
+              "owner_matches_locator": true
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+          "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
+          "theorem_atom": "archive_graded_metric_measure_weight",
+          "candidate_names": [
+            "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_graded_metric_measure_weight",
+            "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_graded_metric_measure_weight",
+            "D0.Geometry.archive_graded_metric_measure_weight",
+            "D0.archive_graded_metric_measure_weight"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "N",
+                  "type": "ℕ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "x",
+                  "type": "D0.Role → ZMod (D0.archiveFibers N)"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "S",
+                  "type": "D0.Role → Bool"
+                }
+              ],
+              "conclusion_whnf": "D0.Geometry.hodgeMetricMeasureWeight (D0.Geometry.fockDegree S) (D0.Geometry.archiveRoleMeasure N x)\n    (∏ r ∈ D0.Geometry.archiveOccupiedRoles S, D0.Geometry.archiveRoleConductance N x r) =\n  D0.Geometry.archiveGradedGramWeight N x S",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 26,
+                    "line": 117
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 83
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 44,
+                    "line": 85
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 85
+                  }
+                }
+              },
+              "elaborated_type": "∀ (N : ℕ) (x : D0.Geometry.ArchiveRolePhaseGroup N) (S : D0.Geometry.ArchiveFockState),\n  D0.Geometry.hodgeMetricMeasureWeight (D0.Geometry.fockDegree S) (D0.Geometry.archiveRoleMeasure N x)\n      (∏ r ∈ D0.Geometry.archiveOccupiedRoles S, D0.Geometry.archiveRoleConductance N x r) =\n    D0.Geometry.archiveGradedGramWeight N x S",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+              "name": "D0.Geometry.archive_graded_metric_measure_weight",
+              "proof_dependencies": [
+                "AddCommMonoidWithOne.toAddMonoidWithOne",
+                "And",
+                "Bool",
+                "Bool.casesOn",
+                "Bool.false",
+                "Bool.false_eq_true",
+                "Bool.not_eq_true",
+                "Bool.true",
+                "Bool.true_eq_false",
+                "CommMonoid.toMonoid",
+                "CommRing.toCommSemiring",
+                "CommSemiring.toSemiring",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.archiveCochainScaleRatio",
+                "D0.Geometry.archiveGradedGramWeight",
+                "D0.Geometry.archiveGradedGramWeight.eq_1",
+                "D0.Geometry.archiveGramCoordinateWeight",
+                "D0.Geometry.archiveGramCoordinateWeight._proof_1",
+                "D0.Geometry.archiveOccupiedRoles",
+                "D0.Geometry.archiveRoleConductance",
+                "D0.Geometry.archiveRoleMass",
+                "D0.Geometry.archiveRoleMass._proof_1",
+                "D0.Geometry.archiveRoleMeasure",
+                "D0.Geometry.archive_graded_metric_measure_weight._simp_1_1",
+                "D0.Geometry.archive_graded_metric_measure_weight._simp_1_2",
+                "D0.Geometry.archive_graded_metric_measure_weight._simp_1_3",
+                "D0.Geometry.archive_metric_measure_refinement_weight",
+                "D0.Geometry.archive_role_mass_ne_zero",
+                "D0.Geometry.fockDegree",
+                "D0.Geometry.hodgeMetricMeasureWeight",
+                {
+                  "_omitted_items": 127
+                }
+              ],
+              "type_dependencies": [
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.archiveGradedGramWeight",
+                "D0.Geometry.archiveOccupiedRoles",
+                "D0.Geometry.archiveRoleConductance",
+                "D0.Geometry.archiveRoleMeasure",
+                "D0.Geometry.fockDegree",
+                "D0.Geometry.hodgeMetricMeasureWeight",
+                "D0.Role",
+                "Eq",
+                "Finset.prod",
+                "Nat",
+                "Real",
+                "Real.instCommMonoid"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean"
+            }
+          ],
+          "owner_resolution_status": "resolved_in_declared_module",
+          "declared_modules": [
+            "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+            "D0.Geometry.ArchiveGradedMetricMeasureBinding"
+          ],
+          "owner_resolution_matches": [
+            {
+              "name": "D0.Geometry.archive_graded_metric_measure_weight",
+              "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean",
+              "owner_matches_locator": true
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+          "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
+          "theorem_atom": "archive_graded_metric_measure_gram_diagonal",
+          "candidate_names": [
+            "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_graded_metric_measure_gram_diagonal",
+            "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_graded_metric_measure_gram_diagonal",
+            "D0.Geometry.archive_graded_metric_measure_gram_diagonal",
+            "D0.archive_graded_metric_measure_gram_diagonal"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "N",
+                  "type": "ℕ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "x",
+                  "type": "D0.Role → ZMod (D0.archiveFibers N)"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "S",
+                  "type": "D0.Role → Bool"
+                }
+              ],
+              "conclusion_whnf": "((D0.Geometry.archiveGradedPullbackMatrix N).transpose * D0.Geometry.archiveGradedPullbackMatrix N) (x, S) (x, S) =\n  D0.Geometry.hodgeMetricMeasureWeight (D0.Geometry.fockDegree S) (D0.Geometry.archiveRoleMeasure N x)\n    (∏ r ∈ D0.Geometry.archiveOccupiedRoles S, D0.Geometry.archiveRoleConductance N x r)",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 57,
+                    "line": 128
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 119
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 51,
+                    "line": 121
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 121
+                  }
+                }
+              },
+              "elaborated_type": "∀ (N : ℕ) (x : D0.Geometry.ArchiveRolePhaseGroup N) (S : D0.Geometry.ArchiveFockState),\n  ((D0.Geometry.archiveGradedPullbackMatrix N).transpose * D0.Geometry.archiveGradedPullbackMatrix N) (x, S) (x, S) =\n    D0.Geometry.hodgeMetricMeasureWeight (D0.Geometry.fockDegree S) (D0.Geometry.archiveRoleMeasure N x)\n      (∏ r ∈ D0.Geometry.archiveOccupiedRoles S, D0.Geometry.archiveRoleConductance N x r)",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+              "name": "D0.Geometry.archive_graded_metric_measure_gram_diagonal",
+              "proof_dependencies": [
+                "Bool",
+                "Bool.fintype",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.archiveGradedGramWeight",
+                "D0.Geometry.archiveGradedPullbackMatrix",
+                "D0.Geometry.archiveOccupiedRoles",
+                "D0.Geometry.archiveRoleConductance",
+                "D0.Geometry.archiveRoleMeasure",
+                "D0.Geometry.archive_graded_matrix_gram",
+                "D0.Geometry.archive_graded_metric_measure_weight",
+                "D0.Geometry.fockDegree",
+                "D0.Geometry.hodgeMetricMeasureWeight",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Role",
+                "D0.archiveFibers",
+                "Eq",
+                "Eq.mpr",
+                "Eq.symm",
+                "Fin.fintype",
+                "Finset.prod",
+                "Fintype.decidablePiFintype",
+                "HAdd.hAdd",
+                "HMul.hMul",
+                "Matrix",
+                "Matrix.diagonal",
+                "Matrix.diagonal_apply_eq",
+                "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+                "Matrix.transpose",
+                "Nat",
+                {
+                  "_omitted_items": 23
+                }
+              ],
+              "type_dependencies": [
+                "Bool",
+                "Bool.fintype",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.archiveGradedPullbackMatrix",
+                "D0.Geometry.archiveOccupiedRoles",
+                "D0.Geometry.archiveRoleConductance",
+                "D0.Geometry.archiveRoleMeasure",
+                "D0.Geometry.fockDegree",
+                "D0.Geometry.hodgeMetricMeasureWeight",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Role",
+                "D0.archiveFibers",
+                "Eq",
+                "Fin.fintype",
+                "Finset.prod",
+                "HAdd.hAdd",
+                "HMul.hMul",
+                "Matrix",
+                "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+                "Matrix.transpose",
+                "Nat",
+                "OfNat.ofNat",
+                "Pi.instFintype",
+                "Prod.mk",
+                "Real",
+                "Real.instAddCommMonoid",
+                "Real.instCommMonoid",
+                "Real.instMul",
+                "ZMod",
+                {
+                  "_omitted_items": 7
+                }
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean"
+            }
+          ],
+          "owner_resolution_status": "resolved_in_declared_module",
+          "declared_modules": [
+            "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+            "D0.Geometry.ArchiveGradedMetricMeasureBinding"
+          ],
+          "owner_resolution_matches": [
+            {
+              "name": "D0.Geometry.archive_graded_metric_measure_gram_diagonal",
+              "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean",
+              "owner_matches_locator": true
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+          "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding",
+          "theorem_atom": "archive_metric_measure_zero_mass_counterexample",
+          "candidate_names": [
+            "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_metric_measure_zero_mass_counterexample",
+            "D0.Geometry.ArchiveGradedMetricMeasureBinding.archive_metric_measure_zero_mass_counterexample",
+            "D0.Geometry.archive_metric_measure_zero_mass_counterexample",
+            "D0.archive_metric_measure_zero_mass_counterexample"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "D0.Geometry.hodgeMetricMeasureWeight Finset.univ.card (∏ x, 0) (∏ x, (∏ x, 0) / 0) =\n    ∏ x ∈ Finset.univ \\ Finset.univ, 0 →\n  False",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 49,
+                    "line": 81
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 74
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 55,
+                    "line": 76
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 76
+                  }
+                }
+              },
+              "elaborated_type": "D0.Geometry.hodgeMetricMeasureWeight Finset.univ.card (∏ x, 0) (∏ x, (∏ x, 0) / 0) ≠ ∏ x ∈ Finset.univ \\ Finset.univ, 0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+              "name": "D0.Geometry.archive_metric_measure_zero_mass_counterexample",
+              "proof_dependencies": [
+                "AddGroup.toSubNegMonoid",
+                "AddGroupWithOne.toAddMonoidWithOne",
+                "AddMonoid.toAddZeroClass",
+                "AddMonoidWithOne.toOne",
+                "AddZero.toZero",
+                "AddZeroClass.toAddZero",
+                "BiheytingAlgebra.toCoheytingAlgebra",
+                "Bool",
+                "Bool.false",
+                "BooleanAlgebra.toBiheytingAlgebra",
+                "Bot.bot",
+                "CoheytingAlgebra.toGeneralizedCoheytingAlgebra",
+                "CommMonoid.toMonoid",
+                "D0.Geometry.hodgeMetricMeasureWeight",
+                "D0.Geometry.muExponent",
+                "DivInvMonoid.toDiv",
+                "DivInvMonoid.toMonoid",
+                "DivInvMonoid.toZPow",
+                "DivisionSemiring.toGroupWithZero",
+                "EmptyCollection.emptyCollection",
+                "Eq",
+                "Eq.refl",
+                "Eq.trans",
+                "Field.toSemifield",
+                "Finset",
+                "Finset.booleanAlgebra",
+                "Finset.card",
+                "Finset.card_singleton",
+                "Finset.instEmptyCollection",
+                "Finset.instSDiff",
+                "Finset.instSetLike",
+                "Finset.instSingleton",
+                {
+                  "_omitted_items": 82
+                }
+              ],
+              "type_dependencies": [
+                "D0.Geometry.hodgeMetricMeasureWeight",
+                "DivInvMonoid.toDiv",
+                "Finset",
+                "Finset.card",
+                "Finset.instSDiff",
+                "Finset.prod",
+                "Finset.univ",
+                "HDiv.hDiv",
+                "Ne",
+                "OfNat.ofNat",
+                "PUnit.fintype",
+                "Real",
+                "Real.instCommMonoid",
+                "Real.instDivInvMonoid",
+                "Real.instZero",
+                "SDiff.sdiff",
+                "Unit",
+                "Zero.toOfNat0",
+                "instDecidableEqPUnit",
+                "instHDiv"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean"
+            }
+          ],
+          "owner_resolution_status": "resolved_in_declared_module",
+          "declared_modules": [
+            "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+            "D0.Geometry.ArchiveGradedMetricMeasureBinding"
+          ],
+          "owner_resolution_matches": [
+            {
+              "name": "D0.Geometry.archive_metric_measure_zero_mass_counterexample",
+              "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean",
+              "owner_matches_locator": true
+            }
+          ]
+        }
+      ],
+      "compiled_declarations": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "mu",
+              "type": "ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "c_r",
+              "type": "ℝ"
+            }
+          ],
+          "conclusion_whnf": "D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n  D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n    Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 101,
+                "line": 53
+              },
+              "start": {
+                "column": 0,
+                "line": 44
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 47,
+                "line": 48
+              },
+              "start": {
+                "column": 8,
+                "line": 48
+              }
+            }
+          },
+          "elaborated_type": "∀ (mu c_r : ℝ),\n  D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n    D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n      Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+          "name": "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+          "proof_dependencies": [
+            "And",
+            "And.intro",
+            "Bool",
+            "Bool.fintype",
+            "D0.Dyad",
+            "D0.Geometry.CubicalCellType",
+            "D0.Geometry.card_archive_fock_state",
+            "D0.Geometry.hodgeMetricMeasureWeight",
+            "D0.Geometry.hodge_weight_0_eq_mu",
+            "D0.Geometry.hodge_weight_1_eq_conductance",
+            "D0.Role",
+            "D0.card_role",
+            "Eq",
+            "Fin.fintype",
+            "Fintype.card",
+            "Nat",
+            "OfNat.ofNat",
+            "One.toOfNat1",
+            "Pi.instFintype",
+            "Real",
+            "Real.instOne",
+            "instDecidableEqFin",
+            "instDecidableEqProd",
+            "instFintypeProd",
+            "instOfNatNat"
+          ],
+          "type_dependencies": [
+            "And",
+            "Bool",
+            "Bool.fintype",
+            "D0.Dyad",
+            "D0.Geometry.CubicalCellType",
+            "D0.Geometry.hodgeMetricMeasureWeight",
+            "D0.Role",
+            "Eq",
+            "Fin.fintype",
+            "Fintype.card",
+            "Nat",
+            "OfNat.ofNat",
+            "One.toOfNat1",
+            "Pi.instFintype",
+            "Real",
+            "Real.instOne",
+            "instDecidableEqFin",
+            "instDecidableEqProd",
+            "instFintypeProd",
+            "instOfNatNat"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "N",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "x",
+              "type": "D0.Role → ZMod (D0.archiveFibers N)"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "S",
+              "type": "D0.Role → Bool"
+            }
+          ],
+          "conclusion_whnf": "D0.Geometry.hodgeMetricMeasureWeight (D0.Geometry.fockDegree S) (D0.Geometry.archiveRoleMeasure N x)\n    (∏ r ∈ D0.Geometry.archiveOccupiedRoles S, D0.Geometry.archiveRoleConductance N x r) =\n  D0.Geometry.archiveGradedGramWeight N x S",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 26,
+                "line": 117
+              },
+              "start": {
+                "column": 0,
+                "line": 83
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 44,
+                "line": 85
+              },
+              "start": {
+                "column": 8,
+                "line": 85
+              }
+            }
+          },
+          "elaborated_type": "∀ (N : ℕ) (x : D0.Geometry.ArchiveRolePhaseGroup N) (S : D0.Geometry.ArchiveFockState),\n  D0.Geometry.hodgeMetricMeasureWeight (D0.Geometry.fockDegree S) (D0.Geometry.archiveRoleMeasure N x)\n      (∏ r ∈ D0.Geometry.archiveOccupiedRoles S, D0.Geometry.archiveRoleConductance N x r) =\n    D0.Geometry.archiveGradedGramWeight N x S",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+          "name": "D0.Geometry.archive_graded_metric_measure_weight",
+          "proof_dependencies": [
+            "AddCommMonoidWithOne.toAddMonoidWithOne",
+            "And",
+            "Bool",
+            "Bool.casesOn",
+            "Bool.false",
+            "Bool.false_eq_true",
+            "Bool.not_eq_true",
+            "Bool.true",
+            "Bool.true_eq_false",
+            "CommMonoid.toMonoid",
+            "CommRing.toCommSemiring",
+            "CommSemiring.toSemiring",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.archiveCochainScaleRatio",
+            "D0.Geometry.archiveGradedGramWeight",
+            "D0.Geometry.archiveGradedGramWeight.eq_1",
+            "D0.Geometry.archiveGramCoordinateWeight",
+            "D0.Geometry.archiveGramCoordinateWeight._proof_1",
+            "D0.Geometry.archiveOccupiedRoles",
+            "D0.Geometry.archiveRoleConductance",
+            "D0.Geometry.archiveRoleMass",
+            "D0.Geometry.archiveRoleMass._proof_1",
+            "D0.Geometry.archiveRoleMeasure",
+            "D0.Geometry.archive_graded_metric_measure_weight._simp_1_1",
+            "D0.Geometry.archive_graded_metric_measure_weight._simp_1_2",
+            "D0.Geometry.archive_graded_metric_measure_weight._simp_1_3",
+            "D0.Geometry.archive_metric_measure_refinement_weight",
+            "D0.Geometry.archive_role_mass_ne_zero",
+            "D0.Geometry.fockDegree",
+            "D0.Geometry.hodgeMetricMeasureWeight",
+            {
+              "_omitted_items": 127
+            }
+          ],
+          "type_dependencies": [
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.archiveGradedGramWeight",
+            "D0.Geometry.archiveOccupiedRoles",
+            "D0.Geometry.archiveRoleConductance",
+            "D0.Geometry.archiveRoleMeasure",
+            "D0.Geometry.fockDegree",
+            "D0.Geometry.hodgeMetricMeasureWeight",
+            "D0.Role",
+            "Eq",
+            "Finset.prod",
+            "Nat",
+            "Real",
+            "Real.instCommMonoid"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "N",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "x",
+              "type": "D0.Role → ZMod (D0.archiveFibers N)"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "S",
+              "type": "D0.Role → Bool"
+            }
+          ],
+          "conclusion_whnf": "((D0.Geometry.archiveGradedPullbackMatrix N).transpose * D0.Geometry.archiveGradedPullbackMatrix N) (x, S) (x, S) =\n  D0.Geometry.hodgeMetricMeasureWeight (D0.Geometry.fockDegree S) (D0.Geometry.archiveRoleMeasure N x)\n    (∏ r ∈ D0.Geometry.archiveOccupiedRoles S, D0.Geometry.archiveRoleConductance N x r)",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 57,
+                "line": 128
+              },
+              "start": {
+                "column": 0,
+                "line": 119
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 51,
+                "line": 121
+              },
+              "start": {
+                "column": 8,
+                "line": 121
+              }
+            }
+          },
+          "elaborated_type": "∀ (N : ℕ) (x : D0.Geometry.ArchiveRolePhaseGroup N) (S : D0.Geometry.ArchiveFockState),\n  ((D0.Geometry.archiveGradedPullbackMatrix N).transpose * D0.Geometry.archiveGradedPullbackMatrix N) (x, S) (x, S) =\n    D0.Geometry.hodgeMetricMeasureWeight (D0.Geometry.fockDegree S) (D0.Geometry.archiveRoleMeasure N x)\n      (∏ r ∈ D0.Geometry.archiveOccupiedRoles S, D0.Geometry.archiveRoleConductance N x r)",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+          "name": "D0.Geometry.archive_graded_metric_measure_gram_diagonal",
+          "proof_dependencies": [
+            "Bool",
+            "Bool.fintype",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.archiveGradedGramWeight",
+            "D0.Geometry.archiveGradedPullbackMatrix",
+            "D0.Geometry.archiveOccupiedRoles",
+            "D0.Geometry.archiveRoleConductance",
+            "D0.Geometry.archiveRoleMeasure",
+            "D0.Geometry.archive_graded_matrix_gram",
+            "D0.Geometry.archive_graded_metric_measure_weight",
+            "D0.Geometry.fockDegree",
+            "D0.Geometry.hodgeMetricMeasureWeight",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Role",
+            "D0.archiveFibers",
+            "Eq",
+            "Eq.mpr",
+            "Eq.symm",
+            "Fin.fintype",
+            "Finset.prod",
+            "Fintype.decidablePiFintype",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "Matrix",
+            "Matrix.diagonal",
+            "Matrix.diagonal_apply_eq",
+            "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+            "Matrix.transpose",
+            "Nat",
+            {
+              "_omitted_items": 23
+            }
+          ],
+          "type_dependencies": [
+            "Bool",
+            "Bool.fintype",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.archiveGradedPullbackMatrix",
+            "D0.Geometry.archiveOccupiedRoles",
+            "D0.Geometry.archiveRoleConductance",
+            "D0.Geometry.archiveRoleMeasure",
+            "D0.Geometry.fockDegree",
+            "D0.Geometry.hodgeMetricMeasureWeight",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Role",
+            "D0.archiveFibers",
+            "Eq",
+            "Fin.fintype",
+            "Finset.prod",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "Matrix",
+            "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+            "Matrix.transpose",
+            "Nat",
+            "OfNat.ofNat",
+            "Pi.instFintype",
+            "Prod.mk",
+            "Real",
+            "Real.instAddCommMonoid",
+            "Real.instCommMonoid",
+            "Real.instMul",
+            "ZMod",
+            {
+              "_omitted_items": 7
+            }
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "D0.Geometry.hodgeMetricMeasureWeight Finset.univ.card (∏ x, 0) (∏ x, (∏ x, 0) / 0) =\n    ∏ x ∈ Finset.univ \\ Finset.univ, 0 →\n  False",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 49,
+                "line": 81
+              },
+              "start": {
+                "column": 0,
+                "line": 74
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 55,
+                "line": 76
+              },
+              "start": {
+                "column": 8,
+                "line": 76
+              }
+            }
+          },
+          "elaborated_type": "D0.Geometry.hodgeMetricMeasureWeight Finset.univ.card (∏ x, 0) (∏ x, (∏ x, 0) / 0) ≠ ∏ x ∈ Finset.univ \\ Finset.univ, 0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.ArchiveGradedMetricMeasureBinding",
+          "name": "D0.Geometry.archive_metric_measure_zero_mass_counterexample",
+          "proof_dependencies": [
+            "AddGroup.toSubNegMonoid",
+            "AddGroupWithOne.toAddMonoidWithOne",
+            "AddMonoid.toAddZeroClass",
+            "AddMonoidWithOne.toOne",
+            "AddZero.toZero",
+            "AddZeroClass.toAddZero",
+            "BiheytingAlgebra.toCoheytingAlgebra",
+            "Bool",
+            "Bool.false",
+            "BooleanAlgebra.toBiheytingAlgebra",
+            "Bot.bot",
+            "CoheytingAlgebra.toGeneralizedCoheytingAlgebra",
+            "CommMonoid.toMonoid",
+            "D0.Geometry.hodgeMetricMeasureWeight",
+            "D0.Geometry.muExponent",
+            "DivInvMonoid.toDiv",
+            "DivInvMonoid.toMonoid",
+            "DivInvMonoid.toZPow",
+            "DivisionSemiring.toGroupWithZero",
+            "EmptyCollection.emptyCollection",
+            "Eq",
+            "Eq.refl",
+            "Eq.trans",
+            "Field.toSemifield",
+            "Finset",
+            "Finset.booleanAlgebra",
+            "Finset.card",
+            "Finset.card_singleton",
+            "Finset.instEmptyCollection",
+            "Finset.instSDiff",
+            "Finset.instSetLike",
+            "Finset.instSingleton",
+            {
+              "_omitted_items": 82
+            }
+          ],
+          "type_dependencies": [
+            "D0.Geometry.hodgeMetricMeasureWeight",
+            "DivInvMonoid.toDiv",
+            "Finset",
+            "Finset.card",
+            "Finset.instSDiff",
+            "Finset.prod",
+            "Finset.univ",
+            "HDiv.hDiv",
+            "Ne",
+            "OfNat.ofNat",
+            "PUnit.fintype",
+            "Real",
+            "Real.instCommMonoid",
+            "Real.instDivInvMonoid",
+            "Real.instZero",
+            "SDiff.sdiff",
+            "Unit",
+            "Zero.toOfNat0",
+            "instDecidableEqPUnit",
+            "instHDiv"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedMetricMeasureBinding.lean"
+        }
+      ],
+      "compiled_dependency_claim_links": [
+        {
+          "source_claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+          "source_declaration": "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+          "dependency_declaration": "D0.Geometry.card_archive_fock_state",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-ARCHIVE-CAR-FOCK-CARRIER-001",
+              "theorem_atom": "card_archive_fock_state",
+              "module_locator": "D0.Geometry.ArchiveCARFockCarrier"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+          "source_declaration": "D0.Geometry.archive_graded_metric_measure_gram_diagonal",
+          "dependency_declaration": "D0.Geometry.archive_graded_matrix_gram",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
+              "theorem_atom": "archive_graded_matrix_gram",
+              "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace;D0.Geometry.ArchiveGradedCochainSectorTrace"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+          "source_declaration": "D0.Geometry.archive_graded_metric_measure_gram_diagonal",
+          "dependency_declaration": "D0.Geometry.archive_graded_metric_measure_weight",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+              "theorem_atom": "archive_graded_metric_measure_weight",
+              "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift;D0.Geometry.ArchiveGradedMetricMeasureBinding"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        }
+      ],
+      "declared_metadata_relations": {
+        "declared_applications": [],
+        "declared_result": null,
+        "target_obligation": null,
+        "target_interface": null,
+        "registered_assumptions": [],
+        "claim_assumption_links": [],
+        "scoped_attempts": [],
+        "conceptual_presupposition_edges": [],
+        "warning": "Claim assumption IDs resolve to registry rows; this is separate from owner-claim links and does not type-check Lean propositions or establish independent scientific acceptance."
+      },
+      "collector_sha256": "0562804283e67c4f62b67e8abd9c69f2cd7c3e386a4e9c5bdbaedfe92fcff56a",
+      "lean_source_digest": "a9b170f97d9088708b7366d16896ad77917ecc1ff62d1859d8548a64ca12c7ca",
+      "public_import_root": "D0.All",
+      "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. Name presence does not imply that a declaration is owned by a listed module; see owner_resolution_status and owner_resolution_matches. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
+    }
+  ],
+  "compiled_claim_alias_reuse": [],
+  "worktree_dirty": false
+}
