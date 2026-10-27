@@ -321,3 +321,24 @@ No fixed field-independent magnitude for the prefactor is necessary to identify 
 **Mathematically meaningful limitation.** S21–S23 are original GEOMETRIC ambient perturbations. This theorem does NOT assert that the complete native D0 finite word graph admits both probes or every vector in ker L. That is the exact remaining native physical realization hypothesis, not a permission to add external fields. Nor does M1 alone make the complete Book price factor through F,Q: actual native full128 history and fixed-probe harmonic observables may distinguish data in ker L even when the STATIONARY SOURCE ultimately annihilates it. Source-annihilation must be proved by the real internal full Book/record/clock/oldRIGHT Ward/causal equations, not by deleting distinguishable records.
 
 **Next test rather than another census:** calculate the genuine complete native β with the already constructed Q14/Q23/C34 port+coherent archive, the original geometric operand D_rs and actual full Book H+J+R/work/clock. Prove the kernel Ward on true internal completed words, then evaluate **only two exact normalized source probes** at one arbitrary generic common-null representative and prove their ratio is the original \(\lambda_-\). A numerical two-point fit would not establish a whole-family identity; S25 must be proved as algebraic identities over its full stated chart. This is now the minimal logically sufficient physical source-composition theorem, not a new independent project task.
+
+
+## 9. Theorem S-H — correctly cross the stationary rank drop; do not require an impossible two-probe test at an Einstein root
+
+The generic two-probe reconstruction S21–S26 must NOT be used at the exact target root as though \(L_y\) remained surjective. Indeed at EVERY exact configured Einstein–CAR stationary point on the common-null carrier,
+\[
+DF_h+\lambda_-DQ_h=0\quad\text{as an ENTIRE original ambient cofield}.
+\tag{S27}
+\]
+Since \(\lambda_-\ne0\), the two rows of \(L_y\) are then linearly dependent. Thus \(\operatorname{rank}L_y\le1\), and **two independent normalized normal probes cannot exist at a stationary root**. This is not a failed source theorem: the rank loss is itself a necessary consequence of the sought Euler equation. It explains why off-shell first sources, not two probes evaluated only at an on-shell zero, are essential.
+
+The correct positive statement is a **dense-extension lemma**. Let \(U\subset\Sigma\) be a connected finite-dimensional original common-null chart and \(U^\circ\subset U\) a dense subset where \(\operatorname{rank}L_y=2\). Let \(\beta_y=D\mathcal B_{\rm complete,h}(y)\), \(DJ_{2,h}(y)\) and a scalar response gain \(g(y)\) be continuous on U. If the REAL same-execution native calculations prove S25 on every \(y\in U^\circ\) AND prove \(g(y)=\beta_y(v_F)/\gamma_h(y)\) has a finite continuous nonzero extension across \(U\setminus U^\circ\), then
+\[
+\boxed{\beta_y=g(y)DJ_{2,h}(y)\quad\forall y\in U.}
+\tag{S28}
+\]
+Proof: the two continuous cotangent sections agree on the dense subset \(U^\circ\); evaluate their difference on any local fixed tangent frame and use continuity. At any original Einstein root, \(DJ_{2,h}=0\), so S28 gives the exact native \(\beta_y=0\). This does not require preserving rank2 at the root, inventing a new field variation, or applying a singular projector.
+
+For the reverse implication **native stationarity implies the three original Cartan/Einstein equations**, one further well-typed domain fact is needed: the ACTUAL admitted native tangent image must detect each of the original three nonzero \(16+24+2\) normal Euler rows (at every relevant site), or a proved equivalent set of normal constraints. A projected equation on a smaller variation image does NOT automatically assert all original continuum Einstein components. This is the minimal intrinsic admissibility/soundness boundary rather than a gratuitous external full-field assumption.
+
+Source-checker identities S23 and the decomposition \(v=DF[v]v_F+DQ[v]v_Q+k\), \(k\in\ker L\), are exact linear algebra. Their small symbolic replay is to be included in the existing narrow checker, not used as another Einstein root certificate.
