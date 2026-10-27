@@ -3123,7 +3123,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-27_typed_source_links_v2.json"
+            / "proof_architecture_search_process_comparison_2026-10-27_native_cochain_5873fad1.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
@@ -3131,6 +3131,12 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertFalse(comparison["worktree_dirty"])
         self.assertRegex(comparison["snapshot_commit"], r"^[0-9a-f]{40}$")
+        for path, digest in comparison["authority_source_digests"].items():
+            self.assertEqual(
+                hashlib.sha256((proof.ROOT / path).read_bytes()).hexdigest(),
+                digest,
+                f"search comparison has stale authority digest for {path}",
+            )
         self.assertEqual(comparison["metrics"]["query_count"], len(cold_start.CASES))
         metrics = comparison["metrics"]
         self.assertEqual(metrics["query_count_with_explicit_source_scope"], 7)

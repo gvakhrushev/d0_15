@@ -11182,3 +11182,28 @@ and overlay mutation checks were clear. Its compact receipt is
 SHA-256 `6c9c5311e27e0c89467b1dbfa4156e0f501d585af8a3db75271bc4961ca37ec7`.
 The source and Lean receipt in that replay remain historical; current-source
 compatibility is checked separately.
+
+On clean commit `5873fad110e8b3c8c874c510b0d50f0ce0c101f5`, the unchanged
+pairing capsule compiled against current supported imports at source digest
+`40b8842e1a891f8f8266f979db48f5e7dff205e7a69b2340f1090f6a7d0b9072`.
+All 28 requested axiom reports were present and used only `propext`,
+`Classical.choice`, and `Quot.sound`. The exact printed types and output are in
+[`native_pairing_current_compatibility_2026-10-27_5873fad1.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/native_pairing_current_compatibility_2026-10-27_5873fad1.json),
+SHA-256 `67cbf5fb93a06979dd6ff9f1a75b26df7afc8651b85bfbca57f0372ba8a0af89`.
+
+The input selector on the same commit and base
+`8b94198c8dfbdf5983ad0b350b058fb30bb68a54` chose 95 certificates. Its 325
+checked pins matched and 1,211 provenance records were unpinned; all 95 chosen
+certificates retain an `unknown-dependency` reason. No scientific replay was
+performed by selection. The compact selection receipt is
+[`research_input_closure_summary_2026-10-27_5873fad1.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/research_input_closure_summary_2026-10-27_5873fad1.json),
+SHA-256 `a9f08801eae76bdaad4d2e2227498f46afe1d718be7abfd522e4b10d70f10c8e`.
+
+The same 24 search questions at that clean commit found the expected source
+in 7/7 explicitly scoped current-search questions and 0/7 legacy searches.
+Assembly-owner links, `formal_support` metadata locators and source-authored
+owner fields remain separately counted. The report is
+[`proof_architecture_search_process_comparison_2026-10-27_native_cochain_5873fad1.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_native_cochain_5873fad1.json),
+SHA-256 `dc754690d4b5b01a3212092259e2e184eb28c8d65aed0812d9f3c4551446af68`.
+Owner correctness and hypothesis preservation remain manual review, and the
+serialized response size is not a measure of reading effort.
