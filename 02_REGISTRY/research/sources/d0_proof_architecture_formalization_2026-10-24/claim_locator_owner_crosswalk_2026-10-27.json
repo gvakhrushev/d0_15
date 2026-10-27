@@ -1,21 +1,18 @@
 {
   "schema": "d0-claim-locator-owner-crosswalk-v1",
-  "snapshot_commit": "f25e19467f689eb66b2b58922704a8ad34db7757",
+  "snapshot_commit": "b09ab675aa68cd957d1d35aff54da6b1a37d1073",
   "worktree_dirty": false,
-  "claim_registry_sha256": "3d04e025ffa849d07ae2d7f6100a92b7f26714066806e8ab22156472a9314c2a",
-  "lean_source_digest": "b22e81274a029862376799adb0d087124ad8d1e4d096747d15257832add27226",
-  "collector_sha256": "cee480afad31f5235a5d04f633901ed210f6eb11fef7f81993c5032d36a191d5",
+  "claim_registry_sha256": "0d9cca180d8c33a04207e69c948923231b4c450e9dbd412f826e8d162c14f07a",
+  "lean_source_digest": "4b4172b6f1ab9e7f44a66fbd32d3abc34209304a3caad27d92adab3509a53d66",
+  "collector_sha256": "a8e55d9172e21ab94666dfc4f616eb327cf3ce0d59c65455731829b4c9203160",
   "toolchain": "leanprover/lean4:v4.30.0",
   "python": "3.12.14",
   "public_import_root": "D0.All",
   "replay_command": "tools/lean_declaration_inventory.py --all-claims --resolution-only",
   "summary": {
-    "ambiguous_across_declared_and_other_modules": 1,
-    "ambiguous_within_declared_modules": 3,
     "no_theorem_locator": 178,
-    "resolved_in_declared_module": 2533,
-    "resolved_outside_declared_modules": 13,
-    "unresolved": 22
+    "resolved_in_declared_module": 2566,
+    "unresolved": 7
   },
   "mappings": [
     {
@@ -1704,9 +1701,10 @@
     {
       "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
       "theorem_atom": "topHodgeHarmonicMultiplicity_formula",
-      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
       "declared_modules": [
-        "D0.Synthesis.TopHodgeSpectralSceneReconstruction"
+        "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "D0.Synthesis.TopHodgeInverseSpectralRigidity"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -1721,9 +1719,10 @@
     {
       "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
       "theorem_atom": "topHodgeSecondMoment_formula",
-      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
       "declared_modules": [
-        "D0.Synthesis.TopHodgeSpectralSceneReconstruction"
+        "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "D0.Synthesis.TopHodgeInverseSpectralRigidity"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -1738,9 +1737,10 @@
     {
       "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
       "theorem_atom": "topHodge_spectral_data_recovers_VET",
-      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
       "declared_modules": [
-        "D0.Synthesis.TopHodgeSpectralSceneReconstruction"
+        "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "D0.Synthesis.TopHodgeInverseSpectralRigidity"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -1755,9 +1755,10 @@
     {
       "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
       "theorem_atom": "reduced_scene_six_permutations",
-      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
       "declared_modules": [
-        "D0.Synthesis.TopHodgeSpectralSceneReconstruction"
+        "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "D0.Synthesis.TopHodgeInverseSpectralRigidity"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -1772,9 +1773,10 @@
     {
       "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
       "theorem_atom": "reconstruct_scene_unordered_from_topHodge_spectral_data",
-      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
       "declared_modules": [
-        "D0.Synthesis.TopHodgeSpectralSceneReconstruction"
+        "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "D0.Synthesis.TopHodgeInverseSpectralRigidity"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -1789,9 +1791,10 @@
     {
       "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
       "theorem_atom": "harmonic_multiplicity_is_load_bearing",
-      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
       "declared_modules": [
-        "D0.Synthesis.TopHodgeSpectralSceneReconstruction"
+        "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "D0.Synthesis.TopHodgeInverseSpectralRigidity"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -1806,17 +1809,18 @@
     {
       "claim_id": "D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001",
       "theorem_atom": "D0.Synthesis.TopHodgeInverseSpectralRigidity.scene_topHodge_inverse_spectral_rigidity_application",
-      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+      "module_locator": "D0.Synthesis.TopHodgeSpectralSceneReconstruction;D0.Synthesis.TopHodgeInverseSpectralRigidity",
       "declared_modules": [
-        "D0.Synthesis.TopHodgeSpectralSceneReconstruction"
+        "D0.Synthesis.TopHodgeSpectralSceneReconstruction",
+        "D0.Synthesis.TopHodgeInverseSpectralRigidity"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Synthesis.TopHodgeInverseSpectralRigidity.scene_topHodge_inverse_spectral_rigidity_application",
           "module": "D0.Synthesis.TopHodgeInverseSpectralRigidity",
           "source_path": "03_FORMALIZATION/D0/Synthesis/TopHodgeInverseSpectralRigidity.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
@@ -4150,35 +4154,52 @@
     },
     {
       "claim_id": "D0-ARCHIVE-SCALAR-REDUCTION-001",
-      "theorem_atom": "scalar_stationarity_implies_archive_poisson",
-      "module_locator": "D0.Active.ScalarPoissonReduction",
+      "theorem_atom": "D0.scalar_stationarity_implies_archive_poisson",
+      "module_locator": "D0.Interface.ScalarPoissonReduction",
       "declared_modules": [
-        "D0.Active.ScalarPoissonReduction"
+        "D0.Interface.ScalarPoissonReduction"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.scalar_stationarity_implies_archive_poisson",
           "module": "D0.Interface.ScalarPoissonReduction",
           "source_path": "03_FORMALIZATION/D0/Interface/ScalarPoissonReduction.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
+        }
+      ]
+    },
+    {
+      "claim_id": "D0-ARCHIVE-SCALAR-REDUCTION-001",
+      "theorem_atom": "D0.scalar_stationarity_without_neutrality_counterexample",
+      "module_locator": "D0.Interface.ScalarPoissonReduction",
+      "declared_modules": [
+        "D0.Interface.ScalarPoissonReduction"
+      ],
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.scalar_stationarity_without_neutrality_counterexample",
+          "module": "D0.Interface.ScalarPoissonReduction",
+          "source_path": "03_FORMALIZATION/D0/Interface/ScalarPoissonReduction.lean",
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-MATTER-LOCALIZATION-001",
       "theorem_atom": "Matter.localized_matter_source_neutral_if_anomaly_free",
-      "module_locator": "D0.Active.NonzeroMatterSourceNeutrality",
+      "module_locator": "D0.Interface.MatterLocalization",
       "declared_modules": [
-        "D0.Active.NonzeroMatterSourceNeutrality"
+        "D0.Interface.MatterLocalization"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Matter.localized_matter_source_neutral_if_anomaly_free",
           "module": "D0.Interface.MatterLocalization",
           "source_path": "03_FORMALIZATION/D0/Interface/MatterLocalization.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
@@ -5052,60 +5073,64 @@
     {
       "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
       "theorem_atom": "Algebra.commutator_self_zero",
-      "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+      "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
       "declared_modules": [
-        "D0.Matter.GaugeCurvatureOrigin"
+        "D0.Matter.GaugeCurvatureOrigin",
+        "D0.Algebra.ArchiveCommutatorOperators"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Algebra.commutator_self_zero",
           "module": "D0.Algebra.ArchiveCommutatorOperators",
           "source_path": "03_FORMALIZATION/D0/Algebra/ArchiveCommutatorOperators.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
       "theorem_atom": "Algebra.commutator_skew_of_skew",
-      "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+      "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
       "declared_modules": [
-        "D0.Matter.GaugeCurvatureOrigin"
+        "D0.Matter.GaugeCurvatureOrigin",
+        "D0.Algebra.ArchiveCommutatorOperators"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Algebra.commutator_skew_of_skew",
           "module": "D0.Algebra.ArchiveCommutatorOperators",
           "source_path": "03_FORMALIZATION/D0/Algebra/ArchiveCommutatorOperators.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
       "theorem_atom": "Algebra.minus_trace_square_nonnegative",
-      "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+      "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
       "declared_modules": [
-        "D0.Matter.GaugeCurvatureOrigin"
+        "D0.Matter.GaugeCurvatureOrigin",
+        "D0.Algebra.ArchiveCommutatorOperators"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Algebra.minus_trace_square_nonnegative",
           "module": "D0.Algebra.ArchiveCommutatorOperators",
           "source_path": "03_FORMALIZATION/D0/Algebra/ArchiveCommutatorOperators.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
       "theorem_atom": "Matter.gauge_curvature_skew",
-      "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+      "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
       "declared_modules": [
-        "D0.Matter.GaugeCurvatureOrigin"
+        "D0.Matter.GaugeCurvatureOrigin",
+        "D0.Algebra.ArchiveCommutatorOperators"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -5120,9 +5145,10 @@
     {
       "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
       "theorem_atom": "Matter.abelian_curvature_annihilates_self_interaction",
-      "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+      "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
       "declared_modules": [
-        "D0.Matter.GaugeCurvatureOrigin"
+        "D0.Matter.GaugeCurvatureOrigin",
+        "D0.Algebra.ArchiveCommutatorOperators"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -5137,9 +5163,10 @@
     {
       "claim_id": "D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001",
       "theorem_atom": "Matter.gauge_action_positive_from_origin",
-      "module_locator": "D0.Matter.GaugeCurvatureOrigin",
+      "module_locator": "D0.Matter.GaugeCurvatureOrigin;D0.Algebra.ArchiveCommutatorOperators",
       "declared_modules": [
-        "D0.Matter.GaugeCurvatureOrigin"
+        "D0.Matter.GaugeCurvatureOrigin",
+        "D0.Algebra.ArchiveCommutatorOperators"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -5987,64 +6014,68 @@
     {
       "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
       "theorem_atom": "Topology.graded_nilpotency",
-      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
+      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
       "declared_modules": [
         "D0.Gauge.GradedBianchiIdentity",
-        "D0.Geometry.SceneCochainComplex"
+        "D0.Geometry.SceneCochainComplex",
+        "D0.Topology.GradedIncidenceComplex"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Topology.graded_nilpotency",
           "module": "D0.Topology.GradedIncidenceComplex",
           "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
       "theorem_atom": "Topology.discrete_exact_bianchi",
-      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
+      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
       "declared_modules": [
         "D0.Gauge.GradedBianchiIdentity",
-        "D0.Geometry.SceneCochainComplex"
+        "D0.Geometry.SceneCochainComplex",
+        "D0.Topology.GradedIncidenceComplex"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Topology.discrete_exact_bianchi",
           "module": "D0.Topology.GradedIncidenceComplex",
           "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
       "theorem_atom": "Topology.graded_bianchi_exact",
-      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
+      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
       "declared_modules": [
         "D0.Gauge.GradedBianchiIdentity",
-        "D0.Geometry.SceneCochainComplex"
+        "D0.Geometry.SceneCochainComplex",
+        "D0.Topology.GradedIncidenceComplex"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Topology.graded_bianchi_exact",
           "module": "D0.Topology.GradedIncidenceComplex",
           "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
       "theorem_atom": "Gauge.abelian_bianchi_exact",
-      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
+      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
       "declared_modules": [
         "D0.Gauge.GradedBianchiIdentity",
-        "D0.Geometry.SceneCochainComplex"
+        "D0.Geometry.SceneCochainComplex",
+        "D0.Topology.GradedIncidenceComplex"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -6059,10 +6090,11 @@
     {
       "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
       "theorem_atom": "Gauge.graded_bianchi_exact",
-      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
+      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
       "declared_modules": [
         "D0.Gauge.GradedBianchiIdentity",
-        "D0.Geometry.SceneCochainComplex"
+        "D0.Geometry.SceneCochainComplex",
+        "D0.Topology.GradedIncidenceComplex"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -6077,10 +6109,11 @@
     {
       "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
       "theorem_atom": "D0.Geometry.SceneCochainComplex.scene_d1_d0_zero",
-      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex",
+      "module_locator": "D0.Gauge.GradedBianchiIdentity;D0.Geometry.SceneCochainComplex;D0.Topology.GradedIncidenceComplex",
       "declared_modules": [
         "D0.Gauge.GradedBianchiIdentity",
-        "D0.Geometry.SceneCochainComplex"
+        "D0.Geometry.SceneCochainComplex",
+        "D0.Topology.GradedIncidenceComplex"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -7073,10 +7106,11 @@
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Core.detector_fixed_under_time_ladder",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -7091,10 +7125,11 @@
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Core.readout_depends_on_time_power",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -7109,10 +7144,11 @@
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Core.active_archive_trace_readout_integer",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -7127,64 +7163,68 @@
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Dynamics.heat_moment_T2_eq_even_lucas_trace",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Dynamics.heat_moment_T2_eq_even_lucas_trace",
           "module": "D0.Dynamics.TraceHeatLucasCore",
           "source_path": "03_FORMALIZATION/D0/Dynamics/TraceHeatLucasCore.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Dynamics.heat_moment_eq_even_lucas",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Dynamics.heat_moment_eq_even_lucas",
           "module": "D0.Dynamics.TraceHeatLucasCore",
           "source_path": "03_FORMALIZATION/D0/Dynamics/TraceHeatLucasCore.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Dynamics.lefschetz_spectrum_unfolds_scene",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Dynamics.lefschetz_spectrum_unfolds_scene",
           "module": "D0.Dynamics.TraceHeatLucasCore",
           "source_path": "03_FORMALIZATION/D0/Dynamics/TraceHeatLucasCore.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Dynamics.boundary_capacity_is_quarter_cut_weight",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -7199,10 +7239,11 @@
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Dynamics.saturated_region_forces_boundary_encoding",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -7217,10 +7258,11 @@
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Dynamics.black_hole_capacity_saturation_rule",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -7235,10 +7277,11 @@
     {
       "claim_id": "D0-TRACE-HEAT-CAPACITY-GRAVITY-001",
       "theorem_atom": "Dynamics.heat_trace_entropy_gradient_admits_gravity_interface",
-      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity",
+      "module_locator": "D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity;D0.Dynamics.TraceHeatLucasCore",
       "declared_modules": [
         "D0.Core.FixedDetectorTimeLadder",
-        "D0.Dynamics.TraceHeatCapacityGravity"
+        "D0.Dynamics.TraceHeatCapacityGravity",
+        "D0.Dynamics.TraceHeatLucasCore"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -8330,10 +8373,11 @@
     {
       "claim_id": "D0-CVFT-001A",
       "theorem_atom": "Dynamics.internal_feedback_forced_by_split",
-      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
       "declared_modules": [
         "D0.Dynamics.InternalFeedbackResolvent",
-        "D0.Cosmology.FeedbackPartitionFunction"
+        "D0.Cosmology.FeedbackPartitionFunction",
+        "D0.Cosmology.FiniteFeedbackEquationOfState"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -8348,10 +8392,11 @@
     {
       "claim_id": "D0-CVFT-001A",
       "theorem_atom": "Dynamics.internal_feedback_resolvent_series",
-      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
       "declared_modules": [
         "D0.Dynamics.InternalFeedbackResolvent",
-        "D0.Cosmology.FeedbackPartitionFunction"
+        "D0.Cosmology.FeedbackPartitionFunction",
+        "D0.Cosmology.FiniteFeedbackEquationOfState"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -8366,10 +8411,11 @@
     {
       "claim_id": "D0-CVFT-001A",
       "theorem_atom": "Cosmology.feedback_determinant_return_cycles",
-      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
       "declared_modules": [
         "D0.Dynamics.InternalFeedbackResolvent",
-        "D0.Cosmology.FeedbackPartitionFunction"
+        "D0.Cosmology.FeedbackPartitionFunction",
+        "D0.Cosmology.FiniteFeedbackEquationOfState"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -8384,10 +8430,11 @@
     {
       "claim_id": "D0-CVFT-001A",
       "theorem_atom": "Cosmology.feedback_variation_universal_source",
-      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
       "declared_modules": [
         "D0.Dynamics.InternalFeedbackResolvent",
-        "D0.Cosmology.FeedbackPartitionFunction"
+        "D0.Cosmology.FeedbackPartitionFunction",
+        "D0.Cosmology.FiniteFeedbackEquationOfState"
       ],
       "resolution_status": "resolved_in_declared_module",
       "matches": [
@@ -8402,18 +8449,19 @@
     {
       "claim_id": "D0-CVFT-001A",
       "theorem_atom": "Cosmology.feedback_pressure_trace_log",
-      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+      "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
       "declared_modules": [
         "D0.Dynamics.InternalFeedbackResolvent",
-        "D0.Cosmology.FeedbackPartitionFunction"
+        "D0.Cosmology.FeedbackPartitionFunction",
+        "D0.Cosmology.FiniteFeedbackEquationOfState"
       ],
-      "resolution_status": "resolved_outside_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Cosmology.feedback_pressure_trace_log",
           "module": "D0.Cosmology.FiniteFeedbackEquationOfState",
           "source_path": "03_FORMALIZATION/D0/Cosmology/FiniteFeedbackEquationOfState.lean",
-          "owner_matches_locator": false
+          "owner_matches_locator": true
         }
       ]
     },
@@ -14364,20 +14412,14 @@
     },
     {
       "claim_id": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
-      "theorem_atom": "gns_refinement_isometry",
+      "theorem_atom": "D0.Algebra.FibonacciAFTower.gns_refinement_isometry",
       "module_locator": "D0.VNext.PerronGNSTower;D0.Algebra.FibonacciAFTower",
       "declared_modules": [
         "D0.VNext.PerronGNSTower",
         "D0.Algebra.FibonacciAFTower"
       ],
-      "resolution_status": "ambiguous_within_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
-        {
-          "name": "D0.VNext.PerronGNSTower.gns_refinement_isometry",
-          "module": "D0.VNext.PerronGNSTower",
-          "source_path": "03_FORMALIZATION/D0/VNext/PerronGNSTower.lean",
-          "owner_matches_locator": true
-        },
         {
           "name": "D0.Algebra.FibonacciAFTower.gns_refinement_isometry",
           "module": "D0.Algebra.FibonacciAFTower",
@@ -14388,20 +14430,14 @@
     },
     {
       "claim_id": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
-      "theorem_atom": "phi_ne_zero",
+      "theorem_atom": "D0.Algebra.FibonacciAFTower.phi_ne_zero",
       "module_locator": "D0.VNext.PerronGNSTower;D0.Algebra.FibonacciAFTower",
       "declared_modules": [
         "D0.VNext.PerronGNSTower",
         "D0.Algebra.FibonacciAFTower"
       ],
-      "resolution_status": "ambiguous_within_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
-        {
-          "name": "D0.VNext.PerronGNSTower.phi_ne_zero",
-          "module": "D0.VNext.PerronGNSTower",
-          "source_path": "03_FORMALIZATION/D0/VNext/PerronGNSTower.lean",
-          "owner_matches_locator": true
-        },
         {
           "name": "D0.Algebra.FibonacciAFTower.phi_ne_zero",
           "module": "D0.Algebra.FibonacciAFTower",
@@ -16284,13 +16320,20 @@
     },
     {
       "claim_id": "D0-X5-ALPHA-BOUNDARY-001",
-      "theorem_atom": "alpha_outside_x5",
+      "theorem_atom": "D0.Extensions.X5.Alpha.alpha_outside_x5",
       "module_locator": "D0.Extensions.X5.AlphaBoundary",
       "declared_modules": [
         "D0.Extensions.X5.AlphaBoundary"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Extensions.X5.Alpha.alpha_outside_x5",
+          "module": "D0.Extensions.X5.AlphaBoundary",
+          "source_path": "03_FORMALIZATION/D0/Extensions/X5/AlphaBoundary.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-ZONE-CURRENT-001",
@@ -21968,7 +22011,7 @@
     },
     {
       "claim_id": "D0-SYMMETRIC-FUNCTION-ACTIVE-SPECTRUM-001",
-      "theorem_atom": "scene_gap",
+      "theorem_atom": "D0.Synthesis.ActiveSpectrumClosedForm.scene_gap",
       "module_locator": "D0.Synthesis.SymmetricFunctionCalculus;D0.Synthesis.ActiveSplittingFromDistinctness;D0.Synthesis.ActiveSpectrumClosedForm;D0.Synthesis.ActiveWindowIrrational;D0.Combinatorics.TripartiteVieta",
       "declared_modules": [
         "D0.Synthesis.SymmetricFunctionCalculus",
@@ -21977,14 +22020,8 @@
         "D0.Synthesis.ActiveWindowIrrational",
         "D0.Combinatorics.TripartiteVieta"
       ],
-      "resolution_status": "ambiguous_within_declared_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
-        {
-          "name": "D0.Synthesis.ActiveSplittingFromDistinctness.scene_gap",
-          "module": "D0.Synthesis.ActiveSplittingFromDistinctness",
-          "source_path": "03_FORMALIZATION/D0/Synthesis/ActiveSplittingFromDistinctness.lean",
-          "owner_matches_locator": true
-        },
         {
           "name": "D0.Synthesis.ActiveSpectrumClosedForm.scene_gap",
           "module": "D0.Synthesis.ActiveSpectrumClosedForm",
@@ -34014,24 +34051,18 @@
     },
     {
       "claim_id": "D0-FIBONACCI-PERRON-PROFILE-CANONICITY-001",
-      "theorem_atom": "phi_gt_one",
+      "theorem_atom": "D0.Algebra.FibonacciPerronTraceCanonicity.phi_gt_one",
       "module_locator": "D0.Algebra.FibonacciPerronTraceCanonicity",
       "declared_modules": [
         "D0.Algebra.FibonacciPerronTraceCanonicity"
       ],
-      "resolution_status": "ambiguous_across_declared_and_other_modules",
+      "resolution_status": "resolved_in_declared_module",
       "matches": [
         {
           "name": "D0.Algebra.FibonacciPerronTraceCanonicity.phi_gt_one",
           "module": "D0.Algebra.FibonacciPerronTraceCanonicity",
           "source_path": "03_FORMALIZATION/D0/Algebra/FibonacciPerronTraceCanonicity.lean",
           "owner_matches_locator": true
-        },
-        {
-          "name": "D0.phi_gt_one",
-          "module": "D0.Dynamics.PisotContraction",
-          "source_path": "03_FORMALIZATION/D0/Dynamics/PisotContraction.lean",
-          "owner_matches_locator": false
         }
       ]
     },
@@ -37471,13 +37502,20 @@
     },
     {
       "claim_id": "D0-TRIALITY-SEDENION-S3-DISJOINTNESS-GUARD-001",
-      "theorem_atom": "triality_sedenion_s3_disjointness_guard",
+      "theorem_atom": "D0.Algebra.Sedenions.bare_threeset_insufficient_for_sedenion_realization",
       "module_locator": "D0.Algebra.Sedenions",
       "declared_modules": [
         "D0.Algebra.Sedenions"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Algebra.Sedenions.bare_threeset_insufficient_for_sedenion_realization",
+          "module": "D0.Algebra.Sedenions",
+          "source_path": "03_FORMALIZATION/D0/Algebra/Sedenions.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-MAJORANA-BL-SCALAR-COMPENSATION-NOGO-001",
@@ -38894,13 +38932,20 @@
     },
     {
       "claim_id": "D0-MATTER-LOCALIZATION-OBSERVABLE-CANONICITY-001",
-      "theorem_atom": "matter_neutrality_m1_forced",
+      "theorem_atom": "matter_localization_nonuniqueness_nogo_owner",
       "module_locator": "D0.Matter.MatterLocalizationNonuniquenessNoGo",
       "declared_modules": [
         "D0.Matter.MatterLocalizationNonuniquenessNoGo"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Matter.matter_localization_nonuniqueness_nogo_owner",
+          "module": "D0.Matter.MatterLocalizationNonuniquenessNoGo",
+          "source_path": "03_FORMALIZATION/D0/Matter/MatterLocalizationNonuniquenessNoGo.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-MATTER-LOCALIZATION-OBSERVABLE-CANONICITY-001",
@@ -42572,15 +42617,22 @@
     },
     {
       "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
-      "theorem_atom": "affine_mul_assoc",
+      "theorem_atom": "D0.Geometry.AffineCartanMap.affine_mul_assoc",
       "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
       "declared_modules": [
         "D0.Geometry.ArchiveAffineCartanConnection",
         "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo",
         "D0.Geometry.ArchivePathWordAlgebra"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.AffineCartanMap.affine_mul_assoc",
+          "module": "D0.Geometry.ArchiveAffineCartanConnection",
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
@@ -43002,51 +43054,79 @@
     },
     {
       "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
-      "theorem_atom": "crossed_finrank",
+      "theorem_atom": "D0.Geometry.ScalarCrossed.crossed_finrank",
       "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
       "declared_modules": [
         "D0.Geometry.ArchiveAffineCartanConnection",
         "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo",
         "D0.Geometry.ArchivePathWordAlgebra"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.ScalarCrossed.crossed_finrank",
+          "module": "D0.Geometry.ArchivePathWordAlgebra",
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePathWordAlgebra.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
-      "theorem_atom": "pathEval_append",
+      "theorem_atom": "D0.Geometry.ChainPath.pathEval_append",
       "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
       "declared_modules": [
         "D0.Geometry.ArchiveAffineCartanConnection",
         "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo",
         "D0.Geometry.ArchivePathWordAlgebra"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.ChainPath.pathEval_append",
+          "module": "D0.Geometry.ArchivePathWordAlgebra",
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePathWordAlgebra.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
-      "theorem_atom": "pathEval_reverse",
+      "theorem_atom": "D0.Geometry.ChainPath.pathEval_reverse",
       "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
       "declared_modules": [
         "D0.Geometry.ArchiveAffineCartanConnection",
         "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo",
         "D0.Geometry.ArchivePathWordAlgebra"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.ChainPath.pathEval_reverse",
+          "module": "D0.Geometry.ArchivePathWordAlgebra",
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePathWordAlgebra.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
-      "theorem_atom": "pathEval_factors_pairGroupoid_iff_trivial_holonomy",
+      "theorem_atom": "D0.Geometry.ChainPath.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
       "module_locator": "D0.Geometry.ArchiveAffineCartanConnection;D0.Geometry.ArchiveFiniteCartanLieClosureNoGo;D0.Geometry.ArchivePathWordAlgebra",
       "declared_modules": [
         "D0.Geometry.ArchiveAffineCartanConnection",
         "D0.Geometry.ArchiveFiniteCartanLieClosureNoGo",
         "D0.Geometry.ArchivePathWordAlgebra"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.ChainPath.pathEval_factors_pairGroupoid_iff_trivial_holonomy",
+          "module": "D0.Geometry.ArchivePathWordAlgebra",
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePathWordAlgebra.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
@@ -43483,7 +43563,7 @@
     },
     {
       "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-      "theorem_atom": "secondOrderCongruenceCoefficient_formula",
+      "theorem_atom": "D0.Geometry.TwoJet.secondOrderCongruenceCoefficient_formula",
       "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
       "declared_modules": [
         "D0.Geometry.A4DSecondOrderCartanCongruence",
@@ -43494,12 +43574,19 @@
         "D0.Geometry.A4DLocatedMatterCellEnergy",
         "D0.Geometry.A4DScalarDeltaSecondJet"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.TwoJet.secondOrderCongruenceCoefficient_formula",
+          "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-      "theorem_atom": "weightedCongruence_eq",
+      "theorem_atom": "D0.Geometry.TwoJet.weightedCongruence_eq",
       "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
       "declared_modules": [
         "D0.Geometry.A4DSecondOrderCartanCongruence",
@@ -43510,12 +43597,19 @@
         "D0.Geometry.A4DLocatedMatterCellEnergy",
         "D0.Geometry.A4DScalarDeltaSecondJet"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.TwoJet.weightedCongruence_eq",
+          "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-      "theorem_atom": "exponentialSecondJet_specialization",
+      "theorem_atom": "D0.Geometry.TwoJet.exponentialSecondJet_specialization",
       "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
       "declared_modules": [
         "D0.Geometry.A4DSecondOrderCartanCongruence",
@@ -43526,12 +43620,19 @@
         "D0.Geometry.A4DLocatedMatterCellEnergy",
         "D0.Geometry.A4DScalarDeltaSecondJet"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.TwoJet.exponentialSecondJet_specialization",
+          "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-      "theorem_atom": "backgroundJet_eq_congruence",
+      "theorem_atom": "D0.Geometry.TwoJet.backgroundJet_eq_congruence",
       "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
       "declared_modules": [
         "D0.Geometry.A4DSecondOrderCartanCongruence",
@@ -43542,12 +43643,19 @@
         "D0.Geometry.A4DLocatedMatterCellEnergy",
         "D0.Geometry.A4DScalarDeltaSecondJet"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.TwoJet.backgroundJet_eq_congruence",
+          "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-      "theorem_atom": "exponential_background_specialization",
+      "theorem_atom": "D0.Geometry.TwoJet.exponential_background_specialization",
       "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
       "declared_modules": [
         "D0.Geometry.A4DSecondOrderCartanCongruence",
@@ -43558,12 +43666,19 @@
         "D0.Geometry.A4DLocatedMatterCellEnergy",
         "D0.Geometry.A4DScalarDeltaSecondJet"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.TwoJet.exponential_background_specialization",
+          "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-      "theorem_atom": "dualInverseTranspose_quad",
+      "theorem_atom": "D0.Geometry.TwoJet.dualInverseTranspose_quad",
       "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
       "declared_modules": [
         "D0.Geometry.A4DSecondOrderCartanCongruence",
@@ -43574,12 +43689,19 @@
         "D0.Geometry.A4DLocatedMatterCellEnergy",
         "D0.Geometry.A4DScalarDeltaSecondJet"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.TwoJet.dualInverseTranspose_quad",
+          "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-      "theorem_atom": "constitutiveSecondDerivative",
+      "theorem_atom": "D0.Geometry.TwoJet.constitutiveSecondDerivative",
       "module_locator": "D0.Geometry.A4DSecondOrderCartanCongruence;D0.Geometry.A4DAffineMatterLiftObstruction;D0.Geometry.A4DActionGroupoidSecondJet;D0.Geometry.A4DMovingDifferentialSecondJet;D0.Geometry.A4DCellHessianTransverseModulus;D0.Geometry.A4DLocatedMatterCellEnergy;D0.Geometry.A4DScalarDeltaSecondJet",
       "declared_modules": [
         "D0.Geometry.A4DSecondOrderCartanCongruence",
@@ -43590,8 +43712,15 @@
         "D0.Geometry.A4DLocatedMatterCellEnergy",
         "D0.Geometry.A4DScalarDeltaSecondJet"
       ],
-      "resolution_status": "unresolved",
-      "matches": []
+      "resolution_status": "resolved_in_declared_module",
+      "matches": [
+        {
+          "name": "D0.Geometry.TwoJet.constitutiveSecondDerivative",
+          "module": "D0.Geometry.A4DSecondOrderCartanCongruence",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean",
+          "owner_matches_locator": true
+        }
+      ]
     },
     {
       "claim_id": "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",

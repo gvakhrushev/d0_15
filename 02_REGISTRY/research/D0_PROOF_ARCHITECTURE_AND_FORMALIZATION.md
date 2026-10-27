@@ -10938,3 +10938,40 @@ the missing construction, while preserving the existing release-status value
 pending accepted source-owner review. This row is not usable as evidence for
 the stronger finite operator claim in this checkpoint. No scientific status
 was reclassified.
+
+## Exact theorem-locator replay after namespace repairs (27 October 2026)
+
+After correcting the fully qualified X5, affine-path, two-jet, matter
+localization, and finite S3-set guard locators, the clean all-claims replay at
+`b09ab675aa68cd957d1d35aff54da6b1a37d1073` resolves the candidate map without
+any remaining outside-owner or ambiguous matches. The replay used Lean 4.30.0,
+Python 3.12.14, and public import `D0.All`. The `claims.csv` SHA-256 is
+`0d9cca180d8c33a04207e69c948923231b4c450e9dbd412f826e8d162c14f07a`, the
+whole-Lean-source digest is
+`4b4172b6f1ab9e7f44a66fbd32d3abc34209304a3caad27d92adab3509a53d66`, and the
+collector SHA-256 is
+`a8e55d9172e21ab94666dfc4f616eb327cf3ce0d59c65455731829b4c9203160`.
+
+Across 2,751 theorem-atom mappings, 2,566 resolve inside their declared owner
+module and seven remain unresolved; 178 claim rows have no theorem locator.
+The seven remaining proof-target atoms are `edge_alpha_trace_target` and
+`torus_ramification_puiseux_target` in the two open edge claims;
+`card_cubical_cochain_carrier` and `cubical_betti_sum_eq_sixteen` in the
+cubical cochain carrier claim; `b1_isometry` and
+`intertwining_d_b0_eq_b1_d` in the one-dimensional cochain refinement claim;
+and `hodge_mass_trace_sum` in the refinement Hodge-weight claim. These are
+genuine missing declarations, not namespace misses. The five cochain atoms
+remain proof targets; no mathematical no-go is inferred.
+
+The compact reproducible crosswalk is
+[`claim_locator_owner_crosswalk_2026-10-27.json`](sources/d0_proof_architecture_formalization_2026-10-24/claim_locator_owner_crosswalk_2026-10-27.json),
+SHA-256 `b69525dc80bed43269cb878dc7b81e9f6c2e03ee9b6fb7c9d25fd371228e5073`.
+It is generated from
+`tools/lean_declaration_inventory.py --all-claims --resolution-only`; that
+resolution-only inventory has SHA-256
+`aee1d2febcd86012ebd0ff7c6deb05f083f476a35b809f69583021647feef3db`. The
+full declaration inventory and resolution-only run agree on the complete
+`claim_locator_crosswalk` object. This is exact locator evidence, not semantic
+claim coverage or a scientific status change. `ClaimMap` passes its two-job
+narrow build, and the final `D0.All` helper recognizes this exact Lean source
+tree as already passing the 4,741-job final build.
