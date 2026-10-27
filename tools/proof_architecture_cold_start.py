@@ -95,7 +95,7 @@ CASES: list[dict[str, Any]] = [
             "Eq.24 max u_j in I Psi_j^(h) - Psi(u_j) |I| sup_I Psi''' h^2 / 24 compound midpoint quadrature integral of Psi' fixed small normalized CAR slack survives for all sufficiently fine h",
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes h duration over N exists N0 delta over 2 every uniform refinement",
             "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval ContDiffAt C3 local regularity sampled interval",
-            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin compactness pointwise strict CAR chart margin uniform third derivative bound",
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
