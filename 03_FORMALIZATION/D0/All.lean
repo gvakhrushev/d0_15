@@ -379,6 +379,7 @@ import D0.Geometry.ArchiveCanonicalZeroModeProjector
 import D0.Geometry.ArchiveCartanLinkNoGo
 import D0.Geometry.ArchiveChainConnection
 import D0.Geometry.ArchiveChainCurvature
+import D0.Geometry.ArchiveCochainOccupancyMask
 import D0.Geometry.ArchiveConcreteSpectralPropinquity
 import D0.Geometry.ArchiveCovariantCubicalDifferential
 import D0.Geometry.ArchiveCubicalCartan
@@ -397,6 +398,7 @@ import D0.Geometry.ArchiveFieldEquation
 import D0.Geometry.ArchiveFiniteCartanLieClosureNoGo
 import D0.Geometry.ArchiveFlatProductBondingNoGo
 import D0.Geometry.ArchiveFockIntrinsicCommutant
+import D0.Geometry.ArchiveGradedCochainRefinement
 import D0.Geometry.ArchiveGradedRefinementChainMap
 import D0.Geometry.ArchiveHeatTrace
 import D0.Geometry.ArchiveHodgeCARDirac
@@ -441,6 +443,7 @@ import D0.Geometry.ArchiveRolePermutationAction
 import D0.Geometry.ArchiveRolePhaseCarrier
 import D0.Geometry.ArchiveRolePhaseGroup
 import D0.Geometry.ArchiveRoleProductLaplacian
+import D0.Geometry.ArchiveRoleRefinementProjection
 import D0.Geometry.ArchiveSeamCanonicity
 import D0.Geometry.ArchiveSeamCurvatureScope
 import D0.Geometry.ArchiveSpatialHistorySplit

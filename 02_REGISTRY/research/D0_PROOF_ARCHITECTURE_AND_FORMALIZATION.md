@@ -11220,3 +11220,70 @@ The complete 9,839,871-byte replay has SHA-256
 The selector rerun on that commit again chose 95 certificates with 325 matched
 pins and 1,211 unpinned provenance records, all retaining
 `unknown-dependency`; neither run is a scientific replay or semantic acceptance.
+
+### 27 October Perron/GNS and comparison-map registry reconciliation
+
+A separate source-and-type review of the previously staged Perron/GNS scope
+correction found two surviving contradictory claim descriptions. The
+`D0-FIBONACCI-AF-TOWER-OWNER-001` note now describes the actual all-level
+finite **real** matrix refinement, its specified Perron-weighted functional and
+algebraic pairing. The bundled `fibonacci_af_tower_owner` proves initial
+dimensions, scalar golden identities and the two-step incidence identity; the
+more general finite maps and pairing are separate declarations. The named
+`gns_refinement_isometry` is conditional on the supplied algebraic maps and
+preservation hypotheses. No complex AF C*-limit, positive normalized state,
+uniqueness, completed GNS Hilbert space, Hilbert isometry or Dixmier
+normalization is established by these declarations. In particular the
+specified level-zero functional has value `phi + 1` on its unit. The claim's
+historical book/section locator still names the broader AF/GNS programme; it is
+not the scope of the retained Lean proof.
+
+`D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001` now confines its NO-GO to
+identification requiring equal finite dimensions: the existing theorem proves
+`dimA N != 33` for every `N`, not that arbitrary or canonical `Xi_N` maps are
+absent. `D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001` retains its open
+transport/compatibility target without asserting a general obstruction. Its
+linked historical checker sets `xi_exists = False` as a literal and prints a
+stronger conclusion; it is retained as historical provenance, not evidence for
+nonexistence. The separate historical UCP/interlacing scenario in BOOK_02 is
+not a general no-map theorem. The existing claim IDs, Lean locators, lifecycle
+and release statuses are preserved. An independent read-only review compared
+the exact three-row change to the Lean owners and BOOK_02; this scoped review
+is not independent acceptance of the C0 corpus, the AF/GNS target, or the
+comparison map.
+
+### 27 October graded cochain transport on the actual role/Fock carrier
+
+`D0.Geometry.ArchiveRoleRefinementProjection` transports the existing
+coordinatewise archive phase projection through the owned Fin/ZMod
+bijections. Its `archive_scalar_singleton_refinement` applies the existing
+`archive_scaled_block_with_owner_scale` to an actual role slice. At coarse
+cycle size `L=N+2`, the old wrap edge is retained with its orientation and the
+new final edge is collapsed; the scale is `(N+3)/(N+2)`. The projection is a
+map of the finite carriers, not an asserted cyclic-group homomorphism.
+
+`D0.Geometry.ArchiveCochainOccupancyMask` supplies the occupancy-mask
+factorization for a nonzero CAR creation matrix entry. The new
+`D0.Geometry.ArchiveGradedCochainRefinement` applies that factorization and
+CAR support/degree to define the actual degree-scaled, occupied-edge-masked
+pullback `archiveGradedCochainPullback`. Its public theorem
+`archive_graded_cochain_chain` proves for every `N` and every existing
+`ArchiveCochain N` that `dForward (N+1)` after this pullback equals the
+pullback after `dForward N`. All 16 Fock sectors and the original
+Jordan-Wigner coefficients are retained. An independent read-only review
+checked the source formula and proof scope; a separate review checked the
+claim and generated-import bindings. The exact Lean declaration was resolved
+in the compiled `D0.All` environment. Its axiom closure contains `propext`,
+`Classical.choice`, `Quot.sound`, and the three existing `native_decide`
+CAR declarations for support, degree raise and singleton/vacuum. The new
+modules introduce no new `axiom`, `sorry` or `native_decide`.
+
+The source note `A4D_NATIVE_COCHAIN_REFINEMENT.md` remains byte-preserved
+because published certificates pin its hash. Its statement that the 4D Lean
+owner was not yet compiled describes the earlier research checkpoint and is
+superseded for the precise finite chain equation above. The claim remains
+`OPEN / PROOF-TARGET` pending source-to-claim acceptance; the theorem does not
+prove full Gram identities, a Hodge/Laplacian intertwiner, continuum
+convergence, physical readout/refinement, native source selection or GR.
+The public `D0.All` integration passed 4,745 jobs on Lean source digest
+`60f36c4cb81cc193e811936e65541e2fb82d9e4e892fa47b6ae56a08695f474f`.
