@@ -187,7 +187,7 @@ require(all(mp.mpf(price_controls[i+1]['value_error'])<mp.mpf(price_controls[i][
 require(all(mp.mpf(price_controls[i+1]['source_error'])<mp.mpf(price_controls[i]['source_error'])
             for i in range(len(price_controls)-1)), 'full-price source errors decrease')
 # A hostile check: leaving rho in the target changes the limit.
-wrong=sum(rho*(ff+lam*qq) for rho,ff,qq in zip(rhos,Fs,Qs)))/4
+wrong=sum(rho*(ff+lam*qq) for rho,ff,qq in zip(rhos,Fs,Qs))/4
 require(abs(wrong-target)>mp.mpf('1e-3'),'unequal prior cancellation is essential')
 # Fixing a nonzero attenuation does NOT exactly give Einstein/Palatini.
 require(abs(normalized_price(mp.mpf(1)/64)-target)>mp.mpf('1e-10'),
