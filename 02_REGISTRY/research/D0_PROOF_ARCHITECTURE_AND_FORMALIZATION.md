@@ -10651,3 +10651,26 @@ selection, the full varied rows, C0 acceptance, physical Book/clock/work
 selection, or GR closure.
 Source pin for `D0.Geometry.cubicMatterMidpointSample_euclideanError_eq_remainder`, `D0.Geometry.cubicMatterMidpointSample_euclideanError_le_refinementBound`, and `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`: commit `423ec9a87553a14c6f484e429a6d3309eeae256a`, path `03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob `07a988011a77ee87aa13d5d816680920d51a3007`.
 Compiled inventory pin for `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`: commit `de9fc93ff5a159486a8404ba945ab3e3655f0729`, path `02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_same_record_euclidean_refinement_2026-10-27.json`, blob `40171d8756ccf09c1b0627c20bca03a91637b56c`.
+
+## Claim assumption links in the architecture view (27 October 2026)
+
+The read-only `relation_view` now follows the existing `claims.csv.assumption_ids`
+list to assumption rows by `assumption_id`. It reports each link's resolution
+status and the assumption row's owner claim ID. The existing
+`registered_assumptions` field remains the separate inverse relation selected
+by `assumptions.csv.claim_id`; unresolved identifiers remain visible instead
+of disappearing. No registry field or authority changed.
+
+For `D0-LEAN-BRIDGE-001`, all six listed IDs resolve. Their owner claim IDs are
+`D0-PHI-HURWITZ-001`, `D0-RG-001`, `D0-CARRIER-003`, `D0-SMOOTH-001`,
+`D0-SMOOTH-001`, and `D0-LEAN-BRIDGE-001`, respectively. The owner relation
+therefore still returns only `ASSUMP-HST-EXTERNAL` for this claim. The view now
+shows both existing relations without merging ownership into claim use or
+creating application edges.
+
+This is a registry crosswalk only. The IDs do not become Lean propositions,
+the theorem does not gain assumption binders, and the physical bridge remains
+open. A synthetic test covers mixed comma/semicolon separators and missing IDs;
+a repository regression checks all six real links and their distinct owners.
+The current-source cold-start and search-process replay receipts are recorded
+below after updating the search input.

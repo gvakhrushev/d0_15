@@ -1749,7 +1749,7 @@ def _registry_assumption_ids(value: Any) -> list[str]:
 
 
 def relation_view(dataset: dict[str, Any], item: dict[str, Any]) -> dict[str, Any]:
-    """Return declared application links; never infer missing semantic edges."""
+    """Return declared application and registry links without inferring semantic edges."""
     record = item["record"]
     result_id = record.get("id") if item["kind"] == "assembly-result" else None
     obligation_id = record.get("id") if item["kind"] == "obligation" else None

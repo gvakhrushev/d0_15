@@ -218,6 +218,35 @@ class ProofArchitectureTests(unittest.TestCase):
                          ["CLM-OWNER-1", "CLM-OWNER-2", None])
         self.assertEqual([row["assumption_id"] for row in view["registered_assumptions"]], [])
 
+    def test_bridge_claim_resolves_all_six_registry_assumption_ids(self) -> None:
+        data = proof.load_dataset()
+        claim = proof.find_exact(data, "D0-LEAN-BRIDGE-001")[0]
+
+        view = proof.relation_view(data, claim)
+        links = view["claim_assumption_links"]
+
+        self.assertEqual([link["assumption_id"] for link in links], [
+            "ASSUMP-HURWITZ-GOLDEN",
+            "ASSUMP-RG-SMOOTH-INTERP",
+            "ASSUMP-LORENTZ-MACRO",
+            "ASSUMP-SMOOTH-COVARIANCE",
+            "ASSUMP-SMOOTH-HEATTRACE",
+            "ASSUMP-HST-EXTERNAL",
+        ])
+        self.assertTrue(all(link["resolution_status"] == "resolved" for link in links))
+        self.assertEqual([link["assumption_owner_claim_id"] for link in links], [
+            "D0-PHI-HURWITZ-001",
+            "D0-RG-001",
+            "D0-CARRIER-003",
+            "D0-SMOOTH-001",
+            "D0-SMOOTH-001",
+            "D0-LEAN-BRIDGE-001",
+        ])
+        self.assertEqual(
+            [row["assumption_id"] for row in view["registered_assumptions"]],
+            ["ASSUMP-HST-EXTERNAL"],
+        )
+
     def test_assumption_is_an_explicit_metadata_record_with_failure_scope(self) -> None:
         match = proof.find_exact(dataset(), "ASSUMP-1")
         self.assertEqual(match[0]["kind"], "assumption-metadata")
@@ -2579,7 +2608,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-27_compact_cubic_euclidean_v17.json"
+            / "proof_architecture_cold_start_summary_2026-10-27_assumption_links_v18.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -2651,7 +2680,7 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(lean_retrieval["status"], "found_direct_content")
         self.assertEqual(lean_retrieval["source_origin"], "pinned_snapshot")
         self.assertEqual(lean_retrieval["query_index"], 18)
-        self.assertEqual(lean_retrieval["candidate_rank"], 4)
+        self.assertEqual(lean_retrieval["candidate_rank"], 7)
         self.assertEqual(
             lean_retrieval["commit"],
             "7d52c4193cc4b1ebfed1142d327446a6128465b7",
@@ -2862,7 +2891,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-27_compact_cubic_euclidean_v17.json"
+            / "proof_architecture_search_process_comparison_2026-10-27_assumption_links_v18.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
@@ -2886,10 +2915,10 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             comparison["metrics"]["current_serialized_answer_bytes_total"],
-            529913,
+            529927,
         )
         self.assertEqual(
-            comparison["metrics"]["current_average_answer_bytes"], 22079.7
+            comparison["metrics"]["current_average_answer_bytes"], 22080.3
         )
         self.assertTrue(
             comparison["metrics"]["semantic_review_required_for_all_queries"]
