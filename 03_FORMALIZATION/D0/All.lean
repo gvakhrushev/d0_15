@@ -401,6 +401,7 @@ import D0.Geometry.ArchiveFockIntrinsicCommutant
 import D0.Geometry.ArchiveGradedCochainGram
 import D0.Geometry.ArchiveGradedCochainGramTrace
 import D0.Geometry.ArchiveGradedCochainRefinement
+import D0.Geometry.ArchiveGradedCochainSectorTrace
 import D0.Geometry.ArchiveGradedRefinementChainMap
 import D0.Geometry.ArchiveHeatTrace
 import D0.Geometry.ArchiveHodgeCARDirac

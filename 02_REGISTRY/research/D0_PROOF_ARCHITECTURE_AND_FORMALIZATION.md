@@ -11421,3 +11421,30 @@ control. The matching search comparison
 (SHA-256 `22473fe39f60125bb53ba3d2195de5d972b5d0c9ddb9c9400dc1968ed42dcb4b`)
 retains its exact query fixture and source links. These counts are retrieval
 and declaration evidence, not accepted C0 coverage.
+
+### 27 October counting trace for each actual Fock sector
+
+`ArchiveGradedCochainSectorTrace` now takes the columns for any actual Fock
+state `S` from `archiveGradedPullbackMatrix`, while retaining **all** fine
+site × Fock rows. It proves the resulting sector Gram matrix is the diagonal
+of the previously derived full weights. Its theorem
+`archive_graded_sector_matrix_trace` establishes, for every `N` and every
+`S`, the scaled counting trace
+
+```text
+c_L^(2k) * L^k * (L+1)^(4-k),
+L = N+2, c_L = (L+1)/L, k = fockDegree S.
+```
+
+The proof counts the actual occupied and unoccupied roles and consumes the
+existing per-coordinate sum; it does not assume the displayed expression.
+A separate read-only review checked the actual matrix restriction, all fine
+rows, quantifiers and scale. This supersedes the previous checkpoint's
+statement that the fixed-sector trace was not yet formalized. The theorem's
+reported axioms are `propext`, `Classical.choice` and `Quot.sound`.
+This remains a counting calculation for the specified mathematical map, not a
+selection of physical Hodge weights, a unique metric, refinement admission or
+GR. The Hodge claim remains `OPEN / PROOF-TARGET`.
+
+The public `D0.All` build including this sector result passed 4,748 jobs on
+Lean source digest `a86f9c6020631ae143f8361fef8e4af3c3c2775f64bbc9922a10a658b86f69a6`.
