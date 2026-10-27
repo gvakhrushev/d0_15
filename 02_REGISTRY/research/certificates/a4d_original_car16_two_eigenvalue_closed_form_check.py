@@ -152,6 +152,40 @@ def main():
     equal(jac_closed.subs(values),
           -s.Rational(18126055017,262144000000000),
           "nonzero actual exact original two-coordinate determinant")
+    # Consumes the OWNED original full128 history identity
+    # F_n=(I-K0^(2n)) tensor I_oldRIGHT, K0=I-2p^2*A.
+    # Two ROOT powers obey a second-order recurrence at every horizon.
+    sj=total.subs(values)
+    tj=product.subs(values)
+    sig=2-2*p*p*sj
+    tau=1-2*p*p*sj+4*p**4*tj
+    zf=s.Rational(1,2**20)
+    for n in (1,2,3):
+        L0,L1=s.Integer(2),sig
+        for k in range(2,2*n+1):
+            L0,L1=L1,s.expand(sig*L1-tau*L0)
+        recurrence=(1-zf)**2+zf*(1-zf)*L1+zf**2*tau**(2*n)
+        lb,ub=expected_eigen
+        b_lower=1-2*p*p*lb
+        b_upper=1-2*p*p*ub
+        actual=(1-zf+zf*b_lower**(2*n))*(1-zf+zf*b_upper**(2*n))
+        equal(recurrence,actual,
+              f"actual full128 HJR scalar recurrence horizon {n}")
+    # Structural FIRST-SOURCE check at n=1 for arbitrary ambient
+    # Hermitian δA that DOES NOT preserve the 8+8 CAR spectrum.
+    D=s.zeros(d)
+    D[0,0]=1
+    D[0,1]=D[1,0]=1
+    lb,ub=expected_eigen
+    def fprime(lam,n=1):
+        b0=1-2*p*p*lam
+        return 4*n*p*p*zf*b0**(2*n-1)/(1-zf+zf*b0**(2*n))
+    beta=(fprime(ub)-fprime(lb))/(ub-lb)
+    alph=fprime(lb)-beta*lb
+    source_moments=alph*s.trace(D)+beta*s.trace(A0*D)
+    source_eig=s.trace((alph*s.eye(d)+beta*A0)*D)
+    equal(source_moments,source_eig,
+          "whole closed HJR arbitrary ambient first source in two traces")
     print("PASS_ORIGINAL_CAR16_TWO_EIGENVALUE_CLOSED_FORM")
     print(" symbolic CAR16 all-r,all-nu minimal polynomial: PASS")
     print(" actual fixture eigenvalue multiplicities: 8+8")
@@ -161,6 +195,7 @@ def main():
     print(" original configured Brinkmann normal geometric source != 0")
     print(" native full16 logdet SOURCE spans two traces even off quadratic chart")
     print(" native 2x2 moment Jacobian at original fixture is NONZERO")
+    print(" whole original full128 closed HJR: 2nd-order recurrence and first source PASS")
     print(" GR_closed=false; complete native-price/source selection still open")
 
 
