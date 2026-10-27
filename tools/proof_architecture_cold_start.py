@@ -126,6 +126,12 @@ CASES: list[dict[str, Any]] = [
                 "scope_query_indexes": [14],
                 "scope_query_sections": {"14": ["7.2"]},
             },
+            {
+                "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json",
+                "commit": "a2c20a4dc9feeb5446b41e9e49ea8094bd14f40b",
+                "blob": "82574aafa3ea94c61ca28ad9e08980c2974d4b22",
+                "scope_query_indexes": [17],
+            },
         ],
         "scope_review": (
             "The compiled NonvacuumBrinkmannStencil result proves the exact five-point "

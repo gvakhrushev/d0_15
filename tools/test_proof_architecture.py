@@ -1529,6 +1529,19 @@ class ProofArchitectureTests(unittest.TestCase):
             "nonvacuum_compact_pointwise_margin_2026-10-27.json",
             case["required_refs"],
         )
+        compact_margin_source = next(
+            source for source in case["required_sources"]
+            if source["path"].endswith("nonvacuum_compact_pointwise_margin_2026-10-27.json")
+        )
+        self.assertEqual(
+            compact_margin_source["commit"],
+            "a2c20a4dc9feeb5446b41e9e49ea8094bd14f40b",
+        )
+        self.assertEqual(
+            compact_margin_source["blob"],
+            "82574aafa3ea94c61ca28ad9e08980c2974d4b22",
+        )
+        self.assertEqual(compact_margin_source["scope_query_indexes"], [17])
         self.assertIn(module, case["required_refs"])
         self.assertIn("03_FORMALIZATION/D0/Analysis/MidpointQuadrature.lean",
                       case["required_refs"])
