@@ -239,3 +239,85 @@ or a source residual controlled by the existing exact nondegenerate root/mesh th
 The exact symbolic checker [a4d_original_car16_two_eigenvalue_closed_form_check.py](certificates/a4d_original_car16_two_eigenvalue_closed_form_check.py) constructs all 16×16 true CAR matrices with ordering (0,2,3,1), frozen phases, native rational boost, and zero-Walsh first endpoints; proves S5 entrywise for **symbolic** r,nu; verifies the exact trace, S7–S13 at the real frozen fixture and S8 as a matrix identity. This is independent of finite-field rank and uses symbolic rational expressions, not unstable floating spectra. The analytical proof is S1–S9.
 
 No original 128-Kraus multi-round replay or original all42 Euler/root replay, Lean build, independent review or CI acceptance is asserted by this symbolic reduction. It does not change the native original fixed r=1/9,nu=3/5 source or permit field-dependent variation of those constants unless a real physical carrier interpretation supplies that map. \`GR_closed=false\`.
+
+
+## 8. Theorem S-G — exact two-probe/one-kernel test replaces 42 independent source matches
+
+This is a necessary-and-sufficient LINEAR-ALGEBRA conclusion on the **original** complete ambient \(16+24+2\) geometric/CAR variations, not a new physical cost or selected field graph. It consumes the original all40→3→1 first-source identities; no metric field is introduced at the foundation.
+
+Fix one native mesh h and a common-null Brinkmann field representative \(y\in\Sigma\), **before** imposing Einstein or Cartan equations. Let \(V_y\) be the full original ambient field tangent and denote the TWO existing ORIGINAL densities
+\[
+F_h(y)=\sum_z\widehat f_z(y),\qquad
+Q_h(y)=\sum_z q_z(y),\qquad
+L_y:V_y\to\mathbb R^2,\quad L_y(v)=(DF_h(y)[v],DQ_h(y)[v]).
+\tag{S19}
+\]
+The original geometric/matter first source on this stratum is exactly
+\[
+DJ_{2,h}(y)[v]=\gamma_h(y)\bigl[DF_h(y)[v]+\lambda_-DQ_h(y)[v]\bigr],
+\quad\gamma_h(y)\ne0,\qquad
+\lambda_-=\lambda_-(2^{-20}).
+\tag{S20}
+\]
+All original nonuniform weights, scaling and source-compatible coframe dressing are the SAME as the already-owned all40 theorem; S20 just names its true scalar factor.
+
+**Two actual mathematical probes at ONE background.** Choose an off-shell point on the original common-null chart with nonzero genuine proper-null connection mismatch \(\kappa\) in the \(X_{+,2}\) row, and a nonzero original scalar/top null gradient \(E=|D_u^+\Psi|^2>0\). These conditions can be simultaneously met with \(H=0\): the geometry and matter values are algebraically independent before the Euler equations. Let \(w_L\) be the one original independent proper-link \(X_{+,2}\) variation, and \(w_C\) the original independent \(v_v^+\) coframe variation at the same relevant cell. The original all40 equations (7) and matter source (12) give
+\[
+a:=DF_h[w_L]\ne0,\quad DQ_h[w_L]=0,\qquad
+b:=DF_h[w_C],\quad c:=DQ_h[w_C]=-2E/h\ne0,
+\tag{S21}
+\]
+with the genuine original fhat weight/convention absorbed in nonzero \(a\). The value of \(b\) can be anything; no artificial cancellation or assumed link stationarity is needed.
+
+Define the two source-normalized original probes
+\[
+\boxed{v_F=w_L/a,\qquad
+v_Q=w_C/c-\frac{b}{ac}w_L.}
+\tag{S22}
+\]
+A direct substitution gives
+\[
+\boxed{L_y(v_F)=(1,0),\qquad L_y(v_Q)=(0,1).}
+\tag{S23}
+\]
+
+**THEOREM (finite two-probe + kernel equivalence).** For ANY native complete-price cotangent \(\beta_y\in V_y^*\) the following are equivalent:
+
+1. \(\beta_y\) annihilates every vector in \(\ker L_y\).
+2. There are UNIQUE real numbers \((a_y,b_y)\) for which \(\beta_y=a_yDF_h+b_yDQ_h\) on the ENTIRE full original 42-dimensional tangent.
+3. On that entire tangent,
+\[
+\boxed{\beta_y(v)
+= \beta_y(v_F)\,DF_h[v]
++\beta_y(v_Q)\,DQ_h[v].}
+\tag{S24}
+\]
+
+**Exact proof:** for every v put
+\(k=v-DF_h[v]v_F-DQ_h[v]v_Q\).
+Then L_y(k)=0 by S23. If β annihilates ker L, β(k)=0, giving S24. Conversely S24 clearly annihilates the kernel. Uniqueness follows by evaluating on the two probes. No functional minimization, numerical Hessian, second jet, norm choice, source-fitting or further field equations are used.
+
+Consequently, for \(\beta_y=D\mathcal B_h^{\rm COMPLETE}(y)\), the exact criterion
+\[
+\boxed{
+\beta_y|_{\ker L_y}=0,\quad
+\beta_y(v_F)\ne0,\quad
+\frac{\beta_y(v_Q)}{\beta_y(v_F)}=\lambda_-
+}
+\tag{S25}
+\]
+is **necessary and sufficient** to give
+\[
+\boxed{
+D\mathcal B_h^{\rm COMPLETE}(y)=
+\frac{\beta_y(v_F)}{\gamma_h(y)}
+DJ_{2,h}(y)
+\quad\text{on the original ALL42 tangent}.}
+\tag{S26}
+\]
+
+No fixed field-independent magnitude for the prefactor is necessary to identify the **stationary equation and its solution set** on the specified null-carrier: at every y where the prefactor is finite and nonzero, the two covectors vanish at exactly the same y. For exact source normalization, physical coupling/calibration and quantitative cross-mesh bounds, the TRUE prefactor still matters. The full original nonlinear Einstein–CAR family and its midpoint recovery can consume S26 immediately once the THREE conditions S25 have been proved on the actual same-execution native price and admitted tangent image.
+
+**Mathematically meaningful limitation.** S21–S23 are original GEOMETRIC ambient perturbations. This theorem does NOT assert that the complete native D0 finite word graph admits both probes or every vector in ker L. That is the exact remaining native physical realization hypothesis, not a permission to add external fields. Nor does M1 alone make the complete Book price factor through F,Q: actual native full128 history and fixed-probe harmonic observables may distinguish data in ker L even when the STATIONARY SOURCE ultimately annihilates it. Source-annihilation must be proved by the real internal full Book/record/clock/oldRIGHT Ward/causal equations, not by deleting distinguishable records.
+
+**Next test rather than another census:** calculate the genuine complete native β with the already constructed Q14/Q23/C34 port+coherent archive, the original geometric operand D_rs and actual full Book H+J+R/work/clock. Prove the kernel Ward on true internal completed words, then evaluate **only two exact normalized source probes** at one arbitrary generic common-null representative and prove their ratio is the original \(\lambda_-\). A numerical two-point fit would not establish a whole-family identity; S25 must be proved as algebraic identities over its full stated chart. This is now the minimal logically sufficient physical source-composition theorem, not a new independent project task.
