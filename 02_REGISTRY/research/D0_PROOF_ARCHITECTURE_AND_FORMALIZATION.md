@@ -10877,3 +10877,19 @@ freshness, claim-map coverage, repository validation (zero warnings), work
 validation, and the formalization-debt non-growth check (5 findings, matching
 the 5-entry baseline). These checks validate the finite source correction;
 they do not close the physical GR obligations above.
+
+The two declarations were extracted from clean snapshot
+`fb5e8eabb30138d7ba9624048c6f20fd341a38fc` with Lean 4.30.0 and public import
+`D0.All`. The compiled inventory is
+[`scalar_poisson_neutrality_declarations_2026-10-27.json`](sources/d0_proof_architecture_formalization_2026-10-24/scalar_poisson_neutrality_declarations_2026-10-27.json),
+SHA-256 `44c3d548c884e52045fafb2e1bae468c6161ae9779e52c8e5957622c9e36e160`.
+Its whole-Lean-source digest is
+`50f40d0fb6f37ead704b6d6808cf9b210058d234f3280bc86f9318f690f46c09`,
+collector digest `4c00408d3095d509d158cb54e08b09a057ebba0b99e55e68fb5ed9b845dad408`,
+and the scalar owner source SHA-256 is
+`dbf2111d4a18f92c442f3cdeb9e97292bc9ed8b7835f8437293a7d2a00d10718`. The
+matching `claims.csv` SHA-256 at that snapshot is
+`5ff7828b5ee8da5257304ecf689bb56b527d6af226c4b01b469a3ec827fdc1b1`.
+The compiled type records both required premises, and the counterexample
+records stationarity, failed neutrality, and failed Poisson equation. Their
+reported axiom footprints are `Classical.choice`, `Quot.sound`, and `propext`.
