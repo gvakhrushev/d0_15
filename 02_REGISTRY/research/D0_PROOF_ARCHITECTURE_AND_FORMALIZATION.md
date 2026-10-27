@@ -10576,5 +10576,28 @@ blob `40171d8756ccf09c1b0627c20bca03a91637b56c`, SHA-256
 `8fa9455ce44f8cda00843a15f5be01264d985759a51d6ad830dc73902e54df0e`.
 The changed geometry module passed its narrow 3,340-job build and final public
 `D0.All` passed 4,626 jobs at the stated Lean source digest.
+
+The clean cold-start rerun on snapshot `48f8ba531468cd576a8ded6726b2cd3552995238`
+found every required source in 24/24 cases (169 source references; 25 benchmark
+cases). The exact same-record Euclidean refinement query at index 19 found the
+Lean module at pinned-content rank 3 and the compiled declaration inventory at
+rank 5. Its full output was 9,830,680 bytes, SHA-256
+`12e330cdf9c23525637ae2141f5bd28c17763af46aebf16836a1703a4889bdd9`; the
+compact summary is pinned at
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_compact_cubic_euclidean_v17.json`,
+SHA-256 `f098d9bc56030303e5d828b6e54c0954195e62c34d8716c175626687d027e020`.
+
+The same 24-question process comparison found the explicitly scoped expected
+source in 7/7 current-search cases and 0/7 legacy-search cases. Serialized
+answer sizes remained 529,913 bytes for current and 48 bytes for legacy; this
+is a response-size proxy, not a token or file-read measure. The 69,603-byte
+comparison output has SHA-256
+`28b64115d8afdae3b9ca233faa264590e7edd9616eefed316c53d16d56c5de57` and is
+preserved at
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_compact_cubic_euclidean_v17.json`.
+Semantic owner correctness and application remain manual review obligations;
+these retrieval and build receipts do not discharge CAR preparation/generator
+selection, the full varied rows, C0 acceptance, physical Book/clock/work
+selection, or GR closure.
 Source pin for `D0.Geometry.cubicMatterMidpointSample_euclideanError_eq_remainder`, `D0.Geometry.cubicMatterMidpointSample_euclideanError_le_refinementBound`, and `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`: commit `423ec9a87553a14c6f484e429a6d3309eeae256a`, path `03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob `07a988011a77ee87aa13d5d816680920d51a3007`.
 Compiled inventory pin for `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`: commit `de9fc93ff5a159486a8404ba945ab3e3655f0729`, path `02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_same_record_euclidean_refinement_2026-10-27.json`, blob `40171d8756ccf09c1b0627c20bca03a91637b56c`.
