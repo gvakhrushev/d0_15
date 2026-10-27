@@ -128,6 +128,47 @@ def main():
           "closedness ALONE does not select a unique stationary state")
     check(identity != P0, "negative control genuinely changes the dynamics")
 
+    # C13-C19: the exact ORIGINAL all128 zero-marker formula has a
+    # unital recycling T(I)=I. Here test its algebra on a rational
+    # two-level DIAGONAL sector; it is NOT an original CAR16 replay.
+    # D=diag(sqrt(x),sqrt(y)), Delta=diag(x,y), T swaps entries.
+    # The resulting diagonal transition really is stochastic:
+    # q_0 -> q_0 + eps*(y*q_1-x*q_0).
+    x = Q(4)
+    y = Q(9)
+    epsilon = Q(1, 100)
+    z_inv = 1 / x + 1 / y
+    canonical = ((1 / x) / z_inv, (1 / y) / z_inv)
+    check(z_inv == Q(13, 36) and canonical == (Q(9, 13), Q(4, 13)),
+          "original-form inverse-Delta trace stationary density")
+    P_recycling = ((1 - epsilon * x, epsilon * y),
+                   (epsilon * x, 1 - epsilon * y))
+    check(mv(P_recycling, canonical) == canonical,
+          "C13 + unital recycling fixes inverse-Delta state EXACTLY")
+    check(x * canonical[0] + y * canonical[1] == 2 / z_inv == Q(72, 13),
+          "complete stationary first port mean moment d/Tr Delta^-1")
+    # The original mean formula is n + n*p*eps*(2/Z), with p a fixed
+    # Golden algebraic symbol; the coefficient of p is exactly rational.
+    n = 3
+    expected_port_mean_p_coefficient = n * epsilon * Q(2) / z_inv
+    check(expected_port_mean_p_coefficient == Q(54, 325),
+          "arbitrary-horizon actual paid port mean coefficient")
+    for xx in [Q(7, 2), x, Q(9, 2)]:
+        zz = 1 / xx + 1 / y
+        rr = ((1 / xx) / zz, (1 / y) / zz)
+        PP = ((1 - epsilon * xx, epsilon * y),
+              (epsilon * xx, 1 - epsilon * y))
+        check(mv(PP, rr) == rr and xx * rr[0] + y * rr[1] == 2 / zz,
+              "stationary mean across three genuine finite alternatives")
+    # Differentiate x -> 2/(1/x+1/y). Full source vs incorrectly
+    # frozen preparation: the missing internal source is 45/169.
+    complete_source = Q(2) / (x * x * z_inv * z_inv)
+    frozen_prep_source = canonical[0]
+    endogenous_source = complete_source - frozen_prep_source
+    check((complete_source, frozen_prep_source, endogenous_source) ==
+          (Q(162, 169), Q(9, 13), Q(45, 169)),
+          "exact C18 moving canonical density source and hostile frozen control")
+
     print(json.dumps({
         "status": "PASS",
         "exact_checks": checks,
@@ -141,6 +182,14 @@ def main():
         "delta_det_lower": str(delta_lower),
         "contraction_c": str(c),
         "truncation": rows,
+        "same_native_form_toy": {
+            "inverse_trace_Z": str(z_inv),
+            "stationary_marginal": [str(t) for t in canonical],
+            "paid_port_mean_p_coefficient_at_n3": str(expected_port_mean_p_coefficient),
+            "full_port_source_coefficient": str(complete_source),
+            "frozen_source_coefficient": str(frozen_prep_source),
+            "endogenous_source_correction": str(endogenous_source)
+        },
         "new_physical_GR_claim": False
     }, indent=2))
 
