@@ -10498,6 +10498,8 @@ It was collected from clean `D0.All` source snapshot
 `ea2c9d5602880ff059e75a2967444f54bdf242f4`, with Lean source digest
 `a83bf800444d4caa19bf139d3af2ab6b0023d68e47c8941566a58de49163db20` and
 collector digest `9d6413bab7340da58717c463c5f347b21d856f9352a92e010495fc922dd68118`.
+Source pin for `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource`: commit `7d52c4193cc4b1ebfed1142d327446a6128465b7`, path `03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob `df316992b289e0a9ada03adb2852227e8da91ed1`.
+Compiled inventory pin for `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource`: commit `119c31ba6df9f02a4b8b491e7658de2e7432a797`, path `sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json`, blob `9cfb08a3cbe8ef09d5f1311b6b96ea27378ab611`.
 The inventory contains the eight profile, sampled-history, CAR, source, and
 composed-application declarations; each has axiom footprint `Classical.choice`,
 `Quot.sound`, and `propext`. The exact Lean source is pinned at commit
