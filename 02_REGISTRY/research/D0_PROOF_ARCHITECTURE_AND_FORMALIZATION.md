@@ -10347,3 +10347,18 @@ normalized CAR slack survives for sufficiently fine `h`. The new Lean theorem
 turns that statement into an eventual natural-number threshold under the
 displayed analytic hypotheses. The retrieval receipt and search-process
 comparison for this exact source and compiled declaration follow below.
+
+The final cold-start replay is recorded at
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-26_final_v13_uniform_mesh.json`.
+It ran on clean source snapshot `fd6d90a88c929f214096cd926e6c89f46d541547`,
+found every required source in 24/24 scenarios (164 source/ref entries), and
+preserved the exact #334 §7.2 pin separately from the current registration
+blob. The full replay output is 9,584,902 bytes with SHA-256
+`1b372530f38c830f28a8fd8a46adcf9d317445d8ba280969130a29a1bc449da0`.
+The bounded search comparison is recorded at
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-26_final_v13_uniform_mesh.json`.
+It uses the same clean snapshot; across 24 matched queries, the current
+structured-and-text search surfaced all seven explicitly scoped expected
+sources. Its 531,238 serialized answer bytes are a response-size proxy, not a
+token or file-read measure. Retrieval and comparison do not establish semantic
+owner correctness or discharge the remaining native physical application.
