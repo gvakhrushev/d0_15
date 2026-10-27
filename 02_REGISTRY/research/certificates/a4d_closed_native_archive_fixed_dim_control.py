@@ -155,15 +155,49 @@ def native_diagonal_no_mixing_control(n=5):
     return Hfine,Hport,entropy(th)
 
 
+def coherent_c1_limit_control():
+    alpha=.4
+    a,b=.5,2/3
+    den=a*a+b*b
+    w0=b*b/den
+    w1=1-w0
+    dw0=-2*a*b*b/den**2
+    dw1=-dw0
+    rho=np.diag([w0,w1]).astype(complex)
+    drho=np.diag([dw0,dw1]).astype(complex)
+    psi=np.array([math.sqrt(w0),0,0,math.sqrt(w1)],complex)
+    dpsi=np.array([dw0/(2*math.sqrt(w0)),0,0,dw1/(2*math.sqrt(w1))],complex)
+    S0=np.outer(psi,psi.conj())
+    dS0=np.outer(dpsi,psi.conj())+np.outer(psi,dpsi.conj())
+    W=np.kron(rho,rho)
+    dW=np.kron(drho,rho)+np.kron(rho,drho)
+    entropy_source_limit=-2*(dw0*math.log(w0)+dw1*math.log(w1))
+    errors=[]
+    for n in (3,6,9,12):
+        t=alpha**n
+        T=t*S0+(1-t)*W
+        dT=t*dS0+(1-t)*dW
+        lam,U=np.linalg.eigh(T)
+        assert min(lam)>0
+        logT=(U*np.log(lam))@U.conj().T
+        dEntropy=-np.trace(dT@logT).real
+        errors.append(abs(dEntropy-entropy_source_limit))
+    assert errors==sorted(errors,reverse=True)
+    assert errors[-1]<2e-6
+    return entropy_source_limit,errors
+
+
 def main():
     rows=[reset_example(n) for n in (1,2,3,4)]
     eta=original_port_floor_test()
     first=coherent_first_source_test()
+    limit,errors=coherent_c1_limit_control()
     Hfine,Hport,Scoh=native_diagonal_no_mixing_control()
     for row in rows:
         print('n=%d S_fresh=%.12f S_limit=%.12f DR=%d |words|=%d'%row)
     print('Golden original-form uniform port floor eta=%.12f'%eta)
     print('archive source analytic %.12f, finite difference %.12f'%first)
+    print('C1 source limit %.12f; source errors %s'%(limit,[round(e,9) for e in errors]))
     print('QND negative control: fine Shannon %.8f, port Shannon %.8f, fresh coherent %.8f'%(Hfine,Hport,Scoh))
     print('PASS_CLOSED_NATIVE_ARCHIVE_FIXED_DIM (structural tests only)')
 
