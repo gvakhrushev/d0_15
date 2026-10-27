@@ -292,3 +292,80 @@ In particular, at a field direction v with DA[v]=0, the C33 mean cost and full O
 A narrow **structural, NOT original-CAR16** numerical control checks the proof's two main universal components. A two-dimensional genuinely mixing five-Kraus internally closed channel verifies the literal isometric fresh-archive spectrum against its fixed 4x4 Choi purification for 1--4 ticks, Doeblin entropy saturation, and its differentiable first source. A separate two-dimensional diagonal ORIGINAL-FORM Golden/Julia channel verifies Q15--Q18 and preserves a deliberate NO-MIXING failure of Q2: Kraus completeness and the port floor alone do not imply Choi positivity or 2S entropy saturation.
 
 This note does not claim a fresh original full128 replay, a new all42 covector measurement, a Lean build, CI, independent review or physical promotion. The original determinant is an input from the pinned 26 October owner. The new universal matrix identities Q4--Q20 are mathematical proofs at their stated scope.
+
+
+## 9. Theorem Q-F — also close the FIRST-SOURCE long-history limit, not only entropy values
+
+Q10 alone gives convergence of values. For native GR comparisons we need the full source, so prove a genuine C1 statement instead of differentiating a limit without justification.
+
+Work at a fixed regular original fixture with a genuinely admitted C1 original-Kraus chart, uniform positive Choi bound delta in a sufficiently small neighborhood, and the same pure-reference preparation Q3. Fix a REAL admitted chart tangent v and n=3m+r, r in {0,1,2}, m>=1. Put
+
+\[
+\mathcal P_y=\Phi_y^3\otimes\mathrm{id}_R,\quad
+W_y=\rho_y\otimes\rho_y^T,\quad
+Z_{r,y}=(\Phi_y^r\otimes\mathrm{id}_R)(X_{\rho_y})-W_y.
+\]
+
+Then Tr_D Z_r=0, and differentiating this exact identity gives Tr_D DZ_r[v]=0. Since W is stationary at every native chart point,
+
+\[
+\Theta_{3m+r,y}-W_y=\mathcal P_y^m Z_{r,y}.
+\tag{Q21}
+\]
+
+The kernel of Tr_D is invariant under both mathcal P and its differentiated map. The completely positive decomposition of Q8 contracts that kernel with constant c<1, including the reference. Put
+
+\[
+L_v=\big\|(D\mathcal P_y[v])|_{\ker\operatorname{Tr}_D}\big\|_{1\to1},
+\qquad
+M_{r,v}=\|DZ_{r,y}[v]\|_1,
+\]
+where both are FINITE computable real derivatives of the actual finite operator words and their endogenous preparation. Differentiate Q21 by the finite product rule, **retaining all m terms**. Using ||Z_r||_1<=2, we obtain the exact quantitative estimate
+
+\[
+\boxed{\;
+\big\|D(\Theta_{3m+r}-W)[v]\big\|_1
+\le 2m c^{m-1}L_v+c^mM_{r,v}.
+\;}
+\tag{Q22}
+\]
+
+For c=0 use the evident direct finite-product convention (the m=1 term is not deleted). This is an actual SOURCE convergence estimate, not a value-only entropy continuity claim.
+
+Let lambda_* be Q10's fixed positive floor. All Theta_n (n>=3) and W have spectrum within [lambda_*,1]. The matrix logarithm's resolvent integral gives the elementary fixed-dimension Lipschitz estimate
+\(\|\ln X-\ln Y\|_\infty\le\|X-Y\|_\infty/\lambda_*\) on that class. Compare Q13 with the same entropy differential at W, using the exact source Q22 and ||DW[v]||_1<=2||D rho[v]||_1:
+
+\[
+\boxed{\begin{aligned}
+|DS(\mathrm{Fresh}_n)[v]-2DS(\rho)[v]|
+\le{}&
+|\ln\lambda_*|\bigl(2m c^{m-1}L_v+c^mM_{r,v}\bigr)\\
+&+\frac{4c^m}{\lambda_*}\|D\rho[v]\|_1.
+\end{aligned}}
+\tag{Q23}
+\]
+
+This proves C1 saturation of the WHOLE coherent fresh archive first source from the SAME original CAR16/128 process:
+
+\[
+\boxed{DS(\mathrm{Fresh}_n)[v]\longrightarrow 2DS(\rho)[v].}
+\tag{Q24}
+\]
+
+No 128^n history differentiation, fresh probability floor, free continuum primitive, or external entropy production coefficient has been inserted.
+
+**Per-paid-tick source theorem.** Divide Q14 by the real fixed n and apply Q23. For every fixed original regular native chart and its actual smooth direction v,
+
+\[
+\boxed{\lim_{n\to\infty}
+\frac1nD\left[\mathbb E C_n-
+\frac{S(\mathrm{Fresh}_n)}{\ln\varphi}\right][v]
+=
+\frac{64p^3}{Z^2}
+\operatorname{Tr}(A^{-1}DA[v]A^{-1}).}
+\tag{Q25}
+\]
+
+The coherent-archive first source is O(1) and its per-tick contribution vanishes, whereas the ACTUAL original paid port first source is exactly extensive. The limit is a real native spectral-source law, not an Einstein equation. It is NOT h-uniform: the positive delta_h, actual physical tangent norm, L_v, physical n_h, and the joint h-refinement still need their own bound.
+
+**Sharply testable field consequence:** if an actually admitted native perturbation changes A only by an internal unitary re-encoding, \(DA[v]=[X,A]\) with X^*=-X, then cyclic trace gives the EXACT right side of Q25 equal to zero. No claim is made that this internal isospectral direction is automatically a local Lorentz or geometric diffeomorphism direction. The all42 Einstein consumer must explicitly determine whether its transverse coframe source lies in that spectral kernel; if it does, real further marked-archive/scene/clock terms must carry the response. This is a concrete, non-fittable same-carrier source test.
