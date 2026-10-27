@@ -10,6 +10,7 @@ import sys
 import tempfile
 import time
 import unittest
+from unittest import mock
 
 import research_input_closure as closure
 import run_research_certs as runner
@@ -68,6 +69,162 @@ class ClosureFixture(unittest.TestCase):
 
 
 class SelectorTests(ClosureFixture):
+    def test_context_binding_uses_snapshot_and_rejects_changed_caller(self) -> None:
+        cert = self.write_cert("context.py", "INPUTS = ['shared/child.py']\n")
+        owner = "shared/child.py"
+        (self.repo / owner).write_text("VALUE = 1\n")
+        source = "shared/value.md"
+        (self.repo / source).write_text("expected\n")
+        snap = self.repo / "packet/inputs/shared/value.md"
+        snap.parent.mkdir(parents=True)
+        snap.write_text("expected\n")
+        commit = self.commit()
+        hashes = {p: hashlib.sha256((self.repo / p).read_bytes()).hexdigest() for p in (cert, owner)}
+        pin = hashlib.sha256(b"expected\n").hexdigest()
+        item = {"path": source, "kind": "pin", "pin_sha256": pin, "pin_commit": None}
+        with mock.patch.dict(closure.CONTEXT_SHA256, hashes), mock.patch.dict(closure.ROOT_BINDINGS, {(cert, owner): "packet/inputs"}):
+            closure.require_context(self.repo, commit, cert, owner)
+            row = closure.contextual_record(item, cert, owner, {})
+            self.assertEqual(row["path"], "packet/inputs/shared/value.md")
+            self.assertEqual(closure.provenance_status(self.repo, commit, row)["status"], "match")
+            snap.write_text("wrong\n")
+            changed = self.commit()
+            self.assertEqual(closure.provenance_status(self.repo, changed, row)["status"], "sha-mismatch")
+            snap.unlink()
+            deleted = self.commit()
+            self.assertEqual(closure.provenance_status(self.repo, deleted, row)["status"], "deleted-input")
+            (self.repo / cert).write_text("INPUTS = ['shared/child.py']\n# changed root\n")
+            changed_caller = self.commit()
+            with self.assertRaisesRegex(ValueError, "context changed"):
+                closure.require_context(self.repo, changed_caller, cert, owner)
+
+    def test_overlay_requires_unique_safe_mapping_and_matching_checker_pin(self) -> None:
+        packet = self.repo / "packet"
+        packet.mkdir()
+        digest = hashlib.sha256(b"historic").hexdigest()
+        row = {"source_path": "old/source.lean", "snapshot": "inputs/source.lean", "sha256": digest}
+        manifest = packet / "SOURCE_INPUTS.json"
+
+        def read_overlay(rows):
+            data = json.dumps({"files": rows}).encode()
+            manifest.write_bytes(data)
+            commit = self.commit()
+            with mock.patch.object(closure, "JOINT", "packet/"), mock.patch.object(closure, "SOURCE_DIR", ""), mock.patch.object(closure, "JOINT_MANIFEST_SHA256", hashlib.sha256(data).hexdigest()):
+                return closure.joint_overlay(self.repo, commit)
+
+        mapping = read_overlay([row])
+        pin = {"path": "old/source.lean", "kind": "pin", "pin_sha256": digest, "pin_commit": None}
+        resolved = closure.contextual_record(pin, closure.JOINT_CERT, closure.JOINT_OWNER, mapping)
+        self.assertEqual(resolved["path"], "packet/inputs/source.lean")
+        with self.assertRaisesRegex(ValueError, "mismatched overlay pin"):
+            closure.contextual_record(dict(pin, pin_sha256="0" * 64), closure.JOINT_CERT, closure.JOINT_OWNER, mapping)
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            read_overlay([row, row])
+        with self.assertRaisesRegex(ValueError, "invalid"):
+            read_overlay([dict(row, snapshot="inputs/../escape")])
+
+        # The replay verifies every copied file, including those the bridge
+        # does not mention in its own PINS.
+        untouched = dict(row, source_path="old/unused.lean", snapshot="inputs/unused.lean")
+        mapping = read_overlay([row, untouched])
+        snapshot = packet / "inputs/unused.lean"
+        snapshot.parent.mkdir()
+        snapshot.write_bytes(b"corrupt")
+        head = self.commit()
+        records = closure.overlay_snapshot_records(mapping)
+        unused = next(item for item in records if item["source_path"] == "old/unused.lean")
+        self.assertEqual(closure.provenance_status(self.repo, head, unused)["status"], "sha-mismatch")
+
+    def test_blob_pin_does_not_guess_commit_and_detects_wrong_oid(self) -> None:
+        data = b"VALUE = 1\n"
+        oid = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
+        item = {"path": "shared/owner.py", "kind": "pin", "pin_commit": oid, "pin_sha256": None}
+        resolved = closure.contextual_record(item, closure.SHEET, closure.SHEET, {})
+        self.assertEqual(closure.provenance_status(self.repo, self.base, resolved)["status"], "match")
+        self.assertEqual(closure.provenance_status(self.repo, self.base, dict(resolved, pin_blob="0" * 40))["status"], "sha-mismatch")
+        self.assertEqual(closure.provenance_status(self.repo, self.base, item)["status"], "deleted-input")
+
+    def test_joint_sums_end_to_end_pin_all_entries_and_reject_tampering(self) -> None:
+        packet = self.repo / "packets/joint"
+        (packet / "inputs").mkdir(parents=True)
+        (packet / "inputs/source.md").write_text("snapshot\n")
+        source_sha = hashlib.sha256(b"snapshot\n").hexdigest()
+        overlay_data = json.dumps({"files": [{"source_path": "old/source.md", "snapshot": "inputs/source.md", "sha256": source_sha}]}).encode()
+        (packet / "SOURCE_INPUTS.json").write_bytes(overlay_data)
+        (packet / "bridge.py").write_text(f"PINS = {{'old/source.md': '{source_sha}'}}\n")
+        (packet / "replay_packet.py").write_text("VALUE = 1\n")
+        (packet / "check_conditional_noise.py").write_text("VALUE = 2\n")
+        (packet / "WITNESS_RECEIPT.json").write_text('{}\n')
+        (self.repo / "proof.md").write_text("proof\n")
+        entries = {
+            "../../proof.md": hashlib.sha256(b"proof\n").hexdigest(),
+            "check_conditional_noise.py": hashlib.sha256(b"VALUE = 2\n").hexdigest(),
+            "WITNESS_RECEIPT.json": hashlib.sha256(b"{}\n").hexdigest(),
+        }
+        sums_data = json.dumps({"schema": "d0.joint-field-minimum.pins.v1", "files": entries}).encode()
+        (packet / "SHA256SUMS.json").write_bytes(sums_data)
+        cert = self.write_cert("joint_fixture.py", "INPUTS = ['packets/joint/bridge.py', 'packets/joint/check_conditional_noise.py']\n")
+        owner = "packets/joint/bridge.py"
+        replay = "packets/joint/replay_packet.py"
+        hashes = {p: hashlib.sha256((self.repo / p).read_bytes()).hexdigest() for p in (cert, owner, replay)}
+        base = self.commit()
+        with mock.patch.object(closure, "SOURCE_DIR", ""), mock.patch.object(closure, "JOINT", "packets/joint/"), mock.patch.object(closure, "JOINT_CERT", cert), mock.patch.object(closure, "JOINT_OWNER", owner), mock.patch.object(closure, "JOINT_MANIFEST_SHA256", hashlib.sha256(overlay_data).hexdigest()), mock.patch.object(closure, "JOINT_SUMS_SHA256", hashlib.sha256(sums_data).hexdigest()), mock.patch.dict(closure.CONTEXT_SHA256, hashes):
+            report = closure.select(self.repo, base, None)
+            rows = [r for r in report["provenance"] if r["certificate"] == cert and r["kind"] == "manifest-pin"]
+            self.assertEqual({r["path"] for r in rows}, {"proof.md", "packets/joint/check_conditional_noise.py", "packets/joint/WITNESS_RECEIPT.json", "packets/joint/SHA256SUMS.json"})
+            self.assertTrue(all(r["status"] == "match" for r in rows))
+            (packet / "check_conditional_noise.py").write_text("VALUE = 3\n")
+            changed = self.commit()
+            report = closure.select(self.repo, changed, base)
+            self.assertFalse(report["provenance_ok"])
+            self.assertTrue(any(r["path"].endswith("check_conditional_noise.py") and r["status"] == "sha-mismatch" for r in report["provenance"]))
+            (self.repo / "proof.md").unlink()
+            deleted = self.commit()
+            report = closure.select(self.repo, deleted, changed)
+            self.assertTrue(any(r["path"] == "proof.md" and r["status"] == "deleted-input" for r in report["provenance"]))
+            (packet / "SHA256SUMS.json").write_text('{}')
+            altered_manifest = self.commit()
+            with self.assertRaisesRegex(ValueError, "SHA256SUMS changed"):
+                closure.select(self.repo, altered_manifest, deleted)
+        self.assertEqual(closure.resolve_manifest_path("packets/joint", "../../proof.md"), "proof.md")
+        with self.assertRaisesRegex(ValueError, "escapes"):
+            closure.resolve_manifest_path("packets/joint", "../../../escape")
+        with self.assertRaisesRegex(ValueError, "invalid"):
+            closure.resolve_manifest_path("packets/joint", "/absolute")
+
+
+    def test_opaque_hash_only_edge_does_not_hide_changed_or_executed_code(self) -> None:
+        child = "shared/opaque.py"
+        code = "PINNED_SHA256 = {'shared/missing.md': '" + "1" * 64 + "'}\n"
+        (self.repo / child).write_text(code)
+        digest = hashlib.sha256(code.encode()).hexdigest()
+        cert = self.write_cert("opaque.py", f"PINNED_SHA256 = {{'{child}': '{digest}'}}\n")
+        head = self.commit()
+        hashes = {p: hashlib.sha256((self.repo / p).read_bytes()).hexdigest() for p in (cert, child)}
+        with mock.patch.dict(closure.CONTEXT_SHA256, hashes), mock.patch.dict(closure.OPAQUE_EDGES, {cert: {child: {cert}}}):
+            index = closure.build_index(self.repo, head)
+            inputs = index["by_certificate"][cert]["transitive"]
+            self.assertEqual([r["path"] for r in inputs], [child])
+            self.assertEqual(closure.provenance_status(self.repo, head, inputs[0])["status"], "match")
+            (self.repo / child).write_text(code + "# changed into executable code\n")
+            changed = self.commit()
+            with self.assertRaisesRegex(ValueError, "context changed"):
+                closure.build_index(self.repo, changed)
+            # A separate real import of the same file is still traversed,
+            # irrespective of whether its pin is visited first.
+            (self.repo / cert).write_text(f"PINNED_SHA256 = {{'{child}': '{digest}'}}\nimport shared.opaque\n")
+            (self.repo / child).write_text(code)
+            both = self.commit()
+            hashes[cert] = hashlib.sha256((self.repo / cert).read_bytes()).hexdigest()
+            with mock.patch.dict(closure.CONTEXT_SHA256, hashes):
+                index = closure.build_index(self.repo, both)
+                paths = {r["path"] for r in index["by_certificate"][cert]["transitive"]}
+                self.assertIn("shared/missing.md", paths)
+        # Without the audited opaque edge, recursive inspection is retained.
+        index = closure.build_index(self.repo, head)
+        paths = {r["path"] for r in index["by_certificate"][cert]["transitive"]}
+        self.assertIn("shared/missing.md", paths)
+
     def test_constant_suffixes_track_real_files_not_the_prefix(self) -> None:
         consumer = self.write_cert(
             "suffix_consumer.py",

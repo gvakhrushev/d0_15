@@ -11154,3 +11154,31 @@ recording its printed owner types, axioms, source digest and toolchain. This
 checks compatibility with current sources; it does not establish native
 admission or accept a scientific source-to-claim relation. The historical
 checker and this current-source compilation are distinct checks.
+
+At clean source commit `06892e82b35d32aa4905c8cd1f52415afbe43214`,
+`D0.All` passed with 4,742 jobs for Lean source digest
+`40b8842e1a891f8f8266f979db48f5e7dff205e7a69b2340f1090f6a7d0b9072`.
+The capsule-to-supported transport replay also passed at that digest; the
+printed dependencies of the migrated owners and transport are `propext`,
+`Classical.choice`, and `Quot.sound`.
+
+The current claim resolution view, generated at that clean commit, is
+[`claim_candidate_resolution_current.json`](sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json),
+SHA-256 `6653ed09ed2e075e8b7907a06c1f57b2c313a191cf8c18c0fc2901e01f4ccf61`.
+It retains the request and exact declaration resolutions and records the hash
+of the full 4,410,649-byte replay rather than duplicating all crosswalk rows.
+The replay found 2,579 locator atoms in declared modules, four unresolved
+atoms, and 178 rows without a theorem locator. These are name-resolution
+results: the actual source/application scope and independent acceptance remain
+separate. The four unresolved atoms concern the Puiseux target, the full
+cubical carrier and Betti construction, and the full Hodge mass trace.
+
+The isolated pairing checker replay at commit
+`7629fc4d5c832771d85a1ef60a8f753d98418461` passed **588** controls and
+**32** mutants after overlaying the eleven pinned historical inputs; all 66
+ledger inputs and 12 Lean-receipt inputs were checked, and both tracked-tree
+and overlay mutation checks were clear. Its compact receipt is
+[`native_pairing_historical_replay_2026-10-27_7629fc4d.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/native_pairing_historical_replay_2026-10-27_7629fc4d.json),
+SHA-256 `6c9c5311e27e0c89467b1dbfa4156e0f501d585af8a3db75271bc4961ca37ec7`.
+The source and Lean receipt in that replay remain historical; current-source
+compatibility is checked separately.

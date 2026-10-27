@@ -36,6 +36,67 @@ SHA256_RE = re.compile(r"[0-9a-fA-F]{64}\Z")
 COMMIT_RE = re.compile(r"[0-9a-fA-F]{40}\Z")
 REQUIREMENT_NAME = re.compile(r"^[A-Za-z0-9_.-]+")
 
+# These are audited execution contexts, not alternative source hashes.  Each
+# binding is valid only for exactly the inspected caller and checker bytes.
+# Changed code must be reviewed before extending this table.
+SOURCE_DIR = "02_REGISTRY/research/sources/"
+CONTEXT_SHA256 = {
+    CERT_DIR + "/a4d_native_clock_price_source_check.py": "7c6715937ab4ab5e0f9efff54ce42e8d8fbce2005e8c07242c76f87fd871407f",
+    CERT_DIR + "/a4d_native_complete_price_selection_check.py": "a9c3772ce43710248d43a893501fe04721c7879895eefd29e6dad29dd1d58c2a",
+    CERT_DIR + "/a4d_native_gr_completion_synthesis_check.py": "8eefe3ce5116b2b84256118457e0b7eedfb90887f1e998d75ba1209d0903772d",
+    CERT_DIR + "/a4d_native_joint_field_minimum_check.py": "f6a30356aa362d59034ef203f01799e43c962c7aaccf4a901145c429eeb07be8",
+    CERT_DIR + "/a4d_same_history_price_composition_check.py": "5cac9c8df250546a2abd177f2ac3b5bfdf895388b02f7bffc82d6d501db995a2",
+    CERT_DIR + "/a4d_one_coordinate_exact_curved_sheet_check.py": "84cb9494eb06877b0a9cfa6a136c8c1ce603fe909133deffa5c49582235fde19",
+    SOURCE_DIR + "d0_native_minimality_closure_2026-10-20/book_price/check_coherent_return_pressure.py": "e3388349e9c6cbba37a05ac3a05b607ad34d2135aaca958e1265c3cca16e8db1",
+    SOURCE_DIR + "d0_native_minimality_closure_2026-10-20/geometry/check_source_moment_collapse.py": "fd4edf0649492910eecf649fb1c133dafd2eb1b3d4b8df801a6e62a0f30691b8",
+    SOURCE_DIR + "d0_native_complete_price_selection_2026-10-20/check_full128_coherent_info_price.py": "60f70c32d9f67c09eee8cccb160b3ebc2299735a0fd7b471d1bb712af9e8a03c",
+    SOURCE_DIR + "d0_native_gr_completion_synthesis_2026-10-20/book_source/check_book_source_binding.py": "a6a34c63b1d2f3259be8bb5572f78d86a4034dd6c99a57544d2fa0f004f4e665",
+    SOURCE_DIR + "d0_native_gr_completion_synthesis_2026-10-20/execution/check_return_cost_and_stopping.py": "b06b10c069f4a713dac1888a543ebe5b90a1427d3401f4ee86994c7922561dfb",
+    SOURCE_DIR + "d0_native_joint_field_minimum_2026-10-20/check_prospective_field_bridge.py": "44d0e9a6c0a2706e49a7b8c272fccc2d638ef0ae6485720746ea810a2f0bebda",
+    SOURCE_DIR + "d0_native_joint_field_minimum_2026-10-20/replay_packet.py": "2ad14e69cdd16d26fb38a588af2d059ac6f697cdde478bbd55c65074230ad751",
+    SOURCE_DIR + "d0_same_history_price_composition_2026-10-20/check_paid_port_cost.py": "36a091aff2dc826aeabfac0c60a453a80c5bbfc23ecdaf0fd554b17cd8dd1bf3",
+}
+
+def _source(path: str) -> str:
+    return SOURCE_DIR + path
+
+
+MINIMALITY = "d0_native_minimality_closure_2026-10-20/"
+GR_COMPLETION = "d0_native_gr_completion_synthesis_2026-10-20/"
+COMPLETE_PRICE = "d0_native_complete_price_selection_2026-10-20/"
+SAME_HISTORY = "d0_same_history_price_composition_2026-10-20/"
+JOINT = "d0_native_joint_field_minimum_2026-10-20/"
+SHEET = CERT_DIR + "/a4d_one_coordinate_exact_curved_sheet_check.py"
+ROOT_BINDINGS = {
+    (CERT_DIR + "/" + cert, _source(owner)): _source(root + "inputs")
+    for cert, owner, root in [
+        (cert, MINIMALITY + child, MINIMALITY)
+        for cert in ("a4d_native_clock_price_source_check.py",)
+        for child in ("geometry/check_source_moment_collapse.py", "book_price/check_coherent_return_pressure.py")
+    ] + [
+        ("a4d_native_gr_completion_synthesis_check.py", GR_COMPLETION + child, GR_COMPLETION)
+        for child in ("book_source/check_book_source_binding.py", "execution/check_return_cost_and_stopping.py")
+    ] + [
+        ("a4d_native_complete_price_selection_check.py", COMPLETE_PRICE + "check_full128_coherent_info_price.py", COMPLETE_PRICE),
+        ("a4d_same_history_price_composition_check.py", SAME_HISTORY + "check_paid_port_cost.py", SAME_HISTORY),
+    ]
+}
+JOINT_CERT = CERT_DIR + "/a4d_native_joint_field_minimum_check.py"
+JOINT_OWNER = _source(JOINT + "check_prospective_field_bridge.py")
+JOINT_MANIFEST_SHA256 = "0b04051306ec555046bc79bca2956736505c742b650b441cf0f43829ee3858c0"
+JOINT_SUMS_SHA256 = "ea02c359cd851512be63fb394c87c4052ff118dbaa1875b5b91c251150560b40"
+OPAQUE_CERT = CERT_DIR + "/a4d_same_history_price_composition_check.py"
+OPAQUE_OWNER = _source(SAME_HISTORY + "check_paid_port_cost.py")
+OPAQUE_PATH = _source(SAME_HISTORY + "inputs/02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_two_round_complete_shannon_order_source.py")
+COMPLETE_CERT = CERT_DIR + "/a4d_native_complete_price_selection_check.py"
+OPAQUE_EDGES = {
+    OPAQUE_CERT: {OPAQUE_PATH: {OPAQUE_CERT, OPAQUE_OWNER}},
+    COMPLETE_CERT: {
+        _source(MINIMALITY + child): {COMPLETE_CERT}
+        for child in ("geometry/check_source_moment_collapse.py", "book_price/check_coherent_return_pressure.py")
+    } | {CERT_DIR + "/a4d_native_clock_price_source_check.py": {COMPLETE_CERT}},
+}
+
 
 def git(repo: Path, *args: str) -> bytes:
     return subprocess.check_output(["git", "-C", str(repo), *args], stderr=subprocess.PIPE)
@@ -1065,6 +1126,117 @@ def certificate_paths_at(tree: set[str]) -> list[str]:
     return sorted(path for path in tree if path.startswith(prefix) and path.endswith(".py"))
 
 
+def require_context(repo: Path, commit: str, *paths: str) -> None:
+    """Fail closed if an audited caller or callee no longer has its reviewed bytes."""
+    for path in paths:
+        data = blob(repo, commit, path)
+        if data is None or sha256_hex(data) != CONTEXT_SHA256[path]:
+            raise ValueError(f"audited input context changed or missing: {path}")
+
+
+def joint_overlay(repo: Path, commit: str) -> dict[str, tuple[str, str]]:
+    manifest_path = _source(JOINT + "SOURCE_INPUTS.json")
+    raw = blob(repo, commit, manifest_path)
+    if raw is None or sha256_hex(raw) != JOINT_MANIFEST_SHA256:
+        raise ValueError(f"audited overlay manifest changed or missing: {manifest_path}")
+    try:
+        rows = json.loads(raw)["files"]
+        result = {}
+        for row in rows:
+            source, snapshot, digest = row["source_path"], row["snapshot"], row["sha256"]
+            if (not isinstance(source, str) or normalize_rel(source) != source
+                    or not isinstance(snapshot, str) or normalize_rel(snapshot) != snapshot
+                    or not snapshot.startswith("inputs/") or not isinstance(digest, str)
+                    or not SHA256_RE.fullmatch(digest) or source in result):
+                raise ValueError("invalid or duplicate overlay mapping")
+            result[source] = (_source(JOINT + snapshot), digest.lower())
+        return result
+    except (TypeError, KeyError, json.JSONDecodeError) as error:
+        raise ValueError(f"invalid overlay manifest: {manifest_path}") from error
+
+
+def contextual_record(item: dict, cert: str, owner: str, overlay: dict) -> dict:
+    """Resolve only reviewed pin declarations, preserving the logical source path."""
+    record = dict(item)
+    if item.get("kind") != "pin":
+        return record
+    if (cert, owner) in ROOT_BINDINGS:
+        path = join_path(ROOT_BINDINGS[(cert, owner)], item["path"])
+        if path is None:
+            raise ValueError(f"invalid contextual path: {item['path']}")
+        record["source_path"] = item["path"]
+        record["path"] = path
+    elif cert == JOINT_CERT and owner == JOINT_OWNER:
+        target = overlay.get(item["path"])
+        if target is None or target[1] != item.get("pin_sha256"):
+            raise ValueError(f"missing or mismatched overlay pin: {item['path']}")
+        record["source_path"] = item["path"]
+        record["path"] = target[0]
+    elif cert == SHEET and owner == SHEET and item.get("pin_commit"):
+        record["pin_blob"] = record.pop("pin_commit")
+    return record
+
+
+def overlay_snapshot_records(overlay: dict) -> list[dict]:
+    return [{"path": snapshot, "source_path": source, "kind": "overlay-snapshot",
+             "pin_sha256": digest, "pin_commit": None}
+            for source, (snapshot, digest) in overlay.items()]
+
+
+def resolve_manifest_path(base: str, name: str) -> str:
+    """Resolve a packet-relative path while preventing traversal outside the tree."""
+    if not isinstance(name, str) or not name or name.startswith("/") or "\\" in name:
+        raise ValueError(f"invalid manifest path: {name!r}")
+    base_path = normalize_rel(base)
+    if base_path is None or base_path != base:
+        raise ValueError(f"invalid manifest base: {base!r}")
+    parts = base_path.split("/")
+    for part in name.split("/"):
+        if part in ("", "."):
+            continue
+        if part == "..":
+            if not parts:
+                raise ValueError(f"manifest path escapes repository: {name!r}")
+            parts.pop()
+        else:
+            parts.append(part)
+    if not parts:
+        raise ValueError(f"invalid manifest path: {name!r}")
+    return "/".join(parts)
+
+
+def joint_sums_records(repo: Path, commit: str) -> list[dict]:
+    base = _source(JOINT.rstrip("/"))
+    manifest = base + "/SHA256SUMS.json"
+    raw = blob(repo, commit, manifest)
+    if raw is None or sha256_hex(raw) != JOINT_SUMS_SHA256:
+        raise ValueError(f"audited SHA256SUMS changed or missing: {manifest}")
+
+    def unique_object(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError(f"duplicate SHA256SUMS key: {key}")
+            result[key] = value
+        return result
+
+    try:
+        document = json.loads(raw, object_pairs_hook=unique_object)
+        if document.get("schema") != "d0.joint-field-minimum.pins.v1" or not isinstance(document.get("files"), dict):
+            raise ValueError("invalid SHA256SUMS schema")
+        records = [{"path": manifest, "kind": "manifest-pin", "pin_sha256": JOINT_SUMS_SHA256, "pin_commit": None}]
+        paths = set()
+        for name, digest in document["files"].items():
+            path = resolve_manifest_path(base, name)
+            if path in paths or not isinstance(digest, str) or not SHA256_RE.fullmatch(digest):
+                raise ValueError(f"invalid or duplicate SHA256SUMS entry: {name}")
+            paths.add(path)
+            records.append({"path": path, "kind": "manifest-pin", "pin_sha256": digest.lower(), "pin_commit": None})
+        return records
+    except (TypeError, AttributeError, json.JSONDecodeError) as error:
+        raise ValueError(f"invalid SHA256SUMS: {manifest}") from error
+
+
 def build_index(repo: Path, commit: str) -> dict:
     """Read blobs at commit. Does not touch the worktree or any receipt."""
     commit = resolve_commit(repo, commit)
@@ -1072,43 +1244,66 @@ def build_index(repo: Path, commit: str) -> dict:
     external = external_roots(repo, commit)
     certificates = certificate_paths_at(tree)
     extracted = {}
-    queue = list(certificates)
-    seen = set()
-    while queue:
-        path = queue.pop()
-        if path in seen:
-            continue
-        seen.add(path)
+
+    def load(path: str) -> dict:
+        if path in extracted:
+            return extracted[path]
         raw = blob(repo, commit, path)
         if raw is None or not path.endswith(".py"):
             extracted[path] = {"inputs": [], "unknown": []}
-            continue
-        try:
-            source = raw.decode("utf-8")
-            extracted[path] = extract(source, path, tree, external)
-        except (SyntaxError, UnicodeError):
-            extracted[path] = {"inputs": [], "unknown": [{"reason": "unparsed", "detail": path, "candidates": []}]}
-        for item in extracted[path]["inputs"]:
-            if item["path"] not in seen:
-                queue.append(item["path"])
+        else:
+            try:
+                source = raw.decode("utf-8")
+                extracted[path] = extract(source, path, tree, external)
+            except (SyntaxError, UnicodeError):
+                extracted[path] = {"inputs": [], "unknown": [{"reason": "unparsed", "detail": path, "candidates": []}]}
+        return extracted[path]
+
     by_certificate = {}
     for cert in certificates:
-        direct = extracted.get(cert, {"inputs": [], "unknown": []})
+        context_paths = {owner for caller, owner in ROOT_BINDINGS if caller == cert}
+        # Guard both the caller and each hash-only file.  For the paid-port
+        # case the child checker is also the caller of the hash-only edge.
+        context_paths.update(path for path in OPAQUE_EDGES.get(cert, {}) if path in CONTEXT_SHA256)
+        context_paths.update(owner for owners in OPAQUE_EDGES.get(cert, {}).values()
+                             for owner in owners if owner != cert)
+        if cert == JOINT_CERT:
+            context_paths.update((JOINT_OWNER, _source(JOINT + "replay_packet.py")))
+        if cert == SHEET or context_paths:
+            require_context(repo, commit, cert, *sorted(context_paths))
+        overlay = joint_overlay(repo, commit) if cert == JOINT_CERT else {}
+        direct = load(cert)
         transitive = []
         unknown = list(direct["unknown"])
         stack = [(item, cert) for item in direct["inputs"]]
+        if cert == JOINT_CERT:
+            manifest_path = _source(JOINT + "SOURCE_INPUTS.json")
+            # replay_packet verifies every manifest file, even ones not read by
+            # the bridge; it only copies these bytes and does not execute them.
+            stack.extend((item, manifest_path) for item in overlay_snapshot_records(overlay))
+            sums_path = _source(JOINT + "SHA256SUMS.json")
+            stack.extend((item, sums_path) for item in joint_sums_records(repo, commit))
         visited = {cert}
         while stack:
             item, owner = stack.pop()
-            record = dict(item)
+            record = contextual_record(item, cert, owner, overlay)
             record["declared_by"] = owner
             if record not in transitive:
                 transitive.append(record)
-            path = item["path"]
+            path = record["path"]
+            if (owner == _source(JOINT + "SOURCE_INPUTS.json") and cert == JOINT_CERT
+                    and item.get("kind") == "overlay-snapshot"):
+                continue
+            if (owner == _source(JOINT + "SHA256SUMS.json") and cert == JOINT_CERT
+                    and item.get("kind") == "manifest-pin"):
+                continue
+            if (owner in OPAQUE_EDGES.get(cert, {}).get(path, set())
+                    and item.get("kind") in {"pin", "inputs"}):
+                continue
             if path in visited:
                 continue
             visited.add(path)
-            child = extracted.get(path)
+            child = load(path)
             if not child:
                 continue
             for reason in child["unknown"]:
@@ -1139,6 +1334,9 @@ def provenance_status(repo: Path, commit: str, item: dict) -> dict:
         status = "deleted-input"
     elif item.get("pin_sha256") and actual != item["pin_sha256"]:
         status = "sha-mismatch"
+    elif item.get("pin_blob"):
+        blob_id = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
+        status = "match" if blob_id == item["pin_blob"] else "sha-mismatch"
     elif item.get("pin_commit"):
         pinned = blob(repo, item["pin_commit"], path)
         if pinned is None:
@@ -1155,6 +1353,8 @@ def provenance_status(repo: Path, commit: str, item: dict) -> dict:
         "kind": item.get("kind"),
         "pin_sha256": item.get("pin_sha256"),
         "pin_commit": item.get("pin_commit"),
+        "pin_blob": item.get("pin_blob"),
+        "source_path": item.get("source_path"),
         "actual_sha256": actual,
         "status": status,
     }
