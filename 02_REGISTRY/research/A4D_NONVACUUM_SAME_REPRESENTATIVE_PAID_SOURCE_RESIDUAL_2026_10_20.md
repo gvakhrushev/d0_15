@@ -81558,6 +81558,277 @@ print(json.dumps(out, indent=2)+'\n', end='')
 }
 ```
 
+## 7co. An actual live ledger preserves the QUERY kernel and controls global suffix rows
+
+27 October2026. SAME #334 / constitutive/native-programme-v1; native realization and composition, input1108befd48917c65d70ff7053e07fd30ef567e69. Consume7ba443--447,7cj721--723,7ck735--741 and7cn's concrete coarse-observation functions. The parent is the complete QUERY-source application: a local-reader estimate is not an estimate for arbitrary whole-controller changes. The construction below preserves the actual full kernel while supplying a larger support-defined comparison graph. It does not derive that graph as the original physical X_N, or add a desired field equation to a task.
+
+### 1. Put the record law on the whole SOURCE input
+
+Use J_read as an isometry from the ENTIRE unprepared SOURCE/coin input and required free protected factors to the born SIGN/coin frontier. Contract only actual factory blanks. It is distinct from the actual preparation A j_blank. Correctness of a fixed classical sampler f is a statement on J_read's whole domain, not an equality between realized probabilities at an Einstein field. Noncommuting features have their original distinct read-once packets, roles, TAG omissions and private flags; the coarse functions of7cn merely supply another fixed finite table.
+
+Construct the Boolean suffix out of place, readonly in its primitive computational inputs z. Use the owned predicate-readonly native compiler on the finite table: control sectors retain their exact false blocks and their actual true compiled blocks on fresh private work. The finite truth table, padding, compiler precision and gate counts are paid; no efficient dependence on the growing feature count is asserted. At fixed finite layout the owned fixed-dimension compiler supplies its actual precision/length bound. The actual suffix T_hat is block diagonal in z even when its Boolean approximation is imperfect. Its physical phase Z is a selfadjoint involution on output work, excluding z. Put Q_core=T_hat* Z T_hat.
+
+Allocate a fresh ordinary pointer h_b for each primitive input bit needing a ledger. Copy it by real CX at its BIRTH, before its later causal uses; reuse existing readonly TAG copies. All subsequent macro endpoints are readonly in that input bit and all suffix raw addresses exclude h_b. Coins are copied before role logic, SIGN flags after their own completed extractor. Derived counters/roles need not be copied when f uses the complete physical coin/SIGN/TAG input code. Copying a role only after the associated quantum read is not granted the same birth-row estimate.
+
+Let V be the product of these copies, expressed at a common frontier by commuting it through the later readonly macro endpoints. Since [Q_core,V]=0 on ALL columns, including dirty h/work, the actual completed operator obeys
+
+    Q_ledger=R_read* V* (Q_core tensor I_h) V R_read
+            =Q_readonly tensor I_h.                    (771)
+
+The chronological implementation still executes every copy and genuine inverse copy. This is a unitary equality, not dephasing, a compression to a selected outcome, or exact Boolean fidelity. It applies to the chosen ACTUAL readonly suffix. Replacing an older non-readonly compiled suffix by this constructor keeps its own full-kernel error;771 does not identify those two unrelated compilers.
+
+Consequently the actual cold operator, Born-body source and full q-block/metric norms are unchanged between the readonly programme and its ledger completion. K new blank pointers add 2K real CX stages and 2^K full work multiplicity, not 2^K input rank. For the source-Pauli/body operands use the same SOURCE/operator decoder and gain. If parameters depend on the genuine clock, evaluate them at the NEW clock and recompute the gain there. No equality of the two absolute heat values or free duration is claimed.
+
+### 2. A global suffix estimate, including independently varied inverse and phase rows
+
+Let Pi_z be the joint ledger projectors, L=sum_z(-1)^f(z)Pi_z, and S=T_hat J_rec after all actual copy/read prefixes. Z and T_hat exclude the ledger. Define the actual all-input coherent truth defect
+
+    Delta=||(Z-L)S||.
+
+The ideal fixed computational programme has Delta=0; an actual compiler to error epsilon_T has Delta<=2epsilon_T, retaining all work/complement columns. The actual programme need not be a point of an exact Boolean-correctness variety.
+
+For ANY real skew K commuting with the ledger, an independent forward suffix row has delta C=S* Z K S. Compare it with S* L K S, which is skew because [L,K]=0; their difference has norm <=Delta||K||. The independent inverse row -S* K Z S has the adjoint real-half identity and the same bound. An independently perturbed phase row has the same label-skew proof. At the matched Hermitian cold base, the full feedback cotangent is Hermitian, so the skew part has zero real pairing.
+
+With a_zeta=1-zeta>0 and actual input rank R, ||(a_zeta+zeta C^2)^(-1)C||<=1/a_zeta. For all raw suffix/inverse/phase stages whose addresses exclude the ledger,
+
+    |D_suffix J|<=2R zeta Delta/a_zeta
+                    sum_t||delta g_t||,
+    ||D_suffix B||_(gate-max*)
+          <=2R zeta N_suffix Delta/a_zeta.               (772)
+
+At the INTERNAL involution base the full two-grade heat first row is EXACTLY zero by606, including independent temporal rows. Both legs require their OWN ledger-readonly support or a proved generated-inverse relation; a forward record condition alone says nothing about an arbitrary independently freed inverse.
+
+Divide772 by the actual nonzero Gamma_h when using the normalized field-source theorem. N_suffix is the TRUE expanded total, not a logical count and not an old shorter clock. Choose fixed-layout precision using the owned effective compiler so that N_suffix Delta/Gamma_h is controlled. Correctness within a tolerance with slack does not restrict a tangent space: an inequality ||defect||<epsilon alone cannot replace this support law or the bound772.
+
+There is an equivalent all-input constraint description. On the unprepared domain define
+
+    R_z(T,J_rec)=J_rec* T* Pi_z T J_rec-J_rec*Pi_zJ_rec.
+    R_z=0 for every ledger-readonly T.                  (773)
+
+This is true at the actual approximate T_hat and for every SOURCE preparation. Its horizontal SOURCE/preparer/initial-embedding derivative is identically zero, because both terms vary together. Expanding the cold matrix as sum_z(-1)^f(z)e_z plus its actual truth defect gives a normal reaction pairing with D R_z and the772 remainder. It does not add a Lagrange term to the physical action or change the field/source coefficients. In particular the existing body equation remains735--738; the ledger law does not freeze the readout expectation or silently remove a genuine cut equation.
+
+### 3. Copy birth rows reduce to existing primitive-input rows
+
+The new COPY stages are not covered by a suffix estimate that excludes their target pointers. They have a separate exact reduction. Freeze the later return kernel D=sum_z|z><z| tensor D_z, allowing SOURCE-valued D_z and arbitrary role coherences. For V_b=CX(z_b,h_b), with h_b initially blank and no later action on it, an arbitrary real skew COPY generator H_b on this two-bit support gives
+
+    H_tilde=<0_h|V_b* H_b V_b|0_h>=kappa J_(z_b),
+    |kappa|<=||H_b||,
+    linked jet=[D,H_tilde].                             (774)
+
+This follows by contracting that ONE blank pointer after commuting D through V_b; no product assumption on the other roles is used. Independent copy/inverse jets are D H_tilde and -H_tilde D, adjoints at a Hermitian matched cold base, hence equal real halves. Thus these rows are exactly primitive-input variations BEFORE that input's subsequent causal uses. A late copy, SOURCE-touching fault, larger support or later h-touching macro needs a separate source.
+
+On the7ck homogeneous prepared-Choi reference a SIGN flag for feature a in packet i is selected with probability m a_i, where a_i=(1-w_i)/(n-1), and its conditional Bernstein coefficient is g_m,a/m. The two factors give a_i g_m,a, with sum_i a_i=1. A conservative bound after counting both independently varied COPY legs is 4 a_i|g_m,a|nu. Summing one copy per actual flag gives at most4||g_m||_1 nu, not a new n-fold source dilution or a new gain. Per-TAG copies instead retain their explicit w_t m/(n-1) weights and true count.
+
+Primitive-coin copies inherit the existing one-coin parity/threshold bounds721--723; selector inputs use their actual code-conditional law and equal IID legal/fallback corners, not independence of coherent roles. TAG uses the real template spread734. Count every new copy/inverse in those actual stage totals and retain all kernel/compiler debts. Quantum readers before a SIGN birth, source preparations, routers, correlated multi-bank normals, cut/rank/duration/scene and other selected valuations keep their own sources.
+
+In particular COPY faults require ALL-column error control before pointer/QUERY blanks are contracted. For each raw copy leg b let epsilon_pre,b bound its actual/reference prefix isometries, and epsilon_fut,b its actual/reference future return operators on that whole carrier. Use the SAME copy generator and put epsilon_b=epsilon_fut,b+2epsilon_pre,b. Orthogonal telescoping then bounds both cold value error by epsilon_b and copy-jet error by epsilon_b nu. The feedback cotangent W(C)=(a_zeta+zeta C*C)^(-1)C* has norm <=1/a_zeta and Lipschitz bound <=(1+zeta)epsilon_b/a_zeta^2<=2epsilon_b/a_zeta^2. Hence a safe implementation debt in E_copy is
+
+    E_copy,impl<=8R zeta sum_(raw COPY legs b)epsilon_b/a_zeta^2.
+
+Full macro-error sums certify these prefix/suffix bounds by unitary telescoping; an old compressed cold epsilon_K or full endpoint error alone does not certify an interior suffix. These are the actual new error inputs, alongside723's source/conditional and template-spread debts. No untested hidden pointer columns are assigned zero error.
+
+Together, a normalized local/role-graph bound has the form
+
+    E_born(738)+[E_prefix/route/TAG+E_copy
+                 +2R zeta N_suffix Delta/a_zeta]/Gamma_h. (775)
+
+Here E_copy is the sum of the primitive-input row bounds just described with actual implementation errors; the other terms are the existing723/734/741 on their NEW counts. This is a larger concrete query graph, not full stationarity under every conceivable native programme. For a7cn coarse reporting table recompute its real g_m, gain and complete-source comparison; the field projection alone does not establish source naturality.
+
+### 4. An exact native reverse counter shows the remaining role requirement
+
+Use the actual native Golden port A=G_q, C=CX(q,h), Z_q=SourceI^2 with arbitrary free Spin. The genuine inverse words give U0=A* C* Z_q C A, a ten-stage full-column native involution. From the cut q=h=0 its scalar cold operator is cI_R with c=p^3; its forward record effects are pI_R,p^2I_R. In the real(q,h) plane put H_pair=|11><00|-|00><11|, identity on Spin. Insert exp(t H_pair) AFTER the phase, before the independent reverse C*/A*. The forward record law is unchanged, but
+
+    delta c=<psi|H_pair Z_q|psi>=2 sqrt(p)p,
+    D J=-4R zeta p^3 sqrt(p)p/(a_zeta+zeta p^6)!=0.      (776)
+
+The full INTERNAL heat first row is zero606 at this native involution, so it cannot cancel776. The concrete executed fixture has R=4 genuine free Spin inputs and zeta=1/16. H_pair touches the ledger and is outside the per-leg support guard of772. It is an ambient comparison at a literal native base, not an assertion of an arbitrary new physical H primitive; literal native stencils retain751's true compilation, clock, spacing and gain premises.
+
+Even a physical meter record created BEFORE this reverse perturbation can remain readable when the later perturbation excludes that meter. Its observed forward law alone is still insufficient to constrain an unmeasured reverse work coordinate. This is a precise exception to promoting forward record preservation into complete native stationarity. It does not say that every physically required task admits this inverse change, or that776 is the actual GR residual of7ck.
+
+### 5. Physical scope and verification
+
+The coherent constructor771 removes the old need to alter the core by weak record meters merely to state a whole-suffix source law. The actual compiled kernel is preserved; SOURCE remains free; globally supported suffix/phase rows have772 and copy births have774. Extra work dimensions, copies/inverses, clock and the full absolute heat remain paid. Reading a marked ledger in a future experiment uses7av417--419 and pays for that experiment; the main echo may uncompute an UNMEASURED copy. We do not call it an already fixed, permanently measured classical history.
+
+The physical consuming premise remains an independently specified record/reader/phase/uncompute representation and its admitted variation law. Original preserved BookI LEM0.5.7a permits computable bijective recoding preserving logical equivalence and Delta; it does not select a fixed physical pointer frame. The concrete interpretation still supplies its native step/readout maps. One faithful regime need not cover all native contexts or prove microscopic uniqueness, but logical correctness alone is not proof of this particular physical source graph. No new action/selector or Einstein condition is used to declare it compulsory.
+
+The changed exact check executes two new small constructions through the unchanged native owner. First: actual readonly XOR+G suffix, an imperfect truth base with nonzero defect, its uncomputed ledger completion on ALL128 columns, rank16 and true12/16 stages. The receipt's defect p is the PROJECTOR norm ||(Theta-F)S||; the SIGN defect Delta=||(Z-L)S|| used in772 is 2p, since Z=I-2Theta and L=I-2F. It verifies full operator/cold equality and all-input record law without assuming exact Boolean fidelity. Second: the ten-stage16-column native reverse base, its actual forward record effects, scalar cold p^3 I4, and the ambient2-plane first row776. It computes no gravity root, rank/SVD, heat, large GR word, full128 CAR instrument or Lean replay.
+
+Source inputs are7ba443--447,7cj721--723,7ck735--741,7cm--7cn and the exact native G/CX/SourceI definitions. Native owner17833bytes / SHA256222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c. Incoming primary blob f7f5159ff4ac6bd28a7f11042ac3518e7dbbdf1f, SHA256c7ab998ed6e321289de9f40a5bd5461d8865c02dd9e8fc36ef84ef286d825932. Original recoding source: commit4f99c2c46e646d21ae5b9b0491da17bd1b094da0,99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/books/BOOK_I_ARCHITECTURE_GOLDEN_PASS30.txt:165--174. No old source/receipt, task/result/claim/acceptance edge, Ready, retirement or merge is changed. GR_closed=false; positive_gr/raw216 remain open.
+
+Executed with CPython3.9.6/SymPy1.14.0. Save the Python block outside tracked paths and run from the repository root. Code5684/SHA25651ffd4e48c6bbf2f1fa6b50c1854672d1f9588a7c60f0678c637eda82bed6943; observed JSON1016/SHA256bbf424862782f4d7b818182c6950de51935630d27c95429de739dae36e33c410.
+
+```python
+"""Changed live-ledger/independent-reverse controls; no GR/heat/rank replay."""
+from pathlib import Path
+import hashlib
+import importlib.util
+import json
+import sys
+
+import sympy as sp
+from sympy.polys.matrices import DomainMatrix
+
+owner = Path.cwd()/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+owner_sha = hashlib.sha256(owner.read_bytes()).hexdigest()
+if owner_sha != '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c':
+    raise RuntimeError('Changed native owner')
+spec = importlib.util.spec_from_file_location('query_ledger_native_20261027', owner)
+ne = importlib.util.module_from_spec(spec);sys.modules[spec.name] = ne
+spec.loader.exec_module(ne)
+
+
+def require(value, label):
+    if not value:
+        raise RuntimeError(label)
+
+
+def dm(M):
+    return DomainMatrix.from_Matrix(sp.Matrix(M)).convert_to(ne.GOLDEN_FIELD)
+
+
+def eq(A, B):
+    return dm(A) == dm(B)
+
+
+def execute(n, port, spin, blanks, word):
+    return ne.Execution(n, blanks, (), tuple(word), ne.G_CX_SOURCE_I, port, spin)
+
+
+def matrix(ex):
+    return sp.Matrix(ne.word_matrix(ex, max_qubits=7, max_expanded_stages=100))
+
+
+def inverse(ex):
+    return ne.inverse_word(ex, max_qubits=7, max_expanded_stages=100)
+
+
+def bit_effect(n, wire):
+    return sp.diag(*[(row >> (n-1-wire)) & 1 for row in range(2**n)])
+
+
+# x,y are unprepared SOURCE inputs; a=output/physical port, h0,h1=live ledger.
+# Spin is genuinely free, restored on ALL completed columns, not a blank.
+SI = ne.Gate('SourceI', (2, 5, 6))
+truth = (ne.Gate('CX', (0, 2)), ne.Gate('CX', (1, 2)))
+actual = truth+(ne.Gate('G', (2,)),)
+copies = (ne.Gate('CX', (0, 3)), ne.Gate('CX', (1, 4)))
+blanks = (2, 3, 4)
+exT = execute(7, 2, (5, 6), blanks, actual)
+exV = execute(7, 2, (5, 6), blanks, copies)
+base_word = actual+(SI, SI)+inverse(exT)
+ledger_word = copies+base_word+inverse(exV)
+exQ = execute(7, 2, (5, 6), blanks, base_word)
+exL = execute(7, 2, (5, 6), blanks, ledger_word)
+T, V, Q, L = (matrix(ex) for ex in (exT, exV, exQ, exL))
+require(eq(Q, L), 'ACTUAL full native operator unchanged by ledger')
+require(eq(Q.T, Q) and eq(Q*Q, sp.eye(128)), 'actual phase echo remains involution')
+inj = sp.Matrix(ne.input_isometry(exL, max_qubits=7))
+require(inj.shape == (128, 16), 'only x,y,Spin free; ledger blanks add no rank')
+cold = inj.T*Q*inj
+require(eq(inj.T*L*inj, cold), 'same complete cold kernel')
+require(eq(cold.T*cold, ne.P**6*sp.eye(16)), 'nontrivial unsharp actual return')
+for hwire in (3, 4):
+    Ph = bit_effect(7, hwire)
+    require(eq(T.T*Ph*T, Ph), 'actual all-input ledger law')
+
+# Actual T contains a G output error; no exact Boolean-fidelity assumption.
+Theta = bit_effect(7, 2)
+F = sp.diag(*[((row >> 3) & 1) ^ ((row >> 2) & 1) for row in range(128)])
+S = T*V*inj
+D = (Theta-F)*S
+require(eq(D.T*D, ne.P**2*sp.eye(16)), 'actual truth defect is nonzero')
+require(len(base_word) == 12 and len(ledger_word) == 16, 'actual extra4CX paid')
+
+# Native base with q=port0, h=ordinary3, arbitrary free Spin1,2.
+SI2 = ne.Gate('SourceI', (0, 1, 2))
+Aword = (ne.Gate('G', (0,)),)
+Cword = (ne.Gate('CX', (0, 3)),)
+exA = execute(4, 0, (1, 2), (0, 3), Aword)
+exC = execute(4, 0, (1, 2), (0, 3), Cword)
+reverse_word = Aword+Cword+(SI2, SI2)+inverse(exC)+inverse(exA)
+exU = execute(4, 0, (1, 2), (0, 3), reverse_word)
+U, A, C = matrix(exU), matrix(exA), matrix(exC)
+Z = matrix(execute(4, 0, (1, 2), (0, 3), (SI2, SI2)))
+i = sp.Matrix(ne.input_isometry(exU, max_qubits=4))
+psi = C*A*i
+p, a = ne.P, ne.A
+require(eq(U.T, U) and eq(U*U, sp.eye(16)), 'reverse counter at native involution')
+require(eq(i.T*U*i, p**3*sp.eye(4)), 'native scalar cold c=p^3')
+Ph = bit_effect(4, 3)
+require(eq(psi.T*Ph*psi, p**2*sp.eye(4)), 'forward retained record one effect')
+require(eq(psi.T*(sp.eye(16)-Ph)*psi, p*sp.eye(4)), 'forward record zero effect')
+H = sp.zeros(16)
+for spin in range(4):
+    zero, one = 2*spin, 8+2*spin+1
+    H[one, zero], H[zero, one] = 1, -1
+require(eq(H.T, -H), 'reverse comparison generator is skew')
+dc = psi.T*H*Z*psi
+require(eq(dc, 2*a*p*sp.eye(4)), 'independent reverse cold first row')
+require(not eq(H*Ph, Ph*H), 'reverse fault is outside per-leg readonly support')
+zeta = sp.Rational(1, 16);R = 4;c = p**3
+dj = sp.simplify(-4*R*zeta*c*a*p/(1-zeta+zeta*c*c))
+require(ne.GOLDEN_FIELD.from_sympy(dj) != ne.GOLDEN_FIELD.zero, 'genuine nonzero feedback source')
+require(len(reverse_word) == 10, 'actual expanded inverse stage count')
+
+out = {
+    'status': 'PASS',
+    'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    'native_owner_sha256': owner_sha,
+    'readonly_ledger': {'all_columns': 128, 'free_input_rank': 16,
+                        'base_expanded_stages': len(base_word),
+                        'ledger_expanded_stages': len(ledger_word),
+                        'extra_blank_bits': 2, 'extra_CX': 4,
+                        'actual_truth_defect_norm': 'p (not zero)',
+                        'full_operator_and_cold_unchanged': True},
+    'independent_reverse': {'all_columns': 16, 'free_Spin_rank': 4,
+                            'expanded_stages': len(reverse_word),
+                            'native_base_cold': 'p^3 I4',
+                            'forward_record_effects': ['p I4', 'p^2 I4'],
+                            'dc': '2*a*p I4', 'zeta': '1/16',
+                            'feedback_source': '-4*R*zeta*p^3*a*p/(1-zeta+zeta*p^6)',
+                            'per_leg_readonly_guard_violated': True},
+    'scope': 'new exact small words and ambient reverse comparison only; no emitted arbitrary-H native word',
+    'heat_executed': False,
+    'physical_X_N_or_GR_closed': False,
+}
+print(json.dumps(out, indent=2)+'\n', end='')
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "51ffd4e48c6bbf2f1fa6b50c1854672d1f9588a7c60f0678c637eda82bed6943",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "readonly_ledger": {
+    "all_columns": 128,
+    "free_input_rank": 16,
+    "base_expanded_stages": 12,
+    "ledger_expanded_stages": 16,
+    "extra_blank_bits": 2,
+    "extra_CX": 4,
+    "actual_truth_defect_norm": "p (not zero)",
+    "full_operator_and_cold_unchanged": true
+  },
+  "independent_reverse": {
+    "all_columns": 16,
+    "free_Spin_rank": 4,
+    "expanded_stages": 10,
+    "native_base_cold": "p^3 I4",
+    "forward_record_effects": [
+      "p I4",
+      "p^2 I4"
+    ],
+    "dc": "2*a*p I4",
+    "zeta": "1/16",
+    "feedback_source": "-4*R*zeta*p^3*a*p/(1-zeta+zeta*p^6)",
+    "per_leg_readonly_guard_violated": true
+  },
+  "scope": "new exact small words and ambient reverse comparison only; no emitted arbitrary-H native word",
+  "heat_executed": false,
+  "physical_X_N_or_GR_closed": false
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

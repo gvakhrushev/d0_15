@@ -15833,3 +15833,115 @@ AST/JSON, unchanged native owner and EVERY incoming primary/brief byte.
 Only the two owned paths change; whitespace checks pass. This validation
 note changes no scientific input. No original root/heat/native largeword,
 Lean replay, CI acceptance or physical GR closure is asserted.
+
+
+### 27 October - consume the new SOURCE in a global query-role graph
+
+SAME #334 / constitutive/native-programme-v1; native realization and
+composition, input1108befd. Previous checkpoint made verified progress by
+constructing760--770. The next parent application is the complete QUERY
+source and its independent inverse rows, without freezing SOURCE fields.
+Reuse7ba443--447,7cj722--723,7ck735--741 and the actual readonly compiler.
+Construct a coherent live ledger of already born Boolean inputs outside
+all suffix supports, with actual inverse copies and full clock/work paid.
+Prove when the ACTUAL compiled cold kernel/metric survives this addition,
+then bound global suffix/phase and separately supported reverse variations.
+Keep quantum readers, birth/copy stages, cut/clock/rank and actual source
+normalization explicit. A forward correctness law is not silently a full
+inverse/work-return law or physical X_N. The decisive checks are one small
+all-column native ledger and one independent-reverse source counter. Only
+the same two owned paths may change; no new task, selector, action, registry
+acceptance, physical admission or GR promotion. Private helpers are readonly.
+
+27 October result, primary7co771--776. Constructed an ACTUAL readonly
+out-of-place query suffix with live copies of born primitive inputs.
+Copies are made at causal birth, moved only across later readonly macro
+endpoints, and their genuine inverse copies remain in the clock. The full
+ACTUAL QUERY equals its uncopied readonly programme tensor ledger identity
+on ALL columns, even for an imperfect compiled Boolean suffix. This is not
+an identification with an older unrelated non-readonly compiler.
+
+Fresh blank pointers increase actual work and2K CX stages, not input rank.
+The cold operator, SOURCE covector and query-block metric norm are preserved;
+clock-dependent parameters/gain are reevaluated on the new actual clock.
+Absolute heat remains present. The INTERNAL involution base consumes606's
+complete first-heat cancellation, not an unpaid subtraction.
+
+All globally supported suffix/inverse/phase comparisons whose OWN raw
+addresses exclude the ledger obey772: normalized debt is
+2R*zeta*N_suffix*Delta/(a_zeta*Gamma_h). Both independently varied legs need
+their own support/generated-inverse law; a forward record constraint alone
+is insufficient. The record-effect reaction773 is on the WHOLE unprepared
+SOURCE input and does not freeze a field expectation or add a field force.
+
+New COPY rows reduce exactly to primitive-input variations774. PreparedTAG
+SIGN weights are a_i=(1-w_i)/(n-1), sum_i a_i=1, not uniform/gain dilution.
+Coin/selector/TAG rows use existing actual causal conditional/parity/spread
+bounds. Implementation debt is explicit8R*zeta*sum_b epsilon_b/a_zeta^2,
+with epsilon_b=epsilon_future,b+2epsilon_prefix,b on ALL pointer/query
+columns at the actual copy frame. Old cold epsilon_K or a full endpoint
+error alone does not bound an interior copy fault. Quantum readers, source
+birth/correlation, cut/clock/rank and remaining physical normals are retained.
+
+One new native exact checker passed CPython3.9.6/SymPy1.14.0. It executes
+actual XOR+G suffixes with/without coherent ledger on all128 columns:
+true12/16 stages, two extra blanks and4CX, same cold/rank16 and fulloperator.
+Actual Boolean fidelity is NOT assumed: the measured projector truth defect
+is p, corresponding to SIGNDelta=2p in772. The same checker executes a new
+ten-stage16-column native reverse base with freeSpin rank4, c=p^3I and
+forward recordeffects pI,p^2I. A separate ambient reverse2-plane comparison
+gives dc=2sqrt(p)pI and a nonzero complete feedback row; baseline heatrow0
+uses the owned analytic606, no heat computation. The perturbation touches
+the ledger and is outside the per-leg guard. No arbitrary-H native word,
+GR/root/rank/SVD, oldheat/full128CAR/Lean replay was emitted or executed.
+
+Proof14775 / SHA256
+29448d0a9b85b18bd7d867abb3b243e782d374b9c4511226aff7064060b56250;
+section21794 / SHA256
+5046bcc0c8d1fa4a6151a067dd044940547b15ce284d47f11325139d61782abb.
+Code5684 / SHA256
+51ffd4e48c6bbf2f1fa6b50c1854672d1f9588a7c60f0678c637eda82bed6943;
+observedreceipt1016 / SHA256
+bbf424862782f4d7b818182c6950de51935630d27c95429de739dae36e33c410.
+Both executed source/receipt blocks are embedded exactly. Nativeowner stays
+17833bytes/222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+No expected evidence or old source was rewritten.
+
+Parent substitution: complete QUERY control now has an explicit actual
+kernel-preserving constructor and a global suffix/independent-leg source
+bound, with new copy sources and true norms/prices retained. The reverse
+counter shows why forward record preservation alone cannot supply full
+native equations. Original physical reader/role/uncompute admission remains
+a distinct application; the inherited verification kernel permits finite
+recoding and does not choose its physical pointer frame. This is not a
+universal microscopic-uniqueness demand or a veto on one faithful regime.
+Full selected-source/physical refinement, positive_gr and raw216 stay open.
+GR_closed=false; no new action/selector/task/result/claim/acceptance edge,
+Ready, retirement or merge. The assembly template is supporting only.
+
+Incoming1108befd retained completely: primary2479559 /
+c7ab998ed6e321289de9f40a5bd5461d8865c02dd9e8fc36ef84ef286d825932;
+brief1030522 /
+d1203d7421e9675fad03cc7f788efd898ca36aecfe709398a75cf42ddbbca325.
+Removing7co restores every primary byte; the incoming brief is an exact
+prefix. Only the same two owned research/brief write paths change.
+Final complete source review and affected integration follow.
+
+
+Final FULL SOURCE-ONLY ACCEPT by native_source_application,
+retained_metric_map and stationary_root_transfer. Each read the entire
+final771--776 proof, complete executed Python and observed JSON. All
+verified final proof/section/manifest pins, two exact fences and sourceSHA.
+The full-operator COPY error clarification and projector p versus sign2p
+were explicitly reviewed. No reviewer ran mathematics or edited the repo;
+these reviews are not independent assembly/physical acceptance.
+
+Affected final guards PASS: validate_work.py, validate_agent_protocol.py,
+gr_assembly.py check, validate_repo.py with explicit GIT_WORK_TREE. Counts
+remain54 active/98 results/5 discharged/22 obligations, scientific_promotion
+false;889 claims/31 assumptions/58 aliases/183 formal_support/918 lean_closure,
+zero warnings. Final pins/fences/AST/JSON, unchanged native owner and complete
+incoming primary/brief preservation PASS; only the two owned paths change,
+whitespace clean. This review/validation note changes no scientific input.
+No original certificate, heat/full128/Lean replay, CI acceptance or physical
+GR promotion is asserted. Durable same-PR publication follows.
