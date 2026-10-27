@@ -15600,3 +15600,97 @@ fences, AST/JSON, unchanged native owner and the two owned changed paths.
 Whitespace validation passes. This validation note changes no scientific
 input. Normal publication and immutable remote blob verification follow in
 the same existing Draft; no old mathematical or Lean run is repeated.
+
+
+### 27 October — literal causal domain, marked comparisons and the true clock price
+
+SAME #334 / constitutive/native-programme-v1; native realization and
+composition, incoming 799c987cc1185c66e0df825615edfac13e95c5ec. Consume
+7t's actual grammar, 7ck's one SOURCE/metric body and 7cl742--751. The
+named parent implication is whether the matrix lift already lies in a
+literal fixed-palette execution domain. No new geometry/actuator search.
+
+Primary7cm752--759 constructs X_schema as the generated-prefix/cut graph
+over the EXISTING bounded native word domain. A structural column proof
+gives primitive separation >=p and full INTERNAL raw-D01 separation
+>=p/sqrt22, uniformly in matched N. Hence its continuous fixed-word tangent
+is zero. The nonzero ambient raw-G angle also violates the ORIGINAL
+fixed-point constraints by alpha*a*(2p+1)*(1,-1). Neither statement excludes
+incoming state/cut/scene directions or a proved co-transported quotient.
+They do exclude inferring a physical raw tangent from parser membership.
+
+At fixed beta with the true two-grade501/502 counting heat, the COMPLETE
+B=H+J is >=log(425*N*dimK)/beta-2. Endpoint approximation through unbounded
+real clocks therefore has no finite continuous absolute-price limit in
+this interface. Each finite absolute price remains recorded. This is not
+a universal obstruction to observational/source completion, a varying
+beta/other-heat result, or permission for a refinement counterterm.
+
+X_st is explicitly constructed as a finite graph of actual common-inventory
+code endpoints with full prices, true spacing/gain and retained marked
+SOURCE tests. Original Book02 permits its finite-difference calculus.
+Source error759 consumes751 without differentiating a compiler lookup;
+738's consistency and actual field-lift/norm errors remain separate.
+The same initial task/interface and all genuine apparatus normals remain.
+
+The ORIGINAL BookV21.3/21.4 supplies an observational completion criterion:
+ALL permitted finite tests must stabilize with actual compatible projections.
+It is an available route, not a tower already supplied by endpoint convergence.
+Book01's six-obligation IFF is retained as a sufficiency criterion for
+observable sections. The missing positive application is a physically
+admitted marked finite-comparison or source-jet family with complete
+valuation, independent equations and its actual cross-level maps. No
+Einstein condition enters domain membership, and no new physical law is
+labelled derived. The inherited7bu/7bw stationary-geometry control is cited
+only as a consistency test, not another result/owner.
+
+One new small exact calculation passed CPython3.9.6/SymPy1.14.0: five full
+16-column primitive supports and ten entry witnesses; Golden angle/unitarity
+rows; two four-CX full identity bodies and two corresponding five-CX full
+marked-reader programmes. The latter restore the body but their actual
+record effects are diag(0,1) versus zero on the SAME input interface.
+Thus fixed marked SOURCE readers cannot be deleted in an endpoint-only
+comparison. No gravity/root/rank/SVD, heat, large field word, full128/CAR
+or Lean replay was run. The first palette-only PASS remains preserved;
+final code and observed JSON are embedded byte-exact in7cm.
+
+Proof16441 / SHA256
+c2609036a0e72fcf3b52b01681a4569322ed08b25984f66225334549ffa9d0c6;
+section27379 / SHA256
+bf2449a9fc726daad86cbbf9d78a130889dbf19b38a08f2ae1c0fbe4221f0798.
+Code6948 / SHA256
+7934d56a629c9fd132fab81c15054280001667c4954de19041375f6e257252c5;
+receipt3519 / SHA256
+4f2657c059f03eec42bb62b0d1d535d5245e83a73631b075b10e4c6bdb1aa7e5.
+Native owner remains17833bytes /
+222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+
+Incoming primary2415098 / SHA256
+5a5c3a768f77f8fd10d3519ab8ca2fa63d1c1f3704fce80517e16d8b65806060;
+brief1016705 / SHA256
+a3f8ab10b8d273ec2e9091876151ebd5f53b571371054d15e4ea8c4ea927bde0.
+Removing7cm restores EVERY incoming primary byte; the whole incoming brief
+is an exact prefix. Existing results and parallel intakes are retained.
+
+This is a scoped domain/price route change and a concrete finite comparison
+object, not physical X_N selection, a completed source/refinement tower or
+GR closure. GR_closed=false; positive_gr/raw216 remain open. No task/result/
+claim/acceptance edge, lifecycle Ready, retirement or merge is added. The
+assembly template is consumed as supporting work with retained hypotheses.
+Full source review and affected final guards follow.
+
+Full SOURCE-ONLY ACCEPT by native_source_application, retained_metric_map
+and stationary_root_transfer: all read the full unified proof and both full
+code/receipt surfaces. All verified the final pins, sole calibration-wording
+correction against preserved reviewed bytes, proof prefix and both exact
+fences. Reviews ran no calculations and made no repo edits. These are source
+reviews, not independent assembly acceptance or physical admission.
+
+Affected final guards PASS: validate_work.py, validate_agent_protocol.py,
+gr_assembly.py check (54 active/98 results/5 discharged/22 obligations,
+scientific_promotion=false), validate_repo.py (889 claims/31 assumptions/
+58 aliases/183 formal_support/918 lean_closure; zero warnings). They used the
+explicit GIT_WORK_TREE of this owned checkout. Final preservation, frozen
+source/fences, AST/JSON, unchanged owner and diff checks also pass. Only the
+two owned research/brief paths change; no registered evidence is rewritten.
+No old mathematical/Lean replay or new CI/physical acceptance is asserted.
