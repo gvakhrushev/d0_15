@@ -11343,3 +11343,19 @@ hashes are unchanged.
 source digest `3e1413743001a2af50d6dfa2c6f3643be43f8854bcefcc13c97d91053657b9cf`.
 The older `hodge_mass_trace_sum` theorem-name locator remains unresolved; it
 is not made valid by the new Gram theorem.
+
+On clean commit `4385d4244a85d8ae0cd1551e9c4e5f5d863a4562`, the elaborated
+Gram, actual weighted fiber and chain declarations were recorded in
+[`archive_graded_cochain_gram_declarations_2026-10-27_4385d424.json`](sources/d0_proof_architecture_formalization_2026-10-24/archive_graded_cochain_gram_declarations_2026-10-27_4385d424.json)
+(SHA-256 `74c78231f9a35c61088efe4884e265988935fd4e3b4562711417be671016a65f`).
+The current locator replay found 2,581 atoms in declared modules, four
+unresolved atoms, and 178 rows without theorem locators; this is not C0
+coverage. The clean-snapshot cold-start replay recovered all 169 required
+references in 24/24 cases and passed its impact control; its compact receipt
+is [`proof_architecture_cold_start_summary_2026-10-27_gram_4385d424.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_gram_4385d424.json)
+(SHA-256 `d35b5c9191194c0c8f95ef0f848702519788f57f304eaa8a1e1dbfaf612d5a2f`).
+The matching search comparison is
+[`proof_architecture_search_process_comparison_2026-10-27_gram_4385d424.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_gram_4385d424.json)
+(SHA-256 `cd41368b9f0b9ed7d6bcbac2e32546e7321a99e66b8dbf25957271c853cbc587`).
+These are retrieval and declaration evidence, not physical selection or
+independent acceptance of the full C0 corpus.
