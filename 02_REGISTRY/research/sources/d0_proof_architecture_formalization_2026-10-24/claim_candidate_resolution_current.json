@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "06892e82b35d32aa4905c8cd1f52415afbe43214",
+  "snapshot_commit": "4302d6a071c338fc53ff07d118cefde8fb6e802e",
   "worktree_dirty": false,
-  "claim_registry_sha256": "965a5b3d53523d9516551484369462d2945c6a80d0507d89369ea8a735d4701f",
-  "lean_source_digest": "40b8842e1a891f8f8266f979db48f5e7dff205e7a69b2340f1090f6a7d0b9072",
-  "collector_sha256": "fe534f7af73ba4fc043a58e9efbe3eefbd84a6e34d322780bfb5f8ac01e9d98f",
+  "claim_registry_sha256": "d79bb78fac3051e512a1307114c0d2d56c0995965cb8e721a8ed11a20f87256f",
+  "lean_source_digest": "60f36c4cb81cc193e811936e65541e2fb82d9e4e892fa47b6ae56a08695f474f",
+  "collector_sha256": "757c0fc495a30dd706b25aa17cf8123661fb24a81d9b6937b6b55722d320ed00",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": true,
@@ -23272,12 +23272,24 @@
       },
       {
         "claim_id": "D0-ARCHIVE-GRADED-REFINEMENT-CHAIN-MAP-001",
-        "module_locator": "D0.Geometry.ArchiveGradedRefinementChainMap",
+        "module_locator": "D0.Geometry.ArchiveGradedRefinementChainMap;D0.Geometry.ArchiveGradedCochainRefinement",
         "theorem_atom": "archive_graded_refinement_chain_map_owner",
         "candidate_names": [
           "D0.Geometry.ArchiveGradedRefinementChainMap.archive_graded_refinement_chain_map_owner",
+          "D0.Geometry.ArchiveGradedCochainRefinement.archive_graded_refinement_chain_map_owner",
           "D0.Geometry.archive_graded_refinement_chain_map_owner",
           "D0.archive_graded_refinement_chain_map_owner"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-GRADED-REFINEMENT-CHAIN-MAP-001",
+        "module_locator": "D0.Geometry.ArchiveGradedRefinementChainMap;D0.Geometry.ArchiveGradedCochainRefinement",
+        "theorem_atom": "archive_graded_cochain_chain",
+        "candidate_names": [
+          "D0.Geometry.ArchiveGradedRefinementChainMap.archive_graded_cochain_chain",
+          "D0.Geometry.ArchiveGradedCochainRefinement.archive_graded_cochain_chain",
+          "D0.Geometry.archive_graded_cochain_chain",
+          "D0.archive_graded_cochain_chain"
         ]
       },
       {
@@ -63816,6 +63828,11 @@
       "source_path": null
     },
     {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainRefinement.archive_graded_refinement_chain_map_owner",
+      "source_path": null
+    },
+    {
       "exists": true,
       "module": "D0.Geometry.ArchiveGradedRefinementChainMap",
       "name": "D0.Geometry.archive_graded_refinement_chain_map_owner",
@@ -63824,6 +63841,27 @@
     {
       "exists": false,
       "name": "D0.archive_graded_refinement_chain_map_owner",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedRefinementChainMap.archive_graded_cochain_chain",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainRefinement.archive_graded_cochain_chain",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.ArchiveGradedCochainRefinement",
+      "name": "D0.Geometry.archive_graded_cochain_chain",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedCochainRefinement.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_graded_cochain_chain",
       "source_path": null
     },
     {
@@ -71670,7 +71708,7 @@
     "reason": "The request and declaration resolutions are retained; full mappings are reproducible with the inventory tool.",
     "crosswalk_summary": {
       "no_theorem_locator": 178,
-      "resolved_in_declared_module": 2579,
+      "resolved_in_declared_module": 2580,
       "unresolved": 4
     },
     "unresolved_mappings": [
@@ -71713,8 +71751,8 @@
         "matches": []
       }
     ],
-    "full_output_sha256": "c20e3035c291b7e599d0499d967353253d42d63a5f73285c44c6192d61c6b5a4",
-    "full_output_bytes": 4410649,
+    "full_output_sha256": "7cf743de393af0dd5114fa91fb52c00ed08dbc4b6b567f83dfa32f7991696b09",
+    "full_output_bytes": 4413065,
     "replay_command": "python3 tools/lean_declaration_inventory.py --all-claims --resolution-only"
   }
 }

@@ -11287,3 +11287,23 @@ prove full Gram identities, a Hodge/Laplacian intertwiner, continuum
 convergence, physical readout/refinement, native source selection or GR.
 The public `D0.All` integration passed 4,745 jobs on Lean source digest
 `60f36c4cb81cc193e811936e65541e2fb82d9e4e892fa47b6ae56a08695f474f`.
+
+The compiled declaration receipt on clean commit
+`4302d6a071c338fc53ff07d118cefde8fb6e802e` is
+[`archive_graded_cochain_declarations_2026-10-27_4302d6a0.json`](sources/d0_proof_architecture_formalization_2026-10-24/archive_graded_cochain_declarations_2026-10-27_4302d6a0.json),
+SHA-256 `f0d2be47564e1dafdabe17737f32b3a9db35e635eeab2f30f32b26071bda118e`.
+It records the elaborated type, source location, proof dependencies, import root
+and axiom closure for the graded theorem, scalar adapter and mask lemma. The
+current claim-resolution replay finds 2,580 atoms in their declared modules,
+four unresolved and 178 claim rows without a theorem locator. These are
+locator results, not semantic coverage or C0 acceptance.
+
+The clean-snapshot cold-start replay found all required references in 24/24
+cases (169 references) and passed the exact-source impact control; the compact
+receipt is [`proof_architecture_cold_start_summary_2026-10-27_graded_4302d6a0.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_graded_4302d6a0.json),
+SHA-256 `0b31269f8b7ae6e48e33647d50d58f1328ed3cb6386d09081f7a2245bb83f0b3`.
+The same-snapshot search comparison is
+[`proof_architecture_search_process_comparison_2026-10-27_graded_4302d6a0.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_graded_4302d6a0.json),
+SHA-256 `2e2f704f81cd8b7903d95e9246309eecb854757dd25a2b48d47f471db8a2a9c3`;
+it found the explicitly scoped source in 7/7 current and 0/7 legacy searches.
+These retrieval results do not independently accept a scientific application.

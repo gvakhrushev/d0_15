@@ -2676,7 +2676,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-27_native_cochain_transport.json"
+            / "proof_architecture_cold_start_summary_2026-10-27_graded_4302d6a0.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -2838,9 +2838,15 @@ class ProofArchitectureTests(unittest.TestCase):
             replay["search_engine_sha256"],
             hashlib.sha256((proof.ROOT / "tools/proof_architecture.py").read_bytes()).hexdigest(),
         )
+        # The receipt records the test fixture at its clean source commit.
+        # The current test may point at a newer receipt, so comparing to its
+        # working-tree bytes would create a self-referential digest.
         self.assertEqual(
             replay["test_sha256"],
-            hashlib.sha256((proof.ROOT / "tools/test_proof_architecture.py").read_bytes()).hexdigest(),
+            hashlib.sha256(subprocess.check_output([
+                "git", "show",
+                f"{summary['snapshot_commit']}:tools/test_proof_architecture.py",
+            ], cwd=proof.ROOT)).hexdigest(),
         )
 
     def test_historical_final_v4_cold_start_receipt_is_preserved(self) -> None:
@@ -3123,7 +3129,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-27_native_cochain_5873fad1.json"
+            / "proof_architecture_search_process_comparison_2026-10-27_graded_4302d6a0.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
