@@ -2171,7 +2171,12 @@ class ProofArchitectureTests(unittest.TestCase):
             row for row in cold_start.CASES
             if row["id"] == "positive-nonvacuum-recovery"
         )
-        self.assertEqual(case["queries"][18], application["name"] + " cubic coefficient norm nonzero initial matter rate")
+        self.assertEqual(
+            case["queries"][18],
+            application["name"]
+            + " cubicMatterCoefficientNorm cubicMatterMidpointSample "
+            + "finiteMatterForwardGradient transverseFivePointLaplacian",
+        )
         source = next(
             row for row in case["required_sources"]
             if row["path"] == "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
@@ -2570,11 +2575,25 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(cubic_retrieval["candidate_rank"], 2)
         self.assertEqual(
             cubic_retrieval["commit"],
-            "081e85f67ca3c8c79f50607bc500c2148154fd6c",
+            "119c31ba6df9f02a4b8b491e7658de2e7432a797",
         )
         self.assertEqual(
             cubic_retrieval["blob"],
-            "a410f6f18a749fca40eb4ebcf186fc3d6024352e",
+            "9cfb08a3cbe8ef09d5f1311b6b96ea27378ab611",
+        )
+        lean_retrieval = positive_nonvacuum["cubic_lean_source_retrieval"]
+        self.assertTrue(lean_retrieval["found"])
+        self.assertEqual(lean_retrieval["status"], "found_direct_content")
+        self.assertEqual(lean_retrieval["source_origin"], "pinned_snapshot")
+        self.assertEqual(lean_retrieval["query_index"], 18)
+        self.assertEqual(lean_retrieval["candidate_rank"], 4)
+        self.assertEqual(
+            lean_retrieval["commit"],
+            "7d52c4193cc4b1ebfed1142d327446a6128465b7",
+        )
+        self.assertEqual(
+            lean_retrieval["blob"],
+            "df316992b289e0a9ada03adb2852227e8da91ed1",
         )
         self.assertEqual(
             positive_nonvacuum["required_source_count"],
