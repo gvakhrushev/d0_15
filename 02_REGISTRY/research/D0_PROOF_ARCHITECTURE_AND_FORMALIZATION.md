@@ -10975,3 +10975,39 @@ full declaration inventory and resolution-only run agree on the complete
 claim coverage or a scientific status change. `ClaimMap` passes its two-job
 narrow build, and the final `D0.All` helper recognizes this exact Lean source
 tree as already passing the 4,741-job final build.
+
+## Cold-start and same-question retrieval replay after locator reconciliation (27 October 2026)
+
+At the clean source snapshot
+`2014d322b2849523ff422bb4e292b2307cec6091`, the expanded cold-start suite
+found every required source in **24/24** cases, covering 169 pinned or direct
+source references with an 18-candidate result window. Its exact-source-change
+versus unrelated-prose regression passed. The pinned Eq. (24) owner source was
+found directly at candidate rank 2 for the query requiring its §7.2 midpoint
+slack statement. These are retrieval checks; the suite keeps semantic scope
+review manual.
+
+The compact result is
+[`proof_architecture_cold_start_summary_2026-10-27_locator_reconciliation_2014d322.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_locator_reconciliation_2014d322.json),
+SHA-256 `d5dc1343b00a99be85f7e561efb8921a2181ac3773d95db1bd792c2ce9860671`.
+It pins the 9,838,057-byte full replay by SHA-256
+`11e434b52d9f0fadbcc15463d1fcd7e2e15fcf10e0800333b203f272d72b38d7`, as well
+as the runner, search engine, tests, and authority-source digests. The current
+PR-head GitHub D0 Lean build also passed at this source digest and toolchain.
+
+The same 24 existing questions were then run through both the legacy assembly
+search and the current proof-architecture search. On the seven questions with
+explicit source-scoped targets, the legacy search surfaced **0/7** expected
+source paths and the current bounded search surfaced **7/7**. The 24-query
+comparison is preserved at
+[`proof_architecture_search_process_comparison_2026-10-27_locator_reconciliation_2014d322.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_locator_reconciliation_2014d322.json),
+SHA-256 `60966e20e55c8b813f24886e229de8e9f273fa91e2ca40c8333e30d882c26fcb`.
+Across the eight expected source files in those seven scopes, one has an exact
+registered owner link; another source document carries an explicit
+source-authored `Existing owner` field. Seven source references still have no
+direct typed registry owner link, and the source-authored field is not
+promoted to one. The comparison's serialized-answer-size proxy is 48 bytes
+for the legacy empty results and 530,124 bytes for the current results; this
+measures response payload, not tokens or file-reading effort. Owner
+correctness, hypothesis preservation, and whether new mathematics is needed
+remain manual review items. Retrieval success is not semantic acceptance.
