@@ -10425,8 +10425,4 @@ source pin remains commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
 `67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`. Full 40+2 variation, native
 Book/clock/work selection, C0 acceptance, and GR closure remain open.
 
-The declaration inventory and its clean-source digest are recorded in
-`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json`.
-Evidence pin: commit `a2c20a4dc9feeb5446b41e9e49ea8094bd14f40b`, path
-`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json`,
-blob `82574aafa3ea94c61ca28ad9e08980c2974d4b22`.
+Compiled inventory for `D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin`: commit `a2c20a4dc9feeb5446b41e9e49ea8094bd14f40b`, path `02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json`, blob `82574aafa3ea94c61ca28ad9e08980c2974d4b22`.
