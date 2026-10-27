@@ -4869,13 +4869,13 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             view["counts"]["book_headings_with_exact_heading_candidate"], 40
         )
-        self.assertEqual(view["counts"]["book_headings_with_ranked_heading_candidate"], 212)
+        self.assertEqual(view["counts"]["book_headings_with_ranked_heading_candidate"], 213)
         self.assertEqual(
             view["counts"]["book_headings_with_both_exact_and_ranked_heading_candidates"],
             23,
         )
         self.assertEqual(
-            view["counts"]["book_headings_without_claim_heading_candidate"], 445
+            view["counts"]["book_headings_without_claim_heading_candidate"], 444
         )
         mention_rows = [
             (claim_row["claim_id"], mention)
