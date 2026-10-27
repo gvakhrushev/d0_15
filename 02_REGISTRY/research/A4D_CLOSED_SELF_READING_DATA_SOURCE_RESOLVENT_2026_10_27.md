@@ -397,3 +397,49 @@ This source follows directly by differentiating the fully original relative-code
 The existing exact modular constructor [original future CAR algebra](sources/d0_original_full128_future_even_algebra_2026-10-22/check_future_even_algebra_modprime.py) is consumed by [new direct original-Kraus same-carrier regression](certificates/a4d_original_full128_native_fixedpoint_cost_modprime.py). That regression checks C30--C33 on real original 128 fine K rows reduced to their already certified split algebraic primes; it is a finite specialization check, not a substitute for the characteristic-zero operator derivation or an evaluation of the full gravity 42-covector.
 
 **Remaining GR handoff:** compose C34 with the original full coherent-record/oldRIGHT/Book03 Info and 42 independent real coframe/proper-link/matter apparatus sources. Do not insert Einstein tensor or drop actual visible archive histories. No compulsory full price, exact physical 42-field program or uniform GR refinement is proved here, so GR_closed=false.
+
+
+## 12. Theorem C9 — direct 128-Kraus stationarity proof, WITHOUT an intermediate recycler or continuum field
+
+C32 can be bypassed entirely. The ORIGINAL Walsh/Julia source proves a second exact completeness identity:
+\[
+\boxed{
+\sum_{j=0}^{63}N_j^\dagger N_j=I_{16}
+=\sum_{j=0}^{63}N_jN_j^\dagger.
+}\tag{C35}
+\]
+**Proof directly from the frozen words:** Walsh orthogonality reduces either sum to the average over 32 native two-endpoint Julia words. The ROW sum is I on EACH Julia word, as shown at C29. For the COLUMN sum, take each original adjacent mirrored Julia pair: the two words \((x,\sqrt{I-xx^\dagger})\) and \((x^\dagger,\sqrt{I-x^\dagger x})\). Their total column-square sum is
+\(x^\dagger x+(I-xx^\dagger)+xx^\dagger+(I-x^\dagger x)=2I\).
+The companion original \((-b,-\sqrt{I-bb^\dagger})\) and \((-b^\dagger,-\sqrt{I-b^\dagger b})\) pair has the same identity. The duplicated-word weighting is exactly the original Walsh normalization. Summing yields C35 with no new operator, field or outcome selector.
+
+For the honest complete original 128-Kraus DATA channel with K given in C28 and \(\rho\) proportional to \(A^{-1}=(a^\dagger a)^{-1}\), the j=0 even output is
+\[
+K_0A^{-1}K_0^\dagger
+=(I-2p^2 A)A^{-1}(I-2p^2 A)
+=A^{-1}-4p^2 I+4p^4 A.
+\]
+All OTHER even outputs sum to
+\(4p^4\sum_{j\ne0}N_j^\dagger N_j
+=4p^4(I-A)\),
+and ALL odd outputs sum to
+\(4p^3\sum_j N_j^\dagger N_j=4p^3I\).
+Here the only nontrivial simplification was \(aA^{-1}a^\dagger=I\) for the existing square invertible a. Therefore
+\[
+\boxed{
+\Phi(A^{-1})=
+A^{-1}+4(p^4+p^3-p^2)I=A^{-1},
+}\tag{C36}
+\]
+because \(p^2+p=1\), so \(p^4+p^3=p^2\).
+
+This is a **full direct characteristic-zero proof of endogenous stationary DATA preparation** using only:
+- exactly 128 unchanged original Kraus formulas, with all 64 literal dark symbols preserved;
+- the two-sided Julia/Walsh completeness C35 from already executed original words;
+- the one primitive golden identity \(p+p^2=1\);
+- invertibility of the actual positive original \(A=a^\dagger a\) on the original regular chart.
+
+**No external observer, independent \(D/h\) field/metric, target Einstein source, minimization functional, any postulated CP recycler or coarse "effective" Kraus model is needed.** The existing three-tick true Choi positivity additionally makes this stationary state unique/attractive near the original certified fixture; it is NOT necessary for the exact identity C36 itself.
+
+The exact native mean-cost C33 and its first source C34 now follow directly from C31, C36 and the actual literal 1/2 port-charge rule. A direct new [mod-prime regression](certificates/a4d_original_full128_native_fixedpoint_cost_modprime.py) invokes the original unchanged 128-Kraus constructor on the authenticated split-field fixtures and tests the fixed state, port1 positive effect, original all-label normalization and multi-tick cost identity. Replaying it successfully would check the pinned fixture; its presence here is not an assertion that independent CI/Lean has run.
+
+**GR status unchanged:** this closes an authentic microscopic self-preparation and COST component within the full original physical instrument, not the separately observable complete history entropy or the total native 42-equation variational response.
