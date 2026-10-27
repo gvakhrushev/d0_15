@@ -107,6 +107,18 @@ def main():
          +H.subs(y,y+h)+H.subs(y,y-h)-4*H)/(h*h)
     equal(lap,4*eps,"exact original 5-point Brinkmann transverse stencil")
     equal(-lap/(2*h),-2*eps/h,"configured normal coframe source")
+    # SAME original 42-dimensional normal-cofield class:
+    # two independent off-shell probes + exact annihilator decomposition.
+    aa,bb,cc=s.symbols("a_probe b_probe c_probe",nonzero=True)
+    L=s.Matrix([[bb,aa,0,0],[cc,0,0,0]])
+    v_F=s.Matrix([0,1/aa,0,0])
+    v_Q=s.Matrix([1/cc,-bb/(aa*cc),0,0])
+    equal_matrix(L*v_F,s.Matrix([1,0]),"original normal F probe")
+    equal_matrix(L*v_Q,s.Matrix([0,1]),"original normal Q probe")
+    coords=s.Matrix(s.symbols("v0:4"))
+    kern=coords-(L*coords)[0]*v_F-(L*coords)[1]*v_Q
+    equal_matrix(L*kern,s.zeros(2,1),
+                 "normal decomposition leaves only a kernel direction")
     print("PASS_ORIGINAL_CAR16_TWO_EIGENVALUE_CLOSED_FORM")
     print(" symbolic CAR16 all-r,all-nu minimal polynomial: PASS")
     print(" actual fixture eigenvalue multiplicities: 8+8")
