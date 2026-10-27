@@ -15694,3 +15694,142 @@ explicit GIT_WORK_TREE of this owned checkout. Final preservation, frozen
 source/fences, AST/JSON, unchanged owner and diff checks also pass. Only the
 two owned research/brief paths change; no registered evidence is rewritten.
 No old mathematical/Lean replay or new CI/physical acceptance is asserted.
+
+
+### 27 October — construct the marked coarse-observation map
+
+SAME #334 / constitutive/native-programme-v1; native realization and
+composition, input2cbd32ae. Previous checkpoint made verified progress by
+creating752/758 and excluding the raw-angle/finite-absolute-price completion
+shortcuts. The next named parent application is the actual interlevel field
+map and positive coarse-observation lift required by that alternative.
+
+Reuse the original all-h nonlinear polynomial-harmonic Brinkmann family,
+its midpoint CAR history, calibrated full42 decoder730, actual native moment
+frame7av and signed native/finite Bernstein readers7bj/7ck. Construct odd
+mesh restriction so time and matter midpoints align; extend it as a full42
+residual-Cayley chart map retaining independent coframes, links and matter.
+No extra Cartan or Einstein condition enters the admitted field domain.
+Retain every actual density/frame/calibration operand and source.
+
+The smallest decisive checks are exact index/material composition, one
+nonprimary full-six-residual matrix collar, and a tiny positive effect/
+fullnorm control. A dyadic aliasing example tests whether the map secretly
+requires an unknown continuum profile. Compose finite-copy Bernstein
+coarse effects on actual independently prepared packets; distinguish their
+Born/C1 convergence from a fullbody operator/metric or whole-price map.
+This is a bounded application in the existing owner, not another geometry
+root/rank search, source selector, new action or physical admission law.
+
+Only the two owned research/brief paths may change. Helpers use private
+scratch and read-only source analysis. Exact coarse-field/response maps do
+not themselves prove full covector naturality, independent apparatus
+stationarity, ALL physical future tests or the required physical GR limit.
+The complete selected valuation and actual gain/norm/cross-level source
+remainders remain the consumer, never an uncharged re-encoding oracle.
+
+27 October result, primary7cn760--770. Created an exact full42 numerical
+field projection system on odd meshes. All16 calibrated coframe entries,
+all24 independent proper-link residuals and both material components remain
+free off shell. Relative Cayley decoding cancels the reference Cartan map,
+so pi_r composed with pi_q=pi_(qr) exactly on its regular collar. This is a
+coordinate projection, not a Cartan constraint, Wilson-line identity,
+physical actuator or new native action.
+
+The actual ORIGINAL nonlinear polynomial-harmonic primary family is mapped
+to its ORIGINAL coarse member exactly. Coframes and native material use
+their different real midpoints; matter is central-increment reconstruction,
+not naive value subsampling. An even-mesh alias gives identical complete
+fine field data and different original coarse data. Odd refinement removes
+that information obstruction without requiring hidden continuum-profile code.
+General h-dependent Dirichlet/harmonic solutions retain their own defect.
+Both fine xi_h and genuine coarse xi_H are explicit; neither coarse density
+nor a moving frame is invented from D_sp. Native creation V and calibrated
+Palatini hE are kept distinct. Actual field/Cayley/metadata norm constants
+are retained; no mesh-uniform C3 right inverse is claimed.
+
+The explicit pi and old actual SOURCE decoder supply numerical coarse-test
+functions. A positive joint Bernstein effect on s*m independently prepared
+fine packets implements each declared coarse test with controlled C1 debt.
+The exact actual-native projector frame may be used with its full inverse
+conditioning. Incompatible features use separate real preparations. This
+removes the need for a physical nonlinear unknown-state decoder/programmer
+for those observations; it does not claim exact finite equality to every
+coarse experiment or a physical all-future-test/refinement tower.
+
+New fullnorm control: a literal3-gate positive-anchor rotor has metric norm
+p. A rare controlled-table branch retains this norm while even the FULL
+all-work Golden-Choi trace norm tends to zero with growing programme width.
+The actual p^(-b) conditioning explains the difference. A probability/
+response approximation does not establish an all-column coarse metric
+writer. No exact controlled-G or large emitted table was asserted.
+
+Two changed exact calculations passed on finalcode CPython3.9.6/SymPy1.14.0.
+The field test verifies generic symbolic material/index composition and one
+nonprimary all16/four-link/six-residual4x4 Cayley collar, including exact
+pi3 pi3=pi9 and a polynomial midpoint alias. It reruns no field equations or
+GR root. The response test checks the complete16-column four-packet positive
+POVM, its real Bernstein finite value/jet debt and a three-stage4-column
+native rotor, then exact controlled-block algebra at8/16/32 columns. It
+constructs no dense Choi density and emits no controlled native programme.
+No gravity inverse/rank/SVD, heat, full128/CAR, old certificate or Lean replay.
+
+Fieldcode7159 / SHA256
+c524feee75b72dd501c2adae85524df226404e41bc41c860295a4b95d2e839a8;
+receipt988 / SHA256
+3a9661a12320249999985d0a9ccd1c4daef55cb717e566321d0aa00a348ee6ec.
+Effectcode5984 / SHA256
+c07f369dfa3b796db0115facca09668c1505090f2a8fb9f9566609223bcd8fd7;
+receipt1487 / SHA256
+a57188f4efc7917887cd4596866226cf966a529ab5c1946c3aecddeb2b52cc66.
+Both final source/output pairs are embedded exactly in7cn. The effect
+entrypoint was made portable (Path.cwd()); final rerun passed; earlier
+PASS source/receipt are preserved privately. No expected result was edited.
+
+Finalproof20559 / SHA256
+eb02670e6bdcd618914ab211edbb4e90e91c9eddc51340b10062bd5bdfe1e393;
+wholesection37082 / SHA256
+3c3a78ebd3a7b68abb667c13e704ab7bf83ffc6235de70b7db4722503e843f42.
+Native owner17833 / SHA256
+222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+
+Parent substitution: the compatible finite FIELD map and its positive
+coarse-observation lift are now explicit, including true normalization and
+finite-copy/decoder errors. This does not identify Gamma_h^-1 DB_h with
+Dpi* Gamma_H^-1 DB_H. Kernel directions can retain fine source, new readers
+have their true full Book price, and native task/admission, independent
+apparatus equations and complete selected valuation remain physical duties.
+The existing exact archive response maps and controlled source-remainder
+route remain consumers; no hypothetical gate-free re-encoding replaces them.
+GR_closed=false; positive_gr/raw216 remain open.
+
+Incoming2cbd32ae is retained in full: primary2442477 /
+4780fb3cffa428a2e89ff82129860f882b35906adb690bde0755224281c0dea7;
+brief1022212 /
+7337be4002316901a2adb0e048c4afc53ce9f262ad9caaa3ccf1cb3e8163f7ec.
+Removing7cn restores EVERY incoming primary byte; original brief is an
+exact prefix before this plan/result. Only the same two owned write paths
+change. No task/result/claim/acceptance, Ready, retirement or merge is added.
+Final full source review and affected structural validation follow.
+
+
+Final FULL SOURCE-ONLY ACCEPT by native_source_application,
+retained_metric_map and stationary_root_transfer: each read the whole final
+760--770 proof, both complete final Python sources and both observed JSON
+receipts. All verified proof/section/manifest pins, four byte-exact fences,
+matching executed sourceSHA and the three live input-source pins. Review
+covered full42/off-shell/primary/index/CAR/collar scope, positive joint
+native-effect frame, C1/table/copy conditioning, both xi and all-work norm
+counter. Reviews executed no mathematics and made no repository changes.
+They are source reviews, not independent assembly/physical acceptance.
+
+Final affected guards PASS with explicit GIT_WORK_TREE: validate_work.py,
+validate_agent_protocol.py, gr_assembly.py check and validate_repo.py.
+Assembly unchanged54 active/98 results/5 discharged/22 obligations,
+scientific_promotion=false. Repository889 claims/31 assumptions/58 aliases/
+183 formal_support/918 lean_closure, zero warnings. Final preservation
+validates exact proof/section, both code/receipt pairs, all four fences,
+AST/JSON, unchanged native owner and EVERY incoming primary/brief byte.
+Only the two owned paths change; whitespace checks pass. This validation
+note changes no scientific input. No original root/heat/native largeword,
+Lean replay, CI acceptance or physical GR closure is asserted.

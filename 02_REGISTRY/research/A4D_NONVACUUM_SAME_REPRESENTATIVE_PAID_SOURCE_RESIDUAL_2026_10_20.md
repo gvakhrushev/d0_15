@@ -80973,6 +80973,591 @@ print(json.dumps(out, indent=2)+'\n', end='')
 }
 ```
 
+## 7cn. Compatible full-field projections and positive coarse observations of the same SOURCE
+
+27 October2026. SAME #334 / constitutive/native-programme-v1; native realization and composition, input2cbd32ae05def647e09680f428df2cbe7d496481. Consume the owned all-mesh polynomial-harmonic nonvacuum family, its REAL midpoint CAR history, paid-writer12.1(51)--(54),7av's actual native effect frame and7ck--7cm. The parent is the concrete interlevel field/marked-observation map missing from7cm. The changed input is an ODD nested mesh and the same-body full Golden-Choi SOURCE; no new geometry root, action, selector, native primitive or physical postulate is introduced.
+
+### 1. An exact projection system on the complete regular42-field chart
+
+Use the actual calibrated null coframe E recovered by the augmented inverse, all16 entries, four independently varied proper Lorentz links U_r (all24), and both real material fields Psi. The Palatini edge coframe is hE in its declared calibrated chart. The native creation matrix V=s sqrt(rho) eta_R(TE)^(-T) is a different object; neither it nor an arbitrary density-dressed raw leg may simply be divided by h. Retain actual rho,s,T, endpoint frames and their derivatives through the owned decoder. No new relation between them is assumed.
+
+At arbitrary nearby E define H_E(z)=2E^-_u(z) and the following proper-link REFERENCE using the ORIGINAL Cartan formula:
+
+    K_h(E;z)=1/2 sum_(a=x,y)
+          [H_E(z+u)-H_E(z+u-a)]N_a,
+    C_(h,u)(E)=I+K_h+K_h^2/2, C_(h,r)(E)=I for r!=u,
+    Cay(X)=(I-X/2)^(-1)(I+X/2),
+    A_(h,r)=h^-1 Cay^-1(C_(h,r)(E)^(-1) U_r),
+    Cay^-1(V)=2(V-I)(V+I)^(-1),
+    U_r=C_(h,r)(E) Cay(h A_(h,r)).                       (760)
+
+Here u,a are one step on the stated h grid. The owned N_x,N_y commute, have a cube-zero linear span and are Lorentz skew. Thus C_h is their original finite exponential, also equal to Cay(K_h). On the relative minus-one-free Cayley collar,760 is a smooth change of coordinates with SIX unrestricted components in every A_r. C_h is a coordinate origin on the full chart; A=0 is NOT imposed there. It equals the actual Cartan link only on the already proved primary family. Arbitrary fixed reference origins would still give chart bijections; this particular owned reference preserves that family.
+
+Let H=q h with q odd. Include the required shifted stencils and original collars on the unwrapped interval. Define
+
+    s_q(J)=(qJ_u-(q-1)/2,qJ_v,qJ_x,qJ_y),
+    E_H(J)=E_h(s_qJ), A_(H,r)(J)=A_(h,r)(s_qJ),
+    U_(H,r)=C_(H,r)(E_H) Cay(H A_(H,r)),
+    (C_q Psi)_0(J_perp)=Psi_0(qJ_perp),
+    Delta_J(C_q Psi)(J_perp)
+          =q Delta_(qJ+(q-1)/2)Psi(qJ_perp).              (761)
+
+Reconstruct each coarse material history by its chronological sum. Material values live at jh and their increments at (j+1/2)h; coframes live at (j-1/2)h. These are different staggers. Both material components and every retained spatial line are covered. The coarse coframe is in the SAME physical units; a dimensionful edge hE acquires its true q factor. A coarse link from761 is generally not the ordered product of fine links.
+
+For odd q,r, s_q composed with s_r=s_(qr). Re-extracting the residual from the output link cancels C_H and Cay exactly. The central material indices obey q[rJ+(r-1)/2]+(q-1)/2=qrJ+(qr-1)/2. Hence the full field maps satisfy
+
+    pi_(H,rH) composed with pi_(h,H)=pi_(h,rH),
+    Dpi_(H,rH) Dpi_(h,H)=Dpi_(h,rH).                     (762)
+
+This is an off-shell full42 identity wherever all charts remain regular. It uses no Euler equation or Einstein acceptance predicate. Locally these finite maps are onto: assign fine E,A at the selected addresses to the coarse entries and extend the remaining variations inside a compatible collar. For matter, interpolate each coarse interval with ALL q fine increments equal to Delta Psi_coarse/q. This gives its selected increment, both endpoints and coarse initial value exactly; linear interpolation stays in the same convex CAR amplitude ball. With fixed end data use compatible coarse boundary data and an interior right section around the given fine base. This is a finite field-coordinate section, not an admitted native actuator or a mesh-uniform C3 section.
+
+Sampling E,A is sup-norm contractive in THOSE coordinates. Matter satisfies ||C_q Psi||_(initial+gradient;H)<=||Psi||_(initial+gradient;h), since D_H^+C_q Psi is exactly the selected D_h^+Psi. On an interval of length T the actual bound ||Psi_0||+T sup||D_h^+Psi|| controls the CAR collar; small unweighted fine values alone do not. In the supplied physical field norms retain
+
+    ||Dpi||<=||DT_H^(-1)|| ||L_q|| ||DT_h||,
+    T_h:(E,U,Psi)->(E,A_h,Psi).
+
+The h^-1, stencil, inverse/Cayley margins, calibration and moving xi legs remain. No h-uniform norm or arbitrary physical sampling/naturality identity follows just from762.
+
+### 2. Apply it to the actual owned nonlinear family; an even mesh loses data
+
+Take the EXISTING midpoint recovery family with H_profile=-lambda|Psi'|^2(x^2+y^2)+W, where W is the degree2/3 transverse harmonic polynomial with arbitrary smooth time coefficients. Its exact finite coframe is sampled at (j-1/2)h, its links are C_h(E), and its actual history has Delta Psi_j^h=h Psi'((j+1/2)h), with the same initial value. At an odd coarse mesh,761 samples the same continuum coframe, sends A_h=0 to A_H=0 and gives
+
+    Delta(C_q Psi)_J=q h Psi'((qJ+q/2)h)
+                          =H Psi'((J+1/2)H).
+
+Therefore pi_(h,H)Y_h=Y_H EXACTLY for that full nonlinear nonvacuum family. The owned unrestricted16+24+2 Euler theorem supplies its stationarity; it was not used to restrict variations in761. The general h-dependent discrete-Dirichlet harmonic family does not inherit exact subsampling; retain its separate refinement defect. The integer choice q=3 is a subsequence of an already all-h theorem, not a new physical scale, Golden metric law or compulsory native refinement rule.
+
+This choice removes a real information obstruction. For H=2h, coarse time midpoints are integer h points, absent from the fine half-step samples. At a fixed finite collar choose two small smooth nonvacuum profiles with the same initial Psi and whose derivatives differ by epsilon b(u)e_1, where b vanishes at ALL fine half-steps but not at one coarse midpoint. A smooth bump in the gap, or a finite product of squared linear factors, supplies b. Choose the baseline derivative so that the coarse energy changes; take epsilon small enough to preserve the genuine CAR margin and keep W unchanged. Their complete fine coframes, native material histories and Cartan links coincide, while their ORIGINAL coarse lift differs:
+
+    Y_h^(1)=Y_h^(2), Y_(2h)^(1)!=Y_(2h)^(2).             (763)
+
+Thus no map from those fine FIELD DATA ALONE recovers the original even-coarse lift for every smooth family member. Identical fine SOURCE packets also give identical outcomes for any effect on any number of identical packets. Extra retained code for the whole continuum profile would be additional input, not decoded fine data. This excludes neither approximate recovery with actual regularity bounds, enriched records nor the explicit odd map. It is not a claim against every physical refinement scheme.
+
+### 3. Construct coarse fixed tests as positive effects on actual fine packets
+
+At fixed h,H, use the full42 map above and the augmented decoder R_chi,h, including every genuinely supplied xi/material/density/frame datum. Let rho_h be one complete actual fine packet from7ck. It includes the Golden probe of EVERY ordinary body/work column and its reference. Repetitions below are independent actual preparations/body calls; they do not clone an unknown packet. Heterogeneous independent devices are not silently equated.
+
+Fix a finite coarse test context with POVM {A_a}. For a smooth specified coarse target packet rho_H(Y_H), define the NUMERICAL functions
+
+    g_a(q;xi_h,xi_H)=Tr[A_a rho_H(
+          pi_(h,H) R_(chi,h)(mu(q),xi_h);xi_H)].          (764)
+
+For example rho_H can be the owned positive-anchor rotor/normalized-material packet on its regular chart. It is a smooth benchmark, not a derivative of a discrete compiler lookup; a comparison with actual coarse native words keeps its separate value/jet or751 stencil errors. Xi_H is genuine COARSE protocol calibration/density, fixed in this table context or represented by actual additional features; it is not computed by fine D_sp. If xi_h or xi_H varies, retain BOTH derivatives and independent source terms. Fixed-context tables do not supply those actuators. All table values are known finite operands before the unknown fine input is read. No unknown quantum state is decoded into a programme.
+
+One mathematical reading uses F_l=(I+O_l)/2 for the bounded features, q_l=Tr(F_l rho_h), mu_l=2q_l-1. To use actual native effects directly, instead take7av's informationally complete frame of ACTUAL native projectors on the entire packet and let q_l=Tr(Phat_l rho_h). Its exact finite frame inverse gives mu=Aq, with the true ||A|| and calibration conditioning. This retains real coherences and avoids declaring a target SIGN readout exact. In either presentation incompatible features use DIFFERENT packets. Extra xi enters q only if actually represented by those readings. Otherwise764 is on its fixed-context slice and retains the independent Dxi term; notation supplies no missing actuator or calibration channel.
+
+Supply a bounded smooth continuation to the feature cube. On a compact regular collar, choose a known cutoff chi=1 there, supported inside the decoder/Cayley chart, and a known normalized reference state rho_ref. Outside that chart set rho_bar=chi rho_H(pi R_chi)+(1-chi)rho_ref, with the first term extended by zero off the support. Then g_a=Tr(A_a rho_bar) satisfies g_a>=0 and sum_a g_a=1 everywhere, and agrees with764 on the collar. Its effective derivative bounds are part of the input; a local inverse alone is insufficient. This defines a future test, not Info, an added action or an Einstein source selector.
+
+For s features allocate m independent packets PER feature, for L=s m real preparations. The count effects on each group are
+
+    B_(l,k)=sum_(|S|=k) tensor_(r=1)^m
+                     [F_l if r in S; I-F_l otherwise],
+    B_k=tensor_l B_(l,k_l),
+    E_(a,m)=sum_(k in {0,...,m}^s) g_a(k/m) B_k,
+    E_(a,m)>=0, sum_a E_(a,m)=I.                        (765)
+
+Products are on different physical packets. This is an EXACT positive joint effect on all their columns, including for arbitrary joint inputs. On the actual IID product preparation its expectation is
+
+    Tr[E_(a,m) rho_h^(tensor sm)]=Bern_m[g_a](q).         (766)
+
+It approximates764; equality with the ideal nonlinear target is not asserted at finite m. Equivalently the mathematical measure/prepare channel C_m(T)=sum_k Tr(B_k T)rho_bar(k/m) is CPTP and C_m*(A_a)=E_(a,m). Each table state is known, so this is not single-copy nonlinear state programming. A native realization uses the already owned read-once/count/table and fixed-word compiler, with actual errors, fresh banks, records and clock. Coherent work/record columns are retained. Exact positivity of765 does not assert an exact controlled-G, an exactly synthesized rational coin or a free physical readout.
+
+### 4. The response jet and its actual source conditioning
+
+For one outcome g let L_g=sup||grad g||_2 and M2=sup||D^2g||_op on the supplied cube. The binomial variance and the exact derivative finite-difference formula give
+
+    ||Bern_m g-g||_infty<=L_g sqrt(s)/(2sqrt(m)),
+    ||grad(Bern_m g-g)||_2
+          <=sqrt(s) M2 sqrt(s/(4m)+1/m^2).              (767)
+
+For the second inequality, partial_l Bern_m g=E integral_0^1 partial_l g((K+t e_l)/m)dt, with K_l~Bin(m-1,q_l), other K_i~Bin(m,q_i). Its argument has E||Z-q||^2<=s/(4m)+1/m^2. This proves767 without a dimension-free claim. An effective gradient modulus yields the corresponding C1-only bound by splitting the event ||Z-q||<=r and using its second moment. For a simplex-preserving node approximation with component error <=epsilon_table, add epsilon_table to the value bound and 2m sqrt(s)epsilon_table to the gradient bound.
+
+Along a field speed v multiply the gradient error by the TRUE ||Dq[v]||_2. The constants in g retain the actual Dpi, frame inverse A, coarse target derivatives and the fine decoder factor p^(-b_h)(tau_h^(-1)+1/(2tau_h^2))/delta_h, together with the owned field inverse and every material/calibration leg. Pointwise invertibility does not make those uniform in h. For a FIXED compiled reader with effect error epsilon_read,
+
+    value error<=epsilon_read,
+    jet error<=epsilon_read ||D(rho_h^(tensor sm))[v]||_1
+             <=epsilon_read s m K_rho ||v||,            (768)
+
+when the actual one-packet trace-norm derivative is <=K_rho. Actual packet value/jet errors add by tensor telescoping; use their real heterogeneous laws when the banks disagree. The reader is fixed before varying its input, so768 does not differentiate a compiler lookup. For independent bank variations retain their separate Born derivatives; the common-field direction is a comparison vector, not an equality imposed between hardware devices.
+
+For a C2 scalar readout functional J(r), with gradient/Hessian bounds L_J,M_J, response errors e0,e1 transfer as |J(rhat)-J(r)|<=L_J e0 and first-source error <=L_J e1+M_J e0||Dr||. Any Book-source application divides by its ACTUAL nonzero gain Gamma and keeps its rank and strict-return collar. This statement is a chain rule for the stated functional. Reporting a number equal to a coarse price does not make it the complete price of the new physical reader programme.
+
+In particular762 and766 DO NOT imply Gamma_h^(-1)DB_h=Dpi*Gamma_H^(-1)DB_H. Fine directions in ker Dpi can still carry genuine native source. An application of the original full H+J to the new reporting experiment computes its own actual cut, cold kernel, heat, rank and clock, with all independent query/preparation/source rows. Reuse7bj/7cj/7ck's kernel/conditional-role methods and738/749/751 only on their stated hypotheses and actual NEW counts. No old price, source normalization or cross-bank neutrality is imported by764--768.
+
+### 5. A small-probability branch still has full operator metric weight
+
+There is a sharp guard on interpreting this positive observation map as a same-body coarse writer. In the declared addressed G_CX sector, the literal word CX(r,s);G_r;CX(r,s) on rotor/site bits has full endpoint
+
+    W_bad=[[aI,-pX_s],[pX_s,aI]], a=sqrt(p),
+    W_bad=W_delta((p/delta)X_s),
+    T=I_r tensor diag(0,1),
+    ||[W_bad,T]||=p, Tr(Lambda_local W_bad)=a>0.         (769)
+
+This is a genuine positive-anchor rotor with ||delta D||=p<1. On a retained table register R let V=(I-P_bad)tensor I+P_bad tensor W_bad. Its full commutator norm is p, irrespective of the Born weight of the bad branch. More generally a block-controlled body's seminorm is MAX_k||[W_k,T]||. Under the INTERNAL prefix metric this becomes p/sqrt22, without probability attenuation.
+
+This remains true when EVERY table/work column is included in the full Golden-Choi SOURCE, rather than discarded in a reduced marginal. For R with n bits and P_bad=|1...1><1...1|, its Golden weight is w=p^(2n). On the entire b=n+2 bit body,
+
+    <chi_I,chi_V>=1-p^(2n)(1-a),
+    ||sigma_V-sigma_I||_1
+       =2sqrt(1-[1-p^(2n)(1-a)]^2) ->0,
+    ||V-I||=sqrt(2(1-a)), ||[V,I_R tensor T]||=p.       (770)
+
+The trace-norm formula follows by diagonalizing the two pure projectors in their two-dimensional span. There is no dense-Choi or small-eigenvalue truncation. The true p^(-b) inverse conditioning grows, so this is consistent with727--729 and does not contradict their finite-dimensional inverse. If R is treated as private geometry work, it also shows why a strong promise W close to W_coarse tensor I_R cannot be inferred by ignoring rare branches. If it is part of the target, the full target dimension and inverse norm grow. This is an operator/observation control, not a claim that this rotor is an original nonvacuum CAR16 field or a physical GR counterexample.
+
+Only769 is emitted as a new small native word here. The controlled V is the known finite SO target, not an asserted exact controlled-G primitive. Its actual predicate-readonly native implementation keeps its true error eta and price; the norm lower bound is p-2eta||T|| and the observation error keeps its compiler contribution. Transport to a physical-port/SourceI-only realization retains the owned WORK-addressing premise and actual expanded words. A statistical table with rare bad estimates therefore does not supply the all-column metric promise for free.
+
+### 6. What changes in the parent and what still must be proved
+
+The missing numerical interlevel map is now concrete and compatible on a FULL42 chart, with the exact owned nonlinear primary as a preserved section. The odd ratio is a changed mathematical input that removes the specific midpoint alias. The positive finite-copy effects provide a realizable coarse-observation method with quantitative jet/conditioning errors. They replace an assumed physical implementation of the nonlinear decoder for those declared tests; no unknown-state decoder/programmer is required.
+
+These are declared field/observation constructions, not a proof of native field-writing admission, whole-price/source descent or full physical refinement. BookV's actual kappa criterion still requires the chosen marked finite tests/projections to stabilize with their real errors and margins. Old retained observation addresses can use7av417--419's exact response archive; the changing decoded field/source aggregate keeps its controlled remainder as in421--423. Independent admissible finite tests alone are not an already built physical ALL-future-test tower.
+
+The same initial task, preparation, source operator, internal equations, actual gain/norm and complete valuation remain the consuming physical obligation. Additional tests cost their own execution when run. Fullnorm770 rules out replacing that obligation by Born concentration; source consistency is not fine/coarse action equality. The original nonvacuum dynamics/refinement, conditional universality routes and raw terminal retain their stated remaining assumptions. GR_closed=false; positive_gr/raw216 remain open. No new task/result/claim/acceptance edge, Ready, retirement or merge is added.
+
+### 7. Changed-step verification and provenance
+
+Two new exact small calculations accompany this application. The field checker verifies generic two-component material composition and symbolic odd-index identities; one nonprimary point with all16 coframe entries moving and all six residual slots nonzero in each of four full4x4 proper links verifies pi3 composed with pi3=pi9, Cayley collars and Lorentz identities; an explicit smooth polynomial alias keeps eleven fine half-step samples equal and changes a coarse material energy. It does not rerun any Einstein/Cartan Euler or gravity-root certificate.
+
+The effect checker constructs all16 columns of a four-packet degree2 joint POVM for two noncommuting one-packet tests, verifies its exact Bernstein expectation and nonzero finite C1 debt, and tests769's actual three-stage4-column native word. The controlled-table norm/weighted overlap controls use full body matrices of8,16,32 columns. No dense Choi density, emitted controlled native table, large coarse/GR programme, rank/SVD, old heat, full128/CAR or Lean replay is claimed.
+
+All source formulas are included here; input native owner remains17833bytes / SHA256222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c. The incoming primary is immutable Git blob888b46bd3bb2fbe2344e355cb9d21369980c4faa, SHA2564780fb3cffa428a2e89ff82129860f882b35906adb690bde0755224281c0dea7 at2cbd32ae. Geometric references are the ORIGINAL arbitrary-Brinkmann all40 owner(1)--(8), and A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md sections7.1--7.2(17)--(24). Units and moving metadata use paid-writer12.1(51)--(54), not the unrelated old shrinking-inverse-leg varrho box. Native observations/source controls use7av,7bj,7ck730/738,7cl749/751 and7cm's original BookV completion boundary. None of those source/receipt files is edited.
+
+Current input pins: midpoint recovery59540bytes / SHA25671497086dfad667831c77d69201aea3890909d0cf772791f7df32b8b8c3c07d4; original arbitrary-Brinkmann proof25208 / SHA2568dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e; paid-moment writer240407 / SHA25610fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05.
+
+Executed changed fixtures with CPython3.9.6 / SymPy1.14.0. Save and run the following Python blocks from the repository root. The following are the exact final executed source files and observed JSON receipts. The effect code was rerun after replacing its absolute local entrypoint by Path.cwd(); earlier PASS sources/receipts remain privately preserved.
+
+d0_odd_coarse_field_20261027.py: 7159 bytes / SHA256 c524feee75b72dd501c2adae85524df226404e41bc41c860295a4b95d2e839a8.
+d0_odd_coarse_field_20261027.json: 988 bytes / SHA256 3a9661a12320249999985d0a9ccd1c4daef55cb717e566321d0aa00a348ee6ec.
+d0_coarse_effect_fullnorm_20261027.py: 5984 bytes / SHA256 c07f369dfa3b796db0115facca09668c1505090f2a8fb9f9566609223bcd8fd7.
+d0_coarse_effect_fullnorm_20261027.json: 1487 bytes / SHA256 a57188f4efc7917887cd4596866226cf966a529ab5c1946c3aecddeb2b52cc66.
+
+```python
+"""Only the changed interlevel field map; no GR roots/Euler/rank replay."""
+from functools import lru_cache
+from pathlib import Path
+import hashlib
+import json
+
+import sympy as sp
+
+
+def require(condition, label):
+    if not condition:
+        raise RuntimeError(label)
+
+
+def equal(left, right):
+    if hasattr(left, 'shape'):
+        return left.shape == right.shape and all(sp.cancel(x) == 0 for x in left-right)
+    return sp.cancel(left-right) == 0
+
+
+# The formulas hold for arbitrary two-component records, not sampled solutions.
+def material_coarsen(sequence, q):
+    require(q % 2 == 1 and q > 0, 'odd positive ratio')
+    count = (len(sequence)-1)//q
+    out = [sequence[0]]
+    for j in range(count):
+        k = q*j+(q-1)//2
+        out.append(out[-1]+q*(sequence[k+1]-sequence[k]))
+    return out
+
+
+length = 3
+records = [sp.ImmutableMatrix([sp.Symbol('p0_'+str(j)), sp.Symbol('p4_'+str(j))])
+           for j in range(9*length+1)]
+via = material_coarsen(material_coarsen(records, 3), 3)
+direct = material_coarsen(records, 9)
+require(all(equal(a, b) for a, b in zip(via, direct)), 'generic material composition')
+for q in (3, 9):
+    coarse = material_coarsen(records, q)
+    for j in range(len(coarse)-1):
+        k = q*j+(q-1)//2
+        require(equal((coarse[j+1]-coarse[j])/q, records[k+1]-records[k]),
+                'exact midpoint gradient transport')
+
+# A generic symbolic odd-index identity, not a finite sample of ratios.
+j, m, n = sp.symbols('j m n', integer=True)
+q, r = 2*m+1, 2*n+1
+require(equal(q*(r*j-(r-1)/2)-(q-1)/2, q*r*j-(q*r-1)/2),
+        'coframe index composition')
+require(equal(q*(r*j+(r-1)/2)+(q-1)/2, q*r*j+(q*r-1)/2),
+        'gradient index composition')
+
+# Null metric, full six-component Lorentz defect, actual Cayley conventions.
+eta = sp.ImmutableMatrix([[0, 1, 0, 0], [1, 0, 0, 0],
+                          [0, 0, -1, 0], [0, 0, 0, -1]])
+I4 = sp.eye(4)
+N2 = sp.zeros(4); N2[1, 2] = 1; N2[2, 0] = 1
+N3 = sp.zeros(4); N3[1, 3] = 1; N3[3, 0] = 1
+require(equal(N2.T*eta+eta*N2, sp.zeros(4)), 'owned null generator N2')
+require(equal(N3.T*eta+eta*N3, sp.zeros(4)), 'owned null generator N3')
+
+
+def cay(X):
+    return sp.ImmutableMatrix((I4-X/2).inv()*(I4+X/2))
+
+
+def uncay(U):
+    return sp.ImmutableMatrix(2*(U-I4)*(U+I4).inv())
+
+
+def sample(z, q):
+    return (q*z[0]-(q-1)//2, q*z[1], q*z[2], q*z[3])
+
+
+def shifted(z, axis, amount):
+    out = list(z); out[axis] += amount
+    return tuple(out)
+
+
+def reference(mesh, E, z, axis):
+    if axis != 0:
+        return sp.ImmutableMatrix(I4)
+    future = shifted(z, 0, 1)
+    values = []
+    for transverse in (2, 3):
+        back = shifted(future, transverse, -1)
+        # H(E)=2 E^-_u; factors 2 and 1/2 cancel in K.
+        values.append(E(future)[1, 0]-E(back)[1, 0])
+    K = values[0]*N2+values[1]*N3
+    return sp.ImmutableMatrix(I4+K+K*K/2)
+
+
+h = sp.Rational(1, 90)
+
+
+@lru_cache(None)
+def E_fine(z):
+    # All16 entries move. This is one off-primary point, not another GR solution.
+    E = sp.eye(4)
+    physical = [h*x for x in z]
+    for a in range(4):
+        for b in range(4):
+            E[a, b] += sp.Rational(1+a+4*b, 10000)*(1+sum(physical))
+    u, v, x, y = physical
+    E[1, 0] += (x*x+2*x*y+y*y*y+u*u)/2
+    return sp.ImmutableMatrix(E)
+
+
+@lru_cache(None)
+def A_fine(z, axis):
+    skew = sp.zeros(4)
+    t = 0
+    for a in range(4):
+        for b in range(a+1, 4):
+            t += 1
+            value = sp.Rational(t+axis+1, 1000)+sp.Rational(sum(z), 100000)
+            skew[a, b], skew[b, a] = value, -value
+    return sp.ImmutableMatrix(eta*skew)
+
+
+@lru_cache(None)
+def U_fine(z, axis):
+    return sp.ImmutableMatrix(reference(h, E_fine, z, axis)*cay(h*A_fine(z, axis)))
+
+
+def coarse_level(mesh, E, U, q):
+    H = q*mesh
+
+    @lru_cache(None)
+    def E_out(z):
+        return E(sample(z, q))
+
+    @lru_cache(None)
+    def U_out(z, axis):
+        fine = sample(z, q)
+        C = reference(mesh, E, fine, axis)
+        residual = C.inv()*U(fine, axis)
+        A = uncay(residual)/mesh
+        return sp.ImmutableMatrix(reference(H, E_out, z, axis)*cay(H*A))
+
+    return H, E_out, U_out
+
+
+H3, E3, U3 = coarse_level(h, E_fine, U_fine, 3)
+H9a, E9a, U9a = coarse_level(H3, E3, U3, 3)
+H9b, E9b, U9b = coarse_level(h, E_fine, U_fine, 9)
+point = (1, 0, 1, 1)
+require(H9a == H9b and equal(E9a(point), E9b(point)), 'full coframe composition')
+require(E9a(point).det() > 0, 'nondegenerate coframe in the changed fixture')
+for axis in range(4):
+    A = A_fine(sample(point, 9), axis)
+    require(equal(A.T*eta+eta*A, sp.zeros(4)), 'all six residual slots Lorentz skew')
+    require(all((eta*A)[a, b] != 0 for a in range(4) for b in range(a+1, 4)),
+            'all six independent slots nonzero in the fixture')
+    # A conservative rational infinity bound certifies the Cayley collar.
+    norm_inf = max(sum(abs(A[a, b]) for b in range(4)) for a in range(4))
+    require(H9a*norm_inf < 1, 'output Cayley Neumann collar')
+    require(equal(U9a(point, axis), U9b(point, axis)), 'full proper-link composition')
+    require(equal(U9a(point, axis).T*eta*U9a(point, axis), eta), 'proper Lorentz metric')
+    require(equal(U9a(point, axis).det(), 1), 'proper determinant')
+
+# Exact finite dyadic alias: all fine half-step data agree, one coarse sample differs.
+# A polynomial (rather than a delta/distribution) keeps both profiles smooth.
+u = sp.Symbol('u', real=True)
+alias_h = sp.Rational(1, 16)
+half_slots = range(-3, 8)
+polynomial = sp.prod((u-(sp.Rational(k)+sp.Rational(1, 2))*alias_h)**2
+                     for k in half_slots)
+epsilon = sp.Rational(1, 2**80)
+baseline = sp.Rational(1, 100)
+for k in half_slots:
+    require(polynomial.subs(u, (sp.Rational(k)+sp.Rational(1, 2))*alias_h) == 0,
+            'identical fine gradient/coframe sample')
+coarse_delta = epsilon*polynomial.subs(u, alias_h)
+require(coarse_delta > 0, 'nonzero original coarse midpoint change')
+require((baseline+coarse_delta)**2 > baseline**2, 'changed coarse nonvacuum energy')
+
+out = {
+    'status': 'PASS',
+    'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    'material': {'components': 2, 'generic_fine_records': len(records),
+                 'coarse_intervals': length, 'identity': 'C3(C3(Psi))=C9(Psi)',
+                 'gradient': 'D_H Cq(Psi) equals selected D_h(Psi)'},
+    'symbolic_odd_index_composition': True,
+    'off_primary_geometry_fixture': {'coframe_entries': 16, 'outgoing_links': 4,
+                                    'nonzero_residual_slots_each': 6,
+                                    'mesh': str(h), 'ratios': [3, 3, 9],
+                                    'composition': 'all four full4x4 proper links exact',
+                                    'uniform_C3_inverse_claimed': False},
+    'dyadic_alias': {'fine_half_step_samples_equal': len(list(half_slots)),
+                     'original_coarse_sample_differs': True,
+                     'profile_oracle_or_CPTP_coarsener_supplied': False},
+    'scope': 'new field-coordinate/index identities only; no Euler/GR-root/rank/heat/native-word replay',
+    'physical_refinement_or_source_naturality': False,
+    'GR_closed': False,
+}
+print(json.dumps(out, indent=2)+'\n', end='')
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "c524feee75b72dd501c2adae85524df226404e41bc41c860295a4b95d2e839a8",
+  "material": {
+    "components": 2,
+    "generic_fine_records": 28,
+    "coarse_intervals": 3,
+    "identity": "C3(C3(Psi))=C9(Psi)",
+    "gradient": "D_H Cq(Psi) equals selected D_h(Psi)"
+  },
+  "symbolic_odd_index_composition": true,
+  "off_primary_geometry_fixture": {
+    "coframe_entries": 16,
+    "outgoing_links": 4,
+    "nonzero_residual_slots_each": 6,
+    "mesh": "1/90",
+    "ratios": [
+      3,
+      3,
+      9
+    ],
+    "composition": "all four full4x4 proper links exact",
+    "uniform_C3_inverse_claimed": false
+  },
+  "dyadic_alias": {
+    "fine_half_step_samples_equal": 11,
+    "original_coarse_sample_differs": true,
+    "profile_oracle_or_CPTP_coarsener_supplied": false
+  },
+  "scope": "new field-coordinate/index identities only; no Euler/GR-root/rank/heat/native-word replay",
+  "physical_refinement_or_source_naturality": false,
+  "GR_closed": false
+}
+```
+
+```python
+"""Changed small coarse-effect/full-norm controls, not a GR or native tower replay."""
+from itertools import product
+from pathlib import Path
+import hashlib
+import importlib.util
+import json
+import sys
+
+import sympy as sp
+from sympy.polys.matrices import DomainMatrix
+
+ROOT = Path.cwd()
+OWNER = ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+owner_sha256 = hashlib.sha256(OWNER.read_bytes()).hexdigest()
+if owner_sha256 != '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c':
+    raise RuntimeError('Changed native owner: inspect before running')
+spec = importlib.util.spec_from_file_location('coarse_effect_native_20261027', OWNER)
+native = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = native
+spec.loader.exec_module(native)
+field = native.GOLDEN_FIELD
+
+
+def require(condition, label):
+    if not condition:
+        raise RuntimeError(label)
+
+
+def dm(M):
+    return DomainMatrix.from_Matrix(sp.Matrix(M)).convert_to(field)
+
+
+def equal(A, B):
+    if hasattr(A, 'shape'):
+        return dm(A) == dm(B)
+    return field.from_sympy(A-B) == field.zero
+
+
+p, a, G = native.P, native.A, sp.Matrix(native.G_LOCAL)
+I2, I4 = sp.eye(2), sp.eye(4)
+F0 = sp.diag(1, 0)
+F1 = G*F0*G.T
+require(not equal(F0*F1, F1*F0), 'noncommuting one-packet tests')
+
+
+def count_effects(F):
+    out = [sp.zeros(4) for _ in range(3)]
+    for bits in product((0, 1), repeat=2):
+        factors = [F if bit else I2-F for bit in bits]
+        out[sum(bits)] += sp.kronecker_product(*factors)
+    require(equal(sum(out, sp.zeros(4)), I4), 'count effects sum to identity')
+    for E in out:
+        require(equal(E.T, E) and equal(E*E, E), 'positive count projectors')
+    return out
+
+
+B0, B1 = count_effects(F0), count_effects(F1)
+effects = [sp.zeros(16), sp.zeros(16)]
+for k, l in product(range(3), repeat=2):
+    # g1(q0,q1)=(q0^2+q1)/2; all node weights are rational simplex points.
+    g1 = (sp.Rational(k, 2)**2+sp.Rational(l, 2))/2
+    require(0 <= g1 <= 1, 'positive bounded node probability')
+    M = sp.kronecker_product(B0[k], B1[l])
+    effects[1] += g1*M
+    effects[0] += (1-g1)*M
+require(equal(effects[0]+effects[1], sp.eye(16)), 'joint POVM normalization')
+
+# This all-column identity proves the iid expectation and its jets for all rho.
+expected = (sp.kronecker_product(F0, F0, I2, I2)/4
+            +sp.kronecker_product(F0, I2, I2, I2)/8
+            +sp.kronecker_product(I2, F0, I2, I2)/8
+            +sp.kronecker_product(I2, I2, F1, I2)/4
+            +sp.kronecker_product(I2, I2, I2, F1)/4)
+require(equal(effects[1], expected), 'complete Bernstein effect identity')
+q0, q1 = sp.symbols('q0 q1', real=True)
+target = (q0*q0+q1)/2
+bernstein = (q0*q0+q0)/4+q1/2
+require(sp.expand(bernstein-target-q0*(1-q0)/4) == 0, 'finite value debt')
+require(sp.diff(bernstein-target, q0) == (1-2*q0)/4, 'finite derivative debt')
+rho_vector = G*G*sp.Matrix([1, 0])
+rho = rho_vector*rho_vector.T
+z0, z1 = sp.trace(F0*rho), sp.trace(F1*rho)
+actual = sp.trace(effects[1]*sp.kronecker_product(rho, rho, rho, rho))
+require(equal(actual, bernstein.subs({q0: z0, q1: z1})), 'actual Golden packet expectation')
+
+# New literal three-gate rotor. The n-bit controlled table below is an algebraic
+# target, NOT an emitted controlled native gate/word.
+word = native.Execution(2, (), (), (native.Gate('CX', (0, 1)),
+                                   native.Gate('G', (0,)),
+                                   native.Gate('CX', (0, 1))), native.G_CX)
+W = sp.Matrix(native.word_matrix(word, max_qubits=2, max_expanded_stages=3))
+X = sp.Matrix([[0, 1], [1, 0]])
+require(equal(W, sp.BlockMatrix([[a*I2, -p*X], [p*X, a*I2]]).as_explicit()),
+        'literal rotor endpoint')
+T = sp.kronecker_product(I2, sp.diag(0, 1))
+comm = W*T-T*W
+require(equal(comm.T*comm, p*p*I4), 'exact nonzero local full norm p')
+require(equal((W-I4).T*(W-I4), 2*(1-a)*I4), 'operator difference is not small')
+lambda_bit = sp.diag(p, p*p)
+lambda_local = sp.kronecker_product(lambda_bit, lambda_bit)
+require(equal(sp.trace(lambda_local*W), a), 'positive Golden anchor')
+branches = []
+for bits in (1, 2, 3):
+    dim = 2**bits
+    Pbad = sp.zeros(dim); Pbad[-1, -1] = 1
+    V = sp.eye(4*dim)+sp.kronecker_product(Pbad, W-I4)
+    test = sp.kronecker_product(sp.eye(dim), T)
+    C = V*test-test*V
+    require(equal(C.T*C, p*p*sp.kronecker_product(Pbad, I4)),
+            'full controlled norm independent of branch weight')
+    LambdaR = sp.kronecker_product(*([lambda_bit]*bits))
+    overlap = sp.trace(sp.kronecker_product(LambdaR, lambda_local)*V)
+    require(equal(overlap, 1-p**(2*bits)*(1-a)), 'ALL-work Golden Choi overlap')
+    branches.append({'program_bits': bits, 'full_body_dimension': 4*dim,
+                     'bad_Golden_weight': 'p^'+str(2*bits),
+                     'full_metric_norm': 'p',
+                     'full_Choi_overlap': '1-p^'+str(2*bits)+'*(1-a)'})
+
+out = {
+    'status': 'PASS',
+    'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    'native_owner_sha256': owner_sha256,
+    'positive_effect_fixture': {'independent_packets': 4, 'full_columns': 16,
+                                'features_noncommuting_on_one_packet': True,
+                                'degree_per_feature': 2, 'node_simplex_rows': 9,
+                                'Bernstein_target': '(q0^2+q1)/2',
+                                'actual_value': '(q0^2+q0)/4+q1/2',
+                                'nonzero_finite_value_and_jet_debt_retained': True},
+    'literal_local_rotor': {'raw_stages': 3, 'all_columns': 4,
+                            'word': 'CX(r,s);G(r);CX(r,s)', 'commutator_norm': 'p'},
+    'controlled_table_algebra': branches,
+    'full_Choi_trace_norm': '2*sqrt(1-[1-p^(2n)*(1-a)]^2); analytic pure-state formula',
+    'dense_Choi_density_or_controlled_native_word_emitted': False,
+    'full_metric_transport_from_Born_error': False,
+    'physical_source_price_or_GR_closure': False,
+}
+print(json.dumps(out, indent=2)+'\n', end='')
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "c07f369dfa3b796db0115facca09668c1505090f2a8fb9f9566609223bcd8fd7",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "positive_effect_fixture": {
+    "independent_packets": 4,
+    "full_columns": 16,
+    "features_noncommuting_on_one_packet": true,
+    "degree_per_feature": 2,
+    "node_simplex_rows": 9,
+    "Bernstein_target": "(q0^2+q1)/2",
+    "actual_value": "(q0^2+q0)/4+q1/2",
+    "nonzero_finite_value_and_jet_debt_retained": true
+  },
+  "literal_local_rotor": {
+    "raw_stages": 3,
+    "all_columns": 4,
+    "word": "CX(r,s);G(r);CX(r,s)",
+    "commutator_norm": "p"
+  },
+  "controlled_table_algebra": [
+    {
+      "program_bits": 1,
+      "full_body_dimension": 8,
+      "bad_Golden_weight": "p^2",
+      "full_metric_norm": "p",
+      "full_Choi_overlap": "1-p^2*(1-a)"
+    },
+    {
+      "program_bits": 2,
+      "full_body_dimension": 16,
+      "bad_Golden_weight": "p^4",
+      "full_metric_norm": "p",
+      "full_Choi_overlap": "1-p^4*(1-a)"
+    },
+    {
+      "program_bits": 3,
+      "full_body_dimension": 32,
+      "bad_Golden_weight": "p^6",
+      "full_metric_norm": "p",
+      "full_Choi_overlap": "1-p^6*(1-a)"
+    }
+  ],
+  "full_Choi_trace_norm": "2*sqrt(1-[1-p^(2n)*(1-a)]^2); analytic pure-state formula",
+  "dense_Choi_density_or_controlled_native_word_emitted": false,
+  "full_metric_transport_from_Born_error": false,
+  "physical_source_price_or_GR_closure": false
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
