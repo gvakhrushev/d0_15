@@ -11396,3 +11396,28 @@ fields are still locator evidence: proof dependencies and declared
 applications retain their own types, and no semantic or scientific acceptance
 is inferred. Regression controls cover correct and wrong owners, mixed-owner
 ambiguity, missing locators and unresolved names.
+
+The clean-snapshot declaration receipt at
+`801a688b6c6fef01ece882e5e5ab71ff0be77c58` is
+[`archive_graded_matrix_trace_declarations_2026-10-27_801a688b.json`](sources/d0_proof_architecture_formalization_2026-10-24/archive_graded_matrix_trace_declarations_2026-10-27_801a688b.json)
+(SHA-256 `8de9f8a03d134bb54679371b3ef286f9ac0b8566f6e3544a231a536272bd7fb7`).
+It records elaborated matrix Gram, general trace and level-zero trace types and
+axioms alongside the separate chain theorem. The real Hodge claim's
+owner-aware reuse output is
+[`hodge_owner_aware_reuse_2026-10-27_801a688b.json`](sources/d0_proof_architecture_formalization_2026-10-24/hodge_owner_aware_reuse_2026-10-27_801a688b.json)
+(SHA-256 `9b5a5e5b05efcded8b6ff53e4c61c7da9c07f107972e03309522466ac01c45ab`):
+the new declarations resolve in their declared modules, while the historical
+`hodge_mass_trace_sum` name remains unresolved. This is not semantic
+acceptance of the claim.
+
+At that same clean snapshot, the current all-claim locator replay had 2,584
+atoms resolved in their listed modules, four unresolved and 178 rows without
+locators. The cold-start receipt
+[`proof_architecture_cold_start_summary_2026-10-27_trace_801a688b.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_trace_801a688b.json)
+(SHA-256 `34777ac943cd892ad2e4699f60e06360802eb20fd62482bcb0c127dc29157039`)
+found all 169 required references in 24/24 cases and passed the impact
+control. The matching search comparison
+[`proof_architecture_search_process_comparison_2026-10-27_trace_801a688b.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_trace_801a688b.json)
+(SHA-256 `22473fe39f60125bb53ba3d2195de5d972b5d0c9ddb9c9400dc1968ed42dcb4b`)
+retains its exact query fixture and source links. These counts are retrieval
+and declaration evidence, not accepted C0 coverage.
