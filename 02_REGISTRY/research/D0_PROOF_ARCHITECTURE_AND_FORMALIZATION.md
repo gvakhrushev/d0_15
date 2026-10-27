@@ -10560,6 +10560,14 @@ This is a stronger same-carrier mathematical application only. It does not
 derive the CAR generator/preparation, choose a physical source, prove the full
 40 varied Cartan or 16+24+2 Euler system, freeze or accept C0, or close GR.
 
+The registry crosswalk remains at its honest module scope: `D0.All` imports
+`D0.Geometry.NonvacuumBrinkmannStencil`, and `formal_support.csv` points that
+module to the nonvacuum recovery owner and this artifact. No current claim row
+or gravity-assembly application names the new declarations. Their immediate
+consumer is the existing same-record cubic CAR/source theorem; they are not
+recorded as an accepted claim or as discharging the physical-source selection
+premise. The supplying research owner #334 remains open Draft.
+
 The compiled declaration inventory contains the 14 relevant profile,
 same-record, CAR, source and refinement declarations. Each declaration has
 axiom footprint `Classical.choice`, `Quot.sound`, and `propext`. Its source
