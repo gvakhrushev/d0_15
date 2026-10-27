@@ -16078,3 +16078,166 @@ two owned paths change; whitespace check passes. This validation note
 changes no scientific input. No old certificate/heat/full128/Lean replay,
 CI acceptance or physical GR promotion is asserted. Same-PR publication
 retains Draft/IN_PROGRESS and all remaining parent duties.
+
+
+### 27 October - compose true clock/gain with simultaneous SOURCE budgets
+
+SAME #334 / constitutive/native-programme-v1; native realization and final
+composition, inputd59ff834. Previous goal turn made verified progress:
+7cp777--784 extends the one-bank SOURCE identity to controlled correlations
+and a genuine connected native constructor. The named parent application
+is now the simultaneous parameter budget for the complete selected source,
+not another separate smallness assertion. No closure status is presumed.
+
+Consume7bj515--520,7ch687--700,7ck730/733--741,7cn760--770,
+7co771--776 and7cp777--784. Keep the exact native weak reporter shape,
+new actual rank/clock/Gamma, complete moment covector, decoded field and
+all-column metric promises. Analyze the actual R*zeta cancellation, weak
+strength/readiness and normalization dependence before choosing n and
+compiler accuracy. Determine whether correlation, source/query/copy
+counts, true full-operator compiler errors and ambient gradient mismatch
+can be made small simultaneously. If a circular or non-small component
+survives, isolate it exactly rather than asserting diagonal existence.
+The smallest decisive check is the resulting finite-budget inequality or
+an exact counter to an unjustified uniformity/parameter-order inference.
+No GR root, rank census, extra action, fitted price, selector or physical
+admission is introduced. Existing context xi/cut/scene/duration terms and
+all genuinely independent raw rows retain their scopes.
+
+Readonly assistants inspect disjoint aspects of this one owned application;
+all scratch remains private. Only the existing primary residual memo and
+this brief may change. No new task/result/claim/acceptance edge, Ready,
+retirement, merge or scientific promotion. Proved finite budget is supporting
+source composition until the full physical and refinement hypotheses hold.
+
+
+27 October result, primary7cq785--796. Constructed one simultaneous
+fixed-h small-residual family for the specified native local graph,
+retaining real clock/rank, correlated SOURCE, independent temporal legs,
+actual same-body field/metric map and full operator errors. This is a NEW
+execution family, not equality with the old finite Q_(h,d) query. Its
+mathematical source remains the original Book functional and exact
+sigma-minus click with the original lambda_minus; no Einstein-valued
+table, fitted source/affine correction or physical admission is inserted.
+
+Equation785 retains the derived exact-click comparison Gamma at the
+actual decoded point and new free-input rank. Fresh bank/TAG/query work
+is blank, not a rank multiplier or new readiness. Original fixed beta/z
+supplies no z(N) law; all absolute modes and actual N stay paid. All
+finite compiled-source differences remain errors, not an asserted exact
+Gamma factorization. Any genuinely moving shape/context keeps its source.
+
+Centered operator786 applies the existing779/780 proof to the SAME
+kernel after removing its scalar midpoint. Its spectral half-width w
+cancels the true alpha_K*gamma in |lambda|w/Gamma. The resulting K_osc,h
+in787 is independent of readiness/alpha, so explicit n~k^2m makes the
+connected-tree correlation debt<=1/m without an unproved uniform K_h.
+Actual bank cones/TAG omission and first-moment coefficient are unchanged.
+
+A fixed ACTUAL native effect frame is calibrated once through788's strict
+Neumann margin; its real reader words then stay fixed as m,n/classical
+precision grow. Their effect/decoder map changes explicitly; errors are
+not discarded for the old kernel. Real coherence, full packet columns,
+noncommuting-feature/read-once guards and true inverse norms are retained.
+The FULL-column own-bank phase/count guard excludes all reader(t,a)
+outcome/work factors in TAG=t even on dirty role columns. Legal-input
+correctness alone would not establish the intrinsic metric.
+
+The new paired-toggle router789 acts correctly on ALL dirty routing-work
+columns. A single compute/control/uncompute router fails with exact norm
+error2. Actual C_i is q/bank/X-blind with exactfalseTAG; S_i uses fixed
+q,r predicate width. Its q0 block is exactly I for any matched actual C.
+Each independent raw comparator leg has zero IDEAL real source by the
+homogeneous common cold scalar on the full TAG/r/helper support, not by
+linking forward/reverse velocities. Huge growing TAG predicate counts
+enter late full-prefix/future error791, without L_C*||g|| or q-mixing rows.
+Full nested actual inverse inventory is(I+tau)^3, not inverse-name length;
+port formula120g+8c+64i and actual off-port expansion are retained.
+
+The changed direct target792 uses the ORIGINAL exact click35 with ONE
+inherited genuine fixed gamma/alpha shape and ONE outer Bernstein layer.
+The exact owned pointwise-null/all42 primary gives the FULL ambient target
+gradient0 on the prescribed free-interior/fixed-Dirichlet chart. The target
+is iota_xi(pr_int R_chi(A_actual p,xi)); independent collar/context xi
+sources remain. No old fixed inner Bernstein derivative bias is declared
+zero. Actual finite body/material points retain their true displacement.
+
+At fixed h, body/S errors polynomially small in m, n chosen by794, and
+fixed reader words give L_lead=polylog(m) and g_m/Gamma=O_h(m^-1/2).
+Arbitrarily huge C costs are frozen before late classical/threshold/fair
+coin/full-prefix precision; they do not lengthen the leading readers.
+Owned quantitative compiler bounds, not mere density, control true
+length-times-error. Equation796 yields joint normalized APPROXIMATE
+stationarity on the stated SOURCE/body/router/TAG/reader/COPY/ledger/
+phase/finite-cone matrix graph, with the actual sqrt22 dual conversion.
+INTERNAL whole heat first source is0 by606; its absolute value remains.
+There is no exact finite root, physical continuous-angle/word admission,
+arbitrary global-cut neutrality or completed refinement claim. Off-shell
+weak-source discrepancy37 and all independent xi/scene/boundary/duration/
+rank/Info/R/work/valuation sources retain their original obligations.
+
+One new checker passed CPython3.9.6/SymPy1.14.0. It checks ALL32 target
+router columns including dirty flag, exact bad-router norm2 witness,
+and all16 q0 columns for a genuinely non-Boolean native comparator.
+ControlledSWAP is a mathematical target in the fixture, not an emitted
+native router. Pinned inverse_word computes actual triple nested port/
+offport inventories192/234; inverse-of-inverse inventory is different.
+A native Golden effect frame reconstructs real coherence exactly. A new
+two-site original34 scalar toy keeps moving normalized density and exact
+null first-jet cancellation; finite inner Bernstein gradients remain
+nonzero. Gain/spectral-width identities are checked symbolically. No GR
+root/rank/SVD/oldheat/full128 CAR/Lean replay was run or implied.
+
+Proof25866 / SHA256
+3f9cb1f24f91a504f4d47486fcf4f7c9946949f9a691abe866d556784ad5c5c0;
+section35776 / SHA256
+de43d076c35c5293acf18fb75ff7e79f88b0f2d26d71d09fe6d7ecb1ff9d3976.
+Code7908 / SHA256
+39f348d5843272c89d57b086ff152528aad675c8821d4d6d8cb5fc2121d6e7c9;
+observedJSON1570 / SHA256
+9c23ac1d758ed7227e4fcdd75e94b35c9e9516598732d55610c63745f8f2a6f9.
+Complete executed code and observed JSON are embedded byte-exactly.
+Original paid-writer240407/10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05
+and nativeowner17833/222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c
+stay unchanged. No expected receipt or original source is rewritten.
+
+Incomingd59ff834 primary2526305 / SHA256
+7bac13e93fa24ce96ceb5f6049011ae100c7cca0646b2545f9e0d47ab9bba165;
+brief1045280 / SHA256
+ca97c66f0dcf004d074a0efc124d4c5ab9b6cb58650edfa8d694ee3490ffd799.
+Removing7cq restores EVERY incoming primary byte; the incoming brief is
+an exact prefix. Only the same two owned paths change. GR_closed=false;
+positive_gr/raw216 remain open. No new task/result/claim/acceptance edge,
+Ready, retirement, merge or scientific promotion. Full source review and
+affected structural guards are recorded below; this supporting template
+is not independent assembly/physical acceptance.
+
+
+Final FULL SOURCE-ONLY ACCEPT by native_source_application,
+retained_metric_map and stationary_root_transfer. Each read the entire
+final785--796 proof, complete executed Python and observed JSON; all
+verified final proof/section/manifest/source pins, both byte-exact fences
+and executed sourceSHA. Reviews covered actual frame/calibration, full
+TAG/r/helper/dirty-role operator scope, BOTH independent C legs, correct
+triple inverse inventories, direct-click target/finite-inner-bias boundary
+and the simultaneous m/n/late classical precision order. The final two
+explicit guards (all-column own-bank cancellation and prescribed original
+Dirichlet insertion) were reviewed at25866/35776. No reviewer reran the
+frozen code or changed the repository; these are source reviews, not
+independent assembly acceptance, CI acceptance or physical admission.
+
+
+Affected final guards PASS with explicit GIT_WORK_TREE: validate_work.py,
+validate_agent_protocol.py, gr_assembly.py check, validate_repo.py.
+Counts remain54 active/98 results/5 discharged/22 obligations and
+scientific_promotion=false;889 claims/31 assumptions/58 aliases/
+183 formal_support/918 lean_closure, zero warnings. Supporting template
+parsed without any acceptance mutation. Frozen proof/code/JSON pins,
+both byte-exact fences, AST/sourceSHA and both unchanged source owners
+pass; removing7cq restores every incoming primary byte and the incoming
+brief is an exact prefix. Only the same two insertion paths change,
+whitespace clean. This validation note changes no mathematical input.
+No old certificate/heat/full128/Lean replay, CI pass or physical promotion
+is asserted. The GitHub connector had a transport failure; direct GitHub
+metadata confirms ownerd59ff834/open/Draft/unmerged, and ordinary fetch
+then succeeds with the same owner head. Same-PR publication follows.
