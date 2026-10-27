@@ -98,12 +98,26 @@ def source_exact(n, a=S0, b=S1):
     return answer
 
 
+
+def causal_value(k, weights, rates):
+    """P15 Bellman self-reading: conditional native port law, NO IID reset."""
+    if k == 0:
+        return 0.0
+    q = sum(weights[i]*rates[i] for i in range(2))
+    local = ((1-q)*log((1-q)/P)+q*log(q/P**2))/LNPHI
+    w0 = tuple(weights[i]*(1-rates[i])/(1-q) for i in range(2))
+    w1 = tuple(weights[i]*rates[i]/q for i in range(2))
+    return (local + (1-q)*causal_value(k-1,w0,rates)
+            +q*causal_value(k-1,w1,rates))
+
 def main():
     close(P+P*P,1,"Golden Kraft p+p²")
     expected_KL = (0.0289455137,0.0592889532,0.0909326027,0.1237946758)
     expected_memory = (0.0,0.0013979258,0.0040960616,0.0080126209)
     for n in range(1,5):
         kl,memory=score(n)
+        w,rates,_ = native_diagonal()
+        close(causal_value(n,w,rates),kl,f"n={n} Bellman P15",tol=1e-10)
         close(kl,expected_KL[n-1],f"n={n} KL",tol=1e-10)
         close(memory,expected_memory[n-1],f"n={n} memory",tol=1e-10)
         print(f"n={n} KL={kl:.10f} temporal_memory={memory:.10f}")
