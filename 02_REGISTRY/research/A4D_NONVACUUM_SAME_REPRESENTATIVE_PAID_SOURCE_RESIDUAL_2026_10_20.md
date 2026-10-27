@@ -83249,6 +83249,548 @@ print(json.dumps(out, indent=2)+'\n', end='')
 }
 ```
 
+## 7cs. A paid return test reads the native price contrast on its scalar sector
+
+27 October2026. SAME #334 / constitutive/native-programme-v1; native realization and composition, input498d2b57718e0c8135bb4f10727d5be0371e3468. Consume the actual q0 layout of7ck/7cq, the literal common-clock price contrasts of7cr, the balanced recording of7aj and the native future-test/statistical interface417--422. The parent is7cr807's missing finite positive response for its normalized price contrast. This supplies a specified paid testMap on a scalar-corner sector, with a separate complete test action and a nonzero detector-source control. It does not make a detector compulsory or select a new physical principle.
+
+### 1. The actual protected-input return is scalar under the stated roles
+
+Fix ONE finite7cr catalogue at h,m, including its actual native words U_sigma=A_sigma^* Qhat A_sigma, initial/closing embedding i, ORIGINAL complete clock N, full internal dimension d, rank R and outer Book parameter 0<zeta<1. These are the original price inputs; blank work is not free input rank. Keep arbitrary protected X, Spin and actual oldRIGHT/reference, including their entanglement. The dedicated exit bit q is initialized in0 and is distinct from the SourceI helper port.
+
+In the ACTUAL completed q0 branch the paired-toggle routers are I on every column, each source body is parked on its private bank, and the actual prepared bank/TAG/reference state is independent of X. Thus A_sigma,q0=I_X tensor A_sigma,0 on the initialized work. The ACTUAL completed Qhat excludes X and oldRIGHT and restores the protected Spin/helper factor on all columns; it may have finite table error or mix TAG. Contract the genuine query/source blanks only after this actual preparation. Consequently
+
+    C_sigma=i^* U_sigma i=c_sigma I_R,
+    q_sigma=|c_sigma|^2, f_sigma=1-q_sigma,
+    F_sigma=f_sigma I_R,
+    J_sigma=-R log(1-zeta+zeta q_sigma).              (808)
+
+The first equality is a full protected-input operator identity, not an IID scalar mean or a correctness assumption about Qhat. The actual whole reflection makes c_sigma real; a strict positive return collar is supplied when dividing by it. If an additional ordinary query/work factor is independently FREE, or a compiled macro violates the spectator/port-restoration guards,808 is not established. Retain its full matrix effect and its own tomography/error. The original7aj known-port theorem is a distinct narrower scalar sector; no cut is silently enlarged.
+
+For any allowed protected state, including entanglement with an untouched external reference, the actual full blank-return probability is q_sigma and the complementary total probability is f_sigma. For the7cr matched catalogue the complete INTERNAL heat is the same at the SAME N,d, so the original H+J price contrast is exactly J_+-J_-. The existing direct-click Gamma0 is the derived comparison gain at its actual centre, not a claim that the compiled price factors exactly. Independent extra Info/R/work/boundary terms remain their real price contrasts.
+
+### 2. A literal balanced pointer records the full return
+
+Let B be the b ACTUAL ordinary wires initialized blank in i, including the genuine helper boundary when it belongs to that cut; protected Spin, free X and oldRIGHT are not copied as blanks. Allocate b NEW ordinary record wires initially0. Execute the existing literal CX product
+
+    D_B=product_(j=1)^b CX(B_j,r_j),
+    U'_sigma=D_B(U_sigma tensor I_record)D_B,
+    i'=i tensor |0...0>_record.                     (809)
+
+Both products are physically executed and have b CX each; no exact AND gate or copied unknown quantum state is assumed. The first D_B fixes i' pointwise. The final D_B stores the ACTUAL output bitstring in the new record, including every nonzero/failure string. It is not an inverse of an already sealed record. With Pi_0 the computational all-zero projector of those record wires,
+
+    i'^* U'_sigma i'=C_sigma,
+    i'^* U'_sigma^* Pi_0 U'_sigma i'=C_sigma^*C_sigma=q_sigma I_R. (810)
+
+Before U_sigma, the full-column identity j_record^* D_B^* Pi_0 D_B j_record=P_B0 holds on the ENTIRE original input/work space, not only the prepared branch. The all-zero label is one joint outcome of the existing computational-pointer response; retaining all bits avoids inventing a coherent OR oracle. Its physical registration/readout is the already supplied Book01/7av pointer-test interface and its own actual operations/cost, not a claim that native_execution.py itself implements a measurement.
+
+All report records remain coherent and readonly until the declared controller/readout. Once sealed into immutable history they are not uncomputed or used as scratch. On a matched reflection U_sigma, U'_sigma is an exact full-column reflection. Its actual primitive clock is N+2b and its full internal dimension is 2^b d, while the initial rank remains R. For the same INTERNAL501/502 representation and fixed beta,
+
+    H'_(N+2b,2^b d)(D_B(U_sigma tensor I)D_B)
+      =H_(N+2b,d)(U_sigma)+b log(2)/beta.            (811)
+
+All modes of the new clock, both grades and the entire zero index are retained. The right side is evaluated at the NEW clock; it is not the old H_(N,d). For a common matched +/- catalogue the new heat in811 is also common, and810 makes the new one-meter H+J contrast equal the OLD H+J contrast. Other selected valuations and the physical terminal reader have their own actual prices. Different beta/scene/clock rules require their own comparison.
+
+For an OLD unitary variation with both pointer-copy words fixed and initial i fixed,810 gives delta C'=delta C exactly, including independent old forward/inverse rows. On the supplied INTERNAL reflection base606 supplies zero heat FIRST row in both executions. This transports those old H+J rows; it does not freeze new detector controls. Their independent raw rows and any moving initial cut, scene or reader costs remain.
+
+### 3. New detector controls are genuine sources
+
+For a real skew generator K on a raw final COPY support, let the actual cold variation at the balanced base be dot C_K. Its complete feedback row is
+
+    D_K J'=-2 zeta Re Tr[(aI+zeta C^*C)^(-1) C^* dot C_K],
+    a=1-zeta.                                      (812)
+
+There is no general reason for812 to vanish merely because810 preserves the base return. The new exact native fixture below has one blank port, free Spin plus oldRIGHT (R=8), a fresh report bit, U=G^* Z G and D=CX(port,report). With p=phi^-1, a_G=sqrt(p), c=p^3 and s=2a_G p, its ten-stage balanced word sends the initialized port/report to c|00>-s|11>. The supported real skew K=-J_port tensor X_report on the FINAL copy has ||K||=1 and
+
+    dot C_K=-s I_R,
+    D_K J'=2R zeta c s/(a+zeta c^2)>0.               (813)
+
+This generator is an ambient local matrix comparison, not permission to vary a fixed native primitive continuously. Its all32-column base is an actual G/SourceI/CX word. The full INTERNAL heat FIRST row at this reflection base is zero by606, so it does not cancel813. Thus even a paid, value-preserving meter is not automatically a stationary enlargement. Actual admissible COPY normals, physical task/selection and any other Info/work terms remain to be derived or bounded.
+
+### 4. Serial trials without cloning or erasing the protected state
+
+One may instead use separately supplied legitimate fresh preparations for each test. A stronger serial construction is possible IF the declared task permits any current protected state in the full K space as an input to the next code, the return corner is independently established to be c_sigma I_K on that entire space, and the required fresh private work is genuinely available. Equation808 on the original rank-R support alone does not establish that full-K identity when d_K>R; prove it from the actual all-column spectator and restoration guards, or retain it as an additional hypothesis. This is a typed operational condition, not inferred from scalarity or from a single fixed initial density.
+
+After one810 test, retain its complete private work and report bitstring. Move the physical helper-port output into a NEW blank archive wire by the literal three-CX SWAP. This transfers any entanglement to the archive and leaves the physical port in0 on the supplied fresh-blank input; it is a paid unitary transfer, not erasure or postselection. Later trial words exclude every prior work/record/archive wire and the original oldRIGHT. Their private source/query/TAG/reference work and report bits start from genuinely fresh blanks. The same physical Spin and free X can remain entangled with all past archives; they need not be reset or cloned.
+
+Write K_(sigma,r) for the actual branch operator on protected K associated with the complete output bitstring r. The report copies record r and do not discard the corresponding work. Under the additional full-K scalar-corner hypothesis,
+
+    K_(sigma,0)^* K_(sigma,0)=q_sigma I_K,
+    sum_(r!=0)K_(sigma,r)^*K_(sigma,r)=f_sigma I_K.  (814)
+
+These identities tensor the identity on EVERY untouched previous archive/reference. Hence, conditioned on any retained fine past and any resulting protected state, the next coarse return probability is exactly q_sigma. For a predetermined schedule of M plus and M minus trials the two sets of coarse indicators have the corresponding binomial laws; the full fine-record distribution can still depend on the protected state/history. All records can remain coherent until the final response test because future trial words never address old ones. This proves no preservation of the unknown protected state itself; its post-failure state may change.
+
+When the task admits only a specified initial state or a narrower state family, use this serial construction only after proving that its post-trial states remain admitted. Otherwise supply actual independent permitted preparations or a paid state-recovery operation. If fresh active/port/archive resources are not supplied by the physical regime, their availability remains an explicit premise. There is no unknown-state cloning, free reset, discarded failure or unconditional infinite-memory claim.
+
+For T=2M trials, b original blank wires per trial including the shared physical port, this literal layout uses T(N+2b+3) raw stages before control/readout. It allocates b-1 new private work wires, b record wires and one port-archive wire per trial, plus the single shared port. If no other fresh wires occur, let d_K be the FULL dimension of the protected carrier, including any columns outside the actual input support. The full internal dimension before the controller is
+
+    d_T=d_K 2^(1+2bT),   rank(P_initial)=R.          (815)
+
+Extra declared test/reader/controller work multiplies d_T and adds its real stages. N_controller,N_registration, their primitive inventories, all helper modes and any true book-keeping/Info terms are kept in the actual test programme. Formula815 is not a claim of physical unlimited blank supply.
+
+### 5. The finite positive price-contrast testMap and its accuracy
+
+Use the already supplied computational pointer response on the actual record strings and the ORIGINAL one-code J_sigma from808. Denote a=1-zeta>0 and let an empirical return frequency in each context be qhat_sigma. Suppose its actual pointer/coarse-response error is uniformly bounded by eta_det for EVERY protected/past state and every history, with eta_det=0 for the exact declared pointer projector. The conditional Bernoulli variance is <=1/4; martingale differences at distinct trial steps have zero covariance. Therefore for a predetermined M trials per context,
+
+    P(max_sigma |qhat_sigma-q_sigma|>eta_det+eta)
+       <=1/(2M eta^2).                              (816)
+
+This remains valid if a bounded imperfection produces history-dependent conditional probabilities; an uncalibrated detector or a scalar average error alone is insufficient. Choose M>=ceil[1/(2 alpha eta^2)] to make the statistical failure <=alpha. No random sample has been executed by this theorem.
+
+The scalar map J(q)=-R log(a+zeta q) has |J'(q)|<=R zeta/a on[0,1]. With a known positive benchmark Gamma0 and t>0, define the response of the two actual code contexts
+
+    S_old=(J(q_+)-J(q_-))/(2t Gamma0).
+
+For empirical intervals q_sigma in[L_sigma,U_sigma], monotonicity gives
+
+    J_sigma in[J(U_sigma),J(L_sigma)],
+    S_old in ([J(U_+)-J(L_-) , J(L_+)-J(U_-)])/(2t Gamma0). (817)
+
+If both probabilities have error <=delta, the centre estimate has normalized error <=R zeta delta/(a t Gamma0), before arithmetic and calibration error. For an uncertain gain use an independently certified interval [Gamma_L,Gamma_U] with Gamma_L>0 and divide817 by the positive interval [2t Gamma_L,2t Gamma_U] using all endpoint combinations. A moving/unknown gain is not fixed by the detector; its calibration/readout, confidence and source are paid separately.
+
+The finite readout controller is constructive. It computes the two counts of all-zero strings from the retained report tuple, rounds the two confidence bounds outward, and evaluates the log by
+
+    -log x=2 sum_(k=0)^(L-1) y^(2k+1)/(2k+1)+r_L,
+    y=(1-x)/(1+x),
+    0<=r_L<=2 y^(2L+1)/[(2L+1)(1-y^2)], x in[a,1]. (818)
+
+All coefficients are known rational/dyadic or have certified FPTEAS input intervals; the table is a function of the ACTUAL recorded counts, not an assigned Einstein output or PASS oracle. For each fixed finite M,b,L, implement its reversible XOR-output Boolean map on ordinary active work using the already owned predicate-controlled native compiler, leaving the complete input records unchanged at completed blocks. Include determinant padding, scratch, actual compiler words and output-record copies. A whole-column operator error epsilon_ctl changes the output-event law by at most2 epsilon_ctl. Its full count/precision is chosen after M and all other true resources; no efficient global runtime is claimed. Existence follows at each fixed finite layout from the owned compiler; no large arithmetic controller was emitted or run in this check.
+
+Let V_test be the actual complete finite trial/controller word, i_test its genuine initialized input embedding, and Pi_I the computational output-label projector. The testMap is explicitly
+
+    E_I=i_test^* V_test^* Pi_I V_test i_test >=0,
+    sum_(all labels I, including invalid/error) E_I=I_R.   (818a)
+
+The recorded words, unobserved work, oldRIGHT and invalid labels remain in the FULL experiment. Thus the actual finite outcome is a POSITIVE response tuple indexed by outward interval labels. With exact pointer response it contains S_old with probability at least1-alpha-2epsilon_ctl, less any separately accounted calibration failure. On success, the statistical contribution to its radius is controlled by817; deterministic log/rounding and gain intervals are added explicitly. It is an observable of an actual alternative test protocol under its stated pointer/ACTIVE capabilities, not an exact real derivative from one event.
+
+For a finite field basis of size D_h allocate the corresponding 2D_h contexts and use a union bound. At fixed h,7cr supplies t_m=m^-6 and a positive fixed-h gain lower bound. For example choose probability tolerance of order_h m^-9, normalized statistical tolerance of order m^-3, and allocate alpha/[3m(m+1)] each to sampling, compiled-controller failure and separately calibrated failure. Then a conservative per-context trial count is O_h(D_h m^20/alpha). This is only a count of preparations/readouts: the true word length, full dimension, controller, work, recording and complete price may be far larger. The detector, arithmetic, controller-failure and gain-calibration errors must also meet their stated m-dependent allocations; a fixed nonzero detector error does not vanish by increasing M. The finite observed contrast then composes with806 at the stated confidence. Any multi-level family still requires the actual finite resources and calibration at EVERY level.
+
+### 6. The observer's own complete price is a different object
+
+The response in817 estimates the two ORIGINAL one-code prices, with their ORIGINAL rank/cut/clock. Reusing a protected system does not mean that a later standalone code with all archived past treated as FREE has the same input rank; such a different cut must count that past. The scalar q remains observable against any such past, but R in817 is the original reference rank, not a relabelling of the new process rank. In the declared complete observation programme all new trial work and records start blank, so its own initial protected rank is R and all new dimensions belong to its FULL trace.
+
+Before appending the final arithmetic/registration controller, compress the entire T=2M trial word with ALL its newly allocated work, port archives and report bits returned to their initially blank value. Every old trial output is excluded from later gates and the shared port is restored by the paid swap. Under the same full-K scalar-corner hypothesis used for the serial construction, the full pre-controller corner is therefore
+
+    C_T=(c_+ c_-)^M I_R,
+    J_T=-R log[a+zeta(c_+c_-)^(2M)].                (819)
+
+This is generally neither M(J_++J_-) nor the normalized contrast817. Along a matched variation with positive c_+,c_-, where each of the M plus calls has the same plus first source and each minus call the same minus first source, its feedback first source is
+
+    D J_T= [M (c_+c_-)^(2M)/(a+zeta(c_+c_-)^(2M))]
+       *[(a+zeta c_+^2) D J_+/c_+^2
+          +(a+zeta c_-^2) D J_-/c_-^2].               (820)
+
+The ACTUAL entire test action still includes its full heat at its own N_T,d_T, the archive/record/controller source and any chosen Info/work/stopping terms. A sequential product of balanced reflections with shared X need not be a reflection;606 cannot be applied automatically to that whole product. Appending the actual controller may change the full closing corner further. Compute it for that declared programme; do not substitute819 after changing the word or the cut. Equations819/820 are exact pre-controller comparisons, not a claim of complete test stationarity.
+
+Likewise coarse return probability is not a complete fine record law: distributions(q,f,0,0) and(q,f/3,f/3,f/3) have the same q,f at q=f=1/2 but different full Shannon entropies by(log3)/2. This elementary control does not identify Book Info with Shannon entropy. It shows why coarse response817 cannot erase actual fine records, work or their independent sources.
+
+### 7. Negative control, parent substitution and scientific boundary
+
+If the actual corner is not scalar, one mean return cannot generally recover its log determinant. At zeta=1/16 and protected maximally mixed state, positive return effects C^*C=diag(1,0) and C^*C=I/2 both have mean return1/2, but their feedback determinants are15/16 and961/1024, with ratio961/960. A different cut or free work carrier needs the full effect/tomography or a proved operator error. If ||C-cI||<=epsilon and ||C||,|c|<=1, then ||C^*C-|c|^2I||<=eta=(1+|c|)epsilon; using one state mean q adds at most2R zeta eta/a to the true logdet price. No such approximation is needed for808's exact roles.
+
+The changed native checker executes all32 columns of the eight-stage original SOURCE word and ten-stage balanced detector, with arbitrary Spin/oldRIGHT rank8, and checks the all-input return projector identity on16 original columns. It gives q=p^6,f=4p^3 and the nonzero independent-COPY source813. It validates a NEW two-trial seven-wire/26-stage native word and computes its32-column active core with protected Spin as an exact identity factor: both full joint probabilities q^2,qf,fq,f^2 and the paid archive SWAPs are retained. A second actual32-column word keeps the return effect scalar but flips a free data bit on failure, showing that repeatability of the coarse law does not restore the unknown data. This is not an execution of the original full128 CAR system. The checker also verifies820 symbolically, a nonadditive two-trial feedback control, and the nonscalar determinant and distinct-fine-record controls. A separate rational control checks all four serial branches with a protected state initially entangled with an untouched reference, a history-dependent-bias counter to an iid claim, finite exact binomial coverage, and a case where full protected dimension differs from the input rank; it performs no random sampling, heat/root/rank/SVD, full128 CAR or Lean replay.
+
+The parent substitution is an explicit finite, paid, positive return-response and arithmetic testMap for7cr's actual normalized H+J contrast, under the precise scalar-corner/task/pointer/capability hypotheses above. It gives an attainable error/confidence/resource budget without cloning protected data or inventing a price oracle. The literal native code, all outputs, calibration, FULL separate observer action and independent detector sources remain. It does NOT prove that the test apparatus is stationary, that its finite edit graph is the original physical X_N, that its observation price equals the compared prices, or that one infinite refinement is physically admitted. Full Book03/oldRIGHT/Info/work selection, other independent equations, GR soundness/recovery and the original raw216 terminal remain open. GR_closed=false; positive_gr remains open. No task/result/claim/acceptance edge, Ready, retirement or merge is added.
+
+Input pins: incoming498d2b57 primary blob a33c8414e503822deb83fadccd812f8458fd53e4,2603837bytes/SHA256 0c45aa5b3685c60ab8945ebe424bf02a93adf1cc557d134c7ce596f648112445. Native owner17833bytes/SHA256 222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c. Original Book01/02/03 and paid-writer pins are unchanged from7cr. No original source or expected receipt is edited.
+
+
+### 8. Frozen changed checks and observed receipts
+
+Save each exact Python block outside tracked paths and run from the repository root. The JSON blocks are actual observed results; original source and expected evidence are not rewritten.
+
+#### Native return detector
+
+Code 10893 bytes / SHA256 33e6d61ae0b1a0a6c333b60f3c2bc9f56729d840c5b105f05e9088a2f5725e18; observed JSON 1806 bytes / SHA256 e364933a503594ffc9ad8265eeab0193bb9e786e55cea9840117c5e558eabb2e.
+
+```python
+"""New paid native return detector and serial fresh-work controls only."""
+from pathlib import Path
+import hashlib
+import importlib.util
+import json
+import sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+
+owner = Path.cwd()/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+owner_sha = hashlib.sha256(owner.read_bytes()).hexdigest()
+if owner_sha != '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c':
+    raise RuntimeError('changed native owner')
+spec = importlib.util.spec_from_file_location('paid_return_native_20261027', owner)
+ne = importlib.util.module_from_spec(spec);sys.modules[spec.name] = ne
+spec.loader.exec_module(ne)
+F = ne.GOLDEN_FIELD
+
+
+def need(ok, label):
+    if not ok:
+        raise RuntimeError(label)
+
+
+def dm(A):
+    return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(F)
+
+
+def eq(A, B):
+    if hasattr(A, 'shape'):
+        return dm(A) == dm(B)
+    return F.from_sympy(A-B) == F.zero
+
+
+def mul(*args):
+    out = dm(args[0])
+    for A in args[1:]:
+        out = out.matmul(dm(A))
+    return out.to_Matrix()
+
+
+# Native SOURCE port0, protected Spin1/2, fresh recorder3, immutable oldRIGHT4.
+SI = ne.Gate('SourceI', (0, 1, 2));Ggate = ne.Gate('G', (0,))
+Ginv = (SI, SI, Ggate, SI, SI)
+main = (Ggate, SI, SI)+Ginv
+Dgate = ne.Gate('CX', (0, 3))
+balanced = (Dgate,)+main+(Dgate,)
+unbalanced = main+(Dgate,)
+blank = (0, 3);old = (4,)
+exU = ne.Execution(5, blank, old, main, ne.G_CX_SOURCE_I, 0, (1, 2))
+exV = ne.Execution(5, blank, old, balanced, ne.G_CX_SOURCE_I, 0, (1, 2))
+ne.validate_execution(exV, max_qubits=5, max_expanded_stages=20)
+invU = ne.inventory(exU, max_qubits=5, max_expanded_stages=20)
+invV = ne.inventory(exV, max_qubits=5, max_expanded_stages=20)
+need((invU.gate_count, invU.g_count, invU.cx_count, invU.source_i_count) == (8, 2, 0, 6),
+     'actual original word inventory')
+need((invV.gate_count, invV.g_count, invV.cx_count, invV.source_i_count) == (10, 2, 2, 6),
+     'actual balanced detector inventory')
+need(invU.cut_rank == invV.cut_rank == 8 and invV.full_dimension == 32,
+     'full protected Spin and oldRIGHT rank')
+U = S.Matrix(ne.word_matrix(exU, max_qubits=5));V = S.Matrix(ne.word_matrix(exV, max_qubits=5))
+D = S.Matrix(ne.gate_matrix(exV, Dgate, max_qubits=5));i = S.Matrix(ne.input_isometry(exV, max_qubits=5))
+I = S.eye(32);need(eq(D*D, I) and eq(mul(D, U, D), V), 'all32 balanced-copy columns')
+need(eq(mul(V.T, V), I) and eq(V.T, V) and eq(mul(V, V), I), 'actual full reflection')
+need(eq(mul(D, i), i), 'initial input cut fixed by real pointer copy')
+
+# Fresh recorder insertion only: prove its complete all-input response equals the original port cut.
+j = S.zeros(32, 16)
+for col in range(16):
+    bits = [(col >> (3-k)) & 1 for k in range(4)]  # port, Spin, Spin, oldRIGHT
+    row = bits[0]*16+bits[1]*8+bits[2]*4+bits[3]
+    j[row, col] = 1
+P_record0 = S.diag(*[1 if ((x >> 1) & 1) == 0 else 0 for x in range(32)])
+P_port0 = S.diag(*[1 if ((x >> 3) & 1) == 0 else 0 for x in range(16)])
+need(eq(mul(j.T, D.T, P_record0, D, j), P_port0), 'return pointer identity on all16 input columns')
+
+p, a = ne.P, ne.A
+c = p**3;s = 2*a*p
+C = mul(i.T, V, i)
+need(eq(C, c*S.eye(8)), 'actual scalar cold corner on all protected columns')
+Eret = mul(i.T, V.T, P_record0, V, i)
+need(eq(Eret, p**6*S.eye(8)), 'actual positive return effect')
+need(eq(S.eye(8)-Eret, 4*p**3*S.eye(8)), 'all failure outcomes retained')
+need(eq(p**6+4*p**3, 1), 'genuine complete outcome law')
+
+# A detector gate is an independently variable MATRIX comparison, not a native angle postulate.
+J = S.Matrix([[0, -1], [1, 0]]);X = S.Matrix([[0, 1], [1, 0]])
+H = -S.kronecker_product(J, S.eye(4), X, S.eye(2))
+need(eq(H.T, -H), 'two-wire detector support is skew')
+dC = mul(i.T, H, V, i)
+need(eq(dC, -s*S.eye(8)), 'nonzero independent final-COPY cold first row')
+zeta = S.Rational(1, 16);az = 1-zeta;rank = 8
+source = 2*rank*zeta*c*s/(az+zeta*c*c)
+need(not eq(source, 0), 'new detector feedback source is nonzero')
+
+# The genuine copy conjugacy preserves feedback under a fixed-detector U comparison.
+port_H = S.kronecker_product(J, S.eye(4), S.eye(2), S.eye(2))
+need(eq(mul(i.T, D, port_H, U, D, i), mul(i.T, port_H, U, i)),
+     'fixed detector transports original U first row without a new rank')
+
+# The same single mean does not determine a nonscalar log determinant.
+A = S.diag(1, 0);B = S.eye(2)/2;rho = S.eye(2)/2
+need(S.trace(rho*A) == S.trace(rho*B) == S.Rational(1, 2), 'same return mean')
+det_A = (az*S.eye(2)+zeta*A).det();det_B = (az*S.eye(2)+zeta*B).det()
+need(det_B/det_A == S.Rational(961, 960), 'nonscalar logdet hostile control')
+
+# Scalar return does not imply preservation of an unknown free data bit.
+# CX(port,data) flips that bit on the failure branch, while C=c I on all inputs.
+data_CX = ne.Gate('CX', (0, 4))
+data_word = (Dgate,)+main+(data_CX, Dgate)
+data_ex = ne.Execution(5, (0, 3), (), data_word, ne.G_CX_SOURCE_I, 0, (1, 2))
+Ud = S.Matrix(ne.word_matrix(data_ex, max_qubits=5, max_expanded_stages=30))
+idata = S.Matrix(ne.input_isometry(data_ex, max_qubits=5, max_expanded_stages=30))
+need(eq(mul(idata.T, Ud, idata), c*S.eye(8)), 'scalar corner for arbitrary free data and Spin')
+P_record1 = I-P_record0
+need(eq(mul(idata.T, Ud.T, P_record1, Ud, idata), 4*p**3*S.eye(8)),
+     'state-independent failure effect for changed protected data')
+flipped = S.zeros(32, 8)
+for col in range(8):
+    s1, s2, data = (col >> 2) & 1, (col >> 1) & 1, col & 1
+    row = 16+8*s1+4*s2+2+(1-data)
+    flipped[row, col] = 1
+need(eq(mul(P_record1, Ud, idata), -s*flipped),
+     'actual failure branch flips free data without a cloning/reset assumption')
+
+# Two literal trials: each port is retired by a real 3-CX SWAP into a fresh archive.
+def sw(x, y):
+    return (ne.Gate('CX', (x, y)), ne.Gate('CX', (y, x)), ne.Gate('CX', (x, y)))
+
+
+def trial(record, archive):
+    gate = ne.Gate('CX', (0, record))
+    return (gate,)+main+(gate,)+sw(0, archive)
+
+
+word = trial(3, 4)+trial(5, 6)
+serial = ne.Execution(7, (0, 3, 4, 5, 6), (), word, ne.G_CX_SOURCE_I, 0, (1, 2))
+ne.validate_execution(serial, max_qubits=7, max_expanded_stages=100)
+iv = ne.inventory(serial, max_qubits=7, max_expanded_stages=100)
+need((iv.gate_count, iv.g_count, iv.cx_count, iv.source_i_count, iv.cut_rank)
+     == (26, 4, 10, 12, 4), 'real2-trial inventory and free Spin')
+
+# Factor the completed port/record/archive core; protected Spin is an exact identity factor.
+def CX5(control, target):
+    out = S.zeros(32)
+    for col in range(32):
+        bits = [(col >> (4-k)) & 1 for k in range(5)]
+        bits[target] ^= bits[control]
+        row = sum(bits[k] << (4-k) for k in range(5))
+        out[row, col] = 1
+    return out
+
+
+G = S.Matrix(ne.G_LOCAL);Z = S.diag(1, -1)
+unit = mul(G.T, Z, G)
+Uc = S.kronecker_product(unit, S.eye(16))
+D1 = CX5(0, 1);D2 = CX5(0, 3)
+S1 = mul(CX5(0, 2), CX5(2, 0), CX5(0, 2))
+S2 = mul(CX5(0, 4), CX5(4, 0), CX5(0, 4))
+Tc = mul(S2, D2, Uc, D2, S1, D1, Uc, D1)
+psi = Tc[:, 0]
+prob = {}
+for x in (0, 1):
+    for y in (0, 1):
+        idx = [k for k in range(32) if ((k >> 3) & 1) == x and ((k >> 1) & 1) == y]
+        prob[(x, y)] = sum(psi[k]*psi[k] for k in idx)
+q = p**6;f = 4*p**3
+need(eq(prob[(0, 0)], q*q) and eq(prob[(0, 1)], q*f)
+     and eq(prob[(1, 0)], f*q) and eq(prob[(1, 1)], f*f),
+     'complete two-trial joint response including failures')
+need(all(eq(psi[k], 0) for k in range(16, 32)), 'physical port restored by paid archive SWAP')
+need(eq((psi.T*S.eye(32)[:, 0])[0], c*c), 'pre-controller full zero-corner is c^2')
+
+# Exact finite confidence/resource algebra; no simulated or fabricated measurements.
+M, eta, alpha = S.symbols('M eta alpha', positive=True)
+need(S.simplify(2/(4*M*eta**2)-1/(2*M*eta**2)) == 0, 'two-context variance/union bound')
+R0, z, aa, c1, c2, dc1, dc2 = S.symbols('R0 z aa c1 c2 dc1 dc2', positive=True)
+product = (c1*c2)**(2*M)
+one1 = -2*R0*z*c1*dc1/(aa+z*c1**2)
+one2 = -2*R0*z*c2*dc2/(aa+z*c2**2)
+direct = -2*R0*z*M*product*(dc1/c1+dc2/c2)/(aa+z*product)
+weighted = M*product/(aa+z*product)*(
+    (aa+z*c1**2)*one1/c1**2+(aa+z*c2**2)*one2/c2**2)
+need(S.simplify(direct-weighted) == 0, 'pre-controller matched SOURCE identity')
+test_denominator = az+zeta*(S.Rational(1, 2)**2)**4
+sum_denominator = (az+zeta*S.Rational(1, 4))**4
+need(test_denominator != sum_denominator, 'whole-test feedback is not sum of one-trial prices')
+fine_entropy_difference = S.Rational(1, 2)  # coefficient multiplying log(3)
+fine1 = (S.Rational(1, 2), S.Rational(1, 2), 0, 0)
+fine2 = (S.Rational(1, 2), S.Rational(1, 6), S.Rational(1, 6), S.Rational(1, 6))
+need(sum(fine1) == sum(fine2) == 1 and sum(fine1[1:]) == sum(fine2[1:]) == S.Rational(1, 2),
+     'same coarse return but genuinely different retained fine law')
+
+out = {'status': 'PASS', 'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+       'native_owner_sha256': owner_sha,
+       'single_detector': {'original_stages': invU.gate_count, 'balanced_stages': invV.gate_count,
+                           'full_columns_executed': 32, 'protected_rank': 8, 'oldRIGHT_wire': 4,
+                           'return_effect': 'p^6 I_8', 'failure_effect': '4p^3 I_8',
+                           'independent_COPY_cold_jet': '-2 sqrt(p) p I_8',
+                           'independent_COPY_feedback_jet': '2R zeta c s/(a+zeta c^2) nonzero',
+                           'ambient_generator_only': True},
+       'serial_detector': {'native_stages': iv.gate_count, 'inventory_G_CX_SourceI': [4, 10, 12],
+                           'full_dimension': iv.full_dimension, 'protected_rank': iv.cut_rank,
+                           'executed_factorized_core_columns': 32,
+                           'joint_coarse_probabilities': ['q^2', 'q f', 'f q', 'f^2'],
+                           'fresh_archive_SWAPs': 2, 'protected_unknown_input_not_cloned': True,
+                           'pre_controller_cold_corner': 'c^2 I_4'},
+       'free_data_hostile_control': {'native_stages': len(data_word), 'executed_full_columns': 32,
+                                     'scalar_return_effect': 'p^6 I_8',
+                                     'failure_operation': 'flips the arbitrary free data bit'},
+       'hostile_controls': {'same_mean_nonscalar_vs_scalar_logdet_ratio': '961/960',
+                            'same_coarse_return_fine_entropy_gap': 'log(3)/2',
+                            'pre_controller_source_identity': 'exact symbolic',
+                            'whole_test_feedback_not_sum_of_trial_prices': True},
+       'scope': 'original 32-column native detector executed; 7-wire serial word validated, its 32-column active core factored with Spin identity; no statistical samples or heat replay',
+       'GR_root_rank_SVD_heat_full128_Lean_replayed': False,
+       'physical_admission_or_full_detector_stationarity_proved': False, 'GR_closed': False}
+print(json.dumps(out, indent=2)+'\n', end='')
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "33e6d61ae0b1a0a6c333b60f3c2bc9f56729d840c5b105f05e9088a2f5725e18",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "single_detector": {
+    "original_stages": 8,
+    "balanced_stages": 10,
+    "full_columns_executed": 32,
+    "protected_rank": 8,
+    "oldRIGHT_wire": 4,
+    "return_effect": "p^6 I_8",
+    "failure_effect": "4p^3 I_8",
+    "independent_COPY_cold_jet": "-2 sqrt(p) p I_8",
+    "independent_COPY_feedback_jet": "2R zeta c s/(a+zeta c^2) nonzero",
+    "ambient_generator_only": true
+  },
+  "serial_detector": {
+    "native_stages": 26,
+    "inventory_G_CX_SourceI": [
+      4,
+      10,
+      12
+    ],
+    "full_dimension": 128,
+    "protected_rank": 4,
+    "executed_factorized_core_columns": 32,
+    "joint_coarse_probabilities": [
+      "q^2",
+      "q f",
+      "f q",
+      "f^2"
+    ],
+    "fresh_archive_SWAPs": 2,
+    "protected_unknown_input_not_cloned": true,
+    "pre_controller_cold_corner": "c^2 I_4"
+  },
+  "free_data_hostile_control": {
+    "native_stages": 11,
+    "executed_full_columns": 32,
+    "scalar_return_effect": "p^6 I_8",
+    "failure_operation": "flips the arbitrary free data bit"
+  },
+  "hostile_controls": {
+    "same_mean_nonscalar_vs_scalar_logdet_ratio": "961/960",
+    "same_coarse_return_fine_entropy_gap": "log(3)/2",
+    "pre_controller_source_identity": "exact symbolic",
+    "whole_test_feedback_not_sum_of_trial_prices": true
+  },
+  "scope": "original 32-column native detector executed; 7-wire serial word validated, its 32-column active core factored with Spin identity; no statistical samples or heat replay",
+  "GR_root_rank_SVD_heat_full128_Lean_replayed": false,
+  "physical_admission_or_full_detector_stationarity_proved": false,
+  "GR_closed": false
+}
+```
+
+#### Independent rational controls
+
+Code 3477 bytes / SHA256 6c3ba5ffcfd6f59f4d61ca54be1b59b7816916ec374d2b7a28520a3de4491b79; observed JSON 829 bytes / SHA256 b5513c5778b8805ebcfb02f5721483bea03f349b311a63a76315754705dcf600.
+
+```python
+"""Independent rational controls for scalar-return tests and retained data."""
+from itertools import product
+from math import comb
+import hashlib
+import json
+from pathlib import Path
+import sympy as S
+
+
+def need(ok, label):
+    if not ok:
+        raise RuntimeError(label)
+
+
+I = S.eye(2);X = S.Matrix([[0, 1], [1, 0]])
+contexts = ((S.Rational(3, 5), S.Rational(4, 5)),
+            (S.Rational(5, 13), S.Rational(12, 13)))
+for c, s in contexts:
+    need(c*c+s*s == 1, 'unitary branch normalization')
+    K0, K1 = c*I, s*X
+    need(K0.T*K0 == c*c*I and K1.T*K1 == s*s*I, 'scalar return and complete failure effects')
+
+# Protected data is entangled with an untouched old reference.  Failure changes
+# the JOINT state but the next scalar-return probability is still independent.
+bell = S.Matrix([1, 0, 0, 1])/S.sqrt(2)
+flipped = S.kronecker_product(X, I)*bell
+need((bell.T*bell)[0] == (flipped.T*flipped)[0] == 1 and (bell.T*flipped)[0] == 0,
+     'failure changes the protected-reference state')
+for y1, y2 in product((0, 1), repeat=2):
+    K1 = contexts[0][0]*I if y1 == 0 else contexts[0][1]*X
+    K2 = contexts[1][0]*I if y2 == 0 else contexts[1][1]*X
+    state = S.kronecker_product(K2*K1, I)*bell
+    actual = (state.T*state)[0]
+    expected = contexts[0][y1]**2*contexts[1][y2]**2
+    need(actual == expected, 'all four serial return/failure probabilities')
+
+# A history-dependent imperfect detector can be uniformly close without iid.
+q = S.Rational(1, 2);bias = S.Rational(1, 10)
+joint_00 = q*(q+bias)
+need(joint_00 != q*q and abs((q+bias)-q) <= bias and abs((q-bias)-q) <= bias,
+     'uniform conditional bias does not imply iid')
+
+# Check the finite two-context Chebyshev/union allocation against exact
+# binomial probabilities; no physical or simulated trial is asserted.
+M = 100;eta = S.Rational(1, 4);alpha = S.Rational(1, 10)
+def success_mass(q0):
+    return sum(S.binomial(M, k)*q0**k*(1-q0)**(M-k)
+               for k in range(M+1) if abs(S.Rational(k, M)-q0) <= eta)
+q1, q2 = contexts[0][0]**2, contexts[1][0]**2
+exact_success = success_mass(q1)*success_mass(q2)
+bound = S.Rational(1, 2)/(M*eta*eta)
+need(bound <= alpha and exact_success >= 1-bound, 'exact finite coverage dominates union/variance bound')
+
+# A non-full initial support has rank R != full protected dimension d_K.
+R, dK, b, T = 2, 4, 3, 2
+actual_full_modes = dK*2**(1+2*b*T)
+false_rank_replacement = R*2**(1+2*b*T)
+need(actual_full_modes == 2*false_rank_replacement, 'thermal dimension is not protected cut rank')
+
+out = {'status': 'PASS', 'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+       'rational_joint_response': ['q1*q2', 'q1*f2', 'f1*q2', 'f1*f2'],
+       'failure_changes_entangled_protected_state': True,
+       'conditional_bias_control': {'target': '1/2', 'bias': '1/10', 'joint_00': '3/10', 'iid_00': '1/4'},
+       'finite_confidence_control': {'M_per_context': M, 'eta': str(eta), 'alpha': str(alpha),
+                                     'proven_union_bound': str(bound),
+                                     'exact_success_exceeds_bound': True},
+       'rank_vs_dimension': {'input_rank': R, 'full_protected_dimension': dK,
+                             'true_full_internal_dimension': actual_full_modes,
+                             'incorrect_rank_replacement': false_rank_replacement},
+       'scope': 'new rational independent controls; no native hardware, random samples, GR root, heat or Lean run'}
+print(json.dumps(out, indent=2)+'\n', end='')
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "6c3ba5ffcfd6f59f4d61ca54be1b59b7816916ec374d2b7a28520a3de4491b79",
+  "rational_joint_response": [
+    "q1*q2",
+    "q1*f2",
+    "f1*q2",
+    "f1*f2"
+  ],
+  "failure_changes_entangled_protected_state": true,
+  "conditional_bias_control": {
+    "target": "1/2",
+    "bias": "1/10",
+    "joint_00": "3/10",
+    "iid_00": "1/4"
+  },
+  "finite_confidence_control": {
+    "M_per_context": 100,
+    "eta": "1/4",
+    "alpha": "1/10",
+    "proven_union_bound": "2/25",
+    "exact_success_exceeds_bound": true
+  },
+  "rank_vs_dimension": {
+    "input_rank": 2,
+    "full_protected_dimension": 4,
+    "true_full_internal_dimension": 32768,
+    "incorrect_rank_replacement": 16384
+  },
+  "scope": "new rational independent controls; no native hardware, random samples, GR root, heat or Lean run"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

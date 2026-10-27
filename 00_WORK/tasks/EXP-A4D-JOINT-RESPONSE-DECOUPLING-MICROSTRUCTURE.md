@@ -16397,3 +16397,160 @@ This validation note changes no scientific input. No original certificate,
 heat/full128/Lean replay, CI pass or physical/GR promotion is asserted.
 Same-PR publication retains the stated actual readout/admission/refinement
 operands and every independent external source.
+
+
+### 27 October - construct the paid return-price observation map
+
+SAME #334 / constitutive/native-programme-v1; native realization and
+composition, input498d2b57. The previous completed checkpoint7cr797--807
+made verified progress by transporting the structured source bound to
+literal common-clock code contrasts. Its remaining parent is the actual
+positive response/readout for the normalized Book price contrast, with
+the observation apparatus and its complete action/source retained.
+
+Consume7av417--422,7aj's paid returned-pointer interface,7cq733--796 and
+7cr804--807. Identify the precise protected-input carrier on which the
+actual cold corner is scalar. Construct its return test using literal CX
+copies and the already supplied computational pointer response; retain
+all fine records, failures, unknown protected inputs and oldRIGHT. Derive
+the finite logarithmic/normalized contrast error, actual calibration,
+trial-count/confidence and physical record/controller resources. Distinguish
+the original per-code price being estimated from the new test process's own
+heat/feedback/record sources. Check an actual independent detector-gate
+normal before claiming any source preservation.
+
+Smallest changed verification: a new complete native return/copy word on
+all small columns, positive and hostile nonscalar controls, scalar-corner
+and price identities, and a nonzero detector-gate source control. Retain
+all literal inverse/stage counts. No new action, fitted detector, selector,
+physical X_N postulate, new task/result/claim/acceptance, Ready or merge.
+Only the existing primary research memo and this task brief may change.
+Full original native admission, complete independent-source stationarity,
+soundness/refinement and GR_closed remain open unless actually proved.
+
+
+27 October result, primary7cs808--820. Constructed a paid positive
+return/interval response for7cr's ORIGINAL normalized H+J code contrast,
+under the exact stated scalar protected-corner, admitted computational
+pointer and finite-resource/task hypotheses. This removes the missing
+finite testMap on that sector; it does not select that test or declare
+its own different complete programme stationary.
+
+For the ACTUAL7cq q0 layout, completed routers fixq0, SOURCE banks are
+parked, and Qhat excludes free X/oldRIGHT and restores Spin/helper on ALL
+columns. The genuine protected corner is therefore c_sigma I_R even
+with finite TAG/table errors, so q_sigma=|c_sigma|^2 determines the full
+F=(1-q_sigma)I_R and J_sigma=-R log(1-zeta+zeta q_sigma). All arbitrary
+protected/reference entanglement remains. Any additional free query work
+or violated support guard retains full-matrix tomography/operator error.
+A rational nonscalar hostile control has the SAME one-state mean return
+but different determinant, ratio961/960; the scalar hypothesis is real.
+
+A real balanced product of b native CX copies BEFORE and AFTER U records
+the entire output bitstring, giving the exact all-input return-pointer
+identity and the same cold corner, protectedrank R and feedback price.
+The actual detector adds2b stages and2^b full modes. Its NEW heat is at
+the actual N+2b clock and contains b log(2)/beta at that clock, not the
+old absolute heat. For the matched +/- reflection catalogue this new
+heat is common, and fixed-detector OLD H+J first rows are preserved.
+Independent NEW detector rows are not zero by this algebra: an actual
+32-column base gives dot C=-2sqrt(p)p I_R and nonzero feedback row813 for
+one local matrix comparison. This does not admit a continuously variable
+physical Golden gate. Extra Info/work/readout sources remain.
+
+Finite serial trials retain every fine record and old work. After each
+trial an actual3-CX SWAP retires the shared port state into a fresh
+archive and supplies the next genuine blank port without erasure/reset.
+If the full protected-space corner is independently established as cI_K
+and every post-trial protected state is admitted, the coarse return and
+failure effects are qI_K and (1-q)I_K, so each next coarse probability
+is the SAME even conditional on arbitrary old
+history/entanglement; a predetermined two-context schedule has the
+correct binomial law without cloning unknown protected input. Failure
+can change the free data: an actual11-stage/all32-column hostile word
+flips an arbitrary free data bit while retaining scalar return. If the
+physical task admits only a narrower input-state family, its post-state
+closure or independently permitted fresh preparations remain required.
+
+For b actual blank wires and T=2M trials, before arithmetic the genuine
+word has T(N+2b+3) stages and full dimension d_K*2^(1+2bT), rank R;
+d_K is the FULL protected dimension, which can exceed R. The actual
+controller/registration adds its words, modes, records and price. The
+finite count-to-interval Boolean target is explicitly defined by the
+observed bitstrings, outward log series818 and predeclared calibration;
+it is compiled with the owned readonly predicate interface at a finite
+layout. No large controller was emitted or run here, and no PASS oracle,
+free measurement or sampled value is inserted.
+
+Conditional response error eta_det is retained for every state/history.
+For M repetitions PER context, Chebyshev/union gives failure <=
+1/(2M eta^2); probability error eta_det+eta propagates through J with
+true R*zeta/(a*t*Gamma0). Finite logarithm/rounding/gain intervals and
+full controller error are additional explicit budgets. With fixed h,
+t_m=m^-6 and appropriate confidence allocation, a conservative
+per-context trial count is O_h(D_h*m^20/alpha), subject to actual
+finite resources/calibration. Equation818a gives the positive output
+POVM including invalid/error labels; no exact single-shot real derivative
+or all-kappa/physical completion is inferred.
+
+The full observer is a DIFFERENT price problem. Before its controller,
+C_T=(c_+c_-)^M I_R and J_T=-R log(a+zeta(c_+c_-)^(2M)), not the sum or
+contrast of the compared prices. Matched-source identity820 is exact;
+individual COPY/port/archive/controller rows and the ACTUAL full heat of
+the multi-trial word remain. A product of reflections need not be a
+reflection. The complete output/cut may change again after the controller.
+Coarse outcome probability also does not fix fine-record entropy/Info.
+Physical X_N admission, all independent sources, original full valuation,
+dynamics and refinement remain open; GR_closed=false.
+
+Two changed checks passed CPython3.9.6/SymPy1.14.0. The native check runs
+all32 columns of the8-stage original/10-stage detector with rank8 and
+oldRIGHT, plus the11-stage free-data failure control. It validates the
+26-stage7-wire/two-trial word and executes its32-column active core with
+Spin identity, including two real archive SWAPs. No original full128
+CAR, heat, root, rank/SVD, Lean or actual statistical trials were run.
+An independent rational control checks entangled-reference state change,
+all four serial response branches, history-dependent-bias non-iid,
+exact finite binomial coverage and a full-dimension != input-rank case.
+
+Proof21779 / SHA256
+6c7f3ff901aa15e25a685d2a358b0a87dcfb786b2bc9575d84ed9671bb0e92fa;
+section39531 / SHA256
+d50ef1230d8747e38ef5036dec9e6655d4e479e914a5db3a464b5068ab1689c5.
+Native code10893 / SHA256
+33e6d61ae0b1a0a6c333b60f3c2bc9f56729d840c5b105f05e9088a2f5725e18;
+observedJSON1806 / SHA256
+e364933a503594ffc9ad8265eeab0193bb9e786e55cea9840117c5e558eabb2e.
+Independent code3477 / SHA256
+6c3ba5ffcfd6f59f4d61ca54be1b59b7816916ec374d2b7a28520a3de4491b79;
+observedJSON829 / SHA256
+b5513c5778b8805ebcfb02f5721483bea03f349b311a63a76315754705dcf600.
+All four exact blocks are embedded with actual receipts. Nativeowner
+17833/222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c
+is unchanged. No original source or expected receipt is rewritten.
+
+Incoming498d2b57 primary2603837 / SHA256
+0c45aa5b3685c60ab8945ebe424bf02a93adf1cc557d134c7ce596f648112445;
+brief1064710 / SHA256
+45cd0d2acd830cdfe6019642e9e6604b156a853fdd08ff4ddb79053895ddcc2c.
+Removing7cs restores every incoming primary byte; the incoming brief is
+an exact prefix. Only the two owned insertion paths change. No new
+task/result/claim/acceptance, Ready, retirement, merge, CI pass or
+physical/GR promotion is claimed.
+
+Final-input local verification, 27 October: `validate_work.py`,
+`validate_agent_protocol.py`, `gr_assembly.py check` and `validate_repo.py`
+all pass; the assembly template parses. The unchanged incoming primary is
+recovered byte-for-byte by removing 7cs, the incoming brief remains a byte
+prefix, the two embedded Python and two JSON blocks parse, and `git diff
+--check` passes with insertions only in the two owned paths. Native-owner
+SHA256 and the separately observed native/rational receipts are as pinned
+above. These are local checks, not independent scientific acceptance, a CI
+result, Lean validation, or physical admission of the test apparatus.
+
+Independent mathematical review identified and resolved the distinction
+between scalarity on the original rank-R support and on the full K carrier:
+the serial probability and pre-controller price now explicitly require the
+full-K identity, or a separate proof of post-state closure on the supported
+sector. The review found no further algebraic defect under the stated
+hypotheses; it did not establish physical admission or scientific acceptance.
