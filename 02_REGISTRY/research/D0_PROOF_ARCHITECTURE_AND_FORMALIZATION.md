@@ -11448,3 +11448,23 @@ GR. The Hodge claim remains `OPEN / PROOF-TARGET`.
 
 The public `D0.All` build including this sector result passed 4,748 jobs on
 Lean source digest `a86f9c6020631ae143f8361fef8e4af3c3c2775f64bbc9922a10a658b86f69a6`.
+
+The sector and full matrix trace declarations, their types, dependencies and
+axioms were extracted from `D0.All` at clean commit
+`9feb0824173117c5142160b0603336616cb01fe1` and saved in
+[`archive_graded_sector_trace_declarations_2026-10-27_9feb0824.json`](sources/d0_proof_architecture_formalization_2026-10-24/archive_graded_sector_trace_declarations_2026-10-27_9feb0824.json)
+(SHA-256 `1e38d758d4709d394df24535793f8b34a60553a5678cd217c7bcf1c030332d94`).
+The all-claim locator replay found 2,585 in declared modules, four unresolved
+and 178 rows without theorem locators; these are locator counts, not coverage.
+
+### 27 October scoped attempt links in reuse
+
+`relation_view` now includes an existing attempt only when its explicit
+`result` or `obligation` matches a nonempty corresponding key. Previously,
+missing values compared equal as `None`, so an ordinary claim could acquire
+unrelated scientific attempts; the actual claim
+`D0-DENSE-OPERATOR-SCENE-RIGIDITY-001` displayed four such unrelated records.
+The corrected view displays none for that claim. Regression controls cover
+claims, results, obligations, applications, empty IDs, and the compiled-reuse
+consumer while retaining a real proof-dependency link. This is navigation
+integrity, not creation or acceptance of a scientific application.

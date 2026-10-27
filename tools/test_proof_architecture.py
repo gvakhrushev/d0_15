@@ -162,6 +162,63 @@ class ProofArchitectureTests(unittest.TestCase):
         claim = next(x for x in proof.records(data) if x["kind"] == "claim-metadata")
         self.assertEqual(proof.relation_view(data, claim)["declared_applications"], [])
 
+    def test_scoped_attempts_require_explicit_matching_result_or_obligation(self) -> None:
+        data = dataset()
+        data["assembly"]["attempts"] = [
+            {"id": "result-match", "result": "r1"},
+            {"id": "other-result", "result": "r2"},
+            {"id": "obligation-match", "obligation": "o1"},
+            {"id": "other-obligation", "obligation": "o2"},
+            {"id": "both-match", "result": "r1", "obligation": "o1"},
+            {"id": "neither"},
+            {"id": "empty-ids", "result": "", "obligation": ""},
+        ]
+        expected = {
+            ("claim-metadata", "CLM-1"): [],
+            ("assembly-result", "r1"): ["result-match", "both-match"],
+            ("obligation", "o1"): ["obligation-match", "both-match"],
+            ("application", "r1-to-o1"): ["result-match", "obligation-match", "both-match"],
+        }
+        indexed = {(item["kind"], item["key"]): item for item in proof.records(data)}
+        for key, expected_ids in expected.items():
+            with self.subTest(kind=key[0]):
+                view = proof.relation_view(data, indexed[key])
+                self.assertEqual([a["id"] for a in view["scoped_attempts"]], expected_ids)
+        empty_application = {"kind": "application", "record": {"result": "", "obligation": ""}}
+        self.assertEqual(proof.relation_view(data, empty_application)["scoped_attempts"], [])
+
+    def test_compiled_claim_reuse_does_not_attach_unrelated_attempts(self) -> None:
+        data = dataset()
+        data["assembly"]["attempts"] = [
+            {"id": "unrelated", "result": "another-result"},
+            {"id": "no-result-or-obligation"},
+        ]
+        data["claims"].append({"claim_id": "CLM-2", "lean_module": "D0.Foo",
+                               "lean_theorem": "D0.Foo.lower", "notes": ""})
+
+        class InventoryStub:
+            claim_locator_crosswalk = staticmethod(inventory.claim_locator_crosswalk)
+
+            @staticmethod
+            def candidate_names(module: str, atom: str) -> list[str]:
+                return [atom]
+
+            @staticmethod
+            def run_inventory(names: list[str], import_root: str):
+                return ([{"name": "D0.Foo.bar", "exists": True, "module": "D0.Foo",
+                          "proof_dependencies": ["D0.Foo.lower"]}], "collector", "digest")
+
+            @staticmethod
+            def module_source_path(module: str | None) -> str | None:
+                return "D0/Foo.lean"
+
+        compiled = proof.reuse_view(data, "CLM-1", lean_inventory=InventoryStub)["compiled_claim_reuse"][0]
+        self.assertEqual(compiled["declared_metadata_relations"]["scoped_attempts"], [])
+        self.assertEqual(compiled["declared_metadata_relations"]["declared_applications"], [])
+        self.assertEqual(compiled["compiled_dependency_claim_links"][0]["dependency_declaration"],
+                         "D0.Foo.lower")
+        self.assertIn("semantic claim acceptance are not inferred", compiled["interpretation"])
+
     def test_source_change_invalidates_its_declared_application_not_unrelated_prose(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

@@ -1765,7 +1765,8 @@ def relation_view(dataset: dict[str, Any], item: dict[str, Any]) -> dict[str, An
     else:
         related = []
     attempts = [a for a in dataset["assembly"].get("attempts", [])
-                if a.get("result") == result_id or a.get("obligation") == obligation_id]
+                if (result_id and a.get("result") == result_id)
+                or (obligation_id and a.get("obligation") == obligation_id)]
     claim_id = record.get("claim_id") if item["kind"] == "claim-metadata" else None
     registered_assumptions = [assumption for assumption in dataset["assumptions"]
                               if claim_id and assumption.get("claim_id") == claim_id]

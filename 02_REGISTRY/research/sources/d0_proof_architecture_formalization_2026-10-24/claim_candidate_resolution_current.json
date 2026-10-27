@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "801a688b6c6fef01ece882e5e5ab71ff0be77c58",
+  "snapshot_commit": "9feb0824173117c5142160b0603336616cb01fe1",
   "worktree_dirty": false,
-  "claim_registry_sha256": "5fd425be1d19b534fee35ee873c614dc6dc69459ca66cc6d66ea13f3c1576b4b",
-  "lean_source_digest": "3e51f3eebf1a980c1d1608ab7052971108b57670ffe8f6e0ba9cf6d900433d92",
-  "collector_sha256": "3b898d45db29744a25401ed36c9c38b8a1e56466cb2f29ee283e8791dfbb96ab",
+  "claim_registry_sha256": "c3c51a8013b8a43880f659fc016b888911bb0219b57e3c9390ac793dbc72332d",
+  "lean_source_digest": "a86f9c6020631ae143f8361fef8e4af3c3c2775f64bbc9922a10a658b86f69a6",
+  "collector_sha256": "f1463779fe276c6839e5919f12c5eae104c9cbe4a6164a97d13c659d85f0055f",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": true,
@@ -23294,74 +23294,93 @@
       },
       {
         "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
-        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace",
+        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace;D0.Geometry.ArchiveGradedCochainSectorTrace",
         "theorem_atom": "hodge_mass_trace_sum",
         "candidate_names": [
           "D0.Geometry.ArchiveRefinementHodgeWeights.hodge_mass_trace_sum",
           "D0.Geometry.ArchiveGradedCochainGram.hodge_mass_trace_sum",
           "D0.Geometry.ArchiveGradedCochainGramTrace.hodge_mass_trace_sum",
+          "D0.Geometry.ArchiveGradedCochainSectorTrace.hodge_mass_trace_sum",
           "D0.Geometry.hodge_mass_trace_sum",
           "D0.hodge_mass_trace_sum"
         ]
       },
       {
         "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
-        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace",
+        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace;D0.Geometry.ArchiveGradedCochainSectorTrace",
         "theorem_atom": "archive_refinement_hodge_weights_owner",
         "candidate_names": [
           "D0.Geometry.ArchiveRefinementHodgeWeights.archive_refinement_hodge_weights_owner",
           "D0.Geometry.ArchiveGradedCochainGram.archive_refinement_hodge_weights_owner",
           "D0.Geometry.ArchiveGradedCochainGramTrace.archive_refinement_hodge_weights_owner",
+          "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_refinement_hodge_weights_owner",
           "D0.Geometry.archive_refinement_hodge_weights_owner",
           "D0.archive_refinement_hodge_weights_owner"
         ]
       },
       {
         "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
-        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace",
+        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace;D0.Geometry.ArchiveGradedCochainSectorTrace",
         "theorem_atom": "archive_graded_cochain_gram",
         "candidate_names": [
           "D0.Geometry.ArchiveRefinementHodgeWeights.archive_graded_cochain_gram",
           "D0.Geometry.ArchiveGradedCochainGram.archive_graded_cochain_gram",
           "D0.Geometry.ArchiveGradedCochainGramTrace.archive_graded_cochain_gram",
+          "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_cochain_gram",
           "D0.Geometry.archive_graded_cochain_gram",
           "D0.archive_graded_cochain_gram"
         ]
       },
       {
         "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
-        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace",
+        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace;D0.Geometry.ArchiveGradedCochainSectorTrace",
         "theorem_atom": "archive_graded_matrix_gram",
         "candidate_names": [
           "D0.Geometry.ArchiveRefinementHodgeWeights.archive_graded_matrix_gram",
           "D0.Geometry.ArchiveGradedCochainGram.archive_graded_matrix_gram",
           "D0.Geometry.ArchiveGradedCochainGramTrace.archive_graded_matrix_gram",
+          "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_matrix_gram",
           "D0.Geometry.archive_graded_matrix_gram",
           "D0.archive_graded_matrix_gram"
         ]
       },
       {
         "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
-        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace",
+        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace;D0.Geometry.ArchiveGradedCochainSectorTrace",
         "theorem_atom": "archive_graded_matrix_trace",
         "candidate_names": [
           "D0.Geometry.ArchiveRefinementHodgeWeights.archive_graded_matrix_trace",
           "D0.Geometry.ArchiveGradedCochainGram.archive_graded_matrix_trace",
           "D0.Geometry.ArchiveGradedCochainGramTrace.archive_graded_matrix_trace",
+          "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_matrix_trace",
           "D0.Geometry.archive_graded_matrix_trace",
           "D0.archive_graded_matrix_trace"
         ]
       },
       {
         "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
-        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace",
+        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace;D0.Geometry.ArchiveGradedCochainSectorTrace",
         "theorem_atom": "archive_graded_matrix_trace_level_zero",
         "candidate_names": [
           "D0.Geometry.ArchiveRefinementHodgeWeights.archive_graded_matrix_trace_level_zero",
           "D0.Geometry.ArchiveGradedCochainGram.archive_graded_matrix_trace_level_zero",
           "D0.Geometry.ArchiveGradedCochainGramTrace.archive_graded_matrix_trace_level_zero",
+          "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_matrix_trace_level_zero",
           "D0.Geometry.archive_graded_matrix_trace_level_zero",
           "D0.archive_graded_matrix_trace_level_zero"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
+        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace;D0.Geometry.ArchiveGradedCochainSectorTrace",
+        "theorem_atom": "archive_graded_sector_matrix_trace",
+        "candidate_names": [
+          "D0.Geometry.ArchiveRefinementHodgeWeights.archive_graded_sector_matrix_trace",
+          "D0.Geometry.ArchiveGradedCochainGram.archive_graded_sector_matrix_trace",
+          "D0.Geometry.ArchiveGradedCochainGramTrace.archive_graded_sector_matrix_trace",
+          "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_sector_matrix_trace",
+          "D0.Geometry.archive_graded_sector_matrix_trace",
+          "D0.archive_graded_sector_matrix_trace"
         ]
       },
       {
@@ -63933,6 +63952,11 @@
     },
     {
       "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainSectorTrace.hodge_mass_trace_sum",
+      "source_path": null
+    },
+    {
+      "exists": false,
       "name": "D0.Geometry.hodge_mass_trace_sum",
       "source_path": null
     },
@@ -63954,6 +63978,11 @@
     {
       "exists": false,
       "name": "D0.Geometry.ArchiveGradedCochainGramTrace.archive_refinement_hodge_weights_owner",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_refinement_hodge_weights_owner",
       "source_path": null
     },
     {
@@ -63983,6 +64012,11 @@
       "source_path": null
     },
     {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_cochain_gram",
+      "source_path": null
+    },
+    {
       "exists": true,
       "module": "D0.Geometry.ArchiveGradedCochainGram",
       "name": "D0.Geometry.archive_graded_cochain_gram",
@@ -64006,6 +64040,11 @@
     {
       "exists": false,
       "name": "D0.Geometry.ArchiveGradedCochainGramTrace.archive_graded_matrix_gram",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_matrix_gram",
       "source_path": null
     },
     {
@@ -64035,6 +64074,11 @@
       "source_path": null
     },
     {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_matrix_trace",
+      "source_path": null
+    },
+    {
       "exists": true,
       "module": "D0.Geometry.ArchiveGradedCochainGramTrace",
       "name": "D0.Geometry.archive_graded_matrix_trace",
@@ -64061,6 +64105,11 @@
       "source_path": null
     },
     {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_matrix_trace_level_zero",
+      "source_path": null
+    },
+    {
       "exists": true,
       "module": "D0.Geometry.ArchiveGradedCochainGramTrace",
       "name": "D0.Geometry.archive_graded_matrix_trace_level_zero",
@@ -64069,6 +64118,37 @@
     {
       "exists": false,
       "name": "D0.archive_graded_matrix_trace_level_zero",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveRefinementHodgeWeights.archive_graded_sector_matrix_trace",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainGram.archive_graded_sector_matrix_trace",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainGramTrace.archive_graded_sector_matrix_trace",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveGradedCochainSectorTrace.archive_graded_sector_matrix_trace",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.ArchiveGradedCochainSectorTrace",
+      "name": "D0.Geometry.archive_graded_sector_matrix_trace",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedCochainSectorTrace.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_graded_sector_matrix_trace",
       "source_path": null
     },
     {
@@ -71884,7 +71964,7 @@
     "reason": "The request and declaration resolutions are retained; full mappings are reproducible with the inventory tool.",
     "crosswalk_summary": {
       "no_theorem_locator": 178,
-      "resolved_in_declared_module": 2584,
+      "resolved_in_declared_module": 2585,
       "unresolved": 4
     },
     "unresolved_mappings": [
@@ -71919,18 +71999,19 @@
       {
         "claim_id": "D0-ARCHIVE-REFINEMENT-HODGE-WEIGHTS-001",
         "theorem_atom": "hodge_mass_trace_sum",
-        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace",
+        "module_locator": "D0.Geometry.ArchiveRefinementHodgeWeights;D0.Geometry.ArchiveGradedCochainGram;D0.Geometry.ArchiveGradedCochainGramTrace;D0.Geometry.ArchiveGradedCochainSectorTrace",
         "declared_modules": [
           "D0.Geometry.ArchiveRefinementHodgeWeights",
           "D0.Geometry.ArchiveGradedCochainGram",
-          "D0.Geometry.ArchiveGradedCochainGramTrace"
+          "D0.Geometry.ArchiveGradedCochainGramTrace",
+          "D0.Geometry.ArchiveGradedCochainSectorTrace"
         ],
         "resolution_status": "unresolved",
         "matches": []
       }
     ],
-    "full_output_sha256": "d4eea0606d7ca63786d4dd95708808cda77a78bd747468bbc13c0ea7a65b9d70",
-    "full_output_bytes": 4423913,
+    "full_output_sha256": "464bb02629e389be7bec9f9b4de0ec82d34afd69ea83c33a784a0e6378256f11",
+    "full_output_bytes": 4429043,
     "replay_command": "python3 tools/lean_declaration_inventory.py --all-claims --resolution-only"
   }
 }
