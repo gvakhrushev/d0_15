@@ -10893,3 +10893,48 @@ matching `claims.csv` SHA-256 at that snapshot is
 The compiled type records both required premises, and the counterexample
 records stationarity, failed neutrality, and failed Poisson equation. Their
 reported axiom footprints are `Classical.choice`, `Quot.sound`, and `propext`.
+
+## Current claim-owner reconciliation and feedback-claim boundary (27 October 2026)
+
+A fresh `--all-claims` compiled locator pass on clean snapshot
+`9ce86758a2fa9a5982f9cf5820bcb81d1263d592` used Lean 4.30.0 and `D0.All`.
+At that pre-reconciliation input, `claims.csv` had SHA-256
+`5ff7828b5ee8da5257304ecf689bb56b527d6af226c4b01b469a3ec827fdc1b1`, the
+whole-Lean-source digest was
+`50f40d0fb6f37ead704b6d6808cf9b210058d234f3280bc86f9318f690f46c09`, and the
+collector SHA-256 was
+`5a92b0b07373d52675bc154fbf05de85fa01f3639046999c48cf56a235d2cd49`. Across
+2,751 locator outcomes, 2,535 resolved inside a declared owner module, 12
+resolved outside the declared modules, four were ambiguous, 22 were unresolved,
+and 178 claim rows had no theorem locator. Nine claim rows account for all 16
+outside/ambiguous mappings. This is owner-name evidence, not semantic claim
+coverage.
+
+The registry now names the actual declaration modules for the Top-Hodge scene
+application, matter localization, commutator algebra, graded incidence
+complex, trace-heat facts, and feedback pressure theorem. Repeated short names
+in the AF/GNS, active-spectrum, and Perron-profile rows now use fully qualified
+canonical declarations. The former `D0.Active.NonzeroMatterSourceNeutrality`
+path is retained as an explicit compatibility import after the canonical
+matter owner moved to `D0.Interface.MatterLocalization`. In the AF/GNS row,
+the `D0.VNext.PerronGNSTower` declarations remain working compatibility
+wrappers to `D0.Algebra.FibonacciAFTower`; the registry now points those shared
+generic facts to the canonical Algebra declarations. The regenerated `All`
+and `ClaimMap` views include these owners without changing mathematical status.
+
+The same pass exposed a semantic boundary that owner-name repair cannot settle.
+For `D0-CVFT-001A`, the exact declarations in
+`D0.Dynamics.InternalFeedbackResolvent`,
+`D0.Cosmology.FeedbackPartitionFunction`, and
+`D0.Cosmology.FiniteFeedbackEquationOfState` operate on `Nat` split sizes and
+structures of `Bool` flags. `internal_feedback_forced_by_split` proves only
+positivity of `retained * traced`; the resolvent, determinant/return-cycle,
+variation-source, and pressure theorems assume their respective Boolean
+fields and return their conjunction. `FinitePVTLaw.pvt_identity` is a supplied
+structure field. These declarations do not construct or derive the claimed
+matrix `P_N U_N† Q_N U_N P_N`, its resolvent/determinant, the variation source,
+or a log-trace pressure law. The registry note now states this exact scope and
+the missing construction, while preserving the existing release-status value
+pending accepted source-owner review. This row is not usable as evidence for
+the stronger finite operator claim in this checkpoint. No scientific status
+was reclassified.

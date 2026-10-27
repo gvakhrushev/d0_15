@@ -5,6 +5,7 @@ import D0.Active.NonzeroMatterSourceNeutrality
 import D0.Active.ScalarPoissonReduction
 import D0.Algebra.AlbertJordan
 import D0.Algebra.AlbertTrilinearInvariant
+import D0.Algebra.ArchiveCommutatorOperators
 import D0.Algebra.CayleyDickson
 import D0.Algebra.Clifford
 import D0.Algebra.CliffordThreeFamilies
@@ -177,6 +178,7 @@ import D0.Dynamics.ToralAutomorphism
 import D0.Dynamics.ToralSFTConjugacyNoGo
 import D0.Dynamics.ToralShiftEquivalence
 import D0.Dynamics.TraceHeatCapacityGravity
+import D0.Dynamics.TraceHeatLucasCore
 import D0.Dynamics.TwoTickSymplectic
 import D0.Edge.EdgeHolonomySelectorRevision
 import D0.Edge.HolonomyRamificationSeparation
@@ -530,6 +532,7 @@ import D0.Integration.V15.Feshbach
 import D0.Integration.V15.PhysicalBoundary
 import D0.Integration.V15.RawZone
 import D0.Integration.V15.Refinement
+import D0.Interface.MatterLocalization
 import D0.Interface.ScalarPoissonReduction
 import D0.LeptonClosure.BranchIndexUnique
 import D0.LeptonClosure.BranchRowMinimalExtension
@@ -775,6 +778,7 @@ import D0.Topology.ArchiveShiftTopology
 import D0.Topology.BoundaryBoundary
 import D0.Topology.DeloneInstance
 import D0.Topology.FiniteCochainNoAxion
+import D0.Topology.GradedIncidenceComplex
 import D0.Topology.HodgeAlgebraicRealization
 import D0.Topology.SceneTopHomologyOrientation
 import D0.Topology.WitnessHalting

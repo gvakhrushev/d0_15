@@ -1,4 +1,5 @@
 lean_module,lean_file,role,referenced_by
+D0.Active.NonzeroMatterSourceNeutrality,D0/Active/NonzeroMatterSourceNeutrality.lean,EXPLICIT_SUPPORT,D0-MATTER-LOCALIZATION-001;02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md
 D0.Active.ScalarPoissonReduction,D0/Active/ScalarPoissonReduction.lean,EXPLICIT_SUPPORT,D0-ARCHIVE-SCALAR-REDUCTION-001;02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md
 D0.Algebra.CayleyDickson,D0/Algebra/CayleyDickson.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Algebra/Sedenions.lean
 D0.Algebra.GaloisComposite,D0/Algebra/GaloisComposite.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Synthesis/SDECubicSpectralDisjointness.lean;03_FORMALIZATION/D0/Cosmology/PhasonWDESignNormalization.lean
