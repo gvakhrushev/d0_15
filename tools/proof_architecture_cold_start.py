@@ -95,6 +95,7 @@ CASES: list[dict[str, Any]] = [
             "Eq.24 max u_j in I Psi_j^(h) - Psi(u_j) |I| sup_I Psi''' h^2 / 24 compound midpoint quadrature integral of Psi' fixed small normalized CAR slack survives for all sufficiently fine h",
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes h duration over N exists N0 delta over 2 every uniform refinement",
             "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval ContDiffAt C3 local regularity sampled interval",
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin compactness pointwise strict CAR chart margin uniform third derivative bound",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -106,6 +107,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_vector_norm_car_margin_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_vector_norm_uniform_mesh_2026-10-26.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_interval_local_car_refinement_2026-10-27.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json",
         ],
         "required_sources": [
             {
@@ -139,7 +141,10 @@ CASES: list[dict[str, Any]] = [
             "dimension-free constant in Euclidean norm. Its half-margin CAR application is "
             "transported through an isometric Euclidean lift and proved equal to the existing "
             "two-component finite recurrence. C^3 regularity at each point of the sampled interval, vector third-derivative and "
-            "envelope bounds remain supplied hypotheses. The new uniform-mesh theorem derives an "
+            "envelope bounds remain supplied hypotheses for the local API. The pointwise-margin "
+            "corollary assumes global C^3 and pointwise strict chart inclusion, then uses compactness "
+            "to derive the uniform derivative and envelope bounds and their positive uniform margin. "
+            "The new uniform-mesh theorem derives an "
             "N0 threshold from the same delta-over-two estimate and proves the existing CAR "
             "complement positive for every N >= N0 with h=duration/N. Section 7.2 supplies the "
             "finite-step Eq. (24) error and states that fixed small normalized CAR slack survives "

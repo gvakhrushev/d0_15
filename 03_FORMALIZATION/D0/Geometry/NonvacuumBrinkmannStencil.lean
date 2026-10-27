@@ -34,10 +34,12 @@ forward gradient exactly equal to its midpoint rate, so its norm is the
 energy used by that readout. For a sampled exact history, it derives the
 per-cell midpoint defect from a bound on the third derivative and composes
 that estimate into a uniform second-order error bound at every mesh point,
-both for scalar components and in the vector norm. The vector CAR implication
-still assumes global C³ regularity, a vector third-derivative bound, and a
-continuum norm envelope; it does not derive those data from the CAR generator
-or preparation.
+both for scalar components and in the vector norm. The interval-local vector
+CAR implication still assumes C³ regularity on the sampled interval, a vector
+third-derivative bound, and a continuum norm envelope. The compactness
+corollary below derives the latter two uniform bounds from a globally C³
+profile and a pointwise strict chart margin; it does not derive smoothness or
+the pointwise margin from the CAR generator or preparation.
 
 This is an exact finite algebraic and calculus application. It does not
 formalize the original CAR construction, the 40 varied Cartan equations, or
@@ -1056,6 +1058,63 @@ theorem sampledFixedNonvacuumBrinkmannProfile_source_eq_siteMatter
 
 end
 
+
+/--
+On a compact time interval, a globally C³ matter profile whose value remains
+strictly inside the pointwise CAR chart has a uniform amplitude margin and a
+uniform third-derivative bound. Consequently the existing midpoint refinement
+theorem supplies one natural-mesh threshold after which the same finite CAR
+complement is positive at every sampled site. The smooth profile and its
+pointwise strict chart inclusion remain hypotheses; compactness does not derive
+physical preparation or source selection.
+-/
+theorem sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin
+    (ψ : ℝ → EuclideanSpace ℝ (Fin 2)) (x₀ duration p : ℝ)
+    (duration_pos : 0 < duration)
+    (hC3 : ContDiff ℝ 3 ψ)
+    (hPointwiseMargin :
+      ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+        ‖ψ t‖ < Real.sqrt (1 - p)) :
+    ∃ N₀ : ℕ, 0 < N₀ ∧ ∀ N : ℕ, N₀ ≤ N →
+      ∀ n ≤ N,
+        0 < twoComponentCARComplementAmplitude p
+          (finiteMatterMidpointHistory (duration / (N : ℝ))
+            (sampledMatterMidpointRate (fun t i => ψ t i) x₀
+              (duration / (N : ℝ)))
+            (sampledMatterExactValues (fun t i => ψ t i) x₀
+              (duration / (N : ℝ)) 0) n) := by
+  let interval : Set ℝ := Set.Icc x₀ (x₀ + duration)
+  have hleft : x₀ ∈ interval := by
+    simp [interval, le_add_of_nonneg_right duration_pos.le]
+  have hinterval_nonempty : interval.Nonempty := ⟨x₀, hleft⟩
+  have hprofile_norm_continuous : Continuous (fun t => ‖ψ t‖) :=
+    hC3.continuous.norm
+  obtain ⟨tA, htA, hAmax⟩ :=
+    (isCompact_Icc (a := x₀) (b := x₀ + duration)).exists_isMaxOn
+      hinterval_nonempty hprofile_norm_continuous.continuousOn
+  let A : ℝ := ‖ψ tA‖
+  have hA_nonneg : 0 ≤ A := by dsimp [A]; positivity
+  have hEnvelope : ∀ t ∈ Set.Icc x₀ (x₀ + duration), ‖ψ t‖ ≤ A := by
+    intro t ht
+    exact hAmax (by simpa [interval] using ht)
+  have hMargin : 0 < Real.sqrt (1 - p) - A := by
+    dsimp [A]
+    exact sub_pos.mpr (hPointwiseMargin tA (by simpa [interval] using htA))
+  have hthird_norm_continuous :
+      Continuous (fun t => ‖iteratedDeriv 3 ψ t‖) :=
+    (hC3.continuous_iteratedDeriv' 3).norm
+  obtain ⟨tM, htM, hMmax⟩ :=
+    (isCompact_Icc (a := x₀) (b := x₀ + duration)).exists_isMaxOn
+      hinterval_nonempty hthird_norm_continuous.continuousOn
+  let M : ℝ := ‖iteratedDeriv 3 ψ tM‖
+  have hM_nonneg : 0 ≤ M := by dsimp [M]; positivity
+  have hThird : ∀ t ∈ Set.Icc x₀ (x₀ + duration),
+      ‖iteratedDeriv 3 ψ t‖ ≤ M := by
+    intro t ht
+    exact hMmax (by simpa [interval] using ht)
+  exact sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval
+    ψ x₀ duration M A p duration_pos hM_nonneg hA_nonneg
+    (fun t _ => hC3.contDiffAt (x := t)) hThird hEnvelope hMargin
 
 /-- A two-component cubic matter profile, represented by its coefficients. -/
 def cubicMatterProfile

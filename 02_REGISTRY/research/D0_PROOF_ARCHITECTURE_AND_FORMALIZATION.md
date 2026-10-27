@@ -10404,3 +10404,26 @@ and
 `sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_interval_local_car_refinement_v14.json`.
 The replay summary carries its clean source snapshot, source/reference coverage
 and output digest; the comparison records matched-query retrieval metrics.
+
+### Compactness derives the uniform CAR margin from pointwise chart inclusion (27 October 2026)
+
+The new declaration `D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin`
+composes the local Eq. (24) refinement with compactness of the fixed closed
+time interval. Given a globally C³ two-component profile and its pointwise
+strict inclusion `‖Ψ(t)‖ < sqrt(1-p)`, the proof takes maxima of the profile
+norm and third-derivative norm. These give the uniform envelope, derivative
+bound, and positive uniform CAR margin required by the existing interval-local
+eventual-mesh theorem. It then returns one natural threshold `N₀` after which
+the finite CAR complement is positive at every sampled index on every uniform
+mesh with `N ≥ N₀`.
+
+The pointwise chart inclusion and global C³ profile remain explicit inputs.
+This formalizes the compactness step from pointwise smallness to a uniform
+margin; it does not derive smallness from the normalized CAR preparation, the
+actual generator, or a physical selection rule. The exact #334 §7.2 Eq. (24)
+source pin remains commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`. Full 40+2 variation, native
+Book/clock/work selection, C0 acceptance, and GR closure remain open.
+
+The declaration inventory and its clean-source digest are recorded in
+`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json`.

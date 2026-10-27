@@ -1515,9 +1515,18 @@ class ProofArchitectureTests(unittest.TestCase):
             "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval"
             in query for query in case["queries"]
         ))
+        self.assertTrue(any(
+            "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin"
+            in query for query in case["queries"]
+        ))
         self.assertIn(
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
             "nonvacuum_interval_local_car_refinement_2026-10-27.json",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "nonvacuum_compact_pointwise_margin_2026-10-27.json",
             case["required_refs"],
         )
         self.assertIn(module, case["required_refs"])
@@ -2053,6 +2062,36 @@ class ProofArchitectureTests(unittest.TestCase):
                 {"Classical.choice", "Quot.sound", "propext"},
             )
 
+    def test_nonvacuum_pointwise_margin_compactness_application_is_compiled(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_compact_pointwise_margin_2026-10-27.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        self.assertFalse(inventory["worktree_dirty"])
+        declaration = next(
+            row for row in inventory["declarations"]
+            if row["name"] == (
+                "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_"
+                "sufficiently_fine_meshes_of_pointwiseMargin"
+            )
+        )
+        self.assertEqual(declaration["module"], "D0.Geometry.NonvacuumBrinkmannStencil")
+        self.assertIn("ContDiff ℝ 3 ψ", declaration["elaborated_type"])
+        self.assertIn("‖ψ t‖ < √(1 - p)", declaration["elaborated_type"])
+        self.assertIn("∃ N₀", declaration["elaborated_type"])
+        self.assertIn(
+            "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval",
+            declaration["proof_dependencies"],
+        )
+        self.assertEqual(
+            set(declaration["axioms"]),
+            {"Classical.choice", "Quot.sound", "propext"},
+        )
+
     def test_proper_lorentz_orbit_is_discoverable_from_pinned_owner_and_lean(self) -> None:
         case = next(
             item for item in cold_start.CASES
@@ -2375,7 +2414,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-27_interval_local_car_refinement_v14.json"
+            / "proof_architecture_cold_start_summary_2026-10-27_compact_pointwise_margin_v15.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -2602,7 +2641,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-27_interval_local_car_refinement_v14.json"
+            / "proof_architecture_search_process_comparison_2026-10-27_compact_pointwise_margin_v15.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
