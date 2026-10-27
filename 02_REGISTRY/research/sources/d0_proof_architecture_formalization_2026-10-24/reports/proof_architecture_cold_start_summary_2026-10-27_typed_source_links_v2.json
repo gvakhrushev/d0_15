@@ -1,0 +1,373 @@
+{
+  "schema": "d0-proof-architecture-cold-start-summary-v2",
+  "snapshot_commit": "96cdd3b5dddefb8c20110d7ed3a5dd8670b16bbd",
+  "worktree_dirty": false,
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "0d9cca180d8c33a04207e69c948923231b4c450e9dbd412f826e8d162c14f07a",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "ec8d4dd896849ec4e3b32da60b073e73fb36fd4cb379a157ab62b61e39c7a935",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "search_limit": 18,
+  "search_cases_found_all_sources": 24,
+  "search_cases_total": 24,
+  "benchmark_cases_total": 25,
+  "cases": [
+    {
+      "id": "labelled-native-raising-inverse",
+      "query_count": 18,
+      "required_source_count": 13,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "Owner all-jet null-leg inverse and the concrete consumer are distinct. The compiled pathwise derivative composes its Eq. (27)/(28) endpoint readout with proper-Lorentz link paths on the finite CAR carrier. Its joint-path specialization allows coframe, column data and normalized covector to vary pointwise; exact recovery removes the need to assume differentiability of those paths. The tangent corollary integrates each rolewise Lorentz tangent by an exponential path, proves det = 1 along that path, and gives the endpoint derivative at t = 0. The Fréchet specialization proves the full derivative on the product of the four role-indexed Lorentz tangent subspaces, with its action exposed role by role. It reuses the canonical six-dimensional tangent coordinates from A4DSolderMetricCompletion and proves that the four-factor parameter has real dimension 24. A concrete linear equivalence identifies that parameter with Role → RolePair → ℝ, and the coordinate-form Fréchet derivative states the reconstructed generator's transpose action at each role. The new paired path theorem composes exact Eq. (30a) coframe recovery with all four Eq. (27)/(28) endpoint readouts on the same constructed Julia query family: an arbitrary coframe derivative H and a 24-coordinate tangent direction q produce derivative (H, endpoint(q)). The fixed principal-frame Lorentz map and the normalized-covector/nonzero-shift chart conditions remain explicit at every path parameter. This is a joint directional derivative only. The local product theorem proves a full Fréchet derivative on the 16 coframe matrix entries and 24 canonical Lorentz tangent coordinates, conditional on the normalized-covector and nonzero-shift chart conditions throughout a coframe neighborhood. It combines exact coframe recovery with the exact endpoint readout identity, so the covector section need not be differentiable. The new base-link application right-translates those same tangent coordinates to any supplied proper rolewise Lorentz link and gives the derivative after the base-link endpoint action; the base link retains both Lorentz isometry and determinant-one hypotheses. This remains a tangent differential at supplied links, not a claim that the exponential is a global chart. None of these results differentiates a selected Book/action/source, selects a physical price or execution, establishes the variational pullback (31), or closes GR."
+    },
+    {
+      "id": "positive-nonvacuum-recovery",
+      "query_count": 20,
+      "required_source_count": 14,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The compiled NonvacuumBrinkmannStencil result proves the exact five-point harmonic/radial readout and binds its source norm to the same recursively constructed midpoint matter record. The time-indexed extension proves that each natural-indexed history step supplies the exact rate used by that site's profile and proves endpoint rate-sum and finite-history energy identities. The explicit two-component cubic family has its exact accumulated midpoint error and componentwise bound. The defect composition proves a uniform componentwise O(h^2) bound. The shared D0.Analysis Taylor theorem derives its O(h^3) defect from C^3 regularity and an explicit uniform bound on the sampled interval; the geometry specialization composes it with the sampled-history result. The vector-valued Taylor/remainder composition now proves the same dimension-free constant in Euclidean norm. Its half-margin CAR application is transported through an isometric Euclidean lift and proved equal to the existing two-component finite recurrence. C^3 regularity at each point of the sampled interval, vector third-derivative and envelope bounds remain supplied hypotheses for the local API. The pointwise-margin corollary assumes global C^3 and pointwise strict chart inclusion, then uses compactness to derive the uniform derivative and envelope bounds and their positive uniform margin. The cubic-profile application bounds the Euclidean profile by the sum of its four coefficient norms on [0,1], derives the pointwise chart margin from that strict coefficient bound, and composes one eventual CAR threshold with the exact stencil source on the same recursive matter record. It returns the nonzero initial rate, but remains a finite-dimensional subset of the source's smooth matter family, not a reconstruction or selection of the original CAR preparation. The new uniform-mesh theorem derives an N0 threshold from the same delta-over-two estimate and proves the existing CAR complement positive for every N >= N0 with h=duration/N. Section 7.2 supplies the finite-step Eq. (24) error and states that fixed small normalized CAR slack survives for sufficiently fine h; the Lean result makes this eventual refinement claim explicit under the supplied analytic bounds. The actual CAR preparation and generator are not reconstructed. The exact signed cubic remainder is now lifted to the Euclidean vector of this same recursive record, with a dimension-free duration-times-third-derivative-coefficient-times-h-squared over 24 bound. A stronger cubic corollary returns this error bound together with CAR positivity and the exact five-point source at every site of every sufficiently fine uniform mesh. The original CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, and physical native Book/clock/source selection remain separate and open.",
+      "exact_application_retrieval": {
+        "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json",
+        "commit": "a2c20a4dc9feeb5446b41e9e49ea8094bd14f40b",
+        "blob": "82574aafa3ea94c61ca28ad9e08980c2974d4b22",
+        "query_index": 17,
+        "query": "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin",
+        "found": true,
+        "status": "found_direct_content",
+        "source_origin": "pinned_snapshot",
+        "candidate_rank": 3
+      },
+      "cubic_family_retrieval": {
+        "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json",
+        "commit": "119c31ba6df9f02a4b8b491e7658de2e7432a797",
+        "blob": "9cfb08a3cbe8ef09d5f1311b6b96ea27378ab611",
+        "query_index": 18,
+        "query": "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource cubicMatterCoefficientNorm cubicMatterMidpointSample finiteMatterForwardGradient transverseFivePointLaplacian",
+        "found": true,
+        "status": "found_direct_content",
+        "source_origin": "pinned_snapshot",
+        "candidate_rank": 2
+      },
+      "cubic_lean_source_retrieval": {
+        "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+        "commit": "7d52c4193cc4b1ebfed1142d327446a6128465b7",
+        "blob": "df316992b289e0a9ada03adb2852227e8da91ed1",
+        "query_index": 18,
+        "query": "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource cubicMatterCoefficientNorm cubicMatterMidpointSample finiteMatterForwardGradient transverseFivePointLaplacian",
+        "found": true,
+        "status": "found_direct_content",
+        "source_origin": "pinned_snapshot",
+        "candidate_rank": 7
+      },
+      "same_record_euclidean_refinement_retrieval": {
+        "query_index": 19,
+        "query": "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement cubicMatterMidpointSample_euclideanError_eq_remainder cubicMatterMidpointSample_euclideanError_le_refinementBound exact Euclidean O(h^2) error same recursive record CAR complement five-point stencil source",
+        "found": true,
+        "status": "found_direct_content",
+        "source_origin": "pinned_snapshot",
+        "lean_source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+        "lean_source_commit": "423ec9a87553a14c6f484e429a6d3309eeae256a",
+        "lean_source_blob": "07a988011a77ee87aa13d5d816680920d51a3007",
+        "lean_candidate_rank": 3,
+        "inventory_path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_same_record_euclidean_refinement_2026-10-27.json",
+        "inventory_commit": "de9fc93ff5a159486a8404ba945ab3e3655f0729",
+        "inventory_blob": "40171d8756ccf09c1b0627c20bca03a91637b56c",
+        "inventory_candidate_rank": 5
+      }
+    },
+    {
+      "id": "proper-lorentz-same-orientation-orbit",
+      "query_count": 4,
+      "required_source_count": 6,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The shared generic finiteGram_right_orbit_complete theorem proves that equal finite Gram matrices give a right-isometry orbit when the reference frame is invertible; the Lorentz module specializes it to site coframes and dressed links. The generic finiteGram_dressed_transport_compatible theorem proves the endpoint Gram identity from the transport isometry and invertibility of the target frame; its Lorentz adapter preserves those hypotheses. The generic finiteMatrix_dressed_transport_frame_invariant theorem factors the two-sided frame cancellation, and the Lorentz link-invariance theorem consumes it without requiring target-frame invertibility for this identity. The generic equality iff theorem then characterizes equality of dressed transports by exactly the corresponding two-sided link action, and the Lorentz equivalence specializes that result. The proper field theorem also requires equal determinant orientation at every site. It leaves time orientation, the selected-action map, physical source selection, and independent acceptance open."
+    },
+    {
+      "id": "finite-gram-affine-quadratic-expansion",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "finiteGram_add_smul_expand proves the exact finite quadratic Gram identity at an arbitrary base frame, and finiteGram_add_smul_difference_quotient retains its full quadratic remainder in the normalized difference. The old expansion APIs remain specializations; solderMetric_flat_tangent and the J2 symmetric quotient consume the generic quotient theorem directly. This proves no physical action, source choice, or continuum curvature law."
+    },
+    {
+      "id": "finite-gram-frechet-derivative",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The generic API proves the full finite-matrix Fréchet derivative of finiteGram at every frame, with both terms HηΘᵀ + ΘηHᵀ and its Frobenius-norm continuous-linear realization. The J2 flat-frame derivative is its specialization through H ↦ 1 + H. The J2 directional path derivative also composes the generic derivative with t ↦ 1 + tH; the exact quadratic remainder remains recorded separately. The solder field consumer composes the generic map with the finite sitewise coframe map. These are finite algebra/calculus results only: the selected-action-to-carrier map, physical source choice, continuum variation, and independent C0 acceptance remain open."
+    },
+    {
+      "id": "golden-step-vs-internal-ratio",
+      "query_count": 1,
+      "required_source_count": 1,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "Physical metric homogeneity and internal Bratteli scale ratio are not interchangeable; native HJR remains a countercontrol."
+    },
+    {
+      "id": "fixedright-stationary-and-minimum-scopes",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "Stationarity, minimum, saddle, Fredholm continuation, and cutoff cusp require separate owners and conclusions."
+    },
+    {
+      "id": "same-fields-do-not-fix-price-source",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "Equality of geometric data does not imply action, cut, Info, clock, or source equivalence."
+    },
+    {
+      "id": "same-prefix-two-ending-prospective-price",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The prospective identity requires equal full continuation partition weights; it supplies neither an absolute normalizer nor physical source selection."
+    },
+    {
+      "id": "clock-dirac-incidence-curvature",
+      "query_count": 4,
+      "required_source_count": 3,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "Chronological clock, spatial CAR Dirac, paired incidence, and d² curvature/complement modes need their explicit maps."
+    },
+    {
+      "id": "gain-readiness-vs-trace-multiplicity",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "Readiness/source gain and trace multiplicity are separate quantities and claims."
+    },
+    {
+      "id": "conditional-transfer-does-not-select-execution",
+      "query_count": 1,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "Generic transfer and Bellman consequences with an optimality premise do not choose physical execution."
+    },
+    {
+      "id": "verification-kernel-transfer-outside-gr",
+      "query_count": 8,
+      "required_source_count": 8,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "VerificationTransferApplication.visible_only_memory_cannot_decode_hiddenBit_futures rejects a decoder from visible-only memory through hiddenBit_sufficient_encoder_injective and the generic sufficient_memory_reflects_future result. The generic sufficient_encoder_injective_of_profile_injective and sufficient_memory_cardinality_lower_bound require injective complete profiles, decoder correctness and, for cardinality, finite state and memory types. The hidden-bit finite control supplies these conditions and proves its four-state lower bound. erased_hiddenBit_operation_map_is_impossible rejects the identity-state map that erases the archive-revealing operation at step_commutes. The positive verified_visibleFalseReadout_transfers_to_common_execution composes the verified foundation state with the actual transfer. ConnesReconstructionBridge.connes_reconstruction_conditional remains conditional on supplied ConnesReconstruction fields. These finite controls do not select a physical execution."
+    },
+    {
+      "id": "car-scaffolds-vs-hodge-operator-claims",
+      "query_count": 28,
+      "required_source_count": 28,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001, D0-ARCHIVE-CAR-DIRAC-SQUARE-001, D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001, and D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001 remain OPEN: their mapped ArchiveCARDirac mapped declarations remain arithmetic constants. The finite L=2 no-kernel theorem proves D^2=4I for the literal hopping matrix and excludes a zero mode only on that carrier; it refutes a 16-dimensional kernel reading at L=2 without proving an all-period kernel theorem or changing the OPEN claim. The scoped L=2 square does not prove the registered all-period square, spinor decomposition, continuum modes, or heat trace. Separate Hodge-cochain results already prove hodgeCarDirac_sq, its four-role oriented difference formula, the 16-dimensional Hodge kernel, and the L=2 factor-two graph-diagonal comparison. The spatial shell has rank 96 and square-energy eigenvalue only under 3 <= L and positive-role-A invariance; its energy tends to 2*pi, while the L=2 shell rank is 48. These Hodge results have no operator intertwiner to the hopping matrix. formal_support.csv lists the Hodge modules, not ArchiveCARDirac. The BOOK_06 06.spectral locator has no exact heading. The v3 literal-ID source view records no exact claim-ID mention for these four open CAR rows in the book files; their source-unit mapping remains unresolved. Compiled narrow inventories preserve types and trust footprints; they do not accept the open claims, C0, or physical D0."
+    },
+    {
+      "id": "top-hodge-inverse-spectral-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The inverse theorem covers positive complete-tripartite scenes and recovers the unordered zone multiset; it neither chooses zone labels nor extends to arbitrary finite complexes."
+    },
+    {
+      "id": "dense-operator-scene-reconstruction-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "This finite recognition theorem uses the stated 33-vertex, adjacency, rank, and trace hypotheses; it does not assert a physical D0 selector or a general operator-dynamics result."
+    },
+    {
+      "id": "scoped-nogo-vs-positive-existence",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "A scoped negative rules out only its declared route and does not discharge positive existence."
+    },
+    {
+      "id": "finite-affine-carrier-parameter-recovery",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The source owner supplies the affine representation; its compiled finite-carrier application recovers both parameters from equality of complete operators. Search candidates and that algebraic injectivity do not select a physical letter or price."
+    },
+    {
+      "id": "finite-julia-null-chart-inverse",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The finite-carrier inverse retains symmetric endpoint forms, their isometry, a normalized witness, and the positive branch; the canonical witness exists under the stated null and nondegeneracy hypotheses. It does not establish the consumer's physical price, admission, all-jet pullback, or GR selection."
+    },
+    {
+      "id": "julia-query-principal-frame-coframe-recovery",
+      "query_count": 26,
+      "required_source_count": 16,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The general compiled map keeps full-query equality and the inverse-coframe right-inverse explicit; its canonical query-family specialization removes the external query-equality premise. The Eq. (28) composition recovers M_r on its full open chart when the observed projected metric covector is nonzero and the positive square-root branch holds; its null specialization derives those conditions from nondegeneracy, normalization, and one nonzero null shift. `archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz` applies Eq. (27) to the source's row-action `IsRoleLorentz Λ` convention with `det Λ = 1`: the transposed endpoint map preserves the same source form and has determinant one. `principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz` composes this same role-indexed endpoint with Eq. (28), and the CAR decoder, query decoder, and full exterior lift return that one map on the non-null chart under the explicit source norm, normalized covector, projected-covector, and positive-branch assumptions. `principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage` joins the algebraic charts for every nonzero shift under the explicit endpoint isometry and normalized covector: the non-null branch retains `det M = 1`, while the null branch derives Eq. (28)'s projected-covector and positive-branch conditions. A physical application must still bind the admitted endpoint to the row-action matrix and prove its properness; smoothness of the full inverse or all-jet pullback, physical query admission, price/source selection, and GR closure remain open. The compiled `principalFrameJuliaQueryFamily_inverseCoframeReadout_hasFDerivAt` theorem proves the readout derivative in all 16 inverse-coframe coordinates with the Lorentz link fixed; its `principalFrameJuliaQueryFamily_recoveredInverseCoframe` application then composes the exact right-link transport to identity, including the identity derivative. Neither result supplies the remaining 24 link jets or the joint all-jet identity. `principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz` now pairs that transported Eq. (30a) coframe identity with the Eq. (28) endpoint decoder on the same concrete query family; the established Eq. (27) and exterior-lift outputs remain in the companion joint endpoint theorem. `principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz` composes that coframe identity with the existing non-null Eq. (27)/null Eq. (28) chart disjunction for every role, retaining the normalized covector and nonzero-shift premises. Both compositions keep the coframe link fixed and do not fill the 24 link directions. The endpoint-map injectivity theorem reuses the owned Eq. (27) decoder: on a common non-null source, equality of complete CAR raising queries for two Lorentz-form-preserving determinant-one endpoint maps forces the maps equal. An explicit diagonal A/B sign flip has determinant one, preserves the source Lorentz form, and is distinct from identity. The assembled Eq. (26) vacuum-column matrix is nevertheless identical for those two link families; the complete non-null CAR query separates them. This is a finite exact countercontrol for using vacuum columns as a full link inverse, and a scoped application of the existing Eq. (27) decoder. `archiveJuliaSourceEq27EndpointMapReadout` now names the shared total query-to-endpoint readout; the non-null recovery theorem supplies the isometry, determinant-one, and source-norm conditions under which it returns the endpoint. Recovery, injectivity, and chart consumers use this definition. It does not prove the 24 link derivatives, full `D R D Φ = I`, physical admission, complete price/source selection, GR closure, or independent C0 acceptance."
+    },
+    {
+      "id": "finite-hermitian-adjoint-twisted-car-application",
+      "query_count": 11,
+      "required_source_count": 12,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The actual site×Fock twisted differential is embedded as a compiled finite linear map, its explicit annihilation formula is identified with the generic Hermitian adjoint, and the generic Hodge self-adjoint and square laws are applied under the explicit unitary-holonomy premise. Retrieval does not select a physical holonomy, action, source, or GR application."
+    },
+    {
+      "id": "real-unit-profile-weighted-hermitian-bridge",
+      "query_count": 18,
+      "required_source_count": 19,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The real unit-profile bilinear adjoint is identified with the standard finite Hermitian adjoint; the registered real Hodge/CAR operator's own adjoint is proved equal to itself through its existing counting-pairing theorem. The generic Hermitian Hodge--Dirac self-adjointness and square/anticommutator laws are applied to the registered nilpotent cubical differential, and the real CAR codifferential is identified as the standard Hermitian adjoint of its forward differential. The existing function-level square is then recovered from the generic anticommutator and the owned CAR cross-term Laplacian. A generic typed adjoint-equality corollary is also consumed by the real Hodge/CAR self-adjoint theorem. The kernel-facing `hodgeCarDiracₗ` is now the same generic Hermitian map, while a compiled pointwise bridge preserves the legacy function-level API and its kernel/shell applications. The concrete profile equality is only at the unit profile: arbitrary nonzero weighted profiles remain in the bilinear API, and no geometric or physical Hodge profile is selected."
+    },
+    {
+      "id": "native-weighted-dirac-matrix-application",
+      "query_count": 18,
+      "required_source_count": 13,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "The generic theorem identifies matrix multiplication in the existing ArchiveCochainBasis with the supplied-weight function operator. The original source pin db3091aded8f6cfe8d39dcd973ccf30ec40dfb08 contains the isolated 2x2 obstruction; the full-carrier transfer is a separate branch formalization delta at c3ceba511bab5c435d715fd56382615fc1dc1505. The exact L=4 application proves the vacuum and B-singleton action equations and applies that conditional transfer. The supplied positive form and self-adjointness premise are not physically derived. The all-even extension requires an even archive period N+2 and proves the same full-carrier block and conditional obstruction there; it is separate from the Eq. (5) Fourier application. The signed scalar second-order operator now has an all-size character eigenbasis, a complete scalar site Fourier inversion, and an injective sixteen-label Fock coefficient embedding per momentum. A companion module defines the explicitly role-signed first-order CAR operator and proves its square equals that operator on the full carrier; composition gives the Eq. (5) all-size squared-mode law for every Fock profile. Its direct first-order Fourier action is now an explicit finite CAR map on each Fock profile, and the induced map squares to the same symbol. This does not make an arbitrary profile a first-order eigenvector; physical action/source selection and GR closure remain open. The null-mode companion proves the exact 16/8/0 per-fibre dimensions, ker=range on nonconstant null fibres, at least N+1 diagonal null momenta, and the full-cochain lower bound 16+8(N+1). Exact total root count/kernel, gauge quotient, broader refinement classification, and physical/source selection remain open. Its complex-fibre contraction uses the DivisionRing generalization at a6ff3f2fc7e0e6b94d673c2cd713cb4faeb94004, capsule blob 60de6702e232d6b68fc3b707a058383c4c09b2ff. The positive-profile standard-Hilbert representative is a separate cubical application for caller-supplied positive diagonal weights; it does not derive general W, the Lorentz-induced W_Q, geometry, or physical selection."
+    },
+    {
+      "id": "archive-phase-shift-reuses-transitive-permutation-theorem",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "scope_review": "For a finite carrier, a transitive permutation, and exact commutation with its shift matrix, the generic theorem forces constant diagonal; a stronger entrywise covariance theorem handles the lifted Fin n × N tensor shift; the iterated and cross-generation flavor-blindness applications also follow without the off-generation-zero premise. ZMod n and Fin n adapters reuse generic step, iterate and transitivity results while retaining existing public names. This is an algebraic matrix result only."
+    }
+  ],
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true,
+  "required_source_ref_count": 169,
+  "claim_source_candidate_view": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
+    "snapshot_commit": "0253f36601d13cb29329d735b53661bc108e0b99",
+    "worktree_dirty": false,
+    "claim_registry_sha256": "0d9cca180d8c33a04207e69c948923231b4c450e9dbd412f826e8d162c14f07a",
+    "view_sha256": "86bb031b3064410644eacfc9a3fa73bdab828cb2326e0e6a111c74a3b1bf2e77",
+    "counts": {
+      "claim_rows": 889,
+      "fully_unique_claim_rows": 94,
+      "partially_resolved_claim_rows": 4,
+      "ambiguous_claim_rows": 0,
+      "unresolved_claim_rows": 781,
+      "non_book_claim_rows": 10,
+      "malformed_claim_rows": 0,
+      "locator_pairs": 731,
+      "unique_locator_pairs": 116,
+      "ambiguous_locator_pairs": 0,
+      "unresolved_locator_pairs": 615,
+      "unpaired_multi_book_claim_rows": 170,
+      "claim_rows_with_ranked_heading_candidates": 381,
+      "ranked_heading_candidate_count": 712,
+      "literal_claim_id_mention_count": 833,
+      "claim_rows_with_literal_claim_id_mentions": 424,
+      "book_source_files_with_literal_claim_id_mentions": 9,
+      "book_heading_count": 674,
+      "book_headings_with_exact_heading_candidate": 40,
+      "book_headings_with_ranked_heading_candidate": 213,
+      "book_headings_with_both_exact_and_ranked_heading_candidates": 23,
+      "book_headings_without_claim_heading_candidate": 444
+    }
+  },
+  "replay": {
+    "source_commit": "96cdd3b5dddefb8c20110d7ed3a5dd8670b16bbd",
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "runner_sha256": "0532c5f68a81d8964737c90582fb2c444355c5c2f32a731295ed845810552694",
+    "runner_git_blob": "68e29bb5a0300497a2fd4be7540560b88db72ceb",
+    "search_engine_sha256": "9cca262e1f66451c7bb968e2c51c8252db462c41f81ff86effdd370cb1cd38f0",
+    "search_engine_git_blob": "8f799b0a2f23e64ed23f7e5708920282461c14b5",
+    "test_sha256": "9c0216c526e555672449ac00b686a41e0e3eaf8914164e4523b333b0ed09c508",
+    "test_git_blob": "f1e42a3fbf45601859f654ebb69f0edb3d11eb16",
+    "full_output_sha256": "4464fb3734d93dfbfbbd0c02c5c45324f8e5af39bd976f9288009198f538d853",
+    "full_output_bytes": 9838057
+  },
+  "lean_validation": {
+    "source_commit": "3a0d6afc42231605460806b97f4662545a184c8d",
+    "toolchain": "leanprover/lean4:v4.30.0",
+    "source_digest": "4b4172b6f1ab9e7f44a66fbd32d3abc34209304a3caad27d92adab3509a53d66",
+    "final_D0_All": "PASS: GitHub D0 Lean build succeeded at the same Lean source digest",
+    "final_command_output": "D0 Lean build run 40470572234 completed successfully; later snapshot changes did not alter Lean source bytes.",
+    "run_url": "https://github.com/gvakhrushev/d0_15/actions/runs/40470572234"
+  },
+  "comparison_replay": {
+    "source_commit": "aecfeada904b0fcdcb1b398cc3e69c17ff5612e4",
+    "runner_sha256": "b36748084ab2fd801c01552041fe53d4babb71929c4a0766ff9bed569055a31a",
+    "runner_git_blob": "6a20d8caaa197282514ca29cbd98dfbe4fb027af",
+    "query_fixture_sha256": "0532c5f68a81d8964737c90582fb2c444355c5c2f32a731295ed845810552694",
+    "full_output_sha256": "a5776b9b9805e90eec4e9a09565d99cc6e250eedd6703dd1ae1e6b487a5a558a",
+    "full_output_bytes": 72357,
+    "report_path": "proof_architecture_search_process_comparison_2026-10-27_typed_source_links_v2.json",
+    "report_sha256": "a5776b9b9805e90eec4e9a09565d99cc6e250eedd6703dd1ae1e6b487a5a558a",
+    "metrics": {
+      "query_count": 24,
+      "query_count_with_explicit_source_scope": 7,
+      "expected_source_reference_count": 8,
+      "unique_expected_source_path_count": 7,
+      "current_scoped_queries_with_expected_source_assembly_owner_link": 1,
+      "current_expected_source_assembly_owner_link_count": 1,
+      "current_expected_source_references_with_assembly_owner_link": 1,
+      "current_expected_source_references_with_formal_support_locator": 4,
+      "current_expected_source_formal_support_locator_count": 8,
+      "current_unique_expected_source_paths_with_formal_support_locator": 3,
+      "current_expected_source_references_without_assembly_or_formal_support": 3,
+      "current_unique_expected_source_paths_without_assembly_or_formal_support": 3,
+      "current_scoped_queries_with_expected_source_header_owner_declaration": 1,
+      "current_expected_source_header_owner_declaration_count": 1,
+      "current_scoped_expected_sources_without_direct_assembly_owner_link": 7,
+      "legacy_scoped_queries_with_expected_source": 0,
+      "current_scoped_queries_with_expected_source": 7,
+      "legacy_serialized_answer_bytes_total": 48,
+      "current_serialized_answer_bytes_total": 530124,
+      "legacy_average_answer_bytes": 2.0,
+      "current_average_answer_bytes": 22088.5,
+      "legacy_owner_bearing_queries": 0,
+      "current_owner_bearing_queries": 10,
+      "semantic_review_required_for_all_queries": true
+    }
+  },
+  "eq24_owner_source_retrieval": {
+    "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+    "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+    "blob": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
+    "query_index": 14,
+    "query": "Eq.24 max u_j in I Psi_j^(h) - Psi(u_j) |I| sup_I Psi''' h^2 / 24 compound midpoint quadrature integral of Psi' fixed small normalized CAR slack survives for all sufficiently fine h",
+    "found": true,
+    "status": "found_direct_content",
+    "source_origin": "pinned_snapshot",
+    "candidate_rank": 2,
+    "required_section": "7.2"
+  },
+  "report_compaction": {
+    "reason": "The full query-by-query retrieval output is reproducible from the pinned runner and source snapshot; this summary preserves per-case source coverage, exact applications, and manual semantic-review boundaries.",
+    "full_output_bytes": 9838057,
+    "full_output_sha256": "4464fb3734d93dfbfbbd0c02c5c45324f8e5af39bd976f9288009198f538d853"
+  }
+}

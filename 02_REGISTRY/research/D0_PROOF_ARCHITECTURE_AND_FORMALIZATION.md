@@ -11048,3 +11048,28 @@ results and 530,124 bytes for current results. The comparison records these
 as response sizes, not reading cost; it does not assess semantic owner
 correctness, hypothesis preservation, or whether more mathematics is
 required. Those remain manual review obligations.
+
+## Cold-start replay after typed source-link metric correction (27 October 2026)
+
+The clean cold-start replay at
+`96cdd3b5dddefb8c20110d7ed3a5dd8670b16bbd` found all required sources in
+**24/24** cases, across 169 source references, with an 18-candidate window.
+The exact-source-change versus unrelated-prose regression passed. The Eq. (24)
+source owner was retrieved directly from its pinned commit/blob at rank 2 for
+the §7.2 midpoint-slack query. The pointwise CAR-margin artifact, cubic CAR
+artifact, cubic Lean source, and same-record Euclidean refinement source were
+also found at their pinned coordinates (ranks 3, 2, 7, and 3/5 respectively).
+
+The compact receipt is
+[`proof_architecture_cold_start_summary_2026-10-27_typed_source_links_v2.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_typed_source_links_v2.json),
+SHA-256 `c9ac8943d760facd4019d18a4880a8ad67b3614fdb489e0e5fd09f6bf250cd1d`.
+It binds the 9,838,057-byte full replay by SHA-256
+`4464fb3734d93dfbfbbd0c02c5c45324f8e5af39bd976f9288009198f538d853` and
+records the current claim-heading view, comparator report, tool/test blobs,
+and exact query receipts. The Lean source digest remains
+`4b4172b6f1ab9e7f44a66fbd32d3abc34209304a3caad27d92adab3509a53d66`, already
+passed by the PR's D0 Lean build; the later changes in this replay are
+registry-view, retrieval-comparison, test, and documentation updates.
+Cold-start success establishes retrieval only; semantic owner review,
+hypothesis-preservation review, C0 acceptance, and the physical GR obligations
+remain open.
