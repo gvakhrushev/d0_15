@@ -140,6 +140,12 @@ CASES: list[dict[str, Any]] = [
                 "blob": "df316992b289e0a9ada03adb2852227e8da91ed1",
                 "scope_query_indexes": [18],
             },
+            {
+                "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json",
+                "commit": "119c31ba6df9f02a4b8b491e7658de2e7432a797",
+                "blob": "9cfb08a3cbe8ef09d5f1311b6b96ea27378ab611",
+                "scope_query_indexes": [18],
+            },
         ],
         "scope_review": (
             "The compiled NonvacuumBrinkmannStencil result proves the exact five-point "

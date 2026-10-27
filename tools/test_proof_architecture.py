@@ -2116,6 +2116,7 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
         self.assertRegex(inventory["lean_source_digest"], r"^[0-9a-f]{64}$")
         self.assertFalse(inventory["worktree_dirty"])
+        self.assertEqual(inventory["snapshot_commit"], "ea2c9d5602880ff059e75a2967444f54bdf242f4")
         self.assertEqual(inventory["public_import_root"], "D0.All")
         declarations = {row["name"]: row for row in inventory["declarations"]}
         required = {
@@ -2178,6 +2179,13 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(source["commit"], "7d52c4193cc4b1ebfed1142d327446a6128465b7")
         self.assertEqual(source["blob"], "df316992b289e0a9ada03adb2852227e8da91ed1")
         self.assertEqual(source["scope_query_indexes"], [18])
+        inventory_source = next(
+            row for row in case["required_sources"]
+            if row["path"] == "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json"
+        )
+        self.assertEqual(inventory_source["commit"], "119c31ba6df9f02a4b8b491e7658de2e7432a797")
+        self.assertEqual(inventory_source["blob"], "9cfb08a3cbe8ef09d5f1311b6b96ea27378ab611")
+        self.assertEqual(inventory_source["scope_query_indexes"], [18])
 
     def test_proper_lorentz_orbit_is_discoverable_from_pinned_owner_and_lean(self) -> None:
         case = next(

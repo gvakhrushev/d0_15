@@ -10486,6 +10486,21 @@ pre-composition receipt at
 its source pin is commit `081e85f67ca3c8c79f50607bc500c2148154fd6c`, blob
 `a410f6f18a749fca40eb4ebcf186fc3d6024352e`. It covered the coefficient-bound
 and positive-CAR application before proving the sampled-history identity and
-composing the exact stencil source. The current compiled inventory for the
-eight-declaration same-record application follows after its clean build
-snapshot.
+composing the exact stencil source.
+
+The compiled inventory for
+`D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource`
+is pinned at commit `119c31ba6df9f02a4b8b491e7658de2e7432a797`, path
+`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json`,
+blob `9cfb08a3cbe8ef09d5f1311b6b96ea27378ab611`; its SHA-256 is
+`688405e41e7cd6303548576a096076c988a55e1859b24551e7ccd15fec1de2eb`.
+It was collected from clean `D0.All` source snapshot
+`ea2c9d5602880ff059e75a2967444f54bdf242f4`, with Lean source digest
+`a83bf800444d4caa19bf139d3af2ab6b0023d68e47c8941566a58de49163db20` and
+collector digest `9d6413bab7340da58717c463c5f347b21d856f9352a92e010495fc922dd68118`.
+The inventory contains the eight profile, sampled-history, CAR, source, and
+composed-application declarations; each has axiom footprint `Classical.choice`,
+`Quot.sound`, and `propext`. The exact Lean source is pinned at commit
+`7d52c4193cc4b1ebfed1142d327446a6128465b7`, blob
+`df316992b289e0a9ada03adb2852227e8da91ed1`; the inventory is evidence of
+compiled declarations, not physical source selection.
