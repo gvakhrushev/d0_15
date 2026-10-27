@@ -10533,3 +10533,48 @@ Semantic owner correctness and application remain manual review obligations.
 These retrieval and build receipts do not discharge CAR preparation/generator
 selection, the full varied rows, C0 acceptance, physical Book/clock/work
 selection, or GR closure.
+
+### Same-record cubic Euclidean refinement composed with the nonvacuum source (27 October 2026)
+
+The existing cubic midpoint application now exposes its accumulated error in
+the Euclidean source space used by the vector refinement API. The compiled
+identity
+`D0.Geometry.cubicMatterMidpointSample_euclideanError_eq_remainder` states that
+the vector error of `cubicMatterMidpointSample` is exactly the signed cubic
+remainder applied to the `c3` coefficient vector. Its companion
+`D0.Geometry.cubicMatterMidpointSample_euclideanError_le_refinementBound`
+proves, for `h ≥ 0`, `N*h = duration` and `n ≤ N`, the bound
+`duration * (6 * ‖c3‖) * h^2 / 24`. This uses the exact finite cubic remainder,
+so it adds no component-count factor and no independent smoothness premise.
+
+The new compiled application
+`D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`
+composes that estimate with the existing same-record source result. Under the
+unchanged coefficient-margin and nonzero-initial-rate hypotheses, one
+`N₀ > 0` gives, at every site of every uniform mesh `h=1/N` with `N ≥ N₀`,
+the positive CAR complement, the exact five-point source expressed through
+the forward difference of that same recursive record, and the Euclidean
+`O(1/N²)` profile error. The prior theorem name and type remain intact.
+
+This is a stronger same-carrier mathematical application only. It does not
+derive the CAR generator/preparation, choose a physical source, prove the full
+40 varied Cartan or 16+24+2 Euler system, freeze or accept C0, or close GR.
+
+The compiled declaration inventory contains the 14 relevant profile,
+same-record, CAR, source and refinement declarations. Each declaration has
+axiom footprint `Classical.choice`, `Quot.sound`, and `propext`. Its source
+snapshot is clean commit `423ec9a87553a14c6f484e429a6d3309eeae256a`, Lean
+source digest
+`4ec16ca28dc47e05615ac0d08d665b0ce9b897bca0d43d8f51f7e3c37e4b97c5`, and
+collector digest `85c981d7674c7467ff08d00bbc43111d737bda2fd7111d0a84dfff8c555b4a04`.
+The exact Lean module is pinned at that source commit, path
+`03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob
+`07a988011a77ee87aa13d5d816680920d51a3007`. The inventory artifact is pinned
+at commit `de9fc93ff5a159486a8404ba945ab3e3655f0729`, path
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_same_record_euclidean_refinement_2026-10-27.json`,
+blob `40171d8756ccf09c1b0627c20bca03a91637b56c`, SHA-256
+`8fa9455ce44f8cda00843a15f5be01264d985759a51d6ad830dc73902e54df0e`.
+The changed geometry module passed its narrow 3,340-job build and final public
+`D0.All` passed 4,626 jobs at the stated Lean source digest.
+Source pin for `D0.Geometry.cubicMatterMidpointSample_euclideanError_eq_remainder`, `D0.Geometry.cubicMatterMidpointSample_euclideanError_le_refinementBound`, and `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`: commit `423ec9a87553a14c6f484e429a6d3309eeae256a`, path `03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob `07a988011a77ee87aa13d5d816680920d51a3007`.
+Compiled inventory pin for `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`: commit `de9fc93ff5a159486a8404ba945ab3e3655f0729`, path `02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_same_record_euclidean_refinement_2026-10-27.json`, blob `40171d8756ccf09c1b0627c20bca03a91637b56c`.

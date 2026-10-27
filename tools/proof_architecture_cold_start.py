@@ -97,6 +97,7 @@ CASES: list[dict[str, Any]] = [
             "sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_on_interval ContDiffAt C3 local regularity sampled interval",
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin",
             "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource cubicMatterCoefficientNorm cubicMatterMidpointSample finiteMatterForwardGradient transverseFivePointLaplacian",
+            "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement cubicMatterMidpointSample_euclideanError_eq_remainder cubicMatterMidpointSample_euclideanError_le_refinementBound exact Euclidean O(h^2) error same recursive record CAR complement five-point stencil source",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -110,6 +111,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_interval_local_car_refinement_2026-10-27.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_same_record_euclidean_refinement_2026-10-27.json",
         ],
         "required_sources": [
             {
@@ -146,6 +148,18 @@ CASES: list[dict[str, Any]] = [
                 "blob": "9cfb08a3cbe8ef09d5f1311b6b96ea27378ab611",
                 "scope_query_indexes": [18],
             },
+            {
+                "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+                "commit": "423ec9a87553a14c6f484e429a6d3309eeae256a",
+                "blob": "07a988011a77ee87aa13d5d816680920d51a3007",
+                "scope_query_indexes": [19],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_same_record_euclidean_refinement_2026-10-27.json",
+                "commit": "de9fc93ff5a159486a8404ba945ab3e3655f0729",
+                "blob": "40171d8756ccf09c1b0627c20bca03a91637b56c",
+                "scope_query_indexes": [19],
+            },
         ],
         "scope_review": (
             "The compiled NonvacuumBrinkmannStencil result proves the exact five-point "
@@ -176,7 +190,11 @@ CASES: list[dict[str, Any]] = [
             "finite-step Eq. (24) error and states that fixed small normalized CAR slack survives "
             "for sufficiently fine h; the Lean result makes this eventual refinement claim "
             "explicit under the supplied analytic bounds. The actual CAR preparation "
-            "and generator are not reconstructed. "
+            "and generator are not reconstructed. The exact signed cubic remainder is now lifted "
+            "to the Euclidean vector of this same recursive record, with a dimension-free "
+            "duration-times-third-derivative-coefficient-times-h-squared over 24 bound. A stronger "
+            "cubic corollary returns this error bound together with CAR positivity and the exact "
+            "five-point source at every site of every sufficiently fine uniform mesh. "
             "The original CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, "
             "and physical native Book/clock/source selection remain separate and open."
         ),
