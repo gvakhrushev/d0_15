@@ -10366,3 +10366,33 @@ structured-and-text search surfaced all seven explicitly scoped expected
 sources. Its 531,238 serialized answer bytes are a response-size proxy, not a
 token or file-read measure. Retrieval and comparison do not establish semantic
 owner correctness or discharge the remaining native physical application.
+
+### Interval-local C³ for the Eq. (24) CAR refinement (27 October 2026)
+
+The midpoint quadrature proof now requires `ContDiffAt ℝ 3 ψ t` only for
+points `t` in the cell or sampled interval used by the estimate. The history
+error composes the local cell bounds. In the geometry application, the
+Euclidean derivative projection and recurrence identity use smoothness at the
+actual sampled midpoints, so the vector CAR slack, half-margin and eventual
+uniform-mesh theorems also use this interval-local premise. Their former
+global-smoothness declaration names remain wrappers and keep their prior
+types.
+
+This matches the scope of Eq. (24)'s `sup_I |Ψ'''|` estimate in #334 §7.2.
+The interval regularity, derivative bound, continuum envelope and strict CAR
+margin remain supplied hypotheses; the refactor does not derive them from the
+original CAR generator or preparation. Physical source selection, C0
+acceptance, the full varied rows and GR closure remain open.
+
+The compiled declaration inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_interval_local_car_refinement_2026-10-27.json`
+(SHA-256 `751b5a54f12baffc1b084f863339de0ecf444735370d31760b86c1470c0dc79e`).
+It was collected through `D0.All` from clean source snapshot
+`2190c3645d9a8a9cfa6959cb4364f98b4a0138af`; complete Lean-source digest is
+`83c32c6076d1706eb66ade88cf6dcfecea59628d9452b74422c5a811eb4599da` and
+collector SHA-256 is
+`500d4121a088677dfcbf48dede8f18ecb8589c54e684a421cf89dfd97c2bd4b3`.
+It records twelve public declarations: interval-local proofs and the preserved
+global wrappers. The source pin remains #334 commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
+`67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`, §7.2.
