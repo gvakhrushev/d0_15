@@ -15057,3 +15057,119 @@ protocol, assembly and repository guards;889 claims,31 assumptions,58 aliases,
 validation/provenance note follows those checks; no executable proof changed.
 No prior mathematical suite is repeated for prose. Publication and immutable
 remote blob verification follow in the same existing Draft.
+
+
+### 26 October — bind the SOURCE code to its actual intrinsic metric writer
+
+SAME #334 / constitutive/native-programme-v1; native realization and final
+composition, input6165d170. New bounded parent application:7ch currently
+reads actual SOURCE fields, while7bu's metric writer still takes a supplied
+D(Y). For each actual native SOURCE code A in the existing regular moment
+box, use its ACTUAL decoded Y_A and existing full-CAR spatial D_A to compile
+the predicate-readonly geometry writer V_A=diag(I,What_A) in the actual cold
+QUERY exit bit. The fixed scalar QUERY is identity on this free geometry
+module. V_A fixes the original cold input pointwise.
+
+Intended exact substitution: J(V_A A*Q A V_A*,P0)=J(A*Q A,P0), whereas the
+same actual endpoint satisfies ||[U_A,a]||=b||[What_A,a]|| with b the full
+fixed QUERY off-diagonal block norm. The real calibration is delta*b/sqrt22
+and the true free geometry module multiplies rank and gain once. Native
+code edits change BOTH the SOURCE and its compiled geometry; no derivative
+of an integer compiler lookup is claimed. A SOURCE-only perturbation in
+one already fixed word leaves this metric constant and therefore does not
+supply a live geometric field jet by itself. That remaining update/admission
+map must stay explicit.
+
+This construction uses the kinematic decoder/operator, not Einstein in an
+admission predicate or an assigned action. It consumes7aq/7at's actual false
+branches,7bu592--594,7bw606 and7ch's derived SOURCE price. Only the two owned
+paths may be changed; assistants write private proofs only. The decisive
+changed check is an all-column native joint SOURCE/geometry word plus its
+exact cold corner and commutator norm factorization. No new root/geometry
+census, generic kernel/transfer proof, independent task or registry row.
+
+27 October result, primary section 7ci / equations 701--714. For a known
+finite SOURCE code A, its actual decoded moment field Y_A determines the
+original spatial full-CAR operator D_A and its native controlled geometry
+writer. This removes a separately requested D(Y) at the finite code points.
+The same endpoint preserves the complete cold return and has the exact
+full-norm factor b = ||Q01|| in its site commutator. The false branch is
+identity on all columns. The genuine rotor/binary geometry columns are free
+inputs, multiplying rank and source gain once; compiler work stays blank.
+The explicit reference-site-character completion preserves the original
+scalar algebra, commutator norm and quotient radius without adding sites.
+Realification represents this known operator, without claiming a CPTP
+encoder for unknown original complex CAR data.
+
+The full SOURCE estimate consumes 7ch700 with that actual rank/gain, while
+7bu592--594 supplies the metric bound after the real distance calibration
+delta*b/sqrt22. The declared INTERNAL heat consumes the owned 606 theorem.
+Default tensor heat and the separately declared D01 metric retain their
+distinct physical-identification premise. A noninternal heat placement,
+other selected valuation or genuinely free QUERY/cut/geometry normals keeps
+its actual source. No extra Info, action, Einstein admission test or fitted
+coefficient is introduced.
+
+The decisive exact native check passed 51 assertions. It validates four
+158-stage codes at the same actual clock, and literally replays ONE complete
+158-stage code on ALL 128 columns. The other three endpoint identities use
+separately checked components and exact paid identity padding. The replayed
+word has 14 G, 66 CX and 78 SourceI stages; its true input rank is 16,
+including free geometry, protected Spin and the fixture's two-dimensional
+oldRIGHT. This is not a full-CAR GR/root or original full128 input replay.
+An adverse native QUERY has unsharp return but b = 0 and zero metric,
+checking why the positive exit-block hypothesis is necessary. A SOURCE-only
+change with the geometry word frozen leaves the metric exactly constant.
+
+Executed code: 7720 bytes, SHA256
+106855df55dc1bb6a17b58b46e162a27b05af3369c879d32ca3022bcc497fd0b.
+Observed receipt: 3370 bytes, SHA256
+c6896239e6a1d3a99b5ac54847cf331af56f5d6a2979d0bb5f9a833ed923adf5.
+Unchanged native owner SHA256:
+222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+The exact code and receipt are embedded in 7ci. An earlier scratch trace
+assertion failed because its symbolic expression was unreduced; that code
+and diagnostic were preserved before changing the assertion to exact field
+reduction. The later 44-check packet preceding the zero-b control is also
+preserved. No expected receipt was rewritten.
+
+Two full SOURCE-ONLY reviews, native_source_application and
+stationary_root_transfer, accepted the final complete proof/code/receipt
+without execution or edits. Proof: 15042 bytes, SHA256
+1a7436dcb824477b9c83d312f2a5d4b0392de28eb02c6aa6feb34e2fb84285e0.
+Whole section: 26368 bytes, SHA256
+0d5d0fab8a8db9652157fdbb9ab17a86a42f2c39074c4873088828ab7571427b.
+Both reviews checked the exact return identity, full metric norm,
+rank/gain/completion and the physical variation scope. Their ACCEPT is a
+source review, not independent assembly acceptance or physical closure.
+
+Incoming 6165d1704938824d5e5587aaba0aac78cc95df56 is retained in full:
+primary 2287503 bytes, SHA256
+7cb4a2f0bb8cbbf716027da8741f045a3cdb524094d059d4732fb49b9da5be2e;
+brief 983842 bytes, SHA256
+f6f70eb55b53157a7cf1e8470e0b733a8d6ff55c09b79fbd6e4237cacf74b81b.
+Removing the new section restores the entire incoming primary. The complete
+incoming brief remains an exact prefix. All incoming growing-AF/default
+source, Choi/resource/mixing and other owners' results retain their scope.
+
+Parent substitution is supporting and finite: (A, V_A) is a common paid CODE
+section with the actual moment field and intrinsic metric. It does not
+provide a live physical SOURCE-to-geometry jet/update or a refining family
+of exact joint stationary states. Actual pulse/role/primitive admission,
+physical field variation/refinement inclusion and independent SOURCE/QUERY
+normal equations remain. The proof does not demand universal microscopic
+uniqueness or all-native coverage. GR_closed=false. No task/result/claim,
+acceptance edge, Ready, retirement or merge is added. The assembly checkpoint
+template is consumed only at this stated supporting scope.
+
+Final affected integration on the frozen scientific inputs: work, agent
+protocol, assembly and repository guards PASS; 889 claims, 31 assumptions,
+58 aliases, 183 formal_support, 918 Lean closure, zero warnings. Assembly
+remains 54 active / 98 results / 5 discharged / 22 obligations, with
+scientific_promotion=false. Exact preservation validation checks all four
+packet pins, byte-identical embedded code/receipt, Python AST/JSON and the
+unchanged native owner, complete incoming primary and brief, and the two
+owned changed paths. Whitespace validation passes. These are structural and
+provenance checks; no old mathematical or Lean suite was replayed. This note
+does not change a scientific input. Normal publication and immutable remote
+blob verification follow in the same existing Draft PR.

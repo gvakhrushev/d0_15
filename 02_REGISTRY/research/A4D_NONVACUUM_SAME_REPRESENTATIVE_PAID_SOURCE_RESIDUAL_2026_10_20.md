@@ -78479,6 +78479,416 @@ Observed ordinary-Python receipt 1886 bytes / SHA256 18fcfe6f57196bf0c211da91261
 }
 ```
 
+## 7ci. Bind the executed SOURCE code to its intrinsic metric without changing the return source
+
+27 October 2026. SAME #334 / constitutive/native-programme-v1; native realization and final composition, input6165d1704938824d5e5587aaba0aac78cc95df56. Consume7ch687--700,7bu592--594,7aq/7at and the original spatial full-CAR/adjoint. This constructs a finite joint code section, not a new physical action, a live field jet or an accepted physical premise. The unchanged native matrices are checked below on one complete158-stage word.
+
+### 1. Supports, cut and actual multiplicity
+
+Let S contain all SOURCE packets and QUERY work except a dedicated exit bit q. Fix7ch's compiled symmetric involution Qhat on S tensor C²_q. It is EXACT identity on a separate geometry module K_D, its private geometry compiler work H_g, dedicated source helper, protected Spin and oldRIGHT. SOURCE preparation A acts on S only, with the completed all-column helper identities of7ch. q, K_D and H_g are not SOURCE targets. Passive helper/protected identity factors may be included in S; they retain their actual ranks. The SOURCE one-packet-plus-helper tangents still exclude q and the geometry module, while immutable oldRIGHT is never targeted.
+
+Let K_0 carry the original D_A and fixed scalar site tests a_0. Define K_D=C²_rotor tensor K_0, a_D=I_2 tensor a_0, including the owned binary completion; G=K_D tensor H_g and a_G=a_D tensor I_g. The cold input P0 fixes q=0, SOURCE/QUERY/helper blanks and the supplied geometry-work blanks, while retaining the genuinely free K_D and the declared protected input factors. With7ch rank r0 and d_D=dim K_D INCLUDING the rotor, the new rank is r=r0 d_D. Protected Spin and any genuinely free oldRIGHT are counted ONCE in r0; no128 input factor is inferred from stored Hilbert dimension. Blank geometry work multiplies full heat dimension, not input rank.
+
+Tensor the7ch scalar cold target and Qhat by I_G. Equivalently construct7ch from the start with this actual rank r. Its j_*, g_m, delta_B and Gamma_h then carry that SAME multiplicity. In particular Gamma_new=d_D Gamma_old when only the new free geometry factor was added; common source-normalized errors cancel this multiplicity. The norm error of Qhat itself is unchanged by spectator extension.
+
+For every known actual native SOURCE word A in the regular moment box, compute its ACTUAL moments and field
+
+    z_A,a=<psi_A,O_a psi_A>,    Y_A=R_h(z_A),
+    D_A=D_spatial,fullCAR(Y_A).                              (701)
+
+Use the original inverse-coframe/Cayley/density/material calibration and owned positive-pairing adjoint. Transport any moving pairing by its actual unitary identification to the fixed comparison module. Complex CAR uses its charged ordinary realification rebit, not a new promise on protected Spin. This represents the known operator and real site algebra; it does not provide a CPTP encoder for unknown original complex CAR data. This is a computation from the known finite code A; it is not readout of an unknown quantum state into a free classical controller. The geometry CAR16 is the finite exterior/observer module of this operator; it is not cloning the material CAR state in SOURCE.
+
+For an explicit binary completion of a finite K_0, choose a fixed already addressed reference site x_* and character chi(a)=a(x_*). On padding use D_ext=D_A direct_sum0 and a_ext=a_0 direct_sum chi(a_0)I. For this SAME original scalar-site algebra, ||[D_ext,a_ext]||=||[D_A,a_0]|| and inf_c||a_ext-cI||=inf_c||a_0-cI||, because chi is one of its site values. Thus its scalar kernel and quotient-radius bound are unchanged; no new site is declared by padding. Realification has its owned norm-preserving scalar-algebra lift. Take K_0 in the remaining formulas to be that completed module. ALL its binary columns are free in K_D, and therefore count in d_D, r and the full heat. They are not discarded as invalid states or relabelled blanks.
+
+### 2. The geometry writer and the exact return identity
+
+Choose delta>0 fixed on a compact regular field box with delta sup||D_A||<1. Set
+
+    W_delta(D_A)=[[sqrt(I-delta²D_A²),-delta D_A],
+                  [delta D_A,sqrt(I-delta²D_A²)]].             (702)
+
+702 acts on the just-defined K_D. Consume the native controlled-SO compiler for actual What_A on G with
+
+    ||What_A-W_delta(D_A) tensor I_g||<=epsilon_D,A.
+
+Require completed helper restoration and exact false action on ALL columns:
+
+    V_A=diag_q(I_G,What_A) tensor I_S,                        (703)
+
+with identity on source helper/Spin/oldRIGHT. Private geometry work is disjoint from SOURCE/QUERY; q is the sole shared control. Successful-only control, false phases or an unreturned helper do not satisfy703.
+
+Put B_A=A* Qhat A and define the full endpoint
+
+    U_A=V_A B_A V_A*.                                        (704)
+
+Since V_A fixes P0 pointwise and preserves its complement, direct substitution gives both the compression and full feedback identities
+
+    P0 U_A P0=P0 B_A P0,
+    F(U_A,P0)=F(B_A,P0),    J(U_A,P0)=J(B_A,P0).              (705)
+
+This is an identity for ANY middle B, not only a Hermitian one. Thus7ch's independent forward/reverse SOURCE rows and pointwise Gamma_h survive with the correct rank. No derivative of What_A's lookup is needed. Raw geometry-gate tangents breaking703 retain their feedback rows.
+
+### 3. Exact metric factor and its positive hardware calibration
+
+Write Qhat in q-blocks Qij on S and put
+
+    b=||Q01||.                                               (706)
+
+The ideal SIGN readout/routing can be chosen to exclude q. Before its conjugation the target blocks are c_z I and s_z I, s_z=sqrt(alpha_K x_z(1-x_z)). The strict7ch box therefore supplies a live reducing sector with off-diagonal norm at least
+
+    s_min=sqrt(alpha_K gamma_h b_h(1-gamma_h q_max))>0.
+
+A live sector suffices even if binary complements have zero offdiagonal. Choose epsilon_Q<s_min/2 at the finite QUERY step. If ||Qhat-Q_*||<=epsilon_Q, compression gives
+
+    0<s_min-epsilon_Q<=b<=1.                                (707)
+
+The genuine exit-block hypothesis matters. The native alternative Q=I_q tensor Z_SOURCE, with A=G_SOURCE, has unsharp cold expectation p^3 but Q01=0. Conjugating it by any diag_q(I,W) produces no site commutator. A nonzero cold escape by itself therefore does not prove707; the q-blind reader and the node-dilation off-diagonal are the actual input.
+
+b is fixed computable QUERY hardware data, not a Born-weighted or field-fitted coefficient. Since A excludes q, Bij(A)=A*Qij A and ||B01(A)||=b.
+
+Because Qhat is Hermitian and all its blocks are geometry-blind, the exact q-blocks of704 are
+
+    U_A=[[B00 tensor I, B01 tensor What_A*],
+         [B10 tensor What_A, B11 tensor I]].                 (708)
+
+For a_D=a_D*, [U_A,a_G] has zero diagonal blocks and off-diagonals B01 tensor[What_A*,a_G] and B10 tensor[What_A,a_G]. Here B10=B01*, and the two What commutators have equal norm by unitarity. Therefore
+
+    ||[U_A,a_G]||=b ||[What_A,a_G]||.                        (709)
+
+This is the FULL norm, with no initialized expectation or rank multiplier, including arbitrary reference entanglement.
+
+On the SAME actual prefix representation of the declared INTERNAL D01,7bu592 now gives
+
+    L_g(a)=||R_S|| b ||[What_A,a_G]||
+          =(b/sqrt22)||[What_A,a_G]||,
+    L_phys=(sqrt22/(delta b)) L_g=||[What_A,a_G]||/delta,
+    d_phys=(delta b/sqrt22) d_g.                            (710)
+
+delta b/sqrt22 calibrates DISTANCE; the seminorm has its reciprocal. For kappa_A=delta||D_A||<1, s_A=sqrt(1-kappa_A²), quotient radius R_D,A from7bu and eta_A=2epsilon_D,A R_D,A/delta<1, the owned estimates give
+
+    (1-eta_A)L_D,A<=L_phys<=(1+kappa_A/s_A+eta_A)L_D,A,
+    d_D,A/(1+kappa_A/s_A+eta_A)<=d_phys<=d_D,A/(1-eta_A).     (711)
+
+Retain7bu's scalar-kernel or finite-component hypothesis and all completion/pairing sources. No Golden interpretation of delta is derived. On refinement retain the actual b_h>0 and readout precision after division by delta_h*b_h; algebraic cancellation of b gives no mesh-uniform physical-gain theorem. The owned metric conditions delta_h||D_A||->0 and epsilon_D,h R_D,h/delta_h->0 still need their actual uniform bounds on the chosen code family.
+
+### 4. One paid word and the complete SOURCE estimate
+
+One chronology realizing704 is
+
+    inverse(V_A); A; Qhat; inverse(A); V_A.                  (712)
+
+Multiplication last-to-first proves704 directly. Both geometry legs execute, including the initially false q=0 leg, with full7j inverses. No uncharged cancellation removes them from the clock. With all repetitions and routing included,
+
+    N=N_SOURCE+N_QUERY+N_GEOM,
+    N_SOURCE=len(A)+len(inverse(A)),
+    N_GEOM=len(V_A)+len(inverse(V_A)).
+
+A includes all n copies; Qhat pays its conjugator, eight-stage Z_q and inverse. For an emitted word with g G, c CX, i SourceI and t off-port G, its owned inverse inventory is g, c+6t, 4g+3i. Apply that counter to both new legs. Every SOURCE/reference/label/work/spectator column stays in heat; blanks add no input rank.
+
+At the matched base B_A and U_A are exact involutions. On the declared501 INTERNAL base, every raw stage commutes with scene weights, and7bw606 gives zero whole-Hodge FIRST heat source, including independent SOURCE/geometry raw temporal rows. At a common actual N/carrier its heat value is constant along matched code comparisons. Hence7ch700 carries over with r and Gamma_h extended correctly:
+
+    ||Gamma_h^-1 D_SOURCE B_full-E_PC,h D Phi||
+      <=epsilon_weak,h||D Phi||
+        +(delta_B/Gamma_h)||D z_diamond||
+        +4r zeta N_SOURCE epsilon_Q/((1-zeta)²Gamma_h).      (713)
+
+No geometry-compiler error enters this RETURN bound; its effect on the metric is711. The SOURCE cofield here is labelled by the decoded moment chart. In a frozen geometry word these SOURCE-only rows are not intrinsically geometric tangents; the finite joint code section below, or a separately proved live update map, is needed for that interpretation. Full-bank entangling normals keep7ch697, and free QUERY/cut/geometry normals are not solved by713. Under the fixed DEFAULT tensor heat, the SOURCE heat row is also zero, but D01 is then a separate declared metric operator unless its physical identification is supplied. A noninternal501 placement retains503 or its genuine commuting-padding bound. No Rayleigh/Info term is appended; if an actual valuation includes one, keep its owned source and675 only in its fixed-scene scope.
+
+### 5. What map has actually been constructed
+
+Equations701–712 give a finite-code map
+
+    A -> actual z_A -> Y_A -> original D_A -> native V_A
+      -> complete execution U_A, fixed P0 and fixed site tests. (714)
+
+Every regular-box A is eligible, without Einstein/source-value acceptance. Original lambda_minus and the true rank-adjusted gain remain; the all-mesh consumer keeps its real errors.
+
+For a finite predeclared A-catalogue, all geometry targets are computable. Choose their words/precision, retain every auxiliary carrier, and use the owned real2/5 identity padding to a common actual N. This is construction of finite paid words from known codes, not free online interpretation or a new unknown-state oracle.
+
+The crucial limitation is not removed by the source identity: varying SOURCE A while freezing What leaves b and the metric in709 CONSTANT, although Phi may change. Joint CODE edits (A,V_A) give the finite common section714 and pointwise metric approximation711. They do NOT supply a live physical field jet/update or AF refinement law tying every admitted SOURCE tangent to the geometry-writer tangent. 705 makes price insensitive to that missing lookup derivative; it does not prove the linkage. Primitive addressability, exact false-predicate support, actual role/test interpretation and the physical variation/refinement inclusion retain their existing scope. No accepted parent, universal GR law or GR_closed promotion is asserted.
+
+Source inputs: published7ch frozen proof18904/SHA25639e339d785c0832fed6438f9375d5cbcc7f018fd7bf48881aa23993b6ced4b01; unchanged native owner SHA256222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c. Other equations are consumed at published HEAD6165d170, without an old mathematical replay.
+
+
+### 6. Exact changed-word check and its limits
+
+The following narrow check uses ONLY the unchanged native_execution.py matrices, exact Q(a) arithmetic and its existing validator. Wires are physical helper port0, exit q1, SOURCE2, geometry3, protected Spin4/5 and immutable oldRIGHT6. Only port, exit and SOURCE are blank; the true input rank is16=2_geometry*4_Spin*2_oldRIGHT. This is a small two-site scalar-test fixture, not the full-CAR GR field instance.
+
+A controlled-even-G echo supplies the fixed52-stage SOURCE/query involution. Its exact full q off-diagonal norm is b=4a p^4>0. A is either the empty SOURCE factory or its literal parked G. The two geometry words implement controlled G_geometry^2 and G_geometry^4, with exact false-q0 action. Their inverse words are the owned expanded7j inverses. Four complete native codes are validated at the SAME actual clock N=158, with62/18/44/0 real CX-pair padding stages. There is no free wait or shortened inverse.
+
+One complete158-stage code, SOURCE1/geometry2, is literally replayed on ALL128 columns. The other three endpoint identities follow from their separately checked native components, full word inventories and exact identity padding, not three further complete-word replays. The actual fully replayed code has14G+66CX+78SourceI. The corner is c_A I_16 with c_0=1 and c_1=25-40p=45-20sqrt5 in(0,1). The exact radical bracket3/5<p<5/8 proves that last claim; no floating subtraction is used. Changing geometry preserves the entire cold return.
+
+For a=diag(0,1) on the geometry site, the checker proves commutator*commutator=b^2 sin^2(2k theta_G) times an exact rank4 projector on the q/SOURCE/geometry core, extended by every helper/oldRIGHT column. This proves the full operator norm without a numerical singular-value calculation. At fixed geometry code, a SOURCE-only change keeps that norm exactly constant; joint geometry code changes it. The alternate native zero-b QUERY has unsharp p^3 cold return and zero geometry commutator, even after the same geometry conjugation. It is an explicit adverse control on the positivity premise.
+
+The final ordinary-Python run passes51 checks. An earlier scratch trace assertion compared an unreduced symbolic expression to4; that failed prototype and its diagnostic were preserved before changing the assertion to exact Q(a) reduction. No expected receipt was rewritten. The final code, output and owner hashes are pinned below. No heat matrix, original GR/root, full128/CAR, Slater or Lean suite is replayed. Bare H+J heat equality at the shared N uses the owned606 theorem; different primitive tariffs or other selected valuations keep their actual source/cost. This check proves neither the large field-writer compilation nor its physical variation/refinement inclusion. GR_closed=false.
+
+Executed source 7720 bytes / SHA256 106855df55dc1bb6a17b58b46e162a27b05af3369c879d32ca3022bcc497fd0b:
+
+```python
+"""Exact native SOURCE/geometry block identity; no GR or live-jet claim."""
+from pathlib import Path
+from dataclasses import asdict
+import hashlib, importlib.util, json, os, sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+ROOT=Path(os.environ.get('D0_REPO_ROOT',str(Path.cwd()))).resolve()
+OWNER=ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+assert hashlib.sha256(OWNER.read_bytes()).hexdigest()==PIN
+spec=importlib.util.spec_from_file_location('joint_source_metric_native',OWNER)
+N=importlib.util.module_from_spec(spec);sys.modules[spec.name]=N;spec.loader.exec_module(N)
+K=N.GOLDEN_FIELD;checks=0
+port,q,source,geo=0,1,2,3
+spin=(4,5);old=(6,)
+SI=N.Gate('SourceI',(port,*spin))
+def require(ok,label):
+    global checks
+    checks+=1
+    if not ok:raise AssertionError(label)
+def field(x):return K.from_sympy(S.expand(x))
+def equal(A,B):return A.shape==B.shape and all(field(x-y)==K.zero for x,y in zip(A,B))
+def dm(A):return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(K)
+def ex(word):return N.Execution(7,(port,q,source),old,tuple(word),N.G_CX_SOURCE_I,port,spin)
+def mat(word):return N.word_matrix(ex(word),max_qubits=7,max_expanded_stages=1000)
+def inv(word):return N.inverse_word(ex(word),max_qubits=7,max_expanded_stages=1000)
+def swap(a,b):return (N.Gate('CX',(a,b)),N.Gate('CX',(b,a)),N.Gate('CX',(a,b)))
+def parked_g(t):return swap(port,t)+(N.Gate('G',(port,)),)+swap(port,t)
+def controlled_even(flag,target,k=1):
+    # Chronology gives G X G_inverse X=G^2 on flag1, I on flag0.
+    require(flag not in (target,port,*spin,*old),'separate predicate')
+    core=(N.Gate('CX',(flag,port)),SI,SI,N.Gate('G',(port,)),SI,SI,
+          N.Gate('CX',(flag,port)),N.Gate('G',(port,)))
+    return (swap(port,target)+core+swap(port,target))*k
+Zword=swap(port,q)+(SI,SI)+swap(port,q)
+Vc=controlled_even(source,q)
+Qword=inv(Vc)+Zword+Vc
+Aword=parked_g(source)
+G=S.Matrix(N.G_LOCAL);I2=S.eye(2);P0=S.diag(1,0);P1=S.diag(0,1)
+Z2=S.diag(1,-1);I8=S.eye(8)
+Vsmall=S.kronecker_product(I2,P0)+S.kronecker_product(G**2,P1)
+Qsmall=Vsmall*S.kronecker_product(Z2,I2)*Vsmall.T
+Q=mat(Qword)
+require(equal(Q,S.kronecker_product(I2,Qsmall,I2,I8)),'native QUERY all128 columns')
+require(equal(Q.T,Q) and equal(Q*Q,S.eye(128)),'native QUERY exact involution')
+require(S.simplify(S.trace(Q))==0,'whole balanced64/64')
+b=4*N.A*N.P**4
+require(equal(Qsmall[:2,2:],b*P1),'full offdiagonal b, not Born weight')
+require(field(b)==field(4*N.A*N.P*N.P**3),'b positive original a,p')
+A=mat(Aword)
+require(equal(A,S.kronecker_product(I2,I2,G,I2,I8)),'SOURCE endpoint/helper restoration')
+# All four codes are materialized as native words at the SAME genuine N.
+cases=[];maxN=158
+padpair=(N.Gate('CX',(source,geo)),)*2
+actual_case=(1,2)
+for aindex in (0,1):
+    aw=() if aindex==0 else Aword
+    As=I2 if aindex==0 else G
+    Bsmall=S.kronecker_product(I2,As.T)*Qsmall*S.kronecker_product(I2,As)
+    for gindex in (1,2):
+        vw=controlled_even(q,geo,gindex)
+        V=mat(vw)
+        W=G**(2*gindex)
+        Vlogical=S.diag(1,1,0,0)
+        Vexpected=S.kronecker_product(I2,P0,I2,I2,I8)+S.kronecker_product(I2,P1,I2,W,I8)
+        require(equal(V,Vexpected),'native controlled geometry full128')
+        word=inv(vw)+aw+Qword+inv(aw)+vw
+        debt=maxN-len(word);require(debt>=0 and debt%2==0,'real matched padding')
+        word=word+padpair*(debt//2)
+        stats=asdict(N.inventory(ex(word),max_qubits=7,max_expanded_stages=1000))
+        require(stats['gate_count']==maxN and stats['cut_rank']==16,'commonN true rank')
+        Usmall=S.zeros(8)
+        for i in range(2):
+            for j in range(2):
+                Bij=Bsmall[2*i:2*i+2,2*j:2*j+2]
+                left=I2 if i==0 else W
+                right=I2 if j==0 else W.T
+                block=S.kronecker_product(Bij,left*right)
+                Usmall[4*i:4*i+4,4*j:4*j+4]=block
+        Uexpected=S.kronecker_product(I2,Usmall,I8)
+        if (aindex,gindex)==actual_case:
+            Uactual=mat(word)
+            require(equal(Uactual,Uexpected),'literal158-stage joint word all128 columns')
+            require(equal(Uactual.T,Uactual) and equal(Uactual*Uactual,S.eye(128)),'joint exact involution')
+        # Independent reduced block algebra retains every helper/old column.
+        cold=Uexpected[:16,:16]
+        c=(As.T*Qsmall[:2,:2]*As)[0,0]
+        require(equal(cold,c*S.eye(16)),'cold corner independent geometry')
+        if aindex==0:require(field(c-1)==K.zero,'source0 no feedback')
+        else:require(field(c-(25-40*N.P))==K.zero,'source1 actual scalar return')
+        a_site=S.kronecker_product(I2,I2,S.diag(0,1))
+        comm=Usmall*a_site-a_site*Usmall
+        projector=S.kronecker_product(I2,As.T*P1*As,I2)
+        sk=W[1,0]
+        require(equal(projector*projector,projector) and field(S.trace(projector)-4)==K.zero,'metric projector spectrum')
+        # Domain arithmetic avoids numeric singular values and simplification debt.
+        lhs=dm(comm.T).matmul(dm(comm));rhs=dm(b*b*sk*sk*projector)
+        require(lhs==rhs,'exact metric squared norm factorization')
+        cases.append({'SOURCE_code':aindex,'geometry_code':gindex,'inventory':stats,
+          'padding_stages':debt,'cold_return':str(S.simplify(c)),
+          'metric_squared':str(S.simplify(b*b*sk*sk)),
+          'word_sha256':hashlib.sha256(json.dumps([{'op':g.op,'wires':list(g.wires)} for g in word],sort_keys=True,separators=(',',':')).encode()).hexdigest()})
+# Rational radical bracket proves 0<25-40p<1 without floating subtraction.
+require(S.Rational(11,5)**2<5<S.Rational(9,4)**2,'3/5<p<5/8')
+require(cases[0]['metric_squared']==cases[2]['metric_squared'] and cases[1]['metric_squared']==cases[3]['metric_squared'],'SOURCE-only change has constant intrinsic norm')
+require(cases[0]['metric_squared']!=cases[1]['metric_squared'],'joint geometry code really changes metric')
+# A native unsharp cold return alone does not certify the q offdiagonal.
+Zsourceword=swap(port,source)+(SI,SI)+swap(port,source)
+Qzero=mat(Zsourceword)
+require(equal(Qzero,S.kronecker_product(I2,I2,Z2,I2,I8)),'native zero-b QUERY all128')
+Bzero=S.kronecker_product(I2,I2,G.T*Z2*G,I2,I8)
+require(equal(Bzero[:16,:16],N.P**3*S.eye(16)),'zero-b unsharp cold return')
+a_full=S.kronecker_product(I2,I2,I2,S.diag(0,1),I8)
+require(equal(Bzero*a_full-a_full*Bzero,S.zeros(128)),'zero-b intrinsic metric zero')
+require(equal(V*Bzero,Bzero*V),'geometry conjugation cannot repair zero b')
+zero_word=inv(controlled_even(q,geo,2))+Aword+Zsourceword+inv(Aword)+controlled_even(q,geo,2)
+zero_word=zero_word+padpair*((maxN-len(zero_word))//2)
+require(N.inventory(ex(zero_word),max_qubits=7,max_expanded_stages=1000).gate_count==maxN,'zero-b actual matched clock')
+result={'status':'PASS','checks':checks,'native_owner_sha256':PIN,
+ 'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'actual_joint_word_full_columns':128,'actual_joint_word_stages':158,
+ 'case_with_literal_full_word_replay':list(actual_case),'cold_rank':16,
+ 'protected_oldRIGHT_dimension':2,'protected_Spin_dimension':4,
+ 'query_word_stages':len(Qword),'cases':cases,
+ 'b':'4*a*p^4 > 0, full QUERY block norm',
+ 'metric_proof':'commutator*commutator = b^2*sin(2*k*thetaG)^2 times rank4 projector on q/source/geometry; exact helper/old tensor extension',
+ 'zero_b_unsharp_control':True,'heat_replay':False,'GR_closed':False,'live_SOURCE_geometry_jet':False,
+ 'scope':'finite joint-code source/metric identity only; SOURCE-only fixed-geometry metric guard retained'}
+Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2),flush=True)
+```
+
+Observed receipt 3370 bytes / SHA256 c6896239e6a1d3a99b5ac54847cf331af56f5d6a2979d0bb5f9a833ed923adf5:
+
+```json
+{
+  "status": "PASS",
+  "checks": 51,
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "source_sha256": "106855df55dc1bb6a17b58b46e162a27b05af3369c879d32ca3022bcc497fd0b",
+  "actual_joint_word_full_columns": 128,
+  "actual_joint_word_stages": 158,
+  "case_with_literal_full_word_replay": [
+    1,
+    2
+  ],
+  "cold_rank": 16,
+  "protected_oldRIGHT_dimension": 2,
+  "protected_Spin_dimension": 4,
+  "query_word_stages": 52,
+  "cases": [
+    {
+      "SOURCE_code": 0,
+      "geometry_code": 1,
+      "inventory": {
+        "qubits": 7,
+        "blank_count": 3,
+        "unknown_wires": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gate_count": 158,
+        "g_count": 8,
+        "cx_count": 100,
+        "source_i_count": 50,
+        "full_dimension": 128,
+        "input_dimension": 16,
+        "cut_rank": 16
+      },
+      "padding_stages": 62,
+      "cold_return": "1",
+      "metric_squared": "10304 - 4608*sqrt(5)",
+      "word_sha256": "aec403490b89d8e3235bb3476075bf4b9c9023be4e4e3bbf708ddb7599a564bd"
+    },
+    {
+      "SOURCE_code": 0,
+      "geometry_code": 2,
+      "inventory": {
+        "qubits": 7,
+        "blank_count": 3,
+        "unknown_wires": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gate_count": 158,
+        "g_count": 12,
+        "cx_count": 72,
+        "source_i_count": 74,
+        "full_dimension": 128,
+        "input_dimension": 16,
+        "cut_rank": 16
+      },
+      "padding_stages": 18,
+      "cold_return": "1",
+      "metric_squared": "739584 - 330752*sqrt(5)",
+      "word_sha256": "351badb28c27b6b009818f4e3de19c5ca572f18cd4c175b275e79e5486c15a90"
+    },
+    {
+      "SOURCE_code": 1,
+      "geometry_code": 1,
+      "inventory": {
+        "qubits": 7,
+        "blank_count": 3,
+        "unknown_wires": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gate_count": 158,
+        "g_count": 10,
+        "cx_count": 94,
+        "source_i_count": 54,
+        "full_dimension": 128,
+        "input_dimension": 16,
+        "cut_rank": 16
+      },
+      "padding_stages": 44,
+      "cold_return": "45 - 20*sqrt(5)",
+      "metric_squared": "10304 - 4608*sqrt(5)",
+      "word_sha256": "c32b30ab6ae6e8e96426846b98e36ddae2cb4528f1bc017cfaef83bc7ddd1205"
+    },
+    {
+      "SOURCE_code": 1,
+      "geometry_code": 2,
+      "inventory": {
+        "qubits": 7,
+        "blank_count": 3,
+        "unknown_wires": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gate_count": 158,
+        "g_count": 14,
+        "cx_count": 66,
+        "source_i_count": 78,
+        "full_dimension": 128,
+        "input_dimension": 16,
+        "cut_rank": 16
+      },
+      "padding_stages": 0,
+      "cold_return": "45 - 20*sqrt(5)",
+      "metric_squared": "739584 - 330752*sqrt(5)",
+      "word_sha256": "fa4e0eddc02a9d9636cdb8421cd977a05415e146b82818f2b41ab118d65b93de"
+    }
+  ],
+  "b": "4*a*p^4 > 0, full QUERY block norm",
+  "metric_proof": "commutator*commutator = b^2*sin(2*k*thetaG)^2 times rank4 projector on q/source/geometry; exact helper/old tensor extension",
+  "zero_b_unsharp_control": true,
+  "heat_replay": false,
+  "GR_closed": false,
+  "live_SOURCE_geometry_jet": false,
+  "scope": "finite joint-code source/metric identity only; SOURCE-only fixed-geometry metric guard retained"
+}
+```
+
+
+
 ## 8. Reproduction
 
 Run from this directory:
