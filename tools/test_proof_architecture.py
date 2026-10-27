@@ -2466,6 +2466,20 @@ class ProofArchitectureTests(unittest.TestCase):
             if case["id"] == "positive-nonvacuum-recovery"
         )
         self.assertEqual(positive_nonvacuum["query_count"], len(positive_case["queries"]))
+        exact_retrieval = positive_nonvacuum["exact_application_retrieval"]
+        self.assertTrue(exact_retrieval["found"])
+        self.assertEqual(exact_retrieval["status"], "found_direct_content")
+        self.assertEqual(exact_retrieval["source_origin"], "pinned_snapshot")
+        self.assertEqual(exact_retrieval["query_index"], 17)
+        self.assertEqual(exact_retrieval["candidate_rank"], 3)
+        self.assertEqual(
+            exact_retrieval["commit"],
+            "a2c20a4dc9feeb5446b41e9e49ea8094bd14f40b",
+        )
+        self.assertEqual(
+            exact_retrieval["blob"],
+            "82574aafa3ea94c61ca28ad9e08980c2974d4b22",
+        )
         self.assertEqual(
             positive_nonvacuum["required_source_count"],
             len(positive_case.get("required_sources", []))
