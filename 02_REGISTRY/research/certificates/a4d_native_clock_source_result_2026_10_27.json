@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-27",
+  "input_head": "c7708742bea04684ffd6aed16774cfdf1b94b129",
+  "status": "PASS_DECLARED_NATIVE_CLOCK_PRICE_AND_FINITE_TEST_CONTROLS",
+  "checks": {
+    "new_cut_compilation_and_source": 61,
+    "new_full_register_clock_and_heat": 80,
+    "previous_local_metric_packet_replayed": 59
+  },
+  "execution": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "cut_source_precision_digits": 90,
+    "clock_small_heat_difference_precision_digits": 80,
+    "normal_and_python_O_json_identical": true,
+    "tests_use_exceptions_not_removable_asserts": true
+  },
+  "source_integrity": {
+    "a4d_compiled_cut_contrasts_2026_10_27.py": {
+      "bytes": 12057,
+      "sha256": "8426d829d7a1aeba818a6099b7738182f0b0680b5913737b3e97b22314401b1e",
+      "git_blob": "4ae3b8239d4460a4ab3346e48ebd424ae033e9ad",
+      "remote_blob_matches_executed_local_file": true
+    },
+    "a4d_native_clock_completion_2026_10_27.py": {
+      "bytes": 8947,
+      "sha256": "c30e99de2a8168a7ff5f2983885d6f3157abc072e2bd189df0983126665fd471",
+      "git_blob": "8ae55ca01cd205e352d35f435072bc8e3fe7fa01",
+      "remote_blob_matches_executed_local_file": true
+    }
+  },
+  "full_local_receipt_sha256": {
+    "result.json": "617dee4357b543f25acfb3e6244ebcf1d6dd44dc15ea844b1685ee4735efa469",
+    "clock_result.json": "c3ff6058f7a5cd506f6223f0b00bf3150e0fbb4eeccd29496f715c7aa6181a8a",
+    "previous_59_check_replay.json": "a3314ab4691278e00ed9c1af0e2e6c059750fd04ce11087413d52da8af7f7715"
+  },
+  "executed_small_native_word": {
+    "Golden_G_calls": 746,
+    "CNOT_calls": 2,
+    "complete_columns": 8,
+    "operator_error": "0.00052373655824988409746891205739725657",
+    "whole_cut_price_error": "0.00037414188688414366019872252510373611",
+    "proved_error_upper": "0.00132679928089970638025457721207305",
+    "is_large_general_GR_word": false
+  },
+  "original_scene_and_clock": {
+    "scene_vertices": 33,
+    "scene_edges": 359,
+    "degree_values": [24, 22, 20],
+    "exact_rational_clock_columns": 8,
+    "endpoint_feedback_trace": "576/625",
+    "full_0grade_dimension_tested": 528,
+    "full_0plus1_dimensions_retained": 6800,
+    "ideal_reflection_heat_at_three_parameters": "11.439734360868414",
+    "actual_nonreflection_angle_error": "0.02",
+    "actual_nonreflection_heat_difference": "9.7335587529354154855184699672810981e-13",
+    "heat_error_bound": "operator_error/11"
+  },
+  "source_budget_example": {
+    "structural_mesh": "1/64",
+    "actual_candidate_source_gain": "8.334720133385749819777603e-18",
+    "comparison_step": "0.000244140625",
+    "Golden_tolerance": "0.0081306187557833487477",
+    "required_word_error": "2.067310305584281886555623e-24",
+    "word_at_that_accuracy_emitted": false
+  },
+  "proof_scope": {
+    "full_register_G_CNOT_density_in_declared_addressed_class": true,
+    "prefix_cut_endpoint_feedback_identity": true,
+    "ideal_reflection_whole_runtime_heat_neutrality": true,
+    "full_compiled_runtime_price_bound": true,
+    "bounded_smooth_finite_test_source_soundness_and_recovery": true,
+    "physical_G_CNOT_admission_from_M1": false,
+    "prefix_cut_selection_from_M1": false,
+    "complete_Book_physical_price_selection": false,
+    "one_physical_refinement_history_constructed": false,
+    "general_exact_lattice_roots_constructed": false,
+    "large_GR_programme_emitted": false,
+    "Lean_run": false,
+    "CI_run": false,
+    "independent_review": false,
+    "raw216_closed": false,
+    "unconditional_GR_closed": false
+  }
+}
