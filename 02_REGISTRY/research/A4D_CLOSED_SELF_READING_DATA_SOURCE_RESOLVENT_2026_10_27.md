@@ -241,3 +241,94 @@ This estimate counts the future n-round *port mean only*: the preceding 3m prepa
 **New consumer for the primary Einstein family.** Apply C18 at the SAME original all42 field representative. Its explicitly computable spectral normal must be compared, with the real gain and norm, to the already configured Golden-J2 covector. Any missing source in a direction annihilated by C18 must come from an actual retained order/Info/heat/feedback/clock component, not an imported observer or guessed stress tensor. Complete source equality, original full Book valuation, finite 42-field native admission and mesh-uniform GR are not asserted from this first-moment identity.
 
 Exact rational smoke controls for inverse trace / moving source, at a finite nontrivial unital recycling on a diagonal two-state toy, are included as an extension of the companion checker. This is a toy algebra verification, not an original CAR16 replay.
+
+
+## 9. Theorem C6 — ORIGINAL native future tests determine the stationary DATA state; no external observer
+
+The previous sections used the unobserved original channel to produce a unique DATA density. Reading this density need not import a hypothetical observer: the SAME frozen 128-labelled process already carries a complete parity-even future observation algebra. Consume the exact original operator proof [full three-tick future effects](A4D_ORIGINAL_FULL128_THREE_TICK_CANONICAL_FUTURE_EVEN_ALGEBRA_2026_10_22.md), Theorem B:
+\[
+\boxed{
+\operatorname{span}_{\mathbb C}\{E_\gamma:1\le|\gamma|\le3\}
+ = \mathcal A_{\rm even}
+ =\{X\in M_{16}(\mathbb C):[X,\Pi]=0\}
+ \simeq M_8(\mathbb C)\oplus M_8(\mathbb C).
+}\tag{C21}
+\]
+Here E_gamma=K_gamma^dagger K_gamma are the genuine ORIGINAL fine-record effects with all zeros/failures retained. No new user-selected POVM, imported test list or coherent programmer is added. The equality is owned at the original algebraic fixture and extends on a regular neighborhood wherever the fixed nonzero rank minor persists.
+
+The original zero-Walsh row a=N0 is fermion-parity ODD; hence Delta=a^dagger a is EVEN, so [Delta,Pi]=0. The inverse, every finite spectral function and the canonical stationary state C14 lie in the original future algebra:
+\[
+\boxed{[\rho_y^{\rm can},\Pi]=0,\quad \rho_y^{\rm can}\in\mathcal A_{\rm even}.}\tag{C22}
+\]
+
+**Exact operational faithfulness.** For ANY two parity-even DATA density matrices rho,sigma in A_even,
+\[
+\boxed{
+(\forall\gamma,\ 1\le|\gamma|\le3:\ 
+\operatorname{Tr}(\rho E_\gamma)=\operatorname{Tr}(\sigma E_\gamma))
+\Longleftrightarrow \rho=\sigma.
+}\tag{C23}
+\]
+Proof: D=rho-sigma is Hermitian and in A_even. Each original outcome effect pairs to zero with D, so their true complex span C21 gives Tr(D^2)=0; positivity of D^2 gives D=0. Conversely equal densities give equal genuine probabilities. The native canonical rho_* is therefore identifiable by ALREADY EXISTING finite original future tests among its parity-even class. No external tomography choice, oracle or invisible preparation label is used.
+
+The scope is exact and mandatory: original parity-offdiagonal DATA coherence is not distinguished by this instrument's even future effects, and oldRIGHT or fine record correlations are not thereby reconstructed. Nor does C23 make statistical trials, fresh work or their clock free: those are separate actual native recorded operations.
+
+## 10. Theorem C7 — intrinsic predictive DATA entropy and its exact source: a candidate, not compulsory Book03 Info
+
+Because C23 determines the canonical state through existing ORIGINAL native tests, its spectral invariants are intrinsic functions of the finite native future-observable state. For positive original Delta define
+\[
+S_{\rm fut}:=-\operatorname{Tr}_{16}[\rho^{\rm can}\ln\rho^{\rm can}],\quad
+Z=\operatorname{Tr}_{16}\Delta^{-1},\quad
+\mu=Z^{-1}\operatorname{Tr}_{16}(\Delta^{-1}\ln\Delta).
+\]
+Thus finite spectral calculus gives
+\[
+\boxed{S_{\rm fut}=\ln Z+
+  \frac{\operatorname{Tr}_{16}(\Delta^{-1}\ln\Delta)}{Z}.}\tag{C24}
+\]
+It contains no externally chosen density, spectrum or separate observer. In native Golden information units put I_fut=S_fut/ln(phi). For every *genuinely admitted smooth original field direction* v, including noncommuting Delta jets, the exact derivative is
+\[
+\boxed{
+DI_{\rm fut}[v]=-\frac1{Z\ln\varphi}
+\operatorname{Tr}\!\left[
+\Delta^{-1}(D\Delta[v])\Delta^{-1}
+  (\ln\Delta-\mu I)
+\right].
+}\tag{C25}
+\]
+Proof: D(Delta^-1)=-Delta^-1(DDelta)Delta^-1, DZ=-Tr(Delta^-1(DDelta)Delta^-1), and Tr[Delta^-1 D(log Delta)]=Tr[Delta^-2 DDelta] by trace spectral calculus since Delta^-1 commutes with Delta, NOT necessarily with DDelta. These terms cancel D(log Z), leaving C25.
+
+Combine this native predictive DATA entropy with the ACTUAL all128 chronological port COST C17, and define an entirely internal explicitly declared comparison statistic, not a new compulsory action:
+\[
+\mathcal F^{\rm DATA}_{n}(\Delta,\varepsilon)
+ :=\mathbb E_{\rho_*} C_{\rm port}^{(n)}-I_{\rm fut}
+ =n+\frac{16np\varepsilon}{Z}-\frac{S_{\rm fut}}{\ln\varphi}.
+\]
+The exact native DATA-statistic first source at fixed n,p is
+\[
+\boxed{
+D\mathcal F^{\rm DATA}_{n}[v]
+ =16np\left[
+ \frac{D\varepsilon[v]}{Z}
+ +\frac{\varepsilon}{Z^2}
+   \operatorname{Tr}\left(\Delta^{-1}(D\Delta[v])\Delta^{-1}\right)
+ \right]
+ +\frac1{Z\ln\varphi}
+ \operatorname{Tr}\left[
+   \Delta^{-1}(D\Delta[v])\Delta^{-1}(\ln\Delta-\mu I)
+ \right].
+}\tag{C26}
+\]
+
+C24--C26 assemble an original PAID port mean and an internally OBSERVABLE, canonical predictive DATA state/entropy from exactly the SAME full128 primitive, without a new microscopic state selector. They are a concrete non-arbitrary mathematical comparison statistic for the full42 consumer, **not a proof of the compulsory Book03 Cost−Info**. The full original coherent chronological-record entropy, oldRIGHT, controller, work and clock are different operational algebras; they demonstrably have different first sources in [the complete-record selection result](A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md). M1 cannot erase these ACTUALLY DISTINGUISHABLE records as a harmless naming/catalogue choice. Assigning C26 to the full geometric action without that identification would simply import the answer as a postulate.
+
+**Exact sign/normalization control.** For a two-state diagonal rational toy Delta(t)=diag(4+t,9), rho_0=(9/13,4/13), direct differentiation of Shannon/von Neumann entropy and independent substitution into C25 both give
+\[
+\boxed{
+\left.\frac{d}{dt}S_{\rm fut}(\Delta(t))\right|_{t=0}
+=\frac{18}{169}\ln(3/2)>0.
+}\tag{C27}
+\]
+This toy only checks the algebra and does not emulate the complete ORIGINAL CAR16 native future-test algebra.
+
+**Application status:** the original DATA fixed point, finite no-reset future tests, its intrinsic predictive entropy, whole port-COST first moment and their complete DATA source are explicitly composed from the SAME frozen original CAR/Golden instrument. The full native Book03 action/recorded Info and all observer/clock/work/42-field constraints/refinement remain unproved. No result is advertised as physical GR closure.
