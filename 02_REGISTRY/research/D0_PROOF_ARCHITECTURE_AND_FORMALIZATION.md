@@ -11307,3 +11307,39 @@ The same-snapshot search comparison is
 SHA-256 `2e2f704f81cd8b7903d95e9246309eecb854757dd25a2b48d47f471db8a2a9c3`;
 it found the explicitly scoped source in 7/7 current and 0/7 legacy searches.
 These retrieval results do not independently accept a scientific application.
+
+### 27 October counting Gram of the actual graded pullback
+
+`D0.Geometry.ArchiveGradedCochainGram` now proves the diagonal counting Gram
+bilinear form of `archiveGradedCochainPullback` against the existing
+`cochainPairing`, for every level and all pairs of cochains. For a coarse
+point `x` and Fock state `S` the diagonal weight is
+
+```text
+c_L^(2 * fockDegree S) * product_r
+  (if S r is occupied then 1 else if x r = 0 then 2 else 1),
+where L = N+2 and c_L = (L+1)/L.
+```
+
+The proof counts fibers of the actual role-group projection: a collapsed
+fine edge contributes nothing in an occupied role, while an unoccupied
+zero coordinate has two vertex preimages. It then pushes the real fine
+pairing through that fiber count. Independent read-only review checked the
+formula, full carrier, all quantifiers and source scope. The theorem has no
+extra input hypothesis and its Lean axiom report contains `propext`,
+`Classical.choice` and `Quot.sound`; it does not depend on the CAR
+`native_decide` lemmas used by the chain-map theorem.
+
+This is a bilinear Gram identity, not yet a separate matrix or trace theorem.
+In particular 625 is the source's **unscaled** counting total at `L=2`;
+256 is a different partially normalized sum. The expected counting total
+for the actual degree-scaled map is `50625/16`, but that numerical trace has
+not been separately compiled here. A unique physical Hodge metric,
+normalization, readout and refinement remain open. The existing Hodge claim
+retains `OPEN / PROOF-TARGET`; the historical source and its certificate
+hashes are unchanged.
+
+`D0.All` passed locally with 4,746 jobs after registering this module, on Lean
+source digest `3e1413743001a2af50d6dfa2c6f3643be43f8854bcefcc13c97d91053657b9cf`.
+The older `hodge_mass_trace_sum` theorem-name locator remains unresolved; it
+is not made valid by the new Gram theorem.

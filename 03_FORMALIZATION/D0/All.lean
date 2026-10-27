@@ -398,6 +398,7 @@ import D0.Geometry.ArchiveFieldEquation
 import D0.Geometry.ArchiveFiniteCartanLieClosureNoGo
 import D0.Geometry.ArchiveFlatProductBondingNoGo
 import D0.Geometry.ArchiveFockIntrinsicCommutant
+import D0.Geometry.ArchiveGradedCochainGram
 import D0.Geometry.ArchiveGradedCochainRefinement
 import D0.Geometry.ArchiveGradedRefinementChainMap
 import D0.Geometry.ArchiveHeatTrace
