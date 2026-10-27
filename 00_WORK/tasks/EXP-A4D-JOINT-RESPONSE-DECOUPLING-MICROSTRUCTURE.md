@@ -15945,3 +15945,136 @@ incoming primary/brief preservation PASS; only the two owned paths change,
 whitespace clean. This review/validation note changes no scientific input.
 No original certificate, heat/full128/Lean replay, CI acceptance or physical
 GR promotion is asserted. Durable same-PR publication follows.
+
+
+### 27 October - control finite-cone correlated SOURCE directions
+
+SAME #334 / constitutive/native-programme-v1; native realization and
+composition, input1be538f4. Previous checkpoint made verified progress in
+771--776. Input/cut typing7l already distinguishes fixed complete inputspan
+from a single initial density; do not repeat it as new physical admission.
+The named remaining source premise is7ck's correlated multi-bank SOURCE
+normal, beyond its exact one-packet covector735--738.
+
+Consume the EXISTING uniform read-once injection kernel. Contract outside
+a genuinely transported r-bank cone, use the exact first moment conditional
+and count overlaps of at least two slots. Seek a full moment-source identity
+with a controlled higher-overlap remainder, preparedTAG weights retained.
+Normalize by the ACTUAL Gamma, with R*zeta cancellation proved rather than
+assumed. Test a native O(n) tree of separately completed CX;CX identity
+cells; every added copy/inverse/clock/work column remains paid. Raw arity
+alone is not a cone bound; balanced one-slot sampling is not joint uniformity.
+The decisive check is a nondiagonal quantum centered pair kernel, its actual
+correlated first row, nonuniform TAG omission, native identity cells and
+hostile matching-sampler/fanout controls. No new gravity root/rank survey.
+
+Only the same two owned paths change. Helpers remain readonly/private.
+This is not a locality postulate, covariance on arbitrary correlated base
+states, a claim about all native implementations, fullGrassmanncut neutrality
+or original physical X_N. Complete external xi/source/control terms and
+remaining cut/clock/scene/role duties retain their scopes.
+
+
+27 October result, primary7cp777--784. The EXISTING uniform ordered-distinct
+read-once kernel now supplies an exact full ambient first-moment SOURCE
+covector on a correlated r-bank cone, plus an explicit higher-overlap
+operator remainder. At the actual common product reference, independently
+perturbed banks may become entangled. The prepared Golden TAG omission
+weights are retained: a_i=(1-w_i)/(n-1), sum_i a_i=1. The exact projected
+coefficient is not a singleton-only approximation. The full gradient and
+the two independent real forward/reverse half-rows remain those of7ck.
+
+The residual is <=6|lambda|k(k-1) sum_j b(S_j)nu_j, with S_j the actual
+transported bank cone and b(S)=(r-1)(r-2w_S)/[(n-1)(n-2)]. A concrete native
+connected extension inserts separately completed CX;CX cells between
+adjacent banks and their genuine outer inverse. Both legs add4(n-1) CX
+stages, no wire/rank. Every completed cell is identity on ALL columns;
+the endpoint/cold/739 metric are unchanged at base. Every added raw cone
+has r<=2, giving48|lambda|k(k-1)nu/(n-2). The actual new clock and absolute
+heat stay paid;606 supplies complete INTERNAL first-heat cancellation.
+Actual D01 dual conversion is sqrt22, not the bare sqrt2 or a clock average.
+
+Equation784 divides by the TRUE reporter Gamma at the new clock/rank.
+R*zeta cancels exactly; weak strength, readiness/material/calibration,
+c versus c_* and all old error budgets remain. A bound K_h uniform in n
+requires fixed reporter shape constants and uniform margins; if the actual
+clock changes them, use K_(h,n). Per-n positivity alone proves no decay.
+Actual compiler epsilon_K is an operator bound on ALL SOURCE and TAG,
+with only permitted query blanks contracted and NEW source counts. Global
+QUERY/COPY775, TAG/router/cut/scene/duration and external xi sources stay
+explicit; increasing banks does not solve the full joint/refinement budget.
+
+One new exact checker passed CPython3.9.6/SymPy1.14.0. Actual Golden G|0>
+packets and noncommuting X/2 give a centered two-packet quantum kernel.
+For n=4,5,6 the one-bank conditional is scalar but a norm-one correlated
+preparation has zero marginal moment jets and NONZERO full feedback row,
+scaling exactly with1/binom(n,2). The actual nonuniform Golden TAG pair
+coefficient is checked as an operator. The script executes all16 columns
+of the four-bank native identity tree, validates its seven-wire SourceI
+profile and both six-CX legs, and executes the16-column fanout identity.
+Its twelve-bank bad sampler has correct singleton inclusion but wrong
+pair inclusion; the code compares the analytic Pauli conditional norm
+values, without constructing a4096-column query. This is a structural
+toy kernel, not an emitted GR query or replacement physical action.
+No root/rank/SVD/heat/full128 CAR/Lean replay was run.
+
+Frozen proof15548 / SHA256
+1ddcf39f05a945309cd96df23d1d38ddac7380a7da4ea79c2c2180d009baef91;
+section24952 / SHA256
+ff2f22b8c8ab7ddc46dc849516de8e9b6e1ab788d61e47757761579ad87b3989.
+Code7252 / SHA256
+97235c160d345988e988d6fac7f62a489c96cee5c06782f7d6af9fbd16b7a759;
+observedreceipt1826 / SHA256
+bc146de0fc21365c4ee99c875a3ba17b7f0289d32007aa2a7bcad1a2e88cd149.
+Complete executed code and observed JSON are embedded byte-exactly.
+Nativeowner remains17833bytes/SHA256
+222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+No expected receipt or original source was rewritten.
+
+Parent substitution:7ck's one-packet SOURCE identity now has a controlled
+correlated finite-cone extension and an explicit native connected consumer.
+The joint-uniform sampler and actual-cone requirements are indispensable:
+matching and fanout controls show why singleton balance/raw gate arity
+cannot establish them. Arbitrary correlated base states, global cones,
+full Grassmann-cut neutrality and physical X_N admission remain separate.
+The SOURCE-only moving-cut application uses the owned paired-preparation
+map and actual cone; fixed initial task typing still needs7l's complete
+input span AND actual closing comparison. Independent context xi and all
+remaining source/dynamics/refinement duties are retained. GR_closed=false;
+positive_gr/raw216 remain open. No new task/result/claim/acceptance edge,
+Ready, retirement or merge. The assembly template is supporting only.
+
+Incoming1be538f4 primary2501353 / SHA256
+73432149228168e9c8a304d887488f23c2b874d188429ff12a42a5723fd933d3;
+brief1037341 / SHA256
+a9ce66cd4ac5258fb292f21a437c7c1d5803f94f5723f3f8e099944cdff87ff0.
+Removing7cp restores EVERY incoming primary byte; the incoming brief is
+an exact prefix. Only the same two owned write paths change. Final complete
+source reviews and affected structural integration are recorded below.
+
+
+Final FULL SOURCE-ONLY ACCEPT by native_source_application,
+retained_metric_map and stationary_root_transfer. Each read the entire
+final777--784 proof, complete executed Python and observed JSON. All
+verified final proof/section/manifest pins, two exact fences and executed
+sourceSHA. Reviews covered exact first-projection/TAG coefficients,
+independent-leg conventions, cone/count/constants, actual gain784,
+fixed-shape uniformity, kernel-error/xi/cut boundaries and both hostile
+controls. The final slot-symmetrization, K_(h,n) and analytic matching-norm
+clarifications were explicitly reviewed. No reviewer ran mathematics or
+edited the repository; source review is not independent assembly or
+physical acceptance.
+
+
+Affected final guards PASS with explicit GIT_WORK_TREE: validate_work.py,
+validate_agent_protocol.py, gr_assembly.py check and validate_repo.py.
+Assembly unchanged54 active/98 results/5 discharged/22 obligations,
+scientific_promotion=false. Repository889 claims/31 assumptions/58 aliases/
+183 formal_support/918 lean_closure, zero warnings. Supporting assembly
+template parsed without an acceptance mutation. Final preservation checks
+verify all frozen pins, both byte-exact fences, AST/JSON/sourceSHA, the
+unchanged native owner and EVERY incoming primary/brief byte. Only the
+two owned paths change; whitespace check passes. This validation note
+changes no scientific input. No old certificate/heat/full128/Lean replay,
+CI acceptance or physical GR promotion is asserted. Same-PR publication
+retains Draft/IN_PROGRESS and all remaining parent duties.

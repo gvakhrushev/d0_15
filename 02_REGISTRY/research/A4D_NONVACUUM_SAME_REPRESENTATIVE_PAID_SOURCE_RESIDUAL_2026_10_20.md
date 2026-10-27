@@ -81829,6 +81829,359 @@ print(json.dumps(out, indent=2)+'\n', end='')
 }
 ```
 
+## 7cp. Correlated SOURCE covectors have an overlap remainder, with a native connected constructor
+
+27 October2026. SAME #334 / constitutive/native-programme-v1; native realization and composition, input1be538f46936884be12e604ca3cccbb06132966e. Consume7bj's read-once uniform-injection kernel,7ck735--741,7cn's augmented observation map and7co's query-role control. The missing parent component is the correlated multi-bank SOURCE row, previously outside the exact one-packet identity. More independently prepared banks than queried slots are a changed mathematical input: they suppress higher overlaps without changing the reporter or assigning a new action. No gravity root, rank census, selector or physical locality principle is added.
+
+### 1. The full operator and its one-packet conditional
+
+Let h=h* be the EXISTING k-packet cold kernel, ||h||<=1. Let K_N be its UNIFORM ordered-distinct-injection average on N>=k complete packets. For the conditional calculations REPLACE h by its slot symmetrization, which changes neither K_N nor its product expectation or the physical programme. The actual base packet density rho is normalized, with every genuine reference/padding/material component retained; at the reference the packets are independently prepared in rho^tensor N. Their variations are not required to remain independent. Use the actual common moments mu_a=Tr(rho O_a), ||O_a||<=1, of the owned read-once tensor alphabet. The scalar finite-kernel expectation is c(mu), with strict return margin, and
+
+    J(c)=-R log(a_zeta+zeta c^2), a_zeta=1-zeta>0,
+    lambda=J'(c)=-2R zeta c/(a_zeta+zeta c^2),
+    g_a=lambda partial_(mu_a)c.                         (777)
+
+R is the true free-input rank; SOURCE banks are blanks, not free rank. Use the actual7ck positive return collar 0<c_min<=c(mu)<=c_max<1. Lambda is frozen for this FIRST differential, not a field-dependent coefficient multiplying an action. No Dlambda is omitted from a different scalar identity: D J=lambda D c is the actual chain rule.
+
+For the one-slot contraction H1=Tr_(other slots)[rho^(tensor k-1) h], the read-once alphabet gives the OPERATOR identity
+
+    H1=cI+(1/k)sum_a partial_a c(O_a-mu_aI).             (778)
+
+Expand h into tensor words containing at most one feature per slot, including identity; differentiating their product means and averaging the slot yields778, even for noncommuting one-packet features. The formal ambient moment polynomial is required. Agreement only on the geometric field image, or an IID scalar mean without this kernel, does not establish778. The overcomplete Choi gradient is the genuine g of737, not a gradient silently projected to field directions.
+
+### 2. Conditional covariance for a correlated bank cone
+
+For a bank set S, |S|=r, contract all other banks against their actual rho. This positive unital contraction produces K_|S, with no classical-state or diagonal assumption. If J_hit is the number of selected slots in S, its law is hypergeometric. A j-overlap conditional H_j has ||H_j||<=1; H_0=cI and H_1 is778 on the selected bank. Put A=H1-cI. Since ||A||<=2,
+
+    R_j=H_j-cI-sum_(i=1)^j A_i,
+    R_0=R_1=0, ||R_j||<=2(j+1)<=3j(j-1) for j>=2.
+
+The inclusion probability for each bank is k/N, and E[J_hit(J_hit-1)]=(k)_2(r)_2/(N)_2. Averaging the corrected conditionals gives the EXACT first-moment decomposition
+
+    lambda(K_|S-cI)
+        =(1/N)sum_(i in S,a) g_a(O_a^(i)-mu_aI)+E_S,
+    ||E_S||<=3|lambda|(k)_2(r)_2/(N)_2,                 (779)
+
+where (t)_2=t(t-1). The coefficient1/N is exact; a singleton-only approximation must not be used to claim that coefficient. At r=1 the remainder is exactly zero, reproducing the owned theorem. This is a conditional operator norm on S, not ||K_N-cI|| on the full bank space.
+
+Now use the actual prepared TAG and omission rule of7ck. There are n banks, k<=n-1, and in TAG=t the kernel uses only the n-1 banks excluding t. At the common product reference all branches have the SAME c. Compressing the prepared TAG with weights w_t gives ONE K=sum_t w_t K^(-t) and ONE J(c), never a sum of conditional J_t. For a TAG-BLIND source generator define
+
+    w_S=sum_(i in S)w_i, a_i=(1-w_i)/(n-1),
+    a(S)=sum_(i in S)a_i=(r-w_S)/(n-1),
+    b(S)=(r-1)(r-2w_S)/[(n-1)(n-2)],
+    lambda(K_|S-cI)
+        =sum_(i in S,a)a_i g_a(O_a^(i)-mu_aI)+E_S,
+    ||E_S||<=3|lambda|(k)_2 b(S).                        (780)
+
+Take b=0 if r<2 or k<2; n>=3 for the displayed denominator. The identities follow by conditioning on t: r_t=r-1_(t in S), sum_t w_t r_t=r-w_S and sum_t w_t(r_t)_2=(r-1)(r-2w_S). No uniform TAG prior is inserted. In particular sum_i a_i=1; adding banks does not multiply or attenuate the common-field gain.
+
+For a skew SOURCE preparation generator H on S, ||H||<=nu, let mu_bar=sum_i a_i mu_i be the ACTUAL marginal moments under its correlated perturbation. Frozen-price differentiation and the scalar part of780 give
+
+    D_H J=g dot D_H mu_bar+e_H,
+    |e_H|<=6|lambda|(k)_2 b(S)nu.                       (781)
+
+The perturbed state can be entangled. Only the evaluated reference is product. An auxiliary variation with Dmu_bar=0 can therefore have a genuine nonzero source at finite n, but its source is now quantitatively controlled. It is not declared source-neutral. The matched Hermitian cold base has the owned real adjoint half-rows for independently varied forward/reverse preparations. Use mu_i^diamond and the actual normalized protected-input trace of691/736; do not equate independent velocities or introduce a chosen mixed Spin preparation. A completed shared helper must be identity on ALL columns; its normalized protected trace is a norm contraction. Faults touching contracted QUERY work or TAG need their own uncontracted/sector bounds.
+
+### 3. Actual bank lightcones, an executable connected extension and its norms
+
+For every raw SOURCE stage j, S_j is its support AFTER transporting the generator through the remaining BASE preparation to the query frontier. It counts complete BANKS, not raw wire arity. Bank-private completed words with all-column helper restoration preserve this support; an unfinished macro adds its actual bank/helper support. An entangling identity excursion can instead make a one-wire insertion global. Thus the source remainder for independent raw stages is conservatively
+
+    |e_corr|<=6|lambda|(k)_2 sum_j b(S_j)nu_j.            (782)
+
+No presumed physical locality is used. Source-only helper/Spin factors require the preceding completed-restoration property. QUERY, router, exit-q and TAG-changing rows retain their existing separate theorems.
+
+There is a concrete native extension that satisfies this budget and admits correlations. On one ordinary wire in each SOURCE bank insert the connected chain of separately completed cells
+
+    CX(B_i,B_(i+1));CX(B_i,B_(i+1)), i=1,...,n-1,
+
+after the completed body/router prefix, immediately before QUERY. These cells are q/TAG-blind and exclude geometric X, protected oldRIGHT and shared helper/Spin. Execute their genuine inverse in the outer echo. Every completed cell is I on ALL columns. At the native base the whole endpoint, cold kernel and739 intrinsic metric are unchanged. The new genuine clock is N_old+4(n-1), with no new wire or input rank. Absolute heat and any clock-dependent parameters are evaluated there; the INTERNAL involution606 kills its first source, not its value.
+
+A raw fault folds through at most the remaining CX in its own cell, since later completed cells are identity. Hence every new SOURCE cone has r<=2 even though the hardware graph connects all n banks. Both independently varied legs are counted. For n>=4,
+
+    sum_(new raw legs) b(S_j)<=8/(n-2),
+    |e_corr,tree|<=48|lambda|(k)_2 nu/(n-2).             (783)
+
+The first-moment part has the conservative bound48||g||_1 nu. Private source rows from the old constructor still have r=1 and EXACTLY zero higher-overlap term; no L_h factor is needed for this particular new tree remainder. This does not cover n^2 pair cells at their old count or arbitrary correlated implementations. Away from the base the tree need not preserve the metric, cold kernel or IID property.
+
+All bounds use the true gate-max nu. On the INTERNAL two-term D01 of745, nu=sqrt22||delta D01||, so the dual conversion is sqrt22. There is no1/n clock normalization, averaged metric norm or old bare sqrt2 conversion. The physical field lift and its different norms remain those of749/751.
+
+### 4. Normalize by the real reporter gain; keep implementation and context sources
+
+For the actual weak reporter687 set x=gamma_h Q_h,d, c_*^2=1-alpha_K x(1-x), and evaluate its true gain at the NEW rank/clock. With the finite-kernel c of777,
+
+    |lambda|/Gamma_h
+       =[2c Omega/(alpha_K(1-2x)gamma_h a0 tau_h)]
+           *[(a_zeta+zeta c_*^2)/(a_zeta+zeta c^2)].     (784)
+
+This follows directly by differentiating the two real prices. R*zeta cancels; the readiness, curvature/material calibration, weak strength and c versus c_* mismatch do not. At fixed h with the reporter shape constants held fixed as n grows and uniform supplied return/shape margins,784 gives a finite K_h uniform in the number of banks, not a mesh-uniform constant. If c=c_* the last ratio is1. If the genuine clock changes those shape constants, use the ACTUAL K_(h,n); positivity at each n alone does not prove a uniform bound or K_(h,n)/(n-2) tending to zero. The following finite n-choice uses a proved K_h bound, not an old Gamma copied to the longer clock.
+
+Thus the additional normalized tree correlation debt is <=48K_h k(k-1)/(n-2). Choose an actual finite power-of-two n>=max(4,k+1) to meet a specified debt using this bound. The first-moment term48||g||_1/Gamma_h and the old weak/Bernstein/decoder/field-displacement errors are still required. Increasing n does not solve them. Repetitions are real preparations/body calls, with larger heat, state space and programme length, not copies of one unknown quantum state. The per-device all-column body/metric promise and true Choi inverse conditioning are unchanged at fixed h; a probability concentration argument is not substituted for them.
+
+For the ACTUAL compiled QUERY retain the full operator error epsilon_K on ALL SOURCE banks and TAG until its genuine preparation, after only permitted QUERY blanks are contracted. The resolvent comparison738/497 supplies its genuine per-stage error, with the NEW source count including4(n-1) tree legs. A safe additional source debt is8R zeta M_tree epsilon_K/a_zeta^2, M_tree=4(n-1), when the fault factors are all retained. Otherwise use the stronger full helper/work operator error. Balanced one-slot frequencies, scalar IID means or C1 field-output agreement do not certify this operator bound.
+
+In particular the existing complete source composition now has, on this enlarged SOURCE graph,
+
+    D B-Gamma_h E_PC,h D Phi_live
+       =Gamma_h e_weak,h D Phi_live
+          +(g-g_*) dot D mu_bar^diamond
+          +e_corr+e_implementation,
+    Phi_live=R_chi(mu_bar^diamond,xi),
+    g_*=(D_mu R_chi)^*D_Y J_*.
+
+This is737 with its previously unbounded correlated component replaced by782/783. All genuinely packet-represented material/density/frame coordinates are included in mu. An independently supplied external/context xi variation adds its EXPLICIT D_xi B-Gamma_h E_PC,h D_xi Phi term; overlap dilution does not remove it. The old QUERY/COPY775, TAG, router, cut, scene, duration and any other selected valuation terms remain. This theorem alone is not a complete cofinal/refinement proof: actual compiler/count/gain errors and every old budget must be met simultaneously.
+
+### 5. The two sharp boundaries are substantive, not optional bookkeeping
+
+First, joint uniform injection matters. For N even,k=2, choose uniformly one fixed disjoint matched pair. Every packet has the correct2/N one-slot inclusion, and the IID c and g can agree with the uniform kernel. Yet a matched S of size2 is hit twice with probability2/N rather than2/[N(N-1)]. For a centered quantum A, h=c0I+epsilon A tensor A has g=0 while its conditional pair term is2epsilon A tensor A/N. The1/n^2 proof fails. Actual selector nonuniformity/fallback/template errors must stay in a valid full-kernel or pair-inclusion bound. One-slot fairness and successful scalar tests cannot replace it.
+
+Second, let F=product_(j=2)^n CX(1,j). A local real J_1 insertion transported through this actual fanout is F J_1 F=J_1 tensor X_2 tensor...tensor X_n. A preceding/following fanout with a genuine G/inverse identity excursion can therefore have endpointI but a global frontier cone. Raw one/two-wire arity is not a proof of bounded r. For unrestricted global source programmes, or many such stages,782 retains the true cone sum and need not tend to zero. The stronger global Grassmann-cut source obstruction is not contradicted or declared zero.
+
+For a SOURCE-only moving cut generated on one of these same finite cones, the owned cut/preparer identity transports its feedback row to the paired SOURCE preparation, and781 applies with its actual support and norm. A fixed initial task is still typed by7l's complete input-span AND real closing comparison, not one density matrix. Cut directions mixing exit, QUERY, geometry/scene or arbitrary complements remain separate. No free initial-state gauge or new projector selector is used.
+
+### 6. Decisive new checks and parent consequence
+
+The new exact calculation uses actual Golden G|0> packets and the NONCOMMUTING feature O=X/2. Its centered two-packet contraction has c0=3/4, epsilon=1/8 and zero ambient first gradient. At n=4,5,6 the full conditional operators on one bank are scalar; two-bank conditional rows are nonzero, invisible to marginal moment jets and decay exactly with1/binom(n,2). The complete source lambda is nonzero. Prepared Golden TAG omission is checked with its actual nonuniform weights. This is a structural toy kernel, not a changed GR action or an emitted large native reporter.
+
+The same script executes all16 bank columns of the new native connected tree, validates its seven-wire SourceI profile and both six-CX legs, and verifies the16-column fanout cone identity. A twelve-bank MATCHING sampling counter uses exact finite probabilities and the analytic norm of its4x4 Pauli conditional block: ||X tensor X||=1. The code compares the resulting exact norm values; it constructs no4096-column query. No gravity Euler/root, rank/SVD, heat, full128 CAR or Lean replay is run.
+
+The exact first-moment identity at one packet is now extended to controlled finite-cone correlated preparations and the concrete connected native extension. Correlated variations are allowed, not excluded to make the result true. The retained actual state, source gain, paired/inverse rows, clock, metric promise and error carrier stay explicit. This removes one named SOURCE-support restriction of7ck; it does not prove original physical X_N admission, arbitrary-correlated-base stationarity, full cut neutrality or the remaining GR dynamics/refinement. GR_closed=false; positive_gr/raw216 remain open. No task/result/claim/acceptance edge, Ready, retirement or merge is added.
+
+Source pins: incoming primary blob b09f514b4b26f9c7c844acd5290d077ad5217294 at1be538f4,2501353bytes/SHA25673432149228168e9c8a304d887488f23c2b874d188429ff12a42a5723fd933d3. Native owner17833/SHA256222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c. Consumed owners are7bj515--520,7ch687--695,7ck730/733--741,7cl745/749/751,7co771--776 and7l/686's typed cut transfer. No original source or expected receipt is rewritten.
+
+Executed changed checks with CPython3.9.6/SymPy1.14.0. Save the code outside tracked paths and run from the repository root. Code7252/SHA25697235c160d345988e988d6fac7f62a489c96cee5c06782f7d6af9fbd16b7a759; observed JSON1826/SHA256bc146de0fc21365c4ee99c875a3ba17b7f0289d32007aa2a7bcad1a2e88cd149.
+
+```python
+"""Changed quantum conditional/source and native-cone controls only."""
+from itertools import combinations
+from math import comb
+from pathlib import Path
+import hashlib
+import importlib.util
+import json
+import sys
+
+import sympy as sp
+from sympy.polys.matrices import DomainMatrix
+
+owner = Path.cwd()/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+owner_sha = hashlib.sha256(owner.read_bytes()).hexdigest()
+if owner_sha != '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c':
+    raise RuntimeError('Changed native owner')
+spec = importlib.util.spec_from_file_location('overlap_native_20261027', owner)
+ne = importlib.util.module_from_spec(spec);sys.modules[spec.name] = ne
+spec.loader.exec_module(ne)
+field = ne.GOLDEN_FIELD
+
+
+def require(ok, label):
+    if not ok:
+        raise RuntimeError(label)
+
+
+def dm(A):
+    return DomainMatrix.from_Matrix(sp.Matrix(A)).convert_to(field)
+
+
+def eq(A, B):
+    if hasattr(A, 'shape'):
+        return dm(A) == dm(B)
+    return field.from_sympy(A-B) == field.zero
+
+
+p, a = ne.P, ne.A
+psi = sp.Matrix([a, p]);perp = sp.Matrix([-p, a])
+I2 = sp.eye(2);X = sp.Matrix([[0, 1], [1, 0]])
+O = X/2;mu = a*p;A = O-mu*I2
+require(eq((psi.T*O*psi)[0], mu), 'actual native-G packet mean')
+require(eq((psi.T*A*psi)[0], 0), 'centered quantum observable')
+require(not eq(A*(psi*psi.T), (psi*psi.T)*A), 'genuinely noncommuting density/kernel')
+variance = sp.simplify((psi.T*A*A*psi)[0])
+require(eq(variance, p**6/4), 'centered variance')
+c0, epsilon = sp.Rational(3, 4), sp.Rational(1, 8)
+u = sp.kronecker_product(psi, psi);v = sp.kronecker_product(perp, perp)
+H = v*u.T-u*v.T
+require(eq(H.T, -H), 'two-bank generator skew')
+Pplane = u*u.T+v*v.T
+require(eq(H.T*H, Pplane) and eq(Pplane*Pplane, Pplane), 'norm-one generator certificate')
+
+
+def place(local, site, n):
+    return sp.kronecker_product(*[local if i == site else I2 for i in range(n)])
+
+
+def pair_kernel(n, weights=None):
+    out = c0*sp.eye(2**n)
+    ops = [place(A, i, n) for i in range(n)]
+    coefficients = {}
+    for i, j in combinations(range(n), 2):
+        coef = (sp.Rational(1, comb(n, 2)) if weights is None
+                else sum(weights[t] for t in range(n) if t not in (i, j))/comb(n-1, 2))
+        coefficients[i, j] = coef
+        out += epsilon*coef*(ops[i]*ops[j])
+    return out, coefficients
+
+
+def conditional(K, n, support):
+    support = tuple(support);r = len(support)
+    inclusion = sp.zeros(2**n, 2**r)
+    for row in range(2**n):
+        bits = [(row >> (n-1-i)) & 1 for i in range(n)]
+        column = 0
+        for i in support: column = 2*column+bits[i]
+        amp = sp.prod(psi[bits[i]] for i in range(n) if i not in support)
+        inclusion[row, column] = amp
+    return inclusion.T*K*inclusion
+
+
+zeta, rank = sp.Rational(1, 16), 4
+lam = -2*rank*zeta*c0/(1-zeta+zeta*c0*c0)
+rows = []
+for n in (4, 5, 6):
+    K, coef = pair_kernel(n)
+    K1 = conditional(K, n, (0,))
+    K2 = conditional(K, n, (0, 1))
+    require(eq(K1, c0*I2), 'exact first conditional is scalar')
+    expected = c0*sp.eye(4)+epsilon*coef[0, 1]*sp.kronecker_product(A, A)
+    require(eq(K2, expected), 'exact correlated conditional')
+    dmean = (u.T*(K2*H-H*K2)*u)[0]
+    require(eq(dmean, 2*epsilon*variance/comb(n, 2)), 'nonzero O(n^-2) correlated first row')
+    for local in (sp.kronecker_product(O, I2), sp.kronecker_product(I2, O)):
+        require(eq((u.T*(local*H-H*local)*u)[0], 0), 'mean-invisible correlated direction')
+    require(not eq(lam*dmean, 0), 'genuine nonzero full feedback first row')
+    rows.append({'banks': n, 'pair_coefficient': str(coef[0, 1]),
+                 'first_conditional': 'c0 I2', 'moment_jet': '0',
+                 'feedback_jet': 'lambda*2*epsilon*(p^6/4)/C(n,2)'})
+
+# Genuine prepared Golden TAG: no uniform TAG prior.
+weights = [p*p, p**3, p**3, p**4]
+require(eq(sum(weights), 1), 'native Golden TAG weights normalized')
+Ktag, coefficients = pair_kernel(4, weights)
+tag_cond = conditional(Ktag, 4, (0, 1))
+tag_coefficient = (1-weights[0]-weights[1])/3
+require(eq(coefficients[0, 1], tag_coefficient), 'actual omitted-own pair weight')
+require(eq(tag_cond, c0*sp.eye(4)+epsilon*tag_coefficient*sp.kronecker_product(A, A)),
+        'TAG weighted conditional full operator')
+ai = [(1-w)/3 for w in weights]
+require(eq(sum(ai), 1), 'no multiplication of diagonal field gain')
+
+# Literal native connected source cell chain; each completed cell is identity.
+cells = tuple(g for i in range(3) for g in (ne.Gate('CX', (i, i+1)),)*2)
+cell_ex = ne.Execution(4, (0, 1, 2, 3), (), cells, ne.G_CX)
+C = sp.Matrix(ne.word_matrix(cell_ex, max_qubits=4, max_expanded_stages=20))
+require(eq(C, sp.eye(16)), 'actual connected tree identity all16 columns')
+profile = ne.Execution(7, (0, 1, 2, 3, 4), (), cells,
+                       ne.G_CX_SOURCE_I, 4, (5, 6))
+ne.validate_execution(profile, max_qubits=7, max_expanded_stages=20)
+inv = ne.inverse_word(profile, max_qubits=7, max_expanded_stages=20)
+require(len(cells) == len(inv) == 6, 'both real source legs add12CX')
+
+# A future fanout makes a one-wire insertion an n-bank cone.
+fanout = tuple(ne.Gate('CX', (0, j)) for j in (1, 2, 3))
+F = sp.Matrix(ne.word_matrix(ne.Execution(4, (), (), fanout, ne.G_CX), max_qubits=4))
+J = sp.Matrix([[0, -1], [1, 0]])
+require(eq(F*place(J, 0, 4)*F, sp.kronecker_product(J, X, X, X)),
+        'raw one-wire arity is not a frontier-cone bound')
+
+# A bad sampler has correct single-slot inclusion, but wrong pair law.
+N = 12;matching = [(i, i+1) for i in range(0, N, 2)]
+for i in range(N):
+    require(sum(sp.Rational(1, len(matching)) for pair in matching if i in pair)
+            == sp.Rational(2, N), 'balanced one-bank inclusion')
+pair_hit = sp.Rational(1, len(matching))
+uniform_hit = sp.Rational(2, N*(N-1))
+require(pair_hit != uniform_hit, 'matching is not uniform distinct injection')
+# h=I/2+X tensor X/4 at |0> gives conditional norm pair_hit/4.
+require(pair_hit/4 > sp.Rational(4, N*(N-1)), 'one-slot balance violates claimed uniform pair bound')
+
+out = {
+    'status': 'PASS', 'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    'native_owner_sha256': owner_sha,
+    'quantum_kernel': {'k': 2, 'c0': '3/4', 'epsilon': '1/8',
+                       'packet': 'actual G|0>', 'feature': 'X/2', 'base_mean': 'sqrt(p)*p',
+                       'full_moment_gradient': 'zero', 'conditional_checks': rows},
+    'TAG': {'weights': ['p^2', 'p^3', 'p^3', 'p^4'], 'input_rank_multiplier': 1,
+             'pair_weight01': '(1-w0-w1)/3', 'operator_check_dimension': 4},
+    'native_tree_cells': {'banks': 4, 'edges': 3, 'forward_CX': 6, 'inverse_CX': 6,
+                           'executed_bank_columns': 16, 'helper_Spin': 'identity tensor factor; profile/count checked'},
+    'fanout_counter': 'F J0 F = J0 tensor X1 tensor X2 tensor X3; full16 core',
+    'matching_counter': {'banks': N, 'one_slot_inclusion': '2/12',
+                          'two_hit_actual': str(pair_hit), 'two_hit_uniform': str(uniform_hit)},
+    'scope': 'new noncommuting toy-kernel identities and native cells; NOT an emitted GR query or physical source selection',
+    'rank_SVD_GR_root_heat_Lean_replayed': False,
+    'GR_closed': False,
+}
+print(json.dumps(out, indent=2)+'\n', end='')
+```
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "97235c160d345988e988d6fac7f62a489c96cee5c06782f7d6af9fbd16b7a759",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "quantum_kernel": {
+    "k": 2,
+    "c0": "3/4",
+    "epsilon": "1/8",
+    "packet": "actual G|0>",
+    "feature": "X/2",
+    "base_mean": "sqrt(p)*p",
+    "full_moment_gradient": "zero",
+    "conditional_checks": [
+      {
+        "banks": 4,
+        "pair_coefficient": "1/6",
+        "first_conditional": "c0 I2",
+        "moment_jet": "0",
+        "feedback_jet": "lambda*2*epsilon*(p^6/4)/C(n,2)"
+      },
+      {
+        "banks": 5,
+        "pair_coefficient": "1/10",
+        "first_conditional": "c0 I2",
+        "moment_jet": "0",
+        "feedback_jet": "lambda*2*epsilon*(p^6/4)/C(n,2)"
+      },
+      {
+        "banks": 6,
+        "pair_coefficient": "1/15",
+        "first_conditional": "c0 I2",
+        "moment_jet": "0",
+        "feedback_jet": "lambda*2*epsilon*(p^6/4)/C(n,2)"
+      }
+    ]
+  },
+  "TAG": {
+    "weights": [
+      "p^2",
+      "p^3",
+      "p^3",
+      "p^4"
+    ],
+    "input_rank_multiplier": 1,
+    "pair_weight01": "(1-w0-w1)/3",
+    "operator_check_dimension": 4
+  },
+  "native_tree_cells": {
+    "banks": 4,
+    "edges": 3,
+    "forward_CX": 6,
+    "inverse_CX": 6,
+    "executed_bank_columns": 16,
+    "helper_Spin": "identity tensor factor; profile/count checked"
+  },
+  "fanout_counter": "F J0 F = J0 tensor X1 tensor X2 tensor X3; full16 core",
+  "matching_counter": {
+    "banks": 12,
+    "one_slot_inclusion": "2/12",
+    "two_hit_actual": "1/6",
+    "two_hit_uniform": "1/66"
+  },
+  "scope": "new noncommuting toy-kernel identities and native cells; NOT an emitted GR query or physical source selection",
+  "rank_SVD_GR_root_heat_Lean_replayed": false,
+  "GR_closed": false
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
