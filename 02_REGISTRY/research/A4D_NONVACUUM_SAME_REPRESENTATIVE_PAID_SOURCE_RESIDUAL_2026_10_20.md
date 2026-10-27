@@ -83791,6 +83791,332 @@ print(json.dumps(out, indent=2)+'\n', end='')
 }
 ```
 
+
+## 7ct. Full-carrier return, retained-record information and the observer's own source
+
+27 October 2026. SAME #334 / constitutive/native-programme-v1, input63a46360e904e56c34a246d945099d7d94d8c5a0. Consume 7ck732--733, the actual all-column paired-toggle router 7cq789, the completed QUERY 7ch698, and the paid serial construction 7cs808--820. The named parent is the extra full-K scalar-corner premise and the source/price of that SAME separate observer. This derives that scalarity for the stated native carrier, establishes a retained-history information interval under an explicit convention, and computes a nonzero H+J source for the literal two-trial fixture. None establishes compulsory physical admission, new action or GR closure.
+
+### 1. The extra full-K scalar premise follows for this actual layout
+
+Define K=K_D tensor Spin tensor oldRIGHT_full. K_D is the genuinely free geometry input, not its private blank H_g. Keep exit q, H_g, the SOURCE banks and references, TAG, all QUERY work and the helper port as their genuine fresh initialized work W. Neither an independently free QUERY register nor an independently free H_g is part of K. An external purifier E is untouched; oldRIGHT_full here means all its actual spectator columns, not a claim they are all allowed initial states.
+
+Each completed paired router preserves q and its q=0 block is EXACTLY I on EVERY column: its C comparator is q-blind and its S toggle is identity at q=0, so the actual C* S C S* cancels, including dirty comparator/helper columns. The body calls are q-blind, act on their own banks on q=0, and restore helper/Spin at completed blocks. All SOURCE/TAG preparations are q-blind and exclude K_D and oldRIGHT. Use the owned completed-block guard in its STRONG operator sense: each relevant body, router and query has the literal identity factor I_Spin on all columns, not merely unchanged Spin basis values or a no-bit-flip statement, which could hide a conditional phase. The declared 7cq words must actually satisfy this guard; any different implementation must prove it. Thus the completed actual A preserves q, and on the prepared q=0 work
+
+    A (|k> tensor |0_q,0_W>) = |k> tensor |0_q,a_W>
+
+for EVERY |k> in K, with a single actual normalized |a_W> independent of k. This is a statement at completed blocks, not about each intermediate raw stage. The actual query Qhat excludes K_D, H_g and oldRIGHT, and completed helper/Spin restoration makes it I_K tensor Qhat_work, including its real finite compiler/table errors. Because A preserves the q=0 subspace, compression of U=A* Qhat A on the genuine initial work gives
+
+    C_full = (I_K tensor <0_q,0_W|) U (I_K tensor |0_q,0_W>)
+           = <0_q,a_W| Qhat_work |0_q,a_W> I_K
+           = c I_K.                                          (821)
+
+The previous 808 is its restriction to the actual rank-R input support. Equation821 removes 7cs's *additional mathematical full-K scalarity premise* for this precise q0 layout; the larger full trace and all blank resources are unchanged. It does not imply that all K states are physically admitted, that the large compiled word was emitted, or that arbitrary variations retain these exact support guards. If a free geometry work/query factor is added, or a completed block touches Spin/oldRIGHT,821 must be reproved on that changed carrier. An arbitrary entangled external reference is carried by tensoring I_E.
+
+### 2. Every fine output preserves a typed support, not a fixed density
+
+Completed A and Qhat are I on the ENTIRE spectator T=Spin tensor oldRIGHT_full. So are every new return COPY and port-archive SWAP, which act only on W and fresh ordinary wires. The actual complete per-trial unitary therefore factors as V_(D,W) tensor I_T, even though raw intermediate SourceI stages can touch Spin. Recording the whole output work bitstring r and compressing the work gives a fine branch
+
+    K_r=M_r tensor I_T,  sum_r K_r* K_r=I_K,
+    K_0* K_0=q I_K,  sum_(r!=0) K_r* K_r=(1-q)I_K.       (822)
+
+For ANY fixed spectator subspace S subset T, every branch preserves K_D tensor S, including input states entangled with an outside reference. This conclusion holds when R=dim(K_D) dim(S)<dim K and does not require admitting all spectator columns. Thus 7cs's full-K effects and serial binomial law apply on this typed support when the TASK admits every resulting density there and genuinely supplies fresh W and paid archives. Support invariance does not preserve a particular density, fixed geometry value, restricted correlation family or other task requirement. Those are separately proved or paid preparations/recovery must be supplied. The actual new H_g and all private work must be fresh blanks on each trial; old work and records remain retained. The dedicated exit q is distinct from the shared helper port: allocate a fresh q among the b-1 new private blank work wires on each trial and retain its old output. The three-CX archive SWAP restores ONLY the shared helper port, not q. The stage and dimension counts of815 already include these fresh private wires; no additional q reset is assumed.
+
+### 3. The recorded observer has a nonzero information budget under a stated convention
+
+Use exactly the efficient mixed-input quantum-information-gain convention of the stopped-price owner section3, equation (2), not an identification of the compulsory Book Info:
+
+    I_gain=S(Gamma)-S(rho_K),
+    Gamma=direct_sum_r K_r rho_K K_r*.                       (823)
+
+Here r is the ENTIRE b-bit output work record of every one of T=2M trials. Every old work bit, copy, port archive and record remains: because each full work bit is copied before the actual SWAP, their terminal computational values are a deterministic string g(r), and each complete fine branch is one K_r on K. A fresh pure environment and an actual complete fine response are required. Hidden unread work, noise or an initially mixed environment may give multiple Kraus operators per label and needs its own formula. An ideal reversible controller that writes f(r) while preserving r adds only deterministic records and leaves823 unchanged; a compiled imperfect controller, actual readout and its own work/price remain separate.
+
+For any input rho_K and its inaccessible purification E, the scalar effects822 imply that EVERY complete coarse success/failure word C has effect P(C)I_K. In fact the cq state of C and E is P(C) tensor rho_E, not merely an average success probability. For the fixed schedule M of each context, P(C) is the corresponding product law, even though the fine branches can change K. Purity of each conditional K,E branch gives
+
+    I_gain=H(r)-chi(r:E)
+          =H(C)+H(r|C)-chi(r:E|C).                         (824)
+
+All logarithms are natural and chi is the ordinary cq Holevo information. Since 0<=chi(r:E|C)<=H(r|C), and a failure has at most 2^b-1 possible fine strings while success has one,
+
+    M[h(q_+)+h(q_-)] <= I_gain
+      <= M[h(q_+)+h(q_-)] + M(f_++f_-) ln(2^b-1)
+      <= 2 M b ln 2,                                        (825)
+    h(q)=-q ln q-(1-q)ln(1-q),  f_sigma=1-q_sigma.
+
+At b=1 both bounds coincide. At q=0 or1 use 0 ln 0=0. This is a genuine, finite, nonnegative contribution for the declared observer when 0<q_sigma<1; it is not a freely assigned Shannon charge or its full first derivative. With two exact efficient qubit instruments, the same fine distribution can have different823: for rho=I/2, q=1/3, branches sqrt(q)I, sqrt(f/2)I, sqrt(f/2)I versus sqrt(q)I, sqrt(f)|0><0|, sqrt(f)|1><1| have identical three probabilities, but their gains differ by (2/3)ln2. These are abstract mathematical instruments, not emitted native words. Thus even all fine frequencies do not identify the quantum Info unless the actual conditional output states are included. No selection of823 for the original execution, cost coefficient, calibration, reader source or cancellation is asserted.
+
+### 4. The actual two-trial H+J source is nonzero on a precise comparison
+
+For 7cs's literal 26-stage two-trial native fixture, retain both port archives, both report bits, all 128 internal columns in the price, and both protected Spin wires. The active five-bit endpoint V has32 columns and Spin is an exact I_4 factor; the native seven-wire word and its true inventory are independently validated, but a dense 128-column full-CAR execution is NOT claimed. Set p=phi^-1, c=p^3 and s=2sqrt(p)p. At the fixed scene, beta=2p^2, original blank cut, zeta=1/16 and declared INTERNAL501/502, insert the ambient skew K=-J_port tensor X_report2 immediately after the final COPY and before its real archive SWAP. This is a matrix tangent at the actual word, NOT an admitted continuously variable native CX. Exact active-core multiplication yields
+
+    Tr_32 V=8c^2,  Tr_32 DV=-8cs,
+    C=c^2 I_4,     DC=-cs I_4,
+    DJ=8c^3 s/(15+c^4)>1/1000.                            (826)
+
+The whole sequential V is not assumed to be a reflection. In the INTERNAL prefix gauge all clock edges become identity except their monodromy V. Put B=R A_scene R and C_scene=R^2. B,C_scene have nonnegative entries, ||B||<=1 and ||C_scene||=1/22. Expansion of e^[-beta(I-B-C_scene(T+T*))] into walks gives
+
+    Z0=e^-beta [a_0+2 sum_(k>=1) a_k Re Tr(V^k)], a_k>=0.
+
+The k=1 walks include N straight windings, so a_1>=N beta^N Tr(C_scene^N)/N!, N=26. All k>=2 require at least 2N time steps. With d=128, |DTr V^k|<=k d and k<=m/N for an m-time-step walk, beta in(1/2,1), c>1/5, s>4/5 and e^-beta>1/3, the rational control bounds ALL higher-winding derivative terms by less than 10^-40 of the positive magnitude of the first one. No sign cancellation has been assumed. It also bounds the entire heat derivative using Z01>=359Nd and all nonzero windings. Consequently
+
+    -10^-50 < DH01 < 0,
+    D(H01+J)>1/1000-10^-50>0.                              (827)
+
+The first sign is an analytical walk bound, checked by exact rational inequalities, not a numerical heat trace replay. Equation827 is the complete H01+J first row of THIS pre-controller observer for this particular ambient COPY comparison, including both grades and every zero mode. It does not compute all rows, nor include controller/registration, selected Info/work/stop, a moving input/cut/clock/scene, or a native continuous variation. Those terms may change or compensate the source. It therefore does not prove physical nonstationarity; it shows concretely that even the observer's already declared H+J is not inherited from the one-trial reflection.
+
+### 5. Parent application, checks and limits
+
+On 7cq's exact completed q0 roles,821 discharges the scalarity assumption added in7cs for the full protected carrier;822 also supplies a usable proper rank-R support invariant. 825 bounds the retained-record information for the stated efficient convention, while827 computes an actual different observer H+J row. The primary physical gap remains: establish the same-task native admission of the serial word and its outputs, allowed input/post-state/variation domain, real complete selected Info/work/clock/source and physical source transport, then the GR dynamics/refinement obligations. Neither conditional observer price nor these checks produce an Einstein selector or GR_closed=true.
+
+The changed native check executes all64 columns of a literal11-stage toy (2 G,3 CX,6 SourceI), with arbitrary free data, Spin and oldRIGHT, and proves full-K scalar return, a nontrivial failure flip and an entangled spectator proper support of rank2 inside dimension16. Its q is the port, unlike the full7cq construction; it tests the algebra but does not execute its huge compiler. An independent exact rational qubit-instrument control demonstrates the Info ambiguity. The 26-stage heat checker links its exact32-column active algebra and symbolic derivative to the real native primitive matrices/inventory, and checks rational winding bounds; the full128 factor is symbolic Spin identity. An independent mathematical review checks the full-K split, information bounds and heat derivation. No sampled run, full original CAR, root/Lean replay, physical selection or scientific acceptance is claimed.
+
+Input primary2643368 bytes / SHA256 ff91a6ba20a407892ff14403ff1bcbd6ece653733537f8d88f970c2bc8e51d65, task brief1074055 bytes / SHA256 00eeecaa755f8bdb312976e5b5e681880d36cb51bfdfe95f0c62551e1347e3e5. Native owner17833 / SHA256 222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c. All prior input bytes, source/receipts and both distinct paid clocks are preserved.
+
+### 6. Exact changed controls and observed receipts
+
+d0_fullk_check_20261027.py: 3390 bytes, SHA256 `938e59590cf2da0b3fdf4fee3eff85fba05ddc0a0097f6d86560a0cae0aa0922`.
+
+```python
+from pathlib import Path
+import importlib.util,sys,hashlib,json
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+owner=Path.cwd()/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+sha=hashlib.sha256(owner.read_bytes()).hexdigest()
+assert sha=='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+spec=importlib.util.spec_from_file_location('native_fullk',owner); ne=importlib.util.module_from_spec(spec);sys.modules[spec.name]=ne;spec.loader.exec_module(ne)
+F=ne.GOLDEN_FIELD
+def dm(A): return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(F)
+def mul(*a):
+ o=dm(a[0])
+ for x in a[1:]: o=o.matmul(dm(x))
+ return o.to_Matrix()
+def eq(a,b): return dm(a)==dm(b)
+def require(v,msg):
+ if not v: raise AssertionError(msg)
+# q=port 0, Spin 1,2, arbitrary geometry data 3, report 4, oldRIGHT 5.
+# A=CX(q,data); Q=G^T Z G, all in literal native operations.
+SI=ne.Gate('SourceI',(0,1,2)); G=ne.Gate('G',(0,)); A=ne.Gate('CX',(0,3)); D=ne.Gate('CX',(0,4));
+Q=(G,SI,SI,SI,SI,G,SI,SI) # native sequence G,Z,G_inverse
+word=(A,)+Q+(A,D)
+e=ne.Execution(6,(0,4),(5,),word,ne.G_CX_SOURCE_I,0,(1,2))
+ne.validate_execution(e,max_qubits=6,max_expanded_stages=20)
+iv=ne.inventory(e,max_qubits=6,max_expanded_stages=20)
+require((iv.gate_count,iv.g_count,iv.cx_count,iv.source_i_count,iv.cut_rank)==(11,2,3,6,16),'true word inventory')
+U=S.Matrix(ne.word_matrix(e,max_qubits=6,max_expanded_stages=20)); I=S.Matrix(ne.input_isometry(e,max_qubits=6,max_expanded_stages=20))
+p,a=ne.P,ne.A;c=p**3;s=2*a*p
+require(eq(mul(I.T,U,I),c*S.eye(16)),'actual full K corner on 16 columns')
+# E_return is projector onto the real report=0, independent of final q.
+P0=S.diag(*[int(((x>>1)&1)==0) for x in range(64)]); P1=S.eye(64)-P0
+require(eq(mul(I.T,U.T,P0,U,I),p**6*S.eye(16)),'all-state return effect')
+# Fine output r=1 has q=1, report=1 and geometry X, identity on Spin+oldRIGHT.
+L=S.zeros(64,16)
+for col in range(16):
+ sp1,sp2,data,old=(col>>3)&1,(col>>2)&1,(col>>1)&1,col&1
+ row=32+16*sp1+8*sp2+4*(1-data)+2+old
+ L[row,col]=1
+require(eq(mul(P1,U,I),-s*L),'failure flips geometry while preserving all spectator columns')
+# A strict rank-1, entangled spectator support, and free geometry: rank R=2<dK=16.
+J=S.zeros(16,2)
+for data in (0,1):
+ J[2*data,data]=S.Rational(3,5) # spectator |000>
+ J[8+4+2*data+1,data]=S.Rational(4,5) # spectator |111>
+require(eq(mul(J.T,J),S.eye(2)),'entangled spectator isometry')
+X=S.Matrix([[0,1],[1,0]])
+require(eq(mul(J.T,I.T,U.T,P0,U,I,J),p**6*S.eye(2)),'strict-support return law')
+require(eq(mul(P1,U,I,J),-s*L*J),'every failure preserves chosen spectator support')
+# Hostile fixed-data state constraint: failure sends |0> to |1>.
+require(eq(X*S.Matrix([1,0]),S.Matrix([0,1])),'fixed input density is not preserved')
+obj={'native_owner_sha256':sha,'word_stages':iv.gate_count,'gate_counts':{'G':iv.g_count,'CX':iv.cx_count,'SourceI':iv.source_i_count},'all_column_dimension':64,'full_protected_dimension':16,'strict_support_rank':2,'q':'p^6','failure':'4p^3','state_change':'failure flips geometry and preserves arbitrary spectator','checks':['full-K scalar corner','full-K return effect','all spectator columns in failure','strict entangled spectator support','fixed-density hostile control'],'scope':'finite toy, no large 7cq compiler execution or physical admission'}
+print(json.dumps(obj,indent=2,sort_keys=True))
+```
+
+d0_fullk_check_20261027.json: 661 bytes, SHA256 `302ae7f35403d806c5aa951bdc7b50e4da8e25d3c85a56a85b19cf5475c84a9e`.
+
+```json
+{
+  "all_column_dimension": 64,
+  "checks": [
+    "full-K scalar corner",
+    "full-K return effect",
+    "all spectator columns in failure",
+    "strict entangled spectator support",
+    "fixed-density hostile control"
+  ],
+  "failure": "4p^3",
+  "full_protected_dimension": 16,
+  "gate_counts": {
+    "CX": 3,
+    "G": 2,
+    "SourceI": 6
+  },
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "q": "p^6",
+  "scope": "finite toy, no large 7cq compiler execution or physical admission",
+  "state_change": "failure flips geometry and preserves arbitrary spectator",
+  "strict_support_rank": 2,
+  "word_stages": 11
+}
+```
+
+d0_fullk_info_control_20261027.py: 1327 bytes, SHA256 `875e524bdb22fd1f1a5c48756c53a4889ac46aa7271a7a25b30f3e7f9246d2fa`.
+
+```python
+"""Exact information-gain counterexample; abstract instruments, not native compilation."""
+import sympy as S, hashlib,json
+q=S.Rational(1,3);f=1-q;rho=S.eye(2)/2
+I=S.eye(2); P0=S.diag(1,0); P1=S.diag(0,1)
+A=[S.sqrt(q)*I,S.sqrt(f/2)*I,S.sqrt(f/2)*I]
+B=[S.sqrt(q)*I,S.sqrt(f)*P0,S.sqrt(f)*P1]
+def probs(K):return [S.trace(k*rho*k.T).simplify() for k in K]
+assert sum((k.T*k for k in A),S.zeros(2))==I
+assert sum((k.T*k for k in B),S.zeros(2))==I
+assert probs(A)==probs(B)==[q,f/2,f/2]
+assert A[0].T*A[0]==B[0].T*B[0]==q*I
+assert sum((k.T*k for k in A[1:]),S.zeros(2))==sum((k.T*k for k in B[1:]),S.zeros(2))==f*I
+# Failure states in A retain the input entropy ln2; B's failure outputs are pure.
+for k in A[1:]:
+ state=S.simplify(k*rho*k.T/S.trace(k*rho*k.T));assert state==rho
+for k in B[1:]:
+ state=S.simplify(k*rho*k.T/S.trace(k*rho*k.T));assert state.det()==0 and S.trace(state)==1
+# H(fine)=h(q)+f ln2. Entropy gains are h(q)+f ln2 and h(q).
+h=-q*S.log(q)-f*S.log(f)
+assert S.simplify((h+f*S.log(2))-h-f*S.log(2))==0
+print(json.dumps({'status':'PASS','source_sha256':hashlib.sha256(open(__file__,'rb').read()).hexdigest(),'q':'1/3','fine_probabilities':['1/3','1/3','1/3'],'A_minus_B_information_gain':'(2/3)*ln(2)','scope':'abstract efficient qubit instruments, no native compilation or physical Info selection'},indent=2))
+```
+
+d0_fullk_info_control_20261027.json: 335 bytes, SHA256 `04d71eeefab5a7704960096c74a2f3f0a5e6a4bef3ef649f011f262a5f0c14d0`.
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "875e524bdb22fd1f1a5c48756c53a4889ac46aa7271a7a25b30f3e7f9246d2fa",
+  "q": "1/3",
+  "fine_probabilities": [
+    "1/3",
+    "1/3",
+    "1/3"
+  ],
+  "A_minus_B_information_gain": "(2/3)*ln(2)",
+  "scope": "abstract efficient qubit instruments, no native compilation or physical Info selection"
+}
+```
+
+d0_serial_heat_source_20261027.py: 4366 bytes, SHA256 `703150e151bba365a7eae9bdec0a10c79ef30199693ae28942206e1d021dc66a`.
+
+```python
+"""Exact core endpoint and rigorous winding bounds for the 7cs serial fixture.
+No numerical heat/sampling and no physical admission of the ambient tangent.
+"""
+from fractions import Fraction as Q
+from math import factorial
+import hashlib,json,importlib.util,sys
+from pathlib import Path
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+
+owner=Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py')
+owner_sha=hashlib.sha256(owner.read_bytes()).hexdigest()
+assert owner_sha=='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+spec=importlib.util.spec_from_file_location('native_serial_heat_owner',owner)
+ne=importlib.util.module_from_spec(spec);sys.modules[spec.name]=ne
+spec.loader.exec_module(ne)
+def eqgold(A,B):
+    return DomainMatrix.from_Matrix(S.Matrix(A-B)).convert_to(ne.GOLDEN_FIELD).is_zero_matrix
+p,a=ne.P,ne.A
+source=S.Matrix(ne.SOURCE_I_LOCAL)
+assert source**2==S.kronecker_product(S.diag(1,-1),S.eye(4))
+G=S.Matrix(ne.G_LOCAL)
+assert eqgold(G.T*S.diag(1,-1)*G,S.Matrix([[p**3,-2*a*p],[-2*a*p,-p**3]]))
+SI=ne.Gate('SourceI',(0,1,2));GG=ne.Gate('G',(0,))
+main=(GG,SI,SI,SI,SI,GG,SI,SI)
+def swap_gates(x,y):
+    return (ne.Gate('CX',(x,y)),ne.Gate('CX',(y,x)),ne.Gate('CX',(x,y)))
+def trial(record,archive):
+    copy=ne.Gate('CX',(0,record))
+    return (copy,)+main+(copy,)+swap_gates(0,archive)
+serial=ne.Execution(7,(0,3,4,5,6),(),trial(3,4)+trial(5,6),ne.G_CX_SOURCE_I,0,(1,2))
+ne.validate_execution(serial,max_qubits=7,max_expanded_stages=100)
+iv=ne.inventory(serial,max_qubits=7,max_expanded_stages=100)
+assert (iv.gate_count,iv.g_count,iv.cx_count,iv.source_i_count,iv.cut_rank,iv.full_dimension)==(26,4,10,12,4,128)
+c,s=S.symbols('c s', real=True)
+J=S.Matrix([[0,-1],[1,0]])
+X=S.Matrix([[0,1],[1,0]])
+def cx(a,b):
+    out=S.zeros(32)
+    for col in range(32):
+        bits=[(col>>(4-k))&1 for k in range(5)]
+        bits[b]^=bits[a]
+        row=sum(bits[k]<<(4-k) for k in range(5))
+        out[row,col]=1
+    return out
+
+def sw(a,b):
+    return cx(a,b)*cx(b,a)*cx(a,b)
+D1,D2=cx(0,1),cx(0,3)
+S1,S2=sw(0,2),sw(0,4)
+U=S.kronecker_product(S.Matrix([[c,-s],[-s,-c]]),S.eye(16))
+K=-S.kronecker_product(J,S.eye(2),S.eye(2),X,S.eye(2))
+assert K.T==-K and K.T*K==S.eye(32)
+V=S2*D2*U*D2*S1*D1*U*D1
+dV=S2*K*D2*U*D2*S1*D1*U*D1
+assert S.factor(S.trace(V))==8*c*c
+assert S.factor(S.trace(dV))==-8*c*s
+assert S.factor(V[0,0])==c*c and S.factor(dV[0,0])==-c*s
+# Verify unit and derivative of the orthogonal matrix under c^2+s^2=1.
+def reduced(M):
+    return M.applyfunc(lambda e:S.rem(S.expand(e),c*c+s*s-1,c))
+assert reduced(V.T*V-S.eye(32))==S.zeros(32)
+assert reduced(V.T*dV+dV.T*V)==S.zeros(32)
+# Full d=128 adds two protected Spin wires (factor 4), rank R=4.
+n=26;d=128;R=4
+assert 2*S.trace(dV)==-16*c*s # core only; physical full trace =4*core
+# p=(sqrt(5)-1)/2 in (3/5, 2/3): beta=2p^2 in (1/2,1),
+# c=p^3>1/5 and s=2p sqrt(p)>4/5; hence c*s>4/25.
+assert Q(3,5)**3>Q(1,5) and 2*Q(3,5)*Q(3,4)>Q(4,5)
+# Lower |2 a1 DTr V|. a1 >= N exp(-beta) beta^N Tr(C^N)/N!,
+# exp(-beta)>1/3, Tr C^N>=22^-N, |DTr V|=32cs.
+first=Q(2*n*32*4,3*25)*Q(1,44**n*factorial(n))
+# Bound all |k|>=2 paths: >=2N temporal hops; ||B||<=1, ||C||=1/22,
+# |DTr V^k|<=|k|d and |k|<=m/N. Spatial insertions sum <=exp(beta).
+# The Poisson tail at x=2 beta/22<1/11 is bounded by 4 x^(2N)/(2N)!.
+tail=Q(4*n*33*d,11**(2*n)*factorial(2*n))
+assert tail*10**40<first
+# |DZ0| <= 66 d 11^-N/(N-1)!; Z01>=359 N d, beta>1/2.
+heat_bound=Q(264,359*n*11**n*factorial(n-1))
+assert heat_bound*10**50<1
+# zeta=1/16 yields DJ=8 c^3 s/(15+c^4) > 1/1000.
+assert 8*Q(1,5)**3*Q(4,5)/16 > Q(1,1000)
+print(json.dumps({'status':'PASS','source_sha256':hashlib.sha256(open(__file__,'rb').read()).hexdigest(),
+ 'native_owner_sha256':owner_sha,
+ 'native_serial':'26 stages; active core 32 columns; Spin factor 4; full dimension 128; rank 4',
+ 'core_trace':'8 c^2','core_trace_derivative':'-8 c s',
+ 'corner':'c^2 I_4','corner_derivative':'-c s I_4',
+ 'heat_higher_winding_over_first_lt':'1e-40','heat_derivative':'-1e-50 < D H01 < 0',
+ 'feedback_derivative':'8 c^3 s/(15+c^4) > 1/1000',
+ 'source_sign':'D(H01+J) > 1/1000 - 1e-50 > 0',
+ 'scope':'declared INTERNAL 501/502; fixed scene/beta/cut; ambient skew COPY normal; no controller/readout/Info/work or native continuous variation admission; no numerical heat, no physical GR closure'},indent=2))
+```
+
+d0_serial_heat_source_20261027.json: 822 bytes, SHA256 `0f5be2832e8eec11ff44ea9759d44892b2f3e5dcb4c21d9ef8edc315054c9be2`.
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "703150e151bba365a7eae9bdec0a10c79ef30199693ae28942206e1d021dc66a",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_serial": "26 stages; active core 32 columns; Spin factor 4; full dimension 128; rank 4",
+  "core_trace": "8 c^2",
+  "core_trace_derivative": "-8 c s",
+  "corner": "c^2 I_4",
+  "corner_derivative": "-c s I_4",
+  "heat_higher_winding_over_first_lt": "1e-40",
+  "heat_derivative": "-1e-50 < D H01 < 0",
+  "feedback_derivative": "8 c^3 s/(15+c^4) > 1/1000",
+  "source_sign": "D(H01+J) > 1/1000 - 1e-50 > 0",
+  "scope": "declared INTERNAL 501/502; fixed scene/beta/cut; ambient skew COPY normal; no controller/readout/Info/work or native continuous variation admission; no numerical heat, no physical GR closure"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

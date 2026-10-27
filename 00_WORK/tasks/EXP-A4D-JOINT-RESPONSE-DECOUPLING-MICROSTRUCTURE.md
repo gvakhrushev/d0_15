@@ -16554,3 +16554,47 @@ the serial probability and pre-controller price now explicitly require the
 full-K identity, or a separate proof of post-state closure on the supported
 sector. The review found no further algebraic defect under the stated
 hypotheses; it did not establish physical admission or scientific acceptance.
+
+
+### 27 October - derive serial return on the actual protected carrier
+
+SAME #334 / native-programme-v1, input63a46360. Consume the q-preserving
+completed routers 7cq789, source layout 7ck732, query reflection 7ch698,
+and 7cs808--820. Derive or refute the full protected-space scalar return
+and the fine-branch support invariance required for actual serial reuse;
+keep geometry work, banks, port and records as fresh paid blank resources.
+Test a changed finite all-column native word with a nontrivial failure
+branch and a strict spectator subspace. Preserve physical admission,
+actual task restrictions and complete price as independent obligations.
+Only this brief and the existing research memo are owned write paths.
+
+27 October result: primary7ct821--827. Derive full-K scalar return for
+the original q0 layout from the ACTUAL paired-router, body and QUERY
+guards. Completed blocks factor Spin/oldRIGHT; every fine branch preserves
+K_D tensor S for any fixed spectator support S. This discharges the
+mathematical full-K premise of7cs on that carrier while retaining the
+actual task/post-state and fresh-resource admissions.
+
+For the declared efficient mixed-input information-gain convention, all
+fine work records retained, the coarse outcome is independent of an
+external purifier. The observer's information has the explicit lower and
+upper entropy bounds825; matching fine frequencies do not determine its
+quantum contribution. For the actual26-stage, two-trial fixture,827
+establishes a positive H01+J matrix-comparison row at its true INTERNAL
+clock, including a signed full heat bound; this is not a continuous native
+variation, a full actual controller/readout/Info/work source or a physical
+stationarity theorem. Exact native, rational and winding controls with
+observed receipts are embedded in7ct; independent mathematical review
+checked the information and heat proofs. No original128 CAR replay,
+physical admission, new task/result/claim/acceptance, Ready or merge.
+The true same-execution complete source and GR refinement remain open.
+
+Independent final review corrected two implementation distinctions: the
+physical helper-port archive does not reset the separate exit q, which is
+fresh private work on each trial, and the COPY matrix tangent is inserted
+after that COPY and before its archive SWAP. All completed-block guards are
+literal operator identity factors on Spin/oldRIGHT, not only unchanged
+basis values. The same-input local work/protocol/assembly/repository guards
+pass; embedded test sources and receipts parse and prior input bytes are
+retained. These checks and the review do not supply physical admission,
+full selected Book Info or scientific acceptance.
