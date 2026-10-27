@@ -10506,3 +10506,30 @@ composed-application declarations; each has axiom footprint `Classical.choice`,
 `7d52c4193cc4b1ebfed1142d327446a6128465b7`, blob
 `df316992b289e0a9ada03adb2852227e8da91ed1`; the inventory is evidence of
 compiled declarations, not physical source selection.
+
+The clean cold-start and bounded search comparison for the composed result
+are recorded in
+[the replay summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_compact_cubic_margin_v16.json)
+and
+[the comparison report](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_compact_cubic_margin_v16.json).
+Both use clean source snapshot `765c59afc5b3e222d72a5e2a90e9d9c02608e485`.
+Cold-start found every required source in 24/24 cases (167 source references;
+25 benchmark cases). The exact cubic theorem query at index 18 found the
+compiled inventory as direct pinned content at rank 2 and the Lean source at
+rank 4. The full replay output was 9,721,805 bytes, SHA-256
+`582cf0eea13753beb84a3be0edc5de7265139f24090a68bd2ac20d22c03f17fa`; the
+summary artifact SHA-256 is
+`b054a50e22381bd947630a70c6491360c2212f68efcb54dcfa7cbd5f0f63f664`.
+The Lean source digest `a83bf800444d4caa19bf139d3af2ab6b0023d68e47c8941566a58de49163db20`
+passed the 3,340-job geometry build and final 4,626-job `D0.All` build.
+
+The comparison used the same 24 questions: current search retrieved all 7/7
+explicitly scoped expected sources, while legacy assembly search retrieved
+0/7. Serialized answer size was 529,913 bytes for current and 48 for legacy;
+this is a response-size proxy, not a token or file-read measure. The comparison
+output is 69,603 bytes, SHA-256
+`2903c1e1b2cee94ca0ecc7c857546924b2ecfee31b3fdfc073f0b0763762eaeb`.
+Semantic owner correctness and application remain manual review obligations.
+These retrieval and build receipts do not discharge CAR preparation/generator
+selection, the full varied rows, C0 acceptance, physical Book/clock/work
+selection, or GR closure.

@@ -2140,13 +2140,16 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("cubicMatterMidpointSample", application["elaborated_type"])
         self.assertIn("finiteMatterForwardGradient", application["elaborated_type"])
         self.assertIn("transverseFivePointLaplacian", application["elaborated_type"])
+        car_application = declarations[
+            "D0.Geometry.sampledCubicMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes"
+        ]
         self.assertIn(
             "D0.Geometry.cubicMatterEuclideanProfile_norm_le_coefficientNorm",
-            application["proof_dependencies"],
+            car_application["proof_dependencies"],
         )
         self.assertIn(
             "D0.Geometry.cubicMatterMidpointSample_eq_sampledHistory",
-            application["proof_dependencies"],
+            car_application["proof_dependencies"],
         )
         self.assertIn(
             "D0.Geometry.sampledCubicMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes",
