@@ -11207,3 +11207,16 @@ owner fields remain separately counted. The report is
 SHA-256 `dc754690d4b5b01a3212092259e2e184eb28c8d65aed0812d9f3c4551446af68`.
 Owner correctness and hypothesis preservation remain manual review, and the
 serialized response size is not a measure of reading effort.
+
+At clean commit `a0b23ad1687d0049866a20dfb7b6ddd8fab29852`, the final
+cold-start replay found every required source in **24/24** cases, covering
+169 source references within an 18-candidate window; the exact-source versus
+unrelated-prose regression passed. Its compact receipt retains every source
+and scoped-query receipt at
+[`proof_architecture_cold_start_summary_2026-10-27_native_cochain_transport.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_native_cochain_transport.json),
+SHA-256 `fb61d8c1ff8477d168dc0331e9e5f6dffdc78599fa6d13c0275f810a632f69c0`.
+The complete 9,839,871-byte replay has SHA-256
+`3e6b04b989ba85a8d55efad52392f038ce22d360d15f2f05b0f76ca5cca5da4c`.
+The selector rerun on that commit again chose 95 certificates with 325 matched
+pins and 1,211 unpinned provenance records, all retaining
+`unknown-dependency`; neither run is a scientific replay or semantic acceptance.
