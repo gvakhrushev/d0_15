@@ -119,6 +119,70 @@ def all_claim_requests(rows: list[dict[str, str]] | None = None) -> tuple[dict[s
     return {"claim_rows": len(rows), "mappings": mappings}, list(dict.fromkeys(names))
 
 
+def claim_locator_crosswalk(mappings: list[dict[str, Any]],
+                            declarations: list[dict[str, Any]]) -> dict[str, Any]:
+    """Classify exact claim-name matches against their declared owner modules.
+
+    A name found through a parent-namespace candidate is not a match for the
+    claim's module locator unless the compiled declaration is owned by one of
+    the listed modules. This remains locator evidence, not semantic coverage.
+    """
+    by_name = {
+        str(row.get("name", "")): row
+        for row in declarations
+        if row.get("exists") and row.get("name")
+    }
+    results: list[dict[str, Any]] = []
+    counts: dict[str, int] = {}
+    for mapping in mappings:
+        locator = str(mapping.get("module_locator") or "")
+        declared_modules = list(dict.fromkeys(
+            part.strip() for part in locator.split(";") if part.strip()
+        ))
+        hits = [by_name[name] for name in mapping.get("candidate_names", []) if name in by_name]
+        hit_owners = [str(hit.get("module") or "") for hit in hits]
+        owner_matches = [owner in declared_modules for owner in hit_owners]
+
+        if not mapping.get("theorem_atom"):
+            status = "no_theorem_locator"
+        elif not hits:
+            status = "unresolved"
+        elif len(hits) == 1:
+            if not declared_modules:
+                status = "resolved_without_module_locator"
+            elif owner_matches[0]:
+                status = "resolved_in_declared_module"
+            else:
+                status = "resolved_outside_declared_modules"
+        elif not declared_modules:
+            status = "ambiguous_without_module_locator"
+        elif all(owner_matches):
+            status = "ambiguous_within_declared_modules"
+        elif any(owner_matches):
+            status = "ambiguous_across_declared_and_other_modules"
+        else:
+            status = "ambiguous_outside_declared_modules"
+
+        counts[status] = counts.get(status, 0) + 1
+        results.append({
+            "claim_id": mapping.get("claim_id", ""),
+            "theorem_atom": mapping.get("theorem_atom"),
+            "module_locator": locator,
+            "declared_modules": declared_modules,
+            "resolution_status": status,
+            "matches": [
+                {
+                    "name": hit.get("name"),
+                    "module": hit.get("module"),
+                    "source_path": hit.get("source_path"),
+                    "owner_matches_locator": owner_match,
+                }
+                for hit, owner_match in zip(hits, owner_matches)
+            ],
+        })
+    return {"summary": dict(sorted(counts.items())), "mappings": results}
+
+
 def module_source_path(module_name: str | None) -> str | None:
     if not module_name:
         return None
@@ -545,6 +609,11 @@ def main() -> int:
     rows, collector_sha256, lean_source_digest = run_inventory(names, args.import_root, args.resolution_only)
     for row in rows:
         row["source_path"] = module_source_path(row.get("module"))
+    locator_crosswalk = (
+        claim_locator_crosswalk(mapping["mappings"], rows)
+        if mapping is not None and isinstance(mapping.get("mappings"), list)
+        else None
+    )
     output = {
         "schema": "d0-lean-declaration-inventory-v1",
         "snapshot_commit": subprocess.check_output(
@@ -563,6 +632,7 @@ def main() -> int:
         "public_import_root": args.import_root,
         "resolution_only": args.resolution_only,
         "request": mapping,
+        "claim_locator_crosswalk": locator_crosswalk,
         "declarations": rows,
     }
     rendered = json.dumps(output, ensure_ascii=False, indent=2) + "\n"

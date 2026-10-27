@@ -50,6 +50,47 @@ class DeclarationInventoryTests(unittest.TestCase):
         self.assertEqual(unresolved[0]["candidate_names"], [])
         self.assertIsNone(unresolved[0]["theorem_atom"])
 
+    def test_claim_locator_crosswalk_checks_compiled_owner_not_name_prefix(self):
+        mappings = [
+            {"claim_id": "CLM-1", "module_locator": "D0.A", "theorem_atom": "owned",
+             "candidate_names": ["D0.A.owned", "D0.owned"]},
+            {"claim_id": "CLM-2", "module_locator": "D0.A", "theorem_atom": "moved",
+             "candidate_names": ["D0.A.moved", "D0.moved"]},
+            {"claim_id": "CLM-3", "module_locator": "D0.A;D0.B", "theorem_atom": "shared",
+             "candidate_names": ["D0.A.shared", "D0.B.shared"]},
+            {"claim_id": "CLM-4", "module_locator": "", "theorem_atom": "missing",
+             "candidate_names": ["missing"]},
+            {"claim_id": "CLM-5", "module_locator": "", "theorem_atom": None,
+             "candidate_names": []},
+        ]
+        declarations = [
+            {"name": "D0.A.owned", "exists": True, "module": "D0.A",
+             "source_path": "D0/A.lean"},
+            # This parent-namespace candidate exists but belongs to another module.
+            {"name": "D0.moved", "exists": True, "module": "D0.Other",
+             "source_path": "D0/Other.lean"},
+            {"name": "D0.A.shared", "exists": True, "module": "D0.A",
+             "source_path": "D0/A.lean"},
+            {"name": "D0.B.shared", "exists": True, "module": "D0.B",
+             "source_path": "D0/B.lean"},
+        ]
+
+        result = inventory.claim_locator_crosswalk(mappings, declarations)
+
+        self.assertEqual(result["summary"], {
+            "ambiguous_within_declared_modules": 1,
+            "no_theorem_locator": 1,
+            "resolved_in_declared_module": 1,
+            "resolved_outside_declared_modules": 1,
+            "unresolved": 1,
+        })
+        self.assertEqual(
+            [row["resolution_status"] for row in result["mappings"]],
+            ["resolved_in_declared_module", "resolved_outside_declared_modules",
+             "ambiguous_within_declared_modules", "unresolved", "no_theorem_locator"],
+        )
+        self.assertFalse(result["mappings"][1]["matches"][0]["owner_matches_locator"])
+
     def test_exact_d0_names_are_not_requalified(self):
         self.assertEqual(
             inventory.candidate_names("D0.Foundation.VerificationCore", "D0.Foundation.VerificationCore.verification_core"),
@@ -204,6 +245,33 @@ class DeclarationInventoryTests(unittest.TestCase):
             snapshot = json.loads(output.read_text(encoding="utf-8"))
             self.assertEqual(snapshot["request"], {"full_names": names[:2]})
             self.assertEqual([row["name"] for row in snapshot["declarations"]], names[:2])
+
+    def test_claim_cli_emits_owner_checked_crosswalk(self):
+        mapping = {
+            "claim_id": "CLM-1",
+            "mappings": [{
+                "claim_id": "CLM-1", "module_locator": "D0.Foo", "theorem_atom": "bar",
+                "candidate_names": ["D0.Foo.bar", "D0.bar"],
+            }],
+        }
+        declaration = {"name": "D0.Foo.bar", "exists": True, "module": "D0.Foo"}
+        with tempfile.TemporaryDirectory() as directory:
+            output = pathlib.Path(directory) / "claim.json"
+            with patch.object(sys, "argv", [
+                "lean_declaration_inventory.py", "--claim-id", "CLM-1", "--output", str(output),
+            ]):
+                with patch.object(inventory, "claim_requests", return_value=(mapping, ["D0.Foo.bar", "D0.bar"])):
+                    with patch.object(inventory, "run_inventory",
+                                      return_value=([declaration], "collector", "source")):
+                        with patch.object(
+                            inventory.subprocess, "check_output", side_effect=["head", ""]
+                        ):
+                            self.assertEqual(inventory.main(), 0)
+
+            snapshot = json.loads(output.read_text(encoding="utf-8"))
+            crosswalk = snapshot["claim_locator_crosswalk"]
+            self.assertEqual(crosswalk["summary"], {"resolved_in_declared_module": 1})
+            self.assertTrue(crosswalk["mappings"][0]["matches"][0]["owner_matches_locator"])
 
 
 if __name__ == "__main__":
