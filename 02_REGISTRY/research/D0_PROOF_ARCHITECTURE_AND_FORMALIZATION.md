@@ -10396,3 +10396,11 @@ It records twelve public declarations: interval-local proofs and the preserved
 global wrappers. The source pin remains #334 commit
 `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob
 `67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`, §7.2.
+
+The retrieval replay and bounded search comparison for this updated query set
+are recorded at
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_interval_local_car_refinement_v14.json`
+and
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_interval_local_car_refinement_v14.json`.
+The replay summary carries its clean source snapshot, source/reference coverage
+and output digest; the comparison records matched-query retrieval metrics.
