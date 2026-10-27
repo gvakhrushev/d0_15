@@ -594,7 +594,7 @@ CASES: list[dict[str, Any]] = [
             "archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz IsRoleLorentz",
             "proper row action Lorentz endpoint det one CAR Julia recovery adapter",
             "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz",
-            "правый Lorentz endpoint одновременно CAR Eq 27 и query Eq 28 один recovered endpoint",
+            "правый Lorentz endpoint одновременно CAR Eq 27 и query Eq 28 один recovered endpoint null leg native raising operator inverse coframe",
             "principalFrameJuliaQueryFamily_recoveredInverseCoframe_hasFDerivAt",
             "principalFrameJuliaQueryFamily_joint_coframe_endpoint_recovery_of_proper_roleLorentz hΓ hΛ",
             "principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz hα hShift",

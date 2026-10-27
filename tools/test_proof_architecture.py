@@ -1668,6 +1668,45 @@ class ProofArchitectureTests(unittest.TestCase):
             cubic_source["proof_dependencies"],
         )
 
+        cubic_refinement_inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_cubic_profile_same_record_euclidean_refinement_2026-10-27.json"
+        )
+        cubic_refinement_inventory = json.loads(
+            cubic_refinement_inventory_path.read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            cubic_refinement_inventory["snapshot_commit"],
+            "423ec9a87553a14c6f484e429a6d3309eeae256a",
+        )
+        self.assertEqual(
+            cubic_refinement_inventory["lean_source_digest"],
+            "4ec16ca28dc47e05615ac0d08d665b0ce9b897bca0d43d8f51f7e3c37e4b97c5",
+        )
+        self.assertFalse(cubic_refinement_inventory["worktree_dirty"])
+        cubic_refinement_declarations = {
+            row["name"]: row for row in cubic_refinement_inventory["declarations"]
+        }
+        same_record_refinement_names = {
+            "D0.Geometry.cubicMatterMidpointSample_euclideanError_eq_remainder",
+            "D0.Geometry.cubicMatterMidpointSample_euclideanError_le_refinementBound",
+            "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement",
+        }
+        self.assertTrue(same_record_refinement_names.issubset(cubic_refinement_declarations))
+        for name in same_record_refinement_names:
+            row = cubic_refinement_declarations[name]
+            self.assertEqual(row["module"], module_name)
+            self.assertEqual(set(row["axioms"]), standard_axioms)
+            self.assertEqual(row["source_path"], module)
+        composed_refinement = cubic_refinement_declarations[
+            "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement"
+        ]
+        self.assertIn(
+            "D0.Geometry.cubicMatterMidpointSample_euclideanError_le_refinementBound",
+            composed_refinement["proof_dependencies"],
+        )
+
         historical_cubic_inventory = json.loads(
             (
                 proof.ROOT
@@ -2517,7 +2556,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-27_compact_cubic_margin_v16.json"
+            / "proof_architecture_cold_start_summary_2026-10-27_compact_cubic_euclidean_v17.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -2598,6 +2637,20 @@ class ProofArchitectureTests(unittest.TestCase):
             lean_retrieval["blob"],
             "df316992b289e0a9ada03adb2852227e8da91ed1",
         )
+        euclidean_refinement = positive_nonvacuum[
+            "same_record_euclidean_refinement_retrieval"
+        ]
+        self.assertTrue(euclidean_refinement["found"])
+        self.assertEqual(euclidean_refinement["status"], "found_direct_content")
+        self.assertEqual(euclidean_refinement["query_index"], 19)
+        self.assertEqual(euclidean_refinement["lean_source_commit"],
+                         "423ec9a87553a14c6f484e429a6d3309eeae256a")
+        self.assertEqual(euclidean_refinement["lean_source_blob"],
+                         "07a988011a77ee87aa13d5d816680920d51a3007")
+        self.assertEqual(euclidean_refinement["inventory_commit"],
+                         "de9fc93ff5a159486a8404ba945ab3e3655f0729")
+        self.assertEqual(euclidean_refinement["inventory_blob"],
+                         "40171d8756ccf09c1b0627c20bca03a91637b56c")
         self.assertEqual(
             positive_nonvacuum["required_source_count"],
             len(positive_case.get("required_sources", []))
@@ -2786,7 +2839,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-27_compact_cubic_margin_v16.json"
+            / "proof_architecture_search_process_comparison_2026-10-27_compact_cubic_euclidean_v17.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
