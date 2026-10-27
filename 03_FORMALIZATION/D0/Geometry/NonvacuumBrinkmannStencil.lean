@@ -45,6 +45,8 @@ and carries an explicit nonzero initial matter rate; this finite-dimensional
 subset is not selected by the original D0 generator. The cubic application
 returns the same recursive record consumed by the exact stencil-source theorem;
 the final composition pairs that source identity with the CAR-complement bound.
+A stronger corollary also gives the exact Euclidean midpoint-refinement error
+for that same record, without a component-count loss.
 
 This is an exact finite algebraic and calculus application. It does not
 formalize the original CAR construction, the 40 varied Cartan equations, or
@@ -1306,6 +1308,66 @@ theorem cubicMatterMidpointSample_eq_sampledHistory
       simp only [cubicMatterMidpointSample, finiteMatterMidpointHistory]
       rw [ih, hRate]
 
+/--
+The Euclidean error of the same recursive cubic midpoint record is exactly
+the signed cubic remainder applied to its coefficient vector. This connects
+the coordinate identity to the normed source space used by the vector
+refinement theorem without replacing the finite record by an independent
+sample.
+-/
+theorem cubicMatterMidpointSample_euclideanError_eq_remainder
+    (h : ℝ) (c0 c1 c2 c3 : Fin 2 → ℝ) (n : ℕ) :
+    twoComponentMatterEuclidean (cubicMatterMidpointSample h c0 c1 c2 c3 n) -
+      cubicMatterEuclideanProfile c0 c1 c2 c3 ((n : ℝ) * h) =
+        -((n : ℝ) * h ^ 3 / 4) • twoComponentMatterEuclidean c3 := by
+  ext i
+  simp only [PiLp.sub_apply, PiLp.smul_apply, twoComponentMatterEuclidean_apply,
+    cubicMatterEuclideanProfile_apply]
+  rw [cubicMatterMidpointSample_error_eq]
+  ring
+
+/--
+The same-record Euclidean cubic error obeys the dimension-free midpoint
+refinement bound with its exact cubic coefficient. It follows from the signed
+remainder identity and introduces no component-count factor.
+-/
+theorem cubicMatterMidpointSample_euclideanError_le_refinementBound
+    (h : ℝ) (c0 c1 c2 c3 : Fin 2 → ℝ) (N n : ℕ) (duration : ℝ)
+    (hn : n ≤ N) (h_nonneg : 0 ≤ h)
+    (h_duration : (N : ℝ) * h = duration) :
+    ‖twoComponentMatterEuclidean (cubicMatterMidpointSample h c0 c1 c2 c3 n) -
+      cubicMatterEuclideanProfile c0 c1 c2 c3 ((n : ℝ) * h)‖ ≤
+        duration * (6 * ‖twoComponentMatterEuclidean c3‖) * h ^ 2 / 24 := by
+  rw [cubicMatterMidpointSample_euclideanError_eq_remainder]
+  rw [norm_smul]
+  simp only [Real.norm_eq_abs, abs_neg]
+  have hAbs : |(n : ℝ) * h ^ 3 / 4| = (n : ℝ) * h ^ 3 / 4 :=
+    abs_of_nonneg (by positivity)
+  rw [hAbs]
+  have hnCast : (n : ℝ) ≤ (N : ℝ) := Nat.cast_le.mpr hn
+  have hnH : (n : ℝ) * h ≤ (N : ℝ) * h :=
+    mul_le_mul_of_nonneg_right hnCast h_nonneg
+  let q : ℝ := (n : ℝ) * h * h ^ 2 / 24
+  let Q : ℝ := (N : ℝ) * h * h ^ 2 / 24
+  have hq_nonneg : 0 ≤ q := by
+    dsimp [q]
+    positivity
+  have hq_le_Q : q ≤ Q := by
+    dsimp [q, Q]
+    rw [div_le_div_iff_of_pos_right (by norm_num : (0 : ℝ) < 24)]
+    nlinarith [mul_le_mul_of_nonneg_right hnH (sq_nonneg h)]
+  calc
+    ((n : ℝ) * h ^ 3 / 4) * ‖twoComponentMatterEuclidean c3‖ =
+        q * (6 * ‖twoComponentMatterEuclidean c3‖) := by
+          dsimp [q]
+          ring
+    _ ≤ Q * (6 * ‖twoComponentMatterEuclidean c3‖) :=
+          mul_le_mul_of_nonneg_right hq_le_Q (by positivity)
+    _ = duration * (6 * ‖twoComponentMatterEuclidean c3‖) * h ^ 2 / 24 := by
+          dsimp [Q]
+          rw [← h_duration]
+          ring
+
 theorem cubicMatterEuclideanProfile_norm_le_coefficientNorm
     (c0 c1 c2 c3 : Fin 2 → ℝ) (t : ℝ)
     (ht : t ∈ Set.Icc (0 : ℝ) 1) :
@@ -1446,5 +1508,54 @@ theorem nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource
   have hMesh : (1 / (N : ℝ)) ≠ 0 := div_ne_zero (by norm_num) hNcast
   exact nonvacuumCubicMidpointSource_matches_record
     (1 / (N : ℝ)) coupling x y a2 b2 a3 b3 c0 c1 c2 c3 n hMesh
+
+/--
+The cubic application also carries its dimension-free Euclidean refinement
+error on the very same recursive record used by the CAR complement and exact
+stencil source. This adds analytic recovery to that finite composition while
+leaving physical admission and source selection open.
+-/
+theorem nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement
+    (coupling p x y : ℝ) (a2 b2 a3 b3 : ℝ → ℝ)
+    (c0 c1 c2 c3 : Fin 2 → ℝ)
+    (hCoefficientMargin : cubicMatterCoefficientNorm c0 c1 c2 c3 <
+      Real.sqrt (1 - p)) (hNonzeroRate : c1 ≠ 0) :
+    cubicMatterMidpointRate c1 c2 c3 0 ≠ 0 ∧
+      ∃ N₀ : ℕ, 0 < N₀ ∧ ∀ N : ℕ, N₀ ≤ N → ∀ n ≤ N,
+        0 < twoComponentCARComplementAmplitude p
+          (cubicMatterMidpointSample (1 / (N : ℝ)) c0 c1 c2 c3 n) ∧
+        transverseFivePointLaplacian (1 / (N : ℝ))
+          (fun x y => nonvacuumBrinkmannProfile coupling
+            (twoComponentMatterNormSq
+              (cubicMatterMidpointRate c1 c2 c3
+                (((n : ℝ) + 1 / 2) * (1 / (N : ℝ)))))
+            (a2 (((n : ℝ) + 1 / 2) * (1 / (N : ℝ))))
+            (b2 (((n : ℝ) + 1 / 2) * (1 / (N : ℝ))))
+            (a3 (((n : ℝ) + 1 / 2) * (1 / (N : ℝ))))
+            (b3 (((n : ℝ) + 1 / 2) * (1 / (N : ℝ)))) x y) x y =
+          -4 * coupling * twoComponentMatterNormSq
+            (finiteMatterForwardGradient (1 / (N : ℝ))
+              (cubicMatterMidpointSample (1 / (N : ℝ)) c0 c1 c2 c3 n)
+              (cubicMatterMidpointSample (1 / (N : ℝ)) c0 c1 c2 c3 (n + 1))) ∧
+        ‖twoComponentMatterEuclidean
+            (cubicMatterMidpointSample (1 / (N : ℝ)) c0 c1 c2 c3 n) -
+          cubicMatterEuclideanProfile c0 c1 c2 c3
+            ((n : ℝ) * (1 / (N : ℝ)))‖ ≤
+          1 * (6 * ‖twoComponentMatterEuclidean c3‖) *
+            (1 / (N : ℝ)) ^ 2 / 24 := by
+  obtain ⟨hInitialRate, N₀, hN₀, hSameRecord⟩ :=
+    nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource
+      coupling p x y a2 b2 a3 b3 c0 c1 c2 c3
+      hCoefficientMargin hNonzeroRate
+  refine ⟨hInitialRate, N₀, hN₀, ?_⟩
+  intro N hN n hn
+  obtain ⟨hCAR, hSource⟩ := hSameRecord N hN n hn
+  have hNpos : 0 < N := lt_of_lt_of_le hN₀ hN
+  have hNcast : (N : ℝ) ≠ 0 := by exact_mod_cast hNpos.ne'
+  have hDuration : (N : ℝ) * (1 / (N : ℝ)) = 1 := by
+    field_simp [hNcast]
+  have hRefinement := cubicMatterMidpointSample_euclideanError_le_refinementBound
+    (1 / (N : ℝ)) c0 c1 c2 c3 N n 1 hn (by positivity) hDuration
+  exact ⟨hCAR, hSource, by simpa using hRefinement⟩
 
 end D0.Geometry
