@@ -332,3 +332,68 @@ C24--C26 assemble an original PAID port mean and an internally OBSERVABLE, canon
 This toy only checks the algebra and does not emulate the complete ORIGINAL CAR16 native future-test algebra.
 
 **Application status:** the original DATA fixed point, finite no-reset future tests, its intrinsic predictive entropy, whole port-COST first moment and their complete DATA source are explicitly composed from the SAME frozen original CAR/Golden instrument. The full native Book03 action/recorded Info and all observer/clock/work/42-field constraints/refinement remain unproved. No result is advertised as physical GR closure.
+
+
+## 11. Theorem C8 — the same 128 original Kraus operators eliminate even the intermediate h/D normalization
+
+An important stronger native form of C13--C20 exists on the ACTUAL unchanged 128-outcome source. No continuum field \(D\), mesh \(h\), or separately normalized epsilon needs to be taken as a *primitive* in this form.
+
+Use the literal ORIGINAL 64 Walsh rows N_j and a=N_0. The one-tick fine operators are *exactly*
+\[
+K_{2j}=\delta_{j0}I-2p^2N_j^\dagger a,\qquad
+K_{2j+1}=-2p\sqrt p\,N_j^\dagger a,\quad j=0,\ldots,63.
+\tag{C28}
+\]
+The owned duplicated-Walsh/Julia instrument has the on-all-DATA16 identity
+\[
+\boxed{\sum_{j=0}^{63}N_jN_j^\dagger=I_{16}.}\tag{C29}
+\]
+**Proof without an observation selection.** There are 32 Walsh addresses and two Julia endpoints per address. Orthogonality of the unchanged 32-by-32 Walsh sign matrix turns the sum of row products into \(1/32\) times the sum over each of the 32 ORIGINAL Julia words of the TWO endpoint squares. Every true Julia success/failure pair is complete on ALL columns, \(xx^\dagger+(I-xx^\dagger)=I\); the 32 contributions sum to 32I, proving C29. The physical 64 dark fine K labels remain in C28 and do not contribute to the operator sum; no branch is postselected.
+
+Define **solely from the original actual row**
+\[
+A:=a^\dagger a>0,\quad Z_A:=\operatorname{Tr}_{16}A^{-1},
+\quad\boxed{\rho_A=A^{-1}/Z_A.}\tag{C30}
+\]
+With the *original* explicit odd-port operators C28 and C29, the REAL original complete port-1 effect is
+\[
+\boxed{
+R_1:=\sum_{j=0}^{63}K_{2j+1}^\dagger K_{2j+1}
+ =4p^3 a^\dagger\left(\sum_jN_jN_j^\dagger\right)a
+ =4p^3 A.
+}\tag{C31}
+\]
+
+The original same-history owner gives \(\Phi(X)=X+\varepsilon[T(DXD)-\{\Delta,X\}/2]\), \(\varepsilon=p^2h^2/64\), \(D=(16/h)a\) in the owned representation. Hence, *by an exact algebraic rewrite*, with the SAME unital original Julia recycler \(T(I)=I\),
+\[
+\boxed{
+\Phi(X)=X+4p^2\left[T(aXa^\dagger)-\frac12\{A,X\}\right].
+}\tag{C32}
+\]
+Here the original zero-Walsh row \(a\) is selfadjoint on the cited original chart, so \(a=A^{1/2}\) is NOT claimed: it can have negative eigenvalues, but \(aA^{-1}a=I\) holds because \(a=a^\dagger\) is invertible. The general expression \(aXa^\dagger\) is correct for the same original isometric recycling, and C32 follows from the operator's original \(D X D\). Substitution yields \(\Phi(A^{-1})=A^{-1}\), again independently of any chosen DATA preparation.
+
+The **whole actual finite chronological 1/2-port COST**, retaining all fine words and no DATA reset, has at this internally generated state:
+\[
+\boxed{
+\mathbb E_{\rho_A} C_{\rm port}^{(n)}
+=n+\sum_{j=0}^{n-1}\operatorname{Tr}[R_1\Phi^j(\rho_A)]
+=n+\frac{64np^3}{Z_A}.
+}\tag{C33}
+\]
+The expression counts every actual one-tick reporter (base cost1 plus extra cost1 on port1) and is equivalent to C17 after \(A=(h^2/256)\Delta\). No unpriced prepared reference or external criterion is substituted.
+
+For any admitted differentiable ORIGINAL finite operator variation (not a fabricated continuous primitive gate), its exact source is
+\[
+\boxed{
+D\mathbb E C_{\rm port}^{(n)}[v]
+ =\frac{64np^3}{Z_A^2}
+ \operatorname{Tr}\big[A^{-1}(DA[v])A^{-1}\big].
+}\tag{C34}
+\]
+This source follows directly by differentiating the fully original relative-code observable C33; the derivative of \(\rho_A\) is included through \(Z_A\). If \(p\) or integer \(n\) actually change, they belong to a separate priced alternative and C34 is NOT an ordinary smooth variation through their values.
+
+**Why the domain statement is precise.** C31 is an exact operator source already measurable by the ORIGINAL terminal port for all input DATA density matrices. C32 relies on the original paired-Julia recycling law and its own exact unitality, not on any arbitrary CP channel with chosen fixed point. The invertible locus \(A>0\) is the actual source's regular chart; at singular points C30 is not defined. C33--C34 constitute a completely internal realized COST component with no chosen external observer or metric, not the whole Book03/Einstein action.
+
+The existing exact modular constructor [original future CAR algebra](sources/d0_original_full128_future_even_algebra_2026-10-22/check_future_even_algebra_modprime.py) is consumed by [new direct original-Kraus same-carrier regression](certificates/a4d_original_full128_native_fixedpoint_cost_modprime.py). That regression checks C30--C33 on real original 128 fine K rows reduced to their already certified split algebraic primes; it is a finite specialization check, not a substitute for the characteristic-zero operator derivation or an evaluation of the full gravity 42-covector.
+
+**Remaining GR handoff:** compose C34 with the original full coherent-record/oldRIGHT/Book03 Info and 42 independent real coframe/proper-link/matter apparatus sources. Do not insert Einstein tensor or drop actual visible archive histories. No compulsory full price, exact physical 42-field program or uniform GR refinement is proved here, so GR_closed=false.
