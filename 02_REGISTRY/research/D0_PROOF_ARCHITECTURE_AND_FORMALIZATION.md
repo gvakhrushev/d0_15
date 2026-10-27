@@ -11481,3 +11481,30 @@ cases and passed the impact control; the compact receipt is
 [`proof_architecture_cold_start_summary_2026-10-27_scoped_77ea5150.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_scoped_77ea5150.json)
 (SHA-256 `7631f8fa98155686a1f66ea6be02d979ab0e94b9e649275bf7756acc4d0a3579`).
 The counts do not establish semantic claim acceptance or full C0 coverage.
+
+### 27 October metric-measure application to the actual graded Gram
+
+`ArchiveGradedMetricMeasureBinding` migrates the generic all-degree
+metric-measure identities from the unchanged, pinned cochain research
+capsule and applies them to the actual graded pullback. For every level,
+coarse site and Fock state it constructs `m_r = 2` at coarse zero and `1`
+otherwise, `mu = product_r m_r`, and occupied-direction conductances
+`c_L² * mu / m_r`. Their positivity and nonzero denominators follow from the
+constructed masses. `archive_graded_metric_measure_weight` proves that the
+existing `hodgeMetricMeasureWeight` at these exact arguments is the actual
+scaled Gram weight; `archive_graded_metric_measure_gram_diagonal` composes it
+with the existing matrix theorem to identify the literal diagonal of `BᵀB`.
+The generic result retains its nonzero-mass premise: the separately proved
+one-role zero-mass counterexample demonstrates that it cannot be dropped.
+
+Independent read-only review checked the source-to-adapter formula, scale,
+nonzero hypotheses and registry bindings. The supported result is a concrete
+finite counting identity; it does not select a unique or canonical Hodge
+metric, physical normalization, native source or admitted refinement. The
+existing claim remains `LEAN_PROVED / FORMALISM` at this scoped level and the
+broader Hodge claim remains `OPEN / PROOF-TARGET`. The axiom report for the
+new diagonal theorem and counterexample contains `propext`,
+`Classical.choice` and `Quot.sound`, with no new axioms or native decision.
+
+The final public `D0.All` build including this binding passed 4,749 jobs on
+Lean source digest `a9b170f97d9088708b7366d16896ad77917ecc1ff62d1859d8548a64ca12c7ca`.
