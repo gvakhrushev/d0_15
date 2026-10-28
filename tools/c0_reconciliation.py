@@ -78,7 +78,9 @@ DEFAULT_PINS = PilotPins(
 
 
 class MissingEvidence(Exception):
-    pass
+    def __init__(self, message: str, details: dict = None):
+        super().__init__(message)
+        self.details = details
 
 
 class GitSnapshot:
@@ -213,6 +215,21 @@ class GitSnapshot:
             raise MissingEvidence(f"path {path} is not a blob")
         return oid
 
+    def changed_tracked_paths(self, old: str, new: str, path: str) -> list[str]:
+        """List byte-path changes under a tracked subtree without external diff tools."""
+        raw = self.git("diff", "--no-ext-diff", "--no-renames", "--name-only", "-z",
+                       old, new, "--", path)
+        try:
+            paths = [item.decode("utf-8") for item in raw.split(b"\0") if item]
+        except UnicodeError as exc:
+            raise MissingEvidence("changed tracked path is not valid UTF-8") from exc
+        prefix = path.rstrip("/") + "/"
+        if any(not item.startswith(prefix) or "\\" in item or "\x00" in item
+               or any(part in ("", ".", "..") for part in item.split("/"))
+               for item in paths):
+            raise MissingEvidence("Git returned an unsafe changed tracked path")
+        return sorted(paths)
+
     def unchanged_lean_inputs(self, old: str, new: str) -> bool:
         # Include tracked symlink targets outside the Lean tree. This is a
         # snapshot consistency check, not proof of the full build closure.
@@ -346,6 +363,8 @@ def reconcile(repo: Path, ref: str, *, pins: PilotPins = DEFAULT_PINS) -> dict:
             data[name] = value
         except (MissingEvidence, KeyError, TypeError, ValueError) as exc:
             checks[name] = {"state": "unresolved", "reason": str(exc)}
+            if isinstance(exc, MissingEvidence) and exc.details is not None:
+                checks[name]["details"] = exc.details
             issues.append({"check": name, "reason": str(exc)})
 
     def read_primary():
@@ -506,8 +525,32 @@ def reconcile(repo: Path, ref: str, *, pins: PilotPins = DEFAULT_PINS) -> dict:
             raise MissingEvidence("inventory snapshot differs from pinned pilot")
         old_blob = git.blob(old, LEAN_PATH)
         current_blob = git.blob(snapshot, LEAN_PATH)
-        if old_blob != pins.module_blob or old_blob != current_blob or not git.unchanged_lean_inputs(old, snapshot):
-            raise MissingEvidence("inventory snapshot no longer matches tracked Lean inputs or symlink targets")
+        old_tree, old_tree_kind = git.object_at(old, "03_FORMALIZATION")
+        current_tree, current_tree_kind = git.object_at(snapshot, "03_FORMALIZATION")
+        if old_tree_kind != "tree" or current_tree_kind != "tree":
+            raise MissingEvidence("Lean source root is not a tracked tree")
+        changed_paths = git.changed_tracked_paths(old, snapshot, "03_FORMALIZATION")
+        tracked_inputs_unchanged = git.unchanged_lean_inputs(old, snapshot)
+        if (old_blob != pins.module_blob or old_blob != current_blob
+                or not tracked_inputs_unchanged):
+            raise MissingEvidence(
+                "inventory snapshot no longer matches tracked Lean inputs or symlink targets",
+                details={
+                    "inventory_snapshot": old,
+                    "selected_snapshot": snapshot,
+                    "module_path": LEAN_PATH,
+                    "inventory_module_blob": old_blob,
+                    "pinned_module_blob": pins.module_blob,
+                    "selected_module_blob": current_blob,
+                    "inventory_formalization_tree": old_tree,
+                    "selected_formalization_tree": current_tree,
+                    "formalization_tree_unchanged": old_tree == current_tree,
+                    "changed_formalization_paths": changed_paths,
+                    "all_tracked_lean_inputs_unchanged": tracked_inputs_unchanged,
+                    "selected_snapshot_declaration_inventory": "not_rebuilt",
+                    "diagnostic_only": True,
+                },
+            )
         reported_digest = inv.get("lean_source_digest")
         if not isinstance(reported_digest, str) or not re.fullmatch(r"[0-9a-f]{64}", reported_digest):
             raise MissingEvidence("compiled inventory source digest is malformed")

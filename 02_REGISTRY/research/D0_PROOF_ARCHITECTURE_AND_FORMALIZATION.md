@@ -11771,10 +11771,12 @@ extends the existing open graded-refinement claim with literal multi-step
 composition and a fixed-component sampling control. The new
 `D0.Geometry.RefoliationWitnessCoefficientExtraction` formalizes only the
 algebraic consequence of the three coefficient-witness equalities in the
-current #334 refoliation source. The moving-cut calculus and the finite
-QUERY/cut module are supporting theorems only: they do not establish the
-thermal derivative, a selected physical readout, source-to-claim acceptance,
-the analytic bracket derivation, or physical refinement.
+current #334 refoliation source. The moving-cut calculus has since been
+extended to the complete finite thermal and feedback source, including its
+varying-parameter form documented below. These results and the finite
+QUERY/cut module remain supporting theorems: they do not establish a selected
+physical readout, source-to-claim acceptance, the analytic bracket derivation,
+or physical refinement.
 The existing `proof_architecture.py search` now retrieves the published
 moving-cut note and the integration map; its regression test asserts that the
 Lean support row is still reported as a metadata locator and that no physical
@@ -11905,9 +11907,12 @@ the exact weighted trace `−48/17` and feedback derivative `−24/17` at
 not physical source selection. `D0.Algebra.MovingProjectorPositiveChart`
 proves the slit-plane premise from an orthogonal projector, `U†U=1`, and
 `0≤z<1` by an exact Gram decomposition, and applies the same-curve derivative.
-The mixed thermal derivative, moving Gram, variable β/z, native admitted field
-variation, complete Info/work/controller price and GR composition remain
-open. The original #334 owner and scientific claim statuses are unchanged.
+The later `MovingProjectorBookPrice` and `MovingProjectorVariableParameters`
+theorems formalize the full first thermal-plus-feedback source, including
+varying β and z, on one finite matrix curve. They do not formalize a second or
+mixed higher variation. The moving Gram, native admitted field variation,
+complete Info/work/controller price and GR composition remain open. The
+original #334 owner and scientific claim statuses are unchanged.
 The detailed application and its explicit interface are recorded in
 [`D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md`](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md).
 An independent read-only mathematical review of calculus blob
@@ -12994,3 +12999,27 @@ per-block apparatus rows, or establish physical stationary execution. No Lean
 declaration changed in these two #334 continuations, so the existing #402
 Lean-source digest and `D0.All` receipt remain the applicable Lean evidence.
 Both remain supporting research and `GR_closed=false`.
+
+## C0 inventory drift diagnostics — 28 October 2026
+
+The read-only `c0-pilot` view now returns structured freshness details when a
+compiled declaration inventory no longer matches its selected snapshot. It
+records the inventory and selected commits, the target module's old and current
+Git blobs, both `03_FORMALIZATION` tree blobs, and the exact changed tracked
+paths beneath that tree; the existing all-input freshness check still covers
+tracked Lean symlink targets. The snapshot used for this check (`5f3e6ac`)
+retains the earlier inventory from `d2bf764`; the target weak-test module
+itself is unchanged, while its compiled `D0.All` context changed in five
+files: `D0/All.lean`,
+`DirectFeedbackRowDerivative.lean`, `MovingCutQueryDerivativeAdapter.lean`,
+`MovingProjectorVariableParameters.lean`, and `ClosedHistoryNonlinearDustBranch.lean`.
+The selected-snapshot inventory is reported as `not_rebuilt`.
+
+This output is a diagnostic candidate only. The source-to-Lean pilot remains
+`unresolved`, `c0_acceptance_assessment` remains `not_evaluated`, coverage is
+not reported, and no source or inventory pin is refreshed. The focused C0
+reconciliation tests pass (46 tests); the proof-architecture tests pass (95
+tests), and repository validation, generated-view checks, formalization-debt
+baseline, and work validation pass. The Lean source tree did not change in this
+diagnostic increment; the recorded `D0.All` build evidence is from PR #402
+head `5f3e6ac`.

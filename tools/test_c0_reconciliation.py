@@ -518,6 +518,15 @@ class ReconciliationFixtureTests(unittest.TestCase):
         self.assertEqual(view["checks"]["primary_review_text"]["state"], "blocked_by_dependency")
         self.assertEqual(view["checks"]["compiled_declaration_inventory"]["state"], "unresolved")
         self.assertIn("no longer matches", view["checks"]["compiled_declaration_inventory"]["reason"])
+        details = view["checks"]["compiled_declaration_inventory"]["details"]
+        self.assertEqual(details["inventory_snapshot"], self.repo.source_commit)
+        self.assertEqual(details["selected_snapshot"], ref)
+        self.assertEqual(details["module_path"], c0.LEAN_PATH)
+        self.assertEqual(details["changed_formalization_paths"], [c0.LEAN_PATH])
+        self.assertNotEqual(details["inventory_module_blob"], details["selected_module_blob"])
+        self.assertFalse(details["all_tracked_lean_inputs_unchanged"])
+        self.assertEqual(details["selected_snapshot_declaration_inventory"], "not_rebuilt")
+        self.assertTrue(details["diagnostic_only"])
         self.assertIn("unresolved or blocked", view["interpretation"])
 
 
