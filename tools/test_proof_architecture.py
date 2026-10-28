@@ -3652,6 +3652,28 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("canonical identity prefix", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
 
+    def test_same_history_price_query_retrieves_its_exact_source(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "same-fields-do-not-fix-price-source"
+        )
+        query = case["queries"][0]
+        self.assertIn("C_port", query)
+        self.assertIn("Phi_t", query)
+        hits = proof.full_text_search_many(
+            proof.ROOT, [query], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )[0]
+        source = next(
+            row for row in case["required_sources"]
+            if 0 in row.get("scope_query_indexes", [])
+        )
+        status = cold_start._required_source_status([(query, hits)], source)
+        self.assertTrue(status["found"], f"specific same-history source query missed its source: {status}")
+        self.assertEqual(
+            status["path"],
+            "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+        )
+
     def test_paid_binary_input_source_and_replay_keep_exact_pins_and_scope(self) -> None:
         case = next(
             item for item in cold_start.CASES

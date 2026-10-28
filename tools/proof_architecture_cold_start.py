@@ -316,7 +316,7 @@ CASES: list[dict[str, Any]] = [
     {
         "id": "same-fields-do-not-fix-price-source",
         "queries": [
-            "same history price source composition original 128 history partition",
+            "C_port Z_n Phi_t mixed field cost source Julia recycling",
             "same field coframe different action cut Info clock source equivalence",
             "same-action/source map",
         ],
