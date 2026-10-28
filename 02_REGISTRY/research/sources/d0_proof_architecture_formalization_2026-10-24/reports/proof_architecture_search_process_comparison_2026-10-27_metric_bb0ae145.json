@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-search-comparison-v2",
-  "snapshot_commit": "34ddcd2f667ae78b2543deb7ed1ad736e4e16fc7",
+  "snapshot_commit": "491172529171bb834c52a81fd91e8e6623a30069",
   "worktree_dirty": false,
   "authority_source_digests": {
     "02_REGISTRY/claims.csv": "4b89e8ed94d74b99622714f496f1fffa86ca976733c7d4340003cd5a07e5a187",
@@ -39,9 +39,9 @@
     "legacy_scoped_queries_with_expected_source": 0,
     "current_scoped_queries_with_expected_source": 7,
     "legacy_serialized_answer_bytes_total": 48,
-    "current_serialized_answer_bytes_total": 532315,
+    "current_serialized_answer_bytes_total": 532309,
     "legacy_average_answer_bytes": 2.0,
-    "current_average_answer_bytes": 22179.8,
+    "current_average_answer_bytes": 22179.5,
     "legacy_owner_bearing_queries": 0,
     "current_owner_bearing_queries": 10,
     "semantic_review_required_for_all_queries": true
@@ -791,7 +791,7 @@
         "expected_sources_without_assembly_or_formal_support": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 13777
+        "serialized_answer_bytes": 13771
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",

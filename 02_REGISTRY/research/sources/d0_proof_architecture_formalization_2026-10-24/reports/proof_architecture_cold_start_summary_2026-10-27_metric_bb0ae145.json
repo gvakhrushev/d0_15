@@ -1,6 +1,6 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "34ddcd2f667ae78b2543deb7ed1ad736e4e16fc7",
+  "snapshot_commit": "491172529171bb834c52a81fd91e8e6623a30069",
   "worktree_dirty": false,
   "authority_source_digests": {
     "02_REGISTRY/claims.csv": "4b89e8ed94d74b99622714f496f1fffa86ca976733c7d4340003cd5a07e5a187",
@@ -25523,18 +25523,18 @@
     }
   },
   "replay": {
-    "source_commit": "34ddcd2f667ae78b2543deb7ed1ad736e4e16fc7",
+    "source_commit": "491172529171bb834c52a81fd91e8e6623a30069",
     "command": "python3 tools/proof_architecture_cold_start.py",
     "runner_sha256": "0532c5f68a81d8964737c90582fb2c444355c5c2f32a731295ed845810552694",
     "runner_git_blob": "68e29bb5a0300497a2fd4be7540560b88db72ceb",
     "search_engine_sha256": "221b34bec00134383eaee8483c694374506eea7ab2977d995063e5fd7dcddc5e",
     "search_engine_git_blob": "9e06fa34f9ec63795d0dc92613fe5de784aaed5c",
-    "test_sha256": "df0060c23eef82dd6bc48a690d91a8777364099ca869ddcc9a98f5ca778c152c",
-    "test_git_blob": "63037069da6228a4bbe8356482212d62a1e25f08",
+    "test_sha256": "a87cb23baf37ab3e8859024323b5e37a31e78c8a0ef0aa7b7727b8701d5aea56",
+    "test_git_blob": "700f3401b9ac4deb03eb3f64ac4914e04b1a247c",
     "compactor_sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
     "compactor_git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
-    "full_output_sha256": "98308fb99ca329f2ecdf59d971dae861663a0934ee1c2ca1c4d9fecf63012711",
-    "full_output_bytes": 9848281
+    "full_output_sha256": "caf62683d035ea056cefc897846be3be45bbadc6656ef1567a44b339c01655a7",
+    "full_output_bytes": 9850406
   },
   "eq24_owner_source_retrieval": {
     "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -25566,8 +25566,8 @@
   },
   "report_compaction": {
     "reason": "Retains every required-source receipt and exact application retrieval; omits full candidate arrays.",
-    "full_output_bytes": 9848281,
-    "full_output_sha256": "98308fb99ca329f2ecdf59d971dae861663a0934ee1c2ca1c4d9fecf63012711",
+    "full_output_bytes": 9850406,
+    "full_output_sha256": "caf62683d035ea056cefc897846be3be45bbadc6656ef1567a44b339c01655a7",
     "provenance_limit": "The supplied full replay is not rerun or authenticated by the compactor."
   }
 }
