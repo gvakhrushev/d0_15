@@ -52,7 +52,7 @@
     "strict_return_source_lower_bound": "6159253906137088/415332458380405586475",
     "true_GNS_leakage_norm": 0.32011843999370443
   },
-  "checker_sha256": "6f3ced9f615aad6023d51e7adbf402a73566c77b7d9795d942d39531391ade41",
+  "checker_sha256": "e564aeed9011a784394976951814a6059fb6c71b7fa31b344f5170294b6b473e",
   "checks": 75,
   "copy_uniform_from_full_archive_transparency": true,
   "cumulative_source": {
