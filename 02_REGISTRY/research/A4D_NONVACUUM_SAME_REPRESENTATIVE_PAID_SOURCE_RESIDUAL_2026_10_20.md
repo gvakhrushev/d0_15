@@ -91530,6 +91530,839 @@ print(json.dumps(result,indent=2,sort_keys=True))
 ```
 <!-- END 7dl CYCLIC REFLECTION LOOP RECEIPT -->
 
+## 7dm. Retain a nontrivial original prefix in the owned canonical AF tower
+
+28 October2026. SAME #334 / `constitutive/native-programme-v1`; native
+realization and composition. Original calculation input
+`d53ef61c8c578c5a6cf16b88d17f8576ced0f64d`; publication also consumes
+the incoming canonical-tower proof through `48500384`, including its
+[readable composition](A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md). That
+[owned positive source map](sources/d0_cyclic_tower_source_2026-10-28/PROOF_RU.md)
+already resolves §7dl for a sequence of matched loops starting at
+V0=I on any earlier canonical cut. Use it directly there: skew rows
+remain exactly skew, and no extra limiting estimate or refresh word
+is needed for that result.
+
+The distinct parent application here retains an ACTUAL nontrivial
+finite prefix before the new loops, with its original earlier cut.
+The incoming theorem explicitly does not append an arbitrary foreign
+return-block without a map. Below K_xi and both resolved K_(0,a) are
+constructed from one supplied prefix U_xi and its actual input on
+the SAME AF tower. The native two-call example shows why this case
+needs its nonzero correction. A block from another instrument still
+needs its real same-carrier implementation; it is not identified
+with this prefix by giving it the same symbol K.
+
+For the specified copied-port graph below, this correction is summable
+and has a controlled normalized source. Old records, the arbitrary
+regular finite prefix and independent new temporal rows all remain.
+The original field response is retained without an artificial gain
+from optional added identity words. This extends the incoming
+canonical source map to a regular nontrivial prefix at the declared
+graph's scope, rather than duplicating its V0=I conclusion.
+
+All three incoming proof/checker/receipt files and their new composition
+memo are preserved. The proof SHA256 is
+`35275a75a7853893b5177250148c1d254f89811dc2da6775658934b5e8ac4078`.
+Its519 recorded checks are consumed, not rerun or added to the count
+below. The transfer identities checked during this calculation are
+now verification of that shared input; the new result is the exact
+resolved-prefix correction and its controlled full covector.
+
+It does not identify that graph with the full physical X_N. The
+addressed AF actuators, task/future-test law, other physical valuations
+and independent old-record couplings still require their actual maps.
+In particular, the existing unrestricted QUERY obstruction is not
+removed by this history theorem.
+
+### 1. State the actual copied-port source profile
+
+At an AF step A_n to A_(n+2k), use precisely the original uniform
+copying of each logical port over every old row/column r,c. Each raw
+control may act arbitrarily on its port and protected helper K and
+may be different for the two old block types. Its matrix is copied
+uniformly on the old matrix entries. The two old types are not linked
+to force a cancellation. Every independent forward/inverse occurrence
+is retained. The completed base word has the protected identity
+already required by §7dl; its individual tangents need not.
+
+These are the controls of the specified addressed recipe. They commute
+with the old AF algebra, and hence their conditional expectation is
+in Z(A_n) tensor End(K). They need not commute with the protected
+past. This does NOT include arbitrary new matrices on old r,c, a
+moving initial embedding, or every ambient skew matrix on D. The
+stronger isolated-block guard of §7di–7dl did not by itself prove
+history transport for those broader directions. Such operations keep
+their own source and physical-admission obligation; they are not
+discarded as gauge.
+
+The fixed original input has the form i_AF tensor I_K. Its AF cut
+may be an arbitrary fixed supplied cut into the starting algebra;
+it is not required to commute with its centre labels. Immutable
+oldRIGHT is retained as its existing identity factor. This is exactly
+the unknown-protected-input convention of the emitted source profile.
+If the physical input also prepares/restricts K, its real input map
+must be used instead of silently extending the theorem.
+
+### 2. Consume the owned two-label transfer and resolve its contracting mode
+
+Use equations(1)–(7) of the incoming owner. Let z_(n,a) be the two
+central block projections of A_n. Write
+M=[[1,1],[1,0]], r=2k and gamma=p^r. The original trace-preserving
+inclusion and its conditional expectation give, on every old block i,
+
+    E_n(z_(n+r,a))=sum_i P_r[i,a] z_(n,i),
+    P_r[i,a]=p^(r+a-i) (M^r)[a,i].
+
+For the actual loop L=URU R, §7dl gives defect
+d=4gamma(1-c²), C=1-d. Its nonidentity trace in final block a is
+supported on the old type a, with the original rank A_a. Therefore
+
+    E_n(z_(n+r,a) L)=sum_i T[i,a] z_(n,i),
+    T=P_r-d I,  T 1=C 1.                              (987)
+
+As in that proof, the A_a ranks cancel against the OLD block trace
+normalization; they are not discarded regular right multiplicities.
+This is the same actual folded trace map, not a newly selected
+Markov or statistical law. Its contraction mode is useful for the
+nontrivial-prefix extension below.
+
+The exact common stationary row is
+pi=((3+p)/5,(2-p)/5). With Pi=1 pi and Q=T/C,
+
+    P_r=Pi+gamma²(I-Pi),
+    Q=Pi+eta(I-Pi), eta=(gamma²-d)/(1-d),
+    Q 1=1, pi Q=pi,
+    Q[i,a]>0, |eta|<1/10 for k>=4, 0<c<=1.             (988)
+
+For completeness, gamma<=p^8 and d<=4gamma. Every diagonal of P_r
+is at least min pi>4p^8, so subtracting d preserves positivity.
+As a function of d, eta has derivative (gamma²-1)/(1-d)²<0.
+Its endpoint magnitudes are bounded by
+max(gamma²,(4gamma-gamma²)/(1-4gamma)), whose maximum for
+0<gamma<=p^8 is less than1/10. All inequalities are strict in the
+declared range, and C>=C_min=1-4p^8>0.
+
+Q is used as an exact matrix-coefficient transfer. Its entries do
+not replace the quantum histories by a classical random process.
+The history objects propagated below are full matrices, not
+probabilities or independently sampled branch frequencies.
+The stationary row pi is not substituted for the ordinary Book
+trace. Formula(991) keeps the actual initial-input trace and its
+derived Pi_out, together with the complete nonstationary correction.
+
+### 3. Keep the full resolved prefix before taking a source
+
+Let U_xi be any supplied finite prefix at the starting AF level,
+K_xi its actual return on the original input, and K_(0,a) its return
+with the corresponding actual centre projection inserted. Thus
+sum_a K_(0,a)=K_xi. No normality or scalar-past hypothesis is made.
+Put Delta_a=K_(0,a)-pi_a K_xi, so sum_a Delta_a=0.
+
+After j matched loops, use s_j=product_(t<=j) C_t and
+rho_j=product_(t<=j) eta_t, with s_0=rho_0=1. Bimodularity and (987)
+give the exact resolved canonical returns
+
+    K_(j,a)=s_j [pi_a K_xi+rho_j Delta_a],
+    sum_a K_(j,a)=s_j K_xi.                            (989)
+
+Different loop depths and different actual scalar centres are
+allowed. Their Q matrices commute because they have the same Pi,
+so the displayed product rho_j is exact, including its sign.
+The original initial cut need not preserve either centre label.
+Its failure to do so is retained in the actual Delta_a.
+For the incoming V0=I canonical start, K_xi=I and the resolved
+components are Hermitian compressed centre effects. They commute
+with protected skew matrices by the input tensor factor, so their
+products stay skew; hence
+the apparent history correction in (991) has exactly zero real
+return source. This recovers the stronger incoming exact-neutrality
+statement. The nonzero counterexample below has a different,
+actually executed prefix and therefore does not contradict it.
+
+Now vary one new block j independently, holding all other completed
+blocks at their matched base. Its full conditional insertion is
+E_previous(delta L_j)=sum_a z_a tensor Y_(j,a).
+The Y matrices act on the unchanged protected factor and therefore
+pass through the input isometry on that factor. Let
+Ybar_j=sum_a pi_a Y_(j,a) and Z_j=sum_a Y_(j,a) Delta_a. Then for
+the actual total return through block m>=j,
+
+    delta K_m=(s_m/C_j)
+                    [Ybar_j K_xi+rho_(j-1) Z_j].       (990)
+
+This identity is the missing old-cut source map. It is NOT generally
+Ybar_j times the old return. The second term is present even if
+every Y_(j,a) is skew and the isolated new block has zero return
+source. If the actual control is uniform across both old types,
+Y_(j,0)=Y_(j,1), then Z_j=0 EXACTLY. In particular the linked field
+lift keeps the full old field response, without a mixing error.
+
+### 4. Bound the real matrix-past correction in the genuine normalization
+
+For the same regular-prefix hypothesis as the existing cumulative
+owner, S=K_xi* K_xi>0. Set
+D=(1-zeta)I+zeta s_m² S,
+w=zeta s_m² Tr(S D^-1), Lambda=sum_j lambda_loop,j and Gamma=w Lambda.
+Normalized assertions are made at checkpoints with Lambda>0.
+Only genuine field-bearing blocks contribute a positive lambda;
+identity blocks below contribute zero. The actual derived weight is
+Pi_out=K_xi D^-1 K_xi*/Tr(S D^-1), positive with trace1. From (990),
+
+    D_j J/Gamma=-(2/(C_j Lambda)) Re Tr[
+                   Pi_out (Ybar_j+rho_(j-1) Z_j K_xi^-1)]. (991)
+
+Nothing commutes K_xi past Y_(j,a). Define the finite, actual prefix
+constant B_xi=sum_a ||Delta_a K_xi^-1||op. Positivity of Pi_out gives
+
+    |history correction_j| <=
+      2 |rho_(j-1)| B_xi max_a||Y_(j,a)||/(C_j Lambda). (992)
+
+There is no inverse s_m² or extra dependence on how small the retained
+return becomes. The actual invertible K_xi, already required by the
+regular parent, is used. For a singular prefix the exact map (990)
+still holds, but this bound is not asserted via a fictitious inverse.
+
+For each independently controlled frame/added-phase gate, §7dl984
+makes Y_(j,a) skew, so its Ybar_j term in (991) is zero. A two-port
+generator of norm nu has max||Y_a||<=2gamma_j nu: its support has
+two uniformly copied ports, each of conditional weight gamma_j,
+and the matched diagonal loop compression has norm at most1.
+This also holds after its TRUE partial frame/phase prefix, using
+the owned SourceI coefficient algebra of §7bn543. Those actual
+prefixes have entries in span(I,L_i); conjugating a two-port support
+therefore gives a projection S_port with
+E_previous(S_port)=2gamma_j z_a tensor I_K. This identity would not
+follow from its rank alone for an arbitrary protected-coupling
+compiler. Put G=D+(2c²-2)e, so ||G||<=1 and G commutes with the
+protected old algebra. Conditional cyclicity gives
+E_previous(G S_port G)<=E_previous(S_port). The completely positive
+Cauchy--Schwarz inequality, applied to H and S_port G, then bounds
+||E_previous(H G)|| by2gamma_j||H||. This proves the stated raw
+bound for the emitted prefixes, including Spin-entangled faults.
+
+The actual guard count at depth k is
+G_k=6R_k+8, R_k=F_(k+3)-2, hence G_4=74. Moreover
+p^(2k)G_k<=74p^8 for all k>=4. One proof uses
+G_(k+1)<=2G_k+4 and p²(2+4/74)<1. Combining with (988) gives the
+entire normalized return covector of ALL new frame/phase rows,
+in their maximum raw-gate norm, the finite bound
+
+    ||guard-history debt|| <=
+      [4*74p^8/(C_min(1-1/10))] B_xi/Lambda
+                  <7.653 B_xi/Lambda.                 (993)
+
+The rows occur in every new block and remain independent. They are
+controlled by the exact history contraction, not relabelled as one
+fixed prefix or assumed separately stationary after the old cut.
+
+### 5. Arbitrarily long real body templates retain a paid control of their debt
+
+For body controls that are allowed to differ by old type, the first
+term of (991) has the exact positive average of §7dl982's original
+operator sources:
+sum_a pi_a (A_(a,first)+A_(a,second))/2. The original off-shell
+decoder/regular source theorem therefore applies to that explicit
+averaged field map, before scalar positive-past weighting. Its
+original field, apparatus and task hypotheses remain unchanged.
+Raw directions vertical for this map keep their raw norm; they are
+not declared gauge. The linked geometric field lift is uniform in
+a and has no Z_j remainder, so its soundness test is unchanged.
+
+An actual finite template's remaining body insertion satisfies
+max||Y_a||<=M_j nu, where M_j is its TRUE number of affected body
+stages in this copied-port profile. A new large M_j must not simply
+be multiplied by an unspecified limiting rho.
+
+There is an explicit paid way to fix this. In the already constructed
+loop recipe take U=I and omit both body words. Execute
+
+    B^-1 ; R0 ; R0 ; B,
+    endpoint=I, C=1, lambda_loop=0,
+    eta=gamma²; at k=4:74 actual specified calls.       (994)
+
+The whole AF inclusion and all74 frame/phase calls remain. It adds
+no pure blank, measurement, erased record or free inverse. It leaves
+the return value unchanged but changes the real clock, full carrier
+and absolute heat. Its own independent raw rows are included in
+(993). In particular, an identity endpoint here does not license
+zero heat for an arbitrary already retained nonreflection history.
+
+Freeze the actual body template and its M_j first. Before executing
+it, a finite number of these identity loops makes
+|rho_before| M_j/C_j<=2^-j, since each multiplies |rho| by p^16<1.
+Here j enumerates field-bearing bodies, not the inserted identity
+loops. Their complete body-history correction then sums to at most
+2B_xi/Lambda. This is an explicit finite schedule on the stated
+uniform copied-port counts. A different physical actuation expansion
+whose counts grow with the old AF level must provide its actual
+growth and budget; it is not silently given the same bound.
+
+Identity words add ZERO to Lambda and cannot dilute a free QUERY
+source by being counted as extra field measurements. A genuinely
+free uniform QUERY direction has Z_j=0, retains the same old
+normalized main source and remains subject to the existing sharp
+closure-source obstruction. The task-faithful law or its actual
+compensating source is still required where the parent requires it.
+
+### 6. Composition with the owned full source and all-mode heat
+
+The matched total return s_m K_xi is exact, so all independent
+variations of the fixed prefix retain the existing C_xi/Lambda
+bound. The prefix has not been frozen. On the declared regular
+copied-port graph, the NEW history correction to the already owned
+field/body source is at most
+
+    [(7.653+2)B_xi+C_xi]/Lambda + E_heat.              (995)
+
+Keep the parent's actual geometric and apparatus errors as well;
+they have not been included in B_xi or declared zero. The same
+independent-field tests retain the old lower bound. The matrix/past
+map and positive averages are fixed before any Einstein zero is
+used. This remains the existing mixed regular topology, not raw216
+or an unrestricted unweighted physical gate norm.
+
+E_heat is the original all-unitary full-Hodge bound at the TRUE
+clock and full regular dimensions, including every identity word.
+For example its raw part uses A1_N(C_V+N)/(w Lambda), with the
+actual lift constants as required by the owner. Neither the loop
+endpoint nor the retained prefix is assumed reflective. Once each
+finite body template is fixed, real repetitions raise Lambda; its
+return attenuation is exponential while the owned winding bound
+is factorial. The positive-weight cumulative schedule can therefore
+consume (995), along with its original finite errors, on one actual
+growing AF input tower. This replaces the missing old-cut transport
+premise for this source profile. No claim about additional physical
+price terms, moving beta/scene/clock or unprovided actuation is made.
+
+### 7. A native prefix demonstrates why the correction was necessary
+
+The checker executes two original addressed SourceI calls on all52
+columns of H(A2) tensor Spin4. They act as I on the M3 block and as
+L_i on the whole M2 block, including both regular right columns.
+The original canonical inclusion from A0 gives all8 unknown inputs
+
+    K_xi=diag(2p² I4+p³ L_i, p I4+p² L_i),
+    S=diag((13-20p)I4,(3-4p)I4) > (1/2)I.             (996)
+
+The unchanged oldRIGHT factor2 doubles the true rank to16. No new
+flag or unknown-Spin preparation was used. The two actual centre
+components K_(0,a), not fitted matrices, are retained separately.
+
+For the actual phase-angle generator of ONE new SourceI true port
+in the c=p loop, Y_0=-p^11 L_i and Y_1=0. Each isolated local
+Hermitian source is zero. After the real prefix, however, DJ/w is
+0.00378462083186945 at the first loop, approximately-0.000208408225202434
+at the second, and-5.81125233658e-12 at the eighth. Every value has
+the exact retained-history formula (991), its actual D and actual
+w; its sign is not replaced by an unsigned probability. These are
+ambient source tangents at literal native base gates, not admission
+of a continuously variable native pulse.
+
+The new label-transfer calculation uses the actual89-dimensional
+working representation of A8 and its true canonical weights. It
+does not rerun the unchanged88-call certificate or claim to multiply
+an enormous90-call/full-regular history matrix. The old uniform
+trace/fold theorem supplies the same identity at higher starting
+levels. A separate rational3-column nonnormal matrix past checks
+the exact covector formula on every one of18 matrix-unit insertions;
+it is clearly labelled structural, not another native prefix.
+
+All133 checks pass, with byte-identical ordinary/optimized receipts.
+They include the native prefix, its nonzero phase-history source,
+varying-template transfer, positive-past matrix identity, strict
+contraction/guard bounds and paid finite refresh schedules. The
+large example template counts in the scheduling control are input
+counts for that bound, not actually emitted enormous GR programmes.
+
+Parent consequence: the incoming canonical source theorem is now
+extended to an actual nontrivial regular prefix on the same AF
+carrier, with an exact map and controlled full new-row debt in the
+copied-port profile. Physical admission of that profile, the full
+task/QUERY selection and completeness against other original X_N
+directions remain. No new action, Einstein-valued constraint or
+physical definition is inserted to force closure.
+
+Assembly: supporting direct native-realization/composition result
+within the existing owner and two write paths. No new task/node,
+independent acceptance, Ready, claim promotion or merge.
+`GR_closed=false`.
+
+Checker SHA256: `a556695f88435f5f72b4a05067a4026691932ce62442da1bb53380702ec32379`.
+Observed receipt SHA256: `3733ea78fa637aafda3e24727881221bcc00d7d297ea0d9f33ea96b2b45cf397`.
+The following blocks are the exact executed bytes.
+
+<!-- BEGIN 7dm AF HISTORY TRANSPORT CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Exact AF label transfer, real prefix leakage and retained full covector.
+
+The original88-stage loop is consumed by its pinned checker. Only the new
+resolved-label application, two-call prefix and small source controls run.
+"""
+import ast
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+import sympy as s
+
+ROOT=Path.cwd()
+PRIMARY=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+AF_PIN='9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee'
+NATIVE_PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+TREE_PIN='b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba'
+FRAME_PIN='de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88'
+LOOP_PIN='82afdd0b17b7ecdb38b04947caa11de923a001a6e73317d3b37edbf90672880f'
+checks=[]
+def require(ok,label):
+    if not bool(ok):raise RuntimeError(label)
+    checks.append(label)
+def load(name,rel,pin):
+    path=ROOT/rel
+    require(hashlib.sha256(path.read_bytes()).hexdigest()==pin,'input '+name)
+    spec=importlib.util.spec_from_file_location(name,path)
+    mod=importlib.util.module_from_spec(spec);sys.modules[name]=mod;spec.loader.exec_module(mod)
+    return mod
+AF=load('history_af','02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py',AF_PIN)
+N=load('history_native','02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py',NATIVE_PIN)
+a,p=AF.a,AF.p
+source=PRIMARY.read_text()
+def functions(marker,pin,names):
+    code=source.split('<!-- BEGIN '+marker+' -->\n```python\n')[1].split('```\n<!-- END '+marker+' -->')[0]
+    require(hashlib.sha256(code.encode()).hexdigest()==pin,'published '+marker)
+    nodes=[x for x in ast.parse(code).body if isinstance(x,ast.FunctionDef) and x.name in names]
+    require({x.name for x in nodes}==set(names),'requested builder functions '+marker)
+    exec(compile(ast.Module(body=nodes,type_ignores=[]),'<owned '+marker+'>','exec'),globals())
+functions('7dg GOLDEN AF FRAME CHECKER',TREE_PIN,{'mat','paths','pairs','rotation','product'})
+functions('7di OFFCOPY FRAME CHECKER',FRAME_PIN,{'layout'})
+functions('7dl CYCLIC REFLECTION LOOP CHECKER',LOOP_PIN,set())
+def equal(A,B,label):require(AF.zero(A-B),label)
+def symbolic(A):return mat(A.xreplace({N.A:a}).xreplace({s.sqrt(5):2*p+1}))
+
+# New application of the already executed loop to both actual A8 centre labels.
+si=N.Gate('SourceI',(0,2,3));g=N.Gate('G',(0,));cx=N.Gate('CX',(0,1))
+word=N.Execution(4,(0,1),(),(g,cx,si,si,g,si,si),N.G_CX_SOURCE_I,0,(2,3))
+Wfull=symbolic(N.word_matrix(word,max_qubits=4,max_expanded_stages=7))
+W=Wfull.extract([0,4,8,12],[0,4,8,12])
+equal(Wfull,s.kronecker_product(W,s.eye(4)),'consumed literal middle restores complete Spin')
+f=layout(0,4,4);E,J,ops=f['E'],f['J'],f['ops'];D=J.rows;d=J.cols
+B=product([rotation(D,op['rows']) for op in ops],D);V=mat(B*E)
+I=s.SparseMatrix(s.eye(D));e=V[:,:d]*V[:,:d].T
+U=mat(V*s.kronecker_product(W,s.eye(d))*V.T+I-V*V.T);R=I-2*e;L=mat(U*R*U*R)
+segments=AF.segments(1,1,4);owner={}
+for v,block in enumerate(segments):
+    for oldtype,path,off in block:owner[v,off]=oldtype
+row_type=[owner[v,row] for v,row,col in f['fine']]
+final_type=[owner[v,col] for v,row,col in f['fine']]
+weights=[p**(8+final_type[z]-row_type[z]) for z in range(D)]
+def expectation(M):
+    return s.diag(*[AF.red(sum(weights[z]*M[z,z] for z in range(D) if row_type[z]==i)) for i in (0,1)])
+gamma=p**8;defect=4*gamma*(1-p*p);C=AF.red(1-defect)
+M=s.Matrix([[1,1],[1,0]])
+P8=mat(s.Matrix(2,2,lambda i,j:p**(8+j-i)*(M**8)[j,i]))
+T=mat(P8-defect*s.eye(2))
+for j in (0,1):
+    Z=s.diag(*[s.Integer(t==j) for t in final_type])
+    equal(expectation(Z),s.diag(P8[0,j],P8[1,j]),'true AF centre transition '+str(j))
+    equal(expectation(Z*L),s.diag(T[0,j],T[1,j]),'new resolved loop transition '+str(j))
+    ej=V[:,j]*V[:,j].T
+    phase_delta=mat(U*R*U*ej*R)
+    expected=s.diag(*[gamma*(2*p*p-1)*s.Integer(i==j) for i in (0,1)])
+    equal(expectation(phase_delta),expected,'actual SourceI phase-angle source coefficient '+str(j))
+equal(T*s.ones(2,1),C*s.ones(2,1),'matched scalar return is row sum of actual transfer')
+
+# Exact number-field arithmetic for changing templates and arbitrary matrix past.
+PF=(s.sqrt(5)-1)/2;FA=N.A;FIELD=N.GOLDEN_FIELD
+def red(x):return FIELD.to_sympy(FIELD.from_sympy(s.sympify(x).subs({p:PF,a:FA})))
+def fm(A):return s.ImmutableMatrix(A.applyfunc(red))
+def feq(A,B,label):
+    if isinstance(A,s.MatrixBase):ok=all(FIELD.from_sympy(red(x))==FIELD.zero for x in A-B)
+    else:ok=FIELD.from_sympy(red(A-B))==FIELD.zero
+    require(ok,label)
+def positive(x,label):require(s.simplify(red(x))>0,label)
+pi=s.Matrix([red((3+p)/5),red((2-p)/5)])
+Pi=s.ones(2,1)*pi.T
+gmax=red(PF**8);Cmin=red(1-4*gmax)
+eta_bound=red((4*gmax-gmax*gmax)/(1-4*gmax))
+positive(s.Rational(1,10)-eta_bound,'uniform exact contraction below1/10')
+positive(pi[1]-4*gmax,'all tilted transition diagonal entries stay positive')
+def transition(k,c):
+    ga=red(PF**(2*k));de=red(4*ga*(1-c*c));co=red(1-de)
+    pp=fm(s.Matrix(2,2,lambda i,j:PF**(2*k+j-i)*(M**(2*k))[j,i]))
+    eta=red((ga*ga-de)/co)
+    Q=fm((pp-de*s.eye(2))/co)
+    return co,eta,Q,pp
+for k,c in [(4,PF),(5,s.Rational(3,5)),(6,s.Rational(4,5)),(4,s.Integer(1))]:
+    co,eta,Q,PP=transition(k,c)
+    feq(Q,Pi+eta*(s.eye(2)-Pi),'exact varying-template spectral split '+str((k,c)))
+    feq(Q*s.ones(2,1),s.ones(2,1),'actual transition row sum '+str((k,c)))
+    feq(pi.T*Q,pi.T,'same positive stationary weights '+str((k,c)))
+    for x in Q:positive(x,'strict positive entry '+str((k,c,x)))
+    if c==1:
+        feq(co,1,'paid identity refresh has no return attenuation')
+        feq(eta,PF**(4*k),'paid identity refresh contraction is gamma squared')
+
+# A real TWO-CALL SourceI prefix on the whole original A2 GNS x Spin carrier.
+# Block0 acts by I; two reversed addressed source ports in block1 together act
+# by L_i on every row and both regular right columns. No blank is introduced.
+sizes=AF.counts(2);coords=[(v,r,c) for v,n in enumerate(sizes) for r in range(n) for c in range(n)]
+index={x:i for i,x in enumerate(coords)}
+J02=s.MutableSparseMatrix(13,2,{})
+for v,block in enumerate(AF.segments(1,1,2)):
+    for oldtype,path,off in block:J02[index[v,off,off],oldtype]=AF.root_weight(2+v-oldtype)
+JS=s.kronecker_product(J02,s.eye(4));IP=s.SparseMatrix(s.eye(52));Li=N.L_I
+calls=[]
+for row in (0,1):
+    S=s.MutableSparseMatrix(IP)
+    for z,(v,r,c) in enumerate(coords):
+        if v==1 and r==row:
+            for u in range(4):
+                for w in range(4):S[4*z+u,4*z+w]=Li[u,w]
+    calls.append(s.SparseMatrix(S))
+UX=calls[1]*calls[0]
+equal(UX.T*UX,IP,'actual two-call52-column prefix is unitary')
+K=fm(JS.T*UX*JS)
+resolved=[]
+for j in (0,1):
+    Z=s.diag(*[s.Integer(v==j) for v,r,c in coords]);resolved.append(fm(JS.T*s.kronecker_product(Z,s.eye(4))*UX*JS))
+feq(sum(resolved,s.zeros(8)),K,'all actual prefix label columns are retained')
+P2=fm(s.Matrix(2,2,lambda i,j:PF**(2+j-i)*(M**2)[j,i]))
+Kexpected=s.diag(*[P2[i,0]*s.eye(4)+P2[i,1]*Li for i in (0,1)])
+feq(K,Kexpected,'canonical prefix corner on all8 unknown inputs')
+S=fm(K.T*K)
+positive(3-4*PF-s.Rational(1,2),'actual prefix S has a gap above1/2')
+KI=fm(K.inv());Delta=[fm(resolved[j]-pi[j]*K) for j in (0,1)]
+feq(sum(Delta,s.zeros(8)),s.zeros(8),'actual resolved-history defect sums to zero')
+
+# A real raw phase row has zero local Hermitian source but nonzero past source.
+co,eta,Q,_=transition(4,PF);b=red(PF**8*(2*PF**2-1));Jspin=s.diag(Li,Li)
+Y=[b*Jspin,s.zeros(8)];feq(Y[0]+Y[0].T,s.zeros(8),'new standalone raw phase source is skew')
+zeta=s.Rational(1,2**20);native_rows=[]
+for step in (1,2,4,8):
+    rho=red(eta**(step-1));scale=red(co**step)
+    F=[fm(pi[j]*K+rho*Delta[j]) for j in (0,1)]
+    actual_delta=fm((scale/co)*sum((Y[j]*F[j] for j in (0,1)),s.zeros(8)))
+    Dm=fm((1-zeta)*s.eye(8)+zeta*scale**2*S);Di=fm(Dm.inv())
+    denom=red(s.trace(S*Di));w=red(zeta*scale**2*denom)
+    dJ=red(-2*zeta*s.trace(Di*(scale*K.T)*actual_delta))
+    predicted=red(-2*zeta*scale**2*rho/co*s.trace(Di*K.T*Y[0]*Delta[0]))
+    feq(dJ,predicted,'actual phase source is exactly its retained history remainder '+str(step))
+    require(dJ!=0,'native prefix prevents false zero-source claim '+str(step))
+    # ||Delta_a K^-1|| sum <6 follows from the actual gap>1/2 and
+    # norms of K and each resolved compression <=1. Use this safe bound.
+    bound=red(12*abs(rho)*abs(b)/co)
+    positive(bound**2-(dJ/w)**2,'exact positive bound on retained phase source '+str(step))
+    native_rows.append({'loops':step,'DJ_over_w':str(s.N(dJ/w,25)),
+                        'history_multiplier':str(s.N(rho,25)),
+                        'bound_using_Bxi_6':str(s.N(bound,25))})
+
+# Non-normal matrix past: no commutation of K, S or arbitrary Y is assumed.
+# This separate rational3-column control is structural, not another emitted
+# physical prefix. It tests the general map for every matrix-unit insertion.
+U0=s.Matrix([[1,0,0],[0,s.Rational(3,5),-s.Rational(4,5)],[0,s.Rational(4,5),s.Rational(3,5)]])
+U1=s.Matrix([[s.Rational(5,13),-s.Rational(12,13),0],[s.Rational(12,13),s.Rational(5,13),0],[0,0,1]])
+F0=[s.Rational(2,3)*U0,s.Rational(1,3)*U1];K0=sum(F0,s.zeros(3))
+require(K0*K0.T!=K0.T*K0,'structural past is genuinely nonnormal')
+require(K0.det()!=0,'structural past has nonzero gap')
+Def=[fm(F0[j]-pi[j]*K0) for j in (0,1)]
+current=list(F0);rho=s.Integer(1);total=s.Integer(1);settings=[(4,PF),(5,s.Rational(3,5)),(4,s.Rational(4,5))]
+for index,(k,c) in enumerate(settings,1):
+    cj,ej,Qj,_=transition(k,c)
+    current=[fm(sum((Qj[b,a]*current[b] for b in (0,1)),s.zeros(3))) for a in (0,1)]
+    rho=red(rho*ej);total=red(total*cj)
+    for j in (0,1):feq(current[j],pi[j]*K0+rho*Def[j],'varying native label recurrence with nonnormal past '+str((index,j)))
+before=[fm(pi[j]*K0+red(rho/ej)*Def[j]) for j in (0,1)];rho_before=red(rho/ej)
+SN=K0.T*K0;Dinv=fm(((1-zeta)*s.eye(3)+zeta*total**2*SN).inv())
+den=red(s.trace(SN*Dinv));Pi_out=fm(K0*Dinv*K0.T/den)
+for label in (0,1):
+    for row in range(3):
+        for col in range(3):
+            ys=[s.zeros(3),s.zeros(3)];ys[label][row,col]=1
+            ybar=sum((pi[j]*ys[j] for j in (0,1)),s.zeros(3))
+            leak=sum((ys[j]*Def[j] for j in (0,1)),s.zeros(3))
+            delta=fm((total/cj)*sum((ys[j]*before[j] for j in (0,1)),s.zeros(3)))
+            feq(delta,(total/cj)*(ybar*K0+rho_before*leak),'complete source matrix identity '+str((label,row,col)))
+            direct=red(-2*s.trace(Dinv*K0.T*(delta/total))/den)
+            mapped=red(-2/cj*s.trace(Pi_out*(ybar+rho_before*leak*K0.inv())))
+            feq(direct,mapped,'full positive-past covector without a commuting shortcut '+str((label,row,col)))
+    same=s.Matrix([[0,1,0],[-1,0,1],[0,-1,0]])
+    feq(same*Def[0]+same*Def[1],s.zeros(3),'old-type uniform controls have no history debt '+str(label))
+
+# Guard counts and exact paid refresh scheduling, without giving it fake gain.
+Rk=[sum(M**k)-2 for k in range(4,10)]
+for k,Rn in zip(range(4,10),Rk):
+    guard=6*Rn+8
+    require(guard>=74,'actual frame+phase count '+str(k))
+    require(s.simplify(red(74*gmax-PF**(2*k)*guard))>=0,'exact bounded weighted guard count '+str(k))
+positive(1-PF**2*(2+s.Rational(4,74)),'uniform weighted guard-count induction contracts')
+guard_constant=red(4*74*gmax/(Cmin*(1-s.Rational(1,10))))
+refresh=s.Rational(1,1);gamma2=red(PF**16);buffer_counts=[]
+for i,count in enumerate([14,10**3,10**8,10**20],1):
+    needed=0
+    while s.N(refresh*count,80)>s.Rational(1,2**i):
+        refresh=red(refresh*gamma2);needed+=1
+    require(needed<100,'finite real identity-refresh count '+str(i))
+    positive(s.Rational(1,2**i)-refresh*count,'strict actual chosen history budget '+str(i))
+    buffer_counts.append({'next_body_raw_count':count,'new_identity_loops':needed,
+                          'paid_stages':74*needed,'extra_return_gain':0})
+
+result={'status':'PASS','checks':len(checks),'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'input_pins':{'AF':AF_PIN,'native':NATIVE_PIN,'frame':FRAME_PIN,'loop':LOOP_PIN},
+ 'transfer':{'old_label_transition':'P_(2k)[i,j]=p^(2k+j-i) (M^(2k))[j,i]',
+   'weighted_loop_transition':'T=P_(2k)-4gamma(1-c^2) I',
+   'stationary_weights':['(3+p)/5','(2-p)/5'],
+   'normalized_second_eigenvalue':'eta=(gamma^2-4gamma(1-c^2))/(1-4gamma(1-c^2))',
+   'uniform_abs_eta_bound':'<1/10 for k>=4, 0<c<=1',
+   'field_normalization':'uniform label directions transfer exactly; no artificial gain from refresh'},
+ 'native_prefix':{'calls':2,'full_GNS_Spin_columns':52,'canonical_unknown_rank':8,'oldRIGHT_identity_factor':2,
+   'actual_corner':'diag(2p^2 I4+p^3 L_i, p I4+p^2 L_i)',
+   'S_gap':'>1/2','raw_new_phase_coefficient':'-p^11 L_i on old type0',
+   'observed_history_rows':native_rows,'full88_loop_replayed':False},
+ 'general_covector':{'nonnormal_structural_dimension':3,'matrix_unit_sources_checked':18,
+   'old_history_debt':'2 |rho| Bxi max_a||Y_a||/(C Lambda)',
+   'guard_debt_upper_constant_over_Lambda':str(s.N(guard_constant,25)),
+   'constant_multiplies':'Bxi, in the declared uniform copied-port gate-max graph',
+   'paid_identity_refresh_examples':buffer_counts},
+ 'scope':'Exact old-cut/source transport for the copied-port AF profile, retaining resolved past. No full physical X_N admission, arbitrary old-record coupling or GR closure.',
+ 'labels':checks}
+print(json.dumps(result,indent=2,sort_keys=True))
+```
+<!-- END 7dm AF HISTORY TRANSPORT CHECKER -->
+
+<!-- BEGIN 7dm AF HISTORY TRANSPORT RECEIPT -->
+```json
+{
+  "checker_sha256": "a556695f88435f5f72b4a05067a4026691932ce62442da1bb53380702ec32379",
+  "checks": 133,
+  "general_covector": {
+    "constant_multiplies": "Bxi, in the declared uniform copied-port gate-max graph",
+    "guard_debt_upper_constant_over_Lambda": "7.652366953017195428458166",
+    "matrix_unit_sources_checked": 18,
+    "nonnormal_structural_dimension": 3,
+    "old_history_debt": "2 |rho| Bxi max_a||Y_a||/(C Lambda)",
+    "paid_identity_refresh_examples": [
+      {
+        "extra_return_gain": 0,
+        "new_identity_loops": 1,
+        "next_body_raw_count": 14,
+        "paid_stages": 74
+      },
+      {
+        "extra_return_gain": 0,
+        "new_identity_loops": 1,
+        "next_body_raw_count": 1000,
+        "paid_stages": 74
+      },
+      {
+        "extra_return_gain": 0,
+        "new_identity_loops": 1,
+        "next_body_raw_count": 100000000,
+        "paid_stages": 74
+      },
+      {
+        "extra_return_gain": 0,
+        "new_identity_loops": 4,
+        "next_body_raw_count": 100000000000000000000,
+        "paid_stages": 296
+      }
+    ]
+  },
+  "input_pins": {
+    "AF": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+    "frame": "de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88",
+    "loop": "82afdd0b17b7ecdb38b04947caa11de923a001a6e73317d3b37edbf90672880f",
+    "native": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "labels": [
+    "input history_af",
+    "input history_native",
+    "published 7dg GOLDEN AF FRAME CHECKER",
+    "requested builder functions 7dg GOLDEN AF FRAME CHECKER",
+    "published 7di OFFCOPY FRAME CHECKER",
+    "requested builder functions 7di OFFCOPY FRAME CHECKER",
+    "published 7dl CYCLIC REFLECTION LOOP CHECKER",
+    "requested builder functions 7dl CYCLIC REFLECTION LOOP CHECKER",
+    "consumed literal middle restores complete Spin",
+    "true AF centre transition 0",
+    "new resolved loop transition 0",
+    "actual SourceI phase-angle source coefficient 0",
+    "true AF centre transition 1",
+    "new resolved loop transition 1",
+    "actual SourceI phase-angle source coefficient 1",
+    "matched scalar return is row sum of actual transfer",
+    "uniform exact contraction below1/10",
+    "all tilted transition diagonal entries stay positive",
+    "exact varying-template spectral split (4, -1/2 + sqrt(5)/2)",
+    "actual transition row sum (4, -1/2 + sqrt(5)/2)",
+    "same positive stationary weights (4, -1/2 + sqrt(5)/2)",
+    "strict positive entry (4, -1/2 + sqrt(5)/2, 59/17 - 21*sqrt(5)/17)",
+    "strict positive entry (4, -1/2 + sqrt(5)/2, -42/17 + 21*sqrt(5)/17)",
+    "strict positive entry (4, -1/2 + sqrt(5)/2, -21/34 + 21*sqrt(5)/34)",
+    "strict positive entry (4, -1/2 + sqrt(5)/2, 55/34 - 21*sqrt(5)/34)",
+    "exact varying-template spectral split (5, 3/5)",
+    "actual transition row sum (5, 3/5)",
+    "same positive stationary weights (5, 3/5)",
+    "strict positive entry (5, 3/5, -6368467/384158 + 2971375*sqrt(5)/384158)",
+    "strict positive entry (5, 3/5, 6752625/384158 - 2971375*sqrt(5)/384158)",
+    "strict positive entry (5, 3/5, 1350250/192079 - 540375*sqrt(5)/192079)",
+    "strict positive entry (5, 3/5, -1158171/192079 + 540375*sqrt(5)/192079)",
+    "exact varying-template spectral split (6, 4/5)",
+    "actual transition row sum (6, 4/5)",
+    "same positive stationary weights (6, 4/5)",
+    "strict positive entry (6, 4/5, -23092321/287879 + 10420200*sqrt(5)/287879)",
+    "strict positive entry (6, 4/5, 23380200/287879 - 10420200*sqrt(5)/287879)",
+    "strict positive entry (6, 4/5, 9019800/287879 - 3940200*sqrt(5)/287879)",
+    "strict positive entry (6, 4/5, -8731921/287879 + 3940200*sqrt(5)/287879)",
+    "exact varying-template spectral split (4, 1)",
+    "actual transition row sum (4, 1)",
+    "same positive stationary weights (4, 1)",
+    "strict positive entry (4, 1, 799 - 357*sqrt(5))",
+    "strict positive entry (4, 1, -798 + 357*sqrt(5))",
+    "strict positive entry (4, 1, -609/2 + 273*sqrt(5)/2)",
+    "strict positive entry (4, 1, 611/2 - 273*sqrt(5)/2)",
+    "paid identity refresh has no return attenuation",
+    "paid identity refresh contraction is gamma squared",
+    "actual two-call52-column prefix is unitary",
+    "all actual prefix label columns are retained",
+    "canonical prefix corner on all8 unknown inputs",
+    "actual prefix S has a gap above1/2",
+    "actual resolved-history defect sums to zero",
+    "new standalone raw phase source is skew",
+    "actual phase source is exactly its retained history remainder 1",
+    "native prefix prevents false zero-source claim 1",
+    "exact positive bound on retained phase source 1",
+    "actual phase source is exactly its retained history remainder 2",
+    "native prefix prevents false zero-source claim 2",
+    "exact positive bound on retained phase source 2",
+    "actual phase source is exactly its retained history remainder 4",
+    "native prefix prevents false zero-source claim 4",
+    "exact positive bound on retained phase source 4",
+    "actual phase source is exactly its retained history remainder 8",
+    "native prefix prevents false zero-source claim 8",
+    "exact positive bound on retained phase source 8",
+    "structural past is genuinely nonnormal",
+    "structural past has nonzero gap",
+    "varying native label recurrence with nonnormal past (1, 0)",
+    "varying native label recurrence with nonnormal past (1, 1)",
+    "varying native label recurrence with nonnormal past (2, 0)",
+    "varying native label recurrence with nonnormal past (2, 1)",
+    "varying native label recurrence with nonnormal past (3, 0)",
+    "varying native label recurrence with nonnormal past (3, 1)",
+    "complete source matrix identity (0, 0, 0)",
+    "full positive-past covector without a commuting shortcut (0, 0, 0)",
+    "complete source matrix identity (0, 0, 1)",
+    "full positive-past covector without a commuting shortcut (0, 0, 1)",
+    "complete source matrix identity (0, 0, 2)",
+    "full positive-past covector without a commuting shortcut (0, 0, 2)",
+    "complete source matrix identity (0, 1, 0)",
+    "full positive-past covector without a commuting shortcut (0, 1, 0)",
+    "complete source matrix identity (0, 1, 1)",
+    "full positive-past covector without a commuting shortcut (0, 1, 1)",
+    "complete source matrix identity (0, 1, 2)",
+    "full positive-past covector without a commuting shortcut (0, 1, 2)",
+    "complete source matrix identity (0, 2, 0)",
+    "full positive-past covector without a commuting shortcut (0, 2, 0)",
+    "complete source matrix identity (0, 2, 1)",
+    "full positive-past covector without a commuting shortcut (0, 2, 1)",
+    "complete source matrix identity (0, 2, 2)",
+    "full positive-past covector without a commuting shortcut (0, 2, 2)",
+    "old-type uniform controls have no history debt 0",
+    "complete source matrix identity (1, 0, 0)",
+    "full positive-past covector without a commuting shortcut (1, 0, 0)",
+    "complete source matrix identity (1, 0, 1)",
+    "full positive-past covector without a commuting shortcut (1, 0, 1)",
+    "complete source matrix identity (1, 0, 2)",
+    "full positive-past covector without a commuting shortcut (1, 0, 2)",
+    "complete source matrix identity (1, 1, 0)",
+    "full positive-past covector without a commuting shortcut (1, 1, 0)",
+    "complete source matrix identity (1, 1, 1)",
+    "full positive-past covector without a commuting shortcut (1, 1, 1)",
+    "complete source matrix identity (1, 1, 2)",
+    "full positive-past covector without a commuting shortcut (1, 1, 2)",
+    "complete source matrix identity (1, 2, 0)",
+    "full positive-past covector without a commuting shortcut (1, 2, 0)",
+    "complete source matrix identity (1, 2, 1)",
+    "full positive-past covector without a commuting shortcut (1, 2, 1)",
+    "complete source matrix identity (1, 2, 2)",
+    "full positive-past covector without a commuting shortcut (1, 2, 2)",
+    "old-type uniform controls have no history debt 1",
+    "actual frame+phase count 4",
+    "exact bounded weighted guard count 4",
+    "actual frame+phase count 5",
+    "exact bounded weighted guard count 5",
+    "actual frame+phase count 6",
+    "exact bounded weighted guard count 6",
+    "actual frame+phase count 7",
+    "exact bounded weighted guard count 7",
+    "actual frame+phase count 8",
+    "exact bounded weighted guard count 8",
+    "actual frame+phase count 9",
+    "exact bounded weighted guard count 9",
+    "uniform weighted guard-count induction contracts",
+    "finite real identity-refresh count 1",
+    "strict actual chosen history budget 1",
+    "finite real identity-refresh count 2",
+    "strict actual chosen history budget 2",
+    "finite real identity-refresh count 3",
+    "strict actual chosen history budget 3",
+    "finite real identity-refresh count 4",
+    "strict actual chosen history budget 4"
+  ],
+  "native_prefix": {
+    "S_gap": ">1/2",
+    "actual_corner": "diag(2p^2 I4+p^3 L_i, p I4+p^2 L_i)",
+    "calls": 2,
+    "canonical_unknown_rank": 8,
+    "full88_loop_replayed": false,
+    "full_GNS_Spin_columns": 52,
+    "observed_history_rows": [
+      {
+        "DJ_over_w": "0.003784620831869454990186385",
+        "bound_using_Bxi_6": "0.06364937205845240542795353",
+        "history_multiplier": "1.000000000000000000000000",
+        "loops": 1
+      },
+      {
+        "DJ_over_w": "-0.0002084082252024340297824275",
+        "bound_using_Bxi_6": "0.003504988549742920941871430",
+        "history_multiplier": "-0.05506713477902208452288062",
+        "loops": 2
+      },
+      {
+        "DJ_over_w": "-0.0000006319748777591115395868267",
+        "bound_using_Bxi_6": "0.00001062848988972487364262708",
+        "history_multiplier": "-0.0001669849920901686066060312",
+        "loops": 4
+      },
+      {
+        "DJ_over_w": "-5.811252336583494749136728e-12",
+        "bound_using_Bxi_6": "9.773305720082840209399639e-11",
+        "history_multiplier": "-1.535491302429114963668665e-9",
+        "loops": 8
+      }
+    ],
+    "oldRIGHT_identity_factor": 2,
+    "raw_new_phase_coefficient": "-p^11 L_i on old type0"
+  },
+  "scope": "Exact old-cut/source transport for the copied-port AF profile, retaining resolved past. No full physical X_N admission, arbitrary old-record coupling or GR closure.",
+  "status": "PASS",
+  "transfer": {
+    "field_normalization": "uniform label directions transfer exactly; no artificial gain from refresh",
+    "normalized_second_eigenvalue": "eta=(gamma^2-4gamma(1-c^2))/(1-4gamma(1-c^2))",
+    "old_label_transition": "P_(2k)[i,j]=p^(2k+j-i) (M^(2k))[j,i]",
+    "stationary_weights": [
+      "(3+p)/5",
+      "(2-p)/5"
+    ],
+    "uniform_abs_eta_bound": "<1/10 for k>=4, 0<c<=1",
+    "weighted_loop_transition": "T=P_(2k)-4gamma(1-c^2) I"
+  }
+}
+```
+<!-- END 7dm AF HISTORY TRANSPORT RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:

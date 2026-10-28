@@ -17790,3 +17790,71 @@ nor a physical X_N rule is inserted by definition.
 Supporting result under the existing owner; two owned write paths only.
 No new task/node, acceptance, Ready, claim promotion or merge.
 `GR_closed=false`.
+
+### 28 October2026 checkpoint — retain a nontrivial native prefix in the owned canonical tower
+
+SAME PR334, `constitutive/native-programme-v1`; native realization and
+composition. Original calculation inputd53ef61c8c578c5a6cf16b88d17f8576ced0f64d;
+publication also consumes the canonical tower owner through48500384, including
+A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md and
+sources/d0_cyclic_tower_source_2026-10-28/PROOF_RU.md. Its V0=I positive
+source map and exact skew neutrality are reused directly; no additional
+refresh is needed in that already proved case. Consume the §7dl loop,
+operator apparatus descent, regular prefix bound and full-clock theorem.
+Primary §7dm987–996 contains the exact proof, checker and observed receipt.
+
+Exact named substitution: extend that incoming canonical theorem to
+an ACTUAL nontrivial regular finite prefix and its original earlier cut
+on the SAME AF carrier. An arbitrary foreign instrument is not assigned
+this representation merely by calling its return K. The exact map is
+provided for the emitted copied-port profile, with arbitrary protected
+matrices and independent controls for the two old AF types. Gates remain
+uniform copies on old r,c; arbitrary new old-record couplings are outside
+this profile and retain their own physical source/admission obligation.
+The original fixed AF cut is arbitrary and need not preserve centre labels;
+its unknown protected K factor remains unchanged at input.
+
+Actual native trace gives T_j=P_(2k)-4gamma(1-c²)I and Q_j=T_j/C_j.
+The common positive row is pi=((3+p)/5,(2-p)/5), with second eigenvalue
+eta_j=(gamma²-4gamma(1-c²))/C_j and |eta_j|<1/10 for k>=4. Full
+resolved matrices obey K_(j,a)=s_j(pi_a K_xi+rho_j Delta_a). Thus an
+independent new insertion has EXACT total derivative
+(s_m/C_j)(Ybar_j K_xi+rho_(j-1) sum_a Y_a Delta_a). The old cut is
+not silently treated as invariant: the second term is retained.
+
+Carrier/norm/source: the actual canonical regular AF tower, all old
+records/Spin/oldRIGHT, true C_j and lambda_loop,j, genuine nonnormal
+positive-past weight and the existing regular/raw maximum control norm.
+For S>0 let B_xi=sum||Delta_a K_xi^-1||. Every raw phase/frame row is
+skew locally but may have past source; its COMPLETE accumulated debt is
+<7.653 B_xi/Lambda. Uniform field/body directions have no history error.
+Type-dependent long body counts receive a paid finite identity-loop
+budget, adding at most2 B_xi/Lambda. Identity loops have74 specified
+calls, C=1 and lambda=0; they change absolute heat and do not inflate gain.
+Physical expansion costs outside the uniform profile remain unproved.
+
+The old prefix's own C_xi/Lambda and every full-Hodge/field/apparatus
+error remain. The existing cumulative source theorem can consume this
+extension to a nontrivial prefix on one growing input tower. The
+V0=I canonical case agrees exactly with the incoming owner's stronger
+skew-neutrality result; our native prefix countercontrol has a different
+executed start. All three incoming proof/checker/receipt files and their composition
+memo are preserved, with proof SHA256
+35275a75a7853893b5177250148c1d254f89811dc2da6775658934b5e8ac4078;
+their519 checks are not rerun or counted as new. A free
+uniform QUERY source retains its old main term and is not suppressed.
+No physical task/QUERY law or X_N completeness follows from this result.
+
+Smallest decisive check: a real two-SourceI prefix on all52 A2/Spin
+columns has K=diag(2p² I+p³ L_i,p I+p² L_i), S>1/2. A new raw phase
+that is locally skew has actual DJ/w=0.00378462083186945 after this
+prefix, with the exact signed history formula and contraction checked.
+Actual A8 label transitions and all18 matrix-unit insertions for a
+separate nonnormal structural past are verified.133 checks pass with
+identical normal/optimized JSON. No unchanged88-call replay, giant
+90-call/GR matrix, physical admission experiment or Lean is claimed.
+
+Checker SHA256 a556695f88435f5f72b4a05067a4026691932ce62442da1bb53380702ec32379;
+receipt SHA2563733ea78fa637aafda3e24727881221bcc00d7d297ea0d9f33ea96b2b45cf397.
+Supporting direct application under the existing owner. No new task/node,
+acceptance, Ready, claim promotion or merge. `GR_closed=false`.
