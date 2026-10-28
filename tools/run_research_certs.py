@@ -26,6 +26,7 @@ import time
 import uuid
 
 import native_checkpoint_inputs
+import historical_book_inputs
 import native_pairing_refinement_inputs
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -118,6 +119,12 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                     result["historical_input"] = historical.provenance
                     (logs / "historical-input.json").write_text(
                         json.dumps(historical.provenance, indent=2) + "\n", encoding="utf-8")
+                historical_books = historical_book_inputs.apply(
+                    sandbox, cert, isolation_parent=Path(temp))
+                if historical_books is not None:
+                    result["historical_book_inputs"] = historical_books.provenance
+                    (logs / "historical-book-inputs.json").write_text(
+                        json.dumps(historical_books.provenance, indent=2) + "\n", encoding="utf-8")
                 with (logs / "stdout.log").open("wb") as stdout, (logs / "stderr.log").open("wb") as stderr:
                     process = subprocess.Popen(
                         [sys.executable, str(source)], cwd=sandbox,
@@ -145,7 +152,9 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                     finally:
                         stop_process_group(process)
 
+                book_mutation = historical_books.restore() if historical_books is not None else False
                 overlay_mutation = historical.restore() if historical is not None else False
+                overlay_mutation = book_mutation or overlay_mutation
                 status = git(sandbox, "status", "--porcelain=v1", "--untracked-files=no")
                 head = git(sandbox, "rev-parse", "HEAD").decode().strip()
                 (logs / "tracked-status.txt").write_bytes(status)
@@ -155,7 +164,7 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                     git(sandbox, "diff", "--no-ext-diff", "--binary", "--cached", commit, "--"))
                 result["head_after"] = head
                 result["tracked_mutation"] = bool(status or head != commit or overlay_mutation)
-                if historical is not None:
+                if historical is not None or historical_books is not None:
                     result["historical_input_mutation"] = overlay_mutation
                 if result["tracked_mutation"]:
                     result["execution_status"] = result["status"]
@@ -218,6 +227,10 @@ def replay(repo: Path, commit: str, certs: list[str], workers: int, log_dir: Pat
                     report = pin["report_input"]
                     print("HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE " + report["target_path"] +
                           " sha256=" + report["historical_sha256"] + " source=" + report["source_head"], flush=True)
+            if result.get("historical_book_inputs"):
+                pin = result["historical_book_inputs"]
+                print(pin["mode"] + " books=" + str(len(pin["books"])) +
+                      "; maintained book prose is not certified by this replay", flush=True)
             for name, stream in (("stdout.log", sys.stdout), ("stderr.log", sys.stderr)):
                 path = Path(result["logs"]) / name
                 if path.exists():

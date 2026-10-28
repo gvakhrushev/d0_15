@@ -17,15 +17,33 @@ def warn(msg): warnings.append(msg)
 def read_csv(path, required):
     try:
         with path.open(encoding='utf-8', newline='') as f:
-            rows=list(csv.DictReader(f))
+            reader=csv.DictReader(f, strict=True)
+            fields=reader.fieldnames or []
+            missing=[x for x in required if x not in fields]
+            if missing:
+                err(f'{path.relative_to(ROOT)}: missing columns {missing}')
+                return []
+            if len(fields) != len(set(fields)):
+                err(f'{path.relative_to(ROOT)}: duplicate column names')
+                return []
+            rows=[]
+            for row in reader:
+                if None in row:
+                    err(f'{path.relative_to(ROOT)}:{reader.line_num}: extra CSV fields '
+                        f'(expected {len(fields)} columns; quote commas inside cells)')
+                    row.pop(None)
+                absent=[key for key,value in row.items() if value is None]
+                if absent:
+                    err(f'{path.relative_to(ROOT)}:{reader.line_num}: missing CSV fields {absent}')
+                    # Continue validation without turning a shape error into a traceback.
+                    row.update({key:'' for key in absent})
+                rows.append(row)
     except Exception as e:
         err(f'{path.relative_to(ROOT)}: CSV parse error: {e}')
         return []
     if not rows:
         err(f'{path.relative_to(ROOT)}: empty')
         return []
-    missing=[x for x in required if x not in rows[0]]
-    if missing: err(f'{path.relative_to(ROOT)}: missing columns {missing}')
     return rows
 
 claims_path=REG/'claims.csv'
