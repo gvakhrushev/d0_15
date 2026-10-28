@@ -995,6 +995,9 @@ CASES: list[dict[str, Any]] = [
             "binary AF common inventory G CX SourceI 107529216 1154 132 original regular modes 33448 65536",
             "Literal Golden CX SourceI synthesis canonical AF loop endpoint run-length encoded ordinary primitive words high-precision powers",
             "complete compiled endpoint orthogonality 512 columns binary RLE native words",
+            "binary AF loop actual finite source contrast exact source estimate full heat bound 33448 65536",
+            "existing literal native prefix strict nonzero source zero source canonical identity prefix",
+            "binary word receipt RLE files user archive ordinary optimized repeat results byte identical",
         ],
         "required_refs": [
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
@@ -1002,7 +1005,7 @@ CASES: list[dict[str, Any]] = [
         "required_sources": [
             {
                 "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
-                "scope_query_indexes": [0, 1, 2],
+                "scope_query_indexes": [0, 1, 2, 3, 4],
             },
             {
                 "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/check_binary_af.py",
@@ -1016,12 +1019,96 @@ CASES: list[dict[str, Any]] = [
                 "blob": "52a9dd556782263ca64b9210c2a9d32cb5df045e",
                 "scope_query_indexes": [0],
             },
+            {
+                "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/RUN_RECEIPT.json",
+                "commit": "56672c24a78d95c3a13a095223a18fc7ad84811a",
+                "blob": "e6673d32966dec54ed7712e0070d367495f41b16",
+                "scope_query_indexes": [5],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_BINARY_AF_LOOP_FINITE_SOURCE_2026_10_28.md",
+                "commit": "5a6d10031efc97dd7d02c43cf9568201dbc2ab85",
+                "blob": "dba92719a208aed5245329060b2aadc6c08c3dbe",
+                "scope_query_indexes": [3],
+                "scope_query_sections": {"3": ["5"]},
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "commit": "3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9",
+                "blob": "363dee64772769eee25888a184b5edbdf64e83e9",
+                "scope_query_indexes": [4],
+                "scope_query_sections": {"4": ["1000"]},
+            },
         ],
         "scope_review": (
             "The pinned #334 result emits RLE words from the declared binary G/CX/SourceI "
-            "grammar and checks endpoint and finite-price controls. It does not prove physical "
-            "binary-interface admission, physical input preparation, all raw-gate source "
-            "faults, or the full intermediate future-test domain; GR_closed=false."
+            "grammar and checks endpoint and finite-price controls. The later canonical-loop "
+            "source proves a scoped finite source contrast on the explicit binary extension; "
+            "the retained-marker result applies only when phase addresses vary independently "
+            "after a nontrivial prefix, with zero source at the canonical identity prefix. "
+            "Neither proves physical binary-interface admission, physical input preparation, "
+            "all raw-gate source faults, or the full intermediate future-test domain; "
+            "GR_closed=false."
+        ),
+    },
+    {
+        "id": "canonical-archive-law-and-variation-domain",
+        "queries": [
+            "canonical archive law compatibility variation domain full old effect relative commutant",
+            "GNS conditional expectation Phi_U old effects",
+            "identity-fibre Phi_U archive tangent",
+            "finite archive algebra domain original Fibonacci inclusions",
+            "canonical_AF_source true_GNS_leakage_norm physical_query_law_selected",
+            "checker_sha256 result_sha256 normal_optimized_repeat_byte_identical GR_closed",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0, 1, 2, 3, 4, 5],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md",
+                "commit": "dc3d8bad99eb55250dd0db24d96ed8a6992c2a16",
+                "blob": "7b835491a6fbc58d81af295d0c6d61a235395a61",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/PROOF_RU.md",
+                "commit": "f7f005c75b06914998d39d85586b6f2e1f3ae9a8",
+                "blob": "8cd1e3d5bd8f952be1ca157b3e8c1c2612323b8b",
+                "scope_query_indexes": [1, 2],
+                "scope_query_sections": {"1": ["2"], "2": ["5"]},
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/check_archive_domain.py",
+                "commit": "d5a32be3b7d7bab8006c5af588a0ea4e21dce6c3",
+                "blob": "5664d79a7a241b1373fb45e4065e78888301b361",
+                "scope_query_indexes": [3],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/result.json",
+                "commit": "edf02f60b12f288c19f10499e26e86e8015bf496",
+                "blob": "df924905849e10d38e37808ce2e5d5cb6e9738e8",
+                "scope_query_indexes": [4],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/RUN_RECEIPT.json",
+                "commit": "0f0278787612f34c0bad6ea5cbd93a9f164df756",
+                "blob": "1e571ca6a4362b6816735d6d48619f8a9ee58ff5",
+                "scope_query_indexes": [5],
+            },
+        ],
+        "scope_review": (
+            "On the original canonical AF/GNS input, full old-effect preservation is equivalent "
+            "to the relative-commutant condition. The first-law jet does not characterize its "
+            "tangent; a second-order archive jet and explicit source-error budget are retained. "
+            "The reversible SourceI control changes a coherent old effect, and even exact full "
+            "archive compatibility leaves a nonzero new-query source. The domain is not shown "
+            "physically selected; the 88-call heat word was consumed but not replayed, and "
+            "Lean/CI were not run. No physical query law or GR closure follows; GR_closed=false."
         ),
     },
 ]

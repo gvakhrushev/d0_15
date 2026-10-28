@@ -3609,7 +3609,7 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("matrix-past source term", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
 
-    def test_binary_af_source_and_result_are_pinned_to_latest_owner_head(self) -> None:
+    def test_binary_af_source_and_marker_application_keep_exact_owner_pins(self) -> None:
         case = next(
             item for item in cold_start.CASES
             if item["id"] == "canonical-binary-af-endpoint-and-finite-source"
@@ -3627,13 +3627,132 @@ class ProofArchitectureTests(unittest.TestCase):
             )
             if source.get("commit"):
                 self.assertEqual(status["source_origin"], "pinned_snapshot")
-                self.assertEqual(
-                    status["expected_commit"],
-                    "9f5b757f699d7310ea69c0c889037f614533b4f7",
-                )
+                self.assertEqual(status["expected_commit"], source["commit"])
                 self.assertEqual(status["expected_blob"], source["blob"])
         self.assertIn("physical binary-interface admission", case["scope_review"])
+        self.assertIn("canonical identity prefix", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
+
+    def test_canonical_archive_law_sources_keep_exact_owner_pins_and_scope(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "canonical-archive-law-and-variation-domain"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed canonical archive-law source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+        proof_status = cold_start._required_source_status(
+            query_pairs,
+            next(source for source in case["required_sources"] if source["path"].endswith("PROOF_RU.md")),
+        )
+        self.assertIn("2", proof_status["sections_found"])
+        self.assertIn("5", proof_status["sections_found"])
+        self.assertIn("second-order archive jet", case["scope_review"])
+        self.assertIn("not shown physically selected", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
+    def test_retained_marker_replay_report_binds_exact_result_and_fixtures(self) -> None:
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports/"
+            / "retained_marker_source_2026-10-28"
+        )
+        manifest = json.loads((report_dir / "replay_manifest.json").read_text(encoding="utf-8"))
+        result_bytes = (report_dir / "result.json").read_bytes()
+        result = json.loads(result_bytes)
+        self.assertEqual(manifest["schema"], "d0-retained-marker-source-replay-v1")
+        self.assertEqual(manifest["owner"]["source_commit"], "3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9")
+        self.assertEqual(manifest["checker"]["embedded_checker_sha256"], "791d57eb3ff5bd69dda81b5ae8982223e3c63378c681cf961daa2de38659d570")
+        self.assertEqual(manifest["replay"]["result_sha256"], "a09c2d00bd1159a8394454f6c90b4a5152852d3531870c64b1d06d70e1d9e8ad")
+        self.assertEqual(hashlib.sha256(result_bytes).hexdigest(), manifest["replay"]["result_sha256"])
+        self.assertTrue(manifest["replay"]["stdout_byte_identical_across_modes"])
+        self.assertEqual(manifest["replay"]["stderr_bytes_per_mode"], 0)
+        self.assertEqual(result["new_checks"], 66)
+        self.assertEqual(result["reused_fixture_checks"], 53)
+        self.assertEqual(result["lower_bound_times_lambda_old"], "0.0435838628448348380548560803886")
+        self.assertFalse(manifest["result"]["physical_admission_proved"])
+        self.assertFalse(manifest["result"]["GR_closed"])
+        self.assertEqual(len(manifest["fixtures"]), 2)
+        self.assertEqual(
+            {row["sha256"] for row in manifest["fixtures"]},
+            {
+                "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+                "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+            },
+        )
+
+    def test_archive_domain_replay_report_preserves_published_and_local_outputs(self) -> None:
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports/"
+            / "archive_domain_replay_2026-10-28"
+        )
+        manifest = json.loads((report_dir / "replay_manifest.json").read_text(encoding="utf-8"))
+        published_bytes = (report_dir / "published_result.json").read_bytes()
+        local_bytes = (report_dir / "local_replay.json").read_bytes()
+        published = json.loads(published_bytes)
+        local = json.loads(local_bytes)
+        self.assertEqual(manifest["schema"], "d0-canonical-archive-law-replay-v1")
+        self.assertEqual(manifest["owner"]["checked_head"], "0f0278787612f34c0bad6ea5cbd93a9f164df756")
+        self.assertEqual(manifest["owner"]["checker"]["sha256"], "e564aeed9011a784394976951814a6059fb6c71b7fa31b344f5170294b6b473e")
+        self.assertEqual(hashlib.sha256(published_bytes).hexdigest(), manifest["owner"]["result_sha256_in_receipt"])
+        self.assertEqual(hashlib.sha256(local_bytes).hexdigest(), manifest["replay"]["local_result_sha256"])
+        self.assertTrue(manifest["replay"]["stdout_byte_identical_across_modes"])
+        self.assertEqual(manifest["replay"]["stderr_bytes_per_mode"], 0)
+        self.assertFalse(manifest["replay"]["exact_published_stdout_match"])
+        self.assertEqual(local["status"], "PASS_ARCHIVE_ALGEBRA_DOMAIN_AND_SOURCE_CONTROLS")
+        self.assertEqual(local["checks"], 75)
+        self.assertEqual(local["environment"], published["environment"])
+        self.assertFalse(local["physical_task_selection_proved"])
+        self.assertFalse(local["GR_closed"])
+
+        floating_point_differences: list[float] = []
+        def compare(actual: object, expected: object, path: str = "") -> None:
+            if isinstance(actual, dict) and isinstance(expected, dict):
+                self.assertEqual(set(actual), set(expected), path)
+                for key in actual:
+                    compare(actual[key], expected[key], f"{path}/{key}")
+            elif isinstance(actual, list) and isinstance(expected, list):
+                self.assertEqual(len(actual), len(expected), path)
+                for index, (left, right) in enumerate(zip(actual, expected)):
+                    compare(left, right, f"{path}/{index}")
+            elif (
+                isinstance(actual, (int, float)) and not isinstance(actual, bool)
+                and isinstance(expected, (int, float)) and not isinstance(expected, bool)
+            ):
+                if actual != expected:
+                    difference = abs(float(actual) - float(expected))
+                    floating_point_differences.append(difference)
+                    self.assertLessEqual(
+                        difference,
+                        manifest["replay"]["maximum_absolute_float_difference"],
+                        path,
+                    )
+            else:
+                self.assertEqual(actual, expected, path)
+
+        compare(local, published)
+        self.assertEqual(len(floating_point_differences), manifest["replay"]["floating_point_fields_differ"])
+        self.assertAlmostEqual(
+            max(floating_point_differences),
+            manifest["replay"]["maximum_absolute_float_difference"],
+        )
+        self.assertFalse(manifest["result"]["physical_archive_effect_domain_derived"])
+        self.assertFalse(manifest["result"]["physical_query_law_selected"])
 
     def test_binary_af_rle_manifest_binds_all_emitted_word_files(self) -> None:
         word_dir = (

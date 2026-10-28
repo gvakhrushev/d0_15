@@ -13656,3 +13656,129 @@ does not establish admission of the physical binary interface, execution of
 the physical input preparation, all raw-gate source faults, or the full
 intermediate future-test domain. `Lean_or_CI_run=false`; no physical selection
 or GR closure follows. `GR_closed=false` remains unchanged.
+
+## #334 continuation at `3ba25a16` — compiled AF source and retained-prefix correction — 28 October 2026
+
+The live Draft #334 owner advanced from `9f5b757f` through three commits. The
+new finite-source synthesis was added at
+[`5a6d1003`](https://github.com/gvakhrushev/d0_15/commit/5a6d10031efc97dd7d02c43cf9568201dbc2ab85),
+and the latest retained-prefix correction is at
+[`3ba25a16`](https://github.com/gvakhrushev/d0_15/commit/3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9).
+These updates now sit beside the preserved archive, moving-cut source, §7dm
+prefix result, and binary-word replay above.
+
+### Finite source through the declared binary AF compiler
+
+The new source memo
+[`A4D_BINARY_AF_LOOP_FINITE_SOURCE_2026_10_28.md`](https://github.com/gvakhrushev/d0_15/blob/5a6d10031efc97dd7d02c43cf9568201dbc2ab85/02_REGISTRY/research/A4D_BINARY_AF_LOOP_FINITE_SOURCE_2026_10_28.md)
+is pinned at commit `5a6d10031efc97dd7d02c43cf9568201dbc2ab85`, blob
+`dba92719a208aed5245329060b2aadc6c08c3dbe`. It composes the actual canonical
+AF-loop endpoint with a finite compilation into the declared `G/CX/SourceI`
+word alphabet on the explicit 65,536-coordinate binary extension. The 33,448
+original regular coordinates and 32,088 extra coordinates remain in the full
+carrier; its additional modes are not erased. For the actual finite native
+pair, the normalized source contrast is `0.999842506721...` with the
+interval-certified error below `0.0002`. The common-clock heat contribution
+has the retained upper bound `10^(-N+8)` at `N=107530502`. This is a finite
+source-transmission control and strengthens the separately replayed RLE word
+result at `9f5b757f`; it does not identify the extended carrier or its input
+preparation with an admitted physical D0 process.
+
+The binary word receipt confirms RLE files in the user archive and ordinary, optimized, and repeat outputs matching; see [`RUN_RECEIPT.json`](https://github.com/gvakhrushev/d0_15/blob/56672c24a78d95c3a13a095223a18fc7ad84811a/02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/RUN_RECEIPT.json), pinned at commit `56672c24a78d95c3a13a095223a18fc7ad84811a`, blob `e6673d32966dec54ed7712e0070d367495f41b16`. The nine-package ZIP bytes remain a separate integrity boundary.
+
+The Literal Golden/CX/SourceI synthesis and its canonical AF-loop endpoint are checked with run-length-encoded primitive words and high-precision powers by the exact [binary AF checker](https://github.com/gvakhrushev/d0_15/blob/9f5b757f699d7310ea69c0c889037f614533b4f7/02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/check_binary_af.py) (commit `9f5b757f699d7310ea69c0c889037f614533b4f7`, blob `dafb228c94468ff83b73f62e0d5792eba832b948`).
+
+### Source of independently expanded phase addresses
+
+The **existing literal native prefix's strict nonzero source**, contrasted with the zero source at a canonical identity prefix, is recorded in the [latest #334 owner memo](https://github.com/gvakhrushev/d0_15/blob/3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md) (commit `3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9`, blob `363dee64772769eee25888a184b5edbdf64e83e9`). Its §7dn corrects the source application when one copied `SourceI` phase call is expanded into independent old-address calls. On that changed comparison graph, the exact prefix map is
+`delta_j K_m = (s_m/C_j) b_j K'_Q`; the accumulated directions pull back to
+the original finite-prefix phase covector with map norm `sum_j |b_j|/C_j`.
+The extensive map cannot be absorbed into a bounded fixed-prefix remainder.
+
+For the literal two-call `A2` nontrivial prefix of §7dm, the normalized dual
+source has magnitude at least `0.043583862844834838.../lambda_old` at every
+tested history length; the actual signed values are about `-0.0551228763`.
+With the same ancestral direction and a canonical identity prefix the source
+is exactly zero. Thus the result changes the application for independently
+controlled expanded addresses; it neither refutes the canonical-start result
+nor supplies a universal no-go. The existing §7dm uniform-copy conclusion
+still applies to its stated shared-control graph. The physical control map,
+admitted field/source space, and complete `Cost-Info` law remain open, and the
+binary compiler's raw lift/norm is a separate application.
+
+The embedded §7dn checker is pinned by SHA-256
+`791d57eb3ff5bd69dda81b5ae8982223e3c63378c681cf961daa2de38659d570`; its
+published receipt is `a09c2d00bd1159a8394454f6c90b4a5152852d3531870c64b1d06d70e1d9e8ad`.
+The isolated replay and exact output are recorded under
+[`retained_marker_source_2026-10-28`](sources/d0_proof_architecture_formalization_2026-10-24/reports/retained_marker_source_2026-10-28/).
+This is a supporting native-source application under the existing #334 owner:
+no new task, selector, claim promotion, independent acceptance, or GR closure.
+`GR_closed=false` remains unchanged.
+
+## #334 continuation at `0f027878` — canonical archive law and variation domain — 28 October 2026
+
+The live Draft #334 advanced again after the retained-marker result. Its new
+[canonical archive-law memo](https://github.com/gvakhrushev/d0_15/blob/dc3d8bad99eb55250dd0db24d96ed8a6992c2a16/02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md)
+is pinned at commit `dc3d8bad99eb55250dd0db24d96ed8a6992c2a16`, blob
+`7b835491a6fbc58d81af295d0c6d61a235395a61`; its Russian proof is
+[here](https://github.com/gvakhrushev/d0_15/blob/f7f005c75b06914998d39d85586b6f2e1f3ae9a8/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/PROOF_RU.md),
+commit `f7f005c75b06914998d39d85586b6f2e1f3ae9a8`, blob
+`8cd1e3d5bd8f952be1ca157b3e8c1c2612323b8b`. The input is the prior
+same-representative result at `3ba25a16`.
+
+For the original finite AF trace, canonical GNS input, inclusion `iota`,
+and conditional expectation `E`, let `Phi_U(a)=E(U* iota(a) U)`. The exact
+criterion is `Phi_U=id_A` iff `U` commutes with every old matrix effect. On
+the original copy decomposition this gives the row-uniform relative
+commutant. It is a necessary-and-sufficient operational criterion for that
+full old-effect law; Book01's admitted observable subfunctor has not been
+identified with all old matrix effects.
+
+The first-jet kernel is larger than the exact-law tangent: `E(X)=0` can give
+`Phi'_0=0` while `[X,iota(A)]` is nonzero; the positive second archive jet
+detects the defect. For nonuniform controls, the full ordinary Book-source
+discrepancy obeys
+`|(DJ-DJ_parallel)/Gamma| <= (2/Lambda) sum_j nu_j/(C_1...C_j)`;
+the inverse cumulative return is retained, not dropped. The literal reversible
+`SourceI` preserves all diagonal old records but changes a coherent old `X`
+expectation from 1 to 0, with exact defect `sqrt(2)`.
+
+Even the stronger full-old-effect law does not select the new query. The
+existing canonical AF loop commutes with every old matrix effect while its
+full return source remains `1.5548695143568875e-5` at input rank 104 and
+full regular carrier size 229,256. The consumed 88-call homogeneous-clock
+heat bound is `<1.155e-261`; that word was not replayed. This is a source
+transmission result, not a new full42 root or physical selection.
+
+The exact [75-checker](https://github.com/gvakhrushev/d0_15/blob/d5a32be3b7d7bab8006c5af588a0ea4e21dce6c3/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/check_archive_domain.py)
+has SHA-256 `e564aeed9011a784394976951814a6059fb6c71b7fa31b344f5170294b6b473e`,
+commit `d5a32be3b7d7bab8006c5af588a0ea4e21dce6c3`, blob
+`5664d79a7a241b1373fb45e4065e78888301b361`. The pinned [published
+result](https://github.com/gvakhrushev/d0_15/blob/edf02f60b12f288c19f10499e26e86e8015bf496/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/result.json)
+is commit `edf02f60b12f288c19f10499e26e86e8015bf496`, blob
+`df924905849e10d38e37808ce2e5d5cb6e9738e8`, SHA-256
+`961707bb2684b30a684cdaf39ea3f04e8bec91a6b7d59f5bd5f8538a63e71df1`;
+the [receipt](https://github.com/gvakhrushev/d0_15/blob/0f0278787612f34c0bad6ea5cbd93a9f164df756/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/RUN_RECEIPT.json)
+is pinned at current checked #334 head `0f0278787612f34c0bad6ea5cbd93a9f164df756`,
+blob `1e571ca6a4362b6816735d6d48619f8a9ee58ff5`.
+
+The local replay on Python 3.13.5, NumPy 2.3.5, SciPy 1.17.0 and SymPy
+1.14.0 passed all 75 checks; ordinary, optimized and repeat stdout matched
+byte-for-byte with empty stderr. Nine floating-point fields differ from the
+published JSON by at most `2.23e-16`; every nonnumeric field matches. Both
+exact outputs and their digests are preserved in
+[`archive_domain_replay_2026-10-28`](sources/d0_proof_architecture_formalization_2026-10-24/reports/archive_domain_replay_2026-10-28/).
+
+The result does not derive the physical old-effect domain or query law, replay
+the 88-call native word, replay every binary compiler row, or run Lean/CI.
+It is a scoped application under #334 and does not remove the physical
+selection or full source obligations. `GR_closed=false` remains unchanged.
+
+### Exact source locators
+
+- The canonical archive-law compatibility, variation domain and full-old-effect relative-commutant criterion are pinned in [the memo](https://github.com/gvakhrushev/d0_15/blob/dc3d8bad99eb55250dd0db24d96ed8a6992c2a16/02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md).
+- The trace-preserving conditional expectation on the original GNS input and old effects establishes `Phi_U=id_A` in section 2 of [the Russian proof](https://github.com/gvakhrushev/d0_15/blob/f7f005c75b06914998d39d85586b6f2e1f3ae9a8/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/PROOF_RU.md).
+- The first archive jet's tangent gap and its exact `identity-fibre` for `Phi_U` are proved in section 5 of [the Russian proof](https://github.com/gvakhrushev/d0_15/blob/f7f005c75b06914998d39d85586b6f2e1f3ae9a8/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/PROOF_RU.md).
+- The finite archive-algebra domain audit on the original Fibonacci inclusions is executed by [check_archive_domain.py](https://github.com/gvakhrushev/d0_15/blob/d5a32be3b7d7bab8006c5af588a0ea4e21dce6c3/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/check_archive_domain.py).
+- The [75-check JSON result](https://github.com/gvakhrushev/d0_15/blob/edf02f60b12f288c19f10499e26e86e8015bf496/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/result.json) records `canonical_AF_source`, `true_GNS_leakage_norm` and `physical_query_law_selected=false`.
+- The [archive-domain replay receipt](https://github.com/gvakhrushev/d0_15/blob/0f0278787612f34c0bad6ea5cbd93a9f164df756/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/RUN_RECEIPT.json) sets `checker_sha256`, `result_sha256`, `checks=75`, `normal_optimized_repeat_byte_identical=true` and `GR_closed=false`.

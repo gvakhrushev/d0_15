@@ -1,0 +1,114 @@
+{
+  "status": "PASS_RETAINED_MARKER_SOURCE",
+  "new_checks": 66,
+  "reused_fixture_checks": 53,
+  "input_checker_sha256": "a556695f88435f5f72b4a05067a4026691932ce62442da1bb53380702ec32379",
+  "source_identity": "delta_j K_m=(s_m/C_j) b_j i* Q L_i U_xi i; b_j=gamma_j(2c_j^2-1)",
+  "expanded_native_fixture": {
+    "old_A2": [
+      3,
+      2
+    ],
+    "new_A10": [
+      144,
+      89
+    ],
+    "all_left_Spin_columns": 932,
+    "new_full_regular_dimension_with_Spin_oldRIGHT": 229256,
+    "serial_replacement_calls": 5,
+    "selected_calls_first_block": 2,
+    "oldRIGHT_identity_factor": 2,
+    "original_unknown_rank_with_oldRIGHT": 16
+  },
+  "true_marker_ranks": [
+    {
+      "loop": 1,
+      "current_A": [
+        3,
+        2
+      ],
+      "selected_left_rows": [
+        0,
+        2
+      ]
+    },
+    {
+      "loop": 2,
+      "current_A": [
+        144,
+        89
+      ],
+      "selected_left_rows": [
+        42,
+        26
+      ]
+    },
+    {
+      "loop": 3,
+      "current_A": [
+        6765,
+        4181
+      ],
+      "selected_left_rows": [
+        1974,
+        1220
+      ]
+    },
+    {
+      "loop": 4,
+      "current_A": [
+        317811,
+        196418
+      ],
+      "selected_left_rows": [
+        92736,
+        57314
+      ]
+    },
+    {
+      "loop": 5,
+      "current_A": [
+        14930352,
+        9227465
+      ],
+      "selected_left_rows": [
+        4356618,
+        2692538
+      ]
+    }
+  ],
+  "native_source": [
+    {
+      "loops": 1,
+      "expanded_profile_stages": 93,
+      "varied_phase_stages": 2,
+      "lambda_old_times_DJ_over_Gamma": "-0.05512287630610513999411794065",
+      "actual_w_with_oldRIGHT": "0.000007992375037665505317532134249"
+    },
+    {
+      "loops": 2,
+      "expanded_profile_stages": 412,
+      "varied_phase_stages": 70,
+      "lambda_old_times_DJ_over_Gamma": "-0.05512287624431495926296043826",
+      "actual_w_with_oldRIGHT": "0.000007173350257453284828581272907"
+    },
+    {
+      "loops": 4,
+      "expanded_profile_stages": 525759,
+      "varied_phase_stages": 153314,
+      "lambda_old_times_DJ_over_Gamma": "-0.05512287613908170409719281865",
+      "actual_w_with_oldRIGHT": "0.000005778490380353241606405404601"
+    },
+    {
+      "loops": 8,
+      "expanded_profile_stages": 2559206660224,
+      "varied_phase_stages": 746766439174,
+      "lambda_old_times_DJ_over_Gamma": "-0.05512287598602411988721014819",
+      "actual_w_with_oldRIGHT": "0.000003749722158775481085674147253"
+    }
+  ],
+  "lower_bound_times_lambda_old": "0.0435838628448348380548560803886",
+  "first_full_heat_bound_times_lambda_old": "9.975185433158221275704477096498258813092e-271",
+  "finite_price_contrast_relative_error": "3.3333333781312158959e-18",
+  "scope": "Exact addressed-profile expansion and inherited-marker source; original regular right multiplicities retained analytically. Not full physical AF admission, hardware execution, new field calibration, giant93-call forward product, all-source GR closure, or claim promotion."
+}
