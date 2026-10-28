@@ -4,14 +4,16 @@ Source owner: existing research [PR #334](https://github.com/gvakhrushev/d0_15/p
 with its scalar Lean adapter pinned to
 [`c296829fc2e74d673a2a679baa1e10a49524b290`](https://github.com/gvakhrushev/d0_15/tree/c296829fc2e74d673a2a679baa1e10a49524b290).
 The latest owner head reviewed in this report is
-[`8daed32d560df18837bcc69458a8fa538a9cf135`](https://github.com/gvakhrushev/d0_15/tree/8daed32d560df18837bcc69458a8fa538a9cf135).
+[`1f4b85f14292dfac07f61db27ff47a961e525d03`](https://github.com/gvakhrushev/d0_15/tree/1f4b85f14292dfac07f61db27ff47a961e525d03),
+which includes the earlier pinned checkpoints and the continuations after
+`15742b846f380b75e7d8f869faf7bc51623ed2a6` documented below.
 This is an intake into the existing proof-architecture execution #402, not a
 new scientific owner, claim status, physical selector, or merge of #334.
 The full archive was published in upstream commit
 `063f643d7a760e9203c3f74cba870b256b36fcc3` and the moving-cut continuation
-in `eebcb5e467742df3e9cf7fa9702042d7294aa742`. Subsequent checkpoints
+in `eebcb5e467742df3e9cf7fa9702042d7294aa742`. Earlier checkpoints
 `c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`,
-`c80d3dd2a917bbb2db2e2b1ab61d5216877c05e6`, and the current reviewed
+`c80d3dd2a917bbb2db2e2b1ab61d5216877c05e6`,
 `172876cdf38bfce6f87fdd4a059d524b60c10eb9`,
 `5fe5203da2439d325dc9ef70f52c1111822fc22b`, and
 `22e729996b70a699710a2d1120a0caa7a08decf8` are separately pinned below;
@@ -884,3 +886,103 @@ stationarity, complete Book admission, new independent apparatus rows in each
 block, or full GR. The #334 continuation adds no Lean theorem; #402's existing
 Lean build receipt remains tied to unchanged Lean source. Both intakes remain
 supporting evidence with `GR_closed=false`.
+
+## Current #334 continuation after `15742b`: apparatus descent and exact task fibre — 28 October 2026
+
+The existing Draft #334 has advanced through nine commits after
+`15742b846f380b75e7d8f869faf7bc51623ed2a6`; the current remote head inspected
+here is [`1f4b85f14292dfac07f61db27ff47a961e525d03`](https://github.com/gvakhrushev/d0_15/commit/1f4b85f14292dfac07f61db27ff47a961e525d03).
+It remains open and Draft, with no status-check rows reported at that head.
+The source additions are pinned in the same owner branch: the [operator
+apparatus descent](https://github.com/gvakhrushev/d0_15/blob/1f4b85f14292dfac07f61db27ff47a961e525d03/02_REGISTRY/research/A4D_REGULAR_APPARATUS_SOURCE_DESCENT_2026_10_28.md),
+the [all-input task-faithful return-source proof](https://github.com/gvakhrushev/d0_15/blob/1f4b85f14292dfac07f61db27ff47a961e525d03/02_REGISTRY/research/sources/d0_task_faithful_source_2026-10-28/PROOF_RU.md),
+and the [two-field analytic handoff](https://github.com/gvakhrushev/d0_15/blob/1f4b85f14292dfac07f61db27ff47a961e525d03/02_REGISTRY/research/sources/d0_task_faithful_source_2026-10-28/TWO_FIELD_HANDOFF_RU.md).
+The updated owner task brief and same-representative source are also retained
+at that exact commit.
+
+### What the new source composition establishes
+
+The apparatus result keeps the operator-valued first source of the actual
+decoder. With its actual moment jets it writes
+`V_h(v)=sum_a (partial_a Phi_h) M_a(v)` and
+`A_(h,m,n)(v)=DI_(tau,h)[V_h(v)]+R_(h,m,n)(v)`, with the stated operator-norm
+remainder tending to zero under the declared regular decoder chart. It retains
+the actual source/readers/routes/COPY rows and derives the positive `Pi_out`
+weight from the existing nonnormal retained past. Its cumulative estimate uses
+the mixed regular/raw norm already required by the parent proof; it does not
+prove an unweighted raw216 refinement or absorb fresh independent rows in
+every block. The six-stage AF map from `15742b84` is consumed on its stated
+logical carrier, not promoted to physical port admission.
+
+The subsequent task-source theorem distinguishes changing a reporter from
+changing the task. For the full effect `E_T=i* T* Pi T i` on every input state,
+holding a predeclared `E_0` fixed yields the exact return compression
+`C=R*(I-2E_0)R` and the same return price. Vertical realization changes inside
+that exact effect fibre therefore have zero semantic return derivative; the
+independent preparation and field sources remain. The positive QUERY row from
+the earlier `7dh` result is retained when the reporter changes the full effect:
+it is not a same-task tangent. The new relative finite-error theorem bounds
+the complete return-price difference for noncommuting block errors without a
+lower bound on the smallest eigenvalue of a nonzero retained past. This does
+not prove that physical D0 fixes `E_0`, that all native comparisons lie in this
+fibre, or that the physical comparison domain is complete.
+
+The two-field handoff applies the unchanged nonlinear source on its regular
+positive branch to two independent scalar fields, retaining the complete
+16+24+2 variation and the local reverse construction. It extends the source
+family beyond the aligned dust sector. The proof remains local: it does not
+establish a global atlas, regularity through caustics or vanishing currents, or
+a general two-field Cauchy theorem. The source descent still needs actual
+physical task admission, field/clock/source maps, and compatible refinement.
+The separately referenced chat ZIP is not part of this pinned Git head; this
+integration consumes the self-contained handoff below and does not claim a
+fresh ZIP byte check or replay of its earlier branch controls.
+
+### Replay, exact pins, and Lean boundary
+
+The two new source checkers were extracted from the pinned head and replayed
+without edits. `check_task_source.py` passes 97 controls in Python 3.9.6,
+NumPy 2.0.2, SciPy 1.13.1, SymPy 1.14.0 and mpmath 1.3.0; normal and `-O`
+outputs are byte-identical with empty stderr. Against the owner JSON, the only
+numeric difference is `all_input_fibre.minimum_full_query_change`:
+`0.20727766539120346` locally versus `0.20727766539120349` in the receipt.
+`check_descent.py` passes 79 controls in Python 3.12.14, NumPy 2.3.5,
+SymPy 1.14.0 and mpmath 1.3.0; normal and `-O` outputs are byte-identical
+with empty stderr. Relative to the owner receipt, only the Python label and
+one low-order value differ: `Golden_TAG_controls[0].full_bank_conditional_error`
+is `2.220446049250313e-16` locally and `1.1102230246251565e-16` in the
+Python 3.13.5 owner receipt. These are finite control replays, not the large
+native execution or physical admission.
+
+The moving-projector Book03 formula is already covered in #402 by
+`D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price`;
+the varying-parameter theorem
+`D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_moving_projector_book03_price`
+retains `d beta` and `d z`. No new Lean declaration was added by this #334
+continuation. The new all-input effect-fibre, operator apparatus descent and
+two-field recovery remain research proofs without Lean formal-support rows or
+independent semantic acceptance. The current `BornFiniteEffects` support is
+not a Lean formalization of complex-matrix effect tomography. The exact
+finite-dimensional tomography/pullback lemma is a candidate formalization
+slice; it must not be recorded as completed support until the theorem is
+compiled and tied to the actual application. The source additions make no
+claim, assembly, or lifecycle changes, and `GR_closed=false` remains.
+
+Exact source pins at the current owner head:
+
+| Artifact | Git blob | SHA-256 |
+|---|---|---|
+| `00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md` | `4f23f09a7461f8f3b6849a87f00640f43aed20bb` | `b312b7e543cf7e96a81360a6a93e67bb9ada20387488397f3f43376ddcc3a0c6` |
+| `A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md` | `825ded385c2e82a674d42e042b33c6d854d9debc` | `69cef9841747a3fafed12df50c13bd00c845e4f36a15c43bf12ffbf259877343` |
+| `A4D_REGULAR_APPARATUS_SOURCE_DESCENT_2026_10_28.md` | `aaa4d5a9ee56bd8c27987be65ccc23f72647d68b` | `9d34a67e0c1e00c4dd15629f314a7980dbcdc22f843556c03bffe523d396bfd7` |
+| `d0_apparatus_cotangent_descent/PROOF_RU.md` | `8325834fc09fdd9cd8f278d3bcd6fbd97833253d` | `1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254` |
+| `d0_apparatus_cotangent_descent/check_descent.py` | `27c80194318260823758565976863655197d4a88` | `28d89f2489e4c369603ede869416867abae20d31e772ffc8f428661ddbea6d90` |
+| `d0_apparatus_cotangent_descent/result.json` | `b96ebe0ebd830cdf94fcacde2be986a69fa9c951` | `ca8f80daf25fe9564fbdce7ec6503ba26f9d16dbc41959aa735ead34426efe14` |
+| `d0_task_faithful_source/PROOF_RU.md` | `c99e90a8c8e96bae70e700fa88d1c2d824a1831b` | `9f2354817860f9024a597dba4bd14c0580cc021de5c473925740b46b0e8f96e5` |
+| `d0_task_faithful_source/TWO_FIELD_HANDOFF_RU.md` | `f4020fa6535954a3fda9e9de2fdbbc4dd6279232` | `b2ce50d7fb67464b5eff2e9ae51dbd0f36825c75081a5c873dba8ef54e666fb1` |
+| `d0_task_faithful_source/check_task_source.py` | `0947a2b924307e567d4426755a2ec0d51b5f8396` | `ac1b5af37e848782060b8f686852729d401d7b48d7c1f7bff459075d59f0f180` |
+| `d0_task_faithful_source/result.json` | `4b420d691a8f4bcd32513bd431fa7652ee6c8d52` | `811f14472baf715f4d0094914ef6af5f9fd049fa48ea401633109d2300faf2eb` |
+
+The updated source and task brief remain under the existing #334 owner. These
+results are integrated as scoped inputs to #402, not as independent acceptance
+of the owner or a replacement for the open physical application.

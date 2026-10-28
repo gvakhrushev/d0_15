@@ -1,6 +1,6 @@
 # Root bootstrap source: retain the moving cut, remove only passive re-encoding
 
-28 October 2026, existing research parent PR #334. This continuation follows the [preserved complete chat archive](D0_CHAT_RESULTS_2026_10_27_INDEX.md) and consumes Book03 section 03.25 directly, rather than another programmed polynomial report.
+28 October 2026, existing research parent PR #334. This continuation follows the [preserved complete chat archive index at its pinned source commit](https://github.com/gvakhrushev/d0_15/blob/063f643d7a760e9203c3f74cba870b256b36fcc3/02_REGISTRY/research/D0_CHAT_RESULTS_2026_10_27_INDEX.md) and the [current integration map](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md), and consumes Book03 section 03.25 directly rather than another programmed polynomial report.
 
 [Proof in Russian](sources/d0_root_moving_cut_2026-10-28/PROOF_RU.md), [executed checker](sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py), [actual result](sources/d0_root_moving_cut_2026-10-28/result.json), [file hashes](sources/d0_root_moving_cut_2026-10-28/MANIFEST.json).
 

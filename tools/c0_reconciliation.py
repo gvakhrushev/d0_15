@@ -43,6 +43,7 @@ class PilotPins:
     """Immutable pilot selectors, not an additional scientific status registry."""
 
     primary_blob: str
+    primary_section_sha256: str
     source_commit: str
     source_path: str
     source_blob: str
@@ -60,6 +61,9 @@ class PilotPins:
 
 DEFAULT_PINS = PilotPins(
     primary_blob="d7d9aa2479e2d97c1ebf047bab39a932a14527ef",
+    # SHA-256 of the exact selected Markdown section in primary_blob, with only
+    # terminal CR/LF separators normalized so adjacent section spacing is not binding.
+    primary_section_sha256="3383876849b02f36db8bf71f174cb50d6800ff345c9b30573aebe478acf682cd",
     source_commit="75527846bf3603a1c51acf445f8354e3254341be",
     source_path="02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md",
     source_blob="c216f19daebc9a6b2a9e732d277350dd2d69f88c",
@@ -315,6 +319,11 @@ def primary_section(text: str) -> str:
     return one(matches, "primary section")
 
 
+def primary_section_sha256(section: str) -> str:
+    """Hash the exact section text while excluding terminal Markdown separators."""
+    return hashlib.sha256(section.rstrip("\r\n").encode("utf-8")).hexdigest()
+
+
 def reconcile(repo: Path, ref: str, *, pins: PilotPins = DEFAULT_PINS) -> dict:
     """Return independent evidence dimensions; any missing dimension stays unresolved."""
     result = {
@@ -370,10 +379,20 @@ def reconcile(repo: Path, ref: str, *, pins: PilotPins = DEFAULT_PINS) -> dict:
     def read_primary():
         raw = git.data(snapshot, PRIMARY)
         primary_blob = git.blob(snapshot, PRIMARY)
-        if primary_blob != pins.primary_blob:
-            raise MissingEvidence(f"primary blob differs from pinned pilot: {primary_blob}")
-        result["authority"]["primary"] = {"path": PRIMARY, "blob": primary_blob}
-        return primary_section(raw.decode("utf-8"))
+        section = primary_section(raw.decode("utf-8"))
+        section_sha256 = primary_section_sha256(section)
+        result["authority"]["primary"] = {
+            "path": PRIMARY,
+            "blob": primary_blob,
+            "historical_document_blob": pins.primary_blob,
+            "whole_file_matches_historical_blob": primary_blob == pins.primary_blob,
+            "section_sha256": section_sha256,
+            "pinned_section_sha256": pins.primary_section_sha256,
+        }
+        if section_sha256 != pins.primary_section_sha256:
+            raise MissingEvidence(
+                f"primary section digest differs from pinned pilot: {section_sha256}")
+        return section
 
     step("primary_section", read_primary)
 

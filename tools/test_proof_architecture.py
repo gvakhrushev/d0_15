@@ -5203,6 +5203,12 @@ class ProofArchitectureTests(unittest.TestCase):
         integration_path = "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md"
         self.assertIn(source_path, by_source)
         self.assertIn(integration_path, by_source)
+        integration_text = (proof.ROOT / integration_path).read_text(encoding="utf-8")
+        self.assertIn("1f4b85f14292dfac07f61db27ff47a961e525d03", integration_text)
+        self.assertIn("97 controls", integration_text)
+        self.assertIn("79 controls", integration_text)
+        self.assertIn("same-task tangent", integration_text)
+        self.assertIn("not a Lean formalization of complex-matrix effect tomography", integration_text)
 
         links = proof._declared_source_links(data, source_path)
         self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")

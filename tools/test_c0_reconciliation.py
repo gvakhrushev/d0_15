@@ -60,8 +60,10 @@ class RepositoryFixture:
                                     "#5-one-step-estimates-and-composed-fixed-torus-failure"]}]})
         self.write_primary(self.source_blob)
         self.snapshot = self.commit("pilot metadata")
+        primary_text = (self.root / c0.PRIMARY).read_text(encoding="utf-8")
         self.pins = c0.PilotPins(
             primary_blob=self.git("rev-parse", f"{self.snapshot}:{c0.PRIMARY}"),
+            primary_section_sha256=c0.primary_section_sha256(c0.primary_section(primary_text)),
             source_commit=self.source_commit, source_path=self.source_path,
             source_blob=self.source_blob, source_owner="310",
             source_heading="5. One-step estimates and composed fixed-torus failure",
@@ -121,7 +123,11 @@ class ReconciliationFixtureTests(unittest.TestCase):
         g = c0.GitSnapshot(self.repo.root, ref)
         if "consumer_graph_blob" not in kwargs:
             kwargs["consumer_graph_blob"] = g.blob(ref, c0.GRAPH)
-        return replace(self.repo.pins, primary_blob=g.blob(ref, c0.PRIMARY), **kwargs)
+        section = c0.primary_section(g.data(ref, c0.PRIMARY).decode("utf-8"))
+        return replace(self.repo.pins,
+                       primary_blob=g.blob(ref, c0.PRIMARY),
+                       primary_section_sha256=c0.primary_section_sha256(section),
+                       **kwargs)
 
     def inventory_pins(self, ref, **kwargs):
         g = c0.GitSnapshot(self.repo.root, ref)
@@ -434,6 +440,24 @@ class ReconciliationFixtureTests(unittest.TestCase):
         self.assertEqual(view["pilot"]["state"], "unresolved")
         self.assertIn("consumer graph blob differs", view["checks"]["consumer_and_source_owner"]["reason"])
 
+    def test_unrelated_document_extension_keeps_the_exact_pilot_section_binding(self):
+        primary = self.repo.root / c0.PRIMARY
+        primary.write_text(primary.read_text(encoding="utf-8") +
+                           "\n### Unrelated later result\n\nNew source material.\n",
+                           encoding="utf-8")
+        ref = self.repo.commit("unrelated primary extension")
+        view = c0.reconcile(self.repo.root, ref, pins=self.repo.pins)
+        authority = view["authority"]["primary"]
+        self.assertEqual(view["checks"]["primary_section"]["state"], "verified_raw_link")
+        self.assertNotEqual(authority["blob"], authority["historical_document_blob"])
+        self.assertFalse(authority["whole_file_matches_historical_blob"])
+        self.assertEqual(authority["section_sha256"], self.repo.pins.primary_section_sha256)
+        self.assertEqual(view["pilot"]["state"],
+                         "reported_metadata_links_consistent_not_c0_acceptance")
+        self.assertEqual(view["pilot"]["independent_review"], "not_authenticated")
+        self.assertFalse(view["scope"]["coverage_reported"])
+        self.assertEqual(view["scope"]["c0_acceptance_assessment"], "not_evaluated")
+
     def test_git_replacement_cannot_override_source_blob(self):
         self.repo.write("alternative.txt", "different source with no scientific owner\n")
         other = self.repo.git("hash-object", "-w", "alternative.txt")
@@ -447,8 +471,8 @@ class ReconciliationFixtureTests(unittest.TestCase):
         text = p.read_text(encoding="utf-8").replace("Independent mathematical review", "No Independent mathematical review")
         self.repo.write(c0.PRIMARY, text)
         ref = self.repo.commit("negative review text")
-        # Actual pinned primary rejects the changed text.
-        self.check_unresolved(ref, "primary_section", "primary blob differs", pins=self.repo.pins)
+        # The exact selected section pin rejects changed content.
+        self.check_unresolved(ref, "primary_section", "primary section digest differs", pins=self.repo.pins)
         # Even an explicitly repinned fixture reports the literal text only.
         view = c0.reconcile(self.repo.root, ref, pins=self.pins_for(ref))
         self.assertEqual(view["pilot"]["independent_review"], "not_authenticated")

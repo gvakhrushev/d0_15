@@ -13023,3 +13023,69 @@ tests), and repository validation, generated-view checks, formalization-debt
 baseline, and work validation pass. The Lean source tree did not change in this
 diagnostic increment; the recorded `D0.All` build evidence is from PR #402
 head `5f3e6ac`.
+
+## New #334 source intake after `15742b` — 28 October 2026
+
+The current existing-owner head inspected for this integration is
+`1f4b85f14292dfac07f61db27ff47a961e525d03`. Its post-`15742b` source range
+adds an operator-valued apparatus descent, an exact all-input reporter-effect
+fibre with a relative finite-error bound, and a two-scalar local nonlinear
+Einstein source/solution handoff. Their exact source paths, Git blobs,
+SHA-256 values, replay environments, and limitations are pinned in the
+[integration map](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md).
+
+The apparatus proof retains the full actual first source as
+`DI_(tau,h)[V_h(v)] + R_h(v)` and places only the stated operator remainder
+under the regular decoder bound. It consumes the earlier AF isometry on the
+same logical middle-word carrier. The task-fibre theorem shows that an exact
+fixed full reporter effect has zero vertical return-price source, while
+independent preparation/field rows and sources that change that effect remain.
+It does not prove that physical D0 selects the fixed effect or that all
+physical comparisons belong to that fibre. The two-scalar result retains the
+original full 16+24+2 source on its local regular positive branch; it does not
+derive a global atlas, a general two-field Cauchy theorem, or physical source
+admission.
+
+The new owner checkers were replayed locally: 97 task-source controls and 79
+apparatus-descent controls pass in ordinary and optimized modes. Each pair of
+local outputs is byte-identical. The owner/local receipts retain the recorded
+minor environment-dependent numeric differences listed in the integration
+map. They are bounded source checks, not giant native-programme execution.
+
+The Book03 moving-cut formula in this same source line already has current
+Lean support in
+`D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price`
+and its variable-parameter companion. This new #334 range changed no Lean
+source. The all-input effect-tomography/pullback statement, operator apparatus
+descent, and two-scalar recovery have no Lean declarations or
+`formal_support` rows yet. In particular, the existing rational
+`FiniteEffectFrame` is not the complex-matrix effect theorem. These results
+are recorded as source-level inputs and a named formalization seam, not as
+completed claim-to-Lean applications, independent C0 acceptance, or physical
+closure. `GR_closed=false`.
+
+## Exact C0 primary-section pin — current C0 pilot status
+
+`tools/c0_reconciliation.py` now pins the exact selected primary section by
+SHA-256 `3383876849b02f36db8bf71f174cb50d6800ff345c9b30573aebe478acf682cd`,
+in addition to recording the current and historical whole-file blobs. A prose
+edit elsewhere in this long report no longer changes the selected section's
+byte identity. The historical source-to-declaration pilot remains unresolved
+because the selected compiled declaration inventory is stale for the current
+Lean input; no refreshed declaration inventory or semantic acceptance is
+implied. The focused C0 reconciliation suite passes 47 tests. The source pin
+and output remain diagnostic only; C0 classification, acceptance, and coverage
+are still open.
+
+## Validation after the 28 October source integration
+
+On this #402 worktree, `tools.test_proof_architecture` passes 95 tests
+(`162.868s`) and `tools.test_c0_reconciliation` passes 47 tests (`35.068s`).
+`tools/validate_repo.py` passes with 889 claims, 31 assumptions, 58 aliases,
+238 formal-support rows, and 961 Lean-closure rows. Generated Lean views are
+current (`stale=0`); the formalization-debt audit is unchanged at 5 findings
+against a baseline of 5; work validation passes; and `git diff --check` is
+clean. The source-only integration does not change Lean files, so the existing
+narrow Book03 moving-projector build receipt remains tied to the unchanged
+Lean source digest. The new research proofs are not represented as Lean build
+results.
