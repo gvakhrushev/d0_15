@@ -86144,6 +86144,534 @@ high endpoint receipt:
 }
 ```
 
+## 7df. Initial data generate the nonlinear dust sector, with all four constraints retained
+
+28 October 2026. SAME #334 / constitutive/native-programme-v1; native
+realization / final composition. Input1e6420f3. Consume the general
+reverse mass-coordinate owner at ebf92914/de02000e, the unchanged
+nonlinear direct-click source, and the retained-past application
+7dd910--918. Their explicit input was a regular Einstein-dust solution.
+The present substitution constructs that continuum solution from
+constraint-compatible initial data and proves that its aligned matter
+and initial constraints persist. This supplies the local Cauchy
+application of the SAME nonlinear source; it is not a new action,
+Hamiltonian, clock primitive, or physical-admission rule.
+
+The earlier7aw regularized solution protocol remains available: exact
+stationary native words at EVERY finite level are not required merely
+to obtain its declared asymptotic field solution. The actual admission
+and accuracy of the tested comparisons still matter. This section does
+not infer either from continuum existence. GR_closed=false.
+
+### 927. Alignment is an invariant initial-data sector, with both material equations retained
+
+Use exactly the existing fixed-measure functional
+
+    I_tau=integral r(x,y) d^4X,
+    x=tau E R(e,omega)/2, y=tau sum_A g^(mu nu) d_mu psi_A d_nu psi_A,
+    A=0,15, E=det e>0, CurvatureConvention=EPS_PLUS.
+
+The original r, fixed tau, positive branch x0,y0 and
+kappa=-r_y/r_x=-x0/y0 are unchanged. In particular q0=y0/tau>0.
+All coframe and connection variations are taken before imposing a
+coordinate gauge or solving torsion. On the regular branch r_y!=0,
+the TWO independent material equations have the same principal operator:
+
+    M_A=partial_mu[r_y(x,y) g^(mu nu) partial_nu psi_A]=0.
+    chi=n_perp dot (psi-c),
+    partial_mu[r_y g^(mu nu) partial_nu chi]=0.          (927)
+
+Here n is a fixed unit two-vector, n_perp is its orthogonal unit vector,
+and c is fixed initial material offset data. If chi and its normal
+derivative vanish on the initial spacelike surface, chi remains zero
+on its local domain of dependence. Indeed, along any smooth solution
+the coefficient r_y g^(mu nu) is a smooth Lorentzian wave coefficient
+with r_y bounded away from zero. The ordinary local energy estimate for
+this scalar divergence equation gives E_chi(t)<=C integral_0^t E_chi(s)ds
+on a compact causal subdomain with zero initial data, hence E_chi=0.
+The spacetime volume may equivalently be restored as the coefficient
+r_y/E in the covariant divergence; it is not dropped from that rewrite.
+
+Thus aligned initial data stay aligned in any regular solution of the
+FULL nonlinear equations. This is not a variation restricted to one
+scalar, and it does not assert stability under initial perturbations
+that introduce a nonzero transverse scalar. The full trace/Ward theorem
+then forces x=x0,y=y0 on the connected regular branch. Its exact full
+source identity and independent torsion equation give the already owned
+Einstein-dust equations, with u=dphi/sqrt(q0) and rho=2q0/E.
+
+### 928. State the actual Cauchy data and the four initial equations
+
+Take smooth initial data (gamma_ij,B_ij,rho_0) on a three-dimensional
+patch, with gamma positive definite, B symmetric and rho_0>0. The
+dust velocity is the future unit normal to this initial surface. This
+is a dust-orthogonal Cauchy surface; no claim about arbitrary tilted
+coordinate data or a prescribed final boundary is being added.
+The regularity, positivity and decoder-chart margins are strict on a
+compact subpatch. Fix the existing branch q0,kappa and initial material
+data psi_A=c_A, n_initial(psi_A)=n_A sqrt(q0).
+
+Our convention is B_ij=(1/2)partial_t gamma_ij in dust proper time,
+theta=tr_gamma B. The necessary initial constraints are
+
+    R^(3)(gamma)+theta^2-tr(B^2)=2 kappa rho_0,
+    D_j B^j_i-D_i theta=0, i=1,2,3.                    (928)
+
+These are exactly G_00=kappa rho_0 and G_0i=0 on that surface.
+They are retained initial rows of the full coframe equations. Fixing
+lapse/shift in the action before varying would not derive them.
+The input is arbitrary WITHIN this constraint set and the stated
+regular chart; it is not arbitrary unconstrained tensor data. Its
+nonemptiness already follows from the owned dust examples. Neither an
+LTB ansatz nor spatial homogeneity occurs in the theorem below.
+These are constraints on SOLUTIONS, never an admission predicate for
+native words or a restriction imposed on all their field variations.
+One initial datum is fixed in each Cauchy problem; varying that datum
+between problems is not by itself a same-complete-initial D0 comparison.
+
+### 929. Apply a standard existence theorem only after the source has been derived
+
+The external mathematical input is Choquet-Bruhat and Friedrich,
+[*Motion of Isolated Bodies*, Theorem2.1 and Corollary2.2](https://arxiv.org/pdf/gr-qc/0605096),
+pp.5--6 of the PDF; journal DOI
+[10.1088/0264-9381/23/20/015](https://doi.org/10.1088/0264-9381/23/20/015).
+It supplies local causal Einstein-dust evolution and geometric uniqueness
+from smooth constraint-compatible data. Its wave-coordinate formulation
+uses a Leray hyperbolic reduction; zero-pressure matter is not treated as
+a positive-sound-speed Euler system. We use smooth data and a compact
+regular neighbourhood, not a claimed sharp Sobolev threshold. Its
+geometric well-posedness also supplies continuous dependence in a common
+regular gauge. This is an attributed theorem, not a new result of the
+checker below. The paper was read at arXiv:gr-qc/0605096v1 on28October2026.
+
+The convention map is explicit: the paper's signature is -+++; put
+g_paper=-g_here and r_paper=kappa rho. The Levi-Civita connection and
+covariant Einstein tensor are unchanged by this constant sign reversal;
+the covariant velocity changes sign and its tensor square is unchanged.
+Thus the paper's equation is exactly the already derived equation here.
+No adjustable gravitational coefficient is imported.
+
+Shrink the development before caustics and before it leaves the strict
+native decoder/material chart. Geodesic dust with initially normal
+velocity has zero vorticity throughout this neighbourhood. One direct
+proof sets Omega=d(u_flat): normalization and the geodesic equation
+give i_u Omega=0, hence L_u Omega=0 by Cartan's identity. Its initial
+spatial pullback is zero; together with i_u Omega=0 this is zero full
+initial Omega. Local flow uniqueness therefore preserves Omega=0.
+We obtain u_flat=dt, u=partial_t and
+
+    g=dt^2-gamma_ij(t,y)dy^i dy^j,
+
+with t=0 on the supplied Cauchy surface. This t is the existing dust's
+proper time. It is not identified with the number of primitive stages.
+
+### 930. The native mass chart is determined by the INITIAL data
+
+Continuity gives M(y)=rho(t,y)E_y(t,y)=rho_0(y)E_0(y), independent
+of t. The existing reverse-map construction can therefore be chosen
+before any future value is known:
+
+    X1(y)=1/(2q0) integral_(y1_base)^(y1) rho_0(s,y2,y3)E_0(s,y2,y3) ds,
+    X2=y2, X3=y3,
+    J=det(dX/dy)=rho_0 E_0/(2q0)>0,
+    E_X=E_y/J,            rho E_X=2q0.                 (929)
+
+The labels are transported along the same dust flow; J has no time
+dependence. There is no future-dependent volume reset. On a local flow
+box this is a regular coordinate map. A global mass/volume or topology
+compatibility theorem is not inferred from its local positive Jacobian.
+
+Choose a local oriented orthonormal coframe, its independently solved
+Levi-Civita connection, and BOTH original scalars
+
+    psi_A=n_A sqrt(q0)t+c_A,
+    q=q0, R=-kappa rho,
+    (tau E_X R/2,tau q)=(-kappa y0,y0)=(x0,y0).        (930)
+
+The general reverse theorem now applies to the Cauchy development,
+and vanishes all16 coframe, all24 independent connection and both
+material sources of the original nonlinear I_tau. At this point the
+source comparison is the full ambient identity tau r_x times the
+source of integral[E R/2-kappa q]. The variations are not restricted
+to (929), constant x,y, alignment, synchronous gauge, or the developed
+solution. Those are properties of its base configuration.
+
+### 931. The four constraints propagate with their real volume
+
+This also gives a direct check that the Cauchy application has not lost
+the initial time rows. In the synchronous chart define
+
+    C=G_00-kappa rho, M_i=G_0i,
+    Q_mu nu=G_mu nu-kappa rho u_mu u_nu.
+
+Assume the spatial Einstein equations Q_ij=0 and the actual dust
+continuity/geodesic equations. The contracted Bianchi identity gives
+nabla^mu Q_mu nu=0. Writing Gamma^0_ij=B_ij,
+Gamma^i_0j=B^i_j and E_dot/E=theta yields exactly
+
+    dot C+theta C-D^i M_i=0,
+    dot M_i+theta M_i=0,
+    partial_t(E M_i)=0,
+    partial_t(E C)=E D^i M_i.                          (931)
+
+The opposite B-convention would have to change both connection and
+volume formulas. Here M_i(t)=E_0 M_i(0)/E; after these three rows
+vanish, C(t)=E_0 C(0)/E. Hence (928) is preserved. The statement is
+for the Einstein equations already obtained on the regular branch;
+it does not assume that arbitrary unconstrained nonlinear spatial
+solutions have already entered that branch.
+
+An exact negative control makes the retained row indispensable. Put
+g=dt^2-a(t)^2 delta_ij dX^i dX^j with a(t)=c^(1/3)t^(2/3), t,c>0,
+psi_0=sqrt(q0)t, psi_15=0, and rho=2q0/(c t^2). For every c,
+the spatial dust Einstein equations and continuity hold, but
+
+    G_00-kappa rho=(4/3-2 kappa q0/c)/t^2,
+    E(G_00-kappa rho)=4c/3-2 kappa q0,
+    x=-2tau c/3, y=tau q0,
+    tau[(E/2)r_x G_00+r_y q0]=-(x r_x-y r_y).          (932)
+
+Only the correct initial constraint c=3kappa q0/2 removes the Einstein
+residual. The LAST identity checks the original nonlinear time row
+without freezing r_x,r_y to the desired branch. At c=q0 and the actual
+Golden y=z0=2^-20, the checker proves this nonlinear row nonzero in
+Q(sqrt5). Thus an omitted time variation would admit a demonstrably
+wrong configuration even though its spatial evolution looks like dust.
+
+### 932. Local dynamics and uniqueness in the declared sector
+
+We have now replaced a supplied spacetime solution by the initial
+constraint data (928). Every such smooth datum within the stated chart
+has a local nonlinear-source solution (930). Inside the regular
+aligned branch, any other solution with those same geometric/material
+initial data maps by the owned forward theorem to the same dust Cauchy
+problem. Geometric uniqueness therefore identifies its spacetime.
+Fixing the initial mass labels and the zero of proper time fixes the
+chosen representation; local coframe rotations retain their usual
+representation freedom. Across unfixed labels, the residual freedom
+is the already stated volume-preserving mass relabelling. This does
+not assert off-shell Diff invariance of the fixed-measure action.
+
+On a common compact regular domain the initial mass integral, its
+inverse map and the dust flow depend continuously on sufficiently
+smooth data. Combining this with the cited Cauchy theorem transports
+local continuous dependence to this native field representation.
+All positive-density, inverse-Jacobian, time and derivative bounds
+belong to the actual common chart. No uniform lifetime through a
+caustic, arbitrary-data stability, or stability of the unaligned
+two-scalar sector has been proved. The zero-density vacuum sector
+retains its separate owner; (929) is not used at rho=0.
+
+### 933. Consume this evolution in the SAME accumulating Book history
+
+On a compact regular subdevelopment let Z=(e,omega,psi) be (930),
+and keep the actual C3 sampling norm and C2 centre convergence of the
+existing nonlinear source owner. Its full finite-source estimate and
+7dd918's SEALED-PREFIX construction give, at the actual new-block gain,
+
+    ||Fhat_(M,new)/g_hat_(M,new)||_(C3)*
+                 <= C_tau h_M+epsilon_M ->0.           (933)
+
+Every comparison keeps its whole realized prefix fixed. All original
+oldRIGHT, records, preparation, inverse macros and clock terms are
+retained by that owner. No different past is substituted to make the
+new field block stationary. The target spacetime is now a local Cauchy
+development of constraint-compatible continuum initial data, not a selected
+analytic metric ansatz. The native programme still requires its own
+admitted instructions, field comparisons and readout/metric binding.
+Equation933 does not identify its primitive stage clock with dust time.
+
+The converse remains precisely normalized: if a regular decoded
+sequence satisfies the admitted new-block stationarity test with
+vanishing normalized residual, the owned soundness theorem gives
+DI_tau=0. For its stated initial data the uniqueness result above then
+identifies this SAME local Cauchy development. If the native law is
+used with an absolute finite error delta_M, its required conversion is
+
+    delta_M/g_hat_(M,new) ->0.                          (934)
+
+An unnormalized delta_M->0 alone is insufficient when the actual
+retained-history gain tends to zero. This does not demand a free
+price-measuring apparatus: it is the norm conversion for the original
+finite source/solution test. Every finite absolute baseline and real
+comparison error remains. Nor does existence of a smooth Cauchy
+development alone establish an effective native compiler from arbitrary
+abstract smooth initial data. Effective recovery retains the previous
+requirement of computable fields and available bounds.
+
+The removed premise is the already supplied continuum solution in the
+nonlinear retained-history recovery application. The constructed Cauchy
+solution and its constraint propagation now supply it. Physical
+inclusion of the comparisons in Book03, any genuinely independent
+additional source equations, and faithful native execution remain
+the exact parent application. No physical selection, claim/lifecycle
+acceptance, exact finite-word root, or GR_closed promotion follows.
+
+### 934. Changed-input check and provenance
+
+The checker uses an off-diagonal positive spatial metric with every
+independent first metric jet and computes the full four-dimensional
+covariant divergence. It checks all four identities931, the real
+volume derivative, the explicit preserved wrong initial constraint,
+and the ORIGINAL nonlinear lapse-row syzygy and exact Golden negative
+control932. These 28 exact checks supplement the analytic all-field
+argument; they do not prove the external PDE existence theorem by a
+finite example. No numerical PDE evolution, new large native word,
+old root search, or Lean build is claimed.
+
+The original nonlinear owner and general reverse proof are read by
+immutable Git blobs at input1e6420f3 with SHA256 checks. Their existing
+42-row calculations are consumed without repeating them. The full
+source, actual retained-past gain and finite-stencil laws are still the
+existing #334 owners. Save the following Python block with its exact
+LF bytes and run `python3 CHECKER.py REPOSITORY_ROOT`.
+
+Checker SHA256: `b79266d5f226552125b7e0500a43626665a78914b1ebb6c156dd1b983fea59fd`.
+Observed receipt SHA256: `42a9daf9a8eeebb4caad6ce386f3e666931c8d58ca0f6e4be0f1d88ad11ef8db`.
+Ordinary Python and python -O runs produced identical receipt bytes.
+
+```python
+#!/usr/bin/env python3
+"""Exact controls for the nonlinear dust Cauchy application in existing PR334.
+
+The general existence theorem is an explicitly cited external theorem.
+This checks the NEW constraint-transport dictionary and its missing-row
+negative control, not a numerical Einstein evolution or native admission.
+"""
+from pathlib import Path
+import hashlib
+import json
+import platform
+import subprocess
+import sys
+import sympy as s
+
+ROOT = Path(sys.argv[1]).resolve()
+INPUT = '1e6420f319d714be53363a77823f76ec620a6473'
+CHECKS = []
+
+
+def reduce(x):
+    return s.factor(s.cancel(s.expand(x)))
+
+
+def require(ok, label):
+    if not bool(ok):
+        raise ArithmeticError(label)
+    CHECKS.append(label)
+
+
+def zero(x, label):
+    entries = list(x) if isinstance(x, s.MatrixBase) else [x]
+    require(all(reduce(e) == 0 for e in entries), label)
+
+
+def git(*args):
+    return subprocess.check_output(
+        ['git', '--work-tree=' + str(ROOT), *args], cwd=ROOT)
+
+
+PINS = {}
+for name, digest in [
+    ('02_REGISTRY/research/sources/d0_mass_coordinate_equivalence_2026-10-28/PROOF_RU.md',
+     'd70ee9c87041dea710c86ab42217f6397510568a2cf6ec9ac66d7c2026646145'),
+    ('02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md',
+     'd2951e92a97c5d9ab088c27e0cd3af0989a613df57cf9d1546d2281b6eefa228'),
+]:
+    blob = git('rev-parse', INPUT + ':' + name).decode().strip()
+    data = git('cat-file', 'blob', blob)
+    require(hashlib.sha256(data).hexdigest() == digest, 'immutable input ' + name)
+    PINS[name] = {'git_blob': blob, 'sha256': digest}
+
+# An off-diagonal positive metric with ALL independent first metric jets.
+# This is an exact control of the analytic tensor identity in the proof.
+gamma = s.Matrix([[4, 1, 1], [1, 3, 0], [1, 0, 2]])
+require(all(gamma[:i, :i].det() > 0 for i in range(1, 4)),
+        'spatial control metric is positive definite and non-diagonal')
+inverse = gamma.inv()
+g = s.diag(1, -1, -1, -1)
+g[1:4, 1:4] = -gamma
+gi = g.inv()
+dgamma = []
+for a in range(4):
+    matrix = s.zeros(3)
+    for i in range(3):
+        for j in range(i, 3):
+            matrix[i, j] = matrix[j, i] = s.Symbol('h_' + str(a) + str(i) + str(j))
+    dgamma.append(matrix)
+dg = [s.zeros(4) for _ in range(4)]
+for a in range(4):
+    dg[a][1:4, 1:4] = -dgamma[a]
+Gamma = [[[s.Rational(1, 2) * sum(
+    gi[a, l] * (dg[b][l, c] + dg[c][l, b] - dg[l][b, c])
+    for l in range(4)) for c in range(4)] for b in range(4)] for a in range(4)]
+B = inverse * dgamma[0] / 2
+theta = s.trace(B)
+for i in range(3):
+    for j in range(3):
+        zero(Gamma[i+1][0][j+1] - B[i, j],
+             'synchronous connection B row ' + str(i) + str(j))
+
+C = s.Symbol('C')
+M = s.symbols('M1:4')
+dC = s.symbols('C_0:4')
+dM = [[s.Symbol('M_' + str(i) + '_' + str(a)) for a in range(4)] for i in range(3)]
+def residual(c, m):
+    mat = s.zeros(4)
+    mat[0, 0] = c
+    for i in range(3):
+        mat[0, i+1] = mat[i+1, 0] = m[i]
+    return mat
+Q = residual(C, M)
+dQ = [residual(dC[a], [dM[i][a] for i in range(3)]) for a in range(4)]
+div = []
+for nu in range(4):
+    expr = 0
+    for mu in range(4):
+        for a in range(4):
+            expr += gi[mu, a] * (dQ[a][mu, nu] - sum(
+                Gamma[l][a][mu]*Q[l, nu] + Gamma[l][a][nu]*Q[mu, l]
+                for l in range(4)))
+    div.append(reduce(expr))
+spatial_div = sum(inverse[i,j] * (dM[j][i+1] - sum(
+    Gamma[k+1][i+1][j+1]*M[k] for k in range(3)))
+    for i in range(3) for j in range(3))
+zero(div[0] - (dC[0] - spatial_div + theta*C),
+     'full covariant divergence gives Hamiltonian-constraint transport')
+for i in range(3):
+    zero(div[i+1] - (dM[i][0] + theta*M[i]),
+         'full covariant divergence gives momentum-constraint transport ' + str(i))
+
+# Jacobi's determinant law keeps the real changing spatial volume.
+eps = s.Symbol('eps')
+zero(s.diff((gamma + eps*dgamma[0]).det(), eps).subs(eps, 0)
+     - 2*gamma.det()*theta, 'actual volume law E_dot/E equals theta')
+E, E0, C0 = s.symbols('E E0 C0', positive=True)
+Mi0, dE, dMi = s.symbols('Mi0 dE dMi')
+zero(dE*(E0*Mi0/E) + E*(-dE*E0*Mi0/E**2),
+     'conserved E times momentum residual includes volume derivative')
+require(reduce(E0*C0/E) != 0,
+        'a nonzero initial Hamiltonian residual is not erased by evolution')
+
+# A full nonlinear lapse-row control, before selecting the trace branch.
+t, c, q0, tau, kap = s.symbols('t c q0 tau kappa', positive=True)
+H = s.Rational(2, 3)/t
+V = c*t*t
+rho = 2*q0/V
+G00 = 3*H*H
+spatial_equation = 2*s.diff(H,t) + 3*H*H
+R = -6*s.diff(H,t) - 12*H*H
+zero(spatial_equation, 'flat dust expansion solves all spatial Einstein rows for arbitrary c')
+zero(s.diff(rho*V,t), 'same expansion obeys actual density continuity')
+zero(V*R/2 + 2*c/3, 'gravitational operand is constant with its actual volume')
+constraint = reduce(G00 - kap*rho)
+zero(constraint - (s.Rational(4,3) - 2*kap*q0/c)/t**2,
+     'the missing initial lapse constraint has a nonzero explicit residual')
+zero(s.diff(V*constraint,t), 'the wrong initial constraint propagates rather than disappearing')
+zero(constraint.subs(c, 3*kap*q0/2), 'the correct mass-volume initial constraint is preserved')
+
+x,y,p,z = s.symbols('x y p z')
+ep = p**2*(1+x)
+ell = 4*ep*(1-ep)
+b = p-p**2*y
+bb = 4*b*b*(1-b*b)
+aa = ell+(1-ell)*bb
+price = z*(aa+bb)-z*z*aa*bb
+rx,ry = s.diff(price,x),s.diff(price,y)
+trace = x*rx-y*ry
+dictionary = {x:-2*tau*c/3, y:tau*q0}
+metric_normal = tau*(2*c*rx/3 + q0*ry)
+zero((metric_normal+trace).subs(dictionary),
+     'the original nonlinear temporal metric source equals minus the trace row')
+zero(trace.subs(x,-kap*y) + y*(kap*rx+ry).subs(x,-kap*y),
+     'the actual trace branch supplies the same Einstein coupling')
+gold = (s.sqrt(5)-1)/2
+bad = s.expand(trace.subs({x:-s.Rational(2,3)*s.Rational(1,2**20),
+                         y:s.Rational(1,2**20), p:gold,z:s.Rational(1,2**20)}))
+bad = s.radsimp(bad)
+conjugate = bad.xreplace({s.sqrt(5):-s.sqrt(5)})
+norm = reduce(bad*conjugate)
+require(norm.is_Rational and norm != 0,
+        'exact Golden nonlinear negative control: spatial equations do not supply the lapse row')
+
+out = {'status':'PASS_NONLINEAR_DUST_CAUCHY_TRANSPORT',
+       'input_commit':INPUT, 'input_pins':PINS,
+       'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+       'checks':len(CHECKS), 'check_names':CHECKS,
+       'constraint_transport':['d_t(E M_i)=0','d_t(E C)=E div_gamma M'],
+       'wrong_volume_Hamiltonian_residual':str(constraint),
+       'nonlinear_bad_normal_field_norm':str(norm),
+       'environment':{'python':platform.python_version(),'sympy':s.__version__},
+       'external_existence_theorem_checked_by_this_script':False,
+       'numerical_PDE_evolution_run':False,'native_compiler_run':False,
+       'physical_admission_proved':False,'GR_closed':False}
+print(json.dumps(out,sort_keys=True,indent=2))
+```
+
+```json
+{
+  "GR_closed": false,
+  "check_names": [
+    "immutable input 02_REGISTRY/research/sources/d0_mass_coordinate_equivalence_2026-10-28/PROOF_RU.md",
+    "immutable input 02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md",
+    "spatial control metric is positive definite and non-diagonal",
+    "synchronous connection B row 00",
+    "synchronous connection B row 01",
+    "synchronous connection B row 02",
+    "synchronous connection B row 10",
+    "synchronous connection B row 11",
+    "synchronous connection B row 12",
+    "synchronous connection B row 20",
+    "synchronous connection B row 21",
+    "synchronous connection B row 22",
+    "full covariant divergence gives Hamiltonian-constraint transport",
+    "full covariant divergence gives momentum-constraint transport 0",
+    "full covariant divergence gives momentum-constraint transport 1",
+    "full covariant divergence gives momentum-constraint transport 2",
+    "actual volume law E_dot/E equals theta",
+    "conserved E times momentum residual includes volume derivative",
+    "a nonzero initial Hamiltonian residual is not erased by evolution",
+    "flat dust expansion solves all spatial Einstein rows for arbitrary c",
+    "same expansion obeys actual density continuity",
+    "gravitational operand is constant with its actual volume",
+    "the missing initial lapse constraint has a nonzero explicit residual",
+    "the wrong initial constraint propagates rather than disappearing",
+    "the correct mass-volume initial constraint is preserved",
+    "the original nonlinear temporal metric source equals minus the trace row",
+    "the actual trace branch supplies the same Einstein coupling",
+    "exact Golden nonlinear negative control: spatial equations do not supply the lapse row"
+  ],
+  "checker_sha256": "b79266d5f226552125b7e0500a43626665a78914b1ebb6c156dd1b983fea59fd",
+  "checks": 28,
+  "constraint_transport": [
+    "d_t(E M_i)=0",
+    "d_t(E C)=E div_gamma M"
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "external_existence_theorem_checked_by_this_script": false,
+  "input_commit": "1e6420f319d714be53363a77823f76ec620a6473",
+  "input_pins": {
+    "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md": {
+      "git_blob": "154b341f17adce88594b0b5e9df0d38c0283d288",
+      "sha256": "d2951e92a97c5d9ab088c27e0cd3af0989a613df57cf9d1546d2281b6eefa228"
+    },
+    "02_REGISTRY/research/sources/d0_mass_coordinate_equivalence_2026-10-28/PROOF_RU.md": {
+      "git_blob": "8cbf01f2c1cbdc01faf6755d4909c41591f41b0b",
+      "sha256": "d70ee9c87041dea710c86ab42217f6397510568a2cf6ec9ac66d7c2026646145"
+    }
+  },
+  "native_compiler_run": false,
+  "nonlinear_bad_normal_field_norm": "131765003556556640771196021600020551017403416048284117479817100433667433170721192675972022112609105720285316878916911105/107176730929733009652841091415933596617650540481509171896867418810380346868049204181986827574048720323327798385973585533367278217749002715136",
+  "numerical_PDE_evolution_run": false,
+  "physical_admission_proved": false,
+  "status": "PASS_NONLINEAR_DUST_CAUCHY_TRANSPORT",
+  "wrong_volume_Hamiltonian_residual": "-2*(-2*c + 3*kappa*q0)/(3*c*t**2)"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

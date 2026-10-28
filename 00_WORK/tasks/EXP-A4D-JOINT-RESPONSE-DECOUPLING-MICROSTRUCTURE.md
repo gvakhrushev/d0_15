@@ -17336,3 +17336,68 @@ tree; warnings0 and scientific_promotion=false. Removing only7de
 recovers all2936135 incoming primary bytes; the entire1115078-byte
 incoming brief is an exact prefix. The final two endpoint receipts and
 their immutable calculation pins did not change during integration.
+
+### 28 October — Cauchy development consumes the nonlinear retained-history source
+
+SAME #334 / constitutive/native-programme-v1; native realization / final
+composition. Input1e6420f3, consuming the nonlinear direct-click theorem,
+the general mass-coordinate reverse lift and7dd's fixed retained past.
+The preceding goal turn made durable progress at1e6420f3. The next
+missing application is local dynamics: the reverse/recovery theorem
+assumed a given Einstein-dust solution. Replace that input by smooth
+constraint-compatible initial data, retaining the original nonlinear
+price, branch, all42 equations, actual field norm and whole history.
+No new task, geometry/rank census, action or physical selector.
+
+Write paths remain this brief and the primary memo. The method is the
+known Einstein-dust Cauchy theorem AFTER applying the owned full-source
+equivalence, with an explicit signature/coupling dictionary, preservation
+of aligned initial material data and the actual initial mass-coordinate
+map. The smallest decisive changed check is the exact four-constraint
+transport on a non-diagonal spatial metric with independent first jets,
+plus an original nonlinear temporal-row negative control. An exact
+finite stationary native word is not a new prerequisite for the owned
+regularized field-solution protocol7aw.
+
+Result7df927--934: each smooth dust-orthogonal initial datum satisfying
+the actual Hamiltonian and three momentum constraints has a local
+development solving the SAME nonlinear source in its declared regular
+positive branch, with geometric uniqueness there. Both scalar equations
+are retained; zero transverse scalar data remain zero by their common
+hyperbolic equation. The positive mass Jacobian is determined entirely
+by initial rho_0 E_0 and is constant along the flow. All42 ambient
+source rows then vanish by the existing reverse theorem.
+
+The new explicit constraint system is d_t(E M_i)=0 and
+d_t(E C)=E div_gamma M. It preserves zero initial constraints; it does
+not make a wrong initial time row disappear. The flat dust expansion
+with the wrong volume constant supplies an exact nonlinear Golden
+countercheck to dropping that row. The standard Cauchy theorem is
+attributed to Choquet-Bruhat/Friedrich, gr-qc/0605096, Theorem2.1 and
+Corollary2.2; the changed checker is not represented as its proof.
+
+The constructed development is substituted into7dd918, producing the
+same whole-price new-block source recovery along one sealed-past chain,
+at its real gain. Conversely normalized stationarity and regular decoded
+convergence select this local development from its initial data. Any
+absolute finite source error retains the necessary delta_M/g_M bound.
+The dust time is not renamed the primitive programme clock. Abstract
+smooth existence is not silently turned into an effective compiler.
+
+Retained application: physical admission of the same comparisons and
+execution, real metric/source binding, and any independently admissible
+additional equations. The theorem supplies local continuum dynamics
+inside the already derived sector; it neither selects that sector as
+the whole physical domain nor closes GR. No registry, acceptance,
+lifecycle, Ready, task retirement, merge, or raw216 change.
+
+Final local evidence on1e6420f3 plus this insertion: all28 exact changed
+checks pass under Python3.9.6/SymPy1.14.0. Ordinary and optimized Python
+produce byte-identical receipts. The existing assembly template was
+read; work, agent-protocol, assembly and repository guards pass, with
+warnings0 and scientific_promotion=false. Embedded code, observed JSON,
+AST and SHA256 match the executed files. Removing only7df restores all
+2965098 incoming primary bytes, and the entire1121465-byte prior brief
+remains an exact prefix. Only the two owned paths change. The external
+Cauchy theorem is explicitly attributed, not reported as machine-proved
+by this check. No remote CI or independent physical acceptance claimed.
