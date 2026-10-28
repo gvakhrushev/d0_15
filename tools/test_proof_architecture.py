@@ -5304,6 +5304,65 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(receipt, (packet / "replay/normal.json").read_bytes())
         self.assertEqual(receipt, (packet / "replay/optimized.json").read_bytes())
 
+    def test_current_post_fd_ready_reflection_packet_is_retrievable_and_scoped(self) -> None:
+        packet = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_334_post_fd_delta_2026-10-28"
+        )
+        manifest_bytes = (packet / "MANIFEST.json").read_bytes()
+        manifest = json.loads(manifest_bytes)
+        self.assertEqual(
+            hashlib.sha256(manifest_bytes).hexdigest(),
+            (packet / "MANIFEST.sha256").read_text(encoding="ascii").split()[0],
+        )
+        self.assertEqual(
+            manifest["source_range"],
+            {
+                "base_commit": "fd35893d77e4aa5f819bafa0c6428c8e7a8f1812",
+                "head_commit": "4a57cfd948226704b9561dec287d7f60154985ea",
+                "commits": 8,
+            },
+        )
+
+        replay = manifest["replays"]["ready_reflection"]
+        normal = (packet / replay["normal_output"]).read_bytes()
+        optimized = (packet / replay["optimized_output"]).read_bytes()
+        owner = (packet / replay["owner_result"]).read_bytes()
+        self.assertEqual(normal, optimized)
+        self.assertEqual(normal, owner)
+        result = json.loads(normal)
+        self.assertEqual(result["status"], "PASS")
+        self.assertEqual(result["checks"], 359)
+        self.assertEqual(result["checker_sha256"], replay["expected_checker_sha256"])
+        self.assertEqual(result["source"]["raw_new_gate_basis_rows"], 260)
+        self.assertEqual(result["source"]["nonzero_Hermitian_rows"], 20)
+        self.assertFalse(result["AF_schedule"]["binary_AF_physical_admission"])
+        self.assertIn("No physical flag/actuator admission", result["scope"])
+        self.assertIn("GR closure", result["scope"])
+
+        data = proof.load_dataset(proof.ROOT)
+        hits = proof.full_text_search(
+            proof.ROOT, "Emit the readiness reflection", limit=100
+        )
+        by_source = {row["source"]: row for row in hits}
+        intake_path = "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        source_path = (
+            "02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/"
+            "upstream/02_REGISTRY/research/"
+            "A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        )
+        self.assertIn(intake_path, by_source)
+        self.assertIn(source_path, by_source)
+        support = proof.structured_search(
+            data, "D0.Research.CalibratedQuerySourceFloor"
+        )
+        self.assertEqual(support[0]["kind"], "formal-support-metadata")
+        self.assertIn(
+            source_path
+            + "#7dk-emit-the-readiness-reflection-and-retain-its-complete-control-covector",
+            support[0]["record"]["referenced_by"],
+        )
+
     def test_refoliation_delta_is_retrievable_without_physical_owner_inference(self) -> None:
         data = proof.load_dataset(proof.ROOT)
         hits = proof.full_text_search(

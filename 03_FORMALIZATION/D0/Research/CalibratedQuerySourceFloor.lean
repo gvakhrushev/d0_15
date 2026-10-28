@@ -12,10 +12,13 @@ squared calibrated QUERY-source ratio is at least
 `4 Ω² P (1-P)`. The bound is attained at `α=4`, `γ=1`.
 With uniform positive lower bounds on `P` and `Ω`, a finite positive-weight
 average of these block ratios has the corresponding `η*` lower bound.
+The module also proves the scalar readiness-gain cancellation reported in
+§7dk of the current #334 source: a `γ`-scaled source and its true adjusted
+gain retain the original normalized coefficient.
 
-This is a scalar calibration theorem. It does not prove that the parameters
+These are scalar calibration theorems. They do not prove that the parameters
 are selected by D0, identify a physical variation norm, admit a native
-programme, or establish GR closure.
+programme, prove the operator-to-QUERY source map, or establish GR closure.
 -/
 
 namespace D0.Research
@@ -219,5 +222,60 @@ theorem calibratedQuerySourceWeightedAverage_ge_uniform_floor
       (hα0 i) (hα4 i) (hγ0 i) (hγ1 i) (hP0 i) (hPhalf i)
       (hΩ0 i) (hΩlower0) (hΩlower i) hb0 (hbP i))
     (le_of_lt (hweight0 i))
+
+/-- Cold weight after adding a genuine READY branch of probability `γ`.
+
+This is the scalar centre used by the §7dk readiness construction in #334.
+The definition does not encode admission of the flag or its actuators. -/
+def readinessColdWeight (γ c : ℝ) : ℝ := 1 - γ + γ * c
+
+/-- Calibrated field gain after the READY branch is included in the cold
+normalizer. -/
+noncomputable def readinessAdjustedGain (γ c gain : ℝ) : ℝ :=
+  (γ * c / readinessColdWeight γ c) * gain
+
+/-- On the positive readiness chart the enlarged cold weight stays positive. -/
+theorem readinessColdWeight_pos
+    (γ c : ℝ) (hγ0 : 0 < γ) (hγ1 : γ ≤ 1) (hc0 : 0 < c) :
+    0 < readinessColdWeight γ c := by
+  unfold readinessColdWeight
+  nlinarith [mul_pos hγ0 hc0]
+
+/-- The READY cold weight and calibrated gain multiply to the original source
+scale `γ c λ`, before the source itself is normalized. -/
+theorem readinessColdWeight_mul_adjustedGain
+    (γ c gain : ℝ) (hγ0 : 0 < γ) (hγ1 : γ ≤ 1) (hc0 : 0 < c) :
+    readinessColdWeight γ c * readinessAdjustedGain γ c gain =
+      γ * (c * gain) := by
+  have hready_pos := readinessColdWeight_pos γ c hγ0 hγ1 hc0
+  have hready : 1 - γ + γ * c ≠ 0 := by
+    rw [readinessColdWeight] at hready_pos
+    exact ne_of_gt hready_pos
+  change (1 - γ + γ * c) *
+      ((γ * c / (1 - γ + γ * c)) * gain) = γ * (c * gain)
+  field_simp [hready]
+
+/-- Exact scalar cancellation in #334 §7dk(977): when the READY map scales a
+source by `γ` and uses `λ_ready=(γ c/c_ready)λ`, its normalized source is the
+same as the original `source/(c λ)`. This formalizes only the scalar gain
+identity; the operator source map and physical READY admission remain separate
+premises. -/
+theorem readinessNormalizedSource_eq
+    (γ c gain source : ℝ) (hγ0 : 0 < γ) (hγ1 : γ ≤ 1)
+    (hc0 : 0 < c) (hgain0 : 0 < gain) :
+    (γ * source) /
+        (readinessColdWeight γ c * readinessAdjustedGain γ c gain) =
+      source / (c * gain) := by
+  rw [readinessColdWeight_mul_adjustedGain γ c gain hγ0 hγ1 hc0]
+  have hγ : γ ≠ 0 := ne_of_gt hγ0
+  have hcl : c * gain ≠ 0 := ne_of_gt (mul_pos hc0 hgain0)
+  field_simp [hγ, hcl]
+
+/-- The exact k=4 checker parameters specialize the cold weight to
+`1-p^8+p^11`; this is arithmetic bookkeeping, not a device-admission claim. -/
+theorem readinessColdWeight_p8_p3 (p : ℝ) :
+    readinessColdWeight (p ^ 8) (p ^ 3) = 1 - p ^ 8 + p ^ 11 := by
+  unfold readinessColdWeight
+  ring
 
 end D0.Research

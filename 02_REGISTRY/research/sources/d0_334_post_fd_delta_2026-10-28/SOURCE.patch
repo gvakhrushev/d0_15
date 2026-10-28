@@ -1,8 +1,8 @@
 diff --git a/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md b/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md
-index 1b77a1f7..6671638b 100644
+index 1b77a1f7..7f545da6 100644
 --- a/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md
 +++ b/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md
-@@ -17622,3 +17622,60 @@ fixed tests. This is a direct supporting parent substitution, not
+@@ -17622,3 +17622,117 @@ fixed tests. This is a direct supporting parent substitution, not
  independent physical acceptance. No claim/registry/lifecycle promotion,
  Ready, merge or new task. `GR_closed=false`. Write paths remain only
  this brief and the existing primary; earlier and incoming bytes remain.
@@ -63,6 +63,63 @@ index 1b77a1f7..6671638b 100644
 +
 +Checker SHA256: `1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f`.
 +Receipt SHA256: `01e14a9d561da0879bd9c75b66054484f9efd1ef58e6f5ec4e9899707046f74a`.
++
++### 28 October 2026 checkpoint — explicit readiness compiler and its retained raw QUERY map
++
++SAME PR334, `constitutive/native-programme-v1`; phase: native realization
++and composition. Inputs: §7dj961–970 at `15738cca`, owned §7bw606 and the
++incoming full closure-source audit through `1dce9b70`. Existing primary
++now contains §7dk971–978, with the exact executed checker and receipt.
++
++Exact parent substitution: §7dj's controlled-reflection/READY target
++has an explicit source-preserving recipe. The original parity phase
++uses20CX+5SourceI; the executed reflected middle has37 literal native
++calls. Two guarded addressed READY-CX calls per temporal half combine
++with the existing AF frame to give107 specified paired-profile calls,
++on the full regular A8 carrier with its55/34 right multiplicities and
++one real separate flag. This AF profile is not asserted to be physically
++admitted or binary-wire `Execution/1`; further actuation expansion
++retains its own real stages and sources.
++
++Every raw control fault, including routed-flag/Spin faults, has an exact
++conditional-expectation map: false and flag-cross Hermitian sources
++vanish, while the true component is gamma times the old prepared source.
++New central rows map to delta Pi=[h_Q,Pi]/2 in the existing QUERY-effect
++consumer, with norm at most25/2 times the emitted maximum raw norm.
++Independent encoder halves transfer separately; frame/READY rows use
++the actual guarded supports. The genuine gain changes by gamma*c/c_ready,
++so no QUERY source is suppressed by a small readiness probability.
++
++Smallest decisive check: all37 binary calls/all32 columns, followed by
++all107 paired calls/all712 AF/flag/Spin columns (oldRIGHT identity factor2
++retained); every new gate's real skew local basis,260 rows total, obeys
++the source map. Twenty rows have nonzero Hermitian source. A norm-one
++fault on the actual final CX gives delta C=-2 gamma*a*p I and normalized
++source4ap/(c lambda)>0. The internal full heat FIRST source is zero by
++the owned606 reflection theorem for the whole matched endpoint at its
++stated placement; a general retained K alone does not imply this heat
++hypothesis. The actual absolute price and any noninternal/other source remain.
++
++359 checks pass with byte-identical normal/optimized JSON. Exact code
++SHA256 `c32c4b73292b512882991e5fdf1b9bae3444975615691bd1f5d3928c33e6b230`;
++receipt SHA256 `167699a4cc23892e6413a7e5bbe53a56ccaceed433f801fb6d57008dfee24569`.
++Incoming closure-audit files are preserved; their checks are consumed,
++not replayed or counted as new. No giant nonlinear GR build, dense66896
++heat or physical flag-preparation experiment is claimed.
++
++Carrier/norm/source convention: the same canonical regular AF conditional
++expectation, fresh flag and full protected input; actual c_ready,
++lambda_ready and accumulated positive-past gain. Raw support norms map
++through real suffixes to the existing report-effect graph. The operator
++identity precedes scalar weighting. Retained physical hypotheses:
++flag preparation, admitted addressed actuators, complete future-test
++map and price, and an independently established task-faithful QUERY
++domain or actual compensating source. The compiler does not install
++any of those by selecting an Einstein restriction.
++
++Assembly result is supporting direct application to §7dj, not physical
++closure or an accepted constitutive substitution. No new task/node,
++acceptance, Ready, claim promotion or merge. `GR_closed=false`.
 diff --git a/02_REGISTRY/research/A4D_FULL_CLOSURE_SOURCE_AUDIT_2026_10_28.md b/02_REGISTRY/research/A4D_FULL_CLOSURE_SOURCE_AUDIT_2026_10_28.md
 new file mode 100644
 index 00000000..f9c12449
@@ -686,10 +743,10 @@ index 00000000..e125b760
 +не назван новым открытием или точным универсальным контроллером бесконечного
 +семейства унитарных матриц. Source-formulas и classification(9) доказаны выше.
 diff --git a/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md b/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md
-index 96710693..b92122f9 100644
+index 96710693..cf0e9175 100644
 --- a/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md
 +++ b/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md
-@@ -88905,6 +88905,789 @@ print(json.dumps(result,indent=2,sort_keys=True))
+@@ -88905,6 +88905,1705 @@ print(json.dumps(result,indent=2,sort_keys=True))
  ```
  <!-- END 7di OFFCOPY FRAME RECEIPT -->
  
@@ -1475,6 +1532,922 @@ index 96710693..b92122f9 100644
 +}
 +```
 +<!-- END 7dj REGULAR CYCLIC SOURCE RECEIPT -->
++
++## 7dk. Emit the readiness reflection and retain its complete control covector
++
++28 October 2026. SAME #334 / `constitutive/native-programme-v1`; native
++realization and composition. Inputs: §7dj961–970 at `15738cca` and the
++incoming full-source closure audit through `1dce9b70`. The named missing
++application is §7dj's **unemitted READY-copy/controlled-word interface**.
++For an already reflected native query, it now has an explicit exact recipe.
++Its new raw control sources also have an exact map into the retained QUERY
++effect. They are not all zero: an actual control-gate support contains a
++norm-one direction with nonzero normalized source, independently of the
++small AF readiness probability.
++
++The binary middle below is a literal original `Execution/1` word. Its AF
++lift and READY ports are the specified paired-port profile of §7di, not
++proof that the native physical device admits those addresses. A real blank
++flag, all actual clocks and the physical comparison map remain necessary.
++This replaces a matrix target by a checkable implementation recipe and
++its source map; it does not define physical admissibility by fiat.
++
++The incoming [closure-source audit](A4D_FULL_CLOSURE_SOURCE_AUDIT_2026_10_28.md)
++is preserved byte-for-byte (SHA256
++`ae42fc59d824f5f99294be8da277156eacd8e4497152a6c06b8f1942760c8582`).
++Its sharp calibrated QUERY bound and physical-lift caveat are consumed,
++not reproved or counted as this section's checks. The construction below
++does not evade that bound by reducing a signal or changing the gain.
++
++### 1. Control the central report, keeping the full encoder and inverse
++
++Let A be an actual native forward encoder, Q=I-2 Pi_q its computational
++report reflection and W=A* Q A. The pointer q is mutable ordinary WORK,
++distinct from protected Spin and oldRIGHT. One genuine extra flag f
++controls only Q. Thus A and its charged original inverse run on BOTH
++flag branches. No exact controlled odd Golden rotation is required.
++
++Use the already owned logical phase on q, with physical source port P:
++S_q=SWAP(P,q);SourceI;SWAP(P,q). This is seven actual calls and restores
++P on all columns; S_q^-1 uses three forward SourceI and has nine calls.
++Likewise for f. With chronological word order the exact parity recipe is
++
++    S_q ; S_f ; CX(q,f) ; S_f^-1 ; CX(q,f),
++    CZ_(q,f)=I-2 Pi_q Pi_f,
++    inventory(CZ)=(20 CX,5 SourceI), length(CZ)=25.       (971)
++
++For each Boolean pair q,f the exponent of the quaternion L_i is
++q+f-(q xor f)=2qf. Since L_i^2=-I4, the entire endpoint is precisely
++the desired sign and identity on ALL protected Spin columns. There is
++no chosen Spin eigenstate, free X, half-angle, reset or phase readout.
++Routing is included; intermediate states need not keep the flag fixed.
++
++For the completed middle V, not for each raw routing stage,
++
++    A ; CZ_(q,f) ; A^-1  = diag_f(I,W).                 (972)
++
++The false branch is the full all-column identity. The true branch is
++the original reflection, not a different normalized output law. For
++general already compiled A its true inverse count is retained. The
++same construction applies to a supplied single computational report
++bit after its actual reader; an arbitrary spectral projector is not
++being installed as a new native gate.
++
++### 2. READY-copy has explicit guarded paired ports
++
++Use exactly §7di's off-copy frame E, Golden B and diagonal-copy support
++D, with e0=E0 E0* and e=B e0 B*. At finite k there is a spare diagonal
++copy for each old type j. Use it as the control-zero port, and the
++coordinate-zero E0 copy as the control-one port, of a CX onto f. The
++same pair is used uniformly for every old row/column r,c. The two old
++types require two such specified addressed calls. They give
++
++    M0=(I-e0) tensor I_f + e0 tensor X_f,
++    M_e=(B tensor I_f) M0 (B* tensor I_f).               (973)
++
++Both the active and inactive control ports lie in D. The complete raw
++two-port support, including arbitrary Spin coupling there, therefore
++lies in D tensor H_f tensor H_Spin. This proves the guard needed by
++§7dj968 for each independent READY call, including its independent
++return occurrence. It does not only check its endpoint support.
++
++Execute ONE designed word, in chronological order,
++
++    B^-1 ; M0 ; A_E ; CZ_E ; A_E^-1 ; M0 ; B,
++    U_ready=B M0 diag_f(I,W_E) M0 B*,                  (974)
++
++where each E subscript is the existing complete AF lift with its
++identity complement. The private f remains a real separate blank
++register; it is not replaced by another unprepared cyclic AF label.
++Equation (974) is the original §7dj965 target. The adjacent B*B factors
++are absent from this designed recipe; no actually executed calls are
++subsequently erased from its price. The actual intermediate readouts,
++if required by the task, still need their corresponding schedule map.
++
++For the executed k=4 fixture there are 55 decoder calls, two READY CX,
++37 middle calls, two READY CX and 11 encoder calls: **107 specified
++paired-profile calls**, with inventory24G+30CX+53SourceI. The middle
++uses A=G_q^-1, so its ordinary native inventory is2G+26CX+9SourceI
++and its true corner is c=p^3. The old38-call implementation is not
++declared to have the same price or the same independent raw domain.
++
++The larger AF lift is not certified as binary-wire `Execution/1`
++membership: that interface is checked for the37-call middle. The
++107 count applies to the specified paired-port calls as in §7di.
++If physical AF addressing expands any of them, the resulting ACTUAL
++additional stages, supports and prices must be used. No physical
++Book clock is inferred just from this algebraic representation.
++
++### 3. Every new raw controller row has a definite existing consumer
++
++Let E_old be the true canonical regular conditional expectation of
++§7dj. Work at the exact completed middle V=diag_f(I,U), with U the
++native algebra lift of W, and write an arbitrary independent tangent
++as delta V=H V, H*=-H. This includes flag-changing intermediate faults,
++not only predicate-readonly generators. In flag blocks, the blank
++corner of M_e delta V M_e is
++
++    (I-e)H00(I-e) + (I-e)H01 Ue
++                     +eH10(I-e)+eH11 Ue.
++
++The first summand is skew. Since e commutes with the old algebra and
++acts as identity on the protected factor, conditional cyclicity
++annihilates each cross summand: E_old((I-e)Ye)=0 and E_old(eY(I-e))=0
++for every Y. Using the actual prepared isometry V_prep of §7dj964 gives
++
++    Herm delta C_ready=gamma Herm X1,
++    X1=V_prep* rho(H11 U) V_prep,
++    gamma=p^(2k),  ||H11||<=||H||.                     (975)
++
++This is an operator identity on ALL unknown old/Spin/reference inputs.
++It does not use a scalar trace to remove an operator source. On the
++encoded middle, X1 is exactly the old prepared true-branch insertion.
++The false-branch and flag-cross terms have been proved harmless for
++this first return source; they have not been omitted from the tape.
++
++For a raw gate h_t its endpoint generator is the true suffix conjugate
++H_t=V_after,t h_t V_after,t*. Thus every actual routing stage also
++obeys (975), even when its current physical port carries the flag.
++Independent forward and reverse encoder rows transfer separately to
++their existing true-branch apparatus rows. They are not linked together
++to force a cancellation. The frame/READY rows instead use their proved
++guard and §7dj968. Physical initial-flag preparation retains its own
++chart and source, with the pure-code first-jet statement only at the
++scope already proved in §7dj.
++
++For the25 NEW central-gadget rows, pass to the original query frame.
++With h_Q=A H11 A*, Q=I-2 Pi, the Hermitian true tangent is
++
++    Herm(H11 W)=-2 A* delta Pi A,
++    delta Pi=(1/2)[h_Q,Pi],
++    delta E_query=A* delta Pi A,
++    ||delta Pi||<=||h_Q||/2.                           (976)
++
++It is precisely a tangent to the old report projector, with all
++source input compressions retained. This is the missing source map,
++not an added report selection principle. It covers arbitrary real
++skew raw control faults, including the Spin-entangled ones. The
++operator proof also holds for complex skew-adjoint tangents when
++such a comparison chart is actually provided.
++
++For simultaneous independent raw controls of maximum norm nu, unitary
++suffix transport and compression give ||h_Q||<=25nu and
++||delta Pi||<=25nu/2. This is a real norm bound for the emitted gadget,
++not a bound independent of its physical implementation length.
++The existing task-faithful theorem applies if the corresponding full
++input-effect really is fixed for every unknown SOURCE input. Then
++delta E_query has zero required input compression and its return
++source is zero. It is not enough to preserve one observed probability
++at the selected field, or to call a newly freed query direction gauge.
++
++### 4. The true gain preserves, rather than suppresses, the QUERY debt
++
++Use §7dj966 with the actual centre and actual complete past:
++
++    c_ready=1-gamma+gamma c,
++    lambda_ready=(gamma c/c_ready)lambda,
++    Gamma_ready=w_ready lambda_ready,
++    -(2/(c_ready lambda_ready))Herm delta C_ready
++                  =-(2/(c lambda))Herm X1.             (977)
++
++The source norm transfer therefore has exactly its original normalized
++coefficient, before any positive nonnormal-past weighting. A small
++gamma cannot make a genuinely free control direction stationary.
++For multiple actual private cohorts use their real accumulated gain
++and weights; do not substitute the one-block denominator for a sum.
++
++There is a concrete negative control on the LAST actual CX(q,f) in
++(971). In that gate's full two-wire support take
++h=|1><1|_f tensor J_q, J=[[0,-1],[1,0]], tensor I_Spin.
++It has norm1. At the emitted A=G_q^-1 centre the exact calculation is
++
++    delta C_ready=-2 gamma a p I,
++    D J_ready/w_ready=4 gamma a p/c_ready,
++    D J_ready/Gamma_ready=4 a p/(c lambda)>0.            (978)
++
++This is an independent single-gate matrix comparison at a literal
++native base. It is not an assertion that the physical gate admits
++an arbitrary continuously variable angle. Its report effect changes,
++so it is outside the task-faithful effect fibre. This actual-support
++witness is compatible with the incoming sharp QUERY obstruction; it
++does not establish its full physical lift or a universal D0 no-go.
++
++The completed word is an exact reflection. On its declared stagewise
++INTERNAL Hodge realization, the OWNED §7bw606 theorem consequently
++gives zero FIRST heat source even for independent temporal gate
++faults, so heat cannot cancel (978) there. This uses the WHOLE
++matched endpoint: a general old K in (977) does not alone extend
++606 to every appended history. For the specific witness (978),
++h anticommutes with the controlled Q, and
++exp(s h)Q=exp(s h/2)Q exp(-s h/2). Its complete new endpoint therefore
++stays on a fixed-signature reflection orbit. With the already proved
++private-tensor composition with a fixed old endpoint and a common
++INTERNAL clock, the owned prefix/spectrum theorem also preserves the
++whole heat along this particular comparison, even if that old endpoint
++is not an involution. The required composition is not inferred from K.
++
++These are applications of the owned heat theorems, not a new heat
++replay. The absolute enlarged heat, all modes and new real clock
++remain. A noninternal placement or a history without the stated
++composition keeps its own full heat source; other actual Info/work/
++stopping or preparation terms also retain their own equations. The
++endpoint reflection alone does not identify those terms or the
++physical placement.
++
++### 5. Executed check and remaining physical application
++
++The changed checker multiplies all37 binary-native stages on all32
++columns, then all107 specified AF stages on all712 AF/flag/Spin
++columns. Immutable oldRIGHT is an exact additional identity factor2,
++giving1424 working columns and all reference entanglements. The
++actual regular representation has right multiplicities55,34 and
++dimension66896, with true canonical input rank16. Its exact canonical
++corner is (1-p^8+p^11)I16 and its actual gain multiplier is
++p^11/(1-p^8+p^11). It is not the old unprepared cyclic corner.
++The binary template's work-blank metadata is not substituted for the
++actual regular input: that input is the original J_can with ONLY the
++new flag blank, and all work/complement columns enter its expectation.
++
++The checker exhausts all260 real skew local basis generators on the
++25 new gate supports, with their actual suffixes, including source
++Spin and temporarily routed flags. Every row satisfies (975);
++20 have a nonzero Hermitian return source. The norm-one actual last-CX
++witness (978) is also checked. The guard is verified for every real
++frame/READY call, not inferred solely from their final product.
++All359 checks pass; ordinary and optimized receipts coincide byte
++for byte. No unchanged giant GR word, dense66896 heat, physical
++state-preparation experiment or Lean theorem is claimed.
++
++The parent substitution is now explicit: the controlled-reflection
++and guarded READY matrix interface has a complete specified recipe,
++and every new controller row has either the proved zero-source map
++or the retained original QUERY-effect consumer. This is useful to
++the existing source recovery only with its actual comparison domain.
++The same physical execution still must supply the genuine blank,
++addressed AF actuators, future-test map, full prices and the required
++task-faithful QUERY law or its actual compensating source. Those are
++not selected by this compiler. No Einstein equation is inserted as
++an admission condition, and the full physical X_N map is not declared
++complete.
++
++Assembly: supporting direct application to §7dj and the existing
++task/apparatus source theorem, with all stated physical hypotheses
++retained. Only this primary and the existing brief are written.
++No new task/node, acceptance, Ready, claim promotion or merge.
++`GR_closed=false`.
++
++Exact checker SHA256: `c32c4b73292b512882991e5fdf1b9bae3444975615691bd1f5d3928c33e6b230`.
++Observed receipt SHA256: `167699a4cc23892e6413a7e5bbe53a56ccaceed433f801fb6d57008dfee24569`.
++The following blocks are the exact executed bytes.
++
++
++<!-- BEGIN 7dk READY REFLECTION COMPILER CHECKER -->
++```python
++#!/usr/bin/env python3
++"""Actual READY-copy/reflection recipe and its independent raw source map.
++
++The binary middle is a native Execution/1 word. Its AF lift and the frame
++are explicitly specified paired-port operations, not physical admission.
++"""
++import ast
++from collections import Counter
++import hashlib
++import importlib.util
++import json
++from pathlib import Path
++import sys
++import sympy as s
++
++ROOT=Path.cwd()
++PRIMARY=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
++# Full pins are checked before any builder is imported.
++AF_PIN='9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee'
++NATIVE_PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
++TREE_PIN='b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba'
++FRAME_PIN='de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88'
++REGULAR_PIN='1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f'
++checks=[]
++def require(ok,label):
++    if not bool(ok):raise RuntimeError(label)
++    checks.append(label)
++def load(name,rel,pin):
++    path=ROOT/rel
++    require(hashlib.sha256(path.read_bytes()).hexdigest()==pin,'input '+name)
++    spec=importlib.util.spec_from_file_location(name,path)
++    module=importlib.util.module_from_spec(spec);sys.modules[name]=module;spec.loader.exec_module(module)
++    return module
++AF=load('ready_compiler_af','02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py',AF_PIN)
++N=load('ready_compiler_native','02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py',NATIVE_PIN)
++a,p=AF.a,AF.p
++source=PRIMARY.read_text()
++def functions(marker,pin,names):
++    code=source.split('<!-- BEGIN '+marker+' -->\n```python\n')[1].split('```\n<!-- END '+marker+' -->')[0]
++    require(hashlib.sha256(code.encode()).hexdigest()==pin,'published '+marker)
++    nodes=[x for x in ast.parse(code).body if isinstance(x,ast.FunctionDef) and x.name in names]
++    require({x.name for x in nodes}==set(names),'requested existing builder functions '+marker)
++    exec(compile(ast.Module(body=nodes,type_ignores=[]),'<owned '+marker+'>','exec'),globals())
++functions('7dg GOLDEN AF FRAME CHECKER',TREE_PIN,{'mat','paths','pairs','rotation','product'})
++functions('7di OFFCOPY FRAME CHECKER',FRAME_PIN,{'layout'})
++functions('7dj REGULAR CYCLIC SOURCE CHECKER',REGULAR_PIN,set())
++def equal(A,B,label):require(AF.zero(A-B),label)
++def symbolic(A):return mat(A.xreplace({N.A:a}).xreplace({s.sqrt(5):2*p+1}))
++def swap(i,j):return (N.Gate('CX',(i,j)),N.Gate('CX',(j,i)),N.Gate('CX',(i,j)))
++
++# Ordinary binary interface: port0, report1, real readiness flag2, Spin3/4.
++# Its oldRIGHT spectator is then retained as a separate exact identity factor.
++si=N.Gate('SourceI',(0,3,4))
++def execution(word):return N.Execution(5,(0,1,2),(),tuple(word),N.G_CX_SOURCE_I,0,(3,4))
++def phase(q,k):return swap(0,q)+(si,)*k+swap(0,q)
++cx=N.Gate('CX',(1,2))
++cz=phase(1,1)+phase(2,1)+(cx,)+phase(2,3)+(cx,)
++g=(N.Gate('G',(1,)),)
++ginv=N.inverse_word(execution(g),max_qubits=5,max_expanded_stages=100)
++word=execution(ginv+cz+g)
++N.validate_execution(word,max_qubits=5,max_expanded_stages=100)
++inventory=N.inventory(word,max_qubits=5,max_expanded_stages=100)
++require((len(cz),inventory.g_count,inventory.cx_count,inventory.source_i_count)==(25,2,26,9),'actual37-call binary reflection inventory')
++G=symbolic(N.word_matrix(execution(g)))
++Gi=symbolic(N.word_matrix(execution(ginv)))
++equal(Gi,G.T,'all11 inverse stages restore helper on every column')
++Q=s.diag(*[(-1 if ((i>>3)&1) and ((i>>2)&1) else 1) for i in range(32)])
++CZ=symbolic(N.word_matrix(execution(cz)))
++equal(CZ,Q,'all32 columns: actual parity phase is controlled Z, Spin restored')
++U=symbolic(N.word_matrix(word))
++equal(U,G*Q*G.T,'all37 actual middle calls equal the controlled reflection')
++equal(U.T,U,'middle is an exact full-column reflection')
++W=s.Matrix([[p**3,2*a*p],[2*a*p,-p**3]])
++logical_true=s.kronecker_product(s.eye(2),W,s.eye(4))
++idx=[[16*port+8*query+4*flag+spin for port in range(2) for query in range(2) for spin in range(4)] for flag in range(2)]
++equal(U.extract(idx[0],idx[0]),s.eye(16),'exact false branch I, including all port and Spin columns')
++equal(U.extract(idx[1],idx[1]),logical_true,'true branch is the existing p3 reflection')
++equal(U.extract(idx[0],idx[1]),s.zeros(16),'no endpoint flag mixing')
++
++# Literal addressed AF READY copy: one original CX per old block, choosing
++# an unused diagonal path as control0 and the coordinate-zero path as control1.
++f=layout(0,4,4);E,J,ops=f['E'],f['J'],f['ops'];d,D=J.cols,J.rows
++B=product([rotation(D,op['rows']) for op in ops],D)
++e0=E[:,:d]*E[:,:d].T;I=s.SparseMatrix(s.eye(D))
++dim=8*D;ID=s.SparseMatrix(s.eye(dim));DF=s.kronecker_product(f['diag'],s.eye(8))
++ready=[];ready_addresses=[]
++for j in (0,1):
++    zero=[r for r in range(D) if E[r,j]]
++    require(len(zero)==1,'unique coordinate-zero old block '+str(j))
++    zero=zero[0]
++    dummy=next(r for r in range(D) if f['diag'][r,r] and r!=zero and any(r in op['rows'][0] for op in ops if op['type']==j))
++    R=s.MutableSparseMatrix(ID)
++    for flag in (0,1):
++        for spin in range(4):
++            col=8*zero+4*flag+spin
++            R[col,col]=0;R[8*zero+4*(1-flag)+spin,col]=1
++    ready.append(s.SparseMatrix(R));ready_addresses.append({'old_type':j,'control0_diagonal':dummy,'control1_zero':zero})
++    # The whole allowed raw two-port source support, including its false port.
++    support=s.diag(*[s.Integer(r//8 in (zero,dummy)) for r in range(dim)])
++    equal(DF*support,support,'actual READY-CX raw support is guarded '+str(j))
++M0=product(ready,dim)
++X=s.Matrix([[0,1],[1,0]])
++equal(M0,s.kronecker_product(I-e0,s.eye(8))+s.kronecker_product(e0,X,s.eye(4)),'two actual READY-CX calls implement full M0')
++
++# Lift each actual middle stage, including dirty flags and Spin, by the
++# already owned AF frame. Complement columns are fixed, never discarded.
++TE=s.MutableSparseMatrix(dim,32*d,{})
++for work in range(4):
++    for flag in range(2):
++        for spin in range(4):
++            for old in range(d):
++                r=next(r for r in range(D) if E[r,work*d+old])
++                TE[8*r+4*flag+spin,(8*work+4*flag+spin)*d+old]=1
++TE=s.SparseMatrix(TE);RE=TE*TE.T
++logical=[symbolic(N.gate_matrix(word,x)) for x in word.gates]
++middle=[mat(TE*s.kronecker_product(x,s.eye(d))*TE.T+ID-RE) for x in logical]
++frame_g=[];frame_si=[]
++for op in ops:
++    frame_g.append(s.kronecker_product(rotation(D,op['rows']),s.eye(8)))
++    S=s.MutableSparseMatrix(ID)
++    for first,second in op['rows']:
++        for flag in (0,1):
++            for r in range(4):
++                for c in range(4):S[8*second+4*flag+r,8*second+4*flag+c]=N.L_I[r,c]
++    frame_si.append(s.SparseMatrix(S))
++decode=[]
++for R,S in reversed(list(zip(frame_g,frame_si))):decode.extend([S,S,R,S,S])
++schedule=decode+ready+middle+ready+frame_g
++names=['SourceI','SourceI','G','SourceI','SourceI']*len(ops)+['CX']*2+[x.op for x in word.gates]+['CX']*2+['G']*len(ops)
++require(len(schedule)==107 and Counter(names)=={'G':24,'CX':30,'SourceI':53},'actual107-call AF schedule inventory')
++actual=product(schedule,dim)
++BS=s.kronecker_product(B,s.eye(8))
++target=mat(BS*M0*(TE*s.kronecker_product(U,s.eye(d))*TE.T+ID-RE)*M0*BS.T)
++equal(actual,target,'all107 specified calls on every712 AF/flag/Spin column')
++equal(actual.T,actual,'whole actual107-call endpoint is a reflection')
++for i,gate in enumerate(decode+ready+ready+frame_g):
++    equal(DF*(gate-ID),gate-ID,'real frame and READY gate guard '+str(i))
++
++# The true regular canonical corner is a conditional trace, not the
++# working input J. Each encoded work diagonal has weight gamma=p^8.
++# M0 makes work0 read flag1 and every other work column read flag0.
++gamma=p**8
++def corner(A,work,flag):
++    rows=[8*work+4*flag+spin for spin in range(4)]
++    return s.SparseMatrix(A.extract(rows,rows))
++def ready_corner(A):return mat(gamma*(corner(A,0,1)+sum((corner(A,w,0) for w in (1,2,3)),s.zeros(4))))
++ceff=1-gamma+gamma*p**3
++equal(ready_corner(U)+(1-4*gamma)*s.eye(4),ceff*s.eye(4),'true regular corner with every encoded and complement contribution')
++
++# Exhaust every real skew local generator on each NEW parity gadget gate.
++# This retains arbitrary gate-support faults, including flag-changing and
++# Spin-entangled faults, instead of declaring every new control source zero.
++def local_skew(wires,u,v):
++    shifts=[4-q for q in wires];out=s.MutableSparseMatrix(32,32,{})
++    for column in range(32):
++        loc=sum(((column>>shift)&1)<<(len(shifts)-1-pos) for pos,shift in enumerate(shifts))
++        if loc not in (u,v):continue
++        dest=v if loc==u else u;row=column
++        for pos,shift in enumerate(shifts):row=(row&~(1<<shift))|(((dest>>(len(shifts)-1-pos))&1)<<shift)
++        out[row,column]=1 if loc==u else -1
++    return s.SparseMatrix(out)
++prefix=[s.SparseMatrix(s.eye(32))]
++for x in logical:prefix.append(mat(x*prefix[-1]))
++suffix=[None]*(len(logical)+1);suffix[-1]=s.SparseMatrix(s.eye(32))
++for j in reversed(range(len(logical))):suffix[j]=mat(suffix[j+1]*logical[j])
++raw_count=0;nonzero_count=0
++for j in range(len(ginv),len(ginv)+len(cz)):
++    gate=word.gates[j]
++    for u in range(2**len(gate.wires)):
++        for v in range(u+1,2**len(gate.wires)):
++            h=local_skew(gate.wires,u,v)
++            H=mat(suffix[j+1]*h*suffix[j+1].T)
++            delta=mat(H*U)
++            H1=H.extract(idx[1],idx[1]);dtrue=mat(H1*logical_true)
++            Xtrue=dtrue[:4,:4]
++            full=ready_corner(delta)
++            require(AF.zero(full+full.T-gamma*(Xtrue+Xtrue.T)),'raw parity source transports '+str((j,u,v)))
++            raw_count+=1
++            if not AF.zero(full+full.T):nonzero_count+=1
++require(raw_count==260,'all260 new raw skew-basis control rows retained')
++require(nonzero_count>0,'new raw controller graph is not automatically source neutral')
++
++# A norm-one fault on the FINAL actual CX of the parity gadget changes
++# the true report. It is supported on precisely that gate's two wires.
++last=len(ginv)+len(cz)-1
++h=s.MutableSparseMatrix(32,32,{})
++for port in (0,1):
++    for spin in range(4):
++        lo=16*port+4+spin;hi=lo+8
++        h[hi,lo]=1;h[lo,hi]=-1
++delta=mat(suffix[last+1]*h*prefix[last+1])
++neg=ready_corner(delta)
++equal(neg,-2*gamma*a*p*s.eye(4),'actual independent last-CX control has nonzero first source')
++equal(h.T*h,s.diag(*[s.Integer((i>>2)&1) for i in range(32)]),'hostile raw control has operator norm one')
++
++result={'status':'PASS','checks':len(checks),'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++ 'input_pins':{'AF':AF_PIN,'native':NATIVE_PIN,'frame':FRAME_PIN,'regular_source':REGULAR_PIN},
++ 'binary_middle':{'stages':37,'inventory':{'G':2,'CX':26,'SourceI':9},'new_parity_stages':25,
++   'parity_inventory':{'CX':20,'SourceI':5},'all32_columns_executed':True,'fresh_flag_required':True},
++ 'AF_schedule':{'stages':len(schedule),'inventory':dict(Counter(names)),'working_columns_executed':dim,
++   'oldRIGHT_identity_factor':2,'total_working_columns':2*dim,'regular_right_multiplicities':[55,34],
++   'full_regular_dimension':2*8*(55**2+34**2),'true_canonical_input_rank':16,
++   'ready_CX_addresses':ready_addresses,'binary_AF_physical_admission':False},
++ 'source':{'raw_new_gate_basis_rows':raw_count,'nonzero_Hermitian_rows':nonzero_count,
++   'actual_cold':'(1-p^8+p^11) I16','actual_gain_factor':'p^11/(1-p^8+p^11)',
++   'controller_transport':'true-flag query tangent; false and mixed flags have zero Hermitian conditional source',
++   'last_CX_negative_control':'D C = -2 p^8 a p I16',
++   'whole_heat':'actual107-call enlarged carrier; no cancellation claimed for independent faults'},
++ 'scope':'Specified native binary controller and AF paired-port lift, with all raw control rows. No physical flag/actuator admission, gigantic heat or GR closure.',
++ 'labels':checks}
++print(json.dumps(result,indent=2,sort_keys=True))
++```
++<!-- END 7dk READY REFLECTION COMPILER CHECKER -->
++
++<!-- BEGIN 7dk READY REFLECTION COMPILER RECEIPT -->
++```json
++{
++  "AF_schedule": {
++    "binary_AF_physical_admission": false,
++    "full_regular_dimension": 66896,
++    "inventory": {
++      "CX": 30,
++      "G": 24,
++      "SourceI": 53
++    },
++    "oldRIGHT_identity_factor": 2,
++    "ready_CX_addresses": [
++      {
++        "control0_diagonal": 18,
++        "control1_zero": 0,
++        "old_type": 0
++      },
++      {
++        "control0_diagonal": 36,
++        "control1_zero": 9,
++        "old_type": 1
++      }
++    ],
++    "regular_right_multiplicities": [
++      55,
++      34
++    ],
++    "stages": 107,
++    "total_working_columns": 1424,
++    "true_canonical_input_rank": 16,
++    "working_columns_executed": 712
++  },
++  "binary_middle": {
++    "all32_columns_executed": true,
++    "fresh_flag_required": true,
++    "inventory": {
++      "CX": 26,
++      "G": 2,
++      "SourceI": 9
++    },
++    "new_parity_stages": 25,
++    "parity_inventory": {
++      "CX": 20,
++      "SourceI": 5
++    },
++    "stages": 37
++  },
++  "checker_sha256": "c32c4b73292b512882991e5fdf1b9bae3444975615691bd1f5d3928c33e6b230",
++  "checks": 359,
++  "input_pins": {
++    "AF": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
++    "frame": "de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88",
++    "native": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
++    "regular_source": "1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f"
++  },
++  "labels": [
++    "input ready_compiler_af",
++    "input ready_compiler_native",
++    "published 7dg GOLDEN AF FRAME CHECKER",
++    "requested existing builder functions 7dg GOLDEN AF FRAME CHECKER",
++    "published 7di OFFCOPY FRAME CHECKER",
++    "requested existing builder functions 7di OFFCOPY FRAME CHECKER",
++    "published 7dj REGULAR CYCLIC SOURCE CHECKER",
++    "requested existing builder functions 7dj REGULAR CYCLIC SOURCE CHECKER",
++    "actual37-call binary reflection inventory",
++    "all11 inverse stages restore helper on every column",
++    "all32 columns: actual parity phase is controlled Z, Spin restored",
++    "all37 actual middle calls equal the controlled reflection",
++    "middle is an exact full-column reflection",
++    "exact false branch I, including all port and Spin columns",
++    "true branch is the existing p3 reflection",
++    "no endpoint flag mixing",
++    "unique coordinate-zero old block 0",
++    "actual READY-CX raw support is guarded 0",
++    "unique coordinate-zero old block 1",
++    "actual READY-CX raw support is guarded 1",
++    "two actual READY-CX calls implement full M0",
++    "actual107-call AF schedule inventory",
++    "all107 specified calls on every712 AF/flag/Spin column",
++    "whole actual107-call endpoint is a reflection",
++    "real frame and READY gate guard 0",
++    "real frame and READY gate guard 1",
++    "real frame and READY gate guard 2",
++    "real frame and READY gate guard 3",
++    "real frame and READY gate guard 4",
++    "real frame and READY gate guard 5",
++    "real frame and READY gate guard 6",
++    "real frame and READY gate guard 7",
++    "real frame and READY gate guard 8",
++    "real frame and READY gate guard 9",
++    "real frame and READY gate guard 10",
++    "real frame and READY gate guard 11",
++    "real frame and READY gate guard 12",
++    "real frame and READY gate guard 13",
++    "real frame and READY gate guard 14",
++    "real frame and READY gate guard 15",
++    "real frame and READY gate guard 16",
++    "real frame and READY gate guard 17",
++    "real frame and READY gate guard 18",
++    "real frame and READY gate guard 19",
++    "real frame and READY gate guard 20",
++    "real frame and READY gate guard 21",
++    "real frame and READY gate guard 22",
++    "real frame and READY gate guard 23",
++    "real frame and READY gate guard 24",
++    "real frame and READY gate guard 25",
++    "real frame and READY gate guard 26",
++    "real frame and READY gate guard 27",
++    "real frame and READY gate guard 28",
++    "real frame and READY gate guard 29",
++    "real frame and READY gate guard 30",
++    "real frame and READY gate guard 31",
++    "real frame and READY gate guard 32",
++    "real frame and READY gate guard 33",
++    "real frame and READY gate guard 34",
++    "real frame and READY gate guard 35",
++    "real frame and READY gate guard 36",
++    "real frame and READY gate guard 37",
++    "real frame and READY gate guard 38",
++    "real frame and READY gate guard 39",
++    "real frame and READY gate guard 40",
++    "real frame and READY gate guard 41",
++    "real frame and READY gate guard 42",
++    "real frame and READY gate guard 43",
++    "real frame and READY gate guard 44",
++    "real frame and READY gate guard 45",
++    "real frame and READY gate guard 46",
++    "real frame and READY gate guard 47",
++    "real frame and READY gate guard 48",
++    "real frame and READY gate guard 49",
++    "real frame and READY gate guard 50",
++    "real frame and READY gate guard 51",
++    "real frame and READY gate guard 52",
++    "real frame and READY gate guard 53",
++    "real frame and READY gate guard 54",
++    "real frame and READY gate guard 55",
++    "real frame and READY gate guard 56",
++    "real frame and READY gate guard 57",
++    "real frame and READY gate guard 58",
++    "real frame and READY gate guard 59",
++    "real frame and READY gate guard 60",
++    "real frame and READY gate guard 61",
++    "real frame and READY gate guard 62",
++    "real frame and READY gate guard 63",
++    "real frame and READY gate guard 64",
++    "real frame and READY gate guard 65",
++    "real frame and READY gate guard 66",
++    "real frame and READY gate guard 67",
++    "real frame and READY gate guard 68",
++    "real frame and READY gate guard 69",
++    "true regular corner with every encoded and complement contribution",
++    "raw parity source transports (11, 0, 1)",
++    "raw parity source transports (11, 0, 2)",
++    "raw parity source transports (11, 0, 3)",
++    "raw parity source transports (11, 1, 2)",
++    "raw parity source transports (11, 1, 3)",
++    "raw parity source transports (11, 2, 3)",
++    "raw parity source transports (12, 0, 1)",
++    "raw parity source transports (12, 0, 2)",
++    "raw parity source transports (12, 0, 3)",
++    "raw parity source transports (12, 1, 2)",
++    "raw parity source transports (12, 1, 3)",
++    "raw parity source transports (12, 2, 3)",
++    "raw parity source transports (13, 0, 1)",
++    "raw parity source transports (13, 0, 2)",
++    "raw parity source transports (13, 0, 3)",
++    "raw parity source transports (13, 1, 2)",
++    "raw parity source transports (13, 1, 3)",
++    "raw parity source transports (13, 2, 3)",
++    "raw parity source transports (14, 0, 1)",
++    "raw parity source transports (14, 0, 2)",
++    "raw parity source transports (14, 0, 3)",
++    "raw parity source transports (14, 0, 4)",
++    "raw parity source transports (14, 0, 5)",
++    "raw parity source transports (14, 0, 6)",
++    "raw parity source transports (14, 0, 7)",
++    "raw parity source transports (14, 1, 2)",
++    "raw parity source transports (14, 1, 3)",
++    "raw parity source transports (14, 1, 4)",
++    "raw parity source transports (14, 1, 5)",
++    "raw parity source transports (14, 1, 6)",
++    "raw parity source transports (14, 1, 7)",
++    "raw parity source transports (14, 2, 3)",
++    "raw parity source transports (14, 2, 4)",
++    "raw parity source transports (14, 2, 5)",
++    "raw parity source transports (14, 2, 6)",
++    "raw parity source transports (14, 2, 7)",
++    "raw parity source transports (14, 3, 4)",
++    "raw parity source transports (14, 3, 5)",
++    "raw parity source transports (14, 3, 6)",
++    "raw parity source transports (14, 3, 7)",
++    "raw parity source transports (14, 4, 5)",
++    "raw parity source transports (14, 4, 6)",
++    "raw parity source transports (14, 4, 7)",
++    "raw parity source transports (14, 5, 6)",
++    "raw parity source transports (14, 5, 7)",
++    "raw parity source transports (14, 6, 7)",
++    "raw parity source transports (15, 0, 1)",
++    "raw parity source transports (15, 0, 2)",
++    "raw parity source transports (15, 0, 3)",
++    "raw parity source transports (15, 1, 2)",
++    "raw parity source transports (15, 1, 3)",
++    "raw parity source transports (15, 2, 3)",
++    "raw parity source transports (16, 0, 1)",
++    "raw parity source transports (16, 0, 2)",
++    "raw parity source transports (16, 0, 3)",
++    "raw parity source transports (16, 1, 2)",
++    "raw parity source transports (16, 1, 3)",
++    "raw parity source transports (16, 2, 3)",
++    "raw parity source transports (17, 0, 1)",
++    "raw parity source transports (17, 0, 2)",
++    "raw parity source transports (17, 0, 3)",
++    "raw parity source transports (17, 1, 2)",
++    "raw parity source transports (17, 1, 3)",
++    "raw parity source transports (17, 2, 3)",
++    "raw parity source transports (18, 0, 1)",
++    "raw parity source transports (18, 0, 2)",
++    "raw parity source transports (18, 0, 3)",
++    "raw parity source transports (18, 1, 2)",
++    "raw parity source transports (18, 1, 3)",
++    "raw parity source transports (18, 2, 3)",
++    "raw parity source transports (19, 0, 1)",
++    "raw parity source transports (19, 0, 2)",
++    "raw parity source transports (19, 0, 3)",
++    "raw parity source transports (19, 1, 2)",
++    "raw parity source transports (19, 1, 3)",
++    "raw parity source transports (19, 2, 3)",
++    "raw parity source transports (20, 0, 1)",
++    "raw parity source transports (20, 0, 2)",
++    "raw parity source transports (20, 0, 3)",
++    "raw parity source transports (20, 1, 2)",
++    "raw parity source transports (20, 1, 3)",
++    "raw parity source transports (20, 2, 3)",
++    "raw parity source transports (21, 0, 1)",
++    "raw parity source transports (21, 0, 2)",
++    "raw parity source transports (21, 0, 3)",
++    "raw parity source transports (21, 0, 4)",
++    "raw parity source transports (21, 0, 5)",
++    "raw parity source transports (21, 0, 6)",
++    "raw parity source transports (21, 0, 7)",
++    "raw parity source transports (21, 1, 2)",
++    "raw parity source transports (21, 1, 3)",
++    "raw parity source transports (21, 1, 4)",
++    "raw parity source transports (21, 1, 5)",
++    "raw parity source transports (21, 1, 6)",
++    "raw parity source transports (21, 1, 7)",
++    "raw parity source transports (21, 2, 3)",
++    "raw parity source transports (21, 2, 4)",
++    "raw parity source transports (21, 2, 5)",
++    "raw parity source transports (21, 2, 6)",
++    "raw parity source transports (21, 2, 7)",
++    "raw parity source transports (21, 3, 4)",
++    "raw parity source transports (21, 3, 5)",
++    "raw parity source transports (21, 3, 6)",
++    "raw parity source transports (21, 3, 7)",
++    "raw parity source transports (21, 4, 5)",
++    "raw parity source transports (21, 4, 6)",
++    "raw parity source transports (21, 4, 7)",
++    "raw parity source transports (21, 5, 6)",
++    "raw parity source transports (21, 5, 7)",
++    "raw parity source transports (21, 6, 7)",
++    "raw parity source transports (22, 0, 1)",
++    "raw parity source transports (22, 0, 2)",
++    "raw parity source transports (22, 0, 3)",
++    "raw parity source transports (22, 1, 2)",
++    "raw parity source transports (22, 1, 3)",
++    "raw parity source transports (22, 2, 3)",
++    "raw parity source transports (23, 0, 1)",
++    "raw parity source transports (23, 0, 2)",
++    "raw parity source transports (23, 0, 3)",
++    "raw parity source transports (23, 1, 2)",
++    "raw parity source transports (23, 1, 3)",
++    "raw parity source transports (23, 2, 3)",
++    "raw parity source transports (24, 0, 1)",
++    "raw parity source transports (24, 0, 2)",
++    "raw parity source transports (24, 0, 3)",
++    "raw parity source transports (24, 1, 2)",
++    "raw parity source transports (24, 1, 3)",
++    "raw parity source transports (24, 2, 3)",
++    "raw parity source transports (25, 0, 1)",
++    "raw parity source transports (25, 0, 2)",
++    "raw parity source transports (25, 0, 3)",
++    "raw parity source transports (25, 1, 2)",
++    "raw parity source transports (25, 1, 3)",
++    "raw parity source transports (25, 2, 3)",
++    "raw parity source transports (26, 0, 1)",
++    "raw parity source transports (26, 0, 2)",
++    "raw parity source transports (26, 0, 3)",
++    "raw parity source transports (26, 1, 2)",
++    "raw parity source transports (26, 1, 3)",
++    "raw parity source transports (26, 2, 3)",
++    "raw parity source transports (27, 0, 1)",
++    "raw parity source transports (27, 0, 2)",
++    "raw parity source transports (27, 0, 3)",
++    "raw parity source transports (27, 1, 2)",
++    "raw parity source transports (27, 1, 3)",
++    "raw parity source transports (27, 2, 3)",
++    "raw parity source transports (28, 0, 1)",
++    "raw parity source transports (28, 0, 2)",
++    "raw parity source transports (28, 0, 3)",
++    "raw parity source transports (28, 1, 2)",
++    "raw parity source transports (28, 1, 3)",
++    "raw parity source transports (28, 2, 3)",
++    "raw parity source transports (29, 0, 1)",
++    "raw parity source transports (29, 0, 2)",
++    "raw parity source transports (29, 0, 3)",
++    "raw parity source transports (29, 0, 4)",
++    "raw parity source transports (29, 0, 5)",
++    "raw parity source transports (29, 0, 6)",
++    "raw parity source transports (29, 0, 7)",
++    "raw parity source transports (29, 1, 2)",
++    "raw parity source transports (29, 1, 3)",
++    "raw parity source transports (29, 1, 4)",
++    "raw parity source transports (29, 1, 5)",
++    "raw parity source transports (29, 1, 6)",
++    "raw parity source transports (29, 1, 7)",
++    "raw parity source transports (29, 2, 3)",
++    "raw parity source transports (29, 2, 4)",
++    "raw parity source transports (29, 2, 5)",
++    "raw parity source transports (29, 2, 6)",
++    "raw parity source transports (29, 2, 7)",
++    "raw parity source transports (29, 3, 4)",
++    "raw parity source transports (29, 3, 5)",
++    "raw parity source transports (29, 3, 6)",
++    "raw parity source transports (29, 3, 7)",
++    "raw parity source transports (29, 4, 5)",
++    "raw parity source transports (29, 4, 6)",
++    "raw parity source transports (29, 4, 7)",
++    "raw parity source transports (29, 5, 6)",
++    "raw parity source transports (29, 5, 7)",
++    "raw parity source transports (29, 6, 7)",
++    "raw parity source transports (30, 0, 1)",
++    "raw parity source transports (30, 0, 2)",
++    "raw parity source transports (30, 0, 3)",
++    "raw parity source transports (30, 0, 4)",
++    "raw parity source transports (30, 0, 5)",
++    "raw parity source transports (30, 0, 6)",
++    "raw parity source transports (30, 0, 7)",
++    "raw parity source transports (30, 1, 2)",
++    "raw parity source transports (30, 1, 3)",
++    "raw parity source transports (30, 1, 4)",
++    "raw parity source transports (30, 1, 5)",
++    "raw parity source transports (30, 1, 6)",
++    "raw parity source transports (30, 1, 7)",
++    "raw parity source transports (30, 2, 3)",
++    "raw parity source transports (30, 2, 4)",
++    "raw parity source transports (30, 2, 5)",
++    "raw parity source transports (30, 2, 6)",
++    "raw parity source transports (30, 2, 7)",
++    "raw parity source transports (30, 3, 4)",
++    "raw parity source transports (30, 3, 5)",
++    "raw parity source transports (30, 3, 6)",
++    "raw parity source transports (30, 3, 7)",
++    "raw parity source transports (30, 4, 5)",
++    "raw parity source transports (30, 4, 6)",
++    "raw parity source transports (30, 4, 7)",
++    "raw parity source transports (30, 5, 6)",
++    "raw parity source transports (30, 5, 7)",
++    "raw parity source transports (30, 6, 7)",
++    "raw parity source transports (31, 0, 1)",
++    "raw parity source transports (31, 0, 2)",
++    "raw parity source transports (31, 0, 3)",
++    "raw parity source transports (31, 0, 4)",
++    "raw parity source transports (31, 0, 5)",
++    "raw parity source transports (31, 0, 6)",
++    "raw parity source transports (31, 0, 7)",
++    "raw parity source transports (31, 1, 2)",
++    "raw parity source transports (31, 1, 3)",
++    "raw parity source transports (31, 1, 4)",
++    "raw parity source transports (31, 1, 5)",
++    "raw parity source transports (31, 1, 6)",
++    "raw parity source transports (31, 1, 7)",
++    "raw parity source transports (31, 2, 3)",
++    "raw parity source transports (31, 2, 4)",
++    "raw parity source transports (31, 2, 5)",
++    "raw parity source transports (31, 2, 6)",
++    "raw parity source transports (31, 2, 7)",
++    "raw parity source transports (31, 3, 4)",
++    "raw parity source transports (31, 3, 5)",
++    "raw parity source transports (31, 3, 6)",
++    "raw parity source transports (31, 3, 7)",
++    "raw parity source transports (31, 4, 5)",
++    "raw parity source transports (31, 4, 6)",
++    "raw parity source transports (31, 4, 7)",
++    "raw parity source transports (31, 5, 6)",
++    "raw parity source transports (31, 5, 7)",
++    "raw parity source transports (31, 6, 7)",
++    "raw parity source transports (32, 0, 1)",
++    "raw parity source transports (32, 0, 2)",
++    "raw parity source transports (32, 0, 3)",
++    "raw parity source transports (32, 1, 2)",
++    "raw parity source transports (32, 1, 3)",
++    "raw parity source transports (32, 2, 3)",
++    "raw parity source transports (33, 0, 1)",
++    "raw parity source transports (33, 0, 2)",
++    "raw parity source transports (33, 0, 3)",
++    "raw parity source transports (33, 1, 2)",
++    "raw parity source transports (33, 1, 3)",
++    "raw parity source transports (33, 2, 3)",
++    "raw parity source transports (34, 0, 1)",
++    "raw parity source transports (34, 0, 2)",
++    "raw parity source transports (34, 0, 3)",
++    "raw parity source transports (34, 1, 2)",
++    "raw parity source transports (34, 1, 3)",
++    "raw parity source transports (34, 2, 3)",
++    "raw parity source transports (35, 0, 1)",
++    "raw parity source transports (35, 0, 2)",
++    "raw parity source transports (35, 0, 3)",
++    "raw parity source transports (35, 1, 2)",
++    "raw parity source transports (35, 1, 3)",
++    "raw parity source transports (35, 2, 3)",
++    "all260 new raw skew-basis control rows retained",
++    "new raw controller graph is not automatically source neutral",
++    "actual independent last-CX control has nonzero first source",
++    "hostile raw control has operator norm one"
++  ],
++  "scope": "Specified native binary controller and AF paired-port lift, with all raw control rows. No physical flag/actuator admission, gigantic heat or GR closure.",
++  "source": {
++    "actual_cold": "(1-p^8+p^11) I16",
++    "actual_gain_factor": "p^11/(1-p^8+p^11)",
++    "controller_transport": "true-flag query tangent; false and mixed flags have zero Hermitian conditional source",
++    "last_CX_negative_control": "D C = -2 p^8 a p I16",
++    "nonzero_Hermitian_rows": 20,
++    "raw_new_gate_basis_rows": 260,
++    "whole_heat": "actual107-call enlarged carrier; no cancellation claimed for independent faults"
++  },
++  "status": "PASS"
++}
++```
++<!-- END 7dk READY REFLECTION COMPILER RECEIPT -->
 +
  ## 8. Reproduction
  

@@ -2,7 +2,7 @@
 
 ## Status
 
-Primary integration artifact for WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION. The broad objective remains active. C0 is not frozen or independently accepted, so no formalization coverage percentage is reported. Counts below describe starting inputs, not the C0 denominator. The latest integrated source checkpoint is the open Draft #334 head `1dce9b709109c3fc2921c97ff75a31b3bcb09d6c`; its exact seven-commit post-`fd35893d` range and limits are recorded at the end of this artifact.
+Primary integration artifact for WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION. The broad objective remains active. C0 is not frozen or independently accepted, so no formalization coverage percentage is reported. Counts below describe starting inputs, not the C0 denominator. At the start of the current increment, the latest integrated source checkpoint was the open Draft #334 head `1dce9b709109c3fc2921c97ff75a31b3bcb09d6c`; the current fetched head `4a57cfd948226704b9561dec287d7f60154985ea`, exact eight-commit source range and limits are recorded in the final dated section.
 
 ## Book and registry maintenance checkpoint — 28 October 2026
 
@@ -14,8 +14,9 @@ accept new #334 applications or close a physical GR premise.
 Input refs: main 8b94198c8dfbdf5983ad0b350b058fb30bb68a54;
 #402 before this increment 30ffef0f5a4353874f8966a4b69d09e534f3c47d;
 published science #334 eebcb5e467742df3e9cf7fa9702042d7294aa742.
-The latest #334 source range reviewed for this intake ends at
-`8daed32d560df18837bcc69458a8fa538a9cf135`; it is pinned below separately
+The source range reviewed for the original book/registry intake ended at
+`8daed32d560df18837bcc69458a8fa538a9cf135`; the subsequent source delta
+through `4a57cfd948226704b9561dec287d7f60154985ea` is pinned below separately
 from the compiled Lean inputs.
 The concurrently published #402 source intake
 5007f1707932629613d4b846482b8cd8cae9a4a3 is preserved by the integration merge.
@@ -13301,3 +13302,45 @@ preserve the exact positive chart and uniform `P`, `Ω` lower bounds. This
 removes only the finite summation step on the declared mathematical QUERY
 domain; it does not formalize physical admission, the map into `X_N`, the
 physical norm lift, or GR closure.
+
+## Current #334 source checkpoint at `4a57cfd9`: READY reflection and full raw control source — 28 October 2026
+
+The existing Draft #334 is now fetched at
+`4a57cfd948226704b9561dec287d7f60154985ea`. This is one commit after the
+previously integrated `1dce9b7` checkpoint. Its exact eight-commit range from
+`fd35893d`, all eight changed files, full patch, and the prior nine linked
+inputs are retained in
+[`d0_334_post_fd_delta_2026-10-28`](sources/d0_334_post_fd_delta_2026-10-28/README.md).
+The newly embedded §7dk checker and owner receipt are extracted byte-for-byte
+from the pinned paid-source memo. Its two code dependencies are separately
+pinned because `native_execution.py` is present on #334 but absent from this
+#402 checkout.
+
+The §7dk result provides a literal 37-call native binary reflection and a
+specified 107-call AF paired-port profile. It checks all 712 AF/flag/Spin
+columns with the oldRIGHT identity factor retained; all 260 new real-skew
+local control rows obey the source map, and 20 rows have nonzero Hermitian
+source. A norm-one direction at the final actual CX is a positive-source
+control. Ordinary and optimized replays each pass 359 checks, match byte for
+byte, and equal the embedded owner receipt exactly. This validates the
+declared finite recipe, not its physical admission.
+
+The proof-architecture Lean module now states the generic scalar identity
+behind §7dk(977): if the READY source scales by `γ`, the cold center is
+`c_ready = 1 - γ + γ c`, and the actual adjusted gain is
+`λ_ready = (γ c / c_ready) λ`, then the normalized source coefficient is
+unchanged. Lean also proves `c_ready > 0` on `0 < γ ≤ 1`, `0 < c`, and records
+the fixture identity `γ=p^8`, `c=p^3`, `c_ready=1-p^8+p^11`. This formalizes
+only scalar gain cancellation. The operator identity transferring the
+complete control covector into the QUERY effect, physical flag preparation,
+admitted actuators, full price, future-test map, task-law selection, and the
+physical norm lift into `X_N` remain open. It supplies no new physical
+selection or GR-closure claim; `GR_closed=false`.
+
+The final public `D0.All` build passed 4,774 Lake jobs on Lean 4.30.0. Its
+[build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_ready_reflection.json)
+binds Lean source SHA-256
+`d19513df16bc00ff285081b8470fb16df2eaed64f10d54c8c53a4a8ea77f5d40` and the
+recorded dependency/toolchain snapshot. The repository build still reports
+existing linter warnings in unrelated modules; the changed module passed its
+narrow target without warnings.

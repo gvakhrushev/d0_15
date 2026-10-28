@@ -1,19 +1,13 @@
 # #334 continuation after `fd35893d`
 
-The current fetched head of the existing Draft #334 is
+The previously integrated head of the existing Draft #334 was
 `1dce9b709109c3fc2921c97ff75a31b3bcb09d6c` (open Draft; GitHub reported no
-status-check rows at the fetch). This packet preserves the seven-commit range
-from `fd35893d77e4aa5f819bafa0c6428c8e7a8f1812` to that head: eight changed
-files, the full binary patch, ordered commits, and nine linked source inputs.
-The exact changed source snapshots are under `upstream/`; the shared task brief
-and large paid-source memo remain untouched at their canonical paths in this
-integration worktree. Task inputs are pinned to `fd35893d`; apparatus inputs
-are pinned to `73816d279dc23ee62be75662bf3081013a49ad55`. The verifier checks
-source commits and Git blobs, source links, patch bytes, SHA-256 values, replay
-receipts, and complete packet inventory. Packet-local attributes mark the exact
-binary patch and two verbatim upstream Markdown snapshots so their original
-trailing spaces remain intact; whitespace checks remain active on authored
-files and the rest of the repository.
+status-check rows at that fetch). That earlier packet revision preserved the
+seven-commit range, its eight changed files and nine linked inputs. This
+current packet extends the same source intake by one commit to
+`4a57cfd948226704b9561dec287d7f60154985ea`; the previous exact packet state
+remains in the #402 branch history. The historical result and replay sections
+below are retained, followed by the new §7dk source checkpoint.
 
 ## Result and scope
 
@@ -98,6 +92,37 @@ no physical GR impossibility, no new full42 root, and no Lean/CI run by its
 owner. The local replay validates its bounded checker and result agreement;
 it does not replay the native 42-field variation or establish physical
 admission, scientific acceptance, or GR closure.
+
+## Current fetched head at `4a57cfd9`: READY reflection and full raw control source
+
+The current source range contains eight commits from `fd35893d`, with the same
+eight changed paths and nine previously pinned linked inputs. The full patch,
+ordered commit list and exact snapshots are retained in this packet. The task
+brief and paid-source memo are pinned to the new head. The checker’s AF-frame
+and native execution modules are separately pinned at the same source head;
+`native_execution.py` is present on #334 and absent from this #402 checkout.
+
+The new §7dk result provides a literal 37-call native binary reflection and a
+specified 107-call AF paired-port profile. It checks all 712 AF/flag/Spin
+columns with the oldRIGHT identity factor retained. All 260 new real-skew
+local control rows obey the source map; 20 have nonzero Hermitian QUERY
+source. A norm-one direction on the actual final CX is a positive-source
+control. Ordinary and optimized runs each pass 359 checks, match byte for
+byte, and equal the embedded owner receipt exactly. The checker SHA-256 is
+`c32c4b73292b512882991e5fdf1b9bae3444975615691bd1f5d3928c33e6b230`; the
+receipt SHA-256 is
+`167699a4cc23892e6413a7e5bbe53a56ccaceed433f801fb6d57008dfee24569`.
+The local replay used Python 3.9.6 and SymPy 1.14.0 with empty stderr.
+
+The source identity preserves the true readiness gain:
+`c_ready=1-γ+γc`, `λ_ready=(γc/c_ready)λ`, so the γ-scaled source has the
+same normalized coefficient as the original QUERY source. This is a
+supporting application to the existing recovery, not physical admission. The
+AF profile is not certified as physical binary-wire admission. A real blank
+flag, admitted addressed actuators, complete future-test map, actual paid
+prices, and a task-faithful QUERY domain or a proved compensating source
+remain open. No dense 66896 heat replay, physical flag-preparation
+experiment, or full GR closure is claimed. `GR_closed=false`.
 
 Run the packet verifier from the repository root:
 

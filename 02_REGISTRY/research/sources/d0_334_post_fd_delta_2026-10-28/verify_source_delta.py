@@ -12,7 +12,7 @@ import subprocess
 PACKET = Path(__file__).resolve().parent
 REPO = PACKET.parents[3]
 BASE = "fd35893d77e4aa5f819bafa0c6428c8e7a8f1812"
-HEAD = "1dce9b709109c3fc2921c97ff75a31b3bcb09d6c"
+HEAD = "4a57cfd948226704b9561dec287d7f60154985ea"
 TASK_INPUT = "02_REGISTRY/research/A4D_TASK_FAITHFUL_RETURN_SOURCE_2026_10_28.md"
 TASK_COMMIT = BASE
 CHANGED_PATHS = [
@@ -110,7 +110,8 @@ def verify_source_objects(manifest: dict[str, object]) -> None:
     git_bytes("cat-file", "-e", f"{BASE}^{{commit}}")
     git_bytes("cat-file", "-e", f"{HEAD}^{{commit}}")
     subprocess.run(["git", "merge-base", "--is-ancestor", BASE, HEAD], cwd=REPO, check=True)
-    rows = manifest["source_files"] + manifest["source_inputs"]
+    rows = (manifest["source_files"] + manifest["source_inputs"] +
+            manifest["checker_inputs"])
     for row in rows:
         source = regular(PACKET / row["packet_path"])
         blob = git_bytes("cat-file", "blob", row["git_blob_sha1"])
@@ -147,6 +148,14 @@ def verify_relative_links(manifest: dict[str, object]) -> None:
             require(linked.exists(), f"Missing relative source link: {source}: {target}")
 
 
+def embedded_fence(source: bytes, marker: str, language: str) -> bytes:
+    """Extract one exact fenced artifact from its pinned upstream Markdown."""
+    text = source.decode("utf-8")
+    block = text.split(f"<!-- BEGIN {marker} -->\n", 1)[1]
+    block = block.split(f"<!-- END {marker} -->", 1)[0]
+    return block.split(f"```{language}\n", 1)[1].rsplit("```", 1)[0].encode()
+
+
 def verify() -> dict[str, object]:
     manifest_data = regular(PACKET / "MANIFEST.json")
     checksum = regular(PACKET / "MANIFEST.sha256").decode("ascii").split()[0]
@@ -156,7 +165,7 @@ def verify() -> dict[str, object]:
             manifest["repository"] == "gvakhrushev/d0_15" and
             manifest["owner_pr"] == 334, "Unexpected source identity")
     require(manifest["source_range"] == {"base_commit": BASE, "head_commit": HEAD,
-            "commits": 7}, "Unexpected source range")
+            "commits": 8}, "Unexpected source range")
 
     source_rows = manifest["source_files"]
     require([row["repository_path"] for row in source_rows] == CHANGED_PATHS,
@@ -189,6 +198,18 @@ def verify() -> dict[str, object]:
                 f"Source Git blob ID mismatch: {row['repository_path']}")
         canonical = regular(REPO / row["repository_path"])
         require(canonical == data, f"Canonical restored source differs: {row['repository_path']}")
+
+    checker_inputs = manifest["checker_inputs"]
+    require([row["repository_path"] for row in checker_inputs] == [
+            "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
+            "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+        ], "Unexpected §7dk checker input list")
+    for row in checker_inputs:
+        data = regular(PACKET / row["packet_path"])
+        require(row["commit"] == HEAD and row["bytes"] == len(data) and
+                row["sha256"] == sha256(data) and
+                row["git_blob_sha1"] == blob_sha1(data),
+                f"§7dk checker input digest differs: {row['repository_path']}")
 
     internal = manifest["replays"]["internal_program"]
     internal_normal = regular(PACKET / internal["normal_output"])
@@ -265,6 +286,54 @@ def verify() -> dict[str, object]:
             not regular(PACKET / task["optimized_stderr"]),
             "Task-effect replay emitted unexpected stderr")
 
+    embedded = manifest["embedded_checker"]
+    source_row = next(row for row in manifest["source_files"]
+                      if row["repository_path"] == embedded["source_path"])
+    source_memo = regular(PACKET / source_row["packet_path"])
+    ready_checker = embedded_fence(source_memo, embedded["checker_marker"], "python")
+    ready_owner = embedded_fence(source_memo, embedded["receipt_marker"], "json")
+    ready = manifest["replays"]["ready_reflection"]
+    require(ready_checker == regular(PACKET / ready["checker"]) and
+            ready_owner == regular(PACKET / ready["owner_result"]),
+            "§7dk checker or owner receipt differs from embedded upstream bytes")
+    require(sha256(ready_checker) == embedded["checker_sha256"] ==
+            ready["expected_checker_sha256"] and
+            sha256(ready_owner) == embedded["receipt_sha256"] ==
+            ready["owner_result_sha256"], "§7dk embedded source digest differs")
+    ready_normal = regular(PACKET / ready["normal_output"])
+    ready_optimized = regular(PACKET / ready["optimized_output"])
+    require(ready_normal == ready_optimized, "§7dk ordinary/optimized outputs differ")
+    require(not regular(PACKET / ready["normal_stderr"]) and
+            not regular(PACKET / ready["optimized_stderr"]),
+            "§7dk replay emitted stderr")
+    ready_value = json.loads(ready_normal)
+    ready_owner_value = json.loads(ready_owner)
+    require(ready_owner_value == ready_value,
+            "§7dk local replay differs from its embedded owner receipt")
+    require(ready_value["status"] == ready["expected_status"] == "PASS" and
+            ready_value["checks"] == ready["expected_checks"] == 359 and
+            ready_value["checker_sha256"] == embedded["checker_sha256"],
+            "Unexpected §7dk replay result")
+    require(ready_value["AF_schedule"]["stages"] == 107 and
+            ready_value["AF_schedule"]["working_columns_executed"] == 712 and
+            ready_value["AF_schedule"]["oldRIGHT_identity_factor"] == 2 and
+            ready_value["AF_schedule"]["binary_AF_physical_admission"] is False and
+            ready_value["source"]["raw_new_gate_basis_rows"] == 260 and
+            ready_value["source"]["nonzero_Hermitian_rows"] == 20 and
+            "No physical flag/actuator admission" in ready_value["scope"] and
+            "GR closure" in ready_value["scope"],
+            "§7dk physical scope or exact control counts changed")
+    ready_input_pins = {row["repository_path"]: row["sha256"] for row in checker_inputs}
+    require(ready_value["input_pins"]["AF"] == ready_input_pins[
+                "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py"] and
+            ready_value["input_pins"]["native"] == ready_input_pins[
+                "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"],
+            "§7dk checker input hashes differ from the pinned artifacts")
+    ready_environment = json.loads(regular(PACKET / ready["environment_file"]))
+    require(ready_environment["normal_optimized_byte_identical"] is True and
+            ready_environment["stderr_bytes_each"] == 0,
+            "Unexpected §7dk replay environment receipt")
+
     canonical_inputs = manifest["source_inputs"]
     require([row["repository_path"] for row in canonical_inputs] == SOURCE_INPUT_PATHS,
             "Related source-input list differs")
@@ -276,7 +345,7 @@ def verify() -> dict[str, object]:
         "status": "PASS_SOURCE_BYTES_AND_BOUNDED_REPLAY",
         "source_head": HEAD,
         "changed_source_files": len(CHANGED_PATHS),
-        "source_range_commits": 7,
+        "source_range_commits": 8,
         "related_source_input_files": len(SOURCE_INPUT_PATHS),
         "internal_program_checks": internal_value["checks"],
         "internal_program_owner_numeric_fields_differing": int_count,
@@ -290,6 +359,10 @@ def verify() -> dict[str, object]:
         "closure_audit_max_numeric_drift": closure_drift,
         "closure_audit_stderr_bytes": len(closure_stderr),
         "closure_audit_environment": closure_environment,
+        "ready_reflection_checks": ready_value["checks"],
+        "ready_reflection_raw_control_rows": ready_value["source"]["raw_new_gate_basis_rows"],
+        "ready_reflection_nonzero_source_rows": ready_value["source"]["nonzero_Hermitian_rows"],
+        "ready_reflection_checker_sha256": ready_value["checker_sha256"],
         "physical_admission_or_GR_closure": False,
     }
 

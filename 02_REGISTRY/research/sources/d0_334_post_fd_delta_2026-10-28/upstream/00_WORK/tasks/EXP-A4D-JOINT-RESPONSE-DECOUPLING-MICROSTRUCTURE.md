@@ -17679,3 +17679,60 @@ are changed; every earlier and incoming byte is retained.
 
 Checker SHA256: `1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f`.
 Receipt SHA256: `01e14a9d561da0879bd9c75b66054484f9efd1ef58e6f5ec4e9899707046f74a`.
+
+### 28 October 2026 checkpoint — explicit readiness compiler and its retained raw QUERY map
+
+SAME PR334, `constitutive/native-programme-v1`; phase: native realization
+and composition. Inputs: §7dj961–970 at `15738cca`, owned §7bw606 and the
+incoming full closure-source audit through `1dce9b70`. Existing primary
+now contains §7dk971–978, with the exact executed checker and receipt.
+
+Exact parent substitution: §7dj's controlled-reflection/READY target
+has an explicit source-preserving recipe. The original parity phase
+uses20CX+5SourceI; the executed reflected middle has37 literal native
+calls. Two guarded addressed READY-CX calls per temporal half combine
+with the existing AF frame to give107 specified paired-profile calls,
+on the full regular A8 carrier with its55/34 right multiplicities and
+one real separate flag. This AF profile is not asserted to be physically
+admitted or binary-wire `Execution/1`; further actuation expansion
+retains its own real stages and sources.
+
+Every raw control fault, including routed-flag/Spin faults, has an exact
+conditional-expectation map: false and flag-cross Hermitian sources
+vanish, while the true component is gamma times the old prepared source.
+New central rows map to delta Pi=[h_Q,Pi]/2 in the existing QUERY-effect
+consumer, with norm at most25/2 times the emitted maximum raw norm.
+Independent encoder halves transfer separately; frame/READY rows use
+the actual guarded supports. The genuine gain changes by gamma*c/c_ready,
+so no QUERY source is suppressed by a small readiness probability.
+
+Smallest decisive check: all37 binary calls/all32 columns, followed by
+all107 paired calls/all712 AF/flag/Spin columns (oldRIGHT identity factor2
+retained); every new gate's real skew local basis,260 rows total, obeys
+the source map. Twenty rows have nonzero Hermitian source. A norm-one
+fault on the actual final CX gives delta C=-2 gamma*a*p I and normalized
+source4ap/(c lambda)>0. The internal full heat FIRST source is zero by
+the owned606 reflection theorem for the whole matched endpoint at its
+stated placement; a general retained K alone does not imply this heat
+hypothesis. The actual absolute price and any noninternal/other source remain.
+
+359 checks pass with byte-identical normal/optimized JSON. Exact code
+SHA256 `c32c4b73292b512882991e5fdf1b9bae3444975615691bd1f5d3928c33e6b230`;
+receipt SHA256 `167699a4cc23892e6413a7e5bbe53a56ccaceed433f801fb6d57008dfee24569`.
+Incoming closure-audit files are preserved; their checks are consumed,
+not replayed or counted as new. No giant nonlinear GR build, dense66896
+heat or physical flag-preparation experiment is claimed.
+
+Carrier/norm/source convention: the same canonical regular AF conditional
+expectation, fresh flag and full protected input; actual c_ready,
+lambda_ready and accumulated positive-past gain. Raw support norms map
+through real suffixes to the existing report-effect graph. The operator
+identity precedes scalar weighting. Retained physical hypotheses:
+flag preparation, admitted addressed actuators, complete future-test
+map and price, and an independently established task-faithful QUERY
+domain or actual compensating source. The compiler does not install
+any of those by selecting an Einstein restriction.
+
+Assembly result is supporting direct application to §7dj, not physical
+closure or an accepted constitutive substitution. No new task/node,
+acceptance, Ready, claim promotion or merge. `GR_closed=false`.
