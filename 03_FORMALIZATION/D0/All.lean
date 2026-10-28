@@ -417,6 +417,7 @@ import D0.Geometry.ArchiveGradedCochainSectorTrace
 import D0.Geometry.ArchiveGradedMetricMeasureBinding
 import D0.Geometry.ArchiveGradedRefinementChainMap
 import D0.Geometry.ArchiveGradedRefinementComposedReadout
+import D0.Geometry.ArchiveGradedRefinementWeakTest
 import D0.Geometry.ArchiveHeatTrace
 import D0.Geometry.ArchiveHodgeCARDirac
 import D0.Geometry.ArchiveHodgeCARDiracKernel

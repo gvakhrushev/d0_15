@@ -12448,3 +12448,29 @@ current. A Git-diff candidate is not proof that the actual search input
 changed. A future reproducible search receipt needs an explicit corpus and
 tool/environment capture and the availability of every followed pin; those
 remain open rather than being inferred by this command.
+
+### Weak smooth test for the composed frozen refinement
+
+[`D0.Geometry.ArchiveGradedRefinementWeakTest`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean)
+applies the existing adjacent graded pullback to its unit one-form on the
+actual four-role carrier. The normalized counting pairing of the resulting
+transported-minus-sampled component error with a fixed sampled sine tends to
+`2 / π`: the proof reduces the four-coordinate sum to one coordinate, proves
+the finite sine identity and its limit, and uses the existing composed-map
+component theorem. This supplies a fixed smooth witness against weak
+convergence for this particular component and sampling convention, not merely
+an `L1` or `L2` bound.
+
+The input is §5 of #310's `A4D_NATIVE_COCHAIN_REFINEMENT.md` at commit
+`75527846bf3603a1c51acf445f8354e3254341be`, blob
+`c216f19daebc9a6b2a9e732d277350dd2d69f88c`. Independent mathematical review
+checked the four-role normalization, sign, actual composed map and limit.
+Its consumer is the existing `composed_frozen_readout` scoped obstruction;
+it does not exclude other readouts or establish native admission or GR.
+
+The module passes its narrow build; the complete `D0.All` build passes 4,770
+Lake jobs at Lean source digest
+`1ead438f2aa35f2cf69f6e7dbadf1d79dfbda0b59f3dcfefc8779f4a01546a54`.
+Its [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_weak_test.json)
+has content SHA-256 `9e2fdcb5340c6849d572c99b2921464ff243b99a887e8836cfbc031997ff4d37`.
+The full build retains existing warnings in other modules.
