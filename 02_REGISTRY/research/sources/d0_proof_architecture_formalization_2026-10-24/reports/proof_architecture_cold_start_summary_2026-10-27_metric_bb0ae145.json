@@ -1,11 +1,11 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "3b6dc8a433b1431d1c1238ee3682dc0746d2cd5c",
+  "snapshot_commit": "5fdcb60a8553a6926849527965ed2e531250d9f0",
   "worktree_dirty": false,
   "authority_source_digests": {
     "02_REGISTRY/claims.csv": "957a9c67f56850c5a253eb2f679506dd03fc64b81931a1718ddb84704dc760bd",
     "02_REGISTRY/assumptions.csv": "8bb15b667efcbb4b3c904df7713107e7356144c1554cef841454b8435a9d5939",
-    "02_REGISTRY/formal_support.csv": "4cc6e4d2c6460ed0ee1768adc49c9ff8f1035b523271ab1c88ee0c60a48da6f6",
+    "02_REGISTRY/formal_support.csv": "9f505ce33f240ff64a769a53dc3fdcbf3afe5cd48a08edbbd013d49707d2a95a",
     "02_REGISTRY/aliases.csv": "776a7d786a1485923ddc52050e5df86b64424c78499bd8e0ae04383d0b7c033e",
     "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
@@ -937,7 +937,7 @@
           "query": "native raising operator inverse null leg",
           "evidence_lines": [
             {
-              "line": 351,
+              "line": 400,
               "heading": "## Scientific boundary and reuse vertical",
               "matched_terms": [
                 "raising",
@@ -949,7 +949,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1903,
+              "line": 1952,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -960,7 +960,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 229,
+              "line": 278,
               "heading": "### Pinned #334 raising-inverse retrieval key",
               "matched_terms": [
                 "raising",
@@ -971,7 +971,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 212,
+              "line": 259,
               "heading": "### Pinned #334 raising-inverse retrieval key",
               "matched_terms": [
                 "raising",
@@ -981,7 +981,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1900,
+              "line": 1949,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -991,7 +991,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2195,
+              "line": 2244,
               "heading": "### Null-chart endpoint-map recovery (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -1001,7 +1001,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 562,
+              "line": 611,
               "heading": "## 24 October integrated retrieval and adapter checkpoint",
               "matched_terms": [
                 "raising",
@@ -1011,7 +1011,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5072,
+              "line": 5121,
               "heading": "### Complete per-fibre kernel classification for the weighted Fourier operator (25 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -1021,7 +1021,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2217,
+              "line": 2266,
               "heading": "### Null-chart endpoint-map recovery (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -1031,7 +1031,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2736,
+              "line": 2785,
               "heading": "### Row-action Lorentz endpoint adapter for Eq. (27) (25 October 2026)",
               "matched_terms": [
                 "raising",
@@ -1832,16 +1832,6 @@
           ],
           "citation_only_refs": [
             {
-              "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
-              "hashes": [],
-              "commit": null,
-              "blob": null,
-              "section_refs": [],
-              "pin_complete": false,
-              "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json`.",
-              "pin_status": "not_followed_bounded_search"
-            },
-            {
               "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
               "hashes": [],
               "commit": null,
@@ -1859,6 +1849,16 @@
               "section_refs": [],
               "pin_complete": false,
               "context": "          \"path\": \"sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json\",",
+              "pin_status": "not_followed_bounded_search"
+            },
+            {
+              "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
+              "hashes": [],
+              "commit": null,
+              "blob": null,
+              "section_refs": [],
+              "pin_complete": false,
+              "context": "          \"path\": \"02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json\",",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -2423,7 +2423,7 @@
     {
       "id": "positive-nonvacuum-recovery",
       "query_count": 20,
-      "required_source_count": 14,
+      "required_source_count": 13,
       "all_required_sources_found": true,
       "missing_paths": [],
       "scope_review": "The compiled NonvacuumBrinkmannStencil result proves the exact five-point harmonic/radial readout and binds its source norm to the same recursively constructed midpoint matter record. The time-indexed extension proves that each natural-indexed history step supplies the exact rate used by that site's profile and proves endpoint rate-sum and finite-history energy identities. The explicit two-component cubic family has its exact accumulated midpoint error and componentwise bound. The defect composition proves a uniform componentwise O(h^2) bound. The shared D0.Analysis Taylor theorem derives its O(h^3) defect from C^3 regularity and an explicit uniform bound on the sampled interval; the geometry specialization composes it with the sampled-history result. The vector-valued Taylor/remainder composition now proves the same dimension-free constant in Euclidean norm. Its half-margin CAR application is transported through an isometric Euclidean lift and proved equal to the existing two-component finite recurrence. C^3 regularity at each point of the sampled interval, vector third-derivative and envelope bounds remain supplied hypotheses for the local API. The pointwise-margin corollary assumes global C^3 and pointwise strict chart inclusion, then uses compactness to derive the uniform derivative and envelope bounds and their positive uniform margin. The cubic-profile application bounds the Euclidean profile by the sum of its four coefficient norms on [0,1], derives the pointwise chart margin from that strict coefficient bound, and composes one eventual CAR threshold with the exact stencil source on the same recursive matter record. It returns the nonzero initial rate, but remains a finite-dimensional subset of the source's smooth matter family, not a reconstruction or selection of the original CAR preparation. The new uniform-mesh theorem derives an N0 threshold from the same delta-over-two estimate and proves the existing CAR complement positive for every N >= N0 with h=duration/N. Section 7.2 supplies the finite-step Eq. (24) error and states that fixed small normalized CAR slack survives for sufficiently fine h; the Lean result makes this eventual refinement claim explicit under the supplied analytic bounds. The actual CAR preparation and generator are not reconstructed. The exact signed cubic remainder is now lifted to the Euclidean vector of this same recursive record, with a dimension-free duration-times-third-derivative-coefficient-times-h-squared over 24 bound. A stronger cubic corollary returns this error bound together with CAR positivity and the exact five-point source at every site of every sufficiently fine uniform mesh. The original CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, and physical native Book/clock/source selection remain separate and open.",
@@ -3106,8 +3106,8 @@
           "status": "found_direct_content",
           "found": true,
           "source_origin": "pinned_snapshot",
-          "expected_commit": "7d52c4193cc4b1ebfed1142d327446a6128465b7",
-          "expected_blob": "df316992b289e0a9ada03adb2852227e8da91ed1",
+          "expected_commit": "423ec9a87553a14c6f484e429a6d3309eeae256a",
+          "expected_blob": "07a988011a77ee87aa13d5d816680920d51a3007",
           "required_sections": [],
           "sections_found": [],
           "missing_sections": [],
@@ -3120,10 +3120,10 @@
               "required_sections": [],
               "sections_found": [],
               "missing_sections": [],
-              "candidate_rank": 7,
+              "candidate_rank": 6,
               "evidence_lines": [
                 {
-                  "line": 197,
+                  "line": 199,
                   "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
                   "matched_terms": [
                     "finitematterforwardgradient"
@@ -3132,7 +3132,7 @@
                   "kind": "direct_content"
                 },
                 {
-                  "line": 75,
+                  "line": 77,
                   "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
                   "matched_terms": [
                     "transverse"
@@ -3141,7 +3141,7 @@
                   "kind": "direct_content"
                 },
                 {
-                  "line": 92,
+                  "line": 94,
                   "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
                   "matched_terms": [
                     "transverse"
@@ -3150,13 +3150,67 @@
                   "kind": "direct_content"
                 }
               ]
+            },
+            {
+              "query_index": 19,
+              "query": "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement cubicMatterMidpointSample_euclideanError_eq_remainder cubicMatterMidpointSample_euclideanError_le_refinementBound exact Euclidean O(h^2) error same recursive record CAR complement five-point stencil source",
+              "found": true,
+              "status": "found_direct_content",
+              "required_sections": [],
+              "sections_found": [],
+              "missing_sections": [],
+              "candidate_rank": 3,
+              "evidence_lines": [
+                {
+                  "line": 1514,
+                  "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
+                  "matched_terms": [
+                    "exact",
+                    "error",
+                    "same",
+                    "recursive",
+                    "record",
+                    "car",
+                    "complement"
+                  ],
+                  "text": "error on the very same recursive record used by the CAR complement and exact",
+                  "kind": "direct_content"
+                },
+                {
+                  "line": 1312,
+                  "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
+                  "matched_terms": [
+                    "exact",
+                    "euclidean",
+                    "error",
+                    "same",
+                    "recursive",
+                    "record"
+                  ],
+                  "text": "The Euclidean error of the same recursive cubic midpoint record is exactly",
+                  "kind": "direct_content"
+                },
+                {
+                  "line": 1547,
+                  "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
+                  "matched_terms": [
+                    "same",
+                    "record",
+                    "car",
+                    "complement",
+                    "stencil"
+                  ],
+                  "text": "nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource",
+                  "kind": "direct_content"
+                }
+              ]
             }
           ],
-          "candidate_rank": 7,
+          "candidate_rank": 6,
           "query": "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource cubicMatterCoefficientNorm cubicMatterMidpointSample finiteMatterForwardGradient transverseFivePointLaplacian",
           "evidence_lines": [
             {
-              "line": 197,
+              "line": 199,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "finitematterforwardgradient"
@@ -3165,7 +3219,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 75,
+              "line": 77,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "transverse"
@@ -3174,7 +3228,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 92,
+              "line": 94,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "transverse"
@@ -3183,7 +3237,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 156,
+              "line": 158,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "transverse"
@@ -3192,7 +3246,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 212,
+              "line": 214,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "finitematterforwardgradient"
@@ -3201,7 +3255,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 227,
+              "line": 229,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "finitematterforwardgradient"
@@ -3210,7 +3264,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 910,
+              "line": 912,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "transverse"
@@ -3219,7 +3273,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 914,
+              "line": 916,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "finitematterforwardgradient"
@@ -3228,7 +3282,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 934,
+              "line": 936,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "transverse"
@@ -3237,7 +3291,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1022,
+              "line": 1024,
               "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
               "matched_terms": [
                 "transverse"
@@ -3271,7 +3325,20 @@
               "section_refs": [],
               "pin_complete": true,
               "context": "Source pin for `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource` (cubic coefficient norm, nonzero initial matter rate): commit `7d52c4193cc4b1ebfed1142d327446a6128465b7`, path `03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob `df316992b289e0a9ada03adb2852227e8da91ed1`.",
-              "pin_status": "pinned_snapshot"
+              "pin_status": "external_reference_only"
+            },
+            {
+              "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+              "hashes": [
+                "7d52c4193cc4b1ebfed1142d327446a6128465b7",
+                "df316992b289e0a9ada03adb2852227e8da91ed1"
+              ],
+              "commit": "7d52c4193cc4b1ebfed1142d327446a6128465b7",
+              "blob": "df316992b289e0a9ada03adb2852227e8da91ed1",
+              "section_refs": [],
+              "pin_complete": true,
+              "context": "Source pin for `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource` (cubic coefficient norm, nonzero initial matter rate): commit `7d52c4193cc4b1ebfed1142d327446a6128465b7`, path `03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob `df316992b289e0a9ada03adb2852227e8da91ed1`.",
+              "pin_status": "external_reference_only"
             }
           ]
         },
@@ -3450,244 +3517,6 @@
               "pin_complete": true,
               "context": "Compiled inventory pin for `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource` (cubic coefficient norm, nonzero initial matter rate): commit `119c31ba6df9f02a4b8b491e7658de2e7432a797`, path `02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json`, blob `9cfb08a3cbe8ef09d5f1311b6b96ea27378ab611`.",
               "pin_status": "pinned_snapshot"
-            }
-          ]
-        },
-        "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean@423ec9a87553a14c6f484e429a6d3309eeae256a": {
-          "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
-          "status": "found_direct_content",
-          "found": true,
-          "source_origin": "pinned_snapshot",
-          "expected_commit": "423ec9a87553a14c6f484e429a6d3309eeae256a",
-          "expected_blob": "07a988011a77ee87aa13d5d816680920d51a3007",
-          "required_sections": [],
-          "sections_found": [],
-          "missing_sections": [],
-          "scoped_queries": [
-            {
-              "query_index": 19,
-              "query": "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement cubicMatterMidpointSample_euclideanError_eq_remainder cubicMatterMidpointSample_euclideanError_le_refinementBound exact Euclidean O(h^2) error same recursive record CAR complement five-point stencil source",
-              "found": true,
-              "status": "found_direct_content",
-              "required_sections": [],
-              "sections_found": [],
-              "missing_sections": [],
-              "candidate_rank": 3,
-              "evidence_lines": [
-                {
-                  "line": 1514,
-                  "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-                  "matched_terms": [
-                    "exact",
-                    "error",
-                    "same",
-                    "recursive",
-                    "record",
-                    "car",
-                    "complement"
-                  ],
-                  "text": "error on the very same recursive record used by the CAR complement and exact",
-                  "kind": "direct_content"
-                },
-                {
-                  "line": 1312,
-                  "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-                  "matched_terms": [
-                    "exact",
-                    "euclidean",
-                    "error",
-                    "same",
-                    "recursive",
-                    "record"
-                  ],
-                  "text": "The Euclidean error of the same recursive cubic midpoint record is exactly",
-                  "kind": "direct_content"
-                },
-                {
-                  "line": 1547,
-                  "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-                  "matched_terms": [
-                    "same",
-                    "record",
-                    "car",
-                    "complement",
-                    "stencil"
-                  ],
-                  "text": "nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource",
-                  "kind": "direct_content"
-                }
-              ]
-            }
-          ],
-          "candidate_rank": 3,
-          "query": "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement cubicMatterMidpointSample_euclideanError_eq_remainder cubicMatterMidpointSample_euclideanError_le_refinementBound exact Euclidean O(h^2) error same recursive record CAR complement five-point stencil source",
-          "evidence_lines": [
-            {
-              "line": 1514,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "exact",
-                "error",
-                "same",
-                "recursive",
-                "record",
-                "car",
-                "complement"
-              ],
-              "text": "error on the very same recursive record used by the CAR complement and exact",
-              "kind": "direct_content"
-            },
-            {
-              "line": 1312,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "exact",
-                "euclidean",
-                "error",
-                "same",
-                "recursive",
-                "record"
-              ],
-              "text": "The Euclidean error of the same recursive cubic midpoint record is exactly",
-              "kind": "direct_content"
-            },
-            {
-              "line": 1547,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "same",
-                "record",
-                "car",
-                "complement",
-                "stencil"
-              ],
-              "text": "nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource",
-              "kind": "direct_content"
-            },
-            {
-              "line": 1478,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "same",
-                "record",
-                "car",
-                "complement",
-                "stencil"
-              ],
-              "text": "theorem nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource",
-              "kind": "direct_content"
-            },
-            {
-              "line": 1474,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "same",
-                "recursive",
-                "record",
-                "five-point",
-                "stencil"
-              ],
-              "text": "five-point stencil source on the same recursively constructed record at every",
-              "kind": "direct_content"
-            },
-            {
-              "line": 46,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "exact",
-                "same",
-                "recursive",
-                "record",
-                "stencil"
-              ],
-              "text": "returns the same recursive record consumed by the exact stencil-source theorem;",
-              "kind": "direct_content"
-            },
-            {
-              "line": 1518,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "same",
-                "record",
-                "car",
-                "complement",
-                "stencil"
-              ],
-              "text": "theorem nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement",
-              "kind": "direct_content"
-            },
-            {
-              "line": 1330,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "euclidean",
-                "error",
-                "same",
-                "record"
-              ],
-              "text": "The same-record Euclidean cubic error obeys the dimension-free midpoint",
-              "kind": "direct_content"
-            },
-            {
-              "line": 691,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "euclidean",
-                "record",
-                "car",
-                "stencil"
-              ],
-              "text": "chronological CAR record already used by the Brinkmann stencil. The Euclidean",
-              "kind": "direct_content"
-            },
-            {
-              "line": 1552,
-              "heading": "# Exact nonvacuum Brinkmann stencil and midpoint source",
-              "matched_terms": [
-                "same",
-                "record",
-                "car"
-              ],
-              "text": "obtain ⟨hCAR, hSource⟩ := hSameRecord N hN n hn",
-              "kind": "direct_content"
-            }
-          ],
-          "citation_only_refs": [
-            {
-              "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
-              "hashes": [
-                "7d52c4193cc4b1ebfed1142d327446a6128465b7",
-                "df316992b289e0a9ada03adb2852227e8da91ed1"
-              ],
-              "commit": "7d52c4193cc4b1ebfed1142d327446a6128465b7",
-              "blob": "df316992b289e0a9ada03adb2852227e8da91ed1",
-              "section_refs": [],
-              "pin_complete": true,
-              "context": "Source pin for `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource` (cubic coefficient norm, nonzero initial matter rate): commit `7d52c4193cc4b1ebfed1142d327446a6128465b7`, path `03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob `df316992b289e0a9ada03adb2852227e8da91ed1`.",
-              "pin_status": "pinned_snapshot"
-            },
-            {
-              "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
-              "hashes": [
-                "423ec9a87553a14c6f484e429a6d3309eeae256a",
-                "07a988011a77ee87aa13d5d816680920d51a3007"
-              ],
-              "commit": "423ec9a87553a14c6f484e429a6d3309eeae256a",
-              "blob": "07a988011a77ee87aa13d5d816680920d51a3007",
-              "section_refs": [],
-              "pin_complete": true,
-              "context": "Source pin for `D0.Geometry.cubicMatterMidpointSample_euclideanError_eq_remainder`, `D0.Geometry.cubicMatterMidpointSample_euclideanError_le_refinementBound`, and `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`: commit `423ec9a87553a14c6f484e429a6d3309eeae256a`, path `03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob `07a988011a77ee87aa13d5d816680920d51a3007`.",
-              "pin_status": "pinned_snapshot"
-            },
-            {
-              "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
-              "hashes": [],
-              "commit": null,
-              "blob": null,
-              "section_refs": [],
-              "pin_complete": false,
-              "context": "`03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean`, blob",
-              "pin_status": "not_followed_bounded_search"
             }
           ]
         },
@@ -3906,7 +3735,7 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 7,
+          "candidate_rank": 8,
           "query": "finiteMatterMidpointHistory_eq_base_add_rateSum chronological midpoint record finite sum endpoint",
           "evidence_lines": [
             {
@@ -4060,7 +3889,7 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 16,
+          "candidate_rank": 15,
           "query": "twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum complete finite history gradient rate energies",
           "evidence_lines": [
             {
@@ -4226,7 +4055,7 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 12,
+          "candidate_rank": 11,
           "query": "twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum complete finite history gradient rate energies",
           "evidence_lines": [
             {
@@ -4392,7 +4221,7 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 14,
+          "candidate_rank": 13,
           "query": "twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum complete finite history gradient rate energies",
           "evidence_lines": [
             {
@@ -4961,14 +4790,14 @@
       },
       "cubic_lean_source_retrieval": {
         "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
-        "commit": "7d52c4193cc4b1ebfed1142d327446a6128465b7",
-        "blob": "df316992b289e0a9ada03adb2852227e8da91ed1",
+        "commit": "423ec9a87553a14c6f484e429a6d3309eeae256a",
+        "blob": "07a988011a77ee87aa13d5d816680920d51a3007",
         "query_index": 18,
         "query": "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource cubicMatterCoefficientNorm cubicMatterMidpointSample finiteMatterForwardGradient transverseFivePointLaplacian",
         "found": true,
         "status": "found_direct_content",
         "source_origin": "pinned_snapshot",
-        "candidate_rank": 7,
+        "candidate_rank": 6,
         "required_sections": [],
         "sections_found": [],
         "missing_sections": []
@@ -6186,7 +6015,7 @@
           "query": "finiteGram_add_smul_expand finite Gram expansion arbitrary base frame quadratic remainder",
           "evidence_lines": [
             {
-              "line": 8039,
+              "line": 8088,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "expansion",
@@ -6197,7 +6026,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8036,
+              "line": 8085,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6208,7 +6037,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8262,
+              "line": 8311,
               "heading": "### Generic finite-Gram Fréchet derivative and J² consumer (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6219,7 +6048,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7475,
+              "line": 7524,
               "heading": "### Arbitrary finite sitewise coframe derivative (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6230,7 +6059,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8089,
+              "line": 8138,
               "heading": "### Shared exact finite-Gram difference quotient (26 October 2026)",
               "matched_terms": [
                 "expansion",
@@ -6241,7 +6070,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 308,
+              "line": 357,
               "heading": "### Exact Lean declaration locators for `metric-provenance` (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6252,7 +6081,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7477,
+              "line": 7526,
               "heading": "### Arbitrary finite sitewise coframe derivative (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6263,7 +6092,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8140,
+              "line": 8189,
               "heading": "### Fintype-only generic Gram API (26 October 2026)",
               "matched_terms": [
                 "expansion",
@@ -6274,7 +6103,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8038,
+              "line": 8087,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "finitegram_add_smul_expand",
@@ -6285,7 +6114,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8100,
+              "line": 8149,
               "heading": "### Shared exact finite-Gram difference quotient (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -7044,16 +6873,6 @@
               "section_refs": [],
               "pin_complete": false,
               "context": "The separate [Golden blow-up route](../02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)",
-              "pin_status": "not_followed_bounded_search"
-            },
-            {
-              "path": "A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
-              "hashes": [],
-              "commit": null,
-              "blob": null,
-              "section_refs": [],
-              "pin_complete": false,
-              "context": "The [Golden discrete blow-up + condensed descent theorem](A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -10314,7 +10133,7 @@
           "query": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 D0-ARCHIVE-CAR-DIRAC-SQUARE-001 actual carDirac hoppingCarDirac",
           "evidence_lines": [
             {
-              "line": 6096,
+              "line": 6145,
               "heading": "### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10324,7 +10143,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5466,
+              "line": 5515,
               "heading": "### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10334,7 +10153,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5590,
+              "line": 5639,
               "heading": "### Candidate C0 source-unit reconciliation: CAR square and Hodge operator (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10344,7 +10163,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5533,
+              "line": 5582,
               "heading": "### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10354,7 +10173,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5564,
+              "line": 5613,
               "heading": "### Candidate C0 source-unit reconciliation: CAR square and Hodge operator (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10364,7 +10183,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6098,
+              "line": 6147,
               "heading": "### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10373,7 +10192,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5484,
+              "line": 5533,
               "heading": "### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10382,7 +10201,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6100,
+              "line": 6149,
               "heading": "### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10391,7 +10210,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5160,
+              "line": 5209,
               "heading": "### Lift of the persistent null fibre to a full exact cochain (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10400,7 +10219,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1381,
+              "line": 1430,
               "heading": "## Hodge degree-preservation and diagonal-adjoint applications (24 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10714,32 +10533,38 @@
           "citation_only_refs": [
             {
               "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
-              "hashes": [],
-              "commit": null,
+              "hashes": [
+                "31ccbc40bdcb05baa377cda0d522931eae65c16b"
+              ],
+              "commit": "31ccbc40bdcb05baa377cda0d522931eae65c16b",
               "blob": null,
               "section_refs": [],
-              "pin_complete": false,
-              "context": "`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`",
+              "pin_complete": true,
+              "context": "[claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/31ccbc40bdcb05baa377cda0d522931eae65c16b/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json).",
               "pin_status": "not_followed_bounded_search"
             },
             {
-              "path": "claim_source_candidates_current.json",
-              "hashes": [],
-              "commit": null,
+              "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
+              "hashes": [
+                "463fab447187361997f4c5c74b2d185d506697e2"
+              ],
+              "commit": "463fab447187361997f4c5c74b2d185d506697e2",
               "blob": null,
               "section_refs": [],
-              "pin_complete": false,
-              "context": "returns `claim_source_candidates_current.json` as direct content at rank 1;",
+              "pin_complete": true,
+              "context": "[claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/463fab447187361997f4c5c74b2d185d506697e2/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json),",
               "pin_status": "not_followed_bounded_search"
             },
             {
-              "path": "sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
-              "hashes": [],
-              "commit": null,
+              "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
+              "hashes": [
+                "6ff676505954af0a86d63a90d8a9562e4d01c616"
+              ],
+              "commit": "6ff676505954af0a86d63a90d8a9562e4d01c616",
               "blob": null,
               "section_refs": [],
-              "pin_complete": false,
-              "context": "`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`.",
+              "pin_complete": true,
+              "context": "[claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/6ff676505954af0a86d63a90d8a9562e4d01c616/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json)",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -10868,23 +10693,25 @@
             {
               "path": "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
               "hashes": [
-                "8f52c249a17a57d36b8bdf249450f9f9bdb29273"
+                "b86e4246ad91a85e3fbc154def85b8b9f14e5c09"
               ],
               "commit": null,
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "| 03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean | 8f52c249a17a57d36b8bdf249450f9f9bdb29273 |",
+              "context": "| `03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean` | `b86e4246ad91a85e3fbc154def85b8b9f14e5c09` | `53337b3ce2d6490bc60e789f2e118ef397de775ef170fbe39fe2f24631e90c4b` | Row 1948 maps the square claim to the CAR arithmetic scaffold; row 2107 independently maps the proved spatial-shell claim |",
               "pin_status": "not_followed_bounded_search"
             },
             {
-              "path": "ClaimMap.lean",
-              "hashes": [],
+              "path": "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
+              "hashes": [
+                "b86e4246ad91a85e3fbc154def85b8b9f14e5c09"
+              ],
               "commit": null,
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "ClaimMap.lean stores theoremName as String and explicitly says it is metadata. check_claim_map_coverage.py and formalization_debt_audit.py are structural checks, not semantic theorem-to-prose verification. Add a semantic layer over current authorities; do not create another claim, assumption, status, acceptance, queue, or obligation registry.",
+              "context": "| `03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean` | `b86e4246ad91a85e3fbc154def85b8b9f14e5c09` | `53337b3ce2d6490bc60e789f2e118ef397de775ef170fbe39fe2f24631e90c4b` | Row 1948 maps the square claim to the CAR arithmetic scaffold; row 2107 independently maps the proved spatial-shell claim |",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -12212,13 +12039,13 @@
               "pin_status": "not_followed_bounded_search"
             },
             {
-              "path": "hodge_car_dirac_kernel_declaration_followup_2026-10-25.json",
+              "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_kernel_declaration_followup_2026-10-25.json",
               "hashes": [],
               "commit": null,
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "| `hodge_car_dirac_kernel_declaration_followup_2026-10-25.json` | `b693ccc26e8e3d04434e01d119de4e6ece1111d12f038425295d187a3875fc0d` |",
+              "context": "          \"path\": \"02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_kernel_declaration_followup_2026-10-25.json\",",
               "pin_status": "not_followed_bounded_search"
             },
             {
@@ -12824,13 +12651,13 @@
               "pin_status": "not_followed_bounded_search"
             },
             {
-              "path": "hodge_car_dirac_square_declaration_followup_2026-10-25.json",
+              "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_square_declaration_followup_2026-10-25.json",
               "hashes": [],
               "commit": null,
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "| `hodge_car_dirac_square_declaration_followup_2026-10-25.json` | `c4db89c7eaee8f76d134de4ff1989991b045c9ad61f23567fe5b81498c2b1bb5` |",
+              "context": "          \"path\": \"02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_square_declaration_followup_2026-10-25.json\",",
               "pin_status": "not_followed_bounded_search"
             },
             {
@@ -15580,7 +15407,7 @@
           "query": "nilpotentAffineRep_injective",
           "evidence_lines": [
             {
-              "line": 1880,
+              "line": 1929,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "nilpotentaffinerep_injective"
@@ -15589,7 +15416,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1827,
+              "line": 1876,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "nilpotentaffinerep_injective"
@@ -15598,7 +15425,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1818,
+              "line": 1867,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "exact",
@@ -15609,7 +15436,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 4855,
+              "line": 4904,
               "heading": "### Exact claim BOOK/section source-key candidate pass (25 October 2026)",
               "matched_terms": [
                 "exact",
@@ -15619,7 +15446,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8036,
+              "line": 8085,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "exact",
@@ -15629,7 +15456,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1810,
+              "line": 1859,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15639,7 +15466,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1880,
+              "line": 1929,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15649,7 +15476,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1856,
+              "line": 1905,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15659,7 +15486,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1813,
+              "line": 1862,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15669,7 +15496,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1878,
+              "line": 1927,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -16357,7 +16184,7 @@
           "query": "archiveJuliaNullBlock_reconstructsAffineFunctional",
           "evidence_lines": [
             {
-              "line": 1930,
+              "line": 1979,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "archivejulianullblock_reconstructsaffinefunctional"
@@ -16366,7 +16193,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 351,
+              "line": 400,
               "heading": "## Scientific boundary and reuse vertical",
               "matched_terms": [
                 "julia",
@@ -16381,7 +16208,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8553,
+              "line": 8602,
               "heading": "### Eq. (26) endpoint blindness and non-null Eq. (27) separation (26 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16394,7 +16221,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 229,
+              "line": 278,
               "heading": "### Pinned #334 raising-inverse retrieval key",
               "matched_terms": [
                 "julia",
@@ -16407,7 +16234,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1900,
+              "line": 1949,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16419,7 +16246,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2736,
+              "line": 2785,
               "heading": "### Row-action Lorentz endpoint adapter for Eq. (27) (25 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16431,7 +16258,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2058,
+              "line": 2107,
               "heading": "## Full null-query frame recovery from the observed carrier block (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16443,7 +16270,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2061,
+              "line": 2110,
               "heading": "## Full null-query frame recovery from the observed carrier block (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16455,7 +16282,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1930,
+              "line": 1979,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16467,7 +16294,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2400,
+              "line": 2449,
               "heading": "### Fixed-chart Eq. (27) endpoint composition (25 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16775,7 +16602,7 @@
                 "9"
               ],
               "missing_sections": [],
-              "candidate_rank": 9,
+              "candidate_rank": 11,
               "evidence_lines": [
                 {
                   "line": 5046,
@@ -17405,7 +17232,7 @@
               ]
             }
           ],
-          "candidate_rank": 9,
+          "candidate_rank": 11,
           "query": "Fbar equals U_mat transpose eta coframe inverse metric invariant IsRoleLorentz",
           "evidence_lines": [
             {
@@ -17810,7 +17637,7 @@
           "query": "principalFrameObservedQueryCoframeRecovery Eq 30a four full query vacuum responses",
           "evidence_lines": [
             {
-              "line": 1724,
+              "line": 1773,
               "heading": "## CAR/exterior role-order alignment and full basis-state creator action (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17821,7 +17648,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1767,
+              "line": 1816,
               "heading": "## Complete CAR/exterior creator and Julia-query equality (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17832,7 +17659,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1769,
+              "line": 1818,
               "heading": "## Complete CAR/exterior creator and Julia-query equality (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17843,7 +17670,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2176,
+              "line": 2225,
               "heading": "## Query-to-principal-frame coframe recovery (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17854,7 +17681,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 735,
+              "line": 784,
               "heading": "### Independent scope review of the finite Eq. (26) CAR adapter",
               "matched_terms": [
                 "eq",
@@ -17865,7 +17692,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 10305,
+              "line": 10354,
               "heading": "### C0 candidate source-unit disposition for the positive nonvacuum slice (26 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17876,7 +17703,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 200,
+              "line": 247,
               "heading": "## Architecture",
               "matched_terms": [
                 "eq",
@@ -17887,7 +17714,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 351,
+              "line": 400,
               "heading": "## Scientific boundary and reuse vertical",
               "matched_terms": [
                 "eq",
@@ -17898,7 +17725,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6673,
+              "line": 6722,
               "heading": "### Exact stencil-to-midpoint application for the positive nonvacuum source (25 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17909,7 +17736,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 9287,
+              "line": 9336,
               "heading": "### Local joint coframe and Lorentz-tangent Fréchet derivative (26 October 2026)",
               "matched_terms": [
                 "eq",
@@ -19228,7 +19055,7 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 6,
+          "candidate_rank": 8,
           "query": "Fbar equals U_mat transpose eta coframe inverse metric invariant IsRoleLorentz",
           "evidence_lines": [
             {
@@ -20663,7 +20490,7 @@
           "query": "finiteHermitianAdjoint_unique coordinate finite Hermitian pairing conjugate transpose",
           "evidence_lines": [
             {
-              "line": 3975,
+              "line": 4024,
               "heading": "## Positive supplied-profile standard-Hilbert representative (25 October 2026)",
               "matched_terms": [
                 "coordinate",
@@ -20675,7 +20502,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 4129,
+              "line": 4178,
               "heading": "### Candidate C0 source-unit map for the native weighted-Dirac capsule (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20687,7 +20514,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6390,
+              "line": 6439,
               "heading": "### Shared finite-coordinate expansion in ordinary and weighted adjoints (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20698,7 +20525,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3191,
+              "line": 3240,
               "heading": "### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20709,7 +20536,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1390,
+              "line": 1439,
               "heading": "## Hodge degree-preservation and diagonal-adjoint applications (24 October 2026)",
               "matched_terms": [
                 "coordinate",
@@ -20720,7 +20547,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3266,
+              "line": 3315,
               "heading": "### Real Hodge/CAR operator self-adjointness through the Hermitian API (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20731,7 +20558,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3195,
+              "line": 3244,
               "heading": "### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20742,7 +20569,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3174,
+              "line": 3223,
               "heading": "### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)",
               "matched_terms": [
                 "coordinate",
@@ -20753,7 +20580,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6488,
+              "line": 6537,
               "heading": "### Shared finite linear-map coordinate action in both adjoint proofs (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20764,7 +20591,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3781,
+              "line": 3830,
               "heading": "### Real Hodge/CAR square through the generic Hermitian API (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -22641,7 +22468,7 @@
           "query": "finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint real unit profile",
           "evidence_lines": [
             {
-              "line": 3705,
+              "line": 3754,
               "heading": "### Real unit-profile bridge between adjoint APIs (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22652,7 +22479,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3517,
+              "line": 3566,
               "heading": "### Hermitian Hodge square and cubical anticommutator application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22663,7 +22490,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3623,
+              "line": 3672,
               "heading": "### Cold-start replay after the Hermitian Hodge--Dirac application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22674,7 +22501,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3746,
+              "line": 3795,
               "heading": "### Cold-start replay after the weighted-adjoint bridge (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22685,7 +22512,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3270,
+              "line": 3319,
               "heading": "### Real Hodge/CAR operator self-adjointness through the Hermitian API (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22696,7 +22523,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3941,
+              "line": 3990,
               "heading": "### Cold-start replay after the canonical Hodge/CAR map refactor (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22707,7 +22534,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3320,
+              "line": 3369,
               "heading": "### Cold-start replay after the real Hodge/CAR adjoint application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22718,7 +22545,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3812,
+              "line": 3861,
               "heading": "### Cold-start replay after the real Hodge/CAR square refactor (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22729,7 +22556,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3292,
+              "line": 3341,
               "heading": "### Cold-start replay after the real Hodge/CAR adjoint application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22740,7 +22567,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3541,
+              "line": 3590,
               "heading": "### Hermitian Hodge square and cubical anticommutator application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -25412,7 +25239,7 @@
     "declared_application": "native-result-to-obligation"
   },
   "semantic_scope_review_is_manual": true,
-  "required_source_ref_count": 169,
+  "required_source_ref_count": 168,
   "claim_source_candidate_view": {
     "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
     "snapshot_commit": "58a5641857deddc9cdd6f220ebab9ad31c80a605",
@@ -25517,18 +25344,18 @@
     }
   },
   "replay": {
-    "source_commit": "3b6dc8a433b1431d1c1238ee3682dc0746d2cd5c",
+    "source_commit": "5fdcb60a8553a6926849527965ed2e531250d9f0",
     "command": "python3 tools/proof_architecture_cold_start.py",
-    "runner_sha256": "0532c5f68a81d8964737c90582fb2c444355c5c2f32a731295ed845810552694",
-    "runner_git_blob": "68e29bb5a0300497a2fd4be7540560b88db72ceb",
+    "runner_sha256": "494dc147ebb471a7f985bf980ea2faefdce887e67221f23cefb7cdec98a1a601",
+    "runner_git_blob": "6b3594d326f41a91cb0b66bb19d207663d84f92a",
     "search_engine_sha256": "221b34bec00134383eaee8483c694374506eea7ab2977d995063e5fd7dcddc5e",
     "search_engine_git_blob": "9e06fa34f9ec63795d0dc92613fe5de784aaed5c",
-    "test_sha256": "265666e94d4ea5ca71c5f29f164816d408ebe500520ad248592b0decf4d6e7b0",
-    "test_git_blob": "e5012d7e661bc0491df99eb3b986112b8171a991",
+    "test_sha256": "e562b87ca6b1f18f7f07c53061b876a27ed93dd824f255ade3c43902201406cc",
+    "test_git_blob": "0995004cc86cf4533e1a3939b180364f272945fb",
     "compactor_sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
     "compactor_git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
-    "full_output_sha256": "3c0aa090b3f22488dc4cf1532df17d92df3d0bd68617f8f8f8151ae701851a55",
-    "full_output_bytes": 9896850
+    "full_output_sha256": "ada8c529e0a96e49ad184dc4ef8bc8dcb6aee40fba59d8f881774e4ef143a879",
+    "full_output_bytes": 10109510
   },
   "eq24_owner_source_retrieval": {
     "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -25560,8 +25387,8 @@
   },
   "report_compaction": {
     "reason": "Retains every required-source receipt and exact application retrieval; omits full candidate arrays.",
-    "full_output_bytes": 9896850,
-    "full_output_sha256": "3c0aa090b3f22488dc4cf1532df17d92df3d0bd68617f8f8f8151ae701851a55",
+    "full_output_bytes": 10109510,
+    "full_output_sha256": "ada8c529e0a96e49ad184dc4ef8bc8dcb6aee40fba59d8f881774e4ef143a879",
     "provenance_limit": "The supplied full replay is not rerun or authenticated by the compactor."
   }
 }

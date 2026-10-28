@@ -1,18 +1,18 @@
 {
   "schema": "d0-proof-architecture-search-comparison-v2",
-  "snapshot_commit": "3b6dc8a433b1431d1c1238ee3682dc0746d2cd5c",
+  "snapshot_commit": "5fdcb60a8553a6926849527965ed2e531250d9f0",
   "worktree_dirty": false,
   "authority_source_digests": {
     "02_REGISTRY/claims.csv": "957a9c67f56850c5a253eb2f679506dd03fc64b81931a1718ddb84704dc760bd",
     "02_REGISTRY/assumptions.csv": "8bb15b667efcbb4b3c904df7713107e7356144c1554cef841454b8435a9d5939",
-    "02_REGISTRY/formal_support.csv": "4cc6e4d2c6460ed0ee1768adc49c9ff8f1035b523271ab1c88ee0c60a48da6f6",
+    "02_REGISTRY/formal_support.csv": "9f505ce33f240ff64a769a53dc3fdcbf3afe5cd48a08edbbd013d49707d2a95a",
     "02_REGISTRY/aliases.csv": "776a7d786a1485923ddc52050e5df86b64424c78499bd8e0ae04383d0b7c033e",
     "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
   },
   "runner_sha256": "b36748084ab2fd801c01552041fe53d4babb71929c4a0766ff9bed569055a31a",
-  "query_fixture_sha256": "0532c5f68a81d8964737c90582fb2c444355c5c2f32a731295ed845810552694",
+  "query_fixture_sha256": "494dc147ebb471a7f985bf980ea2faefdce887e67221f23cefb7cdec98a1a601",
   "comparison_scope": {
     "legacy": "gr_assembly.search over the existing assembly result records",
     "current": "proof_architecture search over structured authorities, five bounded text candidates, and exact-path links to existing assembly results and formal_support rows; assembly owner evidence and support-module locators are reported separately",
@@ -39,9 +39,9 @@
     "legacy_scoped_queries_with_expected_source": 0,
     "current_scoped_queries_with_expected_source": 7,
     "legacy_serialized_answer_bytes_total": 48,
-    "current_serialized_answer_bytes_total": 543074,
+    "current_serialized_answer_bytes_total": 530626,
     "legacy_average_answer_bytes": 2.0,
-    "current_average_answer_bytes": 22628.1,
+    "current_average_answer_bytes": 22109.4,
     "legacy_owner_bearing_queries": 0,
     "current_owner_bearing_queries": 10,
     "semantic_review_required_for_all_queries": true
@@ -479,10 +479,10 @@
         ],
         "text_candidate_paths": [
           "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json",
           "02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
-          "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
-          "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
-          "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md"
+          "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md"
         ],
         "structured_match_count": 0,
         "text_candidate_count": 5,
@@ -493,7 +493,7 @@
         "expected_sources_without_assembly_or_formal_support": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 45002
+        "serialized_answer_bytes": 33843
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -791,7 +791,7 @@
         "expected_sources_without_assembly_or_formal_support": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 13777
+        "serialized_answer_bytes": 14712
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -996,10 +996,10 @@
         ],
         "text_candidate_paths": [
           "03_FORMALIZATION/D0/Synthesis/DenseOperatorSceneRigidity.lean",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
           "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
           "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
-          "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
-          "01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md"
+          "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md"
         ],
         "structured_match_count": 0,
         "text_candidate_count": 5,
@@ -1010,7 +1010,7 @@
         "expected_sources_without_assembly_or_formal_support": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 29657
+        "serialized_answer_bytes": 28318
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
@@ -1162,11 +1162,11 @@
         "structured_matches": [],
         "owners": [],
         "text_candidate_paths": [
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json",
           "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
           "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
-          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_cold_start_2026-10-25.json",
-          "02_REGISTRY/research/MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT.md",
-          "02_REGISTRY/research/MEMO_A4D_CROSSED_CONSTITUTIVE_REPRESENTATION.md"
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_cold_start_2026-10-25.json"
         ],
         "structured_match_count": 0,
         "text_candidate_count": 5,
@@ -1230,7 +1230,7 @@
         "expected_sources_without_assembly_or_formal_support": [],
         "relevant_text_candidate_count": 1,
         "text_candidate_count_not_in_scoped_source_set": 4,
-        "serialized_answer_bytes": 19498
+        "serialized_answer_bytes": 18613
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",

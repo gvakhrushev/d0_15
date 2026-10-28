@@ -160,23 +160,29 @@ rows, 711 book headings and 840 literal claim-ID mentions across 430 claims.
 All 56 legacy-label first-occurrence locators and both canonical alias targets
 resolve. These are source/navigation counts, not a semantic coverage ratio.
 
-The earlier full retrieval measurement and its clean-checkout compaction use
-`3b6dc8a433b1431d1c1238ee3682dc0746d2cd5c`; those 10-27 reports remain
-historical records of that input snapshot. The integrated tree now has fresh
-reports generated from a clean combined checkpoint, `fa235c34c0df666f1b6353719366bffd6cf65fe6`:
+The latest retrieval measurement and its clean-checkout compaction use
+`5fdcb60a8553a6926849527965ed2e531250d9f0`. The current reports are:
 
-- [Cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-28_integrated.json),
-  SHA-256 `68da059a6dff7da442934caf0482e36a3058b986317376890f5da29a4b58d0c5`.
-- [Search-process comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_integrated.json),
-  SHA-256 `7b0209106cdcfc8fe6df9e71b29caf2ad366c929202a744e7fb8e943ed08e729`.
+- [Cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json),
+  SHA-256 aab5a67db4de4332c4d896bc3caa3a714df5940b6eb2e6e2bbef3704c1f765ec.
+- [Search-process comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json),
+  published LF SHA-256 ce3c234638b37af560962263c9b265f81c696001317ca850901abd647c626239.
+  The captured Windows CRLF output has SHA-256
+  `2912e80153a4eda019c2d733dcfe81bedcbba63c7669fa99da8f003e195961ef`;
+  conversion to LF changes only line endings.
 
-All 24 cold-start cases find their 169 required source references; the change-impact
-regression passes, for 25 benchmark cases. The matched 24-query comparison
-retrieves all seven explicitly scoped sources with the current search; the
-historical search retrieves none. Of the eight expected pinned source references,
-one has an assembly owner link, four have formal-support locators, and three
-remain without either. This is retrieval and locator evidence, not semantic
-acceptance or physical ownership.
+All 24 retrieval cases find their required sources: 168 of 168 source records.
+The count decreases by one because two scoped queries now share one identical
+source pin; both query checks remain explicit. The previous current reports
+remain available at publication commit `1c3eac5eee8b16cd3816c208e62c162cc37e76a6`
+under the same paths and retain their previously recorded SHA-256 values
+`94a75962d3f8462175ec0f8ba75bf6d4ccd743d7f9d0338df3c51c9c10b80433` and
+`5222b0f3ee5555bc13fd19b63f447f74fc8be8a0e31fb590cb200546fac8612b`.
+The additional change-impact regression passes, giving 25 benchmark cases.
+The matched 24-query comparison retrieves all seven scoped sources with the
+current search; the historical search retrieves zero of those seven. These
+are the stated query/fixture results, with manual scientific scope review
+retained. The recorded owner/support distinctions are unchanged.
 
 The current structural check passes with 889 claims, 31 assumptions, 58 aliases,
 225 formal-support rows, 948 modules in the generated Lean closure, and zero
@@ -11922,6 +11928,22 @@ The seven selected declarations have axiom closures `propext`,
 `Classical.choice` and `Quot.sound`. The receipt authenticates the stated
 point-in-time inputs and toolchain; generated caches and dynamic libraries
 retain the limitations recorded by the build tool.
+
+An independent source-to-theorem review passed the bounded cubic same-record
+application `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`.
+It compared #334 source commit `fe5cf335da04cac14e50407b03f98b96be17dc52`,
+blob `67531a343a0ae707ff0a3830c0e2c9cf2bbc8213`, §§7.1–7.2, (17)–(24),
+with Lean blob `07a988011a77ee87aa13d5d816680920d51a3007` and the existing
+inventory blob `40171d8756ccf09c1b0627c20bca03a91637b56c`. The review checked
+the same recursive two-component record, squared Euclidean norm, stencil
+coefficient, `h=1/N`, `n≤N`, strict coefficient margin and `c1≠0`. The
+result supplies an eventual threshold and an `O(h²)` bound for this cubic
+family on `[0,1]`; at `n=N` the next record exists but its positivity is not
+part of the conclusion. Arbitrary coupling or a particular rate can be zero.
+This review does not establish continuum Einstein equations, the full smooth
+family, geometric transport, physical CAR preparation, admission, selection,
+or acceptance of C0. It checked the recorded fresh build and inventory rather
+than independently replaying the build.
 
 Historical source-candidate, claim-resolution, alias and two metric-receipt
 links above now name the published commit containing the bytes whose SHA-256
