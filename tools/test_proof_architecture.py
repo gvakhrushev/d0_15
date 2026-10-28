@@ -2516,7 +2516,7 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(source["commit"], "423ec9a87553a14c6f484e429a6d3309eeae256a")
         self.assertEqual(source["blob"], "07a988011a77ee87aa13d5d816680920d51a3007")
-        self.assertEqual(source["scope_query_indexes"], [18])
+        self.assertEqual(source["scope_query_indexes"], [18, 19])
         inventory_source = next(
             row for row in case["required_sources"]
             if row["path"] == "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json"

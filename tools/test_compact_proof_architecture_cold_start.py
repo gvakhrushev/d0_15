@@ -103,6 +103,23 @@ def example_complete_replay(head):
 
 
 class ColdStartCompactorTests(unittest.TestCase):
+    def test_one_pinned_source_retains_distinct_scoped_queries(self):
+        fixture, case = example_case()
+        fixture["queries"].append("second query")
+        fixture["required_sources"][0]["scope_query_indexes"].append(1)
+        case["query_results"].append({"query": "second query", "top_candidates":
+                                      copy.deepcopy(case["query_results"][0]["top_candidates"])})
+        receipt = next(iter(case["required_sources"].values()))
+        second = copy.deepcopy(receipt["scoped_queries"][0])
+        second.update(query_index=1, query="second query")
+        receipt["scoped_queries"].append(second)
+        compact._summarize_case(case, fixture, 18)
+        for index in (0, 1):
+            retrieval = compact._exact_retrieval(case, fixture, "example.md", index)
+            self.assertTrue(retrieval["found"])
+            self.assertEqual(retrieval["query_index"], index)
+            self.assertEqual(retrieval["candidate_rank"], 2)
+
     def test_preserves_source_receipt_and_extracts_exact_pinned_hit(self):
         fixture, case = example_case()
         result = compact._summarize_case(case, fixture, 18)
