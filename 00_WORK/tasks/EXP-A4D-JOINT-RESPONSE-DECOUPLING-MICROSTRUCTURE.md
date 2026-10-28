@@ -18124,3 +18124,66 @@ Concurrent intake throughd9ef0b055 retains the owner's positive scalar-future
 gain and stationary inherited-prefix theorem on its declared interface.
 The fixed-AF/archive comparison does not refute or replace that theorem;
 its actual same-execution scalar-future map remains an input to prove.
+
+### 28 October: actual archive-preserving seed, scalar/nonscalar future and full occurrence source
+
+Phase: native realization / final composition, SAME Draft #334 and
+`constitutive/native-programme-v1`. Scientific input185ab21cb; preserve and
+consume incoming canonical/nonscalar theorem throughd37bd1ecf. This continues
+the user's instruction to bind real controls, admissible variations and the
+complete price of ONE execution. No new task, carrier, lifecycle state or
+assembly acceptance is introduced. The two existing owned write paths remain
+this brief and the same-representative primary artifact.
+
+**Named parent substitution:** section7dq1021--1029 supplies the actual
+old-archive and scalar-future maps retained in7dp1018 and the native stationary
+seed. Moving the real seed copy to CX(6,12) preserves the original A0 label
+and full Spin/oldRIGHT algebra on all columns. The paid26-call QUERY is on
+the existing right11 blank. The actual full prefix/future endpoints commute,
+and the true corner is diag(p^3 I8,0_8). The complete heat first source and
+EVERY independently varied seed occurrence source are zero, with positive
+actual future gain. No new pure resource, fixed tracial input, canonical
+GNS preparation or uncharged inverse is supplied.
+
+**Controls and full valuation:** two literal43-call words have identical
+25CX+4G+14SourceI inventory, original rank16 input, complete65536 carrier,
+generated prefixes/cuts and all1197670400 paired-Hodge modes. Their complete
+H+J price difference is strictly7.2042261899642877793...e-6. Both preserve
+the same old archive. The cheaper whole-word stationary alternative changes
+the full report effect from p^2 to0 and is not a substitute for a task that
+requires the first report. On that first word the exact source at ALL38
+future occurrences has local operator-norm dual16g, g=zeta*c*u/D>0. The
+complete independent stage-max dual is608g, not zero; the genuine positive
+history gain is retained. Every inverse/routing/SourceI row is included.
+
+**Incoming theorem is actually applied:** a further literal41-call word
+uses a controlled two-G future with full effect
+M=diag((2p^6-1)^2 I8,I8). Its cold product is proved on every old prefix
+variation not touching its new query bit, and [M,Q_return]=0. Thus the newly
+owned NONSCALAR criterion removes the old-prefix source too. The entire
+word is an involution, its heat uses the true N41, and all36 future
+occurrences retain their signed source. A real repeated-CX countercontrol
+shows why arbitrary futures cannot be assumed to have factored cold blocks.
+This native binary application is not the incoming canonical AF family's
+unproved physical gate compiler; both carriers retain their own inputs.
+
+**Smallest decisive check:** exact full64 active-column native products,
+protected matrix-unit commutators, all actual suffix-adjoint local source
+matrices and their exact singular values, nonscalar cold-factor/commutator
+identity, plus outward full-price intervals using the unchanged certified
+heat coefficient. All other1024 thermal spectators are retained; only the
+actual oldRIGHT2 multiplies the active input rank. The embedded final
+checker and observed receipt provide all literal calls and hashes. Normal
+and optimized outputs are compared; no large compiler, new geometric root,
+Lean or foreign floating seed replay is required for this substitution.
+
+**Remaining application:** the full new reporter source must be pulled
+back through its actual field/task/control graph, or its independent rows
+must remain equations. The existing guarded field-source descent and exact
+nonlinear Einstein/matter owners are the consumers. The independent local
+matrix comparison norm is not declared physical X_N, and actual finite
+words do not prove continuous native gates or choices of one autonomous
+controller from the same complete initial state. Complete selected physical
+Cost-Info, the actual scene/field map and GR refinement remain. Selecting a
+different report because it is stationary cannot discharge them.
+`GR_closed=false`; the user's full goal stays active.

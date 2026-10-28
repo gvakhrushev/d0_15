@@ -95927,6 +95927,3722 @@ print(json.dumps(result,indent=2))
 ```
 <!-- END 7dp PAID ARCHIVE SOURCE RECEIPT -->
 
+## 7dq. One archive-preserving native seed and its actual QUERY: every control, generated cut and complete price
+
+28 October2026. SAME #334, constitutive/native-programme-v1, native
+realization / final composition. Input185ab21cb, including7dp and the
+incoming native stationary-seed theorem; publication also consumes and
+preserves the stronger canonical/nonscalar theorem throughd37bd1ecf.
+No new research task, geometry
+ansatz, source convention or price is introduced. This application removes
+two SPECIFIC missing hypotheses of the seed's proposed use: preservation
+of7dp's actual old archive, and an actual scalar future on the whole old
+input. It then evaluates EVERY occurrence source on the resulting word.
+
+The substitution is positive for the old preparation block. It does not
+complete GR: all38 future occurrences have a nonzero source on their
+declared local matrix-control spaces. A second literal equal-inventory
+word is stationary in the full endpoint chart, but changes the report law.
+It cannot replace the first execution in a task requiring that report.
+Both conclusions use the complete same-execution H+J, not a free prepared
+state or a heat-free surrogate. `GR_closed=false`.
+
+### 1021. Change the real wiring to preserve the original archive
+
+Consume the [native stationary seed](A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md),
+7dp's fixed A0 archive, the existing
+[literal QUERY/task words](A4D_TASK_FAITHFUL_RETURN_SOURCE_2026_10_28.md),
+and the [full clock source](A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md).
+The scientific input is their completed source algebra, not another root
+search or another proof of the generic endpoint cotangent criterion.
+
+Keep EXACTLY the16-wire binary boundary: only6,13,14,15 are unknown,
+13/14 are Spin,15 is immutable oldRIGHT, and the other12 wires are the
+same declared initial blanks. All16 input columns remain. Replace the
+seed's CX(6,0) by the actually available CX(6,12). Its chronological word is
+
+    S_word: CX(6,12); SourceI(0,13,14)^4.                  (1030)
+
+Every SourceI call is paid. On ALL65536 columns its endpoint is the
+involution S=CX(6,12); the full four-call SourceI endpoint is I. The
+unknown left bit6 is coherently copied into right bit12. A superposition
+produces a retained Bell correlation; no input is erased or postselected.
+The genuine initial corner is K_S=diag(I8,0_8), exactly as in the owned
+seed theorem. Thus its projective-return source criterion still applies.
+
+This time the ENTIRE left address is unchanged. Consequently S commutes
+with the original L=diag ell(left) of7dp, whatever0/1 labels extend ell
+to unused left89..127. It acts as I on Spin and oldRIGHT. Hence it
+preserves the SAME full old algebra
+
+    A_old=(C direct_sum C) tensor M8(Spin4 times oldRIGHT2)
+
+on the complete carrier. This fixes the concrete old1->left65 failure
+of the former CX(6,0) placement. It does not reinterpret the old algebra
+as a current centre, nor assert preservation of every later A8 observable.
+
+The input is still the declared binary boundary, not the canonical PF
+GNS preparation of7do. This is a changed native initial execution, not
+a retroactive replacement of an arbitrary recorded past. No additional
+blank, external state, code register or independently prepared trace is
+added to make the construction work.
+
+### 1022. Compose the paid future on a different existing right bit
+
+Use right bit11 for the owned26-call QUERY. Let r be the three-CX swap
+of port0 and bit11, and V the positive native word r;G0;r, whose full
+endpoint is G11. The same routed construction is, chronologically,
+
+    Q_word: inverse(V); r; SourceI^2; r; V.              (1031)
+
+Every inverse is expanded using positive original calls: CX reverses
+itself, SourceI inverse is three SourceI, and G inverse is ZGZ with
+Z=SourceI^2 at the actual port and its required paid routing. The emitted
+26-call word has2G+18CX+6SourceI. On all columns its endpoint is
+
+    Q_11=[[c,u],[u,-c]] on bit11, identity elsewhere,
+    c=p^3, u=2p sqrt(p)=sqrt(1-c^2), p=phi^-1.          (1032)
+
+It is a reflection, independent of Spin on its COMPLETE endpoint, not
+only after a prepared expectation. Thus [S,Q_11]=0 and U=S Q_11 is an
+involution. The shorter composed word has31 paid calls. All previously
+unused columns remain in its full carrier and thermal trace.
+
+For the actual finite source comparison use v=one G11, with its fully
+paid inverse. The two COMPLETE chronological words are
+
+    A: S_word ; v ; inverse(v) ; Q_word,
+    B: S_word ; v ; Q_word ; inverse(v).                (1033)
+
+Both have25CX+4G+14SourceI=43 calls. Their endpoints are respectively
+S Q_11 and S Z_11, where Z_11=diag(1,-1). All literal calls, wire
+addresses and full hashes are in the executed receipt below. These are
+actual alternative finite words in the existing primitive grammar;
+43 controlled abstract slots have not been counted as43 native gates.
+
+Both endpoints preserve A_old exactly, on all columns, since neither
+changes a left address and both restore Spin. This is the SAME fixed
+endpoint-archive condition as7dp. A fixed old test at every raw tick
+would be another task: routing temporarily moves information and the
+source calls can correlate Spin. No free measurement or temporal
+readout transport is inserted to assert that stronger condition.
+
+### 1023. The same generated cuts give the complete scalar-future pullback
+
+Let T_j be the product of the first j actual primitives in(1033), and
+P_j=T_j P0 T_j*. Use the existing generated-cut/causal reduction. Those
+prefixes and cuts are generated states, not independently chosen
+apparatus variables. With the fixed original input i0 and rank16 cut,
+the ACTUAL closing corners are
+
+    K_A=c K_S=diag(c I8,0_8),
+    K_B=K_S=diag(I8,0_8).                                (1034)
+
+Here the scalar-future relation has a proved full-space cause:
+the future endpoint acts only on bit11 and compresses to c on its
+original blank, independently of every old seed column. It is not
+inferred from one input probability or assumed from equal dimensions.
+
+More strongly, let delta S arise from ANY independently varied seed
+occurrence on its ACTUAL support (6,12) or (0,13,14). It still leaves
+bit11 untouched. Thus delta K_A=c delta K_S. Applying the existing
+projective-seed theorem with T=c^2 gives
+
+    D_seed J_A=0,
+    w_A=8 zeta c^2/(1-zeta+zeta c^2)>0.                 (1035)
+
+This covers independent positive SourceI occurrences as well as the
+copy gate; their inverse dependence is not postulated. It supplies the
+previously conditional scalar-future map on THIS complete paid word.
+It also covers inherited skew insertions that actually pull back to
+these old supports. A new insertion touching bit11 is a future control,
+not an old zero-source row. No singular inverse of K_S is used.
+
+For the full homogeneous INTERNAL-clock, the owned winding formula is
+
+    Z01=N d(2a0+359)+4N sum_(k>=1) a_(kN) ReTr U^k,
+    H=log Z01/beta, d=65536, beta=2p^2, zeta=2^-20.
+
+At either involution U in(1033), U^k is Hermitian. For ANY full unitary
+endpoint variation delta U=XU, X*=-X, ReTr(X U^k)=0. Consequently
+D H=0 at both centres on the fixed N,d,scene,Gram,beta chart, including
+all raw occurrence variations. This is an exact full-heat derivative,
+not a claim that H itself vanishes or that heat is constant away from
+those centres. Combined with(1035), it solves all five old seed rows
+of the complete B=H+J after the actual future has been attached.
+
+### 1024. Every future occurrence and its true source norm
+
+Apply the owned endpoint cotangent with the true D=(1-zeta)I+zeta K*K:
+
+    C_J=-zeta[U i0 D^-1 i0* U*,P0],
+    D B=ReTr(C_J X), delta U=XU.
+
+For a left variation delta g_j=X_j g_j, the actual source matrix is
+C_j=W_>j* C_J W_>j, where W_>j is the full suffix after occurrence j.
+The matrix on the local support is its partial trace over the other
+actual registers. No independent inverse is deleted from this formula.
+
+On A set
+
+    g=zeta c u/(1-zeta+zeta c^2)>0.
+
+The executed exact-algebraic pullback gives ZERO on occurrences1--5.
+On EACH of occurrences6--43, the local source has nuclear norm16g
+after the genuine oldRIGHT multiplicity2. The exact local skew axes
+and coefficients, including all signs, are in the receipt. There are
+68 nonzero components among the546 real skew axes. All imaginary
+symmetric axes have zero real trace against these real skew sources,
+so the source description also covers the full1312 local complex
+unitary dimensions, including phases. These dimensions are calculated
+from the actual four1-wire, twenty-five2-wire and fourteen3-wire calls.
+
+For the explicitly DECLARED independent local matrix comparison norm
+max_j ||X_j||op, the exact dual norm therefore is
+
+    ||D B_A||raw* =38(16g)=608g
+                   =76(u/c) w_A.                       (1036)
+
+Each local maximum is attained by the skew sign of its local source,
+so this is an equality, not a sum of loose entrywise bounds. It is
+not the old raw216 norm, a C3 field norm, or proof that these arbitrary
+unitary controls belong to physical X_N. The Golden/CX/SourceI palette
+is still discrete. The actual finite words(1033), rather than a
+fictitious continuous compiler, prove the finite price contrast below.
+
+The ambient independent local spaces in(1036) can include directions
+outside the fixed old-archive fibre. Its norm is NOT claimed to be the
+norm after imposing all archive constraints. The bit11 one-sided
+rotation below does preserve the full A_old exactly: its complete
+endpoint still changes only right coordinates and is Spin-independent.
+Thus a nonzero row survives even inside that stated archive fibre,
+without asserting that every row of(1036) is an admissible task change.
+
+For orientation, a one-sided endpoint rotation on bit11 has source
+16g=3.50030650432416307788...e-6. The mechanically conjugated QUERY
+Q(s)=exp(sJ)Q exp(-sJ), ||J||op=1, has c'(0)=-2u and source
+
+    D_query B_A=32g=4w_A u/c
+                     =7.00061300864832615576...e-6.      (1037)
+
+The beginning of the real43-call source table is especially diagnostic:
+the one G11 at stage6 has coefficient -16g, while its paid inverse's
+G0 at stage12 has +16g. Mechanically linked changes can cancel;
+independent changes do not. Their actual suffix maps and nonzero
+SourceI/routing rows are retained in(1036). The wrong convention that
+assigns every primitive the untransported endpoint source fails an
+explicit check. Six independent whole64-column finite differences
+confirm the occurrence signs and pullbacks; they are analytical
+matrix checks, separately labelled from the literal native words.
+
+### 1025. All independent rows can vanish, but the report then changes
+
+At B, K_B*K_B is a projection. The already-owned criterion gives
+C_J=0 on the ENTIRE65536-dimensional endpoint tangent space. Since
+U_B is an involution, its complete C_H is also zero. Thus every
+independent raw occurrence row vanishes at B, including all546 real
+axes and all1312 complex local directions. This is stronger than
+freezing inverse legs or checking only a chosen field slice.
+
+Nevertheless B is not the same report task. Define the actual SOURCE
+effect of the query reflection by E_Q=(I-Q)/2. On ALL original input
+columns its prepared compression is p^2 I16 at A and zero at B.
+In particular, for an initially blank bit11,
+
+    Pr_A(query event)=p^2, Pr_B(query event)=0.
+
+The preserved old archive does not identify these future reports.
+Neither positive recording, nonzero feedback nor full fixed-chart
+stationarity forces this report law. The full task-effect theorem
+remains the correct consumer: genuine implementations of the same
+specified all-input effect can share a source; B changes that effect.
+The stationary B is a useful actual countercontrol, not a substituted
+Einstein solution or a proposed new report selector.
+
+This does not claim the lower-price word is a minimum over every
+primitive programme. Nor does it transfer stationarity across changes
+of scene, Gram, beta, rank, clock length or the actual initial boundary.
+Those are not the fixed-chart sources evaluated here.
+
+### 1026. Full paid price, with the actual billion-mode thermal carrier
+
+Both endpoints in(1033) have exactly32768 eigenvalues+1 and32768
+eigenvalues-1. At their common N=43 their ENTIRE heat traces agree,
+not merely their asymptotic leading terms. The actual return prices are
+
+    J_A=-8log(1-zeta)-8log(1-zeta+zeta p^6),
+    J_B=-8log(1-zeta),
+    B_A-B_B=-8log(1-zeta+zeta p^6)>0.                    (1038)
+
+The actual paired-Hodge carrier has1197670400 modes:92995584 in H0,
+1104674816 in H1, including1011679232 harmonic modes. The full64
+active columns tensor1024 thermal spectators give d=65536; only the
+actual oldRIGHT2 multiplies the rank8 active input to rank16. Treating
+all1024 thermal spectators as input columns would be a different price.
+
+Using7do's unchanged certified a0 interval and the owned rational
+winding tail A1_43<1e-110, outward intervals give
+
+    H =27.251306499028889914347442253823...,
+    B_A=27.251321332653249109755279560072...,
+    B_B=27.251314128427059145467500255772...,
+    B_A-B_B in
+      [0.000007204226189964287779304299645565884614332,
+       0.000007204226189964287779304299645565884614335].
+
+The gain is w_A in
+[0.000000425171967968631731746184594007985738018,
+ 0.000000425171967968631731746184594007985738021].
+No heat baseline, unused input mode, oldRIGHT factor, positive inverse
+or identity-prefix execution is subtracted to obtain these numbers.
+The exact finite phase formula and its rigorous tail are used; the
+billion-dimensional heat matrix is not claimed to have been simulated.
+
+### 1027. Apply the incoming NONSCALAR criterion to a literal41-call continuation
+
+During this computation the existing PR received the
+[canonical archive/stationary family](A4D_CANONICAL_ARCHIVE_STATIONARY_FAMILY_2026_10_28.md).
+Its proved nonscalar criterion strengthens the earlier scalar-future
+hypothesis. It is consumed, not reproved: if the actual cold product is
+A K0 with partial-isometry K0, the full old-prefix return source is zero
+exactly when [M,Q0]=0, M=A*A and Q0=K0 K0*. Its canonical GNS construction,
+parity theorem and stationary tower are preserved. The native actuation
+of its particular five AF exchanges remains a separate obligation; the
+following binary word is not relabelled as that canonical preparation.
+
+Here is an actual use beyond the scalar case, on the SAME16 wires.
+Let X=CX(6,11), and take the positive chronological control word
+
+    V_c: G11 ; X ; G11 ; X.
+
+Its full endpoint is G11^2 on old q6=0 and I on old q6=1, since
+X G11 X=G11^-1 in the second sector. Using the same paid positive
+inverse compiler and the routed Z11 word, execute
+
+    C: S_word ; inverse(V_c) ; Z11_word ; V_c.           (1039)
+
+This is4G+23CX+14SourceI=41 actual primitive calls, of which36 are
+the future. Put c4=2p^6-1 and u4=2p^3 u. The COMPLETE future endpoint is
+
+    F_c=Pi_(q6=0) tensor [[c4,u4],[u4,-c4]]_11
+                         +Pi_(q6=1) tensor Z11,
+    A=diag(c4 I8,I8), M=diag(c4^2 I8,I8).                (1040)
+
+Thus M is genuinely nonscalar, and [M,Q0]=0 for this seed's
+Q0=diag(I8,0_8). The factorization is also proved, rather than merely
+checked at the central corner: the complete future leaves old port0,
+right12 and Spin unchanged, and its blank11 compression preserves the
+old initial cut. Hence every old prefix variation not touching11 has
+K_total=A K_prefix; escaped right12 branches cannot return through
+this future. The incoming criterion applies on the entire old endpoint
+variation space with that support. All five actual seed rows are zero.
+
+Moreover [S,F_c]=0 and both are involutions, so the actual whole-word
+heat source is zero at this centre as well. The true total corner is
+diag(c4 I8,0_8), with future gain
+
+    w_C=8 zeta c4^2/(1-zeta+zeta c4^2)>0.
+
+This is not zero future source. The checker computes all534 real local
+axes of the ACTUAL41 calls. Each of its36 future occurrences has local
+dual norm16|g_C|, where g_C=zeta c4 u4/(1-zeta+zeta c4^2)<0; the complete
+independent stage-max dual norm is576|g_C|. The sign of g_C is retained
+in every listed source row. The initial-return block being stationary
+does not identify those new controls with geometric variations.
+
+All41 calls and the changed complete clock appear in the receipt's
+absolute price for C. Its H is evaluated at N41, not borrowed from A/B
+at N43; no price comparison cancels heat across those different clocks.
+The observed full price is27.188969808801702414046933399179...,
+with w_C=6.02348540147813759609...e-6 and
+g_C=-3.88771692006215587090...e-7. All1141964800 Hodge modes remain.
+This is a literal paid application of the newly received nonscalar
+source theorem, with the actual failure-sector support and old archive.
+
+The factorization condition is essential even for native words: the
+six-call countercontrol S_word;CX(6,12) has full corner I16, whereas
+the product of its two old cold corners is diag(I8,0_8). Its last CX
+returns the previously escaped sector and uncomputes the new right12
+record. It preserves the inherited A_old, but is not asserted to satisfy
+a task retaining that additional record. This actual negative control
+prevents replacing the proved parked-future map by arbitrary continuation.
+
+### 1028. Exact parent substitution and the remaining field application
+
+The old prefix now has a literal native implementation which both
+preserves7dp's original fixed archive AND has the claimed scalar-future
+pullback after a real paid QUERY. Its independent source vanishes on
+all actual old supports, with positive true future gain. This removes
+that specific conditional premise of the incoming stationary seed
+and7dp1018. A counterexample affecting ell in another wiring cannot
+invalidate this new exact commutation map.
+
+For a larger existing field reporter, the usable interface is explicit:
+prove its actual factored cold product on the full old input, preservation
+of the seed's returning sector by its true M, and the transport of the
+relevant old controls without touching the new work. The scalar case is
+sufficient, not necessary, as(1039)--(1040) now demonstrate with native
+words. Then the owned projective-seed pullback removes those old sources.
+Its heat must use
+its actual complete endpoint and clock; the involution argument applies
+only when that full endpoint remains an involution. No unchanged
+canonical GNS, larger archive or every future marker is inferred.
+
+The existing guarded field-writer/source-descent and exact nonlinear
+Einstein/matter results remain consumers. In the present composition
+the remaining issue is the source of the ACTUAL new reporter controls,
+including all paid inverse and routing calls in(1036). One must derive
+their true dependence on the field, task and retained data, or retain
+their independent equations. The source cannot be removed by calling
+every such control a generated prefix, by keeping only the38-call
+word's endpoint angle, or by selecting B after observing that it is
+stationary. No function c(Y) is assigned from a desired Einstein action.
+
+The two words are literal schedules in the owned native-word grammar.
+Equating their schedules with choices of one autonomous controller at
+the SAME complete initial state still requires that controller map and
+its price. No uncharged internal programme register has been added.
+This specified H+J uses the existing homogeneous INTERNAL realization;
+it is not automatically the compulsory full physical Cost-Info of
+Book03, the default unconnected scene operator, or a different H+J+R
+binding. An additional genuinely selected term retains its real source.
+
+The full user goal remains active. No task/assembly acceptance, claim,
+Ready state, merge, all42 physical source match or GR refinement is
+promoted. This is a concrete same-execution source substitution and
+a precisely located remaining application, not closure by a lower
+price for a changed task.
+
+### 1029. Reproduction and observed evidence
+
+The following embedded checker constructs every positive primitive
+of(1033) and(1039), multiplies exact64-column matrices over QQ(sqrt(p)), checks
+the protected matrix units, and computes the complete occurrence
+cotangent and exact local operator-norm duals. The other1024 thermal
+columns are included through the proved tensor identity, with the
+different rank16 input retained. It reuses the pinned source formula
+and certified a0 bytes, not an old numerical seed receipt.
+
+All434 explicit checks pass in ordinary and optimized runs on
+Python3.9.6, SymPy1.14.0 and mpmath1.3.0. Their JSON receipts are
+byte-identical and both stderr files are empty. Explicit failure
+conditions survive python -O. Checker SHA256 is
+764ffcab31407770f56a843c5b53e9ee0da30f95d01632ea05e50ce67be21b82;
+observed receipt SHA256 is
+c1287748d2736c75959454ba716da5fab72e793848597e328322ed4e9e0790dd.
+The six high-precision raw
+matrix differences have maximum source error below2.34e-30; exact
+stationarity and archive membership follow from the algebra, not a
+floating tolerance. No foreign NumPy/BLAS seed replay, huge compiler,
+new geometric root, Lean build or physical admission is claimed.
+
+Extract `7dq ARCHIVE SEED QUERY CHECKER` to a temporary Python file and
+run it from this repository root; it verifies all frozen inputs and
+prints the exact receipt below. The emitted lists contain all43 or41 calls,
+so the actual input, generated prefix/cut and source at any occurrence
+are reconstructible without an external instruction table.
+
+<!-- BEGIN 7dq ARCHIVE SEED QUERY CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Literal archive-preserving seed plus QUERY, with every stage source.
+
+Native words are discrete. Local Lie-algebra sources below are the exact
+matrix comparison of those words, not a declaration of physical admission.
+All computations are exact algebraic or outward interval arithmetic; no BLAS.
+"""
+from __future__ import annotations
+import hashlib, json, math, platform
+from collections import Counter
+from fractions import Fraction
+from pathlib import Path
+import sympy as s
+from sympy.polys.matrices import DomainMatrix
+import mpmath as mp
+
+ROOT=Path.cwd()
+PRIMARY=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+SOURCES=ROOT/'02_REGISTRY/research/sources'
+CHECKS=[]
+def require(ok, label):
+    if not bool(ok): raise ArithmeticError(label)
+    CHECKS.append(label)
+def sha(b): return hashlib.sha256(b).hexdigest()
+def frozen(tag,lang):
+    b=PRIMARY.read_bytes()
+    start=('<!-- BEGIN '+tag+' -->\n```'+lang+'\n').encode()
+    end=('```\n<!-- END '+tag+' -->').encode()
+    require(b.count(start)==b.count(end)==1,'one frozen '+tag)
+    return b.split(start)[1].split(end)[0]
+prior=frozen('7do PAID BINARY INPUT RECEIPT','json')
+require(sha(prior)=='811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba','owned full-heat coefficient receipt')
+archive_code=frozen('7dp PAID ARCHIVE SOURCE CHECKER','python')
+require(sha(archive_code)=='72edd8c55ecfedd103602e9a0af969325d4720b242ad86649c4c877a2f787b66','owned original archive and prior word source')
+pins={
+ 'd0_native_stationary_seed_2026-10-28/check_seed.py':'9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120',
+ 'd0_clock_winding_source_2026-10-28/PROOF_RU.md':'ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418',
+ 'd0_task_faithful_source_2026-10-28/check_task_source.py':'ac1b5af37e848782060b8f686852729d401d7b48d7c1f7bff459075d59f0f180',
+ 'd0_canonical_stationary_family_2026-10-28/check_canonical_seed.py':'21744ce3ea2e55dbd48a74393fd627b209d49b391e9367330858c519eab6ca94',
+ 'd0_canonical_stationary_family_2026-10-28/PROOF_RU.md':'fe4b8e9033098ced52299fbc0481ab2ddecceed69c6f4392988803ab0abfa005'}
+for name,pin in pins.items(): require(sha((SOURCES/name).read_bytes())==pin,'unchanged input '+name)
+
+p=(s.sqrt(5)-1)/2; a=s.sqrt(p); z=s.Rational(1,2**20)
+c=p**3; u=2*p*a; D=1-z+z*c*c
+field=s.QQ.algebraic_field(a)
+def scalar(x): return field.from_sympy(x)
+def dm(M): return DomainMatrix.from_Matrix(s.Matrix(M)).convert_to(field).to_sparse()
+def simple(x): return str(s.simplify(field.to_sympy(x)))
+I=dm(s.eye(64)); ZERO=field.zero
+ACTIVE=(0,6,11,12,13,14)
+position={w:i for i,w in enumerate(ACTIVE)}
+oldR_multiplier=2
+require(64*1024==65536 and 8*oldR_multiplier==16,'full thermal multiplicity differs from actual input rank')
+G=s.Matrix([[a,-p],[p,a]])
+Li=s.Matrix([[0,-1,0,0],[1,0,0,0],[0,0,0,-1],[0,0,1,0]])
+SI=s.diag(s.eye(4),Li)
+CX=s.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+def bits(k): return [(k>>(5-j))&1 for j in range(6)]
+def unbits(b): return sum(x<<(5-j) for j,x in enumerate(b))
+def local_index(b,ww): return sum(b[position[w]]<<(len(ww)-1-j) for j,w in enumerate(ww))
+def embed(M,ww):
+    out=s.zeros(64)
+    for col in range(64):
+        bb=bits(col); j=local_index(bb,ww)
+        for k in range(2**len(ww)):
+            if M[k,j]==0: continue
+            nn=bb[:]
+            for t,w in enumerate(ww): nn[position[w]]=(k>>(len(ww)-1-t))&1
+            out[unbits(nn),col]=M[k,j]
+    return dm(out)
+cache={}
+def gate(item):
+    op,ww=item
+    if item not in cache:
+        require(15 not in ww,'immutable oldRIGHT never addressed')
+        require(op=='SourceI' or not ({13,14}&set(ww)),'ordinary primitives never address Spin')
+        require(op!='SourceI' or ww==(0,13,14),'original fixed source port')
+        out=embed({'G':G,'CX':CX,'SourceI':SI}[op],ww)
+        require((out.transpose().matmul(out)-I).is_zero_matrix,'complete native primitive orthogonal')
+        cache[item]=out
+    return cache[item]
+si=('SourceI',(0,13,14))
+def swap(x,y): return [('CX',(x,y)),('CX',(y,x)),('CX',(x,y))]
+def inverse(word):
+    out=[]
+    for op,ww in reversed(word):
+        if op=='CX': out.append((op,ww))
+        elif op=='SourceI': out.extend([si]*3)
+        else:
+            rr=[] if ww[0]==0 else swap(ww[0],0)
+            out.extend(rr+[si,si,('G',(0,)),si,si]+rr)
+    return out
+route=swap(0,11)
+routed=route+[('G',(0,))]+route
+query=inverse(routed)+route+[si,si]+route+routed
+seed=[('CX',(6,12))]+[si]*4
+v=[('G',(11,))]
+words={'short':seed+query,
+       'A':seed+v+inverse(v)+query,
+       'B':seed+v+query+inverse(v)}
+controlled=[('G',(11,)),('CX',(6,11)),('G',(11,)),('CX',(6,11))]
+zword=route+[si,si]+route
+futureC=inverse(controlled)+zword+controlled
+words['C']=seed+futureC
+c4=2*c*c-1;u4=2*c*u;D4=1-z+z*c4*c4
+require(len(query)==26 and len(seed)==5,'literal constituent counts')
+inventory={key:dict(sorted(Counter(op for op,ww in word).items())) for key,word in words.items()}
+require(inventory['A']==inventory['B']=={'CX':25,'G':4,'SourceI':14},'common actual43 inventory')
+require(inventory['short']=={'CX':19,'G':2,'SourceI':10},'actual31 inventory')
+require(inventory['C']=={'CX':23,'G':4,'SourceI':14} and len(words['C'])==41,'nonscalar future literal41 inventory')
+def endpoint(word):
+    out=I
+    for item in word: out=gate(item).matmul(out)
+    return out
+S=gate(('CX',(6,12)))
+Q=embed(s.Matrix([[c,u],[u,-c]]),(11,))
+Z=embed(s.diag(1,-1),(11,))
+require((endpoint(seed)-S).is_zero_matrix,'new five-call seed exact on all64 active columns')
+require((endpoint(query)-Q).is_zero_matrix,'literal routed query exact full operator')
+require((S.matmul(Q)-Q.matmul(S)).is_zero_matrix,'same-execution full operators commute')
+E={key:endpoint(word) for key,word in words.items()}
+qzero=embed(s.diag(1,0),(6,));qone=I-qzero
+Q4=embed(s.Matrix([[c4,u4],[u4,-c4]]),(11,))
+FC=qzero.matmul(Q4)+qone.matmul(Z)
+require((endpoint(futureC)-FC).is_zero_matrix,'actual nonscalar future on ALL old/work columns')
+require((S.matmul(FC)-FC.matmul(S)).is_zero_matrix,'nonscalar complete future commutes with seed')
+for key in E:
+    target=S.matmul(FC if key=='C' else Z if key=='B' else Q)
+    require((E[key]-target).is_zero_matrix,'full endpoint '+key)
+    require((E[key].matmul(E[key])-I).is_zero_matrix,'full involution '+key)
+    require(E[key].to_Matrix().trace()==0,'full balanced signature '+key)
+require((E['A']-E['B']).is_zero_matrix is False,'finite comparison really changes endpoint')
+
+# All16 real input columns, rather than a chosen state or a trace seed.
+inrows=[k for k in range(64) if all(bits(k)[position[w]]==0 for w in (0,11,12))]
+require(len(inrows)==8,'eight active input columns times immutable oldRIGHT2')
+P=dm(s.diag(*[int(k in inrows) for k in range(64)]))
+Rbar=dm(s.diag(*[(1/D if bits(k)[position[6]]==0 else 1/(1-z)) if k in inrows else 0 for k in range(64)]))
+RbarB=dm(s.diag(*[(1 if bits(k)[position[6]]==0 else 1/(1-z)) if k in inrows else 0 for k in range(64)]))
+RbarC=dm(s.diag(*[(1/D4 if bits(k)[position[6]]==0 else 1/(1-z)) if k in inrows else 0 for k in range(64)]))
+K={}
+for key in E:
+    K[key]=E[key].extract(inrows,inrows)
+    vals=[(1 if key=='B' else c4 if key=='C' else c) if bits(k)[position[6]]==0 else 0 for k in inrows]
+    require((K[key]-dm(s.diag(*vals))).is_zero_matrix,'true entire input corner '+key)
+Kseed=S.extract(inrows,inrows)
+require((K['A']-Kseed.scalarmul(scalar(c))).is_zero_matrix,'actual scalar future on complete old input')
+Aold=dm(s.diag(*[c4 if bits(k)[position[6]]==0 else 1 for k in inrows]))
+Mold=Aold.transpose().matmul(Aold)
+require((K['C']-Aold.matmul(Kseed)).is_zero_matrix,'actual nonscalar cold product A Kseed')
+require((Mold.matmul(Kseed)-Kseed.matmul(Mold)).is_zero_matrix,'incoming exact nonscalar future criterion applied')
+require(not (Mold-I.extract(inrows,inrows).scalarmul(scalar(c4*c4))).is_zero_matrix,
+        'future effect genuinely nonscalar on old input')
+# Stronger than one base-point corner identity: the blank11 compression
+# leaves old port0/right12 and every Spin column, so its P_old off blocks
+# vanish; factorization survives arbitrary seed variations not touching11.
+oldrows=[k for k in range(64) if bits(k)[position[11]]==0]
+Ac=endpoint(futureC).extract(oldrows,oldrows)
+Pold=P.extract(oldrows,oldrows)
+require((Pold.matmul(Ac)-Ac.matmul(Pold)).is_zero_matrix,'all old failure branches remain outside the true input cut')
+reentry=endpoint(seed+[('CX',(6,12))]).extract(inrows,inrows)
+require((reentry-dm(s.eye(8))).is_zero_matrix,'actual repeated CX returns the escaped old sector')
+require(not (reentry-Kseed.matmul(Kseed)).is_zero_matrix,'native future does not imply cold-product factorization')
+
+# No dependence on the arbitrary extension of ell to unused left89..127.
+# The exact full endpoints act only on right11/right12 controlled by left6;
+# neither a left address nor Spin/oldRIGHT is changed, for all65536 columns.
+for key in E:
+    entries=E[key].to_dok()
+    require(all(bits(r)[0:2]==bits(k)[0:2] and bits(r)[4:6]==bits(k)[4:6]
+                for (r,k),value in entries.items() if value),'fixed left and Spin every full column '+key)
+    require(all((r&3)==(k&3) for r,k in entries),'entire protected Spin matrix algebra '+key)
+    for aa in range(4):
+        for bb in range(4):
+            unit=s.zeros(4);unit[aa,bb]=1
+            Aold=embed(unit,(13,14))
+            require((E[key].matmul(Aold)-Aold.matmul(E[key])).is_zero_matrix,
+                    'full Spin matrix-unit archive commutator '+key)
+require(bits(16)[position[6]]==1 and bits(16^4)[position[6]]==1,'new seed leaves raw old left control intact')
+# A Bell correlation is retained; the control is not reset.
+seed_columns=S.to_Matrix()[:,inrows]
+input_q0=inrows[0]; input_q1=next(k for k in inrows if bits(k)[position[6]]==1 and (k&3)==0)
+out_q0=next(r for (r,k),x in S.to_dok().items() if k==input_q0 and x)
+out_q1=next(r for (r,k),x in S.to_dok().items() if k==input_q1 and x)
+require(bits(out_q0)[position[12]]==0 and bits(out_q1)[position[12]]==1,'actual retained right record distinguishes both old inputs')
+
+# Full endpoint cotangent, restricted by the ACTUAL suffix of every occurrence.
+def cotangent(U,R):
+    B=U.matmul(R).matmul(U.transpose())
+    return (B.matmul(P)-P.matmul(B)).scalarmul(scalar(-z))
+C=cotangent(E['A'],Rbar)
+CB=cotangent(E['B'],RbarB)
+require(CB.is_zero_matrix,'all endpoint sources vanish for literal stationary B')
+require(not C.is_zero_matrix,'A has actual nonzero full return source')
+gain=scalar(z*c*u/D)
+Cn=C.scalarmul(field.one/gain)
+require((Cn+Cn.transpose()).is_zero_matrix,'real skew whole endpoint cotangent')
+def partial_trace(M,ww):
+    n=2**len(ww); out=[[ZERO for _ in range(n)] for _ in range(n)]
+    for (r,k),value in M.to_dok().items():
+        br,bk=bits(r),bits(k)
+        if all(br[j]==bk[j] for j,w in enumerate(ACTIVE) if w not in ww):
+            out[local_index(br,ww)][local_index(bk,ww)]+=value
+    return out
+def source_table(word,Cnorm):
+    pulled=Cnorm; table=[]; nonzero_components=0; all_components=0
+    for j in reversed(range(len(word))):
+        op,ww=word[j]; loc=partial_trace(pulled,ww); rows=[]
+        for aa in range(len(loc)):
+            for bb in range(aa+1,len(loc)):
+                value=oldR_multiplier*(loc[aa][bb]-loc[bb][aa])
+                all_components+=1
+                if value:
+                    rows.append([aa,bb,simple(value)]);nonzero_components+=1
+        localdm=DomainMatrix.from_list(loc,field).to_sparse()
+        gram=localdm.transpose().matmul(localdm)
+        gd=gram.to_dok()
+        require(all(r==k for r,k in gd),'local exact source singular-value matrix diagonal')
+        trnorm=s.simplify(sum(s.sqrt(field.to_sympy(gd.get((k,k),ZERO))) for k in range(len(loc))))
+        trnorm=s.simplify(oldR_multiplier*trnorm)
+        require(trnorm==(16 if rows else 0),'local operator-norm dual source certified exactly')
+        table.append({'stage':j+1,'op':op,'wires':list(ww),'coefficients_over_g':rows,
+                      'operator_norm_dual_over_g':int(trnorm)})
+        pulled=gate(word[j]).transpose().matmul(pulled).matmul(gate(word[j]))
+    table.reverse()
+    require(all(not row['coefficients_over_g'] for row in table[:5]),'every independently varied seed occurrence has zero whole source')
+    return table,all_components,nonzero_components
+table,ncomp,nnz=source_table(words['A'],Cn)
+require(ncomp==546,'all local real skew source components of actual43 calls')
+require(nnz>0,'independent future stages remain visible')
+zero_table,zbcomp,zbnz=source_table(words['B'],CB)
+require(zbcomp==546 and zbnz==0,'all546 local source components zero at B')
+require(sum(1 for row in table if row['coefficients_over_g'])>1,'inverse and preparation are not frozen')
+raw_dual=sum(row['operator_norm_dual_over_g'] for row in table)
+require(raw_dual==608,'full independent stage-max dual norm equals608g')
+CC=cotangent(E['C'],RbarC)
+gainC=scalar(z*c4*u4/D4)
+tableC,cncomp,cnnz=source_table(words['C'],CC.scalarmul(field.one/gainC))
+require(cncomp==534 and sum(row['operator_norm_dual_over_g'] for row in tableC)==576,
+        'all41 nonscalar-future occurrence sources and full raw dual norm')
+# Imaginary symmetric generators have zero real trace against the real skew Cj;
+# this covers the rest of each full local complex-unitary comparison space.
+complex_dim=sum(4**len(ww) for op,ww in words['A'])
+require(complex_dim==1312,'complete local complex-unitary dimension including phases')
+X=embed(s.Matrix([[0,-1],[1,0]]),(11,))
+endpoint_source=oldR_multiplier*(Cn.matmul(X)).to_Matrix().trace()
+require(s.simplify(endpoint_source-16)==0,'unit operator norm one-sided query source16g')
+require(s.simplify(2*endpoint_source-32)==0,'mechanically conjugated query source32g')
+wrong=Cn
+wrong_rows=[]
+for j,item in enumerate(words['A']):
+    loc=partial_trace(wrong,item[1])
+    wrong_rows.append(any(loc[aa][bb]!=loc[bb][aa] for aa in range(len(loc)) for bb in range(aa+1,len(loc))))
+require(any(wrong_rows[j] != bool(table[j]['coefficients_over_g']) for j in range(len(table))),
+        'omitting actual suffix transport fails a source row')
+
+# Same report effect on the whole SOURCE is the actual permissible fibre
+# in this example, not all matrices with the same one-state expectation.
+effect=(I-Q).scalarmul(scalar(s.Rational(1,2)))
+effectB=(I-Z).scalarmul(scalar(s.Rational(1,2)))
+require((P.matmul(effect).matmul(P)-P.scalarmul(scalar(p*p))).is_zero_matrix,'A report probability p squared on all initial columns')
+require(P.matmul(effectB).matmul(P).is_zero_matrix,'B changes report probability to zero on all initial columns')
+
+mp.mp.dps=100;mp.iv.dps=90;iv=mp.iv
+piv=(iv.sqrt(5)-1)/2;betaiv=2*piv**2;ziv=iv.mpf(1)/2**20
+civ=piv**3;uiv=2*piv*iv.sqrt(piv);Div=1-ziv+ziv*civ*civ
+c4iv=2*civ*civ-1;u4iv=2*civ*uiv;D4iv=1-ziv+ziv*c4iv*c4iv
+owned=json.loads(prior);a0=iv.mpf(owned['complete_book']['a0_interval'])
+def endpoints(x): return mp.mpf(x.a),mp.mpf(x.b)
+def ivfmt(x):
+    scale=10**45;lo,hi=endpoints(x*scale)
+    def dec(k):
+        sg='-' if k<0 else '';k=abs(k)
+        return sg+str(k//scale)+'.'+str(k%scale).zfill(45)
+    return [dec(int(mp.floor(lo))-1),dec(int(mp.ceil(hi))+1)]
+def A1(N):
+    xx=Fraction(2,55);q=xx**N/math.factorial(N)
+    return Fraction(176,359)/(1-xx*xx)*q/(1-q)**2
+def bound_iv(x): return iv.mpf(x.numerator)/x.denominator
+def price(N,which):
+    tail=bound_iv(A1(N));H=iv.ln(N*65536*(2*a0+359))/betaiv+iv.mpf([-endpoints(tail)[1],endpoints(tail)[1]])
+    J=-8*iv.ln(1-ziv)-8*iv.ln(1-ziv+ziv*(1 if which=='B' else c4iv*c4iv if which=='C' else civ*civ))
+    return H,J,H+J
+H,JA,BA=price(43,'A');HB,JB,BB=price(43,'B')
+HC,JC,BC=price(41,'C')
+gap=-8*iv.ln(Div)
+require(endpoints(gap)[0]>0,'strict whole price gap with exact equal full heat')
+require(A1(43)<Fraction(1,10**110),'actual43 full heat coefficient bound')
+g=ziv*civ*uiv/Div
+w=8*ziv*civ*civ/Div
+require(endpoints(32*g)[0]>0,'strict actual whole query source')
+require(endpoints(w)[0]>0,'actual retained source gain positive')
+
+# Independently differentiate the complete64 endpoint, including noncommuting
+# actual forward/reverse gates, using arbitrary-precision real matrices.
+# Six representative nonzero/zero raw axes; this tests the suffix sign convention.
+def numeric(M): return mp.matrix([[mp.mpf(str(s.N(field.to_sympy(v),105))) for v in row] for row in M.to_list()])
+numericC=numeric(C)
+numericE=numeric(E['A']); numericI=mp.eye(64)
+def Jnum(U):
+    kk=mp.matrix([[U[r,k] for k in inrows] for r in inrows]);dd=(1-mp.mpf(2)**-20)*mp.eye(8)+mp.mpf(2)**-20*(kk.T*kk)
+    return -2*mp.log(mp.det(dd))
+samples=[0,1]+[row['stage']-1 for row in table if row['coefficients_over_g']][:4]
+errors=[]
+for j in samples:
+    ww=words['A'][j][1]
+    axis=(table[j]['coefficients_over_g'][0][:2] if table[j]['coefficients_over_g'] else [0,1])
+    aa,bb=axis;ll=s.zeros(2**len(ww));ll[aa,bb]=-1;ll[bb,aa]=1
+    Xj=embed(ll,ww);suffix=endpoint(words['A'][j+1:]);Y=suffix.matmul(Xj).matmul(suffix.transpose());Yn=numeric(Y)
+    theta=mp.mpf('1e-12')
+    # The exact embedded plane generator satisfies Y^3=-Y.
+    require((Y.matmul(Y).matmul(Y)+Y).is_zero_matrix,'raw source plane exact exponential')
+    Y2=Yn*Yn
+    Up=(numericI+mp.sin(theta)*Yn+(1-mp.cos(theta))*Y2)*numericE
+    Um=(numericI-mp.sin(theta)*Yn+(1-mp.cos(theta))*Y2)*numericE
+    finite=(Jnum(Up)-Jnum(Um))/(2*theta)
+    exact=2*sum((numericC*Yn)[k,k] for k in range(64))
+    err=abs(finite-exact);errors.append(err)
+    require(err<mp.mpf('1e-27'),'independent whole-matrix source sign and actual suffix')
+
+word_json={key:[{'op':op,'wires':list(ww)} for op,ww in word] for key,word in words.items()}
+result={
+ 'status':'PASS','scope':'actual fixed-boundary archive-preserving seed plus query; full fixed INTERNAL Book price; not physical X_N or GR closure',
+ 'checks':len(CHECKS),'input_commit':'185ab21cb165cbf420291a6d8a2056dc366e5275',
+ 'incoming_nonscalar_input_commit':'d37bd1ecf9550034586f32426fac84aecaf43be0',
+ 'input_pins':pins,'checker_sha256':sha(Path(__file__).read_bytes()),
+ 'runtime':{'python':platform.python_version(),'sympy':s.__version__,'mpmath':mp.__version__},
+ 'boundary':{'total_wires':16,'blanks':12,'unknown':[6,13,14,15],'oldRIGHT':15,'active':list(ACTIVE),'active_dimension':64,'thermal_spectator':1024,'input_spectator':2,'full_dimension':65536,'input_rank':16},
+ 'literal_words':word_json,
+ 'word_sha256':{key:sha((json.dumps(val,sort_keys=True,separators=(',',':'))+'\n').encode()) for key,val in word_json.items()},
+ 'inventories':inventory,
+ 'archive':{'same_original_A0_and_full_Spin_oldRIGHT_algebra':True,'full_endpoint_commutation':True,'unused_left_padding_arbitrary':True,'fixed_raw_tick_archive_claim':False},
+ 'corners':{'seed':'diag(I8,0_8)','A':'diag(p^3 I8,0_8)','B':'diag(I8,0_8)','C':'diag((2p^6-1) I8,0_8)'},
+ 'nonscalar_future':{'raw_stages':41,'future_stages':36,'future_effect':'diag((2p^6-1)^2 I8,I8)','actual_cold_product':True,'commutes_with_return_projector':True,'native_reentry_negative_control':'S_word;CX(6,12) has K=I, unlike K_CX K_seed=diag(I8,0_8); retention of the new right12 record is not claimed for this control','all_five_prefix_sources_exact_zero':True,'future_gain_interval':ivfmt(8*ziv*c4iv*c4iv/D4iv),'full_heat_interval':ivfmt(HC),'full_return_interval':ivfmt(JC),'full_B_interval':ivfmt(BC),'full_modes':425*41*65536,'g_signed_interval':ivfmt(ziv*c4iv*u4iv/D4iv),'real_axis_components':cncomp,'nonzero_real_components':cnnz,'full_raw_stage_max_dual_over_abs_g':576,'all_stages':tableC},
+ 'price43':{'full_modes':425*43*65536,'H0_modes':33*43*65536,'paired_H1_modes':392*43*65536,'harmonic_modes':359*43*65536,'balanced_plus_minus_multiplicity':32768,'full_H_interval':ivfmt(H),'A_return_interval':ivfmt(JA),'B_return_interval':ivfmt(JB),'A_full_B_interval':ivfmt(BA),'B_full_B_interval':ivfmt(BB),'A_minus_B_interval':ivfmt(gap),'heat_row_exact_zero_at_both_words':True},
+ 'source43':{'g_definition':'zeta*c*sqrt(1-c^2)/(1-zeta+zeta*c^2), c=p^3','g_interval':ivfmt(g),'true_w_interval':ivfmt(w),'query_conjugacy_row_interval':ivfmt(32*g),'one_sided_row_interval':ivfmt(16*g),'full_raw_stage_max_dual_interval':ivfmt(raw_dual*g),'full_raw_stage_max_dual_over_w_interval':ivfmt(raw_dual*g/w),'real_axis_components_per_word':ncomp,'full_local_complex_dimensions':complex_dim,'A_nonzero_real_components':nnz,'B_nonzero_real_components':zbnz,'seed_five_occurrences_exact_zero':True,'A_all_stages':table,'imaginary_symmetric_axes_exact_zero':True,'whole_matrix_source_fd_max_error':mp.nstr(max(errors),35)},
+ 'physical_limits':{'no_continuous_native_gate_claim':True,'fixed_finite_word_alternatives_executed':True,'single_autonomous_controller_not_proved':True,'selected_full_Cost_Info_not_identified':True,'all42_map_not_proved':True,'GR_closed':False}}
+print(json.dumps(result,indent=2,sort_keys=True))
+```
+<!-- END 7dq ARCHIVE SEED QUERY CHECKER -->
+
+<!-- BEGIN 7dq ARCHIVE SEED QUERY RECEIPT -->
+```json
+{
+  "archive": {
+    "fixed_raw_tick_archive_claim": false,
+    "full_endpoint_commutation": true,
+    "same_original_A0_and_full_Spin_oldRIGHT_algebra": true,
+    "unused_left_padding_arbitrary": true
+  },
+  "boundary": {
+    "active": [
+      0,
+      6,
+      11,
+      12,
+      13,
+      14
+    ],
+    "active_dimension": 64,
+    "blanks": 12,
+    "full_dimension": 65536,
+    "input_rank": 16,
+    "input_spectator": 2,
+    "oldRIGHT": 15,
+    "thermal_spectator": 1024,
+    "total_wires": 16,
+    "unknown": [
+      6,
+      13,
+      14,
+      15
+    ]
+  },
+  "checker_sha256": "764ffcab31407770f56a843c5b53e9ee0da30f95d01632ea05e50ce67be21b82",
+  "checks": 434,
+  "corners": {
+    "A": "diag(p^3 I8,0_8)",
+    "B": "diag(I8,0_8)",
+    "C": "diag((2p^6-1) I8,0_8)",
+    "seed": "diag(I8,0_8)"
+  },
+  "incoming_nonscalar_input_commit": "d37bd1ecf9550034586f32426fac84aecaf43be0",
+  "input_commit": "185ab21cb165cbf420291a6d8a2056dc366e5275",
+  "input_pins": {
+    "d0_canonical_stationary_family_2026-10-28/PROOF_RU.md": "fe4b8e9033098ced52299fbc0481ab2ddecceed69c6f4392988803ab0abfa005",
+    "d0_canonical_stationary_family_2026-10-28/check_canonical_seed.py": "21744ce3ea2e55dbd48a74393fd627b209d49b391e9367330858c519eab6ca94",
+    "d0_clock_winding_source_2026-10-28/PROOF_RU.md": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "d0_native_stationary_seed_2026-10-28/check_seed.py": "9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120",
+    "d0_task_faithful_source_2026-10-28/check_task_source.py": "ac1b5af37e848782060b8f686852729d401d7b48d7c1f7bff459075d59f0f180"
+  },
+  "inventories": {
+    "A": {
+      "CX": 25,
+      "G": 4,
+      "SourceI": 14
+    },
+    "B": {
+      "CX": 25,
+      "G": 4,
+      "SourceI": 14
+    },
+    "C": {
+      "CX": 23,
+      "G": 4,
+      "SourceI": 14
+    },
+    "short": {
+      "CX": 19,
+      "G": 2,
+      "SourceI": 10
+    }
+  },
+  "literal_words": {
+    "A": [
+      {
+        "op": "CX",
+        "wires": [
+          6,
+          12
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      }
+    ],
+    "B": [
+      {
+        "op": "CX",
+        "wires": [
+          6,
+          12
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      }
+    ],
+    "C": [
+      {
+        "op": "CX",
+        "wires": [
+          6,
+          12
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          6,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          6,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          6,
+          11
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          6,
+          11
+        ]
+      }
+    ],
+    "short": [
+      {
+        "op": "CX",
+        "wires": [
+          6,
+          12
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      }
+    ]
+  },
+  "nonscalar_future": {
+    "actual_cold_product": true,
+    "all_five_prefix_sources_exact_zero": true,
+    "all_stages": [
+      {
+        "coefficients_over_g": [],
+        "op": "CX",
+        "operator_norm_dual_over_g": 0,
+        "stage": 1,
+        "wires": [
+          6,
+          12
+        ]
+      },
+      {
+        "coefficients_over_g": [],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 0,
+        "stage": 2,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 0,
+        "stage": 3,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 0,
+        "stage": 4,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 0,
+        "stage": 5,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 6,
+        "wires": [
+          6,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 7,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 8,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 9,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "-4"
+          ],
+          [
+            1,
+            4,
+            "4"
+          ],
+          [
+            2,
+            7,
+            "-4"
+          ],
+          [
+            3,
+            6,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 10,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "4"
+          ],
+          [
+            1,
+            5,
+            "4"
+          ],
+          [
+            2,
+            6,
+            "4"
+          ],
+          [
+            3,
+            7,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 11,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "G",
+        "operator_norm_dual_over_g": 16,
+        "stage": 12,
+        "wires": [
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "4"
+          ],
+          [
+            1,
+            4,
+            "-4"
+          ],
+          [
+            2,
+            7,
+            "4"
+          ],
+          [
+            3,
+            6,
+            "-4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 13,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "-4"
+          ],
+          [
+            1,
+            5,
+            "-4"
+          ],
+          [
+            2,
+            6,
+            "-4"
+          ],
+          [
+            3,
+            7,
+            "-4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 14,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 15,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 16,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 17,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 18,
+        "wires": [
+          6,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 19,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 20,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 21,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "-4"
+          ],
+          [
+            1,
+            4,
+            "4"
+          ],
+          [
+            2,
+            7,
+            "-4"
+          ],
+          [
+            3,
+            6,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 22,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "4"
+          ],
+          [
+            1,
+            5,
+            "4"
+          ],
+          [
+            2,
+            6,
+            "4"
+          ],
+          [
+            3,
+            7,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 23,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "G",
+        "operator_norm_dual_over_g": 16,
+        "stage": 24,
+        "wires": [
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "4"
+          ],
+          [
+            1,
+            4,
+            "-4"
+          ],
+          [
+            2,
+            7,
+            "4"
+          ],
+          [
+            3,
+            6,
+            "-4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 25,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "-4"
+          ],
+          [
+            1,
+            5,
+            "-4"
+          ],
+          [
+            2,
+            6,
+            "-4"
+          ],
+          [
+            3,
+            7,
+            "-4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 26,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 27,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 28,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 29,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 30,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 31,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 32,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "-4"
+          ],
+          [
+            1,
+            4,
+            "4"
+          ],
+          [
+            2,
+            7,
+            "-4"
+          ],
+          [
+            3,
+            6,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 33,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "4"
+          ],
+          [
+            1,
+            5,
+            "4"
+          ],
+          [
+            2,
+            6,
+            "4"
+          ],
+          [
+            3,
+            7,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 34,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 35,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 36,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 37,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "G",
+        "operator_norm_dual_over_g": 16,
+        "stage": 38,
+        "wires": [
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 39,
+        "wires": [
+          6,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "G",
+        "operator_norm_dual_over_g": 16,
+        "stage": 40,
+        "wires": [
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 41,
+        "wires": [
+          6,
+          11
+        ]
+      }
+    ],
+    "commutes_with_return_projector": true,
+    "full_B_interval": [
+      "27.188969808801702414046933399179414398483862067",
+      "27.188969808801702414046933399179434528268335222"
+    ],
+    "full_heat_interval": [
+      "27.188960573493033079606540214264102673644554290",
+      "27.188960573493033079606540214264122803429027446"
+    ],
+    "full_modes": 1141964800,
+    "full_raw_stage_max_dual_over_abs_g": 576,
+    "full_return_interval": [
+      "0.000009235308669334440393184915311724839307775",
+      "0.000009235308669334440393184915311724839307778"
+    ],
+    "future_effect": "diag((2p^6-1)^2 I8,I8)",
+    "future_gain_interval": [
+      "0.000006023485401478137596096245153867810104761",
+      "0.000006023485401478137596096245153867810104764"
+    ],
+    "future_stages": 36,
+    "g_signed_interval": [
+      "-0.000000388771692006215587090309017621782164264",
+      "-0.000000388771692006215587090309017621782164261"
+    ],
+    "native_reentry_negative_control": "S_word;CX(6,12) has K=I, unlike K_CX K_seed=diag(I8,0_8); retention of the new right12 record is not claimed for this control",
+    "nonzero_real_components": 66,
+    "raw_stages": 41,
+    "real_axis_components": 534
+  },
+  "physical_limits": {
+    "GR_closed": false,
+    "all42_map_not_proved": true,
+    "fixed_finite_word_alternatives_executed": true,
+    "no_continuous_native_gate_claim": true,
+    "selected_full_Cost_Info_not_identified": true,
+    "single_autonomous_controller_not_proved": true
+  },
+  "price43": {
+    "A_full_B_interval": [
+      "27.251321332653249109755279560072556945630233176",
+      "27.251321332653249109755279560072577075414706332"
+    ],
+    "A_minus_B_interval": [
+      "0.000007204226189964287779304299645565884614332",
+      "0.000007204226189964287779304299645565884614335"
+    ],
+    "A_return_interval": [
+      "0.000014833624359195407837306249535799190639668",
+      "0.000014833624359195407837306249535799190639671"
+    ],
+    "B_full_B_interval": [
+      "27.251314128427059145467500255772911379745618843",
+      "27.251314128427059145467500255772931509530091999"
+    ],
+    "B_return_interval": [
+      "0.000007629398169231120058001949890233306025335",
+      "0.000007629398169231120058001949890233306025338"
+    ],
+    "H0_modes": 92995584,
+    "balanced_plus_minus_multiplicity": 32768,
+    "full_H_interval": [
+      "27.251306499028889914347442253823021146439593507",
+      "27.251306499028889914347442253823041276224066662"
+    ],
+    "full_modes": 1197670400,
+    "harmonic_modes": 1011679232,
+    "heat_row_exact_zero_at_both_words": true,
+    "paired_H1_modes": 1104674816
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "scope": "actual fixed-boundary archive-preserving seed plus query; full fixed INTERNAL Book price; not physical X_N or GR closure",
+  "source43": {
+    "A_all_stages": [
+      {
+        "coefficients_over_g": [],
+        "op": "CX",
+        "operator_norm_dual_over_g": 0,
+        "stage": 1,
+        "wires": [
+          6,
+          12
+        ]
+      },
+      {
+        "coefficients_over_g": [],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 0,
+        "stage": 2,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 0,
+        "stage": 3,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 0,
+        "stage": 4,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 0,
+        "stage": 5,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "G",
+        "operator_norm_dual_over_g": 16,
+        "stage": 6,
+        "wires": [
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 7,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 8,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 9,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "-4"
+          ],
+          [
+            1,
+            4,
+            "4"
+          ],
+          [
+            2,
+            7,
+            "-4"
+          ],
+          [
+            3,
+            6,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 10,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "4"
+          ],
+          [
+            1,
+            5,
+            "4"
+          ],
+          [
+            2,
+            6,
+            "4"
+          ],
+          [
+            3,
+            7,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 11,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "G",
+        "operator_norm_dual_over_g": 16,
+        "stage": 12,
+        "wires": [
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "4"
+          ],
+          [
+            1,
+            4,
+            "-4"
+          ],
+          [
+            2,
+            7,
+            "4"
+          ],
+          [
+            3,
+            6,
+            "-4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 13,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "-4"
+          ],
+          [
+            1,
+            5,
+            "-4"
+          ],
+          [
+            2,
+            6,
+            "-4"
+          ],
+          [
+            3,
+            7,
+            "-4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 14,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 15,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 16,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 17,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 18,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 19,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 20,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "-4"
+          ],
+          [
+            1,
+            4,
+            "4"
+          ],
+          [
+            2,
+            7,
+            "-4"
+          ],
+          [
+            3,
+            6,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 21,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "4"
+          ],
+          [
+            1,
+            5,
+            "4"
+          ],
+          [
+            2,
+            6,
+            "4"
+          ],
+          [
+            3,
+            7,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 22,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "G",
+        "operator_norm_dual_over_g": 16,
+        "stage": 23,
+        "wires": [
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "4"
+          ],
+          [
+            1,
+            4,
+            "-4"
+          ],
+          [
+            2,
+            7,
+            "4"
+          ],
+          [
+            3,
+            6,
+            "-4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 24,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "-4"
+          ],
+          [
+            1,
+            5,
+            "-4"
+          ],
+          [
+            2,
+            6,
+            "-4"
+          ],
+          [
+            3,
+            7,
+            "-4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 25,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 26,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 27,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 28,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 29,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 30,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "-16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 31,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            5,
+            "-4"
+          ],
+          [
+            1,
+            4,
+            "4"
+          ],
+          [
+            2,
+            7,
+            "-4"
+          ],
+          [
+            3,
+            6,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 32,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            4,
+            "4"
+          ],
+          [
+            1,
+            5,
+            "4"
+          ],
+          [
+            2,
+            6,
+            "4"
+          ],
+          [
+            3,
+            7,
+            "4"
+          ]
+        ],
+        "op": "SourceI",
+        "operator_norm_dual_over_g": 16,
+        "stage": 33,
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 34,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 35,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 36,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 37,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 38,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 39,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "G",
+        "operator_norm_dual_over_g": 16,
+        "stage": 40,
+        "wires": [
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            3,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 41,
+        "wires": [
+          0,
+          11
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            2,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 42,
+        "wires": [
+          11,
+          0
+        ]
+      },
+      {
+        "coefficients_over_g": [
+          [
+            0,
+            1,
+            "16"
+          ]
+        ],
+        "op": "CX",
+        "operator_norm_dual_over_g": 16,
+        "stage": 43,
+        "wires": [
+          0,
+          11
+        ]
+      }
+    ],
+    "A_nonzero_real_components": 68,
+    "B_nonzero_real_components": 0,
+    "full_local_complex_dimensions": 1312,
+    "full_raw_stage_max_dual_interval": [
+      "0.000133011647164318196959510273111586671738308",
+      "0.000133011647164318196959510273111586671738311"
+    ],
+    "full_raw_stage_max_dual_over_w_interval": [
+      "312.841996145266822048941119232228464028286975150",
+      "312.841996145266822048941119232228464028286975153"
+    ],
+    "g_definition": "zeta*c*sqrt(1-c^2)/(1-zeta+zeta*c^2), c=p^3",
+    "g_interval": [
+      "0.000000218769156520260192367615580775635973252",
+      "0.000000218769156520260192367615580775635973255"
+    ],
+    "imaginary_symmetric_axes_exact_zero": true,
+    "one_sided_row_interval": [
+      "0.000003500306504324163077881849292410175572059",
+      "0.000003500306504324163077881849292410175572062"
+    ],
+    "query_conjugacy_row_interval": [
+      "0.000007000613008648326155763698584820351144120",
+      "0.000007000613008648326155763698584820351144123"
+    ],
+    "real_axis_components_per_word": 546,
+    "seed_five_occurrences_exact_zero": true,
+    "true_w_interval": [
+      "0.000000425171967968631731746184594007985738018",
+      "0.000000425171967968631731746184594007985738021"
+    ],
+    "whole_matrix_source_fd_max_error": "2.333540635646586277411043806635267e-30"
+  },
+  "status": "PASS",
+  "word_sha256": {
+    "A": "4ac8481e3282befb84d5f8004e738a26dae6ea5a12874373adba611082f7eed8",
+    "B": "fbb6a6f0b718b4e5ebb4e726f62ed6429441eb561747e11a6f61b8976894e5eb",
+    "C": "213e905b80cfa19eeb36299b91308533be126ee4663bae41a21463d5800c7b21",
+    "short": "407e7556ea2de04c28db866b313013b4185dae88ff6b2adf607ba6db28eb74a0"
+  }
+}
+```
+<!-- END 7dq ARCHIVE SEED QUERY RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:
