@@ -828,3 +828,15 @@ The later direct-row adapter is included in the latest five-module integration
 checkpoint in the primary architecture report, with its own current
 [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_pr402_latest.json)
 and [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/integrated_book03_branch_weaktest_cut_row_declarations_2026-10-28.json).
+
+The same PR also now hardens historical receipt checks against Git environment
+redirection, replacement refs, and corrupted commit/tree/blob objects. The
+focused receipt suite passes 31 tests, and the combined proof-architecture
+and receipt suites pass 126. The retrieval regression covers both the Lean
+moving-cut derivative adapter and its geometric rational control while
+retaining their metadata-only status and the missing assembly-owner link. A
+freshly extracted five-module inventory on the clean rebased snapshot
+`0db25903769d5ee91c2f317df90a59ac3c0f93c2` records 233 declarations at the
+unchanged Lean source digest; see the primary report for its SHA-256 and the
+remaining receipt boundary. These verification changes do not add physical
+admission or change `GR_closed=false`.

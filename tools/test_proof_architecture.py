@@ -5310,18 +5310,26 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
         self.assertEqual(
             [row["lean_module"] for row in links["formal_support_locators"]],
-            ["D0.Geometry.MovingCutQueryCancellation"],
+            [
+                "D0.Analysis.MovingCutQueryDerivativeAdapter",
+                "D0.Geometry.MovingCutQueryCancellation",
+            ],
         )
         self.assertTrue(all(
             row["status"] == "metadata_locator_only"
             for row in links["formal_support_locators"]
         ))
-        support_hits = proof.structured_search(data, "D0.Geometry.MovingCutQueryCancellation")
-        self.assertEqual(support_hits[0]["kind"], "formal-support-metadata")
-        self.assertIn(
-            source_path,
-            support_hits[0]["record"]["referenced_by"],
-        )
+        for module in (
+            "D0.Analysis.MovingCutQueryDerivativeAdapter",
+            "D0.Geometry.MovingCutQueryCancellation",
+        ):
+            with self.subTest(module=module):
+                support_hits = proof.structured_search(data, module)
+                self.assertEqual(support_hits[0]["kind"], "formal-support-metadata")
+                self.assertIn(
+                    source_path,
+                    support_hits[0]["record"]["referenced_by"],
+                )
 
     def test_generated_cut_application_is_retrievable_without_false_lean_or_owner_link(self) -> None:
         data = proof.load_dataset(proof.ROOT)

@@ -12856,11 +12856,11 @@ has SHA-256
 `66b07d2ce23ccef1e7564281c93350e430a575a938545d84a8fbac2e35f3e806`.
 The [current combined declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/integrated_book03_branch_weaktest_cut_row_declarations_2026-10-28.json)
 was extracted via public `D0.All` from clean snapshot
-`d8355e02e320112a204ff518e3f2fbd32123cc15`, at the same Lean source digest.
+`0db25903769d5ee91c2f317df90a59ac3c0f93c2`, at the same Lean source digest.
 It contains 233 entries over the five modules (including generated
 declarations); the axiom union is `Classical.choice`, `Quot.sound`, and
 `propext`, with no `sorryAx` or custom axiom. Its SHA-256 is
-`32c90b370d8f418c4043c45cf607bf648c1a34e669488d784517096ac64987fb`.
+`bafd421469123af6728ba4656cb6178b1a28640fa6684577d242f3b011168e9d`.
 
 On this integrated tree, `generate_lean_views.py --check` passes with
 `stale=0`, `validate_repo.py` reports 889 claims, 31 assumptions, 58 aliases,
@@ -12872,3 +12872,31 @@ formal mathematical support for its stated row-level source; it supplies no
 physical admission, full 42-field variation, source selection or GR closure.
 The #334 continuum applications in the preceding section remain non-Lean
 research results. `GR_closed=false`.
+
+### Receipt Git-object verification and fresh inventory — 28 October 2026
+
+The next PR head, `977c9592`, hardens proof-architecture receipt status. It
+disables inherited Git repository redirects and replacement refs, requires
+the requested directory to be the repository root, and verifies raw commit,
+tree, and blob bytes against their recorded Git object IDs before trusting
+selected historical bindings. Missing or corrupt objects remain unverified.
+The focused `tools.test_receipt_freshness` suite passes all 31 tests,
+including controls for Git environment redirection, nested directories,
+replacement refs, and corrupted loose objects. This confirms the status
+checker behavior only: it does not authenticate execution or output, and the
+legacy receipt still does not fingerprint the full search corpus or verify
+every recorded receipt field.
+The combined proof-architecture and receipt-freshness suites pass all 126
+tests. Their retrieval regression now checks both the moving-cut derivative
+adapter and its geometric rational control as metadata locators, while keeping
+the absent exact assembly-owner link explicit.
+
+After rebasing the accumulated integration onto `977c9592`, the five-module
+compiled declaration inventory was regenerated from clean snapshot
+`0db25903769d5ee91c2f317df90a59ac3c0f93c2`; the source digest remains
+`e66a40d0f1b4498f68ddc6d1b3445ffe676c8bcd1c68013baff32daf18d838aa`,
+with 233 declarations and the same three standard axioms. This rebases only
+Git/documentation metadata: the latest commit changes Python receipt checks,
+not Lean sources, so the existing `D0.All` receipt remains applicable to the
+same Lean-source digest. Neither this hardening nor the declaration inventory
+adds a scientific acceptance or closes a physical premise. `GR_closed=false`.
