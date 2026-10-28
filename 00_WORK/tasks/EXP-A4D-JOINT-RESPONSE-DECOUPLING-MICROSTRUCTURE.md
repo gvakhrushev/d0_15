@@ -18016,3 +18016,111 @@ promotion and repository reports zero warnings. Diff whitespace and exact
 append-only preservation pass. The embedded checker and receipt are byte-identical
 to the final standard/optimized executions. Existing archive and binary compiler
 inputs are unchanged. These are local checks, not a new CI or physical acceptance.
+
+### 28 October2026 checkpoint — exact retained-archive domain and stationary matched preparation
+
+SAME PR334, `constitutive/native-programme-v1`; native realization and
+composition. Calculation input7c079c018; publication preserves the new
+native stationary-seed proof/receipt throughd9ef0b055 unchanged. Previous7do is
+consumed as executed evidence, not replayed as a new result. Primary
+§7dp1013–1020 contains the proof, exact changed checker and receipt.
+
+Named parent application: determine whether the actual OLD archive
+excludes7do's nonzero preparation variation, then solve that preparation
+block by real controls while retaining the owned loop source. Reuse the
+canonical archive-law criterion, literal binary compiler, original full
+clock-winding source and newly published whole-cotangent criterion.
+No independent task/result node, root census or new physical action.
+
+For the original A0 path-label algebra tensor M8(Spin/oldRIGHT), all87
+actual selective preparation planes and both loop planes connect equal
+old labels. Thus all nine actual7do whole words preserve ALL old reports
+on ALL16 original inputs, with the same true initial state, inventory,
+clock/cuts and price. This is exact full-law membership, not a zero first
+archive jet. The nonzero native preparation price difference survives
+inside that fixed-archive endpoint fibre. The old algebra is not silently
+expanded to M16 or identified with every physically admissible future.
+
+The stronger requirement of the SAME fixed archive test at every raw tick
+fails already on the actual third primitive G_5: old input1 goes from
+address65 to193 with probability p², changing its inherited path label.
+This affects the base programme too. The Book01 refinement condition is
+not replaced by that temporal requirement; transported reports need their
+actual implementation. The complete analytical preparation/loop source
+rows remain strictly nonzero on the whole tested comparison rectangle,
+with the full heat and actual gain retained.
+
+Equation(1020) identifies the actual conjugate-preparation stationary
+strata. A constructive candidate uses an EXACT15-CX permutation C,
+sending left0,1,2,4 to0,56,2,59. The SAME original Q_t words, carrier and
+initial16-column boundary then have W0=C*Q_tC on planes(0,2),(1,4),
+both preserving the original inherited archive, and K0=cos(alpha)I16.
+This CHANGES the prepared input; it is not the canonical GNS amplitudes.
+All old canonical gains and tower assumptions are therefore recomputed
+or left unused. No claim of full physical/source equivalence is made.
+
+The exact identity[P0,Re W0]=0 makes EVERY matched preparation/inverse
+first source zero, including the entire heat. For actual equal-clock
+conjugate words with epsilon=||R-I||op, the complete price difference is
+bounded by128*zeta/(1-zeta)*epsilon². This supplies a genuine finite-code
+bound without assuming a continuously adjustable native Golden gate.
+
+The checker emits an actual R on old-label-preserving plane(0,3), with
+positive Golden run538292, and its fully paid forward inverse. The three
+placements R;Rinv;C;Q;Cinv, R;C;Q;Cinv;Rinv and Rinv;C;Q;Cinv;R all have
+176430592 G,2724 CX,388 SourceI and N_new=176433704. The nine RLE word
+hashes, original loop hashes and complete counts are verified. Both probe
+prices exceed the base by about4.45845905858e-10 and have EXACTLY zero
+symmetric contrast. The central complete Book price is about
+47.184057309185330807553399091585, with every425*N_new*65536 mode retained.
+
+The actual signed whole loop coefficient remains NONZERO at about
+-1.40015804758455e-5; its sign is retained. The actual finite loop contrast
+divided by that coefficient is0.999349417240963... . The nonzero source
+ratio to7do is proved only on the shared ONE-PARAMETER loop chart. It
+does not supply all42 field/control source transport or all-future
+equivalence. Defining phi(y) from a desired Einstein action is not a
+permitted completion of that missing physical writer.
+
+The positive preparation result does not freeze independent inverse
+controls. One unmatched old-archive-compatible active-plane rotation
+has source about-3.50039511896e-6; the genuine free loop code also lowers
+the full price. The incoming whole-cotangent criterion confirms that
+the entire new return covector is nonzero. The new whole word is NOT
+promoted to a fully joint stationary solution.
+
+The incoming five-pulse stationary recording seed is kept at its own
+scope: its old1 input ends at left65, retaining raw q6=1 but changing the
+fixed inherited AF label from1 to0. Its full-source stationarity and
+our fixed-AF-archive task are distinct interfaces. Neither is newly
+declared the compulsory observed algebra. The next physical application
+must derive the actual control/observation graph, inverse dependence,
+field/scene writer and every remaining independent source, then use the
+existing nonvacuum GR/refinement owners.
+
+324 changed checks pass, including complete whole endpoints, exact
+archive supports, the actual third-primitive countercontrol,15-CX full
+permutation, new positive words, all-mode prices, joint-source bounds
+and exact quadratic preparation control. Normal and optimized receipts
+are byte-identical; no warnings in the changed checker. A separate
+exploratory execution of the incoming seed returned its578 PASS receipt
+with NumPy matmul runtime warnings, unchanged by serial execution; no
+new clean floating acceptance is claimed for that separate owner.
+The present application uses its exact algebraic criterion/readout map.
+
+Checker SHA256 `72edd8c55ecfedd103602e9a0af969325d4720b242ad86649c4c877a2f787b66`;
+receipt SHA256 `c5b65f1d97cf7fe1c1b6fea4b54fa5a3ef8820330029d7c81556460d4efb8b9e`.
+Supporting direct application; no Ready, new node, physical admission,
+claim promotion or merge. `GR_closed=false`; the full user goal stays active.
+
+Final affected local validation: work, agent protocol, gravity assembly and
+repository guards pass; no scientific promotion and zero repository warnings.
+Whitespace, append-only preservation, every consumed source pin and the exact
+embedded executed checker/receipt bytes are verified. The existing assembly
+template is consumed as a supporting application with physical hypotheses
+retained; no new acceptance or result node is recorded. No CI claim is made.
+
+Concurrent intake throughd9ef0b055 retains the owner's positive scalar-future
+gain and stationary inherited-prefix theorem on its declared interface.
+The fixed-AF/archive comparison does not refute or replace that theorem;
+its actual same-execution scalar-future map remains an input to prove.

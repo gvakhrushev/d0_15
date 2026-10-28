@@ -94721,6 +94721,1212 @@ if __name__=='__main__':
 ```
 <!-- END 7do PAID BINARY INPUT RECEIPT -->
 
+## 7dp. Enforce the actual old archive and construct an exactly stationary conjugate-preparation block
+
+28 October 2026. SAME #334 and two write paths, native realization /
+composition. Scientific input7c079c018; publication also preserves the
+new native stationary-seed proof and receipt throughd9ef0b055. The previous turn is
+actual progress:7do supplied the literal input preparation and its full
+price. Here its remaining archive/variation hypothesis is tested, and
+an exact15-CX preparation is constructed for the SAME owned loop.
+
+The result has two distinct strengths. The old nine paid programmes
+preserve their original A0 archive at the whole-word return, so that
+condition does not remove their nonzero preparation source. The new
+15-CX programme has ZERO first source on every mechanically matched
+preparation/inverse direction while retaining a nonzero loop source.
+Its input is changed; independent inverse/loop controls remain nonzero.
+This is not full physical joint stationarity or a source identification
+with all42 Einstein/matter directions. `GR_closed=false`.
+
+### 1013. Apply the existing archive criterion to the actual paid programme
+
+Consume the existing
+[canonical archive-law owner](A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md),
+7do's frozen checker/receipt and the exact binary compiler. The named
+parent question is whether preservation of the ORIGINAL old reports
+excludes7do's lower-price preparation code. No new gravity ansatz,
+action, primitive, task or physical selector is introduced.
+
+On the128 left addresses let ell(x) be the ORIGINAL A0 path label in
+A8=M55+M34, for0<=x<89. It is the concatenation of the two actual
+Fibonacci path lists, not the centre of A8. Put L=diag(ell(x)) on
+those rows and extend it arbitrarily by0 or1 to the unused39 rows.
+Tensor with identity on right64. On the original input i0, left0
+has label0 and left1 has label1. The fixed old observable algebra is
+
+    A_old=(C direct_sum C) tensor M8(Spin4 times oldRIGHT2). (1016)
+
+Its128 matrix units are tested on ALL16 original input columns,
+not just a single tracial preparation. This is the full declared
+original A0 algebra with its protected factors; it is not the larger
+M16 algebra of every possible binary-input observable. Physical
+selection of the observed algebra is not inferred from this definition.
+
+Every one of7do's87 preparation planes connects two addresses with
+the SAME ell. The initial CX(6,12) changes only a right coordinate.
+The original loop planes(0,2),(56,59) also have equal old labels.
+The exact selective endpoints restore Spin, their inverses do too,
+and the final paid padding is I. Consequently, for every actual
+integer choice in the emitted families, on the COMPLETE binary space,
+
+    [P_s,L]=[Q_t,L]=[P_s*Q_tP_s,L]=0,
+    W(s,t)* A W(s,t)=A for every A in A_old.              (1017)
+
+The endpoint also acts as identity on Spin/oldRIGHT, which proves
+the full M8 part. Unused left-label choices do not affect the proof:
+all selective endpoints are identity there, and the initial CX leaves
+the left coordinate fixed. This proves an EXACT law, not merely its
+first jet or an approximately preserved state.
+
+Thus the nine actual words belong not only to X_run, but to its
+explicit fixed-archive endpoint fibre with the same initial boundary,
+complete inventory and N=257229541260. Their cuts and prices remain
+exactly7do's. In particular the strict actual finite difference
+
+    B(+,0)-B(-,0)=1.168205891112846358140993368...e-7 >0   (1018)
+
+survives the full old-law condition. No projector chosen from the
+desired Einstein equation is used to admit or exclude these words.
+
+### 1014. Observation time matters; retain the genuine joint source
+
+Do not strengthen(1017) silently to a fixed old report at EVERY raw
+primitive tick. The actual word begins CX(6,12), CX(5,11), then G_5.
+For old input1, the address before G is65=(left1,right1). Its flipped
+address is193=(left3,right1). The actual path labels are ell(1)=1,
+ell(3)=0, so after that single original Golden gate the wrong-old-label
+probability is exactly p^2=0.381966011250105... . This same prefix is
+present in all nine words. A requirement of fixed L at every primitive
+would exclude the BASE execution too, before the preparation run counts
+diverge. It cannot selectively justify freezing its canonical amplitudes.
+
+Book01 §01.4.1 states refinement-compatible admissible readouts; it does
+not identify this with either temporal condition. Book03 §03.26.4
+explicitly retains information in correlations even when a local
+readout changes. A prefix-transported report may keep a distinction
+readable, but its actual test/implementation is another map, not a
+free replacement of the fixed test L. Those time/interface questions
+remain explicit when applying(1017) physically.
+
+The complete source on7do's comparison chart is now a source INSIDE
+the fixed-archive endpoint fibre. With its actual weights w_i and
+k_i=1-(1-cos alpha)w_i, define D_i=1-zeta+zeta k_i^2. Its preparation
+and loop rows, at the unchanged beta,zeta,scene and full N, are
+
+    d_u B=16 zeta (1-cos alpha)(1-kappa) k0/D0,
+    d_phi B=32 zeta sin(alpha) sum_i w_i k_i/D_i + d_phi H,
+    alpha=2phi, |d_phi H|<=2 A1_N.                       (1019)
+
+On the WHOLE rectangle between the two genuine native endpoints,
+interval arithmetic gives
+
+    d_u B in[0.000016948428630283926328110891,
+             0.000018003625044883851938840446],
+    d_phi B in[0.000002277159915953490147729203,
+               0.000002513862909167440820999756].
+
+All full heat is retained. Its u source is exactly zero by conjugacy;
+the owned coefficient bound gives2 A1_N<2*10^(-N)<1e-90 here.
+The rectangle is an analytical endpoint comparison chart. Actual
+integer words establish(1018) without a continuous native compiler;
+the chart is not itself declared a physically admitted smooth domain.
+
+For a normalized real prepared vector psi_i in its original same-label
+support, let A_i select the two active loop coordinates, w_i=||A_i psi_i||².
+The actual conjugate-preparation equation is
+
+    grad_(psi_i) B =32 zeta (1-cos alpha) k_i/D_i
+                                  (A_i-w_i I)psi_i.      (1020)
+
+At nonzero1-cos alpha it vanishes only at w_i=0, w_i=1 or k_i=0.
+The old generated weights are0.0425733324983... and0.0425747254884...,
+so they lie in none of these strata. A norm-one endpoint rotation
+inside each OLD label block has source7.21504005163e-6 or
+7.21513972575e-6, respectively. These are endpoint operator norms,
+not asserted norms on independently priced raw primitive controls.
+Equation(1020), rather than a fresh search over geometric roots,
+identifies the exact preparation block to address.
+
+### 1015. An exact15-CX preparation on the SAME original boundary
+
+Keep the original16 wires,12 blanks, all16 unknown input columns,
+source port, protected Spin/oldRIGHT, and the SAME three owned Q_t
+words byte for byte. Change only the prepared input. Let C act on
+the seven left address bits by the invertible F2-linear map whose
+images of LSB-ordered basis vectors are
+
+    (1,2,4,8,16,32,64) -> (56,2,59,4,8,16,64).          (1021)
+
+Exact Gaussian elimination gives this chronological original-CX word:
+
+    (6,5),(6,4),(4,6),(4,5),(4,2),(4,1),(3,4),(4,3),
+    (3,4),(2,3),(3,2),(2,3),(1,2),(2,1),(1,2).
+
+Each pair is(control,target). No Golden approximation or state oracle
+is used in C. Its inverse is the reversed15-call word. The actual
+full128-column permutation is checked. In particular C sends0->0,
+1->56,2->2,4->59. Therefore
+
+    W0=C* Q_t C = rotation_(0,2)(alpha_t)
+                    direct_sum rotation_(1,4)(alpha_t)
+                    direct_sum I_on_the_other124_left_rows,
+    K0=i0* W0 i0 = c I16, c=cos(alpha_t).                (1022)
+
+All64 right,4 Spin and2 oldRIGHT columns remain as identity factors.
+Both new loop planes are inside the original old-label blocks:
+ell(0)=ell(2)=0 and ell(1)=ell(4)=1. Thus W0 preserves(1016)
+on all columns, with no change of fixed endpoint archive test.
+
+This input is NOT J_can, nor an approximation to its PF amplitudes.
+Only the loop and native boundary are retained. The following source
+transport is recalculated for this changed input; no canonical gain,
+positive-return assumption or whole tower estimate is imported.
+
+### 1016. Exact zero on every matched preparation row, with a finite-code bound
+
+For any mathematical unitary change of preparation C->C R whose
+closing inverse is mechanically changed with it, the endpoint is
+R* W0 R. At the base, K0=cI16 and D0=(1-zeta+zeta c²)I16.
+Write S=Re W0=(W0+W0*)/2. Equation(1022) implies
+
+    [P0,S]=0, S i0=c i0.                                (1023)
+
+For R(t)=exp(tX), X*=-X, the whole feedback differential is
+
+    dJ=-2 zeta c/(1-zeta+zeta c²)
+                              Re Tr[P0[W0,X]]=0.         (1024)
+
+Indeed the real trace is Tr([P0,S]X); the skew part contributes no
+real trace. This proof covers all unitary preparation directions on
+the65536-dimensional work space, hence any actually admitted subset,
+including those preserving the fixed archive. The full heat is exactly
+constant along conjugacy at fixed N, d, scene and beta. Thus(1024) is
+the COMPLETE Book first source on this matched preparation graph.
+It is not a claim that every such unitary is a native gate.
+
+There is also a finite comparison, avoiding an assumed continuous
+compiler. For any actual unitary R, let epsilon=||R-I||op and
+K_R=i0* R*W0 R i0. Since
+
+    S-cI=(1-c)Pi_inactive, Pi_inactive i0=0,
+    Re K_R-cI=(1-c)i0*(R-I)*Pi_inactive(R-I)i0,
+
+one has ||Re K_R-cI||<=2 epsilon² and ||K_R-cI||<=2 epsilon.
+Consequently ||K_R* K_R-c²I||<=8 epsilon². Using the ACTUAL
+rank16 determinant and D>= (1-zeta)I gives
+
+    |B(R*W0R)-B(W0)| <=128 zeta/(1-zeta) epsilon²         (1025)
+
+whenever the two actual words have the same complete clock/resources.
+No baseline heat is discarded: equality of the entire heat follows
+from conjugacy. This is a whole finite-price estimate, not merely a
+zero tested on a few first jets.
+
+### 1017. Literal paid finite probes and the surviving signed loop source
+
+Use the existing selective compiler to emit R on left plane(0,3),
+whose two rows both have old label0. Its actual positive even run is
+538292 and angle0.010008054964071653841717776025... .
+The literal R inventory is34450688 G,386 CX,0 SourceI. Its fully
+paid positive inverse has34450688 G,1154 CX,256 SourceI.
+No inverse or program register is supplied free.
+
+The three actual chronological placements, for each original Q_t, are
+
+    E0: R ; inverse(R) ; C ; Q_t ; inverse(C),
+    E+: R ; C ; Q_t ; inverse(C) ; inverse(R),
+    E-: inverse(R) ; C ; Q_t ; inverse(C) ; R.             (1026)
+
+All nine complete RLE words are constructed and hashed by the checker.
+Their COMMON inventory is176430592 G,2724 CX,388 SourceI, hence
+N_new=176433704. The centre's literal identity prefix R;inverse(R)
+is included in its clock and price. These hardwired words are not
+uncharged key selections in a single decoder.
+
+Their endpoints are W0,R*W0R,RW0R*, so all preserve the SAME original
+archive. For E+ and E-, the corner is exactly
+
+    diag([c cos²(theta_R)+sin²(theta_R)] I8,c I8).
+
+The two prices are exactly equal. Each exceeds the central price by
+
+    [0.000000000445845905858200126581,
+     0.000000000445845905858200126584],
+
+inside the genuine quadratic bound(1025), about1.2226614217e-8.
+Thus the zero first preparation source is accompanied by actual
+nontrivial native comparisons with equal resources and preserved
+old reports; it is not obtained by freezing the preparation.
+
+Recompute the complete absolute heat at N_new using the unchanged
+certified a0 of7do. All425*N_new*65536 Hodge modes remain. The centre
+has H near47.184042900778707003733676475945 and B near
+47.184057309185330807553399091585. Its actual loop coefficient is
+
+    Gamma_new=64 zeta sin(alpha)c/(1-zeta+zeta c²)+d_phi H
+       in[-0.000014001580475845492034559861,
+          -0.000014001580475845492034559858].             (1027)
+
+The sign is NEGATIVE and is retained. Its magnitude is nonzero.
+The exact original three Q_t codes give a full-price normalized
+finite contrast near0.9993494172409637740663621. Their heat
+differences are enclosed, not assumed zero along the loop axis.
+
+On the common one-parameter loop chart of7do and(1022), with each
+preparation held at its actual centre and each actual clock included,
+the ratio Gamma_new/Gamma_old lies in[-6.985544978303,-4.811701513559].
+Thus the loop one-form has a proved nonzero signed transport. This
+does not identify the complete old and new covectors:7do has a nonzero
+preparation row, whereas(1024) is zero. Nor does a one-parameter
+identity supply an actual full42 field writer or equivalence of all
+future tests. In particular phi(y) is not defined here by inserting
+an Einstein action into a desired readout.
+
+### 1018. Retain independent return controls and consume the new full-source seed
+
+Mechanical inverse dependence in(1024) is a precisely stated graph.
+It is NOT a derived physical law tying all raw controls. For example,
+vary only one active-plane input/return rotation, leaving its inverse
+independent. This direction still commutes with the old archive, but
+its complete source is
+
+    16 zeta c sin(alpha)/(1-zeta+zeta c²)+its full heat row
+       in[-0.000003500395118961373008639966,
+          -0.000003500395118961373008639963].             (1028)
+
+The full heat row has modulus<1e-90 at this clock. The genuine Q_t
+finite alternatives likewise lower the new full price in one direction.
+Therefore the NEW WHOLE WORD is not a joint stationary point if those
+independent loop/return controls are physically free. Zero of the
+matched preparation block is not zero of the full source.
+
+The incoming [native stationary seed](A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md)
+through d9ef0b055 is preserved and consumed at its own scope. Its whole-return
+cotangent criterion gives
+
+    ||C_J||F²=2 zeta² sum_l sigma_l(1-sigma_l)
+                                /(1-zeta+zeta sigma_l)², (1029)
+
+where sigma_l are the eigenvalues of K*K. Applying it to our sigma_l=c²
+for all16 inputs gives norm in[0.000001237576562724939287673366,
+0.000001237576562724939287673369], confirming the remaining full row.
+No new proof or separate task for that generic cotangent identity is
+created here.
+
+The incoming five-pulse CX(6,0);SourceI^4 seed instead has exact
+K=diag(I8,0), and its owner obtains zero whole first source on the
+declared fixed-clock matrix chart. That different result must not be
+discarded. But its actual old1 input is sent from left1 to left65:
+raw q6 is still1, while the ORIGINAL inherited AF label changes from
+ell(1)=1 to ell(65)=0. Thus it is not a member of the same fixed-AF
+archive task(1016). The two source results and two observed algebras
+are not interchangeable merely because their initial boundary agrees.
+Neither observed algebra is newly declared compulsory D0 physics.
+The owner's exact stationary-prefix source and positive scalar-future
+gain remain available on their own interface. They require a proved
+same-execution scalar-future map; the archive distinction above neither
+refutes that theorem nor replaces it by our matched-preparation block.
+
+### 1019. Exact parent substitution and remaining physical application
+
+The fixed-archive objection to7do's finite variation is now decided:
+at the actual whole-word return it is allowed and its source remains.
+The attempted constructive repair has an actual15-CX implementation,
+a full finite-price bound and zero on every matched preparation row,
+while retaining a calculable nonzero loop response. These are new
+applications to real words of the existing archive and source owners.
+
+The unresolved step is now the actual physical control/observation
+graph: whether inverse operations are mechanically linked, which
+fixed or transported old tests apply at which times, and how the
+remaining loop and other controls arise from the same field/scene
+writer. All independent rows such as(1028) must remain until their
+physical dependence or genuine compensation is proved. The true
+same-process full Cost-Info identification, source normalization and
+GR refinement obligations remain; a scalar-loop comparison is not
+their substitution. No change to the exact nonvacuum geometric family,
+claims, assembly acceptance, original raw terminal or physical action.
+
+No new task/result node, Ready, merge, physical admission or GR
+promotion. The existing owner and the user's full goal remain active.
+
+### 1020. Exact executed evidence and reproduction
+
+The324 changed checks consume7do's exact executed bytes rather than
+replaying its5333825 preparation records. They evaluate all nine WHOLE
+endpoints, including their true inverses, on the original inputs;
+prove the full archive through exact plane supports and the protected
+tensor identity; test the real third-primitive countercontrol; construct
+the15-CX permutation on all128 left columns; construct and hash the nine
+new literal RLE words; and enclose the complete price/source quantities.
+All65536 endpoint columns are covered by the exact right/Spin/oldRIGHT
+tensor identity. No enormous stagewise/thermal simulation is claimed.
+
+The numerical original whole-endpoint archive error is below1e-88;
+exact membership rests on(1017), not a float tolerance. A separate
+whole-endpoint finite differentiation tests the analytical preparation
+formula; those angle probes are explicitly not labelled native words.
+All bounds use the unchanged ordinary Book trace and outward intervals.
+
+Standard and `python3 -O` outputs are byte-identical on Python3.9.6,
+NumPy2.0.2, SciPy1.13.1 and mpmath1.3.0. The new checker completes
+without warnings. A separate exploratory run of the incoming seed
+returned its578 PASS result but emitted NumPy matmul runtime warnings;
+serial execution produced the same result and warnings. It is not
+advertised as a new clean acceptance replay. The present seed comparison
+uses its exact binary permutation and cotangent criterion, not those
+floating warning-bearing values. Its source file remains unchanged.
+
+Extract the following `7dp PAID ARCHIVE SOURCE CHECKER` Python block
+to a temporary file and run it from the repository root. It verifies
+the exact input pins and prints the observed receipt. The function
+`replacement_word(s,t)` gives each entire new positive RLE word for
+s,t in {-1,0,1}; its full hashes are in the receipt.
+
+Checker SHA256: `72edd8c55ecfedd103602e9a0af969325d4720b242ad86649c4c877a2f787b66`.
+Receipt SHA256: `c5b65f1d97cf7fe1c1b6fea4b54fa5a3ef8820330029d7c81556460d4efb8b9e`.
+
+
+<!-- BEGIN 7dp PAID ARCHIVE SOURCE CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Actual 7do preparation/loop words on their original A0 archive.
+
+Consumes the exact paid compiler and receipt, evaluates every whole endpoint
+on its original input, and checks the archive law plus retained joint source.
+Ambient angle derivatives are labelled separately from real integer words.
+"""
+from __future__ import annotations
+from fractions import Fraction
+import hashlib
+import importlib.util
+import json
+import math
+from pathlib import Path
+import mpmath as mp
+import numpy as np
+import scipy.sparse as sp
+
+ROOT=Path.cwd()
+PRIMARY=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+SOURCE=ROOT/'02_REGISTRY/research/sources'
+CHECKS=[]
+def require(ok,label):
+    if not bool(ok):raise ArithmeticError(label)
+    CHECKS.append(label)
+def sha(b):return hashlib.sha256(b).hexdigest()
+def block(label,lang):
+    data=PRIMARY.read_bytes()
+    start=('<!-- BEGIN 7do PAID BINARY INPUT '+label+' -->\n```'+lang+'\n').encode()
+    end=('```\n<!-- END 7do PAID BINARY INPUT '+label+' -->').encode()
+    require(data.count(start)==1 and data.count(end)==1,'unique frozen '+label)
+    return data.split(start)[1].split(end)[0]
+checker=block('CHECKER','python');receipt=block('RECEIPT','json')
+require(sha(checker)=='d95b930757caad91091db3dc95218cafc70d5888caed5c4b9c39ad897197e821','exact executed 7do checker retained')
+require(sha(receipt)=='811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba','exact observed 7do receipt retained')
+R=json.loads(receipt)
+pins={
+ 'd0_binary_af_actuation_2026-10-28/check_binary_af.py':'07c40e179d0446c52650e7a148c82ef33cd03d0349b0875b5b6af5acd7d9f3a5',
+ 'd0_binary_af_actuation_2026-10-28/result.json':'bc2addf30982c3c8ba219358d63f7913485c6877763c3e65dd824766b3620f1a',
+ 'd0_clock_winding_source_2026-10-28/PROOF_RU.md':'ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418',
+ 'd0_archive_naturality_domain_2026-10-28/PROOF_RU.md':'d43e3c6ce29f4fb56a36c861142dacce6645c5790a4c6a6e45008c0ee5ca56bc',
+ 'd0_native_stationary_seed_2026-10-28/check_seed.py':'9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120'}
+for name,pin in pins.items():require(sha((SOURCE/name).read_bytes())==pin,'owned input '+name)
+spec=importlib.util.spec_from_file_location('owned_binary_archive',SOURCE/'d0_binary_af_actuation_2026-10-28/check_binary_af.py')
+B=importlib.util.module_from_spec(spec);spec.loader.exec_module(B)
+L=json.loads((SOURCE/'d0_binary_af_actuation_2026-10-28/result.json').read_text())
+mp.mp.dps=100;mp.iv.dps=90;iv=mp.iv
+p=B.p;theta=B.angle;fac=4096;z=mp.mpf(2)**-20
+ziv=iv.mpf(1)/(2**20)
+plans=R['preparation']['planes'];N=R['variation']['whole_stages']
+def fmt(x):return mp.nstr(x,40)
+def ends(v):return mp.mpf(v.a),mp.mpf(v.b)
+def ivfmt(v):
+    scale=10**30;lo,hi=ends(v*scale)
+    kk=(int(mp.floor(lo))-1,int(mp.ceil(hi))+1)
+    def decimal(k):
+        sign='-' if k<0 else '';k=abs(k)
+        return sign+str(k//scale)+'.'+str(k%scale).zfill(30)
+    return [decimal(k) for k in kk]
+def hull(vs):return iv.mpf([min(ends(v)[0] for v in vs),max(ends(v)[1] for v in vs)])
+
+# The actual inherited A0 projection depends only on left path ancestry.
+# Nothing below replaces the full old algebra by a new current-centre label.
+labels=sum(B.fibres(8),[])
+require(len(labels)==89 and labels.count(0)==55 and labels.count(1)==34,'original old path labels on every valid left row')
+def archive(address,pad_label=0):
+    left=address//64
+    return labels[left] if left<89 else pad_label
+for plan in plans:
+    require(archive(plan['anchor'])==archive(plan['leaf'])==plan['old_input'],
+            'literal selective preparation plane lies inside the old archive block')
+for x,y in L['planes']:
+    require(labels[x]==labels[y],'literal loop plane lies inside the old archive block')
+require(archive(0)==0 and archive(64)==1 and archive(65)==1,'initial boundary and paid CX carry the same old labels')
+require(all(archive(a)==archive(a^int(bool(a&64))) for a in range(8192)),
+        'literal initial/final CX changes only a right coordinate on every address')
+require(R['variation']['same_native_initial_boundary'] and R['variation']['same_full_inventory']==
+        {'G':257214301184,'CX':12733188,'SourceI':2506888},'same paid initial/resource contract')
+
+run_by_side={int(d['side']):int(d['positive_G_run']) for d in L['schedule_controls']}
+trig={}
+for side in (-1,0,1):
+    trig[side]=[]
+    for index,plan in enumerate(plans):
+        run=plan['positive_G_run']+(1098*side if index==0 else 0)
+        aa=fac*run*theta
+        trig[side].append((mp.cos(aa),mp.sin(aa)))
+
+def rotate(v,x,y,c,s):
+    vx,vy=v.get(x,mp.mpf(0)),v.get(y,mp.mpf(0))
+    v[x]=c*vx-s*vy;v[y]=s*vx+c*vy
+def endpoint(old,side,loop_side,first_offset=mp.mpf(0)):
+    v={0:mp.mpf(1)} if old==0 else {65:mp.mpf(1)}
+    turns=list(trig[side])
+    if first_offset:
+        c,s=turns[0];co,so=mp.cos(first_offset),mp.sin(first_offset)
+        turns[0]=(c*co-s*so,s*co+c*so)
+    for plan,(c,s) in zip(plans,turns):rotate(v,plan['anchor'],plan['leaf'],c,s)
+    prepared=dict(v)
+    aa=64*run_by_side[loop_side]*theta;c,s=mp.cos(aa),mp.sin(aa)
+    for x,y in L['planes']:
+        for right in range(64):rotate(v,64*x+right,64*y+right,c,s)
+    for plan,(c,s) in reversed(list(zip(plans,turns))):rotate(v,plan['anchor'],plan['leaf'],c,-s)
+    # The literal CX(6,12) is its own inverse. Final paid padding is I.
+    result={address^int(bool(address&64)):value for address,value in v.items()}
+    return result,prepared
+def dot(a,b,label=None,pad=0):
+    return mp.fsum(value*b.get(k,0) for k,value in a.items() if label is None or archive(k,pad)==label)
+def price(corner):return -8*mp.fsum(mp.log1p(-z*(1-k*k)) for k in corner)
+
+whole={};max_archive=mp.mpf(0);max_corner=mp.mpf(0);max_isometry=mp.mpf(0)
+for side in (-1,0,1):
+    for loop_side in (-1,0,1):
+        results=[endpoint(old,side,loop_side) for old in (0,1)]
+        cols=[q[0] for q in results]
+        gram=[[dot(a,b) for b in cols] for a in cols]
+        err=max(abs(gram[i][j]-int(i==j)) for i in range(2) for j in range(2))
+        require(err<mp.mpf('1e-88'),'whole paid forward loop inverse map is isometric on both original inputs')
+        max_isometry=max(max_isometry,err)
+        errors=[]
+        for pad in (0,1):
+            for label in (0,1):
+                for i in range(2):
+                    for j in range(2):errors.append(abs(dot(cols[i],cols[j],label,pad)-int(i==j==label)))
+        err=max(errors);max_archive=max(max_archive,err)
+        require(err<mp.mpf('1e-88'),'full original archive compression and both unused-column extensions')
+        # Tensor with identity on all8 Spin/oldRIGHT inputs: this 2x2 map
+        # proves all128 old matrix-unit images, not merely a tracial test.
+        k=[cols[0].get(0,0),cols[1].get(64,0)]
+        off=max(abs(cols[0].get(64,0)),abs(cols[1].get(0,0)))
+        require(off<mp.mpf('1e-88'),'whole actual corner keeps both independent old input bands')
+        jj=price(k)
+        bounds=R['two_axis_same_execution']['absolute_price_grid'][str((side,loop_side))]
+        heat=R['complete_book']['heat_interval']
+        require(mp.mpf(bounds[0])-mp.mpf(heat[1])<jj<mp.mpf(bounds[1])-mp.mpf(heat[0]),
+                'direct whole-word return price consumes the published full Book interval')
+        if loop_side==0:
+            oldk=list(map(mp.mpf,R['variation']['actual_corner'][str(side)]))
+            err=max(abs(k[i]-oldk[i]) for i in range(2));max_corner=max(max_corner,err)
+            require(err<mp.mpf('1e-35'),'actual inverse gives the previously prepared-input return bands')
+        whole[side,loop_side]={'columns':cols,'prepared':[q[1] for q in results],'corner':k,'J':jj}
+native_difference=whole[1,0]['J']-whole[-1,0]['J']
+lo,hi=map(mp.mpf,R['complete_book']['finite_difference_interval'])
+require(lo<native_difference<hi,'strict full native price difference survives exact old archive membership')
+
+# The exact endpoint law must not be mistaken for a fixed-law condition at
+# every primitive tick. Inspect the actual third expanded primitive.
+first=plans[0]
+small_word=B.selective(13,first['anchor'],first['leaf'],first['positive_G_run'])
+require(small_word[:2]==[B.gate('CX',5,11),B.gate('G',5,repeat=313440)],
+        'actual first selective block begins with the inspected native operations')
+before_G=65;after_flip=before_G^(1<<(12-5))
+require(after_flip==193 and archive(before_G)==1 and archive(after_flip)==0,
+        'the third actual primitive crosses the fixed inherited archive for old input1')
+pv=(iv.sqrt(5)-1)/2
+third_defect=pv*pv
+require(ends(third_defect)[0]>mp.mpf('0.38'),'strict original first-G archive probability defect')
+
+# Exact same-price joint source, on the analytic comparison chart only.
+cs=[B.interval_power(fac*plan['positive_G_run']) for plan in plans]
+kappa=iv.mpf(1)
+for index,plan in enumerate(plans):
+    if index and plan['old_input']==0:kappa*=cs[index][0]**2
+amplitudes=[{0:iv.mpf(1)},{65:iv.mpf(1)}]
+for plan,(c,s) in zip(plans,cs):
+    old=plan['old_input'];v=amplitudes[old][plan['anchor']]
+    amplitudes[old][plan['leaf']]=s*v;amplitudes[old][plan['anchor']]=c*v
+w1=amplitudes[1][56*64+1]**2+amplitudes[1][59*64+4]**2
+uvals=[B.interval_power(fac*(first['positive_G_run']+side*1098))[1]**2 for side in (-1,0,1)]
+angles=[iv.atan2(*reversed(B.interval_power(64*run_by_side[side]))) for side in (-1,0,1)]
+uint=hull(uvals);aint=hull(angles);eta=1-iv.cos(aint)
+w0=kappa+(1-kappa)*uint;w=[w0,w1];k=[1-eta*ww for ww in w]
+d=[1-ziv+ziv*kk*kk for kk in k]
+gu=16*ziv*eta*(1-kappa)*k[0]/d[0]
+gphi=32*ziv*iv.sin(aint)*sum((ww*kk/dd for ww,kk,dd in zip(w,k,d)),iv.mpf(0))
+x=Fraction(2,55);qbound=Fraction(1,10**101)
+require(x<Fraction(1,10) and Fraction(176,359)/(1-x*x)/(1-qbound)**2<1 and N>=101,
+        'owned complete heat coefficient obeys A1_N<10^-N on this actual clock')
+whole_gphi=gphi+iv.mpf(['-1e-90','1e-90'])
+require(ends(gu)[0]>0 and ends(whole_gphi)[0]>0,'both complete joint source rows stay nonzero on the whole comparison rectangle')
+require(all(0<ends(ww)[0]<ends(ww)[1]<1 for ww in w) and all(ends(kk)[0]>0 for kk in k),
+        'actual preparations are away from every stationary preparation stratum')
+
+# Independent direct whole-word finite differentiation of the ambient
+# first-plane angle. These probes are NOT labelled native admitted words.
+h=mp.mpf('1e-8')
+def analytic_J(t):return price([endpoint(old,0,0,t)[0].get(0 if old==0 else 64,0) for old in (0,1)])
+derivative=(analytic_J(-2*h)-8*analytic_J(-h)+8*analytic_J(h)-analytic_J(2*h))/(12*h)
+c0,s0=trig[0][0]
+centre_u=iv.mpf(R['complete_book']['preparation_derivative_interval'])
+expected=mp.mpf(centre_u.mid)*2*c0*s0
+relative=abs(derivative-expected)/abs(expected)
+require(relative<mp.mpf('1e-22'),'ambient source formula agrees with independent paid whole-endpoint differentiation')
+
+active=[[0,130],[56*64+1,59*64+4]]
+centre=whole[0,0]
+optimal_rows=[]
+alpha=64*run_by_side[0]*theta;et=1-mp.cos(alpha)
+for old in (0,1):
+    psi=centre['prepared'][old]
+    ww=mp.fsum(psi.get(q,0)**2 for q in active[old]);kk=centre['corner'][old]
+    normal=mp.sqrt(ww*(1-ww))
+    gg=32*z*et*kk/(1-z+z*kk*kk)*normal
+    require(gg>0,'nonzero full preparation source in an old-archive-compatible norm-one endpoint rotation')
+    optimal_rows.append({'old_label':old,'actual_active_weight':fmt(ww),'source_in_endpoint_operator_norm':fmt(gg)})
+
+# Construct an exact replacement preparation on the SAME native boundary.
+# It is a changed input, not a claim of equality to the canonical GNS state.
+images=[56,2,59,4,8,16,64] # columns ordered by binary LSB powers
+mat=[[int(bool(images[6-j]&(1<<(6-i)))) for j in range(7)] for i in range(7)]
+reductions=[]
+def row_cx(c,t):
+    mat[t]=[a^b for a,b in zip(mat[t],mat[c])];reductions.append((c,t))
+for column in range(7):
+    if not mat[column][column]:
+        pivot=next(i for i in range(column+1,7) if mat[i][column])
+        row_cx(column,pivot);row_cx(pivot,column);row_cx(column,pivot)
+    for row in range(7):
+        if row!=column and mat[row][column]:row_cx(column,row)
+require(mat==[[int(i==j) for j in range(7)] for i in range(7)],'exact GF2 elimination of the actual preparation')
+cword=[B.gate('CX',c,t) for c,t in reversed(reductions)]
+require(len(cword)==15,'exact preparation has15 original CX calls')
+def cx_apply(x,word):
+    for gate in word:
+        c,t=gate['wires']
+        if x&(1<<(6-c)):x^=1<<(6-t)
+    return x
+perm=[cx_apply(i,cword) for i in range(128)]
+for address in range(128):
+    expected=0
+    for bit in range(7):
+        if address&(1<<bit):expected^=images[bit]
+    require(perm[address]==expected,'actual CX word gives the prescribed permutation on every left input')
+require([(perm.index(x),perm.index(y)) for x,y in L['planes']]==[(0,2),(1,4)],
+        'same original loop conjugates to two exact old-archive-preserving planes')
+
+def inventory(word):
+    value={name:0 for name in ('G','CX','SourceI')}
+    for gate in word:value[gate['op']]+=gate['repeat']
+    return value
+def physical(word):
+    return [dict(g,wires=([0,13,14] if g['op']=='SourceI' else g['wires'])) for g in word]
+owned_words={}
+for side in (-1,0,1):
+    word=sum((B.selective(7,x,y,run_by_side[side]) for x,y in L['planes']),[])
+    gap=L['common_inventory']['G']-inventory(word)['G']
+    if gap:
+        require(gap>0 and gap%2==0,'owned loop Golden padding is literal')
+        word += [B.gate('G',0,repeat=gap//2),B.gate('SourceI',0,7,8,repeat=2),
+                 B.gate('G',0,repeat=gap//2),B.gate('SourceI',0,7,8,repeat=2)]
+    for op,mod,wires in [('SourceI',4,(0,7,8)),('CX',2,(0,1))]:
+        gap=L['common_inventory'][op]-inventory(word)[op]
+        require(gap>=0 and gap%mod==0,'owned loop has the same real padding')
+        if gap:word.append(B.gate(op,*wires,repeat=gap))
+    packet={'format':'native-binary-rle-v1','address_wires':list(range(7)),
+       'Spin':[13,14],'right_wires':list(range(7,13)),'oldRIGHT':[15],'source_port':0,
+       'full_binary_carrier_bits':16,'stage_count':B.count(word),'instructions':physical(word)}
+    require(sha((json.dumps(packet,indent=2)+'\n').encode())==R['whole_word_recipe']['all_owned_loop_word_hashes'][str(side)],
+            'replacement preparation uses the identical owned loop bytes')
+    owned_words[side]=packet['instructions']
+
+# An actual finite preparation probe plus its paid forward inverse. All
+# three placements use exactly the same primitive inventory and time N_new.
+probe_run,_=B.find_run(mp.mpf('0.01'),7)
+probe=physical(B.selective(7,0,3,probe_run))
+def invert(word):
+    out=[]
+    for gate in reversed(word):
+        op,w,r=gate['op'],gate['wires'],gate['repeat']
+        if op=='CX':out.append(gate)
+        elif op=='SourceI':out.append(dict(gate,repeat=3*r))
+        elif op=='G':out+=B.z_word(w[0],13)+[gate]+B.z_word(w[0],13)
+        else:raise ArithmeticError('non-native inverse')
+    return out
+inverse_probe=invert(probe);inverse_c=list(reversed(cword))
+def replacement_word(s,t):
+    if s==0:return probe+inverse_probe+cword+owned_words[t]+inverse_c
+    if s==1:return probe+cword+owned_words[t]+inverse_c+inverse_probe
+    if s==-1:return inverse_probe+cword+owned_words[t]+inverse_c+probe
+    raise ArithmeticError('unknown finite preparation comparison')
+new_inventory=inventory(replacement_word(0,0));Nnew=sum(new_inventory.values())
+new_word_hashes={}
+for side in (-1,0,1):
+    for t in (-1,0,1):
+        word=replacement_word(side,t)
+        require(inventory(word)==new_inventory,'all replacement preparation comparisons have the same paid inventory')
+        require(all(g['repeat']>0 and 15 not in g['wires'] and
+             (g['wires']==[0,13,14] if g['op']=='SourceI' else max(g['wires'])<7) for g in word),
+                'all replacement calls are positive native primitives on the original protected boundary')
+        new_word_hashes[str((side,t))]=sha((''.join(json.dumps(g,sort_keys=True,separators=(',',':'))+'\n' for g in word)).encode())
+require(Nnew>101 and labels[0]==labels[3],'actual probe preserves the old archive on its entire plane')
+
+# Evaluate ALL128 left columns; right64/Spin4/oldRIGHT2 are exact identity
+# factors. This is the complete65536-column endpoint, not a one-input model.
+C=sp.coo_matrix((np.ones(128),(perm,range(128))),shape=(128,128)).tocsr()
+Psmall=sp.diags([1.,1.]+[0.]*126,format='csr')
+alpha0=64*run_by_side[0]*theta
+Q=sp.csr_matrix(B.left_matrix(7,L['planes'],alpha0))
+W0=C.T@Q@C
+sym=(W0+W0.T)/2
+comm=Psmall@sym-sym@Psmall
+require(max(abs(comm.data),default=0)==0,'exact vanishing whole preparation-source commutator on every left column')
+archive_matrix=sp.diags(labels+[0]*39,format='csr')
+require(max(abs((archive_matrix@W0-W0@archive_matrix).data),default=0)==0,
+        'replacement whole endpoint commutes with the fixed original archive')
+require(np.max(abs(W0[:2,:2].toarray()-float(mp.cos(alpha0))*np.eye(2)))<1e-15,
+        'actual replacement corner is cos(alpha) times all16 input columns')
+
+cr,sr=B.interval_power(64*probe_run)
+probe_norm2=2-2*cr
+probe_angle=iv.atan2(sr,cr)
+base_c,base_s=B.interval_power(64*run_by_side[0])
+betaiv=2*pv*pv
+a0=iv.mpf(R['complete_book']['a0_interval'])
+new_heat=iv.ln(iv.mpf(Nnew)*65536*(2*a0+359))/betaiv+iv.mpf(['-1e-90','1e-90'])
+def j_two(k0,k1):return -8*(iv.ln(1-ziv+ziv*k0*k0)+iv.ln(1-ziv+ziv*k1*k1))
+Jbase=j_two(base_c,base_c)
+Jprobe=j_two(base_c*cr*cr+sr*sr,base_c)
+delta_J=Jprobe-Jbase
+require(ends(delta_J)[0]>0,'both actual archive-compatible preparation probes have larger full price')
+quad_bound=128*ziv/(1-ziv)*probe_norm2
+require(ends(delta_J)[1]<ends(quad_bound)[0],'actual finite probe satisfies the full all-column quadratic preparation bound')
+new_gain=64*ziv*base_s*base_c/(1-ziv+ziv*base_c*base_c)+iv.mpf(['-1e-90','1e-90'])
+require(ends(new_gain)[1]<0,'zero conjugate-preparation source retains a nonzero signed full loop source')
+unmatched_row=16*ziv*base_s*base_c/(1-ziv+ziv*base_c*base_c)+iv.mpf(['-1e-90','1e-90'])
+require(ends(unmatched_row)[1]<0,'independent unmatched old-compatible return rotation retains its own nonzero source')
+new_prices={}
+for side in (-1,0,1):
+    for t in (-1,0,1):
+        ct,st=B.interval_power(64*run_by_side[t])
+        k0=ct if side==0 else ct*cr*cr+sr*sr
+        new_prices[side,t]=new_heat+j_two(k0,ct)
+step=iv.mpf(R['two_axis_same_execution']['loop_angle_step_interval'])
+new_contrast=(new_prices[0,1]-new_prices[0,-1])/(2*step*new_gain)
+require(mp.mpf('0.99')<ends(new_contrast)[0]<ends(new_contrast)[1]<mp.mpf('1.01'),
+        'actual finite native loop contrast preserves its correctly signed whole gain')
+require(ends(new_prices[0,1]-new_prices[0,-1])[1]<0,
+        'the newly prepared full word is not falsely declared stationary under free loop-code changes')
+new_gain_rectangle=64*ziv*iv.sin(aint)*iv.cos(aint)/(1-ziv+ziv*iv.cos(aint)**2)+iv.mpf(['-1e-90','1e-90'])
+ratio_rectangle=new_gain_rectangle/whole_gphi
+require(ends(ratio_rectangle)[1]<0,'same one-parameter loop-source transport has a nonzero signed ratio throughout the tested chart')
+
+# Consume the NEW seed at its actual readout interface. The same initial
+# q6=1 column is sent to left65 by CX(6,0), SourceI^4 then is identity.
+# This preserves the raw q6 label but not the inherited AF path label.
+seed_output_left=1^64
+require(seed_output_left==65 and labels[1]==1 and labels[65]==0 and seed_output_left&1==1,
+        'incoming stationary seed uses a different fixed archive readout from the inherited AF one')
+full_cotangent_norm=iv.sqrt(32)*ziv*abs(base_c)*base_s/(1-ziv+ziv*base_c*base_c)
+require(ends(full_cotangent_norm)[0]>0,'incoming complete-source criterion does not falsely close the15-CX preparation block')
+
+result={
+ 'status':'PASS_PAID_INPUT_FIXED_ARCHIVE_AND_JOINT_SOURCE','checks':len(CHECKS),
+ 'input_commit':'7c079c0180de6e6e12edbd8e79c4628f5048deae',
+ 'consumed_7do_checker_sha256':sha(checker),'consumed_7do_receipt_sha256':sha(receipt),
+ 'owned_source_pins':pins,
+ 'old_archive':{'algebra':'original A0=(C direct_sum C) tensor M8(Spin4 times oldRIGHT2)',
+   'matrix_units_covered_by_exact_tensor_identity':128,'input_rank':16,'full_work_dimension':65536,
+   'fixed_inherited_left_path_labels':labels,'same_label_preparation_planes':len(plans),
+   'same_label_loop_planes':L['planes'],'all_nine_literal_word_endpoints_preserve_archive':True,
+   'unused_left_extension_independent':True,'max_whole_endpoint_archive_compression_error':fmt(max_archive),
+   'max_whole_endpoint_isometry_error':fmt(max_isometry)},
+ 'whole_word_check':{'same_stage_count':N,'max_published_corner_difference':fmt(max_corner),
+   'native_full_price_difference':fmt(native_difference),
+   'direct_corners':{str(key):list(map(fmt,val['corner'])) for key,val in whole.items()}},
+ 'raw_time_countercontrol':{'expanded_primitive_number':3,'operation':'G on wire5',
+   'preceding_operations':['CX(6,12)','CX(5,11)'],'original_input_old_label':1,
+   'before_address':65,'after_flipped_address':193,
+   'exact_wrong_archive_probability':'p^2','wrong_archive_probability_interval':ivfmt(third_defect),
+   'same_countercontrol_for_all_nine_words':True},
+ 'analytic_joint_source':{'chart':'u=first preparation sine squared; phi=half the loop angle; same fixed N/beta/scene',
+   'u_rectangle_interval':ivfmt(uint),'loop_full_angle_rectangle_interval':ivfmt(aint),
+   'whole_preparation_source_interval':ivfmt(gu),'whole_loop_source_interval':ivfmt(whole_gphi),
+   'full_heat_phi_source_bound':'2 A1_N < 2*10^-N < 1e-90',
+   'full_heat_preparation_source_exact':0,'preparation_critical_strata':'w=0 or w=1 or 1-(1-cos alpha)w=0, for eta>0',
+   'centre_norm_one_endpoint_source_rows':optimal_rows,'direct_ambient_angle_derivative':fmt(derivative),
+   'ambient_derivative_relative_error':fmt(relative)},
+ 'replacement_preparation':{'type':'exact15-CX basis preparation; changed input on the SAME original boundary and loop',
+   'chronological_CX_word':[g['wires'] for g in cword],'left_permutation_images_of_LSB_basis':images,
+   'whole_endpoint_planes':[[0,2],[1,4]],'return_corner':'cos(alpha) I16',
+   'conjugate_preparation_source_commutator_exact':0,'all_column_proof':'[P0,Re W0]=0, with K=cos(alpha) I16',
+   'probe_plane':[0,3],'probe_positive_G_run':probe_run,'probe_angle_interval':ivfmt(probe_angle),
+   'probe_inventory':inventory(probe),'inverse_probe_inventory':inventory(inverse_probe),
+   'matched_inventory':new_inventory,'actual_stage_count':Nnew,'all9_whole_RLE_word_hashes':new_word_hashes,
+   'full_thermal_modes':425*Nnew*65536,'whole_heat_interval':ivfmt(new_heat),
+   'absolute_price_grid':{str(key):ivfmt(v) for key,v in new_prices.items()},
+   'each_probe_full_price_increment_interval':ivfmt(delta_J),
+   'symmetric_preparation_full_price_contrast_exact':0,
+   'general_finite_preparation_bound':'128 zeta/(1-zeta) ||R-I||op^2 for an equal-clock conjugate preparation',
+   'actual_probe_quadratic_bound_interval':ivfmt(quad_bound),
+   'signed_whole_loop_gain_interval':ivfmt(new_gain),'actual_finite_loop_normalized_contrast_interval':ivfmt(new_contrast),
+   'unmatched_single_active_plane_source_interval':ivfmt(unmatched_row),
+   'full_return_cotangent_frobenius_norm_interval':ivfmt(full_cotangent_norm),
+   'one_parameter_full_source_ratio_interval':ivfmt(ratio_rectangle),
+   'scope':'Conjugate-preparation rows vanish for the mechanically matched inverse, not for independent raw inverse/loop controls. The input differs from the canonical GNS input. Source transport is only on the same one-parameter loop chart, not an all42 physical or full-future equivalence.'},
+ 'incoming_stationary_seed_interface':{'commit':'aeb722a16','actual_old1_output_left':seed_output_left,
+   'raw_q6_readout_preserved':True,'fixed_inherited_AF_old1_readout':labels[65],
+   'whole_stationary_seed_replayed_by_this_checker':False,
+   'meaning':'The owned whole-source stationary recording seed and the fixed inherited-AF archive task are different interfaces; neither observed algebra is silently declared compulsory.'},
+ 'scope':'Exact original A0 archive preservation at the actual whole-word return, plus all paid Book sources on the same execution. It does not assert fixed archive preservation at every raw tick, admit the full M16 old algebra, create a continuous native compiler, prove physical actuation/full Cost-Info selection, or close GR.'}
+print(json.dumps(result,indent=2))
+```
+<!-- END 7dp PAID ARCHIVE SOURCE CHECKER -->
+
+<!-- BEGIN 7dp PAID ARCHIVE SOURCE RECEIPT -->
+```json
+{
+  "status": "PASS_PAID_INPUT_FIXED_ARCHIVE_AND_JOINT_SOURCE",
+  "checks": 324,
+  "input_commit": "7c079c0180de6e6e12edbd8e79c4628f5048deae",
+  "consumed_7do_checker_sha256": "d95b930757caad91091db3dc95218cafc70d5888caed5c4b9c39ad897197e821",
+  "consumed_7do_receipt_sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba",
+  "owned_source_pins": {
+    "d0_binary_af_actuation_2026-10-28/check_binary_af.py": "07c40e179d0446c52650e7a148c82ef33cd03d0349b0875b5b6af5acd7d9f3a5",
+    "d0_binary_af_actuation_2026-10-28/result.json": "bc2addf30982c3c8ba219358d63f7913485c6877763c3e65dd824766b3620f1a",
+    "d0_clock_winding_source_2026-10-28/PROOF_RU.md": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "d0_archive_naturality_domain_2026-10-28/PROOF_RU.md": "d43e3c6ce29f4fb56a36c861142dacce6645c5790a4c6a6e45008c0ee5ca56bc",
+    "d0_native_stationary_seed_2026-10-28/check_seed.py": "9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120"
+  },
+  "old_archive": {
+    "algebra": "original A0=(C direct_sum C) tensor M8(Spin4 times oldRIGHT2)",
+    "matrix_units_covered_by_exact_tensor_identity": 128,
+    "input_rank": 16,
+    "full_work_dimension": 65536,
+    "fixed_inherited_left_path_labels": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "same_label_preparation_planes": 87,
+    "same_label_loop_planes": [
+      [
+        0,
+        2
+      ],
+      [
+        56,
+        59
+      ]
+    ],
+    "all_nine_literal_word_endpoints_preserve_archive": true,
+    "unused_left_extension_independent": true,
+    "max_whole_endpoint_archive_compression_error": "5.71493695641137491107891774152670479726e-101",
+    "max_whole_endpoint_isometry_error": "5.71493695641137491107891774152670479726e-101"
+  },
+  "whole_word_check": {
+    "same_stage_count": 257229541260,
+    "max_published_corner_difference": "2.453031102874939980957124103869925987486e-37",
+    "native_full_price_difference": "0.0000001168205891112846358140993368010950851809",
+    "direct_corners": {
+      "(-1, -1)": [
+        "0.9524636606278923152020718548742161714674",
+        "0.9486716935407008152303570641547805812485"
+      ],
+      "(-1, 0)": [
+        "0.951262276131342708448932204664588480193",
+        "0.9473744747723046203344772432008185101557"
+      ],
+      "(-1, 1)": [
+        "0.950069976367040504588755470172096894925",
+        "0.9460870654239658937456030065107660481545"
+      ],
+      "(0, -1)": [
+        "0.9486733729366280672508352694353507512898",
+        "0.9486716935407008152303570641547805812485"
+      ],
+      "(0, 0)": [
+        "0.9473761966115553848291024930622259512453",
+        "0.9473744747723046203344772432008185101557"
+      ],
+      "(0, 1)": [
+        "0.9460888293855886094880265290150223818713",
+        "0.9460870654239658937456030065107660481545"
+      ],
+      "(1, -1)": [
+        "0.9445803534080191042762552836894074067351",
+        "0.9486716935407008152303570641547805812485"
+      ],
+      "(1, 0)": [
+        "0.9431797343216674402878240749554619359069",
+        "0.9473744747723046203344772432008185101557"
+      ],
+      "(1, 1)": [
+        "0.941789706556759203580979364855521426067",
+        "0.9460870654239658937456030065107660481545"
+      ]
+    }
+  },
+  "raw_time_countercontrol": {
+    "expanded_primitive_number": 3,
+    "operation": "G on wire5",
+    "preceding_operations": [
+      "CX(6,12)",
+      "CX(5,11)"
+    ],
+    "original_input_old_label": 1,
+    "before_address": 65,
+    "after_flipped_address": 193,
+    "exact_wrong_archive_probability": "p^2",
+    "wrong_archive_probability_interval": [
+      "0.381966011250105151795413165633",
+      "0.381966011250105151795413165636"
+    ],
+    "same_countercontrol_for_all_nine_words": true
+  },
+  "analytic_joint_source": {
+    "chart": "u=first preparation sine squared; phi=half the loop angle; same fixed N/beta/scene",
+    "u_rectangle_interval": [
+      "0.018073553115520330234127705733",
+      "0.024757808893258857066994120697"
+    ],
+    "loop_full_angle_rectangle_interval": [
+      "1.777878310817405516571659304631",
+      "1.840362338260403253632471791969"
+    ],
+    "whole_preparation_source_interval": [
+      "0.000016948428630283926328110891",
+      "0.000018003625044883851938840446"
+    ],
+    "whole_loop_source_interval": [
+      "0.000002277159915953490147729203",
+      "0.000002513862909167440820999756"
+    ],
+    "full_heat_phi_source_bound": "2 A1_N < 2*10^-N < 1e-90",
+    "full_heat_preparation_source_exact": 0,
+    "preparation_critical_strata": "w=0 or w=1 or 1-(1-cos alpha)w=0, for eta>0",
+    "centre_norm_one_endpoint_source_rows": [
+      {
+        "old_label": 0,
+        "actual_active_weight": "0.04257333249834250416328960122229724841828",
+        "source_in_endpoint_operator_norm": "0.000007215040051630135284404037742839359796893"
+      },
+      {
+        "old_label": 1,
+        "actual_active_weight": "0.04257472548840045178597451527214312727308",
+        "source_in_endpoint_operator_norm": "0.000007215139725754743835348695550679131045052"
+      }
+    ],
+    "direct_ambient_angle_derivative": "0.00000504609887263032964829230591870720593375",
+    "ambient_derivative_relative_error": "2.433817133676075213817825232749873899795e-26"
+  },
+  "replacement_preparation": {
+    "type": "exact15-CX basis preparation; changed input on the SAME original boundary and loop",
+    "chronological_CX_word": [
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "left_permutation_images_of_LSB_basis": [
+      56,
+      2,
+      59,
+      4,
+      8,
+      16,
+      64
+    ],
+    "whole_endpoint_planes": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "return_corner": "cos(alpha) I16",
+    "conjugate_preparation_source_commutator_exact": 0,
+    "all_column_proof": "[P0,Re W0]=0, with K=cos(alpha) I16",
+    "probe_plane": [
+      0,
+      3
+    ],
+    "probe_positive_G_run": 538292,
+    "probe_angle_interval": [
+      "0.010008054964071653841717776024",
+      "0.010008054964071653841717776027"
+    ],
+    "probe_inventory": {
+      "G": 34450688,
+      "CX": 386,
+      "SourceI": 0
+    },
+    "inverse_probe_inventory": {
+      "G": 34450688,
+      "CX": 1154,
+      "SourceI": 256
+    },
+    "matched_inventory": {
+      "G": 176430592,
+      "CX": 2724,
+      "SourceI": 388
+    },
+    "actual_stage_count": 176433704,
+    "all9_whole_RLE_word_hashes": {
+      "(-1, -1)": "bfda06ec22532317d23626ca7f8904c6867b8b291e2f60c8f1cc479b0adde486",
+      "(-1, 0)": "0b3ff03d3e7b3ff82042f2bc303e71e1a7902e5795852a32cadc72ad5fb82369",
+      "(-1, 1)": "d262c6c9b9c6cf063c41f2fc9869a8c945697b85d67798201ccb4116601952b9",
+      "(0, -1)": "8a463ce8a988931ba6b3181dd8e9355ec3cbdc47f471d08048dcaee59533ede4",
+      "(0, 0)": "79f63ff7f5c4fc49062ae17b060768b5ce23432c694045c2bfc610fe174d3f6b",
+      "(0, 1)": "2b8a3ec46746ef6bc6fadb63cbd020aa8456b1c17072925e828e56786b3fb72b",
+      "(1, -1)": "436c8b2054613aedfaffc9794483401d10f1f2d447b43af52e99d30ea358563a",
+      "(1, 0)": "6b0b4dd62801b38ef53dea1ba5b0e1e0667d2c151b40a1037c7691ca60f5cf9c",
+      "(1, 1)": "fa48593960507b4a464b8a9eb757317e5311a2e06b3a4617e7c58dfe07a76638"
+    },
+    "full_thermal_modes": 4914172670771200,
+    "whole_heat_interval": [
+      "47.184042900778707003733676475944",
+      "47.184042900778707003733676475947"
+    ],
+    "absolute_price_grid": {
+      "(-1, -1)": [
+        "47.184057514911355306207944116561",
+        "47.184057514911355306207944116564"
+      ],
+      "(-1, 0)": [
+        "47.184057309631176713411599218167",
+        "47.184057309631176713411599218170"
+      ],
+      "(-1, 1)": [
+        "47.184057077894927484114315190555",
+        "47.184057077894927484114315190558"
+      ],
+      "(0, -1)": [
+        "47.184057514532636599529826850097",
+        "47.184057514532636599529826850100"
+      ],
+      "(0, 0)": [
+        "47.184057309185330807553399091584",
+        "47.184057309185330807553399091587"
+      ],
+      "(0, 1)": [
+        "47.184057077379656591267503701392",
+        "47.184057077379656591267503701395"
+      ],
+      "(1, -1)": [
+        "47.184057514911355306207944116561",
+        "47.184057514911355306207944116564"
+      ],
+      "(1, 0)": [
+        "47.184057309631176713411599218167",
+        "47.184057309631176713411599218170"
+      ],
+      "(1, 1)": [
+        "47.184057077894927484114315190555",
+        "47.184057077894927484114315190558"
+      ]
+    },
+    "each_probe_full_price_increment_interval": [
+      "0.000000000445845905858200126581",
+      "0.000000000445845905858200126584"
+    ],
+    "symmetric_preparation_full_price_contrast_exact": 0,
+    "general_finite_preparation_bound": "128 zeta/(1-zeta) ||R-I||op^2 for an equal-clock conjugate preparation",
+    "actual_probe_quadratic_bound_interval": [
+      "0.000000012226614216983257504244",
+      "0.000000012226614216983257504247"
+    ],
+    "signed_whole_loop_gain_interval": [
+      "-0.000014001580475845492034559861",
+      "-0.000014001580475845492034559858"
+    ],
+    "actual_finite_loop_normalized_contrast_interval": [
+      "0.999349417240963774066362092474",
+      "0.999349417240963774066362184704"
+    ],
+    "unmatched_single_active_plane_source_interval": [
+      "-0.000003500395118961373008639966",
+      "-0.000003500395118961373008639963"
+    ],
+    "full_return_cotangent_frobenius_norm_interval": [
+      "0.000001237576562724939287673366",
+      "0.000001237576562724939287673369"
+    ],
+    "one_parameter_full_source_ratio_interval": [
+      "-6.985544978302592158947474831648",
+      "-4.811701513559465040937891438555"
+    ],
+    "scope": "Conjugate-preparation rows vanish for the mechanically matched inverse, not for independent raw inverse/loop controls. The input differs from the canonical GNS input. Source transport is only on the same one-parameter loop chart, not an all42 physical or full-future equivalence."
+  },
+  "incoming_stationary_seed_interface": {
+    "commit": "aeb722a16",
+    "actual_old1_output_left": 65,
+    "raw_q6_readout_preserved": true,
+    "fixed_inherited_AF_old1_readout": 0,
+    "whole_stationary_seed_replayed_by_this_checker": false,
+    "meaning": "The owned whole-source stationary recording seed and the fixed inherited-AF archive task are different interfaces; neither observed algebra is silently declared compulsory."
+  },
+  "scope": "Exact original A0 archive preservation at the actual whole-word return, plus all paid Book sources on the same execution. It does not assert fixed archive preservation at every raw tick, admit the full M16 old algebra, create a continuous native compiler, prove physical actuation/full Cost-Info selection, or close GR."
+}
+```
+<!-- END 7dp PAID ARCHIVE SOURCE RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:
