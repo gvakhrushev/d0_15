@@ -1,0 +1,187 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "arbitrary_global_record_touching_faults_covered": false,
+  "checker_sha256": "28d89f2489e4c369603ede869416867abae20d31e772ffc8f428661ddbea6d90",
+  "checks": 79,
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "exact_finite_GR_root_proved": false,
+  "input_commit": "523d2cbcc0a9771ea40faa4a2eac84cc78704b0e",
+  "joint_budget": {
+    "epochs": [
+      {
+        "j": 1,
+        "joint_bound": "201/1616",
+        "repetitions": 16160,
+        "target": "1/2",
+        "total_weight": "1616"
+      },
+      {
+        "j": 2,
+        "joint_bound": "705/12928",
+        "repetitions": 484800,
+        "target": "1/4",
+        "total_weight": "6464"
+      },
+      {
+        "j": 3,
+        "joint_bound": "605/22624",
+        "repetitions": 16160000,
+        "target": "1/8",
+        "total_weight": "22624"
+      },
+      {
+        "j": 4,
+        "joint_bound": "1379/103424",
+        "repetitions": 549440000,
+        "target": "1/16",
+        "total_weight": "77568"
+      },
+      {
+        "j": 5,
+        "joint_bound": "3533/530048",
+        "repetitions": 18745600000,
+        "target": "1/32",
+        "total_weight": "265024"
+      },
+      {
+        "j": 6,
+        "joint_bound": "24131/7239680",
+        "repetitions": 639936000000,
+        "target": "1/64",
+        "total_weight": "904960"
+      }
+    ],
+    "no_large_program_execution_claimed": true,
+    "norm_boundary_control": [
+      {
+        "h": "1/4",
+        "raw_max_row": "16",
+        "regular_row": "1/4"
+      },
+      {
+        "h": "1/8",
+        "raw_max_row": "64",
+        "regular_row": "1/8"
+      },
+      {
+        "h": "1/16",
+        "raw_max_row": "256",
+        "regular_row": "1/16"
+      }
+    ],
+    "persistent_unknown_source": "1/9"
+  },
+  "large_native_GR_query_executed": false,
+  "literal_private_block": {
+    "all_columns_checked": 8,
+    "corner": "p^3 I4",
+    "inventory": {
+      "G": 2,
+      "SourceI": 6
+    },
+    "protected_columns": 4,
+    "scope": "replay of the owned bounded private block; not a large GR compiler",
+    "stages": 8
+  },
+  "matrix_past": {
+    "dual_weight": "Matrix([[1775634073/3016224050, 607813632/1508112025], [607813632/1508112025, 1240589977/3016224050]])",
+    "fresh_trace_zero_old_source_weight": "267522048/1508112025",
+    "new_block_rows_exact": [
+      "-1519861860532224/29003367552134425",
+      "-1469866404593664/29003367552134425",
+      "-287541433073664/5800673510426885"
+    ],
+    "scope": "exact operator identities; rational old corner and shape are structural controls",
+    "unguarded_old_cut_leakage_row": "392/3347"
+  },
+  "nonlinear_target": {
+    "Bernstein_controls": [
+      {
+        "ambient_gradient_error": "4.307467095296533100182279039866e-10",
+        "degree": 2,
+        "nonzero_field_gradient_norm": "0.000000047471658481204957762203989366068",
+        "vertical_residual": "3.8395635532670651348761239126399e-10"
+      },
+      {
+        "ambient_gradient_error": "2.1669409581261240403227244094504e-10",
+        "degree": 4,
+        "nonzero_field_gradient_norm": "0.000000047471658481204957762203989366068",
+        "vertical_residual": "1.9334642958953365904762727206121e-10"
+      },
+      {
+        "ambient_gradient_error": "1.0867389334301993921609129728777e-10",
+        "degree": 8,
+        "nonzero_field_gradient_norm": "0.000000047471658481204957762203989366068",
+        "vertical_residual": "9.7011680046991104652184917462043e-11"
+      },
+      {
+        "ambient_gradient_error": "5.4418266541955227606414859202022e-11",
+        "degree": 16,
+        "nonzero_field_gradient_norm": "0.000000047471658481204957762203989366068",
+        "vertical_residual": "4.8590032544260951388260620578886e-11"
+      }
+    ],
+    "decoder": "x=(p1+p3-1)/20, y=(p2-p3)/20",
+    "original_event_at_base": "0.0000018491240967222349941139649974662",
+    "original_field_gradient": [
+      "9.7290202916330414238810373575972e-10",
+      "-0.000000022762927211439174738713890947274",
+      "0.000000023735829240602478881101994683034"
+    ],
+    "original_z0": "2^-20",
+    "scope": "bounded direct-click scalar and fibre controls; not a finite GR solution",
+    "test_shape": {
+      "Omega": "1",
+      "alpha": "1/3",
+      "gamma": "1/2"
+    },
+    "vertical_direction": [
+      -1,
+      1,
+      1
+    ]
+  },
+  "physical_admission_proved": false,
+  "quantum_conditional": {
+    "Golden_TAG_controls": [
+      {
+        "banks": 4,
+        "full_bank_conditional_error": 1.1102230246251565e-16,
+        "pair_probability": "1/2 - sqrt(5)/6",
+        "proven_bound": 0.15278640450004205,
+        "vertical_row": "4/3125 - 4*sqrt(5)/9375",
+        "vertical_row_float": 0.00032594432960008973
+      },
+      {
+        "banks": 8,
+        "full_bank_conditional_error": 2.220446049250313e-16,
+        "pair_probability": "-1/42 + sqrt(5)/42",
+        "proven_bound": 0.03531622792856542,
+        "vertical_row": "-4/65625 + 4*sqrt(5)/65625",
+        "vertical_row_float": 7.534128624760623e-05
+      },
+      {
+        "banks": 16,
+        "full_bank_conditional_error": null,
+        "pair_probability": "1/35 - sqrt(5)/105",
+        "proven_bound": 0.008730651685716689,
+        "vertical_row": "8/109375 - 8*sqrt(5)/328125",
+        "vertical_row_float": 1.862539026286227e-05
+      }
+    ],
+    "cold_value": "93607/131250",
+    "derived_past_weighted_row": "-14823656190/1127110707949",
+    "finite_two_packet_vertical_slope": "8/3125",
+    "first_conditional_exact": "Matrix([[31/42, 193/10500], [193/10500, 1763/2625]])",
+    "operator_valued_row": "Matrix([[-9727/131250, 0], [0, 9727/131250]])",
+    "scope": "actual Golden TAG probabilities, structural two-feature read-once kernels; no large native query emission"
+  },
+  "status": "PASS_OPERATOR_APPARATUS_COTANGENT_DESCENT_CONTROLS",
+  "uniform_unweighted_raw_gate_refinement_proved": false
+}
