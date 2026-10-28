@@ -94,7 +94,7 @@ The two-level source-defect bound and preservation of the desired scalar field
 source also pass. All these controls have their declared scope, not an emitted
 large native gravity interpreter or arbitrary physical raw-domain test.
 
-Checker SHA256 `6f3ced9f615aad6023d51e7adbf402a73566c77b7d9795d942d39531391ade41`.
+Checker SHA256 `e564aeed9011a784394976951814a6059fb6c71b7fa31b344f5170294b6b473e`.
 The proof gives a concrete finite criterion for the shared-control premise, but
 neither proves that D0 selects all those quantum archive tests nor fixes the new
 report law. Closure/information retention alone is not substituted for either.
