@@ -88905,6 +88905,789 @@ print(json.dumps(result,indent=2,sort_keys=True))
 ```
 <!-- END 7di OFFCOPY FRAME RECEIPT -->
 
+## 7dj. The full native regular carrier needs an actual readiness operation
+
+28 October 2026. SAME #334 / `constitutive/native-programme-v1`, native
+realization and final composition. Input `fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`.
+Consume §7di954–960, the original
+[AF right-module/regular-carrier and preparation theorem, §4](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md#4-where-the-operators-live-and-the-price-of-the-full-regular-carrier),
+and the incoming operator-apparatus source. The named next application
+is to place the new frame in the ACTUAL native operator algebra and
+use its true canonical input, rather than identify a working-module
+state with a regular GNS state.
+
+The direct unprepared identification fails: for the declared class its
+cold operator sees the work trace, which is constant on a conjugacy
+family. The intended geometric source is lost. A concrete coherent
+readiness target recovers the source, with its genuine positive gain
+and retained failure branch. It requires a real blank flag and an
+implementation of the displayed controlled operation; those resources
+are not supplied by the algebraic identity. No physical closure is
+claimed from an unimplemented matrix target.
+
+Incoming `1595b9bd` and all three files of the
+[internal-programme/global-QUERY theorem](A4D_INTERNAL_PROGRAM_AND_GLOBAL_QUERY_STATIONARITY_2026_10_28.md)
+are preserved. Their pure-code statement and unrestricted conjugacy
+classification are kept distinct from the native left-algebra orbit
+used below. Their362 checks are consumed, not rerun or counted here.
+
+### 1. Reuse the actual doubled-path algebra, with its real trace
+
+Let the old AF block sizes be A_j, j=0,1, and M=[[1,1],[1,0]]. At
+depth k let m_vj=(M^k)_vj and d_v=(M^k A)_v. The same right-module
+decomposition as the original three/six-level theorem gives
+
+    H_(n+k)=direct_sum_j K_j tensor C^(A_j),
+    dim K_j=sum_v m_vj d_v=(M^(2k)A)_j=:D_j,
+    End_(right A_n)(H_(n+k))=M_(D_0) direct_sum M_(D_1)
+                           =A_(n+2k).                  (961)
+
+The identification is the OWNED actual path fold: concatenate the
+row's k-step path with the reversed column's k-step path. Cutting
+at the midpoint is its inverse. It is not an arbitrary embedding
+of every matrix into an unspecified native algebra. The §7di frame
+and all transported middle operators are in this right-module algebra.
+
+Their working multiplicities are A_j. On the full regular GNS carrier
+of A_(n+2k), the multiplicities are instead D_j. Ordinary Book traces
+must use the latter. A defining protected Spin/spectator factor is
+included once, not replaced by its own regular representation.
+
+Let V_a=B E_a and e_ab=V_a V_b* for the complete §7di work frame after
+its Golden encoding, and let alpha:A_n->A_(n+2k) be the actual folded inclusion.
+Each e_ab intertwines old left/right actions. The fixed normalized
+AF trace therefore obeys, for every old x,
+
+    tau_(n+2k)(e_ab alpha(x))
+        =gamma delta_ab tau_n(x), gamma=p^(2k).        (962)
+
+To see the coefficient, e_aa has block ranks A_j, and in block j its
+weighted trace with alpha(x) is
+p^(n+2k+1+j) Tr(x_j). Off-diagonal work matrix units have zero trace
+with alpha(x). Thus (962) is the original preparation calculation
+applied to the changed complete frame; no normalized trace replaces
+the ordinary Book determinant. It is used only to compute the TRUE
+canonical-input compression.
+
+### 2. The original canonical regular input does not prepare work zero
+
+Write J_can for the original trace-preserving GNS inclusion from H_n
+to H_(n+2k), and rho for full regular LEFT multiplication. For an
+actual logical word W on work tensor protected K, the algebra element is
+
+    U_alg=I+sum_ab e_ab tensor (W_ab-delta_ab I_K).
+
+Using (962) on every pair of old input vectors gives the exact operator
+
+    C_can=(J_can* tensor I_K)rho(U_alg)(J_can tensor I_K)
+         =I_old tensor [I_K+gamma(Tr_work W-q_work I_K)]. (963)
+
+No old state, right column or work complement is removed. In
+particular, if W=W_work tensor I_K and Tr W_work is fixed, C_can is
+constant. The actual return-price covector on that family is zero.
+For a fixed-signature reflected word at a common real INTERNAL clock,
+the complete regular heat is also constant on its conjugacy family,
+including all true multiplicities. That matched full B has zero field
+gain; dividing it by the old positive working gain would be invalid.
+
+This is a scoped failure of the unprepared regular-input substitution,
+not a physical D0 no-go and not an erasure of all joint observables.
+It also does not contradict the incoming global-QUERY theorem: the
+native left-algebra orbit constrained by (963) is a proper restricted
+orbit. Its canonical input projection is not an arbitrary native
+left projection. The global generator [U,P_can] need not belong to
+this restricted actuation algebra.
+
+### 3. The prepared branch is explicit, and has a real probability
+
+Let e=e_00. Equation (962) gives on ALL unknown old/K inputs
+
+    J_can* rho(e) J_can=gamma I,
+    J_can* rho(I-e) J_can=(1-gamma)I.                  (964)
+
+The successful preparation map is V_prep=rho(e)J_can/sqrt(gamma).
+It is an isometry, and the q_work maps
+rho(e_a0)J_can/sqrt(gamma) are mutually orthonormal. The complete U_alg
+acts on them by the original W. Hence conditioning on a real READY
+outcome recovers the intended cI cold corner, including all old input
+columns. It is not the unprepared identity vector: the failed
+probability 1-gamma is real and must retain its actual record and price.
+
+Also distinguish the rank of this prepared-input isometry from the
+rank of the whole left projection rho(e). They need not agree. Choosing
+one as the physical Book cut in place of the other is another change
+of execution, not a harmless trace convention.
+
+### 4. A concrete coherent readiness interface retains all failures
+
+There is a direct MATRIX target if one actual extra flag is supplied
+in |0>. Define on flag tensor the whole native carrier
+
+    M_e=[[I-e,e],[e,I-e]],
+    U_flag=M_e diag(I,U_alg) M_e,
+    <0|U_flag|0>=I-e+e U_alg e,
+    C_flag=(1-gamma+gamma c)I=:c_eff I.                (965)
+
+M_e is unitary on every column. Both of its occurrences and the
+controlled full word belong to the required implementation. This is
+coherent recording and uncomputation of a readiness test; no failure
+branch is postselected away. The displayed flag can have nonzero
+other output amplitudes and is retained. It cannot simply be reused
+as a fresh blank on the next block.
+
+At fixed e and gamma, an arbitrary middle insertion X has the actual
+canonical insertion X_eff=gamma X. For the existing actual positive
+scalar calibration lambda, define the new calibration by
+
+    lambda_eff=(gamma c/c_eff)lambda,
+    -(2/(c_eff lambda_eff))Herm X_eff
+            =-(2/(c lambda))Herm X.                   (966)
+
+For c>0 and gamma>0 its sign is unchanged, but its size is different.
+On the exact scalar target D_I c=-c lambda/2, this is precisely
+-2 D_I c_eff/c_eff. At a compiled centre retain that centre's actual
+c and lambda and all previously recorded target-comparison errors.
+This transports the existing OPERATOR source estimate and its
+off-shell decoder map exactly. Use the actual accumulated c_eff,
+T_eff, w_eff and Lambda_eff, not the old ideal gain. gamma here is
+the newly computed AF readiness p^(2k); it is not silently identified
+with an earlier report-shape coefficient or charged twice.
+
+The operator identity permits the same nonnormal-past bound. Finite
+middle errors and finite field comparisons must be transported with
+the actual calibration (966). Errors of implementing M_e, the
+controlled word or the flag itself are additional. At each finite
+template the genuine lambda_eff is positive, so the existing
+repetition schedule can be applied AFTER all real resources, counts
+and errors are fixed; no uniform efficiency as k grows is asserted.
+Independent primitive variations inside a controlled-word compiler
+are not automatically the lifted middle variations X: its actual
+false-branch source and control supports must also be proved skew,
+transported to the old graph, or bounded. Endpoint accuracy alone
+does not discharge that source obligation.
+
+### 5. Independent guarded preparation rows are retained, not linked away
+
+Let D be the diagonal-copy support of §7di, now in the native
+right-module algebra, with e<=D. All nonblank work frames are outside
+D. On the complete flag support D_F=diag(D,D), the target has
+
+    D_F U_flag D_F=D_F+(c-1)diag(e,0).                 (967)
+
+An independently varied left or right M_e implementation whose
+raw generators stay inside D_F transports to a skew H=D_F H D_F.
+The middle word is held fixed for this variation. Write E_old for
+the canonical conditional expectation computed by J_can. Since e
+and D commute with alpha(A_n), trace cyclicity gives
+E_old([H_00,e])=0 and removes the off-support blocks. It follows that
+
+    Herm E_old((H U_flag)_00)=0,
+    Herm E_old((-U_flag H)_00)=0.                     (968)
+
+The identity is operator-valued on the protected factor as well:
+e,D act there as identities. Every independent temporal half is
+covered separately. A realization with a new support outside D_F
+must supply that source; the exact matrix target alone does not
+guarantee its compiler has these guards. No arbitrary continuously
+tunable native primitive is introduced.
+
+The actual off-diagonal flag corners are eU(I-e) and (I-e)Ue.
+Their E_old expectations vanish. Consequently pure code-changing
+first variations of the initial |0> flag also have zero return
+source, including protected-entangled first jets. This consumes the
+owned pure-programme argument at its proper scope. It does not supply
+the physical flag preparation, a mixed-state boundary theorem, an
+optimum or disappearance of the finite comparison with another flag
+state. Its field source in (966) remains nonzero.
+The real preparation word retains its own stages and source. As the
+incoming programme owner emphasizes, a one-sided preparation and a
+complete co-transported echo are not the same price/variation chart.
+
+Whole heat is not declared zero for arbitrary independent raw faults.
+It uses the actual enlarged carrier and actual controlled/flag/frame
+schedule, with the existing full thermal bound if its hypotheses hold.
+No unimplemented M_e or controlled call is priced as one native gate.
+
+A necessary negative control keeps the distinction sharp. Let the
+READY projection rotate towards the first nonblank work label while
+U_alg is fixed. In the actual QUERY example below,
+
+    D gamma=0, but D C_flag=4 gamma a p I !=0.          (969)
+
+This direction mixes D with its complement. Constant readiness
+probability does not remove its true source. A freely moving READY
+test therefore still needs an actual task constraint or equation;
+it cannot be frozen merely because the desired field solves Einstein.
+
+### 6. Exact native finite comparison on the correct full carrier
+
+The checker executes AGAIN only the two small original38-stage words
+of §7dh on all32 columns: A has cold p^3 I8, B has cold I8, and both
+have the actual inventory **4G+24CX+10SourceI**. The full work matrices are respectively
+I_port tensor [[p^3,2ap],[2ap,-p^3]] and I_port tensor diag(1,-1),
+each with work trace0. Spin and the original oldRIGHT are exact
+identity factors on every column.
+
+The changed k=4 frame places them in A_8=M55 direct_sum M34. The
+actual working AF dimension is89. On full regular GNS with the
+defining8-dimensional Spin/oldRIGHT factor, the dimension is33448,
+the true canonical input rank16 and the full left-ready rank712.
+Both endpoints have1424 negative and32024 positive modes. The
+full identity complement and regular right multiplicities55,34 stay.
+
+For both words the ORIGINAL canonical regular input gives
+
+    C_can=(1-4p^8)I16,
+    F_can=8p^8(1-2p^8)P_can,                          (970)
+
+whereas their prepared cold corners still differ, p^3 versus1.
+The entire fixed-signature conjugacy family has zero derivative
+in (963), while a rational prepared-direction control has Book
+derivative6048/18995 at its stated z,t. This tests loss of source,
+not merely coincidence of two isolated scalar prices.
+
+All190 exact checks pass, with byte-identical normal/optimized receipts.
+The89 actual doubled paths are checked as a bijection onto the55/34
+simple blocks. All16 work matrix units are tested in (962), covering
+the whole linear map used by (963). The complete flag MATRIX target
+is multiplied on all178 working-AF/flag columns, with both independent
+frame/flag first-source controls and the nonzero READY-orientation
+control. Its full regular interpretation follows by the explicit
+block representation and multiplicities.
+
+The inherited frame theorem gives the unflagged represented schedule
+104 specified calls:26G+24CX+54SourceI. Its104-call full-column product is
+not rerun: the algebra representation is applied multiplicatively to
+the previously checked frame and the newly executed32-column middles.
+No dense33448 heat, giant nonlinear GR word, controlled-flag compiler
+or actual physical state preparation is claimed. The flag target has
+NO assigned native stage count until its implementation is provided.
+
+### 7. Parent substitution and exact remaining application
+
+The abstract working frame is now located in its actual native
+operator algebra with full regular multiplicities. Direct use of its
+unprepared cyclic input is ruled out as a source-preserving bridge.
+The explicit coherent-readiness target instead transports the old
+normalized operator source by (966), and its declared guarded
+preparation rows by (968). It can therefore consume the existing
+regular apparatus/task/frame recovery when its real implementation,
+extra flag, comparisons, clock and all other prices are supplied.
+
+This is not a new physical admissibility definition. The remaining
+map is concrete: the actual native READY-copy/controlled execution
+and genuine flag preparation on this carrier, with every retained
+failure, independent support and full price. The original Book01
+observable criteria and Book03 §03.26.1–.4 do not by themselves grant
+those actuators. The broader physical X_N completeness remains open.
+
+Assembly: supporting direct representation/source application to
+§7di and the incoming nonlinear source theorem, with the stated
+physical premises retained. Only this primary and its existing brief
+are written. No new task/node, scientific acceptance, Ready, claim
+promotion or merge. `GR_closed=false`.
+
+Exact checker SHA256: `1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f`.
+Observed receipt SHA256: `01e14a9d561da0879bd9c75b66054484f9efd1ef58e6f5ec4e9899707046f74a`.
+The following blocks are the exact executed bytes.
+
+
+<!-- BEGIN 7dj REGULAR CYCLIC SOURCE CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Exact regular-AF application of the owned off-copy frame.
+
+All regular columns are represented by exact simple blocks and their actual
+right multiplicities. No huge dense heat or physical preparation is claimed.
+"""
+import ast
+from collections import Counter
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+import sympy as s
+
+ROOT=Path.cwd()
+PRIMARY=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+AF_PIN='9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee'
+NATIVE_PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+TREE_PIN='b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba'
+FRAME_PIN='de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88'
+OWNER_PIN='012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6'
+checks=[]
+def require(ok,label):
+    if not bool(ok):raise RuntimeError(label)
+    checks.append(label)
+def load(name,rel,pin):
+    path=ROOT/rel
+    require(hashlib.sha256(path.read_bytes()).hexdigest()==pin,'input '+name)
+    spec=importlib.util.spec_from_file_location(name,path)
+    module=importlib.util.module_from_spec(spec);sys.modules[name]=module;spec.loader.exec_module(module)
+    return module
+AF=load('regular_cyclic_af','02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py',AF_PIN)
+N=load('regular_cyclic_native','02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py',NATIVE_PIN)
+owner=ROOT/'02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md'
+require(hashlib.sha256(owner.read_bytes()).hexdigest()==OWNER_PIN,'owned regular-algebra and preparation proof')
+a,p=AF.a,AF.p
+source=PRIMARY.read_text()
+def functions(marker,pin,names):
+    code=source.split('<!-- BEGIN '+marker+' -->\n```python\n')[1].split('```\n<!-- END '+marker+' -->')[0]
+    require(hashlib.sha256(code.encode()).hexdigest()==pin,'published '+marker)
+    nodes=[x for x in ast.parse(code).body if isinstance(x,ast.FunctionDef) and x.name in names]
+    require({x.name for x in nodes}==set(names),'exact requested builder functions '+marker)
+    exec(compile(ast.Module(body=nodes,type_ignores=[]),'<owned '+marker+'>','exec'),globals())
+functions('7dg GOLDEN AF FRAME CHECKER',TREE_PIN,{'mat','paths','pairs','rotation','product'})
+functions('7di OFFCOPY FRAME CHECKER',FRAME_PIN,{'layout'})
+def equal(A,B,label):require(AF.zero(A-B),label)
+def symbolic(A):return mat(A.xreplace({N.A:a}).xreplace({s.sqrt(5):2*p+1}))
+
+# Changed application: original two native38-stage words, followed by the
+# already proved depth4 frame representation. The unchanged73-call frame
+# fixture is not rerun or counted here.
+def execution(word):return N.Execution(5,(0,1),(4,),tuple(word),N.G_CX_SOURCE_I,0,(2,3))
+def swap(i,j):return (N.Gate('CX',(i,j)),N.Gate('CX',(j,i)),N.Gate('CX',(i,j)))
+route=swap(0,1);si=N.Gate('SourceI',(0,2,3));v=(N.Gate('G',(1,)),)
+rg=route+(N.Gate('G',(0,)),)+route
+ri=N.inverse_word(execution(rg),max_qubits=5,max_expanded_stages=100)
+query=ri+route+(si,si)+route+rg
+vi=N.inverse_word(execution(v),max_qubits=5,max_expanded_stages=100)
+words=[execution(v+vi+query),execution(v+query+vi)]
+full=[]
+for word in words:
+    N.validate_execution(word,max_qubits=5,max_expanded_stages=100)
+    inv=N.inventory(word,max_qubits=5,max_expanded_stages=100)
+    require((inv.gate_count,inv.g_count,inv.cx_count,inv.source_i_count,inv.cut_rank)==(38,4,24,10,8),'actual full native38 inventory')
+    full.append(product([symbolic(N.gate_matrix(word,g,max_qubits=5,max_expanded_stages=100)) for g in word.gates],32))
+workA=s.kronecker_product(s.eye(2),s.Matrix([[p**3,2*a*p],[2*a*p,-p**3]]))
+workB=s.kronecker_product(s.eye(2),s.diag(1,-1))
+equal(full[0],s.kronecker_product(workA,s.eye(8)),'all32 native A columns and restored Spin/oldRIGHT')
+equal(full[1],s.kronecker_product(workB,s.eye(8)),'all32 native B columns and restored Spin/oldRIGHT')
+equal(s.trace(workA),0,'A work trace fixed')
+equal(s.trace(workB),0,'B work trace fixed')
+
+f=layout(0,4,4);E,J,ops=f['E'],f['J'],f['ops'];d,D=J.cols,J.rows
+B=product([rotation(D,op['rows']) for op in ops],D)
+V=mat(B*E);I=s.SparseMatrix(s.eye(D));R=mat(V*V.T)
+equal(V[:,:d],J,'same canonical working inclusion')
+equal(V.T*V,s.eye(4*d),'complete changed work frame')
+segments=AF.segments(1,1,4)
+owners={};paths_at={}
+for v0,block in enumerate(segments):
+    for oldtype,path,off in block:
+        owners[v0,off]=oldtype;paths_at[v0,off]=(oldtype,path)
+group=[[],[]];row_owners=[[],[]];fold_positions=[[],[]]
+long_segments=AF.segments(1,1,8)
+long_addr={(i,path):(j,off) for j,block in enumerate(long_segments) for i,path,off in block}
+for index,(v0,row,col) in enumerate(f['fine']):
+    j,cp=paths_at[v0,col];i,rp=paths_at[v0,row]
+    folded=rp+tuple(reversed((j,)+cp[:-1]))
+    endpoint,position=long_addr[i,folded]
+    require(endpoint==j,'legal doubled path endpoint '+str(index))
+    group[j].append(index);row_owners[j].append(i);fold_positions[j].append(position)
+sizes=[len(x) for x in group]
+require(sizes==[55,34] and tuple(sizes)==AF.counts(8),'actual right-module algebra is A8')
+for j in (0,1):
+    require(sorted(fold_positions[j])==list(range(sizes[j])),'all doubled paths bijective block '+str(j))
+
+def blocks(M):
+    return [s.SparseMatrix(M.extract(g,g)) for g in group]
+def canonical_corner(M):
+    # All old input columns: true normalized canonical J_(0,8), with the
+    # original forced AF trace weights and every regular right column.
+    bs=blocks(M);vals=[]
+    for oldtype in (0,1):
+        vals.append(AF.red(sum(p**(8+j-oldtype)*sum(bs[j][r,r]
+                    for r,i in enumerate(row_owners[j]) if i==oldtype) for j in (0,1))))
+    return s.diag(*vals)
+equal(canonical_corner(I),s.eye(2),'true canonical cyclic normalization on both unknown old columns')
+gamma=p**8
+units={}
+for b in range(4):
+    for c in range(4):
+        units[b,c]=mat(V[:,b*d:(b+1)*d]*V[:,c*d:(c+1)*d].T)
+        equal(canonical_corner(units[b,c]),gamma*(int(b==c))*s.eye(d),'full canonical expectation of work matrix unit '+str((b,c)))
+e=units[0,0]
+equal(canonical_corner(e),gamma*s.eye(d),'actual preparation probability p8 for every old input')
+equal(canonical_corner(I-e),(1-gamma)*s.eye(d),'all unprepared failures retained')
+
+U=[];regular=[];ordinary=[]
+for label,W in [('A',workA),('B',workB)]:
+    UW=mat(V*s.kronecker_product(W,s.eye(d))*V.T+I-R)
+    U.append(UW);bs=blocks(UW);regular.append(bs)
+    # Verify decomposition has no omitted inter-block matrix element.
+    equal(UW.extract(group[0],group[1]),s.zeros(sizes[0],sizes[1]),'right-module block guard '+label)
+    equal(UW.T*UW,I,'complete new working endpoint unitary '+label)
+    equal(UW.T,UW,'complete endpoint reflection '+label)
+    equal(J.T*UW*J,W[0,0]*s.eye(d),'working canonical cold corner '+label)
+    equal(canonical_corner(UW),(1-4*gamma)*s.eye(d),'FULL regular canonical cold corner '+label)
+    equal(e*UW*e,W[0,0]*e,'conditional ready corner '+label)
+    equal(canonical_corner(e*UW*e),gamma*W[0,0]*s.eye(d),'paid ready amplitude before division '+label)
+    for b in range(4):
+        rhs=s.zeros(D)
+        for c in range(4):rhs+=W[c,b]*units[c,0]
+        equal(UW*units[b,0],rhs,'prepared full work action '+label+str(b))
+    traces=[AF.red(s.trace(x)) for x in bs]
+    negatives=[AF.red((sizes[j]-traces[j])/2) for j in (0,1)]
+    require(negatives==[2,2],'two real negative work modes in each native block '+label)
+    ordinary.append({'block_sizes':sizes,'block_traces':[str(x) for x in traces],
+                     'full_regular_negative_modes':int(8*sum(sizes[j]*negatives[j] for j in (0,1)))})
+
+e_ranks=[AF.red(s.trace(x)) for x in blocks(e)]
+regdim=8*sum(x*x for x in sizes);readyrank=8*sum(sizes[j]*e_ranks[j] for j in (0,1))
+require((regdim,readyrank)==(33448,712),'full regular carrier and left-ready rank')
+can=1-4*gamma
+equal(canonical_corner(U[0]),canonical_corner(U[1]),'native distinct words have same unprepared cold operator')
+equal(1-can*can,8*gamma*(1-2*gamma),'unprepared feedback on true rank16 canonical input')
+require(not AF.zero(p**3-1),'prepared working effects remain different')
+require(not AF.zero(can-p**3) and not AF.zero(can-1),'unprepared input is neither prepared word')
+require(4*gamma!=1,'work and identity complement not silently normalized away')
+
+# A concrete CONDITIONAL preparation remedy. A genuine extra blank flag
+# allows a coherent two-outcome projector copy. This is an exact matrix
+# target only: no native compiler or free flag is being supplied here.
+M=(I-e).row_join(e).col_join(e.row_join(I-e))
+equal(M.T*M,s.eye(2*D),'full coherent-ready flag target is unitary')
+Dflag=s.diag(f['diag'],f['diag'])
+Eflag=s.diag(e,s.zeros(D))
+equal(Dflag*(M-s.eye(2*D)),M-s.eye(2*D),'coherent-ready calls stay in diagonal-copy and flag support')
+for label,UW,W in zip(('A','B'),U,(workA,workB)):
+    controlled=s.diag(I,UW)
+    flagged=mat(M*controlled*M)
+    equal(flagged.T*flagged,s.eye(2*D),'all178 flag-target columns retained '+label)
+    corner=flagged[:D,:D]
+    equal(corner,I-e+e*UW*e,'actual flag-zero corner including failure branch '+label)
+    equal(canonical_corner(corner),(1-gamma+gamma*W[0,0])*s.eye(d),'canonical flagged return with real readiness '+label)
+    equal(s.trace(flagged),D+s.trace(UW),'flagged whole spectrum trace retained '+label)
+    equal(Dflag*flagged*Dflag,Dflag+(W[0,0]-1)*Eflag,'complete diagonal/flag compression '+label)
+    equal(canonical_corner(flagged[:D,D:]),s.zeros(d),'actual pure-flag preparation cross source zero '+label)
+    # Independent raw end insertions: one diagonal-copy skew and one
+    # flag-mixing skew, each on the original declared native blocks.
+    first,second=ops[0]['rows'][0]
+    Hd=s.MutableSparseMatrix(D,D,{(first,second):1,(second,first):-1})
+    for kind,H in [('frame',s.diag(Hd,s.zeros(D))),
+                   ('flag',s.zeros(D).row_join(e).col_join((-e).row_join(s.zeros(D))))]:
+        equal(Dflag*H*Dflag,H,'actual '+kind+' source support '+label)
+        left=canonical_corner((H*flagged)[:D,:D])
+        right=canonical_corner((-flagged*H)[:D,:D])
+        equal(left+left.T,s.zeros(d),'independent left '+kind+' Hermitian source '+label)
+        equal(right+right.T,s.zeros(d),'independent right '+kind+' Hermitian source '+label)
+    # Rotating the readiness projector towards a nonblank work label
+    # violates that guard; fixed readiness probability alone is insufficient.
+    if label=='A':
+        de=units[1,0]+units[0,1]
+        equal(canonical_corner(de),s.zeros(d),'moving ready orientation keeps its probability fixed')
+        extra=-de+de*UW*e+e*UW*de
+        equal(canonical_corner(extra),4*gamma*a*p*s.eye(d),'free ready orientation has nonzero return source')
+        require(not AF.zero(canonical_corner(extra)),'ready orientation cannot be erased by constant probability')
+cc,gg=s.symbols('c gamma',positive=True)
+dc=s.symbols('dc',real=True)
+ceff=1-gg+gg*cc;lam=-2*dc/cc;leff=-2*gg*dc/ceff
+require(s.factor(leff-(gg*cc/ceff)*lam)==0,'actual flagged lambda is gamma*c/ceff times old lambda')
+
+# The same source loss holds for a real fixed-signature orbit, not just
+# two equal values. The identity verified for all16 units gives the
+# entire operator formula before differentiating this small witness.
+t=s.symbols('t',real=True)
+Q=s.Matrix([[1-t*t,-2*t],[2*t,1-t*t]])/(1+t*t)
+Wtheta=s.kronecker_product(s.eye(2),Q*s.diag(1,-1)*Q.T)
+ct=s.factor(Wtheta[0,0]);cyclic=s.factor(1+gamma*(s.trace(Wtheta)-4))
+require(s.simplify(s.diff(cyclic,t))==0,'entire canonical cyclic conjugacy source vanishes')
+require(s.diff(ct,t).subs(t,s.Rational(1,3))!=0,'genuine prepared source has nonzero tangent')
+z=s.symbols('z',positive=True)
+prepared_der=s.factor(-2*z*ct*s.diff(ct,t)/(1-z+z*ct*ct))
+require(prepared_der.subs({t:s.Rational(1,3),z:s.Rational(1,7)})!=0,'prepared Book derivative cannot be transported with zero gain')
+
+frame_inventory=Counter({'G':22,'SourceI':44})
+native_inventory=Counter({'G':4,'CX':24,'SourceI':10})
+inventory=frame_inventory+native_inventory
+require(sum(inventory.values())==104,'actual common new104-stage count')
+result={'status':'PASS','checks':len(checks),'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        'input_pins':{'AF':AF_PIN,'native':NATIVE_PIN,'tree':TREE_PIN,'frame':FRAME_PIN,'regular_owner':OWNER_PIN},
+        'regular_representation':{'working_AF_dimension':D,'operator_AF_level':8,'simple_blocks':sizes,
+          'right_multiplicities':sizes,'protected_spectator':8,'full_regular_dimension':regdim,
+          'canonical_input_rank':16,'left_ready_projection_rank':int(readyrank),
+          'regular_negative_modes':[x['full_regular_negative_modes'] for x in ordinary],
+          'regular_positive_modes':regdim-ordinary[0]['full_regular_negative_modes']},
+        'word':{'native_calls_each':38,'new_representation_calls_each':104,'new_inventory':dict(inventory),
+          'full104_schedule_replayed':False,'all32_native_columns_executed':True,
+          'regular_application':'exact55/34 blocks with all right multiplicities, not a dense33448 matrix'},
+        'corners':{'working_A':'p^3 I16','working_B':'I16','canonical_both':'(1-4p^8) I16',
+          'canonical_feedback_both':'8p^8(1-2p^8) Pcanonical','preparation_probability':'p^8',
+          'preparation_failures':'1-p^8','prepared_conditional_law_recovered':True,
+          'coherent_flag_target':'(1-p^8+p^8*c) I16',
+          'coherent_flag_target_native_emission':False,
+          'coherent_flag_gain_factor':'p^8*c/(1-p^8+p^8*c)',
+          'coherent_guarded_frame_source':'zero first Hermitian source; full heat still retained',
+          'coherent_pure_flag_preparation_source':'zero first source only, not mixed-state or resource admission',
+          'independent_ready_orientation_control':'4 p^8 a p I16, nonzero despite zero Dgamma',
+          'prepared_derivative_control':str(prepared_der.subs({t:s.Rational(1,3),z:s.Rational(1,7)}))},
+        'scope':'Exact native algebra/regular-input source comparison. No physical state preparation, actuation, huge heat, or GR closure.',
+        'labels':checks}
+print(json.dumps(result,indent=2,sort_keys=True))
+```
+<!-- END 7dj REGULAR CYCLIC SOURCE CHECKER -->
+
+<!-- BEGIN 7dj REGULAR CYCLIC SOURCE RECEIPT -->
+```json
+{
+  "checker_sha256": "1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f",
+  "checks": 190,
+  "corners": {
+    "canonical_both": "(1-4p^8) I16",
+    "canonical_feedback_both": "8p^8(1-2p^8) Pcanonical",
+    "coherent_flag_gain_factor": "p^8*c/(1-p^8+p^8*c)",
+    "coherent_flag_target": "(1-p^8+p^8*c) I16",
+    "coherent_flag_target_native_emission": false,
+    "coherent_guarded_frame_source": "zero first Hermitian source; full heat still retained",
+    "coherent_pure_flag_preparation_source": "zero first source only, not mixed-state or resource admission",
+    "independent_ready_orientation_control": "4 p^8 a p I16, nonzero despite zero Dgamma",
+    "preparation_failures": "1-p^8",
+    "preparation_probability": "p^8",
+    "prepared_conditional_law_recovered": true,
+    "prepared_derivative_control": "6048/18995",
+    "working_A": "p^3 I16",
+    "working_B": "I16"
+  },
+  "input_pins": {
+    "AF": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+    "frame": "de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88",
+    "native": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "regular_owner": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
+    "tree": "b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba"
+  },
+  "labels": [
+    "input regular_cyclic_af",
+    "input regular_cyclic_native",
+    "owned regular-algebra and preparation proof",
+    "published 7dg GOLDEN AF FRAME CHECKER",
+    "exact requested builder functions 7dg GOLDEN AF FRAME CHECKER",
+    "published 7di OFFCOPY FRAME CHECKER",
+    "exact requested builder functions 7di OFFCOPY FRAME CHECKER",
+    "actual full native38 inventory",
+    "actual full native38 inventory",
+    "all32 native A columns and restored Spin/oldRIGHT",
+    "all32 native B columns and restored Spin/oldRIGHT",
+    "A work trace fixed",
+    "B work trace fixed",
+    "same canonical working inclusion",
+    "complete changed work frame",
+    "legal doubled path endpoint 0",
+    "legal doubled path endpoint 1",
+    "legal doubled path endpoint 2",
+    "legal doubled path endpoint 3",
+    "legal doubled path endpoint 4",
+    "legal doubled path endpoint 5",
+    "legal doubled path endpoint 6",
+    "legal doubled path endpoint 7",
+    "legal doubled path endpoint 8",
+    "legal doubled path endpoint 9",
+    "legal doubled path endpoint 10",
+    "legal doubled path endpoint 11",
+    "legal doubled path endpoint 12",
+    "legal doubled path endpoint 13",
+    "legal doubled path endpoint 14",
+    "legal doubled path endpoint 15",
+    "legal doubled path endpoint 16",
+    "legal doubled path endpoint 17",
+    "legal doubled path endpoint 18",
+    "legal doubled path endpoint 19",
+    "legal doubled path endpoint 20",
+    "legal doubled path endpoint 21",
+    "legal doubled path endpoint 22",
+    "legal doubled path endpoint 23",
+    "legal doubled path endpoint 24",
+    "legal doubled path endpoint 25",
+    "legal doubled path endpoint 26",
+    "legal doubled path endpoint 27",
+    "legal doubled path endpoint 28",
+    "legal doubled path endpoint 29",
+    "legal doubled path endpoint 30",
+    "legal doubled path endpoint 31",
+    "legal doubled path endpoint 32",
+    "legal doubled path endpoint 33",
+    "legal doubled path endpoint 34",
+    "legal doubled path endpoint 35",
+    "legal doubled path endpoint 36",
+    "legal doubled path endpoint 37",
+    "legal doubled path endpoint 38",
+    "legal doubled path endpoint 39",
+    "legal doubled path endpoint 40",
+    "legal doubled path endpoint 41",
+    "legal doubled path endpoint 42",
+    "legal doubled path endpoint 43",
+    "legal doubled path endpoint 44",
+    "legal doubled path endpoint 45",
+    "legal doubled path endpoint 46",
+    "legal doubled path endpoint 47",
+    "legal doubled path endpoint 48",
+    "legal doubled path endpoint 49",
+    "legal doubled path endpoint 50",
+    "legal doubled path endpoint 51",
+    "legal doubled path endpoint 52",
+    "legal doubled path endpoint 53",
+    "legal doubled path endpoint 54",
+    "legal doubled path endpoint 55",
+    "legal doubled path endpoint 56",
+    "legal doubled path endpoint 57",
+    "legal doubled path endpoint 58",
+    "legal doubled path endpoint 59",
+    "legal doubled path endpoint 60",
+    "legal doubled path endpoint 61",
+    "legal doubled path endpoint 62",
+    "legal doubled path endpoint 63",
+    "legal doubled path endpoint 64",
+    "legal doubled path endpoint 65",
+    "legal doubled path endpoint 66",
+    "legal doubled path endpoint 67",
+    "legal doubled path endpoint 68",
+    "legal doubled path endpoint 69",
+    "legal doubled path endpoint 70",
+    "legal doubled path endpoint 71",
+    "legal doubled path endpoint 72",
+    "legal doubled path endpoint 73",
+    "legal doubled path endpoint 74",
+    "legal doubled path endpoint 75",
+    "legal doubled path endpoint 76",
+    "legal doubled path endpoint 77",
+    "legal doubled path endpoint 78",
+    "legal doubled path endpoint 79",
+    "legal doubled path endpoint 80",
+    "legal doubled path endpoint 81",
+    "legal doubled path endpoint 82",
+    "legal doubled path endpoint 83",
+    "legal doubled path endpoint 84",
+    "legal doubled path endpoint 85",
+    "legal doubled path endpoint 86",
+    "legal doubled path endpoint 87",
+    "legal doubled path endpoint 88",
+    "actual right-module algebra is A8",
+    "all doubled paths bijective block 0",
+    "all doubled paths bijective block 1",
+    "true canonical cyclic normalization on both unknown old columns",
+    "full canonical expectation of work matrix unit (0, 0)",
+    "full canonical expectation of work matrix unit (0, 1)",
+    "full canonical expectation of work matrix unit (0, 2)",
+    "full canonical expectation of work matrix unit (0, 3)",
+    "full canonical expectation of work matrix unit (1, 0)",
+    "full canonical expectation of work matrix unit (1, 1)",
+    "full canonical expectation of work matrix unit (1, 2)",
+    "full canonical expectation of work matrix unit (1, 3)",
+    "full canonical expectation of work matrix unit (2, 0)",
+    "full canonical expectation of work matrix unit (2, 1)",
+    "full canonical expectation of work matrix unit (2, 2)",
+    "full canonical expectation of work matrix unit (2, 3)",
+    "full canonical expectation of work matrix unit (3, 0)",
+    "full canonical expectation of work matrix unit (3, 1)",
+    "full canonical expectation of work matrix unit (3, 2)",
+    "full canonical expectation of work matrix unit (3, 3)",
+    "actual preparation probability p8 for every old input",
+    "all unprepared failures retained",
+    "right-module block guard A",
+    "complete new working endpoint unitary A",
+    "complete endpoint reflection A",
+    "working canonical cold corner A",
+    "FULL regular canonical cold corner A",
+    "conditional ready corner A",
+    "paid ready amplitude before division A",
+    "prepared full work action A0",
+    "prepared full work action A1",
+    "prepared full work action A2",
+    "prepared full work action A3",
+    "two real negative work modes in each native block A",
+    "right-module block guard B",
+    "complete new working endpoint unitary B",
+    "complete endpoint reflection B",
+    "working canonical cold corner B",
+    "FULL regular canonical cold corner B",
+    "conditional ready corner B",
+    "paid ready amplitude before division B",
+    "prepared full work action B0",
+    "prepared full work action B1",
+    "prepared full work action B2",
+    "prepared full work action B3",
+    "two real negative work modes in each native block B",
+    "full regular carrier and left-ready rank",
+    "native distinct words have same unprepared cold operator",
+    "unprepared feedback on true rank16 canonical input",
+    "prepared working effects remain different",
+    "unprepared input is neither prepared word",
+    "work and identity complement not silently normalized away",
+    "full coherent-ready flag target is unitary",
+    "coherent-ready calls stay in diagonal-copy and flag support",
+    "all178 flag-target columns retained A",
+    "actual flag-zero corner including failure branch A",
+    "canonical flagged return with real readiness A",
+    "flagged whole spectrum trace retained A",
+    "complete diagonal/flag compression A",
+    "actual pure-flag preparation cross source zero A",
+    "actual frame source support A",
+    "independent left frame Hermitian source A",
+    "independent right frame Hermitian source A",
+    "actual flag source support A",
+    "independent left flag Hermitian source A",
+    "independent right flag Hermitian source A",
+    "moving ready orientation keeps its probability fixed",
+    "free ready orientation has nonzero return source",
+    "ready orientation cannot be erased by constant probability",
+    "all178 flag-target columns retained B",
+    "actual flag-zero corner including failure branch B",
+    "canonical flagged return with real readiness B",
+    "flagged whole spectrum trace retained B",
+    "complete diagonal/flag compression B",
+    "actual pure-flag preparation cross source zero B",
+    "actual frame source support B",
+    "independent left frame Hermitian source B",
+    "independent right frame Hermitian source B",
+    "actual flag source support B",
+    "independent left flag Hermitian source B",
+    "independent right flag Hermitian source B",
+    "actual flagged lambda is gamma*c/ceff times old lambda",
+    "entire canonical cyclic conjugacy source vanishes",
+    "genuine prepared source has nonzero tangent",
+    "prepared Book derivative cannot be transported with zero gain",
+    "actual common new104-stage count"
+  ],
+  "regular_representation": {
+    "canonical_input_rank": 16,
+    "full_regular_dimension": 33448,
+    "left_ready_projection_rank": 712,
+    "operator_AF_level": 8,
+    "protected_spectator": 8,
+    "regular_negative_modes": [
+      1424,
+      1424
+    ],
+    "regular_positive_modes": 32024,
+    "right_multiplicities": [
+      55,
+      34
+    ],
+    "simple_blocks": [
+      55,
+      34
+    ],
+    "working_AF_dimension": 89
+  },
+  "scope": "Exact native algebra/regular-input source comparison. No physical state preparation, actuation, huge heat, or GR closure.",
+  "status": "PASS",
+  "word": {
+    "all32_native_columns_executed": true,
+    "full104_schedule_replayed": false,
+    "native_calls_each": 38,
+    "new_inventory": {
+      "CX": 24,
+      "G": 26,
+      "SourceI": 54
+    },
+    "new_representation_calls_each": 104,
+    "regular_application": "exact55/34 blocks with all right multiplicities, not a dense33448 matrix"
+  }
+}
+```
+<!-- END 7dj REGULAR CYCLIC SOURCE RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:

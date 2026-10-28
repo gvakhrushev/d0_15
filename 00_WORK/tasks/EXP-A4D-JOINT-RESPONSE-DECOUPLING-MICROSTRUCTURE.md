@@ -17622,3 +17622,60 @@ fixed tests. This is a direct supporting parent substitution, not
 independent physical acceptance. No claim/registry/lifecycle promotion,
 Ready, merge or new task. `GR_closed=false`. Write paths remain only
 this brief and the existing primary; earlier and incoming bytes remain.
+
+
+### 28 October 2026 — actual regular AF input and the coherent readiness source map
+
+SAME owner / Draft #334; native realization / final composition.
+Inputfd35893d; primary§7dj961–970. Consume the original right-module
+algebra/trace-preparation theorem and the new off-copy frame§7di,
+not a new geometric construction. Incoming1595b9bd's three files,
+pure-programme source and unrestricted QUERY classification remain
+unchanged and are distinguished from this native left-algebra orbit.
+
+Named parent application: represent that frame in the original native
+AF algebra and use its ACTUAL regular carrier/input. The doubled-path
+identity gives End_right(H_(n+k))=A_(n+2k), with the true regular right
+multiplicities. On the original canonical GNS inclusion, the exact cold
+operator is `I+p^(2k)(Tr_work W-q_work I)`. A fixed-trace work conjugacy
+therefore has ZERO source there, although its prepared working source
+is nonzero. The unprepared cyclic vector cannot be substituted for a
+logical blank with the old positive gain.
+
+The actual READY projection has all-input probability gamma=p^(2k).
+An explicit coherent target with a genuine new blank flag retains both
+outcomes: M_e; controlled(U); M_e, with M_e the full projector-copy
+matrix. Its cold value is `c_eff=1-gamma+gamma*c` and its true calibration
+is `lambda_eff=(gamma*c/c_eff)*lambda`. The normalized OPERATOR middle
+source is exactly the prior one. For implementations supported on
+diagonal-copy x flag, independent preparation/frame Hermitian sources
+vanish separately by the real conditional trace identity; the full
+thermal source retains its actual schedule/count. Pure flag-changing
+first jets vanish at the blank, without proving physical availability
+or erasing finite/mixed-state comparisons.
+
+A freely rotating READY projection outside that support has a NONZERO
+source despite constant gamma. Thus the graph and physical task are not
+silently enlarged or constrained by an Einstein equation. The concrete
+remaining application is a native implementation of the READY-copy and
+controlled word, a real initial flag and their full paid comparison
+graph. The matrix target is not counted as one native primitive.
+
+190 exact controls pass; normal and optimized outputs are identical.
+Both original38-stage words are executed on all32 columns. For k=4:
+A8=M55+M34, actual full regular dimension33448 with the defining8-factor,
+canonical input rank16, left-ready rank712, spectrum32024+1424.
+Both unprepared words have cold `(1-4p^8) I16`, while the prepared
+corners are p^3 and1. All doubled paths and all16 work matrix-unit
+conditional expectations are checked. The whole flag matrix target is
+checked on178 working columns; its native compiler is NOT executed.
+The inherited unflagged104-call schedule has26G+24CX+54SourceI; its full
+product/large heat is not claimed replayed. Incoming362 checks are
+read as owned evidence and not included in190.
+
+No physical-admission claim, registry/lifecycle promotion, Ready, merge
+or new task. `GR_closed=false`. Only this brief and the existing primary
+are changed; every earlier and incoming byte is retained.
+
+Checker SHA256: `1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f`.
+Receipt SHA256: `01e14a9d561da0879bd9c75b66054484f9efd1ef58e6f5ec4e9899707046f74a`.
