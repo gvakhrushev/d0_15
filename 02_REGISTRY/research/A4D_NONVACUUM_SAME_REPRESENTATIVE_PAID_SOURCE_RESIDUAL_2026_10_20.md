@@ -92363,6 +92363,627 @@ print(json.dumps(result,indent=2,sort_keys=True))
 ```
 <!-- END 7dm AF HISTORY TRANSPORT RECEIPT -->
 
+## 7dn. Resolve the retained-marker source when a phase call is split into independent addresses
+
+28 October2026. SAME #334 / `constitutive/native-programme-v1`; native
+realization and composition. Input `d8d4e15488e483992fa63d6acc5d8053c2752ef5`.
+Consume the actual §7dl loop, the
+[canonical-tower owner](A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md)
+and §7dm's real two-SourceI prefix and nontrivial-past source map.
+
+Publication also consumes and preserves incoming `56672c24a`, the
+[explicit binary loop/compiler](A4D_BINARY_AF_LOOP_FINITE_SOURCE_2026_10_28.md).
+Its real finite endpoint/source transmission is a useful positive result.
+It explicitly leaves the independent raw-stage source map open. The
+partial AF serial expansion studied HERE is a different realization,
+not that compiler's65536-dimensional extension or its107-million-stage
+word. No unit-norm lift of this marker direction into that binary word
+is inferred; its actual comparison map and norm must be proved.
+
+The named missing application is the price/source of SERIAL EXPANSION of
+the specified copied phase actuator into independently compared native
+left-row ports. Section7dm explicitly excludes nonuniform old r,c controls;
+its contraction proof is correct on its declared graph. Changing that graph
+is a changed mathematical input, not a repeat of its label-transfer proof.
+
+There is an exact constructive answer for a retained ancestral marker.
+The extra phase covector is a known pullback of the ORIGINAL finite-prefix
+covector. Its comparison map grows with the number of new blocks. For the
+actual §7dm prefix this gives a nonzero normalized source at EVERY history
+length, rather than a C_xi/Lambda debt. At the canonical identity prefix
+the same source is exactly zero. Thus this does not invalidate the owned
+canonical realization or prove a physical D0 no-go. It tells its actual
+actuator implementation which additional source must be retained.
+
+### 997. An exact finite serial expansion, with no newly measured marker
+
+At A_n -> A_(n+8), retain the k=4 word of §7dl: c=p, gamma=p^8,
+C=1-4p^9, and the unchanged original positive calibration
+
+    lambda_loop = (8p^10/C) lambda_old.                 (997)
+
+The factor lambda_old is the same supplied field calibration as in
+§7dl982. No value is assigned to it from the following source test.
+The finite example checks lambda_old times the normalized covector.
+
+In the first chronological R0, take ONE of the two SourceI pulses on
+each old type. A uniform pulse is a direct sum over the old left row r.
+It is exactly the product of d_0(n)+d_1(n) original addressed SourceI
+pulses, one on each disjoint zero/spare pair and its unchanged Spin4.
+Their product has the identical endpoint on EVERY column. Each acts
+identically on all regular right columns; those are not extra copies
+of the input nor separately discarded resources. The two old-type
+pulses have now been replaced by a genuine finite serial word.
+
+Let Q be a diagonal projection in an earlier retained A_n0, embedded
+in every later algebra. Choose the angle-comparison generator L_i
+only on the expanded zero-port addresses belonging to Q; put zero
+on the other addresses. This is one vector in the independent raw
+phase comparison space. Each active generator has operator norm1,
+so its maximum raw-stage norm is1. No intermediate measurement of Q
+is performed: the list consists of the original fixed AF addresses.
+Immutable oldRIGHT is never addressed. Q is an old LEFT record label.
+
+The exact base pulses remain SourceI. The continuous comparison is
+the same ambient gate-tangent interface used by the source owners,
+now with separate coefficients for the split addresses. It does not
+prove that a tunable physical SourceI angle is available. If physical
+control ties all these addresses together, this new direction need
+not be in its X_N. If controls are independent, the old uniform-only
+estimate cannot be used without this source.
+
+### 998. Keep the ancestral projection, rather than replacing it by a new centre label
+
+Let U_xi be the actual fixed prefix, i its original input and
+K=i* U_xi i. All matched later loops L_j commute with the old algebra
+and restore the protected factor at their BASE. Thus they commute
+with the retained Q and Q tensor L_i. Put
+
+    K'_Q = i* (Q tensor L_i) U_xi i,
+    s_m = product_(j<=m) C_j.
+
+The already executed local SourceI insertion of §7dm has coefficient
+
+    b_j=gamma_j(2c_j^2-1),
+    E_previous(delta_j L_j)=b_j (Q tensor L_i).         (998)
+
+Indeed the zero-port generator is e_j tensor L_i; the first R0
+occurrence contributes U R U e_j R tensor L_i. Conditional cyclicity
+gives gamma_j(2c_j^2-1) on each old type. Multiplying its independent
+addresses by the inherited Q gives (998) by bimodularity. Q remains
+inside the earlier algebra throughout; no mixing or averaging of
+its ancestry is substituted for this operator.
+
+Repeated conditional expectation through every earlier cut therefore
+gives the complete matrix identity
+
+    delta_j K_m=(s_m/C_j) b_j K'_Q.                    (999)
+
+There is no rho_(j-1) factor. Section7dm's rho controlled information
+carried ONLY by the current two centre labels under uniform old-row
+calls. Here the old projection is still available to each split
+actuator. It cannot be replaced by that two-dimensional quotient.
+Later matched loops multiply the derivative by their genuine C_t;
+no old cut is treated as invariant without taking its actual i.
+
+### 999. The extra covector is an exact prefix pullback with an extensive map
+
+Use precisely the original absolute return price, including oldRIGHT:
+
+    S=K* K,
+    D_m=(1-zeta)I+zeta s_m^2 S,
+    J_m=-Tr log D_m,
+    w_m=zeta s_m^2 Tr(S D_m^-1),
+    Gamma_m=w_m sum_j lambda_loop,j.
+
+For S!=0 define the actual normalized prefix derivative
+
+    g_Q(s_m^2)=
+      -2 Re Tr(D_m^-1 K* K'_Q)/Tr(S D_m^-1).
+
+Then (999) implies, without commuting the matrix past,
+
+    D_j J_m/w_m=(b_j/C_j) g_Q(s_m^2).                 (1000)
+
+Equivalently the new independent directions pull back to the old
+prefix phase with coefficient sum_j theta_j b_j/C_j. The operator
+norm of THIS comparison map on the raw maximum norm is
+sum_j |b_j|/C_j; it is not a bounded variation of one fixed prefix.
+Consequently the dual norm on these independent directions is exactly
+
+    |g_Q(s_m^2)| [sum_j |b_j|/C_j]
+                         /[sum_j lambda_loop,j].     (1001)
+
+This is a source map usable by the parent. An independently proved
+zero of the corresponding original prefix covector makes its image
+zero. Arbitrary finite prefix regularity alone does not do so. For
+s_m ->0 the expression g_Q tends to
+-2 Re Tr(K* K'_Q)/Tr(K* K). Where (1001)'s coefficient stays positive,
+that retained-prefix phase equation is necessary for recovery on
+this enlarged comparison graph. It is a consequence of the full
+source test, not an Einstein constraint added to define admission.
+
+### 1000. The existing literal native prefix has a strict nonzero source
+
+Use exactly §7dm996, with the actual two SourceI calls on A2=M3+M2.
+U_xi is I on M3 and L_i on M2, and Q is the ORIGINAL M2 projection.
+The canonical input from A0 gives, on the two blocks and all Spin4,
+
+    K=diag(A_i I4+B_i L_i),
+    (A_0,B_0)=(2p^2,p^3), (A_1,B_1)=(p,p^2),
+    K'_Q=diag(-B_i I4),
+    r_i=A_i^2+B_i^2, S=diag(r_i I4)>I/2.
+
+The oldRIGHT factor2 doubles the real rank to16 and doubles both J
+derivatives and w. It is retained in the reported absolute w and in
+the heat comparison; it cancels only in their legitimate ratio.
+
+Set D_i=1-zeta+zeta C^(2m) r_i and
+
+    R_m=[sum_i A_i B_i/D_i]/[sum_i r_i/D_i]>0.
+
+With b=-p^11, varying the indicated addresses in ALL m new blocks
+gives the exact actual normalized source
+
+    lambda_old D_theta J_m/Gamma_m = -(p/4) R_m.       (1002)
+
+R_m is a positive weighted mean of A_i B_i/r_i. Their strict smaller
+value is 2p^5/(13-20p). Hence, for every m>=1,
+
+    lambda_old ||DJ_m/Gamma_m||_split,*
+       >= p/4 * 2p^5/(13-20p)
+        =0.0435838628448348380548560803886... >0.        (1003)
+
+At m=1 the actual value in (1002) is
+-0.05512287630610513999411794065; at m=8 it is
+-0.05512287598602411988721014819. The raw maximum comparison norm
+is unchanged. No inverse small gain or fitted normalization creates
+this effect. The gain is exactly (997), and lambda_old remains the
+old positive coefficient required to apply it.
+
+This strict counterexample uses one fixed repeated native template
+and its fixed positive calibration. It does not assert a uniform
+no-go for every h-dependent compiler or calibration. Such a changing
+family must use the actual weighted formula(1001), including its
+real lambda_j and the norm of its physical comparison lift.
+
+For a DIFFERENT actual identity prefix, K=I and
+K'_Q=i*(Q tensor L_i)i is skew. Its return source is exactly zero.
+Thus an identity/canonical start is not excluded by this example;
+the nontrivial retained-prefix requirement is load-bearing.
+
+### 1001. Count the real expanded stages and retain the full heat
+
+At the j-th loop the earlier level is n_j=2+8(j-1). The split pair
+of uniform pulses becomes F_(n_j+3) serial pulses. All other86
+specified calls of the owned loop are retained. Including the two
+prefix calls, the changed declared profile has
+
+    N_m=2+86m+sum_(j=1)^m F_(8j-3).
+
+The number of selected phase addresses in that block is
+2F_(8(j-1)+1), the actual descendant rank of the old M2 marker.
+For j=2 the current A10 has sizes(144,89), while Q has ranks(42,26):
+it is strictly noncentral in BOTH blocks. Replacing it by a current
+centre projection would be a different operation. At m=1, N_1=93;
+at m=2, N_2=412. These counts price this explicitly stated partial
+serial expansion. Any other actuator routing/growth must retain its
+actual stages and source, not inherit these numbers by name.
+
+Do not use reflection heat-neutrality: L is not a reflection. The
+original all-unitary winding bound on the same fixed homogeneous
+INTERNAL scene gives |D_theta H|<=N_m A1_(N_m), retaining ALL modes
+and actual regular multiplicities. At N_1=93, original zeta=2^-20
+and beta=2p^2, its normalized bound, multiplied by lambda_old, is
+less than2.0e-270, by an exact rational bound and an exact algebraic
+lower bound on the actual gain denominator. It cannot cancel (1003).
+For increasing m the
+original factorial estimate also beats C^(-2m), with the true N_m.
+Additional selected physical price terms or changing scene/clock
+variables are not assigned zero or included in this calculation.
+
+### 1002. Executed evidence and exact scope of the route change
+
+The checker reconstructs the existing small seven-call middle and
+two-call prefix as pinned inputs, then executes the CHANGED five-pulse
+expansion on every932 A10-left/Spin column. The full native regular
+dimension with Spin and immutable oldRIGHT is229256. It is handled
+by its exact left blocks and actual right multiplicities, not by a
+newly normalized defining trace. The original eight input columns
+and their oldRIGHT factor are kept in the GNS corner calculation.
+
+The full left-representation derivative and cosine part of the real
+unitary pulse curve agree with (999). An independent five-point
+finite-price contrast checks the first derivative. The exact matrix
+past source is checked at m=1,2,4,8, together with the actual inherited
+marker ranks, serial counts, strict bound and canonical-zero control.
+The unexpanded88-stage product is consumed, not rerun. No enormous
+multi-loop operator, full heat spectrum or physical hardware is
+executed. Evaluating large finite counts is not emitting those words.
+
+Parent substitution: the source of this previously unprovided
+actuator-expansion subspace is now the EXACT map(999)–(1001).
+An arbitrary regular old prefix cannot use §7dm995 on this larger
+graph: its retained-marker source must be stationary, compensated
+by a genuinely selected price, or excluded by a proved shared-control
+law. None of those three alternatives is selected here. The owned
+uniform-copy theorem and canonical-start realization remain valid.
+The next implementation must state whether its addressed calls are
+independent or physically tied, and apply this covector accordingly.
+
+This changes the native application, not the geometric GR solution.
+The physical actuation/comparison map and complete Cost-Info law are
+still open. No full X_N, no added physical postulate, no claim of
+universal impossibility and no positive GR acceptance is supplied.
+
+Assembly: supporting direct application within the same owner and
+two write paths. No new task/node, Ready, claim promotion or merge.
+`GR_closed=false`.
+
+### 1003. Reproducible changed calculation
+
+66 changed checks pass; 53 assertions in the pinned small input
+fixtures were replayed and are not counted as new source results. Ordinary
+and optimized runs give byte-identical JSON. The finite-price contrast
+relative error is 3.3333333781312158959e-18.
+
+Checker SHA256: `791d57eb3ff5bd69dda81b5ae8982223e3c63378c681cf961daa2de38659d570`.
+Observed receipt SHA256: `a09c2d00bd1159a8394454f6c90b4a5152852d3531870c64b1d06d70e1d9e8ad`.
+These are the exact final executed bytes.
+
+<!-- BEGIN 7dn RETAINED MARKER SOURCE CHECKER -->
+```python
+#!/usr/bin/env python3
+"""A retained native marker in independently expanded phase calls.
+
+Consumes the pinned loop/prefix fixtures; executes the changed address split,
+full left-representation corner and real accumulated Book-source identities.
+"""
+import ast
+import hashlib
+import json
+from pathlib import Path
+import sympy as s
+
+ROOT = Path.cwd()
+PRIMARY = ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+text = PRIMARY.read_text()
+marker = '7dm AF HISTORY TRANSPORT CHECKER'
+owned = text.split('<!-- BEGIN '+marker+' -->\n```python\n')[1].split('```\n<!-- END '+marker+' -->')[0]
+pin = 'a556695f88435f5f72b4a05067a4026691932ce62442da1bb53380702ec32379'
+if hashlib.sha256(owned.encode()).hexdigest() != pin:
+    raise RuntimeError('changed owned checker')
+# Only the published setup, seven-call middle, label map and two-call prefix.
+# The unchanged 88-call certificate and previous 133-check suite are not run.
+prefix = owned[:owned.index('# A real raw phase row')]
+exec(compile(prefix, '<pinned owned prefix fixture>', 'exec'), globals())
+reused_fixture_checks = len(checks)
+checks = []
+require(hashlib.sha256(owned.encode()).hexdigest() == pin, 'owned fixture bytes')
+co, eta, Q, PP = transition(4, PF)
+b = red(PF**8*(2*PF**2-1))
+feq(b, -PF**11, 'actual inherited phase coefficient')
+gain_multiplier = red(8*PF**10/co)
+
+# Unfold the n=0 template's old rows into the actual old A2=M3+M2.
+# Matrix units on each old right column are preserved automatically by the
+# full left representation; actual new regular right multiplicities remain.
+old_sizes = (3, 2)
+expanded = [(z, r) for z in range(D) for r in range(old_sizes[row_type[z]])]
+ix = {key: i for i, key in enumerate(expanded)}
+left_dim = len(expanded)
+require(left_dim == 233, 'actual A10 defining dimension')
+block_sizes = [sum(final_type[z] == j for z, r in expanded) for j in (0, 1)]
+require(block_sizes == [144, 89], 'actual A10 simple blocks')
+def expand(M):
+    out = {}
+    entries = s.SparseMatrix(M).todok()
+    require(all(row_type[u] == row_type[v] for u, v in entries), 'all base entries preserve old matrix row labels')
+    for (u, v), x in entries.items():
+        for r in range(old_sizes[row_type[u]]):
+            out[ix[u, r], ix[v, r]] = x
+    return s.SparseMatrix(left_dim, left_dim, out)
+
+EL = expand(L)
+EX = expand(e)
+EQ = s.diag(*[int(row_type[z] == 1) for z, r in expanded])
+equal(EQ*EL, EL*EQ, 'retained old marker commutes with actual new base loop')
+equal(EX*EQ, EQ*EX, 'retained old marker commutes with ready port')
+
+# Expand one SourceI pulse of the first R0, for BOTH old types, into five
+# individually addressed left-row pulses. All other recipe calls are retained.
+zero_rows = []
+for old_type in (0, 1):
+    zero = [z for z in range(D) if E[z, old_type] == 1]
+    require(len(zero) == 1, 'literal coordinate-zero address '+str(old_type))
+    for r in range(old_sizes[old_type]):
+        zero_rows.append((old_type, r, ix[zero[0], r]))
+I4 = s.eye(4)
+IP = s.SparseMatrix(s.eye(4*left_dim))
+serial = IP
+derivatives = []
+selected = []
+for old_type, r, slot in zero_rows:
+    S1 = s.MutableSparseMatrix(IP)
+    H = s.MutableSparseMatrix(4*left_dim, 4*left_dim, {})
+    for u in range(4):
+        for v in range(4):
+            S1[4*slot+u, 4*slot+v] = Li[u, v]
+            if old_type == 1:
+                H[4*slot+u, 4*slot+v] = Li[u, v]
+    S1 = s.SparseMatrix(S1)
+    H = s.SparseMatrix(H)
+    serial = S1*serial
+    if old_type == 1:
+        selected.append((old_type, r, slot))
+        derivatives.append(H)
+require(len(zero_rows) == 5 and len(selected) == 2, 'five real pulses; two selected old-marker pulses')
+Ezero = s.diag(*[int(any(slot == x[2] for x in zero_rows)) for slot in range(left_dim)])
+expected_serial = s.kronecker_product(s.eye(left_dim)-Ezero, I4)+s.kronecker_product(Ezero, Li)
+equal(serial, expected_serial, 'all932 columns of serial SourceI expansion')
+equal(serial.T*serial, IP, 'expanded pulse product unitary on all columns')
+Hsum = sum(derivatives, s.SparseMatrix(4*left_dim, 4*left_dim, {}))
+equal(Hsum, s.kronecker_product(Ezero*EQ, Li), 'independent pulses realize ancestral-marker tangent')
+equal(Hsum.T*Hsum, s.kronecker_product(Ezero*EQ, I4), 'actual raw generator norm is one')
+
+# The same marked row of the first chronological R0, through the complete
+# encoded endpoint. This is computed in the full A10 LEFT representation.
+delta_work = mat(U*R*U*e*R)
+delta_left = s.kronecker_product(expand(delta_work)*EQ, Li)
+UP = s.kronecker_product(s.eye(left_dim)-EQ, I4)+s.kronecker_product(EQ, Li)
+base_endpoint = s.kronecker_product(EL, I4)*UP
+delta_endpoint = delta_left*UP
+
+# Actual initial A0 canonical cut, composed through A2 and A10. Its GNS
+# compression sums ALL defining rows with true AF trace weights, not a new
+# spin state or a uniformly normalized defining trace.
+ancestor = {}
+for j, segs in enumerate(AF.segments(1, 1, 2)):
+    for initial, path, offset in segs:
+        ancestor[j, offset] = initial
+def original_corner(A):
+    corners = [s.zeros(4), s.zeros(4)]
+    for slot, (z, r) in enumerate(expanded):
+        initial = ancestor[row_type[z], r]
+        weight = p**(10+final_type[z]-initial)
+        corners[initial] += weight*A[4*slot:4*slot+4, 4*slot:4*slot+4]
+    return fm(s.diag(*corners))
+feq(original_corner(IP), s.eye(8), 'canonical input normalization on all8 unknown columns')
+feq(original_corner(base_endpoint), co*K, 'true expanded endpoint retains scalar-times-native-prefix')
+Jspin = s.diag(Li, Li)
+Kprime = fm(Jspin*resolved[1])
+feq(original_corner(delta_endpoint), b*Kprime, 'literal marked phase derivative through actual old cut')
+require(Kprime != s.zeros(8), 'marked row is not silently removed')
+cosine_endpoint = s.kronecker_product(expand(delta_work)*EQ, I4)*UP
+feq(original_corner(cosine_endpoint), b*resolved[1], 'exact cosine part of the real unitary phase curve')
+
+# The original marker stays in the embedded A2, not the current centre. Check
+# its actual counts in every current simple block and all canonical trace rows.
+marker_counts = []
+for j in range(1, 6):
+    depth = 8*(j-1)
+    dims = AF.counts(2+depth)
+    marked = [2*int((M**depth)[v, 1]) for v in (0, 1)]
+    require(all(0 <= marked[v] <= dims[v] for v in (0, 1)), 'real retained marker row ranks '+str(j))
+    if j > 1:
+        require(all(0 < marked[v] < dims[v] for v in (0, 1)), 'marker is noncentral in BOTH current blocks '+str(j))
+    require(sum(marked) == 2*int(s.fibonacci(depth+1)), 'exact number of selected split pulses '+str(j))
+    marker_counts.append({'loop': j, 'current_A': list(map(int, dims)), 'selected_left_rows': marked})
+
+zeta = s.Rational(1, 2**20)
+Ai = [P2[i, 0] for i in (0, 1)]
+Bi = [P2[i, 1] for i in (0, 1)]
+ri = [red(Ai[i]**2+Bi[i]**2) for i in (0, 1)]
+ratios = [red(Ai[i]*Bi[i]/ri[i]) for i in (0, 1)]
+positive(ratios[1]-ratios[0], 'exact smaller native prefix sensitivity')
+lower = red(PF*ratios[0]/4)
+positive(lower, 'positive normalized marker bound independent of history length')
+rows = []
+for m in (1, 2, 4, 8):
+    scale = red(co**m)
+    DM = fm((1-zeta)*s.eye(8)+zeta*scale**2*S)
+    DI = fm(DM.inv())
+    w = red(zeta*scale**2*s.trace(S*DI))
+    delta = fm((scale/co)*b*Kprime)
+    per_row = red(-2*zeta*s.trace(DI*(scale*K.T)*delta))
+    both = red(-2*zeta*s.trace(DI*(scale*K.T)*(m*delta)))
+    feq(both, m*per_row, 'all independently available new marker rows add '+str(m))
+    ratio = red(sum(Ai[i]*Bi[i]/(1-zeta+zeta*scale**2*ri[i]) for i in (0, 1))/sum(ri[i]/(1-zeta+zeta*scale**2*ri[i]) for i in (0, 1)))
+    feq(per_row/w, (2*b/co)*ratio, 'actual retained prefix price source '+str(m))
+    w_full, both_full = 2*w, 2*both
+    normalized = red(both_full/(w_full*m*gain_multiplier))
+    feq(normalized, -PF*ratio/4, 'actual gain multiplier, without assigning lambda_old '+str(m))
+    positive(-normalized-lower, 'uniform positive source lower bound '+str(m))
+    stages = 2+86*m+sum(int(s.fibonacci(8*j-3)) for j in range(1, m+1))
+    selected_calls = sum(2*int(s.fibonacci(8*(j-1)+1)) for j in range(1, m+1))
+    require(selected_calls <= stages, 'actual paid source rows do not exceed all stages '+str(m))
+    rows.append({'loops':m,'expanded_profile_stages':stages,'varied_phase_stages':selected_calls,
+                 'lambda_old_times_DJ_over_Gamma':str(s.N(normalized,28)),
+                 'actual_w_with_oldRIGHT':str(s.N(w_full,28))})
+
+# This is NOT a universal obstruction. With the actual identity prefix the
+# same marker insertion is skew and the full return derivative is exactly0.
+Kprime_identity = fm(Jspin*s.diag(*[Bi[i]*s.eye(4) for i in (0, 1)]))
+feq(Kprime_identity+Kprime_identity.T, s.zeros(8), 'same ancestral direction has zero source at canonical identity prefix')
+feq(s.trace(Kprime_identity), 0, 'ordinary initial Book trace keeps canonical neutrality')
+
+# Bound the ORIGINAL all-unitary heat on the changed finite schedule. No heat
+# matrix, truncated spectrum, new primitive angle or physical X_N is supplied.
+Nmin = rows[0]['expanded_profile_stages']
+require(Nmin == 93, 'changed first execution has93 specified serial-profile stages')
+x = s.Rational(2,55)
+q = x**Nmin/s.factorial(Nmin)
+A1 = s.Rational(176,359)/(1-x*x)*q/(1-q)**2
+heat = Nmin*A1
+scale = red(co)
+D1 = fm((1-zeta)*s.eye(8)+zeta*scale**2*S)
+w1 = red(zeta*scale**2*s.trace(S*fm(D1.inv())))
+positive(2*w1*gain_multiplier-s.Rational(1,2000000), 'exact actual normalized-gain denominator above rational floor')
+require(heat*2000000 < s.Rational(2,10**270), 'strict rational full-heat upper bound')
+positive(lower/2-s.Rational(2,10**270), 'strict exact gap between heat and marker source')
+heat_normalized = s.N(heat/(2*w1*gain_multiplier),40)
+require(heat_normalized < s.N(lower/2,40), 'actual full-heat bound cannot cancel native marker row at93 stages')
+
+# Independent finite-price contrast along the actual exp(t L_i) pulse curve.
+# The full left representation above proves both its sine/cosine corners.
+import mpmath as mp
+mp.mp.dps = 90
+def mp_exact(v):
+    return mp.mpf(str(s.N(red(v),85)))
+cc, bb, zz = map(mp_exact, [co,b,zeta])
+aa, ab = list(map(mp_exact,Ai)), list(map(mp_exact,Bi))
+def finite_price(t):
+    terms=[]
+    for i in (0,1):
+        re=cc*aa[i]-bb*ab[i]*mp.sin(t)
+        im=cc*ab[i]+bb*ab[i]*(mp.cos(t)-1)
+        terms.append(mp.log1p(zz*(re*re+im*im-1)))
+    return -8*sum(terms)  # Spin4 times immutable oldRIGHT2.
+h=mp.mpf('0.0001')
+fd=(finite_price(-2*h)-8*finite_price(-h)+8*finite_price(h)-finite_price(2*h))/(12*h)
+exact_first=red(-4*zeta*s.trace(fm(D1.inv())*(co*K.T)*(b*Kprime)))
+relative_error=abs(fd-mp_exact(exact_first))/abs(mp_exact(exact_first))
+require(relative_error < mp.mpf('1e-12'), 'independent finite-price contrast agrees with complete source')
+
+result = {
+ 'status':'PASS_RETAINED_MARKER_SOURCE',
+ 'new_checks':len(checks), 'reused_fixture_checks':reused_fixture_checks,
+ 'input_checker_sha256':pin,
+ 'source_identity':'delta_j K_m=(s_m/C_j) b_j i* Q L_i U_xi i; b_j=gamma_j(2c_j^2-1)',
+ 'expanded_native_fixture':{'old_A2':[3,2], 'new_A10':block_sizes,
+     'all_left_Spin_columns':4*left_dim,'new_full_regular_dimension_with_Spin_oldRIGHT':2*4*sum(n*n for n in block_sizes),
+     'serial_replacement_calls':5,'selected_calls_first_block':2,
+     'oldRIGHT_identity_factor':2,'original_unknown_rank_with_oldRIGHT':16},
+ 'true_marker_ranks':marker_counts,
+ 'native_source':rows,
+ 'lower_bound_times_lambda_old':str(s.N(lower,30)),
+ 'first_full_heat_bound_times_lambda_old':str(heat_normalized),
+ 'finite_price_contrast_relative_error':mp.nstr(relative_error,20),
+ 'scope':'Exact addressed-profile expansion and inherited-marker source; original regular right multiplicities retained analytically. Not full physical AF admission, hardware execution, new field calibration, giant93-call forward product, all-source GR closure, or claim promotion.'
+}
+print(json.dumps(result,indent=2))
+```
+<!-- END 7dn RETAINED MARKER SOURCE CHECKER -->
+
+<!-- BEGIN 7dn RETAINED MARKER SOURCE RECEIPT -->
+```json
+{
+  "status": "PASS_RETAINED_MARKER_SOURCE",
+  "new_checks": 66,
+  "reused_fixture_checks": 53,
+  "input_checker_sha256": "a556695f88435f5f72b4a05067a4026691932ce62442da1bb53380702ec32379",
+  "source_identity": "delta_j K_m=(s_m/C_j) b_j i* Q L_i U_xi i; b_j=gamma_j(2c_j^2-1)",
+  "expanded_native_fixture": {
+    "old_A2": [
+      3,
+      2
+    ],
+    "new_A10": [
+      144,
+      89
+    ],
+    "all_left_Spin_columns": 932,
+    "new_full_regular_dimension_with_Spin_oldRIGHT": 229256,
+    "serial_replacement_calls": 5,
+    "selected_calls_first_block": 2,
+    "oldRIGHT_identity_factor": 2,
+    "original_unknown_rank_with_oldRIGHT": 16
+  },
+  "true_marker_ranks": [
+    {
+      "loop": 1,
+      "current_A": [
+        3,
+        2
+      ],
+      "selected_left_rows": [
+        0,
+        2
+      ]
+    },
+    {
+      "loop": 2,
+      "current_A": [
+        144,
+        89
+      ],
+      "selected_left_rows": [
+        42,
+        26
+      ]
+    },
+    {
+      "loop": 3,
+      "current_A": [
+        6765,
+        4181
+      ],
+      "selected_left_rows": [
+        1974,
+        1220
+      ]
+    },
+    {
+      "loop": 4,
+      "current_A": [
+        317811,
+        196418
+      ],
+      "selected_left_rows": [
+        92736,
+        57314
+      ]
+    },
+    {
+      "loop": 5,
+      "current_A": [
+        14930352,
+        9227465
+      ],
+      "selected_left_rows": [
+        4356618,
+        2692538
+      ]
+    }
+  ],
+  "native_source": [
+    {
+      "loops": 1,
+      "expanded_profile_stages": 93,
+      "varied_phase_stages": 2,
+      "lambda_old_times_DJ_over_Gamma": "-0.05512287630610513999411794065",
+      "actual_w_with_oldRIGHT": "0.000007992375037665505317532134249"
+    },
+    {
+      "loops": 2,
+      "expanded_profile_stages": 412,
+      "varied_phase_stages": 70,
+      "lambda_old_times_DJ_over_Gamma": "-0.05512287624431495926296043826",
+      "actual_w_with_oldRIGHT": "0.000007173350257453284828581272907"
+    },
+    {
+      "loops": 4,
+      "expanded_profile_stages": 525759,
+      "varied_phase_stages": 153314,
+      "lambda_old_times_DJ_over_Gamma": "-0.05512287613908170409719281865",
+      "actual_w_with_oldRIGHT": "0.000005778490380353241606405404601"
+    },
+    {
+      "loops": 8,
+      "expanded_profile_stages": 2559206660224,
+      "varied_phase_stages": 746766439174,
+      "lambda_old_times_DJ_over_Gamma": "-0.05512287598602411988721014819",
+      "actual_w_with_oldRIGHT": "0.000003749722158775481085674147253"
+    }
+  ],
+  "lower_bound_times_lambda_old": "0.0435838628448348380548560803886",
+  "first_full_heat_bound_times_lambda_old": "9.975185433158221275704477096498258813092e-271",
+  "finite_price_contrast_relative_error": "3.3333333781312158959e-18",
+  "scope": "Exact addressed-profile expansion and inherited-marker source; original regular right multiplicities retained analytically. Not full physical AF admission, hardware execution, new field calibration, giant93-call forward product, all-source GR closure, or claim promotion."
+}
+```
+<!-- END 7dn RETAINED MARKER SOURCE RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:

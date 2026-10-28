@@ -17858,3 +17858,66 @@ Checker SHA256 a556695f88435f5f72b4a05067a4026691932ce62442da1bb53380702ec32379;
 receipt SHA2563733ea78fa637aafda3e24727881221bcc00d7d297ea0d9f33ea96b2b45cf397.
 Supporting direct application under the existing owner. No new task/node,
 acceptance, Ready, claim promotion or merge. `GR_closed=false`.
+
+### 28 October2026 checkpoint — retained-marker source of independently expanded phase addresses
+
+SAME PR334, `constitutive/native-programme-v1`; native realization and
+composition. Calculation inputd8d4e15488e483992fa63d6acc5d8053c2752ef5.
+Consume §7dl's actual loop, the canonical-tower source theorem, §7dm's
+real two-SourceI prefix and its exact full past covector. Publication
+also preserves56672c24a and all four incoming binary-loop/compiler files;
+their finite endpoint/source result is consumed at its explicit extended
+carrier and does not supply its independent raw-stage comparison map.
+
+Named parent application: replace one copied SourceI phase pulse on EACH
+old type by its exact finite product over independent left-row addresses.
+This changes §7dm's uniform-copy comparison graph, explicitly excluded
+there. Primary §7dn997–1003 provides the source of an actual inherited
+marker Q on those addresses. Q stays an old LEFT projection; no measurement,
+fresh input, new base gate, discarded record or oldRIGHT control is added.
+
+The exact substitution is delta_j K_m=(s_m/C_j)b_j K'_Q, where
+b_j=gamma_j(2c_j²-1) and K'_Q=i*(Q tensor L_i)U_xi i. Thus the new rows
+pull back to the original finite-prefix phase covector, with comparison
+map norm sum|b_j|/C_j. It is extensive, so those rows cannot be put into
+a bounded fixed-prefix C_xi/Lambda term. The exact dual restriction is
+|g_Q(s_m²)| sum(|b_j|/C_j)/sum(lambda_loop,j), in the declared independent
+raw-stage maximum norm and the genuine Book trace/gain.
+
+For the SAME actual two-call A2 prefix of §7dm and Q its original M2
+projection, K=diag(A_i I+B_i L_i), K'_Q=diag(-B_i I), S>I/2.
+The c=p loop has lambda_loop=8p^10 lambda_old/C. At every history
+length, lambda_old times the normalized dual source is at least
+0.0435838628448348380548560803886. Actual signed values are about
+-0.0551228763, with the original positive lambda_old kept symbolic.
+For an actual identity prefix the SAME ancestral source is exactly zero.
+This is not a failure of the already proved canonical-start realization.
+
+The specified partial serial expansion has N_m=2+86m+sum F_(8j-3),
+so its first execution has93 stages. At that fixed INTERNAL clock,
+original zeta/beta and actual oldRIGHT-multiplied gain, the strict
+rational full-heat bound times lambda_old is below2e-270 and cannot
+cancel the source. Other physical costs and comparisons remain open.
+
+Smallest decisive check: execute the changed five-pulse product on
+all932 A10-left/Spin columns, retain its229256-dimensional regular
+interpretation and every original input, and compute its full GNS
+source after the literal prefix. Exact operator/cosine identities,
+independent finite-price contrast, history sources at1/2/4/8 loops,
+actual inherited-marker ranks, counts and zero-prefix control pass.
+Normal/optimized receipts match. The pinned small input fixtures are
+replayed for the changed map; neither the old88-call product nor the
+incoming107-million-stage binary word is rerun or claimed as new work.
+
+Route consequence: use this exact covector when the real implementation
+permits independent old-address controls. Their removal requires a
+proved shared-control law, actual prefix stationarity or an actual
+compensating selected source. None is assumed. The binary compiler's
+raw lift and norm are a separate remaining application; no obstruction
+to it is inferred just from endpoint equality. Uniform §7dm and pure
+canonical results are preserved. No new X_N, physical postulate, task,
+result node, claim promotion, Ready, independent acceptance or merge.
+`GR_closed=false`.
+
+Observed changed checks:66; pinned-input checks:53.
+Checker SHA256 `791d57eb3ff5bd69dda81b5ae8982223e3c63378c681cf961daa2de38659d570`; receipt SHA256 `a09c2d00bd1159a8394454f6c90b4a5152852d3531870c64b1d06d70e1d9e8ad`.
