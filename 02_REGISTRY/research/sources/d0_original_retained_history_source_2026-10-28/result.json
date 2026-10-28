@@ -1,0 +1,119 @@
+{
+  "GR_closed": false,
+  "Lean_or_repository_CI_run": false,
+  "checker_sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a",
+  "checks": 163,
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "full_tape": {
+    "DATA_dimension": 16,
+    "actual_full_source": 1.5306614291784259e-07,
+    "all_input_columns": 16,
+    "complete_output_isometry_rows": 262144,
+    "defect_error": 4.427014310692812e-15,
+    "difference_from_incorrect_sum": -3.5634732010914306e-09,
+    "fine_histories": 16384,
+    "finite_difference_error": 3.030657415496285e-18,
+    "incorrect_sum_of_one_tick_sources": 1.5662961611893402e-07,
+    "large_total_unitary_materialized": false,
+    "noncommutation_norm": 2.9308601798714882e-08,
+    "oldRIGHT_multiplicity_in_test": 1,
+    "source_matrix_error": 9.419548474554063e-16,
+    "ticks": 2
+  },
+  "input_commit": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+  "large_full_history_heat_replayed": false,
+  "new_action_or_decoder": false,
+  "original_42_field_source_transport_proved": false,
+  "original_constructor_blob": "d111c5bfeae3c384a4fe725f4a6d19277ea0005a",
+  "repeated_original": {
+    "exact_field": "Q(sqrt(5))",
+    "jets": [
+      {
+        "source_nu": "0.000001062405352601561044728617823885996599563",
+        "source_r": "-0.00000003708300525982571085347597505565032824585",
+        "ticks": 1
+      },
+      {
+        "source_nu": "0.000002080120448724890301368013835206710366056",
+        "source_r": "-0.00000007281061156670112346297775137934888851464",
+        "ticks": 2
+      },
+      {
+        "source_nu": "0.000003987088788524549424111427283062212829224",
+        "source_r": "-0.0000001403444133655382638903352718093266012817",
+        "ticks": 4
+      }
+    ],
+    "native_fixture": {
+      "nu": "3/5",
+      "r": "1/9",
+      "z": "2^-20"
+    },
+    "scope": "same original smooth operator comparison; not independently established physical field admission",
+    "two_to_one_nu_ratio": "1.957934834977255438871831020644724497533",
+    "two_to_one_r_ratio": "1.963449592516745537810288019609258809741",
+    "wedge_diagnostic": "2.172659135202811919970404194753539802201e-16",
+    "wedge_exact": "2297915434728204303800352345291612636009060947912005232259847768469657423005708558426019383442843082824133346516424168536084702908579840000/79416461777821505085308725617317873848909421495029735495182800526596810625220710025587568930270588464551966084395865390191512739895440646720487400749361 - 1019942581156038185577146668541212115287571851744599068937792228723450469094045537902163955289982505014253998804640416879988772573347840000*sqrt(5)/79416461777821505085308725617317873848909421495029735495182800526596810625220710025587568930270588464551966084395865390191512739895440646720487400749361",
+    "wedge_nonzero_exact": true
+  },
+  "scope": "exact complete-return formula and actual original CAR128 history controls; same geometric source map remains unproved",
+  "status": "PASS_ORIGINAL_RETAINED_HISTORY_SOURCE",
+  "weak_and_critical": {
+    "critical": [
+      {
+        "price_error_to_exact_exponential_limit": 5.2109977045018085e-11,
+        "ticks": 32
+      },
+      {
+        "price_error_to_exact_exponential_limit": 2.6052136997685874e-11,
+        "ticks": 64
+      },
+      {
+        "price_error_to_exact_exponential_limit": 1.3025355764451778e-11,
+        "ticks": 128
+      },
+      {
+        "price_error_to_exact_exponential_limit": 6.5124998582938095e-12,
+        "ticks": 256
+      }
+    ],
+    "critical_limit_gap": -3.381758143289962e-09,
+    "critical_limit_price": 3.187455183116721e-07,
+    "incorrect_additive_limit_price": 3.2212727645496205e-07,
+    "physical_refinement_map_claimed": false,
+    "weak": [
+      {
+        "cumulative_leakage": 0.0009549316074949189,
+        "normalized_source_bound": 0.0005875544889766041,
+        "normalized_source_error": 0.0005297223650683883,
+        "per_tick_nu_scale": 0.125,
+        "ticks": 8
+      },
+      {
+        "cumulative_leakage": 0.0004774658037474651,
+        "normalized_source_bound": 0.000293777244488308,
+        "normalized_source_error": 0.00027386023822732443,
+        "per_tick_nu_scale": 0.0625,
+        "ticks": 16
+      },
+      {
+        "cumulative_leakage": 0.0002387329018737325,
+        "normalized_source_bound": 0.00014688862224415393,
+        "normalized_source_error": 0.00013918416110325643,
+        "per_tick_nu_scale": 0.03125,
+        "ticks": 32
+      },
+      {
+        "cumulative_leakage": 0.00011936645093686625,
+        "normalized_source_bound": 7.344431112207696e-05,
+        "normalized_source_error": 7.015614762283854e-05,
+        "per_tick_nu_scale": 0.015625,
+        "ticks": 64
+      }
+    ]
+  }
+}
