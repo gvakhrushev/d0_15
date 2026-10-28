@@ -33,3 +33,24 @@ Executed code SHA256: `d2b83484e840b91e62b8ac2af4155d5fd8c8e5748ee3027f6cbea0b19
 Observed result SHA256: `3b13c4146e3fdb3990572ac56db837d2badaf22794eca78ce7f72f159d791204`.
 
 This is a conditional analytic selection theorem with structural controls, NOT an original D0 lattice replay. The actual root history must supply the native symplectic form, normal/tangential generators, admissible local lapse family, local continuum class and controlled bracket limit. None is silently replaced by the displayed ADM variables. Finite all42 roots and their mesh-uniform recovery are not newly proved. No Lean or repository CI was run. `GR_closed=false`.
+
+## Same-owner continuation: actual return boundary and a larger conditional class
+
+[Original return boundary and canonical rigidity](A4D_ORIGINAL_RETURN_BOUNDARY_AND_CANONICAL_RIGIDITY_2026_10_28.md)
+now computes the unchanged feedback's two-endpoint mixed Hessian at the actual
+Golden pair for every equal block rank. Its nondegenerate boundary form has
+an explicit O(z) gain; the full heat mixed source and complete-history adjoint
+are retained. Actual two-tick return pricing differs from stationary composition
+of the one-tick prices even in the sign of the mixed Hessian, so this form does
+not justify an additive replacement of the retained history.
+
+The conditional classifier above is also strengthened: on the separated local
+metric class, arbitrary smooth ultralocal kinetic T and arbitrary smooth
+algebraic Ricci potential U are forced to the Einstein form by the full
+six-component identity `C_Z o Hess(T)=-2 Id/sqrt(q)`. Kinetic evenness is
+unnecessary modulo a retained volume boundary term. For two separated scalar
+sectors the same algebra forces quadratic spatial gradients and invertibility
+of their coefficient, rather than assuming them. Locality, the actual physical
+phase-space/field map, admissible lapse, separation and strong HDA remain
+premises. The original native source and physical `GR_closed=false` boundary
+are unchanged.
