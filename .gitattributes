@@ -5,5 +5,7 @@
 # Preserve original #334 moving-cut research source and receipt bytes.
 02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md -text diff
 02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/** -text diff
+# Preserve the exact source files from the current #334 refoliation delta.
+02_REGISTRY/research/sources/d0_334_refoliation_delta_2026-10-28/upstream/** -text diff
 # Preserve the manifest-pinned upstream inventory bytes (including its final blank line).
 02_REGISTRY/research/sources/d0_chat_intake_2026-10-28/upstream/FILES.md whitespace=-blank-at-eof

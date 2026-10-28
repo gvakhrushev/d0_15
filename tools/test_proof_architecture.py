@@ -5165,6 +5165,26 @@ class ProofArchitectureTests(unittest.TestCase):
             refinement_hits[0]["record"]["referenced_by"],
         )
 
+    def test_refoliation_delta_is_retrievable_without_physical_owner_inference(self) -> None:
+        data = proof.load_dataset(proof.ROOT)
+        hits = proof.full_text_search(proof.ROOT, "root cut refoliation closure")
+        by_source = {item["source"]: item for item in hits}
+        intake_path = "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md"
+        proof_path = (
+            "02_REGISTRY/research/sources/"
+            "d0_334_refoliation_delta_2026-10-28/upstream/"
+            "A4D_ROOT_CUT_TO_REFOLIATION_CLOSURE_2026_10_28.md"
+        )
+        self.assertIn(intake_path, by_source)
+        self.assertIn(proof_path, by_source)
+        links = proof._declared_source_links(data, intake_path)
+        self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
+        self.assertEqual(
+            [row["lean_module"] for row in links["formal_support_locators"]],
+            ["D0.Algebra.MovingProjectorTransport"],
+        )
+        self.assertEqual(links["formal_support_locators"][0]["status"], "metadata_locator_only")
+
 
 if __name__ == "__main__":
     unittest.main()

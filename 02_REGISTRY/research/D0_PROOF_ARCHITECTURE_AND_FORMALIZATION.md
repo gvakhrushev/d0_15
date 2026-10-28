@@ -11565,3 +11565,14 @@ Lean support row is still reported as a metadata locator and that no physical
 assembly-owner relation is inferred. The composed refinement module is found
 through its exact `formal_support` locator to the existing open chain-map
 claim.
+
+The current #334 head is `c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`, four
+commits beyond the previously ingested `eebcb5e` source. Its new conditional
+root-cut/refoliation classification is preserved under
+[`d0_334_refoliation_delta_2026-10-28`](sources/d0_334_refoliation_delta_2026-10-28/README.md)
+with upstream blob verification and a separate normal/optimized replay.
+Within its declared canonical 3-metric/two-scalar class, a strong hypersurface
+deformation algebra selects the Einstein-scalar kinetic structure; the actual
+D0 symplectic form, native lapse generators and controlled same-execution
+bracket limit remain unproved. No assembly slot, claim status, Lean theorem,
+or physical selector is inferred from this conditional result.

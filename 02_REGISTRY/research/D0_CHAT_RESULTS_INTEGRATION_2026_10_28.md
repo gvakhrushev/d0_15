@@ -144,3 +144,37 @@ results be applied to that same execution. No uniqueness of every microscopic
 program is assumed; no extra decoder, arbitrary counterterm or unproved
 physical selector is introduced here. `GR_closed=false`; full native H+J+R,
 raw216 and general exact-root recovery remain open.
+
+## Current #334 continuation: root cut and geometric closure
+
+The live #334 head advanced four commits beyond the previously integrated
+`eebcb5e` source, to `c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`. The [intake
+map](sources/d0_334_refoliation_delta_2026-10-28/README.md), [source manifest](sources/d0_334_refoliation_delta_2026-10-28/MANIFEST.json),
+and [byte verifier](sources/d0_334_refoliation_delta_2026-10-28/verify_refoliation_source_delta.py)
+preserve the four new files with their upstream Git blob IDs; the original PR
+and branch remain the scientific owner.
+
+The new proof composes the moving-cut source with a conditional local canonical
+3-metric/two-scalar classification. If the declared curvature and ultralocal
+kinetic class admits the strong hypersurface-deformation algebra for arbitrary
+lapses before imposing constraints, the proof derives the DeWitt gravitational
+kinetic term and matched scalar kinetic form; the constant-coefficient bracket
+forces `ab=1`, `lambda=1/2`, and `CD=I`, yielding an Einstein-scalar/sigma-model
+action within those hypotheses. This is independent of identifying internal
+Kato curvature with geometric refoliation; it does not prove that D0 supplies
+the canonical symplectic form, native local lapse generators, local continuum
+sector, or a controlled bracket limit.
+
+The [local replay receipt](sources/d0_334_refoliation_delta_2026-10-28/replay/receipt.json)
+records normal and optimized runs with Python 3.13.5, PyTorch 2.10.0,
+SymPy 1.14.0, and NumPy 2.3.5. The two outputs match byte-for-byte; their
+parsed values match the published result within `1e-12`, with maximum absolute
+floating-point difference `7.22e-16`. The checker exercises a periodic
+one-coordinate numerical control, not the native D0 bracket. No Lean, full42,
+scientific acceptance, or GR closure is claimed; `GR_closed=false` remains.
+
+The source proof repeats one trace-coefficient witness bullet in §5; its code
+and result contain the three intended distinct coefficient witnesses plus a
+separate quartic control. This is recorded as an editorial duplication and
+does not change the scoped theorem. No CI checks were reported for #334 at the
+time of this review.
