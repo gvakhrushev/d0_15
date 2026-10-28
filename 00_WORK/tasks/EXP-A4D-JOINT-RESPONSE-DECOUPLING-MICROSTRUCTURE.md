@@ -16734,3 +16734,61 @@ and the full price boundary source, preserving their distinct coordinate
 maps and stationary-branch premises. The nonzero independent QUERY row
 and nonadditive two-tick price remain intact. No boundary equivalence is
 inferred solely from a Darboux chart or a full-rank geometric reader.
+
+### 28 October - apply the complete source to the actual generated cut graph
+
+SAME #334 / constitutive/native-programme-v1, input172876cd. Consume the
+literal prefix/cut graph752 and native BOOK_MAP determinant identity instead
+of treating all interior cuts as independent. Apply these exact maps to
+7cu831--835. The missing parent substitution is whether the actual generated
+cut cancels that QUERY source. Also construct two literal native words with
+the same initial interface and paid primitive inventory, proving their whole
+heat relation and retaining their true feedback contrast. The smallest
+decisive check uses all32 columns, every generated prefix/cut and all clock
+edges; no new root, scan, physical action or task/selector is introduced.
+Write paths remain only this brief and the primary same-representative memo.
+
+### 28 October - actual generated-cut QUERY application and paid finite comparison
+
+Result: primary7cw853--860, same #334 / constitutive/native-programme-v1.
+The incoming7cv field-lift/clock application and independent root-boundary
+QUERY orbit are consumed and retained. On the existing fixed-initial causal
+graph, every interior cut is forced by the actual prefix. The complete
+QUERY source survives; for the explicit first/last-stage conjugation lift,
+the raw-gate and generated-cut terms are equal POSITIVE halves of831.
+This resolves the free-cut cancellation ambiguity for that specified graph,
+without granting a continuously variable native primitive.
+
+Two actual38-stage five-wire words have identical inventory4 G/24 CX/10
+SourceI, input rank8, initial blank/free interface and immutable oldRIGHT.
+An exact intertwiner on all38 clock edges gives equal whole paired-clock
+heat (2432 modes), also covering homogeneous INTERNAL heat at its own full
+carrier. Their actual corners are p^3 I_8 and (2p^6-1)I_8, so their complete
+H+J prices differ strictly for every0<z<1. The heat intertwiner changes
+the input cut and therefore is not a same-preparation representation gauge.
+The return law changes, so same-task admissibility is NOT inferred.
+
+The new exact checker validates both literal inventories, every32-column
+primitive/prefix/cut, all37 zero nonclosing leakage jets, the complete
+closing derivative and both positive source halves. It proves the full
+clock-edge intertwining and algebraic return contrast, without a heat
+matrix/eigensolver, full128 CAR, root or Lean replay. Script and observed
+receipt are embedded with SHA256 and three immutable native-source pins.
+
+The remaining physical premise is the original same-task variation map,
+including actual QUERY, initial/cut, scene and all selected full-source
+terms with the real field gain. The existing curved solution is its consumer;
+Einstein is not an admission predicate. No claim, task, acceptance, Ready,
+retirement or merge is added; GR_closed=false. Incoming1d29848f and every
+prior primary/brief byte are preserved.
+
+Final local validation on incoming1d29848f: work, agent-protocol, assembly
+and repository guards pass, repository warnings0, scientific_promotion=false.
+The assembly template retains constitutive/native-programme-v1 and its
+unaccepted physical-admission/full-price premises. The executed changed
+source and observed receipt match their embedded bytes and SHA256, all three
+native-owner pins remain exact, and syntax/JSON/whitespace checks pass.
+Removing the exact7cw insertion recovers all2723831 incoming primary bytes;
+the entire1085034-byte incoming brief remains a prefix. Both owned paths
+are insertion-only. No independent scientific acceptance, new CI or unchanged
+expensive mathematical replay is claimed.
