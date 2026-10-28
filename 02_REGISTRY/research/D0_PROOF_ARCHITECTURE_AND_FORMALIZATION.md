@@ -2,7 +2,7 @@
 
 ## Status
 
-Primary integration artifact for WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION. The broad objective remains active. C0 is not frozen or independently accepted, so no formalization coverage percentage is reported. Counts below describe starting inputs, not the C0 denominator.
+Primary integration artifact for WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION. The broad objective remains active. C0 is not frozen or independently accepted, so no formalization coverage percentage is reported. Counts below describe starting inputs, not the C0 denominator. The latest integrated source checkpoint is the open Draft #334 head `1dce9b709109c3fc2921c97ff75a31b3bcb09d6c`; its exact seven-commit post-`fd35893d` range and limits are recorded at the end of this artifact.
 
 ## Book and registry maintenance checkpoint — 28 October 2026
 
@@ -13123,20 +13123,30 @@ are still open.
 
 ## Validation after the 28 October source integration
 
-On this #402 worktree, `tools.test_proof_architecture` passes 95 tests
-(`162.868s`); after adding the fresh declaration inventory, its moving-cut
-retrieval/inventory regression also passes in a focused rerun. The C0
-reconciliation suite passes 47 tests (`35.068s`).
-`tools/validate_repo.py` passes with 889 claims, 31 assumptions, 58 aliases,
-238 formal-support rows, and 961 Lean-closure rows. Generated Lean views are
-current (`stale=0`); the formalization-debt audit is unchanged at 5 findings
-against a baseline of 5; work validation passes; and `git diff --check` is
-clean. The source-only integration does not change Lean files, so the existing
-narrow Book03 moving-projector build receipt remains tied to the unchanged
-Lean source digest. The new research proofs are not represented as Lean build
-results.
+On the current #402 worktree, the targeted `CalibratedQuerySourceFloor`
+module builds successfully (2,946 Lean jobs), followed by the final `D0.All`
+build (4,774 jobs, Lean 4.30.0). The final build source digest is
+`224d1d2d94a2ec52999a95e4584018509d30cf328772c7e25b54eee6453cec7c`.
+`tools.test_proof_architecture` passes 96 tests (`188.872s`), and the C0
+reconciliation suite passes 47 tests (`44.609s`).
 
-## Verification of the latest #334 intake — 28 October 2026
+`tools/validate_repo.py` passes with 889 claims, 31 assumptions, 58 aliases,
+240 formal-support rows, and 963 Lean-closure rows. Generated Lean views are
+current (`stale=0`); the formalization-debt audit remains at 5 findings against
+its baseline of 5; work validation passes; and `git diff --check` is clean.
+The updated #334 source packet verifier confirms eight changed files across
+seven commits, nine linked inputs, source Git objects and patch bytes. Its
+local closure replay has 65 checks, agrees with the now-present owner receipt
+within `8.8818e-16` over two numeric fields, and emits no stderr. The archived
+chat intake separately verifies 74 files / 650,121 member bytes; archive ZIP
+bytes and archived code execution remain unverified by design.
+
+These checks validate Lean compilation, repository integrity and bounded
+source replay. They do not establish physical comparison admission, the
+physical norm lift `C_h`, full native variation, source selection, independent
+scientific acceptance or `GR_closed`.
+
+## Verification of the off-copy source replay at `fd35893d` — historical checkpoint
 
 The remote #334 branch was fetched and confirmed at
 `fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`. All eight files listed in the
@@ -13155,3 +13165,139 @@ to their recorded source digest. These checks validate the source intake and
 its retrieval/integrity boundaries. They do not extend the Lean theorem, add a
 formal-support claim, or establish physical admission, independent acceptance
 or `GR_closed`.
+
+## #334 source checkpoint at `1595b9bd`: internal programme source and Lean effect slice — 28 October 2026
+
+The existing Draft #334 source checkpoint was fetched at
+`1595b9bd2cf9720900c1bf573df04cf9e2e7931f` (open Draft; no GitHub
+status-check rows at that checkpoint). The original nine-package archive and moving-cut source
+remain preserved at their existing pinned inputs `063f643d` and `eebcb5e`;
+this intake adds the newer five-commit source range without rewriting those
+bytes. The exact `fd35893d..af468e` patch, six changed source files, nine
+linked task-effect/apparatus source inputs and ordinary/optimized replays are in
+[`d0_334_post_fd_delta_2026-10-28`](sources/d0_334_post_fd_delta_2026-10-28/README.md).
+Its verifier confirms the source commits, Git blob bytes, patch, packet
+inventory, and canonical restored files. The five task inputs, including the
+two-field handoff, are pinned to `fd35893d`; the apparatus note, proof, checker
+and result are pinned to `73816d279dc23ee62be75662bf3081013a49ad55`.
+
+The new research memo declares a finite controlled processor and proves zero
+first return source for code-off-diagonal Hilbert tangents at the pure
+programme branch, while retaining the nonzero selected-code QUERY source.
+For the return-price reflection orbit at fixed invertible past `K`, its full
+stationary class is `C^3=C` and `[C^2,K K*]=0`; a singular-past counterexample
+shows that invertibility cannot be removed. The positive-collar lower bound
+keeps a normalized return source uniformly positive. These results concern
+the exact declared return carrier. Full-price use needs proved heat neutrality
+or an explicit bound on the extra source; physical controlled-evaluator
+admission, the full physical variation domain, and task-law selection remain
+open. This is supporting source intake, not independent scientific acceptance.
+
+The 362-check current-head replay passes in ordinary and optimized Python with
+byte-identical outputs. Four numeric fields differ from the owner receipt by
+at most `2.665e-15`; each mode emits 30 NumPy warnings for divide-by-zero,
+overflow or invalid matrix multiplication. The exact stderr is preserved and
+the warnings are not treated as harmless. The incoming task-effect checker
+replay passes 97 checks with byte-identical ordinary/optimized outputs, one
+owner/local numeric difference of `2.776e-17`, and empty stderr. The complete
+interpretation and all nonclaims are recorded in the linked packet.
+
+The finite pure-state effect seam is now formalized in
+[`D0.Research.TaskFaithfulReporterEffect`](../../03_FORMALIZATION/D0/Research/TaskFaithfulReporterEffect.lean).
+On complex inner-product spaces, equality of the fixed quadratic readout
+statistics for every normalized input vector characterizes the complete
+pulled-back reporter endomorphism; equal effects induce equal return
+compressions for every fixed preparation map. The module is listed in
+`formal_support.csv` as explicit research support, not a claim application or
+acceptance. It does not formalize mixed-density trace representation,
+finite-error transfer, the complete moving-past return derivative, or
+physical task/primitive admission. The earlier checkpoint statement that the
+effect fibre lacked Lean support is historical; this is the scoped update.
+`GR_closed=false`.
+
+The supplied moving-cut source is the existing Book03 §03.25 result, already
+covered at its fixed-parameter matrix scope by
+`D0.Analysis.MovingProjectorBookPrice` and its variable-parameter companion.
+The exact `eebcb5e` checker was replayed in ordinary and optimized mode and
+stored in
+[`local_replay_2026-10-28`](sources/d0_root_moving_cut_2026-10-28/local_replay_2026-10-28/README.md).
+The two outputs match each other byte-for-byte. The pinned owner result records
+maximum finite-difference error `7.698841564263148e-12`; the local
+Python 3.9.6 / NumPy 2.0.2 replay records `7.00670077513621e-12`, with nine
+numeric fields differing and maximum absolute drift `1.3507694962555661e-11`.
+Each mode emits 12 retained NumPy warnings. The finite matrix identity is not
+a replay of the native 42-field variation, and it does not select the physical
+source or close GR.
+
+## #334 fetched checkpoint at `af468e87`: regular-carrier readiness and calibrated source — 28 October 2026 (historical within this intake)
+
+The live PR API and `refs/pull/334/head` were both fetched at
+`af468e8787adf36e7932890dbacd50b190a40d4d` (open Draft, no check rows). The
+exact five-commit range after `fd35893d`, all six changed files, nine linked
+source inputs, patch and bounded replays are pinned in
+[`d0_334_post_fd_delta_2026-10-28`](sources/d0_334_post_fd_delta_2026-10-28/README.md).
+The updated shared task brief and multi-megabyte paid-source memo are retained
+as exact upstream snapshots rather than overwritten in this integration tree.
+
+The new §7dj application shows that the actual regular AF carrier's unprepared
+canonical GNS input can erase the desired field gain on a fixed-trace work
+conjugacy family. A coherent READY target restores the calibrated operator
+source with `γ=p^(2k)` and `λ_eff=(γc/c_eff)λ`, while retaining the real failed
+branch and its price. Guarded flag-source cancellations require their stated
+support; a freely rotating READY projection still has a nonzero source at
+constant success probability. The remaining physical step is the native
+readiness operation, its real blank flag and controlled word, and their full
+paid comparison graph. This is not a physical no-go or a field selector.
+
+At this `af468e87` checkpoint the closure-audit checker was rerun with Python 3.12.14, NumPy
+2.3.5, SciPy 1.18.1, SymPy 1.14.0 and mpmath 1.3.0. Ordinary and optimized
+outputs are byte-identical (65 checks, empty stderr); the owner receipt was not
+yet present at this checkpoint. Its exact real/rational source calculation gives the sharp
+squared ratio floor `4 Ω²P(1−P)`, attained at `α=4, γ=1`; full matrix controls
+retain a 16-dimensional carrier and both clock grades. The checker input is
+the pinned `1595b9bd` source, and it expressly does not compute a new full42
+root, derive the full physical variation domain, or close GR.
+
+## Latest #334 source checkpoint at `1dce9b7`: full-source boundary and finite QUERY floor — 28 October 2026
+
+The open Draft #334 was fetched at
+`1dce9b709109c3fc2921c97ff75a31b3bcb09d6c`; its check rollup was empty at the
+fetch. The seven commits after `fd35893d`, eight changed files, nine pinned
+source inputs, full patch and bounded replays are retained in
+[`d0_334_post_fd_delta_2026-10-28`](sources/d0_334_post_fd_delta_2026-10-28/README.md).
+The packet now includes the exact full-source audit memo and the owner result
+receipt at `1dce9b7`. Its checker itself uses scientific input `1595b9bd`.
+
+The audit combines the existing calibrated per-block QUERY source with the
+full accumulated price. Its exact chart bound is
+`b_Q/λ ≥ 2 Ω√(P(1−P))`, sharp at `α=4, γ=1`. Under the declared uniform
+bounds `P_j≥b>0` and `Ω_j≥Ω₀>0`, the finite positive-weight normalized source
+has `η*=2 Ω₀√(b(1−b))`. The specified equal-volume spatial partition has
+correct aggregate ratio `V b/a`; using a repeat-count normalizer there would
+also divide the geometric field covector. The separate uncentered direct-click
+baseline is positive on its coordinate collar, but membership of the desired
+branch and the physical field lift remain open.
+
+This lower bound applies only if all those independent QUERY directions are
+in the actual declared source domain. Their admission to physical `X_N` and
+the norm of the physical lift `C_h` have not been proved; under a lift of norm
+`C_h`, the corresponding physical estimate is only `η*/C_h`. No uniform bound
+on `C_h` follows from this calculation. It is therefore neither a physical
+D0→GR impossibility theorem nor closure, and it does not cover `P→0`, vanishing
+physical volume, or the singular chart point `c=0`. The memo retains
+`GR_closed=false`, no physical full42 root, and no Lean/CI run by the owner.
+
+The local isolated replay uses Python 3.12.14, NumPy 2.3.5, SciPy 1.18.1,
+SymPy 1.14.0 and mpmath 1.3.0. Ordinary/optimized outputs are byte-identical
+for 65 checks with empty stderr. The owner result is now available; comparison
+shows two numeric fields differ with maximum absolute drift
+`8.881784197001252e-16`. All bytes, the checker/result hashes, source links,
+commits and patch are checked by the packet verifier.
+
+The Lean module `D0.Research.CalibratedQuerySourceFloor` now extends its
+previous squared per-block result with the unsquared uniform block bound and a
+generic finite positive-weight average theorem for `η*`. Its hypotheses
+preserve the exact positive chart and uniform `P`, `Ω` lower bounds. This
+removes only the finite summation step on the declared mathematical QUERY
+domain; it does not formalize physical admission, the map into `X_N`, the
+physical norm lift, or GR closure.

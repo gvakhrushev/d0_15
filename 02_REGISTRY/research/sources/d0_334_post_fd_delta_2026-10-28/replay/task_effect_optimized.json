@@ -1,0 +1,134 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "all_field_roots_proved": false,
+  "all_input_fibre": {
+    "arbitrary_completion_not_identified_with_echo": true,
+    "classical_only_law_is_insufficient": true,
+    "minimum_full_query_change": 0.20727766539120346,
+    "same_effect_error": 0.0,
+    "small_error_is_not_tangent_constraint": true
+  },
+  "checker_sha256": "ac1b5af37e848782060b8f686852729d401d7b48d7c1f7bff459075d59f0f180",
+  "checks": 97,
+  "finite_relative_budget": {
+    "controls": [
+      {
+        "actual_price_difference": "0.0000475875558450992161750181",
+        "old_min_scale": "0.3",
+        "proved_bound": "0.0000947325661245390289276469",
+        "ratio": "0.502335762577557627943701",
+        "retention_exponent": 0,
+        "w": "0.00703447187437748017762347"
+      },
+      {
+        "actual_price_difference": "4.15582704843429527438811e-23",
+        "old_min_scale": "0.3",
+        "proved_bound": "8.25466918649053350256162e-23",
+        "ratio": "0.503451677413754974395387",
+        "retention_exponent": 30,
+        "w": "6.12959625186556185854564e-21"
+      },
+      {
+        "actual_price_difference": "2.71180368073774275467503e-77",
+        "old_min_scale": "0.3",
+        "proved_bound": "5.38642297244564239602848e-77",
+        "ratio": "0.503451677413754974396357",
+        "retention_exponent": 120,
+        "w": "3.99974818093253600755122e-75"
+      },
+      {
+        "actual_price_difference": "0.0000635923698919618726274359",
+        "old_min_scale": "1e-30",
+        "proved_bound": "0.0000710277333322264349803889",
+        "ratio": "0.895317461343074884140453",
+        "retention_exponent": 0,
+        "w": "0.00527424319710163440487817"
+      },
+      {
+        "actual_price_difference": "5.54518086348135718753013e-23",
+        "old_min_scale": "1e-30",
+        "proved_bound": "6.19333899892409789970989e-23",
+        "ratio": "0.895345929626113111796572",
+        "retention_exponent": 30,
+        "w": "4.59893263517659652467053e-21"
+      },
+      {
+        "actual_price_difference": "3.6183993464334816324411e-77",
+        "old_min_scale": "1e-30",
+        "proved_bound": "4.04134226415089251117652e-77",
+        "ratio": "0.895345929626113111796597",
+        "retention_exponent": 120,
+        "w": "3.00094356723420736693395e-75"
+      },
+      {
+        "actual_price_difference": "0.0000635923698919618726274359",
+        "old_min_scale": "0",
+        "proved_bound": "0.0000710277333322264349803889",
+        "ratio": "0.895317461343074884140453",
+        "retention_exponent": 0,
+        "w": "0.00527424319710163440487817"
+      },
+      {
+        "actual_price_difference": "5.54518086348135718753013e-23",
+        "old_min_scale": "0",
+        "proved_bound": "6.19333899892409789970989e-23",
+        "ratio": "0.895345929626113111796572",
+        "retention_exponent": 30,
+        "w": "4.59893263517659652467053e-21"
+      },
+      {
+        "actual_price_difference": "3.6183993464334816324411e-77",
+        "old_min_scale": "0",
+        "proved_bound": "4.04134226415089251117652e-77",
+        "ratio": "0.895345929626113111796597",
+        "retention_exponent": 120,
+        "w": "3.00094356723420736693395e-75"
+      }
+    ],
+    "full_baseline_retained": true,
+    "noncommuting_relative_factors": true,
+    "past_rank_deficiency_allowed_if_nonzero": true
+  },
+  "full_clock": {
+    "both_grades": 112,
+    "clock_modes_per_grade": 56,
+    "max_heat_error": 0.0,
+    "scope": "bare paired clock at fixed length; structural matrix test only"
+  },
+  "native_task_change": {
+    "AF272_replayed": false,
+    "columns": 32,
+    "effect_operator_norm": "p",
+    "inventory": {
+      "CX": 24,
+      "G": 4,
+      "SourceI": 10
+    },
+    "prepared_probability_gap": "p^2",
+    "protected_rank": 8,
+    "raw_stages_per_word": 38,
+    "same_task": false,
+    "same_task_native_pair": {
+      "different_full_operators": true,
+      "inventory": {
+        "CX": 20,
+        "G": 2,
+        "SourceI": 6
+      },
+      "protected_rank": 8,
+      "raw_stages": 28,
+      "same_complete_source_output": true,
+      "source_columns": 16
+    }
+  },
+  "physical_task_admission_proved": false,
+  "retained_matrix_source": {
+    "max_source_identity_error": 6.505213034913027e-19,
+    "new_query_row_not_discarded": true,
+    "past_condition": 6.209147158032077,
+    "w": 0.012322078959031044
+  },
+  "scientific_input": "d4c700f78572179ffb6fc98a12ca7e31fa2bc1b4",
+  "status": "PASS_TASK_FAITHFUL_RETURN_SOURCE"
+}

@@ -1,0 +1,24 @@
+/tmp/d0_root_moving_cut_eebcb_pinned.py:39: RuntimeWarning: divide by zero encountered in matmul
+  C=Q@U@P;F=C.conj().T@C
+/tmp/d0_root_moving_cut_eebcb_pinned.py:39: RuntimeWarning: overflow encountered in matmul
+  C=Q@U@P;F=C.conj().T@C
+/tmp/d0_root_moving_cut_eebcb_pinned.py:39: RuntimeWarning: invalid value encountered in matmul
+  C=Q@U@P;F=C.conj().T@C
+/tmp/d0_root_moving_cut_eebcb_pinned.py:43: RuntimeWarning: divide by zero encountered in matmul
+  dF=dC.conj().T@C+C.conj().T@dC
+/tmp/d0_root_moving_cut_eebcb_pinned.py:43: RuntimeWarning: overflow encountered in matmul
+  dF=dC.conj().T@C+C.conj().T@dC
+/tmp/d0_root_moving_cut_eebcb_pinned.py:43: RuntimeWarning: invalid value encountered in matmul
+  dF=dC.conj().T@C+C.conj().T@dC
+/tmp/d0_root_moving_cut_eebcb_pinned.py:30: RuntimeWarning: divide by zero encountered in matmul
+  F=C.conj().T@C
+/tmp/d0_root_moving_cut_eebcb_pinned.py:30: RuntimeWarning: overflow encountered in matmul
+  F=C.conj().T@C
+/tmp/d0_root_moving_cut_eebcb_pinned.py:30: RuntimeWarning: invalid value encountered in matmul
+  F=C.conj().T@C
+/tmp/d0_root_moving_cut_eebcb_pinned.py:88: RuntimeWarning: divide by zero encountered in matmul
+  R=np.linalg.inv(np.eye(n)-z*C.conj().T@C)
+/tmp/d0_root_moving_cut_eebcb_pinned.py:88: RuntimeWarning: overflow encountered in matmul
+  R=np.linalg.inv(np.eye(n)-z*C.conj().T@C)
+/tmp/d0_root_moving_cut_eebcb_pinned.py:88: RuntimeWarning: invalid value encountered in matmul
+  R=np.linalg.inv(np.eye(n)-z*C.conj().T@C)

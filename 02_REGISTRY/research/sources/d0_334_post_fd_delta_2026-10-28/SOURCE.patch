@@ -1,0 +1,2387 @@
+diff --git a/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md b/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md
+index 1b77a1f7..6671638b 100644
+--- a/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md
++++ b/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md
+@@ -17622,3 +17622,60 @@ fixed tests. This is a direct supporting parent substitution, not
+ independent physical acceptance. No claim/registry/lifecycle promotion,
+ Ready, merge or new task. `GR_closed=false`. Write paths remain only
+ this brief and the existing primary; earlier and incoming bytes remain.
++
++
++### 28 October 2026 — actual regular AF input and the coherent readiness source map
++
++SAME owner / Draft #334; native realization / final composition.
++Inputfd35893d; primary§7dj961–970. Consume the original right-module
++algebra/trace-preparation theorem and the new off-copy frame§7di,
++not a new geometric construction. Incoming1595b9bd's three files,
++pure-programme source and unrestricted QUERY classification remain
++unchanged and are distinguished from this native left-algebra orbit.
++
++Named parent application: represent that frame in the original native
++AF algebra and use its ACTUAL regular carrier/input. The doubled-path
++identity gives End_right(H_(n+k))=A_(n+2k), with the true regular right
++multiplicities. On the original canonical GNS inclusion, the exact cold
++operator is `I+p^(2k)(Tr_work W-q_work I)`. A fixed-trace work conjugacy
++therefore has ZERO source there, although its prepared working source
++is nonzero. The unprepared cyclic vector cannot be substituted for a
++logical blank with the old positive gain.
++
++The actual READY projection has all-input probability gamma=p^(2k).
++An explicit coherent target with a genuine new blank flag retains both
++outcomes: M_e; controlled(U); M_e, with M_e the full projector-copy
++matrix. Its cold value is `c_eff=1-gamma+gamma*c` and its true calibration
++is `lambda_eff=(gamma*c/c_eff)*lambda`. The normalized OPERATOR middle
++source is exactly the prior one. For implementations supported on
++diagonal-copy x flag, independent preparation/frame Hermitian sources
++vanish separately by the real conditional trace identity; the full
++thermal source retains its actual schedule/count. Pure flag-changing
++first jets vanish at the blank, without proving physical availability
++or erasing finite/mixed-state comparisons.
++
++A freely rotating READY projection outside that support has a NONZERO
++source despite constant gamma. Thus the graph and physical task are not
++silently enlarged or constrained by an Einstein equation. The concrete
++remaining application is a native implementation of the READY-copy and
++controlled word, a real initial flag and their full paid comparison
++graph. The matrix target is not counted as one native primitive.
++
++190 exact controls pass; normal and optimized outputs are identical.
++Both original38-stage words are executed on all32 columns. For k=4:
++A8=M55+M34, actual full regular dimension33448 with the defining8-factor,
++canonical input rank16, left-ready rank712, spectrum32024+1424.
++Both unprepared words have cold `(1-4p^8) I16`, while the prepared
++corners are p^3 and1. All doubled paths and all16 work matrix-unit
++conditional expectations are checked. The whole flag matrix target is
++checked on178 working columns; its native compiler is NOT executed.
++The inherited unflagged104-call schedule has26G+24CX+54SourceI; its full
++product/large heat is not claimed replayed. Incoming362 checks are
++read as owned evidence and not included in190.
++
++No physical-admission claim, registry/lifecycle promotion, Ready, merge
++or new task. `GR_closed=false`. Only this brief and the existing primary
++are changed; every earlier and incoming byte is retained.
++
++Checker SHA256: `1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f`.
++Receipt SHA256: `01e14a9d561da0879bd9c75b66054484f9efd1ef58e6f5ec4e9899707046f74a`.
+diff --git a/02_REGISTRY/research/A4D_FULL_CLOSURE_SOURCE_AUDIT_2026_10_28.md b/02_REGISTRY/research/A4D_FULL_CLOSURE_SOURCE_AUDIT_2026_10_28.md
+new file mode 100644
+index 00000000..f9c12449
+--- /dev/null
++++ b/02_REGISTRY/research/A4D_FULL_CLOSURE_SOURCE_AUDIT_2026_10_28.md
+@@ -0,0 +1,253 @@
++# Полный источник: проверка финального перехода и строгая граница предельных обходов
++
++28 октября 2026. `gvakhrushev/d0_15`, существующий исследовательский PR #334.
++Закреплённый вход: `1595b9bd2cf9720900c1bf573df04cf9e2e7931f`.
++
++**Итог попытки: полного физического закрытия D0→ОТО нет.** Этот документ не
++переименовывает условный сектор в полную физическую теорему и не утверждает
++невозможность D0→ОТО. Он проверяет именно оставшийся переход общей сборки,
++а не вводит ещё одно геометрическое семейство. В объявленном родительском
++классе свободных QUERY-сравнений доказана более сильная, острая нижняя
++граница полного нормированного источника. Она исключает попытки скрыть
++эту строку ослаблением сигнала, накоплением истории или предельным
++приближением угла. В другом физическом домене этот вывод применять нельзя.
++
++[Исполненный код](sources/d0_full_closure_audit_2026-10-28/check_closure_audit.py)
++и [фактический результат](sources/d0_full_closure_audit_2026-10-28/result.json).
++
++## 1. Какие результаты используются и чего они вместе не утверждают
++
++Потребляются, без изменения их цены и областей:
++
++- `A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md` и двухполевой
++  handoff в `sources/d0_task_faithful_source_2026-10-28/TWO_FIELD_HANDOFF_RU.md`:
++  континуальный источник, trace/Ward, прямой/обратный переход на регулярной ветви;
++- `A4D_REGULAR_APPARATUS_SOURCE_DESCENT_2026_10_28.md` и `fd35893d`, §7di:
++  аппаратный источник на фактических guarded support и независимые frame-строки;
++- `A4D_TASK_FAITHFUL_RETURN_SOURCE_2026_10_28.md`: реализации одного
++  заранее указанного полного input-effect, их конечные ошибки и сохраняемое прошлое;
++- `A4D_RETAINED_PAST_FULL_COVECTOR_RECOVERY_2026_10_28.md`:
++  одна накопленная история, настоящая регулярная норма и коэффициент;
++- `d4c700f7`, основной same-representative memo, §7dh945–953:
++  независимая новая QUERY-строка, её норма и исходные calibrated coefficients;
++- `A4D_INTERNAL_PROGRAM_AND_GLOBAL_QUERY_STATIONARITY_2026_10_28.md`:
++  внутренний код и различие амплитудного и отчётного сравнений.
++
++Ни континуальное решение, ни внутреннее хранение программы не доказывают
++нормированное отождествление полного пространства физических сравнений
++с пространством, на котором уже выполнена сборка. По исходному
++`D0_GR_CLOSURE_CONTRACT_RU.md` нужна одна действительная карта исполнения,
++а не классификация всех возможных миров. Book03 §§03.26.1–03.26.4 явно
++сохраняет физическую адресуемость, actuation и свежие ресурсы как обязательства.
++Наличие матриц и полных кодов само по себе эти обязательства не снимает.
++
++Нового коммита между предыдущим ответом и чтением head не было. Ни один
++из сохранённых положительных результатов в этом документе не отменяется.
++
++## 2. Подстановка уже имеющегося источника в полную накопленную цену
++
++Пусть K — настоящий сохранённый возвратный блок, S=K†K>=0, S!=0.
++На тех же скалярных cold corners 0<c_j<1:
++
++    T=product_j c_j²,
++    D=(1-zeta)I+zeta T S,
++    B=H-Tr log D,
++    w=zeta T Tr(S D^-1)>0,
++    Lambda=sum_j lambda_j, Gamma=w Lambda.                 (1)
++
++Все старые состояния и дополнения остаются. Для независимого query-изменения
++из §7dh, с операторной нормой генератора один:
++
++    c_j(s)=c_j cos(2s)-u_j sin(2s),
++    u_j=sqrt(1-c_j²),
++    b_Q,j=4u_j/c_j,
++    partial_(s_j) B=w b_Q,j.                               (2)
++
++Обозначение b_Q,j НЕ есть обратная температура Book.
++
++Полное тепло в (2) точно неизменно на том же parked INTERNAL семействе:
++новые отражения меняются сопряжением, полный endpoint является tensor
++произведением старого endpoint и частных новых блоков. Все его собственные
++значения сохраняются. На фиксированных часах, сцене, beta, ранге и Gram это
++сохраняет весь тепловой trace, включая гармонические и неактивные моды.
++Вариации самого старого исполнения и другие реализации имеют свои строки.
++
++На независимом max-нормированном пространстве этих s_j двойственная норма
++их ограничения равна
++
++    ||(DB/Gamma)|QUERY|| = sum_j b_Q,j / sum_j lambda_j.      (3)
++
++Это не норма физического X_N, пока не доказано её отображение туда. Если
++полный источник обращается в нуль на большем домене, он обязан обращаться
++в нуль на каждом действительно включённом подпространстве. Нули 42 полевых
++строк или frame-строк не могут отменить (3): в этих тестах они фиксированы.
++
++## 3. Острая граница для настоящего calibrated family
++
++В §7dh948 исходные параметры удовлетворяют
++
++    P_j=I_(tau,h_j)/Omega_j,
++    c_j²=1-alpha_j gamma_j P_j(1-gamma_j P_j),
++    lambda_j=alpha_j gamma_j(1-2gamma_j P_j)/(Omega_j c_j²),
++
++    0<alpha_j<=4, 0<gamma_j<=1, 0<P_j<1/2, Omega_j>0.       (4)
++
++P_j здесь — вероятность/нормированный полевой операнд, не проектор.
++Она не назначается заново. Сначала считаем один блок и пишем x=gamma P.
++Точное разложение
++
++    c²=(1-2x)²+(4-alpha)x(1-x)
++
++даёт c>=1-2x>0. Поэтому
++
++    b_Q/lambda
++      =4 Omega c sqrt(alpha gamma P(1-gamma P))
++          /[alpha gamma(1-2gamma P)]
++      >=4 Omega sqrt(P(1-gamma P))/(sqrt(alpha gamma))
++      >=2 Omega sqrt(P(1-gamma P)/gamma)
++      >=2 Omega sqrt(P(1-P)).                              (5)
++
++Второй шаг использует alpha<=4; последний — 1/gamma>=1.
++Равенство достигается при alpha=4,gamma=1 для КАЖДОГО 0<P<1/2.
++Таким образом граница острая, а не только оценка порядка.
++
++В отличие от прежнего §7dh948, (5) не теряет силу при P->1/2:
++в насыщенной семье alpha=4,gamma=1 имеем c=1-2P->0, но
++
++    b_Q/lambda=2 Omega sqrt(P(1-P)) -> Omega>0.             (6)
++
++Ровно в c=0 исходная положительная chart/gain формула (4) сингулярна;
++никакое расширение теоремы на эту точку не утверждается. (6) доказывает
++лишь отсутствие нормированного обхода вдоль невырожденных точек.
++При alpha->0 или gamma->0 граница также сохраняется, если P и Omega
++остаются в заявленной области. Это не исключает все возможные режимы
++при P->0 или исчезающей физической области; такие режимы требуют их
++реального геометрического коэффициента, как ниже.
++
++Если P_j>=b>0 и Omega_j>=Omega0>0, то монотонность P(1-P) на (0,1/2)
++даёт из (3),(5)
++
++    ||(DB/Gamma)|QUERY||
++      =sum_j(lambda_j/Lambda)(b_Q,j/lambda_j)
++      >=2 Omega0 sqrt(b(1-b))=:eta_*>0.                    (7)
++
++Ни накопление T->0, ни вырождение ненулевого S, ни выбор числа повторений
++не входит в eta_*. Источник и действительный gain подавляются вместе.
++При S=0 gain нулевой; это не физическое уравнение Einstein через деление на нуль.
++
++Для реальных compiled centres числа в (4) не назначаются идеальными.
++Если их настоящие положительные b_hat,lambda_hat имеют относительные
++ошибки <=epsilon<1, то (7) переносится с множителем
++(1-epsilon)/(1+epsilon). Это отдельное условие действительной реализации,
++не результат текущего структурного checker.
++
++## 4. Положительный baseline есть в исходном нелинейном отчёте
++
++Для исходной sigma-minus вероятности из двухполевого handoff:
++
++    p=(sqrt5-1)/2, z0=2^-20,
++    e=p²(1+x), l=4e(1-e), b=p-p² y,
++    B0=4b²(1-b²), A=l+(1-l)B0,
++    r(x,y)=z0(A+B0)-z0² A B0.                              (8)
++
++На явно заданном |x|,|y|<=1/1024 точные рациональные границы
++8/13<p<13/21 дают 0<e<1/2 и 0<b²<1/2. Отсюда 0<=l,B0,A<=1,
++A>=l, и непосредственные рациональные нижние границы l_min,B_min дают
++
++    r >= z0(l_min+B_min-z0)>z0,
++    r <=2z0<1/2.                                         (9)
++
++В result.json сохранена точная рациональная нижняя граница. Следовательно,
++для положительного среднего того же r на этой области можно брать b=z0.
++При Omega0=1 значение eta_* приблизительно0.0019531240686772.
++Единичный объём здесь лишь иллюстрирует масштаб; настоящая граница
++умножается на реальный Omega0. Не доказаны принадлежность любой желаемой
++семьи этой области и наличие physical field lift. Их нельзя вывести из (9).
++
++Таким образом положительный порог не появляется из внешнего наблюдателя:
++в данном операнде он уже содержится в исходном нецентрированном отчёте.
++Замена r на r-r0 не является свободной операцией над этой вероятностью.
++
++## 5. Проверен ещё один возможный обход: дробление физического объёма
++
++У старой оценки Omega0 было явно фиксировано. Нельзя молча применить её
++к ячейке объёма omega=V/n->0. Но и нельзя делить общий источник на
++коэффициент, предназначенный для n ПОВТОРЕНИЙ одного полного эксперимента,
++если теперь имеются n РАЗНЫХ пространственных частей.
++
++Рассмотрим ровно заявленный простой случай: одинаковые локальные параметры,
++равные объёмы omega=V/n, I_total=sum_j I_j и lambda=a/omega.
++Для общего гладкого полевого теста
++
++    DB_field=w lambda sum_j DI_j=w lambda DI_total.
++
++Истинный глобальный gain поэтому Gamma_spatial=w lambda, а не w n lambda.
++Все n независимых QUERY-строк имеют норму n w b_Q. Значит
++
++    ||DB_QUERY/Gamma_spatial||=n b_Q/lambda=V b_Q/a.        (10)
++
++Если вместо этого поделить на w n lambda, QUERY-остаток действительно
++уменьшится в n раз, но одновременно полевой источник станет DI_total/n.
++Это не ненулевой Einstein-предел. Формула (10) не является теоремой для
++всех неоднородных геометрических разбиений; она закрывает конкретный
++ошибочный перенос временной нормировки на равные пространственные ячейки.
++
++## 6. Что заключено о полном физическом закрытии — и что не заключено
++
++На объявленном родительском домене, включающем все независимые s_j,
++положительная regular branch не имеет полного нулевого источника через
++исчезающие остатки прежней recovery-конструкции: (7) этому противоречит.
++Другой действительно выбранный член цены мог бы компенсировать источник,
++но его ограничение на QUERY должно иметь норму минимум eta_* в той же
++нормировке. Его наличие и размер нельзя назначить ради желаемого результата.
++На точно изоспектральном семействе §2 это не может быть уже учтённое тепло.
++
++Это НЕ доказательство физической невозможности D0→ОТО. Доступность всей
++сопряжённой QUERY-орбиты в действительном X_N и цена её реализации остаются
++недоказанными. Генератор operator-нормы1 не становится автоматически
++физическим unit-test. При подъёме L_query с нормой C_h строгая физическая
++нижняя оценка ослабляется до eta_*/C_h; C_h может зависеть от уточнения.
++Ни ограничение C_h, ни отсутствие таких направлений не следуют из (7).
++
++Для уже имеющегося положительного сектора надо установить две карты на
++ОДНОМ исполнении: все нужные геометрические тесты действительно поднимаются
++в физические сравнения (для soundness), и все действительно независимые
++физические сравнения имеют доказанный источник в общей controlled области
++с её настоящей нормой (для full-source recovery). Равенство с полной
++матричной орбитой не требуется и здесь не добавляется как цель.
++
++Слова «параметр записан внутри» недостаточно: внутренний код может менять
++закон отчёта; тогда нужна его действительная карта и источник. И наоборот,
++нельзя освобождать порождённые состояния как независимые внешние поля.
++Именно эта однозначная карта исполнения, а не ещё одна частная метрика,
++остаётся недоказанной в текущей сквозной цепочке.
++
++## 7. Реально выполненная проверка и сохранение границы
++
++65 новых проверок: точные рациональные inequalities, символическая острота,
++исходный direct-click baseline, полный16-мерный оператор с ненормальным
++прошлым, оба clock-grade на96 модах, полный return determinant и независимые
++пяти-точечные производные, правильная spatial-нормировка,120-значные
++сравнения с настоящим Gamma вплоть до1.2074e-162.
++
++Матрицы новых численных контролей — СТРУКТУРНЫЕ, не вновь скомпилированные
++native GR-исполнения. Ошибка полного clock-сопряжения3.33e-16; heat
++неизменен в проверенных точках; ошибка return-производной при исходном
++zeta=2^-20 не больше7.42e-19. Это проверяет формулы, не физический допуск.
++
++Обычный, python -O и повторный обычный новые JSON совпали побайтно.
++Дополнительно неизменённый checker предыдущего пакета с SHA256
++43ef1aa73fcdabd120261ece0adcaa6ea01efce64cbbeaa5441b725868365e8a
++повторён обычным и оптимизированным Python: прежние362 проверки проходят,
++JSON совпадает с прежним опубликованным результатом. Они не считаются новыми.
++
++Новый checker SHA256:
++402293c9b5ea54f475b03eb20791c111cad1067d9db4bea09a421022a71f45e6.
++Новый result SHA256:
++1768200f22870ec390fe843f7747f1db5a52380deaebf324f9202a79546008b8.
++
++Полный физический42-root, физический управляющий исполнитель, Lean и CI
++не построены/не запускались. Claims, registry, основной текст книг и main
++не меняются. Никакой полноты D0 или невозможности D0 здесь не доказано.
++`GR_closed=false` — содержательный итог этой попытки, а не временная
++формальность перед объявлением победы.
+diff --git a/02_REGISTRY/research/A4D_INTERNAL_PROGRAM_AND_GLOBAL_QUERY_STATIONARITY_2026_10_28.md b/02_REGISTRY/research/A4D_INTERNAL_PROGRAM_AND_GLOBAL_QUERY_STATIONARITY_2026_10_28.md
+new file mode 100644
+index 00000000..e125b760
+--- /dev/null
++++ b/02_REGISTRY/research/A4D_INTERNAL_PROGRAM_AND_GLOBAL_QUERY_STATIONARITY_2026_10_28.md
+@@ -0,0 +1,357 @@
++# Internal programme and complete QUERY stationary class
++
++28 октября 2026. `gvakhrushev/d0_15`, существующий Draft PR #334.
++Вход: `fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`.
++
++[Исполненный checker](sources/d0_internal_program_source_2026-10-28/check_program_source.py),
++[фактический результат](sources/d0_internal_program_source_2026-10-28/result.json).
++
++**Результат.** Проверен конкретный путь к оставшемуся замыканию: не фиксировать
++задачу извне, а хранить выбор QUERY в полном внутреннем программном регистре.
++Выведен его полный возвратный источник, включая смешение программ, сохраняемое
++матричное прошлое и настоящий изменяемый входной проектор. Отдельно полностью
++классифицированы стационарные точки возвратной цены на орбите отражений при
++обратимом прошлом. Это не ещё одно решение специальной метрики.
++
++**Граница.** Внутреннее кодирование задачи даёт точное зануление её coherent
++первых вариаций на чистой кодовой ветви, но само по себе НЕ выбирает закон и
++не отождествляет эти вариации с прежними finite-law сравнениями. Доказательство
++не утверждает физический допуск управляемого исполнителя, полноту X_N или
++выполнение всех независимых уравнений всего D0. `GR_closed=false`.
++
++## 0. Потреблённая сборка и изменённый вход
++
++- `A4D_TASK_FAITHFUL_RETURN_SOURCE_2026_10_28.md`: полный input-effect задачи,
++  его точный source-fibre и относительная ошибка над настоящим прошлым.
++- `A4D_REGULAR_APPARATUS_SOURCE_DESCENT_2026_10_28.md`: off-shell операторный
++  pullback на guarded аппаратном графе и регулярная C3/raw топология.
++- §7dh945–953 основного same-representative memo, `d4c700f7`: свободный
++  QUERY-normal остаётся ненулевым в каждом новом блоке; известная точная
++  пара исходных38-стадийных слов даёт QUERY и Z при одинаковом inventory.
++- Новейший §7di954–960, `fd35893d7`: все nonblank work-labels размещены вне
++  diagonal-copy support, и каждая независимая AF-frame строка имеет нулевую
++  Hermitian insertion. Этот результат сохраняется. Его171 проверка прочитана
++  как вход, НЕ перезапущена и не присвоена этому пакету.
++- Book01 §§01.1.2,01.1.6: Query является записанным интерфейсом. Изменяющий
++  различимые исходы параметр должен иметь код; отсюда НЕ следует запрет его
++  изменения. Book03 §03.26.1 уже содержит retained programme bit и конечный
++  блочно-диагональный исполнитель. Это основание проверить такой путь, а не
++  разрешение считать любую управляемую матрицу физически доступной.
++
++Новый вопрос после frame-теоремы: можно ли именно внутренним кодом убрать
++предпосылку фиксированного report law и завершить прежнюю source-recovery?
++Ниже ответ дан уравнениями для одного настоящего finite processor. Цены,
++области вариаций и нормы разных способов программирования не смешиваются.
++
++## 1. Полный контролируемый исполнитель и его действительный cut
++
++Пусть заданы m конечных равнодлинных полных слов с операторами U_a на одном
++рабочем носителе H, с одним protected embedding i. Их настоящие холодные
++блоки C_a=i*U_a i. На ПРОГРАММНОМ носителе C^m введём объявленный оператор
++
++    U_ctrl = sum_a |a><a| tensor U_a.                         (1)
++
++Если слова имеют N стадий, его конечное расписание есть
++G_t=sum_a |a><a| tensor g_(a,t), t=0,...,N-1. Все ветви, неиспользованные
++рабочие столбцы и code register остаются. Это полная конечная унитарная
++конструкция; физическая цена реализации каждого conditional G_t требует
++своего native lift. N controlled slots НЕ объявляются N исходными примитивами.
++
++Для программы v=sum_a v_a|a>, ||v||=1, настоящее входное вложение и проектор:
++
++    E_v = v tensor i, P_v=E_v E_v*,
++    C(v)=E_v*U_ctrl E_v=sum_a |v_a|^2 C_a,
++    F(v)|input=I-C(v)*C(v),
++    J(v)=-Tr log[(1-z)I+z C(v)*C(v)], 0<z<1.                (2)
++
++Никакой record не отбрасывается из (2): code-секторы контролируемого core
++сохраняются, а complement относительно P_v остаётся в полном F.
++
++Здесь объявлен именно co-transported input/return-cut chart. Его эквивалентная
++фиксированно-входная запись — ПОЛНОЕ echo U_v=R_v* U_ctrl R_v,
++R_v(|0> tensor i)=E_v. Обе ноги R_v и R_v* должны принадлежать реальному
++исполнению и оплачиваться. Непрерывный R_v — матричный comparison, не новый
++Golden primitive; огромный его native compiler здесь не выдан за исполненный.
++Старые записи не стираются, но текущая программа после полной обратной ноги
++может иметь ненулевые другие code-амплитуды; полная измеримость этих выходов
++сохраняется. Нельзя утверждать, что вся family сохраняет fixed classical
++program label, только потому что её central controlled core его сохраняет.
++При иной upstream подготовке сохраняется её собственный источник.
++
++Особенно важный отрицательный контроль: при исходном фиксированном cut и
++лишь ПРЯМОЙ подготовке U_ctrl R_v холодный блок двухпрограммного примера
++равен c cos(alpha), а НЕ c cos²(alpha)+sin²(alpha). Его return-Hessian
++при alpha=0 равен +2w0 вместо отрицательного значения(5). Источник тепла
++такого one-sided приготовления также нельзя объявить изоспектральным.
++Обе реализации проверены по полным операторам; они не отождествляются. В частности, заменить
++(2) средним sum |v_a|² J_a нельзя. Это другой функционал другой подготовки.
++
++### Чистая программа: строгая положительная часть результата
++
++В точке v=|0> любая касательная, меняющая амплитуды других code-секторов,
++имеет DC=0. Это верно также для произвольных protected-entangled изменений
++вложения: E_0=|0> tensor i, delta E=sum_(a!=0)|a> tensor X_a. Из block-diagonal
++U_ctrl следует
++
++    delta C=(delta E)*U_ctrl E_0+E_0*U_ctrl delta E=0.        (3)
++
++Условие изометрии выполнено в первом порядке; любая такая tangent может
++быть интегрирована локальной изометрической кривой. Не требуется ограничить
++X_a скалярным перемешиванием программы. Для endpoint fault delta U=H U_ctrl
++с H*=-H и H_00=0 его холодная insertion также нулевая. Подчёркиваем: при
++H_00!=0 этот вывод отсутствует.
++
++Следовательно на выбранном чистом code-секторе полный return-source по этим
++направлениям равен нулю вне и на Einstein-решении. Источник по реально
++меняющимся полям Y выбранной ветви, напротив, ТОЧНО остаётся D_Y J_0.
++Если branch source уже удовлетворяет прежней recovery, добавление этих
++code-changing tangent не портит его return-bound. Это не утверждение,
++что сама ветвь или выбранное поле теперь вынуждены.
++
++### Полное тепло не сокращается до выбранной программы
++
++На объявленном фиксированном INTERNAL clock при (1) полный thermal trace
++есть сумма trace всех code-блоков. Варьирование только E_v не меняет Delta,
++поэтому его heat-source нулевой. Для raw code-off-diagonal fault у исходного
++блочно-диагонального clock delta Delta внеблочна; rho_beta блочно-диагональна,
++и Tr(rho_beta delta Delta)=0. Это сохраняет полный Hodge carrier, а не
++выбрасывает невыбранные программы. Параметры сцены/Gram/beta сохраняют свои
++собственные строки. При другом физическом heat-map утверждение надо доказать
++заново, а не переносить по слову «programme».
++
++Если все m ветвей имеют одинаковое full-clock Z_a=Z_0, то H_ctrl=H_0+
++log(m)/beta. Эта настоящая положительная добавка НЕ вычитается. Она постоянна
++лишь в сравнениях того же fixed carrier/m. При физическом росте кода остаётся
++её реальная цена. Сравнение log(m)/beta относится к одному и тому же назначенному N;
++реальные дополнительные preparation/inverse/control стадии должны войти
++в новый N и его абсолютное тепло. Общий сложный controlled compiler здесь
++не исполнен.
++
++## 2. Второй источник и настоящий конечный контраст
++
++Используем ИМЕННО пару §7dh: C_0=cI, C_1=I, c=p³, p=(sqrt5-1)/2.
++Рассмотрим программу v(alpha)=cos(alpha)|0>+sin(alpha)|1>, q=sin²(alpha).
++Перед новым блоком оставим любое реальное прошлое K; пусть S=K*K>=0,S!=0,
++а t0>0 — действительный scalar return остальных неподвижных блоков.
++
++    b(q)=c+(1-c)q,
++    D(q)=(1-z)I+z t0 b(q)² S,
++    J(q)=-Tr log D(q),
++    w0=z t0 c² Tr[S D(0)^-1]>0.                            (4)
++
++Прямая производная даёт
++
++    J_q(0)=-2(1-c)w0/c,
++    J_alpha(0)=0,
++    J_(alpha alpha)(0)=-4(1-c)w0/c <0.                    (5)
++
++Ненулевой источник не был компенсирован архивом. Он оказался во втором
++порядке по coherent amplitude, поскольку dq/dalpha=0 в чистой программе.
++Это настоящая стационарная точка в ЭТОЙ Hilbert-preparation области, но
++не локальный минимум, когда указанное смешение допускается. Седловость
++НЕ является опровержением исходного стационарного принципа Book03.
++
++Отчёт на подготовленном входе имеет
++
++    e(q)=(1-b(q))/2=e(0)-(1-c)q/2.
++
++Поэтому в одностороннем, действительно ненулевом task-effect сравнении
++
++    lim_(q->0+) [J(q)-J(0)]/[e(q)-e(0)] = 4w0/c !=0.        (6)
++
++Это ровно прежний report-effect источник, а не новый физический закон.
++Граница q>=0 существенна. Нельзя выдавать q за гладкую двухстороннюю
++координату на pure-programme sphere: alpha~sqrt(q). Симметричная разность
++по +/-alpha здесь тождественно нулевая, потому что report-price чётна,
++а не потому, что две разные задачи стали одинаковыми.
++
++Два корректных утверждения надо сохранять вместе:
++
++1. Code-off-diagonal ПЕРВЫЕ Hilbert-вариации покрываются (3).
++2. Само (3) не доказывает исчезновение старых finite-law sources, не выбирает
++   задачу и не оправдывает смену её нормы. Тот же эффект возникает для ЛЮБОЙ
++   конечной таблицы программ, в том числе не имеющей отношения к Einstein.
++
++Если все полевые сравнения тоже переводятся только в такие изменения
++code-amplitude, их первые источники так же исчезают. Это потеря проверяемого
++полевого уравнения, а не вывод ОТО. Поэтому прежние реальные C3 field forks
++нельзя молча заменить pure-code Hilbert tangent. Если они сохраняются, их
++полные оценки остаются; если допускается finite-law изменение, (6) остаётся.
++
++Также изменение самой QUERY-матрицы внутри selected branch, U_0(s), не
++есть programme-off-diagonal fault. Для исходного unit-norm генератора
++§7dh имеем c'(0)=-2sqrt(1-c²) и
++
++    dJ/ds=w0*4sqrt(1-c²)/c >0.                             (7)
++
++Контролируемый регистр эту строку не отменяет. В этом состоит точная
++граница прежней идеи «внутри уже всё есть, значит дополнительных строк нет».
++
++## 3. Полная классификация стационарных QUERY при матричном прошлом
++
++Теперь решим задачу всей орбиты, а не только одной query-траектории.
++Это ТЕОРЕМА О ВОЗВРАТНОМ ЧЛЕНЕ. Для полного B её можно использовать только
++при доказанной нейтральности остальных источников либо с их явным бюджетом.
++Произвольный matrix-valued новый U может взаимодействовать с прошлым и
++менять full heat; его изоспектральность здесь не постулируется.
++
++Пусть U=U*=U^-1 — полное отражение, P — фиксированный rank-r вход, и
++
++    U = [ C  B* ; B  L ], C=C*,
++    B*B=I-C²,
++    D=(1-z)I+z K* C² K,
++    J_K(U)=-log det D,                                    (8)
++
++где K — фиксированная ОБРАТИМАЯ r-by-r матрица настоящего прошлого.
++Вариации U=[H,U], H*=-H, охватывают всю fixed-signature conjugacy orbit.
++Обозначим
++
++    M=K D^-1 K*>0,
++    G=-z(CM+MC),
++    Q=P G P  (нулевое продолжение вне input).
++
++Тогда
++
++    delta J=Tr(G delta C)=Tr([U,Q]H).
++
++Поэтому стационарность на всех таких вариациях эквивалентна [U,Q]=0.
++
++**Теорема 2 (необходимость и достаточность).**
++
++    delta J_K=0 на всей орбите
++        <=> C³=C и [C²,K K*]=0.                           (9)
++
++**Необходимость.** Из нижнего внедиагонального блока [U,Q]=0 получаем
++BG=0 и, значит, (I-C²)G=0. В собственном базисе C с eigenvalue c_i:
++
++    0=(1-c_i²)G_ii=-2z(1-c_i²)c_i M_ii.
++
++M_ii>0, следовательно c_i in{-1,0,1}: C³=C. Строки с c_i=0 дают
++G_ij=-z c_j M_ij=0, то есть M не смешивает zero и return подпространства:
++[C²,M]=0. Поскольку K обратима,
++
++    M^-1=(1-z)(K K*)^-1+z C²,
++
++и [C²,M]=0 эквивалентно [C²,K K*]=0.
++
++**Достаточность.** При (9) M не смешивает нулевой и +/-1 блоки. Внутри
++return-блока G_ij=-z(c_i+c_j)M_ij: между +1 и -1 оно нулевое, а внутри
++одного знака коммутирует с C. Значит [C,G]=0. Из B*B=I-C² следует, что B
++зануляет return-подпространство, на котором поддержан G, поэтому BG=0.
++Все блоки [U,Q] нулевые. QED.
++
++Это полная классификация указанной finite-return orbit, а не утверждение,
++что все эти направления физически допущены в D0. Если K вырождена,
++M_ii может быть нулём и необходимость C³=C уже неверна. Проверен конкретный
++контрпример C=diag(2/5,0), K=diag(0,1/2): источник нулевой, C³!=C. Незаметные
++прошлому направления не удаляются по названию и не включаются в theorem(9).
++
++Особенно важно, что одного C³=C недостаточно: настоящее ненормальное
++прошлое должно удовлетворять второму условию. Точный рациональный контроль
++с C=diag(-1,0,1) проверяет оба случая.
++
++## 4. Явный нижний source-bound: никакого поиска рангов или корней
++
++Для положительной внутренней области
++
++    0<c_min I<=C<=c_max I<I
++
++возьмём канонический skew H=[U,P]. Его operator norm ||H||=||B||<=1.
++Непосредственно
++
++    delta C=P[H,U]P=-2(I-C²),
++    delta J=4z Tr[M C(I-C²)]>0.                            (10)
++
++При w=z Tr(M C²)>0 получаем
++
++    delta J/w >=4 c_min(1-c_max²)/c_max² >0.                (11)
++
++Граница не содержит обусловленности K или 1/T. История не делает этот
++нормированный источник малым на фиксированном положительном collar.
++Для scalar C=cI, деление H на ||H||=sqrt(1-c²) восстанавливает ровно (7).
++Это обобщает исходную scalar QUERY-строку на полный положительный
++matrix-valued corner, когда вся conjugacy orbit рассматривается.
++
++Если в РЕАЛЬНОЙ той же норме дополнительный источник R_other удовлетворяет
++||DR_other||/w < RHS(11), его недостаточно для компенсации (10). Если такой
++bound не установлен, theorem(11) не исключает баланс с heat/Info/Cost.
++Никакая новая компенсирующая цена не назначается. Для scalar parked QUERY
++из исходного §7dh heat действительно изоспектрален, и граница применяется
++к его полному B, сохраняя все заявленные предпосылки.
++
++## 5. Что изменилось в общей попытке закрытия
++
++Новейшая off-copy frame-теорема уже включает независимые encode/decode
++строки на СВОИХ реальных support. Task-faithful theorem включает все
++same-effect реализации исходного отчёта. Guarded аппаратный спуск
++контролирует подготовительные/reader/COPY направления. Они сохраняются.
++
++Теорема(3) даёт ещё одно проверенное расширение: чистую programme-ветвь
++можно рассматривать внутри полного конечного контроллера, не объявляя
++сам код внешним наблюдателем. Но это новое internal-program implementation,
++его controlled capabilities не доказаны только матричной записью(1).
++
++Самое существенное для parent proof: два ранее смешиваемых вопроса теперь
++имеют разные ТОЧНЫЕ ответы. «Можно ли хранить выбор внутри?» — да, с(1)–(3)
++и полным carrier/теплом. «Следует ли из этого исчезновение любой свободной
++report-law строки?» — нет, её прежний первый source сохраняется в(6),(7),
++а весь stationary класс при свободной orbit задан(9).
++
++Таким образом не нужно начинать ещё одну геометрическую модель или
++перепроверять все Einstein-семейства. Для завершения нативной импликации
++нужен фактический code/evaluator map исходного процесса и его реальные
++сравнения: фиксирован ли evaluator при состоянии программы; входят ли
++selected-code изменения QUERY; как те же comparisons поднимают field forks
++с их истинным gain/norm. Эти maps должны поступать из исходных операций,
++не из требования DI_Einstein=0. Book01 finite-observable критерии сами по
++себе не выбирают их; Book03 прямо сохраняет actuation/admission условия.
++
++Это не «универсальная невозможность» и не утверждение, что надо доказать
++единственность всех физик. Это завершённое вычисление конкретного оставшегося
++source-перехода. Без указанного map полное закрытие ОТО в этой попытке
++не получено. Статусы существующих положительных результатов не меняются.
++
++## 6. Реальное исполнение
++
++362 проверки выполнены обычным Python и python -O, JSON совпали побайтно.
++Повторный обычный replay также сохранён. Python3.13.5, NumPy2.3.5,
++SymPy1.14.0; SciPy и mpmath применены для независимых numerical controls.
++
++- Две исходные38-стадийные программы:4G/24CX/10SourceI, все32 столбца.
++- Их38-slot управляемое block-diagonal расписание: все64 столбца и
++  неизменяемая кодовая метка. Это НЕ утверждение, что conditional slot
++  является одним исходным native primitive или бесплатно исполним.
++- Действительно движущийся P_alpha и полный64-dimensional F, без
++  удаления56 неактивных столбцов: ошибка determinant<=1.70e-21;
++  ошибка cold operator<=5.56e-17.
++- Entangled code-changing preparation jets и off-code endpoint insertion.
++- Исходный same-code QUERY source не исчез: при native z=2^-20
++  7.000613008648328e-6. Нормировка unit generator соответствует §7dh,
++  она не смешивается с прежним commutator generator меньшей нормы.
++- Исходный полный finite programme gap=7.2042261899642877793e-6;
++  его coherent amplitude Hessian=-5.5035415618954218256e-6.
++- Полный paired-clock trace объявленного controlled core вычислен из
++  всех4864 spectral modes;
++  programme добавка log2/beta=0.9073414389560485 сохранена.
++  Гипотетический matched homogeneous scene имел бы1033600 мод;
++  такая большая матрица НЕ диагонализировалась.
++- Nonnormal/singular past controls при100 десятичных знаках, до w~1.4e-58,
++  подтверждают(5),(6) без замены gain единицей.
++- Точная рациональная проверка обеих сторон(9) на representative strata;
++  в аналитическом proof(9) охвачены все размерности, не только примеры.
++- Шесть непрестановочных matrix-past controls (10),(11), independent
++  five-point scalar derivative: максимальная ошибка7.11e-13.
++
++362 включает primitive/unitarity и identity checks; это НЕ362 независимый
++физический эксперимент. Не исполнены AF356-owner replay, большой полевой
++компилятор, all42-root, full1e6 heat, Lean или repository CI. Нет независимой
++научной приёмки, merge или claim/registry promotion.
++
++## Внешний первоисточник стандартного programming-контекста
++
++M. A. Nielsen, I. L. Chuang, *Programmable Quantum Gate Arrays*,
++Phys. Rev. Lett.79,321 (1997), DOI10.1103/PhysRevLett.79.321,
++arXiv:quant-ph/9703032. Программируемые операторы и ограничения точной
++конечномерной универсальности стандартны. Здесь finite programme register
++не назван новым открытием или точным универсальным контроллером бесконечного
++семейства унитарных матриц. Source-formulas и classification(9) доказаны выше.
+diff --git a/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md b/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md
+index 96710693..b92122f9 100644
+--- a/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md
++++ b/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md
+@@ -88905,6 +88905,789 @@ print(json.dumps(result,indent=2,sort_keys=True))
+ ```
+ <!-- END 7di OFFCOPY FRAME RECEIPT -->
+ 
++## 7dj. The full native regular carrier needs an actual readiness operation
++
++28 October 2026. SAME #334 / `constitutive/native-programme-v1`, native
++realization and final composition. Input `fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`.
++Consume §7di954–960, the original
++[AF right-module/regular-carrier and preparation theorem, §4](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md#4-where-the-operators-live-and-the-price-of-the-full-regular-carrier),
++and the incoming operator-apparatus source. The named next application
++is to place the new frame in the ACTUAL native operator algebra and
++use its true canonical input, rather than identify a working-module
++state with a regular GNS state.
++
++The direct unprepared identification fails: for the declared class its
++cold operator sees the work trace, which is constant on a conjugacy
++family. The intended geometric source is lost. A concrete coherent
++readiness target recovers the source, with its genuine positive gain
++and retained failure branch. It requires a real blank flag and an
++implementation of the displayed controlled operation; those resources
++are not supplied by the algebraic identity. No physical closure is
++claimed from an unimplemented matrix target.
++
++Incoming `1595b9bd` and all three files of the
++[internal-programme/global-QUERY theorem](A4D_INTERNAL_PROGRAM_AND_GLOBAL_QUERY_STATIONARITY_2026_10_28.md)
++are preserved. Their pure-code statement and unrestricted conjugacy
++classification are kept distinct from the native left-algebra orbit
++used below. Their362 checks are consumed, not rerun or counted here.
++
++### 1. Reuse the actual doubled-path algebra, with its real trace
++
++Let the old AF block sizes be A_j, j=0,1, and M=[[1,1],[1,0]]. At
++depth k let m_vj=(M^k)_vj and d_v=(M^k A)_v. The same right-module
++decomposition as the original three/six-level theorem gives
++
++    H_(n+k)=direct_sum_j K_j tensor C^(A_j),
++    dim K_j=sum_v m_vj d_v=(M^(2k)A)_j=:D_j,
++    End_(right A_n)(H_(n+k))=M_(D_0) direct_sum M_(D_1)
++                           =A_(n+2k).                  (961)
++
++The identification is the OWNED actual path fold: concatenate the
++row's k-step path with the reversed column's k-step path. Cutting
++at the midpoint is its inverse. It is not an arbitrary embedding
++of every matrix into an unspecified native algebra. The §7di frame
++and all transported middle operators are in this right-module algebra.
++
++Their working multiplicities are A_j. On the full regular GNS carrier
++of A_(n+2k), the multiplicities are instead D_j. Ordinary Book traces
++must use the latter. A defining protected Spin/spectator factor is
++included once, not replaced by its own regular representation.
++
++Let V_a=B E_a and e_ab=V_a V_b* for the complete §7di work frame after
++its Golden encoding, and let alpha:A_n->A_(n+2k) be the actual folded inclusion.
++Each e_ab intertwines old left/right actions. The fixed normalized
++AF trace therefore obeys, for every old x,
++
++    tau_(n+2k)(e_ab alpha(x))
++        =gamma delta_ab tau_n(x), gamma=p^(2k).        (962)
++
++To see the coefficient, e_aa has block ranks A_j, and in block j its
++weighted trace with alpha(x) is
++p^(n+2k+1+j) Tr(x_j). Off-diagonal work matrix units have zero trace
++with alpha(x). Thus (962) is the original preparation calculation
++applied to the changed complete frame; no normalized trace replaces
++the ordinary Book determinant. It is used only to compute the TRUE
++canonical-input compression.
++
++### 2. The original canonical regular input does not prepare work zero
++
++Write J_can for the original trace-preserving GNS inclusion from H_n
++to H_(n+2k), and rho for full regular LEFT multiplication. For an
++actual logical word W on work tensor protected K, the algebra element is
++
++    U_alg=I+sum_ab e_ab tensor (W_ab-delta_ab I_K).
++
++Using (962) on every pair of old input vectors gives the exact operator
++
++    C_can=(J_can* tensor I_K)rho(U_alg)(J_can tensor I_K)
++         =I_old tensor [I_K+gamma(Tr_work W-q_work I_K)]. (963)
++
++No old state, right column or work complement is removed. In
++particular, if W=W_work tensor I_K and Tr W_work is fixed, C_can is
++constant. The actual return-price covector on that family is zero.
++For a fixed-signature reflected word at a common real INTERNAL clock,
++the complete regular heat is also constant on its conjugacy family,
++including all true multiplicities. That matched full B has zero field
++gain; dividing it by the old positive working gain would be invalid.
++
++This is a scoped failure of the unprepared regular-input substitution,
++not a physical D0 no-go and not an erasure of all joint observables.
++It also does not contradict the incoming global-QUERY theorem: the
++native left-algebra orbit constrained by (963) is a proper restricted
++orbit. Its canonical input projection is not an arbitrary native
++left projection. The global generator [U,P_can] need not belong to
++this restricted actuation algebra.
++
++### 3. The prepared branch is explicit, and has a real probability
++
++Let e=e_00. Equation (962) gives on ALL unknown old/K inputs
++
++    J_can* rho(e) J_can=gamma I,
++    J_can* rho(I-e) J_can=(1-gamma)I.                  (964)
++
++The successful preparation map is V_prep=rho(e)J_can/sqrt(gamma).
++It is an isometry, and the q_work maps
++rho(e_a0)J_can/sqrt(gamma) are mutually orthonormal. The complete U_alg
++acts on them by the original W. Hence conditioning on a real READY
++outcome recovers the intended cI cold corner, including all old input
++columns. It is not the unprepared identity vector: the failed
++probability 1-gamma is real and must retain its actual record and price.
++
++Also distinguish the rank of this prepared-input isometry from the
++rank of the whole left projection rho(e). They need not agree. Choosing
++one as the physical Book cut in place of the other is another change
++of execution, not a harmless trace convention.
++
++### 4. A concrete coherent readiness interface retains all failures
++
++There is a direct MATRIX target if one actual extra flag is supplied
++in |0>. Define on flag tensor the whole native carrier
++
++    M_e=[[I-e,e],[e,I-e]],
++    U_flag=M_e diag(I,U_alg) M_e,
++    <0|U_flag|0>=I-e+e U_alg e,
++    C_flag=(1-gamma+gamma c)I=:c_eff I.                (965)
++
++M_e is unitary on every column. Both of its occurrences and the
++controlled full word belong to the required implementation. This is
++coherent recording and uncomputation of a readiness test; no failure
++branch is postselected away. The displayed flag can have nonzero
++other output amplitudes and is retained. It cannot simply be reused
++as a fresh blank on the next block.
++
++At fixed e and gamma, an arbitrary middle insertion X has the actual
++canonical insertion X_eff=gamma X. For the existing actual positive
++scalar calibration lambda, define the new calibration by
++
++    lambda_eff=(gamma c/c_eff)lambda,
++    -(2/(c_eff lambda_eff))Herm X_eff
++            =-(2/(c lambda))Herm X.                   (966)
++
++For c>0 and gamma>0 its sign is unchanged, but its size is different.
++On the exact scalar target D_I c=-c lambda/2, this is precisely
++-2 D_I c_eff/c_eff. At a compiled centre retain that centre's actual
++c and lambda and all previously recorded target-comparison errors.
++This transports the existing OPERATOR source estimate and its
++off-shell decoder map exactly. Use the actual accumulated c_eff,
++T_eff, w_eff and Lambda_eff, not the old ideal gain. gamma here is
++the newly computed AF readiness p^(2k); it is not silently identified
++with an earlier report-shape coefficient or charged twice.
++
++The operator identity permits the same nonnormal-past bound. Finite
++middle errors and finite field comparisons must be transported with
++the actual calibration (966). Errors of implementing M_e, the
++controlled word or the flag itself are additional. At each finite
++template the genuine lambda_eff is positive, so the existing
++repetition schedule can be applied AFTER all real resources, counts
++and errors are fixed; no uniform efficiency as k grows is asserted.
++Independent primitive variations inside a controlled-word compiler
++are not automatically the lifted middle variations X: its actual
++false-branch source and control supports must also be proved skew,
++transported to the old graph, or bounded. Endpoint accuracy alone
++does not discharge that source obligation.
++
++### 5. Independent guarded preparation rows are retained, not linked away
++
++Let D be the diagonal-copy support of §7di, now in the native
++right-module algebra, with e<=D. All nonblank work frames are outside
++D. On the complete flag support D_F=diag(D,D), the target has
++
++    D_F U_flag D_F=D_F+(c-1)diag(e,0).                 (967)
++
++An independently varied left or right M_e implementation whose
++raw generators stay inside D_F transports to a skew H=D_F H D_F.
++The middle word is held fixed for this variation. Write E_old for
++the canonical conditional expectation computed by J_can. Since e
++and D commute with alpha(A_n), trace cyclicity gives
++E_old([H_00,e])=0 and removes the off-support blocks. It follows that
++
++    Herm E_old((H U_flag)_00)=0,
++    Herm E_old((-U_flag H)_00)=0.                     (968)
++
++The identity is operator-valued on the protected factor as well:
++e,D act there as identities. Every independent temporal half is
++covered separately. A realization with a new support outside D_F
++must supply that source; the exact matrix target alone does not
++guarantee its compiler has these guards. No arbitrary continuously
++tunable native primitive is introduced.
++
++The actual off-diagonal flag corners are eU(I-e) and (I-e)Ue.
++Their E_old expectations vanish. Consequently pure code-changing
++first variations of the initial |0> flag also have zero return
++source, including protected-entangled first jets. This consumes the
++owned pure-programme argument at its proper scope. It does not supply
++the physical flag preparation, a mixed-state boundary theorem, an
++optimum or disappearance of the finite comparison with another flag
++state. Its field source in (966) remains nonzero.
++The real preparation word retains its own stages and source. As the
++incoming programme owner emphasizes, a one-sided preparation and a
++complete co-transported echo are not the same price/variation chart.
++
++Whole heat is not declared zero for arbitrary independent raw faults.
++It uses the actual enlarged carrier and actual controlled/flag/frame
++schedule, with the existing full thermal bound if its hypotheses hold.
++No unimplemented M_e or controlled call is priced as one native gate.
++
++A necessary negative control keeps the distinction sharp. Let the
++READY projection rotate towards the first nonblank work label while
++U_alg is fixed. In the actual QUERY example below,
++
++    D gamma=0, but D C_flag=4 gamma a p I !=0.          (969)
++
++This direction mixes D with its complement. Constant readiness
++probability does not remove its true source. A freely moving READY
++test therefore still needs an actual task constraint or equation;
++it cannot be frozen merely because the desired field solves Einstein.
++
++### 6. Exact native finite comparison on the correct full carrier
++
++The checker executes AGAIN only the two small original38-stage words
++of §7dh on all32 columns: A has cold p^3 I8, B has cold I8, and both
++have the actual inventory **4G+24CX+10SourceI**. The full work matrices are respectively
++I_port tensor [[p^3,2ap],[2ap,-p^3]] and I_port tensor diag(1,-1),
++each with work trace0. Spin and the original oldRIGHT are exact
++identity factors on every column.
++
++The changed k=4 frame places them in A_8=M55 direct_sum M34. The
++actual working AF dimension is89. On full regular GNS with the
++defining8-dimensional Spin/oldRIGHT factor, the dimension is33448,
++the true canonical input rank16 and the full left-ready rank712.
++Both endpoints have1424 negative and32024 positive modes. The
++full identity complement and regular right multiplicities55,34 stay.
++
++For both words the ORIGINAL canonical regular input gives
++
++    C_can=(1-4p^8)I16,
++    F_can=8p^8(1-2p^8)P_can,                          (970)
++
++whereas their prepared cold corners still differ, p^3 versus1.
++The entire fixed-signature conjugacy family has zero derivative
++in (963), while a rational prepared-direction control has Book
++derivative6048/18995 at its stated z,t. This tests loss of source,
++not merely coincidence of two isolated scalar prices.
++
++All190 exact checks pass, with byte-identical normal/optimized receipts.
++The89 actual doubled paths are checked as a bijection onto the55/34
++simple blocks. All16 work matrix units are tested in (962), covering
++the whole linear map used by (963). The complete flag MATRIX target
++is multiplied on all178 working-AF/flag columns, with both independent
++frame/flag first-source controls and the nonzero READY-orientation
++control. Its full regular interpretation follows by the explicit
++block representation and multiplicities.
++
++The inherited frame theorem gives the unflagged represented schedule
++104 specified calls:26G+24CX+54SourceI. Its104-call full-column product is
++not rerun: the algebra representation is applied multiplicatively to
++the previously checked frame and the newly executed32-column middles.
++No dense33448 heat, giant nonlinear GR word, controlled-flag compiler
++or actual physical state preparation is claimed. The flag target has
++NO assigned native stage count until its implementation is provided.
++
++### 7. Parent substitution and exact remaining application
++
++The abstract working frame is now located in its actual native
++operator algebra with full regular multiplicities. Direct use of its
++unprepared cyclic input is ruled out as a source-preserving bridge.
++The explicit coherent-readiness target instead transports the old
++normalized operator source by (966), and its declared guarded
++preparation rows by (968). It can therefore consume the existing
++regular apparatus/task/frame recovery when its real implementation,
++extra flag, comparisons, clock and all other prices are supplied.
++
++This is not a new physical admissibility definition. The remaining
++map is concrete: the actual native READY-copy/controlled execution
++and genuine flag preparation on this carrier, with every retained
++failure, independent support and full price. The original Book01
++observable criteria and Book03 §03.26.1–.4 do not by themselves grant
++those actuators. The broader physical X_N completeness remains open.
++
++Assembly: supporting direct representation/source application to
++§7di and the incoming nonlinear source theorem, with the stated
++physical premises retained. Only this primary and its existing brief
++are written. No new task/node, scientific acceptance, Ready, claim
++promotion or merge. `GR_closed=false`.
++
++Exact checker SHA256: `1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f`.
++Observed receipt SHA256: `01e14a9d561da0879bd9c75b66054484f9efd1ef58e6f5ec4e9899707046f74a`.
++The following blocks are the exact executed bytes.
++
++
++<!-- BEGIN 7dj REGULAR CYCLIC SOURCE CHECKER -->
++```python
++#!/usr/bin/env python3
++"""Exact regular-AF application of the owned off-copy frame.
++
++All regular columns are represented by exact simple blocks and their actual
++right multiplicities. No huge dense heat or physical preparation is claimed.
++"""
++import ast
++from collections import Counter
++import hashlib
++import importlib.util
++import json
++from pathlib import Path
++import sys
++import sympy as s
++
++ROOT=Path.cwd()
++PRIMARY=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
++AF_PIN='9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee'
++NATIVE_PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
++TREE_PIN='b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba'
++FRAME_PIN='de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88'
++OWNER_PIN='012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6'
++checks=[]
++def require(ok,label):
++    if not bool(ok):raise RuntimeError(label)
++    checks.append(label)
++def load(name,rel,pin):
++    path=ROOT/rel
++    require(hashlib.sha256(path.read_bytes()).hexdigest()==pin,'input '+name)
++    spec=importlib.util.spec_from_file_location(name,path)
++    module=importlib.util.module_from_spec(spec);sys.modules[name]=module;spec.loader.exec_module(module)
++    return module
++AF=load('regular_cyclic_af','02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py',AF_PIN)
++N=load('regular_cyclic_native','02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py',NATIVE_PIN)
++owner=ROOT/'02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md'
++require(hashlib.sha256(owner.read_bytes()).hexdigest()==OWNER_PIN,'owned regular-algebra and preparation proof')
++a,p=AF.a,AF.p
++source=PRIMARY.read_text()
++def functions(marker,pin,names):
++    code=source.split('<!-- BEGIN '+marker+' -->\n```python\n')[1].split('```\n<!-- END '+marker+' -->')[0]
++    require(hashlib.sha256(code.encode()).hexdigest()==pin,'published '+marker)
++    nodes=[x for x in ast.parse(code).body if isinstance(x,ast.FunctionDef) and x.name in names]
++    require({x.name for x in nodes}==set(names),'exact requested builder functions '+marker)
++    exec(compile(ast.Module(body=nodes,type_ignores=[]),'<owned '+marker+'>','exec'),globals())
++functions('7dg GOLDEN AF FRAME CHECKER',TREE_PIN,{'mat','paths','pairs','rotation','product'})
++functions('7di OFFCOPY FRAME CHECKER',FRAME_PIN,{'layout'})
++def equal(A,B,label):require(AF.zero(A-B),label)
++def symbolic(A):return mat(A.xreplace({N.A:a}).xreplace({s.sqrt(5):2*p+1}))
++
++# Changed application: original two native38-stage words, followed by the
++# already proved depth4 frame representation. The unchanged73-call frame
++# fixture is not rerun or counted here.
++def execution(word):return N.Execution(5,(0,1),(4,),tuple(word),N.G_CX_SOURCE_I,0,(2,3))
++def swap(i,j):return (N.Gate('CX',(i,j)),N.Gate('CX',(j,i)),N.Gate('CX',(i,j)))
++route=swap(0,1);si=N.Gate('SourceI',(0,2,3));v=(N.Gate('G',(1,)),)
++rg=route+(N.Gate('G',(0,)),)+route
++ri=N.inverse_word(execution(rg),max_qubits=5,max_expanded_stages=100)
++query=ri+route+(si,si)+route+rg
++vi=N.inverse_word(execution(v),max_qubits=5,max_expanded_stages=100)
++words=[execution(v+vi+query),execution(v+query+vi)]
++full=[]
++for word in words:
++    N.validate_execution(word,max_qubits=5,max_expanded_stages=100)
++    inv=N.inventory(word,max_qubits=5,max_expanded_stages=100)
++    require((inv.gate_count,inv.g_count,inv.cx_count,inv.source_i_count,inv.cut_rank)==(38,4,24,10,8),'actual full native38 inventory')
++    full.append(product([symbolic(N.gate_matrix(word,g,max_qubits=5,max_expanded_stages=100)) for g in word.gates],32))
++workA=s.kronecker_product(s.eye(2),s.Matrix([[p**3,2*a*p],[2*a*p,-p**3]]))
++workB=s.kronecker_product(s.eye(2),s.diag(1,-1))
++equal(full[0],s.kronecker_product(workA,s.eye(8)),'all32 native A columns and restored Spin/oldRIGHT')
++equal(full[1],s.kronecker_product(workB,s.eye(8)),'all32 native B columns and restored Spin/oldRIGHT')
++equal(s.trace(workA),0,'A work trace fixed')
++equal(s.trace(workB),0,'B work trace fixed')
++
++f=layout(0,4,4);E,J,ops=f['E'],f['J'],f['ops'];d,D=J.cols,J.rows
++B=product([rotation(D,op['rows']) for op in ops],D)
++V=mat(B*E);I=s.SparseMatrix(s.eye(D));R=mat(V*V.T)
++equal(V[:,:d],J,'same canonical working inclusion')
++equal(V.T*V,s.eye(4*d),'complete changed work frame')
++segments=AF.segments(1,1,4)
++owners={};paths_at={}
++for v0,block in enumerate(segments):
++    for oldtype,path,off in block:
++        owners[v0,off]=oldtype;paths_at[v0,off]=(oldtype,path)
++group=[[],[]];row_owners=[[],[]];fold_positions=[[],[]]
++long_segments=AF.segments(1,1,8)
++long_addr={(i,path):(j,off) for j,block in enumerate(long_segments) for i,path,off in block}
++for index,(v0,row,col) in enumerate(f['fine']):
++    j,cp=paths_at[v0,col];i,rp=paths_at[v0,row]
++    folded=rp+tuple(reversed((j,)+cp[:-1]))
++    endpoint,position=long_addr[i,folded]
++    require(endpoint==j,'legal doubled path endpoint '+str(index))
++    group[j].append(index);row_owners[j].append(i);fold_positions[j].append(position)
++sizes=[len(x) for x in group]
++require(sizes==[55,34] and tuple(sizes)==AF.counts(8),'actual right-module algebra is A8')
++for j in (0,1):
++    require(sorted(fold_positions[j])==list(range(sizes[j])),'all doubled paths bijective block '+str(j))
++
++def blocks(M):
++    return [s.SparseMatrix(M.extract(g,g)) for g in group]
++def canonical_corner(M):
++    # All old input columns: true normalized canonical J_(0,8), with the
++    # original forced AF trace weights and every regular right column.
++    bs=blocks(M);vals=[]
++    for oldtype in (0,1):
++        vals.append(AF.red(sum(p**(8+j-oldtype)*sum(bs[j][r,r]
++                    for r,i in enumerate(row_owners[j]) if i==oldtype) for j in (0,1))))
++    return s.diag(*vals)
++equal(canonical_corner(I),s.eye(2),'true canonical cyclic normalization on both unknown old columns')
++gamma=p**8
++units={}
++for b in range(4):
++    for c in range(4):
++        units[b,c]=mat(V[:,b*d:(b+1)*d]*V[:,c*d:(c+1)*d].T)
++        equal(canonical_corner(units[b,c]),gamma*(int(b==c))*s.eye(d),'full canonical expectation of work matrix unit '+str((b,c)))
++e=units[0,0]
++equal(canonical_corner(e),gamma*s.eye(d),'actual preparation probability p8 for every old input')
++equal(canonical_corner(I-e),(1-gamma)*s.eye(d),'all unprepared failures retained')
++
++U=[];regular=[];ordinary=[]
++for label,W in [('A',workA),('B',workB)]:
++    UW=mat(V*s.kronecker_product(W,s.eye(d))*V.T+I-R)
++    U.append(UW);bs=blocks(UW);regular.append(bs)
++    # Verify decomposition has no omitted inter-block matrix element.
++    equal(UW.extract(group[0],group[1]),s.zeros(sizes[0],sizes[1]),'right-module block guard '+label)
++    equal(UW.T*UW,I,'complete new working endpoint unitary '+label)
++    equal(UW.T,UW,'complete endpoint reflection '+label)
++    equal(J.T*UW*J,W[0,0]*s.eye(d),'working canonical cold corner '+label)
++    equal(canonical_corner(UW),(1-4*gamma)*s.eye(d),'FULL regular canonical cold corner '+label)
++    equal(e*UW*e,W[0,0]*e,'conditional ready corner '+label)
++    equal(canonical_corner(e*UW*e),gamma*W[0,0]*s.eye(d),'paid ready amplitude before division '+label)
++    for b in range(4):
++        rhs=s.zeros(D)
++        for c in range(4):rhs+=W[c,b]*units[c,0]
++        equal(UW*units[b,0],rhs,'prepared full work action '+label+str(b))
++    traces=[AF.red(s.trace(x)) for x in bs]
++    negatives=[AF.red((sizes[j]-traces[j])/2) for j in (0,1)]
++    require(negatives==[2,2],'two real negative work modes in each native block '+label)
++    ordinary.append({'block_sizes':sizes,'block_traces':[str(x) for x in traces],
++                     'full_regular_negative_modes':int(8*sum(sizes[j]*negatives[j] for j in (0,1)))})
++
++e_ranks=[AF.red(s.trace(x)) for x in blocks(e)]
++regdim=8*sum(x*x for x in sizes);readyrank=8*sum(sizes[j]*e_ranks[j] for j in (0,1))
++require((regdim,readyrank)==(33448,712),'full regular carrier and left-ready rank')
++can=1-4*gamma
++equal(canonical_corner(U[0]),canonical_corner(U[1]),'native distinct words have same unprepared cold operator')
++equal(1-can*can,8*gamma*(1-2*gamma),'unprepared feedback on true rank16 canonical input')
++require(not AF.zero(p**3-1),'prepared working effects remain different')
++require(not AF.zero(can-p**3) and not AF.zero(can-1),'unprepared input is neither prepared word')
++require(4*gamma!=1,'work and identity complement not silently normalized away')
++
++# A concrete CONDITIONAL preparation remedy. A genuine extra blank flag
++# allows a coherent two-outcome projector copy. This is an exact matrix
++# target only: no native compiler or free flag is being supplied here.
++M=(I-e).row_join(e).col_join(e.row_join(I-e))
++equal(M.T*M,s.eye(2*D),'full coherent-ready flag target is unitary')
++Dflag=s.diag(f['diag'],f['diag'])
++Eflag=s.diag(e,s.zeros(D))
++equal(Dflag*(M-s.eye(2*D)),M-s.eye(2*D),'coherent-ready calls stay in diagonal-copy and flag support')
++for label,UW,W in zip(('A','B'),U,(workA,workB)):
++    controlled=s.diag(I,UW)
++    flagged=mat(M*controlled*M)
++    equal(flagged.T*flagged,s.eye(2*D),'all178 flag-target columns retained '+label)
++    corner=flagged[:D,:D]
++    equal(corner,I-e+e*UW*e,'actual flag-zero corner including failure branch '+label)
++    equal(canonical_corner(corner),(1-gamma+gamma*W[0,0])*s.eye(d),'canonical flagged return with real readiness '+label)
++    equal(s.trace(flagged),D+s.trace(UW),'flagged whole spectrum trace retained '+label)
++    equal(Dflag*flagged*Dflag,Dflag+(W[0,0]-1)*Eflag,'complete diagonal/flag compression '+label)
++    equal(canonical_corner(flagged[:D,D:]),s.zeros(d),'actual pure-flag preparation cross source zero '+label)
++    # Independent raw end insertions: one diagonal-copy skew and one
++    # flag-mixing skew, each on the original declared native blocks.
++    first,second=ops[0]['rows'][0]
++    Hd=s.MutableSparseMatrix(D,D,{(first,second):1,(second,first):-1})
++    for kind,H in [('frame',s.diag(Hd,s.zeros(D))),
++                   ('flag',s.zeros(D).row_join(e).col_join((-e).row_join(s.zeros(D))))]:
++        equal(Dflag*H*Dflag,H,'actual '+kind+' source support '+label)
++        left=canonical_corner((H*flagged)[:D,:D])
++        right=canonical_corner((-flagged*H)[:D,:D])
++        equal(left+left.T,s.zeros(d),'independent left '+kind+' Hermitian source '+label)
++        equal(right+right.T,s.zeros(d),'independent right '+kind+' Hermitian source '+label)
++    # Rotating the readiness projector towards a nonblank work label
++    # violates that guard; fixed readiness probability alone is insufficient.
++    if label=='A':
++        de=units[1,0]+units[0,1]
++        equal(canonical_corner(de),s.zeros(d),'moving ready orientation keeps its probability fixed')
++        extra=-de+de*UW*e+e*UW*de
++        equal(canonical_corner(extra),4*gamma*a*p*s.eye(d),'free ready orientation has nonzero return source')
++        require(not AF.zero(canonical_corner(extra)),'ready orientation cannot be erased by constant probability')
++cc,gg=s.symbols('c gamma',positive=True)
++dc=s.symbols('dc',real=True)
++ceff=1-gg+gg*cc;lam=-2*dc/cc;leff=-2*gg*dc/ceff
++require(s.factor(leff-(gg*cc/ceff)*lam)==0,'actual flagged lambda is gamma*c/ceff times old lambda')
++
++# The same source loss holds for a real fixed-signature orbit, not just
++# two equal values. The identity verified for all16 units gives the
++# entire operator formula before differentiating this small witness.
++t=s.symbols('t',real=True)
++Q=s.Matrix([[1-t*t,-2*t],[2*t,1-t*t]])/(1+t*t)
++Wtheta=s.kronecker_product(s.eye(2),Q*s.diag(1,-1)*Q.T)
++ct=s.factor(Wtheta[0,0]);cyclic=s.factor(1+gamma*(s.trace(Wtheta)-4))
++require(s.simplify(s.diff(cyclic,t))==0,'entire canonical cyclic conjugacy source vanishes')
++require(s.diff(ct,t).subs(t,s.Rational(1,3))!=0,'genuine prepared source has nonzero tangent')
++z=s.symbols('z',positive=True)
++prepared_der=s.factor(-2*z*ct*s.diff(ct,t)/(1-z+z*ct*ct))
++require(prepared_der.subs({t:s.Rational(1,3),z:s.Rational(1,7)})!=0,'prepared Book derivative cannot be transported with zero gain')
++
++frame_inventory=Counter({'G':22,'SourceI':44})
++native_inventory=Counter({'G':4,'CX':24,'SourceI':10})
++inventory=frame_inventory+native_inventory
++require(sum(inventory.values())==104,'actual common new104-stage count')
++result={'status':'PASS','checks':len(checks),'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++        'input_pins':{'AF':AF_PIN,'native':NATIVE_PIN,'tree':TREE_PIN,'frame':FRAME_PIN,'regular_owner':OWNER_PIN},
++        'regular_representation':{'working_AF_dimension':D,'operator_AF_level':8,'simple_blocks':sizes,
++          'right_multiplicities':sizes,'protected_spectator':8,'full_regular_dimension':regdim,
++          'canonical_input_rank':16,'left_ready_projection_rank':int(readyrank),
++          'regular_negative_modes':[x['full_regular_negative_modes'] for x in ordinary],
++          'regular_positive_modes':regdim-ordinary[0]['full_regular_negative_modes']},
++        'word':{'native_calls_each':38,'new_representation_calls_each':104,'new_inventory':dict(inventory),
++          'full104_schedule_replayed':False,'all32_native_columns_executed':True,
++          'regular_application':'exact55/34 blocks with all right multiplicities, not a dense33448 matrix'},
++        'corners':{'working_A':'p^3 I16','working_B':'I16','canonical_both':'(1-4p^8) I16',
++          'canonical_feedback_both':'8p^8(1-2p^8) Pcanonical','preparation_probability':'p^8',
++          'preparation_failures':'1-p^8','prepared_conditional_law_recovered':True,
++          'coherent_flag_target':'(1-p^8+p^8*c) I16',
++          'coherent_flag_target_native_emission':False,
++          'coherent_flag_gain_factor':'p^8*c/(1-p^8+p^8*c)',
++          'coherent_guarded_frame_source':'zero first Hermitian source; full heat still retained',
++          'coherent_pure_flag_preparation_source':'zero first source only, not mixed-state or resource admission',
++          'independent_ready_orientation_control':'4 p^8 a p I16, nonzero despite zero Dgamma',
++          'prepared_derivative_control':str(prepared_der.subs({t:s.Rational(1,3),z:s.Rational(1,7)}))},
++        'scope':'Exact native algebra/regular-input source comparison. No physical state preparation, actuation, huge heat, or GR closure.',
++        'labels':checks}
++print(json.dumps(result,indent=2,sort_keys=True))
++```
++<!-- END 7dj REGULAR CYCLIC SOURCE CHECKER -->
++
++<!-- BEGIN 7dj REGULAR CYCLIC SOURCE RECEIPT -->
++```json
++{
++  "checker_sha256": "1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f",
++  "checks": 190,
++  "corners": {
++    "canonical_both": "(1-4p^8) I16",
++    "canonical_feedback_both": "8p^8(1-2p^8) Pcanonical",
++    "coherent_flag_gain_factor": "p^8*c/(1-p^8+p^8*c)",
++    "coherent_flag_target": "(1-p^8+p^8*c) I16",
++    "coherent_flag_target_native_emission": false,
++    "coherent_guarded_frame_source": "zero first Hermitian source; full heat still retained",
++    "coherent_pure_flag_preparation_source": "zero first source only, not mixed-state or resource admission",
++    "independent_ready_orientation_control": "4 p^8 a p I16, nonzero despite zero Dgamma",
++    "preparation_failures": "1-p^8",
++    "preparation_probability": "p^8",
++    "prepared_conditional_law_recovered": true,
++    "prepared_derivative_control": "6048/18995",
++    "working_A": "p^3 I16",
++    "working_B": "I16"
++  },
++  "input_pins": {
++    "AF": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
++    "frame": "de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88",
++    "native": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
++    "regular_owner": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
++    "tree": "b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba"
++  },
++  "labels": [
++    "input regular_cyclic_af",
++    "input regular_cyclic_native",
++    "owned regular-algebra and preparation proof",
++    "published 7dg GOLDEN AF FRAME CHECKER",
++    "exact requested builder functions 7dg GOLDEN AF FRAME CHECKER",
++    "published 7di OFFCOPY FRAME CHECKER",
++    "exact requested builder functions 7di OFFCOPY FRAME CHECKER",
++    "actual full native38 inventory",
++    "actual full native38 inventory",
++    "all32 native A columns and restored Spin/oldRIGHT",
++    "all32 native B columns and restored Spin/oldRIGHT",
++    "A work trace fixed",
++    "B work trace fixed",
++    "same canonical working inclusion",
++    "complete changed work frame",
++    "legal doubled path endpoint 0",
++    "legal doubled path endpoint 1",
++    "legal doubled path endpoint 2",
++    "legal doubled path endpoint 3",
++    "legal doubled path endpoint 4",
++    "legal doubled path endpoint 5",
++    "legal doubled path endpoint 6",
++    "legal doubled path endpoint 7",
++    "legal doubled path endpoint 8",
++    "legal doubled path endpoint 9",
++    "legal doubled path endpoint 10",
++    "legal doubled path endpoint 11",
++    "legal doubled path endpoint 12",
++    "legal doubled path endpoint 13",
++    "legal doubled path endpoint 14",
++    "legal doubled path endpoint 15",
++    "legal doubled path endpoint 16",
++    "legal doubled path endpoint 17",
++    "legal doubled path endpoint 18",
++    "legal doubled path endpoint 19",
++    "legal doubled path endpoint 20",
++    "legal doubled path endpoint 21",
++    "legal doubled path endpoint 22",
++    "legal doubled path endpoint 23",
++    "legal doubled path endpoint 24",
++    "legal doubled path endpoint 25",
++    "legal doubled path endpoint 26",
++    "legal doubled path endpoint 27",
++    "legal doubled path endpoint 28",
++    "legal doubled path endpoint 29",
++    "legal doubled path endpoint 30",
++    "legal doubled path endpoint 31",
++    "legal doubled path endpoint 32",
++    "legal doubled path endpoint 33",
++    "legal doubled path endpoint 34",
++    "legal doubled path endpoint 35",
++    "legal doubled path endpoint 36",
++    "legal doubled path endpoint 37",
++    "legal doubled path endpoint 38",
++    "legal doubled path endpoint 39",
++    "legal doubled path endpoint 40",
++    "legal doubled path endpoint 41",
++    "legal doubled path endpoint 42",
++    "legal doubled path endpoint 43",
++    "legal doubled path endpoint 44",
++    "legal doubled path endpoint 45",
++    "legal doubled path endpoint 46",
++    "legal doubled path endpoint 47",
++    "legal doubled path endpoint 48",
++    "legal doubled path endpoint 49",
++    "legal doubled path endpoint 50",
++    "legal doubled path endpoint 51",
++    "legal doubled path endpoint 52",
++    "legal doubled path endpoint 53",
++    "legal doubled path endpoint 54",
++    "legal doubled path endpoint 55",
++    "legal doubled path endpoint 56",
++    "legal doubled path endpoint 57",
++    "legal doubled path endpoint 58",
++    "legal doubled path endpoint 59",
++    "legal doubled path endpoint 60",
++    "legal doubled path endpoint 61",
++    "legal doubled path endpoint 62",
++    "legal doubled path endpoint 63",
++    "legal doubled path endpoint 64",
++    "legal doubled path endpoint 65",
++    "legal doubled path endpoint 66",
++    "legal doubled path endpoint 67",
++    "legal doubled path endpoint 68",
++    "legal doubled path endpoint 69",
++    "legal doubled path endpoint 70",
++    "legal doubled path endpoint 71",
++    "legal doubled path endpoint 72",
++    "legal doubled path endpoint 73",
++    "legal doubled path endpoint 74",
++    "legal doubled path endpoint 75",
++    "legal doubled path endpoint 76",
++    "legal doubled path endpoint 77",
++    "legal doubled path endpoint 78",
++    "legal doubled path endpoint 79",
++    "legal doubled path endpoint 80",
++    "legal doubled path endpoint 81",
++    "legal doubled path endpoint 82",
++    "legal doubled path endpoint 83",
++    "legal doubled path endpoint 84",
++    "legal doubled path endpoint 85",
++    "legal doubled path endpoint 86",
++    "legal doubled path endpoint 87",
++    "legal doubled path endpoint 88",
++    "actual right-module algebra is A8",
++    "all doubled paths bijective block 0",
++    "all doubled paths bijective block 1",
++    "true canonical cyclic normalization on both unknown old columns",
++    "full canonical expectation of work matrix unit (0, 0)",
++    "full canonical expectation of work matrix unit (0, 1)",
++    "full canonical expectation of work matrix unit (0, 2)",
++    "full canonical expectation of work matrix unit (0, 3)",
++    "full canonical expectation of work matrix unit (1, 0)",
++    "full canonical expectation of work matrix unit (1, 1)",
++    "full canonical expectation of work matrix unit (1, 2)",
++    "full canonical expectation of work matrix unit (1, 3)",
++    "full canonical expectation of work matrix unit (2, 0)",
++    "full canonical expectation of work matrix unit (2, 1)",
++    "full canonical expectation of work matrix unit (2, 2)",
++    "full canonical expectation of work matrix unit (2, 3)",
++    "full canonical expectation of work matrix unit (3, 0)",
++    "full canonical expectation of work matrix unit (3, 1)",
++    "full canonical expectation of work matrix unit (3, 2)",
++    "full canonical expectation of work matrix unit (3, 3)",
++    "actual preparation probability p8 for every old input",
++    "all unprepared failures retained",
++    "right-module block guard A",
++    "complete new working endpoint unitary A",
++    "complete endpoint reflection A",
++    "working canonical cold corner A",
++    "FULL regular canonical cold corner A",
++    "conditional ready corner A",
++    "paid ready amplitude before division A",
++    "prepared full work action A0",
++    "prepared full work action A1",
++    "prepared full work action A2",
++    "prepared full work action A3",
++    "two real negative work modes in each native block A",
++    "right-module block guard B",
++    "complete new working endpoint unitary B",
++    "complete endpoint reflection B",
++    "working canonical cold corner B",
++    "FULL regular canonical cold corner B",
++    "conditional ready corner B",
++    "paid ready amplitude before division B",
++    "prepared full work action B0",
++    "prepared full work action B1",
++    "prepared full work action B2",
++    "prepared full work action B3",
++    "two real negative work modes in each native block B",
++    "full regular carrier and left-ready rank",
++    "native distinct words have same unprepared cold operator",
++    "unprepared feedback on true rank16 canonical input",
++    "prepared working effects remain different",
++    "unprepared input is neither prepared word",
++    "work and identity complement not silently normalized away",
++    "full coherent-ready flag target is unitary",
++    "coherent-ready calls stay in diagonal-copy and flag support",
++    "all178 flag-target columns retained A",
++    "actual flag-zero corner including failure branch A",
++    "canonical flagged return with real readiness A",
++    "flagged whole spectrum trace retained A",
++    "complete diagonal/flag compression A",
++    "actual pure-flag preparation cross source zero A",
++    "actual frame source support A",
++    "independent left frame Hermitian source A",
++    "independent right frame Hermitian source A",
++    "actual flag source support A",
++    "independent left flag Hermitian source A",
++    "independent right flag Hermitian source A",
++    "moving ready orientation keeps its probability fixed",
++    "free ready orientation has nonzero return source",
++    "ready orientation cannot be erased by constant probability",
++    "all178 flag-target columns retained B",
++    "actual flag-zero corner including failure branch B",
++    "canonical flagged return with real readiness B",
++    "flagged whole spectrum trace retained B",
++    "complete diagonal/flag compression B",
++    "actual pure-flag preparation cross source zero B",
++    "actual frame source support B",
++    "independent left frame Hermitian source B",
++    "independent right frame Hermitian source B",
++    "actual flag source support B",
++    "independent left flag Hermitian source B",
++    "independent right flag Hermitian source B",
++    "actual flagged lambda is gamma*c/ceff times old lambda",
++    "entire canonical cyclic conjugacy source vanishes",
++    "genuine prepared source has nonzero tangent",
++    "prepared Book derivative cannot be transported with zero gain",
++    "actual common new104-stage count"
++  ],
++  "regular_representation": {
++    "canonical_input_rank": 16,
++    "full_regular_dimension": 33448,
++    "left_ready_projection_rank": 712,
++    "operator_AF_level": 8,
++    "protected_spectator": 8,
++    "regular_negative_modes": [
++      1424,
++      1424
++    ],
++    "regular_positive_modes": 32024,
++    "right_multiplicities": [
++      55,
++      34
++    ],
++    "simple_blocks": [
++      55,
++      34
++    ],
++    "working_AF_dimension": 89
++  },
++  "scope": "Exact native algebra/regular-input source comparison. No physical state preparation, actuation, huge heat, or GR closure.",
++  "status": "PASS",
++  "word": {
++    "all32_native_columns_executed": true,
++    "full104_schedule_replayed": false,
++    "native_calls_each": 38,
++    "new_inventory": {
++      "CX": 24,
++      "G": 26,
++      "SourceI": 54
++    },
++    "new_representation_calls_each": 104,
++    "regular_application": "exact55/34 blocks with all right multiplicities, not a dense33448 matrix"
++  }
++}
++```
++<!-- END 7dj REGULAR CYCLIC SOURCE RECEIPT -->
++
+ ## 8. Reproduction
+ 
+ Run from this directory:
+diff --git a/02_REGISTRY/research/sources/d0_full_closure_audit_2026-10-28/check_closure_audit.py b/02_REGISTRY/research/sources/d0_full_closure_audit_2026-10-28/check_closure_audit.py
+new file mode 100644
+index 00000000..2c75d18e
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_closure_audit_2026-10-28/check_closure_audit.py
+@@ -0,0 +1,227 @@
++#!/usr/bin/env python3
++"""Audit the remaining full-source application; do not certify D0 -> GR.
++
++The calibrated-corner inequality is exact rational arithmetic. Full matrices
++below are structural controls, not newly admitted native programmes. They
++retain the entire unitary carrier, both clock grades and a nonnormal old corner.
++Run with Python >=3.10 and numpy/scipy/sympy/mpmath installed.
++"""
++from __future__ import annotations
++from fractions import Fraction as F
++from pathlib import Path
++import hashlib
++import json
++import math
++import mpmath as mp
++import numpy as np
++import scipy.linalg as la
++import sympy as sp
++
++CHECKS = 0
++
++def check(ok: bool, message: str) -> None:
++    global CHECKS
++    CHECKS += 1
++    if not bool(ok):
++        raise ArithmeticError(message)
++
++def near(a, b, message: str, tolerance: float = 2e-11) -> float:
++    error = float(np.max(np.abs(np.asarray(a)-np.asarray(b))))
++    check(error < tolerance, message)
++    return error
++
++def exact_bound(alpha: F, gamma: F, prob: F, volume: F = F(1)) -> tuple[F, F]:
++    check(0 < alpha <= 4 and 0 < gamma <= 1 and 0 < prob < F(1, 2)
++          and volume > 0, 'exact parameter chart')
++    x = gamma*prob
++    c2 = 1-alpha*x*(1-x)
++    check(c2 > 0, 'nonzero corner and nondegenerate signal')
++    # (b_QUERY / lambda_field)^2, no floating square roots.
++    ratio2 = 16*volume**2*c2*prob*(1-gamma*prob)/(alpha*gamma*(1-2*x)**2)
++    floor2 = 4*volume**2*prob*(1-prob)
++    check(ratio2 >= floor2, 'sharp uniform calibrated-query lower bound')
++    return ratio2, floor2
++
++def scalar_identities() -> dict:
++    a,g,p,V = sp.symbols('a g p V', positive=True)
++    x=g*p
++    c2=1-a*x*(1-x)
++    check(sp.expand(c2-(1-2*x)**2-(4-a)*x*(1-x)) == 0,
++          'corner discriminant decomposition')
++    ratio2=16*V**2*c2*p*(1-g*p)/(a*g*(1-2*x)**2)
++    check(sp.simplify(ratio2.subs({a:4,g:1})-4*V**2*p*(1-p)) == 0,
++          'sharpness, not merely a nonoptimal estimate')
++    vals=[]
++    for alpha,gamma in ((F(4),F(1)),(F(1,3),F(2,7)),
++                        (F(1,2**80),F(1,2**200)),(F(4),F(1,2**120))):
++        for p0 in (F(1,2**20),F(1,8),F(1,2)-F(1,2**120)):
++            r2,f2=exact_bound(alpha,gamma,p0)
++            vals.append({'alpha':str(alpha),'gamma':str(gamma),'P':str(p0),
++                         'ratio_squared_at_least_floor':r2>=f2,
++                         'exact_equality':r2==f2})
++    # Closing the alleged c -> 0 escape on the actual alpha=4,gamma=1 chart.
++    at_boundary=sp.limit((4*V**2*p*(1-p)),p,sp.Rational(1,2),dir='-')
++    check(sp.simplify(at_boundary-V**2)==0, 'nonzero boundary limit of normalized row')
++    # Unnormalized current may tend to zero; the correct source ratio does not.
++    return {'sharp_floor':'2*Omega*sqrt(P*(1-P))',
++            'equality_conditions':'alpha=4 and gamma=1',
++            'P_to_half_sharp_ratio_limit':'Omega',
++            'exact_rational_controls':vals}
++
++def original_probability_collar() -> dict:
++    # Direct-click polynomial is the one copied in the current two-field handoff.
++    # Isolate p=phi^-1 using rational inequalities, not a rounded Golden number.
++    lo,hi=F(8,13),F(13,21)
++    check(lo*lo+lo-1<0<hi*hi+hi-1, 'Golden rational enclosure')
++    radius=F(1,1024)
++    e_lo=lo**2*(1-radius); e_hi=hi**2*(1+radius)
++    b_lo=lo-hi**2*radius; b_hi=hi+hi**2*radius
++    check(0<e_lo<=e_hi<F(1,2), 'first direct-click collar')
++    check(0<b_lo<b_hi and b_hi*b_hi<F(1,2), 'second direct-click collar')
++    l_min=4*e_lo*(1-e_lo)
++    B_min=4*b_lo*b_lo*(1-b_lo*b_lo)
++    z=F(1,2**20)
++    # A=l+(1-l)B >= l, 0<=A,B<=1. r=z(A+B)-z^2 A B.
++    r_lower=z*(l_min+B_min-z)
++    check(r_lower>z and 2*z<F(1,2),'actual uncentered report has a uniform positive baseline')
++    return {'coordinate_collar':'|x|,|y| <= 1/1024',
++            'true_probability_lower_rational':str(r_lower),
++            'simple_bounds':'2^-20 < r(x,y) <= 2*2^-20 < 1/2',
++            'unit_volume_uniform_source_floor':2*math.sqrt(float(z*(1-z))),
++            'branch_membership_tested':False,
++            'meaning':'applies whenever the represented operands remain in this explicit collar'}
++
++def rot(t: float) -> np.ndarray:
++    return np.array([[math.cos(t),-math.sin(t)],[math.sin(t),math.cos(t)]])
++
++def reflection(c: float) -> np.ndarray:
++    u=math.sqrt(1-c*c)
++    return np.array([[c,u],[u,-c]])
++
++def clock(gates: list[np.ndarray]) -> np.ndarray:
++    n=len(gates);d=len(gates[0]);out=np.zeros((n*d,n*d))
++    for j,gate in enumerate(gates):
++        out[((j+1)%n)*d:((j+1)%n+1)*d,j*d:(j+1)*d]=gate
++    return out
++
++def complete_operator_control() -> dict:
++    K=np.array([[.5,1/7],[0.,.3]])
++    left=la.sqrtm(np.eye(2)-K@K.T);right=la.sqrtm(np.eye(2)-K.T@K)
++    old=np.block([[K,left],[right,-K.T]])
++    near(old.T@old,np.eye(4),'full old unitary, nonnormal corner retained')
++    check(la.norm(K@K.T-K.T@K)>.01,'genuinely nonnormal retained past')
++    cs=[.61,.73]
++    Qs=[reflection(c) for c in cs]
++    emb=np.eye(16)[:,[0,4]]
++    P=emb@emb.T
++    beta=2*((math.sqrt(5)-1)/2)**2
++    def objects(s,t):
++        R1,R2=rot(s),rot(t)
++        q1,q2=R1@Qs[0]@R1.T,R2@Qs[1]@R2.T
++        gs=[np.kron(old,np.eye(4)),np.kron(np.eye(4),np.kron(q1,np.eye(2))),
++            np.kron(np.eye(8),q2)]
++        U=gs[2]@gs[1]@gs[0]
++        clk=clock(gs);Delta=np.eye(48)-(clk+clk.T)/2
++        heat=math.log(2*np.exp(-beta*la.eigvalsh(Delta)).sum())/beta
++        V=np.kron(np.eye(4),np.kron(R1,R2))
++        return U,clk,heat,V
++    U0,T0,H0,_=objects(0.,0.)
++    near(U0.T@U0,np.eye(16),'all16 final unitary')
++    fullF=P@U0.T@(np.eye(16)-P)@U0@P
++    C=emb.T@U0@emb
++    near(C,math.prod(cs)*K,'same cold corner, not a separate model price')
++    heat_errors=[];conj_errors=[]
++    for s,t in ((.2,-.1),(-.3,.11),(.05,.28)):
++        U,T,H,V=objects(s,t)
++        conj_errors.append(near(T,np.kron(np.eye(3),V)@T0@np.kron(np.eye(3),V.T),
++                                'full clock conjugation'))
++        heat_errors.append(abs(H-H0))
++    check(max(heat_errors)<5e-13,'entire two-grade heat is invariant')
++    S=K.T@K;Tc=math.prod(c*c for c in cs)
++    sources=[]
++    for z in (1/7,2**-20):
++        D=(1-z)*np.eye(2)+z*Tc*S
++        w=z*Tc*np.trace(S@la.inv(D))
++        def feedback(s,t):
++            U,*_=objects(s,t)
++            cc=emb.T@U@emb
++            ff=np.eye(2)-cc.T@cc
++            return -np.log1p(-z*la.eigvalsh(ff)).sum()
++        ambient=-np.log1p(-z*la.eigvalsh(fullF)).sum()
++        near(ambient,feedback(0,0),'whole16 return determinant, complement kept')
++        derivatives=[]
++        h=2e-4
++        for j,c in enumerate(cs):
++            def f(t): return feedback(t,0) if j==0 else feedback(0,t)
++            fd=(-f(2*h)+8*f(h)-8*f(-h)+f(-2*h))/(12*h)
++            expected=w*4*math.sqrt(1-c*c)/c
++            derivatives.append({'j':j,'actual_source':float(expected),'FD_error':abs(float(fd-expected))})
++            near(fd,expected,'full scalar price derivative',2e-11)
++        sources.append({'zeta':z,'w':float(w),'sources':derivatives})
++    return {'full_carrier_dimension':16,'protected_rank':2,'full_clock_modes_both_grades':96,
++            'max_clock_conjugacy_error':max(conj_errors),'max_heat_error':max(heat_errors),
++            'full_source_checks':sources,
++            'native_programme_admission_asserted':False}
++
++def volume_normalization() -> dict:
++    V,n,a,b=sp.symbols('V n a b',positive=True)
++    omega=V/n
++    lam=a/omega
++    # spatial I=sum I_j: global source gain is w*lam, NOT w*n*lam.
++    row=sp.simplify(n*b/lam)
++    check(sp.simplify(row-V*b/a)==0, 'spatial partition has no query dilution')
++    wrong=sp.simplify(n*b/(n*lam))
++    # The very same extra division also kills the wanted continuum field source.
++    check(sp.simplify(lam/(n*lam)-1/n)==0,'false normalizer removes geometric response too')
++    return {'correct_global_query_ratio':str(row),'incorrect_ratio':str(wrong),
++            'geometric_covector_with_incorrect_normalizer':'DI/n',
++            'scope':'equal-volume spatial partition; not all refinement geometries'}
++
++def microscopic_limit() -> dict:
++    mp.mp.dps=120
++    z=mp.mpf(2)**-20
++    eig=[mp.mpf('.01'),mp.mpf('.31')]
++    probs=[mp.mpf(1)/8,mp.mpf(1)/5]
++    volumes=[mp.mpf(1),mp.mpf(3)/2]
++    result=[]
++    for retention in (0,60,220):
++        gamma=mp.mpf(2)**(-retention)
++        alpha=mp.mpf(4)
++        corners=[]; lambdas=[]; bs=[]
++        for prob,vol in zip(probs,volumes):
++            x=gamma*prob
++            c=1-2*x
++            u=mp.sqrt(4*x*(1-x))
++            corners.append(c)
++            lambdas.append(4*gamma*(1-2*x)/(vol*c*c))
++            bs.append(4*u/c)
++        T=(corners[0]*corners[1])**2*mp.mpf('1e-90')
++        w=sum(z*T*v/(1-z+z*T*v) for v in eig)
++        Lambda=sum(lambdas)
++        Gamma=w*Lambda
++        normalized=sum(w*b/Gamma for b in bs)
++        expected=sum(bs)/Lambda
++        check(abs(normalized/expected-1)<mp.mpf('1e-100'), 'true gain not replaced by one')
++        floor=min(2*vol*mp.sqrt(prob*(1-prob)) for prob,vol in zip(probs,volumes))
++        check(normalized>=floor, 'retention and tiny history do not evade sharp source ratio')
++        result.append({'retention':retention,'Gamma':mp.nstr(Gamma,30),
++                       'actual_normalized_query_norm':mp.nstr(normalized,30),
++                       'sharp_common_floor':mp.nstr(floor,30)})
++    return {'high_precision_actual_gain_controls':result,
++            'same_physical_variation_norm_assumed':False}
++
++def main() -> None:
++    out={'input_commit':'1595b9bd2cf9720900c1bf573df04cf9e2e7931f',
++         'sharp_bound':scalar_identities(),'uncentered_direct_click':original_probability_collar(),
++         'complete_operator':complete_operator_control(),
++         'spatial_partition':volume_normalization(),
++         'suppressed_signal':microscopic_limit()}
++    out.update({'checks':CHECKS,'status':'PASS_SCOPED_FULL_SOURCE_AUDIT',
++                'GR_closed':False,'native_variation_domain_derived':False,
++                'physical_GR_impossibility_proved':False,
++                'new_full42_root_computed':False,'Lean_or_CI_run':False,
++                'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
++    print(json.dumps(out,indent=2,sort_keys=True,ensure_ascii=False))
++
++if __name__=='__main__':
++    main()
+diff --git a/02_REGISTRY/research/sources/d0_full_closure_audit_2026-10-28/result.json b/02_REGISTRY/research/sources/d0_full_closure_audit_2026-10-28/result.json
+new file mode 100644
+index 00000000..690df446
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_closure_audit_2026-10-28/result.json
+@@ -0,0 +1,181 @@
++{
++  "GR_closed": false,
++  "Lean_or_CI_run": false,
++  "checker_sha256": "402293c9b5ea54f475b03eb20791c111cad1067d9db4bea09a421022a71f45e6",
++  "checks": 65,
++  "complete_operator": {
++    "full_carrier_dimension": 16,
++    "full_clock_modes_both_grades": 96,
++    "full_source_checks": [
++      {
++        "sources": [
++          {
++            "FD_error": 3.0735136657966677e-13,
++            "actual_source": 0.06141290980020678,
++            "j": 0
++          },
++          {
++            "FD_error": 2.906008766956347e-14,
++            "actual_source": 0.04426152183900965,
++            "j": 1
++          }
++        ],
++        "w": 0.011819096465307589,
++        "zeta": 0.14285714285714285
++      },
++      {
++        "sources": [
++          {
++            "FD_error": 7.411008892883094e-19,
++            "actual_source": 3.5414073872269475e-07,
++            "j": 0
++          },
++          {
++            "FD_error": 4.780971591658491e-19,
++            "actual_source": 2.552363679241394e-07,
++            "j": 1
++          }
++        ],
++        "w": 6.815543453120547e-08,
++        "zeta": 9.5367431640625e-07
++      }
++    ],
++    "max_clock_conjugacy_error": 3.3306690738754696e-16,
++    "max_heat_error": 0.0,
++    "native_programme_admission_asserted": false,
++    "protected_rank": 2
++  },
++  "input_commit": "1595b9bd2cf9720900c1bf573df04cf9e2e7931f",
++  "native_variation_domain_derived": false,
++  "new_full42_root_computed": false,
++  "physical_GR_impossibility_proved": false,
++  "sharp_bound": {
++    "P_to_half_sharp_ratio_limit": "Omega",
++    "equality_conditions": "alpha=4 and gamma=1",
++    "exact_rational_controls": [
++      {
++        "P": "1/1048576",
++        "alpha": "4",
++        "exact_equality": true,
++        "gamma": "1",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "1/8",
++        "alpha": "4",
++        "exact_equality": true,
++        "gamma": "1",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "664613997892457936451903530140172287/1329227995784915872903807060280344576",
++        "alpha": "4",
++        "exact_equality": true,
++        "gamma": "1",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "1/1048576",
++        "alpha": "1/3",
++        "exact_equality": false,
++        "gamma": "2/7",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "1/8",
++        "alpha": "1/3",
++        "exact_equality": false,
++        "gamma": "2/7",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "664613997892457936451903530140172287/1329227995784915872903807060280344576",
++        "alpha": "1/3",
++        "exact_equality": false,
++        "gamma": "2/7",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "1/1048576",
++        "alpha": "1/1208925819614629174706176",
++        "exact_equality": false,
++        "gamma": "1/1606938044258990275541962092341162602522202993782792835301376",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "1/8",
++        "alpha": "1/1208925819614629174706176",
++        "exact_equality": false,
++        "gamma": "1/1606938044258990275541962092341162602522202993782792835301376",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "664613997892457936451903530140172287/1329227995784915872903807060280344576",
++        "alpha": "1/1208925819614629174706176",
++        "exact_equality": false,
++        "gamma": "1/1606938044258990275541962092341162602522202993782792835301376",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "1/1048576",
++        "alpha": "4",
++        "exact_equality": false,
++        "gamma": "1/1329227995784915872903807060280344576",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "1/8",
++        "alpha": "4",
++        "exact_equality": false,
++        "gamma": "1/1329227995784915872903807060280344576",
++        "ratio_squared_at_least_floor": true
++      },
++      {
++        "P": "664613997892457936451903530140172287/1329227995784915872903807060280344576",
++        "alpha": "4",
++        "exact_equality": false,
++        "gamma": "1/1329227995784915872903807060280344576",
++        "ratio_squared_at_least_floor": true
++      }
++    ],
++    "sharp_floor": "2*Omega*sqrt(P*(1-P))"
++  },
++  "spatial_partition": {
++    "correct_global_query_ratio": "V*b/a",
++    "geometric_covector_with_incorrect_normalizer": "DI/n",
++    "incorrect_ratio": "V*b/(a*n)",
++    "scope": "equal-volume spatial partition; not all refinement geometries"
++  },
++  "status": "PASS_SCOPED_FULL_SOURCE_AUDIT",
++  "suppressed_signal": {
++    "high_precision_actual_gain_controls": [
++      {
++        "Gamma": "6.04248623131392604248623131393e-97",
++        "actual_normalized_query_norm": "0.906238815145171444159311239133",
++        "retention": 0,
++        "sharp_common_floor": "0.66143782776614764762540393841"
++      },
++      {
++        "Gamma": "1.7646536563513284528531520486e-114",
++        "actual_normalized_query_norm": "1031780405.09607508939161742926",
++        "retention": 60,
++        "sharp_common_floor": "0.66143782776614764762540393841"
++      },
++      {
++        "Gamma": "1.20742502866713380826019340782e-162",
++        "actual_normalized_query_norm": "1.24734597189308669005502176977e+33",
++        "retention": 220,
++        "sharp_common_floor": "0.66143782776614764762540393841"
++      }
++    ],
++    "same_physical_variation_norm_assumed": false
++  },
++  "uncentered_direct_click": {
++    "branch_membership_tested": false,
++    "coordinate_collar": "|x|,|y| <= 1/1024",
++    "meaning": "applies whenever the represented operands remain in this explicit collar",
++    "simple_bounds": "2^-20 < r(x,y) <= 2*2^-20 < 1/2",
++    "true_probability_lower_rational": "558684947052022737355148879/311363367467324181865891180314624",
++    "unit_volume_uniform_source_floor": 0.0019531240686772033
++  }
++}
+diff --git a/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py b/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py
+new file mode 100644
+index 00000000..bcf99eda
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py
+@@ -0,0 +1,353 @@
++#!/usr/bin/env python3
++"""Closed programme selection: literal child words and their true source charts.
++
++The children are original G/CX/SourceI words. Their controlled direct sum is
++an explicitly declared finite processor, NOT a proof of native controlled
++actuation. All code branches and input columns remain in its full operators.
++"""
++from __future__ import annotations
++import hashlib
++import json
++import math
++import platform
++from collections import Counter
++from pathlib import Path
++import mpmath as mp
++import numpy as np
++import scipy.linalg as la
++import sympy as s
++from sympy.polys.matrices import DomainMatrix
++
++COUNT = 0
++
++def require(ok: bool, name: str) -> None:
++    global COUNT
++    COUNT += 1
++    if not bool(ok):
++        raise ArithmeticError(name)
++
++
++def near(a, b, name: str, tol: float = 1e-11) -> float:
++    error = float(np.max(np.abs(np.asarray(a)-np.asarray(b))))
++    require(error < tol, f'{name}: {error}')
++    return error
++
++
++def native_children():
++    p=(s.sqrt(5)-1)/2
++    aa=s.sqrt(p)
++    field=s.QQ.algebraic_field(aa)
++    def dm(M): return DomainMatrix.from_Matrix(s.Matrix(M)).convert_to(field)
++    I=dm(s.eye(32))
++    G=s.Matrix([[aa,-p],[p,aa]])
++    Li=s.Matrix([[0,-1,0,0],[1,0,0,0],[0,0,0,-1],[0,0,1,0]])
++    SI=s.diag(s.eye(4),Li)
++    CX=s.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
++    def gate(op,wires):
++        require(4 not in wires,'oldRIGHT not addressed')
++        require(op!='SourceI' or wires==(0,2,3),'true SourceI frame')
++        local={'G':G,'CX':CX,'SourceI':SI}[op]
++        out=s.zeros(32); k=len(wires)
++        for col in range(32):
++            bits=[(col>>(4-j))&1 for j in range(5)]
++            idx=sum(bits[w]<<(k-1-u) for u,w in enumerate(wires))
++            for rowlocal in range(1<<k):
++                x=local[rowlocal,idx]
++                if x==0: continue
++                bb=bits[:]
++                for u,w in enumerate(wires): bb[w]=(rowlocal>>(k-1-u))&1
++                row=sum(bb[u]<<(4-u) for u in range(5))
++                out[row,col]=x
++        ans=dm(out)
++        require((ans.transpose().matmul(ans)-I).is_zero_matrix,'full32 primitive')
++        return ans
++    def swap(a,b): return [('CX',(a,b)),('CX',(b,a)),('CX',(a,b))]
++    si=('SourceI',(0,2,3)); rr=swap(0,1)
++    def inv(word):
++        out=[]
++        for op,w in word[::-1]:
++            if op=='CX': out.append((op,w))
++            elif op=='SourceI': out.extend([si]*3)
++            else:
++                r=[] if w[0]==0 else swap(w[0],0)
++                out += r+[si,si,('G',(0,)),si,si]+r
++        return out
++    routed=rr+[('G',(0,))]+rr
++    query=inv(routed)+rr+[si,si]+rr+routed
++    v=[('G',(1,))]
++    words=[v+inv(v)+query,v+query+inv(v)]
++    require(len(query)==26 and all(len(w)==38 for w in words),'literal child durations')
++    inventory={'G':4,'CX':24,'SourceI':10}
++    require(all(dict(Counter(g[0] for g in w))==inventory for w in words),'literal matched inventory')
++    cache={g:gate(*g) for w in words for g in w}
++    W=[]
++    for word in words:
++        endpoint=I
++        for g in word: endpoint=cache[g].matmul(endpoint)
++        require((endpoint.transpose().matmul(endpoint)-I).is_zero_matrix,'whole child unitarity')
++        W.append(endpoint)
++    c=p**3; u=2*p*s.sqrt(p)
++    expected=[s.kronecker_product(s.eye(2),s.Matrix([[c,u],[u,-c]]),s.eye(8)),
++              s.kronecker_product(s.eye(2),s.diag(1,-1),s.eye(8))]
++    for w,e in zip(W,expected):
++        require((w-dm(e)).is_zero_matrix,'literal full32 endpoint')
++        require((w.matmul(w)-I).is_zero_matrix,'child full reflection')
++    P=dm(s.diag(*([1]*8+[0]*24)))
++    require((P.matmul(W[0]).matmul(P)-P.scalarmul(field.from_sympy(c))).is_zero_matrix,'actual child corner c')
++    require((P.matmul(W[1]).matmul(P)-P).is_zero_matrix,'actual child corner1')
++    # Full64 processor stage product, no unstated native controlled-gate claim.
++    Z=dm(s.zeros(32))
++    I64=dm(s.eye(64))
++    combined=I64
++    for g0,g1 in zip(*words):
++        a,b=cache[g0],cache[g1]
++        block=a.hstack(Z).vstack(Z.hstack(b))
++        combined=block.matmul(combined)
++    controlled=W[0].hstack(Z).vstack(Z.hstack(W[1]))
++    require((combined-controlled).is_zero_matrix,'full64 controlled schedule')
++    require((combined.transpose().matmul(combined)-I64).is_zero_matrix,'full64 exact orthogonality')
++    Code=dm(s.diag(*([1]*32+[0]*32)))
++    require((combined.matmul(Code)-Code.matmul(combined)).is_zero_matrix,'programme record retained')
++    num=[np.array(e.evalf(17),dtype=complex) for e in expected]
++    ops=[[np.array(cache[g].to_Matrix().evalf(17),dtype=complex) for g in word] for word in words]
++    return num,ops,{'child_raw_stages':38,'child_inventory':inventory,'child_columns':32,
++        'controlled_scheduled_slots':38,'controlled_columns':64,'protected_rank':8,
++        'native_controlled_primitive_admission_proved':False,
++        'controlled_physical_duration_identified':False,
++        'original_oldRIGHT_retained':True}
++
++
++def exact_chart():
++    a,z,c,R=s.symbols('a z c R',positive=True)
++    q=s.symbols('q',nonnegative=True)
++    b=c+(1-c)*q
++    J=-R*s.log(1-z+z*b*b)
++    w=R*z*c*c/(1-z+z*c*c)
++    jq=s.simplify(s.diff(J,q).subs(q,0))
++    ja=J.subs(q,s.sin(a)**2)
++    require(s.simplify(s.diff(ja,a).subs(a,0))==0,'amplitude first derivative zero')
++    require(s.simplify(s.diff(ja,a,2).subs(a,0)+4*(1-c)*w/c)==0,'true negative second source')
++    forward=-R*s.log(1-z+z*c*c*s.cos(a)**2)
++    require(s.simplify(s.diff(forward,a,2).subs(a,0)-2*w)==0,'fixed-cut forward preparation has different second source')
++    require(s.simplify(jq+2*(1-c)*w/c)==0,'probability chart first source')
++    effect=(1-b)/2
++    require(s.simplify(jq/s.diff(effect,q)-4*w/c)==0,'report-normalized source recovered')
++    # The q derivative is one-sided at the pure-programme boundary.
++    p=(s.sqrt(5)-1)/2
++    require(s.simplify((1-p**3)/2-p*p)==0,'native report gap p squared')
++    return {'amplitude_first_source':'0',
++            'amplitude_second_source':'-4*(1-c)*w/c',
++            'one_sided_probability_source':'-2*(1-c)*w/c',
++            'report_normalized_source':'4*w/c',
++            'forward_only_fixed_cut_amplitude_second_source':'2*w',
++            'programme_ray_is_not_a_minimum_if_c_lt_1':True}
++
++
++def full_cold_programme(W,ops):
++    U=la.block_diag(*W)
++    i=np.eye(32,dtype=complex)[:,:8]
++    E0=np.vstack([i,np.zeros_like(i)])
++    p=(math.sqrt(5)-1)/2; c=p**3; z=2**-20
++    maxerr=0.; maxferr=0.
++    for a in (0.,.07,.23,.61,math.pi/2):
++        for phase in (0.,.37):
++            E=np.vstack([math.cos(a)*i,np.exp(1j*phase)*math.sin(a)*i])
++            C=E.conj().T@U@E
++            expected=(c+(1-c)*math.sin(a)**2)*np.eye(8)
++            maxerr=max(maxerr,near(C,expected,'all protected input columns; true moving cut'))
++            rot=np.array([[math.cos(a),-np.exp(-1j*phase)*math.sin(a)],
++                          [np.exp(1j*phase)*math.sin(a),math.cos(a)]])
++            Rt=np.kron(rot,np.eye(32))
++            near(E0.conj().T@Rt.conj().T@U@Rt@E0,C,'fixed-cut complete programme echo is same compression')
++            near(E0.conj().T@U@Rt@E0,math.cos(a)*c*np.eye(8),'one-sided preparation is not same programme echo')
++            P=E@E.conj().T
++            F=P@U.conj().T@(np.eye(64)-P)@U@P
++            spectrum=la.eigvalsh((F+F.conj().T)/2)
++            J=-np.log1p(-z*spectrum).sum()
++            cold=1-(c+(1-c)*math.sin(a)**2)**2
++            maxferr=max(maxferr,near(J,-8*math.log1p(-z*cold),'full64 determinant retains complement',1e-17))
++    # Arbitrary code-changing, potentially work/protected-entangled tangent.
++    rng=np.random.default_rng(281028)
++    for _ in range(4):
++        B=(rng.normal(size=(32,32))+1j*rng.normal(size=(32,32)))/30
++        H=np.block([[np.zeros((32,32)), -B.conj().T],[B,np.zeros((32,32))]])
++        dE=H@E0
++        dC=dE.conj().T@U@E0+E0.conj().T@U@dE
++        near(dC,np.zeros((8,8)),'entangled programme-changing preparation tangent')
++        near(E0.conj().T@H@U@E0,np.zeros((8,8)),'off-code endpoint fault insertion')
++    # Changes within the selected code branch remain genuine QUERY sources.
++    L=np.kron(np.kron(np.eye(2),np.array([[0.,-1.],[1.,0.]])),np.eye(8))
++    dU=la.block_diag(L@W[0]-W[0]@L,np.zeros((32,32)))
++    dC=E0.conj().T@dU@E0
++    u=math.sqrt(1-c*c)
++    near(dC,-2*u*np.eye(8),'same-code law-change not removed')
++    D=(1-z+z*c*c)*np.eye(8)
++    source=-z*np.trace(la.solve(D,c*dC+c*dC.conj().T)).real
++    w=8*z*c*c/(1-z+z*c*c)
++    near(source/w,4*u/c,'existing free-QUERY normal survives unchanged',1e-10)
++    # Full clock endpoint spectrum; no giant scene matrix is diagonalized.
++    N=len(ops[0]);beta=2*p*p
++    def phaseheat(U):
++        phases=np.angle(la.eigvals(U))
++        vals=[1-math.cos((theta+2*math.pi*k)/N) for theta in phases for k in range(N)]
++        return 2*float(np.exp(-beta*np.asarray(vals)).sum())
++    Zchildren=sum(phaseheat(wi) for wi in W)
++    Zprogram=phaseheat(U)
++    near(Zprogram,Zchildren,'all programme thermal sectors retained',1e-9)
++    near(math.log(Zprogram)/beta-math.log(phaseheat(W[0]))/beta,math.log(2)/beta,'paid programme heat baseline',1e-12)
++    return {'corner_error':maxerr,'whole_return_error':maxferr,
++        'same_code_QUERY_source':float(source),'same_code_QUERY_source_over_w':float(source/w),
++        'bare_clock_modes_both_grades':2*N*64,
++        'homogeneous_scene_modes_if_same_clock_assigned':425*N*64,
++        'extra_bare_heat_baseline':math.log(2)/beta,
++        'large_heat_matrix_diagonalized':False,
++        'same_N_assigned_only_to_declared_controlled_comparison':True}
++
++
++def matrix_past():
++    mp.mp.dps=100
++    p=(mp.sqrt(5)-1)/2;c=p**3; z=mp.mpf(2)**-20
++    results=[]
++    for small in ('0.3','1e-20','0'):
++        K=mp.matrix([[mp.mpf('.5'),mp.mpf('.12')],[0,mp.mpf(small)]])
++        S=K.T*K
++        tr=S[0,0]+S[1,1];det=mp.det(S)
++        for oldT in ('1','1e-50'):
++            T=mp.mpf(oldT)
++            def price(q):
++                b=c+(1-c)*q
++                x=z*T*b*b/(1-z)
++                return -mp.log1p(x*tr+x*x*det) # common full baseline handled separately
++            x=z*T*c*c/(1-z)
++            w=(x*tr+2*x*x*det)/(1+x*tr+x*x*det)
++            g=mp.diff(price,0);h=mp.diff(lambda a:price(mp.sin(a)**2),0,2)
++            relative=abs(g/w+2*(1-c)/c)
++            require(relative<mp.mpf('1e-80'),'arbitrary retained past first source')
++            require(abs(h/w+4*(1-c)/c)<mp.mpf('1e-80'),'arbitrary retained past second source')
++            # Finite source measured in the real effect change, not +/- amplitude.
++            q=mp.mpf('1e-8')
++            contrast=(price(q)-price(0))/(-q*(1-c)/2)/w
++            require(abs(contrast-4/c)<mp.mpf('1e-5'),'effect-spaced finite contrast')
++            results.append({'past_minimum_diagonal':small,'other_return_T':oldT,
++                'w':mp.nstr(w,25),'q_source_over_w':mp.nstr(g/w,25),
++                'amplitude_Hessian_over_w':mp.nstr(h/w,25),
++                'report_finite_contrast_over_w':mp.nstr(contrast,25)})
++    J0=-8*mp.log(1-z+z*c*c)
++    fullw=8*z*c*c/(1-z+z*c*c)
++    return {'cases':results,'literal_child_J_gap':mp.nstr(J0,30),
++            'literal_program_amplitude_Hessian':mp.nstr(-4*(1-c)*fullw/c,30),
++            'zero_normalized_gain_assumed':False}
++
++
++def mixed_price_and_selection():
++    # Classical randomized programmes and coherent initial programmes are
++    # different preparations; neither is silently substituted for the other.
++    c=.31;z=.17;n=3
++    J0=-n*math.log(1-z+z*c*c)
++    coherent_derivative=-2*n*z*c*(1-c)/(1-z+z*c*c)
++    classical_expected_derivative=-J0
++    require(abs(coherent_derivative-classical_expected_derivative)>1e-3,'different programme preparations give different source')
++    # A one-sided feasible descent is not constrained minimum-stationarity.
++    require(coherent_derivative<0 and classical_expected_derivative<0,'silent programme favoured in both controls')
++    # Any finite task list gives zero coherent first tangent at a pure code.
++    corners=np.array([.23,.51,.81])
++    v=np.array([1.,0.,0.]);dv=np.array([0.,.3,-.4])
++    dc=2*np.dot(v*dv,corners)
++    require(dc==0,'first programme derivative is blind to task selection')
++    # Semantic derivative may distinguish tasks even though the Hilbert pullback does not.
++    require(corners[1]!=corners[0],'programme semantic map not immersion at pure code')
++    return {'coherent_q_derivative':coherent_derivative,
++            'classical_average_q_derivative':classical_expected_derivative,
++            'pure_programme_zero_does_not_select_Einstein':True,
++            'exact_minimum_claimed':False}
++
++
++
++def reflection_stationary_class():
++    """Return-only theorem. A nonconstant full heat source is NOT erased."""
++    def components(C,K,z=.19):
++        r=len(C); I=np.eye(r)
++        B=la.sqrtm(I-C@C)
++        U=np.block([[C,B],[B,-C]])
++        D=(1-z)*I+z*K.conj().T@C@C@K
++        M=K@la.inv(D)@K.conj().T
++        G=-z*(C@M+M@C)
++        Q=la.block_diag(G,np.zeros((r,r)))
++        comm=U@Q-Q@U
++        return U,D,M,G,comm
++    # Exact rational checks avoid interpreting a tiny float as a critical point.
++    C=s.diag(-1,0,1); B=s.diag(0,1,0)
++    U=C.row_join(B).col_join(B.row_join(-C))
++    z=s.Rational(1,7)
++    K=s.Matrix([[s.Rational(1,2),0,s.Rational(1,8)],
++                [0,s.Rational(1,3),0],[0,0,s.Rational(2,5)]])
++    def exact_comm(K):
++        D=(1-z)*s.eye(3)+z*K.T*C*C*K
++        M=K*D.inv()*K.T
++        G=-z*(C*M+M*C)
++        Q=s.diag(G,s.zeros(3))
++        return U*Q-Q*U
++    require(exact_comm(K)==s.zeros(6),'ternary compression plus compatible past is stationary')
++    Kbad=K.copy();Kbad[0,1]=s.Rational(1,10)
++    require(C**3==C,'same ternary corner retained')
++    require(exact_comm(Kbad)!=s.zeros(6),'ternary corner alone insufficient for nonnormal past')
++    # General full matrix controls; all directions are on the reflection orbit.
++    rng=np.random.default_rng(4402810)
++    largest_identity_error=0.;smallest_ratio=1e99;largest_fd_error=0.
++    for idx in range(6):
++        cs=np.array([.27,.48,.79])+.005*idx
++        Q,_=la.qr(rng.normal(size=(3,3))+1j*rng.normal(size=(3,3)))
++        Cf=Q@np.diag(cs)@Q.conj().T
++        Kf=np.array([[.5,.08,.02],[.01,.31,.07],[0,.03,.42]],complex)
++        U,D,M,G,comm=components(Cf,Kf)
++        P=la.block_diag(np.eye(3),np.zeros((3,3)))
++        H=U@P-P@U
++        dU=H@U-U@H
++        dc=dU[:3,:3]
++        largest_identity_error=max(largest_identity_error,near(dc,-2*(np.eye(3)-Cf@Cf),'full reflection descent witness'))
++        source=np.trace(G@dc).real
++        pred=4*.19*np.trace(M@Cf@(np.eye(3)-Cf@Cf)).real
++        near(source,pred,'matrix-history descent source')
++        w=.19*np.trace(M@Cf@Cf).real
++        floor=4*cs.min()*(1-cs.max()**2)/cs.max()**2
++        require(source/w>=floor-1e-12,'uniform positive-collar normalized source bound')
++        require(la.norm(H,2)<=1+1e-12,'witness generator has true norm at most1')
++        require(la.norm(comm)>1e-4,'interior positive corner not stationary on full orbit')
++        smallest_ratio=min(smallest_ratio,source/w)
++        def price(t):
++            E=la.expm(t*H);V=E@U@E.conj().T;cc=V[:3,:3]
++            Dd=(1-.19)*np.eye(3)+.19*Kf.conj().T@cc@cc@Kf
++            return -np.linalg.slogdet(Dd)[1]
++        e=2e-4
++        fd=(-price(2*e)+8*price(e)-8*price(-e)+price(-2*e))/(12*e)
++        largest_fd_error=max(largest_fd_error,near(fd,source,'full scalar matrix-orbit source',1e-10))
++    # Invertibility of the actual old corner is material to the classification.
++    Csing=np.diag([.4,0.]);Ksing=np.diag([0.,.5])
++    *_,comm=components(Csing,Ksing)
++    near(comm,np.zeros((4,4)),'singular past can hide fractional corner')
++    require(la.norm(Csing@Csing@Csing-Csing)>0,'invertible-past assumption cannot be dropped')
++    return {'critical_class_for_invertible_K':'C^3=C and [C^2,K K*]=0',
++            'uniform_positive_collar_floor':'4*c_min*(1-c_max^2)/c_max^2',
++            'minimum_observed_source_over_w':smallest_ratio,
++            'largest_matrix_identity_error':largest_identity_error,
++            'largest_full_scalar_FD_error':largest_fd_error,
++            'scope':'complete return at fixed K; full price only with proved neutral or bounded extra source',
++            'singular_past_negative_control':True}
++
++
++def main():
++    W,ops,native=native_children()
++    out={'scientific_input':'fd35893d77e4aa5f819bafa0c6428c8e7a8f1812',
++         'native_children':native,'exact_charts':exact_chart(),
++         'full_operator':full_cold_programme(W,ops),'retained_past':matrix_past(),
++         'negative_controls':mixed_price_and_selection(),
++         'global_reflection_stationarity':reflection_stationary_class()}
++    out.update({'checks':COUNT,'status':'PASS_INTERNAL_PROGRAM_SOURCE_CHART',
++        'GR_closed':False,'physical_controlled_evaluator_admitted':False,
++        'task_law_selection_proved':False,'full_physical_variation_domain_proved':False,
++        'new_native_primitive_claimed':False,'Lean_or_CI_run':False,
++        'environment':{'python':platform.python_version(),'numpy':np.__version__,'sympy':s.__version__},
++        'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
++    print(json.dumps(out,ensure_ascii=False,sort_keys=True,indent=2))
++
++if __name__=='__main__': main()
+diff --git a/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/result.json b/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/result.json
+new file mode 100644
+index 00000000..2325076a
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/result.json
+@@ -0,0 +1,121 @@
++{
++  "GR_closed": false,
++  "Lean_or_CI_run": false,
++  "checker_sha256": "43ef1aa73fcdabd120261ece0adcaa6ea01efce64cbbeaa5441b725868365e8a",
++  "checks": 362,
++  "environment": {
++    "numpy": "2.3.5",
++    "python": "3.13.5",
++    "sympy": "1.14.0"
++  },
++  "exact_charts": {
++    "amplitude_first_source": "0",
++    "amplitude_second_source": "-4*(1-c)*w/c",
++    "forward_only_fixed_cut_amplitude_second_source": "2*w",
++    "one_sided_probability_source": "-2*(1-c)*w/c",
++    "programme_ray_is_not_a_minimum_if_c_lt_1": true,
++    "report_normalized_source": "4*w/c"
++  },
++  "full_operator": {
++    "bare_clock_modes_both_grades": 4864,
++    "corner_error": 5.551115123125783e-17,
++    "extra_bare_heat_baseline": 0.9073414389560485,
++    "homogeneous_scene_modes_if_same_clock_assigned": 1033600,
++    "large_heat_matrix_diagonalized": false,
++    "same_N_assigned_only_to_declared_controlled_comparison": true,
++    "same_code_QUERY_source": 7.000613008648328e-06,
++    "same_code_QUERY_source_over_w": 16.465368218171935,
++    "whole_return_error": 1.6940658945086007e-21
++  },
++  "full_physical_variation_domain_proved": false,
++  "global_reflection_stationarity": {
++    "critical_class_for_invertible_K": "C^3=C and [C^2,K K*]=0",
++    "largest_full_scalar_FD_error": 7.102096688527126e-13,
++    "largest_matrix_identity_error": 2.4426297205443547e-15,
++    "minimum_observed_source_over_w": 3.1409482575354826,
++    "scope": "complete return at fixed K; full price only with proved neutral or bounded extra source",
++    "singular_past_negative_control": true,
++    "uniform_positive_collar_floor": "4*c_min*(1-c_max^2)/c_max^2"
++  },
++  "native_children": {
++    "child_columns": 32,
++    "child_inventory": {
++      "CX": 24,
++      "G": 4,
++      "SourceI": 10
++    },
++    "child_raw_stages": 38,
++    "controlled_columns": 64,
++    "controlled_physical_duration_identified": false,
++    "controlled_scheduled_slots": 38,
++    "native_controlled_primitive_admission_proved": false,
++    "original_oldRIGHT_retained": true,
++    "protected_rank": 8
++  },
++  "negative_controls": {
++    "classical_average_q_derivative": -0.5005129606218505,
++    "coherent_q_derivative": -0.257790927254746,
++    "exact_minimum_claimed": false,
++    "pure_programme_zero_does_not_select_Einstein": true
++  },
++  "new_native_primitive_claimed": false,
++  "physical_controlled_evaluator_admitted": false,
++  "retained_past": {
++    "cases": [
++      {
++        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
++        "other_return_T": "1",
++        "past_minimum_diagonal": "0.3",
++        "q_source_over_w": "-6.472135954999579392818347",
++        "report_finite_contrast_over_w": "16.94427218416323080807282",
++        "w": "1.883511895437402555955425e-8"
++      },
++      {
++        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
++        "other_return_T": "1e-50",
++        "past_minimum_diagonal": "0.3",
++        "q_source_over_w": "-6.472135954999579392818347",
++        "report_finite_contrast_over_w": "16.94427218416323743562408",
++        "w": "1.883511918203097190983516e-58"
++      },
++      {
++        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
++        "other_return_T": "1",
++        "past_minimum_diagonal": "1e-20",
++        "q_source_over_w": "-6.472135954999579392818347",
++        "report_finite_contrast_over_w": "16.9442721841632297305527",
++        "w": "1.405193409071749365331496e-8"
++      },
++      {
++        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
++        "other_return_T": "1e-50",
++        "past_minimum_diagonal": "1e-20",
++        "q_source_over_w": "-6.472135954999579392818347",
++        "report_finite_contrast_over_w": "16.94427218416323743562408",
++        "w": "1.405193428817434811783413e-58"
++      },
++      {
++        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
++        "other_return_T": "1",
++        "past_minimum_diagonal": "0",
++        "q_source_over_w": "-6.472135954999579392818347",
++        "report_finite_contrast_over_w": "16.9442721841632297305527",
++        "w": "1.405193409071749365331496e-8"
++      },
++      {
++        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
++        "other_return_T": "1e-50",
++        "past_minimum_diagonal": "0",
++        "q_source_over_w": "-6.472135954999579392818347",
++        "report_finite_contrast_over_w": "16.94427218416323743562408",
++        "w": "1.405193428817434811783413e-58"
++      }
++    ],
++    "literal_child_J_gap": "0.00000720422618996428777930429964557",
++    "literal_program_amplitude_Hessian": "-0.00000550354156189542182561046248528",
++    "zero_normalized_gain_assumed": false
++  },
++  "scientific_input": "fd35893d77e4aa5f819bafa0c6428c8e7a8f1812",
++  "status": "PASS_INTERNAL_PROGRAM_SOURCE_CHART",
++  "task_law_selection_proved": false
++}

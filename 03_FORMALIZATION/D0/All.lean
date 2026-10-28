@@ -671,6 +671,7 @@ import D0.Representation.RoleRealStructureNoGo
 import D0.Representation.SourcePortPreparation
 import D0.Representation.TypedRoleSceneAction
 import D0.Representation.VerifierSwapGradingNoGo
+import D0.Research.CalibratedQuerySourceFloor
 import D0.Research.ClosedHistoryNonlinearDustBranch
 import D0.Research.GoldenCurvatureKernel
 import D0.Research.GoldenCylinderOneStepBridge
@@ -684,6 +685,7 @@ import D0.Research.NativeWeightedDiracNyquistApplication
 import D0.Research.PrimitiveJetComposition
 import D0.Research.SchurStationaryTransfer
 import D0.Research.SourceReflectionKernel
+import D0.Research.TaskFaithfulReporterEffect
 import D0.SelfReading.PrimitiveMinimalityFromRawFunctor
 import D0.SelfReading.RawCanonicalSelfReadingFunctor
 import D0.SelfReading.RawHistoryCategory
