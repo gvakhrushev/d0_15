@@ -140,19 +140,13 @@ CASES: list[dict[str, Any]] = [
                 "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
                 "commit": "423ec9a87553a14c6f484e429a6d3309eeae256a",
                 "blob": "07a988011a77ee87aa13d5d816680920d51a3007",
-                "scope_query_indexes": [18],
+                "scope_query_indexes": [18, 19],
             },
             {
                 "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json",
                 "commit": "119c31ba6df9f02a4b8b491e7658de2e7432a797",
                 "blob": "9cfb08a3cbe8ef09d5f1311b6b96ea27378ab611",
                 "scope_query_indexes": [18],
-            },
-            {
-                "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
-                "commit": "423ec9a87553a14c6f484e429a6d3309eeae256a",
-                "blob": "07a988011a77ee87aa13d5d816680920d51a3007",
-                "scope_query_indexes": [19],
             },
             {
                 "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_same_record_euclidean_refinement_2026-10-27.json",

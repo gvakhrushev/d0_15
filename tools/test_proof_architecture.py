@@ -1763,6 +1763,22 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(owner_source["source_commit"], source["commit"])
         self.assertEqual(owner_source["source_blob"], source["blob"])
 
+    def test_nonnull_julia_query_surfaces_pinned_section(self) -> None:
+        case = next(item for item in cold_start.CASES
+                    if item["id"] == "julia-query-principal-frame-coframe-recovery")
+        source = next(item for item in case["required_sources"]
+                      if 8 in item.get("scope_query_indexes", []))
+        query = case["queries"][8]
+        hits = proof.full_text_search(proof.ROOT, query, limit=18)
+        scoped_source = {**source, "scope_query_indexes": [8],
+                         "sections": ["8.4"], "scope_query_sections": {"8": ["8.4"]}}
+        result = cold_start._required_source_status([("", [])] * 8 + [(query, hits)], scoped_source)
+        self.assertTrue(result["found"], result)
+        self.assertEqual(result["source_origin"], "pinned_snapshot")
+        self.assertEqual(result["expected_commit"], source["commit"])
+        self.assertEqual(result["expected_blob"], source["blob"])
+        self.assertEqual(result["missing_sections"], [])
+
     def test_nonvacuum_stencil_cold_start_retrieves_the_compiled_application(self) -> None:
         case = next(
             item for item in cold_start.CASES
@@ -2516,7 +2532,7 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(source["commit"], "423ec9a87553a14c6f484e429a6d3309eeae256a")
         self.assertEqual(source["blob"], "07a988011a77ee87aa13d5d816680920d51a3007")
-        self.assertEqual(source["scope_query_indexes"], [18])
+        self.assertEqual(source["scope_query_indexes"], [18, 19])
         inventory_source = next(
             row for row in case["required_sources"]
             if row["path"] == "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_cubic_profile_car_margin_2026-10-27.json"
