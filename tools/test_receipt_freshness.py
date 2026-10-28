@@ -6,11 +6,14 @@ tests never replay the real corpus or change an actual scientific registry.
 from __future__ import annotations
 
 import hashlib
+import os
 import pathlib
+import stat
 import subprocess
 import sys
 import tempfile
 import unittest
+import zlib
 from unittest import mock
 
 from tools import proof_architecture as proof
@@ -82,6 +85,17 @@ class ReceiptFreshnessTests(unittest.TestCase):
     def status(self, report: dict | None = None) -> dict:
         return proof.receipt_status(self.root, self.report if report is None else report)
 
+    def overwrite_loose_object(self, oid: str, kind: str, contents: bytes) -> None:
+        """Deliberately corrupt an isolated fixture's object under its old OID."""
+        path = self.root / ".git" / "objects" / oid[:2] / oid[2:]
+        path.chmod(stat.S_IREAD | stat.S_IWRITE)
+        header = kind.encode("ascii") + b" " + str(len(contents)).encode("ascii") + b"\0"
+        path.write_bytes(zlib.compress(header + contents))
+
+    def raw_object(self, kind: str, oid: str) -> bytes:
+        return subprocess.run(["git", "cat-file", kind, oid], cwd=self.root, check=True,
+                              stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout
+
     def test_legacy_clean_receipt_is_historical_not_current(self) -> None:
         result = self.status()
         self.assertEqual(result["historical_selected_bindings_status"], "verified")
@@ -89,6 +103,26 @@ class ReceiptFreshnessTests(unittest.TestCase):
         self.assertEqual(result["tool_status"], "current")
         self.assertEqual(result["search_corpus_status"], "unverified")
         self.assertEqual(result["overall_status"], "unverified")
+
+    def test_git_environment_cannot_redirect_repository(self) -> None:
+        # A Git environment pointing elsewhere must not replace this fixture's
+        # snapshot, even when the requested commit exists in that other repo.
+        with tempfile.TemporaryDirectory(prefix="d0-other-git-") as other:
+            subprocess.run(["git", "init", "-q", other], check=True)
+            with mock.patch.dict(os.environ, {"GIT_DIR": str(pathlib.Path(other) / ".git"),
+                                            "GIT_WORK_TREE": other,
+                                            "GIT_CONFIG_COUNT": "1",
+                                            "GIT_CONFIG_KEY_0": "core.worktree",
+                                            "GIT_CONFIG_VALUE_0": other}):
+                result = self.status()
+        self.assertEqual(result["historical_selected_bindings_status"], "verified")
+        self.assertEqual(result["authority_status"], "current")
+
+    def test_nested_directory_is_not_the_repository_root(self) -> None:
+        nested = self.root / "02_REGISTRY"
+        result = proof.receipt_status(nested, self.report)
+        self.assertEqual(result["historical_selected_bindings_status"], "unverified")
+        self.assertIn("repository_root", result["missing_or_unverified"])
 
     def test_git_replace_cannot_forge_historical_bindings(self) -> None:
         path = "02_REGISTRY/formal_support.csv"
@@ -119,6 +153,50 @@ class ReceiptFreshnessTests(unittest.TestCase):
         result = self.status()
         self.assertEqual(result["historical_selected_bindings_status"], "verified")
         self.assertNotIn("snapshot_commit:not_commit", result["snapshot_mismatches"])
+
+    def test_corrupt_loose_blob_cannot_forge_historical_binding(self) -> None:
+        path = "02_REGISTRY/formal_support.csv"
+        blob = self.git("rev-parse", f"HEAD:{path}").strip()
+        replacement = b"forged historical binding\n"
+        self.overwrite_loose_object(blob, "blob", replacement)
+        self.write(path, replacement)
+        report = {**self.report, "authority_source_digests": {
+            **self.report["authority_source_digests"], path: digest(replacement)}}
+        # Git alone accepts these bytes under the original loose-object name.
+        self.assertEqual(self.raw_object("blob", blob), replacement)
+        result = self.status(report)
+        self.assertEqual(result["historical_selected_bindings_status"], "unverified")
+        self.assertEqual(result["authority_status"], "unverified")
+        self.assertIn(path, result["snapshot_unavailable"])
+        self.assertNotIn(path, result["authority_changes"])
+        self.assertEqual(result["overall_status"], "unverified")
+
+    def test_corrupt_loose_tree_cannot_authenticate_unchanged_bindings(self) -> None:
+        tree = self.git("rev-parse", "HEAD:02_REGISTRY").strip()
+        blob = self.git("rev-parse", "HEAD:02_REGISTRY/formal_support.csv").strip()
+        original = self.raw_object("tree", tree)
+        # An additional correctly ordered entry does not change the real paths,
+        # but the bytes no longer hash to the tree OID in the commit.
+        replacement = original + b"100644 zzz_extra\0" + bytes.fromhex(blob)
+        self.overwrite_loose_object(tree, "tree", replacement)
+        self.assertEqual(self.raw_object("tree", tree), replacement)
+        result = self.status()
+        self.assertEqual(result["historical_selected_bindings_status"], "unverified")
+        self.assertEqual(result["authority_status"], "unverified")
+        self.assertIn("02_REGISTRY/formal_support.csv", result["snapshot_unavailable"])
+        self.assertEqual(result["overall_status"], "unverified")
+
+    def test_corrupt_loose_commit_cannot_authenticate_unchanged_bindings(self) -> None:
+        original = self.raw_object("commit", self.head)
+        replacement = original + b"\nforged commit message\n"
+        self.overwrite_loose_object(self.head, "commit", replacement)
+        self.assertEqual(self.raw_object("commit", self.head), replacement)
+        result = self.status()
+        self.assertEqual(result["historical_selected_bindings_status"], "unverified")
+        self.assertEqual(result["authority_status"], "unverified")
+        self.assertEqual(result["tool_status"], "unverified")
+        self.assertIn("snapshot_commit", result["snapshot_unavailable"])
+        self.assertEqual(result["overall_status"], "unverified")
 
     def test_authority_mutation_does_not_damage_historical_pin(self) -> None:
         path = "02_REGISTRY/formal_support.csv"

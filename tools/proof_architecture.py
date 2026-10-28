@@ -795,11 +795,32 @@ _RECEIPT_TOOLS = {
 }
 
 
-def _receipt_git_blob(root: pathlib.Path, commit: str, path: str) -> bytes | None:
-    """Read a local immutable snapshot without fetching missing Git objects."""
-    env = os.environ.copy()
+def _receipt_git_env() -> dict[str, str]:
+    """Prevent inherited Git settings from redirecting snapshot reads."""
+    redirects = {"GIT_DIR", "GIT_WORK_TREE", "GIT_COMMON_DIR", "GIT_OBJECT_DIRECTORY",
+                 "GIT_ALTERNATE_OBJECT_DIRECTORIES", "GIT_INDEX_FILE", "GIT_NAMESPACE",
+                 "GIT_REPLACE_REF_BASE", "GIT_CEILING_DIRECTORIES", "GIT_DISCOVERY_ACROSS_FILESYSTEM"}
+    env = {key: value for key, value in os.environ.items()
+           if key.upper() not in redirects and not key.upper().startswith("GIT_CONFIG_")}
     env["GIT_NO_LAZY_FETCH"] = "1"
     env["GIT_NO_REPLACE_OBJECTS"] = "1"
+    return env
+
+
+def _receipt_repo_root(root: pathlib.Path) -> bool:
+    try:
+        result = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=root,
+                                env=_receipt_git_env(), stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE, timeout=15)
+        return (result.returncode == 0 and
+                pathlib.Path(os.fsdecode(result.stdout).strip()).resolve() == root.resolve())
+    except (OSError, ValueError, subprocess.SubprocessError):
+        return False
+
+
+def _receipt_git_blob(root: pathlib.Path, commit: str, path: str) -> bytes | None:
+    """Read a local immutable snapshot without fetching missing Git objects."""
+    env = _receipt_git_env()
     try:
         result = subprocess.run(
             ["git", "show", f"{commit}:{path}"], cwd=root, env=env,
@@ -812,9 +833,7 @@ def _receipt_git_blob(root: pathlib.Path, commit: str, path: str) -> bytes | Non
 
 def _receipt_git_object_type(root: pathlib.Path, object_id: str) -> str | None:
     """Read a local Git object's type without fetching missing objects."""
-    env = os.environ.copy()
-    env["GIT_NO_LAZY_FETCH"] = "1"
-    env["GIT_NO_REPLACE_OBJECTS"] = "1"
+    env = _receipt_git_env()
     try:
         result = subprocess.run(
             ["git", "cat-file", "-t", object_id], cwd=root, env=env,
@@ -828,6 +847,85 @@ def _receipt_git_object_type(root: pathlib.Path, object_id: str) -> str | None:
         return result.stdout.decode("ascii").strip()
     except UnicodeError:
         return None
+
+
+class _ReceiptGitObjects:
+    """Verify selected commit/tree/blob chains by raw Git object SHA-1.
+
+    Git can return loose-object bytes without verifying their object name. A
+    per-status cache avoids rereading shared trees while remaining independent
+    of worktree/index state. Missing, malformed and corrupt objects fail closed.
+    """
+
+    def __init__(self, root: pathlib.Path) -> None:
+        self.root = root
+        self.env = _receipt_git_env()
+        self.cache: dict[tuple[str, str], bytes | None] = {}
+
+    def raw(self, oid: str, kind: str) -> bytes | None:
+        key = (oid, kind)
+        if key in self.cache:
+            return self.cache[key]
+        result = None
+        if re.fullmatch(r"[0-9a-f]{40}", oid) and kind in {"commit", "tree", "blob"}:
+            try:
+                proc = subprocess.run(
+                    ["git", "cat-file", "--batch"], cwd=self.root, env=self.env,
+                    input=(oid + "\n").encode("ascii"), stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE, timeout=15,
+                )
+                header, sep, data = proc.stdout.partition(b"\n")
+                fields = header.split(b" ")
+                if proc.returncode == 0 and sep and len(fields) == 3:
+                    actual_oid, actual_kind, size = fields
+                    if (actual_oid == oid.encode("ascii") and actual_kind == kind.encode("ascii")
+                            and size.isdigit() and len(data) == int(size) + 1 and data[-1:] == b"\n"):
+                        raw = data[:-1]
+                        git_header = kind.encode("ascii") + b" " + str(len(raw)).encode("ascii") + b"\0"
+                        if hashlib.sha1(git_header + raw).hexdigest() == oid:
+                            result = raw
+            except (OSError, ValueError, subprocess.SubprocessError):
+                pass
+        self.cache[key] = result
+        return result
+
+    def commit_tree(self, commit: str) -> str | None:
+        raw = self.raw(commit, "commit")
+        if raw is None:
+            return None
+        first = raw.split(b"\n", 1)[0]
+        return first[5:].decode("ascii") if re.fullmatch(rb"tree [0-9a-f]{40}", first) else None
+
+    def blob(self, commit: str, path: str) -> bytes | None:
+        parts = path.split("/")
+        if any(part in {"", ".", ".."} or "\0" in part for part in parts):
+            return None
+        oid = self.commit_tree(commit)
+        if oid is None:
+            return None
+        for index, part in enumerate(parts):
+            raw = self.raw(oid, "tree")
+            if raw is None:
+                return None
+            matches: list[tuple[bytes, str]] = []
+            pos = 0
+            while pos < len(raw):
+                space = raw.find(b" ", pos)
+                nul = raw.find(b"\0", space + 1) if space >= 0 else -1
+                if space < 0 or nul < 0 or nul + 21 > len(raw):
+                    return None
+                if raw[space + 1:nul] == part.encode("utf-8"):
+                    matches.append((raw[pos:space], raw[nul + 1:nul + 21].hex()))
+                pos = nul + 21
+            if len(matches) != 1:
+                return None
+            mode, oid = matches[0]
+            if index < len(parts) - 1:
+                if mode not in {b"40000", b"040000"}:
+                    return None
+            elif mode not in {b"100644", b"100755"}:
+                return None
+        return self.raw(oid, "blob")
 
 
 def _search_corpus_path(path: str) -> bool:
@@ -854,9 +952,7 @@ def _receipt_corpus_changes(root: pathlib.Path, commit: str) -> tuple[list[str],
     A legacy receipt does not record its actual rg file set or checkout bytes.
     These Git candidates therefore do not prove the search corpus changed.
     """
-    env = os.environ.copy()
-    env["GIT_NO_LAZY_FETCH"] = "1"
-    env["GIT_NO_REPLACE_OBJECTS"] = "1"
+    env = _receipt_git_env()
     try:
         tracked = subprocess.run(
             ["git", "diff", "--no-ext-diff", "--no-renames", "--name-only", "-z", commit, "--"],
@@ -916,14 +1012,21 @@ def receipt_status(root: pathlib.Path, report: dict[str, Any]) -> dict[str, Any]
         missing.append("unexpected_authority_keys")
     valid_snapshot = isinstance(snapshot, str) and bool(re.fullmatch(r"[0-9a-f]{40}", snapshot))
     clean_snapshot = valid_snapshot and report.get("worktree_dirty") is False
-    object_type = _receipt_git_object_type(root, snapshot) if clean_snapshot else None
-    comparable_snapshot = clean_snapshot and object_type == "commit"
+    repository_root = _receipt_repo_root(root)
+    object_type = _receipt_git_object_type(root, snapshot) if clean_snapshot and repository_root else None
+    git_objects = _ReceiptGitObjects(root)
+    comparable_snapshot = (clean_snapshot and object_type == "commit" and
+                           git_objects.commit_tree(snapshot) is not None)
+    if not repository_root:
+        missing.append("repository_root")
     if not clean_snapshot:
         missing.append("clean_report_snapshot")
     elif object_type is None:
         snapshot_unavailable.append("snapshot_commit")
     elif object_type != "commit":
         snapshot_mismatches.append("snapshot_commit:not_commit")
+    elif not comparable_snapshot:
+        snapshot_unavailable.append("snapshot_commit")
     if cold_summary:
         if not isinstance(replay, dict):
             missing.append("replay")
@@ -938,7 +1041,7 @@ def receipt_status(root: pathlib.Path, report: dict[str, Any]) -> dict[str, Any]
         valid_digest = isinstance(digest, str) and bool(re.fullmatch(r"[0-9a-f]{64}", digest))
         if not valid_digest:
             missing.append(path)
-        old = _receipt_git_blob(root, snapshot, path) if comparable_snapshot else None
+        old = git_objects.blob(snapshot, path) if comparable_snapshot else None
         if comparable_snapshot and old is None:
             snapshot_unavailable.append(path)
         elif old is not None and valid_digest and hashlib.sha256(old).hexdigest() != digest:
@@ -997,9 +1100,10 @@ def receipt_status(root: pathlib.Path, report: dict[str, Any]) -> dict[str, Any]
         "current_missing": current_missing, "current_unavailable": current_unavailable,
         "unexpected_authority_keys": unexpected_authorities[:20],
         "unexpected_authority_key_count": len(unexpected_authorities),
-        "boundary": ("Historical selected-bindings status checks the commit type, seven authority hashes "
-                     "and selected tool hashes against the snapshot. Other receipt fields, including "
-                     "test_sha256, Git blob IDs and the full output hash, are not checked. "
+        "boundary": ("Historical selected-bindings status verifies the raw Git object IDs and types "
+                     "along selected paths, seven authority hashes and selected tool hashes against "
+                     "the snapshot. Other receipt fields, including test_sha256, recorded Git blob IDs "
+                     "and the full output hash, are not checked. "
                      "This does not authenticate execution or output. "
                      "Complete current corpus and followed "
                      "Git-pin availability are not established by legacy receipts. Git-diff "

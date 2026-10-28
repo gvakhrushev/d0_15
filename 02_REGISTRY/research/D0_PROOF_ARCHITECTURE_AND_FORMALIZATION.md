@@ -12441,6 +12441,10 @@ from missing or inconsistent bindings, and lists a bounded set of potential
 search-input changes. The check is read-only and does not accept a scientific
 result. Its historical status authenticates only the selected bindings, not
 the original execution, output, other receipt fields or every Git pin.
+The selected historical bindings are checked through raw commit, tree and blob
+object hashes; inherited Git repository redirects and object replacement are
+disabled, and the requested directory must be the repository root. Corrupt or
+unavailable objects leave the corresponding binding unverified.
 
 Legacy receipts do not record the full search corpus and its environment, so
 even matching selected hashes cannot establish that a historical search is
