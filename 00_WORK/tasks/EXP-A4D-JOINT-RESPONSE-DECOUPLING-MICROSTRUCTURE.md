@@ -16846,3 +16846,72 @@ full all-unitary homogeneous-clock thermal remainder can join870
 only on a common actual carrier/lift/gain. The new phase-descent test
 remains specific to the alternative phase route; direct native Book03
 stationarity requires no additional phase-Hamiltonian identification.
+
+### 28 October - test the precise source mismatch in the general GR application
+
+SAME #334 / constitutive/native-programme-v1; native realization / final
+composition, incoming22e72999. Consume7cv844 and its explicit distinction
+between paid-writer34--37's direct coframe-volume f_star and the full-CAR
+density-involution source. The exact parent question is whether agreement
+of their metrics on the existing determinant-one null solution suffices
+to transfer the general Einstein-scalar source theorem. Test the SAME
+two declared continuum source interfaces on one exact determinant-one
+Einstein-scalar field with nonzero kinetic density, retaining all16 coframe,
+independent connection and both matter variations. This changes the
+source-composition input; it is not another finite root search or a new
+physical action. Keep the original report ratio, source gains, smooth-test
+norm and fixed units/PF conventions explicit. The smallest decisive check
+is exact curvature/Klein-Gordon/torsion algebra and the full volume-source
+difference on a compact radial test. Write paths remain only this brief
+and the primary same-representative memo. No new task or GR promotion.
+
+### 28 October - exact non-null application separates the two source limits
+
+Result: primary7cy871--878, same constitutive/native-programme-v1.
+The existing general full-CAR source is consumed in its density metric;
+the original direct-star source retains its own coframe-volume numerator.
+On one exact smooth determinant-one Einstein/two-scalar field, the metric
+values coincide, the scalar kinetic density is nonzero, and the full-CAR
+continuum covector vanishes. The direct-star coframe covector instead is
+f_star times transpose(inverse(e)). The original fixed native report ratio
+is derived from the actual sigma-minus polynomial, not fitted to the field.
+Both matter equations and the independent Lorentz connection equation
+are retained and solved. All16 coframe entries are checked directly at
+fixed omega from its curvature two-form as well as through the metric.
+
+The changed mathematical input supplies a compact positive source test
+with exact unnormalized margin2/405 and dual margin2/(405 L_chi), with
+the actual field-test norm L_chi retained. This disproves the proposed
+general source transfer by determinant-one metric equality. It preserves
+the old pointwise-null exact family, where this difference vanished, and
+does not contradict the separate original unpadded42 root. It also retains
+the full-CAR general source theorem with its physical density-metric,
+admission and solution-recovery premises. The two actual Book gains and
+the programme-specific finite-contrast errors remain distinct.
+
+The next physical substitution is the SAME original paid QUERY's complete
+operand/metric map and any genuinely generated reaction source, with its
+independent preparation, scene, cut, clock and retained-history constraints.
+No cancellation is assigned from the desired Einstein equation. Incoming
+22e72999's QUERY reduction, archive-phase and whole-clock results are
+preserved. This is a scoped route change in7cv844, not a new action, exact
+native execution/root, acceptance, lifecycle promotion or GR closure.
+GR_closed=false. The changed exact checker and observed receipt are
+embedded with immutable source-owner pins and SHA256. No unchanged heavy
+CAR/clock/root or Lean calculation is replayed.
+
+Incominge120d891 is preserved in full, including its distinct7cx861--870
+original full128 port-history/feedback reconstruction. That result still
+retains its expanded-apparatus price and all42 field/metric transport; it
+does not identify either operand in the present continuum comparison.
+The new result is7cy871--878. Every incoming primary/brief byte is retained.
+
+Final local validation on incominge120d891: work, agent-protocol, assembly
+and repository guards pass; warnings0 and scientific_promotion=false.
+The exact changed checker passes on its four pinned source owners under
+normal Python3.9.6/SymPy1.14.0. Embedded code/observed JSON, their SHA256,
+source pins, syntax, local links and equation references are checked.
+Removing only the7cy insertion recovers all2773742 incoming primary bytes;
+the entire1091711-byte incoming brief remains an exact prefix. Only the
+two owned paths change, by insertion. No new remote CI, independent
+scientific acceptance, physical source selection or GR closure is claimed.

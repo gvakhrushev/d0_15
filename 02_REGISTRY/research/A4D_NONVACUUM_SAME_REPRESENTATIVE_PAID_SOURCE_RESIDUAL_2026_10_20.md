@@ -84781,6 +84781,287 @@ d0_generated_cut_source_20261028.json: 1577 bytes, SHA256 `d6d2848cdb8232c3f981a
 ```
 
 
+## 7cy. A non-null Einstein-scalar field separates the two existing complete-source limits
+
+28 October 2026. SAME #334 / constitutive/native-programme-v1; native realization / final composition, incominge120d891. Consume the precise source/metric distinction in7cv844, rather than importing the general full-CAR theorem into the direct-click programme. The changed input is an exact smooth Einstein-scalar field with NONZERO kinetic density. On the old pointwise-null family the distinction below vanished. This is a source-composition test, not another finite root search or a new physical action. The incoming generated-cut, complete clock-winding, QUERY-reduction and archive-phase results remain intact. Incoming7cx861--870 additionally reconstructs the original feedback from its own recorded port history; this does not identify that full128 operand with either continuum interface compared here. Its complete enlarged-apparatus price and field/metric transport remain explicit premises.
+
+### 1. The two already specified operands and their common comparison chart
+
+Use [paid-writer34--37](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#10-open-chart-weak-query-consumption-by-the-complete-native-book-word), the [unchanged full-CAR identity](A4D_PARITY_RESOLVED_GEOMETRIC_SOURCE_GLOBAL_2026_10_27.md), and the [joint density/source theorem](A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md). Fix one oriented Role chart with eta=diag(1,-1,-1,-1), coframe e, E=det(e)>0, g=e^T eta e and an INDEPENDENT proper-Lorentz connection omega. Work in the fixed common unit calibration and uniform positive PF convention; take the ambient coordinate slab D=(1/4,5/4) x (0,1)^3, of volume one, with rho=1. Fixed original unit factors are transported before this comparison. No field-dependent factor, nonuniform PF derivative, or moving total PF mass is suppressed. These are the cofactor/orientation conventions of the density owner's(15)--(17); another Cartesian STAR convention still needs its actual sign/unit transport.
+
+Write the continuum limits of the specified operands as
+
+    f_star(e,omega)=E R(e,omega)/2,
+    q(e,Psi)=sum_(A=0,15) g^(mu nu) partial_mu Psi_A partial_nu Psi_A,
+    S_star=integral_D [f_star+lambda q] d^4x,
+    S_mom=integral_D [f_star/E+lambda q] d^4x,
+    e_tilde=T(e)=E^(-1/2)e,  g_tilde=g/E.                  (871)
+
+The first is the direct original star operand in paid-writer35--37 and7cq792. The second follows from the ACTUAL inverse-leg full-CAR numerator: density-owner3--6 gives f_mom,h=f_star,h/E+O_C1(h^4), retaining its true determinant derivative. It is exactly the Palatini/two-scalar continuum density in e_tilde. Both use the SAME fixed report ratio lambda=-kappa, not a refitted coupling. With p=(sqrt5-1)/2 and zeta=2^-20,
+
+    Q_E=1-4 zeta p^3, R_E=1-4 zeta p^3(1+p^6),
+    kappa=2 p^(-5)(R_E/Q_E+p^6)
+         =23.416406751884074972895582... >20.             (872)
+
+The checker also derives this ratio directly as -r_y(0,0)/r_x(0,0) from the ORIGINAL sigma-minus polynomial paid-writer34. The f_star and f_mom names in871 denote different specified source operands. Equation871 is a continuum source interface, NOT equality of their finite nonlinear prices. Their complete Book gains and all independent apparatus equations remain separate.
+
+### 2. One exact non-null field, with both matter and connection equations retained
+
+For tau>0 set
+
+    e=diag((2tau)^(-1/2),(2tau)^(1/6),(2tau)^(1/6),(2tau)^(1/6)),
+    g=diag((2tau)^(-1),-(2tau)^(1/3),-(2tau)^(1/3),-(2tau)^(1/3)),
+    Psi_0=log(2tau)/(2 sqrt(3 kappa)), Psi_15=0,
+    E=1,  q=1/(6 kappa tau)>0,  R=1/(3tau),
+    G_mu_nu=kappa[2 partial_mu Psi_0 partial_nu Psi_0-g_mu_nu q],
+    Box_g Psi_0=Box_g Psi_15=0.                          (873)
+
+These are exact expressions throughout D. The convention is R^rho_(sigma mu nu)=partial_mu Gamma^rho_(nu sigma)-partial_nu Gamma^rho_(mu sigma)+Gamma^rho_(mu alpha)Gamma^alpha_(nu sigma)-Gamma^rho_(nu alpha)Gamma^alpha_(mu sigma). Direct differentiation gives every Ricci/Einstein component in873. The tetrad connection induced by this Levi-Civita connection satisfies omega_mu^T eta+eta omega_mu=0 and de+omega wedge e=0. Thus the independent Palatini connection equation is solved; it has not been frozen before varying the action. The second scalar is still independently variable at its zero value.
+
+Because E is IDENTICALLY one on the configuration, e_tilde=e and g_tilde=g there, with the same compatible connection. The whole S_mom first source therefore vanishes on every compact coframe/connection/matter test. Nevertheless E is NOT constrained to one under variation. In particular DT_e[chi e]=-chi e. The full sixteen-component density map is invertible and is not the identity map on a neighbourhood of this field.
+
+This example stays inside the small material-amplitude chart in the stated units: on D, |log(2tau)|<1, so |Psi_0|^2<1/(12kappa)<1/240<(3/20)^2<(p/4)^2. The coframe is smooth, nondegenerate and bounded together with its inverse on the closed slab. This does not assert a finite native preparation, an exact lattice root, or a new physical metric dictionary.
+
+### 3. The complete direct-star coframe source does not vanish
+
+At the field873 vary the INVERSE metric while retaining the independent connection. The direct-star density gives
+
+    E_star,mu_nu=(E/2)G_mu_nu+lambda partial_mu Psi_0 partial_nu Psi_0
+                =-(kappa q/2)g_mu_nu !=0.                (874)
+
+Here the scalar term of S_star is q, not E q, so there is no scalar determinant derivative to supply its trace term. Its matter equation is partial_mu(g^(mu nu)partial_nu Psi_A)=0, which DOES hold at E=1. Its independent connection equation also holds. The failure is an actual coframe equation, not an omitted scalar or connection equation.
+
+One can see the same result without eliminating the connection at all. At873 the exact action difference and the already-solved S_mom equations give
+
+    D(S_star-S_mom)=integral_D f_star dE,
+    E_star,a^mu=f_star (e^(-1))_(mu a),
+    D S_star[delta e=chi e,delta omega=0,delta Psi=0]
+       =integral_D (2/(3tau)) chi d^4x.                  (875)
+
+Indeed S_star-S_mom=integral(1-1/E)f_star. Its f_star derivative is multiplied by zero at E=1, but its determinant derivative survives. At873, f_star=R/2=1/(6tau), dE=tr(e^(-1)delta e), and a radial variation gives dE=4chi. The exact checker also contracts the curvature two-form of the computed Lorentz connection and differentiates E R/2 at FIXED omega, independently of the metric calculation. It then independently pulls874 through delta(g^(-1))=-g^(-1)(delta e^T eta e+e^T eta delta e)g^(-1) for EVERY one of the sixteen elementary coframe directions; the result is875. Only the four diagonal entries are nonzero at this diagonal field.
+
+Thus equality of the two measured metric VALUES on this whole solution does not identify their full covectors. Conversely the old common-null source comparison is preserved: when E=1 and f_star=0, the extra875 term is zero. That vanishing cannot establish a general off-shell equation class. No unrestricted finite full42 root or its distinct source tolerance is contradicted.
+
+### 4. A compact test and a genuine positive source margin
+
+Choose a smooth 0<=chi<=1, supported in (1/2,1) x (0,1)^3, equal to one on [2/3,5/6] x [1/3,2/3]^3. Compact support keeps all collars fixed. On that plateau 2/(3tau)>=4/5, hence
+
+    D S_mom[V_chi]=0,
+    D S_star[V_chi]>= (4/5)(1/6)(1/27)=2/405>0,
+    V_chi=(chi e,0,0).                                  (876)
+
+Let L_chi=||V_chi||_V>0 in the actual chosen bounded-smooth field-test norm. It is finite; no claim L_chi=1 is made. Then the tested covector gap obeys
+
+    ||D S_star-D S_mom||_(V*)>=2/(405 L_chi).             (877)
+
+This is a bound in the declared CONTINUUM test norm. It is not a raw-gate-max bound, not a bound on the original unpadded42 residual and not a comparison with its1e-22 allowance. Every sampled/decoded native norm and its true inverse modulus must still be supplied by the actual execution map.
+
+The first identity in875 holds at every E=1 configuration; its other two equalities use the stationary field873. Restricting tests to dE=0 erases this particular difference, but supplies a different constrained test space. Its physical admission and any reaction equation require their own derivation; such a restriction is not inserted to obtain Einstein.
+
+At this same configuration no nonzero gain and invertible source pullback identifying it with the stationary S_mom field can convert a zero covector into874. The given density map T fixes the configuration, so it does not avoid that obstruction. This excludes the particular claimed source substitution; it does not exclude a different field map which sends it to a DIFFERENT configuration, or a separately derived physical reaction source.
+
+### 5. Apply the margin through the existing price/error interfaces
+
+The continuous comparison has a concrete finite-test consumer. Put v_chi=V_chi/L_chi. For each declared programme j=star,mom retain its OWN complete price, common paid clock/register, true positive source gain Gamma_j,h and actual same-initial test pair. If the applicable owned bounds prove
+
+    |C_j,h(v_chi)-D S_j(v_chi)|<=epsilon_j,h,
+    C_j,h=[B_j,h(Y+t v_chi)-B_j,h(Y-t v_chi)]/(2t Gamma_j,h),
+
+then
+
+    |C_star,h-C_mom,h|>=2/(405 L_chi)-epsilon_star,h-epsilon_mom,h.
+    epsilon_star,h+epsilon_mom,h<1/(405 L_chi)
+        implies |C_star,h-C_mom,h|>1/(405 L_chi).         (878)
+
+The source-consistency input for star is the ACTUAL paid-writer37 bound, including tau_h T_h, plus its geometric consistency. For mom it is density-owner14--16, including the unchanged CAR remainder, real attenuation and full heat normalizer. Actual finite compilation adds the relevant complete-price contrast errors divided by t Gamma_j,h. The native-clock owner12 uses L_clock delta/(t Gamma_h), L_clock=1/11+2r z/(1-z); paid-writer32 and7cr804 retain their own contracts. In particular7cr802's primary-centre zero-source estimate is NOT asserted at this new non-null field. Neither value convergence nor endpoint accuracy alone proves878's premises.
+
+This section computes the exact continuum margin. It does NOT emit the huge two-programme compiler, assert that its addressed tests are physically interchangeable, prove a numeric finite h cutoff, or assert that both contrasts are available under one physical task. Equation878 states exactly what a later actual same-task source comparison must preserve. Constant baseline prices remain paid; only each proved field-independent baseline cancels within its own contrast.
+
+### 6. Parent substitution and the remaining physical application
+
+The consumer is7cv844's proposed horizontal Einstein-source implication. The tempting substitution "direct-star source plus determinant-one metric equality therefore inherits the general full-CAR Einstein theorem" is now disproved on a concrete exact non-null Einstein-scalar field, with all field components and a compact source margin retained. This is a scoped route change, not independent positive acceptance. The full-CAR/density theorem keeps its general conditional source result and its operational metric/admission/recovery premises. The direct-star result keeps its original common-null solution and its actual off-shell source37.
+
+The next application must derive which full operand and physical metric the SAME original paid QUERY/field writer supplies, with its independent input, scene, cut, clock and retained-history constraints. If that actual complete source includes an extra reaction cancelling875, it must be calculated from that execution with its true gain; the required value at873 is -f_star(e^(-1))^T. This statement does not insert such a term or retune lambda. Incoming22e72999's freely stationary QUERY reduction and archive-phase descent boundaries remain in force. Source order, off-shell equation class, native stationarity, finite solution recovery and a common physical refinement are still separate obligations. No claim, assembly acceptance, lifecycle state or raw216 result is changed. GR_closed=false.
+
+### 7. Frozen changed calculation and observed receipt
+
+Normal Python3.9.6 / SymPy1.14.0. The embedded checker pins four actually used source owners, derives the original report ratio, evaluates all curvature and Klein-Gordon rows, proves Lorentz/torsion compatibility, checks all sixteen coframe entries both from the metric covector and directly from Palatini curvature at fixed omega, and verifies the rational compact-test margin and small-amplitude bounds. It refuses optimized Python with disabled assertions. The R and q values, exact nonzero volume source and the fixed native coupling are algebraic/analytic conclusions, not numerical extrapolation; the decimal coupling is for orientation only. Existing CAR/clock/source certificates are consumed at their pinned scope, without unchanged heavy or Lean replay.
+
+Executed source SHA256: `6fb6f8aa620d5458e79c8d4566a8380075cb6a8e1d31e45b2184178429ad70b0`.
+Observed JSON SHA256: `e0f9d0353be40f29a4d1354fb1fe31b00a0423f22392238f44d8d31876401fd9`.
+Save the Python block as a local file and run it with normal Python from this repository root; it reads the pinned source owners and prints the receipt. No finite-native/CI/physical-admission result is inferred from this check.
+
+```python
+"""Exact non-null Einstein-scalar witness separating existing source carriers.
+
+The metric is an analytical continuum comparison. This is not a finite
+native execution, selected field equation, exact discrete root or GR closure.
+"""
+from pathlib import Path
+import hashlib, json
+import sympy as s
+
+if not __debug__:
+ raise RuntimeError('exact checks require normal Python; assertions must remain enabled')
+root=Path.cwd()
+expected={
+ '02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md':'320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b',
+ '02_REGISTRY/research/A4D_PARITY_RESOLVED_GEOMETRIC_SOURCE_GLOBAL_2026_10_27.md':'43e94708f85630c9c86e92c6b257eadd96f382acd5f2e462ef8fae58095ef6ee',
+ '02_REGISTRY/research/A4D_NATIVE_CLOCK_FULL_PRICE_COMPILATION_AND_FINITE_TEST_RECOVERY_2026_10_27.md':'f23ef19ff9c09e51b9091fd5da8b3936d3a66ac243d157c7a016318c778d28af',
+ '02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md':'10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05',
+}
+pins={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in expected}
+if pins!=expected:
+ raise RuntimeError('source input changed: review and repin before replay')
+t,k=s.symbols('tau kappa',positive=True)
+x,y,z=s.symbols('x y z',real=True);coords=[t,x,y,z]
+eta=s.diag(1,-1,-1,-1)
+e=s.diag((2*t)**s.Rational(-1,2), *[(2*t)**s.Rational(1,6)]*3)
+g=s.simplify(e.T*eta*e); gi=s.simplify(g.inv())
+E=s.simplify(e.det()); assert E==1 and s.simplify(g.det())==-1
+phi=s.log(2*t)/(2*s.sqrt(3*k)); dp=s.Matrix([s.diff(phi,v) for v in coords])
+q=s.simplify((dp.T*gi*dp)[0]); assert q==1/(6*k*t)
+Gamma=[[[s.simplify(sum(gi[a,d]*(s.diff(g[d,c],coords[b])+s.diff(g[d,b],coords[c])-s.diff(g[b,c],coords[d]))/2 for d in range(4))) for c in range(4)] for b in range(4)] for a in range(4)]
+Ric=s.zeros(4)
+for a in range(4):
+ for b in range(4):
+  Ric[a,b]=s.simplify(sum(s.diff(Gamma[c][a][b],coords[c])-s.diff(Gamma[c][a][c],coords[b])+sum(Gamma[c][a][b]*Gamma[d][c][d]-Gamma[d][a][c]*Gamma[c][b][d] for d in range(4)) for c in range(4)))
+R=s.simplify(s.trace(gi*Ric)); assert R==1/(3*t)
+Ein=s.simplify(Ric-g*R/2);stress=s.simplify(2*dp*dp.T-g*q)
+assert all(s.simplify(v)==0 for v in Ein-k*stress)
+wave=s.simplify(sum(s.diff(sum(gi[a,b]*dp[b] for b in range(4)),coords[a]) for a in range(4)))
+assert wave==0
+# The independent Palatini connection equation is retained: the tetrad
+# connection associated with Gamma is Lorentz and torsion-free.
+ei=s.simplify(e.inv());omega=[]
+for mu in range(4):
+ om=s.zeros(4)
+ for a in range(4):
+  for b in range(4):
+   om[a,b]=s.simplify(sum((sum(e[a,nu]*Gamma[nu][mu][rho] for nu in range(4))-s.diff(e[a,rho],coords[mu]))*ei[rho,b] for rho in range(4)))
+ assert all(s.simplify(v)==0 for v in om.T*eta+eta*om)
+ omega.append(om)
+for mu in range(4):
+ for nu in range(4):
+  torsion=s.simplify(e[:,nu].diff(coords[mu])-e[:,mu].diff(coords[nu])+omega[mu]*e[:,nu]-omega[nu]*e[:,mu])
+  assert all(v==0 for v in torsion)
+curvature=[[s.simplify(omega[nu].diff(coords[mu])-omega[mu].diff(coords[nu])+omega[mu]*omega[nu]-omega[nu]*omega[mu]) for nu in range(4)] for mu in range(4)]
+def contract_curvature(left,right):
+ return s.simplify(sum(left[mu,a]*right[nu,b]*curvature[mu][nu][a,b]*eta[b,b] for mu in range(4) for nu in range(4) for a in range(4) for b in range(4)))
+assert s.simplify(contract_curvature(ei,ei)-R)==0
+
+# Original direct-star continuum density: E R/2 + lambda q, lambda=-k.
+# Metric derivative uses independently varied inverse metric, before
+# connection elimination. Standard scalar density instead has E lambda q.
+direct=s.simplify(E*Ein/2-k*dp*dp.T)
+assert all(s.simplify(v)==0 for v in direct+k*q*g/2)
+assert direct!=s.zeros(4)
+fstar=s.simplify(E*R/2); assert fstar==1/(6*t)
+coframe=s.zeros(4)
+for a in range(4):
+ for mu in range(4):
+  de=s.zeros(4);de[a,mu]=1
+  dg=de.T*eta*e+e.T*eta*de
+  dgi=-gi*dg*gi
+  value=s.simplify(sum(direct[i,j]*dgi[i,j] for i in range(4) for j in range(4)))
+  coframe[a,mu]=value
+  assert s.simplify(value-fstar*ei[mu,a])==0
+  # Independent Palatini variation holds every omega_mu FIXED. It does
+  # not silently impose delta omega=delta Levi-Civita before variation.
+  dei=-ei*de*ei;dE=E*s.trace(ei*de)
+  dR=contract_curvature(dei,ei)+contract_curvature(ei,dei)
+  palatini=s.simplify(dE*R/2+E*dR/2-k*(dp.T*dgi*dp)[0])
+  assert s.simplify(palatini-value)==0
+radial=s.simplify(sum(coframe[a,mu]*e[a,mu] for a in range(4) for mu in range(4)))
+assert radial==2/(3*t)
+
+# Fixed-point equality of the two metrics does NOT identify their full
+# sources: S_star-S_mom=(1-1/E)fstar, so at E=1 its source is fstar dE.
+dd,ff,dff,dE=s.symbols('density f df dE',real=True)
+diffjet=(1-1/dd)*dff+ff*dE/dd**2
+assert s.simplify(diffjet.subs(dd,1)-ff*dE)==0
+# A nonnegative compact smooth radial test with a plateau on
+# [2/3,5/6] x [1/3,2/3]^3 has an explicit lower source bound.
+margin=s.Rational(4,5)*s.Rational(1,6)*s.Rational(1,27)
+assert margin==s.Rational(2,405)>0
+
+# Original fixed Golden ratio, not a fitted cosmological coefficient.
+p=(s.sqrt(5)-1)/2;zz=s.Rational(1,2**20)
+QE=1-4*zz*p**3;RE=1-4*zz*p**3*(1+p**6)
+k_native=s.simplify(2*p**(-5)*(RE/QE+p**6))
+# Derive the identical coefficient from the actual sigma-minus report.
+xx,yy=s.symbols('x_click y_click',real=True)
+event=p**2*(1+xx);ell=4*event*(1-event)
+bb=p-p**2*yy;beta_report=4*bb**2*(1-bb**2)
+aa=ell+(1-ell)*beta_report
+report=zz*(aa+beta_report)-zz**2*aa*beta_report
+rf=s.simplify(s.diff(report,xx).subs({xx:0,yy:0}))
+rq=s.simplify(s.diff(report,yy).subs({xx:0,yy:0}))
+assert s.simplify(rq/rf+k_native)==0
+# Rational proof k_native>20 using p<619/1000 and RE/QE>1-10^-6.
+assert s.Rational(619,1000)>s.Rational(3,5)
+assert s.Rational(5,1)<(2*s.Rational(619,1000)+1)**2
+assert 0<zz<s.Rational(1,10**6)
+assert 4*s.Rational(619,1000)**9/(1-4*s.Rational(1,10**6))<1
+# RE/QE=1-4 z p^9/QE and QE>1-4e-6 establish the latter bound.
+assert 2*(s.Rational(1000,619))**5*(1-s.Rational(1,10**6))>20
+# On the unit coordinate slab tau in(1/4,5/4), |log(2tau)|<1:
+# exp(1)>1+1+1/2+1/6>5/2 and exp(1)>2.
+# Hence phi^2<1/(12*k)<1/240<(3/20)^2 while p/4>3/20.
+assert s.Rational(5,2)<1+1+s.Rational(1,2)+s.Rational(1,6)
+assert s.Rational(1,240)<s.Rational(3,20)**2
+assert s.Rational(5,1)>(2*s.Rational(3,5)+1)**2
+
+out={
+ 'status':'PASS_NON_NULL_DENSITY_SOURCE_SEPARATION',
+ 'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'input_sha256':pins,
+ 'metric':'diag((2tau)^-1,-(2tau)^(1/3),-(2tau)^(1/3),-(2tau)^(1/3))',
+ 'det_coframe':str(E),'Ricci_scalar':str(R),'matter_kinetic':str(q),
+ 'Einstein_scalar_components_checked':16,'Klein_Gordon':str(wave),
+ 'Lorentz_connection_and_torsion':'exact zero for all components',
+ 'independent_Palatini_variation':'all 16 coframe rows checked at fixed omega from its curvature two-form',
+ 'direct_star_metric_source':'-kappa*q*g/2',
+ 'direct_star_coframe_source':'fstar*transpose(inverse(e))',
+ 'radial_source_density':str(radial),'compact_test_margin':str(margin),
+ 'native_kappa_for_orientation':str(s.N(k_native,30)),
+ 'native_ratio':'-r_y(0,0)/r_x(0,0)=kappa_native>20, exact polynomial and rational bounds',
+ 'density_metric_at_witness':'g_tilde=g but full coframe sources differ',
+ 'scope':'exact continuum comparison on fixed uniform units/density; no discrete root, emitted GR word, physical source selection or GR closure',
+}
+print(json.dumps(out,indent=2,sort_keys=True))
+```
+
+```json
+{
+  "Einstein_scalar_components_checked": 16,
+  "Klein_Gordon": "0",
+  "Lorentz_connection_and_torsion": "exact zero for all components",
+  "Ricci_scalar": "1/(3*tau)",
+  "compact_test_margin": "2/405",
+  "density_metric_at_witness": "g_tilde=g but full coframe sources differ",
+  "det_coframe": "1",
+  "direct_star_coframe_source": "fstar*transpose(inverse(e))",
+  "direct_star_metric_source": "-kappa*q*g/2",
+  "independent_Palatini_variation": "all 16 coframe rows checked at fixed omega from its curvature two-form",
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md": "320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b",
+    "02_REGISTRY/research/A4D_NATIVE_CLOCK_FULL_PRICE_COMPILATION_AND_FINITE_TEST_RECOVERY_2026_10_27.md": "f23ef19ff9c09e51b9091fd5da8b3936d3a66ac243d157c7a016318c778d28af",
+    "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md": "10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05",
+    "02_REGISTRY/research/A4D_PARITY_RESOLVED_GEOMETRIC_SOURCE_GLOBAL_2026_10_27.md": "43e94708f85630c9c86e92c6b257eadd96f382acd5f2e462ef8fae58095ef6ee"
+  },
+  "matter_kinetic": "1/(6*kappa*tau)",
+  "metric": "diag((2tau)^-1,-(2tau)^(1/3),-(2tau)^(1/3),-(2tau)^(1/3))",
+  "native_kappa_for_orientation": "23.4164067518840749728955820649",
+  "native_ratio": "-r_y(0,0)/r_x(0,0)=kappa_native>20, exact polynomial and rational bounds",
+  "radial_source_density": "2/(3*tau)",
+  "scope": "exact continuum comparison on fixed uniform units/density; no discrete root, emitted GR word, physical source selection or GR closure",
+  "source_sha256": "6fb6f8aa620d5458e79c8d4566a8380075cb6a8e1d31e45b2184178429ad70b0",
+  "status": "PASS_NON_NULL_DENSITY_SOURCE_SEPARATION"
+}
+```
+
+
 ## 8. Reproduction
 
 Run from this directory:
