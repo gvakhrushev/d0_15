@@ -850,3 +850,37 @@ outputs and current book view are preserved beside the compiled declaration
 inventory. All 67 C0 reconciliation and byte-partition tests pass locally
 under Python 3.9.6. This is navigation and source-byte accounting, not C0
 acceptance or a coverage percentage.
+
+## Two further #334 continuations: retained-prefix source and AF frame
+
+The live #334 head advanced from the preserved `8daed32` snapshot through
+`523d2cbcc0a9771ea40faa4a2eac84cc78704b0e`, then through
+`15742b846f380b75e7d8f869faf7bc51623ed2a6`.
+
+The [post-8da intake](sources/d0_334_post_8da_delta_2026-10-28/README.md)
+adds the theorem controlling all variations of one arbitrary regular finite
+past in the inherited cumulative source limit. Its 69 checks replay in normal
+and optimized Python with identical local output. The logs preserve 120 NumPy
+matrix-multiplication `RuntimeWarning` records per run, so the successful
+checker status is reported together with that unresolved diagnostic. The
+source retains the all-4096 exploration and the failed all-280 solve. Neither
+is promoted to a root or no-go; independent future field and per-block
+apparatus sources remain.
+
+The [post-523 intake](sources/d0_334_post_523_delta_2026-10-28/README.md)
+gives an exact logical implementation of the canonical AF four-frame using
+six original Golden rotations on literal path pairs. Its extracted checker
+was rerun: all 101 checks pass, and normal, optimized and owner receipt bytes
+are identical. The 38-call record and 43-call reflected schedule retain every
+old/Spin column and the full complement. This composes with the prefix bound
+at the changed common clock, including the paid frame stages.
+The #334 head has no reported GitHub status-check rows; these are exact local
+checker replays.
+
+Together these results remove the finite-prefix freezing gap and the
+arbitrary-frame implementation gap on the declared mathematical carriers.
+They do not prove physical AF addressing, routing, growth/clock prices, native
+stationarity, complete Book admission, new independent apparatus rows in each
+block, or full GR. The #334 continuation adds no Lean theorem; #402's existing
+Lean build receipt remains tied to unchanged Lean source. Both intakes remain
+supporting evidence with `GR_closed=false`.

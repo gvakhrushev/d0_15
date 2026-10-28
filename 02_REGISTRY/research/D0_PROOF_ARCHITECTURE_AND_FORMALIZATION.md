@@ -12928,3 +12928,69 @@ heading/fence candidates; it does not classify mathematical units, freeze
 C0, or establish coverage. The C0 fixture suites pass 67 tests under the
 available Python 3.9.6 runtime; their file-writing helper preserves LF bytes
 without requiring Python 3.10's `Path.write_text(newline=...)` option.
+
+## #334 continuation after `8daed32`: full finite-prefix source — 28 October 2026
+
+The open Draft #334 advanced from `8daed32d560df18837bcc69458a8fa538a9cf135`
+through seven commits to `523d2cbcc0a9771ea40faa4a2eac84cc78704b0e`. The
+[post-8da packet](sources/d0_334_post_8da_delta_2026-10-28/README.md) preserves
+the seven changed files, exact prior constructor input, full binary patch,
+commit list, owner output, failed explorations, and local replay logs. The
+packet verifier confirms the source Git objects and patch, plus 69 checker
+controls in both normal and optimized Python with byte-identical outputs.
+Both local stderr files also preserve 120 NumPy `RuntimeWarning` records per
+run (divide-by-zero, overflow, and invalid-value flags at matrix-multiplication
+sites). They were not suppressed; successful control completion does not
+certify those diagnostics as harmless. Owner and local outputs differ only in
+environment labels and low-order numeric fields; the largest absolute float
+drift is `1.5543122344752192e-15`.
+
+The theorem consumes the existing §7dd cumulative source and extends its test
+space to every direction of one arbitrary regular finite original prefix,
+retaining its actual nonzero rows. Its normalized prefix dual norm is bounded
+by `C_xi/Lambda`; the complete internal-clock heat term also vanishes under
+the stated genuinely paid repeated-template construction. This discharges
+the need to freeze or independently stationarize that one finite prefix in
+the inherited source-limit theorem. It does not erase the absolute heat,
+return baseline or duration costs. A non-Einstein future field defect of `0.3`
+and new independently free apparatus rows in each block remain visible.
+
+The same packet retains the seven-scale candidate, the all-4096 source
+exploration, and the failed all-280-row solve. The seven-scale point is not a
+complete root; the all-280 solve failed with norm `0.03962893427318372` and
+left the positive-orientation chart. Neither result is promoted. The
+exploratory Torch script was not locally replayed because PyTorch is not
+installed. The cumulative result proves no exact finite stationary word,
+physical admission, full 42-field execution or GR closure. `GR_closed=false`.
+
+## #334 continuation after `523d2cb`: canonical AF frame — 28 October 2026
+
+The next live #334 commit is `15742b846f380b75e7d8f869faf7bc51623ed2a6`.
+Its [post-523 packet](sources/d0_334_post_523_delta_2026-10-28/README.md)
+preserves the changed task brief and full primary artifact, the exact patch,
+the two owner inputs, and the extracted checker/receipt. Its 101 exact checks
+were rerun in normal and optimized Python against the byte-pinned AF and
+native-execution sources. Both local outputs match each other and the
+published receipt byte-for-byte (`d42766a5…68b394a`); stderr is empty.
+
+The proof replaces an arbitrary four-frame by six explicit calls to the
+original Golden rotation on named Fibonacci path pairs. The all-level
+branching argument maps the coordinate zero frame to the canonical inclusion
+`J`; finite exact checks cover levels 0–3 and both noncommutative old summands
+at level 2. At the smallest level, an original record has a 38-call realization
+and the separate reflected control has a 43-call realization on all 136
+columns, including the 104-dimensional complement. This gives the explicit
+logical frame map required by the nonlinear whole-word source transport.
+No GitHub status-check rows are reported for #334 at this current head; the
+101 checks above are the preserved local checker replay.
+
+Section 7dg.5.1 composes the preceding fixed-prefix bound only on its stated
+fixed-frame parked-word carrier and common actual clock. Six frame operations
+add paid stages; source and positive gain receive the same amplification, and
+the old multiplicity is counted once. The result does not establish physical
+AF port addressability, routing, growth or their prices. It does not make the
+136-dimensional schedule a binary-wire `Execution/1` program, absorb new
+per-block apparatus rows, or establish physical stationary execution. No Lean
+declaration changed in these two #334 continuations, so the existing #402
+Lean-source digest and `D0.All` receipt remain the applicable Lean evidence.
+Both remain supporting research and `GR_closed=false`.

@@ -1,0 +1,228 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "checker_sha256": "4259251e822abe246b35da480db7c5dc4abd51c20e36d4d50e39040c3b7ab706",
+  "checks": 69,
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "exact_finite_stationary_root_proved": false,
+  "exact_source_budgets": {
+    "chosen_constants_are_controls_not_GR_compiler_counts": true,
+    "growing_heat_value_removed": false,
+    "readout_accuracy_free": false,
+    "thermal_controls": [
+      {
+        "clock_length_lower_bound": 24,
+        "exact_rational_bound": true,
+        "log10_thermal_over_gain_bound": "-45.324067540194699586445034431852",
+        "repeats": 1
+      },
+      {
+        "clock_length_lower_bound": 32,
+        "exact_rational_bound": true,
+        "log10_thermal_over_gain_bound": "-67.466195167753660076407629147195",
+        "repeats": 2
+      },
+      {
+        "clock_length_lower_bound": 48,
+        "exact_rational_bound": true,
+        "log10_thermal_over_gain_bound": "-113.86822531440148589049532331605",
+        "repeats": 4
+      },
+      {
+        "clock_length_lower_bound": 80,
+        "exact_rational_bound": true,
+        "log10_thermal_over_gain_bound": "-212.78460046437003688329036655881",
+        "repeats": 8
+      },
+      {
+        "clock_length_lower_bound": 144,
+        "exact_rational_bound": true,
+        "log10_thermal_over_gain_bound": "-425.68427115265492402891162547744",
+        "repeats": 16
+      },
+      {
+        "clock_length_lower_bound": 272,
+        "exact_rational_bound": true,
+        "log10_thermal_over_gain_bound": "-885.35024031433449353171818661919",
+        "repeats": 32
+      }
+    ],
+    "weight_schedule": [
+      {
+        "cumulative_weight": "808",
+        "epoch": 1,
+        "full_normalized_bound": "301/1616",
+        "genuine_repetitions": 8080,
+        "old_and_new_error_mass": "101/2",
+        "positive_weight": "1/10",
+        "target": "1/2"
+      },
+      {
+        "cumulative_weight": "2424",
+        "epoch": 2,
+        "full_normalized_bound": "67/808",
+        "genuine_repetitions": 161600,
+        "old_and_new_error_mass": "101",
+        "positive_weight": "1/100",
+        "target": "1/4"
+      },
+      {
+        "cumulative_weight": "6464",
+        "epoch": 3,
+        "full_normalized_bound": "2113/51712",
+        "genuine_repetitions": 4040000,
+        "old_and_new_error_mass": "1313/8",
+        "positive_weight": "1/1000",
+        "target": "1/8"
+      },
+      {
+        "cumulative_weight": "16968",
+        "epoch": 4,
+        "full_normalized_bound": "5539/271488",
+        "genuine_repetitions": 105040000,
+        "old_and_new_error_mass": "3939/16",
+        "positive_weight": "1/10000",
+        "target": "1/16"
+      },
+      {
+        "cumulative_weight": "44440",
+        "epoch": 5,
+        "full_normalized_bound": "907/88880",
+        "genuine_repetitions": 2747200000,
+        "old_and_new_error_mass": "707/2",
+        "positive_weight": "1/100000",
+        "target": "1/32"
+      },
+      {
+        "cumulative_weight": "116352",
+        "epoch": 6,
+        "full_normalized_bound": "12671/2482176",
+        "genuine_repetitions": 71912000000,
+        "old_and_new_error_mass": "31613/64",
+        "positive_weight": "1/1000000",
+        "target": "1/64"
+      },
+      {
+        "cumulative_weight": "304616",
+        "epoch": 7,
+        "full_normalized_bound": "99559/38990848",
+        "genuine_repetitions": 1882640000000,
+        "old_and_new_error_mass": "86759/128",
+        "positive_weight": "1/10000000",
+        "target": "1/128"
+      }
+    ]
+  },
+  "full_GR_native_program_executed": false,
+  "input_commit": "1e6420f319d714be53363a77823f76ec620a6473",
+  "native_private_block": {
+    "all_columns": 8,
+    "cold_corner": "p^3 I4",
+    "inventory": {
+      "G": 2,
+      "SourceI": 6
+    },
+    "scalar_Gram": "p^6",
+    "scope": "literal bounded all-column interface control; not the complete nonlinear GR compiler",
+    "word_stages": 8
+  },
+  "newest_block_gain_replaced": false,
+  "old_constructor_sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a",
+  "original_admission_derived": false,
+  "original_prefix": {
+    "future_shape_control_is_structural": true,
+    "new_prefix_source_controls": [
+      {
+        "actual_gain": 1.701036746307998e-06,
+        "blocks": 1,
+        "cumulative_weight": 0.11926605504587154,
+        "full_dual_norm_with_defect": 1.424730390759915,
+        "normalized_future_defect": 0.3,
+        "prefix_dual_norm_over_gain": 1.1247303907599149,
+        "proven_prefix_bound": 1.2882039838070816
+      },
+      {
+        "actual_gain": 6.188646102685018e-06,
+        "blocks": 4,
+        "cumulative_weight": 0.47706422018348615,
+        "full_dual_norm_with_defect": 0.5811825976920859,
+        "normalized_future_defect": 0.3,
+        "prefix_dual_norm_over_gain": 0.28118259769208587,
+        "proven_prefix_bound": 0.3220509959517704
+      },
+      {
+        "actual_gain": 1.6941172191651643e-05,
+        "blocks": 16,
+        "cumulative_weight": 1.9082568807339446,
+        "full_dual_norm_with_defect": 0.37029564942469323,
+        "normalized_future_defect": 0.3,
+        "prefix_dual_norm_over_gain": 0.07029564942469325,
+        "proven_prefix_bound": 0.0805127489879426
+      },
+      {
+        "actual_gain": 1.4864642194682642e-05,
+        "blocks": 64,
+        "cumulative_weight": 7.6330275229357785,
+        "full_dual_norm_with_defect": 0.3175739123568807,
+        "normalized_future_defect": 0.3,
+        "prefix_dual_norm_over_gain": 0.017573912356880734,
+        "proven_prefix_bound": 0.02012818724698565
+      },
+      {
+        "actual_gain": 1.3766318034885428e-07,
+        "blocks": 256,
+        "cumulative_weight": 30.532110091743114,
+        "full_dual_norm_with_defect": 0.30439347808926975,
+        "normalized_future_defect": 0.3,
+        "prefix_dual_norm_over_gain": 0.0043934780892697645,
+        "proven_prefix_bound": 0.005032046811746412
+      }
+    ],
+    "nonnormality_norm": 2.564906536322111e-11,
+    "old_constructor_full_history_replay": {
+      "DATA_dimension": 16,
+      "actual_full_source": 1.5306614291784259e-07,
+      "all_input_columns": 16,
+      "complete_output_isometry_rows": 262144,
+      "defect_error": 4.427014310692812e-15,
+      "difference_from_incorrect_sum": -3.5634732010914306e-09,
+      "fine_histories": 16384,
+      "finite_difference_error": 3.030657415496285e-18,
+      "incorrect_sum_of_one_tick_sources": 1.5662961611893402e-07,
+      "large_total_unitary_materialized": false,
+      "noncommutation_norm": 2.9308601798714882e-08,
+      "oldRIGHT_multiplicity_in_test": 1,
+      "source_matrix_error": 9.419548474554063e-16,
+      "ticks": 2
+    },
+    "original_prefix_rank": 16,
+    "original_rounds": 2,
+    "relative_prefix_constant": 0.1536390072430464,
+    "smallest_Gram_eigenvalue": 0.9632503651701747
+  },
+  "parent_retained_source_commit": "3219c15808f5247437d0e14557aec75c7fe6ac03",
+  "scope": "inherited cumulative block-dual source norm plus all directions of one fixed finite regular prefix; declared full-column continuation class",
+  "status": "PASS_COMPLETE_FIXED_PREFIX_COVECTOR_RECOVERY",
+  "symbolic": {
+    "exact_gain": "30250194978/1488416972737",
+    "exact_prefix_rows": [
+      "-6161268180786/37210424318425",
+      "-1602906273696/37210424318425",
+      "-3337085431248/37210424318425",
+      "-4171549299628/37210424318425"
+    ],
+    "future_relative_weights": [
+      "3601/7089",
+      "3488/7089"
+    ],
+    "non_Einstein_defect_survives": "2/7",
+    "old_rows_deleted": false,
+    "per_block_free_apparatus_defect_survives": "1/9",
+    "scope": "exact finite matrix identities; rational 2x2 control is structural"
+  },
+  "uncontrolled_new_apparatus_rows_eliminated": false
+}
