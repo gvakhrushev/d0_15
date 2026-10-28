@@ -90604,6 +90604,932 @@ print(json.dumps(result,indent=2,sort_keys=True))
 ```
 <!-- END 7dk READY REFLECTION COMPILER RECEIPT -->
 
+## 7dl. A paid reflection loop recovers the source on the original cyclic input
+
+28 October2026. SAME #334 / `constitutive/native-programme-v1`; native
+realization and composition. Input `4a57cfd948226704b9561dec287d7f60154985ea`.
+Consume §7di's complete off-copy frame, §7dj's actual regular algebra
+and canonical conditional expectation, §7dk's retained independent
+source discipline, and the existing all-unitary full-clock theorem.
+
+The named parent premise removed in THIS application is §7dj–7dk's
+**additional prepared blank flag**. Two paid occurrences of the existing
+reflection, separated by explicit original phase calls, recover its
+source on the actual unprepared canonical regular input. Both word
+occurrences and both phase occurrences retain independent raw variations.
+No new pure state, conditional success branch or physical projection
+postulate is used. The recipe still requires the same addressed AF
+actuators as the existing frame. Their physical admission is not proved
+by the new word.
+
+The changed endpoint is not a reflection. Its full heat has a genuine
+retained source, bounded by the owned winding theorem rather than set
+to zero. The extra flag construction remains a valid separate interface;
+the new loop does not assert equality of the two executions' prices or
+complete future profiles.
+
+### 1. The exact native return reads the old scalar corner without a new blank
+
+Use the same A_n to A_(n+2k) folded native algebra and full regular
+representation as §7dj961–962. Let E_old be its trace-preserving
+conditional expectation. It is the original canonical GNS compression,
+not a newly prepared maximally mixed physical input. Write e=e_00 for
+the encoded coordinate-zero projection, D for the diagonal-copy support,
+gamma=p^(2k), and U for the complete AF lift of the old matched word W.
+
+The required old hypotheses are EXACT: W=W*, W²=I, its completed
+protected Spin/helper factor is identity on every column, and
+e U e=c e with the actual real positive c. The same word is copied
+uniformly on every old input row/column. Consequently U, e and D
+commute with the protected old algebra on which E_old takes values.
+This is the already supplied completed-Spin/parking contract used in
+the [operator apparatus descent](A4D_REGULAR_APPARATUS_SOURCE_DESCENT_2026_10_28.md),
+not an inference from a scalar cold corner alone.
+
+Define the fixed coordinate phase and the paid loop by
+
+    R=I-2e,  L=U R U R,
+    E_old(e)=gamma I,
+    E_old(L)=[1-4gamma(1-c²)]I=:C I.                   (979)
+
+Indeed L=I-2e-2UeU+4UeUe. Conditional cyclicity with the old-commuting
+base operators gives E_old(UeU)=gamma I and
+E_old(UeUe)=gamma c² I. This retains the full native complement and
+all regular right multiplicities. The original c is recovered on
+its positive chart from c²=(C-1+4gamma)/(4gamma).
+
+Choose the actual frame depth k>=4, increasing it if the original work
+dimension requires more off-copy ports. Then 0<gamma<1/4 and C>0.
+The depth is a real inclusion/actuation choice with its real price;
+gamma is its forced AF weight, not a fitted source coefficient.
+The loop is a new finite native programme evaluated by the unchanged
+Book functional. No negative counterterm or field equation is added.
+
+### 2. The coordinate phase uses only the existing addressed phase interface
+
+Let e0=E0 E0*, e=B e0 B*, as in §7di. For each of the two old block
+types use its zero-copy port as control1 and a spare diagonal-copy
+port as control0. Two ORIGINAL SourceI calls on that pair give -I on
+the zero port and identity on the other port, on every Spin column.
+Doing this for both types gives four specified calls for
+R0=I-2e0. The same address is used uniformly for all old r,c.
+Both ports, and their full possible raw Spin couplings, lie in D.
+
+The actual chronological recipe is
+
+    B^-1 ; R0 ; W_E ; R0 ; W_E ; B,
+    final product=B (W_E R0 W_E R0) B*=L.              (980)
+
+Every inverse is the previously emitted positive-native inverse word.
+Each of the two W_E occurrences is executed and paid. Identical code
+at the base does not link their independent raw derivatives. The same
+is true of the two R0 occurrences and the outer frame halves.
+
+The finite fixture uses the existing seven-stage native reflected
+word G;CX;SourceI;SourceI;G;SourceI;SourceI, with c=p. It has full
+completed Spin identity. The k=4 frame now gives55 decoding stages,
+4 phase stages,7 word stages,4 phase stages,7 word stages and11
+encoding stages: **88 specified paired-profile calls**, with
+inventory26G+2CX+60SourceI. No extra flag is present.
+
+The ordinary seven-stage word is checked in the original binary
+`Execution/1` grammar. The full AF representation has the same
+specified paired-port interpretation as §7di; it is not relabelled
+as automatically admitted binary-wire hardware. If the actual AF
+actuator expands these calls, its true stages and source supports
+replace the displayed count. All new AF levels and modes remain
+resources of the execution even though no extra pure flag is used.
+
+### 3. Both independently varied words retain half of the old normalized source
+
+Let the two word occurrences vary independently with
+delta U_i=H_i U, H_i*=-H_i. The added phases and frame are held fixed
+for this partial derivative. Define the prepared old insertion by
+X_i=V_prep* rho(H_i U) V_prep, using §7dj's isometry only as a
+mathematical source comparison map; it is NOT a preparation performed
+in the new execution.
+
+At the matched centre, the two complete product derivatives are
+H_2 L and U R H_1 U R. Conditional cyclicity puts each expectation
+into the same form E_old(H_i L). The exact identity
+
+    L-L*=4c(Ue-eU)
+
+therefore gives, separately for each occurrence,
+
+    Herm delta_i C=4gamma c Herm X_i.                  (981)
+
+For example Herm E_old(H_i L)=E_old(H_i(L-L*))/2;
+cycling U and e and using eUe=c e yields
+4c Herm E_old(e H_i U e)=4gamma c Herm X_i.
+These are identities of operators on all protected inputs, not a
+scalar trace cancellation. H_i may have arbitrary Spin-entangled
+entries on the original allowed raw supports; it need not itself
+restore Spin. The restored factor is a BASE hypothesis about U.
+
+With the old actual calibration D_I c=-c lambda/2, put
+
+    lambda_loop=8gamma c² lambda/C>0,
+    A_i=-(2/(c lambda))Herm X_i,
+    A_loop=-(2/(C lambda_loop))Herm delta C
+                                =(A_1+A_2)/2.          (982)
+
+A linked field variation has X_1=X_2 and recovers the full old
+normalized source. Independent apparatus rows are averaged, not
+discarded. If the owned off-shell source formula is
+A_i=DI_(tau,h)[V_i]+R_i, then the new field map is
+(V_1+V_2)/2 and the remainder is (R_1+R_2)/2.
+The maximum of the two original raw norms bounds this average;
+the existing regular field/source norm is transported through this
+explicit map. No factor gamma is left to amplify the normalized
+apparatus error or to hide a free QUERY source.
+
+For the original direct-click target
+c²=1-alpha gamma_report P(1-gamma_report P), P=I/Ω,
+the exact loop target and coefficient are
+
+    C=1-4gamma alpha gamma_report P(1-gamma_report P),
+    lambda_loop=8gamma alpha gamma_report
+                          (1-2gamma_report P)/(Ω C).   (983)
+
+The old report-shape gamma_report and the AF weight gamma are
+different. At a genuinely compiled centre use its actual c, lambda
+and errors in (982); do not assign the ideal values in (983).
+As before, the positive chart and its nonzero actual gain are required.
+
+### 4. The added phase and frame sources vanish on their actual guards
+
+The all-nonblank off-copy frame gives D Ue=eUD=c e. Hence
+D(L-L*)D=0. Consider an independently varied phase occurrence
+delta R=H_R R, with H_R=D H_R D and H_R*=-H_R.
+Cycling the fixed base factors puts its derivative into E_old(H_R L*).
+Its Hermitian part is zero. The same argument covers an independent
+outer frame row, whose source uses E_old(H_D L) or E_old(L H_D).
+The intermediate prefixes within each phase/frame block preserve D,
+so the full raw support of every added primitive has this property:
+
+    Herm delta C_phase=0,
+    Herm delta C_outer-frame=0.                        (984)
+
+Each temporal half is independent. No inverse variation was equated
+with its forward partner to obtain (984). This is a return-source
+statement; the actual clock/heat and any other selected price retain
+their sources.
+
+The guard is necessary. At the executed c=p centre, let
+H_bad=(Ue-eU)/a, a²=p. It mixes D with its complement. For one phase
+occurrence delta R=H_bad R the exact operator source is
+Herm delta C=4gamma p a I, not zero. Keeping the AF trace weight fixed
+does not make a freely rotated phase projector a harmless comparison.
+The original unrestricted QUERY normals likewise retain their old
+normalized source by (982). The incoming closure-source audit still
+applies whenever its actual comparison lift is supplied.
+
+Completed protected-factor restoration is also essential. A rational
+six-column reflected unitary with eUe=(3/5)e, but with its two leakage
+columns resetting a protected bit, gives instead
+
+    C_bad=diag(1-6gamma(4/5)², 1-2gamma(4/5)²).         (985)
+
+It is nonscalar. This negative control shows why a scalar prepared
+corner alone does not license conditional cyclicity through U.
+The full restoration condition is an explicit consumed hypothesis.
+
+### 5. Full heat and history remain on the new execution
+
+The actually executed L is not selfadjoint. Do NOT apply the old
+reflection zero-heat theorem606. The
+[all-unitary full-clock theorem](A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md)
+applies on its declared homogeneous INTERNAL scene at original
+beta=2p², including all paired-Hodge modes and every native regular
+multiplicity. For the actual88-stage profile its rational majorant is
+
+    x=2/55, q_88=x^88/88!,
+    A1_88 <= (176/359)/(1-x²) q_88/(1-q_88)²,
+    ||DH||_(gate-max dual)<=88 A1_88
+                         <5.081e-260,
+    normalized heat debt <=88 A1_88/Gamma_loop.         (986)
+
+The last denominator is the genuine positive gain, not1. This is an
+application and evaluation of the owned full-mode bound; no huge heat
+matrix is diagonalized. Different physical expansion lengths, beta,
+scene, clock variables or Gram keep their actual bounds and sources.
+Absolute heat is retained. Smallness of the unnormalized number alone
+does not establish the required normalized limit.
+
+For a genuinely parked old corner K, the existing determinant formula
+uses S=K*K, the actual product of C_j², its derived positive weight
+Pi_out and Gamma=w sum_j lambda_loop,j. Since (981)–(984) hold before
+that weighting, they transfer at the same scope as the original
+old-cut-preserving apparatus theorem. The original old-cut mixing
+countercontrol is retained; local skewness on an enlarged input alone
+does not remove an insertion that can mix a previous Book cut.
+
+There is also a useful value identity for the actual AF tower. Let a
+new matched loop be in the relative commutant of the whole previous
+algebra and have E_previous(L_j)=C_j I as above. The conditional
+expectation is bimodular, so the canonical compression of
+L_j alpha(U_previous) equals C_j U_previous. Nested expectations
+therefore multiply the matched return corners without adding pure
+work blanks. This is a value/composition identity on the original
+trace-preserving inclusions, not a proof that all new raw insertions
+preserve every earlier cut. Applying full cumulative recovery still
+requires its actual parking/source map on this tower, including any
+new old-record couplings. It cannot be inferred from the product of
+scalar values. The new loop does not silently claim that missing map.
+
+### 6. Exact check and parent consequence
+
+All88 specified calls were multiplied on all356 working AF/Spin
+columns. The immutable oldRIGHT factor2 is kept, giving712 working
+columns. In the actual native regular representation the right
+multiplicities are55,34, the full dimension is33448 and the unchanged
+canonical input rank is16. There is no additional blank flag. Its
+actual return is (1-4p^9)I16 and its gain multiplier is
+8p^10/(1-4p^9).
+
+All240 real skew local basis rows of the two independently varied
+seven-stage words satisfy (981);138 have nonzero Hermitian source.
+The complete raw phase supports and each actual frame/phase gate's
+guard are checked. Independent guarded Spin-entangled phase faults,
+the unguarded nonzero phase direction, the protected-coupling failure
+and the exact all-mode heat bound are checked too. All357 checks pass
+with byte-identical normal/optimized receipts. The old large source
+compiler, huge heat, physical state preparation and Lean are not
+replayed or claimed as new evidence.
+
+Parent substitution: an extra supplied pure flag is no longer needed
+to recover the configured reflected source on the original canonical
+regular AF input. The new loop has an explicit emitted recipe and
+independent source map, with a retained heat debt. This consumes the
+old configured source and its frame; it does not create a new action
+or a field equation as an admission rule.
+
+Remaining application: physical admission and pricing of the existing
+addressed AF ports, the genuine task/future-test comparison domain,
+and the complete old-cut/source transport on one accumulating native
+execution. Non-guarded phase/QUERY normals and any other selected
+physical costs are not deleted. The same-execution X_N map is still
+not a theorem of the compiler. Thus the new positive source interface
+removes a real resource premise, but it is not full physical GR closure.
+
+Assembly: supporting native source application within the existing
+owner and two write paths. No new task/node, independent acceptance,
+Ready, claim promotion or merge. `GR_closed=false`.
+
+Checker SHA256: `82afdd0b17b7ecdb38b04947caa11de923a001a6e73317d3b37edbf90672880f`.
+Observed receipt SHA256: `d3400df20413bb5ff8cd2b710078b11fdde0fec2a326216cc67adca0f18560b3`.
+The following blocks are the exact executed bytes.
+
+
+<!-- BEGIN 7dl CYCLIC REFLECTION LOOP CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Read the prepared reflected source on the actual unprepared AF input.
+
+Two paid word occurrences and two guarded phase reflections replace the
+extra blank-flag interface. Physical paired-port admission is not inferred.
+"""
+import ast
+from collections import Counter
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+import sympy as s
+
+ROOT=Path.cwd()
+PRIMARY=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+AF_PIN='9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee'
+NATIVE_PIN='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+TREE_PIN='b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba'
+FRAME_PIN='de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88'
+REGULAR_PIN='1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f'
+DESCENT_PIN='1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254'
+HEAT_PIN='ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418'
+checks=[]
+def require(ok,label):
+    if not bool(ok):raise RuntimeError(label)
+    checks.append(label)
+def load(name,rel,pin):
+    path=ROOT/rel
+    require(hashlib.sha256(path.read_bytes()).hexdigest()==pin,'input '+name)
+    spec=importlib.util.spec_from_file_location(name,path)
+    module=importlib.util.module_from_spec(spec);sys.modules[name]=module;spec.loader.exec_module(module)
+    return module
+AF=load('cyclic_loop_af','02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py',AF_PIN)
+N=load('cyclic_loop_native','02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py',NATIVE_PIN)
+for rel,pin in [
+ ('02_REGISTRY/research/sources/d0_apparatus_cotangent_descent_2026-10-28/PROOF_RU.md',DESCENT_PIN),
+ ('02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md',HEAT_PIN)]:
+    require(hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()==pin,'owned theorem '+rel)
+a,p=AF.a,AF.p
+source=PRIMARY.read_text()
+def functions(marker,pin,names):
+    code=source.split('<!-- BEGIN '+marker+' -->\n```python\n')[1].split('```\n<!-- END '+marker+' -->')[0]
+    require(hashlib.sha256(code.encode()).hexdigest()==pin,'published '+marker)
+    nodes=[x for x in ast.parse(code).body if isinstance(x,ast.FunctionDef) and x.name in names]
+    require({x.name for x in nodes}==set(names),'requested builder functions '+marker)
+    exec(compile(ast.Module(body=nodes,type_ignores=[]),'<owned '+marker+'>','exec'),globals())
+functions('7dg GOLDEN AF FRAME CHECKER',TREE_PIN,{'mat','paths','pairs','rotation','product'})
+functions('7di OFFCOPY FRAME CHECKER',FRAME_PIN,{'layout'})
+functions('7dj REGULAR CYCLIC SOURCE CHECKER',REGULAR_PIN,set())
+def equal(A,B,label):require(AF.zero(A-B),label)
+def symbolic(A):return mat(A.xreplace({N.A:a}).xreplace({s.sqrt(5):2*p+1}))
+
+# Exactly the existing7-stage reflected native query, on all WORK/Spin columns.
+g=N.Gate('G',(0,));cx=N.Gate('CX',(0,1));si=N.Gate('SourceI',(0,2,3))
+gates=(g,cx,si,si,g,si,si)
+word=N.Execution(4,(0,1),(),gates,N.G_CX_SOURCE_I,0,(2,3))
+N.validate_execution(word,max_qubits=4,max_expanded_stages=7)
+logical=[symbolic(N.gate_matrix(word,x)) for x in gates]
+W=product(logical,16)
+Wwork=W.extract([0,4,8,12],[0,4,8,12])
+equal(W,s.kronecker_product(Wwork,s.eye(4)),'actual completed Spin identity on all16 columns')
+equal(W.T,W,'true reflected word is selfadjoint')
+equal(W*W,s.eye(16),'true reflected word squares to I')
+equal(W[:4,:4],p*s.eye(4),'actual prepared old corner is p I4')
+
+f=layout(0,4,4);E,J,ops=f['E'],f['J'],f['ops'];d,D=J.cols,J.rows
+B=product([rotation(D,op['rows']) for op in ops],D)
+V=mat(B*E);e=V[:,:d]*V[:,:d].T;e0=E[:,:d]*E[:,:d].T
+I=s.SparseMatrix(s.eye(D));dim=4*D;ID=s.SparseMatrix(s.eye(dim))
+DD=s.kronecker_product(f['diag'],s.eye(4));BS=s.kronecker_product(B,s.eye(4))
+TE=s.MutableSparseMatrix(dim,16*d,{})
+for work in range(4):
+    for spin in range(4):
+        for old in range(d):
+            r=next(r for r in range(D) if E[r,work*d+old])
+            TE[4*r+spin,(4*work+spin)*d+old]=1
+TE=s.SparseMatrix(TE);RE=TE*TE.T
+middle=[mat(TE*s.kronecker_product(x,s.eye(d))*TE.T+ID-RE) for x in logical]
+UW=mat(TE*s.kronecker_product(W,s.eye(d))*TE.T+ID-RE)
+frame_g=[];frame_si=[]
+for op in ops:
+    frame_g.append(s.kronecker_product(rotation(D,op['rows']),s.eye(4)))
+    S=s.MutableSparseMatrix(ID)
+    for first,second in op['rows']:
+        for r in range(4):
+            for c in range(4):S[4*second+r,4*second+c]=N.L_I[r,c]
+    frame_si.append(s.SparseMatrix(S))
+decode=[]
+for R,S in reversed(list(zip(frame_g,frame_si))):decode.extend([S,S,R,S,S])
+
+# R0=I-2e0 uses two SourceI occurrences on the zero port of EACH old type.
+# A spare diagonal copy is the corresponding control0 port. No new flag.
+phase=[];addresses=[];phase_supports=[]
+for j in (0,1):
+    zero=next(r for r in range(D) if E[r,j])
+    dummy=next(r for r in range(D) if f['diag'][r,r] and r!=zero and any(r in op['rows'][0] for op in ops if op['type']==j))
+    S=s.MutableSparseMatrix(ID)
+    for r in range(4):
+        for c in range(4):S[4*zero+r,4*zero+c]=N.L_I[r,c]
+    phase.extend([s.SparseMatrix(S),s.SparseMatrix(S)])
+    support=s.diag(*[s.Integer(i//4 in (zero,dummy)) for i in range(dim)])
+    equal(DD*support,support,'full new phase raw support is diagonal-copy '+str(j))
+    phase_supports.append((zero,dummy));addresses.append({'old_type':j,'control0':dummy,'control1_zero':zero})
+R0=product(phase,dim)
+equal(R0,ID-2*s.kronecker_product(e0,s.eye(4)),'four original SourceI calls implement the complete coordinate phase')
+schedule=decode+phase+middle+phase+middle+frame_g
+names=['SourceI','SourceI','G','SourceI','SourceI']*len(ops)+['SourceI']*4+[x.op for x in gates]+['SourceI']*4+[x.op for x in gates]+['G']*len(ops)
+require(len(schedule)==88 and Counter(names)=={'G':26,'CX':2,'SourceI':60},'actual88-call specified paired-profile inventory')
+K=product(schedule,dim)
+U=mat(BS*UW*BS.T);ES=s.kronecker_product(e,s.eye(4));R=ID-2*ES
+equal(K,mat(U*R*U*R),'all88 calls on every356 AF/Spin column equal the paid loop')
+equal(K.T*K,ID,'complete loop is unitary')
+require(not AF.zero(K-K.T),'actual endpoint is NOT a reflection;606 cannot be reused')
+equal(ES*U*ES,p*ES,'actual reflection corner before loop')
+equal(DD*(K-K.T)*DD,s.zeros(dim),'whole diagonal-copy compression of loop skew is zero')
+for j,G in enumerate(decode+phase+phase+frame_g):
+    equal(DD*(G-ID),G-ID,'every actual frame/phase gate keeps its full guard '+str(j))
+
+# Canonical regular compression on BOTH old input columns and ALL Spin.
+# This is the actual A8 conditional trace with regular multiplicities55/34.
+segments=AF.segments(1,1,4);owner={}
+for v,block in enumerate(segments):
+    for oldtype,path,off in block:owner[v,off]=oldtype
+weights=[(owner[v,row],p**(8+owner[v,col]-owner[v,row])) for v,row,col in f['fine']]
+def canonical(M):
+    out=[s.zeros(4),s.zeros(4)]
+    for z,(oldtype,w) in enumerate(weights):out[oldtype]+=w*M[4*z:4*z+4,4*z:4*z+4]
+    return mat(s.diag(*out))
+gamma=p**8;C=AF.red(1-4*gamma*(1-p*p))
+equal(canonical(ID),s.eye(8),'original canonical regular input normalization, no extra blank')
+equal(canonical(ES),gamma*s.eye(8),'original p8 phase-port trace weight')
+equal(canonical(K),C*s.eye(8),'complete unprepared canonical return is 1-4p9')
+equal(C,1-4*p**9,'positive same-price source calibration at the actual native centre')
+require(s.simplify(C.subs({a:s.sqrt((s.sqrt(5)-1)/2),p:(s.sqrt(5)-1)/2}))>0,'true loop cold value is positive')
+
+# Every raw tangent of either original word occurrence maps separately.
+# Include arbitrary real skew Spin-entangled gate faults, not just angle rows.
+Rwork=s.kronecker_product(s.diag(-1,1,1,1),s.eye(4))
+L=mat(W*Rwork*W*Rwork)
+def ptr(A):return mat(sum((A[4*w:4*w+4,4*w:4*w+4] for w in range(4)),s.zeros(4)))
+equal((1-4*gamma)*s.eye(4)+gamma*ptr(L),C*s.eye(4),'same regular source computed from complete logical trace')
+def local_skew(wires,u,v):
+    shifts=[3-q for q in wires];out=s.MutableSparseMatrix(16,16,{})
+    for col in range(16):
+        loc=sum(((col>>shift)&1)<<(len(shifts)-1-pos) for pos,shift in enumerate(shifts))
+        if loc not in (u,v):continue
+        dest=v if loc==u else u;row=col
+        for pos,shift in enumerate(shifts):row=(row&~(1<<shift))|(((dest>>(len(shifts)-1-pos))&1)<<shift)
+        out[row,col]=1 if loc==u else -1
+    return s.SparseMatrix(out)
+suffix=[None]*8;suffix[7]=s.SparseMatrix(s.eye(16))
+for j in reversed(range(7)):suffix[j]=mat(suffix[j+1]*logical[j])
+raw=0;nonzero=0
+for j,gate in enumerate(gates):
+    for u in range(2**len(gate.wires)):
+        for v in range(u+1,2**len(gate.wires)):
+            h=local_skew(gate.wires,u,v);H=mat(suffix[j+1]*h*suffix[j+1].T);dW=mat(H*W);X=dW[:4,:4]
+            for half,dL in [(1,W*Rwork*dW*Rwork),(2,dW*Rwork*W*Rwork)]:
+                out=mat(gamma*ptr(dL))
+                equal(out+out.T,4*gamma*p*(X+X.T),'independent original raw source '+str((half,j,u,v)))
+                raw+=1
+                if not AF.zero(out+out.T):nonzero+=1
+require(raw==240,'all240 independent middle raw basis rows retained')
+require(nonzero>0,'old QUERY/field source is preserved, not erased')
+
+# Test both independent added phase occurrences on a Spin-entangled guarded
+# generator, and the excluded off-copy orientation as a hostile control.
+z,y=phase_supports[0];H=s.MutableSparseMatrix(dim,dim,{(4*z,4*y+1):1,(4*y+1,4*z):-1})
+H=mat(BS*H*BS.T)
+equal(DD*H*DD,H,'nontrivial raw phase fault is guarded after actual encoding')
+for label,delta in [('first',U*R*U*H*R),('second',U*H*R*U*R)]:
+    out=canonical(delta)
+    equal(out+out.T,s.zeros(8),'independent '+label+' phase has zero Hermitian operator source')
+equal(a*a*(1+p),1,'exact polynomial representative a(1+p) for inverse a')
+bad=mat((U*ES-ES*U)*a*(1+p))
+require(not AF.zero(DD*bad*DD-bad),'orientation negative control violates exactly the declared guard')
+badout=canonical(U*R*U*bad*R)
+equal(badout+badout.T,8*gamma*p*a*s.eye(8),'unguarded independent phase orientation retains nonzero source')
+
+# A merely scalar cold corner does NOT replace completed Spin identity.
+# Explicit rational6-column reflection whose columns reset a protected bit.
+c=s.Rational(3,5);u=s.Rational(4,5)
+B0=s.Matrix([[1,0],[0,0],[0,1],[0,0]])
+P=B0*B0.T
+Wbad=(c*s.eye(2)).row_join(u*B0.T).col_join((u*B0).row_join(s.eye(4)-(1+c)*P))
+Rbad=s.diag(-1,-1,1,1,1,1);Kbad=Wbad*Rbad*Wbad*Rbad
+equal(Wbad.T*Wbad,s.eye(6),'hostile protected-coupled target is genuinely unitary')
+equal(Wbad[:2,:2],c*s.eye(2),'hostile target has the same scalar cold property')
+trbad=sum((Kbad[2*j:2*j+2,2*j:2*j+2] for j in range(3)),s.zeros(2))
+gg=s.symbols('gamma',positive=True)
+Cb=(1-3*gg)*s.eye(2)+gg*trbad
+equal(Cb,s.diag(1-6*gg*u*u,1-2*gg*u*u),'without protected restoration the canonical loop is nonscalar')
+
+# True calibration and dimension-independent winding coefficient, not606.
+cc,gam,dc=s.symbols('c gamma dc',positive=True)
+Cl=1-4*gam*(1-cc*cc);lam=-2*dc/cc;ll=-2*(8*gam*cc*dc)/Cl
+require(s.factor(ll-8*gam*cc**2*lam/Cl)==0,'actual loop calibration is 8gamma*c²/C times old lambda')
+require(s.factor((-2*4*gam*cc)/(Cl*(8*gam*cc**2/Cl))-(-1/cc))==0,'each independent copy has half the old normalized operator source')
+x=s.Rational(2,55);q=x**88/s.factorial(88)
+A1=s.Rational(176,359)/(1-x*x)*q/(1-q)**2
+require(88*A1<s.Rational(1,10**250),'actual88-stage all-mode gate-max heat bound below1e-250')
+
+result={'status':'PASS','checks':len(checks),'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'input_pins':{'AF':AF_PIN,'native':NATIVE_PIN,'frame':FRAME_PIN,'regular':REGULAR_PIN,'operator_descent':DESCENT_PIN,'full_clock':HEAT_PIN},
+ 'execution':{'paired_profile_calls':88,'inventory':dict(Counter(names)),'full_columns_executed':dim,
+   'oldRIGHT_identity_factor':2,'total_working_columns':2*dim,'regular_right_multiplicities':[55,34],
+   'full_regular_dimension':8*(55**2+34**2),'canonical_input_rank':16,'additional_blank_flag':False,
+   'phase_ports':addresses,'physical_AF_admission':False,'endpoint_is_reflection':False},
+ 'source':{'actual_cold':'(1-4p^9) I16','actual_lambda_multiplier':'8p^10/(1-4p^9)',
+   'independent_middle_raw_basis_rows':raw,'nonzero_middle_Hermitian_rows':nonzero,
+   'each_copy':'4 gamma c Herm X; normalized half of original source',
+   'guarded_phase_and_frame':'zero Hermitian operator source; clock debt retained',
+   'unguarded_phase_negative_control':'Herm DC = 4 p^8 p a I16',
+   'protected_coupling_negative_control':'diag(1-6gamma*(4/5)^2,1-2gamma*(4/5)^2)',
+   'heat_gate_max_bound':str(s.N(88*A1,25)),
+   'heat_normalized_bound':'88*A1/Gamma_loop, with the actual positive gain; not zero'},
+ 'scope':'Full canonical regular source without an extra blank flag, in the existing addressed AF profile. No physical X_N completeness, full GR compiler, huge heat or closure.',
+ 'labels':checks}
+print(json.dumps(result,indent=2,sort_keys=True))
+```
+<!-- END 7dl CYCLIC REFLECTION LOOP CHECKER -->
+
+<!-- BEGIN 7dl CYCLIC REFLECTION LOOP RECEIPT -->
+```json
+{
+  "checker_sha256": "82afdd0b17b7ecdb38b04947caa11de923a001a6e73317d3b37edbf90672880f",
+  "checks": 357,
+  "execution": {
+    "additional_blank_flag": false,
+    "canonical_input_rank": 16,
+    "endpoint_is_reflection": false,
+    "full_columns_executed": 356,
+    "full_regular_dimension": 33448,
+    "inventory": {
+      "CX": 2,
+      "G": 26,
+      "SourceI": 60
+    },
+    "oldRIGHT_identity_factor": 2,
+    "paired_profile_calls": 88,
+    "phase_ports": [
+      {
+        "control0": 18,
+        "control1_zero": 0,
+        "old_type": 0
+      },
+      {
+        "control0": 36,
+        "control1_zero": 9,
+        "old_type": 1
+      }
+    ],
+    "physical_AF_admission": false,
+    "regular_right_multiplicities": [
+      55,
+      34
+    ],
+    "total_working_columns": 712
+  },
+  "input_pins": {
+    "AF": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+    "frame": "de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88",
+    "full_clock": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "native": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "operator_descent": "1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254",
+    "regular": "1fbef33d6a1284c2cb1c9f3db89886470ff4d18549ef4fe6a1b499b22339065f"
+  },
+  "labels": [
+    "input cyclic_loop_af",
+    "input cyclic_loop_native",
+    "owned theorem 02_REGISTRY/research/sources/d0_apparatus_cotangent_descent_2026-10-28/PROOF_RU.md",
+    "owned theorem 02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+    "published 7dg GOLDEN AF FRAME CHECKER",
+    "requested builder functions 7dg GOLDEN AF FRAME CHECKER",
+    "published 7di OFFCOPY FRAME CHECKER",
+    "requested builder functions 7di OFFCOPY FRAME CHECKER",
+    "published 7dj REGULAR CYCLIC SOURCE CHECKER",
+    "requested builder functions 7dj REGULAR CYCLIC SOURCE CHECKER",
+    "actual completed Spin identity on all16 columns",
+    "true reflected word is selfadjoint",
+    "true reflected word squares to I",
+    "actual prepared old corner is p I4",
+    "full new phase raw support is diagonal-copy 0",
+    "full new phase raw support is diagonal-copy 1",
+    "four original SourceI calls implement the complete coordinate phase",
+    "actual88-call specified paired-profile inventory",
+    "all88 calls on every356 AF/Spin column equal the paid loop",
+    "complete loop is unitary",
+    "actual endpoint is NOT a reflection;606 cannot be reused",
+    "actual reflection corner before loop",
+    "whole diagonal-copy compression of loop skew is zero",
+    "every actual frame/phase gate keeps its full guard 0",
+    "every actual frame/phase gate keeps its full guard 1",
+    "every actual frame/phase gate keeps its full guard 2",
+    "every actual frame/phase gate keeps its full guard 3",
+    "every actual frame/phase gate keeps its full guard 4",
+    "every actual frame/phase gate keeps its full guard 5",
+    "every actual frame/phase gate keeps its full guard 6",
+    "every actual frame/phase gate keeps its full guard 7",
+    "every actual frame/phase gate keeps its full guard 8",
+    "every actual frame/phase gate keeps its full guard 9",
+    "every actual frame/phase gate keeps its full guard 10",
+    "every actual frame/phase gate keeps its full guard 11",
+    "every actual frame/phase gate keeps its full guard 12",
+    "every actual frame/phase gate keeps its full guard 13",
+    "every actual frame/phase gate keeps its full guard 14",
+    "every actual frame/phase gate keeps its full guard 15",
+    "every actual frame/phase gate keeps its full guard 16",
+    "every actual frame/phase gate keeps its full guard 17",
+    "every actual frame/phase gate keeps its full guard 18",
+    "every actual frame/phase gate keeps its full guard 19",
+    "every actual frame/phase gate keeps its full guard 20",
+    "every actual frame/phase gate keeps its full guard 21",
+    "every actual frame/phase gate keeps its full guard 22",
+    "every actual frame/phase gate keeps its full guard 23",
+    "every actual frame/phase gate keeps its full guard 24",
+    "every actual frame/phase gate keeps its full guard 25",
+    "every actual frame/phase gate keeps its full guard 26",
+    "every actual frame/phase gate keeps its full guard 27",
+    "every actual frame/phase gate keeps its full guard 28",
+    "every actual frame/phase gate keeps its full guard 29",
+    "every actual frame/phase gate keeps its full guard 30",
+    "every actual frame/phase gate keeps its full guard 31",
+    "every actual frame/phase gate keeps its full guard 32",
+    "every actual frame/phase gate keeps its full guard 33",
+    "every actual frame/phase gate keeps its full guard 34",
+    "every actual frame/phase gate keeps its full guard 35",
+    "every actual frame/phase gate keeps its full guard 36",
+    "every actual frame/phase gate keeps its full guard 37",
+    "every actual frame/phase gate keeps its full guard 38",
+    "every actual frame/phase gate keeps its full guard 39",
+    "every actual frame/phase gate keeps its full guard 40",
+    "every actual frame/phase gate keeps its full guard 41",
+    "every actual frame/phase gate keeps its full guard 42",
+    "every actual frame/phase gate keeps its full guard 43",
+    "every actual frame/phase gate keeps its full guard 44",
+    "every actual frame/phase gate keeps its full guard 45",
+    "every actual frame/phase gate keeps its full guard 46",
+    "every actual frame/phase gate keeps its full guard 47",
+    "every actual frame/phase gate keeps its full guard 48",
+    "every actual frame/phase gate keeps its full guard 49",
+    "every actual frame/phase gate keeps its full guard 50",
+    "every actual frame/phase gate keeps its full guard 51",
+    "every actual frame/phase gate keeps its full guard 52",
+    "every actual frame/phase gate keeps its full guard 53",
+    "every actual frame/phase gate keeps its full guard 54",
+    "every actual frame/phase gate keeps its full guard 55",
+    "every actual frame/phase gate keeps its full guard 56",
+    "every actual frame/phase gate keeps its full guard 57",
+    "every actual frame/phase gate keeps its full guard 58",
+    "every actual frame/phase gate keeps its full guard 59",
+    "every actual frame/phase gate keeps its full guard 60",
+    "every actual frame/phase gate keeps its full guard 61",
+    "every actual frame/phase gate keeps its full guard 62",
+    "every actual frame/phase gate keeps its full guard 63",
+    "every actual frame/phase gate keeps its full guard 64",
+    "every actual frame/phase gate keeps its full guard 65",
+    "every actual frame/phase gate keeps its full guard 66",
+    "every actual frame/phase gate keeps its full guard 67",
+    "every actual frame/phase gate keeps its full guard 68",
+    "every actual frame/phase gate keeps its full guard 69",
+    "every actual frame/phase gate keeps its full guard 70",
+    "every actual frame/phase gate keeps its full guard 71",
+    "every actual frame/phase gate keeps its full guard 72",
+    "every actual frame/phase gate keeps its full guard 73",
+    "original canonical regular input normalization, no extra blank",
+    "original p8 phase-port trace weight",
+    "complete unprepared canonical return is 1-4p9",
+    "positive same-price source calibration at the actual native centre",
+    "true loop cold value is positive",
+    "same regular source computed from complete logical trace",
+    "independent original raw source (1, 0, 0, 1)",
+    "independent original raw source (2, 0, 0, 1)",
+    "independent original raw source (1, 1, 0, 1)",
+    "independent original raw source (2, 1, 0, 1)",
+    "independent original raw source (1, 1, 0, 2)",
+    "independent original raw source (2, 1, 0, 2)",
+    "independent original raw source (1, 1, 0, 3)",
+    "independent original raw source (2, 1, 0, 3)",
+    "independent original raw source (1, 1, 1, 2)",
+    "independent original raw source (2, 1, 1, 2)",
+    "independent original raw source (1, 1, 1, 3)",
+    "independent original raw source (2, 1, 1, 3)",
+    "independent original raw source (1, 1, 2, 3)",
+    "independent original raw source (2, 1, 2, 3)",
+    "independent original raw source (1, 2, 0, 1)",
+    "independent original raw source (2, 2, 0, 1)",
+    "independent original raw source (1, 2, 0, 2)",
+    "independent original raw source (2, 2, 0, 2)",
+    "independent original raw source (1, 2, 0, 3)",
+    "independent original raw source (2, 2, 0, 3)",
+    "independent original raw source (1, 2, 0, 4)",
+    "independent original raw source (2, 2, 0, 4)",
+    "independent original raw source (1, 2, 0, 5)",
+    "independent original raw source (2, 2, 0, 5)",
+    "independent original raw source (1, 2, 0, 6)",
+    "independent original raw source (2, 2, 0, 6)",
+    "independent original raw source (1, 2, 0, 7)",
+    "independent original raw source (2, 2, 0, 7)",
+    "independent original raw source (1, 2, 1, 2)",
+    "independent original raw source (2, 2, 1, 2)",
+    "independent original raw source (1, 2, 1, 3)",
+    "independent original raw source (2, 2, 1, 3)",
+    "independent original raw source (1, 2, 1, 4)",
+    "independent original raw source (2, 2, 1, 4)",
+    "independent original raw source (1, 2, 1, 5)",
+    "independent original raw source (2, 2, 1, 5)",
+    "independent original raw source (1, 2, 1, 6)",
+    "independent original raw source (2, 2, 1, 6)",
+    "independent original raw source (1, 2, 1, 7)",
+    "independent original raw source (2, 2, 1, 7)",
+    "independent original raw source (1, 2, 2, 3)",
+    "independent original raw source (2, 2, 2, 3)",
+    "independent original raw source (1, 2, 2, 4)",
+    "independent original raw source (2, 2, 2, 4)",
+    "independent original raw source (1, 2, 2, 5)",
+    "independent original raw source (2, 2, 2, 5)",
+    "independent original raw source (1, 2, 2, 6)",
+    "independent original raw source (2, 2, 2, 6)",
+    "independent original raw source (1, 2, 2, 7)",
+    "independent original raw source (2, 2, 2, 7)",
+    "independent original raw source (1, 2, 3, 4)",
+    "independent original raw source (2, 2, 3, 4)",
+    "independent original raw source (1, 2, 3, 5)",
+    "independent original raw source (2, 2, 3, 5)",
+    "independent original raw source (1, 2, 3, 6)",
+    "independent original raw source (2, 2, 3, 6)",
+    "independent original raw source (1, 2, 3, 7)",
+    "independent original raw source (2, 2, 3, 7)",
+    "independent original raw source (1, 2, 4, 5)",
+    "independent original raw source (2, 2, 4, 5)",
+    "independent original raw source (1, 2, 4, 6)",
+    "independent original raw source (2, 2, 4, 6)",
+    "independent original raw source (1, 2, 4, 7)",
+    "independent original raw source (2, 2, 4, 7)",
+    "independent original raw source (1, 2, 5, 6)",
+    "independent original raw source (2, 2, 5, 6)",
+    "independent original raw source (1, 2, 5, 7)",
+    "independent original raw source (2, 2, 5, 7)",
+    "independent original raw source (1, 2, 6, 7)",
+    "independent original raw source (2, 2, 6, 7)",
+    "independent original raw source (1, 3, 0, 1)",
+    "independent original raw source (2, 3, 0, 1)",
+    "independent original raw source (1, 3, 0, 2)",
+    "independent original raw source (2, 3, 0, 2)",
+    "independent original raw source (1, 3, 0, 3)",
+    "independent original raw source (2, 3, 0, 3)",
+    "independent original raw source (1, 3, 0, 4)",
+    "independent original raw source (2, 3, 0, 4)",
+    "independent original raw source (1, 3, 0, 5)",
+    "independent original raw source (2, 3, 0, 5)",
+    "independent original raw source (1, 3, 0, 6)",
+    "independent original raw source (2, 3, 0, 6)",
+    "independent original raw source (1, 3, 0, 7)",
+    "independent original raw source (2, 3, 0, 7)",
+    "independent original raw source (1, 3, 1, 2)",
+    "independent original raw source (2, 3, 1, 2)",
+    "independent original raw source (1, 3, 1, 3)",
+    "independent original raw source (2, 3, 1, 3)",
+    "independent original raw source (1, 3, 1, 4)",
+    "independent original raw source (2, 3, 1, 4)",
+    "independent original raw source (1, 3, 1, 5)",
+    "independent original raw source (2, 3, 1, 5)",
+    "independent original raw source (1, 3, 1, 6)",
+    "independent original raw source (2, 3, 1, 6)",
+    "independent original raw source (1, 3, 1, 7)",
+    "independent original raw source (2, 3, 1, 7)",
+    "independent original raw source (1, 3, 2, 3)",
+    "independent original raw source (2, 3, 2, 3)",
+    "independent original raw source (1, 3, 2, 4)",
+    "independent original raw source (2, 3, 2, 4)",
+    "independent original raw source (1, 3, 2, 5)",
+    "independent original raw source (2, 3, 2, 5)",
+    "independent original raw source (1, 3, 2, 6)",
+    "independent original raw source (2, 3, 2, 6)",
+    "independent original raw source (1, 3, 2, 7)",
+    "independent original raw source (2, 3, 2, 7)",
+    "independent original raw source (1, 3, 3, 4)",
+    "independent original raw source (2, 3, 3, 4)",
+    "independent original raw source (1, 3, 3, 5)",
+    "independent original raw source (2, 3, 3, 5)",
+    "independent original raw source (1, 3, 3, 6)",
+    "independent original raw source (2, 3, 3, 6)",
+    "independent original raw source (1, 3, 3, 7)",
+    "independent original raw source (2, 3, 3, 7)",
+    "independent original raw source (1, 3, 4, 5)",
+    "independent original raw source (2, 3, 4, 5)",
+    "independent original raw source (1, 3, 4, 6)",
+    "independent original raw source (2, 3, 4, 6)",
+    "independent original raw source (1, 3, 4, 7)",
+    "independent original raw source (2, 3, 4, 7)",
+    "independent original raw source (1, 3, 5, 6)",
+    "independent original raw source (2, 3, 5, 6)",
+    "independent original raw source (1, 3, 5, 7)",
+    "independent original raw source (2, 3, 5, 7)",
+    "independent original raw source (1, 3, 6, 7)",
+    "independent original raw source (2, 3, 6, 7)",
+    "independent original raw source (1, 4, 0, 1)",
+    "independent original raw source (2, 4, 0, 1)",
+    "independent original raw source (1, 5, 0, 1)",
+    "independent original raw source (2, 5, 0, 1)",
+    "independent original raw source (1, 5, 0, 2)",
+    "independent original raw source (2, 5, 0, 2)",
+    "independent original raw source (1, 5, 0, 3)",
+    "independent original raw source (2, 5, 0, 3)",
+    "independent original raw source (1, 5, 0, 4)",
+    "independent original raw source (2, 5, 0, 4)",
+    "independent original raw source (1, 5, 0, 5)",
+    "independent original raw source (2, 5, 0, 5)",
+    "independent original raw source (1, 5, 0, 6)",
+    "independent original raw source (2, 5, 0, 6)",
+    "independent original raw source (1, 5, 0, 7)",
+    "independent original raw source (2, 5, 0, 7)",
+    "independent original raw source (1, 5, 1, 2)",
+    "independent original raw source (2, 5, 1, 2)",
+    "independent original raw source (1, 5, 1, 3)",
+    "independent original raw source (2, 5, 1, 3)",
+    "independent original raw source (1, 5, 1, 4)",
+    "independent original raw source (2, 5, 1, 4)",
+    "independent original raw source (1, 5, 1, 5)",
+    "independent original raw source (2, 5, 1, 5)",
+    "independent original raw source (1, 5, 1, 6)",
+    "independent original raw source (2, 5, 1, 6)",
+    "independent original raw source (1, 5, 1, 7)",
+    "independent original raw source (2, 5, 1, 7)",
+    "independent original raw source (1, 5, 2, 3)",
+    "independent original raw source (2, 5, 2, 3)",
+    "independent original raw source (1, 5, 2, 4)",
+    "independent original raw source (2, 5, 2, 4)",
+    "independent original raw source (1, 5, 2, 5)",
+    "independent original raw source (2, 5, 2, 5)",
+    "independent original raw source (1, 5, 2, 6)",
+    "independent original raw source (2, 5, 2, 6)",
+    "independent original raw source (1, 5, 2, 7)",
+    "independent original raw source (2, 5, 2, 7)",
+    "independent original raw source (1, 5, 3, 4)",
+    "independent original raw source (2, 5, 3, 4)",
+    "independent original raw source (1, 5, 3, 5)",
+    "independent original raw source (2, 5, 3, 5)",
+    "independent original raw source (1, 5, 3, 6)",
+    "independent original raw source (2, 5, 3, 6)",
+    "independent original raw source (1, 5, 3, 7)",
+    "independent original raw source (2, 5, 3, 7)",
+    "independent original raw source (1, 5, 4, 5)",
+    "independent original raw source (2, 5, 4, 5)",
+    "independent original raw source (1, 5, 4, 6)",
+    "independent original raw source (2, 5, 4, 6)",
+    "independent original raw source (1, 5, 4, 7)",
+    "independent original raw source (2, 5, 4, 7)",
+    "independent original raw source (1, 5, 5, 6)",
+    "independent original raw source (2, 5, 5, 6)",
+    "independent original raw source (1, 5, 5, 7)",
+    "independent original raw source (2, 5, 5, 7)",
+    "independent original raw source (1, 5, 6, 7)",
+    "independent original raw source (2, 5, 6, 7)",
+    "independent original raw source (1, 6, 0, 1)",
+    "independent original raw source (2, 6, 0, 1)",
+    "independent original raw source (1, 6, 0, 2)",
+    "independent original raw source (2, 6, 0, 2)",
+    "independent original raw source (1, 6, 0, 3)",
+    "independent original raw source (2, 6, 0, 3)",
+    "independent original raw source (1, 6, 0, 4)",
+    "independent original raw source (2, 6, 0, 4)",
+    "independent original raw source (1, 6, 0, 5)",
+    "independent original raw source (2, 6, 0, 5)",
+    "independent original raw source (1, 6, 0, 6)",
+    "independent original raw source (2, 6, 0, 6)",
+    "independent original raw source (1, 6, 0, 7)",
+    "independent original raw source (2, 6, 0, 7)",
+    "independent original raw source (1, 6, 1, 2)",
+    "independent original raw source (2, 6, 1, 2)",
+    "independent original raw source (1, 6, 1, 3)",
+    "independent original raw source (2, 6, 1, 3)",
+    "independent original raw source (1, 6, 1, 4)",
+    "independent original raw source (2, 6, 1, 4)",
+    "independent original raw source (1, 6, 1, 5)",
+    "independent original raw source (2, 6, 1, 5)",
+    "independent original raw source (1, 6, 1, 6)",
+    "independent original raw source (2, 6, 1, 6)",
+    "independent original raw source (1, 6, 1, 7)",
+    "independent original raw source (2, 6, 1, 7)",
+    "independent original raw source (1, 6, 2, 3)",
+    "independent original raw source (2, 6, 2, 3)",
+    "independent original raw source (1, 6, 2, 4)",
+    "independent original raw source (2, 6, 2, 4)",
+    "independent original raw source (1, 6, 2, 5)",
+    "independent original raw source (2, 6, 2, 5)",
+    "independent original raw source (1, 6, 2, 6)",
+    "independent original raw source (2, 6, 2, 6)",
+    "independent original raw source (1, 6, 2, 7)",
+    "independent original raw source (2, 6, 2, 7)",
+    "independent original raw source (1, 6, 3, 4)",
+    "independent original raw source (2, 6, 3, 4)",
+    "independent original raw source (1, 6, 3, 5)",
+    "independent original raw source (2, 6, 3, 5)",
+    "independent original raw source (1, 6, 3, 6)",
+    "independent original raw source (2, 6, 3, 6)",
+    "independent original raw source (1, 6, 3, 7)",
+    "independent original raw source (2, 6, 3, 7)",
+    "independent original raw source (1, 6, 4, 5)",
+    "independent original raw source (2, 6, 4, 5)",
+    "independent original raw source (1, 6, 4, 6)",
+    "independent original raw source (2, 6, 4, 6)",
+    "independent original raw source (1, 6, 4, 7)",
+    "independent original raw source (2, 6, 4, 7)",
+    "independent original raw source (1, 6, 5, 6)",
+    "independent original raw source (2, 6, 5, 6)",
+    "independent original raw source (1, 6, 5, 7)",
+    "independent original raw source (2, 6, 5, 7)",
+    "independent original raw source (1, 6, 6, 7)",
+    "independent original raw source (2, 6, 6, 7)",
+    "all240 independent middle raw basis rows retained",
+    "old QUERY/field source is preserved, not erased",
+    "nontrivial raw phase fault is guarded after actual encoding",
+    "independent first phase has zero Hermitian operator source",
+    "independent second phase has zero Hermitian operator source",
+    "exact polynomial representative a(1+p) for inverse a",
+    "orientation negative control violates exactly the declared guard",
+    "unguarded independent phase orientation retains nonzero source",
+    "hostile protected-coupled target is genuinely unitary",
+    "hostile target has the same scalar cold property",
+    "without protected restoration the canonical loop is nonscalar",
+    "actual loop calibration is 8gamma*c\u00b2/C times old lambda",
+    "each independent copy has half the old normalized operator source",
+    "actual88-stage all-mode gate-max heat bound below1e-250"
+  ],
+  "scope": "Full canonical regular source without an extra blank flag, in the existing addressed AF profile. No physical X_N completeness, full GR compiler, huge heat or closure.",
+  "source": {
+    "actual_cold": "(1-4p^9) I16",
+    "actual_lambda_multiplier": "8p^10/(1-4p^9)",
+    "each_copy": "4 gamma c Herm X; normalized half of original source",
+    "guarded_phase_and_frame": "zero Hermitian operator source; clock debt retained",
+    "heat_gate_max_bound": "5.080368494408724928275694e-260",
+    "heat_normalized_bound": "88*A1/Gamma_loop, with the actual positive gain; not zero",
+    "independent_middle_raw_basis_rows": 240,
+    "nonzero_middle_Hermitian_rows": 138,
+    "protected_coupling_negative_control": "diag(1-6gamma*(4/5)^2,1-2gamma*(4/5)^2)",
+    "unguarded_phase_negative_control": "Herm DC = 4 p^8 p a I16"
+  },
+  "status": "PASS"
+}
+```
+<!-- END 7dl CYCLIC REFLECTION LOOP RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -17736,3 +17736,57 @@ any of those by selecting an Einstein restriction.
 Assembly result is supporting direct application to §7dj, not physical
 closure or an accepted constitutive substitution. No new task/node,
 acceptance, Ready, claim promotion or merge. `GR_closed=false`.
+
+### 28 October2026 checkpoint — original cyclic input without an extra pure flag
+
+SAME PR334, `constitutive/native-programme-v1`; phase: native realization
+and composition. Input4a57cfd948226704b9561dec287d7f60154985ea. Consume
+§7di–7dk, the completed-Spin operator apparatus source and the all-unitary
+full-clock theorem. Primary §7dl979–986 now contains the exact recipe,
+proof, executed checker and receipt.
+
+Named parent substitution: §7dj–7dk's extra prepared blank flag is removed
+for the matched reflected source with actual completed protected identity.
+On the SAME original canonical regular input, R=I-2e and L=URU R give
+C=1-4gamma(1-c²), with true lambda_loop=8gamma*c²*lambda/C. The old native
+phase interface implements each R0 with four SourceI calls on guarded
+diagonal-copy ports. The changed full recipe has88 specified paired-profile
+calls,26G+2CX+60SourceI, and no extra flag. Physical AF actuation admission
+or binary-wire membership of the whole representation is not inferred.
+
+Exact independent source map: each word occurrence gives
+Herm delta C=4gamma*c*Herm X_i, so the full normalized source is the
+average of the two old normalized sources. Both word occurrences and
+both phase/frame halves vary independently. The added guarded phase and
+frame return sources vanish at operator level. Non-guarded phase and
+free QUERY directions retain their genuine nonzero source. A mere scalar
+cold corner without full protected restoration fails, with an exact
+rational nonscalar negative control.
+
+Carrier/norm/price: original A8 regular multiplicities55/34, full
+dimension33448, original canonical input rank16 and unchanged oldRIGHT.
+Actual c,C,lambda and the positive old-past weight are retained. The new
+endpoint is NOT a reflection; the all-unitary clock bound gives
+88A1_88=5.0803684944e-260 at the stated INTERNAL beta/scene, to be divided
+by the actual Gamma_loop. Absolute heat and other actual price terms
+remain. No reflection zero-heat claim is transferred.
+
+Smallest decisive check: all88 calls on all356 AF/Spin columns with an
+exact oldRIGHT factor2; all240 local real skew source rows of the two
+independent original word copies; guarded and unguarded phase controls,
+protected-coupling failure and the full-clock rational bound.357 checks
+pass, with byte-identical normal/optimized receipts. Code SHA256
+82afdd0b17b7ecdb38b04947caa11de923a001a6e73317d3b37edbf90672880f;
+receipt SHA256 d3400df20413bb5ff8cd2b710078b11fdde0fec2a326216cc67adca0f18560b3.
+
+The AF conditional expectation also supplies matched value composition
+without pure work blanks. This alone does not prove source transport
+through every earlier Book cut. Applying the owned cumulative theorem
+still requires the actual parking/source map, in addition to physical
+port admission, task/future tests and all remaining selected price rows.
+This is the concrete next application; neither an Einstein constraint
+nor a physical X_N rule is inserted by definition.
+
+Supporting result under the existing owner; two owned write paths only.
+No new task/node, acceptance, Ready, claim promotion or merge.
+`GR_closed=false`.
