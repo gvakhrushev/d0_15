@@ -17401,3 +17401,85 @@ AST and SHA256 match the executed files. Removing only7df restores all
 remains an exact prefix. Only the two owned paths change. The external
 Cauchy theorem is explicitly attributed, not reported as machine-proved
 by this check. No remote CI or independent physical acceptance claimed.
+
+
+### 28 October 2026 — canonical AF frame has a six-block Golden factorization
+
+SAME owner / Draft #334; native realization and composition, input head
+`8daed32d560df18837bcc69458a8fa538a9cf135`. Primary result:
+`A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`,
+§7dg935–944, with the complete executed checker and receipt in that section.
+
+Exact parent substitution: the nonlinear dust owner's §10 whole-word
+embedding used a fixed four-frame, but did not implement its arbitrary
+frame matrices. The actual threefold Fibonacci inclusion is itself a
+Golden binary branching tree. Six explicit copies of the original
+`G=[[a,-p],[p,a]]` on named AF path pairs send a coordinate zero frame to
+the entire canonical inclusion J. Keep the old two cross-copy frames;
+choose the last branch's Golden sibling as the fourth frame instead
+of the old sqrt(2) difference. This gives a fixed complete isometry and
+an exact input/future-test map for every unknown old/Spin state.
+
+Carrier/norm/source: full normalized working `H_(n+3) tensor K`, with
+all old matrix units, oldRIGHT, unknown possibly entangled Spin and
+the whole identity complement. The all-n proof follows the literal
+native path tree; full-column exact arithmetic checks levels 0–3
+and both noncommutative old summands at level 2. No field-dependent
+frame, new Golden angle or selected Einstein equation is inserted.
+
+The SourceI-square inverse is expanded on each specified port with
+arbitrary Spin. The original recording step has a complete 38-call
+paired-port realization (`13G+1CX+24SourceI`) with output
+`a J x+p V3 x` and feedback `p^2 P`. A separate seven-call logical
+reflection has a complete 43-call realization (`14G+1CX+28SourceI`)
+on all 136 columns at n=0, protected rank 8, complement 104 and full
+reflection multiplicities 128+8. Its feedback is `p P`.
+These counts include the exact 30-call decoding and six-call encoding;
+any physical routing/setup/growth stages must also be supplied and paid.
+
+The existing full-source lemma applies at the NEW common actual clock:
+fixed-frame feedback transport is exact, and on its stated matched
+INTERNAL reflected family all heat modes remain in the constant
+absolute price. Source and positive gain are transported together.
+Unknown retained past is not counted twice. Nonreflected/noninternal
+families, moving frames and genuine extra prices retain their derivatives.
+Required future tests are mapped at the actual shifted macro frontiers.
+
+Smallest decisive check completed: 101 exact checks, including every
+forward inverse call and both full 136-column products; normal and
+optimized Python receipts are byte-identical. Hostile controls reject
+an undecoded input, a substituted coordinate cut and a free inverse.
+Code SHA-256:
+`b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba`.
+Receipt SHA-256:
+`d42766a5b0cbd1d174abf45b373d2f189a955ca686e974ecd63d497dd68b394a`.
+
+Acceptance boundary: supporting exact implementation map, method direct;
+no independent physical acceptance or claim/registry promotion. The
+remaining application is physical admission of precisely these AF port
+pairs, their Spin coupling and coordinate middle operations, together
+with actual growth/clock price and the same physical comparison graph.
+The 136-dimensional paired-port schedule is not silently accepted by
+the binary-wire `d0.native-execution/1` parser; only its logical
+seven-call middle word passes that existing grammar. Physical stationary
+executions and any further independent source equations remain open.
+`GR_closed=false`. No new scientific task or competing owner.
+
+Write paths remain this brief and the existing primary. This checkpoint
+replaces the arbitrary frame-implementation target, not the final
+physical-admission premise of §7df934. Continue the original #334
+source-composition route from the six explicitly named path operations.
+
+Incoming composition before publication: preserved all seven files through
+`523d2cbcc0a9771ea40faa4a2eac84cc78704b0e`. Its full-prefix covector theorem
+now removes the need to freeze or independently stationarize one arbitrary
+regular finite past in the inherited cumulative source norm. Section7dg5.1
+consumes its `C_xi/Lambda` return bound and complete heat bound through
+the fixed all-column isometry, preserving the actual gain and independent
+block tests. Constant frame operations add paid stages; physical growth
+still needs its real map and price. New uncontrolled rows in EVERY block
+are explicitly not absorbed into the finite-prefix bound. The incoming
+all280 numerical attempt failed, left the positive-orientation chart and
+omitted full heat from its optimizer source; it is neither a root nor a
+no-go. These files are preserved byte-for-byte and are not rewritten as
+part of this frame checkpoint.

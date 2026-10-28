@@ -86672,6 +86672,859 @@ print(json.dumps(out,sort_keys=True,indent=2))
 }
 ```
 
+## 7dg. Factor the canonical AF recording frame into six original Golden paired-port blocks
+
+28 October 2026. SAME #334, `constitutive/native-programme-v1`; phase:
+native realization and composition. Input head
+`8daed32d560df18837bcc69458a8fa538a9cf135`. Consume the original
+[AF inclusion and recording frames](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md),
+their actual [constructor](certificates/a4d_native_fibonacci_record_activation.py),
+the [native full-Spin inverse](sources/d0_native_execution_domain_2026-10-24/native_execution.py),
+and the nonlinear dust owner's
+[whole-word embedding, §10](A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md#10-внутреннее-размещение-прежнего-work-без-нового-независимого-blank).
+The exact parent application is its missing implementation of a fixed
+recording frame before using that whole-word source transport. This section
+replaces an arbitrary frame-unitary target by an explicit six-block Golden
+factorization, including a forward-only inverse, complete input and future-test
+maps. It does **not** prove physical AF port addressability or declare the
+result a word in the existing binary-wire `d0.native-execution/1` domain.
+The final physical substitution and additional genuine source equations remain.
+
+### 1. The inclusion is already a Golden branching tree
+
+Write `p^2+p=1`, `a^2=p`, with the original positive roots. At level n,
+`A_n=M_A direct_sum M_B`, `H_n=L2(A_n,tau_n)`, and
+
+    iota(X,Y)=(diag(X,Y),X),
+    tau_n=p^(n+1)Tr X+p^(n+2)Tr Y.                         (935)
+
+Use normalized GNS matrix units, not unnormalized blocks. Each old type-0
+unit has two successor copies with coefficients `(a,p)`; each type-1 unit
+has one type-0 successor with coefficient 1. The labels below are the
+literal three-step native paths from the existing `segments(A,B,3)`.
+For an old matrix unit `(j,r,c)` let `e_(j,q;r,c)` be its diagonal-copy
+unit at final path q. The complete canonical inclusion is
+
+    J e_(0;r,c)=ap(e_000+e_100+e_010)+p^2(e_001+e_101),
+    J e_(1;r,c)=p(e_000+e_010)+ap e_001.                   (936)
+
+The omitted `(j;r,c)` indices are the same in every term. Paths ending
+0 and 1 lie in the actual two final summands; no dyadic register or new
+independently prepared blank is substituted for them.
+
+Define `G_j(q,q')` to be the original `[[a,-p],[p,a]]` simultaneously on
+each pair `(e_(j,q;r,c),e_(j,q';r,c))`, and identity on every other
+coordinate of the entire `H_(n+3)`. These are explicitly specified
+paired-port matrices. Apply, in chronological order,
+
+    old type 0: (000,100); (000,010); (000,001); (100,101),
+    old type 1: (000,010); (000,001).                      (937)
+
+Let B_n denote their product, last applied on the left. Applying the
+first three type-0 rotations to `e_000` gives coefficients
+`a^3,a^2 p,ap,p` at `000,001,010,100`; the fourth splits the last
+coefficient into `ap,p^2`. Since `a^3=ap`, this is exactly (936).
+For type 1 the two rotations give `a^2,ap,p=p,ap,p`. This proves the
+same identity for every n and every old matrix unit; it is not a
+finite-level extrapolation.
+
+Every block is orthogonal by `a^2+p^2=1`. It intertwines both old
+left and old right multiplication: it only mixes copies with the
+same `(j,r,c)` and its coefficients do not depend on r,c. Thus the
+entire B_n preserves arbitrary old states, correlations and oldRIGHT.
+These facts identify the exact operators in the owned right-module
+algebra. Membership there still does not itself make them physically
+selectable operations.
+
+### 2. A four-frame with a literal coordinate decoder
+
+Define four mutually orthogonal coordinate embeddings E_b of H_n.
+`E_0` picks path `000`. Keep the existing first two plus-block
+cross-copy frames as `E_1,E_2`; the two native copies used are
+`000,100` for type 0 and `000,010` for type 1. Their row/column
+coordinates are exactly the old constructor's V_1,V_2. For E_3
+pick the second leaf of the last branching rotation: `101` in type 0,
+`001` in type 1. Then
+
+    E_b* E_c=delta_bc I,  V_b=B_n E_b,
+    V_0=J,  V_1=E_1,  V_2=E_2,
+    V_3|type0=-p e_100+a e_101,
+    V_3|type1=-p e_000+a e_001.                          (938)
+
+The fourth frame is deliberately **different** from the previous
+sqrt(2)-weighted diagonal difference. This is a fixed choice within
+the owned four-frame theorem, not an assertion that old fixed-laboratory
+effects have the same meaning after an unannounced change. Transport
+the complete word, return cut, reader and required future tests together
+as below. No field equation or desired source determines this choice.
+All coefficients now lie in the original Golden field.
+
+The forward map B_n sends the coordinate zero frame to the canonical
+old input. Its inverse therefore decodes the actual canonical old
+state into the coordinate frame. No state is reset to an independent
+WORK zero, Spin basis vector, or future cyclic trace. Tensor identities
+extend (938) to any external spectator, including an entangled one.
+The same four-isometry identities can replace the old frames in each
+level of the owner's recursive `4^s` construction. Additional levels
+still require their actual address maps and all their calls; no general
+multi-level stage count is inferred from the one-level count below.
+
+### 3. All inverse calls and all input columns are retained
+
+On a specified paired port with the original arbitrary four-dimensional
+Spin, let `S=diag(I_4,L_i)`. Then `L_i^2=-I_4`, and hence
+
+    S^2=diag(I_4,-I_4),
+    (G_j(q,q') tensor I_Spin)^-1
+       =S^2 (G_j(q,q') tensor I_Spin) S^2.                (939)
+
+Every S is identity outside that addressed second leaf. The equality
+holds on all Spin inputs and on the whole complement. An inverse is
+therefore the five chronological forward calls `S;S;G;S;S`, not a
+free inverse symbol. Decode with the six inverses in reversed order
+(30 calls), then encode with the six forward G blocks (6 calls).
+If the physical interface requires routing, decoder setup or an actual
+growth operation in addition to these specified calls, all of those
+stages and prices must be added. Equation (939) does not supply them.
+
+For one four-state WORK and any additional logical factor K, let
+`T_E` embed `(WORK,K,H_n)` into `(H_(n+3),K)` using the coordinate E_b,
+and `T=(B_n tensor I_K)T_E`. Lift each given logical primitive g_t as
+
+    g_t^E=T_E(g_t tensor I_Hn)T_E*+I-T_E T_E*.
+
+This specifies the coordinate operations needed by the middle word;
+it does not pretend they have already been admitted on AF addresses.
+For the two-WORK-bit examples below their addresses are explicit:
+G on the first bit rotates `(E_0,E_2)` and `(E_1,E_3)`, uniformly over
+the second bit and all old columns; SourceI acts on the Spin at
+`E_2,E_3`; CX interchanges `E_2,E_3`. Everything else is identity.
+For `W=g_(L-1)...g_0`, the complete decode/word/encode product is
+
+    U_B=(B_n tensor I) [product_t g_t^E] (B_n* tensor I)
+       =T(W tensor I_Hn)T*+I-TT*,
+    T(|00_WORK> tensor x)=(J tensor I_K)x.                (940)
+
+The identity complement is retained on every call. The right equality
+holds for every unknown x, including old/K entanglement. At the logical
+frontier after `30+t` specified calls, the state is
+`T_E(W_t tensor I)x_zero`. Therefore a required logical effect O_t
+is transported there as `T_E(O_t tensor I)T_E*`; after encoding it
+is transported by T. Its complete input probabilities are identical.
+The additional intermediate stages and their possible tests remain.
+This is an explicit time-address map for the specified word, not an
+identification of the old and new durations or a physical-clock law.
+If the task fixes the shorter duration, this construction alone does
+not make its longer implementation an admissible alternative.
+
+### 4. Execute the original record, then an independent reflected control
+
+At n=0, `dim H_0=2`, `dim H_3=34`. Including the arbitrary original
+Spin gives the complete 136-dimensional working carrier. The coordinate
+WORK/Spin/old subspace has dimension 32, with its entire 104-dimensional
+complement. The protected canonical input has rank 8.
+
+First take the **original** Golden recording operation
+`R=CX(G tensor I)`, the literal `record()` matrix in the AF owner.
+Its two middle calls give a total of 38 specified paired-port calls:
+`13G+1CX+24SourceI`. Direct full-column multiplication gives
+
+    U_record(J tensor I)x=a(J tensor I)x+p(V_3 tensor I)x,
+    F_record=P U_record*(I-P)U_record P=p^2 P.            (941)
+
+The fresh detail is orthogonal to the old input and has norm-squared
+`p^2 ||x||^2`. The original state is present in both coefficients;
+there is no copied independent unknown input or postselection.
+This endpoint need not be a reflection; no reflection heat statement
+is applied to (941).
+
+Second take the native seven-call word
+`G;CX;SourceI;SourceI;G;SourceI;SourceI` on two WORK bits and the
+same arbitrary Spin. Its logical endpoint is `G^-1 CX G`. This word
+really passes the existing binary-wire validator **before** its AF
+embedding. Its completed AF schedule has 43 specified paired-port calls,
+`14G+1CX+28SourceI`. The check on all 136 columns yields
+
+    U_B*=U_B, U_B^2=I,
+    P U_B P=p P, F=P U_B*(I-P)U_B P=p P,
+    dim H_+=128, dim H_-=8.                              (942)
+
+For the diagnostic `m=1`, the corresponding feedback prices are
+`-8 log(1-zeta p^2)` and `-8 log(1-zeta p)`, respectively. They are
+different programmes. Neither full absolute heat price is equated
+to that of the two-call or seven-call logical word.
+
+The hostile controls reject leaving the canonical input undecoded,
+silently changing its cut to the coordinate blank, or replacing the
+inverse blocks by forward ones. They also record the changed fourth
+frame and the nondyadic whole carrier. In particular, a 136-dimensional
+paired-port circuit is **not** automatically a member of the existing
+binary-wire Execution/1 parser domain. Adding dummy columns would not
+prove its preparation or physical addressing.
+
+### 5. Consume the whole-source lemma at the new clock
+
+For the complete logical return cut P_0 let
+`P_B=T(P_0 tensor I_Hn)T*`. Equation (940), with the same unknown old
+input and all complementary modes, gives the exact full return source
+
+    F_B=T(F_word tensor I_Hn)T*,
+    J_B=d_n J_word, d_n=dim H_n.                         (943)
+
+This holds for the original logdet functional and its specified power m;
+the unused complement contributes identity inside the logarithm.
+No new cost functional or counterterm has been chosen. Tensoring with
+a separate whole H_n justifies this d_n. If H_n is already part of
+the retained past/cut, use its actual trace and the §7dd914–918 source;
+do not multiply the old multiplicity a second time.
+
+B_n and all address/cut maps here are fixed at the level and independent
+of the physical fields. For a matched family of reflected logical
+endpoints, the owned INTERNAL full-clock theorem (§7cr800, §7cv840–841)
+therefore applies at the **new common actual N**, with all scene,
+both-grade, oldRIGHT, unused and zero modes. The complete heat is
+constant along that family, while its absolute value includes all new
+stages. Thus, only in this stated sector and at this clock,
+
+    D B_price,new=d_n D B_price,logical,
+    g_new=d_n g_logical,
+    (D B_price,new)/g_new=(D B_price,logical)/g_logical.   (944)
+
+Here `B_price=H+J` is the original selected functional on that sector;
+`B_n` is the fixed frame matrix, not an action. The source and the
+positive gain are both transported. No derivative of `g I` or fitted
+normalization is substituted for the covector. The nonlinear direct-click
+source, its complete metric/matter comparison covector and its existing
+error norm can consequently use this exact frame **when the specified
+port operations and comparisons are physically admitted**. Recompute
+every duration-dependent precision budget at the new total clock.
+Noninternal placement, a nonreflected family, a moving physical frame,
+or an additional growth/reader/clock price retains its own derivative.
+The unchanged arbitrary-word heat formula in the owner is not evaluated
+at the shorter old clock to evade these new stages.
+
+This removes the arbitrary frame-matrix/sqrt(2)-rotation target from
+this implementation step. It does not establish access to the six
+specified AF port pairs, their source-Spin couplings or all coordinate
+middle operations; nor does it supply a physical growth price, a native
+stationarity law, or solutions of further independent source equations.
+The original raw-stage angle obstruction is unchanged: a and p are fixed.
+The existing seven-call word is admitted to its **defined wire grammar**;
+that grammar result cannot be used as physical admission of (937).
+This is a supporting exact realization map for the existing nonlinear
+source, not an accepted positive-GR closure. `GR_closed=false`.
+
+### 5.1 Consume the incoming full-prefix theorem without freezing old rows
+
+Before publication, incoming `523d2cbcc0a9771ea40faa4a2eac84cc78704b0e`
+was fast-forwarded with all seven new files preserved. Its
+[full-prefix recovery theorem](A4D_RETAINED_PAST_FULL_COVECTOR_RECOVERY_2026_10_28.md)
+now includes every direction of one arbitrary fixed finite regular past.
+On its actual all-column parked continuation it proves
+
+    ||DJ_prefix/Gamma|| <= C_xi/Lambda,
+    ||DH_prefix/Gamma||
+       <= A_N C_V/[zeta T Tr(S) Lambda],
+
+using its inherited cumulative gain `Gamma=w Lambda`, its actual
+positive old S and its independent-block max test norm. Repeating a
+genuine fixed finite template makes both prefix bounds vanish; a
+persistent new-block field or apparatus row is not diluted. Its proof
+already consumes §7df's Cauchy development. This result must not be
+reported as requiring a separately stationary or frozen finite prefix.
+
+The fixed all-column transport (940) is compatible with that estimate
+where the owner's parked-word and input maps apply. On the actual
+protected support, tensor amplification and isometric conjugation
+preserve `||S^-1/2 DS S^-1/2||op`; they preserve the full endpoint
+derivative norm as well. Their trace multiplicity appears in both the
+source and the actual gain exactly once. Thus the relative constant
+C_xi is unchanged under this fixed representation. The additional
+specified frame calls enter N; no derivative of a field-dependent
+frame is silently set to zero. The same conclusion is not asserted
+for an unproved physical-growth map or a changed old prefix extension.
+
+This composes two different improvements: the incoming estimate handles
+one genuinely varied finite prefix, and (937)–(940) make the proposed
+recording-frame operations explicit. Actual AF addressing, any extra
+rows newly free in every block, complete growth/price binding and the
+physical comparison admission remain. The original-full128 all280
+numerical attempt in that incoming packet failed and left the positive
+orientation chart; its own receipt also excludes full heat from the
+optimizer source. It supplies neither a stationary root nor a no-go
+and is not used in this argument.
+
+### 6. Exact executable evidence and retained acceptance boundary
+
+The checker below constructs the actual old `segments` and normalized J,
+checks every frame column at levels n=0,1,2,3, and checks commutation
+with every left/right matrix-unit generator at n=2, where both old
+summands are noncommutative. It then executes every forward inverse call
+and both complete schedules on all 136 columns. These checks complement
+the all-n branching proof above; no random state sample stands in for
+unknown input or the complement. Normal Python and `python -O` produce
+byte-identical receipts, with explicit failure checks rather than asserts.
+
+Assembly checkpoint: supporting exact map, method direct; intended
+consumer is the frame-implementation application of nonlinear dust §10
+and its source use in §7df934. Remaining hypotheses are the genuine
+specified-port admission and full physical comparison/price binding.
+There is no independent acceptance that discharges `constitutive` or
+another physical obligation. Write paths remain this primary artifact
+and the existing task brief. No new task, owner or registry result is
+created by this checkpoint.
+
+The executed checker SHA-256 is `b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba`; the receipt SHA-256 is `d42766a5b0cbd1d174abf45b373d2f189a955ca686e974ecd63d497dd68b394a`. The receipt pins the unchanged AF and native-word source bytes. Python 3.9.6 / SymPy 1.14.0 were used. Save the following Python block unchanged and run it from this repository root, or pass `--repo /absolute/repository/path`.
+
+<!-- BEGIN 7dg GOLDEN AF FRAME CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Exact paired-port AF factorization, not native physical port admission.
+
+Run from repository root, or pass --repo. All complements and Spin columns
+are kept. The addressed AF calls below are NOT Execution/1 wire programs.
+"""
+import argparse
+from collections import Counter
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+import sympy as s
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--repo', type=Path, default=Path.cwd())
+args = parser.parse_args()
+ROOT = args.repo.resolve()
+
+def module(name, rel):
+    path = ROOT / rel
+    spec = importlib.util.spec_from_file_location(name, path)
+    result = importlib.util.module_from_spec(spec)
+    sys.modules[name] = result
+    spec.loader.exec_module(result)
+    return result, hashlib.sha256(path.read_bytes()).hexdigest()
+
+AF, af_sha = module('golden_frame_owned',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py')
+N, native_sha = module('golden_word_owned',
+    '02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py')
+a, p = AF.a, AF.p
+labels = []
+
+def require(condition, label):
+    if not condition:
+        raise RuntimeError(label)
+    labels.append(label)
+
+def mat(A):
+    return s.SparseMatrix(AF.mat(A))
+
+def equal(A, B, label):
+    require(AF.zero(A-B), label)
+
+def paths(state, remaining, prefix=()):
+    if not remaining:
+        return [prefix]
+    successors = (0, 1) if state == 0 else (0,)
+    return [q for nxt in successors
+            for q in paths(nxt, remaining-1, prefix+(nxt,))]
+
+def pairs(state, remaining, prefix=()):
+    if not remaining:
+        return []
+    if state == 1:
+        return pairs(0, remaining-1, prefix+(0,))
+    left = paths(0, remaining-1, prefix+(0,))[0]
+    right = paths(1, remaining-1, prefix+(1,))[0]
+    return ([(left, right)] + pairs(0, remaining-1, prefix+(0,))
+            + pairs(1, remaining-1, prefix+(1,)))
+
+def rotation(dimension, row_pairs):
+    G = s.MutableSparseMatrix(s.eye(dimension))
+    for i, j in row_pairs:
+        G[i, i] = G[j, j] = a
+        G[i, j], G[j, i] = -p, p
+    return s.SparseMatrix(G)
+
+def circuit(n):
+    f = AF.frame(n)
+    old, fine = f['old_coordinates'], f['fine_coordinates']
+    index = {coord: i for i, coord in enumerate(fine)}
+    address = {(j, path): (v, offset)
+               for v, block in enumerate(f['segments'])
+               for j, path, offset in block}
+    def row(j, path, r, c):
+        v, off = address[j, path]
+        return index[v, off+r, off+c]
+    operations = []
+    for j in (0, 1):
+        size = f['old_sizes'][j]
+        for left, right in pairs(j, 3):
+            row_pairs = [(row(j, left, r, c), row(j, right, r, c))
+                         for r in range(size) for c in range(size)]
+            operations.append({'type': j, 'left': left, 'right': right,
+                               'rows': row_pairs})
+    E = s.MutableSparseMatrix(len(fine), 4*len(old), {})
+    for k, (j, r, c) in enumerate(old):
+        first, second = [off for kind, path, off in f['segments'][0]
+                         if kind == j][:2]
+        selected = [row(j, paths(j, 3)[0], r, c),
+                    index[0, first+r, second+c],
+                    index[0, second+r, first+c],
+                    row(j, pairs(j, 3)[-1][1], r, c)]
+        for work, i in enumerate(selected):
+            E[i, work*len(old)+k] = 1
+    return f, operations, s.SparseMatrix(E)
+
+def product(matrices, dimension):
+    W = s.SparseMatrix(s.eye(dimension))
+    for g in matrices:
+        W = mat(g*W)
+    return W
+
+# This proof is uniform in the old matrix sizes; exercise both noncommuting
+# old summands as well as the smallest and a larger AF level.
+level_rows = []
+for n in range(4):
+    f, operations, E = circuit(n)
+    d, D = f['old_dimension'], len(f['fine_coordinates'])
+    V = E
+    for op in operations:
+        V = mat(rotation(D, op['rows'])*V)
+    equal(E.T*E, s.eye(4*d), 'coordinate frame isometry n='+str(n))
+    equal(V.T*V, s.eye(4*d), 'Gold-only frame isometry n='+str(n))
+    equal(V[:, :d], f['V'][:, :d], 'canonical J on every old column n='+str(n))
+    equal(V[:, d:3*d], E[:, d:3*d], 'off-copy frames stay fixed n='+str(n))
+    require(len(operations) == 6, 'four plus two branch rotations n='+str(n))
+    require(not any(x.has(s.sqrt(2)) for x in V), 'no sqrt2 frame coefficients n='+str(n))
+    level_rows.append({'n': n, 'old': d, 'fine': D, 'coordinate_rank': 4*d})
+    if n == 2:
+        B2 = product([rotation(D, op['rows']) for op in operations], D)
+        fine_index = {coord:i for i, coord in enumerate(f['fine_coordinates'])}
+        for j, size in enumerate(f['old_sizes']):
+            for r in range(size):
+                for c in range(size):
+                    L, R = (s.MutableSparseMatrix(D, D, {}) for _ in range(2))
+                    for v, block in enumerate(f['segments']):
+                        for kind, path, off in block:
+                            if kind != j:
+                                continue
+                            for k in range(f['fine_sizes'][v]):
+                                L[fine_index[v, off+r, k], fine_index[v, off+c, k]] = 1
+                                R[fine_index[v, k, off+c], fine_index[v, k, off+r]] = 1
+                    equal(B2*L, L*B2, 'left intertwining '+str((j,r,c)))
+                    equal(B2*R, R*B2, 'right intertwining '+str((j,r,c)))
+
+f, operations, E = circuit(0)
+d, D = f['old_dimension'], len(f['fine_coordinates'])
+B = product([rotation(D, op['rows']) for op in operations], D)
+equal(B.T*B, s.eye(D), 'all-column branch unitary')
+V = mat(B*E)
+J = f['V'][:, :d]
+
+# A real seven-stage native word: G; CX; SourceI; SourceI; G; SourceI; SourceI.
+# The last five calls are the original full-Spin inverse of the first G.
+g = N.Gate('G', (0,))
+cx = N.Gate('CX', (0, 1))
+si = N.Gate('SourceI', (0, 2, 3))
+gates = (g, cx, si, si, g, si, si)
+word = N.Execution(4, (0, 1), (), gates, N.G_CX_SOURCE_I, 0, (2, 3))
+N.validate_execution(word, max_qubits=4, max_expanded_stages=7)
+
+def symbolic(A):
+    return mat(A.xreplace({N.A:a}).xreplace({s.sqrt(5):2*p+1}))
+
+native_primitives = [symbolic(N.gate_matrix(word, gate)) for gate in gates]
+W = product(native_primitives, 16)
+P = symbolic(N.cut_projector(word))
+equal(P, s.diag(*([1]*4+[0]*12)), 'both WORK bits only are blank')
+equal(W.T, W, 'logical endpoint selfadjoint')
+equal(W*W, s.eye(16), 'logical endpoint reflection')
+equal(P*W*P, p*P, 'logical whole-Spin scalar corner')
+equal(P*W.T*(s.eye(16)-P)*W*P, p*P, 'logical feedback p')
+
+# Columns: (WORK, Spin, old); rows: (fineAF, Spin).
+TE = s.MutableSparseMatrix(4*D, 16*d, {})
+for work in range(4):
+    for spin in range(4):
+        for old in range(d):
+            col = (4*work+spin)*d+old
+            for row in range(D):
+                if E[row, work*d+old]:
+                    TE[4*row+spin, col] = E[row, work*d+old]
+TE = s.SparseMatrix(TE)
+BS = s.kronecker_product(B, s.eye(4))
+T = mat(BS*TE)
+I = s.SparseMatrix(s.eye(4*D))
+RE = mat(TE*TE.T)
+RT = mat(T*T.T)
+equal(TE.T*TE, s.eye(16*d), 'coordinate logical transport all columns')
+equal(T.T*T, s.eye(16*d), 'encoded logical transport all columns')
+for spin in range(4):
+    for old in range(d):
+        equal(T[:, spin*d+old], s.kronecker_product(J[:,old],s.eye(4)[:,spin]),
+              'unknown old and Spin input '+str((spin,old)))
+
+# Expand each AF Golden inverse as Si;Si;G;Si;Si on that specified pair.
+# These are paired-port matrix calls, not native_execution wire codes.
+branch_gates, branch_sources = [], []
+for op in operations:
+    G = s.kronecker_product(rotation(D, op['rows']), s.eye(4))
+    S = s.MutableSparseMatrix(I)
+    for first, second in op['rows']:
+        for r in range(4):
+            for c in range(4):
+                S[4*second+r, 4*second+c] = N.L_I[r,c]
+    S = s.SparseMatrix(S)
+    equal(S.T*S, I, 'all-Spin SourceI on '+str((op['type'],op['right'])))
+    equal(product([S,S,G,S,S],4*D), G.T,
+          'five-forward-call inverse '+str((op['type'],op['left'],op['right'])))
+    branch_gates.append(mat(G))
+    branch_sources.append(S)
+
+prefix, names = [], []
+for G,S in reversed(list(zip(branch_gates,branch_sources))):
+    prefix.extend([S,S,G,S,S]); names.extend(['SourceI','SourceI','G','SourceI','SourceI'])
+equal(product(prefix,4*D), BS.T, '30-call exact input decode')
+middle = [mat(TE*s.kronecker_product(g,s.eye(d))*TE.T+I-RE)
+          for g in native_primitives]
+schedule = prefix+middle+branch_gates
+names += [gate.op for gate in gates]+['G']*6
+actual = product(schedule,4*D)
+expected = mat(T*s.kronecker_product(W,s.eye(d))*T.T+I-RT)
+equal(actual, expected, '43 actual calls on every column including complement')
+equal(actual.T, actual, 'whole endpoint selfadjoint')
+equal(actual*actual, I, 'whole endpoint reflection')
+Ptrue = mat(T*s.kronecker_product(P,s.eye(d))*T.T)
+equal(Ptrue, s.kronecker_product(J*J.T,s.eye(4)), 'cut is original canonical J')
+equal(Ptrue*actual*Ptrue, p*Ptrue, 'true canonical corner all inputs')
+F = mat(Ptrue*actual.T*(I-Ptrue)*actual*Ptrue)
+equal(F,p*Ptrue,'complete canonical feedback p')
+require(AF.red(s.trace(Ptrue)) == 8, 'true protected rank 8')
+require(AF.red(s.trace(actual)) == 120, 'whole reflection multiplicities 128 and 8')
+require(AF.red(s.trace(I-RT)) == 104, 'whole retained complement 104')
+require(Counter(names) == {'G':14,'CX':1,'SourceI':28} and len(schedule)==43,
+        'expanded actual paired-port inventory')
+
+# Also execute the original two-call Golden recording step itself, not just
+# a reflected diagnostic. Its fourth frame is the new Golden sibling frame.
+equal(product(native_primitives[:2],16),
+      s.kronecker_product(AF.record(),s.eye(4)), 'original full recording matrix')
+record_schedule = prefix+middle[:2]+branch_gates
+record_names = names[:30]+['G','CX']+['G']*6
+record_actual = product(record_schedule,4*D)
+record_expected = mat(T*s.kronecker_product(AF.record(),s.eye(4*d))*T.T+I-RT)
+equal(record_actual,record_expected,'38-call original record on all columns')
+equal(record_actual.T*record_actual,I,'whole original record unitary')
+input_columns = T[:,:4*d]
+detail_columns = T[:,12*d:16*d]
+equal(record_actual*input_columns,a*input_columns+p*detail_columns,
+      'unknown input produces its own Golden sibling record')
+equal(input_columns.T*detail_columns,s.zeros(4*d), 'new detail orthogonal to old input')
+equal(Ptrue*record_actual.T*(I-Ptrue)*record_actual*Ptrue,p**2*Ptrue,
+      'original recording feedback p squared')
+require(len(record_schedule)==38 and Counter(record_names)=={'G':13,'CX':1,'SourceI':24},
+        'expanded actual original-record inventory')
+
+# Hostile controls: no fake blank by changing the cut; no omitted encoding.
+Pcoordinate = mat(TE*s.kronecker_product(P,s.eye(d))*TE.T)
+require(not AF.zero(Ptrue-Pcoordinate), 'coordinate blank is not canonical input')
+unencoded = product(middle,4*D)
+require(not AF.zero(Ptrue*unencoded*Ptrue-p*Ptrue), 'missing frame calls change true corner')
+bad_prefix = product(branch_gates,4*D)  # replacing inverse by forward is not valid
+require(not AF.zero(bad_prefix-BS.T), 'forward branch is not a free inverse')
+require(not AF.zero(f['V'][:,3*d:]-V[:,3*d:]), 'old sqrt2 fourth frame has changed')
+require((4*D)&(4*D-1) != 0, '136-dimensional calls cannot be silently wire Execution/1')
+
+result = {
+    'status':'PASS', 'checks':len(labels),
+    'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    'frame_owner_sha256':af_sha, 'native_owner_sha256':native_sha,
+    'field_relations':['a^2=p','p^2+p=1','a>0','p>0'],
+    'levels':level_rows,
+    'branch_pairs':[{'old_type':op['type'], 'first':list(op['left']),
+                     'second':list(op['right'])} for op in operations],
+    'native_middle':{'stages':7,'G':2,'CX':1,'SourceI':4,'dimension':16},
+    'paired_port_schedule':{'stages':43,'G':14,'CX':1,'SourceI':28,
+        'dimension':4*D,'input_rank':8,'complement_dimension':104,
+        'reflection_plus':128,'reflection_minus':8,'feedback':'p Ptrue'},
+    'original_record_schedule':{'stages':38,'G':13,'CX':1,'SourceI':24,
+        'dimension':4*D,'input_rank':8,'feedback':'p^2 Ptrue',
+        'input_action':'a J input + p V3 input'},
+    'checks_executed':labels,
+    'scope':'exact specified AF paired-port circuit and complete input/source transport',
+    'physical_AF_port_addressability_proved':False,
+    'physical_AF_growth_cost_supplied':False,
+    'wire_execution_domain_membership_claimed':False,
+    'GR_closed':False,
+}
+print(json.dumps(result,indent=2))
+```
+<!-- END 7dg GOLDEN AF FRAME CHECKER -->
+
+<!-- BEGIN 7dg GOLDEN AF FRAME RECEIPT -->
+```json
+{
+  "status": "PASS",
+  "checks": 101,
+  "checker_sha256": "b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba",
+  "frame_owner_sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "field_relations": [
+    "a^2=p",
+    "p^2+p=1",
+    "a>0",
+    "p>0"
+  ],
+  "levels": [
+    {
+      "n": 0,
+      "old": 2,
+      "fine": 34,
+      "coordinate_rank": 8
+    },
+    {
+      "n": 1,
+      "old": 5,
+      "fine": 89,
+      "coordinate_rank": 20
+    },
+    {
+      "n": 2,
+      "old": 13,
+      "fine": 233,
+      "coordinate_rank": 52
+    },
+    {
+      "n": 3,
+      "old": 34,
+      "fine": 610,
+      "coordinate_rank": 136
+    }
+  ],
+  "branch_pairs": [
+    {
+      "old_type": 0,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "old_type": 0,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "old_type": 0,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "old_type": 0,
+      "first": [
+        1,
+        0,
+        0
+      ],
+      "second": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "old_type": 1,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "old_type": 1,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "native_middle": {
+    "stages": 7,
+    "G": 2,
+    "CX": 1,
+    "SourceI": 4,
+    "dimension": 16
+  },
+  "paired_port_schedule": {
+    "stages": 43,
+    "G": 14,
+    "CX": 1,
+    "SourceI": 28,
+    "dimension": 136,
+    "input_rank": 8,
+    "complement_dimension": 104,
+    "reflection_plus": 128,
+    "reflection_minus": 8,
+    "feedback": "p Ptrue"
+  },
+  "original_record_schedule": {
+    "stages": 38,
+    "G": 13,
+    "CX": 1,
+    "SourceI": 24,
+    "dimension": 136,
+    "input_rank": 8,
+    "feedback": "p^2 Ptrue",
+    "input_action": "a J input + p V3 input"
+  },
+  "checks_executed": [
+    "coordinate frame isometry n=0",
+    "Gold-only frame isometry n=0",
+    "canonical J on every old column n=0",
+    "off-copy frames stay fixed n=0",
+    "four plus two branch rotations n=0",
+    "no sqrt2 frame coefficients n=0",
+    "coordinate frame isometry n=1",
+    "Gold-only frame isometry n=1",
+    "canonical J on every old column n=1",
+    "off-copy frames stay fixed n=1",
+    "four plus two branch rotations n=1",
+    "no sqrt2 frame coefficients n=1",
+    "coordinate frame isometry n=2",
+    "Gold-only frame isometry n=2",
+    "canonical J on every old column n=2",
+    "off-copy frames stay fixed n=2",
+    "four plus two branch rotations n=2",
+    "no sqrt2 frame coefficients n=2",
+    "left intertwining (0, 0, 0)",
+    "right intertwining (0, 0, 0)",
+    "left intertwining (0, 0, 1)",
+    "right intertwining (0, 0, 1)",
+    "left intertwining (0, 0, 2)",
+    "right intertwining (0, 0, 2)",
+    "left intertwining (0, 1, 0)",
+    "right intertwining (0, 1, 0)",
+    "left intertwining (0, 1, 1)",
+    "right intertwining (0, 1, 1)",
+    "left intertwining (0, 1, 2)",
+    "right intertwining (0, 1, 2)",
+    "left intertwining (0, 2, 0)",
+    "right intertwining (0, 2, 0)",
+    "left intertwining (0, 2, 1)",
+    "right intertwining (0, 2, 1)",
+    "left intertwining (0, 2, 2)",
+    "right intertwining (0, 2, 2)",
+    "left intertwining (1, 0, 0)",
+    "right intertwining (1, 0, 0)",
+    "left intertwining (1, 0, 1)",
+    "right intertwining (1, 0, 1)",
+    "left intertwining (1, 1, 0)",
+    "right intertwining (1, 1, 0)",
+    "left intertwining (1, 1, 1)",
+    "right intertwining (1, 1, 1)",
+    "coordinate frame isometry n=3",
+    "Gold-only frame isometry n=3",
+    "canonical J on every old column n=3",
+    "off-copy frames stay fixed n=3",
+    "four plus two branch rotations n=3",
+    "no sqrt2 frame coefficients n=3",
+    "all-column branch unitary",
+    "both WORK bits only are blank",
+    "logical endpoint selfadjoint",
+    "logical endpoint reflection",
+    "logical whole-Spin scalar corner",
+    "logical feedback p",
+    "coordinate logical transport all columns",
+    "encoded logical transport all columns",
+    "unknown old and Spin input (0, 0)",
+    "unknown old and Spin input (0, 1)",
+    "unknown old and Spin input (1, 0)",
+    "unknown old and Spin input (1, 1)",
+    "unknown old and Spin input (2, 0)",
+    "unknown old and Spin input (2, 1)",
+    "unknown old and Spin input (3, 0)",
+    "unknown old and Spin input (3, 1)",
+    "all-Spin SourceI on (0, (1, 0, 0))",
+    "five-forward-call inverse (0, (0, 0, 0), (1, 0, 0))",
+    "all-Spin SourceI on (0, (0, 1, 0))",
+    "five-forward-call inverse (0, (0, 0, 0), (0, 1, 0))",
+    "all-Spin SourceI on (0, (0, 0, 1))",
+    "five-forward-call inverse (0, (0, 0, 0), (0, 0, 1))",
+    "all-Spin SourceI on (0, (1, 0, 1))",
+    "five-forward-call inverse (0, (1, 0, 0), (1, 0, 1))",
+    "all-Spin SourceI on (1, (0, 1, 0))",
+    "five-forward-call inverse (1, (0, 0, 0), (0, 1, 0))",
+    "all-Spin SourceI on (1, (0, 0, 1))",
+    "five-forward-call inverse (1, (0, 0, 0), (0, 0, 1))",
+    "30-call exact input decode",
+    "43 actual calls on every column including complement",
+    "whole endpoint selfadjoint",
+    "whole endpoint reflection",
+    "cut is original canonical J",
+    "true canonical corner all inputs",
+    "complete canonical feedback p",
+    "true protected rank 8",
+    "whole reflection multiplicities 128 and 8",
+    "whole retained complement 104",
+    "expanded actual paired-port inventory",
+    "original full recording matrix",
+    "38-call original record on all columns",
+    "whole original record unitary",
+    "unknown input produces its own Golden sibling record",
+    "new detail orthogonal to old input",
+    "original recording feedback p squared",
+    "expanded actual original-record inventory",
+    "coordinate blank is not canonical input",
+    "missing frame calls change true corner",
+    "forward branch is not a free inverse",
+    "old sqrt2 fourth frame has changed",
+    "136-dimensional calls cannot be silently wire Execution/1"
+  ],
+  "scope": "exact specified AF paired-port circuit and complete input/source transport",
+  "physical_AF_port_addressability_proved": false,
+  "physical_AF_growth_cost_supplied": false,
+  "wire_execution_domain_membership_claimed": false,
+  "GR_closed": false
+}
+```
+<!-- END 7dg GOLDEN AF FRAME RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:
