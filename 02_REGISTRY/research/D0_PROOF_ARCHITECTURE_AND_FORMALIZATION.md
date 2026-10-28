@@ -12481,6 +12481,75 @@ establish a list of mathematical units, classify exclusions, freeze C0 or
 authenticate scientific acceptance. Research, registry, certificates and
 negative controls remain outside this book-only view.
 
+### C0 source review candidate: Book02 §02.3b
+
+On snapshot `a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38`,
+`01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md` has
+Git blob `00d7c597abb99856719b274bb86b115b17af139f`. The complete section is
+the half-open byte range `[12086,15801)`, SHA-256
+`612be4ee853d2f03469e3877a41cb16490a0cb6e5328fead13b2dbcb5346c7c8`.
+These are review candidates and explicit scope decisions, not accepted C0
+units. An independent reading checked every byte of this section, the listed
+Lean owners and their stated hypotheses. The heading `[12086,12153)` and the
+one-byte LF separators between the following ranges are structural, not
+separate assertions; the final separator is included in the section range.
+
+| Byte range | Candidate disposition and existing support |
+| --- | --- |
+| `[12154,12728)` | Navigation and the connection to Book01 §01.1.8. The bridge requires a supplied `E : TheoryVerification F.futureEmpiricalTheory`; existence of such an `E` is not derived from an arbitrary interpretation. |
+| `[12729,13109)` | Definition of `Interpretation F G`: total executions, state/action/test maps, an injective outcome map and primitive step/observation equations. These are interface inputs. |
+| `[13110,13646)` | Finite-word run and profile transport, append and composition: `Interpretation.run_commutes`, `profile_commutes`, `compile_append`, `comp_compile`. They apply to a supplied valid interpretation. |
+| `[13647,14273)` | Future-profile equivalence and the image construction on `commonExecution`, with `imageEquiv`, `imageStep`, `imageEquiv_step` and the verified-state bridge when `E` is supplied. The common sector does not assert coverage of all native tests or states. |
+| `[14274,14759)` | Conditional translation and theorem reuse via `Interpretation.translate` and `transfer_theorem`/`transfer_from_premises`; the source proof and all indexed premises remain inputs and the conclusion is on `EmpiricalImage`. |
+| `[14760,15284)` | `NativeContextCoverage` is an explicit universal context and readout condition on represented source states. The visible/extra-bit example is a concrete counterexample to inferring that condition automatically, not a general physical no-go. |
+| `[15285,15800)` | Open physical-operation, full-source, clock and refinement obligations and navigation; no physical selection or GR theorem is proved here. |
+
+The Lean owner is `D0.Foundation.TheoryTransfer`, source blob
+`a882f38aa1caf4d619c6e1f84c73ebe97e4b127a`; its research derivation is
+`D0_THEORY_TRANSFER_2026_10_20.md`, blob
+`46a66f7dfcf04843058ec042fcc9a0519c34c02b`. The existing accepted assembly
+application `lean-operational-transfer-to-theory-transfer` has review ref
+`4aa19a667387b3250d310d00c511bd1dd315bbb0` and review SHA-256
+`2b5ee6947b223eda12fbaa1ebd10328ce68429ea4b055e5a4ca9346ff97ca250`.
+Its concrete visible-bit consumer is a finite example, not physical
+admission. Existing application acceptance is not independent acceptance of
+this C0 classification; semantic overlap with Book01 remains to be reviewed.
+
+### C0 source review candidate: Book01 §01.1.8
+
+On the same snapshot `a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38`,
+`01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md` has Git blob
+`eb2d8ea779189084cdaaca717326df88589ec918`. The complete section is
+`[14123,18478)`, SHA-256
+`bd468ba86fc3eb70004871d2bb5777c40afbfb7f92394d33c52b46759692ea9f`.
+The following eleven adjacent ranges cover it exactly. They are candidate
+source classifications, not accepted C0 units. An independent reading checked
+the scope and Lean hypotheses; source ranges may contain several units.
+
+| Byte range | Candidate disposition and existing support |
+| --- | --- |
+| `[14123,14190)` | Heading and separator, structural context. |
+| `[14190,14686)` | The fixed `FutureExecution F`, finite action words including the empty word, and `run`/`profile`; source navigation is provenance. |
+| `[14686,15020)` | Equality of future profiles, `futureSetoid`, step congruence and quotient step. Current observation is a consequence of the empty word; strict difference requires an example. |
+| `[15020,15503)` | With supplied `E : TheoryVerification F.futureEmpiricalTheory`, the future-class equivalence and represented state/run/record; in particular `representedRecord_eq_iff` and `representedRun_state` are distinct results. |
+| `[15503,16028)` | The first two statements repeat the preceding range; additionally `representedComparison_iff` and `representedComparison_catalogue_independent`. Protocol and comparison hypotheses remain those of `E`. |
+| `[16028,16656)` | `sufficient_memory_preserves_record` requires an encoder/decoder recovering every profile. The finite hidden-bit control and the separate `uncoupledCenter` control use supplied `E` where stated; the latter is defined for arbitrary `F` with an added Boolean. |
+| `[16656,16923)` | `SigmaObject`, `SigmaWitness` and `CodePresentation` definitions. Coding, round-trip, shortlex and computability properties are inputs carried by the witness, not consequences inferred from `E`. |
+| `[16923,17382)` | Code injectivity, canonical/minimal code, archive/history/query definitions and `archiveCode_eq_iff`, including both future profile and line identity. |
+| `[17382,17786)` | Archive line preservation, query and append retention with `n < history.length`; registered list order is not identified with a physical clock. |
+| `[17786,18069)` | `finiteSigmaWitness` requires supplied `E` and finite protocol state and line types. Computability statements about codes do not provide a computable encoder for arbitrary raw states. |
+| `[18069,18478)` | Source ownership, existing application and open physical conditions; this is provenance/scope rather than a new mathematical result. |
+
+The owner is `D0.Foundation.VerificationCore` together with
+`D0.Foundation.EmpiricalTheoryFactorization`. The previously accepted
+`lean-verification-core-to-foundation` application has review ref
+`4aa19a667387b3250d310d00c511bd1dd315bbb0` and review SHA-256
+`0f2d369c951408ae0c692447d09eccf172f42d1a83365ad125cc091de6a6b9a5`.
+That acceptance does not accept this source classification. Book01 and
+Book02 share a supplied representation bridge, but their statements are not
+automatically merged. The wider physical claims in neighbouring §01.1.6 are
+not consequences of this fixed-`F` operational classification.
+
 ### Weak smooth test for the composed frozen refinement
 
 [`D0.Geometry.ArchiveGradedRefinementWeakTest`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean)
