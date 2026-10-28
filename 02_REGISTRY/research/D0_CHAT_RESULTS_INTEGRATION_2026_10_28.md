@@ -811,14 +811,20 @@ solution, and initial-data domains. The new inverse and Cauchy theorems are
 not Lean proofs; no `formal_support`, claims, acceptance, or lifecycle entries
 were added for them. Separately, the existing Lean scalar trace-branch proof
 and finite-dimensional moving-projector/query-cut derivative adapters are
-compiled in #402. The latter formalize the complete finite Book03 derivative
-for moving `P,U,Δ` (including the supplied relative-source formula at fixed
-`β,z`) and one rational 2×2 control, but do not prove the new §7dd/§7de source
-or admit it physically. Physical comparison admission, binding to the
-original full128 source, independent apparatus equations and refinement
-remain open. `GR_closed=false`.
+compiled in #402. The moving-projector theorem formalizes the complete finite
+Book03 derivative for moving `P,U,Δ` (including the supplied relative-source
+formula at fixed `β,z`) and the query/cut adapter checks one rational 2×2
+control. The latest direct-row adapter also formalizes the §7cx feedback
+derivative for `A=a†a` with its actual row jet, including a singular-Gram
+control whose derivative is `56/241`. These are finite-source Lean results;
+they do not prove the new §7dd/§7de source or admit it physically. Physical
+comparison admission, binding to the original full128 source, independent
+apparatus equations and refinement remain open. `GR_closed=false`.
 
-The [combined PR #402 validation record](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_pr402_integrated.json)
-and [compiled declarations](sources/d0_proof_architecture_formalization_2026-10-24/reports/integrated_book03_branch_weaktest_querycut_declarations_2026-10-28.json)
-bind the current Lean source digest, public import and four affected modules;
-the detailed result is recorded in the primary architecture report.
+The earlier four-module PR #402 snapshot is preserved in its
+[build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_pr402_integrated.json)
+and [declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/integrated_book03_branch_weaktest_querycut_declarations_2026-10-28.json).
+The later direct-row adapter is included in the latest five-module integration
+checkpoint in the primary architecture report, with its own current
+[build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_pr402_latest.json)
+and [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/integrated_book03_branch_weaktest_cut_row_declarations_2026-10-28.json).

@@ -12824,3 +12824,51 @@ confirms 74 archived files / 650,121 member bytes only. The separately
 supplied ZIP digest remains unverified. The four new #334 continuum results
 above are archived and replayed at their stated scopes, but remain research
 support rather than Lean proofs or physical acceptance. `GR_closed=false`.
+
+## Latest PR #402 integration after the direct-row adapter — 28 October 2026
+
+The latest remote PR commit `26eb6200` adds
+[`D0.Analysis.DirectFeedbackRowDerivative`](../../03_FORMALIZATION/D0/Analysis/DirectFeedbackRowDerivative.lean)
+for the existing #334 §7cx row source. The theorem differentiates the original
+log-determinant feedback along `A=a†a` and its actual noncommuting jet
+`H=da†a+a†da`; the determinant-source derivative is
+`4zp² Re Tr[D⁻¹(I−2p²A)H]`. It does not invert `A` or assume `A` commutes with
+`H`. Its hostile rational curve has singular Gram, nonzero commutator, and
+derivative `56/241`. The theorem retains the stated finite matrix and slit-plane
+domain; it does not construct an admitted physical row or the complete
+Book/work/clock source.
+
+The resulting integrated snapshot also retains the exact fixed-sector scalar
+branch, the complete moving-`P,U,Δ` finite Book03 derivative and named source
+components, the rational moving-query/cut adapter, and the weak-test
+refinement witness. The full moving-projector source is described in the
+preceding checkpoint; the row adapter differentiates a distinct source and
+does not replace that theorem.
+
+All five affected narrow targets pass: `ClosedHistoryNonlinearDustBranch`,
+`MovingProjectorVariableParameters`, `ArchiveGradedRefinementWeakTest`,
+`MovingCutQueryDerivativeAdapter`, and `DirectFeedbackRowDerivative`. The
+public `D0.All` build passes 4,772 jobs in 50.0 seconds with Lean 4.30.0 at
+source SHA-256
+`e66a40d0f1b4498f68ddc6d1b3445ffe676c8bcd1c68013baff32daf18d838aa`.
+Its [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_pr402_latest.json)
+has SHA-256
+`66b07d2ce23ccef1e7564281c93350e430a575a938545d84a8fbac2e35f3e806`.
+The [current combined declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/integrated_book03_branch_weaktest_cut_row_declarations_2026-10-28.json)
+was extracted via public `D0.All` from clean snapshot
+`d8355e02e320112a204ff518e3f2fbd32123cc15`, at the same Lean source digest.
+It contains 233 entries over the five modules (including generated
+declarations); the axiom union is `Classical.choice`, `Quot.sound`, and
+`propext`, with no `sorryAx` or custom axiom. Its SHA-256 is
+`32c90b370d8f418c4043c45cf607bf648c1a34e669488d784517096ac64987fb`.
+
+On this integrated tree, `generate_lean_views.py --check` passes with
+`stale=0`, `validate_repo.py` reports 889 claims, 31 assumptions, 58 aliases,
+238 formal-support rows, and a 961-module generated closure with zero
+warnings. `formalization_debt_audit.py --check` remains at its five-finding
+baseline; `validate_work.py` passes. The aggregate build retains existing
+linter warnings elsewhere in the import closure. The direct-row theorem is
+formal mathematical support for its stated row-level source; it supplies no
+physical admission, full 42-field variation, source selection or GR closure.
+The #334 continuum applications in the preceding section remain non-Lean
+research results. `GR_closed=false`.
