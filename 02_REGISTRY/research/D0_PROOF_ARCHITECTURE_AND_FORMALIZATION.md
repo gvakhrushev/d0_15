@@ -14136,3 +14136,27 @@ autonomous controller, selected full Cost-Info, all-42 source map, geometry
 transport and common GR refinement remain open. The words do not establish
 continuous native gates or physical admission. No Lean or CI run is claimed
 for this finite checker, and `GR_closed=false`.
+
+## PR #402 intake validation snapshot at `076c886f`
+
+The complete cold-start over this committed snapshot found all 34/34 search
+case source sets, with 35 benchmark cases and 205 pinned/source references.
+The reproducible compact summary and its manifest are in
+[`architecture_intake_validation_2026-10-29_076c886f`](sources/d0_proof_architecture_formalization_2026-10-24/reports/architecture_intake_validation_2026-10-29_076c886f/).
+The summary is pinned to `076c886f76c015100ee21b8486e8d9804f90304f`; the raw
+runner output is retained by SHA-256 and byte count in its manifest.
+
+The separate 34-query process comparison is a retrieval measurement. The
+legacy assembly search surfaced none of its 18 explicitly expected sources;
+the current proof-architecture search surfaced 17/18. The single miss is the
+top-five retrieval query for the existing canonical AF family case; the full
+cold-start still found every required source set. The comparison reports ten
+owner-bearing queries and fourteen expected references without a direct
+assembly-owner or formal-support link. Those are navigation/coverage gaps,
+not mathematical failures or semantic acceptance. Their links still require
+the task's source-by-source review; the comparison expressly leaves that
+review manual.
+
+This validation snapshot does not complete the `WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION`
+worker scope. It adds no Lean proof or physical admission, and
+`GR_closed=false` remains in force.

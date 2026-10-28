@@ -1,0 +1,2888 @@
+{
+  "schema": "d0-proof-architecture-search-comparison-v2",
+  "snapshot_commit": "076c886f76c015100ee21b8486e8d9804f90304f",
+  "worktree_dirty": false,
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "957a9c67f56850c5a253eb2f679506dd03fc64b81931a1718ddb84704dc760bd",
+    "02_REGISTRY/assumptions.csv": "8bb15b667efcbb4b3c904df7713107e7356144c1554cef841454b8435a9d5939",
+    "02_REGISTRY/formal_support.csv": "310e3122634d3e8aab35c75665f376474f8581d59682541bd4c99fe934a7bb83",
+    "02_REGISTRY/aliases.csv": "776a7d786a1485923ddc52050e5df86b64424c78499bd8e0ae04383d0b7c033e",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "runner_sha256": "b36748084ab2fd801c01552041fe53d4babb71929c4a0766ff9bed569055a31a",
+  "query_fixture_sha256": "ac66abe91449aa41f0dcb1165d8fc5a576a5d79945bd1f0d47e4d6af28570d4f",
+  "comparison_scope": {
+    "legacy": "gr_assembly.search over the existing assembly result records",
+    "current": "proof_architecture search over structured authorities, five bounded text candidates, and exact-path links to existing assembly results and formal_support rows; assembly owner evidence and support-module locators are reported separately",
+    "questions": "one identical existing query per real cold-start case, chosen from an explicitly source-scoped query where available",
+    "context_measure": "serialized UTF-8 JSON answer bytes; a response-size proxy, not model-token or file-read accounting",
+    "semantic_limit": "search output alone does not establish owner correctness, hypothesis preservation, or whether new mathematics is required"
+  },
+  "metrics": {
+    "query_count": 34,
+    "query_count_with_explicit_source_scope": 18,
+    "expected_source_reference_count": 27,
+    "unique_expected_source_path_count": 15,
+    "current_scoped_queries_with_expected_source_assembly_owner_link": 1,
+    "current_expected_source_assembly_owner_link_count": 1,
+    "current_expected_source_references_with_assembly_owner_link": 1,
+    "current_expected_source_references_with_formal_support_locator": 12,
+    "current_expected_source_formal_support_locator_count": 46,
+    "current_unique_expected_source_paths_with_formal_support_locator": 5,
+    "current_expected_source_references_without_assembly_or_formal_support": 14,
+    "current_unique_expected_source_paths_without_assembly_or_formal_support": 9,
+    "current_scoped_queries_with_expected_source_header_owner_declaration": 1,
+    "current_expected_source_header_owner_declaration_count": 1,
+    "current_scoped_expected_sources_without_direct_assembly_owner_link": 26,
+    "legacy_scoped_queries_with_expected_source": 0,
+    "current_scoped_queries_with_expected_source": 17,
+    "legacy_serialized_answer_bytes_total": 68,
+    "current_serialized_answer_bytes_total": 732800,
+    "legacy_average_answer_bytes": 2.0,
+    "current_average_answer_bytes": 21552.9,
+    "legacy_owner_bearing_queries": 0,
+    "current_owner_bearing_queries": 10,
+    "semantic_review_required_for_all_queries": true
+  },
+  "cases": [
+    {
+      "case_id": "labelled-native-raising-inverse",
+      "query_index": 0,
+      "query": "native raising operator inverse null leg",
+      "query_sha256": "ad0c3b68e78ace36b94dcef215261ce7f6462c7b30ed5c3ba7bf97c0c04a6266",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md",
+          "tools/proof_architecture.py"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Geometry.A4DJuliaPrincipalFrameRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaNonNullGammaRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaRecoveryComposition",
+                "lean_file": "D0/Geometry/A4DJuliaRecoveryComposition.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
+            "source_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+            "source_blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "В старом [local inverse-PF J₂ word](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md)"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 1,
+        "text_candidate_count_not_in_scoped_source_set": 4,
+        "serialized_answer_bytes": 19719
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "positive-nonvacuum-recovery",
+      "query_index": 0,
+      "query": "positive nonvacuum harmonic cubic fixed nonlinear Brinkmann metric",
+      "query_sha256": "e1b6f8cff27a033b923ebd97a8f39f259d6eb4303fbf558b5c232d7cfc1aa22c",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "registered native response research owner #334"
+        ],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+          "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+          "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+          "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+          "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Geometry.NonvacuumBrinkmannStencil",
+                "lean_file": "D0/Geometry/NonvacuumBrinkmannStencil.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [
+              {
+                "line": 4,
+                "field": "Existing owner",
+                "value": "PR #334, `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`",
+                "status": "source_document_declaration_only"
+              }
+            ],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "16850557ba85a3cf648a3a425a4b41ac9c9658982bb1ac55336e3939b1b1f896",
+            "source_commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+            "source_blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 1,
+        "text_candidate_count_not_in_scoped_source_set": 4,
+        "serialized_answer_bytes": 35707
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "proper-lorentz-same-orientation-orbit",
+      "query_index": 0,
+      "query": "proper Lorentz same determinant orientation complete coframe link orbit coordinates",
+      "query_sha256": "d3469f98422c99c39bd27c3b75073ffd92b604c309a7095e64ace41b834d7e08",
+      "expected_sources": [
+        "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "existing CONTROL/main research owner"
+        ],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md"
+        ],
+        "expected_source_assembly_owner_links": [
+          {
+            "source": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+            "result_id": "metric-provenance",
+            "owner": "existing CONTROL/main research owner",
+            "interface": "star-metric-v1",
+            "evidence": [
+              {
+                "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+                "section_refs": [
+                  "L16: A. The selected finite action already owns a nonlinear metric carrier"
+                ]
+              },
+              {
+                "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+                "section_refs": [
+                  "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+                ]
+              }
+            ]
+          }
+        ],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+            "candidate_surfaced": true,
+            "owner_status": "declared_by_exact_assembly_evidence_link",
+            "owners": [
+              "existing CONTROL/main research owner"
+            ],
+            "assembly_results": [
+              {
+                "result_id": "metric-provenance",
+                "owner": "existing CONTROL/main research owner",
+                "statement": "The pinned J2 bridge reports two distinct units: (A) the nonlinear metric quotient coordinates Q_x=Theta_x eta Theta_x^T and dressed links K_(x,r)=Theta_x L_(x,r) Theta_(x+r)^(-1), including the exact endpoint isometry K_(x,r) Q_(x+r) K_(x,r)^T=Q_x for Lorentz links, and (B) the flat detector tangent DQ_flat[H(q)]=q. The Lean module proves finite raw-solder orbit completeness first for the full IsRoleLorentz group and, after adjoining equal relative determinant-orientation at every site, for its determinant-one proper subgroup. In both forms, on an all-site nondegenerate reference solder field, equality of every Q and K is equivalent to one site-dependent frame relating the coframe and link fields. It separately proves the full finite-matrix Frechet derivative and its transport through the arbitrary sitewise solder metric field map.",
+                "interface": "star-metric-v1",
+                "interface_contract": {
+                  "carrier": "Nondegenerate solder quotient Q=Theta eta Theta^T and dressed compatible links",
+                  "action": "Selected literal naked star action, including its actual finite metric response",
+                  "variations": "Genuine metric quotient tangents; complete coupled normal rescue remains separate",
+                  "source": "Geometric Euler response and declared smooth comparator; no full native matter binding",
+                  "normalization": "Sheet response -G/2 with the exact owner index/density convention",
+                  "refinement": "Fixed smooth realization; parametrix is not an exact full joint refining solution",
+                  "scope": "Accepted scoped geometry and partial smooth controls only",
+                  "id": "star-metric-v1"
+                },
+                "outcome": "positive",
+                "scope_level": "family",
+                "hypotheses": {},
+                "reported_state": "The source A and B units remain distinct. For A, the Lean adapter formalizes complete Q/K orbit coordinates on the finite raw-solder carrier, assuming IsUnit det(rawSolderMatrix N e x) at every reference site. The generic finiteGram_right_orbit_complete theorem in D0.Algebra is the shared orbit API and is directly consumed by the concrete IsRoleLorentz specialization; it requires an invertible reference frame but does not require eta to be invertible. The generic finiteGram_dressed_transport_compatible theorem now owns the frame-dressed endpoint Gram identity, and a4dDressedLink_metric_compatible specializes it with the existing IsRoleLorentz hypothesis and target-frame invertibility condition unchanged. The field theorem retains all-site nondegeneracy and refines to the determinant-one subgroup only when the two solder fields have equal determinant orientation at every site. This records proper determinant orientation but leaves time orientation unrestricted; the stronger SO+(1,3) source restriction is still open. The pinned source's endpoint isometry is proved for each link satisfying IsRoleLorentz, with invertibility required only at its target solder frame; the field corollary states the exact Q/K metric relation. For B, the source-convention adapter maps its frame by right multiplication with eta into the existing solder Gram carrier, retains the quadratic remainder, and proves the full finite-matrix Frechet derivative at the flat frame. The shared algebra layer now proves the generic finiteGram derivative at every frame; both the directional J2 path derivative and the flat matrix-variable derivative consume it by chain rule through t ↦ 1 + tH and H ↦ 1 + H. That derivative composes with the finite solder readout over arbitrary LocalCoframeField N perturbations and is collected into one Frechet derivative for the whole output field x ↦ solderMetricMatrix N e x, whose value at each site is exactly the existing coframeMetricReadout. Matrix derivatives use the Frobenius norm and full fields use inherited finite Pi norms. The selected-action-to-Lean-carrier map, global connection elimination, physical metric/source selection and independent C0 acceptance remain open; acceptance_inferred=false.",
+                "evidence": [
+                  {
+                    "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                    "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                    "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+                    "section_refs": [
+                      "L16: A. The selected finite action already owns a nonlinear metric carrier"
+                    ]
+                  },
+                  {
+                    "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                    "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                    "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+                    "section_refs": [
+                      "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+                    ]
+                  }
+                ],
+                "evidence_omitted": 0,
+                "declared_applications": [],
+                "applications_omitted": 0,
+                "scoped_attempts": [],
+                "attempts_omitted": 0
+              }
+            ],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+            "source_commit": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+            "source_blob": "e5e31819492d670c81fc4a2871e1ef8cfa205c08",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 1,
+        "text_candidate_count_not_in_scoped_source_set": 4,
+        "serialized_answer_bytes": 25360
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "finite-gram-affine-quadratic-expansion",
+      "query_index": 0,
+      "query": "finiteGram_add_smul_expand finite Gram expansion arbitrary base frame quadratic remainder",
+      "query_sha256": "2836625af6011f1b7bb12e5765f7809721fdb7e464c4f4c7d8d7c3be9fd7a9a2",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "existing CONTROL/main research owner"
+        ],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
+          "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 26612
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "finite-gram-frechet-derivative",
+      "query_index": 0,
+      "query": "finiteGram_hasFDerivAt finiteGramTangent arbitrary finite matrix frame two sided Frechet derivative",
+      "query_sha256": "a5f3b2a0bc94acd970b767b1f57adcd768ed63c053f4242ddca0b87c2e13da3c",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "existing CONTROL/main research owner"
+        ],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md",
+          "02_REGISTRY/gr_assembly/applications.json",
+          "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 24732
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "golden-step-vs-internal-ratio",
+      "query_index": 0,
+      "query": "Golden physical metric step internal Perron scale ratio native HJR countercontrol",
+      "query_sha256": "5ecd4e3831f867001b3732ca719ec3f06639c34fbae33d8378b4b7b5d8f55c22",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 18869
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "fixedright-stationary-and-minimum-scopes",
+      "query_index": 0,
+      "query": "exact curved native preparation original full16 Dirac fixedRIGHT128 R covector",
+      "query_sha256": "ee6c08087c89a03c0955448e5977c34e478adfff1a48b0ea9e2fb2d9dc060ef9",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_CURVED_REFERENCE128_FULL_HJR_PROTECTED_SOURCE_AND_PREPARATION_SADDLE_GATE_2026_10_20.md",
+          "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "a63fe848bcd39cbf5fa0cbb8d823cf68b4080d0e6a703fd726e6917970818e56",
+            "source_commit": "4873b3c245a91bd8c9cb25bceeb82662e9f62944",
+            "source_blob": "6395c736c54d0c0a704d22ffdf046dbfc2c6c84b",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "sources/d0_curved_native_preparation_2026-10-20/README.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "The packet [d0_curved_native_preparation_2026-10-20](sources/d0_curved_native_preparation_2026-10-20/README.md)"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md"
+        ],
+        "relevant_text_candidate_count": 1,
+        "text_candidate_count_not_in_scoped_source_set": 4,
+        "serialized_answer_bytes": 21013
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "same-fields-do-not-fix-price-source",
+      "query_index": 0,
+      "query": "C_port Z_n Phi_t mixed field cost source Julia recycling",
+      "query_sha256": "9b3f195be02f26540ab7fbc6f32c99a98f01b7e543b37a8393fb7667e0abcba5",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+          "02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/inputs/same_history_price.md",
+          "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+          "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/inputs/paid_port_history.md",
+          "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/clock_source_reduction.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "1318f8a3719bffd11c8d319a04beede4bd2c872365fc87960a1110c01a2274a7",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md"
+        ],
+        "relevant_text_candidate_count": 1,
+        "text_candidate_count_not_in_scoped_source_set": 4,
+        "serialized_answer_bytes": 14131
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "same-prefix-two-ending-prospective-price",
+      "query_index": 0,
+      "query": "same-prefix two-ending Julia odds equal continuation partition weights absolute Book anchor",
+      "query_sha256": "6f0f58ba5de6e18b5cb6b5bfab9d1aeaf72750874e605d3055900e13be7f57af",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+          "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/A4D_GLOBAL_327_BOOK_FISHER_CAR16_MAGNETIC_WICK_AND_DARK_REVIVAL_2026_10_20.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 18434
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "clock-dirac-incidence-curvature",
+      "query_index": 0,
+      "query": "chronological clock spatial CAR Dirac paired incidence d2 curvature complement modes",
+      "query_sha256": "9647ee26b215c604a17ec67b38895065c5d35f5287184c8a735d7aad78e363b5",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json",
+          "02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md",
+          "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.json",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 20963
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "gain-readiness-vs-trace-multiplicity",
+      "query_index": 0,
+      "query": "source gain readiness trace multiplicity",
+      "query_sha256": "18842a9d992862b002d0c353d3a17f8b89dfd290a03311199912143bb7b46134",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/sources/d0_334_closed_history_direct_delta_2026-10-28/inputs/02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+          "02_REGISTRY/research/sources/d0_334_closed_history_direct_delta_2026-10-28/upstream/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+          "02_REGISTRY/research/sources/d0_334_closed_history_direct_delta_2026-10-28/upstream/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 22687
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "conditional-transfer-does-not-select-execution",
+      "query_index": 0,
+      "query": "generic verification theory transfer Bellman optimal premise physical execution",
+      "query_sha256": "53f857e56fec6a86d714361d9cd15c3658d4041c69b35265594128f439adfb6c",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "PR #386 / WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER (composition executor)"
+        ],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
+          "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+          "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+          "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
+          "03_FORMALIZATION/D0/Foundation/VerificationCore.lean"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 33949
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "verification-kernel-transfer-outside-gr",
+      "query_index": 0,
+      "query": "verification_core representedRecord complete future kernel",
+      "query_sha256": "4e268e7acc15fed3733f109b8d834b3e7a66a071b77c5300f0348e8dd1ffe476",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "CONTROL result from PR #375; indexed as a scoped G0/constitutive boundary",
+          "PR #386 / WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER (composition executor)"
+        ],
+        "text_candidate_paths": [
+          "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+          "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md",
+          "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 46561
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "car-scaffolds-vs-hodge-operator-claims",
+      "query_index": 0,
+      "query": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 D0-ARCHIVE-CAR-DIRAC-SQUARE-001 actual carDirac hoppingCarDirac",
+      "query_sha256": "5d5c46109e5fcff5b975f1006b9840c3732584ceedbe4e11c22bbcd5ea20c83b",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution.json",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_2026-10-25.json",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 15148
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "top-hodge-inverse-spectral-outside-gr",
+      "query_index": 0,
+      "query": "top Hodge inverse spectral full D H M2 equal unordered positive tripartite zone sizes Vieta roots",
+      "query_sha256": "f350a2ffecdde623dbf0a117e432ff22327331b1a81d58cbf46e746125208493",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "CONTROL result from PR #375; indexed as a scoped G0/constitutive boundary"
+        ],
+        "text_candidate_paths": [
+          "03_FORMALIZATION/D0/Synthesis/TopHodgeInverseSpectralRigidity.lean",
+          "03_FORMALIZATION/D0/Synthesis/TopHodgeSpectralSceneReconstruction.lean",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
+          "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 24084
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "dense-operator-scene-reconstruction-outside-gr",
+      "query_index": 0,
+      "query": "dense operator scene 33 vertices triangle complete tripartite support rank",
+      "query_sha256": "c70aaaab98682ce1a18c91d6bac0ebdd6378be1bbf20f58b6237d32c5b2b70de",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "CONTROL result from PR #375; indexed as a scoped G0/constitutive boundary"
+        ],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "03_FORMALIZATION/D0/Synthesis/DenseOperatorSceneRigidity.lean",
+          "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+          "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 22615
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "scoped-nogo-vs-positive-existence",
+      "query_index": 0,
+      "query": "native affine probe no-go arbitrary smooth probes physical contrast",
+      "query_sha256": "49f5721cbab83a5523cbca545e1c090291dc2a25b6b06675c9f6b4cf7a065f3e",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_NATIVE_AFFINE_HISTORY_SCALAR_BOUNDARY.md",
+          "02_REGISTRY/research/A4D_NATIVE_CONNECTION_ACTION_BOUNDARY.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 15469
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "finite-affine-carrier-parameter-recovery",
+      "query_index": 0,
+      "query": "nilpotentAffineRep_injective",
+      "query_sha256": "bb127e8b8a5c02e28d769afbfc930080cbbb862784ed2a0b311a9341b9a2e8a2",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "03_FORMALIZATION/D0/Geometry/A4DNilpotentAffineMatterLift.lean",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_cold_start_2026-10-25.json"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 3,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 6210
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "finite-julia-null-chart-inverse",
+      "query_index": 3,
+      "query": "actual full-CAR full16 Julia raising entries null u-leg coframe proper links",
+      "query_sha256": "55a053d35e863089dfd15a06dbdb7b54d4fbd522ae49367347deb061f5bc9459",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_base_link_frechet.json"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Geometry.A4DJuliaPrincipalFrameRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaNonNullGammaRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaRecoveryComposition",
+                "lean_file": "D0/Geometry/A4DJuliaRecoveryComposition.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "7a08b20421a84ce993954baed35e61132bbe8157f958b9884fde7bcb84aa3f46",
+            "source_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+            "source_blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [
+                  "8.4",
+                  "8.5"
+                ],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "This is a **positive operational consumer** of an already constructed native source chain, not a geometric oracle. [Actual full-CAR operator reconstruction §§8."
+              },
+              {
+                "path": "A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [
+                  "7.1",
+                  "7.3"
+                ],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "The target of [strategic §7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) is the full native-price spin-2 Ward/Schur germ. Equations (18)–(19)"
+              },
+              {
+                "path": "A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [
+                  "7.1",
+                  "7.3"
+                ],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "The target of [strategic §7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) is the full native-price spin-2 Ward/Schur germ. Equations (18)–(19)"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 2,
+        "text_candidate_count_not_in_scoped_source_set": 3,
+        "serialized_answer_bytes": 25827
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "julia-query-principal-frame-coframe-recovery",
+      "query_index": 1,
+      "query": "Fbar equals U_mat transpose eta coframe inverse metric invariant IsRoleLorentz",
+      "query_sha256": "be4745247ce22e141886224e993db64282c75c0b50c8bf5e178f22f8501ec909",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Geometry.A4DJuliaPrincipalFrameRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaNonNullGammaRecovery",
+                "lean_file": "D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Geometry.A4DJuliaRecoveryComposition",
+                "lean_file": "D0/Geometry/A4DJuliaRecoveryComposition.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
+            "source_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+            "source_blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md#4-actual-two-step-price-with-the-original-readout-retained)",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "старый cut при обновлении gate/observer. [Chronology owner](A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md#4-actual-two-step-price-with-the-original-readout-retained)"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 1,
+        "text_candidate_count_not_in_scoped_source_set": 4,
+        "serialized_answer_bytes": 21311
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "finite-hermitian-adjoint-twisted-car-application",
+      "query_index": 0,
+      "query": "finiteHermitianAdjoint_unique coordinate finite Hermitian pairing conjugate transpose",
+      "query_sha256": "1bc06550ac65284196af5f4adad35f38e56959ed5fce249c7ac0f26189be5228",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "registered native response research owner #334"
+        ],
+        "text_candidate_paths": [
+          "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+          "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
+          "01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 22842
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "real-unit-profile-weighted-hermitian-bridge",
+      "query_index": 0,
+      "query": "finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint real unit profile",
+      "query_sha256": "c5185341408c86c4db24622e702a212e42fefeb3512c73943be5d57cf0e18275",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_equality_2026-10-25.json",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_weighted_unit_profile_adjoint_bridge_2026-10-25.json",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean",
+          "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 15913
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "native-weighted-dirac-matrix-application",
+      "query_index": 0,
+      "query": "weightedDiracMatrix_mulVec typed weighted Hodge Dirac linear map ArchiveCochainBasis",
+      "query_sha256": "a20f05893952bacdea639b41dfb1be19cc6eb5f9861c4cdb7200796503fe66cf",
+      "expected_sources": [],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean",
+          "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_cold_start_2026-10-25.json"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [],
+        "expected_sources_without_assembly_owner_link": [],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": null,
+        "serialized_answer_bytes": 14713
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "archive-phase-shift-reuses-transitive-permutation-theorem",
+      "query_index": 0,
+      "query": "ArchiveTopology abstract_shift_commute_implies_diagonal_constant shiftMatrix commute_with_shift_iterate",
+      "query_sha256": "c20c18d0e209d3d2ac2a3340f5114195f014a609aaa1e7a4890ee77a467ade79",
+      "expected_sources": [
+        "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+        "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+          "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
+          "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_shift_topology_current_declarations_2026-10-25.json"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+          "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Topology.ArchiveShiftTopology",
+                "lean_file": "D0/Topology/ArchiveShiftTopology.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "f6daf8f0ac5573b8be8d305ecf32f87f92b72f9b2276dd6f535a7465550114cc",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": []
+          },
+          {
+            "source": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "076007feb29e5ea9f699d8f6411467499c4ff00809f9d30ac6499f9de49f074e",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+          "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+        ],
+        "relevant_text_candidate_count": 2,
+        "text_candidate_count_not_in_scoped_source_set": 3,
+        "serialized_answer_bytes": 13631
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "fixed-sine-weak-readout-c0-pilot",
+      "query_index": 0,
+      "query": "archive_doubling_sine_weak_pairing_tendsto",
+      "query_sha256": "d1608cc59a80161dd8f5809b6fd2a71448d17fbab2aaae469b8514382b421653",
+      "expected_sources": [
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean",
+          "tools/c0_reconciliation.py"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 3,
+        "expected_source_hits": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Active.NonzeroMatterSourceNeutrality",
+                "lean_file": "D0/Active/NonzeroMatterSourceNeutrality.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Active.ScalarPoissonReduction",
+                "lean_file": "D0/Active/ScalarPoissonReduction.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FibonacciAFTower",
+                "lean_file": "D0/Algebra/FibonacciAFTower.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteGramTangent",
+                "lean_file": "D0/Algebra/FiniteGramTangent.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteCoordinateBasis",
+                "lean_file": "D0/Algebra/FiniteCoordinateBasis.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "86495ecb03a382ee44b13e77d12f64a3e394733fb05f964f151213b3e539cb10",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": []
+          },
+          {
+            "source": "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "13b45860c44d0d6f0a743d4fcb574bc4efb956bf1dae04ba6fbabc36050f1df2",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean"
+        ],
+        "relevant_text_candidate_count": 2,
+        "text_candidate_count_not_in_scoped_source_set": 1,
+        "serialized_answer_bytes": 6043
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "cyclic-af-return-without-extra-blank-flag",
+      "query_index": 0,
+      "query": "7dl cyclic AF original canonical regular input without extra blank flag 88 paired-profile calls 26G 2CX 60SourceI",
+      "query_sha256": "0c1e2ce1a2ed351438040378257e7394e0e9db27abff08d9fc7eb6975233d647",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "4d488ad22fe27d02f476eba81c960f9514ba288f6035b52aa5aef2aaae06e8be",
+            "source_commit": "3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9",
+            "source_blob": "363dee64772769eee25888a184b5edbdf64e83e9",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "native_execution.py",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "Input pins: incoming primary blob9e346103a15fb384988154cec5d2aa51d661a28d atd59ff834,2526305bytes/SHA2567bac13e93fa24ce96ceb5f6049011ae100c7cca0646b2545f9e0d47a"
+              }
+            ]
+          },
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Active.NonzeroMatterSourceNeutrality",
+                "lean_file": "D0/Active/NonzeroMatterSourceNeutrality.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Active.ScalarPoissonReduction",
+                "lean_file": "D0/Active/ScalarPoissonReduction.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FibonacciAFTower",
+                "lean_file": "D0/Algebra/FibonacciAFTower.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteGramTangent",
+                "lean_file": "D0/Algebra/FiniteGramTangent.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteCoordinateBasis",
+                "lean_file": "D0/Algebra/FiniteCoordinateBasis.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "86495ecb03a382ee44b13e77d12f64a3e394733fb05f964f151213b3e539cb10",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "commit": "d8d4e15488e483992fa63d6acc5d8053c2752ef5",
+                "blob": "c79e6019579f716c2935aee8de9314d0607b3a1a",
+                "section_refs": [
+                  "7"
+                ],
+                "pin_complete": true,
+                "hashes": [
+                  "d8d4e15488e483992fa63d6acc5d8053c2752ef5"
+                ],
+                "context": "[§7dm source and embedded checker/receipt](https://github.com/gvakhrushev/d0_15/blob/d8d4e15488e483992fa63d6acc5d8053c2752ef5/02_REGISTRY/research/A4D_NONVACUUM"
+              },
+              {
+                "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/check_binary_af.py",
+                "commit": "9f5b757f699d7310ea69c0c889037f614533b4f7",
+                "blob": "dafb228c94468ff83b73f62e0d5792eba832b948",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "9f5b757f699d7310ea69c0c889037f614533b4f7",
+                  "dafb228c94468ff83b73f62e0d5792eba832b948"
+                ],
+                "context": "The Literal Golden/CX/SourceI synthesis and its canonical AF-loop endpoint are checked with run-length-encoded primitive words and high-precision powers by the "
+              },
+              {
+                "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md",
+                "commit": "8cf4c25b4d3e34a3ce9e7e457049aacc918388d0",
+                "blob": "f8675130936e45d9718781d38ef5b762ebaf0eba",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "8cf4c25b4d3e34a3ce9e7e457049aacc918388d0"
+                ],
+                "context": "the [canonical AF proof at `8cf4c25b`](https://github.com/gvakhrushev/d0_15/blob/8cf4c25b4d3e34a3ce9e7e457049aacc918388d0/02_REGISTRY/research/sources/d0_canoni"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        ],
+        "relevant_text_candidate_count": 4,
+        "text_candidate_count_not_in_scoped_source_set": 1,
+        "serialized_answer_bytes": 21556
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "canonical-af-tower-source-transport",
+      "query_index": 0,
+      "query": "canonical AF tower source transport through every earlier cut positive unital P_i",
+      "query_sha256": "5f127c43b8fa256ed35218d11fddcdea3ad81a8c2dede338455ecad2a063c2b5",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md",
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "43c3bdcd9ecf5291e2486e794b0be300adc90078d00f45b7005bcad4097ac7d1",
+            "source_commit": "48500384e9a25b25a6a0f54911f5af50c2bc1625",
+            "source_blob": "d8a4c467c225587e88525b2d42dcb785e381b38d",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "sources/d0_cyclic_tower_source_2026-10-28/check_tower.py",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "[executed checker](sources/d0_cyclic_tower_source_2026-10-28/check_tower.py),"
+              },
+              {
+                "path": "sources/d0_cyclic_tower_source_2026-10-28/PROOF_RU.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "[Russian proof](sources/d0_cyclic_tower_source_2026-10-28/PROOF_RU.md),"
+              },
+              {
+                "path": "sources/d0_cyclic_tower_source_2026-10-28/result.json",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "[observed result](sources/d0_cyclic_tower_source_2026-10-28/result.json)."
+              }
+            ]
+          },
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Active.NonzeroMatterSourceNeutrality",
+                "lean_file": "D0/Active/NonzeroMatterSourceNeutrality.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Active.ScalarPoissonReduction",
+                "lean_file": "D0/Active/ScalarPoissonReduction.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FibonacciAFTower",
+                "lean_file": "D0/Algebra/FibonacciAFTower.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteGramTangent",
+                "lean_file": "D0/Algebra/FiniteGramTangent.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteCoordinateBasis",
+                "lean_file": "D0/Algebra/FiniteCoordinateBasis.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "86495ecb03a382ee44b13e77d12f64a3e394733fb05f964f151213b3e539cb10",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md",
+                "commit": "48500384e9a25b25a6a0f54911f5af50c2bc1625",
+                "blob": "d8a4c467c225587e88525b2d42dcb785e381b38d",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "48500384e9a25b25a6a0f54911f5af50c2bc1625"
+                ],
+                "context": "[owner's source memorandum](https://github.com/gvakhrushev/d0_15/blob/48500384e9a25b25a6a0f54911f5af50c2bc1625/02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURC"
+              },
+              {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "commit": "d8d4e15488e483992fa63d6acc5d8053c2752ef5",
+                "blob": "c79e6019579f716c2935aee8de9314d0607b3a1a",
+                "section_refs": [
+                  "7"
+                ],
+                "pin_complete": true,
+                "hashes": [
+                  "d8d4e15488e483992fa63d6acc5d8053c2752ef5"
+                ],
+                "context": "[§7dm source and embedded checker/receipt](https://github.com/gvakhrushev/d0_15/blob/d8d4e15488e483992fa63d6acc5d8053c2752ef5/02_REGISTRY/research/A4D_NONVACUUM"
+              },
+              {
+                "path": "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "| `03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean` | `aacfc863ef18e774e6f97e697e2c593a0862ede76e1be1d1e333a2469ce53f8b` |"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md"
+        ],
+        "relevant_text_candidate_count": 2,
+        "text_candidate_count_not_in_scoped_source_set": 3,
+        "serialized_answer_bytes": 22911
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "nontrivial-canonical-prefix-source-correction",
+      "query_index": 0,
+      "query": "7dm retain nontrivial original prefix canonical AF old cut source correction DJ/w 0.00378462083186945",
+      "query_sha256": "ef9e1a9b670b0c6c15e1cac4fa0391894be25b177153cec064935842b07f6a35",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "4d488ad22fe27d02f476eba81c960f9514ba288f6035b52aa5aef2aaae06e8be",
+            "source_commit": "3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9",
+            "source_blob": "363dee64772769eee25888a184b5edbdf64e83e9",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "native_execution.py",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "Before U_sigma, the full-column identity j_record^* D_B^* Pi_0 D_B j_record=P_B0 holds on the ENTIRE original input/work space, not only the prepared branch. Th"
+              }
+            ]
+          },
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Active.NonzeroMatterSourceNeutrality",
+                "lean_file": "D0/Active/NonzeroMatterSourceNeutrality.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Active.ScalarPoissonReduction",
+                "lean_file": "D0/Active/ScalarPoissonReduction.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FibonacciAFTower",
+                "lean_file": "D0/Algebra/FibonacciAFTower.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteGramTangent",
+                "lean_file": "D0/Algebra/FiniteGramTangent.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteCoordinateBasis",
+                "lean_file": "D0/Algebra/FiniteCoordinateBasis.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "86495ecb03a382ee44b13e77d12f64a3e394733fb05f964f151213b3e539cb10",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "commit": "d8d4e15488e483992fa63d6acc5d8053c2752ef5",
+                "blob": "c79e6019579f716c2935aee8de9314d0607b3a1a",
+                "section_refs": [
+                  "7"
+                ],
+                "pin_complete": true,
+                "hashes": [
+                  "d8d4e15488e483992fa63d6acc5d8053c2752ef5"
+                ],
+                "context": "[§7dm source and embedded checker/receipt](https://github.com/gvakhrushev/d0_15/blob/d8d4e15488e483992fa63d6acc5d8053c2752ef5/02_REGISTRY/research/A4D_NONVACUUM"
+              },
+              {
+                "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+                "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+                "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+                "section_refs": [
+                  "8.5",
+                  "5.1"
+                ],
+                "pin_complete": true,
+                "hashes": [
+                  "fe5cf335da04cac14e50407b03f98b96be17dc52",
+                  "1c8d59e5533b443d9a015dc4512cfbc160ae7e62"
+                ],
+                "context": "For the direct query `Перенос и тетрада восстанавливаются из самого native raising operator`, use §8.4 of `02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_"
+              },
+              {
+                "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/check_binary_af.py",
+                "commit": "9f5b757f699d7310ea69c0c889037f614533b4f7",
+                "blob": "dafb228c94468ff83b73f62e0d5792eba832b948",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "9f5b757f699d7310ea69c0c889037f614533b4f7",
+                  "dafb228c94468ff83b73f62e0d5792eba832b948"
+                ],
+                "context": "The Literal Golden/CX/SourceI synthesis and its canonical AF-loop endpoint are checked with run-length-encoded primitive words and high-precision powers by the "
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        ],
+        "relevant_text_candidate_count": 4,
+        "text_candidate_count_not_in_scoped_source_set": 1,
+        "serialized_answer_bytes": 22234
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "canonical-binary-af-endpoint-and-finite-source",
+      "query_index": 0,
+      "query": "binary AF common inventory G CX SourceI 107529216 1154 132 original regular modes 33448 65536",
+      "query_sha256": "92c218aa6dd52bb9c9563b65b256f23a9c8250766c52b045c3a2cf0e2f0c6771",
+      "expected_sources": [
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/A4D_BINARY_AF_LOOP_FINITE_SOURCE_2026_10_28.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Active.NonzeroMatterSourceNeutrality",
+                "lean_file": "D0/Active/NonzeroMatterSourceNeutrality.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Active.ScalarPoissonReduction",
+                "lean_file": "D0/Active/ScalarPoissonReduction.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FibonacciAFTower",
+                "lean_file": "D0/Algebra/FibonacciAFTower.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteGramTangent",
+                "lean_file": "D0/Algebra/FiniteGramTangent.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteCoordinateBasis",
+                "lean_file": "D0/Algebra/FiniteCoordinateBasis.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "86495ecb03a382ee44b13e77d12f64a3e394733fb05f964f151213b3e539cb10",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/check_binary_af.py",
+                "commit": "9f5b757f699d7310ea69c0c889037f614533b4f7",
+                "blob": "dafb228c94468ff83b73f62e0d5792eba832b948",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "9f5b757f699d7310ea69c0c889037f614533b4f7",
+                  "dafb228c94468ff83b73f62e0d5792eba832b948"
+                ],
+                "context": "The Literal Golden/CX/SourceI synthesis and its canonical AF-loop endpoint are checked with run-length-encoded primitive words and high-precision powers by the "
+              },
+              {
+                "path": "02_REGISTRY/research/A4D_BINARY_AF_LOOP_FINITE_SOURCE_2026_10_28.md",
+                "commit": "5a6d10031efc97dd7d02c43cf9568201dbc2ab85",
+                "blob": "dba92719a208aed5245329060b2aadc6c08c3dbe",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "5a6d10031efc97dd7d02c43cf9568201dbc2ab85"
+                ],
+                "context": "[`A4D_BINARY_AF_LOOP_FINITE_SOURCE_2026_10_28.md`](https://github.com/gvakhrushev/d0_15/blob/5a6d10031efc97dd7d02c43cf9568201dbc2ab85/02_REGISTRY/research/A4D_B"
+              },
+              {
+                "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/RUN_RECEIPT.json",
+                "commit": "56672c24a78d95c3a13a095223a18fc7ad84811a",
+                "blob": "e6673d32966dec54ed7712e0070d367495f41b16",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "56672c24a78d95c3a13a095223a18fc7ad84811a",
+                  "e6673d32966dec54ed7712e0070d367495f41b16"
+                ],
+                "context": "The binary word receipt confirms RLE files in the user archive and ordinary, optimized, and repeat outputs matching; see [`RUN_RECEIPT.json`](https://github.com"
+              }
+            ]
+          },
+          {
+            "source": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "bc2addf30982c3c8ba219358d63f7913485c6877763c3e65dd824766b3620f1a",
+            "source_commit": "9f5b757f699d7310ea69c0c889037f614533b4f7",
+            "source_blob": "52a9dd556782263ca64b9210c2a9d32cb5df045e",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json"
+        ],
+        "relevant_text_candidate_count": 2,
+        "text_candidate_count_not_in_scoped_source_set": 3,
+        "serialized_answer_bytes": 18446
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "paid-binary-input-full-same-execution-book-price",
+      "query_index": 0,
+      "query": "generated binary input literal forward words complete Book price",
+      "query_sha256": "e18f8fc19a068e66a03df7b56844e5ef7757f168e525daa7a7ec0cf4d5ff5bb9",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [
+          "CONTROL result from PR #375; indexed as a scoped G0/constitutive boundary",
+          "Open #334; typed bridge at fb5d6a5; conditional selector at 9ef8f99"
+        ],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md",
+          "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_NATIVE_CLOCK_FULL_PRICE_COMPILATION_AND_FINITE_TEST_RECOVERY_2026_10_27.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "432d151e78dbedb56312f1caa27d1d35d2c1d460d176739d8797f538c87d641c",
+            "source_commit": "7c079c0180de6e6e12edbd8e79c4628f5048deae",
+            "source_blob": "7cc94351706b15859d1719aed7160b77314ac4ca",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "native_execution.py",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "The decisive check below executes all32 fibre columns over the exact Golden number field, validates both literal words and their true inventories, verifies all3"
+              },
+              {
+                "path": "book_price.py",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "The decisive check below executes all32 fibre columns over the exact Golden number field, validates both literal words and their true inventories, verifies all3"
+              },
+              {
+                "path": "BOOK_MAP.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "The decisive check below executes all32 fibre columns over the exact Golden number field, validates both literal words and their true inventories, verifies all3"
+              }
+            ]
+          },
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": false,
+            "owner_status": "candidate_not_surfaced",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "relevant_text_candidate_count": 1,
+        "text_candidate_count_not_in_scoped_source_set": 4,
+        "serialized_answer_bytes": 34118
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "native-stationary-recording-seed-whole-word-source",
+      "query_index": 0,
+      "query": "native stationary recording seed whole word source full Book 496 real skew directions",
+      "query_sha256": "0107a8cf6ad61bc803f53e95404f48febb54a390659d73db3b439ccf575b7539",
+      "expected_sources": [
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py",
+          "02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Active.NonzeroMatterSourceNeutrality",
+                "lean_file": "D0/Active/NonzeroMatterSourceNeutrality.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Active.ScalarPoissonReduction",
+                "lean_file": "D0/Active/ScalarPoissonReduction.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FibonacciAFTower",
+                "lean_file": "D0/Algebra/FibonacciAFTower.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteGramTangent",
+                "lean_file": "D0/Algebra/FiniteGramTangent.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteCoordinateBasis",
+                "lean_file": "D0/Algebra/FiniteCoordinateBasis.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "86495ecb03a382ee44b13e77d12f64a3e394733fb05f964f151213b3e539cb10",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py",
+                "commit": "aeb722a162c008e5e23a7fde39479eb62e3296cf",
+                "blob": "789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "aeb722a162c008e5e23a7fde39479eb62e3296cf",
+                  "789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b"
+                ],
+                "context": "Exact source locator: the native stationary recording seed, whole-word source, full Book control, and all 496 real skew directions are checked by [#334 `check_s"
+              },
+              {
+                "path": "check_seed.py",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [
+                  "aeb722a162c008e5e23a7fde39479eb62e3296cf",
+                  "789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b"
+                ],
+                "context": "Exact source locator: the native stationary recording seed, whole-word source, full Book control, and all 496 real skew directions are checked by [#334 `check_s"
+              },
+              {
+                "path": "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md",
+                "commit": "d9ef0b0558fcabbc097ecf2024a10b31ec0b5852",
+                "blob": "1766cb44e82a276d14a5546257b85a59beeab506",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "d9ef0b0558fcabbc097ecf2024a10b31ec0b5852"
+                ],
+                "context": "proof: [composition memo at `d9ef0b05`](https://github.com/gvakhrushev/d0_15/blob/d9ef0b0558fcabbc097ecf2024a10b31ec0b5852/02_REGISTRY/research/A4D_NATIVE_STATI"
+              }
+            ]
+          },
+          {
+            "source": "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120",
+            "source_commit": "aeb722a162c008e5e23a7fde39479eb62e3296cf",
+            "source_blob": "789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py"
+        ],
+        "relevant_text_candidate_count": 2,
+        "text_candidate_count_not_in_scoped_source_set": 3,
+        "serialized_answer_bytes": 20403
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "canonical-af-stationary-family-archive-seed",
+      "query_index": 0,
+      "query": "canonical Fibonacci AF tower A2 M3 M2 to A5 M13 M8 stationary reflection archive exact Z[p] GNS rank104",
+      "query_sha256": "05238a96a702f8158edb5a4c35c4910b625b021020ae8bca16847cee1bdd8ca8",
+      "expected_sources": [
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_STATIONARY_FAMILY_2026_10_28.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md",
+          "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": false,
+            "owner_status": "candidate_not_surfaced",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "relevant_text_candidate_count": 0,
+        "text_candidate_count_not_in_scoped_source_set": 5,
+        "serialized_answer_bytes": 19871
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "archive-preserving-binary-seed-full-query-source",
+      "query_index": 0,
+      "query": "archive-preserving seed CX(6,12) original A0 archive complete Spin oldRIGHT 16-wire boundary rank16",
+      "query_sha256": "8305dfa918f655baf4f10cdf0ef66d6caa249460af709745e77d3ad449a76564",
+      "expected_sources": [
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/sources/d0_334_closed_history_direct_delta_2026-10-28/upstream/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [
+              {
+                "lean_module": "D0.Active.NonzeroMatterSourceNeutrality",
+                "lean_file": "D0/Active/NonzeroMatterSourceNeutrality.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Active.ScalarPoissonReduction",
+                "lean_file": "D0/Active/ScalarPoissonReduction.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FibonacciAFTower",
+                "lean_file": "D0/Algebra/FibonacciAFTower.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteGramTangent",
+                "lean_file": "D0/Algebra/FiniteGramTangent.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              },
+              {
+                "lean_module": "D0.Algebra.FiniteCoordinateBasis",
+                "lean_file": "D0/Algebra/FiniteCoordinateBasis.lean",
+                "role": "EXPLICIT_SUPPORT",
+                "link_basis": "exact member of formal_support.referenced_by",
+                "status": "metadata_locator_only"
+              }
+            ],
+            "source_header_owner_declarations": [],
+            "source_origin": "workspace",
+            "source_sha256": "86495ecb03a382ee44b13e77d12f64a3e394733fb05f964f151213b3e539cb10",
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null,
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/RUN_RECEIPT.json",
+                "commit": "56672c24a78d95c3a13a095223a18fc7ad84811a",
+                "blob": "e6673d32966dec54ed7712e0070d367495f41b16",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "56672c24a78d95c3a13a095223a18fc7ad84811a",
+                  "e6673d32966dec54ed7712e0070d367495f41b16"
+                ],
+                "context": "The binary word receipt confirms RLE files in the user archive and ordinary, optimized, and repeat outputs matching; see [`RUN_RECEIPT.json`](https://github.com"
+              },
+              {
+                "path": "RUN_RECEIPT.json",
+                "commit": "56672c24a78d95c3a13a095223a18fc7ad84811a",
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "56672c24a78d95c3a13a095223a18fc7ad84811a",
+                  "e6673d32966dec54ed7712e0070d367495f41b16"
+                ],
+                "context": "The binary word receipt confirms RLE files in the user archive and ordinary, optimized, and repeat outputs matching; see [`RUN_RECEIPT.json`](https://github.com"
+              },
+              {
+                "path": "02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/check_archive_domain.py",
+                "commit": "d5a32be3b7d7bab8006c5af588a0ea4e21dce6c3",
+                "blob": "5664d79a7a241b1373fb45e4065e78888301b361",
+                "section_refs": [],
+                "pin_complete": true,
+                "hashes": [
+                  "d5a32be3b7d7bab8006c5af588a0ea4e21dce6c3"
+                ],
+                "context": "- The finite archive-algebra domain audit on the original Fibonacci inclusions is executed by [check_archive_domain.py](https://github.com/gvakhrushev/d0_15/blo"
+              }
+            ]
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [],
+        "relevant_text_candidate_count": 1,
+        "text_candidate_count_not_in_scoped_source_set": 4,
+        "serialized_answer_bytes": 21640
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    },
+    {
+      "case_id": "canonical-archive-law-and-variation-domain",
+      "query_index": 0,
+      "query": "canonical archive law compatibility variation domain full old effect relative commutant",
+      "query_sha256": "31bf82edff504be5b68c6b96732f98dbca9ae34b7eefc4c3503258842c241796",
+      "expected_sources": [
+        "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md",
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+      ],
+      "legacy": {
+        "result_ids": [],
+        "owners": [],
+        "candidate_count": 0,
+        "expected_source_hits": [],
+        "relevant_candidate_count": 0,
+        "candidate_count_not_in_scoped_source_set": 0,
+        "serialized_answer_bytes": 2
+      },
+      "current": {
+        "structured_matches": [],
+        "owners": [],
+        "text_candidate_paths": [
+          "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md",
+          "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/check_archive_domain.py",
+          "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
+          "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
+        ],
+        "structured_match_count": 0,
+        "text_candidate_count": 5,
+        "expected_source_hits": [
+          "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md"
+        ],
+        "expected_source_assembly_owner_links": [],
+        "expected_source_link_details": [
+          {
+            "source": "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md",
+            "candidate_surfaced": true,
+            "owner_status": "no_exact_assembly_owner_link",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_origin": "pinned_snapshot",
+            "source_sha256": "372bfb136bb622cdea7b8958caf493bd3057a52ee2aecd5ffafb9453cb3f9aad",
+            "source_commit": "dc3d8bad99eb55250dd0db24d96ed8a6992c2a16",
+            "source_blob": "7b835491a6fbc58d81af295d0c6d61a235395a61",
+            "pin_status": "verified",
+            "direct_content": true,
+            "source_refs": [
+              {
+                "path": "sources/d0_archive_naturality_domain_2026-10-28/result.json",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "[actual result](sources/d0_archive_naturality_domain_2026-10-28/result.json)."
+              },
+              {
+                "path": "sources/d0_archive_naturality_domain_2026-10-28/PROOF_RU.md",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "[Full Russian proof](sources/d0_archive_naturality_domain_2026-10-28/PROOF_RU.md),"
+              },
+              {
+                "path": "sources/d0_archive_naturality_domain_2026-10-28/check_archive_domain.py",
+                "commit": null,
+                "blob": null,
+                "section_refs": [],
+                "pin_complete": false,
+                "hashes": [],
+                "context": "[executed checker](sources/d0_archive_naturality_domain_2026-10-28/check_archive_domain.py),"
+              }
+            ]
+          },
+          {
+            "source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "candidate_surfaced": false,
+            "owner_status": "candidate_not_surfaced",
+            "owners": [],
+            "assembly_results": [],
+            "formal_support_locators": [],
+            "source_header_owner_declarations": [],
+            "source_refs": []
+          }
+        ],
+        "expected_sources_without_assembly_owner_link": [
+          "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "expected_sources_without_assembly_or_formal_support": [
+          "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "relevant_text_candidate_count": 1,
+        "text_candidate_count_not_in_scoped_source_set": 4,
+        "serialized_answer_bytes": 19078
+      },
+      "semantic_review": {
+        "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
+        "hypothesis_preservation": "not_assessed_by_search_output",
+        "new_mathematics_required": "not_assessed_by_search_output"
+      }
+    }
+  ]
+}
