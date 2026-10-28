@@ -18294,3 +18294,117 @@ Final local work, agent protocol, gravity assembly and repository guards
 pass; repository warnings0, active assembly54/54 and no scientific promotion.
 Exact prior-byte preservation and embedded executed checker/receipt identity
 pass. These are local checks, not CI or an independent physical acceptance.
+
+### 29 October: exact native return-record compiler and independent upstream preparation
+
+Phase: native realization / final composition, SAME Draft #334 and
+`constitutive/native-programme-v1`. Scientific input4b30fcb4d; the previous
+goal turn was progress: its16-call source-completion proof was published.
+This checkpoint applies that result to an EXISTING complete native word
+and gives the generic finite compiler map consumed by the field route.
+Write paths remain this brief and the same-representative primary artifact,
+new §7ds1039--1046. No new task/result node or physical selector.
+
+**Named parent substitution from7dr1037.** The exact function
+complete_return_record derives every used ordinary processing blank A
+from the existing native word and consumes one genuinely initialized,
+unused reserve r(a) for each. It emits C;W;C, where C is the product of
+the original CX(a,r(a)) calls. Both layers are paid. The unchanged native
+validator checks the actual width, source frame, oldRIGHT and all gates;
+used, missing and unprepared reserve inputs are rejected. No new native
+primitive, pure state, arbitrary rotation or uncharged inverse is created.
+
+For the actual input i, P=i i*, and real joint zero-record event M,
+
+    K_rec=K_original,
+    E_0=i*U_rec* M U_rec i=K_original* K_original,
+    Delta=E_0-K_rec* K_rec=0.
+
+These are all-input operator equalities for ANY old endpoint on the
+specified work, including a nonscalar imperfect compiler. The old field
+preparations/readers and every old intermediate state are preserved at
+their explicit shifted clock positions. Thus the former positive-gap
+application is solved EXACTLY on this initialized ordinary-blank sector,
+without inferring a derivative estimate from a small endpoint value.
+
+**Whole price and all independent controls.** If the COMPLETE old endpoint
+is the homogeneous INTERNAL reflection, so is C U C. Its complete heat
+first covector is zero and its actual absolute heat uses the new true
+N+2|A|. The whole H+J source equals
+-zeta Tr[((1-zeta)I+zeta K*K)^(-1) D E_0] on EVERY endpoint direction.
+Both copy layers may vary independently; the proof uses the actual zero
+gap at the base, not a mechanical inverse constraint. Every old control
+source transfers identically, with the original coefficient, trace, norm
+and field/apparatus remainders. A new COPY fault changing the real report
+keeps a nonzero source; a genuinely task-preserving variation annihilates it.
+
+For a NONREFLECTIVE old past, the return identity remains exact but the
+new-clock heat source remains explicit. Conjugation gives H_(N+2|A|)(U),
+not H_N(U). Neither that remainder nor extra physical clock/Info/work terms
+are discarded. This applies the regular-source owner at its real hypotheses.
+
+**Independent upstream preparation.** Reflection plus saturation gives
+i*U_rec M=K i*. For an independent original-work unitary V before the
+first copy, keeping the real record blank sector, the corner is K(i*V i).
+At V=I every such first source is exactly zero, without fixing the old
+processing blanks or linking inverse legs. Equivalently the full upstream
+cotangent compressed to M is zero. The original field preparers stay
+INSIDE W and retain their source; moving them outside to kill that source
+is not an allowed transport. Separate initial record supply, rank and
+record-frame changes keep their own obligations.
+
+**Actual same-boundary applications.** The existing31-call query uses
+processing blanks0,11,12. Its unused original RIGHT7,8,9 supply the three
+pointers; the initial16 wires,12 blanks and rank16 remain unchanged. The
+emitted37-call completion has25CX+2G+10SourceI. Its mirror has the same
+inventory and all eight identical record-effect operators, with different
+coherent terminal WORK states. Both full spectra and prices are equal.
+All old LEFT labels and Spin/oldRIGHT observables remain fixed.
+
+A genuine18-call R_word;R_inverse_word upstream identity gives a55-call
+execution; ALL18 preparation occurrences have independently zero source.
+A literal alternative replaces that prefix by R_word;R_word;SourceI^4.
+Both have37CX+4G+14SourceI, the same initial boundary, full retained-record
+law and exact heat. The alternative's complete price is higher by
+8log[(1-zeta+zeta p^6)/(1-zeta+zeta p^12)], strictly about4.01477956346e-7.
+This is a real finite same-task comparison, not an arbitrary angle scan.
+
+**Actual carrier and price.** The512 active columns retain128 thermal
+spectators; only the actual oldRIGHT2 multiplies input rank8 to16. At N37
+all1030553600 Hodge modes remain, and B is about27.05459937490956. It is
+about0.23160530380703 above N31 because the new ticks are paid. At N55
+all1531904000 modes remain and B_base is about27.57351370355735. No clock
+baseline, failed outcome, workspace or input multiplicity is dropped.
+
+**Decisive checks.** 279 checks pass in ordinary and optimized executions;
+JSON bytes match and both stderr files are empty. The exact calculation
+uses all512 active columns over QQ(sqrt(p)), original archive matrix units,
+all input-effect coherences, the original shifted prefixes, actual37
+generated cuts, the full record/return cotangent, all37 occurrence maps
+and all18 independent upstream rows. A missing query copy has a strictly
+positive gap and a surviving same-record source. One-sided copying loses
+the reflection identity. A separate rational nonscalar/non-Hermitian
+control checks the general return theorem and is not called a native gate.
+
+Checker SHA256
+`ea01927ce92fbe64f80ca62395d13b28d56c4508626cd364603edd275f2000e8`;
+receipt SHA256
+`5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e`.
+
+**Consumer and remaining premises.** The7cq direct-click/read-once graph
+and regular apparatus-source owner consume the exact compiler map with
+their original nonlinear field functional, decoder, full42 coordinates,
+gain and controlled remainders. A larger compiler still needs its actual
+unused reserve map, full width and new-clock calibration. The canonical
+AF/Julia family keeps its different carrier and native-admission problem.
+The physical comparison domain, task/record supply, selected full Book03
+Cost-Info, independent clock/boundary equations and common native refinement
+remain open. No new geometric root, large compiler, canonical suite or
+Lean replay, and no assembly acceptance, Ready state, merge or GR promotion.
+`GR_closed=false`; the full user goal stays active.
+
+Final affected local work, agent protocol, gravity assembly and repository
+guards pass; repository warnings0, assembly54/54 and no scientific promotion.
+Exact prior-byte preservation, embedded executed-source/receipt identity and
+diff whitespace pass. No CI success or independent physical acceptance is
+inferred from these local checks.
