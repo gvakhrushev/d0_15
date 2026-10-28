@@ -12334,6 +12334,16 @@ build passes **4,768 Lake jobs** at Lean source digest
 [build provenance receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_nonlinear.json)
 has SHA-256
 `7be8482f0828023552b06869d04d19a11681ba9c363b4ff82dc79f3d50960b82`.
+The [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/closed_history_nonlinear_dust_declarations_2026-10-28.json)
+has SHA-256
+`1216e3e983e7de80123aae95ad5cb2950b8dc0cdbe52104838c09d2c07e302b5` and
+records 41 elaborated declarations from the module at clean snapshot
+`ae789e27e20ffaddcfb9dedf4f12ad8c005527ae` (`worktree_dirty=false`), Lean
+source digest `5e53922308a6b99ba7b68940ddd777acee1d2fb797227bebfe009a7d1739c20d`.
+Its axiom union is `Classical.choice`, `Quot.sound`, and `propext`; no
+`sorryAx` or custom axiom appears. The compiled type for
+`originalClick_trace_unique_negative_branch` retains the three coefficient
+sign conditions and the actual trace-source equation as premises.
 The new module emits no linter warnings; the aggregate build retains existing
 warnings elsewhere in the import closure. Generated views pass; repository
 validation reports 234 formal-support rows and a 957-module `D0.All` closure

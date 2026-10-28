@@ -638,3 +638,7 @@ and the integrated `D0.All` build passed 4,768 Lake jobs at source digest
 `5e53922308a6b99ba7b68940ddd777acee1d2fb797227bebfe009a7d1739c20d`.
 Repository validation reports 234 formal-support rows and 957 generated
 imports with zero warnings; the debt audit remains at five baseline findings.
+The clean-snapshot [declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/closed_history_nonlinear_dust_declarations_2026-10-28.json)
+records 41 elaborated declarations at `ae789e27` and the standard axiom union
+`Classical.choice`, `Quot.sound`, and `propext`; the directly applied
+uniqueness theorem retains all three coefficient-sign premises.
