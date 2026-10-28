@@ -13957,3 +13957,104 @@ twelve blanks, select this execution, repair the prior `7dn` history, replay
 the large `7do` preparation, identify a geometric source, derive the complete
 physical variation domain, or discharge the future QUERY source. Lean and CI
 were not run for this research result. `GR_closed=false`.
+
+## #334 continuation at `d200d411` — canonical AF stationary family and archive criterion
+
+The next #334 increment adds a second, source-distinct mathematical application:
+the [canonical AF proof at `8cf4c25b`](https://github.com/gvakhrushev/d0_15/blob/8cf4c25b4d3e34a3ce9e7e457049aacc918388d0/02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md),
+the [checker at `6415f5c8`](https://github.com/gvakhrushev/d0_15/blob/6415f5c8e106e48dd20c2bf72d625b33f52b2360/02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/check_canonical_seed.py)
+with status `PASS_CANONICAL_AF_STATIONARY_REFLECTIONS` and 1,970 checks,
+the [executed result JSON at `d200d411` with fields `all_complex_left_directions_checked=233` and `all128_protected_archive_units_checked=128`](https://github.com/gvakhrushev/d0_15/blob/d200d411bce62fe42fe93096d1b36319936561db/02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/result.json),
+and the [same-owner application memo at `185ab21c`](https://github.com/gvakhrushev/d0_15/blob/185ab21cb165cbf420291a6d8a2056dc366e5275/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md).
+The associated [task checkpoint](https://github.com/gvakhrushev/d0_15/blob/185ab21cb165cbf420291a6d8a2056dc366e5275/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md)
+keeps this under the existing #334 owner; it is not a new result node or
+physical action.
+
+The incoming [matched-preparation memo at `185ab21c`](https://github.com/gvakhrushev/d0_15/blob/185ab21cb165cbf420291a6d8a2056dc366e5275/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md)
+supplies the original $A_0$ archive law and the prior `7do` preparation-source
+comparison consumed here. The [existing #334 task brief at the same checkpoint](https://github.com/gvakhrushev/d0_15/blob/185ab21cb165cbf420291a6d8a2056dc366e5275/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md)
+retains that archive and preparation premise with its parent work key and
+application checkpoint.
+
+The [five-call binary-seed memo at `d9ef0b05`](https://github.com/gvakhrushev/d0_15/blob/d9ef0b0558fcabbc097ecf2024a10b31ec0b5852/02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md)
+contains the exact native stationary recording seed, its whole-word source,
+scalar-return future control and 496 real skew directions; it is a distinct
+physical boundary. The canonical AF seed here keeps the fixed $A_0$ archive
+and requires even kernel parity for each inherited label.
+
+The mathematical input is the original Fibonacci AF tower with its own trace,
+conditional expectation and canonical GNS inclusion. It changes the earlier
+binary rank-16 boundary to the specified $A_2=M_3\oplus M_2\to A_5=M_{13}\oplus
+M_8$ boundary, retaining the full regular right columns and the
+$\mathrm{Spin}_4\times\mathrm{oldRIGHT}_2$ spectator multiplicity. On $A_2$, set
+$C=(\operatorname{diag}(0,1,0),I_2)$. The exhibited self-adjoint involution
+$W\in A_5$ has exact conditional expectation $E_{2,5}(W)=C$ in
+$\mathbb Z[p]$, where $p=(\sqrt5-1)/2$. Its path transpositions preserve
+the original $A_0\otimes M_8$ archive algebra. This is an AF-algebra
+element, not a declared G/CX/SourceI word; the canonical GNS inclusion
+does not prove that a physical device supplies this input.
+
+The owned stationary-prefix criterion is consumed directly: for a reflected
+endpoint, the full return source vanishes on the complete endpoint chart
+exactly when $C^3=C$. The AF construction proves existence at a deeper level
+exactly when the kernel dimension is even in each old central type. For the
+stronger fixed-$A_0$ archive condition, that parity must hold separately in
+each inherited label. $A_2\to A_5$ is the first exhibited archive-compatible
+nontrivial seed on this tower. The checker classifies all 243 old diagonal
+sign patterns (70 constructible, 173 parity-excluded; 40 also preserve the
+fixed archive); those counts corroborate the general parity argument and are
+not its proof.
+
+For the concrete seed, the canonical input rank is 104, the full
+$\mathrm{Spin}_4\times\mathrm{oldRIGHT}_2$ GNS dimension is 1864, and $K=L_C$ has
+return rank 56 and escape rank 48. The full return cotangent is zero on all
+233 independent left Lie directions; all 128 protected original archive
+matrix units and the right-column action are retained. The inherited
+inclusions $W_n=\iota_{5,n}(W_5)$ preserve this same corner through levels
+5–9. This proves compatible mathematical refinement on the AF tower, not
+identification of that passive tower with a spacetime mesh. The full $H+J$
+stationarity is on the declared fixed-clock/scene/Gram/$\beta$/$\zeta$
+chart; the absolute heat changes with carrier size, and its difference across
+levels is not asserted to vanish.
+
+The future result is stronger than the previous scalar-future instance but
+remains sharply scoped. For an actual factored cold product $AK_0$, with
+$M=A^*A$ and $Q=K_0K_0^*$, the prefix return source vanishes exactly when
+$[M,Q]=0$. A future that crosses returned and escaping sectors yields a
+nonzero prefix source in the control. This is a theorem about that return
+term and the stated factorization; it does not permit arbitrary future
+interference and does not erase the future's own heat/source. A separate
+family of distinct endpoints has identical corner and heat spectrum, so this
+stationarity does not select a field equation.
+
+The upstream checker reports 1,970 checks and explicitly records
+`G_CX_SourceI_word_emitted=false`,
+`physical_AF_actuation_proved=false`,
+`AF_refinement_identified_with_spacetime_mesh=false`,
+`all42_Einstein_source_map_proved=false`,
+`Lean_or_CI_run=false`, and `GR_closed=false`. Its exact `Z[p]`
+construction and analytic parity proof support this bounded result; its
+floating-point matrix controls remain numerical checks. The five-call binary
+recording seed remains a separate input and boundary: this AF construction
+does not retroactively supply its inherited archive label or replace its
+source result.
+
+I replayed the pinned checker in the published Python 3.13.5 / NumPy 2.3.5 /
+SciPy 1.17.0 environment. Ordinary, optimized and repeated ordinary stdout
+were byte-identical with 1,970 checks and empty stderr. Compared with #334's
+published JSON, the replay differs in four floating-point leaves by at most
+$2.220446049250313\times10^{-16}$; structure and all nonnumeric fields match.
+Both results and their comparison are retained in
+[`canonical_af_stationary_replay_2026-10-28_d200d`](sources/d0_proof_architecture_formalization_2026-10-24/reports/canonical_af_stationary_replay_2026-10-28_d200d/).
+A compatibility replay under the repository's older Python 3.9.6 / NumPy
+2.0.2 / SciPy 1.13.1 also passed all 1,970 checks with ordinary and optimized
+stdout equal, but emitted 36 `RuntimeWarning` lines in each run; those logs
+are retained separately and are not presented as warning-free evidence.
+
+This consumes the binary-input premise only for abstract stationary-family
+existence on the stated canonical AF carrier, and replaces the scalar-future
+condition by the exact commuting-block criterion under the factored-future
+hypothesis. The same-execution native operation, actual canonical preparation,
+full Book price/Info/work, field/source transport, and physical refinement
+remain open. No Lean theorem or repository CI result is claimed for this
+checker. `GR_closed=false`.

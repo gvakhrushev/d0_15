@@ -3835,6 +3835,95 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertFalse(manifest["scope"]["Lean_or_CI_run"])
         self.assertFalse(manifest["GR_closed"])
 
+    def test_canonical_af_stationary_family_sources_and_replay_keep_exact_pins(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "canonical-af-stationary-family-archive-seed"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed canonical AF stationary source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports/"
+            / "canonical_af_stationary_replay_2026-10-28_d200d"
+        )
+        manifest = json.loads((report_dir / "replay_manifest.json").read_text(encoding="utf-8"))
+        local_bytes = (report_dir / "local_replay.json").read_bytes()
+        published_bytes = (report_dir / "published_result.json").read_bytes()
+        local = json.loads(local_bytes)
+        published = json.loads(published_bytes)
+        stderr = (report_dir / "stderr.log").read_bytes()
+        legacy = json.loads(
+            (report_dir / "legacy_python39_result.json").read_text(encoding="utf-8")
+        )
+        legacy_stderr = (report_dir / "legacy_python39.stderr.log").read_bytes()
+        self.assertEqual(manifest["schema"], "d0-canonical-af-stationary-replay-v1")
+        self.assertEqual(
+            manifest["sources"]["checker"]["commit"],
+            "6415f5c8e106e48dd20c2bf72d625b33f52b2360",
+        )
+        self.assertEqual(
+            manifest["sources"]["checker"]["blob"],
+            "49d89fa52015c55e7fb0b31dbdef6e158b552e1d",
+        )
+        self.assertEqual(
+            manifest["sources"]["proof"]["commit"],
+            "8cf4c25b4d3e34a3ce9e7e457049aacc918388d0",
+        )
+        self.assertEqual(
+            manifest["sources"]["published_result"]["commit"],
+            "d200d411bce62fe42fe93096d1b36319936561db",
+        )
+        self.assertEqual(hashlib.sha256(local_bytes).hexdigest(), manifest["execution"]["run_stdout_sha256"])
+        self.assertEqual(hashlib.sha256(published_bytes).hexdigest(), manifest["published_comparison"]["published_result_sha256"])
+        self.assertEqual(local["status"], "PASS_CANONICAL_AF_STATIONARY_REFLECTIONS")
+        self.assertEqual(local["checks"], 1970)
+        self.assertEqual(local["checker_sha256"], manifest["sources"]["checker"]["sha256"])
+        self.assertEqual(local["environment"], {
+            "python": "3.13.5", "numpy": "2.3.5", "scipy": "1.17.0",
+        })
+        self.assertTrue(manifest["execution"]["ordinary_optimized_repeat_stdout_identical"])
+        self.assertEqual(len(stderr), 0)
+        self.assertFalse(manifest["published_comparison"]["exact_stdout_byte_match"])
+        self.assertTrue(manifest["published_comparison"]["structure_match"])
+        self.assertTrue(manifest["published_comparison"]["nonnumeric_fields_match"])
+        self.assertEqual(manifest["published_comparison"]["numeric_values_differ"], 4)
+        self.assertEqual(
+            manifest["published_comparison"]["maximum_absolute_numeric_difference"],
+            2.220446049250313e-16,
+        )
+        self.assertEqual(published["checks"], 1970)
+        self.assertEqual(legacy["checks"], 1970)
+        self.assertEqual(
+            legacy["environment"],
+            {"python": "3.9.6", "numpy": "2.0.2", "scipy": "1.13.1"},
+        )
+        self.assertEqual(manifest["legacy_runtime_control"]["runtime_warning_lines_each"], 36)
+        self.assertEqual(legacy_stderr.count(b"RuntimeWarning"), 36)
+        self.assertFalse(manifest["execution"]["GR_closed"])
+        self.assertFalse(manifest["execution"]["Lean_or_CI_run"])
+        self.assertFalse(manifest["execution"]["physical_AF_actuation_proved"])
+        self.assertFalse(manifest["execution"]["AF_refinement_identified_with_spacetime_mesh"])
+        self.assertFalse(manifest["execution"]["all42_Einstein_source_map_proved"])
+        self.assertFalse(manifest["legacy_runtime_control"].get("warnings_suppressed", False))
+        self.assertIn("field-equation selection", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
     def test_canonical_archive_law_sources_keep_exact_owner_pins_and_scope(self) -> None:
         case = next(
             item for item in cold_start.CASES

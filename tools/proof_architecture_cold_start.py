@@ -1142,6 +1142,84 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "canonical-af-stationary-family-archive-seed",
+        "queries": [
+            "canonical Fibonacci AF tower A2 M3 M2 to A5 M13 M8 stationary reflection archive exact Z[p] GNS rank104",
+            "PASS_CANONICAL_AF_STATIONARY_REFLECTIONS 1970 checks 233 complex left directions 128 archive matrix units",
+            "nonscalar future cold product A K0 prefix source [A* A, K0 K0*] commute returned escaping",
+            "fixed A0 archive even kernel parity per inherited label no G CX SourceI native word GR_closed=false",
+            "exact native stationary recording seed whole-word source scalar-return future 496 real skew directions",
+            "original A0 archive 7do preparation source matched-preparation memo 185ab21c",
+            "existing task brief original A0 archive 7do preparation-source parent work key application checkpoint",
+            "PASS_CANONICAL_AF_STATIONARY_REFLECTIONS canonical stationary reflections",
+            "complex_left_directions_checked protected_archive_units_checked PASS_CANONICAL_AF_STATIONARY_REFLECTIONS",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md",
+            "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+            "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+            "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/check_canonical_seed.py",
+            "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/result.json",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0, 1, 2, 3],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md",
+                "commit": "d9ef0b0558fcabbc097ecf2024a10b31ec0b5852",
+                "blob": "1766cb44e82a276d14a5546257b85a59beeab506",
+                "scope_query_indexes": [4],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "commit": "185ab21cb165cbf420291a6d8a2056dc366e5275",
+                "blob": "98c80d9aea2377d3a40dc2b381f644a0ca2e896b",
+                "scope_query_indexes": [5],
+            },
+            {
+                "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+                "commit": "185ab21cb165cbf420291a6d8a2056dc366e5275",
+                "blob": "ad5b4a9bb8e376bd689d3e951b5d5afe308c170e",
+                "scope_query_indexes": [6],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md",
+                "commit": "8cf4c25b4d3e34a3ce9e7e457049aacc918388d0",
+                "blob": "f8675130936e45d9718781d38ef5b762ebaf0eba",
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/check_canonical_seed.py",
+                "commit": "6415f5c8e106e48dd20c2bf72d625b33f52b2360",
+                "blob": "49d89fa52015c55e7fb0b31dbdef6e158b552e1d",
+                "scope_query_indexes": [7],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/result.json",
+                "commit": "d200d411bce62fe42fe93096d1b36319936561db",
+                "blob": "e34f7444fb743d230b0a01b878c927f584d42306",
+                "scope_query_indexes": [8],
+            },
+        ],
+        "scope_review": (
+            "The pinned #334 proof replaces the binary boundary only for mathematical "
+            "stationary-family existence on the original canonical Fibonacci AF tower: "
+            "A2=M3+M2 to A5=M13+M8, canonical GNS rank 104, and exact Z[p] expectation "
+            "onto C=(diag(0,1,0),I2). Its inherited AF inclusions retain the same return "
+            "corner and the fixed original A0 archive, with an even-kernel parity criterion "
+            "per old central type and, for the stronger archive law, per inherited label. "
+            "The exact commuting-block future criterion applies to a factored cold product "
+            "AK0 and the prefix return term only; future heat/source and arbitrary "
+            "interference remain live. The 1970-check result does not prove a native "
+            "G/CX/SourceI word, physical canonical preparation, spacetime refinement, "
+            "all-42 source transport, Lean/CI, or field-equation selection. It is a separate "
+            "boundary from the five-call binary seed; GR_closed=false."
+        ),
+    },
+    {
         "id": "canonical-archive-law-and-variation-domain",
         "queries": [
             "canonical archive law compatibility variation domain full old effect relative commutant",
