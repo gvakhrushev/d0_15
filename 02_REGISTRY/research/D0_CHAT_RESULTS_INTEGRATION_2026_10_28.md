@@ -107,7 +107,7 @@ Lean modules and registered in `formal_support.csv`. They are imported by
 | [`D0.Geometry.ArchiveGradedRefinementComposedReadout`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean) | Iterates the owned adjacent pullbacks literally, proves their cochain identity for every number of steps and an exact singleton prefix/tail formula. At doubling, the stated fixed-component normalized L1 and L2-squared errors are both exactly `1`. | The probe is the literal one-form embedding but its fixed-component sampler is not selected as a physical observable. The result shows chain-map preservation alone does not imply convergence of that readout; it proves no universal refinement obstruction. |
 | [`D0.Geometry.RefoliationWitnessCoefficientExtraction`](../../03_FORMALIZATION/D0/Geometry/RefoliationWitnessCoefficientExtraction.lean) | From the three exact coefficient equations displayed for the shear, trace, and two-scalar witnesses, proves `a*b=1`, `lambda=1/2`, and `C*D=I₂`. | The bracket/witness equalities are premises. It does not derive the continuum Poisson bracket, strong hypersurface-deformation algebra, canonical D0 variables, lapse generators, or physical admission. |
 | [`D0.Geometry.MovingCutQueryCancellation`](../../03_FORMALIZATION/D0/Geometry/MovingCutQueryCancellation.lean) | Over `ℚ`, defines a rank-one projector and a 2×2 orthogonal reflection, proves the complete cut derivative row, two-sided resolvent inverse, and generic cancellation of the QUERY-only and cut-only source rows under joint conjugation; the exact rational control is `+16/35`, `−16/35`, `0`. | This is the finite algebraic control in #334 §7cu. It does not prove either tangent is an admitted D0 variation, transport the thermal operator, construct the original 42-field map, or establish physical source selection. |
-| [`D0.Research.ClosedHistoryNonlinearDustBranch`](../../03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean) | Formalizes the unchanged sigma-minus click (15) as an exact quadratic in curvature, proves its Golden coefficient reduction (25), derives the actual trace-minus-radial quadratic (26), and proves the stable radical branch is the unique negative root under explicit coefficient signs. | The concrete sign enclosure, source-to-field variation, nonlinear Einstein–dust equations, LTB substitution, and physical protocol admission remain outside Lean; this is a supporting algebraic adapter, not the full #334 result. |
+| [`D0.Research.ClosedHistoryNonlinearDustBranch`](../../03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean) | Formalizes the unchanged sigma-minus click (15) as an exact quadratic in curvature, proves its Golden coefficient reduction (25), derives the actual trace-minus-radial quadratic (26), discharges the coefficient signs on the fixed z=y₀=2⁻²⁰ sector, and proves the source rational κ enclosure for its unique negative branch. | The source-to-field variation, nonlinear Einstein–dust equations, LTB substitution, finite-word recovery and physical protocol admission remain outside Lean; this is a supporting algebraic adapter, not the full #334 result. |
 
 The nonlinear branch module is source-pinned to #334 commit
 `c296829fc2e74d673a2a679baa1e10a49524b290`, upstream file
@@ -630,10 +630,11 @@ quadratic, and the conditional unique negative radical branch. The source
 pin is commit `c296829fc2e74d673a2a679baa1e10a49524b290`, upstream blob
 `154b341f17adce88594b0b5e9df0d38c0283d288`.
 
-The module does not formalize the sign interval, full nonlinear Einstein--dust
-equations, LTB substitution, source-to-field map or physical admission. It is
-one supporting algebraic adapter; the research theorem remains at its stated
-generated-field scope and `GR_closed=false`. The module's narrow build passed,
+The module now proves the exact coefficient signs and rational κ enclosure
+for the fixed sector. The full nonlinear Einstein--dust equations, LTB
+substitution, source-to-field map and physical admission remain outside Lean.
+It is one supporting algebraic adapter; the research theorem remains at its
+stated generated-field scope and `GR_closed=false`. The module's narrow build passed,
 and the integrated `D0.All` build passed 4,768 Lake jobs at source digest
 `5e53922308a6b99ba7b68940ddd777acee1d2fb797227bebfe009a7d1739c20d`.
 Repository validation reports 234 formal-support rows and 957 generated
@@ -717,3 +718,36 @@ and [`lean-build`](https://github.com/gvakhrushev/d0_15/actions/runs/40679981123
 both passed. `GR_closed=false`, physical admission, source acceptance,
 same-execution selection and independent scientific acceptance all remain
 open.
+
+
+## Fixed-sector Lean follow-up — 28 October 2026
+
+The existing #334 scalar branch adapter now proves the three trace
+coefficient signs for `z=y0=2^-20`, verifies exact polynomial signs at the
+two rational curvature endpoints, and derives the owner’s 30-decimal
+`kappa` enclosure for the unique negative branch. The proof uses the Golden
+quadratic recurrence, rational square bounds for `sqrt 5`, endpoint sign
+checks, and strict monotonicity on negative curvature. The generic branch
+theorems remain conditional for arbitrary coefficients; this fixed sector
+discharges those conditions.
+
+The exact source remains #334 commit
+`c296829fc2e74d673a2a679baa1e10a49524b290`, blob
+`154b341f17adce88594b0b5e9df0d38c0283d288`. The expanded compiled
+inventory is stored at
+`sources/d0_proof_architecture_formalization_2026-10-24/reports/closed_history_nonlinear_dust_fixed_sector_declarations_2026-10-28.json`;
+it records 107 declarations and axiom union `Classical.choice`,
+`Quot.sound`, `propext`, with no `sorryAx` or custom axiom. The final
+public `D0.All` build passes 4,768 Lake jobs at source digest
+`e7f9ab2e542becd907c395e375f8e2ab405a197378a8e651e4c830487c98bb9d`;
+its [receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_fixed_sector.json)
+has SHA-256 `74bcc8d7c17acac773c50a64b2863f5877913ab15cc1cf8f324e2398cd1b23ee`.
+Generated views, repository validation and diff checks pass; formal-support
+remains at 234 rows, and the debt audit remains at its five-finding baseline.
+
+This is a formalization of one finite scalar branch, not of the full
+Einstein--dust source, LTB substitution, source-to-field map, physical
+admission, or finite-word recovery. The moving-projector formula is separately
+formalized in `D0.Analysis.MovingProjectorBookPrice`; its same-execution
+field map remains open. The intake remains supporting research with
+`GR_closed=false`.

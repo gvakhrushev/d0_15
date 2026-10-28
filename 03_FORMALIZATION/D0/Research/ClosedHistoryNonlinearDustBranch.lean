@@ -15,9 +15,10 @@ import Mathlib.Tactic.Ring
 This module formalizes the finite algebraic part of the #334 nonlinear
 Einstein-dust intake: the original click polynomial is quadratic in the
 curvature variable, and the displayed radical selects its negative root
-when the trace coefficients have the stated signs. It does not formalize the
-source-to-field variation, the rational numerical enclosure, the LTB
-solution, or physical admission. Source: PR #334 commit
+when the trace coefficients have the stated signs. The exact coefficient
+signs and the rational κ enclosure are now proved on the owner's fixed
+Golden sector z=y₀=2⁻²⁰. It does not formalize the source-to-field variation,
+the LTB solution, or physical admission. Source: PR #334 commit
 `c296829fc2e74d673a2a679baa1e10a49524b290`, file
 `A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md`, Git blob
 `154b341f17adce88594b0b5e9df0d38c0283d288`, Eqs. (15), (25)--(27).
@@ -36,6 +37,44 @@ theorem goldenRotation_relation : goldenRotation ^ 2 + goldenRotation = 1 := by
   have hsqrt : (Real.sqrt 5) ^ 2 = 5 := Real.sq_sqrt (by norm_num)
   dsimp [goldenRotation]
   nlinarith [hsqrt]
+
+/-- One recurrence step for the integer coefficients of successive Golden
+powers. The polynomial relation `p^2 + p = 1` gives `p^(n+2) = p^n -
+p^(n+1)`, so every power reduces to a rational-linear expression in `p`. -/
+def goldenCoeffStep (a b : ℤ × ℤ) : ℤ × ℤ :=
+  (a.1 - b.1, a.2 - b.2)
+
+/-- The first component is the coefficient pair for `p^n`; the second is the
+coefficient pair for `p^(n+1)`. -/
+def goldenCoeffStates : ℕ → (ℤ × ℤ) × (ℤ × ℤ)
+  | 0 => ((0, 1), (1, 0))
+  | n + 1 => ((goldenCoeffStates n).2,
+      goldenCoeffStep (goldenCoeffStates n).1 (goldenCoeffStates n).2)
+
+/-- Rational-linear form for the `n`th power on the Golden quadratic. -/
+def goldenPowerLinear (n : ℕ) (p : ℝ) : ℝ :=
+  ((goldenCoeffStates n).1.1 : ℝ) * p + (goldenCoeffStates n).1.2
+
+theorem golden_pow_recurrence {p : ℝ} (hp : p ^ 2 + p = 1) (n : ℕ) :
+    p ^ (n + 2) = p ^ n - p ^ (n + 1) := by
+  have hp2 : p ^ 2 = 1 - p := by linarith
+  calc
+    p ^ (n + 2) = p ^ n * p ^ 2 := by rw [pow_add]
+    _ = p ^ n * (1 - p) := by rw [hp2]
+    _ = p ^ n - p ^ (n + 1) := by rw [pow_succ]; ring
+
+/-- Every Golden power reduces by an exact integer recurrence. This keeps
+high-degree coefficient calculations in Lean within the quadratic number
+field instead of treating powers of the parameter as independent inputs. -/
+theorem golden_power_linear {p : ℝ} (hp : p ^ 2 + p = 1) (n : ℕ) :
+    p ^ n = goldenPowerLinear n p := by
+  refine Nat.twoStepInduction ?_ ?_ ?_ n
+  · norm_num [goldenPowerLinear, goldenCoeffStates]
+  · norm_num [goldenPowerLinear, goldenCoeffStates]
+  · intro k hk hk1
+    rw [golden_pow_recurrence hp k, hk, hk1]
+    simp [goldenPowerLinear, goldenCoeffStates, goldenCoeffStep]
+    ring
 
 /-- The original curvature rotation coordinate `E=p²(1+x)`. -/
 def curvatureRotation (p x : ℝ) : ℝ := p ^ 2 * (1 + x)
@@ -292,6 +331,195 @@ def traceCoefficientB (p z y : ℝ) : ℝ :=
 def traceCoefficientC (p z y : ℝ) : ℝ :=
   -y * deriv (fun v : ℝ => clickCoefficient0 p z v) y
 
+/-- The exact original-number aperture z=y0=2^-20 used by the #334
+nonlinear dust branch check. -/
+def nonlinearDustSectorScale : ℝ := 1 / (2 : ℝ) ^ 20
+
+/-- Common exact denominator in the Golden-field reduction of the three
+trace coefficients at the fixed nonlinear dust sector. -/
+def nonlinearDustTraceDenominator : ℝ :=
+  12554203470773361527671578846415332832204710888928069025792
+
+def nonlinearDustTraceDoubleDenominator : ℝ :=
+  25108406941546723055343157692830665664409421777856138051584
+
+def nonlinearDustTraceANumeratorP : ℝ :=
+  5268058650513054623262402433763395984907432211655930041
+
+def nonlinearDustTraceANumerator0 : ℝ :=
+  3256618061576135697087915186179800036979780546381991681
+
+def nonlinearDustTraceBNumeratorP : ℝ :=
+  4262322096210792984780744979814770254080253549199977049
+
+def nonlinearDustTraceBNumerator0 : ℝ :=
+  5268038554089187623229439150431301957946247093117994757
+
+def nonlinearDustTraceCNumeratorP : ℝ :=
+  13884776909660477911855969143871666536523671553327
+
+def nonlinearDustTraceCNumerator0 : ℝ :=
+  4293319083168921166295556200737408068151796045153
+
+/-- Rational endpoints enclosing the exact Golden rotation parameter. The
+proof checks both square inequalities, rather than rounding sqrt 5. -/
+def goldenRotationLower : ℝ :=
+  61803398874989484820458683436563811772 / 10 ^ 38
+
+def goldenRotationUpper : ℝ :=
+  61803398874989484820458683436563811773 / 10 ^ 38
+
+theorem goldenRotation_rational_bounds :
+    goldenRotationLower < goldenRotation ∧ goldenRotation < goldenRotationUpper := by
+  have hlo_nonneg : 0 ≤ 2 * goldenRotationLower + 1 := by
+    norm_num [goldenRotationLower]
+  have hlo_sq : (2 * goldenRotationLower + 1) ^ 2 < 5 := by
+    norm_num [goldenRotationLower]
+  have hlo_sqrt : 2 * goldenRotationLower + 1 < Real.sqrt 5 :=
+    (Real.lt_sqrt hlo_nonneg).2 hlo_sq
+  have hhi_nonneg : 0 ≤ 2 * goldenRotationUpper + 1 := by
+    norm_num [goldenRotationUpper]
+  have hhi_sq : 5 < (2 * goldenRotationUpper + 1) ^ 2 := by
+    norm_num [goldenRotationUpper]
+  have hhi_sqrt : Real.sqrt 5 < 2 * goldenRotationUpper + 1 :=
+    (Real.sqrt_lt (by norm_num) hhi_nonneg).2 hhi_sq
+  dsimp [goldenRotation]
+  constructor <;> linarith
+
+/-- Exact rational-field reductions of the original trace-source coefficients
+on p=(sqrt 5-1)/2, z=y0=2^-20. The large rationals are independently reduced
+in Lean using the Golden quadratic recurrence above. -/
+theorem golden_sector_trace_coefficient_values :
+    traceCoefficientA goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale =
+        (nonlinearDustTraceANumeratorP / nonlinearDustTraceDenominator) * goldenRotation -
+          nonlinearDustTraceANumerator0 / nonlinearDustTraceDenominator ∧
+      traceCoefficientB goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale =
+        (nonlinearDustTraceBNumeratorP / nonlinearDustTraceDenominator) * goldenRotation -
+          nonlinearDustTraceBNumerator0 / nonlinearDustTraceDoubleDenominator ∧
+      traceCoefficientC goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale =
+        (2 * nonlinearDustTraceCNumerator0) / nonlinearDustTraceDenominator -
+          (nonlinearDustTraceCNumeratorP / nonlinearDustTraceDenominator) * goldenRotation := by
+  refine ⟨?_, ?_, ?_⟩
+  · have hp := goldenRotation_relation
+    simp (disch := fun_prop) [traceCoefficientA, clickCoefficient2,
+      matterClick, matterRotation, nonlinearDustSectorScale]
+    ring_nf
+    simp_rw [golden_power_linear hp]
+    simp [goldenPowerLinear, goldenCoeffStates, goldenCoeffStep]
+    norm_num [nonlinearDustTraceANumeratorP, nonlinearDustTraceANumerator0,
+      nonlinearDustTraceDenominator]
+    ring
+  · have hp := goldenRotation_relation
+    simp (disch := fun_prop) [traceCoefficientB, clickCoefficient1,
+      matterClick, matterRotation, nonlinearDustSectorScale]
+    ring_nf
+    simp_rw [golden_power_linear hp]
+    simp [goldenPowerLinear, goldenCoeffStates, goldenCoeffStep]
+    norm_num [nonlinearDustTraceBNumeratorP, nonlinearDustTraceBNumerator0,
+      nonlinearDustTraceDenominator, nonlinearDustTraceDoubleDenominator]
+    ring
+  · have hp := goldenRotation_relation
+    simp (disch := fun_prop) [traceCoefficientC, clickCoefficient0,
+      matterClick, matterRotation, nonlinearDustSectorScale]
+    ring_nf
+    simp_rw [golden_power_linear hp]
+    simp [goldenPowerLinear, goldenCoeffStates, goldenCoeffStep]
+    norm_num [nonlinearDustTraceCNumeratorP, nonlinearDustTraceCNumerator0,
+      nonlinearDustTraceDenominator]
+    ring
+
+/-- The exact trace-source coefficient signs used by the #334 negative branch
+hold in its declared fixed sector; they are derived rather than supplied as
+premises. -/
+theorem golden_sector_trace_coefficient_signs :
+    traceCoefficientA goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale < 0 ∧
+      0 < traceCoefficientB goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale ∧
+      0 < traceCoefficientC goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale := by
+  rcases golden_sector_trace_coefficient_values with ⟨hAvalue, hBvalue, hCvalue⟩
+  rw [hAvalue, hBvalue, hCvalue]
+  have hp := goldenRotation_rational_bounds
+  have hA :
+      (nonlinearDustTraceANumeratorP / nonlinearDustTraceDenominator) * goldenRotationUpper -
+        nonlinearDustTraceANumerator0 / nonlinearDustTraceDenominator < 0 := by
+    norm_num [nonlinearDustTraceANumeratorP, nonlinearDustTraceANumerator0,
+      nonlinearDustTraceDenominator, goldenRotationUpper]
+  have hB : 0 <
+      (nonlinearDustTraceBNumeratorP / nonlinearDustTraceDenominator) * goldenRotationLower -
+        nonlinearDustTraceBNumerator0 / nonlinearDustTraceDoubleDenominator := by
+    norm_num [nonlinearDustTraceBNumeratorP, nonlinearDustTraceBNumerator0,
+      nonlinearDustTraceDenominator, nonlinearDustTraceDoubleDenominator,
+      goldenRotationLower]
+  have hC : 0 <
+      (2 * nonlinearDustTraceCNumerator0) / nonlinearDustTraceDenominator -
+        (nonlinearDustTraceCNumeratorP / nonlinearDustTraceDenominator) * goldenRotationUpper := by
+    norm_num [nonlinearDustTraceCNumeratorP, nonlinearDustTraceCNumerator0,
+      nonlinearDustTraceDenominator, goldenRotationUpper]
+  have hAcoef : 0 < nonlinearDustTraceANumeratorP / nonlinearDustTraceDenominator := by
+    norm_num [nonlinearDustTraceANumeratorP, nonlinearDustTraceDenominator]
+  have hBcoef : 0 < nonlinearDustTraceBNumeratorP / nonlinearDustTraceDenominator := by
+    norm_num [nonlinearDustTraceBNumeratorP, nonlinearDustTraceDenominator]
+  have hCcoef : 0 < nonlinearDustTraceCNumeratorP / nonlinearDustTraceDenominator := by
+    norm_num [nonlinearDustTraceCNumeratorP, nonlinearDustTraceDenominator]
+  have hAmon := mul_lt_mul_of_pos_left hp.2 hAcoef
+  have hBmon := mul_lt_mul_of_pos_left hp.1 hBcoef
+  have hCmon := mul_lt_mul_of_pos_left hp.2 hCcoef
+  constructor
+  · nlinarith [hAmon, hA]
+  constructor
+  · nlinarith [hBmon, hB]
+  · nlinarith [hCmon, hC]
+
+/-- Exact 30-decimal rational enclosure requested by the #334 branch check. -/
+def nonlinearDustKappaLower : ℝ :=
+  23414790278587526834413240421129 / 10 ^ 30
+
+def nonlinearDustKappaUpper : ℝ :=
+  23414790278587526834413240421130 / 10 ^ 30
+
+/-- The exact trace-source polynomial in the curvature coordinate for this
+fixed Golden-sector specialization. -/
+def nonlinearDustTracePolynomial (x : ℝ) : ℝ :=
+  traceCoefficientA goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale * x ^ 2 +
+    traceCoefficientB goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale * x +
+    traceCoefficientC goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale
+
+/-- The original trace polynomial has opposite signs at the two rational
+curvature endpoints corresponding to the owner's kappa interval. -/
+theorem golden_sector_trace_polynomial_endpoint_signs :
+    0 < nonlinearDustTracePolynomial
+        (-nonlinearDustKappaLower * nonlinearDustSectorScale) ∧
+      nonlinearDustTracePolynomial
+        (-nonlinearDustKappaUpper * nonlinearDustSectorScale) < 0 := by
+  change 0 <
+      traceCoefficientA goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale *
+          (-nonlinearDustKappaLower * nonlinearDustSectorScale) ^ 2 +
+        traceCoefficientB goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale *
+          (-nonlinearDustKappaLower * nonlinearDustSectorScale) +
+        traceCoefficientC goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale ∧
+      traceCoefficientA goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale *
+          (-nonlinearDustKappaUpper * nonlinearDustSectorScale) ^ 2 +
+        traceCoefficientB goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale *
+          (-nonlinearDustKappaUpper * nonlinearDustSectorScale) +
+        traceCoefficientC goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale < 0
+  rcases golden_sector_trace_coefficient_values with ⟨hA, hB, hC⟩
+  rw [hA, hB, hC]
+  rcases goldenRotation_rational_bounds with ⟨hpLo, hpHi⟩
+  norm_num [goldenRotationLower, goldenRotationUpper] at hpLo hpHi
+  constructor
+  · norm_num [nonlinearDustKappaLower, nonlinearDustSectorScale,
+      nonlinearDustTraceANumeratorP, nonlinearDustTraceANumerator0,
+      nonlinearDustTraceBNumeratorP, nonlinearDustTraceBNumerator0,
+      nonlinearDustTraceCNumeratorP, nonlinearDustTraceCNumerator0,
+      nonlinearDustTraceDenominator, nonlinearDustTraceDoubleDenominator]
+    nlinarith [hpHi]
+  · norm_num [nonlinearDustKappaUpper, nonlinearDustSectorScale,
+      nonlinearDustTraceANumeratorP, nonlinearDustTraceANumerator0,
+      nonlinearDustTraceBNumeratorP, nonlinearDustTraceBNumerator0,
+      nonlinearDustTraceCNumeratorP, nonlinearDustTraceCNumerator0,
+      nonlinearDustTraceDenominator, nonlinearDustTraceDoubleDenominator]
+    nlinarith [hpLo]
+
+
 /-- The original click's trace-minus-radial equation is exactly the stated
 quadratic in curvature, not a separately imposed branch equation. -/
 theorem originalClick_trace_eq_quadratic (p z x y : ℝ) :
@@ -336,6 +564,115 @@ theorem originalClick_trace_unique_negative_branch {p z y q : ℝ}
   have hpoly := hq
   rw [originalClick_trace_eq_quadratic] at hpoly
   exact negativeQuadraticRoot_unique_negative ha hb hc hpoly hqneg
+
+/-- A quadratic with negative leading coefficient and positive linear
+coefficient is strictly increasing on the negative axis. -/
+theorem quadratic_polynomial_strictMono_negative {a b c x y : ℝ}
+    (ha : a < 0) (hb : 0 < b) (hy : y < 0) (hxy : x < y) :
+    a * x ^ 2 + b * x + c < a * y ^ 2 + b * y + c := by
+  have hsum : x + y < 0 := by linarith
+  have hprod : 0 < a * (x + y) := mul_pos_of_neg_of_neg ha hsum
+  have hcoef : 0 < a * (x + y) + b := by linarith
+  have hfactor : (a * y ^ 2 + b * y + c) - (a * x ^ 2 + b * x + c) =
+      (y - x) * (a * (x + y) + b) := by ring
+  have hdiff : 0 < (a * y ^ 2 + b * y + c) - (a * x ^ 2 + b * x + c) := by
+    rw [hfactor]
+    exact mul_pos (by linarith) hcoef
+  linarith
+
+/-- The exact negative radical branch has the source's rational kappa
+enclosure, proved from the exact endpoint signs and monotonicity of the
+original trace polynomial on negative curvature. -/
+theorem golden_sector_kappa_enclosure :
+    nonlinearDustKappaLower <
+        -negativeQuadraticRoot
+          (traceCoefficientA goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale)
+          (traceCoefficientB goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale)
+          (traceCoefficientC goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale) /
+          nonlinearDustSectorScale ∧
+      -negativeQuadraticRoot
+          (traceCoefficientA goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale)
+          (traceCoefficientB goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale)
+          (traceCoefficientC goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale) /
+          nonlinearDustSectorScale < nonlinearDustKappaUpper := by
+  let a := traceCoefficientA goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale
+  let b := traceCoefficientB goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale
+  let c := traceCoefficientC goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale
+  let q := negativeQuadraticRoot a b c
+  let xFar := -nonlinearDustKappaUpper * nonlinearDustSectorScale
+  let xNear := -nonlinearDustKappaLower * nonlinearDustSectorScale
+  change nonlinearDustKappaLower < -q / nonlinearDustSectorScale ∧
+    -q / nonlinearDustSectorScale < nonlinearDustKappaUpper
+  rcases golden_sector_trace_coefficient_signs with ⟨ha, hb, hc⟩
+  have hspec := negativeQuadraticRoot_spec ha hb hc
+  have hqneg : q < 0 := by simpa [q] using hspec.2
+  have hqpoly :
+      a * q ^ 2 + b * q + c = 0 := by
+    simpa [q, a, b, c] using hspec.1
+  have hxFarNeg : xFar < 0 := by
+    norm_num [xFar, nonlinearDustKappaUpper, nonlinearDustSectorScale]
+  have hxNearNeg : xNear < 0 := by
+    norm_num [xNear, nonlinearDustKappaLower, nonlinearDustSectorScale]
+  have hEnds := golden_sector_trace_polynomial_endpoint_signs
+  have hFarSign : a * xFar ^ 2 + b * xFar + c < 0 := by
+    simpa [xFar, a, b, c, nonlinearDustTracePolynomial] using hEnds.2
+  have hNearSign : 0 < a * xNear ^ 2 + b * xNear + c := by
+    simpa [xNear, a, b, c, nonlinearDustTracePolynomial] using hEnds.1
+  have hFarLt : xFar < q := by
+    by_contra hnot
+    have hle : q ≤ xFar := le_of_not_gt hnot
+    rcases lt_or_eq_of_le hle with hlt | heq
+    · have hmono := quadratic_polynomial_strictMono_negative
+        (a := a) (b := b) (c := c) ha hb hxFarNeg hlt
+      nlinarith [hmono, hqpoly, hFarSign]
+    · rw [heq] at hqpoly
+      nlinarith [hqpoly, hFarSign]
+  have hLtNear : q < xNear := by
+    by_contra hnot
+    have hle : xNear ≤ q := le_of_not_gt hnot
+    rcases lt_or_eq_of_le hle with hlt | heq
+    · have hmono := quadratic_polynomial_strictMono_negative
+        (a := a) (b := b) (c := c) ha hb hqneg hlt
+      nlinarith [hmono, hqpoly, hNearSign]
+    · rw [← heq] at hqpoly
+      nlinarith [hqpoly, hNearSign]
+  have hs : 0 < nonlinearDustSectorScale := by
+    norm_num [nonlinearDustSectorScale]
+  constructor
+  · apply (lt_div_iff₀ hs).2
+    dsimp [xNear] at hLtNear
+    nlinarith [hLtNear]
+  · apply (div_lt_iff₀ hs).2
+    dsimp [xFar] at hFarLt
+    nlinarith [hFarLt]
+
+
+/-- The concrete #334 sector has an actual negative solution of the original
+trace-source equation; its three coefficient signs are proved from the exact
+rational Golden enclosure rather than passed into the general branch lemma. -/
+theorem golden_sector_negative_branch_exists :
+    ∃ x : ℝ, x < 0 ∧
+      x * deriv (fun u : ℝ => originalClick goldenRotation
+        nonlinearDustSectorScale u nonlinearDustSectorScale) x -
+        nonlinearDustSectorScale * deriv (fun v : ℝ => originalClick goldenRotation
+          nonlinearDustSectorScale x v) nonlinearDustSectorScale = 0 := by
+  rcases golden_sector_trace_coefficient_signs with ⟨ha, hb, hc⟩
+  exact originalClick_trace_negative_branch ha hb hc
+
+/-- Any negative solution in the same concrete #334 sector is its displayed
+stable radical branch. -/
+theorem golden_sector_negative_branch_unique {q : ℝ}
+    (hq : q * deriv (fun u : ℝ => originalClick goldenRotation
+      nonlinearDustSectorScale u nonlinearDustSectorScale) q -
+      nonlinearDustSectorScale * deriv (fun v : ℝ => originalClick goldenRotation
+        nonlinearDustSectorScale q v) nonlinearDustSectorScale = 0)
+    (hqneg : q < 0) :
+    q = negativeQuadraticRoot
+      (traceCoefficientA goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale)
+      (traceCoefficientB goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale)
+      (traceCoefficientC goldenRotation nonlinearDustSectorScale nonlinearDustSectorScale) := by
+  rcases golden_sector_trace_coefficient_signs with ⟨ha, hb, hc⟩
+  exact originalClick_trace_unique_negative_branch ha hb hc hq hqneg
 
 end D0.Research.ClosedHistoryNonlinearDustBranch
 

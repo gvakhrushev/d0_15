@@ -12648,3 +12648,49 @@ records 38 declarations on clean published snapshot
 `93c2331ad2ec38d574cebba64097296f2e222012` at the same Lean source digest.
 Its SHA-256 is `25f70dd71318da074c517e68a659e31a5483a5804732a0e0215b8f7328562961`;
 the reported axiom union is `Classical.choice`, `Quot.sound` and `propext`.
+
+### Exact fixed-sector Lean application of the nonlinear branch — 28 October 2026
+
+The scalar trace branch from #334 commit
+`c296829fc2e74d673a2a679baa1e10a49524b290` is now stronger than the
+previous conditional Lean adapter. Its pinned source is
+`A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md`, blob
+`154b341f17adce88594b0b5e9df0d38c0283d288`, equations (15), (25)--(27).
+
+In `D0.Research.ClosedHistoryNonlinearDustBranch`, exact Golden-power
+recurrence reduces the three original trace coefficients at
+`p=(sqrt 5-1)/2`, `z=y0=2^-20` to rational-linear expressions in `p`.
+Lean proves a rational enclosure for `p`, discharges all three coefficient
+signs, and verifies opposite signs of the original trace polynomial at the
+two rational curvature endpoints. Strict monotonicity on the negative axis
+then proves the source interval
+`kappa in (23.414790278587526834413240421129,
+23.414790278587526834413240421130)` for the displayed negative radical
+branch. The concrete sector's existence and uniqueness theorems now invoke
+the general branch results without assuming their coefficient-sign premises.
+
+This closes only the scalar trace-branch arithmetic. It does not formalize
+the nonlinear source-to-field variation, the complete Einstein--dust
+equations, LTB substitution, finite-word recovery, or admission of this
+generated-field sector to the physical Book03 domain. The pre-existing
+`D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price`
+formalizes the complete finite heat-plus-logdet first source with endogenous
+projector motion; it still does not supply that field map or select a physical
+execution. No new scientific claim or acceptance status is added, and
+`GR_closed=false`.
+
+The final public `D0.All` build passes 4,768 Lake jobs with Lean 4.30.0 at
+source digest
+`e7f9ab2e542becd907c395e375f8e2ab405a197378a8e651e4c830487c98bb9d`.
+Its build receipt is
+[here](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_fixed_sector.json),
+SHA-256
+`74bcc8d7c17acac773c50a64b2863f5877913ab15cc1cf8f324e2398cd1b23ee`.
+The compiled declaration inventory is stored alongside it. Its module
+axiom union is `Classical.choice`, `Quot.sound`, and `propext`; there is no
+`sorryAx` or custom axiom. Repository validation reports 889 claims, 31
+assumptions, 58 aliases, 234 formal-support rows, and 957 generated imports
+with zero warnings. The five formalization-debt findings remain at the
+existing baseline. The current #334 archive verifier confirms 43 local
+controls against the pinned owner outputs; the moving-cut packet verifier
+confirms source bytes but does not execute its archived checker.
