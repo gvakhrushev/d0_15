@@ -5205,8 +5205,11 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn(integration_path, by_source)
         integration_text = (proof.ROOT / integration_path).read_text(encoding="utf-8")
         self.assertIn("1f4b85f14292dfac07f61db27ff47a961e525d03", integration_text)
+        self.assertIn("fd35893d77e4aa5f819bafa0c6428c8e7a8f1812", integration_text)
         self.assertIn("97 controls", integration_text)
         self.assertIn("79 controls", integration_text)
+        self.assertIn("171 controls", integration_text)
+        self.assertIn("off-copy", integration_text)
         self.assertIn("same-task tangent", integration_text)
         self.assertIn("not a Lean formalization of complex-matrix effect tomography", integration_text)
         declaration_inventory_path = (
@@ -5264,6 +5267,42 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0-ARCHIVE-GRADED-REFINEMENT-CHAIN-MAP-001",
             refinement_hits[0]["record"]["referenced_by"],
         )
+
+    def test_latest_334_offcopy_replay_packet_matches_its_manifest(self) -> None:
+        packet = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_334_post_1f_offcopy_frame_delta_2026-10-28"
+        )
+        manifest = json.loads((packet / "MANIFEST.json").read_text(encoding="utf-8"))
+        self.assertEqual(
+            manifest["source_commit"],
+            "fd35893d77e4aa5f819bafa0c6428c8e7a8f1812",
+        )
+        self.assertEqual(manifest["execution"]["checks"], 171)
+        self.assertEqual(manifest["execution"]["status"], "PASS")
+        self.assertTrue(manifest["local_matches_owner_receipt_byte_for_byte"])
+        self.assertTrue(manifest["local_normal_optimized_byte_identical"])
+
+        search_hits = proof.full_text_search(proof.ROOT, "off-copy AF frame", limit=20)
+        self.assertIn(
+            "02_REGISTRY/research/sources/"
+            "d0_334_post_1f_offcopy_frame_delta_2026-10-28/README.md",
+            {row["source"] for row in search_hits},
+        )
+
+        for row in manifest["packet_files"]:
+            content = (packet / row["path"]).read_bytes()
+            self.assertEqual(len(content), row["bytes"], row["path"])
+            self.assertEqual(
+                hashlib.sha256(content).hexdigest(), row["sha256"], row["path"]
+            )
+
+        receipt = (packet / "replay/owner_receipt.json").read_bytes()
+        self.assertEqual(
+            hashlib.sha256(receipt).hexdigest(), manifest["owner_receipt_sha256"]
+        )
+        self.assertEqual(receipt, (packet / "replay/normal.json").read_bytes())
+        self.assertEqual(receipt, (packet / "replay/optimized.json").read_bytes())
 
     def test_refoliation_delta_is_retrievable_without_physical_owner_inference(self) -> None:
         data = proof.load_dataset(proof.ROOT)

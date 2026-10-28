@@ -4,9 +4,10 @@ Source owner: existing research [PR #334](https://github.com/gvakhrushev/d0_15/p
 with its scalar Lean adapter pinned to
 [`c296829fc2e74d673a2a679baa1e10a49524b290`](https://github.com/gvakhrushev/d0_15/tree/c296829fc2e74d673a2a679baa1e10a49524b290).
 The latest owner head reviewed in this report is
-[`1f4b85f14292dfac07f61db27ff47a961e525d03`](https://github.com/gvakhrushev/d0_15/tree/1f4b85f14292dfac07f61db27ff47a961e525d03),
-which includes the earlier pinned checkpoints and the continuations after
-`15742b846f380b75e7d8f869faf7bc51623ed2a6` documented below.
+[`fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`](https://github.com/gvakhrushev/d0_15/tree/fd35893d77e4aa5f819bafa0c6428c8e7a8f1812).
+It includes the earlier pinned checkpoints and the continuation after
+`1f4b85f14292dfac07f61db27ff47a961e525d03` documented below; that commit is
+retained as an intermediate checkpoint rather than the current owner head.
 This is an intake into the existing proof-architecture execution #402, not a
 new scientific owner, claim status, physical selector, or merge of #334.
 The full archive was published in upstream commit
@@ -887,12 +888,13 @@ block, or full GR. The #334 continuation adds no Lean theorem; #402's existing
 Lean build receipt remains tied to unchanged Lean source. Both intakes remain
 supporting evidence with `GR_closed=false`.
 
-## Current #334 continuation after `15742b`: apparatus descent and exact task fibre — 28 October 2026
+## #334 checkpoint at `1f4b85f` after `15742b`: apparatus descent and exact task fibre — 28 October 2026
 
-The existing Draft #334 has advanced through nine commits after
-`15742b846f380b75e7d8f869faf7bc51623ed2a6`; the current remote head inspected
-here is [`1f4b85f14292dfac07f61db27ff47a961e525d03`](https://github.com/gvakhrushev/d0_15/commit/1f4b85f14292dfac07f61db27ff47a961e525d03).
-It remains open and Draft, with no status-check rows reported at that head.
+The existing Draft #334 had advanced through nine commits after
+`15742b846f380b75e7d8f869faf7bc51623ed2a6`; this intermediate checkpoint is
+[`1f4b85f14292dfac07f61db27ff47a961e525d03`](https://github.com/gvakhrushev/d0_15/commit/1f4b85f14292dfac07f61db27ff47a961e525d03).
+At this checkpoint it was open and Draft, with no status-check rows reported.
+The later owner continuation and current PR state are recorded below.
 The source additions are pinned in the same owner branch: the [operator
 apparatus descent](https://github.com/gvakhrushev/d0_15/blob/1f4b85f14292dfac07f61db27ff47a961e525d03/02_REGISTRY/research/A4D_REGULAR_APPARATUS_SOURCE_DESCENT_2026_10_28.md),
 the [all-input task-faithful return-source proof](https://github.com/gvakhrushev/d0_15/blob/1f4b85f14292dfac07f61db27ff47a961e525d03/02_REGISTRY/research/sources/d0_task_faithful_source_2026-10-28/PROOF_RU.md),
@@ -978,7 +980,7 @@ slice; it must not be recorded as completed support until the theorem is
 compiled and tied to the actual application. The source additions make no
 claim, assembly, or lifecycle changes, and `GR_closed=false` remains.
 
-Exact source pins at the current owner head:
+Exact source pins at the `1f4b85f` checkpoint:
 
 | Artifact | Git blob | SHA-256 |
 |---|---|---|
@@ -997,3 +999,64 @@ Exact source pins at the current owner head:
 The updated source and task brief remain under the existing #334 owner. These
 results are integrated as scoped inputs to #402, not as independent acceptance
 of the owner or a replacement for the open physical application.
+
+## Latest #334 continuation after `1f4b85f`: task-faithful composition and off-copy AF frame — 28 October 2026
+
+The current remote head of the existing Draft #334 is
+[`fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`](https://github.com/gvakhrushev/d0_15/commit/fd35893d77e4aa5f819bafa0c6428c8e7a8f1812).
+The two commits after the `1f4b85f` checkpoint are `b8f30f7c2ad4bde2975c789c57ef8187d8219b7f`
+and `fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`; PR #334 remains open and
+Draft, and its current GitHub status-check rollup is empty. The first commit
+adds the compact [same-task return-source synthesis](https://github.com/gvakhrushev/d0_15/blob/fd35893d77e4aa5f819bafa0c6428c8e7a8f1812/02_REGISTRY/research/A4D_TASK_FAITHFUL_RETURN_SOURCE_2026_10_28.md),
+composing the existing full-input reporter-effect fibre, relative finite-error
+bound, apparatus descent and two-field recovery. It preserves the distinction
+between changes within one fixed report effect and changes to the task's report
+law; it does not impose a new action, price correction, or physical selector.
+
+The second commit changes the explicit AF frame placement. Every nonblank
+logical work label is placed in an off-copy matrix-unit module of the original
+AF algebra. The original Golden tree acts on diagonal copies, maps coordinate
+zero to the canonical inclusion, and fixes those off-copy modules. At a finite
+depth chosen from the label multiplicities, the complete operator satisfies
+`D U D = cP + (D-P)`. Each guarded frame-stage generator, including the actual
+SourceI inverse calls, transports within the diagonal support; its encoder or
+decoder insertion is skew separately. This removes the independent
+frame-source premise for this exact construction through the same retained
+nonnormal past. The cross-support negative control and free-QUERY obstruction
+remain nonzero and unchanged.
+
+The exact checker covers 171 controls over all 356 columns: rank 8, identity
+complement 324, 55 inverse/decode calls, 11 forward frame calls, and 73 total
+specified AF calls (24 Golden, one CX, 48 SourceI). The full changed fixture
+retains all 66 frame calls and the actual clock; the general-depth statement
+retains all `6 R_k` calls. The proof is not unrestricted raw-gate refinement.
+The checker was replayed in ordinary and optimized Python under Python 3.12.14
+and SymPy 1.14.0; both outputs match the owner receipt byte-for-byte at SHA-256
+`21e2008f370c4dfc87e52ed98425ca3f2a1361cf7ae18f6727674cb7dcf38522` with empty
+stderr. The [replay packet](sources/d0_334_post_1f_offcopy_frame_delta_2026-10-28/README.md)
+preserves the exact extracted checker, both local outputs, owner receipt,
+manifest, and its replay inputs. The packet's eight listed
+file hashes and four upstream source-input pins were rechecked against the
+manifest and fetched `fd35893d` tree during this integration.
+
+Current source pins at `fd35893d`:
+
+| Artifact | Git blob | SHA-256 |
+|---|---|---|
+| [`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md`](https://github.com/gvakhrushev/d0_15/blob/fd35893d77e4aa5f819bafa0c6428c8e7a8f1812/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md) | `1b77a1f7b549142b10ef5e4661ac00e31d8a459a` | `78222ffb16ae8ae8896440e584836fe350dbc8409a2d63fce7feb848b4d038b2` |
+| [`A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`](https://github.com/gvakhrushev/d0_15/blob/fd35893d77e4aa5f819bafa0c6428c8e7a8f1812/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md) | `96710693540a218014d1ff722dee4c24d0b2d1a5` | `96a6d30497346dbf635396d873590b77f0f659f658346eb86cbec129b3995b3e` |
+| [`A4D_TASK_FAITHFUL_RETURN_SOURCE_2026_10_28.md`](https://github.com/gvakhrushev/d0_15/blob/fd35893d77e4aa5f819bafa0c6428c8e7a8f1812/02_REGISTRY/research/A4D_TASK_FAITHFUL_RETURN_SOURCE_2026_10_28.md) | `be76ea1e008648cf2d12b7b9ced7714233e2addd` | `559a7a9a4c5517fb7a0f61d5bf0f4df687d88879b64c512f5980421af27c0161` |
+| Packet checker `check_7di_offcopy.py` | included in packet | `de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88` |
+| AF tree module | `47761f34bfffb4fe104ca66e0e1b61a509b9bc7a` | `9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee` |
+| Native execution grammar | `9a32a3fa2e594c087d24b9d5dec497c4c5e03f44` | `222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c` |
+| Incoming apparatus proof | `8325834fc09fdd9cd8f278d3bcd6fbd97833253d` | `1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254` |
+
+No Lean file changed in this #334 range. The result is a scoped mathematical
+source substitution, not physical admission of the AF/middle operations,
+growth/routing, the complete allowed `X_N` and price, exact finite stationarity,
+or GR closure. The existing moving-projector declarations remain applicable
+to their Book03 matrix derivative statement; the complex effect-fibre,
+operator-apparatus descent, two-field recovery, and this AF placement have no
+new Lean declarations or `formal_support` rows. No claim, assembly, lifecycle,
+acceptance, Ready state, merge or `GR_closed` status changes follow. The primary
+artifact explicitly retains `GR_closed=false`.

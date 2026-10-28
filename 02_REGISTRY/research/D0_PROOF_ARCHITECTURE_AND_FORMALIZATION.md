@@ -13024,9 +13024,9 @@ baseline, and work validation pass. The Lean source tree did not change in this
 diagnostic increment; the recorded `D0.All` build evidence is from PR #402
 head `5f3e6ac`.
 
-## New #334 source intake after `15742b` — 28 October 2026
+## #334 source checkpoint at `1f4b85f` after `15742b` — 28 October 2026
 
-The current existing-owner head inspected for this integration is
+The intermediate existing-owner checkpoint inspected for this intake is
 `1f4b85f14292dfac07f61db27ff47a961e525d03`. Its post-`15742b` source range
 adds an operator-valued apparatus descent, an exact all-input reporter-effect
 fibre with a relative finite-error bound, and a two-scalar local nonlinear
@@ -13072,6 +13072,42 @@ are recorded as source-level inputs and a named formalization seam, not as
 completed claim-to-Lean applications, independent C0 acceptance, or physical
 closure. `GR_closed=false`.
 
+## Latest #334 source continuation at `fd35893d` — 28 October 2026
+
+The existing Draft #334 now points to
+`fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`; its two commits after the
+`1f4b85f` checkpoint are integrated in the [source map](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md).
+The new compact same-task source composes the exact all-input reporter-effect
+fibre and its relative finite-error estimate with the already-pinned apparatus
+descent and two-field handoff. It preserves independent preparation, field and
+report-law sources. Equality of full report effects is a condition on the
+specified task, not a physical selector for that task.
+
+The changed AF frame uses explicit off-copy placements for every nonblank
+logical work label. At the chosen finite depth, the full operator has
+`D U D = cP + (D-P)`; each guarded frame-stage generator, including actual
+SourceI inverse calls, has a zero Hermitian source before the protected trace
+through the same retained nonnormal past. The source proof covers the named
+off-copy layout and its guarded supports; the cross-support and free-QUERY
+negative controls remain. Its 171-check replay is preserved with ordinary,
+optimized and owner receipts in
+[`d0_334_post_1f_offcopy_frame_delta_2026-10-28`](sources/d0_334_post_1f_offcopy_frame_delta_2026-10-28/README.md).
+The checker SHA-256 is
+`de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88`; the
+byte-identical receipt SHA-256 is
+`21e2008f370c4dfc87e52ed98425ca3f2a1361cf7ae18f6727674cb7dcf38522`.
+
+No Lean source changed in this owner range. The fresh moving-projector
+inventory at #402 snapshot `f19c8762622932b970facc24340907a6fb004b86`
+continues to confirm only the two Book03 moving-projector derivative
+declarations; it is not refreshed by this evidence-only integration. The
+same-task complex effect characterization, operator apparatus descent,
+two-field recovery, and off-copy AF source remain without Lean declarations or
+new `formal_support` rows. They are supporting mathematical source results,
+not physical admission of AF operations, growth/routing, the full allowed
+`X_N` and price, exact finite stationarity, independent acceptance or GR
+closure. `GR_closed=false`.
+
 ## Exact C0 primary-section pin — current C0 pilot status
 
 `tools/c0_reconciliation.py` now pins the exact selected primary section by
@@ -13099,3 +13135,23 @@ clean. The source-only integration does not change Lean files, so the existing
 narrow Book03 moving-projector build receipt remains tied to the unchanged
 Lean source digest. The new research proofs are not represented as Lean build
 results.
+
+## Verification of the latest #334 intake — 28 October 2026
+
+The remote #334 branch was fetched and confirmed at
+`fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`. All eight files listed in the
+off-copy replay manifest match their byte counts and SHA-256 values; the four
+source-input pins match Git blobs at that head. The stored ordinary, optimized
+and owner receipts are byte-identical, and the 171-control source replay is
+retained in the linked packet. The proof-architecture tests pass 96/96,
+including the new packet-integrity and retrieval regression.
+
+Repository validation passes with 889 claims, 31 assumptions, 58 aliases, 238
+formal-support rows and 961 Lean-closure rows; generated Lean views report
+`stale=0`; formalization-debt findings remain 5 against baseline 5; work
+validation and `git diff --check` pass. No Lean source changed, so the existing
+moving-projector `D0.All` declaration inventory and build receipt remain pinned
+to their recorded source digest. These checks validate the source intake and
+its retrieval/integrity boundaries. They do not extend the Lean theorem, add a
+formal-support claim, or establish physical admission, independent acceptance
+or `GR_closed`.
