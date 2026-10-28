@@ -98,6 +98,7 @@ CASES: list[dict[str, Any]] = [
             "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin",
             "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource cubicMatterCoefficientNorm cubicMatterMidpointSample finiteMatterForwardGradient transverseFivePointLaplacian",
             "D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement cubicMatterMidpointSample_euclideanError_eq_remainder cubicMatterMidpointSample_euclideanError_le_refinementBound exact Euclidean O(h^2) error same recursive record CAR complement five-point stencil source",
+            "nonvacuum_brinkmann_stencil_midpoint_refinement_declarations_2026-10-26.json twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",

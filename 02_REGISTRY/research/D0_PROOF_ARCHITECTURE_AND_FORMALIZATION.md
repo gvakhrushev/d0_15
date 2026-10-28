@@ -11953,7 +11953,27 @@ projector, pointwise isometry and Hermiticity, nonempty finite carrier,
 `a16266af605f28005233ce6ffe973801fba748a7` checked the common curves and
 signs. This is a conditional mathematical composition, not physical
 admission or the complete absolute Info/work/controller price; the real-trace
-to complex-ρ identification and general fixed-Gram transport are still open.
+to complex-ρ identification is supplied for locally Hermitian `Δ` on the
+standard fixed inner product by `D0.Analysis.MatrixThermalDensityBridge`.
+It proves `Tr ρ=1` and identifies the thermal term with
+`−Tr(ρ(dΔ−[K,Δ]))` as a complex equality. The full derivative remains real.
+An independent read-only review of blob
+`817f4e9a1223ed51410cd1da4234c9d881d1d9b6` checked the normalization,
+reality and common-curve conditions; it did not replay Lean or establish
+physical admission. General fixed-Gram transport remains open.
+
+The final `D0.All` build at Lean source digest
+`c5826858cdc93ebc192cb3a5b871f6b2f840218e785d6ee437ae301446ba2858`
+completed 4,763 jobs with Lean 4.30.0, dependency digest
+`a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e`
+and environment digest `b157524d943853ad0a23855c68a20a441915f0609104a93e68d53b4ad3c1a004`.
+The [six-declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/thermal_moving_heat_feedback_declarations_2026-10-28.json)
+was extracted from clean published snapshot `af02b15e25b9b281cf508fb34b7daa675cf08900`,
+with SHA-256 `1622bf111a3aabb294829c1fd22d20fa623aec4426e51548f5a542d0cc2cf5d5`.
+Its axiom closures are `propext`, `Classical.choice` and `Quot.sound`.
+That build predates the separate density bridge; its own final integration
+check is still required. Toolchain and generated-cache limitations are those
+stated by the build receipt.
 
 For `D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001`, the source candidate
 `75527846bf3603a1c51acf445f8354e3254341be:02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#§1/Eq(1)`

@@ -1780,6 +1780,18 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(result["expected_blob"], source["blob"])
         self.assertEqual(result["missing_sections"], [])
 
+    def test_nonvacuum_inventory_query_returns_direct_content(self) -> None:
+        case = next(item for item in cold_start.CASES
+                    if item["id"] == "positive-nonvacuum-recovery")
+        query = case["queries"][-1]
+        path = ("02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+                "nonvacuum_brinkmann_stencil_midpoint_refinement_declarations_2026-10-26.json")
+        hits = proof.full_text_search(proof.ROOT, query, limit=18)
+        result = cold_start._required_source_status([(query, hits)], {"path": path})
+        self.assertTrue(result["found"], result)
+        self.assertEqual(result["source_origin"], "workspace")
+        self.assertLessEqual(result["candidate_rank"], 18)
+
     def test_nonvacuum_stencil_cold_start_retrieves_the_compiled_application(self) -> None:
         case = next(
             item for item in cold_start.CASES
@@ -2954,14 +2966,14 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(lean_retrieval["status"], "found_direct_content")
         self.assertEqual(lean_retrieval["source_origin"], "pinned_snapshot")
         self.assertEqual(lean_retrieval["query_index"], 18)
-        self.assertEqual(lean_retrieval["candidate_rank"], 7)
+        self.assertEqual(lean_retrieval["candidate_rank"], 6)
         self.assertEqual(
             lean_retrieval["commit"],
-            "7d52c4193cc4b1ebfed1142d327446a6128465b7",
+            "423ec9a87553a14c6f484e429a6d3309eeae256a",
         )
         self.assertEqual(
             lean_retrieval["blob"],
-            "df316992b289e0a9ada03adb2852227e8da91ed1",
+            "07a988011a77ee87aa13d5d816680920d51a3007",
         )
         euclidean_refinement = positive_nonvacuum[
             "same_record_euclidean_refinement_retrieval"
