@@ -6739,8 +6739,7 @@ Final integration checks at retrieval-tool head 00c56c5242d2b20d1e23134886069919
 
 ### Exact stencil-to-midpoint application for the positive nonvacuum source (25 October 2026)
 
-Source unit key:
-`8b94198c8dfbdf5983ad0b350b058fb30bb68a54:02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md#§§7.1–7.2`, blob `63c36b18af67fc1f113f9e33deb13cf43ddf4556` ([pinned source](https://github.com/gvakhrushev/d0_15/blob/8b94198c8dfbdf5983ad0b350b058fb30bb68a54/02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)). This is one finite algebraic subresult of the existing positive example; it is not an independent claim row or an accepted C0 disposition.
+The positive nonvacuum harmonic quadratic/cubic Brinkmann source uses one fixed nonlinear Einstein-null-scalar metric. Its exact same-carrier source is `02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`, §§7.1–7.2, commit `8b94198c8dfbdf5983ad0b350b058fb30bb68a54`, blob `63c36b18af67fc1f113f9e33deb13cf43ddf4556` ([pinned source](https://github.com/gvakhrushev/d0_15/blob/8b94198c8dfbdf5983ad0b350b058fb30bb68a54/02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)). This is one finite algebraic subresult of the existing positive example; it is not an independent claim row or an accepted C0 disposition.
 
 `D0.Geometry.NonvacuumBrinkmannStencil` is now an explicit support root in `formal_support.csv` and is imported by generated `D0.All`. It defines the exact centered five-point transverse Laplacian, the source's harmonic quadratic/cubic family, the radial quadratic profile, the real two-component norm, and the actual finite midpoint update/forward gradient. The compiled theorems prove: (1) the displayed harmonic terms are annihilated for every nonzero mesh width; (2) the radial quadratic reads as four; (3) the combined profile reads as `-4 * coupling * energy`; (4) the forward difference of the same finite midpoint matter update equals its midpoint rate; and (5) the sourced profile's energy is exactly the squared norm of that record's forward gradient.
 
@@ -13961,7 +13960,7 @@ were not run for this research result. `GR_closed=false`.
 ## #334 continuation at `d200d411` — canonical AF stationary family and archive criterion
 
 The next #334 increment adds a second, source-distinct mathematical application:
-the [canonical AF proof at `8cf4c25b`](https://github.com/gvakhrushev/d0_15/blob/8cf4c25b4d3e34a3ce9e7e457049aacc918388d0/02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md),
+the exact `Z[p]` GNS rank-104 canonical Fibonacci AF tower `A2 -> A5` stationary-reflection archive proof is the Russian artifact `02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md` (commit `8cf4c25b4d3e34a3ce9e7e457049aacc918388d0`, blob `f8675130936e45d9718781d38ef5b762ebaf0eba`; [pinned proof](https://github.com/gvakhrushev/d0_15/blob/8cf4c25b4d3e34a3ce9e7e457049aacc918388d0/02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md));
 the [checker at `6415f5c8`](https://github.com/gvakhrushev/d0_15/blob/6415f5c8e106e48dd20c2bf72d625b33f52b2360/02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/check_canonical_seed.py)
 with status `PASS_CANONICAL_AF_STATIONARY_REFLECTIONS` and 1,970 checks,
 the [executed result JSON at `d200d411` with fields `all_complex_left_directions_checked=233` and `all128_protected_archive_units_checked=128`](https://github.com/gvakhrushev/d0_15/blob/d200d411bce62fe42fe93096d1b36319936561db/02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/result.json),
