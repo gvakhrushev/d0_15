@@ -12470,6 +12470,17 @@ Lean source digest, verify the full build closure, authenticate the reported
 review or infer semantic correspondence from a type string. Other candidates
 are explicitly unenumerated and unresolved; no coverage percentage follows.
 
+`python tools/proof_architecture.py --json c0-books --snapshot a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38`
+produces a separate review view over the ten tracked books at that commit.
+The byte ranges reconstruct all 1,329,742 source bytes in 721 spans, including
+preambles. Each span is explicitly unresolved. Heading boundaries use a
+lexical ATX/fence scan, not a full Markdown or mathematical parser: nested
+fences, HTML, math and unclosed fences can affect candidate boundaries. The
+view establishes byte accounting for the selected book set only; it does not
+establish a list of mathematical units, classify exclusions, freeze C0 or
+authenticate scientific acceptance. Research, registry, certificates and
+negative controls remain outside this book-only view.
+
 ### Weak smooth test for the composed frozen refinement
 
 [`D0.Geometry.ArchiveGradedRefinementWeakTest`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean)

@@ -3077,9 +3077,9 @@ def run_assembly_impact(root: pathlib.Path, base: str, ref: str | None) -> dict[
     return json.loads(proc.stdout)
 
 
-def _render_text(value: Any, *, complete_arrays: bool = False) -> str:
+def _render_text(value: Any, *, complete_arrays: bool = False, complete_strings: bool = False) -> str:
     def bound(item: Any) -> Any:
-        if isinstance(item, str) and len(item) > MAX_FIELD_CHARS:
+        if isinstance(item, str) and len(item) > MAX_FIELD_CHARS and not complete_strings:
             digest = hashlib.sha256(item.encode("utf-8")).hexdigest()
             return item[:MAX_FIELD_CHARS] + f"… [truncated {len(item) - MAX_FIELD_CHARS} chars; sha256={digest}]"
         if isinstance(item, list):
@@ -3131,6 +3131,8 @@ def main() -> int:
     receipt.add_argument("path", help="repository-relative JSON receipt path")
     c0 = sub.add_parser("c0-pilot", help="inspect the pinned source-to-Lean pilot; C0 acceptance remains open")
     c0.add_argument("--snapshot", default="HEAD", help="Git commit or ref to inspect (default: HEAD)")
+    books = sub.add_parser("c0-books", help="partition tracked book bytes into unresolved review spans")
+    books.add_argument("--snapshot", required=True, help="full Git commit SHA to inspect")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -3139,7 +3141,17 @@ def main() -> int:
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
     root = args.repo_root.resolve()
-    if args.command == "c0-pilot":
+    if args.command == "c0-books":
+        if __package__:
+            from . import c0_book_byte_partition
+        else:
+            import c0_book_byte_partition
+        try:
+            result = c0_book_byte_partition.capture(root, args.snapshot)
+        except c0_book_byte_partition.EvidenceError as exc:
+            result = {"schema": "d0-c0-book-byte-partition-prototype-v1",
+                      "capture_status": "unresolved", "reason": str(exc)}
+    elif args.command == "c0-pilot":
         if __package__:
             from . import c0_reconciliation
         else:
@@ -3231,9 +3243,12 @@ def main() -> int:
     print(_render_text(
         result,
         complete_arrays=(args.command == "crosswalk" and args.all_current)
-        or args.command in {"claim-sources", "alias-sources"},
+        or args.command in {"claim-sources", "alias-sources", "c0-books"},
+        complete_strings=args.command == "c0-books",
     ))
-    return 1 if args.command == "c0-pilot" and result.get("issues") else 0
+    return 1 if ((args.command == "c0-pilot" and result.get("issues")) or
+                 (args.command == "c0-books" and result.get("capture_status") !=
+                  "expected_book_blob_bytes_reconstructed")) else 0
 
 
 if __name__ == "__main__":
