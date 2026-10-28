@@ -3129,6 +3129,8 @@ def main() -> int:
     receipt = sub.add_parser("receipt-status",
                              help="check recorded report inputs against their snapshot and the current checkout")
     receipt.add_argument("path", help="repository-relative JSON receipt path")
+    c0 = sub.add_parser("c0-pilot", help="inspect the pinned source-to-Lean pilot; C0 acceptance remains open")
+    c0.add_argument("--snapshot", default="HEAD", help="Git commit or ref to inspect (default: HEAD)")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -3137,7 +3139,13 @@ def main() -> int:
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
     root = args.repo_root.resolve()
-    if args.command == "receipt-status":
+    if args.command == "c0-pilot":
+        if __package__:
+            from . import c0_reconciliation
+        else:
+            import c0_reconciliation
+        result = c0_reconciliation.reconcile(root, args.snapshot)
+    elif args.command == "receipt-status":
         relative = pathlib.PurePosixPath(args.path.replace("\\", "/"))
         if (relative.is_absolute() or ".." in relative.parts or ":" in args.path
                 or not relative.parts or relative.suffix.casefold() != ".json"):
@@ -3225,7 +3233,7 @@ def main() -> int:
         complete_arrays=(args.command == "crosswalk" and args.all_current)
         or args.command in {"claim-sources", "alias-sources"},
     ))
-    return 0
+    return 1 if args.command == "c0-pilot" and result.get("issues") else 0
 
 
 if __name__ == "__main__":

@@ -12,6 +12,7 @@ from unittest.mock import patch
 from tools import compact_proof_architecture_cold_start as compact
 # Keep receipt-status controls in the existing fast compaction CI gate.
 from tools.test_receipt_freshness import ReceiptFreshnessTests
+from tools.test_c0_reconciliation import ReconciliationFixtureTests
 
 
 def example_case():

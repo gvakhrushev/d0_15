@@ -12453,6 +12453,23 @@ changed. A future reproducible search receipt needs an explicit corpus and
 tool/environment capture and the availability of every followed pin; those
 remain open rather than being inferred by this command.
 
+### Source-to-declaration reconciliation pilot
+
+`python tools/proof_architecture.py --json c0-pilot --snapshot 61bd3f2afecc6eba38e9c4cb00737b18fbd85a42`
+examines the pinned #310 fixed-sine example through the existing primary
+artifact, scientific source, formal support, consumer graph and compiled
+declaration inventory. It checks raw Git objects and tracked source links,
+the precise source and inventory pins, the recorded theorem signature and
+the recorded axiom list. It reports independently blocked or unresolved
+checks when inputs are absent, changed or ambiguous. A later snapshot may
+therefore fail the pinned pilot without invalidating the historical result.
+
+This is a single metadata reconciliation, not an exhaustive enumeration or
+acceptance of C0. The tool does not replay the build, recompute the reported
+Lean source digest, verify the full build closure, authenticate the reported
+review or infer semantic correspondence from a type string. Other candidates
+are explicitly unenumerated and unresolved; no coverage percentage follows.
+
 ### Weak smooth test for the composed frozen refinement
 
 [`D0.Geometry.ArchiveGradedRefinementWeakTest`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean)
