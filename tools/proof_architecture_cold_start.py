@@ -870,6 +870,27 @@ CASES: list[dict[str, Any]] = [
             "This is an algebraic matrix result only."
         ),
     },
+    {
+        "id": "fixed-sine-weak-readout-c0-pilot",
+        "queries": [
+            "archive_doubling_sine_weak_pairing_tendsto",
+            "one-step estimates composed fixed-torus failure fixed sample sine weak 2/pi",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md",
+            "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean",
+        ],
+        "scope_review": (
+            "The named Lean result proves that the normalized four-role counting pairing of the "
+            "specific composed frozen pullback error with the fixed sampled sine tends to 2/pi. "
+            "This is a scoped weak-convergence obstruction for that component and sampling convention. "
+            "It does not rule out other readouts or establish physical refinement/admission. "
+            "The exact public declaration is resolved separately with `show --lean`; its compiled "
+            "type, proof dependencies, source pin, and trust footprint are preserved in the current "
+            "declaration inventory."
+        ),
+    },
 ]
 
 

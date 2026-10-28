@@ -4745,6 +4745,22 @@ class ProofArchitectureTests(unittest.TestCase):
             [hit["source"] for hit in exact_generation_hits],
         )
 
+    def test_fixed_sine_weak_readout_c0_pilot_is_discoverable(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "fixed-sine-weak-readout-c0-pilot"
+        )
+        query_hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(query_hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], query_hits))
+        for path in case["required_refs"]:
+            status = cold_start._required_source_status(query_pairs, {"path": path})
+            self.assertTrue(status["found"], f"cold-start search missed {path}: {status}")
+        self.assertIn("scoped weak-convergence obstruction", case["scope_review"])
+        self.assertIn("does not rule out other readouts", case["scope_review"])
+
     def test_source_port_preparation_consumes_shared_tensor_api(self) -> None:
         inventory_path = (
             proof.ROOT
