@@ -88329,3 +88329,289 @@ the embedded code/JSON match those exact bytes and hashes. Incoming
 primary and brief are preserved as canonical Git-content prefixes,
 including the non-null source distinction and direct source route.
 git diff --check is clean. No remote CI or physical acceptance is claimed.
+
+## 7da. Apply the original retained-history source to its own complete geometry
+
+28 October 2026. Same owner and write paths. Input716387e3 includes
+the new original noncommuting chronological source and preserves7cz.
+This is native realization / final composition, not an independent
+research lane. The parent is equation(12) of
+[the original retained-history proof](sources/d0_original_retained_history_source_2026-10-28/PROOF_RU.md#4-прямой-составной-потребитель-ото-одна-оставшаяся-source-карта).
+We substitute its ACTUAL geometric operator map and exact source,
+instead of leaving its quadratic term as an unidentified action.
+The declared same-execution lift, actual stationary family and controlled
+Einstein/matter limit remain premises; no physical closure is asserted.
+
+Incoming5140d2ab is also consumed and preserved, including its public
+joint-error-budget summary, complete observed receipt and spectator-
+multiplicity correction. Its uncomputed geometric first term is the
+same parent application treated here; its conditional estimates remain.
+
+### 890. The complete history already supplies the spatial operator
+
+Consume7k(101)--(109), rather than request another geometric input:
+
+    L_hist -> its actual clock blocks -> S0(V)
+           -> original full128 U_j -> original signed Julia blocks
+           -> a_j=(h_j/16)D_j -> owned coframe/link dictionary.
+
+The fixed dark/Omega reducing isometries and the negative Julia-root
+inverse recover the original signed blocks, even when a_j is singular.
+This is an operator readout on the declared original family. It does
+not prepare those dark inputs, admit arbitrary continuous gate changes,
+or identify the decoded metric with every possible clock observable.
+The original true-adjoint domain, actual density/Gram/observer and
+full sites tensor CAR16 carrier are retained. A homogeneous CAR16
+Fourier block alone does not cover spatially varying field directions.
+
+In particular the existing exact identity is
+
+    i0* S0(U) i0 = (p² h²/(128 N)) D_sp².
+
+It is a compression of the chronological Schur operator, not equality
+of the complete scene Laplacian with D_sp². Whole-scene heat cannot be
+replaced by the heat of this cold compression. Thus the operator map
+is supplied; equality of the resulting scalar sources is a different
+question, calculated next without that replacement.
+
+### 891. Exact noncommuting return source in all geometric directions
+
+Use precisely the incoming chronological definitions(1)--(6):
+
+    k=2p², a_j=c_j D_j, c_j=h_j/16, A_j=a_j* a_j,
+    C_j=I-k A_j, K=C_n ... C_1,
+    D_ret=(1-z)I+z K* K,
+    R_j=C_(j-1)...C_1, T_j=C_n...C_(j+1),
+    W_j=Herm[R_j D_ret^-1 K* T_j].
+
+All128^n records and actual oldRIGHT are retained. The factor r_R
+below is permitted only for a genuinely passive oldRIGHT spectator;
+otherwise its coupled complete matrices remain inside the trace.
+At fixed h_j,p,z,r_R and rank,
+
+    E_j=c_j²(D_j W_j+W_j D_j),
+    G_j=2 r_R z k E_j,
+    DJ_n[v]=sum_j Tr(G_j DD_j[v]).                    (890)
+
+Proof: substitute DA_j=c_j²(D_j DD_j+DD_j D_j) into
+the already proved 2 r_R z k sum Tr(W_j DA_j) and cycle the trace.
+No commutation of W_j with D_j, or of different ticks, is used.
+Every DD_j is taken through the SAME history map; the tick operators
+are not thereby declared independent physical controls.
+
+Now consume the original positive-adjoint owner's equations(4),(10),(12):
+
+    d_j=h_j^-1 sum_r[C(u_jr) Lambda(M_jr) S_r-C(u_jr)],
+    D_j=d_j+d_j*, u_xr=L_x v_xr,
+    M_xy=L_x U_xy L_y^-1.
+
+Here C is the original exterior creation operator; L_x is the actual
+positive observer whitening, not the retained-history isometry.
+For edge block d_xy=h_j^-1 C(u_xr)Lambda(M_xy), its coframe source is
+
+    (2/h_j) Re Tr[(G_j)_yx C(Du_xr) Lambda(M_xy)
+                       -(G_j)_xx C(Du_xr)].           (891)
+
+For the LEFT link generator N_xy=DM_xy M_xy^-1, put
+
+    Z_xy,j=h_j^-1 Lambda(M_xy)(G_j)_yx C(u_xr).
+    DJ_n|link=2 Re sum_(j,edges) Tr[Z_xy,j Gamma(N_xy)]. (892)
+
+Indeed DLambda(M)=Gamma(N)Lambda(M); the displayed order follows
+by cyclicity. A right generator has the different cyclic order.
+Equations(891),(892) give the sixteen coframe and twenty-four proper
+Lorentz directions on the original chart. Observer/Gram changes enter
+BOTH Du and DM; density and physical field calibration enter through
+the already owned v-map. Moving h,p,z,rank or other actual inputs
+retain their separate derivatives or admitted finite comparisons.
+
+The available norm is also explicit:
+
+    ||W_j||op <= 1/(1-z),
+    ||G_j||op <= 4 r_R z k c_j² ||D_j||op/(1-z).
+
+Pair this bound with the trace norm of the actual DD_j[v]. No
+mesh-uniform derivative bound or effective Einstein gain is inferred.
+
+### 892. The same master source keeps its complete heat
+
+For the original master with the actual scene operator Delta_hist,
+fixed beta and fixed Hilbert/Gram coordinates, let
+
+    rho_full=exp(-beta Delta_hist)/Tr exp(-beta Delta_hist).
+
+The exact combined source on the declared original all-blank return is
+
+    Db[v]=-Tr(rho_full DDelta_hist[v])
+                         +sum_j Tr(G_j DD_j[v]).       (893)
+
+The first trace includes every scene, clock, work, record and oldRIGHT
+mode of THIS realization. Equation890 ties its geometric variables to
+the same history, not to an independently supplied spatial heat.
+Any actually selected extra price has its own additional derivative.
+
+For the owned homogeneous normalized scene-clock operator(102), with
+fixed scene matrices, this thermal derivative can be read directly as
+
+    DH[v]=2 Re sum_t Tr[(R_S rho_eff R_S)_(t,t+1) Dg_t[v]]. (894)
+
+This follows by differentiating
+L_hist=I-B_S-R_S(T+T*)R_S and using DT_(t+1,t)=Dg_t.
+The effective matrix has the SAME 0-cochain type as L_hist. If the
+declared heat traces L_hist alone, rho_eff=exp(-beta L_hist)/Z0.
+For the owned full0+1 incidence heat, put Z0=Tr exp(-beta L_hist)
+and use instead
+
+    rho_eff=2 exp(-beta L_hist)/(359 N dim(K)+2 Z0).
+
+Indeed the full0+1 partition trace contains BOTH equal nonzero spectra
+and all359 N dim(K) excess harmonic modes. This matrix is not silently
+renormalized to trace one. The complete operator rho_full in(893) still
+lives on the full425 N dim(K) space; it cannot be inserted into a
+0-cochain clock block. The two explicitly typed cases are not equated.
+Moving B_S,R_S or Gram contributes its own product derivatives.
+All primitive stages, including COPY and preparation, remain in t.
+The existing winding bound may replace(894) by an error estimate
+ONLY on its homogeneous INTERNAL carrier and with the actual gain.
+The spatial HJR heat owner is not a substitute for this term.
+
+### 893. Why the additive quadratic shortcut loses the needed link source
+
+This evaluates the formerly unspecified S_h=sum_j Tr A_j in the
+incoming sufficient estimate(12), on the actual spatial map. Assume
+distinct directed edge blocks, as on the original periodic L>=4
+storage; L=2 collisions must first be combined and are not covered.
+Orthogonality of different matrix blocks gives EXACTLY
+
+    Tr D_j² = h_j^-2 [
+       2 sum_(x,r) ||C(u_xr)Lambda(M_xr)||F²
+       +sum_x ||sum_r(C(u_xr)+C(u_xr)*)||F² ].        (895)
+
+There is no Taylor expansion here. Off-diagonal blocks occur with
+their adjoints, producing the factor2; the second term is the true
+onsite block. All sites and all sixteen grades are traced.
+Consequently Tr A_j is h_j²/256 times(895).
+
+On the observer-preserving compact rotation sector Lambda(M) is
+unitary. The full16 CAR identities give
+Tr C(u)*C(u)=8||u||² and
+(C(w)+C(w)*)²=||w||² I16. Hence
+
+    Tr A_j=(1/16) sum_x [sum_r ||u_xr||²
+                                  +||sum_r u_xr||²]. (896)
+
+Every compact link derivative of(896) is zero, for arbitrary link
+holonomies in this sector. This is not the full independent-connection
+Palatini source: at constant unit coframe take omega_1=a J_12 and
+omega_3=b J_23. Their curvature contains
+F_13=ab[J_12,J_23]=ab J_13, with a nonzero scalar contraction
+and nonzero connection derivative for ab!=0 (overall curvature sign
+depends on convention). These are ordinary spatial rotations in the
+same Lorentz algebra. No torsion-free restriction was imposed in the
+original all24 comparison, and none is inserted to hide the difference.
+
+Thus W_j->I deletes the link-sensitive part of this source. It cannot
+supply the missing full Palatini identification merely because q_n is
+small. Equation(12) remains a correct CONDITIONAL estimate, but its
+first term must be checked, not assumed zero. This finding changes
+that attempted application: use the EXACT W_j, not its identity part.
+It is not a no-go for the full nonlinear history/heat source(893), the
+existing spectral IR route, or the distinct positive construction7cz.
+
+### 894. Matter must use its actual history dependence and actual cut
+
+There is no independent Psi in a_j=h_j D_j/16 when its observer and
+geometric data are fixed. Nor does changing a generated state license
+inserting a separate quadratic matter term into(893).
+The relevant positive map is already in paid-writer21.1(150)--(152):
+on its specified parity-even future-algebra and resolved-record context,
+
+    X_(omega,pi)=P_pi K_omega C_Psi,
+    S_(omega,pi)=X_(omega,pi)^+ X_(omega,pi),
+    P_t=sum_(omega,pi) P_pi tensor |omega><omega|
+                                     tensor S_(omega,pi).
+
+Here S uses the conjugate column-coordinate convention for the archive.
+For an ordinary ket expansion psi=sum_(i,a)X_ia|i>|a>, the physical
+archive projection is overline(S), and its derivative is overline(DS).
+The real primary preparation has the same initial real matrix, but
+complex Kraus histories must retain this conjugation. On a constant-rank chart,
+
+    DS=X^+ DX(I-S)+(I-S)DX* (X^+)*,
+    DX=P_pi[(DK_omega)C_Psi+K_omega DC_Psi].          (897)
+
+This follows by differentiating X=XS and S²=S; the two off-diagonal
+blocks of DS are fixed by X^+DX(I-S), and the diagonal blocks vanish.
+The chronological DK_omega is the sum of insertions in its ACTUAL
+Kraus word. No reset or independently selected future input is used.
+
+The primary preparation owner supplies the actual128 Fourier/oldRIGHT
+columns C_(x,grade),a=f_a(x)m_x/sqrt(128). The original nonuniform density
+stays in its native geometric/leg map; no extra density factor is inserted
+into C. Here sum_a f_a(x)^2=1/2 and ||m_x||=1, so the actual site weight,
+summed over all CAR grades, is1/256. Keep the physical amplitude calibration.
+For its local norm-preserving
+section m_x=sqrt(p)|1>+c_x|0>+d_x|14>+b_x|15>,
+d_x=sqrt(p²-c_x²-b_x²), one has
+
+    Dm_x=Dc_x|0>+Db_x|15>
+                       -(c_x Dc_x+b_x Db_x)|14>/d_x.
+
+The original primary family has c_x=0; moving Fourier, density and
+calibration data keep their own source. Physical Psi=sigma²(c,b)
+with the original sigma=p³ must not be replaced by the bare amplitudes.
+
+Substitute(897) into the owned moving-cut derivative of
+F=P U*(I-P)UP. This is a concrete potential matter channel of the
+original operator, without adding R or assigning Info from a target.
+It is NOT the same boundary as the all-blank return in(890)--(893).
+Its actual identification with the Book cut must be proved before
+combining the formulas. On the OTHER unconditioned future-orbit cut,
+paid-writer17.2 already proves complete preparation cancellation;
+that result is preserved. Full archive support gives DS=0, and rank
+birth is not a smooth direction. The CAR16 future-algebra theorem is
+not automatically a theorem for the whole sites tensor CAR16 space.
+
+### 895. Exact parent substitution and remaining physical application
+
+The substituted premise is the original-history geometric operator and
+first-source dictionary:7k plus(890)--(894) explicitly compute the
+original chronological covector in all40 geometric directions, with
+the same complete thermal operator. No unrelated geometry, thermal
+replacement, auxiliary price estimator or phase Hamiltonian is needed.
+The new incoming quadratic sufficient route has been tested on that
+actual dictionary; its automatic Palatini interpretation is rejected
+by(895)--(896). We retain the nonlinear source rather than dispatch
+another quadratic coefficient/rank scan.
+
+For closure the exact(893), on the physically admitted common-history
+comparisons and compatible stationary family, must still converge
+after its REAL gain to the owned Einstein--matter covector. If matter
+is supplied through the resolved-history cut, use(897) and that cut's
+complete Book derivative, not the different all-blank determinant.
+Independent apparatus equations and full physical refinement remain.
+The configured all40+2 solution and7cz are preserved at their scope.
+This is a computed composition and a scoped route correction, not
+GR_closed, a new scientific execution or acceptance of the parent.
+
+### 896. Verification scope
+
+The new equations are trace/product/block identities from the pinned
+owners. Two read-only derivations independently obtained(895)--(896);
+a separate index/factor check verified(890)--(892), including the left
+versus right link-generator order. No unchanged spectral/root search,
+large history replay, Lean build or remote CI is claimed. The incoming
+716387e3 numerical history checker is consumed as its owner's evidence,
+not reported as independently rerun here. PR402 was inspected read-only
+at31955a68: its new formal thermal trace derivatives and scoped book
+reconciliation are preserved; no shared architecture files are edited.
+
+Review corrections are incorporated: the full0+1 heat is reduced with
+its actual359 N dim(K) harmonic denominator, archive supports use an
+explicit conjugate-coordinate convention, and the actual uniform SITE
+weight of C is kept distinct from the nonuniform geometric leg density.
+Changed-document checks pass: work validation, agent protocol and
+gr_assembly check; scientific_promotion=false. The existing result
+template was consumed without editing acceptance/lifecycle. Diff
+whitespace is clean. No full mathematical replay is needed for this
+analytic composition, and none is represented as performed.

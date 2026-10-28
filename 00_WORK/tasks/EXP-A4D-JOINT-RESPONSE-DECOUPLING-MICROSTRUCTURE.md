@@ -16985,3 +16985,52 @@ The first repository scan reached its wrapper time limit; the subsequent
 ordinary run completed PASS. Both portable changed checks ran on their
 final UTF-8/LF bytes, with exact embedded receipts and hashes. All incoming
 canonical primary/brief content is preserved; no remote CI or acceptance.
+
+### Direct original retained-history geometry application — 28 October
+
+Continue the SAME native-realization/final-composition owner and only
+this brief plus the primary memo. Input716387e3 contains the original
+noncommuting retained-history source; input39b9c847's bank/material-
+metric/retention construction remains unchanged. PR402 at31955a68 was
+read for updates only; its architecture/formalization paths are not ours.
+
+Consume primary7k101--109 (same-history spatial operator recovery),
+native full-Lorentz adjoint4/10/12 (all40 map), new original-history
+proof5--6 (exact W_j), complete scene-clock heat and paid-writer21.1
+(actual record-resolved cut). The exact parent is the new history
+proof's equation12, whose geometric first source was not substituted.
+
+Primary7da now substitutes a_j=(h_j/16)D_j and computes the full
+noncommuting all40 source through G_j=2r_Rzk(h_j/16)^2{D_j,W_j}.
+It retains the complete scene heat with its own exact clock-block
+derivative. This removes an unrelated geometric operator from the
+input list; it does not identify scene heat with compressed spatial heat.
+Actual ranks, oldRIGHT coupling, moving observer/Gram/calibration and
+physical admission remain explicit. Fixed spectator factors are used
+only where the actual tensor decomposition permits them.
+
+Smallest decisive calculation: the exact full-site/CAR16 block trace
+of D_j². In the compact-link sector it has identically zero link rows,
+so replacing W_j by I cannot supply the full independent-connection
+Palatini source. The parent sufficient estimate remains correct; this
+application must keep its exact nonlinear W_j and full thermal source.
+No new rank scan or alternative fitted action is dispatched.
+
+The actual128-column material preparation can also be substituted into
+the OWNED resolved-history supports X=P_pi K_omega C_Psi and S=X^+X.
+Their constant-rank derivative supplies the concrete moving-cut source
+map. Its identification with the physical Book cut remains separate;
+it is not combined with the different all-blank determinant. Previous
+future-orbit preparation cancellation and rank-birth boundaries stay.
+
+Remaining parent application: prove the controlled Einstein--matter
+limit of this exact same-execution covector on physically admitted
+comparisons and a compatible stationary family, with actual matter,
+apparatus equations, gain and refinement. No new optimality, phase-HDA
+or independently prepared price-measurement premise is introduced.
+No Ready, retirement, assembly acceptance or physical GR promotion.
+
+Verification is bounded to the new algebraic composition, independent
+read-only factor/index checks and changed-document structural checks.
+The incoming full-history checker is consumed at its published scope,
+not represented as a new independent replay or remote CI run.
