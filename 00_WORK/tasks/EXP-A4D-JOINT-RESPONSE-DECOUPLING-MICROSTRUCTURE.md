@@ -17154,3 +17154,81 @@ Our different-duration price contrast is compatible with that positive
 result and does not refute fixed-N stationarity. The new section is7dc,
 equations903--909; the changed calculation still uses its immutable
 c296829f inputs. No unchanged mathematical replay is required.
+
+
+### 28 October 2026 — retained matrix past in the nonlinear Einstein-dust composition
+
+Phase: native realization / final composition. Inputs72619235 and the
+nonlinear dust source/recovery c296829f, with the existing7m/7n136,
+7ct821--822,7ah and7cz owners. Same #334; no separate task or selector.
+Consumer: dust §8's compatible retained-history application in the
+constitutive/native-programme-v1 parent. Owned write paths remain this
+brief and the primary memo. No shared governance/registry files change.
+
+The exact changed question is whether the nonlinear future-field source
+survives one ARBITRARY fixed retained past, including a noncommuting
+original full128 prefix, at the actual cumulative H+J price. The former
+scalar-product theorem and incoming absolute-growth comparison do not
+by themselves supply this source application.
+
+Primary7dd910--918 proves the application. Actual paid all-column parking
+and completed Spin restoration isolate the new private word and retain
+all old records. With K the true old cold corner, S=K* K and T the product
+of new scalar Grams, the full feedback is -Tr log[(1-zeta)I+zeta TS].
+The fixed-clock full heat is constant on this parked family, including
+all unused modes. The entire nonlinear field source is one positive
+history-dependent gain times the existing weighted all42 source sum.
+For an n-round original Julia past, S>=p^(6n)I: noncommutativity does not
+remove the gain. An actual variation of the past retains its additional
+matrix-source term; no equation is inferred by silently freezing it.
+
+The relative compiler and central-comparison bounds are uniform in the
+old spectrum. One-coordinate actual forks give cumulative nonlinear
+Einstein-dust soundness/recovery in the existing (C3)* / independent-block
+dual norm. A constructive finite-repeat schedule preserves the true
+positive weights, all old finite errors and records. A separate sealed-
+prefix corollary918 varies ONLY the newest block: it gives the same
+nonlinear forward/recovery on an append-only chain without retroactive
+variations or a cumulative-weight assumption. Actual baseline corners
+calibrate all gains; a frozen early compiler error is not normalized
+away with an ideal product. The actual AF frame
+map identifies each private blank input with the canonical old-state
+image, retaining the complement and full heat. This is not a proof that
+a coupled physical growth prefix automatically has the same spectrum.
+
+Smallest decisive check: exact matrix-log source on a nonnormal past,
+rank-deficient positive gain, nonzero old-source row, the hostile
+cross-block leakage example, full private-factor compression and the
+original positive Julia factor. Checker and observed receipt are embedded
+in7dd with immutable input pins. General bounds and weighted convergence
+are proved analytically; no large native word, old spectrum, GR-root or
+Lean replay is represented as new verification.
+
+Retained assumptions: the declared addressed programme and its actual
+same-task field lifts, full physical source identification where another
+implementation is used, regular decoded refinement and the dust theorem's
+matter branch. Source recovery is asymptotic, not exact finite roots or
+existence of all independently stationary controller/preparation rows.
+Book03 stationarity is already available and requires only the admitted
+lifts for forward inference, not equality of the whole physical domain.
+Incoming7dc's positive absolute continuation cost remains unchanged.
+No physical-GR promotion, acceptance row, Ready, retirement or closure.
+
+Final validation: exact changed checker passes all22 conditions under
+Python3.11; work and agent-protocol validators pass, assembly is valid
+with scientific_promotion=false, and diff check is clean. Independent
+read-only reviews corrected the ideal-product gain bias and distinguished
+full historical forks from sealed-prefix new-block variations. Actual
+price-evaluation error, if any, retains its separate 1/gain budget; no
+physical price-reading apparatus is inferred. The final stored proof
+uses actual baseline gains and keeps the same finite compiler provenance.
+No remote CI, physical acceptance or exact finite stationary root claimed.
+
+Incoming ebf92914 is also consumed at its exact scope: its reverse mass-
+coordinate lift extends917/918 recovery to every regular local positive
+irrotational Einstein-dust solution with the same branch kappa, and
+separately to every regular Ricci-flat constant-matter solution. The
+actual density/Jacobian, amplitude bounds and local no-caustic conditions
+remain; no arbitrary measure reset or new processor is used. This is a
+substitution into the generic DI_tau=0 recovery proof, not a new curvature
+calculation. Its109-check receipt is consumed, not represented as rerun.

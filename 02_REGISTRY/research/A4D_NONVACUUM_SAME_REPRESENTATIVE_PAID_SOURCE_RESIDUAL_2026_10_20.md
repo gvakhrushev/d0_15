@@ -89633,3 +89633,551 @@ Observed low endpoint:
   "numpy": "2.2.6"
 }
 ```
+
+
+## 7dd. Retain the original past in the nonlinear Einstein-dust source
+
+28 October 2026. SAME #334 / constitutive/native-programme-v1; native
+realization / final composition. Algebraic input72619235; incoming
+general reverse-lift ownerebf92914 is consumed below. This applies the new
+[nonlinear Einstein-dust theorem](A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md)
+to ONE accumulating execution with an arbitrary fixed retained past.
+The prior scalar-product construction7m/7ah is consumed, not repeated.
+The changed input is its nonlinear off-null source, and the old return
+corner is now a matrix, including the original noncommuting full128 past.
+
+**Parent substitution.** The retained-history part of dust §8 no longer
+needs a fresh initial execution for each new spatial catalogue. The
+same complete cumulative Book price has the nonlinear future-field
+source below, and its genuine finite comparisons admit cumulative
+soundness/recovery. Actual admission of the declared addressed programme
+and existence of its physically stationary histories are NOT inferred
+from retention. No extra least-action or full-space surjectivity premise
+is introduced: Book03 stationarity is consumed on admitted field lifts.
+
+### 910. Use all-column retention, not a scalar expectation
+
+Let V be the complete fixed old word on H_old, P its actual initial
+cut of rank R, and K=P V P restricted to ran P. Keep every old bank,
+App, record, unknown DATA and oldRIGHT column. Put S=K* K, 0<=S<=I.
+Neither V nor K need be a reflection, scalar or normal. The new query
+has its OWN genuine private work and the strong completed-block guards
+of7ct821--822. Its full cold corner is c I on the ENTIRE protected old
+carrier, including the complement of P. Consequently the complete
+old-plus-new return corner is exactly c K. This also holds for the
+actual finite compiler's scalar c_hat; it is not just an ideal limit.
+
+The all-column requirement matters. In general,
+
+    P B_new V P=(P B_new P)K+P B_new(I-P)V P.
+
+A scalar compression P B_new P=cP alone cannot remove the second term.
+Nor may old failed-return records be reused as fresh query blanks.
+All required old records and oldRIGHT remain immutable. The COMPLETED
+new block is identity on every old column, including mutable D/Spin;
+its actual intermediate parking and SourceI interactions remain paid.
+
+For EXACT full-heat neutrality use the already owned paid parking
+identity7n136 on the ENTIRE changing physical register, including its
+mutable ordinary helper/port. Spin instead keeps its proved all-column
+identity factor and is not moved by ordinary CX. If D is reused and S_j is genuine private storage,
+
+    Swap_(D,S_j)[Q_(D,W_j) tensor I_(S_j)]Swap_(D,S_j)
+                    =I_D tensor Q_(S_j,W_j).             (910)
+
+The intervening circuit must not address the parked old S_j. Each
+swap is actually executed; on the declared addressed CX interface it
+costs three CX per qubit, hence the pair costs six per qubit. These
+stages, preparation, inverses and records enter the true clock. This
+uses that already declared interface; the smaller port-star alphabet
+7bk521 does NOT itself provide arbitrary addressed swaps.
+
+After parking, completed Spin restoration821--822 and disjoint private
+registers give u_j(Y_j)=A_j(Y_j)* Q_j A_j(Y_j) on the private block,
+and the identity on ALL old columns. Q_j is the actual fixed reflection
+of the dust programme. The finite cumulative endpoint and input are
+
+    W_M=V tensor (tensor_(j<=M) u_j),
+    P_M=P tensor (tensor_(j<=M) |0_j><0_j|).
+
+This is the old7m construction with V retained instead of an identity
+past. Its joint conjugacy to V tensor tensor_j Q_j makes the COMPLETE
+homogeneous INTERNAL heat H_M field-constant at this fixed actual
+clock, scene, dimension and input cut. V need not be a reflection.
+Without the full parking/factorization, scalar cold compression alone
+does not prove this heat statement; the general all-unitary winding
+bound and7cz retention construction remain the separate fallback.
+
+### 911. One absolute matrix price, and its exact all-field source
+
+Use the fixed native tau of the dust theorem, in particular tau=p^2,
+its EPS_PLUS coframe/link/matter chart and its actual mu_s=h^4 weights.
+There is no weak-query tau->0 or substitution of an Einstein residual
+for the original click. For each future block set
+
+    I_j=I_(tau,h_j), P_j=I_j/Omega_j,
+    t_j=c_j^2=1-alpha_j gamma_j P_j(1-gamma_j P_j)>0,
+    b_j=alpha_j gamma_j(1-2gamma_j P_j)>0,
+    T_M=product_j t_j, a=1-zeta,
+    D_M=a I+zeta T_M S.
+
+The strict positive report collar and shape constants are those of the
+existing compiler. On this ideal generated field graph the WHOLE price
+and its derivative, with the past fixed, are
+
+    B_M=H_M-Tr log D_M,
+    w_M=zeta T_M Tr[S D_M^(-1)],
+    lambda_j=b_j/(Omega_j t_j),
+    D B_M=w_M sum_(j<=M) lambda_j D I_j.                 (911)
+
+All sixteen coframe, twenty-four proper-Lorentz and two matter rows
+are varied before restriction to a solution. Trace is the actual old
+input trace: passive multiplicities occur once, not once per new blank
+column or primitive-clock stage. All old heat modes and the absolute
+feedback anchor remain. This is not sum_j B_j. It generally has mixed
+cross-block derivatives. Dividing the covector by a current positive
+gain does not differentiate that gain times an action.
+
+Proof: the total cold corner is (product_j c_j)K, hence its Gram is
+T_M S. The finite positive matrix log differential is
+-D Tr log D_M=-Tr[D_M^(-1) D D_M]. Use D t_j=-b_j D P_j
+and D P_j=D I_j/Omega_j. No old C_i commute assumption is used.
+
+The only possible loss of future feedback gain is S=0. For an ACTUAL
+old n-round original full128 Julia history it is already excluded:
+
+    C_i=I-2p^2 A_i, 0<=A_i<=I,
+    C_i>=p^3 I, K=C_n ... C_1,
+    S>=p^(6n) I>0,       1-2p^2=p^3.                    (912)
+
+The lower bound uses minimum singular values of a product, not an
+incorrect Loewner product of noncommuting matrices. For an arbitrary
+other old word, only S!=0 is required; a rank-deficient nonzero S works.
+Thus the original retained past changes the common positive gain in911,
+not the nonlinear future-field equation or the relative block weights.
+This does NOT identify the original past's own source7da with the new
+click source. If past fields are varied, the additional term is exactly
+
+    -zeta T_M Tr[D_M^(-1) D S],                          (913)
+
+plus their full heat/source rows. It is never discarded. This theorem
+compares continuations of a sealed common prefix; full stationarity on
+a larger admitted domain would imply its future-field stationarity,
+not conversely.
+
+### 912. The source comparison is uniform in the entire old spectrum
+
+Fix one changed block, keep every other actual block at its base value,
+and absorb their scalar Grams into r, 0<r<=zeta. Write t=t(P),
+F_S(P)=-Tr log[aI+r t(P)S], b=-t'>0, d=2alpha gamma^2.
+Then its true central gain is
+
+    g_S(P)=r b(P) Tr[S(aI+r t(P)S)^(-1)]/Omega>0.
+
+On the compact positive collar choose b_min,b_max. The scalar spectral
+calculus for the FIXED S (not for individual old C_i) gives
+
+    |partial_P log g_S|<=L=d/b_min+zeta b_max/a,
+    |F_S'''/F_S'|<=Q=3d zeta/a+2 b_max^2 zeta^2/a^2.    (914)
+
+Indeed the trace is a positive sum of s/(a+rts). Its logarithmic
+t-derivative is a weighted mean of -rs/(a+rts), of absolute value
+at most r/a. Direct differentiation gives
+F_S'''/F_S'=-3dr E[s/(a+rts)]+2b^2r^2 E[(s/(a+rts))^2].
+These bounds do not divide by min spectrum(S), its trace or its rank.
+
+For a real field-coordinate path P(u), |P^(k)|<=M_k, k=1,2,3,
+the actual central price contrast, normalized by its central g_S, differs
+from D I at u=0 by at most
+
+    Omega epsilon^2 exp(L M_1 |epsilon|)/6
+                  *(Q M_1^3+3L M_1 M_2+M_3).            (915)
+
+This follows from the ordinary third-derivative central-difference
+remainder and the chain rule. In particular it applies away from the
+old f=q=0 family. One must not reuse7ah's special O(epsilon^2) report
+increment there: the general report increment is O(epsilon).
+
+Retain the actual compiler/readout error. Exact scalarity821 does NOT
+assert c_hat^2=t(P_live) for an independently decoded field. If the
+protected cold error at each node is |c_hat-c|<=delta, contractions give
+|c_hat^2-c^2|<=2delta. Positive matrix interpolation yields
+
+    |J_hat-J|<=2r delta TrS/a,
+    g_S>=r b_min TrS/Omega,
+    normalized central compiler error
+                     <=2Omega delta/(a b_min |epsilon|). (916)
+
+The same TrS cancels in the value-error/gain estimate. It is NOT valid
+for an unguarded cross-block leakage from910. All true geometry decoder,
+sampling, basis and full C1 linked-preparation norms of dust §3 remain
+in delta and M_k. Equivalently one may use t^(-1)(c_hat^2) on the strict
+collar, but its error relative to P_live must still be transported.
+Nothing is reset or reassigned a desired Info value.
+
+### 913. One cumulative cofield gives nonlinear soundness and recovery
+
+Use the existing7ah one-coordinate forks and genuine native inverse
+macros, now with the bounds914--916. Every catalogue fork starts from the SAME anchored old prefix V,
+inventory, blanks and clock as its base. A fork in block j<M is an
+alternative continuation of V, not permission to edit the already
+executed prefix through M. Stored fork certificates do not become new
+live variations merely because their records are retained. The coordinate price
+entries define a LINEAR cofield; a simultaneous nonlinear tail secant
+is not substituted for it. Native endpoint membership alone is not
+stationarity: when consuming Book03, these must be its admitted lifts
+or its actual finite variations with the stated consistency estimate.
+
+Keep the ideal identity911, but calibrate the finite cumulative cofield
+from its ACTUAL baseline. For each compiled scalar corner c_hat_j define
+
+    t_hat_j=c_hat_j^2, P_tilde_j=t_j^(-1)(t_hat_j),
+    T_hat_M=product_j t_hat_j,
+    w_hat_M=zeta T_hat_M Tr[S(aI+zeta T_hat_M S)^(-1)],
+    lambda_hat_j=b_j(P_tilde_j)/(Omega_j t_hat_j),
+    A_hat_M=sum_j lambda_hat_j, Gamma_hat_M=w_hat_M A_hat_M.
+
+The inverse exists on a slightly enlarged strict report collar after
+choosing the actual node error small enough. P_tilde is only a coordinate
+of the real scalar corner, not a renaming of the decoded field P_live.
+If |c_hat_j-c_j(P_live)|<=delta_j, the mean-value theorem gives
+|P_tilde_j-P_live,j|<=2delta_j/b_min,j. With every OTHER actual block
+frozen,914 bounds the actual/reference central gain ratio between
+exp(-2L_j delta_j/b_min,j) and exp(2L_j delta_j/b_min,j). Absorb this
+explicit local relative error into epsilon_j: if e_ref,j is the
+reference bound, take epsilon_j>=exp(eta_j)e_ref,j
++(exp(eta_j)-1)||E_j||, eta_j=2L_j delta_j/b_min,j. Include915--916
+and the actual decoder/source errors in e_ref,j. All constants are
+taken on that same enlarged strict collar.
+
+This actual normalization is essential: an early frozen node error can
+leave a nonvanishing ratio T_hat_M/T_M even as its own relative block
+weight goes to zero. A value-error estimate alone would not justify
+normalizing by the ideal product. No product of all compiler errors is
+required in the corrected calibration.
+
+Let E_j=D I_(tau,h_j) D Sample_(h_j) in the dust theorem's (C3)* norm.
+The resulting LINEAR finite cofield satisfies
+
+    ||Fhat_M/Gamma_hat_M
+          -direct_sum_(j<=M) (lambda_hat_j/A_hat_M) E_j||_(block-dual)
+          <=sum_j (lambda_hat_j/A_hat_M) epsilon_j.              (917)
+
+Independent block tests have max C3 norm; their dual norm is the sum.
+Choose each finite catalogue's node error before recording that block,
+small relative to b_min, its real spacing and sampling norms. This is
+not a derivative of a discrete word-selection algorithm. Bounds914--916
+are uniform in all preceding and following fixed scalar blocks, so the
+same stored operator/cold accuracy remains valid at later cumulative
+prefixes. Here cofield entries are exact mathematical values of the
+complete Book functional. This uniformity does NOT cover a fixed absolute
+price-evaluation error. If either price node is read/evaluated with error
+at most eta_price, add eta_price/(|spacing| actual_central_gain), exactly
+as in dust(12)/R2, and make it tend to zero. Any executed price-reading
+apparatus retains its own full clock/work/source; it is not supplied by
+calling the mathematical Book values observable for free.
+
+There is a constructive choice with h_j->0, epsilon_j->0 and A_hat_M->infinity:
+repeat each finite mesh block finitely many times until its accumulated
+positive lambda_hat weight is at least one, then pass to the next finer
+mesh with a tighter source budget. Every repetition has its own private
+work, record and paid stages; the bounded real gains are never replaced
+by unit weights in the price. Each early mesh then has a finite weight,
+and the total weight diverges. Equivalently reuse7ag's slower envelope
+including the new nonlinear derivative/decoder constants. This proves
+weighted error convergence by splitting a finite initial segment from
+the arbitrarily accurate tail; mere cofinality alone was insufficient.
+
+Consume the existing dust stencil/refinement theorem, at fixed tau:
+E_j->D I_tau(Z) under its uniform C3 and C2 decoded-field convergence.
+The same weighted split now gives the following two applications.
+
+* Forward: if the full cumulative future-field cofield tends to zero
+  in917 and the regular decoded fields converge to Z, common test fields
+  give D I_tau(Z)=0. Dust §§4--5 then give Einstein with its aligned
+  timelike irrotational matter on the stated regular branch. All-field
+  variation is taken before alignment or the LTB ansatz.
+* Recovery: consume the incoming [general mass-coordinate reverse lift](sources/d0_mass_coordinate_equivalence_2026-10-28/PROOF_RU.md),
+  §§3,5,6 at ebf92914. EVERY regular local positive irrotational
+  Einstein-dust solution with the same branch kappa, and separately
+  EVERY regular Ricci-flat solution with constant matter, has DI_tau=0
+  in its stated native chart. Thus ||E_j||<=C_tau h_j. The literal cumulative words
+  and forks therefore have ||Fhat_M/Gamma_hat_M||_(block-dual)->0, retaining
+  the entire old history and every finite early stencil error.
+
+This consumes the reverse lift's actual material Jacobian rho E=2q0;
+no coordinate density is reset after an arbitrary relabelling. Keep its
+local flow-box/positive-density/no-caustic and amplitude-chart bounds,
+the branch kappa, and all transformed derivative norms. The Ricci-flat
+case is its separate constant-matter sector, not a singular rho->0
+mass-coordinate limit. Effective compilation from data additionally
+requires the same computable fields and available bounds as that owner.
+
+A nonzero field source on blocks carrying a positive asymptotic weight
+fraction cannot disappear in this independent-block dual norm. A single
+frozen old error with vanishing relative weight is a different statement.
+This is a cumulative asymptotic source theorem, not exact finite roots.
+The older7ag independent packet/controller-normal cancellation used a
+special zero first-conditional property and is NOT imported for dust.
+Actual full stationarity would imply the displayed future-field rows;
+source recovery alone does not prove those other rows have solutions.
+
+
+There is also a stronger fit to a task that seals ALL elapsed history.
+At each birth M, fix the entire actual prefix through M-1 and use ONLY
+the new block's coordinate forks. Their central gain is the actual
+
+    g_hat_(M,new)=w_hat_M lambda_hat_M.
+
+Applying914--916 with every previous block fixed gives
+
+    ||Fhat_(M,new)/g_hat_(M,new)-E_M||_(C3)*<=epsilon_M.  (918)
+
+This is the source of the WHOLE price at the new block, not a difference
+of standalone block prices. All previous node errors enter the actual
+old corner and gain. They require no rewriting or retroactive variation.
+If h_M->0 and epsilon_M->0, the existing regular field convergence and
+vanishing admitted new-block source imply D I_tau(Z)=0. Conversely the
+owned general reverse-lift class gives vanishing normalized new-block source along ONE
+append-only chain. This version does not need the divergent-weight
+schedule: each physical comparison holds its full realized past fixed.
+It is still field soundness/recovery, not proof of actual stationary
+histories or disappearance of other free source rows. The larger
+historical-catalogue norm917 has the distinct comparison domain stated
+above and is not required for this sealed-prefix inference.
+
+### 914. Close memory inside the tower, retaining its actual price
+
+Dust §10 supplies the actual AF frame isometry
+T(|0_private> tensor x)=(J^(3s) tensor I)x for every old x, including
+entangled DATA/Spin/RIGHT. Apply it to these private registers and the
+WHOLE preceding word; it identifies their zero input with the canonical
+image of the old state, rather than an independently prepared future
+cyclic trace seed. Extend every old operator through that SAME isometry,
+keep the real complement, and retain each old pointer effect. A freshly
+rebuilt frame at the next level need not represent the same old test;
+the old observation is transported, not silently rebuilt.
+
+The endpoint factorization above is conjugated by this fixed isometry.
+An actually executed growth/preparation prefix that couples old and new
+banks need not preserve that factorization merely because it is field-
+independent. Its full source must be retained or the complete factored
+programme proved after including those stages; otherwise use the winding
+bound for the actual complete clock.
+Here the H_n frame is ALREADY part of H_old, not another adjoined
+copy. The transported cut is T(|0><0| tensor P)T* and retains input
+rank R. Applying the owner instead to P tensor I_(H_n) would carry
+its actual extra d_n multiplicity and is not this identification.
+The identity-clock
+complement is included in the full heat partition. For this isospectral
+field family it remains field-constant. Between different history
+lengths/dimensions neither heat nor feedback baseline is constant.
+All real parking, compilation, recording and the stated transported
+primitive stages stay in N_M. This representation supplies no new free
+physical growth operation; actual actuation of that level transition
+still uses the native-execution admission obligation of dust §10.
+
+For retained old observations, summing a complete new output instrument
+returns the old marginal (the exact7m134 partial-trace identity). Thus
+this constructs compatible retained observations and cumulative source
+recovery, not a static projection equality between all fresh operators.
+If a task seals additional intermediate marks, its actual fork catalogue
+must preserve them; equality only at the final endpoint is insufficient.
+
+Incoming7dc is preserved: a real three-stage record append has positive
+absolute full-price increment, also on a common carrier. Small normalized
+field source is not free continuation, a proof of prospective optimality,
+or a proof that stopping is allowed by the task. Original7da/7db sources
+and this new continuation source remain distinct, now in one priced
+composition. The substituted premise is retained-past nonlinear field
+soundness/recovery on the declared programme. Physical X_N inclusion,
+actual stationary-history realization and any extra independently free
+source rows retain their precise scope. GR_closed=false.
+
+### 915. Changed-input verification
+
+The bounded checker below tests the NEW matrix-past/cumulative-source
+identities, including a nonnormal noncommuting past, a rank-deficient
+past, the missing cross-block counterexample and the exact Julia lower
+factor. The general estimates and convergence argument are the proofs
+above; this finite check does not simulate a large compiler or certify
+physical admission. Existing full clock, native guard, refinement and
+LTB proofs are consumed at input72619235 and c296829f; the general
+reverse lift is consumed at ebf9291425f3690c987bcf3d11fd559c367ffcc0. No unchanged
+large history, spectrum, LTB or Lean proof is replayed.
+
+Checker SHA256: `fb71526412848666723cc9561372d0548ed070fdeb87b48e78f225b49a4fb49c`.
+Observed receipt SHA256: `3480caabee6faaa986ff6aa97eb34757874248f5e9204b6a321f955f4480a3b9`.
+Extraction: save the Python block with its LF newline bytes; run
+`python CHECKER.py REPOSITORY_ROOT`.
+
+```python
+#!/usr/bin/env python3
+"""Changed algebra for retained-matrix-past nonlinear field composition.
+
+No native-programme, full heat, GR-root or physical-admission replay.
+Run: python retained_nonlinear_source_check.py REPOSITORY_ROOT
+"""
+from pathlib import Path
+import hashlib
+import json
+import subprocess
+import sys
+import sympy as s
+
+repo = Path(sys.argv[1]).resolve()
+INPUT = '72619235'
+PRIMARY = '02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+DUST = '02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md'
+checks = []
+def require(ok, label):
+    if not ok:
+        raise ArithmeticError(label)
+    checks.append(label)
+
+def zero(M):
+    return all(s.cancel(x) == 0 for x in M)
+
+pins = {}
+for name in (PRIMARY, DUST):
+    blob = subprocess.check_output(['git', 'rev-parse', INPUT+':'+name], cwd=repo).decode().strip()
+    data = subprocess.check_output(['git', 'cat-file', 'blob', blob], cwd=repo)
+    pins[name] = {'git_blob':blob, 'sha256':hashlib.sha256(data).hexdigest()}
+
+Q=s.Rational
+R=s.Matrix([[Q(3,5),-Q(4,5)],[Q(4,5),Q(3,5)]])
+C1=s.diag(1,Q(1,2))
+C2=R*s.diag(1,Q(1,3))*R.T
+K=C2*C1
+S=K.T*K
+require(not zero(C1*C2-C2*C1), 'old positive factors do not commute')
+require(not zero(K*K.T-K.T*K), 'complete old cold corner is nonnormal')
+require(S.det()>0 and S.trace()>0 and (s.eye(2)-S).det()>0,
+        'fixed old Gram is a strict nonzero contraction')
+
+x,y=s.symbols('x y', real=True)
+z=Q(1,4); a=1-z
+alpha=[Q(1,2),Q(3,4)]; gamma=[Q(1,2),Q(2,3)]
+ps=[x,y]; om=[Q(2),Q(3)]
+ts=[1-alpha[i]*gamma[i]*ps[i]*(1-gamma[i]*ps[i]) for i in range(2)]
+bs=[alpha[i]*gamma[i]*(1-2*gamma[i]*ps[i]) for i in range(2)]
+T=ts[0]*ts[1]
+point={x:Q(1,5),y:Q(1,4)}
+D=a*s.eye(2)+z*T*S
+D0=D.subs(point); inv=D0.inv()
+w=(z*T*s.trace(S*D.inv())).subs(point)
+rows=[]
+for i,v in enumerate(ps):
+    row=-s.trace(inv*D.diff(v).subs(point))
+    expected=(w*bs[i]/ts[i]).subs(point)
+    require(s.cancel(row-expected)==0, 'whole price row '+str(i)+' equals genuine cumulative gain')
+    require(row>0, 'whole price row '+str(i)+' has positive gain')
+    rows.append(str(row))
+# Matrix log derivative: the exact rational identity d(-log det D)=-Tr(D^-1 dD).
+for v in ps:
+    require(s.cancel((-s.diff(D.det(),v)/D.det()+s.trace(D.inv()*D.diff(v))).subs(point))==0,
+            'logdet and trace first source agree for '+str(v))
+# The price is coupled even though each local source uses a positive multiplier.
+mixed=(-s.diff(D.det(),x,y)/D.det()+s.diff(D.det(),x)*s.diff(D.det(),y)/D.det()**2).subs(point)
+require(mixed!=0, 'whole price retains mixed cross-block response')
+# An old scale variation is not annihilated by the future source normalization.
+past_row=-2*z*T.subs(point)*s.trace(inv*S)
+require(past_row!=0 and past_row<0, 'genuine changing-past source remains nonzero')
+Srank=s.diag(Q(1,2),0)
+grank=z*bs[0].subs(point)*s.trace(Srank*(a*s.eye(2)+z*ts[0].subs(point)*Srank).inv())/om[0]
+require(grank>0, 'nonzero rank-deficient past still has positive field gain')
+Szero=s.zeros(2)
+require(s.trace(Szero)==0, 'zero old corner is the explicit lost-gain boundary')
+# A scalar old-cut expectation alone fails: returning an old failed component matters.
+P=s.diag(1,0); V=s.Matrix([[0,1],[1,0]])
+B=s.Matrix([[Q(1,2),Q(1,4)],[Q(1,4),Q(1,2)]])
+require(zero(P*B*P-Q(1,2)*P) and zero(P*V*P), 'hostile control satisfies only scalar old-cut compression')
+require(not zero(P*B*V*P), 'hostile cross-block can return an old failed component')
+# All-column private-factor composition, with a nontrivial private reflection.
+u=s.Matrix([[Q(3,5),Q(4,5)],[Q(4,5),-Q(3,5)]])
+require(zero(u.T*u-s.eye(2)), 'private test is a full reflection')
+# In old-first tensor order, select each private blank column.
+E=s.zeros(4,2); E[0,0]=1; E[2,1]=1
+require(zero(E.T*s.kronecker_product(K,u)*E-Q(3,5)*K),
+        'full private factor multiplies the entire nonnormal old corner')
+# The original Julia factors give an actual nonzero-gain hypothesis automatically.
+p=(s.sqrt(5)-1)/2
+require(s.simplify(1-2*p*p-p**3)==0 and bool(p>0), 'original Julia lower factor equals positive p cubed')
+# Exact scalar eigenvalue identity behind the spectrum-uniform third derivative bound.
+l=s.symbols('l', positive=True)
+t=ts[0]; b=bs[0]; d=2*alpha[0]*gamma[0]**2
+fprime=z*b*l/(a+z*t*l)
+expected=-3*d*z*l/(a+z*t*l)+2*b*b*z*z*l*l/(a+z*t*l)**2
+require(s.cancel(s.diff(fprime,x,2)/fprime-expected)==0,
+        'exact third derivative ratio underlies the positive spectral mixture bound')
+# An early compiled node error does not disappear from an IDEAL product gain.
+v=s.symbols('v', positive=True)
+wv=z*v*s.trace(S*(a*s.eye(2)+z*v*S).inv())
+ratio=s.cancel(wv.subs(v,Q(3,4)*v)/wv)
+require(s.limit(ratio,v,0)==Q(3,4),
+        'hostile early baseline error leaves a nonvanishing ideal-gain bias')
+actual_point={x:Q(21,100),y:Q(1,4)}
+Da=D.subs(actual_point); wa=(z*T*s.trace(S*D.inv())).subs(actual_point)
+for i,var in enumerate(ps):
+    actual_row=-s.trace(Da.inv()*D.diff(var).subs(actual_point))
+    require(s.cancel(actual_row-(wa*bs[i]/ts[i]).subs(actual_point))==0,
+            'actual effective-center normalization restores source row '+str(i))
+result={'status':'PASS','GR_closed':False,'input_commit':subprocess.check_output(['git','rev-parse',INPUT],cwd=repo).decode().strip(),
+        'input_pins':pins,'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        'checks':checks,'nonnormal_old_corner':str(K),'old_gram':str(S),'whole_price_rows':rows,
+        'mixed_price_row':str(mixed),'changing_past_row':str(past_row),
+        'scope':'exact changed matrix algebra; analytic estimates and cumulative theorem in primary7dd; no large native execution, physical admission or exact finite GR roots'}
+print(json.dumps(result,ensure_ascii=False,sort_keys=True,indent=2))
+```
+
+```json
+{
+  "GR_closed": false,
+  "changing_past_row": "-10507022308/35045897785",
+  "checker_sha256": "fb71526412848666723cc9561372d0548ed070fdeb87b48e78f225b49a4fb49c",
+  "checks": [
+    "old positive factors do not commute",
+    "complete old cold corner is nonnormal",
+    "fixed old Gram is a strict nonzero contraction",
+    "whole price row 0 equals genuine cumulative gain",
+    "whole price row 0 has positive gain",
+    "whole price row 1 equals genuine cumulative gain",
+    "whole price row 1 has positive gain",
+    "logdet and trace first source agree for x",
+    "logdet and trace first source agree for y",
+    "whole price retains mixed cross-block response",
+    "genuine changing-past source remains nonzero",
+    "nonzero rank-deficient past still has positive field gain",
+    "zero old corner is the explicit lost-gain boundary",
+    "hostile control satisfies only scalar old-cut compression",
+    "hostile cross-block can return an old failed component",
+    "private test is a full reflection",
+    "full private factor multiplies the entire nonnormal old corner",
+    "original Julia lower factor equals positive p cubed",
+    "exact third derivative ratio underlies the positive spectral mixture bound",
+    "hostile early baseline error leaves a nonvanishing ideal-gain bias",
+    "actual effective-center normalization restores source row 0",
+    "actual effective-center normalization restores source row 1"
+  ],
+  "input_commit": "726192353504a81a9ab2b751f9b6c7866271e75a",
+  "input_pins": {
+    "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md": {
+      "git_blob": "154b341f17adce88594b0b5e9df0d38c0283d288",
+      "sha256": "d2951e92a97c5d9ab088c27e0cd3af0989a613df57cf9d1546d2281b6eefa228"
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "git_blob": "cef5e08a689832ddc66355e53bd93a15cfdf73f4",
+      "sha256": "e0258819a36de242b4ff076f00b3a5cdd12eda11e905fde6789715d2bc4044a8"
+    }
+  },
+  "mixed_price_row": "-2512973102672461824/245642990311333581245",
+  "nonnormal_old_corner": "Matrix([[43/75, 4/25], [8/25, 19/50]])",
+  "old_gram": "Matrix([[97/225, 16/75], [16/75, 17/100]])",
+  "scope": "exact changed matrix algebra; analytic estimates and cumulative theorem in primary7dd; no large native execution, physical admission or exact finite GR roots",
+  "status": "PASS",
+  "whole_price_rows": [
+    "220042352/7009179557",
+    "1954794848/35045897785"
+  ]
+}
+```
