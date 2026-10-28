@@ -17483,3 +17483,78 @@ all280 numerical attempt failed, left the positive-orientation chart and
 omitted full heat from its optimizer source; it is neither a root nor a
 no-go. These files are preserved byte-for-byte and are not rewritten as
 part of this frame checkpoint.
+
+
+### 28 October 2026 — full-prefix recovery does not absorb a fresh free QUERY row
+
+SAME owner / Draft #334, native realization and final composition.
+Input `15742b846f380b75e7d8f869faf7bc51623ed2a6`. Primary result:
+§7dh945–953 of the existing same-representative paid-source artifact,
+with its exact executed checker and receipt.
+
+Named parent application: the new independently free apparatus equations
+left by the full-prefix covector recovery theorem. Its abstract per-block
+non-dilution control is now applied to the existing original QUERY orbit
+§7cu831 and its actually generated cut §7cw, using the cumulative gain
+and independent-block norm of §7dd and the incoming prefix theorem.
+
+For each interior scalar corner c_j, u_j=sqrt(1-c_j^2), the unit-norm
+query conjugation generator gives the complete row
+`partial_(s_j)B=w beta_j`, `beta_j=4u_j/c_j>0`. Full heat is constant
+along this declared INTERNAL conjugacy family; old-prefix heat/source
+rows remain. Extending the independent-block max norm by these query
+directions gives the exact additional dual term
+`sum beta_j / sum lambda_j`. It is constant under repeating a fixed
+template. On the nonlinear positive-collar source with Omega>=Omega0,
+alpha<=4 and gamma<=1, it is bounded below by
+`2 Omega0(1-2qmax)sqrt(b(1-qmax))>0`. Actual compiled centres require
+their own corners, weights and ratio-error bounds; no ideal product
+or weaker raw216 norm is substituted.
+
+A stronger literal same-inventory comparison is executed as well.
+For the actual 26-stage QUERY W=G Z G*, the chronological words
+`G;G_inverse;QUERY` and `G;QUERY;G_inverse` both have38 raw stages,
+`4G+24CX+10SourceI`, the same protected input and all32 columns. The
+second endpoint is exactly Z on the query: it has perfect return and
+zero feedback without deleting its negative/unprepared eigenspace.
+
+Both words are then applied through §7dg's explicit Golden AF frame,
+including all30 inverse and six forward frame calls. Each resulting
+specified paired-port schedule has74 calls, `16G+24CX+34SourceI`.
+Every one of272 columns is multiplied; the true canonical rank16 cut,
+208-column complement, oldRIGHT coherences and240+32 spectrum are
+retained. On the stated common INTERNAL clock the complete heat is
+equal, while `B_A-B_B=-16 log(1-zeta+zeta p^6)>0`.
+
+For an arbitrary retained positive matrix past S and all other fixed
+private blocks, the exact finite contrast satisfies
+`(1-p^6)w_A <= Delta B <= (p^-6-1)w_A`, with its true T_A and w_A.
+Thus old-history accumulation does not erase this per-block contrast.
+This finite example is not assigned an invented Einstein gain; the
+nonlinear gain statement is the separate analytic QUERY formula above.
+
+Smallest decisive check: 50 exact controls; two native38-stage products
+and two full272-column74-call products, a nonnormal matrix-past full
+determinant derivative, the logarithmic bound, independent-norm and
+zero-gain controls. The two-block analytic control has actual
+beta=(16/3,3), lambda=(8/3,2), dual floor25/14.
+Checker SHA-256:
+`21b02ddb83e80c403313f43fbeb9d79ca5df309a4cfa18ca19c22938dae07dec`.
+Receipt SHA-256:
+`34e2cd50aec50c19a6bf310af451d23da6df5786705f66fb7e59392e073c3acd`.
+
+Scope/route change: arbitrary QUERY availability plus accumulated
+normalization cannot by itself close the generated-field solution in
+the enlarged query-generator test norm. These matrices are not free
+continuous Golden angles, nor an identified physical raw-gate norm.
+The literal alternatives change the report law and may fail the actual
+task. The next required application is therefore its native task/control
+constraint or the remaining joint dynamics, derived from the actual
+process and required tests. It cannot be selected by imposing Einstein.
+Any genuinely additional physical price retains its own source.
+
+No physical same-task admission or AF addressing is proved, no universal
+D0 no-go is claimed, and field soundness/recovery plus the finite-prefix
+estimate remain valid at their original scope. No registry/claim/task
+promotion, Ready state or merge. `GR_closed=false`. Write paths remain
+only this brief and the existing primary; all earlier bytes are retained.
