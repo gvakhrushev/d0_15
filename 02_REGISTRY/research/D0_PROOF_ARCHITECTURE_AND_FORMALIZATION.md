@@ -11902,7 +11902,7 @@ the exact weighted trace `−48/17` and feedback derivative `−24/17` at
 not physical source selection. `D0.Algebra.MovingProjectorPositiveChart`
 proves the slit-plane premise from an orthogonal projector, `U†U=1`, and
 `0≤z<1` by an exact Gram decomposition, and applies the same-curve derivative.
-The thermal derivative, moving Gram, variable β/z, native admitted field
+The mixed thermal derivative, moving Gram, variable β/z, native admitted field
 variation, complete Info/work/controller price and GR composition remain
 open. The original #334 owner and scientific claim statuses are unchanged.
 The detailed application and its explicit interface are recorded in
@@ -11933,9 +11933,16 @@ The reusable `D0.Analysis.MatrixTraceExponentialDerivative` result proves
 `d Tr(exp A)=Tr(exp A · A')` for an arbitrary differentiable complex-matrix
 curve over real time, without assuming that `A` commutes with its derivative.
 It uses cyclic trace identities for powers, a locally uniform summable
-Frobenius bound and the analytic chain rule. It is a mathematical input to
-the fixed-β thermal term; positivity of the partition function, the logarithm,
-the complete price and physical admission require further application.
+Frobenius bound and the analytic chain rule. `D0.Analysis.MatrixThermalTrace`
+applies it to the same curve, proves positivity of the partition function on
+a nonempty carrier with Hermitian `Δ` and standard fixed inner product, and
+derives the real first fixed-β thermal log-partition source with an arbitrary
+transport commutator. Transport to a general fixed Gram, identification of
+the complex trace with this real expression, the native application, mixed
+BKM derivative, complete price and physical admission remain open. An
+independent read-only review of thermal blob
+`786c1d8f19a90ef5322c0795e169d0cd72557f95` checked these hypotheses and signs;
+it did not replay Lean or establish the physical application.
 
 For `D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001`, the source candidate
 `75527846bf3603a1c51acf445f8354e3254341be:02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#§1/Eq(1)`
