@@ -5147,11 +5147,10 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
         self.assertEqual(
             [row["lean_module"] for row in links["formal_support_locators"]],
-            ["D0.Algebra.MovingProjectorTransport"],
+            ["D0.Algebra.MovingProjectorCalculus", "D0.Algebra.MovingProjectorTransport"],
         )
-        self.assertEqual(
-            links["formal_support_locators"][0]["status"], "metadata_locator_only"
-        )
+        self.assertTrue(all(row["status"] == "metadata_locator_only"
+                            for row in links["formal_support_locators"]))
 
         module_hits = proof.structured_search(data, "D0.Algebra.MovingProjectorTransport")
         self.assertEqual(module_hits[0]["kind"], "formal-support-metadata")
@@ -5181,9 +5180,11 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
         self.assertEqual(
             [row["lean_module"] for row in links["formal_support_locators"]],
-            ["D0.Algebra.MovingProjectorTransport"],
+            ["D0.Algebra.MovingProjectorCalculus", "D0.Algebra.MovingProjectorTransport",
+             "D0.Analysis.MatrixDeterminantDerivative"],
         )
-        self.assertEqual(links["formal_support_locators"][0]["status"], "metadata_locator_only")
+        self.assertTrue(all(row["status"] == "metadata_locator_only"
+                            for row in links["formal_support_locators"]))
 
 
 if __name__ == "__main__":
