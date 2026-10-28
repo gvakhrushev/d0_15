@@ -13354,6 +13354,50 @@ the centre/gain definitions and all four theorems to
 `D0.Research.CalibratedQuerySourceFloor`; the normalized-source declaration
 retains exactly the stated positive scalar hypotheses.
 
+## Current #334 source checkpoint at `d53ef61c` — cyclic AF return without an extra blank flag — 28 October 2026
+
+The existing Draft #334 has advanced beyond the previously integrated
+`4a57cfd9` checkpoint. Its current head is
+[`d53ef61c8c578c5a6cf16b88d17f8576ced0f64d`](https://github.com/gvakhrushev/d0_15/commit/d53ef61c8c578c5a6cf16b88d17f8576ced0f64d)
+(open, Draft); it contains the user-supplied `eebcb5e` moving-cut result as an
+ancestor. The new source slice is §7dl, added to the existing paid-source memo
+at blob `069f16ed168c43e483dc5b6bc5eaabbac6e848fa`. The matching task-brief
+update is blob `a976b5226df337b596bc1bba75eaaa1e46e8fbd5`.
+
+The committed nine-package archive was also restored from the current #334
+Git snapshot in both ordinary and optimized Python. Both runs report
+`PASS_ARCHIVE_INTEGRITY` for 74 members / 650,121 bytes, with identical
+extracted trees (SHA-256 `6761869d67750a9f723dcf031b14eda2efccccbab7377b4d533de05df8646002`).
+The restore script does not execute archived code. The original ZIP files
+were not present in this workspace, so this verifies the committed XZ/Git
+snapshot and its members, not the original ZIP bytes or CRCs.
+
+Under the explicitly retained full protected-Spin identity and positive
+completed reflected word, §7dl uses `R=I−2e` and `L=URU R` on the original
+canonical regular AF input. The full return is `C=1−4γ(1−c²)` and its actual
+positive gain is `λ_loop=8γc²λ/C`. Two independently varied occurrences of
+the original seven-stage word each map to half the old normalized operator
+source; the guarded phase and frame rows have zero Hermitian return source.
+The concrete fixture specifies 88 paired-profile calls (`26G+2CX+60SourceI`)
+without an extra pure blank flag. The internal all-unitary heat bound is
+`5.080368494408724928275694e−260`, but the normalized heat term remains
+bounded by that numerator divided by the actual positive `Γ_loop`; it is not
+set to zero. See the [pinned §7dl source and checker](https://github.com/gvakhrushev/d0_15/blob/d53ef61c8c578c5a6cf16b88d17f8576ced0f64d/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md#7dl).
+
+I extracted the checker from those pinned source bytes and replayed it against
+its exact five Git-pinned inputs. Normal and optimized Python both pass all
+357 controls, emit no stderr, and produce identical output at SHA-256
+`d3400df20413bb5ff8cd2b710078b11fdde0fec2a326216cc67adca0f18560b3`; the
+checker SHA-256 is
+`82afdd0b17b7ecdb38b04947caa11de923a001a6e73317d3b37edbf90672880f`.
+This removes the extra blank-flag resource premise for this configured source
+application only. Physical admission of the addressed AF ports, the actual
+task/future-test domain, complete old-cut/source transport, selected price
+rows, and the same-execution map into `X_N` remain open. The existing
+moving-projector Lean declarations cover the Book03 first-source calculus;
+this AF recipe itself has not been formalized or admitted. No claim, assembly
+acceptance or status changes; `GR_closed=false`.
+
 ## Fresh compiled declaration for the fixed-sine C0 pilot — 28 October 2026
 
 The selected #310 result is now independently re-extracted from a clean

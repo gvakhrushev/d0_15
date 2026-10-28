@@ -4766,6 +4766,40 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("scoped weak-convergence obstruction", case["scope_review"])
         self.assertIn("does not rule out other readouts", case["scope_review"])
 
+    def test_cyclic_af_return_source_is_retrievable_at_its_pinned_owner_head(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "cyclic-af-return-without-extra-blank-flag"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for ref in case["required_refs"]:
+            status = cold_start._required_source_status(query_pairs, {"path": ref})
+            self.assertTrue(status["found"], f"cold-start search missed {ref}: {status}")
+        owner_source = next(
+            source for source in case["required_sources"]
+            if source["path"].endswith("A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md")
+        )
+        status = cold_start._required_source_status(query_pairs, owner_source)
+        self.assertTrue(status["found"], f"cold-start missed #334 source content: {status}")
+        owner_path = owner_source["path"]
+        pins = [
+            reference
+            for _, query_results in query_pairs
+            for hit in query_results
+            for reference in hit.get("source_refs", [])
+            if reference.get("path", "").endswith(owner_path)
+            and reference.get("commit") == "d53ef61c8c578c5a6cf16b88d17f8576ced0f64d"
+            and reference.get("blob") == "069f16ed168c43e483dc5b6bc5eaabbac6e848fa"
+            and reference.get("pin_status") == "pinned_snapshot"
+        ]
+        self.assertTrue(pins, "the surfaced owner source must retain its exact #334 commit/blob pin")
+        self.assertIn("Physical AF port admission", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
     def test_source_port_preparation_consumes_shared_tensor_api(self) -> None:
         inventory_path = (
             proof.ROOT

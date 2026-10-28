@@ -899,6 +899,36 @@ CASES: list[dict[str, Any]] = [
             "inventory. The #310 owner pin remains in the primary source review and C0 pilot."
         ),
     },
+    {
+        "id": "cyclic-af-return-without-extra-blank-flag",
+        "queries": [
+            "7dl cyclic AF original canonical regular input without extra blank flag 88 paired-profile calls 26G 2CX 60SourceI",
+            "L=U R U R actual positive loop gain 4 gamma c Herm X two independently varied word occurrences",
+            "completed protected Spin identity failure nonscalar scalar cold corner negative control",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "scope_query_indexes": [0, 1, 2],
+            },
+        ],
+        "scope_review": (
+            "The pinned #334 §7dl result removes the extra blank-flag resource premise "
+            "for one configured cyclic AF source under its full protected-Spin identity, "
+            "positive-gain and addressed-profile assumptions. Its 88-call recipe and "
+            "operator-source map retain the actual clock/heat debt. Physical AF port "
+            "admission, binary-wire completeness, the full old-cut/source transport, "
+            "the actual same-execution map into X_N, and selected price rows remain open; "
+            "this does not establish physical GR or change GR_closed=false."
+        ),
+    },
 ]
 
 
