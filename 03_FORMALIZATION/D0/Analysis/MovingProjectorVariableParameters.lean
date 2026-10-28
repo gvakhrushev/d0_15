@@ -133,6 +133,62 @@ theorem hasDerivAt_variable_feedback_logdet
   rw [← hFun]
   exact hReal'.congr_deriv hValue
 
+/-! The source components are named separately so Lean does not repeatedly
+normalize one long matrix expression while elaborating downstream statements. -/
+noncomputable def variableMovingProjectorHeatSource
+    (β : ℝ) (Δ : Matrix ι ι ℂ) (dβ : ℝ)
+    (dP dΔ : Matrix ι ι ℂ) (P : Matrix ι ι ℂ) : ℝ := by
+  let K := generator P dP
+  let Z := matrixHeatPartition β Δ
+  let ρ := matrixThermalState β Δ
+  exact -(Matrix.trace (ρ * (dΔ - comm K Δ))).re +
+    (-Real.log Z / β^2 - (Matrix.trace (ρ * Δ)).re / β) * dβ
+
+noncomputable def variableMovingProjectorFeedbackSource
+    (z : ℝ) (P U : Matrix ι ι ℂ) (dz : ℝ)
+    (dP dU : Matrix ι ι ℂ) : ℝ := by
+  let K := generator P dP
+  let C := cut P U
+  let F := star C * C
+  let R := (1 - (z : ℂ) • F)⁻¹
+  let V := (1 - P) * (dU - comm K U) * P
+  exact z * (2 * (Matrix.trace (R * star C * V)).re) +
+    dz * (Matrix.trace (R * F)).re
+
+noncomputable def variableMovingProjectorBook03Source
+    (β z : ℝ) (P U Δ : Matrix ι ι ℂ) (dβ dz : ℝ)
+    (dP dU dΔ : Matrix ι ι ℂ) : ℝ :=
+  variableMovingProjectorHeatSource β Δ dβ dP dΔ P +
+    variableMovingProjectorFeedbackSource z P U dz dP dU
+
+/-- Named thermal component of the varying-parameter price source. -/
+theorem hasDerivAt_variable_heat_log_partition_source [Nonempty ι]
+    {β : ℝ → ℝ} {Δ : ℝ → Matrix ι ι ℂ} {dβ : ℝ}
+    {dP dΔ : Matrix ι ι ℂ} {P : Matrix ι ι ℂ} {t : ℝ}
+    (hβ : HasDerivAt β dβ t) (hβne : β t ≠ 0)
+    (hΔ : HasDerivAt Δ dΔ t) (hHerm : star (Δ t) = Δ t) :
+    HasDerivAt (fun s => (β s)⁻¹ * Real.log (matrixHeatPartition (β s) (Δ s)))
+      (variableMovingProjectorHeatSource (β t) (Δ t) dβ dP dΔ P) t := by
+  simpa only [variableMovingProjectorHeatSource] using
+    (hasDerivAt_variable_heat_log_partition (K := generator P dP)
+      hβ hβne hΔ hHerm)
+
+/-- Named feedback component of the varying-parameter price source. -/
+theorem hasDerivAt_variable_feedback_logdet_source
+    {z : ℝ → ℝ} {P U : ℝ → Matrix ι ι ℂ} {dz : ℝ}
+    {dP dU : Matrix ι ι ℂ} {t : ℝ}
+    (hz : HasDerivAt z dz t)
+    (hP : HasDerivAt P dP t) (hU : HasDerivAt U dU t)
+    (hIdem : ∀ᶠ s in 𝓝 t, P s * P s = P s)
+    (hSelf : ∀ᶠ s in 𝓝 t, star (P s) = P s)
+    (hSlit : (1 - (z t : ℂ) •
+      (star (cut (P t) (U t)) * cut (P t) (U t))).det ∈ Complex.slitPlane) :
+    HasDerivAt (fun s => -Real.log ((1 - (z s : ℂ) •
+      (star (cut (P s) (U s)) * cut (P s) (U s))).det.re))
+      (variableMovingProjectorFeedbackSource (z t) (P t) (U t) dz dP dU) t := by
+  simpa only [variableMovingProjectorFeedbackSource] using
+    (hasDerivAt_variable_feedback_logdet hz hP hU hIdem hSelf hSlit)
+
 /-- Complete derivative of the specified scalar with both parameters varying. -/
 theorem hasDerivAt_variable_moving_projector_book03_price [Nonempty ι]
     {β z : ℝ → ℝ} {P U Δ : ℝ → Matrix ι ι ℂ}
@@ -144,25 +200,16 @@ theorem hasDerivAt_variable_moving_projector_book03_price [Nonempty ι]
     (hSelf : ∀ᶠ s in 𝓝 t, star (P s) = P s)
     (hSlit : (1 - (z t : ℂ) •
       (star (cut (P t) (U t)) * cut (P t) (U t))).det ∈ Complex.slitPlane) :
-    let K := generator (P t) dP
-    let C := cut (P t) (U t)
-    let F := star C * C
-    let R := (1 - (z t : ℂ) • F)⁻¹
-    let V := (1 - P t) * (dU - comm K (U t)) * P t
-    let Z := matrixHeatPartition (β t) (Δ t)
-    let ρ := matrixThermalState (β t) (Δ t)
     HasDerivAt (fun s => matrixBook03Price (β s) (z s) Δ P U s)
-      (-(Matrix.trace (ρ * (dΔ - comm K (Δ t)))).re +
-        z t * (2 * (Matrix.trace (R * star C * V)).re) +
-        (-Real.log Z / (β t)^2 - (Matrix.trace (ρ * Δ t)).re / β t) * dβ +
-        dz * (Matrix.trace (R * F)).re) t := by
-  have hHeat := hasDerivAt_variable_heat_log_partition (K := generator (P t) dP)
-    hβ hβne hΔ hHerm
-  have hFeedback := hasDerivAt_variable_feedback_logdet hz hP hU hIdem hSelf hSlit
+      (variableMovingProjectorBook03Source (β t) (z t) (P t) (U t) (Δ t)
+        dβ dz dP dU dΔ) t := by
+  have hHeat := hasDerivAt_variable_heat_log_partition_source
+    (P := P t) (dP := dP) hβ hβne hΔ hHerm
+  have hFeedback := hasDerivAt_variable_feedback_logdet_source
+    hz hP hU hIdem hSelf hSlit
   have h := hHeat.add hFeedback
-  dsimp only at h ⊢
-  convert h using 1
-  abel
+  simpa only [variableMovingProjectorBook03Source, matrixBook03Price,
+    sub_eq_add_neg] using h
 
 /-- The slit-plane premise is derived from the actual isometric cut at `t`. -/
 theorem hasDerivAt_variable_moving_projector_book03_price_of_isometric_cut [Nonempty ι]
@@ -175,18 +222,9 @@ theorem hasDerivAt_variable_moving_projector_book03_price_of_isometric_cut [None
     (hIdem : ∀ᶠ s in 𝓝 t, P s * P s = P s)
     (hSelf : ∀ᶠ s in 𝓝 t, star (P s) = P s)
     (hIsometry : star (U t) * U t = 1) :
-    let K := generator (P t) dP
-    let C := cut (P t) (U t)
-    let F := star C * C
-    let R := (1 - (z t : ℂ) • F)⁻¹
-    let V := (1 - P t) * (dU - comm K (U t)) * P t
-    let Z := matrixHeatPartition (β t) (Δ t)
-    let ρ := matrixThermalState (β t) (Δ t)
     HasDerivAt (fun s => matrixBook03Price (β s) (z s) Δ P U s)
-      (-(Matrix.trace (ρ * (dΔ - comm K (Δ t)))).re +
-        z t * (2 * (Matrix.trace (R * star C * V)).re) +
-        (-Real.log Z / (β t)^2 - (Matrix.trace (ρ * Δ t)).re / β t) * dβ +
-        dz * (Matrix.trace (R * F)).re) t :=
+      (variableMovingProjectorBook03Source (β t) (z t) (P t) (U t) (Δ t)
+        dβ dz dP dU dΔ) t :=
   hasDerivAt_variable_moving_projector_book03_price hβ hβne hz hP hU hΔ hHerm hIdem hSelf
     (cut_feedback_det_mem_slitPlane (P t) (U t) (z t)
       hIdem.self_of_nhds hSelf.self_of_nhds hIsometry hz0 hz1)
