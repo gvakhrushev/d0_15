@@ -1,0 +1,46 @@
+{
+  "base_source_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "embedded_checks": [
+    {
+      "expected_sha256": "272502430370992230f6575fa558d8681d0b90dd9f9c4cfa9106d4be35e4ecd6",
+      "input_files": [],
+      "result": "query_cut_result.json",
+      "script": "check_query_cut_orbit.py",
+      "source_sha256": "eacd5d6456bacde02ddf3bab22f8ea7782ccdfcecce7afc232d928d9692f2fd9",
+      "source_upstream_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/check_query_cut_orbit.py"
+    },
+    {
+      "expected_sha256": "d6d2848cdb8232c3f981abb0cca939d5f4ce765531c9dc85aaf8be420b46b1fa",
+      "input_files": [
+        {
+          "bytes": 17833,
+          "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+          "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+          "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+          "upstream_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+        },
+        {
+          "bytes": 9896,
+          "git_blob": "fd77e022653e76180d48c67e4b97af5fdd182daa",
+          "sha256": "7c325fe6322298e13c2380522e9645cc228d8d5db2d7741368310690b80b095c",
+          "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/book_price.py",
+          "upstream_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/book_price.py"
+        },
+        {
+          "bytes": 11768,
+          "git_blob": "a845c2e26eb01bb35e7ed3d5eaa000f2631e8ec3",
+          "sha256": "4950d36010bd75bd26df13d9f13ff27843980a4fd35aefaac7dd950059fc21ee",
+          "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/BOOK_MAP.md",
+          "upstream_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/BOOK_MAP.md"
+        }
+      ],
+      "result": "d0_generated_cut_source_20261028.json",
+      "script": "d0_generated_cut_source_20261028.py",
+      "source_fence_label": "d0_generated_cut_source_20261028.py",
+      "source_sha256": "16f99e5fb0264a33891ffb7b385a5a1cd2a822dba60226f92f4541d80849e0dd",
+      "source_upstream_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+    }
+  ],
+  "schema": "d0-extracted-query-cut-checks-v1",
+  "source_commit": "5fe5203da2439d325dc9ef70f52c1111822fc22b"
+}

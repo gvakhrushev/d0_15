@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "scope": "full original heat Hessian and moving-cut terminal covector, exact word-adjoint chain; no physical HDA or GR claim",
+  "heat_controls": [
+    {
+      "n": 3,
+      "error": 2.5133811698552222e-11,
+      "predicted": 0.1966199811534448,
+      "bound": 1.7000000000000002,
+      "noncommuting_norm": 1.1716194232277946,
+      "missing_delta_xy_defect": 0.00946518482009457,
+      "missing_bkm_defect": 0.18715479633335025,
+      "BKM_variance": 0.7140012312708055,
+      "ordinary_variance": 0.731911798340255
+    },
+    {
+      "n": 4,
+      "error": 1.6866952279315228e-11,
+      "predicted": -0.24442504600883966,
+      "bound": 1.6999999999999997,
+      "noncommuting_norm": 1.3065609638649924,
+      "missing_delta_xy_defect": 0.29643716296322903,
+      "missing_bkm_defect": 0.05201211695438936,
+      "BKM_variance": 0.41755280300231196,
+      "ordinary_variance": 0.43540050522515206
+    },
+    {
+      "n": 6,
+      "error": 3.8685304959429345e-11,
+      "predicted": 0.16230793525188345,
+      "bound": 1.6999999999999997,
+      "noncommuting_norm": 1.2745598324483673,
+      "missing_delta_xy_defect": 0.22442860823103555,
+      "missing_bkm_defect": 0.0621206729791521,
+      "BKM_variance": 0.3494381165056559,
+      "ordinary_variance": 0.36044822336053345
+    },
+    {
+      "n": 8,
+      "error": 2.915102881306808e-11,
+      "predicted": 0.10484629112567245,
+      "bound": 1.7000000000000002,
+      "noncommuting_norm": 1.3770697482848324,
+      "missing_delta_xy_defect": 0.05283336047266444,
+      "missing_bkm_defect": 0.05201293065300802,
+      "BKM_variance": 0.4584358751429746,
+      "ordinary_variance": 0.46817358733748043
+    }
+  ],
+  "source_controls": [
+    {
+      "n": 4,
+      "error": 5.185296636511794e-13,
+      "moving_P_source": 0.04889607724276274,
+      "moving_U_source": 0.010122626123591168,
+      "moving_Delta_source": -0.3381355566864029
+    },
+    {
+      "n": 6,
+      "error": 3.9038217103382067e-13,
+      "moving_P_source": -0.16652903126162275,
+      "moving_U_source": -0.02749210610871359,
+      "moving_Delta_source": 0.017447600934022145
+    },
+    {
+      "n": 8,
+      "error": 3.251565683370927e-13,
+      "moving_P_source": -0.01922114397911014,
+      "moving_U_source": -0.015253076869177172,
+      "moving_Delta_source": -0.04710612464693681
+    }
+  ],
+  "word_adjoint_controls": [
+    {
+      "slot": 0,
+      "error": 1.4616780008580577e-13,
+      "source": 0.031957643515251336
+    },
+    {
+      "slot": 1,
+      "error": 1.0257766858146056e-13,
+      "source": -0.04230195107591551
+    },
+    {
+      "slot": 2,
+      "error": 1.6686652060116103e-13,
+      "source": -0.06575765888914624
+    },
+    {
+      "slot": 3,
+      "error": 1.142419492339286e-13,
+      "source": -0.04503728437098146
+    },
+    {
+      "slot": 4,
+      "error": 8.67778071622638e-14,
+      "source": -0.03505616945007413
+    }
+  ],
+  "internal_frame_control": {
+    "source_residual": -1.0061396160665481e-16,
+    "word_variation_norm": 1.1033209520673808e-15
+  }
+}

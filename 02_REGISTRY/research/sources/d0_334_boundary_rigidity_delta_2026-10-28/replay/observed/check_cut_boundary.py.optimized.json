@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "scope": "finite original-return endpoint mixed Hessian, not physical admission or GR",
+  "symbolic": {
+    "hermitian_coefficient_exact_polynomial": true,
+    "mode_gap_exact_polynomial": true
+  },
+  "derivative_checks": [
+    {
+      "rank": 1,
+      "z": 9.5367431640625e-07,
+      "mode": "mixed",
+      "error": 3.4020857242467173e-09
+    },
+    {
+      "rank": 1,
+      "z": 9.5367431640625e-07,
+      "mode": "hermitian",
+      "error": 9.664469780013007e-10
+    },
+    {
+      "rank": 1,
+      "z": 9.5367431640625e-07,
+      "mode": "antihermitian",
+      "error": 4.096624373062241e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.2,
+      "mode": "mixed",
+      "error": 1.5244667750380358e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.2,
+      "mode": "hermitian",
+      "error": 2.805588206200582e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.2,
+      "mode": "antihermitian",
+      "error": 3.9923722106038895e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.7,
+      "mode": "mixed",
+      "error": 1.5612886539173587e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.7,
+      "mode": "hermitian",
+      "error": 5.40184785791098e-10
+    },
+    {
+      "rank": 1,
+      "z": 0.7,
+      "mode": "antihermitian",
+      "error": 3.3502529639406475e-09
+    },
+    {
+      "rank": 2,
+      "z": 9.5367431640625e-07,
+      "mode": "mixed",
+      "error": 8.69700311767474e-10
+    },
+    {
+      "rank": 2,
+      "z": 9.5367431640625e-07,
+      "mode": "hermitian",
+      "error": 1.3341318327864116e-10
+    },
+    {
+      "rank": 2,
+      "z": 9.5367431640625e-07,
+      "mode": "antihermitian",
+      "error": 1.1591266835253577e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.2,
+      "mode": "mixed",
+      "error": 5.842440975456498e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.2,
+      "mode": "hermitian",
+      "error": 2.023854861477048e-09
+    },
+    {
+      "rank": 2,
+      "z": 0.2,
+      "mode": "antihermitian",
+      "error": 2.7883548803231406e-09
+    },
+    {
+      "rank": 2,
+      "z": 0.7,
+      "mode": "mixed",
+      "error": 3.5761815730950275e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.7,
+      "mode": "hermitian",
+      "error": 1.2786632863637237e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.7,
+      "mode": "antihermitian",
+      "error": 1.9739732071144545e-10
+    },
+    {
+      "rank": 3,
+      "z": 9.5367431640625e-07,
+      "mode": "mixed",
+      "error": 1.8237733545589663e-10
+    },
+    {
+      "rank": 3,
+      "z": 9.5367431640625e-07,
+      "mode": "hermitian",
+      "error": 1.9139931306533242e-10
+    },
+    {
+      "rank": 3,
+      "z": 9.5367431640625e-07,
+      "mode": "antihermitian",
+      "error": 4.914648688014722e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.2,
+      "mode": "mixed",
+      "error": 3.191887310016739e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.2,
+      "mode": "hermitian",
+      "error": 4.404421827253202e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.2,
+      "mode": "antihermitian",
+      "error": 1.6427209592606573e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.7,
+      "mode": "mixed",
+      "error": 1.6518703072065932e-11
+    },
+    {
+      "rank": 3,
+      "z": 0.7,
+      "mode": "hermitian",
+      "error": 4.2752745788021684e-12
+    },
+    {
+      "rank": 3,
+      "z": 0.7,
+      "mode": "antihermitian",
+      "error": 4.21647716741802e-10
+    }
+  ],
+  "max_normalized_fd_error": 4.096624373062241e-09,
+  "golden_gain": {
+    "z": 9.5367431640625e-07,
+    "kappa_H": 4.5026495696419226e-07,
+    "kappa_A": 1.90734932760488e-06,
+    "inverse_norm": 2220914.56271052,
+    "condition": 4.236059897853796
+  },
+  "gluing_control": {
+    "composed_price": 9.005282737455358e-07,
+    "sum_step_prices": 7.28542482032253e-07,
+    "difference": 1.7198579171328276e-07,
+    "composed_mixed_hessian": 1.6947641750105534e-06,
+    "stationary_glued_mixed_hessian": -2.2513247848209623e-07
+  }
+}

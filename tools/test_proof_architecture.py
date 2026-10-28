@@ -5184,6 +5184,7 @@ class ProofArchitectureTests(unittest.TestCase):
             [
                 "D0.Algebra.MovingProjectorTransport",
                 "D0.Geometry.RefoliationWitnessCoefficientExtraction",
+                "D0.Geometry.MovingCutQueryCancellation",
             ],
         )
         self.assertTrue(all(
@@ -5198,6 +5199,80 @@ class ProofArchitectureTests(unittest.TestCase):
             "02_REGISTRY/research/sources/d0_334_refoliation_delta_2026-10-28/upstream/PROOF_RU.md#4",
             coefficient_hits[0]["record"]["referenced_by"],
         )
+
+    def test_boundary_rigidity_delta_is_retrievable_without_physical_owner_inference(self) -> None:
+        data = proof.load_dataset(proof.ROOT)
+        hits = proof.full_text_search(
+            proof.ROOT,
+            "A4D ORIGINAL RETURN BOUNDARY AND CANONICAL RIGIDITY 2026 10 28",
+            limit=100,
+        )
+        by_source = {item["source"]: item for item in hits}
+        intake_path = "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md"
+        source_path = (
+            "02_REGISTRY/research/sources/"
+            "d0_334_boundary_rigidity_delta_2026-10-28/upstream/"
+            "02_REGISTRY/research/A4D_ORIGINAL_RETURN_BOUNDARY_AND_CANONICAL_RIGIDITY_2026_10_28.md"
+        )
+        self.assertIn(intake_path, by_source)
+        self.assertIn(source_path, by_source)
+        links = proof._declared_source_links(data, source_path)
+        self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
+        self.assertEqual(links["formal_support_locators"], [])
+
+    def test_paid_source_delta_and_finite_matrix_support_are_retrievable(self) -> None:
+        data = proof.load_dataset(proof.ROOT)
+        hits = proof.full_text_search(
+            proof.ROOT,
+            "A4D NONVACUUM SAME REPRESENTATIVE PAID SOURCE RESIDUAL 2026 10 20",
+            limit=100,
+        )
+        by_source = {item["source"]: item for item in hits}
+        intake_path = "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md"
+        source_path = (
+            "02_REGISTRY/research/sources/"
+            "d0_334_paid_source_delta_2026-10-28/upstream/"
+            "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        )
+        self.assertIn(intake_path, by_source)
+        self.assertIn(source_path, by_source)
+        links = proof._declared_source_links(data, source_path)
+        self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
+        self.assertEqual(
+            [row["lean_module"] for row in links["formal_support_locators"]],
+            ["D0.Geometry.MovingCutQueryCancellation"],
+        )
+        self.assertTrue(all(
+            row["status"] == "metadata_locator_only"
+            for row in links["formal_support_locators"]
+        ))
+        support_hits = proof.structured_search(data, "D0.Geometry.MovingCutQueryCancellation")
+        self.assertEqual(support_hits[0]["kind"], "formal-support-metadata")
+        self.assertIn(
+            source_path,
+            support_hits[0]["record"]["referenced_by"],
+        )
+
+    def test_generated_cut_application_is_retrievable_without_false_lean_or_owner_link(self) -> None:
+        data = proof.load_dataset(proof.ROOT)
+        hits = proof.full_text_search(
+            proof.ROOT,
+            "QUERY ORBIT APPLICATION RU",
+            limit=100,
+        )
+        by_source = {item["source"]: item for item in hits}
+        intake_path = "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md"
+        application_path = (
+            "02_REGISTRY/research/sources/"
+            "d0_334_generated_cut_application_delta_2026-10-28/upstream/"
+            "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/"
+            "QUERY_ORBIT_APPLICATION_RU.md"
+        )
+        self.assertIn(intake_path, by_source)
+        self.assertIn(application_path, by_source)
+        links = proof._declared_source_links(data, application_path)
+        self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
+        self.assertEqual(links["formal_support_locators"], [])
 
 
 if __name__ == "__main__":

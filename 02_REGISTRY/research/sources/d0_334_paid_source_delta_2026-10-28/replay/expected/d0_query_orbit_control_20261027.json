@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_sha256": "b89cb0e9db410d1aef7bc209b1852e72b428a3e7c4d51c46e21a045e73751f40",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_query": "26 stages, all 32 columns, protected rank 8",
+  "scalar": "c=p^3, u=2 sqrt(p) p",
+  "full_orbit_corner_derivative": "-2(1-c^2) I",
+  "full_orbit_feedback_derivative": "4 R z c(1-c^2)/(a+z c^2)",
+  "unit_generator_feedback_derivative": "4 R z c sqrt(1-c^2)/(a+z c^2)",
+  "finite_descent_rational_lower": "372734/29296875",
+  "scope": "ambient full-query comparator; finite abstract orbit sign; physical X_N, large 7cq and compiled tolerance task not checked"
+}

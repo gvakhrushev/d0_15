@@ -19,6 +19,21 @@ delta_spec = importlib.util.spec_from_file_location('refoliation_source_integrit
 delta_verifier = importlib.util.module_from_spec(delta_spec)
 delta_spec.loader.exec_module(delta_verifier)
 
+BOUNDARY_SCRIPT = ROOT / '02_REGISTRY/research/sources/d0_334_boundary_rigidity_delta_2026-10-28/verify_boundary_rigidity_source_delta.py'
+boundary_spec = importlib.util.spec_from_file_location('boundary_source_integrity', BOUNDARY_SCRIPT)
+boundary_verifier = importlib.util.module_from_spec(boundary_spec)
+boundary_spec.loader.exec_module(boundary_verifier)
+
+PAID_SOURCE_SCRIPT = ROOT / '02_REGISTRY/research/sources/d0_334_paid_source_delta_2026-10-28/verify_paid_source_delta.py'
+paid_source_spec = importlib.util.spec_from_file_location('paid_source_integrity', PAID_SOURCE_SCRIPT)
+paid_source_verifier = importlib.util.module_from_spec(paid_source_spec)
+paid_source_spec.loader.exec_module(paid_source_verifier)
+
+GENERATED_CUT_SCRIPT = ROOT / '02_REGISTRY/research/sources/d0_334_generated_cut_application_delta_2026-10-28/verify_generated_cut_application_delta.py'
+generated_cut_spec = importlib.util.spec_from_file_location('generated_cut_integrity', GENERATED_CUT_SCRIPT)
+generated_cut_verifier = importlib.util.module_from_spec(generated_cut_spec)
+generated_cut_spec.loader.exec_module(generated_cut_verifier)
+
 
 class MovingCutSourceIntegrityTest(unittest.TestCase):
     def setUp(self) -> None:
@@ -124,6 +139,87 @@ class RefoliationDeltaSourceIntegrityTest(unittest.TestCase):
         path.symlink_to(external)
         with self.assertRaisesRegex(ValueError, 'Expected regular file'):
             delta_verifier.verify(self.repo)
+
+
+class PR334DeltaSourceIntegrityTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.repo = Path(self.tmp.name) / 'repo_without_git'
+        self.repo.mkdir()
+
+    def copy_packet(self, packet: str) -> Path:
+        target = self.repo / packet
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copytree(ROOT / packet, target)
+        return target
+
+    def test_boundary_delta_is_read_only_and_detects_same_size_mutation(self) -> None:
+        packet = self.copy_packet(boundary_verifier.PACKET)
+        before = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                  for p in self.repo.rglob('*') if p.is_file()}
+        result = boundary_verifier.verify(self.repo)
+        after = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                 for p in self.repo.rglob('*') if p.is_file()}
+        self.assertEqual(before, after)
+        self.assertEqual(result['status'], 'PASS_PINNED_BOUNDARY_RIGIDITY_SOURCE_BYTES')
+        self.assertEqual(result['file_count'], 21)
+        self.assertFalse(result['source_code_executed_by_verifier'])
+        self.assertFalse(result['scientific_acceptance'])
+        manifest = __import__('json').loads((packet / 'MANIFEST.json').read_bytes())
+        source = packet / manifest['files'][0]['snapshot_path']
+        data = source.read_bytes()
+        source.write_bytes(bytes([data[0] ^ 1]) + data[1:])
+        with self.assertRaisesRegex(ValueError, 'SHA-256 mismatch'):
+            boundary_verifier.verify(self.repo)
+
+    def test_paid_source_delta_is_read_only_and_detects_symlinks(self) -> None:
+        packet = self.copy_packet(paid_source_verifier.PACKET)
+        before = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                  for p in self.repo.rglob('*') if p.is_file()}
+        result = paid_source_verifier.verify(self.repo)
+        after = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                 for p in self.repo.rglob('*') if p.is_file()}
+        self.assertEqual(before, after)
+        self.assertEqual(result['status'], 'PASS_PINNED_PAID_SOURCE_AND_REPLAY_BYTES')
+        self.assertEqual(result['replay_input_count'], 7)
+        self.assertEqual(result['replayed_checker_count'], 3)
+        self.assertFalse(result['source_code_executed_by_verifier'])
+        self.assertFalse(result['scientific_acceptance'])
+        extracted = __import__('json').loads((packet / 'EXTRACTED_CHECKS.json').read_bytes())
+        source = packet / 'replay' / 'inputs' / extracted['replay_input_files'][0]['snapshot_path'].split('replay/inputs/', 1)[-1]
+        external = Path(self.tmp.name) / 'external-input'
+        external.write_bytes(source.read_bytes())
+        source.unlink()
+        source.symlink_to(external)
+        with self.assertRaisesRegex(ValueError, 'Expected regular file'):
+            paid_source_verifier.verify(self.repo)
+
+    def test_generated_cut_delta_is_read_only_and_detects_same_size_mutation(self) -> None:
+        self.copy_packet(paid_source_verifier.PACKET)
+        packet = self.copy_packet(generated_cut_verifier.PACKET)
+        before = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                  for p in self.repo.rglob('*') if p.is_file()}
+        result = generated_cut_verifier.verify(self.repo)
+        after = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                 for p in self.repo.rglob('*') if p.is_file()}
+        self.assertEqual(before, after)
+        self.assertEqual(result['status'], 'PASS_PINNED_GENERATED_CUT_SOURCE_AND_REPLAY_BYTES')
+        self.assertEqual(result['source_commit'], '5fe5203da2439d325dc9ef70f52c1111822fc22b')
+        self.assertEqual(result['upstream_file_count'], 6)
+        self.assertEqual(result['replay_input_count'], 3)
+        self.assertEqual(result['replayed_checker_count'], 2)
+        self.assertLessEqual(result['max_numeric_difference_from_published'], 3e-14)
+        self.assertFalse(result['source_code_executed_by_verifier'])
+        self.assertFalse(result['scientific_acceptance'])
+        manifest = __import__('json').loads((packet / 'MANIFEST.json').read_bytes())
+        memo_entry = next(row for row in manifest['files'] if row['storage'] == 'patch' and
+                          row['upstream_path'].endswith('A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'))
+        patch = packet / memo_entry['patch_path']
+        data = patch.read_bytes()
+        patch.write_bytes(bytes([data[0] ^ 1]) + data[1:])
+        with self.assertRaisesRegex(ValueError, 'Pinned source patch mismatch'):
+            generated_cut_verifier.verify(self.repo)
 
 
 if __name__ == '__main__':

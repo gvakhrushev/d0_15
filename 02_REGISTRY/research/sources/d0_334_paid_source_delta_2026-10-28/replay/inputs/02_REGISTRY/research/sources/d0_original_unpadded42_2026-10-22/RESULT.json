@@ -1,0 +1,51 @@
+{
+  "status": "PASS_LOCAL_OUTWARD_INTERVAL_BANACH_ORIGINAL_UNPADDED_42_ROOT",
+  "date": "2026-10-22",
+  "result": "One exact nonflat rank-two real stationary root exists and is unique in a radius 1e-24 cube for the unchanged original six-plaquette N1 16+24+2 configured CQ model with the TRUE original Golden 0/10 unequal reporter charges 1 and 2.",
+  "proof_method": "Strict interval-complex polydisc and analytic Cauchy source/Hessian remainders; 42x42 outward-verified Hessian; previous CQ inverse preconditioner re-used and checked on new full native charge; real Banach contraction.",
+  "original_model": "d0_full42_interval_banach_2026-10-22/certified_model.py; unchanged p=(sqrt5-1)/2,z=2^-20,sigma-minus,x=-tau f/rho,two real CAR scalars,six original based Lorentz G2STAR faces,all 16+24+2 field variables,original rational h0 and collars.",
+  "actual_changed_payment": "Use original SELF-DELIMITING F/R outcomes 0 cost 1 and 10 cost 2, hence E C=1+click. S_unpadded=S_prior -norm*sum rho*(click-r0). No adjusted gravitational action, rate, detector, fitted Info or ignored failed path.",
+  "analytic_domain": {
+    "complex_polydisc_radius": "1e-4",
+    "full_scalar_abs_upper": "<7.289 (<20 required)",
+    "all_clicks_real": "between 1e-6 and 1e-5",
+    "analytic_Lorentz_expm": "original Taylor degree 30 scaled by 2^11 with original rigorous elementwise tail <1e-120"
+  },
+  "certificate": {
+    "original_full_Hessian_entries": 1764,
+    "center_full_gradient_infinity_upper": "<1.04e-53",
+    "original_old_root_rational_preconditioner_infinity_upper": "<28.883",
+    "certified_new_near_inverse_infinity": "<0.036547",
+    "full_Hessian_Lipschitz_times_ball": "1.69344e-6",
+    "certified_new_Banach_contraction_infinity": "<0.036600",
+    "center_drift_infinity": "<3.01e-52",
+    "real_exact_root_ball_radius_infinity": "1e-24",
+    "strict_positive_coframe_e00_Hessian": ">2.9179",
+    "strict_negative_coframe_e11_Hessian": "<-1.0514"
+  },
+  "native_nonvacuum_witness": {
+    "oriented_det_coframe": ">1.5256",
+    "based_spatial_holonomy_component": ">0.0020210",
+    "first_real_scalar_temporal_gradient": ">0.08",
+    "second_independent_real_CAR_gradient": ">0.1",
+    "positive_report_probabilities": true,
+    "original_sigma_minus": true
+  },
+  "local_run": {
+    "full_903_upper_interval_rows": "ALL_CHECKED",
+    "numeric_homotopy_from_old_padded_root_lambda0_to_real_unpadded_lambda1": "PASS",
+    "max_42_coordinate_displacement_from_old_root": "3.1498949503404317e-8",
+    "high_precision_grad_inf_at_refined_point": "7.3232737709490324128e-56",
+    "certified_original_preconditioner_transfer": "PASS; exact interval ||I-A_old H_new||inf <0.036547",
+    "independent_new_exact_root_center_file": "center_new.json",
+    "statement": "Research-scope original native 0/10 measured-code stationary root; NOT full Book03/G0 physical-action or continuum GR theorem."
+  },
+  "assumptions_open": {
+    "compulsory_Book03_HJR_and_path_Info_selection": false,
+    "common_initial_native_writer_and_actual_primitive_preparation": false,
+    "independent_preparation_oldRIGHT_clock_thermal_Euler": false,
+    "actual_full_native_AF_PF_address_family_and_uniform_refinement": false,
+    "raw216_closed": false,
+    "GR_closed": false
+  }
+}

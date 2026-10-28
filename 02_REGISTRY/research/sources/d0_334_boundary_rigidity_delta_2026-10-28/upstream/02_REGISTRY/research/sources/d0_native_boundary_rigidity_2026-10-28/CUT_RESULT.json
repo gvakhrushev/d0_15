@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "scope": "finite original-return endpoint mixed Hessian, not physical admission or GR",
+  "symbolic": {
+    "hermitian_coefficient_exact_polynomial": true,
+    "mode_gap_exact_polynomial": true
+  },
+  "derivative_checks": [
+    {
+      "rank": 1,
+      "z": 9.5367431640625e-07,
+      "mode": "mixed",
+      "error": 3.4020857242467173e-09
+    },
+    {
+      "rank": 1,
+      "z": 9.5367431640625e-07,
+      "mode": "hermitian",
+      "error": 9.664469780013007e-10
+    },
+    {
+      "rank": 1,
+      "z": 9.5367431640625e-07,
+      "mode": "antihermitian",
+      "error": 4.096624373062241e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.2,
+      "mode": "mixed",
+      "error": 1.5244667750380358e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.2,
+      "mode": "hermitian",
+      "error": 2.805588206200582e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.2,
+      "mode": "antihermitian",
+      "error": 3.9923722106038895e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.7,
+      "mode": "mixed",
+      "error": 1.5612886539173587e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.7,
+      "mode": "hermitian",
+      "error": 5.40184785791098e-10
+    },
+    {
+      "rank": 1,
+      "z": 0.7,
+      "mode": "antihermitian",
+      "error": 3.3502529639406475e-09
+    },
+    {
+      "rank": 2,
+      "z": 9.5367431640625e-07,
+      "mode": "mixed",
+      "error": 8.731698697417301e-10
+    },
+    {
+      "rank": 2,
+      "z": 9.5367431640625e-07,
+      "mode": "hermitian",
+      "error": 1.3909923213262232e-10
+    },
+    {
+      "rank": 2,
+      "z": 9.5367431640625e-07,
+      "mode": "antihermitian",
+      "error": 1.2092407630781565e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.2,
+      "mode": "mixed",
+      "error": 5.846295669797996e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.2,
+      "mode": "hermitian",
+      "error": 2.0277580725647226e-09
+    },
+    {
+      "rank": 2,
+      "z": 0.2,
+      "mode": "antihermitian",
+      "error": 2.790957021048257e-09
+    },
+    {
+      "rank": 2,
+      "z": 0.7,
+      "mode": "mixed",
+      "error": 3.456196440154713e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.7,
+      "mode": "hermitian",
+      "error": 1.3837103685077068e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.7,
+      "mode": "antihermitian",
+      "error": 1.6597945240448553e-10
+    },
+    {
+      "rank": 3,
+      "z": 9.5367431640625e-07,
+      "mode": "mixed",
+      "error": 2.0126655897456658e-10
+    },
+    {
+      "rank": 3,
+      "z": 9.5367431640625e-07,
+      "mode": "hermitian",
+      "error": 1.9024284925173163e-10
+    },
+    {
+      "rank": 3,
+      "z": 9.5367431640625e-07,
+      "mode": "antihermitian",
+      "error": 5.002348535398937e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.2,
+      "mode": "mixed",
+      "error": 3.296934253382844e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.2,
+      "mode": "hermitian",
+      "error": 4.0555497848870914e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.2,
+      "mode": "antihermitian",
+      "error": 1.4759937716490867e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.7,
+      "mode": "mixed",
+      "error": 5.358102850294699e-12
+    },
+    {
+      "rank": 3,
+      "z": 0.7,
+      "mode": "hermitian",
+      "error": 6.518563466784144e-12
+    },
+    {
+      "rank": 3,
+      "z": 0.7,
+      "mode": "antihermitian",
+      "error": 4.120103147542409e-10
+    }
+  ],
+  "max_normalized_fd_error": 4.096624373062241e-09,
+  "golden_gain": {
+    "z": 9.5367431640625e-07,
+    "kappa_H": 4.5026495696419226e-07,
+    "kappa_A": 1.90734932760488e-06,
+    "inverse_norm": 2220914.56271052,
+    "condition": 4.236059897853796
+  },
+  "gluing_control": {
+    "composed_price": 9.00528273745536e-07,
+    "sum_step_prices": 7.28542482032253e-07,
+    "difference": 1.7198579171328298e-07,
+    "composed_mixed_hessian": 1.6947641750105543e-06,
+    "stationary_glued_mixed_hessian": -2.2513247848209623e-07
+  }
+}

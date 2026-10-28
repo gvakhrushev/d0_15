@@ -1,0 +1,95 @@
+{
+  "schema": "d0-local-source-replay-v1",
+  "source_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "python": "3.13.14 (main, Jul 18 2026, 16:56:45) [Clang 22.1.3 ]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "torch": "2.10.0",
+    "mpmath": "1.3.0"
+  },
+  "input_snapshot": "replay/inputs in this source intake",
+  "reconstructed_root": "/tmp/d0-334-paid-source-replay",
+  "input_file_count": 7,
+  "checks": [
+    {
+      "script": "d0_unpadded_samechart_click_20261027.py",
+      "status": "PASS_ORIGINAL_UNPADDED42_SAME_CHART_DIRECT_CLICK",
+      "scope": "all inequalities hold throughout original root cube; direct-click normalization is a mathematical comparison, not full Book source or physical selection; no new root, heat, full128 CAR or Lean replay; GR_closed=false",
+      "source_sha256": "bdde42db756f0c52230556db4b25cf5918a6ba29c7ce3332e0c4ad1ce6be6547",
+      "result_sha256": "847471a4149a387876d304b8194fd1b8e685bf004f670f44bd8bdd306d934b9c",
+      "modes": [
+        {
+          "mode": "ordinary",
+          "exit_code": 0,
+          "stdout_sha256": "847471a4149a387876d304b8194fd1b8e685bf004f670f44bd8bdd306d934b9c",
+          "matches_published_result_bytes": true,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "stdout_sha256": "847471a4149a387876d304b8194fd1b8e685bf004f670f44bd8bdd306d934b9c",
+          "matches_published_result_bytes": true,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "script": "d0_query_orbit_control_20261027.py",
+      "status": "PASS",
+      "scope": "ambient full-query comparator; finite abstract orbit sign; physical X_N, large 7cq and compiled tolerance task not checked",
+      "source_sha256": "b89cb0e9db410d1aef7bc209b1852e72b428a3e7c4d51c46e21a045e73751f40",
+      "result_sha256": "a9a5c77e2688dafcc5a3dd9d113f297b317d6131b3455c2b5eb54f7877c71b01",
+      "modes": [
+        {
+          "mode": "ordinary",
+          "exit_code": 0,
+          "stdout_sha256": "a9a5c77e2688dafcc5a3dd9d113f297b317d6131b3455c2b5eb54f7877c71b01",
+          "matches_published_result_bytes": true,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "stdout_sha256": "a9a5c77e2688dafcc5a3dd9d113f297b317d6131b3455c2b5eb54f7877c71b01",
+          "matches_published_result_bytes": true,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "script": "d0_query_cut_orbit_control_20261028.py",
+      "status": "PASS",
+      "scope": "finite operator identity only; no admitted physical variation, field map or GR closure",
+      "source_sha256": "53f23df9b628669caedd231eb4ed41f9dcda0407d2d2b318d9897d68f2ebdd33",
+      "result_sha256": "60151aac4e410c73bb1e8f0e274bf9f860ed17fa4314e9373768094f7819bdd9",
+      "modes": [
+        {
+          "mode": "ordinary",
+          "exit_code": 0,
+          "stdout_sha256": "60151aac4e410c73bb1e8f0e274bf9f860ed17fa4314e9373768094f7819bdd9",
+          "matches_published_result_bytes": true,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "stdout_sha256": "60151aac4e410c73bb1e8f0e274bf9f860ed17fa4314e9373768094f7819bdd9",
+          "matches_published_result_bytes": true,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  ],
+  "status": "PASS_ALL_THREE_CONTROLS_NORMAL_AND_OPTIMIZED_BYTE_IDENTICAL_TO_PUBLISHED_RESULTS",
+  "scope": "the pinned unpadded-root row, separate finite QUERY orbit, and rational moving-cut cancellation controls; no same-execution physical selection, full Book residual, physical admission, or GR closure"
+}

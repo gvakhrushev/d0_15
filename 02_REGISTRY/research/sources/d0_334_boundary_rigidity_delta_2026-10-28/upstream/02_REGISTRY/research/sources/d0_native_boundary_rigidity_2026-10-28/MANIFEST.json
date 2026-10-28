@@ -1,0 +1,105 @@
+{
+  "GR_closed": false,
+  "base_commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+  "existing_pr": 334,
+  "files_excluding_manifest": [
+    {
+      "bytes": 25128,
+      "git_blob": "e41c8288725d2a5ce65ac8e198709aa31c1dd98d",
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_RETURN_BOUNDARY_AND_CANONICAL_RIGIDITY_2026_10_28.md",
+      "sha256": "46c44f9de8a9915086d09d7d02d04daa06c15c25e22eadd11021f7173add2368"
+    },
+    {
+      "bytes": 5390,
+      "git_blob": "033d1804c2db92ab4919ef655098ade04f8e6a71",
+      "path": "02_REGISTRY/research/A4D_ROOT_CUT_TO_REFOLIATION_CLOSURE_2026_10_28.md",
+      "sha256": "8c21949c21f1e183bcb4bc751f531d6dd61d3f663828d11ad1645081cd577547"
+    },
+    {
+      "bytes": 16039,
+      "git_blob": "3fe707d54540019190e4ca82b10eb0becc82464a",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/BRACKET_TRANSPORT.md",
+      "sha256": "fae4bf970762476c502f7020953bc32a51737d8837b3b2e76745c3d26ec7ed40"
+    },
+    {
+      "bytes": 9344,
+      "git_blob": "545004f770426f42af8d75b607c5a7b2c346668e",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CANONICAL_RIGIDITY.md",
+      "sha256": "39e5085d8230bd2ef0ccf6ea67ed5730e1bb76c2e7aed32610fa0f3f2bff2934"
+    },
+    {
+      "bytes": 1022,
+      "git_blob": "63de637226887dc4dc9d904ad09c4df9d019a9b3",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CLASSIFICATION_RESULT.json",
+      "sha256": "911f80cd5a1e06592ac4a24b98f281ff937ab6a4f0a287c254875a75f4a386e6"
+    },
+    {
+      "bytes": 14325,
+      "git_blob": "2cbc8f056623199dbc518132d44e317f5390bf89",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CUT_BOUNDARY.md",
+      "sha256": "e86ad43b86377013443efc8fd61a36f64455361b41224dc3b718768a3b6221de"
+    },
+    {
+      "bytes": 3909,
+      "git_blob": "626799c184fbcc2415cdc996acc7bdc4cafa0d5c",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CUT_RESULT.json",
+      "sha256": "706df3c0b05dafb5ed005da70d2c9f3fc317a9fe4fed8f7a6a59e1809acba811"
+    },
+    {
+      "bytes": 3041,
+      "git_blob": "46f4d09db49edc2b56196b158fbc676d2d644250",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/FULL_SOURCE_RESULT.json",
+      "sha256": "229068ed441f21099349fd2ec0fb586d6c69d7f0192f637ad9a384597202df49"
+    },
+    {
+      "bytes": 4052,
+      "git_blob": "cd17fc004f4bf0a54b407312ea98325e2ddc8f16",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/REVIEW.md",
+      "sha256": "c54342365fa62bc3f2df54977dbb77647e88be44ed7b4bc201d9779bab215ac4"
+    },
+    {
+      "bytes": 4204,
+      "git_blob": "2130b2eb1e6874cead72945c4da8fdaf625bcec5",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/RUN_LOG.json",
+      "sha256": "59f225433cec431947c1f421fe9dbc9a4e165b2893fa19f7b38a444ad1dfb2ba"
+    },
+    {
+      "bytes": 7749,
+      "git_blob": "9be66b834ba2b906f360d81d3cc8994126698398",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/SCALAR_RIGIDITY.md",
+      "sha256": "538a487268d5b45215a80a464120af949a1f1b144f1d01e6deef5f600be05a1c"
+    },
+    {
+      "bytes": 3029,
+      "git_blob": "779f44afb44b360514f909fc501f896a627fb32c",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/SOURCE_PINS.json",
+      "sha256": "264ab91b028695fffd5ff67c90735031eb8b54639970334d878c5a85eac68def"
+    },
+    {
+      "bytes": 2715,
+      "git_blob": "63bd1fbf05da6ec277e33d060cac2cadf5752c93",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/VALIDATION.md",
+      "sha256": "0ecfcdef2ee777cb2777a7ca1c534a491dc5b65744c8337d78691d84e113e6db"
+    },
+    {
+      "bytes": 5612,
+      "git_blob": "c3a63b7825a2a562ec39acd37cf15f5a0fea943d",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_canonical_rigidity.py",
+      "sha256": "da8425efc34c4aa8d1c4381da0845034ef3d054ee9fe65c46815b10a35aad2cd"
+    },
+    {
+      "bytes": 3391,
+      "git_blob": "052c2409fb7b6ac894e6614c04e627d307e1aaf6",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_cut_boundary.py",
+      "sha256": "bce3a4e337fe8315bcc5d6591e82f0804e55c2eab96cd77311c1a2ce612dfe08"
+    },
+    {
+      "bytes": 5184,
+      "git_blob": "d19b12cdb82eaa16318c5136716f8b39e3a086a3",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_full_boundary_source.py",
+      "sha256": "54c6b0e1df17ea95fc6d850c1dc38666624254a662c5bbcec6b29e73d81e8602"
+    }
+  ],
+  "repository": "gvakhrushev/d0_15",
+  "scope": "original finite return boundary and full terminal source; conditional separated canonical-class rigidity; native HDA and physical GR remain open"
+}

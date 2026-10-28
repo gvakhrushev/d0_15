@@ -479,6 +479,7 @@ import D0.Geometry.HeatTraceEHProxy
 import D0.Geometry.HigherCurvatureSuppression
 import D0.Geometry.HurwitzRigidPhaseGenerator
 import D0.Geometry.LucasVoronoiMarkovPartition
+import D0.Geometry.MovingCutQueryCancellation
 import D0.Geometry.NonvacuumBrinkmannStencil
 import D0.Geometry.OppositeCutPairing
 import D0.Geometry.PhaseReturnBranchCount

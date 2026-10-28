@@ -1,12 +1,16 @@
 # D0 chat results: verified source intake and application boundaries
 
 Source owner: existing research [PR #334](https://github.com/gvakhrushev/d0_15/pull/334),
-commit [`eebcb5e467742df3e9cf7fa9702042d7294aa742`](https://github.com/gvakhrushev/d0_15/tree/eebcb5e467742df3e9cf7fa9702042d7294aa742).
+latest source checkpoint reviewed here [`5fe5203da2439d325dc9ef70f52c1111822fc22b`](https://github.com/gvakhrushev/d0_15/tree/5fe5203da2439d325dc9ef70f52c1111822fc22b).
 This is an intake into the existing proof-architecture execution #402, not a
 new scientific owner, claim status, physical selector, or merge of #334.
 The full archive was published in upstream commit
 `063f643d7a760e9203c3f74cba870b256b36fcc3` and the moving-cut continuation
-in `eebcb5e467742df3e9cf7fa9702042d7294aa742`.
+in `eebcb5e467742df3e9cf7fa9702042d7294aa742`. Subsequent checkpoints
+`c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`,
+`c80d3dd2a917bbb2db2e2b1ab61d5216877c05e6`, and the current reviewed
+`172876cdf38bfce6f87fdd4a059d524b60c10eb9` and
+`5fe5203da2439d325dc9ef70f52c1111822fc22b` are separately pinned below.
 
 The nine packages below are preserved as 74 individually readable UTF-8 files
 (650,121 bytes) under [the source intake](sources/d0_chat_intake_2026-10-28/README.md),
@@ -79,7 +83,7 @@ independently admissible variation.
 
 ## Lean formalization slice
 
-Three supporting results from this integration are represented by compiled
+Four supporting results from this integration are represented by compiled
 Lean modules and registered in `formal_support.csv`. They are imported by
 `D0.All`; none is a physical-closure claim.
 
@@ -88,13 +92,16 @@ Lean modules and registered in `formal_support.csv`. They are imported by
 | [`D0.Algebra.MovingProjectorTransport`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean) | In a possibly noncommutative ring, for idempotent `P` with tangent equation `P dP + dP P = dP`, `K=[dP,P]` satisfies `[K,P]=dP`, and the differentiated cut minus common transport is `(1-P)(dU-[K,U])P`. A separate `StarRing` lemma proves `K` anti-self-adjoint when `P` and `dP` are self-adjoint. | The tangent equation is supplied, not derived from a differentiable projector family. This does not formalize the trace/log-determinant derivative, thermal term, finite-rank Hilbert hypotheses, or physical admission. |
 | [`D0.Geometry.ArchiveGradedRefinementComposedReadout`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean) | Iterates the owned adjacent pullbacks literally, proves their cochain identity for every number of steps and an exact singleton prefix/tail formula. At doubling, the stated fixed-component normalized L1 and L2-squared errors are both exactly `1`. | The probe is the literal one-form embedding but its fixed-component sampler is not selected as a physical observable. The result shows chain-map preservation alone does not imply convergence of that readout; it proves no universal refinement obstruction. |
 | [`D0.Geometry.RefoliationWitnessCoefficientExtraction`](../../03_FORMALIZATION/D0/Geometry/RefoliationWitnessCoefficientExtraction.lean) | From the three exact coefficient equations displayed for the shear, trace, and two-scalar witnesses, proves `a*b=1`, `lambda=1/2`, and `C*D=I₂`. | The bracket/witness equalities are premises. It does not derive the continuum Poisson bracket, strong hypersurface-deformation algebra, canonical D0 variables, lapse generators, or physical admission. |
+| [`D0.Geometry.MovingCutQueryCancellation`](../../03_FORMALIZATION/D0/Geometry/MovingCutQueryCancellation.lean) | Over `ℚ`, defines a rank-one projector and a 2×2 orthogonal reflection, proves the complete cut derivative row, two-sided resolvent inverse, and generic cancellation of the QUERY-only and cut-only source rows under joint conjugation; the exact rational control is `+16/35`, `−16/35`, `0`. | This is the finite algebraic control in #334 §7cu. It does not prove either tangent is an admitted D0 variation, transport the thermal operator, construct the original 42-field map, or establish physical source selection. |
 
 The first module formalizes the algebraic moving-cut transport portion of the
 published source, not the complete analytic derivative above. The second
 extends the existing open graded-refinement proof target. The third formalizes
 only the algebraic coefficient extraction from the pinned #334 witness
-equations, not their analytic derivation. Source-to-claim acceptance, the full
-bracket proof, and physical refinement assumptions remain open. `#print axioms` in
+equations, not their analytic derivation. The fourth formalizes the separate
+finite 2×2 QUERY/cut cancellation control, not the full paid source or its
+physical admission. Source-to-claim acceptance, the full bracket proof, and
+physical refinement assumptions remain open. `#print axioms` in
 Lean 4.30.0 reports `[propext]` for the generic cut-relative identity and
 `[propext, Classical.choice, Quot.sound]` for the self-adjoint generator and
 complex-matrix specialization. The [compiled declaration receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_refinement_declarations_2026-10-28.json) records actual elaborated signatures, type/proof dependencies, source ranges and axiom footprints for five load-bearing declarations from `D0.All` at this source digest. This is a type-level cross-check against the coded theorem statements; the prose-to-theorem and physical application links still require review.
@@ -199,5 +206,90 @@ consequence of the stated witness equations. `GR_closed=false` remains.
 The source proof repeats one trace-coefficient witness bullet in §5; its code
 and result contain the three intended distinct coefficient witnesses plus a
 separate quartic control. This is recorded as an editorial duplication and
-does not change the scoped theorem. No CI checks were reported for #334 at the
-time of this review.
+does not change the scoped theorem. No CI status for these later source
+checkpoints is inferred from the earlier c4a review.
+
+## Additional #334 source checkpoints: boundary rigidity and paid-source controls
+
+The [boundary-rigidity intake](sources/d0_334_boundary_rigidity_delta_2026-10-28/README.md)
+pins the 21-file delta from `c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a` to
+`c80d3dd2a917bbb2db2e2b1ab61d5216877c05e6`, including the
+[upstream boundary theorem note](sources/d0_334_boundary_rigidity_delta_2026-10-28/upstream/02_REGISTRY/research/A4D_ORIGINAL_RETURN_BOUNDARY_AND_CANONICAL_RIGIDITY_2026_10_28.md).
+It retains the exact endpoint
+mixed-Hessian formula, the complete moving-cut heat-plus-return source, a
+conditional stationary Schur/boundary reduction and determinant sewing, and a
+canonical classification under its declared strong-algebra hypotheses. Four
+finite checkers pass in ordinary and optimized modes. Three numerical outputs
+are not byte-identical to the archived outputs under the local arm64 runtime;
+their stated numeric controls pass with maximum recorded differences of
+`3.49e-11`, `2.75e-11`, and `2.53e-8`. The conditional continuum result still
+requires canonical variables and the strong deformation algebra; no native
+D0 boundary, lapse generator, source map, physical selection, or GR closure is
+established.
+
+The [paid-source intake](sources/d0_334_paid_source_delta_2026-10-28/README.md)
+pins the subsequent `c80d3dd…` to
+`172876cdf38bfce6f87fdd4a059d524b60c10eb9` source checkpoint, including the
+[pinned paid-source memo](sources/d0_334_paid_source_delta_2026-10-28/upstream/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md).
+Its three
+checker programs were extracted from the pinned memo and rerun against seven
+byte-pinned inputs; all ordinary and optimized outputs match their published
+JSON byte-for-byte. On the original unpadded 42-field root, the full original
+CAR click-sum row is strictly negative throughout the stated source cube; the
+distinct `tau=0.05` direct-click comparison is nonzero even where the literal
+weighted stationary row vanishes. A separate common-null QUERY orbit has a
+positive fixed-cut row, while the complete moving-cut derivative cancels it
+under joint conjugation, with the rational control `+16/35`, `−16/35`, `0`.
+These controls block transferring the pointwise-null result to another root
+or calling a fixed-cut QUERY row a complete physical source. They do not
+compute the selected full Book residual: the admitted same-execution
+`F_N`, `Delta_N`, preparation/writer, clock, Info/work, and independent source
+maps remain open. `GR_closed=false`.
+
+The Lean module below formalizes the last rational two-dimensional operator
+control only. It does not consume the 42-field negative row or the conditional
+boundary classification as a Lean theorem.
+
+## Latest same-execution applications in #334: clocked reader and generated cut
+
+The [5fe5203 application intake](sources/d0_334_generated_cut_application_delta_2026-10-28/README.md)
+pins the six-file delta from #334 head `172876cdf38bfce6f87fdd4a059d524b60c10eb9`
+to `5fe5203da2439d325dc9ef70f52c1111822fc22b`; its
+[manifest](sources/d0_334_generated_cut_application_delta_2026-10-28/MANIFEST.json),
+[read-only verifier](sources/d0_334_generated_cut_application_delta_2026-10-28/verify_generated_cut_application_delta.py),
+and [replay receipt](sources/d0_334_generated_cut_application_delta_2026-10-28/replay/receipt.json)
+preserve the exact source and local controls.
+
+The 7cv application consumes the full root formula on its existing reader
+and clock: the operational decoder’s own moving calibration is differentiated,
+the declared stage0 cut has zero tangent for that lift, and the involution
+endpoint makes the selected heat’s first source zero although its operator
+derivative is nonzero. On that stated sector the root source equals the
+already-owned feedback covector. Its separate full-source split shows that
+forward Einstein soundness needs the actual horizontal source on stationary
+executions; it does not add vertical neutrality as a universal premise.
+Vertical stationarity equations, existence and physical continuation/selection
+remain required. The retained-history symplectic form and self-reading bracket
+are a kinematic/refoliation application; actual lapse and shift generators,
+their admitted flow and full bracket descent are still open.
+
+The 7cw generated-cut map answers the free-cut cancellation question for its
+specified causal graph. All internal cuts are prefixes of the same executed
+word. For the incoming endpoint-conjugation lift, the raw-gate contribution
+and the generated-cut contribution are each positive halves of the same
+QUERY row; the independent compensating endpoint cut from 7cu is a different
+variation. A separate exact 38-stage equal-inventory comparison has the same
+input rank and primitive counts and equal paired-clock heat, but its clock
+intertwiner moves the fixed initial cut and the return laws differ. Its strict
+complete `H+J` price gap therefore does not establish a same-task cheaper
+admissible competitor or refute stationarity of the declared task.
+
+The [QUERY/cut Hessian application](sources/d0_334_generated_cut_application_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/QUERY_ORBIT_APPLICATION_RU.md)
+was rerun in ordinary and optimized modes. Its numeric outputs differ from
+the published JSON by at most `6.67e-16`, within its `3e-14` checker bound.
+The extracted [generated-cut source checker](sources/d0_334_generated_cut_application_delta_2026-10-28/replay/scripts/d0_generated_cut_source_20261028.py)
+matches the published 38-stage result byte-for-byte in both modes, including
+all 32 columns and the two positive source halves. No original full128,
+all42, physical-admission, same-task, Lean, CI, or GR-closure result is claimed.
+The remaining substitution is the actual allowed task/control/scene/input
+variation and its complete source, field map and gain. `GR_closed=false`.

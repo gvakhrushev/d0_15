@@ -11634,3 +11634,43 @@ and `propext` axioms; it introduces no new axiom declaration. The receipt is
 its `lean_source_digest` matches the public build receipt and its snapshot is
 clean. The fully elaborated type exposes all three witness equations as
 premises, so the extraction cannot be mistaken for the analytic bracket proof.
+
+### Latest #334 source checkpoints and the finite moving-cut Lean control (28 October 2026)
+
+The existing owner PR #334 has advanced beyond the earlier refoliation
+checkpoint. The reviewed source head is
+`5fe5203da2439d325dc9ef70f52c1111822fc22b`; the boundary-rigidity,
+unpadded-root/QUERY, and latest generated-cut applications are independently preserved and verified in
+[`D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md`](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md).
+They add a finite endpoint/source Hessian and conditional boundary
+classification, plus a new unpadded-root negative click row and a separate
+QUERY/cut cancellation control. The latter source and its three embedded
+controls replay byte-identically in normal and optimized modes. The former's
+four finite controls pass, with the documented environment-dependent numeric
+differences. Neither intake establishes a native D0 boundary or physical
+source selection.
+
+[`MovingCutQueryCancellation.lean`](../../03_FORMALIZATION/D0/Geometry/MovingCutQueryCancellation.lean)
+formalizes the exact two-dimensional rational control: its generic QUERY row
+and cut row are opposites and the joint-conjugation row is zero; the named
+instance gives `16/35`, `-16/35`, and `0`. It is registered as
+`EXPLICIT_SUPPORT` and imported by `D0.All`. Its hypotheses and formulas are
+finite matrix definitions; neither tangent is established as an admitted D0
+variation, the thermal operator is not transported, and no original
+42-component source map is built. The full paid Book source and its native
+preparation, clock, Info/work, and refinement maps remain open. No claim or
+assembly slot is closed, and `GR_closed=false` remains.
+
+The 5fe5203 application pins the subsequent
+[`generated-cut source delta`](sources/d0_334_generated_cut_application_delta_2026-10-28/README.md).
+On its declared clock sector, the actual reader/source lift identifies the root
+source with the owned feedback source while keeping the independent source
+split and vertical stationarity obligations. On the existing causal prefix
+graph, generated cuts add a positive half of the endpoint QUERY source rather
+than realizing the free compensating cut from the separate endpoint orbit.
+The exact 38-stage comparison has equal inventory and paired-clock heat but a
+different initial cut and return law, so it does not prove a same-task cheaper
+competitor. The Lean module above does not formalize these new applications;
+their normal/optimized controls are recorded with their exact numeric and byte
+boundaries in the source intake. The remaining same-task admission, full
+Cost-Info source, field map, gain and physical refinement remain open.
