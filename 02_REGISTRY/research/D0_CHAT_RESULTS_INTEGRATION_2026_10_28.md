@@ -712,6 +712,8 @@ GitHub returned no check/status rows for #334 head `7261923`; no owner CI pass
 is claimed. Before this intake, the latest #402 head was `2f57d930`; its
 [`D0 guards`](https://github.com/gvakhrushev/d0_15/actions/runs/40679513224)
 and [`lean-build`](https://github.com/gvakhrushev/d0_15/actions/runs/40679512981)
-passed. Fresh checks are required after this intake is pushed. `GR_closed=false`, physical admission, source acceptance,
+passed. The source intake was published as `dad71fe5`; its [`D0 guards`](https://github.com/gvakhrushev/d0_15/actions/runs/40679981168)
+and [`lean-build`](https://github.com/gvakhrushev/d0_15/actions/runs/40679981123)
+both passed. `GR_closed=false`, physical admission, source acceptance,
 same-execution selection and independent scientific acceptance all remain
 open.

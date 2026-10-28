@@ -646,6 +646,13 @@
       "head": "726192353504a81a9ab2b751f9b6c7866271e75a",
       "statuses": []
     },
+    "pr402_post_intake_checks": {
+      "guards": "success",
+      "guards_run": "40679981168",
+      "head": "dad71fe5c8e9a415ffbd8a65ec690a5bc03899c9",
+      "lean_build": "success",
+      "lean_build_run": "40679981123"
+    },
     "pr402_pre_intake_checks": {
       "fresh_after_intake_push_required": true,
       "guards": "success",

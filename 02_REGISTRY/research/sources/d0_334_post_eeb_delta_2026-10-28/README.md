@@ -73,8 +73,8 @@ replay record in this intake:
 - `UPSTREAM_SOURCES.zip`: `abbc4125f8be39a36d9c6bdaef135f5e34a179403adbd577c228e9b6b34f164a`
 - `UPSTREAM.patch.gz`: `6009d742de448711aadf7b19a5cfb975867608bb194f536e29528a32e19a7b80`
 - Uncompressed patch bytes: `a7ad8b29739dff5e2290c6a44f0804dede70251c2b5759ba83021e595d4dba63`
-- `replay/REPLAY_RECEIPT.json`: `927b7a8fd1a8572e2b3d1ed9b4c71fbbd8c6aa351050218e1e6834d871455a7d`
-- `replay/REPLAY_REPORT.md`: `79e974f076f3e721305e15443ece9f26debf2dcb423811e63f9b17f2e4713ab2`
+- `replay/REPLAY_RECEIPT.json`: `ec66db29b29d9db0dca5081e4af86cf335d4bd38f5510a013c59bd438df5e125`
+- `replay/REPLAY_REPORT.md`: `4e38139fb92b87ed65584d7317e9b8f5f2e8d43498677fe493caade3a02f1748`
 
 Run `python3 verify_source_delta.py` for archive/member integrity. Add
 `--verify-source-objects` when both source commits are available in the local
