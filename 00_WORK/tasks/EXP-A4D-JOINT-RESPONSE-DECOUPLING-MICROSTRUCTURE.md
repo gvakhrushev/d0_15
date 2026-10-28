@@ -17921,3 +17921,98 @@ result node, claim promotion, Ready, independent acceptance or merge.
 
 Observed changed checks:66; pinned-input checks:53.
 Checker SHA256 `791d57eb3ff5bd69dda81b5ae8982223e3c63378c681cf961daa2de38659d570`; receipt SHA256 `a09c2d00bd1159a8394454f6c90b4a5152852d3531870c64b1d06d70e1d9e8ad`.
+
+### 28 October2026 checkpoint — actual paid binary input, finite controls and whole same-execution Book price
+
+SAME PR334, `constitutive/native-programme-v1`; native realization and
+composition. Calculation input3ba25a162; publication input0f0278787
+preserves all five incoming canonical archive-law files. The exact parent
+application is the supplied canonical-input premise of the owned
+`A4D_BINARY_AF_LOOP_FINITE_SOURCE_2026_10_28.md`: replace it with an actual
+positive G/CX/SourceI preparation and retain its source in the same whole
+word, generated clock/cut and complete homogeneous INTERNAL Book price.
+
+Primary §7do1004–1012 gives the construction, proof, final executed
+checker and observed receipt in the existing same-representative artifact.
+No new task/result node or scientific owner is registered. Reuse7t's
+explicit finite X_run grammar, the pinned exact selective compiler and
+the full all-unitary clock-winding source; no new physical gate, action,
+Einstein-membership constraint or counterterm is introduced.
+
+One fixed initial boundary has16 qubits,12 stated zero blanks and all16
+unknown old-label/Spin/oldRIGHT columns. An actual CX and87 finite
+selective rotations generate the A0->A8 GNS input with certified operator
+error <=0.000423597039241966803689790303. This is the exact sum of outward
+rational per-plane bounds; the smaller directly observed norm is only a
+diagnostic. Spin is restored at each selective endpoint, and oldRIGHT
+is untouched throughout. Approximation of the input does not prove a
+source-jet identity, intermediate-history equality or physical supply of
+the12 blanks; the actual generated source is calculated directly.
+
+The complete chronology is P_s;Q_t;positive-inverse(P_s);paid-identity
+padding. Three integer preparation controls and the owner's three
+byte-matched loop words give nine actual X_run configurations. Every
+inverse SourceI, Golden reversal and routing call is paid. All nine have
+the same full inventory257214301184 G,12733188 CX,2506888 SourceI and
+N=257229541260 primitive stages. The preparation's5333825 RLE records
+were streamed; the whole-word generator is provided. No huge stagewise
+simulation or physical execution is claimed.
+
+Rebuild every prefix cut from the fixed initial boundary. The exact
+closing corner is K=i0*P_s*Q_tP_s i0=diag(k0 I8,k1 I8); use its two ACTUAL
+unequal return bands. The full Book price is H_N-logdet[(1-zeta)I+zeta K*K],
+with the original beta=2p²,zeta=2^-20, the33-vertex scene and all
+425*N*65536 Hodge modes. Full heat, harmonics and unused binary columns
+are retained. A rigorous Fourier/Taylor enclosure gives the absolute
+central price near56.7199438852101588885886035369.
+
+On the preparation axis the full endpoint is a conjugacy and all resource
+counts agree, so heat cancels EXACTLY. The genuine finite code change
+has full price difference in[1.16820589111284635814098e-7,
+1.16820589111284635814101e-7]>0. Its analytical preparation source is
+about1.74798410907482e-5, with a strictly positive actual finite secant.
+It is no longer an unpriced external preparation. The positive loop
+gain survives at2.39218506359053e-6; its actual full-price normalized
+finite contrast is0.999842506920919..., retaining the tiny full heat
+difference. These are TWO controls of the same complete executions,
+not a source assembled from different fixed-input programmes.
+
+The analytical preparation-source/loop-gain ratio7.30706054343136 uses
+the explicitly declared u and phi readout coordinates. It is not a raw
+primitive dual norm, all42 residual estimate, infinitesimal native gate
+or proof that every mathematical tangent is physically admissible.
+The exact raw-prefix pullback is retained for any separately justified
+smooth lift; independently selectable inverse occurrences remain rows.
+
+Parent substitution: the binary-loop input can now be produced and
+priced by actual native words, with its nonzero independent source.
+The centre is not a minimum over the raw grammar when the lower-price
+preparation alternative is allowed. A physical application must solve
+that genuine joint equation, prove the actual task/archive restriction,
+or compute its genuinely selected compensating source. The incoming
+exact archive-law criterion is not inferred from reversibility or small
+input errors. Different hardwired words are not free key changes of an
+unpriced autonomous decoder. Physical actuation/blank admission,
+compulsory clock/cut/complete physical Cost-Info identification, full
+variation-image norms and common GR refinement remain open.
+
+Smallest decisive check: literal preparation plans and full input bands,
+byte-matched loop controls, actual inventories, generated-cut source
+identities, nine absolute prices and strict finite contrasts; rigorous
+all-mode heat enclosures use90-digit intervals and exact rational tails.
+All441 explicit changed checks pass. Final normal and optimized receipts
+are byte-identical on Python3.9.6/NumPy2.0.2/mpmath1.3.0. No unchanged
+geometric root, huge thermal matrix, Lean or prior88-call replay.
+
+Checker SHA256 `d95b930757caad91091db3dc95218cafc70d5888caed5c4b9c39ad897197e821`;
+receipt SHA256 `811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba`.
+No Ready, independent acceptance, claim promotion or merge. Supporting
+direct application under the existing owner. `GR_closed=false`; the
+user's goal remains active.
+
+Final affected validation: work, agent protocol, gravity assembly and repository
+guards pass on the combined publication inputs; assembly reports no scientific
+promotion and repository reports zero warnings. Diff whitespace and exact
+append-only preservation pass. The embedded checker and receipt are byte-identical
+to the final standard/optimized executions. Existing archive and binary compiler
+inputs are unchanged. These are local checks, not a new CI or physical acceptance.
