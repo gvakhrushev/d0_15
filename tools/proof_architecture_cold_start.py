@@ -1409,6 +1409,351 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "canonical-af-native16-retained-report-fibre",
+        "queries": [
+            "native16 retained joint-record effect full INTERNAL H+J source actual 16-call positive G CX SourceI word",
+            "d0_native16_retained_report_fibre_2026-10-29 288 checks c20bd627 source checker expected receipt replay manifest",
+            "actual retained report wire10 seed-copy12 wire12 oldRIGHT15 M p Q_return Delta zero endpoint tangent",
+            "same terminal WORK isometry low27 complete endpoint involution all16 input columns 16 paid calls",
+            "full H+J first source actual native G stage15 7.41376417151667 fixed effect return minimum not global",
+            "16 primitive occurrence pullbacks same actual joint effect no linked inverse legs full heat source",
+            "next compute P M K Delta D Delta existing field report compiler upstream rows all42 norm gain heat",
+            "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE 4b30fcb4 same owner PR334 no new task assembly node",
+            "Native16 полный источник совместной записи физическое admission Cost-Info GR_closed false",
+            "check_native16.py d5c987f4 native_full_source_completion PINS DomainMatrix Path.cwd",
+            "expected_receipt.json old_w_interval pair_future_charpoly native_full_source_completion",
+            "7dq ARCHIVE SEED QUERY RECEIPT 7do PAID BINARY INPUT RECEIPT exact upstream receipt fixture",
+            "source_manifest.json d0-native16-retained-report-fibre-intake-v1 c07286147ba90464ca89e5d47ae42f36633f44ec",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/upstream_section_7dr.md",
+            "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/check_native16.py",
+            "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/expected_receipt.json",
+            "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/inputs/upstream_receipts.md",
+            "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/replay_native16.py",
+            "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/source_manifest.json",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/PROOF_RU.md",
+                "scope_query_indexes": [8],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/upstream_section_7dr.md",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/check_native16.py",
+                "scope_query_indexes": [9],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/expected_receipt.json",
+                "scope_query_indexes": [10],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/inputs/upstream_receipts.md",
+                "scope_query_indexes": [11],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/replay_native16.py",
+                "scope_query_indexes": [1],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/replay_manifest.json",
+                "scope_query_indexes": [1],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/source_manifest.json",
+                "scope_query_indexes": [12],
+            },
+        ],
+        "scope_review": (
+            "The exact 16-call G/CX/SourceI completion realizes a retained joint record and, "
+            "for its actual effect E_M, proves Delta=E_M-K* K=0 and the full fixed INTERNAL "
+            "H+J source pullback on every endpoint unitary direction. This removes the "
+            "independent return-source obstruction for this execution while retaining its "
+            "unrestricted nonzero source and full absolute price; the global H+J minimum is "
+            "not proved. The 27/32-call controls "
+            "remain valid for their own executions; their obstruction is not universal over "
+            "all implementations. No physical admission, autonomous controller/task choice, "
+            "complete selected Cost-Info, boundary/clock equations, all42 refinement, Lean/CI "
+            "or GR closure is established; GR_closed=false."
+        ),
+    },
+    {
+        "id": "canonical-af-native16-return-record-compiler",
+        "queries": [
+            "native return record compiler C_R W C_R actual joint record effect original corner Delta zero paid copy layers",
+            "0f2e421fda2029df92b174c39f594160ce31294f 279 checks 5ca575b8 ordinary optimized repeat same receipt",
+            "existing 31-call 37-call 25CX 2G 10SourceI A=(0,11,12) R=(7,8,9) 1030553600 modes",
+            "RETURN RECORD COMPILER CHECKER complete_return_record native_execution",
+            "expected_receipt.json actual_B37_minus_B31_interval independent_upstream 0.000000401477956345875",
+            "field_compiler_source.md 7cq direct-click read-once compiler original nonlinear field Bernstein kernel errors",
+            "7dr RETAINED REPORT FIBRE RECEIPT 7do PAID BINARY INPUT RECEIPT exact source fixture",
+            "source_manifest.json d0-native16-return-record-compiler-intake-v1 c1417beeb828773482bda67b6e9db146a5ce04d9",
+            "native execution domain.py complete_return_record validate_execution used processing blanks reserve wires",
+            "Native16 оплаченная компиляция полного return-record independent upstream preparation физическая admission GR_closed false",
+            "replay_return_record.py replay_outputs_byte_identical runtime_matches_published_receipt stderr_empty_for_all_runs",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/upstream_section_7ds.md",
+            "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/check_return_record.py",
+            "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/expected_receipt.json",
+            "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/inputs/field_compiler_source.md",
+            "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/inputs/upstream_receipts.md",
+            "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/replay_return_record.py",
+            "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/source_manifest.json",
+            "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/PROOF_RU.md",
+                "scope_query_indexes": [9],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/upstream_section_7ds.md",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/check_return_record.py",
+                "scope_query_indexes": [3],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/expected_receipt.json",
+                "scope_query_indexes": [4],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/inputs/field_compiler_source.md",
+                "scope_query_indexes": [5],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/inputs/upstream_receipts.md",
+                "scope_query_indexes": [6],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/replay_return_record.py",
+                "scope_query_indexes": [10],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/replay_manifest.json",
+                "scope_query_indexes": [10],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/source_manifest.json",
+                "scope_query_indexes": [7],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+                "scope_query_indexes": [8],
+            },
+        ],
+        "scope_review": (
+            "The same-owner continuation applies the 7dr gap calculation to a declared binary "
+            "native compiler by surrounding the existing word with two paid CX record-copy "
+            "layers using already initialized, untouched reserve wires. It proves the old "
+            "return corner is preserved and the joint zero-record effect equals K* K exactly; "
+            "at a full reflection endpoint the complete fixed INTERNAL H+J source is its real "
+            "record source. Original control rows and absolute price are retained, and the "
+            "actual new-clock heat source remains for nonreflection endpoints. A paid 37/55-call "
+            "application and independent upstream-preparation identity are checked with hostile "
+            "partial-copy controls. It does not establish physical admission or reserve supply "
+            "for every larger "
+            "field compiler, selected Cost-Info, all42 refinement, Lean/CI or GR closure; "
+            "GR_closed=false."
+        ),
+    },
+    {
+        "id": "record-saturated-native-field-stencils",
+        "queries": [
+            "fixed Golden native source stencils with an actual retained record all expanded calls positive G CX SourceI large repeats specified not iterated or claimed run on hardware 42 variable test local Palatini jet not a lattice GR root or a runtime quantum field decoder",
+            "check_record_saturated_field.py PASS_NATIVE_RECORD_SATURATED_42_SOURCE_STENCILS 867 checks",
+            "fixed Golden native16 16-call word actual active wires 0 6 10 11 12 13 14 full source rank 16",
+            "exact endpoint cotangent identity all 16 primitive occurrence pullbacks actual stage15 G source",
+            "42 pointwise coframe connection matter coordinate stencil interval derivative full recorded source h 1/1000",
+            "positive-word-with-exact-repetitions finite fully unrolled repetitions compact notation seed Z_query I_G I_Z word_template same_inventory expanded_calls_per_word",
+            "result.json max_coordinate_error dual_max_norm_error proved bound native source true 42 rows",
+            "same full carrier reflection heat contrast exactly zero oldRIGHT inactive blank factor 256",
+            "PROOF_RU local NumPy RuntimeWarning divide by zero overflow invalid cause unresolved stderr preserved",
+            "replay_record_saturated_field.py ordinary optimized repeat output byte identical captured warnings",
+            "replay_manifest.json numpy scipy python runtime warning categories warning resolved false",
+            "source_manifest.json owner commit 418afd58 blob 81d78ce6 input commit 4b30fcb4 SHA256",
+            "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION supporting finite calculation GR_closed false no Lean CI",
+            "owner source pin check_record_saturated_field.py commit 418afd58c741713a60036a90f8246060d774fd56 blob 81d78ce6ebcc3e9d98bceaacbd61ed0328943da9 actual retained record fixed Golden source stencils",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py",
+            "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/result.json",
+            "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/programmes.json",
+            "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/replay_record_saturated_field.py",
+            "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/source_manifest.json",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0, 12],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/PROOF_RU.md",
+                "scope_query_indexes": [8],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py",
+                "commit": "418afd58c741713a60036a90f8246060d774fd56",
+                "blob": "81d78ce6ebcc3e9d98bceaacbd61ed0328943da9",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/result.json",
+                "scope_query_indexes": [6],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/programmes.json",
+                "scope_query_indexes": [5],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/replay_record_saturated_field.py",
+                "scope_query_indexes": [9],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/replay_manifest.json",
+                "scope_query_indexes": [10],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/source_manifest.json",
+                "scope_query_indexes": [11],
+            },
+        ],
+        "scope_review": (
+            "The newest #334 addition is a pinned executable checker for one fixed native16 "
+            "record-saturated word and 42 pointwise coframe/connection/matter stencils. Its "
+            "local ordinary, -O and repeat outputs agree and report 867 checks, but each run "
+            "emits captured NumPy RuntimeWarnings during matrix multiplication; their cause "
+            "is unresolved, so the replay is not described as warning-free or as proving the "
+            "warnings harmless. The 85 Golden word descriptions are compact and the largest "
+            "word is not executed as hardware. This does not prove the physical variation "
+            "domain, runtime field compiler, a 42-row finite-mesh root, selected Cost-Info, "
+            "Lean/CI or GR closure; GR_closed=false."
+        ),
+    },
+    {
+        "id": "native16-whole-book-price-graph",
+        "queries": [
+            "owner memo source pin path A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md commit 22b4e3f430ddb7d8dd7af6e734f5e63225edd056 blob 1e81dd0151eea362fedacc008293bcf4f0c7d806 one terminal record layer literal full Book price independent preparation 93 exact checks",
+            "check_one_sided_price.py changed native post-record compiler complete literal Book price actual Golden CX SourceI words",
+            "source_manifest.json d0-native16-whole-book-price-graph-intake-v1 integrated_artifacts checker_inputs upstream memo_blob task_blob",
+            "B37_minus_B34 B52_alt_minus_B52_base whole_price post34 old_two_sided37",
+            "Q_gap logdet D_E logdet D_K positive gap zeta over a trace Delta complete original feedback price",
+            "actual same initial isometry 34 call 37 call full price saving paid shorter clock 0.11068705792869126234",
+            "52 call preparation alternative same inventory changes retained report complete price decrease 0.0000072042261899642877793",
+            "all512 active columns all34 actual suffixes 93 exact checks full physical rank16 thermal dimension65536",
+            "literal Book03.25 H+J no additional Shannon von Neumann fitted Info term correction 7ds",
+            "ordinary optimized repeat byte identical published receipt stderr empty replay manifest Python 3.9.6",
+            "upstream_receipts.md frozen 7ds RETURN RECORD COMPILER RECEIPT 7do PAID BINARY INPUT RECEIPT exact hashes",
+            "A1_34 estimate corrected exact rational bound 1.92095 whole heat remains 93 checks full endpoint cotangents all34 suffix pullbacks",
+            "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION supporting compiler price graph physical admission X_N Cost-Info Lean CI GR_closed false",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/upstream_section_7dt.md",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/upstream_task_7dt.md",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/check_one_sided_price.py",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/expected_receipt.json",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/inputs/upstream_receipts.md",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay_whole_book_price.py",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/source_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay/ordinary_stdout.json",
+            "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+            "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [12],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/PROOF_RU.md",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/upstream_section_7dt.md",
+                "scope_query_indexes": [3, 4, 5, 6, 8],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/upstream_task_7dt.md",
+                "scope_query_indexes": [11],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/check_one_sided_price.py",
+                "scope_query_indexes": [1],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/expected_receipt.json",
+                "scope_query_indexes": [3],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/inputs/upstream_receipts.md",
+                "scope_query_indexes": [10],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay_whole_book_price.py",
+                "scope_query_indexes": [9],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay_manifest.json",
+                "scope_query_indexes": [9],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/source_manifest.json",
+                "scope_query_indexes": [2],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay/ordinary_stdout.json",
+                "scope_query_indexes": [3],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "commit": "22b4e3f430ddb7d8dd7af6e734f5e63225edd056",
+                "blob": "1e81dd0151eea362fedacc008293bcf4f0c7d806",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+                "commit": "22b4e3f430ddb7d8dd7af6e734f5e63225edd056",
+                "blob": "6f34289104bb71b593e53c6440d827e3182a249f",
+                "scope_query_indexes": [0],
+            },
+        ],
+        "scope_review": (
+            "The latest #334 source composes a fixed one-sided terminal record layer with the "
+            "literal complete Book03.25 H+J price. It removes the reflection requirement for "
+            "saturation of the declared graph, keeps positive Q_gap for changed records, and "
+            "corrects §7ds: the literal H+J definition has no extra Info summand. The exact "
+            "93-check source and receipt replay byte-identically with empty stderr. Physical "
+            "admission of reserve/initial-boundary resources, the full physical X_N, selected "
+            "task/record/Cost-Info, independent clock/boundary equations, larger-field "
+            "refinement, Lean/CI and GR closure remain unproved; GR_closed=false."
+        ),
+    },
+    {
         "id": "canonical-archive-law-and-variation-domain",
         "queries": [
             "canonical archive law compatibility variation domain full old effect relative commutant",

@@ -14346,3 +14346,206 @@ grew. Exact source-set coverage is now 36/36. This report does not add a Lean
 proof or run Lean/CI in this increment; it does not establish physical D0
 admission, and `GR_closed=false` remains in force. The
 `WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION` worker remains in progress.
+
+## #334 continuation at `4b30fcb4` — native16 binds the full source to its retained record
+
+The existing [#334 owner](https://github.com/gvakhrushev/d0_15/blob/4b30fcb4dc743e7a04415c9701aae19a847e8dab/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md#7dr)
+adds §7dr to the same `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
+execution. It emits one literal 16-call word from the original positive
+`G/CX/SourceI` primitives. This is a scoped native completion, not a new
+action or selector. The exact owner excerpt, replay inputs and human-readable
+scope are in
+[`d0_native16_retained_report_fibre_2026-10-29`](sources/d0_native16_retained_report_fibre_2026-10-29/PROOF_RU.md).
+
+With the actual initial 16 columns, the word
+`S_word; CX(11,10); Z_word; G(11); CX(11,10)` has inventory
+`1G+9CX+6SourceI`. It preserves the old seed copy on wire 12 and records the
+query on blank wire 10; `oldRIGHT` on wire 15 remains immutable. The complete
+endpoint is an involution, and its entire terminal WORK isometry on those 16
+columns equals the 27-call low-price comparator. Its 16-step and 27-step clocks
+and intermediate histories remain distinct.
+
+For the actual joint event `M=(record10=0 AND seed-copy12=0)`, the owner proves
+`P<=M` and `Delta=E_M-K* K=L*L>=0`. On this emitted word
+`E_M=p Q_return=K* K`, hence `Delta=0` and `D Delta=0` on every endpoint
+unitary direction before any physical tangent restriction. Its full heat
+source also vanishes on those endpoint directions. Thus the complete fixed
+INTERNAL `H+J` source is the pullback of the actual joint-record effect, and
+all 16 primitive-occurrence rows are transported through their actual
+suffixes. This removes the independent return-source obstruction for this
+exact execution, without imposing linked inverse legs.
+
+The unrestricted source is retained: the actual `G` occurrence at stage 15
+has a positive source near `7.41376417151667e-6`. The word reaches the exact
+return-price lower bound at fixed `E_M`, but the global `H+J` minimum is not
+proved. The emitted common field/report family has a positive source ratio
+near `1.05901642646979` at the reported point. These identities do not
+identify the canonical AF reporter with original full128 or with the
+continuous physical compiler.
+
+The exact embedded checker was extracted byte-for-byte and replayed with all
+four pinned source proofs. In Python 3.9.6, SymPy 1.14.0 and mpmath 1.3.0,
+ordinary, `-O` and repeat runs returned the published 288-check receipt
+byte-for-byte (SHA-256
+`c20bd62754ffaa4fb89a8ae16ab4b3f18c1c04f38112bcaa0e2e550058da3558`);
+all stderr files are empty. The source excerpt, unchanged checker, exact
+receipt, reproducible runner and provenance live in the linked intake folder.
+The two source proofs missing from this PR checkout were added at their
+canonical paths with their exact upstream bytes; the other two matched their
+upstream hashes already.
+
+**Next parent application:** compute the actual `P,M,K,Delta` and full
+`D Delta` of the existing field/report compiler, retain independent upstream
+rows, and carry the true trace, gain, norm and heat/selected-price terms to the
+all42 source. This checkpoint does not establish physical `X_N`, admission,
+autonomous controller/task selection, complete selected Book03 `Cost-Info`,
+independent boundary/clock equations, all42/refinement, Lean/CI or GR closure.
+The result remains supporting work under #334; no assembly acceptance or
+`GR_closed` promotion is claimed.
+
+Pinned upstream provenance: owner memo commit `4b30fcb4dc743e7a04415c9701aae19a847e8dab`,
+blob `c07286147ba90464ca89e5d47ae42f36633f44ec`, SHA-256
+`12abc5977d1667f36daf7935270f4c369a7b1decaf06dd59fe7539856f32b4b8`;
+the updated task brief at the same commit has blob
+`34aefcfc6a136b110b605e9ced458ec524b9204a`.
+
+## #334 continuation at `0f2e421f` — exact return-record compiler and upstream preparation
+
+The next update in the same #334 owner directly applies the 16-call result to
+an existing native word. For the actual processing blanks `A`, it uses one
+already initialized, untouched ordinary RIGHT reserve per used blank and
+emits two paid `CX` layers around the old word:
+`C_R; W; C_R`, with `N_new=N+2|A|`. The unchanged native validator checks the
+resulting real execution; no clean bit, reset, inverse oracle or extra
+primitive is introduced. The exact receipt, checker, earlier §7cq source
+slice and replay pins are in
+[`d0_native16_return_record_compiler_2026-10-29`](sources/d0_native16_return_record_compiler_2026-10-29/PROOF_RU.md).
+
+For this construction, the old return corner is preserved exactly for every
+old endpoint and every old finite approximation error. The real joint
+zero-record effect satisfies `E_0=K* K`, so `Delta=E_0-K* K=0` as an
+operator, and `D Delta=0` without estimating from a small endpoint residual.
+For a full reflection endpoint the complete INTERNAL `H+J` endpoint source
+is the derivative of that actual record effect. All 37 independent
+occurrence sources and every old control row are retained. For a
+non-reflection endpoint the true heat source at the new clock
+`H_(N+2|A|)` remains; it is not replaced by the old `H_N`.
+
+The 31-call query uses three real processing blanks and three unused RIGHT
+reserves to form a 37-call word (`25 CX + 2 G + 10 SourceI`). Its mirror has
+the same eight record-effect operators and full heat/price, while its
+coherent terminal WORK state differs. The full carrier remains 65,536
+dimensional, and the absolute 37-call price is about `27.05459937490956`
+with all 1,030,553,600 Hodge modes retained. A late copy fault that changes
+the actual record still has positive source near `3.50030650432416e-6`.
+
+The owner also composes an actual paid 18-call identity before the 37-call
+execution. Every independent upstream preparation row vanishes at the
+specified reflection base while the old field preparations stay inside the
+old word and retain their sources. A same-55-call, same-inventory alternative
+has the same complete retained-record effects and exact heat but costs about
+`4.01477956345875e-7` more. This finite comparison does not prove a minimum
+over all native words or an autonomous task/controller selection. The
+incomplete-copy and one-sided-copy controls remain negative.
+
+This consumes the `7dr` request to compute the actual joint record and gap
+for the declared binary native execution. It does not yet instantiate reserve
+supply for every larger field compiler or establish physical admission,
+initial-record/task supply, selected Book03 `Cost-Info`, clock/boundary laws,
+or common all42/matter refinement. No Lean/CI result or physical selection
+is inferred; `GR_closed=false`. The #334 owner remains open and no assembly
+acceptance is claimed.
+
+Pinned upstream provenance: owner memo commit
+`0f2e421fda2029df92b174c39f594160ce31294f`, blob
+`c1417beeb828773482bda67b6e9db146a5ce04d9`, SHA-256
+`37846d696a8da22baa02029f1043ccd5db873612d5c145bf6a4c09c000a23c82`;
+the task brief at the same commit has blob
+`2b10f402167e7c14c77db51887bff43419c506d7`.
+
+## #334 checker addition at `418afd58` — retained-record 42-coordinate field stencils
+
+The latest checked #334 head adds the exact
+[`check_record_saturated_field.py`](sources/d0_record_saturated_native_field_2026-10-29/PROOF_RU.md)
+source at commit `418afd58c741713a60036a90f8246060d774fd56` (blob
+`81d78ce6ebcc3e9d98bceaacbd61ed0328943da9`). The checker pins its input at
+`4b30fcb4dc743e7a04415c9701aae19a847e8dab`; this commit is an ancestor of the
+checker commit. The new upstream commit contains the checker, not a published
+result receipt, so the outputs below are a local replay of that exact file.
+
+The checker builds the retained-record native16 word and verifies its integer
+endpoint identities, saturated click effect, complete endpoint cotangent and
+16 primitive-occurrence source pullbacks. It then takes 42 independent
+pointwise field coordinates (16 coframe, 24 connection, two matter) at one
+fixed field point. Interval jets compare the original recorded-source
+derivatives against compiled Golden-word stencil values at `h=1/1000`.
+The 85 emitted word descriptions share an inventory of
+`11,177,567,015,642,288` positive calls per word. This is compact repetition
+notation: the enormous words were neither expanded nor run on hardware.
+
+The exact file completed 867 checks in ordinary, `-O` and repeated local runs;
+stdout, `result.json` and `programmes.json` matched byte-for-byte. The reported
+maximum coordinate error is `8.1894604955210760e-14`, the summed coordinate
+error is `6.7387704951582848e-13`, and the sum of certified coordinate bounds
+is `1.2147724375054815e-12`. The actual stage-15 `G` source remains positive
+(`7.413764171516666e-6`). The captured replay artifacts and exact source pins
+are in
+[`d0_record_saturated_native_field_2026-10-29`](sources/d0_record_saturated_native_field_2026-10-29/PROOF_RU.md).
+
+All three local runs emitted 48 NumPy `RuntimeWarning` lines for divide by
+zero, overflow and invalid values during matrix multiplications. The warnings
+are preserved in `replay/`; their cause has not been resolved. Although the
+checker exited successfully, produced finite JSON and repeated identically,
+this intake does not claim a warning-free replay or that the warnings are
+harmless. The owner commit did not publish a result receipt for an exact-output
+comparison.
+
+This is a finite source-stencil calculation at one point, not an original
+42-row mesh Euler solve, runtime field compiler, or physical variation-domain
+theorem. It does not establish physical admission, complete selected Book03
+`Cost-Info`, clock/boundary equations, Lean/CI, or GR closure. The next
+application must resolve the captured warnings and transport the fixed stencil
+to the actual admitted source and its full physical variation domain.
+`GR_closed=false` remains in force; the #334 owner and this formalization task
+remain open.
+
+## #334 continuation at `22b4e3f4` — one terminal record layer binds the full Book price
+
+The next existing-owner update is §7dt at
+[`22b4e3f430ddb7d8dd7af6e734f5e63225edd056`](https://github.com/gvakhrushev/d0_15/blob/22b4e3f430ddb7d8dd7af6e734f5e63225edd056/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md).
+Its exact memo and task excerpts, embedded checker/receipt and replay inputs
+are in
+[`d0_native16_whole_book_price_graph_2026-10-29`](sources/d0_native16_whole_book_price_graph_2026-10-29/PROOF_RU.md).
+For a fixed predeclared set of used ordinary blanks and already initialized
+untouched reserves, it changes the paid compiler to one terminal copy
+`W;C`, `C=product_a CX(a,r(a))`. This gives exact saturation for every
+complete original word, including independently changed preparation inside
+`W`, without a reflection premise. It preserves every old prefix at the
+same tick and adds the actual copy calls to the duration.
+
+The result also prices changed records and controls in the literal Book03.25
+functional. For any complete alternative it retains
+`Q_gap=logdet(aI+zeta E)-logdet(aI+zeta K*K)` with
+`0<=Q_gap<=zeta/a Tr(Delta)`; `Q_gap` is not discarded when a real copy
+fault changes the record. The owner corrects §7ds's overly broad last
+paragraph: original `H+J` contains no extra Shannon, von Neumann or fitted
+Info summand merely because a record exists. A distinct physical valuation
+would need its own identification.
+
+The finite same-boundary examples compare the 34-call word with the former
+37-call word: they have the same initial isometry, but when duration may
+change the paid 37-call full price is higher by about `0.11068705792869`.
+Two 52-call, same-inventory preparations include an actual changed report
+whose complete price is lower by about `7.20422618996e-6`; the source
+control is retained. The embedded exact calculation checks all 512 active
+columns and 93 identities over `QQ(sqrt(p))`. Ordinary, optimized and
+repeat runs reproduce the published 93-check receipt exactly (SHA-256
+`b4e52e9d777135388051c2e5908e99a3110816b256be7d5769315a985dffbfe3`),
+with empty stderr.
+
+This consumes a scoped same-programme compiler/price application. It does
+not admit the fixed reserve layout physically, determine the full physical
+`X_N`, select task/record/initial boundary or complete physical `Cost-Info`,
+prove a stationary finite word or larger field-compiler refinement, or run
+Lean/CI. `GR_closed=false` remains; #334 and
+`WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION` remain open.

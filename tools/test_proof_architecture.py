@@ -4287,6 +4287,532 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("not shown physically selected", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
 
+    def test_canonical_af_native16_retained_report_fibre_is_exact_and_scoped(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "canonical-af-native16-retained-report-fibre"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed native16 retained-report source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        intake = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_native16_retained_report_fibre_2026-10-29"
+        )
+        source_manifest = json.loads((intake / "source_manifest.json").read_text(encoding="utf-8"))
+        replay_manifest = json.loads((intake / "replay_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(source_manifest["schema"], "d0-native16-retained-report-fibre-intake-v1")
+        for rel, artifact in source_manifest["integrated_artifacts"].items():
+            artifact_bytes = (intake / rel).read_bytes()
+            self.assertEqual(len(artifact_bytes), artifact["bytes"], rel)
+            self.assertEqual(hashlib.sha256(artifact_bytes).hexdigest(), artifact["sha256"], rel)
+        self.assertEqual(source_manifest["upstream"]["pull_request"], 334)
+        head = "4b30fcb4dc743e7a04415c9701aae19a847e8dab"
+        self.assertEqual(source_manifest["upstream"]["head"], head)
+        self.assertEqual(source_manifest["upstream"]["memo_blob"], "c07286147ba90464ca89e5d47ae42f36633f44ec")
+        self.assertEqual(source_manifest["upstream"]["task_blob"], "34aefcfc6a136b110b605e9ced458ec524b9204a")
+
+        memo_path = source_manifest["upstream"]["memo_path"]
+        upstream_memo = subprocess.check_output(["git", "show", f"{head}:{memo_path}"])
+        self.assertEqual(hashlib.sha256(upstream_memo).hexdigest(), source_manifest["upstream"]["memo_sha256"])
+        self.assertEqual(len(upstream_memo), source_manifest["upstream"]["memo_bytes"])
+        excerpt_start = b"## 7dr. A literal native completion binds the full control source to the actual retained record\n"
+        excerpt_end = b"<!-- END 7dr RETAINED REPORT FIBRE RECEIPT -->"
+        left = upstream_memo.index(excerpt_start)
+        right = upstream_memo.index(excerpt_end, left) + len(excerpt_end)
+        if upstream_memo[right:right + 1] == b"\n":
+            right += 1
+        excerpt = (intake / "upstream_section_7dr.md").read_bytes()
+        self.assertEqual(excerpt, upstream_memo[left:right])
+        self.assertEqual(
+            hashlib.sha256(excerpt).hexdigest(),
+            source_manifest["integrated_artifacts"]["upstream_section_7dr.md"]["sha256"],
+        )
+
+        def embedded_block(tag: str, language: str) -> bytes:
+            start = f"<!-- BEGIN {tag} -->\n```{language}\n".encode()
+            end = f"```\n<!-- END {tag} -->".encode()
+            return upstream_memo.split(start, 1)[1].split(end, 1)[0]
+
+        embedded_checker = embedded_block("7dr RETAINED REPORT FIBRE CHECKER", "python")
+        embedded_receipt = embedded_block("7dr RETAINED REPORT FIBRE RECEIPT", "json")
+        checker = (intake / "check_native16.py").read_bytes()
+        expected_receipt = (intake / "expected_receipt.json").read_bytes()
+        self.assertEqual(checker, embedded_checker)
+        self.assertEqual(expected_receipt, embedded_receipt)
+        self.assertEqual(hashlib.sha256(checker).hexdigest(), "d5c987f4cec9d1de7aa2b3d35bc6bed9d0d7fa1e8ff56ceb49a9a5164954d99f")
+        self.assertEqual(hashlib.sha256(expected_receipt).hexdigest(), "c20bd62754ffaa4fb89a8ae16ab4b3f18c1c04f38112bcaa0e2e550058da3558")
+
+        for pin in source_manifest["checker_inputs"]:
+            canonical = subprocess.check_output(["git", "show", f"{pin['commit']}:{pin['path']}"])
+            local = (proof.ROOT / pin["path"]).read_bytes()
+            self.assertEqual(local, canonical, pin["path"])
+            self.assertEqual(hashlib.sha256(local).hexdigest(), pin["sha256"])
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{pin['commit']}:{pin['path']}"], text=True
+            ).strip()
+            self.assertEqual(blob, pin["blob"])
+
+        fixture = (intake / "inputs/upstream_receipts.md").read_bytes()
+        self.assertEqual(
+            hashlib.sha256(fixture).hexdigest(),
+            source_manifest["integrated_artifacts"]["inputs/upstream_receipts.md"]["sha256"],
+        )
+        self.assertEqual(fixture, (
+            b"<!-- BEGIN 7dq ARCHIVE SEED QUERY RECEIPT -->\n```json\n"
+            + embedded_block("7dq ARCHIVE SEED QUERY RECEIPT", "json")
+            + b"```\n<!-- END 7dq ARCHIVE SEED QUERY RECEIPT -->\n\n"
+            + b"<!-- BEGIN 7do PAID BINARY INPUT RECEIPT -->\n```json\n"
+            + embedded_block("7do PAID BINARY INPUT RECEIPT", "json")
+            + b"```\n<!-- END 7do PAID BINARY INPUT RECEIPT -->\n"
+        ))
+
+        self.assertEqual(replay_manifest["schema"], "d0-native16-retained-report-fibre-replay-v1")
+        self.assertEqual(replay_manifest["status"], "PASS")
+        self.assertEqual(replay_manifest["checks"], 288)
+        self.assertEqual(replay_manifest["checker_sha256"], hashlib.sha256(checker).hexdigest())
+        self.assertTrue(replay_manifest["exact_published_receipt_match"])
+        self.assertTrue(replay_manifest["replay_outputs_byte_identical"])
+        self.assertTrue(replay_manifest["stderr_empty_for_all_runs"])
+        self.assertFalse(replay_manifest["GR_closed"])
+        normal = (intake / "replay/ordinary_stdout.json").read_bytes()
+        self.assertEqual(normal, expected_receipt)
+        self.assertEqual(normal, (intake / "replay/optimized_stdout.json").read_bytes())
+        self.assertEqual(normal, (intake / "replay/repeat_stdout.json").read_bytes())
+        for mode in ("ordinary", "optimized", "repeat"):
+            self.assertEqual((intake / f"replay/{mode}_stderr.log").read_bytes(), b"")
+        local_result = json.loads(normal)
+        self.assertEqual(local_result["native_full_source_completion"]["literal_word"], "completed16")
+        self.assertTrue(local_result["native_full_source_completion"]["positive_return_gap_exact_zero"])
+        self.assertTrue(local_result["native_full_source_completion"]["full_B_global_minimum_not_proved"])
+        self.assertFalse(local_result["remaining"]["full_physical_variation_domain"])
+        self.assertFalse(local_result["remaining"]["autonomous_controller_admission"])
+        self.assertFalse(local_result["remaining"]["full_selected_Cost_Info_binding"])
+        self.assertFalse(local_result["remaining"]["all42_physical_source_and_refinement"])
+        self.assertFalse(local_result["remaining"]["GR_closed"])
+        self.assertIn("global H+J minimum is not proved", case["scope_review"])
+        self.assertIn("physical admission", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
+    def test_canonical_af_native16_return_record_compiler_is_exact_and_scoped(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "canonical-af-native16-return-record-compiler"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed native16 record-compiler source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        intake = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_native16_return_record_compiler_2026-10-29"
+        )
+        source_manifest = json.loads((intake / "source_manifest.json").read_text(encoding="utf-8"))
+        replay_manifest = json.loads((intake / "replay_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(source_manifest["schema"], "d0-native16-return-record-compiler-intake-v1")
+        for rel, artifact in source_manifest["integrated_artifacts"].items():
+            artifact_bytes = (intake / rel).read_bytes()
+            self.assertEqual(len(artifact_bytes), artifact["bytes"], rel)
+            self.assertEqual(hashlib.sha256(artifact_bytes).hexdigest(), artifact["sha256"], rel)
+        self.assertEqual(source_manifest["upstream"]["pull_request"], 334)
+        head = "0f2e421fda2029df92b174c39f594160ce31294f"
+        self.assertEqual(source_manifest["upstream"]["head"], head)
+        self.assertEqual(source_manifest["upstream"]["memo_blob"], "c1417beeb828773482bda67b6e9db146a5ce04d9")
+        self.assertEqual(source_manifest["upstream"]["task_blob"], "2b10f402167e7c14c77db51887bff43419c506d7")
+
+        memo_path = source_manifest["upstream"]["memo_path"]
+        upstream_memo = subprocess.check_output(["git", "show", f"{head}:{memo_path}"])
+        self.assertEqual(hashlib.sha256(upstream_memo).hexdigest(), source_manifest["upstream"]["memo_sha256"])
+        self.assertEqual(len(upstream_memo), source_manifest["upstream"]["memo_bytes"])
+        excerpt_start = b"## 7ds. An exact paid compiler makes the original return source a real record source\n"
+        excerpt_end = b"<!-- END 7ds RETURN RECORD COMPILER RECEIPT -->"
+        left = upstream_memo.index(excerpt_start)
+        right = upstream_memo.index(excerpt_end, left) + len(excerpt_end)
+        if upstream_memo[right:right + 1] == b"\n":
+            right += 1
+        excerpt = (intake / "upstream_section_7ds.md").read_bytes()
+        self.assertEqual(excerpt, upstream_memo[left:right])
+        self.assertEqual(
+            hashlib.sha256(excerpt).hexdigest(),
+            source_manifest["integrated_artifacts"]["upstream_section_7ds.md"]["sha256"],
+        )
+
+        def embedded_block(tag: str, language: str = "json") -> bytes:
+            start = f"<!-- BEGIN {tag} -->\n```{language}\n".encode()
+            end = f"```\n<!-- END {tag} -->".encode()
+            return upstream_memo.split(start, 1)[1].split(end, 1)[0]
+
+        checker = (intake / "check_return_record.py").read_bytes()
+        receipt = (intake / "expected_receipt.json").read_bytes()
+        self.assertEqual(checker, embedded_block("7ds RETURN RECORD COMPILER CHECKER", "python"))
+        self.assertEqual(receipt, embedded_block("7ds RETURN RECORD COMPILER RECEIPT"))
+        self.assertEqual(hashlib.sha256(checker).hexdigest(), "ea01927ce92fbe64f80ca62395d13b28d56c4508626cd364603edd275f2000e8")
+        self.assertEqual(hashlib.sha256(receipt).hexdigest(), "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e")
+
+        field_start = upstream_memo.index(b"## 7cq.")
+        field_end = upstream_memo.index(b"### 9. Frozen changed code and actual receipt", field_start)
+        field_source = (intake / "inputs/field_compiler_source.md").read_bytes()
+        self.assertEqual(field_source, upstream_memo[field_start:field_end])
+        self.assertEqual(hashlib.sha256(field_source).hexdigest(), "a4046500768bc3abcfc571f18aa749055449aae0d448ff041487a4fa2e538b34")
+
+        prior_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_native16_retained_report_fibre_2026-10-29/expected_receipt.json"
+        )
+        prior_receipt = prior_path.read_bytes()
+        prior_block = (
+            b"<!-- BEGIN 7dr RETAINED REPORT FIBRE RECEIPT -->\n```json\n"
+            + prior_receipt
+            + b"```\n<!-- END 7dr RETAINED REPORT FIBRE RECEIPT -->"
+        )
+        seven_do = embedded_block("7do PAID BINARY INPUT RECEIPT")
+        seven_do_block = (
+            b"<!-- BEGIN 7do PAID BINARY INPUT RECEIPT -->\n```json\n"
+            + seven_do
+            + b"```\n<!-- END 7do PAID BINARY INPUT RECEIPT -->"
+        )
+        fixture = (intake / "inputs/upstream_receipts.md").read_bytes()
+        expected_fixture = (
+            b"### 9. Frozen changed code and actual receipt\n"
+            + prior_block + b"\n\n" + seven_do_block + b"\n"
+        )
+        self.assertEqual(fixture, expected_fixture)
+        self.assertEqual(
+            hashlib.sha256(fixture).hexdigest(),
+            source_manifest["integrated_artifacts"]["inputs/upstream_receipts.md"]["sha256"],
+        )
+
+        for pin in source_manifest["checker_inputs"]:
+            canonical = subprocess.check_output(["git", "show", f"{pin['commit']}:{pin['path']}"])
+            local = (proof.ROOT / pin["path"]).read_bytes()
+            self.assertEqual(local, canonical, pin["path"])
+            self.assertEqual(hashlib.sha256(local).hexdigest(), pin["sha256"])
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{pin['commit']}:{pin['path']}"], text=True
+            ).strip()
+            self.assertEqual(blob, pin["blob"])
+
+        self.assertEqual(replay_manifest["schema"], "d0-native16-return-record-compiler-replay-v1")
+        self.assertEqual(replay_manifest["status"], "PASS")
+        self.assertEqual(replay_manifest["checks"], 279)
+        self.assertEqual(replay_manifest["checker_sha256"], hashlib.sha256(checker).hexdigest())
+        self.assertTrue(replay_manifest["exact_published_receipt_match"])
+        self.assertTrue(replay_manifest["replay_outputs_byte_identical"])
+        self.assertTrue(replay_manifest["stderr_empty_for_all_runs"])
+        self.assertFalse(replay_manifest["GR_closed"])
+        normal = (intake / "replay/ordinary_stdout.json").read_bytes()
+        self.assertEqual(normal, receipt)
+        self.assertEqual(normal, (intake / "replay/optimized_stdout.json").read_bytes())
+        self.assertEqual(normal, (intake / "replay/repeat_stdout.json").read_bytes())
+        for mode in ("ordinary", "optimized", "repeat"):
+            self.assertEqual((intake / f"replay/{mode}_stderr.log").read_bytes(), b"")
+
+        result = json.loads(normal)
+        self.assertEqual(result["status"], "PASS")
+        self.assertEqual(result["checks"], 279)
+        self.assertEqual(result["universal_identities"]["positive_gap"], "exactly zero")
+        self.assertTrue(result["universal_identities"]["all_original_control_sources_preserved"])
+        self.assertTrue(result["independent_upstream"]["every_actual18_prefix_occurrence_zero"])
+        self.assertFalse(result["universal_identities"]["same_every_possible_future_context"])
+        self.assertGreater(float(result["new_copy_row"]["full_source_interval"][0]), 0.0)
+        self.assertTrue(result["negative_controls"]["one_sided34_not_involution"])
+        self.assertFalse(result["remaining"]["complete_physical_X_N"])
+        self.assertFalse(result["remaining"]["actual_reserve_supply_for_any_larger_compiler"])
+        self.assertFalse(result["remaining"]["selected_full_Cost_Info"])
+        self.assertFalse(result["remaining"]["all42_native_refinement_admission"])
+        self.assertFalse(result["remaining"]["GR_closed"])
+        self.assertIn("physical admission", case["scope_review"])
+        self.assertIn("physical admission or reserve supply", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
+    def test_native16_whole_book_price_graph_is_pinned_and_scoped(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "native16-whole-book-price-graph"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed native16 whole-book source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        intake = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_native16_whole_book_price_graph_2026-10-29"
+        )
+        source_manifest = json.loads(
+            (intake / "source_manifest.json").read_text(encoding="utf-8")
+        )
+        replay_manifest = json.loads(
+            (intake / "replay_manifest.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(source_manifest["schema"], "d0-native16-whole-book-price-graph-intake-v1")
+        for rel, artifact in source_manifest["integrated_artifacts"].items():
+            artifact_bytes = (intake / rel).read_bytes()
+            self.assertEqual(len(artifact_bytes), artifact["bytes"], rel)
+            self.assertEqual(hashlib.sha256(artifact_bytes).hexdigest(), artifact["sha256"], rel)
+
+        owner_commit = "22b4e3f430ddb7d8dd7af6e734f5e63225edd056"
+        owner_memo_path = source_manifest["upstream"]["memo_path"]
+        owner_task_path = source_manifest["upstream"]["task_path"]
+        owner_memo = subprocess.check_output(
+            ["git", "show", f"{owner_commit}:{owner_memo_path}"], cwd=proof.ROOT
+        )
+        owner_task = subprocess.check_output(
+            ["git", "show", f"{owner_commit}:{owner_task_path}"], cwd=proof.ROOT
+        )
+        self.assertEqual(source_manifest["upstream"]["commit"], owner_commit)
+        self.assertEqual(source_manifest["upstream"]["memo_blob"], "1e81dd0151eea362fedacc008293bcf4f0c7d806")
+        self.assertEqual(source_manifest["upstream"]["task_blob"], "6f34289104bb71b593e53c6440d827e3182a249f")
+        self.assertEqual(hashlib.sha256(owner_memo).hexdigest(), source_manifest["upstream"]["memo_sha256"])
+        self.assertEqual(len(owner_memo), source_manifest["upstream"]["memo_bytes"])
+        self.assertEqual(hashlib.sha256(owner_task).hexdigest(), source_manifest["upstream"]["task_sha256"])
+        self.assertEqual(len(owner_task), source_manifest["upstream"]["task_bytes"])
+        for path, expected_blob in (
+            (owner_memo_path, source_manifest["upstream"]["memo_blob"]),
+            (owner_task_path, source_manifest["upstream"]["task_blob"]),
+        ):
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{owner_commit}:{path}"], cwd=proof.ROOT, text=True
+            ).strip()
+            self.assertEqual(blob, expected_blob)
+
+        section_start = (
+            b"## 7dt. One terminal record layer gives a native finite price graph, "
+            b"including independently changed preparation\n"
+        )
+        section_end = b"<!-- END 7dt ONE SIDED PRICE GRAPH RECEIPT -->"
+        left = owner_memo.index(section_start)
+        right = owner_memo.index(section_end, left) + len(section_end)
+        if owner_memo[right:right + 1] == b"\n":
+            right += 1
+        excerpt = (intake / "upstream_section_7dt.md").read_bytes()
+        self.assertEqual(excerpt, owner_memo[left:right])
+        task_start = (
+            b"### 29 October: one terminal record layer binds real code alternatives "
+            b"to the literal full Book price\n"
+        )
+        self.assertEqual(
+            (intake / "upstream_task_7dt.md").read_bytes(),
+            owner_task[owner_task.index(task_start):],
+        )
+
+        def embedded_block(tag: str, language: str = "json") -> bytes:
+            start = f"<!-- BEGIN {tag} -->\n```{language}\n".encode()
+            end = f"```\n<!-- END {tag} -->".encode()
+            return owner_memo.split(start, 1)[1].split(end, 1)[0]
+
+        checker = (intake / "check_one_sided_price.py").read_bytes()
+        receipt = (intake / "expected_receipt.json").read_bytes()
+        self.assertEqual(
+            checker, embedded_block("7dt ONE SIDED PRICE GRAPH CHECKER", "python")
+        )
+        self.assertEqual(receipt, embedded_block("7dt ONE SIDED PRICE GRAPH RECEIPT"))
+        self.assertEqual(
+            hashlib.sha256(checker).hexdigest(),
+            "0b240fde3cef3e433f598a81e68fb6f32995ce77ae736652f7dd43f6ce28e359",
+        )
+        self.assertEqual(
+            hashlib.sha256(receipt).hexdigest(),
+            "b4e52e9d777135388051c2e5908e99a3110816b256be7d5769315a985dffbfe3",
+        )
+        for pin in source_manifest["checker_inputs"]:
+            canonical = subprocess.check_output(
+                ["git", "show", f"{pin['commit']}:{pin['path']}"], cwd=proof.ROOT
+            )
+            local = (proof.ROOT / pin["path"]).read_bytes()
+            self.assertEqual(local, canonical, pin["path"])
+            self.assertEqual(hashlib.sha256(local).hexdigest(), pin["sha256"])
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{pin['commit']}:{pin['path']}"],
+                cwd=proof.ROOT, text=True,
+            ).strip()
+            self.assertEqual(blob, pin["blob"])
+
+        self.assertEqual(replay_manifest["schema"], "d0-native16-whole-book-price-graph-replay-v1")
+        self.assertEqual(replay_manifest["status"], "PASS")
+        self.assertEqual(replay_manifest["checks"], 93)
+        self.assertTrue(replay_manifest["exact_published_receipt_match"])
+        self.assertTrue(replay_manifest["outputs_byte_identical_across_modes"])
+        self.assertTrue(replay_manifest["stderr_empty_for_all_runs"])
+        self.assertFalse(replay_manifest["scope"]["GR_closed"])
+        self.assertEqual(len(replay_manifest["runs"]), 3)
+        for run in replay_manifest["runs"]:
+            self.assertEqual(run["returncode"], 0)
+            self.assertEqual(run["checks"], 93)
+            self.assertEqual(run["stderr_bytes"], 0)
+
+        for mode in ("ordinary", "optimized", "repeat"):
+            self.assertEqual((intake / f"replay/{mode}_stdout.json").read_bytes(), receipt)
+            self.assertEqual((intake / f"replay/{mode}_stderr.log").read_bytes(), b"")
+        result = json.loads(receipt)
+        self.assertEqual(result["status"], "PASS")
+        self.assertEqual(result["checks"], 93)
+        self.assertTrue(result["exact"]["all_initial_states_same_34_37"])
+        self.assertTrue(result["exact"]["prep52_alt_changes_report"])
+        self.assertFalse(result["exact"]["post34_is_reflection"])
+        self.assertGreater(float(result["B37_minus_B34"][0]), 0.0)
+        self.assertLess(float(result["B52_alt_minus_B52_base"][1]), 0.0)
+        self.assertEqual(result["whole_price"]["post34"]["N"], 34)
+        self.assertEqual(result["whole_price"]["old_two_sided37"]["N"], 37)
+        self.assertEqual(result["boundary"]["active_dimension"], 512)
+        self.assertEqual(result["boundary"]["rank_input"], 16)
+        self.assertEqual(result["boundary"]["full_dimension"], 65536)
+        self.assertTrue(result["scope"]["literal_original_H_plus_J"])
+        self.assertFalse(result["scope"]["extra_Info_added"])
+        self.assertFalse(result["scope"]["full_physical_X_N_identified"])
+        self.assertFalse(result["scope"]["finite_stationary_root_proved"])
+        self.assertFalse(result["scope"]["GR_closed"])
+        self.assertIn("literal complete Book03.25 H+J price", case["scope_review"])
+        self.assertIn("Lean/CI", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
+    def test_record_saturated_native_field_stencils_are_pinned_and_scoped(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "record-saturated-native-field-stencils"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed record-saturated field source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        intake = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_record_saturated_native_field_2026-10-29"
+        )
+        source_manifest = json.loads(
+            (intake / "source_manifest.json").read_text(encoding="utf-8")
+        )
+        replay_manifest = json.loads(
+            (intake / "replay_manifest.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(source_manifest["schema"], "d0-record-saturated-native-field-intake-v1")
+        for rel, artifact in source_manifest["integrated_artifacts"].items():
+            artifact_bytes = (intake / rel).read_bytes()
+            self.assertEqual(len(artifact_bytes), artifact["bytes"], rel)
+            self.assertEqual(hashlib.sha256(artifact_bytes).hexdigest(), artifact["sha256"], rel)
+
+        owner_commit = "418afd58c741713a60036a90f8246060d774fd56"
+        owner_path = source_manifest["upstream"]["path"]
+        owner_source = subprocess.check_output(
+            ["git", "show", f"{owner_commit}:{owner_path}"], cwd=proof.ROOT
+        )
+        checker = (intake / "check_record_saturated_field.py").read_bytes()
+        self.assertEqual(source_manifest["upstream"]["commit"], owner_commit)
+        self.assertEqual(source_manifest["upstream"]["blob"], "81d78ce6ebcc3e9d98bceaacbd61ed0328943da9")
+        self.assertEqual(owner_source, checker)
+        self.assertEqual(
+            hashlib.sha256(checker).hexdigest(),
+            "618d1d6267739e7468fea7c0108be22cff448c8d9abac28110081854ca502b65",
+        )
+        input_commit = source_manifest["input"]["commit"]
+        subprocess.run(
+            ["git", "merge-base", "--is-ancestor", input_commit, owner_commit],
+            cwd=proof.ROOT, check=True, capture_output=True,
+        )
+
+        self.assertEqual(replay_manifest["schema"], "d0-record-saturated-native-field-replay-v1")
+        self.assertEqual(replay_manifest["status"], "PASS_WITH_CAPTURED_RUNTIME_WARNINGS")
+        self.assertEqual(replay_manifest["checker_status"], "PASS_NATIVE_RECORD_SATURATED_42_SOURCE_STENCILS")
+        self.assertEqual(replay_manifest["checks"], 867)
+        self.assertTrue(replay_manifest["stdout_identical_across_modes"])
+        self.assertTrue(replay_manifest["generated_json_identical_across_modes"])
+        self.assertFalse(replay_manifest["stderr_empty_for_all_runs"])
+        self.assertTrue(replay_manifest["stderr_identical_across_modes"])
+        self.assertFalse(replay_manifest["warnings_resolved"])
+        self.assertFalse(replay_manifest["scope"]["GR_closed"])
+        self.assertEqual(len(replay_manifest["runs"]), 3)
+        expected_warnings = {
+            "divide by zero encountered in matmul",
+            "overflow encountered in matmul",
+            "invalid value encountered in matmul",
+        }
+        for run in replay_manifest["runs"]:
+            self.assertEqual(run["returncode"], 0)
+            self.assertEqual(run["checks"], 867)
+            self.assertEqual(run["runtime_warning_lines"], 48)
+            self.assertEqual(set(run["runtime_warning_categories"]), expected_warnings)
+            self.assertEqual(run["stderr_bytes"], 13724)
+
+        result = json.loads((intake / "result.json").read_text(encoding="utf-8"))
+        programmes = json.loads((intake / "programmes.json").read_text(encoding="utf-8"))
+        self.assertEqual(result["status"], "PASS_NATIVE_RECORD_SATURATED_42_SOURCE_STENCILS")
+        self.assertEqual(result["checks"], 867)
+        self.assertFalse(result["GR_closed"])
+        self.assertFalse(result["Lean_or_CI_run"])
+        self.assertFalse(result["physical_variation_domain_derived"])
+        self.assertFalse(result["same_runtime_field_compiler_proved"])
+        self.assertFalse(result["new_all42_stationary_root"])
+        self.assertEqual(len(result["stencil"]["all_42_coordinates"]), 42)
+        self.assertEqual(result["stencil"]["nonzero_test_rows"], 42)
+        self.assertLess(
+            float(result["stencil"]["dual_max_norm_error"]),
+            float(result["stencil"]["dual_max_norm_proved_bound"]),
+        )
+        self.assertEqual(result["native_family"]["full_cotangent_error"], 0.0)
+        self.assertGreater(result["native_family"]["actual_stage15_G_source"], 0.0)
+        self.assertEqual(len(programmes["words"]), 85)
+        self.assertEqual(
+            programmes["same_inventory"], result["stencil"]["same_inventory"]
+        )
+        for mode in ("ordinary", "optimized", "repeat"):
+            self.assertIn(
+                b"RuntimeWarning:",
+                (intake / f"replay/{mode}_stderr.log").read_bytes(),
+            )
+        self.assertIn("cause is unresolved", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
     def test_retained_marker_replay_report_binds_exact_result_and_fixtures(self) -> None:
         report_dir = (
             proof.ROOT
