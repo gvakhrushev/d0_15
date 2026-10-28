@@ -4016,6 +4016,75 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(metrics["legacy_scoped_queries_with_expected_source"], 0)
         self.assertTrue(metrics["semantic_review_required_for_all_queries"])
 
+    def test_final_cold_start_and_process_reports_are_pinned_to_clean_ae724_snapshot(self) -> None:
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports"
+        )
+        cold = json.loads(
+            (report_dir / "proof_architecture_cold_start_summary_2026-10-28_ae724cc.json")
+            .read_text(encoding="utf-8")
+        )
+        comparison = json.loads(
+            (report_dir / "proof_architecture_search_process_comparison_2026-10-28_ae724cc.json")
+            .read_text(encoding="utf-8")
+        )
+        snapshot = "ae724cc5a0c0b82fedf7df08649e4357163378e1"
+        for report in (cold, comparison):
+            self.assertEqual(report["snapshot_commit"], snapshot)
+            self.assertFalse(report["worktree_dirty"])
+            for path, digest in report["authority_source_digests"].items():
+                pinned_source = subprocess.check_output(["git", "show", f"{snapshot}:{path}"])
+                self.assertEqual(hashlib.sha256(pinned_source).hexdigest(), digest)
+
+        self.assertEqual(cold["search_cases_found_all_sources"], 31)
+        self.assertEqual(cold["search_cases_total"], 31)
+        self.assertEqual(cold["benchmark_cases_total"], 32)
+        self.assertEqual(cold["search_limit"], 18)
+        self.assertEqual(
+            cold["replay"]["full_output_sha256"],
+            "34de1663edce8abdde20caf12b23aab86c6c7e9719b9e07b72b5afe7472b0d23",
+        )
+        self.assertEqual(cold["replay"]["full_output_bytes"], 11_930_125)
+        self.assertTrue(cold["semantic_scope_review_is_manual"])
+        self.assertTrue(all(
+            row["all_required_sources_found"] and not row["missing_paths"]
+            for row in cold["cases"]
+        ))
+        for case_id in (
+            "same-fields-do-not-fix-price-source",
+            "paid-binary-input-full-same-execution-book-price",
+            "canonical-binary-af-endpoint-and-finite-source",
+            "canonical-archive-law-and-variation-domain",
+        ):
+            case = next(row for row in cold["cases"] if row["id"] == case_id)
+            self.assertTrue(case["all_required_sources_found"])
+
+        for path, key in (
+            ("tools/proof_architecture_cold_start.py", "runner_sha256"),
+            ("tools/proof_architecture.py", "search_engine_sha256"),
+            ("tools/test_proof_architecture.py", "test_sha256"),
+            ("tools/compact_proof_architecture_cold_start.py", "compactor_sha256"),
+        ):
+            pinned_source = subprocess.check_output(["git", "show", f"{snapshot}:{path}"])
+            self.assertEqual(hashlib.sha256(pinned_source).hexdigest(), cold["replay"][key])
+        comparison_runner = subprocess.check_output([
+            "git", "show", f"{snapshot}:tools/proof_architecture_process_comparison.py"
+        ])
+        self.assertEqual(
+            hashlib.sha256(comparison_runner).hexdigest(), comparison["runner_sha256"]
+        )
+
+        self.assertEqual(comparison["schema"], "d0-proof-architecture-search-comparison-v2")
+        metrics = comparison["metrics"]
+        self.assertEqual(metrics["query_count"], 31)
+        self.assertEqual(metrics["query_count_with_explicit_source_scope"], 15)
+        self.assertEqual(metrics["expected_source_reference_count"], 23)
+        self.assertEqual(metrics["current_scoped_queries_with_expected_source"], 15)
+        self.assertEqual(metrics["legacy_scoped_queries_with_expected_source"], 0)
+        self.assertTrue(metrics["semantic_review_required_for_all_queries"])
+
     def test_julia_cold_start_tracks_nonzero_chart_composition_boundary(self) -> None:
         case = next(
             item for item in cold_start.CASES
