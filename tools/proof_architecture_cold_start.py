@@ -1271,6 +1271,144 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "canonical-af-original-julia-source-lift",
+        "queries": [
+            "four-level canonical AF lift original Julia return source Hermitian zero-Walsh row E4 V(a) paired weight p^3",
+            "ordered noncommuting history corner K_n C_n all jets same original retained return logdet 16384 histories",
+            "A2->A5 seed E(W*)=Q full action -6d log(1-zeta)+7 J_DATA per spectator",
+            "DATA channel not original full128 normalized Choi distance diamond norm O(nu^4) fixed boost collar fine-record observations",
+            "status PASS_AF_ORIGINAL_JULIA_RETURN_SOURCE_TRANSPORT new_checks",
+            "G/CX/SourceI word physical admission full-history law full heat all-42 Einstein source Lean CI GR_closed=false",
+            "check_history_source.py original CAR Julia Walsh Golden retained multi-tick tape",
+            "Четыре уровня исходной AF-башни воспроизводят исходный Julia-источник",
+            "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE existing owner task checkpoint",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/A4D_CANONICAL_AF_ORIGINAL_JULIA_SOURCE_LIFT_2026_10_28.md",
+            "02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/check_af_julia_lift.py",
+            "02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/result.json",
+            "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py",
+            "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": list(range(9)),
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_CANONICAL_AF_ORIGINAL_JULIA_SOURCE_LIFT_2026_10_28.md",
+                "commit": "a8635c65a6af41c8fbafc605f7c43d0713b4591f",
+                "blob": "6ab2096af0b622e36e2ce15d9a03533c4c32b071",
+                "scope_query_indexes": [0, 1, 3],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/PROOF_RU.md",
+                "commit": "3821e4035cae1c723daed8cf3c59dbeb99890ba8",
+                "blob": "d4e9c4e5e4e707612a7b368f5bc80f69ef31cfe2",
+                "scope_query_indexes": [7],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/check_af_julia_lift.py",
+                "scope_query_indexes": [4],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/result.json",
+                "scope_query_indexes": [4],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py",
+                "scope_query_indexes": [6],
+            },
+            {
+                "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+                "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+                "blob": "ace7b08c708cbdda03a27faf8610edbb8f5de37f",
+                "scope_query_indexes": [8],
+            },
+        ],
+        "scope_review": (
+            "The existing #334 owner derives exact original-row return-source and all-jet "
+            "transport through a four-level canonical AF inclusion and composes it with the "
+            "owned A2-to-A5 stationary seed. This removes the product-of-cold-blocks premise "
+            "for these actual nested lifts only; a repeated-seed reentry control rejects "
+            "arbitrary coherent continuation. All 233 old-left return rows vanish under the "
+            "proved commutant condition, while the future source remains nonzero with true "
+            "multiplicity. The unconditioned DATA channel differs from original full128; only "
+            "the stated DATA-only diamond bound applies. No native G/CX/SourceI word, physical "
+            "admission, full-history law, full heat map, all42 Einstein source, Lean/CI, or GR "
+            "closure is established; GR_closed=false."
+        ),
+    },
+    {
+        "id": "canonical-af-full-heat-geometric-source",
+        "queries": [
+            "canonical AF full H+J source exact positive scalar times calibrated direct-click reporter c(P) Gamma",
+            "homogeneous internal clock K(9,11,13) heat derivative ratio 1/64 N >= 4 359 harmonics",
+            "233 independently varied old-left A5 full return and thermal source zero even when new field changes heat",
+            "Hermitian DATA-corner delta C operator apparatus remainder C3 horizontal raw-vertical norm",
+            "PASS_CANONICAL_AF_FULL_HEAT_SCALAR_SOURCE 3625 checks pointwise field heat",
+            "42 coordinate pointwise Palatini jet all33 scene eigenvalues 297731200 full Hodge modes source-chain error",
+            "original full128 a=N0 remains unidentified no native G/CX/SourceI compiler no fine-record equivalence GR_closed=false",
+            "Каноническая AF-реализация прежнего полевого отчёта: точный источник ВСЕЙ цены",
+            "check_full_heat_source.py PASS_CANONICAL_AF_FULL_HEAT_SCALAR_SOURCE status CHECKS",
+            "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE existing #334 task checkpoint owner",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/A4D_CANONICAL_AF_FULL_HEAT_GEOMETRIC_SOURCE_2026_10_29.md",
+            "02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/check_full_heat_source.py",
+            "02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/result.json",
+            "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": list(range(10)),
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_CANONICAL_AF_FULL_HEAT_GEOMETRIC_SOURCE_2026_10_29.md",
+                "commit": "bbbc85281b1569be229d1b9869fdea7bdfa6780b",
+                "blob": "551636b9d6670490a980b59912548f07216f4fe7",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/PROOF_RU.md",
+                "commit": "9e1577a2d5b2663001ac94220aea28c41f038005",
+                "blob": "53651843f89ccd7d1f2dd8e64c663703f9acedd2",
+                "scope_query_indexes": [7],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/check_full_heat_source.py",
+                "scope_query_indexes": [8],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/result.json",
+                "scope_query_indexes": [4],
+            },
+            {
+                "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+                "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+                "blob": "ace7b08c708cbdda03a27faf8610edbb8f5de37f",
+                "scope_query_indexes": [9],
+            },
+        ],
+        "scope_review": (
+            "The exact full H+J cotangent now equals a positive scalar times the owned "
+            "calibrated direct-click field reporter on its declared canonical AF graph; "
+            "full heat is retained, not discarded. A rational bound gives relative thermal "
+            "correction below 1/64 for the fixed homogeneous K(9,11,13) internal clock, "
+            "N>=4 and the stated c range. All 233 old-left A5 variations have zero full "
+            "return-plus-heat source, while matrix DATA-corner and pointwise 42-coordinate "
+            "jets are checked. The reporter remains distinct from original full128 a=N0. "
+            "No native G/CX/SourceI compiler, physical admission, full fine-record law, "
+            "full42 mesh root, physical comparison-domain theorem, Lean/CI, or GR closure "
+            "is established; GR_closed=false."
+        ),
+    },
+    {
         "id": "canonical-archive-law-and-variation-domain",
         "queries": [
             "canonical archive law compatibility variation domain full old effect relative commutant",

@@ -4027,6 +4027,236 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("field/task/control pullback", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
 
+    def test_af_original_julia_lift_replay_and_source_pins_are_exact(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "canonical-af-original-julia-source-lift"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed canonical AF Julia source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports/"
+            / "af_original_julia_return_source_replay_2026-10-28_a863"
+        )
+        manifest = json.loads((report_dir / "replay_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["schema"], "d0-af-original-julia-return-source-replay-v1")
+        self.assertEqual(manifest["upstream"]["pull_request"], 334)
+        self.assertEqual(manifest["upstream"]["head"], "a8635c65a6af41c8fbafc605f7c43d0713b4591f")
+        self.assertEqual(manifest["execution"]["status"], "PASS_AF_ORIGINAL_JULIA_RETURN_SOURCE_TRANSPORT")
+        self.assertEqual(manifest["execution"]["new_checks"], 587)
+        self.assertEqual(manifest["execution"]["checker_sha256"], "f58b22aab0342d4d595a4ece26b501c4780961c2f950eb174e6af570f656eeaf")
+        self.assertEqual(manifest["execution"]["python"], "3.13.5")
+        self.assertEqual(manifest["execution"]["numpy"], "2.3.5")
+        self.assertEqual(manifest["execution"]["scipy"], "1.17.0")
+        self.assertEqual(manifest["execution"]["sympy"], "1.14.0")
+
+        pins = {row["name"]: row for row in manifest["source_pins"]}
+        expected_blobs = {
+            "owner_memo": "6ab2096af0b622e36e2ce15d9a03533c4c32b071",
+            "proof": "d4e9c4e5e4e707612a7b368f5bc80f69ef31cfe2",
+            "checker": "578dadf933f72cedbc484431519ac9e2dc8afc0f",
+            "published_receipt": "8a268b429a218a1c735e6ad4973bbde9dc07e39f",
+            "original_retained_history_checker": "9d313ec496f12ac61e118511d9ce706f19e675ae",
+        }
+        self.assertEqual({name: pin["blob"] for name, pin in pins.items()}, expected_blobs)
+        for pin in pins.values():
+            source_bytes = (proof.ROOT / pin["path"]).read_bytes()
+            self.assertEqual(hashlib.sha256(source_bytes).hexdigest(), pin["sha256"])
+
+        normal = (report_dir / "normal_stdout.json").read_bytes()
+        self.assertEqual(normal, (report_dir / "optimized_stdout.json").read_bytes())
+        self.assertEqual(normal, (report_dir / "repeat_stdout.json").read_bytes())
+        self.assertEqual((report_dir / "normal_stderr.log").read_bytes(), b"")
+        self.assertEqual((report_dir / "optimized_stderr.log").read_bytes(), b"")
+        self.assertEqual((report_dir / "repeat_stderr.log").read_bytes(), b"")
+        self.assertEqual(hashlib.sha256(normal).hexdigest(), manifest["execution"]["normal_stdout_sha256"])
+        local = json.loads(normal)
+        published = json.loads((report_dir / "published_result.json").read_bytes())
+        self.assertEqual(local["status"], "PASS_AF_ORIGINAL_JULIA_RETURN_SOURCE_TRANSPORT")
+        self.assertEqual(local["new_checks"], 587)
+        self.assertEqual(published["new_checks"], 587)
+
+        numeric_differences: list[tuple[str, float]] = []
+        structural_differences: list[str] = []
+
+        def compare_values(left: object, right: object, path: str = "$") -> None:
+            if isinstance(left, dict) and isinstance(right, dict):
+                if set(left) != set(right):
+                    structural_differences.append(path + ":keys")
+                    return
+                for key in left:
+                    compare_values(left[key], right[key], path + "." + str(key))
+            elif isinstance(left, list) and isinstance(right, list):
+                if len(left) != len(right):
+                    structural_differences.append(path + ":length")
+                    return
+                for index, (a, b) in enumerate(zip(left, right)):
+                    compare_values(a, b, f"{path}[{index}]")
+            elif (isinstance(left, (int, float)) and not isinstance(left, bool)
+                  and isinstance(right, (int, float)) and not isinstance(right, bool)):
+                if left != right:
+                    numeric_differences.append((path, abs(float(left) - float(right))))
+            elif left != right:
+                structural_differences.append(path + ":value")
+
+        compare_values(local, published)
+        self.assertEqual(structural_differences, [])
+        self.assertEqual(len(numeric_differences), 29)
+        self.assertEqual(manifest["execution"]["published_comparison"]["numeric_leaf_differences"], 29)
+        self.assertEqual(
+            max(delta for _, delta in numeric_differences),
+            manifest["execution"]["published_comparison"]["max_abs_numeric_difference"],
+        )
+        self.assertFalse(manifest["execution"]["published_result_byte_identical"])
+        self.assertFalse(local["reduced_DATA_readout"]["exact_finite_DATA_channel_equivalence"])
+        self.assertEqual(local["canonical_seed"]["old_left_directions_checked"], 233)
+        self.assertEqual(local["canonical_seed"]["max_old_return_source"], 0.0)
+        self.assertGreater(local["canonical_seed"]["future_return_source_per_spectator"], 0.0)
+        self.assertFalse(manifest["scope"]["native_G_CX_SourceI_word_emitted"])
+        self.assertFalse(manifest["scope"]["physical_admission_proved"])
+        self.assertFalse(manifest["scope"]["full_history_record_laws_identified"])
+        self.assertFalse(manifest["scope"]["full_heat_source_identified"])
+        self.assertFalse(manifest["scope"]["all42_geometric_source_identified"])
+        self.assertFalse(manifest["scope"]["Lean_or_CI_run"])
+        self.assertFalse(manifest["scope"]["GR_closed"])
+        self.assertIn("product-of-cold-blocks premise", case["scope_review"])
+        self.assertIn("DATA-only diamond bound", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
+    def test_canonical_af_full_heat_source_replay_and_scope_are_exact(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "canonical-af-full-heat-geometric-source"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed full-heat AF source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports/"
+            / "af_full_heat_geometric_source_replay_2026-10-29_bbbc"
+        )
+        manifest = json.loads((report_dir / "replay_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["schema"], "d0-af-full-heat-geometric-source-replay-v1")
+        self.assertEqual(manifest["upstream"]["pull_request"], 334)
+        self.assertEqual(manifest["upstream"]["head"], "bbbc85281b1569be229d1b9869fdea7bdfa6780b")
+        self.assertEqual(manifest["execution"]["status"], "PASS_CANONICAL_AF_FULL_HEAT_SCALAR_SOURCE")
+        self.assertEqual(manifest["execution"]["checks"], 3625)
+        self.assertEqual(manifest["execution"]["checker_sha256"], "65f11b1a012d4bad7e791ee91f65983b362b15287c4ef6de076e1623027b5269")
+        self.assertEqual(manifest["execution"]["environment"], {
+            "python": "3.13.5", "numpy": "2.3.5", "scipy": "1.17.0",
+            "sympy": "1.14.0", "mpmath": "1.3.0", "torch": "2.15.0",
+        })
+        self.assertTrue(manifest["execution"]["torch_was_unpinned_in_upstream_receipt"])
+
+        pins = {row["name"]: row for row in manifest["source_pins"]}
+        expected_blobs = {
+            "owner_memo": "551636b9d6670490a980b59912548f07216f4fe7",
+            "proof": "53651843f89ccd7d1f2dd8e64c663703f9acedd2",
+            "checker": "3bbc1e2a53a9789e3518a45cbd2ee9f04a74d3ba",
+            "published_result": "0d9aba6eb489464498bcd527aae45ffde1ca1621",
+            "parent_julia_lift_checker": "578dadf933f72cedbc484431519ac9e2dc8afc0f",
+            "grandparent_retained_history_checker": "9d313ec496f12ac61e118511d9ce706f19e675ae",
+        }
+        self.assertEqual({name: pin["blob"] for name, pin in pins.items()}, expected_blobs)
+        for pin in pins.values():
+            source_bytes = (proof.ROOT / pin["path"]).read_bytes()
+            self.assertEqual(hashlib.sha256(source_bytes).hexdigest(), pin["sha256"])
+
+        normal = (report_dir / "normal_stdout.json").read_bytes()
+        self.assertEqual(normal, (report_dir / "optimized_stdout.json").read_bytes())
+        self.assertEqual(normal, (report_dir / "repeat_stdout.json").read_bytes())
+        for mode in ("normal", "optimized", "repeat"):
+            self.assertEqual((report_dir / f"{mode}_stderr.log").read_bytes(), b"")
+        self.assertEqual(hashlib.sha256(normal).hexdigest(), manifest["execution"]["replay_outputs"]["normal"]["stdout_sha256"])
+        local = json.loads(normal)
+        published = json.loads((report_dir / "published_result.json").read_bytes())
+        self.assertEqual(local["status"], "PASS_CANONICAL_AF_FULL_HEAT_SCALAR_SOURCE")
+        self.assertEqual(local["checks"], 3625)
+
+        numeric_differences: list[tuple[str, float]] = []
+        structural_differences: list[str] = []
+
+        def compare_values(left: object, right: object, path: str = "$") -> None:
+            if isinstance(left, dict) and isinstance(right, dict):
+                if set(left) != set(right):
+                    structural_differences.append(path + ":keys")
+                    return
+                for key in left:
+                    compare_values(left[key], right[key], path + "." + str(key))
+            elif isinstance(left, list) and isinstance(right, list):
+                if len(left) != len(right):
+                    structural_differences.append(path + ":length")
+                    return
+                for index, (a, b) in enumerate(zip(left, right)):
+                    compare_values(a, b, f"{path}[{index}]")
+            elif (isinstance(left, (int, float)) and not isinstance(left, bool)
+                  and isinstance(right, (int, float)) and not isinstance(right, bool)):
+                if left != right:
+                    numeric_differences.append((path, abs(float(left) - float(right))))
+            elif left != right:
+                structural_differences.append(path + ":value")
+
+        compare_values(local, published)
+        self.assertEqual(structural_differences, [])
+        self.assertEqual(len(numeric_differences), 4)
+        self.assertEqual(manifest["execution"]["published_comparison"]["numeric_leaf_differences"], 4)
+        self.assertEqual(
+            max(delta for _, delta in numeric_differences),
+            manifest["execution"]["published_comparison"]["max_abs_numeric_difference"],
+        )
+        self.assertFalse(manifest["execution"]["published_result_byte_identical"])
+        self.assertFalse(manifest["execution"]["parsed_json_exact_match"])
+        self.assertTrue(manifest["execution"]["published_comparison"]["structure_match"])
+        self.assertTrue(manifest["execution"]["published_comparison"]["nonnumeric_fields_match"])
+
+        self.assertEqual(local["AF"]["GNS_dimension_per_DATA_copy"], 10946)
+        self.assertEqual(local["AF"]["actual_canonical_input_columns"], 13)
+        self.assertTrue(all(row["old_left_rows"] == 233 for row in local["AF"]["cases"]))
+        self.assertTrue(all(row["old_return_residual"] == 0.0 for row in local["AF"]["cases"]))
+        self.assertTrue(all(row["old_heat_character_residual"] == 0.0 for row in local["AF"]["cases"]))
+        self.assertTrue(local["uniform_bound"]["all_N_at_least_4"])
+        self.assertEqual(local["uniform_bound"]["source_gain_lower"], "63/64 of true return gain")
+        self.assertFalse(local["original_Julia_row_identified_with_reporter"])
+        self.assertFalse(local["native_compiler_emitted"])
+        self.assertFalse(local["fine_record_equivalence_claimed"])
+        self.assertFalse(local["pointwise_field"]["full42_mesh_or_stationary_root_replayed"])
+        self.assertFalse(local["Lean_or_CI_run"])
+        self.assertFalse(local["GR_closed"])
+        self.assertIn("full heat is retained", case["scope_review"])
+        self.assertIn("original full128 a=N0", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
     def test_canonical_archive_law_sources_keep_exact_owner_pins_and_scope(self) -> None:
         case = next(
             item for item in cold_start.CASES

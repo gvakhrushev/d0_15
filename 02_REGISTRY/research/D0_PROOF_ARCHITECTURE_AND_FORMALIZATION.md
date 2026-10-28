@@ -14160,3 +14160,163 @@ review manual.
 This validation snapshot does not complete the `WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION`
 worker scope. It adds no Lean proof or physical admission, and
 `GR_closed=false` remains in force.
+
+## #334 continuation at `a8635c65` — original Julia return source on the canonical AF tower
+
+The latest same-owner continuation is recorded in the [#334 source-lift memo](https://github.com/gvakhrushev/d0_15/blob/a8635c65a6af41c8fbafc605f7c43d0713b4591f/02_REGISTRY/research/A4D_CANONICAL_AF_ORIGINAL_JULIA_SOURCE_LIFT_2026_10_28.md);
+the exact four-level canonical AF lift of the original Julia return source is derived in its [Russian proof](https://github.com/gvakhrushev/d0_15/blob/3821e4035cae1c723daed8cf3c59dbeb99890ba8/02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/PROOF_RU.md).
+The Russian proof title is «Четыре уровня исходной AF-башни воспроизводят исходный Julia-источник»; [its pinned source](https://github.com/gvakhrushev/d0_15/blob/3821e4035cae1c723daed8cf3c59dbeb99890ba8/02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/PROOF_RU.md) contains the full return-source proof.
+This advances the existing EXP-A4D owner; it does not create another task or
+change the finite mathematical result into physical selection.
+
+For the original Hermitian zero-Walsh row `a=N0`, the lift pairs actual copies
+in the four-level Fibonacci inclusion with multiplicities `[[5,3],[3,2]]`.
+The exact weights leave `p^3` unpaired and give `2p^2` paired. On each pair,
+`B=I-a^2`, `S=a sqrt(2I-a^2)`, and
+`V_pair=[[B,-S],[S,B]]`; identity acts on the unmatched copies. This full
+unitary preserves the old right columns, uses no new pure flag, and satisfies
+`E_4(V(a))=p^3 I+2p^2 B=I-2p^2 a^2`, exactly the original return block for
+the same `a`. Four inclusions define this algebraic interface; they are not a
+selected physical tick or spacetime mesh.
+
+The tower and bimodule identities derive the ordered corner
+`K_n=C_n ... C_1` for these actual nested lifts of the same old operators.
+They transfer the complete retained-return logdet, its source and all jets,
+including the unnormalized ordinary-trace multiplicity and noncommuting
+histories. This consumes the conditional product-of-cold-blocks step for this
+specific construction. It does not validate that product rule for arbitrary
+coherent continuations; the repeated-seed reentry control explicitly fails
+that extension.
+
+The same construction composes with the existing `A2 -> A5` stationary seed:
+the complete corner is `K_n Q`. Under the proved commuting condition, all 233
+old-left return-source directions vanish, while the new future return source
+remains `1.0880397534411411e-7` per spectator. The complete DATA-only action
+retains the true multiplier seven on the future source. Thus the old-prefix
+rows are removed for this continuation, while its new source and heat remain.
+
+The unconditioned DATA channel is not the original full128 channel. At the
+original `nu=0.6` control, the normalized Choi trace distance is
+`0.007787354056443842` in the local replay (published value
+`0.007787354056443831`); the original unitality defect is about
+`8.7960e-5`. The proof instead gives a diamond-norm upper bound with a
+per-tick `O(nu^4)` discrepancy on a fixed boost collar, composable for
+DATA-only intermediate channels and an external reference. It does not cover
+fine-record observations or identify the physical geometry decoder.
+
+I replayed the pinned checker with Python 3.13.5, NumPy 2.3.5, SciPy 1.17.0
+and SymPy 1.14.0. Status `PASS_AF_ORIGINAL_JULIA_RETURN_SOURCE_TRANSPORT`,
+all 587 new checks pass in the [checker](https://github.com/gvakhrushev/d0_15/blob/3a5fe1111ed70f39eccbb24e6cf56384f6164609/02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/check_af_julia_lift.py);
+ordinary, `-O` and repeat outputs
+are byte-identical with empty stderr. Against the published receipt, structure
+and all nonnumeric fields match, but 29 floating-point leaves differ by at
+most `1.1921019726912618e-14`; the local stdout is 6,086 bytes versus 6,085
+published. The [published result receipt](https://github.com/gvakhrushev/d0_15/blob/fcb2d797d36b9454ff974d88c01e1ed3bbac2656/02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/result.json) records that no native G/CX/SourceI word, physical admission, full-history law,
+full heat map, all-42 Einstein source, Lean or CI result is established and
+`GR_closed=false`. Exact source pins, the required unchanged parent checker, all three
+replay streams and the numeric comparison are retained in
+[`af_original_julia_return_source_replay_2026-10-28_a863`](sources/d0_proof_architecture_formalization_2026-10-24/reports/af_original_julia_return_source_replay_2026-10-28_a863/).
+
+The original retained-history [check_history_source.py](https://github.com/gvakhrushev/d0_15/blob/110b672e09848893475db0c8fd786cc910a014f9/02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py)
+supplies the same original CAR/Julia/Walsh/Golden source on a retained
+multi-tick tape. Its exact input path is
+`02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py`,
+pinned at commit `110b672e09848893475db0c8fd786cc910a014f9`, blob
+`9d313ec496f12ac61e118511d9ce706f19e675ae`, SHA-256
+`a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a`.
+The full source pins are retained here:
+
+- Memo: `02_REGISTRY/research/A4D_CANONICAL_AF_ORIGINAL_JULIA_SOURCE_LIFT_2026_10_28.md`; commit `a8635c65a6af41c8fbafc605f7c43d0713b4591f`; blob `6ab2096af0b622e36e2ce15d9a03533c4c32b071`; SHA-256 `a4c90a4a7cdaa5a0f5274bd9a71b193c66692d5072f6724eee26358ec189d9a0`.
+- Proof: `02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/PROOF_RU.md`; commit `3821e4035cae1c723daed8cf3c59dbeb99890ba8`; blob `d4e9c4e5e4e707612a7b368f5bc80f69ef31cfe2`; SHA-256 `e0da7a16676acc05c53f1f8a52c86d93fc7e8c3bcfe1ed04165997ec9343be2c`.
+- Checker: `02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/check_af_julia_lift.py`; commit `3a5fe1111ed70f39eccbb24e6cf56384f6164609`; blob `578dadf933f72cedbc484431519ac9e2dc8afc0f`; SHA-256 `f58b22aab0342d4d595a4ece26b501c4780961c2f950eb174e6af570f656eeaf`.
+- Receipt: `02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/result.json`; commit `fcb2d797d36b9454ff974d88c01e1ed3bbac2656`; blob `8a268b429a218a1c735e6ad4973bbde9dc07e39f`; SHA-256 `12c2b0bd961a8104d75672aeb6c1e41c7ec62dce640d139f455458e230f20e1a`.
+- Parent checker: `02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py`; commit `110b672e09848893475db0c8fd786cc910a014f9`; blob `9d313ec496f12ac61e118511d9ce706f19e675ae`; SHA-256 `a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a`.
+The owner task checkpoint remains the existing
+[`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE` brief](https://github.com/gvakhrushev/d0_15/blob/b728d85246c6bcf75b84dadaef294e91f5f50b15/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md),
+blob `ace7b08c708cbdda03a27faf8610edbb8f5de37f`.
+
+This result supplies an exact mathematical source transport and a concrete
+same-seed application. It does not emit a native `G/CX/SourceI` word, prove
+physical admission, identify the complete heat or full-history observation
+map, or equate this `a_j` pullback with the all-42 Einstein source. It is not
+Lean or CI validation and does not close the physical route; `GR_closed=false`.
+
+## #334 continuation at `bbbc8528` — the complete AF `H+J` field source
+
+The next same-owner step applies the prior four-level lift to the already-owned
+calibrated direct-click reporter. The [owner memo](https://github.com/gvakhrushev/d0_15/blob/bbbc85281b1569be229d1b9869fdea7bdfa6780b/02_REGISTRY/research/A4D_CANONICAL_AF_FULL_HEAT_GEOMETRIC_SOURCE_2026_10_29.md)
+records the complete canonical AF `H+J` source as a positive scalar times the
+calibrated field reporter. Its Russian proof is titled «Каноническая AF-реализация прежнего полевого отчёта: точный источник ВСЕЙ цены» and [pinned here](https://github.com/gvakhrushev/d0_15/blob/9e1577a2d5b2663001ac94220aea28c41f038005/02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/PROOF_RU.md); it names a different reporter from original full128. The old Julia `a=N0` is not
+redefined to produce the Einstein law; its full128-to-Einstein pullback remains
+open.
+
+On the existing nonlinear field chart, set `P=I_(tau,h)/Omega` and retain the
+owned calibration `c(P)=sqrt(1-alpha gamma P(1-gamma P))`. For `p^3<=c<1`,
+the four-level canonical AF lift has expectation `cI`; composed with the actual
+`A2 -> A5` seed it has return corner `cQ`. It adds no pure flag or padding,
+and it keeps the genuine DATA multiplicity. The complete return price is
+`J(c)=-6d log(1-zeta)-7d log(1-zeta+zeta c^2)`.
+
+The full endpoint is generally not a reflection. Its complete GNS character
+retains multiplicities `1974d` at `+1`, `610d` at `-1`, `3194d` at each
+`exp(+-i phi)`, and `987d` at each `-exp(+-i phi)`, with
+`cos(phi)=(c-p^3)/(2p^2)`. The existing homogeneous internal clock
+`K(9,11,13)` retains both Hodge grades, the 359 harmonic modes and its actual
+fixed stage count `N`; the four AF inclusions are not relabelled as clock
+ticks or padding. A Chebyshev character bound removes a false `1/sin(phi)`
+loss in the full heat derivative.
+
+For `beta=2p^2`, `zeta=2^-20`, `N>=4`, `d>=1` and `p^3<=c<1`, the exact
+rational estimate gives `|H_c/J_c|<1/64`. In particular the conservative
+`N=4` bound is `0.015325748438397542`. The heat is retained in the action and
+its derivative is included in the positive coefficient
+`Gamma_N=(H_c+J_c)c_P/Omega`. On this declared field graph,
+`D(H_N+J)=Gamma_N DI_(tau,h)` off shell and
+`(63/64)g_J < Gamma_N < (65/64)g_J`, with `g_J` the actual return gain.
+Consequently the field critical points and their Hessian indices agree with
+those of the existing reporter on this chart. This transports that reporter's
+source; it does not identify it with original full128.
+
+For every one of the 233 independently varied old-left `A5` directions, the
+full return and full thermal source both vanish, even as the new field changes
+the heat. A separate matrix-valued DATA-corner identity carries the existing
+operator-apparatus remainder through the explicit lift derivative, preserving
+its joint `C3` horizontal/raw-vertical norm. Neither statement covers arbitrary
+new completion or right-mixing operations outside the declared graph; their
+sources remain live unless the physical comparison domain is proved.
+
+The pinned [checker](https://github.com/gvakhrushev/d0_15/blob/4da3dddd50d26ba3318c59926cbdc99776b3c656/02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/check_full_heat_source.py)
+reports `PASS_CANONICAL_AF_FULL_HEAT_SCALAR_SOURCE` with 3,625 checks. I
+replayed it with Python 3.13.5, NumPy 2.3.5, SciPy 1.17.0, SymPy 1.14.0,
+mpmath 1.3.0 and PyTorch 2.15.0. PyTorch was not version-pinned in the
+published receipt. Ordinary, `-O` and repeat outputs match byte-for-byte and
+stderr is empty. Relative to the [published receipt](https://github.com/gvakhrushev/d0_15/blob/45d24db335f51e2e6daec6c6796483f19ea7ed4f/02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/result.json),
+structure and nonnumeric fields match; four floating-point leaves differ, with
+maximum absolute difference `5.9117155615240335e-12` (the largest is a
+trace-character error still below the checker tolerance). The exact outputs,
+all source pins and numeric comparison are in
+[`af_full_heat_geometric_source_replay_2026-10-29_bbbc`](sources/d0_proof_architecture_formalization_2026-10-24/reports/af_full_heat_geometric_source_replay_2026-10-29_bbbc/).
+
+The exact owner and executable input pins are:
+
+- Memo: `02_REGISTRY/research/A4D_CANONICAL_AF_FULL_HEAT_GEOMETRIC_SOURCE_2026_10_29.md`; commit `bbbc85281b1569be229d1b9869fdea7bdfa6780b`; blob `551636b9d6670490a980b59912548f07216f4fe7`; SHA-256 `ea81f9e118f92e9e7f53e4d9ed9de5f705429d0f230a5c8f86855c0597a08261`.
+- Proof: `02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/PROOF_RU.md`; commit `9e1577a2d5b2663001ac94220aea28c41f038005`; blob `53651843f89ccd7d1f2dd8e64c663703f9acedd2`; SHA-256 `ad5a788fa521deaccfd617b169ad450f78ca11168b73e9f3a20148cdce191b23`.
+- Checker: `02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/check_full_heat_source.py`; commit `4da3dddd50d26ba3318c59926cbdc99776b3c656`; blob `3bbc1e2a53a9789e3518a45cbd2ee9f04a74d3ba`; SHA-256 `65f11b1a012d4bad7e791ee91f65983b362b15287c4ef6de076e1623027b5269`.
+- Result: `02_REGISTRY/research/sources/d0_af_full_heat_geometric_source_2026-10-29/result.json`; commit `45d24db335f51e2e6daec6c6796483f19ea7ed4f`; blob `0d9aba6eb489464498bcd527aae45ffde1ca1621`; SHA-256 `d5ccea58e97f49c375585a8e00aedd16368d5db36050bb65f9d8bebf0e4b9e88`.
+- Parent Julia-lift checker: `02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/check_af_julia_lift.py`; commit `3a5fe1111ed70f39eccbb24e6cf56384f6164609`; blob `578dadf933f72cedbc484431519ac9e2dc8afc0f`; SHA-256 `f58b22aab0342d4d595a4ece26b501c4780961c2f950eb174e6af570f656eeaf`.
+- Grandparent retained-history checker: `02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py`; commit `110b672e09848893475db0c8fd786cc910a014f9`; blob `9d313ec496f12ac61e118511d9ce706f19e675ae`; SHA-256 `a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a`.
+
+At the independent 42-coordinate pointwise Palatini jet, the source remains
+nonzero: the local replay reports `g_J=6.233427740192365e-5`, full gain
+`6.233277810602392e-5`, relative heat correction `-2.4052511109706742e-5` and
+source-chain error `3.24e-27`. It accounts for 297,731,200 full Hodge modes
+with exact multiplicities and does not fit an Einstein zero. It is a pointwise
+off-shell jet, not a full42 mesh root or stationary solution.
+
+The existing #334 `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE` task checkpoint is [pinned here](https://github.com/gvakhrushev/d0_15/blob/b728d85246c6bcf75b84dadaef294e91f5f50b15/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md)
+and remains the owner. This consumes the full-heat compatibility and old-prefix
+source premises for the specified AF reporter graph. It does not emit the new
+native `G/CX/SourceI` word, establish physical admission or all fine-record
+laws, identify original full128 with this reporter, prove a physical comparison
+domain, or solve the full42 mesh. No Lean or CI result is claimed and
+`GR_closed=false`.
