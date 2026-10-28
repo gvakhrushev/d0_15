@@ -12392,3 +12392,48 @@ canonical boundary classification is thereby formalized. The current source
 head has no GitHub check rows, and the packet records the four numeric
 replay differences and three PyTorch-limited checkers explicitly. No claim
 coverage or physical acceptance is inferred; `GR_closed=false` remains.
+
+### Variable-parameter moving-cut price — 28 October 2026
+
+[`D0.Analysis.MovingProjectorVariableParameters`](../../03_FORMALIZATION/D0/Analysis/MovingProjectorVariableParameters.lean)
+extends the existing finite fixed-Gram Book03 price on one differentiable
+curve: inverse temperature, feedback parameter, projector, transport and
+energy may all vary. It consumes the existing matrix exponential, determinant,
+moving-cut and Gibbs-state results. The derivative retains both additional
+terms, `(-log Z / β² - Re Tr(ρ Δ) / β) β'` and `Re Tr(R F) z'`, alongside
+the relative thermal and feedback sources. A separate corollary supplies the
+positive chart from an isometric transport and `0 ≤ z < 1`.
+
+The mathematical source is §5 of `PROOF_RU.md` at #334 commit
+`eebcb5e467742df3e9cf7fa9702042d7294aa742`, blob
+`eeff19caa071dae92961f5aa8f0ff16087ca2de1`. An independent read checked the
+signs, factors, shared curve and domain against that source. This is a
+finite-dimensional fixed-Gram identity, with the Lean theorem's explicit
+local projector, Hermiticity, differentiability and logarithm-domain
+hypotheses; it does not establish physical admission of the parameter
+directions, moving Gram, complete Info/work/clock price, source selection,
+or GR closure. It adds no scientific acceptance or C0 coverage claim.
+
+The module passes its narrow Lean build, and the public `D0.All` build passes
+4,769 Lake jobs on Lean source digest
+`26859dc110bc5f0b909b9ee7229627a6c2c44e7c54718aecbf3a5e9b01091703`.
+The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_variable_parameters.json)
+has Git-blob content SHA-256 `ee777ec3e417da865a5dab42e2760d581159c88231d177d5a35708d5197f61fa`.
+The full build retains existing linter warnings in other modules.
+
+### Historical search-receipt status
+
+`python tools/proof_architecture.py --json receipt-status <repository-relative-report.json>`
+compares selected recorded authority and tool hashes with their local Git
+snapshot and the current checkout. It reports proven differences separately
+from missing or inconsistent bindings, and lists a bounded set of potential
+search-input changes. The check is read-only and does not accept a scientific
+result. Its historical status authenticates only the selected bindings, not
+the original execution, output, other receipt fields or every Git pin.
+
+Legacy receipts do not record the full search corpus and its environment, so
+even matching selected hashes cannot establish that a historical search is
+current. A Git-diff candidate is not proof that the actual search input
+changed. A future reproducible search receipt needs an explicit corpus and
+tool/environment capture and the availability of every followed pin; those
+remain open rather than being inferred by this command.

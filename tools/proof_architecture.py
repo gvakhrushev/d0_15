@@ -48,6 +48,7 @@ MAX_DECLARED_SOURCE_RESULTS = 3
 MAX_DECLARED_SOURCE_APPLICATIONS = 3
 MAX_DECLARED_SOURCE_ATTEMPTS = 3
 MAX_FORMAL_SUPPORT_LOCATORS = 5
+MAX_RECEIPT_CORPUS_CANDIDATES = 128
 SOURCE_LOCATOR_STOPWORDS = frozenset("""
 a an and are as at be been by can do does for from has have if in into is it its
 of on or our that the their then this to under was were what when where which
@@ -775,6 +776,232 @@ def load_dataset(root: pathlib.Path = ROOT) -> dict[str, Any]:
             ["git", "status", "--porcelain"], cwd=root, text=True, encoding="utf-8"
         ).strip()),
         "source_digests": {p.as_posix(): sha256(root / p) for p in paths},
+    }
+
+
+_RECEIPT_AUTHORITIES = (CLAIMS, ASSUMPTIONS, FORMAL_SUPPORT, ALIASES,
+                        APPLICATIONS, CONTRACT, PRESUPPOSITIONS)
+_RECEIPT_TOOLS = {
+    "d0-proof-architecture-cold-start-summary-v2": (
+        ("runner_sha256", "tools/proof_architecture_cold_start.py"),
+        ("search_engine_sha256", "tools/proof_architecture.py"),
+        ("compactor_sha256", "tools/compact_proof_architecture_cold_start.py"),
+    ),
+    "d0-proof-architecture-search-comparison-v2": (
+        ("runner_sha256", "tools/proof_architecture_process_comparison.py"),
+        ("query_fixture_sha256", "tools/proof_architecture_cold_start.py"),
+        ("search_engine_sha256", "tools/proof_architecture.py"),
+    ),
+}
+
+
+def _receipt_git_blob(root: pathlib.Path, commit: str, path: str) -> bytes | None:
+    """Read a local immutable snapshot without fetching missing Git objects."""
+    env = os.environ.copy()
+    env["GIT_NO_LAZY_FETCH"] = "1"
+    try:
+        result = subprocess.run(
+            ["git", "show", f"{commit}:{path}"], cwd=root, env=env,
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=15,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    return result.stdout if result.returncode == 0 else None
+
+
+def _receipt_git_object_type(root: pathlib.Path, object_id: str) -> str | None:
+    """Read a local Git object's type without fetching missing objects."""
+    env = os.environ.copy()
+    env["GIT_NO_LAZY_FETCH"] = "1"
+    try:
+        result = subprocess.run(
+            ["git", "cat-file", "-t", object_id], cwd=root, env=env,
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=15,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if result.returncode:
+        return None
+    try:
+        return result.stdout.decode("ascii").strip()
+    except UnicodeError:
+        return None
+
+
+def _search_corpus_path(path: str) -> bool:
+    """Identify changed paths that can affect the bounded text search."""
+    path = path.replace("\\", "/")
+    name = pathlib.PurePosixPath(path).name
+    in_search_root = path.startswith(tuple(name + "/" for name in TEXT_ROOTS))
+    if not in_search_root and path not in {".gitignore", ".ignore", ".rgignore"}:
+        return False
+    if path.startswith(DERIVED_TEXT_EXCLUDED_PREFIXES):
+        return False
+    if name in {".gitignore", ".ignore", ".rgignore"}:
+        return True
+    if path in {"tools/proof_architecture.py", "tools/proof_architecture_cold_start.py"}:
+        return False
+    if path.startswith("tools/test_"):
+        return False
+    return pathlib.PurePosixPath(path).suffix in {".md", ".lean", ".json", ".csv", ".py", ".toml"}
+
+
+def _receipt_corpus_changes(root: pathlib.Path, commit: str) -> tuple[list[str], int, bool] | None:
+    """Find potential search-input changes, ignoring byte-identical mode changes.
+
+    A legacy receipt does not record its actual rg file set or checkout bytes.
+    These Git candidates therefore do not prove the search corpus changed.
+    """
+    env = os.environ.copy()
+    env["GIT_NO_LAZY_FETCH"] = "1"
+    try:
+        tracked = subprocess.run(
+            ["git", "diff", "--no-ext-diff", "--no-renames", "--name-only", "-z", commit, "--"],
+            cwd=root, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=30,
+        )
+        untracked = subprocess.run(
+            ["git", "ls-files", "--others", "--exclude-standard", "-z"],
+            cwd=root, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=30,
+        )
+        if tracked.returncode or untracked.returncode:
+            return None
+        paths = (tracked.stdout + untracked.stdout).decode("utf-8", errors="strict").split("\0")
+    except (OSError, UnicodeError, subprocess.SubprocessError):
+        return None
+    eligible = sorted({path for path in paths if path and _search_corpus_path(path)})
+    truncated = len(eligible) > MAX_RECEIPT_CORPUS_CANDIDATES
+    checked = eligible[:MAX_RECEIPT_CORPUS_CANDIDATES]
+    candidates = []
+    for path in checked:
+        old = _receipt_git_blob(root, commit, path)
+        if old is not None:
+            try:
+                if (root / pathlib.Path(path)).read_bytes() == old:
+                    continue
+            except OSError:
+                pass
+        candidates.append(path)
+    return candidates, len(checked), truncated
+
+
+def receipt_status(root: pathlib.Path, report: dict[str, Any]) -> dict[str, Any]:
+    """Compare recorded inputs with their snapshot and the current checkout.
+
+    This verifies individual recorded input bindings, not that an output was
+    actually produced by those inputs. Legacy search receipts do not fingerprint
+    the complete search corpus or pin availability, so they cannot be called
+    current solely because their recorded authority and tool hashes match.
+    """
+    schema = report.get("schema")
+    snapshot = report.get("snapshot_commit")
+    raw_authorities = report.get("authority_source_digests")
+    authorities = raw_authorities if isinstance(raw_authorities, dict) else {}
+    tools = _RECEIPT_TOOLS.get(schema, ()) if isinstance(schema, str) else ()
+    replay = report.get("replay")
+    cold_summary = schema == "d0-proof-architecture-cold-start-summary-v2"
+    recorded_tools = (replay if isinstance(replay, dict) else {}) if cold_summary else report
+    authority_changes: list[str] = []
+    tool_changes: list[str] = []
+    missing: list[str] = []
+    current_missing: list[str] = []
+    current_unavailable: list[str] = []
+    snapshot_mismatches: list[str] = []
+    snapshot_unavailable: list[str] = []
+    expected_authorities = {path.as_posix() for path in _RECEIPT_AUTHORITIES}
+    unexpected_authorities = sorted(str(key) for key in authorities if key not in expected_authorities)
+    if unexpected_authorities:
+        missing.append("unexpected_authority_keys")
+    valid_snapshot = isinstance(snapshot, str) and bool(re.fullmatch(r"[0-9a-f]{40}", snapshot))
+    clean_snapshot = valid_snapshot and report.get("worktree_dirty") is False
+    object_type = _receipt_git_object_type(root, snapshot) if clean_snapshot else None
+    comparable_snapshot = clean_snapshot and object_type == "commit"
+    if not clean_snapshot:
+        missing.append("clean_report_snapshot")
+    elif object_type is None:
+        snapshot_unavailable.append("snapshot_commit")
+    elif object_type != "commit":
+        snapshot_mismatches.append("snapshot_commit:not_commit")
+    if cold_summary:
+        if not isinstance(replay, dict):
+            missing.append("replay")
+        elif "source_commit" not in replay:
+            missing.append("replay.source_commit")
+        elif replay["source_commit"] != snapshot:
+            snapshot_mismatches.append("replay.source_commit")
+    if not tools:
+        missing.append("recognized_receipt_schema")
+
+    def check_recorded(path: str, digest: Any, changes: list[str]) -> None:
+        valid_digest = isinstance(digest, str) and bool(re.fullmatch(r"[0-9a-f]{64}", digest))
+        if not valid_digest:
+            missing.append(path)
+        old = _receipt_git_blob(root, snapshot, path) if comparable_snapshot else None
+        if comparable_snapshot and old is None:
+            snapshot_unavailable.append(path)
+        elif old is not None and valid_digest and hashlib.sha256(old).hexdigest() != digest:
+            snapshot_mismatches.append(path)
+        verified_binding = old is not None and valid_digest and hashlib.sha256(old).hexdigest() == digest
+        try:
+            current = hashlib.sha256((root / path).read_bytes()).hexdigest()
+        except FileNotFoundError:
+            current_missing.append(path)
+            if verified_binding:
+                changes.append(path)
+            else:
+                current_unavailable.append(path)
+        except OSError:
+            current_unavailable.append(path)
+        else:
+            if verified_binding and current != digest:
+                changes.append(path)
+
+    for path in _RECEIPT_AUTHORITIES:
+        name = path.as_posix()
+        check_recorded(name, authorities.get(name), authority_changes)
+    for key, path in tools:
+        check_recorded(path, recorded_tools.get(key), tool_changes)
+
+    authority_missing = not comparable_snapshot or bool(unexpected_authorities) or any(item in expected_authorities
+                            for item in [*missing, *current_unavailable,
+                                         *snapshot_unavailable, *snapshot_mismatches])
+    tool_missing = not comparable_snapshot or not tools or any(item.startswith("tools/")
+                                    for item in [*missing, *current_unavailable,
+                                                 *snapshot_unavailable, *snapshot_mismatches])
+    authority_status = "changed" if authority_changes else "unverified" if authority_missing else "current"
+    tool_status = "changed" if tool_changes else "unverified" if tool_missing else "current"
+    historical_selected_bindings_status = ("mismatch" if snapshot_mismatches else "unverified"
+                                           if missing or snapshot_unavailable else "verified")
+    # A Git diff identifies candidates, not the historical rg input set or its
+    # checkout bytes; no legacy receipt can prove full corpus freshness.
+    corpus_result = _receipt_corpus_changes(root, snapshot) if comparable_snapshot else None
+    corpus_changes, checked_count, corpus_truncated = corpus_result if corpus_result is not None else (None, None, None)
+    search_corpus_status = "possibly_changed" if corpus_changes else "unverified"
+    overall_status = ("stale" if authority_changes or tool_changes else "unverified")
+    return {
+        "schema": "d0-proof-architecture-receipt-status-v1",
+        "receipt_schema": schema, "snapshot_commit": snapshot,
+        "historical_selected_bindings_status": historical_selected_bindings_status,
+        "authority_status": authority_status, "tool_status": tool_status,
+        "search_corpus_status": search_corpus_status, "overall_status": overall_status,
+        "authority_changes": authority_changes, "tool_changes": tool_changes,
+        "checked_corpus_candidate_count": checked_count,
+        "corpus_candidates_truncated": corpus_truncated,
+        "checked_potential_search_input_change_count": len(corpus_changes) if corpus_changes is not None else None,
+        "checked_potential_search_input_changes": corpus_changes[:20] if corpus_changes is not None else [],
+        "checked_potential_search_input_changes_truncated": len(corpus_changes) > 20 if corpus_changes is not None else None,
+        "missing_or_unverified": missing, "snapshot_mismatches": snapshot_mismatches,
+        "snapshot_unavailable": snapshot_unavailable,
+        "current_missing": current_missing, "current_unavailable": current_unavailable,
+        "unexpected_authority_keys": unexpected_authorities[:20],
+        "unexpected_authority_key_count": len(unexpected_authorities),
+        "boundary": ("Historical selected-bindings status checks the commit type, seven authority hashes "
+                     "and selected tool hashes against the snapshot. Other receipt fields, including "
+                     "test_sha256, Git blob IDs and the full output hash, are not checked. "
+                     "This does not authenticate execution or output. "
+                     "Complete current corpus and followed "
+                     "Git-pin availability are not established by legacy receipts. Git-diff "
+                     "candidates can indicate potential drift but do not prove it. Only up to 128 "
+                     "eligible Git candidates are checked; the displayed list is further limited to 20."),
     }
 
 
@@ -2792,6 +3019,9 @@ def main() -> int:
                    help="resolve claims.csv book/section locators to exact heading candidates")
     sub.add_parser("alias-sources",
                    help="inspect alias target rows and legacy book line locators as candidates")
+    receipt = sub.add_parser("receipt-status",
+                             help="check recorded report inputs against their snapshot and the current checkout")
+    receipt.add_argument("path", help="repository-relative JSON receipt path")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -2800,7 +3030,23 @@ def main() -> int:
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
     root = args.repo_root.resolve()
-    if args.command == "impact" and args.base:
+    if args.command == "receipt-status":
+        relative = pathlib.PurePosixPath(args.path.replace("\\", "/"))
+        if (relative.is_absolute() or ".." in relative.parts or ":" in args.path
+                or not relative.parts or relative.suffix.casefold() != ".json"):
+            parser.error("receipt-status requires a repository-relative JSON path")
+        target = (root / pathlib.Path(*relative.parts)).resolve()
+        if not target.is_relative_to(root) or not target.is_file():
+            parser.error("receipt path is missing or outside the repository")
+        try:
+            report = json.loads(target.read_text(encoding="utf-8-sig"))
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            parser.error(f"cannot read JSON receipt: {exc}")
+        if not isinstance(report, dict):
+            parser.error("receipt JSON must be an object")
+        result = receipt_status(root, report)
+        result["receipt_path"] = relative.as_posix()
+    elif args.command == "impact" and args.base:
         result = run_assembly_impact(root, args.base, args.ref)
     else:
         data = load_dataset(root)

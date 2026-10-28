@@ -37,6 +37,7 @@ import D0.Analysis.MatrixTraceExponentialDerivative
 import D0.Analysis.MidpointQuadrature
 import D0.Analysis.MovingProjectorBookPrice
 import D0.Analysis.MovingProjectorBookPriceDensityBridge
+import D0.Analysis.MovingProjectorVariableParameters
 import D0.Born
 import D0.Bridge.AdlerWeissBridge
 import D0.Bridge.Assumptions.BellissardGapLabel
