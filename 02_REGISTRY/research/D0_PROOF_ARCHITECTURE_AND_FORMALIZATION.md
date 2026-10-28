@@ -12421,6 +12421,17 @@ The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/repor
 has Git-blob content SHA-256 `ee777ec3e417da865a5dab42e2760d581159c88231d177d5a35708d5197f61fa`.
 The full build retains existing linter warnings in other modules.
 
+After removing the new heartbeat override by rearranging the same derivative
+proof, the narrow build and the full `D0.All` build again pass, at Lean source
+digest `7779ff3de82b8b57eaf4ac85bb265302b8b586d3b380c2ce2ff315c46a8d68fe`.
+The [updated build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_variable_no_override.json)
+has content SHA-256 `bb356d78eda00c48626cc6e41314374e1f48e0b342cd9df7149fcfecbf864429`.
+The [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/variable_parameters_declarations_2026-10-28.json)
+has SHA-256 `e96e12682f9df26f1969a3ffe094614313a99f4b8afb67095efe2b37cc9c8673`,
+and records seven declarations including one generated helper, on clean
+published snapshot `d7958e1e93ececb2711e072c01644a8c866b003d`. Their axiom
+union is `Classical.choice`, `Quot.sound` and `propext`.
+
 ### Historical search-receipt status
 
 `python tools/proof_architecture.py --json receipt-status <repository-relative-report.json>`
