@@ -642,3 +642,76 @@ The clean-snapshot [declaration inventory](sources/d0_proof_architecture_formali
 records 41 elaborated declarations at `ae789e27` and the standard axiom union
 `Classical.choice`, `Quot.sound`, and `propext`; the directly applied
 uniqueness theorem retains all three coefficient-sign premises.
+
+### Current #334 source head beyond `eebcb5e` — 28 October 2026
+
+The user-provided `eebcb5e` checkpoint is no longer the current owner head.
+Existing Draft PR [#334](https://github.com/gvakhrushev/d0_15/pull/334) now
+stands at `726192353504a81a9ab2b751f9b6c7866271e75a`, 34 commits and 70
+changed paths later. The exact range is preserved in the
+[source packet](sources/d0_334_post_eeb_delta_2026-10-28/README.md), with all
+70 complete head files, the full patch, ordered commit list, Git blob IDs and
+SHA-256 values. Its source-object verifier confirms the snapshots against
+both pinned commits.
+
+The continuation composes the original retained-history source with its
+all40 geometric pullback and full heat, then preserves two different outcomes
+on their own carriers:
+
+- §7db changes the excluded input from one repeated spatial operator to eight
+  different original full128 connections on the same finite carrier. The
+  complete scale source changes sign and has a scale-critical point in the
+  stated interval. This is one full-source equation, not a minimum, the full
+  40+2 system, or a physically selected GR family.
+- §7dc prices a literal three-stage retained-record append with the complete
+  feedback and internal clock. The price rises on the extended carrier; after
+  embedding the earlier word into the same complete carrier, the bound stays
+  positive. For the incoming generated dust gain, the normalized contrast
+  diverges. This changes the history-growth route only when different
+  durations are admitted alternatives; fixed-duration stationarity and a
+  task requiring another readable record remain separate.
+- The boundary synthesis solves free relative QUERY stationarity on its
+  reflection carrier and obtains a constant return/zero reduced boundary
+  Hessian under its fixed-scene and internal-clock hypotheses. The separate
+  conditional canonical theorem derives the Einstein–scalar Hamiltonian from
+  a strong HDA on a declared local metric class. The native symplectic map,
+  physical QUERY domain, local lapse family and strong HDA are still not
+  derived from the admitted D0 execution. The all-unitary clock estimate
+  strengthens heat control on its homogeneous INTERNAL sector without
+  selecting that sector physically.
+
+The new source range is integrated as **research intake and route evidence**;
+it is not formalized as a Lean theorem. The existing Lean adapter remains the
+separate scalar branch from `c296829f` and does not cover §§7db/7dc, the
+canonical boundary theorem or the full nonlinear Einstein–dust derivation.
+No claim/status or `formal_support` entry was added for uncompiled results.
+
+### Verification of the supplied archive, moving cut, and current delta
+
+The nine-package intake verifier passes for 74 files / 650,121 member bytes,
+but reports `archived_code_executed=false` and
+`zip_archive_bytes_and_sha256=NOT_VERIFIED`. The moving-projector checker
+passes in normal and optimized mode with a nonzero moving-cut control source
+`0.06218198611141448` and maximum local finite-difference error
+`7.01e-12`; the local output differs from its stored result in low-order
+floating values and retains NumPy runtime warnings. It explicitly did not
+replay full42, Lean or CI.
+
+Of the 17 standalone checkers in the post-`eebcb5e` range, 14 ran in both
+normal and optimized mode: all 28 executions exited successfully and each
+pair matched byte-for-byte. Ten checker outputs also match the pinned owner
+JSON exactly. Four outputs retain `PASS` but show numerical-library drift;
+the details and stderr are in the packet's
+[replay report](sources/d0_334_post_eeb_delta_2026-10-28/replay/REPLAY_REPORT.md).
+Three other checkers require PyTorch, which is unavailable locally, so those
+results remain source-pinned rather than independently replayed. The inline
+§7dc checker was extracted only after its embedded SHA-256 matched and both
+normal/optimized runs reproduced the published output hash exactly.
+
+GitHub returned no check/status rows for #334 head `7261923`; no owner CI pass
+is claimed. Before this intake, the latest #402 head was `2f57d930`; its
+[`D0 guards`](https://github.com/gvakhrushev/d0_15/actions/runs/40679513224)
+and [`lean-build`](https://github.com/gvakhrushev/d0_15/actions/runs/40679512981)
+passed. Fresh checks are required after this intake is pushed. `GR_closed=false`, physical admission, source acceptance,
+same-execution selection and independent scientific acceptance all remain
+open.

@@ -12371,3 +12371,24 @@ warnings elsewhere in the import closure. Generated views pass; repository
 validation reports 234 formal-support rows and a 957-module `D0.All` closure
 with zero warnings. The formalization-debt audit remains at its existing
 baseline, five findings.
+
+## #334 source continuation after the `eebcb5e` checkpoint — 28 October 2026
+
+The current #334 owner head is `726192353504a81a9ab2b751f9b6c7866271e75a`,
+34 commits beyond the nine-package/moving-projector checkpoint. The exact
+70-path source range, patch, Git blob inventory, and replay outcomes are
+stored in the [post-checkpoint intake packet](sources/d0_334_post_eeb_delta_2026-10-28/README.md).
+Its positive changing-history scale root (§7db) and positive complete-price
+increment for a literal retained append (§7dc) are both retained with
+their stated scopes. The free-QUERY boundary reduction and conditional HDA
+classification remain mathematical support results whose physical boundary,
+local lapse and task-domain maps are unproved.
+
+This is an intake boundary, not a newly compiled Lean application. The
+existing `ClosedHistoryNonlinearDustBranch` formalizes only the scalar
+algebraic branch from the earlier pinned `c296829f` source; none of the later
+whole-history balance, absolute continuation price, clock-winding bounds, or
+canonical boundary classification is thereby formalized. The current source
+head has no GitHub check rows, and the packet records the four numeric
+replay differences and three PyTorch-limited checkers explicitly. No claim
+coverage or physical acceptance is inferred; `GR_closed=false` remains.
