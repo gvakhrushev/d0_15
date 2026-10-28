@@ -13442,12 +13442,12 @@ historical reviewer, independently accept this C0 unit, or turn the specific
 fixed-readout obstruction into a general refinement no-go or physical
 admission claim.
 
-## Latest #334 source checkpoint at `48500384` — canonical AF source transport through earlier cuts — 28 October 2026
+## Earlier #334 source checkpoint at `48500384` — canonical AF source transport through earlier cuts — 28 October 2026
 
-The existing Draft #334 has since advanced to
+At this earlier checkpoint, Draft #334 was at
 [`48500384e9a25b25a6a0f54911f5af50c2bc1625`](https://github.com/gvakhrushev/d0_15/commit/48500384e9a25b25a6a0f54911f5af50c2bc1625).
-This is the latest owner head checked in this integration. It composes the
-cyclic AF source from §7dl across every earlier canonical cut, resolving that
+This checkpoint composes the cyclic AF source from §7dl across every earlier
+canonical cut, resolving that
 source-composition gap for the same copy-uniform paired profile. For inclusion
 increment `r_i=2k_i`, `m_i=M^r_i`, and
 `delta_i=4(1-c_i^2)`, the exact conditional source map and its normalized
@@ -13547,3 +13547,112 @@ The [cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/
 has SHA-256 `cfb1a63e8b7b995cc6bc6fb6f5e5aa02b9908ec3a4aa1ed3e84ed6c5c2ac0626`.
 The [search comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_cyclic_tower.json)
 has SHA-256 `fab12db976a62737bb13dc53571dfb43677ae298d45db3dec943ce2fe674c96a`.
+
+## Earlier #334 source checkpoint at `d8d4e154` — retained nontrivial prefix source — 28 October 2026
+
+The owner checkpoint at this stage was
+[`d8d4e15488e483992fa63d6acc5d8053c2752ef5`](https://github.com/gvakhrushev/d0_15/commit/d8d4e15488e483992fa63d6acc5d8053c2752ef5),
+adding §7dm to the existing paid-source memo (blob
+`c79e6019579f716c2935aee8de9314d0607b3a1a`). It extends the §7dl theorem and
+the earlier-cut source map to an actual nontrivial finite prefix on the same
+canonical AF carrier. It retains the prefix's true centre-resolved returns
+instead of assuming a stationary or scalar past. With
+`Delta_a=K_(0,a)-pi_a K_xi`, `sum_a Delta_a=0`, and `rho_j` the product of
+the exact contraction eigenvalues, the retained components are
+
+```text
+K_(j,a) = s_j (pi_a K_xi + rho_j Delta_a)
+delta K_m = (s_m/C_j) (Ybar_j K_xi + rho_(j-1) Z_j)
+Z_j      = sum_a Y_(j,a) Delta_a
+```
+
+Thus a source with zero local Hermitian part can acquire a real source from
+its actual matrix past. For the emitted copied-port profile the full
+normalized derivative retains `rho_(j-1) Z_j K_xi^-1`; omitting that term is
+not valid. The owner bounds accumulated guard/phase history debt by
+`<7.653 B_xi/Lambda`, gives varying body rows a finite paid identity-loop
+budget of at most `2 B_xi/Lambda`, and retains the prefix's own
+`C_xi/Lambda` and the actual all-mode heat term. These are bounds in its
+declared regular/raw copied-port control norm.
+
+The decisive native prefix is two actual SourceI calls on all 52 columns of
+`H(A2) tensor Spin4`, retaining the oldRIGHT identity factor 2. It gives
+`K_xi=diag(2p^2 I4+p^3 L_i, p I4+p^2 L_i)` with an 8-dimensional unknown
+input and `K_xi^*K_xi > (1/2)I`. A new phase row is locally skew, but the
+actual retained-history source is `DJ/w=0.00378462083186945` after the first
+new loop; subsequent values are `-0.000208408225202434` and
+`-5.81125233658e-12` after the second and eighth loops. The separate
+non-normal 3-column control checks all 18 matrix-unit insertions. This is a
+source counterexample at literal gate tangents, not proof that continuous
+native pulses are physically admitted.
+
+I extracted and replayed the exact embedded §7dm checker from the pinned
+owner source in ordinary, optimized and repeated ordinary Python, with its
+AF and native-execution input bytes checked against their recorded SHA-256
+pins. All three outputs are byte-identical and match the embedded 133-check
+receipt exactly; the output SHA-256 is
+`3733ea78fa637aafda3e24727881221bcc00d7d297ea0d9f33ea96b2b45cf397`, and
+all three runs have empty stderr. The checker SHA-256 is
+`a556695f88435f5f72b4a05067a4026691932ce62442da1bb53380702ec32379`.
+It consumes, but does not rerun or recount, the incoming 519-check tower
+source result. The exact
+[§7dm source and embedded checker/receipt](https://github.com/gvakhrushev/d0_15/blob/d8d4e15488e483992fa63d6acc5d8053c2752ef5/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md#7dm-retain-a-nontrivial-original-prefix-in-the-owned-canonical-af-tower)
+is pinned to this owner head.
+
+This substitutes the missing nontrivial-prefix source map for the named
+canonical copied-port profile. Physical admission of that profile, the
+task/QUERY law, completeness against other `X_N` directions, and arbitrary
+old-record couplings remain open. The result adds no action or physical
+selector, runs no Lean or CI, and does not promote assembly acceptance.
+`GR_closed=false`.
+
+## Latest #334 result at `9f5b757f` — literal binary AF word controls — 28 October 2026
+
+Draft #334 advanced to
+[`9f5b757f699d7310ea69c0c889037f614533b4f7`](https://github.com/gvakhrushev/d0_15/commit/9f5b757f699d7310ea69c0c889037f614533b4f7),
+adding a standalone binary-word generator and result. It consumes input commit
+`48500384e9a25b25a6a0f54911f5af50c2bc1625` from the earlier canonical-loop
+source branch; it is not an execution of the later retained-prefix correction
+in §7dm. The generator emits three deterministic `native-binary-rle-v1`
+programs using only the original `G`, `CX`, and addressed `SourceI` primitives.
+Each has a common paid length of `107530502` stages and touches neither the six
+right bits nor `oldRIGHT`. The common inventory is `107529216 G`, `1154 CX`,
+and `132 SourceI` stages. The outputs retain the `65536` binary modes against
+`33448` original regular modes; the extra `32088` are not erased.
+
+The endpoint control checks all 512 native address/Spin columns and all 16
+canonical input columns, with maximum errors `4.33e-15` and `7.77e-16`. The
+finite-source compiled normalized contrast is `0.999586986058`, compared with
+the ideal `0.999842426195`; the actual difference `2.5544e-4` is within the
+recorded endpoint budget `2.7760e-4`. A separate exact native pair has
+normalized contrast `0.999842506721` and an interval-certified absolute error
+below `0.0002`. Its full-clock heat bound is retained as `10^(-N+8)` for
+`N=107530502`; the large matrix is never materialized, and repeated primitive
+runs are not individually iterated.
+
+I replayed the exact owner checker in normal, optimized, and repeated normal
+Python. All 12,202 checks pass; the parsed output matches the owner result
+except for the environment field. Stdout SHA-256 is
+`e8d15fc5753f829cf1df3097191520f3afb725344bd59f1bb85c29c2244737bb`. All
+three RLE files match byte-for-byte across runs. The owner recorded Python
+`3.13.5` / NumPy `2.3.5`; this replay used Python `3.9.6` / NumPy `2.0.2`.
+Each run produced the same 485-byte NumPy RuntimeWarning output at the complete
+endpoint orthogonality multiplication; exit status, 12,202 checks and numeric
+receipt fields matched. The local
+[replay manifest and RLE words](sources/d0_proof_architecture_formalization_2026-10-24/reports/canonical_binary_af_words_2026-10-28/replay_manifest.json)
+has SHA-256 `77fadea12a3170eb3910a4a05c1491f4f50ee7d23ce30f44789b7323e33da89f`.
+
+The exact
+[checker](https://github.com/gvakhrushev/d0_15/blob/9f5b757f699d7310ea69c0c889037f614533b4f7/02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/check_binary_af.py)
+has SHA-256 `07c40e179d0446c52650e7a148c82ef33cd03d0349b0875b5b6af5acd7d9f3a5`;
+the [owner result](https://github.com/gvakhrushev/d0_15/blob/9f5b757f699d7310ea69c0c889037f614533b4f7/02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json)
+has SHA-256 `bc2addf30982c3c8ba219358d63f7913485c6877763c3e65dd824766b3620f1a`.
+The RLE artifacts are [centre](sources/d0_proof_architecture_formalization_2026-10-24/reports/canonical_binary_af_words_2026-10-28/centre_word.rle.json),
+[minus](sources/d0_proof_architecture_formalization_2026-10-24/reports/canonical_binary_af_words_2026-10-28/minus_word.rle.json),
+and [plus](sources/d0_proof_architecture_formalization_2026-10-24/reports/canonical_binary_af_words_2026-10-28/plus_word.rle.json).
+
+This is a finite native-grammar construction and endpoint/price control. It
+does not establish admission of the physical binary interface, execution of
+the physical input preparation, all raw-gate source faults, or the full
+intermediate future-test domain. `Lean_or_CI_run=false`; no physical selection
+or GR closure follows. `GR_closed=false` remains unchanged.

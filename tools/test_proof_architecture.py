@@ -3559,6 +3559,98 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("physical AF actuation", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
 
+    def test_nontrivial_prefix_source_is_retrievable_at_latest_owner_head(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "nontrivial-canonical-prefix-source-correction"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed latest prefix source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(
+                    status["expected_commit"],
+                    "d8d4e15488e483992fa63d6acc5d8053c2752ef5",
+                )
+                self.assertEqual(
+                    status["expected_blob"], "c79e6019579f716c2935aee8de9314d0607b3a1a"
+                )
+        self.assertIn("matrix-past source term", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
+    def test_binary_af_source_and_result_are_pinned_to_latest_owner_head(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "canonical-binary-af-endpoint-and-finite-source"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed binary AF source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(
+                    status["expected_commit"],
+                    "9f5b757f699d7310ea69c0c889037f614533b4f7",
+                )
+                self.assertEqual(status["expected_blob"], source["blob"])
+        self.assertIn("physical binary-interface admission", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
+    def test_binary_af_rle_manifest_binds_all_emitted_word_files(self) -> None:
+        word_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports/"
+            / "canonical_binary_af_words_2026-10-28"
+        )
+        manifest = json.loads((word_dir / "replay_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["schema"], "d0-canonical-binary-af-actuation-replay-v1")
+        self.assertEqual(manifest["owner"]["commit"], "9f5b757f699d7310ea69c0c889037f614533b4f7")
+        self.assertEqual(manifest["owner"]["checker_sha256"], "07c40e179d0446c52650e7a148c82ef33cd03d0349b0875b5b6af5acd7d9f3a5")
+        self.assertEqual(manifest["owner"]["result_sha256"], "bc2addf30982c3c8ba219358d63f7913485c6877763c3e65dd824766b3620f1a")
+        self.assertTrue(manifest["replay"]["stdout_byte_identical_across_modes"])
+        self.assertTrue(manifest["replay"]["rle_files_identical_across_modes"])
+        self.assertTrue(manifest["replay"]["matches_owner_result_except_environment"])
+        self.assertEqual(manifest["replay"]["stderr_bytes"], 485)
+        self.assertEqual(manifest["result"]["checks"], 12202)
+        self.assertFalse(manifest["result"]["physical_binary_interface_admission_proved"])
+        self.assertFalse(manifest["result"]["physical_input_preparation_executed"])
+        for row in manifest["generated_words"]:
+            data = (word_dir / row["path"]).read_bytes()
+            self.assertEqual(hashlib.sha256(data).hexdigest(), row["sha256"])
+            self.assertEqual(len(data), row["bytes"])
+            word = json.loads(data)
+            self.assertEqual(word["format"], "native-binary-rle-v1")
+            self.assertEqual(word["full_binary_carrier_bits"], 16)
+            self.assertEqual(word["stage_count"], 107530502)
+            self.assertEqual(len(word["instructions"]), row["rle_instruction_records"])
+            self.assertEqual(
+                sum(int(instruction["repeat"]) for instruction in word["instructions"]),
+                word["stage_count"],
+            )
+            self.assertTrue(all(
+                instruction["op"] in {"G", "CX", "SourceI"}
+                and not (set(instruction["wires"]) & (set(range(7, 13)) | {15}))
+                for instruction in word["instructions"]
+            ))
+
     def test_latest_canonical_tower_reports_are_pinned_to_the_clean_source_snapshot(self) -> None:
         report_dir = (
             proof.ROOT

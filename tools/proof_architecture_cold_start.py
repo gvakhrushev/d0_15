@@ -960,6 +960,70 @@ CASES: list[dict[str, Any]] = [
             "parked past, Lean formalization, or GR closure; GR_closed=false."
         ),
     },
+    {
+        "id": "nontrivial-canonical-prefix-source-correction",
+        "queries": [
+            "7dm retain nontrivial original prefix canonical AF old cut source correction DJ/w 0.00378462083186945",
+            "K_xi Delta_a Z_j full matrix history source sum Y_(j,a) Delta retained prefix",
+            "guard history debt 7.653 Bxi Lambda 133 checks two SourceI 52 columns",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0, 1, 2],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "commit": "d8d4e15488e483992fa63d6acc5d8053c2752ef5",
+                "blob": "c79e6019579f716c2935aee8de9314d0607b3a1a",
+                "scope_query_indexes": [0],
+            },
+        ],
+        "scope_review": (
+            "The pinned #334 §7dm result retains the actual nontrivial prefix and its "
+            "matrix-past source term for the declared canonical copied-port profile. "
+            "It proves neither physical admission of that profile nor completeness over "
+            "all X_N variations; no Lean/CI run or selector is added, and GR_closed=false."
+        ),
+    },
+    {
+        "id": "canonical-binary-af-endpoint-and-finite-source",
+        "queries": [
+            "binary AF common inventory G CX SourceI 107529216 1154 132 original regular modes 33448 65536",
+            "Literal Golden CX SourceI synthesis canonical AF loop endpoint run-length encoded ordinary primitive words high-precision powers",
+            "complete compiled endpoint orthogonality 512 columns binary RLE native words",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0, 1, 2],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/check_binary_af.py",
+                "commit": "9f5b757f699d7310ea69c0c889037f614533b4f7",
+                "blob": "dafb228c94468ff83b73f62e0d5792eba832b948",
+                "scope_query_indexes": [1],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json",
+                "commit": "9f5b757f699d7310ea69c0c889037f614533b4f7",
+                "blob": "52a9dd556782263ca64b9210c2a9d32cb5df045e",
+                "scope_query_indexes": [0],
+            },
+        ],
+        "scope_review": (
+            "The pinned #334 result emits RLE words from the declared binary G/CX/SourceI "
+            "grammar and checks endpoint and finite-price controls. It does not prove physical "
+            "binary-interface admission, physical input preparation, all raw-gate source "
+            "faults, or the full intermediate future-test domain; GR_closed=false."
+        ),
+    },
 ]
 
 
