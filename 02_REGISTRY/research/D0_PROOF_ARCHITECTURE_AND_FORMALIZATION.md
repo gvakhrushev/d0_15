@@ -14058,3 +14058,81 @@ hypothesis. The same-execution native operation, actual canonical preparation,
 full Book price/Info/work, field/source transport, and physical refinement
 remain open. No Lean theorem or repository CI result is claimed for this
 checker. `GR_closed=false`.
+
+## #334 continuation at `b728d852` — archive-preserving native seed and priced scalar/nonscalar futures
+
+The subsequent same-owner application is recorded in the [updated #334
+matched-preparation and paid-source memo at `b728d852`](https://github.com/gvakhrushev/d0_15/blob/b728d85246c6bcf75b84dadaef294e91f5f50b15/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md),
+its [existing task checkpoint at the same head](https://github.com/gvakhrushev/d0_15/blob/b728d85246c6bcf75b84dadaef294e91f5f50b15/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md),
+and the [canonical archive/stationary-family memo](https://github.com/gvakhrushev/d0_15/blob/b728d85246c6bcf75b84dadaef294e91f5f50b15/02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_STATIONARY_FAMILY_2026_10_28.md).
+This remains a continuation of #334, not another task or a replacement for
+the canonical AF family. The binary and AF carriers retain their distinct
+preparations and primitive interfaces.
+
+The checker changes the earlier five-call binary seed from `CX(6,0)` to
+`CX(6,12)` and retains the four paid `SourceI(0,13,14)` calls. On the same
+16-wire boundary it preserves the original complete `A_old` archive,
+including the Spin and immutable oldRIGHT factors, on every active column.
+It leaves all input columns, the 65,536-state thermal carrier and its 1,024
+spectator multiplicity in the calculation; the actual input rank remains 16.
+The preparation is still the declared binary boundary, not the canonical AF
+GNS preparation or a retroactive repair of a recorded history.
+
+For the paid 26-call QUERY on existing right bit 11, the owner supplies two
+43-call words `A` and `B`, each with inventory `25 CX + 4 G + 14 SourceI`.
+Their generated prefixes, cuts, inverse/routing occurrences and full
+1197670400 paired-Hodge modes are included. On `A`, the proved scalar-future
+map makes the return source zero on all five actual seed occurrences and
+retains positive gain
+`w_A = 8*zeta*c^2/(1-zeta+zeta*c^2)`. Each of the other 38 independently
+varied future occurrences has local dual source `16g`; their exact
+independent-stage maximum norm is `608g`, not zero. A one-sided QUERY
+rotation has source `16g`, while its mechanically conjugated QUERY has
+`32g`. These norms use the declared maximum operator norm on the independent
+local matrix controls; they are not identified with the physical `X_N` norm.
+
+The same-inventory word `B` is fully stationary on that fixed endpoint chart:
+both its heat and return cotangents vanish. It changes the all-input QUERY
+effect from `p^2` for `A` to zero for `B`, so it cannot replace a task that
+requires the first report. The full 43-stage heat traces agree exactly, and
+the rigorously bounded complete `H+J` difference is
+`B_A-B_B in [7.204226189964287779304299645565884614332e-6,
+7.204226189964287779304299645565884614335e-6]`. This is a concrete
+same-execution price contrast, not a minimum theorem over all programmes or
+a selector for the report law.
+
+The new non-scalar future theorem is also applied to a separate literal
+41-call word `C`, with 36 future occurrences. Its effect is genuinely
+non-scalar, `M=diag((2p^6-1)^2 I8,I8)`, and its factored cold product is
+proved on the entire old input for prefix variations not touching the new
+QUERY bit. The commutator `[M,Q_0]=0` therefore removes the five old-prefix
+return-source rows while preserving positive true future gain. The 36 new
+future rows remain: each has dual `16|g_C|`, with full independent-stage
+dual `576|g_C|`. The clock and heat use the actual `N=41` word and all
+1141964800 paired-Hodge modes. The explicit repeated-`CX` reentry control
+shows why the cold-product factorization cannot be assumed for arbitrary
+continuations. This binary application consumes the canonical AF theorem's
+commuting-block criterion; it does not supply the AF family's separate
+physical gate compiler.
+
+I extracted the exact embedded checker and receipt from the `b728d852`
+owner memo and replayed both ordinary and optimized runs under Python 3.9.6,
+SymPy 1.14.0 and mpmath 1.3.0. All 434 explicit checks pass; both stdout
+streams are byte-identical to each other and to the published JSON
+(SHA-256 `c1287748d2736c75959454ba716da5fab72e793848597e328322ed4e9e0790dd`),
+and both stderr files are empty. The six high-precision matrix finite
+differences have maximum source error below `2.34e-30`; they independently
+check selected derivative signs, while exact algebraic identities and
+outward price intervals carry the stated matrix and price conclusions. The
+checker pins its five frozen source inputs; the exact bytes, environment,
+source blobs and comparison are retained in
+[`archive_preserving_binary_query_replay_2026-10-28_b728d`](sources/d0_proof_architecture_formalization_2026-10-24/reports/archive_preserving_binary_query_replay_2026-10-28_b728d/).
+
+This removes the specified archive-preservation and scalar-/nonscalar-future
+premises for these finite mathematical words. It still does not bind the
+reporter occurrences to a physical field/task/control graph; those rows remain
+equations until their actual dependence is derived. A physical same-initial
+autonomous controller, selected full Cost-Info, all-42 source map, geometry
+transport and common GR refinement remain open. The words do not establish
+continuous native gates or physical admission. No Lean or CI run is claimed
+for this finite checker, and `GR_closed=false`.

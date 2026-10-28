@@ -3924,6 +3924,109 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("field-equation selection", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
 
+    def test_archive_preserving_binary_query_replay_is_exact_and_scoped(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "archive-preserving-binary-seed-full-query-source"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed archive-preserving binary source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports/"
+            / "archive_preserving_binary_query_replay_2026-10-28_b728"
+        )
+        manifest_bytes = (report_dir / "replay_manifest.json").read_bytes()
+        manifest = json.loads(manifest_bytes)
+        checker_bytes = (report_dir / "checker.py").read_bytes()
+        local_bytes = (report_dir / "local_replay.json").read_bytes()
+        optimized_bytes = (report_dir / "optimized_replay.json").read_bytes()
+        published_bytes = (report_dir / "published_result.json").read_bytes()
+        normal_stderr = (report_dir / "stderr_normal.log").read_bytes()
+        optimized_stderr = (report_dir / "stderr_optimized.log").read_bytes()
+        local = json.loads(local_bytes)
+        published = json.loads(published_bytes)
+
+        self.assertEqual(manifest["schema"], "d0-archive-preserving-binary-query-replay-v1")
+        self.assertEqual(
+            manifest["upstream_head"],
+            "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+        )
+        self.assertEqual(
+            manifest["sources"]["owner_memo"]["blob"],
+            "a5fc2aafd237ab41a315633227d44153d144e27a",
+        )
+        self.assertEqual(
+            manifest["sources"]["task_checkpoint"]["blob"],
+            "ace7b08c708cbdda03a27faf8610edbb8f5de37f",
+        )
+        self.assertEqual(
+            manifest["sources"]["canonical_archive_memo"]["blob"],
+            "6e14710cd0bf4fc25cb3084a78e83c297201077c",
+        )
+        self.assertEqual(
+            hashlib.sha256(checker_bytes).hexdigest(),
+            "764ffcab31407770f56a843c5b53e9ee0da30f95d01632ea05e50ce67be21b82",
+        )
+        self.assertEqual(hashlib.sha256(local_bytes).hexdigest(), manifest["execution"]["run_stdout_sha256"])
+        self.assertEqual(hashlib.sha256(published_bytes).hexdigest(), manifest["execution"]["published_result_sha256"])
+        self.assertEqual(local_bytes, optimized_bytes)
+        self.assertEqual(local_bytes, published_bytes)
+        self.assertEqual(manifest["execution"]["checks"], 434)
+        self.assertTrue(manifest["execution"]["ordinary_optimized_stdout_byte_identical"])
+        self.assertTrue(manifest["execution"]["ordinary_and_optimized_stdout_match_published_receipt"])
+        self.assertEqual(local["status"], "PASS")
+        self.assertEqual(local["checks"], 434)
+        self.assertEqual(local["runtime"], {
+            "python": "3.9.6", "sympy": "1.14.0", "mpmath": "1.3.0",
+        })
+        self.assertEqual(local["checker_sha256"], hashlib.sha256(checker_bytes).hexdigest())
+        self.assertEqual(published["checks"], 434)
+        self.assertEqual(len(normal_stderr), 0)
+        self.assertEqual(len(optimized_stderr), 0)
+        self.assertEqual(manifest["execution"]["normal_stderr_bytes"], 0)
+        self.assertEqual(manifest["execution"]["optimized_stderr_bytes"], 0)
+
+        self.assertEqual(len(local["literal_words"]["A"]), 43)
+        self.assertEqual(len(local["literal_words"]["B"]), 43)
+        self.assertEqual(len(local["literal_words"]["C"]), 41)
+        self.assertTrue(local["archive"]["same_original_A0_and_full_Spin_oldRIGHT_algebra"])
+        self.assertEqual(local["price43"]["full_modes"], 1197670400)
+        self.assertEqual(local["price43"]["A_minus_B_interval"], manifest["selected_results"]["A_minus_B_full_price_interval"])
+        self.assertTrue(local["source43"]["seed_five_occurrences_exact_zero"])
+        self.assertEqual(sum(stage["operator_norm_dual_over_g"] for stage in local["source43"]["A_all_stages"]), 608)
+        self.assertEqual(local["source43"]["A_nonzero_real_components"], 68)
+        self.assertTrue(local["nonscalar_future"]["actual_cold_product"])
+        self.assertTrue(local["nonscalar_future"]["commutes_with_return_projector"])
+        self.assertTrue(local["nonscalar_future"]["all_five_prefix_sources_exact_zero"])
+        self.assertEqual(local["nonscalar_future"]["full_modes"], 1141964800)
+        self.assertEqual(sum(stage["operator_norm_dual_over_g"] for stage in local["nonscalar_future"]["all_stages"]), 576)
+        self.assertFalse(local["physical_limits"]["GR_closed"])
+        self.assertTrue(local["physical_limits"]["selected_full_Cost_Info_not_identified"])
+        self.assertTrue(local["physical_limits"]["single_autonomous_controller_not_proved"])
+        self.assertFalse(manifest["execution"]["GR_closed"])
+        self.assertFalse(manifest["execution"]["Lean_or_CI_run"])
+        self.assertFalse(manifest["scope"]["physical_admission_proved"])
+        self.assertFalse(manifest["scope"]["selected_full_Cost_Info_identified"])
+        self.assertFalse(manifest["scope"]["all42_source_map_proved"])
+        self.assertIn("field/task/control pullback", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
     def test_canonical_archive_law_sources_keep_exact_owner_pins_and_scope(self) -> None:
         case = next(
             item for item in cold_start.CASES

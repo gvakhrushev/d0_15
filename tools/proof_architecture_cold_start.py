@@ -1220,6 +1220,61 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "archive-preserving-binary-seed-full-query-source",
+        "queries": [
+            "archive-preserving seed CX(6,12) original A0 archive complete Spin oldRIGHT 16-wire boundary rank16",
+            "43-call words A B inventory 25 CX 4 G 14 SourceI full 65536 carrier paired Hodge modes",
+            "scalar future all five seed occurrence sources zero positive gain 38 future occurrence sources 16g dual 608g",
+            "A report effect p squared B zero same inventory full H+J price gap 7.2042261899642877793",
+            "nonscalar future M diag (2p6-1)^2 I8 I8 cold product commutes Q0 prefix sources zero",
+            "literal 41-call C 36 future occurrences local dual 16 gC full independent dual 576 gC true N41 full price",
+            "native reentry countercontrol repeated CX full corner I16 cold product diag I8 0 arbitrary continuation",
+            "434 explicit checks PASS checker SHA256 published receipt SHA256 Python 3.9.6 SymPy 1.14.0 mpmath 1.3.0",
+            "reporter controls actual field task control graph physical X_N selected full Cost-Info all42 source map GR_closed false",
+            "same #334 existing task checkpoint no new research task canonical AF nonscalar theorem preserved",
+            "canonical archive stationary family AF proof and native binary actuation distinct primitive interfaces",
+            "archive-preserving-binary-query-replay-2026-10-28-b728 exact stdout stderr source blobs replay manifest",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+            "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+            "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_STATIONARY_FAMILY_2026_10_28.md",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/archive_preserving_binary_query_replay_2026-10-28_b728/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/archive_preserving_binary_query_replay_2026-10-28_b728/checker.py",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/archive_preserving_binary_query_replay_2026-10-28_b728/local_replay.json",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": list(range(12)),
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+                "blob": "a5fc2aafd237ab41a315633227d44153d144e27a",
+                "scope_query_indexes": [2],
+            },
+        ],
+        "scope_review": (
+            "The pinned b728d852 continuation changes the binary seed placement to CX(6,12), "
+            "preserving the original A0 archive and full Spin/oldRIGHT algebra on the stated "
+            "16-wire boundary. For the literal 43-call A/B pair, the paid QUERY is on right11; "
+            "A has zero return source on its five actual seed occurrences and positive gain, "
+            "but its 38 future occurrences have nonzero local source and exact independent "
+            "stage-max dual 608g. Fully stationary B changes the all-input report effect from "
+            "p^2 to zero and is not a substitute for the required report; the exact complete "
+            "H+J price gap is retained. A separate literal 41-call word applies the incoming "
+            "nonscalar commuting-block criterion under a proved cold-product factorization: "
+            "the old prefix rows vanish while all 36 future occurrence sources remain. The "
+            "reentry control blocks extension to arbitrary futures. Exact checker and receipt "
+            "replay 434/434 in ordinary and optimized Python and match published bytes. This "
+            "does not derive the field/task/control pullback, physical X_N norm, autonomous "
+            "controller, selected full Cost-Info, all42 map, continuous gates, or GR refinement; "
+            "no Lean/CI or physical admission is claimed, and GR_closed=false."
+        ),
+    },
+    {
         "id": "canonical-archive-law-and-variation-domain",
         "queries": [
             "canonical archive law compatibility variation domain full old effect relative commutant",

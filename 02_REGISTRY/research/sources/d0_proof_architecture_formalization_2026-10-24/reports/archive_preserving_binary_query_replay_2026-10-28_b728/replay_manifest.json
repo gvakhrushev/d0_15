@@ -1,0 +1,152 @@
+{
+  "schema": "d0-archive-preserving-binary-query-replay-v1",
+  "upstream_head": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+  "upstream_pr": 334,
+  "sources": {
+    "owner_memo": {
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "a5fc2aafd237ab41a315633227d44153d144e27a",
+      "sha256": "28e002c3258aecf1446142228444b894e37bbb4ce5ab118d4fabb613679dddff"
+    },
+    "task_checkpoint": {
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "blob": "ace7b08c708cbdda03a27faf8610edbb8f5de37f",
+      "sha256": "8af8aa0aa4ea0ef3ad79b1e2bad7f021785864bc27fb298a32db4fb4cbccff5b"
+    },
+    "canonical_archive_memo": {
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "path": "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_STATIONARY_FAMILY_2026_10_28.md",
+      "blob": "6e14710cd0bf4fc25cb3084a78e83c297201077c",
+      "sha256": "75355d889f94a13f4019d762168440573a91408fc76134858a14739f4edbca96"
+    },
+    "embedded_checker": {
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "tag": "7dq ARCHIVE SEED QUERY CHECKER",
+      "sha256": "764ffcab31407770f56a843c5b53e9ee0da30f95d01632ea05e50ce67be21b82",
+      "bytes": 20817
+    },
+    "published_result": {
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "tag": "7dq ARCHIVE SEED QUERY RECEIPT",
+      "sha256": "c1287748d2736c75959454ba716da5fab72e793848597e328322ed4e9e0790dd",
+      "bytes": 48531
+    }
+  },
+  "input_pins": [
+    {
+      "name": "native_stationary_seed",
+      "path": "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py",
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "blob": "789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b",
+      "sha256": "9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120"
+    },
+    {
+      "name": "clock_winding_proof",
+      "path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    },
+    {
+      "name": "task_faithful_source_checker",
+      "path": "02_REGISTRY/research/sources/d0_task_faithful_source_2026-10-28/check_task_source.py",
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "blob": "0947a2b924307e567d4426755a2ec0d51b5f8396",
+      "sha256": "ac1b5af37e848782060b8f686852729d401d7b48d7c1f7bff459075d59f0f180"
+    },
+    {
+      "name": "canonical_stationary_checker",
+      "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/check_canonical_seed.py",
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "blob": "49d89fa52015c55e7fb0b31dbdef6e158b552e1d",
+      "sha256": "21744ce3ea2e55dbd48a74393fd627b209d49b391e9367330858c519eab6ca94"
+    },
+    {
+      "name": "canonical_stationary_proof",
+      "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md",
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "blob": "f8675130936e45d9718781d38ef5b762ebaf0eba",
+      "sha256": "fe4b8e9033098ced52299fbc0481ab2ddecceed69c6f4392988803ab0abfa005"
+    },
+    {
+      "name": "embedded_prior_full_heat_receipt",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "tag": "7do PAID BINARY INPUT RECEIPT",
+      "sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba"
+    },
+    {
+      "name": "embedded_prior_archive_source_checker",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "tag": "7dp PAID ARCHIVE SOURCE CHECKER",
+      "sha256": "72edd8c55ecfedd103602e9a0af969325d4720b242ad86649c4c877a2f787b66"
+    }
+  ],
+  "execution": {
+    "status": "PASS",
+    "checks": 434,
+    "environment": {
+      "python": "3.9.6",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0"
+    },
+    "checker_sha256_matches_embedded_source": true,
+    "ordinary_optimized_stdout_byte_identical": true,
+    "ordinary_and_optimized_stdout_match_published_receipt": true,
+    "run_stdout_sha256": "c1287748d2736c75959454ba716da5fab72e793848597e328322ed4e9e0790dd",
+    "run_stdout_bytes": 48531,
+    "published_result_sha256": "c1287748d2736c75959454ba716da5fab72e793848597e328322ed4e9e0790dd",
+    "normal_stderr_bytes": 0,
+    "optimized_stderr_bytes": 0,
+    "normal_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "optimized_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GR_closed": false,
+    "Lean_or_CI_run": false
+  },
+  "selected_results": {
+    "seed_preserves_original_A0_and_full_Spin_oldRIGHT_algebra": true,
+    "all_input_columns_retained": true,
+    "thermal_carrier_dimension": 65536,
+    "thermal_spectators": 1024,
+    "input_rank": 16,
+    "A_B_inventory": {
+      "CX": 25,
+      "G": 4,
+      "SourceI": 14
+    },
+    "A_report_effect": "p^2",
+    "B_report_effect": "0",
+    "A_and_B_full_heat_equal": true,
+    "A_minus_B_full_price_interval": [
+      "0.000007204226189964287779304299645565884614332",
+      "0.000007204226189964287779304299645565884614335"
+    ],
+    "A_seed_occurrences_exact_zero": true,
+    "A_future_occurrences": 38,
+    "A_future_local_dual_over_g": 16,
+    "A_full_independent_stage_dual_over_g": 608,
+    "B_all_546_real_axes_zero": true,
+    "C_total_calls": 41,
+    "C_future_occurrences": 36,
+    "C_actual_nonscalar_cold_product": true,
+    "C_prefix_return_rows_zero": true,
+    "C_future_local_dual_over_abs_g": 16,
+    "C_full_independent_stage_dual_over_abs_g": 576,
+    "C_full_modes": 1141964800
+  },
+  "scope": {
+    "finite_word_matrix_checks_only": true,
+    "continuous_native_gate_claim": false,
+    "physical_admission_proved": false,
+    "physical_X_N_norm_identified": false,
+    "single_autonomous_controller_proved": false,
+    "selected_full_Cost_Info_identified": false,
+    "all42_source_map_proved": false,
+    "GR_closed": false
+  }
+}
