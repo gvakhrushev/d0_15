@@ -1,7 +1,7 @@
 # D0 chat results: verified source intake and application boundaries
 
 Source owner: existing research [PR #334](https://github.com/gvakhrushev/d0_15/pull/334),
-latest source checkpoint reviewed here [`5fe5203da2439d325dc9ef70f52c1111822fc22b`](https://github.com/gvakhrushev/d0_15/tree/5fe5203da2439d325dc9ef70f52c1111822fc22b).
+latest source checkpoint integrated here [`22e729996b70a699710a2d1120a0caa7a08decf8`](https://github.com/gvakhrushev/d0_15/tree/22e729996b70a699710a2d1120a0caa7a08decf8).
 This is an intake into the existing proof-architecture execution #402, not a
 new scientific owner, claim status, physical selector, or merge of #334.
 The full archive was published in upstream commit
@@ -9,8 +9,9 @@ The full archive was published in upstream commit
 in `eebcb5e467742df3e9cf7fa9702042d7294aa742`. Subsequent checkpoints
 `c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`,
 `c80d3dd2a917bbb2db2e2b1ab61d5216877c05e6`, and the current reviewed
-`172876cdf38bfce6f87fdd4a059d524b60c10eb9` and
-`5fe5203da2439d325dc9ef70f52c1111822fc22b` are separately pinned below.
+`172876cdf38bfce6f87fdd4a059d524b60c10eb9`,
+`5fe5203da2439d325dc9ef70f52c1111822fc22b`, and
+`22e729996b70a699710a2d1120a0caa7a08decf8` are separately pinned below.
 
 The nine packages below are preserved as 74 individually readable UTF-8 files
 (650,121 bytes) under [the source intake](sources/d0_chat_intake_2026-10-28/README.md),
@@ -310,3 +311,53 @@ all 32 columns and the two positive source halves. No original full128,
 all42, physical-admission, same-task, Lean, CI, or GR-closure result is claimed.
 The remaining substitution is the actual allowed task/control/scene/input
 variation and its complete source, field map and gain. `GR_closed=false`.
+
+## Full-clock source and final composition through #334 head `22e72999`
+
+The five commits after `5fe5203d` are integrated in the
+[final-composition source packet](sources/d0_334_final_composition_delta_2026-10-28/README.md).
+It pins all 31 changed files (248,546 bytes), the ordered upstream commit
+range, SHA-256 values and Git blob IDs. Its manifest SHA-256 is
+`81ca9ca6d07ca1101924c1c29be41c2ab4adbb447f797e22a02e47499b443d69`.
+
+The all-unitary full-clock estimate preserves the entire heat trace and both
+Hodge grades. Under its fixed homogeneous-scene and beta hypotheses, it
+supplies first- and second-source bounds without assuming reflection endpoints.
+Its actual geometric transfer still needs the same-execution field lift and
+gain; changing scenes, beta, dimensions, costs or Gram operators brings their
+own sources. The final synthesis composes this bound with the generated-cut
+source and retains the clock and preparation terms.
+
+The final composition also sharpens the surviving negative results. Solving
+the independent QUERY equation on the complete reflection orbit makes the
+reduced return constant, and under its additional stagewise INTERNAL/fixed
+scene hypotheses makes the full reduced source and boundary Schur block zero.
+This rules out that free-QUERY elimination route as a source of a nonzero
+geometric equation. It does not show that the whole orbit is physically
+admissible. Separate exact controls retain the nonzero boundary moment,
+failure of arbitrary independent source weighting to be closed, and
+long-range interaction through retained history. The latter is a no-go only
+for the stated bounded-window gate-only elimination, not for spatially local
+dynamics with retained state.
+
+For the new archive-phase route, Hamiltonian descent has an exact Fourier
+support criterion. Its eight-stage native example fails off the real base
+point, while positive examples remain. The mathematical phase directions are
+not thereby admitted native operations.
+
+The seven pinned checkers pass in ordinary and optimized modes with
+byte-identical output. Their shared published JSON fields match exactly except
+for a `5.684341886080802e-14` maximum numeric difference in the full-clock
+structural control. That control emits three NumPy runtime-warning categories
+in both modes; the warning bytes are retained in the packet and were not
+suppressed. The exact rational majorants and sign checks pass. This local
+replay used Python 3.9.6 / NumPy 2.0.2 / SciPy 1.13.1; the source owner's
+recorded environment was different.
+
+This intake supplies no Lean theorem for the clock estimate, final
+composition, archive-phase descent, original full42 or full CAR128. The
+existing Lean calculus formalizes only the conditional finite-matrix moving
+cut and `−log det` feedback slice. The actual admitted preparation and
+relative-variation space, complete Cost-Info source, gain/norm map, local
+normal generators, and compatible refinement remain the parent application.
+No task or claim status changed; `GR_closed=false`.

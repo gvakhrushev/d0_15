@@ -5152,9 +5152,8 @@ class ProofArchitectureTests(unittest.TestCase):
                 "D0.Algebra.MovingProjectorTransport",
             ],
         )
-        self.assertEqual(
-            links["formal_support_locators"][0]["status"], "metadata_locator_only"
-        )
+        self.assertTrue(all(row["status"] == "metadata_locator_only"
+                            for row in links["formal_support_locators"]))
 
         module_hits = proof.structured_search(data, "D0.Algebra.MovingProjectorTransport")
         self.assertEqual(module_hits[0]["kind"], "formal-support-metadata")
@@ -5280,6 +5279,27 @@ class ProofArchitectureTests(unittest.TestCase):
         links = proof._declared_source_links(data, application_path)
         self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
         self.assertEqual(links["formal_support_locators"], [])
+
+    def test_final_composition_delta_is_retrievable_without_false_lean_or_owner_link(self) -> None:
+        data = proof.load_dataset(proof.ROOT)
+        hits = proof.full_text_search(
+            proof.ROOT,
+            "A4D RETAINED HISTORY FINAL COMPOSITION 2026 10 28",
+            limit=100,
+        )
+        by_source = {item["source"]: item for item in hits}
+        intake_path = "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md"
+        source_path = (
+            "02_REGISTRY/research/sources/"
+            "d0_334_final_composition_delta_2026-10-28/upstream/"
+            "02_REGISTRY/research/A4D_RETAINED_HISTORY_FINAL_COMPOSITION_2026_10_28.md"
+        )
+        self.assertIn(intake_path, by_source)
+        self.assertIn(source_path, by_source)
+        links = proof._declared_source_links(data, source_path)
+        self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
+        self.assertEqual(links["formal_support_locators"], [])
+
 
 
 if __name__ == "__main__":

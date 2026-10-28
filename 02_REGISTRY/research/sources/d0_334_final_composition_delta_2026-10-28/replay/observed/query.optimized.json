@@ -1,0 +1,63 @@
+{
+  "exact_matrix_cases": [
+    {
+      "cosines": [
+        "3/5"
+      ],
+      "critical": false,
+      "directions": 4,
+      "positive_source": "48/175",
+      "rank": 1
+    },
+    {
+      "cosines": [
+        "3/5",
+        "-3/5"
+      ],
+      "critical": false,
+      "directions": 16,
+      "positive_source": "96/175",
+      "rank": 2
+    },
+    {
+      "cosines": [
+        "3/5",
+        "-5/13",
+        "8/17"
+      ],
+      "critical": false,
+      "directions": 36,
+      "positive_source": "737230944/1136774275",
+      "rank": 3
+    },
+    {
+      "cosines": [
+        "1",
+        "0",
+        "-1"
+      ],
+      "critical": true,
+      "directions": 36,
+      "positive_source": "0",
+      "rank": 3
+    }
+  ],
+  "input_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "mixed_sign_old_detector": "0",
+  "mixed_sign_positive_detector": "96/175",
+  "moving_stationary_section_det": "3/4",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_query": {
+    "active_rank": 8,
+    "compression": "p^3 I_8",
+    "full_dimension": 32,
+    "positive_source_at_original_z_2_neg_20": "-318766816/68720525311 + 142606208*sqrt(5)/68720525311",
+    "positive_source_at_z_1_4": "-232 + 104*sqrt(5)",
+    "stages": 26
+  },
+  "scope": "Exact finite full-source identities and actual native base; full orbit physical admission not asserted; heat theorem consumed, not replayed; no GR closure.",
+  "source_sha256": "000b017210e5485050b745dc833afcd72bf318b3fd3ef016fc0e3ebd76902bc2",
+  "status": "PASS",
+  "sympy": "1.14.0",
+  "tested_complex_relative_directions": 92
+}

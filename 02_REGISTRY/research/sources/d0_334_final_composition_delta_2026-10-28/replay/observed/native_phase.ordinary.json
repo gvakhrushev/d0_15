@@ -1,0 +1,86 @@
+{
+  "GR_closed": false,
+  "Hilbert_probability_velocity": [
+    "-2 sqrt(p) p^2",
+    "0",
+    "2 sqrt(p) p^2",
+    "0"
+  ],
+  "J": [
+    "p",
+    "p^2",
+    "-p",
+    "-p^2"
+  ],
+  "control_count": 29,
+  "controls": [
+    "native owner input pin",
+    "exact paid inventory and active rank",
+    "all32-column endpoint G0 tensor G1 identity protected",
+    "full real unitarity",
+    "all8 protected input columns",
+    "complete probability normalization",
+    "complete label effect 0",
+    "complete label effect 1",
+    "complete label effect 2",
+    "complete label effect 3",
+    "exact 0<p<1 establishes positive support",
+    "exact non-global phase kernel",
+    "every J component nonzero",
+    "transition vector outside span J 01",
+    "transition vector outside span J 02",
+    "transition vector outside span J 12",
+    "transition vector outside span J 03",
+    "transition vector outside span J 13",
+    "transition vector outside span J 23",
+    "native finite Golden generator",
+    "Hamiltonian unit operator norm",
+    "nonzero Hamiltonian derivative along phase kernel",
+    "strict descent failure without floats",
+    "exact full-Hilbert probability velocity",
+    "probability tangency obstruction matches kernel source",
+    "flow outside one-dimensional probability tangent",
+    "real native base pointwise descent false positive",
+    "real native base tangent control",
+    "all-epsilon exact derivative"
+  ],
+  "generator": "sigma_y(first port) tensor I(ordinary work)",
+  "input_commit": "1d29848fa0775485f7d48ab63f4a6625f9b705ad",
+  "kernel_H_source": "-2 sqrt(p) p^2",
+  "local_lapse_H_N_identified": false,
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_real_base_kernel_source": "0",
+  "native_real_base_tangent": true,
+  "native_word": {
+    "CX": 6,
+    "G": 2,
+    "SourceI": 0,
+    "full_columns": 32,
+    "protected_input_rank": 8,
+    "stages": 8
+  },
+  "phase_kernel": [
+    "1",
+    "-1/p",
+    "0",
+    "0"
+  ],
+  "phase_point": [
+    "0",
+    "pi/2",
+    "0",
+    "0"
+  ],
+  "phase_point_native_admission_proved": false,
+  "probabilities": [
+    "p^2",
+    "p^3",
+    "p^3",
+    "p^4"
+  ],
+  "scope": "Full actual finite word and exact mathematical phase extension; no continuous native phase, selected normal Hamiltonian, HDA or GR proof.",
+  "small_phase_source": "-2p sqrt(x(1-x)) (1-cos epsilon)",
+  "source_sha256": "265c8ef85d86d496a9312539890c09aebd123421d81fc47667ae7cab7f1d39c8",
+  "status": "PASS",
+  "sympy": "1.14.0"
+}

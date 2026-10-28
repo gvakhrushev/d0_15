@@ -34,6 +34,13 @@ generated_cut_spec = importlib.util.spec_from_file_location('generated_cut_integ
 generated_cut_verifier = importlib.util.module_from_spec(generated_cut_spec)
 generated_cut_spec.loader.exec_module(generated_cut_verifier)
 
+FINAL_COMPOSITION_SCRIPT = ROOT / '02_REGISTRY/research/sources/d0_334_final_composition_delta_2026-10-28/verify_final_composition_delta.py'
+final_composition_spec = importlib.util.spec_from_file_location(
+    'final_composition_integrity', FINAL_COMPOSITION_SCRIPT
+)
+final_composition_verifier = importlib.util.module_from_spec(final_composition_spec)
+final_composition_spec.loader.exec_module(final_composition_verifier)
+
 
 class MovingCutSourceIntegrityTest(unittest.TestCase):
     def setUp(self) -> None:
@@ -220,6 +227,58 @@ class PR334DeltaSourceIntegrityTest(unittest.TestCase):
         patch.write_bytes(bytes([data[0] ^ 1]) + data[1:])
         with self.assertRaisesRegex(ValueError, 'Pinned source patch mismatch'):
             generated_cut_verifier.verify(self.repo)
+
+
+class PR334FinalCompositionSourceIntegrityTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.repo = Path(self.tmp.name) / 'repo_without_git'
+        self.repo.mkdir()
+        self.packet = self.repo / final_composition_verifier.PACKET
+        self.packet.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copytree(
+            ROOT / final_composition_verifier.PACKET,
+            self.packet,
+        )
+
+    def test_source_and_replay_receipts_verify_without_git_or_execution(self) -> None:
+        before = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                  for p in self.repo.rglob('*') if p.is_file()}
+        result = final_composition_verifier.verify(self.repo)
+        after = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                 for p in self.repo.rglob('*') if p.is_file()}
+        self.assertEqual(before, after)
+        self.assertEqual(result['status'], 'PASS_PINNED_FINAL_COMPOSITION_SOURCE_AND_REPLAYS')
+        self.assertEqual(result['source_commit'], '22e729996b70a699710a2d1120a0caa7a08decf8')
+        self.assertEqual(result['file_count'], 31)
+        self.assertEqual(result['source_bytes'], 248546)
+        self.assertEqual(result['replayed_checker_count'], 7)
+        self.assertFalse(result['source_code_executed_by_verifier'])
+        self.assertFalse(result['scientific_acceptance'])
+        self.assertFalse(result['physical_admission'])
+        self.assertFalse(result['GR_closed'])
+        self.assertFalse((self.repo / '.git').exists())
+
+    def test_same_size_upstream_mutation_is_rejected(self) -> None:
+        import json
+        manifest = json.loads((self.packet / 'MANIFEST.json').read_bytes())
+        source = self.packet / manifest['files'][0]['snapshot_path']
+        data = source.read_bytes()
+        source.write_bytes(bytes([data[0] ^ 1]) + data[1:])
+        with self.assertRaisesRegex(ValueError, 'SHA-256 mismatch'):
+            final_composition_verifier.verify(self.repo)
+
+    def test_symlinked_source_snapshot_is_rejected(self) -> None:
+        import json
+        manifest = json.loads((self.packet / 'MANIFEST.json').read_bytes())
+        source = self.packet / manifest['files'][0]['snapshot_path']
+        external = Path(self.tmp.name) / 'external-source'
+        external.write_bytes(source.read_bytes())
+        source.unlink()
+        source.symlink_to(external)
+        with self.assertRaisesRegex(ValueError, 'Expected regular file'):
+            final_composition_verifier.verify(self.repo)
 
 
 if __name__ == '__main__':

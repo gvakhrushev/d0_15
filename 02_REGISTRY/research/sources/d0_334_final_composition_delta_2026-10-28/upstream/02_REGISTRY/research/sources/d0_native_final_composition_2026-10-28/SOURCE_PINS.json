@@ -1,0 +1,126 @@
+{
+  "compatible_incoming_input": "1d29848fa0775485f7d48ab63f4a6625f9b705ad",
+  "entries": [
+    {
+      "bytes": 86193,
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "bytes": 11036,
+      "git_blob": "12a5c5362943f13de800e95ace68da07ee82ed7b",
+      "path": "02_REGISTRY/research/D0_GR_CLOSURE_CONTRACT_RU.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "662abfbd345e972a9c677b8da79090a4444434cad1fc1d6682e9a530e674b5c1"
+    },
+    {
+      "bytes": 25128,
+      "git_blob": "e41c8288725d2a5ce65ac8e198709aa31c1dd98d",
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_RETURN_BOUNDARY_AND_CANONICAL_RIGIDITY_2026_10_28.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "46c44f9de8a9915086d09d7d02d04daa06c15c25e22eadd11021f7173add2368"
+    },
+    {
+      "bytes": 2414,
+      "git_blob": "a2e0d3ed877985c98b5fe7f1ef29bbe95d9422f4",
+      "path": "02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "88522b7ef53104d9798aa2337ccb11f2ef2cb878f851b9a53f97d1e9e58efb87"
+    },
+    {
+      "bytes": 3408,
+      "git_blob": "5df740877ae79dff50e7e3a8c769c8f292eb6c02",
+      "path": "02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_BOUNDARY_HESSIAN_2026_10_28.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "fa4dc70ca30c7d8f3922f324128b05381bb598e4831c9cb43327c5ef3b9fbfc3"
+    },
+    {
+      "bytes": 14325,
+      "git_blob": "2cbc8f056623199dbc518132d44e317f5390bf89",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CUT_BOUNDARY.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "e86ad43b86377013443efc8fd61a36f64455361b41224dc3b718768a3b6221de"
+    },
+    {
+      "bytes": 9344,
+      "git_blob": "545004f770426f42af8d75b607c5a7b2c346668e",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CANONICAL_RIGIDITY.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "39e5085d8230bd2ef0ccf6ea67ed5730e1bb76c2e7aed32610fa0f3f2bff2934"
+    },
+    {
+      "bytes": 16039,
+      "git_blob": "3fe707d54540019190e4ca82b10eb0becc82464a",
+      "path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/BRACKET_TRANSPORT.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "fae4bf970762476c502f7020953bc32a51737d8837b3b2e76745c3d26ec7ed40"
+    },
+    {
+      "bytes": 22488,
+      "git_blob": "cd4e0b36835c8ada48895221d14ff69c4a491926",
+      "path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/PROOF_RU.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "85b4e384b219a15f480271570ca3077725ca6e5658662161f7990336a11b6821"
+    },
+    {
+      "bytes": 17833,
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "bytes": 2697781,
+      "git_blob": "671f8712162b850b4299152bedac0165267b71a7",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "ref": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "sha256": "5f8c04004e0332127681095ddc3678c2b7e0bec664c9b14ee3c1a63bdea414c4"
+    },
+    {
+      "bytes": 2723831,
+      "git_blob": "8335a0041a866e075dbcb7058e0a22251e74384b",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "ref": "1d29848fa0775485f7d48ab63f4a6625f9b705ad",
+      "sha256": "95f9c1cbf08a84a65e3891e8cc9c45e23290067f86b53b3027226221418119c5"
+    },
+    {
+      "bytes": 9894,
+      "git_blob": "d6edeaddc8927d0db16ed35e9781b27cc3804e3a",
+      "path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/QUERY_ORBIT_APPLICATION_RU.md",
+      "ref": "1d29848fa0775485f7d48ab63f4a6625f9b705ad",
+      "sha256": "cc94c4fe66a1614359f6d73b30ea9e1c8e58cf8430b7039fe48475d8b483d18d"
+    },
+    {
+      "bytes": 2744025,
+      "consumer": "INCOMING_COMPATIBILITY.md; new7cw generated-cut split and finite native comparison, no replay claimed",
+      "git_blob": "8aea1a6225e80270d2ea005edfb51e580f16b567",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "ref": "5fe5203da2439d325dc9ef70f52c1111822fc22b",
+      "sha256": "cdd20ee8c35d8487d16878a548500e2b75d5b56ce94cc3e77a0b5c8183d8524f"
+    },
+    {
+      "bytes": 5230,
+      "consumer": "INCOMING_COMPATIBILITY.md; stronger all-unitary full thermal source bound consumed, no replay claimed",
+      "git_blob": "2e2378f5a835deb27ebafa4eff3ffd158a899592",
+      "path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md",
+      "ref": "dd7f713cc0ec50c6f66871b3427e3a979d57ade0",
+      "sha256": "204e284695f243868aad6d9835738deaabc1b30ddf7d344bfb4f33d62bdcd574"
+    },
+    {
+      "bytes": 20552,
+      "consumer": "INCOMING_COMPATIBILITY.md; stronger all-unitary full thermal source bound consumed, no replay claimed",
+      "git_blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "ref": "dd7f713cc0ec50c6f66871b3427e3a979d57ade0",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    }
+  ],
+  "initial_input": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "initial_input_unchanged_scope": "first four derivations retain initial pins; incoming primary appends7cv and adds QUERY/cut jet application",
+  "new_input_consumer": "phase carrier847 and source/decoder reaction841,843,848–850",
+  "owner_pr": 334,
+  "publication_parent": "dd7f713cc0ec50c6f66871b3427e3a979d57ade0",
+  "repository": "gvakhrushev/d0_15"
+}

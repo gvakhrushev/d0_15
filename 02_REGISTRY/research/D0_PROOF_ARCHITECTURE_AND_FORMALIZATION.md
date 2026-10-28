@@ -278,7 +278,7 @@ Initial candidate sources and crosswalk inputs:
 - The 889 claims.csv IDs are claim candidates keyed initially by claim ID and exact book/section locator. Each may split, overlap, or need a source-backed disposition before becoming one unit.
 - The 31 assumption IDs are premise crosswalk inputs. Preserve the actual quantified hypotheses on results; do not count an assumption row as a result by default.
 - The 180 formal_support.csv rows are proof-support crosswalk inputs and candidate declaration locators, not 180 independently accepted results.
-- The 58 aliases are lookup edges. `tools/proof_architecture.py alias-sources` now emits the pinned candidate view at `02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/alias_source_candidates_current.json` from clean source commit `b87d37693adf7c8bade716d20b82f898efa0dfd3`. Both canonical-target aliases resolve to existing claims. An exact-token scan confirms that all 56 legacy IDs have in-range `first_reference` lines and occur somewhere in their designated book; 38 locators point to the first line containing that exact label, while 18 point to another existing line without the label. None of the 56 legacy IDs is a current `claims.csv` ID. The focused test passes exact-label, longer-token, missing-file, invalid-path, and canonical-target controls. This verifies locator and lookup integrity only: the 18 non-label anchors still need source-semantic review, and no alias is thereby accepted as a C0 unit, canonical equivalence, or application. The JSON pins the alias/claim registry digests and all eight referenced book blobs.
+- The 58 aliases are lookup edges. `tools/proof_architecture.py alias-sources` at this checkpoint emitted the pinned [alias_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/30ffef0f5a4353874f8966a4b69d09e534f3c47d/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/alias_source_candidates_current.json) from clean source commit `b87d37693adf7c8bade716d20b82f898efa0dfd3`. Both canonical-target aliases resolve to existing claims. An exact-token scan confirms that all 56 legacy IDs have in-range `first_reference` lines and occur somewhere in their designated book; 38 locators point to the first line containing that exact label, while 18 point to another existing line without the label. None of the 56 legacy IDs is a current `claims.csv` ID. The focused test passes exact-label, longer-token, missing-file, invalid-path, and canonical-target controls. This verifies locator and lookup integrity only: the 18 non-label anchors still need source-semantic review, and no alias is thereby accepted as a C0 unit, canonical equivalence, or application. The JSON pins the alias/claim registry digests and all eight referenced book blobs.
 - The 54 assembly results already carry pinned evidence records with commit, path, and SHA-256. The missing crosswalk is from each result to a C0 mathematical unit (a claim ID or exact source:<commit>:<path>#<section> key), and to any relevant public declaration or application disposition. Obligations, results, evidence, and reviewed application edges remain distinct; the application file still lacks a canonical claim-ID crosswalk.
 - Enumerate theorem-like public declarations reachable through the compiled D0.All import as candidates. Public helpers, generated declarations, definitions, and instances must be classified; inclusion in an import closure alone does not make them reusable mathematical results.
 - Bounded candidates from 04_CERTIFICATES/ and 05_EXPERIMENTS/ are exact computations, certificates, constructions, and negative controls found on cited or otherwise in-scope paths. A missing mathematical-consumer edge is a reconciliation gap, not an exclusion reason; exclude raw logs and exploratory runs without a mathematical assertion.
@@ -1253,7 +1253,7 @@ The full outputs are in `sources/d0_proof_architecture_formalization_2026-10-24/
 
 After the two exact stale-name repairs, the all-claims resolution-only query was rerun against `D0.All` on working-tree snapshot `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`. The worktree was dirty because the two Lean comment files and evidence artifacts had been updated. It used Lean 4.30.0, claim-registry SHA-256 `d86d7965f0cf64164cdf7536a4fb5119ec9655e5b5082e3bbe34ce6459d35003`, and current Lean source digest `3530b705e2d59e76c37b153ae6c38f36efe01570f788e052e4624dd13db9ddf7`.
 
-Across 889 claims and 2,741 claim-locator mappings it expanded 8,291 candidate names, found 2,498 exact declarations and 5,793 misses. At least one candidate resolved for 2,539 mappings; 707 claim rows have a resolved name and 182 have none. These are name-resolution counts, not semantic-coverage or claim-acceptance counts. The current output is `sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json` (2,535,371 bytes; SHA-256 `60f8e0925e7ba45298b76084d5706a645c7d0851ffba2e303dd20bef13659577`; collector SHA-256 `3546dc3dc677c9a3e3d205f45fb8e8b636f2d158a05e28b84180eeb2d89ae10d`).
+Across 889 claims and 2,741 claim-locator mappings it expanded 8,291 candidate names, found 2,498 exact declarations and 5,793 misses. At least one candidate resolved for 2,539 mappings; 707 claim rows have a resolved name and 182 have none. These are name-resolution counts, not semantic-coverage or claim-acceptance counts. The output at that checkpoint was [claim_candidate_resolution_current.json](https://github.com/gvakhrushev/d0_15/blob/9ab1e164712f415f79d84d3d4d1f0defc3c5a2f3/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json) (2,535,371 bytes; SHA-256 `60f8e0925e7ba45298b76084d5706a645c7d0851ffba2e303dd20bef13659577`; collector SHA-256 `3546dc3dc677c9a3e3d205f45fb8e8b636f2d158a05e28b84180eeb2d89ae10d`).
 Two registry locators were stale names for declarations with matching bounded
 scope, so their locator strings now point to the actual compiled owners:
 
@@ -3010,8 +3010,8 @@ acceptance. `gr_assembly.py check` passes for the 54 active-result limit with
 `scientific_promotion=false`.
 
 The all-claims resolution was also rerun against this same public `D0.All`
-source digest and current claims registry. The current artifact is
-`sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json`,
+source digest and claims registry at that checkpoint. The artifact was
+[claim_candidate_resolution_current.json](https://github.com/gvakhrushev/d0_15/blob/65fbc878959f9e5c51bb4313938de067a9618798/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json),
 SHA-256
 `cbde9036d60167ebfd4f2904e627372c24736ba9683c5d79ace6ed7ff2df90f2`. It
 records 889 claim rows and 2,747 theorem-locator atoms expanded to 8,317
@@ -3157,7 +3157,7 @@ claim. They do not establish that an actual apparatus supplies it.
 
 At published PR head `c5f430df76975f9aae7d3aa48eaa9896601fd5ac`, the
 all-claims artifact at
-`sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json`
+[claim_candidate_resolution_current.json](https://github.com/gvakhrushev/d0_15/blob/c5f430df76975f9aae7d3aa48eaa9896601fd5ac/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json)
 had SHA-256
 `400cfc7f3dfe82619579bb4599fdbed9301e9f839a7a91b1d776e4b37604ba4f`. That
 version records snapshot `2d839f582ffe84763a9ac487c7060a9e32f8e4e1`
@@ -3212,7 +3212,7 @@ public import `D0.All`. All seven exact locators on the claim now resolve.
 The all-claims refresh records 889 claim rows, 2,750 locator mappings, and
 2,511 resolved names among 8,320 unique candidates; its source, registry and
 collector digests are stored in
-`claim_candidate_resolution_current.json` (SHA-256
+[claim_candidate_resolution_current.json](https://github.com/gvakhrushev/d0_15/blob/cf15304e9e69472ecf9ba7a977585af8e3f41dcf/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json) (SHA-256
 `576e160eedf89e002058b1af443841f37708b1ca0195cf44e923142248858f31`).
 
 The reuse view reports proof-dependency-to-locator candidates from each
@@ -4499,7 +4499,7 @@ mappings; 176 have no candidate name and 22 have candidates but no match. A
 total of 709 claim rows have at least one match and 180 have none. These are
 exact current-name availability counts, not semantic coverage or C0
 acceptance. The file is
-`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json`,
+[claim_candidate_resolution_current.json](https://github.com/gvakhrushev/d0_15/blob/16b7b62e59f5f43c2db94d33f808c733d1992137/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json),
 SHA-256 `fc3701d1ab339e009d57aaf74603c0127448f0ef219d3c63e93b78960916bc35`,
 collector SHA-256
 `dd33d4ab45852eb1d2aef0311f00db6249832d41f9957a50e29b5e3e51f953a8`.
@@ -4900,7 +4900,7 @@ resolver does not split ranges or move a section to another book to force a
 match.
 
 The complete derived view is
-`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`.
+[claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/31ccbc40bdcb05baa377cda0d522931eae65c16b/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json).
 Its Windows working-tree representation uses CRLF (608,420 bytes; SHA-256
 `b7372d8eab69b9f1b2f40a833f5057846d6bb651c928b53c9f902073a7750fb7`); the
 published Git blob uses LF (594,056 bytes; SHA-256
@@ -5809,7 +5809,7 @@ passes, and
 `check_claim_map_coverage.py` passes under Python 3.12.14.
 
 The regenerated exact-heading candidate view is
-`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`,
+[claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/463fab447187361997f4c5c74b2d185d506697e2/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json),
 at clean source snapshot `4b0630b1b3220857e5ef52f3e4041803277b71c7`. Its
 `claims.csv` SHA-256 is
 `f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003`; the
@@ -5944,7 +5944,7 @@ source syntax, missing exact headings, and unreviewed search suggestions
 distinct.
 
 The historical view is
-`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`
+[claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/6ff676505954af0a86d63a90d8a9562e4d01c616/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json)
 (SHA-256
 `81b8fe55cb2afee4b99d1c9ce941399ad842a4fa99c2fa0d68df8448018580ef`),
 collected cleanly at `6a160a11f5f732c6c964864075cc94b7c6e2b010`. Its collector
@@ -6043,7 +6043,7 @@ change status or owner, accept C0, or close a physical premise.
 ### Source-candidate and compiled Bianchi checkpoint at `eb405cbd` (25 October 2026)
 
 The checkpoint candidate view is
-`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`
+[claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/0598deee72db3a2d658d26055f14c1146941d7cc/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json)
 (SHA-256
 `218ef724270ae90c4cf88a6d6e6b10c9ccd2dde1bb841713a62d08920fbacf8d`),
 generated cleanly from snapshot `eb405cbd36c591203efe867526ccef2e3e173a5c`
@@ -6509,7 +6509,7 @@ disposition or owner changed.
 The generated snapshot is clean at commit
 `1b6f5e964f75a28b97e44e4a46346e5703b6b6c6`, schema
 `d0-claim-source-candidate-view-v2`, with `worktree_dirty=false`. Its path is
-`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`;
+[claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/5131f82702263cf53a708e2fa3ffb8c31bf75790/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json);
 SHA-256 is
 `2a5bd779f41d2dab918356e740ccdf243d5752b949b04b6758d791a8d19d17af`.
 The collector SHA-256 is
@@ -6630,8 +6630,8 @@ does not prove the full feedback/action-to-constrained-Hamiltonian application
 described in the book. The mention and heading are retrieval coordinates; the
 application remains partial and no CORE/physical claim is promoted.
 
-The current JSON is
-`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`,
+At this checkpoint the JSON was
+[claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/00c56c5242d2b20d1e23134886069919569b0960/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json),
 schema `d0-claim-source-candidate-view-v3`, generated with
 `worktree_dirty=false` at the clean snapshot above. Its SHA-256 is
 `e30de22bf507c0f65f752f08b6f98c74941ff8ecd17670b4330e89f1ce083a21`; the
@@ -6664,7 +6664,7 @@ The clean replay at snapshot
 exact-source-versus-unrelated-prose impact control. The CAR/Hodge case now
 finds **28/28** required references. Its query
 `D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 literal claim ID source candidate view`
-returns `claim_source_candidates_current.json` as direct content at rank 1;
+returns [claim_source_candidates_current.json](https://github.com/gvakhrushev/d0_15/blob/00c56c5242d2b20d1e23134886069919569b0960/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json) as direct content at rank 1;
 the result's source SHA-256 is
 `e30de22bf507c0f65f752f08b6f98c74941ff8ecd17670b4330e89f1ce083a21`.
 The compact replay record is
@@ -11366,8 +11366,8 @@ The capsule-to-supported transport replay also passed at that digest; the
 printed dependencies of the migrated owners and transport are `propext`,
 `Classical.choice`, and `Quot.sound`.
 
-The current claim resolution view, generated at that clean commit, is
-[`claim_candidate_resolution_current.json`](sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json),
+The claim resolution view generated at that clean commit is
+[claim_candidate_resolution_current.json](https://github.com/gvakhrushev/d0_15/blob/7629fc4d5c832771d85a1ef60a8f753d98418461/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json),
 SHA-256 `6653ed09ed2e075e8b7907a06c1f57b2c313a191cf8c18c0fc2901e01f4ccf61`.
 It retains the request and exact declaration resolutions and records the hash
 of the full 4,410,649-byte replay rather than duplicating all crosswalk rows.
@@ -11725,10 +11725,10 @@ four unresolved atoms and 178 rows without theorem locators; none is a
 coverage or physical-acceptance measure. At the same snapshot the cold-start
 replay found all 169 required references in 24/24 cases and passed the impact
 control; its receipt is
-[`proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json)
+[proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json](https://github.com/gvakhrushev/d0_15/blob/30ffef0f5a4353874f8966a4b69d09e534f3c47d/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json)
 (SHA-256 `45d06a847365b36a99127bb8d19a1f2725a5d2d59d7536a366c8cd2f99d624c9`).
 The matching search comparison is
-[`proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json)
+[proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json](https://github.com/gvakhrushev/d0_15/blob/30ffef0f5a4353874f8966a4b69d09e534f3c47d/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json)
 (SHA-256 `74ba3f2726ecbb72ad433ac6cd5150958576d1916232b8718b438f07f16b7952`).
 
 ### 28 October source intake: nine chat packages and the moving-cut source
@@ -11887,14 +11887,69 @@ For real fixed `z`, Hermiticity makes the determinant real; slit-plane
 membership at the evaluation point implies the local positive chart used in
 the real logarithm.
 
-The formal example uses a differentiable rank-one orthogonal-projector curve
+The finite example uses a differentiable rank-one orthogonal-projector curve
 and a fixed unitary reflection. It exhibits a nonzero return derivative,
-weighted trace `−48/17`, and feedback derivative `−24/17` at `z=1/2`. These
-calculi do not select a physical source: the slit-plane premise is retained
-rather than derived here from `0<z<1` and unitarity; the thermal derivative,
-moving Gram, variable β/z, native admitted field variation, complete
-Info/work/controller price, and GR composition remain open. The latest owner
-source remains #334 at `5fe5203da2439d325dc9ef70f52c1111822fc22b`; this calculus
-reuses the earlier moving-cut expression and adds no physical selection.
-The detailed application and its explicit interface are recorded in
+weighted trace `−48/17`, and feedback derivative `−24/17` at `z=1/2`.
+This is formal support for the conditional moving-cut calculation, not
+physical source selection. The slit-plane premise is retained rather than
+derived here from `0<z<1` and unitarity; the thermal derivative, moving Gram,
+variable β/z, native admitted field variation, complete Info/work/controller
+price and GR composition remain open. The original #334 owner and scientific
+claim statuses are unchanged. The detailed application and its explicit
+interface are recorded in
 [`D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md`](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md).
+An independent read-only mathematical review of calculus blob
+`37305b34459ffa99189f91fbc3338c96562dc4fd` checked the signs, order of
+factors, slit-plane argument and the same-curve example. Its scope does not
+include compilation, physical admission or acceptance of C0.
+
+Historical source-candidate, claim-resolution, alias and two metric-receipt
+links above now name the published commit containing the bytes whose SHA-256
+was recorded at each checkpoint. Those publication commits are distinct from
+the source snapshots recorded inside the reports. Fifteen such historical
+files were checked against their recorded hashes; seven other individually
+identified current views were checked and still matched. This targeted repair
+does not assert that every other historical link in this artifact was audited.
+
+### #334 final composition and full-clock source: exact integration boundary
+
+The existing #334 owner is now pinned at
+[`22e729996b70a699710a2d1120a0caa7a08decf8`](https://github.com/gvakhrushev/d0_15/tree/22e729996b70a699710a2d1120a0caa7a08decf8).
+The [source intake](sources/d0_334_final_composition_delta_2026-10-28/README.md)
+contains the exact 31-file delta from `5fe5203da2439d325dc9ef70f52c1111822fc22b`,
+its five-commit sequence, source hashes/blobs and ordinary/optimized replay
+receipt. The replay passes all seven checkers; the local Python 3.9 / NumPy
+2.0 clock control's three `RuntimeWarning` categories and the
+`5.684341886080802e-14` comparison difference are explicitly retained. Its
+rational C1/C2 bounds and exact sign tests pass; the observed warnings are
+from an auxiliary floating-point matrix calculation and are not represented
+as a clean warning-free run.
+
+The full-clock theorem removes the reflection-endpoint hypothesis only for
+its fixed paired-clock or homogeneous INTERNAL carrier, fixed scene and beta.
+Its complete first/second source bound preserves the normal endpoint
+variation and the actual field transfer still depends on
+`A1_N N ||L_h||/|Gamma_h|`. It therefore supports the thermal part of a
+source-composition application without selecting its gain, field map, task,
+or additional price.
+
+The final composition makes the remaining boundary route more precise:
+free stationarity on the complete QUERY-reflection orbit forces the reduced
+return source to vanish; under its additional all-stage INTERNAL/fixed-scene
+conditions the full reduced source and Schur boundary block also vanish.
+Other retained results expose a nonzero boundary moment, reject arbitrary
+independent source weights as a general lapse construction, retain the
+four-word memory contrast, and give an exact Fourier support criterion for
+the separate archive-phase Hamiltonian descent. These are scoped route
+exclusions and tests, not no-go claims for physical D0-to-GR selection or
+retained-state local dynamics.
+
+The matrix calculus above is the only Lean formalization in this intake. It
+proves the finite-dimensional moving-cut and log-determinant component on its
+stated chart. The clock remainder estimate, native phase descent, full
+boundary synthesis, original full42/full CAR128 and their physical admission
+are not Lean theorems. Their remaining parent substitution is the same
+complete admitted execution map into `U_N,P_N,Delta_N`, including preparation,
+relative QUERY/cut variations, clocks, Cost-Info, gain/norm, independent
+equations and compatible refinement. No assembly slot or claim is closed;
+`GR_closed=false`.

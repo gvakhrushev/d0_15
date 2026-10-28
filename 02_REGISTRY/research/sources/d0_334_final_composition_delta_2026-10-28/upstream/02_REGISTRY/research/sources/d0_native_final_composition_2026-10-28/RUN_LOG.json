@@ -1,0 +1,64 @@
+{
+  "copied_query_and_gauge_normal_optimized_compared": true,
+  "dependency_note": "existing read-only SymPy import via PYTHONPATH; no dependency installation",
+  "final_incoming_compatibility_read": "INCOMING_COMPATIBILITY.md",
+  "final_local_links_checked": true,
+  "incoming_input": "1d29848fa0775485f7d48ab63f4a6625f9b705ad",
+  "independent_replays": "query by spectral reviewer; gauge by query reviewer; memory and terminal by history reviewer; see REVIEW.md",
+  "input_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "memory_author_run_log": {
+    "normal_exit": 0,
+    "normal_optimized_byte_identical": true,
+    "optimized_exit": 0,
+    "python": "3.12.14",
+    "result_sha256": "2463f1e5b3a911bf4dd3e684387f5263b1deb8b342cb76b07445deedd4295b71",
+    "scope": "exact native column/source and rational bound controls only",
+    "script_sha256": "b23bfb478e86324fe508e1a929b6f2eac08670369f9bcba8fb8cb70d5ee3f31d",
+    "stderr": "",
+    "sympy_path": "/workspace/scratch/6807dc385465/review_deps"
+  },
+  "normal_optimized_byte_identical": true,
+  "phase_checks": {
+    "both_normal_optimized_byte_identical": true,
+    "general_controls": 24,
+    "independent_general_reviewer": "native_source_admission",
+    "independent_native_reviewer": "native_history_generators",
+    "native_controls": 29,
+    "physical_admission_asserted": false
+  },
+  "phase_normal_optimized_compared_by_integrator": true,
+  "publication_parent": "dd7f713cc0ec50c6f66871b3427e3a979d57ade0",
+  "python": "Python 3.12.14",
+  "repo_validator": {
+    "aliases": 58,
+    "assumptions": 31,
+    "claims": 889,
+    "command": "python3 tools/validate_repo.py",
+    "exit_code": 0,
+    "formal_support": 183,
+    "is_lean_execution": false,
+    "lean_closure_rows": 918,
+    "status": "PASS",
+    "warnings": 0
+  },
+  "root_executions": [
+    {
+      "exit_code": 0,
+      "mode": "normal",
+      "script": "check_terminal_graph.py",
+      "seconds": 1.191,
+      "stderr": "",
+      "stdout_sha256": "bb94e800b55ac1a781ddd530dda981a909227d19c4ff13ebd31ed3cb7ad29766"
+    },
+    {
+      "exit_code": 0,
+      "mode": "optimized",
+      "script": "check_terminal_graph.py",
+      "seconds": 2.654,
+      "stderr": "",
+      "stdout_sha256": "bb94e800b55ac1a781ddd530dda981a909227d19c4ff13ebd31ed3cb7ad29766"
+    }
+  ],
+  "scope": "Exact finite controls and structural identities; no full Hodge diagonalization, full42, full CAR128, Lean, remote CI or physical admission.",
+  "sympy": "1.14.0"
+}
