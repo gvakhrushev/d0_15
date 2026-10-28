@@ -160,8 +160,8 @@ rows, 711 book headings and 840 literal claim-ID mentions across 430 claims.
 All 56 legacy-label first-occurrence locators and both canonical alias targets
 resolve. These are source/navigation counts, not a semantic coverage ratio.
 
-The latest retrieval measurement and its clean-checkout compaction use
-`5fdcb60a8553a6926849527965ed2e531250d9f0`. The current reports are:
+The earlier retrieval measurement and its clean-checkout compaction use
+`5fdcb60a8553a6926849527965ed2e531250d9f0`. Those reports are:
 
 - [Cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json),
   SHA-256 aab5a67db4de4332c4d896bc3caa3a714df5940b6eb2e6e2bbef3704c1f765ec.
@@ -184,7 +184,7 @@ current search; the historical search retrieves zero of those seven. These
 are the stated query/fixture results, with manual scientific scope review
 retained. The recorded owner/support distinctions are unchanged.
 
-The current structural check passes with 889 claims, 31 assumptions, 58 aliases,
+At that checkpoint the structural check passed with 889 claims, 31 assumptions, 58 aliases,
 225 formal-support rows, 948 modules in the generated Lean closure, and zero
 repository-validation warnings. The cold-start report retains all required-source
 receipts and exact retrieval ranks; its compaction receipt also records the full
@@ -11971,9 +11971,16 @@ The [six-declaration inventory](sources/d0_proof_architecture_formalization_2026
 was extracted from clean published snapshot `af02b15e25b9b281cf508fb34b7daa675cf08900`,
 with SHA-256 `1622bf111a3aabb294829c1fd22d20fa623aec4426e51548f5a542d0cc2cf5d5`.
 Its axiom closures are `propext`, `Classical.choice` and `Quot.sound`.
-That build predates the separate density bridge; its own final integration
-check is still required. Toolchain and generated-cache limitations are those
-stated by the build receipt.
+That build predates the separate density bridge. The subsequent `D0.All`
+integration succeeded on source digest
+`bba437bdc2c7d0609e5b7a68a29359cabf0eed9be1f7b27cae1f053502a9164e`;
+the [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_density_2026-10-28.json)
+records the toolchain and cache limitations. The two selected density-bridge
+declarations were extracted at clean published snapshot
+`de343f86c4d51ec0aaec0bd179eb2ddc21e4e560` in the
+[declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/thermal_density_bridge_declarations_2026-10-28.json)
+(SHA-256 `e3be62efa9f74b91449259f7239cec75b3884c04bc3c5e661e0270f2931962f9`);
+their axiom closures are `propext`, `Classical.choice` and `Quot.sound`.
 
 For `D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001`, the source candidate
 `75527846bf3603a1c51acf445f8354e3254341be:02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#§1/Eq(1)`

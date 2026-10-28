@@ -161,10 +161,21 @@ record the pinned toolchain inputs and 154 elaborated declarations across the
 two matrix-calculus modules and the finite QUERY/cut control. Their reported
 axiom footprint is `Classical.choice`, `Quot.sound`, and `propext`; no new
 axiom or `sorry`/`admit` was introduced. The
-[combined cold-start report](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-28_integrated.json)
-and [search comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_integrated.json)
+[combined cold-start report](https://github.com/gvakhrushev/d0_15/blob/2582d339cd7042ba95c8c70046baf39408bec138/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-28_integrated.json)
+and [search comparison](https://github.com/gvakhrushev/d0_15/blob/2582d339cd7042ba95c8c70046baf39408bec138/02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_integrated.json)
 are bound to the same clean source checkpoint. These finite formalizations and
 search measurements do not establish physical admission or close `GR_closed`.
+
+The updated [cold-start report](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-28_integrated.json)
+and [comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_integrated.json)
+use the separate clean published snapshot `de343f86c4d51ec0aaec0bd179eb2ddc21e4e560`.
+All 24 cases find their 168 required source records; the nonvacuum case now
+includes one additional content query for its displaced declaration inventory.
+The source requirements and result window were not relaxed. The compact
+report SHA-256 is `61927da065a29bfda77c71f654f785f54692a45bf26dbadc350bb6fc99aa399d`;
+the comparison's published LF SHA-256 is
+`693315d3f65ec44f7c1620ad02ef83fdc22543dec59c2e485ec6ba3e12613ad0`.
+These search results are distinct from the preceding build checkpoint.
 
 ## What was actually replayed
 
