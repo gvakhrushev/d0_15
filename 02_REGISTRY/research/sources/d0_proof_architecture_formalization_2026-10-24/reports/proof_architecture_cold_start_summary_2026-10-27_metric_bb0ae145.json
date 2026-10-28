@@ -1,11 +1,11 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "bb0ae145f0df6643fbbdbc6aacd4b97b8eeb9fdf",
+  "snapshot_commit": "34ddcd2f667ae78b2543deb7ed1ad736e4e16fc7",
   "worktree_dirty": false,
   "authority_source_digests": {
     "02_REGISTRY/claims.csv": "4b89e8ed94d74b99622714f496f1fffa86ca976733c7d4340003cd5a07e5a187",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
-    "02_REGISTRY/formal_support.csv": "4cbd5e685624ae63acbc0b6f681eddf7d19e5212dad2107b1aa04a5b8ac6c680",
+    "02_REGISTRY/formal_support.csv": "4cc6e4d2c6460ed0ee1768adc49c9ff8f1035b523271ab1c88ee0c60a48da6f6",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
     "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
@@ -937,7 +937,7 @@
           "query": "native raising operator inverse null leg",
           "evidence_lines": [
             {
-              "line": 205,
+              "line": 207,
               "heading": "## Scientific boundary and reuse vertical",
               "matched_terms": [
                 "raising",
@@ -949,7 +949,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1757,
+              "line": 1759,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -981,7 +981,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1754,
+              "line": 1756,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -991,7 +991,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2049,
+              "line": 2051,
               "heading": "### Null-chart endpoint-map recovery (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -1001,7 +1001,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 416,
+              "line": 418,
               "heading": "## 24 October integrated retrieval and adapter checkpoint",
               "matched_terms": [
                 "raising",
@@ -1011,7 +1011,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 4926,
+              "line": 4928,
               "heading": "### Complete per-fibre kernel classification for the weighted Fourier operator (25 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -1021,7 +1021,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2071,
+              "line": 2073,
               "heading": "### Null-chart endpoint-map recovery (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -1031,7 +1031,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2590,
+              "line": 2592,
               "heading": "### Row-action Lorentz endpoint adapter for Eq. (27) (25 October 2026)",
               "matched_terms": [
                 "raising",
@@ -2403,7 +2403,7 @@
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "      \"path\": \"02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_tangent_path_declarations_2026-10-26.json\",",
+              "context": "          \"path\": \"02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_tangent_path_declarations_2026-10-26.json\",",
               "pin_status": "not_followed_bounded_search"
             },
             {
@@ -6186,7 +6186,7 @@
           "query": "finiteGram_add_smul_expand finite Gram expansion arbitrary base frame quadratic remainder",
           "evidence_lines": [
             {
-              "line": 7893,
+              "line": 7895,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "expansion",
@@ -6197,7 +6197,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7890,
+              "line": 7892,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6208,7 +6208,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8116,
+              "line": 8118,
               "heading": "### Generic finite-Gram Fréchet derivative and J² consumer (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6219,7 +6219,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7329,
+              "line": 7331,
               "heading": "### Arbitrary finite sitewise coframe derivative (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6230,7 +6230,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7943,
+              "line": 7945,
               "heading": "### Shared exact finite-Gram difference quotient (26 October 2026)",
               "matched_terms": [
                 "expansion",
@@ -6252,7 +6252,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7331,
+              "line": 7333,
               "heading": "### Arbitrary finite sitewise coframe derivative (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6263,7 +6263,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7994,
+              "line": 7996,
               "heading": "### Fintype-only generic Gram API (26 October 2026)",
               "matched_terms": [
                 "expansion",
@@ -6274,7 +6274,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7892,
+              "line": 7894,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "finitegram_add_smul_expand",
@@ -6285,7 +6285,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7954,
+              "line": 7956,
               "heading": "### Shared exact finite-Gram difference quotient (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -10314,7 +10314,7 @@
           "query": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 D0-ARCHIVE-CAR-DIRAC-SQUARE-001 actual carDirac hoppingCarDirac",
           "evidence_lines": [
             {
-              "line": 5950,
+              "line": 5952,
               "heading": "### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10324,7 +10324,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5320,
+              "line": 5322,
               "heading": "### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10334,7 +10334,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5444,
+              "line": 5446,
               "heading": "### Candidate C0 source-unit reconciliation: CAR square and Hodge operator (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10344,7 +10344,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5387,
+              "line": 5389,
               "heading": "### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10354,7 +10354,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5418,
+              "line": 5420,
               "heading": "### Candidate C0 source-unit reconciliation: CAR square and Hodge operator (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10364,7 +10364,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5952,
+              "line": 5954,
               "heading": "### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10373,7 +10373,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5338,
+              "line": 5340,
               "heading": "### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10382,7 +10382,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5954,
+              "line": 5956,
               "heading": "### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10391,7 +10391,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5014,
+              "line": 5016,
               "heading": "### Lift of the persistent null fibre to a full exact cochain (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10400,7 +10400,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1235,
+              "line": 1237,
               "heading": "## Hodge degree-preservation and diagonal-adjoint applications (24 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -14168,7 +14168,7 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 7,
+          "candidate_rank": 8,
           "query": "car zero mode claim declarations 2026 10 25",
           "evidence_lines": [
             {
@@ -15567,7 +15567,7 @@
           "query": "nilpotentAffineRep_injective",
           "evidence_lines": [
             {
-              "line": 1734,
+              "line": 1736,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "nilpotentaffinerep_injective"
@@ -15576,7 +15576,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1681,
+              "line": 1683,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "nilpotentaffinerep_injective"
@@ -15585,7 +15585,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1672,
+              "line": 1674,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "exact",
@@ -15596,7 +15596,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 4709,
+              "line": 4711,
               "heading": "### Exact claim BOOK/section source-key candidate pass (25 October 2026)",
               "matched_terms": [
                 "exact",
@@ -15606,7 +15606,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7890,
+              "line": 7892,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "exact",
@@ -15616,7 +15616,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1664,
+              "line": 1666,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15626,7 +15626,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1734,
+              "line": 1736,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15636,7 +15636,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1710,
+              "line": 1712,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15646,7 +15646,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1667,
+              "line": 1669,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15656,7 +15656,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1732,
+              "line": 1734,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -16344,7 +16344,7 @@
           "query": "archiveJuliaNullBlock_reconstructsAffineFunctional",
           "evidence_lines": [
             {
-              "line": 1784,
+              "line": 1786,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "archivejulianullblock_reconstructsaffinefunctional"
@@ -16353,7 +16353,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 205,
+              "line": 207,
               "heading": "## Scientific boundary and reuse vertical",
               "matched_terms": [
                 "julia",
@@ -16368,7 +16368,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8407,
+              "line": 8409,
               "heading": "### Eq. (26) endpoint blindness and non-null Eq. (27) separation (26 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16394,7 +16394,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1754,
+              "line": 1756,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16406,7 +16406,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2590,
+              "line": 2592,
               "heading": "### Row-action Lorentz endpoint adapter for Eq. (27) (25 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16418,7 +16418,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1912,
+              "line": 1914,
               "heading": "## Full null-query frame recovery from the observed carrier block (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16430,7 +16430,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1915,
+              "line": 1917,
               "heading": "## Full null-query frame recovery from the observed carrier block (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16442,7 +16442,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1784,
+              "line": 1786,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16454,7 +16454,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2254,
+              "line": 2256,
               "heading": "### Fixed-chart Eq. (27) endpoint composition (25 October 2026)",
               "matched_terms": [
                 "julia",
@@ -17797,7 +17797,7 @@
           "query": "principalFrameObservedQueryCoframeRecovery Eq 30a four full query vacuum responses",
           "evidence_lines": [
             {
-              "line": 1578,
+              "line": 1580,
               "heading": "## CAR/exterior role-order alignment and full basis-state creator action (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17808,7 +17808,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1621,
+              "line": 1623,
               "heading": "## Complete CAR/exterior creator and Julia-query equality (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17819,7 +17819,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1623,
+              "line": 1625,
               "heading": "## Complete CAR/exterior creator and Julia-query equality (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17830,7 +17830,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2030,
+              "line": 2032,
               "heading": "## Query-to-principal-frame coframe recovery (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17841,7 +17841,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 589,
+              "line": 591,
               "heading": "### Independent scope review of the finite Eq. (26) CAR adapter",
               "matched_terms": [
                 "eq",
@@ -17852,7 +17852,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 10159,
+              "line": 10161,
               "heading": "### C0 candidate source-unit disposition for the positive nonvacuum slice (26 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17874,7 +17874,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 205,
+              "line": 207,
               "heading": "## Scientific boundary and reuse vertical",
               "matched_terms": [
                 "eq",
@@ -17885,7 +17885,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6527,
+              "line": 6529,
               "heading": "### Exact stencil-to-midpoint application for the positive nonvacuum source (25 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17896,7 +17896,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 9141,
+              "line": 9143,
               "heading": "### Local joint coframe and Lorentz-tangent Fréchet derivative (26 October 2026)",
               "matched_terms": [
                 "eq",
@@ -20669,7 +20669,7 @@
           "query": "finiteHermitianAdjoint_unique coordinate finite Hermitian pairing conjugate transpose",
           "evidence_lines": [
             {
-              "line": 3829,
+              "line": 3831,
               "heading": "## Positive supplied-profile standard-Hilbert representative (25 October 2026)",
               "matched_terms": [
                 "coordinate",
@@ -20681,7 +20681,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3983,
+              "line": 3985,
               "heading": "### Candidate C0 source-unit map for the native weighted-Dirac capsule (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20693,7 +20693,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6244,
+              "line": 6246,
               "heading": "### Shared finite-coordinate expansion in ordinary and weighted adjoints (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20704,7 +20704,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3045,
+              "line": 3047,
               "heading": "### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20715,7 +20715,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1244,
+              "line": 1246,
               "heading": "## Hodge degree-preservation and diagonal-adjoint applications (24 October 2026)",
               "matched_terms": [
                 "coordinate",
@@ -20726,7 +20726,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3120,
+              "line": 3122,
               "heading": "### Real Hodge/CAR operator self-adjointness through the Hermitian API (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20737,7 +20737,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3049,
+              "line": 3051,
               "heading": "### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20748,7 +20748,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3028,
+              "line": 3030,
               "heading": "### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)",
               "matched_terms": [
                 "coordinate",
@@ -20759,7 +20759,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6342,
+              "line": 6344,
               "heading": "### Shared finite linear-map coordinate action in both adjoint proofs (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20770,7 +20770,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3635,
+              "line": 3637,
               "heading": "### Real Hodge/CAR square through the generic Hermitian API (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -22647,7 +22647,7 @@
           "query": "finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint real unit profile",
           "evidence_lines": [
             {
-              "line": 3559,
+              "line": 3561,
               "heading": "### Real unit-profile bridge between adjoint APIs (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22658,7 +22658,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3371,
+              "line": 3373,
               "heading": "### Hermitian Hodge square and cubical anticommutator application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22669,7 +22669,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3477,
+              "line": 3479,
               "heading": "### Cold-start replay after the Hermitian Hodge--Dirac application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22680,7 +22680,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3600,
+              "line": 3602,
               "heading": "### Cold-start replay after the weighted-adjoint bridge (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22691,7 +22691,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3124,
+              "line": 3126,
               "heading": "### Real Hodge/CAR operator self-adjointness through the Hermitian API (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22702,7 +22702,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3795,
+              "line": 3797,
               "heading": "### Cold-start replay after the canonical Hodge/CAR map refactor (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22713,7 +22713,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3174,
+              "line": 3176,
               "heading": "### Cold-start replay after the real Hodge/CAR adjoint application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22724,7 +22724,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3666,
+              "line": 3668,
               "heading": "### Cold-start replay after the real Hodge/CAR square refactor (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22735,7 +22735,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3146,
+              "line": 3148,
               "heading": "### Cold-start replay after the real Hodge/CAR adjoint application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22746,7 +22746,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3395,
+              "line": 3397,
               "heading": "### Hermitian Hodge square and cubical anticommutator application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -25523,18 +25523,18 @@
     }
   },
   "replay": {
-    "source_commit": "bb0ae145f0df6643fbbdbc6aacd4b97b8eeb9fdf",
+    "source_commit": "34ddcd2f667ae78b2543deb7ed1ad736e4e16fc7",
     "command": "python3 tools/proof_architecture_cold_start.py",
     "runner_sha256": "0532c5f68a81d8964737c90582fb2c444355c5c2f32a731295ed845810552694",
     "runner_git_blob": "68e29bb5a0300497a2fd4be7540560b88db72ceb",
     "search_engine_sha256": "221b34bec00134383eaee8483c694374506eea7ab2977d995063e5fd7dcddc5e",
     "search_engine_git_blob": "9e06fa34f9ec63795d0dc92613fe5de784aaed5c",
-    "test_sha256": "9e2758e1f67489ccf49459a267b4f5d81ca37b89b5a26107c7c43e085ff000a7",
-    "test_git_blob": "832db13442127683c862542934f44730f26cfdcc",
+    "test_sha256": "df0060c23eef82dd6bc48a690d91a8777364099ca869ddcc9a98f5ca778c152c",
+    "test_git_blob": "63037069da6228a4bbe8356482212d62a1e25f08",
     "compactor_sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
     "compactor_git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
-    "full_output_sha256": "033a89a1e17c8ff6e24286d39866adaf4af2c561dc6c1141c0635d9b83a4f22e",
-    "full_output_bytes": 9841782
+    "full_output_sha256": "98308fb99ca329f2ecdf59d971dae861663a0934ee1c2ca1c4d9fecf63012711",
+    "full_output_bytes": 9848281
   },
   "eq24_owner_source_retrieval": {
     "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -25566,8 +25566,8 @@
   },
   "report_compaction": {
     "reason": "Retains every required-source receipt and exact application retrieval; omits full candidate arrays.",
-    "full_output_bytes": 9841782,
-    "full_output_sha256": "033a89a1e17c8ff6e24286d39866adaf4af2c561dc6c1141c0635d9b83a4f22e",
+    "full_output_bytes": 9848281,
+    "full_output_sha256": "98308fb99ca329f2ecdf59d971dae861663a0934ee1c2ca1c4d9fecf63012711",
     "provenance_limit": "The supplied full replay is not rerun or authenticated by the compactor."
   }
 }

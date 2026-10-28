@@ -1,11 +1,11 @@
 {
   "schema": "d0-proof-architecture-search-comparison-v2",
-  "snapshot_commit": "bb0ae145f0df6643fbbdbc6aacd4b97b8eeb9fdf",
+  "snapshot_commit": "34ddcd2f667ae78b2543deb7ed1ad736e4e16fc7",
   "worktree_dirty": false,
   "authority_source_digests": {
     "02_REGISTRY/claims.csv": "4b89e8ed94d74b99622714f496f1fffa86ca976733c7d4340003cd5a07e5a187",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
-    "02_REGISTRY/formal_support.csv": "4cbd5e685624ae63acbc0b6f681eddf7d19e5212dad2107b1aa04a5b8ac6c680",
+    "02_REGISTRY/formal_support.csv": "4cc6e4d2c6460ed0ee1768adc49c9ff8f1035b523271ab1c88ee0c60a48da6f6",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
     "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
@@ -39,9 +39,9 @@
     "legacy_scoped_queries_with_expected_source": 0,
     "current_scoped_queries_with_expected_source": 7,
     "legacy_serialized_answer_bytes_total": 48,
-    "current_serialized_answer_bytes_total": 530124,
+    "current_serialized_answer_bytes_total": 532315,
     "legacy_average_answer_bytes": 2.0,
-    "current_average_answer_bytes": 22088.5,
+    "current_average_answer_bytes": 22179.8,
     "legacy_owner_bearing_queries": 0,
     "current_owner_bearing_queries": 10,
     "semantic_review_required_for_all_queries": true
@@ -776,11 +776,11 @@
         "structured_matches": [],
         "owners": [],
         "text_candidate_paths": [
+          "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md",
           "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
           "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_cold_start_2026-10-25.json",
           "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_diagnostic_archive_phase_shift_2026-10-26.json",
-          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_02a5a6e2.json",
-          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_0668f20a.json"
+          "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_02a5a6e2.json"
         ],
         "structured_match_count": 0,
         "text_candidate_count": 5,
@@ -791,7 +791,7 @@
         "expected_sources_without_assembly_or_formal_support": [],
         "relevant_text_candidate_count": 0,
         "text_candidate_count_not_in_scoped_source_set": null,
-        "serialized_answer_bytes": 11586
+        "serialized_answer_bytes": 13777
       },
       "semantic_review": {
         "owner_correctness": "exact registered links are shown; independent owner correctness is not assessed by search output",
