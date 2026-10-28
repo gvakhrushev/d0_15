@@ -83,25 +83,29 @@ independently admissible variation.
 
 ## Lean formalization slice
 
-Four supporting results from this integration are represented by compiled
+Six supporting results from this integration are represented by
 Lean modules and registered in `formal_support.csv`. They are imported by
 `D0.All`; none is a physical-closure claim.
 
 | Module | Machine-checked statement | Remaining boundary |
 |---|---|---|
-| [`D0.Algebra.MovingProjectorTransport`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean) | In a possibly noncommutative ring, for idempotent `P` with tangent equation `P dP + dP P = dP`, `K=[dP,P]` satisfies `[K,P]=dP`, and the differentiated cut minus common transport is `(1-P)(dU-[K,U])P`. A separate `StarRing` lemma proves `K` anti-self-adjoint when `P` and `dP` are self-adjoint. | The tangent equation is supplied, not derived from a differentiable projector family. This does not formalize the trace/log-determinant derivative, thermal term, finite-rank Hilbert hypotheses, or physical admission. |
+| [`D0.Algebra.MovingProjectorTransport`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean) | In a possibly noncommutative ring, for idempotent `P` with tangent equation `P dP + dP P = dP`, `K=[dP,P]` satisfies `[K,P]=dP`, and the differentiated cut minus common transport is `(1-P)(dU-[K,U])P`. A separate `StarRing` lemma proves `K` anti-self-adjoint when `P` and `dP` are self-adjoint. | This algebraic API takes the tangent equation as an input; the calculus module below derives it from a locally idempotent differentiable curve. |
+| [`D0.Algebra.MovingProjectorCalculus`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorCalculus.lean) | On the same real-parameter curve, local `P²=P` yields the tangent equation, the actual product-rule derivatives of `C=(1-P)UP` and `F=C†C`, and the relative transport identity. For complex matrices, real fixed `z` and a determinant in the slit plane at the evaluation point, `complex_matrix_feedback_real_logdet_of_slit_hasDerivAt` proves the derivative of `−log det(1−zF)` as `2z Re Tr(R C† (1−P)(dU−[K,U])P)`, with the actual inverse `R`; determinant reality and local positivity follow on that curve. The displayed finite example is a rank-one orthogonal-projector curve and fixed unitary reflection with nonzero `dF` and weighted return trace. | Differentiability, local projector/self-adjoint conditions, and the slit-plane condition at the point are explicit inputs. The module does not derive the latter from `0<z<1` and unitarity, construct an admitted native field curve, vary the Gram or β/z, or prove the thermal and complete Info/work/controller source. |
+| [`D0.Analysis.MatrixDeterminantDerivative`](../../03_FORMALIZATION/D0/Analysis/MatrixDeterminantDerivative.lean) | For an arbitrary differentiable real-parameter complex-matrix curve, the determinant derivative is the sum of determinants with one replaced row. At an invertible matrix it yields Jacobi's inverse-trace formula; on the complex slit plane it yields the principal log-determinant derivative. | The theorem concerns finite matrices in the stated Frobenius norm. Invertibility or the slit-plane condition is an explicit premise where used. |
 | [`D0.Geometry.ArchiveGradedRefinementComposedReadout`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean) | Iterates the owned adjacent pullbacks literally, proves their cochain identity for every number of steps and an exact singleton prefix/tail formula. At doubling, the stated fixed-component normalized L1 and L2-squared errors are both exactly `1`. | The probe is the literal one-form embedding but its fixed-component sampler is not selected as a physical observable. The result shows chain-map preservation alone does not imply convergence of that readout; it proves no universal refinement obstruction. |
 | [`D0.Geometry.RefoliationWitnessCoefficientExtraction`](../../03_FORMALIZATION/D0/Geometry/RefoliationWitnessCoefficientExtraction.lean) | From the three exact coefficient equations displayed for the shear, trace, and two-scalar witnesses, proves `a*b=1`, `lambda=1/2`, and `C*D=I₂`. | The bracket/witness equalities are premises. It does not derive the continuum Poisson bracket, strong hypersurface-deformation algebra, canonical D0 variables, lapse generators, or physical admission. |
 | [`D0.Geometry.MovingCutQueryCancellation`](../../03_FORMALIZATION/D0/Geometry/MovingCutQueryCancellation.lean) | Over `ℚ`, defines a rank-one projector and a 2×2 orthogonal reflection, proves the complete cut derivative row, two-sided resolvent inverse, and generic cancellation of the QUERY-only and cut-only source rows under joint conjugation; the exact rational control is `+16/35`, `−16/35`, `0`. | This is the finite algebraic control in #334 §7cu. It does not prove either tangent is an admitted D0 variation, transport the thermal operator, construct the original 42-field map, or establish physical source selection. |
 
-The first module formalizes the algebraic moving-cut transport portion of the
-published source, not the complete analytic derivative above. The second
-extends the existing open graded-refinement proof target. The third formalizes
-only the algebraic coefficient extraction from the pinned #334 witness
-equations, not their analytic derivation. The fourth formalizes the separate
-finite 2×2 QUERY/cut cancellation control, not the full paid source or its
-physical admission. Source-to-claim acceptance, the full bracket proof, and
-physical refinement assumptions remain open. `#print axioms` in
+The moving-cut modules formalize algebraic transport and the conditional
+feedback derivative of the published source. The determinant derivative and
+log-determinant identities are general finite-matrix results. The thermal
+trace-exponential derivative and complete Cost-Info source remain open. The
+graded-refinement module extends the existing open proof target. The
+refoliation module extracts algebraic consequences from the pinned witness
+equations, while the QUERY module proves a separate exact finite cancellation
+control. Source-to-claim acceptance, the full bracket proof, and physical
+refinement assumptions remain open. At the earlier algebraic checkpoint,
+`#print axioms` in
 Lean 4.30.0 reports `[propext]` for the generic cut-relative identity and
 `[propext, Classical.choice, Quot.sound]` for the self-adjoint generator and
 complex-matrix specialization. The [compiled declaration receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_refinement_declarations_2026-10-28.json) records actual elaborated signatures, type/proof dependencies, source ranges and axiom footprints for five load-bearing declarations from `D0.All` at this source digest. This is a type-level cross-check against the coded theorem statements; the prose-to-theorem and physical application links still require review.
@@ -114,14 +118,12 @@ three existing CAR `native_decide` declarations (`carCreateInt_degree_raise`,
 `carCreateInt_singleton_vacuum`, and `carCreateInt_support`), plus
 `propext`, `Classical.choice`, and `Quot.sound`; the fixed-component error
 identity uses only those latter three. Those earlier modules introduce no
-Lean axioms or `sorry`/`admit`. The new coefficient module's actual axiom
-footprint will be recorded in its own elaborated declaration receipt. The
-updated [final `D0.All` build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json)
-records a successful 4,752-job build on Lean 4.30.0, including project-source,
-nine pinned dependency checkout, environment and executable fingerprints. It
-is point-in-time provenance with the explicit boundary that kernel/dynamic
-libraries, external toolchain settings and generated caches are not
-authenticated. The source hashes of the three supporting modules are
+Lean axioms or `sorry`/`admit`. The coefficient module's clean-snapshot
+declaration receipt records its premise-bearing type and axiom footprint. The
+then-current `D0.All` receipt records a successful 4,752-job Lean 4.30.0 build;
+it predates the latest moving-cut calculus integration and is not the final
+build receipt for this combined head. Source digests and dependency/environment
+fingerprints are retained in the linked historical receipt.
 `f10d424372a2bcb1960ee78f7ffa08d2957baa3b5d07aad4a7681bcc4e4ee642` and
 `06d204cc0e8df94a0714a8e8574b493065f8770ea8be1fa1e42d66fb8babb99f`, and
 `a7d7707f104a89556e8de5141cde878396a5b1fe918f87847ef25e777402866b`.

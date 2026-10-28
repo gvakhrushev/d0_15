@@ -21,11 +21,13 @@ import D0.Algebra.FiniteWeightedAdjoint
 import D0.Algebra.GaloisComposite
 import D0.Algebra.GaloisPhiNontrivial
 import D0.Algebra.HurwitzLocalBoundary
+import D0.Algebra.MovingProjectorCalculus
 import D0.Algebra.MovingProjectorTransport
 import D0.Algebra.SedenionBrownS3
 import D0.Algebra.SedenionClifford8
 import D0.Algebra.SedenionTower
 import D0.Algebra.Sedenions
+import D0.Analysis.MatrixDeterminantDerivative
 import D0.Analysis.MidpointQuadrature
 import D0.Born
 import D0.Bridge.AdlerWeissBridge

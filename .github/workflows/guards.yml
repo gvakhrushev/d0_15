@@ -46,7 +46,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Validate canonical architecture
-        run: python tools/validate_repo.py
+        run: |
+          python tools/test_validate_repo.py
+          python tools/validate_repo.py
 
       - name: Formalization debt non-growth
         run: python tools/formalization_debt_audit.py --check
@@ -92,6 +94,7 @@ jobs:
         run: |
           python tools/test_task_dispatch.py
           python tools/test_run_research_certs.py
+          python tools/test_historical_book_inputs.py
           python tools/test_native_pairing_refinement_inputs.py
           python tools/test_research_input_closure.py
           python -m tools.test_compact_proof_architecture_cold_start

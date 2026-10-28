@@ -1364,6 +1364,7 @@ def select(repo: Path, commit: str, base: str | None) -> dict:
     """Conservative consumer selection. Does not execute certificates."""
     import native_checkpoint_inputs as historical
     import native_pairing_refinement_inputs as pairing_historical
+    import historical_book_inputs as book_historical
     repo = Path(repo)
     commit = resolve_commit(repo, commit)
     base_commit = resolve_commit(repo, base) if base is not None else None
@@ -1386,6 +1387,8 @@ def select(repo: Path, commit: str, base: str | None) -> dict:
             reasons.append("historical-report-input-binding")
         if cert == pairing_historical.ENTRYPOINT and changed_set & pairing_historical.SELECTION_INPUTS:
             reasons.append("historical-pairing-input-binding")
+        if cert in book_historical.ENTRYPOINTS and changed_set & book_historical.SELECTION_INPUTS:
+            reasons.append("historical-book-input-binding")
         inputs = info["transitive"]
         if any(item["path"] in changed_set for item in inputs):
             reasons.append("changed-input")

@@ -63,7 +63,7 @@ theorem escape_gram_eq (c u : ℚ) :
   unfold escapeGram
   rw [escape_transpose_eq, escape_eq]
   ext i j
-  fin_cases i <;> fin_cases j <;> simp [Matrix.mul_apply] <;> ring
+  fin_cases i <;> fin_cases j <;> simp [Matrix.mul_apply]; ring
 
 theorem resolvent_is_two_sided_inverse
     (c u z : ℚ) (hden : 1 - z * u ^ 2 ≠ 0) :
@@ -94,7 +94,7 @@ theorem resolvent_is_two_sided_inverse
 theorem query_velocity_source_term_eq (c u : ℚ) :
     escapeVelocity c u (queryVelocity c u) 0 = !![(0 : ℚ), 0; 2 * c * u, 0] := by
   ext i j
-  fin_cases i <;> fin_cases j <;> simp [escapeVelocity, queryVelocity, K, P, U, Matrix.mul_apply] <;> ring
+  fin_cases i <;> fin_cases j <;> simp [escapeVelocity, queryVelocity, K, P, U, Matrix.mul_apply]; ring
 
 theorem cut_velocity_source_term_eq (c u : ℚ) :
     escapeVelocity c u 0 (cutVelocity u) = !![-u ^ 2, 0; -2 * c * u, u ^ 2] := by

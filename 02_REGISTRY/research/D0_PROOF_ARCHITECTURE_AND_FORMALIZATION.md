@@ -4,6 +4,197 @@
 
 Primary integration artifact for WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION. The broad objective remains active. C0 is not frozen or independently accepted, so no formalization coverage percentage is reported. Counts below describe starting inputs, not the C0 denominator.
 
+## Book and registry maintenance checkpoint — 28 October 2026
+
+This bounded increment continues the existing #402 owner in response to the
+request to reconcile the books, README and registries with the accumulated
+results. It does not complete the broader formalization programme, freeze C0,
+accept new #334 applications or close a physical GR premise.
+
+Input refs: main 8b94198c8dfbdf5983ad0b350b058fb30bb68a54;
+#402 before this increment 30ffef0f5a4353874f8966a4b69d09e534f3c47d;
+published science #334 eebcb5e467742df3e9cf7fa9702042d7294aa742.
+The concurrently published #402 source intake
+5007f1707932629613d4b846482b8cd8cae9a4a3 is preserved by the integration merge.
+The later #402 refoliation-source intake at
+2ba131d0c0893668d82afb87168e4c0097f6f1b4 is preserved as well, including its
+original source bytes, separate replay and source-integrity controls.
+The later conditional geometric-closure source is read at #334
+c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a.
+The [dated ledger section](../RESEARCH_LEDGER.md#book-and-research-reconciliation--28-october-2026)
+pins the seven main research sources by commit/path/blob and records their
+remaining application conditions. All read-only source-scope reviews use
+those actual sources. They are editorial reviews, not scientific application
+acceptances.
+
+### What the increment changes
+
+All ten authored books now explain the current composition: the verification
+kernel and complete future profile, operational theory transfer, scene
+histories, finite CAR matter, complete action/price with moving cut, coherent
+history and real clock, configured nonlinear Einstein–CAR recovery, and its
+cosmological/wave consumers. The source-matched proof bounds and physical
+hypotheses remain explicit. README and the research reading map provide a
+shorter route through these arguments.
+
+The subsequent source intake is reflected in the local reading paths and
+the exact algebraic support in Books 03/05/06. The new refoliation calculation
+is explained as a conditional law-selection theorem inside its declared
+canonical continuum class. It does not identify moving-cut block-frame
+curvature with the hypersurface-deformation algebra or supply the native
+symplectic data, normal generators, lapse family and controlled bracket limit.
+
+Targeted corrections remove several contradictions with current owners:
+MDL is no longer stated to force physical stationarity; formal continuation
+of a real weight is not quantum reconstruction; finite A2/Bianchi results
+are not presented as full native GR selection; historical completion labels
+are scoped to their original finite results. The original moving-cut
+derivative retains positivity/unitarity and fixed-parameter hypotheses.
+The cut-price positive gain retains the original heat/count bounds and the
+common-null-family restriction. Coherent-history control is a spectral floor
+for Theta_n, with its actual purification and primitive-fixture conditions.
+
+The existing registries are reconciled without adding a parallel status
+system:
+
+- Two malformed claims.csv records are repaired losslessly: unquoted commas
+  had hidden portions of their existing notes from DictReader.
+- Nine history/moving-matter book locators point to the new exact chapters.
+  The Perron-history note is limited to the actual finite counts, negative
+  control and separate eigen-equation, without an unconstructed all-depth
+  cylinder measure.
+- The quasicrystal/lattice notes and Wilson-bridge justification are limited
+  to the finite certificates' actual checks and retained premises. The
+  quasicrystal claim now declares its previously omitted existing
+  ASSUMP-WILSON-LATTICE-1974 dependency. The certificate's hard-coded
+  free-parameter flags are not a carrier-classification proof.
+- The 56 legacy-label aliases now point to their first exact occurrence in
+  the same current book (55 line numbers changed); both canonical-target
+  aliases remain unchanged. This is locator maintenance, not a new alias
+  equivalence.
+- All 889 claim IDs, formal proof/certificate locators and release statuses
+  remain in their existing ownership. The one additional bridge dependency
+  makes a previously implicit premise explicit.
+
+The source comments and outputs of unchanged historical certificates are
+not rewritten as part of this increment. Corrected registry/book scope
+controls their interpretation.
+
+### Preserve historical book evidence while editing exposition
+
+Twenty-seven existing research checks record earlier book-file hashes.
+[The historical-book input contract](sources/d0_book_editorial_inputs_2026-10-28/README.md)
+binds their exact checker and receipt bytes at 30ffef0f to five book snapshots
+from published 34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a. Three snapshots already
+exist; only the missing Book00 and Book02 bytes are added.
+
+The existing isolated runner applies these exact inputs only to named
+consumers in its temporary detached worktrees. It validates every binding
+before writing, composes with prior native-input overlays, restores current
+book bytes and detects mutations. Logs explicitly identify historical replay
+and set current_book_prose_certified=false. Scientific checker files and
+expected scientific receipts are unchanged.
+
+A new CSV shape guard prevents future silent row truncation. Focused hostile
+controls cover malformed fields/headers, wrong or missing historical inputs,
+changed checker/receipt bytes, mutation, attached or incorrectly placed
+worktrees and shared-helper dependency selection. The two new suites are
+included in the existing guards workflow.
+
+### Validation and retained blockers
+
+Structural, generated-view and targeted replay results are recorded at the
+final checked source checkpoint below. No new Lean proof or full Lean
+rebuild is claimed for this prose/metadata increment.
+
+The registered certificate sweep on the book-maintenance inputs ran 463
+entries: 459 PASS, one registered OPEN, two SKIP and one FAIL. The OPEN is
+the existing alpha-seam proof target. The two skips require Astropy/the DESI
+FITS input and a missing pinned DESI BAO data file, respectively. The heavy
+vp_scene_bartholdi_typed.py check was excluded under the existing CI budget.
+These outcomes are not reported as a completely green certificate suite.
+
+The registered certificate sweep found an inherited failure in
+vp_total_extension_primitive_minimality.py: the exclusion row for
+PRIM-ISOMETRIC-DIRAC-J lacks an existing claim-owner citation after the
+earlier scope repair. The same failure is reproducible at the unmodified
+#402 input 30ffef0f. The row explicitly says its full decomposition remains
+open; adding a token solely to satisfy the assertion would not justify an
+exhaustive minimality conclusion. This increment preserves that blocker and
+does not weaken its certificate or reinstate a refuted complete-Hilbert claim.
+
+All 27 book-bound research consumers were replayed in isolated worktrees at
+95a1ace899eb894e843d253a7651b1cb9a08432f: 15 PASS and 12 FAIL. Each failure
+occurs at an earlier Lean source-hash binding, after the historical book
+inputs have been restored successfully. All tracked-mutation and
+historical-input-mutation flags are false. The failed consumers were then
+replayed at the unmodified #402 baseline
+30ffef0f5a4353874f8966a4b69d09e534f3c47d with the same Python 3.12.14,
+SymPy 1.14.0 and mpmath 1.3.0 environment: all 12 fail with exactly the same
+final error. There is no change to 03_FORMALIZATION or the scientific
+certificate/checker directory between those two checkpoints.
+
+The affected checker families are af_trace_preparation,
+composed_feedback_dynamics, curved_soldered_heat, cyclic_history_price,
+cyclic_memory_minimum, full_preparation_fiber,
+golden_hodge_state_separation, hodge_connes_metric, joint_adjoint_source,
+positive_heat_radial_balance, soldered_heat_source and
+strict_observable_descent (all with prefix a4d_native_). Their receipts
+retain earlier versions of 15 distinct Lean inputs, including the AF tower,
+source preparation, phase shift and CAR/Hodge operators. This is inherited
+historical-input debt, not evidence that the current Lean bytes reproduce
+those earlier capsules. A future repair must bind and verify the actual
+historical dependency closure; changing expected scientific hashes or
+interpreting historical replay as a current-source proof is not admissible.
+
+Earlier time-ordered checkpoints below keep their recorded input refs and
+evidence. A past successful run is not a statement that the current tree has
+passed an unchanged broad closure test.
+
+### Checked source checkpoints and final integration
+
+The complete authored source and registry reconciliation is committed at
+58a5641857deddc9cdd6f220ebab9ad31c80a605. The current claim/alias views were
+generated from that clean source. Their navigation inputs contain 889 claim
+rows, 711 book headings and 840 literal claim-ID mentions across 430 claims.
+All 56 legacy-label first-occurrence locators and both canonical alias targets
+resolve. These are source/navigation counts, not a semantic coverage ratio.
+
+The full retrieval measurement and its clean-checkout compaction use
+3b6dc8a433b1431d1c1238ee3682dc0746d2cd5c. The existing current reports are:
+
+- [Cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json),
+  SHA-256 94a75962d3f8462175ec0f8ba75bf6d4ccd743d7f9d0338df3c51c9c10b80433.
+- [Search-process comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json),
+  SHA-256 5222b0f3ee5555bc13fd19b63f447f74fc8be8a0e31fb590cb200546fac8612b.
+
+All 24 retrieval cases find their required sources: 169 of 169 references.
+The additional change-impact regression passes, giving 25 benchmark cases.
+The matched 24-query comparison retrieves all seven scoped sources with the
+current search; the historical search retrieves zero of those seven. These
+are the stated query/fixture results, with manual scientific scope review
+retained. The recorded owner/support distinctions are unchanged.
+
+The final structural checks pass with 889 claims, 31 assumptions, 58 aliases,
+221 formal-support rows, 944 modules in the generated Lean closure and zero
+warnings. Generated Lean/work/assembly views and claim-strength lint pass.
+Assembly remains valid with 98 results, 54 active results, 22 obligations,
+five discharged obligations and scientific_promotion=false.
+The CSV hostile-control suite passes 7/7 and the historical-book isolation
+suite passes 17/17 at the clean retrieval checkpoint. The unchanged isolated
+runner and dependency-selection suites also passed 34/34 and 22/22 during
+this source increment.
+
+The later 2ba131d0 intake changes neither the seven authoritative input files
+fingerprinted by the search dataset nor the book inputs, search runner or
+cold-start cases. The current reports therefore retain their actual
+3b6dc8a4 measurement provenance. The final integration preserves the newer
+intake and rechecks its separate refoliation-retrieval control, current-view
+freshness and source integrity: all five focused source/retrieval tests and
+all nine source-integrity controls pass on the combined tree. No scientific
+receipt is regenerated by this
+navigation update, and no new Lean build is claimed for the editorial work.
+
 ## Starting snapshot
 
 Task registration was merged into main as 8b94198c8dfbdf5983ad0b350b058fb30bb68a54. Execution continues on wrk/d0-proof-architecture-formalization in Draft PR #402. Lean toolchain: leanprover/lean4:v4.30.0.
@@ -11558,10 +11749,10 @@ extends the existing open graded-refinement claim with literal multi-step
 composition and a fixed-component sampling control. The new
 `D0.Geometry.RefoliationWitnessCoefficientExtraction` formalizes only the
 algebraic consequence of the three coefficient-witness equalities in the
-current #334 refoliation source. These are supporting theorems only; the
-trace/log-determinant derivative, physical readout choice, source-to-claim
-acceptance, analytic bracket derivation, and physical refinement remain
-outside their conclusions.
+current #334 refoliation source. The moving-cut calculus and the finite
+QUERY/cut module are supporting theorems only: they do not establish the
+thermal derivative, a selected physical readout, source-to-claim acceptance,
+the analytic bracket derivation, or physical refinement.
 The existing `proof_architecture.py search` now retrieves the published
 moving-cut note and the integration map; its regression test asserts that the
 Lean support row is still reported as a metadata locator and that no physical
@@ -11571,7 +11762,7 @@ claim. A separate regression locates the conditional refoliation witness
 module through its source-specific `formal_support` row while preserving
 `no_exact_assembly_owner_link`.
 
-The current #334 head is `c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`, four
+An earlier #334 checkpoint was `c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`, four
 commits beyond the previously ingested `eebcb5e` source. Its new conditional
 root-cut/refoliation classification is preserved under
 [`d0_334_refoliation_delta_2026-10-28`](sources/d0_334_refoliation_delta_2026-10-28/README.md)
@@ -11613,16 +11804,11 @@ a claim owner or assembly application; it has no effect on `GR_closed=false`.
 
 The new module source SHA-256 is
 `a7d7707f104a89556e8de5141cde878396a5b1fe918f87847ef25e777402866b`. Its
-narrow target passed 2,946 Lake jobs, and the subsequent public `D0.All` build
-passed 4,752 jobs on source digest
-`97cbcbe513117fa31e437ffd0dfaf1b14e597d698a38a525cb06990453564a3f` with
-dependency digest
-`a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e` and
-environment digest
-`f56162d543d47f800e04353316af8fba106e6dca995509fdd9d5a6ca880e71da`. The
-updated [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json)
-retains its point-in-time trust boundary; it does not authenticate the kernel,
-dynamic libraries, external settings, or generated caches.
+narrow target passed 2,946 Lake jobs, and the then-current public `D0.All`
+build passed 4,752 jobs. Those receipts predate the subsequent moving-cut
+calculus integration; the combined build receipt is recorded separately. Their
+point-in-time trust boundary does not authenticate the kernel, dynamic
+libraries, external settings, or generated caches.
 
 The elaborated declaration inventory at clean commit
 `8528d8cea34850f5addf404bc0fdc708cf252b7c` records the exact theorem type,
@@ -11631,8 +11817,8 @@ trust footprint. The proof uses the existing `Classical.choice`, `Quot.sound`,
 and `propext` axioms; it introduces no new axiom declaration. The receipt is
 [`refoliation_witness_coefficients_declarations_2026-10-28.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/refoliation_witness_coefficients_declarations_2026-10-28.json)
 (SHA-256 `5bff12baee68cf5897c870349db5609c5efef1625674ad33588a93c4532463cb`);
-its `lean_source_digest` matches the public build receipt and its snapshot is
-clean. The fully elaborated type exposes all three witness equations as
+its `lean_source_digest` matches that historical build receipt and its snapshot
+is clean. The fully elaborated type exposes all three witness equations as
 premises, so the extraction cannot be mistaken for the analytic bracket proof.
 
 ### Latest #334 source checkpoints and the finite moving-cut Lean control (28 October 2026)
@@ -11640,7 +11826,8 @@ premises, so the extraction cannot be mistaken for the analytic bracket proof.
 The existing owner PR #334 has advanced beyond the earlier refoliation
 checkpoint. The reviewed source head is
 `5fe5203da2439d325dc9ef70f52c1111822fc22b`; the boundary-rigidity,
-unpadded-root/QUERY, and latest generated-cut applications are independently preserved and verified in
+unpadded-root/QUERY, and latest generated-cut applications are independently
+preserved and verified in
 [`D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md`](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md).
 They add a finite endpoint/source Hessian and conditional boundary
 classification, plus a new unpadded-root negative click row and a separate
@@ -11674,3 +11861,29 @@ competitor. The Lean module above does not formalize these new applications;
 their normal/optimized controls are recorded with their exact numeric and byte
 boundaries in the source intake. The remaining same-task admission, full
 Cost-Info source, field map, gain and physical refinement remain open.
+
+### Moving-cut feedback calculus: reusable formal support
+
+The matrix-calculus modules connect the #334 moving-cut source to reusable
+finite-dimensional results. `D0.Analysis.MatrixDeterminantDerivative` derives
+the determinant row-replacement formula for a differentiable curve, Jacobi's
+inverse-trace formula at an invertible matrix, and the principal complex
+log-determinant derivative on the slit plane.
+`D0.Algebra.MovingProjectorCalculus` derives the projector tangent equation
+from local idempotence, differentiates the cut and return on the same curve,
+and proves the relative `−log det` feedback source with the actual resolvent.
+For real fixed `z`, Hermiticity makes the determinant real; slit-plane
+membership at the evaluation point implies the local positive chart used in
+the real logarithm.
+
+The formal example uses a differentiable rank-one orthogonal-projector curve
+and a fixed unitary reflection. It exhibits a nonzero return derivative,
+weighted trace `−48/17`, and feedback derivative `−24/17` at `z=1/2`. These
+calculi do not select a physical source: the slit-plane premise is retained
+rather than derived here from `0<z<1` and unitarity; the thermal derivative,
+moving Gram, variable β/z, native admitted field variation, complete
+Info/work/controller price, and GR composition remain open. The latest owner
+source remains #334 at `5fe5203da2439d325dc9ef70f52c1111822fc22b`; this calculus
+reuses the earlier moving-cut expression and adds no physical selection.
+The detailed application and its explicit interface are recorded in
+[`D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md`](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md).

@@ -1,0 +1,580 @@
+{
+  "book_source_commit": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+  "books": {
+    "BOOK_00": {
+      "bytes": 75761,
+      "git_blob": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+      "path": "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "sha256": "2823c5bf4517b77044029b06cade0b30cb817ace50a1b0e5dba62de479e25c5c",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_book_editorial_inputs_2026-10-28/BOOK_00.md",
+      "source_commit": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a"
+    },
+    "BOOK_01": {
+      "bytes": 191652,
+      "git_blob": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
+      "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_01.md",
+      "source_commit": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a"
+    },
+    "BOOK_02": {
+      "bytes": 195678,
+      "git_blob": "79ad345ddef6bb06c638f41721db1a84843e4a9b",
+      "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "sha256": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_book_editorial_inputs_2026-10-28/BOOK_02.md",
+      "source_commit": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a"
+    },
+    "BOOK_03": {
+      "bytes": 86193,
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_03.md",
+      "source_commit": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a"
+    },
+    "BOOK_06": {
+      "bytes": 141578,
+      "git_blob": "99721fb50de66688564638f5f2b449a38675d7bd",
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "source_commit": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a"
+    }
+  },
+  "boundary": "Only the twenty-seven enumerated pre-existing checks use their unchanged recorded book inputs inside an isolated replay. Scientific checker bytes and expected receipts remain immutable. Current books are edited exposition; this replay does not certify their new prose or promote any claim.",
+  "checker_source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d",
+  "entrypoints": {
+    "02_REGISTRY/research/certificates/a4d_book03_feedback_variation_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_01",
+          "receipt_pointer": [
+            "book01_sha256"
+          ]
+        },
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "book03_sha256"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_book03_feedback_variation_result.json",
+      "receipt_sha256": "fe61c021c00eaab2011d1a10221e81ac05c896b4ee05ced1ce31013b49c88900",
+      "sha256": "4a801ee871d6a446bb382c10220e171f34e39b23df085e3abdc2afe10b0af952",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_00",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md"
+          ]
+        },
+        {
+          "book": "BOOK_01",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+          ]
+        },
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_results.json",
+      "receipt_sha256": "905afe23e06eb7f4c453aadfd26c3a69be176403107311795aedb9de05daa527",
+      "sha256": "4a1a62d713455ec055f1fe3f7a829be38861676a7e0d231e3748f9104ffbb72c",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_af_trace_preparation_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "inputs",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_af_trace_preparation_certificate.json",
+      "receipt_sha256": "2ab40c09345f787240a2d655979d7dc945ffb6d5af64196321418efbdccad175",
+      "sha256": "ee58d2d46c0ae0a46f4646e6d83c75f9bc33e16a688026abb329a1aa0eacd8a2",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_00",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md"
+          ]
+        },
+        {
+          "book": "BOOK_01",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+          ]
+        },
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_results.json",
+      "receipt_sha256": "9623b7c587704805b422532489e9ecfa31b86a14e53be350ab605bdbf64d75ef",
+      "sha256": "2c6db908249c1b4bf055501df11f7974564303a88fb9deb39cf559c867daf827",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "primary_input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_results.json",
+      "receipt_sha256": "51668d2ecc9aa1b41783f34b5a940123e4fe04e955e1a7c5fc0dd2ea187979ed",
+      "sha256": "7040f2f9b892e772f3f7bb240ddd44aa251a5834cb797be4c0923deff76cf809",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_certificate.json",
+      "receipt_sha256": "7cc78c0960799fdedc4effb8da18f30f533af5170094f6c0d7295bc7ce9abf96",
+      "sha256": "4fe026c66efa509b75c85bcccc8640b986f1c3ea0948ed732ecad3575476b4b8",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "primary_and_prior_input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality_results.json",
+      "receipt_sha256": "9c36a6f01a8b9f5d60c23cc4040c06c68e70bf35ccc0c1d645e8aa70c6a3709d",
+      "sha256": "74d0c2c3746029ecf8982b36fc4f49171ad580411e3de4618e666e38c59b0ba2",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_certificate.json",
+      "receipt_sha256": "d9f4e155e62ef470841974ed43ce2a6369cfb98f88a5d3d81fb662ad71b7e213",
+      "sha256": "1bcc0a716bcf95924ab5936c723148089b7cd6cbb33f71bff7d94434fe3089d9",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_cyclic_history_price_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "inputs_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_cyclic_history_price_certificate.json",
+      "receipt_sha256": "18263750f26aac3b96caa0d89791378c3851df2bc3a592cbcfbbf28c7f05da07",
+      "sha256": "1e090d2412bd796dd07f188e6039daa1956f0151345d79d0662611f46c3bef3a",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_cyclic_memory_minimum_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "inputs_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_cyclic_memory_minimum_certificate.json",
+      "receipt_sha256": "7221a054c6fc9c97a9bdf92acc1095e4f8dc8f91bbdfc23eab509386e9b36287",
+      "sha256": "3c98b2d215a073b8488816d81f6002c7cfeab2f53d2ac1bca1d95bb0ce11a3f8",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_certificate.json",
+      "receipt_sha256": "81903c09d6350b614e930986702a123ee260f06b86eba93d11065008c1c4854d",
+      "sha256": "aa0eb065d863f7d6e457b841591675b9dcbc148aef022e68a8c95b8392cd9a26",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_00",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md"
+          ]
+        },
+        {
+          "book": "BOOK_01",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+          ]
+        },
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_certificate.json",
+      "receipt_sha256": "1f84101bc78578841031cc6a846ecfbcf3af21def1b9b0cfaefcdd312a8aa3e1",
+      "sha256": "be205aa580a14ef3c66c23ada1177e7fc480c3f0b625aba5ce33ec5e12861c2c",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_00",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md"
+          ]
+        },
+        {
+          "book": "BOOK_01",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+          ]
+        },
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_certificate.json",
+      "receipt_sha256": "48eb529def8b152f96c967a08ce2e2f9b1cd8ea11bc39dd2cf47b015d1d6beec",
+      "sha256": "d076821b312fd66247deb636048398362477cf5d4586489affc20f462815836b",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_golden_hodge_state_separation_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "inputs_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_golden_hodge_state_separation_certificate.json",
+      "receipt_sha256": "deaa5532c14d06fd78779091b3335d4d963560613fd813f68c73243098ef55c6",
+      "sha256": "93a114fbec086b8cf8ac31dd3979e4b7513bc594b796e3af60a2994c7c8b8a36",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_00",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md"
+          ]
+        },
+        {
+          "book": "BOOK_01",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+          ]
+        },
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_certificate.json",
+      "receipt_sha256": "005d80f163aea88f3f852d99d8a5266f4caa860efc0d2afee3d41c2ddef01531",
+      "sha256": "cf889f7af833e01b48b8196c4b62a088ca975762d3d362eab09ce32a181d080d",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_history_spectral_completion_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_history_spectral_completion_certificate.json",
+      "receipt_sha256": "eae2d63ed99370341c51ffa1c132a3fea10ee11c3ea586b3aa7c73da69eebfb2",
+      "sha256": "a60ec6edeff0ff585028b7bf2f590773de5e33ccc6a7195d756607cc8e194447",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "primary_and_prior_input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json",
+      "receipt_sha256": "01bf1f694ceaf8ccfff1f850067acb3a6a4989f4c2e7c9c10cb7e7bedf8d226f",
+      "sha256": "2426fdaa24e19fd69aed9feb66507b32d6c52c433945b427ee3978f5bcc4ba23",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_certificate.json",
+      "receipt_sha256": "8f24521793732b087f65f75faf8c853a95fac2cdf07290636bdc79cbb243da33",
+      "sha256": "74096dfe1684d682d292001b5ab535aec6e917df5732905cf05cc2a54308a651",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "source_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        },
+        {
+          "book": "BOOK_06",
+          "receipt_pointer": [
+            "source_sha256",
+            "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_results.json",
+      "receipt_sha256": "4e3462bcad5690f3cee7b31d792d3130293201367e87e8bce6477395cca58773",
+      "sha256": "d377eefc0e27dca110cb7d8cb3824950ec26b0c2c67143eef93ff150ca79611f",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "primary_and_prior_input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_results.json",
+      "receipt_sha256": "cbf0f589aa94a6332f29e2e5a9b43e3ad9023d43933078e85468487dfbf51d58",
+      "sha256": "59b9c56cd95e29a0924e12e11fa56f109461d7ae8c89bc6d9c8442ba8eaef7c6",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_00",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md"
+          ]
+        },
+        {
+          "book": "BOOK_01",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+          ]
+        },
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_certificate.json",
+      "receipt_sha256": "0bfbb02423f28dbbf1baaf014729e9e313cbadbae976f36dbf4ca4b2ed830dd1",
+      "sha256": "0fedfee8a287a0bfa70b842b064ae49d56bc3456073c3957a4412202e5bd3f4a",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_02",
+          "receipt_pointer": [
+            "inputs_sha256",
+            "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_certificate.json",
+      "receipt_sha256": "7ba8c5999434fb6e039a6702eb8511df0a5dd67305c6ab1263661eb2dfd09c4a",
+      "sha256": "7a87a4fa38ae01dad6c3d5a94c6e1468b4016f67db6a08c659b5cfb4af11c13d",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_certificate.json",
+      "receipt_sha256": "5fdb0485696cff48fb317f672a042226ee101bee38465a90b0a0544b7d996667",
+      "sha256": "f91c27197e89aa972c5df5df1bf5d96df12fbe8ab507aff5e8f71170e6b504bd",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_certificate.json",
+      "receipt_sha256": "1c1f7f1c55eaa16d4b200d3557ad5744f10fc5aa1345a2c98a8454e64348295a",
+      "sha256": "d2d05b09242f3934bfb15e36990290f80e8374b038bbf2d7d2e654b8382f59f6",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_02",
+          "receipt_pointer": [
+            "primary_and_prior_input_sha256",
+            "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_results.json",
+      "receipt_sha256": "e68bfc5f050f1830fd4b4bff60263209663e277078163e2cae04b31be2af7cdc",
+      "sha256": "bcb60ed36118335f0c77d2425e2c105cec690f7a65c96c7e58f2ff76c174ac9d",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_00",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md"
+          ]
+        },
+        {
+          "book": "BOOK_01",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+          ]
+        },
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_results.json",
+      "receipt_sha256": "2438f7b989b460f364bf55abfd4c456327c403bc0971fa88d86f4cdb758f462b",
+      "sha256": "a55d36eb4e1555bb0413e5995409cbd9a4986043d8fbe1c1abbbef4dee3dc85d",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_check.py": {
+      "book_pins": [
+        {
+          "book": "BOOK_00",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md"
+          ]
+        },
+        {
+          "book": "BOOK_01",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+          ]
+        },
+        {
+          "book": "BOOK_03",
+          "receipt_pointer": [
+            "prior_packet_input_sha256",
+            "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+          ]
+        }
+      ],
+      "receipt": "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_results.json",
+      "receipt_sha256": "199645c781758766b1c4418a48519d7bbe66231aea1a2b6c153e874ae5e66b32",
+      "sha256": "8580449540c77d4ac4edc1f7f275b47c5397705d8642a32aef624e361a725f98",
+      "source_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d"
+    }
+  },
+  "schema": "d0-book-editorial-historical-input/1",
+  "scope": "HISTORICAL_BOOK_INPUT_REPLAY_NOT_CURRENT_BOOK_PROOF"
+}

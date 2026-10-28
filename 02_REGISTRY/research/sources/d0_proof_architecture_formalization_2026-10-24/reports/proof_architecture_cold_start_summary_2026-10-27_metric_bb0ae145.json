@@ -1,12 +1,12 @@
 {
   "schema": "d0-proof-architecture-cold-start-summary-v2",
-  "snapshot_commit": "491172529171bb834c52a81fd91e8e6623a30069",
+  "snapshot_commit": "3b6dc8a433b1431d1c1238ee3682dc0746d2cd5c",
   "worktree_dirty": false,
   "authority_source_digests": {
-    "02_REGISTRY/claims.csv": "4b89e8ed94d74b99622714f496f1fffa86ca976733c7d4340003cd5a07e5a187",
-    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/claims.csv": "957a9c67f56850c5a253eb2f679506dd03fc64b81931a1718ddb84704dc760bd",
+    "02_REGISTRY/assumptions.csv": "8bb15b667efcbb4b3c904df7713107e7356144c1554cef841454b8435a9d5939",
     "02_REGISTRY/formal_support.csv": "4cc6e4d2c6460ed0ee1768adc49c9ff8f1035b523271ab1c88ee0c60a48da6f6",
-    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/aliases.csv": "776a7d786a1485923ddc52050e5df86b64424c78499bd8e0ae04383d0b7c033e",
     "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
@@ -937,7 +937,7 @@
           "query": "native raising operator inverse null leg",
           "evidence_lines": [
             {
-              "line": 207,
+              "line": 351,
               "heading": "## Scientific boundary and reuse vertical",
               "matched_terms": [
                 "raising",
@@ -949,7 +949,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1759,
+              "line": 1903,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -960,7 +960,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 85,
+              "line": 229,
               "heading": "### Pinned #334 raising-inverse retrieval key",
               "matched_terms": [
                 "raising",
@@ -971,7 +971,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 68,
+              "line": 212,
               "heading": "### Pinned #334 raising-inverse retrieval key",
               "matched_terms": [
                 "raising",
@@ -981,7 +981,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1756,
+              "line": 1900,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -991,7 +991,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2051,
+              "line": 2195,
               "heading": "### Null-chart endpoint-map recovery (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -1001,7 +1001,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 418,
+              "line": 562,
               "heading": "## 24 October integrated retrieval and adapter checkpoint",
               "matched_terms": [
                 "raising",
@@ -1011,7 +1011,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 4928,
+              "line": 5072,
               "heading": "### Complete per-fibre kernel classification for the weighted Fourier operator (25 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -1021,7 +1021,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2073,
+              "line": 2217,
               "heading": "### Null-chart endpoint-map recovery (24 October 2026)",
               "matched_terms": [
                 "inverse",
@@ -1031,7 +1031,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2592,
+              "line": 2736,
               "heading": "### Row-action Lorentz endpoint adapter for Eq. (27) (25 October 2026)",
               "matched_terms": [
                 "raising",
@@ -3000,6 +3000,16 @@
               "pin_status": "pinned_snapshot"
             },
             {
+              "path": "../02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+              "hashes": [],
+              "commit": null,
+              "blob": null,
+              "section_refs": [],
+              "pin_complete": false,
+              "context": "[complete midpoint proof](../02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)",
+              "pin_status": "not_followed_bounded_search"
+            },
+            {
               "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
               "hashes": [],
               "commit": null,
@@ -3007,16 +3017,6 @@
               "section_refs": [],
               "pin_complete": false,
               "context": "`02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`,",
-              "pin_status": "not_followed_bounded_search"
-            },
-            {
-              "path": "A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
-              "hashes": [],
-              "commit": null,
-              "blob": null,
-              "section_refs": [],
-              "pin_complete": false,
-              "context": "[exact mathematical proof](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -5350,17 +5350,17 @@
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "          \"path\": \"03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean\",",
+              "context": "        \"03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean\",",
               "pin_status": "not_followed_bounded_search"
             },
             {
-              "path": "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
+              "path": "A4DStarFiniteLorentzQuotient.lean",
               "hashes": [],
               "commit": null,
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "        \"03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean\",",
+              "context": "`A4DStarFiniteLorentzQuotient.lean` SHA-256",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -6186,7 +6186,7 @@
           "query": "finiteGram_add_smul_expand finite Gram expansion arbitrary base frame quadratic remainder",
           "evidence_lines": [
             {
-              "line": 7895,
+              "line": 8039,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "expansion",
@@ -6197,7 +6197,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7892,
+              "line": 8036,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6208,7 +6208,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8118,
+              "line": 8262,
               "heading": "### Generic finite-Gram Fréchet derivative and J² consumer (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6219,7 +6219,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7331,
+              "line": 7475,
               "heading": "### Arbitrary finite sitewise coframe derivative (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6230,7 +6230,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7945,
+              "line": 8089,
               "heading": "### Shared exact finite-Gram difference quotient (26 October 2026)",
               "matched_terms": [
                 "expansion",
@@ -6241,7 +6241,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 164,
+              "line": 308,
               "heading": "### Exact Lean declaration locators for `metric-provenance` (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6252,7 +6252,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7333,
+              "line": 7477,
               "heading": "### Arbitrary finite sitewise coframe derivative (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6263,7 +6263,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7996,
+              "line": 8140,
               "heading": "### Fintype-only generic Gram API (26 October 2026)",
               "matched_terms": [
                 "expansion",
@@ -6274,7 +6274,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7894,
+              "line": 8038,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "finitegram_add_smul_expand",
@@ -6285,7 +6285,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7956,
+              "line": 8100,
               "heading": "### Shared exact finite-Gram difference quotient (26 October 2026)",
               "matched_terms": [
                 "finite",
@@ -6467,7 +6467,7 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 17,
+          "candidate_rank": 18,
           "query": "finiteGramTangent_apply H eta Theta transpose Theta eta H transpose Frobenius norm",
           "evidence_lines": [
             {
@@ -7037,13 +7037,13 @@
           ],
           "citation_only_refs": [
             {
-              "path": "A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
+              "path": "../02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
               "hashes": [],
               "commit": null,
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "The [Golden discrete blow-up + condensed descent theorem](A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)",
+              "context": "The separate [Golden blow-up route](../02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)",
               "pin_status": "not_followed_bounded_search"
             },
             {
@@ -7053,7 +7053,7 @@
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "The [Golden blow-up + condensed metric-source theorem](A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)",
+              "context": "The [Golden discrete blow-up + condensed descent theorem](A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -8721,7 +8721,7 @@
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "          \"path\": \"A4D_NATIVE_FOUR_COPY_TO_CURVATURE_APPLICATION_2026_10_20.md\",",
+              "context": "| [Operational curvature recovery](sources/d0_global_result_composition_2026-10-20/OPERATIONAL_CURVATURE_RECOVERY.md), [four-copy material readout](A4D_NATIVE_FOUR_COPY_TO_CURVATURE_APPLICATION_2026_10_20.md) | [Books 07](../../01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md), [09](../../01_BOOKS/BOOK_09_GRAVITATIONAL_WAVES_AND_QUANTUM_INTERFEROMETRY.md) | Actual gain/readiness, reference and errors; a measurement map is not a field writer |",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -9322,6 +9322,16 @@
               "pin_status": "not_followed_bounded_search"
             },
             {
+              "path": "../02_REGISTRY/research/D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md",
+              "hashes": [],
+              "commit": null,
+              "blob": null,
+              "section_refs": [],
+              "pin_complete": false,
+              "context": "The [detailed composition](../02_REGISTRY/research/D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md)",
+              "pin_status": "not_followed_bounded_search"
+            },
+            {
               "path": "02_REGISTRY/research/D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md",
               "hashes": [],
               "commit": null,
@@ -9329,16 +9339,6 @@
               "section_refs": [],
               "pin_complete": false,
               "context": "| `02_REGISTRY/research/D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md` | `3f3cb2ec4410125d5fe932614e8dd61d14e226d22c23e7375687be51bf592791` |",
-              "pin_status": "not_followed_bounded_search"
-            },
-            {
-              "path": "D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md",
-              "hashes": [],
-              "commit": null,
-              "blob": null,
-              "section_refs": [],
-              "pin_complete": false,
-              "context": "[foundation note](D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md) and",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -9354,7 +9354,7 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 6,
+          "candidate_rank": 7,
           "query": "verification_core representedRecord complete future kernel",
           "evidence_lines": [
             {
@@ -9977,6 +9977,16 @@
               "pin_status": "not_followed_bounded_search"
             },
             {
+              "path": "../03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+              "hashes": [],
+              "commit": null,
+              "blob": null,
+              "section_refs": [],
+              "pin_complete": false,
+              "context": "[`FutureExecution`](../03_FORMALIZATION/D0/Foundation/FutureExecution.lean)",
+              "pin_status": "not_followed_bounded_search"
+            },
+            {
               "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
               "hashes": [
                 "9dabfa0f3782d51496d26784415d7896b8a7652a"
@@ -9987,16 +9997,6 @@
               "pin_complete": true,
               "context": "- [Main future-memory owner: future-stable quotient and sufficient retained memory; exact source provenance in foundation intake](https://github.com/gvakhrushev/d0_15/blob/9dabfa0f3782d51496d26784415d7896b8a7652a/03_FORMALIZATION/D0/Foundation/FutureExecution.lean) — опубликованный исследовательский вход",
               "pin_status": "pinned_snapshot"
-            },
-            {
-              "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
-              "hashes": [],
-              "commit": null,
-              "blob": null,
-              "section_refs": [],
-              "pin_complete": false,
-              "context": "          \"path\": \"03_FORMALIZATION/D0/Foundation/FutureExecution.lean\"",
-              "pin_status": "not_followed_bounded_search"
             }
           ]
         },
@@ -10119,13 +10119,13 @@
               "pin_status": "not_followed_bounded_search"
             },
             {
-              "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/future_profile_memory_cardinality_declarations_2026-10-25.json",
+              "path": "sources/d0_proof_architecture_formalization_2026-10-24/future_profile_memory_cardinality_declarations_2026-10-25.json",
               "hashes": [],
               "commit": null,
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "          \"path\": \"02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/future_profile_memory_cardinality_declarations_2026-10-25.json\",",
+              "context": "`sources/d0_proof_architecture_formalization_2026-10-24/future_profile_memory_cardinality_declarations_2026-10-25.json`.",
               "pin_status": "not_followed_bounded_search"
             },
             {
@@ -10314,7 +10314,7 @@
           "query": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 D0-ARCHIVE-CAR-DIRAC-SQUARE-001 actual carDirac hoppingCarDirac",
           "evidence_lines": [
             {
-              "line": 5952,
+              "line": 6096,
               "heading": "### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10324,7 +10324,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5322,
+              "line": 5466,
               "heading": "### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10334,7 +10334,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5446,
+              "line": 5590,
               "heading": "### Candidate C0 source-unit reconciliation: CAR square and Hodge operator (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10344,7 +10344,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5389,
+              "line": 5533,
               "heading": "### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10354,7 +10354,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5420,
+              "line": 5564,
               "heading": "### Candidate C0 source-unit reconciliation: CAR square and Hodge operator (25 October 2026)",
               "matched_terms": [
                 "cardirac",
@@ -10364,7 +10364,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5954,
+              "line": 6098,
               "heading": "### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10373,7 +10373,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5340,
+              "line": 5484,
               "heading": "### Candidate C0 source-unit reconciliation: CAR hopping zero mode (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10382,7 +10382,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5956,
+              "line": 6100,
               "heading": "### Literal CAR hopping square: exact `L=2` counterexample (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10391,7 +10391,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 5016,
+              "line": 5160,
               "heading": "### Lift of the persistent null fibre to a full exact cochain (25 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10400,7 +10400,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1237,
+              "line": 1381,
               "heading": "## Hodge degree-preservation and diagonal-adjoint applications (24 October 2026)",
               "matched_terms": [
                 "cardirac"
@@ -10409,7 +10409,18 @@
               "kind": "direct_content"
             }
           ],
-          "citation_only_refs": []
+          "citation_only_refs": [
+            {
+              "path": "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+              "hashes": [],
+              "commit": null,
+              "blob": null,
+              "section_refs": [],
+              "pin_complete": false,
+              "context": "| [Proof architecture and formalization](D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md) | [Book 05](../../01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md) | Exact locators, compiled declarations and reviewed applications differ; C0 is not independently frozen/accepted |",
+              "pin_status": "not_followed_bounded_search"
+            }
+          ]
         },
         "02_REGISTRY/claims.csv": {
           "path": "02_REGISTRY/claims.csv",
@@ -14483,7 +14494,7 @@
           "query": "top Hodge inverse spectral full D H M2 equal unordered positive tripartite zone sizes Vieta roots",
           "evidence_lines": [
             {
-              "line": 1215,
+              "line": 1318,
               "heading": "### 01.8.1 Homology reads the quotient scene, not a preferred label",
               "matched_terms": [
                 "top",
@@ -14496,7 +14507,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1208,
+              "line": 1311,
               "heading": "### 01.8.1 Homology reads the quotient scene, not a preferred label",
               "matched_terms": [
                 "top",
@@ -14509,7 +14520,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1207,
+              "line": 1310,
               "heading": "### 01.8.1 Homology reads the quotient scene, not a preferred label",
               "matched_terms": [
                 "top",
@@ -14521,7 +14532,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1258,
+              "line": 1361,
               "heading": "### 01.8.1 Homology reads the quotient scene, not a preferred label",
               "matched_terms": [
                 "top",
@@ -14532,7 +14543,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1211,
+              "line": 1314,
               "heading": "### 01.8.1 Homology reads the quotient scene, not a preferred label",
               "matched_terms": [
                 "equal",
@@ -14543,7 +14554,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1009,
+              "line": 1112,
               "heading": "### 01.7.1C Spin-`1/2` and three transport directions from `Q_8`",
               "matched_terms": [
                 "top",
@@ -14554,8 +14565,8 @@
               "kind": "direct_content"
             },
             {
-              "line": 2065,
-              "heading": "### 01.19a.4 The quasicrystal carrier is FORCED, not a convenience [FORCING]",
+              "line": 2191,
+              "heading": "### 01.19a.4 Conditional lattice and cut-and-project carrier route",
               "matched_terms": [
                 "equal",
                 "zone",
@@ -14565,8 +14576,8 @@
               "kind": "direct_content"
             },
             {
-              "line": 2067,
-              "heading": "### 01.19a.4 The quasicrystal carrier is FORCED, not a convenience [FORCING]",
+              "line": 2193,
+              "heading": "### 01.19a.4 Conditional lattice and cut-and-project carrier route",
               "matched_terms": [
                 "top",
                 "tripartite",
@@ -14576,7 +14587,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2111,
+              "line": 2237,
               "heading": "## 01.20 Capacity closure of four terminal roles A,B,C,D, Ω8 and V9",
               "matched_terms": [
                 "top",
@@ -14587,7 +14598,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1199,
+              "line": 1302,
               "heading": "### 01.8.1 Homology reads the quotient scene, not a preferred label",
               "matched_terms": [
                 "unordered",
@@ -14804,7 +14815,7 @@
           "query": "dense operator scene 33 vertices triangle complete tripartite support rank",
           "evidence_lines": [
             {
-              "line": 1294,
+              "line": 1368,
               "heading": "## 02.15 Archive pressure and spectral transfer",
               "matched_terms": [
                 "scene",
@@ -14816,7 +14827,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1300,
+              "line": 1374,
               "heading": "## 02.15 Archive pressure and spectral transfer",
               "matched_terms": [
                 "scene",
@@ -14828,7 +14839,19 @@
               "kind": "direct_content"
             },
             {
-              "line": 1627,
+              "line": 1376,
+              "heading": "## 02.15 Archive pressure and spectral transfer",
+              "matched_terms": [
+                "scene",
+                "33",
+                "vertices",
+                "support"
+              ],
+              "text": "**[vNext+2: scene-native conditional-expectation hierarchy].** Refining directly from K(9,11,13) tests the comparison-map question without the AF route. The required intertwining conditions distinguish scene compression (`C_n L J_n = L_scene`), spectral equality, heat-semigroup equality (`C_n e^{-uL} J_n = e^{-uL_scene}`) and Feshbach equality; a checked weaker interface does not supply an unproved stronger one. The earlier `D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001` distinguishes inequivalent all-walks, non-backtracking and directed-edge proposals under its stated weak requirements (depth-two carriers 15708 versus 14990; transfer dimensions",
+              "kind": "direct_content"
+            },
+            {
+              "line": 1703,
               "heading": "### 02.19.1 Electroweak depth `35`",
               "matched_terms": [
                 "33",
@@ -14839,7 +14862,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2387,
+              "line": 2463,
               "heading": "## 02.34a Operator recognition without a preselected tripartite class",
               "matched_terms": [
                 "scene",
@@ -14850,7 +14873,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2394,
+              "line": 2470,
               "heading": "## 02.34a Operator recognition without a preselected tripartite class",
               "matched_terms": [
                 "33",
@@ -14861,7 +14884,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2392,
+              "line": 2468,
               "heading": "## 02.34a Operator recognition without a preselected tripartite class",
               "matched_terms": [
                 "33",
@@ -14872,7 +14895,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2405,
+              "line": 2481,
               "heading": "## 02.34b Scene selection from comparison statistics without rank bounds",
               "matched_terms": [
                 "scene",
@@ -14883,7 +14906,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 606,
+              "line": 680,
               "heading": "### 02.7A The Holographic Self-Reading Principle as single root",
               "matched_terms": [
                 "scene",
@@ -14894,7 +14917,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1296,
+              "line": 1370,
               "heading": "## 02.15 Archive pressure and spectral transfer",
               "matched_terms": [
                 "scene",
@@ -14902,16 +14925,6 @@
                 "vertices"
               ],
               "text": "The **sixth** owner, `D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001`, was initially swept into the same NO-GO — and that was an **over-scoped error, now retracted**. A Feshbach compression needs only a keep/trace *projection split*, not a unitary `Ξ`. Against the scene's own `Aut`-invariant zone/archive split (bulk zones 1,2 = `9+11 = 20` vertices; traced boundary zone 3 = `13` vertices), the boundary block is `D_tt = 20·I₁₃` **exactly** (zone 3 is edge-free, each boundary vertex has degree `33−13 = 20`), so the Schur complement `W_eff = A_bb − (1/20)·B·Bᵀ` is exact and `z`-independent. Its eigenvalues are `{0,22,24,33}` with multiplicities `",
-              "kind": "direct_content"
-            },
-            {
-              "line": 1622,
-              "heading": "### 02.19.1 Electroweak depth `35`",
-              "matched_terms": [
-                "33",
-                "rank"
-              ],
-              "text": "35=|V|+\\operatorname{Rank}-1=33+3-1.",
               "kind": "direct_content"
             }
           ],
@@ -15567,7 +15580,7 @@
           "query": "nilpotentAffineRep_injective",
           "evidence_lines": [
             {
-              "line": 1736,
+              "line": 1880,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "nilpotentaffinerep_injective"
@@ -15576,7 +15589,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1683,
+              "line": 1827,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "nilpotentaffinerep_injective"
@@ -15585,7 +15598,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1674,
+              "line": 1818,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "exact",
@@ -15596,7 +15609,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 4711,
+              "line": 4855,
               "heading": "### Exact claim BOOK/section source-key candidate pass (25 October 2026)",
               "matched_terms": [
                 "exact",
@@ -15606,7 +15619,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 7892,
+              "line": 8036,
               "heading": "### Exact affine finite-Gram expansion (26 October 2026)",
               "matched_terms": [
                 "exact",
@@ -15616,7 +15629,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1666,
+              "line": 1810,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15626,7 +15639,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1736,
+              "line": 1880,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15636,7 +15649,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1712,
+              "line": 1856,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15646,7 +15659,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1669,
+              "line": 1813,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -15656,7 +15669,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1734,
+              "line": 1878,
               "heading": "## Faithful finite-carrier affine representation (24 October 2026)",
               "matched_terms": [
                 "affine",
@@ -16163,17 +16176,17 @@
               "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
               "hashes": [
                 "fe5cf335da04cac14e50407b03f98b96be17dc52",
-                "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
-                "734e21ae6bc04ff3446ad15858936d417fdd2e55"
+                "1c8d59e5533b443d9a015dc4512cfbc160ae7e62"
               ],
               "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
               "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
               "section_refs": [
+                "8.5",
                 "5.1"
               ],
               "pin_complete": true,
-              "context": "          \"context\": \"A useful cold-start reuse case is the native raising-operator inverse with a null leg: published #334 labelled-record source §§8.4-8.5, equations (26)-(31), with rational alternative §6.25 (13br1)-(13br2). Its selected source gate is satisfied at commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62. The concrete consumer is the exact AF radial coframe equivalence source §5.1, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55. At the earlier vacuum-only checkpoint, `D0.Geometry.ArchiveJuliaRaisingOperatorR",
-              "pin_status": "not_followed_bounded_search"
+              "context": "For the direct query `Перенос и тетрада восстанавливаются из самого native raising operator`, use §8.4 of `02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, published commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob `1c8d59e5533b443d9a015dc4512cfbc160ae7e62`. For the all-jet query, §8.5 states that the full tangent space retains all 16 coframe and 24 link directions on a node, including observer jets, beyond only null/pp-wave-ansatz variations. The pin covers the owner content only; the §5.1 AF radial coframe consumer has its separate exact pin below.",
+              "pin_status": "pinned_snapshot"
             }
           ]
         },
@@ -16344,7 +16357,7 @@
           "query": "archiveJuliaNullBlock_reconstructsAffineFunctional",
           "evidence_lines": [
             {
-              "line": 1786,
+              "line": 1930,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "archivejulianullblock_reconstructsaffinefunctional"
@@ -16353,7 +16366,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 207,
+              "line": 351,
               "heading": "## Scientific boundary and reuse vertical",
               "matched_terms": [
                 "julia",
@@ -16368,7 +16381,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 8409,
+              "line": 8553,
               "heading": "### Eq. (26) endpoint blindness and non-null Eq. (27) separation (26 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16381,7 +16394,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 85,
+              "line": 229,
               "heading": "### Pinned #334 raising-inverse retrieval key",
               "matched_terms": [
                 "julia",
@@ -16394,7 +16407,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1756,
+              "line": 1900,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16406,7 +16419,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2592,
+              "line": 2736,
               "heading": "### Row-action Lorentz endpoint adapter for Eq. (27) (25 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16418,7 +16431,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1914,
+              "line": 2058,
               "heading": "## Full null-query frame recovery from the observed carrier block (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16430,7 +16443,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1917,
+              "line": 2061,
               "heading": "## Full null-query frame recovery from the observed carrier block (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16442,7 +16455,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1786,
+              "line": 1930,
               "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
               "matched_terms": [
                 "julia",
@@ -16454,7 +16467,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2256,
+              "line": 2400,
               "heading": "### Fixed-chart Eq. (27) endpoint composition (25 October 2026)",
               "matched_terms": [
                 "julia",
@@ -17797,7 +17810,7 @@
           "query": "principalFrameObservedQueryCoframeRecovery Eq 30a four full query vacuum responses",
           "evidence_lines": [
             {
-              "line": 1580,
+              "line": 1724,
               "heading": "## CAR/exterior role-order alignment and full basis-state creator action (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17808,7 +17821,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1623,
+              "line": 1767,
               "heading": "## Complete CAR/exterior creator and Julia-query equality (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17819,7 +17832,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1625,
+              "line": 1769,
               "heading": "## Complete CAR/exterior creator and Julia-query equality (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17830,7 +17843,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 2032,
+              "line": 2176,
               "heading": "## Query-to-principal-frame coframe recovery (24 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17841,7 +17854,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 591,
+              "line": 735,
               "heading": "### Independent scope review of the finite Eq. (26) CAR adapter",
               "matched_terms": [
                 "eq",
@@ -17852,7 +17865,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 10161,
+              "line": 10305,
               "heading": "### C0 candidate source-unit disposition for the positive nonvacuum slice (26 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17863,7 +17876,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 56,
+              "line": 200,
               "heading": "## Architecture",
               "matched_terms": [
                 "eq",
@@ -17874,7 +17887,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 207,
+              "line": 351,
               "heading": "## Scientific boundary and reuse vertical",
               "matched_terms": [
                 "eq",
@@ -17885,7 +17898,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6529,
+              "line": 6673,
               "heading": "### Exact stencil-to-midpoint application for the positive nonvacuum source (25 October 2026)",
               "matched_terms": [
                 "eq",
@@ -17896,7 +17909,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 9143,
+              "line": 9287,
               "heading": "### Local joint coframe and Lorentz-tangent Fréchet derivative (26 October 2026)",
               "matched_terms": [
                 "eq",
@@ -18305,13 +18318,13 @@
               "pin_status": "not_followed_bounded_search"
             },
             {
-              "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json",
+              "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json",
               "hashes": [],
               "commit": null,
               "blob": null,
               "section_refs": [],
               "pin_complete": false,
-              "context": "          \"path\": \"02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json\",",
+              "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json`,",
               "pin_status": "not_followed_bounded_search"
             }
           ]
@@ -18766,7 +18779,7 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 8,
+          "candidate_rank": 9,
           "query": "principalFrameObservedQueryCoframeRecovery Eq 30a four full query vacuum responses",
           "evidence_lines": [
             {
@@ -18915,126 +18928,107 @@
           "sections_found": [],
           "missing_sections": [],
           "scoped_queries": [],
-          "candidate_rank": 16,
-          "query": "complete Julia raising query contraction block null inverse equation 28",
+          "candidate_rank": 15,
+          "query": "уравнение 28 открытая окрестность null-вектора поперечные q вариации восстановление endpoint map Julia",
           "evidence_lines": [
             {
-              "line": 1133,
+              "line": 1402,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query",
-                "null"
+                "map",
+                "julia"
               ],
-              "text": "exact archiveJuliaRaisingQuery_nonNull_gamma_recovery",
+              "text": "archiveJuliaSourceTopExteriorMap_scale]",
               "kind": "direct_content"
             },
             {
-              "line": 1024,
+              "line": 409,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query",
-                "null"
+                "map",
+                "julia"
               ],
-              "text": "theorem archiveJuliaRaisingQuery_nonNull_gamma_recovery",
+              "text": "archiveJuliaSourceVolumeEquiv.toLinearMap =",
               "kind": "direct_content"
             },
             {
-              "line": 1155,
+              "line": 416,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query",
-                "null"
+                "map",
+                "julia"
               ],
-              "text": "exact archiveJuliaCARRaisingQuery_nonNull_gamma_recovery",
+              "text": "archiveJuliaSourceVolumeEquiv.toLinearMap.comp",
               "kind": "direct_content"
             },
             {
-              "line": 1117,
+              "line": 538,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query",
-                "null"
+                "map",
+                "julia"
               ],
-              "text": "theorem archiveJuliaCARRaisingQuery_nonNull_gamma_recovery",
+              "text": "archiveJuliaSourceVolumeEquiv.toLinearMap.comp",
               "kind": "direct_content"
             },
             {
-              "line": 1165,
+              "line": 543,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query",
-                "null"
+                "map",
+                "julia"
               ],
-              "text": "theorem archiveJuliaSourceIdentityCARRaisingQuery_nonNull_gamma_recovery",
+              "text": "archiveJuliaSourceVolumeEquiv.toLinearMap.comp",
               "kind": "direct_content"
             },
             {
-              "line": 1427,
+              "line": 553,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query",
-                "null"
+                "map",
+                "julia"
               ],
-              "text": "theorem archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_det_one",
+              "text": "rw [archiveJuliaSourceVolumeEquiv_toLinearMap]",
               "kind": "direct_content"
             },
             {
-              "line": 1176,
+              "line": 723,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query",
-                "null"
+                "map",
+                "julia"
               ],
-              "text": "exact archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_oriented_isometry",
+              "text": "archiveJuliaSourceVolumeEquiv.toLinearMap.comp",
               "kind": "direct_content"
             },
             {
-              "line": 1440,
+              "line": 938,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query",
-                "null"
+                "map",
+                "julia"
               ],
-              "text": "exact archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_oriented_isometry",
+              "text": "archiveJuliaSourceVolumeEquiv.toLinearMap.comp",
               "kind": "direct_content"
             },
             {
-              "line": 1141,
+              "line": 1152,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query",
-                "null"
+                "map",
+                "julia"
               ],
-              "text": "theorem archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_oriented_isometry",
+              "text": "archiveJuliaSourceVolumeEquiv.toLinearMap.comp",
               "kind": "direct_content"
             },
             {
-              "line": 1075,
+              "line": 1172,
               "heading": "# Non-null Lorentz-Clifford recovery for the finite Julia query",
               "matched_terms": [
-                "julia",
-                "raising",
-                "query"
+                "map",
+                "julia"
               ],
-              "text": "archiveJuliaRaisingQuery u M -",
+              "text": "archiveJuliaSourceVolumeEquiv.toLinearMap.comp",
               "kind": "direct_content"
             }
           ],
@@ -20669,7 +20663,7 @@
           "query": "finiteHermitianAdjoint_unique coordinate finite Hermitian pairing conjugate transpose",
           "evidence_lines": [
             {
-              "line": 3831,
+              "line": 3975,
               "heading": "## Positive supplied-profile standard-Hilbert representative (25 October 2026)",
               "matched_terms": [
                 "coordinate",
@@ -20681,7 +20675,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3985,
+              "line": 4129,
               "heading": "### Candidate C0 source-unit map for the native weighted-Dirac capsule (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20693,7 +20687,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6246,
+              "line": 6390,
               "heading": "### Shared finite-coordinate expansion in ordinary and weighted adjoints (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20704,7 +20698,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3047,
+              "line": 3191,
               "heading": "### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20715,7 +20709,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 1246,
+              "line": 1390,
               "heading": "## Hodge degree-preservation and diagonal-adjoint applications (24 October 2026)",
               "matched_terms": [
                 "coordinate",
@@ -20726,7 +20720,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3122,
+              "line": 3266,
               "heading": "### Real Hodge/CAR operator self-adjointness through the Hermitian API (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20737,7 +20731,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3051,
+              "line": 3195,
               "heading": "### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20748,7 +20742,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3030,
+              "line": 3174,
               "heading": "### Generic finite Hermitian adjoint applied to the twisted CAR operator (25 October 2026)",
               "matched_terms": [
                 "coordinate",
@@ -20759,7 +20753,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 6344,
+              "line": 6488,
               "heading": "### Shared finite linear-map coordinate action in both adjoint proofs (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -20770,7 +20764,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3637,
+              "line": 3781,
               "heading": "### Real Hodge/CAR square through the generic Hermitian API (25 October 2026)",
               "matched_terms": [
                 "finite",
@@ -22647,7 +22641,7 @@
           "query": "finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint real unit profile",
           "evidence_lines": [
             {
-              "line": 3561,
+              "line": 3705,
               "heading": "### Real unit-profile bridge between adjoint APIs (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22658,7 +22652,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3373,
+              "line": 3517,
               "heading": "### Hermitian Hodge square and cubical anticommutator application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22669,7 +22663,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3479,
+              "line": 3623,
               "heading": "### Cold-start replay after the Hermitian Hodge--Dirac application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22680,7 +22674,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3602,
+              "line": 3746,
               "heading": "### Cold-start replay after the weighted-adjoint bridge (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22691,7 +22685,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3126,
+              "line": 3270,
               "heading": "### Real Hodge/CAR operator self-adjointness through the Hermitian API (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22702,7 +22696,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3797,
+              "line": 3941,
               "heading": "### Cold-start replay after the canonical Hodge/CAR map refactor (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22713,7 +22707,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3176,
+              "line": 3320,
               "heading": "### Cold-start replay after the real Hodge/CAR adjoint application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22724,7 +22718,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3668,
+              "line": 3812,
               "heading": "### Cold-start replay after the real Hodge/CAR square refactor (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22735,7 +22729,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3148,
+              "line": 3292,
               "heading": "### Cold-start replay after the real Hodge/CAR adjoint application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -22746,7 +22740,7 @@
               "kind": "direct_content"
             },
             {
-              "line": 3397,
+              "line": 3541,
               "heading": "### Hermitian Hodge square and cubical anticommutator application (25 October 2026)",
               "matched_terms": [
                 "real",
@@ -25421,120 +25415,120 @@
   "required_source_ref_count": 169,
   "claim_source_candidate_view": {
     "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
-    "snapshot_commit": "1a0004a5224f8198c4508149632eda938432be47",
+    "snapshot_commit": "58a5641857deddc9cdd6f220ebab9ad31c80a605",
     "worktree_dirty": false,
-    "claim_registry_sha256": "4b89e8ed94d74b99622714f496f1fffa86ca976733c7d4340003cd5a07e5a187",
-    "view_sha256": "5c0f501695b84d25f84c32ae82931d3d7fe751efdcc67373ab010738adb2e035",
+    "claim_registry_sha256": "957a9c67f56850c5a253eb2f679506dd03fc64b81931a1718ddb84704dc760bd",
+    "view_sha256": "a517b77b05c641e18b4789738fcc2c117530761a22740778ab16d66422b92022",
     "counts": {
       "claim_rows": 889,
-      "fully_unique_claim_rows": 94,
+      "fully_unique_claim_rows": 104,
       "partially_resolved_claim_rows": 4,
       "ambiguous_claim_rows": 0,
-      "unresolved_claim_rows": 781,
+      "unresolved_claim_rows": 771,
       "non_book_claim_rows": 10,
       "malformed_claim_rows": 0,
       "locator_pairs": 731,
-      "unique_locator_pairs": 116,
+      "unique_locator_pairs": 126,
       "ambiguous_locator_pairs": 0,
-      "unresolved_locator_pairs": 615,
+      "unresolved_locator_pairs": 605,
       "unpaired_multi_book_claim_rows": 170,
-      "claim_rows_with_ranked_heading_candidates": 381,
-      "ranked_heading_candidate_count": 712,
-      "literal_claim_id_mention_count": 833,
-      "claim_rows_with_literal_claim_id_mentions": 424,
+      "claim_rows_with_ranked_heading_candidates": 379,
+      "ranked_heading_candidate_count": 714,
+      "literal_claim_id_mention_count": 840,
+      "claim_rows_with_literal_claim_id_mentions": 430,
       "book_source_files_with_literal_claim_id_mentions": 9,
-      "book_heading_count": 674,
-      "book_headings_with_exact_heading_candidate": 40,
-      "book_headings_with_ranked_heading_candidate": 213,
-      "book_headings_with_both_exact_and_ranked_heading_candidates": 23,
-      "book_headings_without_claim_heading_candidate": 444
+      "book_heading_count": 711,
+      "book_headings_with_exact_heading_candidate": 43,
+      "book_headings_with_ranked_heading_candidate": 219,
+      "book_headings_with_both_exact_and_ranked_heading_candidates": 25,
+      "book_headings_without_claim_heading_candidate": 474
     },
     "book_sources": {
       "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md": {
         "path": "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
-        "source_sha256": "2823c5bf4517b77044029b06cade0b30cb817ace50a1b0e5dba62de479e25c5c",
-        "source_blob_sha1": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
-        "snapshot_blob_sha1": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+        "source_sha256": "781a1cb6455fdbc742c7f90e090d735d26633dddc7e7c12f6ea565102c70af52",
+        "source_blob_sha1": "8749b0ef7f6acd6d2f42f6a6f691039669dea568",
+        "snapshot_blob_sha1": "8749b0ef7f6acd6d2f42f6a6f691039669dea568",
         "matches_snapshot_commit": true
       },
       "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md": {
         "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
-        "source_sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342",
-        "source_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
-        "snapshot_blob_sha1": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
+        "source_sha256": "08726fe60e653d56f795238bc27445ed89e9ea2c695471439f0d0a47f737de77",
+        "source_blob_sha1": "eb2d8ea779189084cdaaca717326df88589ec918",
+        "snapshot_blob_sha1": "eb2d8ea779189084cdaaca717326df88589ec918",
         "matches_snapshot_commit": true
       },
       "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": {
         "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
-        "source_sha256": "051234590ec6f8cf8d93f84b4ab91779af2925000d2b73edde19091d9f7a70d1",
-        "source_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
-        "snapshot_blob_sha1": "bea003880b42666ce9568dfa98c8a09b5d6cd852",
+        "source_sha256": "58b6e32e99876a9077f6c55c68424819a952c471da381514e066afa65c2c7eef",
+        "source_blob_sha1": "00d7c597abb99856719b274bb86b115b17af139f",
+        "snapshot_blob_sha1": "00d7c597abb99856719b274bb86b115b17af139f",
         "matches_snapshot_commit": true
       },
       "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
         "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
-        "source_sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
-        "source_blob_sha1": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
-        "snapshot_blob_sha1": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+        "source_sha256": "1b56ab3ebf3e5d1a9c614b2afe491eb9d63a173426427be47f741547f31dff14",
+        "source_blob_sha1": "e171ea3d17c9a2621be247810a836ddca77617cb",
+        "snapshot_blob_sha1": "e171ea3d17c9a2621be247810a836ddca77617cb",
         "matches_snapshot_commit": true
       },
       "01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md": {
         "path": "01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
-        "source_sha256": "541f0635ca266df9d99fce79358b8b7e5800e650cde9cb53a86147d2e7374767",
-        "source_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
-        "snapshot_blob_sha1": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
+        "source_sha256": "a6ec899cfed3b951da91234a58dd6235cf964b88ab0bbf7b2f1abef60226314c",
+        "source_blob_sha1": "e2417213e205d1082b5ee5369dbbb23088a99694",
+        "snapshot_blob_sha1": "e2417213e205d1082b5ee5369dbbb23088a99694",
         "matches_snapshot_commit": true
       },
       "01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md": {
         "path": "01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
-        "source_sha256": "f6bac33994741bad59c0e1ef3fb1beb41351bb71c9e03aa35a09ac40ec74e288",
-        "source_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
-        "snapshot_blob_sha1": "48528aba14985a2e9ac2d954cf13d9ed39256f0e",
+        "source_sha256": "8d117505d4f36739c5eff0e8ee91898b71d3f318ef1650cb31e975032c897c67",
+        "source_blob_sha1": "b5569b9e496ed77b1291286cc79594e5d176fd1a",
+        "snapshot_blob_sha1": "b5569b9e496ed77b1291286cc79594e5d176fd1a",
         "matches_snapshot_commit": true
       },
       "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md": {
         "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
-        "source_sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
-        "source_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
-        "snapshot_blob_sha1": "99721fb50de66688564638f5f2b449a38675d7bd",
+        "source_sha256": "138a3b90a84531ea5b807a5da8b782ccf014baf752d39acf47d24423d618c5a2",
+        "source_blob_sha1": "6ebf38ee1f10c94eda7ff752ceb0960253dc0199",
+        "snapshot_blob_sha1": "6ebf38ee1f10c94eda7ff752ceb0960253dc0199",
         "matches_snapshot_commit": true
       },
       "01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md": {
         "path": "01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
-        "source_sha256": "36c5d0790640ba40ec005859e0970bdf9b1e2e8c1068787f076459a30233b4f6",
-        "source_blob_sha1": "bd8395e5111e9116a8144b6957f1d3625662814f",
-        "snapshot_blob_sha1": "bd8395e5111e9116a8144b6957f1d3625662814f",
+        "source_sha256": "1292cd2a3c9c70cd2e6f165fdd214735bdfabe5c5e5aac0b91409db213c08bb1",
+        "source_blob_sha1": "8f4ab178f4809e2dfd207a5ac87377cc2545fa54",
+        "snapshot_blob_sha1": "8f4ab178f4809e2dfd207a5ac87377cc2545fa54",
         "matches_snapshot_commit": true
       },
       "01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md": {
         "path": "01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
-        "source_sha256": "022d2b3718c3e41066b85130adb8b87c684e49a9f4280043047416c6a637f214",
-        "source_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
-        "snapshot_blob_sha1": "86213324b651a5717b293308ba37a7555b9e6742",
+        "source_sha256": "e8b91701996d13092d6301ca71d73fc5d611c14a5002d09552088d96672c855f",
+        "source_blob_sha1": "90e803f6f24b4c8eb34fc29ecce8ed3c15966815",
+        "snapshot_blob_sha1": "90e803f6f24b4c8eb34fc29ecce8ed3c15966815",
         "matches_snapshot_commit": true
       },
       "01_BOOKS/BOOK_09_GRAVITATIONAL_WAVES_AND_QUANTUM_INTERFEROMETRY.md": {
         "path": "01_BOOKS/BOOK_09_GRAVITATIONAL_WAVES_AND_QUANTUM_INTERFEROMETRY.md",
-        "source_sha256": "514d63d9ae20131e64580ccf65274f6b9d0c8dcd2ba84cc40dbe7abecd030108",
-        "source_blob_sha1": "0fa62a9c4b77901cd99e54143617b5656e5516aa",
-        "snapshot_blob_sha1": "0fa62a9c4b77901cd99e54143617b5656e5516aa",
+        "source_sha256": "c5f172213385a49c36bc314f4d7a1c1b16376380d6e4e595256de4b0362efe2d",
+        "source_blob_sha1": "bce7d83e982ed3f5873212ed44e073bdc59f9b20",
+        "snapshot_blob_sha1": "bce7d83e982ed3f5873212ed44e073bdc59f9b20",
         "matches_snapshot_commit": true
       }
     }
   },
   "replay": {
-    "source_commit": "491172529171bb834c52a81fd91e8e6623a30069",
+    "source_commit": "3b6dc8a433b1431d1c1238ee3682dc0746d2cd5c",
     "command": "python3 tools/proof_architecture_cold_start.py",
     "runner_sha256": "0532c5f68a81d8964737c90582fb2c444355c5c2f32a731295ed845810552694",
     "runner_git_blob": "68e29bb5a0300497a2fd4be7540560b88db72ceb",
     "search_engine_sha256": "221b34bec00134383eaee8483c694374506eea7ab2977d995063e5fd7dcddc5e",
     "search_engine_git_blob": "9e06fa34f9ec63795d0dc92613fe5de784aaed5c",
-    "test_sha256": "a87cb23baf37ab3e8859024323b5e37a31e78c8a0ef0aa7b7727b8701d5aea56",
-    "test_git_blob": "700f3401b9ac4deb03eb3f64ac4914e04b1a247c",
+    "test_sha256": "265666e94d4ea5ca71c5f29f164816d408ebe500520ad248592b0decf4d6e7b0",
+    "test_git_blob": "e5012d7e661bc0491df99eb3b986112b8171a991",
     "compactor_sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
     "compactor_git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
-    "full_output_sha256": "caf62683d035ea056cefc897846be3be45bbadc6656ef1567a44b339c01655a7",
-    "full_output_bytes": 9850406
+    "full_output_sha256": "3c0aa090b3f22488dc4cf1532df17d92df3d0bd68617f8f8f8151ae701851a55",
+    "full_output_bytes": 9896850
   },
   "eq24_owner_source_retrieval": {
     "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
@@ -25566,8 +25560,8 @@
   },
   "report_compaction": {
     "reason": "Retains every required-source receipt and exact application retrieval; omits full candidate arrays.",
-    "full_output_bytes": 9850406,
-    "full_output_sha256": "caf62683d035ea056cefc897846be3be45bbadc6656ef1567a44b339c01655a7",
+    "full_output_bytes": 9896850,
+    "full_output_sha256": "3c0aa090b3f22488dc4cf1532df17d92df3d0bd68617f8f8f8151ae701851a55",
     "provenance_limit": "The supplied full replay is not rerun or authenticated by the compactor."
   }
 }
