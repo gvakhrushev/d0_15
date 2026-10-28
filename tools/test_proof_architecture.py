@@ -5212,6 +5212,7 @@ class ProofArchitectureTests(unittest.TestCase):
                 "D0.Algebra.MovingProjectorCalculus",
                 "D0.Algebra.MovingProjectorPositiveChart",
                 "D0.Algebra.MovingProjectorTransport",
+                "D0.Analysis.MovingProjectorBookPrice",
             ],
         )
         self.assertTrue(all(row["status"] == "metadata_locator_only"
@@ -5249,13 +5250,13 @@ class ProofArchitectureTests(unittest.TestCase):
             [row["lean_module"] for row in links["formal_support_locators"]],
             [
                 "D0.Algebra.MovingProjectorCalculus",
+                "D0.Algebra.DirectFeedbackSource",
                 "D0.Algebra.MovingProjectorPositiveChart",
                 "D0.Algebra.MovingProjectorTransport",
                 "D0.Analysis.MatrixDeterminantDerivative",
-                "D0.Geometry.RefoliationWitnessCoefficientExtraction",
             ],
         )
-        self.assertEqual(links["formal_support_locators_omitted"], 1)
+        self.assertEqual(links["formal_support_locators_omitted"], 3)
         self.assertTrue(all(
             row["status"] == "metadata_locator_only"
             for row in links["formal_support_locators"]

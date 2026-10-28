@@ -11962,6 +11962,23 @@ An independent read-only review of blob
 reality and common-curve conditions; it did not replay Lean or establish
 physical admission. General fixed-Gram transport remains open.
 
+`D0.Analysis.MovingProjectorBookPriceDensityBridge` connects the two existing
+Book-price and density APIs: their thermal states agree for Hermitian `Δ`,
+and the already proved Book-price derivative applies on the isometric cut
+using the independently proved positive chart. With local Hermiticity, the
+same density has trace one and its thermal source has the stated real/complex
+trace identification. This is a reuse and application of existing results,
+not a second derivation of a native admission or complete physical price.
+An independent mathematical review of bridge blob
+`5c9d58e4486e82cfcd8bbae0db4da685f4a6f701` checked the matching of states,
+the isometric chart and the retained conditions. The reviewer inspected the
+BookPrice source in the main worktree because it was absent in the review
+worktree; the final integrated build must check the import on the actual tree.
+That integrated `D0.All` build subsequently passed 4,767 jobs at Lean source
+digest `57603f107c2a112c5a3c93f288f9d09b91dc42f6ecb96ef11c505d162db103f3`.
+The [Windows build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_book_bridge_2026-10-28_windows.json)
+records the checked dependency and toolchain boundary.
+
 The final `D0.All` build at Lean source digest
 `c5826858cdc93ebc192cb3a5b871f6b2f840218e785d6ee437ae301446ba2858`
 completed 4,763 jobs with Lean 4.30.0, dependency digest
@@ -11981,6 +11998,14 @@ declarations were extracted at clean published snapshot
 [declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/thermal_density_bridge_declarations_2026-10-28.json)
 (SHA-256 `e3be62efa9f74b91449259f7239cec75b3884c04bc3c5e661e0270f2931962f9`);
 their axiom closures are `propext`, `Classical.choice` and `Quot.sound`.
+
+After integrating the additional Book-price and direct-feedback modules, a
+fresh Windows `D0.All` build passed 4,766 jobs on Lean source digest
+`c76af69ea23b6a31509f0e3fe10c794f79cf21df9dd4353ff72a48dced1c4eee`.
+The [separate build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_merged_2026-10-28_windows.json)
+records its environment and dependency provenance. This is a separate local
+measurement from the earlier macOS receipt; the receipt's stated limitations
+on generated caches and dynamic libraries remain in force.
 
 For `D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001`, the source candidate
 `75527846bf3603a1c51acf445f8354e3254341be:02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#§1/Eq(1)`
