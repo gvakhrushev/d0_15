@@ -13115,12 +13115,14 @@ closure. `GR_closed=false`.
 SHA-256 `3383876849b02f36db8bf71f174cb50d6800ff345c9b30573aebe478acf682cd`,
 in addition to recording the current and historical whole-file blobs. A prose
 edit elsewhere in this long report no longer changes the selected section's
-byte identity. The historical source-to-declaration pilot remains unresolved
-because the selected compiled declaration inventory is stale for the current
-Lean input; no refreshed declaration inventory or semantic acceptance is
-implied. The focused C0 reconciliation suite passes 47 tests. The source pin
-and output remain diagnostic only; C0 classification, acceptance, and coverage
-are still open.
+byte identity. The historical source-to-declaration pilot remains pinned to
+its recorded declaration receipt and does not certify the current full
+`D0.All` closure or semantic correspondence. A separate fresh declaration
+inventory for the same selected theorem is recorded below. This resolves the
+fresh-compilation evidence for that declaration only; independent semantic
+review, C0 classification, acceptance, and coverage remain open. The focused
+C0 reconciliation suite passes 47 tests. The historical source pin and output
+remain diagnostic only.
 
 ## Validation after the 28 October source integration
 
@@ -13351,3 +13353,47 @@ with public import root `D0.All` and the same Lean source digest. It resolves
 the centre/gain definitions and all four theorems to
 `D0.Research.CalibratedQuerySourceFloor`; the normalized-source declaration
 retains exactly the stated positive scalar hypotheses.
+
+## Fresh compiled declaration for the fixed-sine C0 pilot — 28 October 2026
+
+The selected #310 result is now independently re-extracted from a clean
+published `D0.All` environment at snapshot
+`fc7adabf9414f4de4f274267143797fc426ef7cb`. The current inventory is
+[`weak_test_declarations_current_fc7adabf_2026-10-28.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/weak_test_declarations_current_fc7adabf_2026-10-28.json)
+(SHA-256 `f38683cc84484ee89db398a13c3990fd8001d33bc5360f47202e89dfed44bb3c`).
+It was collected with Lean 4.30.0 through the public root `D0.All`, with
+`worktree_dirty=false` and Lean-source digest
+`d19513df16bc00ff285081b8470fb16df2eaed64f10d54c8c53a4a8ea77f5d40`.
+
+The compiled declaration
+`D0.Geometry.archive_doubling_sine_weak_pairing_tendsto` has this elaborated
+type:
+
+```text
+∀ (r : D0.Role),
+  Filter.Tendsto
+    (fun N =>
+      D0.Geometry.archiveSineWeakPairing (N + (N + 2))
+        (D0.Geometry.archiveRepeatedGradedPullback N
+          (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r)
+    Filter.atTop (nhds (2 / Real.pi))
+```
+
+This names the actual pairing over `archiveRepeatedGradedPullback` and the
+four-role carrier. Its proof dependencies include both
+`archive_doubling_weak_pairing_eq_half_sine` and
+`archive_half_sine_mean_tendsto`. The recorded trust footprint is
+`Classical.choice`, `Quot.sound`, and `propext`; no custom axiom or
+`sorryAx` is reported. The owning source is
+[`ArchiveGradedRefinementWeakTest.lean`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean),
+lines 272–279, Git blob `4e6b5419f46a542091cec0d4f82d3b693f99cd26` at the
+inventory snapshot. The source result is pinned to #310 commit
+`75527846bf3603a1c51acf445f8354e3254341be`, blob
+`c216f19daebc9a6b2a9e732d277350dd2d69f88c`.
+
+This refresh verifies that the selected theorem still compiles through the
+current public import and that its actual signature/proof dependencies match
+the scoped weak-test result recorded for #310 §5. It does not authenticate the
+historical reviewer, independently accept this C0 unit, or turn the specific
+fixed-readout obstruction into a general refinement no-go or physical
+admission claim.

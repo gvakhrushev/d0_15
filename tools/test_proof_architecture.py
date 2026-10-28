@@ -5390,6 +5390,73 @@ class ProofArchitectureTests(unittest.TestCase):
             support[0]["record"]["referenced_by"],
         )
 
+    def test_current_fixed_sine_declaration_inventory_is_compiled_and_scoped(self) -> None:
+        inventory_path = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_proof_architecture_formalization_2026-10-24/reports/"
+            "weak_test_declarations_current_fc7adabf_2026-10-28.json"
+        )
+        raw = inventory_path.read_bytes()
+        self.assertEqual(
+            hashlib.sha256(raw).hexdigest(),
+            "f38683cc84484ee89db398a13c3990fd8001d33bc5360f47202e89dfed44bb3c",
+        )
+        inventory = json.loads(raw)
+        self.assertEqual(
+            inventory["snapshot_commit"], "fc7adabf9414f4de4f274267143797fc426ef7cb"
+        )
+        self.assertFalse(inventory["worktree_dirty"])
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        self.assertEqual(inventory["toolchain"], "leanprover/lean4:v4.30.0")
+        self.assertEqual(
+            inventory["lean_source_digest"],
+            "d19513df16bc00ff285081b8470fb16df2eaed64f10d54c8c53a4a8ea77f5d40",
+        )
+
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+        theorem = declarations["D0.Geometry.archive_doubling_sine_weak_pairing_tendsto"]
+        self.assertTrue(theorem["exists"])
+        self.assertEqual(
+            theorem["module"], "D0.Geometry.ArchiveGradedRefinementWeakTest"
+        )
+        self.assertEqual(
+            theorem["source_path"],
+            "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean",
+        )
+        module_blob = subprocess.run(
+            [
+                "git",
+                "rev-parse",
+                f"{inventory['snapshot_commit']}:{theorem['source_path']}",
+            ],
+            cwd=proof.ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+        self.assertEqual(module_blob, "4e6b5419f46a542091cec0d4f82d3b693f99cd26")
+        self.assertEqual(
+            theorem["elaborated_type"],
+            "∀ (r : D0.Role),\n"
+            "  Filter.Tendsto\n"
+            "    (fun N =>\n"
+            "      D0.Geometry.archiveSineWeakPairing (N + (N + 2))\n"
+            "        (D0.Geometry.archiveRepeatedGradedPullback N "
+            "(D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r)\n"
+            "    Filter.atTop (nhds (2 / Real.pi))",
+        )
+        self.assertIn(
+            "D0.Geometry.archive_doubling_weak_pairing_eq_half_sine",
+            theorem["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.archive_half_sine_mean_tendsto",
+            theorem["proof_dependencies"],
+        )
+        self.assertEqual(
+            theorem["axioms"], ["Classical.choice", "Quot.sound", "propext"]
+        )
+
     def test_refoliation_delta_is_retrievable_without_physical_owner_inference(self) -> None:
         data = proof.load_dataset(proof.ROOT)
         hits = proof.full_text_search(
