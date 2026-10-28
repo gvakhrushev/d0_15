@@ -2514,8 +2514,8 @@ class ProofArchitectureTests(unittest.TestCase):
             row for row in case["required_sources"]
             if row["path"] == "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
         )
-        self.assertEqual(source["commit"], "7d52c4193cc4b1ebfed1142d327446a6128465b7")
-        self.assertEqual(source["blob"], "df316992b289e0a9ada03adb2852227e8da91ed1")
+        self.assertEqual(source["commit"], "423ec9a87553a14c6f484e429a6d3309eeae256a")
+        self.assertEqual(source["blob"], "07a988011a77ee87aa13d5d816680920d51a3007")
         self.assertEqual(source["scope_query_indexes"], [18])
         inventory_source = next(
             row for row in case["required_sources"]
@@ -2989,10 +2989,13 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertTrue(summary["change_impact_regression"]["status"] == "pass")
         self.assertTrue(summary["semantic_scope_review_is_manual"])
         for path, digest in summary["authority_source_digests"].items():
+            pinned_source = subprocess.check_output([
+                "git", "show", f"{summary['snapshot_commit']}:{path}"
+            ])
             self.assertEqual(
-                hashlib.sha256((proof.ROOT / path).read_bytes()).hexdigest(),
+                hashlib.sha256(pinned_source).hexdigest(),
                 digest,
-                f"cold-start summary has stale authority digest for {path}",
+                f"cold-start summary digest does not match pinned source {path}",
             )
         replay = summary["replay"]
         self.assertEqual(replay["source_commit"], summary["snapshot_commit"])
@@ -3002,12 +3005,17 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             replay["runner_sha256"],
             hashlib.sha256(
-                (proof.ROOT / "tools/proof_architecture_cold_start.py").read_bytes()
+                subprocess.check_output([
+                    "git", "show",
+                    f"{summary['snapshot_commit']}:tools/proof_architecture_cold_start.py",
+                ])
             ).hexdigest(),
         )
         self.assertEqual(
             replay["search_engine_sha256"],
-            hashlib.sha256((proof.ROOT / "tools/proof_architecture.py").read_bytes()).hexdigest(),
+            hashlib.sha256(subprocess.check_output([
+                "git", "show", f"{summary['snapshot_commit']}:tools/proof_architecture.py"
+            ])).hexdigest(),
         )
         # The receipt records the test fixture at its clean source commit.
         # The current test may point at a newer receipt, so comparing to its
@@ -3309,10 +3317,13 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertFalse(comparison["worktree_dirty"])
         self.assertRegex(comparison["snapshot_commit"], r"^[0-9a-f]{40}$")
         for path, digest in comparison["authority_source_digests"].items():
+            pinned_source = subprocess.check_output([
+                "git", "show", f"{comparison['snapshot_commit']}:{path}"
+            ])
             self.assertEqual(
-                hashlib.sha256((proof.ROOT / path).read_bytes()).hexdigest(),
+                hashlib.sha256(pinned_source).hexdigest(),
                 digest,
-                f"search comparison has stale authority digest for {path}",
+                f"search comparison digest does not match pinned source {path}",
             )
         self.assertEqual(comparison["metrics"]["query_count"], len(cold_start.CASES))
         metrics = comparison["metrics"]
@@ -3362,7 +3373,10 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             comparison["runner_sha256"],
             hashlib.sha256(
-                (proof.ROOT / "tools/proof_architecture_process_comparison.py").read_bytes()
+                subprocess.check_output([
+                    "git", "show",
+                    f"{comparison['snapshot_commit']}:tools/proof_architecture_process_comparison.py",
+                ])
             ).hexdigest(),
         )
 
@@ -5149,6 +5163,7 @@ class ProofArchitectureTests(unittest.TestCase):
             [row["lean_module"] for row in links["formal_support_locators"]],
             [
                 "D0.Algebra.MovingProjectorCalculus",
+                "D0.Algebra.MovingProjectorPositiveChart",
                 "D0.Algebra.MovingProjectorTransport",
             ],
         )
@@ -5187,12 +5202,13 @@ class ProofArchitectureTests(unittest.TestCase):
             [row["lean_module"] for row in links["formal_support_locators"]],
             [
                 "D0.Algebra.MovingProjectorCalculus",
+                "D0.Algebra.MovingProjectorPositiveChart",
                 "D0.Algebra.MovingProjectorTransport",
                 "D0.Analysis.MatrixDeterminantDerivative",
                 "D0.Geometry.RefoliationWitnessCoefficientExtraction",
-                "D0.Geometry.MovingCutQueryCancellation",
             ],
         )
+        self.assertEqual(links["formal_support_locators_omitted"], 1)
         self.assertTrue(all(
             row["status"] == "metadata_locator_only"
             for row in links["formal_support_locators"]
