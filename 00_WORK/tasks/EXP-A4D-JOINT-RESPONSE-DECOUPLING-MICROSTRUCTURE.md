@@ -17034,3 +17034,54 @@ Verification is bounded to the new algebraic composition, independent
 read-only factor/index checks and changed-document structural checks.
 The incoming full-history checker is consumed at its published scope,
 not represented as a new independent replay or remote CI run.
+
+### Changing original history: full scale-source reversal — 28 October
+
+Continue the same native-realization/final-composition owner, input9f23ec82.
+The exact parent is7da's noncommuting W_j source. The already published
+7cd/7ce all-horizon exclusion and continuum-source theorem were consumed,
+not re-proved. They concern repeating one fixed spatial operator. The
+changed input is a sequence of eight different original proper-Lorentz
+connections, each repeated644 times on the same L4/CAR16 carrier.
+
+Primary7db gives an explicit full spatial source counter to extending
+the old sign barrier to this changing-history class. Rational spatial
+pi rotations preserve the original observer and own-leg constraints;
+every original128 outcome, new App, copied record and oldRIGHT remains.
+All256 Fourier blocks and all16 CAR grades are counted. No negative
+price, new matter term or changed cut is inserted.
+
+Smallest decisive check: compute the whole chronological scale source
+for this one profile at nu=3/10 and3/5. Exact Gaussian-rational inputs,
+binary matrix powers and rational upward error budgets certify opposite
+signs on all4096 modes. The explicit resolvent tail and full homogeneous
+INTERNAL heat bound preserve both signs. The full native matrix/clock
+price therefore has a scale-critical point between these endpoints by
+continuity. This is one necessary source equation, not all-field closure.
+
+The portable checker and full observed receipts are embedded in7db.
+Final high ordinary/-O outputs are byte-identical; final low ordinary
+also passes. The IEEE model is explicit, with separate length16 matrix,
+length256 inner-product, outer-sum and root/input enclosures. No large
+square clock matrix, independent physical selection or full-root replay
+is represented as executed. Two read-only reviews checked the carrier,
+full source, scalar factors, error propagation and actual heat.
+
+Remaining consumer: use these genuinely changing original W_j in the
+complete coframe/link/matter stationary problem and prove its physical
+variation domain and compatible refinement. A single scale-critical
+point is not a GR solution or a minimum. Fixed-operator exclusions and
+the separate positive7cz realization retain their scopes. No new task,
+Ready, retirement, assembly acceptance or GR promotion.
+
+The preceding7da also now explicitly distinguishes its open positive-
+adjoint all40 chart from the constrained stored chart, and retains the
+actual33-scene feedback multiplicity where that cut is replicated.
+These are scope corrections, not additional physical premises.
+
+Final changed-document gates pass: work validation, agent protocol,
+gr_assembly check with scientific_promotion=false, and diff whitespace.
+Embedded code and both observed receipts match their exact SHA256.
+Incomingc296829f's nonlinear Einstein--dust application is preserved
+after rebase, at its separate direct-click source scope. No unchanged
+full corpus, Lean, independent acceptance or remote CI replay is claimed.

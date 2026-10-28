@@ -88387,6 +88387,10 @@ Use precisely the incoming chronological definitions(1)--(6):
 All128^n records and actual oldRIGHT are retained. The factor r_R
 below is permitted only for a genuinely passive oldRIGHT spectator;
 otherwise its coupled complete matrices remain inside the trace.
+If the actual clock cut is replicated over all33 scene vertices, the
+complete multiplicity is kappa=33 r_R: replace r_R by kappa throughout
+the feedback formulas below. This factor does not multiply the thermal
+log-trace derivative. A different scene-root cut keeps its own rank.
 At fixed h_j,p,z,r_R and rank,
 
     E_j=c_j²(D_j W_j+W_j D_j),
@@ -88424,6 +88428,16 @@ Lorentz directions on the original chart. Observer/Gram changes enter
 BOTH Du and DM; density and physical field calibration enter through
 the already owned v-map. Moving h,p,z,rank or other actual inputs
 retain their separate derivatives or admitted finite comparisons.
+
+The all40 differentiation here uses the positive-adjoint Julia matrix
+realization. The literal older stored domain also imposes
+A_xy^T h_x A_xy=h_y and A_xy v_r(y)=v_r(x); its pullback must obey
+the derivatives of those equations. It is not the free all40 chart.
+Global uniform coframe scaling preserves those two stored constraints;
+an arbitrary local coframe scaling with links fixed need not. Book03's
+symbol X_N alone does not prove either chart is the physical variation
+domain. This distinction does not require an additional field writer
+for the direct stationary-law implication.
 
 The available norm is also explicit:
 
@@ -88615,3 +88629,490 @@ gr_assembly check; scientific_promotion=false. The existing result
 template was consumed without editing acceptance/lifecycle. Diff
 whitespace is clean. No full mathematical replay is needed for this
 analytic composition, and none is represented as performed.
+
+## 7db. A changing original full128 history reverses the complete scale source
+
+28 October 2026. Existing owner, input9f23ec82; same two write paths.
+Phase: native realization / final composition. Parent: the exact
+noncommuting source(890), before imposing a stationary physical field
+limit. The changed mathematical input is a genuinely changing sequence
+of ORIGINAL spatial connections, rather than powers of one fixed D.
+This supplies at least one scale-critical point of the SAME smooth
+matrix/clock realization. It does not supply all40+matter stationarity,
+a physical programme-selection theorem or a refining GR family.
+
+### 897. Reuse the old exclusion and change the input it actually excludes
+
+Sections7cd657--672 and7ce already exclude the freely dilatable,
+repeated-fixed-operator all-blank/INTERNAL candidate, including all
+recording horizons and the full clock heat. They also already supply
+its fixed-positive-time spectral source. Repeating their radial or
+spectral proof would not advance the parent. They are retained.
+
+The incoming716387e3 history theorem permits DIFFERENT A_j. Its
+weights W_j need not have the sign of the repeated-operator weight.
+The construction below tests this distinction on the original complete
+spatial carrier, with the same p,z, cut, clock construction and full
+price. It adds no negative price, compensating matter term or new
+boundary. The cold return is a determinant identity for the WHOLE
+recorded isometry, not a postselected physical execution.
+
+### 898. One literal original spatial family, with every Fourier/CAR mode
+
+Use the existing periodic L4 regulator, h=1/4, all256 sites and all16
+CAR grades in order(0,2,3,1). Keep constant whitened inverse legs
+u_r=nu e_r. The parameter lies in the single interval
+
+    3/10 <= nu <= 3/5.
+
+Actual density and observer calibration are fixed; the owned inverse-
+leg dictionary maps this to uniform inverse scaling of the physical
+coframe. For j=0,...,7 set
+
+    R=[[24/25,-7/25],[7/25,24/25]],
+    n_j=(R^j(1,0),0) in R³,
+    M_(j,0)=diag(1,2 n_j n_j^T-I3), M_(j,r)=I for r=1,2,3.
+
+These are exact rational proper orthochronous Lorentz matrices:
+spatial pi rotations with fixed time axis. They preserve the original
+parallel-observer and own-leg conditions, including M_(j,0)e0=e0.
+All onsite and transported creation blocks have norm nu<=3/5<1.
+Thus this example already lies in the older stored domain as well
+as its positive-adjoint extension; no forbidden boost variation is
+used to obtain the scale derivative.
+
+For each ORIGINAL spatial Fourier mode k in {0,pi/2,pi,3pi/2}^4,
+
+    h D_j(k)=sum_r [nu C(e_r)(exp(i k_r)Lambda(M_(j,r))-I)
+                    +nu(exp(-i k_r)Lambda(M_(j,r))*-I)C(e_r)*],
+    a_j(k)=h D_j(k)/16, A_j(k)=a_j(k)*a_j(k).
+
+The exterior representation and all Fourier phases in this formula
+are Gaussian-rational at the endpoints. This is the original signed
+Julia/Walsh row, by7k and the true-adjoint owner; an arbitrary small
+unitary dilation is not substituted. All128 outcome columns of its
+full reflection U_j=I-2L_j L_j* remain in the execution.
+
+Repeat EACH of the eight different full128 reflections m=644 times,
+using its own fresh App128 and complete copied record each time.
+There are n=8m=5152 actual reflection rounds. Keep every old register
+and oldRIGHT. In the declared copied schedule there are at least
+N=8n=41216 clock stages (reflection plus seven serial COPY operations
+per round); closing or internally resolved stages remain additional
+real stages. No huge complete square unitary is materialized by the
+check, and no new native compilation of a reflection is asserted.
+
+Let kappa denote the ACTUAL passive feedback multiplicity. For the
+same cut on all33 scene vertices and oldRIGHT128, kappa=33*128=4224.
+The normalized full-Hodge heat does not acquire this factor. On the
+complete4096 DATA carrier set
+
+    kappa0=2p²=3-sqrt(5), C_j=I-kappa0 A_j,
+    K=C_7^m ... C_0^m,
+    J=-kappa logdet[(1-z)I+z K* K], z=2^-20.
+
+Every common scale derivative below is d/ds at nu(s)=exp(s)nu.
+It is a derivative of this SAME chronological word family with fixed
+length, rank, z, temperature and initial cut P0, under the owned
+history identification. Generated prefix cuts move with their actual
+prefixes. It is not a sum of isolated tick prices.
+
+### 899. Whole-source sign enclosure without eigenvalue clipping
+
+At each mode, C_j is a positive contraction, and exactly
+
+    C'_j=2(C_j-I),
+    (C_j^m)'=2m(C_j^m-C_j^(m-1)),
+    ||(C_j^m)'||op<=2, ||K'||op<=16.                 (898)
+
+The derivative norm follows from
+m x^(m-1)(1-x)<=1 on0<=x<=1. The product rule retains all eight
+noncommuting groups. It gives the exact source
+
+    J'/kappa=-2z ReTr[((1-z)I+zK*K)^-1 K*K'].
+
+It suffices to enclose the leading scalar L=-2z ReTr(K*K'), since
+
+    |J'/kappa-L| <= 2z²*4096*16/(1-z)
+                       =1/[8*1048575].              (899)
+
+This bound includes every4096 mode. It uses ||K||<=1 and the exact
+resolvent identity; no diagonalization or phase sampling occurs.
+
+The executed checker constructs the pi rotations, exterior matrices
+and a_j using exact Fractions and the exact phases1,i,-1,-i. A rational
+sqrt(5) enclosure fixes the input error. It then uses binary matrix
+powers and(898), propagating upward-rounded rational error bounds.
+The arithmetic assumption is explicit: binary64 round-to-nearest,
+gamma128 for length16 complex matrix products, gamma2048 for the
+length256 inner product, and gamma256 for the final sequential sum.
+These are norm-enclosed floating calculations, not exact rational
+evaluation of the enormous full-history determinant.
+
+The common total source-roundoff bound is2.8600e-7; the separate exact
+resolvent tail is less than1.1921e-7. Including BOTH, the outward
+enclosures per passive copy are
+
+    nu=3/10:  3.2966e-5 < J'/kappa < 3.3777e-5,
+    nu=3/5:  -1.2320e-6 < J'/kappa < -4.2140e-7.     (900)
+
+In particular J'(3/10)/kappa>1/100000 and
+J'(3/5)/kappa<-1/3000000. A negative source of a single k=0 block
+would not establish this. All256 spatial Fourier blocks, including
+their positive contributions, are summed in(900).
+
+### 900. Full paid heat preserves both signs and a scale-critical point exists
+
+Consume the all-unitary INTERNAL winding owner, not spatial heat.
+On this strict Julia chart the existing all-column derivative estimate
+gives
+
+    ||U'_j||op<=4[3/5+(3/5)^2/sqrt(1-(3/5)^2)]=4*21/20,
+    ||W'_full||op<=4n*21/20<2^15.
+
+COPY operations have their actual fixed matrices and no field derivative.
+The full endpoint W_full is unitary and is not the contracted K.
+For x=2/55 the exact inequality
+
+    (176/359)/[(1-x²)(1-x)^2]<1, x<1/16
+
+and the owned factorial bound imply A1_N<16^-N. Therefore the COMPLETE
+425 N dim(fibre) heat, with all record/harmonic/oldRIGHT modes, satisfies
+
+    |H'|<=A1_N||W'_full||<2^-240.                   (901)
+
+The absolute extensive heat and feedback anchors remain in B=H+J;
+only their actual derivative has been bounded. The inequality is
+dimension-independent because the whole thermal logarithm retains its
+normalizing trace, not because any archive modes were removed.
+
+Equations(900),(901) prove B'(3/10)>0 and B'(3/5)<0 for the same
+full Book source and every actual kappa>=1. The finite matrices,
+strict Julia roots, generated cuts and full heat are smooth on this
+fixed interval. Hence there exists nu_star in(3/10,3/5) such that
+
+    (d/ds) B(exp(s)nu_star)|_(s=0)=0.               (902)
+
+This is an existence theorem for ONE full-source scale equation,
+without an artificial compensating action. It can be a maximum along
+this curve; no minimum or stability theorem is asserted. The two
+endpoints use the same ordered gate-and-copy skeleton, initial cut,
+passive registers and total clock; only the common original coframe
+scale is varied. The literal endpoint matrices differ. This does not
+prove a reachable comparison from one complete physical initial state.
+
+### 901. What this changes in the GR parent
+
+The old repeated-operator exclusion remains true. Its sign barrier
+cannot be extended to the original noncommuting history class: the
+actual full spatial/recorded source has now crossed zero inside that
+class. Thus freezing the spatial operator throughout the clock can
+remove a genuine mechanism of the closed process. Keeping the complete
+history is necessary here at source level, not just for counting ticks.
+
+This is the next application of7da's exact W_j and the incoming history
+source, rather than another Taylor coefficient of the old fixed source.
+The next positive parent must compute the remaining coframe/link/
+matter rows on a dynamically changing common-history family, retaining
+these same chronological weights and its true clock. One scalar balance
+does not supply those rows, their physical admission or refinement.
+
+The smooth matrix/clock realization here is explicit, but native
+selection of this programme and inclusion of its continuous comparison
+curve in physical X_N are not inferred from rational endpoint data.
+Neither a native gate-word compiler nor a continuum Einstein family is
+claimed. The configured all40+2 solution,7cz and raw216 keep their scopes.
+No new task, claim, acceptance, Ready transition or GR_closed is added.
+
+### 902. Reproduction and source provenance
+
+The source inputs are9f23ec82 (exact all40 pullback),5140d2ab (original
+noncommuting retained-history theorem), primary7cd659--671 (owned
+all-column derivative and excluded repeated sector),7k101--109 (same
+original spatial operator), and the complete all-unitary winding theorem.
+Two read-only mathematical reviews checked the original CAR/Fourier
+map, old stored constraints, full spectator factor, source/product order,
+resolvent tail and every arithmetic error budget. Their corrections are
+incorporated: length256 inner-product bound, sequential outer summation,
+final derivative scaling and explicit physical admission boundary.
+
+The complete portable checker and observed endpoint receipts follow.
+The initial unbounded-size rational error-budget implementation was
+intentionally stopped to replace its exact-error bookkeeping by sound
+upward dyadic rounding; no observation timeout was treated as failure.
+No expected scientific evidence was changed to obtain the signs.
+
+Incomingc296829f was read before publication and is preserved. Its
+nonlinear direct-click Einstein--dust/source-recovery theorem consumes
+7cz on a different declared generated-field execution. This changing
+original full128 source is not substituted for that direct-click price,
+and its single radial balance does not replace that theorem's full
+field equations or close either execution's physical admission.
+
+
+Final executed bytes (UTF-8/LF):
+
+- noncommuting_native_full_source_check.py: SHA256 `3858e097939054ec0957321bcd70e7b98f68c68b74fb800bc8ef22a660a56c74`.
+- noncommuting_native_full_source_check.high.json: SHA256 `cedf5ff66d53cbe557691c94f7d23a436dce5755940b757f42df4144131f919b`.
+- noncommuting_native_full_source_check.low.json: SHA256 `388dcc4433c51938f019dd776fb84e2485873a8c2f54ab6d0210669c6495ab13`.
+
+The high endpoint ran normally and with Python -O with byte-identical JSON;
+the low endpoint ran normally on the same final code. Both use Python3.11.9
+and NumPy2.2.6. The arithmetic model and exact operator budgets are
+recorded in the code and receipts; this is not independent acceptance.
+
+Reproduce the two endpoints with `python noncommuting_native_full_source_check.py`
+and `python noncommuting_native_full_source_check.py 3/10`.
+
+```python
+"""Original L4/CAR16 full history source, with an explicit IEEE error enclosure.
+
+No eigensolver, clipped spectrum, sampled phase, or reduced active trace.
+The proof assumes IEEE binary64 round-to-nearest elementary/BLAS arithmetic,
+no overflow/underflow affecting these bounded inputs, and gamma_128 for a
+complex length-16 dot product, gamma_2048 for the length-256 inner product.
+All propagated error budgets are Fractions.
+"""
+from fractions import Fraction as F
+import itertools,json,math,sys
+import numpy as np
+
+def require(test,msg):
+    if not test: raise RuntimeError(msg)
+
+def up(value):
+    """Exact upward rounding of ERROR BOUNDS, not physical matrix entries."""
+    qq=2**100
+    return F((value.numerator*qq+value.denominator-1)//value.denominator,qq)
+
+d=16;L=4;groups=8;m=644;z=F(1,2**20)
+nu=F(sys.argv[1]) if len(sys.argv)>1 else F(3,5)
+require(nu in (F(3,10),F(3,5)),'the two endpoints of one declared curve')
+unit=F(1,2**53);gamma128=128*unit/(1-128*unit)
+e_input=F(1,2**40);e_mul=F(1,2**39)
+e_sub=F(1,2**44);e_update=F(1,2**33);e_trace=F(1,2**30)
+gamma2048=2048*unit/(1-2048*unit)
+gamma256=256*unit/(1-256*unit)
+require(gamma2048*(4*2)*(4*17)<e_trace,'length256 complex vdot budget')
+require(gamma256*256*16*2*17<F(1,2**20),'outer source summation budget')
+require(groups==8 and 2*groups==16,'full derivative norm bound')
+require(64*gamma128<e_mul,'contraction matrix multiply budget')
+require(16*gamma128*(3*2+2*17)+F(1,2**43)<e_update,
+        'derivative product/update budget')
+require(16*unit*(2+F(1,10**6))<e_sub,'subtraction budget')
+require(16*unit*3<e_sub,'final derivative scaling budget')
+x=F(2,55)
+require(F(176,359)/((1-x*x)*(1-x)**2)<1 and x<F(1,16),
+        'complete clock majorant A1_N < 16^-N')
+order=(0,2,3,1)
+cre=[]
+for r in range(4):
+    cr=np.zeros((16,16),dtype=np.int64)
+    for b in range(16):
+        if not (b>>r)&1:
+            cr[b|(1<<r),b]=(-1)**sum((b>>s)&1 for s in order[:order.index(r)])
+    cre.append(cr)
+eye=np.eye(16,dtype=np.int64)
+for r,s in itertools.product(range(4),repeat=2):
+    require(np.array_equal(cre[r]@cre[s].T+cre[s].T@cre[r],eye if r==s else 0*eye),
+            'exact CAR anticommutator')
+subsets=[[r for r in order if (b>>r)&1] for b in range(16)]
+def det(a):
+    if not a:return F(1)
+    return sum(((-1)**j)*a[0][j]*det([row[:j]+row[j+1:] for row in a[1:]])
+               for j in range(len(a)))
+
+lam=[];axis=[F(1),F(0),F(0)]
+for j in range(groups):
+    require(sum(v*v for v in axis)==1,'axis normalization')
+    mat=[[F(int(a==b)) for b in range(4)] for a in range(4)]
+    for a,b in itertools.product(range(3),repeat=2):
+        mat[a+1][b+1]=2*axis[a]*axis[b]-int(a==b)
+    require(det(mat)==1,'proper Lorentz spatial pi rotation')
+    lm=np.empty((16,16),dtype=object)
+    for a,aa in enumerate(subsets):
+        for b,bb in enumerate(subsets):
+            lm[a,b]=det([[mat[x][y] for y in bb] for x in aa]) if len(aa)==len(bb) else F(0)
+    require(np.array_equal(lm@lm.T,eye),'exact exterior orthogonality')
+    require(np.array_equal(lm@cre[0],cre[0]@lm),'original role0 own-leg condition')
+    lam.append(lm)
+    axis=[F(24,25)*axis[0]-F(7,25)*axis[1],
+          F(7,25)*axis[0]+F(24,25)*axis[1],F(0)]
+left_right=[(cre[0]@lm,lm.T@cre[0].T) for lm in lam]
+
+bits=80;two=2**bits;root=math.isqrt(5*two*two)
+k_lo=F(3)-F(root+1,two);k_hi=F(3)-F(root,two)
+k=float((k_lo+k_hi)/2);k_error=max(abs(F.from_float(k)-k_lo),abs(F.from_float(k)-k_hi))
+require(k_error<F(1,2**50),'exact sqrt5 input enclosure')
+require(2*F(1,2**45)+F(1,2**90)+16*gamma128<F(1,2**41),'A input budget')
+require(F(1,2**41)+k_error+F(1,2**46)<e_input,'C input budget')
+
+def exact_to_float(re,im):
+    out=np.empty((16,16),complex);rows=[F(0)]*16;cols=[F(0)]*16
+    for a,b in itertools.product(range(16),repeat=2):
+        rr=F(re[a,b]);ii=F(im[a,b]);fr=float(rr);fi=float(ii)
+        er=abs(F.from_float(fr)-rr)+abs(F.from_float(fi)-ii)
+        rows[a]+=er;cols[b]+=er;out[a,b]=complex(fr,fi)
+    err=max(rows+cols)
+    require(err<=F(1,2**45),'exact matrix conversion enclosure')
+    return out,err
+
+def mul_power(a,ea,b,eb):
+    er=up(ea+eb+ea*eb+e_mul)
+    require(er<F(1,10**6),'all computed powers remain norm below2')
+    return a@b,er
+def power(c,exponent):
+    ans=np.eye(16,dtype=complex);ea=F(0);base=c;eb=e_input
+    while exponent:
+        if exponent&1:ans,ea=mul_power(ans,ea,base,eb)
+        exponent//=2
+        if exponent:base,eb=mul_power(base,eb,base,eb)
+    return ans,ea
+
+phases=((1,0),(0,1),(-1,0),(0,-1))
+trace_values=[];max_a_error=F(0);expected_budget=None
+for idx in itertools.product(range(L),repeat=4):
+    ph=[phases[t] for t in idx]
+    kk=np.eye(16,dtype=complex);dk=np.zeros((16,16),complex)
+    ek=F(0);edk=F(0)
+    for j in range(groups):
+        require(2*j<=16,'preceding derivative norm bound')
+        left,right=left_right[j]
+        re=ph[0][0]*(left+right)-(cre[0]+cre[0].T)
+        im=ph[0][1]*(left-right)
+        for r in range(1,4):
+            re=re+(ph[r][0]-1)*(cre[r]+cre[r].T)
+            im=im+ph[r][1]*(cre[r]-cre[r].T)
+        aa,a_error=exact_to_float(re*(nu/16),im*(nu/16))
+        max_a_error=max(max_a_error,a_error)
+        # Exact a is Hermitian; norm<=nu by the original four-role bound.
+        require(np.linalg.norm(aa-aa.conj().T)<1e-14,'Hermitian input control')
+        cc=np.eye(16)-k*(aa@aa)
+        cm,ecm=power(cc,m);prev,eprev=power(cc,m-1)
+        dc=2*m*(cm-prev)
+        edc=up(2*m*(ecm+eprev+e_sub)+e_sub)
+        require(edc<F(1,10**4),'derivative power remains norm below3')
+        new_edk=up(edc*(1+ek)+2*ek+ecm*(2*j+edk)+edk+e_update)
+        new_ek=up(ecm+ek+ecm*ek+e_mul)
+        dk=dc@kk+cm@dk;kk=cm@kk;edk=new_edk;ek=new_ek
+    require(edk<F(1,1000),'derivative product remains norm below17')
+    tr=float(np.vdot(kk,dk).real)
+    trace_values.append(tr)
+    require(expected_budget is None or expected_budget==(ek,edk),'uniform exact budget')
+    expected_budget=(ek,edk)
+
+ek,edk=expected_budget
+lead_float=-float(2*z)*sum(trace_values)
+lead=F.from_float(lead_float)
+# d_total=4096 and ||K'||<=16. vdot and outer sum errors are included.
+e_lead=2*z*(4096*(edk+16*ek+ek*edk)+256*e_trace+F(1,2**20))
+resolvent_tail=2*z*z*4096*16/(1-z)
+lower=lead-e_lead-resolvent_tail;upper=lead+e_lead+resolvent_tail
+if nu==F(3,5):
+    require(upper<F(-1,3000000),'entire full4096 feedback source is strictly negative')
+else:
+    require(lower>F(1,100000),'entire full4096 feedback source is strictly positive')
+# Actual full copied clock has at least8 stages per full128 round.
+n=groups*m;N_min=8*n
+require(N_min>=64 and 4*n*F(21,20)<2**15,'actual complete endpoint heat budget')
+# A1_N < (1/16)^N, from the owned rational winding majorant.
+heat_bound=F(1,2**240)
+require(upper+heat_bound<0 if nu==F(3,5) else lower-heat_bound>0,
+        'full Book source including complete clock heat')
+out={'input':{'L':L,'all_spatial_CAR_modes':4096,'nu':str(nu),'z':'2^-20',
+              'rotation_cos':'24/25','rotation_sin':'7/25','groups':groups,
+              'repetitions_per_group':m,'actual_full128_rounds':n,
+              'minimum_copied_clock_stages':N_min},
+     'method':'exact Gaussian-rational inputs; binary powers; IEEE gamma128 enclosure; analytic resolvent and whole-clock tails',
+     'assumptions':['IEEE binary64 round-to-nearest matrix dot error <=gamma128; length256 vdot <=gamma2048',
+                    'declared original matrix/clock realization; physical programme selection not asserted'],
+     'leading_source':lead_float,'source_roundoff_bound':float(e_lead),
+     'resolvent_tail_bound':float(resolvent_tail),
+     'exact_input_max_operator_error_bound':float(max_a_error),
+     'final_K_operator_error_bound':float(ek),'final_DK_operator_error_bound':float(edk),
+     'full_feedback_source_enclosure':[float(lower),float(upper)],
+     'whole_scene_heat_source_bound':'2^-240',
+     'exact_sign_margin':('full master radial source < -1/3000000 + 2^-240'
+                          if nu==F(3,5) else 'full master radial source > 1/100000 - 2^-240'),
+     'scope':'one whole original noncommuting history; all4096 counting modes and full128 realization; not an all-field root or GR closure',
+     'python':sys.version.split()[0],'numpy':np.__version__}
+print(json.dumps(out,indent=2))
+```
+
+Observed high endpoint:
+
+```json
+{
+  "input": {
+    "L": 4,
+    "all_spatial_CAR_modes": 4096,
+    "nu": "3/5",
+    "z": "2^-20",
+    "rotation_cos": "24/25",
+    "rotation_sin": "7/25",
+    "groups": 8,
+    "repetitions_per_group": 644,
+    "actual_full128_rounds": 5152,
+    "minimum_copied_clock_stages": 41216
+  },
+  "method": "exact Gaussian-rational inputs; binary powers; IEEE gamma128 enclosure; analytic resolvent and whole-clock tails",
+  "assumptions": [
+    "IEEE binary64 round-to-nearest matrix dot error <=gamma128; length256 vdot <=gamma2048",
+    "declared original matrix/clock realization; physical programme selection not asserted"
+  ],
+  "leading_source": -8.266265911191645e-07,
+  "source_roundoff_bound": 2.859918992459943e-07,
+  "resolvent_tail_bound": 1.192094032377274e-07,
+  "exact_input_max_operator_error_bound": 1.3588706993841198e-17,
+  "final_K_operator_error_bound": 1.4071702124495512e-08,
+  "final_DK_operator_error_bound": 3.6381524319240805e-05,
+  "full_feedback_source_enclosure": [
+    -1.2318278936028861e-06,
+    -4.214252886354428e-07
+  ],
+  "whole_scene_heat_source_bound": "2^-240",
+  "exact_sign_margin": "full master radial source < -1/3000000 + 2^-240",
+  "scope": "one whole original noncommuting history; all4096 counting modes and full128 realization; not an all-field root or GR closure",
+  "python": "3.11.9",
+  "numpy": "2.2.6"
+}
+```
+
+Observed low endpoint:
+
+```json
+{
+  "input": {
+    "L": 4,
+    "all_spatial_CAR_modes": 4096,
+    "nu": "3/10",
+    "z": "2^-20",
+    "rotation_cos": "24/25",
+    "rotation_sin": "7/25",
+    "groups": 8,
+    "repetitions_per_group": 644,
+    "actual_full128_rounds": 5152,
+    "minimum_copied_clock_stages": 41216
+  },
+  "method": "exact Gaussian-rational inputs; binary powers; IEEE gamma128 enclosure; analytic resolvent and whole-clock tails",
+  "assumptions": [
+    "IEEE binary64 round-to-nearest matrix dot error <=gamma128; length256 vdot <=gamma2048",
+    "declared original matrix/clock realization; physical programme selection not asserted"
+  ],
+  "leading_source": 3.337166170053411e-05,
+  "source_roundoff_bound": 2.859918992459943e-07,
+  "resolvent_tail_bound": 1.192094032377274e-07,
+  "exact_input_max_operator_error_bound": 6.794353496920599e-18,
+  "final_K_operator_error_bound": 1.4071702124495512e-08,
+  "final_DK_operator_error_bound": 3.6381524319240805e-05,
+  "full_feedback_source_enclosure": [
+    3.296646039805039e-05,
+    3.377686300301783e-05
+  ],
+  "whole_scene_heat_source_bound": "2^-240",
+  "exact_sign_margin": "full master radial source > 1/100000 - 2^-240",
+  "scope": "one whole original noncommuting history; all4096 counting modes and full128 realization; not an all-field root or GR closure",
+  "python": "3.11.9",
+  "numpy": "2.2.6"
+}
+```
