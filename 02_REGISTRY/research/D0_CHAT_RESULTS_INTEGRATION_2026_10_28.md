@@ -118,6 +118,12 @@ authenticated. The source hashes of the three supporting modules are
 `f10d424372a2bcb1960ee78f7ffa08d2957baa3b5d07aad4a7681bcc4e4ee642` and
 `06d204cc0e8df94a0714a8e8574b493065f8770ea8be1fa1e42d66fb8babb99f`, and
 `a7d7707f104a89556e8de5141cde878396a5b1fe918f87847ef25e777402866b`.
+The clean-snapshot elaboration receipt for the new coefficient theorem is
+[`refoliation_witness_coefficients_declarations_2026-10-28.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/refoliation_witness_coefficients_declarations_2026-10-28.json)
+(SHA-256 `5bff12baee68cf5897c870349db5609c5efef1625674ad33588a93c4532463cb`);
+it records the theorem's premise-bearing type and axioms
+`Classical.choice`, `Quot.sound`, and `propext` at clean snapshot
+`8528d8cea34850f5addf404bc0fdc708cf252b7c`.
 
 ## What was actually replayed
 

@@ -11623,3 +11623,14 @@ environment digest
 updated [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json)
 retains its point-in-time trust boundary; it does not authenticate the kernel,
 dynamic libraries, external settings, or generated caches.
+
+The elaborated declaration inventory at clean commit
+`8528d8cea34850f5addf404bc0fdc708cf252b7c` records the exact theorem type,
+binders, conclusion after binders, proof/type dependencies, source range and
+trust footprint. The proof uses the existing `Classical.choice`, `Quot.sound`,
+and `propext` axioms; it introduces no new axiom declaration. The receipt is
+[`refoliation_witness_coefficients_declarations_2026-10-28.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/refoliation_witness_coefficients_declarations_2026-10-28.json)
+(SHA-256 `5bff12baee68cf5897c870349db5609c5efef1625674ad33588a93c4532463cb`);
+its `lean_source_digest` matches the public build receipt and its snapshot is
+clean. The fully elaborated type exposes all three witness equations as
+premises, so the extraction cannot be mistaken for the analytic bracket proof.
