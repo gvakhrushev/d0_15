@@ -80,7 +80,10 @@ class RepositoryFixture:
     def write(self, path, value):
         p = self.root / path
         p.parent.mkdir(parents=True, exist_ok=True)
-        p.write_text(value, encoding="utf-8", newline="\n")
+        # Keep fixtures runnable under the repository's older local Python
+        # while preserving the same explicit LF bytes as the newer CI runtime.
+        with p.open("w", encoding="utf-8", newline="\n") as stream:
+            stream.write(value)
 
     def write_graph(self, graph):
         self.write(c0.GRAPH, json.dumps({"schema": "d0-native-gravity-dependencies/1", **graph}))
