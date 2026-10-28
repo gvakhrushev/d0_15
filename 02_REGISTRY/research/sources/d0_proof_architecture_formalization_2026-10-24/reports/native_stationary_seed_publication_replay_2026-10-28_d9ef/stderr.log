@@ -1,0 +1,156 @@
+/tmp/d0_334_stationary_seed_replay/check_seed.py:50: RuntimeWarning: divide by zero encountered in matmul
+  return R@A@R, R@R
+/tmp/d0_334_stationary_seed_replay/check_seed.py:50: RuntimeWarning: overflow encountered in matmul
+  return R@A@R, R@R
+/tmp/d0_334_stationary_seed_replay/check_seed.py:50: RuntimeWarning: invalid value encountered in matmul
+  return R@A@R, R@R
+/tmp/d0_334_stationary_seed_replay/check_seed.py:133: RuntimeWarning: divide by zero encountered in matmul
+  out=U@v
+/tmp/d0_334_stationary_seed_replay/check_seed.py:133: RuntimeWarning: overflow encountered in matmul
+  out=U@v
+/tmp/d0_334_stationary_seed_replay/check_seed.py:133: RuntimeWarning: invalid value encountered in matmul
+  out=U@v
+/tmp/d0_334_stationary_seed_replay/check_seed.py:88: RuntimeWarning: divide by zero encountered in matmul
+  D = (1-z)*np.eye(K.shape[0])+z*scale*adj(K)@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:88: RuntimeWarning: overflow encountered in matmul
+  D = (1-z)*np.eye(K.shape[0])+z*scale*adj(K)@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:88: RuntimeWarning: invalid value encountered in matmul
+  D = (1-z)*np.eye(K.shape[0])+z*scale*adj(K)@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:90: RuntimeWarning: divide by zero encountered in matmul
+  Rbar = embed@inv@adj(embed)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:90: RuntimeWarning: overflow encountered in matmul
+  Rbar = embed@inv@adj(embed)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:90: RuntimeWarning: invalid value encountered in matmul
+  Rbar = embed@inv@adj(embed)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:92: RuntimeWarning: divide by zero encountered in matmul
+  H = U@Rbar@adj(U)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:92: RuntimeWarning: overflow encountered in matmul
+  H = U@Rbar@adj(U)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:92: RuntimeWarning: invalid value encountered in matmul
+  H = U@Rbar@adj(U)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:93: RuntimeWarning: divide by zero encountered in matmul
+  cotangent = -z*scale*(H@P-P@H)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:93: RuntimeWarning: overflow encountered in matmul
+  cotangent = -z*scale*(H@P-P@H)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:93: RuntimeWarning: invalid value encountered in matmul
+  cotangent = -z*scale*(H@P-P@H)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:97: RuntimeWarning: divide by zero encountered in matmul
+  w = z*scale*np.trace(adj(K)@K@inv).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:97: RuntimeWarning: overflow encountered in matmul
+  w = z*scale*np.trace(adj(K)@K@inv).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:97: RuntimeWarning: invalid value encountered in matmul
+  w = z*scale*np.trace(adj(K)@K@inv).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:73: RuntimeWarning: divide by zero encountered in matmul
+  diag_C = np.diag(adj(Q)@CSC@Q).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:73: RuntimeWarning: overflow encountered in matmul
+  diag_C = np.diag(adj(Q)@CSC@Q).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:73: RuntimeWarning: invalid value encountered in matmul
+  diag_C = np.diag(adj(Q)@CSC@Q).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:77: RuntimeWarning: divide by zero encountered in matmul
+  cotangent = V@np.diag(-1j*slopes)@adj(V)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:77: RuntimeWarning: overflow encountered in matmul
+  cotangent = V@np.diag(-1j*slopes)@adj(V)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:77: RuntimeWarning: invalid value encountered in matmul
+  cotangent = V@np.diag(-1j*slopes)@adj(V)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:160: RuntimeWarning: divide by zero encountered in matmul
+  dK=embed.T@X@U@embed
+/tmp/d0_334_stationary_seed_replay/check_seed.py:160: RuntimeWarning: overflow encountered in matmul
+  dK=embed.T@X@U@embed
+/tmp/d0_334_stationary_seed_replay/check_seed.py:160: RuntimeWarning: invalid value encountered in matmul
+  dK=embed.T@X@U@embed
+/tmp/d0_334_stationary_seed_replay/check_seed.py:161: RuntimeWarning: divide by zero encountered in matmul
+  D=(1-ZETA)*np.eye(16)+ZETA*K.T@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:161: RuntimeWarning: overflow encountered in matmul
+  D=(1-ZETA)*np.eye(16)+ZETA*K.T@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:161: RuntimeWarning: invalid value encountered in matmul
+  D=(1-ZETA)*np.eye(16)+ZETA*K.T@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:162: RuntimeWarning: divide by zero encountered in matmul
+  source=-2*ZETA*np.trace(la.solve(D,K.T@dK)).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:162: RuntimeWarning: overflow encountered in matmul
+  source=-2*ZETA*np.trace(la.solve(D,K.T@dK)).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:162: RuntimeWarning: invalid value encountered in matmul
+  source=-2*ZETA*np.trace(la.solve(D,K.T@dK)).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:175: RuntimeWarning: divide by zero encountered in matmul
+  dK=embed.T@X@U@embed
+/tmp/d0_334_stationary_seed_replay/check_seed.py:175: RuntimeWarning: overflow encountered in matmul
+  dK=embed.T@X@U@embed
+/tmp/d0_334_stationary_seed_replay/check_seed.py:175: RuntimeWarning: invalid value encountered in matmul
+  dK=embed.T@X@U@embed
+/tmp/d0_334_stationary_seed_replay/check_seed.py:176: RuntimeWarning: divide by zero encountered in matmul
+  D=(1-ZETA)*np.eye(16)+ZETA*t*K.T@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:176: RuntimeWarning: overflow encountered in matmul
+  D=(1-ZETA)*np.eye(16)+ZETA*t*K.T@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:176: RuntimeWarning: invalid value encountered in matmul
+  D=(1-ZETA)*np.eye(16)+ZETA*t*K.T@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:177: RuntimeWarning: divide by zero encountered in matmul
+  numerator=np.trace(la.solve(D,K.T@dK)).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:177: RuntimeWarning: overflow encountered in matmul
+  numerator=np.trace(la.solve(D,K.T@dK)).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:177: RuntimeWarning: invalid value encountered in matmul
+  numerator=np.trace(la.solve(D,K.T@dK)).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:215: RuntimeWarning: divide by zero encountered in matmul
+  expL=(V*W)@adj(V);Z=2*W.sum()+359*N*d
+/tmp/d0_334_stationary_seed_replay/check_seed.py:215: RuntimeWarning: overflow encountered in matmul
+  expL=(V*W)@adj(V);Z=2*W.sum()+359*N*d
+/tmp/d0_334_stationary_seed_replay/check_seed.py:215: RuntimeWarning: invalid value encountered in matmul
+  expL=(V*W)@adj(V);Z=2*W.sum()+359*N*d
+/tmp/d0_334_stationary_seed_replay/check_seed.py:229: RuntimeWarning: divide by zero encountered in matmul
+  dH=-2*np.trace(expL@dL).real/Z
+/tmp/d0_334_stationary_seed_replay/check_seed.py:229: RuntimeWarning: overflow encountered in matmul
+  dH=-2*np.trace(expL@dL).real/Z
+/tmp/d0_334_stationary_seed_replay/check_seed.py:229: RuntimeWarning: invalid value encountered in matmul
+  dH=-2*np.trace(expL@dL).real/Z
+/Users/grigorijvahrusev/Library/Python/3.9/lib/python/site-packages/scipy/linalg/_matfuncs.py:326: RuntimeWarning: divide by zero encountered in matmul
+  m, s = pick_pade_structure(Am)
+/Users/grigorijvahrusev/Library/Python/3.9/lib/python/site-packages/scipy/linalg/_matfuncs.py:326: RuntimeWarning: overflow encountered in matmul
+  m, s = pick_pade_structure(Am)
+/Users/grigorijvahrusev/Library/Python/3.9/lib/python/site-packages/scipy/linalg/_matfuncs.py:326: RuntimeWarning: invalid value encountered in matmul
+  m, s = pick_pade_structure(Am)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:261: RuntimeWarning: divide by zero encountered in matmul
+  V=la.expm(eps*Y)@U
+/tmp/d0_334_stationary_seed_replay/check_seed.py:261: RuntimeWarning: overflow encountered in matmul
+  V=la.expm(eps*Y)@U
+/tmp/d0_334_stationary_seed_replay/check_seed.py:261: RuntimeWarning: invalid value encountered in matmul
+  V=la.expm(eps*Y)@U
+/tmp/d0_334_stationary_seed_replay/check_seed.py:263: RuntimeWarning: divide by zero encountered in matmul
+  K=E.T@V@E;dK=E.T@X@V@E
+/tmp/d0_334_stationary_seed_replay/check_seed.py:263: RuntimeWarning: overflow encountered in matmul
+  K=E.T@V@E;dK=E.T@X@V@E
+/tmp/d0_334_stationary_seed_replay/check_seed.py:263: RuntimeWarning: invalid value encountered in matmul
+  K=E.T@V@E;dK=E.T@X@V@E
+/tmp/d0_334_stationary_seed_replay/check_seed.py:266: RuntimeWarning: divide by zero encountered in matmul
+  D=a*np.eye(r)+b*K.T@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:266: RuntimeWarning: overflow encountered in matmul
+  D=a*np.eye(r)+b*K.T@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:266: RuntimeWarning: invalid value encountered in matmul
+  D=a*np.eye(r)+b*K.T@K
+/tmp/d0_334_stationary_seed_replay/check_seed.py:267: RuntimeWarning: divide by zero encountered in matmul
+  denom=np.trace(la.solve(D,K.T@K)).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:267: RuntimeWarning: overflow encountered in matmul
+  denom=np.trace(la.solve(D,K.T@K)).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:267: RuntimeWarning: invalid value encountered in matmul
+  denom=np.trace(la.solve(D,K.T@K)).real
+/tmp/d0_334_stationary_seed_replay/check_seed.py:268: RuntimeWarning: divide by zero encountered in matmul
+  g=-2*np.trace(la.solve(D,K.T@dK)).real/denom
+/tmp/d0_334_stationary_seed_replay/check_seed.py:268: RuntimeWarning: overflow encountered in matmul
+  g=-2*np.trace(la.solve(D,K.T@dK)).real/denom
+/tmp/d0_334_stationary_seed_replay/check_seed.py:268: RuntimeWarning: invalid value encountered in matmul
+  g=-2*np.trace(la.solve(D,K.T@dK)).real/denom
+/tmp/d0_334_stationary_seed_replay/check_seed.py:284: RuntimeWarning: divide by zero encountered in matmul
+  def j(t):return return_data(la.expm(t*X)@U,E)[0]
+/tmp/d0_334_stationary_seed_replay/check_seed.py:284: RuntimeWarning: overflow encountered in matmul
+  def j(t):return return_data(la.expm(t*X)@U,E)[0]
+/tmp/d0_334_stationary_seed_replay/check_seed.py:284: RuntimeWarning: invalid value encountered in matmul
+  def j(t):return return_data(la.expm(t*X)@U,E)[0]
+/tmp/d0_334_stationary_seed_replay/check_seed.py:87: RuntimeWarning: divide by zero encountered in matmul
+  K = adj(embed)@U@embed
+/tmp/d0_334_stationary_seed_replay/check_seed.py:87: RuntimeWarning: overflow encountered in matmul
+  K = adj(embed)@U@embed
+/tmp/d0_334_stationary_seed_replay/check_seed.py:87: RuntimeWarning: invalid value encountered in matmul
+  K = adj(embed)@U@embed
+/tmp/d0_334_stationary_seed_replay/check_seed.py:94: RuntimeWarning: divide by zero encountered in matmul
+  eigen = la.eigvalsh(adj(K)@K)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:94: RuntimeWarning: overflow encountered in matmul
+  eigen = la.eigvalsh(adj(K)@K)
+/tmp/d0_334_stationary_seed_replay/check_seed.py:94: RuntimeWarning: invalid value encountered in matmul
+  eigen = la.eigvalsh(adj(K)@K)

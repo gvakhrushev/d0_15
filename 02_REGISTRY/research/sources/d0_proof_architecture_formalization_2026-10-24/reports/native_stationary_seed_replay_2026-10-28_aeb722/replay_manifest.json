@@ -1,0 +1,55 @@
+{
+  "GR_closed": false,
+  "checks": 578,
+  "environment": {
+    "machine": "arm64",
+    "numpy": "2.0.2",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "scipy": "1.13.1"
+  },
+  "outputs": {
+    "bytes": 4777,
+    "nonfinite_numeric_values": 0,
+    "normal_optimized_byte_identical": true,
+    "normal_sha256": "372628ee341f3639d4365303e6a1704dc00787488d499ca6863a0d461f0b1263",
+    "optimized_sha256": "372628ee341f3639d4365303e6a1704dc00787488d499ca6863a0d461f0b1263"
+  },
+  "owner": {
+    "blob": "789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b",
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "commit": "aeb722a162c008e5e23a7fde39479eb62e3296cf",
+    "path": "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py",
+    "published_receipt_present": false,
+    "pull_request": 334,
+    "sha256": "9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120"
+  },
+  "replay": {
+    "Lean_or_CI_run": false,
+    "check_count": 578,
+    "full_variation_domain_derived": false,
+    "geometry_source_identified_at_this_seed": false,
+    "large_7do_preparation_replayed": false,
+    "native_physical_actuation_proved": false,
+    "normal_command": "python3 check_seed.py",
+    "optimized_command": "python3 -O check_seed.py",
+    "result_status": "PASS_WHOLE_WORD_SOURCE_AND_NATIVE_STATIONARY_SEED"
+  },
+  "schema": "d0-native-stationary-seed-replay-v1",
+  "scope": "Finite whole-word seed and matrix/source controls on one original-boundary sector. Not the 7do generated large preparation, not physical admission or geometry identification, not a complete variation-domain result, not Lean/CI, and not GR closure.",
+  "status": "PASS_WHOLE_WORD_SOURCE_AND_NATIVE_STATIONARY_SEED",
+  "stderr": {
+    "bytes": 11482,
+    "cause": "unresolved; warnings were not suppressed",
+    "distinct_messages": [
+      "divide by zero encountered in matmul",
+      "overflow encountered in matmul",
+      "invalid value encountered in matmul"
+    ],
+    "lines": 156,
+    "normal_optimized_byte_identical": true,
+    "normal_sha256": "d52196db5b6b750bd17ceefbffd70e5991761c6bdc3eae4f41bb66f7e502dd15",
+    "optimized_sha256": "d52196db5b6b750bd17ceefbffd70e5991761c6bdc3eae4f41bb66f7e502dd15",
+    "runtime_warning_lines": 78
+  }
+}

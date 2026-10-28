@@ -3723,6 +3723,118 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(manifest["execution"]["optimized_stderr_bytes"], 0)
         self.assertFalse(manifest["GR_closed"])
 
+    def test_native_stationary_seed_source_and_replay_keep_exact_pins_and_limits(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "native-stationary-recording-seed-whole-word-source"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed native stationary seed source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        owner_source = next(
+            source for source in case["required_sources"]
+            if source["path"].endswith("d0_native_stationary_seed_2026-10-28/check_seed.py")
+        )
+        owner_status = cold_start._required_source_status(query_pairs, owner_source)
+        self.assertEqual(owner_status["expected_commit"], "aeb722a162c008e5e23a7fde39479eb62e3296cf")
+        self.assertEqual(owner_status["expected_blob"], "789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b")
+        memo_source = next(
+            source for source in case["required_sources"]
+            if source["path"].endswith("A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md")
+        )
+        self.assertEqual(memo_source["commit"], "d9ef0b0558fcabbc097ecf2024a10b31ec0b5852")
+        result_source = next(
+            source for source in case["required_sources"]
+            if source["path"].endswith("d0_native_stationary_seed_2026-10-28/result.json")
+        )
+        self.assertEqual(result_source["commit"], "24ca8e86271c1139e6386387ec1818890fe42549")
+        self.assertIn("not repair the prior", case["scope_review"])
+        self.assertIn("saddle", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+        integrated_text = (
+            proof.ROOT / "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ).read_text(encoding="utf-8")
+        self.assertIn(
+            "blob/155b909851043762b7a78bb03700571029f96708/"
+            "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/PROOF_RU.md",
+            integrated_text,
+        )
+
+        historical_report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports/"
+            / "native_stationary_seed_replay_2026-10-28_aeb722"
+        )
+        historical_manifest = json.loads(
+            (historical_report_dir / "replay_manifest.json").read_text(encoding="utf-8")
+        )
+        self.assertFalse(historical_manifest["owner"]["published_receipt_present"])
+        self.assertEqual(historical_manifest["stderr"]["runtime_warning_lines"], 78)
+
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports/"
+            / "native_stationary_seed_publication_replay_2026-10-28_d9ef"
+        )
+        manifest = json.loads((report_dir / "replay_manifest.json").read_text(encoding="utf-8"))
+        local_bytes = (report_dir / "local_replay.json").read_bytes()
+        published_bytes = (report_dir / "published_result.json").read_bytes()
+        local_result = json.loads(local_bytes)
+        published_result = json.loads(published_bytes)
+        stderr = (report_dir / "stderr.log").read_bytes()
+        self.assertEqual(manifest["schema"], "d0-native-stationary-seed-publication-replay-v1")
+        self.assertEqual(manifest["sources"]["checker"]["commit"], owner_source["commit"])
+        self.assertEqual(manifest["sources"]["checker"]["blob"], owner_source["blob"])
+        self.assertEqual(
+            manifest["sources"]["proof"]["commit"],
+            "155b909851043762b7a78bb03700571029f96708",
+        )
+        self.assertEqual(
+            manifest["sources"]["proof"]["blob"],
+            "877fcb4c71a0a73afbbaff98e61e655ed88d606a",
+        )
+        self.assertEqual(manifest["sources"]["composition_memo"]["commit"], memo_source["commit"])
+        self.assertEqual(manifest["sources"]["published_result"]["commit"], result_source["commit"])
+        self.assertEqual(hashlib.sha256(local_bytes).hexdigest(), manifest["replay"]["local_stdout"]["sha256"])
+        self.assertEqual(hashlib.sha256(published_bytes).hexdigest(), manifest["published_comparison"]["published_result_sha256"])
+        self.assertFalse(manifest["published_comparison"]["exact_stdout_byte_match"])
+        self.assertTrue(manifest["published_comparison"]["structure_match"])
+        self.assertTrue(manifest["published_comparison"]["nonnumeric_fields_match"])
+        self.assertEqual(manifest["published_comparison"]["numeric_values_differ"], 30)
+        self.assertEqual(
+            manifest["published_comparison"]["maximum_absolute_numeric_difference"],
+            4.652861429477184e-12,
+        )
+        self.assertEqual(local_result["checks"], 578)
+        self.assertEqual(published_result["checks"], 578)
+        self.assertEqual(local_result["status"], published_result["status"])
+        self.assertTrue(manifest["replay"]["normal_optimized_repeat_stdout_byte_identical"])
+        self.assertEqual(hashlib.sha256(stderr).hexdigest(), manifest["stderr"]["sha256"])
+        self.assertEqual(manifest["stderr"]["runtime_warning_lines"], 78)
+        self.assertTrue(manifest["stderr"]["normal_optimized_repeat_byte_identical"])
+        self.assertFalse(manifest["stderr"]["suppressed"])
+        self.assertTrue(manifest["scope"]["stationary_prefix_removed_only_for_chosen_alternative_initial_execution"])
+        self.assertFalse(manifest["scope"]["large_7do_preparation_replayed"])
+        self.assertFalse(manifest["scope"]["full_variation_domain_derived"])
+        self.assertFalse(manifest["scope"]["geometry_source_identified_at_seed"])
+        self.assertFalse(manifest["scope"]["native_physical_actuation_proved"])
+        self.assertFalse(manifest["scope"]["Lean_or_CI_run"])
+        self.assertFalse(manifest["GR_closed"])
+
     def test_canonical_archive_law_sources_keep_exact_owner_pins_and_scope(self) -> None:
         case = next(
             item for item in cold_start.CASES

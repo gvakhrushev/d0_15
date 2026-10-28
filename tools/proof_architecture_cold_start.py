@@ -1092,6 +1092,56 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "native-stationary-recording-seed-whole-word-source",
+        "queries": [
+            "native stationary recording seed whole word source full Book 496 real skew directions",
+            "full word cotangent actual stage suffix transport stationary prefix positive return source matrix endpoint",
+            "full_Book_price five_point_full_price_error full_modes 578 stationary seed result",
+            "ancestral marker pullback zero return source scalar future T QUERY positive saddle",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md",
+            "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py",
+            "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/result.json",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0, 1, 2, 3],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md",
+                "commit": "d9ef0b0558fcabbc097ecf2024a10b31ec0b5852",
+                "blob": "1766cb44e82a276d14a5546257b85a59beeab506",
+                "scope_query_indexes": [1],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py",
+                "commit": "aeb722a162c008e5e23a7fde39479eb62e3296cf",
+                "blob": "789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b",
+                "scope_query_indexes": [0, 1],
+            },
+            {
+                "path": "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/result.json",
+                "commit": "24ca8e86271c1139e6386387ec1818890fe42549",
+                "blob": "561f4a3b7a5ce1a058e6b380705e3ea60a96bc7f",
+                "scope_query_indexes": [2],
+            },
+        ],
+        "scope_review": (
+            "The exact five-call nonidentity seed has zero full-word matrix source on its fixed "
+            "rank/stage/clock/scene chart and preserves zero ancestral return source under a "
+            "scoped scalar future with positive gain. It removes the stationary-prefix premise "
+            "only for this alternative initial execution; it does not repair the prior recorded "
+            "history, replay the large 7do preparation, select physical actuation, resolve the "
+            "future QUERY source, identify geometry, or derive the full physical variation "
+            "domain. The seed is a saddle; local and published numeric measurements differ by "
+            "at most 4.66e-12 in absolute value. No Lean/CI or GR closure is claimed; "
+            "GR_closed=false."
+        ),
+    },
+    {
         "id": "canonical-archive-law-and-variation-domain",
         "queries": [
             "canonical archive law compatibility variation domain full old effect relative commutant",

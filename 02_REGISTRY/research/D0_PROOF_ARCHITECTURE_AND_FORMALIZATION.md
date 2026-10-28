@@ -13841,3 +13841,119 @@ the added archive-law condition, identify all physical Cost-Info terms,
 establish the all-42 source norm or common GR refinement, or produce a Lean
 formalization of this finite construction. Physical source selection and GR
 obligations remain open; `GR_closed=false`.
+
+## #334 continuation at `aeb722a1` — stationary recording seed and whole-word source control
+
+At the earlier #334 head `aeb722a1`, the standalone
+[`check_seed.py`](https://github.com/gvakhrushev/d0_15/blob/aeb722a162c008e5e23a7fde39479eb62e3296cf/02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py),
+commit `aeb722a162c008e5e23a7fde39479eb62e3296cf`, blob
+`789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b`, SHA-256
+`9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120`.
+That snapshot had the checker but no separate result memo or published JSON
+receipt. It was a supplementary finite control over the #334 same-execution
+source chain; the later composed result and published receipt are integrated
+below.
+
+Exact source locator: the native stationary recording seed, whole-word source, full Book control, and all 496 real skew directions are checked by [#334 `check_seed.py`](https://github.com/gvakhrushev/d0_15/blob/aeb722a162c008e5e23a7fde39479eb62e3296cf/02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py); source blob `789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b`.
+
+The seed is the five-call positive word `CX(6,0); SourceI(0,13,14)^4` on the
+original boundary: 16 binary wires, 12 stated blank wires, rank-16 input, and
+oldRIGHT retained. The active factor is 32-dimensional; the remaining 2,048
+binary spectator states are retained analytically in the complete 65,536-state
+heat. The generated cut has rank 80, with an exact rank-8 closing defect. The
+checker reports a full Book value near `24.434620836538727`, positive return
+price `7.62939816923112e-6`, and positive gain `7.62939453125e-6`. The
+return-source component is zero on all 496 real skew endpoint directions; the
+finite-spectral heat-source residual is about `2.33e-21` in this run.
+
+The checker also validates a separate noncommuting 3-stage complex matrix
+control: the whole-word source agrees with independently differentiated full
+heat plus determinant, the five-point derivative error is about `6.34e-13`,
+and omitting the actual suffix transport produces an error about `0.05045`.
+At the recorded seed the return has opposite second-variation signs in two
+directions, and the full Book remains a saddle; a newly free QUERY retains a
+positive source. This does not select an Einstein law or establish a physical
+stationary execution.
+
+The exact checker from #334 commit `aeb722a1` was replayed in ordinary and `-O`
+modes on Python 3.9.6, NumPy 2.0.2, SciPy 1.13.1, macOS 26.5.1 arm64. Both
+outputs are byte-identical (receipt SHA-256
+`372628ee341f3639d4365303e6a1704dc00787488d499ca6863a0d461f0b1263`), with all
+578 checks passing and no non-finite JSON values. Both runs also emitted the
+same 78 RuntimeWarning lines (stderr SHA-256
+`d52196db5b6b750bd17ceefbffd70e5991761c6bdc3eae4f41bb66f7e502dd15`); the
+warning cause is unresolved, so this is not recorded as a warning-free replay.
+The exact stdout, stderr and environment manifest are under
+[`native_stationary_seed_replay_2026-10-28_aeb722`](sources/d0_proof_architecture_formalization_2026-10-24/reports/native_stationary_seed_replay_2026-10-28_aeb722/).
+
+The checker explicitly does not replay the 7do large preparation, prove
+physical actuation, identify the geometric source at this seed, derive the full
+variation domain, or run Lean/CI. This is evidence for a scoped finite
+stationarity and nonselection control only; the native Book/source and GR
+obligations remain open, and `GR_closed=false`.
+
+## #334 composition at `d9ef0b05` — a full-word stationary recording prefix
+
+The next #334 commits add a composed parent application and its full Russian
+proof: [composition memo at `d9ef0b05`](https://github.com/gvakhrushev/d0_15/blob/d9ef0b0558fcabbc097ecf2024a10b31ec0b5852/02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md),
+[proof at `155b9098`](https://github.com/gvakhrushev/d0_15/blob/155b909851043762b7a78bb03700571029f96708/02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/PROOF_RU.md),
+[checker at `aeb722a1`](https://github.com/gvakhrushev/d0_15/blob/aeb722a162c008e5e23a7fde39479eb62e3296cf/02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py),
+and [published result at `24ca8e86`](https://github.com/gvakhrushev/d0_15/blob/24ca8e86271c1139e6386387ec1818890fe42549/02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/result.json).
+This consumes the `7dn` ancestral-marker stationary-prefix premise for one
+explicitly constructed alternative initial execution; it does not change the
+previously recorded large `7do` execution or retroactively repair its source.
+
+On the original 16-wire boundary, with twelve stated blank wires and unknown
+wires `6, 13, 14, 15`, the five paid calls are `CX(6,0)` followed by four
+`SourceI(0,13,14)` calls. Since `SourceI^4=I` on the full carrier, the word is
+the nonidentity involution `U_\star=CX(6,0)`, not identity padding or a
+zero-return control. The rank-16 input has `K_\star=diag(I8,0_8)` and
+`K_\star^† K_\star=diag(I8,0_8)`, a rank-8 retained record and a rank-8
+escape block. Its return price and gain are positive. The full 65,536-state
+thermal carrier and all 139,264,000 paired
+Hodge modes remain in the homogeneous internal clock; inactive spectator wires
+are multiplicities in the heat, not extra input columns.
+
+For `dU=XU`, the derived full-word source is `dB=Re Tr(C_B X)`, with
+`C_B=C_H+C_J`; the return component vanishes for the entire unitary endpoint
+chart exactly when `(i†Ui)†(i†Ui)` is a projection. At this seed that condition
+holds, and `U_*` is a Hermitian involution, so both the heat and return
+cotangents vanish. Thus `C_B=0` on the declared fixed-rank, fixed-stage,
+fixed-clock and fixed-scene chart. A stage variation is transported by its
+actual suffix `W_{>j}† C_B W_{>j}`, so the whole-word source vanishes at every
+stage. This is a mathematical full-matrix stationarity result; it does not
+derive which continuous directions or finite changes D0 physically admits.
+
+The prefix also has a scoped future-price consequence. For a separately
+justified scalar-return future of squared amplitude `T>0`, the prefix return
+source stays exactly zero while its coefficient
+`w_T=8*zeta*T/(1-zeta+zeta*T)` stays positive. Therefore an ancestral marker
+whose proved pullback is a skew insertion at this prefix has zero return
+source, even if its pullback norm grows. Newly created future markers do not
+inherit this result without their own pullback proof; nonreflective future heat
+still needs its separate source budget, and a newly free QUERY retains a
+positive source. The seed is a strict saddle on the declared matrix chart, not
+a minimum: the two return second variations have opposite signs, and the full
+heat-Hessian bound is
+`2.601046754e-10`. Positive return or gain does not select a physical
+execution or imply Einstein dynamics.
+
+The exact pinned checker reports 578 checks. Three local runs (ordinary,
+optimized and repeated ordinary) were byte-identical to each other, with local
+stdout SHA-256
+`372628ee341f3639d4365303e6a1704dc00787488d499ca6863a0d461f0b1263`; all three
+also emitted the same 78 NumPy `RuntimeWarning` lines. The subsequently
+published #334 `result.json` is not byte-identical to that local output: its
+structure and nonnumeric fields agree, and the largest absolute numeric
+difference is `4.652861429477184e-12` (in the five-point full-price error).
+Both byte streams and the replay comparison are retained in
+[`native_stationary_seed_publication_replay_2026-10-28_d9ef`](sources/d0_proof_architecture_formalization_2026-10-24/reports/native_stationary_seed_publication_replay_2026-10-28_d9ef/).
+The warning cause remains unresolved, so neither the checker nor this replay is
+described as warning-free.
+
+This removes only the stationary-prefix premise for the chosen five-call
+initial execution. It does not show that the physical process supplies the
+twelve blanks, select this execution, repair the prior `7dn` history, replay
+the large `7do` preparation, identify a geometric source, derive the complete
+physical variation domain, or discharge the future QUERY source. Lean and CI
+were not run for this research result. `GR_closed=false`.
