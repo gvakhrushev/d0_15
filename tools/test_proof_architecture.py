@@ -1194,6 +1194,25 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertTrue(status["found"], f"pinned Eq. (28) source was not retrieved: {status}")
         self.assertEqual(status["status"], "found_direct_content")
 
+    def test_finite_julia_null_inverse_retrieves_its_exact_consumer(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "finite-julia-null-chart-inverse"
+        )
+        query = case["queries"][3]
+        consumer = case["required_sources"][0]
+        hits = proof.full_text_search(proof.ROOT, query, limit=18)
+        status = cold_start._required_source_status(
+            [(query, hits)],
+            {**consumer, "scope_query_indexes": [0],
+             "scope_query_sections": {"0": ["5.1"]}},
+        )
+
+        self.assertTrue(status["found"], f"pinned AF coframe consumer was not retrieved: {status}")
+        self.assertEqual(status["expected_commit"], consumer["commit"])
+        self.assertEqual(status["expected_blob"], consumer["blob"])
+        self.assertIn("5.1", status["sections_found"])
+
     def test_multi_pattern_matcher_keeps_nested_and_partial_overlaps(self) -> None:
         variants = {
             "abc": [(0, "short")],

@@ -562,12 +562,22 @@ CASES: list[dict[str, Any]] = [
             "archiveJuliaNullBlock_reconstructsAffineFunctional",
             "complete Julia raising query contraction block null inverse equation 28",
             "canonical normalized witness z=b over b transpose b positive square-root branch",
+            "actual full-CAR full16 Julia raising entries null u-leg coframe proper links",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
             "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
             "03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+                "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+                "blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+                "scope_query_indexes": [3],
+                "scope_query_sections": {"3": ["5.1"]},
+            },
         ],
         "scope_review": "The finite-carrier inverse retains symmetric endpoint forms, their isometry, a normalized witness, and the positive branch; the canonical witness exists under the stated null and nondegeneracy hypotheses. It does not establish the consumer's physical price, admission, all-jet pullback, or GR selection.",
     },
