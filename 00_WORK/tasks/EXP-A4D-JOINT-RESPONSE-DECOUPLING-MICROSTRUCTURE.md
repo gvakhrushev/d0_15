@@ -16598,3 +16598,77 @@ basis values. The same-input local work/protocol/assembly/repository guards
 pass; embedded test sources and receipts parse and prior input bytes are
 retained. These checks and the review do not supply physical admission,
 full selected Book Info or scientific acceptance.
+
+
+### 27 October - same-chart unpadded root and independent QUERY source
+
+SAME #334 / native-programme-v1, input c4f5c2f2. Consume original literal
+unpadded full42 root/collar and its all42 source robustness budget; compare
+only actual same-chart two-cell click and the exact 7cq/7ch QUERY reflection.
+Derive a concrete original-chart field row and the missing independent
+QUERY-orbit row, including actual gain and task/clock domains. Smallest
+decisive checks: outward interval calculation on the entire certified
+unpadded root cube and exact all-column native reflection control. Keep
+selected full Book heat/cut/Info, native variation admission and different
+carriers explicit; no new detector, action, compensator or task/claim.
+Only existing primary memo and this task brief are owned write paths.
+
+### 28 October - original unpadded source row and complete QUERY/cut balance
+
+SAME #334 / constitutive/native-programme-v1. Native realization and final
+composition; no lifecycle, claim, acceptance or Ready promotion. The primary
+same-representative residual memo now contains section7cu, equations828--835.
+It preserves every incoming byte, consumes the original unpadded 42-root and
+7cq/7ct source construction, and applies the incoming moving-cut owner from
+c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a to that same QUERY orbit.
+
+The actual original first CAR row of D(r_A+r_B) is strictly negative on the
+ENTIRE radius-1e-20 source-continuation cube. Its direct-click comparison has
+normalized row in (-5.991e-5,-5.985e-5), with the true positive gain and original
+tau=0.05. This is not the selected whole Book source or an unnormalized
+comparison with 1e-22. The literal 0/10 report price remains paid once. The
+unpadded derivative weights are h_phi'(r_i)-1; the distinct paid-writer value
+tau_h=p^8 and the common-null one-gradient carrier are not identified with
+this original rank-two model. This removes a false null-source transfer.
+
+On the separate actual 7cq reflection base, the independent global QUERY
+orbit has the strictly positive row831 and normalized fixed-h limit833.
+Its generator norm, endpoint velocity, task constraint and actual compiler
+errors are retained. The full moving-cut differential now gives835: a cut
+velocity lambda[G,P] multiplies that row by (1-lambda). Joint conjugation of
+QUERY and cut cancels it exactly; the whole heat price additionally requires
+its own actual transport/law. No physical lambda, native field lift or
+independent local-gate variation is selected by this mathematical identity.
+The incoming refoliation classification's canonical/strong-algebra premises
+remain open for the same execution.
+
+Decisive checks are embedded verbatim with observed receipts and SHA256:
+original unpadded outward interval/Cauchy calculation on root and robustness
+cubes; exact QUERY algebra plus all32 columns of the owned26-stage query;
+rational moving-cut control with source contributions +16/35 and -16/35.
+Two independent mathematical reviews checked the row, gain/tau distinction,
+orbit and full cut cancellation, including rank R<dim K. No unchanged full
+root/Hessian, heat, CAR128 or Lean replay is claimed.
+
+Remaining parent application: derive the actual same-execution maps to
+F_N, Delta_N, input/cut/writer, clock and any genuinely selected Info/work,
+then evaluate their complete source with independent admitted controls on
+ONE carrier. The fixed-cut QUERY row alone does not exclude that application;
+a passive conjugation alone does not select physical Einstein dynamics.
+The already owned curved solution and refinement consumers remain in scope.
+GR_closed=false; this is a source-composition checkpoint, not GR closure.
+
+Local checkpoint validation on incoming head21bb087f (which adds separate
+boundary-source/canonical research and changes neither owned path):
+`GIT_WORK_TREE="$PWD" python3 tools/validate_work.py`,
+`validate_agent_protocol.py`, `gr_assembly.py check` and `validate_repo.py`
+all pass; repository warnings0 and scientific_promotion=false. The assembly
+template was read as an interface/assumption check, not registered acceptance.
+The three embedded scripts match the executed private sources byte-for-byte,
+all three observed receipts parse and match their script SHA256, all six
+original unpadded input pins and the native26-stage owner pin remain exact.
+AST checks and insertion-only diff/whitespace checks pass. Removing the exact
+section7cu insertion recovers all2667634 original primary bytes; the brief
+retains its entire1076750-byte input prefix. Unchanged scientific calculations
+are reused from their recorded executions; these structural checks are not
+physical acceptance or a remote CI result.

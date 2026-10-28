@@ -84117,6 +84117,368 @@ d0_serial_heat_source_20261027.json: 822 bytes, SHA256 `0f5be2832e8eec11ff44ea97
 }
 ```
 
+
+## 7cu. The original unpadded 42-root and the independent QUERY source
+
+28 October 2026, retaining the calculations started27 October. SAME #334 / constitutive/native-programme-v1, original input c4f5c2f2dc2b1a129e8ca09074e543c3a2906fb4, reconciled with incoming c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a. This consumes the actual original unequal 0/10 N1 full42 root and source budget, 7cq792--796 and 7ct821. It gives a new exact SAME-chart source calculation at the original rank-two root, and a separate complete QUERY-orbit source for the pointwise-null construction. Their carriers and source normalizations are NOT identified. No new action, detector, physical selector, new root or GR closure is asserted.
+
+### 1. An actual nonzero 42-field row throughout the original root's source cube
+
+Use the frozen `certified_unpadded.py` and original collar: all 16 coframe, 24 Lorentz and two real CAR coordinates are free, h=0.183801524658179446663931692878752644250497528167344843803260291378571211, original outer zeta=2^-20, sigma-minus event, tau=0.05 and two positive weights rho_A=rho_B=1. Their true quadrature weights are mu_A=mu_B=1 and Omega=sum mu rho=2; the individual rho are NOT normalized probabilities. The original 0/10 report already charges E Cost=1+r and must not be paid twice. Let r_A,r_B be the actual ORIGINAL two cell clicks, not the different 256-address READY reporter. With the full root center z0 and field direction e_40 (zero-based, first real interior CAR amplitude), a new outward interval computation on every z in B_infinity(z0,1e-20) gives
+
+    D_40(r_A+r_B) in (-5.739033603421e-14, -5.739033603369e-14).
+                                                               (828)
+
+The same cube is precisely the domain of the existing unpadded full42 source-continuation theorem; the original strict exact stationary root lies in its smaller 1e-24 cube. On that smaller cube the actual r_A-r_B is strictly positive, D_40 r_A<0 and D_40 r_B>0. In the ORIGINAL paid 0/10 CQ scalar the genuine fixed overall factor is norm and
+
+    D S_CQ = norm sum_(i=A,B) [h_phi'(r_i)-1] D r_i.       (829)
+
+At its root this weighted sum is zero in all42 directions, including e_40. Because h_phi'(r)=ln((1-r)/r)/ln(phi) is strictly decreasing, the two positive weights in829 differ: the zero weighted source does NOT force the unweighted click sum to vanish. Equation828 confirms the latter on the actual chart, not on the older padded/h=1/4 root.
+
+Let a0 be the same original sigma-minus click's positive x derivative at its common-null anchor, with its actual original zeta and Golden coefficients, and set Q=(r_A+r_B)/2. For a CONDITIONAL direct-click comparison of the functional type 7cq792 on this very two-cell chart, with the ORIGINAL tau=0.05, Omega=2 and its true positive gain Gamma, differentiation gives
+
+    D_40 J_direct/Gamma = 2 D_40 Q/(a0 tau)
+                        = D_40(r_A+r_B)/(a0 tau)
+                        in (-5.991e-5, -5.985e-5).          (830)
+
+This is a normalized comparison for the explicitly substituted two-cell direct-click target. It is not a computed full Book03 residual, not a new physically selected action and not the unnormalized source measured against 1e-22. The selected physical F_N, Delta_N, original preparation/oldRIGHT/field writer, all independent rows and other price terms remain unbound; they may contribute or cancel. The actual finite compiler and its C1 errors also require their own bound on THIS chart.
+
+The pointwise-null 7cq792--793 conclusion cannot be transferred by notation to this different off-null root: (830) is nonzero even at the certified root and throughout its entire continuation cube. The different material carriers also matter: the primary one-gradient null Brinkmann source and this rank-two finite two-real-CAR root are not identified merely by calling their charts 42-field. Their valid consumers remain separate.
+
+The tau convention is a second independent obstruction to naive transport: the frozen N1 CQ model has tau=0.05. The paid-writer scale formula at this h gives tau_h=p^8, approximately 0.02128623625; this is neither an equality nor a proof that its different reporter has been transported. A new same-execution calculation is needed to change tau, its source and gain.
+
+### 2. A missing independent QUERY source on the other, common-null execution
+
+Return separately to the 7cq/7ct q0 construction at its actual compiled finite centre. Its completed ordinary-work query Q=Q*, Q^2=I and actual normalized q0 prepared work psi obey <psi,Q psi>=c with 0<c<1. Protected K, helper/Spin and oldRIGHT remain their stated identity factors and the initial cut/clock are fixed. Use full ordinary SOURCE/QUERY work W, explicitly excluding the separate physical helper, Spin and oldRIGHT; the strong literal completed-factor guards are required. Define
+
+    P=|psi><psi|,  K0=[Q,P],  u=sqrt(1-c^2),
+    ||K0||=u,      Q(t)=exp(t K0) Q exp(-t K0).
+
+K0 is real skew. Q(t) and U(t)=A*Q(t)A are exact whole reflections and on the actual initial protected carrier
+
+    C(t)=[c cos(2ut)-u sin(2ut)] I_R,
+    D C(0)=-2u^2 I_R,
+    D J(0)=4 R zeta c u^2/(1-zeta+zeta c^2)>0.            (831)
+
+The declared INTERNAL501/502 whole-reflection result606 gives DH=0 at the same base, so831 is a genuine nonzero H+J row on this GLOBAL matrix comparison. It does not follow from SOURCE/body graph796, and does not contradict its estimate: K0 is generally global over W, not a single local raw gate or one field lift. It is not proved to be a physically admitted continuous variation; moving cuts, clock, scene, independent Info/work and constrained task sources remain.
+
+For the actual comparison gain Gamma=R zeta alpha_K gamma(1-2x)a0 tau_h/(Omega D_*), x=gamma P_h and D_*=1-zeta alpha_K x(1-x), the unit-W-operator-norm direction K0/u has
+
+    D(H+J)[K0/u]/Gamma =
+       4 Omega c u D_* /
+        [alpha_K gamma(1-2x)a0 tau_h(1-zeta+zeta c^2)] > 0. (832)
+
+This is a unit conjugation-generator norm, not a unit endpoint-velocity norm: ||D Q||=2 for K0/u. It is not a dual gate-max lower bound. At fixed h, under the actual 7cq table/Bernstein/body/QUERY errors tending to zero and 0<b<=P_h(Y*)<=q_max, alpha_K,gamma>0, x<1/2, the actual c_m tends to c_*=sqrt(1-alpha_K gamma P_h(Y*)[1-gamma P_h(Y*)]) and u_m tends to u_*>0. Consequently832 tends to the positive fixed-h value
+
+    4 Omega c_* u_*/[alpha_K gamma(1-2 gamma P_h(Y*))a0 tau_h]. (833)
+
+The equality of the two denominators used in833 is ONLY a limit at the ideal target; they must remain distinct in832 at a finite compiler output. The dimensions can grow with m: this is a scalar sequence, not an identification of Hilbert spaces or a mesh-uniform bound. The question whether the actual physical QUERY/controller directions contain this tangent remains essential.
+
+### 3. Finite orbit comparison without a new Golden-angle primitive
+
+For t>0 with theta=2ut<=min(1,u/(2c)), the exact matrix Q(-t) is again a balanced reflection on the same W and
+
+    c(-t)-c >= (7/6) u^2 t,
+    J(0)-J(-t) >= (7/3) R zeta c u^2 t > 0.               (834)
+
+This uses sin(theta)>=theta-theta^3/6, 1-cos(theta)<=theta^2/2 and the actual positive log argument. If the previously owned full ordinary-work SO compiler applies to W(-t)=exp(-tK0), and its input is computably supplied with finite-dimensional FPTEAS target data, an endpoint approximation error epsilon creates at most 2epsilon query-operator error and at most 4R zeta epsilon/(1-zeta) feedback error. Thus epsilon<7(1-zeta)c u^2 t/12 preserves the strict comparator. The actual psi and K0 must be computed or approximated from the real preparation with a proved error budget. Real native words, actual inverse, full work, their common paid clock/dimension and equalization must be produced; the actual required task/readout/role acceptance must be checked. No such gigantic query word is emitted here, and a different query may fail the task even if its matrix error is tiny. There is no physical descent theorem without those steps or the other actual price components.
+
+### 4. Consume the incoming complete moving-cut source on the SAME orbit
+
+The incoming owner `sources/d0_root_moving_cut_2026-10-28/PROOF_RU.md` supplies the exact full bootstrap differential with moving input cut, and its internal transport. Apply it directly instead of freezing a genuinely moving cut. In the prepared A-frame use P_in=Pi_S tensor |psi><psi|, of actual rank R, U=I_K tensor Q_query and G=I_K tensor K0. Here Pi_S is the ORIGINAL protected support and Q_query is the reflection; the complementary projector I-P_in is a different operator. The canonical transport [dP_in,P_in] need not equal G on the full ambient space when R<dim K. The owner's invariance under a block-diagonal transport difference handles this distinction.
+
+For C_escape=(I-P_in)U P_in, F=C_escape* C_escape and R_z=(I-zeta F)^-1, the retained full feedback derivative is
+
+    dJ=2zeta Re Tr(R_z C_escape* dC_escape),
+    dC_escape=-dP_in U P_in+(I-P_in)dU P_in+(I-P_in)U dP_in.
+
+Take dU=[G,U]. The fixed-cut contribution is831. At fixed U, the matching dP_in=[G,P_in] contributes its EXACT negative. For the whole mathematical family dP_in=lambda[G,P_in], linearity gives
+
+    dJ_total=(1-lambda) 4R zeta c(1-c^2)/(1-zeta+zeta c^2).
+                                                               (835)
+
+At lambda=1, U(t)=exp(tG)Uexp(-tG), P_in(t)=exp(tG)P_in exp(-tG), and F(t)=exp(tG)Fexp(-tG); the log determinant is constant. This is the same base point and an explicit cut contribution, not a choice of physical lambda. Returning to the original input frame conjugates G and P_in by the actual A. To make the WHOLE heat+feedback action constant by pure covariance, the actual Delta must also be transported, or its own separately proved INTERNAL heat law must apply. Arbitrary physical dP_in and dDelta do not obey that covariance by assumption.
+
+Thus832--833 describe a fixed-cut global QUERY row only. Its limiting positive value cannot be called the complete physical source before the actual cut and thermal pullback have been determined. The new moving-cut theorem removes a previously missing differential formula; it does not supply that physical map. The accompanying refoliation classification in incoming `sources/d0_refoliation_closure_2026-10-28/PROOF_RU.md` still assumes its canonical generators, symplectic form and strong deformation algebra, and does not establish them for this execution. No claim of physical GR closure follows from it here. A rational rank-one control verifies independent QUERY and cut contributions +16/35 and -16/35, their sum0 and dF=[G,F].
+
+### 5. Verification and parent substitution
+
+The original unpadded checker pins the six owner/model/certificate inputs by SHA256, evaluates original clicks on the whole complex 1e-4 polydisc, verifies |r_i|<1 and uses a real 1e-20 cube plus imaginary step 1e-30. Every point of that cube has a 5e-5 complex disc inside the pinned domain. The exact rational Cauchy tail bound is <1e-46 per derivative; the original rigorous matrix-exponential tail is included in the outward intervals. It also checks the original 1e-24 root cube, actual unequal weights829, real source gains and the distinct tau convention. It consumes the previous 1764-entry existence proof; it does not replay or modify it. The second check verifies the orbit algebra and strict finite rational comparison, and executes the already-owned 26-stage 7ch native query on ALL32 columns (rank8), not the enormous 7cq word. A third rational check applies the incoming moving-cut source to the SAME query orbit and verifies the actual cancellation835. Independent mathematical review checked the computations and the gain/normalization boundary. No original full128 CAR, heat/root/Lean replay, physical admission or scientific acceptance is claimed.
+
+The named parent substitution is the explicit original unpadded42 field row828--830 and the independently retained 7cq QUERY row831--834. This removes a false source-transfer inference and identifies the next actual calculation: map the original selected complete F_N, Delta_N, input writer, clock/Info/work and independent controls onto ONE carrier, compute its full residual and use the full42 norm/gain only after that map is proved. Neither result establishes global physical nonexistence, full GR soundness or refinement. `GR_closed=false`; the existing PR remains Draft/IN_PROGRESS.
+
+Input primary2667634 bytes / SHA256 3f21417ac00cdd0dc8e967bef66b2e03ff94431c8eadd45fa089d33429850327; task brief1076750 bytes / SHA256 6267aa7fccceb7d69221555506936927c9505063843ee021e12ed6b90af5e6c6. All original owner inputs and prior primary/brief bytes are retained.
+
+### 6. Exact changed checks and observed receipts
+
+d0_unpadded_samechart_click_20261027.py: 6831 bytes, SHA256 `bdde42db756f0c52230556db4b25cf5918a6ba29c7ce3332e0c4ad1ce6be6547`.
+
+```python
+#!/usr/bin/env python3
+"""Downstream interval application to the original certified unpadded 42-root.
+
+Consumes the 1e-24 existence cube; does not certify another root or assert
+physical selection of a Book cut, writer, cost/info or the direct-click model.
+"""
+from decimal import Decimal, getcontext
+from fractions import Fraction
+from pathlib import Path
+import hashlib, json, sys
+from mpmath import iv
+
+root=Path.cwd();owner=root/'02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22'
+base=root/'02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22'
+paths={'certified_unpadded':owner/'certified_unpadded.py','center_new':owner/'center_new.json','root_receipt':owner/'RESULT.json','original_model':base/'certified_model.py','original_inputs':base/'inputs.py','original_root_checker':owner/'check_unpadded42.py'}
+pins={k:hashlib.sha256(p.read_bytes()).hexdigest() for k,p in paths.items()}
+expected={'certified_unpadded':'30c670082ce1ee9e56d32a2d537b59bd35ea3ffed4bf27fe8aa41ec7de513246','center_new':'d2c824b170b9aba1fd4d7195c231ce034e0d54f7ccd3bb2d9a7df7c40e283f39','root_receipt':'f5a7af22e4524d06c37bbc01c6f55c6250c0d1b643180f535f32350e5bd4a175','original_model':'d617f2de4ffff8566705045091495e52d72d7df715113338c2234355a0e19ca6','original_inputs':'12c4077fa8125b10609590daa1bc6815ebbf3b22f48781b3b3148d41b066f641','original_root_checker':'6a033b87da3a3fb6f54edac9b7e3127482d2dc1ccdeb09ebf519b2ef457dba06'}
+assert pins==expected, 'frozen original inputs changed'
+sys.path.insert(0,str(owner))
+from certified_unpadded import NativeUnpaddedCQ,CENTER,COLLAR
+getcontext().prec=150
+iv.dps=115
+m=NativeUnpaddedCQ(iv)
+def ivbound(x,a,b):
+    assert x.a>iv.mpf(a) and x.b<iv.mpf(b),(str(x),a,b)
+def cube(rad):
+    return [iv.mpf([str(Decimal(s)-rad),str(Decimal(s)+rad)]) for s in CENTER['z42']]
+ball=Decimal('1e-24');realbox=cube(ball)
+assert CENTER['h']==COLLAR['h']
+# IMPORTANT: original finite N1 fixture and paid-writer refinement use
+# distinct actual tau. Establish the exact exponential rounding without
+# replacing the click/source at one tau by that at the other.
+h0=iv.mpf(CENTER['h']);p=m.p;tau_h=p**8
+assert tau_h.b<(h0*h0).a and (h0*h0).b<(p**7).a
+ivbound(tau_h,'0.02128','0.02130')
+assert tau_h.b<m.tau.a and m.tau==iv.mpf('0.05')
+assert json.loads(paths['root_receipt'].read_text())['certificate']['real_exact_root_ball_radius_infinity']=='1e-24'
+# Holomorphic control on original polydisc centered at the fixed rational center:
+# the evaluated original click formula has modulus <1 there. The root cube
+# admits a 5e-5 disc about each point inside that same rectangle.
+R=Decimal('1e-4');large=[]
+for s in CENTER['z42']:
+    x=Decimal(s);large.append(iv.mpc([str(x-R),str(x+R)],[str(-R),str(R)]))
+m.price(large);assert all(abs(r).b<iv.mpf(1) for r in m.last_clicks)
+# Strict actual click intervals over the *whole* original certified root cube.
+m.price(realbox);r=[x.real for x in m.last_clicks]
+ivbound(r[0],'1.85127304676926594408995e-6','1.85127304676926594408999e-6')
+ivbound(r[1],'1.85123468250638593779568e-6','1.85123468250638593779579e-6')
+gap=r[0]-r[1];ivbound(gap,'3.836426287999e-11','3.836426288002e-11')
+# Complex step at all real inputs in the cube. A true Taylor remainder is
+# bounded by M*t^2/[R0^3*(1-t/R0)] < 1e-46 (M=1,R0=5e-5,t=1e-30).
+# Original model's rigorous_exp encloses its 1e-120 tail in each evaluation;
+# all other interval operations are outward, including this uncertainty.
+rt=Fraction(1,10**30);rr=Fraction(1,20000)
+assert rt*rt/(rr**3*(1-rt/rr)) < Fraction(1,10**46)
+t=iv.mpf('1e-30');v=realbox.copy();v[40]=iv.mpc(realbox[40],t);m.price(v)
+err=iv.mpf(['-1e-46','1e-46']);d=[x.imag/t+err for x in m.last_clicks]
+ivbound(d[0],'-3.522176119e-8','-3.522176117e-8')
+ivbound(d[1],'3.522170378e-8','3.522170381e-8')
+ds=d[0]+d[1];ivbound(ds,'-5.741e-14','-5.737e-14')
+# Exact 0/10 price is norm Σ (hφ(r_i)-r_i) plus field-independent constants.
+# hφ'(r_i)-1 >0, strictly decreasing with click; stationarity implies the
+# weighted derivative is zero. Verify the actual interval weights and signs.
+hp=[iv.log((1-x)/x)/m.lp-1 for x in r]
+assert hp[0].a>iv.mpf(1) and hp[1].a>iv.mpf(1) and hp[0].b<hp[1].a
+weighted=hp[0]*d[0]+hp[1]*d[1]
+assert weighted.a<0 and weighted.b>0
+# a0 is the original positive r_x at the common-null anchor. This quantity
+# normalizes the comparison ONLY; no actual physical Book price is selected.
+p=m.p; zz=m.Z;b0=4*p*p*(1-p*p)
+a0=zz*(1-zz*b0)*4*p*p*(1-2*p*p)*(1-b0)
+assert a0.a>0
+normalized=ds/(a0*m.tau)
+ivbound(normalized,'-0.00005991','-0.00005985')
+# The unpadded robustness theorem uses the much larger radius 1e-20.
+# Re-enclose the *same* derivative and normalization on that whole cube,
+# independently of the root Euler equation, to test source compatibility.
+robustbox=cube(Decimal('1e-20'))
+m.price(robustbox);robustr=[x.real for x in m.last_clicks]
+assert robustr[0].a>robustr[1].b
+v=robustbox.copy();v[40]=iv.mpc(robustbox[40],t);m.price(v)
+robustd=[x.imag/t+err for x in m.last_clicks]
+robustsum=robustd[0]+robustd[1]
+ivbound(robustsum,'-5.739033603421e-14','-5.739033603369e-14')
+robustnorm=robustsum/(a0*m.tau)
+ivbound(robustnorm,'-0.00005991','-0.00005985')
+result={'status':'PASS_ORIGINAL_UNPADDED42_SAME_CHART_DIRECT_CLICK','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'input_sha256':pins,'h':CENTER['h'],'certified_root_cube_radius':'1e-24','large_complex_box_radius':'1e-4','click_box_abs_bound':'< 1','cauchy_radius_about_every_real_root_candidate':'5e-5','complex_step':'1e-30','cauchy_derivative_error_each':'< 1e-46','tau_original_N1':'0.05','tau_refinement_rule':'p^ceil(2 log_phi(1/h)); p^8 < h^2 < p^7, so tau_h=p^8','tau_refinement_actual_interval':str(tau_h),'tau_inputs_are_distinct':True,'coordinate':'z[40], first real CAR scalar amplitude at interior node; one-based 41',
+'click_A_minus_click_B':'(3.836426287999e-11, 3.836426288002e-11)',
+'D_click_A':'(-3.522176119e-8, -3.522176117e-8)',
+'D_click_B':'(3.522170378e-8, 3.522170381e-8)',
+'D_sum':'(-5.741e-14, -5.737e-14)',
+'D_sum_over_a0_tau':'(-0.00005991, -0.00005985)',
+'robustness_cube_radius':'1e-20',
+'robustness_cube_D_sum':'(-5.739033603421e-14, -5.739033603369e-14)',
+'robustness_cube_D_sum_over_a0_tau':'(-0.00005991, -0.00005985)',
+'actual_outward_intervals_115dps':{'root_click_gap':str(gap),'root_D_sum':str(ds),'root_normalized':str(normalized),'robust_D_sum':str(robustsum),'robust_normalized':str(robustnorm)},
+'CQ_derivative_weights':'h_phi_prime(r_i)-1 from literal 0/10 price; positive unequal; weighted interval contains zero',
+'scope':'all inequalities hold throughout original root cube; direct-click normalization is a mathematical comparison, not full Book source or physical selection; no new root, heat, full128 CAR or Lean replay; GR_closed=false'}
+print(json.dumps(result,indent=2,sort_keys=True))
+```
+
+d0_unpadded_samechart_click_20261027.json: 3884 bytes, SHA256 `847471a4149a387876d304b8194fd1b8e685bf004f670f44bd8bdd306d934b9c`.
+
+```json
+{
+  "CQ_derivative_weights": "h_phi_prime(r_i)-1 from literal 0/10 price; positive unequal; weighted interval contains zero",
+  "D_click_A": "(-3.522176119e-8, -3.522176117e-8)",
+  "D_click_B": "(3.522170378e-8, 3.522170381e-8)",
+  "D_sum": "(-5.741e-14, -5.737e-14)",
+  "D_sum_over_a0_tau": "(-0.00005991, -0.00005985)",
+  "actual_outward_intervals_115dps": {
+    "robust_D_sum": "[-0.0000000000000573903360341957189818608793191562090714254939635555017864543385057787124523106808201628305503303100132280935553416131024, -0.0000000000000573903360337005005465968047876165807745737619976950670738681568363238959290977807906842162743746074429557053788845233805]",
+    "robust_normalized": "[-0.0000598788042500499223344346589152076207646906702879532121980546479409817421489131863982461622519449540092907847907991680595, -0.0000598788042495332310272340022114306763634938228350846300495745708793226956260385756771775071015841653774941603758125513368]",
+    "root_D_sum": "[-0.0000000000000573903360339481345251506052571513878067297991998449768125038762687336592324628133030187402689999236358082953348882613641, -0.0000000000000573903360339480850033070788496978339455236918629540526580256910045539809422156488278779377730018957979019586532689770542]",
+    "root_click_gap": "[0.0000000000383642628800062941953156846569098984188370374280338643670663176659051197411569555262211720098832609747443199804807726842, 0.0000000000383642628800062942779491762865458500092377626684573478873234277442963549602935265719877930587679616493792619345848783194]",
+    "root_normalized": "[-0.0000598788042497916025153996905961944190427120246870359712028165781087441356086930595563358579597957757862641941452489521615, -0.0000598788042497915508462689705305236241101399061277560437717080616614919790720853247367925778797116012300182360507441865272]"
+  },
+  "cauchy_derivative_error_each": "< 1e-46",
+  "cauchy_radius_about_every_real_root_candidate": "5e-5",
+  "certified_root_cube_radius": "1e-24",
+  "click_A_minus_click_B": "(3.836426287999e-11, 3.836426288002e-11)",
+  "click_box_abs_bound": "< 1",
+  "complex_step": "1e-30",
+  "coordinate": "z[40], first real CAR scalar amplitude at interior node; one-based 41",
+  "h": "0.183801524658179446663931692878752644250497528167344843803260291378571211",
+  "input_sha256": {
+    "center_new": "d2c824b170b9aba1fd4d7195c231ce034e0d54f7ccd3bb2d9a7df7c40e283f39",
+    "certified_unpadded": "30c670082ce1ee9e56d32a2d537b59bd35ea3ffed4bf27fe8aa41ec7de513246",
+    "original_inputs": "12c4077fa8125b10609590daa1bc6815ebbf3b22f48781b3b3148d41b066f641",
+    "original_model": "d617f2de4ffff8566705045091495e52d72d7df715113338c2234355a0e19ca6",
+    "original_root_checker": "6a033b87da3a3fb6f54edac9b7e3127482d2dc1ccdeb09ebf519b2ef457dba06",
+    "root_receipt": "f5a7af22e4524d06c37bbc01c6f55c6250c0d1b643180f535f32350e5bd4a175"
+  },
+  "large_complex_box_radius": "1e-4",
+  "robustness_cube_D_sum": "(-5.739033603421e-14, -5.739033603369e-14)",
+  "robustness_cube_D_sum_over_a0_tau": "(-0.00005991, -0.00005985)",
+  "robustness_cube_radius": "1e-20",
+  "scope": "all inequalities hold throughout original root cube; direct-click normalization is a mathematical comparison, not full Book source or physical selection; no new root, heat, full128 CAR or Lean replay; GR_closed=false",
+  "source_sha256": "bdde42db756f0c52230556db4b25cf5918a6ba29c7ce3332e0c4ad1ce6be6547",
+  "status": "PASS_ORIGINAL_UNPADDED42_SAME_CHART_DIRECT_CLICK",
+  "tau_inputs_are_distinct": true,
+  "tau_original_N1": "0.05",
+  "tau_refinement_actual_interval": "[0.0212862362522081877036764783215995278735072240789798951555789231895302808030485561486487120227861128201641504168752728278, 0.0212862362522081877036764783215995278735072240789798951555789231895302808030485561486487120227861128201641504168752803623]",
+  "tau_refinement_rule": "p^ceil(2 log_phi(1/h)); p^8 < h^2 < p^7, so tau_h=p^8"
+}
+```
+
+d0_query_orbit_control_20261027.py: 3418 bytes, SHA256 `b89cb0e9db410d1aef7bc209b1852e72b428a3e7c4d51c46e21a045e73751f40`.
+
+```python
+"""Exact scalar-corner QUERY orbit and a paid native reflection control.
+This is an ambient comparison, not physical admission of a continuous gate.
+"""
+from pathlib import Path
+from fractions import Fraction
+import importlib.util,hashlib,sys,json
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+owner=Path.cwd()/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+pin=hashlib.sha256(owner.read_bytes()).hexdigest()
+assert pin=='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+spec=importlib.util.spec_from_file_location('query_orbit_native',owner);n=importlib.util.module_from_spec(spec);sys.modules[spec.name]=n;spec.loader.exec_module(n)
+Kfield=n.GOLDEN_FIELD
+def eq(A,B): return DomainMatrix.from_Matrix(S.Matrix(A-B)).convert_to(Kfield).is_zero_matrix
+c,u,t,z,R,a=S.symbols('c u t z R a',real=True,positive=True)
+P=S.diag(1,0);Q=S.Matrix([[c,u],[u,-c]]);K=Q*P-P*Q;I=S.eye(2)
+assert K.T==-K and K*K==-u**2*I
+assert S.expand((K*Q-Q*K)[0,0]-(-2*u**2))==0
+# The exponential has a real-plane rotation because K²=-u²I.
+W=S.cos(u*t)*I+S.sin(u*t)/u*K
+C=S.trigsimp((W*Q*W.T)[0,0])
+assert S.trigsimp(C-(c*S.cos(2*u*t)-u*S.sin(2*u*t)))==0
+assert S.simplify(S.diff(C,t).subs(t,0)+2*u**2)==0
+# B=H+J, exact heat derivative vanishes on the declared reflection base.
+DJ=S.diff(-R*S.log(a+z*C**2),t).subs(t,0)
+assert S.simplify(DJ-4*R*z*c*u**2/(a+z*c**2))==0
+assert S.simplify(DJ/u-4*R*z*c*u/(a+z*c**2))==0
+# The native 7ch QUERY word, not a small-angle replacement.
+port,q=0,1;spin=(2,3);old=(4,);SI=n.Gate('SourceI',(port,*spin))
+sw=(n.Gate('CX',(port,q)),n.Gate('CX',(q,port)),n.Gate('CX',(port,q)))
+def ex(word): return n.Execution(5,(port,q),old,tuple(word),n.G_CX_SOURCE_I,port,spin)
+Vword=sw+(n.Gate('G',(port,)),)+sw
+Vinv=n.inverse_word(ex(Vword),max_qubits=5,max_expanded_stages=1000)
+Zword=sw+(SI,SI)+sw; word=Vinv+Zword+Vword
+obj=ex(word);n.validate_execution(obj,max_qubits=5,max_expanded_stages=1000);inv=n.inventory(obj,max_qubits=5,max_expanded_stages=1000)
+assert (inv.gate_count,inv.g_count,inv.cx_count,inv.source_i_count,inv.cut_rank)==(26,2,18,6,8)
+Qn=S.Matrix(n.word_matrix(obj,max_qubits=5,max_expanded_stages=1000)); Ip=S.Matrix(n.input_isometry(obj,max_qubits=5,max_expanded_stages=1000)); Pn=Ip*Ip.T
+Kn=Qn*Pn-Pn*Qn
+cn=n.P**3;un=2*n.A*n.P
+assert eq(Qn,Qn.T) and eq(Qn*Qn,S.eye(32))
+assert eq(Ip.T*Qn*Ip,cn*S.eye(8))
+assert eq(Ip.T*(Kn*Qn-Qn*Kn)*Ip,-2*un**2*S.eye(8))
+assert Kfield.from_sympy(S.expand(cn**2+un**2-1))==Kfield.zero
+# Rational finite-descent control, no floating evaluation of trigonometric signs.
+f=Fraction;cr=f(3,5);ur=f(4,5);tr=f(1,100);theta=2*ur*tr
+assert theta<=1 and theta<=ur/(2*cr)
+# sin θ >= θ−θ³/6; 1−cos θ <= θ²/2.
+delta_lower=ur*(theta-theta**3/6)-cr*theta**2/2
+assert delta_lower>=f(7,6)*ur**2*tr>0
+print(json.dumps({'status':'PASS','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'native_owner_sha256':pin,'native_query':'26 stages, all 32 columns, protected rank 8','scalar':'c=p^3, u=2 sqrt(p) p','full_orbit_corner_derivative':'-2(1-c^2) I','full_orbit_feedback_derivative':'4 R z c(1-c^2)/(a+z c^2)','unit_generator_feedback_derivative':'4 R z c sqrt(1-c^2)/(a+z c^2)','finite_descent_rational_lower':str(delta_lower),'scope':'ambient full-query comparator; finite abstract orbit sign; physical X_N, large 7cq and compiled tolerance task not checked'},indent=2))
+```
+
+d0_query_orbit_control_20261027.json: 681 bytes, SHA256 `a9a5c77e2688dafcc5a3dd9d113f297b317d6131b3455c2b5eb54f7877c71b01`.
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "b89cb0e9db410d1aef7bc209b1852e72b428a3e7c4d51c46e21a045e73751f40",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_query": "26 stages, all 32 columns, protected rank 8",
+  "scalar": "c=p^3, u=2 sqrt(p) p",
+  "full_orbit_corner_derivative": "-2(1-c^2) I",
+  "full_orbit_feedback_derivative": "4 R z c(1-c^2)/(a+z c^2)",
+  "unit_generator_feedback_derivative": "4 R z c sqrt(1-c^2)/(a+z c^2)",
+  "finite_descent_rational_lower": "372734/29296875",
+  "scope": "ambient full-query comparator; finite abstract orbit sign; physical X_N, large 7cq and compiled tolerance task not checked"
+}
+```
+
+d0_query_cut_orbit_control_20261028.py: 1281 bytes, SHA256 `53f23df9b628669caedd231eb4ed41f9dcda0407d2d2b318d9897d68f2ebdd33`.
+
+```python
+"""Exact rational 2x2 verification of independent QUERY and moving-cut rows.
+No claim of physical admission of either variation.
+"""
+from pathlib import Path
+import sympy as S
+import hashlib,json
+c=S.Rational(3,5);u=S.Rational(4,5);z=S.Rational(1,4)
+I=S.eye(2);P=S.diag(1,0);E=I-P;U=S.Matrix([[c,u],[u,-c]])
+K=U*P-P*U
+assert U.T==U and U*U==I and K.T==-K
+vU=K*U-U*K;vP=K*P-P*K
+C=E*U*P; F=C.T*C;res=(I-z*F).inv()
+def dJ(dU,dP):
+ dC=-dP*U*P+E*dU*P+E*U*dP
+ return S.simplify(2*z*S.trace(res*C.T*dC))
+query=dJ(vU,S.zeros(2));cut=dJ(S.zeros(2),vP);joint=dJ(vU,vP)
+assert query==S.Rational(16,35) and cut==S.Rational(-16,35) and joint==0
+assert S.simplify(F[0,0]-(1-c*c))==0
+assert S.simplify(4*z*c*u*u/(1-z+z*c*c)-query)==0
+# Stronger check dF=[K,F]: simultaneous conjugation of complete escape operator.
+dC=-vP*U*P+E*vU*P+E*U*vP
+dF=dC.T*C+C.T*dC
+assert dF==K*F-F*K
+print(json.dumps({'status':'PASS','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'carrier':'rational 2x2; P rank 1, z=1/4','c':'3/5','u':'4/5','query_first_source_fixed_cut':str(query),'moving_cut_first_source_fixed_U':str(cut),'joint_first_source':str(joint),'simultaneous_dF':'[K,F]','scope':'finite operator identity only; no admitted physical variation, field map or GR closure'},indent=2))
+```
+
+d0_query_cut_orbit_control_20261028.json: 434 bytes, SHA256 `60151aac4e410c73bb1e8f0e274bf9f860ed17fa4314e9373768094f7819bdd9`.
+
+```json
+{
+  "status": "PASS",
+  "source_sha256": "53f23df9b628669caedd231eb4ed41f9dcda0407d2d2b318d9897d68f2ebdd33",
+  "carrier": "rational 2x2; P rank 1, z=1/4",
+  "c": "3/5",
+  "u": "4/5",
+  "query_first_source_fixed_cut": "16/35",
+  "moving_cut_first_source_fixed_U": "-16/35",
+  "joint_first_source": "0",
+  "simultaneous_dF": "[K,F]",
+  "scope": "finite operator identity only; no admitted physical variation, field map or GR closure"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
