@@ -2514,8 +2514,8 @@ class ProofArchitectureTests(unittest.TestCase):
             row for row in case["required_sources"]
             if row["path"] == "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
         )
-        self.assertEqual(source["commit"], "7d52c4193cc4b1ebfed1142d327446a6128465b7")
-        self.assertEqual(source["blob"], "df316992b289e0a9ada03adb2852227e8da91ed1")
+        self.assertEqual(source["commit"], "423ec9a87553a14c6f484e429a6d3309eeae256a")
+        self.assertEqual(source["blob"], "07a988011a77ee87aa13d5d816680920d51a3007")
         self.assertEqual(source["scope_query_indexes"], [18])
         inventory_source = next(
             row for row in case["required_sources"]
@@ -2919,14 +2919,14 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(lean_retrieval["status"], "found_direct_content")
         self.assertEqual(lean_retrieval["source_origin"], "pinned_snapshot")
         self.assertEqual(lean_retrieval["query_index"], 18)
-        self.assertEqual(lean_retrieval["candidate_rank"], 7)
+        self.assertEqual(lean_retrieval["candidate_rank"], 6)
         self.assertEqual(
             lean_retrieval["commit"],
-            "7d52c4193cc4b1ebfed1142d327446a6128465b7",
+            "423ec9a87553a14c6f484e429a6d3309eeae256a",
         )
         self.assertEqual(
             lean_retrieval["blob"],
-            "df316992b289e0a9ada03adb2852227e8da91ed1",
+            "07a988011a77ee87aa13d5d816680920d51a3007",
         )
         euclidean_refinement = positive_nonvacuum[
             "same_record_euclidean_refinement_retrieval"
@@ -5147,7 +5147,8 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
         self.assertEqual(
             [row["lean_module"] for row in links["formal_support_locators"]],
-            ["D0.Algebra.MovingProjectorCalculus", "D0.Algebra.MovingProjectorTransport"],
+            ["D0.Algebra.MovingProjectorCalculus", "D0.Algebra.MovingProjectorPositiveChart",
+             "D0.Algebra.MovingProjectorTransport"],
         )
         self.assertTrue(all(row["status"] == "metadata_locator_only"
                             for row in links["formal_support_locators"]))
@@ -5180,8 +5181,8 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
         self.assertEqual(
             [row["lean_module"] for row in links["formal_support_locators"]],
-            ["D0.Algebra.MovingProjectorCalculus", "D0.Algebra.MovingProjectorTransport",
-             "D0.Analysis.MatrixDeterminantDerivative"],
+            ["D0.Algebra.MovingProjectorCalculus", "D0.Algebra.MovingProjectorPositiveChart",
+             "D0.Algebra.MovingProjectorTransport", "D0.Analysis.MatrixDeterminantDerivative"],
         )
         self.assertTrue(all(row["status"] == "metadata_locator_only"
                             for row in links["formal_support_locators"]))

@@ -138,8 +138,8 @@ CASES: list[dict[str, Any]] = [
             },
             {
                 "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
-                "commit": "7d52c4193cc4b1ebfed1142d327446a6128465b7",
-                "blob": "df316992b289e0a9ada03adb2852227e8da91ed1",
+                "commit": "423ec9a87553a14c6f484e429a6d3309eeae256a",
+                "blob": "07a988011a77ee87aa13d5d816680920d51a3007",
                 "scope_query_indexes": [18],
             },
             {

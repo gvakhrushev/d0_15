@@ -11783,12 +11783,14 @@ slit-plane membership at the evaluation point implies the local positive
 chart used in the real logarithm.
 
 The finite example uses a differentiable rank-one orthogonal-projector
-curve and a fixed unitary reflection. It exhibits a nonzero return derivative
+curve and a fixed unitary reflection. It exhibits a nonzero return derivative,
 the exact weighted trace `−48/17` and feedback derivative `−24/17` at
 `z=1/2`. This is formal support for
-the conditional moving-cut calculation, not physical source selection. The
-slit-plane premise is retained rather than derived here from `0<z<1` and
-unitarity; the thermal derivative, moving Gram, variable β/z, native admitted
+the conditional moving-cut calculation, not physical source selection.
+`D0.Algebra.MovingProjectorPositiveChart` proves the slit-plane premise from
+an orthogonal projector, `U†U=1`, and `0≤z<1` by an exact Gram decomposition,
+and applies the same-curve derivative. The thermal derivative, moving Gram,
+variable β/z, native admitted
 field variation, complete Info/work/controller price and GR composition
 remain open. The original #334 owner and scientific claim statuses are
 unchanged. The detailed application and its explicit interface are recorded
@@ -11797,6 +11799,9 @@ An independent read-only mathematical review of calculus blob
 `37305b34459ffa99189f91fbc3338c96562dc4fd` checked the signs, order of
 factors, slit-plane argument and the same-curve example. Its scope does not
 include compilation, physical admission or acceptance of C0.
+The same independent review checked the Gram decomposition and conditional
+application in positive-chart blob `90bb3051765733979f214ddc146e0ca02189b257`;
+it likewise does not establish native execution or physical selection.
 
 Historical source-candidate, claim-resolution, alias and two metric-receipt
 links above now name the published commit containing the bytes whose SHA-256
