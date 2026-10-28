@@ -1172,6 +1172,28 @@ class ProofArchitectureTests(unittest.TestCase):
                           and hit["direct_content"])
             self.assertEqual(direct["matched_terms"], direct["query_terms"])
 
+    def test_julia_null_chart_query_retrieves_its_pinned_source_section(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "julia-query-principal-frame-coframe-recovery"
+        )
+        query_index = 5
+        query = case["queries"][query_index]
+        required = next(
+            source for source in case["required_sources"]
+            if source["path"].endswith("A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md")
+        )
+        hits = proof.full_text_search(proof.ROOT, query, limit=18)
+
+        status = cold_start._required_source_status(
+            [(query, hits)],
+            {**required, "scope_query_indexes": [0],
+             "scope_query_sections": {"0": ["8.4"]}},
+        )
+
+        self.assertTrue(status["found"], f"pinned Eq. (28) source was not retrieved: {status}")
+        self.assertEqual(status["status"], "found_direct_content")
+
     def test_multi_pattern_matcher_keeps_nested_and_partial_overlaps(self) -> None:
         variants = {
             "abc": [(0, "short")],

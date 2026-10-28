@@ -579,7 +579,7 @@ CASES: list[dict[str, Any]] = [
             "из четырех Julia query columns восстановление кофрейма и метрики Eq 30a",
             "AF radial coframe equivalence section 5.1 principal frame reconstruction",
             "complete Julia raising query contraction block null inverse equation 28",
-            "principalFrameJuliaQueryFamily_open_chart_link_recovery Eq 28 positive branch non-null transverse q",
+            "principal frame open chart q null vector transverse variations proper Lorentz endpoint",
             "уравнение 28 открытая окрестность null-вектора поперечные q вариации восстановление endpoint map Julia",
             "Eq 27 nonzero Lorentz norm Gamma Clifford volume inverse recover frame from full raising query",
             "archiveJuliaRaisingQuery_nonNull_gamma_recovery chi endpoint covariance q nonzero",
