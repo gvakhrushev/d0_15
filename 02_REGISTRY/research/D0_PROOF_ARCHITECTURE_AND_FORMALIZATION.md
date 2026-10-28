@@ -4,6 +4,108 @@
 
 Primary integration artifact for WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION. The broad objective remains active. C0 is not frozen or independently accepted, so no formalization coverage percentage is reported. Counts below describe starting inputs, not the C0 denominator.
 
+## Book and registry maintenance checkpoint — 28 October 2026
+
+This bounded increment continues the existing #402 owner in response to the
+request to reconcile the books, README and registries with the accumulated
+results. It does not complete the broader formalization programme, freeze C0,
+accept new #334 applications or close a physical GR premise.
+
+Input refs: main 8b94198c8dfbdf5983ad0b350b058fb30bb68a54;
+#402 before this increment 30ffef0f5a4353874f8966a4b69d09e534f3c47d;
+published science #334 eebcb5e467742df3e9cf7fa9702042d7294aa742.
+The [dated ledger section](../RESEARCH_LEDGER.md#book-and-research-reconciliation--28-october-2026)
+pins the six main research sources by commit/path/blob and records their
+remaining application conditions. All read-only source-scope reviews use
+those actual sources. They are editorial reviews, not scientific application
+acceptances.
+
+### What the increment changes
+
+All ten authored books now explain the current composition: the verification
+kernel and complete future profile, operational theory transfer, scene
+histories, finite CAR matter, complete action/price with moving cut, coherent
+history and real clock, configured nonlinear Einstein–CAR recovery, and its
+cosmological/wave consumers. The source-matched proof bounds and physical
+hypotheses remain explicit. README and the research reading map provide a
+shorter route through these arguments.
+
+Targeted corrections remove several contradictions with current owners:
+MDL is no longer stated to force physical stationarity; formal continuation
+of a real weight is not quantum reconstruction; finite A2/Bianchi results
+are not presented as full native GR selection; historical completion labels
+are scoped to their original finite results. The original moving-cut
+derivative retains positivity/unitarity and fixed-parameter hypotheses.
+The cut-price positive gain retains the original heat/count bounds and the
+common-null-family restriction. Coherent-history control is a spectral floor
+for Theta_n, with its actual purification and primitive-fixture conditions.
+
+The existing registries are reconciled without adding a parallel status
+system:
+
+- Two malformed claims.csv records are repaired losslessly: unquoted commas
+  had hidden portions of their existing notes from DictReader.
+- Nine history/moving-matter book locators point to the new exact chapters.
+  The Perron-history note is limited to the actual finite counts, negative
+  control and separate eigen-equation, without an unconstructed all-depth
+  cylinder measure.
+- The quasicrystal/lattice notes and Wilson-bridge justification are limited
+  to the finite certificates' actual checks and retained premises. The
+  quasicrystal claim now declares its previously omitted existing
+  ASSUMP-WILSON-LATTICE-1974 dependency. The certificate's hard-coded
+  free-parameter flags are not a carrier-classification proof.
+- The 56 legacy-label aliases now point to their first exact occurrence in
+  the same current book (55 line numbers changed); both canonical-target
+  aliases remain unchanged. This is locator maintenance, not a new alias
+  equivalence.
+- All 889 claim IDs, formal proof/certificate locators and release statuses
+  remain in their existing ownership. The one additional bridge dependency
+  makes a previously implicit premise explicit.
+
+The source comments and outputs of unchanged historical certificates are
+not rewritten as part of this increment. Corrected registry/book scope
+controls their interpretation.
+
+### Preserve historical book evidence while editing exposition
+
+Twenty-seven existing research checks record earlier book-file hashes.
+[The historical-book input contract](sources/d0_book_editorial_inputs_2026-10-28/README.md)
+binds their exact checker and receipt bytes at 30ffef0f to five book snapshots
+from published 34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a. Three snapshots already
+exist; only the missing Book00 and Book02 bytes are added.
+
+The existing isolated runner applies these exact inputs only to named
+consumers in its temporary detached worktrees. It validates every binding
+before writing, composes with prior native-input overlays, restores current
+book bytes and detects mutations. Logs explicitly identify historical replay
+and set current_book_prose_certified=false. Scientific checker files and
+expected scientific receipts are unchanged.
+
+A new CSV shape guard prevents future silent row truncation. Focused hostile
+controls cover malformed fields/headers, wrong or missing historical inputs,
+changed checker/receipt bytes, mutation, attached or incorrectly placed
+worktrees and shared-helper dependency selection. The two new suites are
+included in the existing guards workflow.
+
+### Validation and retained blocker
+
+Structural, generated-view and targeted replay results are recorded at the
+final checked source checkpoint below. No new Lean proof or full Lean
+rebuild is claimed for this prose/metadata increment.
+
+The registered certificate sweep found an inherited failure in
+vp_total_extension_primitive_minimality.py: the exclusion row for
+PRIM-ISOMETRIC-DIRAC-J lacks an existing claim-owner citation after the
+earlier scope repair. The same failure is reproducible at the unmodified
+#402 input 30ffef0f. The row explicitly says its full decomposition remains
+open; adding a token solely to satisfy the assertion would not justify an
+exhaustive minimality conclusion. This increment preserves that blocker and
+does not weaken its certificate or reinstate a refuted complete-Hilbert claim.
+
+Earlier time-ordered checkpoints below keep their recorded input refs and
+evidence. A past successful run is not a statement that the current tree has
+passed an unchanged broad closure test.
+
 ## Starting snapshot
 
 Task registration was merged into main as 8b94198c8dfbdf5983ad0b350b058fb30bb68a54. Execution continues on wrk/d0-proof-architecture-formalization in Draft PR #402. Lean toolchain: leanprover/lean4:v4.30.0.

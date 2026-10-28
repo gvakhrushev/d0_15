@@ -39,7 +39,11 @@ The universal feedback source is:
 Pi_fb = z(I - z F_N)^(-1)
 ```
 
-Book 03 supplies the response source used by matter, gravity and cosmology sector reductions. Physical meaning is assigned only after sector projection and bridge/passport boundary.
+This is the source of the isolated feedback component at fixed `z`. It is
+pulled back through the actual admitted changes of `P_N`, `U_N` and their
+complement `Q_N=I-P_N`; it is not already the complete metric or matter
+source. Section §03.27 includes those tangents and the heat term of §03.25,
+and states the remaining physical variation map explicitly.
 
 ## 03.1 Standard reading of action and finite incidence/clique complex terminology
 
@@ -157,7 +161,21 @@ with `\Gamma_D(k)` the admissible histories at refinement level `k`, `w(\gamma)`
 3. **Unique sum-to-product map.** The only function carrying a sum to a product is the exponential, `w(S)=b^{-S}`. A non-exponential weight would need an external table reconciling addition with multiplication — an exogenous catalog, ⊥M1 (DEF-0.2.2).
 4. **Unique base.** The only scale number available in CORE is `\varphi` (the `p+p^2=1` fixed point, owned by BOOK_01 §01.6), so `b=\varphi`.
 
-Hence `w(\gamma)=\varphi^{-S(\gamma)}`. The BRIDGE packaging `\varphi^{-S}=e^{-S\ln\varphi}` recovers the Boltzmann/Gibbs form, and the analytic continuation `S\to iS` recovers the quantum amplitude. Status: CORE-FORCING [^b03-15].
+Hence `w(\gamma)=\varphi^{-S(\gamma)}` for the stated factorized weight model.
+The rewriting `\varphi^{-S}=e^{-S\ln\varphi}` has Boltzmann/Gibbs form;
+the formal substitution `S\to iS` produces the phase weight
+`e^{-iS\ln\varphi}`. The latter algebraic substitution does not establish
+a quantum-amplitude reconstruction. The historical CORE-FORCING label applies
+to the stated weight model, with its physical interpretation retaining the
+bridge premises [^b03-15].
+
+This inherited weight argument concerns the stated multiplicative/additive
+interface and its chosen code unit. It does not construct the complete native
+`Cost`, `Info`, allowed histories or field variations. The identity rewriting
+the weight as an exponential, or its formal imaginary-argument continuation,
+does not by itself derive a physical selection law or reconstruct quantum
+theory. The source/application boundary below is required when using this
+formula dynamically.
 
 **Locality is a theorem, not an assumption** [^b03-16]. If a scene splits into two parts with no path between them, then `Z_{total}=Z_1\cdot Z_2`. This cluster decomposition is guaranteed by the structure of the algebra `\mathcal A` and is exactly the statement that "physics here" does not depend on "physics in another galaxy". Status: CORE-FORCING [^b03-17].
 
@@ -173,18 +191,42 @@ The edge sum `\sum_e\operatorname{Cost}(e)` is the resolution (UV-cutoff `\kappa
 
 **No coupling constant may be multiplied in front** [^b03-19]. Standard QFT writes `\tfrac{1}{g^2}\int\dots`. In CORE this prefactor is forbidden: any `\lambda\notin\{1,\varphi^n\}` is an external Catalog of interaction strength, ⊥M1. Interaction strength must be *derived* from graph topology — as `\alpha^{-1}` is derived from the 359-channel scene count downstream — never inserted as a multiplier into the action. Status: CORE-FORCING [^b03-20].
 
-**Least action `\delta S=0` is the Minimum Description Length tautology** [^b03-21]. Because the most probable history is the cheapest to encode in `\Sigma`, stationarity of `S` is not an additional physical postulate layered on the weight `\varphi^{-S}`; it is the same statement read at the classical limit. "Most probable" = "shortest code" = `\delta S=0` (MDL). Status: CORE-FORCING [^b03-22].
+**Conditional stationarity boundary.** The historical MDL argument [^b03-21]
+[^b03-22] must separate three statements: canonicalizing equivalent
+descriptions, assigning weights to supplied histories, and selecting an
+actual future execution. An interior differentiable minimum has vanishing
+first derivative on its allowed tangent space, but the existence of the
+weight `phi^(-S)` does not prove that physical execution attains such a
+minimum. The current formal owner
+[`ProspectiveExecution`](../03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean)
+keeps `optimal` as an explicit premise. Its Bellman and no-detour conclusions
+are conditional on the same full state, actual admissibility, goal and
+complete price. Section §03.27 states both those conclusions and the exact
+idle boundary. No native least-action or GR-selection theorem is inferred
+from the earlier “tautology” wording.
 
 **A Feynman diagram is an equivalence class of histories, not a drawn line** [^b03-23]. A diagram is `[\gamma]_\sim` — the class of all histories sharing one topology (loop count, branch vertices, external legs). A loop is literally a closed memory cycle `P` (the light-cycle of the spectrum book); loops therefore *create* mass and charge here rather than merely correcting them, and the standard QFT divergences are the artifact of treating finite-size cycles as points (structural limit `\kappa_k`). Status: CORE-FORCING [^b03-24].
 
 ### 03.3.0b The smooth limit: how the variational/Lagrangian language is recovered
 
-The `t,v,\nabla` language and the variational calculus are a BRIDGE packaging of the smooth limit — the CORE content is: *classical motion is the dominance of the minimal-code history under coarse-graining* [^b03-25]. Newton's laws are then a theorem of the Information Economy Principle, not an input.
+The `t,v,\nabla` language and variational calculus require a specified smooth
+limit and an actual limiting action. The historical Information Economy
+reading [^b03-25] describes a proposed bridge from history weights to
+classical dynamics; dominance of minimal-code histories is a premise to be
+established in that bridge, not a consequence of code canonicalization alone.
 
-**Information Economy Principle** [^b03-26]. Tracking a macro-object is continuous prediction of its position. The description cost `J` of a trajectory splits into:
+**Information Economy interpretation** [^b03-26]. In this proposed model,
+tracking a macro-object is continuous prediction of its position, and the
+description cost `J` of a trajectory is assigned a position-cost and
+prediction-benefit split:
 
-- **Potential `V` (cost of position).** The price of sitting at an "expensive" graph location — where cycle density `\varrho` is high. High cycle density is exactly what gravity is in D0; so `\operatorname{Cost}_{pos}=V(x)`.
-- **Kinetic `T` (prediction savings of inertia).** If the object coasts on its velocity vector, the predictor "it is where the vector says" guesses with zero error; the faster the coast, the more strongly the predictor compresses the data. In the smooth limit this packages as `T(v,m)`, written `T=\tfrac12 mv^2` after a unit/normalization choice (BRIDGE).
+- **Potential `V`.** A position-dependent graph price is proposed to supply
+  `V(x)`. Identifying it with a gravitational potential requires the actual
+  field/source map; high cycle density alone does not prove that identity.
+- **Kinetic `T`.** A prediction benefit is proposed to supply `T(v,m)`.
+  The specific quadratic form `T=\tfrac12 mv^2` requires its own dynamical
+  derivation and calibration; a unit choice alone does not fix its velocity
+  dependence.
 
 **Lagrangian as balance, least action from path probability** [^b03-27]. The code length of a history is the balance
 
@@ -192,13 +234,22 @@ The `t,v,\nabla` language and the variational calculus are a BRIDGE packaging of
 L_{code}=\operatorname{Cost}_{pos}-\operatorname{Benefit}_{pred}=V-T,
 ```
 
-equal up to sign convention to the physicists' `L=T-V`. Inheriting the weight of §03.3.0, the path realization probability is `P\sim\varphi^{-L_{code}}`. In the classical limit only the minimal-code path survives, so
+whose stationarity equations agree up to an overall sign with those of
+`L=T-V`. If a controlled classical limit establishes the corresponding
+stationary action and the admitted variations and boundary data, then
 
 ```math
 \delta\!\int (T-V)\,dt=0,
 ```
 
-which is the Principle of Least Action — derived, not assumed. The packaged stationarity gives `\tfrac{d}{dt}(mv)=-\nabla V`, i.e. `F=ma`: force is the gradient of informational complexity, and a body "rolls" to where computing its existence is cheapest. Status: CORE-FORCING [^b03-28]. This is the smooth-limit twin of the finite stationarity condition stated in §03.8; the finite stationarity `\nabla_{x\in\mathcal X_N}\mathcal S_{stack}=0` is the primitive, and `\delta\int(T-V)dt=0` is its coarse-grained image.
+is the resulting Euler–Lagrange principle. For the additionally specified
+`T=mv^2/2` with constant `m`, it yields `d(mv)/dt=-grad V`.
+These are conditional variational consequences, not a completed derivation
+of the physical price, motion or coarse-graining limit from the original
+`D_min` definition. The historical source [^b03-28] remains recorded, while
+the current proof boundary is fixed by §03.27 and the native realization
+obligations. The finite stationarity equation in §03.8 likewise refers to
+its declared functional and admissible variation space.
 
 ### 03.3.0c Renormalization is forbidden except for the `\kappa`-residual
 
@@ -1134,7 +1185,15 @@ The D0 action layer uses a single finite bootstrap functional:
 -
 \log\det(I-zF_N(V)).
 \]
-The stationarity condition \(\delta\mathcal B_N=0\) locks finite spectral geometry to feedback-return thermodynamics. The discrete derivative \(\partial_V A_N=A_{N+1}-A_N\) acts over rank evolution \(V_N=\operatorname{rank}(P_N)\). The single action section is unchanged by this rank step; no second mass anchor is introduced.
+The stationarity problem \(\delta\mathcal B_N=0\) couples the heat and
+feedback derivatives on the same declared operator family. Its physical
+application requires the actual `Delta_N`, `P_N`, `U_N`, parameters and
+admitted variations. Section §03.27 gives the complete fixed-rank first
+variation. The discrete derivative
+\(\partial_V A_N=A_{N+1}-A_N\) instead compares different ranks
+\(V_N=\operatorname{rank}(P_N)\); it is not the smooth tangent derivative
+inside one Grassmannian. The single action section is unchanged by that
+declared rank step; no second mass anchor is introduced.
 
 ## 03.26 Golden tick gate
 
@@ -1222,6 +1281,175 @@ while the two joint states from opposite basis inputs remain orthogonal. The
 repetition uses a fresh blank at each step; neither minimal archive size nor
 physical availability of these resources is inferred. Preparation, coupling and
 joint-readout implementation remain explicit bridges.
+## 03.27 From an operator formula to the complete admitted source
+
+The action value, its derivative on a mathematical operator family, and its
+pullback to physically admitted fields are three distinct objects. The
+accumulated results now identify the first two much more precisely. A
+physical application must still supply the map that connects them to the
+same preparation, retained history, clock and variation space.
+
+### 03.27.1 The complement constraint and the complete feedback tangent
+
+The main-resident
+[Book03 operator-variation owner](../02_REGISTRY/research/A4D_NATIVE_BOOK03_OPERATOR_VARIATION_BOUNDARY.md),
+§§1–4, differentiates the literal Book 01 family
+`F=P U* (I-P) U P`. At fixed dimension and projection rank, write
+
+\[
+X=\dot P=X^*,\quad XP+PX=X,\quad
+\dot Q=-X,\quad \dot U=KU,\quad K^*=-K.
+\]
+
+These describe all smooth mathematical tangents of the projector/unitary
+family. In particular, `Q` has no independent tangent. With `T=U*QU`,
+
+\[
+\dot F=XTP+P U^*(-X+[Q,K])UP+PTX.
+\]
+
+The full feedback differential, including a separately varying fugacity, is
+
+\[
+\dot I_{fb}
+=\operatorname{Tr}\!\left[z(I-zF)^{-1}\dot F\right]
++\operatorname{Tr}\!\left[(I-zF)^{-1}F\right]\dot z.
+\]
+
+The outer projector legs, induced complement leg, unitary leg and fugacity
+leg all matter. This corrects a use of §03.0 that treats the symbolic
+`delta F` as though its physical field dependence had already been supplied.
+The owner gives the constrained Euler equations for this isolated component;
+they are not the Euler equations of the whole action stack.
+
+A two-dimensional control makes the missing map concrete. With
+`P=diag(1,0)` and a rotation `U_theta`, the same base `theta=pi/4` has
+`F=P/2`. The constant lift and `theta(s)=pi/4+c s` have identical base
+operators and action value but respective derivatives
+
+\[
+0\qquad\hbox{and}\qquad\frac{cz}{1-z/2}.
+\]
+
+This proves that the base operator alone does not identify its field source.
+It is a mathematical interface counterexample, not a claim that both lifts
+are physically admitted by D0.
+
+### 03.27.2 The original heat-plus-feedback derivative with a moving cut
+
+The published research continuation
+[root bootstrap source, 28 October](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md)
+and its linked proof apply directly to §03.25. This paragraph cites the
+fixed PR #334 snapshot `eebcb5e467742df3e9cf7fa9702042d7294aa742`;
+it does not import or independently accept a new physical claim.
+
+On a finite positive Hilbert carrier, let `U` be unitary,
+`P=P*=P²` an orthogonal projector of fixed rank, `Delta=Delta*`,
+`beta>0` and `0<z<1`. Hold the underlying Gram form, `beta` and `z` fixed. Put
+
+\[
+C=QUP,\quad F=C^*C,\quad
+\mathcal R=(I-zF)^{-1},\quad
+\rho_\beta=\frac{e^{-\beta\Delta}}
+{\operatorname{Tr}(e^{-\beta\Delta})},\qquad Q=I-P.
+\]
+
+For the actual smooth variation of `P,U,Delta`, let
+`K_P=[dP,P]`, so `[K_P,P]=dP`, and remove only its simultaneous passive
+change of coordinates:
+
+\[
+\nabla U=dU-[K_P,U],\qquad
+\nabla\Delta=d\Delta-[K_P,\Delta].
+\]
+
+The exact complete differential is
+
+\[
+\boxed{
+d\mathcal B
+=-\operatorname{Tr}(\rho_\beta\nabla\Delta)
++2z\,\operatorname{Re}\operatorname{Tr}
+\!\left(\mathcal R C^*Q(\nabla U)P\right).
+}
+\]
+
+The heat term follows from the trace derivative of the exponential; it does
+not require `Delta` and `dDelta` to commute. The projector connection
+accounts for the moving cut rather than freezing it. Adding any
+block-diagonal anti-Hermitian generator to `K_P` leaves the scalar source
+unchanged. Simultaneous unitary co-transport of `P,U,Delta` gives zero, as
+required for a passive representation change. Relative motion can have a
+nonzero source, including motion whose derivative would be lost by holding
+`P` fixed.
+
+The proved estimate
+
+\[
+|d\mathcal B|\le
+\|\nabla\Delta\|_{op}
++2z\|C\mathcal R\|_F\,\|Q(\nabla U)P\|_F
+\]
+
+uses operator and Frobenius norms on this finite carrier. Applying it to an
+all42 field norm or the raw-response terminal requires the actual field map
+and its norm transport. Independently varying `beta` or `z`, a moving Gram
+form, rank changes and any separately defined charges retain their own
+derivative or comparison terms. The identity does not select the actual
+`Delta`, the allowed field directions or a universal Einstein source.
+
+### 03.27.3 Complete candidate action, generated states and genuine free inputs
+
+The [complete cut-source application](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md),
+§§2–5 at the same pinned research snapshot, supplies a stronger result for
+one **specified cut-Hodge price**: its full heat-plus-feedback cofield is a
+nonzero scalar multiple of the configured geometric/matter cofield on the
+declared common-null family. It retains the complete thermal trace,
+preparation count cancellation and ambient field derivatives before
+restriction. Book 07 describes its use in the existing nonvacuum family.
+The candidate cut Hodge and an independently defined tensor or spatial
+Hodge heat cannot be identified merely because both are internal; the owner
+exhibits an actual heat-source mismatch control.
+
+For a genuinely fixed-initial protocol `X_(k+1)=V_k(y)X_k`, the same owner
+constructs backward adjoints that solve the generated-state equations and
+recover the full reduced derivative of the declared price. Generated
+intermediate records are therefore not automatically independent initial
+inputs. Conversely, a genuinely free preparation or controller contributes
+its own derivative; the adjoint calculation does not remove it or authorize
+declaring it fixed after a residual appears. All actual preparation steps
+must be included in the forward protocol.
+
+The literal functional in §03.25 already specifies its heat and feedback
+terms. A separately calculated Shannon or von Neumann entropy is not an
+additional mandatory term in that formula without an action-identification
+theorem. Equality of complete physical sources, or a controlled remainder
+under the actual map, can suffice without uniqueness of every microscopic
+program. The [preserved 27 October result index](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/D0_CHAT_RESULTS_2026_10_27_INDEX.md)
+also retains the contrary control: programming a desired polynomial source
+shows realizability within that construction, not selection of the law by
+the original D0 process. The complete native dictionary and `GR_closed`
+remain open.
+
+### 03.27.4 Prospective optimality is a usable conditional theorem
+
+The [main-resident prospective owner](../03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean)
+keeps the full state, enabled actions, state-dependent price, initial state
+and goal explicit. Under its supplied `optimal` premise, replacing a chosen
+suffix with a cheaper admissible suffix reaching the same goal is impossible.
+A positive-cost detour returning to the same **complete** state is excluded
+when its deletion preserves admissibility and the goal.
+
+Two limits prevent this from becoming an unsupported physical selection
+claim. First, a genuinely executed distinguishable roundtrip costs at least
+two action quanta under the existing `ActionProtocol`; equal endpoints do
+not erase the paid history. Second, if the initial goal is already satisfied
+and every primitive has strictly positive price, the optimum is the empty
+history (`no_motion_without_a_required_distinction`). Nontrivial continuation
+therefore needs a required future distinction or the actual complete
+Cost-minus-Info objective that makes idle nonoptimal. These results guide the
+native application while leaving its selection premise visible.
+
 ## 03.v15 Active standard-language contract
 
 _This section is the active standard-language layer of BOOK_03 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._

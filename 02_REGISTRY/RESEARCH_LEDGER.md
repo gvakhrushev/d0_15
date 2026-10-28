@@ -4,7 +4,79 @@ This file is a CONTROL research ledger, not a claim registry and not a proof own
 
 Purpose: keep expensive research that materially changes the roadmap visible in the repository before it is promoted to Lean/claim/book ownership. A row may be accepted, accepted-with-repair, superseded, or pending. Nothing in this file upgrades `claims.csv` by itself.
 
-Baseline mathematical snapshot for the gravity lane: `e6d9d4b7f17a4cf2f478cb737c90a98487939eaa`.
+Historical mathematical snapshot for the older gravity rows below: `e6d9d4b7f17a4cf2f478cb737c90a98487939eaa`.
+
+
+## Book and research reconciliation — 28 October 2026
+
+The ten books have been reconciled with the existing verification/transfer,
+history/operator and nonlinear-source argument. This is an editorial and
+source-locator checkpoint, not a new scientific acceptance. The input snapshots
+are main [8b94198c8dfbdf5983ad0b350b058fb30bb68a54](https://github.com/gvakhrushev/d0_15/commit/8b94198c8dfbdf5983ad0b350b058fb30bb68a54),
+formalization owner [#402 at 30ffef0f5a4353874f8966a4b69d09e534f3c47d](https://github.com/gvakhrushev/d0_15/commit/30ffef0f5a4353874f8966a4b69d09e534f3c47d),
+and scientific owner [#334 at eebcb5e467742df3e9cf7fa9702042d7294aa742](https://github.com/gvakhrushev/d0_15/commit/eebcb5e467742df3e9cf7fa9702042d7294aa742).
+The [research reading map](research/README.md) connects the exact source
+families to the new book chapters.
+
+### Existing owners now explained in the books
+
+| Existing owner or application | Editorial disposition and consumer | Unchanged boundary |
+|---|---|---|
+| VerificationCore and operational TheoryTransfer; accepted application IDs lean-verification-core-to-foundation and lean-operational-transfer-to-theory-transfer in [applications.json](gr_assembly/applications.json) | Explain the future profile, coding premises, primitive-word/readout maps and common empirical image in Books 00–02 and 05 | These are generic applications with explicit interfaces; they do not select the native physical source or cover arbitrary extra contexts |
+| Scene history composition, endpoint Reynolds expectation and SceneHistoryPerronTrace | Book 01 §01.25 supplies connected exposition and exact registry section locators | The current Perron declarations prove depth-one/depth-two counts, the random-walk negative control and a separate eigen-equation. The all-depth cylinder-measure claim is removed from the registry note because the capstone does not state it |
+| Moving finite CAR matter, action-groupoid second jet and finite Hodge/CAR owners | Book 04 §04.25.1 supplies a common consumer for the existing claims; the corresponding book locators are reconciled | Operator covariance, conditional source calculus and an independently selected physical action retain separate conclusions |
+| [Book03 first-variation boundary](research/A4D_NATIVE_BOOK03_OPERATOR_VARIATION_BOUNDARY.md), ActionProtocol and ProspectiveExecution | Book 03 corrects the unconditional MDL-to-stationarity/Newton wording and explains the full tangent; Book 06 keeps the actual prospective optimum premise | A scalar value or code-length optimum does not determine a physical first variation; genuinely independent fields and preparation remain varied |
+| [Primary nonvacuum family](research/D0_GR_PRIMARY_POSITIVE_CASE.md), [global composition](research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md), Golden/VSI conditional universality | Books 07–09 explain the exact configured solution, complete-source application, operational observations and cosmological/detector consumers | No promotion of full original H+J+R, positive_gr, universal GR or raw216; GR_closed=false |
+| [Proof architecture](research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md) | Book 05 explains the evidence hierarchy and the distinction between a locator, a compiled statement and an accepted application | C0 is not independently frozen or accepted, so this update reports no semantic coverage percentage |
+
+The two malformed CSV records, D0-GRADED-BIANCHI-EXACT-001 and
+D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001, are repaired by quoting their complete
+existing notes. Their fields and scientific meanings are preserved. Structural
+validation now rejects unequal row widths and malformed headers instead of
+silently dropping comma-separated portions of notes.
+
+The quasicrystal/lattice reading is also reconciled with its actual finite
+certificates. Their inflation/count controls do not prove universal finiteness
+or carrier uniqueness. The two existing claim notes and
+ASSUMP-WILSON-LATTICE-1974 justification now state that boundary, and
+D0-QUASICRYSTAL-CARRIER-FORCING-001 declares the omitted existing bridge
+dependency. IDs, certificates and release statuses are preserved. The
+56 legacy book aliases are refreshed to exact current lines in their same
+books (55 line-number changes); the two canonical-target aliases are unchanged.
+
+### Published #334 source pointers for the new exposition
+
+All paths in the table are under 02_REGISTRY/research at the **same published
+commit eebcb5e467742df3e9cf7fa9702042d7294aa742**. Their disposition here is
+**published research / pending independent application intake**. Reading and
+summarizing these proofs does not itself accept a new assembly edge. The
+scientific owner remains #334.
+
+| Exact source and Git blob | Read slice used by the books | Result and explicit limit |
+|---|---|---|
+| [A4D_ORIGINAL_THREETICK_FUTURE_CAR16_SHARP_MINIMAL_QUANTUM_MEMORY_2026_10_26.md](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_THREETICK_FUTURE_CAR16_SHARP_MINIMAL_QUANTUM_MEMORY_2026_10_26.md), blob 73af383e07a72a19df7efda2788950003ce73d0b | §§1–5; Books 04/06 | Faithful unital representation of M8(C)⊕M8(C) needs Hilbert dimension at least 16 and the original DATA attains it. All original future tests are required; M1 alone does not select the test family |
+| [A4D_ORIGINAL_FULL128_EXACT_CHOIRANK18_QUANTUM_VS_RECORDED_RESOURCE_2026_10_26.md](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_FULL128_EXACT_CHOIRANK18_QUANTUM_VS_RECORDED_RESOURCE_2026_10_26.md), blob d683a8a423c86be3d0debe73b04fb71c65ef3d92 | Resource distinctions and chronological composition; Books 04/06 | Unobserved-channel rank, recorded coarse/fine instrument cost and DATA dimension are different tasks. The two-tick rank-144 result is a lower bound, while the three-tick Kraus span has rank 256 at the proved scope |
+| [A4D_ORIGINAL_FULL128_COHERENT_ARCHIVE_FIXED256_SOURCE_2026_10_27.md](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_FULL128_COHERENT_ARCHIVE_FIXED256_SOURCE_2026_10_27.md), blob b36b67ad0756684cc9762f4962cc27a6f9f2d310 | Coherent-history entropy/source and its primitive-fixture hypotheses; Book 06 | The 256-dimensional state represents the archive spectrum with an admitted pure DATA+reference preparation. Mixing/spectral-floor conclusions require the stated regular fixture or neighborhood, and do not authorize free erasure of physical records |
+| [A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md), blob 12fcc996c0f53122802cd6b30b4e156b5c1a2c66 | §§1–4 and retained-input boundary; Books 03/07 | Complete cut-Hodge source d42 B_C=(G_h/gamma_h)d42 J2 for ambient derivatives evaluated on the common-null family Sigma, with positive gain and thermal contribution, plus generated-state adjoints for fixed initial inputs. The physical heat/cut/controller dictionary and genuinely free inputs remain |
+| [A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md), blob d4824abf2971c734a3476bda9f591761dd9ebaa8 | Defined density transformation and full-source application; Books 07/08 | Exact source comparison on the defined transformed objects does not identify the transformed metric with the measured physical metric |
+| [A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md), blob a2e0d3ed877985c98b5fe7f1ef29bbe95d9422f4 | Full identity and linked PROOF_RU; Books 03/07 | Exact derivative of the unchanged original heat-plus-logdet action at fixed positive Hilbert metric, beta and z, with moving fixed-rank cut. Only passive simultaneous co-transport vanishes; native field map and all42/raw216 norm transport remain |
+
+### Editorial continuity and evidence
+
+The [historical-book input contract](research/sources/d0_book_editorial_inputs_2026-10-28/README.md)
+keeps the earlier source bytes, checker hashes and expected receipts intact.
+The isolated runner identifies a historical replay explicitly and restores its
+temporary input overlay before mutation checks. It does not certify the new
+book prose. The new exposition is checked against its cited owners and scoped
+review, while claim IDs, proof owners and release statuses stay in their
+existing authorities.
+
+## Earlier CONTROL dispositions
+
+The rows below retain their original snapshots and disposition history.
+Their use in the current argument must also respect the source-bound
+corrections and current composition above.
+
 
 | Research | CONTROL disposition | Durable result affecting roadmap | Not yet owned / caution |
 |---|---|---|---|
@@ -132,6 +204,10 @@ Baseline mathematical snapshot for the gravity lane: `e6d9d4b7f17a4cf2f478cb737c
 | E-A4D-STAR-TRANSLATION-ONSHELL — first Cartan-Hodge translation / constraint symmetry | TERMINAL RESEARCH / STAR-TRANSLATION-ONSHELL-SYMMETRY-NOGO-IN-FIRST-CARTAN-HODGE-CLASS | On the all-site nondegenerate solder sector, classify the lowest-locality Lorentz-covariant deformation of the owned flat translation `D xi`: two solder-nonparallelism channels `i_alpha T`, `i_alpha *_base T` plus four curvature-driven connection channels `i_alpha F`, `i_alpha *_int F`, `i_alpha *_base F`, `i_alpha *_int *_base F`, where `alpha=V^{-1}xi`. These are the six constant-coefficient one-contraction Cartan/Hodge corrections using only the owned metric/orientation and exact odd curvature extraction. Exact rational L=2 first-variation controls give a 7-row homogeneous matrix of rank 6, forcing all six correction coefficients to zero; a separate curved hostile witness then has bare forward variation `-5/3` and correction row `(-68/27,64/45,70/81,-109/45,-10/9,293/135)`. The full system has `rank(A)=6`, `rank([A|-c])=7`, hence no Noether symmetry exists in the class; the standard I/I Cartan-looking choice gives `-269/81`. The same obstruction excludes an on-shell identity modulo the connection Euler equation when its multiplier lies in the same four first-curvature channels, because such a multiplier only shifts the four connection coefficients already classified. Durable packet: `02_REGISTRY/research/MEMO_A4D_STAR_TRANSLATION_ONSHELL_CONSTRAINT_SYMMETRY.md`; checker: `02_REGISTRY/research/certificates/a4d_star_translation_onshell_constraint_symmetry_check.py`. | Scope: this is not a universal nonlinear-translation no-go. Higher-curvature, longer-path, observer/overlap-dependent, non-polynomial and Euler-dependent laws are outside the theorem; Euler/Hessian-dependent transformations are deliberately excluded as vacuous. Within the first Cartan-Hodge class, requiring translation gauge symmetry forces an action completion. No affine-shift/solder identification, torsion-free, diffeomorphism, Einstein, time or continuum claim follows. |
 
 ## Current gravity closure map
+
+This heading is retained for existing links. The following map records the earlier
+finite/constitutive frontier; use the dated reconciliation above and current
+programme route for subsequent source-composition results.
 
 | E-HODGE-CONN — Hodge constitutive/connection closure | ACCEPT AS RESEARCH / ENDPOINT-OVERLAP-COMPARISON-NEW-PRIMITIVE-REQUIRED | The historical umbrella packet established the corrected Hodge/CAR direction and several closure/no-go ingredients. Subsequent Lean owners now include `D_H^2`, its 16-dimensional constant-fibre kernel, the spatial shell, moving `d`, affine chain geometry, the full staggered first jet/flux kernel (#75), and the located two-color `J` (#76). Durable packet: `02_REGISTRY/research/MEMO_53_A4D_HODGE_CONSTITUTIVE_CONNECTION_CLOSURE.md`. | Do not reopen a generic Hodge-placement primitive. The live constitutive seam is narrower: the fixed-level endpoint/common-center comparison law and its matter second jet remain unselected, tracked by E-A4D-SO2, E-A4D-FRAME, E-A4D-COMMON-CENTER and the terminal E-A4D-ENDPOINT-OVERLAP row. The separate golden/Role-phase tower weld is strategic and does not by itself select the cell action. |
 
