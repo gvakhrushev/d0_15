@@ -895,8 +895,8 @@ CASES: list[dict[str, Any]] = [
             "This is a scoped weak-convergence obstruction for that component and sampling convention. "
             "It does not rule out other readouts or establish physical refinement/admission. "
             "The exact public declaration is resolved separately with `show --lean`; its compiled "
-            "type, proof dependencies, source pin, and trust footprint are preserved in the current "
-            "declaration inventory."
+            "type, proof dependencies, and trust footprint are preserved in the current declaration "
+            "inventory. The #310 owner pin remains in the primary source review and C0 pilot."
         ),
     },
 ]
