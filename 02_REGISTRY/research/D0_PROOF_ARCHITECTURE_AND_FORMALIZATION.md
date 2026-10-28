@@ -11978,6 +11978,21 @@ That integrated `D0.All` build subsequently passed 4,767 jobs at Lean source
 digest `57603f107c2a112c5a3c93f288f9d09b91dc42f6ecb96ef11c505d162db103f3`.
 The [Windows build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_book_bridge_2026-10-28_windows.json)
 records the checked dependency and toolchain boundary.
+The [three-declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/book_price_density_bridge_declarations_2026-10-28.json)
+was extracted on clean published snapshot `149bcaf039e8f085b286c6634dbcb2189993d51b`
+and has SHA-256 `d9f2567a1f9f8adf7b62290a500f18b414f8f008a88fd2c8442808413aaf544d`.
+All three declarations depend on `propext`, `Classical.choice` and `Quot.sound`.
+The proof-architecture test suite passed 95 tests on the corresponding tree.
+
+The [cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-28_149bcaf0.json)
+and [search comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_149bcaf0.json)
+were independently regenerated from that same clean snapshot. The summary
+finds all 24 cases and 168 required source records; the nonvacuum case includes
+the additional explicit declaration-inventory query documented above. Their
+published LF SHA-256 values are respectively
+`dd4a6983bbdc3ef3037fe553dbd6225ba9bf99db698eb7c4730b84053e4f3074` and
+`97214d880bb4f1e28d807a369ffee3eaf9f766af1aa35d2623ff2460a503167d`.
+These are retrieval results at that snapshot, not independent acceptance of C0.
 
 The final `D0.All` build at Lean source digest
 `c5826858cdc93ebc192cb3a5b871f6b2f840218e785d6ee437ae301446ba2858`
