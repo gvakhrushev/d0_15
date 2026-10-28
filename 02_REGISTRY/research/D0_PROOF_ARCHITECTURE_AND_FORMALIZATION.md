@@ -14,6 +14,9 @@ accept new #334 applications or close a physical GR premise.
 Input refs: main 8b94198c8dfbdf5983ad0b350b058fb30bb68a54;
 #402 before this increment 30ffef0f5a4353874f8966a4b69d09e534f3c47d;
 published science #334 eebcb5e467742df3e9cf7fa9702042d7294aa742.
+The latest #334 source range reviewed for this intake ends at
+`8daed32d560df18837bcc69458a8fa538a9cf135`; it is pinned below separately
+from the compiled Lean inputs.
 The concurrently published #402 source intake
 5007f1707932629613d4b846482b8cd8cae9a4a3 is preserved by the integration merge.
 The later #402 refoliation-source intake at
@@ -12372,10 +12375,10 @@ validation reports 234 formal-support rows and a 957-module `D0.All` closure
 with zero warnings. The formalization-debt audit remains at its existing
 baseline, five findings.
 
-## #334 source continuation after the `eebcb5e` checkpoint — 28 October 2026
+## Historical #334 source checkpoint at `7261923` — 28 October 2026
 
-The current #334 owner head is `726192353504a81a9ab2b751f9b6c7866271e75a`,
-34 commits beyond the nine-package/moving-projector checkpoint. The exact
+At this checkpoint, #334 had advanced 34 commits beyond the
+nine-package/moving-projector checkpoint. The exact
 70-path source range, patch, Git blob inventory, and replay outcomes are
 stored in the [post-checkpoint intake packet](sources/d0_334_post_eeb_delta_2026-10-28/README.md).
 Its positive changing-history scale root (§7db) and positive complete-price
@@ -12694,3 +12697,73 @@ with zero warnings. The five formalization-debt findings remain at the
 existing baseline. The current #334 archive verifier confirms 43 local
 controls against the pinned owner outputs; the moving-cut packet verifier
 confirms source bytes but does not execute its archived checker.
+
+## Latest #334 source range after the `7261923` checkpoint — 28 October 2026
+
+The same owner PR #334 advanced to
+`8daed32d560df18837bcc69458a8fa538a9cf135` (open Draft; no check rows
+reported). The exact seven-commit, six-path range from
+`726192353504a81a9ab2b751f9b6c7866271e75a` is preserved in the
+[source packet](sources/d0_334_post_726_delta_2026-10-28/README.md), including
+the full source snapshots, full-index patch, source-object verification and
+the exact checker replays. Its
+[replay report](sources/d0_334_post_726_delta_2026-10-28/replay/REPLAY_REPORT.md)
+records the results and one owner-receipt digest typo.
+
+### Precise parent substitutions
+
+- `§7dd` (equations 910–918) extends the nonlinear field-source recovery to
+  the original complete retained history, including an arbitrary fixed
+  noncommuting full128 past. The source retains the old records, full heat,
+  changing-past row and actual cumulative gain. A sealed-prefix result varies
+  only the newest block. This removes the fresh-history input for that
+  declared recovery application; physical admission and stationary-history
+  realization remain open.
+- `§7de` (equations 919–926) fixes the first and last complete groups of the
+  original L4/full4096 CAR word, varies seven internal groups, and brackets a
+  zero of their **sum directional derivative** for the complete feedback
+  source. The complete clock-heat derivative is bounded by `2^-240`. This is
+  one scale equation; it does not prove its seven component rows, all40+matter
+  stationarity, a minimum or physical selection.
+- The direct-click inverse lift now covers every sufficiently smooth local
+  positive-density irrotational geodesic Einstein–dust solution on the same
+  branch, beyond the LTB family. The conserved mass-coordinate map has
+  `J=ρE/(2q₀)>0` and `ρE_X=2q₀`; it preserves proper time and the same metric.
+  The resulting source equality is in every ambient 16+24+2 direction. A
+  separate local Ricci-flat vacuum sector remains separate; the map does not
+  extend through zero density.
+- `§7df` (equations 927–934) supplies the prior continuum dust solution from
+  smooth dust-orthogonal initial data satisfying the Hamiltonian and three
+  momentum constraints. It retains both matter equations, derives the
+  initial-data mass chart, propagates the real-volume constraints, and checks
+  the original nonlinear time row with a wrong-volume negative control. The
+  external existence input is Choquet-Bruhat–Friedrich, Theorem 2.1 and
+  Corollary 2.2 of [*Motion of Isolated Bodies*](https://arxiv.org/abs/gr-qc/0605096).
+  Its primary arXiv source was checked: smooth data give local Einstein–dust
+  existence/uniqueness; constraint-compatible data restore the original
+  Einstein–dust system, and the article states that the hyperbolic evolution
+  can be localized. This is an attributed external theorem, not a new Lean
+  proof or output of the finite checker.
+
+### Replay and formalization boundary
+
+The retained-past symbolic checker passes 22 controls in normal and optimized
+Python; both receipts match the owner bytes. The direct-click mass-coordinate
+checker passes 109 controls in Python 3.13.5 / SymPy 1.14.0; both outputs
+match the owner result. The fixed-boundary scale checker passes at both
+endpoints in Python 3.9.6 / NumPy 2.0.2; both emitted JSON objects match their
+embedded receipts. The owner-printed low-endpoint digest differs by one
+hexadecimal digit from the actual embedded/output bytes; the discrepancy is
+recorded, not silently corrected. The Cauchy-transport checker passes 28
+controls in normal and optimized Python with byte-identical owner receipts.
+The source-packet verifier also matches the pinned Git objects and patch.
+
+None of these new continuum results is formalized in Lean. The existing
+`ClosedHistoryNonlinearDustBranch` is the earlier scalar trace-branch adapter;
+the moving-projector modules formalize finite matrix source calculus. No
+formal-support, claim, acceptance or lifecycle status was added here. The
+new direct-click price is not identified with the original full128 price;
+the same-execution physical map, comparison admission, other independent
+apparatus rows, exact finite stationary words and physical refinement remain
+open. This is a new mathematical source/solution application, not physical
+GR closure; `GR_closed=false`.

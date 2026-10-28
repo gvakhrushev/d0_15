@@ -1,7 +1,10 @@
 # D0 chat results: verified source intake and application boundaries
 
 Source owner: existing research [PR #334](https://github.com/gvakhrushev/d0_15/pull/334),
-latest source checkpoint integrated here [`c296829fc2e74d673a2a679baa1e10a49524b290`](https://github.com/gvakhrushev/d0_15/tree/c296829fc2e74d673a2a679baa1e10a49524b290).
+with its scalar Lean adapter pinned to
+[`c296829fc2e74d673a2a679baa1e10a49524b290`](https://github.com/gvakhrushev/d0_15/tree/c296829fc2e74d673a2a679baa1e10a49524b290).
+The latest owner head reviewed in this report is
+[`8daed32d560df18837bcc69458a8fa538a9cf135`](https://github.com/gvakhrushev/d0_15/tree/8daed32d560df18837bcc69458a8fa538a9cf135).
 This is an intake into the existing proof-architecture execution #402, not a
 new scientific owner, claim status, physical selector, or merge of #334.
 The full archive was published in upstream commit
@@ -644,12 +647,10 @@ records 41 elaborated declarations at `ae789e27` and the standard axiom union
 `Classical.choice`, `Quot.sound`, and `propext`; the directly applied
 uniqueness theorem retains all three coefficient-sign premises.
 
-### Current #334 source head beyond `eebcb5e` — 28 October 2026
+### Historical #334 source checkpoint at `7261923` — 28 October 2026
 
-The user-provided `eebcb5e` checkpoint is no longer the current owner head.
-Existing Draft PR [#334](https://github.com/gvakhrushev/d0_15/pull/334) now
-stands at `726192353504a81a9ab2b751f9b6c7866271e75a`, 34 commits and 70
-changed paths later. The exact range is preserved in the
+At this checkpoint, the owner had advanced 34 commits and 70 changed paths
+beyond the user-provided `eebcb5e` checkpoint. The exact range is preserved in the
 [source packet](sources/d0_334_post_eeb_delta_2026-10-28/README.md), with all
 70 complete head files, the full patch, ordered commit list, Git blob IDs and
 SHA-256 values. Its source-object verifier confirms the snapshots against
@@ -687,7 +688,7 @@ separate scalar branch from `c296829f` and does not cover §§7db/7dc, the
 canonical boundary theorem or the full nonlinear Einstein–dust derivation.
 No claim/status or `formal_support` entry was added for uncompiled results.
 
-### Verification of the supplied archive, moving cut, and current delta
+### Verification of the supplied archive, moving cut, and historical 726 checkpoint
 
 The nine-package intake verifier passes for 74 files / 650,121 member bytes,
 but reports `archived_code_executed=false` and
@@ -751,3 +752,64 @@ admission, or finite-word recovery. The moving-projector formula is separately
 formalized in `D0.Analysis.MovingProjectorBookPrice`; its same-execution
 field map remains open. The intake remains supporting research with
 `GR_closed=false`.
+
+## Latest #334 source continuation: `7261923` to `8daed32` — 28 October 2026
+
+The same open Draft PR #334 advanced seven commits beyond the `7261923`
+checkpoint, to `8daed32d560df18837bcc69458a8fa538a9cf135`. The
+[post-726 source packet](sources/d0_334_post_726_delta_2026-10-28/README.md)
+preserves all six changed paths, the seven ordered commits, byte-exact source
+snapshots, full patch, source-object check, and replays. No checks were
+reported for that #334 head. This update is a research intake in #402; it does
+not edit #334 or accept a scientific premise.
+
+The continuation fills four different steps in the owned nonlinear source
+route, with their carriers kept distinct:
+
+- **Retain the same nonlinear source across a fixed original past (§7dd,
+  equations 910–918).** The matrix-valued old corner handles a noncommuting
+  full128 past; the true cumulative gain, source from a changing past, full
+  heat and old records remain. A sealed-prefix corollary varies only the newest
+  block. The exact changed checker passes 22 checks in normal and optimized
+  Python, with the same receipt bytes (`3480caab…a0a3b9`). This consumes the
+  retained-past recovery application without claiming physical programme
+  admission or a stationary history.
+- **Fix both full-history boundaries (§7de, equations 919–926).** The original
+  L4/full4096 CAR source uses nine groups, with the first and last complete
+  groups fixed and seven internal groups varied. The full feedback source has
+  opposite certified endpoint signs, while the complete heat derivative is
+  bounded by `2^-240`. Continuity gives one zero of the *sum* of seven
+  internal scale rows. It does not show each row vanishes, all40+matter
+  stationarity, a minimum, or physical membership. The exact checker was
+  replayed at both endpoints in Python 3.9.6 / NumPy 2.0.2. The low receipt
+  bytes match the embedded owner JSON, but the printed SHA-256 differs by one
+  hex digit; the computed and owner-printed values are both retained in the
+  packet. The high receipt matches its printed digest.
+- **Extend the direct-click inverse theorem beyond LTB.** Conserved local dust
+  mass `M=ρE` defines the mass-coordinate Jacobian `J=M/(2q₀)>0`, giving
+  `ρE_X=2q₀` while preserving the same spacetime and proper time. On the
+  fixed nonlinear branch, the source identity then vanishes in all 16 coframe,
+  24 independent Lorentz-connection, and two matter directions. The separate
+  Ricci-flat vacuum sector is preserved. The 109 symbolic and exact controls
+  replay in normal and optimized Python 3.13.5 / SymPy 1.14.0; both outputs
+  match the owner JSON byte-for-byte (`4f2253e7…f853009`). The theorem remains
+  local and restricted to positive-density irrotational geodesic dust; it does
+  not identify its direct-click price with original full128.
+- **Generate the same sector from initial data (§7df, equations 927–934).**
+  Smooth dust-orthogonal data satisfying the Hamiltonian and three momentum
+  constraints have a local development on the regular branch. The argument
+  keeps both material equations, the initial mass map, constraint propagation,
+  and a wrong-volume/time-row negative control. The external input is
+  Choquet-Bruhat–Friedrich, Theorem 2.1 and Corollary 2.2 of
+  [*Motion of Isolated Bodies*](https://arxiv.org/abs/gr-qc/0605096); that
+  primary source was checked. The 28 exact checker controls replay in normal
+  and optimized Python with byte-identical receipts
+  (`42a9daf9…d11ef8db`). The checker does not prove the external PDE theorem.
+
+These four owner results are mathematical support on their stated source,
+solution, and initial-data domains. The new inverse and Cauchy theorems are
+not Lean proofs; no `formal_support`, claims, acceptance, or lifecycle entries
+were added. The compiled Lean adapter remains the earlier scalar trace branch,
+and the moving-projector price modules remain finite matrix calculus. Physical
+comparison admission, binding to the original full128 source, independent
+apparatus equations and refinement remain open. `GR_closed=false`.
