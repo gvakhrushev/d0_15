@@ -134,6 +134,21 @@ it records the theorem's premise-bearing type and axioms
 `Classical.choice`, `Quot.sound`, and `propext` at clean snapshot
 `8528d8cea34850f5addf404bc0fdc708cf252b7c`.
 
+The combined formalization subsequently passed the public `D0.All` build at
+clean source checkpoint `fa235c34c0df666f1b6353719366bffd6cf65fe6` (4,757 Lake
+jobs; Lean 4.30.0; Lean source digest
+`330b9ed8fca75c49b010a2973e6613e35c4b162c2f6d0f10b3ec12d6d10f92bb`). Its
+[build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_integrated.json)
+and [declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_cut_feedback_declarations_2026-10-28.json)
+record the pinned toolchain inputs and 154 elaborated declarations across the
+two matrix-calculus modules and the finite QUERY/cut control. Their reported
+axiom footprint is `Classical.choice`, `Quot.sound`, and `propext`; no new
+axiom or `sorry`/`admit` was introduced. The
+[combined cold-start report](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-28_integrated.json)
+and [search comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_integrated.json)
+are bound to the same clean source checkpoint. These finite formalizations and
+search measurements do not establish physical admission or close `GR_closed`.
+
 ## What was actually replayed
 
 All 12 distinct Python checkers in the nine packages were run from isolated

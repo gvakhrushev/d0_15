@@ -2847,7 +2847,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_cold_start_summary_2026-10-27_metric_bb0ae145.json"
+            / "proof_architecture_cold_start_summary_2026-10-28_integrated.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -3300,7 +3300,7 @@ class ProofArchitectureTests(unittest.TestCase):
             proof.ROOT
             / "02_REGISTRY/research/sources/"
             / "d0_proof_architecture_formalization_2026-10-24/reports"
-            / "proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json"
+            / "proof_architecture_search_process_comparison_2026-10-28_integrated.json"
         )
         comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
         self.assertEqual(
@@ -5147,7 +5147,10 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
         self.assertEqual(
             [row["lean_module"] for row in links["formal_support_locators"]],
-            ["D0.Algebra.MovingProjectorTransport"],
+            [
+                "D0.Algebra.MovingProjectorCalculus",
+                "D0.Algebra.MovingProjectorTransport",
+            ],
         )
         self.assertEqual(
             links["formal_support_locators"][0]["status"], "metadata_locator_only"
@@ -5167,7 +5170,9 @@ class ProofArchitectureTests(unittest.TestCase):
 
     def test_refoliation_delta_is_retrievable_without_physical_owner_inference(self) -> None:
         data = proof.load_dataset(proof.ROOT)
-        hits = proof.full_text_search(proof.ROOT, "root cut refoliation closure")
+        hits = proof.full_text_search(
+            proof.ROOT, "root cut refoliation closure", limit=100
+        )
         by_source = {item["source"]: item for item in hits}
         intake_path = "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md"
         proof_path = (
@@ -5182,7 +5187,9 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(
             [row["lean_module"] for row in links["formal_support_locators"]],
             [
+                "D0.Algebra.MovingProjectorCalculus",
                 "D0.Algebra.MovingProjectorTransport",
+                "D0.Analysis.MatrixDeterminantDerivative",
                 "D0.Geometry.RefoliationWitnessCoefficientExtraction",
                 "D0.Geometry.MovingCutQueryCancellation",
             ],
