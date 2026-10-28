@@ -1062,6 +1062,36 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "paid-binary-input-full-same-execution-book-price",
+        "queries": [
+            "generated binary input literal forward words complete Book price",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+                "commit": "7c079c0180de6e6e12edbd8e79c4628f5048deae",
+                "blob": "7cc94351706b15859d1719aed7160b77314ac4ca",
+                "scope_query_indexes": [0],
+                "scope_query_sections": {"0": ["1012"]},
+            },
+        ],
+        "scope_review": (
+            "The pinned #334 result constructs a finite positive binary input and binds its "
+            "paid preparation, loop, inverse, generated cuts, full heat and feedback price "
+            "on one declared X_run sector. The input approximation does not prove source-jet "
+            "equality or exact archive-law membership. Physical blank supply, compulsory "
+            "execution admission, complete physical Cost-Info selection, the all-42 source "
+            "norm, common GR refinement and Lean formalization remain open; GR_closed=false."
+        ),
+    },
+    {
         "id": "canonical-archive-law-and-variation-domain",
         "queries": [
             "canonical archive law compatibility variation domain full old effect relative commutant",

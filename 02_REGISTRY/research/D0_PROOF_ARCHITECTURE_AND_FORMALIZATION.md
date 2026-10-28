@@ -13784,3 +13784,60 @@ selection or full source obligations. `GR_closed=false` remains unchanged.
 - The finite archive-algebra domain audit on the original Fibonacci inclusions is executed by [check_archive_domain.py](https://github.com/gvakhrushev/d0_15/blob/d5a32be3b7d7bab8006c5af588a0ea4e21dce6c3/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/check_archive_domain.py).
 - The [75-check JSON result](https://github.com/gvakhrushev/d0_15/blob/edf02f60b12f288c19f10499e26e86e8015bf496/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/result.json) records `canonical_AF_source`, `true_GNS_leakage_norm` and `physical_query_law_selected=false`.
 - The [archive-domain replay receipt](https://github.com/gvakhrushev/d0_15/blob/0f0278787612f34c0bad6ea5cbd93a9f164df756/02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/RUN_RECEIPT.json) sets `checker_sha256`, `result_sha256`, `checks=75`, `normal_optimized_repeat_byte_identical=true` and `GR_closed=false`.
+
+## #334 continuation at `7c079c01` — generated binary input and full same-execution Book price
+
+The live Draft #334 advanced beyond the archive-law checkpoint to
+[`7c079c0180de6e6e12edbd8e79c4628f5048deae`](https://github.com/gvakhrushev/d0_15/commit/7c079c0180de6e6e12edbd8e79c4628f5048deae).
+Its existing task checkpoint is pinned at blob
+`3f96f1cb40c1e136d8a2aed336f86272b7a16780`. The owner result is §7do of
+[`A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`](https://github.com/gvakhrushev/d0_15/blob/7c079c0180de6e6e12edbd8e79c4628f5048deae/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md),
+blob `7cc94351706b15859d1719aed7160b77314ac4ca`, SHA-256
+`432d151e78dbedb56312f1caa27d1d35d2c1d460d176739d8797f538c87d641c`.
+Exact source locator: the generated binary input, literal forward words, and complete Book price are in [#334 §7do](https://github.com/gvakhrushev/d0_15/blob/7c079c0180de6e6e12edbd8e79c4628f5048deae/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md#7do); owner blob `7cc94351706b15859d1719aed7160b77314ac4ca`.
+This consumes the existing binary AF compiler, native-execution profile,
+complete Book map, clock-winding source, and the prior canonical archive-law
+criterion; it creates no separate scientific task or selector.
+
+The result constructs a positive G/CX/SourceI preparation from one fixed
+16-column initial boundary with 12 stated zero blanks. A CX followed by 87
+finite selective rotations generates the canonical GNS input within the exact
+operator-error bound `0.000423597039241966803689790303`. The source is evaluated
+on the actual generated input; the norm bound is not used to infer source-jet
+equality or exact membership in the stronger archive-law fibre. Physical supply
+of the blank wires and admission of these operations remain interface premises.
+
+For each of nine pairs of preparation and loop controls, the complete word is
+`P_s ; Q_t ; inverse(P_s) ; paid identity padding`, with every inverse call,
+Golden reversal and routing call represented and priced. All nine executions
+have the same inventory: `257214301184` G, `12733188` CX, `2506888` SourceI,
+and `257229541260` primitive stages. The preparation RLE stream has 5,333,825
+records; the full word is generated from ordinary primitives, not simulated
+stage by stage or claimed to have run on hardware.
+
+The one original full Book functional is retained throughout:
+`B(s,t)=H_N(W)-log det_16((1-zeta)I+zeta K*K)`, with `zeta=2^-20`, the original
+homogeneous internal scene-clock, complete heat term, harmonic contribution,
+and all `425*N*65536` Hodge modes. The preparation-axis finite price difference
+is strictly positive, enclosed in
+`[1.16820589111284635814098e-7, 1.16820589111284635814101e-7]`. The computed
+loop gain remains positive at approximately `2.39218506359053e-6`; the
+coordinate ratio is not a raw primitive dual norm or a bound on all 42 source
+components.
+
+The checker and receipt were extracted from this exact #334 commit and replayed
+them with the five source files at their exact pinned Git blob IDs in an
+isolated temporary root. On Python 3.9.6, NumPy 2.0.2 and mpmath 1.3.0, all 441
+changed checks passed; ordinary and `-O` outputs both matched the published
+receipt byte-for-byte (SHA-256
+`811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba`), with
+empty stderr. The checker, receipt and exact source pins are preserved under
+[`paid_binary_input_replay_2026-10-28_7c079c`](sources/d0_proof_architecture_formalization_2026-10-24/reports/paid_binary_input_replay_2026-10-28_7c079c/).
+
+This substitutes the supplied-input premise for the declared finite `X_run`
+sector and binds that preparation to its generated clock, cuts and complete
+price. It does not select that sector as compulsory physical execution, prove
+the added archive-law condition, identify all physical Cost-Info terms,
+establish the all-42 source norm or common GR refinement, or produce a Lean
+formalization of this finite construction. Physical source selection and GR
+obligations remain open; `GR_closed=false`.
