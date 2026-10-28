@@ -11944,6 +11944,17 @@ independent read-only review of thermal blob
 `786c1d8f19a90ef5322c0795e169d0cd72557f95` checked these hypotheses and signs;
 it did not replay Lean or establish the physical application.
 
+`D0.Analysis.MatrixMovingHeatFeedback` composes these two first derivatives
+for the same differentiable `P,U,Δ`, point `t` and `K=[dP,P]`: the real
+thermal source and the feedback source are added as the derivative of their
+stated fixed-parameter scalar. Its standard fixed Gram, local orthogonal
+projector, pointwise isometry and Hermiticity, nonempty finite carrier,
+`β≠0`, and `0≤z<1` are hypotheses. An independent read-only review of blob
+`a16266af605f28005233ce6ffe973801fba748a7` checked the common curves and
+signs. This is a conditional mathematical composition, not physical
+admission or the complete absolute Info/work/controller price; the real-trace
+to complex-ρ identification and general fixed-Gram transport are still open.
+
 For `D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001`, the source candidate
 `75527846bf3603a1c51acf445f8354e3254341be:02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#§1/Eq(1)`
 (blob `c216f19daebc9a6b2a9e732d277350dd2d69f88c`, existing owner #310)
