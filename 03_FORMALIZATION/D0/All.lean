@@ -667,6 +667,7 @@ import D0.Representation.RoleRealStructureNoGo
 import D0.Representation.SourcePortPreparation
 import D0.Representation.TypedRoleSceneAction
 import D0.Representation.VerifierSwapGradingNoGo
+import D0.Research.ClosedHistoryNonlinearDustBranch
 import D0.Research.GoldenCurvatureKernel
 import D0.Research.GoldenCylinderOneStepBridge
 import D0.Research.MemoryTangentSpan

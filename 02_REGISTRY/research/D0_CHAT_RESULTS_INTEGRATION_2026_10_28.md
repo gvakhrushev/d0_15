@@ -87,7 +87,7 @@ independently admissible variation.
 
 ## Lean formalization slice
 
-Thirteen supporting results from this integration are represented by
+Fifteen supporting results from this integration are represented by
 Lean modules and registered in `formal_support.csv`. They are imported by
 `D0.All`; none is a physical-closure claim.
 
@@ -103,9 +103,22 @@ Lean modules and registered in `formal_support.csv`. They are imported by
 | [`D0.Analysis.MatrixMovingHeatFeedback`](../../03_FORMALIZATION/D0/Analysis/MatrixMovingHeatFeedback.lean) | Adds the heat and feedback derivatives for one common differentiable triple `P,U,Δ`, point `t` and `K=[dP,P]`, deriving the real first source of their stated fixed-parameter scalar. | Standard fixed inner product, nonempty finite carrier, local orthogonal `P`, pointwise isometric `U` and Hermitian `Δ`, and fixed `β≠0`, `0≤z<1` are retained. This is not an admitted native execution or the complete Info/work/controller price. |
 | [`D0.Analysis.MatrixThermalDensityBridge`](../../03_FORMALIZATION/D0/Analysis/MatrixThermalDensityBridge.lean) | For the same curves and locally Hermitian `Δ`, proves `Tr ρ=1` for `ρ=exp(−βΔ)/Tr exp(−βΔ)` and identifies the real thermal contribution with the complex `−Tr(ρ(dΔ−[K,Δ]))`. | The standard fixed inner product and all preceding hypotheses remain; local Hermiticity of `Δ` supplies self-adjoint `dΔ`. General Gram transport, physical admission and the full price remain open. |
 | [`D0.Analysis.MovingProjectorBookPrice`](../../03_FORMALIZATION/D0/Analysis/MovingProjectorBookPrice.lean) | Composes the same-curve thermal and positive-chart feedback derivatives into the full finite Book03 heat-plus-`−log det` derivative. With `K=[dP,P]`, the source is `−Re Tr(ρ(dΔ−[K,Δ]))+2z Re Tr(R C†(1−P)(dU−[K,U])P)`; the active cut is not frozen. | Fixed `β,z`, standard finite-matrix inner product, locally idempotent/self-adjoint projector, Hermitian thermal matrix and a slit-plane feedback determinant are explicit. This is not the all42 native source map, a variable-Gram result, or physical admission/selection. |
+| [`D0.Analysis.MovingProjectorBookPriceDensityBridge`](../../03_FORMALIZATION/D0/Analysis/MovingProjectorBookPriceDensityBridge.lean) | Identifies the existing real-partition Book state with the normalized complex-trace Gibbs density for Hermitian `Δ`, and applies the existing Book-price derivative on the isometric positive chart. | Fixed-Gram, Hermitian and isometric-cut hypotheses remain explicit; the bridge reuses existing finite results and proves no native admission or complete Info/work/controller price. |
 | [`D0.Geometry.ArchiveGradedRefinementComposedReadout`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean) | Iterates the owned adjacent pullbacks literally, proves their cochain identity for every number of steps and an exact singleton prefix/tail formula. At doubling, the stated fixed-component normalized L1 and L2-squared errors are both exactly `1`. | The probe is the literal one-form embedding but its fixed-component sampler is not selected as a physical observable. The result shows chain-map preservation alone does not imply convergence of that readout; it proves no universal refinement obstruction. |
 | [`D0.Geometry.RefoliationWitnessCoefficientExtraction`](../../03_FORMALIZATION/D0/Geometry/RefoliationWitnessCoefficientExtraction.lean) | From the three exact coefficient equations displayed for the shear, trace, and two-scalar witnesses, proves `a*b=1`, `lambda=1/2`, and `C*D=I₂`. | The bracket/witness equalities are premises. It does not derive the continuum Poisson bracket, strong hypersurface-deformation algebra, canonical D0 variables, lapse generators, or physical admission. |
 | [`D0.Geometry.MovingCutQueryCancellation`](../../03_FORMALIZATION/D0/Geometry/MovingCutQueryCancellation.lean) | Over `ℚ`, defines a rank-one projector and a 2×2 orthogonal reflection, proves the complete cut derivative row, two-sided resolvent inverse, and generic cancellation of the QUERY-only and cut-only source rows under joint conjugation; the exact rational control is `+16/35`, `−16/35`, `0`. | This is the finite algebraic control in #334 §7cu. It does not prove either tangent is an admitted D0 variation, transport the thermal operator, construct the original 42-field map, or establish physical source selection. |
+| [`D0.Research.ClosedHistoryNonlinearDustBranch`](../../03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean) | Formalizes the unchanged sigma-minus click (15) as an exact quadratic in curvature, proves its Golden coefficient reduction (25), derives the actual trace-minus-radial quadratic (26), and proves the stable radical branch is the unique negative root under explicit coefficient signs. | The concrete sign enclosure, source-to-field variation, nonlinear Einstein–dust equations, LTB substitution, and physical protocol admission remain outside Lean; this is a supporting algebraic adapter, not the full #334 result. |
+
+The nonlinear branch module is source-pinned to #334 commit
+`c296829fc2e74d673a2a679baa1e10a49524b290`, upstream file
+`A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md`, Git blob
+`154b341f17adce88594b0b5e9df0d38c0283d288`. It instantiates the Golden
+parameter `(sqrt 5 - 1)/2`; the actual click coefficients are shown to be
+polynomial in the matter coordinate, so the trace identity does not take
+unproved differentiability witnesses as premises. The sign region used to
+select the negative branch is still a hypothesis, not the source's rational
+interval certificate. This formalization consumes only the exact scalar
+algebra of (15), (25)--(27), not the dust or LTB application.
 
 The moving-cut modules now give two same-curve compositions of the thermal and
 feedback derivatives: one derives the positive determinant chart from an
@@ -579,8 +592,10 @@ the nonlinear branch checker passed 19 controls and the full-word AF
 embedding checker passed 24. Ordinary and `python -O` output matched each
 other and the owner JSON byte-for-byte; stderr was empty under Python 3.9.6
 and SymPy 1.14.0. The existing full LTB curvature/Cartan proof and the entire
-GR-native word were consumed, not rerun. The new nonlinear theorem is not a
-Lean theorem and does not assert exact stationarity for every finite word.
+GR-native word were consumed, not rerun. The full nonlinear Einstein–dust
+theorem is not formalized in Lean and does not assert exact stationarity for
+every finite word; the scalar branch slice is described in the later
+formalization addendum.
 The physical Book03 domain still needs to be shown to admit or be controlled
 by this generated sector. Physical admission, independent-protocol sources,
 scientific acceptance and `GR_closed` remain open.
@@ -603,3 +618,23 @@ and optimized modes. It remains separate from the original full128 return.
 The finite Lean theorems do not formalize that nonlinear result or discharge
 its physical-admission and same-execution applications; the parent physical
 claim remains open and `GR_closed=false`.
+
+### Lean integration of the nonlinear click branch
+
+The algebraic branch in #334 equations (15), (25)--(27) is now formalized in
+[`D0.Research.ClosedHistoryNonlinearDustBranch`](../../03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean)
+and registered in `formal_support.csv`. It defines the original click and
+proves exact quadraticity, the concrete Golden coefficient reduction,
+polynomial differentiability of the source coefficients, the trace-source
+quadratic, and the conditional unique negative radical branch. The source
+pin is commit `c296829fc2e74d673a2a679baa1e10a49524b290`, upstream blob
+`154b341f17adce88594b0b5e9df0d38c0283d288`.
+
+The module does not formalize the sign interval, full nonlinear Einstein--dust
+equations, LTB substitution, source-to-field map or physical admission. It is
+one supporting algebraic adapter; the research theorem remains at its stated
+generated-field scope and `GR_closed=false`. The module's narrow build passed,
+and the integrated `D0.All` build passed 4,768 Lake jobs at source digest
+`5e53922308a6b99ba7b68940ddd777acee1d2fb797227bebfe009a7d1739c20d`.
+Repository validation reports 234 formal-support rows and 957 generated
+imports with zero warnings; the debt audit remains at five baseline findings.

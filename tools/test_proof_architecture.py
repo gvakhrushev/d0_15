@@ -5256,7 +5256,7 @@ class ProofArchitectureTests(unittest.TestCase):
                 "D0.Analysis.MatrixDeterminantDerivative",
             ],
         )
-        self.assertEqual(links["formal_support_locators_omitted"], 3)
+        self.assertEqual(links["formal_support_locators_omitted"], 4)
         self.assertTrue(all(
             row["status"] == "metadata_locator_only"
             for row in links["formal_support_locators"]

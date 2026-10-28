@@ -12302,3 +12302,40 @@ match the pinned owner observations byte-for-byte, with empty stderr. These
 checks validate the archive, finite formalization and scoped source controls;
 they do not promote the #334 research results to scientific acceptance or
 `GR_closed`.
+
+### Formalized scalar branch of the #334 nonlinear direct-click source — 28 October 2026
+
+The exact algebraic source branch supplied by #334 at commit
+`c296829fc2e74d673a2a679baa1e10a49524b290` is now represented in
+[`D0.Research.ClosedHistoryNonlinearDustBranch`](../../03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean)
+and registered as explicit support. Its upstream source is
+`A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md`, blob
+`154b341f17adce88594b0b5e9df0d38c0283d288`, equations (15), (25)--(27).
+The Lean module defines the original sigma-minus click with its original
+curvature and matter rotations, proves its exact quadratic expansion, derives
+the concrete Golden-parameter coefficient identities and the trace-source
+quadratic, and proves existence and uniqueness of the stable negative root
+under the stated coefficient signs. The polynomial coefficient functions are
+proved differentiable rather than supplied as assumptions.
+`originalClick_trace_unique_negative_branch` explicitly identifies any
+negative solution of the actual source trace equation with that radical.
+
+The sign region and its rational interval certificate are not proved by this
+module. The full nonlinear source-to-field variation, Einstein--dust
+equations, LTB substitution, finite-word control and physical protocol
+admission remain in the source owner's scope. No claim ID or scientific
+acceptance was added, and C0 remains unaccepted with no coverage percentage.
+The pinned intake verifier passes and confirms the retained 43-control replay
+receipt; the verifier does not itself rerun those archived controls.
+
+The new module passes its narrow Lean 4.30.0 build and the public `D0.All`
+build passes **4,768 Lake jobs** at Lean source digest
+`5e53922308a6b99ba7b68940ddd777acee1d2fb797227bebfe009a7d1739c20d`. Its
+[build provenance receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_nonlinear.json)
+has SHA-256
+`7be8482f0828023552b06869d04d19a11681ba9c363b4ff82dc79f3d50960b82`.
+The new module emits no linter warnings; the aggregate build retains existing
+warnings elsewhere in the import closure. Generated views pass; repository
+validation reports 234 formal-support rows and a 957-module `D0.All` closure
+with zero warnings. The formalization-debt audit remains at its existing
+baseline, five findings.
