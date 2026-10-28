@@ -12506,3 +12506,9 @@ Lake jobs at Lean source digest
 The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_query_derivative.json)
 has content SHA-256 `c34105fedc326029cbcee3a65e7e60e0a50163f48ef942356998a6349c290c90`.
 The full build retains existing warnings in other modules.
+
+The [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/query_cut_derivative_declarations_2026-10-28.json)
+records 38 declarations on clean published snapshot
+`93c2331ad2ec38d574cebba64097296f2e222012` at the same Lean source digest.
+Its SHA-256 is `25f70dd71318da074c517e68a659e31a5483a5804732a0e0215b8f7328562961`;
+the reported axiom union is `Classical.choice`, `Quot.sound` and `propext`.
