@@ -1,0 +1,255 @@
+{
+  "checkers": {
+    "7cx": {
+      "matches_embedded_json_exactly": false,
+      "numpy": "2.0.2",
+      "python": "3.12 (uv)",
+      "result": {
+        "carrier": "full Ux=x-2L(Ldagger x); Ldagger L=I proves all-column Hermitian unitarity; every128 output retained",
+        "dimension": {
+          "DATA": 16,
+          "addresses": 64,
+          "full_unitary": 2048,
+          "ports": 2
+        },
+        "echo_KdaggerK_equals_Fpower_errors": [
+          0.0,
+          3.823724708828117e-18,
+          1.0985608315022125e-19,
+          2.5641913702491847e-21,
+          6.983554940082234e-23
+        ],
+        "echo_m_values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feedback_sources_and_tails": [
+          {
+            "J": 3.2042444113482067e-07,
+            "derivative_tail_bounds": [
+              6.494128104427562e-32,
+              9.136850318694092e-31
+            ],
+            "direct_source_theta_nu": [
+              -1.8312595190037387e-08,
+              1.0624053526015612e-06
+            ],
+            "frozen_q_prefactor_source_theta_nu": [
+              -4.156539650890429e-08,
+              2.1304868230509634e-06
+            ],
+            "joint_J_L4": 3.204244411348207e-07,
+            "joint_L4_source_theta_nu": [
+              -1.8312595190037387e-08,
+              1.0624053526015608e-06
+            ],
+            "label": "existing root diagnostic z=2^-20",
+            "observable_source_theta_nu": [
+              -1.8312595190037384e-08,
+              1.0624053526015612e-06
+            ],
+            "omitted_quotient_term_theta_nu": [
+              -2.3252801318866906e-08,
+              1.0680814704494025e-06
+            ],
+            "roundoff_allowance": 7.114851844010521e-21,
+            "spectral_tail_bound": 1.25358663594686e-38,
+            "tail_difference": -5.293955920339377e-23,
+            "z": 9.5367431640625e-07
+          },
+          {
+            "J": 0.08421895952392983,
+            "derivative_tail_bounds": [
+              0.00010719111378408167,
+              0.0015081149407439839
+            ],
+            "direct_source_theta_nu": [
+              -0.004822568207142844,
+              0.2799753479986057
+            ],
+            "frozen_q_prefactor_source_theta_nu": [
+              -0.010934232864428722,
+              0.5607052128189087
+            ],
+            "joint_J_L4": 0.08421895951090821,
+            "joint_L4_source_theta_nu": [
+              -0.004822568205349652,
+              0.27997534778254796
+            ],
+            "label": "structural tail-sensitivity parameter only; not physical selection",
+            "observable_source_theta_nu": [
+              -0.004822568207142843,
+              0.2799753479986058
+            ],
+            "omitted_quotient_term_theta_nu": [
+              -0.006111664659079069,
+              0.28072986503636077
+            ],
+            "roundoff_allowance": 1.8700365594688203e-15,
+            "spectral_tail_bound": 1.5603837351785052e-11,
+            "tail_difference": 1.3021611566799152e-11,
+            "z": 0.25
+          }
+        ],
+        "initial_source": {
+          "boost_theta": 0.22314355131420976,
+          "nu": 0.6,
+          "phases": [
+            "i",
+            "i",
+            "-1",
+            "-i"
+          ],
+          "stationary_port1_probability": 0.0130262718422078
+        },
+        "joint_mu_derivative_fd_errors_theta_nu": [
+          1.9565309116766072e-15,
+          1.9997640696156616e-12
+        ],
+        "joint_mu_formula_errors": [
+          5.421010862427522e-20,
+          9.317362419797304e-21,
+          2.6469779601696886e-22,
+          5.790264287871194e-24,
+          7.754818242684634e-26
+        ],
+        "joint_mu_m": [
+          0.000273543058767767,
+          5.75337145425543e-06,
+          1.2120122017348514e-07,
+          2.5572547470916796e-09,
+          5.4040069632779904e-11
+        ],
+        "literal_copied_blocks": "owner lines76-99 CAR and boost;125-159 mirrored Julia words;162-183 Walsh/Kraus. Positive roots evaluated numerically.",
+        "matrix_identity_errors": {
+          "A_from_actual_rho_q": 9.181857939977957e-18,
+          "L_isometry_full2048_unitarity_certificate": 1.1304675507166922e-14,
+          "N_column_completeness": 1.7832826324789263e-15,
+          "N_row_isometry": 8.831683533033453e-15,
+          "complete_Kraus_normalization": 2.0411360547230946e-15,
+          "feedback_from_complete_return": 4.413972823683887e-17,
+          "full128_column_reconstruction": 7.028353310010849e-17,
+          "native_stationarity": 4.031397477512819e-16,
+          "odd_full_matrix": 1.3851331672189037e-18,
+          "odd_normalized_state": 1.1210449024909877e-16,
+          "q_source_normalization": 0.0
+        },
+        "normalized_odd_state_derivative_norms_theta_nu": [
+          2.465416422074203e-12,
+          3.2022375286607925e-12
+        ],
+        "odd_unnormalized_derivative_errors_theta_nu": [
+          3.334304107649506e-14,
+          6.234915996758483e-14
+        ],
+        "reference128": "Free oldRIGHT spectator multiplies trace J/source by128; it does not multiply normalized rho,q,or joint probabilities. Already written fine archive is spectator.",
+        "scope": "One specified stationary tick, port1 joint event, then fresh query work and alternating U/Udagger Q/P event branch. Not first-success stopping or free postselection. Preparation and full observer costs remain real; no GR, thermal, or compulsory selection claim.",
+        "source_owner": "02_REGISTRY/research/sources/d0_original_full128_future_even_algebra_2026-10-22/check_future_even_algebra_modprime.py",
+        "source_owner_sha256": "1b1e75a8c46135eac9495bc47f9239b83ed36713c268d118d017ab176b95f3a5",
+        "status": "PASS"
+      },
+      "runtime_warning_lines": 90,
+      "status": "PASS_INTERNAL_TOLERANCE_CHECKS",
+      "stderr_sha256": "50f6b1b1fcb88356ee24a678da9b4f12829c0ede1d661b916e0e7e9282f18778",
+      "stdout_sha256": "0c694ded2db9cf4de7c9291cc8b1420a247bce06ada77267146de09ba943a73f"
+    },
+    "7cy": {
+      "matches_embedded_json_exactly": true,
+      "python": "3.9.6",
+      "result": {
+        "Einstein_scalar_components_checked": 16,
+        "Klein_Gordon": "0",
+        "Lorentz_connection_and_torsion": "exact zero for all components",
+        "Ricci_scalar": "1/(3*tau)",
+        "compact_test_margin": "2/405",
+        "density_metric_at_witness": "g_tilde=g but full coframe sources differ",
+        "det_coframe": "1",
+        "direct_star_coframe_source": "fstar*transpose(inverse(e))",
+        "direct_star_metric_source": "-kappa*q*g/2",
+        "independent_Palatini_variation": "all 16 coframe rows checked at fixed omega from its curvature two-form",
+        "input_sha256": {
+          "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md": "320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b",
+          "02_REGISTRY/research/A4D_NATIVE_CLOCK_FULL_PRICE_COMPILATION_AND_FINITE_TEST_RECOVERY_2026_10_27.md": "f23ef19ff9c09e51b9091fd5da8b3936d3a66ac243d157c7a016318c778d28af",
+          "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md": "10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05",
+          "02_REGISTRY/research/A4D_PARITY_RESOLVED_GEOMETRIC_SOURCE_GLOBAL_2026_10_27.md": "43e94708f85630c9c86e92c6b257eadd96f382acd5f2e462ef8fae58095ef6ee"
+        },
+        "matter_kinetic": "1/(6*kappa*tau)",
+        "metric": "diag((2tau)^-1,-(2tau)^(1/3),-(2tau)^(1/3),-(2tau)^(1/3))",
+        "native_kappa_for_orientation": "23.4164067518840749728955820649",
+        "native_ratio": "-r_y(0,0)/r_x(0,0)=kappa_native>20, exact polynomial and rational bounds",
+        "radial_source_density": "2/(3*tau)",
+        "scope": "exact continuum comparison on fixed uniform units/density; no discrete root, emitted GR word, physical source selection or GR closure",
+        "source_sha256": "6fb6f8aa620d5458e79c8d4566a8380075cb6a8e1d31e45b2184178429ad70b0",
+        "status": "PASS_NON_NULL_DENSITY_SOURCE_SEPARATION"
+      },
+      "status": "PASS_NON_NULL_DENSITY_SOURCE_SEPARATION",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e0f9d0353be40f29a4d1354fb1fe31b00a0423f22392238f44d8d31876401fd9",
+      "sympy": "1.14.0"
+    },
+    "direct_source": {
+      "matches_embedded_json_exactly": true,
+      "python": "3.9.6",
+      "result": {
+        "GR_closed": false,
+        "checker_sha256": "b044b4939b8577a7289b0f8ef1c146bcead29a8c02274406ab20026e7d50361c",
+        "checks": [
+          "owned quadratic identity at original fixture",
+          "owned multiplicity trace at original fixture",
+          "full feedback pencil reduction",
+          "resolvent without state inverse",
+          "short noncommutative source numerator",
+          "full completion feedback",
+          "two-root determinant identity",
+          "full noncommutative source equals direct a jet: r",
+          "direct source equals scalar determinant derivative: r",
+          "moving q and rho recover same direct source: r",
+          "full noncommutative source equals direct a jet: nu",
+          "direct source equals scalar determinant derivative: nu",
+          "moving q and rho recover same direct source: nu",
+          "endogenous rho has no native scale derivative",
+          "q carries entire original scale source",
+          "freezing q incorrectly loses a nonzero scale source",
+          "singular-source zero-price pencil",
+          "singular-source zero first derivative",
+          "singular-source exact nonzero second derivative",
+          "positive second source without inverse A"
+        ],
+        "consumed_car_owner_sha256": "1e2def81f5128876298b591f22388c8a01ca8b6d1e804aeb75b52d7e38034976",
+        "direct_sources_diagnostic": {
+          "nu": "0.0000010624053526015610447286178238859966",
+          "r": "-0.000000037083005259825710853475975055650328"
+        },
+        "input_commit": "e120d891985e473e7e9e0e8a9da92b6d1fab7218",
+        "native_fixture": {
+          "data_dimension": 16,
+          "nu": "3/5",
+          "r": "1/9",
+          "z": "2^-20"
+        },
+        "native_noncommuting_tangents": [
+          "r"
+        ],
+        "scope": "Exact algebra and original CAR16 jets; consumes complete U proof; no new full2048 replay or all42/native-admission theorem.",
+        "singular_second_source_diagnostic": "0.0000017895959803053447876500160625391612",
+        "status": "PASS"
+      },
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fd79347a33ef1d0a33438c5b382707c07549168ada6b213a15cee3c06ee489df",
+      "sympy": "1.14.0"
+    }
+  },
+  "python39_runner": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "schema": "d0-pr334-closed-history-replay-receipt-v1",
+  "scope": {
+    "GR_closed": false,
+    "Lean_theorem_added": false,
+    "physical_admission": false
+  },
+  "source_head": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+  "sympy": "1.14.0"
+}

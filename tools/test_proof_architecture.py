@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import ast
 import pathlib
 import copy
 import hashlib
@@ -2866,15 +2867,33 @@ class ProofArchitectureTests(unittest.TestCase):
             / "proof_architecture_cold_start_summary_2026-10-28_integrated.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        pinned_runner_source = subprocess.check_output([
+            "git", "show",
+            f"{summary['snapshot_commit']}:tools/proof_architecture_cold_start.py",
+        ], text=True)
+        pinned_cases_value = None
+        for node in ast.parse(pinned_runner_source).body:
+            if (isinstance(node, ast.AnnAssign)
+                    and isinstance(node.target, ast.Name)
+                    and node.target.id == "CASES"):
+                pinned_cases_value = node.value
+                break
+            if (isinstance(node, ast.Assign)
+                    and any(isinstance(target, ast.Name) and target.id == "CASES"
+                            for target in node.targets)):
+                pinned_cases_value = node.value
+                break
+        self.assertIsNotNone(pinned_cases_value)
+        pinned_cases = ast.literal_eval(pinned_cases_value)
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
         self.assertRegex(summary["snapshot_commit"], r"^[0-9a-f]{40}$")
         self.assertFalse(summary["worktree_dirty"])
-        self.assertEqual(summary["search_cases_found_all_sources"], len(cold_start.CASES))
-        self.assertEqual(summary["search_cases_total"], len(cold_start.CASES))
+        self.assertEqual(summary["search_cases_found_all_sources"], len(pinned_cases))
+        self.assertEqual(summary["search_cases_total"], len(pinned_cases))
         self.assertEqual(summary["benchmark_cases_total"], 25)
         self.assertEqual(
             [row["id"] for row in summary["cases"]],
-            [case["id"] for case in cold_start.CASES],
+            [case["id"] for case in pinned_cases],
         )
         self.assertTrue(all(
             row["all_required_sources_found"] and not row["missing_paths"]
@@ -2886,7 +2905,7 @@ class ProofArchitectureTests(unittest.TestCase):
                 path not in {source["path"] for source in case.get("required_sources", [])}
                 for path in case["required_refs"]
             )
-            for case in cold_start.CASES
+            for case in pinned_cases
         )
         self.assertEqual(
             sum(row["required_source_count"] for row in summary["cases"]),
@@ -2898,7 +2917,7 @@ class ProofArchitectureTests(unittest.TestCase):
             if row["id"] == "positive-nonvacuum-recovery"
         )
         positive_case = next(
-            case for case in cold_start.CASES
+            case for case in pinned_cases
             if case["id"] == "positive-nonvacuum-recovery"
         )
         self.assertEqual(positive_nonvacuum["query_count"], len(positive_case["queries"]))
@@ -5325,6 +5344,26 @@ class ProofArchitectureTests(unittest.TestCase):
             "02_REGISTRY/research/sources/"
             "d0_334_final_composition_delta_2026-10-28/upstream/"
             "02_REGISTRY/research/A4D_RETAINED_HISTORY_FINAL_COMPOSITION_2026_10_28.md"
+        )
+        self.assertIn(intake_path, by_source)
+        self.assertIn(source_path, by_source)
+        links = proof._declared_source_links(data, source_path)
+        self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
+        self.assertEqual(links["formal_support_locators"], [])
+
+    def test_closed_history_delta_is_retrievable_without_false_lean_or_owner_link(self) -> None:
+        data = proof.load_dataset(proof.ROOT)
+        hits = proof.full_text_search(
+            proof.ROOT,
+            "A4D CLOSED HISTORY DIRECT PROOF 2026 10 28",
+            limit=100,
+        )
+        by_source = {item["source"]: item for item in hits}
+        intake_path = "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md"
+        source_path = (
+            "02_REGISTRY/research/sources/"
+            "d0_334_closed_history_direct_delta_2026-10-28/upstream/"
+            "02_REGISTRY/research/A4D_CLOSED_HISTORY_DIRECT_PROOF_2026_10_28.md"
         )
         self.assertIn(intake_path, by_source)
         self.assertIn(source_path, by_source)

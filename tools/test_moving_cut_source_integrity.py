@@ -41,6 +41,13 @@ final_composition_spec = importlib.util.spec_from_file_location(
 final_composition_verifier = importlib.util.module_from_spec(final_composition_spec)
 final_composition_spec.loader.exec_module(final_composition_verifier)
 
+CLOSED_HISTORY_SCRIPT = ROOT / '02_REGISTRY/research/sources/d0_334_closed_history_direct_delta_2026-10-28/verify_closed_history_delta.py'
+closed_history_spec = importlib.util.spec_from_file_location(
+    'closed_history_source_integrity', CLOSED_HISTORY_SCRIPT
+)
+closed_history_verifier = importlib.util.module_from_spec(closed_history_spec)
+closed_history_spec.loader.exec_module(closed_history_verifier)
+
 
 class MovingCutSourceIntegrityTest(unittest.TestCase):
     def setUp(self) -> None:
@@ -258,7 +265,6 @@ class PR334FinalCompositionSourceIntegrityTest(unittest.TestCase):
         self.assertFalse(result['scientific_acceptance'])
         self.assertFalse(result['physical_admission'])
         self.assertFalse(result['GR_closed'])
-        self.assertFalse((self.repo / '.git').exists())
 
     def test_same_size_upstream_mutation_is_rejected(self) -> None:
         import json
@@ -279,6 +285,59 @@ class PR334FinalCompositionSourceIntegrityTest(unittest.TestCase):
         source.symlink_to(external)
         with self.assertRaisesRegex(ValueError, 'Expected regular file'):
             final_composition_verifier.verify(self.repo)
+
+
+class PR334ClosedHistoryDeltaSourceIntegrityTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.repo = Path(self.tmp.name) / 'repo_without_git'
+        self.repo.mkdir()
+        self.packet = self.repo / closed_history_verifier.ROOT.relative_to(ROOT)
+        self.packet.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copytree(closed_history_verifier.ROOT, self.packet)
+
+    def test_pinned_current_head_source_packet_is_read_only_and_non_accepting(self) -> None:
+        before = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                  for p in self.repo.rglob('*') if p.is_file()}
+        result = closed_history_verifier.verify(self.packet)
+        after = {p.relative_to(self.repo).as_posix(): p.read_bytes()
+                 for p in self.repo.rglob('*') if p.is_file()}
+        self.assertEqual(before, after)
+        self.assertEqual(result['status'], 'PASS_PINNED_PR334_CLOSED_HISTORY_DELTA')
+        self.assertEqual(result['source_head'], '46ebed17ddfa04faa8ab1a07a6a822b717f993ef')
+        self.assertEqual(result['changed_owner_files'], 5)
+        self.assertEqual(result['pinned_replay_inputs'], 6)
+        self.assertEqual(result['embedded_replays'], 2)
+        self.assertEqual(result['snapshot_files'], 25)
+        self.assertFalse(result['actual_git_object_store_checked'])
+        self.assertFalse(result['source_code_executed'])
+        self.assertFalse(result['scientific_acceptance'])
+        self.assertFalse(result['Lean_theorem_added'])
+        self.assertFalse(result['physical_admission'])
+        self.assertFalse(result['GR_closed'])
+
+    def test_same_size_source_mutation_is_rejected(self) -> None:
+        path = self.packet / 'upstream/02_REGISTRY/research/A4D_CLOSED_HISTORY_DIRECT_PROOF_2026_10_28.md'
+        data = path.read_bytes()
+        path.write_bytes(bytes([data[0] ^ 1]) + data[1:])
+        with self.assertRaisesRegex(ValueError, 'Snapshot digest mismatch'):
+            closed_history_verifier.verify(self.packet)
+
+    def test_unmanifested_file_and_symlink_are_rejected(self) -> None:
+        extra = self.packet / 'unlisted.txt'
+        extra.write_text('extra', encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, 'Snapshot file set mismatch'):
+            closed_history_verifier.verify(self.packet)
+        extra.unlink()
+        target = self.packet / 'README.md'
+        external = Path(self.tmp.name) / 'external-readme'
+        external.write_bytes(target.read_bytes())
+        target.unlink()
+        target.symlink_to(external)
+        with self.assertRaisesRegex(ValueError, 'Symlink in source packet'):
+            closed_history_verifier.verify(self.packet)
+        self.assertFalse((self.repo / '.git').exists())
 
 
 if __name__ == '__main__':
