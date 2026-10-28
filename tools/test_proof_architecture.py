@@ -3559,6 +3559,71 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("physical AF actuation", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
 
+    def test_latest_canonical_tower_reports_are_pinned_to_the_clean_source_snapshot(self) -> None:
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports"
+        )
+        cold = json.loads(
+            (report_dir / "proof_architecture_cold_start_summary_2026-10-28_cyclic_tower.json")
+            .read_text(encoding="utf-8")
+        )
+        comparison = json.loads(
+            (report_dir / "proof_architecture_search_process_comparison_2026-10-28_cyclic_tower.json")
+            .read_text(encoding="utf-8")
+        )
+        snapshot = "17c9ca1e87c32ecdda209cf5ff515de6ca735792"
+        for report in (cold, comparison):
+            self.assertEqual(report["snapshot_commit"], snapshot)
+            self.assertFalse(report["worktree_dirty"])
+            for path, digest in report["authority_source_digests"].items():
+                pinned_source = subprocess.check_output(["git", "show", f"{snapshot}:{path}"])
+                self.assertEqual(hashlib.sha256(pinned_source).hexdigest(), digest)
+
+        for path, key in (
+            ("tools/proof_architecture_cold_start.py", "runner_sha256"),
+            ("tools/proof_architecture.py", "search_engine_sha256"),
+            ("tools/test_proof_architecture.py", "test_sha256"),
+            ("tools/compact_proof_architecture_cold_start.py", "compactor_sha256"),
+        ):
+            pinned_source = subprocess.check_output(["git", "show", f"{snapshot}:{path}"])
+            self.assertEqual(hashlib.sha256(pinned_source).hexdigest(), cold["replay"][key])
+        comparison_runner = subprocess.check_output(
+            ["git", "show", f"{snapshot}:tools/proof_architecture_process_comparison.py"]
+        )
+        self.assertEqual(
+            hashlib.sha256(comparison_runner).hexdigest(), comparison["runner_sha256"]
+        )
+
+        self.assertEqual(cold["search_cases_found_all_sources"], 27)
+        self.assertEqual(cold["search_cases_total"], 27)
+        self.assertEqual(cold["benchmark_cases_total"], 28)
+        self.assertEqual(cold["required_source_ref_count"], 175)
+        self.assertTrue(cold["semantic_scope_review_is_manual"])
+        tower_case = next(
+            row for row in cold["cases"]
+            if row["id"] == "canonical-af-tower-source-transport"
+        )
+        self.assertTrue(tower_case["all_required_sources_found"])
+        owner = tower_case["required_sources"][
+            "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md"
+        ]
+        self.assertEqual(owner["candidate_rank"], 1)
+        self.assertEqual(owner["expected_commit"], "48500384e9a25b25a6a0f54911f5af50c2bc1625")
+        self.assertEqual(owner["expected_blob"], "d8a4c467c225587e88525b2d42dcb785e381b38d")
+        self.assertEqual(owner["citation_only_refs"][0]["pin_status"], "pinned_snapshot")
+
+        metrics = comparison["metrics"]
+        self.assertEqual(metrics["query_count"], 27)
+        self.assertEqual(metrics["query_count_with_explicit_source_scope"], 10)
+        self.assertEqual(metrics["legacy_scoped_queries_with_expected_source"], 0)
+        self.assertEqual(metrics["current_scoped_queries_with_expected_source"], 10)
+        self.assertEqual(metrics["current_scoped_queries_with_expected_source_assembly_owner_link"], 1)
+        self.assertEqual(metrics["current_expected_source_references_with_formal_support_locator"], 7)
+        self.assertEqual(metrics["current_expected_source_references_without_assembly_or_formal_support"], 6)
+        self.assertTrue(metrics["semantic_review_required_for_all_queries"])
+
     def test_julia_cold_start_tracks_nonzero_chart_composition_boundary(self) -> None:
         case = next(
             item for item in cold_start.CASES

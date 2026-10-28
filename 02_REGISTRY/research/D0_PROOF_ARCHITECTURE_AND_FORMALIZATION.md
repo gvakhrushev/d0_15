@@ -13523,3 +13523,27 @@ The [cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/
 has SHA-256 `99b2ceb7f8a64491ff2c29f73afc985452471856f4842dd150d04374f4d00937`.
 The [search comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_cyclic_af.json)
 has SHA-256 `d6063174b706f778392cb5797acfafe57b7c0c627331345c94c9aaa070c54bfe`.
+
+## Clean cold-start integration for the canonical AF tower — 28 October 2026
+
+The `canonical-af-tower-source-transport` case was run from clean snapshot
+`17c9ca1e87c32ecdda209cf5ff515de6ca735792`. Cold-start finds all required
+sources in 27/27 cases and completes all 28 benchmark cases, retaining 175
+source-reference receipts. The latest #334 source memo ranks first for its
+scoped query and is pinned to owner commit
+`48500384e9a25b25a6a0f54911f5af50c2bc1625`, blob
+`d8a4c467c225587e88525b2d42dcb785e381b38d`; this architecture document ranks
+third.
+
+The paired comparison contains 27 queries, 10 with explicit source scope.
+Current search finds the expected sources in all 10 scoped queries; the legacy
+serialized answers find none. Only one expected-source reference has an exact
+assembly-owner link; seven carry formal-support metadata locators, while six
+have neither. Semantic review remains manual. This records discoverability and
+source pins only; it does not accept the theorem's physical application or
+prove AF actuation. `GR_closed=false` remains unchanged.
+
+The [cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-28_cyclic_tower.json)
+has SHA-256 `cfb1a63e8b7b995cc6bc6fb6f5e5aa02b9908ec3a4aa1ed3e84ed6c5c2ac0626`.
+The [search comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_cyclic_tower.json)
+has SHA-256 `fab12db976a62737bb13dc53571dfb43677ae298d45db3dec943ce2fe674c96a`.
