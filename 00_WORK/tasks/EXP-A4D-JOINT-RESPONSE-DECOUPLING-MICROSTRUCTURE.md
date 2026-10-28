@@ -16792,3 +16792,57 @@ Removing the exact7cw insertion recovers all2723831 incoming primary bytes;
 the entire1085034-byte incoming brief remains a prefix. Both owned paths
 are insertion-only. No independent scientific acceptance, new CI or unchanged
 expensive mathematical replay is claimed.
+
+
+### 28 October - supply the original return compiler from its own port history
+
+SAME #334 / native-programme-v1; native realization / final composition.
+Input8ff5da9fbdc6d2fcda345e8ffdb5437a3005f573. Owned paths remain this
+brief and the existing primary research memo. Consume Book03 native
+stationarity directly as permitted by central MEMO197--204; do not add
+price-Hamiltonian equality as a new requirement of the forward GR route.
+
+Parent application: the existing alternating P/Q harmonic Book-J
+compiler requires a maximally mixed DATA input and U-inverse access.
+The ORIGINAL full128 C28--C36 give tau_port1=(q_A/16)I at the
+endogenous stationary DATA marginal, and the literal full2048
+operator is a Hermitian involution. Compose these on the SAME source,
+retaining all fine preparation records, paid fresh query work and
+subsequent coherent echo work/coarse flags. Do not silently dephase
+the fresh128 echo labels or use first-success selection as an exact
+replacement for a specified stationary tick.
+
+Result: primary7cx861--870. Joint unconditioned port/echo probabilities
+give original J and its full quotient derivative including Dq_A;
+rho_A plus q_A separately reconstruct absolute A and the complete
+noncommuting feedback source/Hessian. Existing marginal contraction
+and source response give explicit finite-age trace-input and C1
+bounds relative to the actual GR gain. No finite-field/noise
+convergence is inferred from value convergence alone.
+
+Smallest decisive check: the literal original CAR/Julia/Walsh/Golden
+all128 instrument, full2048 operator completion, all-column alternating
+P/Q chains, actual odd-port output and its derivative, joint moments
+and missing-normalizer controls. No new root/rank census, new detector,
+changed original source or broad formalization replay. Whole enlarged
+apparatus price, selected heat/cut, all42 variation/metric transport
+and compatible physical refinement remain their actual obligations.
+No task retirement, Ready, assembly acceptance or GR promotion.
+
+Changed check executed on the original full128 operator: self-contained
+code and complete observed JSON are embedded in7cx. The native joint
+source agrees with the direct return source, while omitting Dq fails.
+Two independent mathematical reviews checked the parent substitution
+and corrected map types/same-initial scope. These are not new physical
+admission, an all42 solution, or acceptance.
+
+Final bounded structural checks pass: validate_repo (warnings=0),
+validate_work, validate_agent_protocol, gr_assembly check and
+git diff --check. Assembly template consumed; scientific_promotion=false.
+The embedded executed code/JSON and original owner hashes match exactly.
+
+Incoming22e72999 and dd7f713c were consumed before publication. Their
+full all-unitary homogeneous-clock thermal remainder can join870
+only on a common actual carrier/lift/gain. The new phase-descent test
+remains specific to the alternative phase route; direct native Book03
+stationarity requires no additional phase-Hamiltonian identification.
