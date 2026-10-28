@@ -1,0 +1,117 @@
+{
+  "schema": "d0-c0-reconciliation-pilot-view/1",
+  "snapshot": "3ac4329d97702f343ee0cc280f6555e966f3f189",
+  "scope": {
+    "pilot_only": true,
+    "all_other_c0_candidates": "not_enumerated_unresolved",
+    "c0_freeze_assessment": "not_evaluated",
+    "c0_acceptance_assessment": "not_evaluated",
+    "this_view_does_not_freeze_or_accept": true,
+    "coverage_reported": false,
+    "scientific_status_changed": false
+  },
+  "authority": {
+    "formal_support": {
+      "path": "02_REGISTRY/formal_support.csv",
+      "blob": "d7de95fc265bd3a77688b996748d8560cb82ed67"
+    },
+    "consumer_graph": {
+      "path": "02_REGISTRY/gr_assembly/sources/native_gravity_dependencies.json",
+      "blob": "fdb180cb19c8beb3c9ba96a9b439a1e483d0f68a"
+    }
+  },
+  "pilot": {
+    "state": "unresolved",
+    "independent_review": "not_authenticated",
+    "semantic_correspondence": "not_automatically_checked",
+    "consumer_binding_semantics": "unresolved",
+    "provenance": "reported_metadata_links_not_recomputed_or_replayed",
+    "source": {
+      "commit": "75527846bf3603a1c51acf445f8354e3254341be",
+      "path": "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md",
+      "blob": "c216f19daebc9a6b2a9e732d277350dd2d69f88c",
+      "snapshot_blob": "c216f19daebc9a6b2a9e732d277350dd2d69f88c",
+      "section": "5. One-step estimates and composed fixed-torus failure",
+      "owner": "#310"
+    },
+    "source_unit_key": "source:75527846bf3603a1c51acf445f8354e3254341be:02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#5. One-step estimates and composed fixed-torus failure/fixed-sine-weak-test",
+    "unit_scope": "Normalized four-role counting pairing of the doubled adjacent-map unit one-form error with the fixed sampled sine tends to 2/pi.",
+    "consumer": {
+      "id": "composed_frozen_readout",
+      "source_ref": "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#5-one-step-estimates-and-composed-fixed-torus-failure",
+      "scope": "Actual composition of adjacent frozen cochain maps with scale-corrected component readout on a fixed unit torus, including L to 2L.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION"
+    }
+  },
+  "checks": {
+    "primary_section": {
+      "state": "unresolved",
+      "reason": "primary blob differs from pinned pilot: a37ab1d8dfaf12fb741bdc6efbb513cde37ad3d7"
+    },
+    "source_pin_and_owner": {
+      "state": "verified_raw_link"
+    },
+    "source_primary_link": {
+      "state": "blocked_by_dependency",
+      "dependencies": [
+        "primary_section"
+      ]
+    },
+    "primary_review_text": {
+      "state": "blocked_by_dependency",
+      "dependencies": [
+        "primary_section"
+      ]
+    },
+    "formal_support": {
+      "state": "verified_raw_link"
+    },
+    "consumer_and_source_owner": {
+      "state": "verified_raw_link"
+    },
+    "consumer_primary_link": {
+      "state": "blocked_by_dependency",
+      "dependencies": [
+        "primary_section"
+      ]
+    },
+    "compiled_declaration_inventory": {
+      "state": "unresolved",
+      "reason": "inventory snapshot no longer matches tracked Lean inputs or symlink targets"
+    },
+    "inventory_primary_link": {
+      "state": "blocked_by_dependency",
+      "dependencies": [
+        "primary_section",
+        "compiled_declaration_inventory"
+      ]
+    }
+  },
+  "issues": [
+    {
+      "check": "primary_section",
+      "reason": "primary blob differs from pinned pilot: a37ab1d8dfaf12fb741bdc6efbb513cde37ad3d7"
+    },
+    {
+      "check": "source_primary_link",
+      "reason": "blocked by unresolved checks: primary_section"
+    },
+    {
+      "check": "primary_review_text",
+      "reason": "blocked by unresolved checks: primary_section"
+    },
+    {
+      "check": "consumer_primary_link",
+      "reason": "blocked by unresolved checks: primary_section"
+    },
+    {
+      "check": "compiled_declaration_inventory",
+      "reason": "inventory snapshot no longer matches tracked Lean inputs or symlink targets"
+    },
+    {
+      "check": "inventory_primary_link",
+      "reason": "blocked by unresolved checks: primary_section, compiled_declaration_inventory"
+    }
+  ],
+  "interpretation": "Consult each check state; unresolved or blocked checks are not verified. Other C0 candidates are not enumerated. If available, pinned primary text is not authenticated review. Any matching node is only a locator, and source digest/toolchain are reported, not recomputed or replayed; complete build closure is unverified. Type shape does not establish semantic equivalence."
+}

@@ -12856,11 +12856,11 @@ has SHA-256
 `66b07d2ce23ccef1e7564281c93350e430a575a938545d84a8fbac2e35f3e806`.
 The [current combined declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/integrated_book03_branch_weaktest_cut_row_declarations_2026-10-28.json)
 was extracted via public `D0.All` from clean snapshot
-`0db25903769d5ee91c2f317df90a59ac3c0f93c2`, at the same Lean source digest.
+`3ac4329d97702f343ee0cc280f6555e966f3f189`, at the same Lean source digest.
 It contains 233 entries over the five modules (including generated
 declarations); the axiom union is `Classical.choice`, `Quot.sound`, and
 `propext`, with no `sorryAx` or custom axiom. Its SHA-256 is
-`bafd421469123af6728ba4656cb6178b1a28640fa6684577d242f3b011168e9d`.
+`e13a3d38c2fda8461cc9c35e7c601a9727686a1602cb06bfcf7f7e81ffc11eb2`.
 
 On this integrated tree, `generate_lean_views.py --check` passes with
 `stale=0`, `validate_repo.py` reports 889 claims, 31 assumptions, 58 aliases,
@@ -12893,10 +12893,38 @@ the absent exact assembly-owner link explicit.
 
 After rebasing the accumulated integration onto `977c9592`, the five-module
 compiled declaration inventory was regenerated from clean snapshot
-`0db25903769d5ee91c2f317df90a59ac3c0f93c2`; the source digest remains
+`3ac4329d97702f343ee0cc280f6555e966f3f189`; the source digest remains
 `e66a40d0f1b4498f68ddc6d1b3445ffe676c8bcd1c68013baff32daf18d838aa`,
 with 233 declarations and the same three standard axioms. This rebases only
-Git/documentation metadata: the latest commit changes Python receipt checks,
-not Lean sources, so the existing `D0.All` receipt remains applicable to the
-same Lean-source digest. Neither this hardening nor the declaration inventory
-adds a scientific acceptance or closes a physical premise. `GR_closed=false`.
+Git/documentation and Python tooling: the new C0 tools and fixture compatibility
+change do not alter Lean sources, so the existing `D0.All` receipt remains
+applicable to the same Lean-source digest. Neither receipt hardening nor the
+declaration inventory adds a scientific acceptance or closes a physical
+premise. `GR_closed=false`.
+
+### Replayed C0 views on historical and integrated snapshots — 28 October 2026
+
+The pinned source-to-declaration pilot reproduces its historical result at
+`61bd3f2afecc6eba38e9c4cb00737b18fbd85a42` with no issues. Its recorded
+states include `pinned_text_only_not_review_verification` and
+`reported_metadata_links_consistent_not_replayed`; it is not an independent
+semantic acceptance or build replay. The [historical output](sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_source_to_lean_pilot_historical_2026-10-28_pr402.json)
+preserves those boundaries.
+
+On the clean integrated snapshot `3ac4329d97702f343ee0cc280f6555e966f3f189`,
+the current pilot reports two root inputs as unresolved: the pinned primary
+artifact blob has changed, and its recorded compiled inventory no longer
+matches current Lean inputs. Source-owner, formal-support and consumer raw
+links still verify; checks dependent on the changed primary/inventory are
+blocked. The [current output](sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_source_to_lean_pilot_current_2026-10-28_pr402.json)
+keeps the stale pins visible instead of silently re-pinning them. A new
+primary/inventory binding needs its own reviewed checkpoint.
+
+The integrated [book byte view](sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_book_byte_partition_current_2026-10-28_pr402.json)
+reconstructs all ten expected tracked books at that snapshot: 1,329,742 bytes
+in 721 contiguous spans with matching per-span SHA-256. Every span remains
+`unresolved` and `not_assessed`. This is exact byte accounting with lexical
+heading/fence candidates; it does not classify mathematical units, freeze
+C0, or establish coverage. The C0 fixture suites pass 67 tests under the
+available Python 3.9.6 runtime; their file-writing helper preserves LF bytes
+without requiring Python 3.10's `Path.write_text(newline=...)` option.

@@ -836,7 +836,17 @@ and receipt suites pass 126. The retrieval regression covers both the Lean
 moving-cut derivative adapter and its geometric rational control while
 retaining their metadata-only status and the missing assembly-owner link. A
 freshly extracted five-module inventory on the clean rebased snapshot
-`0db25903769d5ee91c2f317df90a59ac3c0f93c2` records 233 declarations at the
+`3ac4329d97702f343ee0cc280f6555e966f3f189` records 233 declarations at the
 unchanged Lean source digest; see the primary report for its SHA-256 and the
 remaining receipt boundary. These verification changes do not add physical
 admission or change `GR_closed=false`.
+
+The new C0 pilot reproduces its no-issue historical metadata result on the
+pinned snapshot `61bd3f2a`, but the current-snapshot run correctly leaves the
+changed primary-file blob and stale compiled-inventory binding unresolved.
+The byte partition view reconstructs the ten tracked books (1,329,742 bytes)
+in 721 spans; all remain unclassified. The exact historical/current pilot
+outputs and current book view are preserved beside the compiled declaration
+inventory. All 67 C0 reconciliation and byte-partition tests pass locally
+under Python 3.9.6. This is navigation and source-byte accounting, not C0
+acceptance or a coverage percentage.
