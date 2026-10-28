@@ -5340,6 +5340,33 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("No physical flag/actuator admission", result["scope"])
         self.assertIn("GR closure", result["scope"])
 
+        inventory_path = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_proof_architecture_formalization_2026-10-24/reports/"
+            "ready_reflection_gain_declarations_2026-10-28.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            inventory["snapshot_commit"], "915e283ab1b505ca673dabb79fb9adae3c63e9a7"
+        )
+        self.assertFalse(inventory["worktree_dirty"])
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        self.assertEqual(
+            inventory["lean_source_digest"],
+            "d19513df16bc00ff285081b8470fb16df2eaed64f10d54c8c53a4a8ea77f5d40",
+        )
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+        normalized = declarations["D0.Research.readinessNormalizedSource_eq"]
+        self.assertTrue(normalized["exists"])
+        self.assertEqual(
+            normalized["module"], "D0.Research.CalibratedQuerySourceFloor"
+        )
+        for hypothesis in ("0 < γ", "γ ≤ 1", "0 < c", "0 < gain"):
+            self.assertIn(hypothesis, normalized["elaborated_type"])
+        self.assertEqual(
+            normalized["axioms"], ["Classical.choice", "Quot.sound", "propext"]
+        )
+
         data = proof.load_dataset(proof.ROOT)
         hits = proof.full_text_search(
             proof.ROOT, "Emit the readiness reflection", limit=100

@@ -13344,3 +13344,10 @@ binds Lean source SHA-256
 recorded dependency/toolchain snapshot. The repository build still reports
 existing linter warnings in unrelated modules; the changed module passed its
 narrow target without warnings.
+
+The [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/ready_reflection_gain_declarations_2026-10-28.json)
+was extracted from clean snapshot `915e283ab1b505ca673dabb79fb9adae3c63e9a7`,
+with public import root `D0.All` and the same Lean source digest. It resolves
+the centre/gain definitions and all four theorems to
+`D0.Research.CalibratedQuerySourceFloor`; the normalized-source declaration
+retains exactly the stated positive scalar hypotheses.
