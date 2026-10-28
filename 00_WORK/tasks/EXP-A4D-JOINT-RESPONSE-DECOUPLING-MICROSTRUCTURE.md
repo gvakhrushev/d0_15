@@ -17232,3 +17232,107 @@ actual density/Jacobian, amplitude bounds and local no-caustic conditions
 remain; no arbitrary measure reset or new processor is used. This is a
 substitution into the generic DI_tau=0 recovery proof, not a new curvature
 calculation. Its109-check receipt is consumed, not represented as rerun.
+
+### Original history balance with fixed first and last blocks — 28 October
+
+SAME #334 / constitutive/native-programme-v1; native realization / final
+composition, input72619235. The previous goal turn made durable progress:
+7dc priced actual retained continuation without dropping the baseline.
+The next positive application consumes7db's original noncommuting source
+balance and7da's exact chronological coframe map. Its missing premise is
+that the comparison can leave the first and last complete programme
+blocks fixed. A common scale of all old eight groups did not do that.
+
+Retain their original L4/full4096 CAR operator, rational rotations,
+unchanged z and beta, full128 completion, copied records and true clock.
+Use the first old rotation as a fixed suffix as well as a fixed prefix;
+only the seven intervening original groups share the varying scale.
+Prove a zero of that INTERNAL source with both complete boundary blocks
+fixed, including all modes and the full heat remainder. No Einstein
+equation is inserted into the word or price. This is still one source
+equation, not a substitute for all40+matter stationarity or admission.
+
+Write paths remain this brief and the primary source memo. Smallest
+decisive check: both endpoints of this ONE fixed-boundary curve with
+the actual seven-group derivative norm and an explicit rounding plus
+resolvent budget. Reuse the existing full completion and clock theorem;
+do not rerun a root/rank census, large heat matrix or Lean programme.
+
+Result: primary7de919--926 proves an exact internal source zero on this
+ONE nine-group history with BOTH complete boundary groups fixed. The
+actual same4096-mode feedback source is >1/400000 per passive copy at
+nu=3/10 and <-1/500000000 atnu=3/5, after all arithmetic and resolvent
+errors. The complete homogeneous clock source is <2^-240, so continuity
+forces a full H+J zero strictly between those endpoints. The chronology
+has5796 original full128 rounds and at least46368 paid copied stages.
+All oldRIGHT and fine records are retained; no endpoint state is reset.
+
+The changed input is the identical fixed first/last group and the true
+seven-group internal derivative, whose norm is <=14. Both calculations
+use explicit floating contractions with rational error bounds, full
+traces and immutable constructor/clock pins. An older unequal-boundary
+probe did not supply a sign change; it is not evidence for this result.
+The final computation bypasses the system BLAS path that emitted
+floating warnings in that exploratory probe. No scientific tolerance or
+expected receipt was weakened. Final code and both observed JSONs are
+embedded with SHA256 and their IEEE arithmetic assumption is explicit.
+
+This substitutes fixed boundary operations in the original full-source
+balance application. It remains ONE sum of internal scale equations,
+not their separate vanishing or all40+matter stationarity. Physical
+membership of the smooth comparison in X_N and a compatible GR/refinement
+family remain unproved. The direct-click Einstein-dust result and the
+different-duration price theorem7dc are preserved. No new lifecycle,
+claim, acceptance, task or GR_closed promotion.
+
+Final local validation on72619235: both changed endpoint calculations
+pass in Python3.9.6/NumPy2.0.2 with their pinned inputs and explicit
+arithmetic budgets. Work, agent-protocol, assembly and repository guards
+pass; warnings0 and scientific_promotion=false. The existing result
+template was consumed without adding acceptance/lifecycle rows. The
+embedded script uses a four-backtick outer fence to preserve its literal
+owner-extraction regex; extraction reproduces the executed bytes exactly.
+Code and both JSON SHA256, AST/JSON, equation references and diff checks
+pass. Removing only7de recovers all2907445 incoming primary bytes; the
+entire1110290-byte incoming brief remains an exact prefix. Only the two
+owned paths change, by insertion. No remote CI or independent physical
+acceptance is claimed.
+
+Incoming de02000e is preserved and consumed: the nonlinear direct-click
+reverse theorem now covers every regular local positive irrotational
+Einstein-dust solution on its declared branch, and all local Ricci-flat
+vacua in the constant-material sector. Its actual mass-coordinate map
+retains the full 42-component covector and removes the LTB restriction.
+The full proof was read and its 109-check symbolic control replayed in
+Python3.9.6/SymPy1.14.0; all scientific output matches the incoming
+Python3.13.5 receipt, with only the environment field differing. That
+theorem does not equate its direct-click price with this original
+full128 history or settle physical admission/exact finite stationarity.
+The two positive results are composed only at those proved boundaries.
+
+Final integration after the incoming update: de02000e plus this exact
+insertion passes work, agent-protocol, assembly and repository guards
+again; warnings0, scientific_promotion=false. The pinned calculation
+inputs and both executed endpoint receipts are unchanged. Exact byte
+preservation, embedded-code extraction and diff whitespace were checked
+on the integrated tree. This is local verification, not remote CI or
+independent scientific acceptance.
+
+Incoming3219c158 then added the disjoint retained-matrix-past proof in
+7dd910--918. Preserve every incoming byte and rename this insertion to
+7de919--926; executed checker and endpoint receipts stay unchanged.
+That positive theorem supplies nonlinear future-source recovery through
+the complete sealed past at its actual gain. It removes a fresh-history
+premise and needs admitted new-block lifts, not surjectivity onto X_N.
+Its changing-past row remains explicit. This result instead varies the
+original interior groups at fixed endpoints, so neither source may be
+substituted for the other's independently free rows. Physical stationary
+realization remains open after composing both positive applications.
+
+Final3219c158 integration: the incoming retained-past checker also
+replays successfully, with all22 conditions and the identical JSON.
+Work, agent-protocol, assembly and repository guards pass on this final
+tree; warnings0 and scientific_promotion=false. Removing only7de
+recovers all2936135 incoming primary bytes; the entire1115078-byte
+incoming brief is an exact prefix. The final two endpoint receipts and
+their immutable calculation pins did not change during integration.
