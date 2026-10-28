@@ -1,7 +1,7 @@
 # D0 chat results: verified source intake and application boundaries
 
 Source owner: existing research [PR #334](https://github.com/gvakhrushev/d0_15/pull/334),
-latest source checkpoint integrated here [`22e729996b70a699710a2d1120a0caa7a08decf8`](https://github.com/gvakhrushev/d0_15/tree/22e729996b70a699710a2d1120a0caa7a08decf8).
+latest source checkpoint integrated here [`9f23ec82c8e4e044121521658afec4a5e9b8c2f7`](https://github.com/gvakhrushev/d0_15/tree/9f23ec82c8e4e044121521658afec4a5e9b8c2f7).
 This is an intake into the existing proof-architecture execution #402, not a
 new scientific owner, claim status, physical selector, or merge of #334.
 The full archive was published in upstream commit
@@ -11,7 +11,9 @@ in `eebcb5e467742df3e9cf7fa9702042d7294aa742`. Subsequent checkpoints
 `c80d3dd2a917bbb2db2e2b1ab61d5216877c05e6`, and the current reviewed
 `172876cdf38bfce6f87fdd4a059d524b60c10eb9`,
 `5fe5203da2439d325dc9ef70f52c1111822fc22b`, and
-`22e729996b70a699710a2d1120a0caa7a08decf8` are separately pinned below.
+`22e729996b70a699710a2d1120a0caa7a08decf8` are separately pinned below;
+the retained-history source at `716387e3` and its later direct-geometry
+application at `9f23ec82` are pinned in successive delta packets.
 
 The nine packages below are preserved as 74 individually readable UTF-8 files
 (650,121 bytes) under [the source intake](sources/d0_chat_intake_2026-10-28/README.md),
@@ -84,13 +86,14 @@ independently admissible variation.
 
 ## Lean formalization slice
 
-Six supporting results from this integration are represented by
+Thirteen supporting results from this integration are represented by
 Lean modules and registered in `formal_support.csv`. They are imported by
 `D0.All`; none is a physical-closure claim.
 
 | Module | Machine-checked statement | Remaining boundary |
 |---|---|---|
 | [`D0.Algebra.MovingProjectorTransport`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean) | In a possibly noncommutative ring, for idempotent `P` with tangent equation `P dP + dP P = dP`, `K=[dP,P]` satisfies `[K,P]=dP`, and the differentiated cut minus common transport is `(1-P)(dU-[K,U])P`. A separate `StarRing` lemma proves `K` anti-self-adjoint when `P` and `dP` are self-adjoint. | This algebraic API takes the tangent equation as an input; the calculus module below derives it from a locally idempotent differentiable curve. |
+| [`D0.Algebra.DirectFeedbackSource`](../../03_FORMALIZATION/D0/Algebra/DirectFeedbackSource.lean) | For the one-step original CAR return polynomial `F=4p²(A−p²A²)`, the resolvent-trace derivative reduces to `4p² Tr(R(1−2p²A)H)` without assuming `[A,H]=0` or inverting `A`. | This is a finite one-step algebraic reduction from the pinned 7cx source. It is not the complete retained-history theorem or a map from an admitted D0 variation. |
 | [`D0.Algebra.MovingProjectorCalculus`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorCalculus.lean) | On the same real-parameter curve, local `P²=P` yields the tangent equation, the actual product-rule derivatives of `C=(1-P)UP` and `F=C†C`, and the relative transport identity. For complex matrices, real fixed `z` and a determinant in the slit plane at the evaluation point, `complex_matrix_feedback_real_logdet_of_slit_hasDerivAt` proves the derivative of `−log det(1−zF)` as `2z Re Tr(R C† (1−P)(dU−[K,U])P)`, with the actual inverse `R`; determinant reality and local positivity follow on that curve. The displayed finite example is a rank-one orthogonal-projector curve and fixed unitary reflection with nonzero `dF` and weighted return trace. | Differentiability, local projector/self-adjoint conditions, and the slit-plane condition at the point are explicit inputs to this module. The next module derives the latter from the isometric cut assumptions; neither constructs an admitted native field curve, varies the Gram or β/z, or proves the thermal and complete Info/work/controller source. |
 | [`D0.Algebra.MovingProjectorPositiveChart`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorPositiveChart.lean) | The identity `1−C†C=(1−P)†(1−P)+(PUP)†(PUP)` proves `1−zC†C` positive definite for an orthogonal projector, `U†U=1` and `0≤z<1`; its determinant belongs to the slit plane. The module applies the preceding same-curve derivative without separately assuming that chart. | The isometry and projector conditions are mathematical inputs, not an admission or physical selection law. This does not derive the thermal term, moving Gram, full price or GR dynamics. |
 | [`D0.Analysis.MatrixDeterminantDerivative`](../../03_FORMALIZATION/D0/Analysis/MatrixDeterminantDerivative.lean) | For an arbitrary differentiable real-parameter complex-matrix curve, the determinant derivative is the sum of determinants with one replaced row. At an invertible matrix it yields Jacobi's inverse-trace formula; on the complex slit plane it yields the principal log-determinant derivative. | The theorem concerns finite matrices in the stated Frobenius norm. Invertibility or the slit-plane condition is an explicit premise where used. |
@@ -98,16 +101,21 @@ Lean modules and registered in `formal_support.csv`. They are imported by
 | [`D0.Analysis.MatrixThermalTrace`](../../03_FORMALIZATION/D0/Analysis/MatrixThermalTrace.lean) | On a nonempty finite complex carrier with standard fixed inner product, a Hermitian `Δ` has strictly positive `Z=Re Tr exp(−βΔ)`. For fixed real `β≠0`, the same differentiable curve gives `d(β⁻¹ log Z)=−Re Tr(E(dΔ−[K,Δ]))/Z`, with `E=exp(−βΔ)` and arbitrary `K`; cyclicity cancels the transport commutator. | Hermiticity at the evaluation point and an actual differentiable curve are premises. The density bridge below supplies the reality identification under local Hermiticity; transport to a general fixed Gram remains open. This theorem does not establish an admitted native field/clock curve, a variable β, the mixed BKM derivative, or the complete physical price. |
 | [`D0.Analysis.MatrixMovingHeatFeedback`](../../03_FORMALIZATION/D0/Analysis/MatrixMovingHeatFeedback.lean) | Adds the heat and feedback derivatives for one common differentiable triple `P,U,Δ`, point `t` and `K=[dP,P]`, deriving the real first source of their stated fixed-parameter scalar. | Standard fixed inner product, nonempty finite carrier, local orthogonal `P`, pointwise isometric `U` and Hermitian `Δ`, and fixed `β≠0`, `0≤z<1` are retained. This is not an admitted native execution or the complete Info/work/controller price. |
 | [`D0.Analysis.MatrixThermalDensityBridge`](../../03_FORMALIZATION/D0/Analysis/MatrixThermalDensityBridge.lean) | For the same curves and locally Hermitian `Δ`, proves `Tr ρ=1` for `ρ=exp(−βΔ)/Tr exp(−βΔ)` and identifies the real thermal contribution with the complex `−Tr(ρ(dΔ−[K,Δ]))`. | The standard fixed inner product and all preceding hypotheses remain; local Hermiticity of `Δ` supplies self-adjoint `dΔ`. General Gram transport, physical admission and the full price remain open. |
+| [`D0.Analysis.MovingProjectorBookPrice`](../../03_FORMALIZATION/D0/Analysis/MovingProjectorBookPrice.lean) | Composes the same-curve thermal and positive-chart feedback derivatives into the full finite Book03 heat-plus-`−log det` derivative. With `K=[dP,P]`, the source is `−Re Tr(ρ(dΔ−[K,Δ]))+2z Re Tr(R C†(1−P)(dU−[K,U])P)`; the active cut is not frozen. | Fixed `β,z`, standard finite-matrix inner product, locally idempotent/self-adjoint projector, Hermitian thermal matrix and a slit-plane feedback determinant are explicit. This is not the all42 native source map, a variable-Gram result, or physical admission/selection. |
 | [`D0.Geometry.ArchiveGradedRefinementComposedReadout`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean) | Iterates the owned adjacent pullbacks literally, proves their cochain identity for every number of steps and an exact singleton prefix/tail formula. At doubling, the stated fixed-component normalized L1 and L2-squared errors are both exactly `1`. | The probe is the literal one-form embedding but its fixed-component sampler is not selected as a physical observable. The result shows chain-map preservation alone does not imply convergence of that readout; it proves no universal refinement obstruction. |
 | [`D0.Geometry.RefoliationWitnessCoefficientExtraction`](../../03_FORMALIZATION/D0/Geometry/RefoliationWitnessCoefficientExtraction.lean) | From the three exact coefficient equations displayed for the shear, trace, and two-scalar witnesses, proves `a*b=1`, `lambda=1/2`, and `C*D=I₂`. | The bracket/witness equalities are premises. It does not derive the continuum Poisson bracket, strong hypersurface-deformation algebra, canonical D0 variables, lapse generators, or physical admission. |
 | [`D0.Geometry.MovingCutQueryCancellation`](../../03_FORMALIZATION/D0/Geometry/MovingCutQueryCancellation.lean) | Over `ℚ`, defines a rank-one projector and a 2×2 orthogonal reflection, proves the complete cut derivative row, two-sided resolvent inverse, and generic cancellation of the QUERY-only and cut-only source rows under joint conjugation; the exact rational control is `+16/35`, `−16/35`, `0`. | This is the finite algebraic control in #334 §7cu. It does not prove either tangent is an admitted D0 variation, transport the thermal operator, construct the original 42-field map, or establish physical source selection. |
 
-The moving-cut modules formalize algebraic transport and the conditional
-feedback derivative of the published source. The determinant derivative and
-log-determinant and trace-exponential identities are general finite-matrix
-results. The fixed-β thermal log-partition derivative is formalized on its
-finite carrier; its native application, mixed derivative and complete Cost-Info
-source remain open. The
+The moving-cut modules now give two same-curve compositions of the thermal and
+feedback derivatives: one derives the positive determinant chart from an
+isometric cut with `0≤z<1`, while the other takes the slit-plane condition as
+an explicit premise. Both retain the fixed-parameter finite Book03 source and
+the active cut motion. The one-step CAR return reduction is a separate
+supporting identity; it does not formalize the new complete noncommuting
+retained-history calculation from #334. The determinant, log-determinant and
+trace-exponential identities remain reusable finite-matrix results. Their
+native application, mixed derivative and complete physical Cost-Info source
+remain open. The
 graded-refinement module extends the existing open proof target. The
 refoliation module extracts algebraic consequences from the pinned witness
 equations, while the QUERY module proves a separate exact finite cancellation
@@ -186,12 +194,13 @@ admission, a full42 replay or a Lean proof.
 
 ## Required parent substitution
 
-The next physical application is to define the actual common initial state and
-task, native field family and admitted tangent map into `U_N,P_N,Delta_N`,
-including varying cut, clock, cost, β/z and every independently sourced term.
-Evaluate the complete source above, preserve the full covector, gain and norm,
-and prove a common map and either equality to the already owned geometric/matter
-source or a controlled remainder through the relevant refinement. Only then
+The next physical application is to bind the supplied original geometric
+operator/source map to the actual common initial state and task, native field
+family and admitted tangent into `U_N,P_N,Delta_N`, including varying cut,
+clock, cost, β/z and every independently sourced term. Evaluate the complete
+source above, preserve the full covector, gain and norm, and prove equality to
+the already owned geometric/matter source or a controlled remainder through
+the relevant refinement. Only then
 can the existing configured nonvacuum solution and conditional exact-root
 results be applied to that same execution. No uniqueness of every microscopic
 program is assumed; no extra decoder, arbitrary counterterm or unproved
@@ -401,3 +410,124 @@ warnings (30 each for divide-by-zero, overflow, and invalid values). These
 observations are recorded, not suppressed. This source delta adds no Lean
 theorem and does not prove the admitted history-to-source map, complete price
 and gain, all42 refinement, physical admission or GR closure. `GR_closed=false`.
+
+### Complete noncommuting retained-history source in #334 at checkpoint 716387e3
+
+The later source owner head is `716387e3cb4c9ff08c44b5ac532db882ee1e394a`.
+The [retained-history delta packet](sources/d0_334_retained_history_full_delta_2026-10-28/README.md)
+pins the three-commit range from `46ebed17`, preserving the exact proof and
+checker, the edited task/memo patch, and ordinary/optimized output with all
+warnings. Its byte verifier passes. The checker passes 163 internal controls;
+the 102 matrix-multiplication warnings (34 each for divide-by-zero, overflow
+and invalid values) are retained in the packet, with ordinary and optimized
+output byte-identical.
+
+For the actual chronological original full128 operators, the proof keeps
+`K_n=C_n…C_1` when the one-tick Gram inputs do not commute, sets
+`F_n=I−K_n†K_n` and `D_n=(1−z)I+zK_n†K_n`, and differentiates the endpoint
+price using the complete left/right history weights. It does not replace the
+full price derivative by a sum of isolated one-tick sources. The two-tick
+control uses all 16,384 histories and confirms noncommutation, endpoint-defect
+and source identities, and an independent finite difference. The proof also
+gives a cumulative source bound and exact repeated-fixture controls.
+
+At this checkpoint the exact source result for the declared original history
+still needed its same-execution map to the owned geometric/all42 source. The
+subsequent `9f23ec82` application supplies that operator map and its 40
+geometric source formulas, as recorded in the latest section below. Gain,
+uniform norm, physical admission, compatible refinement and comparison to the
+Einstein-matter covector remain open. The sufficient small-leakage route is
+not a universal D0 premise. The multistep history theorem is not a Lean
+theorem, a full large-history heat replay or scientific acceptance;
+`GR_closed=false`.
+
+The Lean slice in this integration now also formalizes the *complete finite
+Book03 heat-plus-feedback derivative* for one differentiable moving-projector
+curve in [`D0.Analysis.MovingProjectorBookPrice`](../../03_FORMALIZATION/D0/Analysis/MovingProjectorBookPrice.lean).
+It composes the existing thermal trace and moving-cut feedback derivatives,
+uses `ρ=exp(−βΔ)/Z`, and retains the endogenous cut through
+`K=[dP,P]`. Its assumptions and residual boundary are stated in the formal
+support table above. It does not formalize the multi-tick full128 source just
+integrated from #334 or prove that either finite source is generated by an
+admitted native field variation.
+
+### Local validation at the 716387e3 source checkpoint
+
+The source-delta manifest SHA-256 is
+`e0629d69d9e82cda9d2b90871a2f52ededb430604085bc3e58ffb2aa6932f5e6`;
+its read-only verifier passes. `generate_lean_views.py --check` passes,
+`validate_repo.py` reports 889 claims, 31 assumptions, 58 aliases, 230
+formal-support rows and 953 modules in the generated Lean closure, with zero
+warnings, and `git diff --check` is clean.
+
+Both changed Lean modules pass narrow builds without warnings. The final
+`D0.All` build passes 4,764 Lake jobs under Lean 4.30.0 at source digest
+`afb5f1052f4e46b73d2ffb6753988468d53d0d5ff071b3f7e8f91915b2277d81`.
+The full build output includes existing linter warnings in other modules. The
+[compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_book_price_declarations_2026-10-28.json)
+is bound to the same Lean source digest and records the elaborated theorem
+types, source ranges and proof dependencies for the moving-projector price,
+thermal normalization and direct-feedback coefficient. Their reported axiom
+footprint is `Classical.choice`, `Quot.sound` and `propext`; no new Lean axiom
+or `sorry`/`admit` was introduced. This validates the finite formalization,
+not its physical application or the unformalized #334 multi-tick theorem.
+
+## Latest #334 application: the original history source on its own geometry
+
+The existing #334 owner advanced from the retained-history checkpoint
+`716387e3cb4c9ff08c44b5ac532db882ee1e394a` to
+`9f23ec82c8e4e044121521658afec4a5e9b8c2f7`. Its [direct geometry intake](sources/d0_334_direct_source_geometry_delta_2026-10-28/README.md),
+[manifest](sources/d0_334_direct_source_geometry_delta_2026-10-28/MANIFEST.json),
+and [read-only verifier](sources/d0_334_direct_source_geometry_delta_2026-10-28/verify_direct_source_geometry_delta.py)
+pin the four commits, five changed upstream files, exact source blobs and the
+full patch. The original #334 branch remains the scientific owner.
+
+The new composition consumes the existing history-to-geometry operator map
+and differentiates the actual noncommuting return through the same map. With
+`W_j = Herm[R_j D_ret⁻¹ K* T_j]` and `c_j=h_j/16`, its all-40-direction source
+uses `G_j=2 r_R z k c_j²(D_jW_j+W_jD_j)` and
+`DJ_n[v]=Σ_j Tr(G_j DD_j[v])`. The complete stated realization keeps its own
+thermal term, `DB[v]=−Tr(ρ_full DΔ_hist[v])+Σ_j Tr(G_j DD_j[v])`, including
+scene, clock, work, record and oldRIGHT modes. The exact left-link order and
+observer/Gram contributions remain in the field map; `r_R` is factored only
+for a genuine passive spectator.
+
+This advances the source map but does not admit it as a physical D0 execution.
+The incoming exact control also rejects replacing `W_j` by `I` as a general
+Palatini shortcut: that quadratic part has zero compact-link rows where the
+full independent-connection source has a nonzero link variation. The exact
+nonlinear return source remains available. The paid resolved-history matter
+cut remains distinct from the all-blank return, so their derivatives cannot
+be combined before identifying the actual Book cut.
+
+The owner receipt records 163 checks with checker SHA-256 matching the prior
+packet; the checker file is unchanged across this four-commit delta. The prior
+packet retains its ordinary/optimized replay and all 102 warning lines. This
+increment does not claim a new replay, Lean theorem for the multistep source,
+large full-history heat computation, or source-branch CI. Physical admission,
+the Einstein-matter covector comparison, actual gain and uniform norm,
+compatible refinement, independent equations, scientific acceptance and
+`GR_closed` remain open.
+
+### Validation at #402 source checkpoint af02b15e
+
+At this checkpoint the local `D0.All` build passed 4,765 Lake jobs with Lean 4.30.0 at
+source digest
+`2fcfc2cbcc4931b0bfd6096df42033b9b5dcf5332c602d0865804963dfb23daa`.
+The [build provenance receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_current.json)
+has SHA-256 `12e58a2630f4913ca93576a592def04338195f015a97dfdc6928ef7f3598f5f9`.
+The [latest compiled inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_price_declarations_2026-10-28.json)
+covers both fixed-parameter moving-projector compositions: 17 declarations
+across `MatrixMovingHeatFeedback` and `MovingProjectorBookPrice`, with reported
+axioms `Classical.choice`, `Quot.sound` and `propext`; its SHA-256 is
+`e93463c98b4813a2556534e1982b4006e602775c13c1f2506715eff82a0a9243`.
+The full build reports existing linter warnings elsewhere in the closure;
+both newly added local Lean modules had already passed their narrow builds.
+
+`generate_lean_views.py --check` passes. `validate_repo.py` reports 889 claims,
+31 assumptions, 58 aliases, 231 formal-support rows and 954 modules in the
+generated Lean closure, with zero warnings. The `716387e3` and `9f23ec82`
+source packet verifiers both pass; the latter verifies the pinned owner
+receipt and exact source snapshots without rerunning its archived checker.
+`git diff --check` passes. These checks establish repository integrity and
+finite Lean compilation, not physical admission or `GR_closed`.

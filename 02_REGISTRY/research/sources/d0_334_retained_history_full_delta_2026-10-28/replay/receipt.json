@@ -1,0 +1,66 @@
+{
+  "base_source_commit": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+  "checker": {
+    "input_commit": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+    "original_constructor_blob": "d111c5bfeae3c384a4fe725f4a6d19277ea0005a",
+    "path": "upstream/02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py",
+    "sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a"
+  },
+  "checks": 163,
+  "environment": {
+    "numpy": "2.0.2",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "normal_optimized_stderr_byte_identical": true,
+  "normal_optimized_stdout_byte_identical": true,
+  "owner_pr": 334,
+  "runtime_warning_counts": {
+    "divide by zero encountered in matmul": 34,
+    "invalid value encountered in matmul": 34,
+    "overflow encountered in matmul": 34
+  },
+  "runtime_warning_lines": 102,
+  "schema": "d0-pr-334-retained-history-replay-v1",
+  "scope": "exact complete-return formula and actual original CAR128 history controls; same geometric source map remains unproved",
+  "scope_flags": {
+    "GR_closed": false,
+    "Lean_or_repository_CI_run": false,
+    "large_full_history_heat_replayed": false,
+    "new_action_or_decoder": false,
+    "original_42_field_source_transport_proved": false
+  },
+  "selected_controls": {
+    "full_tape": {
+      "defect_error": 4.427014310693494e-15,
+      "difference_from_incorrect_sum": -3.563473201091404e-09,
+      "fine_histories": 16384,
+      "finite_difference_error": 2.324787802857834e-18,
+      "noncommutation_norm": 2.9308601798714882e-08,
+      "source_matrix_error": 9.419548484654843e-16,
+      "ticks": 2
+    },
+    "repeated_original": {
+      "exact_field": "Q(sqrt(5))",
+      "two_to_one_nu_ratio": "1.957934834977255438871831020644724497533",
+      "two_to_one_r_ratio": "1.963449592516745537810288019609258809741",
+      "wedge_exact": "2297915434728204303800352345291612636009060947912005232259847768469657423005708558426019383442843082824133346516424168536084702908579840000/79416461777821505085308725617317873848909421495029735495182800526596810625220710025587568930270588464551966084395865390191512739895440646720487400749361 - 1019942581156038185577146668541212115287571851744599068937792228723450469094045537902163955289982505014253998804640416879988772573347840000*sqrt(5)/79416461777821505085308725617317873848909421495029735495182800526596810625220710025587568930270588464551966084395865390191512739895440646720487400749361",
+      "wedge_nonzero_exact": true
+    },
+    "weak_and_critical": {
+      "critical_controls": 4,
+      "critical_limit_gap": -3.381758143289962e-09,
+      "weak_controls": 4
+    }
+  },
+  "source_commit": "716387e3cb4c9ff08c44b5ac532db882ee1e394a",
+  "source_commits": [
+    "39b9c847dbea952016a0f464e786ad817e96d4ad",
+    "110b672e09848893475db0c8fd786cc910a014f9",
+    "716387e3cb4c9ff08c44b5ac532db882ee1e394a"
+  ],
+  "status": "PASS_ORIGINAL_RETAINED_HISTORY_SOURCE",
+  "stderr_bytes": 38306,
+  "stderr_sha256": "14c5b05bcee12edf12f2f5530a3ee4a9cb8743bbddec461abbeeb65826df5ad8",
+  "stdout_sha256": "47f6fade558f2f4a94e8ce5d0f6e3d4bfe961a450d8bd3511ab1334267aa271b"
+}

@@ -12082,3 +12082,121 @@ application. No formal-support locator or assembly acceptance is inferred
 from the archived source. The current moving-projector Lean theorem remains
 finite-matrix support on its declared chart; the full physical source and
 `GR_closed` remain open.
+
+### Complete finite moving-projector price and #334 history checkpoint at 716387e3 — 28 October 2026
+
+This increment continues the existing proof-architecture PR #402 and the
+existing scientific owner #334. It does not register a new task or change an
+assembly/claim status.
+
+The #334 source head at this checkpoint was
+`716387e3cb4c9ff08c44b5ac532db882ee1e394a`. Its three-commit retained-history
+delta is byte-pinned in
+[`d0_334_retained_history_full_delta_2026-10-28`](sources/d0_334_retained_history_full_delta_2026-10-28/README.md).
+The upstream proof differentiates the original multi-tick full128 return
+`K_n=C_n…C_1` with noncommuting tick operators and retains the whole
+left/right history source. Its two-tick control checks all 16,384 fine
+histories. The local replay passes 163 internal checks in ordinary and
+optimized modes, with identical output. Its 102 NumPy matrix warnings are
+preserved; this packet does not label that run warning-free.
+
+The source/result boundary remains exact: the full-history derivative is
+established for its declared original operators, but its first source
+difference against the existing geometric/all42 consumer has not been
+computed on the actual same-execution map. Its true gain, source norm and
+compatible refinement are also still open. The sufficient small-leakage
+condition is a route, not a new universal premise. No large-history heat
+replay, Lean theorem for the multi-tick source, physical admission, scientific
+acceptance or `GR_closed` is claimed.
+
+The PR #402 support now includes three related finite matrix/algebra slices.
+`D0.Analysis.MatrixMovingHeatFeedback` composes the fixed-parameter thermal
+and positive-chart feedback derivatives when the cut is orthogonal and the
+evolution is isometric. The one-step `D0.Algebra.DirectFeedbackSource` theorem reduces the original
+polynomial return's resolvent-trace jet to `(1−2p²A)H` without assuming
+`[A,H]=0` or `A⁻¹`. The new
+`D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price`
+composes the existing thermal and feedback derivatives on one differentiable
+curve and proves the complete finite heat-plus-`−log det` source with an
+endogenous projector. With `K=[dP,P]`, `C=(1−P)UP`,
+`R=(I−zC†C)⁻¹`, and `V=(1−P)(dU−[K,U])P`, its real derivative is
+
+```text
+dB = −Re Tr(ρ (dΔ−[K,Δ])) + 2z Re Tr(R C† V),
+ρ = exp(−βΔ) / Re Tr exp(−βΔ).
+```
+
+The Lean theorem keeps fixed real `β` and `z`, Hermiticity of `Δ` at the
+evaluation point, a locally idempotent and self-adjoint projector curve, an
+actual `Δ/P/U` differentiable curve, and the feedback determinant's slit-plane
+chart explicit. It does not vary the Gram, thermal parameter, fugacity, or
+other physical costs, and it does not derive the curves from a native admitted
+execution. The formal-support table and generated `D0.All` import include the
+three related finite modules; those locators do not accept the source claims
+or close the remaining physical application.
+
+Local checks for this increment: both changed modules pass narrow Lean builds;
+the generated-view check and `validate_repo.py` pass; `D0.All` passes 4,764
+Lake jobs with Lean 4.30.0 at source digest
+`afb5f1052f4e46b73d2ffb6753988468d53d0d5ff071b3f7e8f91915b2277d81`. The
+full build also reports existing linter warnings elsewhere in the import
+closure. The [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_book_price_declarations_2026-10-28.json)
+records all three load-bearing declarations at that same source digest; its
+SHA-256 is `8adc0bb5767966499292a48d37e8ec057661d9fc5cd6bfd77c0fb8bc70a93948`.
+The reported axiom footprint is `Classical.choice`, `Quot.sound` and
+`propext`. `validate_repo.py` reports 889 claims, 31 assumptions, 58 aliases,
+230 formal-support rows and 953 modules in generated `D0.All`, with zero
+warnings. The retained-history source packet verifier also passes and records
+its checker warnings explicitly.
+
+### #334 direct geometric source application — 28 October 2026
+
+The #334 owner advanced four commits beyond `716387e3` to
+`9f23ec82c8e4e044121521658afec4a5e9b8c2f7`. The exact changed files, Git
+blobs, four-commit patch and owner receipt are retained in
+[`d0_334_direct_source_geometry_delta_2026-10-28`](sources/d0_334_direct_source_geometry_delta_2026-10-28/README.md).
+
+This increment supplies the original history-to-geometry operator map and
+pulls the complete noncommuting retained-history return through it. Its exact
+covector covers the original 16 coframe and 24 proper-Lorentz directions with
+`W_j=Herm[R_j D_ret⁻¹ K* T_j]` and
+`G_j=2 r_R z k (h_j/16)²(D_jW_j+W_jD_j)`. The complete master source keeps
+the same realization's full heat on all scene, clock, work, record and
+oldRIGHT modes. It also shows why the additive quadratic shortcut must not
+replace `W_j` by `I`: in the specified compact-link control that removes
+link-sensitive rows, while the full independent-connection source has a
+nonzero link variation. The nonlinear source route remains available.
+
+The same owner keeps the paid resolved-history matter cut distinct from the
+all-blank return, and retains the conjugate-coordinate convention for archive
+supports. Their sources cannot be combined until that cut is identified with
+the actual Book cut. The geometric operator map is now supplied; admitted
+same-execution field variations, Einstein-matter source comparison, true gain
+and uniform norm, physical refinement, independent apparatus equations and
+scientific acceptance remain open. The owner packet records the 163-check
+receipt but does not claim an updated independent replay, Lean formalization
+of the multistep source, large full-history heat replay, or source-branch CI.
+`GR_closed=false`.
+
+### Local checks at #402 source checkpoint af02b15e
+
+The generated-view check passes; `validate_repo.py` reports 889 claims, 31
+assumptions, 58 aliases, 231 formal-support rows and 954 modules in the
+generated Lean closure, with zero warnings. The final `D0.All` build passes
+4,765 Lake jobs under Lean 4.30.0 at Lean source digest
+`2fcfc2cbcc4931b0bfd6096df42033b9b5dcf5332c602d0865804963dfb23daa`.
+Its [build provenance receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_current.json)
+is SHA-256 `12e58a2630f4913ca93576a592def04338195f015a97dfdc6928ef7f3598f5f9`.
+The combined [moving-projector declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_price_declarations_2026-10-28.json)
+records 17 declarations from the positive-chart and explicit slit-plane
+compositions at that digest. Its SHA-256 is
+`e93463c98b4813a2556534e1982b4006e602775c13c1f2506715eff82a0a9243`; the
+reported axiom footprint remains `Classical.choice`, `Quot.sound` and
+`propext`. Existing linter warnings elsewhere in the import closure remain.
+
+Both successive #334 retained-history source packets pass their read-only
+hash/blob verifiers, and `git diff --check` passes. The new source packet pins
+the updated owner input and receipt but does not rerun the owner checker or
+claim #334 CI. No new axiom, `sorry` or `admit` is introduced. This formal
+integration does not establish physical admission, source acceptance,
+compatible refinement, or `GR_closed`.

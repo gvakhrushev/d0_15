@@ -10,6 +10,7 @@ import D0.Algebra.CayleyDickson
 import D0.Algebra.Clifford
 import D0.Algebra.CliffordThreeFamilies
 import D0.Algebra.D0InternalDimensionSelector
+import D0.Algebra.DirectFeedbackSource
 import D0.Algebra.FibonacciAFTower
 import D0.Algebra.FibonacciPerronTraceCanonicity
 import D0.Algebra.FiniteCoordinateBasis
@@ -34,6 +35,7 @@ import D0.Analysis.MatrixThermalDensityBridge
 import D0.Analysis.MatrixThermalTrace
 import D0.Analysis.MatrixTraceExponentialDerivative
 import D0.Analysis.MidpointQuadrature
+import D0.Analysis.MovingProjectorBookPrice
 import D0.Born
 import D0.Bridge.AdlerWeissBridge
 import D0.Bridge.Assumptions.BellissardGapLabel
