@@ -5209,6 +5209,35 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("79 controls", integration_text)
         self.assertIn("same-task tangent", integration_text)
         self.assertIn("not a Lean formalization of complex-matrix effect tomography", integration_text)
+        declaration_inventory_path = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_proof_architecture_formalization_2026-10-24/reports/"
+            "moving_projector_current_declarations_2026-10-28_pr402_f19.json"
+        )
+        self.assertEqual(
+            hashlib.sha256(declaration_inventory_path.read_bytes()).hexdigest(),
+            "b735a5b2ee94db17f31b22d974a50d4101765611d7aa80a865a86bde26bd96d9",
+        )
+        declaration_inventory = json.loads(declaration_inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            declaration_inventory["snapshot_commit"],
+            "f19c8762622932b970facc24340907a6fb004b86",
+        )
+        self.assertEqual(
+            declaration_inventory["lean_source_digest"],
+            "e66a40d0f1b4498f68ddc6d1b3445ffe676c8bcd1c68013baff32daf18d838aa",
+        )
+        self.assertFalse(declaration_inventory["worktree_dirty"])
+        declarations = {row["name"]: row for row in declaration_inventory["declarations"]}
+        self.assertEqual(set(declarations), {
+            "D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price",
+            "D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_moving_projector_book03_price",
+        })
+        self.assertTrue(all(row["exists"] for row in declarations.values()))
+        self.assertTrue(all(
+            row["axioms"] == ["Classical.choice", "Quot.sound", "propext"]
+            for row in declarations.values()
+        ))
 
         links = proof._declared_source_links(data, source_path)
         self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")

@@ -959,7 +959,17 @@ The moving-projector Book03 formula is already covered in #402 by
 the varying-parameter theorem
 `D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_moving_projector_book03_price`
 retains `d beta` and `d z`. No new Lean declaration was added by this #334
-continuation. The new all-input effect-fibre, operator apparatus descent and
+continuation. A fresh compiled declaration inventory under `D0.All` on clean
+snapshot `f19c8762622932b970facc24340907a6fb004b86` confirms both exact names,
+their source ranges, elaborated types, proof/type dependencies, and axiom
+footprint. It records Lean source digest
+`e66a40d0f1b4498f68ddc6d1b3445ffe676c8bcd1c68013baff32daf18d838aa`,
+Lean 4.30.0, and `Classical.choice`, `Quot.sound`, and `propext` for each
+theorem. The inventory is
+[`moving_projector_current_declarations_2026-10-28_pr402_f19.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_current_declarations_2026-10-28_pr402_f19.json)
+(SHA-256 `b735a5b2ee94db17f31b22d974a50d4101765611d7aa80a865a86bde26bd96d9`).
+This fresh moving-projector inventory does not refresh the separate C0
+weak-test inventory pin. The new all-input effect-fibre, operator apparatus descent and
 two-field recovery remain research proofs without Lean formal-support rows or
 independent semantic acceptance. The current `BornFiniteEffects` support is
 not a Lean formalization of complex-matrix effect tomography. The exact
@@ -982,6 +992,7 @@ Exact source pins at the current owner head:
 | `d0_task_faithful_source/TWO_FIELD_HANDOFF_RU.md` | `f4020fa6535954a3fda9e9de2fdbbc4dd6279232` | `b2ce50d7fb67464b5eff2e9ae51dbd0f36825c75081a5c873dba8ef54e666fb1` |
 | `d0_task_faithful_source/check_task_source.py` | `0947a2b924307e567d4426755a2ec0d51b5f8396` | `ac1b5af37e848782060b8f686852729d401d7b48d7c1f7bff459075d59f0f180` |
 | `d0_task_faithful_source/result.json` | `4b420d691a8f4bcd32513bd431fa7652ee6c8d52` | `811f14472baf715f4d0094914ef6af5f9fd049fa48ea401633109d2300faf2eb` |
+| `moving_projector_current_declarations_2026-10-28_pr402_f19.json` | `6e9f5561862716394ab0abecfecf591b1350f35a` | `b735a5b2ee94db17f31b22d974a50d4101765611d7aa80a865a86bde26bd96d9` |
 
 The updated source and task brief remain under the existing #334 owner. These
 results are integrated as scoped inputs to #402, not as independent acceptance

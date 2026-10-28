@@ -13056,8 +13056,16 @@ The Book03 moving-cut formula in this same source line already has current
 Lean support in
 `D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price`
 and its variable-parameter companion. This new #334 range changed no Lean
-source. The all-input effect-tomography/pullback statement, operator apparatus
-descent, and two-scalar recovery have no Lean declarations or
+source. A fresh `D0.All` declaration inventory on clean snapshot
+`f19c8762622932b970facc24340907a6fb004b86` records both exact declarations,
+their elaborated types and ranges, dependencies, and axiom footprint. Its
+Lean source digest is
+`e66a40d0f1b4498f68ddc6d1b3445ffe676c8bcd1c68013baff32daf18d838aa`; the
+inventory SHA-256 is
+`b735a5b2ee94db17f31b22d974a50d4101765611d7aa80a865a86bde26bd96d9`.
+It confirms the moving-cut source mapping but does not refresh the separate
+C0 weak-test inventory pin. The all-input effect-tomography/pullback
+statement, operator apparatus descent, and two-scalar recovery have no Lean declarations or
 `formal_support` rows yet. In particular, the existing rational
 `FiniteEffectFrame` is not the complex-matrix effect theorem. These results
 are recorded as source-level inputs and a named formalization seam, not as
@@ -13080,7 +13088,9 @@ are still open.
 ## Validation after the 28 October source integration
 
 On this #402 worktree, `tools.test_proof_architecture` passes 95 tests
-(`162.868s`) and `tools.test_c0_reconciliation` passes 47 tests (`35.068s`).
+(`162.868s`); after adding the fresh declaration inventory, its moving-cut
+retrieval/inventory regression also passes in a focused rerun. The C0
+reconciliation suite passes 47 tests (`35.068s`).
 `tools/validate_repo.py` passes with 889 claims, 31 assumptions, 58 aliases,
 238 formal-support rows, and 961 Lean-closure rows. Generated Lean views are
 current (`stale=0`); the formalization-debt audit is unchanged at 5 findings
