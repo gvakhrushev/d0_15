@@ -16915,3 +16915,73 @@ Removing only the7cy insertion recovers all2773742 incoming primary bytes;
 the entire1091711-byte incoming brief remains an exact prefix. Only the
 two owned paths change, by insertion. No new remote CI, independent
 scientific acceptance, physical source selection or GR closure is claimed.
+
+### 28 October - generated resource, material metric and constructive retained full-source comparison
+
+SAME #334 / constitutive/native-programme-v1; native realization / final
+composition. Input e120d891985e473e7e9e0e8a9da92b6d1fab7218. Owned write
+paths remain this brief and the primary research memo. The last turn
+published a positive application; this is its next parent substitution.
+
+Consume: ten-sign full32-Choi/CAR processor(8)--(16), density-involution
+general source, history-density/Palatini(11)--(12), complete fixed-initial
+Book adjoint, full-register Golden compiler, paid actual7am/7ao gadgets,
+recording809--813 and new all-unitary INTERNAL clock-winding bound.
+The actual gap is the resource/metric/full-price application, not another
+curvature root or a phase-Hamiltonian postulate.
+
+Primary7cz879--889 supplies an explicit all-column anchored preparation
+for the real original banks and a RIGHT-preserving material rotation,
+then includes their derivatives in the same A_y*R A_y protocol. This is
+a computable target with certified finite native approximation; the old
+421 exact-writer obstruction is retained. Macro prefix errors, actual
+copies, inverses and archive work are counted.
+
+The same material H_q and real coordinate-cell measure fix
+K=m g_old^-1 and g_mat=sqrt(|det K|)K^-1=(m/E)g_old. Transferring m
+under a genuine coordinate change removes the previous density-chart
+ambiguity. This applies an owned measure/coframe theorem to the actual
+source; it does not equate Connes lengths or independent clock readings.
+
+The existing retained native gadgets attenuate the useful source and
+the compiler error together. After division by the TRUE Gamma_(h,K),
+the compiler tolerance is uniform in archive depth K. The complete
+same-clock heat remainder is factorially small relative to that
+exponentially decaying gain. Choose finite base compilation first,
+then the actual paid K. This discharges the former separate growth
+assumption for this explicit finite comparison family, retaining all
+425 N_K d_K heat modes and the absolute Book baseline.
+
+Smallest checks: original sparse CAR16/Julia32/2048-column anchored
+bank and its first source; actual material decoder/density covariance
+with wrong-density negative control; literal native full16 recording
+gadget and exact effective-z/source/error-budget identities. No huge
+GR compiler, unchanged root census, full clock replay or Lean run.
+
+Remaining application: independently selected native execution domain,
+physical growing-blank supply, actual cut/heat and independent apparatus
+equations, additional genuinely selected price terms and compatible
+physical refinement. Direct native Book03 stationarity is consumed at
+that exact interface; no new selector or unrestricted minimum is added.
+No Ready, retirement, assembly acceptance or GR promotion.
+
+Incoming f4123197/46ebed17 retained: direct original full128 source is
+available without the optional physical price estimator; its same-source
+GR transport remains the primary application. The exact non-null
+direct-star/inverse-leg source distinction is preserved. This result
+does not promote a programmed source realization to that original map.
+
+The two executed changed checkers and complete observed receipts are
+embedded in7cz with immutable owner pins and SHA256. Two mathematical
+reviews checked the synthesis and exact source budgets; orientation,
+scalar Euler coefficient and fixed COPY scope corrections are included.
+The native gadget ran on every16 columns; the original Choi/writer
+identity is checked on all2048 columns by exact sparse algebra. No
+large compiler execution or independent scientific acceptance is claimed.
+
+Final structural validation after incoming46ebed17 passes: repository
+(warnings0), work, agent protocol and assembly; scientific_promotion=false.
+The first repository scan reached its wrapper time limit; the subsequent
+ordinary run completed PASS. Both portable changed checks ran on their
+final UTF-8/LF bytes, with exact embedded receipts and hashes. All incoming
+canonical primary/brief content is preserved; no remote CI or acceptance.

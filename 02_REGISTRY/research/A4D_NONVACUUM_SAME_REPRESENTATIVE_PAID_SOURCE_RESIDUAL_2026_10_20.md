@@ -87394,3 +87394,938 @@ independent physical admission and complete-price identification.
 The self-contained executed code, observed JSON and original owner
 match the SHA256 pins above. Both incoming owned files are preserved
 as exact prefixes; no unchanged expensive research replay was run.
+
+
+## 7cz. One generated bank, its material metric, and a fully priced growing-history source comparison
+
+28 October 2026. SAME #334 / constitutive/native-programme-v1; native
+realization and final composition. Input e120d891985e473e7e9e0e8a9da92b6d1fab7218.
+The previous turn is a published positive application, not a wait.
+This section consumes the actual ten-sign source, the density-involution
+general-source theorem, the full-column compiler, the already paid
+7am/7ao archive gadgets and the NEW all-unitary clock-winding bound.
+
+The composed path is:
+known field coordinates -> actual full-column source-bank target ->
+the SAME fixed Choi/CAR sign processor -> original complete READY
+report -> generated-cut Book H+J -> material-response metric and
+Einstein-scalar source. Native FINITE words approximate that one path
+from one initial boundary, with a constructive normalized error budget.
+No new geometric action, coupling or detector is selected.
+
+The changed input matters. 7cx862 reconstructs A=a*a, not signed a,
+every N_j, or independent material amplitudes. The whole original
+Walsh row bank can instead be inverted to its actual Julia row blocks;
+the existing paid-writer12.1 augmented decoder includes the genuine
+frame, density and material data. This is a readout composition, NOT
+an identity between the original2048 price and the larger ten-sign
+processor price. The construction below supplies the latter's missing
+resource map in the declared addressed native class; it does not infer
+a price equivalence from A-only observation.
+
+
+Incoming f4123197/46ebed17 were consumed before publication. The new
+7cy871--878 proves an exact non-null source separation: equality of
+metric VALUES at E=1 does not identify direct-star and inverse-leg
+COVECTORS. Nothing here cancels that determinant row or identifies
+those finite programmes. A4D_CLOSED_HISTORY_DIRECT_PROOF_2026_10_28.md
+also makes the original full128 source directly available through
+a=N0, without a trace-preparation/price-estimation apparatus and even
+when A is singular. That direct formula remains the main original-
+operator route. The present explicit bank/metric/retention application
+supplies a declared general-source realization; its substitution for
+that original full128 execution still requires a proved common source
+map. The physical estimator7cx is not made a compulsory intermediate.
+
+### 1. Supply the actual banks from a fixed initial boundary
+
+Consume A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md
+(8)--(16). Its normalized real full32 Julia bank has a known identity
+address, hence a constant positive coordinate c=(32A)^(-1/2).
+For any normalized real target b with that anchor, let e0 be the
+corresponding actual basis input and define
+
+    K_b=b e0^T-e0 b^T,
+    O_b=I+K_b+K_b^2/(1+c),   c=e0^T b>0.
+    O_b in SO(D),   O_b e0=b.                              (879)
+
+If the original bank dimension is not a power of two, embed b with
+zero coordinates in the next full native register and extend O_b by
+identity. Keep every padded heat column. The anchor uses the ORIGINAL
+active-address normalization, not a new uniform weight on padded
+addresses. Protected factors are tensored with identity throughout.
+
+This specifies EVERY column. On span(e0,b) it is the rotation with
+cosine c; it is identity on its orthogonal complement. Directly,
+K_b^2 e0=-(1-c^2)e0, so its first column is b and det O_b=1.
+There is no unknown input exemplar or cloning operation.
+
+At fixed anchor, e0^T db=b^T db=0, and
+
+    DO_b[db]=dK_b+(dK_b K_b+K_b dK_b)/(1+c),
+    ||DO_b[db]||op=sqrt(2/(1+c)) ||db||2.
+
+The last identity follows on span(e0,b,db); all other columns have
+zero derivative. In particular the small Choi anchor at large A
+does not create a 1/c singularity. The bank itself must retain the
+original strict Julia-contraction and material-slack bounds.
+
+For the original material resource preserve its actual site/RIGHT
+correlations. At each site the real LEFT vector is
+
+    m_x=sqrt(p)|1>+Psi_x,0|0>+d_x|14>+Psi_x,15|15>,
+    d_x=sqrt(1-p-Psi_x,0^2-Psi_x,15^2)>0,
+    m_*=sqrt(p)|1>+p|14>,
+    M_y=sum_x |x><x| tensor (O_(m_x) O_(m_*)^T)
+                                     tensor I_RIGHT.       (880)
+
+Use anchor e1,c=sqrt(p). M_y maps the already specified vacuum
+resource to the desired correlated bank and is identity on RIGHT
+on ALL columns; it does not reset or reprepare an unknown RIGHT.
+Moreover ||DM_y||<=sqrt(2/(1+sqrt(p))) max_x||Dm_x||, with
+||Dm_x||^2=|DPsi_x|^2+(Psi_x dot DPsi_x)^2/d_x^2.
+The fixed vacuum/site/Fourier preparation is part of the complete
+initial protocol and its price, not a freely supplied new resource.
+If a complex fixed prefix needs the owned realification compiler,
+retain its actual additional carrier and multiplicity.
+
+Prepare the up-to180 Choi and16 CAR copies required by the SAME
+normal-projected ten-sign instrument by separate copies of these
+known preparations. They are independent regenerated resources, not
+copies of an unknown quantum state. All site tags, true PF factors,
+normal-projecting R2, unused grades and work remain those of the owner.
+A tensor product of the actual preparation targets supplies the
+whole bank; its derivative is the sum of the ordinary tensor
+derivatives. Compose it with the fixed sign/report/READY circuitry
+at the same fixed h, norm bound Lambda_h and actual site code.
+
+Let A_y be that COMPLETE preparation+processor target and R its
+fixed final status reflection. Absorb preparation into the word:
+
+    W_y=A_y* R A_y,   P0=fixed actual blank/protected cut.
+    X_(j+1)=V_j(y)X_j,   X_0=fixed initial boundary.         (881)
+
+Every genuine preparation variation is now a gate/source variation
+of the same A_y. The exact generated-state adjoint of
+A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md
+section4 applies to the full price, including heat. An input which
+is not actually generated remains independent; it is not frozen.
+
+**Exact/finite boundary.** 879--881 are computable full-register
+targets, not a claim of exact finite Golden synthesis. The explicit
+421-square-root obstruction in A4D_EXACT_RESOURCE_WRITER_OBSTRUCTION_2026_10_21.md
+still excludes the old exact-bank route. The full-register compiler
+of A4D_NATIVE_CLOCK_FULL_PRICE_COMPILATION_AND_FINITE_TEST_RECOVERY_2026_10_27.md
+instead supplies finite actual words to any positive certified error.
+Compile the preparations and fixed processor separately with their real
+work. Allocate full-column macro tolerances whose sum, counting every
+forward/inverse occurrence, is <=delta; unitary telescoping then gives
+the complete endpoint tolerance. This also certifies the actual bank
+prefixes to their corresponding prefix-error sums. Endpoint accuracy
+alone does not certify unexecuted intermediate banks. Independent
+stages and each required inverse are paid.
+Real code comparisons, not derivatives of an integer compiler, are
+used below. Addressability and physical admission of that native
+class are not consequences of matrix unitarity.
+
+For retained terminal readout reuse the literal balanced CX recording
+809--811. At fixed actual initial cut and COPY words it preserves the complete
+cold corner and all its OLD rows, and preserves reflection
+isospectrality while adding actual bits/stages. The nonzero
+independent detector row813 remains: value preservation does not solve
+a genuinely free new apparatus equation. No fine record is copied
+inside the coherent 7cx echo contrary to its firewall.
+
+### 2. Fix the metric by the SAME material response and the actual measure
+
+The unchanged sign observable H_q already reads
+q_x=sum_A g_old^(mu nu) D_mu^+Psi_A D_nu^+Psi_A from the SAME Choi
+inverse-coframe and CAR moments. The true site/PF cancellation in
+the density-involution owner's (11) gives the actual coordinate
+quadrature, h^4 in its original Role chart. Write that same measure
+in another chart as m(x)d^4x. The PF probability density rho_x,
+the coordinate density m and E=det(e)>0 are different objects.
+
+The integrated quadratic response coefficient and its metric are
+
+    K=m g_old^(-1),  v_K=sqrt(|det K|),
+    g_mat=v_K K^(-1)=(m/E)g_old,
+    e_mat=sqrt(m/E)e,   v_K=m^2/E,
+    v_K g_mat^(-1)=K.                                    (882)
+
+In four dimensions the last equation determines g_mat uniquely
+among nondegenerate Lorentz metrics with the chosen orientation.
+This consumes A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md section3.1,
+(11)--(12), rather than claiming a new cofactor theorem.
+
+The coefficient is operationally readable: the actual Choi moments
+already give g_old^(-1), or polarize the existing material detector
+with the ten small profiles D^+Psi=t e_mu and t(e_mu+e_nu).
+Its diagonal entries are q_mu/t^2 and off-diagonal entries are
+[q_(mu,nu)-q_mu-q_nu]/(2t^2), before multiplication by m.
+Retain real t, Lambda_h, site readiness and every failure weight.
+The detector is unchanged. These comparisons use the existing
+same-initial source-bank/field-comparison contract; their physical
+admission is not implied just by this decoder.
+
+For an orientation-preserving re-description of the SAME coordinate
+cells, x'=f(x), J=dx'/dx, j=det J>0, the measure and response transform as
+
+    m'=m/j,   e'=e J^(-1),   E'=E/j,
+    K'=J K J^T/j,   v_K'=v_K/j,
+    g_mat'=J^(-T) g_mat J^(-1).                            (883)
+
+Thus m/E is a scalar and e_mat is an ordinary coframe. Setting
+m'=1 again would change the measure and is precisely the false
+step behind the earlier apparent density-weight mismatch. This
+supplies the covariant material-response dictionary on compatible
+charts. It does not prove that every smooth rebinning is a native
+operation, or identify g_mat with Connes(D_sp) length, a separate
+clock's proper time, or the AF probability mass of a cell.
+
+At fixed actual m the coframe Jacobian is
+sqrt(m/E)[v-(e/2)tr(e^(-1)v)], with determinant -(m/E)^8.
+Every16 coframe direction remains. A real moving measure contributes
++(e_mat/2)Dlog m. The existing geometric identity and material moment
+then give, on the owner's bounded smooth chart,
+
+    m f_mom,h(e,U)=f_star,h(e_mat,U)+O_C1(h^4),
+    m q_mom,h=v_K sum_A g_mat^(mu nu)D_mu^+Psi_A D_nu^+Psi_A.
+    (DB_ideal,h)/Gamma_h -> DS_Palatini+scalar(g_mat,U,Psi).
+                                                               (884)
+
+Here f_star,h denotes the matching cofactor Palatini density in the
+density-involution proof, with its actual h/unit factors, NOT an
+identification of the different direct-click7cq programme and price.
+The current h^4 source theorem uses m=1 in its Role chart. 883
+transports that same measure; it does not introduce a chosen new
+m-dependent detector or a new dynamical scalar.
+
+The same coefficient gives the actual weak material row:
+DQ_h[eta]=-2 sum_x h^4 eta_A D_mu^-(K^(mu nu)D_nu^+Psi_A)
+plus its true boundary flux. In the smooth limit D_mu^-(K^(mu nu)D_nu^+Psi_A) tends to
+v_K Box_(g_mat)Psi_A. The Euler density of Q is -2v_K Box_(g_mat)Psi_A;
+the total action retains its actual lambda. K(xi,xi)=0 is the g_mat null cone.
+The complete nonlinear finite reporter is not exactly this quadratic
+functional: its true slope and existing normalized C1 remainder
+are retained in876.
+
+On a regular measured chart, sigma_min(K)>=a>0,||K||<=M, the
+noncommuting inverse/determinant derivative is
+
+    Dg[H]=v_K[(tr(K^(-1)H)/2)K^(-1)-K^(-1)HK^(-1)],
+    ||Dg||<=3M^2/a^2,   ||D2g||<=12M^2/a^3.                (885)
+
+For e0=||Khat-K||<=delta<a and e1=||DKhat-DK||,
+take C1=3(M+delta)^2/(a-delta)^2 and
+C2=12(M+delta)^2/(a-delta)^3. Then
+||ghat-g||<=C1 e0 and
+||Dghat-Dg||<=C1 e1+C2 e0||DK||.
+These are readout conditioning bounds, not an automatic physical C1
+compiler estimate. Finite-code value errors still have their true
+comparison-step/gain divisor.
+
+### 3. Retained growth removes the compiler-length/source-gain circularity
+
+Use the actual coherent READY mean-Q branch of the existing owner,
+not an average of unrelated terminal prices. At fixed h its scalar
+corner is C=(1-2a_h rbar_h)I_R, with actual oldRIGHT/protected rank R,
+1/3<a_h<7/20 and rbar_h in[0,1/4]. The report is the SAME one:
+
+    rbar_h=r0+epsilon_h r_f I_h+O_C1(epsilon_h^2),
+    I_h=sum_x h^4(f_mom,h+lambda q_mom,h),
+    lambda=-r_q/r_f,   epsilon_h=(64 Lambda_h)^(-1).
+
+The inner reporter parameter z0=2^-20 and lambda are fixed. The
+outer Book z=2^-20 is also fixed; the derived parameter below is
+not a physical change of either primitive.
+
+Compile a finite predeclared set of base comparisons on one actual
+complete register and common paid clock N_base>=3, to full-column
+error delta. Retain all controlled unused columns. Consume the
+EXISTING literal7am/7ao gadgets, not a new source-neutral completion:
+append K copies of G_z;CX(z,t0);CX(z,lambda_record) on distinct
+four-bit actual blanks, with passive tails and all records retained.
+Their owned full16-column blank corner is sqrt(p). Consequently
+
+    U_K=U tensor V^tensorK,   N_K=N_base+3K,
+    d_K=16^K d,   rank(P0,K)=R,
+    C_K=p^(K/2) C,   eta_K=p^K,
+    z_K=z eta_K/(1-z+z eta_K),
+    J_K=-R log(1-z+z eta_K)
+         -R log[1-4z_K a_h rbar_h(1-a_h rbar_h)].            (886)
+
+The generated prefix cut is rebuilt from THIS actual longer word.
+Its stage rank is N_K R; the endpoint determinant still has rank R.
+Every additional heat mode and the displayed absolute baseline stay.
+No comparison between different K is assigned zero cost.
+
+For J_w(r)=-R log[1-4w a_h r(1-a_h r)], put
+
+    Gamma_(h,K)=J'_(z_K)(r0) epsilon_h r_f
+      =4R z_K a_h(1-2a_h r0) epsilon_h r_f
+                       /[1-4z_K a_h r0(1-a_h r0)]>0.      (887)
+
+There is a uniform nonlinear-source estimate, even when K grows:
+|(log J'_w)'|<=28/33+7z/[5(1-z)] for0<w<=z and r<=1/4.
+Therefore J'_w(rbar)/J'_w(r0)=1+O(epsilon_h), uniformly in K,
+and the normalized feedback has the SAME Palatini/scalar C1 limit,
+with the SAME lambda, rather than a changed matter coupling.
+All of h,K,R,p,z,a_h,Lambda_h and the site/clock schedule are fixed
+during each stated comparison. Their genuine independent variations
+retain the baseline, gain and preparation derivatives.
+
+The actual native compiler error is applied BEFORE the exact gadgets.
+If ||Uhat-U||<=delta, then
+||Fhat_K-F_K||<=2 p^K delta on the same initial rank. Thus
+
+    |Jhat_K-J_K|<=2R z_K delta/(1-z_K),
+    central normalized feedback error
+      <= delta/[2a_h(1-2a_h r0)(1-z)t epsilon_h r_f].       (888)
+
+Here the central contrast divides by2t Gamma_(h,K), and each of its
+two compiled words obeys the same delta bound. Crucially, the right
+side is independent of K. The lost return amplitude attenuates the
+compiler's source error by the SAME factor as the useful source.
+Compile once to the chosen delta; no delta(K)->N(K) fixed-point
+assumption or exact forbidden resource is required.
+
+For the complete selected homogeneous INTERNAL K(9,11,13) two-grade
+clock, consume A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md.
+Its bound holds for EVERY full endpoint, including Uhat tensor V^K,
+without reflection or an eigenvalue perturbation ansatz. For two
+actual same-clock endpoints the whole heat contrast is at most
+2 A1_(N_K), hence its normalized central debt is
+
+    E_heat<=A1_(N_base+3K)/(t Gamma_(h,K)).
+    Gamma_(h,K)>=c0 p^K,
+    c0=4R z a_h(1-2a_h r0) epsilon_h r_f>0.                (889)
+
+The actual analytic bound is
+A1_N<=[176/(359(1-x^2))] q_N/(1-q_N)^2,
+x=2/55,q_N=x^N/N!. Therefore E_heat tends to zero
+factorially divided by an exponential. At fixed h,t and finite
+comparison list, choose delta by880, construct the base words and
+their common N_base, then enumerate K until881 meets the desired
+tolerance. All constants have effective positive bounds. This
+REMOVES the previous independent growth assumption for this explicit
+recording family. It is not an assertion about every physical tower.
+
+The factor16^K was not discarded: the clock theorem takes the entire
+425 N_K d_K heat carrier; dimension cancels in its log-trace SOURCE
+bound while its large absolute heat value remains. No separate Shannon/von Neumann entropy is added as a compulsory
+term to the literal Book03 H+J definition. Additional prices genuinely
+selected beyond that definition need their own same-execution binding.
+Changing scene/Gram/beta, or moving
+initial cuts have their own sources. Increasing K does not prove those
+sources small. The permission to allocate these actual blanks remains
+the physical growing-carrier interface, not a free reset at one level.
+
+### 4. Consume the composition at its full scope
+
+Let E(h)->0 be the already owned general smooth source error in the
+material metric874 and H a local Lipschitz bound for DS on the tested
+field paths. For the SAME actual completed word pair, the source
+contrast error is bounded by E(h)+H t/2 plus880+889 and any actual
+decoder/registration/additional-price error with its real gain divisor.
+The pure finite-word errors are made arbitrarily small by the explicit
+ordering above, with every archive record kept. No smooth derivative
+of the discrete compiler, high-frequency compactness or exact finite
+stationary root is inferred.
+
+This is the missing application of three prior results together:
+the existing fixed processor now has a full generated resource target;
+its limiting metric is fixed by its OWN material response and measure;
+and the actual retained native comparison controls its full homogeneous
+heat without an unproved relation between compiler length and a tiny
+gain. At the ideal common-null family the known all42 field equations
+and generated-state adjoint are consumed directly. Native approximate
+words supply the owned finite-test/macroscopic statement, not the
+arithmetically excluded exact-bank realization.
+
+The remaining physical application is the same selected execution
+domain/cut/heat and its genuinely independent apparatus equations,
+with a compatible actually growing history. A programmed field family
+does not prove that an autonomous D0 process selects its code; a
+readable metric does not equate all different operational clocks.
+Native Book03 stationarity is available directly when that map is
+established. Phase-Hamiltonian identification is not an extra premise.
+No new selector, task, assembly acceptance or GR promotion is made.
+GR_closed=false; positive_gr and raw216 retain their original scopes.
+
+### 5. Executed changed checks and independent review
+
+The algebraic integration was checked on the ORIGINAL CAR16 creator,
+its full32 Julia block and the entire2048-coordinate two-address Choi
+bank, using a sparse rank-three representation of O_b. All Choi entry
+readers and their first jets agree. The mixed metric/coframe/density
+control retains determinant terms; changing the coordinate density
+incorrectly to one gives the exact nonzero residual32/81. The material
+polarization check verifies the owned supplied-moment interface, not
+a newly admitted m-dependent effect or a giant physical instrument.
+
+The separate retained-source check executes the literal native G/CX
+gadget on ALL16 columns, including the unknown immutable tail control,
+and tests the exact effective-z/gain/error identities. Its N_base=26
+example is an explicitly labelled arithmetic scenario, not the emitted
+180-bank compiler at the displayed tolerance. The full clock theorem
+is consumed at its pins; no old clock/root/rank/Lean replay is claimed.
+
+Save each Python block as a separate UTF-8/LF local file and run it with normal
+Python from this repository root (or pass that root as its first
+argument). Both print their complete observed JSON. The retention
+checker reads the original primary7ao from its immutable Git blob;
+appending this result does not alter that pinned input.
+
+#### bank_metric_composition_check
+
+Executed source SHA256: `2d0c2ad965ebfa0d4cc6f1ede6bec9e00776dd3ed34e27d6dc8bddf7e7b3ead3`.
+Observed JSON SHA256: `d61c402057ceaf8d3df1e6de2c8d13c89cf9c3fcdec96f3f457c487215974f59`.
+
+```python
+"""Exact sparse algebra/source-map check; not emission/admission of a native word."""
+from pathlib import Path
+import hashlib, json, sys
+import sympy as s
+repo=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else Path.cwd()
+pins={
+ '02_REGISTRY/research/sources/d0_original_full128_future_even_algebra_2026-10-22/check_future_even_algebra_modprime.py':'1b1e75a8c46135eac9495bc47f9239b83ed36713c268d118d017ab176b95f3a5',
+ '02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md':'70da30184823746c040549b3182080326f30af9caba08c95c3a13da46bc8c294',
+ '02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md':'320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b'}
+checks=[]
+def require(ok,label):
+ if not bool(ok): raise ArithmeticError(label)
+ checks.append(label)
+def zero(M,label):
+ require(all(s.simplify(x)==0 for x in M),label)
+for path,digest in pins.items():
+ require(hashlib.sha256((repo/path).read_bytes()).hexdigest()==digest,'source pin '+path)
+# The ORIGINAL CAR16 exterior creator, with original role order.
+order=(0,2,3,1); cs=[]
+for r in range(4):
+ cr=s.zeros(16); before=order[:order.index(r)]
+ for bits in range(16):
+  if not (bits>>r)&1: cr[bits|(1<<r),bits]=(-1)**sum((bits>>j)&1 for j in before)
+ cs.append(cr)
+u=s.Rational(3,5); C=u*cs[0]; dC=cs[0]; I16=s.eye(16)
+PL=cs[0]*cs[0].T; PR=cs[0].T*cs[0]
+left=I16-s.Rational(1,5)*PL; right=I16-s.Rational(1,5)*PR
+dleft=-s.Rational(3,4)*PL; dright=-s.Rational(3,4)*PR
+J=C.row_join(left).col_join(right.row_join(-C.T))
+dJ=dC.row_join(dleft).col_join(dright.row_join(-dC.T))
+zero(left*left-(I16-C*C.T),'original positive left Julia root')
+zero(right*right-(I16-C.T*C),'original positive right Julia root')
+zero(left*dleft+dleft*left+dC*C.T+C*dC.T,'true left root derivative')
+zero(right*dright+dright*right+dC.T*C+C.T*dC,'true right root derivative')
+zero(J.T*J-s.eye(32),'all32 Julia columns orthogonal')
+zero(J.T*dJ+dJ.T*J,'all32 Julia first derivative tangent')
+require(J.det()==1,'Julia determinant plus one')
+# One normalized aggregate Choi bank: identity anchor plus full Julia32.
+# Index(address,input,output), exactly normalization 1/sqrt(2*32)=1/8.
+b_entries={}; db_entries={}
+for addr,mat in enumerate((s.eye(32),J)):
+ for i in range(32):
+  for j in range(32):
+   index=addr*1024+i*32+j
+   if mat[j,i]!=0: b_entries[(index,0)]=mat[j,i]/8
+   if addr==1 and dJ[j,i]!=0: db_entries[(index,0)]=dJ[j,i]/8
+b=s.SparseMatrix(2048,1,b_entries); db=s.SparseMatrix(2048,1,db_entries)
+e0=s.SparseMatrix(2048,1,{(0,0):1}); b0=b[0]
+require(b0==s.Rational(1,8),'positive fixed identity anchor')
+require((b.T*b)[0]==1,'full normalized2048 bank')
+require((b.T*db)[0]==0 and db[0]==0,'full bank derivative including anchor')
+# Actual anchored Choi entry reader of owner (9), including its source jet.
+# H_entry=(Ad/2)(|anchor><entry|+h.c.); no dense effect is needed.
+read_J=s.Matrix(32,32,lambda j,i:64*b0*b[1024+i*32+j])
+read_dJ=s.Matrix(32,32,lambda j,i:64*(db[0]*b[1024+i*32+j]+b0*db[1024+i*32+j]))
+zero(read_J-J,'actual fixed Choi matrix-entry reader recovers complete Julia')
+zero(read_dJ-dJ,'actual fixed Choi matrix-entry reader recovers complete source jet')
+require(read_J[1,0]==u and read_dJ[1,0]==1,'original vacuum-to-grade-one inverse coframe coordinate and jet')
+# O_b=I+K+K^2/(1+b0), K=b e0^T-e0 b^T.
+# Sparse span Y=[b,e0,db] yields an exact ALL-COLUMN proof without dense2048.
+Y=s.SparseMatrix.hstack(b,e0,db); Gram=Y.T*Y
+JK=s.Matrix([[0,1,0],[-1,0,0],[0,0,0]])
+JdK=s.Matrix([[0,0,0],[0,0,-1],[0,1,0]])
+A=JK+JK*Gram*JK/(1+b0)
+DA=JdK+(JdK*Gram*JK+JK*Gram*JdK)/(1+b0)-JK*Gram*JK*db[0]/(1+b0)**2
+zero(A+A.T+A.T*Gram*A,'all2048 O_b orthogonality residual')
+require((s.eye(3)+A*Gram).det()==1,'all2048 O_b determinant via matrix determinant lemma')
+zero(e0+Y*A*(Y.T*e0)-b,'O_b sends actual input to full bank')
+zero(DA+DA.T+A.T*Gram*DA+DA.T*Gram*A,'full O_b derivative orthogonality')
+zero(Y*DA*(Y.T*e0)-db,'full O_b source equals actual Julia bank source')
+# The same material-response metric, with density and genuine coordinate change.
+eta=s.diag(1,-1,-1,-1)
+e=s.Matrix([[2,s.Rational(1,3),0,0],[0,1,s.Rational(1,4),0],[0,0,3,s.Rational(1,5)],[0,0,0,1]])
+m=s.Rational(5,3); E=s.det(e); g=e.T*eta*e; K=m*g.inv()
+gamma=m*m/E; gmat=gamma*K.inv()
+require(E==6 and m!=1,'nonunimodular coframe and nonunit density')
+require(gamma>0 and gamma*gamma==-K.det(),'positive sqrt absolute determinant')
+zero(gmat-(m/E)*g,'response metric equals density divided by volume times old metric')
+coord=s.Matrix([[s.Rational(3,2),s.Rational(1,5),0,0],[0,2,s.Rational(1,7),0],[0,0,1,s.Rational(1,9)],[0,0,0,1]])
+jac=coord.det(); ep=e*coord.inv(); mp=m/jac; Ep=ep.det(); gp=ep.T*eta*ep
+Kp=mp*gp.inv(); gmatp=mp*mp/Ep*Kp.inv()
+require(jac==3,'nonunit coordinate Jacobian')
+zero(Kp-coord*K*coord.T/jac,'material kinetic response is contravariant density')
+zero(gmatp-coord.inv().T*gmat*coord.inv(),'material metric true coordinate covariance')
+wrongK=gp.inv(); wrong=s.sqrt(abs(wrongK.det()))*wrongK.inv()
+wrong_residual=(wrong-coord.inv().T*gmat*coord.inv()).applyfunc(s.simplify)
+require(any(x!=0 for x in wrong_residual),'negative control freezing transformed density to one fails')
+# Full derivative: every coframe and density contribution remains.
+de=s.Matrix([[s.Rational(1,7),0,s.Rational(1,5),0],[0,-s.Rational(1,8),0,s.Rational(1,9)],[0,0,s.Rational(1,10),0],[s.Rational(1,11),0,0,0]])
+dm=s.Rational(2,7); dg=de.T*eta*e+e.T*eta*de; dE=E*s.trace(e.inv()*de)
+dK=dm*g.inv()-m*g.inv()*dg*g.inv(); dgamma=gamma*s.trace(K.inv()*dK)/2
+dgmat=dgamma*K.inv()-gamma*K.inv()*dK*K.inv()
+zero(dgmat-(m/E)*(dg+(dm/m-dE/E)*g),'complete material metric derivative')
+t=s.symbols('t'); et=e+t*de; dett=et.det(); adjt=et.adjugate()
+dinv=adjt.diff(t).subs(t,0)/E-adjt.subs(t,0)*s.diff(dett,t).subs(t,0)/E**2
+zero(dinv+e.inv()*de*e.inv(),'independent finite polynomial adjugate inverse derivative')
+zero(dK-(dm*e.inv()*eta*e.inv().T+m*(dinv*eta*e.inv().T+e.inv()*eta*dinv.T)),'full K derivative from original coframe inverse')
+dep=de*coord.inv(); dmp=dm/jac; dgp=dep.T*eta*ep+ep.T*eta*dep; dEp=Ep*s.trace(ep.inv()*dep)
+dgmatp=(mp/Ep)*(dgp+(dmp/mp-dEp/Ep)*gp)
+zero(dgmatp-coord.inv().T*dgmat*coord.inv(),'full derivative coordinate covariance')
+# Owned F_q signed-moment interface plus the declared supplied coefficient K.
+# This is an algebraic contraction/decoder check, not construction of a new
+# m-dependent physical effect or proof of its source-bank admission.
+# CAR source at every site: sqrt(p)|1>+psi|0>+sqrt(1-p-psi^2)|14>.
+# M_x=S/(2sqrt(p))(|x,1><x,0|+h.c.) has expectation psi.
+p=(s.sqrt(5)-1)/2; S=256; h=s.Rational(1,4); delta=s.Rational(1,64)
+Lambda=s.symbols('Lambda',positive=True)
+def material_gradient(v):
+ psi0=s.S(0); grads=[]
+ for vi in v:
+  psi=psi0+h*vi
+  require(s.simplify(p+psi**2+(1-p-psi**2))==1,'complete local CAR norm')
+  require(1-p-psi**2>0,'positive real material slack')
+  measured=s.simplify(S/(2*s.sqrt(p))*(2*s.sqrt(p)*psi/S))
+  zero=s.simplify(S/(2*s.sqrt(p))*(2*s.sqrt(p)*psi0/S))
+  grads.append(s.simplify((measured-zero)/h))
+ return s.Matrix(grads)
+def signed_response(v,mat):
+ vg=material_gradient(v); moment=(vg.T*mat*vg)[0]
+ plus=(1+moment/Lambda)/2; minus=(1-moment/Lambda)/2
+ return s.simplify(Lambda*(plus-minus))
+units=[s.eye(4)[:,i] for i in range(4)]
+recovered=s.zeros(4); recovered_d=s.zeros(4)
+for i in range(4):
+ recovered[i,i]=signed_response(delta*units[i],K)/delta**2
+ recovered_d[i,i]=signed_response(delta*units[i],dK)/delta**2
+for i in range(4):
+ for j in range(i+1,4):
+  recovered[i,j]=recovered[j,i]=(signed_response(delta*(units[i]+units[j]),K)/delta**2-recovered[i,i]-recovered[j,j])/2
+  recovered_d[i,j]=recovered_d[j,i]=(signed_response(delta*(units[i]+units[j]),dK)/delta**2-recovered_d[i,i]-recovered_d[j,j])/2
+zero(recovered-K,'owned F_q signed Born moment polarization recovers every K entry')
+zero(recovered_d-dK,'polarization recovers all K source entries')
+v=s.Matrix([1,2,-1,3])/64; dv=s.Matrix([1,-1,2,0])/128
+response_t=((v+t*dv).T*(K+t*dK)*(v+t*dv))[0]
+require(s.simplify(s.diff(response_t,t).subs(t,0)-(v.T*dK*v)[0]-2*(dv.T*K*v)[0])==0,'joint geometry density material derivative')
+result={'status':'PASS','source_pins':pins,'check_count':len(checks),
+ 'bank':{'CAR_dimension':16,'Julia_dimension':32,'addresses':2,'full_bank_and_writer_dimension':2048,'normalization':'1/8','anchor':str(b0),'norm_squared':str((b.T*b)[0]),'derivative_norm_squared':str((db.T*db)[0]),'full_writer_determinant':str((s.eye(3)+A*Gram).det()),'method':'exact rational sparse rank3 representation proves all-column O_b and first derivative; no dense2048 matrix'},
+ 'metric':{'det_coframe':str(E),'material_density':str(m),'det_coordinate_Jacobian':str(jac),'transformed_material_density':str(mp),'transformed_det_coframe':str(Ep),'metric_factor_m_over_E':str(m/E),'wrong_m_prime_equals_one_residual_00':str(wrong_residual[0,0]),'full_metric_first_derivative_checked':True},
+ 'material_response':{'same_site_count':S,'CAR_grades_retained':16,'mesh':str(h),'polarization_gradient_step':str(delta),'polarization_recovered_K_and_DK':True,'normalization':'owned same-site CAR moment; supplied K=m*g_inverse contraction; signed mean multiplied by fixed Lambda','scope':'checks the existing signed-moment interface and supplied-K polarization algebra; does not construct an m-dependent physical effect, emit its giant tensor operator or grant independent bank copies for free'},
+ 'scope':'Exact bank-writer algebra, full first jets and source-owned material-response metric covariance. Not a native emitted giant word, same-initial physical bank admission, full Book action identity, or GR closure.'}
+print(json.dumps(result,indent=2))
+```
+
+```json
+{
+  "status": "PASS",
+  "source_pins": {
+    "02_REGISTRY/research/sources/d0_original_full128_future_even_algebra_2026-10-22/check_future_even_algebra_modprime.py": "1b1e75a8c46135eac9495bc47f9239b83ed36713c268d118d017ab176b95f3a5",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "70da30184823746c040549b3182080326f30af9caba08c95c3a13da46bc8c294",
+    "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md": "320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b"
+  },
+  "check_count": 195,
+  "bank": {
+    "CAR_dimension": 16,
+    "Julia_dimension": 32,
+    "addresses": 2,
+    "full_bank_and_writer_dimension": 2048,
+    "normalization": "1/8",
+    "anchor": "1/8",
+    "norm_squared": "1",
+    "derivative_norm_squared": "25/64",
+    "full_writer_determinant": "1",
+    "method": "exact rational sparse rank3 representation proves all-column O_b and first derivative; no dense2048 matrix"
+  },
+  "metric": {
+    "det_coframe": "6",
+    "material_density": "5/3",
+    "det_coordinate_Jacobian": "3",
+    "transformed_material_density": "5/9",
+    "transformed_det_coframe": "2",
+    "metric_factor_m_over_E": "5/18",
+    "wrong_m_prime_equals_one_residual_00": "32/81",
+    "full_metric_first_derivative_checked": true
+  },
+  "material_response": {
+    "same_site_count": 256,
+    "CAR_grades_retained": 16,
+    "mesh": "1/4",
+    "polarization_gradient_step": "1/64",
+    "polarization_recovered_K_and_DK": true,
+    "normalization": "owned same-site CAR moment; supplied K=m*g_inverse contraction; signed mean multiplied by fixed Lambda",
+    "scope": "checks the existing signed-moment interface and supplied-K polarization algebra; does not construct an m-dependent physical effect, emit its giant tensor operator or grant independent bank copies for free"
+  },
+  "scope": "Exact bank-writer algebra, full first jets and source-owned material-response metric covariance. Not a native emitted giant word, same-initial physical bank admission, full Book action identity, or GR closure."
+}
+```
+
+#### retention_uniform_source_check
+
+Executed source SHA256: `285eb0078166273323943742e743df648f1d0829082b584139e793663484df5a`.
+Observed JSON SHA256: `d4e35212f4b432700b503816d4f37f018fdf3e2a1ed086155b10d9c87bda46e7`.
+
+```python
+from pathlib import Path
+import importlib.util
+import json
+import math
+import subprocess
+import sys
+from fractions import Fraction as Q
+import sympy as s
+
+REPO=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else Path.cwd().resolve()
+INPUT_HEAD='e120d891985e473e7e9e0e8a9da92b6d1fab7218'
+sys.dont_write_bytecode=True
+checks=[]
+def require(ok,name):
+    if not bool(ok): raise AssertionError(name)
+    checks.append(name)
+def fmt(v): return str(s.N(v,32))
+def blob(path):
+    return subprocess.check_output(['git','hash-object',str(path)],cwd=REPO,text=True).strip()
+def rat(v):
+    return {'numerator':str(v.numerator),'denominator':str(v.denominator),'decimal':format(float(v),'.17g')}
+
+native_rel='02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+native_path=REPO/native_rel
+native_pin='9a32a3fa2e594c087d24b9d5dec497c4c5e03f44'
+require(blob(native_path)==native_pin,'actually imported native grammar matches strict pin')
+primary_rel='02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+primary_pin='9523df4d81c1433a11df8ea4d3a9cfa137c291f8'
+winding_rel='02_REGISTRY/research/A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md'
+winding_pin='2e2378f5a835deb27ebafa4eff3ffd158a899592'
+density_rel='02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md'
+density_pin='d4824abf2971c734a3476bda9f591761dd9ebaa8'
+owner_pins={native_rel:native_pin,primary_rel:primary_pin,winding_rel:winding_pin,density_rel:density_pin}
+require(subprocess.check_output(['git','cat-file','-t',INPUT_HEAD],cwd=REPO,text=True).strip()=='commit','fixed input commit is available')
+for rel,pin in owner_pins.items():
+    at_input=subprocess.check_output(['git','rev-parse',INPUT_HEAD+':'+rel],cwd=REPO,text=True).strip()
+    require(at_input==pin,'owner is bound to fixed input commit: '+rel)
+for rel,pin in ((winding_rel,winding_pin),(density_rel,density_pin)):
+    require(blob(REPO/rel)==pin,'working source owner matches strict pin: '+rel)
+primary_text=subprocess.check_output(['git','cat-file','blob',primary_pin],cwd=REPO).decode('utf-8')
+require('## 7ao.' in primary_text and '(358)' in primary_text and
+        'C_+=p^(K/2) C,   eta=p^K,' in primary_text and
+        'N_+=N+3K,   d_+=16^K d,   r_+=r,' in primary_text,
+        'immutable primary blob supplies the actual 358 retention identities')
+spec=importlib.util.spec_from_file_location('owned_native_execution',native_path)
+ne=importlib.util.module_from_spec(spec); sys.modules[spec.name]=ne; spec.loader.exec_module(ne)
+p=ne.P; alpha=ne.A
+ex=ne.Execution(4,(0,1,2,3),(),(ne.Gate('G',(0,)),ne.Gate('CX',(0,1)),ne.Gate('CX',(0,2))))
+ne.validate_execution(ex,max_qubits=4,max_expanded_stages=3)
+V=ne.word_matrix(ex,max_qubits=4,max_expanded_stages=3)
+j=ne.input_isometry(ex,max_qubits=4,max_expanded_stages=3)
+require(ne.exact_matrix_equal(V.T*V,s.eye(16)),'literal three-stage 16-column unitary')
+require(ne.exact_matrix_equal(j.T*V*j,s.Matrix([[alpha]])),'all-blank gadget compression sqrt(p)')
+out=V*j
+require(ne.exact_matrix_equal(out,alpha*s.eye(16)[:,0]+p*s.eye(16)[:,14]),'both recorded output branches retained')
+V8=V.extract(list(range(0,16,2)),list(range(0,16,2)))
+require(ne.exact_matrix_equal(V,s.kronecker_product(V8,s.eye(2))),'passive fourth wire on all columns')
+ex_old=ne.Execution(4,(0,1,2),(3,),ex.gates)
+ne.validate_execution(ex_old,max_qubits=4,max_expanded_stages=3)
+j_old=ne.input_isometry(ex_old,max_qubits=4,max_expanded_stages=3)
+require(ne.exact_matrix_equal(j_old.T*V*j_old,alpha*s.eye(2)),'unknown immutable tail compression')
+
+# Exact anchored rotation, including a fixed-anchor tangent.
+b=s.Matrix([s.Rational(3,5),s.Rational(4,5),0]); e=s.Matrix([1,0,0]); db=s.Matrix([0,0,1])
+K=b*e.T-e*b.T; dK=db*e.T-e*db.T
+O=s.eye(3)+K+K*K/(1+b[0]); dO=dK+(dK*K+K*dK)/(1+b[0])
+require(O.T*O==s.eye(3) and s.det(O)==1 and O*e==b,'full-column anchored SO writer target')
+require(O.T*dO+dO.T*O==s.zeros(3),'anchored writer derivative tangent')
+require((dO.T*dO).eigenvals()=={s.Rational(5,4):2,s.Integer(0):1},'sharp fixed-anchor derivative norm')
+
+# Whole tensor execution: actual gadget, no success Kraus substitution.
+B=s.Matrix([[s.Rational(3,5),-s.Rational(4,5)],[s.Rational(4,5),s.Rational(3,5)]])
+whole=s.kronecker_product(B,V); init=s.eye(32)[:,0]; c=s.Rational(3,5)
+require(ne.exact_matrix_equal(whole.T*whole,s.eye(32)),'32-column rational base plus native gadget')
+corner=(init.T*whole*init)[0]
+require(s.simplify(corner-alpha*c)==0,'tensor return attenuation')
+require(s.simplify(1-corner**2-(1-p*c*c))==0,'whole leakage retains nonreturn baseline')
+
+z,eta,f=s.symbols('z eta f',positive=True)
+d=1-z+z*eta; ze=z*eta/d
+require(s.factor(1-z*(1-eta+eta*f)-d*(1-ze*f))==0,'exact effective outer-z factorization')
+R,a,r,r0,eps,rf,zz=s.symbols('R a r r0 eps rf zz',positive=True)
+F=4*a*r*(1-a*r); F0=F.subs(r,r0)
+jprime=R*zz*s.diff(F,r)/(1-zz*F)
+gamma=4*R*zz*a*(1-2*a*r0)/(1-zz*F0)*eps*rf
+require(s.simplify(jprime.subs(r,r0)*eps*rf-gamma)==0,'exact rank-one mean-Q gain')
+log_derivative=-2*a/(1-2*a*r)+4*zz*a*(1-2*a*r)/(1-zz*F)
+require(s.simplify(s.diff(jprime,r)/jprime-log_derivative)==0,'uniform logarithmic derivative identity')
+Lfeedback=2*R*zz/(1-zz)
+ratio=(1-zz*F0)/(2*a*(1-2*a*r0)*(1-zz)*eps*rf)
+require(s.simplify(Lfeedback/gamma-ratio)==0,'retention-independent normalized compiler coefficient')
+
+# Original inner reporter remains fixed; effective outer z never enters it.
+z0=s.Rational(1,2**20); x,y=s.symbols('x y',real=True)
+E=p*p*(1+x); u=p+p*p*y
+ell=4*E*(1-E); bb=4*u*u*(1-u*u); aa=ell+(1-ell)*bb
+report=1-(1-z0*bb)*(1-z0*aa)
+rf_exact=s.simplify(s.diff(report,x).subs({x:0,y:0}))
+rq_exact=s.simplify(s.diff(report,y).subs({x:0,y:0}))
+r0_exact=s.simplify(report.subs({x:0,y:0}))
+require(s.simplify(rf_exact-4*z0*p**11*(1-4*z0*p**3))==0,'exact unchanged inner geometric coefficient')
+require(bool(rf_exact>0) and bool(rq_exact>0),'original source coefficients strictly positive')
+require(bool(r0_exact>0) and bool(r0_exact<s.Rational(1,4)),'report centre in regular interval')
+
+# Rational sufficient budget. delta is chosen before K or compiled N_base.
+Z=Q(1,2**20); epsilon=Q(1,2**30); t=Q(1,2**10); tolerance=Q(1,2**20)
+a_min=Q(1,3); c_min=Q(33,40); p_lo=Q(3,5); rank=128; N_base=26
+rf_lower=4*Z*p_lo**11*(1-4*Z)
+require(s.simplify(p-s.Rational(3,5))>0,'exact rational lower bound p>3/5')
+require(bool(rf_exact>s.Rational(rf_lower.numerator,rf_lower.denominator)),'rational inner-gain lower bound')
+delta=tolerance*t*2*a_min*c_min*(1-Z)*epsilon*rf_lower/4
+compiler_ratio_upper=1/(2*a_min*c_min*(1-Z)*epsilon*rf_lower)
+require(compiler_ratio_upper*delta/t==tolerance/4,'delta chosen independently of K uses quarter budget')
+Lstar=2*Q(7,20)/c_min+4*Z*Q(7,20)/(1-Z)
+require(Lstar<Q(1),'uniform log-derivative bound less than one')
+def A1(N):
+    xx=Q(2,55); q=xx**N/math.factorial(N)
+    return Q(176,359)/(1-xx*xx)*q/(1-q)**2
+
+def budget(K):
+    N=N_base+3*K
+    gamma_lower=4*rank*Z*a_min*c_min*epsilon*rf_lower*p_lo**K
+    heat_upper=A1(N)/(t*gamma_lower)
+    return {'K':K,'N_base_assumed':N_base,'N_total_lower':N,'dimension_multiplier':str(16**K),
+            'gamma_lower':rat(gamma_lower),'A1_upper':rat(A1(N)),
+            'normalized_heat_error_upper':rat(heat_upper),'heat_quarter_budget_pass':heat_upper<=tolerance/4}
+K=0
+while not budget(K)['heat_quarter_budget_pass']:
+    K+=1
+    require(K<10000,'finite arithmetic budget search terminates')
+minimum=K
+Kpositive=max(1,K)
+while not budget(Kpositive)['heat_quarter_budget_pass']: Kpositive+=1
+require(budget(minimum)['heat_quarter_budget_pass'],'minimal illustrative thermal budget passes')
+require(budget(Kpositive)['heat_quarter_budget_pass'],'positive retained-history budget passes')
+require(budget(Kpositive)['normalized_heat_error_upper']['numerator']!='0','thermal error is retained and nonzero')
+
+result={
+ 'scope':'Small exact structural control; not giant bank compilation, full clock diagonalization, physical selection, or exact finite-bank reachability.',
+ 'input_head':INPUT_HEAD,
+ 'owners':owner_pins,
+ 'provenance':'Primary consumed through immutable git cat-file blob; imported native module and winding/density working files strictly match the declared input pins.',
+ 'consumed_primary_equations':['7ao 358-363','7cs 809-813','613 effective-z identity'],
+ 'checks':checks,'check_count':len(checks),
+ 'gadget':{'full_columns':16,'stages':3,'gate_inventory':{'G':1,'CX':2},'blank_corner':'sqrt(p)',
+           'output':'sqrt(p)|0000>+p|1110>','K_extension':'C_K=p^(K/2) C; N_K=N_base+3K; d_K=16^K d'},
+ 'anchored_control':{'b':['3/5','4/5','0'],'db':['0','0','1'],'derivative_norm_squared':'5/4'},
+ 'inner_report':{'z0':str(z0),'r0':fmt(r0_exact),'r_f':fmt(rf_exact),'r_q':fmt(rq_exact),'lambda':fmt(-rq_exact/rf_exact)},
+ 'uniform_bounds':{'a_min':str(a_min),'c_min':str(c_min),'log_derivative_bound':rat(Lstar),
+                   'normalized_compiler_coefficient_upper':rat(compiler_ratio_upper)},
+ 'budget':{'epsilon':str(epsilon),'t':str(t),'tolerance':str(tolerance),'outer_z':str(Z),'R':rank,
+           'r_f_lower':rat(rf_lower),'delta_chosen_BEFORE_K':rat(delta),'N_base':N_base,
+           'N_base_scope':'26 is the supplied illustrative arithmetic scenario, not a claimed emitted full-bank compiler word at this delta.',
+           'minimal_K':minimum,'minimum_budget':budget(minimum),'positive_K_budget':budget(Kpositive)},
+ 'not_claimed':['exact forbidden pure Julia bank from finite Golden words','zero independent COPY source',
+                'free fresh memory','global physical field-code selection','uncomputed additional Cost-Info neutrality',
+                'exact finite stationary roots','physical GR closure']}
+print(json.dumps(result,ensure_ascii=False,indent=2))
+```
+
+```json
+{
+  "scope": "Small exact structural control; not giant bank compilation, full clock diagonalization, physical selection, or exact finite-bank reachability.",
+  "input_head": "e120d891985e473e7e9e0e8a9da92b6d1fab7218",
+  "owners": {
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "9523df4d81c1433a11df8ea4d3a9cfa137c291f8",
+    "02_REGISTRY/research/A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md": "2e2378f5a835deb27ebafa4eff3ffd158a899592",
+    "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md": "d4824abf2971c734a3476bda9f591761dd9ebaa8"
+  },
+  "provenance": "Primary consumed through immutable git cat-file blob; imported native module and winding/density working files strictly match the declared input pins.",
+  "consumed_primary_equations": [
+    "7ao 358-363",
+    "7cs 809-813",
+    "613 effective-z identity"
+  ],
+  "checks": [
+    "actually imported native grammar matches strict pin",
+    "fixed input commit is available",
+    "owner is bound to fixed input commit: 02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+    "owner is bound to fixed input commit: 02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "owner is bound to fixed input commit: 02_REGISTRY/research/A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md",
+    "owner is bound to fixed input commit: 02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md",
+    "working source owner matches strict pin: 02_REGISTRY/research/A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md",
+    "working source owner matches strict pin: 02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md",
+    "immutable primary blob supplies the actual 358 retention identities",
+    "literal three-stage 16-column unitary",
+    "all-blank gadget compression sqrt(p)",
+    "both recorded output branches retained",
+    "passive fourth wire on all columns",
+    "unknown immutable tail compression",
+    "full-column anchored SO writer target",
+    "anchored writer derivative tangent",
+    "sharp fixed-anchor derivative norm",
+    "32-column rational base plus native gadget",
+    "tensor return attenuation",
+    "whole leakage retains nonreturn baseline",
+    "exact effective outer-z factorization",
+    "exact rank-one mean-Q gain",
+    "uniform logarithmic derivative identity",
+    "retention-independent normalized compiler coefficient",
+    "exact unchanged inner geometric coefficient",
+    "original source coefficients strictly positive",
+    "report centre in regular interval",
+    "exact rational lower bound p>3/5",
+    "rational inner-gain lower bound",
+    "delta chosen independently of K uses quarter budget",
+    "uniform log-derivative bound less than one",
+    "minimal illustrative thermal budget passes",
+    "positive retained-history budget passes",
+    "thermal error is retained and nonzero"
+  ],
+  "check_count": 34,
+  "gadget": {
+    "full_columns": 16,
+    "stages": 3,
+    "gate_inventory": {
+      "G": 1,
+      "CX": 2
+    },
+    "blank_corner": "sqrt(p)",
+    "output": "sqrt(p)|0000>+p|1110>",
+    "K_extension": "C_K=p^(K/2) C; N_K=N_base+3K; d_K=16^K d"
+  },
+  "anchored_control": {
+    "b": [
+      "3/5",
+      "4/5",
+      "0"
+    ],
+    "db": [
+      "0",
+      "0",
+      "1"
+    ],
+    "derivative_norm_squared": "5/4"
+  },
+  "inner_report": {
+    "z0": "1/1048576",
+    "r0": "0.0000018512395784882030762843950549834",
+    "r_f": "0.000000019168831693611473993498917024924",
+    "r_q": "0.00000044886515989601316755239850905311",
+    "lambda": "-23.416406751884074972895582064895"
+  },
+  "uniform_bounds": {
+    "a_min": "1/3",
+    "c_min": "33/40",
+    "log_derivative_bound": {
+      "numerator": "4448507",
+      "denominator": "5242875",
+      "decimal": "0.8484861836301647"
+    },
+    "normalized_compiler_coefficient_upper": {
+      "numerator": "3022314549036572936765440000000000",
+      "denominator": "21425168332246833",
+      "decimal": "1.4106374811943549e+17"
+    }
+  },
+  "budget": {
+    "epsilon": "1/1073741824",
+    "t": "1/1024",
+    "tolerance": "1/1048576",
+    "outer_z": "1/1048576",
+    "R": 128,
+    "r_f_lower": {
+      "numerator": "46437846021",
+      "denominator": "3355443200000000000",
+      "decimal": "1.383955658107996e-08"
+    },
+    "delta_chosen_BEFORE_K": {
+      "numerator": "21425168332246833",
+      "denominator": "12980742146337069071326240823050240000000000",
+      "decimal": "1.6505349301844522e-27"
+    },
+    "N_base": 26,
+    "N_base_scope": "26 is the supplied illustrative arithmetic scenario, not a claimed emitted full-bank compiler word at this delta.",
+    "minimal_K": 0,
+    "minimum_budget": {
+      "K": 0,
+      "N_base_assumed": 26,
+      "N_total_lower": 26,
+      "dimension_multiplier": "1",
+      "gamma_lower": {
+        "numerator": "510816306231",
+        "denominator": "295147905179352825856000000000000",
+        "decimal": "1.7307129654895968e-21"
+      },
+      "A1_upper": {
+        "numerator": "6379875907463637469821707862197697117894035652279853820800781250000000",
+        "denominator": "138703820938119168442769862377860649771451409852910960118884454186930026525464403411667679651357343989277097543957643210887908936764603",
+        "decimal": "4.5996396237057757e-65"
+      },
+      "normalized_heat_error_upper": {
+        "numerator": "1272242430588150761758199795199875496203243055302574080000000000000000000000000000000000000000000000",
+        "denominator": "46748874512804622651119597185696531259619754628234962909428935323617083070169047990271886417373130575489942233313028025440871715956078559723",
+        "decimal": "2.7214397006278317e-41"
+      },
+      "heat_quarter_budget_pass": true
+    },
+    "positive_K_budget": {
+      "K": 1,
+      "N_base_assumed": 26,
+      "N_total_lower": 29,
+      "dimension_multiplier": "16",
+      "gamma_lower": {
+        "numerator": "1532448918693",
+        "denominator": "1475739525896764129280000000000000",
+        "decimal": "1.0384277792937579e-21"
+      },
+      "A1_upper": {
+        "numerator": "11635635224690927542463872808772781047282216431226041167974472045898437500000000",
+        "denominator": "115341120483755685038483714316302473571250357318017424895995972062761910716063869603975783574219051785061593249622251883614589480566792190074920659167787",
+        "decimal": "1.0088019932431345e-73"
+      },
+      "normalized_heat_error_upper": {
+        "numerator": "429688748809880273464666596580549949932053563551710497996800000000000000000000000000000000000000000000000000",
+        "denominator": "4319409620996166649006176617431211332769754631202434544930153157778370794405875852799289119070929270298771605605103710789482761457745800726115703765174455363",
+        "decimal": "9.9478583073300422e-50"
+      },
+      "heat_quarter_budget_pass": true
+    }
+  },
+  "not_claimed": [
+    "exact forbidden pure Julia bank from finite Golden words",
+    "zero independent COPY source",
+    "free fresh memory",
+    "global physical field-code selection",
+    "uncomputed additional Cost-Info neutrality",
+    "exact finite stationary roots",
+    "physical GR closure"
+  ]
+}
+```
+
+Two independent mathematical reviews checked the complete parent
+composition, the original measure/source distinction, full preparation
+map, true gain and the uniform finite-comparison budget. Their exact
+corrections are incorporated: orientation-preserving coordinate
+changes, the full -2 lambda scalar Euler factor, and fixed-cut/fixed-
+COPY scope for transport of old recording rows. This is mathematical
+review of a scoped application, not acceptance of physical GR closure.
+
+Final local structural validation on incoming46ebed17: validate_repo
+PASS warnings=0; validate_work and validate_agent_protocol PASS;
+gr_assembly check valid with scientific_promotion=false. The assembly
+result template was consumed without changing acceptance/lifecycle.
+The first time-limited repository scan was terminated at its55-second
+wrapper limit; the subsequent ordinary run completed PASS. Both changed
+checks were executed successfully in their final portable UTF-8/LF form;
+the embedded code/JSON match those exact bytes and hashes. Incoming
+primary and brief are preserved as canonical Git-content prefixes,
+including the non-null source distinction and direct source route.
+git diff --check is clean. No remote CI or physical acceptance is claimed.
