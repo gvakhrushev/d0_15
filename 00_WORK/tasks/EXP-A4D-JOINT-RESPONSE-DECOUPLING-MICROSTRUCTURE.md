@@ -17558,3 +17558,67 @@ D0 no-go is claimed, and field soundness/recovery plus the finite-prefix
 estimate remain valid at their original scope. No registry/claim/task
 promotion, Ready state or merge. `GR_closed=false`. Write paths remain
 only this brief and the existing primary; all earlier bytes are retained.
+
+
+### 28 October 2026 — independent AF frame source removed on an explicit off-copy placement
+
+SAME owner / Draft #334; native realization and final composition.
+Input73816d27 and its new operator-apparatus descent proof are consumed.
+Primary: §7di954–960 of the existing same-representative source artifact.
+Incomingb8f30f7c and all five new files are also preserved unchanged:
+its full-input task fibre, relative finite-error bound and two-field
+analytic handoff are composed with the changed frame in primary§4.1.
+
+Named parent substitution: incoming descent §§8a–9 leaves independent
+decode/encode faults in every new block outside its fixed-frame map.
+The new placement sends EVERY nonblank logical work label into an
+off-copy matrix-unit module of the original AF algebra. The original
+Golden tree acts only on diagonal copies, takes coordinate zero to
+the true canonical J, and fixes all these nonblank modules.
+
+For q finite work labels choose finite depth k with
+`min_j sum_v m_jv(m_jv-1)>=q-1`. The complete operator U has
+`D U D=cP+(D-P)`, where D is diagonal-copy support and P is the
+canonical input. Each independent raw frame-stage generator, including
+all actual SourceI inverse calls, transports inside D. Its encoder
+or decoder insertion is `c P H P` or `-c P H P`, hence skew separately.
+Its Hermitian source is exactly zero before the protected trace and
+through the SAME nonnormal retained past. No linked-half cancellation
+or independently stationary old prefix is assumed.
+
+The incoming regular full-source estimate now includes these frame
+rows. Retain complete heat and all66 actual frame calls in the changed
+fixture's total clock; at general depth retain all6R_k calls. The
+existing staged repetition theorem is applied only after fixing each
+actual template, support, decoder, precision and real duration. This
+does not upgrade the regular topology to unrestricted raw gate-max.
+The incoming same-task subspace can be added by its existing sum-hull
+norm under its real heat hypotheses; its relative endpoint-error
+budget transports by the same isometry. Its97 checks and the preceding
+apparatus79 checks are consumed as owned evidence, not rerun or counted.
+
+For four work labels depth3 is insufficient for this changed layout;
+depth4 has off-copy capacities26 and8 and needs11 Golden branches.
+The checker executes55 real inverse calls, the unchanged seven-call
+middle reflection and11 forward frame calls on all356 columns:
+73 specified AF calls,24G+1CX+48SourceI, canonical rank8, complement324,
+spectrum348+8, actual cold corner p I8 and feedback p P.
+All171 exact checks pass; normal and optimized receipts match.
+The complete operator compression plus every frame-stage support
+certifies all corresponding skew directions, not a finite fault sample.
+Nonnormal-past and forbidden cross-support controls retain nonzero
+comparators. In particular the free-QUERY obstruction §7dh is preserved.
+
+Checker SHA256:
+`de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88`.
+Receipt SHA256:
+`21e2008f370c4dfc87e52ed98425ca3f2a1361cf7ae18f6727674cb7dcf38522`.
+
+Physical admission of these addressed AF/middle operations, actual
+growth/routing and the complete allowed X_N/price remain open.
+The changed frame is a declared new implementation; it does not
+retroactively neutralize the old diagonal fourth frame or change its
+fixed tests. This is a direct supporting parent substitution, not
+independent physical acceptance. No claim/registry/lifecycle promotion,
+Ready, merge or new task. `GR_closed=false`. Write paths remain only
+this brief and the existing primary; earlier and incoming bytes remain.

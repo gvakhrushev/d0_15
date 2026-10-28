@@ -88112,6 +88112,799 @@ print(json.dumps(out,indent=2))
 ```
 <!-- END 7dh EXTENSIVE QUERY RECEIPT -->
 
+## 7di. An all-nonblank off-copy AF placement removes the independent frame source
+
+28 October 2026. SAME #334 / `constitutive/native-programme-v1`; native
+realization and final composition. Input
+`73816d27` includes the incoming
+[operator apparatus descent](A4D_REGULAR_APPARATUS_SOURCE_DESCENT_2026_10_28.md)
+and its [proof §§8a–9](sources/d0_apparatus_cotangent_descent_2026-10-28/PROOF_RU.md).
+Consume §7dg's original Golden branching/inverses, §7dd's actual parked
+past and §7dh's independent QUERY boundary. The named missing parent
+premise is the new independent decode/encode source in EVERY block,
+explicitly excluded from the incoming fixed-frame transport.
+
+The changed construction puts EVERY nonblank logical work label in an
+off-copy matrix-unit module. All frame calls act only within diagonal
+copies. These two supports give an exact operator first-source zero for
+each independently varied frame half, off shell and before tracing the
+protected input. This is a new finite implementation at a possibly
+deeper AF level; it does not assert that the previous three-level fourth
+frame had this property. No action, physical admission predicate or
+Einstein constraint is inserted.
+
+Before publication, incoming `b8f30f7c` and all five of its files were
+fast-forwarded unchanged. Its
+[same-task and retained-history theorem](A4D_TASK_FAITHFUL_RETURN_SOURCE_2026_10_28.md)
+is consumed in §4.1 below; neither its97 checks nor the apparatus
+owner's79 checks are rerun or counted as new frame evidence.
+
+### 1. Enough original off-copy modules exist at a finite actual level
+
+Use the original AF algebra, normalized GNS basis, canonical inclusion
+and `segments(A,B,k)` of §7dg935. For old type j let m_(j,v)(k) count its
+literal length-k native paths ending in final summand v. Define D_diag
+as the span of ALL same-copy matrix units
+
+    e_(v, offset(q)+r, offset(q)+c),  q of old type j.
+
+Here diagonal refers to the COPY labels; r and c are arbitrary, so the
+whole old matrix algebra and its coherences remain. A distinct ordered
+pair of paths q!=q' with the same old j and final v supplies a complete
+off-copy isometry
+
+    E_(q,q') e_(j;r,c)=e_(v, offset(q)+r, offset(q')+c).
+
+There are exactly
+
+    C_j(k)=sum_v m_(j,v)(k)[m_(j,v)(k)-1]               (954)
+
+such disjoint modules for type j. Their mutual orthogonality is a
+matrix-unit identity, not a field-dependent choice. The two Fibonacci
+multiplicities grow, hence for ANY finite number q_work of work labels
+one can choose a finite k with min_j C_j(k)>=q_work-1. Fix the first
+q_work-1 pairs in the literal segment order for each j. They define
+E_1,...,E_(q_work-1), each on the WHOLE old input. E_0 uses the all-zero
+diagonal path. All these maps intertwine the existing old left/right
+actions: both path copies carry the same j and the unchanged r,c.
+
+Use the already proved Golden binary-tree construction, now through k
+levels. At a type-0 branch rotate its two chosen descendant leaves by
+the original fixed G=[[a,-p],[p,a]]; type 1 has its deterministic
+successor. Parent branches precede children. The coefficient of a
+terminal path is the product of its actual a,p weights, equivalently
+p^((k+v-j)/2), the original normalized inclusion coefficient. Therefore
+the complete orthogonal B satisfies
+
+    B E_0=J_(n,n+k),  B E_b=E_b (b!=0),
+    [B,D_diag]=0,  B|D_diag_perp=I.                    (955)
+
+This is the same branching proof as §7dg, on its unchanged primitive
+coefficients, not a new arbitrary frame-unitary target. If
+R_k=sum_j(sum_v m_(j,v)(k)-1), there are R_k specified uniform paired-port
+G calls. Each inverse is STILL the actual five forward calls
+SourceI;SourceI;G;SourceI;SourceI on its addressed second leaf and the
+arbitrary original Spin. Thus decoding costs 5R_k calls and encoding
+R_k calls. Any additional physical routing, growth or setup is separate
+and must actually be supplied and paid.
+
+For four work labels, k=3 has C_1=2 and is insufficient. At k=4 the
+multiplicities are (5,3) and (3,2), giving C_0=26,C_1=8 and R_4=11.
+At n=0 the actual AF carrier is 89-dimensional, not a padded dyadic
+wire register. This explicit change replaces the old diagonal fourth
+frame; it does not silently relabel its old fixed-laboratory tests.
+
+### 2. The entire word has a scalar compression on the frame support
+
+Collect ALL private blank work into its one zero label, and leave the
+arbitrary protected Spin/old input untouched. Let T_E use the E_b above,
+T=(B tensor I)T_E, D=D_diag tensor I, and P=T P_0 T*, where
+P_0=|0_work><0_work| tensor I. Thus P is the true canonical input
+J_(n,n+k) tensor I, not an independently prepared coordinate blank.
+
+For ANY complete logical unitary W with its actual scalar cold corner
+P_0 W P_0=c P_0, c>0, execute the literal decode/word/encode schedule:
+
+    U=T(W tensor I_old)T*+I-TT*,
+    D U D=cP+(D-P),  D U P=P U D=cP.                  (956)
+
+Indeed D T=T P_0, while D(I-TT*)D=D-P. No reflection assumption is
+needed for these identities. All leakage from the input is in the
+off-copy support, and the full unused diagonal complement has its
+actual identity action. Both the whole complement and every required
+intermediate test are retained. As in §7dg940, transport middle tests
+at their actual shifted frontiers and keep the real longer clock.
+Equality to a shorter programme's absolute heat or fixed duration is
+not asserted.
+
+### 3. Each independent frame row has zero Hermitian insertion
+
+Keep the canonical initial embedding fixed. An independent encoder
+variation has endpoint form delta U=H_+ U; an independent decoder
+variation has delta U=-U H_-, where H_+ and H_- are skew-adjoint.
+Every actual frame raw-stage comparison whose generator stays on that
+stage's specified diagonal-copy/Spin support transports to
+H_+=D H_+ D or H_-=D H_- D. All intervening frame calls preserve D,
+including EACH SourceI occurrence of EACH forward inverse. The two
+temporal halves are not linked or identified.
+
+Using (956), their complete input-corner insertions are
+
+    X_+=P H_+ U P=c P H_+ P,
+    X_-=-P U H_- P=-c P H_- P,
+    Herm X_+=Herm X_-=0.                              (957)
+
+The insertion need not be zero; its Hermitian part is zero as an
+OPERATOR on the actual protected input. This is stronger than a
+uniform-trace cancellation and holds at every scalar-corner field,
+including off shell. Generated intermediate cuts follow their actual
+prefix map; none is freed or artificially frozen instead of this
+complete endpoint calculation.
+
+For the SAME arbitrary retained K and S=K*K>0 of the incoming theorem,
+its actual D_ret=(1-zeta)I+zeta T_ret S and normalized dual weight give
+
+    D_frame J=-(2w/c_j)Tr(Pi_out Herm X_frame)=0.      (958)
+
+This uses the existing all-column parking and old-cut support guard.
+The new frame calls preserve all old records and act uniformly on old
+matrix units; any genuine added coupling that mixes the old return
+cut with its complement remains outside this statement. Pi_out is
+derived from the old K, not newly prepared. No old multiplicity is
+counted twice. In particular one new frame in EVERY block is covered
+by (958); it is not hidden inside one finite old-prefix estimate.
+
+The theorem is a bound on all skew comparisons on these supports. It
+does not introduce a continuously tunable Golden primitive, declare
+all such comparisons physically accessible, or claim exact equality
+of prices for arbitrary finite code replacements. The existing
+actual finite-comparison/error rules still apply.
+
+### 4. Apply the new input to the incoming complete source theorem
+
+The middle-word operator insertion, actual scalar c_j, positive
+lambda_j and complete decoder jet transport by the fixed isometry T,
+exactly as in incoming §8a. Its off-shell estimate
+
+    A_j(v)=DI_(tau,h)[V_h(v)]+R_j(v)
+
+and regular field/raw sum-hull norm are preserved on transported
+middle comparisons. Extend that per-block norm by the maximum with
+the independent frame raw-stage norm. Equations (957)–(958) add zero
+feedback source on the new directions, without assuming the Einstein
+equations to define them. The same shared-frame logical field lift is
+still available, so the existing geometric lower bound remains.
+
+Frame faults are NOT declared isospectral for the whole accumulated
+word. Retain the complete homogeneous INTERNAL heat bound, with the
+NEW actual total stage count N_M including every 6R_k frame call:
+
+    ||DB_M/Gamma_M||joint+frame,*
+      <=C_xi/Lambda_M
+        + A_(N_M)(C_V+N_M)/(zeta T_M Tr S Lambda_M)
+        + sum_j theta_j(delta_j+epsilon_j).             (959)
+
+All existing linked-field thermal/fork debts, if present in that
+implementation, remain in their recorded epsilon or heat term.
+The trace/corner/gain use the actual enlarged execution. A fixed finite
+template can be huge; choose its frame, compiler errors and true count
+FIRST, then its paid repetitions. The incoming factorial-heat and
+positive-weight schedule therefore still applies, now including these
+independent new frame rows on the accumulating regular sequence.
+
+This is the direct substitution for the specific missing application
+in incoming §§8a–9. It extends that theorem's guarded apparatus graph;
+it does not change its regular topology into unrestricted raw216 or
+an unweighted horizontal raw-max topology. The nonlinear dust/vacuum
+soundness, recovery and represented-data Cauchy application retain
+their original hypotheses.
+
+### 4.1 The newly incoming full-input task fibre composes with this frame
+
+The owner at `b8f30f7c` identifies the §7dh normal as a real change of
+the report effect E_T=i*T*Pi T i. In its echo class, equality E_T=E_0
+on the WHOLE unprepared SOURCE implies the same cold operator for
+every genuine preparation R(Y), including all mixed source jets.
+It does not set independent preparation sources to zero. This
+applies through our fixed T with its actual canonical J, exactly
+as the middle-word apparatus map does. It supplies an additional
+same-task subspace S_h without assuming that all X_N equals S_h.
+
+First use the frame-extended graph norm of (959); then take the
+sum-hull with the incoming actual semantic-comparison norm. On the
+fixed-clock/carrier/signature echo comparisons for which the whole
+heat is equal, the restriction to S_h is zero, so the dual estimate
+is the maximum of the old restriction and zero. Thus the bound
+(959) also covers their sum, including all transported linked-field
+tests and the newly independent frame rows. If an actual semantic
+comparison fails the heat hypotheses, keep its separate heat debt.
+
+The incoming finite relative bound likewise transports unchanged:
+for real endpoint cold errors d_j=2epsilon_j/c_j<1,
+eta=max_(+,-) sum_j[-log(1-d_j)] and actual
+theta=max_(+,-)|log(T_+/T_0)|, its normalized return-contrast error is
+at most exp(theta)[exp(2eta)-1]/(|t|Lambda_0). The fixed isometry
+preserves these operator errors. Every shared frame call contributes
+to the common real duration; any frame implementation error, extra
+readout error or unmatched heat remains separate. This removes no
+small error by assigning it an exactly constrained tangent space.
+
+The incoming two-field handoff uses the SAME open-field I_tau.
+Consequently the source transport also applies to its stated regular
+positive two-current sector with its actual decoder, collar and
+represented-data hypotheses; no aligned-dust assumption is used in
+(954)–(959). The dust Cauchy theorem is not promoted to a general
+two-field Cauchy or stability theorem. All of these are conditional
+source applications, not physical admission of the sum of graphs.
+
+### 5. The previous free-QUERY obstruction remains a real support boundary
+
+There is a sharp same-word negative control. For an input isometry V
+and the actual leakage L=UV-cV, let H_bad=V L*-L V*. Then
+
+    V* H_bad U V=(1-c^2)I,
+    D_bad J=-2 R zeta c(1-c^2)/(1-zeta+zeta c^2).       (960)
+
+For 0<c<1 this is nonzero. H_bad connects D to D_perp, precisely the
+coupling forbidden by the declared frame-stage supports, not by an
+Einstein equation. It is skew-adjoint but does not satisfy D H D=H.
+Thus (957) cannot be extended to arbitrary global query rotations.
+The independent QUERY comparison and its stated enlarged norm in
+§7dh remain valid. Their actual same-task admission is still a
+physical question; (959) does not decide it by renaming norms.
+
+### 6. Executed evidence and the remaining physical application
+
+The changed checker uses the original AF/word modules and the pinned
+§7dg tree functions without rerunning that earlier level census.
+It constructs the new four-level frame and multiplies the entire
+73-call schedule on all 356 columns for the SAME original seven-call
+G;CX;SourceI;SourceI;G;SourceI;SourceI middle word. Actual inventory:
+24G+1CX+48SourceI, including 55 decoding and 11 encoding calls.
+The canonical input has rank8; the full identity complement has
+dimension324; the reflected spectrum has 348 positive and8 negative
+eigenvalues. Its unchanged cold corner is p I8 and its feedback p P.
+
+The all-column compression identities (956) and the support of EVERY
+one of the66 independent frame calls are checked. They certify all
+skew generators on those supports, rather than a sampled list of
+fault angles. An explicitly nonzero compressed Spin-skew insertion
+has zero Hermitian part on each temporal half. A nonnormal retained
+past gives exact zero full determinant derivative for that structure,
+while a non-skew insertion gives -9676/466275. The same356-column
+cross-support control gives (960) with R=8,c=p and is nonzero.
+
+All171 exact checks pass; normal and optimized Python receipts are
+byte-identical. No giant nonlinear compiler, unproved physical AF
+instruction, full42 root or large thermal matrix has been executed.
+The mathematical price in the theorem remains the original H+J on
+its stated sector, with every further physically supplied source kept.
+
+Remaining application: establish the actual physical admission and
+completeness of the addressed middle and diagonal-copy frame graph,
+its real AF growth/routing/scene/cut/clock and any independent extra
+Info/work price. The raw source guards follow the concrete selected
+supports above; their status as the full allowed physical process is
+NOT inferred from finite constructibility. The result removes the
+independent frame-source premise for this constructed graph; it does
+not discharge the complete `constitutive` obligation or original X_N.
+
+Assembly checkpoint: supporting positive operator identity and direct
+application to incoming §8a, interface `native-programme-v1`, with
+the physical hypotheses just stated retained. Only this primary and
+the existing task brief are written. No competing owner, new result
+node, acceptance, Ready, claim promotion or merge. `GR_closed=false`.
+
+The following checker and receipt are the exact executed bytes.
+Checker SHA256:
+`de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88`.
+Receipt SHA256:
+`21e2008f370c4dfc87e52ed98425ca3f2a1361cf7ae18f6727674cb7dcf38522`.
+
+
+<!-- BEGIN 7di OFFCOPY FRAME CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Exact all-nonblank off-copy AF frame and its independent first sources.
+
+Run from repository root. Specified paired-port calls are not an assertion
+of physical AF admission or binary-wire Execution/1 membership.
+"""
+import ast
+from collections import Counter
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+import sympy as s
+
+ROOT = Path.cwd()
+PRIMARY = ROOT / '02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+FRAME_PIN = 'b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba'
+AF_PIN = '9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee'
+NATIVE_PIN = '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+PROOF_PIN = '1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254'
+checks = []
+
+def require(ok, label):
+    if not bool(ok):
+        raise RuntimeError(label)
+    checks.append(label)
+
+def load(name, rel, pin):
+    path = ROOT / rel
+    require(hashlib.sha256(path.read_bytes()).hexdigest() == pin, 'input ' + name)
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    spec.loader.exec_module(module)
+    return module
+
+AF = load('offcopy_owned_af', '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py', AF_PIN)
+N = load('offcopy_owned_native', '02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py', NATIVE_PIN)
+proof = ROOT / '02_REGISTRY/research/sources/d0_apparatus_cotangent_descent_2026-10-28/PROOF_RU.md'
+require(hashlib.sha256(proof.read_bytes()).hexdigest() == PROOF_PIN, 'incoming operator descent proof')
+a, p = AF.a, AF.p
+embedded = PRIMARY.read_text().split('<!-- BEGIN 7dg GOLDEN AF FRAME CHECKER -->\n```python\n')[1].split('```\n<!-- END 7dg GOLDEN AF FRAME CHECKER -->')[0]
+require(hashlib.sha256(embedded.encode()).hexdigest() == FRAME_PIN, 'owned Golden tree code')
+needed = {'mat', 'paths', 'pairs', 'rotation', 'product'}
+nodes = [x for x in ast.parse(embedded).body if isinstance(x, ast.FunctionDef) and x.name in needed]
+require({x.name for x in nodes} == needed, 'reuse existing tree functions only')
+exec(compile(ast.Module(body=nodes, type_ignores=[]), '<owned Golden tree>', 'exec'), globals())
+
+def equal(A, B, label):
+    require(AF.zero(A-B), label)
+
+def layout(n, depth, work):
+    sizes, fine = AF.counts(n), AF.counts(n+depth)
+    segments = AF.segments(*sizes, depth)
+    old = [(j,r,c) for j,d in enumerate(sizes) for r in range(d) for c in range(d)]
+    coords = [(v,r,c) for v,d in enumerate(fine) for r in range(d) for c in range(d)]
+    index = {x:i for i,x in enumerate(coords)}
+    addresses = {(j,path):(v,off) for v,block in enumerate(segments) for j,path,off in block}
+    def diagonal(j, path, r, c):
+        v, off = addresses[j,path]
+        return index[v,off+r,off+c]
+    offpairs = {}
+    for j in (0,1):
+        offpairs[j] = [(v,left,right) for v,block in enumerate(segments)
+                       for kind,leftpath,left in block if kind == j
+                       for kind2,rightpath,right in block if kind2 == j and leftpath != rightpath]
+        if len(offpairs[j]) < work-1:
+            raise ValueError('INSUFFICIENT_OFFCOPY_MULTIPLICITY')
+    d, D = len(old), len(coords)
+    E = s.MutableSparseMatrix(D, work*d, {})
+    J = s.MutableSparseMatrix(D, d, {})
+    diagrows = set()
+    for col,(j,r,c) in enumerate(old):
+        E[diagonal(j, paths(j,depth)[0], r,c), col] = 1
+        for path in paths(j,depth):
+            v, off = addresses[j,path]
+            row = diagonal(j,path,r,c)
+            diagrows.add(row)
+            J[row,col] = AF.root_weight(depth+v-j)
+        for label,(v,left,right) in enumerate(offpairs[j][:work-1],1):
+            E[index[v,left+r,right+c], label*d+col] = 1
+    ops = []
+    for j in (0,1):
+        for left,right in pairs(j,depth):
+            ops.append({'type':j, 'left':left, 'right':right,
+                        'rows':[(diagonal(j,left,r,c),diagonal(j,right,r,c))
+                                for r in range(sizes[j]) for c in range(sizes[j])]})
+    D0 = s.diag(*[s.Integer(i in diagrows) for i in range(D)])
+    return {'old':old, 'fine':coords, 'E':s.SparseMatrix(E), 'J':mat(J),
+            'diag':s.SparseMatrix(D0), 'ops':ops,
+            'capacities':[len(offpairs[j]) for j in (0,1)],
+            'selected':[[[v,l,r] for v,l,r in offpairs[j][:work-1]] for j in (0,1)]}
+
+f = layout(0,4,4)
+E,J,D0,ops = f['E'],f['J'],f['diag'],f['ops']
+d,D = J.cols,J.rows
+B = product([rotation(D,op['rows']) for op in ops],D)
+equal(E.T*E,s.eye(4*d),'all four coordinate frames orthonormal')
+equal(B*E[:,:d],J,'actual four-level canonical inclusion')
+equal(J.T*J,s.eye(d),'canonical inclusion isometry')
+equal(B.T*B,s.eye(D),'all-column Golden frame orthogonal')
+equal(D0*B,B*D0,'frame preserves diagonal-copy subspace')
+equal(B*(s.eye(D)-D0),s.eye(D)-D0,'frame fixes whole off-copy complement')
+equal(D0*E[:,d:],s.zeros(D,3*d),'EVERY nonblank frame is off-copy')
+equal(B*E[:,d:],E[:,d:],'every nonblank frame remains fixed')
+require((d,D,len(ops),f['capacities']) == (2,89,11,[26,8]),'actual depth4 dimensions and capacity')
+try:
+    layout(0,3,4)
+except ValueError as exc:
+    require(str(exc) == 'INSUFFICIENT_OFFCOPY_MULTIPLICITY','old depth3 insufficient for all three nonblank labels')
+else:
+    raise RuntimeError('old depth3 should not support this changed frame')
+
+# Execute the same existing seven-stage reflected word, now in the changed
+# four-level all-nonblank off-copy frame. All original Spin columns stay.
+g=N.Gate('G',(0,)); cx=N.Gate('CX',(0,1)); si=N.Gate('SourceI',(0,2,3))
+gates=(g,cx,si,si,g,si,si)
+word=N.Execution(4,(0,1),(),gates,N.G_CX_SOURCE_I,0,(2,3))
+N.validate_execution(word,max_qubits=4,max_expanded_stages=7)
+def symbolic(A):
+    return mat(A.xreplace({N.A:a}).xreplace({s.sqrt(5):2*p+1}))
+logical=[symbolic(N.gate_matrix(word,x)) for x in gates]
+W=product(logical,16)
+TE=s.MutableSparseMatrix(4*D,16*d,{})
+for work in range(4):
+    for spin in range(4):
+        for old in range(d):
+            for row in range(D):
+                if E[row,work*d+old]:TE[4*row+spin,(4*work+spin)*d+old]=1
+TE=s.SparseMatrix(TE)
+BS=s.kronecker_product(B,s.eye(4));T=mat(BS*TE)
+I=s.SparseMatrix(s.eye(4*D)); DD=s.kronecker_product(D0,s.eye(4))
+RE=mat(TE*TE.T);RT=mat(T*T.T)
+input_map=T[:,:4*d];P=mat(input_map*input_map.T)
+equal(input_map*input_map.T,s.kronecker_product(J*J.T,s.eye(4)),'unchanged canonical input cut')
+branch_g=[];branch_s=[]
+for op in ops:
+    G=s.kronecker_product(rotation(D,op['rows']),s.eye(4))
+    SI=s.MutableSparseMatrix(I)
+    for first,second in op['rows']:
+        for r in range(4):
+            for c in range(4):SI[4*second+r,4*second+c]=N.L_I[r,c]
+    branch_g.append(mat(G));branch_s.append(s.SparseMatrix(SI))
+prefix=[];prefix_names=[]
+for G,SI in reversed(list(zip(branch_g,branch_s))):
+    prefix.extend([SI,SI,G,SI,SI]);prefix_names+=['SourceI','SourceI','G','SourceI','SourceI']
+equal(product(prefix,4*D),BS.T,'all55 literal forward decoding calls')
+middle=[mat(TE*s.kronecker_product(x,s.eye(d))*TE.T+I-RE) for x in logical]
+schedule=prefix+middle+branch_g
+names=prefix_names+[x.op for x in gates]+['G']*len(ops)
+U=product(schedule,4*D)
+equal(U,T*s.kronecker_product(W,s.eye(d))*T.T+I-RT,'all73 actual calls on every356 columns')
+equal(U.T,U,'whole reflected endpoint')
+equal(U*U,I,'whole endpoint squares to identity')
+equal(P*U*P,p*P,'same positive actual corner')
+equal(P*U.T*(I-P)*U*P,p*P,'same complete feedback')
+equal(DD*U*DD,p*P+DD-P,'universal diagonal compression identity')
+equal(DD*U*P,p*P,'all leakage is outside frame support')
+equal(P*U*DD,p*P,'inverse-side compression identity')
+require((s.trace(P),s.trace(I-RT),AF.red(s.trace(U)))==(8,324,340),'true rank8 complement324 spectrum348+8')
+require(len(schedule)==73 and Counter(names)=={'G':24,'CX':1,'SourceI':48},'true73-call inventory')
+
+# Every frame call has exactly the required support, including each
+# independent SourceI occurrence. This, plus the three compression
+# identities above, proves the statement for ALL skew generators on
+# each such support, rather than sampling only one fault per stage.
+frame_calls=prefix+branch_g
+for i,G in enumerate(frame_calls):
+    equal(DD*(G-I),G-I,'frame-call diagonal support '+str(i))
+    equal((G-I)*DD,G-I,'frame-call diagonal input support '+str(i))
+
+# Operator first-source controls. A nontrivial diagonal-supported Spin
+# rotation has a NONZERO compressed skew insertion, but zero Hermitian
+# source on either independently varied temporal half.
+firstrow=ops[0]['rows'][0][0]
+H=s.MutableSparseMatrix(4*D,4*D,{})
+H[4*firstrow,4*firstrow+1]=1;H[4*firstrow+1,4*firstrow]=-1
+H=s.SparseMatrix(H)
+plus=mat(input_map.T*H*U*input_map)
+minus=mat(-input_map.T*U*H*input_map)
+require(not AF.zero(plus),'diagonal frame insertion itself is not zero')
+equal(plus+plus.T,s.zeros(4*d),'independent encoder Hermitian insertion zero')
+equal(minus+minus.T,s.zeros(4*d),'independent decoder Hermitian insertion zero')
+equal(plus,p*input_map.T*H*input_map,'exact encoder operator formula')
+equal(minus,-p*input_map.T*H*input_map,'exact decoder operator formula')
+
+# Sharp support negative control, with the SAME full word and fixed J.
+# A generator joining J to its real leakage breaks the diagonal guard.
+leak=mat(U*input_map-p*input_map)
+bad=mat(input_map*leak.T-leak*input_map.T)
+equal(bad.T,-bad,'cross-support control is genuinely skew')
+require(not AF.zero(DD*bad-bad),'cross-support control violates frame guard')
+badX=mat(input_map.T*bad*U*input_map)
+equal(badX,(1-p*p)*s.eye(4*d),'cross-support encoder first source is nonzero')
+z=s.symbols('z',positive=True)
+bad_feedback=-2*z*p*(1-p*p)*8/(1-z+z*p*p)
+require(not AF.zero(s.together(bad_feedback).as_numer_denom()[0]),'wrong larger support cannot inherit zero source')
+
+# An arbitrary nonnormal retained past does not turn a skew insertion
+# into a return-price source. Differentiate the actual two-by-two
+# determinant, not a uniform-trace surrogate.
+t=s.symbols('t',real=True)
+K=s.Matrix([[s.Rational(43,75),s.Rational(4,25)],[s.Rational(8,25),s.Rational(19,50)]])
+rr=s.Rational(3,5); zz=s.Rational(1,7)
+A=s.Matrix([[0,2],[-2,0]])
+C=(rr*s.eye(2)+t*rr*A)*K
+price_arg=(1-zz)*s.eye(2)+zz*C.T*C
+derivative=s.factor(-s.diff(price_arg.det(),t).subs(t,0)/price_arg.det().subs(t,0))
+require(K.T*K != K*K.T,'retained past truly nonnormal')
+require(derivative==0,'complete retained-past determinant frame derivative zero')
+wrong=(rr*s.eye(2)+t*s.diag(1,-1))*K
+wrongD=(1-zz)*s.eye(2)+zz*wrong.T*wrong
+wrongder=s.factor(-s.diff(wrongD.det(),t).subs(t,0)/wrongD.det().subs(t,0))
+require(wrongder!=0,'same past detects a non-skew operator source')
+
+result={'status':'PASS','checks':len(checks),'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        'inputs':{'af':AF_PIN,'native':NATIVE_PIN,'tree':FRAME_PIN,'incoming_proof':PROOF_PIN},
+        'frame':{'old_level':0,'depth':4,'work_labels':4,'old_dimension':d,'af_dimension':D,
+                 'full_spin_dimension':4*D,'offcopy_capacities':f['capacities'],'selected_offcopy_addresses':f['selected'],
+                 'forward_rotations':len(ops),'decode_calls':len(prefix),'independent_frame_calls':len(frame_calls)},
+        'execution':{'total_calls':len(schedule),'inventory':dict(sorted(Counter(names).items())),
+                     'protected_rank':8,'identity_complement':324,'positive_negative_spectrum':[348,8],
+                     'corner':'p I8','feedback':'p P'},
+        'source':{'encoder':'c P H_plus P, skew','decoder':'-c P H_minus P, skew',
+                  'frame_feedback_first_source':'zero as an operator on actual protected input',
+                  'nonnormal_past_derivative':str(derivative),'nonnormal_non_skew_control':str(wrongder),
+                  'cross_support_control':'-16 z p (1-p^2)/(1-z+z p^2)',
+                  'heat':'not claimed zero; retain full true-clock bound'},
+        'scope':'Exact AF placement and guarded first-source extension; not physical primitive admission, all X_N, exact finite stationary word or GR closure.',
+        'labels':checks}
+print(json.dumps(result,indent=2,sort_keys=True))
+```
+<!-- END 7di OFFCOPY FRAME CHECKER -->
+
+<!-- BEGIN 7di OFFCOPY FRAME RECEIPT -->
+```json
+{
+  "checker_sha256": "de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88",
+  "checks": 171,
+  "execution": {
+    "corner": "p I8",
+    "feedback": "p P",
+    "identity_complement": 324,
+    "inventory": {
+      "CX": 1,
+      "G": 24,
+      "SourceI": 48
+    },
+    "positive_negative_spectrum": [
+      348,
+      8
+    ],
+    "protected_rank": 8,
+    "total_calls": 73
+  },
+  "frame": {
+    "af_dimension": 89,
+    "decode_calls": 55,
+    "depth": 4,
+    "forward_rotations": 11,
+    "full_spin_dimension": 356,
+    "independent_frame_calls": 66,
+    "offcopy_capacities": [
+      26,
+      8
+    ],
+    "old_dimension": 2,
+    "old_level": 0,
+    "selected_offcopy_addresses": [
+      [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          4,
+          1
+        ]
+      ]
+    ],
+    "work_labels": 4
+  },
+  "inputs": {
+    "af": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+    "incoming_proof": "1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254",
+    "native": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "tree": "b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba"
+  },
+  "labels": [
+    "input offcopy_owned_af",
+    "input offcopy_owned_native",
+    "incoming operator descent proof",
+    "owned Golden tree code",
+    "reuse existing tree functions only",
+    "all four coordinate frames orthonormal",
+    "actual four-level canonical inclusion",
+    "canonical inclusion isometry",
+    "all-column Golden frame orthogonal",
+    "frame preserves diagonal-copy subspace",
+    "frame fixes whole off-copy complement",
+    "EVERY nonblank frame is off-copy",
+    "every nonblank frame remains fixed",
+    "actual depth4 dimensions and capacity",
+    "old depth3 insufficient for all three nonblank labels",
+    "unchanged canonical input cut",
+    "all55 literal forward decoding calls",
+    "all73 actual calls on every356 columns",
+    "whole reflected endpoint",
+    "whole endpoint squares to identity",
+    "same positive actual corner",
+    "same complete feedback",
+    "universal diagonal compression identity",
+    "all leakage is outside frame support",
+    "inverse-side compression identity",
+    "true rank8 complement324 spectrum348+8",
+    "true73-call inventory",
+    "frame-call diagonal support 0",
+    "frame-call diagonal input support 0",
+    "frame-call diagonal support 1",
+    "frame-call diagonal input support 1",
+    "frame-call diagonal support 2",
+    "frame-call diagonal input support 2",
+    "frame-call diagonal support 3",
+    "frame-call diagonal input support 3",
+    "frame-call diagonal support 4",
+    "frame-call diagonal input support 4",
+    "frame-call diagonal support 5",
+    "frame-call diagonal input support 5",
+    "frame-call diagonal support 6",
+    "frame-call diagonal input support 6",
+    "frame-call diagonal support 7",
+    "frame-call diagonal input support 7",
+    "frame-call diagonal support 8",
+    "frame-call diagonal input support 8",
+    "frame-call diagonal support 9",
+    "frame-call diagonal input support 9",
+    "frame-call diagonal support 10",
+    "frame-call diagonal input support 10",
+    "frame-call diagonal support 11",
+    "frame-call diagonal input support 11",
+    "frame-call diagonal support 12",
+    "frame-call diagonal input support 12",
+    "frame-call diagonal support 13",
+    "frame-call diagonal input support 13",
+    "frame-call diagonal support 14",
+    "frame-call diagonal input support 14",
+    "frame-call diagonal support 15",
+    "frame-call diagonal input support 15",
+    "frame-call diagonal support 16",
+    "frame-call diagonal input support 16",
+    "frame-call diagonal support 17",
+    "frame-call diagonal input support 17",
+    "frame-call diagonal support 18",
+    "frame-call diagonal input support 18",
+    "frame-call diagonal support 19",
+    "frame-call diagonal input support 19",
+    "frame-call diagonal support 20",
+    "frame-call diagonal input support 20",
+    "frame-call diagonal support 21",
+    "frame-call diagonal input support 21",
+    "frame-call diagonal support 22",
+    "frame-call diagonal input support 22",
+    "frame-call diagonal support 23",
+    "frame-call diagonal input support 23",
+    "frame-call diagonal support 24",
+    "frame-call diagonal input support 24",
+    "frame-call diagonal support 25",
+    "frame-call diagonal input support 25",
+    "frame-call diagonal support 26",
+    "frame-call diagonal input support 26",
+    "frame-call diagonal support 27",
+    "frame-call diagonal input support 27",
+    "frame-call diagonal support 28",
+    "frame-call diagonal input support 28",
+    "frame-call diagonal support 29",
+    "frame-call diagonal input support 29",
+    "frame-call diagonal support 30",
+    "frame-call diagonal input support 30",
+    "frame-call diagonal support 31",
+    "frame-call diagonal input support 31",
+    "frame-call diagonal support 32",
+    "frame-call diagonal input support 32",
+    "frame-call diagonal support 33",
+    "frame-call diagonal input support 33",
+    "frame-call diagonal support 34",
+    "frame-call diagonal input support 34",
+    "frame-call diagonal support 35",
+    "frame-call diagonal input support 35",
+    "frame-call diagonal support 36",
+    "frame-call diagonal input support 36",
+    "frame-call diagonal support 37",
+    "frame-call diagonal input support 37",
+    "frame-call diagonal support 38",
+    "frame-call diagonal input support 38",
+    "frame-call diagonal support 39",
+    "frame-call diagonal input support 39",
+    "frame-call diagonal support 40",
+    "frame-call diagonal input support 40",
+    "frame-call diagonal support 41",
+    "frame-call diagonal input support 41",
+    "frame-call diagonal support 42",
+    "frame-call diagonal input support 42",
+    "frame-call diagonal support 43",
+    "frame-call diagonal input support 43",
+    "frame-call diagonal support 44",
+    "frame-call diagonal input support 44",
+    "frame-call diagonal support 45",
+    "frame-call diagonal input support 45",
+    "frame-call diagonal support 46",
+    "frame-call diagonal input support 46",
+    "frame-call diagonal support 47",
+    "frame-call diagonal input support 47",
+    "frame-call diagonal support 48",
+    "frame-call diagonal input support 48",
+    "frame-call diagonal support 49",
+    "frame-call diagonal input support 49",
+    "frame-call diagonal support 50",
+    "frame-call diagonal input support 50",
+    "frame-call diagonal support 51",
+    "frame-call diagonal input support 51",
+    "frame-call diagonal support 52",
+    "frame-call diagonal input support 52",
+    "frame-call diagonal support 53",
+    "frame-call diagonal input support 53",
+    "frame-call diagonal support 54",
+    "frame-call diagonal input support 54",
+    "frame-call diagonal support 55",
+    "frame-call diagonal input support 55",
+    "frame-call diagonal support 56",
+    "frame-call diagonal input support 56",
+    "frame-call diagonal support 57",
+    "frame-call diagonal input support 57",
+    "frame-call diagonal support 58",
+    "frame-call diagonal input support 58",
+    "frame-call diagonal support 59",
+    "frame-call diagonal input support 59",
+    "frame-call diagonal support 60",
+    "frame-call diagonal input support 60",
+    "frame-call diagonal support 61",
+    "frame-call diagonal input support 61",
+    "frame-call diagonal support 62",
+    "frame-call diagonal input support 62",
+    "frame-call diagonal support 63",
+    "frame-call diagonal input support 63",
+    "frame-call diagonal support 64",
+    "frame-call diagonal input support 64",
+    "frame-call diagonal support 65",
+    "frame-call diagonal input support 65",
+    "diagonal frame insertion itself is not zero",
+    "independent encoder Hermitian insertion zero",
+    "independent decoder Hermitian insertion zero",
+    "exact encoder operator formula",
+    "exact decoder operator formula",
+    "cross-support control is genuinely skew",
+    "cross-support control violates frame guard",
+    "cross-support encoder first source is nonzero",
+    "wrong larger support cannot inherit zero source",
+    "retained past truly nonnormal",
+    "complete retained-past determinant frame derivative zero",
+    "same past detects a non-skew operator source"
+  ],
+  "scope": "Exact AF placement and guarded first-source extension; not physical primitive admission, all X_N, exact finite stationary word or GR closure.",
+  "source": {
+    "cross_support_control": "-16 z p (1-p^2)/(1-z+z p^2)",
+    "decoder": "-c P H_minus P, skew",
+    "encoder": "c P H_plus P, skew",
+    "frame_feedback_first_source": "zero as an operator on actual protected input",
+    "heat": "not claimed zero; retain full true-clock bound",
+    "nonnormal_non_skew_control": "-9676/466275",
+    "nonnormal_past_derivative": "0"
+  },
+  "status": "PASS"
+}
+```
+<!-- END 7di OFFCOPY FRAME RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:
