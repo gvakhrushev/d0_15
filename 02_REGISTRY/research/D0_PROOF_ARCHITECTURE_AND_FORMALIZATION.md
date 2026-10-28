@@ -11555,16 +11555,21 @@ the generated `D0.All` imports. `D0.Algebra.MovingProjectorTransport`
 formalizes the noncommutative projector-tangent and cut-transport algebra
 used by that source, while `D0.Geometry.ArchiveGradedRefinementComposedReadout`
 extends the existing open graded-refinement claim with literal multi-step
-composition and a fixed-component sampling control. Both are supporting
-theorems only; the trace/log-determinant derivative, physical readout choice,
-source-to-claim acceptance and physical refinement remain outside their
-conclusions.
+composition and a fixed-component sampling control. The new
+`D0.Geometry.RefoliationWitnessCoefficientExtraction` formalizes only the
+algebraic consequence of the three coefficient-witness equalities in the
+current #334 refoliation source. These are supporting theorems only; the
+trace/log-determinant derivative, physical readout choice, source-to-claim
+acceptance, analytic bracket derivation, and physical refinement remain
+outside their conclusions.
 The existing `proof_architecture.py search` now retrieves the published
 moving-cut note and the integration map; its regression test asserts that the
 Lean support row is still reported as a metadata locator and that no physical
 assembly-owner relation is inferred. The composed refinement module is found
 through its exact `formal_support` locator to the existing open chain-map
-claim.
+claim. A separate regression locates the conditional refoliation witness
+module through its source-specific `formal_support` row while preserving
+`no_exact_assembly_owner_link`.
 
 The current #334 head is `c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`, four
 commits beyond the previously ingested `eebcb5e` source. Its new conditional
@@ -11574,5 +11579,47 @@ with upstream blob verification and a separate normal/optimized replay.
 Within its declared canonical 3-metric/two-scalar class, a strong hypersurface
 deformation algebra selects the Einstein-scalar kinetic structure; the actual
 D0 symplectic form, native lapse generators and controlled same-execution
-bracket limit remain unproved. No assembly slot, claim status, Lean theorem,
-or physical selector is inferred from this conditional result.
+bracket limit remain unproved. No assembly slot, claim status or physical
+selector is inferred from this conditional result. The Lean coefficient
+extraction below proves only the stated algebraic consequence of its three
+exact witness equations; it does not formalize the analytic bracket.
+
+### Exact coefficient extraction from the pinned refoliation witnesses (28 October 2026)
+
+The published proof at #334 head
+`c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`, `PROOF_RU.md` blob
+`03ad9147c46411099667658871f847e9f3bee883`, evaluates the displayed
+constant-coefficient bracket on three independent witnesses. In the exact
+algebraic interface used by
+[`RefoliationWitnessCoefficientExtraction.lean`](../../03_FORMALIZATION/D0/Geometry/RefoliationWitnessCoefficientExtraction.lean),
+their required equalities are:
+
+```text
+s ≠ 0
+ab (-2s) = -2s
+2ab (1 - 2λ) s = 0
+s (CD)ᵢⱼ = s δᵢⱼ   for every i,j in Fin 2
+```
+
+Lean derives `ab = 1`, `λ = 1/2`, and `CD = I₂` from those equations. The
+common nonzero factor `s` represents the exact nonzero witness integral; it
+is not a fitted coefficient. This is the finite coefficient-classification
+consequence of the shear, trace, and matter evaluations, not a derivation of
+their Poisson-bracket values. The bracket formula, arbitrary-lapse strong
+closure, canonical phase space, D0-native lapse generators, Legendre
+elimination, and same-execution physical admission remain premises or open
+applications of the upstream result. The new module is `EXPLICIT_SUPPORT`, not
+a claim owner or assembly application; it has no effect on `GR_closed=false`.
+
+The new module source SHA-256 is
+`a7d7707f104a89556e8de5141cde878396a5b1fe918f87847ef25e777402866b`. Its
+narrow target passed 2,946 Lake jobs, and the subsequent public `D0.All` build
+passed 4,752 jobs on source digest
+`97cbcbe513117fa31e437ffd0dfaf1b14e597d698a38a525cb06990453564a3f` with
+dependency digest
+`a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e` and
+environment digest
+`f56162d543d47f800e04353316af8fba106e6dca995509fdd9d5a6ca880e71da`. The
+updated [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json)
+retains its point-in-time trust boundary; it does not authenticate the kernel,
+dynamic libraries, external settings, or generated caches.

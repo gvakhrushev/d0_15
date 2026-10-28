@@ -487,6 +487,7 @@ import D0.Geometry.PhysicalCarrierInventory
 import D0.Geometry.Pi0DiscreteAngle
 import D0.Geometry.PseudoinverseTwistAlgebra
 import D0.Geometry.QuaternionMixedCurvature
+import D0.Geometry.RefoliationWitnessCoefficientExtraction
 import D0.Geometry.RoleFockPermutation
 import D0.Geometry.SceneActiveEigenvalues
 import D0.Geometry.SceneCochainComplex

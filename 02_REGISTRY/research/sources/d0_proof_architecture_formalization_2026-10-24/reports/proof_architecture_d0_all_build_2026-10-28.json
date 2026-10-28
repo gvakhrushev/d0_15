@@ -50,12 +50,12 @@
     "schema": "d0-lake-dependency-provenance-v1"
   },
   "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
-  "environment_sha256": "77f9701d8abce8dbb1085e906a451f0bc69e78515d69e53012b31f0becfa2d18",
-  "jobs_completed": 4751,
+  "environment_sha256": "f56162d543d47f800e04353316af8fba106e6dca995509fdd9d5a6ca880e71da",
+  "jobs_completed": 4752,
   "lean_toolchain": "leanprover/lean4:v4.30.0",
   "receipt_note": "Local executable paths omitted; executable SHA-256 and version output retained. Dynamic libraries, kernel, external toolchain settings and generated build caches are outside this receipt boundary.",
   "schema": "d0-lean-build-receipt-v1",
-  "source_sha256": "765c08379fe7c14ea3cc0e9b058d6cb405b962069d2269cdf45e385899d48f52",
+  "source_sha256": "97cbcbe513117fa31e437ffd0dfaf1b14e597d698a38a525cb06990453564a3f",
   "status": "PASS_D0_ALL",
   "target": "D0.All",
   "toolchain": {

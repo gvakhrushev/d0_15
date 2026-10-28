@@ -79,30 +79,45 @@ independently admissible variation.
 
 ## Lean formalization slice
 
-Two supporting results from this integration are represented by compiled
+Three supporting results from this integration are represented by compiled
 Lean modules and registered in `formal_support.csv`. They are imported by
-`D0.All`; neither is a physical-closure claim.
+`D0.All`; none is a physical-closure claim.
 
 | Module | Machine-checked statement | Remaining boundary |
 |---|---|---|
 | [`D0.Algebra.MovingProjectorTransport`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean) | In a possibly noncommutative ring, for idempotent `P` with tangent equation `P dP + dP P = dP`, `K=[dP,P]` satisfies `[K,P]=dP`, and the differentiated cut minus common transport is `(1-P)(dU-[K,U])P`. A separate `StarRing` lemma proves `K` anti-self-adjoint when `P` and `dP` are self-adjoint. | The tangent equation is supplied, not derived from a differentiable projector family. This does not formalize the trace/log-determinant derivative, thermal term, finite-rank Hilbert hypotheses, or physical admission. |
 | [`D0.Geometry.ArchiveGradedRefinementComposedReadout`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean) | Iterates the owned adjacent pullbacks literally, proves their cochain identity for every number of steps and an exact singleton prefix/tail formula. At doubling, the stated fixed-component normalized L1 and L2-squared errors are both exactly `1`. | The probe is the literal one-form embedding but its fixed-component sampler is not selected as a physical observable. The result shows chain-map preservation alone does not imply convergence of that readout; it proves no universal refinement obstruction. |
+| [`D0.Geometry.RefoliationWitnessCoefficientExtraction`](../../03_FORMALIZATION/D0/Geometry/RefoliationWitnessCoefficientExtraction.lean) | From the three exact coefficient equations displayed for the shear, trace, and two-scalar witnesses, proves `a*b=1`, `lambda=1/2`, and `C*D=I₂`. | The bracket/witness equalities are premises. It does not derive the continuum Poisson bracket, strong hypersurface-deformation algebra, canonical D0 variables, lapse generators, or physical admission. |
 
 The first module formalizes the algebraic moving-cut transport portion of the
 published source, not the complete analytic derivative above. The second
-extends the existing open graded-refinement proof target; source-to-claim
-acceptance and physical refinement assumptions remain open. `#print axioms` in
+extends the existing open graded-refinement proof target. The third formalizes
+only the algebraic coefficient extraction from the pinned #334 witness
+equations, not their analytic derivation. Source-to-claim acceptance, the full
+bracket proof, and physical refinement assumptions remain open. `#print axioms` in
 Lean 4.30.0 reports `[propext]` for the generic cut-relative identity and
 `[propext, Classical.choice, Quot.sound]` for the self-adjoint generator and
 complex-matrix specialization. The [compiled declaration receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_refinement_declarations_2026-10-28.json) records actual elaborated signatures, type/proof dependencies, source ranges and axiom footprints for five load-bearing declarations from `D0.All` at this source digest. This is a type-level cross-check against the coded theorem statements; the prose-to-theorem and physical application links still require review.
 
-The repeated graded chain identity inherits
+The earlier declaration receipt for the moving-cut/refinement modules records
+five elaborated declarations at Lean source digest
+`765c08379fe7c14ea3cc0e9b058d6cb405b962069d2269cdf45e385899d48f52`; it does
+not include the new refoliation module. The repeated graded chain identity inherits
 three existing CAR `native_decide` declarations (`carCreateInt_degree_raise`,
 `carCreateInt_singleton_vacuum`, and `carCreateInt_support`), plus
 `propext`, `Classical.choice`, and `Quot.sound`; the fixed-component error
-identity uses only those latter three. No new Lean axioms or `sorry`/`admit` are introduced. The [final `D0.All` build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json) records a successful 4,751-job build on Lean 4.30.0, including project-source, nine pinned dependency checkout, environment and executable fingerprints. It is point-in-time provenance with the explicit boundary that kernel/dynamic libraries, external toolchain settings and generated caches are not authenticated. The modules' source hashes at this checkpoint are
+identity uses only those latter three. Those earlier modules introduce no
+Lean axioms or `sorry`/`admit`. The new coefficient module's actual axiom
+footprint will be recorded in its own elaborated declaration receipt. The
+updated [final `D0.All` build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json)
+records a successful 4,752-job build on Lean 4.30.0, including project-source,
+nine pinned dependency checkout, environment and executable fingerprints. It
+is point-in-time provenance with the explicit boundary that kernel/dynamic
+libraries, external toolchain settings and generated caches are not
+authenticated. The source hashes of the three supporting modules are
 `f10d424372a2bcb1960ee78f7ffa08d2957baa3b5d07aad4a7681bcc4e4ee642` and
-`06d204cc0e8df94a0714a8e8574b493065f8770ea8be1fa1e42d66fb8babb99f`.
+`06d204cc0e8df94a0714a8e8574b493065f8770ea8be1fa1e42d66fb8babb99f`, and
+`a7d7707f104a89556e8de5141cde878396a5b1fe918f87847ef25e777402866b`.
 
 ## What was actually replayed
 
@@ -170,8 +185,10 @@ records normal and optimized runs with Python 3.13.5, PyTorch 2.10.0,
 SymPy 1.14.0, and NumPy 2.3.5. The two outputs match byte-for-byte; their
 parsed values match the published result within `1e-12`, with maximum absolute
 floating-point difference `7.22e-16`. The checker exercises a periodic
-one-coordinate numerical control, not the native D0 bracket. No Lean, full42,
-scientific acceptance, or GR closure is claimed; `GR_closed=false` remains.
+one-coordinate numerical control, not the native D0 bracket. No full theorem
+Lean formalization, full42 replay, scientific acceptance, or GR closure is
+claimed; the separate Lean module proves only the algebraic coefficient
+consequence of the stated witness equations. `GR_closed=false` remains.
 
 The source proof repeats one trace-coefficient witness bullet in §5; its code
 and result contain the three intended distinct coefficient witnesses plus a
