@@ -29,6 +29,7 @@ import D0.Algebra.SedenionClifford8
 import D0.Algebra.SedenionTower
 import D0.Algebra.Sedenions
 import D0.Analysis.MatrixDeterminantDerivative
+import D0.Analysis.MatrixTraceExponentialDerivative
 import D0.Analysis.MidpointQuadrature
 import D0.Born
 import D0.Bridge.AdlerWeissBridge

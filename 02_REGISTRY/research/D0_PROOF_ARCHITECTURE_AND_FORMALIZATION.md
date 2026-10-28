@@ -11929,6 +11929,32 @@ The seven selected declarations have axiom closures `propext`,
 point-in-time inputs and toolchain; generated caches and dynamic libraries
 retain the limitations recorded by the build tool.
 
+The reusable `D0.Analysis.MatrixTraceExponentialDerivative` result proves
+`d Tr(exp A)=Tr(exp A · A')` for an arbitrary differentiable complex-matrix
+curve over real time, without assuming that `A` commutes with its derivative.
+It uses cyclic trace identities for powers, a locally uniform summable
+Frobenius bound and the analytic chain rule. It is a mathematical input to
+the fixed-β thermal term; positivity of the partition function, the logarithm,
+the complete price and physical admission require further application.
+
+For `D0-ARCHIVE-1D-COCHAIN-REFINEMENT-001`, the source candidate
+`75527846bf3603a1c51acf445f8354e3254341be:02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#§1/Eq(1)`
+(blob `c216f19daebc9a6b2a9e732d277350dd2d69f88c`, existing owner #310)
+matches the unscaled incidence identity `intertwining_d_b0_eq_b1_d` and the
+literal isometry/Gram and archive binding declarations already recorded in
+the 1D refinement checkpoint above. For the literal archive carrier use
+`L=N+2` and `m=N+1`; the scale correction and its `3≠2` control remain
+separate. The `BOOK_06/06.spectral` locator has no exact heading match, so
+this source-keyed correspondence does not resolve that locator, accept the
+whole claim, or establish physical refinement. The later 4D chain identity
+is already formalized as recorded above; the older absence statement is
+historical. Scientific ownership and `OPEN` status are unchanged.
+An independent read-only review of this bounded crosswalk in artifact blob
+`3b1dd3f022df9ef9d4b82fa5c6c16f8b1432dcce` checked the literal carrier,
+maps, Gram identities, scale control and unresolved book locator. It did not
+accept the broader energy/Laplacian statements, the whole claim or C0, and
+did not independently replay Lean.
+
 An independent source-to-theorem review passed the bounded cubic same-record
 application `D0.Geometry.nonvacuumCubicCARComplement_positive_with_sameRecordStencilSource_and_refinement`.
 It compared #334 source commit `fe5cf335da04cac14e50407b03f98b96be17dc52`,
