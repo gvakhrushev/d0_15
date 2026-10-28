@@ -13354,10 +13354,10 @@ the centre/gain definitions and all four theorems to
 `D0.Research.CalibratedQuerySourceFloor`; the normalized-source declaration
 retains exactly the stated positive scalar hypotheses.
 
-## Current #334 source checkpoint at `d53ef61c` — cyclic AF return without an extra blank flag — 28 October 2026
+## #334 source checkpoint at `d53ef61c` — cyclic AF return without an extra blank flag — 28 October 2026
 
-The existing Draft #334 has advanced beyond the previously integrated
-`4a57cfd9` checkpoint. Its current head is
+The existing Draft #334 had advanced beyond the previously integrated
+`4a57cfd9` checkpoint at this verification point. The checked head was
 [`d53ef61c8c578c5a6cf16b88d17f8576ced0f64d`](https://github.com/gvakhrushev/d0_15/commit/d53ef61c8c578c5a6cf16b88d17f8576ced0f64d)
 (open, Draft); it contains the user-supplied `eebcb5e` moving-cut result as an
 ancestor. The new source slice is §7dl, added to the existing paid-source memo
@@ -13441,3 +13441,85 @@ the scoped weak-test result recorded for #310 §5. It does not authenticate the
 historical reviewer, independently accept this C0 unit, or turn the specific
 fixed-readout obstruction into a general refinement no-go or physical
 admission claim.
+
+## Latest #334 source checkpoint at `48500384` — canonical AF source transport through earlier cuts — 28 October 2026
+
+The existing Draft #334 has since advanced to
+[`48500384e9a25b25a6a0f54911f5af50c2bc1625`](https://github.com/gvakhrushev/d0_15/commit/48500384e9a25b25a6a0f54911f5af50c2bc1625).
+This is the latest owner head checked in this integration. It composes the
+cyclic AF source from §7dl across every earlier canonical cut, resolving that
+source-composition gap for the same copy-uniform paired profile. For inclusion
+increment `r_i=2k_i`, `m_i=M^r_i`, and
+`delta_i=4(1-c_i^2)`, the exact conditional source map and its normalized
+positive unital contraction are
+
+```text
+T_i(a,b) = p^(r_i+b-a) (m_i(b,a) - delta_i [a=b])
+C_i      = 1 - p^r_i delta_i
+P_i      = T_i / C_i
+delta_j K_(a:m) = (s_(a:m)/C_j) z(P_(a+1)...P_(j-1) x_j)
+```
+
+The full source is composed as
+`A_history = sum_j theta_j P_(a+1:j-1) A_j`. This transports each old-type
+source before taking the ordinary Book trace; multiplying scalar cold values
+alone would miss the source. The positive contraction preserves Hermitian and
+skew components, so guarded skew apparatus sources remain zero through the
+tower, while a same-sign free QUERY source remains visible. The ordinary input
+multiplicities and full price are retained.
+
+I independently replayed the owner's exact
+[`check_tower.py`](https://github.com/gvakhrushev/d0_15/blob/48500384e9a25b25a6a0f54911f5af50c2bc1625/02_REGISTRY/research/sources/d0_cyclic_tower_source_2026-10-28/check_tower.py)
+from commit `48500384` in ordinary, optimized and repeated ordinary Python.
+All three stdout files are byte-identical at SHA-256
+`6e2004400c3b3f7573dfb5b3a15253337e460dce94cba6be2bd4ec658d350d56`; the
+replayed JSON structurally matches the owner's pinned result and all 519
+checks pass. The script SHA-256 is
+`d3a2ec7f0b34f9102cf96cc41c2162896533a8e2689fc0fbbd2edbfb9a587402` (Git
+blob `9526d91c69fdea3e1b2dbbb8d9c57aa799f71794`). The dense-control runs
+also emit NumPy matrix-multiplication RuntimeWarnings in this environment;
+despite those warnings the checker exits successfully and its finite output
+matches the pinned receipt exactly.
+
+The direct two-level control keeps every defining column and GNS input matrix
+unit, with final AF block sizes `(55,34)`, full regular dimension `8362`,
+operator-source error `1.124e-16`, literal GNS error `5.004e-17`, and complete
+price finite-difference error `6.801e-13`. A control that omits two-type
+transport differs by `0.371`. The 240 exact native local-row replays are
+repetitions of the §7dl input, not new results. The larger 88-call device and
+its internal-clock bound were consumed from their pinned owner source, not
+replayed here.
+
+The packet supplies the previously missing source composition only on its
+declared canonical paired profile. It does not prove physical AF actuation,
+equality of that profile with all physical `X_N` variations, or transport from
+another parked past. It runs no Lean, CI, or new full42 physical root. Physical
+selection remains open and `GR_closed=false`. The
+[owner's source memorandum](https://github.com/gvakhrushev/d0_15/blob/48500384e9a25b25a6a0f54911f5af50c2bc1625/02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md),
+[proof](https://github.com/gvakhrushev/d0_15/blob/48500384e9a25b25a6a0f54911f5af50c2bc1625/02_REGISTRY/research/sources/d0_cyclic_tower_source_2026-10-28/PROOF_RU.md),
+and [observed result](https://github.com/gvakhrushev/d0_15/blob/48500384e9a25b25a6a0f54911f5af50c2bc1625/02_REGISTRY/research/sources/d0_cyclic_tower_source_2026-10-28/result.json)
+remain pinned to this owner head.
+
+## Clean cold-start integration for the cyclic AF source — 28 October 2026
+
+The new `cyclic-af-return-without-extra-blank-flag` case was run from clean
+snapshot `404acc9c8be4fb642509ebfa29ca9a7d7f3ac47d`. The compacted cold-start
+report finds all required sources in all 26/26 cases and completes all 27
+benchmark cases. In this case, the pinned #334 §7dl source at commit
+`d53ef61c8c578c5a6cf16b88d17f8576ced0f64d`, blob
+`069f16ed168c43e483dc5b6bc5eaabbac6e848fa`, ranks first; this architecture
+document ranks second. The report contains 173 exact source-reference receipts.
+
+The paired search-process comparison contains 26 queries, including 9 with
+explicit source scope. Current search surfaces expected sources for all 9;
+the legacy serialized answers surface none. This is a retrieval result, not
+semantic acceptance: only one expected-source reference has an exact assembly
+owner link, six have formal-support metadata locators, and five have neither.
+Semantic review remains manual for every query. The AF source remains scoped
+research: its same-execution physical admission and source map into `X_N` are
+open, and `GR_closed=false`.
+
+The [cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-28_cyclic_af.json)
+has SHA-256 `99b2ceb7f8a64491ff2c29f73afc985452471856f4842dd150d04374f4d00937`.
+The [search comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-28_cyclic_af.json)
+has SHA-256 `d6063174b706f778392cb5797acfafe57b7c0c627331345c94c9aaa070c54bfe`.

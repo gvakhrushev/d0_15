@@ -3201,9 +3201,7 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertRegex(comparison["snapshot_commit"], r"^[0-9a-f]{40}$")
         self.assertIn("five bounded text candidates",
                       comparison["comparison_scope"]["current"])
-        self.assertEqual(
-            comparison["metrics"]["query_count"], len(cold_start.CASES)
-        )
+        self.assertEqual(comparison["metrics"]["query_count"], 24)
         self.assertEqual(
             comparison["metrics"]["query_count_with_explicit_source_scope"], 7
         )
@@ -3372,7 +3370,7 @@ class ProofArchitectureTests(unittest.TestCase):
                 digest,
                 f"search comparison digest does not match pinned source {path}",
             )
-        self.assertEqual(comparison["metrics"]["query_count"], len(cold_start.CASES))
+        self.assertEqual(comparison["metrics"]["query_count"], 24)
         metrics = comparison["metrics"]
         self.assertEqual(metrics["query_count_with_explicit_source_scope"], 7)
         self.assertEqual(metrics["expected_source_reference_count"], 8)
@@ -3426,6 +3424,140 @@ class ProofArchitectureTests(unittest.TestCase):
                 ])
             ).hexdigest(),
         )
+
+    def test_cyclic_af_cold_start_reports_are_pinned_to_one_clean_snapshot(self) -> None:
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/"
+            / "d0_proof_architecture_formalization_2026-10-24/reports"
+        )
+        cold_path = report_dir / (
+            "proof_architecture_cold_start_summary_2026-10-28_cyclic_af.json"
+        )
+        comparison_path = report_dir / (
+            "proof_architecture_search_process_comparison_2026-10-28_cyclic_af.json"
+        )
+        cold = json.loads(cold_path.read_text(encoding="utf-8"))
+        comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
+
+        expected_snapshot = "404acc9c8be4fb642509ebfa29ca9a7d7f3ac47d"
+        self.assertEqual(cold["schema"], "d0-proof-architecture-cold-start-summary-v2")
+        self.assertEqual(comparison["schema"], "d0-proof-architecture-search-comparison-v2")
+        for report in (cold, comparison):
+            self.assertEqual(report["snapshot_commit"], expected_snapshot)
+            self.assertFalse(report["worktree_dirty"])
+            for path, digest in report["authority_source_digests"].items():
+                pinned_source = subprocess.check_output([
+                    "git", "show", f"{expected_snapshot}:{path}"
+                ])
+                self.assertEqual(
+                    hashlib.sha256(pinned_source).hexdigest(),
+                    digest,
+                    f"report digest does not match {expected_snapshot}:{path}",
+                )
+
+        for path, key in (
+            ("tools/proof_architecture_cold_start.py", "runner_sha256"),
+            ("tools/proof_architecture.py", "search_engine_sha256"),
+            ("tools/test_proof_architecture.py", "test_sha256"),
+            ("tools/compact_proof_architecture_cold_start.py", "compactor_sha256"),
+        ):
+            pinned_source = subprocess.check_output([
+                "git", "show", f"{expected_snapshot}:{path}"
+            ])
+            self.assertEqual(
+                hashlib.sha256(pinned_source).hexdigest(),
+                cold["replay"][key],
+                f"cold-start provenance does not match {expected_snapshot}:{path}",
+            )
+        comparison_runner = subprocess.check_output(
+            [
+                "git",
+                "show",
+                f"{expected_snapshot}:tools/proof_architecture_process_comparison.py",
+            ]
+        )
+        self.assertEqual(
+            hashlib.sha256(comparison_runner).hexdigest(),
+            comparison["runner_sha256"],
+        )
+
+        self.assertEqual(cold["search_cases_found_all_sources"], 26)
+        self.assertEqual(cold["search_cases_total"], 26)
+        self.assertEqual(cold["benchmark_cases_total"], 27)
+        self.assertEqual(cold["required_source_ref_count"], 173)
+        self.assertTrue(cold["semantic_scope_review_is_manual"])
+        cyclic = next(
+            row for row in cold["cases"]
+            if row["id"] == "cyclic-af-return-without-extra-blank-flag"
+        )
+        self.assertTrue(cyclic["all_required_sources_found"])
+        source_path = (
+            "02_REGISTRY/research/"
+            "A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        )
+        owner = cyclic["required_sources"][source_path]
+        self.assertEqual(owner["candidate_rank"], 1)
+        self.assertEqual(
+            owner["citation_only_refs"][0]["commit"],
+            "d53ef61c8c578c5a6cf16b88d17f8576ced0f64d",
+        )
+        self.assertEqual(
+            owner["citation_only_refs"][0]["blob"],
+            "069f16ed168c43e483dc5b6bc5eaabbac6e848fa",
+        )
+        self.assertTrue(owner["citation_only_refs"][0]["pin_complete"])
+        architecture = cyclic["required_sources"][
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ]
+        self.assertEqual(architecture["candidate_rank"], 2)
+
+        metrics = comparison["metrics"]
+        self.assertEqual(metrics["query_count"], 26)
+        self.assertEqual(metrics["query_count_with_explicit_source_scope"], 9)
+        self.assertEqual(metrics["legacy_scoped_queries_with_expected_source"], 0)
+        self.assertEqual(metrics["current_scoped_queries_with_expected_source"], 9)
+        self.assertEqual(
+            metrics["current_scoped_queries_with_expected_source_assembly_owner_link"],
+            1,
+        )
+        self.assertEqual(
+            metrics["current_expected_source_references_with_formal_support_locator"],
+            6,
+        )
+        self.assertEqual(
+            metrics[
+                "current_expected_source_references_without_assembly_or_formal_support"
+            ],
+            5,
+        )
+        self.assertTrue(metrics["semantic_review_required_for_all_queries"])
+
+    def test_canonical_tower_source_transport_is_retrievable_at_latest_owner_head(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "canonical-af-tower-source-transport"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed pinned tower source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(
+                    status["expected_commit"],
+                    "48500384e9a25b25a6a0f54911f5af50c2bc1625",
+                )
+                self.assertEqual(status["expected_blob"], source["blob"])
+        self.assertIn("physical AF actuation", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
 
     def test_julia_cold_start_tracks_nonzero_chart_composition_boundary(self) -> None:
         case = next(

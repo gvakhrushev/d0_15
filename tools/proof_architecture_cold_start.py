@@ -929,6 +929,37 @@ CASES: list[dict[str, Any]] = [
             "this does not establish physical GR or change GR_closed=false."
         ),
     },
+    {
+        "id": "canonical-af-tower-source-transport",
+        "queries": [
+            "canonical AF tower source transport through every earlier cut positive unital P_i",
+            "check_tower.py exact Golden transfer 519 checks full defining block GNS contraction 512 cuts",
+            "delta_j K source history s over C_j P chain protected Spin ordinary Book trace",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+                "scope_query_indexes": [0, 1, 2],
+            },
+            {
+                "path": "02_REGISTRY/research/A4D_CANONICAL_AF_TOWER_SOURCE_TRANSPORT_2026_10_28.md",
+                "commit": "48500384e9a25b25a6a0f54911f5af50c2bc1625",
+                "blob": "d8a4c467c225587e88525b2d42dcb785e381b38d",
+                "scope_query_indexes": [0],
+            },
+        ],
+        "scope_review": (
+            "The exact positive unital map transports every variation of the declared "
+            "canonical copy-uniform profile through earlier AF cuts and retains its full "
+            "operator source before the ordinary Book trace. The proof consumes the §7dl "
+            "word and does not replay the 88-call device. It does not establish physical AF "
+            "actuation, all-physical-X_N variation completeness, transport from another "
+            "parked past, Lean formalization, or GR closure; GR_closed=false."
+        ),
+    },
 ]
 
 
