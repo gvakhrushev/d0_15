@@ -1,0 +1,33 @@
+{
+  "CI_run": false,
+  "GR_closed": false,
+  "Lean_run": false,
+  "additional_reproduction_all_three_RLE_words_byte_identical": true,
+  "all_physical_variations_identified": false,
+  "binary_dimension": 65536,
+  "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "check_count_includes_repetitive_instruction_validation": true,
+  "checks": 12202,
+  "every_primitive_iterated_individually": false,
+  "generated_word_sha256": {
+    "centre": "22ea825f6103a8987403e605d803c19657a2e387d4e8421a1114a3218ea5745d",
+    "minus": "534f087d490870d4d640aacfc72ed0c8e3bfa2dd732faf0a99fceb288f78da09",
+    "plus": "27901c3a695a3ba71b214f70d25c209aeae219871917aa1de34371f5988515d7"
+  },
+  "incoming_prefix_commit_preserved": "d8d4e15488e483992fa63d6acc5d8053c2752ef5",
+  "input_commit": "48500384e9a25b25a6a0f54911f5af50c2bc1625",
+  "main_changed": false,
+  "new_binary_word_files_in_user_archive": true,
+  "ordinary_optimized_repeat_results_byte_identical": true,
+  "original_regular_dimension": 33448,
+  "physical_admission_proved": false,
+  "primitive_runs_checked_by_high_precision_powers": true,
+  "primitive_stage_count_per_word": 107530502,
+  "published_scientific_commit": "5a6d10031efc97dd7d02c43cf9568201dbc2ab85",
+  "remote_local_blobs_verified": {
+    "checker": "dafb228c94468ff83b73f62e0d5792eba832b948",
+    "proof": "dba92719a208aed5245329060b2aadc6c08c3dbe",
+    "result": "52a9dd556782263ca64b9210c2a9d32cb5df045e"
+  },
+  "word_files_regenerated_by_published_checker": true
+}
