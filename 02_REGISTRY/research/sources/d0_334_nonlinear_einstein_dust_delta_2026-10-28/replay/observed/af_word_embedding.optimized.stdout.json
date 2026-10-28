@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": 24,
+  "checker_sha256": "78afc81c468e69e1cdfe54e3201cb54caa5bae379eaf623cc7367c84f5ed1e5f",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "frame_owner_sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+  "native_word": {
+    "G": 2,
+    "CX": 0,
+    "SourceI": 6,
+    "stages": 8,
+    "dimension": 8,
+    "arbitrary_spin_dimension": 4
+  },
+  "full_working_lift": {
+    "dimension": 136,
+    "input_rank": 8,
+    "old_AF_multiplicity": 2,
+    "complement_dimension": 120,
+    "reflection_plus_dimension": 128,
+    "reflection_minus_dimension": 8
+  },
+  "scope": "exact full-column primitive and input transport; no physical frame-addressability assertion"
+}

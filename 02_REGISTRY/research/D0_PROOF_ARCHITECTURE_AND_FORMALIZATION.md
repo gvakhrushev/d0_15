@@ -12109,12 +12109,15 @@ condition is a route, not a new universal premise. No large-history heat
 replay, Lean theorem for the multi-tick source, physical admission, scientific
 acceptance or `GR_closed` is claimed.
 
-The PR #402 support now includes three related finite matrix/algebra slices.
+The PR #402 support now includes four related finite matrix/algebra slices.
 `D0.Analysis.MatrixMovingHeatFeedback` composes the fixed-parameter thermal
 and positive-chart feedback derivatives when the cut is orthogonal and the
-evolution is isometric. The one-step `D0.Algebra.DirectFeedbackSource` theorem reduces the original
-polynomial return's resolvent-trace jet to `(1−2p²A)H` without assuming
-`[A,H]=0` or `A⁻¹`. The new
+evolution is isometric. `D0.Analysis.MatrixThermalDensityBridge` proves trace
+normalization and identifies the real thermal source with the complex trace
+against the normalized Gibbs density under local Hermiticity. The one-step
+`D0.Algebra.DirectFeedbackSource` theorem reduces the original polynomial
+return's resolvent-trace jet to `(1−2p²A)H` without assuming `[A,H]=0` or
+`A⁻¹`. The new
 `D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price`
 composes the existing thermal and feedback derivatives on one differentiable
 curve and proves the complete finite heat-plus-`−log det` source with an
@@ -12132,7 +12135,7 @@ actual `Δ/P/U` differentiable curve, and the feedback determinant's slit-plane
 chart explicit. It does not vary the Gram, thermal parameter, fugacity, or
 other physical costs, and it does not derive the curves from a native admitted
 execution. The formal-support table and generated `D0.All` import include the
-three related finite modules; those locators do not accept the source claims
+four related finite modules; those locators do not accept the source claims
 or close the remaining physical application.
 
 Local checks for this increment: both changed modules pass narrow Lean builds;
@@ -12200,3 +12203,70 @@ the updated owner input and receipt but does not rerun the owner checker or
 claim #334 CI. No new axiom, `sorry` or `admit` is introduced. This formal
 integration does not establish physical admission, source acceptance,
 compatible refinement, or `GR_closed`.
+
+### #334 nonlinear direct-click source and Einstein–dust — 28 October 2026
+
+The #334 owner advanced to
+`c296829fc2e74d673a2a679baa1e10a49524b290`. Its exact changed source,
+checkers and results are pinned in
+[`d0_334_nonlinear_einstein_dust_delta_2026-10-28`](sources/d0_334_nonlinear_einstein_dust_delta_2026-10-28/README.md).
+This is the existing direct-click programme, and remains distinct from both
+the original full128 all-blank return and the inverse-leg/material-response
+construction.
+
+On the explicitly generated-field sector, the source composes the original
+nonlinear click price with its common reader, gain, full Book contrast,
+literal comparison words and complete clock. Controlled source and word
+errors yield the nonlinear continuum source at fixed query scale; the Ward
+and trace equations on a regular branch force constant curvature and
+material invariants. The source equations then give an aligned timelike
+Einstein–dust sector using existing scalar fields. At `tau=p²` and
+`y₀=2⁻²⁰`, the enclosed nonlinear coefficient is
+`κ*∈(23.414790278587526834413240421129,
+23.414790278587526834413240421130)`. The owner substitutes its previously
+proved non-VSI LTB family with the correct `R/2` normalization and gives a
+full-source recovery estimate by finite native comparisons.
+
+The accompanying AF embedding preserves an arbitrary old input and the
+word's full heat/feedback multiplicity. It is an algebraic representation
+result; physical addressability of the expanded frame remains open. I reran
+the two changed checkers at the exact detached source head: 19 nonlinear
+branch controls and 24 full-word embedding controls passed, with normal and
+optimized outputs byte-equal to each other and the pinned owner JSON, and
+empty stderr under Python 3.9.6/SymPy 1.14.0. The existing full LTB
+curvature/Cartan proof and the full GR-native word were consumed, not rerun.
+
+This theorem is not formalized in Lean and does not assert exact stationarity
+for every finite word. The actual physical Book03 stationary domain,
+admission of the generated-field protocol, independent protocol sources and
+source acceptance remain unresolved. No identification with the separate
+full128 price is made; `GR_closed=false`.
+
+### Combined Lean and source intake validation at #402 source digest `df6e3fa5` — 28 October 2026
+
+The final combined `D0.All` build passes **4,766 Lake jobs** under Lean
+4.30.0, including the current `MatrixThermalDensityBridge` and the four
+Book03 source modules listed above. The Lean source digest is
+`df6e3fa5085b28c7f209e2e7e165609d07f353eb0870e7b155305dcce8128a69`.
+Its [build provenance receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_combined.json)
+has SHA-256
+`b394a0524f90be44a1169581b5c60c488d6f8036e2961da0807f72c072323ec0`.
+The [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/book03_source_formalization_declarations_2026-10-28.json)
+records 39 elaborated declarations across `MatrixMovingHeatFeedback`,
+`MatrixThermalDensityBridge`, `DirectFeedbackSource`, and
+`MovingProjectorBookPrice`, at the same Lean source digest; its SHA-256 is
+`7fd8f8afec8566c4e103d995b7ae657076993663a2c6f715c93b903b25af2a36`. The
+reported axiom union is `Classical.choice`, `Quot.sound` and `propext`. The
+build has existing linter warnings elsewhere in the full import closure.
+
+On this integrated source state, `generate_lean_views.py --check` passes and
+`validate_repo.py` reports 889 claims, 31 assumptions, 58 aliases, 232
+formal-support rows and 955 modules in generated `D0.All`, with zero
+warnings. The direct-content rediscovery regression passes. The retained
+history and direct-geometry packet verifiers pass their hash/blob checks; the
+c296 nonlinear-source packet verifier passes after replaying its 19 branch
+and 24 full-word controls in ordinary and optimized modes. Those outputs
+match the pinned owner observations byte-for-byte, with empty stderr. These
+checks validate the archive, finite formalization and scoped source controls;
+they do not promote the #334 research results to scientific acceptance or
+`GR_closed`.

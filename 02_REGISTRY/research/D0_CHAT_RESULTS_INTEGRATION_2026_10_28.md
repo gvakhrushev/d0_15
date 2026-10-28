@@ -1,7 +1,7 @@
 # D0 chat results: verified source intake and application boundaries
 
 Source owner: existing research [PR #334](https://github.com/gvakhrushev/d0_15/pull/334),
-latest source checkpoint integrated here [`9f23ec82c8e4e044121521658afec4a5e9b8c2f7`](https://github.com/gvakhrushev/d0_15/tree/9f23ec82c8e4e044121521658afec4a5e9b8c2f7).
+latest source checkpoint integrated here [`c296829fc2e74d673a2a679baa1e10a49524b290`](https://github.com/gvakhrushev/d0_15/tree/c296829fc2e74d673a2a679baa1e10a49524b290).
 This is an intake into the existing proof-architecture execution #402, not a
 new scientific owner, claim status, physical selector, or merge of #334.
 The full archive was published in upstream commit
@@ -12,8 +12,9 @@ in `eebcb5e467742df3e9cf7fa9702042d7294aa742`. Subsequent checkpoints
 `172876cdf38bfce6f87fdd4a059d524b60c10eb9`,
 `5fe5203da2439d325dc9ef70f52c1111822fc22b`, and
 `22e729996b70a699710a2d1120a0caa7a08decf8` are separately pinned below;
-the retained-history source at `716387e3` and its later direct-geometry
-application at `9f23ec82` are pinned in successive delta packets.
+the retained-history source at `716387e3`, its direct-geometry application at
+`9f23ec82`, and its nonlinear Einstein-dust application at `c296829f` are
+pinned in successive delta packets.
 
 The nine packages below are preserved as 74 individually readable UTF-8 files
 (650,121 bytes) under [the source intake](sources/d0_chat_intake_2026-10-28/README.md),
@@ -194,18 +195,19 @@ admission, a full42 replay or a Lean proof.
 
 ## Required parent substitution
 
-The next physical application is to bind the supplied original geometric
-operator/source map to the actual common initial state and task, native field
-family and admitted tangent into `U_N,P_N,Delta_N`, including varying cut,
-clock, cost, β/z and every independently sourced term. Evaluate the complete
-source above, preserve the full covector, gain and norm, and prove equality to
-the already owned geometric/matter source or a controlled remainder through
-the relevant refinement. Only then
-can the existing configured nonvacuum solution and conditional exact-root
-results be applied to that same execution. No uniqueness of every microscopic
-program is assumed; no extra decoder, arbitrary counterterm or unproved
-physical selector is introduced here. `GR_closed=false`; full native H+J+R,
-raw216 and general exact-root recovery remain open.
+For the original full128 route, bind its supplied geometric operator/source
+map to the actual common initial state, task and admitted tangent into
+`U_N,P_N,Delta_N`, including varying cut, clock, cost, β/z and each
+independently sourced term; then compare the full covector, gain and norm to
+the owned geometric/matter source through refinement. The separate nonlinear
+direct-click route already supplies an Einstein-dust source/solution theorem
+on its declared generated-field sector. To apply that route to the full
+physical problem, show that the actual Book03 domain, stationary histories,
+initial state, fixed query/shape protocol, internal frame and clock admit or
+are controlled by that sector. The two execution prices are not identified.
+No extra decoder, arbitrary counterterm or unproved physical selector is
+introduced here. `GR_closed=false`; full native H+J+R, raw216 and general
+exact-root recovery remain open.
 
 ## Current #334 continuation: root cut and geometric closure
 
@@ -531,3 +533,62 @@ source packet verifiers both pass; the latter verifies the pinned owner
 receipt and exact source snapshots without rerunning its archived checker.
 `git diff --check` passes. These checks establish repository integrity and
 finite Lean compilation, not physical admission or `GR_closed`.
+
+## Latest #334 composition: nonlinear direct-click source and Einstein–dust
+
+The owner advanced one more commit, to
+`c296829fc2e74d673a2a679baa1e10a49524b290`. The [nonlinear-source intake](sources/d0_334_nonlinear_einstein_dust_delta_2026-10-28/README.md),
+[manifest](sources/d0_334_nonlinear_einstein_dust_delta_2026-10-28/MANIFEST.json),
+and [packet verifier](sources/d0_334_nonlinear_einstein_dust_delta_2026-10-28/verify_nonlinear_einstein_dust_delta.py)
+pin its six changed upstream files, source patch, checker receipts and local
+replay outputs. It continues #334's existing direct-click programme; it is
+not a new execution owner.
+
+On the declared generated-field sector, the source composes the original
+nonlinear click probability with its actual reader/gain, matched full Book
+contrast, native comparison words and clock. Operator and finite-word error
+bounds carry the nonzero source to the nonlinear continuum functional; the
+fixed-query Ward and trace equations then force its regular local branch to
+constant curvature and material invariants. Its full field equations are
+Einstein gravity with an aligned timelike dust sector built from the existing
+scalar fields. At `tau=p²` and `y₀=2⁻²⁰`, the exact branch has
+`κ*∈(23.414790278587526834413240421129,
+23.414790278587526834413240421130)`. The already-owned non-VSI LTB family is
+substituted with the required `R/2` coefficient, and the full source is
+recovered by the declared refinement procedure.
+
+The new work-gadget embedding preserves the previous arbitrary input and the
+complete heat/feedback multiplicity. Its algebraic word embedding does not
+prove physical addressability of the expanded frame alphabet. The nonlinear
+direct-click programme remains distinct from the original all-blank full128
+return and the inverse-leg/material-response construction.
+
+I replayed both changed checkers in the exact detached #334 source checkout:
+the nonlinear branch checker passed 19 controls and the full-word AF
+embedding checker passed 24. Ordinary and `python -O` output matched each
+other and the owner JSON byte-for-byte; stderr was empty under Python 3.9.6
+and SymPy 1.14.0. The existing full LTB curvature/Cartan proof and the entire
+GR-native word were consumed, not rerun. The new nonlinear theorem is not a
+Lean theorem and does not assert exact stationarity for every finite word.
+The physical Book03 domain still needs to be shown to admit or be controlled
+by this generated sector. Physical admission, independent-protocol sources,
+scientific acceptance and `GR_closed` remain open.
+
+## Combined Lean intake checkpoint for PR #402
+
+The four finite Book03 source modules compile in `D0.All` at Lean source
+digest `df6e3fa5085b28c7f209e2e7e165609d07f353eb0870e7b155305dcce8128a69`:
+4,766 Lake jobs pass with Lean 4.30.0. The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_combined.json)
+is SHA-256 `b394a0524f90be44a1169581b5c60c488d6f8036e2961da0807f72c072323ec0`;
+the [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/book03_source_formalization_declarations_2026-10-28.json)
+records 39 declarations in those modules at the same source digest. Repository
+validation reports 232 formal-support rows and a 955-module generated closure
+with zero warnings. Existing linter warnings elsewhere in the full Lean build
+remain.
+
+The `c296829f` nonlinear direct-click and Einstein–dust intake is stored as a
+byte-pinned delta and its two updated source checkers replayed in both normal
+and optimized modes. It remains separate from the original full128 return.
+The finite Lean theorems do not formalize that nonlinear result or discharge
+its physical-admission and same-execution applications; the parent physical
+claim remains open and `GR_closed=false`.
