@@ -881,6 +881,14 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md",
             "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean",
         ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+             "scope_query_indexes": [0]},
+            {"path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean",
+             "scope_query_indexes": [0]},
+            {"path": "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md",
+             "scope_query_indexes": [1]},
+        ],
         "scope_review": (
             "The named Lean result proves that the normalized four-role counting pairing of the "
             "specific composed frozen pullback error with the fixed sampled sine tends to 2/pi. "

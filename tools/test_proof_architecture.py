@@ -4758,6 +4758,11 @@ class ProofArchitectureTests(unittest.TestCase):
         for path in case["required_refs"]:
             status = cold_start._required_source_status(query_pairs, {"path": path})
             self.assertTrue(status["found"], f"cold-start search missed {path}: {status}")
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"], f"cold-start missed scoped source {source}: {status}"
+            )
         self.assertIn("scoped weak-convergence obstruction", case["scope_review"])
         self.assertIn("does not rule out other readouts", case["scope_review"])
 
