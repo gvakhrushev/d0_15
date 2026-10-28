@@ -260,6 +260,8 @@ Exact GitHub `blob/<commit>/<path>` links are now resolvable when their commit o
 
 For the direct query `Перенос и тетрада восстанавливаются из самого native raising operator`, use §8.4 of `02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, published commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob `1c8d59e5533b443d9a015dc4512cfbc160ae7e62`. For the all-jet query, §8.5 states that the full tangent space retains all 16 coframe and 24 link directions on a node, including observer jets, beyond only null/pp-wave-ansatz variations. The pin covers the owner content only; the §5.1 AF radial coframe consumer has its separate exact pin below.
 
+For `archiveJuliaRaisingQuery_nonNull_gamma_recovery`, chi endpoint covariance with nonzero Lorentz norm: published `02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob `1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §8.4 Eq. (27); conditional supporting correspondence only.
+
 C0 is a reviewed set of mathematical units, not files, modules, registry rows, or graph nodes. The figures below describe candidate inputs only; they are not a frozen denominator and no coverage percentage is valid before independent acceptance of the exact package.
 
 Initial candidate sources and crosswalk inputs:
@@ -11802,6 +11804,20 @@ include compilation, physical admission or acceptance of C0.
 The same independent review checked the Gram decomposition and conditional
 application in positive-chart blob `90bb3051765733979f214ddc146e0ca02189b257`;
 it likewise does not establish native execution or physical selection.
+
+On the Lean source digest `4bbf5056da15adbb5d6e4692ddd8c54f9cf38475f5b43074d0bf47c3d13b340a`,
+`python -X utf8 tools/lean_task_build.py final` completed `D0.All` (4,756
+jobs; Lean 4.30.0) with dependency digest
+`a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e` and
+environment digest `b157524d943853ad0a23855c68a20a441915f0609104a93e68d53b4ad3c1a004`.
+The [selected declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/moving_cut_feedback_declarations_2026-10-28.json)
+was extracted from the clean published source snapshot
+`52ec5f72d061452de590c28c13736a8208bd22a2`; its SHA-256 is
+`940bf5e244c72d9ffaa2265f5116243298543b3b5f4351af29cc86940a2797ee`.
+The seven selected declarations have axiom closures `propext`,
+`Classical.choice` and `Quot.sound`. The receipt authenticates the stated
+point-in-time inputs and toolchain; generated caches and dynamic libraries
+retain the limitations recorded by the build tool.
 
 Historical source-candidate, claim-resolution, alias and two metric-receipt
 links above now name the published commit containing the bytes whose SHA-256
