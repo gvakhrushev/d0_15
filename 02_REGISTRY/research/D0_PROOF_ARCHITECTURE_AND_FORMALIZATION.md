@@ -11993,6 +11993,13 @@ published LF SHA-256 values are respectively
 `dd4a6983bbdc3ef3037fe553dbd6225ba9bf99db698eb7c4730b84053e4f3074` and
 `97214d880bb4f1e28d807a369ffee3eaf9f766af1aa35d2623ff2460a503167d`.
 These are retrieval results at that snapshot, not independent acceptance of C0.
+After the nonlinear branch was added, an independent Windows `D0.All` build
+passed 4,768 jobs at Lean source digest
+`82436c075b7aa25a915cbb036e938480a0f3d622a77c3f5855fc234ba57a6b12`.
+Its [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_nonlinear_2026-10-28_windows.json)
+records the local dependency and toolchain boundaries. The retrieval and
+95-test figures above remain bound to their earlier stated snapshot; this
+build does not update them or establish the physical source application.
 
 The final `D0.All` build at Lean source digest
 `c5826858cdc93ebc192cb3a5b871f6b2f840218e785d6ee437ae301446ba2858`
