@@ -85062,6 +85062,523 @@ print(json.dumps(out,indent=2,sort_keys=True))
 ```
 
 
+## 7dc. Final composition: the absolute Book price of one more retained record
+
+28 October 2026. SAME #334 / constitutive/native-programme-v1; native
+realization / final composition. Inputc296829f includes the original
+noncommuting history source, its all40 geometric pullback7da, generated
+resources7cz, and the new
+[nonlinear Einstein-dust source/soundness/recovery](A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md).
+Those positive results are consumed, not repeated or identified with
+one another. Our unpublished parallel derivation of the chronological
+source was superseded by its incoming owner and is not a new result.
+
+The precise new parent application is §7a/§8 of that dust result:
+evaluate the COMPLETE price when its actual retained history is
+extended. Its fixed-K field-source theorem is already proved. It
+does not compare different K, and keeps the absolute baseline and
+all425 N_K d_K heat modes. We now compute that different comparison.
+No new action, operation, detector, continuum root or task is introduced.
+
+Incominga17322e5 is preserved in full. Its7db proves a zero of ONE
+complete scale source on a changing original full128 history at FIXED
+length. That positive result is compatible with the different-duration
+contrast below; it is not refuted or promoted to all-field stationarity.
+
+**Result.** On the stated homogeneous INTERNAL two-grade clock, with
+the original beta=2p² and 0<zeta<1, one genuine three-stage recording
+append has a strictly POSITIVE complete H+J price increment. On the
+actual growing carrier it exceeds3. If both alternatives are first
+put on the SAME complete carrier, including the unused future work
+of the earlier-stop word, the increment still exceeds7/[2(N+3)].
+These are finite contrasts with different true clock lengths. They
+are not derivatives in a continuous K or a no-go for fixed-K GR.
+
+### 903. Consume the full heat trace before taking any source limit
+
+Let d be the full endpoint fibre dimension, excluding the fixed scene
+and clock factors. Retain all DATA, oldRIGHT and work columns. For ANY
+complete unitary endpoint W, the
+[whole-clock owner](A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md)
+gives, at raw length N>=3,
+
+    Z_N(W)=Nd S+4N sum_(l>=1) a_(lN) Re Tr(W^l),
+    S=359+2a_0>=359,
+    0<=a_j<=33 I_j(2 beta/22), 3/4<beta=2p²<4/5.       (903)
+
+The same S applies to every N,d,W here: the actual scene and beta
+are fixed. The number359 retains the excess harmonic modes. This is
+the complete425Nd two-grade carrier, not a normalized trace or cold
+compression. No commutation of the two original scene matrices is
+assumed; their already-proved positive word expansion supplies a_j.
+
+Put x=2/55, q_N=x^N/N!, and define the exact rational bounds
+
+    eta_N=132 q_N/[359(1-x²)(1-q_N)],
+    e_N=(4/3) eta_N/(1-eta_N).
+    H_N(W)=beta^-1 log(Nd S)+epsilon_N(W),
+    |epsilon_N(W)|<=e_N.                               (904)
+
+Indeed the Bessel series gives
+I_j(2 beta/22)<=x^j/[j!(1-x²)], and (lN)!>=(N!)^l bounds
+the sum by q_N/(1-q_N). Use |Tr(W^l)|<=d and
+|log(1+u)|<=|u|/(1-|u|). At N=3, eta_3<1 and
+e_3=0.000003934126342544864...; exact rational arithmetic proves
+2e_3<1/100000. Both eta_N and e_N decrease for every N>=3.
+Moreover (N+3)e_N<=6e_3: bound its positive denominator by the N=3
+denominator and use
+[(N+4)q_(N+1)]/[(N+3)q_N]=[(N+4)/(N+3)]x/(N+1)<1.
+This is an all-N proof, not extrapolation from selected clock sizes.
+
+### 904. Both growing-carrier and same-carrier prices are explicit
+
+Consume the actual7ao358/7cz gadget V, the literal word
+G_z; CX(z,t0); CX(z,lambda_record), on its full sixteen columns.
+Its blank corner is sqrt(p). The fourth work wire remains in the
+full carrier. One real append has
+
+    W_+=W tensor V, N_+=N+3, d_+=16d,
+    C_+=sqrt(p) C, rank(P_input,+)=rank(P_input)=R.
+
+The two full endpoint spectra may differ arbitrarily;904 bounds both.
+Consequently on their OWN growing carriers
+
+    H_(N+3)(W_+)-H_N(W)
+      > (5/4)log[16(N+3)/N]-2e_3
+      > 10/3-2e_3 >3.                                  (905a)
+
+Here log2>2/3, obtained by integrating
+d[log u-2(u-1)/(u+1)]/du=(u-1)^2/[u(u+1)^2] from1 to2.
+
+Equation905a alone is NOT a same-complete-initial-state comparison:
+its carriers differ. For that comparison embed the earlier-stop word
+as W tensor I_16 on the same future work space, with the SAME blank
+input and all unused columns retained in its heat. Its true clock has
+N stages; the extended word has N+3. The factor16 then cancels:
+
+    H_(N+3)(W tensor V)-H_N(W tensor I_16)
+      > (5/4)log[(N+3)/N]-e_N-e_(N+3)
+      > [15/4-12e_3]/(N+3)
+      > 7/[2(N+3)] >0.                                (905b)
+
+We used log(1+u)>=u/(1+u) and 12e_3<1/4. No idle slots are
+inserted, no old carrier is priced as if future columns were absent,
+and no common-duration assumption is imposed. If a task fixes the
+duration, these different-length words are not its alternatives.
+
+### 905. The feedback also increases; its baseline cannot be dropped
+
+Write C for the complete old cold corner and A=C* C, 0<=A<=I_R.
+After K actual independent retained appends, eta=p^K and
+
+    D_K=(1-zeta)I+zeta eta A,
+    D_(K+1)=D_K-zeta(1-p)eta A,
+    J_(K+1)-J_K
+      =-Tr log[I-zeta(1-p)eta D_K^-1 A]>=0.              (906)
+
+D_K is a function of A and is >=(1-zeta)I. The last pencil is
+positive, and the increment is strict whenever C is not zero.
+Every truly passive multiplicity is already included in R. There
+is no additional factor from the sixteen newly blank columns.
+
+The exact dust factorization is retained:
+
+    D_K=d0_K[I-zeta_K(I-A)],
+    d0_K=1-zeta+zeta p^K,
+    zeta_K=zeta p^K/d0_K,
+    J_K=-R log d0_K-Tr log[I-zeta_K(I-A)].
+
+The first term is constant for the existing fixed-K field comparisons,
+but not across K. At A=I the second term is zero and the entire positive
+increment is in that first term. Dropping it is an exact failed control.
+Equations905a/b and906 give the same strict lower bounds for full B=H+J.
+No extra Shannon/Info/work term is invoked to obtain them.
+
+### 906. A literal same-input witness includes every column
+
+The changed checker uses a bounded genuine native witness. On six
+qubits, DATA is wire0, oldRIGHT is the arbitrary unknown wire1, and
+wires2,3,4,5 are blank in BOTH alternatives. Both have input rank4.
+The earlier word is G_0 G_0 G_0, on all64 columns; the later word
+appends G_2; CX(2,3); CX(2,4). Wire5 is retained and passive. Thus
+
+    N_stop=3, N_append=6, d_stop=d_append=64,
+    C_stop=G^3 tensor I_oldRIGHT,
+    C_append=sqrt(p) C_stop,
+    F_stop=0, F_append=(1-p)I_4,
+    J_append-J_stop=-4log(1-zeta+zeta p)>0.              (907)
+
+The same complete initial state may be entangled across DATA and
+oldRIGHT. No reinitialization or postselection occurs. The true heat
+dimensions are81600 and163200; the all-unitary analytic bound proves
+B_append-B_stop>7/12 without diagonalizing either heat matrix.
+At zeta=2^-20 the feedback part alone is approximately
+1.4570849641e-6 (the executed receipt gives its actual digits).
+This witness verifies the new comparison. It is not the dust compiler
+or a claim that all new AF-addressed primitives are physically admitted.
+
+### 907. Substitute this result in the final closure argument
+
+The incoming dust theorem still supplies the complete nonlinear
+Einstein-dust covector, its nonempty inhomogeneous solution family,
+and finite native source recovery at FIXED K. Its retained-error
+construction chooses N_K=N_base+3K and has
+
+    0<g_(h,K)<=C_h p^K,
+    C_h=R zeta alpha gamma/[Omega_h(1-zeta)^2].          (908)
+
+This follows directly from its R1, with zeta_K<=zeta p^K/(1-zeta)
+and D_K>=1-zeta; 0<1-2gamma P_h<=1. At fixed h and base word,
+equations905b,906 therefore imply, even on the common complete carrier,
+
+    [B_(K+1)-B_K^embedded]/g_(h,K)
+       >7/[2C_h(N_base+3K+3)p^K] -> infinity.           (909)
+
+The positive feedback baseline and the changed complete clock were
+not suppressed by the useful field gain. Normalized field recovery
+is therefore NOT price-neutral continuation of the full history.
+Generated work remains generated; its actual added operations still
+have this finite price.
+
+This discharges one concrete comparison in the physical-domain
+application of dust §8. It does NOT establish that earlier stopping
+fulfils a task which requires the extra readable record. If both
+durations are admitted alternatives and a prospective minimum is
+claimed, this particular append is strictly more expensive. If the
+task requires continuation or fixes duration, its native constraint
+must be used; no constraint chosen to impose Einstein is inserted.
+
+Book03.25 already supplies its variational law. A positive discrete
+different-duration contrast is not a contradiction to stationarity
+at fixed N, nor proof that finite stationary words do not exist.
+Endpoint rank R is unchanged. In the generated stage-cut presentation
+the rank changes from NR to(N+3)R, but its identification with Book's
+physical rank evolution is still its own application. K is never
+silently renamed physical time, mesh size or an independent smooth
+Euler variable. Actual actuation of AF growth and its real stages,
+the admitted task/domain and compatible stationary histories retain
+their stated obligations. Both positive GR sectors and the exact
+nonlinear original source7da are preserved. GR_closed=false.
+
+### 908. Reproduction and evidence
+
+The exact changed checker and its observed JSON follow. It imports the
+owned native grammar at its pinned bytes, verifies the actual64-column
+same-input words and their complete feedback, and checks the rational
+bounds and baseline identity. The whole-clock expansion and the
+nonlinear dust/source proofs are consumed at immutable inputc296829f.
+No old root/geometry/large-history/Lean suite or full heat diagonalization
+was rerun. Extraction: save the following Python block with its exact
+newline bytes and run `python3 CHECKER.py REPOSITORY_ROOT`.
+
+Checker SHA256: `b5f46d9cc6bc23ad0030c71243e3924a3934329ed0dd9ef7652e0e5ca746cc43`.
+Observed receipt SHA256: `ddff5b91187e5603d30f0e7967a1e99e0a2b082b17995907ad09643d9a81c633`.
+
+```python
+#!/usr/bin/env python3
+"""Changed comparison: complete Book value under one actual retained append.
+
+Consumes the original whole-clock winding coefficients and already-owned
+three-stage 16-column gadget. No Einstein/root/clock-spectrum replay.
+Run with the repository root as the first argument.
+"""
+from pathlib import Path
+from fractions import Fraction as Q
+from dataclasses import asdict
+import hashlib
+import importlib.util
+import json
+import math
+import subprocess
+import sys
+import sympy as s
+
+INPUT = "c296829fc2e74d673a2a679baa1e10a49524b290"
+PRIMARY = "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+NATIVE = "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+CLOCK = "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md"
+DUST = "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md"
+
+
+def main():
+    repo = Path(sys.argv[1]).resolve()
+    checks = []
+
+    def require(ok, name):
+        if not ok:
+            raise ArithmeticError(name)
+        checks.append(name)
+        print(name, file=sys.stderr, flush=True)
+
+    def git(*args):
+        return subprocess.check_output(["git", "--work-tree="+str(repo), *args], cwd=repo)
+
+    pins = {}
+    sources = {}
+    for path in (PRIMARY, NATIVE, CLOCK, DUST):
+        blob = git("rev-parse", INPUT+":"+path).decode().strip()
+        data = git("cat-file", "blob", blob)
+        pins[path] = {"git_blob": blob, "sha256": hashlib.sha256(data).hexdigest()}
+        sources[path] = data.decode()
+    require("N_+=N+3K,   d_+=16^K d,   r_+=r," in sources[PRIMARY],
+            "consumed actual 358 retention inventory")
+    require("## 7a." in sources[DUST] and "-R\\log d0_K" in sources[DUST],
+            "consumed nonlinear dust owner retains absolute feedback baseline")
+    require("359" in sources[CLOCK] and "425" in sources[CLOCK],
+            "consumed complete two-grade clock and excess harmonics")
+    require(hashlib.sha256((repo/NATIVE).read_bytes()).hexdigest() == pins[NATIVE]["sha256"],
+            "imported native grammar matches immutable owner")
+    spec = importlib.util.spec_from_file_location("native_retained_price", repo/NATIVE)
+    native = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = native
+    spec.loader.exec_module(native)
+    p, alpha = native.P, native.A
+    beta = 2*p*p
+    require(bool(s.simplify(beta-Q(3,4))>0) and bool(s.simplify(Q(4,5)-beta)>0),
+            "original beta lies strictly between 3/4 and 4/5")
+
+    # A literal nonreflective base, with an arbitrary protected oldRIGHT.
+    base = native.Execution(2, (), (1,), (native.Gate("G", (0,)),)*3)
+    common_base = native.Execution(6, (2,3,4,5), (1,), base.gates)
+    plus = native.Execution(6, (2,3,4,5), (1,), base.gates + (
+        native.Gate("G", (2,)), native.Gate("CX", (2,3)), native.Gate("CX", (2,4))))
+    ib = native.inventory(base, max_qubits=6, max_expanded_stages=6)
+    ic = native.inventory(common_base, max_qubits=6, max_expanded_stages=6)
+    ip = native.inventory(plus, max_qubits=6, max_expanded_stages=6)
+    Ub = s.Matrix(native.word_matrix(base, max_qubits=6, max_expanded_stages=6))
+    Uc = s.Matrix(native.word_matrix(common_base, max_qubits=6, max_expanded_stages=6))
+    Up = s.Matrix(native.word_matrix(plus, max_qubits=6, max_expanded_stages=6))
+    Ep = s.Matrix(native.input_isometry(plus, max_qubits=6, max_expanded_stages=6))
+    equal = native.exact_matrix_equal
+    require(equal(Ub.H*Ub, s.eye(4)), "complete native base is unitary")
+    require(equal(Up.H*Up, s.eye(64)), "complete appended native word is unitary")
+    require(equal(Uc, s.kronecker_product(Ub, s.eye(16))),
+            "earlier stopping word keeps all unused work columns on the common carrier")
+    require(equal(Ep.H*Uc*Ep, Ub), "earlier stopping word has the same complete initial cut")
+    require(equal(Ep.H*Up*Ep, alpha*Ub), "same complete old input has the exact attenuated corner")
+    Pp = Ep*Ep.H
+    Fp = Ep.H*Up.H*(s.eye(64)-Pp)*Up*Ep
+    require(equal(Fp, (1-p)*s.eye(4)), "all nonreturn histories supply the positive append defect")
+    require(ib.input_dimension == ip.input_dimension == 4,
+            "endpoint input rank remains four")
+    require(ip.gate_count == ib.gate_count+3 and ip.full_dimension == 16*ib.full_dimension,
+            "actual clock grows by three and full carrier by sixteen")
+    require(base.old_right == plus.old_right == (1,), "unknown oldRIGHT is retained")
+
+    # Uniform all-N arithmetic. Monotonicity for ALL N>=3 follows from
+    # q_(N+1)/q_N=x/(N+1)<1 and positive increasing rational functions.
+    x = Q(2,55)
+    def budget(N):
+        q = x**N/math.factorial(N)
+        eta = Q(132,359)/(1-x*x)*q/(1-q)
+        err = Q(4,3)*eta/(1-eta)
+        return q, eta, err
+    q3, eta3, e3 = budget(3)
+    require(0 < x < 1 and 0 < q3 < 1 and 0 < eta3 < 1,
+            "positive uniform log denominator for every N>=3")
+    require(2*e3 < Q(1,100000), "all-endpoint absolute heat error is below 1e-5")
+    lower = Q(10,3)-2*e3
+    require(lower > 3, "one retained append raises full heat by more than three")
+    require(Q(7,6)*x/4 < 1,
+            "(N+3) q_N decreases for every N>=3")
+    require(12*e3 < Q(1,4), "same-carrier heat increment exceeds 7/[2(N+3)]")
+    # log(2)>2/3 follows by integrating this positive derivative from 1.
+    u = s.symbols("u", positive=True)
+    log_test = s.diff(s.log(u)-2*(u-1)/(u+1),u)
+    require(s.cancel(log_test-(u-1)**2/(u*(u+1)**2)) == 0,
+            "exact elementary logarithm lower bound used at 2")
+    require(s.cancel(s.diff(s.log(u)-(u-1)/u,u)-(u-1)/u**2) == 0,
+            "exact logarithm lower bound for unequal true clock lengths")
+
+    z, eta, chi, ps = s.symbols("z eta chi p", positive=True)
+    D = 1-z+z*eta*chi
+    Dnext = 1-z+z*ps*eta*chi
+    xi = z*(1-ps)*eta*chi/D
+    require(s.cancel(Dnext-D*(1-xi)) == 0, "exact positive feedback increment pencil")
+    require(s.cancel(D-Dnext-z*(1-ps)*eta*chi)==0,
+            "feedback does not decrease under an actual retained append")
+    d0 = 1-z+z*eta
+    zeff = z*eta/d0
+    require(s.cancel(D-d0*(1-zeff*(1-chi)))==0,
+            "effective-z factorization retains its absolute baseline")
+    require(s.cancel((D-Dnext).subs(chi,1)-z*(1-ps)*eta)==0,
+            "dropping baseline misses positive cost even at zero old leakage")
+    z0 = s.Rational(1,2**20)
+    feedback = -4*s.log(1-z0+z0*p)
+    qbounds = []
+    for N in (3,6,26):
+        q, etaN, err = budget(N)
+        qbounds.append({"N":N,"q":str(q),"relative_trace_error":str(etaN),
+                        "absolute_heat_error":str(err),"diagnostic":str(float(err))})
+    result = {
+        "status":"PASS", "GR_closed":False, "input_commit":INPUT,
+        "checker_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "input_pins":pins, "checks":checks,
+        "literal_base":asdict(ib), "literal_common_carrier_base":asdict(ic), "literal_append":asdict(ip),
+        "full_heat_dimensions":[425*ib.gate_count*ib.full_dimension,
+                                425*ic.gate_count*ic.full_dimension,
+                                425*ip.gate_count*ip.full_dimension],
+        "uniform_N_ge_3_heat_increment_lower":str(lower),
+        "uniform_heat_increment_lower_diagnostic":str(float(lower)),
+        "coarser_strict_full_B_increment_lower":"3",
+        "common_carrier_strict_B_increment_lower":"7/[2(N+3)]",
+        "literal_common_carrier_strict_B_increment_lower":"7/12",
+        "heat_error_bounds":qbounds,
+        "literal_feedback_increment_exact":str(feedback),
+        "literal_feedback_increment_diagnostic":str(s.N(feedback,35)),
+        "not_claimed":["physical admission of carrier growth", "admissibility across horizons for a fixed task",
+                       "a derivative in discrete K", "failure of fixed-K Einstein-dust recovery",
+                       "exact finite stationary roots", "physical GR closure"]
+    }
+    print(json.dumps(result, indent=2, ensure_ascii=False, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+```json
+{
+  "GR_closed": false,
+  "checker_sha256": "b5f46d9cc6bc23ad0030c71243e3924a3934329ed0dd9ef7652e0e5ca746cc43",
+  "checks": [
+    "consumed actual 358 retention inventory",
+    "consumed nonlinear dust owner retains absolute feedback baseline",
+    "consumed complete two-grade clock and excess harmonics",
+    "imported native grammar matches immutable owner",
+    "original beta lies strictly between 3/4 and 4/5",
+    "complete native base is unitary",
+    "complete appended native word is unitary",
+    "earlier stopping word keeps all unused work columns on the common carrier",
+    "earlier stopping word has the same complete initial cut",
+    "same complete old input has the exact attenuated corner",
+    "all nonreturn histories supply the positive append defect",
+    "endpoint input rank remains four",
+    "actual clock grows by three and full carrier by sixteen",
+    "unknown oldRIGHT is retained",
+    "positive uniform log denominator for every N>=3",
+    "all-endpoint absolute heat error is below 1e-5",
+    "one retained append raises full heat by more than three",
+    "(N+3) q_N decreases for every N>=3",
+    "same-carrier heat increment exceeds 7/[2(N+3)]",
+    "exact elementary logarithm lower bound used at 2",
+    "exact logarithm lower bound for unequal true clock lengths",
+    "exact positive feedback increment pencil",
+    "feedback does not decrease under an actual retained append",
+    "effective-z factorization retains its absolute baseline",
+    "dropping baseline misses positive cost even at zero old leakage"
+  ],
+  "coarser_strict_full_B_increment_lower": "3",
+  "common_carrier_strict_B_increment_lower": "7/[2(N+3)]",
+  "full_heat_dimensions": [
+    5100,
+    81600,
+    163200
+  ],
+  "heat_error_bounds": [
+    {
+      "N": 3,
+      "absolute_heat_error": "2129600/541314593019",
+      "diagnostic": "3.934126342544864e-06",
+      "q": "4/499125",
+      "relative_trace_error": "532400/180438730073"
+    },
+    {
+      "N": 6,
+      "absolute_heat_error": "2129600/1350933043619924019",
+      "diagnostic": "1.5763919685416687e-12",
+      "q": "4/1245628828125",
+      "relative_trace_error": "532400/450311014540507073"
+    },
+    {
+      "N": 26,
+      "absolute_heat_error": "4259200/92598558766404075253411208142402706932989700727933086454868316638519913",
+      "diagnostic": "4.599639623705776e-65",
+      "q": "8/85380570699997026619984351085947768529291893355548381805419921875",
+      "relative_trace_error": "1064800/30866186255468025084470402714134235644329900242644362151622772213904771"
+    }
+  ],
+  "input_commit": "c296829fc2e74d673a2a679baa1e10a49524b290",
+  "input_pins": {
+    "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md": {
+      "git_blob": "154b341f17adce88594b0b5e9df0d38c0283d288",
+      "sha256": "d2951e92a97c5d9ab088c27e0cd3af0989a613df57cf9d1546d2281b6eefa228"
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "git_blob": "202ec8cbb65ee7a3ec1932d0fc09f4290659fa3a",
+      "sha256": "f0e9cca2e1ccca5b43a2839cc92c3936de970fca7c0162e92e6996ae1d49fc77"
+    },
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": {
+      "git_blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    },
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": {
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  },
+  "literal_append": {
+    "blank_count": 4,
+    "cut_rank": 4,
+    "cx_count": 2,
+    "full_dimension": 64,
+    "g_count": 4,
+    "gate_count": 6,
+    "input_dimension": 4,
+    "qubits": 6,
+    "source_i_count": 0,
+    "unknown_wires": [
+      0,
+      1
+    ]
+  },
+  "literal_base": {
+    "blank_count": 0,
+    "cut_rank": 4,
+    "cx_count": 0,
+    "full_dimension": 4,
+    "g_count": 3,
+    "gate_count": 3,
+    "input_dimension": 4,
+    "qubits": 2,
+    "source_i_count": 0,
+    "unknown_wires": [
+      0,
+      1
+    ]
+  },
+  "literal_common_carrier_base": {
+    "blank_count": 4,
+    "cut_rank": 4,
+    "cx_count": 0,
+    "full_dimension": 64,
+    "g_count": 3,
+    "gate_count": 3,
+    "input_dimension": 4,
+    "qubits": 6,
+    "source_i_count": 0,
+    "unknown_wires": [
+      0,
+      1
+    ]
+  },
+  "literal_common_carrier_strict_B_increment_lower": "7/12",
+  "literal_feedback_increment_diagnostic": "0.0000014570849640645059491155073893549430",
+  "literal_feedback_increment_exact": "-4*log(sqrt(5)/2097152 + 2097149/2097152)",
+  "not_claimed": [
+    "physical admission of carrier growth",
+    "admissibility across horizons for a fixed task",
+    "a derivative in discrete K",
+    "failure of fixed-K Einstein-dust recovery",
+    "exact finite stationary roots",
+    "physical GR closure"
+  ],
+  "status": "PASS",
+  "uniform_N_ge_3_heat_increment_lower": "1804377717530/541314593019",
+  "uniform_heat_increment_lower_diagnostic": "3.333325465080648"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

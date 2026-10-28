@@ -17085,3 +17085,72 @@ Embedded code and both observed receipts match their exact SHA256.
 Incomingc296829f's nonlinear Einstein--dust application is preserved
 after rebase, at its separate direct-click source scope. No unchanged
 full corpus, Lean, independent acceptance or remote CI replay is claimed.
+
+### Final closure attempt: apply the absolute price to actual history growth — 28 October
+
+SAME #334 / constitutive/native-programme-v1; native realization / final
+composition, inputc296829f. Consume the newly published direct original
+history source and all40 geometric map, plus the nonlinear Einstein-dust
+source/soundness/recovery and its actual retained-gadget schedule. The
+incoming history-source application supersedes our unpublished duplicate
+derivation; its private calculation is not counted as a new parent result.
+
+The next exact application is the complete Book VALUE of successive
+retained histories, not another fixed-depth field derivative. The new
+dust result keeps -R log d0_K and all425 N_K d_K heat modes, but compares
+fields at the same K. Compute the finite contrast K to K+1 with its
+actual three-stage native recording gadget, d_K to16 d_K, N_K toN_K+3,
+unchanged oldRIGHT and unchanged initial endpoint rank. Consume the
+all-unitary clock coefficient bound to retain the absolute thermal term.
+This checks a concrete possible extension in the remaining physical
+history-domain application; it does not assume such different horizons
+are alternatives of every fixed task, or differentiate discrete K.
+
+Owned write paths remain this brief and the primary source memo. Smallest
+decisive check: exact all64-column native append with protected oldRIGHT,
+the unchanged full-feedback baseline, and a rational all-N heat bound.
+No new action, primitive, selector, GR root search, task or acceptance.
+
+Result: primary7dc903--909 evaluates that exact missing finite comparison.
+At original beta, the full homogeneous INTERNAL clock price increases
+by more than3 when the declared carrier grows by16 and the actual clock
+by3. For a SAME-complete-input comparison the earlier word is first
+embedded with all future blank/work columns retained. The dimension
+factor then cancels, but its full H+J increment still exceeds7/[2(N+3)].
+Feedback is nondecreasing and strictly increases for a nonzero cold
+corner; its -R log d0_K baseline cannot be removed across K.
+
+The actual native witness has3 versus6 stages on the SAME64-column
+carrier, arbitrary protected oldRIGHT, input rank4 and heat dimensions
+81600 versus163200. Exact algebra checks its full unitary/cold/feedback
+maps; the consumed whole-clock coefficient theorem plus exact rational
+bounds proves the heat contrast for all N>=3 without a large spectrum
+replay. At the incoming dust gain the positive continuation contrast
+diverges after normalization, while its fixed-K field recovery stays
+unchanged. Embedded checker and observed JSON retain immutable inputs.
+
+This is a scoped route correction in the final physical-domain
+application, not a claimed failure of fixed-N stationarity. It does not
+make early stopping admissible when the task requires another readable
+record or fixes duration. K, stage rank and physical time remain distinct.
+The admitted comparison/task and actual compatible stationary histories
+still need their same-execution application; they are not supplied by
+renaming the nonempty asymptotic Einstein-dust sector physical closure.
+No Ready, retirement, scientific acceptance or GR_closed promotion.
+
+Final validation of7dc after incominga17322e5: the changed exact native/
+rational checker passes under Python3.9.6/SymPy1.14.0. Work, agent
+protocol, assembly and repository guards pass; warnings0 and
+scientific_promotion=false. The existing result template was read; no
+acceptance row or lifecycle state was changed. Embedded code/observed
+JSON and SHA256, syntax, new local links and equation numbering were
+checked. Removing only7dc recovers all2884141 incoming primary bytes;
+all1106053 incoming brief bytes remain an exact prefix. Both owned
+changes are insertion-only. No remote CI or physical acceptance claimed.
+
+Incominga17322e5 is preserved in full, including its one full-source
+scale-critical point on a changing original history at fixed length.
+Our different-duration price contrast is compatible with that positive
+result and does not refute fixed-N stationarity. The new section is7dc,
+equations903--909; the changed calculation still uses its immutable
+c296829f inputs. No unchanged mathematical replay is required.
