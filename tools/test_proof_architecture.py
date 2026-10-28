@@ -5134,6 +5134,38 @@ class ProofArchitectureTests(unittest.TestCase):
                       view["interpretation"])
 
 
+    def test_chat_moving_cut_source_is_retrievable_without_physical_owner_inference(self) -> None:
+        data = proof.load_dataset(proof.ROOT)
+        hits = proof.full_text_search(proof.ROOT, "moving-cut")
+        by_source = {item["source"]: item for item in hits}
+        source_path = "02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md"
+        integration_path = "02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md"
+        self.assertIn(source_path, by_source)
+        self.assertIn(integration_path, by_source)
+
+        links = proof._declared_source_links(data, source_path)
+        self.assertEqual(links["owner_status"], "no_exact_assembly_owner_link")
+        self.assertEqual(
+            [row["lean_module"] for row in links["formal_support_locators"]],
+            ["D0.Algebra.MovingProjectorTransport"],
+        )
+        self.assertEqual(
+            links["formal_support_locators"][0]["status"], "metadata_locator_only"
+        )
+
+        module_hits = proof.structured_search(data, "D0.Algebra.MovingProjectorTransport")
+        self.assertEqual(module_hits[0]["kind"], "formal-support-metadata")
+        self.assertEqual(module_hits[0]["key"], "D0.Algebra.MovingProjectorTransport")
+        refinement_hits = proof.structured_search(
+            data, "D0.Geometry.ArchiveGradedRefinementComposedReadout"
+        )
+        self.assertEqual(refinement_hits[0]["kind"], "formal-support-metadata")
+        self.assertIn(
+            "D0-ARCHIVE-GRADED-REFINEMENT-CHAIN-MAP-001",
+            refinement_hits[0]["record"]["referenced_by"],
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
 

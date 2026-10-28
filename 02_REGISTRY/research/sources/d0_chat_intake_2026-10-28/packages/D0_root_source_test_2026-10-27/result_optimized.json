@@ -1,0 +1,117 @@
+{
+  "arithmetic": "Fractions + symbolic algebraic Q(sqrt(5)); mpmath100 for dilation controls",
+  "branches_per_table": 1024,
+  "checks": 4217,
+  "coin_readiness": "0.00522961267308126815858768317908051254811569667698363143988887",
+  "common_threshold_denominator": 128,
+  "decoded_table_count": 2,
+  "direct_Golden_calls_coin_layer_only": 14,
+  "exact_expected_reports": {
+    "A": {
+      "0,0": "1/8",
+      "0,2": "1/64",
+      "2,0": "1/64"
+    },
+    "B": {
+      "0,0": "1/8",
+      "0,2": "-1/128",
+      "0,4": "1/64",
+      "2,0": "1/64"
+    }
+  },
+  "fair_resource_count": 7,
+  "full_price_source_A_at_B_root": "0.000000000309721916847139100668841569398413236034319319614035519566375",
+  "large_native_word_emitted": false,
+  "native_logical_gate_palette": "same conditional heralded interface as prior packet, not newly derived",
+  "original_access_interface": "two geometric signs plus eight material signs",
+  "stationary_points_A": [
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "stationary_points_B": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-1/2"
+    ],
+    [
+      "0",
+      "1/2"
+    ]
+  ],
+  "status": "PASS_FIXED_INTERFACE_POLYNOMIAL_SOURCE_REALIZATION",
+  "the_two_examples_are_full_models_of_D0": false,
+  "threshold_min_max": {
+    "A": [
+      12,
+      20
+    ],
+    "B": [
+      11,
+      21
+    ]
+  },
+  "unconditional_GR_closed": false,
+  "unconditional_one_law": "k * p^21; failure=1-128*p^21",
+  "whole_dilation_checks": [
+    {
+      "objective": "A",
+      "price": "0.00000508325698310737021150070378307766965818136208",
+      "probability": "0.125",
+      "source_x": "0.0",
+      "source_y": "0.0",
+      "x": "0.0",
+      "y": "0.0"
+    },
+    {
+      "objective": "A",
+      "price": "0.0000050833348211154199412043833978285236300742032",
+      "probability": "0.12890625",
+      "source_x": "0.0",
+      "source_y": "0.00000000030972191684713910066884156939841323603431932",
+      "x": "0.0",
+      "y": "0.5"
+    },
+    {
+      "objective": "A",
+      "price": "0.00000508330412929552579103166653593288454685170085",
+      "probability": "0.1273611111111111111111111111111111111111",
+      "source_x": "0.000000000124404607685729995733442491421619062059471359",
+      "source_y": "0.000000000207341012809549992889070819036031770099118932",
+      "x": "0.2",
+      "y": "0.33333333333333333333"
+    },
+    {
+      "objective": "B",
+      "price": "0.00000508325698310737021150070378307766965818136208",
+      "probability": "0.125",
+      "source_x": "0.0",
+      "source_y": "0.0",
+      "x": "0.0",
+      "y": "0.0"
+    },
+    {
+      "objective": "B",
+      "price": "0.00000508323739625259592133305800765850216209786281",
+      "probability": "0.1240234375",
+      "source_x": "0.0",
+      "source_y": "0.0",
+      "x": "0.0",
+      "y": "0.5"
+    },
+    {
+      "objective": "B",
+      "price": "0.00000508325597840613402664754996783645595412976781",
+      "probability": "0.124949845679012345679012345679012345679",
+      "source_x": "0.000000000125209602921176495821592178780828524303788021",
+      "source_y": "-0.0000000000579674087598039332507371198059391316221240838",
+      "x": "0.2",
+      "y": "0.33333333333333333333"
+    }
+  ]
+}

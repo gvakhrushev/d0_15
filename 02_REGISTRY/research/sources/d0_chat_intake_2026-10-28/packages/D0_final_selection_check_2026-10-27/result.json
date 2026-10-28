@@ -1,0 +1,85 @@
+{
+  "status": "PASS_EXACT_SAME_INVENTORY_CLOSED_SELECTION_TEST",
+  "checks": 59,
+  "algebra": "Q[t]/(t^4+t^2-1), t=sqrt(phi^-1)>0",
+  "word_chronological_zero": "GXXGXXXX",
+  "word_chronological_nonzero": "GXXXXGXX",
+  "count_per_word": {
+    "G": 2,
+    "X": 6
+  },
+  "full_fibre_dimension": 8,
+  "clock_length": 8,
+  "active_rank_without_RIGHT": 4,
+  "RIGHT_spectator": 128,
+  "scene_vertices": 33,
+  "scene_edges": 359,
+  "H0_dimension_without_RIGHT": 2112,
+  "H1_dimension_without_RIGHT": 25088,
+  "extra_harmonic_count_without_RIGHT": 22976,
+  "heat_equal_by_exact_intertwiner": true,
+  "full_graded_heat_value_diagnostic": 19.60580731147285,
+  "feedback_zero": "0",
+  "feedback_nonzero": "4 p^3 P",
+  "full_H_plus_J_difference_exact": "-512 log(1 - 2^-20 * 4 p^3)",
+  "full_H_plus_J_difference_numeric": "0.0004610704761577144178754751773162166153173329046659765929",
+  "orbit_critical_controls": [
+    {
+      "name": "aligned",
+      "critical": true,
+      "feedback_idempotent": true,
+      "derivatives": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "one_max_leak",
+      "critical": true,
+      "feedback_idempotent": true,
+      "derivatives": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "two_max_leak",
+      "critical": true,
+      "feedback_idempotent": true,
+      "derivatives": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "intermediate",
+      "critical": false,
+      "feedback_idempotent": false,
+      "derivatives": [
+        "0",
+        "-1/8",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "original_all42_gravity_roots_replayed": false,
+  "same_mandatory_GR_task_proved": false,
+  "all_D0_core_models_refuted": false,
+  "unconditional_GR_closed": false,
+  "scope": "Refutes automatic selection from closure+this fixed master+the cited available palette; does not forbid a justified same-task constrained GR realization."
+}

@@ -198,6 +198,8 @@ The 40 proof-architecture tests pass, and `gr_assembly.py check` remains valid
 with scientific promotion false. This is one source-keyed candidate
 reconciliation, not an accepted C0 package or coverage claim.
 
+The public aggregate import then passed a final `D0.All` build (4,751 Lake jobs). Its [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json) binds Lean source SHA-256 `765c08379fe7c14ea3cc0e9b058d6cb405b962069d2269cdf45e385899d48f52`, the nine pinned Lake package revisions and checkout-byte checks (dependency digest `a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e`), environment digest `77f9701d8abce8dbb1085e906a451f0bc69e78515d69e53012b31f0becfa2d18`, and Lean 4.30.0 executable fingerprints. The receipt is point-in-time source/tool provenance; it does not authenticate the kernel, dynamic libraries, external toolchain settings or generated caches. Five load-bearing declarations also have [elaborated signature evidence](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_refinement_declarations_2026-10-28.json) extracted from that compiled public import, with actual type/proof dependencies and axiom footprints.
+
 ## Scientific boundary and reuse vertical
 
 This work does not select a physical implementation or close GR. Keep complete Book03/Cost-Info/source admission, same-execution clock/controller/work selection, physical metric descent/frame selection, original H+J+R, positive_gr, and raw216 open under their existing owners. Preserve #334; do not duplicate or retire its science. Conditional assumptions remain in theorem signatures. Connes reconstruction remains conditional when its needed object is a supplied field.
@@ -11526,3 +11528,40 @@ control; its receipt is
 The matching search comparison is
 [`proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json`](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_search_process_comparison_2026-10-27_metric_bb0ae145.json)
 (SHA-256 `74ba3f2726ecbb72ad433ac6cd5150958576d1916232b8718b438f07f16b7952`).
+
+### 28 October source intake: nine chat packages and the moving-cut source
+
+The existing #334 source commit `eebcb5e467742df3e9cf7fa9702042d7294aa742`
+is now consumed by the current architecture through
+[`D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md`](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md).
+That map preserves the late root-source universality and selection limitations
+with the positive constructions, and identifies the remaining same-execution
+native source map, full covector, gain, norm and refinement application. The
+original owner remains #334; the intake creates no accepted scientific claim
+or new physical selector.
+
+All 74 restored UTF-8 members are present in individually readable form with
+the original upstream inventory and a read-only SHA-256 verifier. The
+original moving-cut proof and finite checker are present at their published
+paths. Historical receipts are kept separately from new independent replay.
+Archive integrity, finite numerical controls and semantic source review have
+separate scopes; the original nine ZIP archives themselves were not available
+for a fresh byte/CRC verification. The user-supplied moving-cut source remains
+conditional on its fixed-rank positive-Hilbert carrier and actual admitted
+variation, and is not a completed native 42-component or GR source proof.
+
+The current formalization slice is also wired into `formal_support.csv` and
+the generated `D0.All` imports. `D0.Algebra.MovingProjectorTransport`
+formalizes the noncommutative projector-tangent and cut-transport algebra
+used by that source, while `D0.Geometry.ArchiveGradedRefinementComposedReadout`
+extends the existing open graded-refinement claim with literal multi-step
+composition and a fixed-component sampling control. Both are supporting
+theorems only; the trace/log-determinant derivative, physical readout choice,
+source-to-claim acceptance and physical refinement remain outside their
+conclusions.
+The existing `proof_architecture.py search` now retrieves the published
+moving-cut note and the integration map; its regression test asserts that the
+Lean support row is still reported as a metadata locator and that no physical
+assembly-owner relation is inferred. The composed refinement module is found
+through its exact `formal_support` locator to the existing open chain-map
+claim.

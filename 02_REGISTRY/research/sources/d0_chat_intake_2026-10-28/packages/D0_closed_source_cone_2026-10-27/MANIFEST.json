@@ -1,0 +1,51 @@
+{
+  "created_date": "2026-10-27",
+  "repository": "gvakhrushev/d0_15",
+  "research_parent": "PR #334",
+  "read_head": "d42fd03b06522ce6e5eadc3fd51339e0b82274e6",
+  "new_GitHub_commits": false,
+  "normal_and_optimized_receipts_equal": true,
+  "unconditional_GR_closed": false,
+  "files": [
+    {
+      "name": "PROOF_RU.md",
+      "bytes": 34759,
+      "sha256": "f114c232e01485d0ebead3dba4d84396e926d1fe5ed486c464404431ecbdf248"
+    },
+    {
+      "name": "README_RU.md",
+      "bytes": 2610,
+      "sha256": "ca9ce79e58a43c91e54991f289b25a9c7405193995f72d4801dac595adb33e50"
+    },
+    {
+      "name": "check_closed_source_cone.py",
+      "bytes": 11833,
+      "sha256": "2ababde604b23660a0691edc73c46fdf26e64ea235793b98f0d8cb971f1b9647"
+    },
+    {
+      "name": "requirements.txt",
+      "bytes": 28,
+      "sha256": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94"
+    },
+    {
+      "name": "result.json",
+      "bytes": 8585,
+      "sha256": "602ea5ce60d31e263681ee03d10d3afc4b02adff23ce0d04ea01b562a755ed10"
+    },
+    {
+      "name": "result_normal.json",
+      "bytes": 8585,
+      "sha256": "602ea5ce60d31e263681ee03d10d3afc4b02adff23ce0d04ea01b562a755ed10"
+    },
+    {
+      "name": "result_optimized.json",
+      "bytes": 8585,
+      "sha256": "602ea5ce60d31e263681ee03d10d3afc4b02adff23ce0d04ea01b562a755ed10"
+    },
+    {
+      "name": "run_stdout.txt",
+      "bytes": 8585,
+      "sha256": "602ea5ce60d31e263681ee03d10d3afc4b02adff23ce0d04ea01b562a755ed10"
+    }
+  ]
+}

@@ -21,6 +21,7 @@ import D0.Algebra.FiniteWeightedAdjoint
 import D0.Algebra.GaloisComposite
 import D0.Algebra.GaloisPhiNontrivial
 import D0.Algebra.HurwitzLocalBoundary
+import D0.Algebra.MovingProjectorTransport
 import D0.Algebra.SedenionBrownS3
 import D0.Algebra.SedenionClifford8
 import D0.Algebra.SedenionTower
@@ -404,6 +405,7 @@ import D0.Geometry.ArchiveGradedCochainRefinement
 import D0.Geometry.ArchiveGradedCochainSectorTrace
 import D0.Geometry.ArchiveGradedMetricMeasureBinding
 import D0.Geometry.ArchiveGradedRefinementChainMap
+import D0.Geometry.ArchiveGradedRefinementComposedReadout
 import D0.Geometry.ArchiveHeatTrace
 import D0.Geometry.ArchiveHodgeCARDirac
 import D0.Geometry.ArchiveHodgeCARDiracKernel

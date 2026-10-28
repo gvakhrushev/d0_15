@@ -1,0 +1,30 @@
+{
+  "COMPLETE_BOOK_SOURCE_APPLICATION.md": {
+    "bytes": 13775,
+    "sha256": "dac2fdfccfd4ff91867ecc90cf676aadf8f860542960b9f812f799a753e3b343"
+  },
+  "README_RU.md": {
+    "bytes": 1564,
+    "sha256": "c763a51ec02dff39e497c983e8788dbc663dd1424b99ef92e00d687f150cc33a"
+  },
+  "REMOTE.json": {
+    "bytes": 776,
+    "sha256": "6d3d19ee3a584bf6f7d390e5e14a6640bd778a6beccc5cad61055b17dbc3386a"
+  },
+  "check_original_car.py": {
+    "bytes": 991,
+    "sha256": "4b39ddaa3abb29b9f2e1b3a557fd6152d3478758089d291d6aae998b699100e2"
+  },
+  "complete_book_source_application_check.py": {
+    "bytes": 6827,
+    "sha256": "d58d5fce218dea0f8d8249d00a74daba72382d17b8b608ad1adbb29b86d3327f"
+  },
+  "complete_book_source_application_result.json": {
+    "bytes": 922,
+    "sha256": "590bc4fb0b3e0377e6ee7b1322aba035fdf75bb132619730e5c8cdc1c8204d89"
+  },
+  "complete_book_source_application_result_optimized.json": {
+    "bytes": 922,
+    "sha256": "590bc4fb0b3e0377e6ee7b1322aba035fdf75bb132619730e5c8cdc1c8204d89"
+  }
+}

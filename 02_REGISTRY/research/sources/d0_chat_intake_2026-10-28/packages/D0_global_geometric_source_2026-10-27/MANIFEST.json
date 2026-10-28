@@ -1,0 +1,26 @@
+{
+  "PROOF_RU.md": {
+    "bytes": 18539,
+    "sha256": "991bd1c98cead12610af6c3b61645dd7b4f8dc595d288a89d6be847e63536361"
+  },
+  "README_RU.md": {
+    "bytes": 2023,
+    "sha256": "1a5bd1172b7ebae4834310f4ebf73ee0cd93a0e42d71d705dfaa44c02d3538b4"
+  },
+  "REMOTE.json": {
+    "bytes": 973,
+    "sha256": "57a3fa0834c60f2dbbf3158fa4483211ab6199d5cf5eb51842e8ad3a97580f97"
+  },
+  "check_parity_bridge.py": {
+    "bytes": 10265,
+    "sha256": "d9312063fe30ffabb934c8bde72d6273459970f213963eaa143573abe88d47c5"
+  },
+  "result.json": {
+    "bytes": 1712,
+    "sha256": "658c7fd031e32655c7f3f3a7b082c63c0aaddbf4504fae9b7b40b46d69d5fbb7"
+  },
+  "result_optimized.json": {
+    "bytes": 1712,
+    "sha256": "658c7fd031e32655c7f3f3a7b082c63c0aaddbf4504fae9b7b40b46d69d5fbb7"
+  }
+}

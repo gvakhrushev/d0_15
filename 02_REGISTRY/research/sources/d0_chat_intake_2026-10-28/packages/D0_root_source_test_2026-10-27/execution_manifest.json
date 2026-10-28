@@ -1,0 +1,12 @@
+{
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "normal_and_optimized_identical": true,
+  "checks_are_exception_based": true,
+  "files": {
+    "result_optimized.json": "13dd3db75855b5ee71e1f91c9886a828db2784224be253980037e59e98aefd9b",
+    "result.json": "13dd3db75855b5ee71e1f91c9886a828db2784224be253980037e59e98aefd9b",
+    "check_root_source_universality.py": "e0689fc6c99a690b450d931874a27cffd3a46c55fbdcf432ab7fcf351429343e"
+  }
+}

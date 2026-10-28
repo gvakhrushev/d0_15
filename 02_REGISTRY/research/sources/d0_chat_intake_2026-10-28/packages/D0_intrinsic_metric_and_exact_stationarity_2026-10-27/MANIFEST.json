@@ -1,0 +1,41 @@
+{
+  "source_repository": "gvakhrushev/d0_15",
+  "source_ref": "c7708742bea04684ffd6aed16774cfdf1b94b129",
+  "remote_write_performed": false,
+  "proof_scope": "specified fixed-protocol candidate, not universal physical GR",
+  "unconditional_GR_closed": false,
+  "files": {
+    "PROOF.md": {
+      "bytes": 19027,
+      "sha256": "7d013ee40cc3965c72fae1ffc066fbe31c69f031a2c2768f9d63f196de00d37c"
+    },
+    "README_RU.md": {
+      "bytes": 1708,
+      "sha256": "ee234a27201dc187a8f17bdc7aaac43c83ea78620ae858b18c89ac688b5ce0d4"
+    },
+    "SYNTHESIS_RU.md": {
+      "bytes": 9990,
+      "sha256": "05b112ebf568462bb5d0ea13f34bc9356d40e5333157ef39d8d070a27cc3bf3d"
+    },
+    "check_intrinsic_metric_heat_recovery.py": {
+      "bytes": 10676,
+      "sha256": "e8f9f452b3516f5b5c3e233b58990fb41c2d3a0dc08e9baaeb8ff7ff5f6a5749"
+    },
+    "previous_check_replay.json": {
+      "bytes": 2306,
+      "sha256": "5a7604a57008c884956f17c2ac9ebf18db0adf240f7604f57c55c1105f30700e"
+    },
+    "requirements.txt": {
+      "bytes": 28,
+      "sha256": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94"
+    },
+    "result.json": {
+      "bytes": 2862,
+      "sha256": "a3314ab4691278e00ed9c1af0e2e6c059750fd04ce11087413d52da8af7f7715"
+    },
+    "result_optimized.json": {
+      "bytes": 2862,
+      "sha256": "a3314ab4691278e00ed9c1af0e2e6c059750fd04ce11087413d52da8af7f7715"
+    }
+  }
+}
