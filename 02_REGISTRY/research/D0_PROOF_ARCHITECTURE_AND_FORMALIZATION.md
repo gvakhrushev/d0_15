@@ -11746,10 +11746,9 @@ the generated `D0.All` imports. `D0.Algebra.MovingProjectorTransport`
 formalizes the noncommutative projector-tangent and cut-transport algebra
 used by that source, while `D0.Geometry.ArchiveGradedRefinementComposedReadout`
 extends the existing open graded-refinement claim with literal multi-step
-composition and a fixed-component sampling control. Both are supporting
-theorems only; the trace/log-determinant derivative, physical readout choice,
-source-to-claim acceptance and physical refinement remain outside their
-conclusions.
+composition and a fixed-component sampling control. These are supporting
+theorems only; physical readout choice, source-to-claim acceptance and
+physical refinement remain outside their conclusions.
 The existing `proof_architecture.py search` now retrieves the published
 moving-cut note and the integration map; its regression test asserts that the
 Lean support row is still reported as a metadata locator and that no physical
@@ -11767,3 +11766,34 @@ deformation algebra selects the Einstein-scalar kinetic structure; the actual
 D0 symplectic form, native lapse generators and controlled same-execution
 bracket limit remain unproved. No assembly slot, claim status, Lean theorem,
 or physical selector is inferred from this conditional result.
+
+### Moving-cut feedback calculus: reusable formal support
+
+The source owned in #334 at `eebcb5e467742df3e9cf7fa9702042d7294aa742`
+is now connected to reusable finite-matrix calculus. The independent
+`D0.Analysis.MatrixDeterminantDerivative` module derives the determinant
+row-replacement formula for an actual differentiable curve, Jacobi's
+inverse-trace formula at an invertible matrix, and the principal complex
+log-determinant derivative on the slit plane. It is consumed by
+`D0.Algebra.MovingProjectorCalculus`, which derives the projector tangent
+equation from local idempotence, differentiates the cut and return on the
+same curve, and proves the relative `−log det` feedback source with the
+actual resolvent. For real fixed `z`, Hermiticity makes the determinant real;
+slit-plane membership at the evaluation point implies the local positive
+chart used in the real logarithm.
+
+The finite example uses a differentiable rank-one orthogonal-projector
+curve and a fixed unitary reflection. It exhibits a nonzero return derivative
+the exact weighted trace `−48/17` and feedback derivative `−24/17` at
+`z=1/2`. This is formal support for
+the conditional moving-cut calculation, not physical source selection. The
+slit-plane premise is retained rather than derived here from `0<z<1` and
+unitarity; the thermal derivative, moving Gram, variable β/z, native admitted
+field variation, complete Info/work/controller price and GR composition
+remain open. The original #334 owner and scientific claim statuses are
+unchanged. The detailed application and its explicit interface are recorded
+in [`D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md`](D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md).
+An independent read-only mathematical review of calculus blob
+`37305b34459ffa99189f91fbc3338c96562dc4fd` checked the signs, order of
+factors, slit-plane argument and the same-curve example. Its scope does not
+include compilation, physical admission or acceptance of C0.

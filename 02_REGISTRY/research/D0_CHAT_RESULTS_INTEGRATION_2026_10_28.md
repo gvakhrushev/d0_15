@@ -79,19 +79,23 @@ independently admissible variation.
 
 ## Lean formalization slice
 
-Two supporting results from this integration are represented by compiled
-Lean modules and registered in `formal_support.csv`. They are imported by
-`D0.All`; neither is a physical-closure claim.
+Supporting results from this integration are represented by Lean modules and
+registered in `formal_support.csv`. They are imported by `D0.All`; their
+mathematical conclusions do not establish physical closure.
 
 | Module | Machine-checked statement | Remaining boundary |
 |---|---|---|
-| [`D0.Algebra.MovingProjectorTransport`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean) | In a possibly noncommutative ring, for idempotent `P` with tangent equation `P dP + dP P = dP`, `K=[dP,P]` satisfies `[K,P]=dP`, and the differentiated cut minus common transport is `(1-P)(dU-[K,U])P`. A separate `StarRing` lemma proves `K` anti-self-adjoint when `P` and `dP` are self-adjoint. | The tangent equation is supplied, not derived from a differentiable projector family. This does not formalize the trace/log-determinant derivative, thermal term, finite-rank Hilbert hypotheses, or physical admission. |
+| [`D0.Algebra.MovingProjectorTransport`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean) | In a possibly noncommutative ring, for idempotent `P` with tangent equation `P dP + dP P = dP`, `K=[dP,P]` satisfies `[K,P]=dP`, and the differentiated cut minus common transport is `(1-P)(dU-[K,U])P`. A separate `StarRing` lemma proves `K` anti-self-adjoint when `P` and `dP` are self-adjoint. | This algebraic API takes the tangent equation as an input; the calculus module below derives it from a locally idempotent differentiable curve. |
+| [`D0.Algebra.MovingProjectorCalculus`](../../03_FORMALIZATION/D0/Algebra/MovingProjectorCalculus.lean) | On the same real-parameter curve, local `P²=P` yields the tangent equation, the actual product-rule derivatives of `C=(1-P)UP` and `F=C†C`, and the relative transport identity. For complex matrices, real fixed `z` and a determinant in the slit plane at the evaluation point, `complex_matrix_feedback_real_logdet_of_slit_hasDerivAt` proves the derivative of `−log det(1−zF)` as `2z Re Tr(R C† (1−P)(dU−[K,U])P)`, with the actual inverse `R`; determinant reality and local positivity follow on that curve. The displayed finite example is a rank-one orthogonal-projector curve and fixed unitary reflection with nonzero `dF` and weighted return trace. | Differentiability, local projector/self-adjoint conditions, and the slit-plane condition at the point are explicit inputs. The module does not derive the latter from `0<z<1` and unitarity, construct an admitted native field curve, vary the Gram or β/z, or prove the thermal and complete Info/work/controller source. |
+| [`D0.Analysis.MatrixDeterminantDerivative`](../../03_FORMALIZATION/D0/Analysis/MatrixDeterminantDerivative.lean) | For an arbitrary differentiable real-parameter complex-matrix curve, the determinant derivative is the sum of determinants with one replaced row. At an invertible matrix it yields Jacobi's inverse-trace formula; on the complex slit plane it yields the principal log-determinant derivative. | The theorem concerns finite matrices in the stated Frobenius norm. Invertibility or the slit-plane condition is an explicit premise where used. |
 | [`D0.Geometry.ArchiveGradedRefinementComposedReadout`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean) | Iterates the owned adjacent pullbacks literally, proves their cochain identity for every number of steps and an exact singleton prefix/tail formula. At doubling, the stated fixed-component normalized L1 and L2-squared errors are both exactly `1`. | The probe is the literal one-form embedding but its fixed-component sampler is not selected as a physical observable. The result shows chain-map preservation alone does not imply convergence of that readout; it proves no universal refinement obstruction. |
 
-The first module formalizes the algebraic moving-cut transport portion of the
-published source, not the complete analytic derivative above. The second
-extends the existing open graded-refinement proof target; source-to-claim
-acceptance and physical refinement assumptions remain open. `#print axioms` in
+The moving-cut modules formalize the algebraic transport and the conditional
+feedback derivative of the published source. The thermal trace-exponential
+derivative and the complete source remain open. The graded-refinement module
+extends the existing open proof target; source-to-claim acceptance and physical
+refinement assumptions remain open. At the earlier algebraic checkpoint,
+`#print axioms` in
 Lean 4.30.0 reports `[propext]` for the generic cut-relative identity and
 `[propext, Classical.choice, Quot.sound]` for the self-adjoint generator and
 complex-matrix specialization. The [compiled declaration receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_refinement_declarations_2026-10-28.json) records actual elaborated signatures, type/proof dependencies, source ranges and axiom footprints for five load-bearing declarations from `D0.All` at this source digest. This is a type-level cross-check against the coded theorem statements; the prose-to-theorem and physical application links still require review.
@@ -100,7 +104,7 @@ The repeated graded chain identity inherits
 three existing CAR `native_decide` declarations (`carCreateInt_degree_raise`,
 `carCreateInt_singleton_vacuum`, and `carCreateInt_support`), plus
 `propext`, `Classical.choice`, and `Quot.sound`; the fixed-component error
-identity uses only those latter three. No new Lean axioms or `sorry`/`admit` are introduced. The [final `D0.All` build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json) records a successful 4,751-job build on Lean 4.30.0, including project-source, nine pinned dependency checkout, environment and executable fingerprints. It is point-in-time provenance with the explicit boundary that kernel/dynamic libraries, external toolchain settings and generated caches are not authenticated. The modules' source hashes at this checkpoint are
+identity uses only those latter three. No new Lean axioms or `sorry`/`admit` are introduced. The [earlier `D0.All` build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json) records a successful 4,751-job build on Lean 4.30.0, including project-source, nine pinned dependency checkout, environment and executable fingerprints. It is point-in-time provenance with the explicit boundary that kernel/dynamic libraries, external toolchain settings and generated caches are not authenticated. The modules' source hashes at that checkpoint are
 `f10d424372a2bcb1960ee78f7ffa08d2957baa3b5d07aad4a7681bcc4e4ee642` and
 `06d204cc0e8df94a0714a8e8574b493065f8770ea8be1fa1e42d66fb8babb99f`.
 
