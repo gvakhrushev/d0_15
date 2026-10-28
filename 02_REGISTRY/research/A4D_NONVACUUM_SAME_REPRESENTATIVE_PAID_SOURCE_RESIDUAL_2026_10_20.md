@@ -85648,3 +85648,538 @@ descent or the Golden physical metric scaling needed for global Einstein
 universality. Original HJR, raw216, generic physical GR and compulsory
 prospective selection retain their prior scope. No task retirement,
 assembly acceptance or `positive_gr` promotion is asserted.
+
+
+## 7cv. Apply the closed-history source to its existing reader, clock and phase boundary
+
+28 October 2026. SAME #334 / constitutive/native-programme-v1; native realization
+and final composition. Input c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a; reconciled with
+published172876cdf38bfce6f87fdd4a059d524b60c10eb9.
+This application consumes the root moving-cut source and conditional
+refoliation owners of 28 October, the general density-source and actual
+native-clock owners of 27 October, and the maps already present in
+7bh/7bw/7ck/7cl/7cq/7cr. It introduces no reporter, action, selector,
+task or acceptance edge. Closedness makes the actual state, reader, cut
+and archive part of ONE execution; it does not make their sources zero.
+
+The parent substitution achieved below is concrete: on the EXISTING
+stage-clock/direct-click sector, the root source on the corrected
+geometric lift is exactly its already-owned feedback source. A moving-cut
+presentation gives the same value and covector, with its different rank
+retained. In the general forward implication, vertical source-neutrality
+is not an extra premise. The new phase-boundary construction and
+self-reading reaction specify the missing application of the alternative
+refoliation route. Neither statement asserts physical D0-to-GR closure.
+
+### 1. Use the existing full reader; make its calibration endogenous
+
+Let Omega denote a complete same-initial execution: actual words on ALL
+columns, the retained records, prefixes, current cut and paid resources.
+Its final DATA density alone does not determine those words or the
+unoccupied columns entering heat. Use the augmented operator inverse of
+paid-writer12.1(51)--(53), not the five/nine-site inverse restricted to
+the polynomial primary family.
+
+The actual maps 7ck726--730 and 7cq788 already give
+
+    Omega -> sigma_W -> p=F_Omega sigma_W
+          -> sigma_W=A_Omega p -> W -> D_sharp,
+    (D_sharp,xi_Omega) -> R_h(D_sharp,xi_Omega)=Y=Phi(Omega),
+    A_Omega=(A_ref F_Omega)^(-1)A_ref,
+    A_Omega F_Omega=I.                                      (836)
+
+The full-Schmidt Golden probe, positive Choi anchor, every body work
+column, actual density, material readings and endpoint/frame data are
+those of these owners. Moving generated metadata is differentiated as
+its actual function of Omega. Nothing here makes a genuinely independent
+input fixed, or prices physical tomography for free.
+
+For the fixed left-inverse convention of 788, exact differentiation gives
+
+    dA=-A(dF)A,
+    d(Ap)=A[dp-(dF)sigma_W]=d sigma_W.                       (837)
+
+Thus same-reader calibration does not require an independently chosen
+parameter. Reader gates still have their real Book source. At a matched
+homogeneous base, d(sum_i a_i sigma_i)=sum_i a_i d sigma_i
+because sum_i da_i=0; away from that base keep sum_i da_i sigma_i.
+
+Use the corrected actual comparison lift in 7cl749--750:
+
+    L=L_a M_a^(-1), M_a=D R_h(z_a) J_a,
+    ||M_a-I||<=eta<1/2,
+    D Phi L=I, ||L||<=||L_a||/(1-eta).                       (838)
+
+These are the owned field-to-raw-gate-max norms; the temporal body
+D01 norm is gate-max/sqrt(22). Equation838 is a smooth matrix-comparison
+statement. Its actual fixed-word finite comparisons are supplied by
+7cr797--806; no Golden angle has become a continuous primitive.
+
+### 2. The root source actually applies to the same clock sector
+
+For a fixed Hilbert Gram and fixed rank, consume the root definitions
+
+    C=QUP, Q=I-P, F=C* C, R_z=(I-zF)^(-1),
+    rho_beta=exp(-beta Delta)/Z, Z=Tr exp(-beta Delta),
+    B_root=beta^(-1)log Z-log det(I-zF).
+
+For a genuine lifted direction L_v put K_v=[DP[L_v],P] and
+nabla_v U=DU[L_v]-[K_v,U], likewise for Delta. The full source is
+
+    E_root(v):=DB_root[L_v]
+       =-Tr(rho_beta nabla_v Delta)
+        +2z Re Tr(R_z C* Q nabla_v U P)
+        +[-log Z/beta^2-Tr(rho_beta Delta)/beta] D beta[L_v]
+        +Tr(R_z F) D z[L_v].                               (839)
+
+Its first two terms have the owned bound
+||nabla_v Delta||op+
+2z ||C R_z||F ||Q nabla_v U P||F.
+Moving Gram requires its actual isometric trivialization; extra
+selected price terms retain their derivatives. B_root here is the
+literal stated Book functional, not an assignment of all other possible
+Info/work conventions to zero.
+
+This can be evaluated, not merely named. In the EXISTING 7bh501--502 /
+7cr799 realization, with N>=3 and all scene/data/work/spectator columns,
+
+    T_g=sum_t |t+1 mod N><t| tensor g_t,
+    U_hist=T_g^N on C0, identity on C1,
+    P_hist=|0><0| tensor P_input on C0, zero on C1.           (840)
+
+P_input acts on the COMPLETE scene/data/work carrier and includes the
+actual scene projector, if present, as well as blank/free/oldRIGHT
+support. It is the SAME initial support at both ends of the comparison.
+Its actual rank r includes these multiplicities; replacing its scene
+factor by I_scene could incorrectly multiply the feedback rank by33.
+The 838 body/material lifts vary temporal gates, not that initial
+support. Hence DP_hist[L_v]=0 EXACTLY.
+
+The heat operator is not fixed: for the original normalized product
+graph, delta Delta0=-R_s(delta T+delta T*)R_s and
+delta Delta1=delta d d*+d delta d*. Nevertheless 7bw606 proves
+DH0=DH01=0 at an involution endpoint for ALL independent temporal
+unitary tangents, including these lifts, at the INTERNAL base
+ g_t=I_scene tensor u_t of7cr. This is a condition on the BASE, not a
+restriction of its independent temporal tangent directions. A general
+RawZone placement does not follow from endpoint involution alone;
+7bh500 is the existing countercontrol. It keeps every clock/harmonic
+mode. At fixed scene, N, ranks, beta and z, equation839 therefore becomes
+
+    E_root(v)=2z Re Tr(R_z C* Q DU_hist[L_v]P_hist)
+             =DJ_endpoint[L_v].                           (841)
+
+This is the SAME full feedback differential in 7ck737 and its
+correlation/implementation extensions, or 7cq792 for its explicitly
+declared direct-click programme. Its retained errors are not set to
+zero. The body/reader has not been replaced by a newly chosen source.
+
+There is a second, MOVING-cut presentation already constructed in the
+native-clock theorem27Oct. Set A_0=I, A_t=g_(t-1)...g_0 and
+
+    P_g=sum_t |t><t| tensor A_t P_input A_t*,
+    U_g=T_g on C0, identity on C1.                          (842)
+
+Let X=diag((DA_t)A_t*). Then DP_g=[X,P_g].
+Since X-[DP_g,P_g] commutes with P_g, the root connection can use X.
+Prefix trivialization sends P_g to I_N tensor P_input and all links
+except the wrap edge to identity. The remaining variation is exactly
+DV of V=g_(N-1)...g_0. Leakage has the one endpoint F block plus
+N-1 zero blocks. With the SAME full heat, 840 and842 have equal
+B_root and equal source841 at fixed N. This proves the moving-cut
+application without freezing DP_g.
+
+Their ranks are respectively r and Nr. This is not an identification
+of cuts, rank evolution, or physical time. In the user's saturated
+retained-history regime, a new readable tick still needs the owned
+AF growth/archive application 7cg; a cyclic stage index does not provide
+free new memory or authorize horizontal time.
+
+The concrete remaining physical interface is now sharp: Book03.25
+does not by itself select 840 or842, or the internal scene-times-clock
+0+1 Hodge operator rather than its default scene realization. Appending
+a paid sealing/COPY/controller operation can destroy the involution;
+7ct827 remains a genuine nonzero-source control. Equation841 applies
+to the complete word just specified, not to that changed word.
+
+### 3. Separate forward Einstein soundness from full solution recovery
+
+For the FULL actually selected price B_act, use the same lift and put
+
+    E_act=DB_act L,
+    V_act=DB_act(I-L D Phi).
+    DB_act=E_act D Phi+V_act.                              (843)
+
+This is an identity, not a new objective or a fitted counterterm.
+Generated internal states are eliminated by the already-owned
+same-initial causal adjoint. Its genuine initial boundary and all
+uneliminated variables remain in DB_act. For B_act=B_root on the declared
+clock sector,841 evaluates E_act. A real additional price contributes
+its own derivative on L and in V_act.
+
+Here stationarity must annihilate every tangent in im L. If native
+stationarity is defined only on admitted comparisons, this requires
+im L contained in T_adm, or the proved two-sided finite-contrast limit.
+The matrix right inverse838 does not grant that admission. If DB_act=0
+in this sense, then E_act=0 regardless of whether V_act vanishes
+identically on the surrounding family. Consequently the FORWARD
+implication to Einstein requires only the actual horizontal comparison
+
+    E_act,h/G_h -> D S_Einstein+matter                       (844)
+
+on the compatible dense smooth tests ALONG the actual stationary
+executions Omega_h, with Phi(Omega_h) converging smoothly to Y and
+with the stated source-error bounds. Vertical neutrality is NOT an
+additional premise of that implication. Conversely E_act=0 alone
+does not solve V_act=0, construct a stationary execution, or derive a
+physical stationarity/minimality law. This distinction prevents both
+an unnecessary forward obstruction and a false existence claim.
+
+On discrete native words use the owned finite contrasts, not a
+derivative of the compiler. For the native-clock owner the price-to-source
+error is L_clock delta/(G_h |t|), with
+L_clock=1/11+2rz/(1-z), on a common paid clock/register.
+The 7cr direct-click transport has its own 804 bound and actual gain;
+do not substitute one budget into the other programme. The same-initial
+comparison and full physical selection premises survive both limits.
+
+The general density-involution theorem27Oct already proves a general
+Einstein/two-scalar source for its inverse-leg full-CAR f_mom, with
+e_tilde=(det e)^(-1/2)e. The direct-click programme in841 instead uses
+paid-writer34--37's coframe-volume f_star. These operands, their source
+gains and their metrics are not interchangeable. Thus841 closes the
+root-source application on its stated programme, but is NOT an
+unproved substitution of the general density theorem into that
+programme. The user's published Cartesian STAR normalization
+a31ac8ab8/ccadc27d3 also retains its sign/orientation transport before
+combining it with the null convention. No manual Einstein coefficient
+or target-selected field restriction has been inserted.
+
+### 4. Keep the archive phases: an explicit internal cotangent carrier
+
+For the actual pure DATA | oldRIGHT+archive history write
+W_n=[K_gamma W_0]_gamma, rho_n=W_n W_n*, and, on rho_n>0,
+U_n=rho_n^(-1/2)W_n. Thus U_n U_n*=I. Direct differentiation of
+W_n=sqrt(rho_n)U_n, using d Tr rho_n=0, gives
+
+    theta_n=-i Tr(rho_n dU_n U_n*),
+    omega_n=d theta_n
+       =-i Tr(d rho_n wedge dU_n U_n*)
+         +i Tr(rho_n dU_n wedge dU_n*).                     (845)
+
+This is the whole normalized state's Hilbert boundary form. Its mixed
+active/archive term is retained. The endogenous DATA fixed-point
+owner determines rho_n in its stationary regime; it does not determine
+the actual U_n. Q26 simultaneous passive reencoding does not quotient a
+relative archive/purifier phase while future comparison operators stay
+fixed. A field-dependent isometric inclusion also contributes its
+actual -i<psi,J* dJ psi> boundary term; fixed AF isometries preserve
+the form.
+
+The operational inverse now supplies a more explicit construction.
+Suppose a local smooth section of the ACTUAL comparison chart is
+resolved by the probabilities w_b(x)>0 on a fixed support S of one
+complete coherent retained-record experiment. Identically dark flags
+remain physically present; sums846--847 run over S. If a flag opens
+from zero, its normalized chi_b and this phase chart fail there: use
+845 or another patch and retain the opening amplitude tangents. Settings of incompatible readers must be
+included as real mutually exclusive recorded labels; one cannot
+identify their effects as commuting outcomes of a single probe.
+All extra metadata coordinates used by Phi must also be resolved,
+or remain separate. On that section write
+
+    Psi(x,phi)=sum_b sqrt(w_b(x)) exp(i phi_b)|b> chi_b(x),
+    ||chi_b(x)||=1, J_bA=partial_A w_b,
+    beta_A=-i sum_b w_b <chi_b,partial_A chi_b>.             (846)
+
+The owned right-inverse plus the inverse-function theorem supplies a
+local section and full column rank of J when Phi factors through these
+complete probabilities. It does not assert that arbitrary vector
+fields L_A commute or integrate to that chosen section.
+
+The full boundary form has, exactly,
+
+    theta=sum_b w_b dphi_b+beta_A dx^A
+          =d(sum_b w_b phi_b)-Pi_A dx^A,
+    Pi_A=sum_b J_bA phi_b-beta_A,
+    omega=sum_A dx^A wedge dPi_A.                          (847)
+
+For instance phi=J(J^T J)^(-1)(Pi+beta) represents every local Pi.
+The excess phase directions are ker J^T, including the global phase.
+No external momentum or added Berry counterterm is needed: beta is
+the actual conditional-state contribution. These x coordinates may
+include the resolved fields; identifying a constrained spatial-metric
+sector still requires the actual clock/Gauss maps.
+
+Native relative phases already have the exact discrete construction
+7n197 on an ordinary paid realification rebit BEFORE sealing.
+That proves neither a continuously tunable phase nor free motion on
+protected oldRIGHT. A realification must preserve its specified complex
+structure and skew pairing; the ordinary imaginary pairing restricted
+to real vectors is zero. Thus847 supplies a concrete kinematic carrier
+and a finite-word phase target, not physical admission or the lapse
+Hamiltonian.
+
+### 5. The self-reading correction to the candidate clock bracket
+
+Here varrho=|Psi><Psi| is the FULL state on actual DATA, oldRIGHT,
+archive and controller; it is NOT the reduced rho_n of845. Factoring
+Phi(Omega) through varrho requires the actual word/controller encoding;
+a final state alone does not recover unused operator columns.
+
+For a genuine full-state decoder q^a(varrho), including moving reader,
+cut, Gram and archive dependencies, write
+dq^a[delta varrho]=Tr(Q_a delta varrho). On the full density coadjoint orbit
+use {f,g}=-i Tr varrho[grad f,grad g]. IF an actual normal-generator
+function has the represented form h_N=Tr varrho H_N(q(varrho)), then
+
+    c_Na=Tr varrho partial_a H_N,
+    A_N=grad h_N=H_N+sum_a c_Na Q_a,
+    v_N^a=-i Tr varrho[Q_a,H_N],
+    Pi^ab=-i Tr varrho[Q_a,Q_b],
+    {h_N,h_M}=-i Tr varrho[H_N,H_M]
+       +c_Na v_M^a-c_Ma v_N^a+c_Na Pi^ab c_Mb.             (848)
+
+This is the ambient fixed-spectrum coadjoint-orbit bracket. Applying
+it to847 requires actual normal/shift flows tangent to the admitted
+comparison chart and Hamiltonians descending through its presymplectic
+kernel. The pulled-back Hilbert form alone does not prove these facts.
+
+This is an exact chain rule on the full state, not an arbitrary
+correction to obtain a desired bracket. For q=z and
+H_N=z sigma_x,H_M=sigma_y on a qubit Bloch sphere it changes the
+frozen result 2z^2 to 2(z^2-x^2).
+
+The native refoliation test is consequently ONE explicit residual
+
+    A_h[N,M]=-i Tr varrho[A_N,A_M]
+                -d_(q^ij(N partial_j M-M partial_j N))(varrho), (849)
+
+with the real spin/Gauss part included in d. The old CAR bracket
+already owns its constant-frame spin term and smooth-sector finite
+error; it does not bound the new decoder reaction by itself.
+
+For an actual shift d_X=Tr varrho D_X(q), A_X=grad d_X and
+delta_X q^a=-i Tr varrho[Q_a,A_X], the exact shift anomaly is
+
+    {d_X,h_N}-h_(X dot partial N)
+       =-i Tr varrho[A_X,H_N]-h_(X dot partial N)
+                               -c_Na delta_X q^a.          (850)
+
+The last term is the missing coframe response. On the old flat
+orthonormal CAR chart choose the symmetric coframe variation and set
+S_ij=(partial_i X_j+partial_j X_i)/2. Then delta_X q^ij=-2S^ij
+and delta_X alpha^j=-alpha^i S_i^j give
+(delta_X H_N)_principal=iN alpha^i S_i^j partial_j, precisely the
+previously uncancelled principal term. This proves principal-part
+cancellation, not the full lower-order identity. The frozen-frame
+defect is therefore not a structural no-go.
+
+A sufficient exact shift application is an actual Hamiltonian action
+T_varphi with q(T_varphi varrho)=varphi* q(varrho) and
+h_N(T_varphi varrho)=h_(N composed varphi^(-1))(varrho).
+Its group law and equivariant moment map also control shift-shift
+brackets. Q26's passive unitary covariance does not establish this
+active spatial action. Nor may a fixed actual controlled operator
+Hhat_N be replaced by the nonlinear function in848 without proving
+Tr varrho Hhat_N=Tr varrho H_N(q(varrho)) as functions on the
+relevant full-state chart, not just at one point. Book price is not defined to be
+the clock Hamiltonian.
+
+### 6. What this changes in the shared parent
+
+The already-built geometry reader, source lift and internally clocked
+programme now consume the 28 October root formula through841, including
+the generated moving cut. Forward Einstein soundness no longer carries
+a spurious requirement to erase every internal source identically.
+Closedness also gives the explicit retained-archive momentum candidate
+847 and the computable self-reading reaction849 for the alternative
+refoliation route.
+
+The remaining application is about the actual same-history dynamics:
+its selected cut/heat/complete valuation, admitted comparisons and
+actual normal/shift flows, plus the declared general-source metric
+transport and physical refinement. No new external state, free
+calibration, invisible memory, arbitrary counterterm or Einstein
+admission test has been requested. Exact finite roots and a compatible
+selected growing history do not follow from finite-test consistency.
+GR_closed=false; raw216 and positive_gr keep their previous scope.
+
+
+
+The fresh 28 October additions at172876cd are consumed, not repeated.
+The new7cu831--835 global QUERY row is outside the already bounded
+field-lift source; it retains its nonzero row and its actual cut
+cancellation. Thus841 is not a claim of stationarity against every
+independent QUERY/control direction.
+
+The original-return boundary owner and root-boundary Hessian owner now
+supply a DIFFERENT concrete object: the two-boundary form of the full
+reduced price S(x_-,x_+), including the noncommutative thermal covariance
+and, when justified, stationary interior Schur reduction. The history
+form845/847 is not declared identical to it by naming both canonical.
+First-source heat cancellation841 does not set the mixed thermal
+Hessian to zero. A stationary Schur reduction requires B_w=0 on an
+actual branch; a causal rollout alone supplies neither that premise nor
+the Schur formula. For a causal-only branch retain its full chain rule
+with Dw and D2w, or the applicable retained-history adjoint.
+
+A precise optional synthesis test is now available on ONE actual
+history chart xi. Let r(xi)=(x_-,x_+) be its real boundary/cut map and
+q_+(xi),q_-(xi) its actual endpoint readouts. Use the momenta already
+generated by that history, not momenta defined to equal a desired
+price gradient. Compare the endpoint one-forms
+
+    lambda_hist,-=Pi_A^hist,- d q_-^A
+                    with r*(-partial_- S dx_-),
+    lambda_hist,+=Pi_A^hist,+ d q_+^A
+                    with r*( partial_+ S dx_+).             (851)
+
+The different cut and field coordinates are kept. If these actual
+one-forms agree (up to genuinely implemented endpoint phase/coboundary
+calibration), exterior differentiation gives
+
+    psi_-* omega_hist=psi_+* omega_hist
+                     =r*[-d(partial_+ S dx_+)].             (852)
+
+One can test852 directly by the actual Jacobians; it is weaker than851
+and does not fix the endpoint source/calibration. A physical quotient
+still needs the actual rank and inverse-form bounds. The incoming
+BRACKET_TRANSPORT controls can then be used with their genuine gains
+and derivative orders, not merely action-value convergence.
+
+This compares two existing boundary constructions rather than assuming
+their equivalence or making their agreement an obligatory premise for
+every independent route. It does not supply the actual stationary
+interior branch used in S. Neither that Schur reduction nor the exact
+operator determinant sewing permits replacing the whole recorded price
+by a sum of one-tick prices: the incoming Golden two-tick curvature
+countercontrol remains in force. Equations851--852 identify the exact
+same-history application needed if these two routes are composed.
+
+### 7. Changed-input validation and reproducibility
+
+The exact algebra below was executed with Python3.11/SymPy on28 October.
+It checks the moving calibration on an overcomplete reader, the whole
+coherent-state symplectic form INCLUDING a nonconstant conditional
+phase, the actual self-reading correction, and the full source split.
+Negative controls retain the errors from freezing calibration, dropping
+the mixed Berry term, omitting self-reading reaction and confusing
+horizontal equations with the full source. It is not a native GR
+execution, continuum recovery test or physical-admission certificate.
+The expensive existing clock/CAR/source owners were not replayed.
+
+Checker SHA256 7e551f310b584ee33c7f167432befe7341a2b3638ba8e365870815861e60964c.
+Observed stdout SHA256 9f33aaee96f48fd51eefb598c060059ec2223e7984df8bde6f662204b7b6f3ee.
+
+```python
+"""Changed closed-history algebra only; no physical/GR or native-word claim."""
+import json
+import sympy as s
+checks=[]
+def require(ok,name):
+    if not bool(ok): raise ArithmeticError(name)
+    checks.append(name)
+def zero(M,name):
+    require(all(s.simplify(z)==0 for z in M),name)
+t,u,v=s.symbols('t u v',real=True)
+F=s.Matrix([[1,t],[t,1+t*t],[1,1+t]])
+Ar=s.Matrix([[1,0,0],[0,1,0]])
+A=(Ar*F).inv()*Ar
+sig=s.Matrix([u+t,v-t*t])
+p=F*sig
+zero(A*F-s.eye(2),'actual overcomplete calibration left inverse')
+zero(A.diff(t)+A*F.diff(t)*A,'moving calibration derivative')
+zero((A*p).diff(t)-sig.diff(t),'closed reader reconstruction includes moving calibration')
+require(any(s.simplify(z)!=0 for z in A*p.diff(t)-sig.diff(t)),
+        'negative control frozen calibration changes decoded source')
+# Full Hilbert boundary, including conditional phase beta.
+x,y,f0,f1,f2=s.symbols('x y f0 f1 f2',real=True)
+coords=[x,y,f0,f1,f2]
+w=[x,y,1-x-y]
+theta=[f0+x*y,f1-2*x*y,f2+3*x*y]
+ratios=[[s.diff(wb,c)/(2*wb)+s.I*s.diff(th,c) for c in coords]
+        for wb,th in zip(w,theta)]
+omega=s.zeros(5)
+for i in range(5):
+    for j in range(5):
+        inner=sum(wb*s.conjugate(rb[i])*rb[j] for wb,rb in zip(w,ratios))
+        omega[i,j]=s.simplify(2*s.im(s.expand_complex(inner)))
+beta=[sum(wb*s.diff(th-ph,c) for wb,th,ph in zip(w,theta,[f0,f1,f2]))
+      for c in [x,y]]
+mom=[f0-f2-beta[0],f1-f2-beta[1]]
+expected=s.zeros(5)
+for i in range(5):
+    for j in range(5):
+        expected[i,j]=sum(s.diff(q,coords[i])*s.diff(mm,coords[j])
+                         -s.diff(q,coords[j])*s.diff(mm,coords[i])
+                         for q,mm in zip([x,y],mom))
+zero(omega-expected,'full coherent-state symplectic pullback including beta')
+bare=[f0-f2,f1-f2]
+without_beta=s.zeros(5)
+for i in range(5):
+    for j in range(5):
+        without_beta[i,j]=sum(s.diff(q,coords[i])*s.diff(mm,coords[j])
+              -s.diff(q,coords[j])*s.diff(mm,coords[i])
+              for q,mm in zip([x,y],bare))
+require(any(s.simplify(z)!=0 for z in omega-without_beta),
+        'negative control discarding conditional-state mixed term')
+# Exact full density gradient versus frozen self-reading Hamiltonian.
+rx,ry,rz=s.symbols('rx ry rz',real=True)
+sx=s.Matrix([[0,1],[1,0]]);sy=s.Matrix([[0,-s.I],[s.I,0]])
+sz=s.diag(1,-1);rho=(s.eye(2)+rx*sx+ry*sy+rz*sz)/2
+HN=rz*sx;HM=sy;AN=HN+rx*sz
+br=lambda aa,bb:s.simplify(-s.I*s.trace(rho*(aa*bb-bb*aa)))
+require(br(HN,HM)==2*rz**2,'frozen bracket')
+require(br(AN,HM)==2*(rz**2-rx**2),'full self-reading reaction')
+require(s.simplify(br(AN,HM)-br(HN,HM))==-2*rx**2,
+        'negative control reaction is not optional')
+# Forward consequence is weaker than recovery.
+D=s.Matrix([[1,0,t,0],[0,1,0,t]])
+L=s.Matrix([[1,0],[0,1],[0,0],[0,0]])
+alpha=s.Matrix([[u,v,t,1]])
+zero(D*L-s.eye(2),'existing lift interface')
+zero(alpha-(alpha*L)*D-alpha*(s.eye(4)-L*D),'full covector split')
+vertical=s.Matrix([[0,0,1,0]])
+zero(vertical*L,'horizontal zero does not solve full source')
+require(vertical!=s.zeros(1,4),'negative control vertical equation retained')
+print(json.dumps({'scope':'exact changed algebra; not physical admission or GR closure',
+ 'checks':checks,'frozen_bracket':str(br(HN,HM)),
+ 'full_bracket':str(br(AN,HM)),
+ 'omitted_beta_xy':str(s.simplify((omega-without_beta)[0,1]))},
+ indent=2,sort_keys=True))
+```
+
+```json
+{
+  "checks": [
+    "actual overcomplete calibration left inverse",
+    "moving calibration derivative",
+    "closed reader reconstruction includes moving calibration",
+    "negative control frozen calibration changes decoded source",
+    "full coherent-state symplectic pullback including beta",
+    "negative control discarding conditional-state mixed term",
+    "frozen bracket",
+    "full self-reading reaction",
+    "negative control reaction is not optional",
+    "existing lift interface",
+    "full covector split",
+    "horizontal zero does not solve full source",
+    "negative control vertical equation retained"
+  ],
+  "frozen_bracket": "2*rz**2",
+  "full_bracket": "-2*rx**2 + 2*rz**2",
+  "omitted_beta_xy": "-2*x + 5*y",
+  "scope": "exact changed algebra; not physical admission or GR closure"
+}
+```
+
+Final-input review and checks, 28 October: three read-only mathematical
+reviews checked the root application, forward/recovery implication and
+phase/bracket algebra. Corrections retain the actual INTERNAL base,
+scene rank, augmented metadata, fixed positive record support, admitted
+lifted comparisons, full-state encoding and reduced-bracket descent.
+The embedded changed algebra and its hostile controls pass. Local
+work/protocol/assembly/repository guards pass; no Lean, CI, exact-root
+or independent scientific-acceptance result is claimed. The two owned
+files contain insertion-only work, with the input text preserved.

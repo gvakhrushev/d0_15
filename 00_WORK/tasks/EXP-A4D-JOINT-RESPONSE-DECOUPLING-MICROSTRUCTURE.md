@@ -16672,3 +16672,65 @@ section7cu insertion recovers all2667634 original primary bytes; the brief
 retains its entire1076750-byte input prefix. Unchanged scientific calculations
 are reused from their recorded executions; these structural checks are not
 physical acceptance or a remote CI result.
+
+
+### 28 October - apply the closed-history root to the existing reader and clock
+
+SAME #334 / native-programme-v1, input c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a.
+Phase: native realization / final composition. Parent application:
+substitute the existing operational decoder, corrected full-field lift
+and actual internal clock into the root moving-cut source; retain
+genuine archive variables in the new refoliation route. Only this brief
+and the existing primary research memo are owned write paths.
+
+Result: primary7cv836--852. Same-executed-reader calibration is
+endogenous, with its derivative included. On the existing7cr stage0
+cut DP[L]=0 exactly; full runtime heat has zero first source at the
+involution endpoint by7bw606 although DDelta is not zero. Therefore
+the new root formula reduces to the already-owned feedback source on
+the SAME lift. The generated prefix-cut presentation gives the same
+price and covector but a different rank, which is not suppressed.
+
+The exact source split DB=(DB L)DPhi+DB(I-LDPhi) separates forward
+Einstein soundness from reverse recovery: full native stationarity
+implies the horizontal equations without requiring vertical neutrality
+as an additional universal premise. Vertical equations, actual
+stationarity/continuation selection and existence remain compulsory
+for a complete physical solution. The direct-click f_star source is
+not silently replaced by the different general full-CAR f_mom source
+or its density metric.
+
+A full retained-record boundary form gives internal canonical momentum
+candidates from relative archive phases on the existing smooth
+comparison chart. Actual native phase words are discrete and paid.
+The self-reading clock bracket includes its exact decoder reaction;
+neither a new Hamiltonian nor an active spatial action is assumed.
+The next refoliation application is the displayed native anomaly on
+actual generators, not another frozen-background CAR calculation.
+
+Smallest decisive check: root clock/cut type substitution against
+7bh501/7bw606/7cr799 and native-clock(1)--(6); exact calibration,
+cotangent-form and self-reading bracket algebra with hostile omitted-
+derivative controls. The prior expensive native/source/refinement
+owners are consumed without replay. Physical cut/heat/complete-price
+selection, source/metric transport, actual finite comparisons and
+compatible growing-history recovery retain their declared scope.
+No Ready, retirement, acceptance edge, claim promotion or GR closure.
+
+Final-input review and checks, 28 October: three read-only mathematical
+reviews checked the root application, forward/recovery implication and
+phase/bracket algebra. Corrections retain the actual INTERNAL base,
+scene rank, augmented metadata, fixed positive record support, admitted
+lifted comparisons, full-state encoding and reduced-bracket descent.
+The embedded changed algebra and its hostile controls pass. Local
+work/protocol/assembly/repository guards pass; no Lean, CI, exact-root
+or independent scientific-acceptance result is claimed. The two owned
+files contain insertion-only work, with the input text preserved.
+
+Reconciled with incoming172876cd, preserving its original7cu and all
+new boundary owners. The new result is7cv. Equations851--852 give the
+actual endpoint one-form comparison between recorded archive momenta
+and the full price boundary source, preserving their distinct coordinate
+maps and stationary-branch premises. The nonzero independent QUERY row
+and nonadditive two-tick price remain intact. No boundary equivalence is
+inferred solely from a Darboux chart or a full-rank geometric reader.
