@@ -14319,3 +14319,30 @@ native `G/CX/SourceI` word, establish physical admission or all fine-record
 laws, identify original full128 with this reporter, prove a physical comparison
 domain, or solve the full42 mesh. No Lean or CI result is claimed and
 `GR_closed=false`.
+
+## PR #402 integration validation at `07277300` (29 October 2026)
+
+The clean validation snapshot `07277300b50ce6a6c60f99f3995ddeb9a9be8b59`
+finds all **36/36** cold-start source cases and completes **37** benchmark
+cases over **218** required source references. This includes the existing
+canonical AF stationary family and the `#334` continuations for the original
+Julia return-source lift and the complete calibrated `H+J` source. The raw
+15,193,282-byte runner output is retained by SHA-256 in the validation
+manifest; the compact summary retains every required-source receipt in
+[`architecture_intake_validation_2026-10-29_07277300`](sources/d0_proof_architecture_formalization_2026-10-24/reports/architecture_intake_validation_2026-10-29_07277300/).
+
+The same-snapshot process comparison covers **36** identical queries, of which
+**20** have an explicit expected-source scope. The legacy assembly search finds
+0/20; the current retrieval finds 19/20. Its single top-five miss is the
+central architecture document for the canonical AF stationary-family query;
+the complete cold-start still retrieves every required source for that case.
+The comparison also records 17 of 31 expected source references without a
+direct assembly-owner or formal-support locator. These are retrieval/locator
+gaps, not mathematical failures or semantic acceptance; review remains manual.
+
+The two exact source-index pins above restore retrieval of the positive
+nonvacuum midpoint source and the Russian canonical AF proof after the intake
+grew. Exact source-set coverage is now 36/36. This report does not add a Lean
+proof or run Lean/CI in this increment; it does not establish physical D0
+admission, and `GR_closed=false` remains in force. The
+`WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION` worker remains in progress.
