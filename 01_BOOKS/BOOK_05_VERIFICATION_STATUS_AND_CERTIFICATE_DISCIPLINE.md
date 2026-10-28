@@ -14,6 +14,115 @@
 > Scope: Claim classification, proof ownership, certificate discipline, no-go ledger, and promotion rules.
 > Claim discipline: This book decides status; it does not add physical content.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
+## Current proof and publication boundary — 28 October 2026
+
+The present verification problem is composition: which proved statement can
+actually be substituted into the next statement, on the same objects and with
+all of its hypotheses retained? The earlier finite closure campaigns below
+remain useful at their declared scope. Their labels such as *Final Core
+Completion* do not classify every subsequently opened native-physics question.
+The current argument connects a verification kernel, operational interpretation,
+an actual physical realization and a refinement limit. These are separately
+owned obligations in the [existing assembly contract](../02_REGISTRY/gr_assembly/contract.json).
+
+### The generic verification and transfer applications are available
+
+The [composed foundation and transfer proof](../02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md)
+supplies an actual common-carrier application of the earlier record, comparison
+and future-execution owners. For a supplied execution system and its verified
+representation, the represented record satisfies
+
+\[
+r(s)=r(t)\quad\Longleftrightarrow\quad
+\Phi(s)=\Phi(t),\qquad
+\Phi(s)(w,a)=\operatorname{observe}(\operatorname{run}(w,s),a).
+\]
+
+Primitive action and readout maps then compose through every finite word.
+An existing theorem transfers to the common empirical image when its actual
+regime assumptions transfer. Extra native tests require their own context
+coverage; a common-sector theorem does not silently quantify over those extra
+tests. The exact applications
+`lean-verification-core-to-foundation` and
+`lean-operational-transfer-to-theory-transfer` have independent accepted
+decisions in [applications.json](../02_REGISTRY/gr_assembly/applications.json).
+Their quantified execution, verification, coding and interpretation inputs
+remain part of the conclusions' domain.
+
+This is a positive result to use, not an unresolved request to reconstruct the
+foundation. It also does not select the native preparation, complete Book
+price, physical clock, field variations or metric dictionary required by its
+GR application. The [current positive GR case](../02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)
+names that next physical substitution.
+
+### An executable locator is not a semantic proof of its prose claim
+
+The [proof-architecture programme](../02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md)
+separates three relations: elaborated Lean dependencies, mathematical
+applications, and conceptual retrieval. A string in `ClaimMap.lean` locates a
+candidate declaration. A successful build establishes that the declaration
+type-checks. To support a book assertion, its elaborated type must still be
+matched to the assertion's objects, quantifiers, assumptions and conclusion.
+A theorem whose conclusion is merely a registry-status proposition cannot be
+used as evidence for a stronger physical sentence.
+
+The same discipline applies to a finite numerical or exact-arithmetic check.
+Its recorded input and conclusion determine its scope. It cannot establish a
+uniform refining family merely by passing at one lattice, nor a selected
+physical action by evaluating a supplied candidate. The current C0 source-unit
+baseline is not frozen or independently accepted; file, claim-row, locator and
+module counts therefore do not define a formalization coverage percentage.
+These are explicit boundaries of the existing architecture programme, not new
+scientific statuses.
+
+| What the reader has | What it licenses | What remains to be supplied |
+|---|---|---|
+| A registered claim and owner | A stable statement and retrieval route | The owner's exact evidence and retained assumptions |
+| A compiled Lean declaration | Its actual elaborated proposition | The semantic correspondence to the book assertion |
+| An exact finite certificate | Its checked finite proposition on the stated inputs | Any claimed uniform limit or different physical carrier |
+| A research proof at a published commit | Reuse of its stated mathematical content with its premises | Independent acceptance where required, and the actual physical application |
+| An independently accepted assembly application | Its precise parent substitution and hypothesis map | Every other open parent obligation |
+| A generated book or green structural guard | A reproducible presentation or structural consistency check | Scientific completeness and correctness of newly asserted content |
+
+The authoritative stores remain [claims.csv](../02_REGISTRY/claims.csv),
+[assumptions.csv](../02_REGISTRY/assumptions.csv),
+[formal_support.csv](../02_REGISTRY/formal_support.csv), and the existing
+[assembly applications](../02_REGISTRY/gr_assembly/applications.json).
+This book explains their use; it does not create a parallel acceptance ledger.
+
+### Reading the new physics chapters
+
+Books 03, 06 and 07 now explain published research from the existing Draft
+[#334](https://github.com/gvakhrushev/d0_15/pull/334). The
+[local source intake](../02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md)
+preserves nine source packages and the original moving-cut continuation from
+`eebcb5e467742df3e9cf7fa9702042d7294aa742`. Other upstream notes retain
+their stated immutable source links; later continuations carry their own
+pins. Source preservation and book exposition do not promote the scientific
+owner or accept a physical GR premise.
+
+Two modules from that intake are registered as `EXPLICIT_SUPPORT`:
+`MovingProjectorTransport` formalizes the projector-tangent and cut-transport
+algebra used in Book 03, while `ArchiveGradedRefinementComposedReadout`
+formalizes repeated chain-map composition and the fixed-component readout
+control explained in Book 06. The
+[compiled declaration receipt](../02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_refinement_declarations_2026-10-28.json)
+records their load-bearing signatures, dependencies and axiom footprints;
+the [build receipt](../02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28.json)
+records the corresponding public import at its source checkpoint. These
+specific formal results do not cover the complete analytic source derivative,
+select a physical readout or accept the open refinement application.
+
+Three distinctions are especially consequential. A stationary solution of a
+configured finite action is not a proof that D0 selects that action. Agreement
+of normalized record probabilities does not identify an absolute physical
+price or its source. A theorem about smooth finite tests does not supply exact
+finite stationary roots or the original unweighted raw-response norm. The
+[GR closure contract](../02_REGISTRY/research/D0_GR_CLOSURE_CONTRACT_RU.md)
+and [primary positive case](../02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)
+retain those separate obligations. `GR_closed=false`; the new exposition does
+not alter that status.
+
 ## 05.0 Active closure law and centralized no-go ledger
 Book 05 classifies every active claim as core theorem, sector theorem, operator scaffold, bridge law, empirical passport, or no-go theorem; completion means a finite operator plus falsification boundary. `OPERATOR-SCAFFOLD-CERTIFIED` is positive internal carrier closure but not an external physical spectrum; `SPIN-FLAVOUR-CARRIER-CERTIFIED` means a finite spin-flavour carrier and its inclusion/decomposition algebra are certified before external physical labels. `SPIN-FLAVOUR-TRANSFER-CERTIFIED` certifies the spin-flavour transfer layer at the carrier level. `SCALAR-PROJECTOR-CERT-CLOSED`, `YUKAWA-SECTION-CERT-CLOSED` and `MESON-TYPED-TRANSFER-CERT-CLOSED` close the corresponding Book 04 operator boundaries at the finite projector/typed-operator level (no second mass anchor, flavour defect only via liftGen, K0 gap labels after freeze).
 
@@ -409,7 +518,7 @@ Each entry carries its own status; none may be cited as evidence until its cert 
 
 **Profinite Dixmier tower (Iteration 22, Outcome B).** The canonical phi-ladder spectral tower is CERT-CLOSED (`D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001`: trace-class, partial sums `<= 2^11/(1-phi^-3)`); the Dixmier realization of `mu_2` is a NO-GO (`D0-ALPHA-PROFINITE-TOWER-NOGO-001`: log-Cesaro coeff `0 != 12288/5`). The `2^11` pairing is cited to `D0-ALPHA-MU2-FULL-LEDGER-001` (not re-minted); the external Dixmier-residue owner (`D0-DIXMIER-RESIDUE-OWNER-001`, bridge) and the seam (`D0-ALPHA-FESHBACH-DIXMIER-OWNER-001`, PROOF-TARGET) stay unpromoted. Lean `D0.Spectral.{AlphaProfiniteSpectralTower, AlphaProfiniteTowerNoGo}`; `02_REGISTRY/frontier/alpha_dixmier_frontier.csv`. No finite-pole route, no zeta-residue=Dixmier, no CODATA alpha.
 
-**Final Core Completion (capstone).** The campaign classified every targeted internal frontier: six present-core maximality NO-GOs -- alpha tower trace-class (`D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001`), CMB smoothing non-constant (`D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001`), phason magnitude underdetermined (`D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001`), CKM overlap underdetermined (`D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001`), Higgs projectors commute (`D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001`), toral partition not forced (`D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001`) -- plus one positive owner, the lepton finite Green resolvent (`D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001`, CERT-CLOSED). All bundled in the machine-checked capstone `D0-FINAL-CORE-COMPLETION-001` (Lean `D0.Verification.PresentCoreMaximality`, no bridge assumptions). The residual is external (passports): `02_REGISTRY/frontier/external_passports.csv`, `core_completion_inventory.csv`.
+**Final Core Completion (capstone).** The campaign classified every targeted internal frontier: six present-core maximality NO-GOs -- alpha tower trace-class (`D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001`), CMB smoothing non-constant (`D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001`), phason magnitude underdetermined (`D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001`), CKM overlap underdetermined (`D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001`), Higgs projectors commute (`D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001`), toral partition not forced (`D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001`) -- plus one positive owner, the lepton finite Green resolvent (`D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001`, CERT-CLOSED). All bundled in the machine-checked capstone `D0-FINAL-CORE-COMPLETION-001` (Lean `D0.Verification.PresentCoreMaximality`, no bridge assumptions). Within that frozen campaign, the residual was classified in `02_REGISTRY/frontier/external_passports.csv` and `core_completion_inventory.csv`. This historical capstone does not close the later native action, source, physical realization or GR refinement obligations described in the current proof boundary above.
 
 **Final Research Closure (Master A-F).** The deep-research campaign answered its scoped thesis: the present core contains a canonical finite renormalization/refinement composition at the incidence + specified finite-real functional + dimensionless scale level (D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001, Lean D0.Geometry.FibonacciBratteliRefinement.finite_renormalization_refinement_composition). The normalized positive Perron eigenprofile is a separate finite-vector theorem; uniqueness of every compatible AF trace is not inferred from it and remains to be formalized under D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001. A canonical inductive spectral triple (Dirac-compatible isometric J_N) remains open under D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001 (Outcome B). Integrated in D0-FINAL-RESEARCH-TO-CLOSURE-MAP-001 (Lean D0.Verification.FinalResearchClosureBoundary) atop the M1-M7 capstone, with research_closure_map.csv, no_go_atlas.md (8 no-gos + completion classes), external_primitives.csv (9), passport_index.csv (5). No physics derived; no external theorem imported as axiom.
 

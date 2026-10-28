@@ -17,6 +17,186 @@
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
 
 
+## Current synthesis: future memory, complete records and paid clocks
+
+The current evolution argument begins with the experiments that a retained
+state must still support. Two states are equivalent only when every admitted
+finite continuation followed by an admitted test gives the same observation.
+The [accepted verification/transfer composition](../02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md)
+identifies this future-profile quotient with the represented record kernel:
+
+\[
+\Phi(s)(w,a)=\operatorname{observe}(\operatorname{run}(w,s),a),
+\qquad r(s)=r(t)\iff\Phi(s)=\Phi(t).
+\]
+
+A coordinate hidden from the current display can therefore be required memory
+if a later admitted action reveals it. Conversely, an uncoupled coordinate may
+be removed when every future test remains unchanged. This makes forgetting a
+statement about a specified future task, rather than a choice to retain only a
+convenient present scalar. Book 05 gives the evidence and application boundary.
+
+The following original-instrument results are published mathematical research
+in Draft [#334](https://github.com/gvakhrushev/d0_15/pull/334), pinned here to
+`eebcb5e467742df3e9cf7fa9702042d7294aa742`. They are not new accepted claims or a
+selection of the physical Book03 action.
+
+### A sharp DATA-memory result for the original future tests
+
+The original CAR16/Julia/Walsh/Golden instrument has 128 fine outcome labels.
+Its owned genuine three-tick, no-reset future-effect result gives the even
+test algebra
+
+\[
+\mathcal A_{\mathrm{future}}
+ =\{X\in M_{16}(\mathbb C):[X,\Pi]=0\}
+ \simeq M_8(\mathbb C)\oplus M_8(\mathbb C),
+\]
+
+where \(\Pi\) is the original fermionic parity. For a faithful unital
+\(*\)-representation of this entire algebra on a finite coherent Hilbert
+carrier \(K\), the two central projections have nonzero ranges. Matrix units
+inside each block force those ranges to have dimensions \(8m_+\) and
+\(8m_-\), with positive integers \(m_\pm\). Hence
+
+\[
+\dim_{\mathbb C}K=8(m_++m_-)\ge16.
+\]
+
+The original DATA carrier attains the bound; every minimal representation is
+unitarily equivalent to its two defining parity blocks. This is a relative
+memory-minimality theorem for the existing full future-test algebra. It does
+not derive that test algebra or four CAR modes from M1 alone, and it does not
+bound all physical work, oldRIGHT, clock or retained-record resources. The
+number 16 is Hilbert dimension, not 16 qubits. Keeping one parity block and
+doubling a scalar trace loses an entire family of future tests, even where it
+preserves one prepared feedback number. The exact proof and its native input
+are in the [three-tick minimal-memory owner](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_THREETICK_FUTURE_CAR16_SHARP_MINIMAL_QUANTUM_MEMORY_2026_10_26.md).
+
+### Endogenous DATA preparation is distinct from freezing its source
+
+On the regular original chart, put \(A=N_0^\dagger N_0>0\) and
+\(Z=\operatorname{Tr}_{16}A^{-1}\). The unchanged 128-Kraus channel has
+
+\[
+\rho_A=A^{-1}/Z,\qquad\Phi(\rho_A)=\rho_A.
+\]
+
+This is an exact consequence of the two-sided original Julia/Walsh
+completeness and \(p+p^2=1\), with \(p=\varphi^{-1}\); no external reset
+or replacement channel is introduced. At the specified three-tick positivity
+fixture, the separate Choi result also gives local uniqueness and attraction.
+Stationarity does not make \(\rho_A\) independent of the actual operator.
+Its preparation derivative and the corresponding adjoint/resolvent source
+remain in a moving native execution. This distinction is proved in the
+[closed self-reading and source owner](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_CLOSED_SELF_READING_DATA_SOURCE_RESOLVENT_2026_10_27.md),
+especially its direct original-Kraus identity C36 and preparation-source
+controls.
+
+### The full coherent archive has a small spectral calculation, not a free erasure
+
+Suppose an actual pure DATA-plus-retained-reference preparation has DATA
+marginal \(\rho_A\), and every fresh original flag remains coherent. With
+\(d=16\), the complete state after \(n\) no-reset stages is pure on DATA,
+reference \(R\), and the fresh archive \(E_n\). Its Schmidt identity gives
+
+\[
+\Theta_n=(\Phi^n\otimes\mathrm{id}_R)
+ (|\psi_{\rho_A}\rangle\langle\psi_{\rho_A}|),\qquad
+S(E_n)=S(\Theta_n).
+\]
+
+Thus the nonzero archive spectrum is computed from a fixed
+\(d^2\times d^2=256\times256\) matrix, even though the physical fine tape
+has \(128^n\) nominal addresses. No label is discarded. Existence of a
+mathematical purifier does not itself admit its physical preparation.
+
+At the named regular fixture and its sufficiently small regular neighborhood,
+the three-step Choi lower bound supplies a common positive spectral floor for
+\(\Theta_n\) at all \(n\ge3\). It gives exponential convergence to
+\(\rho_A\otimes\rho_A^T\), so the fresh coherent entropy approaches
+\(2S(\rho_A)\). If the archive also includes the retained purifier, purity
+instead gives \(S(E_nR)=S(\rho_A)\) at every horizon. These are different
+observable algebras. A classically sealed or dephased fine tape has a different
+entropy; this calculation does not erase it or pay its record cost. The
+source formula retains both \(D\Phi^n\) and \(D\rho_A\). No
+mesh-uniform spectral gap is inferred. See the
+[complete coherent-archive theorem](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_FULL128_COHERENT_ARCHIVE_FIXED256_SOURCE_2026_10_27.md).
+
+### A stationary port process can still carry temporal information
+
+For the actual binary port subrecord, the original code words are `0` and
+`10`, with lengths one and two. If \(P_n\) is the true correlated no-reset
+port law, its normalized Golden code reference is
+\(\mu_n(w)=p^{n+\sum_j b_j}\). Consequently the reporting component obeys
+
+\[
+\mathbb E C_n-H_\varphi(P_n)
+ =D_\varphi(P_n\Vert\mu_n)
+ =\sum_{j=1}^nD_\varphi(\mathrm{Bern}(q_j)\Vert\mathrm{Bern}(p^2))
+  +\sum_{j=2}^n I_\varphi(B_j;B_{1:j-1}).
+\]
+
+At \(\rho_A\), every one-tick marginal has
+\(q_j=q_A=64p^3/Z\), and the mean reporting cost is \(n(1+q_A)\).
+The temporal mutual-information term can nevertheless remain nonzero.
+Replacing the joint entropy by \(nH_\varphi(\mathrm{Bern}(q_A))\)
+would remove precisely that memory. The
+[original port/Kraft owner](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_CLOSED_NATIVE_PORT_KRAFT_HISTORY_SOURCE_2026_10_27.md)
+derives this identity for the actual subinstrument. It does not identify
+port-only Cost−Info with the fine-record, coherent-archive or complete Book
+price. Extra preparation, query, work and clock terms retain their own source.
+
+### Four different notions of time and size
+
+| Quantity | Mathematical role | Required physical binding |
+|---|---|---|
+| Future-word length | Number of admitted operations in a test | Which primitive steps actually execute and are charged |
+| Minimal description or DATA representation | Information sufficient for the specified future task | Actual encoding, work and retained archive |
+| Programme-clock length | Stages of one implemented finite word | Complete clock heat, preparation and terminal operations |
+| Heat parameter and continuum time | Spectral evolution parameter or a spacetime coordinate | The stated calibration, operational readout and refinement map |
+
+Refinement also needs its actual readout and norm. The supporting module
+[`ArchiveGradedRefinementComposedReadout`](../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean)
+iterates the literal adjacent graded pullbacks and proves their cochain
+identity for every finite number of steps. Its unit singleton one-form probe
+becomes two on the original edge prefix and zero on the appended tail when
+the role-fibre length doubles. Relative to the specified constant-component sampler,
+both normalized \(L^1\) error and normalized squared \(L^2\) error equal
+one, by `archive_doubling_fixed_component_errors`. Thus chain-map
+preservation alone does not establish convergence of that readout. The
+sampler is not selected as a physical observable; this is a specific
+readout control, not a universal obstruction to physical refinement. The
+[integration record](../02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md#lean-formalization-slice)
+states the compiled theorem scope and the remaining physical application.
+
+The [full-register compilation and clock theorem](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_NATIVE_CLOCK_FULL_PRICE_COMPILATION_AND_FINITE_TEST_RECOVERY_2026_10_27.md)
+makes this distinction constructive. For the declared addressed Golden/CNOT
+class, it builds a stage cut from the actual word's prefixes, retains every
+clock and scene mode, and identifies the endpoint feedback exactly. For a
+complete coherent reflection with fixed full multiplicities, the specified
+scene/clock heat is constant under the field conjugation. A completed word
+with added copying, sealing or a controller need not remain in that class;
+its source must be recomputed. Endpoint agreement alone does not identify the
+paid implementation or its clock.
+The [locally preserved clock package](../02_REGISTRY/research/sources/d0_chat_intake_2026-10-28/packages/D0_internal_clock_bridge_2026-10-27/PROOF.md)
+also retains the completed-reflection hypotheses and the scene-dependent-gate
+countercontrol; its source intake does not establish general native admission.
+
+Likewise, an optimal implementation at fixed fields and task is not a minimum
+over all field values. The [same-carrier minimum exclusion](../02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
+preserves the exact Einstein/CAR stationary family while excluding a full
+open-field minimum for its specified source-preserving stopped price. The
+physical question concerns reachable alternatives from one complete initial
+state or an independently derived native stationary law. It is not resolved
+by declaring every geometric parameter an available actuation.
+
+The literal heat-plus-logdet action in Book 03 §03.25 is also a separate
+specified functional: an entropy calculated here is not automatically an
+additional term in it. Its [complete-source application](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md)
+and Book 07 explain which generated-state equations can be eliminated by the
+same execution's adjoint and which genuinely independent inputs remain.
+
 ## 06.0 Active time/evolution sector law
 
 Definition. The time arrow in D0 is the ordering induced by normalized coarse-grained feedback channels.

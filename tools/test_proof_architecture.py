@@ -5048,17 +5048,17 @@ class ProofArchitectureTests(unittest.TestCase):
         coordinates = {(row["path"], row["line"]) for row in headings}
         self.assertEqual(len(coordinates), len(headings))
         self.assertEqual(view["counts"]["book_heading_count"], len(headings))
-        self.assertEqual(view["counts"]["book_heading_count"], 674)
+        self.assertEqual(view["counts"]["book_heading_count"], 711)
         self.assertEqual(
-            view["counts"]["book_headings_with_exact_heading_candidate"], 40
+            view["counts"]["book_headings_with_exact_heading_candidate"], 43
         )
-        self.assertEqual(view["counts"]["book_headings_with_ranked_heading_candidate"], 213)
+        self.assertEqual(view["counts"]["book_headings_with_ranked_heading_candidate"], 217)
         self.assertEqual(
             view["counts"]["book_headings_with_both_exact_and_ranked_heading_candidates"],
-            23,
+            25,
         )
         self.assertEqual(
-            view["counts"]["book_headings_without_claim_heading_candidate"], 444
+            view["counts"]["book_headings_without_claim_heading_candidate"], 476
         )
         mention_rows = [
             (claim_row["claim_id"], mention)
@@ -5072,9 +5072,9 @@ class ProofArchitectureTests(unittest.TestCase):
             view["counts"]["claim_rows_with_literal_claim_id_mentions"],
             len({claim_id for claim_id, _mention in mention_rows}),
         )
-        self.assertEqual(view["counts"]["literal_claim_id_mention_count"], 833)
+        self.assertEqual(view["counts"]["literal_claim_id_mention_count"], 840)
         self.assertEqual(
-            view["counts"]["claim_rows_with_literal_claim_id_mentions"], 424
+            view["counts"]["claim_rows_with_literal_claim_id_mentions"], 430
         )
         self.assertEqual(
             view["counts"]["book_source_files_with_literal_claim_id_mentions"], 9
@@ -5104,8 +5104,8 @@ class ProofArchitectureTests(unittest.TestCase):
              for mention in bridge["literal_claim_id_mentions"]],
             [(
                 "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
-                238,
-                226,
+                289,
+                277,
             )],
         )
         bridge_mention = bridge["literal_claim_id_mentions"][0]

@@ -172,6 +172,80 @@ finite detector support
 -> falsification hook
 ```
 
+## 02.3b Operational interpretation and reuse of existing theorems
+
+Book 01 §01.1.8 supplies a verified state, record and future quotient on one
+carrier. The next mathematical step is to interpret a source theory in a
+native execution while preserving the experiments that give its assertions
+meaning. The owner is
+[`D0.Foundation.TheoryTransfer`](../03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean),
+with the [detailed derivation](../02_REGISTRY/research/D0_THEORY_TRANSFER_2026_10_20.md)
+and the accepted application `lean-operational-transfer-to-theory-transfer`
+in [`applications.json`](../02_REGISTRY/gr_assembly/applications.json).
+
+Let `F` and `G` be two declared execution systems. An `Interpretation F G`
+supplies a state map `i`, a map `c` from each source action to a **finite
+native word**, a test map `j`, and an injective outcome encoding `e`. It
+requires only the primitive equations
+
+\[
+i(F_a(s))=\operatorname{run}_G(c(a),i(s)),\qquad
+\operatorname{read}_G(i(s),j(q))=e(\operatorname{read}_F(s,q)).
+\]
+
+Induction over a source word derives the full execution equation
+
+\[
+i(\operatorname{run}_F(w,s))
+=\operatorname{run}_G(c(w),i(s)).
+\]
+
+`run_commutes` and `profile_commutes` prove these execution and observation
+identities; `compile_append` and `comp_compile` prove compatibility with
+concatenation and successive interpretations. Preservation of whole runs is
+therefore a consequence of the primitive maps, not an extra assumed field.
+The map need not be injective on raw states: only distinguishable future
+profiles must be retained.
+
+The common execution uses the full native state type with the compiled
+source actions and mapped source tests. On its represented empirical image,
+
+\[
+\Phi_{G|I}(i(s))=\Phi_{G|I}(i(t))
+\quad\Longleftrightarrow\quad\Phi_F(s)=\Phi_F(t).
+\]
+
+The resulting `imageEquiv` identifies the source future quotient with this
+explicit image, which is closed under the interpreted actions. Composing it
+with the actual Book 01 verification representation gives
+`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented
+execution, rather than a newly chosen abstract state, reaches the class of
+its compiled native execution.
+
+For assertions `H` and `P` on source future classes, a supplied proof
+`forall q, H(q) -> P(q)` then transfers to the image as
+`translate(H) -> translate(P)`. The construction preserves conjunction,
+negation and indexed premises, and connects translated observations to the
+actual common readout. No premise of `H` disappears during translation.
+The formal assertion system here is semantic entailment on empirical
+classes; it does not silently implement every external proof calculus.
+
+There is a sharp boundary to the word “faithful.” Native `G` may have extra
+actions or tests outside the common interface. Full-native equivalence
+requires `NativeContextCoverage`: every native finite experiment has a
+specified source experiment and a correct readout map on the represented
+states. The built-in extra-bit example obeys all the common-sector diagrams
+while an additional native test distinguishes states the source identifies.
+It proves that coverage cannot be inferred from primitive commutation alone.
+
+This theorem makes mathematical reuse concrete. A physical application still
+has to supply the interpretation for the **actual** admitted operations and
+retain its action, source, clocks and refinement requirements. Equality of
+observations or a compiled proof of a conditional theorem does not select
+that physical interface. Book 03 develops the additional full-source map;
+Book 07 applies compatible source identities to the declared gravitational
+family without replacing its remaining realization obligations.
+
 ## Finite cochain complex and Hodge Laplacian
 
 The finite graded incidence complex is the common algebraic carrier for
@@ -1299,7 +1373,9 @@ The **sixth** owner, `D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001`, was initia
 
 **[vNext+1: 34-to-33 is a tested quotient, not an identity].** `dim A_3 = 5^2+3^2 = 34` is the dimension of the finite matrix algebra `M_5(+)M_3` (block sizes = Fibonacci path counts 5,3), not `33+1` vertices; `34-1=33` is not a quotient proof. Within this finite two-block algebra, the trace-canonical line `C*1` gives the reduction `su(5)(+)su(3)(+)u(1)=(24,8,1)`, which does not match the tripartite scene `(9,11,13)` (`D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001`, Outcome D). This finite classification does not use uniqueness of a trace on the AF inductive limit or a GNS Hilbert-space isometry. Separately, the owned AF martingale Dirac^2 multiplicities `{1,3,8,21}` differ from the scene Laplacian's `{1,2,8,10,12}` for any scale (`D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001`, scale-independent). These scoped obstructions rule out the registered canonical 33-scene anchor (`D0-VNEXT-33-SCENE-ANCHOR-NOGO-001`); the scale and comparison-map Xi primitives stay independent.
 
-**[vNext+2: scene-native conditional-expectation hierarchy].** Refining directly from K(9,11,13) (history/path tower, endpoint conditional expectation) the comparison-map question is tested without the AF route. The intertwining hierarchy is typed exactly: scene compression (`C_n L J_n = L_scene`) < spectral equality < heat-semigroup equality (`C_n e^{-uL} J_n = e^{-uL_scene}`) < Feshbach equality -- a weaker level never implies a stronger one. Result: no UNIQUE scene-native refinement rule is forced -- all-walks, non-backtracking, and directed-edge families satisfy M1 but are inequivalent (depth-2 carriers 15708 != 14990; transfer dims 33 != 718), so `Xi` is not canonical (`D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001`, Outcome D). New upstream primitive `PRIM-SCENE-HISTORY-REFINEMENT-RULE`; `PRIM-COMPARISON-MAP-XI-N` and `PRIM-DIRAC-SCALE-SELECTION` remain independent. The scene fingerprint (mults {1,2,8,10,12}, trace 718, structural R(3)+K(8,10,12)) is owned (`D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001`, CERT).## 02.16 Archive/cosmology proof cells
+**[vNext+2: scene-native conditional-expectation hierarchy].** Refining directly from K(9,11,13) tests the comparison-map question without the AF route. The required intertwining conditions distinguish scene compression (`C_n L J_n = L_scene`), spectral equality, heat-semigroup equality (`C_n e^{-uL} J_n = e^{-uL_scene}`) and Feshbach equality; a checked weaker interface does not supply an unproved stronger one. The earlier `D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001` distinguishes inequivalent all-walks, non-backtracking and directed-edge proposals under its stated weak requirements (depth-two carriers 15708 versus 14990; transfer dimensions 33 versus 718). Its scope must be read together with the later positive composition theorem: containing every elementary scene edge and closing under composition at vertices forces the all-walks path category; non-backtracking paths fail that stronger contract (`D0-SCENE-PATH-COMPOSITION-CANONICITY-001`). One-step fiber-symmetric endpoint averaging is also unique under its support/symmetry/normalization premises. These results are developed in Book 01 §01.25. They do not supply every spectral comparison map or make whole-history counting an iterated random walk: the actual depth-two return entries are `12/251 != 23/480`. The present scene-history Perron module proves its finite counts and full-scene eigenvector equation; its capstone does not contain an all-depth cylinder-consistency theorem. The existing comparison-map and Dirac-scale obligations therefore retain their own interfaces. The scene fingerprint (multiplicities `{1,2,8,10,12}`, trace 718, structural `R(3)+K(8,10,12)`) remains owned by `D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001`.
+
+## 02.16 Archive/cosmology proof cells
 
 ### 02.16.1 Static archive-pressure coefficient closure
 

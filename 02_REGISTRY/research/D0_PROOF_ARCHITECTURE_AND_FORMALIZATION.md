@@ -4,6 +4,150 @@
 
 Primary integration artifact for WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION. The broad objective remains active. C0 is not frozen or independently accepted, so no formalization coverage percentage is reported. Counts below describe starting inputs, not the C0 denominator.
 
+## Book and registry maintenance checkpoint — 28 October 2026
+
+This bounded increment continues the existing #402 owner in response to the
+request to reconcile the books, README and registries with the accumulated
+results. It does not complete the broader formalization programme, freeze C0,
+accept new #334 applications or close a physical GR premise.
+
+Input refs: main 8b94198c8dfbdf5983ad0b350b058fb30bb68a54;
+#402 before this increment 30ffef0f5a4353874f8966a4b69d09e534f3c47d;
+published science #334 eebcb5e467742df3e9cf7fa9702042d7294aa742.
+The concurrently published #402 source intake
+5007f1707932629613d4b846482b8cd8cae9a4a3 is preserved by the integration merge.
+The later conditional geometric-closure source is read at #334
+c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a.
+The [dated ledger section](../RESEARCH_LEDGER.md#book-and-research-reconciliation--28-october-2026)
+pins the seven main research sources by commit/path/blob and records their
+remaining application conditions. All read-only source-scope reviews use
+those actual sources. They are editorial reviews, not scientific application
+acceptances.
+
+### What the increment changes
+
+All ten authored books now explain the current composition: the verification
+kernel and complete future profile, operational theory transfer, scene
+histories, finite CAR matter, complete action/price with moving cut, coherent
+history and real clock, configured nonlinear Einstein–CAR recovery, and its
+cosmological/wave consumers. The source-matched proof bounds and physical
+hypotheses remain explicit. README and the research reading map provide a
+shorter route through these arguments.
+
+The subsequent source intake is reflected in the local reading paths and
+the exact algebraic support in Books 03/05/06. The new refoliation calculation
+is explained as a conditional law-selection theorem inside its declared
+canonical continuum class. It does not identify moving-cut block-frame
+curvature with the hypersurface-deformation algebra or supply the native
+symplectic data, normal generators, lapse family and controlled bracket limit.
+
+Targeted corrections remove several contradictions with current owners:
+MDL is no longer stated to force physical stationarity; formal continuation
+of a real weight is not quantum reconstruction; finite A2/Bianchi results
+are not presented as full native GR selection; historical completion labels
+are scoped to their original finite results. The original moving-cut
+derivative retains positivity/unitarity and fixed-parameter hypotheses.
+The cut-price positive gain retains the original heat/count bounds and the
+common-null-family restriction. Coherent-history control is a spectral floor
+for Theta_n, with its actual purification and primitive-fixture conditions.
+
+The existing registries are reconciled without adding a parallel status
+system:
+
+- Two malformed claims.csv records are repaired losslessly: unquoted commas
+  had hidden portions of their existing notes from DictReader.
+- Nine history/moving-matter book locators point to the new exact chapters.
+  The Perron-history note is limited to the actual finite counts, negative
+  control and separate eigen-equation, without an unconstructed all-depth
+  cylinder measure.
+- The quasicrystal/lattice notes and Wilson-bridge justification are limited
+  to the finite certificates' actual checks and retained premises. The
+  quasicrystal claim now declares its previously omitted existing
+  ASSUMP-WILSON-LATTICE-1974 dependency. The certificate's hard-coded
+  free-parameter flags are not a carrier-classification proof.
+- The 56 legacy-label aliases now point to their first exact occurrence in
+  the same current book (55 line numbers changed); both canonical-target
+  aliases remain unchanged. This is locator maintenance, not a new alias
+  equivalence.
+- All 889 claim IDs, formal proof/certificate locators and release statuses
+  remain in their existing ownership. The one additional bridge dependency
+  makes a previously implicit premise explicit.
+
+The source comments and outputs of unchanged historical certificates are
+not rewritten as part of this increment. Corrected registry/book scope
+controls their interpretation.
+
+### Preserve historical book evidence while editing exposition
+
+Twenty-seven existing research checks record earlier book-file hashes.
+[The historical-book input contract](sources/d0_book_editorial_inputs_2026-10-28/README.md)
+binds their exact checker and receipt bytes at 30ffef0f to five book snapshots
+from published 34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a. Three snapshots already
+exist; only the missing Book00 and Book02 bytes are added.
+
+The existing isolated runner applies these exact inputs only to named
+consumers in its temporary detached worktrees. It validates every binding
+before writing, composes with prior native-input overlays, restores current
+book bytes and detects mutations. Logs explicitly identify historical replay
+and set current_book_prose_certified=false. Scientific checker files and
+expected scientific receipts are unchanged.
+
+A new CSV shape guard prevents future silent row truncation. Focused hostile
+controls cover malformed fields/headers, wrong or missing historical inputs,
+changed checker/receipt bytes, mutation, attached or incorrectly placed
+worktrees and shared-helper dependency selection. The two new suites are
+included in the existing guards workflow.
+
+### Validation and retained blockers
+
+Structural, generated-view and targeted replay results are recorded at the
+final checked source checkpoint below. No new Lean proof or full Lean
+rebuild is claimed for this prose/metadata increment.
+
+The registered certificate sweep on the book-maintenance inputs ran 463
+entries: 459 PASS, one registered OPEN, two SKIP and one FAIL. The OPEN is
+the existing alpha-seam proof target. The two skips require Astropy/the DESI
+FITS input and a missing pinned DESI BAO data file, respectively. The heavy
+vp_scene_bartholdi_typed.py check was excluded under the existing CI budget.
+These outcomes are not reported as a completely green certificate suite.
+
+The registered certificate sweep found an inherited failure in
+vp_total_extension_primitive_minimality.py: the exclusion row for
+PRIM-ISOMETRIC-DIRAC-J lacks an existing claim-owner citation after the
+earlier scope repair. The same failure is reproducible at the unmodified
+#402 input 30ffef0f. The row explicitly says its full decomposition remains
+open; adding a token solely to satisfy the assertion would not justify an
+exhaustive minimality conclusion. This increment preserves that blocker and
+does not weaken its certificate or reinstate a refuted complete-Hilbert claim.
+
+All 27 book-bound research consumers were replayed in isolated worktrees at
+95a1ace899eb894e843d253a7651b1cb9a08432f: 15 PASS and 12 FAIL. Each failure
+occurs at an earlier Lean source-hash binding, after the historical book
+inputs have been restored successfully. All tracked-mutation and
+historical-input-mutation flags are false. The failed consumers were then
+replayed at the unmodified #402 baseline
+30ffef0f5a4353874f8966a4b69d09e534f3c47d with the same Python 3.12.14,
+SymPy 1.14.0 and mpmath 1.3.0 environment: all 12 fail with exactly the same
+final error. There is no change to 03_FORMALIZATION or the scientific
+certificate/checker directory between those two checkpoints.
+
+The affected checker families are af_trace_preparation,
+composed_feedback_dynamics, curved_soldered_heat, cyclic_history_price,
+cyclic_memory_minimum, full_preparation_fiber,
+golden_hodge_state_separation, hodge_connes_metric, joint_adjoint_source,
+positive_heat_radial_balance, soldered_heat_source and
+strict_observable_descent (all with prefix a4d_native_). Their receipts
+retain earlier versions of 15 distinct Lean inputs, including the AF tower,
+source preparation, phase shift and CAR/Hodge operators. This is inherited
+historical-input debt, not evidence that the current Lean bytes reproduce
+those earlier capsules. A future repair must bind and verify the actual
+historical dependency closure; changing expected scientific hashes or
+interpreting historical replay as a current-source proof is not admissible.
+
+Earlier time-ordered checkpoints below keep their recorded input refs and
+evidence. A past successful run is not a statement that the current tree has
+passed an unchanged broad closure test.
+
 ## Starting snapshot
 
 Task registration was merged into main as 8b94198c8dfbdf5983ad0b350b058fb30bb68a54. Execution continues on wrk/d0-proof-architecture-formalization in Draft PR #402. Lean toolchain: leanprover/lean4:v4.30.0.
