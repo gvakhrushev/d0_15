@@ -12480,3 +12480,29 @@ records 38 declarations at clean published snapshot
 `d2bf764d210cb377387db1bcdb007b88c99f69d3` and the same Lean source digest.
 Its SHA-256 is `25e7f5af68dfab9d28123720d735a169f8754d465f97218acb35ae42c3d6a407`;
 the reported axiom union is `Classical.choice`, `Quot.sound` and `propext`.
+
+### Actual derivatives for the rational QUERY/cut control
+
+[`D0.Analysis.MovingCutQueryDerivativeAdapter`](../../03_FORMALIZATION/D0/Analysis/MovingCutQueryDerivativeAdapter.lean)
+connects the existing analytic feedback derivative to the owned rational
+QUERY/cut control in #334 §7cu. It constructs differentiable projector and
+unitary-reflection curves, proves their base values and velocities, and applies
+the analytic logarithmic determinant theorem to three actual curves. Their
+feedback derivatives at zero are respectively `16/35`, `-16/35`, and `0`;
+the proof explicitly connects these values to the existing rational control.
+
+The source is commit `172876cdf38bfce6f87fdd4a059d524b60c10eb9`, blob
+`671f8712162b850b4299152bedac0165267b71a7`, retained in the paid-source
+intake. Independent mathematical review checked the matrices, velocities,
+resolvent, signs, and scope. The joint curve has the common-conjugation
+velocity at zero; it is not claimed to be the same conjugation orbit for all
+times. The result concerns this finite feedback term and first derivative;
+it does not admit the directions physically, identify the complete
+Cost−Info/work/clock source, or establish GR.
+
+The module passes its narrow build; the complete `D0.All` build passes 4,771
+Lake jobs at Lean source digest
+`e2dcd5b0c76b9dc85a81d2298bcd66c9c10c4043fda3304eb3cea10a4f9879bb`.
+The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_query_derivative.json)
+has content SHA-256 `c34105fedc326029cbcee3a65e7e60e0a50163f48ef942356998a6349c290c90`.
+The full build retains existing warnings in other modules.

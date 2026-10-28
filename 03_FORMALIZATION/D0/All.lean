@@ -35,6 +35,7 @@ import D0.Analysis.MatrixThermalDensityBridge
 import D0.Analysis.MatrixThermalTrace
 import D0.Analysis.MatrixTraceExponentialDerivative
 import D0.Analysis.MidpointQuadrature
+import D0.Analysis.MovingCutQueryDerivativeAdapter
 import D0.Analysis.MovingProjectorBookPrice
 import D0.Analysis.MovingProjectorBookPriceDensityBridge
 import D0.Analysis.MovingProjectorVariableParameters
