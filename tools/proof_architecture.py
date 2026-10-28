@@ -799,6 +799,7 @@ def _receipt_git_blob(root: pathlib.Path, commit: str, path: str) -> bytes | Non
     """Read a local immutable snapshot without fetching missing Git objects."""
     env = os.environ.copy()
     env["GIT_NO_LAZY_FETCH"] = "1"
+    env["GIT_NO_REPLACE_OBJECTS"] = "1"
     try:
         result = subprocess.run(
             ["git", "show", f"{commit}:{path}"], cwd=root, env=env,
@@ -813,6 +814,7 @@ def _receipt_git_object_type(root: pathlib.Path, object_id: str) -> str | None:
     """Read a local Git object's type without fetching missing objects."""
     env = os.environ.copy()
     env["GIT_NO_LAZY_FETCH"] = "1"
+    env["GIT_NO_REPLACE_OBJECTS"] = "1"
     try:
         result = subprocess.run(
             ["git", "cat-file", "-t", object_id], cwd=root, env=env,
@@ -854,6 +856,7 @@ def _receipt_corpus_changes(root: pathlib.Path, commit: str) -> tuple[list[str],
     """
     env = os.environ.copy()
     env["GIT_NO_LAZY_FETCH"] = "1"
+    env["GIT_NO_REPLACE_OBJECTS"] = "1"
     try:
         tracked = subprocess.run(
             ["git", "diff", "--no-ext-diff", "--no-renames", "--name-only", "-z", commit, "--"],

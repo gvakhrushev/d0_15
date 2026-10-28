@@ -90,6 +90,36 @@ class ReceiptFreshnessTests(unittest.TestCase):
         self.assertEqual(result["search_corpus_status"], "unverified")
         self.assertEqual(result["overall_status"], "unverified")
 
+    def test_git_replace_cannot_forge_historical_bindings(self) -> None:
+        path = "02_REGISTRY/formal_support.csv"
+        replaced = self.contents[path] + b"replacement only\n"
+        self.write(path, replaced)
+        self.git("add", "--", path)
+        self.git("-c", "user.name=Receipt Test", "-c", "user.email=test@example.invalid",
+                 "commit", "-q", "-m", "replacement")
+        replacement = self.git("rev-parse", "HEAD").strip()
+        self.git("replace", self.head, replacement)
+        report = {
+            **self.report,
+            "authority_source_digests": {
+                **self.report["authority_source_digests"], path: digest(replaced),
+            },
+        }
+        forged = self.status(report)
+        self.assertEqual(forged["historical_selected_bindings_status"], "mismatch")
+        self.assertIn(path, forged["snapshot_mismatches"])
+        original = self.status()
+        self.assertEqual(original["historical_selected_bindings_status"], "verified")
+        self.assertEqual(original["authority_status"], "changed")
+        self.assertIn(path, original["checked_potential_search_input_changes"])
+
+    def test_git_replace_cannot_change_snapshot_object_type(self) -> None:
+        tree = self.git("rev-parse", "HEAD^{tree}").strip()
+        self.git("replace", "-f", self.head, tree)
+        result = self.status()
+        self.assertEqual(result["historical_selected_bindings_status"], "verified")
+        self.assertNotIn("snapshot_commit:not_commit", result["snapshot_mismatches"])
+
     def test_authority_mutation_does_not_damage_historical_pin(self) -> None:
         path = "02_REGISTRY/formal_support.csv"
         self.write(path, self.contents[path] + b"new support row\n")

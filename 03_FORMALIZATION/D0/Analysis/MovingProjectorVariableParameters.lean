@@ -133,7 +133,6 @@ theorem hasDerivAt_variable_feedback_logdet
   rw [← hFun]
   exact hReal'.congr_deriv hValue
 
-set_option maxHeartbeats 2000000 in
 /-- Complete derivative of the specified scalar with both parameters varying. -/
 theorem hasDerivAt_variable_moving_projector_book03_price [Nonempty ι]
     {β z : ℝ → ℝ} {P U Δ : ℝ → Matrix ι ι ℂ}
@@ -162,7 +161,8 @@ theorem hasDerivAt_variable_moving_projector_book03_price [Nonempty ι]
   have hFeedback := hasDerivAt_variable_feedback_logdet hz hP hU hIdem hSelf hSlit
   have h := hHeat.add hFeedback
   dsimp only at h ⊢
-  simpa only [matrixBook03Price, sub_eq_add_neg, add_assoc, add_left_comm, add_comm] using h
+  convert h using 1
+  abel
 
 /-- The slit-plane premise is derived from the actual isometric cut at `t`. -/
 theorem hasDerivAt_variable_moving_projector_book03_price_of_isometric_cut [Nonempty ι]
