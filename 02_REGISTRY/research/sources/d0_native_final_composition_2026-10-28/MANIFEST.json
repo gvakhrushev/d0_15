@@ -1,0 +1,166 @@
+{
+  "GR_closed": false,
+  "files": [
+    {
+      "bytes": 31139,
+      "git_blob": "063450255b3b4846faff31b7661a01b2c83fbca8",
+      "path": "02_REGISTRY/research/A4D_RETAINED_HISTORY_FINAL_COMPOSITION_2026_10_28.md",
+      "sha256": "855b105a25e1b052fcb8240dfef926db32e3918e146456a1fa050c382ba3a0c2"
+    },
+    {
+      "bytes": 26174,
+      "git_blob": "23be29da70f4305c6e92497a72d66f859c6dd07d",
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_RETURN_BOUNDARY_AND_CANONICAL_RIGIDITY_2026_10_28.md",
+      "sha256": "07804c518a108a2cd104ee0454e8feb016b264de3e65e8eb07ef16af6c97b17a"
+    },
+    {
+      "bytes": 6820,
+      "git_blob": "dcdd91584cf331f73029b2ab9ebc7ebfcd3df3a7",
+      "path": "02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_BOUNDARY_HESSIAN_2026_10_28.md",
+      "sha256": "4cb6cfd1bfc9760d0681293b44e41bfaa2e497c294607251d08023461268167f"
+    },
+    {
+      "bytes": 13024,
+      "git_blob": "d5cb4f271a73cd0d88a3235dcc1e928b171807d7",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/GAUGE_MOMENT_BOUNDARY.md",
+      "sha256": "e7fa8fe4f036b7ba600eb4da4c4f8d67fffc843761fb14cc2fb1ebd4c3aa6d4d"
+    },
+    {
+      "bytes": 1645,
+      "git_blob": "aa0f9296f596dc5bede1d00099673e05a0875f54",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/GAUGE_RESULT.json",
+      "sha256": "0a43a0ee306859a5273c5e65872daa80e342ce373de73a7fecc0f8be7e12e474"
+    },
+    {
+      "bytes": 4514,
+      "git_blob": "056fd9bf55d3c4706ad285ee28bff0dad127b470",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/INCOMING_COMPATIBILITY.md",
+      "sha256": "614383fee6e6d7eebb6ca3d2d33fb8f1e7e3fbe76c8bb6f3b47925b247cada6b"
+    },
+    {
+      "bytes": 2117,
+      "git_blob": "7d8c50e365dbb8bf5da840cff2e91645460b9a0b",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/MEMORY_RESULT.json",
+      "sha256": "2463f1e5b3a911bf4dd3e684387f5263b1deb8b342cb76b07445deedd4295b71"
+    },
+    {
+      "bytes": 2532,
+      "git_blob": "7b8e49a99b95e2cfff80d45717db3e10fc753ac6",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/NATIVE_PHASE_RESULT.json",
+      "sha256": "78cfabe965a54bc73d8cfc3de88f1f4f3a6087cc7515453b451007f8fde7ce89"
+    },
+    {
+      "bytes": 6499,
+      "git_blob": "7abe0ddf52f4f3248952b2f87c90d19fd1d4ba52",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/NATIVE_PHASE_WITNESS.md",
+      "sha256": "72f1cd1aea4ea90cb6f3ea66cc18491bdc781435de38f2d8529d2f06987a47b7"
+    },
+    {
+      "bytes": 12678,
+      "git_blob": "12bfc36c5bb13d91978aebacbc9b332e562b2a55",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/PHASE_DESCENT.md",
+      "sha256": "c606a164b88662d6e73f8e9ed078e3268e7c2ee91061287f21e9fffc84b035bc"
+    },
+    {
+      "bytes": 1530,
+      "git_blob": "7833c21539985018532143f2bbe32019463aa8c5",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/PHASE_RESULT.json",
+      "sha256": "3e8d63814a0c56688ad38b4f54d65a92f25db645c786e26df16c2aef74f517b6"
+    },
+    {
+      "bytes": 1629,
+      "git_blob": "b9efa2e2b5c82390cabeb8f893b62eaab38d6834",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/QUERY_RESULT.json",
+      "sha256": "50180a819f70e56e03fb9b139ef7a6fd5b2a7665583c3227fcb8b1fe91b937d4"
+    },
+    {
+      "bytes": 10103,
+      "git_blob": "cf0e7ae5ccce7807aaa0c0002248bbde22458688",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/QUERY_STATIONARY_REDUCTION.md",
+      "sha256": "f1b05ab296c75a1be266d7d6d0781c702b012742e3a3a97982dded4b934d79f4"
+    },
+    {
+      "bytes": 9921,
+      "git_blob": "5a14aac850f0388a27f6b099a0adedbe55378111",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/RETAINED_MEMORY_LOCALITY.md",
+      "sha256": "27e90941a32e7f01442a96149e3fe174a309a8203d4068e9da16a22cd678ffa7"
+    },
+    {
+      "bytes": 6014,
+      "git_blob": "bf48010d372bbb02fdede1895d0012901b841c75",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/REVIEW.md",
+      "sha256": "ba99a31dcb34c6cfaa141d616137ad3ca8822148a5747165ea2ac642f3359d44"
+    },
+    {
+      "bytes": 2475,
+      "git_blob": "da249eae709080e91139b49156415dfdb1f543ca",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/RUN_LOG.json",
+      "sha256": "836b7978951c55cb150b0e831e1032ec7c307ce48298178ec25463669343e13f"
+    },
+    {
+      "bytes": 6239,
+      "git_blob": "0abf7898e0add65fe8bd998c154f198f4fe225d7",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/SOURCE_PINS.json",
+      "sha256": "a7d438f2bf0e49b397025da4aa12faec6f9e305eac350c1ba18fd9057ff375ba"
+    },
+    {
+      "bytes": 1737,
+      "git_blob": "78a4a2df5262b80813876fcc43301129915c7ded",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/TERMINAL_RESULT.json",
+      "sha256": "bb94e800b55ac1a781ddd530dda981a909227d19c4ff13ebd31ed3cb7ad29766"
+    },
+    {
+      "bytes": 4780,
+      "git_blob": "21cec6dfabec9e6b80352d92419728ad6fd1869a",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/VALIDATION.md",
+      "sha256": "f486ac6a7b3ab4500fd5bb9b1f9c53deff2297b0326d8e5cc780d93042651f1a"
+    },
+    {
+      "bytes": 8712,
+      "git_blob": "fd5cfd3df039d102a2f4a5e9bc172614b52307a1",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/VARIATIONAL_REDUCTION_AND_ALGEBRA.md",
+      "sha256": "73b4b205dc92d8342cf3e89fcff72d6694454c84ad1bcf48997b78a49331c4cb"
+    },
+    {
+      "bytes": 5130,
+      "git_blob": "a610b7d2f3e7e81dcdd64d087da24c456c791c90",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_gauge_moment.py",
+      "sha256": "9b1759d91b6d48eced6929cb08222ccf678a488ae94bff517e7c6418396fb12b"
+    },
+    {
+      "bytes": 4527,
+      "git_blob": "d86689b8d6297504535206f66367c390fe9813ae",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_phase_descent.py",
+      "sha256": "15887b6661fb068badc7eb3d8d0a9785adbb48908381f5d5cd3b7639232f2b8d"
+    },
+    {
+      "bytes": 7122,
+      "git_blob": "a68a0466612ffeb7280f8c8ba8668040b818c725",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_query_stationarity.py",
+      "sha256": "000b017210e5485050b745dc833afcd72bf318b3fd3ef016fc0e3ebd76902bc2"
+    },
+    {
+      "bytes": 6586,
+      "git_blob": "4f161e04b8ed94fbe5d999dd059d6a06d434ce46",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_retained_memory.py",
+      "sha256": "b23bfb478e86324fe508e1a929b6f2eac08670369f9bcba8fb8cb70d5ee3f31d"
+    },
+    {
+      "bytes": 4400,
+      "git_blob": "75adbc77ec2272cdf38537e0df074d41c5e2b0f2",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_terminal_graph.py",
+      "sha256": "f18480d5beffbc2bac95853b0082539213ad1b80245a04b537678124a09da800"
+    },
+    {
+      "bytes": 5742,
+      "git_blob": "996e88ae41ec4bdeae51454d90e6d470022d4e21",
+      "path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/phase_native_check.py",
+      "sha256": "265c8ef85d86d496a9312539890c09aebd123421d81fc47667ae7cab7f1d39c8"
+    }
+  ],
+  "initial_input_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "integration_input_commit": "1d29848fa0775485f7d48ab63f4a6625f9b705ad",
+  "manifest_excludes_itself": true,
+  "owner_pr": 334,
+  "publication_parent": "dd7f713cc0ec50c6f66871b3427e3a979d57ade0"
+}

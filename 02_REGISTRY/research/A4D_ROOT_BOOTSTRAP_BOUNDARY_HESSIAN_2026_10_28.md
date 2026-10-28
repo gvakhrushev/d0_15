@@ -61,3 +61,18 @@ Symbolic identities hold for arbitrary original c. A six-column rational control
 
 Executed added checker SHA256: `eacd5d6456bacde02ddf3bab22f8ea7782ccdfcecce7afc232d928d9692f2fd9`; Git blob `fac2d4717b13a1f87767ad3c9a06e7e1cf6be882`.
 Added receipt SHA256: `272502430370992230f6575fa558d8681d0b90dd9f9c4cfa9106d4be35e4ecd6`; Git blob `f9ef19b2ad8a5c8f54cb665741dcc3fed442c8e4`.
+
+## Consuming application: solve the independent QUERY before using its Schur block
+
+The [retained-history final composition](A4D_RETAINED_HISTORY_FINAL_COMPOSITION_2026_10_28.md)
+now classifies the whole relative reflection QUERY critical set for the
+unchanged return. At full free-QUERY stationarity the active compression has
+only eigenvalues -1,0,+1, and every connected fixed-rank stationary section
+has J=-m log(1-z). If EVERY stage remains INTERNAL over the whole section
+and scene, clock, beta, dimension and reflection signature are fixed, the
+complete heat is also constant. Hence the actual reduced boundary Hessian
+in this application is zero, including after a justified gauge reduction.
+The general conditional Schur theorem remains valid; its nonzero mixed-rank
+hypothesis is not supplied by this free-QUERY elimination. Genuine restricted
+tasks, noninternal histories, varying scenes and actual extra prices retain
+their separate physical applications. No promotion of GR closure follows.

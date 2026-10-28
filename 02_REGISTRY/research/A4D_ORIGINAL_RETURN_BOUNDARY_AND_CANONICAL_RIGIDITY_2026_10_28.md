@@ -335,3 +335,19 @@ S. A. Hojman, K. Kuchař, C. Teitelboim,
 Здесь не заявляются новый физический принцип или исторический приоритет;
 новое для данного parent-применения — явный исходный Golden mixed-block,
 проверка настоящего склеивания и полное операторное тождество (12).
+
+### Consuming continuation: the remaining physical composition was tested
+
+The [retained-history final composition attempt](A4D_RETAINED_HISTORY_FINAL_COMPOSITION_2026_10_28.md)
+computes the diagonal moment of this SAME return boundary form and its
+nonzero vertical contraction. Scalar covariance does not make this form
+basic for a physical quotient. It also solves the full relative reflection
+QUERY stationarity equation: its smooth free-QUERY elimination has constant
+return and, on a stagewise INTERNAL fixed-data section, constant full heat,
+so its reduced mixed boundary Hessian is zero. Four genuine equal-inventory
+native words retain a nonzero complete-price interaction across arbitrarily
+long paid clock gaps. These scoped results directly test the application
+required above; they do not invalidate the conditional canonical classifier
+or rule out retained-state spatial dynamics. The newer archive-phase
+construction has its own Hamiltonian descent and admission conditions.
+Full physical HDA and D0-to-GR closure remain unproved.
