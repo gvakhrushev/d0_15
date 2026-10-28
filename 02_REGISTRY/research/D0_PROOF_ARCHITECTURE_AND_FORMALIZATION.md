@@ -12514,6 +12514,12 @@ The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/repor
 has content SHA-256 `0ffcde07f745b3af79bf4f88d618a464983584ab2f86683259a70a1fe2060c06`.
 The full build retains existing warnings in other modules.
 
+The [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/direct_row_derivative_declarations_2026-10-28.json)
+records 31 declarations on clean published snapshot
+`977c9592c25cec5a82d27aa5022fdf329e475733` at the same Lean source digest.
+Its SHA-256 is `da7335f2e7aab84017c9687b28597468e6f1c8c02da454fb7ea0697c7c919bef`;
+the reported axiom union is `Classical.choice`, `Quot.sound` and `propext`.
+
 ### Actual derivatives for the rational QUERY/cut control
 
 [`D0.Analysis.MovingCutQueryDerivativeAdapter`](../../03_FORMALIZATION/D0/Analysis/MovingCutQueryDerivativeAdapter.lean)
