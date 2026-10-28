@@ -12481,6 +12481,35 @@ records 38 declarations at clean published snapshot
 Its SHA-256 is `25e7f5af68dfab9d28123720d735a169f8754d465f97218acb35ae42c3d6a407`;
 the reported axiom union is `Classical.choice`, `Quot.sound` and `propext`.
 
+### Direct feedback derivative on a row curve
+
+[`D0.Analysis.DirectFeedbackRowDerivative`](../../03_FORMALIZATION/D0/Analysis/DirectFeedbackRowDerivative.lean)
+applies the existing polynomial resolvent-trace identity and determinant
+derivative to a differentiable finite matrix row `a(t)`. With
+`A = a†a`, `H = da†a + a†da`, `F = 4p²(A − p²A²)` and `D = I − zF`,
+the derivative of `−log(Re det D)` on the stated slit-plane chart is
+`4zp² Re Tr[D⁻¹(I − 2p²A)H]`. The proof establishes the determinant's
+reality and does not assume that `A` is invertible or commutes with `H`.
+An actual affine 2×2 row curve gives the exact control `56/241` with
+singular `A` and nonzero commutator, using `p=1/2`, `z=1/4` only for that
+control.
+
+The source is #334 §7cx at commit
+`46ebed17ddfa04faa8ab1a07a6a822b717f993ef`, blob
+`b71d07b8247ef35ef38bf8930a1c17f2ff8f5caf`, retained in the closed-history
+intake. Independent review checked the sign, scale, log branch and hostile
+control. Fixed `p,z`, finite carrier and the chart remain explicit; the result
+does not supply the stationary density representation or Hessian, CAR128
+spectator transport, admitted native row, complete Cost−Info/work/clock,
+field map, gain/refinement or physical GR.
+
+The module passes its narrow build, and the complete `D0.All` build passes
+4,772 Lake jobs at Lean source digest
+`a2859eeeeca505833d0ae3b187a5cc4deea0edb6c09c047b3c29e9d8b351ad74`.
+The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_row_derivative.json)
+has content SHA-256 `0ffcde07f745b3af79bf4f88d618a464983584ab2f86683259a70a1fe2060c06`.
+The full build retains existing warnings in other modules.
+
 ### Actual derivatives for the rational QUERY/cut control
 
 [`D0.Analysis.MovingCutQueryDerivativeAdapter`](../../03_FORMALIZATION/D0/Analysis/MovingCutQueryDerivativeAdapter.lean)

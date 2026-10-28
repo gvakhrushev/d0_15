@@ -29,6 +29,7 @@ import D0.Algebra.SedenionBrownS3
 import D0.Algebra.SedenionClifford8
 import D0.Algebra.SedenionTower
 import D0.Algebra.Sedenions
+import D0.Analysis.DirectFeedbackRowDerivative
 import D0.Analysis.MatrixDeterminantDerivative
 import D0.Analysis.MatrixMovingHeatFeedback
 import D0.Analysis.MatrixThermalDensityBridge
