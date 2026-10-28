@@ -1239,10 +1239,6 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
             "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
             "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
-            "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_STATIONARY_FAMILY_2026_10_28.md",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/archive_preserving_binary_query_replay_2026-10-28_b728/replay_manifest.json",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/archive_preserving_binary_query_replay_2026-10-28_b728/checker.py",
-            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/archive_preserving_binary_query_replay_2026-10-28_b728/local_replay.json",
         ],
         "required_sources": [
             {
