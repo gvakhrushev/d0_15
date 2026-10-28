@@ -809,7 +809,16 @@ route, with their carriers kept distinct:
 These four owner results are mathematical support on their stated source,
 solution, and initial-data domains. The new inverse and Cauchy theorems are
 not Lean proofs; no `formal_support`, claims, acceptance, or lifecycle entries
-were added. The compiled Lean adapter remains the earlier scalar trace branch,
-and the moving-projector price modules remain finite matrix calculus. Physical
-comparison admission, binding to the original full128 source, independent
-apparatus equations and refinement remain open. `GR_closed=false`.
+were added for them. Separately, the existing Lean scalar trace-branch proof
+and finite-dimensional moving-projector/query-cut derivative adapters are
+compiled in #402. The latter formalize the complete finite Book03 derivative
+for moving `P,U,Δ` (including the supplied relative-source formula at fixed
+`β,z`) and one rational 2×2 control, but do not prove the new §7dd/§7de source
+or admit it physically. Physical comparison admission, binding to the
+original full128 source, independent apparatus equations and refinement
+remain open. `GR_closed=false`.
+
+The [combined PR #402 validation record](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_pr402_integrated.json)
+and [compiled declarations](sources/d0_proof_architecture_formalization_2026-10-24/reports/integrated_book03_branch_weaktest_querycut_declarations_2026-10-28.json)
+bind the current Lean source digest, public import and four affected modules;
+the detailed result is recorded in the primary architecture report.

@@ -12759,11 +12759,68 @@ controls in normal and optimized Python with byte-identical owner receipts.
 The source-packet verifier also matches the pinned Git objects and patch.
 
 None of these new continuum results is formalized in Lean. The existing
-`ClosedHistoryNonlinearDustBranch` is the earlier scalar trace-branch adapter;
-the moving-projector modules formalize finite matrix source calculus. No
-formal-support, claim, acceptance or lifecycle status was added here. The
-new direct-click price is not identified with the original full128 price;
-the same-execution physical map, comparison admission, other independent
-apparatus rows, exact finite stationary words and physical refinement remain
-open. This is a new mathematical source/solution application, not physical
-GR closure; `GR_closed=false`.
+`ClosedHistoryNonlinearDustBranch` formalizes the earlier fixed scalar
+trace-branch arithmetic. Separate Lean modules formalize the finite moving-
+projector Book03 derivative and a specific rational query/cut derivative
+control; neither is a formalization of the new §7dd/§7de source, inverse-lift
+or Cauchy-transport results. No formal-support, claim, acceptance or lifecycle
+status was added for those new results. The new direct-click price is not
+identified with the original full128 price; the same-execution physical map,
+comparison admission, other independent apparatus rows, exact finite
+stationary words and physical refinement remain open. This is a new
+mathematical source/solution application, not physical GR closure;
+`GR_closed=false`.
+
+## Combined Lean integration on PR #402 — 28 October 2026
+
+The moving-projector result now consumes the supplied endogenous-cut source
+in one common differentiable curve. With `K=[dP,P]`,
+`C=(1-P)UP`, `R=(1-z C†C)⁻¹`,
+`ρ=e^{-βΔ}/Tr(e^{-βΔ})`, and
+`V=(1-P)(dU-[K,U])P`,
+`hasDerivAt_variable_moving_projector_book03_price` proves the derivative of
+the unchanged finite Book03 scalar when `β`, `z`, `P`, `U`, and `Δ` all vary.
+It retains the temperature and feedback-parameter terms. At fixed `β,z`, its
+source is exactly
+`-Re Tr(ρ(dΔ-[K,Δ])) + 2z Re Tr(R C† V)`; the heat and feedback components
+are named separately and then composed. The existing transport lemma proves
+`[[dP,P],P]=dP` from the projector tangent equation. This is finite-matrix
+calculus with explicit differentiability, Hermiticity, projector, and
+logarithm-domain hypotheses, not a physical source-selection theorem.
+
+The new `MovingCutQueryDerivativeAdapter` connects that analytic feedback
+derivative to the pinned #334 rational query/cut control using actual smooth
+2×2 projector and unitary curves. Its three derivatives are `16/35`,
+`-16/35`, and `0`, matching the corresponding rational source controls. This
+checks a nonzero projector-only source and the cancellation on the joint
+control; it does not identify the controls with a physical execution.
+
+On the combined source snapshot, narrow builds pass for
+`MovingProjectorVariableParameters` (3,280 jobs),
+`ClosedHistoryNonlinearDustBranch` (1,964),
+`MovingCutQueryDerivativeAdapter` (3,282), and
+`ArchiveGradedRefinementWeakTest` (3,104). The public `D0.All` build passes
+4,771 jobs in 41.9 seconds at Lean source SHA-256
+`30d6b5275bd3a4f3fc1197b108a11389966a9cfce773a5b6ac6cf434cfaa460a`.
+Its [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_pr402_integrated.json)
+has SHA-256
+`6925086124a58f008b4b053605c0c57a16228c4054ac05887d24c2e0b89b45a8`.
+The [combined compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/integrated_book03_branch_weaktest_querycut_declarations_2026-10-28.json)
+was extracted through the public `D0.All` import from clean snapshot
+`9a8d43049191f9e70a4ec003d0b1c7eb1acfb5a1`. It records 202 declarations
+across the four modules (including generated declarations), with axiom union
+`Classical.choice`, `Quot.sound`, and `propext`; no `sorryAx` or custom axiom
+appears. Its SHA-256 is
+`ac9a07de564c6b0b9f68d0bbc410a15e24ccd60b1b175c0386fb0c73c3aea5db`.
+
+The build retains pre-existing linter warnings elsewhere in the import
+closure. `generate_lean_views.py --check` reports zero stale views;
+`validate_repo.py` reports 889 claims, 31 assumptions, 58 aliases, 237
+formal-support rows and a 960-module generated closure, with zero warnings.
+The formalization-debt audit remains at five findings, its existing baseline;
+`validate_work.py` passes. The post-726 #334 packet verifier matches all seven
+commits, six source paths and exact Git objects, and the intake verifier
+confirms 74 archived files / 650,121 member bytes only. The separately
+supplied ZIP digest remains unverified. The four new #334 continuum results
+above are archived and replayed at their stated scopes, but remain research
+support rather than Lean proofs or physical acceptance. `GR_closed=false`.
