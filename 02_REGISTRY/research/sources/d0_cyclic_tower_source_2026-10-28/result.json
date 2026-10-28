@@ -1,0 +1,171 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "checker_sha256": "a4ffaf356f81d450ca64744647b0124afcc0cef2e3ff2e867fd25cf2a2f4dd87",
+  "checks": 519,
+  "direct_full_blocks": {
+    "all_defining_columns_retained": true,
+    "canonical_input_rank": 4,
+    "emitted_native_AF_hardware_claimed": false,
+    "final_block_sizes": [
+      55,
+      34
+    ],
+    "full_regular_dimension": 8362,
+    "increment_per_level": 4,
+    "intermediate_block_sizes": [
+      8,
+      5
+    ],
+    "levels": 2,
+    "max_full_price_FD_error": 6.800931345862793e-13,
+    "max_literal_GNS_source_error": 5.003707553108402e-17,
+    "max_price_source_error": 4.163336342344337e-17,
+    "max_source_operator_error": 1.1233611197570256e-16,
+    "old_block_sizes": [
+      1,
+      1
+    ],
+    "ordinary_input_trace_not_AF_trace": true,
+    "wrong_untransported_source_difference": 0.3709781459406932
+  },
+  "exact_transfer": {
+    "native_k4_C": 0.9473775300143006,
+    "native_k4_transition": [
+      [
+        0.7083866160296721,
+        0.2916133839703287
+      ],
+      [
+        0.7634537508086942,
+        0.23654624919130654
+      ]
+    ],
+    "native_stationary_weights": [
+      0.723606797749979,
+      0.27639320225002106
+    ],
+    "shallow_profile_not_promoted": true,
+    "tested_exact_profiles": [
+      {
+        "c": "1/5",
+        "increment": 4,
+        "positive_profile": false
+      },
+      {
+        "c": "3/5",
+        "increment": 4,
+        "positive_profile": false
+      },
+      {
+        "c": "-1/2 + sqrt(5)/2",
+        "increment": 4,
+        "positive_profile": false
+      },
+      {
+        "c": "1/5",
+        "increment": 6,
+        "positive_profile": true
+      },
+      {
+        "c": "3/5",
+        "increment": 6,
+        "positive_profile": true
+      },
+      {
+        "c": "-1/2 + sqrt(5)/2",
+        "increment": 6,
+        "positive_profile": true
+      },
+      {
+        "c": "1/5",
+        "increment": 8,
+        "positive_profile": true
+      },
+      {
+        "c": "3/5",
+        "increment": 8,
+        "positive_profile": true
+      },
+      {
+        "c": "-1/2 + sqrt(5)/2",
+        "increment": 8,
+        "positive_profile": true
+      },
+      {
+        "c": "1/5",
+        "increment": 10,
+        "positive_profile": true
+      },
+      {
+        "c": "3/5",
+        "increment": 10,
+        "positive_profile": true
+      },
+      {
+        "c": "-1/2 + sqrt(5)/2",
+        "increment": 10,
+        "positive_profile": true
+      },
+      {
+        "c": "1/5",
+        "increment": 16,
+        "positive_profile": true
+      },
+      {
+        "c": "3/5",
+        "increment": 16,
+        "positive_profile": true
+      },
+      {
+        "c": "-1/2 + sqrt(5)/2",
+        "increment": 16,
+        "positive_profile": true
+      }
+    ]
+  },
+  "input_commit": "d53ef61c8c578c5a6cf16b88d17f8576ced0f64d",
+  "large_clock_replayed": false,
+  "many_cuts": {
+    "controls": [
+      {
+        "operator_norm_ratio": 0.7516417979058676,
+        "past_loops": 1,
+        "row_sum_error": 8.881784197001252e-16
+      },
+      {
+        "operator_norm_ratio": 0.7492668029103317,
+        "past_loops": 2,
+        "row_sum_error": 1.5543122344752192e-15
+      },
+      {
+        "operator_norm_ratio": 0.7488705032907058,
+        "past_loops": 8,
+        "row_sum_error": 6.217248937900877e-15
+      },
+      {
+        "operator_norm_ratio": 0.7488705032797027,
+        "past_loops": 64,
+        "row_sum_error": 4.951594689828198e-14
+      },
+      {
+        "operator_norm_ratio": 0.7488705032799616,
+        "past_loops": 512,
+        "row_sum_error": 3.9523939676655573e-13
+      }
+    ],
+    "unrestricted_old_record_couplings_not_erased": true
+  },
+  "native_local_source": {
+    "all16_native_columns_checked_exactly": true,
+    "large_88_call_AF_profile_replayed": false,
+    "native_word_calls": 7,
+    "nonzero_Hermitian_rows": 138,
+    "nonzero_skew_rows": 192,
+    "original_raw_loop_rows": 240
+  },
+  "new_all42_root": false,
+  "physical_AF_actuation_proved": false,
+  "physical_comparison_domain_proved": false,
+  "status": "PASS_CANONICAL_TOWER_SOURCE_TRANSPORT"
+}
