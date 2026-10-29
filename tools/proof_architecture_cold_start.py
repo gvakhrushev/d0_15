@@ -1676,7 +1676,6 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/upstream_task_7dt.md",
             "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/check_one_sided_price.py",
             "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/expected_receipt.json",
-            "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/inputs/upstream_receipts.md",
             "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay_whole_book_price.py",
             "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay_manifest.json",
             "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/source_manifest.json",
@@ -1747,9 +1746,9 @@ CASES: list[dict[str, Any]] = [
             "admission of reserve/initial-boundary resources, the full physical X_N, selected "
             "task/record/Cost-Info, independent clock/boundary equations, larger-field "
             "refinement, Lean/CI and GR closure remain unproved; GR_closed=false. "
-            "Its frozen 7ds/7do fixture remains a required reference and is retrieved "
-            "through the source manifest's exact artifact hash because those receipt "
-            "blocks recur in later packets."
+            "Its frozen 7ds/7do fixture is pinned and receipt-hash-checked by the "
+            "regression test through the source manifest; it is not a separate "
+            "search requirement because the same receipt blocks recur in later packets."
         ),
     },
     {
