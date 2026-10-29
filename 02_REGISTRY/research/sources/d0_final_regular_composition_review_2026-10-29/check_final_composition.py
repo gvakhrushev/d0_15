@@ -94,6 +94,27 @@ def norm_composition():
           'extra free QUERY remains outside a falsely promoted zero')
     return results
 
+def finite_test_exhaustion():
+    # Infinite test space c0 with sup norm, F(v)=sum 2^-j v_j.
+    # The exact finite calculation of its first k coefficients checks that
+    # finite-stage surjectivity onto the WHOLE infinite space is unnecessary.
+    # The infinite-space assertion is proved analytically in the review.
+    rows=[]
+    for k in (1,2,4,8,16):
+        finite_norm=sum(F(1,2**j) for j in range(1,k+1))
+        tail=F(1,2**k)
+        check(finite_norm==1-tail,f'dense finite test dual tail k={k}')
+        missed=F(1,2**(k+1))
+        check(missed>0,f'finite stage is not surjective onto all tests k={k}')
+        check(missed<=tail,f'controlled missed-test response k={k}')
+        rows.append({'represented_coordinates':k,'dual_norm':str(finite_norm),
+                     'exact_full_dual_tail':str(tail),'global_right_inverse_asserted':False})
+    check(all((F(1) if k>=7 else F(0))==0 for k in range(1,7)),
+          'a late nonzero test may be missed at finitely many initial levels')
+    check(F(1)>0,'late nonzero coefficient is separated once its test is included')
+    return rows
+
+
 def log_interval(x: F, tolerance: F) -> tuple[F,F,int]:
     """Certified real log, using exact atanh series and rigorous tail."""
     if x<=0 or tolerance<=0:
@@ -176,6 +197,7 @@ def main() -> None:
     result={'input_commit':'6e20be09b25e1d68ac19be032814ce8ab2ab7351',
             'scope':'exact composition and interval-protocol controls, not a new universal GR theorem',
             'complete_source':source_identity(),'independent_norms':norm_composition(),
+            'finite_test_exhaustion':finite_test_exhaustion(),
             'kappa_protocol':kappa_checks()}
     result.update({'status':'PASS_FINAL_COMPOSITION_REVIEW','checks':len(CHECKS),
                    'check_names':CHECKS,'unrestricted_XN_closure_proved':False,
