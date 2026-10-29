@@ -1665,7 +1665,7 @@ CASES: list[dict[str, Any]] = [
             "all512 active columns all34 actual suffixes 93 exact checks full physical rank16 thermal dimension65536",
             "literal Book03.25 H+J no additional Shannon von Neumann fitted Info term correction 7ds",
             "ordinary optimized repeat byte identical published receipt stderr empty replay manifest Python 3.9.6",
-            "upstream_receipts.md frozen 7ds RETURN RECORD COMPILER RECEIPT 7do PAID BINARY INPUT RECEIPT exact hashes",
+            "source_manifest.json d0-native16-whole-book-price-graph-intake-v1 inputs/upstream_receipts.md d6dbe367a71f4e0aff666aad2eb963134296d0ba18f99821539ba27e476173a4 frozen_receipt_inputs",
             "A1_34 estimate corrected exact rational bound 1.92095 whole heat remains 93 checks full endpoint cotangents all34 suffix pullbacks",
             "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION supporting compiler price graph physical admission X_N Cost-Info Lean CI GR_closed false",
         ],
@@ -1710,10 +1710,6 @@ CASES: list[dict[str, Any]] = [
                 "scope_query_indexes": [3],
             },
             {
-                "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/inputs/upstream_receipts.md",
-                "scope_query_indexes": [10],
-            },
-            {
                 "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay_whole_book_price.py",
                 "scope_query_indexes": [9],
             },
@@ -1723,7 +1719,7 @@ CASES: list[dict[str, Any]] = [
             },
             {
                 "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/source_manifest.json",
-                "scope_query_indexes": [2],
+                "scope_query_indexes": [2, 10],
             },
             {
                 "path": "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/replay/ordinary_stdout.json",
@@ -1750,7 +1746,10 @@ CASES: list[dict[str, Any]] = [
             "93-check source and receipt replay byte-identically with empty stderr. Physical "
             "admission of reserve/initial-boundary resources, the full physical X_N, selected "
             "task/record/Cost-Info, independent clock/boundary equations, larger-field "
-            "refinement, Lean/CI and GR closure remain unproved; GR_closed=false."
+            "refinement, Lean/CI and GR closure remain unproved; GR_closed=false. "
+            "Its frozen 7ds/7do fixture remains a required reference and is retrieved "
+            "through the source manifest's exact artifact hash because those receipt "
+            "blocks recur in later packets."
         ),
     },
     {

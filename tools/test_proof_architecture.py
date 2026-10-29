@@ -4590,6 +4590,23 @@ class ProofArchitectureTests(unittest.TestCase):
             self.assertEqual(len(artifact_bytes), artifact["bytes"], rel)
             self.assertEqual(hashlib.sha256(artifact_bytes).hexdigest(), artifact["sha256"], rel)
 
+        fixture = (intake / "inputs/upstream_receipts.md").read_bytes()
+        self.assertEqual(
+            hashlib.sha256(fixture).hexdigest(),
+            "d6dbe367a71f4e0aff666aad2eb963134296d0ba18f99821539ba27e476173a4",
+        )
+        for tag, key in (
+            ("7ds RETURN RECORD COMPILER RECEIPT", "7ds_return_record_compiler_sha256"),
+            ("7do PAID BINARY INPUT RECEIPT", "7do_paid_binary_input_sha256"),
+        ):
+            opening = f"<!-- BEGIN {tag} -->\n```json\n".encode()
+            closing = f"```\n<!-- END {tag} -->".encode()
+            body = fixture.split(opening, 1)[1].split(closing, 1)[0]
+            self.assertEqual(
+                hashlib.sha256(body).hexdigest(),
+                source_manifest["frozen_receipt_inputs"][key],
+            )
+
         owner_commit = "22b4e3f430ddb7d8dd7af6e734f5e63225edd056"
         owner_memo_path = source_manifest["upstream"]["memo_path"]
         owner_task_path = source_manifest["upstream"]["task_path"]
