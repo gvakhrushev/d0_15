@@ -1,0 +1,1364 @@
+{
+  "boundary": {
+    "active_columns": 1024,
+    "active_input_rank": 8,
+    "blank_wires": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "full_dimension": 65536,
+    "input_rank": 16,
+    "input_spectator": 2,
+    "new_thermal_factor_for_existing_program": false,
+    "old_right": [
+      15
+    ],
+    "program": 10,
+    "protected_Spin_prepared": false,
+    "record": [
+      7,
+      8,
+      9
+    ],
+    "source_spin": [
+      13,
+      14
+    ],
+    "thermal_spectator": 64,
+    "wires": 16,
+    "work": [
+      0,
+      11,
+      12
+    ]
+  },
+  "checker_sha256": "b7892b3132123f86de77bf41a7a67ff0c1ed499af556e16b685ea52c9c8f6252",
+  "checks": 156,
+  "complete_differences": {
+    "after_only_minus_pure": [
+      "0.0000004014779563458752156140831879299337158163",
+      "0.0000004014779563458752156140831879299337158166"
+    ],
+    "before_only_minus_pure": [
+      "0.0000004014779563458752156140831879299337158163",
+      "0.0000004014779563458752156140831879299337158166"
+    ],
+    "echo_minus_pure": [
+      "-0.0000065684494191436783663871140071781433417549",
+      "-0.0000065684494191436783663871140071781433417546"
+    ]
+  },
+  "complete_prices": {
+    "after_only": [
+      "27.3677555049337269285512286889155215750806774880",
+      "27.3677555049337269285512286889155417048651506409"
+    ],
+    "before_only": [
+      "27.3677555049337269285512286889155215750806774880",
+      "27.3677555049337269285512286889155417048651506409"
+    ],
+    "echo": [
+      "27.3677485350063514389976466877183264670036199168",
+      "27.3677485350063514389976466877183465967880930696"
+    ],
+    "pure": [
+      "27.3677551034557705826760130748323336451469616716",
+      "27.3677551034557705826760130748323537749314348244"
+    ]
+  },
+  "consumed_helper_sha256": "e3ac0eb35ec9c4043cf51485f36d3145be3f9be988e28d38330c510599906fc3",
+  "controlled_CX_cold_derivative_retractions": [
+    {
+      "image": "-J2",
+      "pair": [
+        0,
+        1
+      ],
+      "stage": 29
+    },
+    {
+      "image": "0",
+      "pair": [
+        0,
+        2
+      ],
+      "stage": 29
+    },
+    {
+      "image": "0",
+      "pair": [
+        0,
+        3
+      ],
+      "stage": 29
+    },
+    {
+      "image": "0",
+      "pair": [
+        1,
+        2
+      ],
+      "stage": 29
+    },
+    {
+      "image": "0",
+      "pair": [
+        1,
+        3
+      ],
+      "stage": 29
+    },
+    {
+      "image": "0",
+      "pair": [
+        2,
+        3
+      ],
+      "stage": 29
+    },
+    {
+      "image": "-J2",
+      "pair": [
+        0,
+        1
+      ],
+      "stage": 31
+    },
+    {
+      "image": "0",
+      "pair": [
+        0,
+        2
+      ],
+      "stage": 31
+    },
+    {
+      "image": "0",
+      "pair": [
+        0,
+        3
+      ],
+      "stage": 31
+    },
+    {
+      "image": "0",
+      "pair": [
+        1,
+        2
+      ],
+      "stage": 31
+    },
+    {
+      "image": "0",
+      "pair": [
+        1,
+        3
+      ],
+      "stage": 31
+    },
+    {
+      "image": "0",
+      "pair": [
+        2,
+        3
+      ],
+      "stage": 31
+    }
+  ],
+  "heat": {
+    "A1_47_rational": "110145639439550658358734931274885683581668317649973503190590091239133948087198147309756530365376647750963456928730010986328125000000000/2583917220673330448643863351147553312133152520517261164687985153663996925255094418399526296640753384898118589474110993462779318174908318042989847007324173204634302711345199730326843852032599461384817580595352119001656042700243443022145584109239280223846455030523",
+    "absolute_H": [
+      "27.3677402698314113872681757685827978459563220020",
+      "27.3677402698314113872681757685828179757407951549"
+    ],
+    "all_modes": 1309081600,
+    "pure47_minus_old37": [
+      "0.3131557285462114329402311376795341295231833811",
+      "0.3131557285462114329402311376795341295231833814"
+    ],
+    "pure_and_echo_heat_exactly_equal": true,
+    "unpaired_harmonics": 1105788928
+  },
+  "independent_raw_sources": [
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          7
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 0
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          11,
+          8
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "source_Xab": "-3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 1
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          12,
+          9
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 2
+    },
+    {
+      "gate": {
+        "op": "G",
+        "wires": [
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 3
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 4
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 5
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 6
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 7
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 8
+    },
+    {
+      "gate": {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 9
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 10
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 11
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 12
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 13
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 14
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          6,
+          12
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 15
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 16
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 17
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 18
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 19
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "source_Xab": "-3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 20
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "source_Xab": "-3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 21
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "source_Xab": "-3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 22
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "source_Xab": "-786431*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 1835007*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "source_Xab": "-1835007*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 786431*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        },
+        {
+          "pair": [
+            2,
+            7
+          ],
+          "source_Xab": "-786431*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 1835007*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        },
+        {
+          "pair": [
+            3,
+            6
+          ],
+          "source_Xab": "-1835007*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 786431*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 23
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "source_Xab": "-1835007*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 786431*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "source_Xab": "-1835007*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 786431*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        },
+        {
+          "pair": [
+            2,
+            6
+          ],
+          "source_Xab": "-1835007*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 786431*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        },
+        {
+          "pair": [
+            3,
+            7
+          ],
+          "source_Xab": "-1835007*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 786431*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 24
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "source_Xab": "-7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 25
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          11,
+          0
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "source_Xab": "-7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 26
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          11
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "source_Xab": "-7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 27
+    },
+    {
+      "gate": {
+        "op": "G",
+        "wires": [
+          11
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "source_Xab": "-7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 28
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          10,
+          11
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "source_Xab": "-7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 29
+    },
+    {
+      "gate": {
+        "op": "G",
+        "wires": [
+          11
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "source_Xab": "-7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 30
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          10,
+          11
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "source_Xab": "-7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 31
+    },
+    {
+      "gate": {
+        "op": "G",
+        "wires": [
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 32
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 33
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 34
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 35
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 36
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 37
+    },
+    {
+      "gate": {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 38
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 39
+    },
+    {
+      "gate": {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 40
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 41
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 42
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 43
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          0,
+          7
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 44
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          11,
+          8
+        ]
+      },
+      "nonzero_real_skew_sources": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "source_Xab": "-7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311"
+        }
+      ],
+      "stage_zero_based": 45
+    },
+    {
+      "gate": {
+        "op": "CX",
+        "wires": [
+          12,
+          9
+        ]
+      },
+      "nonzero_real_skew_sources": [],
+      "stage_zero_based": 46
+    }
+  ],
+  "input_commit": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45",
+  "input_pins": {
+    "02_REGISTRY/research/A4D_INTERNAL_PROGRAM_AND_GLOBAL_QUERY_STATIONARITY_2026_10_28.md": "ed2323c7610f94994868a947fd17be6a50f0170e29b33c260a8441bd3087dc04",
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "literal_preparations12": {
+    "I": [
+      {
+        "op": "G",
+        "wires": [
+          10
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      }
+    ],
+    "R": [
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      }
+    ],
+    "Rinv": [
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          10,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          10
+        ]
+      }
+    ]
+  },
+  "literal_processor17": [
+    {
+      "op": "CX",
+      "wires": [
+        6,
+        12
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        10,
+        11
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        10,
+        11
+      ]
+    }
+  ],
+  "matrix_comparison_hessians": {
+    "claimed_continuous_native_angle": false,
+    "echo": [
+      "-0.0000055035415618954218256104624852831583489923",
+      "-0.0000055035415618954218256104624852831583489920"
+    ],
+    "heat_second_derivative_bound_rational": "284607214529930508015469980571914810068152956698403481531003520978244230907560479603219352819003751805573920434209329433136809967245220836172604847114570904524638082695873120147504922533754181588623564642668437985507422744724855722128423745067811319088740742248780437176546055364685942692615621619280135298387441661317816492307868843072226921168742152357111763194552622735500335693359375000000000/6676628203292188682455782213785085829950262247777865246957687894848364734356245753872293097689272812055780997272238582403572747163945899959589964883800217531673386774470387037220533994515797852189664675373871781810820978890315174749205149386323882918750594166386979776468404150393881437257479664668283485014695586936107030333964663331511181732426282241910696559196631912137455432137259632143903677015036377313227976967461829606363150485672710004584377966651455291104003752810812294872511163390527144656516611955692861653529",
+    "independent_legs_not_identified": true,
+    "one_sided": [
+      "0.0000008503439359372634634923691880159714760392",
+      "0.0000008503439359372634634923691880159714760395"
+    ],
+    "one_sided_complete_price": [
+      "0.0000008503439359372634634923691880159714760392",
+      "0.0000008503439359372634634923691880159714760395"
+    ]
+  },
+  "return_corners": {
+    "after_only": "c^2 Q",
+    "before_only": "c^2 Q",
+    "c": "p^3",
+    "echo": "(1-c^2+c^3) Q",
+    "pure": "c Q",
+    "rank_Q_full": 8
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "GR_closed": false,
+    "actual_native_controlled_QUERY_compiled": true,
+    "all_physical_X_N_identified": false,
+    "all_programming_sources_are_hardware_sources": false,
+    "fixed_processor_choice_physically_forced": false,
+    "new_Info_or_action_term": false,
+    "old_all_prefix_history_equivalence_claimed": false,
+    "same_prepared_base_output_as_old37": true
+  },
+  "source_summary": {
+    "all24_preparation_rows_zero": true,
+    "all_hardware_rows_solved": false,
+    "code_off_diagonal_sources_zero": true,
+    "each_G11_J2_source_interval": [
+      "0.0000035003065043241630778818492924101755720606",
+      "0.0000035003065043241630778818492924101755720609"
+    ],
+    "local_real_generator_count": 560,
+    "selected_branch_G11_indices": [
+      28,
+      30
+    ],
+    "total_raw_calls": 47
+  },
+  "status": "PASS",
+  "whole_words": {
+    "after_only": {
+      "N": 47,
+      "inventory": {
+        "CX": 27,
+        "G": 6,
+        "SourceI": 14
+      },
+      "sha256": "54641a9bff1a369652d5f65a0fc2379e32497e5990f72ef583568bfdd4953e51"
+    },
+    "before_only": {
+      "N": 47,
+      "inventory": {
+        "CX": 27,
+        "G": 6,
+        "SourceI": 14
+      },
+      "sha256": "447755d4075262f1168af671ad144a76f56699b0d93adfd43a13ea3b6ab1bdea"
+    },
+    "echo": {
+      "N": 47,
+      "inventory": {
+        "CX": 27,
+        "G": 6,
+        "SourceI": 14
+      },
+      "sha256": "eb48d9be5675c7bb968b4dc31af33c10ed4f06fe001617c279d2469448ae973d"
+    },
+    "pure": {
+      "N": 47,
+      "inventory": {
+        "CX": 27,
+        "G": 6,
+        "SourceI": 14
+      },
+      "sha256": "150562caede6c7d0e5143439b5341e59bac2909b9428664dfd0c906e5d7d5d78"
+    }
+  }
+}

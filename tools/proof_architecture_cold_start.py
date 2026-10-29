@@ -2080,6 +2080,70 @@ CASES: list[dict[str, Any]] = [
             "GR_closed=false."
         ),
     },
+    {
+        "id": "native16-internal-query-program-full-source",
+        "queries": [
+            "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION §7dy original G CX SourceI 17-call processor 47 calls 560 skew directions",
+            "560 локальных вещественных skew-направлений 1024 активных колонках G_11",
+            "actual four-call chronological word G_q^2 at k=0 I at k=1 X G X=G^-1 no inverse gate",
+            "upstream_task_7dy.md actual internal QUERY processor paid programme prep 47 calls 156 checks parent substitution",
+            "check_native_query_program.py 7dy NATIVE QUERY PROGRAM CHECKER tangent_corner 560 local real generators",
+            "7dy NATIVE QUERY PROGRAM RECEIPT all24_preparation_rows_zero all_hardware_rows_solved false 156 checks",
+            "upstream_receipts.md 7ds RETURN RECORD COMPILER RECEIPT 7dv PAID NATIVE CALIBRATION RECEIPT 7do PAID BINARY INPUT RECEIPT",
+            "source_manifest_sha256 owner_receipts_byte_identical_in_ordinary_optimized_repeat stderr_empty_for_all_runs",
+            "source_manifest.json d0-native16-query-program-intake-v1 owner_memo_blob 40ae4564ce0e8b72defb31e763fd453ca6d563f2",
+            "replay/ordinary_stdout.json local_real_generator_count 560 all_hardware_rows_solved false selected_branch_G11_indices 28 30 156",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/upstream_section_7dy.md",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/upstream_task_7dy.md",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/check_native_query_program.py",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/expected_receipt_7dy.json",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/inputs/upstream_receipts.md",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/replay_native_query_program.py",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/source_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/replay/ordinary_stdout.json",
+        ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+             "scope_query_indexes": [0]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/PROOF_RU.md",
+             "scope_query_indexes": [1]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/upstream_section_7dy.md",
+             "scope_query_indexes": [2]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/upstream_task_7dy.md",
+             "scope_query_indexes": [3]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/check_native_query_program.py",
+             "scope_query_indexes": [4]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/expected_receipt_7dy.json",
+             "scope_query_indexes": [5]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/inputs/upstream_receipts.md",
+             "scope_query_indexes": [6]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/replay_native_query_program.py",
+             "scope_query_indexes": [7]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/replay_manifest.json",
+             "scope_query_indexes": [7]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/source_manifest.json",
+             "scope_query_indexes": [8]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_query_program_2026-10-29/replay/ordinary_stdout.json",
+             "scope_query_indexes": [9]},
+        ],
+        "scope_review": (
+            "§7dy compiles the formerly supplied controlled QUERY and programme inputs into "
+            "a fixed17-call processor and three paid12-call preparations in the original "
+            "G/CX/SourceI alphabet. Four 47-call histories share inventory, initial state and "
+            "full cut. The complete price distinguishes one-sided preparation from the actual "
+            "coherent echo, while retaining the positive absolute clock cost. All24 independent "
+            "preparation rows vanish, but 14 hardware-call cotangents remain nonzero among "
+            "560 local skew directions, including both selected-branch G11 QUERY sources. "
+            "The actual controlled-CX source retracts only in its selected local sector. Physical "
+            "X_N, primitive admission, programme selection, full GR transport/refinement, "
+            "Lean/CI and GR closure remain open; GR_closed=false."
+        ),
+    },
 ]
 
 

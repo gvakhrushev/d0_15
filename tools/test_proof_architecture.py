@@ -5099,6 +5099,123 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertFalse(retraction["scope"]["all_X_N_identified"])
         self.assertFalse(retraction["scope"]["GR_closed"])
 
+    def test_native16_internal_query_program_is_exactly_pinned_and_scoped(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "native16-internal-query-program-full-source"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed native QUERY source {source['path']}: {status}",
+            )
+
+        intake = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_native16_query_program_2026-10-29"
+        )
+        source_manifest_path = intake / "source_manifest.json"
+        source_manifest_bytes = source_manifest_path.read_bytes()
+        source_manifest = json.loads(source_manifest_bytes)
+        self.assertEqual(source_manifest["schema"], "d0-native16-query-program-intake-v1")
+        for rel, artifact in source_manifest["artifacts"].items():
+            data = (intake / rel).read_bytes()
+            self.assertEqual(len(data), artifact["bytes"], rel)
+            self.assertEqual(hashlib.sha256(data).hexdigest(), artifact["sha256"], rel)
+
+        prior = source_manifest["prior_intake"]
+        prior_root = proof.ROOT / prior["path"]
+        prior_manifest_bytes = (prior_root / "source_manifest.json").read_bytes()
+        self.assertEqual(
+            hashlib.sha256(prior_manifest_bytes).hexdigest(), prior["source_manifest_sha256"]
+        )
+        prior_manifest = json.loads(prior_manifest_bytes)
+        for rel, record in prior["artifacts"].items():
+            local = (intake / rel).read_bytes()
+            self.assertEqual(len(local), record["bytes"], rel)
+            self.assertEqual(hashlib.sha256(local).hexdigest(), record["sha256"], rel)
+            old = prior_manifest["artifacts"][record["source_artifact"]]
+            self.assertEqual(
+                (len(local), hashlib.sha256(local).hexdigest()),
+                (old["bytes"], old["sha256"]),
+            )
+
+        owner = source_manifest["upstream"]
+        self.assertEqual(owner["commit"], "f8a1d89329e5f44a8f49118dac004d1bc46cc417")
+        self.assertEqual(owner["parent_commit"], "442ddd86c96a4298efea7dc69e803f2ef1f6cd45")
+        section = (intake / owner["section_file"]).read_bytes()
+        task_excerpt = (intake / owner["task_excerpt_file"]).read_bytes()
+        checker = (intake / owner["checker_file"]).read_bytes()
+        receipt = (intake / owner["receipt_file"]).read_bytes()
+        self.assertEqual(hashlib.sha256(section).hexdigest(), owner["section_sha256"])
+        self.assertEqual(hashlib.sha256(task_excerpt).hexdigest(), owner["task_excerpt_sha256"])
+        checker_start = b"<!-- BEGIN 7dy NATIVE QUERY PROGRAM CHECKER -->\n```python\n"
+        checker_end = b"```\n<!-- END 7dy NATIVE QUERY PROGRAM CHECKER -->"
+        receipt_start = b"<!-- BEGIN 7dy NATIVE QUERY PROGRAM RECEIPT -->\n```json\n"
+        receipt_end = b"```\n<!-- END 7dy NATIVE QUERY PROGRAM RECEIPT -->"
+        self.assertEqual(section.split(checker_start, 1)[1].split(checker_end, 1)[0], checker)
+        self.assertEqual(section.split(receipt_start, 1)[1].split(receipt_end, 1)[0], receipt)
+
+        source_probe = subprocess.run(
+            ["git", "cat-file", "-e", f"{owner['commit']}:{owner['memo_path']}"],
+            cwd=proof.ROOT, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False,
+        )
+        if source_probe.returncode == 0:
+            for path, blob_field, sha_field, bytes_field in (
+                (owner["memo_path"], "memo_blob", "memo_sha256", "memo_bytes"),
+                (owner["task_path"], "task_blob", "task_sha256", "task_bytes"),
+            ):
+                blob = subprocess.check_output(
+                    ["git", "rev-parse", f"{owner['commit']}:{path}"],
+                    cwd=proof.ROOT, text=True,
+                ).strip()
+                data = subprocess.check_output(
+                    ["git", "show", f"{owner['commit']}:{path}"], cwd=proof.ROOT
+                )
+                self.assertEqual(blob, owner[blob_field])
+                self.assertEqual(len(data), owner[bytes_field])
+                self.assertEqual(hashlib.sha256(data).hexdigest(), owner[sha_field])
+
+        for path, pinned in source_manifest["runtime_inputs"].items():
+            data = (proof.ROOT / path).read_bytes()
+            self.assertEqual(hashlib.sha256(data).hexdigest(), pinned["sha256"], path)
+
+        replay_manifest_path = intake / "replay_manifest.json"
+        replay_manifest = json.loads(replay_manifest_path.read_text(encoding="utf-8"))
+        self.assertEqual(replay_manifest["status"], "PASS")
+        self.assertEqual(replay_manifest["schema"], "d0-native16-query-program-replay-v1")
+        self.assertEqual(replay_manifest["owner_commit"], owner["commit"])
+        self.assertEqual(
+            replay_manifest["source_manifest_sha256"],
+            hashlib.sha256(source_manifest_bytes).hexdigest(),
+        )
+        self.assertTrue(replay_manifest["stderr_empty_for_all_runs"])
+        self.assertTrue(
+            replay_manifest["owner_receipts_byte_identical_in_ordinary_optimized_repeat"]
+        )
+        owner_receipt = json.loads(receipt)
+        self.assertEqual(owner_receipt["checks"], 156)
+        self.assertFalse(owner_receipt["scope"]["GR_closed"])
+        self.assertFalse(owner_receipt["scope"]["all_physical_X_N_identified"])
+        self.assertFalse(owner_receipt["scope"]["fixed_processor_choice_physically_forced"])
+        self.assertFalse(owner_receipt["source_summary"]["all_hardware_rows_solved"])
+        self.assertTrue(owner_receipt["source_summary"]["all24_preparation_rows_zero"])
+        self.assertEqual(owner_receipt["source_summary"]["local_real_generator_count"], 560)
+        self.assertEqual(owner_receipt["source_summary"]["total_raw_calls"], 47)
+        for mode in ("ordinary", "optimized", "repeat"):
+            run = replay_manifest["runs"][mode]
+            self.assertEqual(run["returncode"], 0)
+            self.assertTrue(run["matches_owner_receipt"])
+            self.assertEqual(run["checks"], 156)
+            self.assertEqual((intake / f"replay/{mode}_stdout.json").read_bytes(), receipt)
+            self.assertEqual((intake / f"replay/{mode}_stderr.txt").read_bytes(), b"")
+
     def test_record_saturated_native_field_stencils_are_pinned_and_scoped(self) -> None:
         case = next(
             item for item in cold_start.CASES
