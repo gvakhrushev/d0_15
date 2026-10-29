@@ -1498,7 +1498,7 @@ CASES: list[dict[str, Any]] = [
             "field_compiler_source.md 7cq direct-click read-once compiler original nonlinear field Bernstein kernel errors",
             "7dr RETAINED REPORT FIBRE RECEIPT 7do PAID BINARY INPUT RECEIPT exact source fixture",
             "source_manifest.json d0-native16-return-record-compiler-intake-v1 c1417beeb828773482bda67b6e9db146a5ce04d9",
-            "native execution domain.py complete_return_record validate_execution used processing blanks reserve wires",
+            "native_execution.py GOLDEN_FIELD G_LOCAL SOURCE_I_LOCAL complete_return_record validate_execution",
             "Native16 оплаченная компиляция полного return-record independent upstream preparation физическая admission GR_closed false",
             "replay_return_record.py replay_outputs_byte_identical runtime_matches_published_receipt stderr_empty_for_all_runs",
         ],
