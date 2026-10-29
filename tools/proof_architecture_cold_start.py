@@ -1951,6 +1951,135 @@ CASES: list[dict[str, Any]] = [
             "Lean/CI were not run. No physical query law or GR closure follows; GR_closed=false."
         ),
     },
+    {
+        "id": "native16-paid-use-witness-and-birth-source",
+        "queries": [
+            "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION §7dw same-use coherent witness paid device source record-birth source 73 checks",
+            "upstream_section_7dw.md 049ce1128827f8a8fc63875835e53aea19140a31 Protect the actual use paid coherent witness unrestricted device normals",
+            "upstream_task_7dw.md one guarded actual use closes unrestricted device normals actual same Book source",
+            "SAME-USE contraction factorization nonzero independent witness-birth insertion check_same_use_record_guard.py",
+            "7dw complete_differences birth_fault_minus_good whole_price_global_minimum_claimed actual_native_G_birth_fault_also_executed",
+            "inputs/upstream_receipts.md 7ds RETURN RECORD COMPILER RECEIPT 7dv PAID NATIVE CALIBRATION RECEIPT 7do PAID BINARY INPUT RECEIPT",
+            "owner_receipts_byte_identical_in_ordinary_optimized_repeat stderr_empty_for_all_runs replay_manifest PASS 3.9.6",
+            "independent_birth_source complete_differences birth_fault_minus_good whole_price_global_minimum_claimed",
+            "source_manifest.json d0-native16-guarded-use-source-retraction-v1 owner memo blob cc8fcc9ee25a7e35b8e0d0bc05b609a3ce4f670a task blob c89eb61af4803242a637f4d3caf0bd3694b1c7c5",
+            "7dw 7982 7dx 11918 Python 3.9.6",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/upstream_section_7dw.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/upstream_task_7dw.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/check_same_use_record_guard.py",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/expected_receipt_7dw.json",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/inputs/upstream_receipts.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay_native16_guarded_use_retraction.py",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/source_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay/7dw_ordinary_stdout.json",
+        ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+             "scope_query_indexes": [0]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/PROOF_RU.md",
+             "scope_query_indexes": [9]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/upstream_section_7dw.md",
+             "scope_query_indexes": [1]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/upstream_task_7dw.md",
+             "scope_query_indexes": [2]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/check_same_use_record_guard.py",
+             "scope_query_indexes": [3]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/expected_receipt_7dw.json",
+             "scope_query_indexes": [4]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/inputs/upstream_receipts.md",
+             "scope_query_indexes": [5]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay_native16_guarded_use_retraction.py",
+             "scope_query_indexes": [6]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay_manifest.json",
+             "scope_query_indexes": [6]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/source_manifest.json",
+             "scope_query_indexes": [8]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay/7dw_ordinary_stdout.json",
+             "scope_query_indexes": [7]},
+        ],
+        "scope_review": (
+            "§7dw changes §7dv's separate test/use programme to one actual device use "
+            "guarded by a paid coherent witness. At the correct base every independent "
+            "witness-preserving device row has zero full first source, without requiring "
+            "Cal(D) for the varied device. The first witness-creation row remains nonzero, "
+            "and an actual same-resource 61-call G_11 substitution is cheaper by about "
+            "8.886816190132e-7. Thus this is not a price selection of the record-birth act. "
+            "The exact owner checker passes 73 checks and its ordinary, optimized and repeat "
+            "outputs match the receipt with empty stderr. Physical admission/readiness, the "
+            "full physical X_N, original GR transport/refinement, Lean/CI and GR closure "
+            "remain open; GR_closed=false."
+        ),
+    },
+    {
+        "id": "native16-first-copy-source-retraction-and-paid-preparation",
+        "queries": [
+            "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION §7dx exact first-copy source retraction paid preparation full79 price 151 checks",
+            "first-copy source retraction old terminal-source covector exact operator map paid preparation 18-call 7dx",
+            "first-copy source retraction independent paid preparation input 049ce1128827f8a8fc63875835e53aea19140a31 old free QUERY",
+            "tangent_legs target16 arbitrary_old_QUERY_stationarity_proved exact source retraction checker",
+            "cotangent_retraction arbitrary_old_QUERY_stationarity_proved birth_fault_minus_good complete_price 151 checks",
+            "upstream_receipts.md RETURN RECORD COMPILER RECEIPT actual_B37_minus_B31_interval 0.231605303807",
+            "owner_receipts_byte_identical_in_ordinary_optimized_repeat stderr_empty_for_all_runs replay_manifest PASS 3.9.6",
+            "79-call word 55 CX 6 G 18 SourceI 262144 8801484800 cotangent_retraction",
+            "source_manifest.json d0-native16-guarded-use-source-retraction-v1 049ce112 442ddd86 memo and task Git blobs",
+            "7dw 7982 7dx 11918 Python 3.9.6",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/upstream_section_7dx.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/upstream_task_7dx.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/check_guard_cotangent_retraction.py",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/expected_receipt_7dx.json",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/inputs/upstream_receipts.md",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay_native16_guarded_use_retraction.py",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/source_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay/7dx_ordinary_stdout.json",
+        ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+             "scope_query_indexes": [0]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/PROOF_RU.md",
+             "scope_query_indexes": [9]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/upstream_section_7dx.md",
+             "scope_query_indexes": [1]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/upstream_task_7dx.md",
+             "scope_query_indexes": [2]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/check_guard_cotangent_retraction.py",
+             "scope_query_indexes": [3]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/expected_receipt_7dx.json",
+             "scope_query_indexes": [4]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/inputs/upstream_receipts.md",
+             "scope_query_indexes": [5]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay_native16_guarded_use_retraction.py",
+             "scope_query_indexes": [6]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay_manifest.json",
+             "scope_query_indexes": [6]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/source_manifest.json",
+             "scope_query_indexes": [8]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29/replay/7dx_ordinary_stdout.json",
+             "scope_query_indexes": [7]},
+        ],
+        "scope_review": (
+            "§7dx retracts each first-witness source row to the old terminal-source covector "
+            "by the exact operator map Y=V*XV with norm at most one. In the literal word the "
+            "three images lift to three distinct paid W31 positions; independent 18-call "
+            "preparation preserving the old record has zero source in its declared sector. "
+            "The complete79-call H+J comparison retains all heat modes, resources and clock. "
+            "It still leaves the old free QUERY with a nonzero source and an actual cheaper "
+            "record-birth alternative. Applying the old source theorem is conditional on its "
+            "real domain containing the image; readiness, physical X_N, GR transport/refinement, "
+            "Lean/CI and GR closure remain open. The exact owner checker passes 151 checks; "
+            "ordinary, optimized and repeat outputs match its receipt with empty stderr; "
+            "GR_closed=false."
+        ),
+    },
 ]
 
 

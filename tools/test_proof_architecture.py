@@ -4968,6 +4968,137 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("Lean/CI", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
 
+    def test_native16_guarded_use_and_source_retraction_are_pinned_and_scoped(self) -> None:
+        case_ids = (
+            "native16-paid-use-witness-and-birth-source",
+            "native16-first-copy-source-retraction-and-paid-preparation",
+        )
+        cases = {
+            item["id"]: item for item in cold_start.CASES if item["id"] in case_ids
+        }
+        self.assertEqual(set(cases), set(case_ids))
+        for case in cases.values():
+            hits = proof.full_text_search_many(
+                proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+            )
+            self.assertEqual(len(hits), len(case["queries"]))
+            query_pairs = list(zip(case["queries"], hits))
+            for source in case["required_sources"]:
+                status = cold_start._required_source_status(query_pairs, source)
+                self.assertTrue(
+                    status["found"],
+                    f"cold-start missed guarded-use source {source['path']}: {status}",
+                )
+
+        intake = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_native16_guarded_use_retraction_2026-10-29"
+        )
+        source_manifest_path = intake / "source_manifest.json"
+        source_manifest_bytes = source_manifest_path.read_bytes()
+        source_manifest = json.loads(source_manifest_bytes)
+        self.assertEqual(
+            source_manifest["schema"], "d0-native16-guarded-use-source-retraction-v1"
+        )
+        for rel, artifact in source_manifest["artifacts"].items():
+            data = (intake / rel).read_bytes()
+            self.assertEqual(len(data), artifact["bytes"], rel)
+            self.assertEqual(hashlib.sha256(data).hexdigest(), artifact["sha256"], rel)
+
+        owner_memo = "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        owner_task = "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md"
+        expected_commits = {
+            "7dw": "049ce1128827f8a8fc63875835e53aea19140a31",
+            "7dx": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45",
+        }
+        for key, record in source_manifest["upstream"].items():
+            self.assertEqual(record["commit"], expected_commits[key])
+            section = (intake / record["section_file"]).read_bytes()
+            task_excerpt = (intake / record["task_excerpt_file"]).read_bytes()
+            self.assertEqual(hashlib.sha256(section).hexdigest(), record["section_sha256"])
+            self.assertEqual(hashlib.sha256(task_excerpt).hexdigest(), record["task_excerpt_sha256"])
+
+            source_probe = subprocess.run(
+                ["git", "cat-file", "-e", f"{record['commit']}:{owner_memo}"],
+                cwd=proof.ROOT,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                check=False,
+            )
+            if source_probe.returncode == 0:
+                for path, blob_field in (
+                    (owner_memo, "owner_memo_blob"),
+                    (owner_task, "task_blob"),
+                ):
+                    blob = subprocess.check_output(
+                        ["git", "rev-parse", f"{record['commit']}:{path}"],
+                        cwd=proof.ROOT,
+                        text=True,
+                    ).strip()
+                    self.assertEqual(blob, record[blob_field])
+
+            checker = (intake / record["checker_file"]).read_bytes()
+            receipt = (intake / record["receipt_file"]).read_bytes()
+            checker_tag, receipt_tag = {
+                "7dw": (
+                    b"<!-- BEGIN 7dw SAME USE RECORD GUARD CHECKER -->\n```python\n",
+                    b"<!-- BEGIN 7dw SAME USE RECORD GUARD RECEIPT -->\n```json\n",
+                ),
+                "7dx": (
+                    b"<!-- BEGIN 7dx GUARD COTANGENT RETRACTION CHECKER -->\n```python\n",
+                    b"<!-- BEGIN 7dx GUARD COTANGENT RETRACTION RECEIPT -->\n```json\n",
+                ),
+            }[key]
+            checker_end, receipt_end = (
+                b"```\n<!-- END " + checker_tag.split(b"BEGIN ", 1)[1].split(b" -->", 1)[0] + b" -->",
+                b"```\n<!-- END " + receipt_tag.split(b"BEGIN ", 1)[1].split(b" -->", 1)[0] + b" -->",
+            )
+            self.assertEqual(section.split(checker_tag, 1)[1].split(checker_end, 1)[0], checker)
+            self.assertEqual(section.split(receipt_tag, 1)[1].split(receipt_end, 1)[0], receipt)
+
+        replay_manifest_path = intake / "replay_manifest.json"
+        replay_manifest = json.loads(replay_manifest_path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            replay_manifest["schema"], "d0-native16-guarded-use-source-retraction-replay-v1"
+        )
+        self.assertEqual(replay_manifest["status"], "PASS")
+        self.assertEqual(
+            replay_manifest["source_manifest_sha256"],
+            hashlib.sha256(source_manifest_bytes).hexdigest(),
+        )
+        self.assertEqual(replay_manifest["python"], "3.9.6")
+        self.assertTrue(replay_manifest["stderr_empty_for_all_runs"])
+        self.assertTrue(replay_manifest["owner_receipts_byte_identical_in_ordinary_optimized_repeat"])
+        self.assertEqual(len(replay_manifest["runs"]), 6)
+        for key, checks in (("7dw", 73), ("7dx", 151)):
+            receipt = (intake / f"expected_receipt_{key}.json").read_bytes()
+            result = json.loads(receipt)
+            self.assertEqual(result["checks"], checks)
+            self.assertFalse(result["scope"]["GR_closed"])
+            for mode in ("ordinary", "optimized", "repeat"):
+                stem = f"{key}_{mode}"
+                run = replay_manifest["runs"][stem]
+                self.assertEqual(run["returncode"], 0)
+                self.assertTrue(run["matches_owner_receipt"])
+                stdout = (intake / f"replay/{stem}_stdout.json").read_bytes()
+                stderr = (intake / f"replay/{stem}_stderr.txt").read_bytes()
+                self.assertEqual(stdout, receipt)
+                self.assertEqual(stderr, b"")
+                self.assertEqual(hashlib.sha256(stdout).hexdigest(), run["stdout"]["sha256"])
+            self.assertIn("Lean/CI", cases[
+                "native16-paid-use-witness-and-birth-source" if key == "7dw"
+                else "native16-first-copy-source-retraction-and-paid-preparation"
+            ]["scope_review"])
+
+        guard = json.loads((intake / "expected_receipt_7dw.json").read_text())
+        self.assertTrue(guard["same_use"]["all_independent_device_rows_zero_at_base"])
+        self.assertFalse(guard["same_use"]["all_initial_witness_rows_zero"])
+        self.assertFalse(guard["scope"]["physical_X_N_identified"])
+        retraction = json.loads((intake / "expected_receipt_7dx.json").read_text())
+        self.assertFalse(retraction["cotangent_retraction"]["arbitrary_old_QUERY_stationarity_proved"])
+        self.assertFalse(retraction["scope"]["all_X_N_identified"])
+        self.assertFalse(retraction["scope"]["GR_closed"])
+
     def test_record_saturated_native_field_stencils_are_pinned_and_scoped(self) -> None:
         case = next(
             item for item in cold_start.CASES
