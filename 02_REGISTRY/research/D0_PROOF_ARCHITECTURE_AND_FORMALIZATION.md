@@ -14550,6 +14550,48 @@ prove a stationary finite word or larger field-compiler refinement, or run
 Lean/CI. `GR_closed=false` remains; #334 and
 `WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION` remain open.
 
+## #334 continuation at `f23f9149` — complete recorder calibration and the retained full price
+
+The current #334 owner branch advances from the integrated §7dt checkpoint to
+[`f23f9149c470051b35acc3fac42f3fecdba084ab`](https://github.com/gvakhrushev/d0_15/commit/f23f9149c470051b35acc3fac42f3fecdba084ab).
+Its new §7du section and matching task-brief excerpt are pinned in
+[`d0_native16_record_implementation_fibre_2026-10-29`](sources/d0_native16_record_implementation_fibre_2026-10-29/PROOF_RU.md),
+with the exact checker, receipt, three frozen prior receipts, replay logs and
+source manifest.
+
+§7du defines the same complete finite recording operation by
+`Cal(D) : D j = C j`. Since this is equality of complete isometries on every
+ready input, it fixes the post-state and retained coherences as well as the
+pointer statistics. Its unitary completion freedom is exactly `D=C T`, with
+`T` the identity on the ready subspace and an arbitrary unitary on its
+orthogonal complement. Along this calibrated fibre the feedback derivative
+vanishes; the original full heat and its whole-winding bound remain, and the
+horizontal field source at fixed recorder is unchanged. This gives a precise
+finite source for the recorder directions without restricting the independent
+field source.
+
+For the declared native16 profile, the checker proves that three copied bits
+require at least three cross-CX calls by one Schmidt-rank witness. At exactly
+three calls, every allowed implementation has the complete operator `C`,
+including initially unoccupied columns. The longer comparison uses two
+35-call words with the same `23 CX + 2 G + 10 SourceI` inventory. Their prepared
+prefixes, terminal states for all 64 ready columns and pointer effects agree,
+while their full unprepared operators differ. The exact first full-character
+difference is `2048u`; a rational bound proves a strictly positive separation
+in the original full Book price. A native fault keeps pointer effects and
+re-reading unchanged, fails `Cal`, and has a positive return gap and greater
+complete price. All 65,536 modes are retained in the price calculation.
+
+The exact upstream checker completed **104 checks**. Ordinary, `-O` and repeat
+runs produced the byte-identical published receipt with empty stderr. This is a
+finite same-operation recorder-domain result. It does not establish physical
+admission of the recorder/reserve layout, identify the complete physical
+`X_N`, bind `Cal` to the selected physical task or Book, derive the complete
+Cost-Info and clock/boundary equations, or prove field/compiler refinement.
+The nine-package archive and the earlier moving-cut source are already recorded
+in the central intake above; this §7du is the subsequent owner result. No Lean
+build or CI was run for this increment, and `GR_closed=false` remains.
+
 ## #402 intake validation snapshot at `df3403d6` — source coverage and retrieval comparison
 
 The committed integration snapshot `df3403d6e634789dea6ac66b9ae131df2ec0f440`

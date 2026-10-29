@@ -1754,6 +1754,79 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "native16-record-implementation-fibre",
+        "queries": [
+            "owner memo A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md commit f23f9149c470051b35acc3fac42f3fecdba084ab blob 21e07fc00279bd897baeefceba8317b1e898107a 7du Admit implementations by their full recording map",
+            "Cal(D) D j=C j finite recording implementation predicate actual complete operation all input coherences equation 1085 7du",
+            "D=C T completion fibre T identity on ran(j) arbitrary unitary on orthogonal complement full heat feedback derivative zero horizontal field source unchanged",
+            "three copied bits minimum three cross CX Schmidt rank 8 unique operator C all unoccupied columns",
+            "two 35-call native words same 23 CX 2 G 10 SourceI same all 64 ready columns prepared prefixes terminal state different full operator",
+            "full512 first spectral character difference 2048u strict rational complete Book heat price separation all higher windings bounded",
+            "negative recorder fault pointer effects and rereading unchanged outside Cal positive return gap full price increases",
+            "checker_sha256 66a8f56d93358668c39f357c71c47fed4ad6075c1c40c39b7602adb971b3dc6f receipt 104 checks 2048u",
+            "upstream_receipts.md 7ds RETURN RECORD COMPILER RECEIPT 7dt ONE SIDED PRICE GRAPH RECEIPT 7do PAID BINARY INPUT RECEIPT frozen json exact hashes",
+            "replay_record_implementation_fibre.py _check_upstream_snapshot d0-native16-record-implementation-fibre-replay-v1 ordinary optimized repeat exact_published_receipt_match",
+            "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION supporting same-operation recorder fibre physical X_N selection Lean CI GR_closed false",
+            "фиксирует состояние после записи и сохранённые когерентности а не только вероятности указателя",
+            "complete recording specification fixes new control domain without fixing field response task brief 29 October",
+            "source_manifest.json d0-native16-record-implementation-fibre-intake-v1 integrated_artifacts upstream memo_blob checker_inputs frozen_receipt_inputs",
+            "replay_manifest.json d0-native16-record-implementation-fibre-replay-v1 104 exact_published_receipt_match outputs_byte_identical stderr_empty_for_all_runs",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/upstream_section_7du.md",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/upstream_task_7du.md",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/check_record_implementation_fibre.py",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/expected_receipt.json",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/inputs/upstream_receipts.md",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/replay_record_implementation_fibre.py",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/source_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/replay/ordinary_stdout.json",
+        ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+             "scope_query_indexes": [0]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/PROOF_RU.md",
+             "scope_query_indexes": [11]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/upstream_section_7du.md",
+             "scope_query_indexes": [1]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/upstream_task_7du.md",
+             "scope_query_indexes": [12]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/check_record_implementation_fibre.py",
+             "scope_query_indexes": [7]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/expected_receipt.json",
+             "scope_query_indexes": [7]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/inputs/upstream_receipts.md",
+             "scope_query_indexes": [8]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/replay_record_implementation_fibre.py",
+             "scope_query_indexes": [9]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/source_manifest.json",
+             "scope_query_indexes": [13]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/replay_manifest.json",
+             "scope_query_indexes": [14]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_record_implementation_fibre_2026-10-29/replay/ordinary_stdout.json",
+             "scope_query_indexes": [7]},
+        ],
+        "scope_review": (
+            "§7du defines the same complete recording operation by Cal(D): D j = C j, "
+            "which fixes the post-state and retained coherences on every ready input. The "
+            "completion fibre D=C T is classified exactly; within it the feedback derivative "
+            "vanishes but the full heat and original horizontal field source remain. For the "
+            "fixed native16 profile, a Schmidt-rank witness proves three CX calls are necessary "
+            "and the three-call recorder has only the full operator C. Two 35-call, same-inventory "
+            "implementations agree on every prepared prefix, terminal ready-state test and pointer "
+            "effect, yet differ on the unprepared operator and have a strict positive separation "
+            "in the complete Book price. The 104-check exact checker and owner receipt replay "
+            "byte-identically in ordinary, -O and repeat runs with empty stderr. This supplies a "
+            "finite same-operation recorder-domain application, not physical selection: admission "
+            "of the recorder/reserves, the full physical X_N, selected Book/task/Cost-Info, "
+            "clock/boundary equations, field refinement, Lean/CI and GR closure remain open; "
+            "GR_closed=false."
+        ),
+    },
+    {
         "id": "canonical-archive-law-and-variation-domain",
         "queries": [
             "canonical archive law compatibility variation domain full old effect relative commutant",
