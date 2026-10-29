@@ -14620,3 +14620,28 @@ This increment integrates the existing #334 results into the same open #402
 branch. No Lean build or CI run was performed. Physical D0 admission remains
 unproved, the #334 scientific owner remains open, and `GR_closed=false`.
 `WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION` remains `IN_PROGRESS`.
+
+## #402 intake validation snapshot at `f79f6506` — 7du integrated and lookup regression cleared
+
+The final cold-start and search-comparison runs use clean commit
+[`f79f650659ed91d559a1bd60e25a687e5791d5ac`](https://github.com/gvakhrushev/d0_15/commit/f79f650659ed91d559a1bd60e25a687e5791d5ac).
+Their [compact cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/architecture_intake_validation_2026-10-29_f79f6506/cold_start_summary.json),
+[process comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/architecture_intake_validation_2026-10-29_f79f6506/process_comparison.json)
+and [validation manifest](sources/d0_proof_architecture_formalization_2026-10-24/reports/architecture_intake_validation_2026-10-29_f79f6506/validation_manifest.json)
+preserve the output hashes, runner blobs and source coverage.
+
+The 18-candidate full cold-start found **41/41** required source sets and
+recorded 42 benchmark cases plus 270 required source references. The new
+§7du case found all 11 required sources, and the earlier return-record input
+source lookup also passed after its query was narrowed to the exact
+`native_execution.py` primitives. The five-candidate process comparison covers
+41 questions, 25 with explicit source scopes: current search surfaced an expected
+source in **23/25**, while legacy assembly search surfaced one in **0/25**.
+The one-query §7du comparison selects the owner-memo query and does not surface
+the architecture document inside its five-candidate window. The full cold-start
+finds every source through the scoped query set. These are retrieval metrics;
+they do not assess theorem correctness, physical admission or closure.
+
+The snapshot retains `GR_closed=false`; no Lean build or CI ran in this
+increment. The #334 owner remains open, and
+`WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION` remains `IN_PROGRESS`.
