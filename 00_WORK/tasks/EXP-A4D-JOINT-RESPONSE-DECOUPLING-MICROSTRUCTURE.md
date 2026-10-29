@@ -13,6 +13,140 @@ Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 Assembly-Carrier: `native-programme-v1`
 Assembly-Slot: `constitutive`
 
+## 28 October: original raw history and exact kappa-source Einstein closure
+
+Same Draft #334 / native-programme-v1. Consume the existing
+full-CAR/inverse-leg/ten-sign programme7cz879--889 and all incoming
+results through `74cc1d32`, including the full-prefix and independently
+free QUERY controls. The complete consumer is now primary7kappa K1--K9
+and [the integrated proof](../../02_REGISTRY/research/A4D_RETAINED_RESPONSE_CONCENTRATION_GENERAL_EINSTEIN_2026_10_28.md).
+The ten-sign source is not replaced by the different direct-click dust
+programme. The original source input `c296829f` remains pinned in the
+exact source receipts; later results supply the stated composition.
+
+The whole old history stays in its actual cold Gram A=C_<*C_<. For
+independently variable fresh current corners c_j, the full determinant
+is D=(1-z)I+z p^K(product c_j^2)A. Its actual positive centre gain
+gives an exact weighted current source plus the whole old source
+bounded by C_A,h/(4M a_h epsilon_h r_f). Nothing is subtracted from
+the Book03 price. In the independent-block max norm the dual current
+norm is sum w_j||E_j||, and at identical centres it equals ||E||,
+independently of M. Old-source concentration therefore does not hide
+new field equations or a genuine independently free new apparatus row.
+
+Incoming73816d27 also supplies the compatible derived positive dual
+weight Pi_out=C_< D^-1 C_<*/Tr(D^-1 A), with trace one. It shows that
+already proved operator remainders are not amplified by the nonnormal
+past. Its separate direct-click apparatus convergence rate is retained
+at that programme's scope; the ten-sign task domain is not enlarged.
+
+The original Book01 binary carrier supplies native wire ports directly:
+Jx=x tensor(sqrt(p),p). Conjugating the full target by G^tensor q
+allows the actual canonical born input; the conjugate inverse is
+compiled, not executed for free. Positive fullStep words supply all
+columns and common finite lengths. Each exact retention block is
+one literal raw birth and one original G, giving return-square p
+and dimension factor2. Every actual birth, gate and complement stays
+in the unitary growing clock T=S+R g_last. Its full425D heat trace
+has the true359D harmonic baseline; heat/gain decays as (2p)^(-K).
+This avoids requiring AF paired-port admission for the main route.
+
+The complete source, including moving PF, observer and generated-state
+adjoint, pulls back through the invertible material-metric map to all
+16 coframe+24 connection+2 scalar Einstein--CAR rows. With effective
+regular C3 field names and actual C2 readout convergence, the native
+finite-contrast source is computed to every positive rational budget.
+The order h/chart -> M -> t -> delta -> actual prefix -> K -> read
+precision has finite halt and no circular compiler-length assumption.
+
+Original Book01 kappa numbers supply the final exact capstone. Each
+true full-price contrast is interval-evaluated, enlarged only by the
+proved off-shell error, and intersected with preserved prior intervals.
+The resulting nested rational intervals have width<p^k. Old native
+records and certificate entries project exactly. Their kappa source
+equals DS_ES off shell, and the full stationary kappa class has
+soundness and recovery for every regular computable Einstein--two-CAR
+solution in the declared chart. The existing non-null7cy873 field with
+q>0 proves nonemptiness; no new restricted metric ansatz is used.
+
+The precise task is the original report-law graph r=Q_native(Y),
+leaving all field data free. The correctness reaction B_r DQ remains.
+A changed QUERY law at fixed Y is a different task. A finite delta-band
+alone does not remove microscopic query normals: the declared graph
+comparisons require the full source budgets, including
+delta/(epsilon_h |t|)->0. Completeness is proved for this explicit
+interpreted task, not asserted for all physical X_N/programmes.
+The incoming enlarged-query source is retained rather than diluted.
+
+The newer all-input task theorem is now consumed directly in RAW9:
+for the same ten-sign reflected READY-wrapper, preserve the complete
+effect F=a_h rbar_h(Y)I and every required marked map on all inputs.
+Then C=I-2F gives DC=-2a_h D rbar_h[Ydot]I. All independent faithful
+implementation/preparation coordinates remain free inside this fibre;
+their vertical feedback is zero by identity. Different full operators
+and the whole heat remain; raw-clock budgets control the latter.
+The source theorem extends by the actual sum-hull norm to every
+effective finite implementation chart, without an Einstein admission
+condition or arbitrary-dilation/X_N identification. Independent bounded
+review confirmed the complete READY-and-REPORT effect is essential.
+
+The resumed intake preserves all23 incoming commits after d53ef61c:
+canonical AF tower/source transport, explicit binary words, the exact
+archive-law variation criterion, paid preparation and the native
+stationary recording seed. The latter solves its specified prefix:
+A=diag(I8,0_8) has zero whole return covector and positive scalar-future
+gain8zT/(1-z+zT). Our general nonzero-A identity includes this matrix
+case; its separately prepared blank input is not substituted for the
+canonical raw-born input. No new seed/AF actuation premise is required
+by the existing raw proof. Exact-law fibres remain distinct from a
+first-jet kernel or a finite tolerance ball. All incoming evidence is
+preserved without counting its historical checks as new executions.
+
+The29October intake additionally preserves the23 commits through
+f8a1d893: the canonical AF stationary family, original Julia lift,
+exact full-heat source, paid preparation, same-use record guard,
+old-control retraction and native internal QUERY processor. The
+guard gives K_D=T_D K_W and zero independent witness-preserving
+device Gram source at its correct centre. New record-birth sources
+retract by Y=V*XV with norm<=1 to actual old controls; the literal
+joint lift has norm<=2. Its old-domain support remains required.
+The canonical AF source has exact DB=Gamma DI with Gamma>0 and
+|H_c/J_c|<1/64 at its own carrier/price. These are consumed as
+specified positive interfaces, without identifying AF and raw
+inputs or converting a nonzero free QUERY into a faithful vertical.
+Independent bounded reviews confirmed RAW9/KAPPA2 need no change.
+
+The final four incoming commits through74cc1d32 add the canonical
+balanced-reflection source: its whole heat covector vanishes and
+one fixed intrinsic effect matches K*K and its first variation.
+This positive AF interface is preserved at its own carrier, without
+identifying its intrinsic projector with an executed raw record.
+The bounded intake requires no change in our proof or its receipts.
+
+The full derivations and receipts are in
+`02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/`.
+Five exact checks report63 source,26 fullStep Lie,38 material pullback,
+41 growing-clock and44 raw-cylinder PASS (212 total). The integrator
+independently ran the changed source/raw checkers and previously ran
+the unchanged three; normal/-O receipts agree. General proof, not the
+check count, establishes the all-level theorem. Independent analytic
+reviews cover source, clock, original raw execution, task graph and
+kappa projection/finite halt. No large GR word or Lean replay claimed.
+
+The result closes the explicitly stated regular kappa-source physical
+capstone allowed by D0_GR_CLOSURE_CONTRACT_RU5. Different complete
+histories and their absolute prices are not identified. The unchanged
+exact-finite joint_nonlinear_solve/positive_gr and raw216 contracts keep
+their own requirements; no accepted claim or lifecycle is promoted.
+All incoming work and absolute positive continuation costs are retained.
+Final guards rerun on incoming74cc1d32 PASS: validate_repo.py (889 claims,
+31 assumptions,58 aliases,183 formal_support,918 lean_closure,warnings0),
+validate_work.py,validate_agent_protocol.py,gr_assembly.py check
+(54 active,98 results,5 discharged,22 obligations,scientific_promotion=false),
+render_work_status.py --check (stale0), and git diff --check. The existing
+assembly template was consumed; no unchanged mathematical replay or
+remote CI is represented as performed.
+
 ## 26 October: internal-time capacity and the original scene-source application
 
 Same #334, native realization/final composition; this is a route correction,

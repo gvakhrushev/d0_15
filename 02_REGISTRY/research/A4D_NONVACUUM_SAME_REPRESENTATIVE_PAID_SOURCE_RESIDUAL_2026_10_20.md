@@ -116186,3 +116186,304 @@ print(json.dumps(result,ensure_ascii=False,sort_keys=True,indent=2))
   ]
 }
 ```
+
+## 7kappa. Original raw history, the complete source and exact kappa Einstein closure
+
+28 October 2026. Same #334 / `constitutive/native-programme-v1`.
+Consume the full-CAR/inverse-leg/ten-sign constructor7cz879--889,
+the incoming complete-prefix recovery, and the independent QUERY
+control7dh. The latter remains a positive non-dilution result on its
+stated enlarged task. This composition uses the original report-law
+task with free field inputs and its complete interpreted comparison
+graph; no Einstein equation is an admission condition.
+
+The complete proof and its declared regular kappa topology are in
+[the integrated theorem](A4D_RETAINED_RESPONSE_CONCENTRATION_GENERAL_EINSTEIN_2026_10_28.md).
+All disjoint source proofs, exact checkers and receipts are in
+[the retained-source packet](sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md).
+Incoming results through `d53ef61c` are retained without altering
+their different programme, exact-finite or scientific-status scope.
+
+### K1. One original carrier and actual primitive ports
+
+Book01 already supplies the entire support S_n={A,B}^n. In its
+normalized cylinder basis the canonical inclusion is
+
+    J_n x=x tensor v,  v=(sqrt(p),p)=G|0>,  J_n*J_n=I,
+    (A tensor I)J_n=J_n A.                              (K1)
+
+Every wire is a literal position in this original binary history.
+The existing G/CX wire validator therefore applies directly to all
+2^n columns. No 136-dimensional AF paired-port call is silently
+retyped as a wire gate. A previous zero-WORK target U_y is realized
+on the actual born input by the full target B_q U_y B_q*, where
+B_q=G^tensor q. The whole cut and every marked readout are transported
+with it. B_q* is part of a computable target, not a free inverse call.
+
+The two-neighbor fullStep compiler proves full-column density and
+common finite length using only actual positive W=G;CX words.
+Its six exact Lie columns have determinant -64p^6. OldRIGHT and the
+entire older carrier remain exact identity factors; all helper
+columns stay in the full price. Each simple retention block is one
+actual raw birth followed by one original G, with
+<v,Gv>=sqrt(p) exactly. K such blocks give eta=p^K, dimension growth
+2^K and 2K real stages. See
+[RAW_CYLINDER_REALIZATION_RU.md](sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md).
+
+### K2. The entire old matrix stays inside one determinant
+
+Let C_< be the actual complete old cold corner, A=C_<*C_<,
+0<=A<=I and Tr A>0. Rank deficiency and noncommutation with DA are
+allowed. Every independent older preparation, archive and cut
+coordinate remains in DA. For M fresh independently variable current
+blocks, put c_j=1-2a_h rbar_h(Y_j)>=33/40 and
+
+    s=product_j c_j^2,  L=sum_j 1/c_j,  w_j=(1/c_j)/L,
+    D=(1-z)I+z p^K s A,  J=-Tr log D,
+    Gamma=4 a_h epsilon_h r_f z p^K s Tr(D^-1 A)L>0.
+
+The exact complete differential is
+
+    DJ/Gamma = sum_j w_j D rbar_h(Y_j)/(epsilon_h r_f)
+       - Tr(D^-1 DA)/[4 a_h epsilon_h r_f L Tr(D^-1 A)],
+    |Tr(D^-1 DA[v])/Tr(D^-1 A)|
+       <= ||DA[v]||_1/[(1-z)Tr A].                     (K2)
+
+Since L>=M, the complete old covector is bounded by
+C_A,h/(4 M a_h epsilon_h r_f). No old source is frozen or replaced
+by the desired material source. Additional genuine protected
+multiplicity appears equally in price and gain. Gain calibration
+uses actual central corners; differentiating B/Gamma is not used.
+
+Incoming73816d27 supplies a directly compatible operator refinement:
+Pi_out=C_< D^-1 C_<*/Tr(D^-1 A) is positive with trace one, so a
+cut-preserving insertion X_j contributes
+w_j Tr[Pi_out(-Herm X_j/(2 a_h epsilon_h r_f))]. Any already proved
+operator-norm remainder is not amplified by the nonnormal retained
+past. This derived dual weight is not a newly prepared observer.
+The incoming direct-click apparatus rate is not silently transferred
+to the different ten-sign decoder; see the master2.2 for exact scope.
+
+### K3. All independent current equations survive repetition
+
+In the maximum norm on independent old/current blocks,
+
+    ||DJ/Gamma||_(max,dual)
+       =||F_old||+sum_j w_j ||D rbar_h(Y_j)/(epsilon_h r_f)||.
+                                                               (K3)
+
+At identical current centres this is the full single-current norm,
+independent of M. Opposite rows cannot cancel independent tests.
+Every continuum test is lifted to all current copies with the same
+max norm. Testing only fixed copy-indices would falsely dilute them.
+
+Moving normalized PF weights have the exact row
+sum h^4 delta rho [r-x r_x-y r_y]. Its constant cancels by true
+normalization and its linear term cancels identically; its normalized
+remainder is O(epsilon_h). Observer whitening preserves the complete
+CAR trace. Generated bank/flag/state equations are solved by the full
+causal adjoint. A genuinely independent new apparatus input must
+remain a new term inK3, exactly as the incoming QUERY control requires.
+
+### K4. Every birth, terminal complement and heat mode is paid
+
+On the direct sum of actual stage carriers only, let S be the forward
+partial shift, g the last actual unitary, B_jf the canonical birth
+transport, and D_j the new orthogonal birth detail. Define
+
+    (Rx)_0=B_0f* x,  (Rx)_j=D_j B_jf* x,
+    T=S+R g pi_f,  R*R=I_final,  RR*=I-SS*.
+
+Then T is exactly unitary. Each detail returns to its own birth layer;
+no future column is inserted in an old stage. Generated cuts annihilate
+all birth details, so the full feedback is precisely the determinant
+inK2. The original K(9,11,13) normalized incidence and both Hodge
+grades give, for D_hist=sum_j dim H_j,
+
+    Z01=359 D_hist+2 Tr_(33D_hist) exp(-beta Delta0),
+    |H_+-H_-|<=6 ||T_+-T_-||_1/(359 D_hist),
+    E_heat <=3 B_prefix /
+       [359 |t| gamma_under d_base (2p)^K] -> 0.        (K4)
+
+All425D_hist modes and the absolute log-trace baseline remain.
+The actual field-dependent prefix is finite; its B_prefix is
+independent of subsequent fixed retention blocks. Since 2p>1 and
+Gamma>=gamma_under p^K, the final integer K search terminates.
+The earlier AF clock theorem remains valid at its own ports/ranks;
+the main routeK1 does not require its additional actuation premise.
+
+### K5. One material metric and every nonlinear Einstein--scalar row
+
+The current material symbol is K_mat=m g^-1, with m the actual
+coordinate measure, not PF rho. The invertible map
+
+    ehat=sqrt(m/det e) e,  ghat=(m/det e)g,
+    det(D_e ehat)=-(m/det e)^8 !=0
+
+preserves all16 coframe directions. With independent omega, the full
+geometric and matter source converges to
+
+    S_ES=integral det(ehat)[R(ehat,omega)/2
+               +lambda sum_A |dPsi_A|_ghat^2],
+    lambda=-r_q/r_f<0,  A=0,15.
+
+The complete16+24+2 equations are
+
+    D_omega ehat=0,  G_munu(ghat)=kappa T_munu,
+    Box_ghat Psi_0=Box_ghat Psi_15=0,  kappa=r_q/r_f>0,
+    T_munu=2 sum_A d_mu Psi_A d_nu Psi_A
+             -ghat_munu sum_A |dPsi_A|_ghat^2.          (K5)
+
+The measure row obeys 2m E_m+<e,E_e>=0; no volume row is deleted.
+The detailed off-shell Lorentz/diffeomorphism/measure identities and
+all component maps are in
+[GENERAL_EINSTEIN_SOURCE_RU.md](sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md).
+No null/dust ansatz, det e=1 restriction or aligned-current condition
+is imposed on this general source theorem.
+
+### K6. A terminating comparison budget with the actual gain
+
+Full-column compilation on fresh WORK preserves the relative product
+bound |s_hat-s|<=2delta L s exp(2delta L). The same s, p^K and Tr A
+occur in the full determinant error and in the true gain, so they
+cancel after normalization. Actual gain calibration obeys
+|log(Gammahat/Gamma)|<=4Mdelta/c_min. Central-contrast truncation is
+bounded by t^2 B3/(6 gamma_under), independently of later K.
+
+The finite choice order is h/chart -> M -> t -> delta -> actual
+compiled prefix -> K -> arithmetic precision. With the real sampling,
+decoder and basis norms, the full assembled native contrasts obey
+
+    ||ellhat_h-DS_ES composed D Phi_av,h||_(max,dual)
+      <=C(h+epsilon_h)+C_A,h/(4M a_h epsilon_h r_f)
+        +C_basis,h(E_copy+E_old-code+E_heat+E_contrast
+                                      +E_gain+E_read). (K6)
+
+Phi_av,h is the average of actual decoded material-coordinate
+interpolants at a coincident current centre; its differential covers
+all independent blocks. Noncoincident centres use the exact weighted
+formulaK2. The estimate holds off shell. All previous actual stages
+become the next entire old prefix, with newly computed true bounds.
+
+### K7. Exact original kappa values, finite halt and compatible records
+
+Book01 already defines kappa numbers through finite Q(phi) names with
+precision p^k. On effectively regular C3 input names, choose every
+source budget inK6 below tau_k=2^(-(k+6)). Certified arithmetic of
+the same complete native prices/gain gives a rational interval Q_ki
+of width<=2tau_k containing the actual comparison for each i<=k.
+Then
+
+    J_ki=Q_ki+[-tau_k,tau_k],  I_ki=intersection_(r=i)^k J_ri,
+    DS_ES(Z)[v_i] in I_ki,  diameter(I_ki)<=4tau_k<p^k.  (K7)
+
+No Einstein residual is evaluated or subtracted in this algorithm.
+The source bound proves nonempty intersection. Finite log/exp and
+resolvent series, positive actual gain andK4 give finite halt for
+every precision query. Registered packet postprocessing preserves
+positive effects by E'_w=sum_(v:f(v)=w)E_v. A declared code descriptor
+is kept typed as task data unless it is actually registered.
+
+The centre history is literally H_(k+1)=H_k append W_new. Canonical
+inclusions and identity on the whole old carrier preserve old readouts.
+The certificate ledger projects by retaining its old entries exactly;
+absolute prices at different levels are not equated. See
+[KAPPA_CLOSURE_RU.md](sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md).
+
+### K8. Closed source-to-solution composition and its exact domain
+
+The task is the original report-law GRAPH r=Q_native(Y), with all Y
+free, together with its full-column and marked-map specification.
+It is not Q_native(Y)=q_old. Eliminating the generated report retains
+B_Y+B_r DQ_native, as the owned paid writer11.3 already proves.
+The QUERY orbit7dh changes this law at fixed Y and is outside this
+particular graph; its enlarged-task source is not declared zero.
+
+The incoming all-input task theorem gives a further direct extension,
+proved for this ten-sign wrapper in RAW9. Let F be the COMPLETE
+READY-and-REPORT effect on the actual initial input. Every faithful
+implementation in the same reflected wrapper satisfies
+F(Y,theta)=a_h rbar_h(Y)I, with all required marked maps retained.
+Since C=I-2F, independently variable theta has exactly zero vertical
+feedback source, while DC=-2a_h D rbar_h[Ydot]I keeps all field rows.
+Full internal operators need not coincide. Their actual heat stays
+in section K4's growing-clock budget; no isospectral claim is used. The
+sum-hull of field lifts and faithful verticals preserves the source
+bound for each effective finite implementation chart. Thus K8 also
+covers this whole same-task fibre, not only one target representative.
+
+A finite tolerance-ball alone does not define that tangent graph.
+Declared native comparison lifts satisfy the fullK6 budget, including
+delta/(epsilon_h |t|)->0. No claim about every microscopic mutation
+inside a fixed tolerance-ball or the complete physical X_N follows.
+
+For this off-shell regular interpreted class H_reg,K7 and the full
+max-dual control give the exact source and two-way solution theorem
+
+    E_kappa(H)[v]=[DS_ES(pi H)[v]]_kappa,
+    pi{H in H_reg:E_kappa(H)=0_kappa}
+       =Sol_(regular,computable)(Einstein--two-CAR).     (K8)
+
+Soundness uses persistent all-copy tests and their dense rational
+family; any nonzero source has a finite interval excluding zero.
+Recovery applies the same off-shell construction to every computable
+regular solution. All independent current and retained sources tend
+to zero in the full norm; causal internal equations hold exactly at
+each finite level. The owned non-null solution7cy873 has q>0 and
+provides concrete nonempty recovery without another metric search.
+
+This completes the declared regular kappa-source physical capstone
+per D0_GR_CLOSURE_CONTRACT_RU5. It equates the source observable, not
+different archives, absolute prices or complete native histories.
+It is not a finite algorithm deciding equality of computable reals.
+The unchanged joint_nonlinear_solve/positive_gr requirement of exact
+stationary words at each finite N and the original raw216 norm are
+not promoted byK8. No universal programme-selection claim is made.
+
+### K9. Evidence and preservation
+
+Five exact changed-input checks pass:63 complete source/independent
+copies/actual gain,26 fullStep Lie,38 coframe/measure pullback,
+41 actual mixed growing-clock and44 original raw-cylinder checks.
+Their212 checks use exact rational/Golden arithmetic. The integrator
+independently executed the changed source and raw checks and previously
+executed all unchanged checkers; normal/-O receipts agree.
+
+Independent analytic reviews checked the whole source, material
+metric, birth clock, raw operator/readout map, kappa intervals and
+same-task domain. The number of checks does not replace the general
+proofs. No huge GR word, large heat spectrum or new Lean/root replay
+is represented as executed. Incoming7dc absolute continuation cost,
+7dd full-prefix source and7dh QUERY controls remain intact. Structural
+guards and publication verification are recorded in the master and
+existing task brief. No lifecycle, Ready, accepted-claim or assembly
+promotion is introduced by this research composition.
+
+The resumed integration preserves incoming work through d9ef0b05,
+including the canonical AF tower, binary actuation, exact archive-law
+domain and native stationary recording seed. On the seed's specified
+blank-input chart its A=diag(I8,0_8) has zero whole return source and
+positive gain8zT/(1-z+zT) after scalar attenuation. K2 admits this
+singular matrix case but retains arbitrary nonzero A; the separate
+blank-input/AF maps are not silently imported into K1's raw-born
+execution. Exact law-fibre tangents, first-jet kernels and finite
+tolerance balls retain their distinctions. All incoming receipts are
+preserved at their own scope and are not added to the212-check count.
+
+The29October intake through f8a1d893 preserves the later canonical
+stationary AF family, original Julia lift and exact full H+J source,
+as well as the paid same-use guard and native QUERY processor7du--7dy.
+The guard's K_D=T_D K_W gives a zero device Gram first source at
+the correct centre on its full witness-preserving control support.
+Record-birth sources retract by Y=V*XV to actual old controls,
+with norm<=1 and literal joint lift norm<=2. The old source/domain
+is retained. The exact positive AF field gain and its |H_c/J_c|<1/64
+bound remain on their own input/carrier. K1--K8 retain the original
+raw realization and full heat budget; no AF/raw price or free-QUERY/
+faithful-vertical identification is made. Independent bounded intake
+reviews found no change required in RAW9 or KAPPA2.
+
+The final incoming74cc1d32 balanced-reflection packet is also
+preserved. Its exact zero full heat covector and fixed intrinsic
+effect/Gram first-jet identity strengthen that canonical AF sector;
+they do not replace K1's executed raw records or alter K1--K8.
