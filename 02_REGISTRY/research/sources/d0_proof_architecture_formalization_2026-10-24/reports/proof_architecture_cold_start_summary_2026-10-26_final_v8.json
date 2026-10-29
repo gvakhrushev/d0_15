@@ -1,0 +1,210 @@
+{
+  "schema": "d0-proof-architecture-cold-start-summary-v2",
+  "snapshot_commit": "6373b3464cab28b71922c3fd9966074601dd53d5",
+  "worktree_dirty": false,
+  "search_cases_found_all_sources": 24,
+  "search_cases_total": 24,
+  "benchmark_cases_total": 25,
+  "required_source_ref_count": 160,
+  "search_limit": 18,
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "2320a1f8d64ba8921dd22050222a13f0e13989179a5f3128b998218595416c4c",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "semantic_scope_review_is_manual": true,
+  "replay": {
+    "source_commit": "6373b3464cab28b71922c3fd9966074601dd53d5",
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "elapsed_seconds": 264.5,
+    "runner_sha256": "c4a73860f70f668fa8d60f0c67273cd2792b923c4e649f90400dc7b15d72ca25",
+    "runner_git_blob": "a8a3ed4e639b570b60a200eb73897afaadee504d",
+    "search_engine_sha256": "89cab4452f70612a7ddee33342fc467dc17b448a7bdb482423767caaf853ed1b",
+    "search_engine_git_blob": "a5bef6133cf135d934aadfb7e07e6446e1d076c2",
+    "test_sha256": "fb6fb3ae386b9a7196e8c0f0fb6540345256f2a50cd2454fb0103f4919d9228c",
+    "test_git_blob": "faa1a91d9b5d22504803dea4d79a6060c6de31be",
+    "full_output_sha256": "57cb4055aa6e3049e0c89dfaa097358799cd45c916e32f8a026d34bb3d572abb",
+    "full_output_bytes": 9491788
+  },
+  "cases": [
+    {
+      "id": "labelled-native-raising-inverse",
+      "query_count": 18,
+      "required_source_count": 13,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "positive-nonvacuum-recovery",
+      "query_count": 11,
+      "required_source_count": 5,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "proper-lorentz-same-orientation-orbit",
+      "query_count": 4,
+      "required_source_count": 6,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-gram-affine-quadratic-expansion",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-gram-frechet-derivative",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "golden-step-vs-internal-ratio",
+      "query_count": 1,
+      "required_source_count": 1,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "fixedright-stationary-and-minimum-scopes",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "same-fields-do-not-fix-price-source",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "same-prefix-two-ending-prospective-price",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "clock-dirac-incidence-curvature",
+      "query_count": 4,
+      "required_source_count": 3,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "gain-readiness-vs-trace-multiplicity",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "conditional-transfer-does-not-select-execution",
+      "query_count": 1,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "verification-kernel-transfer-outside-gr",
+      "query_count": 8,
+      "required_source_count": 8,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "car-scaffolds-vs-hodge-operator-claims",
+      "query_count": 28,
+      "required_source_count": 28,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "top-hodge-inverse-spectral-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "dense-operator-scene-reconstruction-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "scoped-nogo-vs-positive-existence",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-affine-carrier-parameter-recovery",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-julia-null-chart-inverse",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "julia-query-principal-frame-coframe-recovery",
+      "query_count": 26,
+      "required_source_count": 16,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-hermitian-adjoint-twisted-car-application",
+      "query_count": 11,
+      "required_source_count": 12,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "real-unit-profile-weighted-hermitian-bridge",
+      "query_count": 18,
+      "required_source_count": 19,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "native-weighted-dirac-matrix-application",
+      "query_count": 18,
+      "required_source_count": 13,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "archive-phase-shift-reuses-transitive-permutation-theorem",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    }
+  ]
+}

@@ -14,9 +14,265 @@
 
 
 > Scope: Finite spectral geometry, horizon/seam law, spin-2 carrier, finite gravity limits, and laboratory channel-clearing bridges.
-> Claim discipline: Gravity closure is internal; astrophysical and laboratory analogues remain bridges/passports unless separately certified.
+> Claim discipline: Finite geometric results retain their stated scope; the actual native source, physical realization and full GR refinement remain open. Astrophysical and laboratory comparisons retain their own bridge/passport conditions.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
 
+
+## Current synthesis: nonlinear gravity, complete source and physical realization
+
+The strongest current route uses an explicit nonlinear solution and asks
+which actual D0 execution supplies its complete source. It connects the
+accepted generic verification/transfer applications to a configured finite
+geometric action, a common metric readout and physical execution. Earlier
+finite heat, stress, TT and horizon results in this book remain available;
+their composition is not by itself a proof that the complete native action
+selects Einstein gravity. The [primary positive case](../02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)
+and [closure contract](../02_REGISTRY/research/D0_GR_CLOSURE_CONTRACT_RU.md)
+state this boundary explicitly. `GR_closed=false`.
+
+### One fixed nonvacuum metric, exact finite equations on every mesh
+
+The original finite Cartan system varies all 16 coframe and 24 proper-Lorentz
+link components independently at each free site. Its configured Golden-J2
+material source adds two real CAR component equations. On the common null
+Brinkmann family,
+
+\[
+g=2\,du\,dv+H(u,x,y)\,du^2-dx^2-dy^2,
+\qquad
+H=-\lambda|\Psi'(u)|^2(x^2+y^2)+W(u,x,y),
+\]
+
+the permitted quadratic and cubic transverse harmonic terms in \(W\) have
+arbitrary smooth time coefficients. The actual original reporter gives
+\(\lambda=\lambda_-(2^{-20})\), approximately \(-23.416406751884\), in
+this convention. The resulting continuum fields solve
+\(G_{\mu\nu}=-\lambda T_{\mu\nu}\),
+\(T_{\mu\nu}=2|\Psi'|^2(du)_\mu(du)_\nu\), and
+\(\Box_g\Psi=0\). This is the supplied mathematical action's coefficient,
+not a fitted gravitational constant.
+
+The independent Cartan rows force a one-time-step null-link stagger. With the
+original midpoint readout and the actual CAR increments
+\(\Psi^h_{j+1}-\Psi^h_j=h\Psi'(u_j+h/2)\), the remaining finite equation is
+
+\[
+\Delta_h^\perp H_h(u_{j+1})=-4\lambda|D_u^+\Psi_j^h|^2.
+\]
+
+The same five-point stencil annihilates the stated harmonic polynomials
+exactly. All 16+24+2 original interior Euler rows therefore vanish at every
+mesh in this configured family; the metric is sampled from one fixed smooth
+geometry, and the specified matter recovery has \(O(h^2)\) error. The
+[complete midpoint proof](../02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
+also states its analytic harmonic extension and boundary hypotheses. It is a
+constructive one-sided recovery result, with no inference of universal
+soundness, periodic global completion or compulsory native action selection.
+
+A distinct published result establishes a strict interval-certified nonflat
+root of all 42 equations for the original unequally priced `0/10` reporter on
+one specified two-cell rational collar. Its continuation theorem covers an
+additional continuous full42 source bounded by \(10^{-22}\) on the original
+radius-\(10^{-20}\) cube; the stated Lipschitz bound gives uniqueness. The
+actual remaining physical source has not been proved to meet that budget.
+This [unpadded finite-root and robustness result](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md)
+is not the every-mesh theorem above. Neither result should be presented as
+the other's missing uniform estimate. Its indefinite saddle also separates
+stationarity from a full-field minimum.
+
+### Observation of the geometry and selection of its source are different maps
+
+The [global result composition](../02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+gives actual observation-to-geometry maps on this family. Original CAR future
+probabilities reconstruct the specified polynomial metric on five or nine
+macroscopic sites, with an explicit sensitivity and curvature error bound.
+Six original Julia odds reconstruct a based holonomy in a strict local chart;
+substitution into the six-face formula recovers the entire soldered star
+density and its ambient coframe/link derivatives. The observation map does
+not install the Einstein equation in the decoder.
+
+Those identities provide a consumer for VerificationCore and TheoryTransfer:
+preserving the specified admitted future profiles preserves the reconstructed
+geometry. They do not declare all geometric variations executable from one
+initial state, or identify decoded density with absolute Book price.
+Compiler records, repeated queries, preparation and actual work can carry a
+source even when normalized odds are unchanged. The same composition computes
+these discrepancies rather than discarding them as internal bookkeeping.
+
+### The complete cut-price source now has an explicit application
+
+The following continuation is mathematical research in Draft
+[#334](https://github.com/gvakhrushev/d0_15/pull/334), pinned to published
+snapshot `eebcb5e467742df3e9cf7fa9702042d7294aa742`; inclusion here does not
+change its scientific acceptance. For the specified original coherent READY
+comparison and cut-Hodge heat, the complete action includes every harmonic
+mode, actual work dimension and the 128-fold oldRIGHT spectator:
+
+\[
+B_C=\beta^{-1}\log(sZ)-s\sum_{j\in\mathrm{active}}
+       \log[1-\zeta f(q_j)],\quad
+Z=MW-2m+2\sum_{j\in\mathrm{active}}e^{-\beta f(q_j)},
+\quad f(q)=4q(1-q),\ s=128.
+\]
+
+Here \(M\) is the fine-label count, \(W\) the full non-RIGHT work dimension,
+and \(m\) the number of active statuses; dormant coordinates and harmonic
+modes remain included. The owned apparatus uses
+\(p=\varphi^{-1}\), \(\beta=2p^2\), and \(\zeta=2^{-20}\).
+Differentiating the full normalizer gives
+
+\[
+DB_C=\sum_j
+\left[\frac{s\zeta}{1-\zeta f(q_j)}
+      -\frac{2e^{-\beta f(q_j)}}{Z}\right]f'(q_j)\,Dq_j.
+\]
+
+The actual nonuniform PF weights and their inverse-density reporter map then
+give, on the common-null field family \(\Sigma\),
+
+\[
+D_{42}B_C|_\Sigma
+ =G_h\bigl(D F_h+\lambda D Q_h\bigr)|_\Sigma
+ =\frac{G_h}{\gamma_h}D_{42}J_2|_\Sigma,
+\qquad G_h>0,\quad\gamma_h\ne0.
+\]
+
+These are ambient first derivatives taken before restriction to the family.
+A report constant along the family can still have a nonzero transverse
+source. For the owner's original n20 interface, \(M=72441\),
+\(W\ge50549\), and \(0<r_0<1/2\), the relative thermal-correction bound
+\(\eta<1/80000\) proves nonzero gain. This sign conclusion is not asserted
+for arbitrary heat parameters or counts. Thus the already owned
+Einstein/CAR roots solve every field row of this complete **specified cut
+candidate**. The [full-source application](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md)
+proves this substitution. It does not identify all possible Book heat
+operators with this cut-Hodge operator; its explicit intrinsic-heat
+countercontrol explains why that identification needs a real map.
+
+The same proof supplies a useful exact internal-state lift. For a genuinely
+fixed-initial protocol \(X_{k+1}=V_k(y)X_k\), retain the full price gradients
+\(g_k\) and set
+
+\[
+\lambda_N=-g_N,\qquad
+\lambda_k=V_k^\dagger\lambda_{k+1}-g_k.
+\]
+
+The generated-state Euler equations then vanish, and the remaining field
+source is precisely the derivative of the same executed price. A separately
+variable input not generated by the protocol still contributes its own
+equation. Declaring that input fixed after observing a nonzero source would
+not be this theorem's application. The proof also does not supply a missing
+native implementation of arbitrary \(V_k(y)\).
+
+### General smooth-source comparison and the finite-test limit
+
+A later [density-involution composition](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md)
+extends the specified source comparison beyond the common-null solution
+ansatz. For \(E=\det e>0\), put
+\(\widetilde e=E^{-1/2}e\) and \(\widetilde g=g/E\). This map is an
+involution with nonzero full 16-component Jacobian; it converts both the
+actual inverse-coframe geometric numerator and the massless matter moment
+to the corresponding Palatini/scalar densities. On the declared bounded
+smooth charts, the actual full positive-effect attenuation tends to zero,
+and the complete price normalized by its genuine gain satisfies
+
+\[
+\frac{DB_h}{G_h}\longrightarrow D S_{\mathrm{Palatini+scalar}}.
+\]
+
+This is a first-source convergence theorem with its actual source norm.
+It does not follow merely from convergence of action values. The transformed
+metric has a different volume/length reading in general; adopting it as the
+physical metric requires the operational dictionary and induced coordinate
+law stated by the owner. Exact-root existence, compactness and arbitrary
+UV/raw216 variations are not conclusions of the smooth-source estimate.
+
+The [native compilation and full-clock application](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_NATIVE_CLOCK_FULL_PRICE_COMPILATION_AND_FINITE_TEST_RECOVERY_2026_10_27.md)
+constructs finite addressed Golden/CNOT approximations on the entire supplied
+register. Its prefix-generated cut and complete scene/clock heat give, for a
+finite normalized source contrast,
+
+\[
+|T_{\mathrm{compiled}}(y;v)-DS(y)[v]|
+ \le E(h)+\frac{H t}{2}
+       +\frac{L_{\mathrm{clock}}\delta}{G_h t}.
+\]
+
+Here \(E(h)\) is the actual smooth-source consistency error, \(t\) the
+comparison step, and \(\delta\) the full-register compiler error. The
+possibly small gain \(G_h\) cannot be suppressed from the bound. This
+supports both recovery of finite test witnesses for supplied computable
+smooth solutions and conditional soundness for sufficiently regular
+convergent witnesses. It does not construct exact roots at every mesh or a
+single physically selected compatible history tower. The elementary
+counterexample \(S_h(x)=x^3/3+hx\), \(h>0\), has arbitrarily small
+limiting source but no finite stationary root; the owner keeps that control
+explicit.
+
+### What a universal Einstein conclusion still requires
+
+The [two-witness Lovelock route](../02_REGISTRY/research/A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md)
+is conditional on one selected gravitational Euler source being metric-only,
+locally diffeomorphism-natural, symmetric, off-shell conserved and genuinely
+second-order. Its flat and sourced witnesses then determine the Einstein
+class and coefficient ratio. Agreement on the entire Brinkmann family does
+not prove those hypotheses: the Euler tensor of an added \(R^2\) action
+vanishes on that family while changing the general equation class.
+
+The separate [Golden blow-up route](../02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)
+uses metric-only local naturality, flat-section differentiability, off-shell
+conservation and one actual physical scale law
+\(\mathcal E[\varphi^2g]=\mathcal E[g]\). It can replace the separate
+second-order premise within its own theorem. The internal Bratteli ratio is
+not this physical metric-scale law. These are alternative sufficient
+universality routes, not extra universal prerequisites for a first faithful
+curved example.
+
+The latest [moving-cut root identity](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md)
+provides an exact derivative of the original heat-plus-logdet action when
+the active projector, operation and heat operator move together. Book 03
+states its covariant formula. It removes passive simultaneous re-encoding;
+it retains real relative motion of the cut. Applying it to this book's
+all42 or raw216 equations still requires the actual field map and norm
+transport. Matrix dimensions or a zero pure-gauge derivative supply neither.
+
+An additional [conditional refoliation theorem](https://github.com/gvakhrushev/d0_15/blob/c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a/02_REGISTRY/research/A4D_ROOT_CUT_TO_REFOLIATION_CLOSURE_2026_10_28.md)
+selects the full Einstein–two-scalar/sigma-model action within a declared
+local, spatially covariant canonical class. It assumes a spatial three-metric
+and its canonical momentum, two scalar pairs, a supplied symplectic form,
+smooth even ultralocal gravitational kinetics, a curvature potential
+`-b sqrt(q) R` with `b != 0`, and separate scalar kinetics with quadratic
+spatial gradients and a symmetric invertible field-space matrix. Boundary
+terms vanish on a closed spatial slice or for the stated compactly supported
+tests. Mixed momentum terms, extra canonical pairs and higher spatial
+derivatives are outside this class. Requiring the strong deformation algebra
+`{H[N],H[M]} = D[q^{ij}(N partial_j M - M partial_j N)]` for all smooth
+lapses before imposing constraints forces the DeWitt trace coefficient
+`1/2`, reciprocal gravitational coefficients, and mutually inverse scalar
+kinetic matrices. Quadratic momentum dependence is derived within this
+class. Eliminating the momenta then gives the full action while retaining
+the lapse and shift constraints; Newton normalization, the cosmological
+constant, scalar potential and field-space metric remain undetermined.
+
+For D0, the native symplectic data, normal/tangential generators, physically
+admitted lapse family and clock normalization, local continuum class and
+controlled bracket limit must still come from the same original execution.
+The published Fourier/automatic-differentiation controls use all six metric
+components but fields depending on one spatial coordinate; they are not an
+original D0 lattice replay. This conditional law-selection result neither
+supplies new finite all42 roots nor closes their physical realization or
+uniform refinement. `GR_closed=false`.
+
+The remaining physical composition is therefore precise: establish the
+admitted same-initial preparations and variations, bind the actual complete
+heat/feedback/work/clock action or prove a source-equivalent transport, retain
+every independent internal equation, and meet the intended fixed-metric
+refinement and source norm. A full-field minimum is not interchangeable with
+stationarity; the [owned minimum exclusion](../02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
+already rules out that shortcut for its source-preserving class. Existing
+research owner #334 and the original `positive_gr` and raw216 obligations
+remain in place.
 
 ## 07.0 Active gravity/QG sector law
 
@@ -1330,10 +1586,18 @@ The non-vacuous scalar reduction is successfully closed at its Lean owner via th
 
 ```text
 scalar_stationarity_implies_archive_poisson:
-  ScalarSectorStationary n φ ρ → ArchivePoissonEquation φ ρ
+  ScalarSectorStationary n φ ρ →
+  NeutralSource ρ →
+  ArchivePoissonEquation φ ρ
 ```
 
-The predicate `ScalarSectorStationary` is a non-vacuous point-test stationarity condition, completing the weak-field reduction proof.
+The neutrality premise is necessary. `ScalarSectorStationary` tests only
+zero-sum perturbations, so it forces the Poisson residual to be constant; the
+neutral-source condition makes that constant zero. Lean also gives the exact
+counterexample `scalar_stationarity_without_neutrality_counterexample`: for
+`n = 0`, `φ = 0`, and `ρ = 1`, scalar stationarity holds while neutrality and
+the Poisson equation both fail. The weak-field reduction is therefore closed
+for neutral sources; the unconditional implication is false.
 
 ## 07.33 Final finite-geometry theorem chain
 
@@ -1359,7 +1623,7 @@ Machine ownership:
 | admissible variations see only the symmetric representative | `CORE-CLOSED` | `D0.pairing_depends_only_on_symmetric_part` |
 | canonical stress representative is symmetric and variation-equivalent | `CORE-CLOSED` | `D0.raw_gradient_equivalent_to_canonical_stress`; `D0.canonical_stress_symmetric` |
 | Poisson solvability requires neutral source and is unique modulo constants | `CORE-CLOSED` | `D0.poisson_requires_neutral_source`; `D0.poisson_solution_unique_mod_constant` |
-| scalar stationarity implies archive Poisson | `CORE-CLOSED` | `D0.scalar_stationarity_implies_archive_poisson` |
+| scalar stationarity plus neutral source implies archive Poisson | `CORE-CLOSED` under `NeutralSource ρ` | `D0.scalar_stationarity_implies_archive_poisson`; `D0.scalar_stationarity_without_neutrality_counterexample` refutes the unconditional form |
 | vector and edge equations have closed operator origins | `CORE-CLOSED` | `D0.Bridge.vector_operator_origin_closed`; `D0.Bridge.edge_stiffness_origin_closed` |
 | finite TT representative is symmetric, trace-free and transverse | `CORE-CLOSED` | `D0.Geometry.finite_spin2_tt_carrier_closed` |
 | weak-field gauge/trace quotient yields the TT representative | `CORE-CLOSED` | `D0.Geometry.finite_weak_field_quotient_yields_tt_representative` |
@@ -1369,8 +1633,9 @@ Machine ownership:
 | continuum Einstein-Hilbert reading | `BRIDGE-CALIBRATION` | finite spectral ladder plus declared smooth/continuum bridge |
 
 Thus the active scalar equation uses a point-test stationarity predicate with
-direct Lean ownership, and the continuum Einstein language remains a bridge
-calibration rather than a core smooth-manifold theorem.  The `a0/a2` trace
+direct Lean ownership and an explicit neutral-source premise, and the
+continuum Einstein language remains a bridge calibration rather than a core
+smooth-manifold theorem. The `a0/a2` trace
 ratio is a dimensionless `CORE-CLOSED` finite spectral shape.  Any `c0/c2` SI
 coefficient ratio belongs to `ExternalSICalibration`; `H0`, `G_N` and `Lambda`
 are not outputs of `DimensionlessCoreTraces`.
@@ -1718,10 +1983,12 @@ and spectral A2/EH proxy are all frozen.
 
 ## 07.40 Entropic archive to macro Einstein interface
 
-D0 gravity is the finite archive macro-interface.  The continuum Einstein
-equation is not inserted as a primitive.  It is the macro class compatible with
-finite information conservation, symmetric stress readout, second-order finite
-readout, TT spin-2 coupling and higher-curvature suppression.
+This section packages a finite archive macro-interface. The continuum Einstein
+class is a conditional reading when the required conservation, naturality,
+source-order and realization hypotheses hold for the same selected complete
+source. The finite stress, TT and heat witnesses below do not by themselves
+establish those physical hypotheses; the current nonlinear synthesis above
+states the actual source and refinement obligations.
 
 The final gravity chain is:
 
@@ -1785,9 +2052,10 @@ factor `A/4` is read as ABCD boundary capacity: four terminal detector roles
 count boundary distinguishability in quarter-cut units.  The macro Einstein
 interface remains the downstream bridge after this finite heat/capacity witness.
 
-Higher-curvature terms are not forbidden metaphysically. They are below finite
-D0 readout threshold in the macro interface and therefore cannot act as leading
-gravity law.
+The registered finite-cut estimates bound their stated higher-curvature terms
+under their own hypotheses. They do not exclude every off-shell correction to
+the selected physical action. In particular, the current two-witness result
+retains the explicit R² counterexample described above.
 
 The compact statement is:
 
@@ -1800,7 +2068,9 @@ give the finite spin-2 carrier.
 At the macro level: any compatible gravity interface must be symmetric,
 divergence-free, second-order under finite readout, and compatible with TT
 stress coupling.
-Therefore the Einstein-Hilbert / Einstein tensor class is the macro-interface (finite A2 variation + Bianchi selects the class; this is closed finite-response status, not bridge calibration).
+The finite A2 and Bianchi witnesses support this interface at their registered
+scope. A universal Einstein identification still requires the same full-source
+and continuum hypotheses stated in the current nonlinear synthesis above.
 ```
 
 **[Iter27 — the finite A2 Einstein sector carries TWO exact tensors, joined by one identity (`D0-SPECTRAL-EINSTEIN-001` CORE_BRIDGE_SPLIT + `D0-A2-EINSTEIN-DIVERGENCE-OBSTRUCTION-NOGO-001`; cert `einstein_field_eq_check.py`, exact ℚ, post-skeptic).** The a2 metric response `G_A2 = ∂S_A2/∂h = 4h_ij/(ρ_iρ_j)` is symmetric but NOT archiveDivergence-free: `(div G_A2)_j = 4·deg_M(j)` — on the frozen scene `4·deg(j) = {96,88,80}` — the NO-GO row. The conserved object is `G = 2L` (einsteinResponse, Laplacian-Bianchi) — the LEAN_PROVED row. These are two halves of ONE exact identity: with `M_ij = h_ij/(ρ_iρ_j)`, `D_M` its degree diagonal, `L_M = D_M − M`,

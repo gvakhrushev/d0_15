@@ -3,6 +3,8 @@
 from __future__ import annotations
 import copy
 import re
+from pathlib import Path
+import tempfile
 import unittest
 from unittest.mock import patch
 import generate_lean_views as gen
@@ -102,6 +104,12 @@ class RenderingTests(unittest.TestCase):
         self.assertIn('releaseStatus := "PROOF-TARGET"', text)
         self.assertIn('status := ClaimStatus.openObligation', text)
 
+    def test_registry_assumption_ids_survive_in_generated_claimmap(self):
+        data=row(uses_bridge_assumptions='true', assumption_ids='ASSUMP-A, ASSUMP-B')
+        with patch.object(gen, 'rows', return_value=[data]): text=gen.render_claimmap()
+        self.assertIn('assumptionIds := ["ASSUMP-A", "ASSUMP-B"]', text)
+        self.assertIn('def claimMapAssumptionIds (claimId : String) : List String', text)
+
     def test_names_are_preserved_not_interpreted_as_proofs(self):
         data=row(lean_module='D0.A;D0.B',lean_theorem='foo;Bar.baz')
         with patch.object(gen,'rows',return_value=[data]): text=gen.render_claimmap()
@@ -122,6 +130,23 @@ class RenderingTests(unittest.TestCase):
         self.assertEqual(gen.render_claimmap(),gen.render_claimmap())
         self.assertEqual(gen.render_all(),gen.render_all())
 
+    def test_generated_view_preserves_existing_newline_style(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            crlf_path = root / 'All.lean'
+            crlf_path.write_bytes(b'old\r\n')
+            gen.write_generated_view(crlf_path, 'import D0.Example\n\n')
+            self.assertEqual(crlf_path.read_bytes(), b'import D0.Example\r\n\r\n')
+
+            lf_path = root / 'ClaimMap.lean'
+            lf_path.write_bytes(b'old\n')
+            gen.write_generated_view(lf_path, 'namespace D0\nend D0\n')
+            self.assertEqual(lf_path.read_bytes(), b'namespace D0\nend D0\n')
+
+            new_path = root / 'New.lean'
+            gen.write_generated_view(new_path, 'import D0.New\n')
+            self.assertEqual(new_path.read_bytes(), b'import D0.New\n')
+
     def test_all_actual_open_obligations_stay_open(self):
         for r in gen.rows('claims.csv'):
             if r['release_status'] in gen.OPEN_RELEASE_STATUSES:
@@ -136,6 +161,26 @@ class RenderingTests(unittest.TestCase):
         for r in rows:
             self.assertIn('leanStatus := "'+gen.esc(r['lean_status'].strip())+'", '
                           'releaseStatus := "'+gen.esc(r['release_status'].strip())+'"',text)
+        bridge = next(r for r in rows if r['claim_id'] == 'D0-LEAN-BRIDGE-001')
+        bridge_entry = text.split('claimId := "D0-LEAN-BRIDGE-001"', 1)[1].split(
+            '    { claimId :=', 1
+        )[0]
+        rendered_ids = ', '.join(f'"{gen.esc(item)}"' for item in gen.assumption_ids(bridge))
+        self.assertIn(f'assumptionIds := [{rendered_ids}]', bridge_entry)
+
+    def test_actual_entries_preserve_all_registry_assumption_ids(self):
+        text=gen.render_claimmap()
+        rows=[r for r in gen.rows('claims.csv') if r['lean_module'].strip()]
+        for r in rows:
+            entry = text.split(f'claimId := "{gen.esc(r["claim_id"])}"', 1)[1].split(
+                '    { claimId :=', 1
+            )[0]
+            ids = gen.assumption_ids(r)
+            if ids:
+                rendered_ids = ', '.join(f'"{gen.esc(item)}"' for item in ids)
+                self.assertIn(f'assumptionIds := [{rendered_ids}]', entry, r['claim_id'])
+            else:
+                self.assertNotIn('assumptionIds :=', entry, r['claim_id'])
 
     def test_import_closure_sorted_and_unique(self):
         imports=re.findall(r'^import (.+)$',gen.render_all(),re.M)

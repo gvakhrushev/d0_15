@@ -1,0 +1,96 @@
+{
+  "D0_native_lapse_generators_constructed": false,
+  "D0_native_symplectic_form_constructed": false,
+  "D0_root_closure_proved": false,
+  "GR_closed": false,
+  "correct_family": [
+    {
+      "D_gravity": -0.06677380650699137,
+      "D_matter": -0.17612439456630494,
+      "discretization_error": 1.2053409353951494e-08,
+      "geometric_closure_defect": -1.2053409298440343e-08,
+      "n": 17,
+      "poisson_bracket": -0.2428982131267056,
+      "predicted_bracket": -0.24289820107329624,
+      "predicted_closure_defect": 5.551115123125783e-17,
+      "trace_witness": 0.038569205161936765
+    },
+    {
+      "D_gravity": -0.06677382611311737,
+      "D_matter": -0.1761243927305912,
+      "discretization_error": 3.608224830031759e-16,
+      "geometric_closure_defect": 4.163336342344337e-16,
+      "n": 33,
+      "poisson_bracket": -0.24289821884370813,
+      "predicted_bracket": -0.2428982188437085,
+      "predicted_closure_defect": 5.551115123125783e-17,
+      "trace_witness": 0.038569228149474166
+    },
+    {
+      "D_gravity": -0.06677382611311761,
+      "D_matter": -0.1761243927305911,
+      "discretization_error": 5.551115123125783e-17,
+      "geometric_closure_defect": 1.1102230246251565e-16,
+      "n": 65,
+      "poisson_bracket": -0.2428982188437086,
+      "predicted_bracket": -0.24289821884370866,
+      "predicted_closure_defect": 5.551115123125783e-17,
+      "trace_witness": 0.03856922814947461
+    }
+  ],
+  "exact": {
+    "cut_curvature_nonzero": true,
+    "gravity_witness_integral": "-2*pi",
+    "lambda_witness_integral": "pi",
+    "matter_witness_integral": "pi",
+    "symbolic_tests": 10
+  },
+  "negative_controls": {
+    "gravity_speed": {
+      "D_gravity": -0.06677382611311761,
+      "D_matter": -0.1761243927305911,
+      "discretization_error": 5.551115123125783e-17,
+      "geometric_closure_defect": -0.012687026961492265,
+      "n": 65,
+      "poisson_bracket": -0.255585245805201,
+      "predicted_bracket": -0.25558524580520103,
+      "predicted_closure_defect": -0.01268702696149232,
+      "trace_witness": 0.03856922814947461
+    },
+    "matter_matrix": {
+      "D_gravity": -0.06677382611311761,
+      "D_matter": -0.1761243927305911,
+      "discretization_error": 1.1102230246251565e-16,
+      "geometric_closure_defect": -0.050566414700031814,
+      "n": 65,
+      "poisson_bracket": -0.2934646335437405,
+      "predicted_bracket": -0.2934646335437404,
+      "predicted_closure_defect": -0.0505664147000317,
+      "trace_witness": 0.03856922814947461
+    },
+    "quartic_kinetic": {
+      "D_gravity": -0.06677382611311761,
+      "D_matter": -0.1761243927305911,
+      "discretization_error": 8.326672684688674e-17,
+      "geometric_closure_defect": 0.0026955887206142892,
+      "n": 65,
+      "poisson_bracket": -0.24020263012309442,
+      "predicted_bracket": -0.24020263012309434,
+      "predicted_closure_defect": 0.0026955887206143725,
+      "trace_witness": 0.03856922814947461
+    },
+    "trace_coefficient": {
+      "D_gravity": -0.06677382611311761,
+      "D_matter": -0.1761243927305911,
+      "discretization_error": 2.7755575615628914e-17,
+      "geometric_closure_defect": 0.0138849221338109,
+      "n": 65,
+      "poisson_bracket": -0.2290132967098978,
+      "predicted_bracket": -0.22901329670989778,
+      "predicted_closure_defect": 0.013884922133810929,
+      "trace_witness": 0.03856922814947461
+    }
+  },
+  "scope": "conditional continuum Hamiltonian class; numerical controls are NOT native D0",
+  "status": "PASS_CONDITIONAL_REFOLIATION_CLOSURE"
+}

@@ -1,0 +1,77 @@
+{
+  "checker_sha256": "de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88",
+  "execution": {
+    "checks": 171,
+    "python": "3.12.14",
+    "status": "PASS",
+    "sympy": "1.14.0"
+  },
+  "local_matches_owner_receipt_byte_for_byte": true,
+  "local_normal_optimized_byte_identical": true,
+  "owner_receipt_sha256": "21e2008f370c4dfc87e52ed98425ca3f2a1361cf7ae18f6727674cb7dcf38522",
+  "packet_files": [
+    {
+      "bytes": 12248,
+      "path": "check_7di_offcopy.py",
+      "sha256": "de29e556ac1e4fe7a4881fb5e26f7fe0287a99c85b6f2cd5c9396192a8213f88"
+    },
+    {
+      "bytes": 9123,
+      "path": "replay/normal.json",
+      "sha256": "21e2008f370c4dfc87e52ed98425ca3f2a1361cf7ae18f6727674cb7dcf38522"
+    },
+    {
+      "bytes": 9123,
+      "path": "replay/optimized.json",
+      "sha256": "21e2008f370c4dfc87e52ed98425ca3f2a1361cf7ae18f6727674cb7dcf38522"
+    },
+    {
+      "bytes": 9123,
+      "path": "replay/owner_receipt.json",
+      "sha256": "21e2008f370c4dfc87e52ed98425ca3f2a1361cf7ae18f6727674cb7dcf38522"
+    },
+    {
+      "bytes": 12660,
+      "path": "replay/repo/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "sha256": "ad52eefb17dbdeb2e97e94e0b359f672ec6961cd630d41dd713a21ec87ef6933"
+    },
+    {
+      "bytes": 4901,
+      "path": "replay/repo/02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
+      "sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee"
+    },
+    {
+      "bytes": 43429,
+      "path": "replay/repo/02_REGISTRY/research/sources/d0_apparatus_cotangent_descent_2026-10-28/PROOF_RU.md",
+      "sha256": "1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254"
+    },
+    {
+      "bytes": 17833,
+      "path": "replay/repo/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  ],
+  "previous_head": "1f4b85f14292dfac07f61db27ff47a961e525d03",
+  "replay_source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md §7di954–960",
+  "schema": "d0-334-offcopy-frame-replay/1",
+  "scope": "Exact AF placement and guarded first-source extension; not physical primitive admission, all X_N, exact finite stationary word or GR closure.",
+  "source_commit": "fd35893d77e4aa5f819bafa0c6428c8e7a8f1812",
+  "source_inputs": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "git_blob": "96710693540a218014d1ff722dee4c24d0b2d1a5",
+      "sha256": "96a6d30497346dbf635396d873590b77f0f659f658346eb86cbec129b3995b3e"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py": {
+      "git_blob": "47761f34bfffb4fe104ca66e0e1b61a509b9bc7a",
+      "sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee"
+    },
+    "02_REGISTRY/research/sources/d0_apparatus_cotangent_descent_2026-10-28/PROOF_RU.md": {
+      "git_blob": "8325834fc09fdd9cd8f278d3bcd6fbd97833253d",
+      "sha256": "1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254"
+    },
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": {
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  }
+}

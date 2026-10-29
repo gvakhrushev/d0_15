@@ -1,0 +1,401 @@
+{
+  "key": "D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001",
+  "matches": [
+    {
+      "item": {
+        "kind": "claim-metadata",
+        "key": "D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001",
+        "label": "BOOK_06 §06.spectral No-go on naive variable-frame differential d_w = sqrt(w) d due to degree leakage",
+        "source": "02_REGISTRY/claims.csv",
+        "record": {
+          "claim_id": "D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001",
+          "book": "BOOK_06",
+          "section": "06.spectral No-go on naive variable-frame differential d_w = sqrt(w) d due to degree leakage",
+          "lean_module": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
+          "lean_theorem": "archive_naive_weighted_degree_leakage_nogo_owner",
+          "lean_status": "LEAN_PROVED",
+          "uses_bridge_assumptions": "False",
+          "assumption_ids": "",
+          "python_cert": "",
+          "release_status": "NO-GO",
+          "notes": "No-go proving that naive weight insertion d_w = sqrt(w) d breaks nilpotency and causes spurious form-degree leakage [A_r, A_s] c_r† c_s†, demonstrating that geometry must deform the inner product rather than the differential (archive_naive_weighted_degree_leakage_nogo_owner)."
+        },
+        "search_terms": [
+          "D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001",
+          "BOOK_06",
+          "06.spectral No-go on naive variable-frame differential d_w = sqrt(w) d due to degree leakage",
+          "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
+          "archive_naive_weighted_degree_leakage_nogo_owner",
+          "No-go proving that naive weight insertion d_w = sqrt(w) d breaks nilpotency and causes spurious form-degree leakage [A_r, A_s] c_r† c_s†, demonstrating that geometry must deform the inner product rather than the differential (archive_naive_weighted_degree_leakage_nogo_owner)."
+        ]
+      },
+      "declared_applications": [],
+      "declared_result": null,
+      "target_obligation": null,
+      "target_interface": null,
+      "registered_assumptions": [],
+      "scoped_attempts": [
+        {
+          "id": "phase-count-shortcut",
+          "result": "phase-count-counterexample",
+          "interface": "resonance-divisor-v1",
+          "work_key": "phase-count-nullity-shortcut",
+          "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+          "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+          "question": {
+            "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+            "assumes": []
+          }
+        },
+        {
+          "id": "dmin-canonicality-source-bound-inference",
+          "result": "dmin-canonicality-source-bound-countermodel",
+          "interface": "complete-history-code-source-v1",
+          "work_key": "dmin-same-object-competitive-source",
+          "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+          "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+          "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+          "question": {
+            "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+            "assumes": [
+              "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+              "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+              "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+            ]
+          },
+          "review": {
+            "state": "proposed"
+          }
+        },
+        {
+          "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+          "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+          "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+          "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+          "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+          "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+          "question": {
+            "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+            "assumes": [
+              "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+              "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+              "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+            ]
+          }
+        },
+        {
+          "id": "double-null-degree5-ward-selected-rref",
+          "result": "double-null-degree5-selected-rref-ward-obstruction",
+          "interface": "double-null-degree5-coframe-gradient-ward-v1",
+          "work_key": "double-null-selected-rref-degree5-ward-extension",
+          "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+          "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+          "question": {
+            "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+            "assumes": [
+              "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+              "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+              "The fifth-order Lorentz exponential includes all terms through degree five."
+            ]
+          }
+        }
+      ],
+      "conceptual_presupposition_edges": [],
+      "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+    }
+  ],
+  "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
+  "source_digests": {
+    "02_REGISTRY/claims.csv": "d86d7965f0cf64164cdf7536a4fb5119ec9655e5b5082e3bbe34ce6459d35003",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "2dafb07d868faf7d911909ebb0182a447b116bd11751aa76f51ac5e416f346fb",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "a493c0161b2f39ec14925e38131f7c2d240cd07bd2e27404a35098bc96eb0dc8",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "compiled_claim_reuse": [
+    {
+      "claim_id": "D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001",
+      "claim_locator_mappings": [
+        {
+          "claim_id": "D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001",
+          "module_locator": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
+          "theorem_atom": "archive_naive_weighted_degree_leakage_nogo_owner",
+          "candidate_names": [
+            "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo.archive_naive_weighted_degree_leakage_nogo_owner",
+            "D0.Geometry.archive_naive_weighted_degree_leakage_nogo_owner",
+            "D0.archive_naive_weighted_degree_leakage_nogo_owner"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1",
+                "D0.Geometry.carCreateInt_singleton_vacuum._native.native_decide.ax_1_1",
+                "D0.Geometry.carCreateInt_support._native.native_decide.ax_1_1",
+                "D0.Geometry.naiveWeightTestPairState_degree_two._native.native_decide.ax_1_1",
+                "Quot.sound",
+                "_private.D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo.0.D0.Geometry.carCreate_pair_A_singletonB._native.native_decide.ax_1_1",
+                "_private.D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo.0.D0.Geometry.carCreate_pair_B_singletonA._native.native_decide.ax_1_1",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.HomogeneousCochain 1 2\n            (D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))) ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n              1 ∧\n            D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n              0",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 54,
+                    "line": 528
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 509
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 56,
+                    "line": 511
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 511
+                  }
+                }
+              },
+              "elaborated_type": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.HomogeneousCochain 1 2\n            (D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))) ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n              1 ∧\n            D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n              0",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
+              "name": "D0.Geometry.archive_naive_weighted_degree_leakage_nogo_owner",
+              "proof_dependencies": [
+                "D0.Geometry.archive_naive_weighted_car_degree_leakage_nogo_owner"
+              ],
+              "type_dependencies": [
+                "And",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.HomogeneousCochain",
+                "D0.Geometry.fockDegree",
+                "D0.Geometry.naiveWeight0",
+                "D0.Geometry.naiveWeight1",
+                "D0.Geometry.naiveWeightTestOrigin",
+                "D0.Geometry.naiveWeightTestPairState",
+                "D0.Geometry.naiveWeightTestScalarProfile",
+                "D0.Geometry.naiveWeightedCubicalDifferential",
+                "D0.Geometry.scalarCochain",
+                "D0.Role",
+                "Eq",
+                "Fin.fintype",
+                "Fintype.card",
+                "Nat",
+                "Ne",
+                "OfNat.ofNat",
+                "One.toOfNat1",
+                "Prod.mk",
+                "Real",
+                "Real.instOne",
+                "Real.instZero",
+                "Real.sqrt",
+                "Zero.toOfNat0",
+                "instFintypeProd",
+                "instOfNatNat"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveNaiveWeightedDegreeLeakageNoGo.lean"
+            }
+          ]
+        }
+      ],
+      "compiled_declarations": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1",
+            "D0.Geometry.carCreateInt_singleton_vacuum._native.native_decide.ax_1_1",
+            "D0.Geometry.carCreateInt_support._native.native_decide.ax_1_1",
+            "D0.Geometry.naiveWeightTestPairState_degree_two._native.native_decide.ax_1_1",
+            "Quot.sound",
+            "_private.D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo.0.D0.Geometry.carCreate_pair_A_singletonB._native.native_decide.ax_1_1",
+            "_private.D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo.0.D0.Geometry.carCreate_pair_B_singletonA._native.native_decide.ax_1_1",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.HomogeneousCochain 1 2\n            (D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))) ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n              1 ∧\n            D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n              0",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 54,
+                "line": 528
+              },
+              "start": {
+                "column": 0,
+                "line": 509
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 56,
+                "line": 511
+              },
+              "start": {
+                "column": 8,
+                "line": 511
+              }
+            }
+          },
+          "elaborated_type": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.HomogeneousCochain 1 2\n            (D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))) ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n              1 ∧\n            D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n              0",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
+          "name": "D0.Geometry.archive_naive_weighted_degree_leakage_nogo_owner",
+          "proof_dependencies": [
+            "D0.Geometry.archive_naive_weighted_car_degree_leakage_nogo_owner"
+          ],
+          "type_dependencies": [
+            "And",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.HomogeneousCochain",
+            "D0.Geometry.fockDegree",
+            "D0.Geometry.naiveWeight0",
+            "D0.Geometry.naiveWeight1",
+            "D0.Geometry.naiveWeightTestOrigin",
+            "D0.Geometry.naiveWeightTestPairState",
+            "D0.Geometry.naiveWeightTestScalarProfile",
+            "D0.Geometry.naiveWeightedCubicalDifferential",
+            "D0.Geometry.scalarCochain",
+            "D0.Role",
+            "Eq",
+            "Fin.fintype",
+            "Fintype.card",
+            "Nat",
+            "Ne",
+            "OfNat.ofNat",
+            "One.toOfNat1",
+            "Prod.mk",
+            "Real",
+            "Real.instOne",
+            "Real.instZero",
+            "Real.sqrt",
+            "Zero.toOfNat0",
+            "instFintypeProd",
+            "instOfNatNat"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveNaiveWeightedDegreeLeakageNoGo.lean"
+        }
+      ],
+      "compiled_dependency_claim_links": [],
+      "declared_metadata_relations": {
+        "declared_applications": [],
+        "declared_result": null,
+        "target_obligation": null,
+        "target_interface": null,
+        "registered_assumptions": [],
+        "scoped_attempts": [
+          {
+            "id": "phase-count-shortcut",
+            "result": "phase-count-counterexample",
+            "interface": "resonance-divisor-v1",
+            "work_key": "phase-count-nullity-shortcut",
+            "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+            "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+            "question": {
+              "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+              "assumes": []
+            }
+          },
+          {
+            "id": "dmin-canonicality-source-bound-inference",
+            "result": "dmin-canonicality-source-bound-countermodel",
+            "interface": "complete-history-code-source-v1",
+            "work_key": "dmin-same-object-competitive-source",
+            "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+            "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+            "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+            "question": {
+              "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+              "assumes": [
+                "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+                "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+                "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+              ]
+            },
+            "review": {
+              "state": "proposed"
+            }
+          },
+          {
+            "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+            "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+            "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+            "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+            "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+            "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+            "question": {
+              "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+              "assumes": [
+                "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+                "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+                "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+              ]
+            }
+          },
+          {
+            "id": "double-null-degree5-ward-selected-rref",
+            "result": "double-null-degree5-selected-rref-ward-obstruction",
+            "interface": "double-null-degree5-coframe-gradient-ward-v1",
+            "work_key": "double-null-selected-rref-degree5-ward-extension",
+            "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+            "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+            "question": {
+              "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+              "assumes": [
+                "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+                "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+                "The fifth-order Lorentz exponential includes all terms through degree five."
+              ]
+            }
+          }
+        ],
+        "conceptual_presupposition_edges": [],
+        "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+      },
+      "collector_sha256": "1068f73c98eddcbd75cd6ff004b0e3b68642bfd66e7417fa9be4e1f9e4c46745",
+      "lean_source_digest": "c092c246193023d8047b698d7cb62bb9c70f625c62424a41856353cd1eed0964",
+      "public_import_root": "D0.All",
+      "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
+    }
+  ],
+  "compiled_claim_alias_reuse": [],
+  "worktree_dirty": true
+}

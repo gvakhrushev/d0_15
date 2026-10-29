@@ -1,0 +1,93 @@
+{
+  "schema": "d0-pr-source-delta-v1",
+  "repository": "gvakhrushev/d0_15",
+  "owner_pr": 334,
+  "source_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "base_source_commit": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+  "source_commit": "716387e3cb4c9ff08c44b5ac532db882ee1e394a",
+  "source_commit_count": 3,
+  "source_commits": [
+    {
+      "sha": "39b9c847dbea952016a0f464e786ad817e96d4ad",
+      "subject": "research(#334): compose generated banks material metric and retained full source"
+    },
+    {
+      "sha": "110b672e09848893475db0c8fd786cc910a014f9",
+      "subject": "test(#334): replay original full128 retained histories and their noncommuting source"
+    },
+    {
+      "sha": "716387e3cb4c9ff08c44b5ac532db882ee1e394a",
+      "subject": "research(#334): apply direct original source to the complete noncommuting retained history"
+    }
+  ],
+  "changed_upstream_paths": [
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/PROOF_RU.md",
+    "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py"
+  ],
+  "file_count": 7,
+  "files": [
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/PROOF_RU.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/PROOF_RU.md",
+      "bytes": 25683,
+      "sha256": "b9f43ee9916fa1fa23353b9bbbc97c9d242f0cb49e211fe555f56ed3e121416e",
+      "git_blob": "64632a8ac141025c0fdc78c369a2f3ac6e69bf3f"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py",
+      "bytes": 13505,
+      "sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a",
+      "git_blob": "9d313ec496f12ac61e118511d9ce706f19e675ae"
+    },
+    {
+      "upstream_path": "owner-delta-patch",
+      "snapshot_path": "patches/owner_delta_from_46ebed17.patch",
+      "bytes": 56798,
+      "sha256": "586487e913d37517c6be4c0461d004a271bf745dcdab34940fab143934d4e9b9",
+      "git_blob": "5b5d6dbb192c2e716094b8cc8878005b3a1a548d"
+    },
+    {
+      "upstream_path": "local-replay-normal-stdout",
+      "snapshot_path": "replay/observed/normal.stdout.json",
+      "bytes": 4736,
+      "sha256": "47f6fade558f2f4a94e8ce5d0f6e3d4bfe961a450d8bd3511ab1334267aa271b",
+      "git_blob": "8264b0da5ede369680dcff301f115737b7fea270"
+    },
+    {
+      "upstream_path": "local-replay-normal-stderr",
+      "snapshot_path": "replay/observed/normal.stderr.txt",
+      "bytes": 38306,
+      "sha256": "14c5b05bcee12edf12f2f5530a3ee4a9cb8743bbddec461abbeeb65826df5ad8",
+      "git_blob": "13b0a68fabff38657107c4b597d0a5b7b951dd92"
+    },
+    {
+      "upstream_path": "local-replay-optimized-stdout",
+      "snapshot_path": "replay/observed/optimized.stdout.json",
+      "bytes": 4736,
+      "sha256": "47f6fade558f2f4a94e8ce5d0f6e3d4bfe961a450d8bd3511ab1334267aa271b",
+      "git_blob": "8264b0da5ede369680dcff301f115737b7fea270"
+    },
+    {
+      "upstream_path": "local-replay-optimized-stderr",
+      "snapshot_path": "replay/observed/optimized.stderr.txt",
+      "bytes": 38306,
+      "sha256": "14c5b05bcee12edf12f2f5530a3ee4a9cb8743bbddec461abbeeb65826df5ad8",
+      "git_blob": "13b0a68fabff38657107c4b597d0a5b7b951dd92"
+    }
+  ],
+  "replay_receipt_sha256": "bba210497913e9b70dc9aa0bcafc0da45b3e5dffa5098878ffeba1af2378b210",
+  "checker_input_commit": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+  "original_constructor_blob": "d111c5bfeae3c384a4fe725f4a6d19277ea0005a",
+  "runtime_warning_lines": 102,
+  "runtime_warning_counts": {
+    "divide by zero encountered in matmul": 34,
+    "invalid value encountered in matmul": 34,
+    "overflow encountered in matmul": 34
+  },
+  "scientific_acceptance": false,
+  "physical_admission": false,
+  "GR_closed": false
+}

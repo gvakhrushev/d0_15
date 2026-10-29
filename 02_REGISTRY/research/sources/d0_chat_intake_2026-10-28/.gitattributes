@@ -1,0 +1,3 @@
+# Preserve the pinned UTF-8 member and metadata bytes through Git checkout.
+packages/** -text diff
+upstream/** -text diff

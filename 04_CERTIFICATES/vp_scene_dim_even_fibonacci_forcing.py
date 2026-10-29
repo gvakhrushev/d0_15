@@ -13,7 +13,8 @@ Three proved corpus facts feed it:
      +2 arithmetic progression 9, 11, 13.
   F2 (BOOK_01, holonomy junction): the SAME +2 forces the unit junction 5->7 (parity flips at 5->6), the
      "+2 step phi carries".
-  F3 (D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001 + D0-PERRON-SCALE-FLOW-OWNER-001, both CERT-CLOSED): the
+  F3 (finite incidence slice of D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001 + the proved scale ratio
+      under D0-PERRON-SCALE-FLOW-OWNER-001; full AF-trace uniqueness remains open): the
      canonical golden-mean-SFT AF tower has scale ratio phi and Dirac-square eigenvalues on the EVEN powers
      {phi^0, phi^2, phi^4, phi^6} (+2 in the exponent), with eigenspace multiplicities the even-indexed
      Fibonacci numbers {F_2, F_4, F_6, F_8}.

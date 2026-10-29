@@ -1,0 +1,15 @@
+{
+  "checkpoint": "c7708742bea04684ffd6aed16774cfdf1b94b129",
+  "code_result_git_blobs_verified": {
+    "check_density_price_bridge.py": "eda7b8576c55f84535dc202edf76e76d3918b937",
+    "result.json": "ee9a673b4b6fed5d4a2fa62cb1fa37b14ec8a06c"
+  },
+  "sha256": {
+    "PROOF.md": "9109b0cc8faa89ebb895a7e529618c7e9ee634a2395acaf431471d66c6ac7d71",
+    "SYNTHESIS_RU.md": "e64e039c8e59dadb1fcac00074c28bcad4401515d87ddcc620b83ad94425513b",
+    "README.md": "9031ea41d1490f6c601dfcea6cd5584647a13626853fed50642bd63f34313e71",
+    "check_density_price_bridge.py": "168209b98d64da98d16fa7515807fb56418fa99de314c6e74fcd6d67310b15ff",
+    "result.json": "5a7604a57008c884956f17c2ac9ebf18db0adf240f7604f57c55c1105f30700e"
+  },
+  "unconditional_GR_closed": false
+}

@@ -1,0 +1,78 @@
+{
+  "checker_sha256": "fa68fa43fa906c8bc5cf5b2fa2bf766910cae19b5c78bebf32ad94decce4b707",
+  "checks": 109,
+  "exact_published_receipt_match": true,
+  "outputs_byte_identical_across_modes": true,
+  "owner_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "owner_commit": "9e80e0c015a8b8dc804ec55a837eda91164201fe",
+  "published_receipt_sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e",
+  "runs": [
+    {
+      "checks": 109,
+      "command_flags": [],
+      "mode": "ordinary",
+      "returncode": 0,
+      "runtime": {
+        "mpmath": "1.3.0",
+        "python": "3.9.6",
+        "sympy": "1.14.0"
+      },
+      "status": "PASS",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 8951,
+      "stdout_sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+    },
+    {
+      "checks": 109,
+      "command_flags": [
+        "-O"
+      ],
+      "mode": "optimized",
+      "returncode": 0,
+      "runtime": {
+        "mpmath": "1.3.0",
+        "python": "3.9.6",
+        "sympy": "1.14.0"
+      },
+      "status": "PASS",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 8951,
+      "stdout_sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+    },
+    {
+      "checks": 109,
+      "command_flags": [],
+      "mode": "repeat",
+      "returncode": 0,
+      "runtime": {
+        "mpmath": "1.3.0",
+        "python": "3.9.6",
+        "sympy": "1.14.0"
+      },
+      "status": "PASS",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 8951,
+      "stdout_sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+    }
+  ],
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0-native16-paid-golden-calibration-replay-v1",
+  "scope": {
+    "GR_closed": false,
+    "Lean_or_CI_run": false,
+    "actual_21_call_golden_test": true,
+    "actual_59_call_one_book_price": true,
+    "physical_X_N_identified": false,
+    "test_and_use_control_positions_independent": true,
+    "unconstrained_price_selects_correct_recorder": false
+  },
+  "status": "PASS",
+  "stderr_empty_for_all_runs": true
+}

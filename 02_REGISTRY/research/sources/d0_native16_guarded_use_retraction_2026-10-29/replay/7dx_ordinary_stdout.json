@@ -1,0 +1,627 @@
+{
+  "boundary": {
+    "active_columns": 1024,
+    "active_input_rank": 2,
+    "blank_wires": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      16,
+      17
+    ],
+    "full_dimension": 262144,
+    "input_rank": 16,
+    "input_spectator": 8,
+    "new_resources_physically_derived": false,
+    "old_right": [
+      15
+    ],
+    "protected_Spin_prepared": false,
+    "record": [
+      7,
+      8,
+      9
+    ],
+    "source_spin": [
+      13,
+      14
+    ],
+    "thermal_spectator": 256,
+    "wires": 18,
+    "witness": [
+      10,
+      16,
+      17
+    ],
+    "work": [
+      0,
+      11,
+      12
+    ]
+  },
+  "checker_sha256": "9ba7a32f29633d2c173ef005198340653aeb5fa3b9ff68cae80bf42ef70b3d45",
+  "checks": 151,
+  "complete_price": {
+    "A1_79_rational": "82282565898510007181834420920468345592518537110990208802762862127532665430672544173511807838800157745689584140630537941225555620537471041043991403925487839629164320797758945505520430008412902100900510049541480839252471923828125000000000/76425009505610795302617735086323327299151766205848799117037888622280156277533424349659907873589765742020804265064151303561629128592216054162500405916902901090099071341006396968730952650656896459882517602304798503827892632664185151825154086442005034241850269856814790093197872042367610094515176931354576386758905764236612010509757554977072812652999876102688674335326640872439369634622179481477991386123328412504689463170844793658831317628710166900418698787689209351991",
+    "absolute_H": [
+      "29.8621960011675446794015105817968700932652205307",
+      "29.8621960011675446794015105817968902230496936836"
+    ],
+    "all_modes": 8801484800,
+    "birth_fault": [
+      "29.8622099461102848616516733094491292189613110217",
+      "29.8622099461102848616516733094491493487457841745"
+    ],
+    "birth_fault_minus_good": [
+      "-0.0000008886816190131576745785972766734945491787",
+      "-0.0000008886816190131576745785972766734945491784"
+    ],
+    "good": [
+      "29.8622108347919038748093478880464058924558602003",
+      "29.8622108347919038748093478880464260222403333531"
+    ],
+    "good79_minus_good61": [
+      "0.3384777449797754254193113001255197687154392846",
+      "0.3384777449797754254193113001255197687154392849"
+    ],
+    "prepared_rotation": [
+      "29.8622112362698602206845635021295938223895760167",
+      "29.8622112362698602206845635021296139521740491696"
+    ],
+    "rotation_minus_good": [
+      "0.0000004014779563458752156140831879299337158163",
+      "0.0000004014779563458752156140831879299337158166"
+    ],
+    "unpaired_harmonics": 7434665984
+  },
+  "consumed_guard_receipt_sha256": "5c183ebfa85ab0550dd5ae3caefaeb38281e5a40d45c1d8ec0e2343f6c49330c",
+  "consumed_helper_sha256": "e3ac0eb35ec9c4043cf51485f36d3145be3f9be988e28d38330c510599906fc3",
+  "cotangent_retraction": {
+    "arbitrary_old_QUERY_stationarity_proved": false,
+    "birth_00_11_source_interval": [
+      "-0.0000035003065043241630778818492924101755720609",
+      "-0.0000035003065043241630778818492924101755720606"
+    ],
+    "embedding": "V|a>=|a,a>",
+    "general_terminal_sum_gain_upper_bound": 3,
+    "independent_birth_rows": [
+      {
+        "basis_pair": [
+          0,
+          1
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 10,
+        "work": 0
+      },
+      {
+        "basis_pair": [
+          0,
+          2
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 10,
+        "work": 0
+      },
+      {
+        "basis_pair": [
+          0,
+          3
+        ],
+        "image": "-J2",
+        "source": "0",
+        "witness": 10,
+        "work": 0
+      },
+      {
+        "basis_pair": [
+          1,
+          2
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 10,
+        "work": 0
+      },
+      {
+        "basis_pair": [
+          1,
+          3
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 10,
+        "work": 0
+      },
+      {
+        "basis_pair": [
+          2,
+          3
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 10,
+        "work": 0
+      },
+      {
+        "basis_pair": [
+          0,
+          1
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 16,
+        "work": 11
+      },
+      {
+        "basis_pair": [
+          0,
+          2
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 16,
+        "work": 11
+      },
+      {
+        "basis_pair": [
+          0,
+          3
+        ],
+        "image": "-J2",
+        "source": "-7340028*sqrt(-1/2 + sqrt(5)/2)/68720525311 + 3145724*sqrt(5)*sqrt(-1/2 + sqrt(5)/2)/68720525311",
+        "witness": 16,
+        "work": 11
+      },
+      {
+        "basis_pair": [
+          1,
+          2
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 16,
+        "work": 11
+      },
+      {
+        "basis_pair": [
+          1,
+          3
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 16,
+        "work": 11
+      },
+      {
+        "basis_pair": [
+          2,
+          3
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 16,
+        "work": 11
+      },
+      {
+        "basis_pair": [
+          0,
+          1
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 17,
+        "work": 12
+      },
+      {
+        "basis_pair": [
+          0,
+          2
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 17,
+        "work": 12
+      },
+      {
+        "basis_pair": [
+          0,
+          3
+        ],
+        "image": "-J2",
+        "source": "0",
+        "witness": 17,
+        "work": 12
+      },
+      {
+        "basis_pair": [
+          1,
+          2
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 17,
+        "work": 12
+      },
+      {
+        "basis_pair": [
+          1,
+          3
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 17,
+        "work": 12
+      },
+      {
+        "basis_pair": [
+          2,
+          3
+        ],
+        "image": "0",
+        "source": "0",
+        "witness": 17,
+        "work": 12
+      }
+    ],
+    "literal_birth_only_raw_gate_max_lift_gain": 1,
+    "literal_joint_old_plus_birth_raw_gate_max_gain": 2,
+    "literal_old_body_lifts": {
+      "0": {
+        "W31_index": 30,
+        "local_wire": 0,
+        "whole79_index": 51
+      },
+      "11": {
+        "W31_index": 27,
+        "local_wire": 0,
+        "whole79_index": 48
+      },
+      "12": {
+        "W31_index": 0,
+        "local_wire": 12,
+        "whole79_index": 21
+      }
+    },
+    "map": "Y=V* X V",
+    "old_query_actual_body_call_zero_based": 48,
+    "old_query_body_call_in_W31_zero_based": 27,
+    "old_query_source_formula": "16 zeta p^3 (2p sqrt(p))/(1-zeta+zeta p^6)",
+    "old_query_source_interval": [
+      "0.0000035003065043241630778818492924101755720606",
+      "0.0000035003065043241630778818492924101755720609"
+    ],
+    "operator_norm_gain_upper_bound": 1,
+    "protected_support_preserved_as_operator": true
+  },
+  "input_commit": "049ce1128827f8a8fc63875835e53aea19140a31",
+  "input_pins": {
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "literal_prefix_identity18": [
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        16,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        16,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        16,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        16,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    }
+  ],
+  "literal_prefix_rotation18": [
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        16,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        16,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        16,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        16,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        16
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    }
+  ],
+  "preparation": {
+    "corner_good": "p^3 Q",
+    "corner_rotated": "p^6 Q",
+    "entire_R_block_cotangent_zero": true,
+    "independent_paid_calls": 18,
+    "initial_R_changing_sources_covered": false,
+    "inverse_legs_independently_variable": true,
+    "rank_Q_full": 8
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "GR_closed": false,
+    "all_X_N_identified": false,
+    "new_continuous_native_angle": false,
+    "new_physical_selector": false,
+    "old_SOURCE_domains_must_contain_retraction_image": true,
+    "old_full_source_and_true_gain_preserved": true,
+    "same_execution_all79_stages_priced": true,
+    "whole_price_minimum_claimed": false
+  },
+  "status": "PASS",
+  "whole_words": {
+    "birth_fault": {
+      "N": 79,
+      "inventory": {
+        "CX": 54,
+        "G": 7,
+        "SourceI": 18
+      },
+      "sha256": "0b596e2044c77ab6eaa0cc8f71c6207f4cdc63504a0fcfa3215b0285fe9a03ed"
+    },
+    "good": {
+      "N": 79,
+      "inventory": {
+        "CX": 55,
+        "G": 6,
+        "SourceI": 18
+      },
+      "sha256": "67bf04313f2a21bb4a8f822a2dc46d5073bc56dfcbd4d48882ec40fa5ee3978a"
+    },
+    "prepared_rotation": {
+      "N": 79,
+      "inventory": {
+        "CX": 55,
+        "G": 6,
+        "SourceI": 18
+      },
+      "sha256": "ac655201808c1f755e46c617024d8115abd91af8015812763269de6337796f55"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:133: RuntimeWarning: divide by zero encountered in matmul
+  K=embed.T@U@embed;E=embed.T@U.T@M@U@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:133: RuntimeWarning: overflow encountered in matmul
+  K=embed.T@U@embed;E=embed.T@U.T@M@U@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:133: RuntimeWarning: invalid value encountered in matmul
+  K=embed.T@U@embed;E=embed.T@U.T@M@U@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:134: RuntimeWarning: divide by zero encountered in matmul
+  z=float(ZETA);D=(1-z)*np.eye(8)+z*K.T@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:134: RuntimeWarning: overflow encountered in matmul
+  z=float(ZETA);D=(1-z)*np.eye(8)+z*K.T@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:134: RuntimeWarning: invalid value encountered in matmul
+  z=float(ZETA);D=(1-z)*np.eye(8)+z*K.T@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:136: RuntimeWarning: divide by zero encountered in matmul
+  AJ=-2*z*U@embed@inv@K.T@embed.T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:136: RuntimeWarning: overflow encountered in matmul
+  AJ=-2*z*U@embed@inv@K.T@embed.T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:136: RuntimeWarning: invalid value encountered in matmul
+  AJ=-2*z*U@embed@inv@K.T@embed.T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:137: RuntimeWarning: divide by zero encountered in matmul
+  AE=-2*z*U@embed@inv@embed.T@U.T@M
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:137: RuntimeWarning: overflow encountered in matmul
+  AE=-2*z*U@embed@inv@embed.T@U.T@M
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:137: RuntimeWarning: invalid value encountered in matmul
+  AE=-2*z*U@embed@inv@embed.T@U.T@M
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:144: RuntimeWarning: divide by zero encountered in matmul
+  for g in floats:prefixes.append(g@prefixes[-1])
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:144: RuntimeWarning: overflow encountered in matmul
+  for g in floats:prefixes.append(g@prefixes[-1])
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:144: RuntimeWarning: invalid value encountered in matmul
+  for g in floats:prefixes.append(g@prefixes[-1])
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:146: RuntimeWarning: divide by zero encountered in matmul
+  for j in range(len(floats)-1,-1,-1):suffix[j]=suffix[j+1]@floats[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:146: RuntimeWarning: overflow encountered in matmul
+  for j in range(len(floats)-1,-1,-1):suffix[j]=suffix[j+1]@floats[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:146: RuntimeWarning: invalid value encountered in matmul
+  for j in range(len(floats)-1,-1,-1):suffix[j]=suffix[j+1]@floats[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:152: RuntimeWarning: divide by zero encountered in matmul
+  du=suffix[j+1]@X@g@prefixes[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:152: RuntimeWarning: overflow encountered in matmul
+  du=suffix[j+1]@X@g@prefixes[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:152: RuntimeWarning: invalid value encountered in matmul
+  du=suffix[j+1]@X@g@prefixes[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:153: RuntimeWarning: divide by zero encountered in matmul
+  dk=embed.T@du@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:153: RuntimeWarning: overflow encountered in matmul
+  dk=embed.T@du@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:153: RuntimeWarning: invalid value encountered in matmul
+  dk=embed.T@du@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:154: RuntimeWarning: divide by zero encountered in matmul
+  de=embed.T@(du.T@M@U+U.T@M@du)@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:154: RuntimeWarning: overflow encountered in matmul
+  de=embed.T@(du.T@M@U+U.T@M@du)@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:154: RuntimeWarning: invalid value encountered in matmul
+  de=embed.T@(du.T@M@U+U.T@M@du)@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:156: RuntimeWarning: divide by zero encountered in matmul
+  ge=-z*np.trace(inv@de)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:156: RuntimeWarning: overflow encountered in matmul
+  ge=-z*np.trace(inv@de)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:156: RuntimeWarning: invalid value encountered in matmul
+  ge=-z*np.trace(inv@de)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:160: RuntimeWarning: divide by zero encountered in matmul
+  hv=k*np.trace(np.linalg.matrix_power(U,k-1)@du).real
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:160: RuntimeWarning: overflow encountered in matmul
+  hv=k*np.trace(np.linalg.matrix_power(U,k-1)@du).real
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:160: RuntimeWarning: invalid value encountered in matmul
+  hv=k*np.trace(np.linalg.matrix_power(U,k-1)@du).real
+/Users/grigorijvahrusev/Library/Python/3.9/lib/python/site-packages/numpy/linalg/_linalg.py:3220: RuntimeWarning: divide by zero encountered in matmul
+  return _core_matmul(x1, x2)
+/Users/grigorijvahrusev/Library/Python/3.9/lib/python/site-packages/numpy/linalg/_linalg.py:3220: RuntimeWarning: overflow encountered in matmul
+  return _core_matmul(x1, x2)
+/Users/grigorijvahrusev/Library/Python/3.9/lib/python/site-packages/numpy/linalg/_linalg.py:3220: RuntimeWarning: invalid value encountered in matmul
+  return _core_matmul(x1, x2)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:164: RuntimeWarning: divide by zero encountered in matmul
+  j=BASE.index(G);du=suffix[j+1]@Jq@floats[j]@prefixes[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:164: RuntimeWarning: overflow encountered in matmul
+  j=BASE.index(G);du=suffix[j+1]@Jq@floats[j]@prefixes[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:164: RuntimeWarning: invalid value encountered in matmul
+  j=BASE.index(G);du=suffix[j+1]@Jq@floats[j]@prefixes[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:165: RuntimeWarning: divide by zero encountered in matmul
+  dk=embed.T@du@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:165: RuntimeWarning: overflow encountered in matmul
+  dk=embed.T@du@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:165: RuntimeWarning: invalid value encountered in matmul
+  dk=embed.T@du@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:172: RuntimeWarning: divide by zero encountered in matmul
+  du=X@U
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:172: RuntimeWarning: overflow encountered in matmul
+  du=X@U
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:172: RuntimeWarning: invalid value encountered in matmul
+  du=X@U
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:173: RuntimeWarning: divide by zero encountered in matmul
+  dk=embed.T@du@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:173: RuntimeWarning: overflow encountered in matmul
+  dk=embed.T@du@embed
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py:173: RuntimeWarning: invalid value encountered in matmul
+  dk=embed.T@du@embed

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_sha256": "53f23df9b628669caedd231eb4ed41f9dcda0407d2d2b318d9897d68f2ebdd33",
+  "carrier": "rational 2x2; P rank 1, z=1/4",
+  "c": "3/5",
+  "u": "4/5",
+  "query_first_source_fixed_cut": "16/35",
+  "moving_cut_first_source_fixed_U": "-16/35",
+  "joint_first_source": "0",
+  "simultaneous_dF": "[K,F]",
+  "scope": "finite operator identity only; no admitted physical variation, field map or GR closure"
+}

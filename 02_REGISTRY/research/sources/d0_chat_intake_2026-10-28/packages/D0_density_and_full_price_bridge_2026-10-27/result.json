@@ -1,0 +1,67 @@
+{
+  "status": "PASS_DENSITY_INVOLUTION_AND_FULL_PRICE_C1_CONTROL",
+  "checks": 57,
+  "sympy": "1.14.0",
+  "precision_digits": 100,
+  "original_coframe_determinant": "4",
+  "involution_jacobian": "-1/65536",
+  "lambda_original": "-23.41640675188407497289558206489525274426",
+  "geometric_unweighted_controls": [
+    {
+      "L": 4,
+      "density_residual_over_h4": "0.00700214211220074445829356",
+      "source_residual_over_h4": "0.0100094415068242478093448"
+    },
+    {
+      "L": 8,
+      "density_residual_over_h4": "0.00700013387116579719377",
+      "source_residual_over_h4": "0.0100005900119892615841263"
+    },
+    {
+      "L": 16,
+      "density_residual_over_h4": "0.00700000836690549383034035",
+      "source_residual_over_h4": "0.01000003687542830270974"
+    },
+    {
+      "L": 32,
+      "density_residual_over_h4": "0.00700000052293142786286111",
+      "source_residual_over_h4": "0.010000002304713014915353"
+    }
+  ],
+  "full_price_source_controls": [
+    {
+      "eps": "2^-4",
+      "value_error": "0.008912391689756606554348303",
+      "source_error": "0.007410835839727449535249629",
+      "value_error_over_eps": "0.1425982670361057048695728",
+      "source_error_over_eps": "0.1185733734356391925639941"
+    },
+    {
+      "eps": "2^-6",
+      "value_error": "0.002227007786451783913645302",
+      "source_error": "0.001813319228116871800216249",
+      "value_error_over_eps": "0.1425284983329141704732994",
+      "source_error_over_eps": "0.1160524305994797952138399"
+    },
+    {
+      "eps": "2^-8",
+      "value_error": "0.0005567076802628498156815774",
+      "source_error": "0.0004509175457412359024141028",
+      "value_error_over_eps": "0.1425171661472895528144838",
+      "source_error_over_eps": "0.1154348917097563910180103"
+    },
+    {
+      "eps": "2^-10",
+      "value_error": "0.0001391745263414740308848681",
+      "source_error": "0.0001125793989425527228851601",
+      "value_error_over_eps": "0.142514714973669407626105",
+      "source_error_over_eps": "0.115281304517173988234404"
+    }
+  ],
+  "native_gate_compilation_performed": false,
+  "native_density_transformation_admitted": false,
+  "moment_norm_forces_small_signal": true,
+  "native_execution_refinement_verified": false,
+  "exact_general_roots_constructed": false,
+  "unconditional_GR_closed": false
+}

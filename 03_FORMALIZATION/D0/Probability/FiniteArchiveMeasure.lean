@@ -16,7 +16,7 @@ structure FiniteArchiveMeasure where
   total_one : (Finset.univ.sum weight) = 1
 
 def ArchiveFiniteSupport (mu : FiniteArchiveMeasure) : Prop :=
-  0 < mu.atomCount
+  ∃ s : Finset (Fin mu.atomCount), ∀ i, (mu.weight i ≠ 0) ↔ i ∈ s
 
 def archiveCrossWeight (_i : Fin 8) : Rat :=
   (1 : Rat) / 8
@@ -61,7 +61,10 @@ theorem d0ArchiveMeasure_total_one :
 
 theorem d0ArchiveMeasure_finite_support :
     ArchiveFiniteSupport d0ArchiveMeasure := by
-  norm_num [ArchiveFiniteSupport, d0ArchiveMeasure]
+  refine ⟨Finset.univ, ?_⟩
+  intro i
+  change archiveCrossWeight i ≠ 0 ↔ i ∈ Finset.univ
+  norm_num [archiveCrossWeight]
 
 theorem archiveStageMeasure_finite_support (n : Nat) :
     ArchiveFiniteSupport (archiveStageMeasure n) := by

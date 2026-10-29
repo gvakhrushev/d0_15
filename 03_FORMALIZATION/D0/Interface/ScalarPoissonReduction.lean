@@ -113,4 +113,38 @@ theorem scalar_stationarity_implies_archive_poisson
       _ = 0 := mul_zero _
   exact sub_eq_zero.mp h_Fj_zero
 
+/-- Zero-sum scalar variations determine the Poisson residual only up to a
+constant. Without the explicit neutral-source premise, stationarity does not
+force the residual to vanish. -/
+theorem scalar_stationarity_without_neutrality_counterexample :
+  ScalarSectorStationary 0 (fun _ => 0) (fun _ => 1) ∧
+  ¬ NeutralSource (fun _ : archivePhaseIndex 0 => (1 : ℝ)) ∧
+  ¬ ArchivePoissonEquation (fun _ : archivePhaseIndex 0 => (0 : ℝ))
+      (fun _ => 1) := by
+  refine ⟨?_, ?_, ?_⟩
+  · intro η h_sum_zero
+    have h_laplacian_zero :
+        Matrix.mulVec (archiveCanonicalLaplacian 0)
+          (fun _ : archivePhaseIndex 0 => (0 : ℝ)) = 0 := by
+      simpa using archiveCanonicalLaplacian_constant_zero 0 0
+    rw [h_laplacian_zero]
+    simp only [Pi.zero_apply, zero_sub]
+    calc
+      (∑ i : archivePhaseIndex 0, -1 * η i) = -(∑ i : archivePhaseIndex 0, η i) := by
+        rw [← Finset.sum_neg_distrib]
+        apply Finset.sum_congr rfl
+        intro i _
+        ring
+      _ = 0 := by rw [h_sum_zero]; simp
+  · unfold NeutralSource
+    norm_num [archivePhaseIndex, archiveFibers]
+  · intro h_poisson
+    have h_laplacian_zero :
+        Matrix.mulVec (archiveCanonicalLaplacian 0)
+          (fun _ : archivePhaseIndex 0 => (0 : ℝ)) = 0 := by
+      simpa using archiveCanonicalLaplacian_constant_zero 0 0
+    have h_at_zero := congrFun h_poisson (⟨0, by decide⟩ : archivePhaseIndex 0)
+    rw [h_laplacian_zero] at h_at_zero
+    norm_num at h_at_zero
+
 end D0

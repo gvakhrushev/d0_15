@@ -1,0 +1,130 @@
+{
+  "cold_start": {
+    "benchmark_cases_total": 45,
+    "bytes": 2219771,
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "compactor_git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
+    "compactor_sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
+    "full_output_bytes": 21307615,
+    "full_output_sha256": "1e02edacf640a186a894e34c7ae59a12f793fa13081619670e18a3c963933667",
+    "new_cases": [
+      {
+        "id": "native16-paid-use-witness-and-birth-source",
+        "all_required_sources_found": true,
+        "required_source_count": 11
+      },
+      {
+        "id": "native16-first-copy-source-retraction-and-paid-preparation",
+        "all_required_sources_found": true,
+        "required_source_count": 11
+      }
+    ],
+    "raw_output_bytes": 21307615,
+    "raw_output_sha256": "1e02edacf640a186a894e34c7ae59a12f793fa13081619670e18a3c963933667",
+    "required_source_ref_count": 302,
+    "runner_git_blob": "57cc9079e9ab1d32ca30d6043975a502309f8791",
+    "runner_sha256": "43a68ae48d0f5b8f7a2049f95de145edb6c72c87771ffd59e22a0098d64599e9",
+    "search_cases_found_all_sources": 44,
+    "search_cases_total": 44,
+    "search_engine_git_blob": "4eb2c8371e0fd2c563e7af0e7f3639c8846788e4",
+    "search_engine_sha256": "4ef5b51ac318c376c18ccf4c6abb983a3e76e53687d11514cc2cceb4988325b4",
+    "search_limit": 18,
+    "semantic_scope_review_is_manual": true,
+    "sha256": "5557ff7e31201109481dd01a3f255853086e6e6d24a439f9e7fdf28e2f5888c9",
+    "snapshot_commit": "691118e35e444cfb0ae9c615d9a8e0b69917919a",
+    "summary_file": "cold_start_summary.json",
+    "test_git_blob": "891039bbdb18ad9fae1446a49335b3634fe6837c",
+    "test_sha256": "f0297dafbc085b18078b676efe7ca3d3a4007d1d022c2569ed7ef33d727e4b2e",
+    "worktree_dirty": false
+  },
+  "integrated_source_commit": "691118e35e444cfb0ae9c615d9a8e0b69917919a",
+  "process_comparison": {
+    "bytes": 190431,
+    "command": "python3 tools/proof_architecture_process_comparison.py",
+    "current_expected_source_misses": [
+      {
+        "case_id": "canonical-af-stationary-family-archive-seed",
+        "expected_sources": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "current_expected_source_hits": []
+      },
+      {
+        "case_id": "native16-record-implementation-fibre",
+        "expected_sources": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "current_expected_source_hits": []
+      },
+      {
+        "case_id": "native16-paid-golden-calibration",
+        "expected_sources": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "current_expected_source_hits": []
+      },
+      {
+        "case_id": "native16-paid-use-witness-and-birth-source",
+        "expected_sources": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "current_expected_source_hits": []
+      },
+      {
+        "case_id": "native16-first-copy-source-retraction-and-paid-preparation",
+        "expected_sources": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "current_expected_source_hits": []
+      }
+    ],
+    "file": "process_comparison.json",
+    "interpretation": "Retrieval comparison only. The 18-candidate cold-start found every required source set. The five-candidate one-query comparison surfaces at least one expected source in 23 of 28 explicitly scoped questions; the legacy assembly search does so in 0 of 28. Five one-query misses target the architecture document, including the two new cases. These retrieval counts do not assess theorem correctness, owner acceptance, or physical closure.",
+    "metrics": {
+      "query_count": 44,
+      "query_count_with_explicit_source_scope": 28,
+      "expected_source_reference_count": 44,
+      "unique_expected_source_path_count": 22,
+      "current_scoped_queries_with_expected_source_assembly_owner_link": 1,
+      "current_expected_source_assembly_owner_link_count": 1,
+      "current_expected_source_references_with_assembly_owner_link": 1,
+      "current_expected_source_references_with_formal_support_locator": 15,
+      "current_expected_source_formal_support_locator_count": 61,
+      "current_unique_expected_source_paths_with_formal_support_locator": 5,
+      "current_expected_source_references_without_assembly_or_formal_support": 28,
+      "current_unique_expected_source_paths_without_assembly_or_formal_support": 16,
+      "current_scoped_queries_with_expected_source_header_owner_declaration": 1,
+      "current_expected_source_header_owner_declaration_count": 1,
+      "current_scoped_expected_sources_without_direct_assembly_owner_link": 43,
+      "legacy_scoped_queries_with_expected_source": 0,
+      "current_scoped_queries_with_expected_source": 23,
+      "legacy_serialized_answer_bytes_total": 88,
+      "current_serialized_answer_bytes_total": 965972,
+      "legacy_average_answer_bytes": 2.0,
+      "current_average_answer_bytes": 21953.9,
+      "legacy_owner_bearing_queries": 0,
+      "current_owner_bearing_queries": 12,
+      "semantic_review_required_for_all_queries": true
+    },
+    "query_fixture_sha256": "43a68ae48d0f5b8f7a2049f95de145edb6c72c87771ffd59e22a0098d64599e9",
+    "runner_git_blob": "6a20d8caaa197282514ca29cbd98dfbe4fb027af",
+    "runner_sha256": "b36748084ab2fd801c01552041fe53d4babb71929c4a0766ff9bed569055a31a",
+    "sha256": "72515f0e6770f5a8a9e7635ba016321755265ea8a46ce74c9d75ba0e24123c64",
+    "snapshot_commit": "691118e35e444cfb0ae9c615d9a8e0b69917919a",
+    "worktree_dirty": false
+  },
+  "pull_request": 402,
+  "schema": "d0-proof-architecture-intake-validation-v1",
+  "status_boundaries": {
+    "GR_closed": false,
+    "Lean_build_run_in_this_increment": false,
+    "WRK_D0_PROOF_ARCHITECTURE_FORMALIZATION_remains_IN_PROGRESS": true,
+    "all_current_expected_sources_found_in_process_comparison": false,
+    "full_cold_start_all_source_sets_found": true,
+    "physical_D0_admission_proved": false,
+    "process_comparison_current_expected_source_hits": 23,
+    "process_comparison_scoped_queries": 28
+  },
+  "upstream_owner_commit": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45",
+  "validation_snapshot_commit": "691118e35e444cfb0ae9c615d9a8e0b69917919a"
+}

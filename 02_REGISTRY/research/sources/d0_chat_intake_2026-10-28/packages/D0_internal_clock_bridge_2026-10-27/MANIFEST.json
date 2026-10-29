@@ -1,0 +1,58 @@
+{
+  "source_head": "c7708742bea04684ffd6aed16774cfdf1b94b129",
+  "date": "2026-10-27",
+  "github_updated": false,
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "normal_and_optimized_receipts_identical": true,
+  "unconditional_GR_closed": false,
+  "files": {
+    "PROOF.md": {
+      "bytes": 20817,
+      "sha256": "a4071b81badf041382be7478e4c9d6032076630fe58a4a0d1d74287b78490dec"
+    },
+    "README_RU.md": {
+      "bytes": 2437,
+      "sha256": "a54baac972d1eee0188e28ad36da9153a8fbeff8d38df6be50b8885bce35ddb9"
+    },
+    "SYNTHESIS_RU.md": {
+      "bytes": 11070,
+      "sha256": "5f85c5b640b2e5a4000ea44d23f5c87a635e6befc378f35363288d6c65a9dfed"
+    },
+    "check_finite_golden_secants.py": {
+      "bytes": 4741,
+      "sha256": "aafb12b6c5b5ae0416e33ef4906e11b7172128bfd5a464aa7f645e2d7d88493a"
+    },
+    "check_internal_clock_bridge.py": {
+      "bytes": 9366,
+      "sha256": "18a90e09f739a5cfba697849e3b65dcc59de2da4307766434bb41b805ec8da44"
+    },
+    "golden_secants_result.json": {
+      "bytes": 3859,
+      "sha256": "d3d6775b75c94f9e4430e16abb4da3d9b3181088f2e086b5b3d00f0f993953c9"
+    },
+    "golden_secants_result_optimized.json": {
+      "bytes": 3859,
+      "sha256": "d3d6775b75c94f9e4430e16abb4da3d9b3181088f2e086b5b3d00f0f993953c9"
+    },
+    "inputs/previous_executed_replay.json": {
+      "bytes": 2862,
+      "sha256": "a3314ab4691278e00ed9c1af0e2e6c059750fd04ce11087413d52da8af7f7715"
+    },
+    "inputs/previous_intrinsic_metric_proof.md": {
+      "bytes": 19027,
+      "sha256": "7d013ee40cc3965c72fae1ffc066fbe31c69f031a2c2768f9d63f196de00d37c"
+    },
+    "result.json": {
+      "bytes": 1187,
+      "sha256": "42755e8af451e056a72d2175c4d2aa2916a9daec8cedfd3236839000072d10d5"
+    },
+    "result_optimized.json": {
+      "bytes": 1187,
+      "sha256": "42755e8af451e056a72d2175c4d2aa2916a9daec8cedfd3236839000072d10d5"
+    }
+  }
+}

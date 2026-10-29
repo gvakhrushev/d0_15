@@ -2,6 +2,7 @@ import Mathlib.Data.Real.Basic
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Algebra.BigOperators.Fin
 import Mathlib.Tactic
+import D0.Algebra.FiniteMatrixTensorProduct
 import D0.Core.FiniteTypes
 import D0.Core.DyadABCD
 import D0.Geometry.ArchiveRefinementTower
@@ -33,8 +34,11 @@ in `D0.Geometry.ArchiveHodgeCARDirac`.
 
 The declarations `archive_car_dirac_square_owner`, `archive_car_zero_mode_owner`,
 `archive_car_spectrum_amplification_owner` and
-`archive_dirac_heattrace_multiplicity_owner` are arithmetic scaffolds.  They do
-not state an operator square, a kernel, a spinor decomposition, or a heat trace.
+`archive_dirac_heattrace_multiplicity_owner` are arithmetic scaffolds.  The
+finite `L = 2` controls below state the literal operator square and exclude a
+zero mode only at that period; they do not identify the declared kernel
+dimension, prove a uniform-in-period result, or establish a spinor
+decomposition or heat trace.
 -/
 
 /-- Derivative lattice scale factor: exactly L = n + 2 = d_edge⁻¹. -/
@@ -126,34 +130,21 @@ theorem carDirac_self_adjoint (n : ℕ) :
     exact h
   rw [hs, hg]
 
-/-- Kronecker product used to state the typed total parity operator. -/
-def tensorProduct {X Y : Type*} [Fintype X] [Fintype Y]
+/-- Compatibility name for the shared finite matrix tensor product. -/
+abbrev tensorProduct {X Y : Type*} [Fintype X] [Fintype Y]
     (A : Matrix X X ℝ) (B : Matrix Y Y ℝ) :
     Matrix (X × Y) (X × Y) ℝ :=
-  fun ⟨x1, y1⟩ ⟨x2, y2⟩ => A x1 x2 * B y1 y2
+  D0.Algebra.finiteMatrixTensorProduct A B
 
 theorem tensorProduct_mul {X Y : Type*} [Fintype X] [Fintype Y]
     (A C : Matrix X X ℝ) (B D : Matrix Y Y ℝ) :
     tensorProduct A B * tensorProduct C D = tensorProduct (A * C) (B * D) := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  simp only [Matrix.mul_apply, tensorProduct]
-  have h_sum_split :
-      (∑ mid : X × Y, A x mid.1 * B f mid.2 * (C mid.1 y * D mid.2 g)) =
-        ∑ a : X, ∑ b : Y, A x a * B f b * (C a y * D b g) := by
-    exact Fintype.sum_prod_type
-      (fun p : X × Y => A x p.1 * B f p.2 * (C p.1 y * D p.2 g))
-  rw [h_sum_split]
-  have h_factor :
-      (∑ a : X, ∑ b : Y, A x a * B f b * (C a y * D b g)) =
-        (∑ a : X, A x a * C a y) * (∑ b : Y, B f b * D b g) := by
-    rw [Finset.sum_mul]
-    apply Finset.sum_congr rfl
-    intro a _
-    rw [Finset.mul_sum]
-    apply Finset.sum_congr rfl
-    intro b _
-    ring
-  rw [h_factor]
+  exact D0.Algebra.finiteMatrixTensorProduct_mul A C B D
+
+theorem tensorProduct_transpose {X Y : Type*} [Fintype X] [Fintype Y]
+    (A : Matrix X X ℝ) (B : Matrix Y Y ℝ) :
+    (tensorProduct A B).transpose = tensorProduct A.transpose B.transpose := by
+  exact D0.Algebra.finiteMatrixTensorProduct_transpose A B
 
 /-- Identity matrix on the Fock factor. -/
 def fockIdMatrix : Matrix ArchiveFockState ArchiveFockState ℝ :=
@@ -176,13 +167,8 @@ def fockParityMatrix : Matrix ArchiveFockState ArchiveFockState ℝ :=
 
 theorem fockParityMatrix_symmetric :
     fockParityMatrix.transpose = fockParityMatrix := by
-  ext bra ket
-  simp only [transpose_apply, fockParityMatrix]
-  by_cases h : bra = ket
-  · subst h
-    rfl
-  · have h2 : ket ≠ bra := Ne.symm h
-    simp [h, h2]
+  have hdiag : fockParityMatrix = Matrix.diagonal fockParitySign := rfl
+  rw [hdiag, Matrix.diagonal_transpose]
 
 theorem fockParityMatrix_sq :
     fockParityMatrix * fockParityMatrix = fockIdMatrix := by
@@ -219,6 +205,12 @@ def spatialIdMatrix (n : ℕ) :
     Matrix (ArchiveRolePhasePoint n) (ArchiveRolePhasePoint n) ℝ :=
   fun x y => if x = y then 1 else 0
 
+theorem spatialIdMatrix_symmetric (n : ℕ) :
+    (spatialIdMatrix n).transpose = spatialIdMatrix n := by
+  have hdiag : spatialIdMatrix n =
+      Matrix.diagonal (fun _ : ArchiveRolePhasePoint n => (1 : ℝ)) := rfl
+  rw [hdiag, Matrix.diagonal_transpose]
+
 theorem spatialIdMatrix_mul {n : ℕ}
     (A : Matrix (ArchiveRolePhasePoint n) (ArchiveRolePhasePoint n) ℝ) :
     spatialIdMatrix n * A = A := by
@@ -251,17 +243,10 @@ def totalParityOperator (n : ℕ) : CARHilbertMatrix n :=
 
 theorem totalParityOperator_symmetric (n : ℕ) :
     (totalParityOperator n).transpose = totalParityOperator n := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  simp only [transpose_apply, totalParityOperator, tensorProduct, spatialIdMatrix]
-  have hx : (if y = x then (1 : ℝ) else 0) = (if x = y then 1 else 0) := by
-    by_cases h : x = y
-    · subst h
-      rfl
-    · have h2 : y ≠ x := Ne.symm h
-      simp [h, h2]
-  have hf : fockParityMatrix g f = fockParityMatrix f g := by
-    rw [← transpose_apply fockParityMatrix f g, fockParityMatrix_symmetric]
-  rw [hx, hf]
+  change (tensorProduct (spatialIdMatrix n) fockParityMatrix).transpose =
+    tensorProduct (spatialIdMatrix n) fockParityMatrix
+  rw [tensorProduct_transpose, spatialIdMatrix_symmetric,
+    fockParityMatrix_symmetric]
 
 lemma role_cases (r : Role) :
     r = D0.A ∨ r = D0.B ∨ r = D0.C ∨ r = D0.D := by
@@ -410,7 +395,9 @@ theorem carDirac_parity_anticommutation (n : ℕ) :
   rw [spatialIdMatrix_mul (spatialDiracComponent n r)]
   rw [mul_spatialIdMatrix (spatialDiracComponent n r)]
   ext ⟨x, f⟩ ⟨y, g⟩
-  simp only [Matrix.add_apply, Matrix.zero_apply, tensorProduct]
+  simp only [Matrix.add_apply, Matrix.zero_apply, tensorProduct,
+    D0.Algebra.finiteMatrixTensorProduct, Matrix.kronecker,
+    Matrix.kroneckerMap_apply]
   have h_anti := fock_parity_anticommutes_with_gamma r
   have h_entry :
       (fockParityMatrix * fockGamma r + fockGamma r * fockParityMatrix) f g = 0 := by
@@ -476,6 +463,321 @@ theorem archive_car_dirac_square_owner :
     (carDiracSquareScalarSectorFactor = 16) ∧
     (Fintype.card ArchiveFockState = 16) :=
   ⟨rfl, card_archive_fock_state⟩
+
+/-- Spatially constant vacuum vector on the actual site × Fock carrier. -/
+def archiveConstantVacuumVector (n : ℕ) : CARHilbertPoint n → ℝ :=
+  fun p => if p.2 = fockVacuumState then 1 else 0
+
+/-- Origin site in the four finite cyclic coordinates. -/
+def archiveZeroSite (n : ℕ) : ArchiveRolePhasePoint n :=
+  fun _ => ⟨0, by unfold archiveFibers; omega⟩
+
+/-- The tensor product of a site operator with Fock identity acts on a
+spatially constant vacuum vector by its site action. -/
+theorem tensorProduct_fockId_mulVec_constant_vacuum (n : ℕ)
+    (M : Matrix (ArchiveRolePhasePoint n) (ArchiveRolePhasePoint n) ℝ) :
+    tensorProduct M fockIdMatrix *ᵥ archiveConstantVacuumVector n =
+      fun p => if p.2 = fockVacuumState then
+        (M *ᵥ (fun _ => (1 : ℝ))) p.1 else 0 := by
+  classical
+  funext ⟨x, f⟩
+  simp only [Matrix.mulVec, dotProduct, tensorProduct,
+    D0.Algebra.finiteMatrixTensorProduct]
+  rw [Fintype.sum_prod_type]
+  by_cases hf : f = fockVacuumState
+  · subst f
+    simp [fockIdMatrix, archiveConstantVacuumVector]
+  · simp [fockIdMatrix, archiveConstantVacuumVector, hf]
+
+/-- The actual hopping matrix moves the constant vacuum into a nonzero
+singleton component already at the smallest archive period `L = 2`. -/
+private theorem carAnnihilate_singleton_vacuum_zero (r s : Role) :
+    carAnnihilate r (fockSingletonState s) fockVacuumState = 0 := by
+  by_contra h
+  have h_occ :=
+    (carAnnihilate_support r (fockSingletonState s) fockVacuumState h).1
+  simp [fockVacuumState] at h_occ
+
+private theorem fockGamma_singleton_vacuum (r s : Role) :
+    fockGamma r (fockSingletonState s) fockVacuumState = roleDelta r s := by
+  unfold fockGamma
+  rw [carAnnihilate_singleton_vacuum_zero, carCreate_singleton_vacuum]
+  simp
+
+private theorem carDirac_mulVec_constant_vacuum_singleton (n : ℕ)
+    (x : ArchiveRolePhasePoint n) (s : Role) :
+    (carDirac n *ᵥ archiveConstantVacuumVector n)
+      (x, fockSingletonState s) =
+        ∑ y : ArchiveRolePhasePoint n, spatialDiracComponent n s x y := by
+  classical
+  simp only [Matrix.mulVec, dotProduct, carDirac, archiveConstantVacuumVector]
+  rw [Fintype.sum_prod_type]
+  simp [fockGamma_singleton_vacuum, roleDelta]
+
+theorem carDirac_constant_vacuum_nonzero_at_singleton_A :
+    (carDirac 0 *ᵥ archiveConstantVacuumVector 0)
+      (archiveZeroSite 0, fockSingletonState D0.A) ≠ 0 := by
+  classical
+  rw [carDirac_mulVec_constant_vacuum_singleton]
+  let oneIndex : archivePhaseIndex 0 := ⟨1, by unfold archiveFibers; omega⟩
+  let y : ArchiveRolePhasePoint 0 := Function.update (archiveZeroSite 0) D0.A oneIndex
+  have hterm : spatialDiracComponent 0 D0.A (archiveZeroSite 0) y = 1 := by
+    norm_num [spatialDiracComponent, y, oneIndex, archiveZeroSite,
+      diracDerivativeScale, archiveFibers, archivePhaseIndex, Function.update]
+  have hnonneg : ∀ z ∈ Finset.univ,
+      0 ≤ spatialDiracComponent 0 D0.A (archiveZeroSite 0) z := by
+    intro z _
+    simp only [spatialDiracComponent]
+    split_ifs <;> norm_num [diracDerivativeScale, archiveFibers]
+  have hbound : 1 ≤
+      ∑ z : ArchiveRolePhasePoint 0,
+        spatialDiracComponent 0 D0.A (archiveZeroSite 0) z := by
+    calc
+      1 = spatialDiracComponent 0 D0.A (archiveZeroSite 0) y := hterm.symm
+      _ ≤ ∑ z : ArchiveRolePhasePoint 0,
+          spatialDiracComponent 0 D0.A (archiveZeroSite 0) z :=
+        Finset.single_le_sum hnonneg (Finset.mem_univ y)
+  exact ne_of_gt (lt_of_lt_of_le (by norm_num) hbound)
+
+/-- Scoped no-go for the literal `carDirac`: at `L = 2` its square cannot be
+the owned metric role-product Laplacian tensored with the Fock identity. The
+constant mode is killed by the Laplacian, while self-adjointness and the
+explicit vacuum-to-singleton matrix entry rule out a zero square there.
+This does not decide a different operator or repair the unresolved source
+locator of `D0-ARCHIVE-CAR-DIRAC-SQUARE-001`. -/
+theorem carDirac_square_ne_archiveMetricProductLaplacian_at_zero :
+    carDirac 0 * carDirac 0 ≠
+      tensorProduct (archiveMetricProductLaplacian 0) fockIdMatrix := by
+  intro hsq
+  let v := archiveConstantVacuumVector 0
+  have htarget :
+      tensorProduct (archiveMetricProductLaplacian 0) fockIdMatrix *ᵥ v = 0 := by
+    rw [tensorProduct_fockId_mulVec_constant_vacuum]
+    have hconstant := archiveMetricProductLaplacian_constant_zero 0 1
+    rw [hconstant]
+    funext p
+    simp
+  have hD2 : (carDirac 0 * carDirac 0) *ᵥ v = 0 := by
+    rw [hsq]
+    exact htarget
+  have hD2' : carDirac 0 *ᵥ (carDirac 0 *ᵥ v) = 0 := by
+    rw [Matrix.mulVec_mulVec]
+    exact hD2
+  have hnorm : dotProduct (carDirac 0 *ᵥ v) (carDirac 0 *ᵥ v) = 0 := by
+    calc
+      dotProduct (carDirac 0 *ᵥ v) (carDirac 0 *ᵥ v) =
+          dotProduct v ((carDirac 0).transpose *ᵥ (carDirac 0 *ᵥ v)) := by
+            exact (Matrix.dotProduct_transpose_mulVec (carDirac 0) v
+              (carDirac 0 *ᵥ v)).symm
+      _ = dotProduct v (carDirac 0 *ᵥ (carDirac 0 *ᵥ v)) := by
+            rw [carDirac_self_adjoint]
+      _ = 0 := by rw [hD2']; simp
+  have hentry :
+      (carDirac 0 *ᵥ v)
+        (archiveZeroSite 0, fockSingletonState D0.A) = 0 := by
+    have hentry_sq : ∀ i : CARHilbertPoint 0, (carDirac 0 *ᵥ v) i = 0 := by
+      intro i
+      have hle : (carDirac 0 *ᵥ v) i ^ 2 ≤
+          dotProduct (carDirac 0 *ᵥ v) (carDirac 0 *ᵥ v) := by
+        unfold dotProduct
+        simpa [pow_two, mul_comm] using
+          (Finset.single_le_sum
+            (fun j _ => sq_nonneg ((carDirac 0 *ᵥ v) j))
+            (Finset.mem_univ i))
+      rw [hnorm] at hle
+      nlinarith
+    exact hentry_sq _
+  exact carDirac_constant_vacuum_nonzero_at_singleton_A hentry
+
+/-! ## Exact smallest-period CAR control
+
+At `n = 0`, the archive has period `L = 2`.  The spatial role blocks are
+coordinate flips, so they square to identity and commute.  The Fock blocks
+anticommute by the already-owned finite CAR relations.  The following
+factorized calculation proves `D^2 = 4 I` on this one complete finite
+carrier; it is not a uniform refinement theorem. -/
+
+/-- Integral `L = 2` shadow of the literal spatial hopping block. -/
+private def spatialL2Int (r : Role) :
+    Matrix (ArchiveRolePhasePoint 0) (ArchiveRolePhasePoint 0) ℤ :=
+  fun x y =>
+    if (∀ s : Role, s ≠ r → x s = y s) ∧
+        (((y r).val = ((x r).val + 1) % 2) ∨
+         ((x r).val = ((y r).val + 1) % 2)) then 1 else 0
+
+/-- The four integral coordinate-flip blocks each square to the spatial
+identity.  This finite decision proof covers all sites at `L = 2`. -/
+private theorem spatialL2Int_sq_pointwise :
+    ∀ r : Role, ∀ x y : ArchiveRolePhasePoint 0,
+      (spatialL2Int r * spatialL2Int r) x y =
+        if x = y then (1 : ℤ) else 0 := by
+  native_decide
+
+/-- Distinct coordinate flips commute on the complete finite `L = 2`
+carrier. -/
+private theorem spatialL2Int_comm_pointwise :
+    ∀ r s : Role, ∀ x y : ArchiveRolePhasePoint 0,
+      (spatialL2Int r * spatialL2Int s) x y =
+        (spatialL2Int s * spatialL2Int r) x y := by
+  native_decide
+
+private theorem spatial_zero_entry_eq_L2Int (r : Role)
+    (x y : ArchiveRolePhasePoint 0) :
+    spatialDiracComponent 0 r x y = (spatialL2Int r x y : ℝ) := by
+  simp [spatialDiracComponent, spatialL2Int, diracDerivativeScale, archiveFibers]
+
+private theorem spatial_zero_square (r : Role) :
+    spatialDiracComponent 0 r * spatialDiracComponent 0 r = spatialIdMatrix 0 := by
+  ext x y
+  simp only [Matrix.mul_apply]
+  simp_rw [spatial_zero_entry_eq_L2Int]
+  calc
+    (∑ z : ArchiveRolePhasePoint 0,
+        (spatialL2Int r x z : ℝ) * (spatialL2Int r z y : ℝ)) =
+        ((∑ z : ArchiveRolePhasePoint 0,
+          spatialL2Int r x z * spatialL2Int r z y : ℤ) : ℝ) := by simp
+    _ = ((if x = y then (1 : ℤ) else 0) : ℝ) := by
+      have h := spatialL2Int_sq_pointwise r x y
+      simpa [Matrix.mul_apply] using congrArg (fun z : ℤ => (z : ℝ)) h
+    _ = spatialIdMatrix 0 x y := by simp [spatialIdMatrix]
+
+private theorem spatial_zero_commute (r s : Role) :
+    spatialDiracComponent 0 r * spatialDiracComponent 0 s =
+      spatialDiracComponent 0 s * spatialDiracComponent 0 r := by
+  ext x y
+  simp only [Matrix.mul_apply]
+  simp_rw [spatial_zero_entry_eq_L2Int]
+  calc
+    (∑ z : ArchiveRolePhasePoint 0,
+        (spatialL2Int r x z : ℝ) * (spatialL2Int s z y : ℝ)) =
+        ((∑ z : ArchiveRolePhasePoint 0,
+          spatialL2Int r x z * spatialL2Int s z y : ℤ) : ℝ) := by simp
+    _ = ((∑ z : ArchiveRolePhasePoint 0,
+          spatialL2Int s x z * spatialL2Int r z y : ℤ) : ℝ) := by
+      have h := spatialL2Int_comm_pointwise r s x y
+      simpa [Matrix.mul_apply] using congrArg (fun z : ℤ => (z : ℝ)) h
+    _ = ∑ z : ArchiveRolePhasePoint 0,
+          (spatialL2Int s x z : ℝ) * (spatialL2Int r z y : ℝ) := by simp
+
+private theorem fockGamma_anticommutator_entry
+    (r s : Role) (bra ket : ArchiveFockState) :
+    (fockGamma r * fockGamma s + fockGamma s * fockGamma r) bra ket =
+      2 * roleDelta r s * fockIdentity bra ket := by
+  change anticommutator (fockGamma r) (fockGamma s) bra ket = _
+  have haa := car_annihilate_anticommutator r s bra ket
+  have hcc := car_create_anticommutator r s bra ket
+  have hac := car_mixed_anticommutator r s bra ket
+  have hca := car_mixed_anticommutator_create_first r s bra ket
+  unfold anticommutator at haa hcc hac hca
+  unfold anticommutator fockGamma
+  simp only [add_mul, mul_add, Finset.sum_add_distrib]
+  linear_combination haa + hcc + hac + hca
+
+private theorem fockGamma_anticommutator (r s : Role) :
+    fockGamma r * fockGamma s + fockGamma s * fockGamma r =
+      (2 * roleDelta r s) • fockIdMatrix := by
+  ext bra ket
+  rw [fockGamma_anticommutator_entry]
+  simp [fockIdMatrix, roleDelta, fockIdentity]
+
+/-- Factorized Clifford square: commuting spatial blocks paired with CAR
+anticommuting Fock blocks leave only the diagonal role terms. -/
+private theorem sum_tensor_square_eq_sum_diagonal
+    {X Y : Type*} [Fintype X] [Fintype Y]
+    (A : Role → Matrix X X ℝ)
+    (G : Role → Matrix Y Y ℝ)
+    (J : Matrix Y Y ℝ)
+    (hAcomm : ∀ r s, A r * A s = A s * A r)
+    (hGanti : ∀ r s, G r * G s + G s * G r =
+      (2 * roleDelta r s) • J) :
+    (∑ r : Role, ∑ s : Role,
+      tensorProduct (A r * A s) (G r * G s)) =
+      ∑ r : Role, tensorProduct (A r * A r) J := by
+  have hGanti' : ∀ r s,
+      G r * G s + G s * G r =
+        (if r = s then (2 : ℝ) else 0) • J := by
+    intro r s
+    simpa [roleDelta] using hGanti r s
+  simpa [tensorProduct] using
+    (D0.Algebra.finiteMatrixTensorProduct_sum_square_eq_diagonal
+      A G J hAcomm hGanti')
+
+private theorem tensorProduct_spatialId_fockId :
+    tensorProduct (spatialIdMatrix 0) fockIdMatrix =
+      (1 : CARHilbertMatrix 0) := by
+  change D0.Algebra.finiteMatrixTensorProduct
+    (spatialIdMatrix 0) fockIdMatrix = _
+  rw [show spatialIdMatrix 0 = (1 : Matrix (ArchiveRolePhasePoint 0)
+      (ArchiveRolePhasePoint 0) ℝ) by
+        ext x y
+        simp [spatialIdMatrix, Matrix.one_apply],
+    show fockIdMatrix = (1 : Matrix ArchiveFockState ArchiveFockState ℝ) by
+        ext f g
+        simp [fockIdMatrix, Matrix.one_apply]]
+  exact D0.Algebra.finiteMatrixTensorProduct_one
+
+/-- Exact square of the literal hopping matrix at the smallest period:
+`carDirac 0 ^ 2 = 4 I`. -/
+theorem carDirac_square_eq_four_id_at_zero :
+    carDirac 0 * carDirac 0 =
+      (4 : ℝ) • (1 : CARHilbertMatrix 0) := by
+  have hexp : carDirac 0 * carDirac 0 =
+      ∑ r : Role, ∑ s : Role,
+        tensorProduct
+          (spatialDiracComponent 0 s * spatialDiracComponent 0 r)
+          (fockGamma s * fockGamma r) := by
+    rw [carDirac_eq_sum_tensorProduct]
+    simp only [Finset.sum_mul, Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro r hr
+    apply Finset.sum_congr rfl
+    intro s hs
+    rw [tensorProduct_mul]
+  calc
+    carDirac 0 * carDirac 0 =
+        ∑ r : Role, ∑ s : Role,
+          tensorProduct
+            (spatialDiracComponent 0 s * spatialDiracComponent 0 r)
+            (fockGamma s * fockGamma r) := hexp
+    _ = ∑ r : Role, ∑ s : Role,
+          tensorProduct
+            (spatialDiracComponent 0 r * spatialDiracComponent 0 s)
+            (fockGamma r * fockGamma s) := by
+      rw [Finset.sum_comm]
+    _ = ∑ r : Role,
+          tensorProduct (spatialDiracComponent 0 r * spatialDiracComponent 0 r)
+            fockIdMatrix :=
+      sum_tensor_square_eq_sum_diagonal
+        (A := fun r => spatialDiracComponent 0 r)
+        (G := fockGamma) (J := fockIdMatrix)
+        spatial_zero_commute fockGamma_anticommutator
+    _ = (4 : ℝ) • (1 : CARHilbertMatrix 0) := by
+      simp_rw [spatial_zero_square, tensorProduct_spatialId_fockId]
+      simp
+      ext i j
+      simp [Matrix.ofNat_apply, Matrix.one_apply, Matrix.smul_apply]
+
+/-- At the smallest archive period, the literal hopping operator has no
+nonzero zero mode. The result is finite-period control only; it does not
+identify a continuum kernel or change the open uniform claim. -/
+theorem carDirac_zero_kernel_trivial_at_zero
+    (v : CARHilbertPoint 0 → ℝ)
+    (hv : carDirac 0 *ᵥ v = 0) : v = 0 := by
+  have hD2v : (carDirac 0 * carDirac 0) *ᵥ v = 0 := by
+    rw [← Matrix.mulVec_mulVec, hv]
+    simp
+  have hfour : (4 : ℝ) • v = 0 := by
+    calc
+      (4 : ℝ) • v = ((4 : ℝ) • (1 : CARHilbertMatrix 0)) *ᵥ v := by
+        simp [Matrix.smul_mulVec, Matrix.one_mulVec]
+      _ = (carDirac 0 * carDirac 0) *ᵥ v := by
+        rw [carDirac_square_eq_four_id_at_zero]
+      _ = 0 := hD2v
+  funext i
+  have hi := congrFun hfour i
+  simp only [Pi.smul_apply, smul_eq_mul, Pi.zero_apply] at hi
+  change v i = 0
+  nlinarith
 
 /-- Declared integer 16.  This definition does not identify `ker hoppingCarDirac`. -/
 def carDiracKernelDim : ℕ := 16

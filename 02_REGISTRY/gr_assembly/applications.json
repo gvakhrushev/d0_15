@@ -14,7 +14,10 @@
         {
           "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
           "path": "02_REGISTRY/research/ATORUS_NORMAL_JET_EINSTEIN_BRIDGE.md",
-          "sha256": "ad1a72868ca3122314661695943664a5e4f7377413b416c3ccef43ea2ad531b6"
+          "sha256": "ad1a72868ca3122314661695943664a5e4f7377413b416c3ccef43ea2ad531b6",
+          "section_refs": [
+            "L6: Exact estimator theorem"
+          ]
         }
       ],
       "reported_state": "ACCEPT AS RESEARCH / NORMAL-JET-EINSTEIN-ESTIMATOR-REACHED"
@@ -22,7 +25,7 @@
     {
       "id": "metric-provenance",
       "owner": "existing CONTROL/main research owner",
-      "statement": "The selected nondegenerate star-action quotient has Q=Theta eta Theta^T and the owned Einstein flat metric tangent.",
+      "statement": "The pinned J2 bridge reports two distinct units: (A) the nonlinear metric quotient coordinates Q_x=Theta_x eta Theta_x^T and dressed links K_(x,r)=Theta_x L_(x,r) Theta_(x+r)^(-1), including the exact endpoint isometry K_(x,r) Q_(x+r) K_(x,r)^T=Q_x for Lorentz links, and (B) the flat detector tangent DQ_flat[H(q)]=q. The Lean module proves finite raw-solder orbit completeness first for the full IsRoleLorentz group and, after adjoining equal relative determinant-orientation at every site, for its determinant-one proper subgroup. In both forms, on an all-site nondegenerate reference solder field, equality of every Q and K is equivalent to one site-dependent frame relating the coframe and link fields. It separately proves the full finite-matrix Frechet derivative and its transport through the arbitrary sitewise solder metric field map.",
       "interface": "star-metric-v1",
       "outcome": "positive",
       "kind": "analytic",
@@ -32,10 +35,91 @@
         {
           "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
           "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
-          "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc"
+          "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+          "section_refs": [
+            "L16: A. The selected finite action already owns a nonlinear metric carrier"
+          ]
+        },
+        {
+          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+          "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+          "section_refs": [
+            "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+          ]
+        },
+        {
+          "ref": "2a5ddd1598df796df01756b2c22ffe1b0d96b48e",
+          "path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+          "sha256": "daedb152b6a8a2b68ff0079876c8fe0795700d86146e23297181d1f8a7ac783b",
+          "declaration_names": [
+            "D0.Geometry.coframeMetricReadout_realizes_symmetric",
+            "D0.Geometry.solderMetric_realizes_symmetric_tangent",
+            "D0.Geometry.j2DetectorMetricPath_symmetric_tangent",
+            "D0.Geometry.j2DetectorMetricPath_symmetric_difference_quotient",
+            "D0.Geometry.j2DetectorMetricPath_hasFDerivAt_direction",
+            "D0.Geometry.j2DetectorMetricPath_hasFDerivAt_symmetric_direction",
+            "D0.Geometry.solderMetricMatrix_constant_j2DetectorMetricPath",
+            "D0.Geometry.j2DetectorMetricPath_symmetric_solder_adapter",
+            "D0.Geometry.j2DetectorMetricPath_transposeIsometry_apply",
+            "D0.Geometry.j2DetectorMetricPath_tangent_apply",
+            "D0.Geometry.j2DetectorMetricPath_hasFDerivAt_flat",
+            "D0.Geometry.solderMetricMatrix_constant_frame_hasFDerivAt",
+            "D0.Geometry.centeredCoframeMatrix_add",
+            "D0.Geometry.solderCoframeFieldToJ2Direction",
+            "D0.Geometry.solderCoframeFieldToJ2DirectionCLM",
+            "D0.Geometry.solderCoframeFieldToJ2DirectionCLM_apply",
+            "D0.Geometry.solderMetricMatrix_sitewise_eq_j2_path",
+            "D0.Geometry.solderMetricMatrix_sitewise_derivative_apply",
+            "D0.Geometry.solderMetricMatrix_sitewise_hasFDerivAt_flat",
+            "D0.Geometry.solderMetricFieldDerivative",
+            "D0.Geometry.solderMetricFieldDerivative_apply",
+            "D0.Geometry.solderMetricField_hasFDerivAt_flat"
+          ]
+        },
+        {
+          "ref": "fe15cd8c9df4dccda2957e22acd66365e6908469",
+          "path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
+          "sha256": "c696c95e7280ee5c814b82009ef866f31e54c9c82bbce88620ecb83dccb41b8c",
+          "declaration_names": [
+            "D0.Algebra.finiteGram",
+            "D0.Algebra.finiteGram_right_invariant",
+            "D0.Algebra.finiteGram_right_orbit_complete",
+            "D0.Algebra.finiteGram_dressed_transport_compatible",
+            "D0.Algebra.finiteGram_one_smul_expand"
+          ]
+        },
+        {
+          "ref": "4b1db2654ed0b3314efc97859fc64a554fcc2d13",
+          "path": "03_FORMALIZATION/D0/Algebra/FiniteGramDerivative.lean",
+          "sha256": "65b89305864cb933306cb930edf20afef8faf395a5203cb7f5dfdc63d9d43d5e",
+          "declaration_names": [
+            "D0.Algebra.finiteMatrixTransposeIsometry",
+            "D0.Algebra.finiteMatrixTransposeIsometry_apply",
+            "D0.Algebra.finiteGramTangent",
+            "D0.Algebra.finiteGramTangent_apply",
+            "D0.Algebra.finiteGram_hasFDerivAt"
+          ]
+        },
+        {
+          "ref": "fe15cd8c9df4dccda2957e22acd66365e6908469",
+          "path": "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
+          "sha256": "6e3ac022152a2d6c3f2e5274626e9b9d223e830e2ebf5b26bb3dbbeaf158cbc0",
+          "declaration_names": [
+            "D0.Geometry.a4dRightLorentz_gram_complete",
+            "D0.Geometry.a4dDressedLink_eq_iff_rightAction",
+            "D0.Geometry.a4d_complete_orbit_coordinates",
+            "D0.Geometry.a4dDressedLink_metric_compatible",
+            "D0.Geometry.a4dDressedLinkField_metric_compatible",
+            "D0.Geometry.IsProperRoleLorentz",
+            "D0.Geometry.a4dSameFrameOrientation",
+            "D0.Geometry.a4dRightLorentz_sameOrientation_isProper",
+            "D0.Geometry.a4dRightProperLorentz_gram_complete",
+            "D0.Geometry.a4d_complete_proper_orbit_coordinates"
+          ]
         }
       ],
-      "reported_state": "Main-owned metric provenance; global all-mode elimination remains obstructed."
+      "reported_state": "The source A and B units remain distinct. For A, the Lean adapter formalizes complete Q/K orbit coordinates on the finite raw-solder carrier, assuming IsUnit det(rawSolderMatrix N e x) at every reference site. The generic finiteGram_right_orbit_complete theorem in D0.Algebra is the shared orbit API and is directly consumed by the concrete IsRoleLorentz specialization; it requires an invertible reference frame but does not require eta to be invertible. The generic finiteGram_dressed_transport_compatible theorem now owns the frame-dressed endpoint Gram identity, and a4dDressedLink_metric_compatible specializes it with the existing IsRoleLorentz hypothesis and target-frame invertibility condition unchanged. The field theorem retains all-site nondegeneracy and refines to the determinant-one subgroup only when the two solder fields have equal determinant orientation at every site. This records proper determinant orientation but leaves time orientation unrestricted; the stronger SO+(1,3) source restriction is still open. The pinned source's endpoint isometry is proved for each link satisfying IsRoleLorentz, with invertibility required only at its target solder frame; the field corollary states the exact Q/K metric relation. For B, the source-convention adapter maps its frame by right multiplication with eta into the existing solder Gram carrier, retains the quadratic remainder, and proves the full finite-matrix Frechet derivative at the flat frame. The shared algebra layer now proves the generic finiteGram derivative at every frame; both the directional J2 path derivative and the flat matrix-variable derivative consume it by chain rule through t ↦ 1 + tH and H ↦ 1 + H. That derivative composes with the finite solder readout over arbitrary LocalCoframeField N perturbations and is collected into one Frechet derivative for the whole output field x ↦ solderMetricMatrix N e x, whose value at each site is exactly the existing coframeMetricReadout. Matrix derivatives use the Frobenius norm and full fields use inherited finite Pi norms. The selected-action-to-Lean-carrier map, global connection elimination, physical metric/source selection and independent C0 acceptance remain open; acceptance_inferred=false."
     },
     {
       "id": "smooth-parametrix",
@@ -48,9 +132,18 @@
       "hypotheses": {},
       "evidence": [
         {
-          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "ref": "5523d8f679c1ea02f9b73d757c81649740010d0a",
           "path": "02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
-          "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a"
+          "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a",
+          "section_refs": [
+            "L9: 0. Verdict and proof boundary",
+            "L99: 2. Choose the realization once; smooth tails and aliasing",
+            "L206: 4. Analytic IR construction and its exact limitation",
+            "L314: 5. Constant branch and nonlinear normal-center locality",
+            "L355: 6. Full summed IR remainder for a fixed realization",
+            "L403: 7. Arbitrary fixed smooth realizations: amplitude versus refinement",
+            "L447: 8. UV normal theorem: what a sufficient certificate must actually say"
+          ]
         }
       ],
       "reported_state": "PARTIAL / refinement-uniform full coupled stationary estimate unresolved"
@@ -68,7 +161,8 @@
         {
           "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
           "path": "02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md",
-          "sha256": "2a688da86de46be7c2220b8a1fe00e13d8e9b5535805ed59c9052823db5cfd8e"
+          "sha256": "2a688da86de46be7c2220b8a1fe00e13d8e9b5535805ed59c9052823db5cfd8e",
+          "section_ref": "L1: A4D resonance divisor: the phase-count nullity rule is false"
         }
       ],
       "reported_state": "Exact finite counterexample on main; full divisor classification remains open."
@@ -114,7 +208,8 @@
         {
           "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
           "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
-          "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+          "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+          "section_ref": "L1: D0 → ОТО: ПРОРЫВНАЯ exact 40→3→1 Palatini reduction for ARBITRARY time-dependent Brinkmann geometry, plus real CAR matter"
         },
         {
           "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
@@ -180,7 +275,8 @@
         {
           "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
           "path": "02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md",
-          "sha256": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7"
+          "sha256": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7",
+          "section_ref": "L171: 5. NEW full-instrument lift: six-direction reconstruction WITHOUT success postselection or a fitted reference phase"
         },
         {
           "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
@@ -303,7 +399,8 @@
           "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
           "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/theorem.md",
-          "sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8"
+          "sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8",
+          "section_ref": "L1: D0 → ОТО: БЕЗ НОВОГО DECODER — оригинальные золотые 4D boxes + inverse-PF + moving volume дают ОДНУ exact-root/GENERAL-EINSTEIN программу"
         },
         {
           "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
@@ -543,7 +640,8 @@
           "ref": "14174fc45e69004a3e7dd8348d48472d32019d0a",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
-          "sha256": "4a37dd52888e8062dd9073b8961a91c0faca9f805e3264332b923853594cd298"
+          "sha256": "4a37dd52888e8062dd9073b8961a91c0faca9f805e3264332b923853594cd298",
+          "section_ref": "L1: Exact cubic uniform-correction control"
         },
         {
           "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
@@ -593,7 +691,8 @@
           "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
-          "sha256": "3d0f2424cf5c9fb7f54bbcba0d2dd3fe351fc607d2d5f99525481d5a5f937200"
+          "sha256": "3d0f2424cf5c9fb7f54bbcba0d2dd3fe351fc607d2d5f99525481d5a5f937200",
+          "section_ref": "L1: Cubic crossed-null polynomial-chart obstruction"
         },
         {
           "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
@@ -642,7 +741,8 @@
           "ref": "1f8474a4f641f75a8d1a682b155b3416bdc2b4fc",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
-          "sha256": "9f37c24c8223e7e352e6799c3f0f69e51ae14a4759153491daaa095567e4c5f9"
+          "sha256": "9f37c24c8223e7e352e6799c3f0f69e51ae14a4759153491daaa095567e4c5f9",
+          "section_ref": "L1: Crossed-null continuum Ricci jet through fourth amplitude order"
         }
       ],
       "reported_state": "All 16 Ricci entries vanish and the two-Killing area-radius Laplacian is zero through total amplitude degree four. This is separate from the finite cubic polynomial-chart obstruction and does not establish a finite D0 root."
@@ -681,7 +781,8 @@
           "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
-          "sha256": "5ceb5f2ffe107391154797c64e463bb708dac073ea91255d0b0eae19c91249e6"
+          "sha256": "5ceb5f2ffe107391154797c64e463bb708dac073ea91255d0b0eae19c91249e6",
+          "section_ref": "L1: Exact finite crossed-null Euler jet through cubic amplitude order"
         },
         {
           "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
@@ -726,7 +827,8 @@
           "ref": "427fdcba0718044a648da7b743d7bcf14cde9c27",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
-          "sha256": "8a7ab9b73ddbeea90452648b1167822c87efb5189900149339a3b86146b5eda3"
+          "sha256": "8a7ab9b73ddbeea90452648b1167822c87efb5189900149339a3b86146b5eda3",
+          "section_ref": "L1: Selected cubic representative: quartic-order chart obstruction"
         },
         {
           "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
@@ -779,7 +881,8 @@
           "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
-          "sha256": "7dd2736ddd5d28a391bc21a4124f6d74deef898d495cad9b1778c8dffbc845f5"
+          "sha256": "7dd2736ddd5d28a391bc21a4124f6d74deef898d495cad9b1778c8dffbc845f5",
+          "section_ref": "L1: Mixed quartic crossed-null jet with free cubic modes"
         },
         {
           "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
@@ -825,7 +928,8 @@
           "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
-          "sha256": "4776e03dbcb502622fd03644f9628e2eebe47b2417d6d25c8430c7a7024cac00"
+          "sha256": "4776e03dbcb502622fd03644f9628e2eebe47b2417d6d25c8430c7a7024cac00",
+          "section_ref": "L1: Selected crossed-null branch: pure cubic and asymmetric quartic coefficients"
         },
         {
           "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
@@ -1010,7 +1114,11 @@
         {
           "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
           "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
-          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef",
+          "section_refs": [
+            "L5: 1. The correct archived clock variable is WHERE the run stopped, not only the final depth",
+            "L30: 2. NEW full-source inverse — not even the clock priors, early acceptances or κ are external numerical inputs"
+          ]
         },
         {
           "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
@@ -1291,25 +1399,62 @@
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "02_REGISTRY/research/A4D_NATIVE_BOOK03_OPERATOR_VARIATION_BOUNDARY.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/owner.md",
-          "sha256": "ecdb60f750cebc10312ea0079973370920da754f08e64a4ad0cf5432768b8f02"
+          "sha256": "ecdb60f750cebc10312ea0079973370920da754f08e64a4ad0cf5432768b8f02",
+          "section_refs": [
+            "L10: 1. Exact finite operator family and all its tangents",
+            "L31: 2. Full first source and constrained stationary equations",
+            "L80: 3. Same operator state, different field source",
+            "L116: 6. One-tick golden gate and the two-tick boundary",
+            "L122: 7. A finite path-history response of the abstract action fiber",
+            "L130: 8. Exact parameterization of the formal action-protocol family",
+            "L138: 9. Full finite two-tick `Z_D` response has no cancellation loophole"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/EndogenousActionQuantum.lean",
-          "sha256": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94"
+          "sha256": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94",
+          "section_refs": [
+            "L43: ActionProtocol",
+            "L54: ActionExcessProfile",
+            "L101: actionProtocolExcessEquiv"
+          ],
+          "declaration_names": [
+            "D0.Foundation.EndogenousActionQuantum.ActionProtocol",
+            "D0.Foundation.EndogenousActionQuantum.ActionExcessProfile",
+            "D0.Foundation.EndogenousActionQuantum.actionProtocolExcessEquiv"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "03_FORMALIZATION/D0/Research/NativeHistoryActionResponse.lean",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/NativeHistoryActionResponse.lean",
-          "sha256": "fe2664a6815c685ea1477a6421bac433ce3b80e47bc739b266c3a1e29c34446d"
+          "sha256": "fe2664a6815c685ea1477a6421bac433ce3b80e47bc739b266c3a1e29c34446d",
+          "section_refs": [
+            "L196: same_history_weight_ratio",
+            "L215: same_endpoints_different_history_costs",
+            "L304: full_two_tick_ZD_response"
+          ],
+          "declaration_names": [
+            "D0.Research.NativeHistoryActionResponse.same_history_weight_ratio",
+            "D0.Research.NativeHistoryActionResponse.same_endpoints_different_history_costs",
+            "D0.Research.NativeHistoryActionResponse.full_two_tick_ZD_response"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "03_FORMALIZATION/D0/Research/GoldenCylinderOneStepBridge.lean",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/GoldenCylinderOneStepBridge.lean",
-          "sha256": "9bb5a92ec6eea4957a0f207865eb3a20097b3709ff49f0d11620f6ca474cd9c0"
+          "sha256": "9bb5a92ec6eea4957a0f207865eb3a20097b3709ff49f0d11620f6ca474cd9c0",
+          "section_refs": [
+            "L64: blank_gate_matches_one_step_cylinders",
+            "L146: one_step_marginals_do_not_force_product_history"
+          ],
+          "declaration_names": [
+            "D0.Research.GoldenCylinderOneStepBridge.blank_gate_matches_one_step_cylinders",
+            "D0.Research.GoldenCylinderOneStepBridge.one_step_marginals_do_not_force_product_history"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
@@ -1327,13 +1472,20 @@
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_01.md",
-          "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342"
+          "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342",
+          "section_refs": [
+            "L20: 01.0 Active support/foundation layer"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
           "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_03.md",
-          "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+          "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+          "section_refs": [
+            "L21: 03.0 Active action/variation layer",
+            "L226: 03.3.2 The closed feedback action component"
+          ]
         },
         {
           "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
@@ -1701,7 +1853,8 @@
         {
           "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/scope.md",
-          "sha256": "8013e61ca5abc172a7d32ca5d840891785d0886efda669021d6ce2e2719c8ba2"
+          "sha256": "8013e61ca5abc172a7d32ca5d840891785d0886efda669021d6ce2e2719c8ba2",
+          "section_ref": "L1: Fifth-order Ward compatibility on one selected crossed-null branch"
         },
         {
           "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",

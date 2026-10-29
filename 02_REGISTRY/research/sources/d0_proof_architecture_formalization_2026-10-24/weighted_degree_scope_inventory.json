@@ -1,0 +1,90 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "88032d37e72ffe0c5868a528eeb7af8da5ec61cb9d658ddaae001c707a2aa3d1",
+  "collector_sha256": "1497aaa996931dc507035007ec738b864a10e7f4bf8da49840a9ae3109686391",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.archive_naive_weighted_car_degree_leakage_nogo_owner"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧ Fintype.card D0.Role = 4",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 36,
+            "line": 51
+          },
+          "start": {
+            "column": 0,
+            "line": 45
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 60,
+            "line": 48
+          },
+          "start": {
+            "column": 8,
+            "line": 48
+          }
+        }
+      },
+      "elaborated_type": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧ Fintype.card D0.Role = 4",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
+      "name": "D0.Geometry.archive_naive_weighted_car_degree_leakage_nogo_owner",
+      "proof_dependencies": [
+        "And.intro",
+        "D0.Dyad",
+        "D0.Geometry.naiveWeight0",
+        "D0.Geometry.naiveWeight1",
+        "D0.Geometry.sqrt_naive_weights_ne",
+        "D0.Role",
+        "D0.card_role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.sqrt",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Dyad",
+        "D0.Geometry.naiveWeight0",
+        "D0.Geometry.naiveWeight1",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.sqrt",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveNaiveWeightedDegreeLeakageNoGo.lean"
+    }
+  ]
+}

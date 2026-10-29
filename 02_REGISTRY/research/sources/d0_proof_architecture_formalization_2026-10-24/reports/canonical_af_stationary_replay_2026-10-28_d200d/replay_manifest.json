@@ -1,0 +1,111 @@
+{
+  "schema": "d0-canonical-af-stationary-replay-v1",
+  "upstream_head": "d200d411bce62fe42fe93096d1b36319936561db",
+  "sources": {
+    "parent_seed": {
+      "commit": "d9ef0b0558fcabbc097ecf2024a10b31ec0b5852",
+      "path": "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md",
+      "blob": "1766cb44e82a276d14a5546257b85a59beeab506",
+      "sha256": "fc46ba02099953c4e152258f23fadc35ddd7a7eb3b8b35783db8971d821941f1"
+    },
+    "owner_memo": {
+      "commit": "185ab21cb165cbf420291a6d8a2056dc366e5275",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "98c80d9aea2377d3a40dc2b381f644a0ca2e896b",
+      "sha256": "4acb6ce15f5c4646c06d336837efd729a2f82fed2221dc976905cdcade0db174"
+    },
+    "task_checkpoint": {
+      "commit": "185ab21cb165cbf420291a6d8a2056dc366e5275",
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "blob": "ad5b4a9bb8e376bd689d3e951b5d5afe308c170e",
+      "sha256": "ef063350120ccbda860e094f69786c22fd9d9d4a930c1496bbe21a8986d831a6"
+    },
+    "proof": {
+      "commit": "8cf4c25b4d3e34a3ce9e7e457049aacc918388d0",
+      "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md",
+      "blob": "f8675130936e45d9718781d38ef5b762ebaf0eba",
+      "sha256": "fe4b8e9033098ced52299fbc0481ab2ddecceed69c6f4392988803ab0abfa005"
+    },
+    "checker": {
+      "commit": "6415f5c8e106e48dd20c2bf72d625b33f52b2360",
+      "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/check_canonical_seed.py",
+      "blob": "49d89fa52015c55e7fb0b31dbdef6e158b552e1d",
+      "sha256": "21744ce3ea2e55dbd48a74393fd627b209d49b391e9367330858c519eab6ca94"
+    },
+    "published_result": {
+      "commit": "d200d411bce62fe42fe93096d1b36319936561db",
+      "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/result.json",
+      "blob": "e34f7444fb743d230b0a01b878c927f584d42306",
+      "sha256": "6d5fbcdf2c14ab8d2cd47e3557915b6ca17d9782f5b144f535c959ff9d81860a"
+    }
+  },
+  "execution": {
+    "status": "PASS_CANONICAL_AF_STATIONARY_REFLECTIONS",
+    "checks": 1970,
+    "environment": {
+      "numpy": "2.3.5",
+      "python": "3.13.5",
+      "scipy": "1.17.0"
+    },
+    "checker_sha256_matches_pinned_source": true,
+    "ordinary_optimized_repeat_stdout_identical": true,
+    "run_stdout_sha256": "a58c3a69e7462670142ba405ee3a8e18a2a0c51acc7d9cf523a87a376bf69f48",
+    "run_stdout_bytes": 5059,
+    "run_stderr_bytes": 0,
+    "GR_closed": false,
+    "Lean_or_CI_run": false,
+    "G_CX_SourceI_word_emitted": false,
+    "physical_AF_actuation_proved": false,
+    "AF_refinement_identified_with_spacetime_mesh": false,
+    "all42_Einstein_source_map_proved": false
+  },
+  "published_comparison": {
+    "published_result_sha256": "6d5fbcdf2c14ab8d2cd47e3557915b6ca17d9782f5b144f535c959ff9d81860a",
+    "exact_stdout_byte_match": false,
+    "structure_match": true,
+    "nonnumeric_fields_match": true,
+    "numeric_values_differ": 4,
+    "maximum_absolute_numeric_difference": 2.220446049250313e-16,
+    "numeric_differences": [
+      {
+        "path": "/nonscalar_future/preserving_future_max_source",
+        "local": 8.271806125530277e-25,
+        "published": 5.945360652724886e-25,
+        "absolute_difference": 2.3264454728053903e-25
+      },
+      {
+        "path": "/nonscalar_future/source_identity_error",
+        "local": 7.237830359838992e-25,
+        "published": 9.305781891221561e-25,
+        "absolute_difference": 2.0679515313825692e-25
+      },
+      {
+        "path": "/stationarity_does_not_select_geometry/distinct_operator_distances/1",
+        "local": 0.6763933544955827,
+        "published": 0.6763933544955826,
+        "absolute_difference": 1.1102230246251565e-16
+      },
+      {
+        "path": "/stationarity_does_not_select_geometry/distinct_operator_distances/2",
+        "local": 1.74957785629731,
+        "published": 1.7495778562973099,
+        "absolute_difference": 2.220446049250313e-16
+      }
+    ],
+    "nonnumeric_differences": []
+  },
+  "legacy_runtime_control": {
+    "environment": {
+      "numpy": "2.0.2",
+      "python": "3.9.6",
+      "scipy": "1.13.1"
+    },
+    "status": "PASS_CANONICAL_AF_STATIONARY_REFLECTIONS",
+    "checks": 1970,
+    "ordinary_and_optimized_stdout_identical": true,
+    "stderr_bytes_each": 5772,
+    "runtime_warning_lines_each": 36,
+    "stderr_sha256_each": "2fbba20efd9aae748cd9359ebefbc24423c01da070e715914baf4e9149140bc0",
+    "interpretation": "Compatibility evidence only; matrix runtime warnings are retained and not suppressed."
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schema": "d0-proof-architecture-cold-start-summary-v1",
+  "record_date": "2026-10-25",
+  "snapshot_commit": "4745618b020811b777acb4250761356b3b242355",
+  "worktree_dirty": false,
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "e726f66e2b3e418ba129a486768d85a9245eb9db106a4109d92db4724706545b",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "ripgrep": "ripgrep 15.2.0 (rev e89fff89ac)",
+    "runner_sha256": "762a3664ced0012ea56810836e7cc93c556d32778f4b96e2f2ae5018fadcfef0",
+    "search_engine_sha256": "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262"
+  },
+  "search_cases_found_all_sources": 20,
+  "search_cases_total": 20,
+  "cases": [
+    {
+      "id": "labelled-native-raising-inverse",
+      "required_sources_found": 2,
+      "required_sources_total": 2,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "positive-nonvacuum-recovery",
+      "required_sources_found": 1,
+      "required_sources_total": 1,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "golden-step-vs-internal-ratio",
+      "required_sources_found": 1,
+      "required_sources_total": 1,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "fixedright-stationary-and-minimum-scopes",
+      "required_sources_found": 2,
+      "required_sources_total": 2,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "same-fields-do-not-fix-price-source",
+      "required_sources_found": 2,
+      "required_sources_total": 2,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "same-prefix-two-ending-prospective-price",
+      "required_sources_found": 2,
+      "required_sources_total": 2,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "clock-dirac-incidence-curvature",
+      "required_sources_found": 3,
+      "required_sources_total": 3,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "gain-readiness-vs-trace-multiplicity",
+      "required_sources_found": 2,
+      "required_sources_total": 2,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "conditional-transfer-does-not-select-execution",
+      "required_sources_found": 2,
+      "required_sources_total": 2,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "verification-kernel-transfer-outside-gr",
+      "required_sources_found": 8,
+      "required_sources_total": 8,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "car-scaffolds-vs-hodge-operator-claims",
+      "required_sources_found": 28,
+      "required_sources_total": 28,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "top-hodge-inverse-spectral-outside-gr",
+      "required_sources_found": 2,
+      "required_sources_total": 2,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "dense-operator-scene-reconstruction-outside-gr",
+      "required_sources_found": 2,
+      "required_sources_total": 2,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "scoped-nogo-vs-positive-existence",
+      "required_sources_found": 2,
+      "required_sources_total": 2,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "finite-affine-carrier-parameter-recovery",
+      "required_sources_found": 4,
+      "required_sources_total": 4,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "finite-julia-null-chart-inverse",
+      "required_sources_found": 4,
+      "required_sources_total": 4,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "julia-query-principal-frame-coframe-recovery",
+      "required_sources_found": 10,
+      "required_sources_total": 10,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "finite-hermitian-adjoint-twisted-car-application",
+      "required_sources_found": 12,
+      "required_sources_total": 12,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "real-unit-profile-weighted-hermitian-bridge",
+      "required_sources_found": 19,
+      "required_sources_total": 19,
+      "found_all_required_sources": true
+    },
+    {
+      "id": "native-weighted-dirac-matrix-application",
+      "required_sources_found": 13,
+      "required_sources_total": 13,
+      "found_all_required_sources": true
+    }
+  ],
+  "benchmark_cases_total": 21,
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "v3_source_view_integration": {
+    "case_id": "car-scaffolds-vs-hodge-operator-claims",
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
+    "status": "found_direct_content",
+    "query": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 literal claim ID source candidate view",
+    "candidate_rank": 1,
+    "source_sha256": "e30de22bf507c0f65f752f08b6f98c74941ff8ecd17670b4330e89f1ce083a21",
+    "semantic_scope_review_is_manual": true
+  },
+  "semantic_scope_review_is_manual": true
+}

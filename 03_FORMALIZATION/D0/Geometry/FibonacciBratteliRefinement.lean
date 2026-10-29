@@ -1,6 +1,9 @@
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Tactic
 import D0.Core.Phi
+import D0.Algebra.FibonacciPerronTraceCanonicity
+import D0.Algebra.FibonacciAFTower
+import D0.Spectral.CanonicalRefinementScaleFlow
 
 set_option linter.unusedSimpArgs false
 
@@ -10,9 +13,11 @@ set_option linter.unusedSimpArgs false
 The golden cylinder language is the golden-mean shift of finite type: words over `{0,1}` forbidding the
 factor `11`. Its refinement/Bratteli incidence is therefore **derived, not inserted**: the allowed-word
 rule `goldenAllowed i j = (0 if i=j=1 else 1)` reproduces `M_φ = !![1,1;1,0]`. The Perron eigenvalue is
-`φ` (`M_φ² = M_φ + 1`, charpoly `x²−x−1`), the level dimensions grow as Fibonacci, and the unique
-normalized AF/cylinder trace is fixed by the left-Perron eigenvector with ratio `φ`. This is the
-present-core canonical refinement object underlying `D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001`.
+`φ` (`M_φ² = M_φ + 1`, charpoly `x²−x−1`), and the level dimensions grow as Fibonacci. The explicit
+positive left-Perron vector has component ratio `φ`; uniqueness of the normalized positive Perron
+profile is proved by the separate `D0-FIBONACCI-PERRON-PROFILE-CANONICITY-001` theorem and applied
+below. Neither result proves uniqueness of all compatible AF traces on the inductive limit. That
+stronger trace statement remains under the existing owner and its research/formalization boundary.
 -/
 
 namespace D0.Geometry.FibonacciBratteliRefinement
@@ -42,22 +47,53 @@ theorem fibonacci_level_growth :
 
 theorem phi_pos : 0 < phi := by unfold phi; positivity
 
-/-- **The unique normalized AF/cylinder trace has ratio `φ`**: the left-Perron eigenvector `w = (φ, 1)`
-satisfies `wᵀ M_φ = φ wᵀ` (`w₀ = φ·w₁` and `w₀ + w₁ = φ·w₀`, the latter via `φ² = φ + 1`), so the trace
-weight ratio is `φ`. -/
+/-- **An explicit positive left-Perron vector has ratio `φ`**: `w = (φ, 1)` satisfies
+`wᵀ M_φ = φ wᵀ` (`w₀ = φ·w₁` and `w₀ + w₁ = φ·w₀`). This is a vector identity, not a normalized
+state or a uniqueness theorem for AF traces. -/
 theorem golden_bratteli_trace_ratio :
     ∃ w : Fin 2 → ℝ, 0 < w 0 ∧ 0 < w 1 ∧ w 0 = phi * w 1 ∧ w 0 + w 1 = phi * w 0 := by
   refine ⟨![phi, 1], phi_pos, one_pos, by simp, ?_⟩
   simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons]
   have := phi_sq; nlinarith [this]
 
-/-- **D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001.** The golden cylinder language canonically determines
-its refinement Bratteli incidence `M_φ` (recovered from the forbid-`11` rule), with Perron eigenvalue `φ`,
-Fibonacci level growth, and a unique normalized trace of ratio `φ`. No incidence matrix is inserted. -/
+/-- Apply the separate normalized positive eigenprofile result to the Fibonacci incidence profile.
+This proves uniqueness of the two-component profile, not uniqueness of every compatible AF trace. -/
+theorem fibonacci_bratteli_profile_application :
+    D0.Foundation.M1Forced
+      D0.Algebra.FibonacciPerronTraceCanonicity.CanonicalPerronProfile
+      (phi⁻¹, phi⁻¹ ^ 2) :=
+  D0.Algebra.FibonacciPerronTraceCanonicity.perron_profile_m1_forced
+
+/-- **D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001 (formalized finite incidence slice).** The golden
+cylinder language determines the finite incidence `M_φ` (recovered from the forbid-`11` rule), with
+quadratic identity and Fibonacci growth. It also constructs an explicit positive left-Perron vector;
+uniqueness of the normalized positive eigenprofile is applied in `fibonacci_bratteli_profile_application`.
+The owner does not thereby prove uniqueness of every compatible AF trace on an inductive limit. -/
 theorem fibonacci_bratteli_refinement_owner :
     Mphi = Matrix.of (fun i j => goldenAllowed i j)
       ∧ Mphi ^ 2 = Mphi + 1
       ∧ (∃ w : Fin 2 → ℝ, 0 < w 0 ∧ 0 < w 1 ∧ w 0 = phi * w 1 ∧ w 0 + w 1 = phi * w 0) :=
   ⟨incidence_recovered_from_language, perron_eigenvalue_golden, golden_bratteli_trace_ratio⟩
+
+/-- **D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001 (finite composition).** Bind the recovered
+incidence, the actual all-level finite-real refinement functional, the normalized Perron profile, and
+the dimensionless scale step into one checked application. The functional is not asserted here to be a
+positive state on a complex AF limit. -/
+theorem finite_renormalization_refinement_composition :
+    Mphi = Matrix.of (fun i j => goldenAllowed i j)
+      ∧ (∀ n : ℕ, ∀ z : D0.Algebra.FibonacciAFTower.FibonacciAFLevel n,
+          D0.Algebra.FibonacciAFTower.fibonacciAFTrace (n + 1)
+              (D0.Algebra.FibonacciAFTower.fibonacciAFRefinementHom n z) =
+            D0.Algebra.FibonacciAFTower.fibonacciAFTrace n z)
+      ∧ (∀ n : ℕ,
+          D0.Spectral.CanonicalRefinementScaleFlow.Lambda (n + 1) /
+              D0.Spectral.CanonicalRefinementScaleFlow.Lambda n = phi)
+      ∧ D0.Foundation.M1Forced
+          D0.Algebra.FibonacciPerronTraceCanonicity.CanonicalPerronProfile
+          (phi⁻¹, phi⁻¹ ^ 2) := by
+  refine ⟨incidence_recovered_from_language, ?_, ?_, fibonacci_bratteli_profile_application⟩
+  · intro n z
+    exact D0.Algebra.FibonacciAFTower.fibonacciAFRefinement_trace_preserving n z
+  · exact D0.Spectral.CanonicalRefinementScaleFlow.scale_ratio_forced
 
 end D0.Geometry.FibonacciBratteliRefinement

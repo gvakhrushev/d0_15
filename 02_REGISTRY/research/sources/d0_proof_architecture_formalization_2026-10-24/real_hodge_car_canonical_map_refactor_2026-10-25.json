@@ -1,0 +1,4683 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "d67eb595f09e13e682a4c26035efec4d45f24a03",
+  "worktree_dirty": true,
+  "lean_source_digest": "74b6c15666c7de63f098cc92d74772c1e4e65fe0643c43fe296ab7ce79f5600e",
+  "collector_sha256": "7043a40e051ae7717f95638b649187c90c25a31f2e4b9b446fbc3545f8237eb2",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Geometry.ArchiveHodgeCARDiracKernel"
+  ],
+  "module_prefix": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.cochainDifferenceLaplacian N ψ = 0 ↔\n  ∀ (s : D0.Geometry.ArchiveFockState) (x y : D0.Geometry.ArchiveRolePhaseGroup N), ψ (x, s) = ψ (y, s)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 64,
+            "line": 264
+          },
+          "start": {
+            "column": 0,
+            "line": 249
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 46,
+            "line": 249
+          },
+          "start": {
+            "column": 8,
+            "line": 249
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.cochainDifferenceLaplacian N ψ = 0 ↔\n    ∀ (s : D0.Geometry.ArchiveFockState) (x y : D0.Geometry.ArchiveRolePhaseGroup N), ψ (x, s) = ψ (y, s)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.cochainDifferenceLaplacian_eq_zero_iff",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.cochainDifferenceLaplacian",
+        "D0.Geometry.scalarDifferenceLaplacian",
+        "D0.Geometry.scalarDifferenceLaplacian_eq_zero_iff_constant",
+        "Eq",
+        "Iff.intro",
+        "Iff.mp",
+        "Iff.mpr",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "congrFun",
+        "funext",
+        "id"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.cochainDifferenceLaplacian",
+        "Eq",
+        "Iff",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "φ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.cochainPairing N ψ φ = ∑ x, ∑ s, ψ (x, s) * φ (x, s)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N), D0.Geometry.cochainPairing N ψ φ = ∑ x, ∑ s, ψ (x, s) * φ (x, s)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.cochainPairing.eq_1",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.cochainPairing",
+        "Eq.refl",
+        "Nat",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.cochainPairing",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "ZMod",
+        "ZMod.fintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.cochainPairing N ψ ψ = 0 ↔ ψ = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 28,
+            "line": 301
+          },
+          "start": {
+            "column": 0,
+            "line": 275
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 39,
+            "line": 275
+          },
+          "start": {
+            "column": 8,
+            "line": 275
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N), D0.Geometry.cochainPairing N ψ ψ = 0 ↔ ψ = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.cochainPairing_self_eq_zero_iff",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddGroup.existsAddOfLE",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.cochainPairing",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.mp",
+        "Eq.refl",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mem_univ",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.sum_const_zero",
+        "Finset.sum_eq_zero_iff_of_nonneg",
+        "Finset.sum_nonneg",
+        "Finset.univ",
+        "HMul.hMul",
+        "Iff.intro",
+        "Iff.mp",
+        "IsOrderedAddMonoid.toAddLeftMono",
+        "IsOrderedRing.toPosMulMono",
+        "LE.le",
+        "Lattice.toSemilatticeInf",
+        "Membership.mem",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "Nat",
+        "NormMulClass.toNoZeroDivisors",
+        "NormedCommRing.toNormedRing",
+        "NormedDivisionRing.toNormMulClass",
+        "NormedField.toNormedDivisionRing",
+        "OfNat.ofNat",
+        "PartialOrder.toPreorder",
+        "Pi.instFintype",
+        "Pi.instZero",
+        "Preorder.toLE",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instAddGroup",
+        "Real.instIsOrderedAddMonoid",
+        "Real.instIsOrderedRing",
+        "Real.instLE",
+        "Real.instMul",
+        "Real.instPreorder",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.normedCommRing",
+        "Real.normedField",
+        "Real.partialOrder",
+        "Real.semiring",
+        "SemilatticeInf.toPartialOrder",
+        "SetLike.instMembership",
+        "True",
+        "ZMod",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribLatticeOfLinearOrder",
+        "instFintypeProd",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "mul_self_eq_zero",
+        "mul_self_nonneg",
+        "of_eq_true",
+        "propext"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.cochainPairing",
+        "Eq",
+        "Iff",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.cochainPairing N ψ 0 = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 23,
+            "line": 273
+          },
+          "start": {
+            "column": 0,
+            "line": 271
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 33,
+            "line": 271
+          },
+          "start": {
+            "column": 8,
+            "line": 271
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N), D0.Geometry.cochainPairing N ψ 0 = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.cochainPairing_zero_right",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.cochainPairing",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Eq.refl",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.sum_const_zero",
+        "Finset.univ",
+        "HMul.hMul",
+        "Membership.mem",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Real.semiring",
+        "SetLike.instMembership",
+        "True",
+        "ZMod",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.cochainPairing",
+        "Eq",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "∑ x, f x * (2 * f x - f (x + D0.Geometry.roleStep N r) - f (x - D0.Geometry.roleStep N r)) =\n  ∑ x, (f (x + D0.Geometry.roleStep N r) - f x) ^ 2",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 168
+          },
+          "start": {
+            "column": 0,
+            "line": 127
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 44,
+            "line": 127
+          },
+          "start": {
+            "column": 8,
+            "line": 127
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (r : D0.Role) (f : D0.Geometry.ArchiveRolePhaseGroup N → ℝ),\n  ∑ x, f x * (2 * f x - f (x + D0.Geometry.roleStep N r) - f (x - D0.Geometry.roleStep N r)) =\n    ∑ x, (f (x + D0.Geometry.roleStep N r) - f x) ^ 2",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.directional_second_difference_energy",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toNatCast",
+        "AddSemigroup.toAdd",
+        "AddZero.toAdd",
+        "AddZeroClass.toAddZero",
+        "CommMagma.toMul",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.directional_second_difference_energy._abel_1_1",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleStep",
+        "D0.Geometry.sum_sub_sub",
+        "D0.Geometry.sum_translate",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_add_distrib",
+        "Finset.sum_congr",
+        "Finset.sum_neg_distrib",
+        "Finset.univ",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.coeff_one",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_bit0",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_nat",
+        "Mathlib.Tactic.Ring.Common.pow_one",
+        "Mathlib.Tactic.Ring.Common.pow_one_cast_of_isNat",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocCommSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocCommSemiring.toCommMagma",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instAdd",
+        "Pi.instFintype",
+        "Pi.instNeg",
+        "Pi.instSub",
+        "Pi.subNegMonoid",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instAddGroup",
+        "Real.instAddSemigroup",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.normedCommRing",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegMonoid.toAddMonoid",
+        "SubNegMonoid.toNeg",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toAddCommMonoid",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "add_assoc",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "inferInstance",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "mul_comm",
+        "of_eq_true",
+        "rfl",
+        "sub_eq_add_neg"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "Pi.instAdd",
+        "Pi.instFintype",
+        "Pi.instSub",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "Ring.toAddGroupWithOne",
+        "SubNegMonoid.toSub",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "x + -D0.Geometry.roleStep N r + D0.Geometry.roleStep N r = x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N),\n  x + -D0.Geometry.roleStep N r + D0.Geometry.roleStep N r = x",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.directional_second_difference_energy._abel_1_1",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "Int",
+        "Int.instAdd",
+        "Int.instNegInt",
+        "Int.instRing",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsNat.to_eq",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Abel.subst_into_addg",
+        "Mathlib.Tactic.Abel.subst_into_negg",
+        "Mathlib.Tactic.Abel.term_add_constg",
+        "Mathlib.Tactic.Abel.term_add_termg",
+        "Mathlib.Tactic.Abel.term_atomg",
+        "Mathlib.Tactic.Abel.term_neg",
+        "Mathlib.Tactic.Abel.termg",
+        "Mathlib.Tactic.Abel.zero_termg",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "OfNat.ofNat",
+        "Pi.addCommGroup",
+        "Pi.addZeroClass",
+        "Pi.instAdd",
+        "Pi.instNeg",
+        "Pi.instZero",
+        "Pi.negZeroClass",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instMulZeroClassOfSemiring",
+        "instOfNat",
+        "neg_zero",
+        "zero_add"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "Pi.instAdd",
+        "Pi.instNeg",
+        "Ring.toAddCommGroup",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "ZMod",
+        "ZMod.commRing",
+        "instDistribOfSemiring",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "φ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDirac N (ψ + φ) = D0.Geometry.hodgeCarDirac N ψ + D0.Geometry.hodgeCarDirac N φ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 53,
+            "line": 39
+          },
+          "start": {
+            "column": 0,
+            "line": 31
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 25,
+            "line": 31
+          },
+          "start": {
+            "column": 8,
+            "line": 31
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.hodgeCarDirac N (ψ + φ) = D0.Geometry.hodgeCarDirac N ψ + D0.Geometry.hodgeCarDirac N φ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDirac_add",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeCarDiracₗ_apply",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "HAdd.hAdd",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.map_add",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instAdd",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Trans.trans",
+        "congrArg",
+        "id",
+        "instHAdd",
+        "instTransEq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "Pi.instAdd",
+        "Real",
+        "Real.instAdd",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDirac N ψ = 0 ↔ ψ = D0.Geometry.hodgeKernelSection N fun s => ψ (0, s)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 53,
+            "line": 324
+          },
+          "start": {
+            "column": 0,
+            "line": 314
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 41,
+            "line": 314
+          },
+          "start": {
+            "column": 8,
+            "line": 314
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.hodgeCarDirac N ψ = 0 ↔ ψ = D0.Geometry.hodgeKernelSection N fun s => ψ (0, s)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDirac_eq_zero_iff_section",
+      "proof_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDirac_eq_zero_iff_sq_zero",
+        "D0.Geometry.hodgeCarDirac_sq_eq_zero_iff_constant",
+        "D0.Geometry.hodgeKernelSection",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.symm",
+        "Eq.trans",
+        "Iff",
+        "Iff.intro",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.mk.eta",
+        "Prod.snd",
+        "Real",
+        "Real.instZero",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "funext",
+        "id",
+        "instMulZeroClassOfSemiring",
+        "propext"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeKernelSection",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Iff",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instZero",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDirac N ψ = 0 ↔ D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 56,
+            "line": 312
+          },
+          "start": {
+            "column": 0,
+            "line": 303
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 41,
+            "line": 303
+          },
+          "start": {
+            "column": 8,
+            "line": 303
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.hodgeCarDirac N ψ = 0 ↔ D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDirac_eq_zero_iff_sq_zero",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.cochainPairing",
+        "D0.Geometry.cochainPairing_self_eq_zero_iff",
+        "D0.Geometry.cochainPairing_zero_right",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDirac_self_adjoint",
+        "D0.Geometry.hodgeCarDirac_zero",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Iff.intro",
+        "Iff.mp",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "Eq",
+        "Iff",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "Module.finrank ℝ ↥(D0.Geometry.hodgeCarDiracₗ N).ker = 16",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 28,
+            "line": 371
+          },
+          "start": {
+            "column": 0,
+            "line": 368
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 36,
+            "line": 368
+          },
+          "start": {
+            "column": 8,
+            "line": 368
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ), Module.finrank ℝ ↥(D0.Geometry.hodgeCarDiracₗ N).ker = 16",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDirac_kernel_finrank",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.card_archive_fock_state",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeKernelEquiv",
+        "D0.Role",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin.fintype",
+        "Fintype.card",
+        "LinearEquiv.finrank_eq",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Module.finrank",
+        "Module.finrank_fintype_fun_eq_card",
+        "Nat",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instNontrivial",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "commRing_strongRankCondition",
+        "congrArg",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "Eq",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Module.finrank",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDirac N (a • ψ) = a • D0.Geometry.hodgeCarDirac N ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 61,
+            "line": 47
+          },
+          "start": {
+            "column": 0,
+            "line": 41
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 26,
+            "line": 41
+          },
+          "start": {
+            "column": 8,
+            "line": 41
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (a : ℝ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.hodgeCarDirac N (a • ψ) = a • D0.Geometry.hodgeCarDirac N ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDirac_smul",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeCarDiracₗ_apply",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Function.hasSMul",
+        "HSMul.hSMul",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.map_smul",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Trans.trans",
+        "congrArg",
+        "id",
+        "instHSMul",
+        "instSMulOfMul",
+        "instTransEq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "Eq",
+        "Function.hasSMul",
+        "HSMul.hSMul",
+        "Nat",
+        "Real",
+        "Real.instMul",
+        "instHSMul",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) = 0 ↔\n  ∀ (s : D0.Geometry.ArchiveFockState) (x y : D0.Geometry.ArchiveRolePhaseGroup N), ψ (x, s) = ψ (y, s)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 50,
+            "line": 269
+          },
+          "start": {
+            "column": 0,
+            "line": 266
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 45,
+            "line": 266
+          },
+          "start": {
+            "column": 8,
+            "line": 266
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) = 0 ↔\n    ∀ (s : D0.Geometry.ArchiveFockState) (x y : D0.Geometry.ArchiveRolePhaseGroup N), ψ (x, s) = ψ (y, s)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDirac_sq_eq_zero_iff_constant",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.cochainDifferenceLaplacian",
+        "D0.Geometry.cochainDifferenceLaplacian_eq_zero_iff",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDirac_sq",
+        "Eq",
+        "Eq.mpr",
+        "Iff",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDirac",
+        "Eq",
+        "Iff",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDirac N 0 = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 59,
+            "line": 50
+          },
+          "start": {
+            "column": 0,
+            "line": 49
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 26,
+            "line": 49
+          },
+          "start": {
+            "column": 8,
+            "line": 49
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ), D0.Geometry.hodgeCarDirac N 0 = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDirac_zero",
+      "proof_dependencies": [
+        "AddMonoid.toAddZeroClass",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDirac_smul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mp",
+        "Function.hasSMul",
+        "HSMul.hSMul",
+        "MulZeroClass.toSMulWithZero",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toDistribSMul",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Pi.smulWithZero",
+        "Pi.smulZeroClass",
+        "Real",
+        "Real.instAddMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instSMulOfMul",
+        "smul_zero",
+        "zero_smul"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "Eq",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.ArchiveCochain N →ₗ[ℝ] D0.Geometry.ArchiveCochain N",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 27,
+            "line": 23
+          },
+          "start": {
+            "column": 0,
+            "line": 22
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 32,
+            "line": 22
+          },
+          "start": {
+            "column": 18,
+            "line": 22
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → D0.Geometry.ArchiveCochain N →ₗ[ℝ] D0.Geometry.ArchiveCochain N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDiracₗ",
+      "proof_dependencies": [
+        "D0.Geometry.hodgeCarDiracHermitianₗ",
+        "Nat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "LinearMap",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.hodgeCarDiracₗ N) ψ = D0.Geometry.hodgeCarDirac N ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 61,
+            "line": 29
+          },
+          "start": {
+            "column": 0,
+            "line": 25
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 28,
+            "line": 27
+          },
+          "start": {
+            "column": 8,
+            "line": 27
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N), (D0.Geometry.hodgeCarDiracₗ N) ψ = D0.Geometry.hodgeCarDirac N ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDiracₗ_apply",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDiracHermitianₗ",
+        "D0.Geometry.hodgeCarDirac_eq_finiteHermitianHodgeDirac",
+        "DFunLike.coe",
+        "Eq.symm",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "DFunLike.coe",
+        "Eq",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDiracₗ N = D0.Geometry.hodgeCarDiracHermitianₗ N",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 5,
+            "line": 330
+          },
+          "start": {
+            "column": 0,
+            "line": 326
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 51,
+            "line": 328
+          },
+          "start": {
+            "column": 8,
+            "line": 328
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ), D0.Geometry.hodgeCarDiracₗ N = D0.Geometry.hodgeCarDiracHermitianₗ N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeCarDiracₗ_eq_finiteHermitianHodgeDirac",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "Eq.refl",
+        "LinearMap",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDiracHermitianₗ",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "Eq",
+        "LinearMap",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "↥(D0.Geometry.hodgeCarDiracₗ N).ker ≃ₗ[ℝ] D0.Geometry.ArchiveFockState → ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 22,
+            "line": 366
+          },
+          "start": {
+            "column": 0,
+            "line": 346
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 34,
+            "line": 346
+          },
+          "start": {
+            "column": 18,
+            "line": 346
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → ↥(D0.Geometry.hodgeCarDiracₗ N).ker ≃ₗ[ℝ] D0.Geometry.ArchiveFockState → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelEquiv",
+      "proof_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddHom.mk",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeKernelEquiv._proof_1",
+        "D0.Geometry.hodgeKernelEquiv._proof_2",
+        "D0.Geometry.hodgeKernelEquiv._proof_4",
+        "D0.Geometry.hodgeKernelEquiv._proof_5",
+        "D0.Geometry.hodgeKernelSection_mem_ker",
+        "D0.Geometry.hodgeKernelSectionₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "LinearEquiv.mk",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "LinearMap.mk",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.mk",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instMulZeroClassOfSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "LinearEquiv",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Geometry.ArchiveHodgeCARDiracKernel.4170666257._hygCtx._hyg.47",
+          "type": "↥(D0.Geometry.hodgeCarDiracₗ N).ker"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Geometry.ArchiveHodgeCARDiracKernel.4170666257._hygCtx._hyg.49",
+          "type": "↥(D0.Geometry.hodgeCarDiracₗ N).ker"
+        }
+      ],
+      "conclusion_whnf": "(fun s => ↑(x✝¹ + x✝) (0, s)) = fun s => ↑(x✝¹ + x✝) (0, s)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (x x_1 : ↥(D0.Geometry.hodgeCarDiracₗ N).ker), (fun s => ↑(x + x_1) (0, s)) = fun s => ↑(x + x_1) (0, s)",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelEquiv._proof_1",
+      "proof_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "HAdd.hAdd",
+        "LinearMap.ker",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instHAdd",
+        "instMulZeroClassOfSemiring",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "HAdd.hAdd",
+        "LinearMap.ker",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instHAdd",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Geometry.ArchiveHodgeCARDiracKernel.4170666257._hygCtx._hyg.54",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Geometry.ArchiveHodgeCARDiracKernel.4170666257._hygCtx._hyg.56",
+          "type": "↥(D0.Geometry.hodgeCarDiracₗ N).ker"
+        }
+      ],
+      "conclusion_whnf": "(fun s => ↑(x✝¹ • x✝) (0, s)) = fun s => ↑(x✝¹ • x✝) (0, s)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (x : ℝ) (x_1 : ↥(D0.Geometry.hodgeCarDiracₗ N).ker), (fun s => ↑(x • x_1) (0, s)) = fun s => ↑(x • x_1) (0, s)",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelEquiv._proof_2",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "HSMul.hSMul",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Module.toDistribMulAction",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "SMulZeroClass.toSMul",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "HSMul.hSMul",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Module.toDistribMulAction",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "SMulZeroClass.toSMul",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.addCommMonoid",
+        "Submodule.module",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instHSMul",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "↥(D0.Geometry.hodgeCarDiracₗ N).ker"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.hodgeCarDiracₗ N) ((D0.Geometry.hodgeKernelSectionₗ N) fun s => ↑ψ (0, s)) = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (ψ : ↥(D0.Geometry.hodgeCarDiracₗ N).ker),\n  ((D0.Geometry.hodgeKernelSectionₗ N) fun s => ↑ψ (0, s)) ∈ (D0.Geometry.hodgeCarDiracₗ N).ker",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelEquiv._proof_3",
+      "proof_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeKernelSection_mem_ker",
+        "D0.Role",
+        "D0.archiveFibers",
+        "LinearMap.ker",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instMulZeroClassOfSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeKernelSectionₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "↥(D0.Geometry.hodgeCarDiracₗ N).ker"
+        }
+      ],
+      "conclusion_whnf": "⟨(D0.Geometry.hodgeKernelSectionₗ N) fun s => ↑ψ (0, s), ⋯⟩ = ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (ψ : ↥(D0.Geometry.hodgeCarDiracₗ N).ker), ⟨(D0.Geometry.hodgeKernelSectionₗ N) fun s => ↑ψ (0, s), ⋯⟩ = ψ",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelEquiv._proof_4",
+      "proof_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDirac_eq_zero_iff_sq_zero",
+        "D0.Geometry.hodgeCarDirac_sq_eq_zero_iff_constant",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeCarDiracₗ_apply",
+        "D0.Geometry.hodgeKernelSection_mem_ker",
+        "D0.Geometry.hodgeKernelSectionₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.symm",
+        "Iff.mp",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instZero",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.ext",
+        "Subtype.mk",
+        "Subtype.property",
+        "Subtype.val",
+        "Trans.trans",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "funext",
+        "instMulZeroClassOfSemiring",
+        "instTransEq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeKernelEquiv._proof_3",
+        "D0.Geometry.hodgeKernelSectionₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.mk",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "D0.Geometry.ArchiveFockState → ℝ"
+        }
+      ],
+      "conclusion_whnf": "(fun s => ↑⟨(D0.Geometry.hodgeKernelSectionₗ N) c, ⋯⟩ (0, s)) = c",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (c : D0.Geometry.ArchiveFockState → ℝ), (fun s => ↑⟨(D0.Geometry.hodgeKernelSectionₗ N) c, ⋯⟩ (0, s)) = c",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelEquiv._proof_5",
+      "proof_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeKernelSection_mem_ker",
+        "D0.Geometry.hodgeKernelSectionₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq.refl",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype",
+        "Subtype.mk",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "funext",
+        "instMulZeroClassOfSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeKernelSection_mem_ker",
+        "D0.Geometry.hodgeKernelSectionₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Subtype.mk",
+        "Subtype.val",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "D0.Geometry.ArchiveFockState → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.ArchiveCochainBasis N → ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 16,
+            "line": 54
+          },
+          "start": {
+            "column": 0,
+            "line": 52
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 22,
+            "line": 53
+          },
+          "start": {
+            "column": 4,
+            "line": 53
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Geometry.ArchiveFockState → ℝ) → D0.Geometry.ArchiveCochain N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelSection",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "Nat",
+        "Prod.snd",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveFockState",
+        "Nat",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "D0.Geometry.ArchiveFockState → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N × D0.Geometry.ArchiveFockState"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeKernelSection N c p = c p.2",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (c : D0.Geometry.ArchiveFockState → ℝ) (p : D0.Geometry.ArchiveCochainBasis N),\n  D0.Geometry.hodgeKernelSection N c p = c p.2",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelSection.eq_1",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.hodgeKernelSection",
+        "Eq.refl",
+        "Nat",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeKernelSection",
+        "Eq",
+        "Nat",
+        "Prod.snd",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "∀ ⦃a₁ a₂ : D0.Geometry.ArchiveFockState → ℝ⦄,\n  D0.Geometry.hodgeKernelSection N a₁ = D0.Geometry.hodgeKernelSection N a₂ → a₁ = a₂",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 39,
+            "line": 61
+          },
+          "start": {
+            "column": 0,
+            "line": 56
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 36,
+            "line": 56
+          },
+          "start": {
+            "column": 8,
+            "line": 56
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ), Function.Injective (D0.Geometry.hodgeKernelSection N)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelSection_injective",
+      "proof_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeKernelSection",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "congrFun",
+        "funext",
+        "instMulZeroClassOfSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.hodgeKernelSection",
+        "Function.Injective",
+        "Nat",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "D0.Geometry.ArchiveFockState → ℝ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.hodgeCarDiracₗ N) ((D0.Geometry.hodgeKernelSectionₗ N) c) = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 60,
+            "line": 344
+          },
+          "start": {
+            "column": 0,
+            "line": 338
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 34,
+            "line": 338
+          },
+          "start": {
+            "column": 8,
+            "line": 338
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (c : D0.Geometry.ArchiveFockState → ℝ),\n  (D0.Geometry.hodgeKernelSectionₗ N) c ∈ (D0.Geometry.hodgeCarDiracₗ N).ker",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelSection_mem_ker",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDirac_eq_zero_iff_section",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeCarDiracₗ_apply",
+        "D0.Geometry.hodgeKernelSection",
+        "D0.Geometry.hodgeKernelSectionₗ",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mpr",
+        "Iff.mpr",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "LinearMap.mem_ker",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instZero",
+        "Prod.mk",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instZero",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike",
+        "Trans.trans",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "instMulZeroClassOfSemiring",
+        "instTransEq",
+        "propext",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.hodgeKernelSectionₗ",
+        "DFunLike.coe",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "LinearMap.ker",
+        "Membership.mem",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Submodule",
+        "Submodule.setLike"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.ArchiveFockState → ℝ) →ₗ[ℝ] D0.Geometry.ArchiveCochain N",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 22,
+            "line": 336
+          },
+          "start": {
+            "column": 0,
+            "line": 332
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 23,
+            "line": 332
+          },
+          "start": {
+            "column": 4,
+            "line": 332
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Geometry.ArchiveFockState → ℝ) →ₗ[ℝ] D0.Geometry.ArchiveCochain N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelSectionₗ",
+      "proof_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddHom.mk",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.hodgeKernelSection",
+        "D0.Geometry.hodgeKernelSectionₗ._proof_1",
+        "D0.Geometry.hodgeKernelSectionₗ._proof_2",
+        "LinearMap.mk",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "LinearMap",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Geometry.ArchiveHodgeCARDiracKernel.2254326697._hygCtx._hyg.34",
+          "type": "D0.Geometry.ArchiveFockState → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Geometry.ArchiveHodgeCARDiracKernel.2254326697._hygCtx._hyg.36",
+          "type": "D0.Geometry.ArchiveFockState → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeKernelSection N (x✝¹ + x✝) = D0.Geometry.hodgeKernelSection N (x✝¹ + x✝)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (x x_1 : D0.Geometry.ArchiveFockState → ℝ),\n  D0.Geometry.hodgeKernelSection N (x + x_1) = D0.Geometry.hodgeKernelSection N (x + x_1)",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelSectionₗ._proof_1",
+      "proof_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.hodgeKernelSection",
+        "HAdd.hAdd",
+        "Nat",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "instHAdd",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.hodgeKernelSection",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Geometry.ArchiveHodgeCARDiracKernel.2254326697._hygCtx._hyg.41",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Geometry.ArchiveHodgeCARDiracKernel.2254326697._hygCtx._hyg.43",
+          "type": "D0.Geometry.ArchiveFockState → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeKernelSection N (x✝¹ • x✝) = D0.Geometry.hodgeKernelSection N (x✝¹ • x✝)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (x : ℝ) (x_1 : D0.Geometry.ArchiveFockState → ℝ),\n  D0.Geometry.hodgeKernelSection N (x • x_1) = D0.Geometry.hodgeKernelSection N (x • x_1)",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.hodgeKernelSectionₗ._proof_2",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.hodgeKernelSection",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "HSMul.hSMul",
+        "Module.toDistribMulAction",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "instHSMul",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.hodgeKernelSection",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "HSMul.hSMul",
+        "Module.toDistribMulAction",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "instHSMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N), f (x + D0.Geometry.roleStep N r) = f x"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "f (x + k • D0.Geometry.roleStep N r) = f x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 41,
+            "line": 81
+          },
+          "start": {
+            "column": 0,
+            "line": 74
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 27,
+            "line": 74
+          },
+          "start": {
+            "column": 8,
+            "line": 74
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : ℕ} {f : D0.Geometry.ArchiveRolePhaseGroup N → ℝ},\n  (∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N), f (x + D0.Geometry.roleStep N r) = f x) →\n    ∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N) (k : ℕ), f (x + k • D0.Geometry.roleStep N r) = f x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.invariant_add_nsmul",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddSemigroup",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddSemigroup.toAdd",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Nat",
+        "Nat.recAux",
+        "OfNat.ofNat",
+        "Pi.addMonoid",
+        "Pi.addSemigroup",
+        "Pi.addZeroClass",
+        "Pi.instAdd",
+        "Real",
+        "Ring.toAddGroupWithOne",
+        "True",
+        "ZMod",
+        "ZMod.commRing",
+        "Zero.toOfNat0",
+        "add_assoc",
+        "add_zero",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instAddNat",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHSMul",
+        "instOfNatNat",
+        "of_eq_true",
+        "succ_nsmul",
+        "zero_nsmul"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Nat",
+        "Pi.addMonoid",
+        "Pi.instAdd",
+        "Real",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHSMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N), f (x + D0.Geometry.roleStep N r) = f x"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Finset D0.Role"
+        }
+      ],
+      "conclusion_whnf": "f (x + ∑ r ∈ s, (z r).val • D0.Geometry.roleStep N r) = f x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 43,
+            "line": 97
+          },
+          "start": {
+            "column": 0,
+            "line": 83
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 83
+          },
+          "start": {
+            "column": 8,
+            "line": 83
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : ℕ} {f : D0.Geometry.ArchiveRolePhaseGroup N → ℝ},\n  (∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N), f (x + D0.Geometry.roleStep N r) = f x) →\n    ∀ (x z : D0.Geometry.ArchiveRolePhaseGroup N) (s : Finset D0.Role),\n      f (x + ∑ r ∈ s, (z r).val • D0.Geometry.roleStep N r) = f x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.invariant_partial_sum",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.invariant_add_nsmul",
+        "D0.Geometry.invariant_partial_sum._abel_1_1",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "EmptyCollection.emptyCollection",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "Finset",
+        "Finset.induction_on",
+        "Finset.instEmptyCollection",
+        "Finset.instInsert",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.sum_insert",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "Insert.insert",
+        "Membership.mem",
+        "Nat",
+        "Nat.cast",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "Not",
+        "OfNat.ofNat",
+        "Pi.addCommMonoid",
+        "Pi.addMonoid",
+        "Pi.addZeroClass",
+        "Pi.instAdd",
+        "Pi.nonAssocSemiring",
+        "Pi.ring",
+        "Real",
+        "Ring.toAddGroupWithOne",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "True",
+        "ZMod",
+        "ZMod.cast",
+        "ZMod.commRing",
+        "ZMod.natCast_val",
+        "ZMod.val",
+        "Zero.toOfNat0",
+        "add_zero",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHSMul",
+        "instOfNatNat",
+        "nsmul_eq_mul",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq",
+        "Finset",
+        "Finset.sum",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "Pi.addCommMonoid",
+        "Pi.addMonoid",
+        "Pi.instAdd",
+        "Real",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.val",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHSMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a",
+          "type": "D0.Dyad × D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Finset D0.Role"
+        }
+      ],
+      "conclusion_whnf": "x + ((z a).val • D0.Geometry.roleStep N a + ∑ r ∈ s, (z r).val • D0.Geometry.roleStep N r) =\n  x + ∑ r ∈ s, (z r).val • D0.Geometry.roleStep N r + (z a).val • D0.Geometry.roleStep N a",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ {N : ℕ} (x z : D0.Geometry.ArchiveRolePhaseGroup N) (a : D0.Role) (s : Finset D0.Role),\n  x + ((z a).val • D0.Geometry.roleStep N a + ∑ r ∈ s, (z r).val • D0.Geometry.roleStep N r) =\n    x + ∑ r ∈ s, (z r).val • D0.Geometry.roleStep N r + (z a).val • D0.Geometry.roleStep N a",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.invariant_partial_sum._abel_1_1",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq.symm",
+        "Eq.trans",
+        "Finset",
+        "Finset.sum",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Int",
+        "Mathlib.Tactic.Abel.const_add_termg",
+        "Mathlib.Tactic.Abel.subst_into_addg",
+        "Mathlib.Tactic.Abel.term_add_constg",
+        "Mathlib.Tactic.Abel.term_atomg",
+        "Mathlib.Tactic.Abel.termg",
+        "MulZeroClass.toZero",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.addCommGroup",
+        "Pi.addCommMonoid",
+        "Pi.addMonoid",
+        "Pi.addZeroClass",
+        "Pi.instAdd",
+        "Pi.instZero",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.val",
+        "Zero.toOfNat0",
+        "add_zero",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instOfNat",
+        "zero_add"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq",
+        "Finset",
+        "Finset.sum",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "Pi.addCommMonoid",
+        "Pi.addMonoid",
+        "Pi.instAdd",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.val",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHSMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "(∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N), f (D0.Geometry.roleTranslatePlus N r x) = f x) ↔\n  ∀ (x y : D0.Geometry.ArchiveRolePhaseGroup N), f x = f y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 15,
+            "line": 120
+          },
+          "start": {
+            "column": 0,
+            "line": 99
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 35,
+            "line": 99
+          },
+          "start": {
+            "column": 8,
+            "line": 99
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (f : D0.Geometry.ArchiveRolePhaseGroup N → ℝ),\n  (∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N), f (D0.Geometry.roleTranslatePlus N r x) = f x) ↔\n    ∀ (x y : D0.Geometry.ArchiveRolePhaseGroup N), f x = f y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.phaseInvariant_iff_constant",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.invariant_partial_sum",
+        "D0.Geometry.phase_coordinate_decomposition",
+        "D0.Geometry.roleStep",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Eq",
+        "Eq.mp",
+        "Eq.symm",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Iff.intro",
+        "MulZeroClass.toZero",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.addCommMonoid",
+        "Pi.addMonoid",
+        "Pi.addZeroClass",
+        "Pi.instAdd",
+        "Pi.instZero",
+        "Real",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.val",
+        "Zero.toOfNat0",
+        "congrArg",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "zero_add"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Role",
+        "Eq",
+        "Iff",
+        "Nat",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        }
+      ],
+      "conclusion_whnf": "x = ∑ r, (x r).val • D0.Geometry.roleStep N r",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 8,
+            "line": 72
+          },
+          "start": {
+            "column": 0,
+            "line": 63
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 38,
+            "line": 63
+          },
+          "start": {
+            "column": 8,
+            "line": 63
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (x : D0.Geometry.ArchiveRolePhaseGroup N), x = ∑ r, (x r).val • D0.Geometry.roleStep N r",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.phase_coordinate_decomposition",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddMonoidWithOne.toOne",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "False",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mem_univ._simp_1",
+        "Finset.sum",
+        "Finset.sum_apply",
+        "Finset.sum_congr",
+        "Finset.sum_eq_single",
+        "Finset.univ",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "IsEmpty.forall_iff._simp_1",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Nat.cast",
+        "Ne",
+        "Ne.symm",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.addCommMonoid",
+        "Pi.addMonoid",
+        "Ring.toAddGroupWithOne",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "True",
+        "ZMod",
+        "ZMod.cast",
+        "ZMod.cast_id'",
+        "ZMod.commRing",
+        "ZMod.natCast_val",
+        "ZMod.val",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "eq_false",
+        "eq_self",
+        "funext",
+        "id",
+        "implies_congr",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instHSMul",
+        "instIsEmptyFalse",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNatNat",
+        "ite",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "mul_one",
+        "not_true_eq_false",
+        "nsmul_eq_mul",
+        "nsmul_zero",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.roleStep",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "HSMul.hSMul",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.addCommMonoid",
+        "Pi.addMonoid",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.val",
+        "instFintypeProd",
+        "instHSMul",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "∑ x, f x * D0.Geometry.scalarDifferenceLaplacian N f x =\n  ∑ r, D0.Geometry.forwardDifferenceScale N ^ 2 * ∑ x, (f (D0.Geometry.roleTranslatePlus N r x) - f x) ^ 2",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 59,
+            "line": 201
+          },
+          "start": {
+            "column": 0,
+            "line": 170
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 170
+          },
+          "start": {
+            "column": 8,
+            "line": 170
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (f : D0.Geometry.ArchiveRolePhaseGroup N → ℝ),\n  ∑ x, f x * D0.Geometry.scalarDifferenceLaplacian N f x =\n    ∑ r, D0.Geometry.forwardDifferenceScale N ^ 2 * ∑ x, (f (D0.Geometry.roleTranslatePlus N r x) - f x) ^ 2",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.scalarDifferenceLaplacian_energy",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.directional_second_difference_energy",
+        "D0.Geometry.forwardDifferenceScale",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleStep",
+        "D0.Geometry.roleTranslateMinus",
+        "D0.Geometry.roleTranslateMinus_apply",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Geometry.roleTranslatePlus_apply",
+        "D0.Geometry.scalarDifferenceLaplacian",
+        "D0.Geometry.scalarDifferenceLaplacian_apply",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_comm",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instAdd",
+        "Pi.instFintype",
+        "Pi.instSub",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.normedCommRing",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "inferInstance",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.forwardDifferenceScale",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Geometry.scalarDifferenceLaplacian",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instSub",
+        "ZMod",
+        "ZMod.fintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.scalarDifferenceLaplacian N f = 0 ↔ ∀ (x y : D0.Geometry.ArchiveRolePhaseGroup N), f x = f y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 8,
+            "line": 247
+          },
+          "start": {
+            "column": 0,
+            "line": 203
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 54,
+            "line": 203
+          },
+          "start": {
+            "column": 8,
+            "line": 203
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (f : D0.Geometry.ArchiveRolePhaseGroup N → ℝ),\n  D0.Geometry.scalarDifferenceLaplacian N f = 0 ↔ ∀ (x y : D0.Geometry.ArchiveRolePhaseGroup N), f x = f y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.scalarDifferenceLaplacian_eq_zero_iff_constant",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.existsAddOfLE",
+        "AddGroup.toSubNegMonoid",
+        "AddGroup.toSubtractionMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.forwardDifferenceScale",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Geometry.phaseInvariant_iff_constant",
+        "D0.Geometry.roleTranslateMinus",
+        "D0.Geometry.roleTranslatePlus",
+        "D0.Geometry.scalarDifferenceLaplacian",
+        "D0.Geometry.scalarDifferenceLaplacian_apply",
+        "D0.Geometry.scalarDifferenceLaplacian_energy",
+        "D0.Geometry.scalarDifferenceLaplacian_eq_zero_iff_constant._proof_1_1",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Even.pow_nonneg",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mem_univ",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.sum_const_zero",
+        "Finset.sum_eq_zero",
+        "Finset.sum_eq_zero_iff_of_nonneg",
+        "Finset.sum_nonneg",
+        "Finset.univ",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Iff.intro",
+        "Iff.mp",
+        "Iff.mpr",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "IsOrderedAddMonoid.toAddLeftMono",
+        "IsOrderedRing.toPosMulMono",
+        "IsStrictOrderedRing.toIsOrderedRing",
+        "LE.le",
+        "Lattice.toSemilatticeInf",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MonoidWithZero.toMonoid",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.cast",
+        "Nat.cast_eq_zero._simp_1",
+        "Nat.cast_ne_zero",
+        "Nat.cast_zero",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCharZero",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.instSemiring",
+        "Nat.rawCast",
+        "Ne",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NormMulClass.toNoZeroDivisors",
+        "NormedCommRing.toNormedRing",
+        "NormedDivisionRing.toNormMulClass",
+        "NormedField.toNormedDivisionRing",
+        "Not",
+        "OfNat.ofNat",
+        "Or",
+        "Or.resolve_left",
+        "PartialOrder.toPreorder",
+        "Pi.instFintype",
+        "Pi.instZero",
+        "Preorder.toLE",
+        "RCLike.charZero_rclike",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instAddGroup",
+        "Real.instCommSemiring",
+        "Real.instIsOrderedAddMonoid",
+        "Real.instIsOrderedRing",
+        "Real.instIsStrictOrderedRing",
+        "Real.instLE",
+        "Real.instMonoid",
+        "Real.instMonoidWithZero",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instPreorder",
+        "Real.instRCLike",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.normedCommRing",
+        "Real.normedField",
+        "Real.partialOrder",
+        "Real.semiring",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "SemilatticeInf.toPartialOrder",
+        "Semiring.toMonoid",
+        "Semiring.toMonoidWithZero",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "ZMod",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "even_two_mul",
+        "funext",
+        "id",
+        "inferInstance",
+        "instAddNat",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribLatticeOfLinearOrder",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "isReduced_of_noZeroDivisors",
+        "le_of_lt",
+        "lt_of_le_of_ne'",
+        "mul_eq_zero",
+        "mul_nonneg",
+        "pow_ne_zero",
+        "propext",
+        "rfl",
+        "sq_eq_zero_iff",
+        "sub_eq_zero"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.scalarDifferenceLaplacian",
+        "Eq",
+        "Iff",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "N + 2 = 0"
+        }
+      ],
+      "conclusion_whnf": "False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ), N + 2 = 0 → False",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.scalarDifferenceLaplacian_eq_zero_iff_constant._proof_1_1",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.true",
+        "Decidable.decide",
+        "Eq",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "Int",
+        "Int.instAdd",
+        "Int.instLEInt",
+        "Int.instNegInt",
+        "Int.instSub",
+        "Int.natCast_add",
+        "Int.natCast_nonneg",
+        "Int.sub_eq_zero_of_eq",
+        "Lean.Omega.Coeffs.ofList",
+        "Lean.Omega.Constraint.addEquality_sat",
+        "Lean.Omega.Constraint.addInequality_sat",
+        "Lean.Omega.Constraint.isImpossible",
+        "Lean.Omega.Constraint.mk",
+        "Lean.Omega.Constraint.not_sat'_of_isImpossible",
+        "Lean.Omega.Int.add_congr",
+        "Lean.Omega.Int.ofNat_congr",
+        "Lean.Omega.Int.sub_congr",
+        "Lean.Omega.LinearCombo",
+        "Lean.Omega.LinearCombo.add_eval",
+        "Lean.Omega.LinearCombo.coordinate",
+        "Lean.Omega.LinearCombo.coordinate_eval_0",
+        "Lean.Omega.LinearCombo.eval",
+        "Lean.Omega.LinearCombo.instAdd",
+        "Lean.Omega.LinearCombo.instSub",
+        "Lean.Omega.LinearCombo.mk",
+        "Lean.Omega.LinearCombo.sub_eval",
+        "Lean.Omega.combo_sat'",
+        "Lean.Omega.tidy_sat",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "Nat.cast",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Option.none",
+        "Option.some",
+        "id",
+        "instAddNat",
+        "instDecidableEqBool",
+        "instHAdd",
+        "instHSub",
+        "instNatCastInt",
+        "instOfNat",
+        "instOfNatNat",
+        "le_of_le_of_eq",
+        "of_decide_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Eq",
+        "False",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "α",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Geometry.ArchiveHodgeCARDiracKernel.3471860223._hygCtx._hyg.3",
+          "type": "Fintype α"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a",
+          "type": "α → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b",
+          "type": "α → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "α → ℝ"
+        }
+      ],
+      "conclusion_whnf": "∑ x, (a x - b x - c x) = ∑ x, a x - ∑ x, b x - ∑ x, c x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 74,
+            "line": 125
+          },
+          "start": {
+            "column": 0,
+            "line": 122
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 19,
+            "line": 122
+          },
+          "start": {
+            "column": 8,
+            "line": 122
+          }
+        }
+      },
+      "elaborated_type": "∀ {α : Type u_1} [inst : Fintype α] (a b c : α → ℝ), ∑ x, (a x - b x - c x) = ∑ x, a x - ∑ x, b x - ∑ x, c x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracKernel",
+      "name": "D0.Geometry.sum_sub_sub",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddGroup.toSubNegMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZeroClass.toAddZero",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_add_distrib",
+        "Finset.sum_congr",
+        "Finset.sum_neg_distrib",
+        "Finset.univ",
+        "Fintype",
+        "HAdd.hAdd",
+        "HSub.hSub",
+        "Membership.mem",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "Real",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instAddGroup",
+        "Real.instSub",
+        "SetLike.instMembership",
+        "SubNegMonoid.toAddMonoid",
+        "SubNegMonoid.toNeg",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toAddCommMonoid",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instHAdd",
+        "instHSub",
+        "of_eq_true",
+        "sub_eq_add_neg"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Eq",
+        "Finset.sum",
+        "Finset.univ",
+        "Fintype",
+        "HSub.hSub",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instSub",
+        "instHSub"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean"
+    }
+  ]
+}

@@ -1,0 +1,4839 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "ae789e27e20ffaddcfb9dedf4f12ad8c005527ae",
+  "worktree_dirty": false,
+  "lean_source_digest": "5e53922308a6b99ba7b68940ddd777acee1d2fb797227bebfe009a7d1739c20d",
+  "collector_sha256": "bbc07617979c818928e1682b9b2f1313c5d6fd7fd5cf08e9bb085828957781f1",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Research.ClosedHistoryNonlinearDustBranch"
+  ],
+  "module_prefix": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 55,
+            "line": 79
+          },
+          "start": {
+            "column": 0,
+            "line": 77
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 78
+          },
+          "start": {
+            "column": 4,
+            "line": 78
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "HMul.hMul",
+        "HSub.hSub",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHSub"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor p z y =\n  z * (1 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n    (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p z y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor p z y =\n    z * (1 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n      (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "Eq",
+        "HMul.hMul",
+        "HSub.hSub",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHSub"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 31,
+            "line": 65
+          },
+          "start": {
+            "column": 0,
+            "line": 61
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 62
+          },
+          "start": {
+            "column": 4,
+            "line": 62
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z y =\n  z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y *\n      (2 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) +\n    z * (1 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n        (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n      (4 * p ^ 2 * (1 - p ^ 2))",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p z y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z y =\n    z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y *\n        (2 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) +\n      z * (1 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n          (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n        (4 * p ^ 2 * (1 - p ^ 2))",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 33,
+            "line": 70
+          },
+          "start": {
+            "column": 0,
+            "line": 67
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 68
+          },
+          "start": {
+            "column": 4,
+            "line": 68
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y =\n  z * (1 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n      (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n    (4 * p ^ 2 * (1 - 2 * p ^ 2))",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p z y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y =\n    z * (1 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n        (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n      (4 * p ^ 2 * (1 - 2 * p ^ 2))",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "Eq",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 16,
+            "line": 75
+          },
+          "start": {
+            "column": 0,
+            "line": 72
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 73
+          },
+          "start": {
+            "column": 4,
+            "line": 73
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y =\n  -(z * (1 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n        (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n      (4 * p ^ 4))",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p z y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y =\n    -(z * (1 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n          (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n        (4 * p ^ 4))",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "Eq",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 57,
+            "line": 48
+          },
+          "start": {
+            "column": 0,
+            "line": 46
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 18,
+            "line": 47
+          },
+          "start": {
+            "column": 4,
+            "line": 47
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation",
+        "HMul.hMul",
+        "HSub.hSub",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHSub",
+        "instOfNatAtLeastTwo"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "(3 + 1).AtLeastTwo",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "(3 + 1).AtLeastTwo",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+      "proof_dependencies": [
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "HAdd.hAdd",
+        "Nat",
+        "Nat.AtLeastTwo",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x =\n  4 * D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation p x *\n    (1 - D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation p x)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p x : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x =\n    4 * D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation p x *\n      (1 - D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation p x)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation",
+        "Eq",
+        "HMul.hMul",
+        "HSub.hSub",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHSub",
+        "instOfNatAtLeastTwo"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 54,
+            "line": 41
+          },
+          "start": {
+            "column": 0,
+            "line": 40
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 41
+          },
+          "start": {
+            "column": 4,
+            "line": 41
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation",
+      "proof_dependencies": [
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation p x = p ^ 2 * (1 + x)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p x : ℝ), D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation p x = p ^ 2 * (1 + x)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureRotation",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 47,
+            "line": 31
+          },
+          "start": {
+            "column": 0,
+            "line": 30
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 18,
+            "line": 31
+          },
+          "start": {
+            "column": 4,
+            "line": 31
+          }
+        }
+      },
+      "elaborated_type": "ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "DivInvMonoid.toDiv",
+        "HDiv.hDiv",
+        "HSub.hSub",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "Real.sqrt",
+        "instHDiv",
+        "instHSub",
+        "instOfNatAtLeastTwo"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "(4 + 1).AtLeastTwo",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "(4 + 1).AtLeastTwo",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_1",
+      "proof_dependencies": [
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "HAdd.hAdd",
+        "Nat",
+        "Nat.AtLeastTwo",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "(1 + 1).AtLeastTwo",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "(1 + 1).AtLeastTwo",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+      "proof_dependencies": [
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "HAdd.hAdd",
+        "Nat",
+        "Nat.AtLeastTwo",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation ^ 2 +\n    D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation =\n  1",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 19,
+            "line": 38
+          },
+          "start": {
+            "column": 0,
+            "line": 33
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 35
+          },
+          "start": {
+            "column": 8,
+            "line": 35
+          }
+        }
+      },
+      "elaborated_type": "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation ^ 2 +\n    D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation =\n  1",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation_relation",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddSemigroup",
+        "AddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "AddMonoidWithOne.toOne",
+        "AddSemigroup.toAdd",
+        "Bool",
+        "Bool.false",
+        "Bool.true",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribLattice.toLattice",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionRing.toDivInvMonoid",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toGroupWithZero",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Field.toCommRing",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "GroupWithZero.toDivisionMonoid",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Iff.mpr",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Inv.inv",
+        "InvOneClass.toInv",
+        "IsStrictOrderedRing.toCharZero",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNNRat.to_isNat",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_isNNRat",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNatPowT.bit0",
+        "Mathlib.Meta.NormNum.IsNatPowT.run",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne'",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNNRat_div",
+        "Mathlib.Meta.NormNum.isNNRat_inv_pos",
+        "Mathlib.Meta.NormNum.isNNRat_mul",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_eq_true",
+        "Mathlib.Meta.NormNum.isNat_le_true",
+        "Mathlib.Meta.NormNum.isNat_lt_true",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Meta.NormNum.isNat_pow",
+        "Mathlib.Tactic.CancelDenoms.add_subst",
+        "Mathlib.Tactic.CancelDenoms.div_subst",
+        "Mathlib.Tactic.CancelDenoms.pow_subst",
+        "Mathlib.Tactic.CancelDenoms.sub_subst",
+        "Mathlib.Tactic.Linarith.eq_of_not_lt_of_not_gt",
+        "Mathlib.Tactic.Linarith.lt_irrefl",
+        "Mathlib.Tactic.Linarith.lt_of_eq_of_lt",
+        "Mathlib.Tactic.Linarith.mul_neg",
+        "Mathlib.Tactic.Linarith.sub_neg_of_lt",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.coeff_one",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_bit0",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_nat",
+        "Mathlib.Tactic.Ring.Common.pow_one",
+        "Mathlib.Tactic.Ring.Common.pow_one_cast_of_isNat",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "Mul",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast_one",
+        "Nat.cast_zero",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.mul",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "Not.intro",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instAddGroup",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instIsOrderedRing",
+        "Real.instIsStrictOrderedRing",
+        "Real.instMonoid",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instPreorder",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.partialOrder",
+        "Real.semiring",
+        "Real.sq_sqrt",
+        "Real.sqrt",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semifield.toDivisionSemiring",
+        "SemilatticeInf.toPartialOrder",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "inferInstance",
+        "instDistribLatticeOfLinearOrder",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "neg_eq_zero",
+        "rfl",
+        "sub_eq_zero_of_eq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation",
+        "Eq",
+        "HAdd.hAdd",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instOne",
+        "instHAdd",
+        "instHPow",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hp",
+          "type": "p ^ 2 + p = 1"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z y =\n    z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y *\n        (2 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) +\n      4 * p ^ 3 * D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor p z y ∧\n  D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y =\n      4 * p ^ 5 * D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor p z y ∧\n    D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y =\n      -4 * p ^ 4 * D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor p z y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 8,
+            "line": 108
+          },
+          "start": {
+            "column": 0,
+            "line": 81
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 33,
+            "line": 84
+          },
+          "start": {
+            "column": 8,
+            "line": 84
+          }
+        }
+      },
+      "elaborated_type": "∀ {p z y : ℝ},\n  p ^ 2 + p = 1 →\n    D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z y =\n        z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y *\n            (2 - z * D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) +\n          4 * p ^ 3 * D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor p z y ∧\n      D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y =\n          4 * p ^ 5 * D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor p z y ∧\n        D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y =\n          -4 * p ^ 4 * D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor p z y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.golden_click_coefficients",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddSemigroup",
+        "AddMonoidWithOne.toNatCast",
+        "AddSemigroup.toAdd",
+        "And",
+        "And.intro",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Iff.mpr",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Linarith.eq_of_not_lt_of_not_gt",
+        "Mathlib.Tactic.Linarith.lt_irrefl",
+        "Mathlib.Tactic.Linarith.lt_of_eq_of_lt",
+        "Mathlib.Tactic.Linarith.sub_neg_of_lt",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast_one",
+        "Nat.cast_zero",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "Not.intro",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instAddGroup",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instIsOrderedRing",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instOne",
+        "Real.instPreorder",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.partialOrder",
+        "Real.semiring",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "SemilatticeInf.toPartialOrder",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Trans.trans",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "inferInstance",
+        "instDistribLatticeOfLinearOrder",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instTransEq",
+        "neg_eq_zero",
+        "rfl",
+        "sub_eq_zero_of_eq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instOne",
+        "Real.instSub",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0\n      D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y =\n    z *\n          D0.Research.ClosedHistoryNonlinearDustBranch.matterClick\n            D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation y *\n        (2 -\n          z *\n            D0.Research.ClosedHistoryNonlinearDustBranch.matterClick\n              D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation y) +\n      4 * D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation ^ 3 *\n        D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor\n          D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y ∧\n  D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1\n        D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y =\n      4 * D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation ^ 5 *\n        D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor\n          D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y ∧\n    D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2\n        D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y =\n      -4 * D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation ^ 4 *\n        D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor\n          D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 57,
+            "line": 121
+          },
+          "start": {
+            "column": 0,
+            "line": 110
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 42,
+            "line": 112
+          },
+          "start": {
+            "column": 8,
+            "line": 112
+          }
+        }
+      },
+      "elaborated_type": "∀ (z y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0\n        D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y =\n      z *\n            D0.Research.ClosedHistoryNonlinearDustBranch.matterClick\n              D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation y *\n          (2 -\n            z *\n              D0.Research.ClosedHistoryNonlinearDustBranch.matterClick\n                D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation y) +\n        4 * D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation ^ 3 *\n          D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor\n            D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y ∧\n    D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1\n          D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y =\n        4 * D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation ^ 5 *\n          D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor\n            D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y ∧\n      D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2\n          D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y =\n        -4 * D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation ^ 4 *\n          D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor\n            D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation z y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.golden_rotation_click_coefficients",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation_relation",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.golden_click_coefficients",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickBranchFactor",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instSub",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 63,
+            "line": 52
+          },
+          "start": {
+            "column": 0,
+            "line": 50
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 15,
+            "line": 51
+          },
+          "start": {
+            "column": 4,
+            "line": 51
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y =\n  4 * D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation p y ^ 2 *\n    (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation p y ^ 2)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y =\n    4 * D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation p y ^ 2 *\n      (1 - D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation p y ^ 2)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation",
+        "Eq",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 49,
+            "line": 44
+          },
+          "start": {
+            "column": 0,
+            "line": 43
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 18,
+            "line": 44
+          },
+          "start": {
+            "column": 4,
+            "line": 44
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation",
+      "proof_dependencies": [
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instSub",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation p y = p - p ^ 2 * y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p y : ℝ), D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation p y = p - p ^ 2 * y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterRotation",
+        "Eq",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instSub",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 46,
+            "line": 206
+          },
+          "start": {
+            "column": 0,
+            "line": 202
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 25,
+            "line": 205
+          },
+          "start": {
+            "column": 4,
+            "line": 205
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "DivInvMonoid.toDiv",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instDivInvMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instSub",
+        "Real.sqrt",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "a",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "b",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "ha",
+          "type": "Real.lt✝ a 0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hb",
+          "type": "Real.lt✝ 0 b"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc",
+          "type": "Real.lt✝ 0 c"
+        }
+      ],
+      "conclusion_whnf": "a * D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot a b c ^ 2 +\n        b * D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot a b c +\n      c =\n    0 ∧\n  D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot a b c < 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 27,
+            "line": 237
+          },
+          "start": {
+            "column": 0,
+            "line": 208
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 34,
+            "line": 208
+          },
+          "start": {
+            "column": 8,
+            "line": 208
+          }
+        }
+      },
+      "elaborated_type": "∀ {a b c : ℝ},\n  a < 0 →\n    0 < b →\n      0 < c →\n        a * D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot a b c ^ 2 +\n                b * D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot a b c +\n              c =\n            0 ∧\n          D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot a b c < 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot_spec",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMagma.toAdd",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddGroup.existsAddOfLE",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddLeftCancelSemigroup.toIsLeftCancelAdd",
+        "AddMonoid.toAddSemigroup",
+        "AddMonoidWithOne.toNatCast",
+        "AddSemigroup.toAdd",
+        "And.intro",
+        "Bool",
+        "Bool.false",
+        "Bool.true",
+        "CommGroupWithZero",
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommGroupWithZero.toGroupWithZero",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot",
+        "Decidable.decide",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribLattice.toLattice",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Even",
+        "Even.neg_pow",
+        "Field.toCommRing",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "GroupWithZero",
+        "GroupWithZero.toDivInvMonoid",
+        "GroupWithZero.toMonoidWithZero",
+        "GroupWithZero.toNontrivial",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "HasDistribNeg.toInvolutiveNeg",
+        "Iff.mpr",
+        "Int",
+        "Int.instNegInt",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "InvOneClass.toOne",
+        "InvolutiveNeg.toNeg",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "IsLeftCancelAdd.addLeftReflectLE_of_addLeftReflectLT",
+        "IsOrderedAddMonoid.toAddLeftMono",
+        "IsOrderedRing.toPosMulMono",
+        "IsRightCancelAdd.addRightStrictMono_of_addRightMono",
+        "IsStrictOrderedRing.toCharZero",
+        "IsStrictOrderedRing.toMulPosStrictMono",
+        "IsStrictOrderedRing.toPosMulStrictMono",
+        "LE.le",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder.toPartialOrder",
+        "List.nil",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_lt_true",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.FieldSimp.NF.atom_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.cons",
+        "Mathlib.Tactic.FieldSimp.NF.cons_eq_div_of_eq_div",
+        "Mathlib.Tactic.FieldSimp.NF.cons_ne_zero",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval_cons_neg",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₁",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₂",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.pow_eq_eval",
+        "Mathlib.Tactic.FieldSimp.eq_div_of_eq_one_of_subst",
+        "Mathlib.Tactic.FieldSimp.eq_eq_cancel_eq",
+        "Mathlib.Tactic.FieldSimp.eq_mul_of_eq_eq_eq_mul",
+        "Mathlib.Tactic.FieldSimp.subst_add",
+        "Mathlib.Tactic.FieldSimp.zpow'",
+        "Mathlib.Tactic.FieldSimp.zpow'_ofNat",
+        "Mathlib.Tactic.FieldSimp.zpow'_one",
+        "Mathlib.Tactic.Linarith.add_lt_of_le_of_neg",
+        "Mathlib.Tactic.Linarith.add_lt_of_neg_of_le",
+        "Mathlib.Tactic.Linarith.add_neg",
+        "Mathlib.Tactic.Linarith.add_nonpos",
+        "Mathlib.Tactic.Linarith.eq_of_not_lt_of_not_gt",
+        "Mathlib.Tactic.Linarith.lt_irrefl",
+        "Mathlib.Tactic.Linarith.lt_of_lt_of_eq",
+        "Mathlib.Tactic.Linarith.mul_neg",
+        "Mathlib.Tactic.Linarith.mul_zero_eq",
+        "Mathlib.Tactic.Linarith.sub_neg_of_lt",
+        "Mathlib.Tactic.Linarith.sub_nonpos_of_le",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.coeff_one",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_bit0",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_nat",
+        "Mathlib.Tactic.Ring.Common.pow_one",
+        "Mathlib.Tactic.Ring.Common.pow_one_cast_of_isNat",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MonoidWithZero.toMonoid",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.cast_zero",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instDecidablePredEven",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Ne",
+        "NeZero.one",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toHasDistribNeg",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Not.intro",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "PartialOrder.toPreorder",
+        "PosMulReflectLE.toPosMulReflectLT",
+        "PosMulStrictMono.toPosMulReflectLE",
+        "Preorder.toLE",
+        "Preorder.toLT",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instAddCommSemigroup",
+        "Real.instAddGroup",
+        "Real.instAddLeftCancelSemigroup",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instIsOrderedAddMonoid",
+        "Real.instIsOrderedRing",
+        "Real.instIsStrictOrderedRing",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instPreorder",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.normedCommRing",
+        "Real.partialOrder",
+        "Real.semiring",
+        "Real.sq_sqrt",
+        "Real.sqrt",
+        "Real.sqrt_pos",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semifield.toCommGroupWithZero",
+        "Semifield.toDivisionSemiring",
+        "SemilatticeInf.toPartialOrder",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "addRightReflectLE_of_addLeftReflectLE",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "congr_arg",
+        "congr_arg₂",
+        "contravariant_lt_of_covariant_le",
+        "contravariant_swap_add_of_contravariant_add",
+        "covariant_swap_add_of_covariant_add",
+        "div_neg_of_neg_of_pos",
+        "div_one",
+        "id",
+        "inferInstance",
+        "instAddNat",
+        "instDecidableEqNat",
+        "instDecidableNot",
+        "instDistribLatticeOfLinearOrder",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsCancelMulZero",
+        "instIsRightCancelAddOfAddRightReflectLE",
+        "instMulZeroClassOfSemiring",
+        "instNeZeroNatHAdd_1",
+        "instOfNat",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "le_of_lt",
+        "lt_of_not_ge",
+        "mul_neg",
+        "mul_one",
+        "mul_pos_of_neg_of_neg",
+        "ne_of_gt",
+        "neg_div",
+        "neg_eq_zero",
+        "neg_mul",
+        "of_decide_eq_true",
+        "one_mul",
+        "one_ne_zero",
+        "rfl",
+        "sq_nonneg",
+        "sub_eq_zero_of_eq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "LT.lt",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "a",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "b",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "q",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "ha",
+          "type": "Real.lt✝ a 0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hb",
+          "type": "Real.lt✝ 0 b"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc",
+          "type": "Real.lt✝ 0 c"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hq",
+          "type": "a * q ^ 2 + b * q + c = 0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hqneg",
+          "type": "Real.lt✝ q 0"
+        }
+      ],
+      "conclusion_whnf": "q = D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot a b c",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 12,
+            "line": 254
+          },
+          "start": {
+            "column": 0,
+            "line": 239
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 45,
+            "line": 241
+          },
+          "start": {
+            "column": 8,
+            "line": 241
+          }
+        }
+      },
+      "elaborated_type": "∀ {a b c q : ℝ},\n  a < 0 →\n    0 < b →\n      0 < c →\n        a * q ^ 2 + b * q + c = 0 → q < 0 → q = D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot a b c",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot_unique_negative",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMagma.toAdd",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddGroup.existsAddOfLE",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddLeftCancelSemigroup.toIsLeftCancelAdd",
+        "AddMonoid.toAddSemigroup",
+        "AddSemigroup.toAdd",
+        "And",
+        "And.casesOn",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot_spec",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Iff.mp",
+        "Iff.mpr",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "IsLeftCancelAdd.addLeftReflectLE_of_addLeftReflectLT",
+        "IsOrderedAddMonoid.toAddLeftMono",
+        "IsRightCancelAdd.addRightStrictMono_of_addRightMono",
+        "IsStrictOrderedRing.toMulPosStrictMono",
+        "LE.le",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder.toPartialOrder",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Linarith.add_lt_of_neg_of_le",
+        "Mathlib.Tactic.Linarith.add_neg",
+        "Mathlib.Tactic.Linarith.eq_of_eq_of_eq",
+        "Mathlib.Tactic.Linarith.eq_of_not_lt_of_not_gt",
+        "Mathlib.Tactic.Linarith.lt_irrefl",
+        "Mathlib.Tactic.Linarith.lt_of_eq_of_lt",
+        "Mathlib.Tactic.Linarith.lt_of_lt_of_eq",
+        "Mathlib.Tactic.Linarith.sub_neg_of_lt",
+        "Mathlib.Tactic.Linarith.sub_nonpos_of_le",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast_zero",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NormMulClass.toNoZeroDivisors",
+        "NormedCommRing.toNormedRing",
+        "NormedDivisionRing.toNormMulClass",
+        "NormedField.toNormedDivisionRing",
+        "Not.intro",
+        "OfNat.ofNat",
+        "Or",
+        "Or.casesOn",
+        "PartialOrder.toPreorder",
+        "Preorder.toLE",
+        "Preorder.toLT",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instAddCommSemigroup",
+        "Real.instAddGroup",
+        "Real.instAddLeftCancelSemigroup",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instIsOrderedAddMonoid",
+        "Real.instIsOrderedRing",
+        "Real.instIsStrictOrderedRing",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instPreorder",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.normedCommRing",
+        "Real.normedField",
+        "Real.partialOrder",
+        "Real.semiring",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "SemilatticeInf.toPartialOrder",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "addRightReflectLE_of_addLeftReflectLE",
+        "congrArg",
+        "contravariant_lt_of_covariant_le",
+        "contravariant_swap_add_of_contravariant_add",
+        "covariant_swap_add_of_covariant_add",
+        "id",
+        "inferInstance",
+        "instDistribLatticeOfLinearOrder",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsRightCancelAddOfAddRightReflectLE",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "lt_of_not_ge",
+        "mul_eq_zero",
+        "mul_pos_of_neg_of_neg",
+        "neg_eq_zero",
+        "rfl",
+        "sub_eq_zero_of_eq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "LT.lt",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 29,
+            "line": 59
+          },
+          "start": {
+            "column": 0,
+            "line": 54
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 17,
+            "line": 55
+          },
+          "start": {
+            "column": 4,
+            "line": 55
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instSub",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x y =\n  z *\n      (D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x +\n          (1 - D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x) *\n            D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y +\n        D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) -\n    z ^ 2 *\n        (D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x +\n          (1 - D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x) *\n            D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n      D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p z x y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x y =\n    z *\n        (D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x +\n            (1 - D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x) *\n              D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y +\n          D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) -\n      z ^ 2 *\n          (D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x +\n            (1 - D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick p x) *\n              D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y) *\n        D0.Research.ClosedHistoryNonlinearDustBranch.matterClick p y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.matterClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instSub",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x y =\n  D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z y +\n      D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y * x +\n    D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y * x ^ 2",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 129
+          },
+          "start": {
+            "column": 0,
+            "line": 123
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 34,
+            "line": 124
+          },
+          "start": {
+            "column": 8,
+            "line": 124
+          }
+        }
+      },
+      "elaborated_type": "∀ (p z x y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x y =\n    D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z y +\n        D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y * x +\n      D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y * x ^ 2",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_eq_quadratic",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "HasDistribNeg.toInvolutiveNeg",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "InvolutiveNeg.toNeg",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.coeff_one",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_bit0",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_nat",
+        "Mathlib.Tactic.Ring.Common.pow_one",
+        "Mathlib.Tactic.Ring.Common.pow_one_cast_of_isNat",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast_one",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toHasDistribNeg",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.normedCommRing",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "inferInstance",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "neg_mul",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "x * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) x -\n    y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x v) y =\n  D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y * x ^ 2 +\n      D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y * x +\n    D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 304
+          },
+          "start": {
+            "column": 0,
+            "line": 295
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 297
+          },
+          "start": {
+            "column": 8,
+            "line": 297
+          }
+        }
+      },
+      "elaborated_type": "∀ (p z x y : ℝ),\n  x * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) x -\n      y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x v) y =\n    D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y * x ^ 2 +\n        D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y * x +\n      D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_trace_eq_quadratic",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_trace_source_identity_actual",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Field.toSemifield",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "HasDistribNeg.toInvolutiveNeg",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "InvolutiveNeg.toNeg",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toHasDistribNeg",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NontriviallyNormedField.toNormedField",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toField",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.commRing",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.normedCommRing",
+        "Real.pseudoMetricSpace",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "congrArg",
+        "deriv",
+        "id",
+        "inferInstance",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "neg_mul",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toSemifield",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instSub",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "ha",
+          "type": "Real.lt✝ (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y) 0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hb",
+          "type": "Real.lt✝ 0 (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc",
+          "type": "Real.lt✝ 0 (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y)"
+        }
+      ],
+      "conclusion_whnf": "∃ x < 0,\n  x * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) x -\n      y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x v) y =\n    0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 27,
+            "line": 323
+          },
+          "start": {
+            "column": 0,
+            "line": 306
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 43,
+            "line": 310
+          },
+          "start": {
+            "column": 8,
+            "line": 310
+          }
+        }
+      },
+      "elaborated_type": "∀ {p z y : ℝ},\n  D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y < 0 →\n    0 < D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y →\n      0 < D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y →\n        ∃ x < 0,\n          x * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) x -\n              y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x v) y =\n            0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_trace_negative_branch",
+      "proof_dependencies": [
+        "And",
+        "And.intro",
+        "And.left",
+        "And.right",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot_spec",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_trace_eq_quadratic",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Exists.intro",
+        "Field.toSemifield",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "LT.lt",
+        "Monoid.toPow",
+        "Nat",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "congrArg",
+        "deriv",
+        "id",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Exists",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "HSub.hSub",
+        "LT.lt",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAddCommGroup",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "deriv",
+        "instHMul",
+        "instHSub"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "d₀",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "d₁",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "d₂",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h₀",
+          "type": "HasFDerivAtFilter (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z v)\n  (ContinuousLinearMap.toSpanSingleton ℝ d₀) (nhds y ×ˢ pure y)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h₁",
+          "type": "HasFDerivAtFilter (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z v)\n  (ContinuousLinearMap.toSpanSingleton ℝ d₁) (nhds y ×ˢ pure y)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h₂",
+          "type": "HasFDerivAtFilter (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z v)\n  (ContinuousLinearMap.toSpanSingleton ℝ d₂) (nhds y ×ˢ pure y)"
+        }
+      ],
+      "conclusion_whnf": "x * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) x -\n    y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x v) y =\n  (2 * D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y - y * d₂) * x ^ 2 +\n      (D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y - y * d₁) * x -\n    y * d₀",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 60,
+            "line": 200
+          },
+          "start": {
+            "column": 0,
+            "line": 174
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 43,
+            "line": 177
+          },
+          "start": {
+            "column": 8,
+            "line": 177
+          }
+        }
+      },
+      "elaborated_type": "∀ (p z x y d₀ d₁ d₂ : ℝ),\n  HasDerivAt (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z v) d₀ y →\n    HasDerivAt (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z v) d₁ y →\n      HasDerivAt (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z v) d₂ y →\n        x * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) x -\n            y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x v) y =\n          (2 * D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y - y * d₂) * x ^ 2 +\n              (D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y - y * d₁) * x -\n            y * d₀",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_trace_source_identity",
+      "proof_dependencies": [
+        "ContinuousMul.to_continuousSMul",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_eq_quadratic",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.quadratic_trace_source_identity",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Field.toSemifield",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "HasDerivAt",
+        "IsTopologicalRing.toIsTopologicalSemiring",
+        "IsTopologicalSemiring.toContinuousMul",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NontriviallyNormedField.toNormedField",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toSeminormedCommRing",
+        "NormedField.toField",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "Real.normedCommRing",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "SeminormedCommRing.toSeminormedRing",
+        "SeminormedRing.toPseudoMetricSpace",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "congrArg",
+        "deriv",
+        "funext",
+        "id",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsTopologicalRingReal",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "ContinuousMul.to_continuousSMul",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toSemifield",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "HasDerivAt",
+        "IsTopologicalRing.toIsTopologicalSemiring",
+        "IsTopologicalSemiring.toContinuousMul",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NontriviallyNormedField.toNormedField",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toSeminormedCommRing",
+        "NormedField.toField",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "Real.normedCommRing",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "SeminormedCommRing.toSeminormedRing",
+        "SeminormedRing.toPseudoMetricSpace",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsTopologicalRingReal",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "x * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) x -\n    y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x v) y =\n  (2 * D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y -\n          y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z v) y) *\n        x ^ 2 +\n      (D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y -\n          y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z v) y) *\n        x -\n    y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z v) y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 12,
+            "line": 280
+          },
+          "start": {
+            "column": 0,
+            "line": 256
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 50,
+            "line": 259
+          },
+          "start": {
+            "column": 8,
+            "line": 259
+          }
+        }
+      },
+      "elaborated_type": "∀ (p z x y : ℝ),\n  x * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) x -\n      y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z x v) y =\n    (2 * D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y -\n            y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z v) y) *\n          x ^ 2 +\n        (D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y -\n            y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z v) y) *\n          x -\n      y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z v) y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_trace_source_identity_actual",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.curvatureClick._proof_1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_trace_source_identity",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DifferentiableAt",
+        "DifferentiableAt.const_mul",
+        "DifferentiableAt.const_sub",
+        "DifferentiableAt.fun_add",
+        "DifferentiableAt.fun_mul",
+        "DifferentiableAt.fun_neg",
+        "DifferentiableAt.fun_pow",
+        "DifferentiableAt.hasDerivAt",
+        "DifferentiableAt.mul_const",
+        "DivisionSemiring.toSemiring",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "NontriviallyNormedField.toNormedField",
+        "NormedAddCommGroup.toAddCommGroup",
+        "NormedAddCommGroup.toSeminormedAddCommGroup",
+        "NormedAlgebra.id",
+        "NormedCommRing.toNormedRing",
+        "NormedCommRing.toSeminormedCommRing",
+        "NormedField.toField",
+        "NormedField.toNormedCommRing",
+        "NormedField.toNormedSpace",
+        "NormedRing.toRing",
+        "NormedSpace.toModule",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAddCommGroup",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instSub",
+        "Real.normedAddCommGroup",
+        "Real.normedCommRing",
+        "Real.pseudoMetricSpace",
+        "Ring.toAddCommGroup",
+        "Semifield.toDivisionSemiring",
+        "SeminormedAddCommGroup.toPseudoMetricSpace",
+        "SeminormedCommRing.toSeminormedRing",
+        "SeminormedRing.toPseudoMetricSpace",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "differentiableAt_id",
+        "id",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toSemifield",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "q",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "ha",
+          "type": "Real.lt✝ (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y) 0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hb",
+          "type": "Real.lt✝ 0 (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc",
+          "type": "Real.lt✝ 0 (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hq",
+          "type": "q * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) q -\n    y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z q v) y =\n  0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hqneg",
+          "type": "Real.lt✝ q 0"
+        }
+      ],
+      "conclusion_whnf": "q =\n  D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot\n    (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y)\n    (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y)\n    (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 66,
+            "line": 338
+          },
+          "start": {
+            "column": 0,
+            "line": 325
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 50,
+            "line": 327
+          },
+          "start": {
+            "column": 8,
+            "line": 327
+          }
+        }
+      },
+      "elaborated_type": "∀ {p z y q : ℝ},\n  D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y < 0 →\n    0 < D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y →\n      0 < D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y →\n        q * deriv (fun u => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z u y) q -\n              y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.originalClick p z q v) y =\n            0 →\n          q < 0 →\n            q =\n              D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot\n                (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y)\n                (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y)\n                (D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_trace_unique_negative_branch",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot_unique_negative",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick_trace_eq_quadratic",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mp",
+        "Field.toSemifield",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "LT.lt",
+        "Monoid.toPow",
+        "Nat",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "congrArg",
+        "deriv",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.negativeQuadraticRoot",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.originalClick",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "HSub.hSub",
+        "LT.lt",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAddCommGroup",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "deriv",
+        "instHMul",
+        "instHSub"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a₀",
+          "type": "ℝ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a₁",
+          "type": "ℝ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a₂",
+          "type": "ℝ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a₀'",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a₁'",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a₂'",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h₀",
+          "type": "HasFDerivAtFilter a₀ (ContinuousLinearMap.toSpanSingleton ℝ a₀') (nhds y ×ˢ pure y)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h₁",
+          "type": "HasFDerivAtFilter a₁ (ContinuousLinearMap.toSpanSingleton ℝ a₁') (nhds y ×ˢ pure y)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h₂",
+          "type": "HasFDerivAtFilter a₂ (ContinuousLinearMap.toSpanSingleton ℝ a₂') (nhds y ×ˢ pure y)"
+        }
+      ],
+      "conclusion_whnf": "x * deriv (fun u => a₀ y + a₁ y * u + a₂ y * u ^ 2) x - y * deriv (fun v => a₀ v + a₁ v * x + a₂ v * x ^ 2) y =\n  (2 * a₂ y - y * a₂') * x ^ 2 + (a₁ y - y * a₁') * x - y * a₀'",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 172
+          },
+          "start": {
+            "column": 0,
+            "line": 131
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 39,
+            "line": 133
+          },
+          "start": {
+            "column": 8,
+            "line": 133
+          }
+        }
+      },
+      "elaborated_type": "∀ (a₀ a₁ a₂ : ℝ → ℝ) (a₀' a₁' a₂' x y : ℝ),\n  HasDerivAt a₀ a₀' y →\n    HasDerivAt a₁ a₁' y →\n      HasDerivAt a₂ a₂' y →\n        x * deriv (fun u => a₀ y + a₁ y * u + a₂ y * u ^ 2) x - y * deriv (fun v => a₀ v + a₁ v * x + a₂ v * x ^ 2) y =\n          (2 * a₂ y - y * a₂') * x ^ 2 + (a₁ y - y * a₁') * x - y * a₀'",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.quadratic_trace_source_identity",
+      "proof_dependencies": [
+        "AddCommGroup",
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommGroup.toAddGroup",
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toNatCast",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommMagma.toMul",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemigroup.toCommMagma",
+        "CommSemiring.toSemiring",
+        "ContinuousMul.to_continuousSMul",
+        "ContinuousSMul",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.casesOn",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Field.toSemifield",
+        "HAdd.hAdd",
+        "HEq",
+        "HEq.casesOn",
+        "HEq.refl",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "HasDerivAt",
+        "HasDerivAt.add",
+        "HasDerivAt.congr_simp",
+        "HasDerivAt.const_mul",
+        "HasDerivAt.deriv",
+        "HasDerivAt.mul_const",
+        "HasDerivAt.pow",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "IsBoundedSMul.continuousSMul",
+        "IsTopologicalRing.toIsTopologicalSemiring",
+        "IsTopologicalSemiring.toContinuousMul",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Module",
+        "Module.toDistribMulAction",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Nat.cast",
+        "Nat.cast_zero",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocCommSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocCommSemiring.toCommMagma",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalNormedRing.toNonUnitalSeminormedRing",
+        "NonUnitalSeminormedCommRing.toNonUnitalSeminormedRing",
+        "NonUnitalSeminormedRing.toSeminormedAddCommGroup",
+        "NontriviallyNormedField",
+        "NontriviallyNormedField.toNormedField",
+        "NormedAddCommGroup.toAddCommGroup",
+        "NormedAddCommGroup.toSeminormedAddCommGroup",
+        "NormedAlgebra.id",
+        "NormedAlgebra.toNormedSpace",
+        "NormedCommRing.toCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toNormedRing",
+        "NormedCommRing.toSeminormedCommRing",
+        "NormedField.toField",
+        "NormedField.toNormedCommRing",
+        "NormedField.toNormedSpace",
+        "NormedRing.toNonUnitalNormedRing",
+        "NormedRing.toRing",
+        "NormedRing.toSeminormedRing",
+        "NormedSpace.toIsBoundedSMul",
+        "NormedSpace.toModule",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.instAdd",
+        "Pi.instPow",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.commRing",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instCommSemigroup",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.normedAddCommGroup",
+        "Real.normedCommRing",
+        "Real.pseudoMetricSpace",
+        "Real.semiring",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "SMulZeroClass.toSMul",
+        "Semifield.toDivisionSemiring",
+        "SeminormedAddCommGroup.toPseudoMetricSpace",
+        "SeminormedCommRing.toNonUnitalSeminormedCommRing",
+        "SeminormedCommRing.toSeminormedRing",
+        "SeminormedRing.toPseudoMetricSpace",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toAddMonoid",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "TopologicalSpace",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "deriv",
+        "eq_of_heq",
+        "funext",
+        "hasDerivAt_const",
+        "hasDerivAt_id",
+        "heq_of_eq",
+        "id",
+        "inferInstance",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsTopologicalRingReal",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instSubNat",
+        "mul_comm",
+        "mul_left_comm",
+        "mul_one",
+        "pow_one",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "ContinuousMul.to_continuousSMul",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toSemifield",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "HasDerivAt",
+        "IsTopologicalRing.toIsTopologicalSemiring",
+        "IsTopologicalSemiring.toContinuousMul",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NontriviallyNormedField.toNormedField",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toSeminormedCommRing",
+        "NormedField.toField",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "Real.normedCommRing",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "SeminormedCommRing.toSeminormedRing",
+        "SeminormedRing.toPseudoMetricSpace",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsTopologicalRingReal",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 54,
+            "line": 286
+          },
+          "start": {
+            "column": 0,
+            "line": 282
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 284
+          },
+          "start": {
+            "column": 4,
+            "line": 284
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "HSub.hSub",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAddCommGroup",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHMul",
+        "instHSub",
+        "instOfNatAtLeastTwo"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y =\n  2 * D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y -\n    y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z v) y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p z y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA p z y =\n    2 * D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z y -\n      y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2 p z v) y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.goldenRotation._proof_2",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientA",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "HSub.hSub",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAddCommGroup",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHMul",
+        "instHSub",
+        "instOfNatAtLeastTwo"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 54,
+            "line": 290
+          },
+          "start": {
+            "column": 0,
+            "line": 288
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 288
+          },
+          "start": {
+            "column": 4,
+            "line": 288
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "HSub.hSub",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAddCommGroup",
+        "Real.instMul",
+        "Real.instSub",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHMul",
+        "instHSub"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y =\n  D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y -\n    y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z v) y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p z y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB p z y =\n    D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z y -\n      y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1 p z v) y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient1",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientB",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "HSub.hSub",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAddCommGroup",
+        "Real.instMul",
+        "Real.instSub",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHMul",
+        "instHSub"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 53,
+            "line": 293
+          },
+          "start": {
+            "column": 0,
+            "line": 292
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 292
+          },
+          "start": {
+            "column": 4,
+            "line": 292
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "Neg.neg",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAddCommGroup",
+        "Real.instMul",
+        "Real.instNeg",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHMul"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y =\n  -y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z v) y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (p z y : ℝ),\n  D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC p z y =\n    -y * deriv (fun v => D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0 p z v) y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.ClosedHistoryNonlinearDustBranch",
+      "name": "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC.eq_1",
+      "proof_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC",
+        "Eq.refl",
+        "Real"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Research.ClosedHistoryNonlinearDustBranch.clickCoefficient0",
+        "D0.Research.ClosedHistoryNonlinearDustBranch.traceCoefficientC",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toSemifield",
+        "HMul.hMul",
+        "Neg.neg",
+        "NontriviallyNormedField.toNormedField",
+        "NormedField.toField",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAddCommGroup",
+        "Real.instMul",
+        "Real.instNeg",
+        "Real.pseudoMetricSpace",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "UniformSpace.toTopologicalSpace",
+        "deriv",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/ClosedHistoryNonlinearDustBranch.lean"
+    }
+  ]
+}

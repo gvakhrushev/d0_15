@@ -1,0 +1,687 @@
+{
+  "snapshot_commit": "199a35de3f31c19d3ea193cce046fb3ebda46418",
+  "worktree_dirty": false,
+  "public_import_root": "D0.All",
+  "lean_source_digest": "7838ba5057e0fc4850096d56ffdafa42f0d471594008de8311d18f6af881aa94",
+  "source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "b538abd4bfbb919f948cbf619dbf2e24859223532e0443ece644c512d050568a",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "fef562348c1009b4b91b80970c6ef277f1e6534c0ddc0c7ec860b267bf32094b",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "tool_source_digests": {
+    "tools/proof_architecture.py": "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
+    "tools/lean_declaration_inventory.py": "d10e1c5a6bd9ac9930968f6a5db22a94255d93374ddb4f759de6bd72f6c95386"
+  },
+  "result_id": "metric-provenance",
+  "statement": "The pinned J² bridge reports two distinct units: (A) the selected star-action metric quotient Q=Theta eta Theta^T and (B) the flat detector tangent DQ_flat[H(q)]=q.",
+  "reported_state": "Candidate reconciliation separates the source's selected-action quotient (A) from its flat detector tangent (B). The Lean source-convention adapter supplies a finite matrix witness for B, maps the source frame by right multiplication with η into the existing solder Gram carrier, and retains the quadratic remainder. It does not connect A's selected action quotient to that Lean carrier or close global connection elimination, physical metric/source selection, or independent C0 acceptance.",
+  "source_units": [
+    {
+      "commit": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+      "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+      "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+      "section_refs": [
+        "L16: A. The selected finite action already owns a nonlinear metric carrier"
+      ],
+      "exact_unit_key_candidates": [
+        "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md#L16: A. The selected finite action already owns a nonlinear metric carrier"
+      ],
+      "unit_locator_status": "candidate_section_keys_need_review",
+      "pin_status": "verified",
+      "current_source_status": "matches_pin"
+    },
+    {
+      "commit": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+      "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+      "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+      "section_refs": [
+        "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+      ],
+      "exact_unit_key_candidates": [
+        "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md#L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+      ],
+      "unit_locator_status": "candidate_section_keys_need_review",
+      "pin_status": "verified",
+      "current_source_status": "matches_pin"
+    }
+  ],
+  "lean_pins": [
+    {
+      "commit": "150c34ad0ff1a1f4eb0edfb06363d7d6bfa45bab",
+      "path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+      "expected_sha256": "deab902987ff9c518407b637a633547672ca78d6f8dd36a24d6f9879d74fde49",
+      "pinned_blob_sha256": "deab902987ff9c518407b637a633547672ca78d6f8dd36a24d6f9879d74fde49",
+      "pin_status": "verified",
+      "current_source_status": "matches_pin",
+      "requested_declarations": [
+        "D0.Geometry.coframeMetricReadout_realizes_symmetric",
+        "D0.Geometry.solderMetric_realizes_symmetric_tangent",
+        "D0.Geometry.j2DetectorMetricPath_symmetric_tangent",
+        "D0.Geometry.j2DetectorMetricPath_symmetric_difference_quotient",
+        "D0.Geometry.solderMetricMatrix_constant_j2DetectorMetricPath",
+        "D0.Geometry.j2DetectorMetricPath_symmetric_solder_adapter"
+      ],
+      "declarations": [
+        {
+          "name": "D0.Geometry.coframeMetricReadout_realizes_symmetric",
+          "resolution_status": "resolved",
+          "module": "D0.Geometry.A4DSolderMetricCompletion",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+          "declaration_kind": "theorem",
+          "elaborated_type": "∀ (N : ℕ) (q : Matrix D0.Role D0.Role ℝ),\n  q.transpose = q →\n    ∃ e, ∀ (x : D0.Geometry.ArchiveRolePhaseGroup N), (D0.Geometry.coframeMetricReadout N e x).toMatrix = q",
+          "conclusion_whnf": "∃ e, ∀ (x : D0.Geometry.ArchiveRolePhaseGroup N), (D0.Geometry.coframeMetricReadout N e x).toMatrix = q",
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "N",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "q",
+              "type": "D0.Role → D0.Role → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": true,
+              "name": "hq",
+              "type": "q.transpose = q"
+            }
+          ],
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "proof_dependencies": [
+            "D0.Algebra.symmetricMatrix_half",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.LocalCoframeField",
+            "D0.Geometry.SymRoleTensor.toMatrix",
+            "D0.Geometry.centeredCoframeMatrix",
+            "D0.Geometry.centeredCoframeMatrix_constant",
+            "D0.Geometry.coframeMetricReadout",
+            "D0.Geometry.coframeMetricReadout_eq_centered_add_transpose",
+            "D0.Role",
+            "Eq",
+            "Eq.mpr",
+            "Exists.intro",
+            "HAdd.hAdd",
+            "HSMul.hSMul",
+            "Inv.inv",
+            "Matrix",
+            "Matrix.add",
+            "Matrix.smul",
+            "Matrix.transpose",
+            "Nat",
+            "Nat.instAtLeastTwoHAddOfNat",
+            "Nat.instNeZeroSucc",
+            "OfNat.ofNat",
+            "Real",
+            "Real.instAdd",
+            "Real.instInv",
+            "Real.instMul",
+            "Real.instNatCast",
+            "congrArg",
+            "id",
+            "instHAdd",
+            "instHSMul",
+            {
+              "_omitted_items": 3
+            }
+          ],
+          "source_range": {
+            "end": {
+              "column": 54,
+              "line": 151
+            },
+            "start": {
+              "column": 0,
+              "line": 139
+            }
+          }
+        },
+        {
+          "name": "D0.Geometry.solderMetric_realizes_symmetric_tangent",
+          "resolution_status": "resolved",
+          "module": "D0.Geometry.A4DSolderMetricCompletion",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+          "declaration_kind": "theorem",
+          "elaborated_type": "∀ (N : ℕ) (q : Matrix D0.Role D0.Role ℝ),\n  q.transpose = q →\n    ∃ e,\n      (∀ (x : D0.Geometry.ArchiveRolePhaseGroup N), (D0.Geometry.coframeMetricReadout N e x).toMatrix = q) ∧\n        (∀ (x : D0.Geometry.ArchiveRolePhaseGroup N) (t : ℝ),\n            D0.Geometry.solderMetricMatrix N (t • e) x - D0.Geometry.roleLorentzMetric =\n              t • q +\n                t ^ 2 •\n                  (D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n                    (D0.Geometry.centeredCoframeMatrix N e x).transpose)) ∧\n          ∀ (x : D0.Geometry.ArchiveRolePhaseGroup N) (t : ℝ),\n            t ≠ 0 →\n              t⁻¹ • (D0.Geometry.solderMetricMatrix N (t • e) x - D0.Geometry.roleLorentzMetric) =\n                q +\n                  t •\n                    (D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n                      (D0.Geometry.centeredCoframeMatrix N e x).transpose)",
+          "conclusion_whnf": "∃ e,\n  (∀ (x : D0.Geometry.ArchiveRolePhaseGroup N), (D0.Geometry.coframeMetricReadout N e x).toMatrix = q) ∧\n    (∀ (x : D0.Geometry.ArchiveRolePhaseGroup N) (t : ℝ),\n        D0.Geometry.solderMetricMatrix N (t • e) x - D0.Geometry.roleLorentzMetric =\n          t • q +\n            t ^ 2 •\n              (D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n                (D0.Geometry.centeredCoframeMatrix N e x).transpose)) ∧\n      ∀ (x : D0.Geometry.ArchiveRolePhaseGroup N) (t : ℝ),\n        t ≠ 0 →\n          t⁻¹ • (D0.Geometry.solderMetricMatrix N (t • e) x - D0.Geometry.roleLorentzMetric) =\n            q +\n              t •\n                (D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n                  (D0.Geometry.centeredCoframeMatrix N e x).transpose)",
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "N",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "q",
+              "type": "D0.Role → D0.Role → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": true,
+              "name": "hq",
+              "type": "q.transpose = q"
+            }
+          ],
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "proof_dependencies": [
+            "And",
+            "And.intro",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.LocalCoframeField",
+            "D0.Geometry.SymRoleTensor.toMatrix",
+            "D0.Geometry.centeredCoframeMatrix",
+            "D0.Geometry.coframeMetricReadout",
+            "D0.Geometry.coframeMetricReadout_realizes_symmetric",
+            "D0.Geometry.roleLorentzMetric",
+            "D0.Geometry.solderMetricMatrix",
+            "D0.Geometry.solderMetric_flat_tangent",
+            "D0.Geometry.solderMetric_smul_expand",
+            "D0.Role",
+            "Eq",
+            "Eq.mpr",
+            "Eq.refl",
+            "Exists",
+            "Exists.casesOn",
+            "Exists.intro",
+            "Fin.fintype",
+            "Function.hasSMul",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "HPow.hPow",
+            "HSMul.hSMul",
+            "HSub.hSub",
+            "Inv.inv",
+            "Matrix",
+            "Matrix.add",
+            "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+            "Matrix.smul",
+            {
+              "_omitted_items": 24
+            }
+          ],
+          "source_range": {
+            "end": {
+              "column": 51,
+              "line": 175
+            },
+            "start": {
+              "column": 0,
+              "line": 153
+            }
+          }
+        },
+        {
+          "name": "D0.Geometry.j2DetectorMetricPath_symmetric_tangent",
+          "resolution_status": "resolved",
+          "module": "D0.Geometry.A4DSolderMetricCompletion",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+          "declaration_kind": "theorem",
+          "elaborated_type": "∀ (q : Matrix D0.Role D0.Role ℝ),\n  q.transpose = q →\n    ∀ (t : ℝ),\n      D0.Geometry.j2DetectorMetricPath (t • D0.Geometry.j2DetectorCoframeDirection q) =\n        D0.Geometry.roleLorentzMetric + t • q +\n          t ^ 2 •\n            (D0.Geometry.j2DetectorCoframeDirection q * D0.Geometry.roleLorentzMetric *\n              (D0.Geometry.j2DetectorCoframeDirection q).transpose)",
+          "conclusion_whnf": "D0.Geometry.j2DetectorMetricPath (t • D0.Geometry.j2DetectorCoframeDirection q) =\n  D0.Geometry.roleLorentzMetric + t • q +\n    t ^ 2 •\n      (D0.Geometry.j2DetectorCoframeDirection q * D0.Geometry.roleLorentzMetric *\n        (D0.Geometry.j2DetectorCoframeDirection q).transpose)",
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "q",
+              "type": "D0.Role → D0.Role → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": true,
+              "name": "hq",
+              "type": "q.transpose = q"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "t",
+              "type": "ℝ"
+            }
+          ],
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "proof_dependencies": [
+            "D0.Dyad",
+            "D0.Geometry.j2DetectorCoframeDirection",
+            "D0.Geometry.j2DetectorCoframeDirection_metric_tangent",
+            "D0.Geometry.j2DetectorMetricPath",
+            "D0.Geometry.j2DetectorMetricPath_smul_expand",
+            "D0.Geometry.roleLorentzMetric",
+            "D0.Role",
+            "Eq",
+            "Eq.mpr",
+            "Eq.refl",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "HPow.hPow",
+            "HSMul.hSMul",
+            "Matrix",
+            "Matrix.add",
+            "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+            "Matrix.smul",
+            "Matrix.transpose",
+            "Monoid.toPow",
+            "Nat",
+            "OfNat.ofNat",
+            "Real",
+            "Real.instAdd",
+            "Real.instAddCommMonoid",
+            "Real.instMonoid",
+            "Real.instMul",
+            "congrArg",
+            "id",
+            "instFintypeProd",
+            "instHAdd",
+            {
+              "_omitted_items": 4
+            }
+          ],
+          "source_range": {
+            "end": {
+              "column": 51,
+              "line": 231
+            },
+            "start": {
+              "column": 0,
+              "line": 222
+            }
+          }
+        },
+        {
+          "name": "D0.Geometry.j2DetectorMetricPath_symmetric_difference_quotient",
+          "resolution_status": "resolved",
+          "module": "D0.Geometry.A4DSolderMetricCompletion",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+          "declaration_kind": "theorem",
+          "elaborated_type": "∀ (q : Matrix D0.Role D0.Role ℝ),\n  q.transpose = q →\n    ∀ (t : ℝ),\n      t ≠ 0 →\n        t⁻¹ •\n            (D0.Geometry.j2DetectorMetricPath (t • D0.Geometry.j2DetectorCoframeDirection q) -\n              D0.Geometry.roleLorentzMetric) =\n          q +\n            t •\n              (D0.Geometry.j2DetectorCoframeDirection q * D0.Geometry.roleLorentzMetric *\n                (D0.Geometry.j2DetectorCoframeDirection q).transpose)",
+          "conclusion_whnf": "t⁻¹ •\n    (D0.Geometry.j2DetectorMetricPath (t • D0.Geometry.j2DetectorCoframeDirection q) - D0.Geometry.roleLorentzMetric) =\n  q +\n    t •\n      (D0.Geometry.j2DetectorCoframeDirection q * D0.Geometry.roleLorentzMetric *\n        (D0.Geometry.j2DetectorCoframeDirection q).transpose)",
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "q",
+              "type": "D0.Role → D0.Role → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": true,
+              "name": "hq",
+              "type": "q.transpose = q"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "t",
+              "type": "ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": true,
+              "name": "ht",
+              "type": "t = 0 → False"
+            }
+          ],
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "proof_dependencies": [
+            "AddMonoid.toAddZeroClass",
+            "AddZero.toAdd",
+            "AddZero.toZero",
+            "AddZeroClass.toAddZero",
+            "D0.Dyad",
+            "D0.Geometry.j2DetectorCoframeDirection",
+            "D0.Geometry.j2DetectorMetricPath",
+            "D0.Geometry.j2DetectorMetricPath_symmetric_difference_quotient._abel_1_1",
+            "D0.Geometry.j2DetectorMetricPath_symmetric_tangent",
+            "D0.Geometry.roleLorentzMetric",
+            "D0.Role",
+            "DistribMulAction.toDistribSMul",
+            "DistribSMul.toSMulZeroClass",
+            "DivisionSemiring.toGroupWithZero",
+            "Eq",
+            "Eq.mpr",
+            "Eq.trans",
+            "False",
+            "Field.toSemifield",
+            "Fin.fintype",
+            "GroupWithZero.toMonoidWithZero",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "HPow.hPow",
+            "HSMul.hSMul",
+            "HSub.hSub",
+            "Inv.inv",
+            "Matrix",
+            "Matrix.add",
+            "Matrix.addMonoid",
+            "Matrix.addZeroClass",
+            "Matrix.distribMulAction",
+            {
+              "_omitted_items": 62
+            }
+          ],
+          "source_range": {
+            "end": {
+              "column": 41,
+              "line": 247
+            },
+            "start": {
+              "column": 0,
+              "line": 233
+            }
+          }
+        },
+        {
+          "name": "D0.Geometry.solderMetricMatrix_constant_j2DetectorMetricPath",
+          "resolution_status": "resolved",
+          "module": "D0.Geometry.A4DSolderMetricCompletion",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+          "declaration_kind": "theorem",
+          "elaborated_type": "∀ (N : ℕ) (H : Matrix D0.Role D0.Role ℝ) (t : ℝ) (x : D0.Geometry.ArchiveRolePhaseGroup N),\n  D0.Geometry.solderMetricMatrix N (t • fun x r a => (H * D0.Geometry.roleLorentzMetric) r a) x =\n    D0.Geometry.j2DetectorMetricPath (t • H)",
+          "conclusion_whnf": "D0.Geometry.solderMetricMatrix N (t • fun x r a => (H * D0.Geometry.roleLorentzMetric) r a) x =\n  D0.Geometry.j2DetectorMetricPath (t • H)",
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "N",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "H",
+              "type": "D0.Role → D0.Role → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "t",
+              "type": "ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "x",
+              "type": "D0.Role → ZMod (D0.archiveFibers N)"
+            }
+          ],
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "proof_dependencies": [
+            "Algebra.id",
+            "Algebra.smul_mul_assoc",
+            "Algebra.toSMul",
+            "D0.Algebra.finiteGram",
+            "D0.Algebra.finiteGram_right_invariant",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.LocalCoframeField",
+            "D0.Geometry.centeredCoframeMatrix",
+            "D0.Geometry.centeredCoframeMatrix_constant",
+            "D0.Geometry.centeredCoframeMatrix_smul",
+            "D0.Geometry.j2DetectorMetricPath",
+            "D0.Geometry.roleLorentzMetric",
+            "D0.Geometry.roleLorentzMetric_sq",
+            "D0.Geometry.roleLorentzMetric_transpose",
+            "D0.Geometry.solderMatrix",
+            "D0.Geometry.solderMetricMatrix",
+            "D0.Role",
+            "Distrib.toAdd",
+            "Distrib.toMul",
+            "Eq",
+            "Eq.mpr",
+            "Eq.refl",
+            "Eq.trans",
+            "Fin.fintype",
+            "Function.hasSMul",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "HSMul.hSMul",
+            "Matrix",
+            "Matrix.add",
+            "Matrix.add_mul",
+            {
+              "_omitted_items": 47
+            }
+          ],
+          "source_range": {
+            "end": {
+              "column": 43,
+              "line": 272
+            },
+            "start": {
+              "column": 0,
+              "line": 249
+            }
+          }
+        },
+        {
+          "name": "D0.Geometry.j2DetectorMetricPath_symmetric_solder_adapter",
+          "resolution_status": "resolved",
+          "module": "D0.Geometry.A4DSolderMetricCompletion",
+          "source_path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+          "declaration_kind": "theorem",
+          "elaborated_type": "∀ (N : ℕ) (q : Matrix D0.Role D0.Role ℝ),\n  q.transpose = q →\n    ∃ e,\n      (∀ (x : D0.Geometry.ArchiveRolePhaseGroup N), (D0.Geometry.coframeMetricReadout N e x).toMatrix = q) ∧\n        ∀ (x : D0.Geometry.ArchiveRolePhaseGroup N) (t : ℝ),\n          D0.Geometry.solderMetricMatrix N (t • e) x =\n            D0.Geometry.j2DetectorMetricPath (t • D0.Geometry.j2DetectorCoframeDirection q)",
+          "conclusion_whnf": "∃ e,\n  (∀ (x : D0.Geometry.ArchiveRolePhaseGroup N), (D0.Geometry.coframeMetricReadout N e x).toMatrix = q) ∧\n    ∀ (x : D0.Geometry.ArchiveRolePhaseGroup N) (t : ℝ),\n      D0.Geometry.solderMetricMatrix N (t • e) x =\n        D0.Geometry.j2DetectorMetricPath (t • D0.Geometry.j2DetectorCoframeDirection q)",
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "N",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "q",
+              "type": "D0.Role → D0.Role → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": true,
+              "name": "hq",
+              "type": "q.transpose = q"
+            }
+          ],
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "proof_dependencies": [
+            "AddCommMonoidWithOne.toAddMonoidWithOne",
+            "AddMonoidWithOne.toOne",
+            "And",
+            "And.intro",
+            "D0.Algebra.symmetricMatrix_half",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.LocalCoframeField",
+            "D0.Geometry.SymRoleTensor.toMatrix",
+            "D0.Geometry.centeredCoframeMatrix",
+            "D0.Geometry.centeredCoframeMatrix_constant",
+            "D0.Geometry.coframeMetricReadout",
+            "D0.Geometry.coframeMetricReadout_eq_centered_add_transpose",
+            "D0.Geometry.j2DetectorCoframeDirection",
+            "D0.Geometry.j2DetectorCoframeDirection._proof_1",
+            "D0.Geometry.j2DetectorMetricPath",
+            "D0.Geometry.roleLorentzMetric",
+            "D0.Geometry.roleLorentzMetric_sq",
+            "D0.Geometry.solderMetricMatrix",
+            "D0.Geometry.solderMetricMatrix_constant_j2DetectorMetricPath",
+            "D0.Role",
+            "Distrib.toMul",
+            "Eq",
+            "Eq.mpr",
+            "Eq.refl",
+            "Exists.intro",
+            "Fin.fintype",
+            "Function.hasSMul",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "HSMul.hSMul",
+            "Inv.inv",
+            {
+              "_omitted_items": 45
+            }
+          ],
+          "source_range": {
+            "end": {
+              "column": 66,
+              "line": 293
+            },
+            "start": {
+              "column": 0,
+              "line": 274
+            }
+          }
+        }
+      ]
+    },
+    {
+      "commit": "150c34ad0ff1a1f4eb0edfb06363d7d6bfa45bab",
+      "path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
+      "expected_sha256": "26864e383f68dc793907ae14d07982c967346459500aad92d057cfa81c13f900",
+      "pinned_blob_sha256": "26864e383f68dc793907ae14d07982c967346459500aad92d057cfa81c13f900",
+      "pin_status": "verified",
+      "current_source_status": "matches_pin",
+      "requested_declarations": [
+        "D0.Algebra.finiteGram_one_smul_expand"
+      ],
+      "declarations": [
+        {
+          "name": "D0.Algebra.finiteGram_one_smul_expand",
+          "resolution_status": "resolved",
+          "module": "D0.Algebra.FiniteGramTangent",
+          "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean",
+          "declaration_kind": "theorem",
+          "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (η C : Matrix ι ι ℝ) (t : ℝ),\n  D0.Algebra.finiteGram η (1 + t • C) = η + t • (C * η + η * C.transpose) + t ^ 2 • (C * η * C.transpose)",
+          "conclusion_whnf": "D0.Algebra.finiteGram η (1 + t • C) = η + t • (C * η + η * C.transpose) + t ^ 2 • (C * η * C.transpose)",
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.implicit",
+              "is_proposition": false,
+              "name": "ι",
+              "type": "Type u_1"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.instImplicit",
+              "is_proposition": false,
+              "name": "inst._@.D0.Algebra.FiniteGramTangent.3867035479._hygCtx._hyg.3",
+              "type": "Fintype ι"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.instImplicit",
+              "is_proposition": false,
+              "name": "inst._@.D0.Algebra.FiniteGramTangent.3867035479._hygCtx._hyg.6",
+              "type": "(a b : ι) → Decidable (a = b)"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "η",
+              "type": "ι → ι → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "C",
+              "type": "ι → ι → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "t",
+              "type": "ℝ"
+            }
+          ],
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "proof_dependencies": [
+            "AddMonoid.toAddZeroClass",
+            "AddZero.toAdd",
+            "AddZero.toZero",
+            "AddZeroClass.toAddZero",
+            "Algebra.id",
+            "Algebra.mul_smul_comm",
+            "Algebra.smul_mul_assoc",
+            "Algebra.toSMul",
+            "D0.Algebra.finiteGram",
+            "D0.Algebra.finiteGram_one_smul_expand._abel_1_1",
+            "DecidableEq",
+            "Distrib.toAdd",
+            "Distrib.toMul",
+            "DistribMulAction.toDistribSMul",
+            "DistribSMul.toSMulZeroClass",
+            "Eq",
+            "Eq.mpr",
+            "Eq.trans",
+            "Fintype",
+            "HAdd.hAdd",
+            "HMul.hMul",
+            "HPow.hPow",
+            "HSMul.hSMul",
+            "Matrix",
+            "Matrix.add",
+            "Matrix.addMonoid",
+            "Matrix.addZeroClass",
+            "Matrix.add_mul",
+            "Matrix.distribMulAction",
+            "Matrix.instAlgebra",
+            "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+            "Matrix.mulAction",
+            {
+              "_omitted_items": 62
+            }
+          ],
+          "source_range": {
+            "end": {
+              "column": 6,
+              "line": 80
+            },
+            "start": {
+              "column": 0,
+              "line": 68
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "declaration_disposition": "ambiguous",
+  "explicit_declaration_locator_disposition": "all_resolved",
+  "claim_locator_disposition": "unresolved",
+  "semantic_relation_status": "unresolved",
+  "acceptance_inferred": false
+}

@@ -1,0 +1,56 @@
+{
+  "base_source_head": "9f23ec82c8e4e044121521658afec4a5e9b8c2f7",
+  "checkers": [
+    {
+      "checks": 19,
+      "matches_owner_result": true,
+      "name": "nonlinear_dust",
+      "normal_optimized_stderr_identical": true,
+      "normal_optimized_stdout_identical": true,
+      "published_result_path": "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_result_2026_10_28.json",
+      "published_result_sha256": "1c6d58b73c9071b6d5768da7cbda203e22742b23636a46cea80e58e7d134f19f",
+      "script_path": "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_check.py",
+      "script_sha256": "9c6569fb3e13e2720508bf7b6b967834363a82c620e969cf0caebfcb0227437c",
+      "stderr_bytes": 0,
+      "stdout_sha256": "1c6d58b73c9071b6d5768da7cbda203e22742b23636a46cea80e58e7d134f19f"
+    },
+    {
+      "checks": 24,
+      "matches_owner_result": true,
+      "name": "af_word_embedding",
+      "normal_optimized_stderr_identical": true,
+      "normal_optimized_stdout_identical": true,
+      "published_result_path": "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_result_2026_10_28.json",
+      "published_result_sha256": "313d3c52e511884f2a8abb453465cc08733c55d88d92ac53f7e5e518ca07a0f4",
+      "script_path": "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_check.py",
+      "script_sha256": "78afc81c468e69e1cdfe54e3201cb54caa5bae379eaf623cc7367c84f5ed1e5f",
+      "stderr_bytes": 0,
+      "stdout_sha256": "313d3c52e511884f2a8abb453465cc08733c55d88d92ac53f7e5e518ca07a0f4"
+    }
+  ],
+  "consumed_not_replayed": [
+    "the already-owned full LTB curvature/Cartan proof",
+    "the entire GR-native word",
+    "full physical Book03 stationary domain"
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "execution_directory_commit": "c296829fc2e74d673a2a679baa1e10a49524b290",
+  "input_commit_in_checker": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+  "owner_pr": 334,
+  "schema": "d0-owner-checker-replay-v1",
+  "scope": {
+    "GR_closed": false,
+    "all_physical_book_domain_identified": false,
+    "exact_stationarity_of_each_finite_word": false,
+    "explicit_nonVSI_LTB_recovery_supplied": true,
+    "full128_return_same_operator": false,
+    "native_field_graph_source_convergence_conditional": true,
+    "nonlinear_original_click_and_Einstein_dust_sector_supplied": true,
+    "physical_admission": false,
+    "scientific_acceptance": false
+  },
+  "source_head": "c296829fc2e74d673a2a679baa1e10a49524b290"
+}

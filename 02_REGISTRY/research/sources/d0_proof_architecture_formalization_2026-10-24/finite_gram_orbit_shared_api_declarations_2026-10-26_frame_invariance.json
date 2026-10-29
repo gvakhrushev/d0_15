@@ -1,0 +1,2355 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "a42496ebe38827110fb61323ca4a6ab52a731068",
+  "worktree_dirty": false,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "3d9b1ed85f4abef6bcb7b49d4afee37556ca7671f92f55ebc43722f971d58936",
+  "collector_sha256": "bee727e95143d3d792336e27acf5ac2a45ebcd73bcee38bb7dae272896a2cf50",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "full_names": [
+      "D0.Algebra.finiteGram",
+      "D0.Algebra.finiteGram.eq_1",
+      "D0.Algebra.finiteGram_one_smul_expand",
+      "D0.Algebra.finiteGram_one_smul_expand._abel_1_1",
+      "D0.Algebra.finiteGram_right_invariant",
+      "D0.Algebra.finiteGram_right_orbit_complete",
+      "D0.Algebra.finiteGram_smul_expand",
+      "D0.Algebra.finiteGram_smul_expand._abel_1_1",
+      "D0.Algebra.finiteGram_symmetric",
+      "D0.Algebra.symmetricMatrix_half",
+      "D0.Geometry.a4dRightLorentz_gram_complete",
+      "D0.Algebra.finiteGram_dressed_transport_compatible",
+      "D0.Geometry.a4dDressedLink_metric_compatible",
+      "D0.Algebra.finiteMatrix_dressed_transport_frame_invariant",
+      "D0.Geometry.a4dDressedLink_frame_invariant"
+    ]
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.3394037862._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θ",
+          "type": "ι → ι → ℝ"
+        }
+      ],
+      "conclusion_whnf": "ι → ι → ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 21,
+            "line": 21
+          },
+          "start": {
+            "column": 0,
+            "line": 18
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 14,
+            "line": 19
+          },
+          "start": {
+            "column": 4,
+            "line": 19
+          }
+        }
+      },
+      "elaborated_type": "{ι : Type u_1} → [Fintype ι] → Matrix ι ι ℝ → Matrix ι ι ℝ → Matrix ι ι ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram",
+      "proof_dependencies": [
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.transpose",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul"
+      ],
+      "type_dependencies": [
+        "Fintype",
+        "Matrix",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.3394037862._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θ",
+          "type": "ι → ι → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteGram η Θ = Θ * η * Θ.transpose",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] (η Θ : Matrix ι ι ℝ), D0.Algebra.finiteGram η Θ = Θ * η * Θ.transpose",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram.eq_1",
+      "proof_dependencies": [
+        "D0.Algebra.finiteGram",
+        "Eq.refl",
+        "Fintype",
+        "Matrix",
+        "Real"
+      ],
+      "type_dependencies": [
+        "D0.Algebra.finiteGram",
+        "Eq",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.transpose",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.3867035479._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.3867035479._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteGram η (1 + t • C) = η + t • (C * η + η * C.transpose) + t ^ 2 • (C * η * C.transpose)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 173
+          },
+          "start": {
+            "column": 0,
+            "line": 161
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 34,
+            "line": 164
+          },
+          "start": {
+            "column": 8,
+            "line": 164
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (η C : Matrix ι ι ℝ) (t : ℝ),\n  D0.Algebra.finiteGram η (1 + t • C) = η + t • (C * η + η * C.transpose) + t ^ 2 • (C * η * C.transpose)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram_one_smul_expand",
+      "proof_dependencies": [
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Algebra.id",
+        "Algebra.mul_smul_comm",
+        "Algebra.smul_mul_assoc",
+        "Algebra.toSMul",
+        "D0.Algebra.finiteGram",
+        "D0.Algebra.finiteGram_one_smul_expand._abel_1_1",
+        "DecidableEq",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mpr",
+        "Eq.trans",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.addMonoid",
+        "Matrix.addZeroClass",
+        "Matrix.add_mul",
+        "Matrix.distribMulAction",
+        "Matrix.instAlgebra",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulAction",
+        "Matrix.mul_add",
+        "Matrix.mul_assoc",
+        "Matrix.one",
+        "Matrix.semiring",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Matrix.transpose_add",
+        "Matrix.transpose_one",
+        "Matrix.transpose_smul",
+        "Module.toDistribMulAction",
+        "Monoid.toMulAction",
+        "Monoid.toMulOneClass",
+        "Monoid.toPow",
+        "Monoid.toSemigroup",
+        "MulAction.toSemigroupAction",
+        "MulOne.toMul",
+        "MulOneClass.toMulOne",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "SemigroupAction.toSMul",
+        "Semiring.toModule",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "mul_one",
+        "one_mul",
+        "pow_two",
+        "smul_add",
+        "smul_smul"
+      ],
+      "type_dependencies": [
+        "D0.Algebra.finiteGram",
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.one",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "instHAdd",
+        "instHPow",
+        "instHSMul",
+        "instOfNatNat",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.3867035479._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.3867035479._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "η + t • (C * η) + (t • (η * C.transpose) + (t * t) • (C * (η * C.transpose))) =\n  η + (t • (C * η) + t • (η * C.transpose)) + (t * t) • (C * (η * C.transpose))",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (η C : Matrix ι ι ℝ) (t : ℝ),\n  η + t • (C * η) + (t • (η * C.transpose) + (t * t) • (C * (η * C.transpose))) =\n    η + (t • (C * η) + t • (η * C.transpose)) + (t * t) • (C * (η * C.transpose))",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram_one_smul_expand._abel_1_1",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Algebra.id",
+        "Algebra.toSMul",
+        "DecidableEq",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq.symm",
+        "Eq.trans",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "Int",
+        "Mathlib.Tactic.Abel.subst_into_addg",
+        "Mathlib.Tactic.Abel.term_add_constg",
+        "Mathlib.Tactic.Abel.term_atomg",
+        "Mathlib.Tactic.Abel.termg",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.addCommGroup",
+        "Matrix.addMonoid",
+        "Matrix.addZeroClass",
+        "Matrix.distribMulAction",
+        "Matrix.instAlgebra",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulAction",
+        "Matrix.semiring",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Matrix.zero",
+        "Module.toDistribMulAction",
+        "Monoid.toMulAction",
+        "Monoid.toMulOneClass",
+        "Monoid.toSemigroup",
+        "MulAction.toSemigroupAction",
+        "MulOne.toMul",
+        "MulOneClass.toMulOne",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "SemigroupAction.toSMul",
+        "Semiring.toModule",
+        "Zero.toOfNat0",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHSMul",
+        "instOfNat",
+        "instSMulOfMul",
+        "zero_add"
+      ],
+      "type_dependencies": [
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Algebra.id",
+        "Algebra.toSMul",
+        "DecidableEq",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.addMonoid",
+        "Matrix.addZeroClass",
+        "Matrix.distribMulAction",
+        "Matrix.instAlgebra",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulAction",
+        "Matrix.semiring",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Module.toDistribMulAction",
+        "Monoid.toMulAction",
+        "Monoid.toMulOneClass",
+        "Monoid.toSemigroup",
+        "MulAction.toSemigroupAction",
+        "MulOne.toMul",
+        "MulOneClass.toMulOne",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "SemigroupAction.toSMul",
+        "Semiring.toModule",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHSMul",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.1361832237._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.1361832237._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θ",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Λ",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hΛ",
+          "type": "Λ * η * Λ.transpose = η"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteGram η (Θ * Λ) = D0.Algebra.finiteGram η Θ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 41,
+            "line": 40
+          },
+          "start": {
+            "column": 0,
+            "line": 29
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 34,
+            "line": 30
+          },
+          "start": {
+            "column": 8,
+            "line": 30
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [DecidableEq ι] (η Θ Λ : Matrix ι ι ℝ),\n  Λ * η * Λ.transpose = η → D0.Algebra.finiteGram η (Θ * Λ) = D0.Algebra.finiteGram η Θ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram_right_invariant",
+      "proof_dependencies": [
+        "CommMagma.toMul",
+        "D0.Algebra.finiteGram",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mul_assoc",
+        "Matrix.transpose",
+        "Matrix.transpose_mul",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocCommSemiring",
+        "NonUnitalNonAssocCommSemiring.toCommMagma",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.normedCommRing",
+        "Trans.trans",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instTransEq",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "D0.Algebra.finiteGram",
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.transpose",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.1203326739._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.1203326739._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θ",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Ψ",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hΘ",
+          "type": "∃ u, ↑u = Θ.det"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteGram η Θ = D0.Algebra.finiteGram η Ψ ↔ ∃ Λ, D0.Algebra.finiteGram η Λ = η ∧ Ψ = Θ * Λ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 40,
+            "line": 132
+          },
+          "start": {
+            "column": 0,
+            "line": 90
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 39,
+            "line": 94
+          },
+          "start": {
+            "column": 8,
+            "line": 94
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (η Θ Ψ : Matrix ι ι ℝ),\n  IsUnit Θ.det →\n    (D0.Algebra.finiteGram η Θ = D0.Algebra.finiteGram η Ψ ↔ ∃ Λ, D0.Algebra.finiteGram η Λ = η ∧ Ψ = Θ * Λ)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram_right_orbit_complete",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "And",
+        "And.casesOn",
+        "And.intro",
+        "CommMagma.toMul",
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Algebra.finiteGram",
+        "D0.Algebra.finiteGram_right_invariant",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Exists",
+        "Exists.casesOn",
+        "Exists.intro",
+        "Fintype",
+        "HMul.hMul",
+        "Iff.intro",
+        "Inv.inv",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.instMulOfFintypeOfAddCommMonoid",
+        "Matrix.inv",
+        "Matrix.mul_assoc",
+        "Matrix.mul_nonsing_inv",
+        "Matrix.nonsing_inv_mul",
+        "Matrix.one",
+        "Matrix.semiring",
+        "Matrix.transpose",
+        "Matrix.transpose_mul",
+        "Matrix.transpose_one",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocCommSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocCommSemiring.toCommMagma",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "Ring.toAddGroupWithOne",
+        "Trans.trans",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instDistribOfSemiring",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instTransEq",
+        "mul_one",
+        "of_eq_true",
+        "one_mul"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Algebra.finiteGram",
+        "DecidableEq",
+        "Eq",
+        "Exists",
+        "Fintype",
+        "HMul.hMul",
+        "Iff",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.300009451._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.300009451._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hη_transpose",
+          "type": "η.transpose = η"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hη_sq",
+          "type": "η * η = 1"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteGram η (η + t • C) = η + t • (C + C.transpose) + t ^ 2 • (C * η * C.transpose)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 159
+          },
+          "start": {
+            "column": 0,
+            "line": 146
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 30,
+            "line": 149
+          },
+          "start": {
+            "column": 8,
+            "line": 149
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (η C : Matrix ι ι ℝ) (t : ℝ),\n  η.transpose = η →\n    η * η = 1 → D0.Algebra.finiteGram η (η + t • C) = η + t • (C + C.transpose) + t ^ 2 • (C * η * C.transpose)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram_smul_expand",
+      "proof_dependencies": [
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Algebra.id",
+        "Algebra.mul_smul_comm",
+        "Algebra.smul_mul_assoc",
+        "Algebra.toSMul",
+        "D0.Algebra.finiteGram",
+        "D0.Algebra.finiteGram_smul_expand._abel_1_1",
+        "DecidableEq",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mpr",
+        "Eq.trans",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.addMonoid",
+        "Matrix.addZeroClass",
+        "Matrix.add_mul",
+        "Matrix.distribMulAction",
+        "Matrix.instAlgebra",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulAction",
+        "Matrix.mul_add",
+        "Matrix.mul_assoc",
+        "Matrix.one",
+        "Matrix.semiring",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Matrix.transpose_add",
+        "Matrix.transpose_smul",
+        "Module.toDistribMulAction",
+        "Monoid.toMulAction",
+        "Monoid.toMulOneClass",
+        "Monoid.toPow",
+        "Monoid.toSemigroup",
+        "MulAction.toSemigroupAction",
+        "MulOne.toMul",
+        "MulOneClass.toMulOne",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "SemigroupAction.toSMul",
+        "Semiring.toModule",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "mul_one",
+        "one_mul",
+        "pow_two",
+        "smul_add",
+        "smul_smul"
+      ],
+      "type_dependencies": [
+        "D0.Algebra.finiteGram",
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.one",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "instHAdd",
+        "instHPow",
+        "instHSMul",
+        "instOfNatNat",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.300009451._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.300009451._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "η + t • C + (t • C.transpose + (t * t) • (C * (η * C.transpose))) =\n  η + (t • C + t • C.transpose) + (t * t) • (C * (η * C.transpose))",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (η C : Matrix ι ι ℝ) (t : ℝ),\n  η + t • C + (t • C.transpose + (t * t) • (C * (η * C.transpose))) =\n    η + (t • C + t • C.transpose) + (t * t) • (C * (η * C.transpose))",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram_smul_expand._abel_1_1",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Algebra.id",
+        "Algebra.toSMul",
+        "DecidableEq",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq.symm",
+        "Eq.trans",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "Int",
+        "Mathlib.Tactic.Abel.subst_into_addg",
+        "Mathlib.Tactic.Abel.term_add_constg",
+        "Mathlib.Tactic.Abel.term_atomg",
+        "Mathlib.Tactic.Abel.termg",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.addCommGroup",
+        "Matrix.addMonoid",
+        "Matrix.addZeroClass",
+        "Matrix.distribMulAction",
+        "Matrix.instAlgebra",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulAction",
+        "Matrix.semiring",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Matrix.zero",
+        "Module.toDistribMulAction",
+        "Monoid.toMulAction",
+        "Monoid.toMulOneClass",
+        "Monoid.toSemigroup",
+        "MulAction.toSemigroupAction",
+        "MulOne.toMul",
+        "MulOneClass.toMulOne",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "SemigroupAction.toSMul",
+        "Semiring.toModule",
+        "Zero.toOfNat0",
+        "instHAdd",
+        "instHMul",
+        "instHSMul",
+        "instOfNat",
+        "instSMulOfMul",
+        "zero_add"
+      ],
+      "type_dependencies": [
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Algebra.id",
+        "Algebra.toSMul",
+        "DecidableEq",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.addMonoid",
+        "Matrix.addZeroClass",
+        "Matrix.distribMulAction",
+        "Matrix.instAlgebra",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulAction",
+        "Matrix.semiring",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Module.toDistribMulAction",
+        "Monoid.toMulAction",
+        "Monoid.toMulOneClass",
+        "Monoid.toSemigroup",
+        "MulAction.toSemigroupAction",
+        "MulOne.toMul",
+        "MulOneClass.toMulOne",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "SemigroupAction.toSMul",
+        "Semiring.toModule",
+        "instHAdd",
+        "instHMul",
+        "instHSMul",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.3093220944._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.3093220944._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θ",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hη_transpose",
+          "type": "η.transpose = η"
+        }
+      ],
+      "conclusion_whnf": "(D0.Algebra.finiteGram η Θ).transpose = D0.Algebra.finiteGram η Θ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 73,
+            "line": 27
+          },
+          "start": {
+            "column": 0,
+            "line": 23
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 28,
+            "line": 24
+          },
+          "start": {
+            "column": 8,
+            "line": 24
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [DecidableEq ι] (η Θ : Matrix ι ι ℝ),\n  η.transpose = η → (D0.Algebra.finiteGram η Θ).transpose = D0.Algebra.finiteGram η Θ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram_symmetric",
+      "proof_dependencies": [
+        "CommMagma.toMul",
+        "D0.Algebra.finiteGram",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.trans",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mul_assoc",
+        "Matrix.transpose",
+        "Matrix.transpose_mul",
+        "Matrix.transpose_transpose",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocCommSemiring",
+        "NonUnitalNonAssocCommSemiring.toCommMagma",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Real",
+        "Real.normedCommRing",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "D0.Algebra.finiteGram",
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "Matrix",
+        "Matrix.transpose",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "q",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hq",
+          "type": "q.transpose = q"
+        }
+      ],
+      "conclusion_whnf": "2⁻¹ • q + (2⁻¹ • q).transpose = q",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 144
+          },
+          "start": {
+            "column": 0,
+            "line": 134
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 28,
+            "line": 136
+          },
+          "start": {
+            "column": 8,
+            "line": 136
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} (q : Matrix ι ι ℝ), q.transpose = q → 2⁻¹ • q + (2⁻¹ • q).transpose = q",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.symmetricMatrix_half",
+      "proof_dependencies": [
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "CommSemiring.toSemiring",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionSemiring.toGroupWithZero",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Field.toSemifield",
+        "GroupWithZero.toDivisionMonoid",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Inv.inv",
+        "InvOneClass.toInv",
+        "Mathlib.Meta.NormNum.IsNNRat.den_nz",
+        "Mathlib.Meta.NormNum.IsNNRat.of_raw",
+        "Mathlib.Meta.NormNum.IsNNRat.to_isNat",
+        "Mathlib.Meta.NormNum.IsNNRat.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isNNRat",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne'",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isNNRat_add",
+        "Mathlib.Meta.NormNum.isNNRat_inv_pos",
+        "Mathlib.Meta.NormNum.isNNRat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.inv_congr",
+        "Mathlib.Tactic.Ring.Common.inv_single",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.ext",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "NNRat.rawCast",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.mul",
+        "Nat.rawCast",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "OfNat.ofNat",
+        "RCLike.charZero_rclike",
+        "Real",
+        "Real.instAdd",
+        "Real.instCommSemiring",
+        "Real.instField",
+        "Real.instInv",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instRCLike",
+        "Real.instRing",
+        "Ring.toAddGroupWithOne",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "Eq",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Inv.inv",
+        "Matrix",
+        "Matrix.add",
+        "Matrix.smul",
+        "Matrix.transpose",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instInv",
+        "Real.instMul",
+        "Real.instNatCast",
+        "instHAdd",
+        "instHSMul",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θ",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Ψ",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hΘ",
+          "type": "∃ u, ↑u = Θ.det"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteGram D0.Geometry.roleLorentzMetric Θ = D0.Algebra.finiteGram D0.Geometry.roleLorentzMetric Ψ ↔\n  ∃ Λ, D0.Geometry.IsRoleLorentz Λ ∧ Ψ = Θ * Λ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 57,
+            "line": 84
+          },
+          "start": {
+            "column": 0,
+            "line": 63
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 67
+          },
+          "start": {
+            "column": 8,
+            "line": 67
+          }
+        }
+      },
+      "elaborated_type": "∀ (Θ Ψ : Matrix D0.Role D0.Role ℝ),\n  IsUnit Θ.det →\n    (D0.Algebra.finiteGram D0.Geometry.roleLorentzMetric Θ = D0.Algebra.finiteGram D0.Geometry.roleLorentzMetric Ψ ↔\n      ∃ Λ, D0.Geometry.IsRoleLorentz Λ ∧ Ψ = Θ * Λ)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.A4DStarFiniteLorentzQuotient",
+      "name": "D0.Geometry.a4dRightLorentz_gram_complete",
+      "proof_dependencies": [
+        "And",
+        "And.casesOn",
+        "And.intro",
+        "D0.Algebra.finiteGram",
+        "D0.Algebra.finiteGram_right_orbit_complete",
+        "D0.Dyad",
+        "D0.Geometry.IsRoleLorentz",
+        "D0.Geometry.roleLorentzMetric",
+        "D0.Role",
+        "Eq",
+        "Exists",
+        "Exists.casesOn",
+        "Exists.intro",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Iff.intro",
+        "Iff.mp",
+        "Iff.mpr",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Algebra.finiteGram",
+        "D0.Dyad",
+        "D0.Geometry.IsRoleLorentz",
+        "D0.Geometry.roleLorentzMetric",
+        "D0.Role",
+        "Eq",
+        "Exists",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Iff",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.4225254047._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.4225254047._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "η",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θx",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "L",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θy",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hL",
+          "type": "L * η * L.transpose = η"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hΘy",
+          "type": "∃ u, ↑u = Θy.det"
+        }
+      ],
+      "conclusion_whnf": "Θx * L * Θy⁻¹ * D0.Algebra.finiteGram η Θy * (Θx * L * Θy⁻¹).transpose = D0.Algebra.finiteGram η Θx",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 75,
+            "line": 69
+          },
+          "start": {
+            "column": 0,
+            "line": 42
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 47,
+            "line": 44
+          },
+          "start": {
+            "column": 8,
+            "line": 44
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (η Θx L Θy : Matrix ι ι ℝ),\n  L * η * L.transpose = η →\n    IsUnit Θy.det → Θx * L * Θy⁻¹ * D0.Algebra.finiteGram η Θy * (Θx * L * Θy⁻¹).transpose = D0.Algebra.finiteGram η Θx",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteGram_dressed_transport_compatible",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommMagma.toMul",
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Algebra.finiteGram",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.symm",
+        "Eq.trans",
+        "Fintype",
+        "HMul.hMul",
+        "Inv.inv",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.inv",
+        "Matrix.nonUnitalSemiring",
+        "Matrix.nonsing_inv_mul",
+        "Matrix.one",
+        "Matrix.semiring",
+        "Matrix.transpose",
+        "Matrix.transpose_mul",
+        "Matrix.transpose_one",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocCommSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocCommSemiring.toCommMagma",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toSemigroupWithZero",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "Ring.toAddGroupWithOne",
+        "Semigroup.toMul",
+        "SemigroupWithZero.toSemigroup",
+        "Trans.trans",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instDistribOfSemiring",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instTransEq",
+        "mul_assoc",
+        "mul_one",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "D0.Algebra.finiteGram",
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "HMul.hMul",
+        "Inv.inv",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.inv",
+        "Matrix.transpose",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θx",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "L",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θy",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hL",
+          "type": "L * D0.Geometry.roleLorentzMetric * L.transpose = D0.Geometry.roleLorentzMetric"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hΘy",
+          "type": "∃ u, ↑u = Θy.det"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.a4dDressedLink Θx L Θy * (Θy * D0.Geometry.roleLorentzMetric * Θy.transpose) *\n    (D0.Geometry.a4dDressedLink Θx L Θy).transpose =\n  Θx * D0.Geometry.roleLorentzMetric * Θx.transpose",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 38,
+            "line": 180
+          },
+          "start": {
+            "column": 0,
+            "line": 168
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 171
+          },
+          "start": {
+            "column": 8,
+            "line": 171
+          }
+        }
+      },
+      "elaborated_type": "∀ (Θx L Θy : Matrix D0.Role D0.Role ℝ),\n  D0.Geometry.IsRoleLorentz L →\n    IsUnit Θy.det →\n      D0.Geometry.a4dDressedLink Θx L Θy * (Θy * D0.Geometry.roleLorentzMetric * Θy.transpose) *\n          (D0.Geometry.a4dDressedLink Θx L Θy).transpose =\n        Θx * D0.Geometry.roleLorentzMetric * Θx.transpose",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.A4DStarFiniteLorentzQuotient",
+      "name": "D0.Geometry.a4dDressedLink_metric_compatible",
+      "proof_dependencies": [
+        "CommMagma.toMul",
+        "D0.Algebra.finiteGram",
+        "D0.Algebra.finiteGram_dressed_transport_compatible",
+        "D0.Dyad",
+        "D0.Geometry.IsRoleLorentz",
+        "D0.Geometry.a4dDressedLink",
+        "D0.Geometry.roleLorentzMetric",
+        "D0.Role",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.trans",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Inv.inv",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.inv",
+        "Matrix.transpose",
+        "Matrix.transpose_mul",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocCommSemiring",
+        "NonUnitalNonAssocCommSemiring.toCommMagma",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.normedCommRing",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Dyad",
+        "D0.Geometry.IsRoleLorentz",
+        "D0.Geometry.a4dDressedLink",
+        "D0.Geometry.roleLorentzMetric",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "HMul.hMul",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.transpose",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.1652554050._hygCtx._hyg.3",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteGramTangent.1652554050._hygCtx._hyg.6",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θx",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "L",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θy",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Λx",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Λy",
+          "type": "ι → ι → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hΛx",
+          "type": "∃ u, ↑u = Λx.det"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hΛy",
+          "type": "∃ u, ↑u = Λy.det"
+        }
+      ],
+      "conclusion_whnf": "Θx * Λx * (Λx⁻¹ * L * Λy) * (Θy * Λy)⁻¹ = Θx * L * Θy⁻¹",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 47,
+            "line": 88
+          },
+          "start": {
+            "column": 0,
+            "line": 71
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 54,
+            "line": 73
+          },
+          "start": {
+            "column": 8,
+            "line": 73
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (Θx L Θy Λx Λy : Matrix ι ι ℝ),\n  IsUnit Λx.det → IsUnit Λy.det → Θx * Λx * (Λx⁻¹ * L * Λy) * (Θy * Λy)⁻¹ = Θx * L * Θy⁻¹",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteGramTangent",
+      "name": "D0.Algebra.finiteMatrix_dressed_transport_frame_invariant",
+      "proof_dependencies": [
+        "CommRing.toCommSemiring",
+        "CommRing.toNonUnitalCommRing",
+        "CommSemiring.toSemiring",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.trans",
+        "Fintype",
+        "HMul.hMul",
+        "Inv.inv",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.inv",
+        "Matrix.mul_assoc",
+        "Matrix.mul_inv_rev",
+        "Matrix.mul_nonsing_inv",
+        "Matrix.one",
+        "Matrix.semiring",
+        "MulZeroOneClass.toMulOneClass",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "Trans.trans",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instDistribOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instTransEq",
+        "mul_one",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "HMul.hMul",
+        "Inv.inv",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.inv",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteGramTangent.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θx",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "L",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Θy",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Λx",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Λy",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hΛx",
+          "type": "Λx * D0.Geometry.roleLorentzMetric * Λx.transpose = D0.Geometry.roleLorentzMetric"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hΛy",
+          "type": "Λy * D0.Geometry.roleLorentzMetric * Λy.transpose = D0.Geometry.roleLorentzMetric"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "_hΘy",
+          "type": "∃ u, ↑u = Θy.det"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.a4dDressedLink (Θx * Λx) (Λx⁻¹ * L * Λy) (Θy * Λy) = D0.Geometry.a4dDressedLink Θx L Θy",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 39,
+            "line": 215
+          },
+          "start": {
+            "column": 0,
+            "line": 205
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 38,
+            "line": 205
+          },
+          "start": {
+            "column": 8,
+            "line": 205
+          }
+        }
+      },
+      "elaborated_type": "∀ (Θx L Θy Λx Λy : Matrix D0.Role D0.Role ℝ),\n  D0.Geometry.IsRoleLorentz Λx →\n    D0.Geometry.IsRoleLorentz Λy →\n      IsUnit Θy.det →\n        D0.Geometry.a4dDressedLink (Θx * Λx) (Λx⁻¹ * L * Λy) (Θy * Λy) = D0.Geometry.a4dDressedLink Θx L Θy",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.A4DStarFiniteLorentzQuotient",
+      "name": "D0.Geometry.a4dDressedLink_frame_invariant",
+      "proof_dependencies": [
+        "D0.Algebra.finiteMatrix_dressed_transport_frame_invariant",
+        "D0.Dyad",
+        "D0.Geometry.IsRoleLorentz",
+        "D0.Geometry.a4dDressedLink",
+        "D0.Geometry.isRoleLorentz_det_isUnit",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Inv.inv",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.inv",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Dyad",
+        "D0.Geometry.IsRoleLorentz",
+        "D0.Geometry.a4dDressedLink",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "HMul.hMul",
+        "Inv.inv",
+        "IsUnit",
+        "Matrix",
+        "Matrix.det",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.inv",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.commRing",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean"
+    }
+  ]
+}

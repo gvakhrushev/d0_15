@@ -85,6 +85,27 @@ class ReplayTests(unittest.TestCase):
                 if staged:
                     self.assertIn(b"changed", (logs / "index.patch").read_bytes())
 
+    def test_git_commands_remain_in_sandbox_with_misleading_common_worktree(self) -> None:
+        wrong = self.root / "other-user-tree"
+        wrong.mkdir()
+        sentinel = wrong / "sentinel.txt"
+        sentinel.write_text("untouched\n", encoding="utf-8")
+        config = self.repo / ".git" / "config"
+        self.git("config", "--file", str(config), "extensions.worktreeConfig", "true")
+        self.git("config", "--file", str(config), "core.worktree", str(wrong))
+        body = (
+            "from pathlib import Path\nimport subprocess\n"
+            "top = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], text=True).strip()\n"
+            "assert Path(top).resolve() == Path.cwd().resolve()\n"
+            "Path('tracked.txt').write_text('sandbox staged change\\n')\n"
+            "subprocess.run(['git', 'add', 'tracked.txt'], check=True)\n"
+        )
+        result, logs = self.run_one("bound_git.py", body)
+        self.assertEqual(result["status"], "MUTATION", result)
+        self.assertIn(b"sandbox staged change", (logs / "index.patch").read_bytes())
+        self.assertEqual(sentinel.read_text(encoding="utf-8"), "untouched\n")
+        self.assertEqual(sorted(path.name for path in wrong.iterdir()), ["sentinel.txt"])
+
     def test_committing_a_mutation_cannot_hide_it(self) -> None:
         result, logs = self.run_one("commit.py", "import subprocess\nfrom pathlib import Path\nPath('tracked.txt').write_text('committed change\\n')\nsubprocess.run(['git', 'add', '.'], check=True)\nsubprocess.run(['git', 'commit', '-qm', 'hidden mutation'], check=True)\n")
         self.assertEqual(result["status"], "MUTATION")

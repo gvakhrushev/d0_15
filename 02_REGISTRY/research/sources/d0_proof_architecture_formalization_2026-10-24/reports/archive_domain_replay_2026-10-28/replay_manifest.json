@@ -1,0 +1,69 @@
+{
+  "owner": {
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "checked_head": "0f0278787612f34c0bad6ea5cbd93a9f164df756",
+    "checker": {
+      "blob": "5664d79a7a241b1373fb45e4065e78888301b361",
+      "commit": "d5a32be3b7d7bab8006c5af588a0ea4e21dce6c3",
+      "sha256": "e564aeed9011a784394976951814a6059fb6c71b7fa31b344f5170294b6b473e"
+    },
+    "input_commit": "3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9",
+    "memo": {
+      "blob": "7b835491a6fbc58d81af295d0c6d61a235395a61",
+      "commit": "dc3d8bad99eb55250dd0db24d96ed8a6992c2a16"
+    },
+    "proof": {
+      "blob": "8cd1e3d5bd8f952be1ca157b3e8c1c2612323b8b",
+      "commit": "f7f005c75b06914998d39d85586b6f2e1f3ae9a8"
+    },
+    "published_result": {
+      "blob": "df924905849e10d38e37808ce2e5d5cb6e9738e8",
+      "commit": "edf02f60b12f288c19f10499e26e86e8015bf496",
+      "sha256": "961707bb2684b30a684cdaf39ea3f04e8bec91a6b7d59f5bd5f8538a63e71df1"
+    },
+    "pull_request": 334,
+    "receipt": {
+      "blob": "1e571ca6a4362b6816735d6d48619f8a9ee58ff5",
+      "commit": "0f0278787612f34c0bad6ea5cbd93a9f164df756"
+    },
+    "repository": "gvakhrushev/d0_15",
+    "result_sha256_in_receipt": "961707bb2684b30a684cdaf39ea3f04e8bec91a6b7d59f5bd5f8538a63e71df1"
+  },
+  "replay": {
+    "exact_published_stdout_match": false,
+    "floating_point_fields_differ": 9,
+    "local_result_file": "local_replay.json",
+    "local_result_sha256": "88930587cb932f3eac9d1ba1f43dfeeba3d58de4dd3d3e2d104b7f7af6d24d9f",
+    "local_stdout_bytes": 4340,
+    "maximum_absolute_float_difference": 2.220446049250313e-16,
+    "modes": [
+      "python checker.py",
+      "python -O checker.py",
+      "repeat python checker.py"
+    ],
+    "non_numeric_fields_match": true,
+    "platform": "Darwin arm64",
+    "published_result_bytes": 4338,
+    "published_result_file": "published_result.json",
+    "published_result_sha256": "961707bb2684b30a684cdaf39ea3f04e8bec91a6b7d59f5bd5f8538a63e71df1",
+    "runtime": {
+      "numpy": "2.3.5",
+      "python": "3.13.5",
+      "scipy": "1.17.0",
+      "sympy": "1.14.0"
+    },
+    "stderr_bytes_per_mode": 0,
+    "stdout_byte_identical_across_modes": true
+  },
+  "result": {
+    "GR_closed": false,
+    "Lean_or_CI_run": false,
+    "all_independent_binary_compiler_rows_replayed": false,
+    "checks": 75,
+    "original_native_88_call_replayed": false,
+    "physical_archive_effect_domain_derived": false,
+    "physical_query_law_selected": false,
+    "status": "PASS_ARCHIVE_ALGEBRA_DOMAIN_AND_SOURCE_CONTROLS"
+  },
+  "schema": "d0-canonical-archive-law-replay-v1"
+}

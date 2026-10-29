@@ -7,7 +7,8 @@ import D0.Geometry.ArchiveCARRelations
 
 Lean-owns the PR #109 nilpotent affine translation response
 `T_b = I + C†(b) P₀`, `R_nil(L,b) = T_b ρ(L)` on the 16-state carrier,
-with grading firewall. No κ / finite E dressing / B-E letter claims.
+with grading firewall. Equality of full carrier operators determines both
+affine parameters. No κ / finite E dressing / B-E letter claims.
 -/
 
 namespace D0.Geometry
@@ -16,7 +17,7 @@ open D0
 open ExteriorAlgebra
 
 local instance nilpotentAffineRoleLinearOrder : LinearOrder Role :=
-  LinearOrder.lift' roleCode roleCode_injective
+  LinearOrder.lift' roleOrderIndex roleOrderIndex_injective
 
 set_option linter.unusedSimpArgs false
 
@@ -32,25 +33,6 @@ def vacuumProjector : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState �
 
 @[simp] theorem vacuumProjector_apply (ψ : ArchiveFockState → ℝ) :
     vacuumProjector ψ = Pi.single fockVacuumState (ψ fockVacuumState) := rfl
-
-theorem archiveFockSupport_vacuum :
-    archiveFockSupport fockVacuumState = (∅ : Finset Role) := by
-  ext r; simp [archiveFockSupport, fockVacuumState]
-
-theorem archiveRoleBasis_ExteriorAlgebra_empty :
-    (archiveRoleBasis.ExteriorAlgebra) (∅ : Finset Role) = (1 : RoleExterior) := by
-  rw [ExteriorAlgebra.basis_apply, ιMulti_family]
-  exact ExteriorAlgebra.ιMulti_zero_apply _
-
-theorem archiveFockExteriorEquiv_single_vacuum (α : ℝ) :
-    archiveFockExteriorEquiv (Pi.single fockVacuumState α) =
-      algebraMap ℝ RoleExterior α := by
-  have h1 : archiveFockExteriorEquiv (Pi.single fockVacuumState (1 : ℝ)) = (1 : RoleExterior) := by
-    rw [archiveFockExteriorEquiv_single, archiveFockExteriorBasis_apply,
-      archiveFockSupport_vacuum, archiveRoleBasis_ExteriorAlgebra_empty]
-  have hα : Pi.single fockVacuumState α = α • Pi.single fockVacuumState (1 : ℝ) := by
-    ext t; by_cases ht : t = fockVacuumState <;> simp [ht, Pi.smul_apply]
-  rw [hα, map_smul, h1, Algebra.algebraMap_eq_smul_one]
 
 @[simp] theorem algebraMapInv_ι (v : RoleSpace) : algebraMapInv (ι ℝ v) = (0 : ℝ) := by
   simp [algebraMapInv, ExteriorAlgebra.lift_ι_apply]
@@ -205,12 +187,6 @@ theorem nilpotentAffineTranslation_inverse (b : RoleSpace) :
   · rw [nilpotentAffineTranslation_mul, add_neg_cancel, nilpotentAffineTranslation_zero]
   · rw [nilpotentAffineTranslation_mul, neg_add_cancel, nilpotentAffineTranslation_zero]
 
-theorem archiveExteriorFrameLift_vacuum (L : RoleSpace ≃ₗ[ℝ] RoleSpace) (α : ℝ) :
-    archiveExteriorFrameLift L (Pi.single fockVacuumState α) =
-      Pi.single fockVacuumState α := by
-  refine archiveFockExteriorEquiv.injective ?_
-  simp [archiveExteriorFrameLift_apply, archiveFockExteriorEquiv_single_vacuum]
-
 theorem algebraMapInv_comp_map (L : RoleSpace ≃ₗ[ℝ] RoleSpace) (z : RoleExterior) :
     algebraMapInv (ExteriorAlgebra.map L.toLinearMap z) = algebraMapInv z := by
   refine ExteriorAlgebra.induction
@@ -302,20 +278,66 @@ theorem nilpotentWitnessShift_ne_zero : nilpotentWitnessShift ≠ 0 := by
   have := congrArg (fun v : RoleSpace => v A) h
   simp [nilpotentWitnessShift] at this
 
-theorem archiveExteriorCreator_on_vacuum_eq_ι (b : RoleSpace) :
-    archiveFockExteriorEquiv
-        (archiveExteriorCreator b (Pi.single fockVacuumState (1 : ℝ))) =
-      ι ℝ b := by
-  simp only [archiveExteriorCreator, LinearEquiv.apply_symm_apply,
-    archiveFockExteriorEquiv_single_vacuum]
-  exact mul_one _
-
 /-- Mandatory 5: vacuum witness. -/
 theorem nilpotentAffineTranslation_vacuum (b : RoleSpace) :
     nilpotentAffineTranslation b (Pi.single fockVacuumState (1 : ℝ)) =
       Pi.single fockVacuumState (1 : ℝ) +
         archiveExteriorCreator b (Pi.single fockVacuumState (1 : ℝ)) := by
   simp [nilpotentAffineTranslation, LinearMap.add_apply, nilpotentAffineGenerator_apply]
+
+theorem nilpotentAffineTranslation_injective (b : RoleSpace) :
+    Function.Injective (nilpotentAffineTranslation b) := by
+  intro ψ φ h
+  have hinv (χ : ArchiveFockState → ℝ) :
+      nilpotentAffineTranslation (-b) (nilpotentAffineTranslation b χ) = χ := by
+    have hcomp := congrArg (fun F : _ →ₗ[ℝ] _ => F χ)
+      (nilpotentAffineTranslation_inverse b).2
+    simpa [LinearMap.comp_apply] using hcomp
+  calc
+    ψ = nilpotentAffineTranslation (-b) (nilpotentAffineTranslation b ψ) :=
+      (hinv ψ).symm
+    _ = nilpotentAffineTranslation (-b) (nilpotentAffineTranslation b φ) :=
+      congrArg (nilpotentAffineTranslation (-b)) h
+    _ = φ := hinv φ
+
+/-- The exact affine carrier representation determines both of its parameters.
+This is a finite 16-state representation result; it asserts no physical
+selection of the represented affine letter. -/
+theorem nilpotentAffineRep_injective
+    (L M : RoleSpace ≃ₗ[ℝ] RoleSpace) (b c : RoleSpace)
+    (h : nilpotentAffineRep L b = nilpotentAffineRep M c) :
+    L = M ∧ b = c := by
+  let vacuum : ArchiveFockState → ℝ := Pi.single fockVacuumState (1 : ℝ)
+  have hvac := congrArg (fun F : _ →ₗ[ℝ] _ => F vacuum) h
+  change nilpotentAffineTranslation b
+      (archiveExteriorFrameLift L (Pi.single fockVacuumState (1 : ℝ))) =
+    nilpotentAffineTranslation c
+      (archiveExteriorFrameLift M (Pi.single fockVacuumState (1 : ℝ))) at hvac
+  rw [archiveExteriorFrameLift_vacuum L 1,
+    archiveExteriorFrameLift_vacuum M 1,
+    nilpotentAffineTranslation_vacuum b,
+    nilpotentAffineTranslation_vacuum c] at hvac
+  have hcre : archiveExteriorCreator b vacuum = archiveExteriorCreator c vacuum := by
+    have hrewrite : vacuum + archiveExteriorCreator b vacuum =
+        vacuum + archiveExteriorCreator c vacuum := by
+      simpa [vacuum] using hvac
+    exact add_left_cancel hrewrite
+  have hι := congrArg archiveFockExteriorEquiv hcre
+  have hvec : ι ℝ b = ι ℝ c := by
+    simpa only [archiveExteriorCreator_on_vacuum_eq_ι, vacuum] using hι
+  have hshift : b = c := by
+    have hinv := congrArg ιInv hvec
+    calc
+      b = ιInv (ι ℝ b) := (ExteriorAlgebra.ι_leftInverse b).symm
+      _ = ιInv (ι ℝ c) := hinv
+      _ = c := ExteriorAlgebra.ι_leftInverse c
+  have hframe : archiveExteriorFrameLift L = archiveExteriorFrameLift M := by
+    apply LinearMap.ext
+    intro ψ
+    apply nilpotentAffineTranslation_injective b
+    have hψ := congrArg (fun F : _ →ₗ[ℝ] _ => F ψ) h
+    simpa [nilpotentAffineRep, hshift, LinearMap.comp_apply] using hψ
+  exact ⟨archiveExteriorFrameLift_injective hframe, hshift⟩
 
 theorem nilpotentAffineTranslation_ne_id (b : RoleSpace) (hb : b ≠ 0) :
     nilpotentAffineTranslation b ≠ LinearMap.id := by

@@ -1,0 +1,207 @@
+{
+  "change_summary": {
+    "added_lines": 2816,
+    "changed_paths": 6,
+    "deleted_lines": 0,
+    "snapshot_bytes": 4170797
+  },
+  "commit_list": {
+    "path": "COMMITS.tsv",
+    "sha256": "4bdc7b782bc1e68b827a6890592360309e6869a325e174dee7ccd6a2dd2ad369"
+  },
+  "owner_pr": 334,
+  "owner_task": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "pr_url": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "replay_artifacts": [
+    {
+      "bytes": 6935,
+      "path": "replay/direct_click_normal.json",
+      "sha256": "4f2253e74b024f10ee10f53c9ea4bbdba9eddebc94a27a4ad05998160f853009"
+    },
+    {
+      "bytes": 6935,
+      "path": "replay/direct_click_optimized.json",
+      "sha256": "4f2253e74b024f10ee10f53c9ea4bbdba9eddebc94a27a4ad05998160f853009"
+    },
+    {
+      "bytes": 6814,
+      "path": "replay/dust_cauchy_7df/check_dust_cauchy.py",
+      "sha256": "b79266d5f226552125b7e0500a43626665a78914b1ebb6c156dd1b983fea59fd"
+    },
+    {
+      "bytes": 3219,
+      "path": "replay/dust_cauchy_7df/normal.json",
+      "sha256": "42a9daf9a8eeebb4caad6ce386f3e666931c8d58ca0f6e4be0f1d88ad11ef8db"
+    },
+    {
+      "bytes": 3219,
+      "path": "replay/dust_cauchy_7df/optimized.json",
+      "sha256": "42a9daf9a8eeebb4caad6ce386f3e666931c8d58ca0f6e4be0f1d88ad11ef8db"
+    },
+    {
+      "bytes": 11060,
+      "path": "replay/fixed_boundary_7de/check_fixed_boundary_scale.py",
+      "sha256": "9318066ea9ce011bc2c6eeaa381970131eb7138208df589c5dbc3353fcf8fb10"
+    },
+    {
+      "bytes": 2513,
+      "path": "replay/fixed_boundary_7de/nu_3_10.json",
+      "sha256": "78c41acd7dd771b15e2acfbffbf113024ee06d909200ae75b51760424ffa6416"
+    },
+    {
+      "bytes": 2513,
+      "path": "replay/fixed_boundary_7de/nu_3_5.json",
+      "sha256": "4b05b28a3edcdc452528e1ecd44d1501312f47cd0f7be7a4be2d9f718e5d1b89"
+    },
+    {
+      "bytes": 5800,
+      "path": "replay/retained_past_7dd/check_retained_past.py",
+      "sha256": "fb71526412848666723cc9561372d0548ed070fdeb87b48e78f225b49a4fb49c"
+    },
+    {
+      "bytes": 2483,
+      "path": "replay/retained_past_7dd/normal.json",
+      "sha256": "3480caabee6faaa986ff6aa97eb34757874248f5e9204b6a321f955f4480a3b9"
+    },
+    {
+      "bytes": 2483,
+      "path": "replay/retained_past_7dd/optimized.json",
+      "sha256": "3480caabee6faaa986ff6aa97eb34757874248f5e9204b6a321f955f4480a3b9"
+    },
+    {
+      "bytes": 2513,
+      "path": "replay/fixed_boundary_7de/owner_low.json",
+      "sha256": "78c41acd7dd771b15e2acfbffbf113024ee06d909200ae75b51760424ffa6416"
+    },
+    {
+      "bytes": 2513,
+      "path": "replay/fixed_boundary_7de/owner_high.json",
+      "sha256": "4b05b28a3edcdc452528e1ecd44d1501312f47cd0f7be7a4be2d9f718e5d1b89"
+    },
+    {
+      "bytes": 2483,
+      "path": "replay/retained_past_7dd/owner.json",
+      "sha256": "3480caabee6faaa986ff6aa97eb34757874248f5e9204b6a321f955f4480a3b9"
+    },
+    {
+      "bytes": 3219,
+      "path": "replay/dust_cauchy_7df/owner.json",
+      "sha256": "42a9daf9a8eeebb4caad6ce386f3e666931c8d58ca0f6e4be0f1d88ad11ef8db"
+    }
+  ],
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-pr-source-range-intake-v1",
+  "scope": {
+    "GR_closed": false,
+    "Lean_or_CI_run_for_new_direct_click_or_cauchy": false,
+    "owner_checkers_replayed_by_packet_verifier": false,
+    "owner_checks_present_at_check": false,
+    "owner_pr_open_draft_at_check": true,
+    "physical_admission": false,
+    "scientific_acceptance": false
+  },
+  "source_archive": {
+    "bytes": 1337870,
+    "member_count": 6,
+    "path": "UPSTREAM_SOURCES.zip",
+    "sha256": "29d035a89dc5e74e37068081f6a7e580e5e43ea8533ff2ab2107da32a835cb7e"
+  },
+  "source_commits": [
+    {
+      "sha": "2b1d451e8078785cceca843caa93b7dd11995dd6",
+      "subject": "test(#334): verify general mass-coordinate lift and all42 nonlinear dust rows"
+    },
+    {
+      "sha": "ebf9291425f3690c987bcf3d11fd559c367ffcc0",
+      "subject": "research(#334): prove reverse Einstein-dust lift for arbitrary regular irrotational solutions"
+    },
+    {
+      "sha": "e2e62a45c96664437897290549cbd3c8ea8043c1",
+      "subject": "test(#334): retain observed symbolic42 and mass-coordinate equivalence controls"
+    },
+    {
+      "sha": "de02000eb2872a9f2e18e6595d0c847e5ac18e26",
+      "subject": "research(#334): extend nonlinear dust recovery from LTB to every regular irrotational solution"
+    },
+    {
+      "sha": "3219c15808f5247437d0e14557aec75c7fe6ac03",
+      "subject": "research(#334): preserve nonlinear GR sector through the complete retained past"
+    },
+    {
+      "sha": "1e6420f319d714be53363a77823f76ec620a6473",
+      "subject": "research(#334): balance original history scale source with fixed boundary blocks"
+    },
+    {
+      "sha": "8daed32d560df18837bcc69458a8fa538a9cf135",
+      "subject": "research(#334): apply dust Cauchy evolution to the complete nonlinear source"
+    }
+  ],
+  "source_files": [
+    {
+      "archive_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "base_git_blob_sha1": "6ef6c0eefc888b72225a1e1d4ea8dbe10365fdf1",
+      "bytes": 1125405,
+      "head_git_blob_sha1": "f9ec77e3c819b44044dd88beba019a4a7ee9edac",
+      "mode": "100644",
+      "sha256": "0f9649c5dea17839f626b46aef9d581c28215d1fb62e70eb08dc959ce10c591f",
+      "status": "M"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_DIRECT_CLICK_GENERAL_EINSTEIN_DUST_EQUIVALENCE_2026_10_28.md",
+      "base_git_blob_sha1": null,
+      "bytes": 5279,
+      "head_git_blob_sha1": "ba07b841bd2f983b69c2fce727dd07e3c9d9ada7",
+      "mode": "100644",
+      "sha256": "2962d0162cda97691704b0d334f7fadedfde4fad9a449629132d2b5e63ebfc02",
+      "status": "A"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "base_git_blob_sha1": "cef5e08a689832ddc66355e53bd93a15cfdf73f4",
+      "bytes": 2990269,
+      "head_git_blob_sha1": "f3701c2e27b8bb85d31fdd88935d08bf425cfc69",
+      "mode": "100644",
+      "sha256": "dbf0b1cee61551fa0ab0da4712bea9c5f7bbeddfb555bcf65ae1b12bc0df9c1e",
+      "status": "M"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_mass_coordinate_equivalence_2026-10-28/PROOF_RU.md",
+      "base_git_blob_sha1": null,
+      "bytes": 32289,
+      "head_git_blob_sha1": "8cbf01f2c1cbdc01faf6755d4909c41591f41b0b",
+      "mode": "100644",
+      "sha256": "d70ee9c87041dea710c86ab42217f6397510568a2cf6ec9ac66d7c2026646145",
+      "status": "A"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_mass_coordinate_equivalence_2026-10-28/check_equivalence.py",
+      "base_git_blob_sha1": null,
+      "bytes": 10620,
+      "head_git_blob_sha1": "148b4def42505e1dd97d2301d96f9e331c4b8f39",
+      "mode": "100644",
+      "sha256": "b6cafe1585008dde4f02d7b1532a6eff5b6d4813e32cbe8fcbd9de5cfb9a3773",
+      "status": "A"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_mass_coordinate_equivalence_2026-10-28/result.json",
+      "base_git_blob_sha1": null,
+      "bytes": 6935,
+      "head_git_blob_sha1": "6b8cf153ea257d129b37a294cf429339832cf668",
+      "mode": "100644",
+      "sha256": "4f2253e74b024f10ee10f53c9ea4bbdba9eddebc94a27a4ad05998160f853009",
+      "status": "A"
+    }
+  ],
+  "source_patch": {
+    "bytes": 158923,
+    "path": "UPSTREAM.patch.gz",
+    "sha256": "ef2de984c0a0d9fe0413d2a1b4c41676b043636748b2e1656e2763d53e97b5c6",
+    "storage_bytes": 55535,
+    "storage_sha256": "8be8fbc7db16cd91b7866f62b94f0685145052b418a4453371e01c2e589c23b3"
+  },
+  "source_range": {
+    "base_commit": "726192353504a81a9ab2b751f9b6c7866271e75a",
+    "commits": 7,
+    "head_commit": "8daed32d560df18837bcc69458a8fa538a9cf135"
+  }
+}

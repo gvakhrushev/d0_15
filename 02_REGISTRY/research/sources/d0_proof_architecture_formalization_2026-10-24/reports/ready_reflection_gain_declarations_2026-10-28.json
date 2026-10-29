@@ -1,0 +1,957 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "915e283ab1b505ca673dabb79fb9adae3c63e9a7",
+  "worktree_dirty": false,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "d19513df16bc00ff285081b8470fb16df2eaed64f10d54c8c53a4a8ea77f5d40",
+  "collector_sha256": "1420ab2c98d79ffe8dd37e9ef8ce60ff6931214af58e7035d81186b75bee9ee4",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "full_names": [
+      "D0.Research.readinessColdWeight",
+      "D0.Research.readinessAdjustedGain",
+      "D0.Research.readinessColdWeight_pos",
+      "D0.Research.readinessColdWeight_mul_adjustedGain",
+      "D0.Research.readinessNormalizedSource_eq",
+      "D0.Research.readinessColdWeight_p8_p3"
+    ]
+  },
+  "claim_locator_crosswalk": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "γ",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 54,
+            "line": 230
+          },
+          "start": {
+            "column": 0,
+            "line": 226
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 23,
+            "line": 230
+          },
+          "start": {
+            "column": 4,
+            "line": 230
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.CalibratedQuerySourceFloor",
+      "name": "D0.Research.readinessColdWeight",
+      "proof_dependencies": [
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HSub.hSub",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instSub",
+        "instHAdd",
+        "instHMul",
+        "instHSub"
+      ],
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/CalibratedQuerySourceFloor.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "γ",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "gain",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 42,
+            "line": 235
+          },
+          "start": {
+            "column": 0,
+            "line": 232
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 39,
+            "line": 234
+          },
+          "start": {
+            "column": 18,
+            "line": 234
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.CalibratedQuerySourceFloor",
+      "name": "D0.Research.readinessAdjustedGain",
+      "proof_dependencies": [
+        "D0.Research.readinessColdWeight",
+        "DivInvMonoid.toDiv",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instMul",
+        "instHDiv",
+        "instHMul"
+      ],
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/CalibratedQuerySourceFloor.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "γ",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hγ0",
+          "type": "Real.lt✝ 0 γ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hγ1",
+          "type": "Real.le✝ γ 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc0",
+          "type": "Real.lt✝ 0 c"
+        }
+      ],
+      "conclusion_whnf": "Real.lt✝ 0 (D0.Research.readinessColdWeight γ c)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 29,
+            "line": 242
+          },
+          "start": {
+            "column": 0,
+            "line": 237
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 238
+          },
+          "start": {
+            "column": 8,
+            "line": 238
+          }
+        }
+      },
+      "elaborated_type": "∀ (γ c : ℝ), 0 < γ → γ ≤ 1 → 0 < c → 0 < D0.Research.readinessColdWeight γ c",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.CalibratedQuerySourceFloor",
+      "name": "D0.Research.readinessColdWeight_pos",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddSemigroup",
+        "AddSemigroup.toAdd",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Research.readinessColdWeight",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "IsStrictOrderedRing.toPosMulStrictMono",
+        "LE.le",
+        "LT.lt",
+        "LinearOrder.toPartialOrder",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Linarith.add_lt_of_le_of_neg",
+        "Mathlib.Tactic.Linarith.add_nonpos",
+        "Mathlib.Tactic.Linarith.lt_irrefl",
+        "Mathlib.Tactic.Linarith.sub_neg_of_lt",
+        "Mathlib.Tactic.Linarith.sub_nonpos_of_le",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast_one",
+        "Nat.cast_zero",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "PartialOrder.toPreorder",
+        "Preorder.toLE",
+        "Preorder.toLT",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instIsOrderedRing",
+        "Real.instIsStrictOrderedRing",
+        "Real.instLE",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instPreorder",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.partialOrder",
+        "Real.semiring",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "inferInstance",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "lt_of_not_ge",
+        "mul_pos",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Research.readinessColdWeight",
+        "LE.le",
+        "LT.lt",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instLE",
+        "Real.instLT",
+        "Real.instOne",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/CalibratedQuerySourceFloor.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "γ",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "gain",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hγ0",
+          "type": "Real.lt✝ 0 γ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hγ1",
+          "type": "Real.le✝ γ 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc0",
+          "type": "Real.lt✝ 0 c"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.readinessColdWeight γ c * D0.Research.readinessAdjustedGain γ c gain = γ * (c * gain)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 21,
+            "line": 256
+          },
+          "start": {
+            "column": 0,
+            "line": 244
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 44,
+            "line": 246
+          },
+          "start": {
+            "column": 8,
+            "line": 246
+          }
+        }
+      },
+      "elaborated_type": "∀ (γ c gain : ℝ),\n  0 < γ →\n    γ ≤ 1 → 0 < c → D0.Research.readinessColdWeight γ c * D0.Research.readinessAdjustedGain γ c gain = γ * (c * gain)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.CalibratedQuerySourceFloor",
+      "name": "D0.Research.readinessColdWeight_mul_adjustedGain",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.true",
+        "CommGroupWithZero",
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommGroupWithZero.toGroupWithZero",
+        "D0.Research.readinessAdjustedGain",
+        "D0.Research.readinessColdWeight",
+        "D0.Research.readinessColdWeight.eq_1",
+        "D0.Research.readinessColdWeight_pos",
+        "Decidable.decide",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "GroupWithZero",
+        "GroupWithZero.toDivInvMonoid",
+        "GroupWithZero.toMonoidWithZero",
+        "GroupWithZero.toNontrivial",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HSub.hSub",
+        "Int",
+        "Int.instDecidableEq",
+        "Int.instNegInt",
+        "InvOneClass.toOne",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "LE.le",
+        "LT.lt",
+        "List.nil",
+        "Mathlib.Tactic.FieldSimp.NF.atom_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.cons",
+        "Mathlib.Tactic.FieldSimp.NF.cons_eq_div_of_eq_div",
+        "Mathlib.Tactic.FieldSimp.NF.cons_ne_zero",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_of_pow_eq_zero",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons_zero",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₂",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.one_eq_eval",
+        "Mathlib.Tactic.FieldSimp.eq_div_of_eq_one_of_subst",
+        "Mathlib.Tactic.FieldSimp.eq_eq_cancel_eq",
+        "Mathlib.Tactic.FieldSimp.eq_mul_of_eq_eq_eq_mul",
+        "Mathlib.Tactic.FieldSimp.subst_add",
+        "Mathlib.Tactic.FieldSimp.subst_sub",
+        "Mathlib.Tactic.FieldSimp.zpow'",
+        "Mathlib.Tactic.FieldSimp.zpow'_one",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "MulZeroOneClass.toMulZeroClass",
+        "Ne",
+        "NeZero.one",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "PartialOrder.toPreorder",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instAdd",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instLE",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instPreorder",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.partialOrder",
+        "Semifield.toCommGroupWithZero",
+        "Semifield.toDivisionSemiring",
+        "True",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congr_arg₂",
+        "div_one",
+        "eq_self",
+        "id",
+        "inferInstance",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHSub",
+        "instIsCancelMulZero",
+        "instOfNat",
+        "mul_one",
+        "ne_of_gt",
+        "of_decide_eq_true",
+        "of_eq_true",
+        "one_mul",
+        "one_ne_zero",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Research.readinessAdjustedGain",
+        "D0.Research.readinessColdWeight",
+        "Eq",
+        "HMul.hMul",
+        "LE.le",
+        "LT.lt",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instLE",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/CalibratedQuerySourceFloor.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "γ",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "gain",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "source",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hγ0",
+          "type": "Real.lt✝ 0 γ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hγ1",
+          "type": "Real.le✝ γ 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc0",
+          "type": "Real.lt✝ 0 c"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hgain0",
+          "type": "Real.lt✝ 0 gain"
+        }
+      ],
+      "conclusion_whnf": "γ * source / (D0.Research.readinessColdWeight γ c * D0.Research.readinessAdjustedGain γ c gain) = source / (c * gain)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 22,
+            "line": 272
+          },
+          "start": {
+            "column": 0,
+            "line": 258
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 36,
+            "line": 263
+          },
+          "start": {
+            "column": 8,
+            "line": 263
+          }
+        }
+      },
+      "elaborated_type": "∀ (γ c gain source : ℝ),\n  0 < γ →\n    γ ≤ 1 →\n      0 < c →\n        0 < gain →\n          γ * source / (D0.Research.readinessColdWeight γ c * D0.Research.readinessAdjustedGain γ c gain) =\n            source / (c * gain)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.CalibratedQuerySourceFloor",
+      "name": "D0.Research.readinessNormalizedSource_eq",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.true",
+        "CommGroupWithZero",
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommGroupWithZero.toGroupWithZero",
+        "D0.Research.readinessAdjustedGain",
+        "D0.Research.readinessColdWeight",
+        "D0.Research.readinessColdWeight_mul_adjustedGain",
+        "Decidable.decide",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Field.toSemifield",
+        "GroupWithZero",
+        "GroupWithZero.toDivInvMonoid",
+        "GroupWithZero.toMonoidWithZero",
+        "GroupWithZero.toNontrivial",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "Int",
+        "Int.instDecidableEq",
+        "Int.instNegInt",
+        "InvOneClass.toOne",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "IsStrictOrderedRing.toPosMulStrictMono",
+        "LE.le",
+        "LT.lt",
+        "List.nil",
+        "Mathlib.Tactic.FieldSimp.NF.atom_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.cons",
+        "Mathlib.Tactic.FieldSimp.NF.cons_eq_div_of_eq_div",
+        "Mathlib.Tactic.FieldSimp.NF.cons_ne_zero",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval₁",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval₂",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_of_pow_eq_zero",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons_zero",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.one_div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.eq_div_of_eq_one_of_subst",
+        "Mathlib.Tactic.FieldSimp.eq_eq_cancel_eq",
+        "Mathlib.Tactic.FieldSimp.eq_mul_of_eq_eq_eq_mul",
+        "Mathlib.Tactic.FieldSimp.zpow'",
+        "Mathlib.Tactic.FieldSimp.zpow'_one",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "MulZeroOneClass.toMulZeroClass",
+        "Ne",
+        "NeZero.one",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "PartialOrder.toPreorder",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instIsStrictOrderedRing",
+        "Real.instLE",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instPreorder",
+        "Real.instZero",
+        "Real.partialOrder",
+        "Real.semiring",
+        "Semifield.toCommGroupWithZero",
+        "True",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congr_arg₂",
+        "div_one",
+        "eq_self",
+        "id",
+        "inferInstance",
+        "instHDiv",
+        "instHMul",
+        "instIsCancelMulZero",
+        "instMulZeroClassOfSemiring",
+        "instOfNat",
+        "mul_one",
+        "mul_pos",
+        "ne_of_gt",
+        "of_decide_eq_true",
+        "of_eq_true",
+        "one_mul",
+        "one_ne_zero",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Research.readinessAdjustedGain",
+        "D0.Research.readinessColdWeight",
+        "DivInvMonoid.toDiv",
+        "Eq",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "LE.le",
+        "LT.lt",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instLE",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHDiv",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/CalibratedQuerySourceFloor.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Research.readinessColdWeight (p ^ 8) (p ^ 3) = 1 - p ^ 8 + p ^ 11",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 279
+          },
+          "start": {
+            "column": 0,
+            "line": 274
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 33,
+            "line": 276
+          },
+          "start": {
+            "column": 8,
+            "line": 276
+          }
+        }
+      },
+      "elaborated_type": "∀ (p : ℝ), D0.Research.readinessColdWeight (p ^ 8) (p ^ 3) = 1 - p ^ 8 + p ^ 11",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.CalibratedQuerySourceFloor",
+      "name": "D0.Research.readinessColdWeight_p8_p3",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Research.readinessColdWeight",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast_one",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instCommSemiring",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instRing",
+        "Real.instSub",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "inferInstance",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Research.readinessColdWeight",
+        "Eq",
+        "HAdd.hAdd",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instOne",
+        "Real.instSub",
+        "instHAdd",
+        "instHPow",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/CalibratedQuerySourceFloor.lean"
+    }
+  ]
+}

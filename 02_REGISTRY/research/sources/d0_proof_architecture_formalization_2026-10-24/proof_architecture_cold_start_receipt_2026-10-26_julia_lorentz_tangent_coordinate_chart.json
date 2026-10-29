@@ -1,0 +1,53 @@
+{
+  "schema": "d0-proof-architecture-cold-start-receipt-v1",
+  "snapshot_commit": "98d4af4f1f9c8b6d8745759819aab685d6dd5fc1",
+  "worktree_dirty": false,
+  "case_id": "labelled-native-raising-inverse",
+  "case_queries": 16,
+  "required_sources_found": 11,
+  "required_sources_total": 11,
+  "query": "principalFrameJuliaEndpointChartReadoutAlongLorentzTangentInCoordinates_hasFDerivAt roleLorentzTangentParametersEquivCoordinates roleLorentzTangentEndpointFDerivInCoordinates explicit 24 RolePair coordinates",
+  "top_candidates": [
+    "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
+    "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_lorentz_tangent_coordinates.json",
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_coordinate_chart_declarations_2026-10-26.json",
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_coordinates_declarations_2026-10-26.json",
+    "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+    "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+    "03_FORMALIZATION/D0/Geometry/A4DRolePairMetricCarrier.lean",
+    "02_REGISTRY/research/A4D_AFFINE_COFRAME_PERIOD_DESCENT.md",
+    "02_REGISTRY/research/A4D_FUGU_V5_OPERATOR_AUDIT.md",
+    "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+    "02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
+    "02_REGISTRY/research/A4D_HAQ_COEFFICIENTWISE_IDENTITY.md",
+    "02_REGISTRY/research/A4D_JOINT_DIAGONAL_INVISIBLE_GERM.md",
+    "02_REGISTRY/research/A4D_JOINT_ONE_D_RESIDUAL_GERMS.md",
+    "02_REGISTRY/research/A4D_JOINT_REAL_CARRIER_QUOTIENT_DECOMPOSITION.md",
+    "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md",
+    "02_REGISTRY/research/A4D_NATIVE_ARCHIVE_APPARATUS_REALIZATION.md"
+  ],
+  "summary": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_coordinate_chart.json",
+    "sha256": "52ff54b6d4ab889a913cd6754f6ae1ab3dd9f16be07b4979f5e199d8ad789186"
+  },
+  "lean_inventory": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_coordinate_chart_declarations_2026-10-26.json",
+    "sha256": "df3879f1336532b91ac1b11b34fd22b144464b79538c8aee073d615fb235b7b8",
+    "snapshot_commit": "f1f2d8c822f7689527eb52981e8282bd3a189901",
+    "lean_source_digest": "283e45e7141649f0f3bc607a10956cec642ef005414ff8056398e8695c3d4417"
+  },
+  "full_output": {
+    "sha256": "9f24f2e22b6c5d72390abdc45c01a32cd691be304c5e8a20ffac0f3ac9bb90dc",
+    "bytes": 8723571,
+    "stored": false
+  },
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true
+}

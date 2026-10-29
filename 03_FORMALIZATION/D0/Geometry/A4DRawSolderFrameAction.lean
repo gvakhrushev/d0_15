@@ -225,5 +225,116 @@ theorem rawNyquist_is_not_centered_data :
   refine ⟨?_, periodTwoNyquist_centeredCoframe_zero⟩
   norm_num [periodTwoNyquistCoframe, A]
 
+/-- Column matrix of principal-frame vectors `u_r = L (η F_rᵀ)`, with the
+coframe inverse stored by rows in `F`.  This is the finite matrix map used in
+Eq. (30a) of the pinned labelled-record source. -/
+def principalFrameColumnMatrix (F L : Matrix Role Role ℝ) : Matrix Role Role ℝ :=
+  L * roleLorentzMetric * F.transpose
+
+/-- Convert the observed principal-frame column matrix back to inverse-coframe
+rows, as `F̄ = U_matᵀ η`. -/
+def principalFrameInverseCoframeReadout (U : Matrix Role Role ℝ) :
+    Matrix Role Role ℝ :=
+  U.transpose * roleLorentzMetric
+
+/-- Each matrix column is the source's actual vector `u_r = L (η F_rᵀ)`;
+the basis vector selects the row `F_r` before the Lorentz transport. -/
+theorem principalFrameColumnMatrix_column (F L : Matrix Role Role ℝ) (r : Role) :
+    (principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)) =
+      L.mulVec (roleLorentzMetric.mulVec (F r)) := by
+  calc
+    (principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ)) =
+        (L * roleLorentzMetric).mulVec
+          (F.transpose.mulVec (Pi.single r (1 : ℝ))) := by
+            simp only [principalFrameColumnMatrix]
+            rw [Matrix.mulVec_mulVec]
+    _ = (L * roleLorentzMetric).mulVec (F r) := by
+          congr 1
+          ext i
+          simp [Matrix.mulVec, Matrix.transpose_apply]
+    _ = L.mulVec (roleLorentzMetric.mulVec (F r)) := by
+          rw [← Matrix.mulVec_mulVec]
+
+/-- The Lorentz conjugate is a left inverse, which supplies both inverse
+identities used by the principal-frame recovery. -/
+private theorem principalFrame_lorentz_candidate_mul (L : Matrix Role Role ℝ)
+    (hL : L.transpose * roleLorentzMetric * L = roleLorentzMetric) :
+    (roleLorentzMetric * L.transpose * roleLorentzMetric) * L = 1 := by
+  calc
+    (roleLorentzMetric * L.transpose * roleLorentzMetric) * L =
+        roleLorentzMetric * (L.transpose * roleLorentzMetric * L) := by
+          simp [Matrix.mul_assoc]
+    _ = roleLorentzMetric * roleLorentzMetric := by rw [hL]
+    _ = 1 := roleLorentzMetric_sq
+
+/-- The column-action Lorentz relation determines the inverse of `L`. -/
+theorem principalFrame_lorentz_inverse (L : Matrix Role Role ℝ)
+    (hL : L.transpose * roleLorentzMetric * L = roleLorentzMetric) :
+    L⁻¹ = roleLorentzMetric * L.transpose * roleLorentzMetric := by
+  exact Matrix.inv_eq_left_inv (principalFrame_lorentz_candidate_mul L hL)
+
+theorem principalFrame_lorentz_inverse_mul (L : Matrix Role Role ℝ)
+    (hL : L.transpose * roleLorentzMetric * L = roleLorentzMetric) :
+    L⁻¹ * L = 1 := by
+  rw [principalFrame_lorentz_inverse L hL]
+  exact principalFrame_lorentz_candidate_mul L hL
+
+/-- Eq. (30a)'s inverse-frame readout is the original inverse coframe
+transported by `L⁻¹`. -/
+theorem principalFrame_inverse_coframe_readout (F L : Matrix Role Role ℝ)
+    (hL : L.transpose * roleLorentzMetric * L = roleLorentzMetric) :
+    principalFrameInverseCoframeReadout (principalFrameColumnMatrix F L) =
+      F * L⁻¹ := by
+  calc
+    principalFrameInverseCoframeReadout (principalFrameColumnMatrix F L) =
+        F * (roleLorentzMetric * L.transpose * roleLorentzMetric) := by
+          simp [principalFrameInverseCoframeReadout, principalFrameColumnMatrix,
+            Matrix.transpose_mul, Matrix.transpose_transpose,
+            roleLorentzMetric_transpose, Matrix.mul_assoc]
+    _ = F * L⁻¹ := by rw [← principalFrame_lorentz_inverse L hL]
+
+/-- If `F` is the inverse coframe of `e`, the recovered coframe is `L e`.
+The right-inverse equation is sufficient for this finite square-matrix result. -/
+theorem principalFrame_coframe_recovery (F e L : Matrix Role Role ℝ)
+    (hFe : F * e = 1)
+    (hL : L.transpose * roleLorentzMetric * L = roleLorentzMetric) :
+    (principalFrameInverseCoframeReadout (principalFrameColumnMatrix F L))⁻¹ =
+      L * e := by
+  have hLinv := principalFrame_lorentz_inverse_mul L hL
+  rw [principalFrame_inverse_coframe_readout F L hL]
+  apply Matrix.inv_eq_right_inv
+  calc
+    (F * L⁻¹) * (L * e) = F * (L⁻¹ * L) * e := by
+      simp [Matrix.mul_assoc]
+    _ = F * e := by rw [hLinv]; simp
+    _ = 1 := hFe
+
+/-- The recovered coframe `L e` has exactly the original Lorentz metric. -/
+theorem principalFrame_metric_invariant (e L : Matrix Role Role ℝ)
+    (hL : L.transpose * roleLorentzMetric * L = roleLorentzMetric) :
+    (L * e).transpose * roleLorentzMetric * (L * e) =
+      e.transpose * roleLorentzMetric * e := by
+  calc
+    (L * e).transpose * roleLorentzMetric * (L * e) =
+        e.transpose * (L.transpose * roleLorentzMetric * L) * e := by
+          simp [Matrix.transpose_mul, Matrix.mul_assoc]
+    _ = e.transpose * roleLorentzMetric * e := by rw [hL]
+
+/-- Adapter from the repository's row-action `IsRoleLorentz Λ` convention to
+the column-action matrix `L = Λᵀ` used by Eq. (30a). -/
+theorem principalFrame_coframe_recovery_of_roleLorentz
+    (F e Λ : Matrix Role Role ℝ) (hFe : F * e = 1) (hΛ : IsRoleLorentz Λ) :
+    (principalFrameInverseCoframeReadout
+      (principalFrameColumnMatrix F Λ.transpose))⁻¹ = Λ.transpose * e := by
+  apply principalFrame_coframe_recovery F e Λ.transpose hFe
+  simpa [IsRoleLorentz] using hΛ
+
+theorem principalFrame_metric_invariant_of_roleLorentz
+    (e Λ : Matrix Role Role ℝ) (hΛ : IsRoleLorentz Λ) :
+    (Λ.transpose * e).transpose * roleLorentzMetric * (Λ.transpose * e) =
+      e.transpose * roleLorentzMetric * e := by
+  apply principalFrame_metric_invariant e Λ.transpose
+  simpa [IsRoleLorentz] using hΛ
+
 end
 end D0.Geometry

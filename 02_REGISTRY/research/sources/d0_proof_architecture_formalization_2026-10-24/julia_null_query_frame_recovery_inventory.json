@@ -1,0 +1,261 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "8a496eabae10af441de1c4aad628a9ac56f6bf33",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "0f8a70695c1764fc095c260f98248e9da859fdc6948d6deb706e628eb38a8bf5",
+  "collector_sha256": "5c622873dbfbfc9c3f3aa38cf38dafe9553a0f15d38b9b60cd045fd02da57f62",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveJuliaRaisingOperatorReadout",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.archiveJuliaQueryNullRecoveredFrame_eq"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Pₓ",
+          "type": "D0.Geometry.RoleSpace →ₗ[ℝ] D0.Geometry.RoleSpace →ₗ[ℝ] ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Pᵧ",
+          "type": "D0.Geometry.RoleSpace →ₗ[ℝ] D0.Geometry.RoleSpace →ₗ[ℝ] ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "u",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "α",
+          "type": "D0.Geometry.RoleSpace →ₗ[ℝ] ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "X",
+          "type": "(D0.Geometry.ArchiveFockState → ℝ) →ₗ[ℝ] D0.Geometry.ArchiveFockState → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hX",
+          "type": "X = D0.Geometry.archiveJuliaRaisingQuery u M"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hαu",
+          "type": "α u = 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hSymm",
+          "type": "∀ (x y : D0.Geometry.RoleSpace), (Pₓ x) y = (Pₓ y) x"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hIso",
+          "type": "∀ (x y : D0.Geometry.RoleSpace), (Pₓ (M x)) (M y) = (Pᵧ x) y"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hbz",
+          "type": "(D0.Geometry.archiveJuliaQueryNullMetricCovector Pₓ u X α) z = 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hbranch",
+          "type": "Real.lt✝ 0 (1 + (Pₓ u) u * α (M z))"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.archiveJuliaQueryNullRecoveredFrame Pₓ Pᵧ u X α z = ⇑M",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 65,
+            "line": 758
+          },
+          "start": {
+            "column": 0,
+            "line": 705
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 46,
+            "line": 708
+          },
+          "start": {
+            "column": 8,
+            "line": 708
+          }
+        }
+      },
+      "elaborated_type": "∀ (Pₓ Pᵧ : D0.Geometry.ArchiveRoleBilinear) (u z : D0.Geometry.RoleSpace)\n  (M : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace) (α : Module.Dual ℝ D0.Geometry.RoleSpace)\n  (X : (D0.Geometry.ArchiveFockState → ℝ) →ₗ[ℝ] D0.Geometry.ArchiveFockState → ℝ),\n  X = D0.Geometry.archiveJuliaRaisingQuery u M →\n    α u = 1 →\n      (∀ (x y : D0.Geometry.RoleSpace), (Pₓ x) y = (Pₓ y) x) →\n        (∀ (x y : D0.Geometry.RoleSpace), (Pₓ (M x)) (M y) = (Pᵧ x) y) →\n          (D0.Geometry.archiveJuliaQueryNullMetricCovector Pₓ u X α) z = 1 →\n            0 < 1 + (Pₓ u) u * α (M z) → D0.Geometry.archiveJuliaQueryNullRecoveredFrame Pₓ Pᵧ u X α z = ⇑M",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveJuliaRaisingOperatorReadout",
+      "name": "D0.Geometry.archiveJuliaQueryNullRecoveredFrame_eq",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRoleBilinear",
+        "D0.Geometry.ArchiveRoleBilinear._proof_1",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveJuliaNullBlock",
+        "D0.Geometry.archiveJuliaNullBlock_decomposition",
+        "D0.Geometry.archiveJuliaNullBlock_reconstructsAffineFunctional",
+        "D0.Geometry.archiveJuliaNullD",
+        "D0.Geometry.archiveJuliaNullT",
+        "D0.Geometry.archiveJuliaQueryNullBlock",
+        "D0.Geometry.archiveJuliaQueryNullBlock_readout",
+        "D0.Geometry.archiveJuliaQueryNullMetricCovector",
+        "D0.Geometry.archiveJuliaQueryNullMetricRemainder",
+        "D0.Geometry.archiveJuliaQueryNullRecoveredCovectorValue",
+        "D0.Geometry.archiveJuliaQueryNullRecoveredFrame",
+        "D0.Geometry.archiveJuliaRaisingQuery",
+        "D0.Geometry.archiveJuliaRaisingQuery._proof_1",
+        "D0.Role",
+        "DFinsupp.instEquivLikeLinearEquiv",
+        "DFunLike.coe",
+        "DivInvMonoid.toDiv",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "EquivLike.toFunLike",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "HSub.hSub",
+        "LT.lt",
+        "LinearEquiv",
+        "LinearMap",
+        "LinearMap.addCommMonoid",
+        "LinearMap.comp",
+        "LinearMap.comp.congr_simp",
+        "LinearMap.instFunLike",
+        "LinearMap.module",
+        "Module.Dual",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instAdd",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instDivInvMonoid",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomCompTriple.ids",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Trans.trans",
+        "True",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "id",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHSMul",
+        "instHSub",
+        "instSMulOfMul",
+        "instTransEq",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRoleBilinear",
+        "D0.Geometry.ArchiveRoleBilinear._proof_1",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveJuliaQueryNullMetricCovector",
+        "D0.Geometry.archiveJuliaQueryNullRecoveredFrame",
+        "D0.Geometry.archiveJuliaRaisingQuery",
+        "D0.Role",
+        "DFinsupp.instEquivLikeLinearEquiv",
+        "DFunLike.coe",
+        "Eq",
+        "EquivLike.toFunLike",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "LT.lt",
+        "LinearEquiv",
+        "LinearMap",
+        "LinearMap.addCommMonoid",
+        "LinearMap.instFunLike",
+        "LinearMap.module",
+        "Module.Dual",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Zero.toOfNat0",
+        "instHAdd",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import Mathlib.Tactic
+import D0.Combinatorics.TripartiteVieta
 
 /-!
 # Distinct zone sizes are exactly what splits the active spectrum
@@ -37,49 +38,20 @@ namespace D0.Synthesis.ActiveSplittingFromDistinctness
 variable (a b c : ℚ)
 
 /-- The degeneracy gap: `N·e₂ − 9·e₃`. -/
-def gap : ℚ := (a + b + c) * (a * b + a * c + b * c) - 9 * (a * b * c)
+abbrev gap : ℚ := D0.Combinatorics.TripartiteVieta.tripartiteGap a b c
 
 /-- **The gap is a sum of squares.** Exact identity, valid for all `a, b, c`. -/
 theorem gap_sos : gap a b c = a * (b - c) ^ 2 + b * (c - a) ^ 2 + c * (a - b) ^ 2 := by
-  unfold gap; ring
+  exact D0.Combinatorics.TripartiteVieta.tripartiteGap_sos a b c
 
 /-- For positive sizes the gap is non-negative. -/
 theorem gap_nonneg (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 0 ≤ gap a b c := by
-  rw [gap_sos]
-  have h1 : 0 ≤ a * (b - c) ^ 2 := mul_nonneg ha.le (sq_nonneg _)
-  have h2 : 0 ≤ b * (c - a) ^ 2 := mul_nonneg hb.le (sq_nonneg _)
-  have h3 : 0 ≤ c * (a - b) ^ 2 := mul_nonneg hc.le (sq_nonneg _)
-  linarith
+  exact D0.Combinatorics.TripartiteVieta.tripartiteGap_nonneg a b c ha hb hc
 
 /-- **The gap vanishes exactly at equal sizes.** -/
 theorem gap_zero_iff_equal (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) :
     gap a b c = 0 ↔ (a = b ∧ b = c) := by
-  constructor
-  · intro h
-    rw [gap_sos] at h
-    have h1 : 0 ≤ a * (b - c) ^ 2 := mul_nonneg ha.le (sq_nonneg _)
-    have h2 : 0 ≤ b * (c - a) ^ 2 := mul_nonneg hb.le (sq_nonneg _)
-    have h3 : 0 ≤ c * (a - b) ^ 2 := mul_nonneg hc.le (sq_nonneg _)
-    have e1 : a * (b - c) ^ 2 = 0 := by linarith
-    have e2 : c * (a - b) ^ 2 = 0 := by linarith
-    have hab : a = b := by
-      have : (a - b) ^ 2 = 0 := by
-        rcases mul_eq_zero.mp e2 with h' | h'
-        · exact absurd h' hc.ne'
-        · exact h'
-      have := pow_eq_zero_iff (n := 2) (by norm_num) |>.mp this
-      linarith
-    have hbc : b = c := by
-      have : (b - c) ^ 2 = 0 := by
-        rcases mul_eq_zero.mp e1 with h' | h'
-        · exact absurd h' ha.ne'
-        · exact h'
-      have := pow_eq_zero_iff (n := 2) (by norm_num) |>.mp this
-      linarith
-    exact ⟨hab, hbc⟩
-  · rintro ⟨hab, hbc⟩
-    subst hab; subst hbc
-    unfold gap; ring
+  exact D0.Combinatorics.TripartiteVieta.tripartiteGap_eq_zero_iff a b c ha hb hc
 
 /-- **Degeneracy criterion.** The active spectrum, with sum `3` and product `p`, is degenerate iff
 `9 = 4p`; with denominators cleared this is `gap = 0`. -/

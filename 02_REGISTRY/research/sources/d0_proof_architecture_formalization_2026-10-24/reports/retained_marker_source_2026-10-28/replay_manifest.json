@@ -1,0 +1,56 @@
+{
+  "checker": {
+    "embedded_checker_sha256": "791d57eb3ff5bd69dda81b5ae8982223e3c63378c681cf961daa2de38659d570",
+    "owned_setup_sha256": "a556695f88435f5f72b4a05067a4026691932ce62442da1bb53380702ec32379"
+  },
+  "fixtures": [
+    {
+      "blob": "47761f34bfffb4fe104ca66e0e1b61a509b9bc7a",
+      "commit": "b300af651d849b5b3e73178e7be62d98b61adad3",
+      "path": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
+      "sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee"
+    },
+    {
+      "blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "commit": "90fc70094679fb8ba248b75bfba523242097a109",
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  ],
+  "owner": {
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "pull_request": 334,
+    "repository": "gvakhrushev/d0_15",
+    "section": "7dn",
+    "source_blob": "363dee64772769eee25888a184b5edbdf64e83e9",
+    "source_commit": "3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9",
+    "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "source_sha256": "4d488ad22fe27d02f476eba81c960f9514ba288f6035b52aa5aef2aaae06e8be"
+  },
+  "replay": {
+    "modes": [
+      "python3 checker.py",
+      "python3 -O checker.py",
+      "repeat python3 checker.py"
+    ],
+    "new_checks": 66,
+    "result_file": "result.json",
+    "result_sha256": "a09c2d00bd1159a8394454f6c90b4a5152852d3531870c64b1d06d70e1d9e8ad",
+    "reused_fixture_checks": 53,
+    "runtime": {
+      "python": "3.9.6",
+      "sympy": "1.14.0"
+    },
+    "stderr_bytes_per_mode": 0,
+    "stdout_byte_identical_across_modes": true
+  },
+  "result": {
+    "GR_closed": false,
+    "canonical_identity_prefix_source": 0,
+    "lambda_old_times_lower_bound": "0.0435838628448348380548560803886",
+    "physical_admission_proved": false,
+    "signed_values_approx": "-0.055122876",
+    "status": "PASS_RETAINED_MARKER_SOURCE"
+  },
+  "schema": "d0-retained-marker-source-replay-v1"
+}

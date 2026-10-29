@@ -1,0 +1,163 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "c512a8cc5042e0b6160cfa3320665b2f3abc7cbe",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "fdba5314e1ef785e14b40f7c5509d1c9d2426e22f08903c5b3aa62de75aec65b",
+  "collector_sha256": "59045a2abf642c22941b4d1b74f88262456ed83538e6751bc811386d91d00d6c",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Algebra.FiniteWeightedAdjoint",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Algebra.finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.4069029396._hygCtx._hyg.14",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.4069029396._hygCtx._hyg.17",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "A",
+          "type": "(ι → ℝ) →ₗ[ℝ] ι → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteWeightedAdjoint (fun x => 1) A = D0.Algebra.finiteHermitianAdjoint A",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 44,
+            "line": 412
+          },
+          "start": {
+            "column": 0,
+            "line": 399
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 59,
+            "line": 403
+          },
+          "start": {
+            "column": 8,
+            "line": 403
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_3} [inst : Fintype ι] [inst_1 : DecidableEq ι] (A : (ι → ℝ) →ₗ[ℝ] ι → ℝ),\n  D0.Algebra.finiteWeightedAdjoint (fun x => 1) A = D0.Algebra.finiteHermitianAdjoint A",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteWeightedAdjoint",
+      "name": "D0.Algebra.finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "Bool",
+        "Bool.false",
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteHermitianAdjoint",
+        "D0.Algebra.finiteHermitianPairing",
+        "D0.Algebra.finiteHermitianPairing_adjoint",
+        "D0.Algebra.finiteWeightedAdjoint_unique",
+        "D0.Algebra.finiteWeightedPairing",
+        "D0.Algebra.finiteWeightedPairing_one_eq_finiteHermitianPairing",
+        "DFunLike.coe",
+        "DecidableEq",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fintype",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Mathlib.Meta.NormNum.isNat_eq_false",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "MulZeroClass.toZero",
+        "Nat.cast_one",
+        "Nat.cast_zero",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RCLike.charZero_rclike",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instField",
+        "Real.instOne",
+        "Real.instRCLike",
+        "Real.instRing",
+        "Real.semiring",
+        "Ring.toAddGroupWithOne",
+        "RingHom.id",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "instMulZeroClassOfSemiring",
+        "instStarRingReal"
+      ],
+      "type_dependencies": [
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteHermitianAdjoint",
+        "D0.Algebra.finiteWeightedAdjoint",
+        "DecidableEq",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fintype",
+        "LinearMap",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instField",
+        "Real.instOne",
+        "Real.semiring",
+        "RingHom.id",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "instStarRingReal"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean"
+    }
+  ]
+}

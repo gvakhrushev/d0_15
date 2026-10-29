@@ -1,0 +1,21 @@
+{
+  "success": false,
+  "message": "The maximum number of iterations allowed has been reached.",
+  "norm": 0.03962893427318372,
+  "calls": 1170,
+  "seconds": 345.3774139881134,
+  "status": "UNCONSTRAINED_EXPLORATION_FAILED",
+  "positive_orientation_kept": false,
+  "inverse_leg_determinants": [
+    0.00134434238014684,
+    0.014373454218983067,
+    0.017917273575200253,
+    0.02425990947587733,
+    0.017068027918343182,
+    -0.001498290625840167,
+    0.3154535235039533
+  ],
+  "scope": "280 homogeneous open-positive-adjoint rows; not physical-admission proof; optimizer source excluded full heat",
+  "accepted_as_stationary": false,
+  "GR_closed": false
+}

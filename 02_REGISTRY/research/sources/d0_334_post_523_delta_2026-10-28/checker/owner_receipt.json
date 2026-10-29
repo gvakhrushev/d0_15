@@ -1,0 +1,256 @@
+{
+  "status": "PASS",
+  "checks": 101,
+  "checker_sha256": "b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba",
+  "frame_owner_sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "field_relations": [
+    "a^2=p",
+    "p^2+p=1",
+    "a>0",
+    "p>0"
+  ],
+  "levels": [
+    {
+      "n": 0,
+      "old": 2,
+      "fine": 34,
+      "coordinate_rank": 8
+    },
+    {
+      "n": 1,
+      "old": 5,
+      "fine": 89,
+      "coordinate_rank": 20
+    },
+    {
+      "n": 2,
+      "old": 13,
+      "fine": 233,
+      "coordinate_rank": 52
+    },
+    {
+      "n": 3,
+      "old": 34,
+      "fine": 610,
+      "coordinate_rank": 136
+    }
+  ],
+  "branch_pairs": [
+    {
+      "old_type": 0,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "old_type": 0,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "old_type": 0,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "old_type": 0,
+      "first": [
+        1,
+        0,
+        0
+      ],
+      "second": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "old_type": 1,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "old_type": 1,
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "native_middle": {
+    "stages": 7,
+    "G": 2,
+    "CX": 1,
+    "SourceI": 4,
+    "dimension": 16
+  },
+  "paired_port_schedule": {
+    "stages": 43,
+    "G": 14,
+    "CX": 1,
+    "SourceI": 28,
+    "dimension": 136,
+    "input_rank": 8,
+    "complement_dimension": 104,
+    "reflection_plus": 128,
+    "reflection_minus": 8,
+    "feedback": "p Ptrue"
+  },
+  "original_record_schedule": {
+    "stages": 38,
+    "G": 13,
+    "CX": 1,
+    "SourceI": 24,
+    "dimension": 136,
+    "input_rank": 8,
+    "feedback": "p^2 Ptrue",
+    "input_action": "a J input + p V3 input"
+  },
+  "checks_executed": [
+    "coordinate frame isometry n=0",
+    "Gold-only frame isometry n=0",
+    "canonical J on every old column n=0",
+    "off-copy frames stay fixed n=0",
+    "four plus two branch rotations n=0",
+    "no sqrt2 frame coefficients n=0",
+    "coordinate frame isometry n=1",
+    "Gold-only frame isometry n=1",
+    "canonical J on every old column n=1",
+    "off-copy frames stay fixed n=1",
+    "four plus two branch rotations n=1",
+    "no sqrt2 frame coefficients n=1",
+    "coordinate frame isometry n=2",
+    "Gold-only frame isometry n=2",
+    "canonical J on every old column n=2",
+    "off-copy frames stay fixed n=2",
+    "four plus two branch rotations n=2",
+    "no sqrt2 frame coefficients n=2",
+    "left intertwining (0, 0, 0)",
+    "right intertwining (0, 0, 0)",
+    "left intertwining (0, 0, 1)",
+    "right intertwining (0, 0, 1)",
+    "left intertwining (0, 0, 2)",
+    "right intertwining (0, 0, 2)",
+    "left intertwining (0, 1, 0)",
+    "right intertwining (0, 1, 0)",
+    "left intertwining (0, 1, 1)",
+    "right intertwining (0, 1, 1)",
+    "left intertwining (0, 1, 2)",
+    "right intertwining (0, 1, 2)",
+    "left intertwining (0, 2, 0)",
+    "right intertwining (0, 2, 0)",
+    "left intertwining (0, 2, 1)",
+    "right intertwining (0, 2, 1)",
+    "left intertwining (0, 2, 2)",
+    "right intertwining (0, 2, 2)",
+    "left intertwining (1, 0, 0)",
+    "right intertwining (1, 0, 0)",
+    "left intertwining (1, 0, 1)",
+    "right intertwining (1, 0, 1)",
+    "left intertwining (1, 1, 0)",
+    "right intertwining (1, 1, 0)",
+    "left intertwining (1, 1, 1)",
+    "right intertwining (1, 1, 1)",
+    "coordinate frame isometry n=3",
+    "Gold-only frame isometry n=3",
+    "canonical J on every old column n=3",
+    "off-copy frames stay fixed n=3",
+    "four plus two branch rotations n=3",
+    "no sqrt2 frame coefficients n=3",
+    "all-column branch unitary",
+    "both WORK bits only are blank",
+    "logical endpoint selfadjoint",
+    "logical endpoint reflection",
+    "logical whole-Spin scalar corner",
+    "logical feedback p",
+    "coordinate logical transport all columns",
+    "encoded logical transport all columns",
+    "unknown old and Spin input (0, 0)",
+    "unknown old and Spin input (0, 1)",
+    "unknown old and Spin input (1, 0)",
+    "unknown old and Spin input (1, 1)",
+    "unknown old and Spin input (2, 0)",
+    "unknown old and Spin input (2, 1)",
+    "unknown old and Spin input (3, 0)",
+    "unknown old and Spin input (3, 1)",
+    "all-Spin SourceI on (0, (1, 0, 0))",
+    "five-forward-call inverse (0, (0, 0, 0), (1, 0, 0))",
+    "all-Spin SourceI on (0, (0, 1, 0))",
+    "five-forward-call inverse (0, (0, 0, 0), (0, 1, 0))",
+    "all-Spin SourceI on (0, (0, 0, 1))",
+    "five-forward-call inverse (0, (0, 0, 0), (0, 0, 1))",
+    "all-Spin SourceI on (0, (1, 0, 1))",
+    "five-forward-call inverse (0, (1, 0, 0), (1, 0, 1))",
+    "all-Spin SourceI on (1, (0, 1, 0))",
+    "five-forward-call inverse (1, (0, 0, 0), (0, 1, 0))",
+    "all-Spin SourceI on (1, (0, 0, 1))",
+    "five-forward-call inverse (1, (0, 0, 0), (0, 0, 1))",
+    "30-call exact input decode",
+    "43 actual calls on every column including complement",
+    "whole endpoint selfadjoint",
+    "whole endpoint reflection",
+    "cut is original canonical J",
+    "true canonical corner all inputs",
+    "complete canonical feedback p",
+    "true protected rank 8",
+    "whole reflection multiplicities 128 and 8",
+    "whole retained complement 104",
+    "expanded actual paired-port inventory",
+    "original full recording matrix",
+    "38-call original record on all columns",
+    "whole original record unitary",
+    "unknown input produces its own Golden sibling record",
+    "new detail orthogonal to old input",
+    "original recording feedback p squared",
+    "expanded actual original-record inventory",
+    "coordinate blank is not canonical input",
+    "missing frame calls change true corner",
+    "forward branch is not a free inverse",
+    "old sqrt2 fourth frame has changed",
+    "136-dimensional calls cannot be silently wire Execution/1"
+  ],
+  "scope": "exact specified AF paired-port circuit and complete input/source transport",
+  "physical_AF_port_addressability_proved": false,
+  "physical_AF_growth_cost_supplied": false,
+  "wire_execution_domain_membership_claimed": false,
+  "GR_closed": false
+}

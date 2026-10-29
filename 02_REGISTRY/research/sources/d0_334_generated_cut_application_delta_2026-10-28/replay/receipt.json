@@ -1,0 +1,72 @@
+{
+  "base_source_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "checks": [
+    {
+      "expected_result": "query_cut_result.json",
+      "expected_result_sha256": "272502430370992230f6575fa558d8681d0b90dd9f9c4cfa9106d4be35e4ecd6",
+      "modes": [
+        {
+          "byte_identical_to_published": false,
+          "exit_code": 0,
+          "maximum_numeric_difference_from_published": 6.661338147750939e-16,
+          "mode": "ordinary",
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "376393713b0cf1c9a58910a56815ddb230283979e8e0140048929816d11a9a77"
+        },
+        {
+          "byte_identical_to_published": false,
+          "exit_code": 0,
+          "maximum_numeric_difference_from_published": 6.661338147750939e-16,
+          "mode": "optimized",
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "376393713b0cf1c9a58910a56815ddb230283979e8e0140048929816d11a9a77"
+        }
+      ],
+      "script": "check_query_cut_orbit.py",
+      "source_sha256": "eacd5d6456bacde02ddf3bab22f8ea7782ccdfcecce7afc232d928d9692f2fd9",
+      "status": "PASS_SAME_QUERY_CUT_RELATIVE_ORBIT_JET"
+    },
+    {
+      "expected_result": "d0_generated_cut_source_20261028.json",
+      "expected_result_sha256": "d6d2848cdb8232c3f981abb0cca939d5f4ce765531c9dc85aaf8be420b46b1fa",
+      "modes": [
+        {
+          "byte_identical_to_published": true,
+          "exit_code": 0,
+          "maximum_numeric_difference_from_published": 0.0,
+          "mode": "ordinary",
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "d6d2848cdb8232c3f981abb0cca939d5f4ce765531c9dc85aaf8be420b46b1fa"
+        },
+        {
+          "byte_identical_to_published": true,
+          "exit_code": 0,
+          "maximum_numeric_difference_from_published": 0.0,
+          "mode": "optimized",
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "d6d2848cdb8232c3f981abb0cca939d5f4ce765531c9dc85aaf8be420b46b1fa"
+        }
+      ],
+      "script": "d0_generated_cut_source_20261028.py",
+      "source_sha256": "16f99e5fb0264a33891ffb7b385a5a1cd2a822dba60226f92f4541d80849e0dd",
+      "status": "PASS_GENERATED_CUT_SOURCE_AND_LITERAL_WORD_COMPARISON"
+    }
+  ],
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "torch": "2.10.0"
+  },
+  "python": "3.13.14 (main, Jul 18 2026, 16:56:45) [Clang 22.1.3 ]",
+  "schema": "d0-local-source-replay-v1",
+  "scientific_acceptance": false,
+  "scope": "a symbolic two-angle operator jet with bounded finite-matrix AD control and an exact finite native generated-cut/word comparison; no physical variation admission, task admissibility, full original root or GR closure",
+  "source_code_executed_by_verifier": false,
+  "source_commit": "5fe5203da2439d325dc9ef70f52c1111822fc22b",
+  "status": "PASS_BOTH_QUERY_CUT_CONTROLS_NORMAL_AND_OPTIMIZED"
+}

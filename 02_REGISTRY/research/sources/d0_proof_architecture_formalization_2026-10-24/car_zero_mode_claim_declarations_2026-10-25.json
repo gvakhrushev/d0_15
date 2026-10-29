@@ -1,0 +1,348 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "29ce093a9596089a522b9a066caa351af8a53fc6",
+  "worktree_dirty": true,
+  "claim_registry_sha256": "f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003",
+  "lean_source_digest": "089f0e6d888039facb2fc3354eec21f40be34530bb5fde39d32c6a5c67974768",
+  "collector_sha256": "93892f75ce11c40d17b2127e69a88564045744c13434322a89fe0760c2c4a6df",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveCARDirac",
+  "resolution_only": false,
+  "request": {
+    "claim_id": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001",
+    "mappings": [
+      {
+        "claim_id": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001",
+        "module_locator": "D0.Geometry.ArchiveCARDirac",
+        "theorem_atom": "car_zero_mode_independent_of_L",
+        "candidate_names": [
+          "D0.Geometry.ArchiveCARDirac.car_zero_mode_independent_of_L",
+          "D0.Geometry.car_zero_mode_independent_of_L",
+          "D0.car_zero_mode_independent_of_L"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001",
+        "module_locator": "D0.Geometry.ArchiveCARDirac",
+        "theorem_atom": "archive_car_zero_mode_owner",
+        "candidate_names": [
+          "D0.Geometry.ArchiveCARDirac.archive_car_zero_mode_owner",
+          "D0.Geometry.archive_car_zero_mode_owner",
+          "D0.archive_car_zero_mode_owner"
+        ]
+      }
+    ]
+  },
+  "declarations": [
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveCARDirac.car_zero_mode_independent_of_L",
+      "source_path": null
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "_n",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.carDiracKernelDim = 16",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 33,
+            "line": 608
+          },
+          "start": {
+            "column": 0,
+            "line": 607
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 38,
+            "line": 607
+          },
+          "start": {
+            "column": 8,
+            "line": 607
+          }
+        }
+      },
+      "elaborated_type": "∀ (_n : ℕ), D0.Geometry.carDiracKernelDim = 16",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCARDirac",
+      "name": "D0.Geometry.car_zero_mode_independent_of_L",
+      "proof_dependencies": [
+        "D0.Geometry.carDiracKernelDim",
+        "Nat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.carDiracKernelDim",
+        "Eq",
+        "Nat",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.car_zero_mode_independent_of_L",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveCARDirac.archive_car_zero_mode_owner",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.carDiracKernelDim = 16 ∧ D0.Geometry.carDiracKernelDim < 3 * (n + 2) ^ 4 + 2",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 10,
+            "line": 619
+          },
+          "start": {
+            "column": 0,
+            "line": 610
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 35,
+            "line": 610
+          },
+          "start": {
+            "column": 8,
+            "line": 610
+          }
+        }
+      },
+      "elaborated_type": "∀ (n : ℕ), D0.Geometry.carDiracKernelDim = 16 ∧ D0.Geometry.carDiracKernelDim < 3 * (n + 2) ^ 4 + 2",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCARDirac",
+      "name": "D0.Geometry.archive_car_zero_mode_owner",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddSemigroup",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddMonoidWithOne.toOne",
+        "AddSemigroup.toAdd",
+        "And.intro",
+        "Bool",
+        "Bool.false",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "ConditionallyCompleteLattice.toConditionallyCompletePartialOrder",
+        "ConditionallyCompleteLinearOrder.toConditionallyCompleteLattice",
+        "ConditionallyCompletePartialOrder.toConditionallyCompletePartialOrderSup",
+        "ConditionallyCompletePartialOrderSup.toPartialOrder",
+        "D0.Geometry.archive_car_zero_mode_owner._proof_1_1",
+        "D0.Geometry.carDiracKernelDim",
+        "Decidable.byContradiction",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.instAddCommGroup",
+        "Int.instAddMonoid",
+        "Int.instCharZero",
+        "Int.instCommRing",
+        "Int.instCommSemiring",
+        "Int.instIsOrderedAddMonoid",
+        "Int.instIsStrictOrderedRing",
+        "Int.instLEInt",
+        "Int.instRing",
+        "Int.instSemiring",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.ofNat_le._simp_2",
+        "Int.rawCast",
+        "IsStrictOrderedRing.toIsOrderedRing",
+        "LE.le",
+        "LT.lt",
+        "LinearOrder.toPartialOrder",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_lt_true",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Linarith.add_lt_of_neg_of_le",
+        "Mathlib.Tactic.Linarith.lt_irrefl",
+        "Mathlib.Tactic.Linarith.mul_neg",
+        "Mathlib.Tactic.Linarith.mul_nonpos",
+        "Mathlib.Tactic.Linarith.sub_nonpos_of_le",
+        "Mathlib.Tactic.Linarith.zero_lt_one",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.coeff_one",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_bit0",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_nat",
+        "Mathlib.Tactic.Ring.Common.pow_one",
+        "Mathlib.Tactic.Ring.Common.pow_one_cast_of_isNat",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast",
+        "Nat.cast_add",
+        "Nat.cast_mul",
+        "Nat.cast_pow",
+        "Nat.decLe",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instLinearOrder",
+        "Nat.instMonoid",
+        "Nat.instNeZeroSucc",
+        "Nat.pow_le_pow_left",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "PartialOrder.toPreorder",
+        "Preorder.toLE",
+        "Preorder.toLT",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "inferInstance",
+        "instAddNat",
+        "instConditionallyCompleteLinearOrder",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instLENat",
+        "instLTNat",
+        "instMulNat",
+        "instMulZeroClassOfSemiring",
+        "instNatCastInt",
+        "instNeZeroNatHAdd_1",
+        "instOfNat",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "lt_of_not_ge",
+        "neg_neg_of_pos",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Geometry.carDiracKernelDim",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "LT.lt",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instMonoid",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instLTNat",
+        "instMulNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_car_zero_mode_owner",
+      "source_path": null
+    }
+  ]
+}

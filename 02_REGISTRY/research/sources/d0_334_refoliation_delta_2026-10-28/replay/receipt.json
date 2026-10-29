@@ -1,0 +1,47 @@
+{
+  "consumed_moving_cut_commit": "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+  "observed_boundary": {
+    "D0_native_lapse_generators_constructed": false,
+    "D0_native_symplectic_form_constructed": false,
+    "D0_root_closure_proved": false,
+    "GR_closed": false,
+    "Lean_run": false,
+    "scientific_acceptance": false,
+    "scope": "conditional continuum Hamiltonian class; numerical controls are NOT native D0",
+    "source_PR_CI_reported": "no checks reported on PR #334 at review time"
+  },
+  "published_source_head": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+  "pull_request": 334,
+  "replay": {
+    "command_normal": "uv run --python 3.13.5 --with torch==2.10.0 --with sympy==1.14.0 --with numpy==2.3.5 python check_refoliation_closure.py",
+    "command_optimized": "uv run --python 3.13.5 --with torch==2.10.0 --with sympy==1.14.0 --with numpy==2.3.5 python -O check_refoliation_closure.py",
+    "normal_optimized_json_equal": true,
+    "normal_output_sha256": "8c17d61874dbdc8c5c2a39f62bf0563bb5022035b7c2ffb64800a5dc1db33375",
+    "optimized_output_sha256": "8c17d61874dbdc8c5c2a39f62bf0563bb5022035b7c2ffb64800a5dc1db33375",
+    "published_result_comparison_tolerance": {
+      "absolute": 1e-12,
+      "relative": 1e-12
+    },
+    "published_result_git_blob": "334ab85094699082a71fa56db4c089c6a28e9e76",
+    "published_result_max_absolute_float_difference": 7.216449660063518e-16,
+    "published_result_numeric_fields_compared": 50,
+    "published_result_parsed_equal": false,
+    "published_result_sha256": "3b13c4146e3fdb3990572ac56db837d2badaf22794eca78ce7f72f159d791204",
+    "published_result_structure_and_non_numeric_fields_equal": true,
+    "published_result_within_tolerance": true,
+    "stderr": "empty in both local runs"
+  },
+  "runtime": {
+    "device": "CPU",
+    "numpy": "2.3.5",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "torch": "2.10.0"
+  },
+  "schema": "d0-conditional-refoliation-replay-v1",
+  "source_checker_git_blob": "615e2b2a0421e11485c9f15497edaa47fd2b37e1",
+  "source_checker_sha256": "d2b83484e840b91e62b8ac2af4155d5fd8c8e5748ee3027f6cbea0b19263da33",
+  "source_repository": "gvakhrushev/d0_15",
+  "status": "PASS_LOCAL_REPLAY_WITHIN_FLOAT_TOLERANCE"
+}

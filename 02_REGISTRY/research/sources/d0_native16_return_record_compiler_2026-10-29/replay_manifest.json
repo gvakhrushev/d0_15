@@ -1,0 +1,62 @@
+{
+  "GR_closed": false,
+  "checker_sha256": "ea01927ce92fbe64f80ca62395d13b28d56c4508626cd364603edd275f2000e8",
+  "checks": 279,
+  "exact_published_receipt_match": true,
+  "expected_receipt_sha256": "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e",
+  "replay_outputs_byte_identical": true,
+  "runs": [
+    {
+      "checks": 279,
+      "mode": "ordinary",
+      "returncode": 0,
+      "runtime": {
+        "mpmath": "1.3.0",
+        "python": "3.9.6",
+        "sympy": "1.14.0"
+      },
+      "status": "PASS",
+      "stderr_bytes": 0,
+      "stdout_bytes": 39977,
+      "stdout_sha256": "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e"
+    },
+    {
+      "checks": 279,
+      "mode": "optimized",
+      "returncode": 0,
+      "runtime": {
+        "mpmath": "1.3.0",
+        "python": "3.9.6",
+        "sympy": "1.14.0"
+      },
+      "status": "PASS",
+      "stderr_bytes": 0,
+      "stdout_bytes": 39977,
+      "stdout_sha256": "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e"
+    },
+    {
+      "checks": 279,
+      "mode": "repeat",
+      "returncode": 0,
+      "runtime": {
+        "mpmath": "1.3.0",
+        "python": "3.9.6",
+        "sympy": "1.14.0"
+      },
+      "status": "PASS",
+      "stderr_bytes": 0,
+      "stdout_bytes": 39977,
+      "stdout_sha256": "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e"
+    }
+  ],
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "runtime_matches_published_receipt": true,
+  "schema": "d0-native16-return-record-compiler-replay-v1",
+  "scope": "exact compiler completion in the declared ordinary-blank native sector; no physical X_N or GR promotion",
+  "status": "PASS",
+  "stderr_empty_for_all_runs": true
+}

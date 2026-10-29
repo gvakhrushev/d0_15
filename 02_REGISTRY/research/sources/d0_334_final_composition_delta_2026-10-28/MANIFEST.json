@@ -1,0 +1,236 @@
+{
+  "schema": "d0-pr-source-delta-v1",
+  "repository": "gvakhrushev/d0_15",
+  "owner_pr": 334,
+  "base_source_commit": "5fe5203da2439d325dc9ef70f52c1111822fc22b",
+  "source_commit": "22e729996b70a699710a2d1120a0caa7a08decf8",
+  "source_commit_count": 5,
+  "source_commits": [
+    "8ff5da9fbdc6d2fcda345e8ffdb5437a3005f573",
+    "aa0ffca3426608314dcb4609a01bc5d4db888568",
+    "e495b5b38177d0b72b79860c60d69ad2d09da945",
+    "dd7f713cc0ec50c6f66871b3427e3a979d57ade0",
+    "22e729996b70a699710a2d1120a0caa7a08decf8"
+  ],
+  "file_count": 31,
+  "files": [
+    {
+      "upstream_path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md",
+      "bytes": 5230,
+      "sha256": "204e284695f243868aad6d9835738deaabc1b30ddf7d344bfb4f33d62bdcd574",
+      "git_blob": "2e2378f5a835deb27ebafa4eff3ffd158a899592"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/A4D_ORIGINAL_RETURN_BOUNDARY_AND_CANONICAL_RIGIDITY_2026_10_28.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/A4D_ORIGINAL_RETURN_BOUNDARY_AND_CANONICAL_RIGIDITY_2026_10_28.md",
+      "bytes": 26174,
+      "sha256": "07804c518a108a2cd104ee0454e8feb016b264de3e65e8eb07ef16af6c97b17a",
+      "git_blob": "23be29da70f4305c6e92497a72d66f859c6dd07d"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/A4D_RETAINED_HISTORY_FINAL_COMPOSITION_2026_10_28.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/A4D_RETAINED_HISTORY_FINAL_COMPOSITION_2026_10_28.md",
+      "bytes": 31139,
+      "sha256": "855b105a25e1b052fcb8240dfef926db32e3918e146456a1fa050c382ba3a0c2",
+      "git_blob": "063450255b3b4846faff31b7661a01b2c83fbca8"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_BOUNDARY_HESSIAN_2026_10_28.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_BOUNDARY_HESSIAN_2026_10_28.md",
+      "bytes": 6820,
+      "sha256": "4cb6cfd1bfc9760d0681293b44e41bfaa2e497c294607251d08023461268167f",
+      "git_blob": "dcdd91584cf331f73029b2ab9ebc7ebfcd3df3a7"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "bytes": 20552,
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+      "git_blob": "1354b8dadd924b0d96639ba402385e9b734787a9"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/check_clock_winding.py",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/check_clock_winding.py",
+      "bytes": 15224,
+      "sha256": "37adfe34424d64947ed7bbd29727696e9b1b584f878256f7b07ea47292fd5774",
+      "git_blob": "5aae8b506730b6d758939deb53a67c2e047bcda9"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/result.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/result.json",
+      "bytes": 6041,
+      "sha256": "06c614c3b0fead54ffe94bc68e9cefca75c9ebba16602dba86fd407627c62b42",
+      "git_blob": "d941031c937b5615aa234981e9ff4c1bfb39e87f"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/GAUGE_MOMENT_BOUNDARY.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/GAUGE_MOMENT_BOUNDARY.md",
+      "bytes": 13024,
+      "sha256": "e7fa8fe4f036b7ba600eb4da4c4f8d67fffc843761fb14cc2fb1ebd4c3aa6d4d",
+      "git_blob": "d5cb4f271a73cd0d88a3235dcc1e928b171807d7"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/GAUGE_RESULT.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/GAUGE_RESULT.json",
+      "bytes": 1645,
+      "sha256": "0a43a0ee306859a5273c5e65872daa80e342ce373de73a7fecc0f8be7e12e474",
+      "git_blob": "aa0f9296f596dc5bede1d00099673e05a0875f54"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/INCOMING_COMPATIBILITY.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/INCOMING_COMPATIBILITY.md",
+      "bytes": 4514,
+      "sha256": "614383fee6e6d7eebb6ca3d2d33fb8f1e7e3fbe76c8bb6f3b47925b247cada6b",
+      "git_blob": "056fd9bf55d3c4706ad285ee28bff0dad127b470"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/MANIFEST.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/MANIFEST.json",
+      "bytes": 7710,
+      "sha256": "9d499ce8dff81b59540e6d037fa38cadc56b8b459c5f580d7eff7a11c4c65e27",
+      "git_blob": "a3b66e1b5cc438864c239316f1a3260bae8e603d"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/MEMORY_RESULT.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/MEMORY_RESULT.json",
+      "bytes": 2117,
+      "sha256": "2463f1e5b3a911bf4dd3e684387f5263b1deb8b342cb76b07445deedd4295b71",
+      "git_blob": "7d8c50e365dbb8bf5da840cff2e91645460b9a0b"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/NATIVE_PHASE_RESULT.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/NATIVE_PHASE_RESULT.json",
+      "bytes": 2532,
+      "sha256": "78cfabe965a54bc73d8cfc3de88f1f4f3a6087cc7515453b451007f8fde7ce89",
+      "git_blob": "7b8e49a99b95e2cfff80d45717db3e10fc753ac6"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/NATIVE_PHASE_WITNESS.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/NATIVE_PHASE_WITNESS.md",
+      "bytes": 6499,
+      "sha256": "72f1cd1aea4ea90cb6f3ea66cc18491bdc781435de38f2d8529d2f06987a47b7",
+      "git_blob": "7abe0ddf52f4f3248952b2f87c90d19fd1d4ba52"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/PHASE_DESCENT.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/PHASE_DESCENT.md",
+      "bytes": 12678,
+      "sha256": "c606a164b88662d6e73f8e9ed078e3268e7c2ee91061287f21e9fffc84b035bc",
+      "git_blob": "12bfc36c5bb13d91978aebacbc9b332e562b2a55"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/PHASE_RESULT.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/PHASE_RESULT.json",
+      "bytes": 1530,
+      "sha256": "3e8d63814a0c56688ad38b4f54d65a92f25db645c786e26df16c2aef74f517b6",
+      "git_blob": "7833c21539985018532143f2bbe32019463aa8c5"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/QUERY_RESULT.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/QUERY_RESULT.json",
+      "bytes": 1629,
+      "sha256": "50180a819f70e56e03fb9b139ef7a6fd5b2a7665583c3227fcb8b1fe91b937d4",
+      "git_blob": "b9efa2e2b5c82390cabeb8f893b62eaab38d6834"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/QUERY_STATIONARY_REDUCTION.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/QUERY_STATIONARY_REDUCTION.md",
+      "bytes": 10103,
+      "sha256": "f1b05ab296c75a1be266d7d6d0781c702b012742e3a3a97982dded4b934d79f4",
+      "git_blob": "cf0e7ae5ccce7807aaa0c0002248bbde22458688"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/RETAINED_MEMORY_LOCALITY.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/RETAINED_MEMORY_LOCALITY.md",
+      "bytes": 9921,
+      "sha256": "27e90941a32e7f01442a96149e3fe174a309a8203d4068e9da16a22cd678ffa7",
+      "git_blob": "5a14aac850f0388a27f6b099a0adedbe55378111"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/REVIEW.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/REVIEW.md",
+      "bytes": 6014,
+      "sha256": "ba99a31dcb34c6cfaa141d616137ad3ca8822148a5747165ea2ac642f3359d44",
+      "git_blob": "bf48010d372bbb02fdede1895d0012901b841c75"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/RUN_LOG.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/RUN_LOG.json",
+      "bytes": 2475,
+      "sha256": "836b7978951c55cb150b0e831e1032ec7c307ce48298178ec25463669343e13f",
+      "git_blob": "da249eae709080e91139b49156415dfdb1f543ca"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/SOURCE_PINS.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/SOURCE_PINS.json",
+      "bytes": 6239,
+      "sha256": "a7d438f2bf0e49b397025da4aa12faec6f9e305eac350c1ba18fd9057ff375ba",
+      "git_blob": "0abf7898e0add65fe8bd998c154f198f4fe225d7"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/TERMINAL_RESULT.json",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/TERMINAL_RESULT.json",
+      "bytes": 1737,
+      "sha256": "bb94e800b55ac1a781ddd530dda981a909227d19c4ff13ebd31ed3cb7ad29766",
+      "git_blob": "78a4a2df5262b80813876fcc43301129915c7ded"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/VALIDATION.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/VALIDATION.md",
+      "bytes": 4780,
+      "sha256": "f486ac6a7b3ab4500fd5bb9b1f9c53deff2297b0326d8e5cc780d93042651f1a",
+      "git_blob": "21cec6dfabec9e6b80352d92419728ad6fd1869a"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/VARIATIONAL_REDUCTION_AND_ALGEBRA.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/VARIATIONAL_REDUCTION_AND_ALGEBRA.md",
+      "bytes": 8712,
+      "sha256": "73b4b205dc92d8342cf3e89fcff72d6694454c84ad1bcf48997b78a49331c4cb",
+      "git_blob": "fd5cfd3df039d102a2f4a5e9bc172614b52307a1"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_gauge_moment.py",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_gauge_moment.py",
+      "bytes": 5130,
+      "sha256": "9b1759d91b6d48eced6929cb08222ccf678a488ae94bff517e7c6418396fb12b",
+      "git_blob": "a610b7d2f3e7e81dcdd64d087da24c456c791c90"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_phase_descent.py",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_phase_descent.py",
+      "bytes": 4527,
+      "sha256": "15887b6661fb068badc7eb3d8d0a9785adbb48908381f5d5cd3b7639232f2b8d",
+      "git_blob": "d86689b8d6297504535206f66367c390fe9813ae"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_query_stationarity.py",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_query_stationarity.py",
+      "bytes": 7122,
+      "sha256": "000b017210e5485050b745dc833afcd72bf318b3fd3ef016fc0e3ebd76902bc2",
+      "git_blob": "a68a0466612ffeb7280f8c8ba8668040b818c725"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_retained_memory.py",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_retained_memory.py",
+      "bytes": 6586,
+      "sha256": "b23bfb478e86324fe508e1a929b6f2eac08670369f9bcba8fb8cb70d5ee3f31d",
+      "git_blob": "4f161e04b8ed94fbe5d999dd059d6a06d434ce46"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_terminal_graph.py",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_terminal_graph.py",
+      "bytes": 4400,
+      "sha256": "f18480d5beffbc2bac95853b0082539213ad1b80245a04b537678124a09da800",
+      "git_blob": "75adbc77ec2272cdf38537e0df074d41c5e2b0f2"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/phase_native_check.py",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/phase_native_check.py",
+      "bytes": 5742,
+      "sha256": "265c8ef85d86d496a9312539890c09aebd123421d81fc47667ae7cab7f1d39c8",
+      "git_blob": "996e88ae41ec4bdeae51454d90e6d470022d4e21"
+    }
+  ],
+  "verification_boundary": "Exact changed source bytes from the final fetched PR #334 tree; this packet pins files and replay inputs only and does not assert physical admission or GR closure."
+}
