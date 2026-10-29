@@ -14549,3 +14549,32 @@ not admit the fixed reserve layout physically, determine the full physical
 prove a stationary finite word or larger field-compiler refinement, or run
 Lean/CI. `GR_closed=false` remains; #334 and
 `WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION` remain open.
+
+## #402 intake validation snapshot at `df3403d6` — source coverage and retrieval comparison
+
+The committed integration snapshot `df3403d6e634789dea6ac66b9ae131df2ec0f440`
+was clean for both replays. The full cold-start search found all required
+sources in **40/40** cases, with 41 benchmark cases, 259 required source
+references and a bounded result window of 18. The prior
+[`07277300` validation snapshot](sources/d0_proof_architecture_formalization_2026-10-24/reports/architecture_intake_validation_2026-10-29_07277300/validation_manifest.json)
+is preserved unchanged. The new
+[cold-start summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/architecture_intake_validation_2026-10-29_df3403d6/cold_start_summary.json),
+[process comparison](sources/d0_proof_architecture_formalization_2026-10-24/reports/architecture_intake_validation_2026-10-29_df3403d6/process_comparison.json)
+and [validation manifest](sources/d0_proof_architecture_formalization_2026-10-24/reports/architecture_intake_validation_2026-10-29_df3403d6/validation_manifest.json)
+pin the replay outputs and code inputs.
+
+The 40-question process comparison has 24 source-scoped questions. Current
+search surfaces at least one expected source in 23/24; legacy assembly search
+does so for 0/24. Seven cases have at least one expected path absent from the
+single-query, five-candidate comparison, including the canonical AF
+stationary-family query, which does not surface this central document. The
+new §7dt one-query comparison surfaces the owner memo but not the other two
+expected paths. The full multi-query cold-start still finds every required
+source, including all three §7dt references. These are retrieval results;
+they do not grade semantic correctness, prove hypotheses or accept a physical
+application.
+
+This increment integrates the existing #334 results into the same open #402
+branch. No Lean build or CI run was performed. Physical D0 admission remains
+unproved, the #334 scientific owner remains open, and `GR_closed=false`.
+`WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION` remains `IN_PROGRESS`.
