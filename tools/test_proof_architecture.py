@@ -4838,6 +4838,119 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("Lean/CI", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
 
+    def test_native16_paid_golden_calibration_is_pinned_and_scoped(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "native16-paid-golden-calibration"
+        )
+        hits = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        self.assertEqual(len(hits), len(case["queries"]))
+        query_pairs = list(zip(case["queries"], hits))
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(
+                status["found"],
+                f"cold-start missed paid Golden calibration source {source['path']}: {status}",
+            )
+            if source.get("commit"):
+                self.assertEqual(status["source_origin"], "pinned_snapshot")
+                self.assertEqual(status["expected_commit"], source["commit"])
+                self.assertEqual(status["expected_blob"], source["blob"])
+
+        intake = (
+            proof.ROOT / "02_REGISTRY/research/sources/"
+            "d0_native16_paid_golden_calibration_2026-10-29"
+        )
+        source_manifest = json.loads(
+            (intake / "source_manifest.json").read_text(encoding="utf-8")
+        )
+        replay_manifest = json.loads(
+            (intake / "replay_manifest.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(source_manifest["schema"], "d0-native16-paid-golden-calibration-intake-v1")
+        for rel, artifact in source_manifest["integrated_artifacts"].items():
+            data = (intake / rel).read_bytes()
+            self.assertEqual(len(data), artifact["bytes"], rel)
+            self.assertEqual(hashlib.sha256(data).hexdigest(), artifact["sha256"], rel)
+
+        owner = source_manifest["upstream"]
+        self.assertEqual(owner["commit"], "9e80e0c015a8b8dc804ec55a837eda91164201fe")
+        for rel in (owner["memo_path"], owner["task_path"]):
+            data = subprocess.check_output(
+                ["git", "show", f"{owner['commit']}:{rel}"], cwd=proof.ROOT
+            )
+            self.assertEqual(len(data), owner["memo_bytes"] if rel == owner["memo_path"] else owner["task_bytes"])
+            self.assertEqual(
+                hashlib.sha256(data).hexdigest(),
+                owner["memo_sha256"] if rel == owner["memo_path"] else owner["task_sha256"],
+            )
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{owner['commit']}:{rel}"], cwd=proof.ROOT, text=True
+            ).strip()
+            self.assertEqual(blob, owner["memo_blob"] if rel == owner["memo_path"] else owner["task_blob"])
+
+        section = (intake / "upstream_section_7dv.md").read_bytes()
+        checker = (intake / "check_paid_golden_calibration.py").read_bytes()
+        receipt = (intake / "expected_receipt.json").read_bytes()
+        self.assertEqual(hashlib.sha256(section).hexdigest(), owner["section_sha256"])
+        self.assertEqual(
+            checker,
+            section.split(b"<!-- BEGIN 7dv PAID NATIVE CALIBRATION CHECKER -->\n```python\n", 1)[1]
+            .split(b"```\n<!-- END 7dv PAID NATIVE CALIBRATION CHECKER -->", 1)[0],
+        )
+        self.assertEqual(
+            receipt,
+            section.split(b"<!-- BEGIN 7dv PAID NATIVE CALIBRATION RECEIPT -->\n```json\n", 1)[1]
+            .split(b"```\n<!-- END 7dv PAID NATIVE CALIBRATION RECEIPT -->", 1)[0],
+        )
+        fixture = (intake / "inputs/upstream_receipts.md").read_bytes()
+        self.assertEqual(
+            hashlib.sha256(fixture).hexdigest(),
+            source_manifest["frozen_receipts"]["fixture_sha256"],
+        )
+        for pin in source_manifest["checker_inputs"]:
+            data = subprocess.check_output(
+                ["git", "show", f"{pin['commit']}:{pin['path']}"], cwd=proof.ROOT
+            )
+            self.assertEqual(hashlib.sha256(data).hexdigest(), pin["sha256"])
+            self.assertEqual(
+                subprocess.check_output(
+                    ["git", "rev-parse", f"{pin['commit']}:{pin['path']}"],
+                    cwd=proof.ROOT, text=True,
+                ).strip(),
+                pin["blob"],
+            )
+
+        self.assertEqual(replay_manifest["schema"], "d0-native16-paid-golden-calibration-replay-v1")
+        self.assertEqual(replay_manifest["status"], "PASS")
+        self.assertEqual(replay_manifest["checks"], 109)
+        self.assertTrue(replay_manifest["exact_published_receipt_match"])
+        self.assertTrue(replay_manifest["outputs_byte_identical_across_modes"])
+        self.assertTrue(replay_manifest["stderr_empty_for_all_runs"])
+        self.assertFalse(replay_manifest["scope"]["GR_closed"])
+        self.assertFalse(replay_manifest["scope"]["unconstrained_price_selects_correct_recorder"])
+        self.assertEqual(len(replay_manifest["runs"]), 3)
+        for run in replay_manifest["runs"]:
+            self.assertEqual(run["returncode"], 0)
+            self.assertEqual(run["checks"], 109)
+            self.assertEqual(run["stderr_bytes"], 0)
+        for mode in ("ordinary", "optimized", "repeat"):
+            self.assertEqual((intake / f"replay/{mode}_stdout.json").read_bytes(), receipt)
+            self.assertEqual((intake / f"replay/{mode}_stderr.log").read_bytes(), b"")
+        result = json.loads(receipt)
+        self.assertEqual(result["strict_differences"]["cal_bad_minus_good"][0],
+                         "0.0000058283398562580237964620295574197718044060")
+        self.assertLess(float(result["strict_differences"]["whole_bad_bad_minus_good_good"][1]), 0)
+        self.assertLess(float(result["strict_differences"]["whole_good_bad_minus_good_good"][1]), 0)
+        self.assertFalse(result["scope"]["unconstrained_price_forces_correct_record_instrument"])
+        self.assertFalse(result["scope"]["physical_X_N_identified"])
+        self.assertFalse(result["scope"]["GR_closed"])
+        self.assertIn("native task/continuation law", case["scope_review"])
+        self.assertIn("Lean/CI", case["scope_review"])
+        self.assertIn("GR_closed=false", case["scope_review"])
+
     def test_record_saturated_native_field_stencils_are_pinned_and_scoped(self) -> None:
         case = next(
             item for item in cold_start.CASES

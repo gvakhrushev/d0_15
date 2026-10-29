@@ -1,0 +1,187 @@
+{
+  "checker_inputs": [
+    {
+      "blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "commit": "f23f9149c470051b35acc3fac42f3fecdba084ab",
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "commit": "f23f9149c470051b35acc3fac42f3fecdba084ab",
+      "path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    }
+  ],
+  "frozen_receipts": {
+    "fixture_sha256": "ca97beea61912cd3f47c298190010c0a58e9b4eed04a232e89efe304f870e044",
+    "receipt_sha256_by_tag": {
+      "7do PAID BINARY INPUT RECEIPT": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba",
+      "7ds RETURN RECORD COMPILER RECEIPT": "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e",
+      "7du RECORD IMPLEMENTATION FIBRE RECEIPT": "b5c6138e8ae5bd1d7cd23bc8cc9e8831448f6b6900f8ef609a84ae4154cf78b6"
+    }
+  },
+  "integrated_artifacts": {
+    "PROOF_RU.md": {
+      "bytes": 5811,
+      "sha256": "bb53bc729a977da8fc5a9baad4ee0fafe700718a94adc0fea524d9f5b88073f0"
+    },
+    "check_paid_golden_calibration.py": {
+      "bytes": 14115,
+      "sha256": "fa68fa43fa906c8bc5cf5b2fa2bf766910cae19b5c78bebf32ad94decce4b707"
+    },
+    "expected_receipt.json": {
+      "bytes": 8951,
+      "sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+    },
+    "inputs/upstream_receipts.md": {
+      "bytes": 73873,
+      "sha256": "ca97beea61912cd3f47c298190010c0a58e9b4eed04a232e89efe304f870e044"
+    },
+    "replay/optimized_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/optimized_stdout.json": {
+      "bytes": 8951,
+      "sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+    },
+    "replay/ordinary_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/ordinary_stdout.json": {
+      "bytes": 8951,
+      "sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+    },
+    "replay/repeat_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/repeat_stdout.json": {
+      "bytes": 8951,
+      "sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+    },
+    "replay_manifest.json": {
+      "bytes": 2399,
+      "sha256": "6ecc5f05e9be7739d2341a34e310664e967658c93374d2296cf197f8fd380638"
+    },
+    "replay_paid_golden_calibration.py": {
+      "bytes": 13007,
+      "sha256": "62b0ec9f5d8659b9bbaa8d77a5cf8295d43bcd9ec8e4f88cba61038324b38620"
+    },
+    "upstream_section_7dv.md": {
+      "bytes": 39116,
+      "sha256": "825d3773423d5ac8e19a9ace4d198629301b72f5aac4e15593be66c4c1301d2d"
+    },
+    "upstream_task_7dv.md": {
+      "bytes": 5356,
+      "sha256": "68bae27744e1c559041a660526ccf65e9a8574ebcd8f4c5280470c59771547fe"
+    }
+  },
+  "replay": {
+    "checker_sha256": "fa68fa43fa906c8bc5cf5b2fa2bf766910cae19b5c78bebf32ad94decce4b707",
+    "checks": 109,
+    "exact_published_receipt_match": true,
+    "outputs_byte_identical_across_modes": true,
+    "owner_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "owner_commit": "9e80e0c015a8b8dc804ec55a837eda91164201fe",
+    "published_receipt_sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e",
+    "runs": [
+      {
+        "checks": 109,
+        "command_flags": [],
+        "mode": "ordinary",
+        "returncode": 0,
+        "runtime": {
+          "mpmath": "1.3.0",
+          "python": "3.9.6",
+          "sympy": "1.14.0"
+        },
+        "status": "PASS",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 8951,
+        "stdout_sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+      },
+      {
+        "checks": 109,
+        "command_flags": [
+          "-O"
+        ],
+        "mode": "optimized",
+        "returncode": 0,
+        "runtime": {
+          "mpmath": "1.3.0",
+          "python": "3.9.6",
+          "sympy": "1.14.0"
+        },
+        "status": "PASS",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 8951,
+        "stdout_sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+      },
+      {
+        "checks": 109,
+        "command_flags": [],
+        "mode": "repeat",
+        "returncode": 0,
+        "runtime": {
+          "mpmath": "1.3.0",
+          "python": "3.9.6",
+          "sympy": "1.14.0"
+        },
+        "status": "PASS",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 8951,
+        "stdout_sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e"
+      }
+    ],
+    "runtime": {
+      "mpmath": "1.3.0",
+      "python": "3.9.6",
+      "sympy": "1.14.0"
+    },
+    "schema": "d0-native16-paid-golden-calibration-replay-v1",
+    "scope": {
+      "GR_closed": false,
+      "Lean_or_CI_run": false,
+      "actual_21_call_golden_test": true,
+      "actual_59_call_one_book_price": true,
+      "physical_X_N_identified": false,
+      "test_and_use_control_positions_independent": true,
+      "unconstrained_price_selects_correct_recorder": false
+    },
+    "status": "PASS",
+    "stderr_empty_for_all_runs": true
+  },
+  "schema": "d0-native16-paid-golden-calibration-intake-v1",
+  "scope": {
+    "GR_closed": false,
+    "parent_substitution": "An exact paid Golden return calibration is implemented in the fixed native16 alphabet and linked to its own independent test/use positions under one original Book price; the unconstrained price argument is shown unable to derive correct recording.",
+    "phase": "native realization and complete-price application",
+    "remaining": [
+      "derive the native task or continuation law requiring faithful recording and independently binding its later use",
+      "identify and admit the physical comparison domain X_N and SourceI availability",
+      "retain upstream preparation, clock, boundary and complete original GR transport/refinement obligations",
+      "Lean formalization, CI, physical selection and GR closure"
+    ]
+  },
+  "upstream": {
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "commit": "9e80e0c015a8b8dc804ec55a837eda91164201fe",
+    "memo_blob": "3faa2e9e2682a3a1ba1a466d71b2cc45bd85b30f",
+    "memo_bytes": 3786534,
+    "memo_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "memo_sha256": "78e8ea323698755e69fa5cc171b4828078b4d789bb456ad0564a3e34bd1743cb",
+    "pull_request": 334,
+    "section_sha256": "825d3773423d5ac8e19a9ace4d198629301b72f5aac4e15593be66c4c1301d2d",
+    "task_blob": "3828c33f45b96729ea67fee849849849276ee07a",
+    "task_bytes": 1202740,
+    "task_excerpt_sha256": "68bae27744e1c559041a660526ccf65e9a8574ebcd8f4c5280470c59771547fe",
+    "task_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    "task_sha256": "9006861ef8199d6c757a4f8d1196dcec55973f4ee978b39b21af7d42a37f963a"
+  }
+}

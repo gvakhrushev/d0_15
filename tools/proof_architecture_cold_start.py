@@ -1827,6 +1827,73 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "native16-paid-golden-calibration",
+        "queries": [
+            "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION paid Golden calibration §7dv integration 109 checks",
+            "d0_native16_paid_golden_calibration_2026-10-29 PROOF_RU.md оплаченная калибровка Golden неверная запись дороже правильной полной цене",
+            "upstream_section_7dv.md 825d3773423d5ac8e19a9ace4d198629301b72f5aac4e15593be66c4c1301d2d 7dv real Golden calibration echo independent controls",
+            "upstream_task_7dv.md algebraic condition Dj=Cj actual test own control reference price New7dv constructs native Golden return echo",
+            "check_paid_golden_calibration.py joint_map faithful_probe actual input rank16 21 59 exact corners",
+            "expected_receipt.json d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e strict_differences whole_bad_bad_minus_good_good",
+            "inputs/upstream_receipts.md 7ds RETURN RECORD COMPILER RECEIPT 7du RECORD IMPLEMENTATION FIBRE RECEIPT 7do PAID BINARY INPUT RECEIPT",
+            "replay_paid_golden_calibration.py exact #334 §7dv ordinary optimized repeat exact_published_receipt_match",
+            "replay_manifest.json d0-native16-paid-golden-calibration-replay-v1 109 outputs_byte_identical_across_modes stderr_empty_for_all_runs",
+            "source_manifest.json d0-native16-paid-golden-calibration-intake-v1 owner_commit 9e80e0c015a8b8dc804ec55a837eda91164201fe",
+            "replay/ordinary_stdout.json strict_differences cal_bad_minus_good whole_bad_bad_minus_good_good 1388118016",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/PROOF_RU.md",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/upstream_section_7dv.md",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/upstream_task_7dv.md",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/check_paid_golden_calibration.py",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/expected_receipt.json",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/inputs/upstream_receipts.md",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/replay_paid_golden_calibration.py",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/replay_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/source_manifest.json",
+            "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/replay/ordinary_stdout.json",
+        ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+             "scope_query_indexes": [0]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/PROOF_RU.md",
+             "scope_query_indexes": [1]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/upstream_section_7dv.md",
+             "scope_query_indexes": [2]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/upstream_task_7dv.md",
+             "scope_query_indexes": [3]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/check_paid_golden_calibration.py",
+             "scope_query_indexes": [4]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/expected_receipt.json",
+             "scope_query_indexes": [5]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/inputs/upstream_receipts.md",
+             "scope_query_indexes": [6]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/replay_paid_golden_calibration.py",
+             "scope_query_indexes": [7]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/replay_manifest.json",
+             "scope_query_indexes": [8]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/source_manifest.json",
+             "scope_query_indexes": [9]},
+            {"path": "02_REGISTRY/research/sources/d0_native16_paid_golden_calibration_2026-10-29/replay/ordinary_stdout.json",
+             "scope_query_indexes": [10]},
+        ],
+        "scope_review": (
+            "§7dv consumes the §7du complete-map recorder condition and implements a real "
+            "21-call Golden return test plus a 59-call complete native16 Book programme. The "
+            "test and later use remain independent control positions; the unchanged full H+J "
+            "price retains all heat modes and actual clocks. Exact interval replay shows that "
+            "the faulty recorder is dearer in the standalone test but cheaper when tested and "
+            "used in the complete programme; a successful test also fails to constrain an "
+            "independently changed later use. Therefore unconstrained total-price minimization "
+            "does not derive the faithful-recording condition. This is a scoped negative on that "
+            "proposed parent substitution, not a physical no-go for a correctly constrained "
+            "task. Deriving the native task/continuation law, admitting SourceI and physical X_N, "
+            "retaining preparation and original GR transport/refinement, Lean/CI and GR closure "
+            "remain open; GR_closed=false."
+        ),
+    },
+    {
         "id": "canonical-archive-law-and-variation-domain",
         "queries": [
             "canonical archive law compatibility variation domain full old effect relative commutant",
