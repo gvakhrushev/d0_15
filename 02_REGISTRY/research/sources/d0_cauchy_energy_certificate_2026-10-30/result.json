@@ -1,0 +1,80 @@
+{
+  "Lean_or_CI_run": false,
+  "PDE_integrated": false,
+  "certificate_control": {
+    "algebraic_coframe_connection_map_computed": true,
+    "coefficient_C_exact": "33720798091555753349072327104652595313193779200",
+    "coefficient_C_upper_power10": 47,
+    "derivative_order": 11,
+    "energy_upper": "96",
+    "field42_C31_bound_bits": 453743,
+    "field_map_C_exact": "910315163604554915102111216866114127932143288325377742098111157832226643626708047005128291139614720",
+    "input_bounds_verified_for_an_actual_initial_field": true,
+    "jet_bounds": [
+      {
+        "bound_bits": 351,
+        "order": 1
+      },
+      {
+        "bound_bits": 1202,
+        "order": 2
+      },
+      {
+        "bound_bits": 4274,
+        "order": 3
+      },
+      {
+        "bound_bits": 17934,
+        "order": 4
+      },
+      {
+        "bound_bits": 90677,
+        "order": 5
+      }
+    ],
+    "rational_time_denominator": "96501668644393864239005687918676467947760858832411341024604186933308301856849058865241718182501471577487337933986949699132221472851721712138027059151091224589387593401786118292111360000000000000000000",
+    "rational_time_denominator_sha256": "7d55d254ea35b76b457dc51f617858f62a57d6f23bd41e2ef07627d7bd8ca743",
+    "rational_time_numerator": "1",
+    "s": 10,
+    "scope": "positive lifespan and regularity certificate for checked initial datum; general generator takes certified initial energy/gaps; not a PDE trajectory",
+    "state_collared": true,
+    "state_dimension": 60,
+    "time_denominator_bits": 665,
+    "time_lower_power10": -200,
+    "time_numerator_bits": 1
+  },
+  "checker_sha256": "49453f9518321a836ef619711ff1091408d0af880de42eff2275f362256ad726",
+  "checks": 99,
+  "coupling": {
+    "certified_upper_bound": 24,
+    "kappa_diagnostic": "23.4164067518840749728955820649",
+    "scope": "existing zero-operand source coefficient, not nonlinear dust branch kappa"
+  },
+  "exact_reduction": {
+    "full_initial_constraints_or_solution_asserted": false,
+    "independent_scalars": 2,
+    "metric_components": 10,
+    "principal_directions_checked": 3,
+    "ricci_components_checked": 10,
+    "state_dimension": 60
+  },
+  "initial_data": {
+    "energy_exact": "52+3/kappa",
+    "energy_upper": 64,
+    "future_solution_not_supplied": true,
+    "initial_four_constraints_and_harmonic_gauge": true,
+    "nonvacuum": true,
+    "scope": "one initial-data control of the general certificate theorem, no spacetime integration",
+    "surface": "normalized 2pi-periodic T3",
+    "two_independent_scalar_equations_retained": true
+  },
+  "input_commit": "6dcde1bb41d0447779ee5101e33744fd8147a5b3",
+  "majorants": {
+    "max_actual_to_bound": 0.8874801901743264,
+    "rational_derivatives_checked": 21,
+    "sqrt_derivatives_checked": 21
+  },
+  "native_word_emitted": false,
+  "status": "PASS_ES_HYPERBOLIC_COEFFICIENT_AND_ENERGY_CERTIFICATE",
+  "unrestricted_D0_GR_closed": false
+}
