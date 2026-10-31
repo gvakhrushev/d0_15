@@ -1,0 +1,138 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "PDE_or_full42_root_solved": false,
+  "checker_sha256": "52ce05bb2077f99106c77d6256d1a39fe4eaa803f4d906b944b5c4fe23116ea2",
+  "checks": 47,
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "exact_bounds": {
+    "bounds": [
+      {
+        "Hc_upper": 1.788220160427996e-08,
+        "Hc_upper_scientific": "1.7882201604279961712e-8",
+        "Hcc_abs_upper": 2.1100678672017075e-14,
+        "Jcc_abs_lower": 1.5258774453741353e-05,
+        "N": 4,
+        "root_upper": 0.0011719279643380915,
+        "root_upper_exact": "8764775159725539328000000/7478936783180108366455928521",
+        "root_upper_scientific": "0.0011719279643380915708",
+        "underflowed_float_values_not_used_in_certification": false
+      },
+      {
+        "Hc_upper": 1.300523376797507e-10,
+        "Hc_upper_scientific": "1.3005233767975069215e-10",
+        "Hcc_abs_upper": 1.1160685430353878e-18,
+        "Jcc_abs_lower": 1.5258774453741353e-05,
+        "N": 5,
+        "root_upper": 8.523110002180141e-06,
+        "root_upper_exact": null,
+        "root_upper_scientific": "8.5231100021801413609e-6",
+        "underflowed_float_values_not_used_in_certification": false
+      },
+      {
+        "Hc_upper": 1.8611475425439707e-17,
+        "Hc_upper_scientific": "1.8611475425439707825e-17",
+        "Hcc_abs_upper": 2.285683791364405e-32,
+        "Jcc_abs_lower": 1.5258774453741353e-05,
+        "N": 8,
+        "root_upper": 1.2197216534816166e-12,
+        "root_upper_exact": null,
+        "root_upper_scientific": "1.219721653481616692e-12",
+        "underflowed_float_values_not_used_in_certification": false
+      },
+      {
+        "Hc_upper": null,
+        "Hc_upper_scientific": "1.2737492195918969656e-656",
+        "Hcc_abs_upper": null,
+        "Jcc_abs_lower": 1.5258774453741353e-05,
+        "N": 198,
+        "root_upper": null,
+        "root_upper_exact": null,
+        "root_upper_scientific": "8.3476428855174559538e-652",
+        "underflowed_float_values_not_used_in_certification": true
+      }
+    ],
+    "exact_rational_all_N_ge_4": true,
+    "first_harmonic_tail_ratio_upper_at_N4": "2072475800412160000000/562482710712710099984150613",
+    "root_exists_unique_in": "(0,1/16)"
+  },
+  "independent_scalar_control": {
+    "diagnostic_fd_step": 0.001,
+    "mixed_matrix_finite_difference": 1.4802973661668753e-13,
+    "wrong_omitted_harmonic_derivative": "0.0000000560492094483984192270604798786"
+  },
+  "new_native_word_emitted": false,
+  "pinned_input": "1e44de960dabaa86d47d86dfa6193d55d5fd5742",
+  "previous_reflection_normal_ratio": "16.465368218171938002575848380644",
+  "scene": {
+    "all33_scene_modes_preserved": true,
+    "max_scene_error": 4.884981308350689e-15
+  },
+  "scope": "same Book03 fixed homogeneous scene price and canonical boundary; mathematical endpoint domain, not compiled native execution",
+  "source_elimination": {
+    "effective_hessian_exact": "Matrix([[0, 0], [0, 0]])",
+    "no_claim_for_a_different_independent_spatial_source": true,
+    "same_response_cancellation_loses_field_source": true,
+    "scope": "fields and independent controls enter through the same endpoint; scene and cuts fixed"
+  },
+  "stationary_diagnostics": [
+    {
+      "Bcc": "-0.000015258803614428932181472291183157",
+      "Hc": "0.00000000486694157376635571013913049745933636569912668988",
+      "Jc": "-0.00000000486694157376635571013913049745933636569912668988",
+      "N": 4,
+      "all_Hodge_modes": 54400,
+      "finite_difference_error": "4.64333262768e-47",
+      "full_Bc": "9.84716665456e-71",
+      "full_heat_value": "14.16175868260505489064672109",
+      "full_return_value": "0.000007629397393052302864901521838",
+      "numerical_root_is_not_an_interval_enclosure": true,
+      "return_gain_w": "7.7617881719306277470462665796274166e-13",
+      "root_c_decimal": "0.000318959578794534473631021314995227643809225586999"
+    },
+    {
+      "Bcc": "-0.000015258803614429106586252384253081",
+      "Hc": "0.0000000000319868832089265394340608848069409747769761333605",
+      "Jc": "-0.0000000000319868832089265394340608848069409747769761333605",
+      "N": 5,
+      "all_Hodge_modes": 68000,
+      "finite_difference_error": "2.84867032373e-49",
+      "full_Bc": "5.25675772852e-70",
+      "full_heat_value": "14.45385737862402660420902657",
+      "full_return_value": "0.000007629398169231120058001949499",
+      "numerical_root_is_not_an_interval_enclosure": true,
+      "return_gain_w": "3.3526897759336133613496266971989767e-17",
+      "root_c_decimal": "0.0000020962903788000091392271636683908734365602615575"
+    },
+    {
+      "Bcc": "-0.000015258803614429106167894523520022",
+      "Hc": "3.45700028131998651133045500949721310309651272717e-18",
+      "Jc": "-3.45700028131998651133045500949721310309651272717e-18",
+      "N": 8,
+      "all_Hodge_modes": 108800,
+      "finite_difference_error": "1.89911354915e-49",
+      "full_Bc": "-1.68416913213e-70",
+      "full_heat_value": "15.06910011669260954926640718",
+      "full_return_value": "0.000007629398169231120058001949499",
+      "numerical_root_is_not_an_interval_enclosure": true,
+      "return_gain_w": "3.9160511030319056126274580179994473e-31",
+      "root_c_decimal": "0.000000000000226557754374069053507395741348982354495513077114"
+    }
+  ],
+  "status": "CHECKED_MATRIX_STATIONARITY_AND_LOSS_OF_SHARED_FIELD_GAIN",
+  "whole_unitary_gradient": {
+    "all_endpoint_directions": 1024,
+    "input_rank": 8,
+    "max_cut_skew_coefficient": 7.754818242684634e-26,
+    "max_heat_direction": 3.7599189510512977e-10,
+    "max_return_direction": 3.759918951051802e-10,
+    "max_total_direction": 5.0432167971592406e-23,
+    "real_native_word_emitted": false,
+    "whole_fibre_dimension": 32
+  }
+}
