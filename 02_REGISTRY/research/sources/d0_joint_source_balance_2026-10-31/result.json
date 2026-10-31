@@ -104,7 +104,7 @@
       "finite_difference_error": "2.84867032373e-49",
       "full_Bc": "5.25675772852e-70",
       "full_heat_value": "14.45385737862402660420902657",
-      "full_return_value": "0.000007629398169231120058001949499",
+      "full_return_value": "0.000007629398169197593160242613757",
       "numerical_root_is_not_an_interval_enclosure": true,
       "return_gain_w": "3.3526897759336133613496266971989767e-17",
       "root_c_decimal": "0.0000020962903788000091392271636683908734365602615575"
