@@ -1,0 +1,182 @@
+{
+  "Lean_or_CI_run": false,
+  "algebra": {
+    "all_n_algebra_proved": true,
+    "exact_inverse": true,
+    "source_ratio_squared_lower_rational": "4843241125778062940625/18446744073709551616",
+    "uniform_signed_secant_lower_bound": 16
+  },
+  "arbitrary_past_control": {
+    "normalized_slope": "2.8959500071892837949907453165160401",
+    "relative_error": "1.059581119e-114",
+    "true_w": "3.2148790501394750017881410485659109e-77"
+  },
+  "checker_sha256": "60a58b99f1212d834a21599909ca445920dc13e53c65e623e0177a520451ff6e",
+  "checks": 4692,
+  "constraint_reaction": {
+    "closure_not_claimed": true,
+    "constraint": "r=Q(Y)",
+    "missing_normal_row_is_not_a_generated_state": "true",
+    "reaction": "lambda_c=-B_r"
+  },
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "errors": {
+    "actual fixed input all8 cold columns": "1.26547277760056e-96",
+    "canonical raw-born input isometric": "2.85746847820569e-101",
+    "emitted endpoint full orthogonal": "1.07212645922549e-95",
+    "emitted endpoint self-adjoint": "1.84550489847802e-101",
+    "emitted word all-column identity": "4.76310706264986e-96",
+    "general scalar-reflection identity": "0.0",
+    "generator derived from existing endpoint and input": "0.0",
+    "identical full reflection multiplicities": "4.28620271730853e-101",
+    "literal 26-stage original query, all32 columns": "8.92958899439277e-102",
+    "paid canonical-input inverse on all32 columns": "0.0",
+    "representation transport moves the actual input too": "0.0"
+  },
+  "fullstep_only_compiler_executed": false,
+  "input": "(sqrt(p),p) tensor (sqrt(p),p) tensor arbitrary Spin and oldRIGHT",
+  "literal_shortest_trio": {
+    "actual_N": 198,
+    "all_clock_modes_only": 6336,
+    "all_scene_hodge_modes": 2692800,
+    "full_fibre_dimension": 32,
+    "full_scene_heat_equality": "analytical, from identical N and full monodromy spectra",
+    "huge_clock_matrix_materialized": false,
+    "max_expanded_endpoint_error": 7.494005416219807e-15,
+    "max_generated_interior_leakage": 7.772708861344864e-15,
+    "protected_rank": 8
+  },
+  "long_words_evaluated_by_exact_power_identities_and_interval_arithmetic": true,
+  "native_comparisons": [
+    {
+      "actual_w": "0.00000042517196796863173174618459400798574",
+      "difference_to_limit": "0.0045332703080682128719",
+      "enclosure_width": "1.44357098692e-77",
+      "endpoint_norm_secant_over_w": "8.2308707304473252281628203077871154",
+      "inventory": {
+        "CX": 42,
+        "G": 138,
+        "SourceI": 18
+      },
+      "limit_source": "16.465368218171938002575848380643603",
+      "n": 66,
+      "normalized_price_secant_interval": [
+        "16.46083494786386978970397065680731447490391439945492912003476916492566294937186113508578417654898045",
+        "16.46083494786386978970397065680731447490391439945492912003476916492566294937187557079565332981517851"
+      ],
+      "raw_stages": 198,
+      "secant_over_step_w": "16.460834947863869789703970656807314",
+      "sin_step_interval": [
+        "-0.01049441311186457039781717801237835774762291759126033807427274894581785491690714581968532495401819647",
+        "-0.01049441311186457039781717801237835774762291759126033807427274894581785491690714581018044029565281651"
+      ],
+      "step": "-0.010494413111864570397817178012378358"
+    },
+    {
+      "actual_w": "0.00000042517196796863173174618459400798574",
+      "difference_to_limit": "0.0002126432434596477766",
+      "enclosure_width": "1.01251821547e-76",
+      "endpoint_norm_secant_over_w": "8.2325990516059675093321532548860656",
+      "inventory": {
+        "CX": 42,
+        "G": 1232,
+        "SourceI": 18
+      },
+      "limit_source": "16.465368218171938002575848380643603",
+      "n": 613,
+      "normalized_price_secant_interval": [
+        "16.46515557492847835479924930106294741560895446117302125988601230937867566164743048208741498959887285",
+        "16.46515557492847835479924930106294741560895446117302125988601230937867566164753173390896170766944427"
+      ],
+      "raw_stages": 1292,
+      "secant_over_step_w": "16.465155574928478354799249301062947",
+      "sin_step_interval": [
+        "-0.002272846804407387645829325024657929402024640902024028011751396223959810484336048018152301175724126917",
+        "-0.002272846804407387645829325024657929402024640902024028011751396223959810484336047828464804003827261283"
+      ],
+      "step": "-0.0022728468044073876458293250246579294"
+    },
+    {
+      "actual_w": "0.00000042517196796863173174618459400798574",
+      "difference_to_limit": "0.000031130700464639479807",
+      "enclosure_width": "2.06677887625e-76",
+      "endpoint_norm_secant_over_w": "8.2326716567982663697656922748920064",
+      "inventory": {
+        "CX": 42,
+        "G": 6004,
+        "SourceI": 18
+      },
+      "limit_source": "16.465368218171938002575848380643603",
+      "n": 2999,
+      "normalized_price_secant_interval": [
+        "16.46533708747147336309604101171607317775945197109145027253959751847715730920680061483338571360922662",
+        "16.46533708747147336309604101171607317775945197109145027253959751847715730920700729272101070719070968"
+      ],
+      "raw_stages": 6064,
+      "secant_over_step_w": "16.465337087471473363096041011716073",
+      "sin_step_interval": [
+        "-0.0008696379456360304873321726945950534323992705318854537063429311297860956749849618766305447470877343172",
+        "-0.0008696379456360304873321726945950534323992705318854537063429311297860956749849601519695251013920485779"
+      ],
+      "step": "-0.00086963794563603048733217269459505343"
+    },
+    {
+      "actual_w": "0.00000042517196796863173174618459400798574",
+      "difference_to_limit": "7.9027135929374764363e-7",
+      "enclosure_width": "8.80444789225e-75",
+      "endpoint_norm_secant_over_w": "8.232683792977316013978926250584596",
+      "inventory": {
+        "CX": 42,
+        "G": 44312,
+        "SourceI": 18
+      },
+      "limit_source": "16.465368218171938002575848380643603",
+      "n": 22153,
+      "normalized_price_secant_interval": [
+        "16.46536742790057870882820474919675061934226785994694591087915663620609353051540272890213246291363766",
+        "16.46536742790057870882820474919675061934226785994694591087915663620609353052420717679438428374390768"
+      ],
+      "raw_stages": 44372,
+      "secant_over_step_w": "16.465367427900578708828204749196751",
+      "sin_step_interval": [
+        "-0.0001385581577446301710333783699437228979752342323735466109349923566264916541392843344873365356255933099",
+        "-0.0001385581577446301710333783699437228979752342323735466109349923566264916541392562003062333004081744443"
+      ],
+      "step": "-0.0001385581577446301710333783699437229"
+    },
+    {
+      "actual_w": "0.00000042517196796863173174618459400798574",
+      "difference_to_limit": "3.7813177943674238154e-10",
+      "enclosure_width": "1.10459263137e-71",
+      "endpoint_norm_secant_over_w": "8.2326841089347162382452730616638448",
+      "inventory": {
+        "CX": 42,
+        "G": 635832,
+        "SourceI": 18
+      },
+      "limit_source": "16.465368218171938002575848380643603",
+      "n": 317913,
+      "normalized_price_secant_interval": [
+        "16.46536821779380622313910599910358148069344515086483511789308685614163427460123753977295813725548797",
+        "16.4653682177938062231391059991035814806934451508648351178930868561416342856471638534757326169340538"
+      ],
+      "raw_stages": 635892,
+      "secant_over_step_w": "16.465368217793806223139105999103581",
+      "sin_step_interval": [
+        "-0.000003030857841267268112223621686939335793672651583430903620368875716465812075585896742015421100512131525",
+        "-0.000003030857841267268112223621686939335793672651583430903620368875716465812074683147363681396579798522018"
+      ],
+      "step": "-0.0000030308578412672681122236216869393358"
+    }
+  ],
+  "new_einstein_root": false,
+  "pinned_input": "a61872563a0e456546549d457eeeaa7534113827",
+  "raw_input_conversion_paid_calls": 24,
+  "scope": "one original native QUERY on the same canonical raw-born boundary; equal paid clocks; not a proof of physical X_N completeness",
+  "unrestricted_D0_GR_closed": false
+}
