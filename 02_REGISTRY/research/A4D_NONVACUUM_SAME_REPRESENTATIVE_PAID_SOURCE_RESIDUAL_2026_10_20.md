@@ -117187,3 +117187,763 @@ The final incoming74cc1d32 balanced-reflection packet is also
 preserved. Its exact zero full heat covector and fixed intrinsic
 effect/Gram first-jet identity strengthen that canonical AF sector;
 they do not replace K1's executed raw records or alter K1--K8.
+
+## 7ea. The complete coherent history retains the QUERY source after actual Golden growth
+
+3 November 2026. Existing PR #334, native realization / final composition.
+Input cc98cf8d; preserve incoming265ca0c9 and its separate spectral/clock
+preparation source7dz without identifying that v8 price with this raw word.
+Consume the native-word normal source, RAW R8--R11,
+GROWING_CLOCK G1--G17 and the full regular kappa composition. This
+application tests ONE proposed parent substitution: whether closedness,
+retention on the original generated stage carrier, and actual refinement force the unwanted
+QUERY comparison to disappear when endpoint closeness is replaced by
+whole-history closeness. No geometric action or reporter is changed.
+
+The answer on the explicitly stated carrier and history trace norm is negative, even
+when all cross-stage coherences are kept. This does not choose the physical
+comparison topology, disprove the existing Einstein sector, or constitute
+an all-axiom D0 countermodel. It removes this particular proposed shortcut
+to identifying the faithful task graph with the full physical domain.
+
+### HN1. Use the actual native words and initial input
+
+Use exactly the five-wire words of
+[A4D_NATIVE_WORD_NORMAL_SOURCE_2026_10_31.md](A4D_NATIVE_WORD_NORMAL_SOURCE_2026_10_31.md)
+and its executed checker, with the same canonical input, all eight arbitrary
+Spin/oldRIGHT inputs, and the same original G/CX/SourceI alphabet. Write
+
+    p=(sqrt(5)-1)/2, a=sqrt(p), c=p^3,
+    u=2p sqrt(p), c^2+u^2=1,
+    G^n=[[g_n,-s_n],[s_n,g_n]], g_n^2+s_n^2=1.
+
+The two reflection endpoints have scalar cold corners
+
+    c_+=c(1-2s_n^2)-2u g_n s_n,
+    c_-=c(1-2s_n^2)+2u g_n s_n,                 (HN1)
+
+and the centre corner is c. Each prefix has the same actual length
+N0=2n+66 and complete dimension d0=32, with initial rank r=8. Take an
+existing positive recurrence subsequence g_n>0, s_n->0, s_n!=0.
+Positive recurrence is the already owned irrational Golden rotation
+argument; no continuously tunable native angle is inserted.
+
+Before adding any tail, endpoint closeness is NOT history closeness.
+After the common first19 stages, the n-1 matched prefixes j=19+k,
+2<=k<=n, have port factors G^(k-2)|0> and G^k|0>, respectively.
+The first two SourceI calls in the inverse leg act trivially on port0.
+The overlap is cos(2 theta)=c, so the trace distance of these normalized
+rank-eight prefix states is 2u, on ALL protected inputs. Thus the
+clock-dephased history norm has the lower bound
+
+    d_hist,0 >= 2(n-1)u/(2n+66) -> u>0.         (HN2)
+
+This uses a positive fraction of all real stages, not just the isolated
+stage20 response p^2, whose unconditional clock weight would be p^2/N0.
+The price and compiler of a new physical stage-selecting measurement
+are not declared free by this mathematical norm calculation.
+
+### HN2. Append actual paid births; do not erase the prefix
+
+Now append K copies of the ALREADY admitted raw-cylinder operation
+birth;G on a new raw bit. Each copy has two actual stages, canonical
+inclusion Jx=x tensor v with v=G|0>, and exact all-input corner
+J*(I tensor G)J=aI. The old factors, every failure/unused column and
+all earlier stage maps remain. Therefore
+
+    N=N0+2K,
+    D_hist=32[N0+3(2^K-1)],
+    C_+,K=p^(K/2)c_+ I8,  C_-,K=p^(K/2)c_- I8. (HN3)
+
+Here D_hist is the dimension of the ACTUAL direct sum of stage carriers,
+not N times a padded final carrier. At each stage the generated cut has
+rank r=8; hence the global cut has rank rN, whereas G10 reduces the
+feedback determinant to rank r. The complete Hodge heat has 425D_hist
+modes and its real 359D_hist harmonic contribution. These three ranks
+are not identified.
+
+Let A_j,+ and A_j,-:H0->H_j be the actual isometric prefix maps from the
+initial complete carrier, and write P_j,+/-=A_j,+/- P0 A_j,+/-*. The mathematical positive
+normalized history probe is
+
+    rho_+/-=(rN)^(-1) direct_sum_j P_j,+/-.       (HN4)
+
+It is not the Gibbs state, the normalized full identity, or an asserted
+new physically prepared clock state. For every new tail stage, the same
+isometry follows the two different prefix endpoints. Trace norm is
+preserved by this isometry. The exact terminal prepared-state distance is
+
+    d_end=2|sin(4n theta)|
+         =8|g_n s_n(g_n^2-s_n^2)|.             (HN5)
+
+Consequently the whole retained history satisfies the exact identity
+
+    ||rho_+-rho_-||_1
+      =[N0 d_hist,0+2K d_end]/(N0+2K).          (HN6)
+
+All original blocks remain in this expression. Their smaller statistical
+weight at a longer cut is not erasure or a counterterm. In particular,
+
+    ||rho_+-rho_-||_1 <= 2N0/N+8|s_n|.
+
+For the stronger coherent statement define the isometry
+
+    V_+/-=N^(-1/2) direct_sum_j (A_j,+/- i),
+    sigma_+/-=V_+/- V_+/-*/r,
+
+where i is the original rank-eight input embedding. This keeps ALL
+cross-stage coherences. Orthogonality of clock blocks and the genuine
+endpoint operator chord ||W_+-W_-||=4|g_n s_n| give
+
+    ||V_+-V_-||^2 <= 4N0/N+16g_n^2 s_n^2,
+    ||sigma_+-sigma_-||_1
+       <=2 sqrt(4N0/N+16g_n^2 s_n^2).           (HN7)
+
+Clock dephasing sends sigma to rho and contracts trace norm. Choose,
+for example, K>=ceil(N0/|s_n|^4). Equations HN5--HN7 then squeeze BOTH
+history distances to
+
+    ||sigma_+-sigma_-||_1/|s_n| -> 8,
+    ||rho_+-rho_-||_1/|s_n| -> 8.               (HN8)
+
+The same upper estimate applies to the all-input history isometry and
+to its normalized Choi state with a complete reference. It is an estimate
+of existing process maps, not an uncharged Choi preparation in the price.
+This does not make the raw clock operator T close in operator norm, nor
+the maximum over conditional old-prefix responses small. Those are
+explicitly different topologies and require their own physical binding.
+
+### HN3. The entire Book source survives at its actual gain
+
+Set zeta=2^-20 and q_K=zeta p^K. The literal feedback price is
+
+    J_+/-=-r log[1-zeta+q_K c_+/-^2],
+    w_K=r q_K c^2/(1-zeta+q_K c^2)>0.           (HN9)
+
+In particular the baseline remains 1-zeta, NOT 1-q_K. All absolute
+price terms are retained. Put m=c(1-2s_n^2), b=2u g_n s_n,
+d=1-zeta+q_K(m^2+b^2), d0=1-zeta+q_K c^2 and x=2q_K m b/d.
+Direct subtraction of the two logarithms gives exactly
+
+    (J_+-J_-)/(2s_n w_K)
+      =(4u/c)(1-2s_n^2)g_n (d0/d) [atanh(x)/x]. (HN10)
+
+The value of atanh(x)/x at zero is its continuous value1. Since
+0<q_K<=zeta and the denominators stay above1-zeta, HN10 converges
+UNIFORMLY in K to 4u/c. The existing rational lower bound >16 for
+0<|s_n|<=1/16 remains valid after replacing zeta by its effective
+positive coefficient q_K/(1-zeta+q_K); the associated constant part
+of the price is not subtracted.
+
+The full heat is controlled by the OWNED growing-clock G15--G17,
+using only the differing prefix, B_prefix<=64N0. The real late
+birth/G maps and incidence are identical between endpoints. Thus
+
+    |H_+-H_-| <=12N0/[359(N0+3(2^K-1))],
+    |H_+-H_-|/(2|s_n|w_K)
+      <=[4N0/(359 r zeta c^2 |s_n|)](2p)^(-K). (HN11)
+
+This is the raw binary factor2p>1 of R11, not the AF factor4p of
+G19. Choose K also large enough that HN11<=|s_n|. This is a finite,
+effective choice after the known native prefix; it introduces no
+self-compiling controller, gate-count estimate or numerical heat
+truncation. Every such K has its actual native inventory and all
+425D_hist modes. The very large resulting histories are given by
+an explicit finite repetition rule, not claimed to have been run.
+
+For the SAME complete B=H+J, HN8--HN11 prove the normalized finite-contrast limits
+
+    (B_+-B_-)/(2s_n w_K) ->4u/c,
+    |B_+-B_-|/[w_K ||sigma_+-sigma_-||_1] ->u/c>0. (HN12)
+
+The analogous limit holds for rho. Hence the source remains nonzero
+even when normalized by the ACTUAL full coherent history distance,
+not merely by an endpoint angle renamed as a history distance.
+No normalized derivative of B/w_K is taken: w_K is the true central
+gain, held fixed within each price comparison.
+
+### HN4. What this changes in the parent proof
+
+The existing kappa capstone is a genuine complete-source Einstein--two-CAR
+soundness/recovery theorem on its declared full-CAR/ten-sign task graph
+and faithful implementations. It is preserved. The tested substitution
+which FAILS is: every report-changing native comparison is excluded
+merely by retaining the original carrier and all its coherent stage history.
+HN2 detects the unpadded history difference, while the actual paid
+Golden growth HN3--HN12 supplies a small coherent-history sequence with
+a surviving complete normalized source. The very mechanism that makes
+the parent's heat budget converge does not by itself select its task.
+
+An additional exact instruction archive is NOT silently included. If an
+expanded physical state contains permanently readable orthogonal labels
+for the two different complete Gate-lists, its trace distance is2 for
+every K. The present word owner does not supply that added register.
+HN12 therefore concerns precisely its original generated stage history,
+not every conceivable stronger archive of a closed system. Deriving such
+a compulsory instruction record would require including its execution,
+price and the field lifts on that same representation.
+
+A fixed complete initial PROGRAMME is a different restriction. The
+native words above have the same canonical signal/preparation boundary,
+not a proof that one fixed autonomous processor chooses both schedules
+from the same fully specified instruction state. FiniteProtocolClock's
+programmedStep retains its supplied programme but does not derive its
+operation table. The existing17-call processor7dy and internal-programme
+owner already prove that code-off-diagonal preparation sources can
+vanish while the selected branch's hardware source stays nonzero.
+They must not be redescribed as an unresolved preparation calculation.
+
+Nor does placing a reused parameter theta in the past turn its future
+source into the small old-corner source. For identical current reports
+rbar_h(Y,theta), SOURCE(11) gives exactly
+
+    J_theta/Gamma = rbar_theta/(epsilon_h r_f)
+      -c/[4M a_h epsilon_h r_f]
+       Tr(D^-1 A_theta)/Tr(D^-1 A).             (HN13)
+
+Only the second term is suppressed with M. The first is the adjoint
+of actual future uses of the retained instruction. A genuinely fixed
+initial theta has delta theta=0; an independently compared theta keeps
+both terms. Read-only transport in time does not conflate those cases.
+
+The next positive substitution therefore remains an actual same-programme
+map whose field lifts keep the Einstein source and whose OTHER admitted
+rows are solved or descend to it. A stronger prefix-conditioned norm
+would also require bounded field lifts in that SAME norm; HN12 cannot
+be rejected by changing only the QUERY norm. No universal impossibility,
+new selected action, physical-domain equality, exact finite stationary
+word, main acceptance, or GR_closed promotion follows from this packet.
+
+### HN5. Changed-input evidence
+
+The embedded bounded checker below consumes the actual native instruction
+lists and verifies the new retained-history application. Its small finite
+controls do not numerically simulate the enormous K used by HN8/HN11;
+those statements follow from the exact formulas and the full-clock bound.
+The input hashes, actual stages, complete columns and checker receipt are
+retained below. The existing GR/PDE, fullStep and heat proofs are reused,
+not reclassified as newly executed tests.
+
+Checker SHA256: `5844a2b362d40990f8047778f00fe3a71b039701782c29992ef5a32527c4000e`.
+Observed receipt SHA256: `90660d78fcadd46926b9bd328094dacd0e753fb0887470fa434bd2d9f6c0dfe1`.
+
+Extract the next block verbatim as check_paid_coherent_native_history.py
+and run it from the repository root. It imports only the published native
+word constructor, whose actual byte hash is recorded by the receipt.
+No assertion is removed under optimized Python.
+
+```python
+# Standalone same-execution check; only published native word constructor is imported.
+from pathlib import Path
+import importlib.util, hashlib, json
+import sympy as s
+root=Path.cwd()
+src=root/'02_REGISTRY/research/sources/d0_native_tangent_closure_2026-10-31/check_native_tangent.py'
+spec=importlib.util.spec_from_file_location('owned_native_tangent',src); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+a=s.symbols('a'); rel=s.Poly(a**4+a**2-1,a)
+def red(x): return s.Poly(s.expand(x),a).rem(rel).as_expr()
+def apply(M,g):
+    out=s.zeros(32,M.cols); op=g['op']; ws=g['wires']
+    if op=='G':
+        mask=1<<(4-ws[0])
+        for r in range(32):
+            if r&mask: continue
+            for j in range(M.cols):
+                out[r,j]=red(a*M[r,j]-a*a*M[r|mask,j]);out[r|mask,j]=red(a*a*M[r,j]+a*M[r|mask,j])
+    elif op=='CX':
+        cm,tm=1<<(4-ws[0]),1<<(4-ws[1])
+        for r in range(32):out[r^tm if r&cm else r,:]=M[r,:]
+    else:
+        for r in range(32):
+            port=(r>>4)&1; spin=(r>>1)&3
+            to=(r&~6)|((spin^1)<<1) if port else r
+            sign=-1 if port and spin&1 else 1
+            out[to,:]=sign*M[r,:]
+    return out
+
+def expand(word):
+    return [dict(g,repeat=1) for g in word for _ in range(g['repeat'])]
+def run(word,M):
+    for g in expand(word):M=apply(M,g)
+    return M
+checks=[]
+def need(v,name):
+    if not v:raise ArithmeticError(name)
+    checks.append(name)
+def zero(M):return all(red(x)==0 for x in M)
+i=s.zeros(32,8)
+for k in range(8):i[k,k]=1
+born=run(mod.RAW_PREP,i)
+need(zero(run(mod.RAW_PREP_INV,born)-i),'actual owned preparation inverse on all8 arbitrary protected inputs')
+n=66
+plus=expand(mod.RAW_PREP_INV+mod.routed_power(n,True)+mod.QUERY+mod.routed_power(n)+mod.RAW_PREP)
+minus=expand(mod.RAW_PREP_INV+mod.routed_power(n)+mod.QUERY+mod.routed_power(n,True)+mod.RAW_PREP)
+need(len(plus)==len(minus)==2*n+66,'actual equal paid clock198')
+need(plus[:19]==minus[:19] and plus[19]['op']=='SourceI' and minus[19]['op']=='G','actual first divergence at rawstage20')
+P=s.diag(*([0]*16+[1]*16))
+vplus=run(plus[:20],born);vminus=run(minus[:20],born)
+need(zero(vplus.T*P*vplus),'plus stage20 port1 effect zero on all protected inputs')
+need(zero(vminus.T*P*vminus-a**4*s.eye(8)),'minus stage20 port1 effect p² I8 exactly')
+need(zero(vplus.T*vplus-s.eye(8)) and zero(vminus.T*vminus-s.eye(8)),'both complete stage20 input maps remain isometries')
+# Complete actual normalized history readout has an extra clock probability 1/N.
+need(s.Rational(8,8*(2*n+66))==s.Rational(1,198),'unconditional normalized clock test weights marked gap by1/N')
+# Exact noncommutative source application: shared programme also changes every future report.
+z=s.Rational(1,2**20);eta=s.Rational(1,49);q=s.Rational(1,9);er=s.Rational(1,17);b=s.Rational(1,23);c=1-2*q*s.Rational(1,11)
+K=s.Matrix([[s.Rational(1,2),s.Rational(1,7)],[s.Rational(1,10),s.Rational(1,3)]]);Kd=s.Matrix([[s.Rational(1,30),0],[0,0]]);A=K.T*K;Ad=Kd.T*K+K.T*Kd
+need(A*Ad!=Ad*A,'retained prefix source control is genuinely noncommutative')
+vals=[]
+for m in (1,2,5,11):
+    D=(1-z)*s.eye(2)+z*eta*c**(2*m)*A
+    dD=z*eta*(c**(2*m)*Ad-4*m*q*b*c**(2*m-1)*A)
+    direct=-s.trace(D.inv()*dD)
+    gain=4*m*q*er*z*eta*c**(2*m-1)*s.trace(D.inv()*A)
+    old=-c/(4*m*q*er)*s.trace(D.inv()*Ad)/s.trace(D.inv()*A)
+    need(s.cancel(direct/gain-old-b/er)==0,f'shared programme source exact at M{m}')
+    need(s.cancel(b/er)==s.Rational(17,23),f'future source stays17/23 at M{m}')
+    vals.append({'M':m,'future_normalized_source':'17/23','old_normalized_source':str(s.N(old,20))})
+
+def words(n):
+    plus=expand(mod.RAW_PREP_INV+mod.routed_power(n,True)+mod.QUERY+mod.routed_power(n)+mod.RAW_PREP)
+    minus=expand(mod.RAW_PREP_INV+mod.routed_power(n)+mod.QUERY+mod.routed_power(n,True)+mod.RAW_PREP)
+    return plus,minus
+
+c=red(a*a-a**4);u=2*a**3
+need(red(c-a**6)==0,'cos2theta=p³')
+need(red(c*c+u*u-1)==0,'sin2theta=u=2p sqrtp')
+# In the first plus-prefix frame, Pplus-Pminus has this exact 2x2 block.
+Delta=s.Matrix([[u*u,-c*u],[-c*u,-u*u]])
+need(zero(Delta*Delta-u*u*s.eye(2)),'each bulk projector difference has eigenvalues plusminus u')
+need(red(s.trace(Delta))==0,'bulk difference has zero trace')
+for n in (2,3,8):
+    plus,minus=words(n)
+    vp,vm=born,born
+    for j in range(1,n+20):
+        vp=apply(vp,plus[j-1]);vm=apply(vm,minus[j-1])
+        if 21<=j<=19+n:
+            k=j-19
+            ep=i
+            for _ in range(k-2):ep=apply(ep,mod.G)
+            em=apply(apply(ep,mod.G),mod.G)
+            need(zero(vp-ep) and zero(vm-em),f'actual all8-column bulk maps n{n} j{j}')
+            need(zero(vp.T*vm-c*s.eye(8)),f'actual all8-column overlap p³I8 n{n} j{j}')
+
+vx=s.Matrix([a,a*a]); gx=s.Matrix([[a,-a*a],[a*a,a]])
+need(red((vx.T*vx)[0]-1)==0,'exact canonical birth isometry')
+need(red((vx.T*gx*vx)[0]-a)==0,'exact paid birth G corner sqrtp')
+
+mp=mod.mp
+import numpy as np
+def need(v,name):
+    if not v:raise ArithmeticError(name)
+    checks.append(name)
+def arr(M):return np.array(M.tolist(),dtype=float)
+def projector_trace_distance_from_gram(Q):
+    sv=np.linalg.svd(Q,compute_uv=False)
+    return 2*np.sum(np.sqrt(np.maximum(0,1-sv*sv)))/8
+p=float(mod.P);a=np.sqrt(p);u=2*p*a;c=p**3
+v=np.array([[a],[p]]);G=np.array([[a,-p],[p,a]])
+rows=[]
+for n in (2,8,66):
+    plus,minus=words(n);N0=len(plus)
+    born=mod.endpoint(mod.RAW_PREP)*mod.canonical_input();vp=born.copy();vm=born.copy()
+    oldp=[];oldm=[];Qold=np.zeros((8,8));oldmixed=0.
+    for j in range(N0):
+        xp=arr(vp);xm=arr(vm);oldp.append(xp);oldm.append(xm);Qold+=xp.T@xm
+        oldmixed+=np.sum(np.abs(np.linalg.eigvalsh(xp@xp.T-xm@xm.T)))/8
+        vp=mod.apply_gate_left(vp,plus[j]);vm=mod.apply_gate_left(vm,minus[j])
+    ep=arr(vp);em=arr(vm);Qend=ep.T@em
+    gn,sn=mod.pair_power(mod.A,mod.P,n);gn=float(gn);sn=float(sn)
+    dend=8*abs(gn*sn*(1-2*sn*sn))
+    need(np.linalg.norm(Qend-(1-8*gn*gn*sn*sn)*np.eye(8),ord=2)<1e-12,f'all8 endpoint Gram is cos4t I n{n}')
+    for K in (1,2):
+        pp=list(oldp);mm=list(oldm);xp=ep.copy();xm=em.copy();rr=arr(born)
+        for _ in range(K):
+            pp.append(xp);mm.append(xm)
+            xp=np.kron(xp,v);xm=np.kron(xm,v);rr=np.kron(rr,v)
+            pp.append(xp);mm.append(xm)
+            GG=np.kron(np.eye(xp.shape[0]//2),G);xp=GG@xp;xm=GG@xm
+        N=N0+2*K
+        need(sum(X.shape[0] for X in pp)==32*(N0+3*(2**K-1)),f'actual full stage dimension n{n} K{K}')
+        cp=c*(1-2*sn*sn)-2*u*gn*sn;cm=c*(1-2*sn*sn)+2*u*gn*sn
+        need(np.linalg.norm(rr.T@xp-a**K*cp*np.eye(8),ord=2)<2e-12,f'all8 plus coldcorner n{n} K{K}')
+        need(np.linalg.norm(rr.T@xm-a**K*cm*np.eye(8),ord=2)<2e-12,f'all8 minus coldcorner n{n} K{K}')
+        VVplus=np.vstack(pp)/np.sqrt(N);VVminus=np.vstack(mm)/np.sqrt(N)
+        need(np.linalg.norm(VVplus.T@VVplus-np.eye(8))<2e-12 and np.linalg.norm(VVminus.T@VVminus-np.eye(8))<2e-12,f'actual coherent history columns orthonormal n{n} K{K}')
+        Q=VVplus.T@VVminus;formula=(Qold+2*K*Qend)/N
+        need(np.linalg.norm(Q-formula)<2e-12,f'full cross-stage coherence retained by exact8x8 Gram n{n} K{K}')
+        cohd=projector_trace_distance_from_gram(Q)
+        mixed=(oldmixed+2*K*dend)/N
+        upper=2*np.sqrt(4*N0/N+16*gn*gn*sn*sn)
+        need(cohd+2e-12>=mixed,f'clock pinching lower bound n{n} K{K}')
+        need(cohd<=upper+2e-12,f'coherent allstage norm bound n{n} K{K}')
+        # Independent rank16 calculation without ever materializing the huge clock density.
+        combined=np.hstack((VVplus,VVminus));_,RR=np.linalg.qr(combined,mode='reduced')
+        signature=np.diag([1.]*8+[-1.]*8)
+        rank16=RR@signature@RR.T/8
+        direct=float(np.sum(np.abs(np.linalg.eigvalsh(rank16))))
+        need(abs(cohd-direct)<2e-12,f'independent16rank full-density trace norm n{n} K{K}')
+        rows.append({'n':n,'K':K,'N':N,'final_dimension':xp.shape[0],'history_dimension':VVplus.shape[0],'coherent_density_trace_distance':cohd,'dephased_density_trace_distance':mixed,'analytic_upper_bound':upper,'independent_rank16_value':direct})
+# Small step control at a huge paidK uses exact Gram identity, no clockmatrix truncation.
+scaled=[]
+for n in (66,613,2999):
+    gn,sn=mod.pair_power(mod.A,mod.P,n);N0=2*n+66
+    K=int(mp.ceil(N0/abs(sn)**4));N=N0+2*K
+    upper=2*mp.sqrt(mp.mpf(4*N0)/N+16*gn**2*sn**2)
+    lower=mp.mpf(2*K)/N*8*abs(gn*sn*(1-2*sn**2))
+    need(lower<=upper,'consistent exact tail lower/coherent upper')
+    scaled.append({'n':n,'K':str(K),'lower_div_abs_s':mp.nstr(lower/abs(sn),25),'upper_div_abs_s':mp.nstr(upper/abs(sn),25)})
+
+ratios=[]
+for n in (66,613,2999):
+    gn,sn=mod.pair_power(mod.A,mod.P,n)
+    for K in (0,1,10,1000):
+        with mp.workdps(110):
+            q=mod.ZETA*mp.power(mod.P,K);a0=1-mod.ZETA
+            mm=mod.C*(1-2*sn*sn);bb=2*mod.U*gn*sn
+            dd=a0+q*(mm*mm+bb*bb);d0=a0+q*mod.C**2
+            xx=2*q*mm*bb/dd
+            ratio=(4*mod.U/mod.C)*(1-2*sn*sn)*gn*d0/dd*(mp.atanh(xx)/xx)
+            cp=mm-bb; cm=mm+bb
+            price_difference=-mp.log1p(q*(cp*cp-mod.C**2)/d0)+mp.log1p(q*(cm*cm-mod.C**2)/d0)
+            direct_ratio=price_difference/(2*sn*q*mod.C**2/d0)
+            need(abs(ratio-direct_ratio)<mp.mpf('1e-90'),f'independent actual logdet contrast n{n} K{K}')
+            need(abs(ratio-4*mod.U/mod.C)<100*sn*sn,f'uniform true-gain ratio control n{n} K{K}')
+            ratios.append({'n':n,'K':K,'ratio':mp.nstr(ratio,30)})
+
+
+result={'status':'PASS','check_count':len(checks),'checks':checks,
+ 'native_word_input_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),
+ 'exact_bulk_prefix':'j=19+k, 2<=k<=n: G^(k-2)|0> versus G^k|0>, tensor query0 and all8 protected inputs',
+ 'unretained_history_lower':'2(n-1)u/(2n+66), u=2p sqrtp',
+ 'true_retention_corner':'a^K c_pm I8, a=sqrtp; allbinarybirths andG counted',
+ 'coherent_history':'Vpm=N^-1/2 directsum_j(Apm_j i), sigma_pm=Vpm Vpm*/8; allcrossstagecoherencesretained',
+ 'coherent_gram':'Vplus*Vminus=(Qold+2K Qend)/(N0+2K), Qend=(1-8g_n^2s_n^2) I8',
+ 'coherent_norm_upper':'2sqrt(4N0/(N0+2K)+16g_n^2s_n^2)',
+ 'coherent_norm_lower':'(2K/(N0+2K))*8|g_n s_n(1-2s_n^2)|',
+ 'schedule':'K>=N0/|s_n|^4 => both coherent and dephased historynorms / |s_n| ->8',
+ 'true_feedback':'J=-8log(1-zeta+zeta*p^K*c_pm^2), wK=8*zeta*p^K*c^2/(1-zeta+zeta*p^K*c^2)',
+ 'full_price_limit':'After ownedgrowingheatbudget, |Bplus-Bminus|/(wK*||sigma_plus-sigma_minus||1)->u/c>0',
+ 'shared_programme_source':'J_theta/Gamma=r_theta/(epsilon*r_f)-c/(4M*a*epsilon*r_f)*Tr(D^-1 A_theta)/Tr(D^-1 A)',
+ 'noncommuting_programme_controls':vals,
+ 'direct_allstage_controls':rows,'analytic_schedule_bounds':scaled,'feedback_controls':ratios,
+ 'scope':'Unchanged full32 native carrier / all8 protected canonical input columns, actual changingcarriers andallhistoryblocks. Coherenthistory is definedcomparisonprobe; nofreeuniformclockpreparation, physicalnormselection, fullheatmatrixreplay, hugeKexecution orGRclosure. Numericchecks accompany exactalgebraicbounds.'}
+Path(__file__).with_suffix('.json').write_text(json.dumps(result,ensure_ascii=True,indent=2)+'\n',encoding='utf8')
+print(json.dumps(result,ensure_ascii=True,indent=2))
+```
+
+Observed result (normal local run; small matrix controls use floating-point
+linear algebra, exact algebraic claims are proved above):
+
+```json
+{
+  "status": "PASS",
+  "check_count": 120,
+  "checks": [
+    "actual owned preparation inverse on all8 arbitrary protected inputs",
+    "actual equal paid clock198",
+    "actual first divergence at rawstage20",
+    "plus stage20 port1 effect zero on all protected inputs",
+    "minus stage20 port1 effect p\u00b2 I8 exactly",
+    "both complete stage20 input maps remain isometries",
+    "unconditional normalized clock test weights marked gap by1/N",
+    "retained prefix source control is genuinely noncommutative",
+    "shared programme source exact at M1",
+    "future source stays17/23 at M1",
+    "shared programme source exact at M2",
+    "future source stays17/23 at M2",
+    "shared programme source exact at M5",
+    "future source stays17/23 at M5",
+    "shared programme source exact at M11",
+    "future source stays17/23 at M11",
+    "cos2theta=p\u00b3",
+    "sin2theta=u=2p sqrtp",
+    "each bulk projector difference has eigenvalues plusminus u",
+    "bulk difference has zero trace",
+    "actual all8-column bulk maps n2 j21",
+    "actual all8-column overlap p\u00b3I8 n2 j21",
+    "actual all8-column bulk maps n3 j21",
+    "actual all8-column overlap p\u00b3I8 n3 j21",
+    "actual all8-column bulk maps n3 j22",
+    "actual all8-column overlap p\u00b3I8 n3 j22",
+    "actual all8-column bulk maps n8 j21",
+    "actual all8-column overlap p\u00b3I8 n8 j21",
+    "actual all8-column bulk maps n8 j22",
+    "actual all8-column overlap p\u00b3I8 n8 j22",
+    "actual all8-column bulk maps n8 j23",
+    "actual all8-column overlap p\u00b3I8 n8 j23",
+    "actual all8-column bulk maps n8 j24",
+    "actual all8-column overlap p\u00b3I8 n8 j24",
+    "actual all8-column bulk maps n8 j25",
+    "actual all8-column overlap p\u00b3I8 n8 j25",
+    "actual all8-column bulk maps n8 j26",
+    "actual all8-column overlap p\u00b3I8 n8 j26",
+    "actual all8-column bulk maps n8 j27",
+    "actual all8-column overlap p\u00b3I8 n8 j27",
+    "exact canonical birth isometry",
+    "exact paid birth G corner sqrtp",
+    "all8 endpoint Gram is cos4t I n2",
+    "actual full stage dimension n2 K1",
+    "all8 plus coldcorner n2 K1",
+    "all8 minus coldcorner n2 K1",
+    "actual coherent history columns orthonormal n2 K1",
+    "full cross-stage coherence retained by exact8x8 Gram n2 K1",
+    "clock pinching lower bound n2 K1",
+    "coherent allstage norm bound n2 K1",
+    "independent16rank full-density trace norm n2 K1",
+    "actual full stage dimension n2 K2",
+    "all8 plus coldcorner n2 K2",
+    "all8 minus coldcorner n2 K2",
+    "actual coherent history columns orthonormal n2 K2",
+    "full cross-stage coherence retained by exact8x8 Gram n2 K2",
+    "clock pinching lower bound n2 K2",
+    "coherent allstage norm bound n2 K2",
+    "independent16rank full-density trace norm n2 K2",
+    "all8 endpoint Gram is cos4t I n8",
+    "actual full stage dimension n8 K1",
+    "all8 plus coldcorner n8 K1",
+    "all8 minus coldcorner n8 K1",
+    "actual coherent history columns orthonormal n8 K1",
+    "full cross-stage coherence retained by exact8x8 Gram n8 K1",
+    "clock pinching lower bound n8 K1",
+    "coherent allstage norm bound n8 K1",
+    "independent16rank full-density trace norm n8 K1",
+    "actual full stage dimension n8 K2",
+    "all8 plus coldcorner n8 K2",
+    "all8 minus coldcorner n8 K2",
+    "actual coherent history columns orthonormal n8 K2",
+    "full cross-stage coherence retained by exact8x8 Gram n8 K2",
+    "clock pinching lower bound n8 K2",
+    "coherent allstage norm bound n8 K2",
+    "independent16rank full-density trace norm n8 K2",
+    "all8 endpoint Gram is cos4t I n66",
+    "actual full stage dimension n66 K1",
+    "all8 plus coldcorner n66 K1",
+    "all8 minus coldcorner n66 K1",
+    "actual coherent history columns orthonormal n66 K1",
+    "full cross-stage coherence retained by exact8x8 Gram n66 K1",
+    "clock pinching lower bound n66 K1",
+    "coherent allstage norm bound n66 K1",
+    "independent16rank full-density trace norm n66 K1",
+    "actual full stage dimension n66 K2",
+    "all8 plus coldcorner n66 K2",
+    "all8 minus coldcorner n66 K2",
+    "actual coherent history columns orthonormal n66 K2",
+    "full cross-stage coherence retained by exact8x8 Gram n66 K2",
+    "clock pinching lower bound n66 K2",
+    "coherent allstage norm bound n66 K2",
+    "independent16rank full-density trace norm n66 K2",
+    "consistent exact tail lower/coherent upper",
+    "consistent exact tail lower/coherent upper",
+    "consistent exact tail lower/coherent upper",
+    "independent actual logdet contrast n66 K0",
+    "uniform true-gain ratio control n66 K0",
+    "independent actual logdet contrast n66 K1",
+    "uniform true-gain ratio control n66 K1",
+    "independent actual logdet contrast n66 K10",
+    "uniform true-gain ratio control n66 K10",
+    "independent actual logdet contrast n66 K1000",
+    "uniform true-gain ratio control n66 K1000",
+    "independent actual logdet contrast n613 K0",
+    "uniform true-gain ratio control n613 K0",
+    "independent actual logdet contrast n613 K1",
+    "uniform true-gain ratio control n613 K1",
+    "independent actual logdet contrast n613 K10",
+    "uniform true-gain ratio control n613 K10",
+    "independent actual logdet contrast n613 K1000",
+    "uniform true-gain ratio control n613 K1000",
+    "independent actual logdet contrast n2999 K0",
+    "uniform true-gain ratio control n2999 K0",
+    "independent actual logdet contrast n2999 K1",
+    "uniform true-gain ratio control n2999 K1",
+    "independent actual logdet contrast n2999 K10",
+    "uniform true-gain ratio control n2999 K10",
+    "independent actual logdet contrast n2999 K1000",
+    "uniform true-gain ratio control n2999 K1000"
+  ],
+  "native_word_input_sha256": "60a58b99f1212d834a21599909ca445920dc13e53c65e623e0177a520451ff6e",
+  "exact_bulk_prefix": "j=19+k, 2<=k<=n: G^(k-2)|0> versus G^k|0>, tensor query0 and all8 protected inputs",
+  "unretained_history_lower": "2(n-1)u/(2n+66), u=2p sqrtp",
+  "true_retention_corner": "a^K c_pm I8, a=sqrtp; allbinarybirths andG counted",
+  "coherent_history": "Vpm=N^-1/2 directsum_j(Apm_j i), sigma_pm=Vpm Vpm*/8; allcrossstagecoherencesretained",
+  "coherent_gram": "Vplus*Vminus=(Qold+2K Qend)/(N0+2K), Qend=(1-8g_n^2s_n^2) I8",
+  "coherent_norm_upper": "2sqrt(4N0/(N0+2K)+16g_n^2s_n^2)",
+  "coherent_norm_lower": "(2K/(N0+2K))*8|g_n s_n(1-2s_n^2)|",
+  "schedule": "K>=N0/|s_n|^4 => both coherent and dephased historynorms / |s_n| ->8",
+  "true_feedback": "J=-8log(1-zeta+zeta*p^K*c_pm^2), wK=8*zeta*p^K*c^2/(1-zeta+zeta*p^K*c^2)",
+  "full_price_limit": "After ownedgrowingheatbudget, |Bplus-Bminus|/(wK*||sigma_plus-sigma_minus||1)->u/c>0",
+  "shared_programme_source": "J_theta/Gamma=r_theta/(epsilon*r_f)-c/(4M*a*epsilon*r_f)*Tr(D^-1 A_theta)/Tr(D^-1 A)",
+  "noncommuting_programme_controls": [
+    {
+      "M": 1,
+      "future_normalized_source": "17/23",
+      "old_normalized_source": "-3.1907558723250232206"
+    },
+    {
+      "M": 2,
+      "future_normalized_source": "17/23",
+      "old_normalized_source": "-1.5953779361828119344"
+    },
+    {
+      "M": 5,
+      "future_normalized_source": "17/23",
+      "old_normalized_source": "-0.63815117449558796918"
+    },
+    {
+      "M": 11,
+      "future_normalized_source": "17/23",
+      "old_normalized_source": "-0.29006871569683905000"
+    }
+  ],
+  "direct_allstage_controls": [
+    {
+      "n": 2,
+      "K": 1,
+      "N": 72,
+      "final_dimension": 64,
+      "history_dimension": 2336,
+      "coherent_density_trace_distance": 1.9410448710441446,
+      "dephased_density_trace_distance": 1.1961062307965937,
+      "analytic_upper_bound": 4.3501027154126275,
+      "independent_rank16_value": 1.9410448710441437
+    },
+    {
+      "n": 2,
+      "K": 2,
+      "N": 74,
+      "final_dimension": 128,
+      "history_dimension": 2528,
+      "coherent_density_trace_distance": 1.9364292160792487,
+      "dephased_density_trace_distance": 1.2078500174112372,
+      "analytic_upper_bound": 4.301508248768087,
+      "independent_rank16_value": 1.93642921607925
+    },
+    {
+      "n": 8,
+      "K": 1,
+      "N": 84,
+      "final_dimension": 64,
+      "history_dimension": 2720,
+      "coherent_density_trace_distance": 1.9883653515276247,
+      "dephased_density_trace_distance": 1.3114925439028973,
+      "analytic_upper_bound": 5.466463947013213,
+      "independent_rank16_value": 1.9883653515276272
+    },
+    {
+      "n": 8,
+      "K": 2,
+      "N": 86,
+      "final_dimension": 128,
+      "history_dimension": 2912,
+      "coherent_density_trace_distance": 1.9923615689352026,
+      "dephased_density_trace_distance": 1.3099299561699072,
+      "analytic_upper_bound": 5.433138542172105,
+      "independent_rank16_value": 1.9923615689352017
+    },
+    {
+      "n": 66,
+      "K": 1,
+      "N": 200,
+      "final_dimension": 64,
+      "history_dimension": 6432,
+      "coherent_density_trace_distance": 1.8052770567845806,
+      "dephased_density_trace_distance": 1.4932935770690015,
+      "analytic_upper_bound": 3.9808350527182563,
+      "independent_rank16_value": 1.8052770567845808
+    },
+    {
+      "n": 66,
+      "K": 2,
+      "N": 202,
+      "final_dimension": 128,
+      "history_dimension": 6624,
+      "coherent_density_trace_distance": 1.7998641418070718,
+      "dephased_density_trace_distance": 1.4793395039319177,
+      "analytic_upper_bound": 3.9610877336638284,
+      "independent_rank16_value": 1.7998641418070707
+    }
+  ],
+  "analytic_schedule_bounds": [
+    {
+      "n": 66,
+      "K": "16324224755",
+      "lower_div_abs_s": "7.997797382271751511425299",
+      "upper_div_abs_s": "7.999614526239819073748465"
+    },
+    {
+      "n": 613,
+      "K": "48415214129115",
+      "lower_div_abs_s": "7.999896683428132967088772",
+      "upper_div_abs_s": "7.999981919565481516428966"
+    },
+    {
+      "n": 2999,
+      "K": "10602426414007355",
+      "lower_div_abs_s": "7.999984874598586037512709",
+      "upper_div_abs_s": "7.999997353054014389506872"
+    }
+  ],
+  "feedback_controls": [
+    {
+      "n": 66,
+      "K": 0,
+      "ratio": "16.4608349478638697897039706568"
+    },
+    {
+      "n": 66,
+      "K": 1,
+      "ratio": "16.4608349502107142757142188712"
+    },
+    {
+      "n": 66,
+      "K": 10,
+      "ratio": "16.4608349539580334129168174597"
+    },
+    {
+      "n": 66,
+      "K": 1000,
+      "ratio": "16.4608349540079889094512042942"
+    },
+    {
+      "n": 613,
+      "K": 0,
+      "ratio": "16.4651555749284783547992493011"
+    },
+    {
+      "n": 613,
+      "K": 1,
+      "ratio": "16.4651555750385987840263781802"
+    },
+    {
+      "n": 613,
+      "K": 10,
+      "ratio": "16.4651555752144333543044680737"
+    },
+    {
+      "n": 613,
+      "K": 1000,
+      "ratio": "16.465155575216777404261993211"
+    },
+    {
+      "n": 2999,
+      "K": 0,
+      "ratio": "16.4653370874714733630960410117"
+    },
+    {
+      "n": 2999,
+      "K": 1,
+      "ratio": "16.4653370874875950778479237626"
+    },
+    {
+      "n": 2999,
+      "K": 10,
+      "ratio": "16.4653370875133373929242492752"
+    },
+    {
+      "n": 2999,
+      "K": 1000,
+      "ratio": "16.4653370875136805636242164054"
+    }
+  ],
+  "scope": "Unchanged full32 native carrier / all8 protected canonical input columns, actual changingcarriers andallhistoryblocks. Coherenthistory is definedcomparisonprobe; nofreeuniformclockpreparation, physicalnormselection, fullheatmatrixreplay, hugeKexecution orGRclosure. Numericchecks accompany exactalgebraicbounds."
+}
+```

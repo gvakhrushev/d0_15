@@ -19141,3 +19141,48 @@ its different complete reporter is not refuted or silently substituted.
 Real controls, same-task comparisons and full physical price still need
 their actual common domain for unrestricted closure. Goal remains active;
 GR_closed=false. No task/result node or shared governance file is created.
+
+### 3 November 2026 — paid Golden growth and the complete coherent history source
+
+SAME #334 / constitutive/native-programme-v1, native realization and final
+composition. Input cc98cf8d; the previous goal turn published3219c158.
+Fetched and preserved the incoming regular kappa Einstein composition,
+its native compiler and all later internal-clock / independent-source tests.
+Only this existing brief and primary memo7ea are changed.
+
+Parent application: test whether retention of the original generated
+coherent stage history excludes the old native free-QUERY comparison,
+thereby supplying the missing fixed-task-to-physical-domain substitution.
+Original five-wire words, all eight protected input columns, original
+Book H+J, actual rank/cut and same G/CX/SourceI profile are retained.
+
+The unpadded words stay separated on a positive fraction of real prefixes.
+After K genuine birth;G pairs, no old block is erased, but both dephased
+and fully coherent normalized history distances are asymptotic to8|s_n|
+when K>=N0/|s_n|^4. The true cold corner is p^(K/2)c_pm I8. Complete heat
+on425D_hist modes has its OWNED (2p)^(-K) source/gain bound; the absolute
+baseline1-zeta is retained. The actual full normalized price contrast
+converges to4u/c, and divided by the coherent history distance and true
+gain it converges to u/c>0. This is a new common-map application, not
+another geometric ansatz, freshly selected action, or a Frechet theorem
+on an unconstructed infinite-history space.
+
+Scoped route change: normalized complete stage history does not by itself
+remove the native normal. A compulsory orthogonal instruction archive,
+conditional-prefix norm, or a fixed complete initial programme is a
+DIFFERENT hypothesis and requires its actual source and field lifts.
+The same-signal native words do not prove same-complete-programme admission.
+The old shared-programme chain rule retains every future reuse source;
+placing an instruction in the past does not make that term O(1/M).
+
+The positive full-CAR/ten-sign kappa soundness/recovery is preserved.
+Physical task/domain selection, any genuinely additional native rows,
+and the original exact-finite/raw216 obligations remain open. No new
+queue/result/acceptance row, Ready state, merge or GR_closed promotion.
+
+Changed verification: one standalone checker consumes the published native
+word constructor and tests the actual prefix/cold maps, changing carriers,
+all-stage coherent Gram, independent rank16 density norm, exact Golden
+birth and noncommuting inherited-programme source. The analytic large-K
+schedule is NOT represented as a fully executed huge native programme.
+Checker and observed receipt are embedded in primary7ea with SHA256.
