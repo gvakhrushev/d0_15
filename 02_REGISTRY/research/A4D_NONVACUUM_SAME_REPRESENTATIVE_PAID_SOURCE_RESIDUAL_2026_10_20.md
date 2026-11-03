@@ -121420,6 +121420,638 @@ print(json.dumps(result,sort_keys=True,indent=2))
 }
 ```
 
+## 7eq. Bind a prospective branch ledger to the actual coherent task: exact rigidity, a sharp source budget and one paid native recording probe
+
+3 November 2026. Existing #334, input c4a18b0c10ff9b0b25d918114caab2dc67796a46.
+Phase: native realization / final composition. Consumer: the one actual
+return/record/Cost-Info substitution in
+[the current source gate](A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md),
+§6, and obligations B–D of the
+[short closure contract](A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md).
+This is a source-binding application, not a new source programme or root.
+
+### 7eq.A. The exact missing map and the result consumed
+
+The existing BOOK_SOURCE_BINDING §5.1 consumes ACTUAL branch operators,
+net prices and work. H.1 supplies instead one coherent seven-call writer,
+all its inverse calls and complete marked isometries. Naming its summands
+does not turn them into an already registered classical alphabet. The old
+§7bt computed this failure for one monitored stopped-sign instrument;
+the present step applies it structurally to the CURRENT complete H.1
+interface and gives the quantitative source-transport budget that a changed
+recording process must meet. It does not repeat §7bt's word or pricing rule.
+
+Consume H.1's actual free SAM/code input, its complete cross-branch maps,
+§7en's faithful all-input task fibre, and §7eo.CD1/CD4. Do not enlarge these
+into a claim that M1 forces the whole task or every tomographic test.
+The parent substitution is precise: an additional ledger cannot acquire
+input-dependent branch information while remaining an exact refinement of
+that same complete coherent map. Approximate preservation has a sharp
+square-root bound; AFTER the actual source gain and comparison lift it can
+be sufficient or insufficient. A price/work derivative is never covered
+merely by a bound on the outcome probabilities.
+
+### 7eq.B. Exact all-input refinement forces an input-independent record
+
+Let V:H_in→H_out be the actual normalized marked isometry. H_in includes
+the designated coherent SAM input and every protected/unknown input column;
+H_out includes the task's original WORK, failed branches and retained records.
+An added finite outcome register has an actual instrument {K_(ω,j)}, where
+j includes every unobserved residual column. Exact faithful extension means
+
+    Σ_(ω,j) K_(ω,j) ρ K_(ω,j)* = V ρ V* for EVERY ρ.       (EQ1)
+
+No postselected success normalization or diagonal-only test replaces EQ1.
+Its Choi identity is
+
+    Σ_(ω,j) |K_(ω,j)⟩⟨K_(ω,j)| = |V⟩⟨V|.
+
+For each vector orthogonal to |V⟩, positivity makes every summand's squared
+overlap zero. Thus every K_(ω,j)=c_(ω,j)V, and trace preservation gives
+Σ|c_(ω,j)|²=1. Consequently
+
+    q_ω(ρ)=Σ_j|c_(ω,j)|²,     𝓘_ω(ρ)=q_ω VρV*.          (EQ2)
+
+The record is independent of the input, also when it is entangled with an
+untouched oldRIGHT. Equivalently a pure dilation is V⊗|r⟩ on the entire
+input space. This proof neither assumes a preferred record basis nor
+ignores the failed events. It also covers a multi-stage stored history:
+apply EQ1 to its complete instrument, with every history in ω.
+
+For ACTUAL, fixed net branch prices s_ω=C_ω−I_ω, their effect is
+
+    G=Σ_(ω,j) s_ω K_(ω,j)*K_(ω,j)=g I,
+    g=Σ_ω s_ω q_ω.                                      (EQ3)
+
+On every normalized input variation Tr δρ=0, Tr(δρ G)=0. In particular
+the new ledger supplies no field contrast on the fixed coherent catalogue
+when the physical field/control variation is carried by that input.
+Any functional of the record state alone is likewise input-independent;
+this does not select that functional as physical Info.
+
+There are essential quantifiers. At separate externally parameterized
+executions V(Y), EQ1 alone permits c_(ω,j)(Y): the extra apparatus may have
+been changed. To apply EQ2 across field names b in ONE H.1 catalogue, the
+same coherent map Σ_b |b⟩⟨b|⊗V_b must be retained, including its cross tests.
+It then forces the same record vector for all b. Actual descriptor/loader
+changes outside that common input remain their own price/source rows.
+
+If c,s or the work W themselves vary with an independently admitted
+control n, the full formula remains
+
+    d S̄ = dg+dW,
+    dg=Σ_ω(q_ω ds_ω+s_ω dq_ω).                            (EQ4)
+
+These terms are not zero by EQ1. Nor does equality of reduced channels
+identify two absolute Book prices: extra births, stages, cuts and scene
+modes require the actual whole-clock calculation or §7en's precisely
+stated transport. EQ3 is a theorem about the bound ledger component, not
+a claim that every physical record extension is free or source-neutral.
+
+### 7eq.C. A sharp bound in the actual comparison and field norms
+
+The approximate version relevant to the controlled H.1 catalogue has a
+particularly transparent hypothesis. Suppose the actual nondemolition
+marker preserves each complete basis-output vector but retains a record:
+
+    W|b⟩=V|b⟩⊗|r_b⟩,   ⟨r_b,r_b⟩=1,
+    Φ(|b⟩⟨c|)=⟨r_c,r_b⟩ V|b⟩⟨c|V*.                   (EQ5)
+
+Define its measured coherence defect
+ε_bc=|1−⟨r_c,r_b⟩| and ε=max_(b,c) ε_bc. If ε≤1, the trace distance of
+the two record states is at most
+
+    TV(q_b,q_c) ≤ sqrt(1−|⟨r_c,r_b⟩|²)
+                ≤ sqrt(2ε−ε²)=:ω(ε).                   (EQ6)
+
+For ε>1 use the trivial bound 1. The first inequality follows by
+diagonalizing the difference of the two rank-one projectors on their
+two-dimensional span and applying the actual record measurement. The
+second uses |⟨r_c,r_b⟩|≥1−ε. If basis outputs themselves leak or change,
+EQ5 is not established; their additional error must first be transported.
+An arbitrary small decoder error is not called ε in this statement.
+
+Let the same actual scalar record fee s_ω have finite oscillation
+M=max s_ω−min s_ω. Negative net prices are allowed. Its conditional means
+g_b have oscillation at most M ω(ε). The induced effect on the catalogue
+is G=diag(g_b), hence every trace-zero input tangent satisfies
+
+    |Tr(δρ G)| ≤ (M/2) ω(ε) ||δρ||_1.                    (EQ7)
+
+Proof: subtract the midpoint of G's extreme eigenvalues and use trace
+duality. For the actual physical input map ρ(Y) this gives
+
+    ||E_record||_(V_h,*) ≤ (M/2)ω(ε)
+                             ||Dρ||_(V_h→trace-class).   (EQ8)
+
+All quantities are those of the SAME input map, not a cost-free code-edit
+norm. If the parent's source uses gain Γ_h>0 and right lift R_h, a
+sufficient vanishing-remainder condition for this particular component is
+
+    ||R_h|| M_h ω(ε_h) ||Dρ_h|| / (2Γ_h) → 0.            (EQ9)
+
+For actual central comparisons at ±t_i with the SAME recording module
+and same fee table, normalized input states give the alternative bound
+
+    |δℓ_i| ≤ M_h ω(ε_h)/(2|t_i|Γ_h).                    (EQ10)
+
+If ℓ(v)=Σ_i (J_h v)_i ℓ_i, use the actual
+||J_h||_(V_h→l1) times the largest right side; multiply by ||R_h|| when
+consuming contract B. This is not differentiation of B/Γ. In particular,
+ε_h→0 alone need not control the source; a convenient sufficient schedule
+is sqrt(ε_h) M_h ||R_h|| ||J_h||/(|t_min,h|Γ_h)→0.
+
+If prices or work differ between the two physical endpoints, retain the
+additional numerator exactly:
+
+    ΔS̄ = Σ_ω s_(ω,−)(q_(ω,+)−q_(ω,−))
+              +Σ_ω q_(ω,+)(s_(ω,+)−s_(ω,−)) + ΔW.       (EQ11)
+
+Only the first term is bounded by EQ6. State-dependent Info, an unbounded
+report language, a stopping tail, or a different clock cannot be hidden in
+M or dropped. The reference bound requires a finite actual M, or a separate
+proved integrable tail. No entropy convention is selected in EQ6–EQ11.
+
+The square root is sharp already for two pure record states
+cos θ|0⟩±sin θ|1⟩. Their overlap is cos 2θ and an optimal binary record
+test has TV=|sin 2θ|=sqrt(2ε−ε²). A larger fee or a shrinking Γ,t can
+therefore leave a finite source despite vanishing record disturbance.
+This is a structural source estimate, not another catalogue of fields.
+
+### 7eq.D. One actual Golden/CX probe attains the bound
+
+Keep the prior literal address convention: helper0, opaque source Spin1/2,
+existing mutable DATA/CODE3, immutable oldRIGHT4. Append record5 by the
+canonical birth v=(a,p), p=a², a⁴+a²−1=0, 0<a<1, and execute ONE CX(3,5).
+No Spin coordinate is addressed individually. This is a legal native probe;
+it is not silently inserted into H.1's faithful task. Native legality does
+not prove its physical task admission.
+
+On the CODE bit its exact branch operators for a record-basis test are
+
+    K_0=diag(a,p),  K_1=diag(p,a),
+    Φ([[1−r,u],[u*,r]])=[[1−r,s u],[s u*,r]],
+    s=2ap,  d=p−p²>0,  s²+d²=1,
+    q_1=p²+d r.                                         (EQ12)
+
+Every K is tensor identity on ALL remaining input factors. The record
+states v and Xv have overlap s; their difference is diag(d,−d). Thus the
+computational record test attains TV=d=sqrt(2ε−ε²), ε=1−s. The marker
+preserves the two classical labels but fails the full coherent interface.
+For an initially entangled CODE/oldRIGHT pair the joint off-diagonal entry
+changes from 1/2 to s/2 although no oldRIGHT wire was touched. Preservation
+of oldRIGHT's marginal alone would not repair that lost comparison.
+
+The normalized input direction ρ(θ)=exp(θL) vv* exp(−θL),
+L=[[0,−1],[1,0]], has the exact recorded-bit response
+
+    D_θ q_1|0=s d=4a−6a³ ≠0.                            (EQ13)
+
+This is an ordinary matrix/input source; no continuously tunable native
+birth is inferred. For an actual fixed branch-price table its effect is
+s_0 I+(s_1−s_0)K_1*K_1. Its eigenvalue difference is d(s_1−s_0).
+On the full free-input space it is scalar IF AND ONLY IF s_1=s_0.
+Therefore, if a proposed branch-price binding to an input-independent
+master also has input-independent work, it MUST pay/cancel this real
+preparation row; assigning different net prices and ignoring the input
+equation does not produce the same price. This necessary condition does
+not invent the physical table or prove that work is independent.
+
+The FULL specified Book03 price of THIS SAME COHERENT WORD is explicit.
+There is one birth and one CX: N=2, stage dimensions32,64, D_clock=96,
+40,800 Hodge modes including34,464 harmonic modes. The canonical physical
+input rank is32. The cold compression has16 copies each of1 and s, so
+
+    J=−16 log(1−z d²).                                  (EQ14)
+
+In the born basis (v,v_perp), the two endpoint blocks are I_2 and
+[[s,d],[d,−s]]. Their genuine growing-clock characteristic polynomials are
+
+    (λ−1)²(λ+1),    (λ−1)[λ²+(1+s)λ+1],                 (EQ15)
+
+each with multiplicity16. Thus, writing Z_scene(x) for the ORIGINAL
+33-dimensional K(9,11,13) heat at temporal real part x,
+
+    H=β^−1 log{359·96+32 Σ_(x in X) Z_scene(x)},
+    X=(1,1,−1,1,−(1+s)/2,−(1+s)/2).                     (EQ16)
+
+No unprepared work columns, failures or zero modes have been discarded.
+The numerical receipt evaluates this full H+J, not a selected active-mode
+price. EQ14–EQ16 are independent of a density ρ on the fixed full input
+cut, while EQ13 is not. A hypothetical reported-bit fee is therefore not
+automatically that master. A future physical measurement or variable-length
+report writer would add its real stages; report metadata does not execute it.
+The example selects neither a Shannon term nor an additional R in H+J.
+
+There is also a constructive faithful completion with its price retained:
+execute a SECOND real CX(3,5). The endpoint is exactly I on all64 columns,
+and the final record is v independent of the input. Its Kraus operators
+are aI and pI, as EQ2 requires. The actual two-call history still exists;
+an intermediate prefix test has not become a permanently measured final
+outcome. Such a measurement would be another process.
+
+This completion has N=3, stage dimensions32,64,64, D_clock=160,
+68,000 Hodge modes and57,440 harmonic modes. Its full cold return is I,
+so J=0. The temporal polynomial is (λ³−1)(λ²−1), with multiplicity32;
+its exact full heat is
+
+    H_undo=β^−1 log{359·160+64[2Z_scene(1)
+                                  +2Z_scene(−1/2)+Z_scene(−1)]}. (EQ17)
+
+Thus recovering the original coherent map has a concrete paid
+implementation, but restores an input-independent final record and has
+its OWN absolute price. It does not keep the first marker's information
+and the second word's undisturbed channel at the first word's clock cost.
+
+### 7eq.E. What this changes in the parent argument
+
+The previously unspecified conversion “coherent H.1 histories → an extra
+input-sensitive branch ledger, with the original complete process unchanged”
+is now excluded by EQ1–EQ3, including every coherent SAM/code column.
+For an actually changed nondemolition recording process, EQ8–EQ11 give
+the quantitative contribution and the exact price/work terms still needed.
+The literal probe shows that the square-root loss and preparation row are
+real native effects, not artifacts of an invented continuous instrument.
+
+This closes that particular hidden-record interpretation, not gate B.
+A positive independent source must come from the actually changed complete
+execution (with a proved transport), or from a derived task constraint and
+its reaction. An independent price/control dependence in EQ4/EQ11 still
+needs its original physical binding and all its Euler rows. H.1's chosen
+task, READY/reference/visibility guards and scene/clock admission remain
+open where the contract says they are open. No Einstein match, new root,
+physical necessity of an Info algebra, or unrestricted X_N is asserted.
+
+`GR_closed=false`; no claim, assembly acceptance, Ready/merge or task
+retirement is promoted. The existing κ soundness and recovery remain at
+their original H+J/fixed-graph scope. The active goal is unchanged.
+
+### 7eq.F. Pinned narrow reproduction
+
+The embedded checker verifies the complete Kraus and all-column native
+maps, hostile diagonal-only control, exact sharp bound, retained-reference
+disturbance, actual input reaction, original growing-clock polynomials,
+all mode counts and one full-price numerical diagnostic. The general
+refinement/source theorems are proved above; the numeric heat value is not
+an interval certificate. Normal and optimized warning-as-error runs have
+the same receipt. Source and receipt pins follow the embedded material.
+
+<!-- 7eq COHERENT RECORD CHECKER -->
+```python
+"""Faithful record binding, sharp source budget, and ONE literal native probe.
+
+No entropy, extra branch fee, or physical task admission is selected here.
+The original full H+J of the probe is evaluated, including all clock modes.
+Run from the repository root; optional --out emits its native word.
+"""
+from pathlib import Path
+import argparse
+import hashlib
+import importlib.util
+import json
+import sys
+import numpy as np
+import sympy as S
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--out', type=Path)
+args = parser.parse_args()
+root = Path.cwd()
+checks = []
+
+def require(ok, name):
+    if not bool(ok):
+        raise ArithmeticError(name)
+    checks.append(name)
+
+a = S.Symbol('a', positive=True)
+p = a*a
+minimal = a**4+a*a-1
+
+def red(x):
+    n, d = S.fraction(S.cancel(x))
+    n, d = S.rem(n, minimal, a), S.rem(d, minimal, a)
+    if d == 0:
+        raise ArithmeticError('zero Golden denominator')
+    return S.rem(S.expand(n*S.invert(d, minimal, a)), minimal, a)
+
+def mat(x):
+    return S.Matrix(x).applyfunc(red)
+
+def equal(x, y, name):
+    if isinstance(x, S.MatrixBase) or isinstance(y, S.MatrixBase):
+        require(all(red(t) == 0 for t in S.Matrix(x)-S.Matrix(y)), name)
+    else:
+        require(red(x-y) == 0, name)
+
+v = S.Matrix([a, p])
+X = S.Matrix([[0, 1], [1, 0]])
+L = S.Matrix([[0, -1], [1, 0]])
+s = 2*a*p
+d = red(p-p*p)
+eps = 1-s
+equal((v.T*v)[0], 1, 'actual Born record is normalized')
+equal((v.T*X*v)[0], s, 'record overlap is the actual Golden overlap')
+equal(s*s+d*d, 1, 'exact sharp information-disturbance identity')
+equal(d*d, 2*eps-eps*eps, 'Golden computational readout saturates the sharp bound')
+equal(S.trace(v*v.T-X*v*v.T*X), 0, 'record-state difference is traceless')
+equal(v*v.T-X*v*v.T*X, S.diag(d, -d), 'actual trace-distance eigenvalues')
+
+# A same-channel refinement has a rank-one Choi matrix. This exact positive
+# example and a hostile diagonal-only test exercise the proof's distinction.
+V = S.kronecker_product(S.eye(2), v)
+flat = lambda M: S.Matrix(list(M))
+kraus = [S.Rational(3, 5)*V, S.Rational(4, 5)*V]
+choi = sum((flat(K)*flat(K).T for K in kraus), S.zeros(8))
+equal(choi, flat(V)*flat(V).T, 'faithful outcome refinement retains the complete Choi matrix')
+require(choi.rank() == 1, 'faithful channel has Choi rank one')
+r, u = S.symbols('r u', real=True)
+rho = S.Matrix([[1-r, u], [u, r]])
+for j, K in enumerate(kraus):
+    equal(S.trace(K*rho*K.T), (S.Rational(3,5), S.Rational(4,5))[j]**2,
+          'faithful outcome probability is input-independent '+str(j))
+P0, P1 = S.diag(1,0), S.diag(0,1)
+pinch = lambda M: P0*M*P0+P1*M*P1
+equal(pinch(P0), P0, 'diagonal-only hostile control preserves label zero')
+equal(pinch(P1), P1, 'diagonal-only hostile control preserves label one')
+off = S.Matrix([[0,1],[0,0]])
+equal(pinch(off), S.zeros(2), 'diagonal-only hostile control loses the required cross test')
+require((flat(P0)*flat(P0).T+flat(P1)*flat(P1).T).rank() == 2,
+        'diagonal fidelity cannot be substituted for full channel fidelity')
+
+# A literal native probe on all columns, with source Spin opaque and oldRIGHT
+# untouched. A canonical birth is represented separately from the gate grammar.
+native_path = root/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+require(hashlib.sha256(native_path.read_bytes()).hexdigest() ==
+        '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c',
+        'original native grammar pin')
+spec = importlib.util.spec_from_file_location('coherent_record_native', native_path)
+native = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = native
+spec.loader.exec_module(native)
+ex = native.Execution(6, (), (4,), (native.Gate('CX',(3,5)),),
+                      native.G_CX_SOURCE_I, 0, (1,2))
+native.validate_execution(ex, max_qubits=6, max_expanded_stages=1)
+inv = native.inventory(ex, max_qubits=6, max_expanded_stages=1)
+require((inv.gate_count,inv.g_count,inv.cx_count,inv.source_i_count)==(1,0,1,0),
+        'actual word contains precisely one paid CX call')
+U = native.word_matrix(ex, max_qubits=6, max_expanded_stages=1)
+expected = S.zeros(64)
+for col in range(64):
+    row = col ^ (1 if ((col >> 2) & 1) else 0)
+    expected[row,col] = 1
+equal(U, expected, 'all 64 columns including arbitrary Spin and oldRIGHT inputs')
+equal(U.T*U, S.eye(64), 'the full word is unitary, without a reset or postselection')
+J = S.kronecker_product(S.eye(32), v)
+W = U*J
+K = [W[bit::2,:] for bit in (0,1)]
+k0, k1 = S.diag(a,p), S.diag(p,a)
+for bit, kb in enumerate((k0,k1)):
+    equal(K[bit], S.kronecker_product(S.eye(8),kb,S.eye(2)),
+          'actual branch operator on every protected column '+str(bit))
+equal(sum((kb.T*kb for kb in K),S.zeros(32)), S.eye(32), 'complete two-outcome instrument')
+channel = lambda M: mat(k0*M*k0.T+k1*M*k1.T)
+equal(channel(rho), S.Matrix([[1-r,s*u],[s*u,r]]), 'native marker preserves populations and changes coherence')
+equal(S.trace(k1*rho*k1.T), red(p*p+d*r), 'record outcome depends on real input population')
+E1 = mat(k1.T*k1)
+equal(E1, S.diag(red(p*p),p), 'record effect is non-scalar')
+rho0 = mat(v*v.T)
+drho = mat(L*rho0-rho0*L)
+equal(S.trace(drho), 0, 'independent input tangent preserves normalization')
+input_row = red(S.trace(drho*E1))
+equal(input_row, s*d, 'exact nonzero input source of the recorded-bit moment')
+require(input_row != 0, 'input reaction cannot be discarded')
+s0,s1 = S.symbols('s0 s1',real=True)
+payoff = mat(s0*k0.T*k0+s1*k1.T*k1)
+equal(payoff[1,1]-payoff[0,0], d*(s1-s0), 'scalar paid effect requires equal net branch prices')
+
+# The real inverse is another paid CX. It retains the two-call history, but
+# leaves no input-sensitive final record. This is not deletion of a measured
+# history and it does not have the one-call clock price.
+undo = native.Execution(6, (), (4,), ex.gates+ex.gates,
+                        native.G_CX_SOURCE_I, 0, (1,2))
+native.validate_execution(undo, max_qubits=6, max_expanded_stages=2)
+Uundo = native.word_matrix(undo, max_qubits=6, max_expanded_stages=2)
+equal(Uundo,S.eye(64),'actually executed second CX restores every input column')
+Wundo = Uundo*J
+for bit,coef in enumerate((a,p)):
+    equal(Wundo[bit::2,:],coef*S.eye(32),'paid undo has an input-independent record '+str(bit))
+equal(J.T*Uundo*J,S.eye(32),'paid undo has exactly zero feedback')
+
+bell = S.Matrix([1,0,0,1])/S.sqrt(2)
+bellrho = bell*bell.T
+bellout = sum((S.kronecker_product(kb,S.eye(2))*bellrho*
+               S.kronecker_product(kb.T,S.eye(2)) for kb in (k0,k1)),S.zeros(4))
+equal(bellout[0,3], s/2, 'untouched oldRIGHT still detects changed joint coherence')
+equal(bellout-bellrho, S.Matrix([[0,0,0,-eps/2],[0,0,0,0],
+                                [0,0,0,0],[-eps/2,0,0,0]]),
+      'complete retained-reference disturbance is explicit')
+
+# The true canonical cold return of this SAME coherent word, not a measured
+# or dephased word. A record-basis test is not an extra emitted report stage.
+C = mat(J.T*U*J)
+equal(C, S.kronecker_product(S.eye(8),S.diag(1,s),S.eye(2)),
+      'same-history cold return has rank16 sectors one and s')
+z = S.Symbol('z',positive=True)
+den = red(1-z+z*s*s)
+equal(den, 1-z*d*d, 'original feedback denominator retains all escape')
+lam,ss,dd = S.symbols('lam ss dd',real=True)
+def clock3(endpoint):
+    T = S.zeros(3)
+    T[1,0] = 1
+    R = S.Matrix([[1,0],[0,0],[0,1]])
+    T[:,1:3] += R*endpoint
+    return T
+T0 = clock3(S.eye(2))
+T1 = clock3(S.Matrix([[ss,dd],[dd,-ss]]))
+equal(T0.T*T0, S.eye(3), 'identity sector uses its genuine three-dimensional growing clock')
+equal(T1.subs({ss:s,dd:d}).T*T1.subs({ss:s,dd:d}), S.eye(3),
+      'recorded sector uses its genuine growing clock')
+require(S.expand((lam*S.eye(3)-T0).det()-(lam-1)**2*(lam+1)) == 0,
+        'identity sector full characteristic polynomial')
+char1 = (lam*S.eye(3)-T1).det()
+char1 = S.rem(S.Poly(char1,dd),S.Poly(dd*dd+ss*ss-1,dd)).as_expr()
+require(S.expand(char1-(lam-1)*(lam*lam+(1+ss)*lam+1)) == 0,
+        'recorded sector full characteristic polynomial')
+D = 32+64
+require((D,425*D,359*D)==(96,40800,34464), 'all actual clock/Hodge/harmonic modes counted')
+Tundo = S.zeros(5)
+Tundo[1,0]=1
+Tundo[3:5,1:3]=S.eye(2)
+Tundo[0,3]=1
+Tundo[2,4]=1
+require(S.expand((lam*S.eye(5)-Tundo).det()-(lam**3-1)*(lam**2-1))==0,
+        'paid undo retains original and newborn clock ages three and two')
+
+# A numerical diagnostic of the entire specified master, not a source bound.
+av = float(S.sqrt((S.sqrt(5)-1)/2))
+sv, dv = float(s.subs(a,av)),float(d.subs(a,av))
+beta,zv = 2*av**4,2.**-20
+parts = np.array([9.,11.,13.])
+coeff = 1/(35-parts)
+def scene_heat(x):
+    small = np.diag(1-2*x*coeff)
+    for i in range(3):
+        for j in range(i):
+            small[i,j]=small[j,i]=-np.sqrt(parts[i]*parts[j]*coeff[i]*coeff[j])
+    return float(np.exp(-beta*np.linalg.eigvalsh(small)).sum()
+                 +((parts-1)*np.exp(-beta*(1-2*x*coeff))).sum())
+temporal_re = [1.,1.,-1.,1.,-(1+sv)/2,-(1+sv)/2]
+Zheat = 359*D+32*sum(scene_heat(x) for x in temporal_re)
+heat = np.log(Zheat)/beta
+ret = -16*np.log1p(-zv*dv*dv)
+require(Zheat>359*D and ret>0, 'complete price diagnostic includes positive return and every harmonic mode')
+Dundo = 32+64+64
+undo_heat = np.log(359*Dundo+64*sum(scene_heat(x) for x in [1.,-.5,-.5,1.,-1.]))/beta
+require(Dundo==160 and undo_heat>heat+ret,'paid undo is not assigned the shorter-clock price')
+
+# Sharpness of the sqrt error and of the input-source dual norm, not merely
+# a numerical inequality or a claimed physical implementation of every angle.
+b,c = S.symbols('b c',real=True)
+rplus,rminus = S.Matrix([b,c]),S.Matrix([b,-c])
+delta = rplus*rplus.T-rminus*rminus.T
+require(delta == S.Matrix([[0,2*b*c],[2*b*c,0]]), 'sharp two-record pure-state family')
+require(S.expand((2*b*c)**2+(b*b-c*c)**2-(b*b+c*c)**2)==0,
+        'square-root estimate has exact attainable boundary')
+glo,ghi = S.symbols('glo ghi',real=True)
+equal(S.trace(S.diag(-1,1)*S.diag(glo,ghi)), ghi-glo,
+      'oscillation/2 times trace norm bound is sharp')
+
+word = {'record':native.execution_to_dict(ex),'record_then_uncompute':native.execution_to_dict(undo),
+        'birth_schedule':{'initial_wires':[0,1,2,3,4],
+                          'canonical_record_birth':5,'birth_before_gate':0,
+                          'canonical_vector':['a','a^2']}}
+word_bytes = (json.dumps(word,sort_keys=True,indent=2)+'\n').encode()
+result = {'status':'PASS','checks':len(checks),
+          'native_word_sha256':hashlib.sha256(word_bytes).hexdigest(),
+          'sharp_native_overlap':'2*a^3',
+          'sharp_native_record_TV':str(d),
+          'native_bit_input_source':str(input_row),
+          'full_feedback':'-16*log(1-z*(p-p^2)^2)',
+          'history':{'births':1,'calls':1,'N':2,'stage_dimensions':[32,64],
+                     'clock_dimension':D,'physical_input_rank':32,
+                     'full_Hodge_modes':425*D,'harmonic_modes':359*D},
+          'full_price_diagnostic':{'heat':format(heat,'.15g'),
+                                   'feedback':format(ret,'.15g'),
+                                   'master':format(heat+ret,'.15g')},
+          'paid_undo':{'N':3,'clock_dimension':Dundo,'full_Hodge_modes':425*Dundo,
+                       'harmonic_modes':359*Dundo,'feedback':0,
+                       'full_price_diagnostic':format(undo_heat,'.15g')},
+          'scope':{'new_entropy_or_price_selected':False,
+                   'extra_report_emission_claimed':False,
+                   'native_probe_preserves_full_original_channel':False,
+                   'one_probe_and_structural_transport_not_census':True,
+                   'physical_task_admission_proved':False,'GR_closed':False}}
+if args.out:
+    args.out.mkdir(parents=True,exist_ok=True)
+    (args.out/'native_record_probe.json').write_bytes(word_bytes)
+print(json.dumps(result,sort_keys=True,indent=2))
+```
+
+<!-- 7eq COHERENT RECORD RESULT -->
+```json
+{
+  "checks": 47,
+  "full_feedback": "-16*log(1-z*(p-p^2)^2)",
+  "full_price_diagnostic": {
+    "feedback": "8.50343192775211e-07",
+    "heat": "13.7853173021684",
+    "master": "13.7853181525116"
+  },
+  "history": {
+    "N": 2,
+    "births": 1,
+    "calls": 1,
+    "clock_dimension": 96,
+    "full_Hodge_modes": 40800,
+    "harmonic_modes": 34464,
+    "physical_input_rank": 32,
+    "stage_dimensions": [
+      32,
+      64
+    ]
+  },
+  "native_bit_input_source": "-6*a**3 + 4*a",
+  "native_word_sha256": "bbd2a31205d428a1e8ef04b2f694327ba121c09e849a4ecc10c4be0e5085f4a7",
+  "paid_undo": {
+    "N": 3,
+    "clock_dimension": 160,
+    "feedback": 0,
+    "full_Hodge_modes": 68000,
+    "full_price_diagnostic": "14.4539019092628",
+    "harmonic_modes": 57440
+  },
+  "scope": {
+    "GR_closed": false,
+    "extra_report_emission_claimed": false,
+    "native_probe_preserves_full_original_channel": false,
+    "new_entropy_or_price_selected": false,
+    "one_probe_and_structural_transport_not_census": true,
+    "physical_task_admission_proved": false
+  },
+  "sharp_native_overlap": "2*a^3",
+  "sharp_native_record_TV": "2*a**2 - 1",
+  "status": "PASS"
+}
+```
+
+<!-- 7eq COHERENT RECORD INPUTS -->
+```json
+{
+  "base_commit": "c4a18b0c10ff9b0b25d918114caab2dc67796a46",
+  "checker_sha256": "d7217233bc91a6c604df85d6da4d7719e22a15456d07b9841058901e5193c0ea",
+  "inputs": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256_at_base": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md": {
+      "git_blob": "d003e5fe9789a211c6240891131be1bf03dbb3dc",
+      "sha256_at_base": "665fcbc48d64e4e6fc4bf5fcc764845d86012a42683f5d3188b47158cda5a2b9"
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "git_blob": "c1a6d3a3db3bb9517d99ee8c6bff9603160ab54c",
+      "sha256_at_base": "f38f1126783a013c347bdf3af4b0ec10df589732a4950679a42318aa5cc78108"
+    },
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": {
+      "git_blob": "f0f74d206dbf79913f9aa95f0e53177de6d12ab5",
+      "sha256_at_base": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469"
+    },
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": {
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "sha256_at_base": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": {
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92",
+      "sha256_at_base": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": {
+      "git_blob": "4c01fc5bf00971c866dbc22233b64ce7b3077c33",
+      "sha256_at_base": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md": {
+      "git_blob": "37d85ba5d6fef9f7cbc9f2893f86c2c2898691f1",
+      "sha256_at_base": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+    }
+  },
+  "native_word_sha256": "bbd2a31205d428a1e8ef04b2f694327ba121c09e849a4ecc10c4be0e5085f4a7",
+  "receipt_sha256": "65f58dde920bc159b57b594e90fa1ca006cf05027b49df56605ad2aae21e82c7",
+  "replay": "47 checks; normal and -O -W error receipts byte-identical; numerical heat values are diagnostics",
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  }
+}
+```
+
+From the repository root, extract the unique checker block without editing
+it and run it with Python3.12.14, SymPy1.14.0 and NumPy2.3.5. `--out DIR`
+emits the exact native word plus its explicit canonical birth schedule.
+Run again with `python -O -W error` and compare the complete JSON bytes.
+No previous GR/Lean/root replay is required by this changed calculation.
+
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -20254,3 +20254,45 @@ Final integrated structural checks passed: validate_work, validate_agent_protoco
 gr_assembly check, validate_repo and diff whitespace. The assembly remains
 98 results / 22 obligations / 5 discharged; scientific_promotion=false.
 Every byte of incoming e088f09c6 in both owned files is preserved.
+
+## 2026-11-03 continuation: bind the branch ledger to the actual coherent H.1 task
+
+Input c4a18b0c10ff9b0b25d918114caab2dc67796a46, same #334 and the same two
+owned paths. Phase: native realization / final composition. Consumer:
+`A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md` §6 and short closure
+contract B–D. Primary artifact: paid-source residual §7eq.
+
+Changed mathematical input: the current H.1/§7en/§7eo complete coherent
+catalogue is the map to which an ACTUAL outcome alphabet must be bound.
+No second source candidate, new root or task registration is introduced.
+The older monitored-instrument example §7bt is consumed at its own scope.
+
+Proved exact substitution: an instrument refining the SAME complete
+isometry on all input/SAM/protected columns has K_(ω,j)=c_(ω,j)V and
+input-independent outcome weights. A hidden, nondisturbing branch ledger
+therefore cannot supply the missing input-sensitive source. Apparatus/price
+changes remain dg+dW, not zero by this theorem. This excludes that proposed
+binding; it does not discharge the positive independent-source obligation.
+
+For an actual nondemolition record marker, the sharp coherence-defect bound
+TV≤sqrt(2ε−ε²) gives the source budget with the ACTUAL fee oscillation M,
+input derivative, finite step t, gain Γ, Jacobian and right lift. Moving
+prices, Info and work are retained explicitly in EQ11. A vanishing channel
+error alone is not source transport. No entropy functional is selected.
+
+Smallest decisive check: one literal CX into a canonically born record,
+on all64 columns with opaque Spin and immutable oldRIGHT, saturates the
+bound and has the exact nonzero input response4a−6a³. Its complete native
+H+J uses N2/D96/40,800 modes. An actually paid second CX restores the full
+channel and an input-independent final record, but uses N3/D160/68,000
+modes and its own complete price. Neither word emits a free classical
+report or variable-length price ledger. The embedded exact checker passes
+47 controls, normal and optimized warning-as-error with identical bytes;
+the full-heat numbers are diagnostics, not intervals.
+
+Remaining application: physically bind a genuinely changed execution's
+complete Cost−Info/work and its source to the H.1/κ carrier, or derive the
+task guard and its reaction. Fixed H.1 admission, independent input rows,
+Einstein match and the canonical contract's open obligations remain at
+their stated scopes. No acceptance, claim/lifecycle promotion or Ready.
+`GR_closed=false`; goal active.
