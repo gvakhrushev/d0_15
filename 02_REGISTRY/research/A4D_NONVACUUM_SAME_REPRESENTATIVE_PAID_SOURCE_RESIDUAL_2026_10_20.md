@@ -117947,3 +117947,1296 @@ linear algebra, exact algebraic claims are proved above):
   "scope": "Unchanged full32 native carrier / all8 protected canonical input columns, actual changingcarriers andallhistoryblocks. Coherenthistory is definedcomparisonprobe; nofreeuniformclockpreparation, physicalnormselection, fullheatmatrixreplay, hugeKexecution orGRclosure. Numericchecks accompany exactalgebraicbounds."
 }
 ```
+
+## 7eb. Paid history and stationary internal control give the full static Einstein source
+
+3 November 2026. Existing Draft #334, input ce60181005af05ec9da493bd10eb46ace69a457b.
+Phase: native realization and full source composition in the original conditional
+full16 positive-adjoint/v8 interface. Preserve §7dz and §7ea.
+
+**Positive parent substitution.** Solve all sixteen independent preparation rows
+on an explicit static clock branch, then consume the original scale equation
+and the owned forty-row coframe/link heat coefficient. The ENTIRE first return
+loop cancels against the heat source, including all its geometric remainders.
+The remaining actual loops give a nonzero normalized Einstein covector. Actual
+paid history growth supplies the small parameter and an asymptotic physical
+Golden scale step. No fitted counterterm, new action, rank scan, task row or
+claim promotion is introduced.
+
+The original full-CAR/ten-sign general Einstein theorem remains accepted at its
+own scope. Its full geometric source is reused as the comparison target, while
+the already owned full16 coframe/link source supplies the common-v8 application.
+This is a positive conditional vacuum specialization, not identification of the
+different full-CAR matter coupling or complete raw Hodge clock action with v8.
+
+### 7eb.A. The actual retained-history extension and its absolute price
+
+Consume the original v8 RESULT.md §§3–5 and
+A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md §§1–3. Its actual cold corner is B_h^n,
+with B_h=I-alpha_h Delta_h, alpha_h=p^2 h^2/128 and beta=2n alpha_h.
+The fresh raw cylinder state v=(sqrt(p),p) obeys <v,Gv>=sqrt(p).
+After K ACTUAL birth;G pairs, on EVERY old data input,
+
+    C_K=p^(K/2)B_h^n,
+    P_K=P_old tensor |v^K><v^K|,
+    full workspace=128^n 2^K, rank(P_K)=128 dim(H_h),
+    J_h,K=-128 Tr log[(1-z)I+z p^K B_h^(2n)],
+    a_K=z p^K/(1-z), z=2^-20.
+
+All complementary outcomes and the entire baseline
+-128 dim(H_h)log(1-z) remain. No rejected history or mode is normalized away.
+The LITERAL tested v8 apparatus extension keeps Lambda_alpha tensor I and
+Delta_h tensor I on the enlarged apparatus. Therefore its complete prices are
+
+    H_h,K=H_h,0+K log(2)/beta, R_h,K=R_h,0.
+
+The original apparatus identity law is an explicit substantive hypothesis.
+If instead heat is reconstructed from the WHOLE new survival corner,
+-beta^-1 log(C_K*C_K)=Lambda_alpha-K log(p)/beta, its heat is
+H_h,0+K log(2p)/beta. The original owner does not select between these
+heterogeneous-history extensions. Both additions have zero FIELD covector at
+fixed K,beta, so the following full field/scale argument is the same.
+Neither formula is identified with the separate raw growing-clock Hodge price
+G1–19. The actual fixed beta is the spectral-round calibration, not silently
+the total heterogeneous duration. K is a paid retained-history index, not a
+claimed price minimizer over optional padding.
+
+### 7eb.B. Exact prepared clock and same-source elimination
+
+The constructive theorem and executable controls below establish
+D_psi(H+J+R)=0 on ALL sixteen preparation slots for a generic static continuum
+base with its original P1 map and the actual raw field psi=eta e^(-T)dT.
+For the unchanged §7dz carrier, the explicit amplitude and periodic phase are
+given below; its coordinate Jacobian is one. No counting density is reset.
+The theorem covers the K extension because its full spectral weights retain
+time-translation/reflection symmetry. Thus the preparation chain-rule term
+vanishes genuinely. The finite coordinate checker is explicitly distinct from
+the original native proper-link stencil; native finite rows converge by the
+already owned source theorem, not by this numerical control.
+
+### 7eb.C. Full forty-row application, fixed norm and actual physical scale
+
+The scale proof below gives, at the ORIGINAL scale Euler equation,
+
+    D S_red =128 sum_(m>=2)(-1)^(m-1)a_K^m [
+        Z'(mt)/Z'(t) D Z(t)-D Z(mt)/m].
+
+This exact identity is the continuum-source formula and precedes all heat expansions.
+At finite h put Z_{h,m}(t)=Tr[(I-(t/m_h)Delta_shape)^(m_h m)].
+It is generally NOT Z_{h,1}(mt). Exact finite scale elimination gives
+M sum_(m>=2)(c_m/m)[(partial_t Z_{h,m}/partial_t Z_{h,1})
+D Z_{h,1}-D Z_{h,m}]. The continuum formula below follows only after
+the owned fixed-K source transport. Thus m1 cancellation also holds at
+finite level without imposing a false finite semigroup law.
+ With
+Z(t)=A/t^2+B/t+C+O_C1(t), the small scale branch satisfies
+
+    t_K~sqrt(128 beta A L_3(a_K)), t_K=beta s_K^2,
+    kappa_K=128 sqrt(A)[L_3(a_K)-L_2(a_K)]/t_K>0,
+    kappa_K^-1 D S_red -> D(B/sqrt(A)).
+
+Consume A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md §3, equations (3)–(6):
+the original full16 operator gives density -4R_G/3+2|h(T)|^2-4|v(T)-b|^2.
+At the stated LC, b=dlog(mu/dVol_G)=0 representative, ALL twenty-four
+independent connection first rows vanish, as do every first derivative of
+the torsion/density squares. No coframe volume or density variation is frozen.
+The tensor16 Hessian kernel remains; LC selection/uniqueness is not inferred.
+
+On the static P1 branch the FULL ambient metric first covector pulls back to
+
+    D Phi(g), Phi(g)=[integral R_g dVol_g]/[12 pi sqrt(V_g)].
+
+All sixteen coframe and twenty-four connection rows are retained.
+Its equation is G_mu nu+[R_average/4]g_mu nu=0, not automatically
+unnormalized EH with zero Lambda. The closed compact static vacuum sector
+forces Lambda=0 and constant lapse; in three spatial dimensions that sector
+is flat. This does NOT present a curved off-shell static metric as a curved
+periodic vacuum solution, or extend the result to the nonstatic/nonvacuum
+full-CAR family.
+
+Use ONE fixed shape chart:
+e_K=bar e/s_K, psi_K=s_K bar psi, connection one-form unchanged by constant scale.
+Pull back ALL source rows to this chart BEFORE dividing by kappa_K. Unscaled
+raw coframe rows and independent link rows have different K factors.
+A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md supplies the fixed-K strong-L1/raw-sum
+source transport. Choose each actual mesh h_K AFTER K, so its complete pulled-
+back source error and scale-root displacement are at most kappa_K epsilon_K,
+epsilon_K->0. A sign bracket and nondegeneracy give a nearby finite scale root.
+The preparation error is included; no exact finite-h harmonicity is claimed.
+No uniform ellipticity or amplitude bound as K->infinity is silently assumed.
+The total normalized source error is C(t_K+a_K)+epsilon_K on the stated
+controlled smooth source domain. With h=1/L and n=128 L^2, beta=2p^2 exactly.
+
+Since a_(K+4)=p^4 a_K and g_K=s_K^-2 g_shape, the actual scale root yields
+
+    g_(K+4)/g_K -> p^-2=phi^2.
+
+This is a derived ASYMPTOTIC physical metric relation. It is not an exact
+Golden weight law and cannot discharge the exact single-step rigidity premise.
+The scale tends toward the strict Julia contraction domain. The root is a scale
+SADDLE/MAXIMUM, so its consumer is the original stationary law, not prospective
+minimum.
+
+### 7eb.D. Exact remaining same-execution substitution
+
+The new positive substitution removes the arbitrary diagnostic observer and
+supplies the nonzero Einstein source coefficient from the same full spectral
+price. It does not yet bind the conditional v8 apparatus/calibration convention
+and the spatial clock class [dT] to a uniquely selected native execution.
+The retained clock complex has its own class; §7k reconstructs an operator,
+not yet a class-preserving map into physical spacetime. Given the actual map
+and compatible pairing, the constructed dT is the unique harmonic representative
+of its class. Books0–1 history/filtration and harmonic uniqueness alone do not
+supply that typed map. The native continuation and admitted comparisons, with
+the actual controller/work price, remain the consuming application.
+
+This is not another local negative result. It is a constructive full-source
+limit within an existing interface, with its precise physical application still
+named. The previous general nonvacuum full-CAR theorem remains unchanged;
+neither its selected material coupling nor unrestricted D0->GR follows from
+renaming the present vacuum source. No GR_closed, positive_gr or raw216
+promotion is made.
+
+### 7eb.Proof-I. Complete stationary P1 preparation
+
+#### Static P1 preparation bridge on the original full spectral price
+
+Read-only proposal for existing PR334, 3 November 2026. This discharges the
+continuum independent preparation rows on a constructive static domain of the
+original conditional positive-adjoint H+J+R interface. It does not select that
+interface physically, prove its native gate admission, or discharge the remaining
+metric/connection/controller source equations.
+
+##### Consumed owners and exact carrier
+
+Use A4D_NATIVE_MATTER_OBSERVER_PAIRING.md, equations3–9: the actual fixed P1
+readout, its homogeneous positive pairing, and its already-proved rank-three
+matter differential. Its kernel has the radial grade-one direction and all
+twelve other exterior grades. Do not reclassify that readout.
+
+Use A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md, equations1,4,7,8 and the current
+primary7dz1134–1135. The full16 exterior operator is d+d*, with the actual
+positive counting adjoint and, on the Lorentz-LC continuum background, its
+coordinate exterior-differential intertwining. Every exterior/spatial mode,
+reference multiplicity, retained workspace factor, integer round count and the
+original z=2^-20 remain. The full finite price is
+
+    S_h = log(C_h Z_h)/beta_h -128 Tr log F_h + R_h,
+    B_h=I-alpha_h Delta_h, Z_h=Tr B_h^(2n_h),
+    F_h=(1-z)I+z B_h^(2n_h), C_h=128^(n_h+1),
+    R_h=<w_h,Delta_h w_h>/<w_h,w_h>.
+
+The theorem below concerns the fixed-positive-time source limit supplied by
+A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md, not a finite unrenormalized infinite
+logdet. Both limiting trace weights decay exponentially. Their sources are
+well-defined, and their reflection identities are proved separately.
+
+##### Generic static theorem
+
+Let the physical background be a smooth compact static time-torus geometry
+
+    g=N(x)^2 dT^2-h_ij(x)dx^i dx^j,
+
+with N>0 and positive h. Retain the actual counting measure, assumed invariant
+under T translations and reflection, and a Lorentz-LC raising operator. In an
+arbitrary physical coframe e, set the ACTUAL raw exterior matter to pure grade1
+
+    psi_* = eta e^(-T) dT.
+
+This is an explicit local field formula, not a lowest-eigenmode catalogue.
+Its P1 normalized current is the normalized static Killing vector. Its positive
+metric is G=N^2dT^2+h, and its coordinate prepared form is exactly w_*=dT.
+
+First, d w_*=0. Its positive adjoint is also zero: in local coordinates the
+only divergence component is -mu^(-1) partial_T(mu G^(TT)), which vanishes
+because the density and coefficients are T-independent. Consequently D w_*=0,
+R=0, and the COMPLETE first derivative of R vanishes for every simultaneous
+variation of the prepared vector, its normalization and the operator. This
+includes all16 matter grades and independent geometrical/connection changes;
+the statement is a first derivative at this base, not that the changed field
+remains harmonic.
+
+Second, at fixed physical g the P1 differential changes G only in mixed
+T–spatial components. The other13 matter directions give delta G=0. Every
+smooth arbitrary periodic matter variation can be averaged over T when
+evaluating a spectral trace source: the base operator commutes with time
+translations and the first source is linear. The averaged mixed perturbation
+is odd under T reflection. Pullback by that reflection is a unitary operator
+on the COMPLETE weighted exterior space, commutes with the base Laplacian and
+conjugates its first perturbation to its negative. Therefore
+
+    Tr[q(Delta) delta Delta]=0
+
+for each trace-class spectral source weight. In particular DH=DJ=0 for the
+original heat and return weights, with their true normalizers and gains.
+
+Combining these two statements gives
+
+    D_psi(H+J+R)[delta psi]=0
+
+for EVERY smooth periodic16-component preparation variation. Spatial
+translation symmetry is unnecessary. Time reflection is a mathematical
+operator conjugacy, not a newly admitted physical operation or a free gate.
+
+##### Explicit application to the unchanged7dz Lorentz coframe
+
+At sigma0 retain a=epsilon sin x, |epsilon|<1, s>0 and the original first
+two coframe rows (1,a)/(s sqrt(1+a^2)), (-a,1)/(s sqrt(1+a^2)). Put
+
+    k=(1-a^2)/(1+a^2), r_*=-atanh(a), F=s/sqrt(k),
+    psi_*=F(cosh(r_*)e0+sinh(r_*)e1)
+         =s sqrt(1+a^2)/(1-a^2) (e0-a e1).
+
+The coordinate form and actual periodic time phase are
+
+    w_*=dt+2a/(1-a^2) dx=dT,
+    T=t -2/sqrt(1-epsilon^2)
+          atan(epsilon cos x/sqrt(1-epsilon^2)).
+
+The coordinate transformation has Jacobian1; the original counting measure
+is unchanged. The same original physical Lorentz metric becomes
+
+    g=s^-2[k dT^2-k^-1 dx^2-dy^2-dz^2],
+    G=s^-2[k dT^2+k^-1 dx^2+dy^2+dz^2].
+
+All fields are smooth and uniformly bounded on the actual epsilon=1/128
+collar. F is not frozen by a new constraint: it supplies an actual solution of
+the formerly nonzero independent amplitude equation. For comparison, choosing
+only the unit observer, F=1, gives w=sqrt(k)dT/s and generally nonzero Rayleigh
+preparation source. The hostile finite control verifies that distinction.
+
+Before the radial completion the boost EL can also be checked explicitly.
+With A=cosh r cos theta+sinh r sin theta and
+D=cosh r sin theta+sinh r cos theta, R=s^2 mean(A'^2+D'^2), and
+
+    delta R=-2s^2 mean[(A''D+D''A) delta r].
+
+The exact branch r_* makes D=0 and A=sqrt(k), hence solves that boost equation;
+it does not by itself solve the radial row. The above F completes it.
+
+##### Whole-source composition and remaining physical application
+
+For any differentiable extension Psi(Y) of this preparation along the actual
+geometrical/connection variables, the full chain rule at a static base gives
+
+    D_Y S(Y,Psi(Y)) = partial_Y S
+                    + partial_psi S D_Y Psi = partial_Y S.
+
+Thus no preparation covector is hidden when consuming the remaining full
+metric/connection source on this branch. R contributes zero first source at
+the base. The surviving H/J geometrical source still has to be calculated and
+matched to the GR capstone, with its own source norm and gain. The theorem
+does not establish that H+J is Einstein or that the primary nonstatic
+Brinkmann family lies in this static domain. Applying the existing native
+finite-source consistency to smooth sampled fields gives a vanishing limit
+of their preparation sources; it does NOT give exact finite-h stationarity
+of the original proper-link stencil.
+
+##### Clock class and harmonic uniqueness: useful conditional transport only
+
+An actually specified oriented scalar chronological cycle has an H1 class
+with unit period. Given an actual map carrying that class to [dT] in the
+physical exterior complex and the already selected positive pairing, dT is
+the unique harmonic representative in that class here. No broad Hodge
+existence theorem is needed for this application: existence is the explicit
+dT, and if another harmonic representative differs by df, then
+||df||^2=<f,d*df>=0, so the representatives coincide. On a finite weighted
+cycle, the same solution is alpha_j=1/(w_j sum_l1/w_l), with period1.
+
+The clock-to-spacetime class map is NOT supplied by the presently consumed
+owners. Primary7k101–107 reconstructs the full spatial operator from the
+complete cyclic recorded operator, including a fixed negative Julia root.
+That is an operator inverse, not a chain map carrying the clock cycle into
+a geometrical1-cycle. Its admitted internal placement I_scene tensor u_j
+can execute a complete chronological cycle at one spatial address, with
+zero geometric winding. The cyclic register in FiniteProtocolClock.lean is
+explicitly used for its first15 transitions and does not prove unbounded
+physical cycling of retained history.
+
+Book01 supplies the time/filtration ladder and the golden symbolic dynamics;
+its Section01.19a.3 explicitly retains a topological/measure conjugacy gap.
+Neither that ladder nor harmonic uniqueness creates the missing typed map.
+The existing A4D_NATIVE_PAIRING_REFINEMENT_SOURCE.md equations5–7 also shows
+that a chain lift alone need not preserve the weighted adjoint or a harmonic
+one-form. A proposed transport must therefore retain its actual pairing and
+adjoint/refinement compatibility; it cannot be inferred from chronology.
+
+##### Reproducible controls and limitations
+
+check_static_p1_preparation.py is standalone and reads the owner hashes. Its
+exact symbolic controls verify the original raw P1 formula, coordinate form,
+norm, counting Jacobian, static Lorentz/positive metrics, and phase derivative.
+It consumes the rank-three owner and checks its16-slot rest-frame differential.
+
+The independent finite operator is a full Fourier-coordinate exterior complex
+on L=3 in all four coordinates, with all1296=16 L^4 modes, the counting
+adjoint, and the unchanged finite H+J+R formula including C_h and n=30 actual
+rounds. It checks every one of the3L local boost directions, both heat/return
+sources, arbitrary Rayleigh vector/pairing derivatives, the complete positive
+and negative finite boost prices, and the nonzero radial source when F is
+omitted. The coordinate control is NOT the original native proper-link
+stencil and does not establish native admission or continuum convergence.
+The analytical theorem and the separately owned consistency theorem carry
+those respective obligations.
+
+### 7eb.Proof-II. Exact scale elimination and full-source limit
+
+#### Paid retention, native scale stationarity, and the complete static Einstein source
+
+Read-only #334 subtask scratch. This is a reusable conditional proof, not an
+accepted physical claim. No tracked repository files are changed.
+
+##### 1. Actual operands and precise scope
+
+Consume the native paid-padding map supplied separately by the integrator:
+the literal v8 heat price gains the field-neutral term K log(2)/beta,
+the return determinant becomes
+
+    J_K = -M Tr log((1-z)I + z p^K exp(-beta Delta)),
+    a_K = z p^K/(1-z),  M=128,  p=(sqrt(5)-1)/2,
+
+and the actual Rayleigh preparation is harmonic. The unrenormalized constant
+-M dim(H) log(1-z) remains at finite carrier and has zero field derivative.
+The analysis below concerns its trace-class derivative, not a finite value
+of that infinite constant. Beta is the original spectral-round calibration;
+the added paid birth ticks are not automatically extra spectral rounds.
+
+Write the physical metric/coframe as g=s^-2 gbar, e=s^-1 ebar, keep the
+connection one-form fixed under this constant scale, and set t=beta s^2.
+For the entire exterior bundle and counting density mu,
+
+    Delta_s = s^2 Delta_bar,
+    Z_g(t) = Tr exp(-t Delta_bar),
+    S(t,g;a) = log Z_g(t)/beta
+               -M sum_(m>=1) c_m Z_g(mt)/m + field-neutral terms,
+    c_m=(-1)^(m-1) a^m,  0<a<1.                         (1)
+
+All positive eigenvalues and harmonic zero modes remain in Z. On a closed
+four-manifold Z(t)>=sum_j b_j. No normalized/truncated trace replaces it.
+This theorem proves an actual source limit on a selected static LC graph.
+It does not prove selection of that graph, free-clock stationarity, a minimum,
+nonstatic Lorentzian gravity, or complete physical primitive admission.
+
+##### 2. Exact elimination of the entire first loop
+
+Use a compact smooth family of positive metrics, densities and the allowed
+coframe/connection perturbations. Its common smoothness and ellipticity bounds
+give the usual uniform heat and first-source expansions. Large-time estimates
+need only polynomial bounds, not a uniform gap above a fixed-dimensional
+kernel: independent connection perturbations can change that kernel.
+Let D mean any shape first variation at fixed t,a,beta. The actual global
+scale equation is
+
+    Z'(t)/(beta Z(t)) = M sum_(m>=1) c_m Z'(mt).          (2)
+
+Here Z'(mt) is the derivative in its argument, not d_t Z(mt). Since Z'<0,
+substitution of (2) into the FULL covector gives the exact identity
+
+    D S_red = M sum_(m>=2) c_m
+       [ Z'(mt)/Z'(t) D Z(t) - D Z(mt)/m ].             (3)
+
+The m=1 term is identically zero, without a heat expansion. Noncommuting
+operator variations are allowed: D Z=-t Tr(exp(-t Delta) D Delta) follows
+by Duhamel and cyclic trace. No common eigenvectors are assumed. The chain
+rule contribution from D t_*(g) vanishes by (2).
+
+Thus no uncancelled one-loop curvature remainder gets divided by the
+two-loop gain. This exact cancellation is the essential parent substitution.
+
+##### 3. Scale branch and uniform complete-source remainder
+
+Uniformly on the smooth compact family, use
+
+    Z(t)=A t^-2 + B t^-1 + C + O(t),
+    Z'(t)=-2A t^-3 - B t^-2 + O(1),                   (4)
+
+including the first shape derivatives and the indicated t derivatives.
+The expansion may be taken in the dual of a fixed C^r variation norm.
+For a fixed smooth background family, differentiated diagonal heat-kernel
+estimates and integration by parts also give the customary local source norm;
+do not silently replace this hypothesis by convergence only of heat values.
+
+Let L_j(a)=sum_(m>=1)c_m/m^j=-Li_j(-a). The implicit-function theorem
+on t=sqrt(a)u gives a unique local small-t scale branch
+
+    t_*(g,a)^2 = M beta A(g) L_3(a) [1+O(t_*)],
+    s_*^4 = M A(g) L_3(a)/beta [1+O(t_*)].             (5)
+
+The branch exists for sufficiently small a uniformly over the family.
+It is a nondegenerate SCALE MAXIMUM:
+
+    S_tt(t_*)=-4/(beta t_*^2) [1+O(t_*+a)] < 0.        (6)
+
+It must therefore be consumed by a stationary/constraint law, not called a
+prospective minimum. The zero-mode lower bound presents no obstruction:
+Z(t_*)~1/(M beta a) tends to infinity.
+
+For a fixed m, (4) gives the full covector identity
+
+    Z'(mt)/Z'(t) D Z(t) - D Z(mt)/m
+      = (m-1)/(m^3 t) [B D A/(2A)-D B] + O(1).        (7)
+
+Sum (7) in (3). The exact normalizer at a base field is
+
+    kappa_actual = M sqrt(A) [L_3(a)-L_2(a)]/t_* > 0.
+
+Then, in the same source norm as (4),
+
+    D S_red / kappa_actual = D(B/sqrt(A)) + O(t_*).    (8)
+
+Equivalently use the shape-independent normalizer
+
+    kappa_0(a,beta)=sqrt(M/beta) [L_3-L_2]/sqrt(L_3),
+    kappa_actual/kappa_0=1+O(t_*),
+    kappa_0 ~ sqrt(M/beta) a^(3/2)/8.                 (9)
+
+There is no t_*/a loss. To justify the infinite sum rigorously, split it at
+m t_*=t0. Below this point the uniform heat/source expansion bounds the
+remainder by summable polynomial factors times a^m; it starts at m=2 and
+is O(M a^2). Above it use the full heat/source/derivative bounds on the
+compact family and the geometric tail a^(t0/t_*), which is smaller than
+every fixed power needed here. Since L3-L2~a^2/8, division by the leading
+M(L3-L2)/t_* gives the O(t_*) remainder in (8). The same argument applies
+to every retained ambient first-source direction covered by (4).
+
+On a connected bounded shape chart, integrating (8) along bounded paths
+also gives, modulo a shape-independent value,
+
+    S_red = kappa_0 B/sqrt(A) + O_C1(kappa_0 sqrt(a)).  (10)
+
+No absolute finite continuum determinant is asserted by (10).
+
+Positivity is exact. The alternating decreasing series gives
+
+    a^2/8 - 2a^3/27 < L3(a)-L2(a) < a^2/8,
+    0<a<1.                                          (11)
+
+##### 4. The full16 coefficient, counting density, and all24 link rows
+
+Let mu=e^-f dVol_G, so f=-log(mu/dVol_G). Unitary multiplication
+e^-f/2 takes the weighted de Rham operator to
+
+    D_f = D_Hodge + (epsilon(df)+iota(df))/2.
+
+Its square adds |df|^2/4 and the Hessian term
+(1/2) sum_i c_-(e_i)c_+(nabla_i df). The full16 trace of that Hessian
+term is zero. The Hodge Weitzenbock term has trace 4R_G. Hence
+
+    A = V/pi^2,
+    B = -[integral R_G + 3 integral |df|^2]/(12 pi^2),
+    B/sqrt(A) = -[integral R_G+3 integral |df|^2]
+                    /(12 pi sqrt(V)).                (12)
+
+This is also already owned in the stronger independent-connection form:
+`A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md`, section 3, equations (3)--(6):
+
+    a2 density = -4R_G/3 + 2 sum h^2 - 4|v-b|^2,
+    b=dlog(mu/dVol_G)=-df,                            (13)
+
+with every one of the original 24 torsion/connection coordinates retained.
+At T=0 and df=0, the extra terms and their FULL FIRST COVECTOR vanish.
+This includes variations of volume, density, coframe and all24 links; none
+is frozen. Equation (13) does not derive T=0: its tensor16 Hessian kernel
+is preserved. It supplies the source application at the selected LC point.
+
+The source theorem (8) therefore transports all16 coframe and all24 link
+rows through the stated coframe/connection map; any rescaling of raw
+coordinates and its norm must be carried through that map explicitly.
+It is not a claim about arbitrary programme/controller/Info normals.
+
+##### 5. Static Lorentzian interpretation and full ambient metric source
+
+On a static Lorentz metric of signature +---,
+
+    g_L=N(x)^2 dT^2-h_ij(x) dx^i dx^j,
+    G=N(x)^2 dT^2+h_ij(x) dx^i dx^j,
+
+the selected harmonic-clock construction gives R_clock=0 with its complete
+first covector zero. P1 observer changes induce the mixed time-space metric
+directions; spectral sources on them vanish by time-reversal symmetry.
+The clock's radial preparation changes do not change the normalized P1
+observer. These are applications of the integrator's generic static-clock
+map, not new primitive definitions in this note.
+
+For a static background the full Euler tensors are T-independent. All
+time-dependent tests reduce to their T-average, and mixed time-space rows
+vanish by T->-T. Consequently equality on unrestricted static lapse and
+spatial-metric variations supplies all ten ambient metric rows, not merely
+one spatial family. At df=0 the density-square term has zero first source
+even under those unrestricted volume variations.
+
+For this signature R_L=-R_G and the volumes coincide. Equations (8),(12)
+give the positive limiting Lorentz functional
+
+    F_L(g)= integral R_L /(12 pi sqrt(V)).             (14)
+
+Its full metric Euler covector is proportional to
+
+    Einstein(g) + [average(R_L)/4] g.                (15)
+
+Thus the general stationary equation is Einstein with a global cosmological
+constant, not an assumed zero-lambda equation. In the closed boundaryless
+static VACUUM sector with N>0, integrating the lapse equation forces lambda=0,
+then N is constant; in three spatial dimensions the vacuum spatial metric
+is Ricci-flat and therefore flat. This does not construct a new curved
+periodic vacuum solution. The result supplies the complete off-shell source
+on curved static fields and preserves the separate nonvacuum/source owner.
+
+The condition b=0 is an explicit base-representative hypothesis. A coordinate change that transports BOTH the original measure and the metric cannot make a nonconstant scalar density ratio constant. No counting density is reset. General physical observer/grid erasure is not proved here.
+
+##### 6. Paid clock levels, finite refinement, and remaining premises
+
+For the actual paid a_K=a_0 p^K and fixed beta, (5) implies
+
+    t_K~sqrt(M beta A a_K),
+    g_(K+4)/g_K -> p^-2=phi^2.                        (16)
+
+This is a derived physical metric step from paid retention plus its scale
+Euler equation. It is asymptotic, not exact Golden homogeneity. It is not a
+Bratteli ratio renamed as a metric scale.
+
+At each fixed finite K the existing fixed-positive-time finite source theorem
+can be used on the corresponding smooth scaled input. A diagonal choice of
+the actual mesh/round count must make ALL finite source errors o(kappa_0),
+including Rayleigh preparation and clock calibration errors. This follows
+as an existence application only when the existing convergence covers the
+specified source norm and maps; a cost/resource bound needs its own estimates.
+
+The beta calibration is fixed in this theorem. Actual clock variation or optional-padding minimization is a distinct physical problem. The native continuation and admitted same-execution price map remain explicit application premises. No unrestricted D0-to-GR closure is asserted.
+
+### 7eb.E. Reproducible evidence and exact scope
+
+Static-clock checker SHA256: 837f2d6882e5ce6946c826a21d73a90a5eaa6f7e844b3a010a9e97d7e648a563
+Receipt SHA256: 7c00d3039e4329a9e854e673c5ac6c59cba85a5e5d0f0febfda3069d15f8a014
+Scale/source checker SHA256: 13a250d32b988a02cf85c71879557c28a27ae9457d0ca3f3568da3fba8ddbd04
+Receipt SHA256: 1de46b761651384ae564e71448b0967e1fbe85fa039915ce10adf6ea2ed900e4
+
+The static coordinate control checks every one of its full16 modes but is not
+the native proper-link stencil. The scale-root values are numerical controls
+with explicitly uncertified finite computational tails; the analytic source
+proof does not depend on interpreting them as interval certificates.
+
+#### Standalone static-clock checker
+
+```python
+"""Static P1 preparation bridge: exact identities and full-16 coordinate control.
+
+Run from the d0_15 repository root.  This is NOT the native proper-link stencil:
+the finite control is a full Fourier-coordinate exterior complex with its true
+counting adjoint.  Every one of its 16*L**4 modes is priced.  The analytical
+continuum argument, not a small numerical residual, proves the source theorem.
+"""
+from pathlib import Path
+import hashlib
+import itertools
+import json
+import math
+import platform
+
+import numpy as np
+import scipy
+from scipy.linalg import expm
+import sympy as sy
+
+checks = []
+
+
+def check(name, value, bound=1e-10):
+    val = float(value)
+    if not np.isfinite(val) or val > bound:
+        raise AssertionError((name, val, bound))
+    checks.append({"name": name, "error": val, "bound": bound})
+
+
+def exact(name, expr):
+    entries = list(expr) if isinstance(expr, sy.MatrixBase) else [expr]
+    residual = [sy.simplify(v) for v in entries]
+    if any(v != 0 for v in residual):
+        raise AssertionError((name, residual))
+    checks.append({"name": name, "exact": True})
+
+
+def symbolic():
+    a, s = sy.symbols("a s", real=True, positive=True)
+    eta = sy.diag(1, -1, -1, -1)
+    e = sy.eye(4) / s
+    e[:2, :2] = sy.Matrix([[1, a], [-a, 1]]) / (s * sy.sqrt(1 + a*a))
+    k = (1-a*a)/(1+a*a)
+    tau = sy.Matrix([1, 2*a/(1-a*a), 0, 0])
+    psi = s*sy.sqrt(1+a*a)/(1-a*a)*sy.Matrix([1, -a, 0, 0])
+    exact("raw original P1 preparation eta e^-T dT", psi-eta*e.T.inv()*tau)
+    exact("actual coordinate one form", e.T*eta*psi-tau)
+    exact("positive timelike norm", (psi.T*eta*psi)[0]-s*s/k)
+    norm = (psi.T*eta*psi)[0]
+    observer = -eta + 2*eta*psi*psi.T*eta/norm
+    q = sy.simplify(e.inv()*observer.inv()*e.T.inv())
+    jac = sy.eye(4)
+    jac[0, 1] = tau[1]
+    exact("counting coordinate Jacobian is one", jac.det()-1)
+    exact("static Lorentz coordinate metric", jac.T.inv()*(e.T*eta*e)*jac.inv()
+          -sy.diag(k, -1/k, -1, -1)/(s*s))
+    exact("static positive coordinate metric", jac*q*jac.T
+          -s*s*sy.diag(1/k, k, 1, 1))
+    x, eps = sy.symbols("x eps", real=True)
+    phase = -2/sy.sqrt(1-eps*eps)*sy.atan(eps*sy.cos(x)/sy.sqrt(1-eps*eps))
+    exact("periodic actual phase derivative", sy.diff(phase, x)
+          -2*eps*sy.sin(x)/(1-eps*eps*sy.sin(x)**2))
+    # Consume the owner's rank-three P1 differential; finite rest-frame control.
+    amplitude = sy.symbols("amplitude", positive=True)
+    n = sy.Matrix([1, 0, 0, 0])
+    columns = []
+    for grade_mask in range(16):
+        dv = sy.zeros(4, 1)
+        if grade_mask in (1, 2, 4, 8):
+            dv[(1, 2, 4, 8).index(grade_mask)] = 1
+        dn = (dv-n*(n.T*eta*dv)[0])/amplitude
+        dh = 2*eta*(dn*n.T+n*dn.T)*eta
+        columns.append(sy.Matrix(16, 1, list(dh)))
+    derivative = sy.Matrix.hstack(*columns)
+    if derivative.rank() != 3:
+        raise AssertionError("P1 differential rank")
+    for j in range(16):
+        if j not in (2, 4, 8):
+            exact("P1 kernel grade-mask %d" % j, derivative[:, j])
+    return {"P1_differential_rank": 3, "kernel_dimension": 13,
+            "raw_formula": "s*sqrt(1+a^2)/(1-a^2)*(e0-a*e1)",
+            "clock_form": "dT=dt+2*a/(1-a^2)*dx"}
+
+
+def creation(mu):
+    out = np.zeros((16, 16))
+    for mask in range(16):
+        if not (mask >> mu) & 1:
+            sign = (-1)**((mask & ((1 << mu)-1)).bit_count())
+            out[mask | (1 << mu), mask] = sign
+    return out
+
+
+C = [creation(i) for i in range(4)]
+I16 = np.eye(16)
+
+
+def gamma(k1):
+    out = np.zeros((16, 16), dtype=complex)
+    for i in range(4):
+        for j in range(4):
+            out += k1[i, j] * C[i] @ C[j].T
+    return out
+
+
+def coordinate_control(L, eps):
+    x = 2*np.pi*np.arange(L)/L
+    modes = np.arange(-(L//2), L//2+1)
+    fourier = np.exp(1j*np.outer(x, modes))/np.sqrt(L)
+    dx = fourier @ np.diag(1j*modes) @ fourier.conj().T
+    check("spectral x derivative adjoint L%d" % L, np.linalg.norm(dx+dx.conj().T))
+    scale = .25
+    a = eps*np.sin(x)
+    k = (1-a*a)/(1+a*a)
+    qdiag = scale*scale*np.stack([1/k, k, np.ones(L), np.ones(L)], axis=1)
+    ldiag = np.ones((L, 16))
+    for mask in range(16):
+        for mu in range(4):
+            if (mask >> mu) & 1:
+                ldiag[:, mask] *= np.sqrt(qdiag[:, mu])
+    flat_l = ldiag.reshape(-1)
+    p = (np.sqrt(5)-1)/2
+    h = 2*np.pi/L
+    alpha = p*p*h*h/128
+    n = math.ceil(2*p*p/(2*alpha))
+    m, beta, z = 2*n, 2*n*alpha, 2**-20
+    size = 16*L
+    blocks = []
+    Z = 0.
+    J = 0.
+    base_d = np.kron(dx, C[1])
+    for kt, ky, kz in itertools.product(modes, repeat=3):
+        d = base_d+np.kron(np.eye(L), 1j*(kt*C[0]+ky*C[2]+kz*C[3]))
+        dhat = flat_l[:, None]*d/flat_l[None, :]
+        D = dhat+dhat.conj().T
+        Delta = D@D
+        ev, vec = np.linalg.eigh(Delta)
+        ev = np.maximum(ev, 0)
+        b = 1-alpha*ev
+        if min(b) <= 0:
+            raise AssertionError("original positive B domain")
+        km = b**m
+        f = 1-z+z*km
+        Z += float(sum(km))
+        J -= 128*float(sum(np.log(f)))
+        blocks.append(dict(key=(int(kt),int(ky),int(kz)), d=dhat, D=D,
+                           Delta=Delta, ev=ev, vec=vec, b=b, f=f))
+    heat_price = ((n+1)*math.log(128)+math.log(Z))/beta
+    wcoord = np.zeros(size)
+    wcoord[1::16] = 1
+    what = flat_l*wcoord
+    zero = next(b for b in blocks if b["key"] == (0,0,0))
+    check("full16 harmonic dT L%d eps%g" % (L,eps), np.linalg.norm(zero["D"]@what))
+    # Hostile control: normalized observer alone is not the harmonic amplitude.
+    unit_seed=np.zeros(size); unit_seed[1::16]=1
+    unit_R=float(np.real(np.vdot(unit_seed,zero["Delta"]@unit_seed)/np.vdot(unit_seed,unit_seed)))
+    unit_residual=zero["Delta"]@unit_seed-unit_R*unit_seed
+    off_mask=unit_residual.copy(); off_mask[1::16]=0
+    check("unit observer residual remains an admitted radial direction L%d eps%g"%(L,eps),np.linalg.norm(off_mask))
+    radial_negative=-2*float(np.real(np.vdot(unit_residual,unit_residual)/np.vdot(unit_seed,unit_seed)))
+    if not (unit_R>0 and radial_negative<0):
+        raise AssertionError("unit-observer hostile preparation control")
+    # All three local observer slots at every x, not a single test direction.
+    max_h, max_j, max_pair, max_r = 0., 0., 0., 0.
+    block_lookup = {b["key"]: b for b in blocks}
+    rng = np.random.default_rng(334)
+    for spatial in (1,2,3):
+        one = np.zeros((4,4))
+        one[0,spatial] = one[spatial,0] = 1
+        ext = gamma(one)
+        for site in range(L):
+            kfield = np.zeros((size,size),dtype=complex)
+            kfield[16*site:16*(site+1),16*site:16*(site+1)] = ext
+            dh_sum = 0.
+            dj_sum = 0.
+            diagonal_traces = {}
+            for b in blocks:
+                dd = kfield@b["d"]-b["d"]@kfield
+                dotD = dd+dd.conj().T
+                dotDelta = dotD@b["D"]+b["D"]@dotD
+                diag = np.real(np.diag(b["vec"].conj().T@dotDelta@b["vec"]))
+                th = float(np.dot(b["b"]**(m-1), diag))
+                tj = float(np.dot(b["b"]**(m-1)/b["f"], diag))
+                diagonal_traces[b["key"]] = (th,tj)
+                dh_sum += -th/Z
+                dj_sum += 128*z*beta*tj
+            for key, value in diagonal_traces.items():
+                reflected = (-key[0],key[1],key[2])
+                other = diagonal_traces[reflected]
+                max_pair = max(max_pair, abs(value[0]+other[0]), abs(value[1]+other[1]))
+            max_h, max_j = max(max_h,abs(dh_sum)), max(max_j,abs(dj_sum))
+            dd0 = kfield@zero["d"]-zero["d"]@kfield
+            dotD0 = dd0+dd0.conj().T
+            dw = rng.normal(size=size)+1j*rng.normal(size=size)
+            dR = 2*np.real(np.vdot(zero["D"]@what, dotD0@what+zero["D"]@dw))/np.vdot(what,what)
+            max_r = max(max_r,abs(dR))
+    check("all local full16 P1 heat source L%d eps%g"%(L,eps),max_h)
+    check("all local full16 P1 return source L%d eps%g"%(L,eps),max_j)
+    check("paired full spectral traces L%d eps%g"%(L,eps),max_pair,2e-9)
+    check("arbitrary matter and pairing Rayleigh derivative L%d eps%g"%(L,eps),max_r)
+    # A true finite boost curve, with all modes, validates complete spectral evenness.
+    profile = np.cos(x)+.31*np.sin(x)
+    one = np.zeros((4,4)); one[0,1]=one[1,0]=1
+    ext = gamma(one)
+    kg = np.kron(np.diag(profile),ext)
+    def full_price(t):
+        change=expm(t*kg)
+        inverse=expm(-t*kg)
+        zz=jj=0.
+        rr=None
+        for b in blocks:
+            dd=change@b["d"]@inverse
+            D=dd+dd.conj().T
+            ev=np.maximum(np.linalg.eigvalsh(D@D),0)
+            bb=1-alpha*ev
+            kk=bb**m
+            zz+=float(sum(kk))
+            jj-=128*float(sum(np.log(1-z+z*kk)))
+            if b["key"]==(0,0,0):
+                # The actual pure grade-one P1 boost has this constant
+                # whitened preparation; the physical coordinate form moves.
+                rr=float(np.real(np.vdot(D@what,D@what)/np.vdot(what,what)))
+        return ((n+1)*math.log(128)+math.log(zz))/beta+jj+rr
+    plus,minus=full_price(.013),full_price(-.013)
+    check("complete price boost reflection L%d eps%g"%(L,eps),abs(plus-minus),2e-9)
+    # Time-dependent perturbations with nonzero Fourier shift have no diagonal
+    # blocks; this is the exact finite counterpart of time averaging.
+    # Explicitly validate diagonal orthogonality for every nonzero clock mode.
+    for freq in modes:
+        if freq:
+            check("nonzero time mode diagonal trace L%d q%d"%(L,freq),
+                  abs(np.mean(np.exp(1j*freq*x))),1e-12)
+    return {"L":L,"epsilon":eps,"full_modes":16*L**4,
+            "local_boost_directions":3*L,"retained_rounds":n,"beta":beta,
+            "Z":Z,"absolute_heat":heat_price,"absolute_return":J,
+            "source_heat_max":max_h,"source_return_max":max_j,
+            "source_R_max":float(max_r),"paired_trace_max":max_pair,
+            "unit_observer_R_hostile_control":unit_R,
+            "unit_observer_radial_source_hostile_control":radial_negative,
+            "positive_negative_price_difference":abs(plus-minus),
+            "operator_scope":"full16 finite spectral-coordinate complex, NOT native proper-link stencil"}
+
+
+def cycle_control():
+    N=7
+    incidence=np.zeros((N,N))
+    for j in range(N):
+        incidence[j,j]=-1
+        incidence[j,(j+1)%N]=1
+    weights=np.array([1.,2.,3.,5.,7.,11.,13.])
+    harmonic=(1/weights)/np.sum(1/weights)
+    check("conditional scalar cycle harmonic coclosed",np.linalg.norm(incidence.T@(weights*harmonic)))
+    check("conditional scalar cycle period one",abs(sum(harmonic)-1))
+    check("conditional scalar cycle harmonic uniqueness rank",abs(np.linalg.matrix_rank(incidence)-(N-1)),0)
+    return {"cycle_H1_dimension":1,"cycle_clock_to_spacetime_map":"NOT supplied by this checker or owned operator inverse7k"}
+
+
+if __name__ == "__main__":
+    refs=["02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md",
+          "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+          "02_REGISTRY/research/A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md",
+          "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean"]
+    pins={f:hashlib.sha256(Path(f).read_bytes()).hexdigest() for f in refs}
+    result={"scope":"static continuum P1 preparation proof plus finite coordinate controls; no native admission or GR closure",
+            "python":platform.python_version(),"numpy":np.__version__,"scipy":scipy.__version__,"sympy":sy.__version__,
+            "input_sha256":pins,"symbolic":symbolic(),
+            "finite_controls":[coordinate_control(3,1/128),coordinate_control(3,1/4)],
+            "conditional_harmonic_class":cycle_control(),"checks":checks}
+    output=Path(__file__).with_suffix(".json")
+    output.write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"checks":len(checks),"receipt":str(output),"finite_controls":result["finite_controls"]},indent=2))
+```
+
+#### Static-clock receipt
+
+```json
+{
+  "scope": "static continuum P1 preparation proof plus finite coordinate controls; no native admission or GR closure",
+  "python": "3.11.9",
+  "numpy": "2.2.6",
+  "scipy": "1.16.3",
+  "sympy": "1.12.1",
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md": "badfe4177ddcd90f9b138419b84afa8f828574c7b7d191df5fec8f266f1130f9",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md": "4b69c188dcb3571429f4b45eddb1713621014de260c6e8b2095cc2907d9e4730",
+    "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc"
+  },
+  "symbolic": {
+    "P1_differential_rank": 3,
+    "kernel_dimension": 13,
+    "raw_formula": "s*sqrt(1+a^2)/(1-a^2)*(e0-a*e1)",
+    "clock_form": "dT=dt+2*a/(1-a^2)*dx"
+  },
+  "finite_controls": [
+    {
+      "L": 3,
+      "epsilon": 0.0078125,
+      "full_modes": 1296,
+      "local_boost_directions": 9,
+      "retained_rounds": 30,
+      "beta": 0.7853861303542885,
+      "Z": 1138.0372298391724,
+      "absolute_heat": 200.47463588360296,
+      "absolute_return": 0.019282565967234835,
+      "source_heat_max": 4.336808689942018e-18,
+      "source_return_max": 2.710505431213761e-19,
+      "source_R_max": 8.759501648227847e-17,
+      "paired_trace_max": 1.7763568394002505e-15,
+      "unit_observer_R_hostile_control": 2.9102495876139518e-11,
+      "unit_observer_radial_source_hostile_control": -3.637701269277173e-12,
+      "positive_negative_price_difference": 0.0,
+      "operator_scope": "full16 finite spectral-coordinate complex, NOT native proper-link stencil"
+    },
+    {
+      "L": 3,
+      "epsilon": 0.25,
+      "full_modes": 1296,
+      "local_boost_directions": 9,
+      "retained_rounds": 30,
+      "beta": 0.7853861303542885,
+      "Z": 1137.8278919956772,
+      "absolute_heat": 200.47440165064916,
+      "absolute_return": 0.01930811990557046,
+      "source_heat_max": 3.0357660829594124e-18,
+      "source_return_max": 3.7947076036992655e-19,
+      "source_R_max": 7.019434044365655e-17,
+      "paired_trace_max": 3.552713678800501e-15,
+      "unit_observer_R_hostile_control": 2.9167150207944543e-05,
+      "unit_observer_radial_source_hostile_control": -3.535359680660909e-06,
+      "positive_negative_price_difference": 0.0,
+      "operator_scope": "full16 finite spectral-coordinate complex, NOT native proper-link stencil"
+    }
+  ],
+  "conditional_harmonic_class": {
+    "cycle_H1_dimension": 1,
+    "cycle_clock_to_spacetime_map": "NOT supplied by this checker or owned operator inverse7k"
+  },
+  "checks": [
+    {
+      "name": "raw original P1 preparation eta e^-T dT",
+      "exact": true
+    },
+    {
+      "name": "actual coordinate one form",
+      "exact": true
+    },
+    {
+      "name": "positive timelike norm",
+      "exact": true
+    },
+    {
+      "name": "counting coordinate Jacobian is one",
+      "exact": true
+    },
+    {
+      "name": "static Lorentz coordinate metric",
+      "exact": true
+    },
+    {
+      "name": "static positive coordinate metric",
+      "exact": true
+    },
+    {
+      "name": "periodic actual phase derivative",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 0",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 1",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 3",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 5",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 6",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 7",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 9",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 10",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 11",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 12",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 13",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 14",
+      "exact": true
+    },
+    {
+      "name": "P1 kernel grade-mask 15",
+      "exact": true
+    },
+    {
+      "name": "spectral x derivative adjoint L3",
+      "error": 0.0,
+      "bound": 1e-10
+    },
+    {
+      "name": "full16 harmonic dT L3 eps0.0078125",
+      "error": 1.8887366245542298e-17,
+      "bound": 1e-10
+    },
+    {
+      "name": "unit observer residual remains an admitted radial direction L3 eps0.0078125",
+      "error": 0.0,
+      "bound": 1e-10
+    },
+    {
+      "name": "all local full16 P1 heat source L3 eps0.0078125",
+      "error": 4.336808689942018e-18,
+      "bound": 1e-10
+    },
+    {
+      "name": "all local full16 P1 return source L3 eps0.0078125",
+      "error": 2.710505431213761e-19,
+      "bound": 1e-10
+    },
+    {
+      "name": "paired full spectral traces L3 eps0.0078125",
+      "error": 1.7763568394002505e-15,
+      "bound": 2e-09
+    },
+    {
+      "name": "arbitrary matter and pairing Rayleigh derivative L3 eps0.0078125",
+      "error": 8.759501648227847e-17,
+      "bound": 1e-10
+    },
+    {
+      "name": "complete price boost reflection L3 eps0.0078125",
+      "error": 0.0,
+      "bound": 2e-09
+    },
+    {
+      "name": "nonzero time mode diagonal trace L3 q-1",
+      "error": 1.0467283057891834e-16,
+      "bound": 1e-12
+    },
+    {
+      "name": "nonzero time mode diagonal trace L3 q1",
+      "error": 1.0467283057891834e-16,
+      "bound": 1e-12
+    },
+    {
+      "name": "spectral x derivative adjoint L3",
+      "error": 0.0,
+      "bound": 1e-10
+    },
+    {
+      "name": "full16 harmonic dT L3 eps0.25",
+      "error": 1.7281253293950516e-17,
+      "bound": 1e-10
+    },
+    {
+      "name": "unit observer residual remains an admitted radial direction L3 eps0.25",
+      "error": 0.0,
+      "bound": 1e-10
+    },
+    {
+      "name": "all local full16 P1 heat source L3 eps0.25",
+      "error": 3.0357660829594124e-18,
+      "bound": 1e-10
+    },
+    {
+      "name": "all local full16 P1 return source L3 eps0.25",
+      "error": 3.7947076036992655e-19,
+      "bound": 1e-10
+    },
+    {
+      "name": "paired full spectral traces L3 eps0.25",
+      "error": 3.552713678800501e-15,
+      "bound": 2e-09
+    },
+    {
+      "name": "arbitrary matter and pairing Rayleigh derivative L3 eps0.25",
+      "error": 7.019434044365655e-17,
+      "bound": 1e-10
+    },
+    {
+      "name": "complete price boost reflection L3 eps0.25",
+      "error": 0.0,
+      "bound": 2e-09
+    },
+    {
+      "name": "nonzero time mode diagonal trace L3 q-1",
+      "error": 1.0467283057891834e-16,
+      "bound": 1e-12
+    },
+    {
+      "name": "nonzero time mode diagonal trace L3 q1",
+      "error": 1.0467283057891834e-16,
+      "bound": 1e-12
+    },
+    {
+      "name": "conditional scalar cycle harmonic coclosed",
+      "error": 7.850462293418876e-17,
+      "bound": 1e-10
+    },
+    {
+      "name": "conditional scalar cycle period one",
+      "error": 0.0,
+      "bound": 1e-10
+    },
+    {
+      "name": "conditional scalar cycle harmonic uniqueness rank",
+      "error": 0.0,
+      "bound": 0
+    }
+  ]
+}
+```
+
+#### Standalone scale/source checker
+
+```python
+"""Small reproducible controls for PROOF.md.
+
+Symbolic identities are exact. Floating theta roots and polylog values are
+numerical controls, not interval certificates. No trace modes are intentionally
+discarded in the theorem; finite computational tails below are labelled.
+"""
+import json
+import sympy as S
+import mpmath as mp
+
+
+def require(condition, label):
+    if not condition:
+        raise RuntimeError(label)
+
+
+def exact_checks():
+    t, m = S.symbols("t m", positive=True)
+    A, B, C, E, dA, dB, dC, dE = S.symbols(
+        "A B C E dA dB dC dE", nonzero=True
+    )
+    zp = -2*A/t**3-B/t**2+E
+    zpm = -2*A/(m*t)**3-B/(m*t)**2+E
+    dz = dA/t**2+dB/t+dC+dE*t
+    dzm = dA/(m*t)**2+dB/(m*t)+dC+dE*m*t
+    bracket = zpm/zp*dz-dzm/m
+    lead = (m-1)/m**3*(B*dA/(2*A)-dB)
+    require(S.simplify(S.limit(t*bracket, t, 0)-lead) == 0, "heat covector")
+    require(S.simplify(bracket.subs(m, 1)) == 0, "m1 bracket")
+    # Entire first-loop cancellation, before any expansion.
+    Z, DZ, Zp, alpha, beta = S.symbols("Z DZ Zp alpha beta", nonzero=True)
+    scale_multiplier = S.symbols("scale_multiplier", nonzero=True)
+    source = DZ/(beta*Z)-scale_multiplier*alpha*DZ
+    require(S.simplify(source.subs(1/(beta*Z),scale_multiplier*alpha)) == 0,
+            "entire m1 source")
+    # Pointwise directional derivative of the normalized full coefficient.
+    x = S.symbols("x")
+    deriv = S.diff((B+x*dB)/S.sqrt(A+x*dA), x).subs(x,0)
+    require(S.simplify(deriv-(dB-B*dA/(2*A))/S.sqrt(A)) == 0,
+            "normalized coefficient")
+    # Constant-density/zero-torsion quadratic terms have all zero first rows.
+    hs=S.symbols("h0:4"); vs=S.symbols("v0:4"); bs=S.symbols("b0:4")
+    q=2*sum(h*h for h in hs)-4*sum((v-b)**2 for v,b in zip(vs,bs))
+    zero={v:0 for v in hs+vs+bs}
+    require(all(S.diff(q,v).subs(zero)==0 for v in zero), "torsion first rows")
+    return {"exact_covector_leading_term":str(lead),
+            "entire_m1_cancel":True, "normalized_EH_covector":True,
+            "all_density_torsion_first_rows_at_zero":True}
+
+
+def numerical_controls():
+    mp.mp.dps=75
+    M=mp.mpf(128); p=(mp.sqrt(5)-1)/2; beta=2*p*p
+    z=mp.mpf(2)**-20; a0=z/(1-z); A=16*mp.pi**2
+    # Poisson-dual theta. Ten nonzero dual terms; this is NOT an interval bound.
+    def theta_and_derivative(t):
+        vals=[mp.exp(-mp.pi**2*j*j/t) for j in range(1,11)]
+        pref=mp.sqrt(mp.pi/t)
+        theta=pref*(1+2*sum(vals))
+        derivative=-theta/(2*t)+pref*2*sum(
+            vals[j-1]*mp.pi**2*j*j/t**2 for j in range(1,11))
+        return theta,derivative
+    def Z(t):
+        th,_=theta_and_derivative(t)
+        return 16*th**4
+    def Zp(t):
+        th,dt=theta_and_derivative(t)
+        return 64*th**3*dt
+    rows=[]; previous_g=None
+    for K in (0,4,8,12,16):
+        a=a0*p**K
+        L2=-mp.polylog(2,-a); L3=-mp.polylog(3,-a)
+        gap=L3-L2
+        require(a*a/8-2*a**3/27 < gap < a*a/8, "positive return gap")
+        initial=mp.sqrt(M*beta*A*L3)
+        # Twelve return terms; values are labelled numerical controls.
+        def equation(t):
+            return 1/(beta*Z(t))-M*sum(
+                (-1)**(j-1)*a**j*Zp(j*t)/Zp(t) for j in range(1,13))
+        root=mp.findroot(equation,(initial*mp.mpf('.99'),initial*mp.mpf('1.01')))
+        scale_squared=root/beta
+        physical_metric_factor=1/scale_squared
+        kactual=M*mp.sqrt(A)*gap/root
+        k0=mp.sqrt(M/beta)*gap/mp.sqrt(L3)
+        require(root>0 and kactual>0 and Z(root)>16, "root and zero modes")
+        require(abs(equation(root))<mp.mpf('1e-65'), "numerical scale residual")
+        row={"K":K,"a":mp.nstr(a,35),"t_root":mp.nstr(root,35),
+             "s_squared":mp.nstr(scale_squared,35),
+             "Z_root":mp.nstr(Z(root),35),
+             "kappa_actual":mp.nstr(kactual,35),
+             "kappa_actual_over_kappa0":mp.nstr(kactual/k0,35),
+             "scale_equation_residual":mp.nstr(equation(root),8)}
+        if previous_g is not None:
+            row["physical_metric_ratio_K_plus_4"]=mp.nstr(
+                physical_metric_factor/previous_g,35)
+        rows.append(row); previous_g=physical_metric_factor
+    return {"status":"numerical controls, no interval-certified tails",
+            "poisson_dual_terms":10,"return_terms":12,
+            "phi_squared":mp.nstr(p**-2,35),"rows":rows}
+
+
+if __name__=="__main__":
+    print(json.dumps({"symbolic":exact_checks(),"numeric":numerical_controls()},
+                     indent=2,ensure_ascii=False))
+```
+
+#### Scale/source receipt
+
+```json
+{
+  "symbolic": {
+    "exact_covector_leading_term": "(-dB + B*dA/(2*A))*(m - 1)/m**3",
+    "entire_m1_cancel": true,
+    "normalized_EH_covector": true,
+    "all_density_torsion_first_rows_at_zero": true
+  },
+  "numeric": {
+    "status": "numerical controls, no interval-certified tails",
+    "poisson_dual_terms": 10,
+    "return_terms": 12,
+    "phi_squared": "2.6180339887498948482045868343656381",
+    "rows": [
+      {
+        "K": 0,
+        "a": "0.00000095367522590181913549340772000095368",
+        "t_root": "0.12135074055182789199479669641565736",
+        "s_squared": "0.15885018166232779596719902370666578",
+        "Z_root": "10723.458269561000482891565726286832",
+        "kappa_actual": "0.0000000015069129740758235159820646951333871",
+        "kappa_actual_over_kappa0": "0.99999999999999999999998271784651071",
+        "scale_equation_residual": "-1.012051e-79"
+      },
+      {
+        "K": 4,
+        "a": "0.00000013913934029546332440334692025185194",
+        "t_root": "0.046351860690530789657513396099421539",
+        "s_squared": "0.060675373364804889310187346274382975",
+        "Z_root": "73499.668926881284053089659265323502",
+        "kappa_actual": "8.3977418102433661298515917751920261e-11",
+        "kappa_actual_over_kappa0": "1.0",
+        "scale_equation_residual": "8.4337584e-81",
+        "physical_metric_ratio_K_plus_4": "2.6180338554697676949135096841233802"
+      },
+      {
+        "K": 8,
+        "a": "0.000000020300156166424135330020721762009897",
+        "t_root": "0.017704835473484347637381396922713261",
+        "s_squared": "0.023175930517403429905273862803489912",
+        "Z_root": "503774.21782692344504237859006236408",
+        "kappa_actual": "4.6799014088646681017879065506316499e-12",
+        "kappa_actual_over_kappa0": "1.0",
+        "scale_equation_residual": "-5.271099e-82",
+        "physical_metric_ratio_K_plus_4": "2.6180339693045816924489463355974378"
+      },
+      {
+        "K": 12,
+        "a": "0.0000000029617528695056229067981320822173409",
+        "t_root": "0.0067626453929745251313602628819024435",
+        "s_squared": "0.0088524177463350980762437064507875182",
+        "Z_root": "3452919.8494698982883971389042773173",
+        "kappa_actual": "2.6080196930529403907514859426092852e-13",
+        "kappa_actual_over_kappa0": "1.0",
+        "scale_equation_residual": "-6.5888737e-83",
+        "physical_metric_ratio_K_plus_4": "2.6180339859128617937969846844580566"
+      },
+      {
+        "K": 16,
+        "a": "0.00000000043211392011522501756620281351148945",
+        "t_root": "0.0025831006866617737479355854939032547",
+        "s_squared": "0.0033813226970218579148914512510844361",
+        "Z_root": "23666664.722070680030891170800480251",
+        "kappa_actual": "1.4533995637331311820512065808847933e-14",
+        "kappa_actual_over_kappa0": "1.0",
+        "scale_equation_residual": "0.0",
+        "physical_metric_ratio_K_plus_4": "2.6180339883359773017676378202053178"
+      }
+    ]
+  }
+}
+```

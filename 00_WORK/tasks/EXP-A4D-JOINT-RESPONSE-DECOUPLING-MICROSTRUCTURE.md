@@ -19186,3 +19186,55 @@ all-stage coherent Gram, independent rank16 density norm, exact Golden
 birth and noncommuting inherited-programme source. The analytic large-K
 schedule is NOT represented as a fully executed huge native programme.
 Checker and observed receipt are embedded in primary7ea with SHA256.
+
+### Positive static-clock and history-scale source synthesis, 3 November 2026 (§7eb)
+
+Existing repository gvakhrushev/d0_15. Continue existing Draft #334 and the current
+owned branch exp/a4d-joint-response-continuation-2026-10-16, input
+ce60181005af05ec9da493bd10eb46ace69a457b. GitHub-first same-owner intake;
+no new execution, lifecycle transition, task or claim row.
+Phase: native realization and full source composition.
+Result location: existing A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md §7eb.
+Write paths: only that artifact and this existing brief.
+
+Exact parent substitution: construct the original P1 raw preparation
+psi=eta e^(-T)dT on a static continuum base, solving all sixteen independent
+preparation rows; append actual K birth;G operations with cold corner
+p^(K/2)B^n; use the original scale Euler equation to cancel the ENTIRE first
+return loop. The full covector, divided by its actual positive gain,
+converges to D[(integral R_g dVol_g)/(12pi sqrt(V))]. Consume the owned full16
+coframe/24-link coefficient at LC, b=dlog(mu/dVol_G)=0; do not reprove its
+Cartan classification. All forty geometric rows and every preparation row
+are retained. Actual four-level history growth yields g_(K+4)/g_K ->phi^2.
+
+Carrier/action: original conditional full16 positive-adjoint/v8 matrix
+instrument, full outcomes/reference/workspace and absolute baseline retained.
+Literal spectator heat adds Klog2/beta; re-extracting the whole-corner log
+would add Klog(2p)/beta. Their field sources agree at fixed K,beta; neither
+is silently identified with the raw growing-clock Hodge action.
+Norm/source: pull back e_K=bar e/s_K, psi_K=s_K bar psi to one fixed shape
+chart BEFORE dividing by kappa_K. Actual native finite-source errors are
+chosen o(kappa_K) after K using the owned strong-L1/raw-sum convergence.
+The full reduced source has error C(t_K+a_K)+epsilon_K, t_K=O(sqrt(a_K)).
+The continuum semigroup formula is not applied as an exact finite-power law.
+
+Consumed inputs: §7dz/§7ea; A4D_NATIVE_MATTER_OBSERVER_PAIRING.md;
+A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md; A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md;
+A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md; original v8 RESULT.md;
+A4D_FINAL_REGULAR_SOURCE_COMPOSITION_REVIEW_2026_10_29.md.
+Remaining application: actual history-to-physical-clock-class and v8
+apparatus/calibration/admitted-comparison binding, including full controller
+and work price. Static LC/constant-density base and controlled smooth source
+expansion remain explicit. Scale root is a maximum, not prospective minimum;
+the limiting Einstein equation includes the global volume multiplier.
+No general nonstatic/nonvacuum full-CAR selection or unrestricted closure is
+asserted. Exact Golden rigidity cannot consume an asymptotic scale law.
+
+Smallest decisive checks: symbolic original P1/static coordinate identities,
+full16 finite coordinate preparation control (explicitly not native stencil),
+exact entire-m1 cancellation and full DA/DB coefficient projection; numerical
+whole-torus theta scale-root controls with non-interval-certified tails.
+Checker/receipt pairs are embedded verbatim in §7eb for durable replay.
+Validation: affected repository structural/assembly gates on final inputs;
+no unchanged broad physical or Lean replay. Handoff: existing PR, exact positive
+full-source statement, retained physical map, tests. No PASS-count promotion.
