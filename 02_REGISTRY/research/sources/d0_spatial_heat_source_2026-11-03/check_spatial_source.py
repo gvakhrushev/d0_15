@@ -110,7 +110,7 @@ def jet(L,m=1,scale=.25,beta=2*((math.sqrt(5)-1)/2)**2):
    D1=dplus+dminus.conj().T
    d2=scale*(-C[0]*w0/2+C[1]*w1/2+h*q*q/2*(C[0]@GJ@GJ*z0-C[1]@GB@GB*z1))
    D2=d2+d2.conj().T
-   bs=np.stack([Db@D1+D1@Db,A[2]@D1,A[2].T@D1,D1@A[2],D1@A[2].T@D1,
+   bs=np.stack([Db@D1+D1@Db,A[2]@D1,A[2].T@D1,D1@A[2],D1@A[2].T,
                 A[3]@D1+D1@A[3],A[3].T@D1+D1@A[3].T])
    gram=np.einsum('aij,bij->ab',bs.conj(),bs)
    normsq=np.einsum('...a,ab,...b->...',coeff.conj(),gram,coeff).real
@@ -225,8 +225,8 @@ def exact_symbol_jets():
     w=lambda k:[ii*k,-k*k/2,-ii*k**3/6]
     z=lambda k:[1,ii*k,-k*k/2]
     w0,w1=w(k0),w(k1);z0,z1=z(k0),z(k1)
-    dp=[ii/2*(CC[1]*w0[j]+CC[0]*w1[j])+q/2*(CC[0]*GJ*z0[j]+CC[1]*GB*z1[j]) for j in range(3)]
-    dm=[-ii/2*(CC[1]*w0[j]+CC[0]*w1[j])+q/2*(CC[0]*GJ*z0[j]+CC[1]*GB*z1[j]) for j in range(3)]
+    dp=[ii/2*(CC[1]*w0[j]+CC[0]*w1[j])+q/2*(CC[0]@GJ*z0[j]+CC[1]@GB*z1[j]) for j in range(3)]
+    dm=[-ii/2*(CC[1]*w0[j]+CC[0]*w1[j])+q/2*(CC[0]@GJ*z0[j]+CC[1]@GB*z1[j]) for j in range(3)]
     B=[(dp[j]+dm[j].H).applyfunc(sp.expand) for j in range(3)]
     dk,dpp=flat(kk),flat(pp)
     A=[add(dpp[a]*B[j-a]+B[j-a]*dk[a] for a in range(j+1)).applyfunc(sp.expand) for j in range(3)]
