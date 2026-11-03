@@ -111584,6 +111584,706 @@ print(json.dumps(result,sort_keys=True,indent=2))
 ```
 <!-- END 7dy NATIVE QUERY PROGRAM RECEIPT -->
 
+## 7dz. Include the actual spectral return and clock preparation in the internal-time source test
+
+3 November 2026. SAME #334 / constitutive/native-programme-v1; native
+realization and final composition. Input cc98cf8d9d8efe38bbddce7d6ad839ddd3ddd7c7.
+The existing 31 October native-word theorem supplies the relevant literal
+SourceI reachability/price application. The new parent is the 3 November
+internal-clock source test: can
+the already specified return and matter terms repair its spatial-heat
+source mismatch on the SAME field and variation?
+
+Consume [the internal-clock witness](A4D_INTERNAL_CLOCK_LORENTZ_SOURCE_TEST_2026_11_03.md),
+the [original P1 joint observer map](A4D_NATIVE_MATTER_OBSERVER_PAIRING.md),
+the full positive-adjoint price in
+[full-Lorentz §§2–3](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md), and
+the [fixed-positive-time source limit](A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md).
+No new price, clock field, reporter or geometrical family is introduced.
+The conclusion below covers the specified conditional v8 H+J+R price;
+it does not identify that matrix instrument with every physical D0 price.
+
+### 1085. Keep the one actual finite price before taking any limit
+
+On the full16 proper-Lorentz-link stencil let Delta_h=D_h^2,
+alpha_h=p^2 h^2/128, m_h=2n_h and beta_h=m_h alpha_h. Use the REAL
+retained round count n_h and the original z=2^-20, M=128:
+
+    B_h=I-alpha_h Delta_h,  K_h=B_h^m_h,
+    Z_h=Tr K_h, F_h=(1-z)I+zK_h, C_h=128^(n_h+1),
+    S_h=log(C_h Z_h)/beta_h-128 Tr log F_h+R_h,
+    R_h=<w_h,Delta_h w_h>/<w_h,w_h>.                    (1134)
+
+Every spatial Fourier mode, exterior grade, retained workspace and reference
+multiplicity stays in this expression. There is no normalized replacement
+of its trace, no additional subtraction and no independent return law.
+For a field variation at fixed h,n_h,z, the exact finite trace identities are
+
+    DH_h=-Tr[B_h^(m_h-1) DDelta_h]/Z_h,
+    DJ_h=128 z beta_h Tr[B_h^(m_h-1)F_h^-1 DDelta_h],
+    DR_h=<w_h,DDelta_h w_h>/N_h
+          +2 Re<Dw_h,(Delta_h-R_h)w_h>/N_h,             (1135)
+
+where N_h=<w_h,w_h>. Cyclic trace is used; DDelta need not commute
+with Delta. The initial preparation term is explicitly present.
+Changes of round count, beta, z, rank, scene or another selected price
+are not the field variation in1135 and retain their own equations.
+
+### 1086. The existing internal clock fixes every operand of the test
+
+Use precisely the incoming periodic coordinates(t,x,y,z), period2pi,
+a(x)=epsilon sin x, f(x)=cos2x, epsilon=1/128, s=1/4. The first two
+coframe rows are(1,a)/(s sqrt(1+a^2)),(-a,1)/(s sqrt(1+a^2)); the
+last rows are exp(sigma f)dy/s and dz/s. Vary sigma and the actual
+omega_LC(e_sigma) together inside the original independent connection
+space. The raw grade-one matter is e0, the two original scalar operands
+are constant, and all other exterior components remain in the carrier.
+
+The owned P1 map gives a timelike current and a positive metric
+
+    v=s(1,a,0,0)/sqrt(1+a^2),
+    G_sigma=s^-2 diag(1,1,exp(2sigma f),1).              (1136)
+
+The current is the normalized Lorentz gradient of
+T=t-epsilon cos x. Its actual dependence on the coframe and its
+normalization are included. No external observer is frozen instead.
+The raw observer is n=e0 on this particular coframe variation; this
+does not remove independent observer or preparation directions.
+
+Under the owned exterior/LC intertwining, the ACTUAL clock matter is
+the coordinate one-form
+
+    w_clock=[dt+a(x)dx]/[s sqrt(1+a(x)^2)].             (1137)
+
+It has unit pointwise G_sigma norm and is independent of sigma.
+It is not an assumed lowest eigenvector, a chosen spectral cutoff or
+an unrelated constant coordinate form. The original counting measure
+dx is retained. Replacing it by dVol_G would be a different price and
+is not used below.
+
+### 1087. The full spectral return has the same exact zero source
+
+For every exterior occupation S the coordinate pairing weight is
+s^(2|S|)exp[-2sigma f 1_(y in S)]. At sigma0 the fixed-Hilbert operator
+is the full flat Hodge-Dirac, Delta0=-s^2 sum_mu partial_mu^2 tensor I16.
+Its first variation has only Fourier shifts k_x->k_x+/-2, including
+all pairing, adjoint and LC derivatives. Therefore each diagonal
+Fourier block of DDelta is zero, not merely their sum.
+
+For every spectral weight q for which q(Delta0) DDelta is trace-class,
+
+    Tr[q(Delta0) DDelta]=0.                             (1138)
+
+This consumes the incoming all-mode heat proof with a different
+weight. In particular it covers BOTH weights
+exp(-beta Delta0)/Tr exp(-beta Delta0) and
+128 z beta exp(-beta Delta0)/[(1-z)I+z exp(-beta Delta0)]
+for every beta>0 and0<z<1. Thus the continuum SOURCE limits of
+H and the specified J both vanish on this variation. The latter is
+not an arbitrary independent QUERY corner: it is the spectral return
+already present in1134. That restriction is substantive.
+
+The infinite absolute logdet is not called finite. At each finite h,
+the complete constant -128 dim(H_h)log(1-z), all record factors and
+the absolute heat price remain. Their field derivatives at this fixed
+carrier are zero; their changes under rank/clock variations are not.
+Equation1138 is a source statement justified by trace-class weights,
+not a new subtraction or a continuum equality of unrenormalized prices.
+
+### 1088. The actual Rayleigh source is zero here without freezing matter
+
+Let E be the space of y-independent coordinate forms with NO dy factor.
+It has eight exterior basis components at each Fourier label; it is used only to
+locate the actual prepared vector, NEVER to truncate a thermal trace.
+On E, d has no y derivative and neither d nor its adjoint creates dy.
+All corresponding pairing weights are independent of sigma. Hence
+
+    D_sigma|E=D_0|E, Delta_sigma|E=Delta_0|E,
+    R_sigma=s^2 epsilon^2/[2 sqrt(1+epsilon^2)],
+    dR_sigma/dsigma=0 for every sigma.                  (1139)
+
+To verify the value, write theta=atan(epsilon sin x). The two orthonormal
+components of1137 are(cos theta,sin theta), so their squared derivative
+sum is theta_x^2. The full normalized Rayleigh quotient is
+s^2<epsilon^2 cos^2 x/(1+epsilon^2 sin^2 x)^2>, which equals1139.
+For example differentiate the elementary mean
+<(1+u sin^2 x)^-1>=(1+u)^-1/2 and combine it with itself;
+this proves the integral, independently of the numerical quadrature.
+Its actual value is approximately1.907290427815986e-6. Both d and d*
+and the true normalization are used; constant q of the two scalar
+report operands does not imply this Rayleigh energy is zero.
+
+The independent preparation equations are NOT thereby solved. Even
+at fixed positive pairing, the perpendicular component of
+(Delta0-R)w_clock is -s^2 theta_xx times its perpendicular unit form.
+At x=pi/2 it is s^2 epsilon/(1+epsilon^2), which is nonzero. The
+radial residual is(s^2 theta_x^2-R)w_clock. Equation1135 retains both.
+That fixed-pairing component alone is not the full P1 preparation
+covector. The following actual independent preparation computes it,
+including its induced observer, rather than assuming no cancellation.
+
+Keep the coframe and its LC connection fixed and take the original
+grade-one field through the timelike family
+
+    psi_tau=cosh(tau b(x)) e0+sinh(tau b(x)) e1,
+    b(x)=sin x, n_tau=P1 psi_tau=psi_tau.                 (1139a)
+
+Its Lorentz norm and pointwise positive norm are exactly one. This is
+an existing independent matter direction, not a new clock factor or
+new primitive. Its current still lies in the t,x plane; its one-form
+has an integrating factor and is Frobenius. For this odd periodic b,
+the ratio of its x and t coefficients is odd in sin x, so its integral
+over a period is zero: a periodic local-time lift remains available.
+Only the original two scalar report operands remain constant.
+
+Let c0=(cos theta,sin theta), c1=(-sin theta,cos theta) and r=tau b.
+In coordinate one-form components, with the actual counting measure,
+
+    alpha_tau=(cosh r c0-sinh r c1)/s,
+    W1_tau alpha_tau=s(cosh r c0+sinh r c1),
+    det(W1_tau restricted to t,x)=s^4,
+    alpha_tau^T W1_tau alpha_tau=1.                     (1139b)
+
+The only components of d alpha and d* alpha use derivatives in x.
+Using BOTH terms and this true normalization gives the complete
+Rayleigh preparation derivative
+
+    d_tau R|0=2s^2 <theta_x cos(2theta)b_x
+                              -theta_x^2 sin(2theta)b>
+       =2s^2 epsilon <cos^2 x
+           (1-2epsilon^2 sin^2 x-epsilon^4 sin^4 x)
+                      /(1+epsilon^2 sin^2 x)^3>
+       >=s^2 epsilon (1-2epsilon^2-epsilon^4)/(1+epsilon^2)^3>0.
+                                                               (1139c)
+
+The FULL H and J preparation sources have zero continuum limit in
+this direction. To see this, at the flat positive metric the infinitesimal
+one-form whitening is the symmetric traceless matrix
+S(x)=b(x)[c0 c1^T+c1 c0^T]. In the diagonal Fourier trace, only its
+spatial average survives, and the derivative terms have zero average.
+The remaining symbol is 2s^2 k^T average(S) k times I16. Each spectral
+weight q(s^2|k|^2) is invariant under coordinate permutations and sign
+flips on this torus, so its full sum is proportional to trace(S)=0.
+This includes precisely both exponentially decaying weights of1138.
+Thus1139c is the full continuum H+J+R row, not just its direct matter
+component. It is approximately0.0004882439995979610, with the strict
+lower bound0.0004881322583948357.
+
+The finite checker implements the same variation without introducing
+independent observer coordinates. Its one-particle whitening is the
+actual inverse boost L(n_tau); L(n_tau)psi_tau=e0 exactly. On full16
+forms I_tau=Lambda(L), so the raising derivative is
+[K,d_h], K_x=-b(x)(C0 I1+C1 I0). The full selfadjoint derivative is
+[K,d_h]+[K,d_h]*, with both endpoint whitenings and shifted adjoint.
+The whitened prepared vector stays e0 as a CONSEQUENCE of this formula,
+not because the physical input or observer was frozen. H, J and R
+are differentiated with the same true operator and normalizers.
+
+Therefore the limiting full H+J+R covector is nonzero on this particular
+clock point's stated conditional P1 domain, with the fixed direction
+||b||_infty=1. This is an
+OFF-SHELL source test. It does not prohibit another clock solution,
+another admitted programme or the constructive regular kappa sector.
+
+### 1089. Apply the fixed-time finite source theorem on the same stencil
+
+Use exact proper links exp(h omega_LC), the shifted Hilbert adjoint and
+the unchanged finite Julia/SELECT definition. Choose
+n_h=ceil[(2p^2)/(2alpha_h)], so beta_h->2p^2 and every n_h is an actual
+integer number of retained rounds. Smooth coefficients, inverse coframe,
+observer and their sigma jets stay on a uniform compact collar. At small
+h the transported creation operators are strict contractions; the actual
+finite controls below also check that condition directly.
+
+The owner states the torus with period 1. The same proof on the present
+period-2pi torus uses h=2pi/L, its physical Fourier frequencies and the
+same alpha_h=p^2 h^2/128. Only the fixed geometric constants in its
+estimates change; there is no rescaling of the price or its operands.
+The owned fixed-time trace/first-source estimate applies to the H/J
+terms of1135. Its clock error retains the moving Z_h and F_h inverse.
+For the explicitly smooth1137, direct finite operator/first-jet
+consistency also gives convergence of its Rayleigh quotient and first
+source; no eigenshell compactness or joint-critical premise is needed
+for this fixed smooth input. It follows that
+
+    lim_(h->0) D_sigma S_h|sigma0=0.                     (1140)
+
+The same consistency and source theorem apply to1139a, including
+its moving observer and full preparation. Its limiting full source
+is the strictly positive1139c. Thus all sufficiently fine native
+stencils of this specific conditional family also have a nonzero
+preparation row; no joint-critical premise was used to take the limit.
+
+Every finite S_h in this statement remains the complete1134. In
+particular this is not the h^-2 limit of the separate3November
+spatial witness, nor an assertion that each finite derivative is zero.
+
+The same field and original nonlinear direct-click functional in the
+incoming theorem have
+
+    D_sigma I_tau|0=-5.727241765244659...e-10<0            (1141)
+
+per coordinate volume, with the exact analytical sign/collar certificate
+preserved there. The full integral has the same fixed(2pi)^4 factor.
+Consequently adding this actual spectral J and actual clock Rayleigh
+term does NOT repair the proposed fixed-positive-time source equality.
+In particular no equality D_sigma S_h=gamma_h D_sigma I_tau+o(gamma_h)
+is possible with liminf |gamma_h|>0. A shrinking gain amplifying finite
+artifacts after division, a coupled short-time regime,
+or a genuinely different independently selected return/price still
+requires its own calculation. None is excluded by1140.
+
+### 1090. Changed evidence and the consuming route
+
+The new checker builds the original full16 variable-coframe stencil
+and numerically evaluates its proper-link exponentials and Frechet
+derivatives; the displayed continuum identities are proved analytically.
+Its derivative is1135 on the SAME Delta_h and raw clock input. It
+includes all4096 modes at L4 and all65536 modes at L8. It also evaluates
+the complete finite prices on both sides of the sigma variation;
+the fixed C_h cancels algebraically in that difference only.
+No enormous workspace matrix is constructed: its actual multiplicity
+is retained through log C_h and M=128, exactly as in the owned price.
+
+The checker is distinct from the incoming weighted-coordinate control:
+here the links are the native proper-Lorentz links and their finite
+artifacts remain. The continuum zero is proved by1138–1139 and the
+owned source limit, not inferred from a small computed residual.
+Direct preparation residuals and all endpoint/round metadata are
+included, together with the complete P1 preparation row1139c and
+independent finite-price checks of both sigma and preparation variations.
+This is a conditional matrix-instrument computation, not
+an emitted G/CX/SourceI programme or a new physical-admission proof.
+
+The route correction is precise: the remaining specified spectral
+return and supplied clock preparation do not restore this spatial-only
+Lorentz source, and the actual independent preparation row is nonzero.
+The physical realization premise is not discharged. The constructive regular kappa source
+theorem and its faithful-task variation graph are preserved: they use
+a different complete reporter and are not refuted by this calculation.
+Their consuming physical obligation is still the actual operation/task
+domain with its independent normals. Another renaming of the positive
+metric or omission of the preparation equation cannot supply it.
+No universal D0 impossibility, new field constraint, action, task/result
+node, accepted claim, Ready state or merge is asserted. The original
+full objective remains active; GR_closed=false.
+
+### 1091. Frozen checker and observed receipt
+
+Run the embedded checker below from the repository root with numpy, scipy,
+sympy and mpmath. Its source pins cover the incoming field/sign result
+and both original complete-price/source owners. It does not rerun the
+old geometrical root, native-word compilation, Lean or unchanged large
+mathematical checkers. The recorded checks are local, not CI or independent
+scientific acceptance.
+
+Observed on Python 3.12.14, numpy 2.3.5, scipy 1.16.3, sympy 1.14.0,
+mpmath 1.3.0. Both normal and `-O` runs used `-W error`, exited zero,
+had empty stderr and produced byte-identical receipts. The isolated runtime
+avoids the system-Python BLAS warnings seen during development; that earlier
+warning-bearing run is not the evidence below. There are 2673 checks,
+mostly repeated finite-mode/window checks, not 2673 scientific results.
+The finite matrix values below are floating-point controls, not interval
+certificates. The continuum zeros and strict positive preparation bound
+come from1138--1139c and the stated source-limit theorem.
+
+| Spatial L | Complete exterior/spatial modes | Real retained rounds | Full sigma source | Full P1 preparation source |
+|---:|---:|---:|---:|---:|
+| 4 | 4096 | 52 | -3.43608e-16 | 3.239906052061285e-4 |
+| 8 | 65536 | 208 | -5.046188016123766e-7 | 8.567649106331695e-4 |
+
+The nonzero L8 artifacts are retained. The small L4 sigma result is not
+used to infer a continuum zero. Independent full-price central differences
+at L8 agree with the sigma source within6.827e-9 and with the moving-P1
+preparation source within4.760e-11. Both changes use the same operator,
+input normalization, spectral return, actual round count and full heat.
+
+Checker SHA256: `51babbf66be77e7f40055d856f486a12ea48cd450e5c9429e4086cb70f8e3557`.
+Receipt SHA256: `f88db9cb9fa2315b85a3ed413ae078f5371555960d1f8d3496b21b3a7f380946`.
+
+<!-- BEGIN 7dz FULL CLOCK PRICE CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Same internal-clock field: spectral return, actual Rayleigh term, finite native stencil.
+
+All finite traces include every Fourier mode and all16 exterior components.
+The v8 matrix instrument is not presented as an emitted primitive programme.
+"""
+from pathlib import Path
+import os
+os.environ.setdefault('OPENBLAS_NUM_THREADS','1')
+os.environ.setdefault('OMP_NUM_THREADS','1')
+import hashlib,itertools,json,math,platform
+import numpy as np
+import scipy
+import scipy.linalg as la
+import sympy as sp
+import mpmath as mp
+
+ROOT=Path.cwd();CHECKS=[]
+def need(ok,label):
+    if not bool(ok):raise ArithmeticError(label)
+    CHECKS.append(label)
+pins={
+ '02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/check_internal_clock.py':'186a05078e421b301170c37effb758c83965577c0729bd03e56dee57b0cea736',
+ '02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/result.json':'f0fa7e53b5331c6a58dd7c407ae597c0178800fe8e75b29d9af19ecfc2c58d6c',
+ '02_REGISTRY/research/A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md':'4b69c188dcb3571429f4b45eddb1713621014de260c6e8b2095cc2907d9e4730',
+ '02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md':'a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915',
+ '02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md':'badfe4177ddcd90f9b138419b84afa8f828574c7b7d191df5fec8f266f1130f9'}
+for path,pin in pins.items():need(hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==pin,'unchanged source '+path)
+prior=json.loads((ROOT/'02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/result.json').read_text())
+
+C=[]
+for mu in range(4):
+    mat=np.zeros((16,16))
+    for mask in range(16):
+        if not (mask>>mu)&1:mat[mask|(1<<mu),mask]=(-1)**sum((mask>>j)&1 for j in range(mu))
+    C.append(mat)
+gen=np.array([[C[a]@C[b].T for b in range(4)] for a in range(4)])
+Ny=np.diag([(j>>2)&1 for j in range(16)])
+Pfree=np.eye(16)-Ny
+for mu in (0,1,3):
+    need(np.max(abs(Ny@C[mu]@Pfree))==0,'y-free raising invariant '+str(mu))
+    need(np.max(abs(Ny@C[mu].T@Pfree))==0,'y-free lowering invariant '+str(mu))
+need(np.trace(Pfree)==8,'y-free subcomplex is not a truncation of the thermal trace')
+
+# The actual coordinate clock one-form has two components and unit positive norm.
+x,eps,scale=sp.symbols('x eps scale',positive=True,real=True)
+a=eps*sp.sin(x);theta_prime=sp.diff(a,x)/(1+a*a)
+z0=1/sp.sqrt(1+a*a);z1=a/sp.sqrt(1+a*a)
+need(sp.simplify(z0*z0+z1*z1)==1,'clock positive normalization')
+need(sp.simplify(sp.diff(z0,x)**2+sp.diff(z1,x)**2-theta_prime**2)==0,
+     'complete Rayleigh numerator includes both clock components')
+res_perp=sp.simplify(-z1*(-sp.diff(z0,x,2))+z0*(-sp.diff(z1,x,2)))
+need(sp.simplify(res_perp+sp.diff(theta_prime,x))==0,'actual nonzero amplitude residual retained')
+need(sp.simplify(res_perp.subs(x,sp.pi/2)-eps/(1+eps*eps))==0,'direct preparation is not falsely called stationary')
+
+mp.mp.dps=65
+ee=mp.mpf(1)/128;ss=mp.mpf(1)/4
+rayleigh=ss*ss*ee*ee/(2*mp.sqrt(1+ee*ee))
+quad=ss*ss*mp.quad(lambda t:ee*ee*mp.cos(t)**2/(1+ee*ee*mp.sin(t)**2)**2,[0,mp.pi/2,mp.pi,3*mp.pi/2,2*mp.pi])/(2*mp.pi)
+need(abs(quad-rayleigh)<mp.mpf('1e-60'),'exact continuum Rayleigh integral')
+
+# Independent P1 preparation changes its own observer/pairing: no frozen n.
+# psi_tau=cosh(tau b)e0+sinh(tau b)e1, b=sin(x), L(n_tau)psi_tau=e0.
+th,b,thx,bx,tau=sp.symbols('th b thx bx tau',real=True)
+O=sp.Matrix([[sp.cos(th),sp.sin(th)],[-sp.sin(th),sp.cos(th)]])
+boost=sp.Matrix([[sp.cosh(tau*b),sp.sinh(tau*b)],
+                 [sp.sinh(tau*b),sp.cosh(tau*b)]])
+W1=scale**2*O.T*boost**2*O
+coord=O.T*sp.Matrix([sp.cosh(tau*b),-sp.sinh(tau*b)])/scale
+flux=W1*coord
+need(sp.simplify((coord.T*flux)[0]-1)==0,'actual P1 preparation normalization')
+need(sp.simplify(W1.det()-scale**4)==0,'full P1 volume of the t,x block is fixed')
+dx=lambda f:sp.diff(f,th)*thx+sp.diff(f,b)*bx
+energy=scale**4*dx(coord[0])**2+dx(flux[1])**2
+prep_formula=2*scale**2*(thx*sp.cos(2*th)*bx-thx**2*sp.sin(2*th)*b)
+need(sp.trigsimp(sp.diff(energy,tau).subs(tau,0)-prep_formula)==0,
+     'full P1 Rayleigh variation includes moving dstar and normalization')
+need(sp.simplify(sp.diff(W1,tau).subs(tau,0).trace())==0,
+     'full P1 spectral variation is traceless at the flat positive metric')
+prep_value=2*ss**2*ee*mp.quad(lambda t:mp.cos(t)**2*(1-2*ee**2*mp.sin(t)**2-ee**4*mp.sin(t)**4)
+        /(1+ee**2*mp.sin(t)**2)**3,[0,mp.pi/2,mp.pi,3*mp.pi/2,2*mp.pi])/(2*mp.pi)
+prep_lower=ss**2*ee*(1-2*ee**2-ee**4)/(1+ee**2)**3
+need(prep_value>prep_lower>0,'strict full preparation source, not just a fixed-pairing component')
+
+ETA=np.diag([1.,-1.,-1.,-1.])
+def geometry(xx,sigma,epsilon=1/128,s=.25):
+    th=np.arctan(epsilon*np.sin(xx));thx=epsilon*np.cos(xx)/(1+(epsilon*np.sin(xx))**2)
+    co,si=np.cos(th),np.sin(th);f=np.cos(2*xx);fx=-2*np.sin(2*xx)
+    w=np.exp(sigma*f)
+    e=np.array([[co,si,0,0],[-si,co,0,0],[0,0,w,0],[0,0,0,1]],dtype=complex)/s
+    ex=np.array([[-si*thx,co*thx,0,0],[-co*thx,-si*thx,0,0],
+                 [0,0,sigma*fx*w,0],[0,0,0,0]],dtype=complex)/s
+    F=la.inv(e);g=e.T@ETA@e;gx=ex.T@ETA@e+e.T@ETA@ex;gi=la.inv(g)
+    Gamma=np.zeros((4,4,4),complex)
+    for mu,rho,nu in itertools.product(range(4),repeat=3):
+        Gamma[mu,rho,nu]=sum(gi[rho,b]*((gx[b,nu] if mu==1 else 0)
+             +(gx[b,mu] if nu==1 else 0)-(gx[mu,nu] if b==1 else 0))/2 for b in range(4))
+    Om=np.array([e@Gamma[mu]@F-(ex@F if mu==1 else 0) for mu in range(4)])
+    u=F@ETA
+    return u,Om,e,ex,Gamma
+
+def finite(L,sigma=0.,preparation=0.):
+    h=2*math.pi/L;p=(math.sqrt(5)-1)/2;alpha=p*p*h*h/128
+    rounds=math.ceil((2*p*p)/(2*alpha));m=2*rounds;beta=m*alpha;z=2**-20;Mfeedback=128
+    size=16*L;eye=np.eye(16);mats=[];max_window=0.;lorentz_error=0.;torsion_error=0.
+    for xx in np.arange(L)*h:
+        u,omega,e,ex,Gamma=geometry(xx,sigma)
+        uc,oc,*_=geometry(xx,sigma+1e-30j)
+        du=np.imag(uc)/1e-30;dw=np.imag(oc)/1e-30
+        u=u.real;omega=omega.real
+        As=[];dAs=[];Bs=[];dBs=[]
+        for mu in range(4):
+            lorentz_error=max(lorentz_error,float(la.norm(omega[mu].T@ETA+ETA@omega[mu])))
+            torsion_error=max(torsion_error,float(la.norm((ex if mu==1 else 0)+omega[mu]@e-e@Gamma[mu])))
+            cm=np.einsum('a,aij->ij',u[mu],C);dcm=np.einsum('a,aij->ij',du[mu],C)
+            Om=np.einsum('ab,abij->ij',omega[mu],gen);dOm=np.einsum('ab,abij->ij',dw[mu],gen)
+            transport,dtransport=la.expm_frechet(h*Om,h*dOm)
+            As.append(cm@transport/h);dAs.append((dcm@transport+cm@dtransport)/h)
+            Bs.append(-cm/h);dBs.append(-dcm/h)
+            max_window=max(max_window,float(la.norm(cm@transport,2)),float(la.norm(cm,2)))
+        mats.append((As,dAs,sum(Bs),sum(dBs)))
+    Kj=[-math.sin(xx)*(gen[0,1]+gen[1,0]) for xx in np.arange(L)*h]
+    Kprep=la.block_diag(*Kj)
+    Tp=la.block_diag(*[la.expm(preparation*K) for K in Kj])
+    Tinv=la.block_diag(*[la.expm(-preparation*K) for K in Kj])
+    Z=0.;dHnum=0.;Jprice=0.;Jdot=0.;modes=0;minB=1.;R=None;Rdot=None;prep=None
+    Hprep_num=0.;Jprep=0.;Rprep=None
+    for ks in itertools.product(range(L),repeat=3):
+        phases=np.exp(2j*np.pi*np.array(ks)/L);d=np.zeros((size,size),complex);de=np.zeros_like(d)
+        for j,(A,dA,B,dB) in enumerate(mats):
+            sl=slice(16*j,16*(j+1));q=(j+1)%L;sn=slice(16*q,16*(q+1))
+            d[sl,sl]=B+A[0]*phases[0]+A[2]*phases[1]+A[3]*phases[2]
+            de[sl,sl]=dB+dA[0]*phases[0]+dA[2]*phases[1]+dA[3]*phases[2]
+            d[sl,sn]+=A[1];de[sl,sn]+=dA[1]
+        if preparation!=0:
+            d=Tp@d@Tinv;de=Tp@de@Tinv
+        dprep=Kprep@d-d@Kprep
+        D=d+d.conj().T;Ddot=de+de.conj().T;Dprep=dprep+dprep.conj().T
+        nu,V=la.eigh(D,check_finite=False,driver='evr');lam=nu*nu
+        dlam=2*nu*np.real(np.einsum('ij,ij->j',V.conj(),Ddot@V))
+        dlam_prep=2*nu*np.real(np.einsum('ij,ij->j',V.conj(),Dprep@V))
+        B=1-alpha*lam;minB=min(minB,float(B.min()))
+        need(B.min()>p**3,'actual native positive B window L'+str(L))
+        Km=np.exp(m*np.log(B));Pm=np.exp((m-1)*np.log(B));den=1+z*(Km-1)
+        Z+=float(Km.sum());dHnum-=float(np.dot(Pm,dlam))
+        Jprice-=Mfeedback*float(np.log1p(z*(Km-1)).sum())
+        Jdot+=Mfeedback*z*beta*float(np.dot(Pm/den,dlam))
+        Hprep_num-=float(np.dot(Pm,dlam_prep))
+        Jprep+=Mfeedback*z*beta*float(np.dot(Pm/den,dlam_prep))
+        modes+=size
+        if ks==(0,0,0):
+            psi=np.zeros(size);psi[1::16]=1
+            dp=D@psi;N=float(np.dot(psi,psi));R=float(np.vdot(dp,dp).real/N)
+            Rdot=float(2*np.vdot(dp,Ddot@psi).real/N)
+            Rprep=float(2*np.vdot(dp,Dprep@psi).real/N)
+            prep=float(la.norm(D@dp-R*psi)/math.sqrt(N))
+    H=((rounds+1)*math.log(128)+math.log(Z))/beta
+    Hdot=dHnum/Z;total=Hdot+Jdot+Rdot
+    need(modes==16*L**4,'all spatial Fourier and full16 modes retained L'+str(L))
+    need(lorentz_error<2e-14 and torsion_error<2e-14,'same actual LC proper-link jets L'+str(L))
+    # The moving P1 whitening is exp(preparation*K): its exterior norm
+    # and inverse norm are <=exp(abs(preparation)), at either endpoint.
+    max_window*=math.exp(2*abs(preparation))
+    need(max_window<1,'same open Julia matrix window including P1 preparation L'+str(L))
+    return {'L':L,'h':h,'m':m,'rounds':rounds,'alpha':alpha,'actual_beta':beta,'input_rank':16*L**4,
+            'heat_modes':modes,'M_feedback':128,'log_C':(rounds+1)*math.log(128),
+            'H':H,'J':Jprice,'R':R,'full_price':H+Jprice+R,'Z':Z,
+            'H_sigma':Hdot,'J_sigma':Jdot,'R_sigma':Rdot,'full_sigma':total,
+            'H_preparation':Hprep_num/Z,'J_preparation':Jprep,'R_preparation':Rprep,
+            'full_preparation':Hprep_num/Z+Jprep+Rprep,
+            'direct_preparation_residual_norm':prep,'minimum_B':minB,'Julia_creation_norm_bound':max_window,
+            'Lorentz_error':lorentz_error,'Cartan_error':torsion_error}
+
+controls=[finite(L) for L in (4,8)]
+step=2**-21
+ends=[finite(8,sign*step) for sign in (-1,1)]
+fd={}
+for key,derivative in [('H','H_sigma'),('J','J_sigma'),('R','R_sigma'),('full_price','full_sigma')]:
+    heat_difference=math.log(ends[1]['Z']/ends[0]['Z'])/controls[1]['actual_beta']
+    if key=='H':difference=heat_difference
+    elif key=='full_price':difference=heat_difference+ends[1]['J']-ends[0]['J']+ends[1]['R']-ends[0]['R']
+    else:difference=ends[1][key]-ends[0][key]
+    value=difference/(2*step);err=abs(value-controls[1][derivative])
+    need(err<2e-8,'independent full finite price derivative '+key)
+    fd[key]={'value':value,'source':controls[1][derivative],'error':err,'step':step}
+need(all(v['direct_preparation_residual_norm']>0 for v in controls),'independent preparation residual is retained')
+prep_step=2**-12
+prep_ends=[finite(8,preparation=sign*prep_step) for sign in (-1,1)]
+prep_fd={}
+for key,derivative in [('H','H_preparation'),('J','J_preparation'),('R','R_preparation'),('full_price','full_preparation')]:
+    heat_difference=math.log(prep_ends[1]['Z']/prep_ends[0]['Z'])/controls[1]['actual_beta']
+    if key=='H':difference=heat_difference
+    elif key=='full_price':difference=heat_difference+prep_ends[1]['J']-prep_ends[0]['J']+prep_ends[1]['R']-prep_ends[0]['R']
+    else:difference=prep_ends[1][key]-prep_ends[0][key]
+    value=difference/(2*prep_step);err=abs(value-controls[1][derivative])
+    need(err<2e-8,'independent full P1 preparation price derivative '+key)
+    prep_fd[key]={'value':value,'source':controls[1][derivative],'error':err,'step':prep_step}
+
+out={'status':'PASS_FULL_CLOCK_SPECTRAL_PRICE_SOURCE','input_commit':'cc98cf8d9d8efe38bbddce7d6ad839ddd3ddd7c7',
+     'checks':len(CHECKS),'pins':pins,'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+     'continuum':{'all_spectral_sources_sigma':'0 by every-mode Fourier grading',
+                  'actual_R_sigma':'0 for every sigma on the y-free invariant subcomplex',
+                  'R_exact':'s^2 epsilon^2/(2 sqrt(1+epsilon^2))','R_value':mp.nstr(rayleigh,45),
+                  'direct_preparation_perpendicular_residual':'-s^2 theta_xx, theta=atan(epsilon sin x)',
+                  'full_P1_preparation_H_source':'0 by isotropy and traceless positive-metric variation',
+                  'full_P1_preparation_J_source':'0 by the same all-mode identity',
+                  'full_P1_preparation_source':mp.nstr(prep_value,45),
+                  'full_P1_preparation_source_lower_bound':mp.nstr(prep_lower,45),
+                  'original_report_source':prior['nonlinear_source']['original_nonlinear_source'],
+                  'unsubtracted_infinite_price_claimed':False},
+     'actual_native_finite_stencil':controls,'independent_finite_price_differences':fd,
+     'independent_full_P1_preparation_price_differences':prep_fd,
+     'scope':{'full_conditional_v8_HJR':True,'new_gate_programme_emitted':False,
+              'all_preparation_equations_solved':False,'arbitrary_shrinking_gain_excluded':False,
+              'physical_admission_proved':False,'GR_closed':False},
+     'runtime':{'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__,
+                'sympy':sp.__version__,'mpmath':mp.__version__}}
+print(json.dumps(out,ensure_ascii=False,indent=2,sort_keys=True)+'\n',end='')
+```
+<!-- END 7dz FULL CLOCK PRICE CHECKER -->
+
+<!-- BEGIN 7dz FULL CLOCK PRICE RECEIPT -->
+```json
+{
+  "actual_native_finite_stencil": [
+    {
+      "Cartan_error": 2.079859152047819e-34,
+      "H": 346.48522646258346,
+      "H_preparation": -0.00010688410317565925,
+      "H_sigma": -5.116741481349834e-16,
+      "J": 0.07127662951516876,
+      "J_preparation": 3.508958258668234e-05,
+      "J_sigma": 1.6806645406432578e-16,
+      "Julia_creation_norm_bound": 0.2500376486081093,
+      "L": 4,
+      "Lorentz_error": 5.447859672139365e-34,
+      "M_feedback": 128,
+      "R": 1.546016024440479e-06,
+      "R_preparation": 0.0003957851257951054,
+      "R_sigma": 0.0,
+      "Z": 3512.1018950414705,
+      "actual_beta": 0.7657514770954315,
+      "alpha": 0.007362994972071456,
+      "direct_preparation_residual_norm": 0.00027985055145995317,
+      "full_preparation": 0.0003239906052061285,
+      "full_price": 346.5565046381147,
+      "full_sigma": -3.4360769407065756e-16,
+      "h": 1.5707963267948966,
+      "heat_modes": 4096,
+      "input_rank": 4096,
+      "log_C": 257.1576039877397,
+      "m": 104,
+      "minimum_B": 0.9970158037685903,
+      "rounds": 52
+    },
+    {
+      "Cartan_error": 4.255597721453021e-18,
+      "H": 1337.9896811314823,
+      "H_preparation": -0.00016574132921991677,
+      "H_sigma": 2.1276023296949433e-07,
+      "J": 3.596780532901019,
+      "J_preparation": 0.0005588423311783,
+      "J_sigma": -7.17379034581871e-07,
+      "Julia_creation_norm_bound": 0.25001668771747165,
+      "L": 8,
+      "Lorentz_error": 1.8215947586615912e-20,
+      "M_feedback": 128,
+      "R": 1.8112565051962872e-06,
+      "R_preparation": 0.00046366390867478636,
+      "R_sigma": 0.0,
+      "Z": 36071.18065464177,
+      "actual_beta": 0.7657514770954315,
+      "alpha": 0.001840748743017864,
+      "direct_preparation_residual_norm": 0.0003278784040879407,
+      "full_preparation": 0.0008567649106331695,
+      "full_price": 1341.5864634756397,
+      "full_sigma": -5.046188016123766e-07,
+      "h": 0.7853981633974483,
+      "heat_modes": 65536,
+      "input_rank": 65536,
+      "log_C": 1014.0743251591999,
+      "m": 416,
+      "minimum_B": 0.9970158617713958,
+      "rounds": 208
+    }
+  ],
+  "checker_sha256": "51babbf66be77e7f40055d856f486a12ea48cd450e5c9429e4086cb70f8e3557",
+  "checks": 2673,
+  "continuum": {
+    "R_exact": "s^2 epsilon^2/(2 sqrt(1+epsilon^2))",
+    "R_value": "0.00000190729042781598627365902124264845604910876254",
+    "actual_R_sigma": "0 for every sigma on the y-free invariant subcomplex",
+    "all_spectral_sources_sigma": "0 by every-mode Fourier grading",
+    "direct_preparation_perpendicular_residual": "-s^2 theta_xx, theta=atan(epsilon sin x)",
+    "full_P1_preparation_H_source": "0 by isotropy and traceless positive-metric variation",
+    "full_P1_preparation_J_source": "0 by the same all-mode identity",
+    "full_P1_preparation_source": "0.000488243999597961022750744910360523362847821463",
+    "full_P1_preparation_source_lower_bound": "0.000488132258394835735189821385430204808380360675",
+    "original_report_source": "-0.0000000005727241765244659362708400690678138838458",
+    "unsubtracted_infinite_price_claimed": false
+  },
+  "independent_finite_price_differences": {
+    "H": {
+      "error": 1.2945590030242528e-09,
+      "source": 2.1276023296949433e-07,
+      "step": 4.76837158203125e-07,
+      "value": 2.1405479197251858e-07
+    },
+    "J": {
+      "error": 5.382926288337624e-09,
+      "source": -7.17379034581871e-07,
+      "step": 4.76837158203125e-07,
+      "value": -7.119961082935333e-07
+    },
+    "R": {
+      "error": 0.0,
+      "source": 0.0,
+      "step": 4.76837158203125e-07,
+      "value": 0.0
+    },
+    "full_price": {
+      "error": 6.826885480403304e-09,
+      "source": -5.046188016123766e-07,
+      "step": 4.76837158203125e-07,
+      "value": -4.977919161319733e-07
+    }
+  },
+  "independent_full_P1_preparation_price_differences": {
+    "H": {
+      "error": 5.00819581660851e-12,
+      "source": -0.00016574132921991677,
+      "step": 0.000244140625,
+      "value": -0.0001657413342281126
+    },
+    "J": {
+      "error": 2.6171631268417928e-11,
+      "source": 0.0005588423311783,
+      "step": 0.000244140625,
+      "value": 0.0005588423573499313
+    },
+    "R": {
+      "error": 2.6266213704918828e-11,
+      "source": 0.00046366390867478636,
+      "step": 0.000244140625,
+      "value": 0.00046366393494100006
+    },
+    "full_price": {
+      "error": 4.7599650241335334e-11,
+      "source": 0.0008567649106331695,
+      "step": 0.000244140625,
+      "value": 0.0008567649582328198
+    }
+  },
+  "input_commit": "cc98cf8d9d8efe38bbddce7d6ad839ddd3ddd7c7",
+  "pins": {
+    "02_REGISTRY/research/A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md": "4b69c188dcb3571429f4b45eddb1713621014de260c6e8b2095cc2907d9e4730",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md": "badfe4177ddcd90f9b138419b84afa8f828574c7b7d191df5fec8f266f1130f9",
+    "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/check_internal_clock.py": "186a05078e421b301170c37effb758c83965577c0729bd03e56dee57b0cea736",
+    "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/result.json": "f0fa7e53b5331c6a58dd7c407ae597c0178800fe8e75b29d9af19ecfc2c58d6c"
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "GR_closed": false,
+    "all_preparation_equations_solved": false,
+    "arbitrary_shrinking_gain_excluded": false,
+    "full_conditional_v8_HJR": true,
+    "new_gate_programme_emitted": false,
+    "physical_admission_proved": false
+  },
+  "status": "PASS_FULL_CLOCK_SPECTRAL_PRICE_SOURCE"
+}
+```
+<!-- END 7dz FULL CLOCK PRICE RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:

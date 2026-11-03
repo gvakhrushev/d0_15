@@ -19074,3 +19074,70 @@ Checker SHA256 `b7892b3132123f86de77bf41a7a67ff0c1ed499af556e16b685ea52c9c8f6252
 observed receipt SHA256 `490e49dd95967056fcbff58b465da2700b707b8295efa5e86622364bbcfbd111`.
 Ordinary and optimized receipts are byte-identical; both stderr files are empty.
 These are local exact/interval checks, not CI success or independent physical acceptance.
+
+### 3 November 2026 — full spectral return and independent internal-clock preparation on the same field
+
+Same #334 / constitutive / native-programme-v1, native realization and
+final composition. Input cc98cf8d9d8efe38bbddce7d6ad839ddd3ddd7c7.
+Primary artifact section7dz1085--1091 consumes the incoming internal-clock
+source test, the original conditional full-Lorentz v8 H+J+R price, the P1
+joint-observer map and the fixed-positive-time finite-source theorem.
+Only this brief and the same-representative primary artifact are changed.
+The 31 October actual G/CX/SourceI normal-source result already supplies
+the earlier native-word application and is preserved without duplication.
+
+**Exact question and route correction.** Can the specified spectral return
+and actual clock Rayleigh term repair the internal-clock witness's spatial
+source mismatch? On the SAME coframe/LC field and counting measure, the
+full H and spectral J first sources vanish in the continuum by Fourier
+grading. The actual grade-one clock lies in the y-independent/no-dy
+invariant subcomplex: its normalized R is exactly
+s^2 epsilon^2/(2 sqrt(1+epsilon^2)), independent of the transverse sigma.
+The complete unscaled sigma source therefore tends to zero; the owned
+original nonlinear geometric source is strictly negative. A source equality
+with gain bounded away from zero fails on this specified fixed-time route.
+Shrinking gains, other genuinely selected returns and short-time regimes
+retain their own obligations. No full physical D0 impossibility is claimed.
+
+**Independent preparation is actually differentiated.** The raw timelike
+variation psi_tau=cosh(tau sin x)e0+sinh(tau sin x)e1 moves its P1 observer
+and positive adjoint. Its actual whitening sends psi_tau to e0; this is a
+proved cancellation of coordinates, not a frozen physical input. Both
+spectral first sources vanish in the continuum by flat torus isotropy and
+the traceless positive-metric variation. The full normalized Rayleigh
+source is strictly greater than0.0004881322583948357, approximately
+0.0004882439995979610, on the fixed norm-one direction b=sin x. Thus this
+clock field is not a stationary full-source realization. The fixed-pairing
+residual is retained separately and is not misreported as the whole row.
+
+**Carrier, norm and price.** Full16 exterior components and all Fourier
+modes; native proper-Lorentz links exp(h omega_LC); actual n_h integer
+rounds, alpha=p^2 h^2/128, beta_h=2n_h alpha->2p^2; full C=128^(n_h+1),
+M_feedback=128, z=2^-20, no trace truncation or added subtraction.
+The owning finite-source theorem's original source norm and uniform jets
+are used. The per-volume reporter source keeps its fixed(2pi)^4 integral
+factor. All independently selectable matter and observer effects survive
+the pullback; the supplied P1 variation relates them through the actual map.
+
+**Smallest decisive check.** Embedded source/receipt in primary7dz1091
+pins every consumed source. Symbolic identities and the displayed analytic
+proof establish the continuum result. Native finite matrices at L4/L8
+retain4096/65536 modes and52/208 actual rounds. L8 full sigma source is
+-5.046188016123766e-7; full P1 preparation source is8.567649106331695e-4.
+Independent differences of the complete finite prices agree within
+6.827e-9 and4.760e-11 respectively. Normal and -O, both with warnings as
+errors, give identical receipts and empty stderr. The 2673 runtime checks
+are mostly finite-mode/window checks; they are not new theorem counts.
+No unchanged root, broad mathematical replay, emitted geometric gate
+programme, Lean, remote CI, Ready, merge or scientific promotion is claimed.
+
+**Consuming parent and remaining application.** This rules out only the
+proposed completion of the named conditional spatial H+J+R source and
+exposes its actual independent preparation equation. It does not discharge
+native operation/task admission or identify this matrix instrument with
+all physical Cost-Info. The constructive raw regular kappa theorem and
+its faithful-task variation graph remain valid at their stated scope;
+its different complete reporter is not refuted or silently substituted.
+Real controls, same-task comparisons and full physical price still need
+their actual common domain for unrestricted closure. Goal remains active;
+GR_closed=false. No task/result node or shared governance file is created.
