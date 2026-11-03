@@ -19418,3 +19418,78 @@ row. The frozen control detects the wrong input-Gram orientation. A second
 bounded floating-point control checks shared-code seven-call products,
 the reset covariance, full matrix derivatives and preparation estimates.
 No old heavy geometry, native-word or full128 result was rerun or recounted.
+
+### 3 November 2026 — original seven-call READY/report bank, common paid clock and independent reference legs (§7ef)
+
+Same #334 / constitutive/native-programme-v1, native realization and final
+composition. Scientific input df20fd997; integrate 40de06a85 and consume
+§7ed's retained-operation and §7ee's programme-family source results. The
+frozen checker was run on 7ae1027c9; its consumed input bytes are unchanged. Only this brief and the existing primary
+artifact are appended. All previous bytes and scientific boundaries remain.
+
+**Named parent application.** Section 7ec supplied the literal comparison
+word but tested simple coins. Section 7ef constructs a canonical scalar-effect
+representative of the ORIGINAL nonlinear report r(x,y) at all seven actual
+current/reference operands, retaining the original n=20 READY weight and
+all failure outcomes. This is not an emitted original Choi/CAR bank or a
+transport of all its geometric marked maps. The physical shared writer is
+still an application, not a hypothesis silently declared solved.
+
+**Concrete native control map.** Each call has distinct READY and REPORT
+registers. Even original Golden powers approximate their complete canonical
+output maps on all input columns; a proved signed splitting with two actual
+routed Z operations gives every forward and inverse call exactly L+16 raw
+stages. The seven-call detector uses the actual nine-control Walsh/Gray
+predicate for composite READY AND REPORT, with intrinsic visibility
+sin^2(512theta)=0.93793197770933667..., not the earlier 128theta visibility.
+Its literal predicate has 18176 calls. Every full control has 23 wires and
+N=36808+28L, identical marked stage, source frame and protected input.
+
+The construction specifies 25 exact run-length words at about 6*10^54 raw
+calls each. Their endpoints, counts and interval prices are certified by
+primitive identities and powers. The astronomical lists are NOT expanded
+or run tick by tick; this is a constructive existence/source certificate,
+not a practical implementation or a minimum runtime claim. Compressed data
+expand to the original grammar and are not added as a new primitive.
+
+**Full price and variation graph.** The same complete INTERNAL Hodge trace
+keeps all 425Nd modes. Matched reflection words have exactly equal full heat;
+independent inverse-leg words use its actual all-unitary remainder bound.
+The full price is about 193.7869617455161791, including absolute heat about
+193.7869583116906912. Every preparation and unpreparation occurrence is paid.
+All fourteen independent READY/report probability rows are retained. Each
+independent forward or reverse scalar preparation direction has half the
+matched first source; finite one-sided prices include their heat remainder.
+This is not a census of arbitrary primitive hardware cotangents.
+
+At epsilon=2^-14 the normalized native f source is 0.9999604972149722 and
+q source is -23.41709725774058, approaching the ORIGINAL (1,-k0).
+The true central gain is 1.16801760110617e-31. The rigorous compilation
+contribution is below 6.0e-19; the finite Taylor error remains explicit.
+The existing full geometric/source and kappa theorem is consumed, not
+reproved from these scalar numerical controls.
+
+**Exact parent route consequence.** A baseline reference changed independently
+of the common recipe has limiting normalized source -2. Its two separately
+changed preparation legs each have limit -1; the actual finite values are
+about -1.000004893542086. All these words keep the SAME detector and clock.
+Thus the incoming retained-section theorem preserves the comparator, but
+does not itself enforce a common source for the seven reference inputs.
+The incoming programme-family theorem closes its current controller rows
+under that SAME linked-reference hypothesis; the independent input control
+does not refute it. Its live CODE/cut and all programme branches retain
+their own paid interface, without substitution of this rank-eight cut.
+The named next map is the actual shared physical parameter/resource writer,
+its complete price and the allowed variations of its output bank. No
+independent reference row is removed by naming it internal or read-only.
+
+**Changed verification.** Original nonlinear r and READY pins, exact scalar
+source identities, every raw predicate gate on all 512 local columns per
+branch, true routed signs on all 16 local columns, complete all-column call
+error <6e-53, actual common clock/counts, whole-price intervals, source/gain
+budgets and independent-leg controls. Normal/-O with warnings as errors
+produce identical receipts and empty stderr. Most checks are repeated
+run-count/grammar assertions, not independent scientific theorems. Source,
+receipt, exact word-data hash and reproduction are frozen in primary §7ef.
+No new task/result node, broad GR/Lean replay, remote CI claim, Ready,
+merge, exact-finite positive_gr/raw216 or GR_closed promotion. Goal active.

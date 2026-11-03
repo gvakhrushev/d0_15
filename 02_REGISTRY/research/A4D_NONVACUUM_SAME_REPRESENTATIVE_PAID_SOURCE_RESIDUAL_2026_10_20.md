@@ -113394,6 +113394,2360 @@ print(json.dumps(out,ensure_ascii=False,sort_keys=True,indent=2)+'\n',end='')
 ```
 <!-- END 7ec NATIVE REFERENCE RECEIPT -->
 
+## 7ef. Construct the seven original report calls at one paid clock, retaining READY and both preparation legs
+
+3 November 2026. Same #334 / constitutive/native-programme-v1. Native
+realization and final composition. Scientific input df20fd997e796b3aa553d1aadfe56b64cf5f48a2;
+integration 40de06a85a9c0d3359d5bbc4c43122e23c4e1800 preserves and consumes
+incoming §7ed's retained-operation construction and §7ee's programme-family
+source theorem. The frozen checker was run on 7ae1027c9; all its consumed
+source bytes remain identical on this integration base. Only this primary artifact
+and the existing brief are appended.
+
+**Parent substitution and its limit.** Section 7ec supplied the actual
+comparison word, but its tests used simple Golden coins rather than the
+seven probabilities of the original nonlinear report. Here those original
+current/reference probabilities, including the original READY weight, get
+constructive finite G/CX/SourceI realizations on one initial boundary and
+one common paid clock. The full-price source is checked at its true gain,
+and independent reference/preparation sources are retained.
+
+This constructs the canonical scalar-effect READY/REPORT representative.
+It is not an assertion that every original Choi/CAR post-state or other
+geometric marked readout has already been transported to this smaller
+report bank. Nor is the numerical word constructor an emitted autonomous
+physical parameter writer. These distinctions are material to the next
+parent application and are retained below.
+
+### 7ef.A. Use the original nonlinear function and both outcome registers
+
+Consume SOURCE_PROOF_RU.md (1), with no change to its matter coefficient:
+
+    E=p^2(1+x), ell=4E(1-E), u=p+p^2 y,
+    B=4u^2(1-u^2), A=ell+(1-ell)B,
+    r(x,y)=z0(A+B)-z0^2 A B, z0=2^-20.                 (SC1)
+
+Here p=(sqrt(5)-1)/2, r_f=r_x(0,0)>0, r_q=r_y(0,0)>0 and
+k0=r_q/r_f=23.41640675188407497... are the inherited values. The
+specified original READY probability is taken at n=20, with
+
+    a_ready=2 F_21 p^23, 1/3<a_ready<7/20.              (SC2)
+
+Each call has TWO actual born WORK registers. The canonical target prepares READY with probability a_ready and REPORT
+with probability r(x,y). Their complete canonical coherent output is specified, not just
+one scalar mean. The four fine outcomes remain; grouping the two outcomes
+with READY=0 gives the original three-outcome law
+
+    (1-a_ready, a_ready(1-r), a_ready r).              (SC3)
+
+This probability transport does not identify the new 23-wire apparatus
+with the original n=20 resource bank. The two failure outcomes are not discarded. Every old protected input,
+including arbitrary Spin/oldRIGHT entanglement, is an identity factor in
+this canonical representative. Consequently its composite READY AND REPORT
+effect is P=a_ready r times the identity on ALL protected inputs.
+The actual finite words approximate the complete two-bit output isometry
+with the error below; neither READY nor its failure is assigned for free.
+
+The common recipe supplies, in the parent's order,
+
+    (x,y)=[(0,delta),(0,-delta),(epsilon f,0),(0,0),
+           (k0 delta,0),(-k0 delta,0),(0,-epsilon q)].  (SC4)
+
+The same function (SC1), p, z0, READY calibration and k0 are used at every
+call. The actual geometric f and q, their PF/measure arguments and all
+field derivatives are provided by their existing owners. For several sites,
+apply the same finite procedure to the complete actual finite input list;
+this scalar check does not replace the all16+24+2 field theorem.
+
+### 7ef.B. A constructive original-alphabet loader with exact common duration
+
+Write G=rotation(theta), cos(theta)=sqrt(p), sin(theta)=p and
+v=G|0>. For 0<P<1 the canonical target rotation sends v to
+sqrt(1-P)|0>+sqrt(P)|1>. The owned irrationality of theta/pi implies
+that even powers G^n, n even and nonnegative, approximate this rotation
+on BOTH columns to any positive rational tolerance. The source is
+FULLSTEP_COMPILATION_RU.md §1; its Lie classification is not repeated.
+
+A finite algorithm enumerates even exponents and certified precisions,
+with dovetailing, until the strict all-column error is certified for each
+member of the finite target list. Density proves termination. A continued-
+fraction candidate generator accelerates the executed example, but every
+accepted power is independently checked by outward interval multiplication;
+no convergence rate or favourable numerical coincidence is assumed.
+
+Let L be one even number at least every selected exponent n. On an actual
+report wire execute the chronological word
+
+    G^((L+n)/2); Z; G^((L-n)/2); Z = G^n.              (SC5)
+
+The equality uses the original ZGZ=G^-1. This Z is the real eight-call
+SWAP-to-port;SourceI^2;SWAP-back operation, on every unknown Spin column.
+Thus (SC5) costs exactly L G calls, 12 CX and 4 SourceI, namely L+16
+raw stages. Its separately paid inverse exchanges the two nonnegative
+powers and has exactly the same inventory. All powers are finite lists
+of the original G, not new power or inverse primitives.
+
+The same L works for the READY and REPORT registers of all seven calls
+and all compared endpoints. Both their preparation fronts and their reverse
+fronts have identical raw lengths. There is no idle stage, uncharged inverse
+or unexplained deletion of a controller call. This is a constructive
+realization; no efficiency or minimum implementation-cost claim follows.
+
+### 7ef.C. Compile the composite READY predicate on every column
+
+The actual event in 7ec must now inspect READY AND REPORT for each call.
+For each of its eight disjoint selector branches, use the original five
+selector bits and the FOUR READY/REPORT bits of the relevant pair of calls.
+Apply 7ec's integer Walsh/Gray construction with d=9. Positive branches
+accept the fourfold AND; negative branches its complement. All 32 selector
+words remain. Each branch has the same actual exponent 512 on acceptance.
+
+The full forward predicate V has exactly
+
+    5888 G +4096 CX +8192 SourceI =18176 calls.         (SC6)
+
+Indeed four positive branches have 512 coefficients of magnitude one.
+Each negative branch has 32 coefficients of magnitude 15 and 480 of
+magnitude one, hence 960 G calls. Its inverse is paid with the same
+inventory. The exact intrinsic visibility and event are
+
+    kappa9=sin^2(512theta)=0.93793197770933667...,
+    Q=kappa9 p^7[4+(P_y+-P_y-)(P_f-P_0)
+                     +(P_x+-P_x-)(P_q-P_0)].          (SC7)
+
+This is not the old sin^2(128theta) visibility. The actual new cold margin,
+corners, source gain and full price are used. All rejected/nonclick branches
+remain. No intermediate unpriced Boolean AND gate is inserted.
+
+Let R be the fourteen paid READY/REPORT loaders and T=V G_port^-1.
+The detector T is FIXED across every case below; only the input loaders
+change. The complete matched echo is W=R* T* Z_port T R. Its effect is
+marked immediately before the central sign, not at the terminal port.
+
+The common apparatus has 23 wires: selectors 0--4, the fourteen call wires
+5--18, output port 19, Spin 20/21 and immutable oldRIGHT 22. The first 20
+are the same specified canonical born factors at the initial signal
+boundary; the other three input wires are arbitrary. Full dimension is
+2^23=8388608 and protected input rank is 8. No claim of equality with
+7ec's smaller initial apparatus is made. The cost of creating an arbitrary
+prior history is not erased by fixing this common initial boundary.
+
+Every complete word has
+
+    N=36808+28L,
+    G=11778+28L, CX=8528, SourceI=16502,
+    marked stage=14L+18405.                            (SC8)
+
+These counts include all fourteen forward preparations, all fourteen
+reverse preparations, both port-conversion calls and every routed sign.
+The actual independent inverse-leg cases below have the SAME inventory.
+At this interface instruction lists are compared controls. Equality of the
+signal/resource boundary does not prove equality of a fixed autonomous
+initial programme; its physical implementation and price remain a separate
+input of the shared-writer application.
+
+### 7ef.D. Actual source, all preparation rows, and a quantitative code budget
+
+Allow independent READY probabilities a_j and REPORT probabilities r_j;
+write P_j=a_j r_j. With the same seven-coordinate order as (SC4), put
+
+    nu=(P_f-P_0, -(P_f-P_0), P_y+-P_y-,
+        -(P_y+-P_y-+P_x+-P_x-),
+        P_q-P_0, -(P_q-P_0), P_x+-P_x-).
+
+The complete current event differential is exactly
+
+    DQ=kappa9 p^7 sum_j nu_j (r_j Da_j+a_j Dr_j).       (SC9)
+
+This retains all fourteen preparation-probability rows. A genuinely shared
+READY variation satisfies a dXi/da=2Xi; it is not generally zero. When
+READY/reference variation belongs to an actual shared parameter map,
+compose (SC9) with that map, including every occurrence. Independent calls
+are not made linked by calling them internal.
+
+The original return price and gain, on this full rank-eight control, are
+
+    J=-8 log(1-z+z c^2), c=1-2Q, z=2^-20,
+    w=8 z c^2/(1-z+z c^2),
+    Gamma=8 kappa9 p^7 delta epsilon
+                      (a_ready r_f)(a_ready r_q) w/c>0. (SC10)
+
+The actual COMPILED central corner is used in w and c. The calibration
+constants in (SC10) are fixed by (SC1)--(SC4), not fitted to a field solution.
+For a general retained past, the existing matrix identity (1153) applies
+with these new corners; DA_old and the actual growth-clock errors remain.
+The present explicit price fixture has no additional active old prefix.
+
+If every loader differs from its specified target by at most eta on all
+columns, then ||R_native-R_target||<=14 eta and
+||W_native-W_target||<=28 eta. The determinant Lipschitz constant on these
+contractions is 2 r z/(1-z), r=8. Hence any paired central finite contrast
+has the rigorous normalized compilation error bound
+
+    56 r z eta /[(1-z)|t| Gamma].                     (SC11)
+
+This is a comparison of genuine finite words; a derivative of the discrete
+compiler or of the fixed original Golden primitive is not postulated.
+The original finite-difference, Taylor, geometry, old-history, independent-
+copy norm and refinement budgets must still be added. In particular choose
+eta relative to the ACTUAL |t|Gamma, not only to an output-value tolerance.
+The ordinary owner schedule still finishes this finite prefix before choosing
+any later paid retention depth. No compiler length is assumed independent
+of precision.
+
+### 7ef.E. Both preparation legs have their own complete source
+
+The two native calls in (SC5) and its inverse are distinct occurrences.
+For independent loader endpoints R_+ and R_-, the actual endpoint is
+R_-* T* Z T R_+, and its corner is a bilinear form, not (SC10)'s matched
+probability expression.
+
+For each pair of READY and REPORT registers define o_j as the product of
+their forward/backward state overlaps, and t_j as the product of their
+four success amplitudes. In the strictly positive tested chart, put
+P_cross,j=t_j/o_j and O=product_j o_j. The all-input corner is exactly
+
+    c_cross=O {1-2 kappa9 p^7[4+Xi(P_cross)]}.           (SC12)
+
+This follows by summing every fine control outcome, including failure;
+there is no postselection. At the matched base, each independent forward
+or reverse first derivative is half the paired derivative, because the
+middle operator is a real selfadjoint reflection. The full unitary heat
+first source vanishes there. Thus the 28 specified scalar preparation directions at the forward/reverse
+call endpoints are retained by (SC9), with half assigned to each occurrence;
+no physical linking of independently selectable reverse controls is assumed.
+These are the scalar endpoint directions, not a census of arbitrary
+independent primitive hardware perturbations.
+The finite one-sided heat differences are retained below rather than set
+to zero from this first-order identity.
+
+### 7ef.F. Complete absolute price and the executed certificates
+
+Use the same declared homogeneous INTERNAL K(9,11,13) clock, its full
+two-grade Hodge trace and the owned winding formula:
+
+    B=H_N(W)-8log(1-z+z c^2),
+    H_N=beta^-1 log{Nd(359+2a0)
+                 +4N sum_(l>=1) a_(lN) ReTr(W^l)},
+    beta=2p^2, d=8388608.                              (SC13)
+
+All 425Nd modes, including 359Nd unpaired harmonics, are present. Every
+matched echo is a balanced reflection on ALL columns, so its entire heat
+is EXACTLY equal at the common N,d. For unmatched inverse-leg controls
+only the original all-unitary winding bound is used. The absolute heat
+is about 193.7869583116906912 and is never subtracted from the action.
+The complete centre price is about 193.7869617455161791.
+
+The constructive certificate uses an enormous L, giving about 6*10^54 raw
+calls per word. It specifies 25 exact run-length descriptions and their
+ordinary-gate expander. It does NOT expand those astronomical lists or
+claim a tick-by-tick execution. All-column primitive/Gray identities,
+certified powers and exact inventory arithmetic prove the endpoints and
+prices of the described finite words. The original native grammar has
+independent per-gate checks, so repetition/concatenation proves membership;
+the compressed format is not silently added to that grammar.
+
+The actual maximum loader error is certified below 6*10^-53; (SC11)
+conservatively uses eta=10^-50. All local routed operations are also
+multiplied exactly on all 16 report/port/Spin columns in bounded controls.
+Every actual predicate gate is read in an exact integer normal form on
+all 512 local control columns per branch; disjoint selectors prove the
+full 2^19-control result. No giant dense heat or endpoint matrix is formed.
+
+For f=1/5, q=1/7, delta=epsilon/(2k0), t=epsilon, the complete-price
+normalized native contrasts are:
+
+| epsilon | f direction (limit 1) | q direction (limit -k0) | independent reference (limit -2) |
+| --- | --- | --- | --- |
+| 2^-6 | 0.9898871514 | -23.5927437761 | -1.9999998624 |
+| 2^-10 | 0.9993679549 | -23.4274532612 | -1.9999999995 |
+| 2^-14 | 0.9999604972 | -23.4170972577 | -1.999999999998 |
+
+The final actual gain is about 1.16801760110617*10^-31. The rigorous
+compilation contribution to the last normalized source is below
+6.0*10^-19; the displayed remaining field error is the original finite
+Taylor/contrast error, not a hidden code error. The owned theorem, rather
+than three numerical rows, proves the general regular limiting source.
+
+For the independent reference, only the baseline slot in (SC4) is changed
+to (epsilon s,0), s=+t or -t. It approaches normalized source -2.
+Changing only its forward loader, or only its reverse loader, has limiting
+source -1 for EACH leg. Both actual finest-level finite values are about
+-1.000004893542086, with their true all-unitary heat enclosures retained.
+This is a real native control of the same fixed detector and same clock.
+Its source is not zero simply because the comparator section persists.
+
+### 7ef.G. Consume the retained-section result without erasing its next input
+
+Incoming §7ed distinguishes the recorded fixed operation from its input
+bank. That distinction now has this concrete application: the actual
+T=V G_port^-1, relative addresses and marked stage in (SC8) are fixed;
+all current/reference and one-sided controls above change the paid loaders.
+Canonical replay of T preserves the same recorded operation exactly.
+Its complete prepared effect still changes with the bank, as (SC9)--(SC12)
+show. Merely retaining T therefore does NOT enforce the shared-reference
+relations (SC4). The independent-reference control is a changed input to
+that same section, not a one-CX comparator fault.
+
+Incoming §7ee additionally closes the current programme source for its
+registered regular referenceable family, using the full independent
+coframe equations and the actual history weights. That positive result is
+preserved. It explicitly assumes one live code reused through every linked
+reference call; our independent-reference control does not satisfy that
+hypothesis and is not a counterexample to the theorem. Its matrix argument
+also uses its own live CODE and physical cut. The rank-eight fixture here
+is not silently replaced by a full-programme trace. A native application
+to this READY-composite event must use its new kappa9, actual cold margin,
+complete programme branches and paid controller constants.
+
+For the declared graph (SC4), the parent cross-reference theorem applies
+with kappa9, the real source gain, original material/coframe map and all
+independent field directions. This removes the unimplemented scalar call
+interface inside the specified native profile and gives actual finite
+source comparisons, including separate preparation legs and the full price.
+It does not reinterpret (SC4) as an unrestricted physical control theorem.
+
+The next application is the actual shared parameter/resource writer which
+makes those seven inputs evaluations of one retained physical bank, with
+its own preparation, allowed variations and complete price. All required
+geometric marked maps need their real transport to this canonical scalar
+representative or a direct implementation on the original bank. A numerical
+constructor of gate exponents is not that autonomous paid writer. SourceI
+availability and all broader original dynamics/refinement obligations retain
+their existing scope. No new action, physical selector, constraint chosen
+from an Einstein solution, task/result row, Ready state or merge is added.
+The full goal remains active; GR_closed=false.
+
+### 7ef.H. Frozen evidence and bounded reproduction
+
+Observed runtime: Python 3.12.14, NumPy 2.3.5, SymPy 1.14.0, mpmath 1.3.0.
+Normal and `-O` runs, both with `-W error`, exited zero with empty stderr
+and byte-identical receipts. Most of the 940373 checks are repeated literal
+run/grammar assertions. They are not independent new scientific statements.
+No unchanged broad geometry/Lean replay or remote CI run is claimed.
+
+SHA256:
+
+* Checker: `561dfba7503c86b2fdf20e121be44681ac98d9ca9759d59150cc1e864b0fb03b`.
+* Receipt: `0fbd9748d657ec8cfce93cf1f2862d21eeba256c865c9bf1b184c7dd76e71794`.
+* Exact run-length data, 11,494,746 bytes:
+  `bba75751d2b77a558d6cac74383afb284e09919faf2ee9bd25433bcf8a9f986c`.
+
+The generator below reproduces the compact data. It never expands the
+astronomical G runs. To reproduce from the repository root with the pinned
+runtime, execute this extraction/replay code in that Python interpreter:
+
+```python
+from pathlib import Path
+import hashlib, json, subprocess, sys, tempfile
+
+paper = Path("02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md").read_bytes()
+out = Path(tempfile.mkdtemp(prefix="d0-seven-reference-"))
+def extract(label, language):
+    begin = ("<!-- BEGIN " + label + " -->\n```" + language + "\n").encode()
+    end = ("```\n<!-- END " + label + " -->").encode()
+    if paper.count(begin) != 1 or paper.count(end) != 1:
+        raise ValueError("nonunique embedded artifact")
+    return paper.split(begin)[1].split(end)[0]
+code = extract("7ef SEVEN REFERENCE CHECKER", "python")
+expected = extract("7ef SEVEN REFERENCE RECEIPT", "json")
+script = out / "check_seven_calls.py"
+script.write_bytes(code)
+for name, flags in (("normal", []), ("optimized", ["-O"])):
+    run = subprocess.run([sys.executable, *flags, "-W", "error", str(script)], capture_output=True, check=True)
+    (out / (name + ".json")).write_bytes(run.stdout)
+    (out / (name + ".stderr")).write_bytes(run.stderr)
+    if run.stderr or run.stdout != expected:
+        raise ValueError("receipt/runtime mismatch in " + name)
+words = (out / "native_runs.json").read_bytes()
+if hashlib.sha256(words).hexdigest() != json.loads(expected)["word"]["sha256"]:
+    raise ValueError("literal run description mismatch")
+print(out)
+```
+
+<!-- BEGIN 7ef SEVEN REFERENCE CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Finite native seven-reference source words, with every READY outcome retained.
+
+The very long literal words are specified by run-length data and an expander.
+Their whole endpoints are verified structurally and by outward intervals.
+No claim to expand or step through the astronomical complete gate lists.
+"""
+from pathlib import Path
+from collections import Counter
+from fractions import Fraction
+import hashlib, importlib.util, json, math, platform, sys
+import numpy as np
+import mpmath as mp
+import sympy as sp
+ROOT=Path.cwd();HERE=Path(__file__).resolve().parent
+PAPER=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+CHECKS=[]
+def need(ok,label):
+    if not bool(ok):raise ArithmeticError(label)
+    CHECKS.append(label)
+def sha(b):return hashlib.sha256(b).hexdigest()
+pins={
+'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py':'222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c',
+'02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/PROOF_RU.md':'a04d8842a7082b7a43d32f993c13e76262674d9a454924891bb2150f9a774c8b',
+'02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md':'ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3',
+'02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md':'320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b'}
+for path,h in pins.items():need(sha((ROOT/path).read_bytes())==h,'unchanged '+path)
+spec=importlib.util.spec_from_file_location('native_seven',ROOT/list(pins)[0]);ne=importlib.util.module_from_spec(spec)
+sys.modules[spec.name]=ne;spec.loader.exec_module(ne)
+def embedded(tag,lang,pin):
+    b=PAPER.read_bytes();a=f'<!-- BEGIN {tag} -->\n```{lang}\n'.encode();z=f'```\n<!-- END {tag} -->'.encode()
+    need(b.count(a)==b.count(z)==1,'unique '+tag);r=b.split(a)[1].split(z)[0]
+    need(sha(r)==pin,'frozen '+tag);return r
+old_code=embedded('7ec NATIVE REFERENCE CHECKER','python','4ae7891f528b78e3bd72fd1d98ecfdfb8df88e7f9187269f0152f072dca989f2')
+heat=json.loads(embedded('7do PAID BINARY INPUT RECEIPT','json','811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba'))
+PORT=19;SPIN=(20,21);OLD=22;WIDTH=23;DIM=2**WIDTH;RANK=8
+terms=[(1,0,2),(1,1,3),(-1,0,3),(-1,1,2),(1,4,6),(1,5,3),(-1,4,3),(-1,5,6)]
+selectors=[w for w in range(32) if w.bit_count()==2][:8]
+# Each call has a separate READY bit and REPORT bit. Neither is discarded.
+def ready(j):return 5+2*j
+def report(j):return 6+2*j
+def gate(op,*w):return ne.Gate(op,tuple(w))
+def z_word(w):
+    core=[gate('SourceI',PORT,*SPIN)]*2
+    if w==PORT:return core
+    swap=[gate('CX',PORT,w),gate('CX',w,PORT),gate('CX',PORT,w)]
+    return swap+core+swap
+def rot_small(k):
+    return [gate('G',PORT)]*k if k>=0 else z_word(PORT)+[gate('G',PORT)]*(-k)+z_word(PORT)
+G=sp.Matrix(ne.G_LOCAL);Z=sp.diag(1,-1);X=sp.Matrix([[0,1],[1,0]])
+need(ne.exact_matrix_equal(Z*G*Z,G.T),'original exact paid inverse')
+need(ne.exact_matrix_equal(X*G*X,G.T),'original exact CX rotation identity')
+need(ne.SOURCE_I_LOCAL**2==sp.kronecker_product(Z,sp.eye(4)),'actual sign on all Spin columns')
+
+def predicate():
+    word=[];tables=[]
+    for selected,(sign,ia,ib) in zip(selectors,terms):
+        wires=list(range(5))+[ready(ia),report(ia),ready(ib),report(ib)]
+        vals=[]
+        for b in range(512):
+            sw=b>>4;both=int((b&15)==15)
+            vals.append(int(sw==selected and (both if sign==1 else not both)))
+        gray=[j^(j>>1) for j in range(512)]
+        coeff=[sum((-1)**((g&b).bit_count())*vals[b] for b in range(512)) for g in gray]
+        for b in range(512):need(sum((-1)**((g&b).bit_count())*c for g,c in zip(gray,coeff))==512*vals[b],'all512 branch Walsh columns')
+        local=[]
+        for j,c in enumerate(coeff):
+            local+=rot_small(c)
+            bit=(gray[j]^gray[(j+1)%512]).bit_length()-1
+            local.append(gate('CX',wires[8-bit],PORT))
+        # Independent normal-form reading of EVERY actual raw gate, on all
+        # nine local control bits. Global coverage follows disjoint selectors.
+        addresses=np.arange(512,dtype=np.int64);e=np.zeros(512,dtype=np.int64);bx=e.copy();bz=e.copy();sg=np.ones(512,dtype=np.int64)
+        i=0
+        while i<len(local):
+            g=local[i]
+            if g.op=='G':need(g.wires==(PORT,),'actual port G');e+=1;i+=1
+            elif g.op=='CX':
+                need(g.wires[1]==PORT and g.wires[0] in wires,'actual controlled port')
+                bit=(addresses>>(8-wires.index(g.wires[0])))&1;e*=1-2*bit;bx^=bit;i+=1
+            else:
+                need(g.wires==(PORT,*SPIN) and i+1<len(local) and local[i+1]==g,'both actual SourceI calls')
+                e=-e;sg*=1-2*bx;bz^=1;i+=2
+        need(np.array_equal(e,512*np.array(vals)) and not bx.any() and not bz.any() and np.all(sg==1),'literal all-column branch endpoint')
+        word+=local;tables.append({'selector':format(selected,'05b'),'sign':sign,'coefficients':dict(sorted(Counter(coeff).items()))})
+    return word,tables
+V,tables=predicate()
+need(Counter(g.op for g in V)=={'G':4*512+4*960,'CX':4096,'SourceI':8192},'independent complete predicate inventory')
+obj=ne.Execution(WIDTH,(),(OLD,),tuple(V),ne.G_CX_SOURCE_I,PORT,SPIN,())
+ne.validate_execution(obj,max_qubits=WIDTH,max_expanded_stages=len(V))
+# A literal inverse of the predicate: inverse G is paid, CX is self-inverse,
+# and inverse SourceI is three actual calls (not an inverse primitive).
+# Using the inverse macro identity preserves the economical 5888/4096/8192
+# inventory: invert each whole signed rotation and reverse each Gray factor.
+def inverse_predicate():
+    ans=[]
+    # Recover signed-rotation/CX blocks by rebuilding coefficients. This is
+    # used only for generation; all-column inverse follows exact identities.
+    blocks=[]
+    for selected,(sign,ia,ib) in zip(selectors,terms):
+        wires=list(range(5))+[ready(ia),report(ia),ready(ib),report(ib)]
+        vals=[int((b>>4)==selected and (((b&15)==15) if sign==1 else ((b&15)!=15))) for b in range(512)]
+        gray=[j^(j>>1) for j in range(512)]
+        for j,g in enumerate(gray):
+            c=sum((-1)**((g&b).bit_count())*vals[b] for b in range(512))
+            bit=(g^gray[(j+1)%512]).bit_length()-1
+            blocks.append((c,gate('CX',wires[8-bit],PORT)))
+    for c,cx in reversed(blocks):ans.append(cx);ans+=rot_small(-c)
+    return ans
+Vi=inverse_predicate();need(Counter(g.op for g in Vi)==Counter(g.op for g in V),'paid inverse inventory')
+
+mp.mp.dps=180;mp.iv.dps=160;iv=mp.iv
+p=(mp.sqrt(5)-1)/2;a=mp.sqrt(p);pi=(iv.sqrt(5)-1)/2;ai=iv.sqrt(pi)
+theta=mp.atan2(p,a);theta_i=iv.atan2(pi,ai)
+def power(c,s,n):
+    if n<0:return power(c,-s,-n)
+    re=c*0+1;im=c*0
+    while n:
+        if n&1:re,im=re*c-im*s,re*s+im*c
+        c,s=c*c-s*s,2*c*s;n>>=1
+    return re,im
+def bounds(x):return mp.mpf(x.a),mp.mpf(x.b)
+def upper_abs(x):return max(abs(v) for v in bounds(x))
+def fmt(x,digits=80):
+    scale=10**digits;lo,hi=bounds(x*scale)
+    def txt(n):
+        sign='-' if n<0 else '';n=abs(n);return sign+str(n//scale)+'.'+str(n%scale).zfill(digits)
+    return [txt(int(mp.floor(lo))-1),txt(int(mp.ceil(hi))+1)]
+def original(x,y,P):
+    zz=1/mp.mpf(2)**20 if P is p else iv.mpf(1)/2**20
+    E=P*P*(1+x);ell=4*E*(1-E);u=P+P*P*y;B=4*u*u*(1-u*u);A=ell+(1-ell)*B
+    return zz*(A+B)-zz*zz*A*B
+
+def slopes(P):
+    zz=P*0+1;zz/=2**20;E=P*P;ell=4*E*(1-E);B=4*P*P*(1-P*P);A=ell+(1-ell)*B
+    bx=8*P**3*(1-2*P*P);ax=4*P*P*(1-2*P*P)*(1-B)
+    return zz*ax*(1-zz*B),zz*bx*((1-zz*A)+(1-ell)*(1-zz*B))
+rf,rq=slopes(p);rfi,rqi=slopes(pi);k0=rq/rf;k0i=rqi/rfi
+fib0,fib1=0,1
+for _ in range(21):fib0,fib1=fib1,fib0+fib1
+Aready=2*fib0*p**23;Aready_i=2*fib0*pi**23
+need(bounds(Aready_i)[0]>mp.mpf(1)/3 and bounds(Aready_i)[1]<mp.mpf(7)/20,'original n20 READY weight')
+co,si=power(a,p,512);vis=si*si
+coi,sii=power(ai,pi,512);visi=sii*sii
+need(bounds(visi)[0]>0 and bounds(1-16*visi*pi**7)[0]>0,'actual d9 positive gain and cold margin')
+# Continued fraction is only a candidate generator. Every selected power is
+# subsequently certified on all2 columns by outward interval multiplication.
+ratio=theta/mp.pi;x=ratio;hm2,hm1=0,1;qm2,qm1=1,0
+while True:
+    v=int(mp.floor(x));num=v*hm1+hm2;den=v*qm1+qm2
+    hm2,hm1=hm1,num;qm2,qm1=qm1,den
+    if den>10**53:break
+    x=1/(x-v)
+need(math.gcd(num,den)==1,'coprime rotation approximation')
+L=2*(den-1);inverse_num=pow(num,-1,den);eta=mp.mpf('1e-50')
+compiled={};maxerr=mp.mpf(0)
+def compile_probability(target,key):
+    global maxerr
+    lo,hi=bounds(target);need(0<lo<=hi<1,'strict original report probability '+key)
+    mid=(lo+hi)/2;alpha=mp.atan2(mp.sqrt(mid),mp.sqrt(1-mid))
+    nearest=int(mp.floor(den*(alpha-theta)/(2*mp.pi)+mp.mpf('.5')))
+    m=(nearest*inverse_num)%den;n=2*m
+    cn,sn=power(ai,pi,n)
+    ct=ai*iv.sqrt(1-target)+pi*iv.sqrt(target)
+    st=ai*iv.sqrt(target)-pi*iv.sqrt(1-target)
+    err=upper_abs(iv.sqrt(2*((cn-ct)**2+(sn-st)**2)))
+    need(err<eta,'all-column native probability-call error '+key)
+    maxerr=max(maxerr,err)
+    _,ss=power(ai,pi,n+1);actual=ss*ss
+    need(0<=n<=L and n%2==L%2==0,'equal-length signed splitting '+key)
+    compiled[key]={'even_G_power':n,'actual_probability':fmt(actual),'all_column_error_upper':mp.nstr(err,80)}
+    return n,actual
+nr,arn=compile_probability(Aready_i,'READY')
+
+# Exact complete independent preparation covector of this fixed comparator.
+ra=sp.symbols('a0:7');rr=sp.symbols('r0:7');P=[ra[j]*rr[j] for j in range(7)]
+Xi=(P[0]-P[1])*(P[2]-P[3])+(P[4]-P[5])*(P[6]-P[3])
+nu=[P[2]-P[3],-(P[2]-P[3]),P[0]-P[1],-(P[0]-P[1]+P[4]-P[5]),
+    P[6]-P[3],-(P[6]-P[3]),P[4]-P[5]]
+for j in range(7):
+    need(sp.expand(sp.diff(Xi,ra[j])-nu[j]*rr[j])==0,'independent actual READY row '+str(j))
+    need(sp.expand(sp.diff(Xi,rr[j])-nu[j]*ra[j])==0,'independent actual REPORT row '+str(j))
+# A truly shared READY variation remains twice the report polynomial; it is
+# not a universally zero new calibration direction.
+common=sp.symbols('common')
+shared=sp.expand(Xi.subs({a:common for a in ra}))
+need(sp.expand(common*sp.diff(shared,common)-2*shared)==0,'shared READY has its actual scale source')
+levels=[];case_specs={};price_cache={}
+zz=iv.mpf(1)/2**20
+for exponent in (6,10,14):
+    eps=iv.mpf(1)/2**exponent;dt=eps/(2*k0i);t=eps
+    eps_mp=mp.mpf(2)**-exponent;delta_mp=eps_mp/(2*k0);t_mp=eps_mp
+    cases={}
+    for name in ('center','fplus','fminus','qplus','qminus','refplus','refminus'):
+        f=iv.mpf(1)/5;q=iv.mpf(1)/7;fault=iv.mpf(0)
+        if name=='fplus':f+=t
+        if name=='fminus':f-=t
+        if name=='qplus':q+=t
+        if name=='qminus':q-=t
+        if name=='refplus':fault=t
+        if name=='refminus':fault=-t
+        xy=[(0,dt),(0,-dt),(eps*f,0),(eps*fault,0),(k0i*dt,0),(-k0i*dt,0),(0,-eps*q)]
+        target=[original(xx,yy,pi) for xx,yy in xy]
+        powers=[];actual=[]
+        for j,v in enumerate(target):
+            n,pn=compile_probability(v,f'{exponent}/{name}/{j}');powers.append(n);actual.append(pn)
+        def event(ps,rd):
+            yp,ym,ff,b,xp,xm,qq=ps
+            return visi*pi**7*(4+rd*rd*((yp-ym)*(ff-b)+(xp-xm)*(qq-b)))
+        Q=event(actual,arn);Qi=event(target,Aready_i);c=1-2*Q;ci=1-2*Qi
+        J=-RANK*iv.log(1-zz+zz*c*c);Ji=-RANK*iv.log(1-zz+zz*ci*ci)
+        cases[name]={'powers':powers,'c':c,'J':J,'Ji':Ji,'target':target,'actual':actual,'Q':Q}
+        case_specs[f'{exponent}/{name}']={'ready_power':nr,'report_powers':powers}
+    cc=cases['center']['c'];w=RANK*zz*cc*cc/(1-zz+zz*cc*cc)
+    gain=8*visi*pi**7*dt*eps*(Aready_i*rfi)*(Aready_i*rqi)*w/cc
+    need(bounds(gain)[0]>0,'actual complete central gain')
+    # Finite native comparisons are used; no derivative of the discrete
+    # compiler or continuously adjustable original G is postulated.
+    slopes_out={};ideal_slopes={};compiler_budget=2*RANK*zz/(1-zz)*28*iv.mpf('1e-50')/(t*gain)
+    for label,plus,minus,want in [('f','fplus','fminus',iv.mpf(1)),('q','qplus','qminus',-k0i),('independent_reference','refplus','refminus',iv.mpf(-2))]:
+        val=(cases[plus]['J']-cases[minus]['J'])/(2*t*gain)
+        ideal=(cases[plus]['Ji']-cases[minus]['Ji'])/(2*t*gain)
+        need(upper_abs(val-ideal)<bounds(compiler_budget)[1],'full-price compiled contrast budget '+label)
+        slopes_out[label]={'value':fmt(val),'deviation_from_leading':fmt(val-want)};ideal_slopes[label]=fmt(ideal)
+    levels.append({'epsilon':f'2^-{exponent}','delta':fmt(dt),'t':f'2^-{exponent}',
+        'gain':fmt(gain),'center_corner':fmt(cc),'center_return_price':fmt(cases['center']['J']),
+        'normalized_native_sources':slopes_out,'normalized_target_sources':ideal_slopes,
+        'rigorous_compiler_source_error_bound':fmt(compiler_budget)})
+    price_cache[exponent]=cases['center']['J']
+need(abs(mp.mpf(levels[-1]['normalized_native_sources']['f']['value'][0])-1)<mp.mpf('.001'),'original field f source recovered')
+need(abs(mp.mpf(levels[-1]['normalized_native_sources']['q']['value'][0])+k0)<mp.mpf('.01'),'original material coefficient retained')
+need(abs(mp.mpf(levels[-1]['normalized_native_sources']['independent_reference']['value'][0])+2)<mp.mpf('.001'),'independent reference normal retained')
+
+# Actual independently changed forward/reverse reference loader legs.
+# The scalar compression is a bilinear form, not the former square-probability
+# corner. Keep its overlap and the all-unitary heat remainder.
+def cross_corner(front,back):
+    overlap=iv.mpf(1);paired=[]
+    ca,sa=power(ai,pi,nr+1)
+    for nf,nb in zip(front['report_powers'],back['report_powers']):
+        cf,sf=power(ai,pi,nf+1);cb,sb=power(ai,pi,nb+1)
+        oo=cf*cb+sf*sb
+        overlap*=oo
+        paired.append(sa*sa*sf*sb/oo)
+    yp,ym,ff,b,xp,xm,qq=paired
+    event=visi*pi**7*(4+(yp-ym)*(ff-b)+(xp-xm)*(qq-b))
+    return overlap*(1-2*event)
+last_base=case_specs['14/center'];one_side={}
+for side in ('forward','reverse'):
+    prices={}
+    for sign,label in (('plus','refplus'),('minus','refminus')):
+        other=case_specs['14/'+label]
+        front,back=(other,last_base) if side=='forward' else (last_base,other)
+        ccross=cross_corner(front,back)
+        prices[sign]=-RANK*iv.log(1-zz+zz*ccross*ccross)
+        name='14/independent_'+side+'_'+sign
+        case_specs[name]={'ready_power':nr,'report_powers':front['report_powers'],
+                         'back_report_powers':back['report_powers']}
+    # Each heat lies within 1e-100 of the full common central expression;
+    # the exact all-unitary bound is <10^-N at this same actual N.
+    value=(prices['plus']-prices['minus']+iv.mpf(['-2e-100','2e-100']))/(2*t*gain)
+    need(upper_abs(value+1)<mp.mpf('.001'),'actual independent '+side+' reference source retained')
+    one_side[side]=fmt(value)
+
+# Compact exact word data are NOT the native JSON schema or a new primitive.
+# Each (gate,count) expands into count ordinary original Gate objects.
+def runs_of(word):return [(g,1) for g in word]
+def compact(runs):
+    ans=[]
+    for g,count in runs:
+        if not count:continue
+        need(type(count)is int and count>0,'positive literal run count')
+        if ans and ans[-1][0]==g:ans[-1]=(g,ans[-1][1]+count)
+        else:ans.append((g,count))
+    return ans
+def call_runs(w,n,inverted=False):
+    aa=(L+n)//2;bb=(L-n)//2
+    if inverted:aa,bb=bb,aa
+    return [(gate('G',w),aa)]+runs_of(z_word(w))+[(gate('G',w),bb)]+runs_of(z_word(w))
+def complete_runs(spec):
+    front=[];back=[]
+    for j,n in enumerate(spec['report_powers']):
+        for wire,nn in [(ready(j),spec['ready_power']),(report(j),n)]:front+=call_runs(wire,nn)
+    for j in reversed(range(7)):
+        for wire,nn in [(report(j),spec.get('back_report_powers',spec['report_powers'])[j]),(ready(j),spec['ready_power'])]:back+=call_runs(wire,nn,True)
+    return compact(front+runs_of(rot_small(-1))+runs_of(V)+runs_of(z_word(PORT))+runs_of(Vi)+[(gate('G',PORT),1)]+back)
+def expand_native_runs(runs):
+    for g,count in runs:
+        for _ in range(count):yield g
+# Check the expansion mechanism and parser only on actually bounded calls.
+# General repetitions preserve membership by the grammar's independent per-gate checks.
+tiny=compact([(gate('G',5),2),(gate('G',5),3)]+runs_of(z_word(5)))
+need(tuple(expand_native_runs(tiny))==tuple([gate('G',5)]*5+z_word(5)),'literal run expander')
+# Independently multiply the actual routed constant-length call and its
+# separately paid inverse on all16 local columns at several exact exponents.
+saved_L=L;L=8
+for nn in (0,2,6):
+    rename={5:0,PORT:1,SPIN[0]:2,SPIN[1]:3}
+    pair=[]
+    for inverted in (False,True):
+        raw=tuple(ne.Gate(g.op,tuple(rename[w] for w in g.wires)) for g in expand_native_runs(call_runs(5,nn,inverted)))
+        local=ne.Execution(4,(),(),raw,ne.G_CX_SOURCE_I,1,(2,3),())
+        U=ne.word_matrix(local,max_qubits=4,max_expanded_stages=len(raw))
+        target=sp.kronecker_product(G**(-nn if inverted else nn),sp.eye(8))
+        need(ne.exact_matrix_equal(U,target),'actual routed signed-split call on all16 columns')
+        pair.append(U)
+    need(ne.exact_matrix_equal(pair[1]*pair[0],sp.eye(16)),'separately paid exact inverse')
+L=saved_L
+need(maxerr<mp.mpf('6e-53'),'strict rational all-call error bound')
+all_runs={};inventory=None;N=None
+for name,spec in case_specs.items():
+    runs=complete_runs(spec);inv=Counter()
+    for g,count in runs:inv[g.op]+=count
+    # Check every distinct emitted run type with the UNCHANGED original validator.
+    distinct=tuple(dict.fromkeys(g for g,count in runs))
+    obj=ne.Execution(WIDTH,(),(OLD,),distinct,ne.G_CX_SOURCE_I,PORT,SPIN,())
+    ne.validate_execution(obj,max_qubits=WIDTH,max_expanded_stages=len(distinct))
+    need(all(OLD not in g.wires for g,count in runs),'actual immutable oldRIGHT '+name)
+    need(inv=={'G':11778+28*L,'CX':8528,'SourceI':16502},'full independent gate inventory '+name)
+    need(sum(inv.values())==36808+28*L,'entire raw clock counted '+name)
+    inventory=dict(sorted(inv.items()));N=sum(inv.values())
+    all_runs[name]=[[g.op,list(g.wires),count] for g,count in runs]
+word_bytes=(json.dumps({'format':'exact-run-length-description-not-native-schema','input_commit':'df20fd997e796b3aa553d1aadfe56b64cf5f48a2',
+ 'qubits':WIDTH,'source_port':PORT,'source_spin':SPIN,'old_right':[OLD],'runs':all_runs},sort_keys=True,separators=(',',':'))+'\n').encode()
+(HERE/'native_runs.json').write_bytes(word_bytes)
+# Full homogeneous INTERNAL heat. Every endpoint is the balanced reflection
+# A*Z A, so same N,d implies EXACT common heat even across native contrasts.
+a0=iv.mpf(heat['complete_book']['a0_interval']);beta=2*pi*pi
+H=iv.log(N*DIM*(359+2*a0))/beta+iv.mpf(['-1e-100','1e-100'])
+x=Fraction(2,55);q3=x**3/math.factorial(3)
+need(Fraction(176,359)/(1-x*x)/(1-q3)**2<1 and N>100,'owned full winding enclosure on actual enormous clock')
+for row,exponent in zip(levels,(6,10,14)):row['full_absolute_price']=fmt(H+price_cache[exponent])
+result={'status':'PASS_CONSTRUCTIVE_SEVEN_NATIVE_CALLS','integration_commit':'7ae1027c9b1fd0dd3f9b9b11821d365421d24aa0','input_commit':'df20fd997e796b3aa553d1aadfe56b64cf5f48a2',
+ 'checks':len(CHECKS),'checker_sha256':sha(Path(__file__).read_bytes()),'pins':pins,
+ 'original_report':'r=z(A+B)-z^2AB; E=p^2(1+x), ell=4E(1-E), B=4(p+p^2y)^2(1-(p+p^2y)^2), A=ell+(1-ell)B',
+ 'original_ready':{'n':20,'F21':fib0,'value':fmt(Aready_i),'actual_compiled_value':fmt(arn)},
+ 'calibration':{'r_f':mp.nstr(rf,80),'r_q':mp.nstr(rq,80),'k0':mp.nstr(k0,80),'visibility_512':fmt(visi)},
+ 'joint_compiler':{'convergent_numerator':num,'convergent_denominator':den,'common_L':L,
+ 'maximum_all_column_error_diagnostic':mp.nstr(maxerr,80),'certified_uniform_all_column_error_upper':'6e-53','requested_all_column_error':'1e-50',
+ 'ready_and_report_kept_separate':True,'stages_per_forward_call_and_per_inverse_call':L+16,
+ 'compiled_probability_calls':len(compiled),'phase_derivative_postulated':False},
+ 'word':{'file':'native_runs.json','sha256':sha(word_bytes),'bytes':len(word_bytes),'cases':len(all_runs),
+ 'raw_stages':N,'inventory':inventory,'actual_marked_report_after_raw_stage':14*L+224+5+len(V),
+ 'all_columns_verified_structurally':True,'all_runs_grammar_valid_by_per_gate_composition':True,
+ 'full_gate_lists_expanded':False,'exponentiated_endpoint_certificate_not_tick_by_tick_execution':True},
+ 'boundary':{'qubits':WIDTH,'dimension':DIM,'input_rank':RANK,'canonical_born_wires':list(range(20)),
+ 'all_hodge_modes':425*N*DIM,'unpaired_harmonics':359*N*DIM,'full_heat':fmt(H)},
+ 'predicate':{'actual_event':'kappa_512*p^7*(4+(P_yplus-P_yminus)*(P_f-P_0)+(P_xplus-P_xminus)*(P_q-P_0))',
+ 'P_j':'actual_READY_probability * actual_REPORT_probability','local_all_column_tables':tables},
+ 'source_levels':levels,'independent_reference_legs':one_side,'independent_input_source':{'paired_probability_rows':14,'independent_forward_reverse_preparation_rows':28,'one_sided_source_at_matched_reflection':'one half of paired source; heat first source zero; finite heat retained','formula':'DQ=kappa*p^7*sum nu_j*(r_j da_j+a_j dr_j)','shared_READY_identity':'a*dXi/da=2*Xi','unlinked_reference_changes_loader_only':True,'fixed_comparator_unchanged_for_every_case':True},'compiled_calls':compiled,
+ 'scope':{'same_shared_original_report_function':True,'arbitrary_geometric_marked_maps_transported':False,
+ 'autonomous_common_parameter_writer_emitted':False,'physical_all_X_N_identified':False,
+ 'scalar_effect_source_realization_only':True,'GR_closed':False},
+ 'runtime':{'python':platform.python_version(),'mpmath':mp.__version__,'numpy':np.__version__,'sympy':sp.__version__}}
+print(json.dumps(result,sort_keys=True,indent=2)+'\n',end='')
+```
+<!-- END 7ef SEVEN REFERENCE CHECKER -->
+
+<!-- BEGIN 7ef SEVEN REFERENCE RECEIPT -->
+```json
+{
+  "boundary": {
+    "all_hodge_modes": 21385232689545492242545664065934407031433153078670866832267673600,
+    "canonical_born_wires": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "dimension": 8388608,
+    "full_heat": [
+      "193.78695831169069120390259246893814566017785334843256257063194051205049384591428445",
+      "193.78695831169069120390259246893816578996232650099332624035347967417117147395375900"
+    ],
+    "input_rank": 8,
+    "qubits": 23,
+    "unpaired_harmonics": 18064231848345486388409160940401063821845886953512567512433164288
+  },
+  "calibration": {
+    "k0": "23.416406751884074972895582064895252744263178513990391833783135545354459122250198",
+    "r_f": "0.000000019168831693611473993498917024924488057928010238623373363864927095913638144514731",
+    "r_q": "0.00000044886515989601316755239850905310602934692952479919227079824478595582160253176123",
+    "visibility_512": [
+      "0.93793197770933667245947909027624943864022428481798620536178106357061576978038828",
+      "0.93793197770933667245947909027624943864022428481798620536178106357061576978038831"
+    ]
+  },
+  "checker_sha256": "561dfba7503c86b2fdf20e121be44681ac98d9ca9759d59150cc1e864b0fb03b",
+  "checks": 940373,
+  "compiled_calls": {
+    "10/center/0": {
+      "actual_probability": [
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204905",
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204908"
+      ],
+      "all_column_error_upper": "3.7861468639444022954632949598677662264523035683958097406713363198930881320357109e-53",
+      "even_G_power": 175781681690913796421507547342862777970069318438461362
+    },
+    "10/center/1": {
+      "actual_probability": [
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942157",
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942160"
+      ],
+      "all_column_error_upper": "2.4167327400312373540482920810494327642293882048548661679082931742368897870374252e-53",
+      "even_G_power": 153172883628148962648904680604711628253390044850893824
+    },
+    "10/center/2": {
+      "actual_probability": [
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634639",
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634642"
+      ],
+      "all_column_error_upper": "4.1353898147691691077302386888467304566994800686602963732462328713572898329273068e-54",
+      "even_G_power": 98419560180838015161745494207521397732131043926785438
+    },
+    "10/center/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "10/center/4": {
+      "actual_probability": [
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857502",
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857505"
+      ],
+      "all_column_error_upper": "7.6498287035672744981057314659166719506730141531047737963740947524804918847206138e-54",
+      "even_G_power": 46133342785200414964295950640987143520606419402747242
+    },
+    "10/center/5": {
+      "actual_probability": [
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607152",
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607155"
+      ],
+      "all_column_error_upper": "6.2293903989255295622861770658019750790468947600917505347897582851173469035655504e-54",
+      "even_G_power": 71164655850637730095667906967380497136393074921541868
+    },
+    "10/center/6": {
+      "actual_probability": [
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414003",
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414006"
+      ],
+      "all_column_error_upper": "2.2958587530805548899445170222512347110440690569544815970084226282839454136391237e-54",
+      "even_G_power": 11149802002238377295904721852675933581377158160208338
+    },
+    "10/fminus/0": {
+      "actual_probability": [
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204905",
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204908"
+      ],
+      "all_column_error_upper": "3.7861468639444022954632949598677662264523035683958097406713363198930881320357109e-53",
+      "even_G_power": 175781681690913796421507547342862777970069318438461362
+    },
+    "10/fminus/1": {
+      "actual_probability": [
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942157",
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942160"
+      ],
+      "all_column_error_upper": "2.4167327400312373540482920810494327642293882048548661679082931742368897870374252e-53",
+      "even_G_power": 153172883628148962648904680604711628253390044850893824
+    },
+    "10/fminus/2": {
+      "actual_probability": [
+        "0.00000185124330294818717470824939946792876872282347404300445548236244764036897059",
+        "0.00000185124330294818717470824939946792876872282347404300445548236244764036897062"
+      ],
+      "all_column_error_upper": "4.4456761504859096780742995029061479519184684657314953662713082278105261148188036e-53",
+      "even_G_power": 120998332058816909310895961198826639557888470860631504
+    },
+    "10/fminus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "10/fminus/4": {
+      "actual_probability": [
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857502",
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857505"
+      ],
+      "all_column_error_upper": "7.6498287035672744981057314659166719506730141531047737963740947524804918847206138e-54",
+      "even_G_power": 46133342785200414964295950640987143520606419402747242
+    },
+    "10/fminus/5": {
+      "actual_probability": [
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607152",
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607155"
+      ],
+      "all_column_error_upper": "6.2293903989255295622861770658019750790468947600917505347897582851173469035655504e-54",
+      "even_G_power": 71164655850637730095667906967380497136393074921541868
+    },
+    "10/fminus/6": {
+      "actual_probability": [
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414003",
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414006"
+      ],
+      "all_column_error_upper": "2.2958587530805548899445170222512347110440690569544815970084226282839454136391237e-54",
+      "even_G_power": 11149802002238377295904721852675933581377158160208338
+    },
+    "10/fplus/0": {
+      "actual_probability": [
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204905",
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204908"
+      ],
+      "all_column_error_upper": "3.7861468639444022954632949598677662264523035683958097406713363198930881320357109e-53",
+      "even_G_power": 175781681690913796421507547342862777970069318438461362
+    },
+    "10/fplus/1": {
+      "actual_probability": [
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942157",
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942160"
+      ],
+      "all_column_error_upper": "2.4167327400312373540482920810494327642293882048548661679082931742368897870374252e-53",
+      "even_G_power": 153172883628148962648904680604711628253390044850893824
+    },
+    "10/fplus/2": {
+      "actual_probability": [
+        "0.00000185124333948672351056433232156584134519191349997762575729299781960886547858",
+        "0.00000185124333948672351056433232156584134519191349997762575729299781960886547861"
+      ],
+      "all_column_error_upper": "7.3027131245497638271805618975982514610400707022630118248772883252450584076864799e-54",
+      "even_G_power": 98611340228770006913015210243013870850539880560332118
+    },
+    "10/fplus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "10/fplus/4": {
+      "actual_probability": [
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857502",
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857505"
+      ],
+      "all_column_error_upper": "7.6498287035672744981057314659166719506730141531047737963740947524804918847206138e-54",
+      "even_G_power": 46133342785200414964295950640987143520606419402747242
+    },
+    "10/fplus/5": {
+      "actual_probability": [
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607152",
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607155"
+      ],
+      "all_column_error_upper": "6.2293903989255295622861770658019750790468947600917505347897582851173469035655504e-54",
+      "even_G_power": 71164655850637730095667906967380497136393074921541868
+    },
+    "10/fplus/6": {
+      "actual_probability": [
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414003",
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414006"
+      ],
+      "all_column_error_upper": "2.2958587530805548899445170222512347110440690569544815970084226282839454136391237e-54",
+      "even_G_power": 11149802002238377295904721852675933581377158160208338
+    },
+    "10/qminus/0": {
+      "actual_probability": [
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204905",
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204908"
+      ],
+      "all_column_error_upper": "3.7861468639444022954632949598677662264523035683958097406713363198930881320357109e-53",
+      "even_G_power": 175781681690913796421507547342862777970069318438461362
+    },
+    "10/qminus/1": {
+      "actual_probability": [
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942157",
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942160"
+      ],
+      "all_column_error_upper": "2.4167327400312373540482920810494327642293882048548661679082931742368897870374252e-53",
+      "even_G_power": 153172883628148962648904680604711628253390044850893824
+    },
+    "10/qminus/2": {
+      "actual_probability": [
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634639",
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634642"
+      ],
+      "all_column_error_upper": "4.1353898147691691077302386888467304566994800686602963732462328713572898329273068e-54",
+      "even_G_power": 98419560180838015161745494207521397732131043926785438
+    },
+    "10/qminus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "10/qminus/4": {
+      "actual_probability": [
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857502",
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857505"
+      ],
+      "all_column_error_upper": "7.6498287035672744981057314659166719506730141531047737963740947524804918847206138e-54",
+      "even_G_power": 46133342785200414964295950640987143520606419402747242
+    },
+    "10/qminus/5": {
+      "actual_probability": [
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607152",
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607155"
+      ],
+      "all_column_error_upper": "6.2293903989255295622861770658019750790468947600917505347897582851173469035655504e-54",
+      "even_G_power": 71164655850637730095667906967380497136393074921541868
+    },
+    "10/qminus/6": {
+      "actual_probability": [
+        "0.00000185117737129192774815767715772445551819783326406273808559947063409333069909",
+        "0.00000185117737129192774815767715772445551819783326406273808559947063409333069912"
+      ],
+      "all_column_error_upper": "4.2670135546130178811795566756243450837320296277683413711602640927026293035408798e-54",
+      "even_G_power": 9087995375578313457389017284965920976423786666764744
+    },
+    "10/qplus/0": {
+      "actual_probability": [
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204905",
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204908"
+      ],
+      "all_column_error_upper": "3.7861468639444022954632949598677662264523035683958097406713363198930881320357109e-53",
+      "even_G_power": 175781681690913796421507547342862777970069318438461362
+    },
+    "10/qplus/1": {
+      "actual_probability": [
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942157",
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942160"
+      ],
+      "all_column_error_upper": "2.4167327400312373540482920810494327642293882048548661679082931742368897870374252e-53",
+      "even_G_power": 153172883628148962648904680604711628253390044850893824
+    },
+    "10/qplus/2": {
+      "actual_probability": [
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634639",
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634642"
+      ],
+      "all_column_error_upper": "4.1353898147691691077302386888467304566994800686602963732462328713572898329273068e-54",
+      "even_G_power": 98419560180838015161745494207521397732131043926785438
+    },
+    "10/qplus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "10/qplus/4": {
+      "actual_probability": [
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857502",
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857505"
+      ],
+      "all_column_error_upper": "7.6498287035672744981057314659166719506730141531047737963740947524804918847206138e-54",
+      "even_G_power": 46133342785200414964295950640987143520606419402747242
+    },
+    "10/qplus/5": {
+      "actual_probability": [
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607152",
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607155"
+      ],
+      "all_column_error_upper": "6.2293903989255295622861770658019750790468947600917505347897582851173469035655504e-54",
+      "even_G_power": 71164655850637730095667906967380497136393074921541868
+    },
+    "10/qplus/6": {
+      "actual_probability": [
+        "0.00000185117651474570015094457510845307110347816859987262679483648597429669862170",
+        "0.00000185117651474570015094457510845307110347816859987262679483648597429669862173"
+      ],
+      "all_column_error_upper": "1.1551295653490322918051049466980805211574487692297993442332634261598713197946275e-54",
+      "even_G_power": 170079332698576385146932429815582967187420602850304762
+    },
+    "10/refminus/0": {
+      "actual_probability": [
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204905",
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204908"
+      ],
+      "all_column_error_upper": "3.7861468639444022954632949598677662264523035683958097406713363198930881320357109e-53",
+      "even_G_power": 175781681690913796421507547342862777970069318438461362
+    },
+    "10/refminus/1": {
+      "actual_probability": [
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942157",
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942160"
+      ],
+      "all_column_error_upper": "2.4167327400312373540482920810494327642293882048548661679082931742368897870374252e-53",
+      "even_G_power": 153172883628148962648904680604711628253390044850893824
+    },
+    "10/refminus/2": {
+      "actual_probability": [
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634639",
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634642"
+      ],
+      "all_column_error_upper": "4.1353898147691691077302386888467304566994800686602963732462328713572898329273068e-54",
+      "even_G_power": 98419560180838015161745494207521397732131043926785438
+    },
+    "10/refminus/3": {
+      "actual_probability": [
+        "0.00000185123956020735240584795616544361597611337111045147349913163177952232313085",
+        "0.00000185123956020735240584795616544361597611337111045147349913163177952232313088"
+      ],
+      "all_column_error_upper": "1.7736348948650533623762972936649611657793268705288177268644304424714859133852383e-53",
+      "even_G_power": 10159218498446774449787597266426873810838189324793292
+    },
+    "10/refminus/4": {
+      "actual_probability": [
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857502",
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857505"
+      ],
+      "all_column_error_upper": "7.6498287035672744981057314659166719506730141531047737963740947524804918847206138e-54",
+      "even_G_power": 46133342785200414964295950640987143520606419402747242
+    },
+    "10/refminus/5": {
+      "actual_probability": [
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607152",
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607155"
+      ],
+      "all_column_error_upper": "6.2293903989255295622861770658019750790468947600917505347897582851173469035655504e-54",
+      "even_G_power": 71164655850637730095667906967380497136393074921541868
+    },
+    "10/refminus/6": {
+      "actual_probability": [
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414003",
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414006"
+      ],
+      "all_column_error_upper": "2.2958587530805548899445170222512347110440690569544815970084226282839454136391237e-54",
+      "even_G_power": 11149802002238377295904721852675933581377158160208338
+    },
+    "10/refplus/0": {
+      "actual_probability": [
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204905",
+        "0.00000185124893793926744230410317351788374608697243128113450793134943314231204908"
+      ],
+      "all_column_error_upper": "3.7861468639444022954632949598677662264523035683958097406713363198930881320357109e-53",
+      "even_G_power": 175781681690913796421507547342862777970069318438461362
+    },
+    "10/refplus/1": {
+      "actual_probability": [
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942157",
+        "0.00000185123021837707671076693031868558107206741512281204758030923739602738942160"
+      ],
+      "all_column_error_upper": "2.4167327400312373540482920810494327642293882048548661679082931742368897870374252e-53",
+      "even_G_power": 153172883628148962648904680604711628253390044850893824
+    },
+    "10/refplus/2": {
+      "actual_probability": [
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634639",
+        "0.00000185124332121748355136134784402514329221642611916041089285486513890935634642"
+      ],
+      "all_column_error_upper": "4.1353898147691691077302386888467304566994800686602963732462328713572898329273068e-54",
+      "even_G_power": 98419560180838015161745494207521397732131043926785438
+    },
+    "10/refplus/3": {
+      "actual_probability": [
+        "0.00000185123959676899732927071997750667487680247339379204566392077234212856414413",
+        "0.00000185123959676899732927071997750667487680247339379204566392077234212856414416"
+      ],
+      "all_column_error_upper": "3.3472245824039240922591708342162616631081737092900100948004969203388538253629352e-53",
+      "even_G_power": 176238423414855450325325441995427880805985770445118272
+    },
+    "10/refplus/4": {
+      "actual_probability": [
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857502",
+        "0.00000185124893087455545117404615427965848772324204958326468975174534641883857505"
+      ],
+      "all_column_error_upper": "7.6498287035672744981057314659166719506730141531047737963740947524804918847206138e-54",
+      "even_G_power": 46133342785200414964295950640987143520606419402747242
+    },
+    "10/refplus/5": {
+      "actual_probability": [
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607152",
+        "0.00000185123021131235465871897437799350133490287297926076876736151859090236607155"
+      ],
+      "all_column_error_upper": "6.2293903989255295622861770658019750790468947600917505347897582851173469035655504e-54",
+      "even_G_power": 71164655850637730095667906967380497136393074921541868
+    },
+    "10/refplus/6": {
+      "actual_probability": [
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414003",
+        "0.00000185117694301950406609724979579868349902798028331443123563152621197055414006"
+      ],
+      "all_column_error_upper": "2.2958587530805548899445170222512347110440690569544815970084226282839454136391237e-54",
+      "even_G_power": 11149802002238377295904721852675933581377158160208338
+    },
+    "14/center/0": {
+      "actual_probability": [
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632606",
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632609"
+      ],
+      "all_column_error_upper": "2.2191867489651932534548023941780088488431357886769165423496821404753973666940765e-53",
+      "even_G_power": 126647144291372031220795748900595272100348768455701046
+    },
+    "14/center/1": {
+      "actual_probability": [
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437933",
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437936"
+      ],
+      "all_column_error_upper": "9.3217038171299015755941186830107072588432790400105862201157429037662582709488953e-54",
+      "even_G_power": 17404344217537444588200447694757157346172340195269366
+    },
+    "14/center/2": {
+      "actual_probability": [
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323072",
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323075"
+      ],
+      "all_column_error_upper": "1.6122242557610881586649005740796712052385729925123462921736996252017064855237578e-53",
+      "even_G_power": 29626585589260073015583908257810530690760259476867512
+    },
+    "14/center/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "14/center/4": {
+      "actual_probability": [
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351139",
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351142"
+      ],
+      "all_column_error_upper": "8.8554891584763189121632186551570167614859301521537459267194352703906423923591715e-54",
+      "even_G_power": 46824363857320915396619178792021912983647612158049200
+    },
+    "14/center/5": {
+      "actual_probability": [
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487169",
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487172"
+      ],
+      "all_column_error_upper": "5.8515216366877366868364547502852433172564834922635996068428489346641901871832789e-55",
+      "even_G_power": 169650010000792674919898798432961139981379248162017570
+    },
+    "14/center/6": {
+      "actual_probability": [
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179342",
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179345"
+      ],
+      "all_column_error_upper": "1.0879827389720586241404494921052981682787365993160273526219498697841590204466384e-53",
+      "even_G_power": 56281039953077095792976122308959056603886475809289220
+    },
+    "14/fminus/0": {
+      "actual_probability": [
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632606",
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632609"
+      ],
+      "all_column_error_upper": "2.2191867489651932534548023941780088488431357886769165423496821404753973666940765e-53",
+      "even_G_power": 126647144291372031220795748900595272100348768455701046
+    },
+    "14/fminus/1": {
+      "actual_probability": [
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437933",
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437936"
+      ],
+      "all_column_error_upper": "9.3217038171299015755941186830107072588432790400105862201157429037662582709488953e-54",
+      "even_G_power": 17404344217537444588200447694757157346172340195269366
+    },
+    "14/fminus/2": {
+      "actual_probability": [
+        "0.00000185123981240670222637776190160777187784009081002721326628158049614526351247",
+        "0.00000185123981240670222637776190160777187784009081002721326628158049614526351250"
+      ],
+      "all_column_error_upper": "1.3374863003300746218762120040409430621414709068561798321913069391061659297417113e-53",
+      "even_G_power": 28752769873828833470828620985014299229731193604951930
+    },
+    "14/fminus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "14/fminus/4": {
+      "actual_probability": [
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351139",
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351142"
+      ],
+      "all_column_error_upper": "8.8554891584763189121632186551570167614859301521537459267194352703906423923591715e-54",
+      "even_G_power": 46824363857320915396619178792021912983647612158049200
+    },
+    "14/fminus/5": {
+      "actual_probability": [
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487169",
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487172"
+      ],
+      "all_column_error_upper": "5.8515216366877366868364547502852433172564834922635996068428489346641901871832789e-55",
+      "even_G_power": 169650010000792674919898798432961139981379248162017570
+    },
+    "14/fminus/6": {
+      "actual_probability": [
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179342",
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179345"
+      ],
+      "all_column_error_upper": "1.0879827389720586241404494921052981682787365993160273526219498697841590204466384e-53",
+      "even_G_power": 56281039953077095792976122308959056603886475809289220
+    },
+    "14/fplus/0": {
+      "actual_probability": [
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632606",
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632609"
+      ],
+      "all_column_error_upper": "2.2191867489651932534548023941780088488431357886769165423496821404753973666940765e-53",
+      "even_G_power": 126647144291372031220795748900595272100348768455701046
+    },
+    "14/fplus/1": {
+      "actual_probability": [
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437933",
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437936"
+      ],
+      "all_column_error_upper": "9.3217038171299015755941186830107072588432790400105862201157429037662582709488953e-54",
+      "even_G_power": 17404344217537444588200447694757157346172340195269366
+    },
+    "14/fplus/2": {
+      "actual_probability": [
+        "0.00000185123981254951551011487067604699155461909608939153850910207856635521816731",
+        "0.00000185123981254951551011487067604699155461909608939153850910207856635521816734"
+      ],
+      "all_column_error_upper": "4.3115263127751608373158157496725487433532270281012824066647702080269212135641944e-53",
+      "even_G_power": 100797508779030043073732393355370455251889750715630492
+    },
+    "14/fplus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "14/fplus/4": {
+      "actual_probability": [
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351139",
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351142"
+      ],
+      "all_column_error_upper": "8.8554891584763189121632186551570167614859301521537459267194352703906423923591715e-54",
+      "even_G_power": 46824363857320915396619178792021912983647612158049200
+    },
+    "14/fplus/5": {
+      "actual_probability": [
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487169",
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487172"
+      ],
+      "all_column_error_upper": "5.8515216366877366868364547502852433172564834922635996068428489346641901871832789e-55",
+      "even_G_power": 169650010000792674919898798432961139981379248162017570
+    },
+    "14/fplus/6": {
+      "actual_probability": [
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179342",
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179345"
+      ],
+      "all_column_error_upper": "1.0879827389720586241404494921052981682787365993160273526219498697841590204466384e-53",
+      "even_G_power": 56281039953077095792976122308959056603886475809289220
+    },
+    "14/qminus/0": {
+      "actual_probability": [
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632606",
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632609"
+      ],
+      "all_column_error_upper": "2.2191867489651932534548023941780088488431357886769165423496821404753973666940765e-53",
+      "even_G_power": 126647144291372031220795748900595272100348768455701046
+    },
+    "14/qminus/1": {
+      "actual_probability": [
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437933",
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437936"
+      ],
+      "all_column_error_upper": "9.3217038171299015755941186830107072588432790400105862201157429037662582709488953e-54",
+      "even_G_power": 17404344217537444588200447694757157346172340195269366
+    },
+    "14/qminus/2": {
+      "actual_probability": [
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323072",
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323075"
+      ],
+      "all_column_error_upper": "1.6122242557610881586649005740796712052385729925123462921736996252017064855237578e-53",
+      "even_G_power": 29626585589260073015583908257810530690760259476867512
+    },
+    "14/qminus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "14/qminus/4": {
+      "actual_probability": [
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351139",
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351142"
+      ],
+      "all_column_error_upper": "8.8554891584763189121632186551570167614859301521537459267194352703906423923591715e-54",
+      "even_G_power": 46824363857320915396619178792021912983647612158049200
+    },
+    "14/qminus/5": {
+      "actual_probability": [
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487169",
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487172"
+      ],
+      "all_column_error_upper": "5.8515216366877366868364547502852433172564834922635996068428489346641901871832789e-55",
+      "even_G_power": 169650010000792674919898798432961139981379248162017570
+    },
+    "14/qminus/6": {
+      "actual_probability": [
+        "0.00000185123566630910437120119974231937562423678528421152761132928699970431471460",
+        "0.00000185123566630910437120119974231937562423678528421152761132928699970431471463"
+      ],
+      "all_column_error_upper": "1.8779422087852239062425658253667152987394758141738847797756654171379827700498221e-53",
+      "even_G_power": 172078058432550580411756917789273057464557068106748162
+    },
+    "14/qplus/0": {
+      "actual_probability": [
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632606",
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632609"
+      ],
+      "all_column_error_upper": "2.2191867489651932534548023941780088488431357886769165423496821404753973666940765e-53",
+      "even_G_power": 126647144291372031220795748900595272100348768455701046
+    },
+    "14/qplus/1": {
+      "actual_probability": [
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437933",
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437936"
+      ],
+      "all_column_error_upper": "9.3217038171299015755941186830107072588432790400105862201157429037662582709488953e-54",
+      "even_G_power": 17404344217537444588200447694757157346172340195269366
+    },
+    "14/qplus/2": {
+      "actual_probability": [
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323072",
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323075"
+      ],
+      "all_column_error_upper": "1.6122242557610881586649005740796712052385729925123462921736996252017064855237578e-53",
+      "even_G_power": 29626585589260073015583908257810530690760259476867512
+    },
+    "14/qplus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "14/qplus/4": {
+      "actual_probability": [
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351139",
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351142"
+      ],
+      "all_column_error_upper": "8.8554891584763189121632186551570167614859301521537459267194352703906423923591715e-54",
+      "even_G_power": 46824363857320915396619178792021912983647612158049200
+    },
+    "14/qplus/5": {
+      "actual_probability": [
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487169",
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487172"
+      ],
+      "all_column_error_upper": "5.8515216366877366868364547502852433172564834922635996068428489346641901871832789e-55",
+      "even_G_power": 169650010000792674919898798432961139981379248162017570
+    },
+    "14/qplus/6": {
+      "actual_probability": [
+        "0.00000185123566296469970294038718772666967119766274130119359014736577613663017132",
+        "0.00000185123566296469970294038718772666967119766274130119359014736577613663017135"
+      ],
+      "all_column_error_upper": "5.8014669416682615200498572610713224197528720950584164630053792965705751315606526e-54",
+      "even_G_power": 33507745634221834413351627001737074580828900483637272
+    },
+    "14/refminus/0": {
+      "actual_probability": [
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632606",
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632609"
+      ],
+      "all_column_error_upper": "2.2191867489651932534548023941780088488431357886769165423496821404753973666940765e-53",
+      "even_G_power": 126647144291372031220795748900595272100348768455701046
+    },
+    "14/refminus/1": {
+      "actual_probability": [
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437933",
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437936"
+      ],
+      "all_column_error_upper": "9.3217038171299015755941186830107072588432790400105862201157429037662582709488953e-54",
+      "even_G_power": 17404344217537444588200447694757157346172340195269366
+    },
+    "14/refminus/2": {
+      "actual_probability": [
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323072",
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323075"
+      ],
+      "all_column_error_upper": "1.6122242557610881586649005740796712052385729925123462921736996252017064855237578e-53",
+      "even_G_power": 29626585589260073015583908257810530690760259476867512
+    },
+    "14/refminus/3": {
+      "actual_probability": [
+        "0.00000185123957841679361311290398404639835474793288491429459610655723169868421404",
+        "0.00000185123957841679361311290398404639835474793288491429459610655723169868421407"
+      ],
+      "all_column_error_upper": "1.3068697206106655950135223446983547263326036563233969730983404872791263698409658e-54",
+      "even_G_power": 21484583892371736918248273042553823397964329433800194
+    },
+    "14/refminus/4": {
+      "actual_probability": [
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351139",
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351142"
+      ],
+      "all_column_error_upper": "8.8554891584763189121632186551570167614859301521537459267194352703906423923591715e-54",
+      "even_G_power": 46824363857320915396619178792021912983647612158049200
+    },
+    "14/refminus/5": {
+      "actual_probability": [
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487169",
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487172"
+      ],
+      "all_column_error_upper": "5.8515216366877366868364547502852433172564834922635996068428489346641901871832789e-55",
+      "even_G_power": 169650010000792674919898798432961139981379248162017570
+    },
+    "14/refminus/6": {
+      "actual_probability": [
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179342",
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179345"
+      ],
+      "all_column_error_upper": "1.0879827389720586241404494921052981682787365993160273526219498697841590204466384e-53",
+      "even_G_power": 56281039953077095792976122308959056603886475809289220
+    },
+    "14/refplus/0": {
+      "actual_probability": [
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632606",
+        "0.00000185124016347323266622777066247815240437979154254027958494955357015134632609"
+      ],
+      "all_column_error_upper": "2.2191867489651932534548023941780088488431357886769165423496821404753973666940765e-53",
+      "even_G_power": 126647144291372031220795748900595272100348768455701046
+    },
+    "14/refplus/1": {
+      "actual_probability": [
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437933",
+        "0.00000185123899350059511915560746037663807889945477146918268459782048113250437936"
+      ],
+      "all_column_error_upper": "9.3217038171299015755941186830107072588432790400105862201157429037662582709488953e-54",
+      "even_G_power": 17404344217537444588200447694757157346172340195269366
+    },
+    "14/refplus/2": {
+      "actual_probability": [
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323072",
+        "0.00000185123981247810886867674727419395136128323204616974202687365536136550323075"
+      ],
+      "all_column_error_upper": "1.6122242557610881586649005740796712052385729925123462921736996252017064855237578e-53",
+      "even_G_power": 29626585589260073015583908257810530690760259476867512
+    },
+    "14/refplus/3": {
+      "actual_probability": [
+        "0.00000185123957855961253859502415518726967857874969070855620193431328234393718431",
+        "0.00000185123957855961253859502415518726967857874969070855620193431328234393718434"
+      ],
+      "all_column_error_upper": "2.0597825848377811720448535265207733823146966410922149178495238036256832555252918e-53",
+      "even_G_power": 30989424324003407436699018708938887930749338316308648
+    },
+    "14/refplus/4": {
+      "actual_probability": [
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351139",
+        "0.00000185124016344563611659026493553591316746760109596223298016240322240498351142"
+      ],
+      "all_column_error_upper": "8.8554891584763189121632186551570167614859301521537459267194352703906423923591715e-54",
+      "even_G_power": 46824363857320915396619178792021912983647612158049200
+    },
+    "14/refplus/5": {
+      "actual_probability": [
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487169",
+        "0.00000185123899347299856706182294951802834541632802906709497968966443450792487172"
+      ],
+      "all_column_error_upper": "5.8515216366877366868364547502852433172564834922635996068428489346641901871832789e-55",
+      "even_G_power": 169650010000792674919898798432961139981379248162017570
+    },
+    "14/refplus/6": {
+      "actual_probability": [
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179342",
+        "0.00000185123566463690204760415728745415195884364358695816704736431305869071179345"
+      ],
+      "all_column_error_upper": "1.0879827389720586241404494921052981682787365993160273526219498697841590204466384e-53",
+      "even_G_power": 56281039953077095792976122308959056603886475809289220
+    },
+    "6/center/0": {
+      "actual_probability": [
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042562",
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042565"
+      ],
+      "all_column_error_upper": "2.7926186704483843290402962291233237375595467567603036291463741265442366294279814e-53",
+      "even_G_power": 166980422148243990063754456624644386457035940484336750
+    },
+    "6/center/1": {
+      "actual_probability": [
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950672",
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950675"
+      ],
+      "all_column_error_upper": "3.3922190895228030266018636340317004507304725028489098714829283638342924977343861e-53",
+      "even_G_power": 81671361503765764029334607256465244988172631533796724
+    },
+    "6/center/2": {
+      "actual_probability": [
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845556",
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845559"
+      ],
+      "all_column_error_upper": "5.0684270719708048060977604219547468096646818850806182155144274547684168057295593e-53",
+      "even_G_power": 157884163935496221035891716444253085740677064404787226
+    },
+    "6/center/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "6/center/4": {
+      "actual_probability": [
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220625",
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220628"
+      ],
+      "all_column_error_upper": "2.544676104408397515766813801346560568650683074390084883377655261002327186220535e-53",
+      "even_G_power": 147354939384896056520435191651942888917956644722531274
+    },
+    "6/center/5": {
+      "actual_probability": [
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660717",
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660720"
+      ],
+      "all_column_error_upper": "1.4530993881774977842191657513274203905239844064887133468285892014346420513257832e-53",
+      "even_G_power": 17235448999966429724796277732477107760874402405429388
+    },
+    "6/center/6": {
+      "actual_probability": [
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833340",
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833343"
+      ],
+      "all_column_error_upper": "4.3887016103511620633875712994346656644401913789083895175080943464958480045503113e-53",
+      "even_G_power": 205578611277340727867335048834121572340877629561906438
+    },
+    "6/fminus/0": {
+      "actual_probability": [
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042562",
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042565"
+      ],
+      "all_column_error_upper": "2.7926186704483843290402962291233237375595467567603036291463741265442366294279814e-53",
+      "even_G_power": 166980422148243990063754456624644386457035940484336750
+    },
+    "6/fminus/1": {
+      "actual_probability": [
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950672",
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950675"
+      ],
+      "all_column_error_upper": "3.3922190895228030266018636340317004507304725028489098714829283638342924977343861e-53",
+      "even_G_power": 81671361503765764029334607256465244988172631533796724
+    },
+    "6/fminus/2": {
+      "actual_probability": [
+        "0.00000185129454378551679125508729526963251097653094724935348341744856822554628975",
+        "0.00000185129454378551679125508729526963251097653094724935348341744856822554628978"
+      ],
+      "all_column_error_upper": "7.2128526299952336702875619087589681993035645711116808481746761588199237596806439e-54",
+      "even_G_power": 100120856817154225571708032782671270021297276548811966
+    },
+    "6/fminus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "6/fminus/4": {
+      "actual_probability": [
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220625",
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220628"
+      ],
+      "all_column_error_upper": "2.544676104408397515766813801346560568650683074390084883377655261002327186220535e-53",
+      "even_G_power": 147354939384896056520435191651942888917956644722531274
+    },
+    "6/fminus/5": {
+      "actual_probability": [
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660717",
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660720"
+      ],
+      "all_column_error_upper": "1.4530993881774977842191657513274203905239844064887133468285892014346420513257832e-53",
+      "even_G_power": 17235448999966429724796277732477107760874402405429388
+    },
+    "6/fminus/6": {
+      "actual_probability": [
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833340",
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833343"
+      ],
+      "all_column_error_upper": "4.3887016103511620633875712994346656644401913789083895175080943464958480045503113e-53",
+      "even_G_power": 205578611277340727867335048834121572340877629561906438
+    },
+    "6/fplus/0": {
+      "actual_probability": [
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042562",
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042565"
+      ],
+      "all_column_error_upper": "2.7926186704483843290402962291233237375595467567603036291463741265442366294279814e-53",
+      "even_G_power": 166980422148243990063754456624644386457035940484336750
+    },
+    "6/fplus/1": {
+      "actual_probability": [
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950672",
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950675"
+      ],
+      "all_column_error_upper": "3.3922190895228030266018636340317004507304725028489098714829283638342924977343861e-53",
+      "even_G_power": 81671361503765764029334607256465244988172631533796724
+    },
+    "6/fplus/2": {
+      "actual_probability": [
+        "0.00000185130380891384251435769788617336708221650914833228315635807520423252973218",
+        "0.00000185130380891384251435769788617336708221650914833228315635807520423252973221"
+      ],
+      "all_column_error_upper": "1.267704984656921072432298777939114260351078652073792223386933429240327542418467e-53",
+      "even_G_power": 174848082997719191954370203805146966037422002378559242
+    },
+    "6/fplus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "6/fplus/4": {
+      "actual_probability": [
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220625",
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220628"
+      ],
+      "all_column_error_upper": "2.544676104408397515766813801346560568650683074390084883377655261002327186220535e-53",
+      "even_G_power": 147354939384896056520435191651942888917956644722531274
+    },
+    "6/fplus/5": {
+      "actual_probability": [
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660717",
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660720"
+      ],
+      "all_column_error_upper": "1.4530993881774977842191657513274203905239844064887133468285892014346420513257832e-53",
+      "even_G_power": 17235448999966429724796277732477107760874402405429388
+    },
+    "6/fplus/6": {
+      "actual_probability": [
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833340",
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833343"
+      ],
+      "all_column_error_upper": "4.3887016103511620633875712994346656644401913789083895175080943464958480045503113e-53",
+      "even_G_power": 205578611277340727867335048834121572340877629561906438
+    },
+    "6/qminus/0": {
+      "actual_probability": [
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042562",
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042565"
+      ],
+      "all_column_error_upper": "2.7926186704483843290402962291233237375595467567603036291463741265442366294279814e-53",
+      "even_G_power": 166980422148243990063754456624644386457035940484336750
+    },
+    "6/qminus/1": {
+      "actual_probability": [
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950672",
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950675"
+      ],
+      "all_column_error_upper": "3.3922190895228030266018636340317004507304725028489098714829283638342924977343861e-53",
+      "even_G_power": 81671361503765764029334607256465244988172631533796724
+    },
+    "6/qminus/2": {
+      "actual_probability": [
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845556",
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845559"
+      ],
+      "all_column_error_upper": "5.0684270719708048060977604219547468096646818850806182155144274547684168057295593e-53",
+      "even_G_power": 157884163935496221035891716444253085740677064404787226
+    },
+    "6/qminus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "6/qminus/4": {
+      "actual_probability": [
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220625",
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220628"
+      ],
+      "all_column_error_upper": "2.544676104408397515766813801346560568650683074390084883377655261002327186220535e-53",
+      "even_G_power": 147354939384896056520435191651942888917956644722531274
+    },
+    "6/qminus/5": {
+      "actual_probability": [
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660717",
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660720"
+      ],
+      "all_column_error_upper": "1.4530993881774977842191657513274203905239844064887133468285892014346420513257832e-53",
+      "even_G_power": 17235448999966429724796277732477107760874402405429388
+    },
+    "6/qminus/6": {
+      "actual_probability": [
+        "0.00000185034423812989689696620543149352962821172110799773242429799861338408908953",
+        "0.00000185034423812989689696620543149352962821172110799773242429799861338408908956"
+      ],
+      "all_column_error_upper": "4.0495343617316644069631292267767691449983350892006423103323297402118784267822769e-53",
+      "even_G_power": 56671061190400289091673262167487613571970957027434852
+    },
+    "6/qplus/0": {
+      "actual_probability": [
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042562",
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042565"
+      ],
+      "all_column_error_upper": "2.7926186704483843290402962291233237375595467567603036291463741265442366294279814e-53",
+      "even_G_power": 166980422148243990063754456624644386457035940484336750
+    },
+    "6/qplus/1": {
+      "actual_probability": [
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950672",
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950675"
+      ],
+      "all_column_error_upper": "3.3922190895228030266018636340317004507304725028489098714829283638342924977343861e-53",
+      "even_G_power": 81671361503765764029334607256465244988172631533796724
+    },
+    "6/qplus/2": {
+      "actual_probability": [
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845556",
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845559"
+      ],
+      "all_column_error_upper": "5.0684270719708048060977604219547468096646818850806182155144274547684168057295593e-53",
+      "even_G_power": 157884163935496221035891716444253085740677064404787226
+    },
+    "6/qplus/3": {
+      "actual_probability": [
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660390",
+        "0.00000185123957848820307628439505498340366171697988427188319829258056317273660393"
+      ],
+      "all_column_error_upper": "7.6837565656668483237301744912106535833352337554300449881236355381472274898790641e-54",
+      "even_G_power": 189849383261742275631154401803832346501845957536825416
+    },
+    "6/qplus/4": {
+      "actual_probability": [
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220625",
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220628"
+      ],
+      "all_column_error_upper": "2.544676104408397515766813801346560568650683074390084883377655261002327186220535e-53",
+      "even_G_power": 147354939384896056520435191651942888917956644722531274
+    },
+    "6/qplus/5": {
+      "actual_probability": [
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660717",
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660720"
+      ],
+      "all_column_error_upper": "1.4530993881774977842191657513274203905239844064887133468285892014346420513257832e-53",
+      "even_G_power": 17235448999966429724796277732477107760874402405429388
+    },
+    "6/qplus/6": {
+      "actual_probability": [
+        "0.00000185012341521259456437973762504042574337639027828157089101843656983378507539",
+        "0.00000185012341521259456437973762504042574337639027828157089101843656983378507542"
+      ],
+      "all_column_error_upper": "5.3115162045505887656578946411315043811651680186192130854952518478530205467514759e-53",
+      "even_G_power": 173170098263517651968686567837479049892959129296898632
+    },
+    "6/refminus/0": {
+      "actual_probability": [
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042562",
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042565"
+      ],
+      "all_column_error_upper": "2.7926186704483843290402962291233237375595467567603036291463741265442366294279814e-53",
+      "even_G_power": 166980422148243990063754456624644386457035940484336750
+    },
+    "6/refminus/1": {
+      "actual_probability": [
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950672",
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950675"
+      ],
+      "all_column_error_upper": "3.3922190895228030266018636340317004507304725028489098714829283638342924977343861e-53",
+      "even_G_power": 81671361503765764029334607256465244988172631533796724
+    },
+    "6/refminus/2": {
+      "actual_probability": [
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845556",
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845559"
+      ],
+      "all_column_error_upper": "5.0684270719708048060977604219547468096646818850806182155144274547684168057295593e-53",
+      "even_G_power": 157884163935496221035891716444253085740677064404787226
+    },
+    "6/refminus/3": {
+      "actual_probability": [
+        "0.00000185123489674896587283615591370015843591090702422876947681110711188669627283",
+        "0.00000185123489674896587283615591370015843591090702422876947681110711188669627286"
+      ],
+      "all_column_error_upper": "1.9159921085828908603641047317500580115289459938097573086068334247144683459191454e-53",
+      "even_G_power": 61226611241660293276882653331246758830858253580856354
+    },
+    "6/refminus/4": {
+      "actual_probability": [
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220625",
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220628"
+      ],
+      "all_column_error_upper": "2.544676104408397515766813801346560568650683074390084883377655261002327186220535e-53",
+      "even_G_power": 147354939384896056520435191651942888917956644722531274
+    },
+    "6/refminus/5": {
+      "actual_probability": [
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660717",
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660720"
+      ],
+      "all_column_error_upper": "1.4530993881774977842191657513274203905239844064887133468285892014346420513257832e-53",
+      "even_G_power": 17235448999966429724796277732477107760874402405429388
+    },
+    "6/refminus/6": {
+      "actual_probability": [
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833340",
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833343"
+      ],
+      "all_column_error_upper": "4.3887016103511620633875712994346656644401913789083895175080943464958480045503113e-53",
+      "even_G_power": 205578611277340727867335048834121572340877629561906438
+    },
+    "6/refplus/0": {
+      "actual_probability": [
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042562",
+        "0.00000185138925047726766234466378863374984378846512284661050356493113085270042565"
+      ],
+      "all_column_error_upper": "2.7926186704483843290402962291233237375595467567603036291463741265442366294279814e-53",
+      "even_G_power": 166980422148243990063754456624644386457035940484336750
+    },
+    "6/refplus/1": {
+      "actual_probability": [
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950672",
+        "0.00000185108973752326450277749795816569643206983952946781007450947770159330950675"
+      ],
+      "all_column_error_upper": "3.3922190895228030266018636340317004507304725028489098714829283638342924977343861e-53",
+      "even_G_power": 81671361503765764029334607256465244988172631533796724
+    },
+    "6/refplus/2": {
+      "actual_probability": [
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845556",
+        "0.00000185129917819836665814086378793320573419750064025340195876725007134533845559"
+      ],
+      "all_column_error_upper": "5.0684270719708048060977604219547468096646818850806182155144274547684168057295593e-53",
+      "even_G_power": 157884163935496221035891716444253085740677064404787226
+    },
+    "6/refplus/3": {
+      "actual_probability": [
+        "0.00000185124425653006626906369180184323701232109155938998336679290804116385388205",
+        "0.00000185124425653006626906369180184323701232109155938998336679290804116385388208"
+      ],
+      "all_column_error_upper": "3.7576951652763216563505458603577927461383181070470605027318028686728498971905845e-53",
+      "even_G_power": 6210084696738387749845599326408914345427508790047098
+    },
+    "6/refplus/4": {
+      "actual_probability": [
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220625",
+        "0.00000185138744193031595342646332048578078087580576528575338332066895626611220628"
+      ],
+      "all_column_error_upper": "2.544676104408397515766813801346560568650683074390084883377655261002327186220535e-53",
+      "even_G_power": 147354939384896056520435191651942888917956644722531274
+    },
+    "6/refplus/5": {
+      "actual_probability": [
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660717",
+        "0.00000185108792893510327414531489990726633574990064012569796786750843206705660720"
+      ],
+      "all_column_error_upper": "1.4530993881774977842191657513274203905239844064887133468285892014346420513257832e-53",
+      "even_G_power": 17235448999966429724796277732477107760874402405429388
+    },
+    "6/refplus/6": {
+      "actual_probability": [
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833340",
+        "0.00000185023387169126396799589446814647501455427635085243879742927021257872833343"
+      ],
+      "all_column_error_upper": "4.3887016103511620633875712994346656644401913789083895175080943464958480045503113e-53",
+      "even_G_power": 205578611277340727867335048834121572340877629561906438
+    },
+    "READY": {
+      "actual_probability": [
+        "0.34164078707015471282261307598297262642736749487999883926753323305706401238507539",
+        "0.34164078707015471282261307598297262642736749487999883926753323305706401238507542"
+      ],
+      "all_column_error_upper": "1.0711056990456213722860031357223941786649199267794215155494239988187971046881418e-53",
+      "even_G_power": 186682401993746210129834132295252180521795691802650508
+    }
+  },
+  "independent_input_source": {
+    "fixed_comparator_unchanged_for_every_case": true,
+    "formula": "DQ=kappa*p^7*sum nu_j*(r_j da_j+a_j dr_j)",
+    "independent_forward_reverse_preparation_rows": 28,
+    "one_sided_source_at_matched_reflection": "one half of paired source; heat first source zero; finite heat retained",
+    "paired_probability_rows": 14,
+    "shared_READY_identity": "a*dXi/da=2*Xi",
+    "unlinked_reference_changes_loader_only": true
+  },
+  "independent_reference_legs": {
+    "forward": [
+      "-1.00000489354208569693084134511758165164188887779564779179764668695405037226999913",
+      "-1.00000489354208569693084134511758165164188887779564779179535009823660930995515447"
+    ],
+    "reverse": [
+      "-1.00000489354208569693084134511758165164188887779564779179764668695405037226999913",
+      "-1.00000489354208569693084134511758165164188887779564779179535009823660930995515447"
+    ]
+  },
+  "input_commit": "df20fd997e796b3aa553d1aadfe56b64cf5f48a2",
+  "integration_commit": "7ae1027c9b1fd0dd3f9b9b11821d365421d24aa0",
+  "joint_compiler": {
+    "certified_uniform_all_column_error_upper": "6e-53",
+    "common_L": 214228436621753029888874984247688556232704365741011832,
+    "compiled_probability_calls": 148,
+    "convergent_denominator": 107114218310876514944437492123844278116352182870505917,
+    "convergent_numerator": 22715776323761393776465739999797021272635058807397375,
+    "maximum_all_column_error_diagnostic": "5.3115162045505887656578946411315043811651680186192130854952518478530205467514759e-53",
+    "phase_derivative_postulated": false,
+    "ready_and_report_kept_separate": true,
+    "requested_all_column_error": "1e-50",
+    "stages_per_forward_call_and_per_inverse_call": 214228436621753029888874984247688556232704365741011848
+  },
+  "original_ready": {
+    "F21": 10946,
+    "actual_compiled_value": [
+      "0.34164078707015471282261307598297262642736749487999883926753323305706401238507539",
+      "0.34164078707015471282261307598297262642736749487999883926753323305706401238507542"
+    ],
+    "n": 20,
+    "value": [
+      "0.34164078707015471282261307598297262642736749487999884645148889772506418597757158",
+      "0.34164078707015471282261307598297262642736749487999884645148889772506418597757161"
+    ]
+  },
+  "original_report": "r=z(A+B)-z^2AB; E=p^2(1+x), ell=4E(1-E), B=4(p+p^2y)^2(1-(p+p^2y)^2), A=ell+(1-ell)B",
+  "pins": {
+    "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md": "320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b",
+    "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/PROOF_RU.md": "a04d8842a7082b7a43d32f993c13e76262674d9a454924891bb2150f9a774c8b",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+  },
+  "predicate": {
+    "P_j": "actual_READY_probability * actual_REPORT_probability",
+    "actual_event": "kappa_512*p^7*(4+(P_yplus-P_yminus)*(P_f-P_0)+(P_xplus-P_xminus)*(P_q-P_0))",
+    "local_all_column_tables": [
+      {
+        "coefficients": {
+          "-1": 256,
+          "1": 256
+        },
+        "selector": "00011",
+        "sign": 1
+      },
+      {
+        "coefficients": {
+          "-1": 256,
+          "1": 256
+        },
+        "selector": "00101",
+        "sign": 1
+      },
+      {
+        "coefficients": {
+          "-15": 16,
+          "-1": 240,
+          "1": 240,
+          "15": 16
+        },
+        "selector": "00110",
+        "sign": -1
+      },
+      {
+        "coefficients": {
+          "-15": 16,
+          "-1": 240,
+          "1": 240,
+          "15": 16
+        },
+        "selector": "01001",
+        "sign": -1
+      },
+      {
+        "coefficients": {
+          "-1": 256,
+          "1": 256
+        },
+        "selector": "01010",
+        "sign": 1
+      },
+      {
+        "coefficients": {
+          "-1": 256,
+          "1": 256
+        },
+        "selector": "01100",
+        "sign": 1
+      },
+      {
+        "coefficients": {
+          "-15": 16,
+          "-1": 240,
+          "1": 240,
+          "15": 16
+        },
+        "selector": "10001",
+        "sign": -1
+      },
+      {
+        "coefficients": {
+          "-15": 16,
+          "-1": 240,
+          "1": 240,
+          "15": 16
+        },
+        "selector": "10010",
+        "sign": -1
+      }
+    ]
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "GR_closed": false,
+    "arbitrary_geometric_marked_maps_transported": false,
+    "autonomous_common_parameter_writer_emitted": false,
+    "physical_all_X_N_identified": false,
+    "same_shared_original_report_function": true,
+    "scalar_effect_source_realization_only": true
+  },
+  "source_levels": [
+    {
+      "center_corner": [
+        "0.74156707198055115461213067431343190345006669217930800198648284150303011976541715",
+        "0.74156707198055115461213067431343190345006669217930800198648284150303011976541718"
+      ],
+      "center_return_price": [
+        "0.00000343382548787948859075104999698711425153428578908019655500625692947166972681",
+        "0.00000343382548787948859075104999698711425153428578908019655500625692947166972684"
+      ],
+      "delta": [
+        "0.00033363359642577994127374145872577501675920823488954008920874334521928967155404",
+        "0.00033363359642577994127374145872577501675920823488954008920874334521928967155407"
+      ],
+      "epsilon": "2^-6",
+      "full_absolute_price": [
+        "193.78696174551617908339118321998814264729210488271835165082849551830742331758401127",
+        "193.78696174551617908339118321998816277707657803527911532055003468042810094562348583"
+      ],
+      "gain": [
+        "0.00000000000000000000000000765472015060939782194822213826866262729439360926966153",
+        "0.00000000000000000000000000765472015060939782194822213826866262729439360926966156"
+      ],
+      "normalized_native_sources": {
+        "f": {
+          "deviation_from_leading": [
+            "-0.01011284862671449692121909534961346453477122653513424386874721279471831769828569",
+            "-0.01011284862671449692121909534961346453477122653513424386874721279471831769828415"
+          ],
+          "value": [
+            "0.98988715137328550307878090465038653546522877346486575613125278720528168230171431",
+            "0.98988715137328550307878090465038653546522877346486575613125278720528168230171585"
+          ]
+        },
+        "independent_reference": {
+          "deviation_from_leading": [
+            "0.00000013758841977697957280515206770485046238108641915507865364680348613249620350",
+            "0.00000013758841977697957280515206770485046238108641915507865364680348613249620468"
+          ],
+          "value": [
+            "-1.99999986241158022302042719484793229514953761891358084492134635319651386750379650",
+            "-1.99999986241158022302042719484793229514953761891358084492134635319651386750379532"
+          ]
+        },
+        "q": {
+          "deviation_from_leading": [
+            "-0.17633702424809244889906981662848248932889465444951534031032629775303114953306195",
+            "-0.17633702424809244889906981662848248932889465444951534031032629775303114953306055"
+          ],
+          "value": [
+            "-23.59274377613216742179465188152373523359207316843990717409346184310749027178326021",
+            "-23.59274377613216742179465188152373523359207316843990717409346184310749027178325881"
+          ]
+        }
+      },
+      "normalized_target_sources": {
+        "f": [
+          "0.98988715137328550307878090465038653546522877462633190351392742106182325154880373",
+          "0.98988715137328550307878090465038653546522877462633190351392742106182325154880376"
+        ],
+        "independent_reference": [
+          "-1.99999986241158022302042719484793229514953762626761497883221562444524948299611189",
+          "-1.99999986241158022302042719484793229514953762626761497883221562444524948299611186"
+        ],
+        "q": [
+          "-23.59274377613216742179465188152373523359207316497357920551120559369175224094710534",
+          "-23.59274377613216742179465188152373523359207316497357920551120559369175224094710531"
+        ]
+      },
+      "rigorous_compiler_source_error_bound": [
+        "0.00000000000000000000000003572145753085447599446874967696465308789434401695313565",
+        "0.00000000000000000000000003572145753085447599446874967696465308789434401695313568"
+      ],
+      "t": "2^-6"
+    },
+    {
+      "center_corner": [
+        "0.74156707198055115461000209248041665951250375128798579512630887672054136708821543",
+        "0.74156707198055115461000209248041665951250375128798579512630887672054136708821546"
+      ],
+      "center_return_price": [
+        "0.00000343382548787948859077513579524930635099980183614050444464595687897754457692",
+        "0.00000343382548787948859077513579524930635099980183614050444464595687897754457695"
+      ],
+      "delta": [
+        "0.00002085209977661124632960884117036093854745051468059625557554645907620560447211",
+        "0.00002085209977661124632960884117036093854745051468059625557554645907620560447214"
+      ],
+      "epsilon": "2^-10",
+      "full_absolute_price": [
+        "193.78696174551617908339118324407394090948420434823439871113638515800737282345886138",
+        "193.78696174551617908339118324407396103926867750079516238085792432012805045149833593"
+      ],
+      "gain": [
+        "0.00000000000000000000000000002990125058831796024189941476351751436481864070881814",
+        "0.00000000000000000000000000002990125058831796024189941476351751436481864070881817"
+      ],
+      "normalized_native_sources": {
+        "f": {
+          "deviation_from_leading": [
+            "-0.00063204506397049708640723825340563776390773511967929186461300150117483535172897",
+            "-0.00063204506397049708640723825340563776390773511967929186461300150117483535148181"
+          ],
+          "value": [
+            "0.99936795493602950291359276174659436223609226488032070813538699849882516464827103",
+            "0.99936795493602950291359276174659436223609226488032070813538699849882516464851819"
+          ]
+        },
+        "independent_reference": {
+          "deviation_from_leading": [
+            "0.00000000053745476475382234635272109150204804695511364076617230131457800415690333",
+            "0.00000000053745476475382234635272109150204804695511364076617230131457800415708853"
+          ],
+          "value": [
+            "-1.99999999946254523524617765364727890849795195304488635923382769868542199584309667",
+            "-1.99999999946254523524617765364727890849795195304488635923382769868542199584291147"
+          ]
+        },
+        "q": {
+          "deviation_from_leading": [
+            "-0.01104650934699719895053569906662361869032651653306137717476727467370267996328158",
+            "-0.01104650934699719895053569906662361869032651653306137717476727467370267996301385"
+          ],
+          "value": [
+            "-23.42745326123107217184611776396187636295350503052345321095790282002816180221347984",
+            "-23.42745326123107217184611776396187636295350503052345321095790282002816180221321211"
+          ]
+        }
+      },
+      "normalized_target_sources": {
+        "f": [
+          "0.99936795493602950291359276174659436223609421883372833125141311748646975156276198",
+          "0.99936795493602950291359276174659436223609421883372833125141311748646975156276201"
+        ],
+        "independent_reference": [
+          "-1.99999999946254523524617765364727890849794656173024170475796394529383948667184608",
+          "-1.99999999946254523524617765364727890849794656173024170475796394529383948667184605"
+        ],
+        "q": [
+          "-23.42745326123107217184611776396187636295350531929802109516353600421398927670040384",
+          "-23.42745326123107217184611776396187636295350531929802109516353600421398927670040381"
+        ]
+      },
+      "rigorous_compiler_source_error_bound": [
+        "0.00000000000000000000014631509004637993367376397864584165954427336497623330456110",
+        "0.00000000000000000000014631509004637993367376397864584165954427336497623330456113"
+      ],
+      "t": "2^-10"
+    },
+    {
+      "center_corner": [
+        "0.74156707198055115460999381143101198780679151164834145156874800524342493577093110",
+        "0.74156707198055115460999381143101198780679151164834145156874800524342493577093113"
+      ],
+      "center_return_price": [
+        "0.00000343382548787948859077522949880454041480482881692688949352884223334359013471",
+        "0.00000343382548787948859077522949880454041480482881692688949352884223334359013474"
+      ],
+      "delta": [
+        "0.00000130325623603820289560055257314755865921565716753726597347165369226285027949",
+        "0.00000130325623603820289560055257314755865921565716753726597347165369226285027952"
+      ],
+      "epsilon": "2^-14",
+      "full_absolute_price": [
+        "193.78696174551617908339118324416764446471826815326137949752143404089272718950441917",
+        "193.78696174551617908339118324416766459450274130582214316724297320301340481754389373"
+      ],
+      "gain": [
+        "0.00000000000000000000000000000011680176011061703219491828460084230971806766490365",
+        "0.00000000000000000000000000000011680176011061703219491828460084230971806766490368"
+      ],
+      "normalized_native_sources": {
+        "f": {
+          "deviation_from_leading": [
+            "-0.00003950278502781397107888694907082637963817030072303470545257616005796882349050",
+            "-0.00003950278502781397107888694907082637963817030072303470545257616005796873495773"
+          ],
+          "value": [
+            "0.99996049721497218602892111305092917362036182969927696529454742383994203117650950",
+            "0.99996049721497218602892111305092917362036182969927696529454742383994203126504227"
+          ]
+        },
+        "independent_reference": {
+          "deviation_from_leading": [
+            "0.00000000000209943267481961847772921312925093380141363990982270689664037422135276",
+            "0.00000000000209943267481961847772921312925093380141363990982270689664037428146195"
+          ],
+          "value": [
+            "-1.99999999999790056732518038152227078687074906619858636009017729310335962577864724",
+            "-1.99999999999790056732518038152227078687074906619858636009017729310335962571853805"
+          ]
+        },
+        "q": {
+          "deviation_from_leading": [
+            "-0.00069050585650539534615327438326822420965247903878307985218752928137739785449851",
+            "-0.00069050585650539534615327438326822420965247903878307985218752928137739776456737"
+          ],
+          "value": [
+            "-23.41709725774058036824173533927852096847283099302917491363532307463583652010469677",
+            "-23.41709725774058036824173533927852096847283099302917491363532307463583652001476563"
+          ]
+        }
+      },
+      "normalized_target_sources": {
+        "f": [
+          "0.99996049721497218602892111305092917361996111993698394754940928264596407229936849",
+          "0.99996049721497218602892111305092917361996111993698394754940928264596407229936852"
+        ],
+        "independent_reference": [
+          "-1.99999999999790056732518038152227078687126886968069533343259783686059719083964911",
+          "-1.99999999999790056732518038152227078687126886968069533343259783686059719083964908"
+        ],
+        "q": [
+          "-23.41709725774058036824173533927852096847265650648383466052766723255150804313560588",
+          "-23.41709725774058036824173533927852096847265650648383466052766723255150804313560585"
+        ]
+      },
+      "rigorous_compiler_source_error_bound": [
+        "0.00000000000000000059930660882997220832774394895893249796341524011509327152121864",
+        "0.00000000000000000059930660882997220832774394895893249796341524011509327152121867"
+      ],
+      "t": "2^-14"
+    }
+  ],
+  "status": "PASS_CONSTRUCTIVE_SEVEN_NATIVE_CALLS",
+  "word": {
+    "actual_marked_report_after_raw_stage": 2999198112704542418444249779467639787257861120374184053,
+    "all_columns_verified_structurally": true,
+    "all_runs_grammar_valid_by_per_gate_composition": true,
+    "bytes": 11494746,
+    "cases": 25,
+    "exponentiated_endpoint_certificate_not_tick_by_tick_execution": true,
+    "file": "native_runs.json",
+    "full_gate_lists_expanded": false,
+    "inventory": {
+      "CX": 8528,
+      "G": 5998396225409084836888499558935279574515722240748343074,
+      "SourceI": 16502
+    },
+    "raw_stages": 5998396225409084836888499558935279574515722240748368104,
+    "sha256": "bba75751d2b77a558d6cac74383afb284e09919faf2ee9bd25433bcf8a9f986c"
+  }
+}
+```
+<!-- END 7ef SEVEN REFERENCE RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:
