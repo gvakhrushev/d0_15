@@ -118217,6 +118217,628 @@ print(json.dumps(result,sort_keys=True,indent=2)+'\n',end='')
 ```
 <!-- END 7ej MARKED GEOMETRY RECEIPT -->
 
+## 7ek. Exact finite stationarity separates the full heat and return rows; apply it to the retained sampler
+
+3 November 2026. Same #334, constitutive/native-programme-v1, native
+realization and final composition. Input commit
+`688667433da4f6e38544428553ee6d466d8d16d3`. Consume §§7eh--7ej and
+the original GROWING_CLOCK (G1)--(G14), including all 425D modes. The
+consumer is the remaining exact-finite `joint_nonlinear_solve` application,
+not another geometric root search. The existing kappa source realization
+and its soundness/recovery remain unchanged.
+
+**Changed mathematical input.** Every actually compiled finite G/CX/SourceI
+word has algebraic matrices, whereas its finite heat derivative need not
+be algebraic. The complete Hodge carrier has a persistent zero eigenspace.
+Together these facts give an EXACT separation theorem: a nonzero algebraic
+return row cannot be repaired by any small thermal row of the same finite
+execution. This is stronger than an asymptotic error estimate and weaker
+than a no-go for all stationary native histories. It supplies an algebraic
+test for exact smooth comparison-source zeros and a concrete new constraint
+on the present sampler, with both independent preparation legs retained.
+
+### 7ek.A. Which finite equation, carrier and variations are being tested
+
+Use the SAME Book03 §03.25 master as §7eh.E,
+
+    B = beta^(-1) log Tr exp(-beta Delta) - log det(I-zF),
+    Delta = d_T* d_T direct-sum d_T d_T*,
+    F = P T* (I-P) T P, with the stated scene/cut embedding.       (EK1)
+
+Here beta>0 and 0<z<1 are fixed algebraic numbers (in the present
+construction beta=2p^2, z=2^-20). The finite birth layout, full counting
+trace and dimensions are fixed during each comparison. T, every generated
+cut P, every actual prefix and the independent controls are those of the
+ONE complete history. An earlier prefix is not replaced by a reflection.
+No normalization of the action or deletion of thermal modes is made.
+
+The theorem concerns a declared two-sided smooth matrix comparison at an
+actual finite word. Its base matrices and first jets are algebraic. This
+includes the elementary real CODE-plane generators and the algebraic
+generators in §7ej; product differentiation gives the complete Delta/F
+jets, including every moving cut. Real linear combinations of a finite
+algebraic tangent basis then cover its real span. Arbitrary transcendental
+jets are not silently included in the number-theoretic argument.
+
+The distinction in Book02 immediately before §02.CVFT.v5 is retained.
+A declared finite difference of two native words is another legitimate
+deformation, but zero of that finite contrast is NOT the derivative-zero
+statement below. Dense native compilation and the paid finite comparisons
+of §§7eh--7ej realize their controlled comparison limits; they do not turn
+exp(tX) into a native primitive or give an exact zero of each finite chord.
+Consequently this section tests the exact smooth-source version of the
+remaining finite obligation. It does not claim to solve, or rule out,
+every alternative finite-difference interpretation of X_N.
+
+All statements refer to the explicitly selected master (EK1). Identifying
+the additional terms of the older action stack with it remains a separate
+same-execution assertion, as already specified in §7eh.E.1.
+
+### 7ek.B. Exact thermal/return separation with degeneracies retained
+
+Write J=-log det(I-zF). At the algebraic base, let lambda_1,...,lambda_r
+be the DISTINCT eigenvalues of the full Hermitian Delta, with projectors
+Pi_i, multiplicities m_i, and define, for one allowed comparison v,
+
+    j_v = z Tr[(I-zF)^(-1) DF[v]],
+    a_i(v) = Tr[Pi_i DDelta[v]],
+    Z = sum_i m_i exp(-beta lambda_i).
+
+All lambda_i, Pi_i, j_v and a_i(v) are algebraic. For example Pi_i is
+the polynomial product over j!=i of
+(Delta-lambda_j I)/(lambda_i-lambda_j). The complete heat derivative is
+the ordinary finite matrix exponential derivative, with no assumption of
+commuting DDelta:
+
+    DB[v] = Z^(-1) sum_i (m_i j_v-a_i(v)) exp(-beta lambda_i). (EK2)
+
+The Lindemann--Weierstrass theorem states that exponentials at distinct
+algebraic arguments are linearly independent over the algebraic numbers.
+We use this established mathematical theorem, not a new physical premise:
+[Bezivin--Robba, Annals of Mathematics 129 (1989), pp.151--160,
+DOI 10.2307/1971488](https://annals.math.princeton.edu/1989/129-1/p05).
+An independently published machine formalization also states precisely
+this coefficient form: [Eberl, Hermite--Lindemann, Archive of Formal
+Proofs (2021)](https://isa-afp.org/entries/Hermite_Lindemann.html).
+Neither external formalization is claimed to have been run by our checker.
+
+It follows from (EK2) that DB[v]=0 iff a_i(v)=m_i j_v for every i.
+Now use the ACTUAL zero modes. GROWING_CLOCK (G12)--(G14) gives
+
+    dim C^0=33D, dim C^1=392D,
+    dim ker Delta >= 359D > 0.
+
+For any two-sided differentiable positive-semidefinite Delta(t), each
+u in ker Delta(0) has <u,Delta(t)u>>=0 with value zero at t=0.
+Its first derivative is zero. Polarization, or just the trace of an
+orthonormal kernel basis, gives a_0(v)=0. No constant-rank assumption
+on the rest of the spectrum is needed. The lambda=0 coefficient in
+(EK2) forces m_0 j_v=0. Therefore
+
+    DB[v]=0  iff  j_v=0 AND a_i(v)=0 for all i.               (EK3)
+
+The converse is immediate. This is an exact equivalence on the given
+jet domain, not merely a necessary estimate. The same statement applies
+separately to every independent old, new, forward, reverse and preparation
+row for which the algebraic hypotheses hold. A late finite retention K,
+however large, does not bypass it; its actual clock remains finite and
+algebraic and has the same mandatory harmonic block.
+
+This does NOT assert DDelta=0, nor that every eigenbranch has zero first
+derivative at a repeated eigenvalue. For example Delta=diag(0,2,2,5)
+and DDelta=diag(0,1,-1,0) have all a_i=0 with DDelta nonzero. The
+necessary equations are the traces over complete degenerate blocks.
+Conversely the zero-mode hypothesis matters: without it, Delta(t)=
+diag(1+t,2+t), beta=1 and any admissible scalar F(t) with J'(0)=1
+give H'=-1, J'=1. Adding a FIXED zero mode leaves DB=1/Z>0 in that
+example. Dropping the 359D block can therefore manufacture a false root.
+
+There is a useful finite algebraic form requiring no exponential equality
+test. The Vandermonde matrix of the r distinct lambda_i is invertible, so
+
+    all a_i(v)=0
+      iff Tr[Delta^k DDelta[v]]=0, k=0,...,r-1
+      iff D Tr[Delta^(k+1)][v]=0, k=0,...,r-1.              (EK4)
+
+Using k=0,...,n-1 with n=dim Delta is a redundant but root-free finite
+test. Cayley--Hamilton, or the square-free minimal polynomial, reduces
+the required moment range. Thus exact native algebraic jets can be
+tested by the full rational logdet row and finitely many algebraic
+thermal moments. No polynomial-time complexity or large-matrix replay
+is asserted. Usually a single nonzero j_v already decides failure.
+
+### 7ek.C. Apply the separation to BOTH actual preparation legs
+
+First consume §7eh.I's exact matched, projector-preserving writer, or
+§7ej's same bank with its independently paid common frames. At the
+current sampler let phi be its actual normalized born/prepared vector,
+let M be the actual compressed CODE operator, and keep c=phi* M phi>0.
+The old OUTPUT Gram A=C_< C_<* is retained, with A nonzero, and
+
+    w = Tr[eta c^2 A((1-z)I+eta c^2 A)^(-1)] > 0.          (EK5)
+
+There is no smallest-eigenvalue bound on A. Its kernel is allowed.
+For a CODE-only real skew generator X, the paired return row is
+
+    DJ_pair[X] = -(2w/c) phi* [M,X] phi                    (EK6)
+
+when M is selfadjoint. Exact full stationarity makes this row zero by
+(EK3), even if the old complete endpoint has a nonzero thermal source.
+Set r=(M-cI)phi, so r is orthogonal to phi. The real algebraic skew
+generator X_r=r phi* - phi r* satisfies
+
+    X_r phi=r,  phi* [M,X_r] phi=2 ||r||^2.               (EK7)
+
+If the declared preparation space contains all real CODE-plane rotations,
+as in the complete sampler comparison space of §7eh.I, (EK7) is an allowed
+real linear combination of them. Therefore
+
+    all current paired RETURN rows vanish iff M phi=c phi. (EK8)
+
+This is an exact spectral condition on the ACTUAL compiled operator,
+not on its target approximation. If the comparison space is smaller,
+only its stated projected rows follow; it cannot inherit (EK8) for free.
+The norm of X_r can be rescaled by any positive algebraic number, so the
+test is compatible with the existing nonquotient control norm. No new
+field norm or bound independent of the shrinking sampler radius is used.
+
+The fullStep-only construction §7ei need not have selfadjoint M. Keep
+its symmetric and skew parts S=(M+M*)/2 and A_sk=(M-M*)/2. Write the
+two independent endpoint preparations as
+
+    c(P_b,P_f)=phi* P_b* M P_f phi.
+
+Their actual derivatives at the matched centre are
+
+    dc_f[X]=phi* M X phi,
+    dc_b[X]=-phi* X M phi.                               (EK9)
+
+The same factor -(2w/c) multiplies each scalar return derivative.
+Applying (EK3) to EACH independent row, not only their sum, gives
+
+    all these RETURN rows vanish
+      iff M phi=c phi AND M* phi=c phi
+      iff S phi=c phi AND A_sk phi=0.                    (EK10)
+
+For the nonzero c and A in (EK5), these conditions are also sufficient
+for all such return rows, including correlated CODE/old-DATA skew
+generators: after compression their remaining old-DATA matrix is skew,
+whose real trace against the Hermitian old resolvent state is zero.
+This does not cover an independently changed processor/report law; its
+admission and rows retain their own contract. Nor does it solve the
+thermal moment or independently variable old-source equations.
+
+In §7ej the two additional inner-frame return rows are already exactly
+zero by the operator commutation identity. The two outer rows must
+still satisfy (EK8), and ALL four legs retain their actual thermal
+moments. The whole retained endpoint is not assumed to be a reflection.
+
+The zero-gain cases c=0 or A=0 are outside (EK5). They may be stationary
+return sectors, but cannot be substituted into this construction's
+positive calibrated Einstein source. Enlarging the code or reducing its
+compilation error changes neither of these logical boundaries.
+
+### 7ek.D. Exact equal-return values and the required geometric right lift
+
+For the exactly projector-preserving native writer of §7eh.C.4,
+M=diag(c_b). These c_b are the **actual** complete branch return
+amplitudes, computed after the original banks, shared SITE, READY,
+processor and their paid inverses. They are not chosen target scores.
+At the born sampler every phi_b is nonzero. Equation (EK8) then says
+
+    c_b=c for EVERY sampled branch b.                    (EK11)
+
+Small differences, even much smaller than the proved source budget,
+do not imply (EK11). At finite s a continuum critical point can have
+I_tau(Y_b)-I_tau(Y_b') of order s^2 and an actual compiler imbalance;
+neither is an exact zero. A finite thermal adjustment cannot cancel a
+nonzero algebraic CODE row under (EK3).
+
+Moving the central preparation to an eigenvector is not automatically
+a repair. Let S_phi={b:phi_b!=0}. At a stationary diagonal table this
+support lies in one exact level c_b=c. Let y_b be the ACTUAL branch means
+of the fixed CODE-insensitive geometric readouts of this bank; ideal field
+labels are not substituted for compiled readout values. For their mean
+ybar=sum_b phi_b^2 y_b, a preparation tangent
+has dw_b=2 phi_b(X phi)_b. It vanishes outside S_phi and sums to zero.
+Conversely every zero-sum weight tangent on S_phi is attained: put
+h_b=dw_b/(2phi_b) there, h=0 outside, and X=h phi* - phi h*.
+Consequently
+
+    range D ybar = span{y_b-y_b': b,b' in S_phi},
+    rank D ybar = affine-dimension{y_b: b in S_phi}.       (EK12)
+
+Any further smooth physical decoder cannot increase this rank; the
+existing locally invertible readout chart preserves it. In particular,
+distinct c_b force a single-label state
+and a ZERO mean-field first derivative. Such a state cannot supply
+the full field right lift required by §§7eh--7ej. An m-dimensional
+right lift needs at least m+1 affinely spanning branch readouts in an
+EXACT equal-return level. The present all-support born sampler needs
+the stronger all-branch equality (EK11). Mean rank is only a necessary
+condition for §7ej's stronger full joint marked-state first jet.
+
+This is not a universal exclusion. Degenerate exact levels can have
+full affine rank; a four-label square with a constant diagonal c is
+an elementary positive matrix control. It is not claimed to be the
+original geometric reporter. The exact native projection/involution
+centres of §7az also remain valid in their own sector. Their unresolved
+field/source binding is not repaired by importing their zero sources
+into the present bank.
+
+The next SAME-execution substitution is now concrete: construct actual
+equal-return native branches with a full marked geometric lift (or an
+actual M satisfying both equations in (EK10)), and solve the remaining
+full thermal-moment/old-control rows. Admission must still be fixed
+off shell by the actual report-law task; it cannot be defined by
+Einstein equations or by a stationary-value filter. No task-domain
+restriction or added balancing action is made here. Generic density,
+a smaller compiler tolerance, or an inverse theorem for a different
+continuous matrix model does not prove these exact word identities.
+
+### 7ek.E. Literal growing execution and decisive controls
+
+The frozen checker uses the actual five-stage word
+
+    birth CODE; birth WORK; G(CODE); CX(CODE,WORK); G(CODE),
+
+with canonical v=(a,p), a=sqrt(p), p^2+p=1. Its true pre-stage fibres
+are 1,2,4,4,4, so D=15. It constructs the ENTIRE algebraic growing T,
+every generated history cut and complement, and differentiates the
+two G controls independently with generator [[0,-1],[1,0]]. The
+first-jet comparison uses the same smooth-source convention as A;
+no new continuous gate is declared physically primitive.
+
+The actual cold corner and the two independently varied rows are
+
+    c=p^3, u=2ap,
+    dc_first=-u, dc_last=-u^2,
+    DJ_i=-2z c dc_i/(1-z+zc^2) != 0.                      (EK13)
+
+Direct differentiation of the whole moving-cut feedback agrees EXACTLY
+with (EK13). Both complete Book source rows are therefore nonzero by
+(EK3), whatever their individual heat values. All 6375 Hodge modes
+remain: Z=2 Tr_495 exp(-beta Delta0(T))+5385. The number 5385 is the
+actual 359D harmonic contribution, not an adjustable constant. No
+large matrix exponential or assertion of zero old-history heat is used.
+
+The heat row in this fixture is itself genuinely nonzero, not simply
+absent. For BOTH jets Tr(dT)=Tr(T dT)=0, while
+Tr(T^2 dT)=u^2-u!=0. With the original scene
+C_s=diag((deg+2)^(-1)), Tr C_s^3=9/26^3+11/24^3+13/22^3.
+Expanding the third trace moment of
+Delta0=(I-B_s) tensor I-C_s tensor (T+T*) and using unitarity gives
+
+    Tr(Delta^2 DDelta)=-4 Tr(C_s^3) (u^2-u) != 0.         (EK14)
+
+The factor two from BOTH Hodge degrees is included. The exact arithmetic
+checker verifies the winding and cosine-moment identities; (EK4) then
+shows that some full thermal spectral row is nonzero. Applying the same
+linear-independence argument with j_v=0 proves DH[v]!=0. Thus this one
+real execution has two separately nonzero price contributions, and their
+sum cannot be an exact zero under the stated hypotheses.
+
+This finite example tests the operator-to-price binding with real births,
+gates, generated cuts and independent controls. It is not a geometric
+42-root, a new proposed gravity carrier, or a numerical proof of the
+number-theoretic theorem. The checker additionally tests the exact
+variance witness (EK7), independent skew-body rows invisible in their
+sum, a full-rank equal-level readout, the simple-eigenvalue rank collapse,
+the moment Vandermonde, and the two hostile zero-mode/degeneracy controls.
+
+The result removes the possible exact heat/return cancellation from this
+algebraic smooth-source route and gives the exact remaining sampler
+conditions. It does NOT construct the required refining family of exact
+joint native solutions. `joint_nonlinear_solve`, unchanged `positive_gr`,
+independent acceptance and `GR_closed=false` remain as before. The goal
+stays active; the kappa theorem is not weakened or relabeled.
+
+### 7ek.F. Frozen reproduction
+
+Run the following LF-normalized Python block from the repository root
+with Python 3.12 and SymPy 1.14.0. The receipt is identical in normal
+and `python -O -W error` modes. Only this narrow changed calculation
+was replayed; the large geometric compiler and prior source suites
+are consumed at their existing proved interfaces.
+
+Checker SHA-256: `4bf2211e48f191e80b9d855f21a15edeeb6197f94b31aa89892f60e65dbfb6c0`.
+
+Receipt SHA-256: `607bf29f11740bb3a77c5a12dea0518ddbe46dbc21a8760459b48d5c057fea5a`.
+
+<!-- 7ek EXACT STATIONARITY CHECKER -->
+```python
+"""Exact finite arithmetic for 7ek, not a proof of Lindemann--Weierstrass.
+
+Run at the repository root. Every check survives Python -O. The real
+growing word is birth;birth;G(CODE);CX(CODE,WORK);G(CODE). Smooth algebraic
+jets are the declared comparison jets, not additional native gate values.
+"""
+from pathlib import Path
+import hashlib
+import json
+import sympy as s
+
+ROOT = Path.cwd()
+PINS = {
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+}
+checks = []
+def require(ok, name):
+    if not bool(ok):
+        raise ArithmeticError(name)
+    checks.append(name)
+
+for rel, digest in PINS.items():
+    require(hashlib.sha256((ROOT/rel).read_bytes()).hexdigest() == digest,
+            "pinned " + rel)
+
+a = s.Symbol("a", real=True)
+p = a*a
+minimal = a**4+a**2-1
+def red(x):
+    num, den = s.fraction(s.cancel(x))
+    nr = s.rem(s.Poly(num,a), s.Poly(minimal,a)).as_expr()
+    dr = s.rem(s.Poly(den,a), s.Poly(minimal,a)).as_expr()
+    if dr == 0:
+        raise ArithmeticError("zero field denominator")
+    inv = s.invert(dr,minimal,a)
+    return s.rem(s.expand(nr*inv),minimal,a)
+
+def mat(M):
+    M=s.MutableSparseMatrix(M)
+    return s.MutableSparseMatrix(M.rows,M.cols,
+        {ij:v for ij,x in M.todok().items() if (v:=red(x)) != 0})
+
+def equal(A,B,name):
+    if isinstance(A,s.MatrixBase) or isinstance(B,s.MatrixBase):
+        require(not mat(s.Matrix(A)-s.Matrix(B)).todok(),name)
+    else:
+        require(red(A-B)==0,name)
+
+I2=s.eye(2)
+I4=s.eye(4)
+v=s.Matrix([a,p])
+J=s.Matrix([[0,-1],[1,0]])
+G=s.Matrix([[a,-p],[p,a]])
+CX=s.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+u=red(2*a*p)
+equal(v.T*v,s.ones(1),"canonical born input normalized")
+equal(G.T*G,I2,"actual Golden gate unitary")
+equal(CX.T*CX,I4,"actual CX unitary")
+equal(J.T,-J,"real algebraic rotation comparison generator")
+equal(G*v,s.Matrix([red(p**3),u]),"literal first G on canonical birth")
+equal(v.T*G,s.Matrix([[1,0]]),"literal last G return row")
+equal(1-u*u,p**6,"strict two-bit imbalance identity")
+
+# True stage fibres 1,2,4,4,4. No final-fibre padding of earlier stages.
+dims=[1,2,4,4,4]
+offsets=[0]
+for d in dims: offsets.append(offsets[-1]+d)
+D=offsets[-1]
+J0=v
+J1=s.kronecker_product(I2,v)
+G0=s.kronecker_product(G,I2)
+X=s.kronecker_product(J,I2)
+passive=[J0,J1,I4,I4]
+forward=[J0,J1,G0,CX]
+last=G0
+B=[None]*5
+B[-1]=I4
+for j in range(3,-1,-1): B[j]=mat(B[j+1]*passive[j])
+details=[s.eye(1)]+[mat(s.eye(dims[j])-passive[j-1]*passive[j-1].T)
+                      for j in range(1,5)]
+R=s.zeros(D,4)
+R[:1,:]=B[0].T
+for j in range(1,5):
+    R[offsets[j]:offsets[j+1],:]=mat(details[j]*B[j].T)
+R=mat(R)
+equal(R.T*R,I4,"all four terminal columns retained")
+equal(R*R.T,s.diag(*details),"every birth complement returned to birth stage")
+T=s.zeros(D)
+for j,Fj in enumerate(forward):
+    T[offsets[j+1]:offsets[j+2],offsets[j]:offsets[j+1]]=Fj
+T[:,offsets[-2]:offsets[-1]]+=R*last
+T=mat(T)
+equal(T.T*T,s.eye(D),"actual whole growing clock unitary")
+prefixes=[s.eye(1)]
+for Fj in forward: prefixes.append(mat(Fj*prefixes[-1]))
+P=mat(s.diag(*[mat(A*A.T) for A in prefixes]))
+leak=mat((s.eye(D)-P)*T*P)
+F=mat(leak.T*leak)
+c=red((B[0].T*last*prefixes[-1])[0])
+equal(c,p**3,"actual whole five-stage cold corner")
+expected=s.zeros(D)
+expected[offsets[-2]:,offsets[-2]:]=mat(prefixes[-1]*(1-c*c)*prefixes[-1].T)
+equal(F,expected,"full moving-history feedback reduces exactly once")
+equal(s.trace(F),1-c*c,"no dropped factor of clock length")
+
+# Two independent actual gate comparison jets, including generated cuts.
+jet_receipt={}
+for which in ("first_G","last_G"):
+    dforward=[s.zeros(A.rows,A.cols) for A in forward]
+    dlast=s.zeros(4)
+    if which=="first_G": dforward[2]=mat(X*G0)
+    else: dlast=mat(X*G0)
+    dT=s.zeros(D)
+    for j,dFj in enumerate(dforward):
+        dT[offsets[j+1]:offsets[j+2],offsets[j]:offsets[j+1]]=dFj
+    dT[:,offsets[-2]:]+=R*dlast
+    dT=mat(dT)
+    equal(T.T*dT+dT.T*T,s.zeros(D),which+" all-column unitary tangent")
+    dprefixes=[s.zeros(1)]
+    for j,Fj in enumerate(forward):
+        dprefixes.append(mat(dforward[j]*prefixes[j]+Fj*dprefixes[-1]))
+    dP=mat(s.diag(*[mat(dA*A.T+A*dA.T) for A,dA in zip(prefixes,dprefixes)]))
+    dl=mat(-dP*T*P+(s.eye(D)-P)*dT*P+(s.eye(D)-P)*T*dP)
+    dF=mat(dl.T*leak+leak.T*dl)
+    dc=red((B[0].T*(dlast*prefixes[-1]+last*dprefixes[-1]))[0])
+    equal(dc,-u if which=="first_G" else -u*u,which+" exact nonzero corner row")
+    require(dc!=0,which+" nonzero independent RETURN source")
+    equal(s.trace(dF),-2*c*dc,which+" moving cuts retained in exact source")
+    z=s.Rational(1,2**20)
+    # Rank-one F allows an exact inverse without a symbolic dense inversion.
+    resolvent=mat(s.eye(D)+z*F/(1-z*(1-c*c)))
+    direct=red(z*s.trace(resolvent*dF))
+    reduced=red(-2*z*c*dc/(1-z+z*c*c))
+    equal(direct,reduced,which+" full determinant derivative equals endpoint derivative")
+    winding=[]
+    power=s.eye(D)
+    for k in range(4):
+        winding.append(red(s.trace(power*dT)))
+        power=mat(power*T)
+    require(winding[0]==0,which+" fixed first trace moment")
+    equal(winding[1],0,which+" fixed second winding moment")
+    equal(winding[2],u*u-u,which+" exact nonzero third winding row")
+    require(winding[2]!=0,which+" nonzero thermal spectral row")
+    K=mat(T+T.T); dK=mat(dT+dT.T)
+    equal(s.trace(dK),0,which+" first cosine moment fixed")
+    equal(s.trace(K*dK),0,which+" second cosine moment fixed")
+    equal(s.trace(mat(K*K)*dK),2*winding[2],which+" third cosine moment retained")
+    trace_C3=s.Rational(9,26**3)+s.Rational(11,24**3)+s.Rational(13,22**3)
+    full_heat_moment=red(-4*trace_C3*winding[2])
+    jet_receipt[which]={"dc":str(dc),"return_source":str(direct),
+                        "Tr_T_power_dT":[str(t) for t in winding],
+                        "Tr_Delta_squared_dDelta":str(full_heat_moment)}
+
+# A finite algebraic thermal test, without pretending a repeated eigenvalue
+# has separately stationary eigenbranches. General proof uses LW, not this test.
+L=s.diag(0,2,2,5)
+dL=s.diag(0,1,-1,0)
+for k in range(4):
+    equal(s.trace(L**k*dL),0,"degenerate traceless moment "+str(k))
+require(dL!=s.zeros(4),"zero heat first source need not be zero matrix derivative")
+lam=[s.Integer(0),s.Integer(2),s.Integer(5)]
+V=s.Matrix([[t**k for t in lam] for k in range(3)])
+equal(V.det(),30,"distinct-spectrum moment Vandermonde invertible")
+# Removing the persistent zero mode admits a nonzero common drift; keeping
+# it gives numerator one in the complete first derivative, for beta=1.
+x,y=s.symbols("x y", positive=True)
+require(s.cancel(1-(x+y)/(x+y))==0,"no-zero-mode nonzero cancellation control")
+require(s.cancel(1-(x+y)/(1+x+y)-1/(1+x+y))==0,
+        "retained zero mode forbids the same cancellation")
+
+# Exact shared-sampler rows. This is an operator application, not a new bank.
+phi=s.kronecker_product(v,v)
+M=s.diag(s.Rational(3,5),s.Rational(2,3),s.Rational(5,7),s.Rational(4,5))
+cM=red((phi.T*M*phi)[0])
+r=mat(M*phi-cM*phi)
+Xr=mat(r*phi.T-phi*r.T)
+equal(Xr.T,-Xr,"witness preparation generator skew")
+equal(Xr*phi,r,"witness generator moves precisely along spectral residual")
+equal((phi.T*(M*Xr-Xr*M)*phi)[0],2*(r.T*r)[0],
+      "paired return derivative is twice the exact table variance")
+require(red((r.T*r)[0])!=0,"unequal actual corner table has a live preparation row")
+
+# General real nonselfadjoint body: two independent legs, not only their sum.
+e0=s.Matrix([1,0])
+Mn=s.Matrix([[s.Rational(3,5),s.Rational(1,10)],[-s.Rational(1,10),s.Rational(2,3)]])
+plus=(e0.T*Mn*J*e0)[0]
+minus=(-e0.T*J*Mn*e0)[0]
+equal(plus+minus,0,"paired source can vanish with an antisymmetric body")
+require(plus!=0 and minus!=0,"both independent return rows still nonzero")
+
+# A level eigenspace can retain a full mean-field lift: no universal no-go.
+Y=s.Matrix([[0,0],[1,0],[0,1],[1,1]])
+weights=[red(t*t) for t in phi]
+mean=s.Matrix([red(sum(weights[b]*Y[b,j] for b in range(4))) for j in range(2)])
+columns=[]
+for j in range(1,4):
+    H=s.zeros(4); H[j,0]=1; H[0,j]=-1
+    dw=[red(2*phi[b]*(H*phi)[b]) for b in range(4)]
+    columns.append(s.Matrix([red(sum(dw[b]*Y[b,k] for b in range(4))) for k in range(2)]))
+lift=s.Matrix.hstack(*columns)
+require(red(lift[:,:2].det())!=0,"exact constant-level table can have rank-two mean lift")
+equal(s.Rational(3,5)*s.eye(4)*phi,s.Rational(3,5)*phi,
+      "positive equal-level matrix has the actual born eigenvector")
+equal(M*s.eye(4)[:,0],M[0,0]*s.eye(4)[:,0],
+      "distinct-table single-label preparation is a return critical point")
+for j in range(1,4):
+    H=s.zeros(4); H[j,0]=1; H[0,j]=-1
+    dw=[2*s.eye(4)[:,0][b]*(H*s.eye(4)[:,0])[b] for b in range(4)]
+    require(all(t==0 for t in dw),"simple-eigenvalue preparation loses every mean row "+str(j))
+
+receipt={
+    "status":"PASS",
+    "checks":len(checks),
+    "pins":PINS,
+    "actual_word":["birth CODE","birth WORK","G CODE","CX CODE WORK","G CODE"],
+    "stage_dimensions":dims,
+    "stage_dimension":D,
+    "full_hodge_modes":425*D,
+    "mandatory_harmonic_modes":359*D,
+    "full_heat_exact":"2 Tr_495 exp(-beta Delta0(T)) + 5385",
+    "cold_corner":str(c),
+    "independent_jets":jet_receipt,
+    "arithmetic_claim":"exact matrices and first jets in Q(a), a^4+a^2-1=0",
+    "analytic_input":"Lindemann-Weierstrass supplied by cited external theorem, not this checker",
+    "finite_word_contrast_zero_claim":False,
+    "exact_GR_roots_constructed":False,
+    "GR_closed":False,
+}
+print(json.dumps(receipt,indent=2,sort_keys=True))
+```
+
+<!-- 7ek EXACT STATIONARITY RECEIPT -->
+```json
+{
+  "GR_closed": false,
+  "actual_word": [
+    "birth CODE",
+    "birth WORK",
+    "G CODE",
+    "CX CODE WORK",
+    "G CODE"
+  ],
+  "analytic_input": "Lindemann-Weierstrass supplied by cited external theorem, not this checker",
+  "arithmetic_claim": "exact matrices and first jets in Q(a), a^4+a^2-1=0",
+  "checks": 59,
+  "cold_corner": "2*a**2 - 1",
+  "exact_GR_roots_constructed": false,
+  "finite_word_contrast_zero_claim": false,
+  "full_heat_exact": "2 Tr_495 exp(-beta Delta0(T)) + 5385",
+  "full_hodge_modes": 6375,
+  "independent_jets": {
+    "first_G": {
+      "Tr_Delta_squared_dDelta": "102219397*a**3/5053029696 - 102219397*a**2/1263257424 + 102219397/2526514848",
+      "Tr_T_power_dT": [
+        "0",
+        "0",
+        "-2*a**3 + 8*a**2 - 4",
+        "4 - 8*a**2"
+      ],
+      "dc": "-2*a**3",
+      "return_source": "-786431*a**3/68720525311 + 524288*a/68720525311"
+    },
+    "last_G": {
+      "Tr_Delta_squared_dDelta": "102219397*a**3/5053029696 - 102219397*a**2/1263257424 + 102219397/2526514848",
+      "Tr_T_power_dT": [
+        "0",
+        "0",
+        "-2*a**3 + 8*a**2 - 4",
+        "-2*a**3"
+      ],
+      "dc": "4 - 8*a**2",
+      "return_source": "2621438/68720525311 - 4194300*a**2/68720525311"
+    }
+  },
+  "mandatory_harmonic_modes": 5385,
+  "pins": {
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393"
+  },
+  "stage_dimension": 15,
+  "stage_dimensions": [
+    1,
+    2,
+    4,
+    4,
+    4
+  ],
+  "status": "PASS"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

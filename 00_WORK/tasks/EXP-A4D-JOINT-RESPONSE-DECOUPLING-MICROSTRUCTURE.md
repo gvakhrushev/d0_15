@@ -19803,3 +19803,68 @@ critical histories, a minimum, the M1-only interaction law, independent
 scientific acceptance, or equivalence to the distinct original spatial
 full128 price. Existing positive_gr/raw216 contracts remain unchanged.
 No new task/result row, Ready, merge or GR_closed promotion. Goal active.
+
+### 3 November 2026 — exact finite heat/return separation and sampler conditions (§7ek)
+
+Same #334, constitutive/native-programme-v1; native realization and final
+composition. Input 688667433da4f6e38544428553ee6d466d8d16d3. Consume
+the actual complete geometric writer/source of §§7eh--7ej and the original
+growing clock with all 425D modes. The precise consumer is the remaining
+exact-finite joint_nonlinear_solve application, not another geometry search.
+Only this brief and the existing primary artifact are appended, preserving
+every prior byte. No task, acceptance, claim or lifecycle status is changed.
+
+**New exact premise test.** At an actually compiled finite algebraic word,
+with fixed algebraic beta,z and algebraic allowed smooth comparison jets,
+the full Book03 derivative is zero iff its return row and every degenerate
+thermal spectral-block trace row vanish SEPARATELY. The proof applies the
+classical Lindemann--Weierstrass theorem to the complete exponential sum.
+The actual 359D persistent Hodge zero modes force the common algebraic
+return coefficient to zero. The external theorem is cited as mathematical
+input; the local checker does not purport to formalize it.
+
+Equivalently, zero return together with finitely many exact algebraic
+moments Tr(Delta^k DDelta)=0 tests the entire smooth-source row. Degenerate
+eigenvalue traces are retained; individual eigenbranches need not be fixed.
+This eliminates a proposed cancellation of a nonzero algebraic return
+residual by a small heat remainder in the SAME finite history. Old prefix,
+generated cuts and independent controls stay in the complete matrices.
+
+**Application to actual sampler controls.** In the matched selfadjoint
+writer, all CODE preparation rows can vanish only when the ACTUAL corner
+operator satisfies M phi=c phi. In the fullStep-only writer, both paid
+independent preparation legs require M phi=M* phi=c phi, including the
+skew-body row; their sum alone is insufficient. The known positive c and
+nonzero old Gram give the actual nonzero gain, with no spectral floor.
+The four-frame version retains both inner thermal rows even though its
+inner return rows are exactly zero.
+
+For the exactly projector-preserving branch writer, a full-support born
+sampler therefore needs EXACT equal branch return amplitudes. Moving to a
+simple eigenstate erases every mean-field first derivative. More generally
+the reachable mean-readout rank is the affine dimension of the actual
+branch readouts in the occupied equal-return level. Full m-field recovery
+needs at least m+1 affinely spanning branches on that exact level, plus
+the stronger marked-map and whole-history equations. This is a necessary
+condition, not a proof that such native tables cannot exist. The earlier
+projection/involution stationary sectors and the kappa theorem are intact.
+
+**Smallest decisive evidence.** The literal five-stage raw word birth;
+birth;G;CX;G has stage fibres 1,2,4,4,4 and all 6375 Hodge modes,
+including the actual 5385 harmonic modes. Exact Q(sqrt(p)) arithmetic
+retains the complete clock and moving cuts. Its two independently varied
+G controls have nonzero return rows and nonzero third thermal moments;
+the separation theorem forbids exact cancellation. Additional hostile
+controls test a dropped zero mode, repeated eigenvalues, skew-body
+cancellation in a paired sum, and a collapsed geometric right lift.
+Checker, normal/optimized receipt and hashes are frozen in §7ek.
+
+**Remaining substitution.** Construct genuine native equal-return branch
+clouds with the full geometric lift, or the actual two-sided eigenvector
+condition for the fullStep body, and solve the remaining thermal-moment
+and old-control rows. A smaller compiler error does not establish those
+exact equalities. Admission remains off shell; no equation or stationary
+value is inserted as an admission filter. Finite-word contrast zeros are
+distinct from the smooth algebraic-jet equation tested here. No exact
+refining GR solution family or independent acceptance is claimed;
+unchanged positive_gr and GR_closed=false remain. Goal active.
