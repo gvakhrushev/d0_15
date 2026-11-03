@@ -115748,6 +115748,1527 @@ print(json.dumps(result,sort_keys=True,indent=2)+'\n',end='')
 ```
 <!-- END 7ef SEVEN REFERENCE RECEIPT -->
 
+## 7eg. One actual shared-reference writer, its admissible input controls, and its complete paid preparation source
+
+3 November 2026. Existing Draft #334 / constitutive/native-programme-v1.
+Native realization and final composition. Input
+905b1d7e6f9960873f420016ed38b5935c39ce83. Consume the retained-operation
+interface §7ed, the chronological history/source identity §7ee, and the
+original READY/report function, literal comparator and complete clock of
+§7ef. Only this primary artifact and the existing brief are appended.
+
+**Named parent substitution.** Section 7ef left the seven calls as separately
+constructed instruction lists. Here ONE fixed native bank writer physically
+reads the SAME live CODE record to prepare all seven calls. Its input-control
+map, actual finite field comparisons, independent forward/reverse source,
+and complete price are supplied on that one execution. There is a nonzero
+field-source lift; the pure-programme zero-derivative shortcut is not used.
+
+This is a constructed, bounded retained-operation regime, with an explicit
+fresh-bank input checkpoint. It does not prove that every continuing D0
+execution must retain this writer, this input checkpoint or this clock. The
+original Choi/CAR geometric marked instruments have not been identified with
+this canonical scalar-effect bank. These remaining transports and selection
+obligations are stated in §7eg.H, not hidden in an admissibility definition.
+
+### 7eg.A. Actual input, shared bank and the retained-operation predicate
+
+Keep §7ef's 23 addressed wires and add live CODE wires 23,24. Thus selectors
+are 0--4, fourteen distinct READY/report wires 5--18, port 19, Spin 20/21,
+and sealed unknown oldRIGHT 22. Full dimension is d=2^25; the return input
+rank is still 8. The canonical born wires are 0--19 and 23/24. CODE is born
+in phi=v tensor v, v=(sqrt(p),p), not in one classical basis label. Every
+one of its four basis sectors has positive weight (p^2,p^3,p^3,p^4).
+
+At each tested level fix epsilon=s=2^-e, e=6,10,14, delta=epsilon/(2k0),
+and an off-shell centre f0=1/5,q0=1/7. BEFORE comparing controls, register
+the finite table
+
+    f_b=f0+s(b0-p^2), q_b=q0+s(b1-p^2), b=(b0,b1),
+    (x_j,y_j)=[(0,delta),(0,-delta),(epsilon f_b,0),(0,0),
+               (k0 delta,0),(-k0 delta,0),(0,-epsilon q_b)].   (SW1)
+
+Every entry uses the SAME original nonlinear r(x,y), original READY weight
+2 F21 p^23, original k0 and original z0 from (SC1)--(SC4). No Einstein
+equation is tested to choose or admit a table entry. The constant reference
+calls reuse exactly the same actual compiled powers in every CODE branch.
+There is no branch resampling or copying of an unknown CODE state.
+
+The registered operation has two explicit interfaces: its incoming CODE and
+protected Spin/oldRIGHT, and its fresh canonical bank. Its descriptor includes
+the canonical-bank input embedding, the actual all-column writer B, comparator
+T, return cut and required READY/report mark. The outgoing bank is defined for
+every CODE input, including coherent/entangled ones. This input descriptor is
+part of the constructed retained task. A fresh bank is not an independently
+adjustable blank disguised as a fixed parameter.
+
+Apply §7ed's Book01 operator-and-response rule to this registered operation
+and its required checkpoints. A candidate is a SAME-SECTION implementation
+only if its actual maps intertwine with the recorded maps and embeddings.
+Their entries lie in the original algebraic Golden field, so this is an exact
+finite predicate. Replaying B supplies a nonempty accepted family. Input
+preparations on CODE and live Spin are free within their declared boundary;
+sealed oldRIGHT is untouched. A different preparation of the bank before B
+must satisfy the canonical-bank input checkpoint as well. If it changes that
+checkpoint, it is a different task/section, with its genuine source retained.
+Thus preserving B alone, while silently allowing arbitrary replacement of its
+specified fresh input, is NOT the admission theorem used here.
+
+In particular, changing only the baseline REPORT cell changes B on actual
+CODE input columns. The hostile finite control below certifies a strict
+probability difference for that change. It fails this same-writer predicate.
+The independently variable baseline of §7ef is not declared physically
+impossible: it belongs to the larger interface in which the bank or its input
+checkpoint can change. This distinction is the remaining global selection
+boundary, not a negative-counterterm cancellation.
+
+### 7eg.B. Emit the fixed reader in the original primitive alphabet
+
+For each of the fourteen bank wires and four CODE labels, choose a multiple
+of four n_b=4m_b such that G^n_b approximates the canonical probability loader
+on BOTH input columns. Density of 4theta modulo 2pi follows from the already
+owned irrational Golden rotation. Certified interval enumeration terminates
+for any positive tolerance. The executed continued-fraction candidate
+generator is followed by independent outward all-column verification.
+
+There is an EXACT native multiplexer for these chosen powers. For cyclic
+Gray order g=(00,01,11,10), put
+
+    a_g=sum_b (-1)^(g dot b) m_b.
+
+Execute G_target^a_g followed by CX from the changed Gray CODE bit to that
+target. The cycle returns to 00. On CODE column b the net target power is
+sum_g (-1)^(g dot b)a_g=4m_b, and its final X parity is zero. This proves
+the identity on BOTH target columns, hence on all unknown input columns.
+Negative powers use the actual routed Z G^n Z, with Z=SourceI^2 routed
+through the designated port. Every route restores port and unknown Spin.
+No controlled-G, real-valued phase, inverse or power is introduced as a new
+primitive. Reversing the blocks, with separately paid inverses, gives B*.
+
+Concatenate the fourteen multiplexers. B is one fixed word, shared by every
+comparison at that level. The detector is the SAME literal nine-control
+Walsh/Gray word V of §7ef; T=V G_port^-1. Its visibility is the actual
+kappa=sin^2(512theta), not unit visibility and not the earlier 128theta.
+The central complete operation is
+
+    W_B = B* T* Z_port T B.                              (SW2)
+
+It is a balanced selfadjoint reflection on ALL 2^25 columns, block diagonal
+in CODE and an identity factor on Spin/oldRIGHT. B's intermediate SourceI
+calls are genuine; the all-column routed identities justify the final
+identity factor. No inactive CODE sectors are removed from the heat.
+
+The emitted finite words have about 10^54 raw calls. They are specified by
+exact run lengths with an ordinary-gate expander and certified endpoints;
+those astronomical lists were NOT expanded or executed tick by tick. This
+is a constructive native-word certificate, not a practical processor or a
+minimal-time implementation. A fresh fixed reader is compiled per declared
+resolution; it is not an unpriced universal autonomous interpreter.
+
+### 7eg.C. Real field controls and nontrivial controls of exactly equal price
+
+Let P_f,P_b be independently selectable forward and backward preparations of
+CODE and live Spin, preserving the bank checkpoint. The full endpoint is
+
+    U(P_f,P_b)=P_b* W_B P_f.                              (SW3)
+
+At the same N,d, any refactor preserving the registered all-column operations
+and required marks has the same endpoint and full heat by (SW13). Its raw
+implementation is not assigned a new source merely because the word differs.
+A refactor changing the clock retains the clock price.
+
+Both occurrences are physically executed and paid. At the matched point,
+P_f=P_b=P, this is a conjugate reflection, so its complete fixed-clock heat
+is EXACTLY unchanged. Independent legs are not silently required to match.
+
+For each CODE wire the executed finite controls are G^k, k=0,+n,-n, with
+n=35922, all at exactly the same duration. The chronological word
+
+    G^((n+k)/2); Z; G^((n-k)/2); Z = G^k                  (SW4)
+
+has n G,12 CX,4 SourceI. The separately paid inverse changes k to -k with
+the same counts. The actual power has
+
+    sin(omega)=0.0000589490880690963...,
+    cos(omega)=0.9999999982625025...,
+    u=2p sqrt(p)=0.9717365435132913... .
+
+For mu_j=Pr(CODE_j=1)-p^2, the plus/minus displacement is exactly
+
+    mu_j(+omega)-mu_j(-omega)=u sin(2omega)
+                            =0.0001145659659679905... .  (SW5)
+
+The centre is interior: Dmu_j[J_k]=u delta_jk for the ordinary real rotation
+generator J_k on CODE k. This gives a right inverse with
+||X||op<=sqrt(2)||delta mu||2/u. Physical fields change by s delta mu, so
+the right inverse for unit PHYSICAL field variation costs sqrt(2)/(u s).
+That factor is explicitly retained in the source gain below. No derivative
+of the fixed original G is postulated: (SW4)--(SW5) are actual finite words.
+Successive Golden near-returns give arbitrarily small such comparisons.
+
+There are also two explicit nonidentical internal controls of exactly equal
+complete price. Route SourceI to CODE0 or to CODE1 by SWAP-to-port and back,
+obtaining V0 or V1. Each forward word costs seven calls; its actual inverse
+costs nine. They act conditionally on unknown Spin and can correlate it with
+CODE. Each commutes with W_B, because W_B is CODE diagonal and Spin identity.
+Consequently
+
+    P_b* V_j* W_B V_j P_f = P_b* W_B P_f, j=0,1.          (SW6)
+
+The two histories have exactly equal endpoints, full heat, return price and
+the declared bank/report effects, at the same full clock. We do not identify
+their arbitrary intermediate Spin states or add unverified Spin readouts to
+the task. The controls are distinct operations, not two names for one word.
+
+### 7eg.D. Full current CODE/preparation covector, including entanglement
+
+Compress only the canonical WORK bank in (SW2), retaining CODE for now:
+
+    M=diag(c00,c01,c10,c11) tensor I_protected,
+    c_b=1-2 kappa p^7[4+Xi(a_native r_native(b))].         (SW7)
+
+The scalar-effect formula is the original (SC7) with the actual compiled
+READY/report probabilities. The f call depends only on b0; the q call only
+on b1; every reference is identical on all branches. Therefore, EXACTLY,
+
+    c11-c10-c01+c00=0,
+    M=c00 I+d_f Pi_f+d_q Pi_q,
+    d_f=c10-c00, d_q=c01-c00.                            (SW8)
+
+This is structural equality of the actual compiled table, not subtraction
+of approximately equal floating numbers. All fine CODE correlations remain
+readable, even when this particular price depends only on its two marginals.
+
+Let i=phi tensor I_protected and c=i*Mi (a positive scalar). If there is a
+fixed chronological past C_<, use its OUTPUT Gram A=C_< C_<*, not C_<* C_<.
+With d0=1-z, eta=z p^K for any actual already specified retention K, set
+
+    D=d0 I+eta c^2 A,
+    rho=A D^-1/Tr(A D^-1),
+    w=eta c^2 Tr(A D^-1)>0.                              (SW9)
+
+Assume only A>=0,A!=0. D is strictly positive even for singular A; no inverse
+of A or artificial support floor occurs. This is §7ee's chronological
+whole-determinant differentiation on the present rank-eight born-CODE cut,
+not a replacement by its different full-CODE return cut.
+
+For EVERY skew-adjoint endpoint generator X on CODE and live protected
+factors, put
+
+    delta mu_j=Tr[rho i*[Pi_j,X]i].
+
+The matched variation has delta C=i*[M,X]i. Differentiating the ONE complete
+return determinant, not an average of four branch prices, yields
+
+    D J[X]=-(2w/c)(d_f delta mu_f+d_q delta mu_q).         (SW10)
+
+The weights rho and w are evaluated at the actual base. Equation (SW10) is
+a pointwise covector identity, not a new averaged action whose weights may
+be differentiated or freely reassigned.
+
+This proves the full ambient CODE/protected preparation covector, including
+entangled, correlated and phase directions. It therefore bounds every native
+endpoint control in that ambient class, without claiming that an arbitrary
+skew matrix itself is one admitted primitive. Directions with both actual
+rho-weighted delta mu_j zero have exactly zero FIRST source. A correlation
+direction is not assigned zero merely from its name or from unweighted
+classical marginals when the protected past is nontrivial.
+
+The two independent physical occurrences also have their own covectors:
+
+    delta C_front=i* M X i,
+    delta C_back =-i* X M i=(delta C_front)*.             (SW11)
+
+Their real rho traces coincide. Each contributes one half of (SW10). At the
+matched reflection the heat FIRST derivative is zero for either leg:
+ReTr(W_B^l X)=0, since W_B^l is selfadjoint and X skew-adjoint. Finite
+unmatched-leg comparisons retain the all-unitary heat remainder. No raw
+hardware fault inside the fixed writer is erased by this endpoint identity.
+
+Rows varying A, retention, the scene/Gram/temperature or the fixed clock
+are not part of this fixed-initial fixed-clock comparison. If another task
+allows them, the full determinant and heat have their actual extra rows;
+they cannot be discarded using (SW10). In particular the old-input covector
+of the owner remains when its actual past is varied.
+
+### 7eg.E. Actual gain, full price and the executed finite comparisons
+
+Define the inherited calibration and the additional SAMPLING gain by
+
+    g=2 kappa p^7 delta epsilon (a_ready r_f)(a_ready r_q),
+    Gamma_s=4 w g s/c,
+    S_f=-d_f/(2g s), S_q=-d_q/(2g s).                    (SW12)
+
+Then the exact covector is D J/Gamma_s=S_f Dmu_f+S_q Dmu_q. The extra s
+cannot be omitted. Omitting it would make arbitrary off-shell fields look
+stationary as the code table shrinks. Nor is the physical field lift asserted
+uniform in s: its 1/s norm from §7eg.C is compensated by precisely this gain.
+
+For the executed fixture A=I8 and K=0, the COMPLETE configured INTERNAL price is
+
+    B=H_N(U)-8 log(1-z+z c(U)^2),
+    H_N=beta^-1 log{Nd(359+2a0)
+                    +4N sum_(l>=1) a_(lN) ReTr(U^l)},
+    beta=2p^2, d=2^25.                                 (SW13)
+
+This is the original full two-grade K(9,11,13) clock of §7ef. All 425Nd
+modes and 359Nd unpaired harmonics are included. Both bank legs, both CODE
+preparations, both vertical controls, conversion, detector and sign are paid.
+If N_B,N_Binv are the independently counted bank lengths, then
+
+    N=N_B+N_Binv+36360+4n+80.                            (SW14)
+
+Each of the fourteen control words at a level has exactly this inventory and
+the same actual marked report stage. Across DIFFERENT levels N and the fixed
+table may differ; no equality of their absolute prices is asserted. At the
+finest level the exact count is
+
+    N=1116975167316037152137648284308238393686167220490823144,
+    CX=8556, SourceI=16474, G=N-25030.
+
+Its full heat is about 193.40135660933338 and complete central price about
+193.40136004315887. The absolute heat is never subtracted from the objective.
+For matched words it cancels EXACTLY in same-clock contrasts by conjugacy.
+For unmatched words the owned <10^-N all-unitary winding bound is enclosed
+conservatively by 10^-100 before division by the actual gain and displacement.
+
+The maximum certified all-column loader error is below 3.1e-52; use the
+conservative eta_loader=1e-48. Fourteen loaders imply a corner error at most
+28 eta_loader in each table cell. Because the bank is FIXED across CODE
+controls, its coefficient/source error obeys
+
+    |S_j(native)-S_j(target)|<=28 eta_loader/(g s).       (SW15)
+
+There is no extra inverse CODE step in this estimate: we compare one fixed
+table's coefficients, not independently recompiled banks at plus/minus
+controls. The finest bound is below 8.9e-17. The existing reporter Taylor
+error and finite field-sampling error are separate and visible below.
+
+Normalize actual finite complete-price contrasts by Gamma_s times the EXACT
+signed displacement (SW5). Independently changed front/back controls use the
+same clock. The frozen outward-interval result is:
+
+| epsilon=s | paired f (limit 1) | paired q (limit -k0) | front f / back f | front q / back q |
+| --- | --- | --- | --- | --- |
+| 2^-6 | 0.9897938979654 | -23.5950159435084 | 0.4948969489827 | -11.7975079717542 |
+| 2^-10 | 0.9993675906649 | -23.4274621730160 | 0.4996837953324 | -11.7137310865080 |
+| 2^-14 | 0.9999604957920 | -23.4170972925622 | 0.4999802478960 | -11.7085486462811 |
+
+The original k0=23.41640675188407497... is unchanged. At the finest level
+Gamma_s=7.1290136786265278...e-36. This small REAL gain, including s, is used
+in the intervals; convergence is not inferred from unnormalized smallness.
+The two vertical histories have EXACTLY equal full price, not merely small
+normalized differences. Six bounded matrix controls additionally check the
+whole determinant on a nonnormal and a singular chronological past with
+CODE/protected-entangled generators. The wrong input-Gram orientation fails
+the hostile control. These numerical checks accompany the exact matrix proof;
+they are not substituted for it or counted as new field equations.
+
+### 7eg.F. General local field chart: all correlations and its explicit norm
+
+The same construction has a precise consumer for an existing full field
+source. Suppose its owned scalar corner on a regular m-dimensional chart is
+
+    c_target(Y)=c_ref-2g I_tau(Y),
+
+where I_tau is its ACTUAL reference/report action at that level and its
+first-source error relative to the intended field functional is already
+bounded. Retain all of that owner's fields, density, coupling and norm.
+Choose an off-shell local centre Y0 and the 2^m vertices
+Y_b=Y0+s(b-p^2 1), all inside the chart. A finite bank computes those same
+calls using ONE m-bit CODE. Native powers divisible by 2^m admit the same
+integer Walsh construction; the finite all-column compilation can be made
+arbitrarily accurate. Exponential size is finite, not efficient or free.
+
+For a canonical scalar-effect bank with error ||M-M_target||<=e_B and
+||D^2 I_tau||<=L on this cube, put V_j=diag(b_j-p^2). Taylor's theorem gives
+
+    M=c_* I-2g s sum_j (D_j I_tau)(Y0) V_j+R,
+    ||R||<=g L s^2 R_v^2+e_B,
+    R_v=max_b ||b-p^2 1||2.                             (SW16)
+
+At the born CODE input the actual compression is still scalar. For any
+unit-operator-norm skew X, the trace state rho of the actual history has
+norm one and ||[R,X]||<=2||R||||X||. Hence the FULL normalized preparation
+covector, not only the product-state field slice, satisfies
+
+    |D J[X]/Gamma_s-D I_tau(Y0)[L_rho X]|
+       <=(L s R_v^2+e_B/(g s)) ||X||,
+    (L_rho X)_j=Tr[rho i*[V_j,X]i].                     (SW17)
+
+There is no hidden dimension factor from tracing the protected state.
+Product CODE rotations give L_rho J_j=u e_j for every positive rho.
+The right-inverse bound is sqrt(m)/u in scaled coordinates, or
+sqrt(m)/(u s) for unit physical field variation. All correlation directions
+are retained: their remainder in (SW17) tends to zero when s is chosen
+against L and e_B against the actual g s. For the concrete two-scalar table
+(SW8), correlation remainder is EXACTLY zero because the table is additive.
+That exact additivity is not claimed in general 42-field geometric coordinates.
+
+Thus full current preparation stationarity implies the owned FIELD source
+bound after the explicit right-inverse factor; conversely a field source
+tending to zero bounds ALL current preparation rows by (SW17), with each
+independent leg carrying half. This is a local source/recovery statement,
+not a finite exact root or an action minimum. If a downstream scalar source
+has a further numerical/geometry/reference error E_tau, add its pullback
+E_tau ||L_rho||; do not drop it. For a whole original geometric instrument,
+its marked-map/source equivalence to the scalar corner remains a separate
+required transport. Merely inserting f_h(Y_b),q_h(Y_b) into this table does
+not establish that transport.
+
+These quantifiers do not force one global programme to choose Y0 or this
+shrinking cube. Y0 is an arbitrary declared local centre, not a catalogue
+of Einstein solutions. A change of resolution/centre changes the fixed table
+and has its own complete price and retained-section question. The source
+normalization and actual compiler/retention schedule must be carried through
+any such later composition. The existing owner supplies those schedules;
+we do not assume compiler length independent of accuracy or confuse source
+convergence with one physical stationary/minimal continuation law.
+
+### 7eg.G. Changed check, provenance and reproduction
+
+The frozen checker consumes the unchanged §7ef comparator/primitive prefix
+and its source pins. Its new work checks the exact shared-code multiplexer,
+all-column outward power bounds, the genuine vertical word/inverse, generic
+commutator identity, singular/noncommuting determinant controls, all actual
+run inventories, one common mark per level, full heat/return intervals,
+independent legs, the true sampling gain and the changed-baseline control.
+The many repeated grammar/count assertions are not independent scientific
+theorems. It writes deterministic exact run descriptions and their hash.
+
+Use the repository's Python environment with mpmath, NumPy, SymPy and SciPy.
+From the repository root, extract and execute the embedded checker; its
+receipt must match byte for byte, including when Python is optimized and
+warnings are errors. The generated word file is intentionally outside the
+two repository write paths, and can always be regenerated from the frozen
+source. Full native lists and full 2^25-dimensional matrices are not expanded.
+
+### 7eg.H. Exact route consequence and remaining physical step
+
+The formerly absent shared parameter reader is now constructed on the
+declared scalar-effect carrier. Seven separate reference choices have become
+the outputs of one paid fixed reader of one live CODE record. Its admissible
+same-section input controls are explicit, their real field lift has nonzero
+gain, and no independent current CODE/preparation row is deleted. This is
+more than retaining only the detector, which left the baseline counterexample
+of §7ef intact. It consumes §7ed's actual retained-operation rule at both the
+writer and fresh-input checkpoints, rather than assuming seven linked data
+slots without an implementation.
+
+It remains a bounded constructed execution. Neither this descriptor nor the
+passing checker proves that the unchanged closed D0 process MUST select this
+writer/reference regime, keep these checkpoints and clock, or have physical
+stationarity on this comparison graph. A task allowing new writer/input/
+clock sections retains their true sources. The complete original geometric
+marked-map transport is also still required before substituting this
+scalar-effect implementation for the all16+24+2 GR carrier. Section 7ee's
+different full-CODE cut and its own linked-reference hypotheses are preserved.
+No claim is made about unrestricted X_N, an exact finite positive_gr/raw216
+root, a field minimum, independent acceptance, Ready, merge or GR_closed.
+The user goal remains active; the next parent map is this explicit reader
+and source lifted to the originally admitted geometric execution, with its
+actual rule for retaining/changing the writer and full task constraints.
+
+
+### 7eg.I. Frozen executable source and actual receipt
+
+Checker SHA-256: `5720f125854ecbf4b72ae49936de6a57a6194a7b2ce9adbcb27820344c254259`.
+Receipt SHA-256: `b158139c25a88ed1ac013bc3e04a6e081ca7d46d155847d146097c4396e4acd5`.
+The deterministic 19,258,029-byte run-description file has SHA-256
+`0a8f5b3ea7d03c5bca34282ccbd9717434b56bf6ff08f471f80ead030949128f`.
+The actual receipt records 1,548,444 new assertions, mostly repetitive run
+grammar/count checks, plus the separately identified consumed comparator
+prefix. This count is not a theorem count or a physical closure criterion.
+
+Run from the repository root with the checked scientific Python environment:
+
+```python
+from pathlib import Path
+import hashlib, subprocess, sys, tempfile
+paper = Path("02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md").read_bytes()
+def extract(tag, lang):
+    start = f"<!-- BEGIN {tag} -->\n```{lang}\n".encode()
+    stop = f"```\n<!-- END {tag} -->".encode()
+    if paper.count(start) != 1 or paper.count(stop) != 1:
+        raise RuntimeError("nonunique frozen artifact")
+    return paper.split(start)[1].split(stop)[0]
+code = extract("7eg SHARED WRITER CHECKER", "python")
+expected = extract("7eg SHARED WRITER RECEIPT", "json")
+if hashlib.sha256(code).hexdigest() != "5720f125854ecbf4b72ae49936de6a57a6194a7b2ce9adbcb27820344c254259":
+    raise RuntimeError("changed checker")
+if hashlib.sha256(expected).hexdigest() != "b158139c25a88ed1ac013bc3e04a6e081ca7d46d155847d146097c4396e4acd5":
+    raise RuntimeError("changed receipt")
+with tempfile.TemporaryDirectory(prefix="d0-shared-writer-") as tmp:
+    target = Path(tmp) / "check_shared_writer.py"
+    target.write_bytes(code)
+    run = subprocess.run([sys.executable, "-O", "-W", "error", str(target)], capture_output=True, check=True)
+    if run.stdout != expected or run.stderr:
+        raise RuntimeError("receipt/stderr mismatch")
+    words = (Path(tmp) / "native_shared_runs.json").read_bytes()
+    if hashlib.sha256(words).hexdigest() != "0a8f5b3ea7d03c5bca34282ccbd9717434b56bf6ff08f471f80ead030949128f":
+        raise RuntimeError("word description mismatch")
+print("PASS shared native writer, actual controls and complete price")
+```
+
+<!-- BEGIN 7eg SHARED WRITER CHECKER -->
+```python
+#!/usr/bin/env python3
+"""One fixed native seven-call bank, live shared CODE and full preparation source.
+
+Astronomical words are specified exactly by run lengths, not expanded/executed
+tick by tick. All-column primitive identities and outward intervals certify
+their endpoints. This does not identify unrestricted physical X_N.
+"""
+from pathlib import Path
+from collections import Counter
+from fractions import Fraction
+import hashlib, json, math, platform, sys
+import mpmath as mp
+import numpy as np
+import sympy as sp
+
+ROOT=Path.cwd(); HERE=Path(__file__).resolve().parent
+PAPER=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+def sha(b):return hashlib.sha256(b).hexdigest()
+def extract(tag,lang):
+    b=PAPER.read_bytes(); a=f'<!-- BEGIN {tag} -->\n```{lang}\n'.encode(); z=f'```\n<!-- END {tag} -->'.encode()
+    if b.count(a)!=1 or b.count(z)!=1:raise ArithmeticError('unique frozen input '+tag)
+    return b.split(a)[1].split(z)[0]
+old=extract('7ef SEVEN REFERENCE CHECKER','python')
+old_sha='561dfba7503c86b2fdf20e121be44681ac98d9ca9759d59150cc1e864b0fb03b'
+if sha(old)!=old_sha:raise ArithmeticError('changed owned primitive/compiler input')
+# Consume the actual primitive, routed sign and nine-control comparator.
+# This prefix includes its independent integer reading of every comparator gate.
+env={'__file__':str(HERE/'consumed_7ef.py'),'__name__':'consumed_7ef'}
+exec(compile(old.decode().split('mp.mp.dps=180;')[0],'<frozen-7ef-prefix>','exec'),env)
+ne=env['ne']; gate=env['gate']; z_word=env['z_word']; V=env['V']; Vi=env['Vi']; rot_small=env['rot_small']
+ready=env['ready']; report=env['report']; heat=env['heat']; pins=env['pins']
+PORT=19;SPIN=(20,21);OLD=22;CODE=(23,24);WIDTH=25;DIM=2**WIDTH;RANK=8
+CHECKS=[]
+def need(ok,label):
+    if not bool(ok):raise ArithmeticError(label)
+    CHECKS.append(label)
+mp.mp.dps=190;mp.iv.dps=170;iv=mp.iv
+p=(mp.sqrt(5)-1)/2;a=mp.sqrt(p);pi=(iv.sqrt(5)-1)/2;ai=iv.sqrt(pi)
+theta=mp.atan2(p,a)
+def power(c,s,n):
+    if n<0:return power(c,-s,-n)
+    re=c*0+1;im=c*0
+    while n:
+        if n&1:re,im=re*c-im*s,re*s+im*c
+        c,s=c*c-s*s,2*c*s;n>>=1
+    return re,im
+def bounds(x):return mp.mpf(x.a),mp.mpf(x.b)
+def upper_abs(x):return max(abs(v) for v in bounds(x))
+def fmt(x,digits=75):
+    scale=10**digits;lo,hi=bounds(x*scale)
+    def txt(n):
+        sign='-' if n<0 else '';n=abs(n);return sign+str(n//scale)+'.'+str(n%scale).zfill(digits)
+    return [txt(int(mp.floor(lo))-1),txt(int(mp.ceil(hi))+1)]
+def original(x,y,P):
+    zz=(P*0+1)/2**20;E=P*P*(1+x);ll=4*E*(1-E);u=P+P*P*y
+    B=4*u*u*(1-u*u);A=ll+(1-ll)*B
+    return zz*(A+B)-zz*zz*A*B
+def slopes(P):
+    zz=(P*0+1)/2**20;E=P*P;ll=4*E*(1-E);B=4*P*P*(1-P*P);A=ll+(1-ll)*B
+    bx=8*P**3*(1-2*P*P);ax=4*P*P*(1-2*P*P)*(1-B)
+    return zz*ax*(1-zz*B),zz*bx*((1-zz*A)+(1-ll)*(1-zz*B))
+rf,rq=slopes(pi);k0=rq/rf;z=iv.mpf(1)/2**20
+ff0,ff1=0,1
+for _ in range(21):ff0,ff1=ff1,ff0+ff1
+ard=2*ff0*pi**23
+_,sv=power(ai,pi,512);visibility=sv*sv
+need(bounds(1-16*visibility*pi**7)[0]>0,'strict all-branch positive cold margin')
+def convergent(ratio,minimum):
+    x=ratio;hm2,hm1=0,1;qm2,qm1=1,0
+    while True:
+        v=int(mp.floor(x));num=v*hm1+hm2;den=v*qm1+qm2
+        hm2,hm1=hm1,num;qm2,qm1=qm1,den
+        if den>minimum:return num,den
+        x=1/(x-v)
+# Powers 4m admit an EXACT two-CODE integer Walsh multiplexer.
+num,den=convergent(2*theta/mp.pi,10**52);inverse_num=pow(num,-1,den)
+compiled={};maxerr=mp.mpf(0);eta=mp.mpf('1e-48')
+def compile_probability(target,key):
+    global maxerr
+    lo,hi=bounds(target);need(0<lo<=hi<1,'positive target '+key)
+    alpha=mp.atan2(mp.sqrt((lo+hi)/2),mp.sqrt(1-(lo+hi)/2))
+    nearest=int(mp.floor(den*(alpha-theta)/(2*mp.pi)+mp.mpf('.5')))
+    m=(nearest*inverse_num)%den;n=4*m
+    cn,sn=power(ai,pi,n)
+    ct=ai*iv.sqrt(1-target)+pi*iv.sqrt(target);st=ai*iv.sqrt(target)-pi*iv.sqrt(1-target)
+    err=upper_abs(iv.sqrt(2*((cn-ct)**2+(sn-st)**2)))
+    need(err<eta,'outward all-column power certificate '+key);maxerr=max(maxerr,err)
+    _,ss=power(ai,pi,n+1);actual=ss*ss
+    compiled[key]={'G_power':n,'error_upper':mp.nstr(err,80),'actual_probability':fmt(actual)}
+    return n,actual
+nr,arn=compile_probability(ard,'READY')
+# A real near-identity Golden control and its EXACT opposite, at one clock.
+npnum,npden=convergent(theta/mp.pi,10**4);nprep=2*npden
+cp,sprep=power(ai,pi,nprep)
+need(bounds(cp)[0]>iv.mpf('.99').a and 0<upper_abs(sprep)<mp.mpf('.001'),'actual nonzero small Golden control')
+u=2*ai*pi;mu_step=u*2*sprep*cp
+need(not(bounds(mu_step)[0]<=0<=bounds(mu_step)[1]),'nonzero field-lift displacement')
+def raw(word):return [(g,1) for g in word]
+def rotation(w,k):
+    return [(gate('G',w),k)] if k>=0 else raw(z_word(w))+[(gate('G',w),-k)]+raw(z_word(w))
+def compact(runs):
+    ans=[]
+    for g,n in runs:
+        if n==0:continue
+        need(type(n)is int and n>0,'positive original-gate repetition')
+        if ans and ans[-1][0]==g:ans[-1]=(g,ans[-1][1]+n)
+        else:ans.append((g,n))
+    return ans
+def mux_blocks(w,ns):
+    need(len(ns)==4 and all(n%4==0 for n in ns),'integer two-CODE bank coefficients')
+    gray=(0,1,3,2);ms=[n//4 for n in ns]
+    coeff=[sum((-1)**((g&b).bit_count())*ms[b] for b in range(4)) for g in gray]
+    blocks=[]
+    for j,(g,c) in enumerate(zip(gray,coeff)):
+        bit=(g^gray[(j+1)%4]).bit_length()-1
+        blocks.append((w,c,gate('CX',CODE[1-bit],w)))
+    # Independent literal endpoint recurrence on every CODE column, for
+    # BOTH target columns. Every routed Z is identity on unknown Spin.
+    for b in range(4):
+        exponent=0;parity=0
+        for ww,c,cx in blocks:
+            exponent+=c
+            flip=(b>>(1-CODE.index(cx.wires[0])))&1
+            exponent*=1-2*flip;parity^=flip
+        need(exponent==ns[b] and parity==0,'all-column exact shared-code multiplexer')
+    return blocks
+def block_runs(blocks,inverse=False):
+    out=[]
+    for w,c,cx in reversed(blocks) if inverse else blocks:
+        out+=([(cx,1)]+rotation(w,-c)) if inverse else (rotation(w,c)+[(cx,1)])
+    return out
+def prep_runs(w,k,inverse=False):
+    if inverse:k=-k
+    need(abs(k)<=nprep and k%2==nprep%2,'same clock real preparation control')
+    return [(gate('G',w),(nprep+k)//2)]+raw(z_word(w))+[(gate('G',w),(nprep-k)//2)]+raw(z_word(w))
+def vertical(which,inverse=False):
+    w=CODE[which];swap=[gate('CX',PORT,w),gate('CX',w,PORT),gate('CX',PORT,w)]
+    return raw(swap+[gate('SourceI',PORT,*SPIN)]*(3 if inverse else 1)+swap)
+def expand(runs):
+    for g,n in runs:
+        for _ in range(n):yield g
+need(list(expand([(gate('G',CODE[0]),3)]))==[gate('G',CODE[0])]*3,'ordinary-gate expander')
+# SourceI routing acts on every unknown Spin input; it is not a scalar phase.
+rename={CODE[0]:0,PORT:1,SPIN[0]:2,SPIN[1]:3}
+vin=[]
+for reverse in (False,True):
+    word=tuple(ne.Gate(g.op,tuple(rename[w] for w in g.wires)) for g in expand(vertical(0,reverse)))
+    U=ne.word_matrix(ne.Execution(4,(),(),word,ne.G_CX_SOURCE_I,1,(2,3),()),max_qubits=4,max_expanded_stages=len(word))
+    vin.append(U)
+need(ne.exact_matrix_equal(vin[1]*vin[0],sp.eye(16)),'separately paid vertical inverse on all16 columns')
+Li=ne.SOURCE_I_LOCAL[4:8,4:8]
+need(ne.exact_matrix_equal(vin[0],sp.diag(sp.eye(8),sp.kronecker_product(sp.eye(2),Li))),'actual vertical word is controlled Spin, with restored port')
+# Exact generic preparation identity, including entanglement with live Spin.
+# It proves the covector for every skew generator; a few numerical matrices
+# below also check the whole determinant with nonnormal and singular history.
+cf,cq,cc=sp.symbols('df dq c0',real=True)
+M=sp.diag(cc,cc+cq,cc+cf,cc+cf+cq)
+Pf=sp.diag(0,0,1,1);Pq=sp.diag(0,1,0,1)
+need(M==cc*sp.eye(4)+cf*Pf+cq*Pq,'all four code columns contain only the two declared marginals')
+xsy=sp.symbols('x0:16');X=sp.Matrix(4,4,xsy)
+need((M*X-X*M-cf*(Pf*X-X*Pf)-cq*(Pq*X-X*Pq)).applyfunc(sp.expand)==sp.zeros(4),'generic full preparation commutator identity')
+M16=sp.kronecker_product(M,sp.eye(4))
+V0=sp.diag(sp.eye(4),sp.eye(4),Li,Li);V1=sp.diag(sp.eye(4),Li,sp.eye(4),Li)
+need(V0!=V1 and M16*V0==V0*M16 and M16*V1==V1*M16,'nonidentical genuine CODE/Spin controls preserve every bank corner')
+# Full matrix determinant derivative at the actual born code, for a
+# noncommuting programme and arbitrary CODE/Spin skew generators.
+rng=np.random.default_rng(7112026)
+v=np.array([float(a),float(p)]);phi=np.kron(v,v);emb=np.kron(phi[:,None],np.eye(2))
+testM=np.kron(np.diag([.74,.745,.738,.743]),np.eye(2));cen=float((emb.T@testM@emb)[0,0])
+histories=[np.array([[1.,.4],[0.,.3]]),np.array([[1.,.5],[0.,0.]])]
+matrix_checks=[];wrong_gram_differences=[]
+from scipy.linalg import expm
+for hno,K in enumerate(histories):
+    A=K@K.T;dd=.9*np.eye(2)+.07*cen*cen*A;rho=A@np.linalg.inv(dd);rho/=np.trace(rho)
+    w=.07*cen*cen*np.trace(A@np.linalg.inv(dd))
+    for j in range(3):
+        R=rng.normal(size=(8,8));Xn=R-R.T;Xn/=np.linalg.norm(Xn,2)
+        dC=emb.T@(testM@Xn-Xn@testM)@emb
+        formula=-2*w/cen*np.trace(rho@dC)
+        wrongA=K.T@K;wrongD=.9*np.eye(2)+.07*cen*cen*wrongA
+        wrong=-2*.07*cen*np.trace(wrongA@np.linalg.inv(wrongD)@dC)
+        wrong_gram_differences.append(abs(wrong-formula))
+        t=1e-4
+        def price(P,Q):
+            C=emb.T@Q.T@testM@P@emb
+            # Actual chronological product C K; no averaging branch prices.
+            return -np.linalg.slogdet(.9*np.eye(2)+.07*C@A@C.T)[1]
+        plus=expm(t*Xn);minus=expm(-t*Xn)
+        paired=(price(plus,plus)-price(minus,minus))/(2*t)
+        front=(price(plus,np.eye(8))-price(minus,np.eye(8)))/(2*t)
+        back=(price(np.eye(8),plus)-price(np.eye(8),minus))/(2*t)
+        need(abs(paired-formula)<2e-10 and abs(2*front-formula)<2e-10 and abs(2*back-formula)<2e-10,'independent complete matrix source including singular past')
+        matrix_checks.append({'history':hno,'generator':j,'formula':formula,'paired':paired,'front':front,'back':back})
+need(max(wrong_gram_differences)>1e-6,'wrong input-Gram source detected for the same chronological past')
+
+levels=[];word_levels={};two=iv.mpf(2)
+weights=[pi*pi,pi**3,pi**3,pi**4]
+need(bounds(sum(weights))[0]<=1<=bounds(sum(weights))[1],'normalized original born-code distribution')
+for exponent in (6,10,14):
+    eps=iv.mpf(1)/2**exponent;s=eps;delta=eps/(2*k0)
+    f0=iv.mpf(1)/5;q0=iv.mpf(1)/7
+    # Constants are compiled ONCE and physically reused in all CODE branches.
+    constants=[(0,delta),(0,-delta),None,(0,0),(k0*delta,0),(-k0*delta,0),None]
+    nsconst={};prconst={};targetconst={}
+    for j,xy in enumerate(constants):
+        if xy is not None:
+            targetconst[j]=original(*xy,pi);nsconst[j],prconst[j]=compile_probability(targetconst[j],f'{exponent}/constant/{j}')
+    nsf=[];nsq=[];prf=[];prq=[];tf=[];tq=[]
+    for bit in (0,1):
+        tf.append(original(eps*(f0+s*(bit-pi*pi)),0,pi));tq.append(original(0,-eps*(q0+s*(bit-pi*pi)),pi))
+        nf,pf=compile_probability(tf[-1],f'{exponent}/f/{bit}');nq,pq=compile_probability(tq[-1],f'{exponent}/q/{bit}')
+        nsf.append(nf);prf.append(pf);nsq.append(nq);prq.append(pq)
+    bank=[];cold=[];targetcold=[]
+    for j in range(7):
+        bank+=mux_blocks(ready(j),[nr]*4)
+        nlist=[nsf[b>>1] if j==2 else nsq[b&1] if j==6 else nsconst[j] for b in range(4)]
+        bank+=mux_blocks(report(j),nlist)
+    def corner(ps,ar):
+        yp,ym,ff,base,xp,xm,qq=ps
+        return 1-2*visibility*pi**7*(4+ar*ar*((yp-ym)*(ff-base)+(xp-xm)*(qq-base)))
+    for b in range(4):
+        cps=[prf[b>>1] if j==2 else prq[b&1] if j==6 else prconst[j] for j in range(7)]
+        tps=[tf[b>>1] if j==2 else tq[b&1] if j==6 else targetconst[j] for j in range(7)]
+        cold.append(corner(cps,arn));targetcold.append(corner(tps,ard))
+    cbar=sum(w*c for w,c in zip(weights,cold));df=cold[2]-cold[0];dq=cold[1]-cold[0]
+    # Exact separability is structural (the f table depends only on bit0 and
+    # q only on bit1). The interval check is an additional consistency check.
+    cross=cold[3]-cold[2]-cold[1]+cold[0]
+    need(bounds(cross)[0]<=0<=bounds(cross)[1],'fixed actual bank has exact additive cold table')
+    g=2*visibility*pi**7*delta*eps*(ard*rf)*(ard*rq)
+    w=RANK*z*cbar*cbar/(1-z+z*cbar*cbar);gamma=4*w*g*s/cbar
+    Sf=-df/(2*g*s);Sq=-dq/(2*g*s)
+    Sfi=-(targetcold[2]-targetcold[0])/(2*g*s);Sqi=-(targetcold[1]-targetcold[0])/(2*g*s)
+    bankerr=28*iv.mpf('1e-48')/(g*s)
+    need(upper_abs(Sf-Sfi)<bounds(bankerr)[1] and upper_abs(Sq-Sqi)<bounds(bankerr)[1],'fixed-bank source error has no inverse preparation step')
+    def J(c):return -RANK*iv.log(1-z+z*c*c)
+    values={};body=block_runs(bank);back=block_runs(bank,True)
+    core=body+raw(rot_small(-1))+raw(V)+raw(z_word(PORT))+raw(Vi)+[(gate('G',PORT),1)]+back
+    # These are genuine distinct native control words of ONE fixed core.
+    cases={'centre':((0,0),(0,0),0),'vertical_other':((0,0),(0,0),1)}
+    for j,label in enumerate(('f','q')):
+        for sign,name in ((1,'plus'),(-1,'minus')):
+            vctrl=tuple(sign*nprep if k==j else 0 for k in range(2))
+            cases[f'{label}_{name}']=(vctrl,vctrl,0)
+            cases[f'{label}_front_{name}']=(vctrl,(0,0),0)
+            cases[f'{label}_back_{name}']=((0,0),vctrl,0)
+    invref=None;markref=None;allruns={}
+    for name,(fr,bk,vert) in cases.items():
+        frun=[];brun=[]
+        for j in range(2):frun+=prep_runs(CODE[j],fr[j])
+        for j in reversed(range(2)):brun+=prep_runs(CODE[j],bk[j],True)
+        runs=compact(frun+vertical(vert)+core+vertical(vert,True)+brun)
+        inventory=Counter()
+        for gg,nn in runs:inventory[gg.op]+=nn
+        if invref is None:invref=inventory
+        need(inventory==invref,'same COMPLETE paid inventory '+name)
+        mark=sum(n for gg,n in frun+vertical(vert)+body+raw(rot_small(-1))+raw(V))
+        if markref is None:markref=mark
+        need(mark==markref,'same real marked stage '+name)
+        distinct=tuple(dict.fromkeys(gg for gg,nn in runs))
+        ne.validate_execution(ne.Execution(WIDTH,(),(OLD,),distinct,ne.G_CX_SOURCE_I,PORT,SPIN,()),max_qubits=WIDTH,max_expanded_stages=len(distinct))
+        need(all(OLD not in gg.wires for gg,nn in runs),'oldRIGHT is untouched '+name)
+        allruns[name]=[[gg.op,list(gg.wires),nn] for gg,nn in runs]
+    N=sum(invref.values());nbody=sum(nn for gg,nn in body);nback=sum(nn for gg,nn in back)
+    need(N==nbody+nback+36360+4*nprep+80,'independently counted full core and preparation clock')
+    H=iv.log(N*DIM*(359+2*iv.mpf(heat['complete_book']['a0_interval'])))/(2*pi*pi)+iv.mpf(['-1e-100','1e-100'])
+    for label,dd in (('f',df),('q',dq)):
+        probplus=(pi*cp+ai*sprep)**2;probminus=(pi*cp-ai*sprep)**2
+        cplus=cbar+dd*(probplus-pi*pi);cminus=cbar+dd*(probminus-pi*pi)
+        paired=(J(cplus)-J(cminus))/(gamma*mu_step)
+        # One independently varied front or reverse leg has the SAME real
+        # scalar corner by transposition, but remains a different paid word.
+        k=dd*ai*pi
+        cfrontplus=cbar*cp+k*sprep;cfrontminus=cbar*cp-k*sprep
+        one=(J(cfrontplus)-J(cfrontminus)+iv.mpf(['-2e-100','2e-100']))/(gamma*mu_step)
+        target=Sf if label=='f' else Sq
+        need(upper_abs(paired-target)<mp.mpf('1e-7'),'actual paired source at true decoded displacement '+label)
+        need(upper_abs(2*one-target)<mp.mpf('1e-6'),'actual independent front/reverse sources '+label)
+        values[label]={'table_secant':fmt(target),'ideal_secant':fmt(Sfi if label=='f' else Sqi),
+            'actual_paired':fmt(paired),'actual_front':fmt(one),'actual_back':fmt(one)}
+    need(upper_abs(Sf-1)<mp.mpf('.02') and upper_abs(Sq+k0)<mp.mpf('.3'),'original unchanged report slopes')
+    # Retained-section hostile control: a baseline-only bank edit changes
+    # its actual output at every label. CODE preparation cannot change the
+    # conditional baseline cell of this fixed operation.
+    badtarget=original(eps*s,0,pi);nbad,badprob=compile_probability(badtarget,f'{exponent}/hostile-baseline-only')
+    need(nbad!=nsconst[3] and not(bounds(badprob-prconst[3])[0]<=0<=bounds(badprob-prconst[3])[1]),'real changed baseline bank is a different all-input section')
+    bank_description=[[gg.op,list(gg.wires),nn] for gg,nn in compact(body)]
+    bank_sha=sha(json.dumps(bank_description,separators=(',',':')).encode())
+    word_levels[str(exponent)]={'runs':allruns,'fixed_forward_bank_sha256':bank_sha,'bank_branch_powers':{'READY':nr,'constants':nsconst,'f':nsf,'q':nsq},
+                               'raw_stages':N,'marked_stage':markref,'inventory':dict(sorted(invref.items()))}
+    levels.append({'epsilon_and_sampling_s':f'2^-{exponent}','g':fmt(g),'actual_sampling_gain':fmt(gamma),
+                   'cold_table':list(map(fmt,cold)),'central_corner':fmt(cbar),'full_heat':fmt(H),
+                   'full_central_price':fmt(H+J(cbar)),'source':values,'compiler_source_error_bound':fmt(bankerr),
+                   'clock':N,'marked_stage':markref,'inventory':dict(sorted(invref.items())),
+                   'fixed_forward_bank_sha256':bank_sha,
+                   'all_hodge_modes':425*N*DIM,'unpaired_harmonics':359*N*DIM,
+                   'native_control_cases':len(cases),'vertical_control_exact_same_full_endpoint':True})
+need(upper_abs(Sf-1)<mp.mpf('.0001') and upper_abs(Sq+k0)<mp.mpf('.001'),'finest native field-source recovery')
+x=Fraction(2,55);q3=x**3/math.factorial(3)
+need(Fraction(176,359)/(1-x*x)/(1-q3)**2<1 and all(row['clock']>100 for row in levels),'owned all-unitary heat tail applies')
+word_bytes=(json.dumps({'format':'exact-run-length-description-not-native-schema','qubits':WIDTH,
+ 'source_port':PORT,'source_spin':SPIN,'old_right':[OLD],'live_code':CODE,'levels':word_levels},sort_keys=True,separators=(',',':'))+'\n').encode()
+(HERE/'native_shared_runs.json').write_bytes(word_bytes)
+result={'status':'PASS_SHARED_NATIVE_BANK_FULL_PREPARATION_SOURCE','input_commit':'905b1d7e6f9960873f420016ed38b5935c39ce83',
+ 'checker_sha256':sha(Path(__file__).read_bytes()),'owned_7ef_checker_sha256':old_sha,'source_pins':pins,
+ 'new_checks':len(CHECKS),'consumed_comparator_prefix_checks':len(env['CHECKS']),
+ 'boundary':{'qubits':WIDTH,'dimension':DIM,'input_rank':RANK,'live_code':CODE,
+             'born_wires':list(range(20))+list(CODE),'old_right':OLD,'code_cut':'born rank-one code, not full-CODE cut'},
+ 'shared_writer':{'exact_multiplexer':'integer Walsh/Gray of four branch powers divisible by four',
+   'one_fixed_body_per_level':True,'all_code_columns_priced':True,'same_code_reused_by_all_seven_calls':True,
+   'G_convergent':[num,den],'compiled_targets':len(compiled),'maximum_error_upper':mp.nstr(maxerr,80),'requested_uniform_error':'1e-48'},
+ 'preparation':{'actual_even_power':nprep,'cosine':fmt(cp),'sine':fmt(sprep),'signed_decoded_displacement':fmt(mu_step),
+   'marginal_lift_gain':fmt(u),'two_field_right_inverse_l2_to_operator_bound':fmt(iv.sqrt(2)/u),
+   'full_code_spin_covector':'DJ/Gamma = Sf Dmu_f + Sq Dmu_q; every skew generator, independent legs each one half',
+   'correlation_and_phase_directions':'exact zero only when both actual rho-weighted marginals have zero first variation',
+   'physical_primitive_G_derivative_postulated':False},
+ 'levels':levels,'matrix_determinant_controls':matrix_checks,'compiled_targets':compiled,
+ 'word_data':{'file':'native_shared_runs.json','bytes':len(word_bytes),'sha256':sha(word_bytes),
+   'full_lists_expanded':False,'tick_by_tick_execution':False,'all_columns_certified_by_exact_structural_identities':True},
+ 'scope':{'fixed_shared_scalar_effect_writer_constructed':True,'every_initial_CODE_input_has_a_defined_bank':True,
+   'all_code_preparation_endpoint_rows_retained':True,'continuous_endpoint_formula_is_comparison_theorem':True,
+   'all_continuations_forced_to_use_this_writer':False,'all_original_geometric_marked_maps_transported':False,
+   'physical_stationarity_derived':False,'full_X_N_identified':False,'GR_closed':False},
+ 'runtime':{'python':platform.python_version(),'mpmath':mp.__version__,'numpy':np.__version__,'sympy':sp.__version__}}
+print(json.dumps(result,sort_keys=True,indent=2)+'\n',end='')
+```
+<!-- END 7eg SHARED WRITER CHECKER -->
+
+<!-- BEGIN 7eg SHARED WRITER RECEIPT -->
+```json
+{
+  "boundary": {
+    "born_wires": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      23,
+      24
+    ],
+    "code_cut": "born rank-one code, not full-CODE cut",
+    "dimension": 33554432,
+    "input_rank": 8,
+    "live_code": [
+      23,
+      24
+    ],
+    "old_right": 22,
+    "qubits": 25
+  },
+  "checker_sha256": "5720f125854ecbf4b72ae49936de6a57a6194a7b2ce9adbcb27820344c254259",
+  "compiled_targets": {
+    "10/constant/0": {
+      "G_power": 31426768456420606989279194700508886915850162448927652,
+      "actual_probability": [
+        "0.000001851248937939267442304103173517883746086972431281253399892620619635802",
+        "0.000001851248937939267442304103173517883746086972431281253399892620619635805"
+      ],
+      "error_upper": "9.9649660200883626938676573496843696968100995768853815020680040722579194506744151e-53"
+    },
+    "10/constant/1": {
+      "G_power": 13425836853629281735611417394042297896419625347937576,
+      "actual_probability": [
+        "0.000001851230218377076710766930318685581072067415122811688906018641553070535",
+        "0.000001851230218377076710766930318685581072067415122811688906018641553070538"
+      ],
+      "error_upper": "1.6223676239541877597819671244884091115787598862041465058447748707267271385738819e-52"
+    },
+    "10/constant/3": {
+      "G_power": 40886603567275577679990959729793894750378065060714244,
+      "actual_probability": [
+        "0.000001851239578488203076284395054983403661716979884272479656811385133454980",
+        "0.000001851239578488203076284395054983403661716979884272479656811385133454983"
+      ],
+      "error_upper": "3.0229671635294350916303670656445665547663782015174164741850770781805327418185088e-52"
+    },
+    "10/constant/4": {
+      "G_power": 41525476325226906445360861209302582823357682916169780,
+      "actual_probability": [
+        "0.000001851248930874555451174046154279658487723242049583742257816142870147819",
+        "0.000001851248930874555451174046154279658487723242049583742257816142870147822"
+      ],
+      "error_upper": "2.4054245265360347900461752569158460167957216572054365441276792952632801737142121e-52"
+    },
+    "10/constant/5": {
+      "G_power": 1291132463377889639021275362045831957907865170063744,
+      "actual_probability": [
+        "0.000001851230211312354658718974377993501334902872979260589430216562864772825",
+        "0.000001851230211312354658718974377993501334902872979260589430216562864772828"
+      ],
+      "error_upper": "9.9431435296791104321625993695469594190937998118959892372823776332112310755382802e-53"
+    },
+    "10/f/0": {
+      "G_power": 69101297317751303205658185139909763346247467608590556,
+      "actual_probability": [
+        "0.000001851243314239239945201837206625753677475430288846334968266508022905131",
+        "0.000001851243314239239945201837206625753677475430288846334968266508022905134"
+      ],
+      "error_upper": "1.0864671080599248559324882434870541727219743443038327159567417604610658805819337e-52"
+    },
+    "10/f/1": {
+      "G_power": 34527047460643205848130505284545340573072161644307296,
+      "actual_probability": [
+        "0.000001851243332508501453953206617938060761680988300954735067520329968138060",
+        "0.000001851243332508501453953206617938060761680988300954735067520329968138063"
+      ],
+      "error_upper": "1.7479707893869035860409793392572355255862248286584173368448265761600050615868673e-52"
+    },
+    "10/hostile-baseline-only": {
+      "G_power": 36491376640335769412032178784758550449015350942162024,
+      "actual_probability": [
+        "0.000001851239596768997329270719977506674876802473393791686988721651576599074",
+        "0.000001851239596768997329270719977506674876802473393791686988721651576599077"
+      ],
+      "error_upper": "1.5293184397169190859608792491717262222532752037269003124234107066330516682463013e-52"
+    },
+    "10/q/0": {
+      "G_power": 39100921017684790988445495955246348489912777533857272,
+      "actual_probability": [
+        "0.000001851177106605176382923209625645323967435663763242403213405218728312130",
+        "0.000001851177106605176382923209625645323967435663763242403213405218728312133"
+      ],
+      "error_upper": "1.5325999783087806412957557342032861582744810540198606291199506119682876041115311e-52"
+    },
+    "10/q/1": {
+      "G_power": 9704529705642082576010626860114112252493465563036724,
+      "actual_probability": [
+        "0.000001851176678331899669558591916485977390031906897713101654577787777696051",
+        "0.000001851176678331899669558591916485977390031906897713101654577787777696054"
+      ],
+      "error_upper": "4.3108845536101762761706211933200783282736223913610254812489541231343855534969365e-53"
+    },
+    "14/constant/0": {
+      "G_power": 52165754444138682245214027863576046224614822217645460,
+      "actual_probability": [
+        "0.000001851240163473232666227770662478152404379791542540577814256075449485966",
+        "0.000001851240163473232666227770662478152404379791542540577814256075449485969"
+      ],
+      "error_upper": "1.7718210394895711127793146446961374254417660926479290564077605973289611641335986e-52"
+    },
+    "14/constant/1": {
+      "G_power": 12796477757563936069265358263072596648923603708691904,
+      "actual_probability": [
+        "0.000001851238993500595119155607460376638078899454771469660251380442779649199",
+        "0.000001851238993500595119155607460376638078899454771469660251380442779649202"
+      ],
+      "error_upper": "2.5751398517430065507831737584051198080066301744673854348853569584038793065509678e-52"
+    },
+    "14/constant/3": {
+      "G_power": 40886603567275577679990959729793894750378065060714244,
+      "actual_probability": [
+        "0.000001851239578488203076284395054983403661716979884272479656811385133454980",
+        "0.000001851239578488203076284395054983403661716979884272479656811385133454983"
+      ],
+      "error_upper": "3.0229671635294350916303670656445665547663782015174164741850770781805327418185088e-52"
+    },
+    "14/constant/4": {
+      "G_power": 46824363857320915396619178792021912983647612158049200,
+      "actual_probability": [
+        "0.000001851240163445636116590264935535913167467601095962232980162403222404982",
+        "0.000001851240163445636116590264935535913167467601095962232980162403222404985"
+      ],
+      "error_upper": "8.8554891584763189121632186551570166895871085094476661349755929991818324320540148e-54"
+    },
+    "14/constant/5": {
+      "G_power": 25295096766299485487670445790607248927160092172483860,
+      "actual_probability": [
+        "0.000001851238993472998567061822949518028345416328029067213871331606201468625",
+        "0.000001851238993472998567061822949518028345416328029067213871331606201468628"
+      ],
+      "error_upper": "6.2373343725108377652727269373194559044434846193216644213559169644527684106575862e-53"
+    },
+    "14/f/0": {
+      "G_power": 51765761913479883037215334673399234795815208545498096,
+      "actual_probability": [
+        "0.000001851239812450833958442651765137198794145480515995305210180858283496580",
+        "0.000001851239812450833958442651765137198794145480515995305210180858283496583"
+      ],
+      "error_upper": "3.8477294416426906714730278618444247915114338334383017216965116988330666213830593e-53"
+    },
+    "14/f/1": {
+      "G_power": 61449026703273976118131931889788954784276430841019356,
+      "actual_probability": [
+        "0.000001851239812522240600209595180188080961496103318839785519201781062801398",
+        "0.000001851239812522240600209595180188080961496103318839785519201781062801401"
+      ],
+      "error_upper": "2.8025635314732144126429422353181899882562649516706194315307158278780390234772998e-53"
+    },
+    "14/hostile-baseline-only": {
+      "G_power": 30989424324003407436699018708938887930749338316308648,
+      "actual_probability": [
+        "0.000001851239578559612538595024155187269678578749690708556201934313282343936",
+        "0.000001851239578559612538595024155187269678578749690708556201934313282343939"
+      ],
+      "error_upper": "2.05978258483778117204485352652077337718518599120030460624113329001978627599166e-53"
+    },
+    "14/q/0": {
+      "G_power": 19168746188984955690038197645995999676376025435948044,
+      "actual_probability": [
+        "0.000001851235665275626501638267084501054424062363797125225329255641721124849",
+        "0.000001851235665275626501638267084501054424062363797125225329255641721124852"
+      ],
+      "error_upper": "1.1301046136644837959664923393121199118644992097775455099587470483571925326219013e-52"
+    },
+    "14/q/1": {
+      "G_power": 55032904467189417821237408276762441131788388800941948,
+      "actual_probability": [
+        "0.000001851235663603424165021270893059971235760854211424805822934442662057252",
+        "0.000001851235663603424165021270893059971235760854211424805822934442662057255"
+      ],
+      "error_upper": "2.9462046109833897333235242229487722154870522655138257989873734603676334236001389e-52"
+    },
+    "6/constant/0": {
+      "G_power": 22625508913750800631526103982290495402816784494803040,
+      "actual_probability": [
+        "0.000001851389250477267662344663788633749843788465122846729400031724379472675",
+        "0.000001851389250477267662344663788633749843788465122846729400031724379472678"
+      ],
+      "error_upper": "8.9714378265923447274446586189399272110776439652920273602925742748494532435055071e-53"
+    },
+    "6/constant/1": {
+      "G_power": 11797838116505923572687975651130579809687421782318600,
+      "actual_probability": [
+        "0.000001851089737523264502777497958165696432069839529467630744168807960438757",
+        "0.000001851089737523264502777497958165696432069839529467630744168807960438760"
+      ],
+      "error_upper": "5.9279854002637544493321180289350614882670639770221195841021871409618935625995264e-53"
+    },
+    "6/constant/3": {
+      "G_power": 40886603567275577679990959729793894750378065060714244,
+      "actual_probability": [
+        "0.000001851239578488203076284395054983403661716979884272479656811385133454980",
+        "0.000001851239578488203076284395054983403661716979884272479656811385133454983"
+      ],
+      "error_upper": "3.0229671635294350916303670656445665547663782015174164741850770781805327418185088e-52"
+    },
+    "6/constant/4": {
+      "G_power": 3000026150402867088206839009588997863737488732997564,
+      "actual_probability": [
+        "0.000001851387441930315953426463320485780780875805765285872279729389733918277",
+        "0.000001851387441930315953426463320485780780875805765285872279729389733918280"
+      ],
+      "error_upper": "8.7234952605523579141711761911631640455182683622669799782437941872852005668737024e-53"
+    },
+    "6/constant/5": {
+      "G_power": 17235448999966429724796277732477107760874402405429388,
+      "actual_probability": [
+        "0.000001851087928935103274145314899907266335749900640125697967867508432067055",
+        "0.000001851087928935103274145314899907266335749900640125697967867508432067058"
+      ],
+      "error_upper": "1.453099388177497784219165751327420388760368636909412246501617835021127423008213e-53"
+    },
+    "6/f/0": {
+      "G_power": 61046349905261386891893823054072568479154101246924808,
+      "actual_probability": [
+        "0.000001851297408446591710633544990864372350175286325861503938892828333117276",
+        "0.000001851297408446591710633544990864372350175286325861503938892828333117279"
+      ],
+      "error_upper": "1.52544343425679702214633606658367645751006660625955795376793178904183617774098e-52"
+    },
+    "6/f/1": {
+      "G_power": 40364318805895119361086734801918260413242011132840256,
+      "actual_probability": [
+        "0.000001851302040574338769805398745274004392103187126156938920285605357053914",
+        "0.000001851302040574338769805398745274004392103187126156938920285605357053917"
+      ],
+      "error_upper": "8.3219751883744103737714773309508769126639152765426693424045703513117705495163442e-54"
+    },
+    "6/hostile-baseline-only": {
+      "G_power": 1602218236764879230910509894724353648178772303469636,
+      "actual_probability": [
+        "0.000001851244256530066269063691801843237012321091559390460934254384237200898",
+        "0.000001851244256530066269063691801843237012321091559390460934254384237200901"
+      ],
+      "error_upper": "2.1061532970440753693921779855392334610364092321214014162669507847922565633300568e-52"
+    },
+    "6/q/0": {
+      "G_power": 36768494309105438066999202606151005417764146828924724,
+      "actual_probability": [
+        "0.000001850276038550019506064509824225272858135491701423606222236617777822049",
+        "0.000001850276038550019506064509824225272858135491701423606222236617777822052"
+      ],
+      "error_upper": "6.5564456110065980335881770908300417566664538921715154524266179236167979984542371e-53"
+    },
+    "6/q/1": {
+      "G_power": 59046410903412973204762213004708652945661504034018080,
+      "actual_probability": [
+        "0.000001850165616457873707389300280696643165659248710682391785838317182498169",
+        "0.000001850165616457873707389300280696643165659248710682391785838317182498172"
+      ],
+      "error_upper": "1.7151537276147952314335556780874087960344648310974541791983593594275967670851612e-52"
+    },
+    "READY": {
+      "G_power": 37719622299279512178670690221213728770327799326539336,
+      "actual_probability": [
+        "0.341640787070154712822613075982972626427367494879999047172875940534080993223",
+        "0.341640787070154712822613075982972626427367494879999047172875940534080993226"
+      ],
+      "error_upper": "2.992694159281541437639068496984433671374122871882218107906184813894665952525036e-52"
+    }
+  },
+  "consumed_comparator_prefix_checks": 18197,
+  "input_commit": "905b1d7e6f9960873f420016ed38b5935c39ce83",
+  "levels": [
+    {
+      "actual_sampling_gain": [
+        "0.000000000000000000000000000119605002353271840967940974940807477870297519630",
+        "0.000000000000000000000000000119605002353271840967940974940807477870297519633"
+      ],
+      "all_hodge_modes": 13680954321269356178190636621477014076501774748637242340461772800,
+      "central_corner": [
+        "0.741567071980551154612130699302228874686968961402067265777893495074187600338",
+        "0.741567071980551154612130699302228874686968961402067265777893495074187600341"
+      ],
+      "clock": 959351085303065088089118047425116796809208726086142648,
+      "cold_table": [
+        [
+          "0.741567071980551154612039432644288627077658176328363295689537681445696330504",
+          "0.741567071980551154612039432644288627077658176328363295689537681445696330507"
+        ],
+        [
+          "0.741567071980551154612288834066568383284937801459044403240992215949289861295",
+          "0.741567071980551154612288834066568383284937801459044403240992215949289861298"
+        ],
+        [
+          "0.741567071980551154612028970434536049581292173706299868226124795391480930616",
+          "0.741567071980551154612028970434536049581292173706299868226124795391480930619"
+        ],
+        [
+          "0.741567071980551154612278371856815805788571798836980975777579329895074461407",
+          "0.741567071980551154612278371856815805788571798836980975777579329895074461410"
+        ]
+      ],
+      "compiler_source_error_bound": [
+        "0.000000000000000000000005297968555104426818395898092018474505817839383318531",
+        "0.000000000000000000000005297968555104426818395898092018474505817839383318534"
+      ],
+      "epsilon_and_sampling_s": "2^-6",
+      "fixed_forward_bank_sha256": "71f0b26f52c75d5945b162e95aab94829cb4493d5d95f777c98c79906fecce03",
+      "full_central_price": [
+        "193.202229152372822718269709421274034809532797701488685999615611222839628351551",
+        "193.202229152372822718269709421274054939317270854049449669337150384960305979594"
+      ],
+      "full_heat": [
+        "193.202225718547334838781118670224320581161164722015391828045822693991241470838",
+        "193.202225718547334838781118670224340710945637874576155497767361856111919098880"
+      ],
+      "g": [
+        "0.000000000000000000000338242853154246094803397925590010176806962456406150382",
+        "0.000000000000000000000338242853154246094803397925590010176806962456406150385"
+      ],
+      "inventory": {
+        "CX": 8556,
+        "G": 959351085303065088089118047425116796809208726086117618,
+        "SourceI": 16474
+      },
+      "marked_stage": 479675542651532544044559023712558398404604363043071212,
+      "native_control_cases": 14,
+      "source": {
+        "f": {
+          "actual_back": [
+            "0.494896948982701270009703328684408570803154239186036873339138440155186517635",
+            "0.494896948982701270009703328684408570803154239186036873339138440155215709045"
+          ],
+          "actual_front": [
+            "0.494896948982701270009703328684408570803154239186036873339138440155186517635",
+            "0.494896948982701270009703328684408570803154239186036873339138440155215709045"
+          ],
+          "actual_paired": [
+            "0.989793897965400736170729765407821418484046817508100229291389625660333654679",
+            "0.989793897965400736170729765407821418484046817508100229291389625660333654682"
+          ],
+          "ideal_secant": [
+            "0.989793897965400736170729765407832873839329258375401749646161479076167446470",
+            "0.989793897965400736170729765407832873839329258375401749646161479076167446473"
+          ],
+          "table_secant": [
+            "0.989793897965400736170729765407832873839329318622129715926173244643340864696",
+            "0.989793897965400736170729765407832873839329318622129715926173244643340864699"
+          ]
+        },
+        "q": {
+          "actual_back": [
+            "-11.797507971754208967011119791889842661021456660926319146391272814937636682987",
+            "-11.797507971754208967011119791889842661021456660926319146391272814937607491577"
+          ],
+          "actual_front": [
+            "-11.797507971754208967011119791889842661021456660926319146391272814937636682987",
+            "-11.797507971754208967011119791889842661021456660926319146391272814937607491577"
+          ],
+          "actual_paired": [
+            "-23.595015943508374933314336219747269848991620791368036459868650566501163146434",
+            "-23.595015943508374933314336219747269848991620791368036459868650566501163146431"
+          ],
+          "ideal_secant": [
+            "-23.595015943508374933314336219740760170054918084861625440213970038469069059618",
+            "-23.595015943508374933314336219740760170054918084861625440213970038469069059615"
+          ],
+          "table_secant": [
+            "-23.595015943508374933314336219740760170054918197738202098773501949039772267977",
+            "-23.595015943508374933314336219740760170054918197738202098773501949039772267974"
+          ]
+        }
+      },
+      "unpaired_harmonics": 11556382591378114983459855404965289537562675611201811765237121024,
+      "vertical_control_exact_same_full_endpoint": true
+    },
+    {
+      "actual_sampling_gain": [
+        "0.000000000000000000000000000000029200440027654258048729897229998515204954139",
+        "0.000000000000000000000000000000029200440027654258048729897229998515204954142"
+      ],
+      "all_hodge_modes": 14283319190507994764391473387688640638844577948968512371084492800,
+      "central_corner": [
+        "0.741567071980551154610002092480440597141289497403997698473542326882416877864",
+        "0.741567071980551154610002092480440597141289497403997698473542326882416877867"
+      ],
+      "clock": 1001590784192645883868124442078691415144736482744252848,
+      "cold_table": [
+        [
+          "0.741567071980551154610002070373135689992088144738369270603218387158876923469",
+          "0.741567071980551154610002070373135689992088144738369270603218387158876923472"
+        ],
+        [
+          "0.741567071980551154610002130829767522603978646507313231518521869525043411741",
+          "0.741567071980551154610002130829767522603978646507313231518521869525043411744"
+        ],
+        [
+          "0.741567071980551154610002067794179503954145028862782922219607684790663760674",
+          "0.741567071980551154610002067794179503954145028862782922219607684790663760677"
+        ],
+        [
+          "0.741567071980551154610002128250811336566035530631726883134911167156830248947",
+          "0.741567071980551154610002128250811336566035530631726883134911167156830248950"
+        ]
+      ],
+      "compiler_source_error_bound": [
+        "0.000000000000000000021700479201707732248149598584907671575829870114072709702",
+        "0.000000000000000000021700479201707732248149598584907671575829870114072709705"
+      ],
+      "epsilon_and_sampling_s": "2^-10",
+      "fixed_forward_bank_sha256": "48a0c02a463061cef4acbeac429bf9c490e249e1caa010ba0efc825707c70333",
+      "full_central_price": [
+        "193.258631678848145208437328916793941561909382726055926613764093751335180417528",
+        "193.258631678848145208437328916793961691693855878616690283485632913455858045570"
+      ],
+      "full_heat": [
+        "193.258628245022657328948738141658146312873896058959590143908955839998556626060",
+        "193.258628245022657328948738141658166442658369211520353813630495002119234254103"
+      ],
+      "g": [
+        "0.000000000000000000000001321261145133773807825773146835977253152197095336523",
+        "0.000000000000000000000001321261145133773807825773146835977253152197095336526"
+      ],
+      "inventory": {
+        "CX": 8556,
+        "G": 1001590784192645883868124442078691415144736482744227818,
+        "SourceI": 16474
+      },
+      "marked_stage": 500795392096322941934062221039345707572368241372126296,
+      "native_control_cases": 14,
+      "source": {
+        "f": {
+          "actual_back": [
+            "0.499683795332428425311542519032805617573142299842036574948071651558321039786",
+            "0.499683795332428425311542519032805617573142299842036574948071651677889042325"
+          ],
+          "actual_front": [
+            "0.499683795332428425311542519032805617573142299842036574948071651558321039786",
+            "0.499683795332428425311542519032805617573142299842036574948071651677889042325"
+          ],
+          "actual_paired": [
+            "0.999367590664855029326843613347196413514398079752962416511669700541287942402",
+            "0.999367590664855029326843613347196413514398079752962416511669700541287942405"
+          ],
+          "ideal_secant": [
+            "0.999367590664855029326843613347196416365472336947184838373080426772909724816",
+            "0.999367590664855029326843613347196416365472336947184838373080426772909724819"
+          ],
+          "table_secant": [
+            "0.999367590664855029326843613347196416365479326632844175823384030250272827570",
+            "0.999367590664855029326843613347196416365479326632844175823384030250272827573"
+          ]
+        },
+        "q": {
+          "actual_back": [
+            "-11.713731086508020912865703910324749129391820910286948436878005056481061203102",
+            "-11.713731086508020912865703910324749129391820910286948436878005056361493200563"
+          ],
+          "actual_front": [
+            "-11.713731086508020912865703910324749129391820910286948436878005056481061203102",
+            "-11.713731086508020912865703910324749129391820910286948436878005056361493200563"
+          ],
+          "actual_paired": [
+            "-23.427462173015999130381668244256550012379052267188931165778257122213235522342",
+            "-23.427462173015999130381668244256550012379052267188931165778257122213235522339"
+          ],
+          "ideal_secant": [
+            "-23.427462173015999130381668244256548445593465735688239961652784578413568849756",
+            "-23.427462173015999130381668244256548445593465735688239961652784578413568849753"
+          ],
+          "table_secant": [
+            "-23.427462173015999130381668244256548445593487223189577242492658041125177887029",
+            "-23.427462173015999130381668244256548445593487223189577242492658041125177887026"
+          ]
+        }
+      },
+      "unpaired_harmonics": 12065203739746753224509503402776992916106361138069872802869018624,
+      "vertical_control_exact_same_full_endpoint": true
+    },
+    {
+      "actual_sampling_gain": [
+        "0.000000000000000000000000000000000007129013678626527843928117956594379255471",
+        "0.000000000000000000000000000000000007129013678626527843928117956594379255474"
+      ],
+      "all_hodge_modes": 15928773601392701230622458948188417193810984119750041018984038400,
+      "central_corner": [
+        "0.741567071980551154609993811431011987829626509078126758920355214870141489544",
+        "0.741567071980551154609993811431011987829626509078126758920355214870141489547"
+      ],
+      "clock": 1116975167316037152137648284308238393686167220490823144,
+      "cold_table": [
+        [
+          "0.741567071980551154609993811425617333569107163240570318600833579782339350979",
+          "0.741567071980551154609993811425617333569107163240570318600833579782339350982"
+        ],
+        [
+          "0.741567071980551154609993811440370723301696726020466910939722752753701602298",
+          "0.741567071980551154609993811440370723301696726020466910939722752753701602301"
+        ],
+        [
+          "0.741567071980551154609993811424987332048111677832731196372316202267230101080",
+          "0.741567071980551154609993811424987332048111677832731196372316202267230101083"
+        ],
+        [
+          "0.741567071980551154609993811439740721780701240612627788711205375238592352399",
+          "0.741567071980551154609993811439740721780701240612627788711205375238592352402"
+        ]
+      ],
+      "compiler_source_error_bound": [
+        "0.000000000000000088885162810194871288420755803781822774599147987241818944896",
+        "0.000000000000000088885162810194871288420755803781822774599147987241818944899"
+      ],
+      "epsilon_and_sampling_s": "2^-14",
+      "fixed_forward_bank_sha256": "bf7ff44b0ff6d542f4c1c158b13a0f5298c6c96257be7a40451256b22ede0ffa",
+      "full_central_price": [
+        "193.401360043158870511612232060118783628739152342081361012038504200509693575582",
+        "193.401360043158870511612232060118803758523625494642124681760043362630371203625"
+      ],
+      "full_heat": [
+        "193.401356609333382632123641284889284824198737795640139469434698724858149176515",
+        "193.401356609333382632123641284889304953983210948200903139156237886978826804557"
+      ],
+      "g": [
+        "0.000000000000000000000000005161176348178803936819426354828036145125769903657",
+        "0.000000000000000000000000005161176348178803936819426354828036145125769903660"
+      ],
+      "inventory": {
+        "CX": 8556,
+        "G": 1116975167316037152137648284308238393686167220490798114,
+        "SourceI": 16474
+      },
+      "marked_stage": 558487583658018576068824142154119196843083610245411476,
+      "native_control_cases": 14,
+      "source": {
+        "f": {
+          "actual_back": [
+            "0.499980247896019866178239034888482668201388161550746823328959239445547191354",
+            "0.499980247896019866178239034888482668201388161550746823328959729196085579142"
+          ],
+          "actual_front": [
+            "0.499980247896019866178239034888482668201388161550746823328959239445547191354",
+            "0.499980247896019866178239034888482668201388161550746823328959729196085579142"
+          ],
+          "actual_paired": [
+            "0.999960495792037909979697422307467263382803644850130019721578514145029227586",
+            "0.999960495792037909979697422307467263382803644850130019721578514145029227589"
+          ],
+          "ideal_secant": [
+            "0.999960495792037909979697422307467263381708697002104789494377952466527573772",
+            "0.999960495792037909979697422307467263381708697002104789494377952466527573775"
+          ],
+          "table_secant": [
+            "0.999960495792037909979697422307467263383500535775719638444331150954202429872",
+            "0.999960495792037909979697422307467263383500535775719638444331150954202429875"
+          ]
+        },
+        "q": {
+          "actual_back": [
+            "-11.708548646281098683440745829159852446677728889220649878734512645738222589602",
+            "-11.708548646281098683440745829159852446677728889220649878734512155987684201814"
+          ],
+          "actual_front": [
+            "-11.708548646281098683440745829159852446677728889220649878734512645738222589602",
+            "-11.708548646281098683440745829159852446677728889220649878734512155987684201814"
+          ],
+          "actual_paired": [
+            "-23.417097292562154690421215768501434936346918658176903643038016537816735878125",
+            "-23.417097292562154690421215768501434936346918658176903643038016537816735878122"
+          ],
+          "ideal_secant": [
+            "-23.417097292562154690421215768501434935975727694201848143384035356757944896897",
+            "-23.417097292562154690421215768501434935975727694201848143384035356757944896894"
+          ],
+          "table_secant": [
+            "-23.417097292562154690421215768501434935964741045028090705670611645566427942677",
+            "-23.417097292562154690421215768501434935964741045028090705670611645566427942674"
+          ]
+        }
+      },
+      "unpaired_harmonics": 13455128759764658215984618264469745347242690115271211119565340672,
+      "vertical_control_exact_same_full_endpoint": true
+    }
+  ],
+  "matrix_determinant_controls": [
+    {
+      "back": -9.511787191218701e-06,
+      "formula": -1.9023543452180234e-05,
+      "front": -9.511756798863402e-06,
+      "generator": 0,
+      "history": 0,
+      "paired": -1.902354287985908e-05
+    },
+    {
+      "back": -2.2180432213136925e-05,
+      "formula": -4.4360865884071857e-05,
+      "front": -2.2180433462137827e-05,
+      "generator": 1,
+      "history": 0,
+      "paired": -4.436086498138536e-05
+    },
+    {
+      "back": -3.643478407866496e-05,
+      "formula": -7.28695686838361e-05,
+      "front": -3.643478477255435e-05,
+      "generator": 2,
+      "history": 0,
+      "paired": -7.286956885121931e-05
+    },
+    {
+      "back": -4.132895067843201e-05,
+      "formula": -8.26579031263857e-05,
+      "front": -4.132895178865503e-05,
+      "generator": 0,
+      "history": 1,
+      "paired": -8.26579027446428e-05
+    },
+    {
+      "back": 7.41109826285502e-06,
+      "formula": 1.4822223529089738e-05,
+      "front": 7.411124214318221e-06,
+      "generator": 1,
+      "history": 1,
+      "paired": 1.48222240037299e-05
+    },
+    {
+      "back": -1.049281342369035e-05,
+      "formula": -2.0985632626573685e-05,
+      "front": -1.0492818419693961e-05,
+      "generator": 2,
+      "history": 1,
+      "paired": -2.0985632398495824e-05
+    }
+  ],
+  "new_checks": 1548444,
+  "owned_7ef_checker_sha256": "561dfba7503c86b2fdf20e121be44681ac98d9ca9759d59150cc1e864b0fb03b",
+  "preparation": {
+    "actual_even_power": 35922,
+    "correlation_and_phase_directions": "exact zero only when both actual rho-weighted marginals have zero first variation",
+    "cosine": [
+      "0.999999998262502506401512471820309208487882261401171625136376603900993698174",
+      "0.999999998262502506401512471820309208487882261401171625136376603900993698177"
+    ],
+    "full_code_spin_covector": "DJ/Gamma = Sf Dmu_f + Sq Dmu_q; every skew generator, independent legs each one half",
+    "marginal_lift_gain": [
+      "0.971736543513291356365727751789065124384971968004746021903476824876231055826",
+      "0.971736543513291356365727751789065124384971968004746021903476824876231055829"
+    ],
+    "physical_primitive_G_derivative_postulated": false,
+    "signed_decoded_displacement": [
+      "0.000114565965967990498231924938130444775827280282803293720699383518763656000",
+      "0.000114565965967990498231924938130444775827280282803293720699383518763656003"
+    ],
+    "sine": [
+      "0.000058949088069096348965772379155876806929353440860255254643266819495540635",
+      "0.000058949088069096348965772379155876806929353440860255254643266819495540638"
+    ],
+    "two_field_right_inverse_l2_to_operator_bound": [
+      "1.455346690225354808122661839709697069854830306809643996875353447185811963259",
+      "1.455346690225354808122661839709697069854830306809643996875353447185811963262"
+    ]
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "GR_closed": false,
+    "all_code_preparation_endpoint_rows_retained": true,
+    "all_continuations_forced_to_use_this_writer": false,
+    "all_original_geometric_marked_maps_transported": false,
+    "continuous_endpoint_formula_is_comparison_theorem": true,
+    "every_initial_CODE_input_has_a_defined_bank": true,
+    "fixed_shared_scalar_effect_writer_constructed": true,
+    "full_X_N_identified": false,
+    "physical_stationarity_derived": false
+  },
+  "shared_writer": {
+    "G_convergent": [
+      7409059942030756560976474173453298838978504705839997,
+      17468380846814960114161657901333666294621302437869531
+    ],
+    "all_code_columns_priced": true,
+    "compiled_targets": 31,
+    "exact_multiplexer": "integer Walsh/Gray of four branch powers divisible by four",
+    "maximum_error_upper": "3.0229671635294350916303670656445665547663782015174164741850770781805327418185088e-52",
+    "one_fixed_body_per_level": true,
+    "requested_uniform_error": "1e-48",
+    "same_code_reused_by_all_seven_calls": true
+  },
+  "source_pins": {
+    "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md": "320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b",
+    "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/PROOF_RU.md": "a04d8842a7082b7a43d32f993c13e76262674d9a454924891bb2150f9a774c8b",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+  },
+  "status": "PASS_SHARED_NATIVE_BANK_FULL_PREPARATION_SOURCE",
+  "word_data": {
+    "all_columns_certified_by_exact_structural_identities": true,
+    "bytes": 19258029,
+    "file": "native_shared_runs.json",
+    "full_lists_expanded": false,
+    "sha256": "0a8f5b3ea7d03c5bca34282ccbd9717434b56bf6ff08f471f80ead030949128f",
+    "tick_by_tick_execution": false
+  }
+}
+```
+<!-- END 7eg SHARED WRITER RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:

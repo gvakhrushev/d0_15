@@ -19493,3 +19493,84 @@ run-count/grammar assertions, not independent scientific theorems. Source,
 receipt, exact word-data hash and reproduction are frozen in primary §7ef.
 No new task/result node, broad GR/Lean replay, remote CI claim, Ready,
 merge, exact-finite positive_gr/raw216 or GR_closed promotion. Goal active.
+
+### 3 November 2026 — one fixed shared-reference writer and its full current preparation source (§7eg)
+
+Same #334 / constitutive/native-programme-v1, native realization and final
+composition. Input 905b1d7e6f9960873f420016ed38b5935c39ce83. Consume §7ed's
+retained-operation rule, §7ee's chronological matrix-source identity and
+§7ef's original READY/report function, native comparator and complete heat.
+Only this brief and the existing primary artifact are appended.
+
+**Named parent substitution.** The formerly external seven-call recipe is
+now one fixed native bank writer which physically reuses ONE live CODE
+record. Its operation, admissible same-section input controls, actual field
+lift and complete paid price are supplied. This is a bounded construction;
+it does not derive the global physical selection of this task/section.
+
+**Concrete carrier and admission.** The original 23-wire scalar-effect
+apparatus receives two live CODE wires, born in the original interior
+v tensor v state. Protected input rank remains eight; full dimension is
+2^25. Four off-shell field vertices use exactly the original nonlinear
+report and READY law. All seven calls read that same record coherently.
+Every unused/fine CODE branch is defined, retained and priced. Integer
+Walsh/Gray multiplexers of powers divisible by four give an explicit
+G/CX/SourceI reader and its separately paid inverse on all columns.
+
+The registered task includes the actual writer AND its fresh canonical-bank
+input checkpoint. Book01's retained-operation predicate preserves their
+maps. Independent CODE/Spin preparation remains variable. A baseline-only
+writer change fails the exact same-writer predicate; an independently
+changed bank input fails its specified input checkpoint. Neither is
+declared forbidden in every D0 continuation. Without that checkpoint,
+retaining a writer alone would not link all independently supplied data.
+No Einstein equation or solution test enters this finite admission rule.
+
+**Full variations and true gain.** The actual bank corner is exactly
+M=c00 I+d_f Pi_f+d_q Pi_q. Therefore every CODE/protected preparation
+generator, including correlations and entanglement, has its complete source
+through the two actual history-weighted marginal derivatives. Each physical
+forward/reverse occurrence has half the paired source. Singular/noncommuting
+past uses the chronological OUTPUT Gram; no inverse of the past is assumed.
+All code modes are retained even when this scalar price cannot distinguish
+some of them. Arbitrary faults inside the fixed writer are not renamed
+source-free preparation controls.
+
+Actual G^0 and G^(+/-35922) preparations, and their inverses, have equal
+clocks by a paid signed split. Their nonzero marginal displacement is
+0.0001145659659679905... . The scaled right-inverse bound is sqrt(2)/u;
+the unit physical-field lift costs sqrt(2)/(u s). The normalized price
+retains the additional sampling factor s in Gamma_s=4wgs/c. Thus the result
+does not use the pure-programme vanishing-gradient shortcut.
+
+Two distinct routed SourceI controls, conditioned on different CODE bits,
+act on unknown Spin and nevertheless commute with the complete fixed
+operation. With their actual seven/nine-call front/back costs, they have
+exactly equal full endpoint, declared report effects and total price.
+
+**Complete price and certificate.** Fourteen finite words per level retain
+one identical N and mark, all 425Nd heat modes and the original rank-eight
+return determinant. The finest full price is 193.40136004315887..., with
+actual gain Gamma_s=7.1290136786265278e-36. Actual normalized field contrasts
+are 0.9999604957920 and -23.4170972925622, tending to (1,-k0); independent
+front/back controls give half. The fixed-bank compilation contribution is
+bounded by 28 eta/(g s)<8.9e-17. Original reporter/sampling errors remain.
+
+The enormous words have about 10^54 ordinary calls. Exact run descriptions,
+all-column identities, outward power/price intervals and independent counts
+certify their endpoints; no astronomical gate list was expanded or executed
+tick by tick. Normal and optimized/warnings-as-errors receipts agree. The
+many repeated grammar checks are not independent scientific results. Frozen
+source, receipt, generated word hash and reproduction are in §7eg.
+
+**Consumer and remaining map.** The general local m-field version proves a
+full preparation-source error L s R_v^2+e_B/(g s), with explicit norm and
+right inverse. This supplies an actual input-control/source bridge for the
+existing regular field-source consumer, conditional on its genuine geometric
+instrument transport. The original all16+24+2 marked Choi/CAR maps are not
+proved equivalent merely by evaluating their scalar f,q at table entries.
+Choosing/changing this writer, fresh-input checkpoint, centre/resolution or
+clock still needs the actual continuation law of the claimed D0 regime.
+Section 7ee's distinct full-CODE cut is not replaced by this born-CODE cut.
+No unrestricted X_N, exact finite positive_gr/raw216, minimum, Ready, merge,
+acceptance or GR_closed promotion. Goal active.
