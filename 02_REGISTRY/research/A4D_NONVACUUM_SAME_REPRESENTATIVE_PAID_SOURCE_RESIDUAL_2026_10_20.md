@@ -130031,3 +130031,1153 @@ print(output, end='')
   ]
 }
 ```
+
+## 7el. Recorded control as a concrete book execution; exact growing-clock stationarity and a Born-input full-price germ
+
+Date: 3 November 2026. Incoming owner head:
+6e7dec9ed6c28176f54fa5c6e2834ddb548d6124. Existing #334 only.
+Phase: native realization and final composition. No claim, lifecycle or
+assembly acceptance is promoted by this research application.
+
+This application joins the retained finite experiment to its actual transition,
+clock, field decoder and the complete source already consumed in §7ei. It also
+replaces two real premises in the older exact-centre route: a homogeneous clock
+and a supply of free initial channels. The latter replacement uses opposite
+curvatures of the ORIGINAL full H+J price on one pure Born input. It adds no
+negative counterterm and no independently prepared active input.
+
+The two resulting conclusions have different types. Part A supplies the
+constructive family-level process application for the existing κ Einstein
+source. Parts B–D give exact finite stationary centres and an exact smooth
+full-price MATRIX germ. Part E states the common decoder/compiler map still
+needed before calling those centres the finite realization of §7eh–§7ei.
+
+### A. The actual family-level action interface, with its source consumer
+
+Books 0–1 require an internally exhibited finite operator/process and its
+retained tests. Book00:113–117 and 680–697 admit constructive finite graphs,
+operators and computable coefficients; a representation may not add a new
+readable distinction. Book01:359–368 gives the six necessary and sufficient
+conditions for its observable subfunctor. Book01:432–447 uses the finite
+channel D and its ORIGINAL response R=D*D and normalized quadratic readout.
+These are not an equation Action=ObsD0. In particular U*U=I alone does not
+exhibit a controlled continuation or its price.
+
+Here is the finite construction that is actually used. Let p+p²=1, p>0,
+a=sqrt(p), and v=(a,p). The positive algebraic root descriptor
+
+a⁴+a²−1=0, 0<a<1, p=a²
+
+supplies all finite precision names. The unique real oriented orthogonal
+completion of v is G=[[a,−p],[p,a]]. The owned reference-preserving relative
+recorder (b,r)↦(b,b xor r) is the literal CX basis permutation. The relevant
+owners are GoldenOrderInterferometer.lean:19–28 and
+Foundation/RelationalRepairClosure.lean:115–124. This does not assert unique
+phase conventions among all devices, nor quantum cloning. An actually born
+record is v, not an independently selectable blank. The adjacent fullStep is
+CX(G tensor I), with all its columns and its TWO executed unitary stages.
+
+For any admitted finite test e=(D,{Π_b}) with R=D*D nonzero and any certified
+finite word w, define
+
+    U_w = ordered product of the actual gates,
+    D_(e,w)=D U_w,
+    R_(e,w)=U_w* R U_w,
+    P_(e,w)(b)=Tr(Π_b R_(e,w))/Tr R.                  (AC1)
+
+This retains the entire test family. For example D=Π_0 on one bit gives
+R_(D,G)=[[p,−ap],[−ap,p²]], and the Π_0 answer changes from 1 to p.
+For the actual born cut P=|v><v|, Q=I−P, one also has
+P G* Q G P=p² P, whereas the identity gives zero. Thus AC1 is not a
+response-free declaration of a unitary operator.
+
+The six observable conditions are preserved on every finite instruction
+prefix: support and addresses are finite; the channel and its coefficients
+are explicitly exhibited; positivity is D*D; cofinal extension is D⊗I with
+the canonical inclusion Jx=x⊗v and its adjoint; finite precision requests
+terminate; and the same p and calibration are used. Both numerator and
+denominator acquire the same spectator trace factor. No second physical
+scale is introduced. With actual births, use the complete isometry
+A_w:H_0→H_f and K=D A_w. Its response is K*K. The canonical square channel
+K J_0* on H_f, where J_0:H_0→H_f is the passive inclusion, has response
+J_0 K*K J_0*. The transported effects preserve every readout. This is a
+zero extension, not final postselection or a prepared free input. A zero
+K gives a zero event and is not treated as a normalized nonzero experiment.
+
+The state records the COMPLETE finite instruction prefix, all true stage
+carriers, live addresses, protected old records and the retained comparison
+data. Legality is the literal finite G/CX/RAW address and preservation check.
+A legal action appends its actual stages and updates the corresponding map.
+Illegal requests may be sent to an explicit error state to make step total;
+that state is outside the certified physical family. The error state retains
+the attempted prefix. Define the total macro step as the same sequential
+composition of the two total primitive steps, including failed prefixes,
+so the commuting square also holds there. Incompatible tests return the
+same tagged error; outcomeMap is identity on registered responses and error
+tags. Appending a fullStep appends G and CX separately, including
+the intermediate carrier, so a macro never receives a free one-tick clock.
+
+The exact composition law is
+
+    U_(u++w)=U_w U_u,
+    R_(e,u++w)=U_u* (U_w* R_e U_w) U_u.               (AC2)
+
+Trace pairing gives the equivalent dual state transition on EVERY retained
+test. FutureExecution.lean:19–47 and TheoryTransfer.lean:34–81 can therefore
+be consumed directly: use these recorded states and tests, identity state/test
+maps, and the expanded G;CX action word. AC2 is the primitive commuting square;
+the owned theorem supplies finite-word/run/readout composition. State identity
+is literal because the source macro also stores the expanded history.
+ProspectiveExecution.lean:83–109 permits the stated state-dependent legality
+predicate. Its optimality premise is not invoked or silently proved here.
+
+The actual book object is then the SAME RAW R6 / GROWING G1–G14 tuple built
+from those stages: canonical full closure, generated history cuts, both Hodge
+degrees, all born details and 425 D_clock modes. Its price is evaluated on
+that object, not on a compressed endpoint or its description length. A fixed
+finite word, its precision, its work and its primitive clock remain distinct
+until those exact constructors bind them.
+
+The typed source application is now explicit:
+
+1. The target geometric banks and preparation domain are those of §7eh.
+   The ACTUAL positive-fullStep words and transported independent control
+   graph are those of §7ei, including its non-selfadjoint body and EI4
+   independent-leg terms; the ideal selfadjoint body is not substituted. They are fixed before imposing Euler equations.
+   In particular no Einstein-root admission filter or frozen free blank is
+   inserted. All recorded field inputs and calibration names have the finite
+   provenance just described; instructions act on their actual birth addresses.
+2. Their actual marked geometric banks, decoder, independent preparation rows,
+   physical field norm and isometric right lifts are those of §7eh. The original
+   16 coframe, 24 proper-Lorentz and two CAR directions are retained; PF density
+   is not identified with coordinate measure. No new field interpretation is
+   substituted by the action-interface construction.
+3. The literal word and history comparison is identity at the RAW interface.
+   Hence its full finite contrast covector is the very L_k of §7ei.E, with its
+   actual central gain, the old/current rows, independent-leg imbalance,
+   compiler and retention errors, and unchanged complete norm. Explicitly,
+
+       ||L_k − A_k* D S_ES(Z)||_(full,*) ≤ ε_k → 0.   (AC3)
+
+   The subtraction/division convention is the owned contrast divided by the
+   positive central gain BEFORE κ completion. It is not D(B/Γ), and it does
+   not erase the absolute heat anchor or any untransported price source.
+4. The same finite histories thus satisfy the hypotheses of KAPPA K10–K12.
+   On the stated regular computable common domain, zero completed source is
+   equivalent to the full Einstein–two-CAR equations, with the owned recovery
+   and non-null witness. The physical Golden step and reporter completion
+   remain those of §7ei.C–D, not a Bratteli-scale analogy.
+
+This is the constructive internal process/primitive-realization application
+of family-level native_sector/G0, with its clock, readout and source maps.
+It does not derive the value of an unspecified universal Action predicate.
+The inspected owners do not contain that extra predicate: ActionProtocol in
+EndogenousActionQuantum.lean:43–50 is a cost lower-bound interface; the actual
+FutureExecution/ProspectiveExecution dynamics and legality are supplied fields.
+TheoryTransfer:379–408 explicitly separates all-native coverage. The closure
+contract asks for ONE common admitted family and all its justified variations,
+not mandatory execution of this program by every D0 continuation. This repairs
+the stronger quantifier sometimes hidden in the phrase 'M1-only interaction'.
+Six observable conditions alone would not have supplied this conclusion;
+AC1–AC3 and the literal existing field/clock/price maps do the work.
+
+The resulting κ application remains subject to its ORIGINAL declared source
+and variation domain and independent scientific review. It proves neither an
+optimal-next-action scheduler nor the unchanged exact-finite positive_gr claim.
+It also does not turn a general computable matrix into a free one-step native
+gate. The following exact-centre construction is kept separately typed.
+
+### B. Exact birth-suffix transport of the old stationary germ
+
+The consumer is §7az (436)–(441). This first proof treats INTERNAL temporal variations; part C extends it to the full temporal domain of §7bw.
+
+#### 1. Exact characteristic polynomial from all actual birth suffixes
+
+Use exactly the G1–G6 indexing: N stages, f=N−1, spaces H_j, internal
+isometries F_j, last actual unitary g, canonical passive inclusions B_{j,f},
+and birth projections D_j. Put D_0=I_{H_0} and, on H_f,
+
+    Π_0 = B_{0,f} B_{0,f}*,
+    Π_j = B_{j,f} D_j B_{j,f}*   (j≥1),
+    ℓ_j = N−j.
+
+Zero birth layers are harmless. G2 gives ΣΠ_j=I with orthogonal summands.
+
+Let S be the open chronological shift and R the FULL closure G3, not just
+the coisometry onto H_0. Then T=S+R g E_f is unitary. Since S is nilpotent,
+the determinant lemma gives the polynomial identity
+
+    det_K(I−ξT)
+      = det_{H_f}(I−K(ξ)),
+    K(ξ)
+      = ξ g E_f (I−ξS)^−1 R
+      = Σ_{j=0}^f ξ^{ℓ_j}
+          g F_{f−1} ... F_j D_j B_{j,f}*.              (ST1)
+
+The empty suffix is the identity. The determinants have their ACTUAL
+dimensions; no missing terminal complement or padded earlier carrier occurs.
+
+For convenient unitary notation, extend each internal unitary on H_j to
+H_f by identity on the orthogonal complement of B_{j,f}H_j. At a canonical
+birth use the identity. Call these completions G_j↑ and define
+
+    U_j = g G_{f−1}↑ ... G_j↑.
+
+Each U_j is a genuine unitary matrix on H_f, used only as a mathematical
+completion of the already specified stage maps. Then
+
+    K(ξ)=Σ_j ξ^{ℓ_j} U_j Π_j.                          (ST2)
+
+In fact, with W_can=g G_{f−1}↑ ... G_0↑ and
+D(ξ)=Σ_j ξ^{ℓ_j}Π_j,
+
+    U_j Π_j=W_can Π_j,
+    det(I−ξT)=det(I−W_can D(ξ)).                       (ST3)
+
+Reason: every earlier completed gate G_k↑, k<j, fixes the later-born
+layer Π_j pointwise.
+
+IMPORTANT: W_can is generally NOT the ordinary circuit endpoint obtained by
+tensoring an earlier gate with identity on every subsequently born qubit.
+The required completion is identity ON THE FUTURE BIRTH COMPLEMENT. Thus an
+old gate before a birth and its ordinary inverse after that birth need not
+cancel in W_can. ST1/ST2 are the safest physical formulation. Merely proving
+that the ordinary padded endpoint is a reflection is insufficient.
+
+#### 2. Exact full-heat stationarity at a compatible suffix tower
+
+Suppose, at the centre of the execution,
+
+    U_j Π_j=Π_j U_j,
+    Q_j:=U_j|ranΠ_j satisfies Q_j*=Q_j, Q_j²=I.         (ST4)
+
+Thus every actual birth suffix preserves its own born layer and is an
+involution there. Equivalently W_can is a selfadjoint unitary commuting all
+Π_j. No identity/success corner assumption substitutes for ST4.
+
+Consider arbitrary independent unitary variations of actual internal gates
+and of g, keeping canonical births, their layout and the original scene
+fixed. Their induced suffix tangents have δU_j=U_j X_j, X_j*=-X_j;
+the X_j can be correlated by chronology, but the argument permits even
+independent X_j. At ST4, K(ξ) is block diagonal. For real |ξ|<1,
+
+    δ log det(I−K(ξ))
+      = −Σ_j ξ^{ℓ_j} Tr_{Π_j}
+        [(I−ξ^{ℓ_j}Q_j)^−1 Q_j (Π_j X_j Π_j)].        (ST5)
+
+The first matrix in each trace is selfadjoint. Hence each trace is purely
+imaginary; for real orthogonal native matrices it is exactly zero because
+it is symmetric times skew symmetric. By the convergent log-determinant
+series, for every m≥1,
+
+    δ Re Tr_K(T^m)=0.                                 (ST6)
+
+The original scene is retained. G12–G14 give
+
+    Δ_0=I−B_s⊗I−C_s⊗(T+T*),
+    Z_01=2Tr exp(−βΔ_0)+359 dim K,
+    H=β^−1 log Z_01.
+
+After diagonalizing the unitary T, each temporal phase θ contributes the
+fixed real even analytic kernel
+
+    h(θ)=Tr_scene exp[−β(I−B_s−2cosθ C_s)].
+
+Its Fourier series and differentiated series converge absolutely. Therefore
+ST6 implies EXACTLY
+
+    δH=0                                              (ST7)
+
+for every independent actual unitary edge tangent. This includes independent
+preparer, inverse and controller perturbations; the inverse relation is
+required at the centre only. Both Hodge degrees, every born complement and
+the actual total dimension remain in H. No large-retention limit, gain
+normalization or heat-error estimate is used.
+
+An equivalent symmetry proof is available: the functional determined by
+ST3 is invariant under W→W* and under W→QWQ* whenever Q commutes all Π_j.
+At a selfadjoint W_0 commuting Π_j, their composition
+W→W_0 W* W_0 fixes W_0 and has derivative minus identity on its unitary
+tangent space.
+
+#### 3. The feedback source closes on the SAME clock
+
+Keep the actual transported history cut G7. Suppose the initial-layer
+return is precisely the existing registration corner (436):
+
+    C_0=diag(1,0)⊗I_{Cq},
+    C_0*C_0 is a projection.
+
+G9–G10 then imply that the FULL stage escape
+F=P T*(I−P)T P is itself a projection (zero on all other columns).
+For any unitary T and fixed-rank orthogonal P, 0≤F≤I. At a
+projection-valued centre the diagonal blocks of δF in ker F and im F
+vanish. Consequently
+
+    δJ = δ[−log det(I−ζF)] = 0                        (ST8)
+
+for ALL simultaneous unitary and fixed-rank-cut tangents. This argument
+also allows independent interior history-cut tangents; they are not
+silently held to their generated values during variation.
+
+Together ST7 and ST8 give exact full finite H+J stationarity on this
+actual growing clock, within the original fixed-scene, fixed-β, fixed-ζ
+unitary/cut domain. Independent scene, β, ζ, further R or Info sources are
+not erased. In particular the owned ∂_ζJ=Cq/(1−ζ) remains nonzero.
+
+#### 4. Concrete compatible schedule for the existing §7az centre
+
+The INITIAL carrier contains the actual tag, registration ancilla a,
+spectator, free C-channel input and protected factor of (436). Its given
+cut has a and spectator blank. This is exactly the owned registration
+input sector; a newly born pure channel cannot replace the free C input.
+
+Birth all required scratch first, using the actual canonical RAW births.
+Keep those births as separate paid stages. After the final birth, execute
+an actual finite marked geometry/material word W_h, then its exact
+all-column native inverse, then the root registration CX(tag,a).
+The marked prefix uses the existing 7k history/decoder convention.
+
+At the centre each born-layer suffix is the same root registration on the
+initial factor, with identity on the born factors: the excursion cancels
+on ALL columns because every scratch birth precedes it. Root CX is a
+symmetric involution and preserves every passive birth layer. Hence ST4
+holds. Initial compression is precisely (436), so ST8 also holds.
+
+More generally, a staged tower may add fresh births between complete
+identity excursions, provided each centre suffix satisfies ST4. Future
+births must not be inserted between a gate and an asserted cancelling
+inverse unless ST1 checks their future-born columns separately. Arbitrary
+old prefixes are not automatically compatible suffix towers.
+
+The entire smooth germ (440), as a MATRIX comparison chart, also transports
+if its conjugator O(y) acts only on the original initial carrier:
+after the front-loaded births the endpoint is
+O(y)* U_0 O(y) tensor I_scratch. It preserves all Π_j, each block is
+unitarily conjugate to its fixed root block, and ST3 makes the ENTIRE RAW
+heat constant along that chart at the actual N and dimensions.
+The exact action identity (440) and original absolute J anchor are then
+unchanged; H_0 must be recomputed using this actual growing clock.
+
+For actual finite words, at the centre O(0)=I and no nontrivial germ
+calibration must be synthesized. The §7az geometric codec bound (441)
+therefore retains its exact finite stationary-centre conclusion with a
+nonvacuum readout limit, PROVIDED the marked excursion and its exact
+all-column inverse belong to the declared native alphabet. This does not
+turn a generic smooth O(y) into one exact finite Golden word.
+
+Two material boundaries:
+1. The positive-fullStep compiler of §7ei only approximates inverse targets.
+   Density is not an exact inverse-word theorem. This transport consumes
+   the exact-inverse admission explicitly owned by the §7az excursion
+   sector; it cannot silently strengthen the narrower semigroup.
+2. A terminal writer V that conjugates U_0 while mixing different birth
+   layers need not satisfy ST4. In particular the later §7az terminal-bank
+   construction (442) needs a separate layer-preservation check; ordinary
+   endpoint reflection/conjugacy alone does not prove RAW heat stationarity.
+   Marked-prefix reading is the direct application established above.
+
+#### 5. Precise substitution
+
+Removed premise: equality of all earlier temporal fibres / use of the padded
+homogeneous clock for the exact stationary germ centre. ST1–ST8 prove its
+actual canonical growing-clock replacement on a compatible suffix tower.
+
+Retained premises: registration-sector initial input (including genuine free
+channel multiplicity), exact centre inverse word, canonical fixed birth
+layout and fixed original scene, and the explicitly stated H+J source
+domain. Physical selection of this germ/sector, arbitrary past-prefix
+compatibility, terminal writer layer compatibility, and positive-fullStep-only
+exact inverse synthesis remain separate assertions.
+
+Refinement qualification: the full n-coordinate signed germ allocates
+genuinely free INITIAL C≥2n channels. Later pure births preserve initial
+cut rank, so they cannot manufacture increasing free C along one fixed-input
+history. The construction directly establishes each fixed-mesh full germ
+on its stated input, and it separately permits a fixed-input compatible
+tower of exact stationary centres with increasingly accurate marked readout.
+It does not automatically identify those two statements as one fixed-input
+refining all-field germ.
+
+
+### C. Full temporal variations, including scene and birth-layer mixing
+
+The homogeneous theorem consumed here is §7bw (605)–(607); the following is its actual growing-clock application.
+
+#### 1. Exact domain and the normalization that must be retained
+
+At the BASE the actual maps have INTERNAL placement: the original fixed scene is tensored with the stage maps `F_j:H_j -> H_(j+1)` and final unitary `g:H_f -> H_f`, with `f=N-1`. Every F_j is either a square unitary or the specified canonical birth I_j. The fixed scene operators are Hermitian `B_s` and positive `r_s`; write `C_s=r_s^2` and `A_s=I-B_s`.
+
+Let K be the genuine direct sum of the H_j and let `T` be its canonical growing clock. On the complete scene-times-history space set
+
+    R_s = direct_sum_j (r_s tensor I_Hj),
+    B_s,all = direct_sum_j (B_s tensor I_Hj).
+
+For general scene-mixing temporal gates use the ORIGINAL sandwich family
+
+    Delta_0 = I - B_s,all - R_s (T_full + T_full*) R_s,
+    Z_01 = 2 Tr exp(-beta Delta_0) + 359 dim K,
+    H = beta^(-1) log Z_01.                         (SM1)
+
+At the INTERNAL base this agrees with the factored expression in ST7. Away from that base one MUST NOT replace its variation by `-C_s delta T_full`: that would silently commute a scene-mixing tangent through r_s. The normalized temporal incidence is `(I-T_full)R_s`; together with the fixed spatial incidence it gives (SM1), exactly as in §7bw (605).
+
+Each square actual unitary F_j and the final g may have an arbitrary independent complex unitary tangent on `scene tensor H_j`. Birth isometries and their layout remain fixed. The canonical growing clock remains unitary for this larger variation, since square unitary stages have full range and the fixed birth complements are unchanged.
+
+#### 2. Fixed base gauge to passive age cycles
+
+Use the passive inclusions B_(r,j), D_0=I and the canonical birth-detail projections D_r. Define the following operator on the ACTUAL H_j:
+
+    V_j = sum_(r<=j) F_(j-1)...F_r D_r B_(r,j)*.      (SM2)
+
+The r=j term is D_j. For r=0 the expression uses D_0=I. Empty products are identities.
+
+The passive subspaces `B_(r,j) ran D_r` form an orthogonal decomposition of H_j. Their actual images `F_(j-1)...F_r ran D_r` also form an orthogonal decomposition: a canonical new birth detail is orthogonal to the preceding image, and all subsequent maps are isometries. Formula (SM2) maps the first decomposition unitarily onto the second. Consequently
+
+    V_0=I,   V_j* V_j=V_j V_j*=I,
+    V_j D_j=D_j=V_j* D_j,
+    V_(j+1) I_j = F_j V_j.                           (SM3)
+
+The last identity follows by multiplying (SM2) by I_j: the new detail at j+1 is orthogonal to I_j, and all old terms acquire the common left factor F_j.
+
+Let `R_cl:H_f -> K` be the canonical closure, with block r equal to `D_r B_(r,f)*`. Put `V=direct_sum_j V_j`. Then (SM3) gives
+
+    V* R_cl=R_cl,
+    V* T V = S_passive + R_cl W E_f,
+    W=g V_f.                                        (SM4)
+
+Here V is fixed at the base while differentiating. No derivative of a moving gauge is discarded. Recursion (SM3) identifies V_f with the canonical identity-on-future-complement completion product, so W is exactly W_can of ST3, not the ordinary tensor-padded endpoint.
+
+The full gauge `I_scene tensor V` commutes with the fixed scene operators in (SM1). Thus it preserves (SM1) by ordinary unitary conjugacy, including its complete trace and index term.
+
+Assume ST4: W preserves each passive final birth layer Pi_r, and its restriction Q_r is a selfadjoint unitary. On that layer the clock in (SM4) is a cycle of length `ell_r=N-r`, with holonomy Q_r. Decompose Q_r into its +1 and -1 eigenspaces. This gives an orthogonal decomposition of the entire actual history into age cycles, with no padded earlier copies.
+
+#### 3. The exact adjacent heat blocks
+
+Fix an age r and a sign sigma in {+1,-1}. Its cycle shift `S_(ell,sigma)` has `S^ell=sigma I`. In this block,
+
+    Delta_(r,sigma)
+      = I_ell tensor A_s - (S+S*) tensor C_s.
+
+For phases satisfying `exp(i ell theta)=sigma`, put
+
+    E_s(theta) = exp[-beta(A_s-2 cos(theta) C_s)],
+    K_(r,sigma) = (1/ell) sum_theta cos(theta) E_s(theta).  (SM5)
+
+Every E_s(theta) is Hermitian; theta and -theta have the same E_s. Hence K_(r,sigma) is Hermitian. No commutation of B_s with r_s is required.
+
+Fourier diagonalization of the finite cycle gives:
+
+* the heat block across an ordinary forward edge is K_(r,sigma);
+* the block across the closing edge is sigma K_(r,sigma).
+
+These identities also hold for ell=1 and ell=2 with their actual edge multiplicities. In particular for ell=1 the diagonal heat block is `sigma K_(r,sigma)`, as it should be.
+
+Let E be the complete base heat matrix `exp(-beta Delta_0)` in the fixed gauge. The real first derivative of (SM1) is
+
+    D H = (4/Z_01) Re Tr [R_s E R_s delta T_full].    (SM6)
+
+Only cyclicity of the finite trace and the exact sandwich normalization are used here.
+
+#### 4. Every square internal edge, including scene-mixing and cross-age tangents
+
+For an actual square unitary edge j, write `delta F_j=X_j F_j`, with arbitrary complex `X_j*=-X_j` on scene times H_j. In the FIXED gauge of (SM2), its base edge is the identity, and its tangent is the single block
+
+    (delta T_full)_(j+1,j) = Xbar_j,
+    Xbar_j = (I tensor V_(j+1)*) X_j (I tensor V_(j+1)).
+
+Thus Xbar_j is an arbitrary skew-Hermitian matrix; no INTERNAL restriction is imposed on it.
+
+The coefficient multiplying Xbar_j in (SM6) is the adjacent block
+
+    M_j = (R_s E R_s)_(j,j+1)
+        = direct_sum_(r<=j,sigma)
+              [r_s K_(r,sigma) r_s] tensor I_(r,sigma). (SM7)
+
+This is Hermitian. Every cross-age or cross-sign block of Xbar_j has zero trace against (SM7), and every diagonal block has purely imaginary trace against it. Therefore the real trace in (SM6) is zero for every independently varied square temporal edge.
+
+This proves the claimed scene-mixing extension directly. It does not infer it from an unweighted characteristic polynomial.
+
+#### 5. The final gate closes all age cycles simultaneously
+
+Write `delta g=Y g`, with arbitrary skew-Hermitian Y on scene times H_f. Since the gauge is fixed and V*R_cl=R_cl,
+
+    delta T_full = R_cl Y W E_f.
+
+Cyclicity of the rectangular finite trace gives its coefficient in (SM6) as
+
+    M_close = W E_f R_s E R_s R_cl.                  (SM8)
+
+The r-th block of R_cl selects precisely the r-th birth detail at its birth stage. Therefore E_f R_s E R_s R_cl is block diagonal in the final age/sign decomposition. Its (r,sigma) block is
+
+    sigma r_s K_(r,sigma) r_s.
+
+The additional W in (SM8) contributes sigma once more. Thus
+
+    M_close = direct_sum_(r,sigma)
+                    [r_s K_(r,sigma) r_s] tensor I_(r,sigma),
+
+which is Hermitian. This includes all cross-age and scene-mixing components of Y. Its real trace against Y vanishes. The closing gate therefore has zero first heat source as well.
+
+#### 6. Result and precise scope
+
+At an INTERNAL base obeying ST4, the complete growing-clock heat has
+
+    D H = 0
+
+on every independent complex square temporal-unitary tangent on scene times the actual stage fibre, including the final closing gate. The base placement is INTERNAL; the temporal tangent space need not be. Both Hodge degrees, all birth details, all work columns and the fixed scene normalization are retained.
+
+If the actual same base also has the projection-valued escape of ST8, its full feedback first source vanishes for every simultaneous unitary and fixed-rank-cut tangent by the already owned positive-contraction argument. Combining the two proves the growing-clock analogue of §7bw (607) on this larger temporal domain.
+
+This removes the need to restrict temporal variations to INTERNAL ones. It does not vary the canonical birth isometries or their closure, the spatial incidence or scalar conductances, B_s or r_s, beta, zeta, rank, duration, independent scene preparation, or further R/Info/work terms. Nor does it supply a free active input from a born blank, exact inverse synthesis in the positive-fullStep semigroup, terminal-writer layer compatibility, a new decoder, or equality of the germ and current Born scalar source.
+
+The proof is by finite matrix identities. The bounded arithmetic check in part F additionally exercises all complex closing-gate generators of a small two-age example; no unchanged large suite is replayed.
+
+### D. A full-price signed germ from one actual Born input
+
+The original heat supplies the negative directions. The construction keeps the same actual H+J price and replaces the free initial C-channel requirement of §7az.
+
+#### BG1. A literal native centre with rank-one input
+
+Start from a one-dimensional input, P0=1. Execute m actual pure canonical
+births, with born vector v=(sqrt(p),p), retaining every complement.
+The final temporal fibre has dimension d=2^m and the actual input vector is
+
+    ψ=v tensor ... tensor v,    rank P0=1.
+
+All work used below is born; no new input multiplicity is assigned.
+
+After the births, execute an actual finite marked geometry/material word W_h,
+its exact all-column native inverse, and one actual CX;CX pair on two born
+work bits. The pair contains TWO paid primitive operations. It is not an
+identity tick. Let l_h and l_h^inv be the ACTUAL EXPANDED primitive lengths
+of W_h and its admitted inverse word, including all helpers, routing and
+SourceI decompositions. Inverse-word expansion need not preserve length. Then
+
+    L=l_h+l_h^inv+2,       N=m+L,
+    D_clock=(2^m−1)+L 2^m.                             (BG1)
+
+The final CX is the actual closing unitary g of G5. Every birth remains a
+separate paid stage. Extra born padding bits are retained in the dimensions.
+If a different admitted exact identity word is used, replace L by its actual
+total length; none of the following bounds assumes a free stage.
+
+At the centre the complete canonical suffix return is identity on every
+birth layer. Therefore full H and full J have zero first variation under
+all independent actual unitary-edge and fixed-rank-cut tangents, including
+independent preparation and inverse perturbations. J0=0; no counterterm is
+introduced. The actual H0 is retained below.
+
+Native scope: CX is the owned registration primitive. The marked excursion
+uses the same exact-inverse admission as §7az. Positive-fullStep density alone
+does not supply such an inverse or an exact nonempty identity word. The
+stationary centre exists without an excursion; adding decoded geometry uses
+the owned exact-inverse excursion interface.
+
+#### BG2. The exact full heat and its positive Fourier coefficients
+
+Fix β>0 and 0<ζ<1 throughout this construction.
+Keep the original scene K(9,11,13), its 33 vertices, B_s and
+C_s=diag(1/26,1/24,1/22) on the corresponding equitable blocks. Define
+
+    h(θ)=Tr_33 exp[-β(I−B_s−2cosθ C_s)]
+        = a0 + 2 Σ_{r≥1} a_r cos(rθ).                  (BG2)
+
+All a_r are strictly positive. Indeed, expand
+e^(-β) exp[β(B_s+C_s z+C_s z^(-1))]. The scene adjacency B_s is
+entrywise nonnegative and C_s is positive diagonal, so every coefficient
+has nonnegative trace; the word containing r copies of C_s gives
+
+    a_r ≥ e^(-β) β^r Tr(C_s^r)/r! >0.
+
+No commutation of B_s and C_s is used.
+
+For the two-sided Laurent series evaluated at z=2,
+
+    a_r ≤ A2 2^(-r),
+    A2 = Tr exp[-β(I−B_s−(5/2)C_s)]
+       ≤ 33 exp(5β/44).                               (BG3)
+
+Here ||B_s||≤1 and ||C_s||=1/22. This is a computable uniform bound;
+the sharper owned factorial bound may replace it.
+
+The actual birth layers are Π_0 of rank 1 and Π_j of rank 2^(j−1),
+1≤j≤m. Their ages are
+
+    b_j=N−j,   b_0=N,   b_m=L.
+
+At the identity return, the actual clock is the direct sum of age cycles.
+Consequently
+
+    Z0 = 359 D_clock
+         +2 Σ_{j=0}^m rank(Π_j)
+              Σ_{k=0}^{b_j−1} h(2πk/b_j),
+    H0=β^(-1) log Z0,       B0=H0.                    (BG4)
+
+This is the complete 425 D_clock-mode price, with both Hodge degrees and
+every harmonic mode. The lower bound Z0≥359 D_clock will suffice.
+
+#### BG3. Exact heat Hessian for every real skew endpoint direction
+
+Choose the canonical real orthonormal Born basis, adapted to the Π_j, with
+e0=ψ. Its entries are products of sqrt(p), p and their signed complements;
+no arbitrary spectral eigenbasis or exact π/4 gate is assumed.
+
+Let X be a real skew matrix on the final fibre and compare the smooth
+endpoint W(t)=exp(tX). This is a MATRIX source chart, not a declaration that
+every value is one finite Golden word. The actual clock layout stays fixed.
+
+For one elementary rotation between basis vectors of ages a,b, the affected
+factor of the exact suffix determinant is
+
+    det(I−D(ξ)W(t))
+      = 1−cos(t)(ξ^a+ξ^b)+ξ^(a+b).                    (BG5)
+
+Put
+
+    q_r(a,b)=[ξ^r] (ξ^a+ξ^b)/[(1−ξ^a)(1−ξ^b)] ≥0,
+    ν_ab = (4/(β Z0)) Σ_{r≥1} r a_r q_r(a,b) >0.       (BG6)
+
+The log-determinant/moment identity gives
+
+    d²/dt² Re Tr T(t)^r |0 = −r q_r(a,b).
+
+Combining this with BG2 and the two-degree factor in G14 gives exactly
+
+    H''(0)=−ν_ab.                                     (BG7)
+
+More generally there are NO mixed quadratic terms between distinct real
+matrix-unit rotations:
+
+    D²H_0[X,X]
+      = −Σ_{i<j} ν_(b_i,b_j) X_ij².                   (BG8)
+
+Here b_i is the age of the layer containing e_i. To check the normalization,
+for a=b, q_(ra)(a,a)=2r and
+ν_aa=8a/(βZ0) Σ_{r≥1} r² a_(ra).
+
+A direct derivation of BG8 uses R_i=ξ^(b_i)/(1−ξ^(b_i)):
+
+    δ² log det(I−D exp(tX))|0
+      = −Tr(R X²)−Tr(R X R X)
+      = Σ_{i<j} (D_i+D_j)/[(1−D_i)(1−D_j)] X_ij².
+
+The strict negative directions are supplied by the ORIGINAL full heat,
+not an inserted signed price.
+
+#### BG4. Feedback Hessian and a paid uniform positive margin
+
+The actual rank-one cold return is c(t)=<ψ,exp(tX)ψ>. Thus
+
+    J(t)=−log[1−ζ+ζ |c(t)|²],
+    D²J_0[X,X]=2ζ Σ_{j>0} X_0j².                     (BG9)
+
+Every direction supported entirely in ψ-perp is invisible to this J
+quadratic form. The full source nevertheless vanishes at the centre
+because its escape F0=0 is an endpoint projection.
+
+The elementary coefficient bound
+
+    q_r(a,b) ≤ 2(r+1)
+
+and Σ_{r≥1}r(r+1)2^(-r)=8 give
+
+    0<ν_ab ≤ 64 A2/(β Z0)
+             ≤ 64 A2/(359 β D_clock).                 (BG10)
+
+It therefore suffices to choose the actual born dimension large enough that
+
+    d≥2n+1,       d > 64 A2/(359 β ζ),                 (BG11)
+
+as well as enough qubits for the actual marked encoder. Since D_clock≥d,
+this ensures ν_ab<ζ for EVERY age pair, independently of the encoder length.
+There is no need to append arbitrarily long identity padding to win the
+sign estimate. Every extra dimension in BG11 is a paid pure birth.
+
+Pick n positive directions
+
+    X_i^+ = |e_i><ψ| − |ψ><e_i|,       1≤i≤n,
+
+and n negative directions
+
+    X_i^- = |e_(2i)><e_(2i−1)|
+             −|e_(2i−1)><e_(2i)|,    1≤i≤n.
+
+They are independent matrix-unit rotations; sharing some basis vectors does
+not create mixed terms in BG8–BG9. On these 2n parameters the exact full
+Book Hessian is diagonal:
+
+    positive entries: 2ζ−ν_(b0,b_i) > ζ,
+    negative entries: −ν_(b_(2i−1),b_(2i)) < 0.        (BG12)
+
+Thus its signature is exactly (n,n), on one and the SAME rank-one Born
+input. The negative eigenvalues can be very small, but are strictly nonzero
+at every fixed finite actual clock.
+
+#### BG5. Constructive exact signed normal form and arbitrary action germ
+
+Let z=(u,v) in R^n × R^n and
+W(z)=exp(Σ_i u_i X_i^+ + Σ_i v_i X_i^-).
+Let F(z)=B(W(z),P0)−B0 use the actual full growing-clock H+J.
+
+F(0)=0 and DF(0)=0. Define its exact integral Hessian
+
+    K(z)=∫_0^1 (1−t) D²F(tz) dt,
+    F(z)=z^T K(z) z,
+    K(z)=[ A(z)  E(z); E(z)^T  C(z) ].
+
+By BG12, A>0 and
+S=C−E^T A^(-1)E<0 near zero. The smooth map
+
+    a_B=A^(1/2)[u+A^(-1)E v],
+    b_B=(−S)^(1/2)v                                 (BG13)
+
+satisfies EXACTLY F(z)=|a_B|²−|b_B|². Its derivative at zero is invertible.
+The finite-dimensional inverse-function theorem therefore gives one local
+smooth inverse z=Θ(a_B,b_B). This constructs the normal form without requiring
+a nondegenerate Hessian, isolated root or gauge fixing of the TARGET action.
+
+Now let f(y) be any supplied smooth n-coordinate action with Df(0)=0,
+including the owned gauge-degenerate Palatini–CAR action. Reuse §7az:
+
+    K_f(y)=∫_0^1 (1−t) D²f(ty)dt,
+    c_f > sup ||K_f||,
+    a(y)=(K_f(y)+c_f I)^(1/2)y,
+    b(y)=sqrt(c_f)y.
+
+Then
+
+    z(y)=Θ(a(y),b(y)),      W_f(y)=W(z(y)),
+    B(W_f(y),P0)−B0=f(y)−f(0),
+    D_yB=D_yf,
+    W_f(0)=I,
+    full D_(all unitary edges, fixed-rank cuts)B|0=0.  (BG14)
+
+This is an exact finite full-action germ with genuine Born rank one.
+It does not consume free initial channel sectors. The true absolute
+anchor BG4, scene, full carrier and clock are unchanged.
+
+#### BG6. Application and exact remaining interface
+
+For each primary exact mesh representative Y_h*, use
+f_h(y)=I_h(Y_h*+y), in the original full independent coframe, proper-link
+and CAR chart and boundary convention. Its owned all-field equations give
+Df_h(0)=0. BG14 is the full covector identity on that comparison chart;
+it imposes no Morse condition on the geometric action.
+
+The literal native centre consists of the actual births, W_h, its exact
+native inverse and CX;CX. Its full H+J source vanishes exactly even when
+the marked native geometric codec is imperfect. Keep the original decoder:
+if its actual output is Yhat_h with error e_geo,h, the owned estimate is
+
+    ||D I_h(Yhat_h)||_(V_h*) ≤ L_h e_geo,h.
+
+There is no silent recentering of the physical readout. In particular BG14
+cannot be claimed as an exact decoded-field identity at Yhat_h unless that
+decoded field is itself a root. The increasingly accurate nonvacuum readout
+limit has exactly the same qualification as (441).
+
+What this genuinely substitutes:
+- The free initial C≥2n allocation of the old signed germ is unnecessary.
+- A single rank-one cut plus genuine born work supplies arbitrarily many
+  positive AND negative full Book directions.
+- The same actual growing clock has an exact native stationary centre.
+
+What it does not yet substitute:
+- This is a new full-Book matrix control chart, not the already implemented
+  fixed-reporter sampling chart of §7eh–§7ei. A native writer realizing this
+  chart with the same ORIGINAL field decoder still needs its explicit map.
+- Its negative coefficients ν_ab depend on the ACTUAL clock and dimensions.
+  A compiler that changes that clock changes the calibration BG13. Finite
+  positive-word density alone does not prove a self-consistent compiled
+  source identity. Compiler-first/common-clock calibration or another actual
+  bounded continuous-control realization must be supplied; no hidden fixed
+  clock is assumed after extra compilation stages are added.
+- The local inverse can have large condition number as ν_ab becomes small.
+  No uniform refinement radius, inverse norm or efficient compilation bound
+  follows merely from its finite existence.
+- The exact centre uses the owned G_CX_SOURCE_I inverse sector. The narrower
+  positive-fullStep-only exact-identity/inverse issue remains.
+- β, scene and any separately selected R/Info terms retain their own sources.
+  No compulsory selection of this action germ or universal D0 physics is claimed.
+
+Thus BG14 is a positive finite mathematical construction removing the
+rank-one/free-channel obstruction. The remaining native application is
+precisely the field-decoder-preserving, compiler-clock-consistent source
+writer; it is not a new theorem that a chosen germ is automatically physical.
+
+#### BG7. One fixed-input history tower, with oldRIGHT-safe current charts
+
+Start with P0=1 ONCE. At each extension append actual canonical births only
+BETWEEN already complete identity excursions, followed by the new actual
+W_h W_h^(-1) CX;CX block. Every completed old unitary block has endpoint I
+on its actual full carrier. Its canonical completion on later-born detail
+columns is still I. Thus W_can=I at every finite centre, the old marked
+prefixes remain in the enlarged actual clock, and the initial input rank
+stays one. No old prefix is retrospectively changed or dropped.
+
+For arbitrary actual birth indices j_r, use ages b_r=N−j_r and
+D_clock=Σ_j dim H_j. The closed formula BG1 applies only to the special
+front-loaded schedule. BG5–BG10 do not depend on front loading or equal
+ages: the current final gate variation multiplies every centre suffix by
+the same endpoint W, and the same exact determinant calculation applies.
+
+At each h, choosing sufficiently large born work gives d_h≥2n_h+1 and
+BG11, hence a full n_h-field signed matrix germ at that finite centre
+WITHOUT enlarging the original input cut. This removes the old incompatibility
+between fixed initial rank and a growing number of free action coordinates.
+
+There is a stronger version preserving the whole previous carrier on every
+column of the current control chart. Write the final carrier as
+H_old tensor H_fresh, with d_old=dim H_old, and birth a fresh block of
+dimension d_f≥2n_h+1 satisfying the dimension threshold in BG11. Use only
+generators I_old tensor X_fresh. For a positive generator ψ_fresh↔e_i,
+the heat curvature is a sum over an adapted old basis:
+
+    ν_i^+ = Σ_{a=1}^{d_old} ν_(b_(a,ψ_fresh),b_(a,e_i)).
+
+For a negative pair e_(2i−1)↔e_(2i) in ψ_fresh-perp, the analogous sum is
+strictly positive. The heat Hessian remains diagonal between the selected
+generators, and every such sum satisfies
+
+    0<ν_i^± ≤ d_old·64A2/(359βD_clock)
+              ≤64A2/(359βd_f).                       (BG15)
+
+The rank-one feedback still gives exactly 2ζ on each positive generator
+and zero on the negative ones. Therefore the same (n_h,n_h) signature and
+BG13–BG14 follow with d_f, while every current operation in the matrix
+chart is identity on the ENTIRE old carrier. The current marked encoder
+can likewise use its actual fresh work, preserving oldRIGHT as required.
+
+This proves existence of exact stationary centres and full signed MATRIX
+charts along one fixed-input retained history. It does not prove that the
+charts at different h intertwine, that their norms or inverse radii have
+uniform refinement bounds, or that the actual compiler realizes those
+charts with their original field decoder and the same priced clock.
+Those source/refinement maps remain explicit applications.
+
+
+
+### E. What is now composed, and the exact remaining finite application
+
+
+Publication integration also consumes 688667433da4f6e38544428553ee6d466d8d16d3
+and 577188a5dcee511ff0f205d14fc4aa3aad661777. Their §7ej supplies a stronger
+full joint marked-instrument lift with four physically paid CODE occurrences;
+its new norm, actual stages and independent rows must accompany any use here.
+It is not silently reduced to a two-leg or mean-readout statement. Their §7ek
+proves exact thermal/return separation on algebraic native smooth jets and
+the actual flat-table/eigenvector conditions. The centres in parts B–D meet
+separate heat and return stationarity; they do not use thermal cancellation
+of a nonzero finite return row. BG14's continuously calibrated matrix chart
+is still not a compiled equality of the original sampler's branch returns.
+Thus both incoming results sharpen the consumer AC4 without invalidating the
+existing κ source interpretation or adding a new admission filter.
+
+Part A supplies the family-level internal process witness of the existing
+κ source-law construction. Parts B–C remove the equal-fibre clock premise
+from the old exact-centre argument, including its full temporal variation
+domain. Part D additionally removes the free initial channel allocation and
+its fixed-input/refining-field-count mismatch: paid fresh memory suffices,
+and the entire previous carrier can be preserved on all columns.
+
+The part-D matrix germ uses a NEW endpoint-source chart. Its base cold return
+is 1, whereas the actual fixed-reporter writer in §7eh–§7ei has its regular
+scalar return 0<c<1. The shared Born preparation is now available, but that
+fact does not identify these two return/source maps. The full target-action
+identity BG14 alone does not provide the original field decoder off shell.
+The fact that BG14 can realize any critical smooth action is precisely why
+it must not by itself be advertised as Einstein-source selection.
+
+The remaining application is ONE decoder-preserving, compiler-consistent
+native writer, with the whole actual Ω_h and its existing norm, for which
+
+    Γ_h^(-1) D B_h
+        = (D π_h)* D I_h(π_h) + R_h,
+    ||R_h||_(full,*) → 0,                             (AC4)
+
+and whose proposed finite centre has the complete asserted native source
+exactly zero. The same actual history must provide π_h, its right lift,
+all old/current and kernel rows, the current independent matter, the field
+readout limit and the true clock/calibration. The price and source must be
+computed AFTER fixing that clock, including any implementation of the new
+control chart. A separately chosen germ, separately decoded metric label,
+or compilation density without this price comparison is not AC4.
+
+Part A already gives AC3 on the actual existing writer; part D gives an
+exact centre and BG14 on its matrix chart. They are usable inputs to AC4,
+not permission to equate the charts. For a fixed mesh the exact-centre
+marked codec retains its honest bound L_h e_geo,h; its finite decoded field
+is not silently recentered to the exact primary solution. Across a tower,
+BG15 does not assert a uniform inverse radius or compatible source chart.
+Those quantitative maps remain to be supplied.
+
+The geometric consumer here is the actual retained-prefix decoder used in
+§7eh and the old (441). This does not transport the stronger terminal
+same-Dirac metric of §7bu (592)–(598): an endpoint uncomputed to identity
+commutes with that old fixed BANK algebra. A nontrivial terminal writer
+mixing birth layers also requires a fresh check of ST4. No negative metric
+conclusion is inferred about the independently retained marked observations.
+
+Canonical birth amplitudes/layout, the scene's spatial incidence and
+normalization, β and ζ, and any separately selectable R/Info/work additions
+have exactly their stated source boundaries. In particular the old
+registration centre still has ∂_ζJ=Cq/(1−ζ); the Born centre has J0=0 but
+this does not remove heat-β or other external-to-domain rows. Exact inverse
+excursions use the owned SourceI/registration sector, not a density-based
+upgrade of the strictly positive-fullStep semigroup.
+
+The current publication therefore neither promotes unchanged positive_gr
+nor erases its exact finite joint_nonlinear_solve obligation. It records a
+positive same-witness κ process application and exact finite tools for the
+remaining application, under the existing #334 owner. All-native coverage,
+compulsory next-action selection and independent scientific acceptance are
+separate statements.
+
+### F. Smallest decisive arithmetic and provenance
+
+Incoming proof head: 6e7dec9ed6c28176f54fa5c6e2834ddb548d6124.
+The owner inputs are GROWING G1–G14, RAW R6, primary §7az (436)–(441),
+§7bw (605)–(607), §7eh and §7ei, the original 33-scene Fourier kernel
+(1014)–(1015), and the explicit book/foundation interfaces in part A.
+Bounded read-only reviews checked the action quantifier, exact stage maps,
+the full temporal domain and the rank/input boundary. They are not an
+assembly acceptance registration.
+
+The checks below use exact symbolic/rational arithmetic and explicit failure
+guards that remain active under Python -O. Normal and optimized runs have
+identical receipts. They are narrow checks of the NEW algebra; unchanged
+large scientific suites are not replayed. Rational toy born vectors test
+the isometry identities, not a replacement of the actual Golden vector.
+
+The suffix check includes the generic unequal-age determinant, a failing
+non-layer-preserving reflection, and an interleaved old-gate/birth/inverse
+whose ordinary padded endpoint is I but whose true Tr(T²)=12/5 rather than 4.
+Its 12-dimensional toy includes an explicit final identity as a counted
+matrix stage; it is not an asserted free native identity primitive. It also
+checks all 16 complex closing-gate generators against the first six heat
+power traces in a true two-age, noncommuting-scene sandwich example.
+
+The Born check verifies the generic skew Hessian, its feedback rank, the
+Fourier tail bound, and the genuine 11-dimensional two-birth/two-CX centre.
+The illustrative inequality at β=4/5 and D=47 is a numerical threshold,
+not an asserted five-step identity program. Three true births and three
+actual CX;CX pairs give D=55≥47, so they satisfy that bound with every
+stage paid. The theorem uses the actual D of each word.
+
+
+#### raw_suffix_spectral_check.py
+
+LF-normalized checker SHA-256: 9e1038447d92318cda62f2ac14a8071e244714bfc3620372698e05e2f7eaf30a.
+LF-normalized receipt SHA-256: 4ee4415606718865b764283a3b6001526fe5c974ad844dff895a8a943f2ad5dd.
+
+```python
+"""Small exact checks of ST1 and the birth-layer interface; not native admission."""
+import hashlib, json
+from pathlib import Path
+import sympy as s
+
+def require(value, name):
+    if not value:
+        raise RuntimeError(name)
+
+x,t=s.symbols('x t', real=True)
+a,b,c,d=s.symbols('a b c d')
+G=s.Matrix([[a,b],[c,d]])
+T=s.Matrix([[0,a,b],[1,0,0],[0,c,d]])
+delay=s.diag(x*x,x)
+require(s.expand((s.eye(3)-x*T).det()-(s.eye(2)-delay*G).det())==0, "spectral_check_1")
+X=s.Matrix([[0,-1],[1,0]])
+Q=s.diag(1,-1)
+adapted=s.diff((s.eye(2)-delay*(Q+t*Q*X)).det(),t).subs(t,0)
+require(s.expand(adapted)==0, "spectral_check_2")
+swap=s.Matrix([[0,1],[1,0]])
+nonadapted=s.diff((s.eye(2)-delay*(swap+t*swap*X)).det(),t).subs(t,0)
+require(s.expand(nonadapted-(x-x*x))==0, "spectral_check_3")
+
+# An old gate, then a true birth, then its ordinary old-register inverse.
+# The ordinary padded endpoint is identity, but future-born detail sees
+# only the inverse. Use a rational born vector so this is not basis-zero sleight.
+R=s.Matrix([[s.Rational(3,5),-s.Rational(4,5)],
+            [s.Rational(4,5),s.Rational(3,5)]])
+v=s.Matrix([s.Rational(3,5),s.Rational(4,5)])
+J=s.kronecker_product(s.eye(2),v)
+P=J*J.T
+Qb=s.eye(4)-P
+H=s.kronecker_product(R.T,s.eye(2))
+S=s.zeros(12)
+S[2:4,0:2]=R
+S[4:8,2:4]=J
+S[8:12,4:8]=H
+closure=s.zeros(12,4)
+closure[0:2,:]=J.T
+closure[4:8,:]=Qb
+Ef=s.zeros(4,12)
+Ef[:,8:12]=s.eye(4)
+Tfull=S+closure*Ef
+require(Tfull.T*Tfull==s.eye(12), "spectral_check_4")
+Wcan=H*(J*R*J.T+Qb)
+require(Wcan*J==J, "spectral_check_5")
+require((Tfull*Tfull).trace()==s.Rational(12,5), "spectral_check_6")
+require(s.expand((s.eye(4)-Wcan*(x**4*P+x**2*Qb)).det()
+                -(1-x**4)**2*(1-s.Rational(6,5)*x*x+x**4))==0, "spectral_check_7")
+sample=s.Rational(2,7)
+require((s.eye(12)-sample*Tfull).det()==(
+    s.eye(4)-Wcan*(sample**4*P+sample**2*Qb)).det(), "spectral_check_8")
+
+
+# Full scene-mixing control on a true two-age clock. This tests the
+# sandwich normalization, not the invalid extension C_s (T+T*).
+jv=s.Matrix([s.Rational(3,5),s.Rational(4,5)])
+detail=s.eye(2)-jv*jv.T
+qend=jv*jv.T-detail
+Rcl=jv.T.col_join(detail)
+Sage=s.zeros(3); Sage[1:3,0:1]=jv
+Ef=s.Matrix([[0,1,0],[0,0,1]])
+Tage=Sage+Rcl*qend*Ef
+require(Tage.T*Tage==s.eye(3), 'two_age_unitary')
+# Ordering: stage, scene, internal fibre.
+Rs=s.diag(s.Rational(2,5),s.Rational(3,7))
+Bs=s.Matrix([[0,s.Rational(1,3)],[s.Rational(1,3),s.Rational(1,5)]])
+Rbig=s.diag(Rs,s.kronecker_product(Rs,s.eye(2)))
+Bbig=s.diag(Bs,s.kronecker_product(Bs,s.eye(2)))
+Rscene=s.kronecker_product(s.eye(2),jv.T).col_join(s.kronecker_product(s.eye(2),detail))
+Escene=s.zeros(4,2).row_join(s.eye(4))
+Sscene=s.zeros(6); Sscene[2:6,0:2]=s.kronecker_product(s.eye(2),jv)
+Qscene=s.kronecker_product(s.eye(2),qend)
+Tscene=Sscene+Rscene*Qscene*Escene
+Delta=s.eye(6)-Bbig-Rbig*(Tscene+Tscene.T)*Rbig
+powers=[s.eye(6)]
+for k in range(1,6): powers.append(powers[-1]*Delta)
+generators=[]
+for a0 in range(4):
+    Y=s.zeros(4); Y[a0,a0]=s.I; generators.append(Y)
+    for b0 in range(a0+1,4):
+        Y=s.zeros(4); Y[a0,b0]=1; Y[b0,a0]=-1; generators.append(Y)
+        Y=s.zeros(4); Y[a0,b0]=s.I; Y[b0,a0]=s.I; generators.append(Y)
+for gi,Y in enumerate(generators):
+    dT=Rscene*Qscene*Y*Escene
+    dDelta=-Rbig*(dT+dT.conjugate().T)*Rbig
+    for ki,power in enumerate(powers):
+        require(s.simplify(s.trace(power*dDelta))==0,
+                'scene_mixing_generator_%d_power_%d' % (gi,ki+1))
+
+report={
+  'status':'PASS',
+  'scope':'exact 3x3 generic determinant, adapted/nonadapted tangent; one 12x12 interleaved-birth trace and determinant sample',
+  'nonadapted_first_polynomial':str(s.expand(nonadapted)),
+  'interleaved_trace_T_squared':str((Tfull*Tfull).trace()),
+  'scene_mixing_generators':len(generators),
+  'scene_mixing_heat_power_checks':len(generators)*len(powers),
+  'not_claimed':['native inverse admission','GR selection','positive-fullStep exact synthesis','full replay'],
+  'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+}
+out=Path(__file__).with_suffix('.json')
+out.write_text(json.dumps(report,indent=2),encoding='utf-8')
+print(json.dumps(report))
+```
+
+```json
+{
+  "status": "PASS",
+  "scope": "exact 3x3 generic determinant, adapted/nonadapted tangent; one 12x12 interleaved-birth trace and determinant sample",
+  "nonadapted_first_polynomial": "-x**2 + x",
+  "interleaved_trace_T_squared": "12/5",
+  "scene_mixing_generators": 16,
+  "scene_mixing_heat_power_checks": 96,
+  "not_claimed": [
+    "native inverse admission",
+    "GR selection",
+    "positive-fullStep exact synthesis",
+    "full replay"
+  ],
+  "checker_sha256": "9e1038447d92318cda62f2ac14a8071e244714bfc3620372698e05e2f7eaf30a"
+}
+```
+
+#### born_full_book_hessian_check.py
+
+LF-normalized checker SHA-256: 136829c28dd6ba1418c24246ec7f7ad3b4bc1fd4d491fb823983d3f3b92f44b2.
+LF-normalized receipt SHA-256: e9d28f7f8f9491440a095bef959d34ee08665c5acca1c9e5b0c87b8091ab7118.
+
+```python
+"""Exact bounded BG5--BG12 checks; no field-writer or native inverse claim."""
+import hashlib, json
+from pathlib import Path
+import sympy as s
+
+def need(condition, label):
+    if not condition:
+        raise RuntimeError(label)
+
+d0,d1,d2=s.symbols('d0 d1 d2')
+a,b,c=s.symbols('a b c',real=True)
+X=s.Matrix([[0,-a,-b],[a,0,-c],[b,c,0]])
+R=s.diag(*[d/(1-d) for d in (d0,d1,d2)])
+h2=-(R*X*X).trace()-(R*X*R*X).trace()
+target=(d0+d1)/((1-d0)*(1-d1))*a*a
+target+=(d0+d2)/((1-d0)*(1-d2))*b*b
+target+=(d1+d2)/((1-d1)*(1-d2))*c*c
+need(s.factor(h2-target)==0, 'full heat Hessian diagonal identity')
+need(-(X*X)[0,0]==a*a+b*b, 'rank-one positive feedback directions')
+r=s.symbols('r',integer=True,positive=True)
+need(s.summation(r*(r+1)/2**r,(r,1,s.oo))==8, 'Fourier tail normalization')
+# beta=4/5, D=47: exp(1/11)<11/10 makes the uniform heat bound <1/5.
+bound=64*33*s.Rational(11,10)/(359*s.Rational(4,5)*47)
+need(bound<s.Rational(1,5), 'paid-dimension heat bound')
+
+# Two true pure births followed by the two paid literal CX operations.
+# Rational born vector checks the structural identity without algebraic radicals.
+v=s.Matrix([s.Rational(3,5),s.Rational(4,5)])
+J0=v
+J1=s.kronecker_product(s.eye(2),v)
+J02=J1*J0
+CX=s.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+S=s.zeros(11)
+S[1:3,0:1]=J0
+S[3:7,1:3]=J1
+S[7:11,3:7]=CX
+closure=s.zeros(11,4)
+closure[0:1,:]=J02.T
+closure[1:3,:]=(s.eye(2)-J0*J0.T)*J1.T
+closure[3:7,:]=s.eye(4)-J1*J1.T
+Ef=s.zeros(4,11)
+Ef[:,7:11]=s.eye(4)
+T=S+closure*CX*Ef
+need(T.T*T==s.eye(11), 'complete growing-clock unitarity')
+moments=[s.trace(T**k) for k in range(1,5)]
+need(moments==[0,4,3,8], 'birth-age exact moments')
+z=s.Rational(2,7)
+need((s.eye(11)-z*T).det()==(1-z**4)*(1-z**3)*(1-z**2)**2, 'true-clock determinant')
+need((J02.T*CX*CX*J02)[0,0]==1, 'rank-one central cold return')
+
+report={
+ 'status':'PASS',
+ 'scope':'symbolic 3x3 skew Hessian; positive feedback rank; Fourier tail sum; one 11x11 two-birth/two-CX centre',
+ 'uniform_heat_bound_beta_4_over_5_D_47':str(bound),
+ 'centre_moments_1_to_4':[int(v) for v in moments],
+ 'not_claimed':['exact finite writer for every germ value','native compiler-clock closure','GR selection'],
+ 'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+}
+Path(__file__).with_suffix('.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+print(json.dumps(report))
+```
+
+```json
+{
+  "status": "PASS",
+  "scope": "symbolic 3x3 skew Hessian; positive feedback rank; Fourier tail sum; one 11x11 two-birth/two-CX centre",
+  "uniform_heat_bound_beta_4_over_5_D_47": "2904/16873",
+  "centre_moments_1_to_4": [
+    0,
+    4,
+    3,
+    8
+  ],
+  "not_claimed": [
+    "exact finite writer for every germ value",
+    "native compiler-clock closure",
+    "GR selection"
+  ],
+  "checker_sha256": "136829c28dd6ba1418c24246ec7f7ad3b4bc1fd4d491fb823983d3f3b92f44b2"
+}
+```

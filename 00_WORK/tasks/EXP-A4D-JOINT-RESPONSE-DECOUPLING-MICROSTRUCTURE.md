@@ -19868,3 +19868,87 @@ value is inserted as an admission filter. Finite-word contrast zeros are
 distinct from the smooth algebraic-jet equation tested here. No exact
 refining GR solution family or independent acceptance is claimed;
 unchanged positive_gr and GR_closed=false remain. Goal active.
+
+## 3 November 2026 — recorded action interface, exact birth clocks and a Born-input full-price germ (§7el)
+
+Phase: native realization and final composition under this existing #334
+owner. Incoming head: 6e7dec9ed6c28176f54fa5c6e2834ddb548d6124.
+Publication integration preserves incoming 688667433da4f6e38544428553ee6d466d8d16d3
+and 577188a5dcee511ff0f205d14fc4aa3aad661777. Their §7ej full marked jet and
+§7ek exact heat/return separation are consumed explicitly in §7el.E.
+Write paths remain this brief and the existing primary artifact. No new
+execution, task status, claim promotion or assembly acceptance is created.
+
+Exact parent substitutions and actual consumers:
+
+- For family-level native_sector/G0, §7el.A supplies the explicit retained
+  transition/test diagram required by Books0–1 and TheoryTransfer. The state
+  stores the expanded primitive history; a fullStep records both G and CX,
+  including the intermediate carrier. Legality and error totalization are
+  explicit. All D_test U_word responses, actual births and full RAW price
+  are retained. The geometric resource/decoder is §7eh; the ACTUAL positive
+  word, non-selfadjoint body and independent preparation/control graph are
+  §7ei. Their complete covector estimate is therefore the same AC3, and
+  KAPPA K10–K12 are consumed on those SAME histories. This is constructive
+  existence in the declared family, not mandatory action by every D0 world.
+  The inspected original interfaces do not impose that stronger quantifier.
+- For the old exact-centre application §7az (436)–(441), §7el.B–C replaces
+  homogeneous/padded time by the genuine GROWING clock. Its determinant uses
+  every passive birth layer and actual suffix. A fixed base gauge decomposes
+  the complete heat into age cycles. The sandwich normalization proves zero
+  first heat source for all independent complex temporal unitary variations,
+  including scene and cross-age mixing. Projection escape supplies full J
+  stationarity on the same clock and fixed-rank-cut domain.
+- For the old free-input C≥2n premise, §7el.D gives a NEW full H+J signed germ
+  with rank-one Born input. Original J gives positive curvature; the original
+  full heat gives strictly negative curvature. Paid born dimension bounds the
+  heat contribution and supplies n directions of each sign. A constructive
+  local coordinate map realizes the supplied critical Palatini–CAR germ
+  without a target nondegeneracy assumption or a negative counterterm.
+  BG7/BG15 extend centre and chart existence along one fixed-input retained
+  history, with current operations I_old⊗X_fresh preserving all old columns.
+
+Carrier/source/norm: the true unequal stage fibres and canonical full closure;
+425 D_clock modes and both Hodge degrees; original H+J counting feedback;
+fixed β, ζ, birth amplitudes/layout and spatial normalization. Part A retains
+exactly §7eh–§7ei's original physical field norm, right lifts, old/current rows,
+actual gain and error order. The matrix germ in part D is not silently assigned
+that norm or identified with the fixed-reporter writer. The original raw216
+terminal and its h^(-2) raw-l1 convention are unchanged.
+
+Inputs: Books00–01 at the explicit AC references; FutureExecution,
+ProspectiveExecution and TheoryTransfer; RAW R6 and GROWING G1–G14; primary
+§7az, §7bw, §7eh, §7ei and the original 33-scene heat kernel (1014)–(1015).
+The assembly template was read at this checkpoint; no proposed application
+has been inserted into the acceptance registry.
+
+Remaining application: §7el.E/AC4 requires ONE native writer preserving the
+actual field decoder and the whole source norm, with calibration consistent
+with its ACTUAL compiled clock. The matrix germ's cold return 1 is not the
+regular scalar corner 0<c<1 of the existing fixed reporter. Its local inverse
+can become ill-conditioned as clocks grow. Exact inverse excursions use the
+owned SourceI sector; positive-fullStep density is not an exact inverse-word
+proof. The marked geometric codec retains its honest L_h e_geo,h residual;
+its finite output is not silently an exact Palatini root. Separately selectable
+scene/β/ζ/R/Info/work sources retain their stated boundaries. Unchanged
+positive_gr and exact finite joint_nonlinear_solve are not promoted.
+
+Smallest decisive check: the generic birth-suffix determinant and hostile
+nonadapted reflection, an interleaved-birth completion witness, all 16 complex
+closing-gate generators against six heat-power traces, the full skew Hessian,
+feedback rank and Fourier bound, and a genuine two-birth/two-CX centre.
+Both exact checkers and receipts are embedded in §7el.F; their explicit guards
+remain active under Python -O. Normal and optimized receipts agree.
+
+LF-normalized checker / receipt SHA-256 pairs:
+- raw_suffix_spectral_check.py:
+  9e1038447d92318cda62f2ac14a8071e244714bfc3620372698e05e2f7eaf30a /
+  4ee4415606718865b764283a3b6001526fe5c974ad844dff895a8a943f2ad5dd.
+- born_full_book_hessian_check.py:
+  136829c28dd6ba1418c24246ec7f7ad3b4bc1fd4d491fb823983d3f3b92f44b2 /
+  e9d28f7f8f9491440a095bef959d34ee08665c5acca1c9e5b0c87b8091ab7118.
+
+Bounded independent read-only reviews checked the action interface and exact
+stage realization, temporal scene-mixing transport and input/source scope.
+They are not independent registry acceptance. The remaining common-source
+application is explicit; no further micro-curvature census is requested.
