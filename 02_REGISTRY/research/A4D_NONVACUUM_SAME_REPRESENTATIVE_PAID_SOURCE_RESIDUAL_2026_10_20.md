@@ -112284,6 +112284,1116 @@ print(json.dumps(out,ensure_ascii=False,indent=2,sort_keys=True)+'\n',end='')
 ```
 <!-- END 7dz FULL CLOCK PRICE RECEIPT -->
 
+## 7ec. A literal native cross-reference comparator: real controls, task comparisons and the full price of one word
+
+3 November 2026. Same #334 / constitutive/native-programme-v1; native
+realization and final composition. Scientific input 265ca0c97fd9e3ecebe792eab5178dab5186be22;
+integration 1ee2f2a0ef5658e11097450576b48e2e86a6da73 preserves incoming 7ea--7eb.
+The preceding 7dz rules out one specified spatial H+J+R identification.
+It does not refute the separate constructive raw-history source route.
+Return to that route and consume its actual missing comparator operation.
+The incoming coherent-history normal 7ea and positive conditional static-v8
+source 7eb remain at their own scope. This construction does not use history
+closeness to erase a source, nor identify the raw comparison clock with v8.
+
+The [internal-reference owner](A4D_INTERNAL_REFERENCE_CROSS_CALIBRATION_SOURCE_2026_10_31.md)
+gives a seven-call, eight-branch positive event and its complete GR-source
+estimate, but explicitly has no emitted native word for the new predicate.
+Here the predicate is implemented EXACTLY by original G/CX/SourceI words,
+with a nonzero intrinsic detection probability retained in the event and
+true source gain. There is no free Boolean sign gate or arbitrary rotation.
+The real seven geometric/reference calls and their common parameter map
+remain a separate input; native coin calls below test the new module and
+are not misrepresented as those geometric calls.
+
+### 1092. Exact integer Golden tagging of a finite Boolean event
+
+Use the original source-I profile, not bare matrix membership:
+G=[[a,-p],[p,a]], a=sqrt(p), p+p^2=1; SourceI=diag(I4,L_i), L_i^2=-I4.
+Thus TWO actual SourceI calls implement Z on the existing port and identity
+on every unknown Spin input. The exact identities are
+
+    SourceI^2=Z_port tensor I_Spin,
+    Z G Z=G^-1, X G X=G^-1.                             (1142)
+
+G^-k is executed as Z;G^k;Z for k>0, costing k G and FOUR SourceI calls.
+CX is its own inverse. No inverse is an alphabet symbol. The old RIGHT
+wire is never addressed; both quaternion Spin wires remain in every trace.
+
+For any predicate chi:{0,1}^d->{0,1}, let g_j,0<=j<2^d, be the cyclic
+binary Gray order, g_0=g_(2^d)=0. Define INTEGER coefficients
+
+    c_j=sum_b (-1)^(g_j dot b) chi(b).                   (1143)
+
+Chronologically apply G_port^c_j and then CX from the one control bit
+changed between g_j and g_(j+1). Every control word b is unchanged.
+Its net port-X parity is zero, while (1142) gives rotation exponent
+
+    sum_j (-1)^(g_j dot b)c_j=2^d chi(b).                (1144)
+
+This is the finite character orthogonality identity, on ALL columns.
+Hence the literal circuit is G^(2^d) on accepted controls and identity
+on rejected controls. Negative c_j have the paid realization (1142).
+The general Walsh/Gray multiplexer method is standard; see
+[Mottonen et al., uniformly controlled rotations](https://arxiv.org/abs/quant-ph/0407010).
+The application here uses UNNORMALIZED integer coefficients and the original
+fixed Golden gate. It does not import freely adjustable rotation angles
+from that method, and does not claim to discover the multiplexer identity.
+
+Convert the actual canonical born port v=(sqrt(p),p)=G|0> by the paid G^-1.
+Reading the same port after (1144) gives the EXACT positive effect
+
+    kappa_d chi,  kappa_d=sin^2(2^d theta),
+    cos theta=sqrt(p), sin theta=p.                     (1145)
+
+Every rejected input has zero click probability exactly. Accepted inputs
+retain their nonclick branch; there is no conditioning on success. All
+input amplitudes, phases and unknown Spin columns are present. A physical
+gate with angle theta or 2^d theta is not added: (1145) describes the already
+emitted finite word. This is exact event implementation with a known
+visibility, not exact unit-visibility computation of chi.
+
+### 1093. Apply the integer construction to the owned seven-call comparison
+
+Keep the parent's report order
+(P_y+,P_y-,P_f,P_0,P_x+,P_x-,P_q) and the SAME eight selector words
+00011,00101,00110,01001,01010,01100,10001,10010.
+All five selector bits are canonical raw births; each selected word has
+probability p^7. All 32 selector words remain. The eight event terms are
+
+    P_y+ P_f, P_y- P_0, 1-P_y+ P_0, 1-P_y- P_f,
+    P_x+ P_q, P_x- P_0, 1-P_x+ P_0, 1-P_x- P_q.          (1146)
+
+For each branch use its five selector controls and its two actual report
+bits: d=7. All eight circuits share one output port and act on disjoint
+selector events. Their product is consequently G^128 on precisely the
+original combined event chi and identity on its complement. The positive
+branches have 128 coefficients of magnitude1; each negative branch has
+32 of magnitude 3 and 96 of magnitude 1. Thus sum|c_j|=1280 for the entire
+forward predicate. No Boolean/phase oracle occurs in its code.
+
+The actual intrinsic probability is rigorously enclosed by
+
+    kappa=sin^2(128theta)
+      in(0.19363717314310553588996408276082733335678313,
+         0.19363717314310553588996408276082733335678316). (1147)
+
+Compose with the original scalar-effect reporter calls, with all their
+records and DATA disturbances retained. The parent's all-input sequential
+probability proof applies even when those disturbances do not commute.
+The actual emitted event is
+
+    Q_nat=kappa p^7(4+Xi),
+    Xi=(P_y+-P_y-)(P_f-P_0)+(P_x+-P_x-)(P_q-P_0).        (1148)
+
+This holds on every protected DATA input, including entangled inputs.
+No unknown DATA or quantum programme state is cloned. Independent
+report inputs have their complete seven-component differential DQ_nat;
+for example partial_(P_0) Q_nat=-kappa p^7(P_y+-P_y-+P_x+-P_x-).
+It is not declared zero when an actual reference changes independently.
+Only a genuinely shared additive baseline cancels from all differences.
+These derivatives compose the owned report-parameter maps; they are not
+permission to vary the fixed elementary Golden angle continuously.
+
+Since 0<=Q_nat<=8kappa p^7, the real cold margin is
+
+    c=1-2Q_nat>=1-16kappa p^7>0.8932924288369028506.     (1149)
+
+The baseline is4kappa p^7, not the old4p^7. Neither the old and new
+absolute prices nor their fine-record laws are identified. This change is
+explicit and its source consumption below uses the TRUE new corners.
+
+### 1094. An explicit complete word on one canonical initial boundary
+
+The concrete apparatus has 16 binary wires. Selectors are 0--4, the seven
+report bits 5--11, the only phase/rotation port 12, quaternion Spin 13/14,
+and immutable oldRIGHT 15. The 13 work wires 0--12 are the SAME actual
+canonical born factors at the complete initial SIGNAL boundary. Spin and oldRIGHT
+are arbitrary, possibly entangled inputs: the true input rank is 8 and
+the complete endpoint dimension 65536. No new blank is allocated during
+the compared words. These initial resource hypotheses are stated, not
+derived from closure or from a qubit count.
+The instruction list is an explicit control in this interface. As 7ea
+requires, equality of this signal/resource boundary is not asserted to
+mean equality of a fixed autonomous initial programme or an additional
+orthogonal instruction archive. Their physical realization remains open.
+
+The validator is run with no computational-zero blanks: syntax is valid
+on all columns. The separate canonical input is v^tensor13 tensor I8;
+it is never replaced by |0>^tensor13. In the comparator-only interface,
+the seven report registers are arbitrary inputs; its input rank is 1024.
+The rank 8 statements below include their explicit preparation.
+
+Let V be the literal predicate word, R_k=product_j G_(5+j)^k_j and
+A=V G_port^-1 R_k. Execute
+
+    W_k=A^-1 Z_port A                                  (1150)
+
+with its actual chronological native word, paying every inverse. A routed
+Z on report wire j is SWAP(j,port);SourceI^2;SWAP(j,port), eight raw calls.
+The two SWAPs are the original three-CX words. The inverse of G_j^k uses
+two such routed Z operations and k actual G calls, including the two
+routed Z operations when k=0. They are real calls, not idle padding.
+
+The predicate echo, port preparation and port unpreparation cost
+2562G+2048CX+4102SourceI=8712 raw stages. For sum k_j=7 the seven report
+preparations and their true inverses add 14G+84CX+28SourceI. Thus each
+complete tested word has
+
+    N=8838, G=2576, CX=2132, SourceI=4130.               (1151)
+
+Both actual port-conversion G calls are included. Every report register
+and its complement remain in the whole unitary carrier; their terminal
+basis labels are not claimed unchanged. The SourceI-pair identities apply
+on every Spin column. No reset or measurement is inserted in the word.
+
+The required effect is marked after A, immediately BEFORE the central
+Z. Its actual stage index is emitted for each word. In formulas it is
+i* A* Pi_port A i. It is not relabelled as a terminal port measurement
+after the whole echo; the native JSON therefore has no such terminal
+report bit. The original marked-effect/echo source interface is retained.
+
+The exact endpoint is a balanced reflection on ALL 65536 columns. All
+generated prefix cuts are the actual conjugates of the fixed initial cut;
+their interior leakage is identically zero and the single wrap defect is
+the old owned endpoint defect. This uses the existing BOOK_MAP construction,
+not a new clock or arbitrary stage-wise source. The input cold corner is
+c_k I8 with c_k=1-2Q_nat(P(k)), P_j(k)=sin^2((k_j+1)theta).
+
+### 1095. Real implementation and input alternatives, with a live failure control
+
+The checker emits five complete ordinary native-code objects. All have
+the SAME initial boundary, width, raw duration and inventory (1151).
+
+* Reference: k=(2,0,1,1,2,0,1), in the report order of1146.
+* Same-task implementation: reverse the control ordering in each Gray
+  construction. The actual instruction sequence changes but (1144) gives
+  the same full predicate and whole endpoint, on every input.
+* Common-baseline alternative: k=(1,1,1,1,1,1,1). Its real report
+  distributions differ. Both current reports still equal P_0, so its
+  Q_nat is the same4kappa p^7. It retains its different fine records.
+* Current-input change: k=(2,0,2,1,2,0,0). The input call parameters change
+  at the same total cost; the full return price changes as (1148) predicts.
+* Legal comparator fault: change ONE forward predicate CX control wire,
+  keeping the original reverse leg. The original grammar admits this
+  word, but it does not implement (1148). Its nonzero price change is retained.
+
+The last word is not falsely called a same-task vertical. Likewise,
+independent changes to a reference call, reverse leg, port preparation,
+selector weight or comparison rule are not removed just because they are
+internal. The chosen finite same-task fibre is the full required effect
+and marked-map condition in the existing echo class, not the bare syntax
+predicate and not an Einstein equation. The new literal Gray alternative
+is a concrete member of that fibre. This does not prove that the fibre
+exhausts the physical X_N.
+
+More explicitly, for fixed report calls the declared task is the full
+marked effect M=A* Pi_port A of the specified eight-branch comparison;
+the echo condition is W=I-2M. A syntactically valid word is an
+implementation alternative only when it preserves that task on every
+input, with the same resources and clock. The two Gray words prove that
+this finite comparison class has distinct actual members. The input and
+fault controls are displayed separately and are not put in that class by
+fiat. These discrete comparisons do not create a continuous gate-angle
+tangent. Continuous field/reference derivatives in (1153) require the
+actual upstream maps stated in section 1097.
+
+### 1096. The full absolute price, not only the success probability
+
+Use the SAME declared homogeneous INTERNAL K(9,11,13) clock and complete
+two-grade Hodge carrier of the [whole-clock owner](A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md).
+This clock is not silently identified with a different moving/default
+scene. The exact price for the complete finite word is
+
+    B_k=H_N(W_k)-8 log(1-zeta+zeta c_k^2),
+    beta=2p^2, zeta=2^-20,
+    Z01=Nd(359+2a0)+4N sum_(l>=1)a_(lN) ReTr(W_k^l),
+    H_N=beta^-1 log Z01, d=65536.                       (1152)
+
+All 246163046400 Hodge modes, including 207935373312 unpaired harmonics,
+are counted. The frozen interval for a0 contains all 33 scene modes and
+is consumed at its original pin. No heat matrix of that huge size is
+formed. The owned all-unitary bound gives an actual remainder<10^-N
+around beta^-1 log[Nd(359+2a0)]; the displayed intervals use a larger
+rigorous 1e-70 winding enclosure. This does not delete the absolute heat.
+
+The four matched words are balanced reflections with the SAME N,d, so
+their complete heat values are exactly equal. The fault word need not
+be a reflection: for it the actual all-unitary winding bound is retained.
+The full price contrasts against the reference are strictly enclosed:
+
+    current-input change: about -5.84299747265590888377e-8,
+    legal comparator fault: about +8.13259639316435894247e-8.
+
+Reference, same-task Gray and common-baseline words have full price
+about 34.2226288398625079230, including heat about 34.2226280474663449675.
+Their displayed equality of whole prices has the stated common-clock
+hypothesis; it does not transfer to a change of duration, resource width,
+scene, pairing or another selected Cost-Info term.
+
+### 1097. Substitute the native module into the existing complete-source theorem
+
+On the SAME retained history let A_old=C_old* C_old>=0, Tr A_old>0,
+s=product_j c_j^2, c_j=1-2Q_nat,j, D=(1-z)I+z p^K s A_old,
+w=z p^K s Tr(D^-1 A_old), L=sum_j1/c_j. Then every actual present
+report/reference direction contributes
+
+    DJ=sum_j (4w/c_j) DQ_nat,j
+          -z p^K s Tr(D^-1 DA_old).                    (1153)
+
+All old, independent current and genuine upstream preparation rows stay.
+There is no commuting-past or invertible-past assumption. The parent's
+cross-calibration proof, with the actual new (1148), gives exactly
+
+    Gamma_nat=8kappa p^7 delta epsilon a_* b_* w L>0,
+    || DQ_nat/(2kappa p^7 delta epsilon a_*b_*)
+                     -D I_h^sigma ||<=C_reg(epsilon+delta^2).
+
+The positive constant kappa cancels from this normalized CURRENT source;
+it is retained in the actual cold corners, w, total price, precision and
+old-source budget. It is fixed by the original integer code, not fitted
+from an Einstein solution. An independently varied comparator gain would
+have its actual baseline/source and is not added as a free zero row.
+
+The same off-shell material/coframe map, all 16+24+2 field tests, independent
+copy max-dual norm and regular kappa soundness/recovery therefore apply
+when the SAME seven original reference calls and shared parameter code
+are supplied. The literal comparison compiler adds finite real stages
+and one port to that compilation; its complete growing-clock/retained
+history budgets must use those actual counts. Formula (1152) is the executed
+fixed-level control, not a replacement for the owned growing-clock proof.
+The original noncircular order is retained: finish this finite prefix
+before choosing the later retention depth K from its actual bounds.
+
+The missing arbitrary Boolean-sign primitive for this application is
+removed in the already declared G/CX/SourceI profile. This does not prove
+SourceI actuation from bare M1, availability of every geometric reference
+operand, the common physical parameter-address map or completeness of the
+actual same-task domain. Those are the next physical application, not a
+reason to redo this comparator or to silently constrain a nonzero normal.
+
+### 1098. Changed verification and frozen evidence
+
+The checker emits all five 8838-stage words in ordinary d0.native-execution/1
+JSON and validates them through the UNCHANGED original parser. It reads
+every emitted raw predicate gate in an exact integer normal form on all 4096
+control words, with all port columns and all unknown Spin/oldRIGHT columns
+covered by exact primitive identities. It separately proves the actual
+eight-call routed Z on all 16 local columns. It does not substitute only a
+prepared-column simulation for all-column implementation.
+
+It then computes every control-sector cold contribution at 100 digits,
+and outward intervals for the actual probability, whole price and finite
+contrasts. The ordinary nonnormal 2x2 matrix-past source control is a check
+of (1153), not a claim to have emitted that arbitrary past or the full geometric
+reference programme. No broad gravity, Lean, external CI or root replay.
+The standard and -O results, with warnings treated as errors, are recorded
+below. Check counts primarily reflect syntax and repeated all-input
+identities, not thousands of new scientific statements.
+
+No task/result node, physical status promotion, Ready state or merge.
+The original research objective remains active; GR_closed=false.
+
+#### Frozen generator and reproduction
+
+Observed on Python 3.12.14, NumPy 2.3.5, SymPy 1.14.0 and mpmath 1.3.0.
+Both normal and `-O` runs with `-W error` exited zero, had empty stderr,
+and produced the same receipt. This is a new changed-module replay, not a
+claim that the unchanged general geometric call programme was run.
+
+SHA256 pins:
+
+* Generator: `4ae7891f528b78e3bd72fd1d98ecfdfb8df88e7f9187269f0152f072dca989f2`.
+* Receipt: `67ace0609b0bb1afc26d990cf1596e2e4342c7c5428e32a925e0229d54572c3f`.
+* Emitted `native_words.json` (1,342,908 bytes):
+  `d16f9c615b6f4d9458f4a248595450da25e76767de6d34a28939598c971cbfb9`.
+
+From the repository root, use a Python interpreter with the versions above.
+The following extracts the exact frozen artifacts into a new temporary
+directory, runs both modes, and compares the receipt and emitted-word hash.
+It writes no repository source and uses the original pinned parser.
+
+```python
+from pathlib import Path
+import hashlib, json, subprocess, sys, tempfile
+
+paper = Path("02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md").read_bytes()
+out = Path(tempfile.mkdtemp(prefix="d0-native-reference-"))
+def extract(label, language):
+    begin = ("<!-- BEGIN " + label + " -->\n```" + language + "\n").encode()
+    end = ("```\n<!-- END " + label + " -->").encode()
+    if paper.count(begin) != 1 or paper.count(end) != 1:
+        raise ValueError("nonunique embedded artifact")
+    return paper.split(begin)[1].split(end)[0]
+code = extract("7ec NATIVE REFERENCE CHECKER", "python")
+expected = extract("7ec NATIVE REFERENCE RECEIPT", "json")
+script = out / "check_native_reference.py"
+script.write_bytes(code)
+for name, flags in (("normal", []), ("optimized", ["-O"])):
+    run = subprocess.run([sys.executable, *flags, "-W", "error", str(script)], capture_output=True, check=True)
+    (out / (name + ".json")).write_bytes(run.stdout)
+    (out / (name + ".stderr")).write_bytes(run.stderr)
+    if run.stderr or run.stdout != expected:
+        raise ValueError("receipt/runtime mismatch in " + name)
+words = (out / "native_words.json").read_bytes()
+if hashlib.sha256(words).hexdigest() != json.loads(expected)["native_words"]["sha256"]:
+    raise ValueError("emitted native word mismatch")
+print(out)
+```
+
+<!-- BEGIN 7ec NATIVE REFERENCE CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Literal Golden/CX/SourceI implementation of the owned cross-reference predicate.
+
+The fixed Golden visibility is retained in the event, cold corner and true gain.
+No arbitrary-angle gate, inverse primitive, measurement or discarded branch.
+The checker emits ordinary fully expanded native words next to itself.
+"""
+from pathlib import Path
+from collections import Counter
+from fractions import Fraction
+import hashlib, importlib.util, json, math, platform, sys
+import numpy as np
+import sympy as sp
+import mpmath as mp
+
+ROOT=Path.cwd();HERE=Path(__file__).resolve().parent
+PAPER=ROOT/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+CHECKS=[]
+def need(ok,label):
+    if not bool(ok):raise ArithmeticError(label)
+    CHECKS.append(label)
+def sha(b):return hashlib.sha256(b).hexdigest()
+pins={
+ '02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/check_internal_reference.py':'9b97528cbdcb5d23d2af965af076f1d81bef308a20852483ea65e51581bc071a',
+ '02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/PROOF_RU.md':'a04d8842a7082b7a43d32f993c13e76262674d9a454924891bb2150f9a774c8b',
+ '02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py':'222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c',
+ '02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md':'ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418'}
+for path,h in pins.items():need(sha((ROOT/path).read_bytes())==h,'unchanged owner '+path)
+native_path=ROOT/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+spec=importlib.util.spec_from_file_location('owned_native_reference',native_path)
+ne=importlib.util.module_from_spec(spec);sys.modules[spec.name]=ne;spec.loader.exec_module(ne)
+paper=PAPER.read_bytes();tag='7do PAID BINARY INPUT RECEIPT'
+start=('<!-- BEGIN '+tag+' -->\n```json\n').encode();end=('```\n<!-- END '+tag+' -->').encode()
+need(paper.count(start)==paper.count(end)==1,'unique actual full-heat coefficient')
+heat_bytes=paper.split(start)[1].split(end)[0]
+need(sha(heat_bytes)=='811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba','frozen full-heat receipt')
+heat=json.loads(heat_bytes)
+
+PORT=12;SPIN=(13,14);OLD=15;WIDTH=16;DIM=2**WIDTH;RANK=8
+terms=[(1,0,2),(1,1,3),(-1,0,3),(-1,1,2),
+       (1,4,6),(1,5,3),(-1,4,3),(-1,5,6)]
+selectors=[w for w in range(32) if w.bit_count()==2][:8]
+def gate(op,*w):return ne.Gate(op,tuple(w))
+def z(w):
+    core=[gate('SourceI',PORT,*SPIN)]*2
+    if w==PORT:return core
+    swap=[gate('CX',PORT,w),gate('CX',w,PORT),gate('CX',PORT,w)]
+    return swap+core+swap
+def rotation(w,k):
+    if k>=0:return [gate('G',w)]*k
+    return z(w)+[gate('G',w)]*(-k)+z(w)
+def emit(macros):
+    word=[]
+    for item in macros:
+        if item[0]=='R':word+=rotation(PORT,item[1])
+        else:word.append(gate('CX',item[1],PORT))
+    return word
+def inverse(macros):
+    return [('R',-x[1]) if x[0]=='R' else x for x in reversed(macros)]
+
+def predicate_macro(reverse_controls=False):
+    ans=[];tables=[]
+    for selected,(sign,ia,ib) in zip(selectors,terms):
+        wires=list(range(5))+[5+ia,5+ib]
+        if reverse_controls:wires=wires[::-1]
+        values=[]
+        for b in range(128):
+            bits={w:(b>>(6-i))&1 for i,w in enumerate(wires)}
+            sw=sum(bits[i]<<(4-i) for i in range(5))
+            both=bits[5+ia]*bits[5+ib]
+            values.append(int(sw==selected and (both if sign==1 else not both)))
+        gray=[j^(j>>1) for j in range(128)]
+        coeff=[sum((-1)**((g&b).bit_count())*values[b] for b in range(128)) for g in gray]
+        for b in range(128):
+            got=sum((-1)**((g&b).bit_count())*v for g,v in zip(gray,coeff))
+            need(got==128*values[b],'integer all-column Walsh identity')
+        for j,k in enumerate(coeff):
+            need(k!=0 and abs(k) in (1,3),'only intrinsic integer Golden powers')
+            ans.append(('R',k))
+            change=gray[j]^gray[(j+1)%128]
+            need(change.bit_count()==1,'genuine cyclic Gray edge')
+            ans.append(('X',wires[6-(change.bit_length()-1)]))
+        tables.append({'selector':format(selected,'05b'),'sign':sign,'report_indices':[ia,ib],
+                       'coefficient_inventory':dict(sorted(Counter(coeff).items()))})
+    return ans,tables
+
+controls=np.arange(4096,dtype=np.int64)
+def bits(w):return (controls>>(11-w))&1
+chi=np.zeros(4096,dtype=np.int64)
+for selected,(sign,ia,ib) in zip(selectors,terms):
+    both=bits(5+ia)*bits(5+ib)
+    chi+=((controls>>7)==selected)*(both if sign==1 else 1-both)
+need(set(chi.tolist())=={0,1},'owned eight branches are disjoint')
+need(int(chi.sum())==512,'same original predicate rank on all4096 controls')
+
+def normal_form(macros):
+    exponent=np.zeros(4096,dtype=np.int64);parity=np.zeros(4096,dtype=np.int64)
+    for op,value in macros:
+        if op=='R':exponent+=value
+        else:
+            bit=bits(value);exponent*=1-2*bit;parity^=bit
+    return exponent,parity
+macro,tables=predicate_macro();mirror,_=predicate_macro(True)
+ex,parity=normal_form(macro);ex_m,parity_m=normal_form(mirror)
+need(np.array_equal(ex,128*chi) and not parity.any(),'actual chronological Gray circuit on every control word')
+need(np.array_equal(ex_m,ex) and not parity_m.any(),'different actual same-task implementation')
+need(macro!=mirror,'implementation alternative is a different instruction sequence')
+bad_macro=list(macro)
+fault_at=next(i for i,x in enumerate(bad_macro) if x[0]=='X')
+old_control=bad_macro[fault_at][1];new_control=(old_control+1)%12
+bad_macro[fault_at]=('X',new_control)
+bad_ex,bad_parity=normal_form(bad_macro)
+need(not np.array_equal(bad_ex,ex) or bad_parity.any(),'a legal wire-control fault changes the comparison')
+
+# Algebraic primitive identities cover every unknown Spin column before using
+# the exact SourceI-pair reduction in the full word's endpoint calculation.
+p=ne.P;a=ne.A;G=sp.Matrix(ne.G_LOCAL);Z=sp.diag(1,-1);X=sp.Matrix([[0,1],[1,0]])
+need(ne.exact_matrix_equal(Z*G*Z,G.T),'paid exact inverse uses original Golden gate')
+need(ne.exact_matrix_equal(X*G*X,G.T),'exact CNOT/rotation Gray identity')
+need(ne.L_I**2==-sp.eye(4),'SourceI pair is a scalar sign on ALL Spin inputs')
+need(ne.SOURCE_I_LOCAL**2==sp.kronecker_product(Z,sp.eye(4)),'exact original native Z on all8 columns')
+
+def literal_predicate_normal_form(word):
+    """Read the emitted RAW word, not its macro list, on all4096 controls.
+
+    Exact normal form is G^e * sign * X^b Z^c. Only adjacent actual
+    SourceI pairs are reduced, using the all-Spin identity checked above.
+    Every primitive call remains in the inventory and physical clock.
+    """
+    e=np.zeros(4096,dtype=np.int64);b=e.copy();c=e.copy();sign=np.ones(4096,dtype=np.int64)
+    i=0
+    while i<len(word):
+        g=word[i]
+        if g.op=='G':
+            need(g.wires==(PORT,),'literal comparator rotates only the actual port')
+            e+=1;i+=1
+        elif g.op=='CX':
+            need(g.wires[1]==PORT and g.wires[0]<PORT,'literal comparator keeps all control records')
+            v=bits(g.wires[0]);e*=1-2*v;b^=v;i+=1
+        else:
+            need(g.wires==(PORT,*SPIN) and i+1<len(word) and word[i+1]==g,
+                 'both actual SourceI calls retained in each sign')
+            e=-e;sign*=1-2*b;c^=1;i+=2
+    return e,b,c,sign
+for label,mac,expected,par in [('base',macro,ex,parity),('gray',mirror,ex_m,parity_m),
+                              ('fault',bad_macro,bad_ex,bad_parity)]:
+    e,b,c,sign=literal_predicate_normal_form(emit(mac))
+    need(np.array_equal(e,expected) and np.array_equal(b,par) and not c.any() and np.all(sign==1),
+         'literal raw all-column endpoint equals structural prediction '+label)
+
+# The only operations outside this predicate are original one-wire Golden
+# powers, routed Z and their actual inverses. Prove the routed Z map on all
+# sixteen port/report/Spin columns, including every intermediate SourceI.
+def routed_z_local():
+    M=sp.eye(16)
+    # Local order report, port, Spin0, Spin1; original source port is local1.
+    sequence=[('CX',1,0),('CX',0,1),('CX',1,0),('SI',),('SI',),
+              ('CX',1,0),('CX',0,1),('CX',1,0)]
+    for g in sequence:
+        T=sp.zeros(16)
+        for k in range(16):
+            if g[0]=='CX':
+                to=k^((1<<(3-g[2])) if (k>>(3-g[1]))&1 else 0);sg=1
+            elif (k>>2)&1:
+                to=k^1;sg=-1 if k&1 else 1
+            else:to=k;sg=1
+            T[to,k]=sg
+        M=T*M
+    return M
+need(routed_z_local()==sp.kronecker_product(Z,sp.eye(8)),
+     'actual eight-stage routed Z on every report/port/Spin column')
+
+def whole_word(ks,mac=macro,forward=None):
+    # Thirteen canonical born factors give the SAME initial signal boundary.
+    # The instruction list is the compared control, not a fixed initial programme.
+    # Only the output port is converted to zero; this inverse is executed.
+    prep=[g for j,k in enumerate(ks) for g in rotation(5+j,k)]+rotation(PORT,-1)
+    # Keep these real two Z calls even at k=0: all equal-sum test words have
+    # exactly the same raw inventory, without an idle or a free inverse.
+    undo=rotation(PORT,1)
+    for j in reversed(range(7)):undo+=z(5+j)+rotation(5+j,ks[j])+z(5+j)
+    return prep+emit(mac if forward is None else forward)+z(PORT)+emit(inverse(mac))+undo
+
+ks0=(2,0,1,1,2,0,1)
+ks_change=(2,0,2,1,2,0,0)
+cases={'reference':(ks0,macro,None),'same_task_gray':(ks0,mirror,None),
+       'common_baseline':((1,)*7,macro,None),
+       'current_change':(ks_change,macro,None),'legal_comparator_fault':(ks0,macro,bad_macro)}
+words={name:whole_word(*value) for name,value in cases.items()}
+word_json={};inventories={}
+for name,word in words.items():
+    # Empty blank_wires: syntax is valid on all columns. The actual born
+    # embedding and its rank8 are supplied explicitly below, not called |0>.
+    # The report effect is marked after A, BEFORE the central sign, rather
+    # than falsely labelled a terminal measurement of the whole echo.
+    obj=ne.Execution(WIDTH,(),(OLD,),tuple(word),ne.G_CX_SOURCE_I,PORT,SPIN,())
+    ne.validate_execution(obj,max_qubits=WIDTH,max_expanded_stages=len(word))
+    inv=Counter(g.op for g in word);inventories[name]=dict(sorted(inv.items()))
+    need(all(OLD not in g.wires for g in word),'oldRIGHT is never addressed '+name)
+    need(inv==Counter(words['reference'][j].op for j in range(len(words['reference']))),
+         'same actual complete inventory '+name)
+    word_json[name]=ne.execution_to_dict(obj)
+    restored=ne.execution_from_dict(word_json[name],max_qubits=WIDTH,max_expanded_stages=len(word))
+    need(restored==obj,'ordinary native code roundtrip '+name)
+N=len(words['reference'])
+need(all(len(w)==N for w in words.values()),'same complete paid clock for every test')
+# 2*1280 multiplexed G calls, TWO actual port conversion/unconversion
+# calls, and 2*sum(ks)=14 actual report calls. No preparation G is free.
+need(inventories['reference']=={'CX':2132,'G':2576,'SourceI':4130},'independent inventory formula')
+word_bytes=(json.dumps(word_json,ensure_ascii=False,sort_keys=True,separators=(',',':'))+'\n').encode()
+(HERE/'native_words.json').write_bytes(word_bytes)
+
+# Exact full event law, including every independent report input.
+yp,ym,cur,base,xp,xm,mat,kappa=sp.symbols('yp ym cur base xp xm mat kappa',real=True)
+pv=[yp,ym,cur,base,xp,xm,mat]
+xi=(yp-ym)*(cur-base)+(xp-xm)*(mat-base)
+event=kappa*p**7*sum(pv[i]*pv[j] if sg==1 else 1-pv[i]*pv[j] for sg,i,j in terms)
+need(sp.expand(event-kappa*p**7*(4+xi))==0,'exact complete positive report law')
+need(sp.simplify(sum(sp.diff(event,t) for t in pv))==0,'shared additive baseline source cancels')
+need(sp.simplify(sp.diff(event,base)+kappa*p**7*(yp-ym+xp-xm))==0,
+     'independently moving reference retains its source')
+
+mp.mp.dps=100;mp.iv.dps=85;iv=mp.iv
+pp=(mp.sqrt(5)-1)/2;aa=mp.sqrt(pp);theta=mp.atan2(pp,aa)
+pii=(iv.sqrt(5)-1)/2;ai=iv.sqrt(pii)
+def power(c,s,n):
+    if n<0:return power(c,-s,-n)
+    re=c*0+1;im=c*0
+    while n:
+        if n&1:re,im=re*c-im*s,re*s+im*c
+        c,s=c*c-s*s,2*c*s;n>>=1
+    return re,im
+co,si=power(aa,pp,128);visibility=si*si
+coi,sii=power(ai,pii,128);vi=sii*sii
+def ends(x):return mp.mpf(x.a),mp.mpf(x.b)
+def fmt(x,digits=44):
+    scale=10**digits;lo,hi=ends(x*scale)
+    def text(n):
+        sign='-' if n<0 else '';n=abs(n)
+        return sign+str(n//scale)+'.'+str(n%scale).zfill(digits)
+    return [text(int(mp.floor(lo))-1),text(int(mp.ceil(hi))+1)]
+need(ends(vi)[0]>mp.mpf('.1936') and ends(vi)[1]<mp.mpf('.1937'),'strict intrinsic nonzero visibility')
+need(ends(1-16*vi*pii**7)[0]>mp.mpf('.893'),'true cold margin, not a reused configured value')
+
+def input_probabilities(ks,arithmetic=mp):
+    pr=pp if arithmetic is mp else pii;ca=aa if arithmetic is mp else ai
+    return [power(ca,pr,k+1)[1]**2 for k in ks]
+def event_value(ks,arithmetic=mp):
+    ps=input_probabilities(ks,arithmetic);y1,y0,f,b,x1,x0,q=ps
+    pr=pp if arithmetic is mp else pii;v=visibility if arithmetic is mp else vi
+    return v*pr**7*(4+(y1-y0)*(f-b)+(x1-x0)*(q-b))
+def direct_corner(ks,exponent,par):
+    probs=input_probabilities(ks);ans=mp.mpf(0)
+    for x in range(4096):
+        selector=x>>7;weight=pp**(5+selector.bit_count())
+        for j,P in enumerate(probs):weight*=P if (x>>(6-j))&1 else 1-P
+        c,s=power(aa,pp,int(128*chi[x]+exponent[x]))
+        ans+=weight*(-s if par[x] else c)
+    return ans
+corners={}
+for name,(ks,mac,forward) in cases.items():
+    ee,bb=normal_form(mac if forward is None else forward)
+    corners[name]=direct_corner(ks,ee,bb)
+    if forward is None:
+        need(abs(corners[name]-(1-2*event_value(ks)))<mp.mpf('1e-85'),
+             'actual all4096-control compression including canonical input '+name)
+need(abs(corners['reference']-corners['same_task_gray'])<mp.mpf('1e-85'),'same-task exact corner')
+need(abs(corners['reference']-corners['common_baseline'])<mp.mpf('1e-85'),'actual native common-baseline alternative')
+need(abs(corners['legal_comparator_fault']-corners['reference'])>mp.mpf('1e-5'),'legal code fault has a real normal')
+
+# Full price, not only the new flag probability. Keep all finite modes and
+# original absolute heat. At N>=3 the owned rational A1_N is <10^(-N).
+x=Fraction(2,55);q3=x**3/math.factorial(3)
+need(Fraction(176,359)/(1-x*x)/(1-q3)**2<1 and x<Fraction(1,10),
+     'rational all-N full winding bound below10^-N')
+beta=2*pii*pii;zz=iv.mpf(1)/2**20
+a0=iv.mpf(heat['complete_book']['a0_interval'])
+H=iv.log(N*DIM*(2*a0+359))/beta+iv.mpf(['-1e-70','1e-70'])
+need(N>70,'full winding tail enclosed rather than dropped')
+prices={}
+for name,(ks,mac,forward) in cases.items():
+    if forward is None:ci=1-2*event_value(ks,iv)
+    else:
+        # Certified fault corner: interval summation of every4096 controls.
+        ps=input_probabilities(ks,iv);ci=iv.mpf(0)
+        for cidx in range(4096):
+            sw=cidx>>7;weight=pii**(5+sw.bit_count())
+            for j,P in enumerate(ps):weight*=P if (cidx>>(6-j))&1 else 1-P
+            c,s=power(ai,pii,int(128*chi[cidx]+bad_ex[cidx]))
+            ci+=weight*(-s if bad_parity[cidx] else c)
+    J=-RANK*iv.log(1-zz+zz*ci*ci)
+    prices[name]={'corner':fmt(ci),'return_price':fmt(J),'full_heat':fmt(H),'full_price':fmt(H+J)}
+for other in ('current_change','legal_comparator_fault'):
+    delta=-RANK*iv.log((1-zz+zz*iv.mpf(prices[other]['corner'])**2)/
+                      (1-zz+zz*iv.mpf(prices['reference']['corner'])**2))
+    interval=fmt(delta+iv.mpf(['-2e-70','2e-70']))
+    need(not (mp.mpf(interval[0])<=0<=mp.mpf(interval[1])),'strict complete-price control '+other)
+    prices[other]['complete_price_difference_from_reference']=interval
+
+# A full retained nonnormal past: no commuting or invertibility assumption.
+K=mp.matrix([['.5','.2'],['.1','.3']]);Aold=K.T*K;past_z=mp.mpf(2)**-20
+Ptest=[mp.mpf(v) for v in ('.24','.19','.31','.28','.23','.16','.27')]
+def Q_of(pr):
+    y1,y0,f,b,x1,x0,q=pr
+    return visibility*pp**7*(4+(y1-y0)*(f-b)+(x1-x0)*(q-b))
+def past_price(pr):
+    c=1-2*Q_of(pr);D=(1-past_z)*mp.eye(2)+past_z*c*c*Aold
+    return -mp.log(mp.det(D))
+c=1-2*Q_of(Ptest);D=(1-past_z)*mp.eye(2)+past_z*c*c*Aold
+w=past_z*c*c*sum((D**-1*Aold)[i,i] for i in range(2))
+gradQ=[visibility*pp**7*x for x in (Ptest[2]-Ptest[3],-(Ptest[2]-Ptest[3]),
+        Ptest[0]-Ptest[1],-(Ptest[0]-Ptest[1]+Ptest[4]-Ptest[5]),
+        Ptest[6]-Ptest[3],-(Ptest[6]-Ptest[3]),Ptest[4]-Ptest[5])]
+source_errors=[]
+for j in range(7):
+    def fun(t):
+        pr=list(Ptest);pr[j]=t;return past_price(pr)
+    error=abs(mp.diff(fun,Ptest[j])-4*w*gradQ[j]/c)
+    need(error<mp.mpf('1e-90'),'complete matrix-past source for independent report '+str(j))
+    source_errors.append(mp.nstr(error,8))
+
+out={'status':'PASS_LITERAL_NATIVE_CROSS_REFERENCE','input_commit':'265ca0c97fd9e3ecebe792eab5178dab5186be22',
+     'integration_commit':'1ee2f2a0ef5658e11097450576b48e2e86a6da73',
+     'checks':len(CHECKS),'checker_sha256':sha(Path(__file__).read_bytes()),'pins':pins,
+     'standard_method_reference':'https://arxiv.org/abs/quant-ph/0407010',
+     'predicate':{'terms':terms,'selectors':[format(v,'05b') for v in selectors],'branch_tables':tables,
+                  'exact_forward_block':'G^(128*chi) on port; identity on Spin and oldRIGHT',
+                  'visibility':fmt(vi),'actual_event':'kappa*p^7*(4+Xi)',
+                  'cold_lower_bound':fmt(1-16*vi*pii**7),'all_control_words_verified':4096},
+     'native_words':{'file':'native_words.json','sha256':sha(word_bytes),'variants':list(words),
+                     'raw_stages':N,'inventories':inventories,'ordinary_grammar':ne.SCHEMA,
+                     'marked_report_port':PORT,
+                     'marked_report_after_raw_stage':{
+                        name:sum(ks)+len(rotation(PORT,-1))+len(emit(mac if forward is None else forward))
+                        for name,(ks,mac,forward) in cases.items()},
+                     'terminal_flag_measurement_claimed':False,
+                     'arbitrary_angle_or_inverse_primitive':False},
+     'boundary':{'qubits':WIDTH,'port':PORT,'Spin':list(SPIN),'oldRIGHT':[OLD],
+                 'canonical_born_wires':list(range(13)),'input_rank':RANK,'full_endpoint_dimension':DIM,
+                 'all_Hodge_modes':425*N*DIM,'unpaired_harmonic_modes':359*N*DIM,
+                 'grammar_zero_blank_wires':[],'canonical_input_is_not_called_zero_blank':True},
+     'complete_prices':prices,'matrix_past_source_errors':source_errors,
+     'gain':'8*kappa*p^7*delta*epsilon*a_star*b_star*w*L, with actual new corners and past',
+     'scope':{'comparator_native_word_emitted':True,'all_columns_structurally_verified':True,
+              'all_raw_predicate_stages_exactly_checked':True,
+              'general_geometric_reporter_calls_emitted':False,'shared_reference_call_availability_proved':False,
+              'same_fixed_initial_autonomous_programme_proved':False,
+              'all_admissible_physical_controls_classified':False,'GR_closed':False},
+     'runtime':{'python':platform.python_version(),'sympy':sp.__version__,'numpy':np.__version__,'mpmath':mp.__version__}}
+print(json.dumps(out,ensure_ascii=False,sort_keys=True,indent=2)+'\n',end='')
+```
+<!-- END 7ec NATIVE REFERENCE CHECKER -->
+
+<!-- BEGIN 7ec NATIVE REFERENCE RECEIPT -->
+```json
+{
+  "boundary": {
+    "Spin": [
+      13,
+      14
+    ],
+    "all_Hodge_modes": 246163046400,
+    "canonical_born_wires": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "canonical_input_is_not_called_zero_blank": true,
+    "full_endpoint_dimension": 65536,
+    "grammar_zero_blank_wires": [],
+    "input_rank": 8,
+    "oldRIGHT": [
+      15
+    ],
+    "port": 12,
+    "qubits": 16,
+    "unpaired_harmonic_modes": 207935373312
+  },
+  "checker_sha256": "4ae7891f528b78e3bd72fd1d98ecfdfb8df88e7f9187269f0152f072dca989f2",
+  "checks": 16188,
+  "complete_prices": {
+    "common_baseline": {
+      "corner": [
+        "0.94664621441845142532363151445329137585005887",
+        "0.94664621441845142532363151445329137585005890"
+      ],
+      "full_heat": [
+        "34.22262804746634496750909844071826340805961231",
+        "34.22262804746634496750909844071828353784408550"
+      ],
+      "full_price": [
+        "34.22262883986250792301259164185792210757849901",
+        "34.22262883986250792301259164185794223736297220"
+      ],
+      "return_price": [
+        "0.00000079239616295550349320113965869951888669",
+        "0.00000079239616295550349320113965869951888672"
+      ]
+    },
+    "current_change": {
+      "complete_price_difference_from_reference": [
+        "-0.00000005842997472655908883767423022837809801",
+        "-0.00000005842997472655908883767423022837809798"
+      ],
+      "corner": [
+        "0.95068269585048102417756133120361249742838452",
+        "0.95068269585048102417756133120361249742838455"
+      ],
+      "full_heat": [
+        "34.22262804746634496750909844071826340805961231",
+        "34.22262804746634496750909844071828353784408550"
+      ],
+      "full_price": [
+        "34.22262878143253319645350280418369187920040102",
+        "34.22262878143253319645350280418371200898487421"
+      ],
+      "return_price": [
+        "0.00000073396618822894440436346542847114078869",
+        "0.00000073396618822894440436346542847114078872"
+      ]
+    },
+    "legal_comparator_fault": {
+      "complete_price_difference_from_reference": [
+        "0.00000008132596393164358942469365453890499396",
+        "0.00000008132596393164358942469365453890499399"
+      ],
+      "corner": [
+        "0.94099920278305306233754186207322446513214168",
+        "0.94099920278305306233754186207322446513214171"
+      ],
+      "full_heat": [
+        "34.22262804746634496750909844071826340805961231",
+        "34.22262804746634496750909844071828353784408550"
+      ],
+      "full_price": [
+        "34.22262892118847185465618106655157664648349299",
+        "34.22262892118847185465618106655159677626796617"
+      ],
+      "return_price": [
+        "0.00000087372212688714708262583331323842388066",
+        "0.00000087372212688714708262583331323842388069"
+      ]
+    },
+    "reference": {
+      "corner": [
+        "0.94664621441845142532363151445329137585005887",
+        "0.94664621441845142532363151445329137585005890"
+      ],
+      "full_heat": [
+        "34.22262804746634496750909844071826340805961231",
+        "34.22262804746634496750909844071828353784408550"
+      ],
+      "full_price": [
+        "34.22262883986250792301259164185792210757849901",
+        "34.22262883986250792301259164185794223736297220"
+      ],
+      "return_price": [
+        "0.00000079239616295550349320113965869951888669",
+        "0.00000079239616295550349320113965869951888672"
+      ]
+    },
+    "same_task_gray": {
+      "corner": [
+        "0.94664621441845142532363151445329137585005887",
+        "0.94664621441845142532363151445329137585005890"
+      ],
+      "full_heat": [
+        "34.22262804746634496750909844071826340805961231",
+        "34.22262804746634496750909844071828353784408550"
+      ],
+      "full_price": [
+        "34.22262883986250792301259164185792210757849901",
+        "34.22262883986250792301259164185794223736297220"
+      ],
+      "return_price": [
+        "0.00000079239616295550349320113965869951888669",
+        "0.00000079239616295550349320113965869951888672"
+      ]
+    }
+  },
+  "gain": "8*kappa*p^7*delta*epsilon*a_star*b_star*w*L, with actual new corners and past",
+  "input_commit": "265ca0c97fd9e3ecebe792eab5178dab5186be22",
+  "integration_commit": "1ee2f2a0ef5658e11097450576b48e2e86a6da73",
+  "matrix_past_source_errors": [
+    "0.0",
+    "0.0",
+    "0.0",
+    "1.3306125e-110",
+    "3.3265311e-111",
+    "3.3265311e-111",
+    "0.0"
+  ],
+  "native_words": {
+    "arbitrary_angle_or_inverse_primitive": false,
+    "file": "native_words.json",
+    "inventories": {
+      "common_baseline": {
+        "CX": 2132,
+        "G": 2576,
+        "SourceI": 4130
+      },
+      "current_change": {
+        "CX": 2132,
+        "G": 2576,
+        "SourceI": 4130
+      },
+      "legal_comparator_fault": {
+        "CX": 2132,
+        "G": 2576,
+        "SourceI": 4130
+      },
+      "reference": {
+        "CX": 2132,
+        "G": 2576,
+        "SourceI": 4130
+      },
+      "same_task_gray": {
+        "CX": 2132,
+        "G": 2576,
+        "SourceI": 4130
+      }
+    },
+    "marked_report_after_raw_stage": {
+      "common_baseline": 4364,
+      "current_change": 4364,
+      "legal_comparator_fault": 4364,
+      "reference": 4364,
+      "same_task_gray": 4364
+    },
+    "marked_report_port": 12,
+    "ordinary_grammar": "d0.native-execution/1",
+    "raw_stages": 8838,
+    "sha256": "d16f9c615b6f4d9458f4a248595450da25e76767de6d34a28939598c971cbfb9",
+    "terminal_flag_measurement_claimed": false,
+    "variants": [
+      "reference",
+      "same_task_gray",
+      "common_baseline",
+      "current_change",
+      "legal_comparator_fault"
+    ]
+  },
+  "pins": {
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/PROOF_RU.md": "a04d8842a7082b7a43d32f993c13e76262674d9a454924891bb2150f9a774c8b",
+    "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/check_internal_reference.py": "9b97528cbdcb5d23d2af965af076f1d81bef308a20852483ea65e51581bc071a",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "predicate": {
+    "actual_event": "kappa*p^7*(4+Xi)",
+    "all_control_words_verified": 4096,
+    "branch_tables": [
+      {
+        "coefficient_inventory": {
+          "-1": 64,
+          "1": 64
+        },
+        "report_indices": [
+          0,
+          2
+        ],
+        "selector": "00011",
+        "sign": 1
+      },
+      {
+        "coefficient_inventory": {
+          "-1": 64,
+          "1": 64
+        },
+        "report_indices": [
+          1,
+          3
+        ],
+        "selector": "00101",
+        "sign": 1
+      },
+      {
+        "coefficient_inventory": {
+          "-3": 16,
+          "-1": 48,
+          "1": 48,
+          "3": 16
+        },
+        "report_indices": [
+          0,
+          3
+        ],
+        "selector": "00110",
+        "sign": -1
+      },
+      {
+        "coefficient_inventory": {
+          "-3": 16,
+          "-1": 48,
+          "1": 48,
+          "3": 16
+        },
+        "report_indices": [
+          1,
+          2
+        ],
+        "selector": "01001",
+        "sign": -1
+      },
+      {
+        "coefficient_inventory": {
+          "-1": 64,
+          "1": 64
+        },
+        "report_indices": [
+          4,
+          6
+        ],
+        "selector": "01010",
+        "sign": 1
+      },
+      {
+        "coefficient_inventory": {
+          "-1": 64,
+          "1": 64
+        },
+        "report_indices": [
+          5,
+          3
+        ],
+        "selector": "01100",
+        "sign": 1
+      },
+      {
+        "coefficient_inventory": {
+          "-3": 16,
+          "-1": 48,
+          "1": 48,
+          "3": 16
+        },
+        "report_indices": [
+          4,
+          3
+        ],
+        "selector": "10001",
+        "sign": -1
+      },
+      {
+        "coefficient_inventory": {
+          "-3": 16,
+          "-1": 48,
+          "1": 48,
+          "3": 16
+        },
+        "report_indices": [
+          5,
+          6
+        ],
+        "selector": "10010",
+        "sign": -1
+      }
+    ],
+    "cold_lower_bound": [
+      "0.89329242883690285064726302890658275170011775",
+      "0.89329242883690285064726302890658275170011778"
+    ],
+    "exact_forward_block": "G^(128*chi) on port; identity on Spin and oldRIGHT",
+    "selectors": [
+      "00011",
+      "00101",
+      "00110",
+      "01001",
+      "01010",
+      "01100",
+      "10001",
+      "10010"
+    ],
+    "terms": [
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        -1,
+        0,
+        3
+      ],
+      [
+        -1,
+        1,
+        2
+      ],
+      [
+        1,
+        4,
+        6
+      ],
+      [
+        1,
+        5,
+        3
+      ],
+      [
+        -1,
+        4,
+        3
+      ],
+      [
+        -1,
+        5,
+        6
+      ]
+    ],
+    "visibility": [
+      "0.19363717314310553588996408276082733335678313",
+      "0.19363717314310553588996408276082733335678316"
+    ]
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "GR_closed": false,
+    "all_admissible_physical_controls_classified": false,
+    "all_columns_structurally_verified": true,
+    "all_raw_predicate_stages_exactly_checked": true,
+    "comparator_native_word_emitted": true,
+    "general_geometric_reporter_calls_emitted": false,
+    "same_fixed_initial_autonomous_programme_proved": false,
+    "shared_reference_call_availability_proved": false
+  },
+  "standard_method_reference": "https://arxiv.org/abs/quant-ph/0407010",
+  "status": "PASS_LITERAL_NATIVE_CROSS_REFERENCE"
+}
+```
+<!-- END 7ec NATIVE REFERENCE RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:

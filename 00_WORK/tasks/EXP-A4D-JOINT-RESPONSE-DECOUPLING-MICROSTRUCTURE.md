@@ -19238,3 +19238,74 @@ Checker/receipt pairs are embedded verbatim in §7eb for durable replay.
 Validation: affected repository structural/assembly gates on final inputs;
 no unchanged broad physical or Lean replay. Handoff: existing PR, exact positive
 full-source statement, retained physical map, tests. No PASS-count promotion.
+
+### 3 November 2026 — literal native cross-reference comparator and one complete paid control graph (§7ec)
+
+Same #334 / constitutive/native-programme-v1, native realization and final
+composition. Scientific input 265ca0c97; integrate 1ee2f2a0e and preserve
+incoming 7ea's coherent-history normal and 7eb's conditional static-v8 source.
+Only this brief and the existing primary artifact are changed. The original
+nonvacuum raw/full-CAR source route is not identified with the v8 route.
+
+**Named parent application.** The 31 October internal-reference/cross-calibration
+owner had the exact positive eight-branch event, but no emitted native word
+for its Boolean comparison. Primary 7ec, sections 1092--1098 supplies that operation in
+the ALREADY DECLARED G/CX/SourceI profile. It does not derive the profile's
+physical availability from matrix membership or create a new primitive.
+
+**Exact construction.** Integer Walsh coefficients on a cyclic Gray circuit
+implement G^(128 chi) on the original output port, for the parent's exact
+five-selector/two-report branch predicate. SourceI^2 is an actual Z on every
+Spin column, and Z G^k Z is the paid inverse. There are no arbitrary angles,
+unpriced inverse, Boolean-phase oracle, reset or discarded outcome. The
+known intrinsic visibility is kappa=sin^2(128theta)=0.1936371731431055...>0.
+The real event is Q_nat=kappa p^7(4+Xi), its cold margin exceeds 0.8932924,
+and its calibrated source has Gamma_nat=8kappa p^7 delta epsilon a_*b_* w L.
+The true new corners and every independent reference/preparation source
+remain in the whole determinant. No old/new price equality is assumed.
+
+**Actual controls and full price.** Five fully expanded ordinary native
+words are emitted and parsed, each 8838 raw calls on 16 wires: 2576G, 2132CX,
+4130SourceI. The same 13 raw-born signal factors and all 8 arbitrary Spin/
+oldRIGHT input columns are retained; full endpoint dimension is 65536.
+The instruction list is a compared control, not a proved common fixed
+autonomous initial programme. The event is genuinely marked after stage 4364,
+before the central sign, not assigned to the terminal echo's port.
+
+Two different actual Gray implementations have exactly the same full
+predicate and price. A genuine native common-baseline change also retains
+the full price, while its fine-record law differs. An equal-inventory current
+change has full-price difference about -5.842997472655909e-8. A legal one-CX
+comparator fault has difference about +8.132596393164359e-8 and is NOT erased
+as a vertical source. Every comparison uses the same actual clock and input.
+The full INTERNAL H+J price includes 246163046400 Hodge modes and the original
+absolute heat; its reference value is about 34.222628839862508. The huge
+heat matrix is not constructed: exact monodromy and rigorous winding bounds
+retain all modes. Moving/default scenes and other selected prices are distinct.
+
+**Source substitution.** The existing cross-reference Taylor theorem applies
+with the calculated positive kappa and actual new gain. Its whole-source
+old/current bounds, independent-copy norm, material/coframe map and general
+regular kappa Einstein recovery remain. The comparator adds actual finite
+code and a real port before the existing choice of retention depth K. Its
+new word has no approximation error; errors in the supplied seven original
+geometric/reference calls retain their real budgets and sources.
+
+**Smallest decisive check.** Every emitted raw predicate stage is checked in
+an exact integer normal form on all 4096 control assignments; all port, Spin
+and oldRIGHT columns are covered. The actual eight-call routed Z is checked
+on all 16 local columns. Canonical-input compression, complete-price intervals,
+the independent-reference normal and all seven matrix-past source rows are
+verified. Normal/-O with warnings as errors give byte-identical receipts and
+empty stderr. Most 16188 checks are repeated syntax/all-input identities,
+not new theorem counts. Frozen generator, receipt and emitted-word SHA256
+are embedded in primary 7ec; extraction reproduces native_words.json exactly.
+
+Remaining physical application: the actual seven geometric/reference calls
+with their common parameter address, original apparatus admission and the
+full same-task comparison domain. This result removes the arbitrary
+comparison-gate premise within its declared profile; it does not solve
+the freely changed comparison rule, autonomous programme source or every
+physical normal. No new task/result row, broad root/Lean replay, external
+CI, Ready state, merge, positive_gr/raw216 or GR_closed promotion. The
+original objective remains active.
