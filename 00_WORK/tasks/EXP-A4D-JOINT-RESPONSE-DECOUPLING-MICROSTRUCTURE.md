@@ -19952,3 +19952,88 @@ Bounded independent read-only reviews checked the action interface and exact
 stage realization, temporal scene-mixing transport and input/source scope.
 They are not independent registry acceptance. The remaining common-source
 application is explicit; no further micro-curvature census is requested.
+
+### 3 November 2026 — equal-return native banks, full field lift and the same retained terminal record (§7em)
+
+Same #334 / constitutive / native-programme-v1. Phase: native realization
+and final composition. Mathematical input 577188a5dcee511ff0f205d14fc4aa3aad661777;
+publication integrates c2f7f14af3f0e6782fcfa4eb45828755f89c29aa unchanged.
+Write paths are this brief and the existing primary artifact only.
+
+**Exact consumer and substitution.** Consume §7ek's required exact
+equal-return level and full geometric range, together with §§7eh--7ej's
+original genuine seven-bank instrument, marked isometry, physical norm
+and gain. Incoming §7el.A supplies the recorded action/test interface;
+its ST1--ST3 supplies the complete growing-clock suffix determinant.
+The new application treats the REGULAR original reporter corner 0<c<1;
+it is not identified with §7el's projection/identity-corner matrix germ.
+
+The complete native G/CX/SourceI sector compiler commutes with the original
+report reflection exactly, while approximating the genuine complete bank
+isometries. Its actual return is therefore exactly equal on all CODE
+branches, independent of compiler precision. Regular null directions of
+the owned primary solution's indefinite Hessian give full-rank level
+clouds. Equal middle-Hamming Born weights give zero first/third moments;
+the explicit skew extension satisfies [V_j,X_k]phi=delta_jk phi as a FULL
+joint CODE/bank vector. The physical lift keeps its actual C_h/s bound.
+No fair coin, chosen simple eigenstate or quotient norm replaces it.
+
+On the explicitly constructed fresh-block history, the suffix determinant
+has a transpose symmetry at central reflections. Every stated independent
+forward/backward/inner-frame row has zero heat AND zero feedback source.
+Every real earlier stage and birth detail stays in the complete H+J price.
+The original gain is 4wgs/c; attenuation, level correction and compilation
+are ordered without a clock/error circularity. The original coframe,
+proper-link and material recovery inputs and their norms are retained.
+
+The central source echo alone would erase the terminal geometric record.
+A paid born-frame COPY and a last-born guarded STORE now retain the SAME
+CODE-to-field bank in a real output branch of positive actual weight.
+The guard commutes with every birth-detail projector. Its full heat,
+independent smooth frame rows and matched native price invariance follow
+on the NEW actual clock. The output branch is not postselected in the
+price; its actual conditional readout norm and probability remain.
+
+**Domain and remaining application.** The new unitary extension transports
+the original geometric isometry on its declared fresh input and every
+protected column, not the old Householder operation on arbitrary unprepared
+WORK. Anchor, processor, COPY rule, fresh-input checkpoint and the common
+SOURCE/STORE catalogue are specified operations. Current frames may be
+correlated with the original shared protected input. They do not reopen
+earlier fresh WORK banks, although those banks and their own earlier
+control rows remain in the history. Generated cuts, scene, beta,z and
+birth/closure rules keep their declared comparison scope.
+
+These boundaries have exact hostile controls: changing the COPY rule gives
+dc=-2p sqrt(p), while a later control on an earlier fresh bank gives
+dc_total=2p sqrt(p) p^3. Both are nonzero. The result therefore does not
+establish stationarity on a larger task that admits those independent
+changes. An arbitrary unrelated source-neutral STORE also remains the
+old §7az counterexample; the original source/marked-map binding is required.
+No independently selectable operation is silently frozen and then claimed
+solved. The task-interface transport and the remaining physical constraint
+and causal-readout composition are still required for positive_gr.
+
+**Smallest decisive evidence.** The exact checker verifies the full-vector
+Born lift, six literal native transpose/centre words, the true 118-stage
+two-block clock, its complete secular coefficients, and a separate direct
+35-dimensional clock with every generated-cut component. It additionally
+EMITS AND EXECUTES the whole terminal word: 198 calls (20G,136CX,42SourceI),
+all 128 active columns, unknown helper/Spin restoration, immutable oldRIGHT.
+Four actual births give its own 202-stage clock and D_hist=50928, with
+21,644,400 full Hodge modes and 18,283,152 harmonic modes. The spectral
+identity accounts for these modes; no enormous heat matrix is reported run.
+The actual large Choi/CAR compiler and all refining word lists are supplied
+by the constructive theorem and owned interfaces, not newly simulated here.
+
+Normal and Python -O/-W error receipts agree: 161 exact checks. Explicit
+guards survive optimization. Frozen checker / receipt / emitted-word SHA-256:
+- 4e55fe7d946e6a057819dc8e6c00678baaec4938001997fedacc503831b05c9c
+- 0f961d5d65dbeeed94b136961b2497a1afad0d2151023c1783fc5bcdf2258ade
+- 9ce2ba882ea8abb773c7f3291d4c99c38a51ae56effdb745dfeb2819470ea767
+
+The proof, exact checker, receipt, pinned inputs and reproduction are in
+§7em. This is a candidate exact realization on the declared retained-bank
+control sector, not independent joint_nonlinear_solve acceptance or closure
+of full physical X_N. No new task, registry claim, Ready or merge is created.
+Older full128/raw216 scopes are unchanged; GR_closed=false. Goal active.

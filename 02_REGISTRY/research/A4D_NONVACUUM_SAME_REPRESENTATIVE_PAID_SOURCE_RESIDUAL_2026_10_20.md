@@ -118839,6 +118839,1301 @@ print(json.dumps(receipt,indent=2,sort_keys=True))
 }
 ```
 
+## 7em. Exact equal-return native banks with a full field lift and a complete growing-clock stationary control family
+
+3 November 2026. Same #334 / constitutive / native-programme-v1.
+Native realization and final composition; input
+`577188a5dcee511ff0f205d14fc4aa3aad661777`. The exact consumer is
+§7ek's equal-return branch requirement with a full geometric lift and
+the remaining heat rows. The construction below uses the owned
+G/CX/SourceI profile, the original seven genuine banks and comparator,
+and the original complete Book03 H+J price. The fullStep-only kappa
+result is preserved at its own scope; its approximate inverses are not
+silently promoted to the exact identities used here.
+
+Publication integration also consumes incoming
+`c2f7f14af3f0e6782fcfa4eb45828755f89c29aa`, §7el.A and ST1--ST3.
+Its recorded action/test diagram supplies the family-level process
+interface. Its general birth-suffix determinant is specialized below
+to commuting fresh blocks. The new step is the regular 0<c<1 reporter,
+exact equal-return native compilation, full field lift and a terminal
+bank on this SAME source. The different projection/identity-corner
+stationary germs in §7el.B--D are preserved, not identified with it.
+
+**Result and boundary.** Exact preservation of the report-sector norm
+supplies native branches of exactly equal return. A sampler on a saddle
+level has every field direction, including the full joint CODE/bank first
+jet. A new transpose identity for the ACTUAL unequal-fibre clock makes
+the independently paid control sources stationary, even after earlier
+such blocks have been retained. This constructs an exact stationary
+family in the specified retained-bank control sector, subject to the
+geometric input and preparation-interface conditions made explicit below.
+It does not register independent acceptance, identify this sector with
+every physical X_N, or close the unchanged global GR contract.
+
+### 7em.A. One operation, initial input and comparison domain
+
+At a fixed finite resolution all geometry/Choi/CAR/SITE resources are
+fresh known WORK. The original protected input is an arbitrary complete
+Hilbert factor H_old. Every completed bank operation is identity on it;
+the actual source Spin and routed source helper can be borrowed inside
+native macros only with their proved all-column restoration. Required
+oldRIGHT is untouched. Canonical births use v=(sqrt(p),p), not free
+new pure-state choices. All births of a fresh block precede its unitary
+processing body; there are no births inside that body. This is an actual
+schedule of the existing finite resources, with every birth and raw
+primitive counted.
+
+Here H_old means the original shared protected factor, not the growing
+tensor product of earlier fresh WORK banks. Allowed independently paid
+frames act on the current block and H_old, including their arbitrary
+correlations. Earlier fresh banks are retained and are not addresses of
+later frames in this control sector. Their own earlier frame variations
+remain independent and are included in the whole price. A later control
+that reopens an earlier WORK bank is a different row; it need not be zero.
+This distinction is necessary for the commutations below and is not a
+claim that every legal native continuation has the narrower interface.
+
+Fix one ACTUAL native real orthogonal implementation D of the original
+processor, with its supplied accuracy against the original full ten-sign
+and seven-reference instrument. Its original central sign is R=Z_report,
+implemented by the existing routed SourceI^2. All source, garbage, READY,
+failed outcomes and the shared SITE stay in WORK. For the complete known
+geometric bank state b(Y), write
+
+    psi(Y)=D b(Y),  q(Y)=||Pi_- psi(Y)||^2,
+    Pi_+=(I+R)/2, Pi_-=(I-R)/2.                         (EM1)
+
+The true initial WORK vector xi and full protected identity factor are
+implicit. b(Y) denotes the complete preparation ISOMETRY on this input,
+including the unsplit geometric bank when required. It does not mean
+only a scalar report law or a traced-out Choi state. The earlier native
+compiler and bank owners supply computable C3 bounds on the regular
+positive-slack chart.
+
+Choose one actual compiled anchor A_* taking xi to psi_* and put
+
+    q_*=||Pi_- psi_*||^2, c_*=1-2q_*.
+
+The original positive reporter collar and sufficient native accuracy give
+0<q_*<1/2 and c_*>0. These are the ACTUAL algebraic values of the anchor;
+no desired field value is assigned to its return. Its preparation and
+actual inverse are paid words.
+
+The retained operation at this resolution is the new complete bank
+constructed below, followed by the same D and sign R. CODE preparations
+and their separately executed reverse/common frames are independent
+controls, as in §§7eh--7ej. A specified original processor, anchor and
+fresh-bank input checkpoint are part of this task. Changing their
+registered operation or an independently free input outside that checkpoint
+retains its own source; it is not erased by calling it implementation work.
+
+The original scene, beta,z, canonical birth amplitudes/layout and closure
+constructor are fixed for this comparison. Cuts are the generated G7
+cuts, varied through their actual gates. They are not arbitrary extra
+fixed-rank cut controls. Matched finite words have the same actual
+duration. Independently selectable scene, cut, calibration, reference or
+additional Info/work terms outside this H+J object require their own
+rows; neither this construction nor the incoming action diagram drops them.
+
+This construction chooses a different full-unitary extension of a known
+bank preparation. It is not an all-column intertwiner to the earlier
+canonical Householder extension. The new extension is itself an actual
+all-column native operator and is used in its OWN complete heat. Its
+physical field/mark transport is proved on the declared fresh input and
+every protected input column. A task that also requires the old action on
+arbitrary unprepared WORK columns needs an additional transport and is
+not automatically covered. This is a new implementation within this owned
+research family, not a claim that the earlier strict full-operator section
+has changed its preservation predicate.
+
+### 7em.B. Compile equal return exactly, rather than rounding equal probabilities
+
+Suppose finitely many genuine target banks obey q(Y_b)=q_* exactly.
+Both R-sector components of psi_* and psi(Y_b) have the same nonzero
+norms sqrt(1-q_*) and sqrt(q_*). In each sector normalize these vectors
+to x and y. For x^T y>-1 set
+
+    K=y x^T-x y^T, O(x,y)=I+K+K^2/(1+x^T y).
+
+Direct multiplication gives O^T O=I, det O=1 and Ox=y. The near-anchor
+chart ensures this margin; a two-plane intermediate vector also covers
+the antipodal case. The original banks have sector dimension greater
+than one. Consequently there is a computable real target
+
+    V_b in SO(im Pi_+) x SO(im Pi_-),
+    [V_b,R]=0, V_b psi_*=psi(Y_b).                       (EM2)
+
+The relative native compiler can preserve this commutator EXACTLY.
+For r Boolean controls, the owned Walsh/Gray word implements target
+powers G^(2^r m_b), with arbitrary integer m_b, on all target columns.
+Include the report bit among its controls. Each completed multiplexer
+is then block diagonal in R. Within either R block the edges of the
+binary basis graph connect all basis states. Their plane rotations
+generate SO of that block; successive plane rotations eliminate matrix
+columns, or equivalently their commutators generate all skew matrix
+units. The owned irrational Golden angle makes the allowed multiples
+2^r m theta dense on every such circle. Thus finite products are dense
+in EACH of the two SO blocks independently.
+
+Negative powers use the actual routed Z G^n Z, with all SourceI, CX,
+helper restoration and inverse stages counted. A certified finite word
+enumeration, followed by all-column interval verification, terminates at
+any positive accuracy for the computable targets (EM2). Adding SAM to
+the control labels implements the finite catalogue in ONE fixed word,
+not a classical average of separately priced executions. The macro
+endpoints are exactly CODE diagonal, exactly R-commuting and identity
+on protected inputs, even though their intermediate raw stages need
+not commute with R. No continuously variable native angle is assumed.
+
+Let V_hat be this actual controlled native word. Define the actual bank
+and the whole reflected body by chronological execution
+
+    A_*; V_hat; D^* = B_new,
+    B_new; D; R; D^*; B_new^* = U_0.
+
+As complete operators on ALL columns,
+
+    B_new=D^* V_hat A_*,
+    U_0=A_*^* V_hat^* R V_hat A_*
+       =I_SAM tensor (A_*^* R A_*).                    (EM3)
+
+Thus every actual branch corner is c_* exactly. There is no compilation
+error in this equality. If ||V_hat,b-V_b||<=eta, its completed bank state
+is within eta of the original b(Y_b), on every protected column. Every
+subsequent fixed processor prefix preserves that norm bound. The new
+bank's own earlier prefixes are actual recorded prefixes with their own
+maps; they are not asserted to coincide with the old encoder's prefixes.
+Required observations at the completed bank and the following fixed
+instrument retain their original complete joint state, to this error.
+
+### 7em.C. A full-rank born sampler on a genuine saddle level
+
+Let F be the normalized ORIGINAL report function on an m-dimensional
+regular field chart at Y_h. It includes the proper-link chart, all
+coframe/matter variations and any supplied independent PF/observer or
+shared preparation coordinates. Keep the physical norm V_h and its
+actual coordinate map iota_h. Suppose its Hessian H has both signs.
+No nonsingularity modulo gauge is required.
+
+There exist m independent regular null vectors r_i with
+r_i^T H r_i=0 and H r_i!=0. To see this, choose H-orthogonal u,v with
+H[u,u]=1, H[v,v]=-1. The two vectors u+v,u-v span their plane.
+Complete it with w_i in its H-orthogonal complement. For sufficiently
+large t_i, each
+
+    r_i=w_i+t_i u+sqrt(t_i^2+H[w_i,w_i]) v
+
+is regular null, and its image modulo span(u,v) is w_i. This also
+covers zero eigenvalues and the full gauge kernel. Effective bounds
+follow from the actual strict positive/negative margins and chart norms.
+
+Choose even L with binomial(L,L/2)>=2m. Use the actual born SAM vector
+phi=v^tensor L. Assign 2m middle-Hamming labels to +/-r_i; set r_b=0
+at every other label. Each paired label has exactly the SAME native
+weight w0=p^(3L/2), with no fair-coin preparation. Therefore
+
+    E r_b=0, E(r_b,j r_b,k r_b,l)=0,
+    C=E(r_b r_b^T)=2w0 sum_i r_i r_i^T >0.              (EM4)
+
+This is sufficient for the stronger marked-state first jet, not just
+the scalar mean. Put V_j=diag(r_b,j), a_j=V_j phi,
+A=[phi,a_1,...,a_m], G_A=A^T A=diag(1,C). For coordinate k put
+
+    z_k=(1/2) sum_l (C^-1)_lk V_l phi,
+    B_k=[z_k,V_1 z_k-delta_1k phi,...,V_m z_k-delta_mk phi],
+    X_k=B_k G_A^-1 A^T-A G_A^-1 B_k^T
+                       -A G_A^-1(A^T B_k)G_A^-1 A^T.   (EM5)
+
+The zero odd moments in (EM4) make A^T B_k skew, with only its
+0,k and k,0 entries -1/2,+1/2. Hence
+
+    X_k^T=-X_k, X_k A=B_k,
+    [V_j,X_k]phi=delta_jk phi.                          (EM6)
+
+This is equality of full vectors on the positive born support. Every
+unused label remains in the input, heat and price. In particular it is
+not the simple-eigenstate shortcut excluded by §7ek.
+
+All constants are finite and explicit. For R_v=max_b||r_b||_2 and
+a_plus=||A^+||, one may use
+
+    ||X_k|| <= 2 a_plus sqrt((1+2R_v^2)(C^-1)_kk/4+2)
+                            +a_plus^2/2.              (EM7)
+
+Combining these with ||iota_h|| gives the actual physical lift bound
+C_h/s. No Euclidean norm replaces V_h and no mesh-independent bound
+on C_h/s is assumed.
+
+Suppose the exact level nodes satisfy
+Y_b=Y_h+s r_b+O(s^2), with a uniform finite bound on that remainder.
+On the unused labels use the actual anchor bank, within its stated
+accuracy of b(Y_h). After the paid common CODE frame of §7ej, the
+completed marked state is P^* B_new P(phi tensor xi). Its derivative
+along X_k is [B_new,X_k](phi tensor xi). Taylor expansion on this
+input isometry, using (EM6), gives
+
+    (1/s) D_Xk[marked state]
+       = phi tensor D_k b(Y_h) + error,
+    ||error|| <= 2||X_k||[(M1 K_nodes+M2 R_v^2/2)s+eta/s]. (EM8)
+
+An anchor error and its bounded zero-label contribution are included
+in eta. The value error is O(s)+eta. All norm-one joint CODE/Choi/CAR
+effects inherit the corresponding trace-norm/first-source bound. A
+smooth owned decoder has the same full right lift for sufficiently
+small errors. This is the same completed-bank frontier as §7ej;
+an unfinished encoder or an off-diagonal SITE test is not relocated.
+
+### 7em.D. The owned curved solution supplies the level nodes
+
+Consume the original compatible primary Brinkmann/CAR finite family
+and its original full-CAR first-jet map, with the corrected material
+coframe convention. At its Y_h the owned finite action I_h has
+DI_h(Y_h)=0 on all independent interior rows. The same-field-minimum
+owner supplies the null-family spike t and independent transverse
+coframe r, whose mixed Hessian block is
+
+    [[0,A_h],[A_h,B_h]], A_h!=0.
+
+Its determinant is -A_h^2. Thus the SAME source has both signs even
+when it has gauge degeneracy. This consumes
+`A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md` §3 and the
+common-null first-source identities in the full ten-sign owner. It
+does not import the different unpadded N1 root or presume a minimum.
+
+For the genuine seven banks of §7eh, Q/g tends to the actual I_h
+up to a field-independent baseline, in C2 on each fixed regular
+compact chart. This follows directly by differentiating its finite
+polynomial report Taylor formula twice: its original f,q, inverse PF
+and bank maps have bounded C3 derivatives there. The mixed saddle
+block is also visible by differentiating the owned first-source
+identity along the null family. A fixed native approximation D of
+the original processor changes each of these derivatives by at most
+its operator error times the finite bank-jet constants. This error
+is charged relative to the same positive g.
+
+The attenuation is the already owned common observable norm bound:
+enlarge the field-independent certified Lambda_h, keeping the genuine
+reference geometry fixed. Then epsilon_h=1/(64 Lambda_h) and
+delta_h=epsilon_h d_h shrink together as in §7eh.F, with the same
+original positive effects and recomputed actual gain. The proof does
+not choose these two amplitudes independently or supply scalar
+reference probabilities in place of their geometric banks.
+
+Here is a noncircular order of choices. For each h choose a compact
+Hessian neighbourhood with both signs and its finite norm/margin
+bounds from I_h. Choose s_h>0 small enough for the desired physical
+field/mark budgets. Then choose the reporter/reference attenuation
+so its normalized C1 error is <=a_h s_h^2 and its C2 error stays in
+that Hessian neighbourhood. Compile D to the corresponding smaller
+positive operator tolerance, including all bank derivatives. Finally
+compile the anchor with |q_*-q(Y_h)|<=g a_h s_h^3. The fixed-chart
+C3 bounds of the normalized polynomial reporter are uniform for
+these sufficiently small attenuations; they do not diverge merely
+because g shrinks. Allocate the D error relative to g to preserve
+this bound. The constants a_h can be reduced using the displayed
+finite chart/ray bounds before the compiler is run.
+
+Use H=D^2(q/g)(Y_h) in (EM4). At Y_h+/-s_h r_i,
+
+    q(Y)-q_* = O(g s_h^3),
+    D_(H r_i) q(Y) = +/- g s_h ||H r_i||^2+O(g s_h^2).
+
+The derivative has a fixed nonzero sign on a sufficiently small
+O(s_h^2) interval. Bracketing and interval bisection give a unique
+computable correction of size O(s_h^2) reaching q(Y_b)=q_* EXACTLY.
+This produces the targets for (EM2); it does not require the actual
+compiled matrix entries to equal those geometric real numbers.
+The native relative compiler instead preserves the level exactly
+and approximates their complete state/marks, as proved in B.
+
+Every requested positive compiler precision halts. The subsequent
+word lengths are actual output costs; they are not assumed to be
+polynomial or used to choose a clock error in a circular loop.
+The core source comparison still uses the ACTUAL gain
+Gamma_s=4wgs/c_* with the whole retained Gram, not D(B/Gamma_s).
+In particular the source-norm error has the owned form
+E_tau,h+C_h[O(s_h)+eta/(g s_h)] with all finite constants retained;
+the actual equal-return corner error itself is ZERO. Choose the
+isometry and mark tolerances smaller if this conservative bound
+requires it. The same construction is permitted off shell as a
+bank/control architecture; the root construction uses an owned
+solution to prove existence, not an Einstein condition in admission.
+
+The complete new preparation isometry is used here. A coarse event
+probability without the original bank-state/marked-map transport
+would not justify this application. At other fields a constant-return
+table with a collapsing physical right lift would fail (EM6)--(EM8),
+as the negative control in §7ek already proves.
+
+### 7em.E. Exact spectrum of the actual growing history under transpose
+
+Retain finitely many completed fresh blocks. Their whole central
+endpoints U_k act on disjoint new WORK/SAM factors and are identity
+on protected inputs, so they commute. Each block can have any actual
+finite native length; all its births occur before its processing body.
+All earlier raw gates, marks and complements remain in the history.
+
+Use GROWING_CLOCK (G1)--(G10) literally. Let N be the number of real
+stages, D_hist=sum_j dim H_j, and let E_j=B_(j,f) D_j B_(j,f)^T
+be the full final-space birth-detail projectors, including the initial
+E_0=B_(0,f)B_(0,f)^T. They are orthogonal and sum to I. For a nonzero
+detail at stage j let k(j) be the first processing body after that
+birth; j=0 uses k=1. Put ell_j=N-j. Specialize incoming ST1, obtained from the matrix determinant lemma
+for T=S+R_clock g E_f and the finite triangular inverse of
+lambda I-S. With this actual schedule it gives the EXACT identity
+
+    det(lambda I_Dhist-T)=lambda^Dhist det(I-K(lambda)),
+    K(lambda)=sum_j lambda^(-ell_j) U_(>=k(j)) E_j.       (EM9)
+
+This formula includes the last actual primitive g. Interior unitary
+stages have zero birth detail but still contribute to ell_j and
+D_hist. Collapsing their products in (EM9) is spectral algebra, not
+removing their clocks or adding executed identity stages. In particular
+sum_j ell_j rank(E_j)=D_hist.
+
+Earlier bodies act on unrestricted earlier factors of a later birth
+detail, so E_j commutes with U_(<k(j)). With U_tot=product_k U_k,
+write
+
+    L(lambda)=sum_j lambda^(-ell_j) E_j U_(<k(j))^(-1),
+    K=U_tot L,
+    det(I-K)=det(U_tot) det(U_tot^(-1)-L).              (EM10)
+
+Replacing ALL U_k by U_k^T transposes U_tot^(-1)-L and preserves
+det(U_tot). Hence it preserves the whole characteristic polynomial
+of the actual growing T. At a central history consisting of real
+reflections U_k=U_k^T, changing one body to a pair U_+,U_-=U_+^T
+therefore gives EXACTLY equal clock spectra, at the same true layout.
+It is not necessary for that independently changed body itself to
+be a reflection.
+
+The commutations in this argument are actual hypotheses: every changed
+body still acts only on its own fresh factors and H_old, so it commutes
+with every other central body. Ordinary endpoint reflection alone would
+not suffice for an arbitrary interleaved-birth word, as incoming §7el.B
+already demonstrates. The powers and E_j in (EM9) are precisely the
+specialization of its ST1; no tensor-padded clock is substituted.
+
+For a smooth independent body jet dU_k that is skew at the central
+reflection, differentiating (EM10) gives zero characteristic-polynomial
+source. One can see this directly: U_tot and L are symmetric and
+dU_tot,dL skew; the determinant of I-AB, with the other argument
+symmetric, is invariant under transposing either argument. Newton
+identities then give D Tr(T^n)=0 for every n. Orthogonality gives the
+same for negative powers.
+
+The original Delta0=I-B_s tensor I-C_s tensor(T+T^T) has moments
+which are linear combinations of Tr(T^n). This remains true when
+B_s and C_s do not commute: the time factors are only I and T+T^T.
+Thus its heat trace has zero first source. BOTH Hodge degrees and
+their 359D_hist extra zero modes remain:
+
+    Z_01=2 Tr_(33Dhist) exp(-beta Delta0)+359Dhist.       (EM11)
+
+Transpose-paired native bodies give equal complete values of (EM11),
+not merely an asymptotically small heat error. This is the whole
+retained history; no assumption that an arbitrary old prefix was a
+reflection has been inserted. The hypothesis is the explicitly
+constructed commuting fresh-block history, verified block by block.
+
+### 7em.F. Independent controls, full return and exact finite comparisons
+
+Each central body in (EM3) is a reflection and is identity on SAM
+and shared protected factors. An independent outer CODE/protected
+preparation has endpoint jet U_k X or -X U_k. These are skew because
+X commutes with that central U_k. Each independently paid inner frame
+commutes with R; after conjugation by A_* its jet is skew as well.
+The four frames in §7ej remain separate occurrences. No equality of
+their variations is imposed to make the source vanish.
+
+At the central input each block has cold corner c_k I_old, c_k>0.
+Compression of a skew jet is skew on H_old. Thus the entire retained
+corner C=(product_k c_k) I_old has
+
+    D(C^T C)=0
+
+for EVERY such independent row, including correlated CODE/live
+protected controls and rows in earlier retained blocks. The exact
+whole feedback determinant of (G10), with its generated cuts, has
+zero first source. Combining with (EM11) proves
+
+    D B_history[v]=0                                  (EM12)
+
+on the full real span of this stated control domain. This is a joint
+source conclusion on ONE paid history, not a cancellation of two
+nonzero sources. The original price and its absolute growing value
+are unchanged.
+
+There are also exact statements for REAL native comparisons, not
+only smooth comparison jets. For one independently varied occurrence,
+use a native control and its actual inverse, with common raw lengths
+provided by the existing signed-power padding. The two body endpoints
+are transposes. All other central bodies are reflections, so (EM10)
+gives equal heat. Their full compressed corners are transposes times
+the other scalar c_j; the determinants of (1-z)I+z C^T C agree.
+Therefore
+
+    B_plus=B_minus                                   (EM13)
+
+for these independently tested native symmetric differences. For
+matched CODE controls the complete body endpoint is itself unchanged,
+so the equal-price statement is even exact against the centre at the
+same layout. Arbitrary simultaneous noncommuting finite changes on a
+shared protected factor are not inferred to have this symmetry; the
+full smooth covector (EM12) follows by linearity of its independent
+rows. The declared finite difference is not renamed as a derivative
+of an integer word label.
+
+The central fixed anchor/processor is NOT an arbitrary stationary
+hardware matrix. An extra noncommuting preparation can have a nonzero
+return row, as the checker demonstrates. Such a change of the fixed
+retained operation or fresh-input checkpoint needs its own same-task
+admission/source application. This result does not set that normal
+to zero. Exact invariance also does not identify the new full-unitary
+extension with the old one on unprepared WORK columns.
+
+A separate exact negative control shows why later access to earlier
+fresh WORK was not included. Take two born bits, central bodies Z_A,Z_B
+and a later skew generator J_A on the first block. Both cold factors
+are c=p^3. At the second body, the full corner derivative is
+dc_total=2p sqrt(p)c!=0. Although the later body jet itself is skew,
+it does not commute with the earlier Z_A. The full feedback row is
+nonzero. Thus the theorem cannot close a task whose later controller
+may independently vary that earlier bank without preserving its rule.
+
+### 7em.F2. Retain the SAME geometric bank in a physical terminal register
+
+The echo (EM3) alone does not leave its changing geometric bank in the
+terminal state. A marked history and an accessible surviving record
+must be distinguished. The following paid extension supplies a terminal
+record with the SAME CODE-to-field rule; it does not use an independently
+chosen geometry record to assert source compatibility.
+
+Before the block's processing, birth an additional STORE bank and then
+one final FLAG. All SOURCE, STORE and SAM bits are born BEFORE FLAG.
+In the canonical born frame write v_perp=(-p,sqrt(p)). The central
+source body W_*=A_*^* R A_* is independent of CODE and has cold c_*.
+Its output has probability 1-c_*^2>0 outside the all-born SOURCE state.
+If SOURCE has n bits, some ordinary source bit j has probability
+
+    t_j=Pr(bit j is v_perp) >= (1-c_*^2)/n >0.          (EM14)
+
+All these numbers are actual finite algebraic matrix entries. Select
+a certified such bit (or one with half that lower bound). No unknown
+protected Spin or oldRIGHT bit is used as this record control.
+
+The born-frame COPY is the actual conjugated CNOT
+
+    C_copy=(G_j tensor G_FLAG) CX(j,FLAG)
+                              (G_j^* tensor G_FLAG^*).
+
+Its forward and inverse gates are paid, and it fixes the true initial
+born state. The new central U_base=C_copy(W_* tensor I)C_copy is a
+real reflection, still CODE independent, with the SAME cold c_*.
+FLAG has terminal probability t_j in v_perp. STORE is still in its
+canonical state independently of the SOURCE/FLAG output.
+
+Let W_store be a fixed actual native CODE-controlled preparation of
+the original required geometric bank at the SAME catalogue Y_b,
+with its own full-state error certificate. Make its guarded version
+
+    V_store=|v><v|_FLAG tensor I
+                  +|v_perp><v_perp|_FLAG tensor W_store. (EM15)
+
+The native relative compiler supplies this exact flag-block structure:
+use actual G_FLAG^* and G_FLAG around a computational-flag controlled
+word. It acts on STORE/SAM, restores shared source apparatus and keeps
+the complete other branch. This uses the same fixed node data and
+read-only CODE as the SOURCE bank. No unknown state is cloned.
+
+The final paid body is
+
+    U_term=V_store U_base V_store^*.                   (EM16)
+
+V_store fixes the actual initial input for EVERY CODE input. Thus the
+cold corner remains c_* I_CODE,old and U_term is a reflection. On the
+real outcome FLAG=v_perp, the terminal STORE is the actual originally
+specified b(Y_b) approximation, including its full known Choi/CAR
+resources. Nothing subsequently uncomputes it. The whole flag and
+failure branches remain in the price. Dividing a CONDITIONAL geometric
+readout by its actual positive t_j is not conditioning the action;
+its readout norm, statistical cost and error amplification are retained.
+After the final common CODE frame, (EM8) applies to the joint CODE/STORE
+state on this branch, with the explicit amplitude sqrt(t_j) and the
+corresponding conditional normalization. Allocate compiler tolerances
+relative to this actual bound as well.
+
+The LAST-birth choice makes the heat argument exact. V_store is identity
+on every earlier birth-detail sector, whose still-unborn FLAG is v.
+It preserves the last detail, whose prior carrier is unrestricted.
+It also commutes with every detail from later fresh blocks, which is
+identity on this whole earlier block. Therefore
+
+    [V_store,E_j]=0 for EVERY detail in the full history. (EM17)
+
+The secular formula (EM9) is invariant under a conjugation of one body
+by an operator commuting with all E_j and the other completed bodies.
+Consequently (EM16) has exactly the same full heat spectrum as U_base,
+at the NEW actual native duration; it is not equated with an older
+shorter-clock price.
+
+The independent-control sources also survive this terminal extension.
+Here is the additional lemma required for this assertion. If Y is skew,
+commutes with every E_j and with the other central bodies, then at a
+real reflection U_k the heat along U_k exp(tY) is EVEN in t. Conjugate
+this body by exp(tY/2) to obtain
+exp(tY/2)U_k exp(tY/2); transposition gives its value at -t. Equations
+(EM9)--(EM10) prove both spectral equalities on the real growing clock.
+Thus this independent row has exactly zero heat first source, even
+when U_k Y itself is not skew.
+
+For an outer CODE/live-protected generator X, conjugation by V_store
+gives X'=V_store^* X V_store=X+Y. The extra Y is supported entirely
+on the last FLAG=v_perp detail, hence commutes with all E_j. The X
+part commutes with U_base and is covered by E; the Y part is covered
+by the additional lemma. Its return row is zero because Y annihilates
+the input. This proves the independent forward AND backward outer
+sources, not only their paired sum. The inner SOURCE-frame jets were
+skew and stay skew under C_copy/V_store conjugation. Independent guarded
+storage-frame jets have the same birth-detail property and zero return
+row. Generated cuts are still exactly those of the entire new tape.
+
+Matched actual CODE controls give V_store(P)=P^* V_store P, which has
+the same FLAG guard and still commutes with every E_j. U_base is CODE
+independent, so the whole matched body remains a conjugate by this
+allowed birth-detail symmetry. Its COMPLETE price is exactly constant,
+while its terminal geometric record has the full varying first jet.
+For this terminal extension we assert the full independent SMOOTH
+covector zero and this matched native equal-price statement. The
+stronger single-occurrence finite-pair equality (EM13) for the
+unaugmented body is not silently asserted for every terminal outer
+control pair.
+
+The COPY is also a specified all-input operation of this retained task,
+with its actual canonical flag input. Arbitrary changes of that copy
+rule are NOT solved by the stationary-control theorem. In the small
+fixture the two-wire skew rotation between v tensor v and
+v_perp tensor v_perp, inserted at the output COPY occurrence, has
+dc=-2p sqrt(p)!=0. A larger task admitting this changed record rule
+needs that source. Faithful refactorizations which preserve the
+recorded whole COPY operator and its required input/marks remain
+covered at their actual fixed length. This explicit boundary prevents
+the record operation from being treated as independently variable
+while its nonzero source is hidden.
+
+The same-CODE field rule is essential. An arbitrary unrelated W_store
+could encode non-Einstein geometry at unchanged price, as the older
+§7az example already warns. Here its specified input, catalogue and
+joint marked-map agreement with the original SOURCE banks are part
+of the retained experiment, with their actual error budgets. Changing
+that rule is not established as a faithful implementation by this
+price identity. This explicit binding, rather than merely storing
+some readable metric, is the additional application supplied above.
+
+### 7em.G. Refinement and the precise substitution
+
+At each cofinal mesh apply D to the owned compatible curved Y_h,
+append its fresh native block, with F2's required terminal store, to the
+SAME retained history, and choose
+s_h and all mark/control/compiler budgets so the errors in (EM8) and
+the original physical source norm tend to zero with an effective
+modulus. Every finite initial segment still consists of the commuting
+central reflections required by E; earlier control sources remain
+zero by F. Earlier records are retained literally, while the new
+original geometric readouts recover the same fixed curved continuum
+field with the owned mesh/matter errors and the new vanishing bank
+errors. The true gain is positive at each finite stage; it need not
+have a uniform positive lower bound.
+
+The same original source comparison gives the usual soundness
+implication for any regular family satisfying its FULL source and
+marked-map interfaces: exact finite stationary sources have zero
+calibrated limit, hence the owned Einstein--CAR equations. A full-rank
+but uncontrolled shrinking-table parametrization is insufficient;
+the displayed physical lift and error budgets are part of this
+application. No price is fitted to an Einstein equation. The original
+report function chooses the level; the solution supplies the recovery
+input and its saddle sign, just as a recovery theorem must.
+
+This removes the specific equal-return/field-rank and complete-clock
+obstacles of §7ek on this constructed retained-bank sector. Its
+geometric preparation extension, fixed-operation input checkpoint and
+SOURCE-I capability are explicit application hypotheses. A stronger
+physical domain that independently changes those operations, arbitrary
+unprepared WORK inputs, or later cross-bank observing dynamics still
+needs its own exact source/transport. A future observation is paid and
+its availability is not a theorem that every such extension is stationary.
+
+This is a candidate exact finite realization for the existing consumer,
+not an independent acceptance of `joint_nonlinear_solve` or a promotion
+of `positive_gr`. The physical constraint/causal readout composition,
+the exact required task-interface acceptance and the unchanged older
+full128/raw216 obligations retain their stated scopes. `GR_closed=false`.
+
+### 7em.H. Decisive exact evidence and what was actually executed
+
+The checker verifies the changed construction without replaying the
+large geometric compiler. A four-born-bit cloud in two coordinates
+has weights p^6 on four middle-Hamming labels, covariance 2p^6 I,
+and explicit full-vector generators (EM5). Each generator's squared
+Frobenius norm is 18p+233/8, bounded above by 377/8. All commutators
+in (EM6) are checked exactly, including the unused positive input labels.
+
+Six literal original-alphabet words implement two bodies and their
+independent plus/minus/centre controls. The first body costs exactly
+46 calls (4G,32CX,10SourceI), the second 68 (10G,44CX,14SourceI),
+with identical counts for all three variants of each body. Every
+active input column is checked over the exact Golden field; the
+unknown helper/Spin factors are restored and immutable oldRIGHT is
+an exact untouched factor. The actual words are emitted by the frozen
+checker and pinned by their canonical JSON hash.
+
+With four real births their true clock has 118 stages and
+D_hist=20592, including the 16-dimensional free protected factor.
+All 8,751,600 Hodge modes and 7,392,528 harmonic modes are retained.
+The actual secular lags are 118,117,116,69,68. Exact equality is
+verified coefficient by coefficient in the secular matrix (EM10),
+so it holds for those real lengths without an enormous heat matrix.
+A separate small structural clock of dimension 35 verifies the
+entire characteristic polynomial, every birth complement and the
+full generated-cut return directly. Its shorter labelled body edges
+are an algebraic control, not a replacement for the real 118-stage price.
+
+A separate exact 16-dimensional terminal-storage fixture verifies the
+born-frame COPY, both guarded output banks, all birth-detail commutators,
+and the decomposition of each outer-frame generator used in F2. Its
+actual flag probability is 4p^3. The complete terminal body is ALSO
+emitted and executed as 198 literal native calls: 20G,136CX,42SourceI.
+Exact Golden-integer propagation checks every one of its 128 active
+input columns against I_helper,Spin tensor U_term. The immutable
+oldRIGHT factor is untouched by address, so all its columns are retained.
+Its two-control Walsh word is exact G^4 on CODE=FLAG=1 and identity
+on the other branches; no continuous controlled rotation is substituted.
+With four actual preceding births, this terminal fixture has 202 stages,
+D_hist=50928, all 21,644,400 Hodge modes and 18,283,152 harmonic modes.
+This is its own actual clock budget, not the 118-stage unaugmented
+fixture above. The large Hodge matrices need not be materialized: the
+proved secular identity applies to these verified native endpoints
+with those exact stage lengths and birth details.
+
+A noncommuting independent report rotation has the exact nonzero
+return row -2a^3, preventing a claim of unrestricted hardware
+stationarity. The later-access negative control likewise retains its
+nonzero whole-history return row. The actual enormous Choi/CAR source-bank compiler,
+full field level-set instances and all refining native word lists
+are constructed by the theorem/owned interfaces, not represented as
+newly executed by this arithmetic checker. Its finite evidence does
+not by itself discharge the broader physical acceptance conditions.
+
+
+### 7em.I. Frozen inputs, checker and reproducible evidence
+
+The executed runtime was Python 3.12.14 with SymPy 1.14.0. Normal and
+`-O -W error` receipts agree byte for byte: 161 explicit exact checks.
+All code/evidence below uses LF newlines. SHA-256:
+
+- Checker: `4e55fe7d946e6a057819dc8e6c00678baaec4938001997fedacc503831b05c9c`.
+- Receipt: `0f961d5d65dbeeed94b136961b2497a1afad0d2151023c1783fc5bcdf2258ade`.
+- Emitted native words: `9ce2ba882ea8abb773c7f3291d4c99c38a51ae56effdb745dfeb2819470ea767`.
+
+The exact input snapshots are pinned below. The primary artifact and
+brief have their BEFORE-insertion hashes; they are historical inputs,
+not self-referential claims about this expanded file. Unchanged owners
+are reused, not replayed as part of this narrow calculation.
+
+Run the following at repository root with the stated Python/SymPy
+runtime. It extracts the frozen source into a new temporary directory,
+checks the historical pins, runs both modes, compares the complete
+receipts and verifies the emitted native word bytes. It writes no
+repository file and does not materialize the large Hodge matrices.
+
+```python
+from pathlib import Path
+import hashlib, json, subprocess, sys, tempfile
+root=Path.cwd()
+primary=root/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+text=primary.read_text()
+def frozen(label, language):
+    marker='<!-- 7em EQUAL RETURN '+label+' -->\n```'+language+'\n'
+    if text.count(marker)!=1: raise RuntimeError('nonunique frozen block '+label)
+    return text.split(marker,1)[1].split('\n```',1)[0].encode()+b'\n'
+def checked_hash(data,pin):
+    if hashlib.sha256(data).hexdigest()!=pin: raise RuntimeError('SHA mismatch')
+source=frozen('CHECKER','python'); expected=frozen('RECEIPT','json')
+checked_hash(source,'4e55fe7d946e6a057819dc8e6c00678baaec4938001997fedacc503831b05c9c')
+checked_hash(expected,'0f961d5d65dbeeed94b136961b2497a1afad0d2151023c1783fc5bcdf2258ade')
+inputs=json.loads(frozen('INPUTS','json'))
+for ref, names in [(inputs['input_commit'],inputs['files']),
+                   (inputs['publication_integration_commit'],inputs['integration_files'])]:
+    for rel,pin in names.items():
+        historical=subprocess.run(['git','--work-tree='+str(root),'show',ref+':'+rel],
+                                  check=True,stdout=subprocess.PIPE).stdout
+        checked_hash(historical,pin)
+work=Path(tempfile.mkdtemp(prefix='d0-equal-return-'))
+checker=work/'check_equal_return.py'; checker.write_bytes(source)
+for flags in ([],['-O','-W','error']):
+    output=subprocess.run([sys.executable,*flags,str(checker),'--out',str(work)],
+                          check=True,cwd=root,stdout=subprocess.PIPE).stdout
+    if output!=expected: raise RuntimeError('complete receipt mismatch')
+checked_hash((work/'native_words.json').read_bytes(),
+             '9ce2ba882ea8abb773c7f3291d4c99c38a51ae56effdb745dfeb2819470ea767')
+print(json.dumps({'status':'PASS','checks':161,'evidence_directory':str(work)},indent=2))
+```
+
+<!-- 7em EQUAL RETURN INPUTS -->
+```json
+{
+  "input_commit": "577188a5dcee511ff0f205d14fc4aa3aad661777",
+  "files": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "6089ca4b1938f45b0124c25f5ac1c4e3eb4a8da0983b97024de9dac46e653755",
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "82ceb117aeb75fbc0edcf2c84109779c39b5febe562e36f900f74224014b1771",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md": "3a13f82d4b1ef149328da05b62bd0485d1970db3ed4fb38aff044e98f2b6df1a",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "70da30184823746c040549b3182080326f30af9caba08c95c3a13da46bc8c294",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "publication_integration_commit": "c2f7f14af3f0e6782fcfa4eb45828755f89c29aa",
+  "integration_files": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "b8468e4feb18431549877130535caa4712fa5c5605c8af98be16d48e717578de",
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "bb885a46a3c1970c2e3f0d0425074c196221866e2f46ead052a10c4905793636"
+  }
+}
+```
+
+<!-- 7em EQUAL RETURN CHECKER -->
+```python
+"""Exact changed arithmetic only. Does not execute a full geometric compiler.
+
+Run at repository root; optional --out DIR saves the literal native words.
+The complete growing-clock theorem and saddle-bank application are analytic.
+"""
+from pathlib import Path
+import argparse, hashlib, importlib.util, json, sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+
+parser=argparse.ArgumentParser(); parser.add_argument('--out',type=Path)
+args=parser.parse_args(); root=Path.cwd()
+native_path=root/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+native_hash='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+checks=[]
+def require(ok,name):
+    if not bool(ok): raise ArithmeticError(name)
+    checks.append(name)
+require(hashlib.sha256(native_path.read_bytes()).hexdigest()==native_hash,'native source pin')
+spec=importlib.util.spec_from_file_location('native_equal_return_owner',native_path)
+native=importlib.util.module_from_spec(spec);sys.modules[spec.name]=native;spec.loader.exec_module(native)
+
+a=S.Symbol('a',real=True);p=a*a;minimal=a**4+a**2-1
+def red(x):
+    n,d=S.fraction(S.cancel(x));n=S.rem(n,minimal,a);d=S.rem(d,minimal,a)
+    if d==0:raise ArithmeticError('zero Golden denominator')
+    return S.rem(S.expand(n*S.invert(d,minimal,a)),minimal,a)
+def mat(M):
+    M=S.MutableSparseMatrix(M)
+    return S.MutableSparseMatrix(M.rows,M.cols,
+        {ij:y for ij,x in M.todok().items() if (y:=red(x))!=0})
+def equal(A,B,name):
+    if isinstance(A,S.MatrixBase) or isinstance(B,S.MatrixBase):
+        require(not mat(S.Matrix(A)-S.Matrix(B)).todok(),name)
+    else: require(red(A-B)==0,name)
+I2=S.eye(2);I4=S.eye(4);G=S.Matrix([[a,-p],[p,a]])
+v=S.Matrix([a,p]);J=S.Matrix([[0,-1],[1,0]]);Z=S.diag(1,-1)
+R=S.kronecker_product(Z,I2)
+require(S.Poly(minimal,a).is_irreducible,'Golden polynomial is irreducible')
+
+# Original born weights: four nonzero null nodes of xy, all other labels zero.
+L=4;m=2;phi=S.kronecker_product(v,v,v,v)
+nodes=S.zeros(16,2)
+for b,row in [(3,(1,0)),(5,(-1,0)),(6,(0,1)),(9,(0,-1))]:
+    require(b.bit_count()==2,'paired label '+str(b)+' has middle Hamming weight')
+    nodes[b,0],nodes[b,1]=row
+weights=[red(x*x) for x in phi]
+equal(sum(weights),1,'actual born cloud normalized')
+for b in (3,5,6,9):equal(weights[b],p**6,'equal native pair weight '+str(b))
+V=[S.diag(*list(nodes[:,j])) for j in range(m)]
+C=S.zeros(m)
+for j in range(m):
+    equal((phi.T*V[j]*phi)[0],0,'zero first moment '+str(j))
+    for k in range(m):
+        C[j,k]=red((phi.T*V[j]*V[k]*phi)[0])
+        for l in range(m):
+            equal((phi.T*V[j]*V[k]*V[l]*phi)[0],0,'zero third moment '+str((j,k,l)))
+equal(C,2*p**6*S.eye(m),'positive full-rank covariance')
+A=S.Matrix.hstack(phi,*[Vi*phi for Vi in V]);Gram=mat(A.T*A)
+equal(Gram,S.diag(1,C),'actual column Gram')
+Ginv=mat(Gram.inv());Ci=mat(C.inv());generators=[]
+for k in range(m):
+    zz=mat(sum((Ci[l,k]*V[l]*phi for l in range(m)),S.zeros(16,1))/2)
+    B=S.Matrix.hstack(zz,*[Vi*zz-int(j==k)*phi for j,Vi in enumerate(V)])
+    cross=mat(A.T*B)
+    equal(cross+cross.T,S.zeros(m+1),'skew-extension compatibility '+str(k))
+    X=mat(B*Ginv*A.T-A*Ginv*B.T-A*Ginv*cross*Ginv*A.T)
+    equal(X+X.T,S.zeros(16),'full skew generator '+str(k))
+    equal(X*A,B,'all prescribed generator columns '+str(k))
+    for j in range(m):
+        equal((V[j]*X-X*V[j])*phi,int(j==k)*phi,
+              'full joint marked first-jet identity '+str((j,k)))
+    generators.append(X)
+for b in range(16):equal(nodes[b,0]*nodes[b,1],0,'saddle level node '+str(b))
+
+# Literal native words on helper0, Spin1/2, report3, target4.
+# An immutable oldRIGHT and any additional factors are identities by address.
+Gate=native.Gate
+def swap(i,j):return [Gate('CX',(i,j)),Gate('CX',(j,i)),Gate('CX',(i,j))]
+def routed_z(target):
+    if target==0:return [Gate('SourceI',(0,1,2))]*2
+    return swap(0,target)+[Gate('SourceI',(0,1,2))]*2+swap(0,target)
+def signed_power(target,n,clock):
+    require(clock>=abs(n) and (clock-n)%2==0,'signed power parity '+str((n,clock)))
+    return ([Gate('G',(target,))]*((clock+n)//2)+routed_z(target)
+            +[Gate('G',(target,))]*((clock-n)//2)+routed_z(target))
+def conditional(k):
+    # Net target exponent 4k for report0, and zero for report1.
+    return signed_power(4,2*k,2)+[Gate('CX',(3,4))]+signed_power(4,2*k,2)+[Gate('CX',(3,4))]
+def anchor_inverse():return routed_z(3)+[Gate('G',(3,))]*3+routed_z(3)
+def body(which,k):
+    inside=conditional(k)+routed_z(3)
+    return inside if which==1 else [Gate('G',(3,))]*3+inside+anchor_inverse()
+
+def literal_matrix(gates):
+    """Every one of 32 input columns, sparse exact Golden arithmetic."""
+    n=5;dim=1<<n;rows=[{j:S.Integer(1)} for j in range(dim)]
+    mask=lambda q:1<<(n-1-q)
+    for gate in gates:
+        if gate.op=='G':
+            bit=mask(gate.wires[0]);new=list(rows)
+            for i in range(dim):
+                if i&bit:continue
+                j=i|bit;r0=rows[i];r1=rows[j];keys=r0.keys()|r1.keys()
+                new[i]={t:y for t in keys if (y:=red(a*r0.get(t,0)-p*r1.get(t,0)))!=0}
+                new[j]={t:y for t in keys if (y:=red(p*r0.get(t,0)+a*r1.get(t,0)))!=0}
+            rows=new
+        else:
+            new=[None]*dim
+            for i in range(dim):
+                j=i;sign=1
+                if gate.op=='CX':
+                    c,t=gate.wires
+                    if i&mask(c):j=i^mask(t)
+                elif gate.op=='SourceI':
+                    port,s0,s1=gate.wires
+                    if i&mask(port):
+                        if i&mask(s1):sign=-1
+                        j=i^mask(s1)
+                else:raise ArithmeticError('unknown literal gate')
+                new[j]={t:sign*x for t,x in rows[i].items()}
+            rows=new
+    return S.MutableSparseMatrix(dim,dim,{(i,j):x for i,row in enumerate(rows) for j,x in row.items()})
+
+words={};endpoints={};inventories={}
+AA=S.kronecker_product(mat(G**3),I2)
+for which in (1,2):
+    for k in (-1,0,1):
+        gates=tuple(body(which,k))
+        ex=native.Execution(6,(),(5,),gates,native.G_CX_SOURCE_I,0,(1,2))
+        native.validate_execution(ex,max_qubits=6,max_expanded_stages=100)
+        inv=native.inventory(ex,max_qubits=6,max_expanded_stages=100)
+        require(all(5 not in g.wires for g in gates),'every oldRIGHT column untouched '+str((which,k)))
+        if k>=0:rot=mat(G**(4*k))
+        else:rot=mat((G.T)**(-4*k))
+        V4=S.diag(rot,I2);core=mat(R*V4)
+        if which==2:core=mat(AA.T*core*AA)
+        actual=literal_matrix(gates)
+        equal(actual,S.kronecker_product(S.eye(8),core),
+              'literal all-column endpoint '+str((which,k)))
+        name='body'+str(which)+'_'+str(k)
+        words[name]=native.execution_to_dict(ex)
+        inventories[name]={'calls':inv.gate_count,'G':inv.g_count,'CX':inv.cx_count,
+                          'SourceI':inv.source_i_count}
+        endpoints[which,k]=core
+    require(len({inventories['body'+str(which)+'_'+str(k)]['calls'] for k in (-1,0,1)})==1,
+            'all actual control words same duration body '+str(which))
+    equal(endpoints[which,-1],endpoints[which,1].T,'native independent transpose pair '+str(which))
+    equal(endpoints[which,0],endpoints[which,0].T,'central whole reflection '+str(which))
+
+# The constructive relative orbit, and a live excluded normal.
+x=v;y=mat(G**4*v);dot=red((x.T*y)[0]);K=mat(y*x.T-x*y.T)
+O=mat(I2+K+K*K/(1+dot))
+equal(O*x,y,'actual sector-plane rotation maps the whole prepared vector')
+equal(O.T*O,I2,'relative orbit extension is orthogonal on all sector columns')
+equal(O,mat(G**4),'relative orbit has a literal native special case')
+Vtest=S.diag(mat(G**4),mat(G**8));Dtest=S.kronecker_product(G,I2)
+Atest=S.kronecker_product(I2,mat(G**3));Bnew=mat(Dtest.T*Vtest*Atest)
+equal(Vtest*R,R*Vtest,'actual nontrivial two-sector native commutant')
+equal(Bnew.T*Dtest.T*R*Dtest*Bnew,Atest.T*R*Atest,
+      'new completed bank retains the full original reflection exactly')
+require(mat(Bnew*S.kronecker_product(v,v)-Atest*S.kronecker_product(v,v))!=S.zeros(4,1),
+        'constant endpoint does not mean constant prepared bank')
+Xnormal=S.kronecker_product(J,I2);xi2=S.kronecker_product(v,v)
+dc_normal=red((xi2.T*R*Xnormal*xi2)[0])
+require(dc_normal!=0,'noncommuting processor normal remains a nonzero return row')
+
+# A later frame may NOT reopen an earlier fresh bank in the theorem's
+# local interface. This larger legal-matrix variation has a nonzero row.
+cross_old_u1=S.kronecker_product(Z,I2)
+cross_old_u2=S.kronecker_product(I2,Z)
+cross_old_x=S.kronecker_product(J,I2)
+cross_old_dc=red((xi2.T*cross_old_u2*cross_old_x*cross_old_u1*xi2)[0])
+equal(cross_old_dc,2*a*p*(p-p*p),'later access to earlier fresh WORK has nonzero complete corner source')
+require(cross_old_dc!=0,'cross-block normal cannot be silently included among stationary frames')
+
+# Terminal storage, with the flag born LAST. Order: SOURCE,STORE,SAM,FLAG.
+# Its fixed same-CODE bank law must still be part of the stated task.
+Pborn=mat(v*v.T);Qborn=mat(I2-Pborn);vperp=S.Matrix([-p,a])
+def embed_one(q,M,n=4):
+    return S.kronecker_product(*[M if k==q else I2 for k in range(n)])
+def embed_cx(control,target,n=4):
+    M=S.zeros(1<<n)
+    for b in range(1<<n):
+        dest=b^((1<<(n-1-target)) if b&(1<<(n-1-control)) else 0)
+        M[dest,b]=1
+    return M
+frame=mat(embed_one(0,G)*embed_one(3,G))
+copy=mat(frame*embed_cx(0,3)*frame.T)
+Wsource=embed_one(0,Z)
+Ubase=mat(copy*Wsource*copy)
+I16=S.eye(16)
+Pcode1=embed_one(2,S.diag(0,1));Fminus=embed_one(3,Qborn)
+store=embed_one(1,mat(G**4))
+VV=mat(I16+Fminus*Pcode1*(store-I16))
+Uterminal=mat(VV*Ubase*VV.T)
+equal(copy.T,copy,'literal born-frame copy is a reflection')
+equal(VV.T*VV,I16,'terminal guarded bank is unitary on all columns')
+equal(Uterminal.T,Uterminal,'whole terminal body is a reflection')
+xi4=S.kronecker_product(v,v,v,v)
+equal(VV*xi4,xi4,'terminal guard fixes the real canonical initial input')
+Xcode=embed_one(2,J)
+equal(Ubase*Xcode,Xcode*Ubase,'un-stored whole body is CODE independent')
+Yextra=mat(VV.T*Xcode*VV-Xcode)
+equal(Fminus*Yextra,Yextra,'extra outer-frame generator supported on terminal birth detail')
+equal(Yextra*Fminus,Yextra,'support holds on both sides of terminal birth detail')
+equal(Yextra+Yextra.T,S.zeros(16),'terminal birth-detail generator skew')
+terminal_E=[S.kronecker_product(Pborn,Pborn,Pborn,Pborn),
+            S.kronecker_product(Qborn,Pborn,Pborn,Pborn),
+            S.kronecker_product(I2,Qborn,Pborn,Pborn),
+            S.kronecker_product(I4,Qborn,Pborn),
+            S.kronecker_product(S.eye(8),Qborn)]
+for j,Eterm in enumerate(terminal_E):
+    equal(VV*Eterm,Eterm*VV,'storage commutes with every actual birth detail '+str(j))
+    equal(Yextra*Eterm,Eterm*Yextra,'extra source is in birth-detail commutant '+str(j))
+equal((xi4.T*Uterminal*Xcode*xi4)[0],0,'independent terminal outer forward return row')
+equal((xi4.T*Xcode*Uterminal*xi4)[0],0,'independent terminal outer reverse return row')
+for b in (0,1):
+    cb=S.eye(2)[:,b];input_b=S.kronecker_product(v,v,cb,v)
+    kept=v if b==0 else mat(G**4*v)
+    expected=p**3*S.kronecker_product(v,v,cb,v)-2*a*p*S.kronecker_product(vperp,kept,cb,vperp)
+    equal(Uterminal*input_b,expected,'genuine conditional terminal bank on CODE label '+str(b))
+    equal((input_b.T*Uterminal.T*Fminus*Uterminal*input_b)[0],4*p**3,
+          'actual retained flag weight '+str(b))
+born_sf=S.kronecker_product(v,v);lost_sf=S.kronecker_product(vperp,vperp)
+copy_normal=mat(born_sf*lost_sf.T-lost_sf*born_sf.T)
+copy_sf=mat(S.kronecker_product(G,G)*embed_cx(0,1,n=2)*S.kronecker_product(G.T,G.T))
+base_sf=mat(copy_sf*S.kronecker_product(Z,I2)*copy_sf)
+copy_dc=red((born_sf.T*copy_normal*base_sf*born_sf)[0])
+equal(copy_dc,-2*a*p,'an independently changed COPY rule has a real nonzero return row')
+
+# Emit and execute the whole terminal fixture as a literal native word.
+# Work wires: SOURCE3, STORE4, SAM5, FLAG6; protected helper0/Spin1/2,
+# immutable oldRIGHT7. Fast Golden-integer tuples keep ALL 128 columns.
+def inverse_g(q):return routed_z(q)+[Gate('G',(q,))]+routed_z(q)
+def born_copy_word():
+    return inverse_g(3)+inverse_g(6)+[Gate('CX',(3,6)),Gate('G',(3,)),Gate('G',(6,))]
+def guarded_store_word(sign):
+    mid=[]
+    # Walsh coefficients (1,-1,1,-1) on the Gray cycle 00,01,11,10.
+    # Net angle is 4*sign*theta exactly on CODE=FLAG=1 and zero otherwise.
+    for exponent,control in zip((sign,-sign,sign,-sign),(5,6,5,6)):
+        mid += [Gate('G',(4,))] if exponent==1 else inverse_g(4)
+        mid += [Gate('CX',(control,4))]
+    return inverse_g(6)+mid+[Gate('G',(6,))]
+terminal_gates=tuple(guarded_store_word(-1)+born_copy_word()+routed_z(3)
+                     +born_copy_word()+guarded_store_word(1))
+terminal_ex=native.Execution(8,(),(7,),terminal_gates,native.G_CX_SOURCE_I,0,(1,2))
+native.validate_execution(terminal_ex,max_qubits=8,max_expanded_stages=500)
+terminal_inv=native.inventory(terminal_ex,max_qubits=8,max_expanded_stages=500)
+require(all(7 not in g.wires for g in terminal_gates),'terminal word preserves every oldRIGHT column by address')
+zero=(0,0,0,0);one=(1,0,0,0)
+def qa(x):return (x[3],x[0],x[1]-x[3],x[2])
+def qp(x):return qa(qa(x))
+def qadd(x,y):return tuple(u+v for u,v in zip(x,y))
+def qsub(x,y):return tuple(u-v for u,v in zip(x,y))
+def golden_tuple(x):
+    poly=S.Poly(red(x),a)
+    return tuple(poly.nth(k) for k in range(4))
+equal(sum(qa((2,-3,5,7))[k]*a**k for k in range(4)),a*(2-3*a+5*a*a+7*a**3),
+      'Golden integer tuple multiplication is exact')
+def literal_golden_rows(gates,n):
+    dim=1<<n;rows=[{j:one} for j in range(dim)];mask=lambda q:1<<(n-1-q)
+    for gate in gates:
+        if gate.op=='G':
+            bit=mask(gate.wires[0]);new=list(rows)
+            for i in range(dim):
+                if i&bit:continue
+                j=i|bit;r0,r1=rows[i],rows[j];keys=r0.keys()|r1.keys()
+                new[i]={t:y for t in keys if (y:=qsub(qa(r0.get(t,zero)),qp(r1.get(t,zero))))!=zero}
+                new[j]={t:y for t in keys if (y:=qadd(qp(r0.get(t,zero)),qa(r1.get(t,zero))))!=zero}
+            rows=new
+        else:
+            new=[None]*dim
+            for i in range(dim):
+                j=i;sign=1
+                if gate.op=='CX':
+                    c,t=gate.wires
+                    if i&mask(c):j=i^mask(t)
+                elif gate.op=='SourceI':
+                    port,s0,s1=gate.wires
+                    if i&mask(port):
+                        if i&mask(s1):sign=-1
+                        j=i^mask(s1)
+                else:raise ArithmeticError('unknown native tuple gate')
+                new[j]={t:tuple(sign*c for c in x) for t,x in rows[i].items()}
+            rows=new
+    return rows
+actual_terminal=literal_golden_rows(terminal_gates,7)
+expected_terminal=[{} for _ in range(128)]
+for protected in range(8):
+    for (i,j),x in Uterminal.todok().items():
+        expected_terminal[16*protected+i][16*protected+j]=golden_tuple(x)
+require(actual_terminal==expected_terminal,'literal terminal word equals I_helper,Spin tensor Uterminal on ALL columns')
+terminal_native_inventory={'calls':terminal_inv.gate_count,'G':terminal_inv.g_count,
+                          'CX':terminal_inv.cx_count,'SourceI':terminal_inv.source_i_count}
+words['terminal_store']=native.execution_to_dict(terminal_ex)
+inventories['terminal_store']=terminal_native_inventory
+terminal_N=4+terminal_inv.gate_count
+terminal_D=15+16*terminal_inv.gate_count
+require(sum(terminal_native_inventory[k] for k in ('G','CX','SourceI'))==terminal_inv.gate_count,
+        'terminal primitive inventory counts every paid call')
+require(terminal_D==sum((1,2,4,8))+16*(terminal_N-4),'terminal raw birth clock dimension is actual')
+
+# Raw lag identity: checking coefficient matrices proves all lag values,
+# not only several numerical heat samples. These lengths are actual calls.
+length1=inventories['body1_0']['calls'];length2=inventories['body2_0']['calls']
+N=4+length1+length2
+true_dims=[1,2]+[4]*length1+[4,8]+[16]*length2
+require(len(true_dims)==N,'every real birth and primitive stage counted once')
+D=sum(true_dims)
+birth_stage=[0,1,2,3+length1,4+length1]
+k_of=[1,1,1,2,2]
+vv=mat(v*v.T);ww=mat(I2-vv)
+E=[S.kronecker_product(vv,vv,vv,vv),
+   S.kronecker_product(ww,vv,vv,vv),
+   S.kronecker_product(I2,ww,vv,vv),
+   S.kronecker_product(I4,ww,vv),
+   S.kronecker_product(S.eye(8),ww)]
+E=[mat(e) for e in E]
+equal(sum(E,S.zeros(16)),S.eye(16),'all canonical birth detail projectors retained')
+for i,e in enumerate(E):
+    equal(e*e,e,'actual birth projection '+str(i))
+    for j in range(i):equal(e*E[j],S.zeros(16),'orthogonal birth details '+str((i,j)))
+    if k_of[i]==2:
+        equal(e*S.kronecker_product(endpoints[1,0],I4),
+              S.kronecker_product(endpoints[1,0],I4)*e,'earlier body commutes with later birth detail '+str(i))
+lags=[N-j for j in birth_stage]
+equal(sum(int(S.trace(e))*lag for e,lag in zip(E,lags)),D,'secular determinant degree uses true stage dimension')
+for changed in (1,2):
+    def operators(sign):
+        U1=S.kronecker_product(endpoints[1,sign if changed==1 else 0],I4)
+        U2=S.kronecker_product(I4,endpoints[2,sign if changed==2 else 0])
+        return mat(U1),mat(U2),mat(U2*U1)
+    u1p,u2p,utp=operators(1);u1m,u2m,utm=operators(-1)
+    equal(utm.T,utp,'whole transposed-body endpoint '+str(changed))
+    equal(utm.T,(utp.T).T,'transposed inverse constant coefficient '+str(changed))
+    for j,e in enumerate(E):
+        plus=e if k_of[j]==1 else mat(e*u1p.T)
+        minus=e if k_of[j]==1 else mat(e*u1m.T)
+        equal(minus,plus.T,'each exact secular lag coefficient '+str((changed,j)))
+    xi=S.kronecker_product(v,v,v,v)
+    cp=red((xi.T*utp*xi)[0]);cm=red((xi.T*utm*xi)[0])
+    equal(cp,cm,'whole old-input return identical transpose pair '+str(changed))
+
+# Direct small growing-clock test with one labelled edge per body. This is
+# a structural fixture, NOT replacing the true lengths above in the price.
+dims=[1,2,4,4,8,16];offsets=[0]
+for d in dims:offsets.append(offsets[-1]+d)
+passive=[v,S.kronecker_product(I2,v),I4,S.kronecker_product(I4,v),S.kronecker_product(S.eye(8),v)]
+B=[None]*6;B[-1]=S.eye(16)
+for j in range(4,-1,-1):B[j]=mat(B[j+1]*passive[j])
+details=[S.eye(1)]+[mat(S.eye(dims[j])-passive[j-1]*passive[j-1].T) for j in range(1,6)]
+RR=S.zeros(35,16);RR[:1,:]=B[0].T
+for j in range(1,6):RR[offsets[j]:offsets[j+1],:]=mat(details[j]*B[j].T)
+RR=mat(RR);equal(RR.T*RR,S.eye(16),'structural clock all terminal complements retained')
+actual_a=S.sqrt((S.sqrt(5)-1)/2);field=S.QQ.algebraic_field(actual_a)
+def charpoly(M):
+    rows={}
+    for (i,j),x in mat(M).todok().items():
+        rows.setdefault(i,{})[j]=field.from_sympy(x.subs(a,actual_a))
+    return DomainMatrix(rows,M.shape,field).charpoly()
+clock_receipts={}
+for sign in (-1,1):
+    U1=endpoints[1,sign];U2=S.kronecker_product(I4,endpoints[2,0])
+    forwards=[passive[0],passive[1],U1,passive[3],passive[4]]
+    T=S.zeros(35)
+    for j,Fj in enumerate(forwards):T[offsets[j+1]:offsets[j+2],offsets[j]:offsets[j+1]]=Fj
+    T[:,-16:]+=RR*U2;T=mat(T)
+    equal(T.T*T,S.eye(35),'direct whole structural clock unitarity '+str(sign))
+    prefixes=[S.eye(1)]
+    for Fj in forwards:prefixes.append(mat(Fj*prefixes[-1]))
+    P=mat(S.diag(*[mat(q*q.T) for q in prefixes]))
+    leak=mat((S.eye(35)-P)*T*P);F=mat(leak.T*leak)
+    c=red((B[0].T*U2*prefixes[-1])[0])
+    expected=S.zeros(35);expected[-16:,-16:]=mat(prefixes[-1]*(1-c*c)*prefixes[-1].T)
+    equal(F,expected,'direct generated-cut full return '+str(sign))
+    clock_receipts[sign]=(charpoly(T),c)
+require(clock_receipts[1][0]==clock_receipts[-1][0],'entire degree-35 clock characteristic polynomial identical')
+equal(clock_receipts[1][1],clock_receipts[-1][1],'direct full return identical')
+
+words_bytes=(json.dumps(words,sort_keys=True,indent=2)+'\n').encode()
+if args.out:
+    args.out.mkdir(parents=True,exist_ok=True)
+    (args.out/'native_words.json').write_bytes(words_bytes)
+receipt={'status':'PASS','checks':len(checks),'native_owner_sha256':native_hash,
+    'native_words_sha256':hashlib.sha256(words_bytes).hexdigest(),
+    'inventories':inventories,'born_cloud':{'bits':L,'dimension':m,'pair_weight':'p^6','covariance':'2 p^6 I2','full_joint_jet':True,
+      'generator_frobenius_squared':[str(red(S.trace(x.T*x))) for x in generators],
+      'generator_frobenius_squared_upper':[str(sum(abs(c) for c in S.Poly(red(S.trace(x.T*x)),a).all_coeffs())) for x in generators]},
+    'hostile_unrestricted_normal':str(dc_normal),
+    'hostile_later_old_WORK_normal':str(cross_old_dc),
+    'terminal_storage':{'whole_reflection':True,'same_CODE_retained_bank':True,
+      'flag_weight':'4 p^3','birth_detail_commutant_verified':True,
+      'changed_copy_rule_normal':str(copy_dc),
+      'new_raw_terminal_word_simulation_claimed':True,
+      'active_columns_verified':128,
+      'true_clock':{'stages':terminal_N,'stage_dimension_per_free_protected_column':terminal_D,
+                    'protected_dimension':16,'full_stage_dimension':16*terminal_D,
+                    'full_hodge_modes':425*16*terminal_D,'harmonic_modes':359*16*terminal_D}},
+    'true_clock':{'stages':N,'birth_stages':birth_stage,'lag_exponents':lags,
+      'stage_dimension_per_free_protected_column':D,'protected_dimension':16,
+      'full_stage_dimension':16*D,'full_hodge_modes':425*16*D,'harmonic_modes':359*16*D},
+    'structural_direct_clock':{'dimension':35,'all_characteristic_coefficients_equal':True,'cold_corner':str(clock_receipts[1][1])},
+    'scope':{'literal_native_words_verified':True,'all_sector_compiler_dimensions_executed':False,
+      'whole_geometric_bank_compiled_in_checker':False,'exact_GR_closure_claimed':False,'GR_closed':False}}
+print(json.dumps(receipt,sort_keys=True,indent=2))
+```
+
+<!-- 7em EQUAL RETURN RECEIPT -->
+```json
+{
+  "born_cloud": {
+    "bits": 4,
+    "covariance": "2 p^6 I2",
+    "dimension": 2,
+    "full_joint_jet": true,
+    "generator_frobenius_squared": [
+      "18*a**2 + 233/8",
+      "18*a**2 + 233/8"
+    ],
+    "generator_frobenius_squared_upper": [
+      "377/8",
+      "377/8"
+    ],
+    "pair_weight": "p^6"
+  },
+  "checks": 161,
+  "hostile_later_old_WORK_normal": "-6*a**3 + 4*a",
+  "hostile_unrestricted_normal": "-2*a**3",
+  "inventories": {
+    "body1_-1": {
+      "CX": 32,
+      "G": 4,
+      "SourceI": 10,
+      "calls": 46
+    },
+    "body1_0": {
+      "CX": 32,
+      "G": 4,
+      "SourceI": 10,
+      "calls": 46
+    },
+    "body1_1": {
+      "CX": 32,
+      "G": 4,
+      "SourceI": 10,
+      "calls": 46
+    },
+    "body2_-1": {
+      "CX": 44,
+      "G": 10,
+      "SourceI": 14,
+      "calls": 68
+    },
+    "body2_0": {
+      "CX": 44,
+      "G": 10,
+      "SourceI": 14,
+      "calls": 68
+    },
+    "body2_1": {
+      "CX": 44,
+      "G": 10,
+      "SourceI": 14,
+      "calls": 68
+    },
+    "terminal_store": {
+      "CX": 136,
+      "G": 20,
+      "SourceI": 42,
+      "calls": 198
+    }
+  },
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_words_sha256": "9ce2ba882ea8abb773c7f3291d4c99c38a51ae56effdb745dfeb2819470ea767",
+  "scope": {
+    "GR_closed": false,
+    "all_sector_compiler_dimensions_executed": false,
+    "exact_GR_closure_claimed": false,
+    "literal_native_words_verified": true,
+    "whole_geometric_bank_compiled_in_checker": false
+  },
+  "status": "PASS",
+  "structural_direct_clock": {
+    "all_characteristic_coefficients_equal": true,
+    "cold_corner": "64282*a**2 - 39729",
+    "dimension": 35
+  },
+  "terminal_storage": {
+    "active_columns_verified": 128,
+    "birth_detail_commutant_verified": true,
+    "changed_copy_rule_normal": "-2*a**3",
+    "flag_weight": "4 p^3",
+    "new_raw_terminal_word_simulation_claimed": true,
+    "same_CODE_retained_bank": true,
+    "true_clock": {
+      "full_hodge_modes": 21644400,
+      "full_stage_dimension": 50928,
+      "harmonic_modes": 18283152,
+      "protected_dimension": 16,
+      "stage_dimension_per_free_protected_column": 3183,
+      "stages": 202
+    },
+    "whole_reflection": true
+  },
+  "true_clock": {
+    "birth_stages": [
+      0,
+      1,
+      2,
+      49,
+      50
+    ],
+    "full_hodge_modes": 8751600,
+    "full_stage_dimension": 20592,
+    "harmonic_modes": 7392528,
+    "lag_exponents": [
+      118,
+      117,
+      116,
+      69,
+      68
+    ],
+    "protected_dimension": 16,
+    "stage_dimension_per_free_protected_column": 1287,
+    "stages": 118
+  }
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
