@@ -120744,3 +120744,1294 @@ Finally, fixed-h RAW history refinement is not physical h-refinement.
 Different h detectors have different finite recipes and errors. Their
 source compatibility is the existing kappa construction, not a falsely
 asserted exact D_h/E_h intertwining between different physical meshes.
+
+
+## 7ee. History determines the programme weights; the full coframe equations close the programme source
+
+3 November 2026. Existing Draft PR #334, input
+7ae1027c9b1fd0dd3f9b9b11821d365421d24aa0. Phase: native realization and final
+source composition. Same native-programme-v1 / constitutive owner; no new
+research execution, physical claim, task selection axiom or action is introduced.
+
+The missing application after §7ed was the possible CHANGE of the observed
+programme. Keeping one effect fixed was enough for continuation of that effect,
+but did not address a live controller that can select another registered
+reporter. The present application keeps an entire finite family, permits
+coherent control and noncommuting old memory, and reuses ONE live code through
+every reference call and every current block. It derives its actual weights
+from the original whole Book determinant.
+
+The decisive connection is the owned POINTWISE degree minus two of BOTH
+geometric and CAR operands at every independently variable coframe anchor.
+For the ideal calibrated current source, its radial coframe equation is a
+strictly positive history-weighted multiple of the local action density.
+Thus full current stationarity forces every such density to vanish.
+At that locus all programme branches have the same cold return. Every
+admitted programme-basis rotation and every change of the reporter slopes
+then has zero current source. The remaining 16+24+2 equations are exactly the
+owned anchored Einstein--two-CAR source, with its real material metric.
+
+This removes the need to choose ONE reporter within the declared regular
+referenceable family in order to close its current programme equations.
+It is not a universal theorem about all possible D0 continuations. The
+actual common reference protocol, inherited coupling, live controller
+interface and admitted field-variation lift are specified below.
+
+### 7ee.A. Exact parent substitution and history convention
+
+Consume §7ec's literal G/CX/SourceI comparator, §7ed's history descriptors,
+the 31 October internal-reference theorem, the 30 October pointwise
+report-jet homogeneity, and the original 28 October full source/raw
+compiler/clock/kappa owners. Their geometric input, inherited matter
+coupling and independently varied Lorentz connection are unchanged.
+
+Write the chronological cold return as C_total=C C_<. On the current
+interface the OLD matrix is A=C_< C_<*, the OUTPUT Gram. It need not
+commute with the programme projectors and need not be invertible.
+The previous scalar-corner formulas could use the input Gram without
+exposing this distinction; it matters here. The determinant identity in
+Proof I retains the absolute dimension term for a rectangular C_< and
+does not replace the physical initial cut.
+
+For the actual finite programme projectors Pi_theta, put
+C=sum_theta t_theta Pi_theta, t_theta=product_j c_theta,j. With
+d=1-z, eta=z p^K and the actual trace multiplicity, the original price gives
+
+    B = eta C A C (d I + eta C A C)^-1,
+    w_theta = Tr(Pi_theta B) >= 0,
+    DJ_current = -2 sum_theta w_theta D log t_theta.
+
+There is no chosen probability law, branchwise average of prices, or
+Gibbs assumption in this identity. The code is retained across ALL M
+blocks; it is never resampled. At the zero-density locus its normalized
+weights are exactly
+
+    pi_theta =
+      Tr[Pi_theta A(I+s A)^-1] / Tr[A(I+s A)^-1],
+    s = z p^K c0^(2M)/(1-z).
+
+Actual paid retention sends these to
+Tr(Pi_theta A)/Tr A. These are derived from the retained history in the
+correct chronological orientation. A branch may have zero history
+weight; no inverse of A or fictitious positive support floor is used.
+
+### 7ee.B. Full-source application and what the recovery actually proves
+
+The exact finite theorem concerns the CURRENT critical set of the ideal
+linear-density corner under the stated independent coframe variations.
+The real nonlinear reporter is not replaced by that ideal corner:
+its joint field/reference/programme error remains O(epsilon+delta^2),
+with the actual factor kappa=sin^2(128 theta_G) in the source gain.
+
+Proof II applies the full all-column compiler and original growing clock
+to one finite palette taken from registered regular programme descriptors.
+Unknown CODE and DATA can remain in the actual input interface; no
+unknown programme state is copied, reset or inverted. CODE is live
+retained work, distinct from sealed oldRIGHT. Every unused descriptor
+label has a total paid action: an inherited regular fallback reporter
+and any readable invalid-description flag. An identity/abort branch
+cannot silently be omitted.
+
+For general Einstein recovery choose the POINT
+e_theta=sqrt(sigma_theta) E in each conditional field bank.
+All branches then represent the SAME physical metric,
+
+    (m sigma_theta/det e_theta) g(e_theta)
+      = (m/det E) g(E).
+
+This is a recovery point, not an Einstein admission condition and not a
+restriction discarding independent branch variations. Every raw coframe,
+link, scalar, reporter parameter and available programme-preparation
+direction is still differentiated. At that point their normalized
+covectors are the actual nonnegative history weights times the bounded
+pullbacks of the parent's full Einstein covector, plus the proved
+reference/compiler/heat remainders. In particular the genuine slope
+source at fixed raw e is retained; local homogeneity bounds it by the
+coframe source. All admitted programme rotations and preparation
+normals vanish in the same kappa limit.
+
+The finite schedule is explicit: fix the actual old prefix and geometric
+mesh; choose a concentration L exceeding its old-source bound; choose
+the reference error nu=epsilon+delta^2 much smaller than L^-2; set
+M=ceil(L/gamma); compile with the real relative endpoint and contrast
+budget; then choose the paid retention K after the finite prefix length
+is known. The parent's geometric recovery error is not multiplied by M.
+Full heat includes all code branches, reference records, work, helpers,
+inverse circuits and stages. No absolute Book term is subtracted.
+
+There are two distinct readouts and they must not be conflated.
+Proof I gives exact ideal critical-set equivalence for a COMMON raw field
+and a history-weighted material metric. Proof II gives full-source
+recovery in the enlarged conditional-bank space, at points where every
+branch has the same physical metric and with all branch variations
+retained. The latter is not a theorem that arbitrary unrelated branch
+geometries describe a single spacetime. The current-source soundness
+application for the common-field chart is given in §7ee.C below.
+
+### 7ee.C. Soundness uses the actual weights without a false off-shell chain rule
+
+Away from zero density set, at the CURRENT input,
+
+    b_j = sum_theta w_theta/c_theta,j > 0,
+    sigma_eff,jx =
+      sum_theta (w_theta/c_theta,j) sigma_theta,jx / b_j.
+
+For physical field variations at fixed programme controls the exact
+ideal covector is
+
+    DJ_field = 4g sum_j b_j E_Palatini-CAR[
+                       e_j,omega_j,Psi_j; sigma_eff,j ],
+
+where E_Palatini-CAR is the ordinary Euler covector with the displayed
+coefficient function held at its current value. The identity follows
+from linearity of the action in sigma and does not differentiate the
+weights. The weights are independent of the spatial anchor x within
+each whole report. Their convex combination therefore preserves the
+owned positive lower bound and spatial regularity of the coefficient
+functions. The original invertible material-coframe map then gives
+the Einstein--two-scalar Euler tensor at
+
+    ehat_eff,j = sqrt(m_j sigma_eff,j/det e_j) e_j.
+
+Consequently a vanishing full current covector implies those field
+equations, at the owner's mesh/continuum accuracy and in its source
+norm. For identical current copies the independent-copy max norm has
+the genuine l1 dual, so a persistent common wrong field covector does
+not disappear as M grows. For a general collection only the stated
+positive weighted norm is controlled; no equations are inferred for
+a separately varied branch or block of vanishing weight.
+
+
+For this soundness application define the ACTUAL central normalization
+
+    Gamma_eff = 4g sum_j b_j > 0.
+
+The assertion for real executions concerns sequences for which the complete
+normalized source D(H+J)/Gamma_eff tends to zero AND the retained old-history,
+reference, compiler and full-heat covector errors, divided by this same gain,
+tend to zero in the declared norm. It does not infer finite Einstein equations
+from a finite zero of H+J: a finite heat term could cancel a current row.
+The nonlinear reference contribution to the normalized FIELD covector is
+bounded by C_reg(epsilon+delta^2), since its positive branch/block weights
+sum to one. No M amplification is needed for that field-only estimate.
+Product amplification remains a separate issue for the programme/recovery
+bounds of Proof II.
+
+This is a POINTWISE source identity and the corresponding soundness
+application on convergent regular decoded fields. It is not the
+off-shell pullback of the Einstein action through a posterior map:
+that map would also differentiate the weights. Nor does approximate
+stationarity alone show that the current weights converge to their
+zero-density values; products can amplify a small density by M g.
+The matched recovery in Proof II avoids that additional limit
+assumption and retains its own complete variation space.
+
+### 7ee.D. Closure obtained and the remaining physical application
+
+The substituted premise is the previously separate current controller
+source for this whole registered referenceable programme family.
+Its diagonal weights come from the actual old history and the original
+Book price; its off-diagonal programme and slope rows are consequences
+of the full coframe equations at the ideal critical set, and are
+controlled with all other rows in the actual native kappa recovery.
+The construction includes the full nonvacuum Einstein--two-CAR owner,
+not just the primary null family or a static/vacuum sector.
+
+The retained premises are concrete: actual regular positive-slope
+reporter descriptors; their linked seven-call reference interface;
+the inherited comparison aspect k0; the actual live CODE/cut and
+source-writer variation lift; and the original stationary/source
+interpretation of the declared paid task. Books 0--1 plus the recorded
+descriptors construct the admitted continuation and preserve its
+records, but this proof does not show that EVERY compulsory closed
+D0 continuation has that referenceable interface or that physical
+execution must attain stationarity. No physical selector, independent
+R=0 law, unrestricted clock equation, or universal task-exhaustion
+claim is inserted. Unrestricted_D0_GR_closed=false.
+
+### 7ee.Proof I. Exact history-weighted source and all current critical equations
+#### 1. Owned inputs and the exact new substitution
+
+The following repository-relative owners are consumed:
+
+1. `02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`, incoming section 7ec, equations (1142)--(1149): the literal G/CX/SourceI seven-call comparator has actual probability
+
+       Q_nat = kappa p^7 (4 + Xi),
+       kappa = sin^2(128 theta) > 0,
+       c = 1 - 2 Q_nat > 0.8932924288369028506.
+
+   All selector, report, programme and failure columns remain. The stated geometric/reference-call interface is still required; the native coin test is not those calls.
+2. `02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/PROOF_RU.md`, sections 3--7: for one common reporter law in all seven calls,
+
+       Xi/(2 delta a_* b_*) = sigma (u1 + k0 u2) + remainder,
+       sigma = a_theta b_theta/(a_* b_*) > 0,
+       k0 = b_*/a_* > 0.
+
+   The normalized joint field/reference/law-parameter source error is bounded by actual constants times `epsilon + delta^2`. Independent changes of the seven calls are not silently identified with one common-law parameter change.
+3. `02_REGISTRY/research/sources/d0_report_jet_universality_2026-10-30/PROOF_RU.md`, section 3, especially (7)--(10): on EACH finite anchor x,
+
+       f_x(t e_x,U) = t^-2 f_x(e_x,U),
+       q_x(t e_x,Psi) = t^-2 q_x(e_x,Psi).
+
+   This is pointwise anchored homogeneity, including the original remainder, not merely a global scaling identity.
+4. `02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md`, sections 1--3: all sixteen coframe, twenty-four independent connection and two matter rows; the source-derived material coframe and dependent genuine measure row. The finite geometric-to-continuum transport retains its stated error.
+5. `SOURCE_PROOF_RU.md`, `RAW_CYLINDER_REALIZATION_RU.md`, `FULLSTEP_COMPILATION_RU.md`, `GROWING_CLOCK_RU.md`, `KAPPA_CLOSURE_RU.md` in the preceding directory: original old return, all-column finite compilation, actual retained clock, finite comparison/gain and source norms. Applying these to the enlarged finite programme needs the real enlarged prefix constants and the actual new gain.
+
+The new exact statement is about the ideal linear-density return model underlying those controlled errors. It permits an entire finite family of positive-slope reporter laws and arbitrary retained programme PVM, rather than one chosen reporter. It does NOT assert an off-shell equality of this nonlinear action with Einstein--scalar action. Its exact finite assertion concerns the current critical set. Full heat, old-input variations and finite native approximation remain explicitly separate below.
+
+#### 2. Live code, complete cut and the orientation of the old Gram matrix
+
+Let H be the actual finite retained input space at the interface of the new blocks. Let `{Pi_theta}` be a finite PVM on H:
+
+    Pi_theta* = Pi_theta,  Pi_theta Pi_phi = 0 for theta != phi,
+    sum_theta Pi_theta = I_H.
+
+It can be `programme PVM tensor I_DATA`; no commutation with the old return is assumed. The programme is a LIVE controller factor if the actual native execution reads it. It must not be relabelled sealed unknown oldRIGHT: controlled access does not preserve the controller's full quantum algebra. Sealed unknown oldRIGHT remains an identity spectator. Basis changes are admitted only on genuinely available live factors; the algebraic statement below does not grant additional actuation.
+
+Let C_< be the actual earlier cold return. Use column-vector chronological composition
+
+    C_total = C C_<.
+
+Then the original determinant is
+
+    det[(1-z)I + eta C_<* C^2 C_<]
+      = det[(1-z)I + eta C (C_< C_<*) C].                 (H1)
+
+This is Sylvester's determinant identity on the same square interface. More generally, if the actual chronological earlier return is rectangular `C_<:C^n -> C^m`, keep the PHYSICAL initial cut n and write
+
+    J_phys = -nu log det[d I_n + eta C_<* C^2 C_<]
+           = -nu log det[d I_m + eta C A C]
+             -nu (n-m) log d.                                  (H1r)
+
+Here C acts on the actual m-dimensional current interface and `A=C_< C_<*`. The displayed dimension term remains in the absolute price; at fixed dimensions and fixed z it has zero current derivative. No physical cut has been replaced by this determinant identity. Thus in this convention
+
+    A = C_< C_<* >= 0,  Tr A > 0.                        (H2)
+
+For the opposite chronological convention the input Gram `C_<* C_<` appears instead. The two Grams cannot be exchanged inside a noncommuting formula without (H1). The formulas below use the current-interface determinant and retain the absolute dimension term (H1r) whenever the physical cut is rectangular.
+
+Set
+
+    d = 1-z > 0,    eta = z p^K > 0.                     (H3)
+
+K is the actual paid raw birth;G retention depth. No inverse of A and no strictly positive smallest eigenvalue of A is assumed. A may be singular and may fail to commute with every Pi_theta.
+
+All code columns are included in the ACTUAL retained cut used in this theorem. This is a different cut choice from compressing a prepared code vector to a rank-one programme boundary. It must be supplied by the actual interface, not obtained by silently widening a rank-one input cut. The two cases have different determinants.
+
+#### 3. Ideal finite positive-slope family
+
+Let j=1,...,M label independent current blocks and x label their finite spatial anchors. Distinguish these two indices. Define
+
+    ell_jx = f_jx(e_jx,U_j) - k0 q_jx(e_jx,Psi_j),
+    I_theta,j = sum_x mu_jx sigma_theta,jx ell_jx,
+    mu_jx > 0,  sigma_theta,jx > 0.                     (H4)
+
+The sigma's are the actual positive products of the two reporter slopes, divided by the inherited `a_* b_*`. The measure factor can be written `mu_jx=h^4 m_jx`. PF importance density is a separate variable whose residual is estimated by its owner. No measure writer is invented.
+
+For the exact ideal return set
+
+    lambda = kappa p^7,
+    Q0 = 4 lambda,
+    g = 2 lambda delta epsilon a_* b_* > 0,
+    Q_theta,j = Q0 + g I_theta,j,
+    c_theta,j = 1 - 2 Q_theta,j > 0,
+    t_theta = product_j c_theta,j,
+    C = sum_theta t_theta Pi_theta > 0.                 (H5)
+
+Actual nonlinear reference reports have their owned remainders and native errors; (H5) is their explicitly identified ideal model. Positivity is imposed on the working collar and is supplied by the actual comparator margin for the approximated events.
+
+Keep the original finite feedback
+
+    J = -nu Tr log D,
+    D = d I + eta C A C.                                (H6)
+
+Normally nu=1 when all multiplicities already occur in Tr. A common factor nu=128 is allowed only when that actual multiplicity has been factored out of the trace; it must not be counted twice. No adjustable coefficient is introduced.
+
+#### 4. Exact noncommuting matrix differentiation
+
+Put
+
+    Z = eta C A C,
+    B = Z (d I + Z)^-1 >= 0,
+    w_theta = nu Tr(Pi_theta B) >= 0,
+    w = sum_theta w_theta = nu Tr B > 0.                (H7)
+
+B is positive because it is a positive spectral function of Z. Positivity of w_theta holds even when B and Pi_theta do not commute. Invertibility of C and `Tr A>0` give `w>0`.
+
+For field or slope variations with fixed PVM, delta C commutes with C. Set `X=C^-1 delta C=sum_theta delta(log t_theta) Pi_theta`. Then
+
+    delta Z = X Z + Z X,
+    delta J = -nu Tr[D^-1 (X Z + Z X)]
+            = -2 nu Tr(B X)
+            = -2 sum_theta w_theta delta(log t_theta)
+            = 4 g sum_theta w_theta sum_j delta I_theta,j/c_theta,j.
+                                                               (H8)
+
+No simultaneous diagonalization with A occurred. This is one original log determinant, not a mixture of separate branch prices, and not a softmax/Gibbs postulate.
+
+The last identity also retains all common-law reference reactions that enter sigma. It does not set an independently moving reference preparation to zero.
+
+#### 5. Exact ideal current critical-set equivalence
+
+Keep A, eta, z, the PVM and the interface fixed while taking the partial current field variations. The programme PVM is an independent current control/old fixed descriptor in the parent admitted source chart. This uses the existing full-input writer/field-lift hypothesis: if an actual causal implementation slaves Pi to e and admits no lift holding Pi fixed, the radial argument below is not automatically an available physical variation. The theorem does not silently add that lift. All current coframes, independent links and matter fields vary in the stated parent chart. The independent coframe variation at one anchor is
+
+    delta e_jx = e_jx, all other current coordinates fixed.
+
+Use the owned pointwise degree -2 with the actual measure and slopes held fixed for this variation. Equation (H8) gives
+
+    delta J = -8 g mu_jx ell_jx
+                    sum_theta w_theta sigma_theta,jx/c_theta,j.   (H9)
+
+The coefficient after ell_jx is STRICTLY positive: `w>0`, every slope and corner is positive. Consequently
+
+    all current coframe rows of DJ vanish  =>  ell_jx=0 for every j,x.
+                                                               (H10)
+
+This implication needs the original independent coframe directions. Replacing the measure by a constrained function such as `m=det e`, or eliminating the independent connection beforehand, would change its hypotheses.
+
+At (H10), with `c0=1-8 lambda>0`,
+
+    c_theta,j = c0,   t_theta = t*=c0^M,
+    C = t* I,
+    B0 = eta t*^2 A (d I + eta t*^2 A)^-1,
+    pi_theta = nu Tr(Pi_theta B0)/(nu Tr B0),
+    sigma_bar,jx = sum_theta pi_theta sigma_theta,jx > 0.          (H11)
+
+The exact current field covector becomes
+
+    DJ_current = (4 g w/c0) sum_j D I_j^sigma_bar,
+    I_j^sigma_bar = sum_x mu_jx sigma_bar,jx ell_jx,               (H12)
+
+where the pi values in a current-field differential are evaluated at that point. At `ell=0`, allowing their true variation introduces no missing `Dpi * ell` term.
+
+Conversely, if all `D I_j^sigma_bar` field rows vanish for the positive weights in (H11), their same pointwise radial identity forces `ell_jx=0`. Equations (H11)--(H12) then give all current field rows of DJ equal to zero.
+
+Thus, for fixed A and the given finite PVM, the ideal finite current critical sets agree exactly with those of the original anchored actions with the history-derived positive sigma_bar. The original all-42 geometric source theorem is consumed at its existing finite/continuum accuracy; this theorem does not make its finite discretization exactly equal to every continuum Einstein equation.
+
+#### 6. Programme, slope and genuine measure rows at that critical set
+
+For an arbitrary infinitesimal unitary change of the available programme basis, `delta Pi_theta=[K,Pi_theta]`, `K*=-K`,
+
+    delta C = [K,C].
+
+At (H11) this vanishes EXACTLY, for every such K, including off-diagonal programme directions. These rows are not removed by labelling the code classical. The algebra holds for any K on H; physically only the controller's admitted factors are varied.
+
+For independent variations of the reporter slopes with fields held fixed,
+
+    delta I_theta,j = sum_x mu_jx delta sigma_theta,jx ell_jx.
+
+These rows vanish at (H10). Common additive baseline changes have already canceled in the actual comparator. A change to the seven-call comparison predicate, aspect k0, initial cut or reference linkage is a different direction and is not covered by this cancellation.
+
+For a genuine moving measure,
+
+    delta_mu I_theta,j = sum_x delta mu_jx sigma_theta,jx ell_jx,
+
+so its row is also dependent at (H10). In the continuum source representation, write
+
+    alpha = sqrt(m sigma_bar/det e),
+    e_hat = alpha e,
+    delta e_hat = alpha[delta e - (e/2)Tr(e^-1 delta e)
+                    + (e/2)(delta m/m + delta sigma_bar/sigma_bar)].
+                                                               (H13)
+
+All contributions to delta sigma_bar, including the history/PVM weights, are included when present. The existing finite/source representation gives the dependent identities
+
+    2 m E_m + <e,E_e> = 0,
+    2 sigma_bar E_sigma_bar + <e,E_e> = 0.                       (H14)
+
+They do not set the volume mode to zero and do not identify PF with m. Connection variation is independent before consuming its equation.
+
+Equations (H10)--(H14) prove current criticality for all forty-two fields, the admitted PVM-basis rows, positive-slope parameter rows and genuine measure rows. They do NOT claim exact finite stationarity of old-history parameters or of the full heat term.
+
+#### 7. The programme weights are supplied by the actual history
+
+Let `s=eta t*^2/d`. At the critical set,
+
+    pi_theta = Tr[Pi_theta A(I+sA)^-1]/Tr[A(I+sA)^-1].             (H15)
+
+This is the exact retained-history resolvent weight. It was not chosen as a probability law and does not require diagonal A. Singular A is allowed.
+
+As the actual paid K tends to infinity with the finite prefix fixed,
+
+    pi_theta -> Tr(Pi_theta A)/Tr A.                             (H16)
+
+For `s ||A|| <= 1`, the sum of absolute differences is bounded, for example, by `2s||A||`. This follows by comparing the normalized positive operators `A(I+sA)^-1` and A in their common spectral basis and then applying the PVM measurement. Zero weights stay legitimate; no inverse of A is used.
+
+If A has support orthogonal to a programme branch, that branch can have zero weight. In the shared-field theorem the coefficient in (H9) nevertheless stays positive because the sum of weights is nonzero. One must not use this fact to infer equations for an entirely independent field in a zero-weight branch.
+
+#### 8. Off-shell programme-basis sources are real
+
+Do not replace the preceding on-shell argument by global programme neutrality. For example let
+
+    A = [[a,b],[b,e]],  A>0, b!=0,
+    C = diag(t1,t2),  t1,t2>0, t1!=t2,
+    K = [[0,-1],[1,0]], delta C=[K,C].
+
+Then `delta C` has both off-diagonal entries `t1-t2`, and direct differentiation of the two-dimensional determinant gives
+
+    delta J = -2 nu d eta b (t1^2-t2^2)
+                 / det(d I + eta C A C),                        (H17)
+
+which is nonzero. Thus code-basis changes have a genuine full-price source away from the scalar-return locus. No fixed-section argument or programme-amplitude first-order-zero shortcut is being used to erase it.
+
+The prepared rank-one code alternative has a DIFFERENT formula. If an actual `|v>` preparation and its inverse are paid and the input cut excludes this new code, then
+
+    c_v = sum_theta |v_theta|^2 product_j c_theta,j,
+
+not the product of the seven or M separately averaged probabilities. Formula (H6) must not be substituted for that rank-one compression without changing the actual cut.
+
+#### 9. Matched branch banks: recovery without discarding independent variations
+
+There is a useful recovery point even when the common finite geometric residual is not exactly zero. Let each branch have an independent field bank, and choose the POINT
+
+    e_theta,jx = sqrt(sigma_theta,jx) E_jx,
+    omega_theta,j = Omega_j,
+    Psi_theta,j = Psi_j.
+
+Owned anchored homogeneity gives exactly
+
+    I_theta,j(e_theta,j,omega_theta,j,Psi_theta,j)
+        = I_j(E_j,Omega_j,Psi_j).                               (H18)
+
+Consequently every ideal `c_theta,j` is the same c_j, so `C=(product c_j)I`, even if the common I_j is not zero. Programme-basis rows vanish exactly at this matched point. This is a choice of evaluation point, NOT a restriction deleting independent branch variations.
+
+The branch-bank writer needs its actual branch slope/calibration data; it does NOT need to compute, choose or overwrite the unknown history weights pi. Indeed each branch's material coframe is the SAME `sqrt(m/det E) E` under this substitution, independently of the retained programme state and of A.
+
+For arbitrary independent branch field variations, (H8) still retains
+
+    DJ = 4g sum_theta w_theta sum_j D I_theta,j/c_j.              (H19)
+
+At the matched point each `D I_theta,j` is the genuine pullback of the same `D I_j` through its bounded coframe scaling map. Fixed-branch-e slope variations also remain: they contribute `ell_theta,jx delta sigma_theta,jx`, bounded by the existing coframe/Euler source through the same exact chain rule. They are not set to zero by requiring variations to stay matched.
+
+Define the ACTUAL central gain
+
+    L = sum_j 1/c_j,
+    Gamma = 4g w L > 0.                                         (H20)
+
+The normalized branch/block coefficients are `pi_theta (1/c_j)/L`, all nonnegative with total one. Thus the existing independent-copy maximum norm has its true weighted-sum dual source; it does not manufacture a `1/M` disappearance of independent current rows. Uniform bounded branch scaling maps turn a small common full geometric source into a small source on ALL independent branch fields and slope parameters. Branches with zero pi have zero weight; this recovery assertion does not require proving their equations from the feedback.
+
+For actual nonlinear reference reports write
+
+    Q_theta,j = Q0 + g[I_theta,j + r_theta,j],
+    ||r_theta,j||_{C1} <= E_ref
+
+with the real owned collar constants and additional native errors. At matched leading banks,
+
+    |log(t_theta/t_phi)| <= 4 M g E_ref/c_min.                    (H21)
+
+Hence `M g E_ref -> 0` prevents branch-product error amplification. A feasible order is: fix the actual old prefix and a target concentration L_target much larger than its old-source constant; choose reference/geometry accuracies so `L_target E_ref ->0`; take `M=ceil(L_target/g)`; choose all-column native precisions with their accumulated relative-corner error budget; execute/compile the actual finite prefix; only then choose K and numerical interval precision. In the simple regime `g~epsilon^2`, `E_ref~epsilon`, the window `M~epsilon^(-5/2)` has `Mg->infinity` and `Mg E_ref->0`.
+
+All constants from the complete old Gram, branch loaders, references, programme operations, selector word, inverses and actual clock remain. Relative error around the scalar block corners can be propagated multiplicatively; a bare absolute approximation of an exponentially small total corner is not automatically a usable source estimate.
+
+#### 10. Remaining full-price and admission boundaries
+
+The ideal theorem above holds at finite M,K for the current J critical set. The complete finite action is still H+J, with actual code and work multiplicities in H. No spectral neutrality of an arbitrary raw growing clock is asserted. The owned all-mode estimate must be applied after the new actual finite prefix is known, relative to (H20).
+
+Old-input variations retain the exact term
+
+    delta_A J = -nu eta Tr[D^-1 C (delta A) C].                   (H22)
+
+At a scalar matched corner this has the original relative old-matrix bound and is suppressed by the actual concentration `gL`, with the real old constant. Away from scalar corners one must retain the conditioning constants; extensive reuse of an active programme is not hidden in the old-source remainder. The code-basis and slope sources have already been counted as current sources in (H8), (H17), (H19).
+
+Explicitly, at `C=tI`, put `s=eta t^2/d`. The true gain (H20) gives, in trace norm,
+
+    |delta_A J|/Gamma
+       <= (1+s||A||) ||delta A||_1 / [4 g L Tr A].               (H22a)
+
+This follows from `D^-1 <= I/d` and `Tr(D^-1 A) >= Tr A/[d(1+s||A||)]`. It remains valid for singular A and displays the genuine old-input norm and positive trace denominator. No inverse of the old return is introduced.
+
+Every positive-slope branch needs the stated actual seven reference/current calls and their common controlled code. Their finite all-column native compilation and all failures remain paid; arbitrary smooth, noncomputable laws are not supplied as an oracle. This enlarged finite programme family removes the choice of ONE reporter law within that family. It does not derive the comparison predicate, fixed reference aspect k0, controlled-family actuation, or exhaustion of all possible D0 operations from closure alone.
+
+Equations (H1)--(H22) are consumed by the following actual native compiler and kappa application. No statement here promotes unrestricted D0-to-GR closure or exact finite H+J stationarity.
+
+### 7ee.Proof II. Actual retained-code native lift and full-source recovery
+
+Inputs: current primary §§7ec–7ed; internal-reference PROOF_RU §§1–5;
+FULLSTEP_COMPILATION_RU §3; RAW_CYLINDER_REALIZATION_RU R16–R19;
+SOURCE_PROOF_RU, GENERAL_EINSTEIN_SOURCE_RU and KAPPA_CLOSURE_RU.
+This supplies an application to one finite recorded regular programme palette.
+It does not assert that this palette exhausts native continuations.
+
+#### 1. One retained code and the actual seven calls
+
+Let CODE have orthogonal readable descriptor projectors Pi_theta. Each recorded
+descriptor denotes an already supplied regular reporter with full DATA effect
+P_theta(u) I, slopes a_theta,b_theta>0 and the owned uniform mixed C3 bounds.
+Its complete conditional instruments, operands, reference interface and positive
+slope bounds belong to the descriptor; they are not inferred from gate syntax.
+The seven calls share this ONE live CODE, unchanged by their controlled actions.
+Fresh report records are retained. The immutable oldRIGHT is a separate factor.
+
+Writing a conditional DATA Kraus operator as K_theta,j,b, the assumption is
+
+    K_theta,j,b* K_theta,j,b = P_theta,j(b) I_DATA.
+
+Backward contraction proves, for every seven-record string b,
+
+    E_b = sum_theta Pi_theta tensor [prod_j P_theta,j(b_j)] I_DATA.
+
+No commutation of the conditional DATA channels and no DATA reset is needed.
+Multiple Kraus operators per outcome obey the same proof by CP-map contraction.
+The actual eight-selector predicate of §7ec therefore has full effect
+
+    Q = sum_theta Pi_theta tensor Q_theta I_DATA,
+    Q_theta = kappa p^7 [4 + Xi_theta],
+    Xi_theta = (P_y+ - P_y-)(P_f-P_0)
+             + (P_x+ - P_x-)(P_q-P_0),
+    kappa = sin^2(128 theta_G), p=phi^-1.
+
+The paid complete reflection has corner c_theta I_DATA, c_theta=1-2Q_theta.
+Every c_theta >= 1-16 kappa p^7 > 0.89329. This is an all-input effect.
+It is not an average of seven independently drawn programme labels.
+
+For an independently prepared live code v, q_theta=|v_theta|^2, the event
+probability is sum q_theta Q_theta. If that actual preparation and its inverse
+are included in the echo, the cold corner is their scalar average. Pure phase
+directions vanish, but genuine dq directions remain. With CODE retained as ALL
+input columns no such averaging is performed: the cold corner is diagonal in
+CODE. A classical ensemble alone does not justify a logdet of an averaged corner.
+
+Independent programme resampling would replace E[Delta P_y Delta P_f] by
+E[Delta P_y]E[Delta P_f], and likewise in the x,q term. Their difference is the
+sum of the two covariances. Thus resampling is not an equivalent implementation.
+
+#### 2. Literal finite native implementation
+
+Use only a finite palette of the history's recorded regular reporter descriptors.
+The code register is LIVE retained WORK, not sealed oldRIGHT. For each finite
+operand precision build the known total controlled matrix
+
+    V = sum_theta Pi_theta tensor V_theta
+
+from the recorded complete reporter circuits, conditional data-bank preparations,
+reference loaders and the fixed §7ec comparator. This is not a controlled unknown
+unitary oracle. The same CODE controls every reference and every current block.
+Unknown code amplitudes and unknown DATA are never cloned or independently reset.
+No preparation or inverse of an unknown programme state is required when CODE
+remains in the retained input cut. Inverses of known preparation circuits are paid.
+
+Every bitstring must be assigned an action. Pad a palette to 2^b labels by aliases
+of an inherited regular reference reporter; if useful, also retain an invalid-code
+flag. The fallback reporter obeys the same calibration. A silent identity/abort
+fallback with c=1 would invalidate the scalar-corner recovery below and is excluded
+from this construction, not erased from the physical carrier after execution.
+
+FULLSTEP_COMPILATION_RU §3 compiles the full known real orthogonal matrix on ALL
+CODE x DATA x WORK columns using the already admitted fixed adjacent WORK edges.
+Its helper is preserved uniformly on all columns, including entangled inputs.
+For a complex target, use a specified realification with all additional coordinates
+retained; alternatively the real programme/state family already suffices here.
+The oldRIGHT factor is exactly I. All new work is born by the canonical raw map;
+the owned cylinder conjugation supplies the correct born boundary, not a free |0>.
+The finite word includes every loader, comparator, flag, report record and inverse.
+Unused code sectors, helpers and failure records remain in the full heat trace.
+
+For a finite collection of operand/variation codes, compile once to a common paid
+length with a positive prescribed all-column error, then reuse the core. A telescopic
+error bound pays every reuse. This is a bounded effective construction, not an
+efficiency claim. The existing grammar supplies its primitive edge scheduling;
+neither this compiler nor a supplied finite clock table proves a unique cosmic
+history-to-next-operation law. No such claim is required for this existence/recovery.
+
+#### 3. One global programme across M current blocks
+
+Each block uses fresh retained WORK. Cutting all its born work at the endpoint
+contracts its scalar DATA corner; consequently the global retained-code corner is
+
+    C = sum_theta t_theta Pi_theta,   t_theta = prod_j c_theta,j > 0.
+
+One code preparation v followed only by a final unpreparation would instead give
+sum_theta q_theta prod_j c_theta,j, not prod_j sum_theta q_theta c_theta,j.
+The retained-code version needs neither of those preparation operations.
+
+Use the chronological OUTPUT Gram A=C_< C_<*>=0 from Proof I, with the absolute rectangular dimension term when needed. Let A be nonzero, including arbitrary old code
+coherences and a nonnormal old return before taking its square. After the paid K
+retention tail, set eta_K=z p^K and
+
+    D=(1-z)I+eta_K C A C,   J=-Tr log D,
+    B=eta_K C A C D^-1 >=0,   w=Tr B>0.
+
+For field changes diagonal in the fixed code basis, DC commutes with C, giving
+
+    DJ_current = -2 sum_theta w_theta D log t_theta,
+    w_theta=Tr(Pi_theta B)>=0,   sum_theta w_theta=w.
+
+These are actual history-dependent weights, not prescribed programme probabilities.
+They are strictly positive for branches with Tr(Pi_theta A)>0. For an arbitrary
+PSD old return a branch may have zero weight; do not claim a uniform positive lower
+bound or infer an invisible branch's equations from stationarity alone. Recovery
+below chooses Einstein data in every branch and therefore does not require one.
+The old source is -eta_K Tr(D^-1 C (DA) C), retained exactly.
+
+#### 4. Calibrate the recovery POINT, not its allowed variations
+
+For each reporter let sigma_theta=a_theta b_theta/(a_* b_*)>0. The existing source
+map gives I_h^sigma(e,omega,Psi)=I_h(e/sqrt(sigma),omega,Psi). Pick one parent
+Einstein recovery field E_h and load branch banks at
+
+    e_theta,h = sqrt(sigma_theta) E_h.
+
+This is a conditional preparation of known field data, compiled on all code columns.
+No unknown quantum code is copied. Slopes are computable from these recorded regular
+families; if only certified approximations are available, put their positive finite
+error in the same budget below. This is not a free measurement of an unknown device.
+
+All branches have EXACTLY the same source-defined physical metric:
+
+    (m sigma_theta / det e_theta) g(e_theta)
+       = (m / det E_h) g(E_h),
+
+because det(sqrt(sigma) E)=sigma^2 det E in dimension four. The same formula is
+pointwise when sigma varies by site. Independent Lorentz and matter data are retained.
+
+The equality defines recovery centres only. Every branch's raw coframe, all 24 link
+rows, both matter rows, PF data and reporter parameters can vary independently.
+Their actual source is pulled back through
+
+    D E_theta = sigma_theta^-1/2
+                  [D e_theta - e_theta Dsigma_theta/(2 sigma_theta)].
+
+In particular changing sigma at fixed raw e is NOT called gauge or suppressed.
+Its leading source is the coframe radial derivative, equivalently ell Dsigma;
+the owned local degree -2 identity places it in the same full coframe covector.
+Uniform positive slope bounds provide a bounded common-field right lift.
+
+#### 5. Finite nonlinear remainder and all programme normals
+
+Put nu=epsilon+delta^2 and gamma=4 kappa p^7 delta epsilon a_*b_*. At the matched
+centres the owned mixed Taylor estimate, with the actual native kappa, gives
+
+    c_theta,j = c*_j + r_theta,j,
+    c*_j=c0-gamma ell_h,j,   c0=1-8 kappa p^7,
+    |r_theta,j| + ||D r_theta,j|| <= C_reg gamma nu.
+
+For independent branch variations the leading derivative is
+-gamma D I_h(E_theta,j) under the displayed pullback; it is not restricted to the
+common-field diagonal. Choose c*_j,c_theta,j>=cmin>0. With t*=prod_j c*_j and
+
+    eta=sum_j -log(1-C_reg gamma nu/cmin),
+    Lambda*=sum_j gamma/c*_j ~ M gamma,
+    pi_theta=w_theta/w,
+    Lambda=sum_theta pi_theta sum_j gamma/c_theta,j ~ Lambda*,
+
+one has exp(-eta)t* <= t_theta <= exp(eta)t*. Thus
+||C/t*-I|| <= exp(eta)-1. A basis variation DC=[Z,C] satisfies
+
+    ||DC C^-1|| <= 2 exp(eta)(exp(eta)-1)||Z||,
+    |DJ| <= 2w ||DC C^-1||.
+
+Even an arbitrary actual preparation isometry E= sum |theta> X_theta with
+sum X_theta*X_theta=I, entangled with DATA, has compressed corner
+C_E=E* C E. Isometry differentiation cancels the scalar part, so
+
+    ||D_E C_E C_E^-1||
+       <= 2 exp(eta)(exp(eta)-1)||DE||.
+
+This bounds all preparation normals, not only scalar probability or phase rows.
+Normalized by the true positive gain Gamma=2w Lambda, they are O(nu) when eta is
+small. The formula |DJ|<=2w||DC C^-1|| follows directly from differentiating the
+actual determinant, using the positive matrix K D^-1 K* for the actual return K;
+it does not require the new corner to commute with the old return.
+
+At recovery, every independent branch-field source is its nonnegative actual Book
+weight times the bounded pullback of the parent all-42 covector, plus O(nu).
+Normalize by their actual positive aggregate gain. The max norm on independent
+blocks has an l1 dual: positive normalized weights sum to one, so the full error
+is bounded by the largest parent residual plus O(nu), not by M times that residual.
+No branch, field row or preparation row is dropped in taking this bound.
+For the optional entangled-preparation compression, use the positive scalar-centre
+weights and the owned relative-corner estimate; they incur O(eta) additional error.
+Do not assert that noncommuting compressed branch derivatives have exactly the
+same diagonal-weight formula away from their scalar centre.
+
+The exact identity ell=0 alone does NOT imply c_theta=c0 for a nonlinear reporter:
+f and k0 q may cancel while the second-order reporter remainder remains. If both
+operands individually vanish, as on the exact primary null carrier, that equality
+is exact. General recovery uses the displayed finite remainder, not an affine
+replacement of the actual reporter.
+
+#### 6. Noncircular parameter choice and complete price
+
+At each finite stage the retained prefix and its old-source bound are already fixed.
+Choose L much larger than that bound divided by the desired error. At the chosen
+parent mesh h, choose epsilon,delta>0 small enough that nu << L^-2, including the
+finite uniform constants of its regular collar. Then put M=ceil(L/gamma).
+Consequently Lambda~L, eta=O(L nu)->0. The old-source/Gamma term is O(old_bound/L),
+and programme/source-remainder terms tend to zero. The parent mesh residual only
+needs its existing convergence; it is not multiplied by M. This avoids imposing
+an artificial M times h error condition on the existing full Einstein recovery.
+
+Compile after this finite schedule is fixed. For N uses of the fixed controlled
+core and each finite comparison chord t_h, put tmin=cmin^M and choose a total
+endpoint error d satisfying
+
+    d <= tmin min(1/8, tau, tau |t_h| Lambda/100).
+
+Compile each use to error d/N. Indeed ||C^-1 Delta C||<=xi=d/tmin; along the
+actual-return interpolation, w_s<=(1+xi)^2 w and
+|D_s J|<=2(1+xi)^2 w xi/(1-xi). For xi<=1/4 this gives
+|Delta J|<=6w d/tmin. Thus the normalized two-endpoint contrast error is O(tau),
+after the finite chord has also bounded its endpoint gains relative to the centre.
+The same relative estimate keeps the actual gain error O(tau). This is stronger
+than a scalar-column estimate and allows an arbitrary all-column compiler error.
+This may be very expensive, but all quantities are positive, finite, computable,
+and selected before execution; no derivative of a changing word is used.
+
+Finally choose the actual paid birth;G retention tail K. The owned growing-clock
+bound suppresses the entire prefix heat and its source relative to the true gain;
+its factor (2p)^-K beats the now fixed small return factor tmin^2. All code,
+references, flags, helper coordinates, primitive stages and retained records remain
+in H. There is no subtraction of the baseline, selected-branch heat, free reset or
+free clock. The original native residual/clock conditions remain exactly those of
+the consumed full-price owner; this proof adds no new independent R=0 claim.
+An explicit positive lower gain is Gamma>=2z p^K tmin^2 Tr(A) M gamma, since the
+actual old return and every new corner are contractions. Insert this constant in
+RAW_CYLINDER_REALIZATION_RU (R11) to choose a finite K after the prefix is known.
+For the approximating compiled endpoint, halve this bound using the already chosen
+relative error xi<=1/8. It remains uniform in the subsequently chosen K.
+
+Thus the finite retained-programme application has the parent's Einstein recovery
+on all independent branch fields and programme preparations, with its true complete
+price and actual old matrix return. What is supplied is this admitted composition
+and its kappa recovery. Unrestricted physical selection, a universal native clock
+stationarity law, and uniqueness of a continuation programme are not inferred.
+
+#### 7. Bounded control
+
+check_shared_programme_cross_calibration.py checks the seven-call all-input effect
+with noncommuting conditional DATA operations, coherent phases, the covariance lost
+by resetting, shared-across-M versus reset corners, equal physical metrics, actual
+history-dependent Book weights, and arbitrary entangled programme-preparation bounds.
+It is an algebraic integration control consuming §7ec's literal native word; it does
+not replace that owner's 8838-call execution receipt or the full compiler proof.
+
+### 7ee.E. Reproducible evidence and bounded verification
+
+Two bounded algebraic integration controls are embedded below with their
+observed receipts. The first checks the whole determinant for nonnormal
+full-rank and rank-one histories, noncommuting programme projectors,
+radial rows, programme-basis rows and the exact output-Gram orientation.
+It explicitly detects the wrong input-Gram substitution: the full-rank
+cold weights (4/7,3/7) become the incorrect (3/7,4/7).
+
+The second checks the shared seven-call code with noncommuting conditional
+DATA operations, coherent preparation, the covariance lost by resetting,
+shared-across-M return products and the preparation estimate. These are
+finite matrix controls of the NEW composition, not a GR PDE computation,
+new native word receipt or replay of the existing 8838-call comparator.
+Their conditions remain active under Python optimization. The native
+comparator, full forty-two-row geometry and full clock owners are consumed
+without repeating their unchanged expensive checks.
+
+To reproduce, extract each labelled Python block as the named file and
+run it with Python plus SymPy/NumPy as imported; stdout or the same-stem JSON file contains its receipt, as indicated by the code.
+The frozen source hashes below pin the exact calculations. The proof,
+the all-column compiler application and the complete source/error maps,
+rather than a number of checks, establish the parent substitution.
+
+The second control uses ordinary floating-point arithmetic and explicit numerical
+tolerances; it is not an interval certificate. The first is exact rational
+arithmetic. Source and receipt hashes refer to UTF-8 text with LF line endings
+and one final newline, exactly as embedded.
+
+#### check_history_programme_source.py
+
+SHA256: b47cb97a744d5c4be72b907e01d5f59c662606f2c3ff810b580bf030be67ad1e
+
+```python
+"""Exact rational 2-programme x 2-DATA retained-source identities.
+
+This checks the stated finite matrix composition and its Gram orientation.
+It is not a native-circuit execution, a GR PDE proof, or an admission theorem.
+All checks remain active under python -O.
+"""
+import itertools
+import json
+import sympy as S
+
+R=S.Rational
+Id=S.eye(4)
+Pi=[S.diag(1,1,0,0),S.diag(0,0,1,1)]
+K=S.kronecker_product(S.Matrix([[0,-1],[1,0]]),S.eye(2))
+c0=R(3,4)
+g=R(1,100)
+z=R(1,7)
+eta=R(2,35)
+d0=1-z
+sigma=[[R(1),R(3,2)],[R(2),R(5,4)]]
+ell=[R(1,7),R(-1,11)]
+blocks=2
+
+
+def require(condition,label):
+    if not condition:
+        raise RuntimeError(label)
+
+
+def matrix_zero(X):
+    return all(S.cancel(a)==0 for a in X)
+
+
+def psd(X,label):
+    require(matrix_zero(X-X.T),label+" symmetry")
+    for size in range(1,5):
+        for idx in itertools.combinations(range(4),size):
+            require(X.extract(idx,idx).det()>=0,label+" principal minor")
+
+
+def price_source(A,C,dC):
+    H=C*A*C
+    D=d0*Id+eta*H
+    B=eta*H*D.inv()
+    dD=eta*(dC*A*C+C*A*dC)
+    return S.cancel(-S.trace(D.inv()*dD)),B,D
+
+
+def trace_weights(B):
+    return [S.cancel(S.trace(P*B)) for P in Pi]
+
+
+def fraction(x):
+    return str(S.cancel(x))
+
+
+def run_case(label,L):
+    # Chronology is L first, then C. Sylvester transports the INPUT cold Gram
+    # L^T C^2 L to C (L L^T) C. Therefore A is the OUTPUT Gram L L^T.
+    A=L*L.T
+    wrong_A=L.T*L
+    require(not matrix_zero(A-wrong_A),label+" nonnormal past")
+    require(not matrix_zero(A*Pi[0]-Pi[0]*A),label+" noncommuting past")
+    psd(A,label+" past Gram")
+    require(S.trace(A)<1,label+" contraction via Frobenius bound")
+    cs=[[c0-2*g*sigma[th][j]*ell[j] for j in range(blocks)]
+        for th in range(2)]
+    require(all(0<c<1 for row in cs for c in row),label+" cold margins")
+    ts=[S.prod(row) for row in cs]
+    C=S.diag(ts[0],ts[0],ts[1],ts[1])
+    _,B,D=price_source(A,C,S.zeros(4))
+    psd(B,label+" B positivity")
+    weights=trace_weights(B)
+    require(all(w>0 for w in weights),label+" positive code weights")
+    Dinput=d0*Id+eta*L.T*C*C*L
+    require(S.cancel(D.det()-Dinput.det())==0,label+" Sylvester orientation")
+    Dwrong=d0*Id+eta*C*wrong_A*C
+    require(S.cancel(Dwrong.det()-Dinput.det())!=0,label+" wrong Gram detector")
+
+    radial=[]
+    for j in range(blocks):
+        # This is the exact local inverse-coframe homogeneity row: d ell=-2ell.
+        dts=[ts[th]*4*g*sigma[th][j]*ell[j]/cs[th][j] for th in range(2)]
+        dC=S.diag(dts[0],dts[0],dts[1],dts[1])
+        require(matrix_zero(C*dC-dC*C),label+" commuting field source")
+        direct,_,_=price_source(A,C,dC)
+        X=C.inv()*dC
+        rhs=-2*S.trace(B*X)
+        radial_rhs=-8*g*ell[j]*sum(weights[th]*sigma[th][j]/cs[th][j]
+                                  for th in range(2))
+        require(S.cancel(direct-rhs)==0,label+" exact B identity")
+        require(S.cancel(direct-radial_rhs)==0,label+" positive radial factor")
+        require(direct*ell[j]<0,label+" strict radial sign")
+        direct_input=-S.trace(Dinput.inv()*eta*L.T*(dC*C+C*dC)*L)
+        require(S.cancel(direct-direct_input)==0,label+" input/output derivative")
+        radial.append({"block":j,"source":fraction(direct),
+                       "positive_factor":fraction(-direct/ell[j])})
+
+    # Programme-basis changes cannot be treated as eigenvalue-only changes.
+    dC_basis=K*C-C*K
+    off_source,_,_=price_source(A,C,dC_basis)
+    require(off_source!=0,label+" off-shell basis source control")
+    require(not matrix_zero(dC_basis),label+" moving basis really moves C")
+
+    Czero=c0**blocks*Id
+    require(matrix_zero(K*Czero-Czero*K),label+" scalar corner basis row")
+    zero_source,Bzero,_=price_source(A,Czero,K*Czero-Czero*K)
+    require(zero_source==0,label+" exact zero-density basis source")
+    wz=trace_weights(Bzero)
+    W=sum(wz)
+    probs=[S.cancel(w/W) for w in wz]
+    sigma_hist=[S.cancel(sum(probs[th]*sigma[th][j] for th in range(2)))
+                for j in range(blocks)]
+    for j in range(blocks):
+        # Arbitrary density variation d ell_j=1 at ell=0.
+        dts=[-2*g*sigma[th][j]*c0**(blocks-1) for th in range(2)]
+        dC=S.diag(dts[0],dts[0],dts[1],dts[1])
+        src,_,_=price_source(A,Czero,dC)
+        gamma_one=4*g*W/c0
+        require(S.cancel(src/gamma_one-sigma_hist[j])==0,
+                label+" effective history section source")
+
+    cold=[S.cancel(S.trace(P*A)/S.trace(A)) for P in Pi]
+    wrong_cold=[S.cancel(S.trace(P*wrong_A)/S.trace(wrong_A)) for P in Pi]
+    require(cold!=wrong_cold,label+" cold weights distinguish Gram orientation")
+    # Exact Loewner sandwich proves the eta->0 limit without numeric limits:
+    # rho A/(1+rho Tr A) <= rho A(I+rho A)^-1 <= rho A.
+    rho=eta*c0**(2*blocks)/d0
+    leading=rho*A
+    psd(leading-Bzero,label+" cold upper bound")
+    psd(Bzero-leading/(1+rho*S.trace(A)),label+" cold lower bound")
+    for pr,p0 in zip(probs,cold):
+        require(p0/(1+rho*S.trace(A))<=pr<=p0*(1+rho*S.trace(A)),
+                label+" normalized cold convergence bound")
+    return {
+        "name":label,"past_rank":L.rank(),
+        "output_Gram_trace":fraction(S.trace(A)),
+        "output_Gram_code_traces":[fraction(S.trace(P*A)) for P in Pi],
+        "input_Gram_code_traces":[fraction(S.trace(P*wrong_A)) for P in Pi],
+        "all_commuting_field_sources_verified":True,
+        "radial_rows":radial,
+        "off_shell_programme_basis_source":fraction(off_source),
+        "zero_density_programme_basis_source":fraction(zero_source),
+        "zero_density_history_weights":[fraction(x) for x in probs],
+        "effective_sigma_by_block":[fraction(x) for x in sigma_hist],
+        "cold_limit_weights_output_Gram":[fraction(x) for x in cold],
+        "wrong_input_Gram_weights":[fraction(x) for x in wrong_cold],
+        "cold_weight_absolute_error_bound":fraction(rho*S.trace(A)),
+        "wrong_Gram_determinant_difference":fraction(Dwrong.det()-Dinput.det())
+    }
+
+
+def main():
+    full=S.Matrix([[2,0,1,0],[1,1,0,1],[0,0,2,1],[0,0,0,1]])/6
+    u=S.Matrix([1,2,1,1]); v=S.Matrix([2,1,0,1])
+    singular=u*v.T/8
+    result={
+        "scope":"Exact rational matrix identity controls; not a native circuit or GR proof",
+        "programme_dimension":2,"data_dimension":2,"current_blocks":blocks,
+        "all_checks_active_under_python_O":True,
+        "required_past_orientation":"A=C_old C_old^*, OUTPUT Gram, because total cold=C_current C_old",
+        "cases":[run_case("nonnormal_full_rank",full),run_case("nonnormal_rank_one",singular)]
+    }
+    print(json.dumps(result,indent=2,ensure_ascii=False))
+
+
+if __name__=="__main__":
+    main()
+```
+
+#### history_programme_source.result.json
+
+SHA256: 846b234055ff1f5081dff39afcfc2c7dc7b91e050743537b40e3c8475df40ace
+
+```json
+{
+  "scope": "Exact rational matrix identity controls; not a native circuit or GR proof",
+  "programme_dimension": 2,
+  "data_dimension": 2,
+  "current_blocks": 2,
+  "all_checks_active_under_python_O": true,
+  "required_past_orientation": "A=C_old C_old^*, OUTPUT Gram, because total cold=C_current C_old",
+  "cases": [
+    {
+      "name": "nonnormal_full_rank",
+      "past_rank": 4,
+      "output_Gram_trace": "7/18",
+      "output_Gram_code_traces": [
+        "2/9",
+        "1/6"
+      ],
+      "input_Gram_code_traces": [
+        "1/6",
+        "2/9"
+      ],
+      "all_commuting_field_sources_verified": true,
+      "radial_rows": [
+        {
+          "block": 0,
+          "source": "-16170569044768490349538210228949791361805078736/90822832548792207610053839025102098711297558902729",
+          "positive_factor": "113193983313379432446767471602648539532635551152/90822832548792207610053839025102098711297558902729"
+        },
+        {
+          "block": 1,
+          "source": "9956704317820609835163246509245875874087352354/90822832548792207610053839025102098711297558902729",
+          "positive_factor": "109523747496026708186795711601704634614960875894/90822832548792207610053839025102098711297558902729"
+        }
+      ],
+      "off_shell_programme_basis_source": "-2804173257852386171550235237693333343595000000/90822832548792207610053839025102098711297558902729",
+      "zero_density_programme_basis_source": "0",
+      "zero_density_history_weights": [
+        "33711902747/59000750774",
+        "25288848027/59000750774"
+      ],
+      "effective_sigma_by_block": [
+        "84289598801/59000750774",
+        "328715656617/236003003096"
+      ],
+      "cold_limit_weights_output_Gram": [
+        "4/7",
+        "3/7"
+      ],
+      "wrong_input_Gram_weights": [
+        "3/7",
+        "4/7"
+      ],
+      "cold_weight_absolute_error_bound": "21/2560",
+      "wrong_Gram_determinant_difference": "-18038423641831408210972776217663837/3216999436673715000000000000000000000000"
+    },
+    {
+      "name": "nonnormal_rank_one",
+      "past_rank": 1,
+      "output_Gram_trace": "21/32",
+      "output_Gram_code_traces": [
+        "15/32",
+        "3/16"
+      ],
+      "input_Gram_code_traces": [
+        "35/64",
+        "7/64"
+      ],
+      "all_commuting_field_sources_verified": true,
+      "radial_rows": [
+        {
+          "block": 0,
+          "source": "-10303469392/38469350948877",
+          "positive_factor": "72124285744/38469350948877"
+        },
+        {
+          "block": 1,
+          "source": "7232507708/38469350948877",
+          "positive_factor": "79557584788/38469350948877"
+        }
+      ],
+      "off_shell_programme_basis_source": "-6624738719/64115584914795",
+      "zero_density_programme_basis_source": "0",
+      "zero_density_history_weights": [
+        "5/7",
+        "2/7"
+      ],
+      "effective_sigma_by_block": [
+        "9/7",
+        "10/7"
+      ],
+      "cold_limit_weights_output_Gram": [
+        "5/7",
+        "2/7"
+      ],
+      "wrong_input_Gram_weights": [
+        "5/6",
+        "1/6"
+      ],
+      "cold_weight_absolute_error_bound": "567/40960",
+      "wrong_Gram_determinant_difference": "178867945413/22776846400000000"
+    }
+  ]
+}
+```
+
+#### check_shared_programme_cross_calibration.py
+
+SHA256: d4babaffce39f1a488a163a9f88104a9ece85fea6e874eb5c428f6a611113c6b
+
+```python
+"""Bounded algebraic control for the retained-programme composition.
+
+Consumes the literal native comparator of primary section 7ec, not a new raw
+word certificate. Checks shared-code Kraus products, all-input Book derivatives,
+programme normals and the reset countercontrol. No heat/source substitution is
+made numerically; those bounds are stated in the companion proof.
+"""
+from pathlib import Path
+import itertools
+import json
+import math
+import numpy as np
+
+OUT = Path(__file__).with_suffix('.json')
+p = (math.sqrt(5)-1)/2
+native_kappa = math.sin(128*math.atan2(p, math.sqrt(p)))**2
+z = 2.0**-20
+k0 = 23.41640675188407497
+a_star, b_star = .01, .01*k0
+aa = np.array([.008, .011, .014])
+bb = np.array([.18, .24, .31])
+base = np.array([.24, .37, .49])
+sigma = aa*bb/(a_star*b_star)
+q = np.array([.23, .31, .46])
+rng = np.random.default_rng(334)
+checks = []
+metrics = {}
+
+def require(name, assertion, value=None):
+    if not assertion:
+        raise AssertionError((name, value))
+    checks.append(name)
+    if value is not None:
+        metrics[name] = float(value)
+
+def prob(th, u, v):
+    a,b = aa[th],bb[th]
+    return (base[th]+a*u+b*v + .4*a*u*u+.12*b*v*v
+            +.1*a*u**3-.08*b*v**3+.02*a*u*v)
+
+def reports(th,u,v,delta):
+    return np.array([prob(th,0,delta),prob(th,0,-delta),prob(th,u,0),
+                     prob(th,0,0),prob(th,k0*delta,0),
+                     prob(th,-k0*delta,0),prob(th,0,v)])
+
+def xi(P):
+    return (P[0]-P[1])*(P[2]-P[3])+(P[4]-P[5])*(P[6]-P[3])
+
+def event_count(bits):
+    yp,ym,f,o,xp,xm,qq = bits
+    return yp*f+ym*o+(1-yp*o)+(1-ym*f)+xp*qq+xm*o+(1-xp*o)+(1-xm*qq)
+
+def rot(t):
+    return np.array([[math.cos(t),-math.sin(t)],
+                     [math.sin(t),math.cos(t)]])
+
+def blockdiag(mats):
+    n = sum(len(x) for x in mats)
+    ans = np.zeros((n,n),dtype=np.result_type(*mats))
+    at = 0
+    for x in mats:
+        ans[at:at+len(x),at:at+len(x)] = x
+        at += len(x)
+    return ans
+
+P = np.array([reports(th,.3,.2,.01) for th in range(3)])
+require('seven actual probabilities interior', np.min(P)>0 and np.max(P)<1)
+effect = np.zeros((6,6))
+for bits in itertools.product([0,1],repeat=7):
+    mats=[]
+    for th in range(3):
+        product=np.eye(2)
+        for j,b in enumerate(bits):
+            # Different conditional DATA rotations need not commute: reflections
+            # interleaved with rotations make the finite family noncommuting.
+            O=rot(.13*(1+th)*(j+1)*(2*b-1))
+            if (j+b+th)%2:
+                O=O@np.diag([1.,-1.])
+            weight=P[th,j] if b else 1-P[th,j]
+            product=math.sqrt(weight)*O@product
+        mats.append(product)
+    L=blockdiag(mats)
+    effect += native_kappa*p**7*event_count(bits)*(L.T@L)
+Q = native_kappa*p**7*np.array([4+xi(row) for row in P])
+target = np.diag(np.repeat(Q,2))
+require('all-input shared programme event effect', np.linalg.norm(effect-target,2)<2e-16,
+        np.linalg.norm(effect-target,2))
+v=np.sqrt(q)*np.exp(1j*np.array([.1,.8,-.4]))
+E=np.kron(v[:,None],np.eye(2))
+require('coherent programme event ignores phases',
+        np.linalg.norm(E.conj().T@effect@E-np.dot(q,Q)*np.eye(2))<2e-16)
+reset_xi=xi(q@P)
+shared_xi=sum(q[th]*xi(P[th]) for th in range(3))
+cov = (np.dot(q,(P[:,0]-P[:,1])*(P[:,2]-P[:,3]))
+       -np.dot(q,P[:,0]-P[:,1])*np.dot(q,P[:,2]-P[:,3])
+       +np.dot(q,(P[:,4]-P[:,5])*(P[:,6]-P[:,3]))
+       -np.dot(q,P[:,4]-P[:,5])*np.dot(q,P[:,6]-P[:,3]))
+require('independent reset loses the programme covariance',
+        abs(shared_xi-reset_xi-cov)<1e-16 and abs(cov)>1e-8,cov)
+cs=1-2*Q
+M_reset=64
+shared_return=np.dot(q,cs**M_reset)
+reset_return=np.dot(q,cs)**M_reset
+require('one shared programme differs from per-cell reset',
+        abs(shared_return-reset_return)>1e-10,shared_return-reset_return)
+
+# The same physical material metric in every branch, including determinant.
+e0=np.diag([1.1,.9,1.2,.95]); eta=np.diag([1.,-1.,-1.,-1.])
+g0=e0.T@eta@e0
+for th in range(3):
+    eb=math.sqrt(sigma[th])*e0
+    lhs=sigma[th]/np.linalg.det(eb)*(eb.T@eta@eb)
+    require(f'exact material metric branch {th}',
+            np.linalg.norm(lhs-g0/np.linalg.det(e0))<2e-15)
+
+eps,delta,M=.04,.002,32
+F,H=.3,.004
+gamma=4*native_kappa*p**7*delta*eps*a_star*b_star
+c0=1-8*native_kappa*p**7
+ell=F-k0*H
+cstar=c0-gamma*ell
+cb=np.array([1-2*native_kappa*p**7*(4+xi(reports(th,eps*F/sigma[th],
+                  -eps*H/sigma[th],delta))) for th in range(3)])
+tstar=cstar**M
+tb=cb**M
+eta_actual=max(abs(np.log(tb/tstar)))
+Lambda=M*gamma/cstar
+require('global positive corners',np.min(cb)>1-16*native_kappa*p**7)
+T=np.diag(np.repeat(tb,2))
+dev=np.linalg.norm(T/tstar-np.eye(6),2)
+require('retained-code relative scalar bound',dev<=math.expm1(eta_actual)*(1+2e-8)+2e-16,dev)
+
+Kold=rng.normal(size=(6,6))
+Kold=Kold/(2*np.linalg.norm(Kold,2))
+# Here the chronological old return is Kold.T; A is its OUTPUT Gram.
+A=Kold.T@Kold
+gain=p**3
+D=(1-z)*np.eye(6)+z*gain*T@A@T
+Di=np.linalg.inv(D)
+B=z*gain*(T@A@T)@Di
+w=np.trace(B)
+ww=np.array([np.trace(B[2*th:2*th+2,2*th:2*th+2]) for th in range(3)])
+require('true history-dependent weights positive',np.min(ww)>=0 and abs(sum(ww)-w)<1e-20)
+log_direction=np.array([.2,-.3,.1])
+dT=np.diag(np.repeat(tb*log_direction,2))
+direct=-z*gain*np.trace(Di@(dT@A@T+T@A@dT))
+weighted=-2*np.dot(ww,log_direction)
+require('full Book derivative equals actual code weights',abs(direct-weighted)<2e-22,
+        abs(direct-weighted))
+Z=rng.normal(size=(6,6)); Z=Z-Z.T; Z/=np.linalg.norm(Z,2)
+dT=Z@T-T@Z
+basis_source=-z*gain*np.trace(Di@(dT@A@T+T@A@dT))
+basis_bound=4*w*math.exp(eta_actual)*math.expm1(eta_actual)
+require('programme basis source bounded with true Book gain',abs(basis_source)<=basis_bound+1e-24,
+        abs(basis_source)/(2*w*Lambda))
+
+# Arbitrary entangled live programme preparation, no independent-state premise.
+E,_=np.linalg.qr(rng.normal(size=(6,2)))
+C=E.T@T@E
+dE=Z@E
+dC=dE.T@T@E+E.T@T@dE
+relative_bound=2*math.exp(eta_actual)*math.expm1(eta_actual)
+require('entangled preparation retains relative scalar corner',
+        np.linalg.norm(C/tstar-np.eye(2),2)<=math.expm1(eta_actual)+5e-16)
+require('all entangled preparation tangent bound',
+        np.linalg.norm(dC@np.linalg.inv(C),2)<=relative_bound+1e-15)
+metrics.update(native_kappa=native_kappa, native_cmin=1-16*native_kappa*p**7,
+               M=M, gamma=gamma, eta_actual=eta_actual, Lambda=Lambda)
+OUT.write_text(json.dumps({'scope':'algebraic control; native comparator and compiler inherited',
+                          'checks':checks,'metrics':metrics},indent=2),encoding='utf-8')
+print(json.dumps({'checks':len(checks),'receipt':str(OUT),'metrics':metrics},indent=2))
+```
+
+#### check_shared_programme_cross_calibration.json
+
+SHA256: 47cad295a78257cae9aadf04cd01a22874f1cbff92993b897fa77619540c7196
+
+```json
+{
+  "scope": "algebraic control; native comparator and compiler inherited",
+  "checks": [
+    "seven actual probabilities interior",
+    "all-input shared programme event effect",
+    "coherent programme event ignores phases",
+    "independent reset loses the programme covariance",
+    "one shared programme differs from per-cell reset",
+    "exact material metric branch 0",
+    "exact material metric branch 1",
+    "exact material metric branch 2",
+    "global positive corners",
+    "retained-code relative scalar bound",
+    "true history-dependent weights positive",
+    "full Book derivative equals actual code weights",
+    "programme basis source bounded with true Book gain",
+    "entangled preparation retains relative scalar corner",
+    "all entangled preparation tangent bound"
+  ],
+  "metrics": {
+    "all-input shared programme event effect": 1.8431430421460392e-17,
+    "independent reset loses the programme covariance": 1.2895297225832126e-05,
+    "one shared programme differs from per-cell reset": 1.7811225064279235e-10,
+    "retained-code relative scalar bound": 3.945135329530558e-10,
+    "full Book derivative equals actual code weights": 1.0339757656912846e-25,
+    "programme basis source bounded with true Book gain": 9.388163609574397e-05,
+    "native_kappa": 0.19363717314310716,
+    "native_cmin": 0.8932924288369019,
+    "M": 32,
+    "gamma": 4.9974157797214425e-09,
+    "eta_actual": 3.945135330308763e-10,
+    "Lambda": 1.6893038042043838e-07
+  }
+}
+```

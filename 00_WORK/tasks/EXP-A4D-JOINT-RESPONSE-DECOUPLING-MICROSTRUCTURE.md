@@ -19362,3 +19362,59 @@ reuse the fixed-reporter, relative-corner, raw execution and incoming exact
 comparator owners. No new numerical catalogue/geometry/Lean replay. Run only
 affected structural work/protocol/assembly gates and diff checks on final input.
 No new task, acceptance, claim row, Ready transition or merge.
+
+
+## 3 November — retained history closes the regular programme-family source
+
+Phase: native realization and final composition, existing #334 /
+native-programme-v1 / constitutive. Input 7ae1027c9b1fd0dd3f9b9b11821d365421d24aa0.
+Result location: primary §7ee, with both full derivations and frozen matrix
+controls. This is a proposed scoped research application, not a new accepted
+assembly result or a retirement of the raw terminal.
+
+The precise substitution after §7ed is the current source of an entire finite
+registered family of referenceable positive-slope reporters. ONE live retained
+CODE is used through all seven references and all M current blocks. For the
+actual chronological return C_total=C C_<, the old matrix is the OUTPUT Gram
+A=C_< C_<*. The original determinant supplies positive weights
+w_theta=Tr[Pi_theta eta C A C(dI+eta C A C)^-1], including singular and
+noncommuting history, rather than assuming a programme probability law.
+
+In the ideal calibrated corner, each independent anchored radial coframe row
+is a strictly positive coefficient times ell=f-k0 q. Full coframe stationarity
+therefore forces every ell to zero. Then C=c0^M I, all admitted programme-basis
+and slope rows vanish, and the remaining all16+24+2 source is the owned
+Einstein--two-CAR source in the history-weighted material metric. The weights
+are exactly the old-history resolvent weights and approach
+Tr(Pi_theta A)/Tr A under actual paid retention. The current source is generally
+nonzero away from this locus; nothing is removed by naming a variable internal.
+
+The full native application retains all code columns, the actual reference
+reaction, oldRIGHT, absolute determinant terms, compiled work and all-mode heat.
+Every descriptor label has a paid calibrated fallback. General recovery uses
+conditional raw banks e_theta=sqrt(sigma_theta) E representing one common
+physical metric, while ALL branch field and programme variations remain free.
+The true source gain and double scale M gamma→infinity,
+M gamma(epsilon+delta^2)→0 control branch products and programme normals;
+K is chosen only after the actual finite compiler prefix is known.
+
+Exact ideal common-field critical-set equivalence, current-posterior metric
+soundness on a convergent regular chart, and matched conditional-bank full-source
+recovery are stated separately. No nonlinear posterior derivative is dropped
+from an asserted off-shell pullback, and no common-spacetime claim is made for
+unrelated branch geometries. The independent-current max norm retains its l1
+dual; hidden unsupported branches are not assigned equations.
+
+Remaining assumptions: the recorded regular reporter/reference interfaces,
+inherited k0 coupling, real live-code/cut and full field-variation lift, and
+the existing stationary/source interpretation of that paid task. This removes
+the single-reporter selection premise WITHIN this family; it does not prove
+that every compulsory closed D0 continuation belongs to it or derives physical
+stationarity from M1. Unrestricted_D0_GR_closed=false.
+
+Smallest decisive check: exact noncommuting whole-determinant differentiation,
+including a rank-one past, local homogeneity and the nonzero off-shell programme
+row. The frozen control detects the wrong input-Gram orientation. A second
+bounded floating-point control checks shared-code seven-call products,
+the reset covariance, full matrix derivatives and preparation estimates.
+No old heavy geometry, native-word or full128 result was rerun or recounted.
