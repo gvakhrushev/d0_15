@@ -19309,3 +19309,56 @@ the freely changed comparison rule, autonomous programme source or every
 physical normal. No new task/result row, broad root/Lean replay, external
 CI, Ready state, merge, positive_gr/raw216 or GR_closed promotion. The
 original objective remains active.
+
+### Retained operation to admissible controls and full nonvacuum source, 3 November 2026 (§7ed)
+
+Continue existing Draft #334 in gvakhrushev/d0_15, same owned branch and
+constitutive/native-programme-v1 intake. Parent df20fd997e796b3aa553d1aadfe56b64cf5f48a2;
+preserve its exact comparator §7ec and previous §7eb. Phase: native realization
+and final composition on the original full-CAR/ten-sign/raw kappa source.
+Only this brief and the existing primary artifact §7ed are changed.
+
+Parent application: raw-cylinder §§8–9 previously supplied an all-input
+report-law fibre. Book01 §01.15 operator AND positive-response naturality,
+combined with actual canonical birth J, now derive D_new J=J D_old and
+J*E_new J=E_old on every input for a persisting admissible section. The
+original fixed ten-sign evaluator puts all42 field dependence in actual
+Choi/CAR inputs, so this gives precisely the needed source-preserving
+operation/payload split without checking Einstein equations.
+
+Constructive map: compile evaluator once on all bank columns; record its
+ACTUAL native effect and typed relative-wire/marked-output descriptor;
+replay by canonical fresh-address translation, preserving unknown oldRIGHT.
+A letter induction proves every prefix/marked map is transported. Identity
+extension under raw birth is an explicit nonempty exact-natural implementation.
+Other candidates have a finite exact Golden-field all-input predicate, in
+addition to all inherited finite halt, address, role and single-section rules.
+Physical code reading/work/copies, approximations and scheduling remain paid;
+a bounded compiled processor is not called a universal autonomous primitive.
+
+Whole source: actual compiled Etilde is distinguished from ideal E; both
+preparation legs remain. The same reflected READY wrapper/cut/marks and
+retention scheme consume the owned relative-corner error, full heat, old-input
+and independent-current max norms. All16+24+2 source soundness/recovery and
+the nested kappa-name are reused unchanged. Exact raw-refinement naturality
+is not asserted as exact equality across different physical meshes h.
+
+Incoming application: §7ec already emits the exact cross-reference comparator.
+Register its actual visibility-weighted effect and true marked stage; equivalent
+Gray words are effect-faithful implementations, while seven geometric/reference
+inputs remain freely sourced payload. The exact comparator theorem, true gain,
+all price branches and reference derivatives are preserved. Its toy coin calls
+are not identified with the seven geometric calls required by the parent.
+
+Boundary: the hypothesis is continuation of ONE recorded observable section.
+A shared past prefix alone does not imply that every next native operation must
+remain this section. Global selection of the next section/autonomous control,
+all unrestricted X_N, and original exact-finite positive_gr/raw216 remain open.
+This is a typed positive parent application, not a global prohibition on other
+observables or a claim of physical closure.
+
+Validation: manual block proof using both original operator identities;
+reuse the fixed-reporter, relative-corner, raw execution and incoming exact
+comparator owners. No new numerical catalogue/geometry/Lean replay. Run only
+affected structural work/protocol/assembly gates and diff checks on final input.
+No new task, acceptance, claim row, Ready transition or merge.

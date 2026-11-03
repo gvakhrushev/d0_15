@@ -120350,3 +120350,397 @@ if __name__=="__main__":
   }
 }
 ```
+
+## 7ed. From a retained operation to admissible controls and the existing full Einstein-CAR source
+
+3 November 2026. Existing Draft #334. Input
+df20fd997e796b3aa553d1aadfe56b64cf5f48a2; preserve incoming §7ec and prior §7eb.
+Phase: native realization and final composition on the ORIGINAL full-CAR /
+ten-sign / raw-cylinder kappa carrier. The conditional v8/static result §7eb
+is preserved and is not substituted for this general nonvacuum source.
+
+**Positive substitution.** Book01 §01.15 requires operator AND response
+naturality for a persisting admissible observable. The fixed ten-sign owner
+already places ALL field dependence in actual Choi/CAR resource states.
+Combining those two existing facts with canonical raw births gives a concrete
+history-to-control predicate and a nonempty native replay family. Its complete
+source is the already proved full Einstein–two-CAR source on all42 field
+directions, with old/current preparations and implementation price retained.
+No new curvature calculation or test of the Einstein equation enters admission.
+
+The input is a history carrying the ACTUAL finite detector word and its typed
+input/marked-output descriptor. Its continuation must represent THAT recorded
+observable section. This is a concrete regime hypothesis; equality of a past
+prefix alone does not establish it for every possible future operation.
+The result derives what controls are admissible under that hypothesis, rather
+than silently asserting that all D0 programmes obey it.
+
+### 7ed.A. Actual history descriptor, fresh addresses, and control construction
+
+At each physical mesh h, compile the already fixed ten-sign evaluator ONCE,
+uniformly on its ENTIRE resource bank, before selecting field endpoints.
+Let w_h be the resulting actual native word. Its finite descriptor contains
+the original primitive profile, arity, RELATIVE wire operands, source input
+embedding, READY/REPORT and every other required marked output, plus the
+fixed finite h-level recipe. The recorded effect is the effect of w_h itself;
+the ideal tensor-moment effect is only its error-controlled comparison target.
+
+For a fresh bank, let rho be the injection of those relative wires into the
+new canonical raw birth addresses. Replay replaces Gate(op,i,j) by
+Gate(op,rho(i),rho(j)). Since G and CX act by the same fixed matrices on every
+admitted addressed factor, induction on the recorded word gives
+
+    U_(rho(w_h)) I_rho = I_rho U_(w_h),
+
+with the same identity for every prefix and marked effect. Here I_rho is the
+canonical factor identification including all untouched factors, not a new
+physical SWAP gate. Unknown oldRIGHT remains an exact identity factor.
+This supplies the needed old-bank-to-fresh-bank map; prefix naturality alone
+would only preserve an observable on the original bank.
+
+If programme values are physically read, an active registered copy and its
+reader are part of the paid WORK, prepared before any archive sealing.
+No sealed unknown oldRIGHT is used as a control, and no unknown quantum
+programme is cloned. The finite basis-copy identity applies to registered
+code values. Any approximate native preparation or bounded programmable
+processor is compiled on all columns with its error retained.
+
+For a finite programme table and PC the standard controlled transition is
+
+    T|p,c,x> = |p,c+1,g_(p,c)x>.
+
+The owned all-column fullStep compiler gives one actual fixed word approximating
+this entire operator; N repeats have error at most N delta. All programme
+branches, PC, and work remain in the full price. This is a bounded implementation
+in native-programme-v1, not a proof that one globally fixed elementary step
+autonomously interprets every possible D0 code. It must not hide a new microcode
+scheduler by naming a block matrix an elementary operation.
+
+For this stored descriptor, admissible SAME-SECTION logical continuations are
+the finite native candidates whose actual outcome/response operators satisfy
+the Book01 projection identities below, together with the required marks.
+Every matrix is finite and algebraic in the original Golden field, so the
+predicate is computable by exact coefficient comparison. It does not inspect
+whether the current free fields solve Einstein. Canonical replay and identity
+extension on additional born WORK supply explicit accepted candidates.
+
+### 7ed.B. Parent application, complete source and two refinement directions
+
+The full proof below derives all-input preservation from the actual Book rule.
+The source consumer is RAW_CYLINDER_REALIZATION_RU.md §§8–9 and
+KAPPA_CLOSURE_RU.md, including the genuine material metric and all16+24+2
+independent fields. This is a source substitution on the existing comparison
+graph, not a new source normalization or an alternative stress tensor.
+
+Raw memory growth and physical mesh refinement retain distinct maps.
+At fixed h, the ACTUAL compiled detector has exact canonical-birth/replay
+naturality. As h changes, the detectors need not obey an exact operator
+intertwiner. The already proved complete-price interval construction supplies
+the source kappa-name instead: each finite test has nested intervals with
+width at most p^k, and all heat/old/current/implementation errors are included.
+Thus the current application consumes that existing source compatibility;
+it does not infer equality of complete h-level instruments from scalar
+convergence or rename two different refinement axes as one.
+
+The real comparison budget keeps the original relative return estimate,
+actual heat on every programme/work branch, old-input covectors and the
+independent-current maximum norm. In particular, choose the evaluator's
+uniform all-input error before running the finite centre/endpoints, and choose
+the paid retention depth only AFTER the actual finite compiler/writer prefix
+has halted. Replay of the actual compiled word makes same-section preservation
+exact; its discrepancy from the ideal moment reporter remains in the budget.
+
+### 7ed.C. Precisely what has and has not been derived
+
+The former bare statement “keep this report law fixed” now has a typed
+Book01 interpretation and an actual history-derived word/address map:
+continue the registered admissible observation section, while the physical
+fields vary freely in its Choi/CAR input. The full source and general
+Einstein–two-scalar soundness/recovery then follow from their existing owners.
+
+The unresolved global physical step is not another geometric equation.
+It is whether the particular continuing closed execution is required to remain
+in this recorded section, or what actual law selects its next section and
+accounts for all such changes. Different observables remain admissible in D0;
+their genuine sources are not erased. This result does not claim that the
+same-prefix condition alone fixes all future controls, or that unrestricted
+X_N equals the constructed comparison graph. No GR_closed, exact-finite
+positive_gr/raw216, independent acceptance or lifecycle promotion is made.
+
+The distinction is a scientific boundary, not a new task or a demand for an
+external observer. The following complete proof is a positive composition
+using the operators already supplied in Books0–1 and the original GR carrier.
+
+### 7ed.D. Consume the incoming exact native comparator on the same rule
+
+Incoming df20fd997e796b3aa553d1aadfe56b64cf5f48a2, preserved §7ec, supplies
+the actual G/CX/SourceI word for the seven-call cross-reference event.
+Its effect is the ACTUAL kappa_vis-weighted predicate, not an ideal unit-
+visibility Boolean oracle. The positive constant kappa_vis=sin^2(128 theta)
+and its true gain remain unchanged in this application.
+
+The same retained-operation construction applies to this already emitted
+comparator: retain its actual word, relative addresses, the marked stage4364
+report and original echo/cut descriptor. The seven report inputs remain
+payload. Changing one of them is not changing the comparator word; all seven
+independent source legs and every truly shared-reference derivative remain.
+The incoming exactly equivalent Gray implementations are concrete members of
+one effect-faithful fibre. Its one-CX faulty comparator changes the effect,
+so is a different recorded operation, with its real source preserved.
+
+Thus the same Book01 identity distinguishes operation-preserving controls
+from field/reference data changes in an ACTUAL written native example, and
+the incoming full-price cross-calibration theorem carries the latter to
+its source-derived material metric. This uses the same reflected READY
+wrapper, original cut, required marks and retention schedule; equality of
+one effect does not identify arbitrary complete clock constructions.
+Every finite implementation catalogue has its own actual paid constants.
+
+The seven true geometric/reference calls and their shared parameter map
+remain inputs of that incoming source application. The native coin controls
+used to verify the comparator are not substituted for those geometric calls.
+No new replay of the incoming large exact calculation is needed for this
+operator-law composition. Its published checker/receipt and word provenance
+remain the evidence for that concrete implementation.
+
+### 7ed.Proof. Persisting native section and complete nonvacuum source
+
+#### Persisting ten-sign section: the intrinsic all-input comparison map
+
+Read-only composition proposal, existing PR334, 3 November2026.
+Phase: native realization and final composition of the ORIGINAL full-CAR /
+fixed ten-sign kappa theorem. No alternative v8 source is used.
+
+##### 1. The precise parent and the hypotheses actually substituted
+
+The existing raw-cylinder theorem, R16–R19, needs the all-input correctness
+fibre of one specified reporter. The new question is whether preserving that
+operation during history growth can be stated using an existing D0 rule,
+rather than freezing an old numerical answer or selecting Einstein outputs.
+
+Book01 §01.15 supplies TWO operator identities for one admissible observable
+section, with R_n=D_n*D_n:
+
+    P D_new = D_old P,       P R_new = R_old P.
+
+The raw-history owner supplies the actual canonical birth
+
+    J x=x tensor v, v=(sqrt(p),p), p+p^2=1, P=J*, J*J=I.
+
+Their composition below gives the required all-input semantic invariant for
+ONE persisting detector section. Its membership hypothesis is precisely that
+the later logical detector represents this same section under this P. It is
+not a theorem that every admissible future operation must be that section.
+That latter global selection is neither silently assumed nor newly proved.
+
+##### 2. Both naturality conditions force an all-input reducing embedding
+
+Let D:H->H and D':H'->H' be arbitrary finite operators and J:H->H' an
+isometry. Suppose
+
+    J*D'=D J*,       J*D'*D'=D*D J*.                 (N1)
+
+In H'=ran(J) direct_sum ker(J*), the first condition gives
+
+    D' = [[D,0],[C,F]].
+
+The top-left block of the second condition is D*D+C*C=D*D. Hence C*C=0,
+so C=0. Therefore
+
+    D'J=JD,   D'=JDJ* direct_sum F,
+    E'J=JE,   J*E'J=E,   E=D*D, E'=D'*D'.           (N2)
+
+This is equality on EVERY input vector, also after tensoring an arbitrary
+unknown reference. It is stronger than retaining one previously observed
+probability. For a positive selfadjoint E, its own naturality equation alone
+also gives E'J=JE by taking adjoints. The two-equation version additionally
+preserves the actual logical outcome operator D.
+
+No assumption that D is the main Dirac, U, or Book feedback F is made.
+Here D is a logical detector/outcome map. Apply (N1) to each required marked
+detector when several marks are part of the declared operation.
+
+##### 3. The existing fixed reporter provides the needed data/operation split
+
+Consume A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md, §§2–4, without
+repeating its source construction. At fixed h, norm bound, PF bank and layout,
+it already has ONE field-independent processor:
+
+* H_f reads the original mixed CAR/coframe/Lorentz moments on complete Choi
+  inputs; its fixed polynomial version includes the owned R2 normal projection.
+* H_q reads the actual material kinetic moment from Choi and CAR128 inputs.
+* Two S signs and eight T signs feed the fixed1024-entry beta_sigma table.
+* The original READY/failure and REPORT status maps retain every complement.
+
+All coframe/link/two-scalar dependence enters the supplied data-bank states,
+not the beta table or a field-dependent final query angle. The fixed
+observable is therefore a real existing object, not a report invented from
+the Einstein tensor. Let T_h denote its complete logical evaluator, including
+its fixed work, and let Pi denote READY AND REPORT. Its outcome map and effect
+are
+
+    D_h=Pi T_h,           E_h=D_h*D_h=T_h*Pi T_h.       (N3)
+
+One may instead keep the complete finite tuple of outcome/marked maps.
+The owned all-column fullStep compiler compiles this fixed finite evaluator
+once at a chosen tolerance. The result is an ACTUAL finite old word Ttilde_h,
+whose matrices belong to the original Golden field. Register and retain
+
+    Dtilde_h=Pi Ttilde_h,       Etilde_h=Dtilde_h*Dtilde_h.
+
+Naturality is imposed on this actual finite detector section, not falsely
+asserted as an exact identity with the ideal evaluator. Its approximation
+error to (N3) is carried into the existing kappa budgets.
+
+The operation record includes its actual word, profile, input embedding,
+report/required-mark addresses and h-level recipe. The payload is the Choi/CAR
+bank. Book01's code/history rule requires observable distinctions in these
+items to be encoded; it does not erase the distinction between changing an
+input and changing the operation applied to that input.
+
+##### 4. A nonempty physically written extension and a finite discriminator
+
+After canonical births, replay exactly the same old native word on its old
+live WORK addresses, tensor identity on the new factors. The original
+G/CX/fullStep grammar admits those old addressed calls; oldRIGHT remains
+untouched. All real new registers and stages remain in the carrier/price.
+The logical outcome extension is
+
+    Dtilde_new=Dtilde_h tensor I, Etilde_new=Etilde_h tensor I.
+
+Both Book01 identities hold exactly. Thus the class in (N1) is nonempty on
+the actual raw-cylinder birth, without a new arbitrary controlled primitive,
+a fresh desired output law, or erasing unused columns.
+
+The inherited finite halt, address, role, marked-output and single-section
+obligations remain part of admissibility. The following operator test alone
+does not replace the complete Book01 contract.
+
+For any other finite native candidate representing the same logical section,
+(N1) and its marked-map analogues are finite operator-equality predicates.
+All entries are in the fixed exact Golden field, and J is the actual Golden
+birth matrix. They can be checked on all basis columns by exact arithmetic;
+one is not deciding equality of arbitrary uncomputable smooth functions.
+
+A change that fails this predicate is not another implementation of this
+persisting section. It can still be a distinct admissible observable/task.
+The conclusion is NOT a prohibition on such a task elsewhere in D0.
+
+The logical map must be distinguished from its complete physical dilation.
+Alternative implementations may create different extra records and need not
+obey (N1) as whole Stinespring maps. We first have the explicit canonical
+implementation above. The existing all-input EFFECT theorem then extends the
+source to other implementations with the same complete report effect and
+required marks, while retaining their different heat and work. We do not
+declare every faithful physical dilation automatically D-natural.
+
+##### 5. The actual same-initial return and its unrestricted field source
+
+Let R_h(Y) be the actual entire preparation isometry from the common old
+protected input to the complete bank and born WORK. It includes the genuine
+READY weight, all independent preparations and oldRIGHT. Its full echo gives
+
+    Ctilde_h(Y)=R_h(Y)*(I-2Etilde_h)R_h(Y).                     (N4)
+
+Here Etilde_h is the ACTUAL compiled effect; E_h remains the ideal
+comparison target of section6. For a continuation with canonical embedding J,
+use J R_h(Y) and the actual refined effect Etilde_new.
+(N2) gives EXACTLY the same (N4) for every Y, on all protected inputs.
+Consequently the full field derivative includes BOTH preparation legs:
+
+    D Ctilde=(DR)* (I-2Etilde)R + R*(I-2Etilde)DR.
+
+No condition r(Y)=r_old has been inserted. The original all16 coframe,
+all24 independent Lorentz-link and two scalar/top field directions remain.
+For an independently varying implementation in the same effect fibre,
+R* delta Etilde R=0; its vertical return source is exactly zero. Genuine independent
+payload/preparation changes retain the previous source and its full norm.
+
+The retained input cut must select the born code/work boundary, not trace
+over all possible programme inputs. Otherwise the determinant would sum all
+branches and lose the selected field dependence. If a finite code z selects
+prepared data, execute its actual loader L_z, the ONE fixed evaluator, and
+the paid inverse/uncomputation in the full echo from this original boundary.
+The code need not be discarded; its full complement remains. Both loader
+legs and every raw call are priced. A fixed finite all-code implementation
+may be compiled from the known finite block matrix; no unknown-unitary
+controlled oracle is supplied by this observation.
+
+Keep the placement of naturality exact. It concerns the canonical J. A later
+paid G on the fresh bit changes Jx=x tensor v into x tensor Gv, and (N1) alone
+does not constrain an arbitrary E' there. Evaluate the reporter before the
+retention tail, as in the owned schedule, or transport BOTH its logical map
+and the actual input embedding by the actual paid evolution. The canonical
+extension E tensor I commutes with spectator G, but this fact cannot be
+assigned to every arbitrary complement extension.
+
+##### 6. Complete price, actual compilation error and the kappa consumer
+
+For the ideal fixed reporter the existing READY graph has
+
+    F_h(Y)=a_h rbar_h(Y) I,
+
+with the SAME full-CAR/material operands and ten-sign polynomial. This is
+the input of raw-cylinder R16–R19 and the final regular-source composition.
+The actual fixed evaluator has a uniform all-input error, not exact ideal
+equality. Use the owned relative-corner estimate to compare its price to
+the ideal report. At finite endpoints every evaluator/loader/unloader error
+is charged at the true scale delta/(|t| a_h epsilon_h r_f), with the actual
+positive history gain. Small endpoint tolerance is not a tangent constraint.
+
+Full heat traces all code, unused work, protected reference and retained
+history branches. It is NOT the selected cold branch. Every physical prefix,
+including the fixed evaluator and both data loaders, first has a finite
+explicit length/dimension and source constant. Only then choose the actual
+paid birth;G retention depth using the owned R11/growing-clock estimate.
+This bounds its complete heat contribution relative to the same gain.
+
+Keep the SAME reflected READY wrapper, original input cut, retention scheme
+and required marks. Each finite effective implementation chart/catalogue has
+its own paid constants; no uniform bound over arbitrary programme lengths
+is asserted. Equality of one effect does not transport unrelated wrappers.
+
+Thus the existing raw42 field lifts plus the effect-faithful implementation
+fibre obey the ALREADY OWNED sum-hull norm estimate. Current independent
+copies retain the maximum product norm; old retained inputs retain their
+actual old-source term. In the notation of the existing SOURCE owners the
+complete estimate retains all terms
+
+    ||DB/Gamma - D S_ES o Dpi||_ext*
+      <= E_field + E_evaluator/loaders + E_heat
+         + C_old/Lambda_current + E_bank/implementation.
+
+Choose these budgets by the existing constructive schedule; no new coupling
+or source normalization is introduced. The error tends to zero and the
+same interval nesting produces the SAME kappa covector. The final all42
+soundness and regular-computable recovery theorem is consumed unchanged.
+
+A readonly programme is not automatically source-neutral: if a programme or
+data parameter already in the old prefix is independently varied and is
+reused in every current block, its source is extensive. Such a direction is
+not silently included in C_old/Lambda_current. It is either a fixed common
+boundary item in the same-prefix comparison, an actual payload direction
+handled by the current source theorem, or a different section/task with its
+own source. The current pure-code off-diagonal zero theorem does not kill
+within-branch or finite-law changes.
+
+##### 7. Exact advance and remaining boundary
+
+This supplies a concrete intrinsic comparison map: the two EXISTING Book01
+naturality identities imply complete all-input preservation for a persisting
+logical detector, and the ORIGINAL fixed ten-sign processor gives a real
+operation/payload split plus a nonempty native extension. Effect-faithful
+implementations then consume the owned complete-price kappa theorem.
+
+It replaces an unexplained fixed answer/report-law restriction by a precise
+application of the existing admissible-section contract. It does not prove
+that every future native word must continue this section, that all physical
+variables of an unrestricted X_N have been exhausted, or that D0 uniquely
+selects this detector among all possible tasks. Actual inclusion of a given
+continuation in this same-section class is the finite predicate above, not
+an automatic consequence of sharing a finite prefix.
+
+Finally, fixed-h RAW history refinement is not physical h-refinement.
+Different h detectors have different finite recipes and errors. Their
+source compatibility is the existing kappa construction, not a falsely
+asserted exact D_h/E_h intertwining between different physical meshes.
