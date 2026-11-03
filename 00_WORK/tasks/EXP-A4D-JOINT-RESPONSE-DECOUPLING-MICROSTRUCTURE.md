@@ -20379,3 +20379,52 @@ verifies normalization, stationarity and rate; direct enumeration gives
 checker, result and input block remain byte-identical to e94e518c4;
 checker SHA256 remains7a3ba5e3a80bbd1c8446d7223879db65d8b336c08411114468c406dc4fe68252.
 Affected work/protocol/assembly/repository and whitespace guards pass.
+
+## 2026-11-04 continuation: actual coherent AF cut, full clock and source residual
+
+Input adc5bd97140caf18270b7b5e566a399946162039; same #334/two owned paths.
+Phase: native realization / final composition. Consumer: return/record
+source gate §6, B–D. Primary proof/checkers/input pins: §7es. This consumes
+the old #310 coherent-AF state theorem and §7cc's paid controlled even-G
+words, rather than adding a new instrument or physical Info convention.
+
+Removed finite implementation premise: one literal32-call word plus
+actual16→32→64births realizes the original N1 ready00/1 and pending01
+Gram with U=G4, including imaginary input coherence and the entire dark
+complement. Inventory8G+16SourceI+8CX, all64columns, arbitrary Spin and
+immutable oldRIGHT. No zero blank, postselection or free inverse occurs.
+
+The SAME execution now has a complete growing-clock price calculation:
+N34, D2096, all890800Hodge modes; harmonic offset752464 and total nullity
+752496. Actual cold C=(p²I+pG4)tensorI8 gives C*C=(64sqrt5−143)I16 and
+J=−16log[1−z+z(64sqrt5−143)]. Full-clock spectral conjugacy retains the
+two birth arrows and spectator heat anchor; it does not split mixed
+birth layers into independent clocks. Analytical bounds are exact;
+H≈17.82145050787 is explicitly a whole-spectrum numerical diagnostic.
+
+For the declared AF Info valuation, all255 normalized full-input-density
+rows vanish at u=Tr[rho(sigma_y tensorI8)]=0; the Hessian has rank1, with
+254flat directions. The surviving instrumental dc-source is nonzero.
+A fixed Golden word does not thereby acquire a continuous native angle.
+The actual output code-cost sqrt5 is not the primitive Cost: ES11 retains
+dC_phys+dW+dA_AF−dH−dJ as the exact still-unbound source residual. Full
+prep stationarity must include actual actuator Cost/work derivatives.
+
+Endpoint transfer to H.1 is tested exactly at EVERY AF level: since its
+full W is a reflection, each word is a weighted W-parity, so the entire
+coherent Gram depends on only m=Tr(rho W), equal to c on the scalar chart.
+The projected coherent component A_Y−(c_Y/c_t)A_t is zero if that controller
+is genuinely admitted; actual remaining Cost/work may balance A_t and
+must not be deleted. This closes only the endpoint-only candidate. The
+real H.1 pre-sign bank/prefix algebra, its physical Info/readout selection
+and complete source-to-Einstein transport are not supplied or excluded.
+
+Validation:52 exact native/Gram/return controls and12 whole-clock
+checks/diagnostics pass normally and with optimization/warnings as errors;
+receipts agree byte-for-byte. Independent analytical reviewers checked
+all-column implementation, full-density image, whole-clock/spectator
+count, all-level parity and the complete-price residual. Their corrections
+retain the actual generator Ward and the projected-source identity.
+Prior §7er checkers/receipts are untouched. No new scientific task,
+claim/assembly acceptance, Ready/retirement, large-root or Lean replay.
+GR_closed=false; full objective active.
