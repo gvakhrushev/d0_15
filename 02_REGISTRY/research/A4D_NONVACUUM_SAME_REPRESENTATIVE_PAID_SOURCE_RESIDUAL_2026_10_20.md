@@ -133152,3 +133152,3792 @@ print(json.dumps(report))
   "checker_sha256": "136829c28dd6ba1418c24246ec7f7ad3b4bc1fd4d491fb823983d3f3b92f44b2"
 }
 ```
+
+## 7eo. Original full reporter, exact native finite-source centres, and curved recovery on one retained-history tower
+
+3 November 2026. Same #334 / constitutive/native-programme-v1; native realization and final composition. Scientific input: c2f7f14af3f0e6782fcfa4eb45828755f89c29aa. Integration base: c7092f525b2c17693f53855c973634c886cbb068, preserving the incoming 389595e8 and c7092f52 applications. This section consumes §§7eh–7el and the original full-CAR/all40 owners. It does not create a task, change an acceptance row, or replace the raw216 terminal.
+
+The incoming §7em is preserved and consumed: its exact report-sector native compiler and full prepared-bank transport support the relative-bank step below. Its commuting-block control result and terminal STORE construction remain at their stated domains. The present application adds an exact original-reporter criticality calibration, the complete faithful implementation fibre, a literal Spin-safe common eigenframe, and a whole off-shell source bound. Its canonical-prefix construction differs from §7em's commuting uncompleted banks. The terminal STORE of §7em.F2 is not silently appended to the present canonical endpoint: that changes the actual word/age hypotheses. The main result below uses the original H.1 completed-bank/pre-sign marked interface, with the physical-constraint acceptance boundary retained.
+
+Incoming §7en is preserved at its stronger full-operator task. FN2–FN7 give exact transport for the birth-free, fixed-length kernel slots below: the actual loops V_l(u);V_l(u)^-1 have the same complete operator I on the entire carrier, so their intermediate prefix gauges conjugate the entire growing clock, generated cuts and absolute H+J price. The original prepared/marked readouts still require their separate fidelity checks; this price identity uses the complete loop boundaries, not an inference of full operator equality from weaker marks. It needs no small-heat approximation and preserves the full raw norm through the existing prefix Jacobian. Moreover, the literal inverse loop is a witness: every same-layout native replacement with the same complete slot product I is included when its required marks also pass, even if individual backward occurrences change. FN3 gives its entire constrained tangent. This does not identify incoming X_rec(layout) with H.1's effect/prepared-mark fibre. The nontrivial FP8 axes generally change the full endpoint and still require §7eo.E. Neither terminal STORE, the rank-16 check fixture, nor a stronger old-record predicate is silently transferred.
+
+### 7eo.A. The composed statement and the exact comparison convention
+
+The construction below supplies one **declared complete Book03 §03.25 H+J master experiment**, on the fixed original writer graph of §7eh.H.1. It retains the original seven-call reporter, its actual final Z_port, every READY/failure branch, all CAR/Choi data, all stages of the true growing clock, and the independently admitted controls of that graph. It supplies an explicit full coordinate finite-difference source. The choice of that source is part of the experiment and is stated here; it is not an assertion that every other finite chord has zero price difference.
+
+For each refining mesh and each member of the nonvacuum class in 7eo.B, the procedure constructs:
+
+1. an actual finite G/CX/SourceI execution and its true marked geometric decoder;
+2. actual matched finite comparisons for all four independent field/preparation occurrences, each declared finite faithful implementation chart on its actual common layout, its retained endpoint-kernel coordinates, and every other free coordinate of the stated graph;
+3. the complete source in the original nonquotient norm, including the actual comparison-to-coordinate Jacobian;
+4. an exact zero of that finite coordinate source, with positive actual response gain;
+5. convergence of the full marked geometry and its 16+24+2 first jet to the original curved Einstein–CAR representative, and convergence of the full off-shell source to the already proved Einstein–CAR source.
+
+The method does not start with an arbitrary action germ and label its coordinates geometric. The starting data are the original complete geometric bank psi_*(Y), its original processor D_*, and its original nonlinear response c_*(Y). The off-shell controller uses their computed finite algebra on the full regular chart. Its response-changing part is proportional to D c_*(Y). The same recipe is used at every Y. At the primary family the already owned all40/CAR calculation proves D c_*=0 in all ambient field directions; this makes the native radial words literal identities while the complete geometric first jet remains nonzero and full rank.
+
+Write the actual declared finite-coordinate source as
+
+    ell_h(v) = sum_alpha (J_h v)_alpha
+      [ B(W_h,alpha,+) - B(W_h,alpha,-) ]
+                         /(2 t_h,alpha Gamma_h).              (EO1)
+
+Here J_h is the actual chart/basis map, every t_h,alpha is nonzero, Gamma_h is the actual positive return/source gain of this execution, and B is evaluated on the complete paid histories. The source is a covector assembled from its complete finite basis. It is not the generally nonlinear function obtained by treating an arbitrary single chord in direction v as a linear functional. Book02's declared finite-difference option and RAW/KAPPA's full finite-basis convention supply this type; 7eo.G records the exact owner and transport. No basis coordinate or endpoint-kernel norm is quotiented away.
+
+At the constructed centre each numerator in (EO1) is zero **exactly**. The four independent preparation pairs use their literal inverse controls. The faithful reflected implementation coordinates use actual single-plane conjugation pairs in a paid common eigenframe. Endpoint-kernel coordinates retain a paid marked-prefix/exact-inverse completion. The unknown original input density is price-independent. Any already admitted normalized input embedding with its generated reference has constant return at this centre; this does not supply a new native Spin rotation or a new proper-cut variable. Generated states and reports retain their exact recurrence/adjoint equations; fixed old records retain their boundary reaction. The wider shared-writer graph has the separate qualification in 7eo.F/G; an independently free input is not removed by calling it a baseline.
+
+All axes use the same zero-coordinate paid word, fixed birth layout and registered mark-address map. In an endpoint-kernel comparison, V means only the current square-gate body after the births; neither births nor protected past are inverted. The actual V_+/- prefix and its required marks are retained, followed by its paid exact inverse and the common body. Original raw prefix coordinates remain through their actual Jacobian. If A_j=F_j...F_1 and K_j=delta A_j A_j*, then delta F_j=K_j F_j-F_j K_(j-1), with max||K_j||<=N max||delta F_j|| and max||delta F_j||<=2 max||K_j||. At a kernel tangent K_N=0. Projection back to the original retained prefix is a norm-one left inverse; the additional inverse-word lift has its actual finite occurrence bound. A completion cannot manufacture missing mark fidelity: the compared V prefixes must satisfy the original mark constraints or their explicitly budgeted transport. Common-length identity slots and the registered prefix maps are part of the construction, not an erased clock.
+
+The source convention is a concrete comparison-map replacement inside the declared Book02 master sector. Its transport to the earlier finite comparisons is proved in the same full norm, with the real basis constant, comparison denominator, compiler errors and gain. The theorem does **not** assert that the previous arbitrary faithful endpoint recipe has become exactly stationary, or that finite differences are invariant under an arbitrary change of coordinates.
+
+#### One execution and one chronology
+
+Use the original opaque quaternion SOURCE SPIN as an initial carrier C^4, with its actual rank-four physical input in the basic construction. All its unknown columns are retained. G/CX never address those two Spin wires. The first report port establishes the ONE primitive source_port of the complete word. At later levels it remains active apparatus, not oldRIGHT; the newly born report port uses the paid SWAP-to-source-port macros and restores that unknown apparatus on every completed macro. All other sealed old WORK is strict oldRIGHT. The faithful frame includes the entire joint active-apparatus/new-WORK complement; it does not omit those old-apparatus directions. Fresh addressable WORK is born afterwards, with the final output PORT first; all required resources, CODE and any padding spectators are allocated before choosing the native power and accuracy. The exact endpoint of the current centre is
+
+    W_h,can = I_old tensor U_n,
+    U_n = G_port^(-n) Z_port G_port^n.                         (EO2)
+
+The source Spin is restored on all columns at this centre. The actual allowed complex implementation directions use routed SourceI and are checked in the native frame application; they are not obtained by rotating forbidden Spin wires. Neither the old rank-eight fixture nor a rank-one auxiliary example supplies the multiplicity of this construction.
+
+After recording the current critical checkpoint, execute its paid inverse U_n on still-active fresh WORK before sealing it. Its canonical endpoint becomes identity. All earlier stages and designated marks remain in the retained history. Birth the next output port first and repeat. This constructs the old-canonical-identity hypothesis needed at every later checkpoint; it does not assume that an arbitrary old history has that property or overwrite protected records. The inverse completion belongs to the prefix of the NEXT experiment, not to the return whose current field source is being measured.
+
+The history contains the word, addresses, original fixed writer/calibration, required marks and comparison recipe. All new finite words are computably constructed from these data by the admission of §7el.A and the explicit native compiler below. Original detector derivatives are computed from the same finite CAR/Choi/report algebra, not supplied as an Einstein oracle. The zero-preserving compiler has overlapping certified accuracy branches and no equality test for an arbitrary computable real. Choosing the native angle congruence, the primitive comparison axes or their adjoints does not inspect whether the field solves Einstein's equation.
+
+#### Full source and recovery, rather than a stationary scalar corner
+
+The complete prepared-column lift, including joint CODE/DATA/WORK effects, is transported at the actual new completed-bank mark and the following executed processor marks. Unknown protected inputs and their reference entanglements remain uniform columns. No exact clean READY support or full unprepared-WORK unitary jet is inferred from approximate state transport. The genuine full geometric decoder and its conditioning are retained.
+
+At fixed off-shell field Z, the construction has the quantitative form
+
+    || ell_h - A_h* D I_Einstein-CAR(Z) ||_(full,*)
+       <= E_geometry,h + E_report,h + E_comparison,h
+          + E_compile,h + A_(L_h) C_h/Gamma_h  -> 0.           (EO3)
+
+Every term is evaluated with the actual completed word, norms and marks, as detailed below. The last term is suppressed by additional actual CX;CX pairs chosen LAST. They change the absolute heat and the clock dimension, but leave the cold response and Gamma_h unchanged. There is no late retention factor making the gain vanish faster than the error. Gamma_h is a frozen comparison normalization: this is D B/Gamma_h, not D(B/Gamma_h).
+
+The field lift has its original full right-inverse bound, so (EO3) consumes the full off-shell source theorem of §7ei, including all coframe, Lorentz and matter directions. It is not inference of an equation class from agreement only on a pp-wave ansatz. At the exact finite centres, ell_h=0. Their marked fields converge to the declared fixed curved metric and matter field. The separately exact Palatini arrays are the target anchors; the compiled finite decoded arrays are not asserted identical to those targets.
+
+The following proofs are one chain: exact original primary source -> native canonical base and geometric/radial lift -> full thermal and finite-pair identities -> complete admitted source -> the original off-shell source/refinement theorem. Each approximation occurs in a named transport. None replaces the exact price equality used for the finite coordinate roots.
+
+#### Scientific boundary
+
+This is the complete specified Book03 H+J master task, not a universal identification of every older H+J+R, branch-price remainder, preparation Info term or all possible future programmes with that task. The broader constitutive binding remains explicit in 7eo.I. Nor does this change the independent raw216 source, exact samples, comparator, fixed tau or unweighted raw norm. The result is research in the existing owner and still requires an independent pinned acceptance before any assembly/CORE promotion.
+
+### 7eo.B. Exact primary criticality of the ORIGINAL full reporter
+
+Application of the complete geometric lift in §7eo.C.
+Existing scientific owner: PR334. Scratch proof only; no new task or tracked change.
+Consumer: the radial coefficient of the paid commutant-bank construction is
+structurally zero at one explicit curved primary centre on every refining mesh.
+
+#### B. 1. Inputs, original conventions, and claim
+
+This note consumes, without repeating their all40 calculation:
+
+1. `02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md`, equations (6)--(14): the original unrestricted 16+24 Euler identity and its two genuine CAR material rows.
+2. `02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/proof.md`, equations (4)--(13), especially (10)--(13): the exact FULL-CAR common-null first jet in every original ambient direction, including determinant and all shared-edge occurrences.
+3. `A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md`, (3)--(6): the actual inverse-coframe numerator, density map and material normalization.
+4. Main source `A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`, §7ef SC1--SC7 and §7eh.B F1--F6: the unchanged nonlinear reporter, actual READY probability, literal seven-call predicate, and genuine full-resource reference maps. In the inspected working file SC1 is at 113428, SC7 at 113514--113516, and F1 at 127544--127551; equation labels are the durable references.
+5. `A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`, (1)--(3): the actual forward difference and forced one-u-tick connection staggering.
+
+All paths except the two explicitly qualified above are under
+`02_REGISTRY/research/`. The completed-bank map retains the full CAR16,
+180 Choi/16 material copies, Julia/failure outputs, all seven independent
+READY/report carriers, shared SITE, and the protected old input identity.
+The scalar first-source calculation below is for that original bank map.
+It does not replace it with a newly prepared scalar-probability oracle.
+
+THE CLAIM. After the exact, geometrically realizable reference calibration
+in §5, the original ideal seven-call return c*_h has
+
+    D c*_h(Y*_h)[delta e, delta U, delta Psi] = 0                 (PC1)
+
+for every independently varied coframe entry, proper-Lorentz link tangent,
+and both material amplitudes at every free interior site. Thus all 16+24+2
+rows d*_j used by CG8 vanish exactly at each finite h. The metric is the
+same explicit curved nonvacuum continuum metric at every h. This is a
+first-source statement, not a claim that all geometric derivatives or all
+full WORK-column conjugated operators vanish.
+
+#### B. 2. The coefficient really is the primary coefficient
+
+Put p=(sqrt(5)-1)/2, z0=2^-20. The ORIGINAL polynomial is
+
+    E=p^2(1+x), ell=4E(1-E), u=p+p^2 y,
+    B=4u^2(1-u^2), A=ell+(1-ell)B,
+    r(x,y)=z0(A+B)-z0^2 A B.                                   (PC2)
+
+Use p+p^2=1. At (0,0), ell=B=4p^3 and 1-4p^3=p^6. Therefore
+
+    Q_E=1-z0 4p^3,
+    R_E=1-z0 4p^3(1+p^6),
+    r_f=4z0 p^11 Q_E > 0,
+    r_q=8z0 p^6(R_E+p^6 Q_E) > 0,
+    k0=r_q/r_f=2p^-5(R_E/Q_E+p^6)>20.                         (PC3)
+
+Thus k0 is EXACTLY -lambda_-(2^-20) of the all40 owner, not a numerical
+match or a continuum coupling chosen afterwards. It is the negative
+material branch y=-epsilon q/rho of the original reporter.
+
+#### B. 3. One fixed curved primary representative on every mesh
+
+Take h=1/L, even L>=8. The scored grid has L sites in each of u,v,x,y,
+coordinate volume v_h=h^4, so sum_x v_h=1. Use u,x,y in [-1/2,1/2),
+periodic v of period one, and a prescribed two-layer collar in u,x,y.
+Extend all displayed fields to that collar by their same analytic formulas.
+All 16 coframe and 24 link directions and both scalar directions are free
+at sites sufficiently far inside the collar to include every affected
+based plaquette and forward difference. Boundary data are fixed; no
+quadratic function is falsely declared periodic in x or y.
+
+Set the fixed positive amplitude a=p/4 and
+
+    Psi_0(u)=a u,     Psi_15(u)=0,
+    H(x,y)=k0 a^2 (x^2+y^2).                                  (PC4)
+
+The genuine full-CAR material state is
+
+    m_x=sqrt(p)|1> + a u |0> + sqrt(1-p-a^2 u^2)|14>,           (PC5)
+
+with zero |15> amplitude and all other omitted entries zero. Its norm is
+one. On the scored grid and two-layer collar |u|<=1, and
+1-p-a^2 u^2 >= p^2-a^2 = 15p^2/16 > 0. Thus the real material square root
+has a strict positive margin in an open neighbourhood of this centre.
+The two amplitudes remain independently varied; Psi_15=0 is a value, not
+a frozen direction.
+
+In the original null internal basis, use
+
+    eta_N=[[0,1,0,0],[1,0,0,0],[0,0,-1,0],[0,0,0,-1]],
+    e_N=I+(H/2)E_{-,+}, det e_N=1,
+    N_2=E_{-,2}+E_{2,+}, N_3=E_{-,3}+E_{3,+},
+    K_2=k0 a^2 h(x-h/2), K_3=k0 a^2 h(y-h/2),
+    U_u=exp(K_2 N_2+K_3 N_3), U_v=U_x=U_y=I.                 (PC6)
+
+The exponential is the exact degree-two nilpotent polynomial. These are
+proper Lorentz matrices. The connection obeys the ORIGINAL equation
+
+    K_a(z)= [H(z+u)-H(z+u-a)]/2
+
+exactly, since H is independent of u. Moreover
+
+    D_u^+ Psi_0=a,   E_j=|D_u^+Psi|^2=a^2,
+    Delta_h^perp H=4k0 a^2=-4lambda_- E_j.                    (PC7)
+
+Hence this is the existing exact all40+2 primary solution, with no mesh
+correction to H. Its metric is
+
+    g=2du dv+H du^2-dx^2-dy^2.
+
+It is curved and nonvacuum: the owned sign convention gives
+Ric_uu=(1/2)Delta_perp H=2k0 a^2 != 0. No periodic-v identification is
+used to identify v with the physical chronological D0 clock; it is the
+finite geometric boundary condition used for the material summation.
+
+For the CURRENT Cartesian F1 convention use the FIXED matrix
+
+    Q=[[1/sqrt(2),1/sqrt(2),0,0],
+       [1/sqrt(2),-1/sqrt(2),0,0],
+       [0,0,1,0], [0,0,0,-1]].
+
+It has Q^T Q=I, det Q=+1 and Q^T eta_C Q=eta_N, where
+eta_C=diag(1,-1,-1,-1). Set e_C=Q e_N, U_C=Q U_N Q^-1.
+This transports the original oriented pairings and all CAR traces;
+it does not guess a new epsilon sign in the diagonal convention.
+All 16 coframe and all 24 link tangent spaces are carried isomorphically.
+The associated full bank and all its columns undergo the same prescribed
+basis transport; implementing its finite target remains physically paid.
+
+#### B. 4. Exact current full-CAR density/source transport
+
+The current original F1 moments BEFORE inverse PF are
+
+    u_r=nu_h eta e^-T e_r,
+    N_rs=(u_r u_s^T-u_s u_r^T)eta,
+    a(N,P)=-Tr_16[dGamma(N)Lambda(P)]/8,
+    f_mom=sum_(r<s) a(N_rs,P_rs)/(nu_h^2 h^2),
+    q_mom=g^(mu nu) sum_(A=0,15) D_mu^+Psi_A D_nu^+Psi_A.      (PC8)
+
+The query scale nu_h>0 is fixed on the full regular field chart, as in the
+original owner. It is not silently differentiated away. Its exact quadratic
+factor cancels in (PC8). Retain the real based plaquette
+U_r(z)U_s(z+r)U_r(z+s)^-1U_s(z)^-1 and every shared-link contribution.
+
+Let E_det=det e and d=det[u_r]=-nu_h^4/E_det. The original cofactor tensor is
+
+    B_rs=-(h^2 nu_h^2/d)N_rs=(h^2 E_det/nu_h^2)N_rs,
+    f_star,rs=-tr[B_rs(P_rs-P_rs^-1)]/4,
+    fhat=h^-4 sum_faces f_star,rs.                            (PC9)
+
+At (PC6), E_det=1. On the two curved common-null faces the owner proves
+
+    a(B,P)=f_star(B,P)=0,    D a(B,P)=D f_star(B,P)
+
+for every independent ambient coframe/link direction; on the other four
+faces P=I gives the same full first-jet identity. In particular this is
+not differentiation restricted to the null ansatz. Since a is linear in B,
+
+    a(N,P)=0,
+    D a(N,P)=nu_h^2 h^2 D(h^-4 f_star(B,P)),
+    f_mom=q_mom=0,
+    D f_mom = D fhat                                         (PC10)
+
+at the primary centre. The determinant derivative is INCLUDED: its
+coefficient is the zero amplitude a(N,P). The equality transfers through
+all four actual edge occurrences of all six based faces. No CAR grade,
+residual adjugate term, coframe conformal mode or link row was discarded.
+The off-shell density involution e -> (det e)^(-1/2)e from the density owner
+is consistent with this calculation, but no determinant-one restriction
+is imposed on the variations.
+
+For clarity the last surviving source is explicit. In the all40 owner's
+variables v_role=h e_N, the unweighted geometric row is
+
+    D_(v_v^+) sum fhat = -(1/(2h)) Delta_h^perp H.
+
+The material row is D_(v_v^+) q_mom=-2a^2/h. Thus
+
+    D_(v_v^+) sum(f_mom-k0 q_mom)
+       = -(4k0 a^2)/(2h)+2k0 a^2/h=0.                       (PC11)
+
+All other 15 coframe rows vanish. Both nontrivial original link rows are
+h^2[K_a(z-u)-(H(z)-H(z-a))/2]=0; the other 22 vanish by the owned exact
+identity. Matter has no independent link dependence. Each material source
+is the original sum 2a sum_z v_h D_v^+ delta Psi_0, which telescopes
+EXACTLY on the v-periodic grid; the Psi_15 row is zero as well.
+Changing from v_role to e multiplies coframe rows by h; zero is preserved.
+Changing to Cartesian Q and inserting the uniform positive coordinate
+measure v_h preserve every zero. Therefore
+
+    D I_h(Y*_h)=0,  I_h=sum_z v_h(f_mom,z-k0 q_mom,z),         (PC12)
+
+on all 42 independent interior field directions.
+
+There is NO forward/midpoint approximation here. The forward difference
+of the affine material field equals a exactly; the midpoint derivative
+also equals a; H is u-independent; the owner's forced time staggering
+and midpoint relabeling therefore coincide exactly on this representative.
+
+#### B. 5. Exact reference calibration is a genuine full-bank geometry map
+
+The original full seven-call predicate uses
+
+    P_j=a_ready r_j,   a_ready=2 F_21 p^23,
+    lambda_vis=kappa512 p^7, kappa512=sin^2(512 theta)>0,
+    Xi=(P_y+-P_y-)(P_f-P_0)+(P_x+-P_x-)(P_q-P_0),
+    Q_event=lambda_vis[4+sum_z v_h rho_z Xi_z],
+    c*=1-2Q_event,    sum_z v_h rho_z=1.                      (PC13)
+
+The seven calls have their own genuine READY/report carriers; their READY
+calibration is shared, not a common random flag replacing independent
+carriers. SITE is one fresh WORK carrier shared by all seven banks, so the
+products are formed at the same site BEFORE the average in (PC13).
+All rejected/failure branches remain. The final return sign in c*=1-2Q_event is the original Z_port from W=R_load* T* Z_port T R_load, T=V G_port^-1, implemented by SourceI squared. A per-call READY AND REPORT event is not this final sign.
+
+At y=0, r(x,0) is a polynomial of degree at most two in x. Define
+
+    Delta_y(delta)=r(0,delta)-r(0,-delta),
+    a_ref=Delta_y(delta)/(2r_f).                              (PC14)
+
+Then r(a_ref,0)-r(-a_ref,0)=Delta_y(delta) EXACTLY. The generic choices
++/-k0 delta from SC4 agree only to O(delta^3); for the present exact finite
+application replace those REFERENCE INPUTS by +/-a_ref. The reporter,
+READY, selector/predicate, z0, k0 and current source are unchanged. This is
+a fixed calibration on an open off-shell field chart, not an Einstein
+admission filter.
+
+Here is an explicit effective realization of those inputs by the SAME full
+geometric bank; in particular a_ref is not an unsupported scalar override.
+Choose fixed s_ref>=1 large enough for the original common Julia margin,
+and e_ref,z=s_ref rho_z^(-1/2) I. Choose t_h=h/2 and v_max=h/20. Set
+
+    c_a=(1+t_h^2)/(1-t_h^2), s_a=2t_h/(1-t_h^2),
+    c_b(v)=(1-v^2)/(1+v^2), s_b(v)=2v/(1+v^2),
+    F_h(v)=s_a s_b(v)[2+(c_a-1)(1-c_b(v))]/(2h^2)
+          =2s_a v(1+c_a v^2)/(h^2(1+v^2)^2),
+    F_max=F_h(v_max),       0<F_max<1/8.                      (PC15)
+
+Use the owned proper boost A in plane 02 and rotation B(v) in plane 12,
+U_0=A, U_1=B(v), U_2=U_3=I, Psi=0. Only P_01=ABA^-1B^-1 is nonidentity.
+It lies in SO+(1,2) direct-sum 1, so rank(I-P_01)<=2, adj(I-P_01)=0.
+The FULL-CAR trace therefore gives exactly
+
+    f_ref,z=rho_z F_h(v)/s_ref^2, q_ref,z=0.
+
+The literal sign in (PC15) is the F3 sign of the original reference owner;
+replacing v by -v gives exactly the negative value. No parity projection
+or small-loop replacement is involved.
+
+Choose the common chart envelope FIRST, including the full reference range
+0<=|v|<=v_max, bounded current fields, strict positive rho, and a small
+fixed material-amplitude range. Choose its original finite bound Lambda_h>=1,
+nu_h and shared attenuation epsilon_h=1/(64 Lambda_h). Then define
+
+    d_h=F_max/(4s_ref^2 k0),   delta_h=epsilon_h d_h.           (PC16)
+
+This gives 0<delta_h<1/128. A useful completely elementary bound from
+(PC2) is
+
+    r_q/2 <= partial_y r(0,y) <= 2r_q,   |y|<=1/64.          (PC17)
+
+For completeness: 3/5<p<5/8 and p^2=1-p give
+19/32<=u<=101/160 on this interval. Consequently B_y/B_y(0) lies between
+2/3 and 3/2 by direct rational bounds. The other positive factor in r_y
+is z0(2-ell0)-z0^2[ell0+2(1-ell0)B]; its ratio to its y=0 value lies
+between 1-z0 and 1/(1-z0), hence between 3/4 and 4/3. This proves (PC17).
+It follows that
+
+    (k0/2)delta_h <= a_ref <= 2k0 delta_h,
+    0 < T_h:=s_ref^2 a_ref/epsilon_h <= F_max/2.               (PC18)
+
+The derivative of F_h is
+
+    F_h'(v)=(2s_a/h^2)
+      [1+3(c_a-1)v^2-c_a v^4]/(1+v^2)^3 >0
+
+on 0<=v<=v_max. Therefore F_h(v_ref)=T_h has a UNIQUE root in the STRICT
+bracket (0,v_max), with upper endpoint value at least 2T_h. This is the
+existing one-variable reference calibration, not a field/root search.
+The explicit equation is quartic after clearing (1+v^2)^2. Interval
+bisection yields a terminating precision name; with algebraic envelope
+constants the isolated algebraic root is an exact finite description.
+Use B(+v_ref) and B(-v_ref). Their original x arguments are exactly
++/-a_ref and y=0.
+
+For the y references use e_ref, all links I, and genuine material states
+with Psi_15=0 and respectively
+
+    Psi_0^(positive q)=s_ref sqrt(d_h) u,
+    Psi_0^(negative q)=s_ref sqrt(d_h) x.                     (PC19)
+
+Both use open/collar directions, so they are valid with periodic v.
+Original forward differences give q=+rho_z d_h and q=-rho_z d_h exactly;
+f=0 since all plaquettes are I. The negative-q bank supplies y=+delta_h,
+and the positive-q bank y=-delta_h. Their amplitudes satisfy
+s_ref^2 d_h=F_max/(4k0)<1/640 on |u|,|x|<=1, hence the same CAR filler
+has a strict positive margin. This smooth affine reference replaces the
+owner's checkerboard only because the present boundary carrier has open
+u and x directions; it uses exactly the same q formula and full bank.
+
+The remaining three banks are the owned maps
+
+    Z_f(Y)=(e,U,0,rho), Z_q(Y)=(e,I,Psi,rho),
+    Z_0=(e_ref,I,0,rho).
+
+They yield (epsilon f/rho,0), (0,-epsilon q/rho), (0,0) exactly.
+Every target is a genuine complete resource input. Nothing depends on
+whether Y is a solution. All normalization factors occur exactly once;
+if H_f/H_q already incorporate inverse PF, it is not applied again.
+The fixed reference envelope -> Lambda_h -> epsilon_h -> delta_h ->
+v_ref ordering avoids a compiler/normalization circularity.
+
+#### B. 6. Exact full first-source cancellation of the original reporter
+
+At (PC4)--(PC6), f_mom,z=q_mom,z=0 pointwise, hence
+P_f=P_q=P_0 and Xi_z=0. By (PC14),
+
+    P_y+-P_y-=P_x+-P_x-=a_ready Delta_y(delta_h).
+
+Differentiating the ORIGINAL polynomial (PC13), with every dependence of
+the generated references, normalization and SITE included, gives
+
+    D Q_event = lambda_vis a_ready^2 epsilon_h r_f Delta_y(delta_h)
+                   sum_z v_h (D f_mom,z-k0 D q_mom,z),
+    D c*_h = -gamma_h D I_h,
+    gamma_h=2lambda_vis a_ready^2 epsilon_h r_f Delta_y(delta_h)>0. (PC20)
+
+Terms differentiating reference contrasts multiply P_f-P_0 or P_q-P_0,
+which are zero. Terms differentiating current inverse rho multiply f or q,
+which are zero. Terms Xi_z D(v_h rho_z) vanish. The baseline is 4 times
+the normalized SITE mass; its tangent is zero because
+sum_z D(v_h rho_z)=0. This uses the actual normalized preparation domain,
+not an unconstrained independent rho at every site. Current coframe-volume
+variations have already been retained in (PC10)--(PC12). Original common
+nu_h, epsilon_h, READY and visibility are fixed calibration data. Linked changes of a COMMON READY or attenuation also multiply zero current differences here; this does not make independently free per-call READY parameters neutral. A new variation of predicate visibility changes the baseline 4 and is outside this fixed original reporter.
+
+Combining (PC12) and (PC20) proves (PC1), in every original 42 field row.
+The conclusion is exact at each finite h, not O(h), O(h^2), or a derivative
+restricted to the solution family. In particular an arbitrary local
+coframe perturbation leaving the null ansatz is included.
+
+The common return value and report-sign masses are especially useful:
+
+    c*_0=1-8kappa512 p^7,
+    ||P_- psi*||^2=4kappa512 p^7,
+    ||P_+ psi*||^2=1-4kappa512 p^7.                           (PC21)
+
+They are strictly positive and INDEPENDENT of h, epsilon_h and delta_h.
+Since kappa512<=1 and p^7<1/16, c*_0>1/2. The actual processor's two
+report-sign blocks thus have a uniform nonzero target support margin;
+sufficiently accurate compiled B0,D inherit positive support. The small
+reference contrasts do not make this support margin collapse.
+
+#### B. 7. Precisely what this substitutes in CG8
+
+The field coordinates may be any nonsingular chart on the original 16
+coframe, 24 proper-link and two material variables at all free sites.
+Since d*_j=partial_j c*_h(Y*_h)=0 exactly, the ORIGINAL-target radial
+coefficient in the off-shell commutant construction is identically zero
+at each of these centres. Its specified zero-preserving compiler emits
+the paid identity radial word there. The actual native commutant factors
+then give exact equal return on all WORK columns even if their base bank
+and processor approximate the ideal targets. The initialized-bank geometry
+jet error and every actual compilation/clock cost remain those in CG8.
+
+What is NOT substituted by this lemma: full finite H+J stationarity under
+all old sources, exact equality of the compiled field readout to Y*_h,
+exact full-WORK unitary geometry jets, or a uniqueness/mandatory-execution
+claim about all D0 continuations. It supplies the previously conditional
+ORIGINAL-reporter criticality input, with a concrete curved nonvacuum
+centre and valid complete references at every refining mesh. The paid
+new completed-bank mark, all protected old columns, full growing clock,
+and whole-source transport are consumed from the other current parents.
+
+
+#### B. 8. Bounded algebra replay
+
+`original_reporter_exact_primary_criticality_check.py` checks the new
+coefficient and exact contrast identities, the primary discrete Laplacian,
+forced connection, all sixteen actual matter coframe entries, oriented
+basis transport, Cayley calibration derivative and rational positivity
+bounds, and inverse-PF cancellation. It consumes the accepted all40 and
+full-CAR first-jet proofs rather than replaying their unchanged engines.
+The old +/-k0 delta reference is included as a hostile control: its cubic
+contrast mismatch is nonzero in Q(p), confirming why exact calibration
+is necessary. Normal Python and `python -O` both produced the same JSON:
+SHA256 1ce5119e60b5da8d54f6521dfed3e57c0b19d86013c51d8fab8adaf7154a8c16.
+This replay is a finite algebra check, not a native full-word/heat proof.
+
+
+#### B. 9. Direct infinite-dimensional primary corollary
+
+The same proof holds for the following declared class, without solving a
+new equation. Keep a=p/4 and Psi_0=au, Psi_15=0, and put
+
+    H(u,x,y)=k0 a^2(x^2+y^2)
+      +A(u)(x^2-y^2)+2B(u)xy+C(u)x+D(u)y+E(u).             (PC22)
+
+The FIVE profiles are arbitrary computable smooth functions on the fixed
+u collar, with supplied bounds/moduli. Work in any fixed bounded C3
+profile chart and the same transverse collar/v-periodic geometry. This is
+an infinite-dimensional nonvacuum class, not just a selected plane wave
+or a finite list of polynomial coefficients. For each profile choice the
+coframes are exact samples of ONE fixed smooth metric on every mesh.
+
+The wave part has exactly zero five-point transverse Laplacian, including
+at u+h, so Delta_h^perp H(u+h,x,y)=4k0a^2. Use the owner's exact connection
+
+    K_2(z)=[H(z+u)-H(z+u-x)]/2,
+    K_3(z)=[H(z+u)-H(z+u-y)]/2.                            (PC23)
+
+Equations (6)--(14) of arbitrary_brinkmann_all40.md now give all42 zeros
+exactly. Every U_u still lies in the SAME commuting span(N_2,N_3), all
+other links are I, det e remains one, and only ux/uy faces are curved.
+Thus the unrestricted full-CAR identity (PC10), all original F1 moment
+normalizations and the exact seven-reference cancellation (PC20) are
+unchanged. The two scalar rows still telescope in v. Ric_uu=2k0a^2>0
+for every choice of the five profiles; the harmonic additions carry the
+independent Weyl/connection information that a scalar curvature value
+alone does not resolve.
+
+This corollary does NOT keep the simplified u-independent K in (PC6):
+the actual forced shifted values (PC23) must be used. In particular
+
+    K_2/h=(1/2) H_x(u+h,x-h/2,y),
+    K_3/h=(1/2) H_y(u+h,x,y-h/2)                            (PC24)
+
+EXACTLY, because H is transverse quadratic. On bounded effective C3
+profile charts these logarithmic connection representatives have uniform
+C3 bounds and converge in C2 at O(h) to the actual Brinkmann connection
+(1/2)H_x N_2+(1/2)H_y N_3. For small h they lie in the original admitted
+proper-Lorentz logarithm chart. This is a genuine smooth connection
+recovery, with every forward/time-staggered argument retained. No O(h^2)
+claim is needed or asserted for this unshifted metric sampling.
+
+Coordinate measure is m=1 for the displayed h^4 sum, so the original
+material-metric decoder gives e_hat=e at this det e=1 centre. Unequal PF
+weights rho remain normalized and cancel through the original inverse-PF
+query, as in (PC20); they are not redefined to be equal priors. Actual
+compiled marked fields still have their explicit decoder errors rather
+than being assigned the ideal samples (PC22)--(PC23).
+
+### 7eo.C. One actual native bank, full geometric lift and source schedule
+
+This composes the ORIGINAL seven-call reporter with its actual generated
+Choi/CAR banks, not the freely chosen signed action germ. The same witnesses
+provide the finite native centre, real marked geometry, full Book source,
+and refining curved recovery. Precise scope is the existing INTERNAL
+same-section source domain; no all-D0 scheduling or raw216 claim is added.
+
+Consumed owners: primary §§7eh--7el; CG1--CG8 in
+§7eo.C (NG3–NG13); CN1--CN14 in
+§7eo.C (base-bank construction); ACR1--ACR11 in the native
+commutant note; TF1--TF18 in §7eo.D;
+PC1--PC21 in §7eo.B; and CL1--CL12
+in §7eo.H. Equation prefixes below
+are NG, to avoid conflating those two PC owners.
+
+#### C. 1. Statement and actual source domain
+
+Fix the original p, beta, z, INTERNAL scene and one registered original
+reporter/calibration recipe. On each finite regular geometric chart use
+the genuine full bank psi_*(Y), its original fixed processor D_*, and
+
+    R=Z_final-port, S_*=D_*^* R D_*,
+    c_*(Y)=<psi_*(Y),S_* psi_*(Y)>.
+
+The FINAL sign is pinned by §7ef.C: W=R_load* T* Z_port T R_load,
+T=V G_port^(-1). Call READY AND REPORT conjunctions are inputs to V;
+they are not the final reflection. R is exactly two SourceI calls plus
+the owned routing when report and fixed apparatus ports differ.
+
+The domain contains the four independently varied sampling-CODE
+occurrences of MG12, their permitted active old-DATA correlations, the
+already declared full-old-column faithful implementation fibre, and all
+generated-state/report reactions. Actual protected oldRIGHT is never
+addressed. In the explicit tower the old active non-Spin DATA is the ONE
+retained SourceI apparatus qubit a; every other old non-Spin wire is
+sealed oldRIGHT. Its full faithful directions are included below.
+The original fixed primitive matrices, canonical births,
+fixed scene/calibration and recorded processor descriptor are not new
+continuous hardware parameters. An additional genuinely free input,
+query or scene variable is not eliminated by this convention: if present
+it needs its original source equation and cannot be silently omitted.
+
+For existence start ONCE from H0=C^4_Spin,P0=I4: the original unknown
+quaternion SourceSpin frame. It is INITIAL, not freshly born/addressable.
+The validator forbids G/CX on Spin; only its declared SourceI interaction
+is used. The tower has no independently supplied blank, reference state
+or mutable initial cut. An optional initial protected non-Spin identity
+factor is retained on every column. Its unknown density is not chosen
+to improve the source. The actual initial rank FOUR, times any such
+factor, supplies the determinant multiplicity, not born dimension or
+stage count. The old fixture's rank eight is not copied. SourceSpin is
+not oldRIGHT: its declared interaction remains legal and fully paid.
+
+The conclusion is:
+
+* at every primary finite target where the ORIGINAL d c_* is exactly zero,
+  a finite native history has exact zero complete constrained H+J source
+  in this declared domain;
+* its completed-bank and subsequent fixed-processor marks converge, with
+  their full prepared-isometry first jets, to the original geometric marks;
+* on arbitrary off-shell centres of the same chart, its whole source
+  normalized by the actual positive gain converges to the original
+  Einstein--two-CAR source under the same nonquotient norm and right lift;
+* one fixed-initial retained tower and the owned nonlinear primary/source
+  recovery give a faithful curved specialization in that sense.
+
+Exact finite equality of the decoded fields to the ideal geometric samples
+is not asserted. Arbitrary fresh-WORK unitary columns are not confused with
+the initialized bank isometry. Native admission does not test Einstein.
+
+#### C. 2. Put sampling CODE outside the canonical base
+
+Separate fresh sampling SAM (two born bits per field coordinate),
+addressable BANK including all genuine resources and shared SITE, INITIAL
+SourceSpin, and protected non-Spin old factors. The real geometric
+targets act on addressable WORK tensor I_Spin. Only this real-target
+interface uses the real SO compiler; arbitrary SO on WORK times Spin
+is not claimed. The native algebra is A tensor I+B tensor L_i; §11
+explicitly retains its additional complex faithful directions.
+
+The real-target statement is constructive: the original H_f/H_q and
+field-dependent banks/processor are real, as pinned by the two-band
+ten-sign owner (9),(13),(15) and §7cz879. If the fixed Fourier/vacuum
+prefix is complex, use its EXPLICIT owned realification (§7cz880).
+Its additional addressable ubit is born, its full marks and multiplicity
+are retained, and it is included in m BEFORE the n-congruence search.
+Then psi_* and D_* in this proof mean those actual realified targets.
+All joint effects use that same carrier/readout transport. The ubit is
+not discarded or confused with SourceSpin, and no unproved Spin-coupled
+prepared-column interface is substituted for I_Spin tensor psi_*.
+The base B0, its V_R,0, the reporter D and C_n act on BANK and are EXACT
+identity on SAM and protected oldRIGHT. This avoids imposing an unproved
+branchwise mass condition on the base. SAM enters later only as a
+read-only control of the complete branch table.
+
+Birth the current output PORT first, then every addressable SAM/BANK/helper factor;
+execute the unitary body only when all its resources exist. Compile D once
+on all columns and use its actual inverse. CN constructs
+
+    C_n=G_port^n,   Q=D* V_R,0,   B0=Q C_n,
+    [V_R,0,R]=0 exactly,
+    B0* D* R D B0=U_n=C_n* R C_n,                    (NG1)
+    c_n=<j,U_n j>=cos(2(n+1)theta),  0<c_n<1.
+
+All n, inverse and helper calls are paid. On a target support margin
+p_min>0, the actual WORK vector psi0=B0 j satisfies
+
+    eps0:=||psi0-psi_*(Y0)||
+      <=eps_V0+(|c_n-c_*(Y0)|+2eps_D)/(2sqrt(p_min)),
+    eps_S:=||D* R D-S_*||<=2eps_D.                  (NG2)
+
+
+The exact native anchor in NG1–NG2 is obtained as follows. Put y=D psi_*, p_sigma=||Pi_sigma y||^2 and q_sigma=(1+sigma c_n)/2. In each report-sign block choose an SO map from the normalized component of C_n j to that of y; block dimension is at least two, so antipodal vectors are also covered. Its target sends C_n j to sum_sigma sqrt(q_sigma/p_sigma) Pi_sigma y. Compile this block map with the exact R-commuting native compiler of incoming §7em.B. Its error eps_V0 gives
+
+    ||B0 j-psi_*|| <= eps_V0
+       + sqrt(sum_sigma (sqrt(q_sigma)-sqrt(p_sigma))^2)
+       <= eps_V0+(|c_n-c_*|+2eps_D)/(2sqrt(p_min)).
+
+All margins are certified before division. Same-sign-plane compilation uses integer Walsh powers with forbidden patterns exactly zero; choosing requested exponents divisible by 2^(d+1) makes every Walsh coefficient even. The common even padding macro G^((L+k)/2);Z;G^((L-k)/2);Z realizes G^k with only nonnegative powers and the actually routed Z=SourceI^2. All phases, address moves and inverses are paid; no unprepared column is assigned an arbitrary target action. The literal bank is C_n;V_R,0;D*, and its reflected word is C_n;V_R,0;D*;D;R;D*;D;V_R,0*;C_n*. Both D*/D pairs are executed. This proves NG1 exactly even when its initialized geometry is approximate.
+
+Select the exact integer n by a certified Golden-power search. When the
+paired faithful comparisons of §11 are included, allocate all m addressable fresh bits
+first and search the subsequence n+1=0 modulo 2^m. It remains dense and
+changes no endpoint identity. The native
+endpoint identity NG1 does not depend on eps_D or eps_V0. The only
+cross-age pair of U_n is the original layer and first port detail,
+tensored with the full initial Spin factor. All later birth layers see
+selfadjoint restrictions. SAM is among these layers and outside U_n.
+Every displayed WORK preparation is promoted by tensor I_Spin to the
+true input isometry; no Spin vector or eigenstate is selected.
+
+#### C. 3. A radial generator with EXACT actual susceptibility
+
+Let J=[[0,-1],[1,0]] on the final port. Define
+
+    L=Q J Q*,     ||L||=1,
+    a=2<psi0,S L psi0>=-2 sin(2(n+1)theta),
+    |a|=2sqrt(1-c_n²)>0,       S=D* R D.             (NG3)
+
+The equality is exact because V_R,0 commutes with R and C_n commutes
+with J. Thus no separately approximated calibration frame is required.
+The actual word Q and its actual inverse implement a frame for ordinary
+port rotations; J itself is a matrix comparison generator, not an added
+continuous native primitive.
+
+Let A0 be the canonical small real rotation taking psi_*(Y0) to psi0.
+This is a mathematical target-construction device, not a free performed
+operation. Put barpsi(Y)=A0 psi_*(Y), wbar_j=partial_j barpsi(Y0), and
+
+    dbar_j=2<psi0,S wbar_j>,
+    d*_j=partial_j c_*(Y0),
+    u_j=wbar_j-(dbar_j/a)L psi0.                     (NG4)
+
+Both <psi0,u_j>=0 and <psi0,S u_j>=0. With P_±=(I±S)/2 and
+p_±=||P_±psi0||²=(1±c_n)/2, CG2 constructs skew K_j with
+
+    [K_j,S]=0,   K_j psi0=u_j.                       (NG5)
+
+
+Explicitly, let psi_sigma=Pi_sigma psi0 and u_j,sigma=Pi_sigma u_j. Normalization and zero response give <psi_sigma,u_j,sigma>=0 for each sign. Then
+
+    K_j=sum_sigma (u_j,sigma psi_sigma^T
+                    -psi_sigma u_j,sigma^T)/p_sigma
+
+is skew, commutes with S and sends psi0 to u_j. This is the whole prepared-vector jet, not one expectation. Tensor identity on protected inputs promotes it to the uniform input-isometry statement; the owned realification makes the same formula valid on its actual real carrier. No unknown input is cloned.
+
+For the chart bound ||d psi_*||<=M1 the actual anchored discrepancy obeys
+
+    |dbar-d*|<=2M1(eps_S+2eps0),
+    E_jet<=eps0 M1+2M1(eps_S+2eps0)/|a|.             (NG6)
+
+All reciprocal margins and chart/operator norms remain in the constants.
+
+#### C. 4. The off-shell branch rule uses the ORIGINAL finite algebra
+
+For each finite SAM label b with centered coordinate values v_bj, set
+
+    theta_b=(s/a) sum_j v_bj d*_j,
+    N_b=exp(theta_b L),
+    V_b=exp(s sum_j v_bj K_j),
+    B_b=V_b N_b B0.                                  (NG7)
+
+This is one formula on the WHOLE regular off-shell chart. There is no
+branch asking whether Y0 is Einstein. The d*_j are computed from the
+recorded original finite expression
+
+    c_*=1-2 kappa512 p^7[4+sum_x mu_x Xi_x],
+    Xi=(P_y+-P_y-)(P_f-P_0)+(P_x+-P_x-)(P_q-P_0),
+    P_j=a_ready r(x_j,y_j),                           (NG8)
+
+where r is the original SC1 polynomial and x_j,y_j are the actual
+full-CAR/Choi, density and reference maps. Finite sums, matrix products,
+inverses on the certified chart, positive-root names and their explicit
+algebraic derivatives compute these numbers. This is not an oracle for
+an Einstein Euler tensor or the derivative of a discrete compiler index.
+
+The target branch derivative is
+
+    B_b j=psi0+s sum_j v_bj wtilde_j+O(s² R_v²),
+    wtilde_j=wbar_j+[(d*_j-dbar_j)/a]L psi0,
+    2<psi0,S wtilde_j>=d*_j EXACTLY.                 (NG9)
+
+Here R_v=max_b||v_b||, and NG6 bounds the whole initialized vector jet
+error. The response-changing part has not been removed off shell.
+
+#### C. 5. Compile zero to zero, and sign blocks to sign blocks
+
+Compile exp(s sum v_bj D K_j D*) within the two COMPUTATIONAL R blocks,
+using the exact same-sign-plane/integer-Walsh compiler. Its resulting
+Vhat_R,b commutes with R EXACTLY on all columns. Set
+Vhat_b=D* Vhat_R,b D. No unrestricted approximate routing is used for
+this invariant. SAM bits are only controls and protected oldRIGHT is
+untouched. Its actual error eta_H controls geometric marks.
+
+Implement N_b by the paid Q*;port-rotation;Q sandwich. For the finite
+table of requested port angles choose integer requested exponents n_b
+divisible by 2^(d+1), where d counts the actual SAM controls. The
+integer-Walsh transform has even integer exponents, and a common even
+padding L makes every branch and comparison a finite common-inventory
+word. Unselected exponents are ZERO exactly.
+
+To make the zero target structural, use the certified overlapping rule:
+emit requested exponent 0 when |theta_b|<eta is certified; otherwise
+start the ordinary certified Golden approximation when
+|theta_b|>eta/2 is certified. Both searches run; every computable input
+eventually enters an open case. A true zero can only take the first
+case. A small nonzero angle may also take it, with its stated error.
+This does not decide equality of arbitrary computable reals.
+
+The zero word still executes its common paid padding. Consequently,
+
+    all d*_j=0  =>  Nhat_b=I for EVERY b EXACTLY,
+    Bhat_s* (I_SAM tensor S) Bhat_s
+                  =I_SAM tensor U_n EXACTLY.        (NG10)
+
+Neither D/B0 approximation nor horizontal-angle approximation breaks NG10.
+This is the exact zero-preserving native statement needed at the centres.
+
+For every off-shell branch, horizontal commutation also gives the sharper
+response identity: only its radial factor changes the cold value. Before
+radial approximation it is exactly
+
+    c_b=cos(2(n+1)theta+2theta_b).
+
+If D_*=||d*|| in the declared coordinate norm and the radial operator
+error is eta_N, then the ACTUAL compressed selfadjoint SAM table is
+
+    Mhat=c_n I+s sum_j d*_j V_j tensor I_old+E_M,
+    ||E_M||<=2s² R_v² D_*²/a²+2eta_N.                (NG11)
+
+Horizontal compilation does not add a hidden response error here, because
+its commutation is exact. It still contributes to all geometric mark
+errors and real cost. At d*=0 the actual E_M is exactly zero, even though
+the general upper bound was stated with eta_N.
+
+#### C. 6. Physically paid full marked lift
+
+Use the owned MG2--MG3 two-born-bit controls: phi is the actual product
+born SAM vector, V_j its centered four-level coordinate, and
+
+    [V_j,X_k]phi=delta_jk phi.                        (NG12)
+
+Pay the outer P; table; inner P* frame as actual operations. With the
+same protected-input isometry i, the normalized derivative of
+P* Bhat_s P i along X_j differs from the ORIGINAL initialized bank
+derivative by at most
+
+    E_jet+2||X_j||[C_geom s R_v²+(eta_H+eta_N)/s].    (NG13)
+
+This holds as an operator on ALL protected old columns, including
+entanglement with an untouched reference. It is not an assertion about
+uninitialized arbitrary bank-unitary columns. The fixed processor marks
+D_nu add their actual prefix errors and derivative bounds; bounded joint
+effects follow by the usual isometry-product estimate. Correlation and
+failure outputs are retained rather than traced away to obtain this bound.
+
+The variable completed-bank mark is after the full Vhat_b Nhat_b B0
+preparation, including its real D*/D and Q*/Q frames. Compare that true
+mark with psi_*(Y0+s v_b). Do not assert exact pre-D READY, port or Julia
+factory support. NG2/NG13 bound the full state, support leakage and marked
+slacks. Earlier unfinished factory marks need the owner's separately
+proved deferral/marked-prefix rule; they are not invented retroactively.
+
+The CODE frames have their literal MG8--MG10 palindromic, all-column,
+common-inventory realization. For a finite +/- comparison retain its
+Taylor error O(t²), actual plane error divided by |t|, and complete
+bank/prefix errors divided by the actual s and contrast scale. None of
+these are a derivative of an integer gate count.
+
+#### C. 7. Full return source, FOUR independent controls, and the original norm
+
+The actual complete endpoint is
+
+    U=P_b* Bhat_s* Q_b S Q_f* Bhat_s P_f.             (NG14)
+
+The four occurrences are independent, even though their centre words are
+identities and the geometric right lift varies all four coherently.
+The inner controls act on SAM and any admitted active old-DATA factor,
+so they commute with S. Each inner endpoint derivative is skew-adjoint
+after conjugation; its real return row is zero separately. This does
+not subtract two nonzero source rows.
+
+Let the actual scalar corner be c_hat=phi* Mhat phi>0 and let A be the
+ACTUAL OUTPUT old Gram. Keep its kernel if singular. With no attenuation
+tail, the original determinant and weight are
+
+    J=-Tr log[(1-z)I+z c_hat² A],
+    w=Tr[z c_hat² A((1-z)I+z c_hat² A)^(-1)]>0,
+    rho=A((1-z)I+z c_hat² A)^(-1)/Tr[...].           (NG15)
+
+Any independent A variation uses its full original derivative; it is
+not removed by calling A old. In the canonical-identity tower below,
+old square-gate tangents have skew initial return and hence zero J row
+at the centre. Fixed-past boundary reactions and genuinely generated
+states use the already owned causal adjoint, not a new selector.
+
+Write the inherited original reporter comparison as
+
+    -(1/gamma_h) d c_*(Y)=D I_h(Y)+r_rep,h,
+    ||r_rep,h||<=epsilon_rep,h,  gamma_h>0.           (NG16)
+
+At the calibrated primary, PC20 gives
+gamma_h=2lambda_vis a_ready² epsilon_h r_f Delta_y(delta_h)>0 exactly,
+and d c_*=0
+in every finite ambient 16+24+2 field row. Off shell NG16 is the existing
+same-reporter source limit, with its density/matter/reference remainders.
+Define the TRUE gain at the actual new corner/rank:
+
+    Gamma_h=2w gamma_h s/c_hat.                      (NG17)
+
+This is 4w g_h s/c_hat when gamma_h=2g_h. It is not the old rank-eight
+or attenuated gain. Differentiating NG15 at the four independent slots
+gives, for their field map,
+
+    L_rho(X)_j=Tr[rho i*[V_j,X]i],
+    A_h(X_f,X_b,Y_f,Y_b)=(L_rho X_f+L_rho X_b)/2.     (NG18)
+
+Every genuine active old-DATA correlation is retained in this trace.
+Both outer slots contribute one half; the two inner return rows vanish.
+The exact source calculation and NG11 give
+
+    ||Gamma_h^(-1) D J-A_h* D I_h||
+       <=epsilon_rep,h+2C_h||E_M||/(gamma_h s),       (NG19)
+
+where C_h is the ACTUAL operator-lift constant in the published full
+nonquotient control norm. Consume §7eh.I/§7ei's sup_rho norm and its
+isometric right lift, using NG12: the CODE-only R_h(v) works for every
+rho, and (R_hv,R_hv,R_hv,R_hv) is the marked geometric right lift.
+No mesh-independent raw operator bound is asserted. Faithful fibre
+directions have their original source norm and zero return derivative;
+their thermal remainder is included next. Any genuinely extra current
+input is retained under AD8--AD9 rather than discarded.
+
+#### C. 8. Exact smooth-matrix source and construction of the retained tower
+
+At the owned exact primary Y*_h, PC1/PC20 give d*=0 on the full finite
+field tangent space, not only along the solution family. NG10 then yields
+the actual full endpoint I_SAM tensor U_n and compressed table c_n I.
+Each outer CODE/active-old derivative has skew cold compression; each
+inner derivative is skew-adjoint before compression. Thus all four
+independent return rows vanish. This includes the permitted old correlations.
+
+The canonical thermal-fibre TF9--TF14 now applies to THIS endpoint and
+THIS birth order. Its complete heat differential is a sum of real traces
+of the full-old-column cold derivative. It vanishes on those skew rows
+and on the entire already admitted faithful cold-operator/effect fibre.
+This extends beyond selected CODE directions. All original 425D modes,
+both Hodge degrees and every old age stay in the heat. Arbitrary extra
+scene-entangling temporal gates or variable scene/beta data are not
+asserted to have this same coefficient.
+
+One actual fixed-input tower supplies the old-base hypothesis:
+after each critical checkpoint, execute a paid exact inverse of its
+CURRENT I_old tensor U_n on the current fresh work, with no intervening
+birth. Its canonical completed endpoint becomes I. Earlier stages and
+marked records remain. Only then seal nonapparatus work and birth the next output
+port first. At the next checkpoint the complete old prefix is therefore
+canonical identity, not an assumed arbitrary reflected past.
+
+There is ONE fixed SourceI apparatus port for the entire accumulated
+native word, as required by the original validator. The first level's
+report port establishes it; it remains retained ACTIVE apparatus and
+is never mislabeled immutable oldRIGHT. At later levels the new report
+port is still the first NEW birth. Its phases, Z and inverse rotations
+use the owned SWAP routing through the fixed apparatus port, restoring
+that port on every completed macro. No primitive frame is reassigned.
+All other sealed old WORK remains strict oldRIGHT. The completed current
+U_n is identity on every old apparatus/data column; extra routes and
+inverses remain in the actual stage/clock inventory.
+
+TF14 covers arbitrary independent INTERNAL old square-gate tangents at
+that identity base: delta C_global=delta C_current+c_n delta W_old,
+and each old-age real trace of the skew delta W_old is zero. Generated
+state/report equations are solved by the original backward adjoint.
+Any fixed complete-past boundary rows use their exact retained-record
+constraint reactions. No source is set to zero by dropping a price term.
+
+This proves exact ordinary finite-matrix source zeros in the domain of §1; the genuine finite-comparison roots additionally use §7eo.E/G,
+despite the marked geometry being approximate. It does not infer exact
+finite stationarity from a small thermal error.
+
+#### C. 9. One noncircular precision and clock schedule
+
+For a prescribed sequence tau_h->0 perform the following finite choices. The return/geometry lift constant in NG13/NG19 belongs to the fixed field/CODE chart and is chosen before approximation. Whole-word occurrence counts, implementation-basis constants and extra kernel-loop costs enter the heat/comparison bound AFTER the words are compiled. Faithful implementation axes have exactly zero return difference off shell, so their growing basis does not multiply a field-table error; its actual thermal finite-contrast norm is suppressed at the final padding step. This separation avoids a compiler-length/precision loop.
+
+1. Fix the mesh/chart, true geometric references and their exact PC14
+   calibration, original reporter algebra, fixed scene, actual protected
+   factors and required marked tests. Compute positive return/support
+   margins, gamma_h, original derivative bounds and the owned source norm.
+   Allocate the actual addressed arena, including SAM outside B0 and any
+   spectator padding wires. SourceSpin is already the initial full input.
+   Count m addressable fresh wires ONLY and declare all births before
+   synthesis. Subsequent plane compilers are ancilla-free on this arena:
+   better accuracy changes word length, not m or the n congruence.
+2. Choose eps_D, the Golden n and eps_V0 so NG2 and NG6 meet the actual
+   decoder/marked bounds. Positive support margins give an effective
+   lower bound for |a| before this choice; compute its true value after n.
+3. Compute K_j and d*_j from the same finite algebra. Choose s inside the
+   chart so the NG13 geometric remainder and
+   C_h s R_v²||d*||²/(a² gamma_h) are below tau_h. No source root is used
+   to make this choice. At a critical point d*=0 is a proved identity.
+4. Compile horizontal and radial tables with
+   C_h eta_N/(gamma_h s)<<tau_h and
+   (eta_H+eta_N)/s<<tau_h, including all required mark bounds.
+   The radial compiler preserves exact zeros as in §5. Compute c_hat,w
+   and Gamma_h from the ACTUAL resulting word and input rank.
+5. Compile the finite +/- CODE comparisons at their actual t_h, with
+   MG's O(t_h²) and native plane errors/|t_h| below the same source and
+   marked budgets. Count every inverse and all FOUR CODE occurrences.
+   An arbitrary larger controlled rotation uses its own counts, not
+   the one-coordinate 24L+416 bound by name.
+6. Only after all words, dimensions and full lift constants are fixed,
+   insert m real CX;CX pairs after the last birth and before the actual
+   final gate. The paid-clock owner gives, with x=2/55,
+
+       A_L <= (176/359)(x^L/L!)/[(1-x²)(1-x/L)],
+       ||D H/Gamma_h|| <= A_(L+2m) C_full,h(m)/Gamma_h.
+
+   Each pair costs two stages, adds 2d to the true history dimension,
+   and leaves endpoint, return and Gamma_h EXACTLY unchanged. The actual
+   C_full,h(m) includes every permitted padding occurrence (at most linear
+   growth for the given gate-max lifts). Choose m LAST to make this and
+   every actual finite-contrast heat bound <=tau_h. Fixed literal padding
+   adds no free parameter; declared independent padding controls retain
+   their return rows. Spectator-local padding has the separately proved
+   zero centre return row; arbitrary reporter couplings are not excluded
+   by calling them padding.
+
+All adjacent D*/D and Q*/Q pairs actually used in the selected word remain
+paid. A table is one all-column CODE-controlled native word, not a free
+per-branch runtime oracle. Gamma_h does not attenuate when m is increased.
+Every finite constant is known before the padding search, so there is no
+compiler/clock/gain fixed-point assumption.
+
+With E_mark,h denoting the explicit NG6/NG13/MG finite-contrast and decoder
+errors, the composed estimate is
+
+    ||Gamma_h^(-1) D B-A_h* D I_ES(pi_h)||_(full,*)
+       <= epsilon_rep,h + 2C_h||E_M||/(gamma_h s)
+          +E_mark,h + A_(L+2m)C_full,h(m)/Gamma_h
+          +epsilon_geometric,h ->0.                 (NG20)
+
+Here pi_h is the actual transported marked decoder, not a separate metric
+label; its regularity and the common source/right-lift norm are precisely
+the already owned §7eh/§7ei interfaces. Errors relating I_h to I_ES and
+the actual decoder belong to their named geometric owners. This is the
+whole-source application, not a scalar report or state-value estimate.
+
+#### C. 10. Curved recovery and scope
+
+The exact calibrated primary gives d*=0 on every refining mesh for the
+fixed curved nonvacuum continuum metric, with all original 42 free rows.
+NG1--NG10 and the native zero-preserving compiler give an exact stationary
+native centre at each level. NG13 and the chosen precision schedule give
+its actual curved marked readout limit. NG20 supplies the original
+off-shell nonlinear source, with all independent CODE/kernel rows and
+the explicit right lift; consume the existing kappa soundness/recovery
+composition rather than repeating its Einstein calculation.
+
+The finite programme was defined for arbitrary regular off-shell Y0 by
+the original reporter algebra, before selecting that recovery family.
+Neither the radial compiler nor admission asks whether Einstein holds.
+The complete price is the original growing-clock H+J throughout. The
+conclusion is this explicit source-faithful constructive specialization;
+it is not mandatory selection by every D0 continuation, raw216 exact
+finite decoder equality, or automatic registry/positive_gr promotion.
+
+#### C. 11. Actual paired faithful comparisons and an exact native frame
+
+This final native lemma supplies RAW9's paired wrapper A W0 A*, rather
+than replacing that declared variation by a generic one-leg edit. It
+also supplies a dense stabilizer compiler; finite heat evenness is a
+separate thermal theorem and is asserted only for its single-plane pairs.
+
+Let P=I_old tensor |v^m><v^m| tensor I_Spin, where m counts ADDRESSABLE
+fresh bits and old denotes the non-Spin factor. Set T=product_k G_k on
+those m bits only, so T|0^m>=v^m. Never apply G/CX to a SourceSpin wire.
+In born-adapted coordinates P is the all-zero projector. Passive birth
+ages are diagonal: the age of a nonzero string is its latest 1 bit.
+Write r=n+1 and d=m-1. The port-first canonical centre is
+
+    T* W0 T=G_port^(-r) Z_port G_port^r tensor I_later.
+
+It has the one P/E mixed plane with E=|1_port,0_later>. For every string
+with a later 1 bit, the port rotation stays INSIDE its passive age block.
+Define the exactly controlled frame
+
+    H=I on later=0,
+    H=G_port^r on every later!=0,
+    F=H T*.                                         (NG21)
+
+Because the n search imposed r divisible by 2^(d+1), integer Walsh
+compiles H EXACTLY, with the requested integer exponents n_0=0 and
+n_b=r for b!=0. Explicitly
+
+    k_0=r(2^d-1)/2^d,
+    k_l=-r/2^d for every nonzero Walsh character l.  (NG22)
+
+All are even integers. Take the common even L=k_0 for d>=1.
+There are 2^d L=r(2^d-1) literal positive G calls, at most
+13*2^d CX and 4*2^d SourceI in the general routed bound. The port-target
+implementation can be shorter, but this finite paid bound already
+suffices. H* uses negative k_l with the same L, hence the same counts.
+No new birth is needed: port and every addressed scratch/spectator factor
+were included in m before n. Initial SourceSpin is available throughout,
+but is NOT counted in m or addressed by the Walsh controls.
+
+The transformed W0 is its same 2x2 S(c_n) on P/E and diagonal Z_port on
+the rest. The transformed passive age operator is still diagonal because
+H commutes with ages there. This is exactly the joint basis required by
+the single-plane Hermitian-Schur thermal comparison, including mixing E
+with a later-age basis vector. The frame is a paid native word, not a
+freely assigned spectral eigenbasis.
+
+For any two fresh WORK computational indices i,j!=0 let R_ij(theta) be one
+real Givens plane. Implement it by the same exact all-column plane
+compiler: route i xor j to one target bit using an invertible CX map;
+the selected pair is still disjoint from all-zero; integer Walsh gives
+exact exponent zero on every unselected plane. Golden powers approximate
+the requested theta while protecting the all-zero column EXACTLY.
+All routes/inverses and SourceI words are paid. Consequently
+
+    A_+=F* Rhat_ij F,
+    A_-=F* Rhat_ij* F=A_+*,
+    A_± P=P EXACTLY on ALL old and Spin columns.     (NG23)
+
+Use the opposite requested integer exponent and the same even plane
+padding L for Rhat_ij*. This gives identical actual plane counts. Use
+the same F/F* words in both cases. Thus A_+ and A_- have identical birth
+layouts and true stage counts, including helpers. The paired complete
+words A_+ W0 A_+* and A_- W0 A_-* then also have equal layouts/counts.
+If one instead uses the general literal inverse_word implementation,
+every G inverse changes its primitive count by an even number, each
+SourceI inverse adds two, and CX is self-inverse. The count difference
+is even and can be repaired by actual CX;CX pairs on already born wires.
+The balanced plane realization avoids even that extra repair.
+
+At the front of a whole reflection the right wrapper fixes the actual
+initial isometry, so every prepared bank and subsequent original
+processor mark BEFORE the left wrapper is identical on all protected
+columns. It therefore supplies faithful current implementation directions
+without changing a generated blank. Its left wrapper preserves the full
+cold operator because P A=P, but need not preserve the entire terminal
+state in the P-perpendicular sector; those states/stages stay in history.
+Any task that separately fixes that post-wrapper full-state mark must
+apply that extra constraint rather than claim it is automatic.
+
+Products of these real planes are dense in SO(2^m-1) on the addressable
+WORK complement, conjugated by F, and EXACTLY identity on P. They do
+not claim arbitrary rotations of the unaddressable SourceSpin factor.
+
+The remaining native complex directions have explicit words too. Choose
+an addressed bit k distinguishing i and j. Let S_k be SourceI routed
+to k (SWAP to port; SourceI; SWAP back). Its relative i on that plane
+is the ACTUAL L_i on initial Spin. Then
+
+    S_k Rhat_ij S_k*                                  (NG24)
+
+is an exact imaginary-axis SU(2) plane; its inverse uses the opposite
+real-plane exponent with the same S_k/S_k* frames and counts. It is
+identity on every other WORK column and on the prepared input. No Spin
+state is selected. For a diagonal Cartan direction conjugate this axis
+by one actual same-plane real rotation Rhat_ij(alpha0), with a certified
+nonzero sin(2alpha0). Together with the imaginary axis it spans the
+diagonal axis. The fixed frame and inverse are fully paid.
+
+Real and imaginary off-diagonal axes and these diagonal axes span the
+connected native SU(2^m-1) stabilizer, with complex i represented by L_i.
+No disconnected O component is added. All old passive age projectors
+have the form I_Spin tensor Pi_j and commute with L_i. The joint frame
+and single SU(2)-plane Hermitian-Schur proof apply to the complex axes.
+At later levels include ALL faithful directions of the retained active
+apparatus qubit a, rather than freezing that genuine old DATA. Its old
+passive age projectors become diagonal after the actual paid G_a*;
+later oldRIGHT birth-detail projectors contain I_a. Use
+
+    F_later=H_new T_new* G_a*,
+    P_frame=I_a tensor |0_new><0_new| tensor I_Spin.  (NG25)
+
+The n+1 divisibility condition still uses m NEW addressed bits only.
+H_new is the same controlled new-report rotation; its Z macros route
+through the one fixed apparatus a and restore a on all columns. Relative
+to each spectral oldRIGHT sector the age/sign Schur coefficients are
+diagonal in the joint (a,new-WORK) basis. The coefficients may depend
+on the apparatus label; equality of those old ages is not required.
+
+Choose each single real or complex plane with BOTH indices outside
+P_frame, that is outside the two columns (a=0,new=0) and (a=1,new=0).
+The invertible CX route carries these protected columns to distinct
+unselected labels; integer Walsh exponent zero on every unselected plane
+therefore fixes BOTH columns exactly. All routes may use a and current
+WORK but never sealed oldRIGHT. The same SU(2)-plane Schur identity
+applies in every oldRIGHT sector and hence to their full retained sum.
+
+These planes and their diagonal axes span the complete connected native
+SU(2^(m+1)-2) stabilizer of that prepared two-column subspace, with i
+represented on initial Spin. Thus no faithful active-apparatus axis is
+left as an unproved old-DATA extension. The intermediate all-old input
+has apparatus dimension two times Spin dimension four; this does NOT
+change the true original physical cut rank FOUR used in NG15/NG17.
+
+FP8--FP9 in §7eo.E now apply to these
+actual compiled words, equal passive ages, exact prepared subspace and
+actual final R. They prove exact paired finite equality for the complete
+single-plane theta basis, including the active-apparatus extension.
+It does NOT infer finite equality for arbitrary products from tangent
+spanning. Smooth full-source zero on the larger declared faithful fibre
+continues to follow independently from TF12--TF14 and §8.
+
+#### C. 12. Decisive native and thermal control
+
+`original_reporter_common_frame_check.py` consumes the ORIGINAL validator
+and primitive matrices, multiplying them exactly in the Golden number
+field. It groups repeated primitives only for computation; its inventory
+counts each literal stage. Normal and optimized Python produce the same
+JSON bytes. The fixture has three addressable WORK bits plus INITIAL
+unknown Spin, so r=32,d=2 and k=(24,-8,-8,-8); H has 116 actual stages,
+each real A_± has 338, and the initial cut rank is FOUR. It checks all
+32 operator columns, all four Spin input columns, real/imaginary planes,
+equal counts and the passive age frame. Forbidden Spin G/CX is rejected.
+
+The six-wire later-level control has fixed old apparatus a=0, NEW WORK
+1,2,3 and initial Spin 4,5. Routed Z_new and H_new are checked on all
+64 columns. H_new costs 164 stages; its common-frame plane mixes joint
+indices 1 and 9 across apparatus states, fixes BOTH prepared columns,
+and has exactly 426 stages in each sign. The intermediate comparison
+input rank eight is explicitly distinguished from physical initial rank
+four; an extra sealed oldRIGHT wire passes the actual syntax guard.
+
+The rational Schur fixture c=3/5,s=4/5 with distinct ages checks each of
+the three complement planes for real, imaginary and general SU(2)
+rotation: all nine paired determinant polynomials agree exactly. The
+three-plane Cayley hostile control has diagonal difference
+(160,-32,-128)/1083 and a nonzero determinant difference, so arbitrary
+multi-plane finite evenness is explicitly not used.
+
+Checker SHA256:
+`7ef133c7dd36222a87476bd9b09e1090093256dbf26d2712b9aa3e06c24c2337`.
+Receipt SHA256:
+`2236edc503ec7dacaf1cd6255b12438b8f868afd25af33ed652187db300143f8`.
+The checker accepts --root (default cwd); the receipt records a relative
+native owner path and its SHA, with no machine-specific repository path.
+This finite control supports the algebraic proof; it does not approximate
+heat numerically or substitute a small model for the full source theorem.
+
+### 7eo.D. The complete growing-clock thermal source on the actual input fibre
+
+implementation fibre of the original seven-call reporter and the exact
+primary centres of `§7eo.B`.
+No tracked edits, no new task. This proves an exact FIRST-SOURCE statement
+at a specified actual native centre, including all internal unitary
+implementation tangents. It does not assert that heat factors through the
+cold effect on a whole open operator domain.
+
+#### D. 1. Use the actual final sign, not a per-call event
+
+The literal current owner §7ef.C has
+
+    W = R_load* T* Z_port T R_load,    T=V G_port^-1.          (TF1)
+
+The final sign is Z_port, implemented exactly by two SourceI calls,
+identity on every unknown quaternion Spin input; see §7ec (1142).
+The READY AND REPORT event in each constituent call is inside the full
+processor V and is NOT the final sign in (TF1).
+
+Let this final output PORT be the FIRST new canonical birth. All per-call
+READY/REPORT bits, CODE, Choi/CAR banks, helpers and other newly required
+carriers are later births. Frontload ALL required new births before the
+variable square-gate body. Their original native birth is
+
+    v=G|0>,    G=[[sqrt(p),-p],[p,sqrt(p)]], p+p^2=1,
+    G=[[cos theta,-sin theta],[sin theta,cos theta]].          (TF2)
+
+Use the same complete original processor D=T, with its actual finite
+native inverse, on this reordered but explicitly addressed complete
+carrier. Every birth, primitive, address move, inverse and idle word is
+paid. The literal old-input identity of the existing writer remains.
+
+The exact canonical word is just C_n=G_port^n, n>=0. Thus
+
+    U_n=C_n* Z_port C_n=I_old tensor (G^-n Z G^n)_port
+                                      tensor I_later.        (TF3)
+
+No new controlled-Z reflection, extra READY dilation, arbitrary spectral
+completion or approximate inverse is needed. Its port inverse is supplied
+by the existing exact G^-1=ZGZ SourceI profile. This claim is not a
+positive-G/CX-only inverse synthesis.
+
+#### D. 2. The only mixed ages
+
+Use G1--G6 / ST1--ST3 of `§7el.B`:
+N actual chronological stages, final fibre H_f, passive birth projections
+Pi_j, age ell_j=N-j, and
+
+    det_K(I-xi T_clock)=det_(H_f)(I-W_can D_age(xi)),
+    D_age(xi)=sum_j xi^(ell_j) Pi_j.                          (TF4)
+
+The determinant is on the actual growing history; no earlier padding or
+terminal complement is discarded. With all births before the square body,
+W_can is exactly the ordinary complete body endpoint. More generally use
+the canonical identity old-prefix extension in §6 below. An ordinary
+padded endpoint identity does NOT substitute for canonical identity.
+
+First take no earlier prefix and let dim H_0=q. Set v_perp=G|1>, and
+
+    psi = v_port tensor v_later,
+    e   = v_perp,port tensor v_later.
+
+For each old column, psi belongs to the initial age a=N, while e is in
+the first-born port-detail age b=N-1. In their ordered basis U_n is
+
+    S(c)=[[c,s],[s,-c]],
+    c=cos(2(n+1)theta),  s=-sin(2(n+1)theta), c^2+s^2=1.      (TF5)
+
+All later birth layers are preserved: (TF3) acts only on a port already
+present when each such layer is born. Their restrictions are selfadjoint
+unitaries. Thus there is precisely one two-age mixed plane per old input
+column, plus same-age selfadjoint blocks. In particular no READY-detail
+plane has been silently removed: READY is now a LATER birth.
+
+The available c values are dense in [-1,1]. For an elementary irrationality
+check, 2cos(2theta)=2sqrt(5)-4 has conjugate -2sqrt(5)-4<-2. If theta/pi
+were rational, every algebraic conjugate of this root-of-unity sum would
+lie in [-2,2], a contradiction. Hence n>=0 supplies arbitrarily close
+regular values to any prescribed c* in (-1,1). Choose a compact interval
+inside (-1,1) and away from c=0 when invoking the effect-fibre corollary.
+This also gives a uniform lower bound for |s|. The integer n is found by a
+finite certified interval search using exact powers of the native G.
+Its actual length contributes to N; no clock duration is normalized away.
+
+#### D. 3. Exact determinant differential on EVERY internal unitary tangent
+
+Write A=xi^a and B=xi^b. On the mixed plane,
+
+    det(I-S(c) diag(A,B))
+      =(1-cA)(1+cB)-s^2 A B
+      =1+c(B-A)-A B =: p_ab(xi).                             (TF6)
+
+Let delta W=W X, X*=-X, be ANY tangent in U(H_f), including arbitrary
+couplings between CODE, DATA, all helper/work columns, old columns and
+birth layers. Let J_0 embed the whole initial thermal carrier as the
+passive fully born vector, and put
+
+    C=J_0* W J_0,       C_0=c I_(H_0).                       (TF7)
+
+For real |xi|<1,
+
+    Re delta log det(I-W D_age(xi))
+       = [(xi^b-xi^a)/p_ab(xi)] Re Tr_(H_0)(delta C).         (TF8)
+
+PROOF. At the base W=I_old tensor S on the mixed block and is selfadjoint
+on each remaining same-age block. Both D_age and the resolvent
+(I-WD_age)^-1 are block diagonal in this decomposition. Cross-block
+variations therefore have zero first trace. On a same-age block, the
+coefficient of X in the log determinant is
+
+    -xi^ell (I-xi^ell Q)^-1 Q,    Q*=Q, Q^2=I,
+
+which is Hermitian; its trace against skew-Hermitian X is purely imaginary.
+On the 2q-dimensional mixed block the real trace only sees the real-skew
+part of each diagonal 2-plane. An imaginary symmetric tangent contributes
+only an imaginary trace. For the real-skew part, unitarity gives
+Re Tr delta W_ee=-Re Tr delta W_psipsi; differentiating (TF6) gives
+exactly (xi^b-xi^a) Re Tr delta W_psipsi. Dividing by p_ab gives (TF8).
+Equivalently one can differentiate the explicit 2x2 inverse. Off-diagonal
+old-column components drop from the trace, so the same formula holds for
+arbitrary q and does not require diagonal old perturbations. END PROOF.
+
+The formula does not divide by s. The regularity assumptions |c|<1 are
+needed for the geometric lift and support margins; c!=0 is additionally
+needed only to replace fixed C by fixed C*C.
+
+By the convergent power series log det(I-xi T)=-sum_(k>=1)
+xi^k Tr(T^k)/k, define the REAL finite coefficients
+
+    d_k(a,b,c)=-k [xi^k] (xi^b-xi^a)/p_ab(xi).
+
+Then on every such actual tangent
+
+    delta Re Tr_K(T_clock^k)=d_k Re Tr_(H_0)(delta C).        (TF9)
+
+This statement includes arbitrary internal variations of EVERY square
+body gate separately, even a preparer and its inverse varied independently.
+Their inverse relation is needed at the base, not imposed on tangents.
+Every induced endpoint tangent is of the form used above. Birth maps,
+their layout and stage count remain fixed in this differential.
+
+#### D. 4. The ORIGINAL complete heat source
+
+For fixed original scene B_s,C_s and fixed beta>0, the INTERNAL placement
+of the body gives the owned heat kernel
+
+    Delta_0=I-B_s tensor I-C_s tensor(T_clock+T_clock*),
+    h(phi)=Tr_scene exp[-beta(I-B_s-2cos(phi) C_s)],
+    h(phi)=a_0+2sum_(k>=1) a_k cos(k phi),
+    Z_01=2Tr exp(-beta Delta_0)+359 dim K,
+    H=beta^-1 log Z_01.                                    (TF10)
+
+B_s and C_s need not commute. The real even analytic kernel and its
+ differentiated Fourier series converge absolutely. All Hodge degrees,
+all original scene modes and all actual birth details stay in (TF10).
+Consequently
+
+    D H = alpha_H Re Tr_(H_0)(delta C),
+    alpha_H=4/(beta Z_01) sum_(k>=1) a_k d_k(a,b,c).          (TF11)
+
+The sign convention is the owner's POSITIVE beta^-1 log Z_01. There is
+no omitted dimension term: 359 dim K is retained in Z_01; its derivative
+is zero on this fixed finite vertex. Equation (TF11) is exact, not a cold
+limit or a weak/norm estimate. No assertion alpha_H!=0 is required for
+the fibre conclusion.
+
+In particular all faithful fixed-return-operator tangents delta C=0 have
+DH=0. More generally, at the nonzero cI centre,
+
+    delta(C*C)=0  =>  c(delta C+delta C*)=0  =>  DH=0.        (TF12)
+
+This is the entire algebraic current implementation fibre defined by the FULL
+old-input cold operator/effect, not only selected CODE rotations.
+The result is first-order at this canonical centre. It does NOT say that
+two arbitrary implementations with equal C have equal heat away from it,
+or that every implementation is stationary on that fibre.
+
+The actual SOURCE section 5 / RAW section 7 / KAPPA implementation fibre fixes the outer INTERNAL heat scene and its Gram data; SITE and physical mesh registers are internal qubits and are not that outer 33-vertex factor. The algebraic theorem TF8–TF14 holds on the larger INTERNAL U(H_f), including every CODE/DATA/WORK and old-column coupling. Its actual admitted native application is the Spin-safe active apparatus/newWORK subdomain in C.11/E.FP9, with identity on sealed oldRIGHT; arbitrary Spin or oldRIGHT actuation is not inferred. This is a restriction of a proved ambient identity to the actual native input graph, not a redefinition of its permitted controls. Arbitrary additional scene-entangling temporal gates
+are not inferred from (TF9): their heat coefficient can be an operator on
+the scene, not the scalar alpha_H. The separate old scene-mixing involution
+proof required age preservation and cannot simply be copied to this mixed
+plane. Spatial scene operators, beta, birth maps, clock length and further
+R/Info terms are not varied by this theorem.
+
+#### D. 5. The proper physical-cut issue is handled by the actual full-column owner
+
+C in (TF7) is the compression to the WHOLE initial thermal H_0, not a proper
+physical P_0 H_0. Merely preserving P_0 C*C P_0 is insufficient: varying
+one excluded old column's mixed plane changes the heat while leaving that
+physical corner fixed. This is an interface distinction, not a need to
+replace the original physical P_0 by identity.
+
+The actual current owner is stronger. RAW R17, SOURCE §3 and §7eh.I retain
+the reflected current cold OPERATOR cI on every protected old column.
+The all-input writer/response comparison holds on the entire old carrier,
+including the complement of the physical rank-r input cut and inputs
+entangled with an untouched reference. Thus a faithful implementation
+variation at fixed field gives delta C_current=0 on that whole carrier
+(or at least preserves its full C_current* C_current), and (TF12) applies.
+This consumes that all-column interface; it does not infer it from a
+single prepared probability or from proper-cut fidelity alone.
+
+#### D. 6. A completed canonical-identity old prefix retains all old ages
+
+Let a real old history precede the first new output-port birth. Denote its
+terminal carrier by H_old, with passive old age projections P_j. Assume
+the old prefix's CANONICAL completed endpoint is identity on all H_old.
+Its stages and old ages are retained; they are not collapsed to a new
+single stage. All new births are frontloaded before the current body.
+
+At the final stage, the passive copy of P_j H_old with every new bit in v
+has age a_j=N-j. Its partner P_j H_old with the first new PORT in v_perp
+and all later new bits in v belongs to the port-detail age b. The current
+U_n gives S(c) on each such pair, and all remaining age blocks are
+selfadjoint. Formula (TF8) now becomes
+
+    Re Dlogdet = sum_j A_j(xi) Re Tr(P_j delta C_global),
+    A_j(xi)=(xi^b-xi^(a_j)) /
+             [1+c(xi^b-xi^(a_j))-xi^(a_j+b)].                (TF13)
+
+Therefore, with the same Fourier coefficients and complete Z_01,
+
+    D H=sum_j alpha_H,j Re Tr(P_j delta C_global),
+    alpha_H,j=4/(beta Z_01) sum_(k>=1) a_k
+                      {-k[xi^k] A_j(xi)}.                  (TF14)
+
+Cross-old-age components again disappear only from the first trace;
+none of their physical columns or history states is removed.
+Here C_global is the compression onto the WHOLE pre-port old carrier,
+using its passive inclusion, rather than only the first chronological H_0.
+
+The faithful current comparison supplies delta C_body=0 on H_old. This
+also handles OLD internal square-gate variations at the stated centre:
+write the full canonical endpoint as W_body W_old^up. Since W_old=I
+and C_body=cI at the base,
+
+    delta C_global=delta C_body+c delta W_old.
+
+Every old square-gate variation induces a skew-Hermitian delta W_old at
+identity. Hence Re Tr(P_j delta W_old)=0 for every Hermitian P_j. Thus
+(TF14) vanishes for faithful current implementation tangents together
+with arbitrary independent internal OLD square-gate tangents. The old
+prefix need not be held fixed on tangent directions; its canonical
+identity is a BASE-value hypothesis.
+
+This conclusion does not repair an arbitrary old prefix with a different
+canonical endpoint. An ordinary old gate followed after a birth by its
+usual tensor inverse is not automatically a canonical identity. The
+existing marked complete-echo/frontloaded-birth construction provides the
+required identity prefix when that is the actual specified execution.
+Moving physical cuts do not change H if the clock is fixed; their genuine
+feedback and source equations must still be transported by their owners.
+
+#### D. 9. Bounded exact replay
+
+`original_reporter_canonical_thermal_fibre_check.py` checks the differential
+identity on every basis generator of complex u(4) for a first-port/later-birth
+layout and for two retained old ages. It verifies the full-effect relation,
+includes the failing proper-cut-only control, and constructs the literal
+un-padded 5-dimensional age-3/age-2 clock, checking all complex closing
+generators against its first ten trace-moment derivatives. The code uses
+exceptions rather than assert. It is a finite algebra check of the new
+parent, not an emitted complete native-word or heat truncation certificate.
+Normal Python and python -O produced identical receipts: SHA256 d808ef0a2bf1d6998ae59a3517d03bb3666e465a96bf20837bb6a728cf4ca80c.
+
+### 7eo.E. Exact finite comparisons and their full faithful tangent domains
+
+or global action-admission assertion. This consumes the actual final
+Z_port reporter and §7eo.D (TF).
+
+#### E. FP1. Exact algebraic hypothesis and source convention
+
+Let P be the ENTIRE old input carrier, not only a proper physical input
+cut. Let E be its first-new-port detail partner, and F the later-born
+passive detail layers. At the canonical actual native centre,
+
+    W0 = [[cI,sI,0],[sI,-cI,0],[0,0,Q]],
+    c real, s real nonzero, c^2+s^2=1,
+    Q=Q*=Q^-1, [Q,D_F(xi)]=0.
+
+The passive age diagonal is
+
+    D_age=diag(D_old(xi), xi^b I_E, D_F(xi)),
+    D_old=sum_j xi^(a_j) Pi_j.
+
+The current original report port is born FIRST after a completed
+canonical-identity old prefix; the other new registers are born later.
+The actual N and all ages include EVERY literal stage and inverse frame.
+The age-cycle identity is det(I-xi T)=det(I-W D_age).
+
+The original complete declared master is the actual RAW H+J with all
+425D heat modes. This result compares TWO FINITE matrices, not just the
+derivative of an algebraic smooth curve. Its native specialization
+requires that both endpoints are actual admissible words with the same
+birth layout, clock length, cut, beta, zeta and outer scene operators.
+
+#### E. FP2. Arbitrary independent LEFT finite pair
+
+For any unitary A on E+F, set L_A=I_P directsum A and
+
+    W_plus=L_A W0,       W_minus=L_(A*) W0.
+
+Both have exactly the same cold operator C=P W P=cI_P. Schur-eliminating
+P, initially for real xi sufficiently small, gives EXACTLY
+
+    det(I-W_plus D_age)
+      =det(I-cD_old) det(I-A K(xi)),                         (FP1)
+
+where
+
+    K=diag(K_E,Q D_F),
+    K_E=xi^b [s^2 D_old(I-cD_old)^-1-cI].                   (FP2)
+
+Indeed the bottom-right block of W0 D_age is
+D0=diag(-c xi^b I,QD_F), its upper-right is s xi^b E*, and
+its lower-left is s E D_old. The Schur complement of I-cD_old is
+I-A[D0+s^2 xi^b E D_old(I-cD_old)^-1 E*], giving (FP1).
+
+K=K* for real xi. Therefore
+
+    conjugate(det(I-A K))
+       =det(I-K A*)=det(I-A* K).                            (FP3)
+
+The prefactor det(I-cD_old) is real. Thus the two full characteristic
+polynomials det(I-xi T_plus) and det(I-xi T_minus) have conjugate
+coefficients. Equality first proved near xi=0 extends to the full
+polynomials; the Schur denominators are merely removable intermediate
+factors. No assumption that A commutes with any age projection is used.
+
+#### E. FP3. Arbitrary independent RIGHT finite pair
+
+For B unitary on E+F, the separate pair
+
+    W_plus=W0 L_B,       W_minus=W0 L_(B*)
+
+has the same conclusion. Its Schur complement is
+
+    I - H(xi) B D_S,
+    H=diag(s^2 D_old(I-cD_old)^-1-cI,Q),
+    D_S=diag(xi^b I,D_F).
+
+By det(I-XY)=det(I-YX), its determinant is det(I-B D_S H).
+Since [D_S,H]=0, D_S H is EXACTLY the K in (FP2). Equations (FP1)--(FP3)
+apply unchanged. These are two independently varied coordinates; no
+constraint B=A* is imposed.
+
+#### E. FP4. Exact full heat and return equality
+
+T_plus,T_minus are unitary and their eigenvalue multisets are complex
+conjugate. Consequently the multisets of T+T* eigenvalues agree.
+For the actual RAW internal geometry
+
+    Delta0=I-B_scene tensor I-C_scene tensor(T+T*),
+    Z=2 Tr exp(-beta Delta0)+359D,
+    H=beta^-1 log Z,
+
+the FULL Z and H agree exactly, even if B_scene and C_scene do not
+commute. Each internal eigenphase contributes the same scene matrix
+I-B_scene-2 cos(phi) C_scene. The harmonic 359D contribution is the
+same, since the two clocks have identical dimensions.
+
+The return term agrees exactly because C_plus=C_minus=cI on every old
+input column. In the elementary physical cut this is
+
+    J=-rank(P0) log((1-zeta)+zeta c^2).
+
+For a fixed earlier return factor the actual C_old* C_old factor also
+remains the same. Thus B_plus-B_minus=0 exactly. A proper P0 alone is
+not used to infer heat equality: the fixed cold operator is on all P.
+
+The source may therefore be the genuine finite difference
+(B_plus-B_minus)/(2t Gamma), with any declared t!=0 and Gamma>0: its
+value is EXACT zero. No normalization limit or compiler-error estimate
+is needed for this equality once the two endpoints satisfy FP1.
+
+#### E. FP5. The independent left/right coordinates span the full cold fibre
+
+The manifold of unitary W with PWP=cI has the local factorization
+
+    W=L_A W0 L_B.                                         (FP4)
+
+To see this, write W=[[cI,R],[T,D]]. Unitarity gives
+RR*=s^2 I and T*T=s^2 I. Choose A carrying the standard E embedding to
+T/s, and B with E*B=R/s. After these changes the remaining block has
+E restriction -cI, no E/F cross terms, and an arbitrary unitary on F.
+An additional F block of A absorbs this unitary into the chosen Q.
+Near W0 these choices can be made smoothly by ordinary local Stiefel
+charts. They are geometric coordinates, not extra selected equations.
+
+Here is an explicit differential surjectivity proof. For an arbitrary
+unitary tangent Z at W0 with PZP=0, let T1=Z_(S,P), R1=Z_(P,S), S=E+F.
+Both E*T1/s and R1E/s are skew-Hermitian. Set
+
+    X_A=[[E*T1/s, -(F*T1)* /s],
+         [F*T1/s, 0]],
+    X_B=[[R1E/s, R1F/s],
+         [-(R1F)* /s,0]].                                  (FP5)
+
+They are skew-Hermitian. Subtract
+Z1=(0 directsum X_A)W0+W0(0 directsum X_B) from Z. The residual has
+zero P row/column, and tangent unitarity forces zero E row/column as
+well. Its sole F block Z_F obeys Z_F Q*+Q Z_F*=0. Adding Z_F Q* to the
+F,F block of X_A therefore realizes the residual. Thus every Z is the
+sum of ONE left and ONE right coordinate tangent. All constants are
+finite on |s|>=s_min>0; the explicit formulas give, for example,
+||X_A||+||X_B|| <= (1+12/|s|)||Z||.
+
+A stricter fixed-terminal-prepared-isometry fibre Z J_P=0 needs only
+RIGHT coordinates: X=W0*Z is skew-Hermitian and XJ_P=0, hence
+Z=W0(0 directsum X_B). The corresponding finite B endpoints preserve
+W J_P exactly. The same constructions preserve an additional protected
+RIGHT tensor factor if Z,W0,A,B are required to act identically on it.
+
+#### E. FP6. What the literal native application must retain
+
+- A or B used in a finite pair must actually be a finite native unitary
+  fixing P pointwise, with all required protected registers/marks. The
+  theorem does not declare every abstract U(S) matrix a primitive.
+  Approximating an intended A by an actual P-fixing unitary A_tilde is
+  harmless: pair A_tilde with its ACTUAL inverse and FP3 remains exact.
+- Both words must have exactly the same real clock/layout. All new births
+  can be frontloaded as in the canonical construction; append the pair
+  within the post-birth body. Native G^-1=ZGZ, Z=SourceI^2 and the actual
+  SourceI inverse permit literal inverse words. In that profile inverse
+  length differences are even and can be equalized by counted CX;CX
+  pairs on existing resources. If a different alphabet/cost convention
+  is used, an equal-length native pairing must be supplied explicitly.
+- Earlier retained marks must be checked under the actual chronology.
+  A right B fixes every prepared old input column, hence all subsequent
+  unchanged-prefix marked states. A left A appended after the existing
+  marks preserves those earlier marks but may change an additional
+  required terminal observable. Such a condition cannot be omitted;
+  use the appropriate stricter stabilizer (or the right-only fibre).
+- Double-coset tangent spanning is not an assertion that arbitrary
+  simultaneous endpoints L_A W0 L_B and L_(A*) W0 L_(B*) have equal H.
+  The finite Euler model consists of separate left and right pairs.
+  Nor is heat constant on the whole cold fibre.
+- Physical field/preparation recovery still uses its actual marked-bank
+  decoder and full source norm/right-lift. FP5 covers the implementation
+  cold fibre; it does not by itself prove the geometric/radial rows or
+  give the native compiler a continuously variable primitive gate.
+- Any transfer of this paired finite source convention to a pre-existing
+  task must name the admitted comparison map. Book02 allows declared
+  finite differences; it does not silently replace another task's probes.
+
+Hence FP1--FP5 provide a constructive exact FINITE endpoint model for the
+canonical implementation fibre, substantially stronger than merely a
+smooth derivative-zero theorem. Admission and original full field/source
+composition remain their named owners, without importing arbitrary
+finite-word equality or an unpriced completion.
+
+#### E. FP7. Actual old-passive-block inverse pairs, including a proper cut
+
+The actual canonical old endpoint is V_old^up=diag(V_old,I_S): it acts
+ONLY on the old passive P block and is identity on the new-born detail
+complement S=E+F. It is not V_old tensor I_new and in general DOES NOT
+commute with W0. The following direct Schur proof uses its correct type.
+
+Put Q_comp=diag(-cI_E,Q), D_comp=diag(xi^b I_E,D_F), and compare
+
+    W_plus=W0 diag(V,I_S),
+    W_minus=W0 diag(V*,I_S).                                (FP6)
+
+Eliminating S rather than P gives EXACTLY
+
+    det(I-W_plus D_age)
+       =det(I-Q_comp D_comp) det(I-k(xi) V D_old),
+    k(xi)=c+s^2 xi^b/(1+c xi^b)
+         =(c+xi^b)/(1+c xi^b).                              (FP6a)
+
+Indeed the S block is I-Q_comp D_comp; the cross terms in its Schur
+complement are s^2 xi^b/(1+c xi^b) V D_old. The first factor and k are
+real for real xi near zero, while D_old is Hermitian. Therefore
+
+    conjugate(det(I-k V D_old))
+       =det(I-k D_old V*)=det(I-k V* D_old).                 (FP6b)
+
+The full clock characteristic polynomials have conjugate coefficients;
+the denominators again cancel in the polynomial identity. Consequently
+the FULL heat prices agree on the actual common clock, without assuming
+that V commutes with an age projection or with W0.
+
+For a physical input isometry i:H_phys -> P, including a proper cut,
+
+    C_phys,+ = c i* V i,
+    C_phys,- = c i* V* i = C_phys,+*.                        (FP6c)
+
+These square matrices have the same singular values. Hence the two
+original return prices -logdet[(1-zeta)I+zeta C_phys* C_phys] agree
+exactly. Neither C_phys,+* C_phys,+ nor C_phys,-* C_phys,- need equal
+c^2 I unless V preserves the physical cut. No such invariance is used.
+There is no unproved additional fixed-past factor inserted in (FP6c).
+If a different return factorization is used, its compression must be
+recomputed rather than inferred from this singular-value argument.
+
+Thus actual old-passive inverse pairs give EXACT finite complete H+J
+source zeros, not just real-trace derivative zeros. Their native words
+must have the same actual birth layout/clock and required protected
+records. If old history is the fixed boundary it is not varied at all;
+if a prescribed retained observable forbids a pair, FP6 does not override
+that condition. At the unvaried canonical centre itself C_phys=cI, so
+normalized input/cut changes within this full P carrier are exactly
+return-neutral, and the counting heat does not depend on that chosen
+input vector. This last centre statement is distinct from incorrectly
+asserting scalar C_phys* C_phys at the old finite endpoints.
+
+#### E. FP8. Exact REFLECTED-wrapper finite coordinate pairs
+
+RAW9's faithful implementation has the more specific form W=V* Z_port V.
+The one-leg endpoints FP2/FP3 need not be reflections and are NOT
+silently declared to be members of that task. Its appropriate finite
+pair instead is
+
+    W_plus=L_A W0 L_(A*),
+    W_minus=L_(A*) W0 L_A.                                 (FP7)
+
+Both are reflections and have P W P=cI whenever A acts only on S=E+F.
+For general multi-plane A, equality of their heat prices is NOT asserted.
+For each elementary plane of the common eigenbasis below it is exact.
+
+The same Schur calculation gives
+
+    det(I-W_A D_age)=det(I-cD_old)
+                      det(I-A H_eff(xi) A* D_S(xi)),        (FP8)
+
+    H_eff=diag(-cI+s^2 D_old(I-cD_old)^-1,Q),
+    D_S=diag(xi^b I_E,D_F).
+
+These are commuting Hermitian matrices for real xi. They have a common
+basis independent of xi: diagonalize the old age projections on the E
+partner and jointly diagonalize Q with the later passive age projections
+on F. Denote their corresponding diagonal entries h_i(xi),d_i(xi).
+
+Let A be identity outside ONE pair i,j and an arbitrary unitary 2x2
+matrix on that pair. Put u=|A_ii|^2=|A_jj|^2 and
+v=|A_ij|^2=|A_ji|^2, u+v=1. Its entire varying factor is
+
+    1-d_i(h_i u+h_j v)-d_j(h_i v+h_j u)+d_i d_j h_i h_j.     (FP9)
+
+This follows by the 2x2 determinant, using det(A H A*)=h_i h_j.
+A* has the same u,v, so (FP9) is IDENTICAL for the two endpoints.
+All other factors are unchanged. The full clock characteristic
+polynomials themselves are equal, not merely conjugate. Consequently
+all full heat modes and J agree EXACTLY at this finite clock.
+For a diagonal phase A, [A,D_S]=0 and cyclic determinant already makes
+(FP8) independent of A; this covers diagonal skew-Hermitian generators.
+
+##### Every faithful reflection tangent is covered
+
+The local manifold of selfadjoint unitaries with P W P=cI is the
+stabilizer-P orbit W=L_A W0 L_A*. In the factorization proof, reflection
+unitarity identifies the row and column isometries; its remaining F
+block is a selfadjoint unitary with the same locally constant signature,
+hence is unitarily conjugate to Q. There is no extra independent left
+or right response to add to this REFLECTION domain.
+
+Explicitly, let Z=Z*, W0 Z+Z W0=0, and PZP=0. On S=E+F set
+
+    X_EE=Z_EP/s,  X_FE=Z_FP/s,  X_EF=-Z_PF/s,  X_FF=0.
+
+The first three blocks make X skew-Hermitian and match the entire P
+row and column of [0 directsum X,W0]. The residual lies only in F,F;
+call it Z_F. It is Hermitian and anticommutes with Q. Adding
+X_FF=Z_F Q/2, which is skew-Hermitian, realizes the residual because
+[Z_F Q/2,Q]=Z_F. Thus
+
+    Z=[0 directsum X,W0].                                  (FP10)
+
+Real and imaginary elementary plane generators, together with diagonal
+phases, span all skew-Hermitian X in this common basis. They therefore
+supply a finite coordinate family whose first jets span the entire
+faithful reflected cold fibre, including every nontrivial direction
+after the stabilizer kernel is removed. Dimension/right-lift constants
+are retained in the physical norm; coordinate counting does not erase
+a dimension factor.
+
+For every such ACTUALLY REALIZED elementary plane, its literal native
+unitary and exact inverse give the finite pair FP7 and the exact zero
+of the full-price finite contrast. Compiler approximation is harmless
+only if it preserves this plane form exactly. An arbitrary approximate
+unitary with leakage onto other planes is not covered by (FP9).
+The same warning applies to the common diagonalizer: exact spectral
+pairing needs the actual diagonalizer to be exact, not merely close.
+The proposed native congruence construction fixes the allocation m of
+later registers, chooses n+1 divisible by 2^m for m fresh addressable bits, and uses integer
+Walsh-controlled powers of G to diagonalize U_n on F while fixing P+E.
+Its literal all-column/native proof is the native-admission consumer,
+not an additional premise supplied by the matrix determinant alone.
+Restricting n+1 to multiples of this fixed integer preserves density
+of cos(2(n+1)theta), since theta/pi is irrational.
+
+Thus the new finite result has an exact source-coordinate meaning:
+choose the admitted elementary reflected +/- pairs as the finite Euler
+rows; each is zero, and their comparison jets span the whole faithful
+reflection tangent. It does not claim that every chord of the nonlinear
+fibre is zero. The physical field/preparation decoder and its independent
+source rows still belong to their separate named composition owners.
+
+For the reflected pairs FP7 the common-clock condition has an especially
+simple literal realization: execute A*;W0;A and A;W0;A*. Each endpoint
+contains the same actual A word and its same actual inverse word once,
+so their total post-birth lengths are automatically equal, even when the
+inverse word is longer. Since both pre-body A and A* fix P pointwise,
+every actual prepared old column and every subsequent original internal
+bank/READY mark is unchanged. The added terminal frame must satisfy the
+task's specified terminal-observable comparison. All stages remain in
+its clock; no inverse is an uncharged matrix cancellation.
+If marks require identical literal stage addresses, also equalize the two
+pre-body segment lengths. In the pinned inverse compiler each replacement
+preserves length parity (G -> ZGZ, CX -> CX, SourceI -> SourceI^3), so the
+prefix-length mismatch is even and can be filled with counted CX;CX
+pairs. Retain the corresponding common-clock padding in both words.
+Otherwise the actual mark addresses are explicitly transported; equality
+of marked values alone is not a claim of equality of their addresses.
+
+#### E. FP9. Actual Source-Spin complex plane realization: proof-only splitting
+
+The current native application keeps SOURCE SPIN as the INITIAL carrier
+H0=C^4 and P0=I4. All new WORK registers are born later, with OUTPUT PORT
+first. It does not create a selected Spin eigenstate or apply a new
+physical diagonalization gate to Spin. The native source owner provides
+an all-column real operator L_i on Spin with L_i*=-L_i and L_i^2=-I.
+Complex WORK matrices are represented by the actual algebra homomorphism
+
+    A=A_R+i A_I -> A_tilde=I_Spin tensor A_R+L_i tensor A_I. (FP11)
+
+This map preserves products and adjoints. In a mathematical eigenbasis of
+L_i, used ONLY to evaluate the spectrum, it is the direct sum of A and
+its complex conjugate, with all the true Spin multiplicities retained.
+The passive age projections commute with L_i in the native application.
+The canonical W0 is Spin-independent. Hence the complete clock determinant
+splits into those sectors, and FP8 applies in every sector to the actual
+single complex WORK plane and its conjugate. Both sector determinants
+are unchanged by inversion of the plane. Their full product, every heat
+mode and the rank-four physical return remain unchanged.
+
+The native reader supplies the literal routed-SourceI conjugation of a
+real WORK plane and the exact common diagonalizer. No complex gate on
+Spin is inferred from the proof-only spectral splitting. This proves the
+finite-pair identity for the actually represented complex plane domain;
+it does not assert arbitrary U(4 times dim WORK) primitive actuation or
+discard either conjugate Spin sector. All source norms and the true
+rank-four gain must use this initial carrier, not the older rank-one
+illustrative fixture.
+
+##### FP9 tower qualification: one active old source port, protected oldRIGHT
+
+The literal native `source_port` is globally fixed. Let a be that first
+born addressable WORK bit. In the refining tower retain a as active
+apparatus; seal every other old non-Spin WORK factor as protected oldRIGHT.
+It is not valid to send a newly born output port directly to SourceI under
+an unannounced source-port reassignment. Route its sign by the literal
+
+    SWAP(a,new_port); SourceI_a^2; SWAP(a,new_port).
+
+This is exactly I_a tensor Z_new on all columns and restores a. Every
+SWAP expansion and SourceI stage is paid. In each new block the NEW
+OUTPUT PORT is the first new WORK birth; all its later helpers follow.
+SOURCE SPIN stays the original H0=C4, P0=I4.
+
+Let F_new=H_new T_new* be the exact new canonical frame supplied by the
+native plane compiler. Use the active frame
+
+    F=F_new G_a^-1.                                        (FP12)
+
+The latter Golden inverse acts on the permitted address a, not on Spin
+or protected oldRIGHT. On the canonical passive birth layout it makes
+all old age projections diagonal in the computational a basis. The two
+old root/a-detail layers distinguish a=0 and a=1; each later oldRIGHT
+birth layer contains I_a. Consequently, using a simultaneous spectral
+resolution of the oldRIGHT projections FOR THE PROOF ONLY,
+
+    H_RIGHT=direct_sum_r R_r,
+    D_old|r=diag_a(xi^(a_0r),xi^(a_1r)) tensor I_(R_r),     (FP13)
+
+with the Spin sector understood. This resolution is neither an executed
+rotation of oldRIGHT nor a measurement or deletion of its unknown state.
+If an actual old prefix is not in the stated canonical passive layout,
+(FP13) needs its proved transport; it is not inferred from its dimension.
+
+In active (a,newWORK) coordinates the old subspace and its new-port
+partner are
+
+    P_active=H_a tensor |0_new>,
+    E_active=H_a tensor |1_new_port,0_later_new>.
+
+Each has dimension TWO, before the untouched Spin and right factors.
+In particular A must fix BOTH computational P columns pointwise.
+It may otherwise be any of the admitted joint active plane rotations,
+including rotations which mix a=0 and a=1. The two current E columns
+have the same age xi^b; every later new birth carries the full old identity.
+After F_new, Q_comp on new detail is diagonal and independent of a/right.
+It follows that H_eff(xi),D_comp(xi) are simultaneously diagonal within
+every right block r in the SAME active (a,newWORK) coordinate basis.
+Their E eigenvalues may depend on a and r through (FP13), which causes
+no problem: formula(FP9) is an identity for arbitrary real h_i,h_j,d_i,d_j.
+
+An actual joint active plane A tensor I_RIGHT outside the two P columns
+therefore acts as ONE elementary plane in EACH right block r (and in
+each retained conjugate Spin sector). Apply FP9 to each block separately,
+then multiply the determinants with all true multiplicities. The entire
+H_plus=H_minus result follows exactly even for a-coupling directions.
+The right block decomposition is only a proof of equality of the FULL
+counting trace, not a thermal-sector selection.
+
+FP10 applied to P_active of rank two now spans the WHOLE faithful
+reflected fibre of the admitted active apparatus+newWORK algebra, tensor
+identity on protected oldRIGHT. With the actual SourceI representation,
+its complex plane directions are those of FP11, not arbitrary independent
+Spin operations. Real/imaginary planes and the admitted phase coordinates
+span that active unitary Lie algebra modulo its invisible stabilizer.
+The actual later-helper F block is nonempty. Thus a fixed-P skew generator
+X on S may be made traceless without changing its conjugation direction:
+subtract (tr X/dim F) I_F, supported only on F. This is skew-Hermitian,
+commutes with Q and hence W0, and still vanishes on P. Therefore using SU
+rather than U loses no active reflected direction HERE. Merely subtracting
+a scalar on all S would be incorrect, since it need not commute with the
+P/E mixing. No variation of sealed oldRIGHT is silently reintroduced as
+an active native gate.
+
+Finally the intermediate whole-old P rank is NOT the physical return
+rank: it is already 8 with active a and no extra right factors, whereas
+the original physical input remains H0=C4, P0=I4 throughout the tower.
+Use that true rank four in J and in every native source gain. Full heat
+still counts every intermediate stage dimension and both Spin sectors.
+Faithful pairs fix C=cI on the entire intermediate P and hence on the
+actual physical input image. Any separately admitted old-passive inverse
+pair uses the proper-cut compression/singular-value argument FP6c.
+
+### 7eo.F. Every current input and the retained constraint/adjoint map
+
+seven-call reporter, its full marked 42-direction lift, and its retained
+Book03 source. Inputs: primary §§7eh.D,H,I, 7ej MG2–MG14; RAW §§7,9
+(R16–R19); SOURCE §§3–5,9; KAPPA §§2,6; and the applications in this section
+§7eo.B (PC20),
+§7eo.C (NG3–NG13) (CG1–CG7),
+§7em.B and §7eo.C, §7eo.D
+(TF13–TF14), §7eo.F/G (AD9).
+
+#### F. CD1. One actual carrier, source and input graph
+
+Use the published §7eh.H.1 graph: the registered descriptor specifies the
+complete original writer AND its canonical fresh WORK/SITE input checkpoint;
+SAM is its designated free incoming control. All source banks, READY bits,
+SITE, helpers, actual inverse words and every failure outcome are generated
+by that writer. They are not independently replaceable blank states.
+The original protected carrier H_o is untouched as required; its unknown
+columns and correlations with an untouched reference are retained.
+
+Use the actual full price on the complete growing history K:
+
+    B=β^(-1)log[2 Tr exp(−βΔ_0)+359 dim K]
+                   −Tr log[(1−z)I_r+z C_phys* C_phys].       (CD1)
+
+Its actual scene, β,z, birth layout, stage inventory and initial rank are
+those of the owner. Every gate/inverse/birth contributes to this history.
+No late retention, thermal mode removal or subtraction is implicit.
+This is the owner's H+J master; no additional independently selected R/Info
+term is asserted to have the same derivative.
+
+The common local field seed Y is represented by the actual MG/CG CODE
+lift. It is not counted twice as both that physical input and an unrelated
+free copy of Y inside the compiled baseline B_0. The local chart's registered
+centre/resolution descriptor and its paid loader remain present. If the
+declared task additionally supplies a free seed/frame input, its actual
+Jacobian must be included; neither payment nor the name “baseline” fixes it.
+
+#### F. CD2. Native centre and the exact complete thermal law
+
+Assume the old prefix has canonical-completion endpoint I on its ENTIRE
+terminal H_o. Its stages and passive old-age projectors Π_j remain.
+Birth final output PORT first among new registers and frontload the other
+required births. The actual final sign is Z_port=SourceI². Choose a paid
+native C_n=G_port^n with regular nonzero c and construct, by the exact
+report-sign commutant compiler,
+
+    B_b=D* V_R,b D B_0,   [V_R,b,Z_port]=0,
+    B_0=D* V_R,0 C_n,    [V_R,0,Z_port]=0.
+
+Here D is the actual original forward processor with its actual native
+inverse. Thus B_s* S B_s=I_SAM⊗U_D, S=D*Z_port D,
+U_D=C_n*Z_port C_n, and for the whole-old passive inclusion J_o,
+
+    C_o=J_o*W_can J_o=cI_Ho.                              (CD2)
+
+All equalities are actual native endpoint identities; approximation enters
+the geometric marked-map transport, not their stationarity algebra.
+TF13–TF14, with every old age retained, gives for every admitted internal
+unitary first variation
+
+    DH=Re Tr(K_H δC_o),   K_H=Σ_j α_H,j Π_j=K_H*.           (CD3)
+
+For the actual output Gram A of the earlier physical corner, the feedback
+derivative in current body directions is
+
+    DJ=−(2w/c)Re Tr(ρ δC_o),
+    ρ=A[(1−z)I+zc²A]^(-1)/Tr[A((1−z)I+zc²A)^(-1)],
+    w=zc² Tr[A((1−z)I+zc²A)^(-1)].                         (CD4)
+
+Consequently δC_o=0, or merely δC_o*+δC_o=0, kills BOTH sources.
+The trace in CD3 is on the whole old carrier, not a promoted physical cut.
+
+#### F. CD3. Every current coordinate of the stated graph
+
+1. **Four independent preparations p.** Retain MG12 literally:
+   U=P_b* B_s* Q_b S Q_f* B_s P_f. At the centre their endpoints are I;
+   each occurrence is varied independently. Outer generators X commute
+   with U=I_SAM⊗U_D. Inner generators become B_s*XB_s and commute with U
+   because [X,S]=0. Hence each induced endpoint variation is skew-adjoint.
+   This includes permitted SAM/old-DATA correlations: U_D,S are identity
+   on those old factors. Original oldRIGHT address guards remain in force.
+   Compression stays skew, and CD3–CD4 solve every such row separately.
+
+2. **Faithful implementation/preparation θ.** RAW R17 and its required
+   marked maps are all-input operator identities at fixed payload. In the
+   actual reflected final-PORT wrapper C_o=I−2F_o, so δ_θF_o=0 gives
+   δ_θC_o=0 on ALL H_o, including outside a proper physical input cut.
+   Thus CD3 closes the previously separate thermal row as well as J.
+   Full-effect fidelity δ(C_o*C_o)=0 also suffices since c≠0. No equality
+   of heat between arbitrary finite faithful implementations is claimed.
+
+3. **Normalized original input u=i.** Let B_< be the passive old birth
+   inclusion. Canonical old identity gives V_<=B_<. Keep the actual
+   generated reference i_ref=J_o B_<i, with i*i=I_r. Then
+   C_phys=i*B_<*(cI)B_<i=cI_r and δ_iC_phys=0. Heat is independent of i.
+   This closes a genuinely variable original input within its same initial
+   carrier. It does not identify an independently chosen final WORK cut
+   with that input. Unknown density on a fixed input space is already
+   source-independent by SOURCE §5.
+
+4. **Old internal gates.** At canonical W_<=I,
+   δC_o=δC_body+cδW_<, with δW_< skew-adjoint. Every old weighted thermal
+   trace and the physical return trace vanish. Fixed past coordinates
+   alternatively retain their original exact boundary reaction; no old
+   price contribution to a current derivative has been omitted.
+
+5. **A genuinely free COMMON writer parameter u.** If the wider §7eh.D
+   graph is included, retain its single P_u(a)=a_u(a)r_u(a), the same
+   parameter at all seven addresses, and one shared normalized SITE.
+   At the primary point f=q=0, the three current addresses coincide:
+   P_f=P_q=P_0 and δ_uP_f=δ_uP_q=δ_uP_0. Hence the EXACT polynomial
+   Xi=Δ_y(P_f−P_0)+Δ_x(P_q−P_0) has δ_uXi=0. Xi δμ=0 and Σδμ=0 also
+   remove its actual SITE/measure and constant-baseline contributions.
+   This includes shared READY and baseline/slope parameters without
+   freezing their nonzero off-shell sources.
+
+   This is enough as an OPERATOR statement because the actual §7eh.H/I
+   writer is identity on every protected old column: C_o(u)=c(u)I_Ho,
+   not just ⟨ψ_old,C_o(u)ψ_old⟩=c(u). Therefore δ_uC_o=0. Matched forward
+   and inverse occurrences have adjoint compressed derivatives; their
+   zero paired sum makes each derivative skew, closing their independent
+   rows by CD3–CD4. Scalar cancellation alone would not prove this for
+   an additional hidden-bank or old-column-dependent apparatus input.
+   Such an input needs the stated all-input fidelity or its own Jacobian.
+
+The shared-u statement in CD3(5) is a CONDITIONAL ordinary-source identity: it requires an actual family with C_o(u)=c(u)I and the displayed common-address P_u law at that same centre. Mass adjustment and native approximation of the fixed bank do not by themselves construct this extra family. It is not an additional native finite-u extension of the main fixed-H.1 theorem; that requires its own marked-map/comparison lift.
+
+#### F. CD4. Generated states, reports and actual additional inputs
+
+Keep X_(k+1)=F_k(p,θ,u)X_k and the actual report relation r=Q(p,θ,u).
+The exact unequal-fibre backward adjoint solves the generated-state rows,
+including all preparations; the report multiplier retains DQ*B_r.
+For the complete fixed past h=h_record, use λ_past=−D_hB_red (including
+any declared operation-constraint adjoint). This is full constrained
+stationarity, not intrinsic neutrality obtained by deleting old terms.
+
+Independent per-call READY/P_0 loaders and a freely varied predicate
+visibility are NOT inputs of H.1's fixed original writer. If actually
+added, their real rows remain: at the original primary point
+
+    δQ_READY=λ_vis Σ_x μ_x r_0Δ(δa_f+δa_q−2δa_0),
+    δQ_0=−λ_vis(Δ_y+Δ_x)δP_0,   δQ_vis=4δλ_vis.
+
+They are generally nonzero; CD3 does not repair their return derivative.
+The fixed-source B_0 and current reference maps must likewise follow the
+registered writer/field or faithful-fibre map. No genuinely free existing
+seed/frame can be removed by renaming it a past record. This theorem
+retains precisely the declared graph, not every native future word.
+
+#### F. CD5. The all-42 geometric application and its exactness boundary
+
+PC20 supplies D c_*(Y_h)=−γ_h D I_h(Y_h)=0 in ALL original 16 coframe,
+24 Lorentz and two matter directions at the genuine nonvacuum primary Y_h.
+CG2–CG7 split the original complete prepared-column jet into a commutant
+part and its real response-changing radial part. The same off-shell
+formula is used everywhere; at Y_h the radial coefficient is exactly zero.
+The exact native commutant then gives CD2, with the full-source zeros above.
+
+MG2–MG7 provide actual CODE lifts for every independent field direction,
+controlling the COMPLETE marked prepared isometry on all protected columns.
+Keep CG7's anchor/processor error, O(s), η_table/s, MG's finite-comparison
+error, all conditioning/right-lift constants and the actual gain budgets.
+Choose them cofinally to zero. Thus these exact stationary native centres
+recover the primary field and its full 42-direction marked first jet;
+they are not merely stationary on the solution family's tangent space.
+
+Exact finite native stationarity and controlled geometric-jet recovery
+are distinct conclusions: the compiled bank is not asserted to equal the
+ideal geometric bank at finite precision. No arbitrary unprepared WORK
+unitary jet, strict/local minimum, compulsory task selection, or global
+D0→Einstein equation-class theorem follows from this centre result.
+
+### 7eo.G. One complete finite comparison task with the original norm
+
+deformation and §02.CVFT; RAW §5 and §9 (R16–R19); KAPPA §§2–4;
+SOURCE finite-basis bounds; primary MG2–MG14; AD9/CD1–CD5; and
+§7eo.E (FP, including the reflected FP8).
+Consumer: an explicitly declared, complete native paired-source task at
+the canonical centre. Not equality of arbitrary faithful finite chords.
+
+#### G. FA1. What the existing marked interface actually fixes
+
+RAW9 fixes the all-input effect of the SAME reflected wrapper and all
+prescribed task marks. It does not say that every possible future context
+or the terminal prepared isometry WJ is fixed. The task-faithful owner
+explicitly distinguishes these. MG's full prepared-isometry marks are
+D_ν B after the complete bank and fixed processor prefixes. They do not,
+merely by their notation, include the full returned word B*D*RDB J.
+
+Therefore use the actual finite marked-address list. For the stated
+original bank/pre-sign list, an initial stabilizer B with BJ=J leaves
+every initialized bank and processor mark exactly unchanged. Its paired
+final inverse gives the reflected word B*W(Y)B, with the same cold effect
+for EVERY free Y and every protected old input, not merely at one centre.
+The new gates are actual operations; the old marks retain their actual
+history addresses and the extra intermediate states remain in the clock.
+
+If a task additionally fixes terminal WJ, use that stronger constraint;
+do not infer it from cold-effect fidelity, nor delete it if present.
+Unknown oldRIGHT is never addressed. The stabilizer acts on the admitted
+current WORK/live-DATA algebra; tensor identities on protected factors
+remain exact throughout its compiler and inverse.
+
+#### G. FA2. Exact endpoint normal forms, with bounds rather than a norm quotient
+
+Let P=JJ* project onto the WHOLE old passive born subspace, Q=I−P.
+At the canonical centre write W0J=cJ+sE, s=sqrt(1−c²)>0,
+E*E=I and E*J=0. Set G_P={A unitary: AJ=J}.
+
+For the FULL UNITARY fixed-cold fibre, every tangent δW with
+J*δWJ=0 has
+
+    δW=XW0+W0Y,  X*=−X, Y*=−Y, XJ=YJ=0.              (FA1)
+
+An explicit construction is T=δWJ/s and
+X=T E*−E T*−E(E*T)E*, extended by zero on P. The tangent equations
+give E*T+T*E=0, so X is skew and XE=T. Set
+Y=W0*(δW−XW0); then Y is skew and YJ=0. In operator norm,
+
+    ||X||≤3||δW||/s,
+    ||Y||≤(1+3/s)||δW||.                              (FA2)
+
+If terminal WJ is fixed, δWJ=0 and the RIGHT factor alone suffices:
+δW=W0Y, Y=W0*δW, YJ=0, ||Y||=||δW||. It can be placed before
+the entire bank; it leaves every initialized prefix and terminal column
+unchanged. This proves completeness of that FULL-UNITARY endpoint fibre.
+
+RAW9's PAIRED implementation fibre is narrower: W=V*RV remains a
+selfadjoint involution. General AW0 and W0B are NOT automatically
+members of it. Its fixed-cold tangent instead has
+
+    δW=[X,W0],  X*=−X, XJ=0.                           (FA3)
+
+For example use X from FA1 to match δWJ; the residual
+R=δW−[X,W0] annihilates both J and E. It is selfadjoint, anticommutes
+with W0 and is supported on L=(P+EE*)^⊥. Adding R W0/2 on L to X
+proves FA3, with ||X||≤(1/2+6/s)||δW||. Thus the reflected fibre is
+spanned by conjugation axes in G_P. Their native realization and exact
+finite heat symmetry are the separate FP8 input.
+
+If the reflection condition AND terminal WJ are both fixed, restrict the
+conjugating generator to L: it fixes both J and E. Such axes span the
+remaining anticommuting R block and preserve the terminal column exactly.
+An arbitrary right B fixing J need not preserve the reflected wrapper.
+
+These are endpoint statements, NOT a replacement for the original raw
+implementation norm. For an original coordinate v, keep its actual norm
+||v||sem and endpoint map E_h(v)=δW. A certified bound
+||E_h(v)||≤b_h||v||sem propagates through FA2/FA3 and the actual plane
+expansion. Every resulting basis/Jacobian constant stays in the budget.
+Coordinates in ker E_h are retained, not identified with zero norm.
+
+#### G. FA3. Genuine native finite pairs on the actual task
+
+Keep the original canonical old prefix and generated physical reference.
+All new births precede the variable square body; every compared endpoint
+uses the same paid stage inventory and true birth layout.
+
+* The FOUR MG12 occurrences remain independent. For permitted outer
+  CODE/old-DATA controls, [U0,P_control]=0; for inner controls [S,Q]=0
+  implies [U0,B_s*QB_s]=0. Literal inverse pairs give W_−=W_+*.
+  Full growing-clock H is equal. Because the old canonical endpoint is I
+  and the reference is generated, C_phys,−=C_phys,+*, even for a proper
+  physical cut. Their singular values, hence original J, are equal.
+  This uses the constructed past; it is not the former arbitrary-old-A case.
+
+* For RAW9's paired faithful θ, use FP8's single two-plane conjugation
+  axes A W0 A* and A*W0 A in the fixed joint basis of D_age|Q and the
+  Hermitian Q block. Their cold operator is exactly cI and their full
+  heat determinants are equal. Diagonal phase axes, where admitted,
+  are spectrally constant. The axes span FA3; arbitrary simultaneous
+  multi-plane conjugation chords are not claimed isospectral.
+  Chronologically the pairs are A*;W0;A and A;W0;A*: each contains
+  the actual A word and its actual inverse once, so total lengths agree
+  even when inverse expansion costs more. Transport marked addresses,
+  or use paid common prefix/postfix padding when those addresses are fixed.
+  The actual born-adapted native frame, its divisibility requirement,
+  same-length inverse and stage counts are part of the native reader's
+  construction; an abstract spectral basis is not a free physical frame.
+
+* One-leg A W0 / A*W0 or W0B / W0B* pairs satisfy FP's stronger
+  full-unitary Schur identity. Use them only in an independently admitted
+  occurrence slot, or on a declared full-unitary fixed-WJ domain.
+  Cold equality alone does not put an unmatched endpoint into RAW9's
+  reflected implementation family. Do not enlarge that family by notation.
+
+* A normalized original input i, with i_ref generated, has the constant
+  physical corner ci*i=cI and input-independent heat. Its genuine finite
+  normalized comparisons therefore have exactly equal full price.
+
+Endpoint-neutral implementation coordinates can be represented without
+quotienting them away. For a supplied native mark-faithful prefix variant
+V_± of the CURRENT SQUARE BODY after all required births, execute
+V_±;V_±^−1;W0, retaining the original marks inside V_±. No old history
+or birth is inverted. Off shell the common last body is W_base(Y), not
+a field-independent frozen substitute; only this θ slot is neutralized.
+The endpoint is W0, and all stages of the exact inverse and final body
+are paid. With common inventory the full price is constant. For an
+original endpoint-kernel tangent this retains its designated prefix jet
+and changes its endpoint only at second order. This is a NEW PAID
+comparison recipe, not permission to delete the old V_± cost. It is
+applicable to the owner's retained prefix-address marks and immutable
+oldRIGHT guards; a separately immutable newly written wire cannot be
+acted on in violation of its actual contract. If terminal WJ is prescribed,
+the replacement also has that same terminal column. Required marks cannot
+be moved to a different state by renaming the frontier.
+
+
+##### One literal common centre for ALL finite axes
+
+Fix a finite implementation chart and its complete original raw basis first. Every primitive in the compiled word is one of the fixed G/CX/SourceI instructions; its input graph specifies which variables are independent and which instructions are generated copies/inverses. This does not identify the four independent MG preparations.
+
+For reflected implementation axes take one finite ordered network
+
+    A(t)=product_j A_j(t_j),   A_j(0)=I EXACTLY,
+    current word = A(t)* ; W_base(p) ; A(t).
+
+Every A_j uses its same literal plane/Walsh network for -,0,+, with its common positive-G padding. At zero all those identity networks still execute. With only coordinate j nonzero the endpoint is exactly that one compiled plane; the unchanged identity slots retain all their stages. Thus all axes have one identical zero-coordinate history and the same layout, not merely equal endpoint matrices. Before the body A(t)* fixes the whole born input, so the original completed-bank and pre-sign marks are unchanged. If a terminal full-state mark is additionally required, use the stricter P+E stabilizer of FA2 instead; the present H.1 graph has the stated pre-sign marks.
+
+For each original endpoint-kernel basis coordinate use one additional prefix slot V_l(u_l);V_l(u_l)^-1, followed by the common body. V_l is the supplied CURRENT square-gate comparison on the already born arena; no birth or protected past is inverted. Choose one finite catalogue of these slots, literal zero words and per-mark addresses before assembling the common history. The inverse is generated by this new comparison recipe. Its effect is not the freezing of a previously independent backward MG input. Common padding equalizes every finite -,0,+ catalogue, including each actual inverse expansion. At the new centre all slots have their registered zero words. At a kernel comparison the original V_l prefix, its marks and every raw stage survive, while its endpoint correction is exact.
+
+For an N-gate raw prefix, K_j=delta(F_j...F_1)(F_j...F_1)* obeys delta F_j=K_j F_j-F_j K_(j-1), max||K_j||<=N max||delta F_j|| and max||delta F_j||<=2 max||K_j||. On the endpoint kernel K_N=0. Projection of the extended history to that retained original prefix is a norm-one left inverse; the actual inverse expansion supplies the finite full-lift bound. Thus these coordinates and their old norm remain, rather than being discarded as invisible endpoints. Mark fidelity belongs to the original supplied V_l comparisons or their stated error certificate; completing an inverse does not create it.
+
+The marker map names the intended original copy inside each V_l slot and the current geometric decoder in the final W_base block. Other executed copies remain actual context, not substituted states. All loops reuse the allocated arena and increase only the actual stage count. Their generated instructions introduce no undeclared free angle. If a larger input graph independently varies further occurrences, it must include those actual coordinates before applying this construction; this theorem is not a maximal-family classification of all words of all lengths.
+
+#### G. FA4. The complete coordinate finite-source covector is legitimate
+
+Book02 says d_V may be a DECLARED finite difference on a frozen finite
+matrix family. RAW §5 supplies a finite family of independent field/
+old-input comparisons. KAPPA §2 retains the ENTIRE independent finite
+basis and its basis-to-dual-norm constant; §4 explicitly prescribes a
+full finite-basis readout. Therefore the following is an allowed source
+mode, once the actual endpoint recipes and their input graph are fixed.
+
+Take a complete basis e_j of the original finite admitted coordinates,
+including all four preparation legs, faithful implementation directions,
+genuine initial inputs, endpoint kernels and any actually free old rows
+with their supplied admissible map. Fixed-past coordinates retain the
+existing boundary/adjoint equation; they are not made free by this basis.
+For each
+axis use the actual native pair W_j,±, its signed displacement t_j and
+the same actual central gain Γ_h>0 when normalization is requested. Set
+
+    ℓ_h(v)=Σ_j v_j [B(W_j,+)−B(W_j,−)]/(2t_j Γ_h),
+    v=Σ_j v_j e_j.                                    (FA4)
+
+This is a LINEAR covector by its declared finite-basis definition. No
+claim is made that a single nonlinear chord v↦B(W(v,t))−B(W(v,−t))
+equals that linear extension at finite t. At the canonical centre every
+axis supplied by FA3 has exactly equal full prices, so ℓ_h is exactly
+zero on the entire original coordinate space, with its original norm.
+When normalization is omitted the exact zero is the same; this does not
+prove nonvanishing of a separately needed physical field-source gain.
+
+The physical field norm V_h, MG right lift, four-leg maximum norm and
+RAW R19 sum-hull norm are not rescaled. Define the actual basis constant
+
+    C_basis,h=sup_{||v||Ω≤1} Σ_j |v_j|.
+
+Thus coordinate errors ε_j imply ||δℓ_h||Ω*≤C_basis,h max_j ε_j.
+A nonorthogonal normal form is permitted only with its true coordinate
+Jacobian and inverse/right-lift bounds included. This retains kernel
+directions and cannot hide a new independent preparation source.
+
+#### G. FA5. Exact comparison-map transport and the claim that it supports
+
+Changing from the owner's original endpoint recipe to these paired axes
+changes the FINITE comparison map, not the H+J functional. Record it as
+such. On every off-shell finite chart, certify that the new axes have the
+same original coordinate first jets (including required marked jets),
+with actual native and frame errors. For a C3 price along each axis,
+
+    |Δ_j/(2t_j Γ_h)−DB_h[e_j]/Γ_h|
+      ≤M3,j t_j²/(6Γ_h)+ε_price,j/(|t_j|Γ_h)
+                         +ε_jet,j ||DB_h||/Γ_h.        (FA5)
+
+All constants use the complete paid history; ε_price includes compiler,
+endpoint and absolute numerical price errors, with any actual small
+corner/product factors retained. Uniform source transport follows by
+the C_basis,h bound. For two recipes approximating the same source,
+their dual difference is bounded by the sum of their certified errors.
+The existing cofinal precision schedule can make that sum vanish; finite
+positivity of Γ_h permits the necessary relative endpoint precision.
+
+The recipe, chart and basis are declared off shell; no Einstein equation
+is used as an admission test. Equality of its symmetric axis prices is
+then a proved property of the native canonical centres. This yields
+exact roots of THAT complete declared finite-source operator and preserves
+the original κ-source through FA5. It does not turn every arbitrary
+faithful pair into an equal-price pair, or every nonlinear finite chord
+into a linear derivative. No local minimum or universal task-selection
+principle is asserted. Missing native-frame, marked-prefix or genuinely
+free-input Jacobians must be supplied before claiming this full application.
+
+### 7eo.H. Paid clock suppression without return attenuation
+
+Bounded #334 application, 3 November 2026. Input worktree
+`c2f7f14af3f0e6782fcfa4eb45828755f89c29aa`. Consumer: the off-shell complete
+source of the exact original-reporter commutant construction. This is an
+application of the actual RAW growing-clock determinant ST3 and the owned
+INTERNAL Fourier kernel, not a replacement clock or a new selector.
+
+Owners: `GROWING_CLOCK_RU.md` (G1)--(G14), RAW (R6),
+`§7el.B` (ST1)--(ST3), and
+`A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md` with its coefficient
+proof. Canonical birth maps, their layout, beta and the scene are fixed in
+each compared pair. Source-bearing native gates and preparations are not
+silently identified with fixed constants.
+
+#### H. 1. Add actual words, retain the actual dimensions
+
+Fix a fully compiled finite execution with final carrier H_f of dimension
+d, actual history carrier K=direct-sum H_j of dimension D, and actual last
+closing gate g. Let Pi_r be its orthogonal final birth-detail projections,
+including the initial layer. Put ell_r=N-j_r and
+
+    L=min {ell_r: Pi_r!=0},       D=sum_r ell_r rank(Pi_r).
+
+Thus D>=Ld. If all work births precede the active word, L is exactly the
+number of actual unitary stages after the last birth, including g.
+
+After the complete prefix and BEFORE the actual final gate g insert m
+literal copies of CX(a,b);CX(a,b), on admitted live WORK wires. Each pair
+costs TWO executed stages. No identity primitive or free idle tick is added.
+There are no births inside this padding. Its endpoint is exactly identity
+on every column, so the padded execution has
+
+    W_can,m=W_can,     ell_r,m=ell_r+2m,
+    L_m=L+2m,         D_m=D+2m d.                      (CL1)
+
+The final carrier d, initial cut, original chronological return and every
+return-based gain Gamma are unchanged. By G9--G10 this statement concerns
+the complete generated-cut feedback, not just a chosen expectation. It
+holds throughout any comparison chart in which the padding is the same
+literal identity word. The full absolute heat changes and remains paid.
+Its carrier still has all 425 D_m modes.
+
+Actual endpoint adjoint symmetry, common branch return, and any already
+proved ST4 layer-preserving symmetry at a centre survive unchanged. An
+ordinary endpoint reflection alone is still not ST4; padding does not
+create a previously unproved exact zero heat derivative.
+
+#### H. 2. Low windings vanish on the genuine growing clock
+
+For every actual unitary endpoint W=W_can, ST3 gives
+
+    det(I-zeta T)=det(I-W sum_r zeta^(ell_r) Pi_r).     (CL2)
+
+The first possible power on the right has degree L. Comparing the
+convergent log-determinant series at zero gives
+
+    Tr_K(T^n)=0,                  1<=n<L.              (CL3)
+
+This is valid for every W on this fixed birth layout, including all
+off-shell endpoints and their declared matrix-comparison tangents. Hence
+the derivatives of these low moments are also zero. No cancellation based
+only on the centre or on an approximate reflection is used.
+
+For a sharp dimension bound, use the passive-birth clock as a PROOF MODEL:
+
+    T_can(W)=S_pass+R W E_f.
+
+Its internal maps are the same passive inclusions/identities, its final
+map is W, and its characteristic polynomial is the same CL2. Therefore
+all its trace moments, and their derivatives, equal the actual clock's.
+It is not executed instead of the original costly word.
+
+Since T_can(W) is unitary and R is an isometry,
+
+    D Tr(T^n)[delta W]
+       = n Tr_(H_f)[E_f T_can(W)^(n-1) R delta W],
+    q_n(W)=||E_f T_can(W)^(n-1)R||op <=1.             (CL4)
+
+The return path has length at least L, so q_n=0 for n<L. Thus
+
+    |D Tr(T^n)| <= n d q_n ||delta W||op.             (CL5)
+
+There is no exponential count of birth-layer paths. The full sum is a
+compression of ONE unitary power. This is stronger than bounding each
+term in the determinant expansion separately.
+
+#### H. 3. Original full heat and an explicit factorial tail
+
+Keep the original 33-scene kernel and its owned coefficients:
+
+    h(theta)=Tr_scene exp[-beta(I-B_s-2 cos(theta) C_s)]
+            =a_0+2 sum_(n>=1) a_n cos(n theta),
+    a_n>=0,  a_n<=33 exp[beta(b-1)] I_n(2 beta c),
+    b=||B_s||<=1,   c=||C_s||=1/22.
+
+No commutation of B_s and C_s is assumed. The complete two-degree heat is
+
+    Z= D(359+2a_0)+4 sum_(n>=1) a_n Re Tr_K(T^n),
+    H=beta^(-1) log Z,             Z>=359D.            (CL6)
+
+Both Hodge degrees and all harmonic modes are present. CL3--CL5 imply
+
+    |DH| <= [4d/(beta Z)]
+             sum_(n>=L) n a_n q_n ||delta W||op
+          <= A_L ||delta W||op,
+    A_L = [4/(359 beta L)] sum_(n>=L) n a_n.           (CL7)
+
+At the original beta=2p^2, 3/4<beta<4/5, put x=2/55. Then
+
+    a_n <= 33 x^n/[n! (1-x^2)],
+    sum_(n>=L) n x^n/n!
+          <= x^L/[(L-1)! (1-x/L)],
+    A_L <= (176/359) (x^L/L!)
+                     /[(1-x^2)(1-x/L)].              (CL8)
+
+This is a certified rational upper bound for every integer L>=1. It
+applies to arbitrary unitary W; no reflection or layer-preservation
+hypothesis is needed for the off-shell estimate.
+
+#### H. 4. Finite physical comparisons have the same bound
+
+Let two actual words have the same birth layout, beta, scene, final
+dimension and stage length. Denote their canonical completed endpoints
+by W_+,W_-. For a proof only, interpolate
+
+    W_s=(1-s)W_-+sW_+.
+
+This is a contraction and T_can(W_s) is a contraction because the open
+shift and closure ranges are orthogonal. Hence CL4--CL5 integrate to
+
+    |Tr T_+^n-Tr T_-^n| <= n d ||W_+-W_-||op,
+
+with exact zero for n<L. Evaluate CL6 only at the two ACTUAL unitary
+endpoints, and use min(Z_+,Z_-)>=359D. It follows that
+
+    |H_+-H_-| <= A_L ||W_+-W_-||op.                   (CL9)
+
+No Fourier heat formula for a nonunitary interpolation and no continuous
+native pulse assumption were used. Consequently an actual symmetric
+finite comparison with nonzero parameter t has thermal contribution
+
+    |Delta H|/(2|t| Gamma)
+       <= A_L ||W_+-W_-||op/(2|t| Gamma).             (CL10)
+
+Any compiler, endpoint or inverse errors in these actual words remain
+inside the numerator or its genuine norm bound. Common-length preparation
+has to be supplied by the owned compiler; CX pairs do not magically repair
+an arbitrary parity mismatch in two pre-existing word lengths.
+
+#### H. 5. Complete occurrence/source norms and choose padding LAST
+
+For independently varied actual unitary occurrences, canonical completion
+has operator norm one and product differentiation yields
+
+    ||delta W_can||op <= sum_j ||delta g_j||op.        (CL11)
+
+This includes every forward, reverse, controller and old-prefix occurrence.
+If the actual full source norm gives
+||delta W_can||op<=C_h(m)||v||_full, then
+
+    ||Gamma_h^(-1) DH||_(full,*)
+            <= A_(L+2m) C_h(m)/Gamma_h.              (CL12)
+
+For a gate-max chart with uniformly bounded primitive lift, one may take
+C_h(m)<=C_base,h+2m C_pad,h. A shared parameter appearing repeatedly pays
+every occurrence. Factorial decay dominates this linear growth. For the
+existing field/preparation chart with fixed literal padding, C_h is
+independent of m. Moving initial cuts add no heat term, since H depends
+on T; any genuinely variable birth/scene/beta data need their own rows.
+
+For a finite set of actual +/- comparisons, retain the actual finite
+constant max ||W_+-W_-||/(2|t|), together with the full derivative lift.
+Fix the geometry, original reporter, all compiled words and marks,
+Gamma_h>0 and these constants FIRST. Then choose m so CL10 and CL12 are
+below the required positive error. All quantities affected by the clock
+length are evaluated at D_m,N_m. Gamma_h is not multiplied by p^m or r^m.
+
+Thus paid identity-word length can replace late attenuating retention for
+this heat/error obligation. It does not replace the separate old-source
+concentration theorem or prove an exact finite root from a small residual.
+
+#### H. 6. Added padding controls are not silently frozen
+
+If the task declares the literal padding instruction fixed, its parameters
+are not new independent coordinates. If it declares the individual padding
+gates independently variable, CL11--CL12 INCLUDE those occurrences, but
+their return rows must also be included; thermal smallness cannot erase them.
+
+There is an honest useful specialization: put the padding on two real,
+front-loaded spectator WORK bits unused by the original reporter. Retain
+their full four-dimensional carrier and canonical born vector. A variation
+of either padding gate on its own two-bit support induces a skew-adjoint
+endpoint derivative at the exact identity. Its expectation in the normalized
+spectator vector is imaginary (zero for the real native comparison).
+Since the reporter return factors from this spectator endpoint, its
+first variation of C* C and therefore of J is zero. Each gate has this
+property separately; it does not rely on tying its variation to the other.
+
+This statement does NOT cover a newly admitted control coupling those bits
+to reporter/data resources, nor arbitrary new preparation resources. Such
+directions retain their genuine full return sources and must satisfy the
+consumer's independent source theorem. The heat estimate itself still
+covers every included INTERNAL unitary occurrence. Independent scene,
+beta/zeta and extra selected action terms are not suppressed by this lemma.
+
+#### H. 7. Executed exact clock control
+
+Used the original Golden number field and native G/CX matrices. Begin
+with H0=C, perform the two actual canonical births v=(sqrt(p),p), then
+execute CX;CX and the actual final G on the first bit. Insert m further
+CX;CX pairs before that same G. Construct the full G3 closure, S and T
+on the true varying stage fibres, without padding earlier spaces.
+
+    m  N  D_clock  L  exactly zero moments       cold return
+    0  5     15    3  n=1,2                     sqrt(p)
+    1  7     23    5  n=1,...,4                 sqrt(p)
+    2  9     31    7  n=1,...,6                 sqrt(p)
+
+Exact algebraic arithmetic verifies T* T=I, Tr T^L=2L sqrt(p), and the
+unchanged return in all three cases. Rational CL8 bounds are respectively
+A_3<=3.9823542e-6, A_5<=2.6201020e-10, A_7<=8.2318119e-15;
+A_11<=1.8139094e-24. These check the actual age/dimension/gain interface;
+CL2--CL12 prove the general full-clock source and finite-contrast bounds.
+
+### 7eo.I. The composed recovery contract and its exact scientific boundary
+
+Bounded read-only review of existing PR334 contracts, with the new PC/TF/CG
+and finite-pair applications. The word "exact" below names its equation:
+ideal finite Palatini, smooth finite-matrix source, native finite comparison,
+or kappa source. These are not interchanged without the displayed map.
+
+#### I. 1. The actual acceptance contract
+
+`02_REGISTRY/gr_assembly/contract.json`, `native-programme-v1`, specifies an
+independently admitted Omega_h, the SAME complete native Cost-Info, all
+retained metric/link/shift/full matter/preparation/clock variables, an
+independent source, the estimator/sheet normalization, and one fixed smooth
+nondegenerate metric with actual refinement maps and uniform estimates.
+Its `joint_nonlinear_solve` asks for nonempty EXACT JOINT solutions on a
+genuine refining family. `recovery` asks for native on-shell recovery of
+each solution in the declared nonempty curved continuum class.
+`positive_gr` also requires soundness, matter_source_ward, and
+physical_constraints. `gr_architectural_closure` demands same-witness
+composition and the actual complete action/constitutive binding.
+
+The contract does NOT add a separate requirement that every native decoded
+finite array must itself solve the original finite Palatini stencil. For
+this native carrier, exact native equations plus proved full source/decoder
+convergence are a legitimate recovery route. It remains essential to prove
+the actual native equations, rather than assign their desired limit.
+
+#### I. 2. Which exact finite source is being solved
+
+Book02 (`BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md`, lines
+78 and 201) explicitly permits either a declared finite difference on a
+finite matrix family OR an ordinary derivative of a smooth finite-matrix
+family. These are two legitimate but different definitions. Book03
+03.25 states delta B_N=0; it does not silently identify all such definitions.
+
+`RAW_CYLINDER_REALIZATION_RU.md` section5, lines225ff, actually selected
+complete native endpoint differences divided by their true 2t Gamma.
+`KAPPA_CLOSURE_RU.md` sections2 and4 uses an entire finite basis, the
+basis-to-dual-norm constant, and the full finite-basis readout. Hence a
+specified comparison frame gives the legitimate full covector
+
+    ell_h(v)=sum_j v_j [B(W_j,+)-B(W_j,-)]/(2t_j Gamma_h).   (CA1)
+
+At a fixed finite clock the native alphabet has no continuously variable
+Golden gate. The exact smooth matrix zeros TF/CG alone would therefore
+NOT prove (CA1)=0 for arbitrary pre-existing native chords. Section7ek.A
+of the main source explicitly makes this distinction.
+
+The NEW finite-pair application supplies the missing finite statement for
+an explicit new comparison recipe. In `§7eo.E`
+FP8, each faithful reflected implementation coordinate uses a SINGLE plane
+of the canonical common spectral frame of H_eff(xi),D_S(xi). Both endpoints
+are the ORIGINAL reflected wrapper, with the actual plane unitary and its
+exact inverse. Their characteristic polynomials, full heat, and return
+price agree exactly. Diagonal phase axes are spectrally constant. These
+plane axes span the entire fixed-cold reflection tangent. FP7 supplies the
+correct actual old-passive-block inverse pairs diag(V,I_new-detail),
+without asserting that they commute with W0. For a proper physical cut
+i, C_plus=c i*V i and C_minus=C_plus*: J equality follows from identical
+singular values, not scalar C_plus*C_plus. Normalized input/cut rows are
+constant at the UNVARIED centre, where C*C=c^2I on the full old carrier.
+The native complex comparison application in FP9 uses actual initial
+SOURCE SPIN H0=C4, P0=I4; all new WORK is born later. Its proof-only Spin
+eigendecomposition retains both conjugate sectors and every heat mode.
+The literal native compiler never gains arbitrary gates on Spin from
+that mathematical change of basis; the true gain uses rank four.
+
+The frame is constructed from the retained native matrix/birth/clock data;
+Einstein's equation is not its membership condition. The geometric Born
+sampler/current-bank construction supplies the independent field and
+preparation axes with the required full marked decoder/right-lift. At the
+canonical equal-return centre those source rows are exactly zero by its
+all-column native cancellation, not by deleting their variables. The
+finite comparison recipe must be stated in the application, with all
+these axes and their true t_j, Gamma_h and common paid clocks.
+
+This is an explicit replacement/transport of the source comparison map,
+NOT an assertion that all arbitrary chords of the nonlinear fibre agree.
+The one-leg FP2/FP3 pairs are valid full-unitary identities but need not be
+members of RAW9's reflected-wrapper task; use FP8 for that domain.
+Nor may approximate plane support or an approximate common diagonalizer
+be called exact. The native admission owner must provide the exact plane
+form and exact frame; its integer-G/Walsh construction fixes helper width
+m first and takes n+1 divisible by 2^m for m fresh addressable bits. Irrationality preserves density
+on this subsequence.
+
+With that literal native application and the other named exact rows,
+(CA1)=0 at each finite level is an EXACT native finite-source solution of
+THIS DECLARED original-H+J task. This is stronger than only an exact smooth
+matrix derivative, while not redefining the old task's arbitrary probes
+by fiat. The corresponding first-source coordinate frame and transport
+bounds are part of the new application.
+
+#### I. 3. Positive continuum class and full source recovery
+
+PC22--PC24 in `§7eo.B` apply the
+already owned `arbitrary_brinkmann_all40.md` equations(6)--(14) and
+`geometric_source/proof.md` common-null FULL-CAR jet, without a new root
+search. With a=p/4, k0=-lambda_minus>0,
+
+    Psi_0=a u, Psi_15=0,
+    H=k0 a^2(x^2+y^2)+A(u)(x^2-y^2)+2B(u)xy
+                         +C(u)x+D(u)y+E(u),               (CA2)
+
+where the FIVE profiles are arbitrary computable smooth functions on the
+fixed collar with supplied bounds/moduli. This is an infinite-dimensional
+nonvacuum class. For each profile choice there is ONE fixed smooth metric.
+The wave part has identically zero discrete transverse Laplacian at every
+mesh; the forced shifted K_a(z)=[H(z+u)-H(z+u-a)]/2 makes every original
+16+24+2 Euler row vanish exactly. Ric_uu=2k0a^2. The unshifted connection
+has uniform C3 bounds and O(h) C2 recovery; no unjustified O(h^2) connection
+claim is needed. Actual measure m=1 and det e=1 give e_hat=e at these ideal
+centres through the owned material-metric involution.
+
+The exact ORIGINAL seven-call calibration uses
+Delta_x(a_ref)=Delta_y(delta), not merely a_ref=k0 delta. Therefore
+Dc_star=-gamma_h D I_h on ALL42 rows at the ideal primary centres, with
+true gamma_h>0. PF and reference-state derivatives are retained; their
+extra factors multiply the zero baseline, not a frozen measure.
+
+The actual native B0 and new completed-bank mark approximate the genuine
+full initialized isometry and its complete joint instrument/first jet.
+They do NOT identify the native marked arrays with the ideal arrays by
+renaming them. The interpolation/decoder constants, including inverse h
+in link logarithms and any dimension factor in the physical right-lift,
+are retained. The same actual positive gain is used before kappa completion.
+The off-shell full-source estimate and material-metric/Ward map are the
+owned `GENERAL_EINSTEIN_SOURCE_RU.md` sections1--5 and the current full
+source extension, with all independent data and linked controls.
+
+For the explicit source-frame change, carry the full finite-dimensional
+basis norm. If old and new normalized source values approximate the same
+physical covector with bounds E_old,h and E_new,h per declared coordinate,
+then
+
+    ||ell_new,h-ell_old,h||_(V_h*)
+       <=C_basis,h max_j(E_new,h,j+E_old,h,j).               (CA3)
+
+The schedule makes this quantity tend to zero; C_basis,h is not discarded.
+The original and new finite contrasts need not agree exactly away from the
+centre. Their common full kappa source does agree, by the proved bound.
+
+Consequently the composed positive statement is exact finite-source roots
+of this specified original-H+J comparison task recovering every member of
+(CA2), together with the owned full kappa Einstein--CAR source, soundness,
+and Ward identity on its declared regular chart. This is a genuine native
+solution/recovery statement within that task, not a new finite Palatini
+root imposed on the decoded noisy records. Extending the same finite-root
+recovery beyond the stated class still needs its own constructive argument;
+the already owned GENERAL source/recovery theorem has its separate broader
+asymptotic scope.
+
+#### I. 4. Full H+J master versus other complete-price interpretations
+
+Book03 03.25's literal action is
+
+    B_N=beta^-1 log Tr exp(-beta Delta_N)
+                       -logdet(I-zeta F_N),
+
+and the actual RAW cut reduces its second term to
+-logdet[(1-zeta)I+zeta C*C] on the actual input image. Its full growing-clock
+Delta, all harmonic/spectator dimensions, preparations and executed work
+are retained. This is the complete SPECIFIED master, not an active-mode
+price with uncounted compiler work. `A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md`
+section1 expressly says a separately chosen Shannon/von-Neumann term is
+not an automatic supplement to this formula. Current section7eh.E.1 keeps
+the same boundary with the older stack.
+
+There is no general theorem here equating that master to every other
+physical price called H+J+R or to all Book03 03.8 stack terms. In particular:
+
+* `BOOK_SOURCE_BINDING.md` section5.1 equations(17)--(19) defines
+  R=sum_omega xi_omega K_omega* K_omega from an independently supplied
+  ACTUAL branch-price table. Its full source includes rho,K,xi and work.
+  It is not a freely fitted counterterm, nor a mandatory universal extra
+  addend to every 03.25 bootstrap. Paying native gates in RAW alone does
+  not prove equality with that separate branch-price/Info table.
+* The older spatial H+J+R also uses R=Tr(rho Delta). Main section7b,
+  equation(24), explicitly calls its [rho,Delta]=0 equation the Euler of
+  that DECLARED HJR, not the Euler of bare Book03 H+J. Current master
+  stationarity cannot silently discharge that independently retained row.
+* The closing-clock isometry R_cl in T=S+R_cl g E_f is a different symbol;
+  its presence is not an identification of either physical residual R.
+
+Thus the new theorem is a same-execution realization/application of the
+specified Book03 master law. It supplies an exact native sector and source
+for that law. Promoting it to the unchanged universal complete Cost-Info
+`constitutive`/`gr_architectural_closure` requires the actual action/source
+binding or proved equivalence for whatever complete physical price that
+contract consumes. It is equally unjustified to add an unselected R to
+this task or to announce every older HJR/Info/work obligation discharged.
+
+#### I. 5. Why raw216 is unchanged
+
+`raw-216-v1` in contract.json explicitly demands the original fixed smooth
+Q_h/tau, EXACT joint connection AND metric source equations, the original
+Xi=h^2 tau(hx), and h^-2 times the UNWEIGHTED raw l1 sum over h^-4 sites.
+`D0_GR_CLOSURE_CONTRACT_RU.md` section5 preserves these quantifiers.
+
+Neither a decoded native approximation to (CA2), nor native master
+stationarity, nor a source discrepancy tending to zero in another declared
+norm establishes those exact finite raw216 equations and normalization.
+Even the ideal exact PC stencil must still be matched to raw216's fixed
+carrier/source/boundary/periodic comparator before that terminal is used.
+There is no need to impose this extra terminal on the separate native
+positive-recovery theorem, and no permission to close raw216 by the latter.
+
+#### I. 6. Noncircular compilation, calibration, and precision schedule
+
+Use the following dependency order, with the actual quantitative budgets
+from the named source owners, rather than an implicit compiler derivative.
+
+1. Fix a computable profile, collar/regular chart, mesh, finite probe basis,
+   and their decoder/interpolation/full-norm constants. Fix reference slack
+   and Lambda on that whole chart; then choose epsilon, delta and the exact
+   monotone reference inverse. The reference bracket is strict and finite.
+2. Fix the complete helper allocation and finite catalogue. Choose the
+   anchor/processor error budgets against NG2/NG6 and the fixed geometric
+   decoder/field-lift constants. The positive report-sign margins give
+   a priori finite conditioning and gain lower bounds. Then choose s,
+   the table errors against gamma_h s, and the finite comparison step t
+   and accuracy as in C.9/NG19–20. Whole-word implementation/basis and
+   inverse-loop constants are computed only after the actual words exist;
+   they enter the final heat budget, not an unproved earlier geometry
+   tolerance. Narrowing numerical precision adds no register family.
+3. Compile the fixed processor D. Choose n on the required fixed congruence
+   subsequence to attain the desired report mass error; this search halts
+   by irrational density. Compile the exact-commutant base and plane forms,
+   all inverse frames, and the actual finite source endpoints. Their
+   endpoint cancellations hold exactly despite the controlled geometric
+   approximation. Compute the actual common clocks and true positive gains.
+4. Equalize paired lengths with counted identity words, and only then add
+   the common paid post-birth padding needed by
+   §7eo.H. It changes neither cold
+   return nor Gamma. Its factorial heat bound beats the explicitly retained
+   linear-in-padding lift constant, so the late search terminates. The
+   canonical exact finite-pair equalities survive every common padding.
+5. Read the COMPLETE finite prices to absolute accuracy scaled by the true
+   |t_j| Gamma_h and the basis/norm constants. Divide before kappa completion.
+   All interlevel embeddings preserve the required old record observables.
+
+No step solves the Einstein equations to decide task membership. The
+explicit primary family is used to PROVE existence of roots in an already
+open admitted chart. No finite matrix is called an exact geometric sample
+because its observation error is small. With the exact native frame and
+all-axis application supplied, there is no circular gain/compiler-clock
+choice in this order; without them, their missing implementation cannot be
+replaced by the algebraic determinant identities alone.
+
+### 7eo.J. Pinned bounded replay of this composed application
+
+These three scripts are embedded in this existing owner, not new research tasks or substitute proof statements. The first checks the ORIGINAL exact nonlinear criticality and all five free profile components. The second checks the complete thermal differential, true-clock moment factorization and the proper-cut hostile case. The third imports the unchanged native gate owner and checks the literal Spin-safe COMMON frame, fixed apparatus across a new level, faithful real/imaginary plane pairs, all input columns, and a hostile multi-plane counterexample. The paper proof above covers arbitrary meshes/dimensions; these bounded scripts pressure-test the identities and actual compiler maps it uses.
+
+Normalization for every code/receipt SHA256 below is UTF-8, CRLF converted to LF, trailing blank lines removed, exactly one terminal LF. The JSON source/proof basenames in the first two receipts identify the §7eo.B and §7eo.D/E applications embedded here; they are not external proof dependencies. The native checker records its repository-relative original gate-owner path and the SHA256 of those unchanged source bytes.
+
+Extract each following python fence verbatim to its named .py file with that LF normalization. Run it normally and with python -O from the repository root (or pass --root REPOSITORY to the native checker). Normalize the resulting adjacent JSON as above and compare its complete contents and SHA256 to the following frozen receipt. The -O replay ensures no claimed check relies on Python assert. No earlier expensive science packet needs replay for these prose/composition additions.
+
+#### 7eo.J1. original_reporter_exact_primary_criticality_check
+
+Code SHA256: `559e631c595150fa5d65b5b2da0d2188f9774b3b425ff8974e849a1db5f789e1`.
+
+```python
+"""Exact bounded checks for PC2--PC20; consumes the owned all40/CAR jet theorem.
+Not a native-circuit or complete H+J stationarity certificate.
+"""
+import json
+from pathlib import Path
+import sympy as s
+
+p,x,y,delta=s.symbols('p x y delta', real=True)
+z=s.Rational(1,2**20)
+checks=[]
+def need(cond,label):
+    if not cond:
+        raise RuntimeError(label)
+    checks.append(label)
+def gr(expr):
+    num,den=s.fraction(s.cancel(expr))
+    return s.rem(s.Poly(num,p),s.Poly(p*p+p-1,p)).as_expr()
+def zero(expr,label):
+    need(s.expand(expr)==0,label)
+def golden_zero(expr,label):
+    need(s.expand(gr(expr))==0,label)
+E=p**2*(1+x); ell=4*E*(1-E); u=p+p**2*y
+B=4*u*u*(1-u*u); A=ell+(1-ell)*B
+r=s.expand(z*(A+B)-z*z*A*B)
+rf=s.diff(r,x).subs({x:0,y:0}); rq=s.diff(r,y).subs({x:0,y:0})
+Q=1-z*4*p**3; R=1-z*4*p**3*(1+p**6)
+golden_zero(rf-4*z*p**11*Q,'original r_f exactly matches primary normalization')
+golden_zero(rq-8*z*p**6*(R+p**6*Q),'original r_q exactly matches primary normalization')
+golden_zero(rq/rf-2*p**(-5)*(R/Q+p**6),'k0 is exactly minus original lambda_minus')
+zero(r.subs({x:delta,y:0})-r.subs({x:-delta,y:0})-2*rf*delta,'x-reference contrast is exactly linear')
+Dy=s.expand(r.subs({x:0,y:delta})-r.subs({x:0,y:-delta}))
+need(gr(s.expand(Dy-2*rq*delta).coeff(delta,3))!=0,'negative control: uncalibrated k0*delta has a nonzero cubic mismatch')
+
+h,a,k,X,Y,H=s.symbols('h a k X Y H', nonzero=True, real=True)
+profile=k*a*a*(X*X+Y*Y)
+lap=(profile.subs(X,X+h)+profile.subs(X,X-h)+profile.subs(Y,Y+h)+profile.subs(Y,Y-h)-4*profile)/h**2
+zero(s.expand(lap-4*k*a*a),'quadratic transverse Laplacian is exact at every h')
+Kx=k*a*a*h*(X-h/2)
+zero(s.expand(Kx-(profile-profile.subs(X,X-h))/2),'forced staggered connection is exact')
+zero(s.expand(-lap/(2*h)+2*k*a*a/h),'surviving geometric plus material Euler row cancels exactly')
+eta=s.Matrix([[0,1,0,0],[1,0,0,0],[0,0,-1,0],[0,0,0,-1]])
+e=s.eye(4); e[1,0]=H/2
+g=e.T*eta*e; gi=g.inv()
+for i in range(4):
+    for j in range(4):
+        de=s.zeros(4); de[i,j]=1
+        dg=de.T*eta*e+e.T*eta*de
+        dq=-a*a*(gi*dg*gi)[0,0]
+        zero(s.expand(dq-(-2*a*a if (i,j)==(0,1) else 0)),f'actual matter coframe row {i},{j}')
+root2=s.sqrt(2)
+Qb=s.Matrix([[1/root2,1/root2,0,0],[1/root2,-1/root2,0,0],[0,0,1,0],[0,0,0,-1]])
+need(Qb.det()==1,'null-to-Cartesian basis transport preserves orientation')
+need(Qb.T*s.diag(1,-1,-1,-1)*Qb==eta,'null-to-Cartesian basis transport preserves literal metric convention')
+
+v,ca,sa=s.symbols('v ca sa', positive=True)
+cb=(1-v*v)/(1+v*v); sb=2*v/(1+v*v)
+F=sa*sb*(2+(ca-1)*(1-cb))/(2*h*h)
+zero(s.cancel(F-2*sa*v*(1+ca*v*v)/(h*h*(1+v*v)**2)),'Cayley full-CAR reference has the stated exact rational value')
+zero(s.cancel(s.diff(F,v)-2*sa/h**2*(1+3*(ca-1)*v*v-ca*v**4)/(1+v*v)**3),'Cayley reference derivative has exact positive-bracket numerator')
+Blo=8*s.Rational(3,8)*s.Rational(19,32)*(1-2*s.Rational(101,160)**2)
+Bhi=8*s.Rational(2,5)*s.Rational(101,160)*(1-2*s.Rational(19,32)**2)
+need(Blo/(8*s.Rational(2,5)**3)>s.Rational(2,3),'lower exact rational derivative bound for matter reference')
+need(Bhi/(8*s.Rational(3,8)**3)<s.Rational(3,2),'upper exact rational derivative bound for matter reference')
+need(z<s.Rational(1,4),'finite fugacity preserves the reference derivative bracket')
+
+Ar,eps,rho,vis,df,dq,dY,RF,RQ=s.symbols('Ar eps rho vis df dq dY RF RQ',nonzero=True)
+local=vis*(Ar*dY)*(Ar*eps/rho)*(RF*df-RQ*dq)
+zero(s.expand(rho*local-vis*Ar**2*eps*dY*RF*(df-RQ/RF*dq)),'same-site seven-call derivative cancels inverse PF exactly once')
+need(s.Rational(5,8)**7<s.Rational(1,16),'both report-sign blocks have a mesh-independent positive target margin')
+
+# Arbitrary profile values are symbolic at the shifted time u+h.
+Aw,Bw,Cw,Dw,Ew=s.symbols('Aw Bw Cw Dw Ew', real=True)
+wave=Aw*(X*X-Y*Y)+2*Bw*X*Y+Cw*X+Dw*Y+Ew
+full=profile+wave
+lap_full=(full.subs(X,X+h)+full.subs(X,X-h)+full.subs(Y,Y+h)+full.subs(Y,Y-h)-4*full)/h**2
+zero(s.expand(lap_full-4*k*a*a),'all five arbitrary u-profile values have exactly harmonic transverse contribution')
+for coord,name in [(X,'x'),(Y,'y')]:
+    kcoord=(full-full.subs(coord,coord-h))/2
+    shifted=s.diff(full,coord).subs(coord,coord-h/2)/2
+    zero(s.expand(kcoord/h-shifted),f'arbitrary-profile logarithmic {name}-connection equals exact shifted smooth derivative')
+
+payload={
+    'status':'PASS',
+    'scope':'Exact algebra of new primary-to-original-reporter calibration; full all40 and common-null CAR jet are consumed named parents, not replayed here.',
+    'checks':checks,
+    'count':len(checks),
+    'source':'ORIGINAL_REPORTER_EXACT_PRIMARY_CRITICALITY.md',
+    'not_claimed':['native finite compiler emits exact ideal reference states','whole H+J finite stationarity','full unprepared WORK-column geometry jet']
+}
+Path(__file__).with_suffix('.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps({'status':'PASS','count':len(checks),'receipt':str(Path(__file__).with_suffix('.json'))}))
+```
+
+Receipt SHA256: `1ce5119e60b5da8d54f6521dfed3e57c0b19d86013c51d8fab8adaf7154a8c16`.
+
+```json
+{
+  "status": "PASS",
+  "scope": "Exact algebra of new primary-to-original-reporter calibration; full all40 and common-null CAR jet are consumed named parents, not replayed here.",
+  "checks": [
+    "original r_f exactly matches primary normalization",
+    "original r_q exactly matches primary normalization",
+    "k0 is exactly minus original lambda_minus",
+    "x-reference contrast is exactly linear",
+    "negative control: uncalibrated k0*delta has a nonzero cubic mismatch",
+    "quadratic transverse Laplacian is exact at every h",
+    "forced staggered connection is exact",
+    "surviving geometric plus material Euler row cancels exactly",
+    "actual matter coframe row 0,0",
+    "actual matter coframe row 0,1",
+    "actual matter coframe row 0,2",
+    "actual matter coframe row 0,3",
+    "actual matter coframe row 1,0",
+    "actual matter coframe row 1,1",
+    "actual matter coframe row 1,2",
+    "actual matter coframe row 1,3",
+    "actual matter coframe row 2,0",
+    "actual matter coframe row 2,1",
+    "actual matter coframe row 2,2",
+    "actual matter coframe row 2,3",
+    "actual matter coframe row 3,0",
+    "actual matter coframe row 3,1",
+    "actual matter coframe row 3,2",
+    "actual matter coframe row 3,3",
+    "null-to-Cartesian basis transport preserves orientation",
+    "null-to-Cartesian basis transport preserves literal metric convention",
+    "Cayley full-CAR reference has the stated exact rational value",
+    "Cayley reference derivative has exact positive-bracket numerator",
+    "lower exact rational derivative bound for matter reference",
+    "upper exact rational derivative bound for matter reference",
+    "finite fugacity preserves the reference derivative bracket",
+    "same-site seven-call derivative cancels inverse PF exactly once",
+    "both report-sign blocks have a mesh-independent positive target margin",
+    "all five arbitrary u-profile values have exactly harmonic transverse contribution",
+    "arbitrary-profile logarithmic x-connection equals exact shifted smooth derivative",
+    "arbitrary-profile logarithmic y-connection equals exact shifted smooth derivative"
+  ],
+  "count": 36,
+  "source": "ORIGINAL_REPORTER_EXACT_PRIMARY_CRITICALITY.md",
+  "not_claimed": [
+    "native finite compiler emits exact ideal reference states",
+    "whole H+J finite stationarity",
+    "full unprepared WORK-column geometry jet"
+  ]
+}
+```
+
+#### 7eo.J2. original_reporter_canonical_thermal_fibre_check
+
+Code SHA256: `e47da370d28089b1fb0d587347ea6c4ebf70ba0f3144a8f539e2ae5aad79bf9e`.
+
+```python
+"""Exact differential check of the canonical final-port growing-clock parent.
+Consumes the original chronological Schur determinant, not a native-word or
+numerical heat surrogate. All generators of the displayed complex unitary
+spaces are tested. Failures use exceptions, never assert.
+"""
+import json
+from pathlib import Path
+import sympy as s
+xi=s.symbols('xi',real=True)
+c=s.Rational(3,5); z=s.Rational(4,5)
+S=s.Matrix([[c,z],[z,-c]])
+checks=[]
+def need(cond,name):
+    if not cond: raise RuntimeError(name)
+    checks.append(name)
+def generators(n):
+    for i in range(n):
+        X=s.zeros(n); X[i,i]=s.I
+        yield f'phase_{i}',X
+    for i in range(n):
+        for j in range(i+1,n):
+            X=s.zeros(n); X[i,j]=1; X[j,i]=-1
+            yield f'real_{i}_{j}',X
+            X=s.zeros(n); X[i,j]=s.I; X[j,i]=s.I
+            yield f'imag_{i}_{j}',X
+
+def run(name,W,ages,initial,mixed):
+    n=W.rows; D=s.diag(*[xi**a for a in ages]); M=s.eye(n)-W*D
+    Mi=M.inv()
+    for gen,X in generators(n):
+        dW=W*X
+        actual=s.re(-s.trace(Mi*dW*D))
+        expected=0
+        for ip,a,b in mixed:
+            polynomial=1+c*(xi**b-xi**a)-xi**(a+b)
+            expected+=(xi**b-xi**a)/polynomial*s.re(dW[ip,ip])
+        need(s.cancel(actual-expected)==0,f'{name}_{gen}')
+        C=W.extract(initial,initial); dC=dW.extract(initial,initial)
+        need(C==c*s.eye(len(initial)),f'{name}_cold_scalar_{gen}')
+        need(dC.conjugate().T*C+C.conjugate().T*dC==c*(dC+dC.conjugate().T),f'{name}_full_effect_fibre_{gen}')
+    return W,D,Mi
+
+# First port birth, one later birth: mixed ages 5,4 and a two-dimensional
+# later age 3, diagonalized into its + and - reflection subspaces.
+run('first_port',s.diag(S,s.Matrix([[1]]),s.Matrix([[-1]])),[5,4,3,3],[0],[(0,5,4)])
+# A canonically identity old prefix with two different old birth ages.
+W,D,Mi=run('retained_old_ages',s.diag(S,S),[6,4,5,4],[0,2],[(0,6,4),(2,5,4)])
+X=s.zeros(4); X[2,3]=1; X[3,2]=-1
+dW=W*X
+need(dW[0,0]==0,'proper physical corner does not detect excluded old-column perturbation')
+need(s.cancel(s.re(-s.trace(Mi*dW*D)))!=0,'negative control: proper-cut fidelity alone does not kill full heat moments')
+
+# Explicit chronological clock for one first-port birth and a full final gate.
+# Root path length a=3, port-detail path length b=2; no padded early port.
+T=s.zeros(5)
+T[1,0]=1; T[2,1]=1; T[4,3]=1
+T[0,2]=c; T[3,2]=z; T[0,4]=z; T[3,4]=-c
+need(T.T*T==s.eye(5),'literal 3+2 chronological clock is unitary')
+need(s.expand((s.eye(5)-xi*T).det()-(1+c*(xi**2-xi**3)-xi**5))==0,'literal growing-clock determinant has exact two-age polynomial')
+for gen,X2 in generators(2):
+    dU=S*X2
+    dT=s.zeros(5)
+    dT[0,2]=dU[0,0]; dT[3,2]=dU[1,0]
+    dT[0,4]=dU[0,1]; dT[3,4]=dU[1,1]
+    series=s.series((xi**2-xi**3)/(1+c*(xi**2-xi**3)-xi**5),xi,0,11).removeO().expand()
+    power=s.eye(5)
+    for k in range(1,11):
+        actual=s.re(k*s.trace(power*dT))
+        expected=-k*series.coeff(xi,k)*s.re(dU[0,0])
+        need(s.simplify(actual-expected)==0,f'literal_clock_moment_{gen}_{k}')
+        power=power*T
+
+payload={'status':'PASS','scope':'Exact full complex-unitary differential of two actual age layouts; proper-cut negative control; literal unpadded 5-dimensional clock moments. Fixed births and internal gate domain.','count':len(checks),'checks':checks,'proof':'ORIGINAL_REPORTER_CANONICAL_THERMAL_FIBRE.md'}
+out=Path(__file__).with_suffix('.json'); out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps({'status':'PASS','count':len(checks),'receipt':str(out)}))
+```
+
+Receipt SHA256: `d808ef0a2bf1d6998ae59a3517d03bb3666e465a96bf20837bb6a728cf4ca80c`.
+
+```json
+{
+  "status": "PASS",
+  "scope": "Exact full complex-unitary differential of two actual age layouts; proper-cut negative control; literal unpadded 5-dimensional clock moments. Fixed births and internal gate domain.",
+  "count": 140,
+  "checks": [
+    "first_port_phase_0",
+    "first_port_cold_scalar_phase_0",
+    "first_port_full_effect_fibre_phase_0",
+    "first_port_phase_1",
+    "first_port_cold_scalar_phase_1",
+    "first_port_full_effect_fibre_phase_1",
+    "first_port_phase_2",
+    "first_port_cold_scalar_phase_2",
+    "first_port_full_effect_fibre_phase_2",
+    "first_port_phase_3",
+    "first_port_cold_scalar_phase_3",
+    "first_port_full_effect_fibre_phase_3",
+    "first_port_real_0_1",
+    "first_port_cold_scalar_real_0_1",
+    "first_port_full_effect_fibre_real_0_1",
+    "first_port_imag_0_1",
+    "first_port_cold_scalar_imag_0_1",
+    "first_port_full_effect_fibre_imag_0_1",
+    "first_port_real_0_2",
+    "first_port_cold_scalar_real_0_2",
+    "first_port_full_effect_fibre_real_0_2",
+    "first_port_imag_0_2",
+    "first_port_cold_scalar_imag_0_2",
+    "first_port_full_effect_fibre_imag_0_2",
+    "first_port_real_0_3",
+    "first_port_cold_scalar_real_0_3",
+    "first_port_full_effect_fibre_real_0_3",
+    "first_port_imag_0_3",
+    "first_port_cold_scalar_imag_0_3",
+    "first_port_full_effect_fibre_imag_0_3",
+    "first_port_real_1_2",
+    "first_port_cold_scalar_real_1_2",
+    "first_port_full_effect_fibre_real_1_2",
+    "first_port_imag_1_2",
+    "first_port_cold_scalar_imag_1_2",
+    "first_port_full_effect_fibre_imag_1_2",
+    "first_port_real_1_3",
+    "first_port_cold_scalar_real_1_3",
+    "first_port_full_effect_fibre_real_1_3",
+    "first_port_imag_1_3",
+    "first_port_cold_scalar_imag_1_3",
+    "first_port_full_effect_fibre_imag_1_3",
+    "first_port_real_2_3",
+    "first_port_cold_scalar_real_2_3",
+    "first_port_full_effect_fibre_real_2_3",
+    "first_port_imag_2_3",
+    "first_port_cold_scalar_imag_2_3",
+    "first_port_full_effect_fibre_imag_2_3",
+    "retained_old_ages_phase_0",
+    "retained_old_ages_cold_scalar_phase_0",
+    "retained_old_ages_full_effect_fibre_phase_0",
+    "retained_old_ages_phase_1",
+    "retained_old_ages_cold_scalar_phase_1",
+    "retained_old_ages_full_effect_fibre_phase_1",
+    "retained_old_ages_phase_2",
+    "retained_old_ages_cold_scalar_phase_2",
+    "retained_old_ages_full_effect_fibre_phase_2",
+    "retained_old_ages_phase_3",
+    "retained_old_ages_cold_scalar_phase_3",
+    "retained_old_ages_full_effect_fibre_phase_3",
+    "retained_old_ages_real_0_1",
+    "retained_old_ages_cold_scalar_real_0_1",
+    "retained_old_ages_full_effect_fibre_real_0_1",
+    "retained_old_ages_imag_0_1",
+    "retained_old_ages_cold_scalar_imag_0_1",
+    "retained_old_ages_full_effect_fibre_imag_0_1",
+    "retained_old_ages_real_0_2",
+    "retained_old_ages_cold_scalar_real_0_2",
+    "retained_old_ages_full_effect_fibre_real_0_2",
+    "retained_old_ages_imag_0_2",
+    "retained_old_ages_cold_scalar_imag_0_2",
+    "retained_old_ages_full_effect_fibre_imag_0_2",
+    "retained_old_ages_real_0_3",
+    "retained_old_ages_cold_scalar_real_0_3",
+    "retained_old_ages_full_effect_fibre_real_0_3",
+    "retained_old_ages_imag_0_3",
+    "retained_old_ages_cold_scalar_imag_0_3",
+    "retained_old_ages_full_effect_fibre_imag_0_3",
+    "retained_old_ages_real_1_2",
+    "retained_old_ages_cold_scalar_real_1_2",
+    "retained_old_ages_full_effect_fibre_real_1_2",
+    "retained_old_ages_imag_1_2",
+    "retained_old_ages_cold_scalar_imag_1_2",
+    "retained_old_ages_full_effect_fibre_imag_1_2",
+    "retained_old_ages_real_1_3",
+    "retained_old_ages_cold_scalar_real_1_3",
+    "retained_old_ages_full_effect_fibre_real_1_3",
+    "retained_old_ages_imag_1_3",
+    "retained_old_ages_cold_scalar_imag_1_3",
+    "retained_old_ages_full_effect_fibre_imag_1_3",
+    "retained_old_ages_real_2_3",
+    "retained_old_ages_cold_scalar_real_2_3",
+    "retained_old_ages_full_effect_fibre_real_2_3",
+    "retained_old_ages_imag_2_3",
+    "retained_old_ages_cold_scalar_imag_2_3",
+    "retained_old_ages_full_effect_fibre_imag_2_3",
+    "proper physical corner does not detect excluded old-column perturbation",
+    "negative control: proper-cut fidelity alone does not kill full heat moments",
+    "literal 3+2 chronological clock is unitary",
+    "literal growing-clock determinant has exact two-age polynomial",
+    "literal_clock_moment_phase_0_1",
+    "literal_clock_moment_phase_0_2",
+    "literal_clock_moment_phase_0_3",
+    "literal_clock_moment_phase_0_4",
+    "literal_clock_moment_phase_0_5",
+    "literal_clock_moment_phase_0_6",
+    "literal_clock_moment_phase_0_7",
+    "literal_clock_moment_phase_0_8",
+    "literal_clock_moment_phase_0_9",
+    "literal_clock_moment_phase_0_10",
+    "literal_clock_moment_phase_1_1",
+    "literal_clock_moment_phase_1_2",
+    "literal_clock_moment_phase_1_3",
+    "literal_clock_moment_phase_1_4",
+    "literal_clock_moment_phase_1_5",
+    "literal_clock_moment_phase_1_6",
+    "literal_clock_moment_phase_1_7",
+    "literal_clock_moment_phase_1_8",
+    "literal_clock_moment_phase_1_9",
+    "literal_clock_moment_phase_1_10",
+    "literal_clock_moment_real_0_1_1",
+    "literal_clock_moment_real_0_1_2",
+    "literal_clock_moment_real_0_1_3",
+    "literal_clock_moment_real_0_1_4",
+    "literal_clock_moment_real_0_1_5",
+    "literal_clock_moment_real_0_1_6",
+    "literal_clock_moment_real_0_1_7",
+    "literal_clock_moment_real_0_1_8",
+    "literal_clock_moment_real_0_1_9",
+    "literal_clock_moment_real_0_1_10",
+    "literal_clock_moment_imag_0_1_1",
+    "literal_clock_moment_imag_0_1_2",
+    "literal_clock_moment_imag_0_1_3",
+    "literal_clock_moment_imag_0_1_4",
+    "literal_clock_moment_imag_0_1_5",
+    "literal_clock_moment_imag_0_1_6",
+    "literal_clock_moment_imag_0_1_7",
+    "literal_clock_moment_imag_0_1_8",
+    "literal_clock_moment_imag_0_1_9",
+    "literal_clock_moment_imag_0_1_10"
+  ],
+  "proof": "ORIGINAL_REPORTER_CANONICAL_THERMAL_FIBRE.md"
+}
+```
+
+#### 7eo.J3. original_reporter_common_frame_check
+
+Code SHA256: `7ef133c7dd36222a87476bd9b09e1090093256dbf26d2712b9aa3e06c24c2337`.
+
+```python
+"""Exact native WORK-frame and small Schur checks; no heat approximation.
+
+The ORIGINAL validator forbids individual SourceSpin addressing. Thus this
+five-wire fixture uses three addressable WORK bits and two initial Spin bits,
+r=32 (a multiple of 2**3), rather than pretending d=4 controls are legal.
+No assertions: normal and optimized Python execute identical checks.
+"""
+from dataclasses import asdict, replace
+import argparse
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+
+import sympy as s
+from sympy.polys.matrices import DomainMatrix
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--root", type=Path, default=Path.cwd(),
+                    help="Repository root; defaults to the current directory")
+ROOT = parser.parse_args().root.resolve()
+OWNER_REL = Path("02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py")
+OWNER = ROOT / OWNER_REL
+spec = importlib.util.spec_from_file_location("original_native_execution_frame", OWNER)
+native = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = native
+spec.loader.exec_module(native)
+K = native.GOLDEN_FIELD
+results = {}
+scalar_cache = {s.S.Zero: K.zero, s.S.One: K.one, -s.S.One: -K.one}
+gate_cache = {}
+word_cache = {}
+
+
+def need(ok, name):
+    if not bool(ok):
+        raise RuntimeError(name)
+    results[name] = True
+
+
+def dm(a):
+    if isinstance(a, DomainMatrix):
+        return a
+    mat = s.Matrix(a)
+    rows = {}
+    for i in range(mat.rows):
+        row = {}
+        for j in range(mat.cols):
+            value = mat[i, j]
+            if value == 0:
+                continue
+            if value not in scalar_cache:
+                scalar_cache[value] = K.from_sympy(value)
+            row[j] = scalar_cache[value]
+        if row:
+            rows[i] = row
+    return DomainMatrix(rows, mat.shape, K)
+
+
+def adj(a):
+    return a.transpose() if isinstance(a, DomainMatrix) else a.T
+
+
+def eq(a, b):
+    return (dm(a) - dm(b)).is_zero_matrix
+
+
+def mul(*aa):
+    out = dm(aa[0])
+    for a in aa[1:]:
+        out = out.matmul(dm(a))
+    return out
+
+
+def power(a, n):
+    d = dm(a)
+    if n < 0:
+        d, n = d.transpose(), -n
+    return d.pow(n).to_Matrix()
+
+
+def exe(word, old=False):
+    return native.Execution(
+        qubits=6 if old else 5, blank_wires=tuple(range(3)),
+        old_right=(5,) if old else (), gates=tuple(word),
+        profile=native.G_CX_SOURCE_I, source_port=0, source_spin=(3, 4))
+
+
+def inv(word):
+    return native.inverse_word(exe(word), max_qubits=6,
+                               max_expanded_stages=10000)
+
+
+def matrix(word, layout=None):
+    """Actual owned primitive matrices, exact grouped multiplication.
+
+    Consecutive equal primitive powers are evaluated quickly; inventory
+    retains every literal gate. No assigned replacement primitive is used.
+    """
+    word = tuple(word)
+    execution = exe(word) if layout is None else replace(layout, gates=word)
+    native.validate_execution(execution, max_qubits=6,
+                              max_expanded_stages=10000)
+    framekey = (execution.qubits, execution.source_port, execution.source_spin)
+    wordkey = (framekey, word)
+    if wordkey in word_cache:
+        return word_cache[wordkey]
+    dimension = 2 ** execution.qubits
+    out = DomainMatrix.eye((dimension, dimension), K)
+    pos = 0
+    while pos < len(word):
+        gate = word[pos]
+        stop = pos + 1
+        while stop < len(word) and word[stop] == gate:
+            stop += 1
+        gatekey = (framekey, gate)
+        if gatekey not in gate_cache:
+            gate_cache[gatekey] = dm(native.gate_matrix(replace(execution, gates=()), gate,
+                                                    max_qubits=6,
+                                                    max_expanded_stages=10000))
+        out = gate_cache[gatekey].pow(stop - pos).matmul(out)
+        pos = stop
+    word_cache[wordkey] = out
+    return out
+
+
+SI = native.Gate("SourceI", (0, 3, 4))
+
+
+def swap(a, b):
+    return [native.Gate("CX", (a, b)), native.Gate("CX", (b, a)),
+            native.Gate("CX", (a, b))]
+
+
+def zword(target, spin=(3, 4)):
+    route = [] if target == 0 else swap(target, 0)
+    source = native.Gate("SourceI", (0, *spin))
+    return route + [source, source] + route
+
+
+def multiplex(target, controls, requests, common_length=None, spin=(3, 4)):
+    """Integer Walsh in cyclic Gray order; exact unselected exponents zero."""
+    d = len(controls)
+    size = 1 << d
+    if len(requests) != size or any(v % (1 << (d + 1)) for v in requests):
+        raise ValueError("divisible exact exponent table required")
+    gray = [j ^ (j >> 1) for j in range(size)]
+    kk = [sum((-1) ** ((g & b).bit_count()) * requests[b]
+              for b in range(size)) // size for g in gray]
+    if any(k % 2 for k in kk):
+        raise ValueError("even Walsh exponents required")
+    length = max(map(abs, kk)) if common_length is None else common_length
+    if length % 2 or length < max(map(abs, kk)):
+        raise ValueError("common even padding too small")
+    word = []
+    for j, k in enumerate(kk):
+        word += [native.Gate("G", (target,))] * ((length + k) // 2)
+        word += zword(target, spin)
+        word += [native.Gate("G", (target,))] * ((length - k) // 2)
+        word += zword(target, spin)
+        diff = gray[j] ^ gray[(j + 1) % size]
+        low_bit = diff.bit_length() - 1
+        wire = controls[d - 1 - low_bit]
+        word.append(native.Gate("CX", (wire, target)))
+    recovered = [sum((-1) ** ((g & b).bit_count()) * k
+                     for g, k in zip(gray, kk)) for b in range(size)]
+    if recovered != list(requests):
+        raise RuntimeError("Walsh exponent recovery")
+    return tuple(word), kk, length
+
+
+# Keep the user-suggested r=32 while respecting actual d=2 address controls.
+r = 32
+Hword, walsh, padded = multiplex(0, (1, 2), (0, r, r, r))
+Hminus, walsh_minus, _ = multiplex(0, (1, 2), (0, -r, -r, -r), padded)
+need(walsh == [24, -8, -8, -8], "legal_walsh_exact")
+need(len(Hword) == len(Hminus), "frame_inverse_common_counts")
+H = matrix(Hword)
+Hm = matrix(Hminus)
+G = s.Matrix(native.G_LOCAL)
+Gr = power(G, r)
+Hw = s.eye(8)
+for b in (1, 2, 3):
+    for i in range(2):
+        for j in range(2):
+            Hw[4 * i + b, 4 * j + b] = Gr[i, j]
+need(eq(H, s.kronecker_product(Hw, s.eye(4))), "native_frame_all32_columns")
+need(eq(Hm, adj(H)), "native_frame_inverse_exact")
+
+# Explicit negative admission test: the forbidden five-address-bit version.
+for gate in (native.Gate("G", (3,)), native.Gate("CX", (3, 0))):
+    need(not native.is_member(exe((gate,)), max_qubits=5,
+                             max_expanded_stages=10000),
+         "reject_spin_address_" + gate.op)
+
+Tword = tuple(native.Gate("G", (q,)) for q in range(3))
+Fword = inv(Tword) + Hword
+Fstar = Hminus + Tword
+F = matrix(Fword)
+Fs = matrix(Fstar)
+need(eq(Fs, adj(F)), "paid_frame_adjoint_exact")
+
+# Prepared-subspace-preserving real plane (001,011), both nonzero.
+Rword, rwalsh, rpad = multiplex(1, (0, 2), (0, 8, 0, 0))
+Rminus, _, _ = multiplex(1, (0, 2), (0, -8, 0, 0), rpad)
+Rm = matrix(Rword)
+Rmi = matrix(Rminus)
+Rw = s.eye(8)
+G8 = power(G, 8)
+for i in range(2):
+    for j in range(2):
+        Rw[(1, 3)[i], (1, 3)[j]] = G8[i, j]
+need(eq(Rm, s.kronecker_product(Rw, s.eye(4))), "native_plane_all32_columns")
+need(eq(Rmi, adj(Rm)), "native_plane_inverse_exact")
+Ap = mul(Fs, Rm, F)
+Am = mul(Fs, Rmi, F)
+need(eq(Am, adj(Ap)), "conjugation_endpoints_inverse_exact")
+v = s.Matrix([native.A, native.P])
+jborn = s.kronecker_product(v, v, v, s.eye(4))
+need(eq(mul(Ap, jborn), jborn), "all_four_spin_columns_fixed_exact")
+Apword = Fword + Rword + Fstar
+Amword = Fword + Rminus + Fstar
+need(len(Apword) == len(Amword), "native_plus_minus_common_stage_count")
+native.validate_execution(exe(Apword, old=True), max_qubits=6,
+                          max_expanded_stages=10000)
+native.validate_execution(exe(Amword, old=True), max_qubits=6,
+                          max_expanded_stages=10000)
+results["all_old_columns_protected_by_original_validator"] = True
+
+# Spin is INITIAL full unknown input; only three WORK bits are born.
+ages = []
+for b in range(32):
+    ones = [q for q in range(3) if b & (1 << (4 - q))]
+    ages.append(4 if not ones else 3 - max(ones))
+need(eq(mul(H, s.diag(*ages)), mul(s.diag(*ages), H)), "frame_preserves_all_age_blocks")
+S = mul(power(G, -r), s.diag(1, -1), power(G, r)).to_Matrix()
+Wborn = s.kronecker_product(S, s.eye(16))
+Wframe = mul(H, Wborn, adj(H))
+target = s.diag(*[1 if b < 16 else -1 for b in range(32)])
+for spin in range(4):
+    for a in range(2):
+        for b in range(2):
+            target[16 * a + spin, 16 * b + spin] = S[a, b]
+need(eq(Wframe, target), "one_address_mixed_plane_tensor_spin")
+need(eq(s.diag(*ages), s.kronecker_product(s.diag(*ages[::4]), s.eye(4))),
+     "all_age_projectors_identity_on_initial_spin")
+
+# Complex native plane: relative i from the ACTUAL SourceI, no Spin address.
+Skword = tuple(swap(1, 0) + [SI] + swap(1, 0))
+Skminus = inv(Skword)
+Imword = Skminus + Rword + Skword
+Imminus = Skminus + Rminus + Skword
+Im, Imi = matrix(Imword), matrix(Imminus)
+Im_expected = s.eye(32)
+Li = s.Matrix(native.L_I)
+cc, st = G8[0, 0], G8[1, 0]
+for a in range(4):
+    for b in range(4):
+        Im_expected[4 + a, 4 + b] = cc if a == b else 0
+        Im_expected[12 + a, 12 + b] = cc if a == b else 0
+        Im_expected[4 + a, 12 + b] = st * Li[a, b]
+        Im_expected[12 + a, 4 + b] = st * Li[a, b]
+need(eq(Im, Im_expected), "sourceI_imaginary_plane_all32_columns")
+need(eq(Imi, adj(Im)), "imaginary_plane_inverse_exact")
+need(len(Imword) == len(Imminus), "imaginary_plane_common_counts")
+Aim = mul(Fs, Im, F)
+need(eq(mul(Aim, jborn), jborn), "imaginary_plane_all_spin_columns_fixed")
+need(not dm(s.Matrix([[2 * cc * st]])).is_zero_matrix,
+     "real_rotated_imaginary_axis_has_nonzero_Cartan_component")
+
+# A later tower level: fixed OLD active apparatus 0, NEW WORK 1,2,3,
+# initial Spin 4,5. Unknown apparatus comparison columns are NOT a new
+# physical input-rank choice: the entire retained tower still starts at 4.
+later = native.Execution(6, (1, 2, 3), (), (), native.G_CX_SOURCE_I,
+                         source_port=0, source_spin=(4, 5))
+
+
+def later_inv(word):
+    return native.inverse_word(replace(later, gates=tuple(word)),
+                               max_qubits=6, max_expanded_stages=10000)
+
+
+Hnew_word, knew, lnew = multiplex(1, (2, 3), (0, r, r, r), spin=(4, 5))
+Hnew_minus, _, _ = multiplex(1, (2, 3), (0, -r, -r, -r), lnew, spin=(4, 5))
+Hnew = matrix(Hnew_word, later)
+need(eq(Hnew, s.kronecker_product(s.eye(2), Hw, s.eye(4))),
+     "later_frame_all64_columns_old_apparatus_identity")
+Rnew_word = tuple(zword(1, (4, 5)))
+Rnew = matrix(Rnew_word, later)
+need(eq(Rnew, s.kronecker_product(s.eye(2), s.diag(1, -1), s.eye(16))),
+     "routed_final_Z_all64_columns")
+newT = tuple(native.Gate("G", (q,)) for q in (1, 2, 3))
+oldG = (native.Gate("G", (0,)),)
+Fnew_word = later_inv(oldG) + later_inv(newT) + Hnew_word
+Fnew_star = Hnew_minus + newT + oldG
+Fn, Fns = matrix(Fnew_word, later), matrix(Fnew_star, later)
+need(eq(Fns, adj(Fn)), "later_full_frame_adjoint")
+req = (0, 16, 0, 0, 0, 0, 0, 0)
+Ajword, kj, lj = multiplex(0, (1, 2, 3), req, spin=(4, 5))
+Ajminus, _, _ = multiplex(0, (1, 2, 3), tuple(-a for a in req), lj, spin=(4, 5))
+Aj, Aji = matrix(Ajword, later), matrix(Ajminus, later)
+Aj_target = s.eye(16)
+G16 = power(G, 16)
+for a in range(2):
+    for b in range(2):
+        Aj_target[(1, 9)[a], (1, 9)[b]] = G16[a, b]
+need(eq(Aj, s.kronecker_product(Aj_target, s.eye(4))),
+     "joint_apparatus_newWORK_plane_exact")
+Alater, Alater_minus = mul(Fns, Aj, Fn), mul(Fns, Aji, Fn)
+Jlater = s.kronecker_product(s.eye(2), v, v, v, s.eye(4))
+need(eq(mul(Alater, Jlater), Jlater), "full_old_apparatus_and_spin_input_fixed")
+need(eq(Alater_minus, adj(Alater)), "later_joint_plane_inverse")
+later_plus_word = Fnew_word + Ajword + Fnew_star
+later_minus_word = Fnew_word + Ajminus + Fnew_star
+need(len(later_plus_word) == len(later_minus_word), "later_joint_common_stage_count")
+need(len(Hnew_word) == 164 and len(later_plus_word) == 426,
+     "later_literal_counts_164_and_426")
+guarded_later = replace(later, qubits=7, old_right=(6,), gates=later_plus_word)
+native.validate_execution(guarded_later, max_qubits=7, max_expanded_stages=10000)
+results["later_sealed_oldRIGHT_guard"] = True
+
+# Distinct-age exact Schur determinants, not a numerical thermal fit.
+x = s.symbols("x")
+c, ss = s.Rational(3, 5), s.Rational(4, 5)
+W = s.diag(1, 1, 1, -1)
+W[0, 0], W[0, 1], W[1, 0], W[1, 1] = c, ss, ss, -c
+Dage = s.diag(x**7, x**5, x**3, x)
+
+
+def detpoly(uu):
+    return s.Poly((s.eye(4) - uu * Dage).det(method="domain-ge"), x)
+
+
+thermal_pairs = []
+for a, b in ((1, 2), (1, 3), (2, 3)):
+    # Real, imaginary, and a general SU(2) plane (all four coefficients nonzero).
+    blocks = {
+        "real": s.Matrix([[c, -ss], [ss, c]]),
+        "imaginary": s.Matrix([[c, s.I * ss], [s.I * ss, c]]),
+        "general_SU2": s.Matrix([[s.Rational(1, 2) + s.I / 2, s.Rational(1, 2) + s.I / 2],
+                                   [-s.Rational(1, 2) + s.I / 2, s.Rational(1, 2) - s.I / 2]])}
+    for kind, block in blocks.items():
+        aa = s.eye(4)
+        for u in range(2):
+            for v_ in range(2):
+                aa[(a, b)[u], (a, b)[v_]] = block[u, v_]
+        dp = detpoly(aa * W * aa.H)
+        dm_ = detpoly(aa.H * W * aa)
+        need(dp == dm_, f"schur_single_plane_{a}_{b}_{kind}_even")
+        thermal_pairs.append({"plane": [a, b], "kind": kind,
+                              "determinant": str(dp.as_expr())})
+
+# Hostile general three-plane Cayley: tangent spanning is not finite evenness.
+X = s.Matrix([[0, -1, -2], [1, 0, -3], [2, 3, 0]]) / 10
+Cayley = (s.eye(3) - X).inv() * (s.eye(3) + X)
+Q = s.diag(-c, 1, -1)
+diag_gap = list(s.diag(*(Cayley * Q * Cayley.T - Cayley.T * Q * Cayley).diagonal()).diagonal())
+need(diag_gap == [s.Rational(160, 1083), -s.Rational(32, 1083), -s.Rational(128, 1083)],
+     "hostile_three_plane_diagonal_gap_exact")
+Ac = s.diag(1, Cayley)
+hostile_gap = detpoly(Ac * W * Ac.T) - detpoly(Ac.T * W * Ac)
+need(not hostile_gap.is_zero, "hostile_three_plane_not_isospectral")
+
+receipt = {
+    "schema": "d0.original-reporter-common-frame-check/1",
+    "scope": "exact native addressed-WORK frame; fixed Spin spectator; exact small Schur polynomials",
+    "checker_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    "native_owner_sha256": hashlib.sha256(OWNER.read_bytes()).hexdigest(),
+    "native_owner": OWNER_REL.as_posix(),
+    "native_profile": native.G_CX_SOURCE_I,
+    "wire_layout": {"addressed_work": [0, 1, 2], "port": 0, "initial_unknown_spin": [3, 4]},
+    "initial_cut_rank": 4,
+    "r": r, "d": 2, "walsh": walsh, "common_L": padded,
+    "frame_inventory": asdict(native.inventory(exe(Hword), max_qubits=5, max_expanded_stages=10000)),
+    "comparison_inventory": asdict(native.inventory(exe(Apword), max_qubits=5, max_expanded_stages=10000)),
+    "later_frame_inventory": asdict(native.inventory(replace(later, gates=Hnew_word), max_qubits=6, max_expanded_stages=10000)),
+    "later_joint_comparison_inventory": asdict(native.inventory(replace(later, gates=later_plus_word), max_qubits=6, max_expanded_stages=10000)),
+    "later_input_rank_scope": "rank8 is the all-old-apparatus comparison carrier; physical tower initial cut stays rank4",
+    "paired_complete_endpoint_stage_count": 2 * len(Apword),
+    "paired_complete_endpoint_stage_count_excludes": "common W0 word and common births, both separately paid",
+    "thermal_pairs": thermal_pairs,
+    "hostile_diagonal_gap": list(map(str, diag_gap)),
+    "hostile_determinant_gap": str(hostile_gap.as_expr()),
+    "checks": results,
+    "claim": "PASS; no claim of arbitrary-multiplane finite evenness or numerical heat equality"
+}
+out = Path(__file__).with_suffix(".json")
+out.write_text(json.dumps(receipt, sort_keys=True, indent=2) + "\n", encoding="utf-8")
+print(json.dumps({"status": "PASS", "checks": len(results), "receipt": str(out),
+                  "receipt_sha256": hashlib.sha256(out.read_bytes()).hexdigest()}, sort_keys=True))
+```
+
+Receipt SHA256: `2236edc503ec7dacaf1cd6255b12438b8f868afd25af33ed652187db300143f8`.
+
+```json
+{
+  "checker_sha256": "7ef133c7dd36222a87476bd9b09e1090093256dbf26d2712b9aa3e06c24c2337",
+  "checks": {
+    "all_age_projectors_identity_on_initial_spin": true,
+    "all_four_spin_columns_fixed_exact": true,
+    "all_old_columns_protected_by_original_validator": true,
+    "conjugation_endpoints_inverse_exact": true,
+    "frame_inverse_common_counts": true,
+    "frame_preserves_all_age_blocks": true,
+    "full_old_apparatus_and_spin_input_fixed": true,
+    "hostile_three_plane_diagonal_gap_exact": true,
+    "hostile_three_plane_not_isospectral": true,
+    "imaginary_plane_all_spin_columns_fixed": true,
+    "imaginary_plane_common_counts": true,
+    "imaginary_plane_inverse_exact": true,
+    "joint_apparatus_newWORK_plane_exact": true,
+    "later_frame_all64_columns_old_apparatus_identity": true,
+    "later_full_frame_adjoint": true,
+    "later_joint_common_stage_count": true,
+    "later_joint_plane_inverse": true,
+    "later_literal_counts_164_and_426": true,
+    "later_sealed_oldRIGHT_guard": true,
+    "legal_walsh_exact": true,
+    "native_frame_all32_columns": true,
+    "native_frame_inverse_exact": true,
+    "native_plane_all32_columns": true,
+    "native_plane_inverse_exact": true,
+    "native_plus_minus_common_stage_count": true,
+    "one_address_mixed_plane_tensor_spin": true,
+    "paid_frame_adjoint_exact": true,
+    "real_rotated_imaginary_axis_has_nonzero_Cartan_component": true,
+    "reject_spin_address_CX": true,
+    "reject_spin_address_G": true,
+    "routed_final_Z_all64_columns": true,
+    "schur_single_plane_1_2_general_SU2_even": true,
+    "schur_single_plane_1_2_imaginary_even": true,
+    "schur_single_plane_1_2_real_even": true,
+    "schur_single_plane_1_3_general_SU2_even": true,
+    "schur_single_plane_1_3_imaginary_even": true,
+    "schur_single_plane_1_3_real_even": true,
+    "schur_single_plane_2_3_general_SU2_even": true,
+    "schur_single_plane_2_3_imaginary_even": true,
+    "schur_single_plane_2_3_real_even": true,
+    "sourceI_imaginary_plane_all32_columns": true
+  },
+  "claim": "PASS; no claim of arbitrary-multiplane finite evenness or numerical heat equality",
+  "common_L": 24,
+  "comparison_inventory": {
+    "blank_count": 3,
+    "cut_rank": 4,
+    "cx_count": 72,
+    "full_dimension": 32,
+    "g_count": 206,
+    "gate_count": 338,
+    "input_dimension": 4,
+    "qubits": 5,
+    "source_i_count": 60,
+    "unknown_wires": [
+      3,
+      4
+    ]
+  },
+  "d": 2,
+  "frame_inventory": {
+    "blank_count": 3,
+    "cut_rank": 4,
+    "cx_count": 4,
+    "full_dimension": 32,
+    "g_count": 96,
+    "gate_count": 116,
+    "input_dimension": 4,
+    "qubits": 5,
+    "source_i_count": 16,
+    "unknown_wires": [
+      3,
+      4
+    ]
+  },
+  "hostile_determinant_gap": "128*x**15/1083 + 32*x**13/1083 + 32*x**12/361 - 160*x**11/1083 + 32*x**10/1083 - 256*x**8/1083 + 32*x**6/1083 - 160*x**5/1083 + 32*x**4/361 + 32*x**3/1083 + 128*x/1083",
+  "hostile_diagonal_gap": [
+    "160/1083",
+    "-32/1083",
+    "-128/1083"
+  ],
+  "initial_cut_rank": 4,
+  "later_frame_inventory": {
+    "blank_count": 3,
+    "cut_rank": 8,
+    "cx_count": 52,
+    "full_dimension": 64,
+    "g_count": 96,
+    "gate_count": 164,
+    "input_dimension": 8,
+    "qubits": 6,
+    "source_i_count": 16,
+    "unknown_wires": [
+      0,
+      4,
+      5
+    ]
+  },
+  "later_input_rank_scope": "rank8 is the all-old-apparatus comparison carrier; physical tower initial cut stays rank4",
+  "later_joint_comparison_inventory": {
+    "blank_count": 3,
+    "cut_rank": 8,
+    "cx_count": 130,
+    "full_dimension": 64,
+    "g_count": 216,
+    "gate_count": 426,
+    "input_dimension": 8,
+    "qubits": 6,
+    "source_i_count": 80,
+    "unknown_wires": [
+      0,
+      4,
+      5
+    ]
+  },
+  "native_owner": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_profile": "G_CX_SOURCE_I",
+  "paired_complete_endpoint_stage_count": 676,
+  "paired_complete_endpoint_stage_count_excludes": "common W0 word and common births, both separately paid",
+  "r": 32,
+  "schema": "d0.original-reporter-common-frame-check/1",
+  "scope": "exact native addressed-WORK frame; fixed Spin spectator; exact small Schur polynomials",
+  "thermal_pairs": [
+    {
+      "determinant": "x**16 + x**15 + 3*x**13/125 + 3*x**12/125 - 53*x**11/125 - 53*x**10/125 - 3*x**9/5 - 6*x**8/5 - 3*x**7/5 - 53*x**6/125 - 53*x**5/125 + 3*x**4/125 + 3*x**3/125 + x + 1",
+      "kind": "real",
+      "plane": [
+        1,
+        2
+      ]
+    },
+    {
+      "determinant": "x**16 + x**15 + 3*x**13/125 + 3*x**12/125 - 53*x**11/125 - 53*x**10/125 - 3*x**9/5 - 6*x**8/5 - 3*x**7/5 - 53*x**6/125 - 53*x**5/125 + 3*x**4/125 + 3*x**3/125 + x + 1",
+      "kind": "imaginary",
+      "plane": [
+        1,
+        2
+      ]
+    },
+    {
+      "determinant": "x**16 + x**15 - x**13/5 - x**12/5 - x**11/5 - x**10/5 - 3*x**9/5 - 6*x**8/5 - 3*x**7/5 - x**6/5 - x**5/5 - x**4/5 - x**3/5 + x + 1",
+      "kind": "general_SU2",
+      "plane": [
+        1,
+        2
+      ]
+    },
+    {
+      "determinant": "x**16 + 93*x**15/125 - x**13 - 93*x**12/125 + 107*x**11/125 + 3*x**10/5 - 3*x**9/5 - 214*x**8/125 - 3*x**7/5 + 3*x**6/5 + 107*x**5/125 - 93*x**4/125 - x**3 + 93*x/125 + 1",
+      "kind": "real",
+      "plane": [
+        1,
+        3
+      ]
+    },
+    {
+      "determinant": "x**16 + 93*x**15/125 - x**13 - 93*x**12/125 + 107*x**11/125 + 3*x**10/5 - 3*x**9/5 - 214*x**8/125 - 3*x**7/5 + 3*x**6/5 + 107*x**5/125 - 93*x**4/125 - x**3 + 93*x/125 + 1",
+      "kind": "imaginary",
+      "plane": [
+        1,
+        3
+      ]
+    },
+    {
+      "determinant": "x**16 + 4*x**15/5 - x**13 - 4*x**12/5 + 4*x**11/5 + 3*x**10/5 - 3*x**9/5 - 8*x**8/5 - 3*x**7/5 + 3*x**6/5 + 4*x**5/5 - 4*x**4/5 - x**3 + 4*x/5 + 1",
+      "kind": "general_SU2",
+      "plane": [
+        1,
+        3
+      ]
+    },
+    {
+      "determinant": "x**16 - 7*x**15/25 + 7*x**13/25 - x**12 + 3*x**11/5 - 21*x**10/125 - 3*x**9/5 + 42*x**8/125 - 3*x**7/5 - 21*x**6/125 + 3*x**5/5 - x**4 + 7*x**3/25 - 7*x/25 + 1",
+      "kind": "real",
+      "plane": [
+        2,
+        3
+      ]
+    },
+    {
+      "determinant": "x**16 - 7*x**15/25 + 7*x**13/25 - x**12 + 3*x**11/5 - 21*x**10/125 - 3*x**9/5 + 42*x**8/125 - 3*x**7/5 - 21*x**6/125 + 3*x**5/5 - x**4 + 7*x**3/25 - 7*x/25 + 1",
+      "kind": "imaginary",
+      "plane": [
+        2,
+        3
+      ]
+    },
+    {
+      "determinant": "x**16 - x**12 + 3*x**11/5 - 3*x**9/5 - 3*x**7/5 + 3*x**5/5 - x**4 + 1",
+      "kind": "general_SU2",
+      "plane": [
+        2,
+        3
+      ]
+    }
+  ],
+  "walsh": [
+    24,
+    -8,
+    -8,
+    -8
+  ],
+  "wire_layout": {
+    "addressed_work": [
+      0,
+      1,
+      2
+    ],
+    "initial_unknown_spin": [
+      3,
+      4
+    ],
+    "port": 0
+  }
+}
+```
