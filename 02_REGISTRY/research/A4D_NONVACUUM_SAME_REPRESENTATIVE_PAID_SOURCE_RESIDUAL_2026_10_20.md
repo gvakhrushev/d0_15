@@ -127777,3 +127777,687 @@ both legs, old-source concentration and the actual whole-clock remainder.
 Applying §7eh.E--F gives the fixed-reporter native κ source law and its
 Einstein--two-CAR soundness/recovery on this sequential retained-operation
 section. Its exact finite and universal-regime boundaries remain as stated.
+
+
+## 7ei. Retained fullStep control, genuine Golden metric transport, and the same-history κ Einstein realization
+
+**3 November 2026; parent composition in existing #334.** Input is
+07307695bceca069626ec86c56117986d1c8dd07, especially §7eh's actual
+geometric banks, shared SITE, born-sampling control and complete Book source.
+This is native realization and final composition, not a new action or a
+claim that every D0 continuation runs the same programme. The family
+quantifier in gr_operational_realization is important: the obligation
+quantifies over one such off-shell family together with its stated
+source, variation and refinement maps. A unique universal
+scheduler is not an extra premise. The unchanged positive_gr contract still
+requires its exact joint finite solutions; the κ statement below retains
+its separately declared topology and does not promote that registry claim.
+
+The explicit substitutions are these. First, the geometric writer and its
+full independent preparation source survive compilation by positive words
+of the original fullStep alone; exact inverse gates, SourceI, exact sampling
+projectors and a selfadjoint actual compiled body are unnecessary. Second,
+the same readout supplies a real physical Golden metric step. Third, a
+finite recorded sufficient detector can be translated to the original
+moment reader by an actual paid coherent continuation. These statements
+are composed below with KAPPA (K10)–(K12), rather than left as isolated
+observability or algebra-membership results.
+
+### A. The admitted execution and its actual replay
+
+Use the existing native_execution.py G_CX domain in
+sources/d0_native_execution_domain_2026-10-24, with immutable old RIGHT and
+an actual live coherent WORK. Let p=φ⁻¹, a=√p, v=(a,p), and
+W=CX(G⊗I). On neighboring live birth positions define the macro
+j ↦ [G(j),CX(j,j+1)]. Every finite positive word in these macros validates
+in that existing domain, including repeated use of live positions. It
+acts on all columns and is exactly identity on old RIGHT. Each W pays two
+primitive stages; a composite-tick convention must not be mixed with it.
+No new arbitrary-address matrix action follows merely from this statement.
+
+The existing FutureExecution and TheoryTransfer owners consume precisely
+such an already supplied action alphabet. On the same retained state,
+set step_macro(j,s)=run_native([G(j),CX(j,j+1)],s). Identity state/test maps
+and this action-word map satisfy step_commutes literally. Their run and
+future-observation composition theorems therefore give exact finite replay,
+including the two real stages in the actual history. This exact macro
+interpretation is distinct from the subsequent approximate realization of
+an ideal geometric matrix.
+
+Book01 supplies the intrinsic addresses and retained operator tests. For
+finite support ≤n₀, D_n=D_n₀⊗I on n≥n₀ and the canonical raw birth
+J_n x=x⊗v satisfy P D_(n+1)=D_n P and P(D*D)_(n+1)=(D*D)_n P, P=J*.
+This is all-input cofinal-tail naturality. It is not asserted before the
+registers have been born, and it does not turn passive matrix inclusion
+into physical interaction. The local execution premise is consumed from
+the existing operational sector, not newly derived from M1 alone.
+
+FULLSTEP_COMPILATION_RU §§1–3 already proves all-column approximation by
+positive W words, a terminating certified search, dirty-helper control,
+and common finite lengths for finite target catalogues. Apply it to every
+marked prefix and each independent comparison endpoint of §7eh. Compile
+successive marked chunks; telescoping controls each required intermediate
+mark as well as the final map. Preserve all helpers in the actual clock and
+heat. Neither an exact inverse nor a differentiable word-search algorithm
+is assumed. Only separately compiled finite endpoint comparisons are used.
+
+For the WHOLE execution to use this alphabet, retention must also use W.
+Consume RAW_CYLINDER_REALIZATION_RU (R12), not its single-G variant (R8):
+
+\[
+ r=\langle v\otimes v,W(v\otimes v)\rangle=ap^3+4p^4,
+ \qquad 0<r<1,\qquad4r^2>1.                         \tag{EI1}
+\]
+
+Each retention block is two actual births followed by G;CX: four stages,
+full dimension multiplier 4, cold amplitude r. Thus K blocks give r^K,
+η_K=z r^(2K), and the full heat/gain bound decays as (4r²)^(-K).
+The previously proved bound applies with the actual prefix constants.
+One must not substitute the different corner a of an AF |00⟩ realization
+or keep p^K while executing these raw born pairs. This consumes an existing
+retention theorem and changes no physical price.
+
+### B. The actual compiled body can be nonselfadjoint
+
+Fix one full positive-W word Uhat for the complete geometric/SITE/vertex
+bank target. It acts on fresh WORK and exactly as identity on protected
+old DATA. Compress only the declared fresh resource factors, leaving the
+m-bit SAM open. If M is the diagonal target table of §7eh and
+||Mhat−M||≤η, the actual real contraction Mhat need not preserve sampling
+projectors and need not be selfadjoint. Put
+
+\[
+ S=(\widehat M+\widehat M^*)/2,\quad
+ A_{sk}=(\widehat M-\widehat M^*)/2,
+ \quad\|S-M\|\le\eta,\quad\|A_{sk}\|\le\eta.          \tag{EI2}
+\]
+
+At the real born embedding i=v^⊗m⊗I_old,
+i* Mhat i=c I_old exactly, with c=(v^⊗m)^T S(v^⊗m). Exact old-DATA identity, not
+approximate sampling diagonality, proves scalarity. The target positive
+margin and a smaller η give c>0. All gains below use this actual c.
+The theorem concerns this real native sector; a general complex scalar
+corner would require its phase to be treated explicitly.
+
+For a skew current preparation generator X, the matched formal target is
+i*exp(−tX) Mhat exp(tX)i. Its two independent legs have derivatives
+DC₊=i*Mhat X i and DC₋=−i*X Mhat i. These smooth targets are used to
+bound native finite contrasts; they are not asserted to be continuously
+variable elementary gates.
+
+Write A_old=C_< C_<* for the OUTPUT Gram of the chronological past,
+d=1−z, and, initially for one block,
+
+\[
+ B=\eta_Kc^2A_{old}(dI+\eta_Kc^2A_{old})^{-1},\quad
+ w=\operatorname{Tr}B>0,\quad\varrho=B/w,\quad
+ \Gamma_s=4wgs/c.                                    \tag{EI3}
+\]
+
+A_old can be singular; only its nonzero return is needed. For a general
+nonnormal perturbation of the central scalar corner, the original
+log-determinant price gives DJ=−(2w/c)Re Tr(ϱ DC). Rectangular determinant
+conversion retains its constant dimension term. Define
+T_S(X)=Tr[ϱ i*[S,X]i] and
+T_A(X)=Re Tr[ϱ i*A_sk X i]=½Tr[ϱ i*{A_sk,X}i]. Then, exactly,
+
+\[
+ DJ_{pair}=-2wT_S/c,\qquad
+ DJ_+=-wT_S/c-2wT_A/c,\qquad
+ DJ_-=-wT_S/c+2wT_A/c.                               \tag{EI4}
+\]
+
+Indeed [A_sk,X] is skew, so its real trace against ϱ vanishes in the
+matched source. It survives in the independent-leg imbalance. Each leg
+differs from half the matched source by at most
+2wη||X||op/c, or η||X||op/(2gs) after (EI3). It is not discarded.
+
+Use the ORIGINAL physical norm V_h, the chart derivative ι_h, and the
+maps L_ϱ and R_h from §7eh.I. The state-independent control norm is
+
+\[
+ \|X\|_{ctrl}=\max\{\sup_{\sigma\ge0,\operatorname{Tr}\sigma=1}
+                      \|L_\sigma X\|_{V_h},\ \|X\|_{op}/C_h\}.
+                                                               \tag{EI5}
+\]
+
+It is a norm on the full admitted control space, not a quotient that
+removes kernel directions. With u=2p√p,
+R_h(v)=u⁻¹Σ_j(ι_hv)_j J_j obeys L_σR_h(v)=v for every σ, and C_h is
+chosen using the actual finite dimension so ||R_h(v)||ctrl=||v||V_h.
+No mesh-independent raw-operator lift is asserted. The real kinematic
+field displacement is s L_ϱX; its true factor s is already in Γ_s.
+
+The target vertex expansion, with c₀=c_ref−2gI_τ(Y₀) and the original
+c_ref=1−8κ₉p⁷, is M=c₀I−2gs Σ_j D_j I_τ(Y₀)V_j+R,
+||R||≤g L_h s² R_v², with R_v²=mp². Here D_j I_τ denotes the
+j-th derivative of I_τ∘χ_h⁻¹ at χ_h(Y₀), not an unconverted physical
+coordinate derivative. Combining it with (EI2)–(EI4)
+on the two independent legs, equipped with their maximum norm, gives
+
+\[
+ \left\|\frac{DJ}{\Gamma_s}-DI_h(Y_0)\circ L_{legs}\right\|_*
+ \le E_{\tau,h}+C_h\left[L_hsR_v^2+\frac{2\eta}{gs}\right],
+ \qquad L_{legs}(X_+,X_-)=\tfrac12(L_\varrho X_++L_\varrho X_-).
+                                                               \tag{EI6}
+\]
+
+The isometric lift is v↦(R_hv,R_hv). Therefore the full source norm both
+bounds and is bounded by the physical field source norm up to this error.
+All correlations and anti-paired directions at the declared interface are
+included; their residuals are measured, not projected away.
+
+Use M_rep fresh sampler/SITE/bank interfaces, born in actual chronological
+order and untouched by later blocks. Their central corners multiply to
+c^M_rep exactly without intervening measurement. Replace (EI3) by
+
+\[
+ w=\operatorname{Tr}\frac{\eta_Kc^{2M_{rep}}A_{old}}
+                                  {dI+\eta_Kc^{2M_{rep}}A_{old}},
+ \quad\Gamma_{M_{rep},s}=4M_{rep}wgs/c.                \tag{EI7}
+\]
+
+L_legs becomes the mean of the 2M_rep maps, and the simultaneous field
+lift is still isometric for the maximum control norm. Estimate (EI6)
+is unchanged. The complete old-source estimate remains
+
+\[
+ \frac{|D_{A_{old}}J|}{\Gamma_{M_{rep},s}}
+ \le\frac{c[d+\eta_Kc^{2M_{rep}}\|A_{old}\|]\|DA_{old}\|_1}
+ {4M_{rep}gs\,d\,\operatorname{Tr}A_{old}}.            \tag{EI8}
+\]
+
+The output c^(2M_rep) is not replaced by an ideal c₀. A single reused
+sampler or additional controls entangling already sealed samplers are a
+different interface; no such factorization is claimed for them.
+
+For genuinely native endpoints, separately approximate exp(tX) and
+exp(−tX) by positive words at the same actual clock. Endpoint errors are
+charged relative to |t|Γ, unlike the fixed-body η/(gs) term in (EI6).
+A bound on a WHOLE endpoint operator may require precision involving
+c_min^M_rep as well as its actual prefix length. These are finite constants
+available before K; none may be silently omitted. A positive word
+approximating identity for common-clock padding is an endpoint error,
+unless its actual matrix has literally been included in the fixed body
+and in the newly calculated c. The compiler never supplies a free exact
+identity or inverse word.
+
+Choose h and chart/source accuracy, then s, M_rep for the whole old
+covector, finite chords and compiler tolerances, and the actual complete
+common prefix. Choose K LAST using (EI1). Price each complete Book tuple
+and each required marked endpoint to accuracy relative to its actual
+|t|Γ. This retains full heat, both preparation legs, references, work,
+clock and record effects. The generated-bank adjoint is the existing
+same-execution pullback; it does not freeze an independent upstream input.
+The body is fixed from retained instructions, while all independently
+admitted controls of this causal task graph remain in the displayed norm.
+
+### C. One executed data map gives the physical Golden step
+
+Use the fixed original reporter; its limiting σ is 1. The following
+algebra also allows a fixed positive σ, but not an unproved moving
+posterior. The source-owned finite action is
+I_h^σ=Σ_x v_x m_xσ_x[f_h,x(e,U)−k₀q_h,x(e,Ψ)]. Define on the same
+field-name chart
+
+\[
+ T_\phi(e,U,\Psi,m,\rho,\sigma)=(pe,U,\Psi,m,\rho,\sigma).
+                                                               \tag{EI9}
+\]
+
+The original f has two inverse-coframe legs; q uses the inverse metric.
+Thus, by the already owned exact finite homogeneity,
+
+\[
+ I_h^\sigma(T_\phi Y)=\phi^2 I_h^\sigma(Y),\qquad
+ DI_h^\sigma(T_\phi Y)DT_\phi=\phi^2DI_h^\sigma(Y).     \tag{EI10}
+\]
+
+This requires neither a small-plaquette expansion nor a solution of the
+connection equation. Here m is the density of the actual coordinate measure (m=1 in the
+original Role chart), not a newly supplied independent writer. Holding m
+and ρ fixed along this particular map removes none of their ACTUALLY
+admitted source rows; a genuine moving measure leg uses the owned dependent
+measure/coframe identity. PF ρ remains a different normalized variable.
+The actual material-coframe decoder is
+ê=√(mσ/det e)e. Since det(pe)=p⁴det e, it gives
+
+\[
+ \widehat e(T_\phi Y)=\phi\widehat e(Y),\qquad
+ \widehat g(T_\phi Y)=\phi^2\widehat g(Y).             \tag{EI11}
+\]
+
+Physical volume scales by φ⁴; it has not been fixed by keeping raw m.
+Multiplication of a finite field name by the owned algebraic p is an
+internal computable data operation. Include both regular charts in one
+actual marked full-bank catalogue, choose their common bounds BEFORE
+attenuation/references, and use the same positive-W realization. All new
+storage, preparation and separately compiled return words are paid.
+
+Let q_h(Y) denote the actual normalized finite Book comparison covector
+on the physical lifts, with all errors from B included and
+||q_h(Y)−DI_h(Y)||≤E_h(Y). The same finite catalogue then satisfies
+
+\[
+ |q_h(T_\phi Y)[DT_\phi v]-\phi^2 q_h(Y)[v]|
+ \le[\|DT_\phi\|E_h(T_\phi Y)+\phi^2E_h(Y)]\|v\|.     \tag{EI12}
+\]
+
+The right side has an effective vanishing κ-name. Norm conversions are
+those of the actual charts. The limiting closed source therefore has the
+physical potential weight I[φ²ĝ,Ψ]=φ²I[ĝ,Ψ], up to the same boundary
+normalization. After the owned independent-link elimination and material
+metric/source descent, its gravitational covariant tensor satisfies
+E_ab[φ²g]=E_ab[g]. The matter metric stress has that same tensor weight;
+its scalar Euler density has the action weight. These source types are
+not interchanged.
+
+This supplies the PHYSICAL Golden-step interface of
+A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md on this source.
+Its metric-only, local-Diff, flat smoothness and Ward inputs are supplied
+here by GENERAL_EINSTEIN_SOURCE_RU's same full material-action transport.
+The rigidity theorem is thereby applicable on the supplied regular chart;
+its coefficient is fixed by the already owned sourced witness/normalization,
+not fitted anew. This does not claim that the finite raw Book price obeys
+a homogeneous scaling law: its heat, logarithm, rank and clock remain.
+Nor is q_h the derivative of B/Γ. It is the full price contrast divided
+by the positive CENTRAL Γ, before completion. (EI9) is a physical field
+comparison, not the assertion that every archive birth scales a metric.
+
+### D. The reader can be generated from a sufficient retained detector
+
+There is a useful larger family. On an original private resource bank,
+let a recorded REAL native detector have effects E_a≥0, Σ_aE_a=I and
+its actual real coherent dilation. Let H₁,H₂ be the two fixed original
+real symmetric moment operators used by the same reader, with the same
+copy counts, anchors and normalization. Work conditionally at each shared
+SITE x; the instrument treats SITE as a read-only control and never acts
+on protected old DATA. Merely SITE-diagonal effects would be insufficient
+if the Kraus maps changed SITE between calls.
+
+The detector determines Tr(H_iρ) for EVERY bank state exactly iff
+
+\[
+ H_i=\sum_a\alpha_{ia}E_a.                            \tag{EI13}
+\]
+
+For necessity, if H_i is outside the real effect span, an orthogonal
+Hermitian X has Tr X=0 and Tr H_iX≠0. The positive states I/d±tX then
+have identical detector probabilities and different moments. Sufficiency
+is immediate. This is maximal statistical sufficiency for these moments,
+not a claim of equivalence of the entire physical processes. The native
+implementation here is confined to the stated real dilation sector;
+a general complex instrument needs a separately justified realification.
+
+For exact native algebraic matrices, solve (EI13) by recorded finite
+elimination. On a smooth constant-rank chart choose a fixed nonzero minor.
+The original sign interface must be matched LITERALLY. The exact interface is (2)–(4), (11)–(15) of
+A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md,
+also used in §7eh.H. Its curvature sign uses 82 Choi copies and its matter sign uses 2 Choi plus 2 CAR copies.
+Choose one common finite Λ larger than the coefficient bounds |α_ia|
+and all original operator/chart bounds. Use the exact coin target
+
+\[
+ t_{ia}=\tfrac12(1+\alpha_{ia}/\Lambda),\qquad
+ F_{i,\pm}=\tfrac12(I\pm H_i/\Lambda).                 \tag{EI14a}
+\]
+
+Keep a strict coin collar by enlarging Λ. The original attenuation is
+then ε_h=1/(64Λ); references and actual gain are recomputed with that
+one Λ for the whole finite comparison catalogue. There is no independent
+slope fit. Conditioning and the resulting small gain enter the relative
+precision schedule. The two different bank carriers must be respected;
+padding to one common bank retains and pays every extra regenerated copy.
+
+For the real dilation V=Σ_a|a⟩K_a, K_a* K_a=E_a, append this controlled
+coin. Its complete two-column rotation, canonical born-input conversion,
+outcome record and environment are all included in the full target and
+positive-word compilation. Pulling the click projector through it gives
+
+\[
+ V^*(\sum_a|a\rangle\langle a|\,t_{ia})V=F_{i,+},
+ \qquad I-F_{i,+}=F_{i,-}.                            \tag{EI14b}
+\]
+
+There is no intermediate measurement, postselection, unknown cloning,
+or disposal of outcomes. Execute TWO independent f signs and EIGHT
+independent q signs on disjoint genuine regenerated banks. The original
+fixed diagonal truth table β₋ therefore has the exact full report effect
+
+\[
+ F_{report}=\sum_{s\in\{\pm1\}^2,\ t\in\{\pm1\}^8}
+ \beta_-(s,t)\bigotimes_{r=1}^2F_{f,s_r}
+                  \otimes\bigotimes_{j=1}^8F_{q,t_j}. \tag{EI14c}
+\]
+
+Equality of every local effect proves equality of this entire operator on
+arbitrary joint bank inputs; it does not rely on commuting successive
+measurements on one bank. The scalar report law additionally uses the
+original generated product inputs conditional on SITE. Keep the ORIGINAL
+separate fresh input-independent coherent READY flag. A detector's success
+flag cannot replace it, and no conditioning on that detector's outcome
+is introduced. Thus READY∧REPORT is the same original target effect.
+
+Now use the original seven-reference comparator with ONE common Λ and
+shared SITE; average only after the comparator products. All detector
+environments remain retained. This exact effect identity supplies the
+same target cold return c(Y). Genuine geometric marks remain at their
+unchanged bank-preparation prefixes, transported with their own full-column
+error budgets. Detector outputs, dilations and clocks remain separately
+retained; equality of the report effect does not identify them.
+
+Detector parameters may be generated coordinates θ in the SAME SAM chart.
+The coefficients and coins are then outputs of one retained solver, not
+new independent calibration knobs. For a detector variation at fixed
+physical input, differentiating (EI13) yields
+
+\[
+ \sum_a[(d_\theta\alpha_{ia})E_a+
+                  \alpha_{ia}d_\theta E_a]=0.         \tag{EI15}
+\]
+
+Thus all linked detector-source rows cancel OFF SHELL in the target,
+while their full actual heat and compiler errors are handled by B.
+If the original moment operator also changes with a physical field, its
+genuine dH_i is retained on the right; (EI15) does not erase that source.
+Use the actual joint chart Ṽ_h=V_h⊕V_θ with its maximum norm and
+I_h(Y,θ)=I_h(Y). The field decoder follows projection onto V_h; its
+physical lift is (v,0). The full joint SAM norm and C_h count ALL these
+directions and dimensions, including θ normals.
+
+This is an explicit paid completion of sufficient detectors; their
+unwrapped Book prices have not been identified. For an insufficient
+recorded detector, a retained failure flag plus the original paid reader
+is a possible total fallback, with all its source banks and costs. Old
+return positivity alone would not ensure visibility of a silent branch.
+The present transport covers a fixed detector or generated fresh SAM
+coordinates. An arbitrary unknown old quantum PROGRAM register requires
+an additional noncommuting old-return transport: a generic positive-word
+compiler can mix that register. Approximate matrix agreement alone must
+not be called exact old-code scalarity.
+
+### E. Consume the existing κ soundness and recovery on this same history
+
+Let H_W,reg be the causal off-shell histories constructed by A–B from the
+same retained prefix, genuine §7eh banks, original Book tuple, and effective
+regular field names. Optional D uses the same generated graph. Membership
+checks the actual alphabet, births, protection, descriptor, marks and finite
+bounds. It never tests the Einstein equation. The initial identity history
+and the positive actual corners establish nonzero return and nonempty
+admission independently of stationarity.
+
+For every finite requested precision, append the actual centre and retain
+the complete comparison ledger as in KAPPA §§2–6. Let L_k be its full
+normalized Book comparison covector, in the max norm of its genuine
+independent interfaces and old rows. The geometric map and its tangent
+readout A_k are the actual marked maps of §7eh, including their decoder
+error and corrected right lift. Equations (EI5)–(EI8), the finite marked
+map estimates, and the original full heat bound supply
+
+\[
+ \|L_k-A_k^*DS_{ES}(Z)\|_{full,*}\le\epsilon_k,
+ \qquad\epsilon_k\longrightarrow0                   \tag{EI16}
+\]
+
+with a chosen effective modulus. The budget contains spatial, attenuation,
+sampling, whole old-source, actual-body η/(gs), endpoint/|t|, mark, decoder,
+full-heat and price-reading terms. Every finite constant is evaluated
+before choosing its later resource. The preserved norm/right lifts prevent
+a growing SAM dimension or vanishing s from making a nonzero field source
+invisible. KAPPA's actual field-coordinate names and full residual
+certificate are both retained. The single-stage rank difference in Book03
+is still its own comparison, not a missing continuous Euler row.
+
+Now apply KAPPA (K10)–(K12) directly. The exact conclusion is
+
+\[
+ \pi\{\mathcal H\in H_{W,reg}:\mathfrak E_\kappa(\mathcal H)=0_\kappa\}
+ =\operatorname{Sol}_{reg,computable}
+                         (\mathrm{Einstein\! -\! two\ CAR}),  \tag{EI17}
+\]
+
+with the original source-defined coupling, independent torsion/link
+condition and both scalar equations:
+D_ω ê=0, G(ĝ)=−λT(Ψ), □_ĝΨ_A=0 for A=0,15.
+The material measure/coframe row is included through the invertible source
+map. Soundness uses a separating geometric comparison if DS_ES≠0.
+Recovery executes the same off-shell algorithm on any regular computable
+solution; the full normalized covector, including independently free
+preparation and old-history rows, has κ-zero. The source is defined before
+testing this condition; no Einstein filter or output-fitted matter is used.
+
+The owned non-null solution KAPPA (K11a), with κ_mat=−λ>0, q=1/(6κ_mat u)>0 and
+R=1/(3u) on a compact positive u-window, proves nonempty curved recovery.
+The primary exact nonvacuum family remains another solution input with
+its original scope. Its finite geometric roots are not silently identified
+with roots of the new complete native Book word. Generated states satisfy
+the actual forward equations and the existing full backward adjoint.
+
+This is the positive κ-source physical realization permitted by the
+preserved GR closure contract §5, now with the narrower fullStep alphabet,
+full independent controls and physical Golden transport on ONE execution.
+It is not the unchanged finite positive_gr theorem: (EI17) does not assert
+δB_N=0 for every finite N. That stronger joint_nonlinear_solve premise,
+M1-only derivation of physical local interaction availability, and independent
+acceptance/registry promotion remain separate. Nor does equality of κ-source
+identify all old readable programmes, finite prices or retained outcomes.
+
+### F. Decisive arithmetic check and reproducibility
+
+The following small exact check tests the changed matrix identity, both
+independent legs, correlated old-DATA controls, the unchanged field-coordinate
+lift, singular history and rectangular determinant factor. Its hostile
+control has a nonzero independent-leg imbalance; dropping skew(Mhat)
+would fail. This is arithmetic evidence for B, not a substitute for the
+owned native compiler, complete heat or GR theorems. FullStep retention
+uses the exact already-owned RAW (R12) with η_K as in (EI1).
+
+LF-normalized checker SHA-256: f9b147bfb2a8d1daa369d0f427753cae4429d27b3e883b352799f6f5ce2ba7b7.
+LF-normalized receipt SHA-256: bd7b4e427e5c29fee9d3be373a5f0f4250738c2d8ba07bde790e7d6e76166dea.
+The exact receipt is identical in normal and Python -O modes; the checker
+uses explicit failures, not removable assertions.
+
+```python
+"""Small exact arithmetic checks only; no native-word/heat/GR certificate."""
+import json
+import hashlib
+from pathlib import Path
+import sympy as S
+
+checks = []
+def check(name, value):
+    entries = list(value) if isinstance(value, S.MatrixBase) else [value]
+    reduced = [S.simplify(S.cancel(x)) for x in entries]
+    if any(x != 0 for x in reduced):
+        raise RuntimeError(f'{name}: {reduced}')
+    checks.append(name)
+
+Q = S.Rational
+I2 = S.eye(2)
+J = S.Matrix([[0, -1], [1, 0]])
+v = S.Matrix([Q(3, 5), Q(4, 5)])
+q, u = Q(16, 25), Q(24, 25)
+V = S.diag(-q, 1-q)
+Mhat = S.Matrix([[Q(3, 5), Q(1, 20)], [-Q(1, 40), Q(7, 10)]])
+Sym = (Mhat + Mhat.T)/2
+Skew = (Mhat - Mhat.T)/2
+c = (v.T*Mhat*v)[0]
+check('actual_scalar_corner', c-Q(169, 250))
+check('skew_scalar_corner_zero', (v.T*Skew*v)[0])
+check('one_bit_right_lift', (v.T*(V*J-J*V)*v)[0]-u)
+
+# CODE x old-DATA is four dimensional; generators include correlations.
+i = S.kronecker_product(v, I2)
+M4 = S.kronecker_product(Mhat, I2)
+S4 = S.kronecker_product(Sym, I2)
+A4 = S.kronecker_product(Skew, I2)
+X = S.Matrix([[0,2,-1,3],[-2,0,4,-2],[1,-4,0,1],[-3,2,-1,0]])/13
+check('correlated_generator_skew', X+X.T)
+check('all_old_columns_scalar', i.T*M4*i-c*I2)
+check('state_independent_lift_operator',
+      i.T*(S.kronecker_product(V,I2)*S.kronecker_product(J,I2)
+            -S.kronecker_product(J,I2)*S.kronecker_product(V,I2))*i-u*I2)
+Dplus = i.T*M4*X*i
+Dminus = -i.T*X*M4*i
+Tmat = i.T*(S4*X-X*S4)*i
+Amat = i.T*A4*X*i
+check('matched_hermitian_part', (Dplus+Dminus+(Dplus+Dminus).T)/2-Tmat)
+
+z, d, g, s = Q(1,7), Q(6,7), Q(1,23), Q(1,29)
+Af = S.Matrix([[Q(3,5),Q(1,10)],[Q(1,10),Q(1,4)]])
+As = S.Matrix([[Q(1,2),Q(1,4)],[Q(1,4),Q(1,8)]])
+check('singular_history_rank_one', As.det())
+
+def inv2(D):
+    return S.Matrix([[D[1,1],-D[0,1]],[-D[1,0],D[0,0]]])/D.det()
+
+def audit_history(Aold, eta, repetitions, tag):
+    C = c**repetitions*I2
+    denominator = d*I2 + eta*C*Aold*C.T
+    inverse = inv2(denominator)
+    B = eta*C*Aold*C.T*inverse
+    w = S.trace(B)
+    rho = B/w
+    gamma = 4*repetitions*w*g*s/c
+    def derivative(local):
+        DC = c**(repetitions-1)*local
+        return -S.trace(inverse*eta*(DC*Aold*C.T+C*Aold*DC.T))
+    fp, fm = derivative(Dplus), derivative(Dminus)
+    ts = S.trace(rho*Tmat)
+    ta = S.trace(rho*Amat)
+    check(tag+'_forward_leg', fp-(-w*ts/c-2*w*ta/c))
+    check(tag+'_reverse_leg', fm-(-w*ts/c+2*w*ta/c))
+    check(tag+'_matched_skew_cancels', fp+fm+2*w*ts/c)
+    check(tag+'_imbalance', (fp-fm)/2+2*w*ta/c)
+    check(tag+'_actual_gain', (fp+fm)/gamma+ts/(2*repetitions*g*s))
+    return S.cancel((fp+fm)/gamma), S.cancel((fp-fm)/2)
+
+_, imbalance = audit_history(Af, Q(1,21), 3, 'rational_nondiagonal_past')
+if imbalance == 0:
+    raise RuntimeError('Hostile independent-leg imbalance unexpectedly zero')
+
+# Two simultaneous physical field coordinates, four-dimensional CODE.
+v2 = S.kronecker_product(v,v)
+J1,J2 = S.kronecker_product(J,I2),S.kronecker_product(I2,J)
+V1,V2 = S.kronecker_product(V,I2),S.kronecker_product(I2,V)
+physical = S.Matrix([Q(2,3),-Q(5,7)])
+iota = S.diag(2,3)
+coordinate = iota*physical
+lift = (coordinate[0]*J1+coordinate[1]*J2)/u
+ell = S.Matrix([(v2.T*(Vj*lift-lift*Vj)*v2)[0] for Vj in (V1,V2)])
+check('two_field_coordinate_lift', ell-coordinate)
+check('original_field_coordinates_recovered', iota.inv()*ell-physical)
+op_bound = (abs(coordinate[0])+abs(coordinate[1]))/u
+C_squared = 26/u**2  # m=2; ||diag(2,3)||_{linf->l2}^2=13
+physical_norm = Q(5,7)
+if not S.simplify(C_squared*physical_norm**2-op_bound**2)>0:
+    raise RuntimeError('Right-lift physical-norm bound failed')
+checks.append('nonquotient_norm_right_lift_bound')
+
+# Exact Golden retention, actual c^(2M), singular past, no inverse Aold.
+p = (S.sqrt(5)-1)/2
+vg = S.Matrix([S.sqrt(p),p])
+ug = 2*p*S.sqrt(p)
+Vg = S.diag(-p**2,1-p**2)
+check('golden_born_normalization', (vg.T*vg)[0]-1)
+check('golden_lift_gain', (vg.T*(Vg*J-J*Vg)*vg)[0]-ug)
+normalized2,_ = audit_history(As, z*S.simplify(p**2), 3, 'golden_K2_singular')
+normalized6,_ = audit_history(As, z*S.simplify(p**6), 3, 'golden_K6_singular')
+check('golden_rescaling_actual_gain_cancels', normalized2-normalized6)
+
+# A rectangular past 1 -> 2 retains its dimension constant.
+x = S.Matrix([Q(1,2),Q(1,3)])
+eta = S.symbols('eta', positive=True)
+cc = S.symbols('cc', positive=True)
+Dout = d*I2+eta*cc**2*x*x.T
+Din = d+eta*cc**2*(x.T*x)[0]
+check('rectangular_determinant_dimension_factor', Dout.det()-d*Din)
+check('rectangular_price_source',
+      S.diff(Dout.det(),cc)/Dout.det()-S.diff(Din,cc)/Din)
+
+# Consume the owned RAW R12 value; do not reprove its admission/heat theorem.
+# Exact Q(a) arithmetic uses a^4+a^2-1=0, p=a^2, a=sqrt(p)>0.
+aa = S.symbols('aa')
+minimal = aa**4+aa**2-1
+r_raw = S.rem(aa**7+4*aa**8, minimal, aa)
+tr_as = S.trace(As)
+raw_normalized = []
+for depth in (1,3):
+    eta_raw = z*S.rem(S.expand(r_raw**(2*depth)), minimal, aa)
+    q_raw = eta_raw*c**6
+    w_raw = q_raw*tr_as/(d+q_raw*tr_as)
+    gamma_raw = 4*3*w_raw*g*s/c
+    dj_raw = -2*eta_raw*c**5*S.trace(As*(Dplus+Dminus))/(d+q_raw*tr_as)
+    normalized_raw = S.cancel(dj_raw/gamma_raw)
+    check(f'RAW_R12_K{depth}_actual_gain',
+          normalized_raw+S.trace((As/tr_as)*Tmat)/(2*3*g*s))
+    raw_normalized.append(normalized_raw)
+check('RAW_R12_rescaling_cancels', raw_normalized[0]-raw_normalized[1])
+
+receipt = {
+    'scope':'Exact small-matrix arithmetic; no native compilation or heat claim',
+    'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    'checks':checks,
+    'actual_c':str(c),
+    'nonzero_independent_leg_imbalance':str(imbalance),
+    'golden_normalized_source_K2_equals_K6':True,
+    'RAW_R12_retention':'eta_K=z*r^(2K), r=a*p^3+4*p^4; consumed owned formula',
+    'RAW_R12_normalized_source_K1_equals_K3':True,
+    'matrix_dimensions':[2,4]
+}
+output = json.dumps(receipt, indent=2)+'\n'
+Path(__file__).with_suffix('.json').write_text(output, encoding='utf-8')
+print(output, end='')
+```
+
+```json
+{
+  "scope": "Exact small-matrix arithmetic; no native compilation or heat claim",
+  "checker_sha256": "f9b147bfb2a8d1daa369d0f427753cae4429d27b3e883b352799f6f5ce2ba7b7",
+  "checks": [
+    "actual_scalar_corner",
+    "skew_scalar_corner_zero",
+    "one_bit_right_lift",
+    "correlated_generator_skew",
+    "all_old_columns_scalar",
+    "state_independent_lift_operator",
+    "matched_hermitian_part",
+    "singular_history_rank_one",
+    "rational_nondiagonal_past_forward_leg",
+    "rational_nondiagonal_past_reverse_leg",
+    "rational_nondiagonal_past_matched_skew_cancels",
+    "rational_nondiagonal_past_imbalance",
+    "rational_nondiagonal_past_actual_gain",
+    "two_field_coordinate_lift",
+    "original_field_coordinates_recovered",
+    "nonquotient_norm_right_lift_bound",
+    "golden_born_normalization",
+    "golden_lift_gain",
+    "golden_K2_singular_forward_leg",
+    "golden_K2_singular_reverse_leg",
+    "golden_K2_singular_matched_skew_cancels",
+    "golden_K2_singular_imbalance",
+    "golden_K2_singular_actual_gain",
+    "golden_K6_singular_forward_leg",
+    "golden_K6_singular_reverse_leg",
+    "golden_K6_singular_matched_skew_cancels",
+    "golden_K6_singular_imbalance",
+    "golden_K6_singular_actual_gain",
+    "golden_rescaling_actual_gain_cancels",
+    "rectangular_determinant_dimension_factor",
+    "rectangular_price_source",
+    "RAW_R12_K1_actual_gain",
+    "RAW_R12_K3_actual_gain",
+    "RAW_R12_rescaling_cancels"
+  ],
+  "actual_c": "169/250",
+  "nonzero_independent_leg_imbalance": "-70291832461171543743509450475/3879801487599986463819670104670108",
+  "golden_normalized_source_K2_equals_K6": true,
+  "RAW_R12_retention": "eta_K=z*r^(2K), r=a*p^3+4*p^4; consumed owned formula",
+  "RAW_R12_normalized_source_K1_equals_K3": true,
+  "matrix_dimensions": [
+    2,
+    4
+  ]
+}
+```

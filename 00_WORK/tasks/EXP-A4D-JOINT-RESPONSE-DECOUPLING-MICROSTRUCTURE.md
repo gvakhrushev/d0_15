@@ -19657,3 +19657,73 @@ entangler or a live reporter palette is not silently inserted into that
 local interface. All such broader controls keep their separate source
 obligations. This removes the incoming geometric marked-map transport
 premise, without claiming an exact finite stationary-root theorem.
+
+
+## 3 November 2026 — fullStep-only control and the same-history κ Einstein composition (§7ei)
+
+Phase: native realization and final composition in this existing #334 owner.
+Input: 07307695bceca069626ec86c56117986d1c8dd07, §7eh, and the existing
+FULLSTEP, RAW (R12), SOURCE, GENERAL_EINSTEIN_SOURCE and KAPPA owners.
+The primary artifact now gives (EI1)–(EI17); this is one composed positive
+result, with no new task, scientific registry promotion or replacement of
+the unchanged finite positive_gr/raw216 contracts.
+
+Exact parent substitution: the complete geometric sampling writer no longer
+needs exact native inverses/SourceI, exact SAM projectors, or a selfadjoint
+actual compiled body. A fixed positive word of two adjacent original
+fullStep copies preserves old DATA exactly. Its real compressed corner is
+scalar, and its symmetric part gives the full paired source; its skew part
+is explicitly charged in BOTH independent preparation legs. The bound is
+E_tau,h+C_h[L_h s R_v²+2η/(gs)] in §7eh's original physical norm with the
+state-independent control norm and isometric field lift. No kernel rows
+or dimension-dependent loss are suppressed by quotienting or rescaling the
+field norm. Fresh repetitions retain the actual c^(2M) and all old sources.
+
+The WHOLE operation uses fullStep: consume RAW R12's actual born-pair
+corner r=a p³+4p⁴, η_K=z r^(2K), dimension factor 4 and four paid stages.
+The heat/gain remainder is bounded by the original prefix constants times
+(4r²)^(-K). Compiler/chord/marked-map precision is fixed before late K;
+whole-word endpoint precision retains the finite c_min^M dependence.
+
+The same physical decoder sends the internally executed e→p e operation
+to ê→φê and ĝ→φ²ĝ. Exact finite homogeneity of the source operand and the
+full comparison estimate give the actual κ-source Golden weight. This is
+a physical field transport, not a Bratteli ratio or homogeneity assertion
+for the finite raw Book value. The actual coordinate measure and PF remain
+distinct; no independent measure writer is introduced.
+
+The optional larger reader class is constructed from an internally recorded
+real detector satisfying H_i=Σα_ia E_a. Paid controlled coins realize exactly
+the ORIGINAL f/q sign effects. Two f and eight q signs, their distinct full
+banks, original diagonal truth table, separate READY and shared SITE then
+give the whole original report effect. Generated detector-coordinate rows
+cancel off shell, while all extra work/heat and actual compiler errors remain.
+This covers a fixed detector or fresh joint SAM chart, not arbitrary unknown
+old quantum CODE and not equality of unwrapped detector prices.
+
+The common actual-history, complete covector and marked readout estimate
+(EI16) is the precise substitution into KAPPA K10–K12. Its zero set in the
+declared κ-source topology maps onto, and only onto, the regular computable
+Einstein–two-CAR solutions. The same off-shell compiler supplies recovery;
+the owned non-null solution makes it nonempty. The admitted G_CX domain is
+consumed, not inferred from passive algebra or M1 alone. A unique schedule
+for all D0 continuations is not part of this family contract.
+
+Remaining boundary: exact finite Book critical histories and the original
+joint_nonlinear_solve/unchanged positive_gr are not obtained from κ-zeros.
+The M1-only physical interaction derivation and independent scientific
+acceptance also remain distinct. This result must not be presented as those
+stronger conclusions. Write paths remain this brief and the existing primary
+artifact; claims, task lifecycle and assembly acceptance are unchanged.
+
+Smallest decisive verification: exact 2×2/4×4 arithmetic, including a nonzero
+independent-leg imbalance, correlated controls, physical-coordinate right
+lifts, singular histories, actual RAW retention gain and rectangular
+log-determinant conversion. The complete checker and receipt are embedded
+in §7ei.F. LF-normalized checker SHA-256:
+f9b147bfb2a8d1daa369d0f427753cae4429d27b3e883b352799f6f5ce2ba7b7.
+Receipt SHA-256:
+bd7b4e427e5c29fee9d3be373a5f0f4250738c2d8ba07bde790e7d6e76166dea.
+Normal and Python -O receipts agree. Bounded independent read-only reviews
+checked the native/κ contract, the full source bound, and the physical
+Golden/report interface; they are not an assembly acceptance registration.
