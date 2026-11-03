@@ -20149,3 +20149,52 @@ LF-normalized checker / receipt SHA256 pairs:
 Validation of the final integrated packet: all three extracted scripts pass normally and with Python -O, with complete LF-normalized receipts identical (36, 140 and 41 bounded checks). Independent read-only reviews covered original criticality/price, source-domain/common-centre transport, and literal native geometry/Spin/clock realization. The algebraic-vs-native tangent wording, shared-u extension and precision order were aligned with their actual hypotheses before publication. These reviews are not registry acceptance.
 
 Final integration guards passed: validate_work, validate_agent_protocol, gr_assembly check and diff whitespace. Registry remains 98 results / 22 obligations / 5 discharged, scientific_promotion=false. Incoming §7en additionally proves exact full-price transport for every same-layout replacement of our complete identity kernel slots, with their original mark fidelity checked separately; no small-heat approximation is needed on that subdomain.
+
+
+## 3 November 2026 — post-no-go contract and one return/record source application
+
+Same existing #334 / constitutive / native_sector. Phase: native realization
+and final composition. Scientific input
+`e63ef7a3073f4854a2fc8fd4c69bf004bc42d544`. This bounded continuation consumes
+§§7ei–7eo rather than repeating their source/geometry or finite-root work.
+
+**Exact parent question.** On the actual native return with retained old Gram,
+does the component not carried by the same freely admitted scalar controller
+provide the independent field source required by the physical closure?
+The [short contract](../../02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md)
+states A–D and preserves the older raw216 and family quantifiers.
+
+**Application and outcome.** Explicit input/output Gram transport preserves
+the dimensional absolute-price constant. In the input convention the complete
+return differential is dJ=-(2w/c)dc-zc^2 Tr(D^-1 dA), D=(1-z)I+zc^2A.
+Its compensated field covector is -zc^2 Tr(D^-1[A_Y-(c_Y/c_t)A_t]).
+On the fixed-old canonical-identity current chart this is zero. Moving
+normalized input with generated reference does not produce an extra first
+source. Free old-unitary tangents have dA=0 at the centre only; no off-shell
+no-go for a different moving archive is inferred.
+
+**What is reused.** §§7ei/7el supply the native word/fullStep/full-price/kappa
+source composition; §7en supplies whole-price conjugacy on its complete-operator,
+marked, same-layout implementation fibre. §7eo supplies exact zeros of its
+declared finite comparison covector, its separate smooth graph-source argument,
+and normalized transport. None is relabelled as unrestricted free-controller
+stationarity. The report constraint keeps its true reaction.
+
+**Next executable dependency.** Obtain the selected return/record branch
+pricing or source-equivalent complete-price binding on this same native H.1
+task, and derive its actual independent-input domain. Then evaluate
+R_Y-(c_Y/c_t)R_t and the remaining real preparation/record/scene equations;
+include the known CD4 READY/P0/visibility sources whenever they are independent.
+No new action, external frame, Einstein-residual assignment or root census.
+
+**Write surface and evidence.** Two linked research notes,
+`sources/d0_native_return_record_gate_2026-11-03/check_return_record_gate.py`
+and observed `result.json`, plus this consumer and the appended primary-owner
+application. The decisive check differentiates the genuine determinant
+independently and retains noncommuting dA, input/output Gram transport,
+the nonzero fixed-c archive control, canonical/moving-input identities,
+Golden native normal, full-nuisance screening and the centre-versus-neighbourhood
+hostile control. Only these changed calculations and affected structural guards
+are required. No claim, assembly edge, queue state, Ready transition, or
+historical receipt is changed. `GR_closed=false`; source-specific H+J and
+complete Cost-Info obligations remain distinct until their binding is proved.

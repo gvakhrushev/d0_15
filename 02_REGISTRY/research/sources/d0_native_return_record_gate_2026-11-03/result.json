@@ -1,0 +1,303 @@
+{
+  "canonical_input": {
+    "Gram_first_derivative": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "compressed_first_derivative": [
+      [
+        "0",
+        "-13/48"
+      ],
+      [
+        "13/48",
+        "0"
+      ]
+    ]
+  },
+  "checks": [
+    "dense_fixture_and_variation_are_rational_Hermitian",
+    "dense_fixture_is_strict_positive_contraction",
+    "Hermitian_variation_does_not_commute_with_A",
+    "positive_contraction_and_corner_at_step_-1/1000",
+    "positive_contraction_and_corner_at_step_1/1000",
+    "independent_determinant_base_and_rational_inverse",
+    "actual_resolvent_weight_positive",
+    "determinant_derivative_equals_complete_return_covector",
+    "fixed_corner_noncommuting_Gram_source_is_nonzero",
+    "rectangular_nonisometric_contraction_retains_true_output_kernel",
+    "rectangular_input_output_determinants_include_kernel_factor",
+    "rectangular_actual_output_weight_equals_input_weight",
+    "matrix_compensation_retains_nonzero_noncommuting_controller_Gram_jet",
+    "independent_determinant_sources_equal_compensated_Gram_covector",
+    "moving_input_has_exact_normalized_Stiefel_tangent",
+    "canonical_endpoint_variation_is_nonzero_unitary_tangent",
+    "generated_reference_has_nonzero_compressed_jet_but_zero_Gram_first_jet",
+    "proper_cut_rotation_has_zero_first_Gram_jet_but_second_jet_minus_two",
+    "proper_cut_rotation_return_is_not_constant_near_centre",
+    "Golden_field_relation_and_positive_root",
+    "literal_Golden_corner_c_squared_plus_u_squared_is_one",
+    "literal_Golden_return_normal_4wu_over_c_is_strictly_positive",
+    "literal_Golden_normal_over_weight_has_exact_squared_value",
+    "illustrative_EY_nonzero_while_the_single_Et_is_zero",
+    "illustrative_complete_nuisance_Schur_complement_zero",
+    "illustrative_joint_stationary_lift_has_identically_constant_effective_price",
+    "compensated_source_cancels_every_coefficient_of_F_of_c",
+    "compensated_residual_retains_nonzero_regular_chart_value"
+  ],
+  "compensated_matrix_fixture": {
+    "A_Y": [
+      [
+        "1/7",
+        "1/8",
+        "1/10"
+      ],
+      [
+        "1/8",
+        "-1/11",
+        "1/12"
+      ],
+      [
+        "1/10",
+        "1/12",
+        "1/14"
+      ]
+    ],
+    "A_t": [
+      [
+        "1/9",
+        "-1/13",
+        "1/17"
+      ],
+      [
+        "-1/13",
+        "1/19",
+        "1/23"
+      ],
+      [
+        "1/17",
+        "1/23",
+        "-1/29"
+      ]
+    ],
+    "J_Y_from_determinant": "-12351611829782542281743/30172298451777927973784727471",
+    "J_t_from_determinant": "153017027772294839714160779/759781186451238925005212977139187",
+    "c_Y": "5/13",
+    "c_Y_over_c_t": "-45/26",
+    "c_t": "-2/9",
+    "compensated_source_from_Gram": "-3425192672463728231597978441/56336367973162234365201347416024162",
+    "compensated_source_from_determinants": "-3425192672463728231597978441/56336367973162234365201347416024162"
+  },
+  "compensated_polynomial_fixture": {
+    "F(c)": "c^4+3c^2+2c+7",
+    "R": "Y^2+Yt+2t^2",
+    "c": "2Y+3t+Yt",
+    "c_t": "3",
+    "cleared_denominator_polynomial_difference": "0",
+    "compensated_residual_at_point": "-3",
+    "regular_point_Y_t": [
+      "0",
+      "1"
+    ]
+  },
+  "dense_fixture": {
+    "A": [
+      [
+        "1/2",
+        "1/10",
+        "1/20"
+      ],
+      [
+        "1/10",
+        "2/5",
+        "1/15"
+      ],
+      [
+        "1/20",
+        "1/15",
+        "1/3"
+      ]
+    ],
+    "A_leading_principal_minors": [
+      "1/2",
+      "19/100",
+      "547/9000"
+    ],
+    "Gram_source": "-16719509545777181777/773648678250716101891916089",
+    "I_minus_A_leading_principal_minors": [
+      "1/2",
+      "29/100",
+      "3401/18000"
+    ],
+    "c": "3/7",
+    "corner_source": "-60776888090894712688/331563719250306900810821181",
+    "dA": [
+      [
+        "1/7",
+        "1/8",
+        "1/10"
+      ],
+      [
+        "1/8",
+        "-1/11",
+        "1/12"
+      ],
+      [
+        "1/10",
+        "1/12",
+        "1/14"
+      ]
+    ],
+    "dc": "2/11",
+    "dc_zero_source": "-16719509545777181777/773648678250716101891916089",
+    "det_D": "271279406659342009754308239/271280124190981879758848000",
+    "independent_logdet_derivative": "-475596745273594534147/2320946034752148305675748267",
+    "w": "2170603146103382596/10047385431827481842752157",
+    "z": "1/1048576"
+  },
+  "golden": {
+    "c": {
+      "rational": "-2",
+      "sqrt5_coefficient": "1"
+    },
+    "diagnostic_decimals": {
+      "normal_4wu_over_c": "0.000007000613008648326155763698584820351144121578747727167577750074028281212",
+      "normal_divided_by_w": "16.46536821817193800257584838064360336990984079742255589025233882112384"
+    },
+    "normal_divided_by_w_squared": {
+      "rational": "128",
+      "sqrt5_coefficient": "64"
+    },
+    "normal_squared": {
+      "rational": "-668501861728768/4722510599019791646721",
+      "sqrt5_coefficient": "299066625884416/4722510599019791646721"
+    },
+    "u_squared": {
+      "rational": "-8",
+      "sqrt5_coefficient": "4"
+    },
+    "w": {
+      "rational": "4718588/68720525311",
+      "sqrt5_coefficient": "-2097150/68720525311"
+    }
+  },
+  "identities": {
+    "canonical_Gram": "dC=i^T*dM*i is skew at M=I after normalized input/reference terms cancel; d(C^T C)=0",
+    "compensated_matrix_return_source": "J_Y-(c_Y/c_t)J_t=-z*c^2*Tr(D^-1*(A_Y-(c_Y/c_t)*A_t))",
+    "compensated_source": "S_Y-(c_Y/c_t)S_t=R_Y-(c_Y/c_t)R_t for S=F(c)+R",
+    "complete_return_source": "dJ=-(2w/c)dc-z*c^2*Tr(D^-1*dA), D=(1-z)I+z*c^2*A",
+    "rectangular_Gram_transport": "det(D_out)=(1-z)^(m-r)*det(D_in); J_out=J_in-(m-r)*log(1-z); w_out=w_in for fixed m,r,z"
+  },
+  "illustrative_nuisance": {
+    "EY_at_counterpoint": "2",
+    "Et_at_counterpoint": "0",
+    "complete_Schur_complement": "0",
+    "effective_price": "0",
+    "price": "t^2/2+(r-Y)^2/2",
+    "single_t_counterpoint": [
+      "2",
+      "0",
+      "0"
+    ],
+    "stationary_nuisances": "t=0,r=Y"
+  },
+  "proper_cut_rotation": {
+    "A": "cos(t)^2",
+    "A_first_at_zero": "0",
+    "A_second_at_zero": "-2",
+    "J_second_at_zero_with_fixed_c": "3/8563364",
+    "M": "cos(t)"
+  },
+  "rectangular_Gram_transport": {
+    "A_input": [
+      [
+        "281/1764",
+        "137/1680"
+      ],
+      [
+        "137/1680",
+        "189/1600"
+      ]
+    ],
+    "A_output": [
+      [
+        "34/225",
+        "41/420",
+        "11/360"
+      ],
+      [
+        "41/420",
+        "65/784",
+        "-5/672"
+      ],
+      [
+        "11/360",
+        "-5/672",
+        "25/576"
+      ]
+    ],
+    "C": [
+      [
+        "1/3",
+        "1/5"
+      ],
+      [
+        "1/7",
+        "1/4"
+      ],
+      [
+        "1/6",
+        "-1/8"
+      ]
+    ],
+    "J_output_minus_J_input": "-(m-r)*log(1-z)",
+    "det_D_input": "10348496244360947667/10348515479697489920",
+    "det_D_output": "2170234889886156139984905/2170240993527855038070784",
+    "input_dimension_r": 2,
+    "kernel_factor": "1048575/1048576",
+    "output_dimension_m": 3,
+    "w_input": "670507868707/13797994992481263556",
+    "w_output": "670507868707/13797994992481263556"
+  },
+  "reference_commit": "e63ef7a3073f4854a2fc8fd4c69bf004bc42d544",
+  "reference_sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "role": "Formula provenance; this checker does not validate native admission or the whole source theorem.",
+      "sections": "7eo.C NG15-NG19; 7eo.F CD1-CD5; 7eo.I.4"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_WORD_NORMAL_SOURCE_2026_10_31.md",
+      "role": "Original c=p^3,u=2p sqrt(p) and 4wu/c return normal; historical words/heat are not replayed.",
+      "sections": "Exact finite construction; general same-reporter application"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_JOINT_THERMAL_STATIONARITY_AND_SHARED_SOURCE_LOSS_2026_10_31.md",
+      "role": "Shared-scalar chain-rule scope.",
+      "sections": "Why the missing normal cannot be selectively cancelled on this route"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "role": "The actual residual requires a supplied price/Info table; none is fabricated here.",
+      "sections": "5 and 5.1"
+    }
+  ],
+  "scopes": {
+    "Gram_carrier": "NG15 uses the output Gram; the rectangular check transports to the input Gram at fixed dimensions and z without dropping the output-kernel determinant factor.",
+    "canonical_input": "Pointwise first-jet identity at an identity return with generated reference; not global constancy under arbitrary old-gate variations.",
+    "compensated_source": "Exact polynomial chain-rule check on a regular c_t!=0 chart; no selected D0 residual is claimed.",
+    "complete_nuisance": "Illustrative counterexample, not D0: S=t^2/2+(r-Y)^2/2.",
+    "dense_fixture": "Exact rational Hermitian matrix check, not a newly admitted D0 history.",
+    "golden": "Exact native scalar-corner algebra; decimal values are diagnostic only.",
+    "matrix_compensation": "Exact joint return-source identity with both A_Y and A_t nonzero; no D0 field or controller admission is inferred from this fixture.",
+    "not_established": "Einstein matching, one-execution Cost-Info binding, admission, complete physical variation coverage, and any GR closure flag.",
+    "proper_cut_hostile_control": "Exact 2x2 unitary rotation shows A'(0)=0 with A''(0)=-2."
+  },
+  "status": "PASS_EXACT_ALGEBRA"
+}

@@ -136941,3 +136941,69 @@ Receipt SHA256: `2236edc503ec7dacaf1cd6255b12438b8f868afd25af33ed652187db300143f
   }
 }
 ```
+
+
+## Post-no-go closure contract and native return/record application — 3 November 2026
+
+Existing #334 / constitutive / native_sector. Scientific input
+`e63ef7a3073f4854a2fc8fd4c69bf004bc42d544`. Phase: native realization and
+final source composition. No new task, root search, accepted result or lifecycle
+change. All preceding sections, including §§7em–7eo, remain intact.
+
+The [short scoped closure contract](A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md)
+fixes A–D: one actually admitted complete execution, a surviving full source
+after every independent internal equation, same-history faithful source and
+two-way recovery, and the native basis of this task/input graph. It preserves
+the original broader contract and raw216. It does not require one identical
+scheduler in every possible D0 world.
+
+The [one-channel application](A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md)
+consumes NG15–NG19, CD1–CD5, FA4–FA5 and the existing October31 native-normal/
+shared-map owners. The input Gram A=C_<* C_< and actual output Gram C_< C_<*
+are explicitly transported, including their fixed dimensional log constant.
+For the current corner c,
+
+    D=(1-z)I+z c^2 A,
+    dJ=-(2w/c) dc-z c^2 Tr(D^-1 dA),
+    w=Tr(z c^2 A D^-1).
+
+If an independently ADMITTED scalar controller t has c_t != 0, the exact
+return covector at fixed c is
+
+    J_Y[v]-(c_Y[v]/c_t) J_t
+      =-z c^2 Tr(D^-1[A_Y[v]-(c_Y[v]/c_t) A_t]).
+
+On the current fixed-old canonical-identity field chart the INPUT Gram is
+identically I, so this candidate return contributes no independent channel.
+Moving normalized input with its generated reference does not restore it.
+Independently varied old unitary gates have dA=0 AT THE CENTRE; this latter
+identity is not promoted to a neighbourhood no-go or a statement that the
+old record has no second jet. The proper-cut cos^2(t) control retains its
+nonzero second derivative.
+
+This does not negate §7eo. Its H.1 source with positive gain is the constrained
+pullback B_Y+DQ*B_r with real report reaction -B_r. A controller changing the
+required report law is not automatically an input of that task. FN2–FN7
+already cover its strict faithful same-layout implementation fibre. EO1 has
+exact zeros for its declared finite comparison covector; FA5 transports them
+to the existing kappa source with the actual basis/gain/norm constants, not
+to every different finite Euler or raw216 contract.
+
+The remaining parent substitution is explicit: derive the physical
+task/price binding for this graph, then compute the genuine selected
+return/record/Cost-Info residual (or prove source equivalence) and retain the
+CD4 independent READY/P0/visibility rows whenever the actual task admits them.
+For S=F(c)+R, scalar-controller elimination leaves
+R_Y-(c_Y/c_t)R_t; other independent preparation/record/scene equations remain.
+Do not add an arbitrary Shannon/R term to Book03 03.25, or infer the actual
+branch-price table from the desired Einstein source. The existing
+BOOK_SOURCE_BINDING equations give its differential interface, not that
+missing native selection.
+
+The bounded checker at
+`sources/d0_native_return_record_gate_2026-11-03/check_return_record_gate.py`
+and its observed `result.json` test these exact differential identities and
+scope controls. They do not replay the old native-word/heat/GR suites or
+independently accept the full prior analytic chain. `GR_closed=false`;
+`positive_gr`, unrestricted physical closure, raw216 and assembly acceptance
+remain unchanged.
