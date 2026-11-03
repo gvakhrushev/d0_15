@@ -117269,6 +117269,954 @@ print(json.dumps(result,sort_keys=True,indent=2)+'\n',end='')
 ```
 <!-- END 7eg SHARED WRITER RECEIPT -->
 
+## 7ej. Transfer the actual Choi/CAR bank and its marked instruments through one paid CODE writer
+
+3 November 2026. Existing Draft #334 / constitutive/native-programme-v1.
+Native realization and final composition. Scientific calculation on
+768277b90e402572386d342fc24dc44b2376ecbb; integrate incoming 07307695b and
+6e7dec9ed before publication. Their §7eh already constructs all seven
+GENUINE reference banks and shared SITE, and §7ei composes the original
+fullStep/Golden/kappa source. Those results are consumed, not repeated.
+
+The precise additional consumer is a FULL joint sampling-record/geometric
+instrument first jet, rather than only the mean geometric decoder. The
+incoming source theorem and its declared kappa interpretation remain valid
+without this stronger conclusion. A scalar derivative and even O(s) full
+state convergence do not imply the field-normalized joint first jet: (MG1)
+gives an exact retained-record witness. Here a new bounded lift supplies that
+stronger map at the completed original SOURCE bank and fixed-processor marks,
+with every added control paid and its independent source kept. This is not
+an additional prerequisite imposed on the existing kappa realization.
+
+Consume the actual bank rotations (879)--(881), incoming §7eh's reference/
+shared-SITE recipe, fixed ten-sign processor, raw-cylinder realization and
+full-column compiler; do not replace those resources by a scalar coin. CODE
+in the following formulas denotes the FRESH sampling SAM of §7eh.H, not the
+independent reporter palette of §7ee or a separately loaded centre fieldname.
+
+The result is a source and marked-comparison lift for that EXISTING generated
+Choi/CAR execution. It does not identify that execution with the different
+original spatial full128 word, or infer their common price from metric values.
+It also does not prove an exact finite stationary word, a field minimum, or
+the actual continuation/stationarity law for the claimed physical realization.
+No universal requirement that every D0 programme choose this interpretation
+is added to the first faithful curved-realization objective.
+
+### 7ej.A. The owned full bank, not a probability-only replacement
+
+At a fixed mesh/chart, write B(Y) for the COMPLETE original resource
+preparation of §7cz879--881, including its fixed initial vacuum/site/Fourier
+prefix and any required realification. Each genuine Choi copy uses
+
+    O_b=I+K_b+K_b^2/(1+c), K_b=b e0^T-e0 b^T,
+    O_b e0=b, c=e0^T b>0.
+
+Its entire matrix and derivative are already given there, with no 1/c loss.
+The original material preparation is the controlled O_(m_x) O_(m_*)^T,
+identity on every unknown RIGHT column. Tensor the required independently
+regenerated Choi/CAR copies; do not clone an unknown exemplar. All true Julia
+slacks, normal projection R2, density/site tags, material amplitudes, unused
+grades and padded native columns remain the owner's objects.
+
+Let D_nu be a fixed prefix of the SAME field-independent ten-sign processor,
+including its coherent factory flags, READY/report and the logical
+marks at that completed-bank/fixed-processor interface. Then A_nu(Y)=D_nu B(Y) is its full prefix map on every input column.
+Fixed raw-birth conjugation, padding, realification and untouched protected
+factors are included exactly as in RAW_CYLINDER_REALIZATION_RU.md (R2)--(R6).
+On a compact regular field chart the finite A_nu are computable C3 maps.
+Their actual derivative bounds are retained, not set to one.
+
+Use the complete SOURCE-bank frontier and the subsequent fixed D_nu
+prefixes. In particular incoming §7eh.H supplies an additional unsplit
+original bank at Y_b for marks requiring that genuine state; it is prepared,
+retained, uncomputed and priced, not substituted by a pair of scalar reports.
+An earlier completed-resource effect can be deferred to this frontier ONLY
+when it commutes with the intervening preparations. This holds for effects
+on its own fresh bank disjoint from those preparations and identity on any
+shared control. It is not asserted for an off-diagonal shared-SITE test,
+an unfinished-resource mark, or an early new CODE correlation. Such marks
+retain the incoming owner's actual prefix/compilation bounds and are not
+silently moved or identified with a different pure state. No arbitrary
+CODE frame is inserted inside the field-dependent writer below.
+
+This explicitly consumes the actual fixed-processor data/operation split.
+It is not an assertion that §7eg's small scalar-effect bank already had the
+same output states as this Choi/CAR bank.
+
+### 7ej.B. A full marked first jet needs more than a scalar marginal lift
+
+For one born bit v=(sqrt(p),p), Pi=diag(0,1), J=[[0,-1],[1,0]], the ordinary
+field control has <v,[Pi,J]v>=u=2p sqrt(p), but
+
+    ||[Pi,J]v-u v||^2=p^6>0.                            (MG1)
+
+Thus its scalar mean can have the desired derivative while a retained
+CODE--DATA correlation has a different FIRST derivative. Tracing CODE or
+checking only the corner does not establish a full instrument transport.
+This does not invalidate §7eg's covector theorem; it identifies the stronger
+map needed to consume its geometric/marked parent.
+
+Use TWO original born bits per field coordinate. Put
+
+    phi=v tensor v=(p,p sqrt(p),p sqrt(p),p^2),
+    pi_i=phi_i^2, h_i=(1-2pi_i)^-1, S=sum_i pi_i h_i,
+    V=diag(0,1,2,3)-3p^2 I,
+    H_ii=0, H_ij=phi_i phi_j(h_i+h_j)/(1+S), i!=j,
+    X_ii=0, X_ij=H_ij/(i-j), i!=j.                      (MG2)
+
+Every pi_i<1/2. The coefficients are in the original Q(sqrt(p)); X is real
+skew-adjoint. A direct four-row calculation gives
+
+    [V,X]=H, H phi=phi, <phi,V phi>=0.                   (MG3)
+
+Indeed the i-th row of H phi is phi_i[(1-2pi_i)h_i+S]/(1+S)=phi_i.
+This is equality of FULL vectors, not only their expectation. There is
+no fair-coin postulate or freely chosen mixed state. The executed exact
+Golden-field check proves (MG1)--(MG3); interval bounds give
+||X||op<=||X||F=0.908344469...<1. The sum of the six positive plane
+coefficients lambda_ij=-X_ij is <3/2.
+
+For m independent physical coordinates use m such four-state CODE factors,
+phi_m=phi^tensor m, V_j and X_j on their corresponding factors. Then
+[V_j,X_k]phi_m=delta_jk phi_m. The lift has norm at most sqrt(m)||X||F in
+scaled coordinates and sqrt(m)||X||F/s for unit PHYSICAL field variation.
+The 1/s factor is real and is carried by the source gain, as in §7eg.
+
+### 7ej.C. One fixed geometric reader and a PHYSICALLY paid common frame
+
+Fix an arbitrary off-shell centre Y0 and small s>0. For each CODE label b
+prepare the ORIGINAL complete bank at
+
+    Y_b=Y0+s(v_b1,...,v_bm), v_bj=b_j-3p^2,
+    B_s=sum_b |b><b| tensor B(Y_b).                     (MG4)
+
+All vertices must lie in the same regular chart. The table is fixed before
+the compared controls and does not test Einstein. Every CODE branch exists;
+all its bank, auxiliary and unused columns contribute to the full clock.
+The owned all-column compiler supplies one finite native word approximating
+this computable real orthogonal target, with its actual helper and error.
+It is a finite physical lookup, not an oracle for an unknown quantum input.
+
+At the complete-bank frontier execute a real CODE control P and its actual
+inverse in the chronological order
+
+    P ; B_s ; P* ; D_nu .                               (MG5)
+
+The marked prefix is therefore D_nu P* B_s P. D_nu is identity on CODE, so
+this equals P* A_nu,s P. The CODE change of frame is an additional executed
+operation, not a free redefinition of an observer. With i=phi_m tensor I,
+write F_nu,s(P)=P* A_nu,s P i. For P(t)=exp(tX_j), (MG3) and Taylor give
+
+    ||F_nu,s(I)-phi_m tensor A_nu(Y0)|| <= s R_v M1_nu,
+    ||(d/dt)F_nu,s(P(t))|0 /s
+                  -phi_m tensor D_j A_nu(Y0)||
+         <= s R_v^2 M2_nu ||X_j||.                     (MG6)
+
+Here R_v=max_b ||v_b||, and M1_nu,M2_nu are genuine bounds for the full
+prefix maps on the cube. To prove the second line, write
+A_nu,s=I tensor A_nu(Y0)+s sum V_k tensor D_k A_nu(Y0)+R,
+||R||<=M2_nu s^2 R_v^2/2; commute with X_j and apply i. The constant part
+commutes and (MG3) supplies the exact full geometric first jet.
+
+Consequently EVERY norm-one joint CODE/DATA future effect O on this marked
+frontier, including correlations and all failure outcomes, has its full
+input-effect derivative transported with bound
+
+    ||D(F*OF)/s-D((phi_m tensor A)*O(phi_m tensor A))||
+       <=2s R_v^2 M2_nu ||X_j||+2s R_v M1_nu^2.         (MG7)
+
+Protected-input identity factors and canonical raw births preserve these
+norms. A finite sequence of the required marked tests is handled by the
+same isometric telescoping, with the sum of its actual bounds. No conditional
+postselection estimate with an unbounded inverse success probability is
+inferred. Different refinements keep the owner's finite-test/kappa schedule;
+exact native replay at fixed h is separate from this h-dependent comparison.
+
+### 7ej.D. Actual native CODE controls and their marked-error budget
+
+X is not added to the native alphabet. Write it as six real two-level plane
+generators, X=sum_(i<j) lambda_ij J_ij. Use the palindromic product
+
+    P_t=product_forward exp(t lambda_ij J_ij/2)
+                       product_reverse exp(t lambda_ij J_ij/2). (MG8)
+
+It has P_0=I, P'_0=X, P''_0=X^2 and P_-t=P_t^-1.
+If L_X=sum lambda_ij, the integral third-order remainder gives
+||P_t-exp(tX)||<=L_X^3 |t|^3/3. All factors are orthogonal; this bound
+does not require a fictitious infinitesimal Golden primitive.
+
+Each of the six planes has an exact addressed native implementation after
+choosing its actual Golden power G^n, n divisible by four. A literal CX
+maps the two diagonal-address pairs to a one-bit pair when needed. The
+two-control-column Walsh identity uses powers n/2 and +/-n/2, with two
+CX calls, to rotate exactly that plane and return every other column.
+Negative powers use the actual SourceI^2 routed Z, restoring all unknown
+Spin and port columns. Choose a single even L>=max |n/2| over the finite
+control family, and replace every rotation by
+
+    G^((L+k)/2); Z; G^((L-k)/2); Z=G^k.                 (MG9)
+
+The exact centre uses k=0, with the SAME real inventory. Inverse words are
+paid separately. Each full P, P* or centre word has
+
+    24L G +320 CX +96 SourceI =24L+416 raw stages.        (MG10)
+
+Every comparison uses the same L, input boundary, source frame and marks.
+The actual plane powers are certified on BOTH columns by outward interval
+arithmetic, and the macro identities certify all native columns. Raw huge
+lists are specified by exact run lengths, not expanded or executed tick by
+tick. Their generation/grammar evidence and hash are frozen below.
+
+Let eta bound each of the twelve plane approximations. Native P differs
+from exp(tX) by at most L_X^3 |t|^3/3+12eta. For a fixed exact bank, its
+actual symmetric marked finite comparison has error, in addition to (MG6),
+
+    R_v M1 [(4||X||^3/3+2L_X^3/3)t^2+24eta/|t|].        (MG11)
+
+The constant A(Y0) commutes with CODE; hence this bound has no artificial
+1/s amplification of the preparation approximation. A fixed compiled-bank
+error e_B contributes at most
+2e_B(L_X+12eta/|t|)/s to that marked comparison. At the price/source interface
+the stricter complete-corner normalization e_M/(g s) remains below, not
+the unnormalized prefix error alone.
+
+### 7ej.E. Price every occurrence and retain its independent source
+
+All seven genuine reference banks and the one shared SITE are included in
+B(Y) using incoming §7eh's g_j(Y) recipe and actual PF preparation. The local
+cross-products precede SITE averaging. The original alpha_h, reference step,
+gain and actual larger dimensions are retained. Let D be the complete fixed
+processor and R its actual status reflection,
+S=D* R D. S is selfadjoint and identity on CODE and on the protected factors
+used only by the CODE frame. For independently available outer preparations
+P_f,P_b and inner frame controls Q_f,Q_b the complete endpoint is
+
+    U=P_b* B_s* Q_b S Q_f* B_s P_f.                    (MG12)
+
+At the intended comparison P_f=P_b=Q_f=Q_b=P,
+U=P* B_s* S B_s P. Thus the full return corner is EXACTLY the original
+geometric-bank corner sampled by CODE, not a new scalar reporter:
+
+    M=sum_b |b><b| tensor c(Y_b)I_protected,
+    C=i*P*MPi.
+
+The two inner controls are genuinely separate physical occurrences. Vary
+either one by an arbitrary available skew CODE/protected generator X_0.
+Since [S,X_0]=0, S X_0 is skew-adjoint. Its conjugate/compression is also
+skew-adjoint. At the scalar matched corner, its real trace against the
+actual positive chronological history state is zero. Hence EACH inner
+leg has exact zero return FIRST source, independently. Neither equality
+of the two controls nor cancellation of two separately nonzero sources is
+assumed to obtain stationarity. Each outer leg retains one half of the
+paired source, exactly as in §7eg's complete preparation proof.
+
+This commutation is why (MG5) is placed AFTER the whole field-dependent bank
+and before the CODE-independent processor. Moving a frame into an unfinished
+field-dependent writer would not justify this zero-source statement.
+The declaration of its place is an actual architecture choice of this
+constructed execution, not a universal prohibition on other D0 controls.
+
+Use the same original complete Book tuple and price. On the fixed-width
+INTERNAL chart, all 425Nd modes are retained and
+
+    B=beta^-1 log{Nd(359+2a0)
+               +4N sum_(l>=1) a_(lN) ReTr(U_total^l)}
+               -Tr log[(1-z)I+z C_total* C_total].       (MG13)
+
+U_total is the ACTUAL whole chronological endpoint, including any retained
+old prefix; (MG12) specifies its current block. Here N counts that actual
+prefix as well as B_s and its inverse, D and its inverse, R, and FOUR complete
+CODE-control words in (MG12). Thus the new CODE cost is 4(24L+416) for one
+coordinate control, not 2(24L+416). Include the actual prefix/canonical-birth
+work and all m CODE factors. The absolute heat is not subtracted. For the standalone
+current reflection, matched endpoints are conjugate at the same N and the
+full heat is equal. At a reflection every independent unitary leg has zero
+heat FIRST source, since ReTr(U^l X)=0. A retained old endpoint need not be
+a reflection. No exact zero heat row is inferred for general controls on
+that whole history: retain its owned heat/source bound on U_total and the
+actual enlarged control norm. Finite unmatched words likewise keep the
+all-unitary winding bound. On the actual growing raw history use (R6)--(R11) with the
+LONGER prefix and every new birth/frame call; no fixed-width heat is
+transplanted to a different growing clock by name.
+
+The inner-frame zero just proved is an exact RETURN-source identity.
+For the complete old/growing history the genuine heat row is added with
+its original error bound, not removed by commutation of the current S.
+
+The current source follows from the original c(Y)=c_ref-2g I_tau(Y), with
+the owner's actual density, attenuation, matter coefficient and remaining
+source errors. At born CODE, c=i*Mi is scalar. For the actual output Gram
+A=C_< C_<*, eta=z p^K, D0=(1-z)I+eta c^2 A, set
+rho=A D0^-1/Tr(A D0^-1), w=eta c^2 Tr(A D0^-1)>0.
+Let e_M be the complete cold-table error after all actual bank/processor/
+inverse occurrences; for example e_M<=2e_B+2e_D+e_R by unitary telescoping.
+It is distinct from the prefix error e_B in (MG11). The exact whole-determinant
+differentiation gives, with Gamma_s=4wgs/c,
+
+    |DJ[X_0]/Gamma_s-DI_tau(Y0)[L_rho X_0]|
+         <=(M2_I s R_v^2+e_M/(g s))||X_0||,
+    (L_rho X_0)_j=Tr[rho i*[V_j,X_0]i].                 (MG14)
+
+For the explicit X_j, L_rho X_j=e_j on every nonzero positive history;
+no inverse of a singular A is needed. This consumes §7eg's full preparation
+theorem with the stronger marked lift (MG3). All CODE correlation/phase and
+protected-entangled outer directions are retained. Their recovery error is
+bounded by (MG14), and the independent inner rows vanish exactly as proved.
+Weights are evaluated at the actual base, not differentiated as a fabricated
+averaged action. Genuine past, clock, scene and freely variable writer rows
+remain those of their parent interfaces whenever that task allows them.
+
+To use the unchanged physical field norm V_h, take §7ei's state-independent
+control norm with these new V_j,X_j and an actual finite C_h bounding the
+new right lift. It is a norm on all controls, including the kernel. The
+physical field norm is not rescaled and the new 4^m sampling dimension is
+not replaced by the old 2^m. The source norm error consequently includes
+C_h times the displayed remainder, in addition to the inherited E_tau.
+Use the maximum norm of all FOUR independent legs. The field-source map is
+(L_rho X_Pf+L_rho X_Pb)/2; the inner legs remain genuine normed kernel
+directions. The common field lift varies all four by the same R_h(v), so
+the marked frame and field source agree while its norm stays ||v||_Vh.
+
+The literal control certificate uses the already admitted G/CX/SourceI
+profile. It does not replace §7ei's stronger fullStep-only route. On that
+route, compile the same ideal marked frames by positive fullStep words
+and retain the actual skew-body/independent-leg errors of (EI2)--(EI6).
+Sum the actual errors of all four occurrences in their maximum/dual norm;
+the two-leg constant is not silently reused after adding two controls.
+Exact inner-source cancellation is then an ideal identity with the actual
+compilation error charged, not a false exact inverse claim.
+
+Choose s against the actual field and marked-prefix norms; choose the actual
+CODE step t and plane precision eta; choose the COMPLETE error e_M against
+g s and the parent's actual finite-test budget, including its |t| divisor
+when that conservative price estimate is used. Compile that finite prefix before choosing
+any later paid retention K. This is the owned noncircular ordering with the
+new gain/clock, not an assumption that native compiler length is bounded.
+It supplies the existing nonlinear Einstein--two-CAR source consumer on its
+declared regular norm, with its original field/measure/refinement premises.
+No finite source limit is renamed a stationary root of every native word.
+
+### 7ej.F. Decisive verification and exact remaining application
+
+The checker proves the four-state Golden identity and the two-state hostile
+defect exactly, emits and validates the actual CODE controls, and checks the
+independent inner-frame algebra. Its geometric fixture is an ORIGINAL
+complete cell bank: one identity anchor, four exterior-CAR inverse-coframe
+creators and four full32 Julia proper-Lorentz links. The active address count
+is nine; all 16384 padded Choi coordinates are retained. One true Lorentz
+boost, one inverse-coframe component and both original material amplitudes
+vary together. The material bank retains its actual sqrt(p) anchor and slack;
+unknown RIGHT remains an identity factor on every column.
+
+The full joint CODE/Choi/CAR vector and its derivative, including correlations,
+are checked with outward intervals. The tested geometric/material space has
+262144 coordinates before the unknown RIGHT factor. Sparse storage omits
+only exactly zero coordinates, not any physical output or trace column.
+On |Y|<=1/8 the actual coframe contractions are <1/4, boost Julia contractions
+<3/5 and material slack >1/2. Direct derivative bounds give M1<=2,M2<=4 for
+this product-state fixture; the general full-operator proof retains the
+owner's corresponding all-column bounds. The exact published source-bank
+rotation (879) transfers the state bound to its complete input matrix.
+
+The executed complete joint marked-vector errors are:
+
+| s=t | value error | field-normalized full first-jet error |
+| --- | --- | --- |
+| 2^-4 | 0.004432120661 | 0.0002222053204 |
+| 2^-6 | 0.001107796746 | 0.00005443448909 |
+| 2^-8 | 0.0002769367867 | 0.00001357624444 |
+| 2^-10 | 0.00006923345576 | 0.000003392633617 |
+
+These are outward enclosures of the full vectors, not selected readout
+values. They lie within the explicit conservative analytic budgets (MG6),
+(MG11). The actual CODE controls have all-column plane error below 1.9e-54
+and each forward/inverse word has exactly
+185134733382333524175843603147690799083609459018736142384 raw calls.
+The exact coefficient identities and general norm proof, not this one
+directional fixture, establish the m-field transport.
+
+This check does NOT newly compile the entire enormous 180-Choi/16-CAR-copy
+ten-sign processor. Its full-column existence/finite marked compiler and
+complete Book construction are consumed from their owners. The new emitted
+words are the CODE controls; the new theorem is the precise map enabling
+that existing geometric construction to consume one shared physical writer
+and its complete preparation source. This boundary is recorded in the receipt.
+
+The admission regime remains the actual recorded writer/processor and fresh
+input interfaces of §7ed--7eg, now with the original full bank and the paid
+frame in (MG5). Fixed-resolution replay preserves those actual maps exactly;
+their relation to the smooth geometric target has the explicit errors above.
+This supplies the stronger joint first-jet map at the stated completed-bank
+source interface; the incoming mean-readout/kappa marked map is preserved. The law retaining/changing that task and the physical
+stationarity/dynamics for the claimed realization still require their own
+application. Unrestricted physical X_N, original-spatial-full128 price
+equivalence, exact finite positive_gr/raw216, Ready/merge/acceptance and
+GR_closed are not promoted. The goal remains active.
+
+
+### 7ej.G. Frozen evidence and reproduction
+
+The changed checker was executed on 768277b90 and integrated with
+6e7dec9ed6c28176f54fa5c6e2834ddb548d6124. Its consumed input bytes remain
+identical. The original §7cz bank-construction excerpt also remains identical
+(SHA-256 `0f17c6921c32e53d1e9a684a6405c302725a729d43068262f0309f6ba45d44df`).
+Incoming §7eh--7ei are preserved in full, not counted as newly replayed proofs.
+
+Checker SHA-256:
+`1ce0524490213a964008d312b7088fdfc3e520850c6b5a17cab71ff50cfa831d`.
+Receipt SHA-256:
+`fdf7e99c09e948bfe867495658c672295b92756186b72d847eef8405bc847dc5`.
+The deterministic 107547-byte native CODE-control description has SHA-256
+`a9cdbf3ae9de9bd6e68b79ab8a6811aadc8b051fe6086629690f6e48c0302589`.
+Normal and optimized/warnings-as-errors executions produce byte-identical
+receipts and empty stderr. The 6645 checks include repetitive primitive/run
+assertions, not 6645 scientific theorems.
+
+Run this from the repository root with the same scientific Python environment:
+
+```python
+from pathlib import Path
+import hashlib, subprocess, sys, tempfile
+paper=Path("02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md").read_bytes()
+def extract(tag,lang):
+    start=f"<!-- BEGIN {tag} -->\n```{lang}\n".encode()
+    stop=f"```\n<!-- END {tag} -->".encode()
+    if paper.count(start)!=1 or paper.count(stop)!=1:
+        raise RuntimeError("nonunique frozen evidence")
+    return paper.split(start)[1].split(stop)[0]
+code=extract("7ej MARKED GEOMETRY CHECKER","python")
+expected=extract("7ej MARKED GEOMETRY RECEIPT","json")
+if hashlib.sha256(code).hexdigest()!="1ce0524490213a964008d312b7088fdfc3e520850c6b5a17cab71ff50cfa831d":
+    raise RuntimeError("changed checker")
+if hashlib.sha256(expected).hexdigest()!="fdf7e99c09e948bfe867495658c672295b92756186b72d847eef8405bc847dc5":
+    raise RuntimeError("changed receipt")
+with tempfile.TemporaryDirectory(prefix="d0-marked-geometry-") as tmp:
+    target=Path(tmp)/"check_marked_transport.py"
+    target.write_bytes(code)
+    run=subprocess.run([sys.executable,"-O","-W","error",str(target)],capture_output=True,check=True)
+    if run.stdout!=expected or run.stderr:
+        raise RuntimeError("receipt/stderr mismatch")
+    words=(Path(tmp)/"native_code_controls.json").read_bytes()
+    if hashlib.sha256(words).hexdigest()!="a9cdbf3ae9de9bd6e68b79ab8a6811aadc8b051fe6086629690f6e48c0302589":
+        raise RuntimeError("native word data mismatch")
+print("PASS full joint sampler/geometric marked lift with paid frames")
+```
+
+<!-- BEGIN 7ej MARKED GEOMETRY CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Exact born-code jet lift and its actual native controls on original banks.
+
+The full geometric processor is consumed at its owned all-column compiler
+interface, not falsely reported as a newly expanded huge native word.
+"""
+from pathlib import Path
+from collections import Counter
+import hashlib, importlib.util, itertools, json, math, platform, sys
+import mpmath as mp
+import numpy as np
+import sympy as sp
+ROOT=Path.cwd();HERE=Path(__file__).resolve().parent
+CHECKS=[]
+def need(ok,label):
+    if not bool(ok):raise ArithmeticError(label)
+    CHECKS.append(label)
+def sha(b):return hashlib.sha256(b).hexdigest()
+source_path='02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+need(sha((ROOT/source_path).read_bytes())=='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c','original native alphabet unchanged')
+spec=importlib.util.spec_from_file_location('marked_native',ROOT/source_path);ne=importlib.util.module_from_spec(spec);sys.modules[spec.name]=ne;spec.loader.exec_module(ne)
+P=ne.P;A=ne.A;phi=sp.Matrix([P,A*P,A*P,P*P]);probs=[x*x for x in phi]
+hs=[1/(1-2*x) for x in probs];S=sum(x*h for x,h in zip(probs,hs))
+H=sp.zeros(4);X=sp.zeros(4)
+for i,j in itertools.combinations(range(4),2):
+    H[i,j]=H[j,i]=phi[i]*phi[j]*(hs[i]+hs[j])/(1+S)
+    X[i,j]=H[i,j]/(i-j);X[j,i]=-X[i,j]
+V=sp.diag(*[j-3*P*P for j in range(4)])
+need(ne.exact_matrix_equal(phi.T*phi,sp.ones(1)),'original four-state born vector normalized')
+need(ne.exact_matrix_equal(V*X-X*V,H),'exact commutator')
+need(ne.exact_matrix_equal(H*phi,phi),'full-vector first jet, not only its scalar expectation')
+need(ne.exact_matrix_equal(X.T,-X),'genuine real skew generator')
+need(ne.exact_matrix_equal(phi.T*V*phi,sp.zeros(1)),'centred physical code nodes')
+J=sp.Matrix([[0,-1],[1,0]]);v=sp.Matrix([A,P]);Pi=sp.diag(0,1);u=2*A*P
+leak=(Pi*J-J*Pi)*v-u*v
+need(ne.exact_matrix_equal(leak.T*leak,sp.Matrix([P**6])),'two-state scalar lift has nonzero retained-code jet defect')
+# The two added paid CODE-frame legs have separate exact zero first sources
+# at the completed-bank frontier, because the retained processor uses DATA.
+h0,h1,h2=sp.symbols('h0 h1 h2',real=True);SS=sp.kronecker_product(sp.eye(4),sp.Matrix([[h0,h1],[h1,h2]]))
+XX=sp.kronecker_product(X,sp.eye(2))
+need(SS*XX==XX*SS and (SS*XX).T==-SS*XX,'independent inner frame insertion is skew on all data columns')
+
+mp.mp.dps=190;mp.iv.dps=170;iv=mp.iv
+p=(mp.sqrt(5)-1)/2;a=mp.sqrt(p);pi=(iv.sqrt(5)-1)/2;ai=iv.sqrt(pi)
+ph=[pi,ai*pi,ai*pi,pi*pi];pr=[x*x for x in ph];hh=[1/(1-2*x) for x in pr];ss=sum(x*h for x,h in zip(pr,hh))
+xi=[[iv.mpf(0) for _ in range(4)] for _ in range(4)]
+for i,j in itertools.combinations(range(4),2):
+    xi[i][j]=ph[i]*ph[j]*(hh[i]+hh[j])/((1+ss)*(i-j));xi[j][i]=-xi[i][j]
+def bounds(x):return mp.mpf(x.a),mp.mpf(x.b)
+def ab(x):return max(abs(y) for y in bounds(x))
+def norm(v):return iv.sqrt(sum(x*x for x in v))
+def fmt(x,d=70):
+    scale=10**d;lo,hi=bounds(x*scale)
+    def f(n):
+        sg='-' if n<0 else '';n=abs(n);return sg+str(n//scale)+'.'+str(n%scale).zfill(d)
+    return [f(int(mp.floor(lo))-1),f(int(mp.ceil(hi))+1)]
+fro=norm([x for row in xi for x in row]);lsum=sum(-xi[i][j] for i,j in itertools.combinations(range(4),2))
+need(bounds(fro)[1]<1 and bounds(lsum)[1]<mp.mpf('1.5'),'explicit bounded field lift and Strang constants')
+def power(c,s,n):
+    if n<0:return power(c,-s,-n)
+    r=c*0+1;t=c*0
+    while n:
+        if n&1:r,t=r*c-t*s,r*s+t*c
+        c,s=c*c-s*s,2*c*s;n>>=1
+    return r,t
+def convergent(ratio,minimum):
+    x=ratio;hm2,hm1=0,1;qm2,qm1=1,0
+    while True:
+        v=int(mp.floor(x));num=v*hm1+hm2;den=v*qm1+qm2;hm2,hm1=hm1,num;qm2,qm1=qm1,den
+        if den>minimum:return num,den
+        x=1/(x-v)
+theta=mp.atan2(p,a);num,den=convergent(2*theta/mp.pi,10**54);invnum=pow(num,-1,den)
+eta=iv.mpf('1e-50');compiled={};maxerr=mp.mpf(0)
+def compile_rotation(alpha,key):
+    global maxerr
+    mid=sum(bounds(alpha))/2;nearest=int(mp.floor(den*mid/(2*mp.pi)+mp.mpf('.5')));m=(nearest*invnum)%den;n=4*m
+    c,s=power(ai,pi,n);err=ab(iv.sqrt(2*((c-iv.cos(alpha))**2+(s-iv.sin(alpha))**2)))
+    need(err<mp.mpf('1e-50'),'all-column conditional rotation '+key);maxerr=max(maxerr,err)
+    compiled[key]={'power':n,'error_upper':mp.nstr(err,80)}
+    return n,c,s
+I=lambda n:[[iv.mpf(int(i==j)) for j in range(n)] for i in range(n)]
+def mul(A,B):return [[sum(x*y for x,y in zip(row,col)) for col in zip(*B)] for row in A]
+def tr(A):return list(map(list,zip(*A)))
+def mv(A,v):return [sum(x*y for x,y in zip(row,v)) for row in A]
+edges=list(itertools.combinations(range(4),2));native={};L=0
+for e in (4,6,8,10):
+    t=iv.mpf(1)/2**e;Pmat=I(4);specs=[]
+    for i,j in edges:
+        n,c,sn=compile_rotation(-xi[i][j]*t/2,f'{e}/{i}{j}');specs.append((i,j,n,c,sn));L=max(L,n//2)
+    for i,j,n,c,sn in specs+list(reversed(specs)):
+        R=I(4);R[i][i]=R[j][j]=c;R[j][i]=sn;R[i][j]=-sn;Pmat=mul(R,Pmat)
+    native[e]=(Pmat,specs)
+need(L%2==0,'one even signed-split length for all preparations')
+PORT=2;SPIN=(3,4);OLD=5;WIDTH=6
+def gate(op,*w):return ne.Gate(op,tuple(w))
+def raw(gs):return [(g,1) for g in gs]
+def Z(w):
+    mid=[gate('SourceI',PORT,*SPIN)]*2
+    if w==PORT:return raw(mid)
+    swap=[gate('CX',PORT,w),gate('CX',w,PORT),gate('CX',PORT,w)]
+    return raw(swap+mid+swap)
+def split(w,k):
+    need(k%2==0 and abs(k)<=L,'actual equal-clock rotation')
+    return [(gate('G',w),(L+k)//2)]+Z(w)+[(gate('G',w),(L-k)//2)]+Z(w)
+def plane(i,j,n,inverse=False):
+    # Map the two selected basis states to one differing target bit using
+    # the actual CX(0,1). All other basis columns return unchanged.
+    conjugate=(i^j)==3
+    def perm(k):return k^((k>>1)&1) if conjugate else k
+    ii,jj=perm(i),perm(j);diff=ii^jj;target=1 if diff==1 else 0;control=1-target
+    bit=(ii>>(1-control))&1
+    need(((ii>>(1-target))&1)==0 and ((jj>>(1-target))&1)==1,'native plane orientation')
+    k0=n//2;k1=(-1 if bit else 1)*n//2
+    out=raw([gate('CX',0,1)]) if conjugate else []
+    out+=(raw([gate('CX',control,target)])+split(target,-k1)+raw([gate('CX',control,target)])+split(target,-k0)) if inverse else (split(target,k0)+raw([gate('CX',control,target)])+split(target,k1)+raw([gate('CX',control,target)]))
+    if conjugate:out+=raw([gate('CX',0,1)])
+    # Independent two-valued Walsh reading of all four CODE columns.
+    for b in range(4):
+        bb=perm(b);actual=k0+(-1 if ((bb>>(1-control))&1) else 1)*k1
+        need(actual==(n if b in (i,j) else 0),'all four conditional-plane columns')
+    return out
+def compact(runs):
+    out=[]
+    for g,n in runs:
+        if not n:continue
+        need(type(n)is int and n>0,'positive original repetition')
+        if out and out[-1][0]==g:out[-1]=(g,out[-1][1]+n)
+        else:out.append((g,n))
+    return out
+# Direct all-column verification of the actual routed sign primitive.
+rename={0:0,PORT:1,SPIN[0]:2,SPIN[1]:3}
+zword=tuple(ne.Gate(g.op,tuple(rename[w] for w in g.wires)) for g,n in Z(0) for _ in range(n))
+zu=ne.word_matrix(ne.Execution(4,(),(),zword,ne.G_CX_SOURCE_I,1,(2,3),()),max_qubits=4,max_expanded_stages=len(zword))
+need(ne.exact_matrix_equal(zu,sp.kronecker_product(sp.diag(1,-1),sp.eye(8))),'actual sign restores every port/Spin column')
+words={};invs=None
+for e,(Pmat,specs) in native.items():
+    for name,reverse,zero in [('plus',False,False),('minus',True,False),('centre',False,True)]:
+        seq=specs+list(reversed(specs));seq=list(reversed(seq)) if reverse else seq
+        runs=compact([item for i,j,n,c,sn in seq for item in plane(i,j,0 if zero else n,reverse)])
+        counts=Counter()
+        for g,n in runs:counts[g.op]+=n
+        need(counts=={'G':24*L,'CX':320,'SourceI':96},'same complete paid code-control inventory')
+        distinct=tuple(dict.fromkeys(g for g,n in runs))
+        ne.validate_execution(ne.Execution(WIDTH,(),(OLD,),distinct,ne.G_CX_SOURCE_I,PORT,SPIN,()),max_qubits=WIDTH,max_expanded_stages=len(distinct))
+        need(all(OLD not in g.wires for g,n in runs),'all unknown oldRIGHT columns protected')
+        words[f'{e}/{name}']=[[g.op,list(g.wires),n] for g,n in runs]
+        invs=dict(sorted(counts.items()))
+
+# Original CAR creators: exterior basis is the actual subset mask 0..15.
+def creator(k):
+    C=sp.zeros(16)
+    for b in range(16):
+        if not((b>>k)&1):C[b|(1<<k),b]=(-1)**((b&((1<<k)-1)).bit_count())
+    return C
+Cs=[creator(k) for k in range(4)]
+for k in range(4):
+    need(Cs[k]*Cs[k].T+Cs[k].T*Cs[k]==sp.eye(16),'original CAR normalization')
+K=sp.zeros(16)
+for b in range(16):
+    for i,j in ((0,1),(1,0)):
+        if ((b>>j)&1) and not((b>>i)&1):
+            b1=b^(1<<j);sg=(-1)**((b&((1<<j)-1)).bit_count())*(-1)**((b1&((1<<i)-1)).bit_count());K[b1|(1<<i),b]+=sg
+need(K==K.T and K**3==K,'true exterior Lorentz boost generator')
+pp=(K*K+K)/2;pm=(K*K-K)/2;pz=sp.eye(16)-K*K
+def julia_creator(k,x,dx):
+    C=Cs[k];CC=C*C.T;TT=C.T*C;root=iv.sqrt(1-x*x);dr=-x*dx/root;M={};D={}
+    for i in range(16):
+        for j in range(16):
+            cv=int(C[i,j]);tv=int(C[j,i])
+            if cv:M[(i,j)]=x*cv;D[(i,j)]=dx*cv
+            if tv:M[(i+16,j+16)]=-x*tv;D[(i+16,j+16)]=-dx*tv
+            if i==j:
+                M[(i,j+16)]=1+(root-1)*int(CC[i,j]);D[(i,j+16)]=dr*int(CC[i,j])
+                M[(i+16,j)]=1+(root-1)*int(TT[i,j]);D[(i+16,j)]=dr*int(TT[i,j])
+    return M,D
+def julia_boost(t,dt):
+    vals=[iv.mpf(1)/2,iv.exp(t)/2,iv.exp(-t)/2];dvs=[iv.mpf(0),dt*vals[1],-dt*vals[2]]
+    roots=[iv.sqrt(1-v*v) for v in vals];dr=[-v*d/r for v,d,r in zip(vals,dvs,roots)]
+    M={};D={}
+    for i in range(16):
+        for j in range(16):
+            coeff=[pz[i,j],pp[i,j],pm[i,j]]
+            if any(coeff):
+                cv=[iv.mpf(int(v.p))/int(v.q) for v in coeff]
+                m=sum(v*c for v,c in zip(vals,cv));dm=sum(v*c for v,c in zip(dvs,cv));rt=sum(v*c for v,c in zip(roots,cv));dtv=sum(v*c for v,c in zip(dr,cv))
+                for key,value,dvalue in [((i,j),m,dm),((i+16,j+16),-m,-dm),((i,j+16),rt,dtv),((i+16,j),rt,dtv)]:M[key]=value;D[key]=dvalue
+    return M,D
+def bank(y):
+    # One complete physical cell bank: identity anchor, FOUR actual inverse
+    # coframe columns and FOUR proper Lorentz links. Pad 9*32^2 to 2^14.
+    mats=[({(i,i):iv.mpf(1) for i in range(32)},{})]
+    for k in range(4):mats.append(julia_creator(k,iv.mpf(1)/5+(y/10 if k==0 else 0),iv.mpf(1)/10 if k==0 else iv.mpf(0)))
+    mats.append(julia_boost(iv.mpf(1)/20+y/5,iv.mpf(1)/5))
+    for _ in range(3):mats.append(julia_boost(iv.mpf(0),iv.mpf(0)))
+    b={};db={};denom=iv.sqrt(iv.mpf(9*32))
+    for addr,(M,D) in enumerate(mats):
+        for (j,i),val in M.items():b[addr*1024+i*32+j]=val/denom
+        for (j,i),val in D.items():db[addr*1024+i*32+j]=val/denom
+    psi0=iv.mpf(1)/10+y/20;psi15=iv.mpf(1)/12-y/50
+    slack=iv.sqrt(1-pi-psi0*psi0-psi15*psi15)
+    mat={0:psi0,1:ai,14:slack,15:psi15};dmat={0:iv.mpf(1)/20,1:iv.mpf(0),14:-(psi0/20-psi15/50)/slack,15:-iv.mpf(1)/50}
+    out={};dout={}
+    for k,bv in b.items():
+        for j,mv0 in mat.items():out[16*k+j]=bv*mv0;dout[16*k+j]=db.get(k,iv.mpf(0))*mv0+bv*dmat[j]
+    return out,dout,b,db,mat,dmat
+base,d_base,choi,dchoi,mat,dmat=bank(iv.mpf(0));keys=sorted(base)
+need(bounds(sum(x*x for x in choi.values()))[0]<=1<=bounds(sum(x*x for x in choi.values()))[1],'full active-address Choi normalization')
+need(bounds(sum(x*x for x in base.values()))[0]<=1<=bounds(sum(x*x for x in base.values()))[1],'original joint Choi/material input normalization')
+need(ab(choi[0]-1/iv.sqrt(iv.mpf(288)))<mp.mpf('1e-150') and ab(dchoi.get(0,iv.mpf(0)))==0,'actual identity anchor and its zero derivative')
+dn=norm(list(d_base.values()));need(bounds(dn)[0]>0,'nonzero original geometric and material marked jet')
+nodes=[iv.mpf(j)-3*pi*pi for j in range(4)];Rv=iv.mpf(max(ab(v) for v in nodes))
+# Uniform rational derivative bounds for the tested ORIGINAL resource slice.
+# The boost eigenvalues obey mu<3/5, |mu'|<=3/25, |mu''|<=3/125;
+# thus |(asin mu)'|<=3/20 and |(asin mu)''|<=3/64. There are eight
+# nonconstant exterior eigenvalues. Creator roots obey x<1/4, x'=1/10.
+need(bounds(iv.exp(iv.mpf(3)/40)/2)[1]<mp.mpf(3)/5,'strict boost Julia slack on |y|<=1/8')
+need(bounds(1-pi-iv.mpf(1)/32)[0]>mp.mpf(1)/4,'strict material slack on the whole test interval')
+choi1=(iv.mpf(2)/5/iv.sqrt(1-iv.mpf(1)/16)+iv.mpf(3)/5)/iv.sqrt(288)
+choi2=(iv.mpf(1)/25/(1-iv.mpf(1)/16)**iv.mpf('1.5')+iv.mpf(111)/400)/iv.sqrt(288)
+need(bounds(choi1)[1]<1 and bounds(choi2)[1]<1,'uniform first and second ORIGINAL Choi derivative bounds')
+need(iv.mpf(9)/1024<1,'uniform material second derivative bound')
+rows=[]
+for e,(PP,specs) in native.items():
+    s=t=iv.mpf(1)/2**e;branches=[bank(s*v)[0] for v in nodes]
+    # Each physical marked frontier executes P, the fixed conditional
+    # ORIGINAL bank, and the separately paid P*. No free observer change.
+    def frontier(Q):
+        qv=mv(Q,ph);Qt=tr(Q)
+        return [[sum(Qt[i][b]*qv[b]*branches[b][k] for b in range(4)) for k in keys] for i in range(4)]
+    plus=frontier(PP);minus=frontier(tr(PP));zero=[[ph[i]*branches[i][k] for k in keys] for i in range(4)]
+    jet=[(plus[i][n]-minus[i][n])/(2*s*t)-ph[i]*d_base[k] for i in range(4) for n,k in enumerate(keys)]
+    err=norm(jet);baseline=norm([zero[i][n]-ph[i]*base[k] for i in range(4) for n,k in enumerate(keys)])
+    # A conservative explicit bound for this original resource slice.
+    # On |y|<=1/8, coframe contractions <1/4, boost contractions <3/5,
+    # material slack >1/2. The explicit bounds above give M1<=2,M2<=4 for this
+    # product state. The theorem itself retains the owner's actual norms.
+    M1=iv.mpf(2);M2=iv.mpf(4)
+    bound=s*Rv**2*M2*fro+Rv*M1*t*t*((iv.mpf(4)/3)*fro**3+(iv.mpf(2)/3)*lsum**3)+24*Rv*M1*eta/t
+    need(bounds(err)[1]<bounds(bound)[0],'complete marked-vector first-jet error inside analytic budget')
+    rows.append({'s_and_t':f'2^-{e}','full_marked_jet_error':fmt(err),'full_marked_value_error':fmt(baseline),'analytic_jet_bound':fmt(bound)})
+need(bounds(iv.mpf(rows[-1]['full_marked_jet_error']))[1]<bounds(iv.mpf(rows[0]['full_marked_jet_error']))[0]/30,'full marked joint CODE/Choi/CAR jet converges')
+
+word_bytes=(json.dumps({'format':'exact-run-length-description-not-native-schema','qubits':WIDTH,'source_port':PORT,'source_spin':SPIN,'old_right':[OLD],'runs':words},sort_keys=True,separators=(',',':'))+'\n').encode();(HERE/'native_code_controls.json').write_bytes(word_bytes)
+source_pins={f:sha((ROOT/f).read_bytes()) for f in [source_path,'02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md','02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md','02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md','02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md']}
+result={'status':'PASS_FULL_MARKED_GEOMETRIC_CODE_LIFT','input_commit':'768277b90e402572386d342fc24dc44b2376ecbb','checker_sha256':sha(Path(__file__).read_bytes()),'source_pins':source_pins,'checks':len(CHECKS),
+ 'exact_lift':{'born_probabilities':list(map(fmt,pr)),'node_mean':fmt(3*pi*pi),'X_frobenius':fmt(fro),'sum_plane_angles':fmt(lsum),'commutator_on_born_vector':'[V,X] phi = phi exactly','right_inverse_bound':'||X||op/s < 1/s for one physical field direction','two_state_jet_defect_squared':'p^6, nonzero'},
+ 'native_controls':{'L':L,'raw_stages_per_forward_or_inverse':24*L+416,'inventory':invs,'cases':len(words),'all_column_error_upper':mp.nstr(maxerr,80),'word_bytes':len(word_bytes),'word_sha256':sha(word_bytes),'full_gate_lists_expanded':False,'all_column_endpoints_by_exact_macro_identities':True,'compiled_planes':compiled},
+ 'actual_resource_slice':{'active_Julia_addresses':9,'padded_Choi_dimension':16384,'CAR_left_dimension':16,'joint_dimension_excluding_unknown_RIGHT':262144,'nonzero_supported_coordinates':len(keys),'identity_anchor':fmt(choi[0]),'joint_derivative_norm':fmt(dn),'rows':rows,'unknown_RIGHT':'identity on every column; no reset or clone'},
+ 'scope':{'full_marked_comparison_lift_proved':True,'source_neutral_CODE_observer_change_assumed':False,'CODE_frames_paid':True,'full_original_ten_sign_native_compiler_executed_in_this_check':False,'new_complete_huge_geometric_word_emitted':False,'global_continuation_selection_proved':False,'GR_closed':False},
+ 'runtime':{'python':platform.python_version(),'mpmath':mp.__version__,'numpy':np.__version__,'sympy':sp.__version__}}
+print(json.dumps(result,sort_keys=True,indent=2)+'\n',end='')
+```
+<!-- END 7ej MARKED GEOMETRY CHECKER -->
+
+<!-- BEGIN 7ej MARKED GEOMETRY RECEIPT -->
+```json
+{
+  "actual_resource_slice": {
+    "CAR_left_dimension": 16,
+    "active_Julia_addresses": 9,
+    "identity_anchor": [
+      "0.0589255650988789603667370301754040866070696614740395030490283224162804",
+      "0.0589255650988789603667370301754040866070696614740395030490283224162807"
+    ],
+    "joint_derivative_norm": [
+      "0.0652545643181049382929094121815272579749340134938466178316244682881724",
+      "0.0652545643181049382929094121815272579749340134938466178316244682881727"
+    ],
+    "joint_dimension_excluding_unknown_RIGHT": 262144,
+    "nonzero_supported_coordinates": 2432,
+    "padded_Choi_dimension": 16384,
+    "rows": [
+      {
+        "analytic_jet_bound": [
+          "0.8188967291054885564609946610920966446943074785274826603960050966251209",
+          "0.8188967291054885564609946610920966446943074785274826603960050966251212"
+        ],
+        "full_marked_jet_error": [
+          "0.0002222053204325834579904255724575646082958308649014578126558494429427",
+          "0.0002222053204325834579904255724575646082958308649014578126558494429430"
+        ],
+        "full_marked_value_error": [
+          "0.0044321206609869698200955547464880981061086230071769986302001630329007",
+          "0.0044321206609869698200955547464880981061086230071769986302001630329010"
+        ],
+        "s_and_t": "2^-4"
+      },
+      {
+        "analytic_jet_bound": [
+          "0.1975534091775349577918087008358164513513632727822639684137186485709881",
+          "0.1975534091775349577918087008358164513513632727822639684137186485709884"
+        ],
+        "full_marked_jet_error": [
+          "0.0000544344890894495504078460258024765487739310711395156734070114184945",
+          "0.0000544344890894495504078460258024765487739310711395156734070114184948"
+        ],
+        "full_marked_value_error": [
+          "0.0011077967461001183146466182193408301634208721954390138747815921617407",
+          "0.0011077967461001183146466182193408301634208721954390138747815921617410"
+        ],
+        "s_and_t": "2^-6"
+      },
+      {
+        "analytic_jet_bound": [
+          "0.0489401789757064156152371774316286309739524686027207365333137254028666",
+          "0.0489401789757064156152371774316286309739524686027207365333137254028669"
+        ],
+        "full_marked_jet_error": [
+          "0.0000135762444382718116542262457745450855751859982456530870851509307207",
+          "0.0000135762444382718116542262457745450855751859982456530870851509307210"
+        ],
+        "full_marked_value_error": [
+          "0.0002769367866742825876581355399476179326631719405332175865644377943562",
+          "0.0002769367866742825876581355399476179326631719405332175865644377943565"
+        ],
+        "s_and_t": "2^-8"
+      },
+      {
+        "analytic_jet_bound": [
+          "0.0122070339115092711642646069968243151269950961421480075510530947412758",
+          "0.0122070339115092711642646069968243151269950961421480075510530947412761"
+        ],
+        "full_marked_jet_error": [
+          "0.0000033926336173295877040931147192289817739561905287991697075757278400",
+          "0.0000033926336173295877040931147192289817739561905287991697075757278403"
+        ],
+        "full_marked_value_error": [
+          "0.0000692334557576950177170974395818282543917341533543763381248510183292",
+          "0.0000692334557576950177170974395818282543917341533543763381248510183295"
+        ],
+        "s_and_t": "2^-10"
+      }
+    ],
+    "unknown_RIGHT": "identity on every column; no reset or clone"
+  },
+  "checker_sha256": "1ce0524490213a964008d312b7088fdfc3e520850c6b5a17cab71ff50cfa831d",
+  "checks": 6645,
+  "exact_lift": {
+    "X_frobenius": [
+      "0.9083444691924365263682451886864932538968908608421572173646542063414236",
+      "0.9083444691924365263682451886864932538968908608421572173646542063414239"
+    ],
+    "born_probabilities": [
+      [
+        "0.3819660112501051517954131656343618822796908201942371378645513772947394",
+        "0.3819660112501051517954131656343618822796908201942371378645513772947397"
+      ],
+      [
+        "0.2360679774997896964091736687312762354406183596115257242708972454105208",
+        "0.2360679774997896964091736687312762354406183596115257242708972454105211"
+      ],
+      [
+        "0.2360679774997896964091736687312762354406183596115257242708972454105208",
+        "0.2360679774997896964091736687312762354406183596115257242708972454105211"
+      ],
+      [
+        "0.1458980337503154553862394969030856468390724605827114135936541318842185",
+        "0.1458980337503154553862394969030856468390724605827114135936541318842188"
+      ]
+    ],
+    "commutator_on_born_vector": "[V,X] phi = phi exactly",
+    "node_mean": [
+      "1.1458980337503154553862394969030856468390724605827114135936541318842185",
+      "1.1458980337503154553862394969030856468390724605827114135936541318842188"
+    ],
+    "right_inverse_bound": "||X||op/s < 1/s for one physical field direction",
+    "sum_plane_angles": [
+      "1.3501887895856713501195544587585356486316502654052615391626263034206160",
+      "1.3501887895856713501195544587585356486316502654052615391626263034206163"
+    ],
+    "two_state_jet_defect_squared": "p^6, nonzero"
+  },
+  "input_commit": "768277b90e402572386d342fc24dc44b2376ecbb",
+  "native_controls": {
+    "L": 7713947224263896840660150131153783295150394125780672582,
+    "all_column_endpoints_by_exact_macro_identities": true,
+    "all_column_error_upper": "1.8264085752885480998884627127826580703524536990543830578596521552267170524214737e-54",
+    "cases": 12,
+    "compiled_planes": {
+      "10/01": {
+        "error_upper": "8.8150838770390596413955295186821588670724289668626145524050097681091008843912234e-55",
+        "power": 2852813341428606663480792417298700383102208567782975356
+      },
+      "10/02": {
+        "error_upper": "5.9876091756038458447898508890302525840362536872715641920852340685965600851317183e-55",
+        "power": 1999218457192302580950374529787081195070732171363045056
+      },
+      "10/03": {
+        "error_upper": "1.8264085752885480998884627127826580703524536990543830578596521552267170524214737e-54",
+        "power": 15427894448527793681320300262307566590300788251561345164
+      },
+      "10/12": {
+        "error_upper": "4.0408031282701150061654295932587324137210540513932199394236718841923968078610629e-56",
+        "power": 7727014898163078184143114136271557398644381174413811664
+      },
+      "10/13": {
+        "error_upper": "2.2305139596926558696770742077389867874760454792256620226135491477462408105070205e-55",
+        "power": 6132177276144175926050290286177863913635745514099065728
+      },
+      "10/23": {
+        "error_upper": "4.4610279193853117393541484154779735749521220705746474504470460839032233704390417e-55",
+        "power": 12264354552288351852100580572355727827271491028198131456
+      },
+      "4/01": {
+        "error_upper": "3.790489090616971016043618886161668567834743926817364921113120960316047111948928e-55",
+        "power": 8724764855668094064763891607667938109288411385762892368
+      },
+      "4/02": {
+        "error_upper": "1.8952445453084855080218094430808342839173670737784279438360256166702876510261181e-55",
+        "power": 4362382427834047032381945803833969054644205692881446184
+      },
+      "4/03": {
+        "error_upper": "4.5753151239188795700125729571055862348858493309639156789080193822421351763351587e-56",
+        "power": 8915976946289030045248116937380896616969541196861991052
+      },
+      "4/12": {
+        "error_upper": "1.4138372784668762542080586898332766718941946157485276525041634002420269039724112e-54",
+        "power": 13637331201546726793566231313243600096072413052408506548
+      },
+      "4/13": {
+        "error_upper": "3.3354652396244744617253224091920951241993722665501024421543277327150844220823605e-55",
+        "power": 7301773124010090242667466258285313869173321946252904356
+      },
+      "4/23": {
+        "error_upper": "1.411937174899780240752458647835847378674636531123069231443409389518159858766145e-54",
+        "power": 13457922675064181986914975874295165731307388117562693956
+      },
+      "6/01": {
+        "error_upper": "9.4762227265424275401090472154041714195868067172779902491482462347738023651922265e-56",
+        "power": 2181191213917023516190972901916984527322102846440723092
+      },
+      "6/02": {
+        "error_upper": "1.6260915505137161015392700043724729919825303274937532188447993544971413120499283e-54",
+        "power": 8716440506100625107485756294194016533059675721215880232
+      },
+      "6/03": {
+        "error_upper": "1.9134049152932624800382251221962231162980658343541546182704066071980743775174169e-55",
+        "power": 6614728472621313435217142477100717292461325335684814484
+      },
+      "6/12": {
+        "error_upper": "8.7321687532288784682639545487688576885217012009493907245273427777910515895746535e-55",
+        "power": 3122926907147682073786568667742034522258289319366347948
+      },
+      "6/13": {
+        "error_upper": "1.3873072538166929307678282356073051937584713569137430801556997187374799341302782e-54",
+        "power": 13837022416193691833962249650562345874910894821028061496
+      },
+      "6/23": {
+        "error_upper": "1.5066994021652045161535491199898890928704993214002497081600606382744362025292486e-54",
+        "power": 11276731461147158470724002972378181203985285271121970864
+      },
+      "8/01": {
+        "error_upper": "1.4470033279909487234606886777985971433144870279368954270808100508349678492998913e-54",
+        "power": 12556876938670425152343126311470263539448090046075016180
+      },
+      "8/02": {
+        "error_upper": "3.1601344741686320481841722593783463010001152569231408512937152875814216116988712e-55",
+        "power": 6851250255813211825381541476872862773243672910509065468
+      },
+      "8/03": {
+        "error_upper": "1.4228587619249732303100056677822019939560037131753976301442086591462625127080094e-54",
+        "power": 13665261253346497632099668705266196730732895668386039028
+      },
+      "8/12": {
+        "error_upper": "6.4948299222568918746879859471919581231925072435269748545022927352432492349365326e-55",
+        "power": 13365122648456089040952003574064257041701764551777979772
+      },
+      "8/13": {
+        "error_upper": "3.7570952159111899751127766812912657965602848489833403837291499369903632177707784e-55",
+        "power": 8131395733336478507000664815964945108706477685462110784
+      },
+      "8/23": {
+        "error_upper": "1.3276111796424371380749677934160132442024556047643272014271461374076413408234e-54",
+        "power": 15117167893716958515581372989654428210373699595981106812
+      }
+    },
+    "full_gate_lists_expanded": false,
+    "inventory": {
+      "CX": 320,
+      "G": 185134733382333524175843603147690799083609459018736141968,
+      "SourceI": 96
+    },
+    "raw_stages_per_forward_or_inverse": 185134733382333524175843603147690799083609459018736142384,
+    "word_bytes": 107547,
+    "word_sha256": "a9cdbf3ae9de9bd6e68b79ab8a6811aadc8b051fe6086629690f6e48c0302589"
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "CODE_frames_paid": true,
+    "GR_closed": false,
+    "full_marked_comparison_lift_proved": true,
+    "full_original_ten_sign_native_compiler_executed_in_this_check": false,
+    "global_continuation_selection_proved": false,
+    "new_complete_huge_geometric_word_emitted": false,
+    "source_neutral_CODE_observer_change_assumed": false
+  },
+  "source_pins": {
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "70da30184823746c040549b3182080326f30af9caba08c95c3a13da46bc8c294",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9"
+  },
+  "status": "PASS_FULL_MARKED_GEOMETRIC_CODE_LIFT"
+}
+```
+<!-- END 7ej MARKED GEOMETRY RECEIPT -->
+
 ## 8. Reproduction
 
 Run from this directory:

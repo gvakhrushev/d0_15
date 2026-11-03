@@ -19727,3 +19727,79 @@ bd7b4e427e5c29fee9d3be373a5f0f4250738c2d8ba07bde790e7d6e76166dea.
 Normal and Python -O receipts agree. Bounded independent read-only reviews
 checked the native/κ contract, the full source bound, and the physical
 Golden/report interface; they are not an assembly acceptance registration.
+
+### 3 November 2026 — full joint sampler/geometric first jet with paid frames (§7ej)
+
+Same #334 / constitutive/native-programme-v1, native realization and final
+composition. Scientific calculation on 768277b90; integrate incoming
+07307695b and 6e7dec9ed before publication. Their genuine seven-bank/shared-
+SITE recipe, original physical norm and fullStep/kappa source composition
+are consumed, not re-proved. Only this brief and the existing primary
+artifact are appended; every previous byte is preserved.
+
+**Exact additional consumer.** The incoming mean-readout and kappa
+interpretation already has its declared marked map. Section 7ej supplies
+the stronger FULL joint sampling-record/Choi/CAR first jet for future tests
+sensitive to retained correlations at the completed SOURCE-bank frontier.
+This stronger statement is not added as a new prerequisite to the existing
+kappa realization. Scalar first derivatives and O(s) full-state convergence
+do not alone imply it: the ordinary one-bit born lift has an exact nonzero
+orthogonal first-jet defect of squared norm p^6.
+
+**Actual lift.** Two original born bits per field coordinate give the
+interior vector phi=(p,p sqrt(p),p sqrt(p),p^2). An explicit real skew
+matrix X over the Golden field satisfies [V,X]phi=phi, not just equality of
+expectations. Its Frobenius norm is <1. The tensor extension covers every
+original field coordinate with explicit physical right-lift cost 1/s and
+the actual finite dimension factor. The original physical norm stays fixed.
+No fair coin, new angle primitive or pure-code zero-gradient shortcut is used.
+
+The reader prepares the ACTUAL full Choi/CAR banks at its fixed field
+vertices, including incoming genuine references and one shared SITE. The
+new control and its separately paid inverse put a common CODE frame at the
+completed-bank frontier; the unchanged processor is CODE independent.
+Original unsplit-source marks use the already supplied unsplit bank.
+An earlier mark is deferred only when it commutes with intervening work.
+No off-diagonal shared-SITE test or unfinished-writer mark is silently
+moved. Their original required prefix bounds remain.
+
+**Complete variations and price.** The actual whole endpoint has two
+outer preparations and TWO additional independently selectable inner
+frames. Each inner RETURN row is exactly zero at the matched comparison, because
+the fixed processor reflection commutes with that CODE generator; each
+outer row retains half the original full preparation source. This is an
+operator identity on all protected columns, including nonzero singular
+histories, not a cancellation imposed between independent controls.
+The full price pays all FOUR control words, every bank/processor inverse
+and every Hodge mode. Heat first rows are exactly zero at the standalone
+reflection; the actual retained/growing whole endpoint keeps its own heat
+source bound, without assuming the old prefix is a reflection. The actual gain remains Gamma_s=4wgs/c. Complete
+corner error e_M is distinguished from prefix-map error e_B and is divided
+by g s. The physical norm and old/growing-clock bounds of §7eh--7ei remain.
+
+**Native finite evidence.** Twelve palindromic two-level rotations per
+control are realized by exact Walsh/Gray, CX routing and paid SourceI^2
+signs. All plus/minus/centre words have exactly 24L G+320 CX+96 SourceI.
+They are constructive enormous run-length words, not expanded or run
+tick by tick. The all-column rotation error is <1.9e-54. The fullStep-only
+owner is preserved: compile the same targets there and charge its real
+skew-body/independent-leg errors, without asserting exact native inverses.
+
+The check uses a genuine cell bank with one anchor, four inverse-coframe
+CAR creators, four full32 Julia proper-Lorentz links, and both original
+material amplitudes. All 16384 Choi padding coordinates and 262144 joint
+Choi/CAR coordinates remain before unknown RIGHT. Outward intervals for
+the whole joint CODE/bank vector give normalized first-jet errors
+2.2220532e-4,5.4434489e-5,1.3576244e-5,3.3926336e-6 as s=t decreases
+from 2^-4 to 2^-10. The exact coefficient proof and general operator norm
+bounds establish the m-field result; this one fixture is not a 42-row scan.
+
+The new emitted words are the CODE controls. The whole enormous geometric
+processor compiler and full Book construction are consumed from their
+existing proved interfaces, not reported as newly executed. Checker,
+actual normal/optimized receipt, hashes and reproduction are frozen in
+§7ej. The source/marked-state result does not supply exact finite Book
+critical histories, a minimum, the M1-only interaction law, independent
+scientific acceptance, or equivalence to the distinct original spatial
+full128 price. Existing positive_gr/raw216 contracts remain unchanged.
+No new task/result row, Ready, merge or GR_closed promotion. Goal active.
