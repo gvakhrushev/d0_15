@@ -120134,6 +120134,682 @@ print(json.dumps(receipt,sort_keys=True,indent=2))
 }
 ```
 
+## 7en. Complete faithful implementation variations of the recorded task: exact clock conjugacy and retained-record source
+
+3 November 2026. Existing #334, constitutive/native-programme-v1.
+Input `389595e89d6c74966a88949def660767bb8f9e8a`. Native realization
+and final composition. The consumer is §7em's incomplete treatment of
+implementation/COPY/earlier-WORK variations. The new step is not another
+root or a restriction chosen from a source sign: it characterizes ALL
+implementations of the already recorded complete operation, at its
+actual fixed birth/mark layout, and computes their complete H+J price.
+
+**Result.** Faithful internal implementations form an explicit finite
+native comparison class. Within each birth-free processing segment,
+their changes are exactly intermediate unitary changes of basis which
+are identity at its specified input/output and complete marked maps.
+On the ENTIRE growing clock these assemble to one unitary conjugacy,
+including the generated cuts and both Hodge degrees. Therefore their
+absolute complete prices agree exactly. This enlarges §7em's control
+domain from the displayed frame words to every faithful implementation
+of that same marked task, including temporary borrowing of earlier WORK
+when the specified record checkpoints are restored. It does not require
+each raw gate to remain fixed or each inverse occurrence to be its old
+literal inverse.
+
+The regime is continuation of the recorded operator family of §7ed,
+with §7em's new complete native extension and canonical fresh input.
+This is not an intertwiner to the earlier Householder extension or a
+claim that all D0 continuations must continue this task. Different
+durations/birth layouts retain their own absolute prices. The ordinary
+matrix-source and declared native finite-comparison statements remain
+distinct, as Books02 and §§7ek--7em require. `GR_closed=false`.
+
+### 7en.A. The exact task data and its native membership predicate
+
+Use the actual descriptor already constructed in §§7ed/7eg/7em:
+primitive profile, canonical births and their relative addresses,
+the original processor, actual source/store bank words and input
+checkpoints, their SAME CODE catalogue, the original scene/cut/closure
+constructors, and required complete output maps. A complete output map
+means the outcome operator D_a=Pi_a U, not just its probability or effect.
+All complementary outcomes are retained and sum Pi_a=I. Therefore
+
+    D'_a=D_a for every a  =>  U'=sum_a D'_a=sum_a D_a=U.  (FN1)
+
+This is precisely the operation/response distinction in Book01 §01.15
+and §7ed's N1--N3. When comparing on the same finite carrier P=I,
+operator naturality preserves D itself. On a canonical new carrier use
+the already proved reducing embedding, not a guessed all-complement
+extension. The following price theorem compares one ACTUAL layout on
+its full current carriers; it does not infer (FN1) from one fresh-input
+state, from a single report probability, or from equality of E_a alone.
+
+The free logical controls p are the separate CODE/protected preparation
+frames and guarded inner/storage frames of §7em. Their complete marked
+targets M_mu(p) are obtained by executing those controls with the fixed
+registered operations. No on-shell equation is tested to define them.
+The controls at the centre, their honest paid native comparisons and the
+original geometric lift are already supplied by §7em. Independent
+front/back occurrences are NOT identified by this definition.
+
+Fix a finite length, actual birth layout, and required mark indices.
+Split the word at every birth and registered complete input/output
+checkpoint. Each intervening processing segment has a constant full
+carrier. A native candidate is a faithful implementation at p iff:
+
+1. its actual instruction word passes the inherited finite address,
+   primitive, immutable oldRIGHT, role, halt and single-section rules;
+2. it has that same paid layout, and its canonical births are the stated
+   births, with every complement retained;
+3. the complete operator product of each processing segment, and every
+   registered complete marked prefix within it, equals its target at p.
+
+Equality of complete outcome tuples is an equivalent formulation by
+(FN1). These are finite exact Golden-field identities for actual native
+words. In a finite native control catalogue p is also finite and exact;
+one can enumerate the declared control labels and test the identities.
+Canonical replay supplies a witness. Free controls are input data of
+this recorded family, not results of an Einstein test. The known bank
+input comes from the actual births, not an independently selectable blank.
+
+The native action/legality bookkeeping is §7el.A's actual expanded word
+and retained prefix. Every intermediate native address rule is checked;
+the required complete-map tests are checked at their designated marks,
+and a failed complete word is not a successful realization of this task.
+This is a finite proof predicate, not a new cost-free runtime calibration.
+If a chosen execution physically computes a descriptor or runs its checks,
+those actual calls and registers must be included in the same paid layout.
+
+This explicitly defines the fixed-layout same-task set X_rec(layout).
+Here N counts actual clock stages; it is not silently identified with
+the Book finite-support index or with the physical mesh parameter h.
+The finite-object/recorded-history interpretation is the existing one
+in §7el.A. No assertion that X_rec(layout) equals every physical X_N
+in Book03 §03.8 follows from this construction.
+The family-level closure contract asks for one admitted common family;
+§7el.A's action/test map is used at that quantifier. Its independent
+review and the remaining physical constraints are not replaced by
+calling this finite predicate a universal action-selection law.
+
+### 7en.B. Exhaustion of the implementation fibre, not selected examples
+
+Take two faithful realizations at the same p. In one processing segment
+write their square gate products, in chronological convention,
+
+    A_0=A'_0=I,  A_j=F_(j-1)...F_0,
+    V_j=A'_j A_j^*,  F'_j=V_(j+1) F_j V_j^*.         (FN2)
+
+Every V_j is unitary on the ENTIRE actual stage carrier. At every complete
+mark and segment endpoint A'_j=A_j, hence V_j=I. Conversely any collection
+of intermediate V_j with these endpoint/mark values gives a faithful
+matrix realization by (FN2); it is a native realization precisely when
+the resulting actual gates/words satisfy the original native predicate.
+No matrix change of basis is charged as an extra executed gate: (FN2)
+compares the two actual words, whose real calls were already counted.
+
+This conjugacy is a PRICE transport, not a claim that all native tests
+identify the two histories. Their distinct raw instruction/prefix logs
+remain retained. Additional tests at intermediate unmarked stages can
+distinguish them. Required marks are preserved as stated; no extra native
+distinction is erased by calling V_j a physical gauge transformation.
+
+The smooth version is equally exhaustive. For an arbitrary differentiable
+faithful gate family, Y_j=(dA_j)A_j^* is skew-Hermitian and
+
+    dF_j=Y_(j+1) F_j-F_j Y_j,  Y_j=0 at complete marks. (FN3)
+
+Conversely these are all tangent vectors of the complete endpoint/mark
+constraints. The Y_j may mix current and earlier mutable WORK, all
+restored helper columns and live protected factors; the inherited exact
+oldRIGHT address rule still applies. Thus an operation-preserving change
+is not required to be zero on each individual hardware occurrence.
+
+For two different logical values p,p', first compare each implementation
+to its canonical recorded realization at that value. The complete class
+is a family of the fibres (FN2), over the independently varying logical
+controls. This factorization does not need a chosen inverse of an
+arbitrary numerical Jacobian or a quotient norm which erases a source.
+
+### 7en.C. Conjugacy of the FULL growing clock, moving cuts and price
+
+Use exactly GROWING G1--G14, or equivalently incoming §7el's ST1.
+Let the final stage be f=N-1, the genuine direct-sum carrier K, and
+T=S+R_cl g E_f. Assemble V=direct_sum_j V_j using (FN2) separately
+in every birth-free segment. At canonical birth boundaries V_j=I.
+Consequently the open shifts obey
+
+    S'=V S V^*,  V R_cl=R_cl.                         (FN4)
+
+The second equation follows component by component from G3: each nonzero
+block of R_cl lands in the initial stage or a genuine birth-detail stage,
+where V is identity. A full processing endpoint includes the final actual
+g; thus g'=g V_f^*, not an added free closing identity. It follows that
+
+    T'=V T V^*.                                      (FN5)
+
+For the SAME initial cut, every actual prefix satisfies A'_j=V_j A_j,
+including through canonical births. Therefore its generated cut is
+
+    P'_j=V_j P_j V_j^*,  P'=V P V^*.                  (FN6)
+
+Hence the full return operator is conjugate as well:
+
+    P'T'^*(I-P')T'P'=V [PT^*(I-P)TP] V^*.
+
+The native gates have INTERNAL placement. I_scene tensor V commutes
+with the fixed original scene coefficients B_s,C_s. Applying G13--G14,
+
+    Delta'_0=(I_scene tensor V) Delta_0
+                                   (I_scene tensor V)^*,
+    Z'_01=Z_01=2 Tr_(33 dim K) exp(-beta Delta_0)+359 dim K.
+
+Both full Hodge degrees, every unused/newborn complement and all protected
+columns remain. No normalization or estimate replaces this equality.
+The original absolute price therefore satisfies
+
+    B(w',p)=B(w,p),  B=beta^-1 log Z_01-logdet(I-zF).   (FN7)
+
+This is stronger than return-source neutrality plus a small heat bound.
+It applies to the actual unequal-fibre clock and its entire retained past.
+No reflection assumption is needed for the implementation-fibre identity.
+Reflection and the special terminal guard are needed only for the free
+logical source rows supplied by §7em.
+
+If births are inserted inside an otherwise compared processing segment,
+or duration/mark positions change, (FN4) is not automatic. The old price
+must not be reused. Such a candidate has its own layout and ST1 source.
+Likewise preserving a final state is weaker than preserving complete
+segment operators; the identity on future birth complements cannot be
+inferred from a padded circuit endpoint. These are actual hypotheses,
+not a declaration that failed candidates are impossible D0 programmes.
+
+### 7en.D. Old records, the COPY normal and compensating physical work
+
+There is a concrete finite discriminator for the earlier-WORK issue.
+For an old bit let P=|0><0| and Q=G^* P G. Their off-diagonal entry
+is -p sqrt(p), which is nonzero. If a completed continuation U preserves
+BOTH old effects pointwise on all inputs and references, then
+
+    U^*(P tensor I)U=P tensor I,
+    U^*(Q tensor I)U=Q tensor I.                       (FN8)
+
+The first equality makes U block diagonal, diag(A,B). Commutation with
+Q then gives -p sqrt(p)(A-B)=0. Thus U=I_old tensor A. Applying this
+one bit at a time proves the corresponding full old-record factorization.
+The tests are the original computational event and that event after
+one actual G, not a free pi/4 rotation or an invented hidden label.
+Their execution and readout are paid when the corresponding future
+experiment is run. This availability does not assert that every appended
+test history is itself stationary.
+
+Only preservation of diagonal old probabilities would leave controlled
+phases and correlations free. If the task retains only those weaker
+tests, the stronger conclusion (FN8) is not available. Here the retained
+complete source/STORE records and complete old-output maps are exactly
+the stronger marked-task data specified above. Temporarily borrowing
+old WORK between required marks is allowed when these data are restored
+at the stated boundaries; no literal ban on all intermediate interaction
+with that register is introduced.
+
+The two nonzero directions in §7em remain nonzero in the ambient space.
+They fail this same-task comparison, rather than mysteriously becoming
+zero because their gate has been renamed:
+
+* The independent changed COPY rule rotates the actual born return and
+  failure amplitudes. In the two-wire fixture c=p^3, u=2p sqrt(p),
+  output c|vv>-u|v_perp v_perp>. The displayed normal gives dc=-u,
+  so the positive all-born return event changes by -2cu!=0. It cannot
+  preserve the complete output map at the same logical control value.
+* A later J on the previous born Z output changes its original P readout
+  by 2p sqrt(p)!=0 and gives the already verified full-corner derivative
+  2p sqrt(p)c. It fails the old-record checkpoint in (FN8).
+
+A compensated alteration is DIFFERENT. If another actual part of the
+implementation restores every required complete checkpoint, the total
+variation belongs to (FN3), and (FN7) proves its full price derivative
+is zero. The two individual raw derivatives need not vanish separately:
+their constraint relates them. This is the complete same-task tangent,
+not cancellation imposed on two still-independent admissible controls.
+The independent free preparation frames remain independent under B.
+
+### 7en.E. The source equation on the whole task fibre
+
+Let E(w) be the finite tuple of complete segment/marked operators and
+M(p) its registered target. The faithful constraint is C(w,p)=E(w)-M(p)=0.
+By C the FULL original price factors through these endpoints on this
+layout, B(w)=b(E(w)); its dependence on every generated cut has already
+been included. Therefore
+
+    dB|_(X_rec(layout))=db(M(p)) DM(p) dp.             (FN9)
+
+All vertical implementation directions are annihilated exactly. Their
+complete source is not suppressed using a large clock or divided by a
+vanishing gain. At §7em's centre its independent logical rows vanish,
+so (FN9) gives zero on the ENTIRE faithful same-task tangent.
+
+There is also an explicit independent-equation formulation. At the centre
+put Lambda=db(E), the differential of the actual complete price, including
+heat. Then dB-Lambda dC=Lambda DM dp. Thus the constraint equations and
+the same solved logical rows give all constrained gate/preparation
+Euler equations with their actual reaction covector Lambda. Lambda is
+computed from the given price, not a fitted counterterm or a new action.
+An unconstrained hardware normal can still have Lambda dC!=0, as above.
+
+At every required geometric mark the fibre gauge is identity. Hence the
+original full CODE/Choi/CAR jet, decoder, independent field directions,
+physical norm, lift C_h/s and actual gain 4wgs/c of §7em descend unchanged.
+One can give the full tangent a direct norm consisting of the owned control
+norm plus max_j||Y_j|| on implementation directions; neither the source
+nor any required marked readout loses an omitted component. No stronger
+mesh-independent condition number is inferred. Error budgets remain those
+of the genuine bank/source transport, not a scalar replacement reporter.
+
+Equation (FN7) also proves exact equality for arbitrary NATIVE finite
+comparisons inside one implementation fibre. For comparisons changing p,
+retain exactly §7em's established statements: the full ordinary matrix
+covector vanishes, and its specified matched native CODE comparisons have
+equal prices. Do not promote that to every finite difference on independent
+terminal outer controls. Book02:78,201 allows the declared two differential
+notions, but does not identify them. A native finite-comparison claim still
+has to name its actual paired words and differential rule.
+
+### 7en.F. Actual retained-history implementation check
+
+The decisive check uses §7em's emitted terminal body, not another geometric
+root. First birth an OLD WORK bit and execute its actual routed Z. Then
+birth SOURCE, STORE, SAM and finally FLAG, and execute the same terminal
+body. It is followed by one of two ACTUAL native identity loops:
+
+    CX(old,store); G_store; G_store^-1; CX(old,store),
+    G_store; CX(old,store); CX(old,store); G_store^-1.
+
+The inverse G is the paid SourceI/CX-routed Z G Z. Every call is counted.
+The loops have identical duration but different intermediate old-record
+actions; both restore all old and new input columns. The registered bank
+marks and the terminal output are unchanged at their required checkpoints.
+Immutable oldRIGHT is never addressed. Both loops are faithful to the
+same complete task, though their first raw internal old-record tests differ.
+
+The checker emits the two complete instruction lists and their actual
+five-birth schedule, validates the original alphabet, checks all active
+input columns, and verifies the explicit loop-prefix gauge on every stage.
+The whole prior record is retained in the growing clock. The numeric
+inventory and reproducible receipt below give its actual carrier counts;
+the full heat is identified by (FN4)--(FN7), not by pretending the identity
+loops had zero duration or reusing the earlier shorter-clock value.
+
+Each complete history has 226 actual calls (22G,156CX,48SourceI) and
+five births, hence 231 stages. Its stage dimension is 112368, including
+all 16 original protected columns, with 47,756,400 Hodge modes and
+40,340,112 harmonic modes. The passive layer ranks per protected column
+are 1,1,2,4,8,16 and their exact secular ages are 231,230,221,220,219,218.
+Every one of the 256 active input columns is checked; immutable oldRIGHT
+is an exact untouched factor. The complete cold return is p^6 I16, so
+the original generated-cut feedback is exactly
+
+    J=-16 log[(1-z)+z p^12].                           (FN10)
+
+The absolute heat is its own full G14 trace on this 231-stage history.
+Both histories have that same value by the proved conjugacy. The native
+comparison does not merely agree on a coarse final geometry probability.
+
+This is the owned small bit-bank fixture. It is not a new execution of
+the enormous full Choi/CAR compiler. The fibre proof is dimension-independent;
+its geometric application consumes §7em's genuine-bank theorem and errors.
+
+### 7en.G. Precise parent substitution and remaining closure work
+
+The previous implementation-domain premise is now discharged for the
+ALREADY DECLARED complete recorded task: all faithful same-layout native
+implementations and their full constrained variations are characterized,
+their complete prices are transported, and §7em's exact stationary control
+centre applies to the entire fibre. The COPY/old-WORK counterexamples
+remain valid ambient normals, with explicit failed recorded tests. Faithful
+compensations, including temporary old-WORK borrowing, are included.
+
+At each refining level one may use the canonical implementation or any
+faithful implementation of that same declared layout. The exact gauge
+conjugacies preserve every required marked map and the full price. Thus
+the owned recovery and the conditional full-source soundness application
+retain their same metric, matter, controls and error moduli. There is no
+substitution of independent terminal geometry for the SOURCE bank.
+
+Remaining premises are now distinct from these microscopic variations:
+acceptance of the common regime and its task-interface transport, the
+declared differential/source convention, the remaining physical constraint
+and causal-time/readout composition, and any independently admitted change
+of operation family, scene/price constructor or birth layout. The different
+old full128/raw216 claims are unchanged. A proof for one recorded regime
+does not establish a universal next-task selector. No new assembly row,
+independent acceptance, Ready, merge or global GR completion is asserted.
+
+
+### 7en.H. Frozen evidence and reproduction
+
+Executed runtime: Python 3.12.14 / SymPy 1.14.0. Normal and optimized
+`-O -W error` receipts agree byte for byte, with 73 explicit exact checks.
+The checker consumes only the pinned native constructor definitions from
+§7em; it does not rerun that owner's unchanged field/cloud calculations.
+LF-normalized SHA-256:
+
+- Checker: `de637318b98a5b85739eb23f597ff9898d37543895fc71fa031eed7acd8c4376`.
+- Receipt: `e44ede5ab1310f1d2ab460674329dc03aa35385da03b12a92afc748ca497ae7f`.
+- Emitted words: `8e0f399c54237e50189a6586fbfb450e12b80c8cfa1265250183306e762858af`.
+
+The input primary/brief hashes below are their BEFORE-insertion historical
+hashes. They are not self-referential pins of the expanded artifact.
+The following Python, run at repository root with the stated runtime,
+checks those historical inputs, extracts the frozen checker into a fresh
+temporary directory, runs both modes and compares their complete receipts.
+The actual words, births and marks are emitted there. No repository file
+or expected receipt is rewritten.
+
+```python
+from pathlib import Path
+import hashlib, json, subprocess, sys, tempfile
+root=Path.cwd()
+primary=root/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+text=primary.read_text()
+def frozen(label,language):
+    marker='<!-- 7en TASK FIBRE '+label+' -->\n```'+language+'\n'
+    if text.count(marker)!=1: raise RuntimeError('nonunique frozen '+label)
+    return text.split(marker,1)[1].split('\n```',1)[0].encode()+b'\n'
+def check_hash(data,pin):
+    if hashlib.sha256(data).hexdigest()!=pin: raise RuntimeError('SHA mismatch')
+source=frozen('CHECKER','python');expected=frozen('RECEIPT','json')
+check_hash(source,'de637318b98a5b85739eb23f597ff9898d37543895fc71fa031eed7acd8c4376')
+check_hash(expected,'e44ede5ab1310f1d2ab460674329dc03aa35385da03b12a92afc748ca497ae7f')
+inputs=json.loads(frozen('INPUTS','json'))
+for rel,pin in inputs['files'].items():
+    data=subprocess.run(['git','--work-tree='+str(root),'show',inputs['input_commit']+':'+rel],
+                        check=True,stdout=subprocess.PIPE).stdout
+    check_hash(data,pin)
+work=Path(tempfile.mkdtemp(prefix='d0-task-fibre-'))
+checker=work/'check_task_fibre.py';checker.write_bytes(source)
+for flags in ([],['-O','-W','error']):
+    output=subprocess.run([sys.executable,*flags,str(checker),'--out',str(work)],
+                          check=True,cwd=root,stdout=subprocess.PIPE).stdout
+    if output!=expected: raise RuntimeError('complete receipt mismatch')
+check_hash((work/'native_task_words.json').read_bytes(),
+           '8e0f399c54237e50189a6586fbfb450e12b80c8cfa1265250183306e762858af')
+print(json.dumps({'status':'PASS','checks':73,'evidence_directory':str(work)},indent=2))
+```
+
+<!-- 7en TASK FIBRE INPUTS -->
+```json
+{
+  "input_commit": "389595e89d6c74966a88949def660767bb8f9e8a",
+  "files": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "cd80180991798c2727b5fa85eda88525466d0b664bafba1e9b125d4d8655af63",
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "16a78255dd250c120cc41e6e078395fe6e20683861363429ce4e45771217e5f1",
+    "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md": "450c736e06e50561c6f5b4e9b27a9744d79fb6b3e38cf7c6880ab12205f759c7",
+    "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
+    "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4",
+    "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  }
+}
+```
+
+<!-- 7en TASK FIBRE CHECKER -->
+```python
+"""Changed same-task fibre check. Run at repository root with SymPy 1.14.
+
+Uses the PINNED literal native constructors from 7em, without replaying
+that owner's unchanged cloud/geometry/heat tests. --out emits real words.
+"""
+from pathlib import Path
+import argparse,ast,hashlib,importlib.util,json,sys
+import sympy as S
+parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path)
+args=parser.parse_args();root=Path.cwd();checks=[]
+def require(ok,name):
+    if not bool(ok):raise ArithmeticError(name)
+    checks.append(name)
+native_path=root/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+native_hash='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+require(hashlib.sha256(native_path.read_bytes()).hexdigest()==native_hash,'native owner pin')
+spec=importlib.util.spec_from_file_location('task_fibre_native_owner',native_path)
+native=importlib.util.module_from_spec(spec);sys.modules[spec.name]=native;spec.loader.exec_module(native)
+Gate=native.Gate
+primary=root/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+text=primary.read_text();marker='<!-- 7em EQUAL RETURN CHECKER -->\n```python\n'
+require(text.count(marker)==1,'unique frozen constructor owner')
+owned=(text.split(marker,1)[1].split('\n```',1)[0]+'\n').encode()
+owner_hash='4e55fe7d946e6a057819dc8e6c00678baaec4938001997fedacc503831b05c9c'
+require(hashlib.sha256(owned).hexdigest()==owner_hash,'7em frozen source pin')
+wanted={'swap','routed_z','inverse_g','born_copy_word','guarded_store_word',
+        'qa','qp','qadd','qsub','literal_golden_rows'}
+defs=[n for n in ast.parse(owned).body if isinstance(n,ast.FunctionDef) and n.name in wanted]
+require({n.name for n in defs}==wanted,'all reused native constructors explicitly selected')
+zero=(0,0,0,0);one=(1,0,0,0)
+exec(compile(ast.Module(body=defs,type_ignores=[]),'<pinned-7em-constructors>','exec'),globals())
+
+a=S.Symbol('a',real=True);p=a*a;minimal=a**4+a**2-1
+def red(x):
+    n,d=S.fraction(S.cancel(x));n=S.rem(n,minimal,a);d=S.rem(d,minimal,a)
+    if d==0:raise ArithmeticError('zero Golden denominator')
+    return S.rem(S.expand(n*S.invert(d,minimal,a)),minimal,a)
+def mat(M):return S.Matrix(M).applyfunc(red)
+def equal(A,B,name):
+    if isinstance(A,S.MatrixBase) or isinstance(B,S.MatrixBase):
+        require(all(red(x)==0 for x in S.Matrix(A)-S.Matrix(B)),name)
+    else:require(red(A-B)==0,name)
+def gt(x):
+    poly=S.Poly(red(x),a)
+    return tuple(int(poly.nth(k)) for k in range(4))
+I2=S.eye(2);G=S.Matrix([[a,-p],[p,a]]);Z=S.diag(1,-1)
+J=S.Matrix([[0,-1],[1,0]]);v=S.Matrix([a,p]);vp=S.Matrix([-p,a])
+P0=S.diag(1,0);Q=mat(G.T*P0*G)
+equal(Q,S.Matrix([[p,-a*p],[-a*p,p*p]]),'actual paid G readout effect')
+require(red(Q[0,1])!=0,'old-record off-diagonal test is nonzero')
+equal(Z.T*P0*Z,P0,'diagonal-only old record misses a phase')
+require(mat(Z.T*Q*Z-Q)!=S.zeros(2),'the second actual old test separates that phase')
+old_state=Z*v
+old_readout_source=red(2*(old_state.T*P0*J*old_state)[0])
+equal(old_readout_source,2*a*p,'later old-WORK normal changes a required old event')
+
+# COPY source in the actual born basis, including the positive event witness.
+born=S.kronecker_product(v,v);lost=S.kronecker_product(vp,vp)
+c=p**3;u=2*a*p;psi=mat(c*born-u*lost)
+Y=mat(born*lost.T-lost*born.T)
+copy_dc=red((born.T*Y*psi)[0])
+copy_event=red(2*(born.T*psi)[0]*(born.T*Y*psi)[0])
+equal(copy_dc,-u,'the COPY ambient normal is still nonzero')
+equal(copy_event,-2*c*u,'COPY normal changes the positive complete return event')
+require(copy_event!=0,'COPY fault cannot be hidden by a conditional STORE readout')
+equal(Y*psi+(-Y)*psi,S.zeros(4,1),'faithful compensator cancels the FULL output tangent')
+
+# Target terminal body, independently assembled from its stated operations.
+Pb=mat(v*v.T);Qb=mat(I2-Pb)
+def one_wire(q,M,n=4):return S.kronecker_product(*[M if j==q else I2 for j in range(n)])
+def cx(cwire,twire,n):
+    m=S.zeros(1<<n)
+    for b in range(1<<n):
+        dst=b^((1<<(n-1-twire)) if b&(1<<(n-1-cwire)) else 0)
+        m[dst,b]=1
+    return m
+frame=mat(one_wire(0,G)*one_wire(3,G))
+copy=mat(frame*cx(0,3,4)*frame.T)
+base=mat(copy*one_wire(0,Z)*copy)
+guard=mat(S.eye(16)+one_wire(3,Qb)*one_wire(2,S.diag(0,1))*(one_wire(1,mat(G**4))-S.eye(16)))
+terminal=mat(guard*base*guard.T)
+equal(terminal.T,terminal,'same terminal reflection target')
+terminal_gates=tuple(guarded_store_word(-1)+born_copy_word()+routed_z(3)
+                     +born_copy_word()+guarded_store_word(1))
+require(len(terminal_gates)==198,'consume unchanged 198-call terminal owner')
+
+# OLD WORK is wire7; immutable oldRIGHT is wire8. All active columns 0..7.
+old_body=tuple(routed_z(7))
+loops={
+ 'borrow_then_restore':tuple([Gate('CX',(7,4)),Gate('G',(4,))]+inverse_g(4)+[Gate('CX',(7,4))]),
+ 'alternate_factorization':tuple([Gate('G',(4,)),Gate('CX',(7,4)),Gate('CX',(7,4))]+inverse_g(4))}
+require(len(loops['borrow_then_restore'])==len(loops['alternate_factorization'])==20,
+        'actual inverse and both borrowing CX calls have equal paid length')
+expected=mat(S.kronecker_product(terminal,Z))
+expected_rows=[{} for _ in range(256)]
+for prot in range(8):
+    for i in range(32):
+        for j in range(32):
+            if expected[i,j]!=0:expected_rows[32*prot+i][32*prot+j]=gt(expected[i,j])
+words={};inventories={}
+for name,loop in loops.items():
+    gates=old_body+terminal_gates+loop
+    ex=native.Execution(9,(),(8,),gates,native.G_CX_SOURCE_I,0,(1,2))
+    native.validate_execution(ex,max_qubits=9,max_expanded_stages=300)
+    inv=native.inventory(ex,max_qubits=9,max_expanded_stages=300)
+    require(all(8 not in g.wires for g in gates),'immutable oldRIGHT never addressed '+name)
+    require(all(set(g.wires)<={0,1,2,7} for g in old_body),'previous block uses no unborn resource '+name)
+    actual=literal_golden_rows(gates,8)
+    require(actual==expected_rows,'all 256 active columns match the same old and terminal outputs '+name)
+    inventory={'calls':inv.gate_count,'G':inv.g_count,'CX':inv.cx_count,'SourceI':inv.source_i_count}
+    require(inventory=={'calls':226,'G':22,'CX':156,'SourceI':48},'complete actual inventory '+name)
+    inventories[name]=inventory
+    words[name]={'unitary_word':native.execution_to_dict(ex),
+      'canonical_births':[{'before_gate':0,'wire':7},
+                          *[{'before_gate':len(old_body),'wire':q} for q in (3,4,5,6)]],
+      'complete_mark_after_gates':[len(old_body),len(old_body)+len(terminal_gates),len(gates)]}
+
+# Exact loop-prefix gauge, with full helper/Spin columns on a small carrier.
+# Relabel only the two work addresses: STORE4 -> 3, OLD7 -> 4.
+def local(g):return Gate(g.op,tuple({4:3,7:4}.get(q,q) for q in g.wires))
+def qmul(x,y):
+    coeff=[0]*7
+    for i,u0 in enumerate(x):
+        for j,v0 in enumerate(y):coeff[i+j]+=u0*v0
+    for k in range(6,3,-1):
+        coeff[k-4]+=coeff[k];coeff[k-2]-=coeff[k];coeff[k]=0
+    return tuple(coeff[:4])
+def eye(n):return [{j:one} for j in range(n)]
+def trans(A):
+    out=[{} for _ in A]
+    for i,row in enumerate(A):
+        for j,x in row.items():out[j][i]=x
+    return out
+def mul(A,B):
+    out=[]
+    for row in A:
+        dest={}
+        for k,x in row.items():
+            for j,y in B[k].items():dest[j]=qadd(dest.get(j,zero),qmul(x,y))
+        out.append({j:x for j,x in dest.items() if x!=zero})
+    return out
+equal(sum(qmul((2,3,-5,7),(-1,4,6,-2))[k]*a**k for k in range(4)),
+      (2+3*a-5*a*a+7*a**3)*(-1+4*a+6*a*a-2*a**3),'exact full Golden tuple product')
+la=[local(g) for g in loops['borrow_then_restore']]
+lb=[local(g) for g in loops['alternate_factorization']]
+AA=eye(32);BB=eye(32);VV=eye(32);nontrivial=0
+for index,(ga,gb) in enumerate(zip(la,lb),1):
+    ma=literal_golden_rows((ga,),5);mb=literal_golden_rows((gb,),5)
+    AA=mul(ma,AA);BB=mul(mb,BB);newV=mul(BB,trans(AA))
+    require(mul(newV,trans(newV))==eye(32),'whole-column stage gauge unitary '+str(index))
+    require(mb==mul(mul(newV,ma),trans(VV)),'actual edge conjugacy '+str(index))
+    nontrivial+=int(newV!=eye(32));VV=newV
+require(AA==BB==VV==eye(32),'all complete marks restored by BOTH actual loops')
+require(nontrivial>0,'faithful implementation fibre is not only the identical word')
+old_X=S.kronecker_product(S.Matrix([[0,1],[1,0]]),I2)
+borrow=cx(0,1,2)
+require(borrow.T*old_X*borrow!=old_X,'temporary borrowing changes a fixed raw intermediate old test')
+equal(borrow.T*borrow,S.eye(4),'completed borrowing restores every old input column')
+
+# Actual birth/clock dimensions. The old block is part of this same history.
+dims=[1]+[2]*len(old_body)+[2,4,8,16]+[32]*(len(terminal_gates)+20)
+N=len(dims);D=sum(dims);birth_stages=[0,1,10,11,12,13]
+detail_ranks=[1,1,2,4,8,16];lags=[N-j for j in birth_stages]
+require(N==231,'all five births and all 226 actual gates counted')
+require(D==7023,'true unequal fibre dimension per original protected column')
+require(sum(r*l for r,l in zip(detail_ranks,lags))==D,'exact secular degree with every birth detail')
+initial=S.kronecker_product(v,v,v,v,v)
+cold=red((initial.T*expected*initial)[0])
+equal(cold,p**6,'complete two-block same-input cold corner')
+words_bytes=(json.dumps(words,sort_keys=True,indent=2)+'\n').encode()
+if args.out:
+    args.out.mkdir(parents=True,exist_ok=True)
+    (args.out/'native_task_words.json').write_bytes(words_bytes)
+receipt={'status':'PASS','checks':len(checks),'native_owner_sha256':native_hash,
+ 'constructor_owner_sha256':owner_hash,'native_words_sha256':hashlib.sha256(words_bytes).hexdigest(),
+ 'inventories':inventories,'all_active_columns':256,'nontrivial_loop_gauge_stages':nontrivial,
+ 'native_borrowing_restores_full_old_record':True,'cold_corner':'p^6 I16',
+ 'feedback':'-16 log((1-z)+z p^12)',
+ 'hostile_normals':{'old_event_source':str(old_readout_source),'copy_corner_source':str(copy_dc),
+                    'copy_return_event_source':str(copy_event)},
+ 'true_clock':{'stages':N,'birth_stages':birth_stages,'lag_exponents':lags,
+               'stage_dimension_per_original_protected_column':D,'protected_dimension':16,
+               'full_stage_dimension':16*D,'full_hodge_modes':425*16*D,'harmonic_modes':359*16*D},
+ 'scope':{'same_task_full_operator_calibration':True,'actual_native_finite_fibre_equality':True,
+          'different_layout_prices_identified':False,'all_global_X_N_covered':False,
+          'large_heat_matrix_materialized':False,'GR_closed':False}}
+print(json.dumps(receipt,sort_keys=True,indent=2))
+```
+
+<!-- 7en TASK FIBRE RECEIPT -->
+```json
+{
+  "all_active_columns": 256,
+  "checks": 73,
+  "cold_corner": "p^6 I16",
+  "constructor_owner_sha256": "4e55fe7d946e6a057819dc8e6c00678baaec4938001997fedacc503831b05c9c",
+  "feedback": "-16 log((1-z)+z p^12)",
+  "hostile_normals": {
+    "copy_corner_source": "-2*a**3",
+    "copy_return_event_source": "12*a**3 - 8*a",
+    "old_event_source": "2*a**3"
+  },
+  "inventories": {
+    "alternate_factorization": {
+      "CX": 156,
+      "G": 22,
+      "SourceI": 48,
+      "calls": 226
+    },
+    "borrow_then_restore": {
+      "CX": 156,
+      "G": 22,
+      "SourceI": 48,
+      "calls": 226
+    }
+  },
+  "native_borrowing_restores_full_old_record": true,
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_words_sha256": "8e0f399c54237e50189a6586fbfb450e12b80c8cfa1265250183306e762858af",
+  "nontrivial_loop_gauge_stages": 19,
+  "scope": {
+    "GR_closed": false,
+    "actual_native_finite_fibre_equality": true,
+    "all_global_X_N_covered": false,
+    "different_layout_prices_identified": false,
+    "large_heat_matrix_materialized": false,
+    "same_task_full_operator_calibration": true
+  },
+  "status": "PASS",
+  "true_clock": {
+    "birth_stages": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13
+    ],
+    "full_hodge_modes": 47756400,
+    "full_stage_dimension": 112368,
+    "harmonic_modes": 40340112,
+    "lag_exponents": [
+      231,
+      230,
+      221,
+      220,
+      219,
+      218
+    ],
+    "protected_dimension": 16,
+    "stage_dimension_per_original_protected_column": 7023,
+    "stages": 231
+  }
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

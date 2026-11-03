@@ -20037,3 +20037,85 @@ The proof, exact checker, receipt, pinned inputs and reproduction are in
 control sector, not independent joint_nonlinear_solve acceptance or closure
 of full physical X_N. No new task, registry claim, Ready or merge is created.
 Older full128/raw216 scopes are unchanged; GR_closed=false. Goal active.
+
+### 3 November 2026 — all faithful implementation variations and exact full-price transport (§7en)
+
+Existing #334 / constitutive / native-programme-v1. Phase: native realization
+and final composition. Input 389595e89d6c74966a88949def660767bb8f9e8a.
+Only this brief and the existing primary artifact are appended.
+
+**Exact parent substitution.** §7em had solved the displayed independent
+logical frame rows but left COPY/old-WORK implementation directions to their
+actual task interpretation. The current result consumes the already recorded
+COMPLETE operator/input/mark descriptor of §§7ed/7eg/7em and the recorded
+action interface of §7el.A. It characterizes ALL faithful native realizations
+of that marked task at its actual fixed birth/clock layout. No Einstein
+equation, price extremum or target source value is part of membership.
+
+Complete outcome operators D_a=Pi_a U with sum Pi_a=I preserve U itself.
+The same-task predicate therefore compares full processing-segment and
+required marked products, together with original native/address/oldRIGHT
+rules. For two implementations, V_j=A'_j A_j* is unitary and is identity
+at complete marks and birth boundaries. Conversely every faithful variation
+has this form; every smooth tangent is dF_j=Y_(j+1)F_j-F_jY_j. This is an
+exhaustion of the implementation fibre, not just a list of chosen controls.
+
+On the FULL growing clock these maps give T'=VTV*, P'=VPV*, including the
+last real closing gate, canonical closure, generated cuts and every birth
+complement. Thus both Hodge degrees, all heat modes and the complete feedback
+are conjugate. The ORIGINAL absolute H+J price is EXACTLY equal throughout
+each native implementation fibre. No large-retention estimate, forgotten
+inverse leg or zero-cost identity stage is used. At §7em's centre its solved
+free logical rows now give zero on the entire constrained task tangent.
+
+The full independent-equation form is also explicit: if C(w,p)=E(w)-M(p)
+is the actual calibration constraint, the reaction covector is Lambda=db(E),
+the differential of the complete given price. Then dB-Lambda dC=Lambda DM dp.
+This retains every raw gate reaction; it does not declare unconstrained
+hardware normals stationary or introduce a fitted counterterm/action.
+
+**Earlier records and actual controls.** The computational old-bit event and
+that event after one actual G have a nonzero off-diagonal overlap. Preserving
+both on all inputs forces a completed continuation to factor as identity on
+the old bit. Iteration gives the complete old-record factor. Temporary
+borrowing between required marks is nevertheless admitted if the whole
+record is restored. The two §7em ambient normals still have their exact
+nonzero sources; they also change explicit required positive readouts.
+Faithful physical compensations belong to the proved fibre and have zero
+full source. Free forward/backward logical preparations remain independent.
+
+**Decisive native evidence.** Two complete literal words first birth an old
+WORK bit and apply its actual Z, then execute the existing emitted small
+terminal-store body and two different paid borrowing/restoration loops. Each uses
+226 actual calls (22G,156CX,48SourceI) plus five births: 231 real stages.
+All 256 active columns, unknown helpers/Spin and immutable oldRIGHT are
+checked. The actual growing dimension is 112368, containing 47,756,400
+Hodge modes and 40,340,112 harmonic modes. The return is p^6 I16 and
+J=-16 log[(1-z)+z p^12]. All loop-stage intertwiners and complete marks are
+verified exactly; 19 intermediate stages differ. The huge heat matrices
+are not materialized: their equality is the analytic full-clock conjugacy.
+The full Choi/CAR compiler is not newly executed by this bit-bank fixture.
+
+Normal and Python -O/-W error receipts agree: 73 explicit exact checks.
+Only pinned constructor definitions from §7em are reused; its unchanged
+geometry/cloud and earlier large suites are not replayed. LF-normalized
+checker / receipt / emitted word SHA-256:
+- de637318b98a5b85739eb23f597ff9898d37543895fc71fa031eed7acd8c4376
+- e44ede5ab1310f1d2ab460674329dc03aa35385da03b12a92afc748ca497ae7f
+- 8e0f399c54237e50189a6586fbfb450e12b80c8cfa1265250183306e762858af
+
+**Scope carried to the consumer.** The physical field norm, full marked jet,
+gain, SOURCE/STORE agreement and refinement errors of §7em are unchanged.
+The new fixed-layout set X_rec(layout) is explicit; the clock-stage count
+is not confused with the Book support index or physical mesh. Full operator
+calibration is stronger than one fresh-state/effect test. Changed layouts,
+weaker record tasks, independent scene/price constructors and different
+operation families keep their own sources. Distinct raw instruction histories
+remain observable; price conjugacy does not declare them physically identical.
+
+The complete smooth-source statement and the exact native finite comparisons
+retain their separate declared meanings. This removes the faithful internal
+implementation gap for the existing recorded regime; remaining common-task
+acceptance, physical constraints and causal/readout composition still need
+their actual proofs. No universal next-task selector, new acceptance/result
+row, Ready, merge, positive_gr/raw216 or GR_closed promotion. Goal active.
