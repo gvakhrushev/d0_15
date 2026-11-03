@@ -125910,3 +125910,1870 @@ SHA256: 47cad295a78257cae9aadf04cd01a22874f1cbff92993b897fa77619540c7196
   }
 }
 ```
+
+## 7eh. One retained writer generates the original geometric references and feeds the native Book source law
+
+3 November 2026. Existing Draft PR #334. Input
+905b1d7e6f9960873f420016ed38b5935c39ce83. Phase: native realization and final
+composition, under the existing constitutive/native-programme-v1 owner.
+Consume additionally 768277b90e402572386d342fc24dc44b2376ecbb, whose §7eg supplies the real born-CODE preparation interface. Only this primary artifact and its existing task brief are extended.
+
+The missing parent after §7ef was concrete: its seven scalar calls had a
+real comparator and a full price, but their reference inputs could still
+be changed independently. Preserving the comparator did not make those
+inputs evaluations of one physical operation. The construction below
+supplies that operation on the ORIGINAL generated Choi/CAR banks. It uses
+one saved operand recipe, one live programme input, one shared actual site
+address and paid preparations/inverses. It does not replace geometric marks
+by canonical Bernoulli states having the same probability.
+
+The second connection is the already stated Book03 master law. Section
+03.25 explicitly supplies stationarity of the very H+J functional evaluated
+by RAW/GROWING_CLOCK. The source application therefore does not need a new
+proof that a signed Einstein action is a programme minimum. Its precise
+κ interpretation, and the separate exact-finite solution obligation, are
+spelled out after the constructive map.
+
+### 7eh.A. Composed result and exact domain
+
+Fix the old complete history and its nonzero actual return, the recorded
+original moment/READY/report routine, its field/data schema and the
+addressed G_CX_SOURCE_I profile used by the owned raw compiler. On a
+regular compact off-shell coframe/link/two-CAR/PF chart, and for every finite
+set of its declared comparison endpoints, there is an effective finite
+native word implementing ONE full seven-bank writer to any prescribed
+all-column and marked-prefix accuracy. All generated fields and references
+are functions of that one input. All protected old records are spectators;
+new code, site, source and inverse work are real canonical births and paid
+stages. No Einstein equation is used to define this input chart or word.
+
+For the fixed original reporter this removes the full-bank referenceability
+and shared-resource application left by the internal-reference theorem.
+The complete source bound is that theorem's bound, now on this supplied
+writer, with the new actual positive gain and whole-clock constants. Its
+independent field rows give the existing full nonlinear Einstein--two-CAR
+source in the material-response metric. The shared regular reporter palette
+is consumed through §7ee's actual matrix weights, source bounds and matched
+conditional-bank recovery. Its held-posterior source identity is NOT
+relabelled as an off-shell action pullback with moving weights.
+
+This is continuation of a specified retained operation with free field
+inputs. Books 0--1 do not thereby choose a unique future field or force all
+possible D0 continuations to execute this operation. Genuine extra caller
+inputs, independent detector laws, or different native primitives retain
+their own equations and admission obligations. The scope is fixed before
+stationarity, rather than being defined by its desired solution set.
+
+### 7eh.B. Genuine geometric references on the original resource carrier
+
+#### 7eh.B.1. Exact owned operands and the referenceability statement
+
+Use the Cartesian Role convention η=diag(1,−1,−1,−1) of the density owner,
+with its original fixed ν_h, original full CAR16 trace, six based faces,
+and original **forward** material difference. In SOURCE (2)'s convention,
+before the explicit inverse-PF factor,
+
+    u_r = ν_h η e^(−T) e_r,
+    N_rs=(u_r u_s^T−u_s u_r^T)η,
+    P_rs(x)=U_r(x)U_s(x+h r)U_r(x+h s)⁻¹U_s(x)⁻¹,
+    f_x=Σ_(r<s) −Tr_16[dΓ(N_rs) Λ(P_rs)]/(8ν_h²h²),
+    q_x=Σ_(A=0,15)Σ_(μ,ν) g^(μν)(x) D_μ⁺Ψ_A(x)D_ν⁺Ψ_A(x),
+    D_μ⁺Ψ(x)=[Ψ(x+h μ)−Ψ(x)]/h.                         (F1)
+
+The actual ten-sign arguments are x_x=ε_h f_x/ρ_x and
+y_x=−ε_h q_x/ρ_x. If H_f or H_q already incorporates inverse PF, this
+factor is applied ONCE, not again. The true PF weights are v_xρ_x with
+Σ_x v_xρ_x=1. The coordinate measure is not reset or identified with ρ.
+
+The source owners are:
+
+- `A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md`,
+  (8)–(16): actual full32 Julia banks, full-CAR moment, H_f,H_q and all
+  180 Choi/16 material copies with normal projection;
+- `A4D_PARITY_RESOLVED_GEOMETRIC_SOURCE_GLOBAL_2026_10_27.md`, (5):
+  a(N,P)−f_odd(N,P)=tr[adj(I−P)NP]/8;
+- `A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md`,
+  (3)–(6): the exact normalization and common degree −2 in raw e;
+- main source §7cz (879)–(881): known complete orthogonal preparation
+  targets, including every column, actual CAR filler and identity on RIGHT.
+
+We construct seven actual geometry/resource inputs Z_j(Y) for every free
+current Y=(e,U,Ψ,ρ), giving exactly §7ef (SC4)'s arguments. They are passed
+to the SAME original full-bank generator and SAME fixed ten-sign processor.
+Their marked outputs are those of their respective actual geometries;
+they are not asserted to equal the current field's marks.
+
+#### 7eh.B.2. Current f-only, q-only and zero banks are exact
+
+Define
+
+    Z_f(Y)=(e,U,0,ρ),     Z_q(Y)=(e,I,Ψ,ρ).
+
+The first retains f_x exactly and has q_x=0. The second retains q_x exactly
+because (F1)'s matter observable does not use U; all plaquettes are I, and
+Tr_16 dΓ(N_rs)=0, so f_x=0 for every e. A zero bank (e_ref,I,0,ρ) has both
+moments zero. These are function identities before any equation of motion.
+Thus their differentiated pullbacks retain ALL current coframe, link and
+two matter variations. Shared e in both current calls is generated from
+the same data, not replaced by two independently variable coframes.
+
+The original normal projection R_2 is identity on every proper link used
+here, including I. All these targets have valid original Choi addresses,
+identity anchors, CAR grades and geometric readouts.
+
+#### 7eh.B.3. One genuinely curved, exactly computable reference pair
+
+Choose an even-grid refinement h=1/L, L≥2 even; this is a cofinal choice.
+Let χ_h be any specified positive computable number ≤1. Use χ_h=1 if
+only finite reference validity is needed. A smooth version is given below.
+Set the rational/Golden Cayley parameters
+
+    t_h=h/2,        v_h=h χ_h/20,
+    c_a=(1+t_h²)/(1−t_h²),  s_a=2t_h/(1−t_h²),
+    c_b=(1−v_h²)/(1+v_h²),  s_b=2v_h/(1+v_h²).
+
+Let A be the boost in the 02 plane with entries c_a,s_a, and B the rotation
+in the 12 plane with B_12=s_b, B_21=−s_b, B_11=B_22=c_b. Both are genuine
+proper orthochronous Lorentz matrices. Take constant links
+
+    U_0=A, U_1=B, U_2=U_3=I, Ψ=0.                       (F2)
+
+There is just ONE nonidentity based face: P_01=ABA⁻¹B⁻¹. Every other
+face is I, including all shared-edge occurrences. P_01 lies in
+SO⁺(1,2)⊕1. An odd-dimensional proper Lorentz matrix has an eigenvalue 1
+(the reciprocal spectral pairing and determinant 1 leave that eigenvalue);
+the fourth fixed direction is another. Hence rank(I−P_01)≤2 and
+
+    adj(I−P_01)=0.
+
+The owner's FULL, unweighted CAR16 moment therefore equals its odd
+geometric contraction EXACTLY on this reference family. No parity
+projection, small-loop substitution, or omitted CAR grade is involved.
+
+Choose one fixed positive s_ref large enough for the common inverse-coframe
+Julia margin, and put
+
+    e_ref,x=s_ref ρ_x^(−1/2) I.
+
+Then N_01=ν_h²ρ_x s_ref⁻² K_01, K_01=E_01+E_10. Direct multiplication gives
+
+    F_h = s_a s_b [2+(c_a−1)(1−c_b)]/(2h²)>0,
+    f_x(ref+)=ρ_x F_h/s_ref².                               (F3)
+
+Replacing B by B⁻¹ changes the sign exactly, so
+f_x(ref−)=−ρ_x F_h/s_ref². This sign is from the literal
+−tr[K_01(P−P⁻¹)]/4 contraction, not an epsilon convention guessed from a
+different coframe basis. A fixed simultaneous basis transport to the
+original null/creator ordering preserves both traces and every bank.
+
+For 0<h≤1/2 and 0<χ_h≤1,
+
+    0<F_h<1/8.
+
+Indeed s_a≤16h/15, s_b≤hχ_h/10,
+c_a−1≤2/15 and 1−c_b≤1/800, giving the bound directly. The exact original
+k0=r_q/r_f>20 is unchanged. Define
+
+    d_h=F_h/(s_ref² k0)>0,       δ_h=ε_h d_h.                (F4)
+
+This avoids any inverse-existence assumption: actual geometry determines
+the reference step, then the same step is used in both reference axes.
+Nothing is calibrated to an Einstein residual. The hierarchy is
+reference geometry → common bank/chart norm bound Λ_h → ε_h=1/(64Λ_h)
+→ δ_h, so there is no ε/δ/compiler circularity.
+
+For a previously specified sufficiently small d instead, the inverse is
+also constructive. Write c_a=cosh a, s_a=sinh a and c_b=cos b,s_b=sin b.
+For |b|<π/2,
+
+    F_h(b)=sinh(a) sin(b)[2+(cosh(a)−1)(1−cos b)]/(2h²),
+    F_h'(b)>0.
+
+Choose a rational b_*∈(0,π/2) with certified
+F_h(b_*)>s_ref² k0 d. Oddness supplies the strict negative bracket.
+Monotonicity and interval bisection give a terminating precision-name for
+the unique ±b. This optional inversion is not needed by (F4).
+
+#### 7eh.B.4. Exact positive and negative full-CAR matter references
+
+Use e_ref above and all links I. Set Ψ_15=0 and
+
+    a_h=h s_ref sqrt(d_h)/2,
+    Ψ_0^(time)(n)=a_h (−1)^(n_0),
+    Ψ_0^(space)(n)=a_h (−1)^(n_1).                      (F5)
+
+Because L is even, these are valid periodic fields, including the wrap
+edge. The original FORWARD difference obeys (D⁺Ψ)²=s_ref²d_h on every
+site in the chosen direction and vanishes in the other directions.
+Since g_ref⁻¹=ρ_x s_ref⁻²η, exactly
+
+    q_x(time)=+ρ_x d_h,     q_x(space)=−ρ_x d_h,
+    f_x(time)=f_x(space)=0.                              (F6)
+
+Thus the original sigma-minus argument y=−ε_h q_x/ρ_x gives +δ_h for
+the spatial reference and −δ_h for the temporal reference. A centered
+difference would annihilate (F5) and is NOT substituted for the owned
+forward/mid-edge difference. On a nonperiodic chart with halo one can
+instead use the corresponding affine scalar profiles, with exactly the
+same edge differences and signs.
+
+The complete material vector is the original
+
+    m_x=√p|1>+Ψ_0|0>+√(1−p−Ψ_0²−Ψ_15²)|14>+Ψ_15|15>.
+
+Here a_h²=h² F_h/(4k0), independent of s_ref, and is strictly inside the
+original material slack. Nothing is replaced by an independently prepared
+Bernoulli sign. H_q reads these actual CAR fields through its original
+two-Choi/two-material-copy construction.
+
+If smooth reference interpolants are required, choose
+χ_h=p^(L²). Then F_h=O(p^(L²)), d_h=O(p^(L²)), and the smooth interpolant
+a_h cos(πx_μ/h) of (F5) tends to zero in every fixed C^r norm. The links
+in (F2) have bounded smooth connection interpolants (ω_0 bounded,
+ω_1→0). If ρ is a smooth positive family, e_ref is also smooth with
+uniform bounds. For rough finite PF inventories, smooth reference
+geometry is unnecessary: (F3),(F6) and their PF cancellation are exact,
+and all apparatus/heat estimates use their real finite prefix constants.
+The current physical-field smoothness assumptions are not weakened.
+
+#### 7eh.B.5. The seven complete banks
+
+In §7ef's exact order the source inputs are
+
+| Call | Genuine source bank | Exact (x_x,y_x) at each site |
+|---|---|---|
+| y+ | spatial reference (F5) | (0,+δ_h) |
+| y− | temporal reference (F5) | (0,−δ_h) |
+| f | Z_f(Y) | (ε_h f_x/ρ_x,0) |
+| 0 | (e_ref,I,0,ρ) | (0,0) |
+| x+ | (e_ref,A,B,I,I,0,ρ) | (+k0δ_h,0) |
+| x− | (e_ref,A,B⁻¹,I,I,0,ρ) | (−k0δ_h,0) |
+| q | Z_q(Y) | (0,−ε_h q_x/ρ_x) |
+
+Each uses the ORIGINAL full field-to-Choi/CAR generator (879)–(880), all
+180+16 regenerated resources when required, the same H_f,H_q and ten-sign
+processor, and the same READY law. Its complete post-state and every
+marked geometric observable are those of this original generator, not
+those of §7ef's smaller canonical scalar-effect apparatus.
+
+The reference ARGUMENTS are site-independent even with varying ρ. For
+the original site-independent report law this also makes their probabilities
+constant. For §7ee's more general spatially varying calibrated law P_(θ,x),
+the following order is REQUIRED: prepare ONE actual fresh site address
+Σ_x sqrt(v_xρ_x)|x>, keep it as a read-only control of all seven conditional
+source/report processors and the comparator, and take the PF average only
+after the cross-products. Thus
+
+    Q_θ=κ_9 p^7[4+Σ_x v_xρ_x Xi_(θ,x)].
+
+The original SOURCE (2) already uses those site-conditional H_f,x/H_q,x
+processors before its PF sum. Their underlying controlled implementation,
+rather than seven independently averaged marginal reports, is replayed.
+All full source banks and site/geometry marks remain. The shared site is
+fresh known WORK; its preparation and reverse are paid, so it does not
+silently become another unknown initial-cut/programme sector.
+
+This ordering gives the common local product of slopes a_(θ,x)b_(θ,x)
+for f and −k0 q. Averaging the seven reports independently would instead
+give coefficients (Σw b)a_x and (Σw a)b_x; these generally differ. Such
+independent averaging is justified only for a site-independent shared law,
+not for the full spatial programme theorem. No original PF distribution,
+unused grade or oldRIGHT correlation is removed.
+
+s_ref is a reference FIELD value in the existing units, not a second action
+scale. For example choose s_ref≥max(1,4ν_*√ρ_max), with the known regular-chart
+bound ν_h≤ν_*. Then the reference inverse legs have a uniform strict Julia
+margin. The small boosts satisfy the original link margin as well. Enlarge
+the fixed compact bank chart to contain these references before selecting
+the common Λ_h; the norm bound remains computable and field-independent
+within every compared finite family. Exact ε attenuation and the new
+actual source gain are retained.
+
+
+### 7eh.C. One paid all-input writer and its admitted graph
+
+#### 7eh.C.2. Complete target matrices, including every geometric mark
+
+For each j, generate all independent Choi copies from the actual Julia
+target Ω_J(Y_j). Its identity-anchor coefficient is positive and fixed.
+Use precisely §7cz879:
+
+    K_b=b e_0^T-e_0 b^T,
+    O_b=I+K_b+K_b²/(1+e_0^T b) in SO(D), O_b e_0=b.
+
+For every original material resource use §7cz880:
+
+    M_(Y_j)=sum_x |x><x| tensor
+          [O_(m_x(Y_j)) O_(m_*)^T] tensor I_RIGHT.
+
+This maps the original vacuum/site/Fourier resource to the desired
+correlated material bank on ALL columns. It never resets an unknown
+RIGHT. Its fixed vacuum/site/Fourier prefix is executed and priced.
+Regenerate separate known inputs for every source occurrence. No
+unknown quantum exemplar is copied. Tensor these targets, their actual
+sign/report/READY processors, and all independently required marked
+resources. Preserve padded coordinates and all unused grades.
+
+Every target is a full finite real SO matrix after the already owned
+realification/stabilization convention; any actual extra carrier and
+trace multiplicity are retained. Protected oldRIGHT is an exact identity
+factor. Denote the resulting full seven-bank generator by G_h(θ,Y).
+It is a constructive matrix formula from the recorded finite data, not
+an instruction 'prepare whichever state yields Einstein'.
+
+Use a TYPED partial RAW R3 conjugation. Let R denote the born quantum
+resource-bank WORK, S the fresh SITE register, K the fresh fieldname,
+C the retained live CODE, and D the protected DATA/oldRIGHT. Define
+B_R=G^{tensor |R|} on R ONLY. Exclude C,S,K from B_R. Also keep native
+computational sign/READY/REPORT labels in their declared physical basis;
+they are not silently rotated by this bank conjugation. Apply
+
+    U_R -> B_R U_R B_R*,    E_R -> B_R E_R B_R*
+
+to each bank target and ALL of its geometric marks. A processor T on
+bank R and its label wires is transported as
+(B_R tensor I_labels) T (B_R* tensor I_labels), so its actual output
+labels still feed the literal comparator in the computational basis.
+The owned initial preparation of those label/factory wires is included.
+Thus a bank born in B_R|0_R> reaches B_R b with the correctly transported
+moments, while the physical control projectors Π_C, |k><k| and |x><x|
+remain computational. A needed anchor basis permutation is a paid target
+operation. SITE and fieldname births are handled by the loaders below,
+not by extending B_R onto them. No free zero blank is used.
+
+#### 7eh.C.3. A fixed executable operation, not seven externally chosen words
+
+At fixed h, take the finite field-code palette Y_k required for the
+calibrated comparisons. For a uniform finite-field norm, choose a
+sufficiently fine finite chart/test net using the existing smooth
+derivative bound; every finite mesh has finite dimension. Precision
+and endpoint sets are chosen BEFORE the processor is compiled.
+
+Evaluate the stored g_j and the preceding full matrix formulas for
+each (θ,k), including their marked prefixes. This finite computation
+produces the table of full target matrices. Define
+
+    U_h=sum_(θ,k) Π_(θ,k) tensor G_h(θ,Y_k).          (L1)
+
+Unused programme labels go to one recorded regular calibrated θ_0 on the
+SAME current field Y, with the invalid flag retained. They do not erase
+Y or become an identity/no-report branch. L1 is one finite operator,
+not a schedule that selects a new
+processor after seeing the desired answer. The descriptor includes
+the generator algorithm and its finite code domain, so changing only
+the baseline's argument requires changing that operation. The field
+code k remains an actual input/choice. Nothing here deduces a unique
+Y from the old history.
+
+#### 7eh.C.4. All-column native synthesis with EXACT code-projector preservation
+
+A generic full-column approximation is insufficient if it is later
+claimed to preserve CODE exactly. Use the following explicit version.
+
+Factor each finite real SO target into coordinate-plane rotations.
+A common elimination order and zero angles provide one finite common
+list of planes for the entire palette. For each plane, a WORK-only
+permutation routes it to a one-target rotation conditional on all
+other WORK bits. Stabilize orientation with a retained WORK helper if
+needed. Work-only routing matrices are compiled by the existing
+fullStep all-column theorem, so all dirty/helper columns are included.
+
+For a target rotation controlled by d binary CODE/WORK bits, with
+angles β_b on the 2^d patterns b, let g_l be a cyclic binary Gray list
+and set
+
+    α_l=2^(-d) sum_b (-1)^(g_l dot b) β_b.
+
+Alternate R_target(α_l) with CX from the changing Gray control bit.
+On every control column, X R(α) X=R(-α) and Walsh orthogonality give
+the requested R(β_b). This is the all-column §7ec identity. CODE bits
+are NEVER targets; they occur only as CX controls. The target and
+all routing wires are live WORK, separate from protected oldRIGHT.
+
+Approximate each α_l by an even nonnegative power G^{n_l}. The owned
+irrational Golden rotation provides such a power at every positive
+tolerance. Use one even L>=max n_l and the §7ef padded form
+
+    G^((L+n_l)/2) Z G^((L-n_l)/2) Z=G^{n_l}.          (L2)
+
+Z is the actual routed SourceI² on a WORK target; intermediate Spin
+columns are included and the completed Z has identity on them.
+Every occurrence and routed inverse is paid. Approximate work-only
+routings independently. Each primitive commutes with every CODE
+projector, so the final literal word has exactly
+
+    Uhat_h=sum_(θ,k) Π_(θ,k) tensor Uhat_(θ,k).       (L3)
+
+It approximates L1 in operator norm on ALL columns; it cannot leak
+to a different programme label. It may of course entangle CODE
+coherences with WORK. No assertion of unchanged full CODE algebra is
+made. Primitive telescoping supplies the error from the sum of the
+macro tolerances, including every marked prefix. Unknown helpers
+are never assumed clean.
+
+This constructs an actual fixed native gate word for the ENTIRE
+operation. A run does not invoke an external angle constructor for
+its seven separate calls: all conditional angles have already been
+compiled into this one word. No efficiency or exact finite
+representation of arbitrary target angles is asserted.
+
+Thus there is a terminating BuildWriter map from the retained finite
+source descriptor, its declared chart/test alphabet and positive
+precision code to this one literal gate word and its marked-prefix
+descriptor. It uses the fixed formulas above, full geometric bank
+formulas, a fixed rotation decomposition and a deterministic certified
+Golden-power search. Its output and all readers/loads are stored and
+executed. This is a construction theorem for finite words; no giant
+word has been enumerated by this bounded review. The chart/test input
+is the already declared κ-section, not a newly chosen Einstein filter.
+
+#### 7eh.C.5. Same initial boundary, a paid field code, and the actual reverse
+
+Keep programme θ as live retained CODE on all its input columns.
+Write the known fieldname k to ONE fresh born WORK register using
+the paid known loader L_k. Explicitly B_K=G^{tensor |K|}, its actual
+birth is B_K|0_K>, and choose a full real SO target O_k|0_K>=|k>.
+Bitwise rotations by 0 or π/2 are one such complete target. Set
+
+    L_k=O_k B_K*,     L_k B_K|0_K>=|k>.
+
+Both factors are actual paid operations: B_K* has the owned exact
+inverse word, while O_k is approximated using one common-L version
+of L2 for the whole finite endpoint set. No global RAW conjugation
+is subsequently applied to K or its computational projectors. Hence
+all fieldname comparisons have the same initial boundary and common
+finite inventory. This loader is NOT an operation on oldRIGHT.
+
+Execute Uhat_h, the fixed seven-call comparator, and the mechanically
+generated reverse of the actual forward preparation/loader word.
+Native inverses use the owned G^{-1}=Z G Z, CX^{-1}=CX and the paid
+SourceI inverse. They are executed words, not free time reversal.
+One reverse generator is stored; the two legs are not independently
+selectable programme parameters.
+
+At the physical cut, the fresh fieldname/WORK coordinates return to
+their actual initial born values. The unknown θ and DATA columns
+remain retained. Thus the cold corner selects k without tracing over
+all fieldnames, while retaining the full θ-controlled return operator.
+Loader errors are part of the same full-column budget. The true heat
+trace includes ALL fieldname/CODE/source/purifier/helper branches.
+
+Prepare ONE shared fresh SITE address in the actual known state
+|χ_ρ>=sum_x sqrt(v_x ρ_x)|x>, with zero amplitudes on padding. Let
+B_S=G^{tensor |S|} and choose the full real SO completion
+O_χ|0_S>=|χ_ρ> (the positive-anchor formula already used above).
+The physical loader is
+
+    L_SITE=O_χ B_S*,    L_SITE B_S|0_S>=|χ_ρ>.
+
+If ρ depends on the live data labels, compile the corresponding
+(θ,k)-controlled O_χ once on all columns. B_S* is paid; O_χ and all
+prefixes are compiled to the allocated tolerance. The inverse is
+the mechanically generated actual inverse, targeting B_S O_χ* and
+returning SITE to its born vector. Neither |χ_ρ> nor |0_S> is supplied
+for free. All padding and both operations enter the price. Keep SITE
+as a read-only
+control of all SEVEN conditional H_f,x/H_q,x processors and of their
+comparison. The same Gray construction preserves its projectors
+exactly between preparation and unpreparation. Consume the original
+SOURCE (2) site-conditional implementation BEFORE its PF averaging.
+SITE is fresh WORK, not an additional unknown initial-cut factor.
+Concretely, the current cold embedding retains live CODE and the genuine
+unknown DATA axes, while inserting the actual born states on SITE,
+fieldname and bank/WORK coordinates. SITE is born AFTER that cut, then
+prepared and finally unprepared. If the old prefix already generated
+a supported CODE state, use its actual output Gram and the physical
+initial-cut dimension correction of §7ee, rather than widening the
+initial cut to an independently supplied CODE register.
+Compile the site preparation as its own marked macro. In every bank
+and processor macro BETWEEN that preparation and its inverse, treat
+(θ,k,x) as the control label in L1--L3 and route/rotate only the other
+WORK wires. Do not perform a generic decomposition of the whole
+composite that silently mixes SITE inside the core. The same recorded
+site-conditional processor word is replayed at the seven relative
+bank addresses. Separate generated banks are independent conditional
+on the shared labels; no independent SITE is born per call.
+
+For the ideal target, separately regenerated resources are independent
+conditional on (θ,x), and give the original ten-sign Born means.
+The effect is P_(θ,x) for each of the seven g_j at that SAME x.
+The §7ef comparator and subsequent single site unpreparation give
+
+    Xi_(θ,x)=(P_y+-P_y-)(P_f-P_0)
+                     +(P_x+-P_x-)(P_q-P_0) at (θ,x),
+    Q_θ=κ_9 p^7[4+sum_x v_x ρ_x Xi_(θ,x)],
+    C=sum_θ(1-2Q_θ)Π_θ tensor I_DATA,
+    κ_9=sin²(512 θ_G)>0.                              (L4)
+
+Each genuine report probability lies in [0,1], so |Xi_(θ,x)|<=2 and
+
+    c_θ=1-2Q_θ >= 1-12 κ_9 p^7 =: c_min > 0.
+
+The final strict inequality uses p=(sqrt5-1)/2 and 0<κ_9<=1:
+12p^7<1. This is a uniform native target corner bound independent of
+the small reference step. Finite compilation retains a certified
+positive fraction of c_min by its all-column error allocation.
+
+This is all-input on θ and old DATA, not a selected pure programme.
+The complete source-bank matrix, rather than the report value alone,
+establishes L4 and preserves every original geometric mark.
+Seven independently PF-averaged calls are NOT substituted: if the
+slopes vary with x, they produce products of averages rather than
+the required local product a_(θ,x)b_(θ,x). The one shared SITE is
+therefore part of the stored operand generator and its marked maps.
+
+#### 7eh.C.6. The one-writer tangent graph and its full source
+
+Record Uhat_h with its input embedding, generator g, all relative
+wire maps, all required prefixes/outputs and code domain. The §7ed
+Book01 operator/response naturality theorem applies to THAT whole
+retained operation. Relative-wire replay supplies an explicit
+nonempty continuation on fresh canonical addresses. It preserves
+the recorded actual compiled matrix; ideal-target errors remain
+explicit and are not called exact naturality errors.
+
+Let z=(θ,Y) and let all intermediate bank states be s=σ(z), including
+both echo legs and every shared material/frame input. For the full
+Book price B, introduce the actual state constraints and eliminate
+their causal adjoints. The result is exactly
+
+    D B_red[z] = B_z + B_s Dσ[z].                     (L5)
+
+Equivalently it is the sum of all local preparation reactions pulled
+back through the ONE g. L5 retains every independent live θ/Y row;
+it does not impose B_s=0 for a state generated by σ. A shared READY
+or slope change contributes its actual source and is treated by §7ee.
+Changing one occurrence of P_0 alone is the genuine §7ef normal test,
+but is not a tangent of L5. It changes the whole recorded writer.
+Changing the generator itself is a different retained operation
+unless that generator parameter is explicitly present in θ, in which
+case its derivative is retained in L5.
+
+Consequently the shared-programme/source hypothesis of §7ee is now
+realized by actual full geometric resources and a single native word,
+rather than imposed only as equality of seven scalar report laws.
+The matched-branch recovery keeps the independent CURRENT geometric
+fields and every branch source at its recovery point. It does not
+turn that recovery-point matching into a constraint on their variations.
+
+#### 7eh.C.7. Price, κ composition, and precise scope
+
+Apply RAW R6 to the literal births/words/marks just constructed.
+Use its complete clock H and determinant J, not a selected success
+Shannon price. Use §7ee's output Gram A=C_old C_old*, its physical
+initial-cut dimension term, and all retained programme columns.
+All copied resources, oldRIGHT, code, invalid flags, helpers, failed
+factories and reverse stages are priced. Nothing is a free blank.
+
+Use the existing positive-corner relative error bound to choose all
+native macro/loader tolerances. The actual compiled corner gives the
+gain; use the certified lower bound, not an uncorrected ideal gain.
+Fix the real finite prefix before choosing paid retention K. Its
+growing-clock bound suppresses the complete heat error with every
+new geometric-reference register included. The original noncircular
+order (old prefix, concentration target, source/reference accuracies,
+multiplicity, finite comparison, compilation, then K) is unchanged.
+
+Thus the all42 source theorem and §7ee controller/old-source recovery
+consume this concrete map. Book03's independently stated stationary
+law can be applied to its declared calibrated price/tangent section;
+there is no need to derive stationarity from a variational minimum.
+
+The exact boundary remains visible: the geometric seven-bank moment
+identities are supplied by the geometric construction; the present
+proof supplies their native execution and joint source. Persisting
+this recorded whole writer is a regime hypothesis. Naturality does
+not force every future D0 task to use it, and the field data Y are
+not uniquely selected by history. No global raw216 exhaustion or
+universal physical task-selection theorem is asserted.
+
+### 7eh.D. Complete source, shared-site order and the true gain
+
+#### 7eh.D.1. Inputs and exact carrier
+
+Use the primary artifact §7ef, SC1--SC12, for the original nonlinear r
+and the literal composite READY AND REPORT comparator. For the larger
+full geometric processor use its ACTUAL field-independent READY probability
+α_h>0 from the owned implementation. The scalar fixture value
+a20=2 F21 p^23 is substituted only when that implementation is actually
+chosen and its equality is established. Every failed branch remains. Write
+
+    lambda_vis = sin^2(512 theta_G) p^7,
+    Astar = α_h r_f, Bstar = α_h r_q, k0 = r_q/r_f,
+    g = 2 lambda_vis delta epsilon Astar Bstar.
+
+The fixed Golden primitive angle theta_G is not a varied writer parameter.
+All references below use the new 512 visibility, not the old 128 visibility.
+Both failure outcomes of each two-bit READY/REPORT bank remain. Every old
+protected input remains an identity factor. The fixed detector effect is
+marked before the central sign, as in SC7; a terminal port readout is different.
+
+For a varying writer parameter theta, use the COMPLETE ORIGINAL report-bank
+preparer at address u, including its Choi/CAR data, READY resources, every
+fine outcome, garbage and required geometric marked readout. Let its READY
+probability be a_theta(u), its conditional REPORT success r_theta(u), and
+its composite probability P_theta(u)=a_theta(u)r_theta(u). No assertion that
+the complete output is a product of two canonical qubits is needed.
+The actual seven addresses are SC4, with the existing field/PF encoding.
+The same theta is read at every address. Parameter derivatives below include
+every occurrence in both the forward writer and its actual inverse.
+
+Assume a compact positive chart with A_theta=partial_x P_theta(0)>0 and
+B_theta=partial_y P_theta(0)>0. The uniform Taylor/source estimate requires
+P to be C1 in theta with values in C3 in u, with the corresponding bounds.
+This is a regularity statement about the common input family; an arbitrary
+seven-entry table with slopes diverging as delta shrinks is not covered.
+For the continuum material-frame interpretation, retain §7ee's uniform
+spatial regularity assumptions on sigma(theta,x) and the current fields.
+
+#### 7eh.D.3. Exact joint differential and the reference cancellation
+
+Order the seven composite probabilities as (y+,y-,f,0,x+,x-,q). Put
+
+    Delta_y = P_y+ - P_y-, Delta_x = P_x+ - P_x-,
+    Xi = Delta_y(P_f-P_0) + Delta_x(P_q-P_0),
+    Q_x = lambda_vis(4+Xi_x),
+    Q = lambda_vis[4+sum_x mu_x Xi_x], mu_x=v_x rho_x.
+
+SC9 is the COMPLETE probability differential
+
+    DQ_x = lambda_vis sum_j nu_j (r_j Da_j + a_j Dr_j),
+    nu = (P_f-P_0,-(P_f-P_0),Delta_y,-Delta_y-Delta_x,
+          P_q-P_0,-(P_q-P_0),Delta_x).
+
+Here the seven-coordinate formula is evaluated at the SAME x. The full
+PF differential is
+
+    DQ=lambda_vis sum_x [mu_x D Xi_x + Xi_x D mu_x].
+
+Normalization gives sum_x Dmu_x=0. In particular the fixed baseline 4
+has no missing measure source. All changes of v, rho and the actual PF
+preparation are included in this differential and in the paid apparatus.
+
+Compose this covector with the actual writer input Jacobian. No P0 term or
+READY term is removed before composition. The exact identity sum_j nu_j=0
+shows that a common additive composite baseline DP_j=db cancels. With fixed
+common READY a, an additive REPORT baseline Dr_j=db cancels as well.
+The negative P0 row is cancelled by the f and q rows; reference differences
+cancel their own common shifts. Thus the independent P0 contrast in §7ef
+is retained as a normal to this graph, not falsely evaluated as zero.
+
+A general theta need not cause a pure additive baseline shift. Its slope
+changes survive. In particular, for a common address-independent READY a,
+
+    a partial_a Xi = 2 Xi.
+
+This source is part of the calibration scale; it must not be frozen.
+At a matched real reflection each separately varied forward/reverse leg
+contributes half of the paired first derivative (SC12). The shared-writer
+chain rule adds both occurrences. Its cancellation therefore does not rely
+on ignoring the actual inverse-leg preparation.
+
+There is a new global cold margin requiring no old kappa128 estimate.
+Since every composite probability is in [0,1], |Xi_x|<=2; hence
+
+    c=1-2Q >= 1-12 sin^2(512 theta_G) p^7
+             >= 1-12p^7 > 0.
+
+The last strict inequality follows already from p<5/8. It applies to every
+valid calibration/padded code column and any normalized PF distribution.
+For native approximations charge the complete corner error and retain,
+for example, half this certified margin.
+
+#### 7eh.D.4. All writer parameters enter the existing geometric source
+
+Taylor expansion of the SAME site-conditional P_theta,x gives
+
+    Xi = 2 delta A_theta B_theta (u_1+k0 u_2)
+         + O(delta |u|^2 + delta^3 |u|),
+    sigma(theta,x) = A_theta,x B_theta,x/(Astar Bstar) > 0.
+
+The estimate also holds after theta differentiation with the stated joint
+regularity. Applying the SINGLE shared-SITE PF averaging and its supplied field inputs
+u_1=epsilon f/rho, u_2=-epsilon q/rho yields
+
+    DQ/g = D I_h^sigma + O_reg(epsilon+delta^2),
+    I_h^sigma=sum_x v_x sigma(theta,x)(f_x-k0 q_x).
+
+The factor rho cancels by the actual identity mu_x=v_x rho_x and the
+inverse-PF arguments. This includes its derivative. The remainder carries
+the same full source norms and rho bounds as the existing PF source owner.
+
+Here D includes the full independent coframe, proper-Lorentz, matter, PF,
+measure and shared writer-parameter rows supplied by the source owner.
+For the actual finite code realization these rows are transported by the
+owned paired finite-deformation sections and the error in §7eh.D.5. There is no
+derivative of the discrete encoder/compiler, nor an identification of a
+change between orthogonal code words with an infinitesimal Hilbert-sphere
+tangent. Any additional admitted code-state directions are handled on the
+actual retained CODE carrier by §7ee, not by differentiating integer labels.
+If READY is common and address independent, sigma contains (a/α_h)^2;
+therefore its nonzero source has not disappeared.
+
+Use the owned full material-coframe pullback to consume D I_h^sigma. With
+the density held as a separate argument, degree -2 gives the elementary
+identity I_h^sigma(e)=I_h^1(e/sqrt(sigma)); the owner's dependent-measure
+material-frame formula is used when the physical density is not independent.
+Consequently every shared theta row is included in the same pullback as the
+field rows. At a full stationary target the entire pulled-back covector
+vanishes, including READY/slope changes. Baseline cancellation alone would
+not prove this stronger statement.
+
+#### 7eh.D.5. Original price, actual gain and paid implementation rows
+
+For the SC10 rank-eight fixture, c=1-2Q and
+
+    J=-8 log(1-z+z c^2), w=8 z c^2/(1-z+z c^2),
+    DJ=(4w/c)DQ, Gamma=4g w/c.
+
+This is exactly the incoming SC10 gain, evaluated at the ACTUAL compiled
+central corner. A retained shared CODE register changes the input rank;
+do not reuse the number 8 after adding such a register to the retained cut.
+For that carrier use §7ee's full matrix identity, output Gram A, actual
+resolvent weights and gain. Rectangular old history and singular A remain
+allowed at their existing hypotheses. Replacing 128 by 512 in the detector
+does not otherwise alter that matrix proof.
+
+All-input implementation verticals preserving the complete writer/marked
+operator, its cut and the wrapper have zero RETURN differential. This does
+not make their whole paid heat/history price zero. Include their actual
+finite stage counts and use the owned compiler-first, late-K bounds on the
+full growing clock and on upstream preparation/history contributions.
+
+For a paired finite contrast, if E_W is the all-column COMPLETE ECHO error,
+the generic determinant comparison bound before the cold append is
+
+    2 r z E_W /[(1-z)|t| Gamma].
+
+If the complete forward writer error is E_R and the inverse is replayed
+with the same accuracy, E_W<=2E_R. Thus the full-bank implementation uses
+its own certified E_R, including numerical reference construction. For
+seven full bank-preparer errors bounded by eta, E_R<=7 eta; add any code,
+computation or routing approximation separately. The special canonical
+fourteen-loader estimate E_W<=28 eta reproduces SC11:
+
+    56 r z eta /[(1-z)|t| Gamma],
+
+with the actual retained rank r and actual gain; rank eight is only the
+original fixture. Add all finite-difference, geometry, independent-copy,
+reference, history and heat errors in the owner's source norm. If the code
+adds other preparation/encoding errors, add them in operator norm before
+applying the same full-rank determinant Lipschitz bound. Choose precision
+relative to |t|Gamma, not merely to the small event probability.
+
+Do not apply the bare-z bound after appending K and then demand an
+unproved compiler/K fixed point. On one scalar matched block with output
+Gram A, the correct cold Lipschitz factor is eta_K=z p^K. For echo error
+E_W the paired contrast error is at most
+
+    2 eta_K Tr(A) E_W /[(1-z)|t| Gamma_K].
+
+In the canonical fourteen-loader special case this is
+
+    56 eta_K Tr(A) eta /[(1-z)|t| Gamma_K].
+
+With w_K=Tr[eta_K c^2 A((1-z)I+eta_K c^2 A)^(-1)] and
+Gamma_K=4g w_K/c, this is bounded by
+
+    14 eta [(1-z)+eta_K c^2 ||A||]
+       /[(1-z)|t|g c].
+
+The positive cold factor cancels BEFORE choosing K. For block products use
+§7ee's relative product/corner bounds, which retain the common product
+factor, rather than an absolute estimate that loses it. These are the
+proper compiler-first interfaces for subsequent late-K heat suppression.
+
+#### 7eh.D.6. Exactly what the operation-preservation requirement says
+
+Book01 §01.15 (lines 1708--1720) imposes BOTH
+
+    P D_new = D_old P, P R_new = R_old P, R=D*D
+
+for a persisting D0 observable. Apply this to the registered FULL writer
+operator/isometry and its required marked outputs. Preserving only U_W*U_W=I
+is vacuous and cannot fix its bank preparation. Retaining a descriptor
+without proving the actual current all-input operator relation is likewise
+insufficient. The reader must supply the actual replay/address map.
+
+Once that map is supplied, the graph above consists of free input data
+(theta, fields, PF variables) passed through that actual stored operation.
+A precise tangent statement is available. Write z for ALL freely admitted
+writer inputs and b for the collection of full bank states, intermediate
+computed values and replay states. The realized computation says b=G(z),
+with all retained outputs included. Differentiating its actual correctness
+identity gives
+
+    T Graph(G) = {(dz,DG(z)dz)},
+    D(B restricted to Graph(G)) = D_z B + D_b B DG(z).
+
+For finite native codes this is read through the owned relative-precision
+finite-deformation section; the smooth formula is its target covector.
+The fourteen probability source rows and BOTH preparation-leg sources are
+terms of D_b B DG, not omitted rows. Variations of an implementation v
+that leave the full registered operator and marks fixed are verticals;
+their return derivative is zero, while their paid heat contribution is
+controlled as in §7eh.D.5. An independent db with dz=0 violates the actual
+correctness identity unless DG allows it. This establishes the claimed
+absence of free bank normals on THIS causal graph without asserting that
+the ambient bank covector vanishes. In a constraint formulation the ambient
+normal is a constraint-reaction covector, not a lost zero equation.
+
+A change to one internal occurrence leaving the other six fixed is not a
+faithful implementation of that operation. But if an actual separately
+free current actuator/input is admitted, it is a real additional direction:
+SC9/SC12 assign its source and it cannot be discarded by terminology.
+The old archive's mere presence does not prove that all D0 continuations
+must use this registered writer. This result closes the common-writer SOURCE
+application; unrestricted selection of that operation has a different scope.
+
+### 7eh.E. Applying the existing native stationary law
+
+#### 7eh.E.1. The law being realized
+
+Book03 §03.3.0b expressly calls finite stack stationarity the primitive.
+More specifically, §03.25 declares
+
+    B_N = β⁻¹ log Tr exp(−βΔ_N) − log det(I−zF_N),   δB_N=0.
+
+We consume this explicit master law. No identity between every individually
+named term of the older stack and H+J is presumed. No additional Shannon,
+terminal score, or boundary action is inserted into this specified master.
+`A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md` §1
+already makes this distinction. An application claiming the older complete
+stack instead would have to identify its additional terms separately.
+
+Book02, immediately before §02.CVFT.v5, explicitly permits a declared finite
+difference on a finite matrix family or an ordinary smooth finite-family
+derivative as the finite deformation. Book01 §§01.4.0–01.4.1 supplies the
+κ-valued interpretation, with its six actual finite-descent requirements.
+`KAPPA_CLOSURE_RU.md` §§2–6 supplies precisely that interpretation for the
+regular task; its domain and its comparison/deformation section are fixed
+off shell, before any Einstein equation or zero-source condition.
+
+The statement proved below is **realization of the master equation in this
+declared κ task**. It is not the assertion that its approximating finite
+words individually solve every exact finite master equation.
+
+#### 7eh.E.2. The actual operator diagram
+
+All paths below are repository-relative. Write P for
+`02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/`.
+RAW (R1)–(R6), FULLSTEP, and GROWING_CLOCK (G1)–(G14) construct
+
+    actual common-boundary native words and births
+                    ↓ literal generated execution Xi_n
+    K_n=⊕_j H_j,  T_n,  P_n,  Q_n=I−P_n,  Δ_n
+                    ↓ Book03 master, without deleting modes
+    b_n = β⁻¹ log Z_01(T_n) − log det(I−zF_n).
+
+Here T=S+RgE_f is unitary on the *actual unequal stage fibres*. R is derived
+from the canonical inclusions and directs every final complement to its
+birth stage. P=⊕_j A_jP_0A_j* is generated by the same real execution.
+Thus F=PT*(I−P)TP is exactly Book01/03 feedback, including moving P.
+The normalized incidence differential is
+
+    d_T = [(∂_s R_s)⊗I ; R_s⊗(I−T)],
+    Δ=d_T*d_T ⊕ d_Td_T*,
+    Z_01=2 Tr_(33D) exp(−β d_T*d_T)+359D.
+
+All 425D modes remain. The determinant is exactly (G10), not an assigned
+report score. For the retained programme extension, §7ee uses its proved
+full-code corner and the OUTPUT old Gram C_old C_old*; it does not change
+this operator-to-master diagram.
+
+On a smooth fixed-layout chart the exact differential is
+
+    db_n[v] = −Tr(ρ_β DΔ_n[v])
+              +z Tr((I−zF_n)⁻¹ DF_n[v]),
+    ρ_β=exp(−βΔ_n)/Tr exp(−βΔ_n).
+
+Every generated-state/cut contribution enters DXi_n and hence DF_n. For
+compiled finite comparisons the upper diagram holds separately at both
+endpoints; Book02's declared finite difference then commutes exactly with
+this evaluation. The controlled finite-difference-to-covector error is the
+owned SOURCE/RAW/KAPPA estimate, not a fictitious derivative of a word index.
+
+β,z, rank, layout, and the one dimensional section are common within each
+such comparison. Book03 §03.25 separately defines the forward rank step
+∂_V A_N=A_(N+1)−A_N; it does not set that forward difference to zero.
+Chronological growth is therefore not a missing continuous Euler row.
+If a different task really varies β or z, its additional source remains.
+
+#### 7eh.E.3. Boundary and generated-report reactions
+
+Fix the actual old prefix. For every required old observable E, canonical
+birth obeys J*(E⊗I)J=E, and the new protected operations preserve it.
+Consequently the current field lift L_Y satisfies
+
+    D C_old L_Y = 0
+
+exactly, for every old-record constraint. A corresponding boundary
+multiplier has zero pairing with this lift; no unpaid compensating change
+of an old preparation is needed. Compactly supported spatial tests have
+the same property at the fixed collar.
+
+The future task fixes correctness, not the value of the future report:
+c_f=r−Q_h(Y)=0 for all free regular Y. If r is retained as an independent
+coordinate, the constrained master Lagrangian is B+λ c_f. Its r equation
+gives λ=−B_r. The Y equation is therefore
+
+    B_Y−DQ_h* λ = B_Y+DQ_h* B_r = D_Y B(Y,Q_h(Y)).
+
+This is exactly the source used in RAW §8 and KAPPA §2. The report reaction
+is retained, not declared absent. The owned backward adjoint similarly
+eliminates generated intermediate states. Genuine independent programme,
+preparation, or history coordinates are not removed by this argument;
+their owned full-norm estimates/rows are still required.
+
+#### 7eh.E.4. Finite calibration before completion
+
+Let a_(n,v) be the actual finite source contrast
+
+    a_(n,v)=[b_n(v,+t_n)−b_n(v,−t_n)]/(2t_n),
+    q_(n,v)=a_(n,v)/Γ_n,
+
+with the SAME actual positive central Γ_n for both endpoints. Γ_n is the
+owned actual gain of KAPPA (K1), or the positive §7ee calibration on its
+declared regular chart. It is not a fitted constant. For every finite n,
+
+    a_(n,v)=0  iff  q_(n,v)=0.
+
+This is multiplication of an equation/covector by a positive scalar at its
+base point. It is not replacing B by B/Γ, and no DΓ term is discarded.
+The action and both endpoint prices stay unchanged.
+
+There is no uniform-in-n lower bound assumption. Given a finite n, effective
+strict positivity gives a rational lower bound l_n>0 by interval refinement.
+For any requested output error ρ>0, compute a and Γ sufficiently accurately
+that, with both denominators at least l_n and a known finite bound |a|≤A_n,
+
+    |a−a_tilde| ≤ ρ l_n/4,
+    |Γ−Γ_tilde| ≤ ρ l_n²/[4(A_n+1)].
+
+Refining further if necessary to ensure |a_tilde|≤A_n+1 yields
+
+    |a/Γ−a_tilde/Γ_tilde| ≤ ρ/2.
+
+For the two endpoint prices it is sufficient to allocate each error at
+most ρ l_n |t_n|/4. All these tolerances are strictly positive finite
+numbers, so the owned finite log/heat evaluation halts. Small Γ can make
+the calculation expensive, but cannot destroy finite halt. Matrix-size,
+compiler and heat errors are separately controlled *relative to this same
+gain* by RAW (R11), SOURCE and KAPPA (K4).
+
+Equivalently, source accuracy ε after calibration means raw accuracy
+Γ_n ε. A raw unnormalized residual tending to zero is NOT sufficient.
+For example a_n=Γ_n≠0 with Γ_n→0 has unnormalized zero limit but q_n=1.
+Thus division occurs at each finite stage BEFORE κ completion; there is
+no attempted inverse of a zero κ-limit [Γ_n].
+
+#### 7eh.E.5. The law-level κ application
+
+The resulting source diagram is
+
+    native B_n ── declared deformation/lift ──> a_n
+                                                   │ Γ_n⁻¹, finite stage
+                                                   ↓
+                                                q_n
+                                                   │ certified κ descent
+                                                   ↓
+    regular geometric data Z ── owned source map ─> E_κ(H).
+
+KAPPA (K4)–(K10) proves, on the original task,
+
+    ||q_n−DS_ES(Z)∘A_n||_(full max,*) ≤ τ_n → 0
+
+with effective modulus, all independent block directions, and the genuine
+geometric lift A_n. Its intervals are nested and every requested depth
+halts. The six Book01 descent obligations are supplied by KAPPA §6; the
+calibrated source is an admissible κ observable of the actual complete
+Book price, not an additional dynamical term.
+
+Accordingly the realization of Book03's equation δB=0 in this source
+interpretation is E_κ(H)=0_κ. This transports the already stated equation
+through its finite, zero-preserving calibration and then interprets its
+source in the admitted κ type. It does not derive that equation from
+minimum-description probabilities, an optimisation hypothesis, or a new
+stationary-phase mechanism.
+
+This distinction matters mathematically: we are interpreting the *equation
+expression* on the κ task, not proving that the zero set after completion
+is the closure of exact finite zero sets. No such general interchange of
+completion and taking solutions is valid or needed for this statement.
+
+By the already owned KAPPA (K11), this realized native law is exactly
+
+    D_ω e_mat=0,
+    G(g_mat)=−λ T(Ψ),
+    Box_(g_mat) Ψ_A=0,  A=0,15,
+
+on the declared regular task. The full source, genuine material metric,
+all16+24+2 equations and computable nonvacuum recovery are consumed from
+GENERAL_EINSTEIN_SOURCE and KAPPA, not rederived here. §7ee enlarges the
+programme class using its own complete source and recovery theorem; the
+same finite-calibration argument applies to its positive actual gain.
+One must not replace §7ee's pointwise held-weight source identity by an
+unproved off-shell derivative of a field-dependent effective-weight action.
+
+#### 7eh.E.6. Exact scope of this substitution
+
+The substituted premise is: the regular κ source is a lawful realization
+of the existing native master-stationarity equation, with an actual
+operator/cut/heat diagram and source-relative finite precision. A separate
+law making native execution minimize signed Einstein action is unnecessary.
+
+For SOUNDNESS, any larger stationary physical domain containing these
+admitted lifts also annihilates their sources. Equality of that larger
+domain with the regular task is not required for this direction.
+
+The theorem does not prove exact finite critical words, compel selection
+of this task among all possible D0 tasks, or cancel independent normal
+rows that change its report law. Recovery is the owned regular κ recovery;
+recovery in a larger physical domain requires its additional rows as well.
+Likewise bare unnormalized κ-nullity cannot be substituted for the source
+interpretation above. These are different mathematical claims, not further
+premises silently added to this law-level application.
+
+The application to the NEW writer uses the concrete references in B, the
+literal shared-site word in C, and the source/error/gain formulas in D.
+Thus it does not simply reuse an old scalar fixture's heat constant or
+rank. The finite source net, relative errors, actual prefix and subsequent
+retention are constructed afresh at the supplied larger dimensions. The
+six κ-descent obligations have exactly the owned witnesses: finite field
+codes/words, full positive operator readouts, relative-precision halt,
+retained old records, uniform full-source bounds and nested enclosures.
+
+For the §7ee palette, Y may be the whole tuple (Y_theta). Each branch reads
+its own independently variable current data; the seven calls within that
+branch share that data. At the recovery POINT its banks are matched by the
+proved material-coframe map. That pointwise matching does not restrict their
+independent variations. No unsupplied single off-shell map is asserted for
+unrelated branch geometries or for a moving posterior action.
+
+A useful exact guard on the new SITE ordering is already algebraic.
+Take two equally weighted sites, positive local slopes A=(1,2), B=(3,4),
+current f=(1,0), q=0 and rho=(1,1). Choose a sufficiently small operand
+chart so P=1/2+A u1+B u2 is a valid positive report at each site. The
+correct coefficient sum v A B f is 3/2. Independent PF averaging before
+the cross-product instead gives (sum v B)(sum v A f)=7/4. Thus the shared
+SITE is necessary even for an elementary smooth positive reporter; it
+cannot be omitted as harmless bookkeeping.
+
+### 7eh.F. Exact finite and κ equations remain distinct
+
+The native stationary law is already an owned theory equation. The new
+construction makes its operator, allowable input graph and complete first
+source concrete in the retained-writer sector. Its source-relative κ
+realization consumes the existing full Einstein--CAR theorem. Any sequence
+of EXACT finite native stationary executions in this graph, satisfying its
+source/error contracts, necessarily has that zero κ-source and hence the
+stated Einstein equations. This implication needs inclusion of the
+constructed lifts in the stationary domain, not equality with every
+possible D0 control domain.
+
+Conversely, the existing full-source recovery constructs actual finite
+executions whose calibrated full sources tend to zero. It does not prove
+every one of them is an exact finite stationary execution. Completion of
+an equation expression need not commute with taking its exact finite zero
+sets: for positive Gamma_n, Gamma_n(y^2+1/n) has no finite real zero, while
+its calibrated limiting equation y^2=0 does. This is why relative precision
+and Book01 admissibility, although essential, do not by themselves solve
+the stronger finite critical-history existence problem.
+
+In particular, the equation below is an already justified SOURCE-SECTION
+κ law on a declared off-shell native realization:
+
+    E_Book,kappa = 0  <=>
+    D_omega e_mat=0, G(g_mat)=-lambda T(Psi),
+    Box_(g_mat) Psi_A=0, A=0,15;  lambda=-k0.
+
+It is not an assertion that exact finite Book roots have been constructed,
+that every D0 future must use this writer, or that the old full128/raw216
+contract has been replaced. No new entropy, counterterm, target-fitted
+coupling or optimization premise enters the actual Book price. If the
+broader older action stack is claimed, its additional terms still require
+their own same-execution identity; this application uses Book03 §03.25
+as it is explicitly stated.
+
+### 7eh.G. Frozen decisive evidence and parent intake
+
+The changed finite input is the exact GEOMETRIC reference construction,
+including the complete CAR trace and the actual forward scalar stencil.
+The bounded checker below verifies the oriented symbolic face formula,
+all six shared-link faces and all16 exterior-CAR grades at the rational
+fixture, the vanishing adjugate correction, actual PF scaling and material
+signs. It includes the hostile centered-stencil control: that different
+stencil would erase the checkerboard signal and is not used here.
+
+Normal Python and Python -O produced identical receipts. The implementation
+uses explicit RuntimeError checks, so -O does not remove its conditions.
+The proof of the full reference family is B; the fixture is its decisive
+finite convention check. The native compiler and old full GR source are
+consumed from their owned proofs, not numerically replayed. No gigantic
+bank/word was enumerated, run tick by tick, or declared practically cheap.
+
+
+Canonical evidence is UTF-8, LF-normalized, with one final newline.
+
+- Checker SHA256: `9eb63f13cb4853bcdea8f60873edcd3b0d9324fa4e3107b4bfb2e4dbe2dd82e8`.
+- Normal and optimized receipt SHA256: `0a758c4af5741355fca656fb590dbd5af84e7253ddee3a90666c41288a32a042`.
+- Consumed repository input: `905b1d7e6f9960873f420016ed38b5935c39ce83`.
+
+Reproduce the following frozen checker with Python + SymPy, passing an
+output JSON path; compare its contents with the frozen receipt below.
+
+```python
+"""Exact finite reference-moment check; not a native circuit or GR proof."""
+import json
+from itertools import combinations
+from pathlib import Path
+import sys
+import sympy as s
+
+
+def need(ok, label):
+    if not bool(ok):
+        raise RuntimeError(label)
+    checks.append(label)
+
+
+def zero(x):
+    if isinstance(x, s.MatrixBase):
+        return all(s.cancel(v) == 0 for v in x)
+    return s.cancel(x) == 0
+
+
+checks = []
+basis = [I for k in range(5) for I in combinations(range(4), k)]
+
+
+def exterior(P):
+    out = s.zeros(16)
+    for i, I in enumerate(basis):
+        for j, J in enumerate(basis):
+            if len(I) == len(J):
+                out[i, j] = P.extract(I, J).det() if I else 1
+    return out
+
+
+def derived(N):
+    out = s.zeros(16)
+    for j, J in enumerate(basis):
+        for pos, a in enumerate(J):
+            for b in range(4):
+                word = list(J)
+                word[pos] = b
+                if len(set(word)) != len(word):
+                    continue
+                inv = sum(word[i] > word[k] for i in range(len(word))
+                          for k in range(i + 1, len(word)))
+                i = basis.index(tuple(sorted(word)))
+                out[i, j] += (-1) ** inv * N[b, a]
+    return out
+
+
+eta = s.diag(1, -1, -1, -1)
+ca, sa, cb, sb = s.symbols('ca sa cb sb', real=True)
+A = s.eye(4)
+A[0, 0] = A[2, 2] = ca
+A[0, 2] = A[2, 0] = sa
+Ai = A.subs(sa, -sa)
+B = s.eye(4)
+B[1, 1] = B[2, 2] = cb
+B[1, 2], B[2, 1] = sb, -sb
+Bi = B.T
+P = A * B * Ai * Bi
+Pinv = B * A * Bi * Ai
+K01 = s.zeros(4)
+K01[0, 1] = K01[1, 0] = 1
+raw = -s.trace(K01 * (P - Pinv)) / 4
+formula = sa * sb * (2 + (ca - 1) * (1 - cb)) / 2
+need(zero(raw - formula), 'symbolic oriented 01 plaquette contraction')
+
+h = s.Rational(1, 8)
+t, u = h / 2, h / 20
+subs = {ca: (1+t*t)/(1-t*t), sa: 2*t/(1-t*t),
+        cb: (1-u*u)/(1+u*u), sb: 2*u/(1+u*u)}
+AA, BB = A.subs(subs), B.subs(subs)
+need(zero(AA.T*eta*AA-eta) and AA.det() == 1 and AA[0,0] > 0,
+     'actual proper orthochronous boost02')
+need(zero(BB.T*eta*BB-eta) and BB.det() == 1 and BB[0,0] > 0,
+     'actual proper spatial rotation12')
+F = s.cancel(formula.subs(subs)/h**2)
+need(F > 0 and F < s.Rational(1, 8), 'reference amplitude has strict positive bound')
+
+face_values = {}
+for sign in (1, -1):
+    U = [AA, BB if sign == 1 else BB.inv(), s.eye(4), s.eye(4)]
+    total = 0
+    for r, k in combinations(range(4), 2):
+        Pface = U[r]*U[k]*U[r].inv()*U[k].inv()
+        ur, uk = eta[:, r], eta[:, k]
+        N = (ur*uk.T-uk*ur.T)*eta
+        acar = -s.trace(derived(N)*exterior(Pface))/8/h**2
+        astar = -s.trace(N*(Pface-Pface.inv()))/4/h**2
+        need(zero(acar-astar), f'all16 CAR equals odd source on face {r}{k}, sign {sign}')
+        need(zero((s.eye(4)-Pface).adjugate()),
+             f'unchanged full-CAR adjugate defect exactly zero, face {r}{k}, sign {sign}')
+        if (r, k) == (0, 1):
+            need((s.eye(4)-Pface).rank() == 2, f'curved reference has rank-two I-P, sign {sign}')
+        else:
+            need(zero(Pface-s.eye(4)) and acar == 0,
+                 f'other based face {r}{k} is exactly identity, sign {sign}')
+        total += acar
+    need(zero(total-sign*F), f'complete six-face reference sum, sign {sign}')
+    face_values[str(sign)] = str(total)
+
+rho = s.symbols('rho', positive=True)
+nu = s.symbols('nu', positive=True)
+invlegs = nu*s.sqrt(rho)*eta
+N01 = (invlegs[:,0]*invlegs[:,1].T-invlegs[:,1]*invlegs[:,0].T)*eta
+need(zero(N01-rho*nu**2*K01), 'PF-scaled true inverse-coframe N01')
+need(zero((rho**(-s.Rational(1,2))*s.eye(4)).inv()*eta*
+          (rho**(-s.Rational(1,2))*s.eye(4)).inv().T-rho*eta),
+     'PF-scaled inverse metric is rho eta')
+
+d = s.symbols('d', positive=True)
+amp = h*s.sqrt(d)/2
+forward_squared = []
+centered_squared = []
+for j in range(8):
+    psi = lambda k: amp*(-1)**(k % 8)
+    dp = (psi(j+1)-psi(j))/h
+    dc = (psi(j+1)-psi(j-1))/(2*h)
+    forward_squared.append(s.simplify(dp**2))
+    centered_squared.append(s.simplify(dc**2))
+need(all(zero(q-d) for q in forward_squared), 'owned forward difference squared equals d at EVERY periodic site')
+need(all(q == 0 for q in centered_squared), 'negative control: centered stencil would erase this reference')
+need(zero(rho*forward_squared[0]-rho*d), 'temporal reference q=+rho d')
+need(zero(-rho*forward_squared[0]+rho*d), 'spatial reference q=-rho d')
+
+p = (s.sqrt(5)-1)/2
+psi = s.symbols('psi', real=True)
+need(s.simplify(p+psi**2+(1-p-psi**2)-1) == 0,
+     'complete original CAR resource remains normalized with filler grade14')
+need(s.simplify(1-p) > s.Rational(1,4), 'original material slack exceeds one quarter')
+
+epsilon, k0 = s.symbols('epsilon k0', positive=True)
+delta = epsilon*d
+need(zero(-epsilon*(-rho*d)/rho-delta), 'y-plus reference has the original sigma-minus sign')
+need(zero(-epsilon*(rho*d)/rho+delta), 'y-minus reference has the original sigma-minus sign')
+need(zero(epsilon*(rho*k0*d)/rho-k0*delta), 'x-plus reference uses the unchanged k0')
+
+out = {'scope': 'Exact finite full-CAR/six-face and forward-material reference moments. Not giant-bank emission, native compilation, autonomous scheduling, or a GR proof.',
+       'h': str(h), 'cayley_boost_parameter': str(t), 'cayley_rotation_parameter': str(u),
+       'exact_reference_f': str(F), 'six_face_totals': face_values,
+       'full_car_dimension': 16, 'checks': checks}
+target = Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).with_suffix('.json')
+target.write_text(json.dumps(out, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+print(json.dumps({'result':str(target), 'checks':len(checks), 'exact_reference_f':str(F)}))
+```
+
+Frozen receipt:
+
+```json
+{
+  "scope": "Exact finite full-CAR/six-face and forward-material reference moments. Not giant-bank emission, native compilation, autonomous scheduling, or a GR proof.",
+  "h": "1/8",
+  "cayley_boost_parameter": "1/16",
+  "cayley_rotation_parameter": "1/160",
+  "exact_reference_f": "855671701504/8523622669005",
+  "six_face_totals": {
+    "1": "855671701504/8523622669005",
+    "-1": "-855671701504/8523622669005"
+  },
+  "full_car_dimension": 16,
+  "checks": [
+    "symbolic oriented 01 plaquette contraction",
+    "actual proper orthochronous boost02",
+    "actual proper spatial rotation12",
+    "reference amplitude has strict positive bound",
+    "all16 CAR equals odd source on face 01, sign 1",
+    "unchanged full-CAR adjugate defect exactly zero, face 01, sign 1",
+    "curved reference has rank-two I-P, sign 1",
+    "all16 CAR equals odd source on face 02, sign 1",
+    "unchanged full-CAR adjugate defect exactly zero, face 02, sign 1",
+    "other based face 02 is exactly identity, sign 1",
+    "all16 CAR equals odd source on face 03, sign 1",
+    "unchanged full-CAR adjugate defect exactly zero, face 03, sign 1",
+    "other based face 03 is exactly identity, sign 1",
+    "all16 CAR equals odd source on face 12, sign 1",
+    "unchanged full-CAR adjugate defect exactly zero, face 12, sign 1",
+    "other based face 12 is exactly identity, sign 1",
+    "all16 CAR equals odd source on face 13, sign 1",
+    "unchanged full-CAR adjugate defect exactly zero, face 13, sign 1",
+    "other based face 13 is exactly identity, sign 1",
+    "all16 CAR equals odd source on face 23, sign 1",
+    "unchanged full-CAR adjugate defect exactly zero, face 23, sign 1",
+    "other based face 23 is exactly identity, sign 1",
+    "complete six-face reference sum, sign 1",
+    "all16 CAR equals odd source on face 01, sign -1",
+    "unchanged full-CAR adjugate defect exactly zero, face 01, sign -1",
+    "curved reference has rank-two I-P, sign -1",
+    "all16 CAR equals odd source on face 02, sign -1",
+    "unchanged full-CAR adjugate defect exactly zero, face 02, sign -1",
+    "other based face 02 is exactly identity, sign -1",
+    "all16 CAR equals odd source on face 03, sign -1",
+    "unchanged full-CAR adjugate defect exactly zero, face 03, sign -1",
+    "other based face 03 is exactly identity, sign -1",
+    "all16 CAR equals odd source on face 12, sign -1",
+    "unchanged full-CAR adjugate defect exactly zero, face 12, sign -1",
+    "other based face 12 is exactly identity, sign -1",
+    "all16 CAR equals odd source on face 13, sign -1",
+    "unchanged full-CAR adjugate defect exactly zero, face 13, sign -1",
+    "other based face 13 is exactly identity, sign -1",
+    "all16 CAR equals odd source on face 23, sign -1",
+    "unchanged full-CAR adjugate defect exactly zero, face 23, sign -1",
+    "other based face 23 is exactly identity, sign -1",
+    "complete six-face reference sum, sign -1",
+    "PF-scaled true inverse-coframe N01",
+    "PF-scaled inverse metric is rho eta",
+    "owned forward difference squared equals d at EVERY periodic site",
+    "negative control: centered stencil would erase this reference",
+    "temporal reference q=+rho d",
+    "spatial reference q=-rho d",
+    "complete original CAR resource remains normalized with filler grade14",
+    "original material slack exceeds one quarter",
+    "y-plus reference has the original sigma-minus sign",
+    "y-minus reference has the original sigma-minus sign",
+    "x-plus reference uses the unchanged k0"
+  ]
+}
+```
+
+The parent substitutions are now explicit. The internal-reference theorem
+has genuine full geometric reference resources; §7ef has one physically
+executable full writer with all seven inputs causally linked; §7ed applies
+to that whole writer instead of only its comparator; and §7ee consumes its
+actual shared-site/source map, preserving all programme reactions. The
+existing native master law applies to the resulting complete source in
+its declared κ interpretation without an MDL-minimum detour.
+
+The remaining stronger claims are compelled selection/persistence of this
+regime among all D0 continuations, any additional truly independent source
+rows if that regime is enlarged, and exact finite stationary-history
+existence when that is the demanded solution topology. These are not
+missing local Choi references, field equations or source coefficients.
+No claim/result node, assembly acceptance, Ready state, merge or
+GR_closed promotion is made by this research checkpoint.
+
+### 7eh.H. Consume the incoming actual preparation theorem on the FULL geometric bank
+
+Incoming 768277b90e402572386d342fc24dc44b2376ecbb published §7eg while the
+preceding map was being integrated. Preserve its actual controls, finite
+certificate and precise remaining transport. The next two parts supply
+THAT transport and its full physical norm on one fixed original reporter.
+They do not identify its born sampling register with §7ee live programme
+CODE, nor silently reuse the latter theorem after a changed gain.
+
+#### 7eh.H.1. Three different controls and the actual initial cut
+
+Fix the ORIGINAL full ten-sign reporter and its actual READY implementation
+at the given h. Its readiness α_h>0 is the full processor's field-independent
+probability. Do not replace it by the smaller scalar apparatus's n20
+readiness unless an actual equality has been proved. Keep its true norm
+bound, PF factors, matter sign, full clock and work.
+
+Use m coordinates of an open regular geometric chart. The coordinates
+include the original coframe, proper-Lorentz link and two material fields
+(and genuinely variable normalized density coordinates). Affine movement
+is in THIS chart; it is not addition to a Lorentz matrix outside SO(1,3).
+Choose a centre Y0 and s>0 with every
+
+    Y_b=Y0+s(b-p² 1), b in {0,1}^m,
+
+inside the chart with common Julia/material slack. No Einstein predicate
+selects these vertices. The source-moment maps and all marked geometric
+resources are evaluated by the explicit g_j(Y_b) recipe, not by inserting
+numerical f,q values into scalar probability loaders.
+
+SAM is a NEW m-bit sampling register born AFTER the old physical cut:
+
+    phi_SAM=v^{tensor m}, v=(sqrt(p),p),
+    i=phi_SAM tensor I_D,
+    Pr(b)=p^{m-|b|} p^{2|b|}, E[b_j]=p².              (T1)
+
+It stays at this interior state at the central point. In particular,
+there is NO basis-selecting L_k on SAM. The optional retained programme
+CODE is a different register. Here one fixed actual reporter word is used
+on every programme spectator column; combining distinct active reporter
+laws instead uses the separate §7ee theorem, not an unproved scalar-cut
+identification. A separately loaded centre/resolution fieldname is also
+distinct from SAM and retains its actual loader/inverse price.
+
+SITE is fresh WORK with paid loader O_chi B_SITE*, producing the actual
+state sum_x sqrt(v_x rho_x)|x>. It is shared by all seven calls at a
+given sampling label b. Its data-dependent preparation may be controlled
+by b. SITE is unprepared after the cross-reference comparison, and is
+compressed with WORK, not retained as an unknown initial-cut factor.
+The unknown D/oldRIGHT input is never reset.
+
+The registered descriptor specifies BOTH the complete writer and its
+canonical fresh-bank input embedding/checkpoint. Preserving the writer
+while substituting an arbitrary earlier bank state does not preserve
+this section. The bank input is supplied by actual RAW births; its
+generated state is not an independently selectable blank.
+
+The canonical bank checkpoint fixes WORK/SITE at the writer's entry;
+SAM is the writer's designated free incoming control. Its central birth
+state is not a condition forbidding subsequent P_f/P_b preparations on
+SAM and live protected factors. Those operations leave the separate
+canonical WORK checkpoint intact, exactly as in incoming §7eg.A--C.
+
+#### 7eh.H.2. Full operator construction and the exact scalar corner
+
+For every b, let A_b be the complete operator that prepares SITE, supplies
+all seven genuine g_j(Y_b) Choi/CAR banks by §7cz879--880, processes their
+original signs/READY/reports, and executes the SAME literal §7ef comparator.
+All required current and reference marks belong to their genuine source
+banks. Their purifiers, PF/address data, oldRIGHT correlations, unused
+grades, all copies and helpers are retained. The known sources are
+regenerated, not cloned from an unknown state.
+
+Let j_W embed the ACTUAL canonical WORK/SITE inputs while retaining SAM
+and D. The full target is
+
+    A=sum_b Π_b tensor A_b,
+    W=A* Z_report A,
+    M_target=j_W* W j_W.                             (T2)
+
+Each A_b is the full geometric target matrix, not merely a state with a
+chosen report probability. For every marked source prefix t the complete
+operator A_b,t and transported observable O_t are those of the original
+bank at g_j(Y_b). Thus the direct sum also specifies all columns and
+cross-branch coherences. This is the marked-map transport absent from
+§7eg.F; T2 is not established by matching r-values alone.
+
+Apply the sign effects (I +/- H_f,x/Λ_h)/2 and
+(I +/- H_q,x/Λ_h)/2 to these original resources. Their known moment
+identities give exactly the seven arguments
+
+    (0,δ_h), (0,-δ_h), (ε_h f_x(Y_b)/rho_x(Y_b),0), (0,0),
+    (k0δ_h,0), (-k0δ_h,0), (0,-ε_h q_x(Y_b)/rho_x(Y_b)).
+
+Here ε_h=1/(64Λ_h), δ_h is the actual Cayley reference step, and
+k0=r_y(0,0)/r_x(0,0). Each full call has P_j=α_h r(x_j,y_j).
+Conditional on (b,x), the separately regenerated sign sources are
+independent. The SAME site x is used for all seven calls. Consequently
+the literal comparator gives the ALL-DATA-input effect
+
+    Q_b=κ9 p^7[4+sum_x v_x rho_x(Y_b) Xi_x(Y_b)],
+    Xi_x=(P_y+-P_y-)(P_f-P_0)+(P_x+-P_x-)(P_q-P_0),
+    M_target=sum_b c_b Π_b tensor I_D, c_b=1-2Q_b.      (T3)
+
+PF averaging occurs once AFTER Xi. Independent PF averages of the seven
+calls are not substituted. All resource-prefix maps, rather than the
+final scalar alone, justify T3. Also c_b>=1-12κ9 p^7>0.
+
+Define the ACTUAL reference action of this full instrument by
+
+    g=2κ9 p^7 δ_h ε_h (α_h r_x(0,0))(α_h r_y(0,0))>0,
+    c_ref=1-8κ9 p^7,
+    I_tau(Y)=(κ9 p^7/g) sum_x v_x rho_x(Y) Xi_x(Y).     (T4)
+
+Then the operator construction proves, exactly,
+
+    c_b=c_ref-2g I_tau(Y_b).                           (T5)
+
+I_tau is defined from the executed instrument and its inherited constants,
+not used as a specification for fabricating scalar states. Its source
+converges to the owned geometric/matter source with the existing
+reference/report/geometry error E_tau; all density and chart norms remain.
+No exact additivity in the m coordinates is asserted.
+
+#### 7eh.H.3. Native implementation, all columns, and all marked prefixes
+
+Use the proved controlled full-Givens/Gray construction on the finite
+2^m palette of these COMPLETE targets. SAM bits occur only as controls
+inside the core; the literal word preserves every Π_b exactly. At a
+SITE-dependent core segment, (b,x) is the control label and SITE is not
+a routing target. SITE preparation/unpreparation are separate macros.
+
+RAW bank conjugation is B_R on resource banks ONLY. SAM, optional
+retained CODE, SITE and computational output labels are excluded.
+Resource operators/marks are conjugated together. The SITE loader
+O_chi B_SITE* sends its true born vector to computational |chi>.
+Hence all core projectors refer to the physical computational basis.
+
+Compile macros on all input/helper columns; count every forward and
+inverse occurrence. The actual reverse is the paid reverse of the actual
+forward word, so W_hat=A_hat* Z_report A_hat is a true reflection.
+G/CX work-only synthesis and completed routed SourceI² identities keep
+the protected input an exact identity factor at macro boundaries.
+The literal comparator has the same protected-factor identity. Thus
+
+    M_hat=j_W* W_hat j_W=sum_b c_hat_b Π_b tensor I_D.   (T6)
+
+If ||A_hat-A||<=eta on all columns, then
+
+    ||M_hat-M_target||<=2eta=:e_B.                     (T7)
+
+The same proof for each marked prefix gives an observable error at most
+2 eta_prefix ||O_t||. Allocate every required mark separately by its
+prefix error sum. No endpoint estimate is used to certify an unexecuted
+geometric bank. Constant 2 may be enlarged if an independently compiled
+middle comparator is used; its actual tolerance is included in e_B.
+
+The target compilation is finite and terminating at each positive
+precision. Its dimension, calls, readiness and clock are those of this
+larger geometric instrument. The scalar §7eg 2^25 dimension and SW14
+inventory cannot be reused. No giant word was emitted in this review.
+
+#### 7eh.H.4. SW16--17 now hold for the full geometric writer
+
+Let V_j=diag(b_j-p²), R_v=max_b||b-p²1||_2=p sqrt(m).
+If ||D² I_tau||<=L on the cube, T5 and Taylor's theorem imply
+
+    M_hat=c_* I-2g s sum_j D_j I_tau(Y0) V_j tensor I_D+R,
+    ||R||<=g L s² R_v²+e_B,                           (T8)
+
+where c_*=c_ref-2g I_tau(Y0). Compress SAM only now:
+c=i* M_hat i is a positive scalar. Use this ACTUAL c, the chronological
+OUTPUT Gram A_old=C_< C_<*, and the physical initial-cut dimension term.
+Put d0=1-z, eta_ret=z p^K and
+
+    D0=d0 I+eta_ret c² A_old,
+    rho=A_old D0^{-1}/Tr(A_old D0^{-1}),
+    w=eta_ret c² Tr(A_old D0^{-1})>0,
+    Gamma_s=4w g s/c.                                (T9)
+
+A_old>=0,A_old!=0 is enough; no inverse/support floor of A_old is used.
+For a paired endpoint preparation generator X on SAM and live protected
+factors, delta C=i*[M_hat,X]i and
+
+    DJ[X]=-(2w/c) ReTr(rho delta C).
+
+The constant part of T8 commutes with X. The trace state has norm one
+and ||[R,X]||<=2||R||||X||. Therefore
+
+ |DJ[X]/Gamma_s-DI_tau(Y0)[L_rho X]|
+       <=[L s R_v²+e_B/(g s)] ||X||,
+ (L_rho X)_j=Tr(rho i*[V_j,X]i).                       (T10)
+
+This is precisely SW17, now on the full original geometric bank. It
+covers all correlations/entanglement in the admitted preparation domain,
+not only the product-state slice. Actual independent front/back legs
+have equal real first covectors and each contributes half. Internal
+writer faults or changes of the fresh-bank checkpoint are different
+variations and are not declared source-neutral by T10.
+
+Product SAM rotations J_j give L_rho J_j=u e_j for every rho,
+u=2p sqrt(p). Hence the right inverse has bound sqrt(m)/u for scaled
+coordinates, sqrt(m)/(u s) for unit PHYSICAL field displacement.
+The real sampling gain Gamma_s includes s. It cannot be replaced by
+4wg/c when the denominator is a sampling-probability displacement.
+There is no extra inverse endpoint-control angle in e_B/(g s): this is
+the commutator source of ONE fixed compiled table.
+
+#### 7eh.H.5. Geometric readout and the full price budget
+
+The marked bank at each vertex is the original geometry at Y_b. The
+unconditional mean of nonlinear geometric marks is not falsely called
+exactly Y0. Use the current f-bank and q-bank marks JOINTLY: the former
+retains the actual links, the latter the actual material field, and both
+carry the same coframe. Include the genuine PF marks if density varies.
+If m(Y) denotes this smooth complete moment map, then at
+the born SAM state
+
+    sum_b Pr(b)m(Y_b)=m(Y0)+O(C_h s² R_v²).
+
+With the owned regular decoder this gives an O(C_h s² R_v²) centre
+shift. Product SAM rotations give the normalized decoded-coordinate
+Jacobian I+O(C_h s+C_h eta_mark/s). For sufficiently small s and
+eta_mark this has the same explicit Neumann-corrected right inverse
+as the existing mean-readout owner §7ar388. If an EXACT differential
+lift of the actual mean geometry is required, retain this correction
+and its norm. It is not an assertion of a zero-cost measurement.
+
+For the complete Book covector add the actual heat/clock and old-prefix
+terms divided by Gamma_s, together with the owned E_tau ||L_rho||.
+At the standalone fixed-clock conjugate reflection the heat first row
+is zero by SW11. A full growing-prefix application instead retains its
+owned heat bound with every new bank/SITE/SAM column and chooses paid
+retention K only after the real prefix is fixed. Price-reading and
+finite-comparison errors are likewise divided by the true gain and
+actual signed control displacement. No old scalar-apparatus count or
+unnormalized smallness is used.
+
+For target tolerance τ at fixed h, choose s so L s R_v² is below its
+allocated τ, then allocate native e_B <<g s τ (and the mark precision
+needed above). For soundness include the sqrt(m)/u right-inverse
+factor when selecting that allocation. Only then emit/price the
+complete finite prefix and choose K/arithmetic precision. The same
+source/refinement errors are consumed on all original field rows.
+
+If old-source concentration uses repeated blocks, its gain per block
+is proportional to g s. A sufficient architecture uses a FRESH known
+born SAM per block, returns it before the next block and pays each
+birth/preparation/inverse. Then each cold block is the scalar cI and
+the existing scalar-block concentration proof applies with this actual
+sampling gain. Sharing one uncompressed unknown SAM across all blocks
+instead gives c_b^M on branch b and cannot be replaced by
+(sum_b Pr(b)c_b)^M. That different architecture needs its own analysis.
+
+This removes §7eg.F's missing full geometric marked-map transport and
+supplies a nondegenerate preparation lift on the original all42 source
+carrier. It remains a source/equation realization and recovery theorem,
+not an exact finite solution or global selection of the writer, input
+checkpoint, centre, clock or stationary law among all D0 continuations.
+
+
+For any original mark that requires the UNSPLIT current bank at Y_b, rather
+than the joint coframe/link/material decoder from its f-only and q-only
+banks, include one additional original (879)--(880) bank at Y_b. It is
+controlled by the same SAM, carries those original marked prefixes, and
+is uncomputed by its actual paid inverse. It is not used by the comparator;
+therefore its complete conjugation contributes identity to the return.
+Its real columns, intermediate states and clock are nevertheless included
+in the all-mode heat and in the late-K budget. This avoids asserting that
+two split banks are literally the original unsplit quantum state.
+
+Likewise the interior sampler is a coherent family of nearby genuine banks,
+not exactly a pure bank at Y0. At finite h their complete marked maps are
+smooth with computable bounds K_h, and
+
+    sup_b ||G_h(Y_b)-G_h(Y0)|| <= K_h s R_v.
+
+Every required local mark is bounded at its actual prefix; its first jet
+has the corresponding Taylor/commutator bound. The original regular
+geometric decoder may be applied on a selected full-rank coordinate
+subsystem of the marked moment map. Its mean-readout error is O(s^2), and
+its gain-calibrated derivative is the desired L_rho plus an error bounded
+by the actual finite constants times s and eta_mark/s. Choosing both
+small gives a Neumann-corrected right lift. The physical unscaled lift
+still contains 1/s. This proves marked-map compatibility in the declared
+κ interpretation; it does not assert exact equality of finite pure banks,
+erase distinguishable fine outcomes, or identify the complete histories
+as quantum states. The original physical field norm stays unchanged.
+
+### 7eh.I. Source-norm equivalence and complete scalar concentration
+
+#### 7eh.I.1. Actual chart and complete writer
+
+Retain the existing physical variation space V_h and its original norm.
+It contains all 16 coframe, 24 proper-Lorentz and two matter directions at
+every site, together with any additional admitted density/PF directions.
+Choose a genuine local coordinate chart chi_h about arbitrary off-shell Y0.
+Proper links are parametrized in their Lorentz chart, not varied as free
+matrix entries. Put iota_h=D chi_h(Y0):V_h -> R^m. Any normalized PF constraint
+is respected by this chart. No physical norm is replaced by an l2 norm.
+
+Choose s>0 so that all 2^m vertices
+
+    Y_b=chi_h^(-1)(chi_h(Y0)+s(b-p^2 1))
+
+are inside the SAME regular field/bank chart. At EVERY vertex run the
+explicit full geometric seven-bank generator from
+§7eh.B, with its actual Choi/CAR instruments,
+marks, independent fresh resources and paid inverse. The common reference
+profile, s_ref, epsilon and delta are fixed across this local cube.
+
+Inside each vertex branch prepare ONE fresh WORK SITE with its actual
+PF weights v_x rho_x(Y_b), use that SITE in all seven conditional calls
+and the comparator, and include its paid inverse in the echo. The SITE
+is after the retained input cut. Thus
+
+    Q(Y)=lambda_vis[4+sum_x v_x rho_x Xi_x(Y)],
+    g=2 lambda_vis delta epsilon (α_h r_f)(α_h r_q),
+    I_tau(Y)=sum_x v_x rho_x Xi_x(Y)
+                    /[2 delta epsilon(α_h r_f)(α_h r_q)],
+    c_target(Y)=c_ref-2g I_tau(Y), c_ref=1-8lambda_vis.
+
+These are the ACTUAL target-bank probabilities, not an inserted list of
+desired f,q answers. Each branch carries its original geometric marked
+outputs. The fixed reporter/reference theorem already bounds
+
+    ||D I_tau(Y0)-D I_h(Y0)||_(V_h*) <= E_tau,h.
+
+Use that complete error, including all reference/PF/geometry terms.
+The cold margin is uniformly positive: c_target>=1-12p^7>0.
+
+The m-bit sampling CODE is also fresh WORK after the retained cut. Its
+input is the actual born product v^tensor m, v=(sqrt(p),p). It controls
+the full vertex writer. This is a physical coherent sampler, not a change
+between orthogonal classical labels. All CODE/SITE/bank outcomes remain
+in the full unitary, marks and heat; the cold corner uses the stated
+original compression. All catalogue columns are valid field vertices.
+
+The full native writer must preserve the old protected factor exactly;
+all active helpers can be fresh WORK. Its compressed operator M on CODE
+then acts as M tensor I_old, even if its finite compilation is not exactly
+diagonal in CODE. Use a matched native reflection so M is selfadjoint.
+Let ||M-M_target||<=e_B in ALL-column operator norm. At the born CODE
+input i=v^tensor m tensor I_old, the ACTUAL central corner
+
+    i* M i=c I_old
+
+is scalar. Use this actual c, not the target value, in the gain. Choose
+e_B below the certified cold margin. Full-operator errors and every
+marked-prefix error are charged by the complete writer compilation owner.
+
+#### 7eh.I.2. All controls, exact field lift, and a nonquotient norm
+
+Let F_h=I_tau composed with chi_h^(-1), and bound its coordinate Hessian
+on the cube by L_h. Write
+
+    V_j=diag(b_j-p^2), R_v=max_b ||b-p^2 1||2,
+    u=2p sqrt(p)>0.
+
+Here R_v^2=m p^2. At the actual history's normalized positive resolvent
+state rho, define the coordinate marginal and physical calibrated map
+
+    ell_rho(X)_j=Tr[rho i*[V_j,X]i],
+    L_rho X=iota_h^(-1) ell_rho(X).
+
+rho has trace one; singular chronological histories are allowed at the
+existing nonzero-A hypothesis. It is evaluated at the central point,
+not differentiated again inside the first covector. Likewise the gain
+is frozen at that point; this is not D(B/Gamma).
+
+For J_j the real single-bit rotation generator on CODE bit j,
+
+    ell_rho(J_j)=u e_j
+
+for EVERY rho, since the compressed commutator is u I_old. Therefore
+
+    R_h(v)=u^(-1) sum_j (iota_h v)_j J_j,
+    L_rho R_h(v)=v,
+    ||R_h(v)||op <= [sqrt(m)/u] ||iota_h||_(V_h->l2) ||v||V.
+
+Take a certified bound
+
+    C_h=max(1,[sqrt(m)/u] ||iota_h||_(V_h->l2)),
+    ||X||ctrl=max(sup_(sigma>=0,Tr sigma=1)||L_sigma X||V,
+                 ||X||op/C_h).
+
+The supremum fixes this norm BEFORE the actual history posterior or late K
+is chosen. It is over the finite protected density space, and every
+L_sigma has the same product right lift. Therefore the actual-state
+pullback still has exactly the field dual norm: the upper bound uses
+the supremum, and the lower bound tests R_h(v).
+
+This is a NORM on the full preparation-control space, not a quotient:
+every nonzero kernel/correlation direction still has positive norm.
+Moreover ||R_h(v)||ctrl=||v||V. The proof also bounds the larger skew
+operator space; any existing oldRIGHT admission restrictions may be
+retained without affecting these product-CODE right lifts.
+
+The word "calibrated" is essential. The actual first change of the
+sampled coordinates is s ell_rho(X), so the physical kinematic map is
+s L_rho. The unscaled unit-field right inverse is R_h/s and has bound
+C_h/s. No bounded physical inverse as s->0 is claimed. The extra s is
+paid by the actual source gain below, before kappa completion.
+
+#### 7eh.I.3. Full preparation-source equivalence
+
+SW16 gives
+
+    M=c_* I-2g s sum_j D_j F_h(chi_h(Y0)) V_j+R,
+    ||R||<=g L_h s^2 R_v^2+e_B.
+
+For the original feedback J, actual scalar corner c, old output Gram
+A=C_< C_<* (not C_<* C_<),
+and eta_K=z p^K, let
+
+    w=Tr[eta_K c^2 A((1-z)I+eta_K c^2 A)^(-1)],
+    Gamma_s=4w g s/c >0.
+
+Include any existing common trace multiplicity in BOTH w and J. The exact
+rectangular old-history determinant identity retains its field-independent
+dimension term; it does not change this source formula. The exact
+commutator differentiation gives, for every current skew X,
+
+    |D J[X]/Gamma_s - D I_tau(Y0)[L_rho X]|
+      <=[L_h s R_v^2+e_B/(g s)] ||X||op.
+
+Hence in the NONQUOTIENT norm just defined,
+
+    ||D J/Gamma_s - D I_h(Y0) composed with L_rho||_(ctrl*)
+      <= E_tau,h + C_h[L_h s R_v^2+e_B/(g s)] = E_h.
+
+All 42 field rows and ALL admitted current CODE preparation/correlation
+rows are compared in this one inequality. Each independently varied
+matched forward/reverse leg carries half, as in the owned reflection
+identity; the sum is the actual paired source. The right lift also gives
+
+    ||D I_h||_(V*) <= ||D J/Gamma_s||_(ctrl*) + E_h,
+    ||D J/Gamma_s||_(ctrl*) <= ||D I_h||_(V*) + E_h.
+
+Thus source smallness is equivalent in the original field norm and the
+declared complete preparation norm, up to the displayed paid error. No
+kernel is discarded to obtain the converse.
+
+This is the precise marked-bank application missing from the scalar
+example: the finite operator is assembled from the original full bank
+at every Y_b. Its all-column/prefix compiler transports the marked
+instrument, while SW16 transports its actual price source. Merely using
+scalar table entries without that full writer would not establish it.
+
+#### 7eh.I.4. Repetition, old price and the compiler-first schedule
+
+For old-source suppression use M paid FRESH sampling-CODE/SITE/bank
+blocks, each with the same actual fixed table and local preparation
+interface. All newly born resources and inverse calls are charged.
+Later blocks do not act on earlier born sampler/bank work. The operator
+identity for independent fresh factors gives a complete central corner
+c^M I without inserting an intermediate measurement or postselection.
+
+For controls X_1,...,X_M on these actual local interfaces, arbitrary
+correlations INSIDE each sampler remain. Define the full norm as the
+maximum of the block ctrl norms. With the history state rho determined
+by c^(2M) A, the normalized field map is
+
+    Lbar(X_1,...,X_M)=M^(-1) sum_j L_rho(X_j),
+    Gamma_(M,s)=4M w g s/c,
+    w=Tr[eta_K c^(2M) A((1-z)I+eta_K c^(2M)A)^(-1)].
+
+The same E_h bound holds. The simultaneous lift (R_h v,...,R_h v) has
+norm ||v||V and Lbar=v, so no factor M is lost in either implication.
+
+For an old-source variation DA, the exact logarithmic derivative yields
+
+    |D_A J|/Gamma_(M,s)
+      <= c[(1-z)+eta_K c^(2M)||A||] ||DA||1
+          /[4M g s (1-z) Tr A].
+
+It is therefore suppressed by M g s, not merely M g. Tr A>0 suffices;
+no inverse of a singular A is used. The old prefix's true source bound
+and all field-dependent encoding/preparation costs remain in this term.
+
+Order the choices as follows: fix the finite field/reference chart and
+its norms; choose s with C_h L_h s R_v^2 small; choose M so the actual old
+bound divided by M g s is small; choose full-operator/prefix compilation
+errors with C_h e_B/(g s) small; finish and count the complete native
+prefix; only then choose paid retention depth K to suppress its complete
+heat/clock remainder at Gamma_(M,s). Positive cold factors must be
+cancelled in relative bounds before choosing K, as in the existing
+compiler-first theorem. Every remainder uses the extra 1/s. A tiny s
+increases finite resources; it is not silently omitted from the gain.
+
+Do NOT replace these fresh local interfaces by one global sampling CODE
+reused across M powers. That has corner i* M_table^M i, with different
+nonlinear remainders. Likewise an additional arbitrary entangler across
+ALL M sampling registers is a different current preparation interface;
+its source is not covered by the blockwise estimate. The fixed sequential
+writer and its old-work protection supply the stated local factorization.
+This is a physical operation-scope statement, not deletion of a kernel.
+
+#### 7eh.I.5. Scope
+
+No new physical selector or minimum principle is assumed here. The result
+is an exact application of SW16--SW17 to the now supplied original marked
+bank, with complete finite source errors and gain. It establishes the
+same stored-operation local source/recovery interface. It does not prove
+exact finite stationary points or force all D0 continuations to select
+this operation, local centre, or refinement protocol.
+
+Do not automatically add a freely varied retained programme palette to
+this statement. Its independent parameter/shape/basis sources are real;
+after this sampling normalization they require their own 1/s budget.
+The fixed original reporter case above needs no such extra interface.
+
+The incoming §7eg.F geometric-transport premise is therefore supplied by
+actual full source banks and their marked native word, with a nondegenerate
+born-control lift and the complete gain-calibrated preparation norm.
+The full source includes all admissible local preparation correlations,
+both legs, old-source concentration and the actual whole-clock remainder.
+Applying §7eh.E--F gives the fixed-reporter native κ source law and its
+Einstein--two-CAR soundness/recovery on this sequential retained-operation
+section. Its exact finite and universal-regime boundaries remain as stated.

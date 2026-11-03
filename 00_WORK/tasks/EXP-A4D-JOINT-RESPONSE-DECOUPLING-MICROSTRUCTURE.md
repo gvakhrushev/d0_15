@@ -19574,3 +19574,86 @@ clock still needs the actual continuation law of the claimed D0 regime.
 Section 7ee's distinct full-CODE cut is not replaced by this born-CODE cut.
 No unrestricted X_N, exact finite positive_gr/raw216, minimum, Ready, merge,
 acceptance or GR_closed promotion. Goal active.
+
+### 3 November 2026 — one original-bank writer, shared SITE and native master-law application (§7eh)
+
+Same #334 / constitutive/native-programme-v1. Phase: native realization and
+final composition. Input 905b1d7e6f9960873f420016ed38b5935c39ce83. Continue the
+existing task, changing only this brief and its existing primary artifact.
+The exact named parent is §7ef's missing full shared parameter/resource
+writer; consumers are §7ed's retained-operation map, §7ee's complete
+programme source and the 28 October full Einstein--CAR κ theorem.
+
+The new map constructs all seven ORIGINAL geometric Choi/CAR banks.
+Current f-only and q-only banks are (e,U,0) and (e,I,Psi). Two constant
+proper Lorentz links produce opposite nonzero curvature references;
+rank(I-P)<=2 makes their complete CAR adjugate correction exactly zero.
+Temporal/spatial checkerboard fields give the opposite material references
+under the OWNED forward stencil. A positive reference coframe proportional
+to rho^(-1/2) I supplies the true inverse-PF cancellation. Actual Cayley
+geometry fixes d_h, then the common chart fixes epsilon_h, and
+ delta_h=epsilon_h d_h. Nothing is chosen from an Einstein residual.
+
+One recorded operand recipe generates every bank, full marked operator,
+preparation and paid inverse. The explicit controlled native compiler
+preserves live CODE projectors exactly. Paid loaders select field codes
+from the same born boundary. A SINGLE fresh WORK SITE is prepared in the
+actual PF distribution, controls all seven calls and their comparison,
+and is unprepared once. It is not widened into the unknown input cut.
+PF averaging therefore occurs AFTER the local cross-products. Independent
+PF-averaged calls would change the source for spatially varying slopes.
+Born-resource conjugations, computational controls and literal output
+labels are explicitly separated so this is an actual operator map.
+
+The full tangent graph is b=G(z), with genuine input fields/controller
+coordinates z free off shell. Its source is B_z+B_b DG. All14 probability
+rows, both echo legs, READY, reference generation and PF preparation are
+retained. The independent P0 normal of §7ef remains nonzero in its larger
+ambient domain; it is not a tangent of the realized shared computation.
+All padded programme labels execute a regular fallback at the SAME free
+field. The genuine corner has c>=1-12 kappa9 p^7>0. No rank-eight,
+23-wire, old visibility or old heat constant is reused for this bank.
+
+The original Book03 §03.25 already states stationarity of the very H+J
+master functional supplied by RAW R6/GROWING_CLOCK. Its operator/cut/heat
+map now composes with this writer and the complete source bounds. The
+true finite gain is evaluated at the actual centre. Source normalization
+is Gamma^-1 dB, not d(B/Gamma), and is evaluated to relative precision
+BEFORE κ completion. The whole prefix is fixed before late retention K;
+its cold factor cancels in the source-relative compiler budget. Every
+oldRIGHT, code, source, failed factory, inverse and heat mode remains.
+
+This supplies the full-bank referenceability/shared-writer application
+and realizes the native master SOURCE law in the declared regular κ
+sector, using the owned all16+24+2 equations and §7ee controller recovery.
+It does not prove that every D0 continuation must select this writer, nor
+that κ-zero recovery consists of EXACT finite stationary histories.
+That stronger solution-set statement is explicitly separated. Any genuine
+additional independent caller/operation normal remains if the domain is
+enlarged. Existing full128, positive_gr and raw216 contracts are preserved.
+
+Smallest decisive check: the exact oriented finite reference formula,
+all six actual plaquettes and all16 exterior-CAR grades, actual PF
+scaling, material forward differences and a hostile centered-stencil
+control. Normal and -O receipts agree. Checker and receipt are frozen
+verbatim with SHA256 hashes in primary §7eh. The shared-SITE necessity
+also has an exact two-site coefficient counterexample. Existing heavy
+GR/word results are consumed without unchanged replay. Structural work,
+agent protocol, gravity assembly and whitespace gates run on final files.
+No new task/result row, scientific promotion, Ready state or merge.
+
+**Incoming composition, 768277b9 (§7eg.F).** The new born-CODE preparation
+source theorem is consumed immediately by §7eh.H--I on these ORIGINAL
+full geometric banks. One fresh interior SAM controls all vertex banks;
+the current code is not a pure field label. The actual full-bank READY
+probability α_h, all marked maps and the extra sampling factor s remain
+in Gamma_s=4wgs/c. A full preparation norm retaining kernel/correlation
+directions is linked isometrically to the ORIGINAL field norm, with its
+explicit dimension/right-inverse factor. Hence the source norms agree up
+to E_tau+C_h[L_h s R_v^2+e_B/(g s)], including both independent legs.
+Fresh sequential SAM blocks give scalar concentration with actual c^M
+and old-source suppression by M g s. An arbitrary additional across-block
+entangler or a live reporter palette is not silently inserted into that
+local interface. All such broader controls keep their separate source
+obligations. This removes the incoming geometric marked-map transport
+premise, without claiming an exact finite stationary-root theorem.
