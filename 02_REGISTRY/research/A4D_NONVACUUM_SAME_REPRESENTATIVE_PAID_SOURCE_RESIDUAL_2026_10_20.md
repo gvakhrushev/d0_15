@@ -120810,6 +120810,616 @@ print(json.dumps(receipt,sort_keys=True,indent=2))
 }
 ```
 
+## 7ep. Literal native controller test for the retained return/record source gate
+
+3 November 2026. Existing #334 / constitutive / native-programme-v1.
+Input `c7092f525b2c17693f53855c973634c886cbb068`. Native realization
+and final composition. The named parent is the independent-source debt
+after the 31 October shared-controller no-go, not another stationary root.
+The changed mathematical input is a genuinely nonscalar two-sector return,
+with a literal native relative controller and the ACTUAL growing clock.
+The attempted inference is that retaining two response eigenvalues supplies
+a field source independent of the former common scalar controller.
+
+Publication integration preserves `e088f09c6968e35e94ae48ad14bd94525ea17c45`,
+including incoming `e63ef7a3073f4854a2fc8fd4c69bf004bc42d544` and §7eo,
+verbatim. Its original-reporter criticality, literal native finite
+comparison centres and curved recovery are retained at the stated H.1
+writer graph and finite-coordinate convention. They are not inferred to
+supply a free-controller-independent channel or mandatory M1 selection.
+This section neither changes their finite-difference convention nor
+identifies its own ordinary matrix-source test with every such chord.
+
+**Result: this candidate fails.** Both return eigenvalues are retained,
+but the actual relative controller has exactly the same FULL-price source
+as the putative field parameter. This is proved for the entire heat plus
+return, including every birth detail and generated cut. It is not inferred
+from equality of two selected event probabilities. The common-controller
+row alone is insufficient to decide this question. This result does not
+rule out a different, physically selected record/Cost-Info term which
+does not factor through these response coordinates.
+
+### 7ep.A. Consume the existing closure contract and the one source gate
+
+The incoming [short scoped contract](A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md)
+is the single A--D contract; it is not rewritten here. It requires one
+admitted complete paid execution, a surviving field source after ALL
+independent internal equations, faithful off-shell transport and reverse
+recovery in the actual norms, and the native task/price binding with
+complete preparation/clock/record/scene reactions. A written contract is
+not an accepted terminal; `SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` is not set.
+
+The [one return/record source gate](A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md)
+computes the full old-Gram contribution and its compensated residual.
+Its §5 explains why escaping one scalar controller does not suffice:
+other actual independent controls may still absorb the field direction.
+This section supplies a literal native, complete-price hostile control
+for that exact point. It does not start a second positive source programme
+or extend the rejected canonical A=I construction with a new root search.
+The exact chosen interface is stated below so this diagnostic cannot be
+silently passed off as the geometric H.1 task or an existing full128 map.
+
+Sections 7em--7eo keep their fixed-task/source-convention results. A
+source-neutral terminal STORE, a price conjugacy or an exact finite
+comparison centre does not independently discharge the incoming B/D
+obligations. The next positive application remains the actual H.1
+pricing/task substitution specified in the incoming source gate §6.
+
+### 7ep.B. The single candidate and its real inputs
+
+Use the original G/CX/SourceI profile, canonical v=(a,p), p=a^2,
+a^4+a^2=1. The initial carrier has helper0, the complete original Spin1,2,
+one mutable DATA/CODE input3, and immutable oldRIGHT4. Append QUERY5 by
+ONE genuine canonical birth; it is not a free new blank preparation.
+The initial cut has rank32 and includes ALL input CODE columns. Every
+gate below acts on the whole resulting dimension64 carrier. SourceI
+restores the helper/Spin columns at each completed routed Z macro.
+
+The existing mutable DATA input is an explicit interface hypothesis.
+Its existence in the particular geometric task is not proved by this
+small programme. If CODE instead is a freshly born pure bit and is
+included in a rank-one input cut, one cannot use the full-rank two-sector
+determinant below: that is a different preparation/cut. Nor may an
+individual source Spin coordinate be used as CODE: the original native
+validator prohibits its individual G/CX addressing. This prohibited
+draft addressing was rejected before the final six-wire witness.
+
+Let R(x) be the real rotation with generator J=[[0,-1],[1,0]],
+G=R(theta). The two actual controller types are
+
+    common: R(t) on QUERY,
+    relative: D(d)=CX(CODE,QUERY) R(d) CX(CODE,QUERY).
+
+The latter is R(d) on CODE0 and R(-d) on CODE1. Let f be the candidate
+field/report coordinate, located in a SEPARATE occurrence D(f). The
+complete reflection is
+
+    U(f,t,d)=D(-f) R(-t) D(-d) Z D(d) R(t) D(f).       (EP1)
+
+All matrices on the other inputs are identities. No inverse is supplied
+for free. The finite native words below realize f=n_f theta, t=n_t theta,
+d=n_d theta by original positive primitives and paid routed Z's.
+There is no independently tunable native gate angle. The smooth version
+states an ordinary matrix-source identity; the emitted words separately
+give exact finite-comparison identities.
+
+On branch b put alpha_b=t+(-1)^b(f+d). With the ACTUAL canonical QUERY
+input, define c=p^3 and u=2ap, so c^2+u^2=1. The full cold operator is
+
+    C=diag(c_+,c_-) tensor I16,
+    c_b=c cos(2 alpha_b)-u sin(2 alpha_b).             (EP2)
+
+The two values c_b^2 are generically unequal. Thus this candidate really
+leaves the old scalar-corner ansatz; replacing C by its mean would lose
+information. Use the unchanged rank-one scene cut of GROWING G10/G14;
+there is no extra factor33 in its feedback. That ORIGINAL feedback is
+
+    J=-16 sum_(b=0,1) log[(1-z)+z c_b^2].             (EP3)
+
+No Einstein residual, stress component, fitted negative price, scalar
+reference probability or new information term is inserted into (EP1)--(EP3).
+The geometry-to-f application is deliberately not constructed after this
+candidate fails the preceding variation gate.
+
+### 7ep.C. The entire heat has the SAME factorization on the real clock
+
+All real gates are after the one actual birth. Let N be birth plus gate
+count, so D=32(2N-1), not N times the final dimension64. In the born QUERY
+basis the completed branch is a reflection [[c_b,s_b],[s_b,-c_b]],
+c_b^2+s_b^2=1. GROWING G1--G14 and §7el.ST1 give its secular polynomial
+
+    P_b(lambda)=lambda^(2N-1)+c_b lambda^N
+                          -c_b lambda^(N-1)-1.        (EP4)
+
+Indeed the two passive details are the born input P and its WHOLE
+complement Q, with true ages N and N-1. Therefore
+`det[I-U_b(lambda^-N P+lambda^-(N-1)Q)]`, multiplied by
+lambda^(2N-1), equals (EP4). The determinant of U_b is -1. Each branch
+has multiplicity16, so the full polynomial has degree D. This proves
+dependence on the two actual c_b's, without discarding any escape mode.
+
+For each root lambda of (EP4), with its multiplicity, let
+L_s(lambda)=I33-B_s-2 Re(lambda) C_s, using the ORIGINAL K(9,11,13)
+normalization. The full positive heat trace and price are
+
+    Z01=359D+32 sum_b sum_(P_b(lambda)=0)
+                           Tr33 exp[-beta L_s(lambda)],
+    B_N=beta^-1 log Z01+J = b_N(c_+,c_-).              (EP5)
+
+This includes ALL425D Hodge modes, the initial input, all newborn
+complements, the last ACTUAL gate and the original generated cuts.
+Beta,z, scene and layout in this comparison are fixed. Their independent
+variations are not called solved. Repeated eigenvalues pose no derivative
+problem: the original finite matrix-exponential trace is smooth.
+
+The same conclusion follows without solving a single spectral root.
+At a fixed layout, two native implementations of the same full segment
+endpoint are related by the explicit prefix conjugacy of §7en.C. That
+conjugacy transports the actual clock, generated cuts and absolute price.
+Here f and d occupy different executed positions, but the endpoint
+depends on them only through f+d. The intervening raw histories can be
+distinguished; price equality is NOT empirical equality of all histories.
+No additional entropy of those records has been added to Book03 H+J.
+
+### 7ep.D. Compute the complete controller image BEFORE elimination
+
+Write b_+=partial_1 b_N and b_-=partial_2 b_N, the actual partials of
+BOTH terms in (EP5). Put v_b=partial_(alpha_b)c_b. Direct chain rule gives
+
+    E_t=b_+ v_+ + b_- v_-,
+    E_d=b_+ v_+ - b_- v_-,
+    E_f=b_+ v_+ - b_- v_- = E_d.                     (EP6)
+
+For feedback alone b_b^J=-32 z c_b/[(1-z)+z c_b^2]; the actual thermal
+partials from (EP5) must be added. Identity (EP6) holds for their sum,
+whatever their size, and is therefore not a cancellation estimate or
+a heat-only calculation. It is unchanged by another term depending only
+on the same two coordinates; a true additional history-price argument
+would require a separate calculation.
+
+This identity is not just equality of two accidentally vanishing rows.
+At the literal L2 field-plus word, (EP3) gives the EXACT value
+
+    E_f^J = a (5317456163915454892032
+              -8603360252946819578240 a^2)
+                      /5104709701790204955601 !=0.    (EP6a)
+
+It is nonzero in Q(a), since the displayed numerator is a nonzero
+polynomial of degree less than the minimal polynomial of a. Its base matrices and the
+ordinary rotation jet are algebraic, beta=2p^2 and z=2^-20 are algebraic,
+and the whole Hodge operator has its mandatory 359D zero modes.
+The already proved §7ek.B therefore gives E_f^(H+J)!=0 exactly, without
+approximating a tiny heat derivative. The same nonzero FULL row is E_d.
+This invokes the owned smooth-source separation theorem, not a new
+claim that every finite native centred secant is nonzero.
+
+At the actual native centre f=t=d=0,
+
+    D_(t,d)(c_+,c_-)= [[-2u,-2u],[-2u,2u]],
+    determinant=-8u^2 !=0.                           (EP7)
+
+Thus the common controller alone misses a real response direction,
+but the legal relative controller supplies it. This is the crucial
+distinction from declaring a new field channel after testing only E_t.
+For ANY proposed differentiable field map f=phi(Y), if these are its
+only price arguments, the full source obeys exactly
+
+    E_Y=Dphi(Y)^* E_d.                               (EP8)
+
+The norm is the genuine chart norm: ||E_Y||_(V_h^*) is bounded by
+||Dphi||_(V_h -> R) |E_d|. The equality of native paired words below
+does not require replacing that norm by an uncharged code-edit norm.
+At controller stationarity the full field row is zero for every Y,
+including off-shell fields. Where a stationary controller section
+exists, keeping alpha_+,alpha_- at its stationary values by
+d(Y)=alpha_diff-phi(Y) makes the reduced price constant. No existence
+of such a root or invertible Schur block is assumed or searched here.
+
+This fails gate B BEFORE invoking an Einstein source theorem or reverse
+recovery. The old common-scalar no-go is not strengthened by adding more
+roots; it is applied to a changed, nonscalar response map whose second
+controller has now been exhibited by actual native words.
+
+The native relative word is **executable**, not thereby admitted in every
+physical X_N. If a proposed thin admission argument excludes it, that
+argument must prove the retained task and its full reaction. In particular
+it is not in §7en's fixed complete-output fibre at fixed logical data:
+it changes that output. The present computation does not revoke the
+fixed-task theorem. It proves why that theorem alone cannot remove the
+separate admission and independent-source debts in contract A.
+
+### 7ep.E. Literal finite comparisons and decisive evidence
+
+For integers n,L with L>=|n| and L=n mod2, use the paid word
+
+    P(n,L)=G^((L+n)/2); Z; G^((L-n)/2); Z,
+    D(n,L)=CX(CODE,QUERY); P(n,L); CX(CODE,QUERY).
+
+The chronological endpoint of P is G^n; each Z is the old eight-call
+SourceI/CX routed word. The ACTUAL programme is
+
+    D(n_f,L); P(n_t,L); D(n_d,L); Z;
+    D(-n_d,L); P(-n_t,L); D(-n_f,L).                 (EP9)
+
+Its inventory is 6L+112 calls: 6L G,86 CX,26 SourceI, followed by no
+free closing identity. The one birth precedes these calls. For each
+L=2 and L=66 the checker emits centre, field +/-L, relative-controller
++/-L and common-controller +L. All twelve words are checked on every
+one of64 columns, including arbitrary entangled initial inputs and the
+immutable oldRIGHT factor. The compared field and relative-controller
+words have exactly the same endpoints and complete price, even though
+their changes occur at different positions. The common-controller word
+has a different endpoint; the two return eigenvalues are nondegenerate
+on the field examples. Every comparison has the same actual inventory.
+
+At L66 there are 508 calls plus one birth, N509, D32544,
+13,831,200 full Hodge modes and 11,683,296 harmonic modes. These counts
+belong to this whole growing history. The complete characteristic
+coefficient identity is separately checked on direct small growing
+clocks; (EP4) supplies all N analytically. The L2 diagnostic evaluates
+the full price by all temporal eigenvalues and the exact K(9,11,13)
+scene multiplicities. It is a numerical cross-check, not a new root or
+an interval proof of its printed decimals. The exact native/source
+equalities do not depend on that diagnostic.
+
+The first code draft tried to address a Spin coordinate as CODE; the
+original validator correctly rejected it. The final programme uses an
+explicit existing DATA input, with an actual appended QUERY birth.
+No native permission was weakened to obtain this witness. Admission of
+that input and comparison remains visibly separate from word legality.
+
+**Parent disposition.** The proposed two-sector return-only escape is
+rejected; no geometric compiler, new stationary root, causal-clock
+extension or extra polarization catalogue is dispatched for it. A future
+return/record/Cost-Info candidate must first exhibit an actual additional
+price argument/source outside the full field-invisible controller image,
+or a proved native constraint and its reaction. A previously retained
+matrix effect is not enough by itself. The four debts in the consumed contract remain
+separate. No claimed full128 transport, M1-forcing, independent acceptance,
+Ready, merge or `SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` is supplied.
+`GR_closed=false`; the programme goal remains active.
+
+### 7ep.F. Frozen evidence and reproduction
+
+137 bounded checks passed on Python3.12.14, SymPy1.14.0 and NumPy2.3.5.
+Normal and `-O -W error` complete receipts are byte-identical. Exact arithmetic
+and the analytic proof carry the source conclusion; the printed floating
+heat values are a diagnostic. The following reproduces the pinned evidence
+from the repository root with those dependencies, without replaying the
+unchanged geometric compiler or earlier root searches.
+
+```python
+from pathlib import Path
+import hashlib,json,subprocess,sys,tempfile
+root=Path.cwd()
+primary=root/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+text=primary.read_text()
+def frozen(name,language):
+    marker='<!-- 7ep RETURN CHANNEL '+name+' -->\n```'+language+'\n'
+    if text.count(marker)!=1: raise RuntimeError('nonunique frozen block')
+    return (text.split(marker,1)[1].split('\n```',1)[0]+'\n').encode()
+def checked(data,pin):
+    if hashlib.sha256(data).hexdigest()!=pin: raise RuntimeError('SHA mismatch')
+source=frozen('CHECKER','python');expected=frozen('RECEIPT','json')
+checked(source,'bf5de5814c6ff2997e0dae5d67fb8fbb9bff2865776d7ed63ac57c7b4591576a')
+checked(expected,'1add8a9479075c23bad6efe07876b43fc29d4af8ffca256ac2902cdcc25714b9')
+inputs=json.loads(frozen('INPUTS','json'))
+for ref,files in [(inputs['input_commit'],inputs['files']),
+                  (inputs['publication_integration_commit'],inputs['integration_files'])]:
+    for path,pin in files.items():
+        data=subprocess.check_output(['git','--work-tree='+str(root),'show',ref+':'+path])
+        checked(data,pin)
+work=Path(tempfile.mkdtemp(prefix='d0-return-channel-'))
+checker=work/'check_return_channel.py';checker.write_bytes(source)
+for flags in ([],['-O','-W','error']):
+    got=subprocess.check_output([sys.executable,*flags,str(checker),'--out',str(work)],cwd=root)
+    if got!=expected: raise RuntimeError('complete receipt mismatch')
+checked((work/'native_return_words.json').read_bytes(),
+        '816e7635bab79f4f004c64df45c4e54808551f6611cfc58c08940699883712f7')
+print(json.dumps({'status':'PASS','checks':137,'gate_B':'FAIL for this candidate',
+                  'evidence_directory':str(work)},indent=2))
+```
+
+<!-- 7ep RETURN CHANNEL INPUTS -->
+```json
+{
+  "input_commit": "c7092f525b2c17693f53855c973634c886cbb068",
+  "files": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "a734f6afbe4ec51038345e4b6b0d4376d02b0ecc687074232d7b65c68ae1565c",
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "84a62bbcced585a96ea86a938772dc67db7b710536328fa3dd417eff0231526f",
+    "02_REGISTRY/research/A4D_JOINT_THERMAL_STATIONARITY_AND_SHARED_SOURCE_LOSS_2026_10_31.md": "760eb56cae510f25c28d92fafce6f0ef9062d21e1a1ec45306e1169b0b4a6582",
+    "02_REGISTRY/research/A4D_NATIVE_WORD_NORMAL_SOURCE_2026_10_31.md": "50edebb4abd6649a76490e54f9f0bb9bad26fd94462fb076ee80803558b67ad9",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "publication_integration_commit": "e088f09c6968e35e94ae48ad14bd94525ea17c45",
+  "integration_files": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "44be19065c15bb6d11e0560755287bb2e527d26759af426cf03e87a564043b16",
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "c36ba7b180bf08a49e3047cf7b3d53daf47ff4fc5360892506ec5c888938ccb0",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md": "665fcbc48d64e4e6fc4bf5fcc764845d86012a42683f5d3188b47158cda5a2b9"
+  }
+}
+```
+
+<!-- 7ep RETURN CHANNEL CHECKER -->
+```python
+"""One candidate: two-sector return versus ALL its literal controller rows.
+
+Exact native words and growing-clock coefficients. The optional numerical
+price diagnostic includes all scene and Hodge modes, with analytic multiplicity.
+Run from repository root. No geometry compiler or new root is executed.
+"""
+from pathlib import Path
+import argparse,ast,hashlib,importlib.util,json,sys
+import sympy as S
+import numpy as np
+parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path)
+args=parser.parse_args();root=Path.cwd();checks=[]
+def require(ok,name):
+    if not bool(ok):raise ArithmeticError(name)
+    checks.append(name)
+native_path=root/'02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+require(hashlib.sha256(native_path.read_bytes()).hexdigest()==
+        '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c','native grammar pin')
+spec=importlib.util.spec_from_file_location('return_gate_native',native_path)
+native=importlib.util.module_from_spec(spec);sys.modules[spec.name]=native;spec.loader.exec_module(native)
+Gate=native.Gate
+primary=root/'02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+marker='<!-- 7em EQUAL RETURN CHECKER -->\n```python\n'
+txt=primary.read_text();require(txt.count(marker)==1,'one pinned native constructor block')
+owned=(txt.split(marker,1)[1].split('\n```',1)[0]+'\n').encode()
+require(hashlib.sha256(owned).hexdigest()==
+        '4e55fe7d946e6a057819dc8e6c00678baaec4938001997fedacc503831b05c9c','constructor source pin')
+wanted={'swap','routed_z','qa','qp','qadd','qsub','literal_golden_rows'}
+defs=[n for n in ast.parse(owned).body if isinstance(n,ast.FunctionDef) and n.name in wanted]
+require({n.name for n in defs}==wanted,'only listed constructors consumed')
+zero=(0,0,0,0);one=(1,0,0,0)
+exec(compile(ast.Module(body=defs,type_ignores=[]),'<pinned-7em-functions>','exec'),globals())
+a=S.Symbol('a',real=True);p=a*a;minimal=a**4+a**2-1
+def red(x):
+    n,d=S.fraction(S.cancel(x));n=S.rem(n,minimal,a);d=S.rem(d,minimal,a)
+    if d==0:raise ArithmeticError('zero Golden denominator')
+    return S.rem(S.expand(n*S.invert(d,minimal,a)),minimal,a)
+def mat(m):return S.Matrix(m).applyfunc(red)
+def equal(x,y,name):
+    if isinstance(x,S.MatrixBase) or isinstance(y,S.MatrixBase):
+        require(all(red(z)==0 for z in S.Matrix(x)-S.Matrix(y)),name)
+    else:require(red(x-y)==0,name)
+def gt(x):
+    poly=S.Poly(red(x),a);return tuple(int(poly.nth(k)) for k in range(4))
+G=S.Matrix([[a,-p],[p,a]]);Z=S.diag(1,-1);v=S.Matrix([a,p])
+c=red((v.T*Z*v)[0]);u=2*a*p
+equal(c,p**3,'actual canonical cold coefficient')
+equal(c*c+u*u,1,'all return and escape amplitudes retained')
+
+# CODE3 is an existing mutable DATA input, not an individually addressed Spin.
+# QUERY5 is canonically appended after initial oldRIGHT4; all Spin columns remain.
+def power(n,L):
+    require(L>=abs(n) and (L-n)%2==0,'paid signed-power parity '+str((n,L)))
+    return ([Gate('G',(5,))]*((L+n)//2)+routed_z(5)
+            +[Gate('G',(5,))]*((L-n)//2)+routed_z(5))
+def relative(n,L):return [Gate('CX',(3,5))]+power(n,L)+[Gate('CX',(3,5))]
+def word(f,t,d,L):
+    return tuple(relative(f,L)+power(t,L)+relative(d,L)+routed_z(5)
+                 +relative(-d,L)+power(-t,L)+relative(-f,L))
+def pow_g(n):
+    out=S.eye(2);step=G if n>=0 else G.T
+    for _ in range(abs(n)):out=mat(step*out)
+    return out
+def target_rows(f,t,d):
+    blocks=[]
+    for bit in (0,1):
+        k=t+(1-2*bit)*(f+d);rot=pow_g(k)
+        blocks.append(mat(rot.T*Z*rot))
+    rows=[{} for _ in range(64)]
+    for helper_spin in range(8):
+        for bit in (0,1):
+            for old in (0,1):
+                base=8*helper_spin+4*bit+2*old
+                for i in (0,1):
+                    for j in (0,1):
+                        x=blocks[bit][i,j]
+                        if x!=0:rows[base+i][base+j]=gt(x)
+    return rows,blocks
+
+words={};receipts={};blocks_by={};rows_by={}
+for forbidden_control,locked,reason in ((1,(4,),'source Spin'),(3,(3,4),'immutable CODE')):
+    bad=native.Execution(6,(),locked,(Gate('CX',(forbidden_control,5)),),
+                         native.G_CX_SOURCE_I,0,(1,2))
+    rejected=False
+    try:native.validate_execution(bad,max_qubits=6,max_expanded_stages=600)
+    except native.DomainError:rejected=True
+    require(rejected,'original validator rejects '+reason+' control')
+for L in (2,66):
+    cases={'centre':(0,0,0),'field_plus':(L,0,0),'relative_plus':(0,0,L),
+           'field_minus':(-L,0,0),'relative_minus':(0,0,-L),'common_plus':(0,L,0)}
+    inventories=[]
+    for name,(f,t,d) in cases.items():
+        gates=word(f,t,d,L)
+        ex=native.Execution(6,(),(4,),gates,native.G_CX_SOURCE_I,0,(1,2))
+        native.validate_execution(ex,max_qubits=6,max_expanded_stages=600)
+        inv=native.inventory(ex,max_qubits=6,max_expanded_stages=600)
+        require(all(4 not in q.wires for q in gates),'immutable oldRIGHT '+str((L,name)))
+        actual=literal_golden_rows(gates,6);expected,blocks=target_rows(f,t,d)
+        require(actual==expected,'all 64 columns including the immutable oldRIGHT factor '+str((L,name)))
+        key=str(L)+'_'+name;words[key]={'word':native.execution_to_dict(ex),
+            'birth_schedule':{'initial_wires':[0,1,2,3,4],'canonical_query_birth':5,
+                              'birth_before_gate':0,'canonical_vector':['a','a^2']}}
+        rows_by[L,name]=actual;blocks_by[L,name]=blocks
+        inventories.append((inv.gate_count,inv.g_count,inv.cx_count,inv.source_i_count))
+    require(len(set(inventories))==1,'all native comparisons have equal real inventory '+str(L))
+    require(inventories[0]==(6*L+112,6*L,86,26),'every positive and inverse call counted '+str(L))
+    for sign in ('plus','minus'):
+        require(rows_by[L,'field_'+sign]==rows_by[L,'relative_'+sign],
+                'field and independently located controller have identical WHOLE endpoints '+str((L,sign)))
+    require(rows_by[L,'field_plus']!=rows_by[L,'common_plus'],'common and relative controls are distinct '+str(L))
+    cold=[red((v.T*b*v)[0]) for b in blocks_by[L,'field_plus']]
+    require(red(cold[0]*cold[0]-cold[1]*cold[1])!=0,'retained return has two genuinely different eigenvalues '+str(L))
+    N=6*L+113;D=32+64*(N-1)
+    require(D==32*(2*N-1),'true one-birth clock dimension '+str(L))
+    receipts[str(L)]={'calls':6*L+112,'G':6*L,'CX':86,'SourceI':26,'births':1,
+      'stages':N,'stage_dimension':D,'full_Hodge_modes':425*D,'harmonic_modes':359*D,
+      'canonical_input_rank':32,'all_active_columns':32,'all_columns':64,'oldRIGHT_factor':2}
+
+cx,cy=S.symbols('cx cy',real=True)
+pure_corner=red((v.T*S.diag(cx,cy)*v)[0])
+equal(pure_corner,p*cx+p*p*cy,'fresh pure CODE instead has a scalar AMPLITUDE compression')
+require(red(pure_corner**2-(p*cx**2+p*p*cy**2))!=0,
+        'pure CODE does not preserve the full-rank two-sector feedback')
+
+# Full growing-clock characteristic polynomial, rather than a padded clock.
+lam,cc,ss=S.symbols('lam cc ss',real=True)
+for N in (3,4,5):
+    D=2*N-1;T=S.zeros(D);T[1,0]=1
+    for j in range(1,N-1):T[1+2*j:3+2*j,2*j-1:2*j+1]=S.eye(2)
+    RR=S.zeros(D,2);RR[0,0]=1;RR[2,1]=1
+    U=S.Matrix([[cc,ss],[ss,-cc]]);T[:,-2:]+=RR*U
+    poly=S.Poly((lam*S.eye(D)-T).det(),ss)
+    rem=S.rem(poly,S.Poly(ss*ss+cc*cc-1,ss)).as_expr().expand()
+    require(S.expand(rem-(lam**(2*N-1)+cc*lam**N-cc*lam**(N-1)-1))==0,
+            'all characteristic coefficients with actual birth at N='+str(N))
+
+# Price/source identity is exact for any smooth full heat function b(c+,c-).
+f,t,d=S.symbols('f t d',real=True)
+ap=t+f+d;am=t-f-d
+cp=c*S.cos(2*ap)-u*S.sin(2*ap);cm=c*S.cos(2*am)-u*S.sin(2*am)
+for q in (cp,cm):require(S.simplify(S.diff(q,f)-S.diff(q,d))==0,'full return jet field equals relative controller')
+jac=S.Matrix([cp,cm]).jacobian([t,d]).subs({t:0,f:0,d:0})
+equal(jac.det(),-8*u*u,'common AND relative controllers cover both response directions')
+require(red(jac.det())!=0,'literal centre is a regular two-response control chart')
+bp,bm=S.symbols('b_plus b_minus',real=True)
+ef=bp*S.diff(cp,f)+bm*S.diff(cm,f);ed=bp*S.diff(cp,d)+bm*S.diff(cm,d)
+require(S.simplify(ef-ed)==0,'ENTIRE heat plus return covector factorization, arbitrary actual heat partials')
+z=S.Rational(1,2**20);r=16
+j=-r*S.log(1-z+z*cp*cp)-r*S.log(1-z+z*cm*cm)
+require(S.simplify(S.diff(j,f)-S.diff(j,d))==0,'original full logdet source, with true rank16 per sector')
+# A nonzero row, not only an identity between two accidental zeros.
+# At the L2 field-plus word all base matrices AND these smooth jets are
+# algebraic, so the already owned 7ek separation theorem applies to H+J.
+cs=pow_g(4)[0,0];sn=pow_g(4)[1,0]
+ccs=[red(c*cs-u*sn),red(c*cs+u*sn)]
+vvs=[red(-2*c*sn-2*u*cs),red(2*c*sn-2*u*cs)]
+jrow=red(-2*r*z*(ccs[0]*vvs[0]/(1-z+z*ccs[0]**2)
+                 -ccs[1]*vvs[1]/(1-z+z*ccs[1]**2)))
+require(jrow!=0,'actual off-centre algebraic return row is nonzero')
+
+# One full-price diagnostic on the smaller L2 actual clock, not on a new root.
+av=float(S.sqrt((S.sqrt(5)-1)/2));pv=av*av;beta=2*pv*pv;zv=2.**-20
+part=np.array([9.,11.,13.]);coef=1/(35-part)
+def full_heat(colds,N):
+    temporal=[]
+    for cold in colds:
+        esc=np.sqrt(max(0.,1-cold*cold));Dsmall=2*N-1
+        T=np.zeros((Dsmall,Dsmall));T[1,0]=1
+        for j0 in range(1,N-1):T[1+2*j0:3+2*j0,2*j0-1:2*j0+1]=np.eye(2)
+        RR=np.zeros((Dsmall,2));RR[0,0]=1;RR[2,1]=1
+        T[:,-2:]+=RR@np.array([[cold,esc],[esc,-cold]])
+        require(np.linalg.norm(T.T@T-np.eye(Dsmall),ord=np.inf)<2e-14,'diagnostic true clock is unitary')
+        temporal.extend(np.linalg.eigvalsh((T+T.T)/2))
+    xx=np.array(temporal);q=np.zeros((len(xx),3,3))
+    for i in range(3):
+        q[:,i,i]=1-2*xx*coef[i]
+        for k in range(i):q[:,i,k]=q[:,k,i]=-np.sqrt(part[i]*part[k]*coef[i]*coef[k])
+    scene=np.sum(np.exp(-beta*np.linalg.eigvalsh(q)),axis=1)
+    scene+=np.sum((part-1)*np.exp(-beta*(1-2*xx[:,None]*coef)),axis=1)
+    Dfull=32*(2*N-1);Z=2*r*float(np.sum(scene))+359*Dfull
+    return np.log(Z)/beta
+def numcold(name):return [float(red((v.T*b*v)[0]).subs(a,av)) for b in blocks_by[2,name]]
+price={}
+N=receipts['2']['stages']
+for name in ('centre','field_plus','field_minus'):
+    co=numcold(name);hh=full_heat(co,N);jj=-r*sum(np.log1p(-zv+zv*x*x) for x in co)
+    price[name]={'heat':format(hh,'.15g'),'return':format(jj,'.15g'),'complete':format(hh+jj,'.15g')}
+require(price['field_plus']==price['field_minus'],'sector exchange preserves complete price (not field/controller independence)')
+
+words_bytes=(json.dumps(words,sort_keys=True,indent=2)+'\n').encode()
+result={'status':'PASS','checks':len(checks),'candidate':'two-sector return/record spectral shape',
+  'gate_B':'FAIL: E_field = E_relative_controller for the complete price',
+  'exact_identity':'E_Y = Dphi(Y)^* E_d; not merely E_Y proportional to common E_t',
+  'native_words_sha256':hashlib.sha256(words_bytes).hexdigest(),'histories':receipts,
+  'exact_offcentre_return_row':str(jrow),
+  'full_offcentre_source_nonzero_by':'owned 7ek: algebraic jet, algebraic beta/z, persistent full Hodge zero modes',
+  'full_price_diagnostic_L2':price,
+  'scope':{'actual_native_words':True,'complete_growing_clock_identity':True,
+     'physical_X_N_admission_proved':False,'geometric_transport_proved':False,
+     'new_root_searched':False,'GR_closed':False}}
+if args.out:
+    args.out.mkdir(parents=True,exist_ok=True);(args.out/'native_return_words.json').write_bytes(words_bytes)
+print(json.dumps(result,sort_keys=True,indent=2))
+```
+
+<!-- 7ep RETURN CHANNEL RECEIPT -->
+```json
+{
+  "candidate": "two-sector return/record spectral shape",
+  "checks": 137,
+  "exact_identity": "E_Y = Dphi(Y)^* E_d; not merely E_Y proportional to common E_t",
+  "exact_offcentre_return_row": "-8603360252946819578240*a**3/5104709701790204955601 + 5317456163915454892032*a/5104709701790204955601",
+  "full_offcentre_source_nonzero_by": "owned 7ek: algebraic jet, algebraic beta/z, persistent full Hodge zero modes",
+  "full_price_diagnostic_L2": {
+    "centre": {
+      "complete": "19.5695442238648",
+      "heat": "19.56951540696",
+      "return": "2.88169047598572e-05"
+    },
+    "field_minus": {
+      "complete": "19.5695385161739",
+      "heat": "19.56951540696",
+      "return": "2.31092138095039e-05"
+    },
+    "field_plus": {
+      "complete": "19.5695385161739",
+      "heat": "19.56951540696",
+      "return": "2.31092138095039e-05"
+    }
+  },
+  "gate_B": "FAIL: E_field = E_relative_controller for the complete price",
+  "histories": {
+    "2": {
+      "CX": 86,
+      "G": 12,
+      "SourceI": 26,
+      "all_active_columns": 32,
+      "all_columns": 64,
+      "births": 1,
+      "calls": 124,
+      "canonical_input_rank": 32,
+      "full_Hodge_modes": 3386400,
+      "harmonic_modes": 2860512,
+      "oldRIGHT_factor": 2,
+      "stage_dimension": 7968,
+      "stages": 125
+    },
+    "66": {
+      "CX": 86,
+      "G": 396,
+      "SourceI": 26,
+      "all_active_columns": 32,
+      "all_columns": 64,
+      "births": 1,
+      "calls": 508,
+      "canonical_input_rank": 32,
+      "full_Hodge_modes": 13831200,
+      "harmonic_modes": 11683296,
+      "oldRIGHT_factor": 2,
+      "stage_dimension": 32544,
+      "stages": 509
+    }
+  },
+  "native_words_sha256": "816e7635bab79f4f004c64df45c4e54808551f6611cfc58c08940699883712f7",
+  "scope": {
+    "GR_closed": false,
+    "actual_native_words": true,
+    "complete_growing_clock_identity": true,
+    "geometric_transport_proved": false,
+    "new_root_searched": false,
+    "physical_X_N_admission_proved": false
+  },
+  "status": "PASS"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -20198,3 +20198,59 @@ hostile control. Only these changed calculations and affected structural guards
 are required. No claim, assembly edge, queue state, Ready transition, or
 historical receipt is changed. `GR_closed=false`; source-specific H+J and
 complete Cost-Info obligations remain distinct until their binding is proved.
+
+### 3 November 2026 — consume the closure contract and test the full native controller image (§7ep)
+
+Same #334 / constitutive / native-programme-v1. Native realization and final
+composition. Scientific input c7092f525b2c17693f53855c973634c886cbb068;
+publication integration e088f09c6968e35e94ae48ad14bd94525ea17c45 is preserved
+verbatim. Only this existing brief and the primary artifact are changed.
+
+**Owned contract and consumer.** The incoming
+A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md is the single A--D contract;
+no duplicate contract is created. The incoming return/record gate computes
+the old-Gram residual and requires survival of EVERY actual internal row.
+Our literal two-sector calculation supplies the concrete native hostile
+control for its §5, beyond the common scalar row. It is not a new positive
+source programme or an extension of the rejected canonical A=I channel.
+The newer §7eo finite-source/recovery result is retained at its H.1 graph
+and finite-coordinate convention, not promoted to mandatory selection.
+
+**One candidate and decisive check.** The changed input is a nonscalar
+two-sector return, proposed to escape the old common-controller no-go.
+Literal G/CX/SourceI words realize BOTH common and relative response
+controls on one existing mutable DATA input and a canonically born QUERY.
+All64 columns and immutable oldRIGHT are checked; source Spin is opaque.
+The relative control is at a distinct executed occurrence. On the actual
+growing clock the full characteristic polynomial is the product of
+lambda^(2N-1)+c_b lambda^N-c_b lambda^(N-1)-1, with all multiplicities.
+Thus the exact complete H+J price depends on the two true responses, and
+E_f=E_d. For any source map f=phi(Y), E_Y=Dphi(Y)^* E_d with its original
+chart norm. An explicit algebraic nonzero return row and §7ek show this
+is equality of NONZERO full sources at a literal off-centre word.
+
+**Disposition: gate B FAIL for this candidate.** The relative controller
+kills the purported independent field channel when its equation is
+imposed. No Einstein match, geometry compiler, new root or broader census
+is attempted for it. This does not exclude a separately computed physical
+history/Cost-Info argument outside this control image. Executability of
+the contrast is not automatically its admission in every physical X_N;
+a restriction needs the native retained-task proof and actual reaction.
+Free pure CODE and full-rank DATA give different cuts and are not conflated.
+
+**Evidence.** Twelve emitted words at L2/L66; 124/508 calls plus one real
+birth. At L66 the clock has509 stages, D32544 and13,831,200 full Hodge
+modes. 137 bounded checks pass with normal and optimized/warnings-as-errors
+receipts identical. The original grammar rejects individual Spin control
+and an immutable CODE control; it was not weakened. Checker/receipt SHA256:
+bf5de5814c6ff2997e0dae5d67fb8fbb9bff2865776d7ed63ac57c7b4591576a /
+1add8a9479075c23bad6efe07876b43fc29d4af8ffca256ac2902cdcc25714b9.
+The primary embeds full source, inputs, receipt and exact reproduction.
+No acceptance, task retirement, Ready, merge or claim promotion.
+`GR_closed=false`. Goal active; the next source must pass this full
+controller-image gate before same-history Einstein composition.
+
+Final integrated structural checks passed: validate_work, validate_agent_protocol,
+gr_assembly check, validate_repo and diff whitespace. The assembly remains
+98 results / 22 obligations / 5 discharged; scientific_promotion=false.
+Every byte of incoming e088f09c6 in both owned files is preserved.
