@@ -20296,3 +20296,45 @@ task guard and its reaction. Fixed H.1 admission, independent input rows,
 Einstein match and the canonical contract's open obligations remain at
 their stated scopes. No acceptance, claim/lifecycle promotion or Ready.
 `GR_closed=false`; goal active.
+
+## 2026-11-04 continuation: compute the credit required by the actual paid clock
+
+Input4cde6a71a8d4114830d3936f031fdfe485c67384; same #334 and two owned
+write paths. Phase: native realization / final composition. Parent:
+the current return/record source gate §6, short contract B–D. Primary
+proof/checker/receipt: paid-source residual §7er.
+
+Consume §7eo.H CL1's actual CX-pair padding, the complete growing-clock
+Hodge trace, and the original ActionProtocol nonidentity Cost floor.
+New substitution: use two actually born Golden WORK spectators to prove
+that EACH CX in the added pairs is a distinguishable transition. The
+same target-bit readout alternates between p² and2p³, with strict gap
+5p−3>0. Thus, once the actual transition/Cost map is admitted, C_m≥2m;
+meanwhile the whole original B_m=H_m+J_0 grows only O(log(m+1)).
+
+For any proposed fixed-calibration complete price S_m=C_m−I_m+W_m
+=κB_m+b+e_m, ER5 forces I_m−W_m≥2m−O(log m)−e_m. No Info functional
+or sign of additional work is selected. If the actual net credit is
+sublinear, the mean two-call clock-source discrepancy has liminf≥2;
+it cannot be replaced by a uniformly vanishing residual. This is a
+duration comparison, not the Book rank derivative or a fixed-N field row.
+
+The literal six-wire probe has two real births, final G0, opaque Spin,
+immutable oldRIGHT, and 2m actual CX calls. Its all-column endpoint and
+feedback are fixed; its clock has D_m=112+128m and all425D_m modes.
+At m1024 an exact rational estimate gives C≥2048 and B<24. Under the
+EXPLICIT extra hypotheses I≤log_phi(425D_m), unit calibration and no
+work rebate, the full-price gap exceeds1970. These hypotheses remain
+visible; the result is not an unconditional failure of unspecified Info.
+
+The narrow checker passes47 controls with byte-identical normal and
+optimized warning-as-error receipts, including direct growing-clock
+decomposition with the real intermediate CX gates. The printed full-heat
+values are diagnostics; the finite gap uses rational bounds.
+
+Next actual application: compute I_m,W_m meeting the necessary credit on
+the SAME execution, or prove the native task rule excluding these duration
+edges and retain its reaction. No duration family is admitted merely by
+code legality; no prospective law is required to execute detours. Current
+H+J/fixed-graph κ recovery remains at its stated scope. No new root, task,
+claim/assembly acceptance or lifecycle promotion. GR_closed=false.
