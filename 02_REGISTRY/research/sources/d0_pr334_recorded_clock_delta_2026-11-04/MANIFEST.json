@@ -1,0 +1,151 @@
+{
+  "schema": "d0-pr334-recorded-clock-intake-v1",
+  "base": "89707e8ad4787ace2da9d70b723b799094cee4d9",
+  "head": "05cc38dc6283f45995a4c86fb69067c87734bb4c",
+  "commits": [
+    "724a5a1b8fb00ee065337a719508c9fbfc4e0048",
+    "89dcb2c853d1578819ec3ac2e72f1a20cbc5f004",
+    "b42db3deb79a55d4ede542ac4aef54a2c2f1106c",
+    "cfea4c2ed2c4aafb5179d67e5530064e2230cdf5",
+    "3a2d3f19db0f703b686b93ceb75c9bad8cf5e43b",
+    "79a2a63f626fc81e2b5656134ac21503db08d664",
+    "991eb3140ec36cfaa2cd7c52311a39517becaa50",
+    "ce7a3c909d48154412cc4b6b31d74d74f6ff9f93",
+    "ee1debce5b694988cd86062e5f1855713d46d0b3",
+    "057ae65246d234f168348a0c14d863cdcd112b56",
+    "05cc38dc6283f45995a4c86fb69067c87734bb4c"
+  ],
+  "head_sources": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": {
+      "blob": "891bfd93ccd3a67b1d2b597e8f0762ec641f371a",
+      "sha256": "fb56c597b15fc72b51a597a300fdce89337897312384621afe3663c095803a51",
+      "size": 1365014
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "blob": "d355b8695f61b4f08df5a711d47c3f306e0527aa",
+      "sha256": "f77f8dc194c2045c6a8ddb4bcebb04da53df684b5916b6d918cdc764d394c697",
+      "size": 5817010
+    }
+  },
+  "diff_sha256": "5ed4b3861562a8f1c734e18072e6fa6ff001525c0bfd0329484f236085f54878",
+  "archive_sha256": "610ded6d60b83769d111b0199ef42409cc6d861ab6377fbb6968883c1b07a2a3",
+  "sections": {
+    "section_7ew.md": {
+      "heading": "7ew.",
+      "byte_range": [
+        4519807,
+        4590935
+      ],
+      "size": 71128,
+      "sha256": "9cffb33761b342adf0ac9c67fec2cf27cb76996f0d2f4638d438424fa221ca7a"
+    },
+    "section_7ex.md": {
+      "heading": "7ex.",
+      "byte_range": [
+        4590936,
+        4643359
+      ],
+      "size": 52423,
+      "sha256": "f5ba17d100d33e69ba4c455cf4a88ed044b79eeaf8d9994cf02d44db139b35d5"
+    },
+    "section_7ey.md": {
+      "heading": "7ey.",
+      "byte_range": [
+        4643360,
+        4655937
+      ],
+      "size": 12577,
+      "sha256": "42620274ba7014b3daecdc4087fe00e9a4573c09594aa1a226679fe47cfade4f"
+    },
+    "section_7ez.md": {
+      "heading": "7ez.",
+      "byte_range": [
+        4655939,
+        4737703
+      ],
+      "size": 81764,
+      "sha256": "6b1663c2a056e2bf5fba981e47da76682662041da44b148ecf50b4b1691d78fa"
+    },
+    "section_7fa.md": {
+      "heading": "7fa.",
+      "byte_range": [
+        4737704,
+        4760096
+      ],
+      "size": 22392,
+      "sha256": "eae825ebc7be82f05dddd653d7756b9d903da8e87d37a360847983f3e3adcab7"
+    },
+    "section_7fb.md": {
+      "heading": "7fb.",
+      "byte_range": [
+        4760097,
+        4811746
+      ],
+      "size": 51649,
+      "sha256": "decbed3890a3e2f5c10d321c59016c718f76f88f13649acafb500594c01007ee"
+    },
+    "section_7fc.md": {
+      "heading": "7fc.",
+      "byte_range": [
+        4811747,
+        4837836
+      ],
+      "size": 26089,
+      "sha256": "9b002aee952e491b60b2fd152645f101e05f77a7a4ededbe11a6fd9e6572a4ee"
+    },
+    "synthesis_1.md": {
+      "heading": "Matched-source synthesis:",
+      "byte_range": [
+        5648807,
+        5676531
+      ],
+      "size": 27724,
+      "sha256": "3f07dacd458377dee56b9c78cfa992e1d50cd9ef04497e1d93614b83ce5aa9dc"
+    },
+    "synthesis_2.md": {
+      "heading": "Retained-history polar synthesis:",
+      "byte_range": [
+        5676533,
+        5703868
+      ],
+      "size": 27335,
+      "sha256": "f1862df0d79bafd1088cb6ebf604a563d1eee8403a88a6b834d58a25175ec076"
+    },
+    "synthesis_3.md": {
+      "heading": "Positive Golden history compilation:",
+      "byte_range": [
+        5703870,
+        5730379
+      ],
+      "size": 26509,
+      "sha256": "f21d92bb88c7447e48cc9d7407ad7ec7b53b3794e201bedf037530fdfa1242c9"
+    },
+    "synthesis_4.md": {
+      "heading": "Common-age thermal synthesis:",
+      "byte_range": [
+        5730380,
+        5774694
+      ],
+      "size": 44314,
+      "sha256": "f7589df10a10780c175d6e4b5144d27b3ec48d16c1f5652368df5dfe58c3872a"
+    },
+    "synthesis_5.md": {
+      "heading": "Recorded-operation synthesis:",
+      "byte_range": [
+        5774695,
+        5817010
+      ],
+      "size": 42315,
+      "sha256": "9b53a297592ff5bf225f885108367062f21addb7ba738ede5b116bc5ea5e0795"
+    }
+  },
+  "task_delta": {
+    "byte_range": [
+      1325896,
+      1365014
+    ],
+    "sha256": "fff030abd844f8bfb48db436e0d856ba4ee06e7dc7017925b745dc57071d6f2c"
+  },
+  "verification_boundary": "Provenance only: checkers and scientific claims require separate replay and review.",
+  "GR_closed": false
+}
