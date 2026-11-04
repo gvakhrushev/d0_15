@@ -1,0 +1,28 @@
+D0.Foundation.TheoryTransfer.NativeContextCoverage {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) : Type
+D0.Foundation.TheoryTransfer.NativeContextCoverage.context
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  {I : D0.Foundation.TheoryTransfer.Interpretation F G} (self : D0.Foundation.TheoryTransfer.NativeContextCoverage I) :
+  List G.Action → G.Test → List F.Action × F.Test
+D0.Foundation.TheoryTransfer.NativeContextCoverage.readout
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  {I : D0.Foundation.TheoryTransfer.Interpretation F G} (self : D0.Foundation.TheoryTransfer.NativeContextCoverage I) :
+  List G.Action → G.Test → F.Outcome → G.Outcome
+D0.Foundation.TheoryTransfer.NativeContextCoverage.correct
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  {I : D0.Foundation.TheoryTransfer.Interpretation F G} (self : D0.Foundation.TheoryTransfer.NativeContextCoverage I)
+  (s : F.State) (w : List G.Action) (t : G.Test) :
+  G.profile (I.stateMap s) w t = self.readout w t (F.profile s (self.context w t).1 (self.context w t).2)
+D0.Foundation.TheoryTransfer.Interpretation.native_profile_reflects
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) {s t : F.State}
+  (h : G.profile (I.stateMap s) = G.profile (I.stateMap t)) : F.profile s = F.profile t
+D0.Foundation.TheoryTransfer.NativeContextCoverage.native_profile_eq_iff
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  {I : D0.Foundation.TheoryTransfer.Interpretation F G} (C : D0.Foundation.TheoryTransfer.NativeContextCoverage I)
+  (s t : F.State) : G.profile (I.stateMap s) = G.profile (I.stateMap t) ↔ F.profile s = F.profile t
+D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage :
+  ¬Nonempty (D0.Foundation.TheoryTransfer.NativeContextCoverage D0.Foundation.TheoryTransfer.visibleBitInterpretation)
+'D0.Foundation.TheoryTransfer.Interpretation.native_profile_reflects' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.NativeContextCoverage.native_profile_eq_iff' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage' depends on axioms: [propext, Quot.sound]

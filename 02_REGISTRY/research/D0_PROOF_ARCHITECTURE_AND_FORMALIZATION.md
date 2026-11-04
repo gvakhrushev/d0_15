@@ -17710,3 +17710,11 @@ independent fine-record rotor rows. The stated componentwise stationary
 section changes the field source and does not establish full stationarity or
 Einstein identification. The independently replayed finite checker includes
 42 nominal floating checks; actual execution, full price and GR remain open.
+
+### Direct review of corrected native coverage sufficiency
+
+The [corrected Book02 coverage review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_nativecoverage_sufficiency_review_2026-11-05/SUMMARY_RU.md)
+checks the precise state-independent context/readout witness and the full
+profile equivalence on represented states. Older reviews retain their text
+and now link an explicit sufficiency correction; neither witness necessity nor
+physical selection is inferred.
