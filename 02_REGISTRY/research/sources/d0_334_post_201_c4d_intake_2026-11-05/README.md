@@ -61,8 +61,16 @@ python3 02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/verif
 ```
 
 To replay in a cached environment, this runs the pinned owner code in a
-scratch directory; it is not a sandbox:
+scratch directory; it checks the checker hash before each mode and rejects
+any stderr, but it is not a sandbox:
 
 ```sh
 uv run --offline --python 3.12 --with numpy --with scipy --with sympy python 02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/replay_bounded.py
+```
+
+The replay's tampering and stderr controls can be checked without running the
+owner code:
+
+```sh
+python3 02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/test_replay_bounded.py
 ```

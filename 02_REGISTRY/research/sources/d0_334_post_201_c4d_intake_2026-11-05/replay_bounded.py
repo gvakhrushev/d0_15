@@ -25,11 +25,16 @@ def main():
         env = dict(os.environ, OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1')
         outputs = []
         for opt in ([], ['-O']):
-            proc = subprocess.run([sys.executable, *opt, '-Werror', str(P / 'check_transport.py'), '--repo', tmp],
+            checker = P / 'check_transport.py'
+            if digest(checker.read_bytes()) != M['checker_sha256']:
+                raise ValueError('checker source mismatch')
+            proc = subprocess.run([sys.executable, *opt, '-Werror', str(checker), '--repo', tmp],
                                   capture_output=True, env=env)
             if proc.returncode:
                 sys.stderr.buffer.write(proc.stderr)
                 raise SystemExit(proc.returncode)
+            if proc.stderr:
+                raise ValueError('checker produced stderr')
             parsed = json.loads(proc.stdout)
             if parsed['check_count'] != 65 or parsed['check_counts_by_kind'] != M['owner_reported_check_counts']:
                 raise ValueError('unexpected check classification')
