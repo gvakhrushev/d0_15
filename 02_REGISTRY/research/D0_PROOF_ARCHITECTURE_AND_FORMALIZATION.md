@@ -17491,3 +17491,14 @@ one-dimensional statement as a corollary. The result supplies `dΦ`, not the
 original source identity, physical maps, heat/clock/work or admission. Its
 [independent review and cached build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_weighted_mean_fderiv_f025_2026-11-04/SUMMARY_RU.md)
 retain those application premises.
+
+### Matched branch return: full moving components and finite price derivative
+
+`D0.Analysis.MatchedBranchReturnDerivative` derives the cancellation of moving
+component derivatives from local completeness, and differentiates the finite
+log-determinant price along independent branch variations. The resolved trace
+retains both noncommuting terms. A real-positive determinant neighbourhood,
+fixed A and other scalar parameters are explicit hypotheses. The [independent
+review and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_price_7d17_2026-11-04/SUMMARY_RU.md)
+retain the separate owner C-self-adjointness, physical map, normalized weights,
+other price rows and admission obligations; no full R1/R2 or GR is claimed.
