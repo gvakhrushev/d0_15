@@ -17437,3 +17437,32 @@ identity, not execution of SciPy. Julia square roots, the 128 Kraus operators,
 their effect span and its CAR block identification, physical admission,
 clock/work and owner #334 remain open; `GR_closed=false`. Full final
 integration on this module is still required.
+
+
+### Exact positive Julia roots for the original static branches
+
+`D0.Geometry.OriginalBookStaticJuliaRoots` proves that a Hermitian projector
+`P` has the principal positive CFC root
+`sqrt(I−9P/25)=I−P/5`, including strict positive definiteness of the defect.
+The proof constructs positivity and uses `CFC.sqrt_unique`; the desired root
+is not an assumption. Kernel finite checks establish the CAR relations for
+all four original creator matrices. The module derives both baseline roots
+for all four roles, and both live phased roots for A/B/C with `ν=3/5`,
+preserving the source's phases and ordering. The moved D live roots are not
+covered by this static result.
+
+The exact source passed narrow Lean checking and independent read-only review.
+Ten checked results use `propext`, `Classical.choice`, `Quot.sound`; no
+`native_decide`, `sorry` or heartbeat override is used.
+`tools/check_original_static_julia_roots.py` checks pinned source hashes then
+executes the original uniform module, comparing 14 roots with the proved
+formula in floating point; its wrong-sign control is rejected. This execution
+trusts the pinned upstream code and requires NumPy, SciPy and SymPy, and it is
+not a formal verification of the numerical root routine. The full moved D
+roots, 128 Kraus, future-effect span and identification with the abstract
+block algebra remain open; physical admission, clock/work and #334 are
+unchanged, and `GR_closed=false`. Final integration remains required.
+
+The numerical checker fails closed on nonfinite roots, eigenvalues and errors;
+three independent NaN injection controls passed after review identified the
+original comparison weakness.
