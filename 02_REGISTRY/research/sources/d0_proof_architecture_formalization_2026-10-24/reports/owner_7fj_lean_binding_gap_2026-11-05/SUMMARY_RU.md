@@ -110,3 +110,6 @@ ending не объявляются свободными вариациями в�
 `fb34826254adddec3b36c0ca7e0ca421713260dbad20600705e629e5ea32d916`,
 `2db43d74311781e9161ac049b0f6bebf45fe922eed1ba33c6efcd1f5053ec039`.
 Проверка сохранности §7fj intake с `--verify-source-objects` прошла.
+
+The Lean derivative theorem does not assume `0 < z < 1`: `z` is a fixed real,
+with admissibility expressed separately by the determinant hypothesis.
