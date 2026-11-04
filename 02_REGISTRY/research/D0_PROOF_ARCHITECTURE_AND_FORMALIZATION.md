@@ -17502,3 +17502,13 @@ fixed A and other scalar parameters are explicit hypotheses. The [independent
 review and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_price_7d17_2026-11-04/SUMMARY_RU.md)
 retain the separate owner C-self-adjointness, physical map, normalized weights,
 other price rows and admission obligations; no full R1/R2 or GR is claimed.
+
+### Matched branch return: positive-real determinant from PSD history
+
+`D0.Analysis.MatchedBranchReturnPositiveChart` discharges the previous
+real-positive determinant neighbourhood for fixed PSD `A`, `d > 0` and
+`eta >= 0`, without assuming `C` self-adjoint. A separate theorem proves
+self-adjointness from real amplitudes and self-adjoint components. The
+[independent review and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_positive_chart_04f2_2026-11-05/SUMMARY_RU.md)
+retain physical maps, positive normalization, varying preparation, other
+price rows and admission as open; singular `A` remains allowed.
