@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/tmp/d0-owner-afd-intake/02_REGISTRY/research/sources/d0_334_post_800_afd_intake_2026-11-05/check_clock_price.py", line 368, in <module>
+    main()
+  File "/tmp/d0-owner-afd-intake/02_REGISTRY/research/sources/d0_334_post_800_afd_intake_2026-11-05/check_clock_price.py", line 350, in main
+    native_result = native_checks(args.repo)
+  File "/tmp/d0-owner-afd-intake/02_REGISTRY/research/sources/d0_334_post_800_afd_intake_2026-11-05/check_clock_price.py", line 111, in native_checks
+    p, k, dk, rows, drows = pinned_loader(repo)
+  File "/tmp/d0-owner-afd-intake/02_REGISTRY/research/sources/d0_334_post_800_afd_intake_2026-11-05/check_clock_price.py", line 80, in pinned_loader
+    return namespace['load_native_once'](repo)
+  File "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md:7fh.G1/check_transport.py", line 116, in load_native_once
+  File "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py", line 71, in native
+RuntimeWarning: divide by zero encountered in matmul
