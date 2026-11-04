@@ -1,0 +1,19 @@
+{
+  "status": "failed_partial_destination_retained",
+  "source": "/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/03_FORMALIZATION/.lake",
+  "target": "/private/tmp/d0-2bc-lean-receipt-worktree/03_FORMALIZATION/.lake",
+  "source_head": "b30862d47a5972c346d6f6fe9b4cc985d2a86dc7",
+  "target_head": "1eabcccbf7e115c667e9bb8c445ef300107b1493",
+  "counts": {
+    "files": 0,
+    "directories": 0,
+    "symlinks": 0,
+    "logical_bytes": 0,
+    "sample_hashes": 0
+  },
+  "clonefile_fallback": false,
+  "source_cache_writes": false,
+  "elapsed_seconds": 0.18,
+  "available_bytes": 11180990464,
+  "available_inodes": 109189360
+}

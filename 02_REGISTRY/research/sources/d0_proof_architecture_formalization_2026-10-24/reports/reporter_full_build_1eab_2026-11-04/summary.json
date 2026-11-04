@@ -1,0 +1,67 @@
+{
+  "snapshot_commit": "1eabcccbf7e115c667e9bb8c445ef300107b1493",
+  "worktree_status": "",
+  "free_bytes": 10919014400,
+  "stages": [
+    {
+      "stage": "reporter_equality",
+      "target": "D0.Research.TaskFaithfulReporterProductEquality",
+      "source_sha256": "ed951680be53bdd24ccee4de9e02c0534c55e836d3c09f28047ed221c5e840b1",
+      "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+      "environment_sha256": "bdf3ce4243dada4363ce5bfa3aaa8a962f99843ee46f1cd4eda8855e2a186b60",
+      "build": "Build completed successfully (2665 jobs).",
+      "timing": "D0_BUILD target=D0.Research.TaskFaithfulReporterProductEquality seconds=19.3 returncode=0",
+      "warnings": 0,
+      "log_sha256": "ac1779a2d7ea5e2936cd39c8119e74a27c6d9cdc5164c03cef3c78f2f0f169d0",
+      "log_bytes": 3409,
+      "log_path": "/tmp/d0-1eab-reporter_equality.log",
+      "archived_log": "reporter_equality.log.gz",
+      "archived_gzip_sha256": "981f4b33479b179d386f2d2ffb26dcaf274b91afa785519e29f85182efc7b97e"
+    },
+    {
+      "stage": "repeated_reporter",
+      "target": "D0.Research.TaskFaithfulRepeatedReporterDerivative",
+      "source_sha256": "ed951680be53bdd24ccee4de9e02c0534c55e836d3c09f28047ed221c5e840b1",
+      "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+      "environment_sha256": "bdf3ce4243dada4363ce5bfa3aaa8a962f99843ee46f1cd4eda8855e2a186b60",
+      "build": "Build completed successfully (2704 jobs).",
+      "timing": "D0_BUILD target=D0.Research.TaskFaithfulRepeatedReporterDerivative seconds=11.2 returncode=0",
+      "warnings": 16,
+      "log_sha256": "4920fe75ca8d233c750e19f7fa3f2dc3aa29f4f8c12a14a9170771159c9ab2fa",
+      "log_bytes": 8222,
+      "log_path": "/tmp/d0-1eab-repeated_reporter.log",
+      "archived_log": "repeated_reporter.log.gz",
+      "archived_gzip_sha256": "e84e7c23f9c3d928e51ca691779aa3301fc844fde834c600883f7fdc68b54746"
+    },
+    {
+      "stage": "affine_transfer",
+      "target": "D0.Research.TaskFaithfulReporterAffineTransfer",
+      "source_sha256": "ed951680be53bdd24ccee4de9e02c0534c55e836d3c09f28047ed221c5e840b1",
+      "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+      "environment_sha256": "bdf3ce4243dada4363ce5bfa3aaa8a962f99843ee46f1cd4eda8855e2a186b60",
+      "build": "Build completed successfully (2705 jobs).",
+      "timing": "D0_BUILD target=D0.Research.TaskFaithfulReporterAffineTransfer seconds=9.7 returncode=0",
+      "warnings": 6,
+      "log_sha256": "84a6c07d8f8b2daac1a8b192ae41d0acad45286f66333414fb944fa40d8c12d8",
+      "log_bytes": 5187,
+      "log_path": "/tmp/d0-1eab-affine_transfer.log",
+      "archived_log": "affine_transfer.log.gz",
+      "archived_gzip_sha256": "6c2642fd6adb601aaba3e1d2041e974557893f9b411c77f5f74555858c1e83f6"
+    },
+    {
+      "stage": "final",
+      "target": "D0.All",
+      "source_sha256": "ed951680be53bdd24ccee4de9e02c0534c55e836d3c09f28047ed221c5e840b1",
+      "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+      "environment_sha256": "bdf3ce4243dada4363ce5bfa3aaa8a962f99843ee46f1cd4eda8855e2a186b60",
+      "build": "Build completed successfully (4805 jobs).",
+      "timing": "D0_BUILD target=D0.All seconds=42.4 returncode=0",
+      "warnings": 1339,
+      "log_sha256": "1c8b87ab62c80b2d1c9ebb1b5cccc247871fdbb580fb97ddb3b5101be870a0bd",
+      "log_bytes": 512314,
+      "log_path": "/tmp/d0-1eab-final.log",
+      "archived_log": "final.log.gz",
+      "archived_gzip_sha256": "143f2c9a3fe35050abd860a5d4ffcb94d8266ed251a128213d33c5d15fc78904"
+    }
+  ]
+}
