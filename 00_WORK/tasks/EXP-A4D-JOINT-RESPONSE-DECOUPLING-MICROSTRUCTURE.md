@@ -21107,3 +21107,50 @@ variable ledger, continuation boundary and physical source normalization.
 Affected structural guards run on final inputs once. No scientific
 acceptance, registry promotion, Ready, retirement or merge. GR_closed=false;
 the full goal remains active.
+
+## 4 November 2026 checkpoint: existing CAR scalar supplies the interpreted causal clock
+
+Phase: native realization / final composition, existing #334.
+Input: 057ae65246d234f168348a0c14d863cdcd112b56. Same two owned write
+paths; primary section 7fc, RC1–RC7. Consumer: the causal-time/readout
+part of physical_constraints and gr-operational-closure-v1, explicitly
+left open by FN/PQ. No independent task or new action is introduced.
+
+The existing nonvacuum H12 Cauchy control has a CAR scalar whose gradient
+is timelike on the SAME certified state collar: 1/20<X<1/10. The clock
+flow Q=grad(Psi0)/X exists on the explicit interval S=T*/12 and supplies
+proper durations sqrt(10)Delta s<=Delta tau<=sqrt(20)Delta s. Its time
+orientation, metric, matter and coupling are the original RO/GENERAL
+objects. Stage count is not proper time. No clock field, observer frame,
+SI unit or new Einstein solution is added.
+
+The finite-cover/Cauchy algorithm now consumes the explicit computable
+flow/proper-duration modulus on K_clock, the effectively compact subset
+with the real first-derivative clock collar. The original energy theorem
+places its development in the interior; actual decoded errors preserve
+the gap. Off-shell candidates keep their initial scalar offset until the
+prescribed trace is satisfied. Weak source convergence is not called a
+finite-step energy estimate.
+
+The reading protocol requests increasing scalar-flow levels BEFORE each
+readout, using common finite address catalogues and the actual decoder.
+KAPPA positive effect coarsening and GH12 transport preserve each finite
+continuation and previous records. Physically executed readers are paid
+in the next complete prefix; CT/RO recomputes its true gain and all sources,
+including actual field-dependent reader maps, failure columns and zero
+cold return. No outcome postselection or free physical arithmetic is used.
+
+This supplies an interpreted causal-time/readout map for the nonempty RO
+Cauchy regime. It does not prove Lorentz-locality of arbitrary native
+interventions, identify EO's null-scalar exact roots with this family,
+or discharge all of physical_constraints or architectural GR closure.
+The separate pathwise Cost-Info and unchanged exact-finite/raw216 remain.
+
+Validation: 18 new exact rational/symbolic checks, normal and optimized
+runs with -Werror and identical receipts. The negative control shows a
+wave clock can have a nonclosed proper-duration one-form. No old PDE,
+energy, compiler or Lean suite is rerun; no full history or PDE trajectory
+is claimed to have been numerically emitted. Independent bounded reviews
+checked the compact-domain, true time derivative, readout and price maps.
+Affected structural guards run once on final inputs. No registry or claim
+promotion, Ready, retirement or merge. GR_closed=false; goal remains active.
