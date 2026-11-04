@@ -1,0 +1,64 @@
+{
+  "schema": "d0-cold-start-split-replay-v1",
+  "snapshot_commit": "c743de710753cd9868f53ba13fd16adfd1affc9c",
+  "worktree_dirty": false,
+  "exit_code": 0,
+  "search_cases_found_all_sources": 36,
+  "search_cases_total": 50,
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "command": "D0_PROOF_SEARCH_PROGRESS=1 python -X utf8 tools/proof_architecture_cold_start.py",
+  "compactor_command": "python -X utf8 tools/compact_proof_architecture_cold_start.py --input <full_replay.json> --output <summary.json>",
+  "full_json_bytes": 85581819,
+  "full_json_sha256": "cc9514e7fc2317d477deb9826409dc8e102292d3f6f3f7baa4ee03872d80e09b",
+  "full_xz_bytes": 3519132,
+  "full_xz_sha256": "202fab528840707e5983c736c6daafa92f50509d73d673c25f0cdeac96654ac6",
+  "parts": [
+    {
+      "path": "full_replay.json.xz.part00",
+      "bytes": 900000,
+      "sha256": "099d249bfb1cfcc7f309c7dbaeeaade9a4f0aeacbf80d17904cf03ad5c3d0815"
+    },
+    {
+      "path": "full_replay.json.xz.part01",
+      "bytes": 900000,
+      "sha256": "2513da5559437a3d8ba3100ae5e5ebb7055d4d4569c5aa8a2c148be8fd5c54ca"
+    },
+    {
+      "path": "full_replay.json.xz.part02",
+      "bytes": 900000,
+      "sha256": "d4e010b434a522fd9ea5561098dee43f2bfed443e4c592cad1cf5a1da6e25c47"
+    },
+    {
+      "path": "full_replay.json.xz.part03",
+      "bytes": 819132,
+      "sha256": "d47db65426661ee5d9ace9b54fff383ba5eafb768d1ad19600ca673638fa5ab4"
+    }
+  ],
+  "summary_json_sha256": "7442837dcce1be680defbefb5ae66fa89fe1b629b574656e68a22dc83bc2ae56",
+  "summary_xz_sha256": "7ad71c09da3980092f7a35b471da176ce8f329246dd1becacd55e56a3faa8487",
+  "progress_sha256": "7fa9edbc0ad664a901c2d73dc449f0a93e6c6983ddc000606de6fd476b625b78",
+  "unresolved_cases": [
+    "labelled-native-raising-inverse",
+    "finite-hermitian-adjoint-twisted-car-application",
+    "nontrivial-canonical-prefix-source-correction",
+    "canonical-binary-af-endpoint-and-finite-source",
+    "paid-binary-input-full-same-execution-book-price",
+    "native-stationary-recording-seed-whole-word-source",
+    "canonical-af-stationary-family-archive-seed",
+    "archive-preserving-binary-seed-full-query-source",
+    "canonical-af-original-julia-source-lift",
+    "canonical-af-full-heat-geometric-source",
+    "canonical-af-native16-retained-report-fibre",
+    "native16-whole-book-price-graph",
+    "pr334-native-kappa-owner-delta",
+    "pr334-native-af-paid-futures-and-full-price-separation"
+  ],
+  "boundaries": "Compactor verifies structure and self-reported snapshot against clean checkout; it does not rerun search or independently authenticate execution. No semantic C0 or physical GR acceptance follows.",
+  "progress_xz_sha256": "cee79e171d70b12e62d1ab7d8ea149c486d41204c224ed437e435ac0963edf05"
+}
