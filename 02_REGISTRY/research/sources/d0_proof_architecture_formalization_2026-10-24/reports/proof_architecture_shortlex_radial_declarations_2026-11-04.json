@@ -1,0 +1,1667 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "5fddf1c10ef9d86bf5ab543c53d2f6adf3818c82",
+  "worktree_dirty": false,
+  "lean_source_digest": "a695a063f34bb13ff6239b14f6ee5984b81513ff0052683eed8d644db4294a10",
+  "collector_sha256": "3a6ddd2bdac022015b357880b046684b9bff758de86f9d05ee2736fbb7d96259",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Foundation.ShortlexCodeExistence",
+    "D0.Research.TaskFaithfulRadialPriceDerivative"
+  ],
+  "module_prefix": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Object",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2076936223._hygCtx._hyg.4",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2076936223._hygCtx._hyg.7",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "List Symbol → Option Object"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hdecode",
+          "type": "∀ (x : Object), ∃ c, decode c = some x"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.VerificationCore.CodePresentation Symbol Object",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 52,
+            "line": 70
+          },
+          "start": {
+            "column": 0,
+            "line": 52
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 36,
+            "line": 55
+          },
+          "start": {
+            "column": 18,
+            "line": 55
+          }
+        }
+      },
+      "elaborated_type": "{Symbol Object : Type} →\n  [inst : LinearOrder Symbol] →\n    [WellFoundedLT Symbol] →\n      (decode : List Symbol → Option Object) →\n        (∀ (x : Object), ∃ c, decode c = some x) → D0.Foundation.VerificationCore.CodePresentation Symbol Object",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.ShortlexCodeExistence",
+      "name": "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode",
+      "proof_dependencies": [
+        "And",
+        "Classical.choose",
+        "D0.Foundation.VerificationCore.CodePresentation.mk",
+        "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_1",
+        "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_2",
+        "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_3",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Exists",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Option",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.VerificationCore.CodePresentation",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Exists",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Option",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/ShortlexCodeExistence.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Object",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2076936223._hygCtx._hyg.4",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2076936223._hygCtx._hyg.7",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "List Symbol → Option Object"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hdecode",
+          "type": "∀ (x : Object), ∃ c, decode c = some x"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "Object"
+        }
+      ],
+      "conclusion_whnf": "∃ m, decode m = some x ∧ ∀ (c : List Symbol), decode c = some x → D0.Foundation.VerificationCore.ShortlexLE m c",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ {Symbol Object : Type} [inst : LinearOrder Symbol] [WellFoundedLT Symbol] (decode : List Symbol → Option Object),\n  (∀ (x : Object), ∃ c, decode c = some x) →\n    ∀ (x : Object),\n      ∃ m, decode m = some x ∧ ∀ (c : List Symbol), decode c = some x → D0.Foundation.VerificationCore.ShortlexLE m c",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.ShortlexCodeExistence",
+      "name": "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_1",
+      "proof_dependencies": [
+        "D0.Foundation.VerificationCore.exists_shortlex_minimal_word",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Exists",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Option",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Exists",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Option",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/ShortlexCodeExistence.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Object",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2076936223._hygCtx._hyg.4",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2076936223._hygCtx._hyg.7",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "List Symbol → Option Object"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hdecode",
+          "type": "∀ (x : Object), ∃ c, decode c = some x"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "Object"
+        }
+      ],
+      "conclusion_whnf": "decode (Classical.choose ⋯) = some x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ {Symbol Object : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (decode : List Symbol → Option Object) (hdecode : ∀ (x : Object), ∃ c, decode c = some x) (x : Object),\n  decode (Classical.choose ⋯) = some x",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.ShortlexCodeExistence",
+      "name": "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_2",
+      "proof_dependencies": [
+        "And",
+        "And.left",
+        "Classical.choose",
+        "Classical.choose_spec",
+        "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_1",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Exists",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Option",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "Classical.choose",
+        "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_1",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Exists",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Option",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/ShortlexCodeExistence.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Object",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2076936223._hygCtx._hyg.4",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2076936223._hygCtx._hyg.7",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "List Symbol → Option Object"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hdecode",
+          "type": "∀ (x : Object), ∃ c, decode c = some x"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "Object"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc",
+          "type": "decode c = some x"
+        }
+      ],
+      "conclusion_whnf": "(Classical.choose ⋯).length < c.length ∨\n  (Classical.choose ⋯).length = c.length ∧ (Classical.choose ⋯ = c ∨ List.Lex (fun a b => a < b) (Classical.choose ⋯) c)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ {Symbol Object : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (decode : List Symbol → Option Object) (hdecode : ∀ (x : Object), ∃ c, decode c = some x) (x : Object)\n  (c : List Symbol), decode c = some x → D0.Foundation.VerificationCore.ShortlexLE (Classical.choose ⋯) c",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.ShortlexCodeExistence",
+      "name": "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_3",
+      "proof_dependencies": [
+        "And",
+        "And.right",
+        "Classical.choose",
+        "Classical.choose_spec",
+        "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_1",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Exists",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Option",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "Classical.choose",
+        "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode._proof_1",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Exists",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Option",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/ShortlexCodeExistence.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.1455335308._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.1455335308._hygCtx._hyg.6",
+          "type": "Finite Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "P",
+          "type": "List Symbol → Prop"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hne",
+          "type": "∃ c, P c"
+        }
+      ],
+      "conclusion_whnf": "∃ m, P m ∧ ∀ (c : List Symbol), P c → D0.Foundation.VerificationCore.ShortlexLE m c",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 36,
+            "line": 48
+          },
+          "start": {
+            "column": 0,
+            "line": 43
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 52,
+            "line": 45
+          },
+          "start": {
+            "column": 8,
+            "line": 45
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [Finite Symbol] (P : List Symbol → Prop),\n  (∃ c, P c) → ∃ m, P m ∧ ∀ (c : List Symbol), P c → D0.Foundation.VerificationCore.ShortlexLE m c",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.ShortlexCodeExistence",
+      "name": "D0.Foundation.VerificationCore.exists_finite_alphabet_shortlex_minimal_word",
+      "proof_dependencies": [
+        "D0.Foundation.VerificationCore.exists_shortlex_minimal_word",
+        "DistribLattice.toLattice",
+        "Exists",
+        "Finite",
+        "Finite.to_wellFoundedLT",
+        "IsWellOrder.toIsWellFounded",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "LinearOrder.toPartialOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellQuasiOrderedLE.to_wellFoundedLT",
+        "instDistribLatticeOfLinearOrder",
+        "instWellQuasiOrderedLEOfWellFoundedLT",
+        "isWellOrder_lt"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Exists",
+        "Finite",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/ShortlexCodeExistence.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.1247667176._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.1247667176._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "P",
+          "type": "List Symbol → Prop"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hne",
+          "type": "∃ c, P c"
+        }
+      ],
+      "conclusion_whnf": "∃ m, P m ∧ ∀ (c : List Symbol), P c → D0.Foundation.VerificationCore.ShortlexLE m c",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 36,
+            "line": 41
+          },
+          "start": {
+            "column": 0,
+            "line": 22
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 36,
+            "line": 24
+          },
+          "start": {
+            "column": 8,
+            "line": 24
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [WellFoundedLT Symbol] (P : List Symbol → Prop),\n  (∃ c, P c) → ∃ m, P m ∧ ∀ (c : List Symbol), P c → D0.Foundation.VerificationCore.ShortlexLE m c",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.ShortlexCodeExistence",
+      "name": "D0.Foundation.VerificationCore.exists_shortlex_minimal_word",
+      "proof_dependencies": [
+        "And",
+        "And.casesOn",
+        "And.intro",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.ndrec",
+        "Exists",
+        "Exists.casesOn",
+        "Exists.intro",
+        "False.elim",
+        "Iff.mp",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "List.Lex",
+        "List.Shortlex",
+        "List.Shortlex.trichotomous",
+        "List.Shortlex.wf",
+        "List.length",
+        "List.shortlex_def",
+        "Membership.mem",
+        "Nat",
+        "Not",
+        "Or",
+        "Or.casesOn",
+        "Or.inl",
+        "Or.inr",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "Set",
+        "Set.instMembership",
+        "WellFounded",
+        "WellFounded.has_min",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder",
+        "instLTNat",
+        "instTrichotomousLt",
+        "rfl",
+        "setOf",
+        "trichotomous_of",
+        "wellFounded_lt"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Exists",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/ShortlexCodeExistence.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Object",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2004929089._hygCtx._hyg.4",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.ShortlexCodeExistence.2004929089._hygCtx._hyg.7",
+          "type": "Finite Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "List Symbol → Option Object"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hdecode",
+          "type": "∀ (x : Object), ∃ c, decode c = some x"
+        }
+      ],
+      "conclusion_whnf": "∃ K, K.decode = decode",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 16,
+            "line": 82
+          },
+          "start": {
+            "column": 0,
+            "line": 74
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 48,
+            "line": 76
+          },
+          "start": {
+            "column": 8,
+            "line": 76
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol Object : Type} [inst : LinearOrder Symbol] [Finite Symbol] (decode : List Symbol → Option Object),\n  (∀ (x : Object), ∃ c, decode c = some x) → ∃ K, K.decode = decode",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.ShortlexCodeExistence",
+      "name": "D0.Foundation.VerificationCore.finite_alphabet_code_presentation_exists",
+      "proof_dependencies": [
+        "D0.Foundation.VerificationCore.CodePresentation",
+        "D0.Foundation.VerificationCore.CodePresentation.decode",
+        "D0.Foundation.VerificationCore.CodePresentation.ofSurjectiveDecode",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Exists",
+        "Exists.intro",
+        "Finite",
+        "Finite.to_wellFoundedLT",
+        "IsWellOrder.toIsWellFounded",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "LinearOrder.toPartialOrder",
+        "List",
+        "Option",
+        "Option.some",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellQuasiOrderedLE.to_wellFoundedLT",
+        "instDistribLatticeOfLinearOrder",
+        "instWellQuasiOrderedLEOfWellFoundedLT",
+        "isWellOrder_lt",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.VerificationCore.CodePresentation",
+        "D0.Foundation.VerificationCore.CodePresentation.decode",
+        "Eq",
+        "Exists",
+        "Finite",
+        "LinearOrder",
+        "List",
+        "Option",
+        "Option.some"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/ShortlexCodeExistence.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.514235867._hygCtx._hyg.3",
+          "type": "Fintype n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.514235867._hygCtx._hyg.6",
+          "type": "(a b : n) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "S",
+          "type": "n → n → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hS",
+          "type": "S.IsHermitian ∧ ∀ (x : n →₀ ℂ), 0 ≤ x.sum fun i xi => x.sum fun j xj => star xi * S i j * xj"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "ha",
+          "type": "Real.lt✝ 0 a"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dc",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc",
+          "type": "Real.lt✝ 0 (c x)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc'",
+          "type": "HasFDerivAtFilter c (ContinuousLinearMap.toSpanSingleton ℝ dc) (nhds x ×ˢ pure x)"
+        }
+      ],
+      "conclusion_whnf": "HasFDerivAtFilter (fun y => D0.Analysis.regularizedReturnPrice a (↑(c y ^ 2) • S))\n  (ContinuousLinearMap.toSpanSingleton ℝ (-(2 * dc / c x) * D0.Analysis.regularizedReturnGain a (↑(c x ^ 2) • S)))\n  (nhds x ×ˢ pure x)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 29,
+            "line": 53
+          },
+          "start": {
+            "column": 0,
+            "line": 25
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 54,
+            "line": 27
+          },
+          "start": {
+            "column": 8,
+            "line": 27
+          }
+        }
+      },
+      "elaborated_type": "∀ {n : Type u_1} [inst : Fintype n] [inst_1 : DecidableEq n] (S : Matrix n n ℂ),\n  S.PosSemidef →\n    ∀ (a x : ℝ),\n      0 < a →\n        ∀ (c : ℝ → ℝ) (dc : ℝ),\n          0 < c x →\n            HasDerivAt c dc x →\n              HasDerivAt (fun y => D0.Analysis.regularizedReturnPrice a (↑(c y ^ 2) • S))\n                (-(2 * dc / c x) * D0.Analysis.regularizedReturnGain a (↑(c x ^ 2) • S)) x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.TaskFaithfulRadialPriceDerivative",
+      "name": "D0.Research.regularizedReturnPrice_hasDerivAt_scalarCorner",
+      "proof_dependencies": [
+        "AddCommGroup",
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommGroup.toAddGroup",
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toNatCast",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instMul",
+        "Complex.instRing",
+        "Complex.instStarRing",
+        "Complex.ofReal",
+        "Complex.partialOrder",
+        "ContinuousSMul",
+        "D0.Analysis.ReturnPriceLogScaleDerivative.regularizedReturnPrice_hasDerivAt_logScale",
+        "D0.Analysis.regularizedReturnGain",
+        "D0.Analysis.regularizedReturnPrice",
+        "DecidableEq",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribLattice.toLattice",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionSemiring.toGroupWithZero",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.casesOn",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.ndrec",
+        "Eq.rec",
+        "Eq.refl",
+        "Eq.symm",
+        "Field.toSemifield",
+        "Filter.Eventually",
+        "Filter.EventuallyEq",
+        "Filter.Tendsto.eventually",
+        "Filter.mp_mem",
+        "Filter.univ_mem'",
+        "Fintype",
+        "Function.comp",
+        "GroupWithZero.toDivisionMonoid",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HEq",
+        "HEq.casesOn",
+        "HEq.refl",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "HasDerivAt",
+        "HasDerivAt.comp",
+        "HasDerivAt.congr_of_eventuallyEq",
+        "HasDerivAt.const_mul",
+        "HasDerivAt.continuousAt",
+        "HasDerivAt.log",
+        "InnerProductSpace.toNormedSpace",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Inv.inv",
+        "InvOneClass.toInv",
+        "IsBoundedSMul.continuousSMul",
+        "IsModuleTopology.toContinuousSMul",
+        "IsTopologicalRing.toIsTopologicalSemiring",
+        "IsTopologicalSemiring.toIsModuleTopology",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNNRat.to_isNat",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_isNNRat",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne'",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNNRat_inv_pos",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.div_congr",
+        "Mathlib.Tactic.Ring.Common.div_pf",
+        "Mathlib.Tactic.Ring.Common.inv_mul",
+        "Mathlib.Tactic.Ring.Common.inv_single",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Matrix",
+        "Matrix.PosSemidef",
+        "Matrix.smul",
+        "Membership.mem",
+        "Module",
+        "Module.toDistribMulAction",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalNormedRing.toNonUnitalSeminormedRing",
+        "NonUnitalSeminormedCommRing.toNonUnitalSeminormedRing",
+        "NonUnitalSeminormedRing.toSeminormedAddCommGroup",
+        "NontriviallyNormedField",
+        "NontriviallyNormedField.toNormedField",
+        "NormedAddCommGroup.toAddCommGroup",
+        "NormedAddCommGroup.toSeminormedAddCommGroup",
+        "NormedAlgebra.toNormedSpace",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toNormedRing",
+        "NormedCommRing.toSeminormedCommRing",
+        "NormedField.toField",
+        "NormedField.toNormedCommRing",
+        "NormedRing.toNonUnitalNormedRing",
+        "NormedRing.toRing",
+        "NormedRing.toSeminormedRing",
+        "NormedSpace.toIsBoundedSMul",
+        "NormedSpace.toModule",
+        "OfNat.ofNat",
+        "PartialOrder.toPreorder",
+        "PseudoMetricSpace.toUniformSpace",
+        "RCLike.charZero_rclike",
+        "RCLike.instOrderClosedTopology",
+        "RCLike.toInnerProductSpaceReal",
+        "RCLike.toNormedAlgebra",
+        "Real",
+        "Real.commRing",
+        "Real.denselyNormedField",
+        "Real.exp",
+        "Real.exp_add",
+        "Real.exp_log",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instPreorder",
+        "Real.instRCLike",
+        "Real.instRing",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.log",
+        "Real.normedAddCommGroup",
+        "Real.normedCommRing",
+        "Real.pseudoMetricSpace",
+        "Real.semiring",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "SMulZeroClass.toSMul",
+        "Semifield.toCommGroupWithZero",
+        "Semifield.toDivisionSemiring",
+        "SemilatticeInf.toPartialOrder",
+        "SeminormedAddCommGroup.toPseudoMetricSpace",
+        "SeminormedCommRing.toNonUnitalSeminormedCommRing",
+        "SeminormedCommRing.toSeminormedRing",
+        "SeminormedRing.toPseudoMetricSpace",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "Set",
+        "Set.instMembership",
+        "SubNegMonoid.toAddMonoid",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "TopologicalSpace",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "congrArg",
+        "eq_of_heq",
+        "eventually_gt_nhds",
+        "heq_of_eq",
+        "id",
+        "inferInstance",
+        "instClosedIicTopology",
+        "instDistribLatticeOfLinearOrder",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instIsTopologicalRingReal",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "ne_of_gt",
+        "nhds",
+        "rfl",
+        "setOf"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommGroup.toAddGroup",
+        "AddGroup.toSubNegMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Complex",
+        "Complex.instMul",
+        "Complex.instRing",
+        "Complex.instStarRing",
+        "Complex.ofReal",
+        "Complex.partialOrder",
+        "D0.Analysis.regularizedReturnGain",
+        "D0.Analysis.regularizedReturnPrice",
+        "DecidableEq",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "DivInvMonoid.toDiv",
+        "DivisionSemiring.toSemiring",
+        "Field.toSemifield",
+        "Fintype",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "HasDerivAt",
+        "IsModuleTopology.toContinuousSMul",
+        "IsTopologicalRing.toIsTopologicalSemiring",
+        "IsTopologicalSemiring.toIsModuleTopology",
+        "LT.lt",
+        "Matrix",
+        "Matrix.PosSemidef",
+        "Matrix.smul",
+        "Module.toDistribMulAction",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Neg.neg",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NontriviallyNormedField.toNormedField",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toSeminormedCommRing",
+        "NormedField.toField",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instDivInvMonoid",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.pseudoMetricSpace",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "Semifield.toDivisionSemiring",
+        "SeminormedCommRing.toSeminormedRing",
+        "SeminormedRing.toPseudoMetricSpace",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "SubNegMonoid.toAddMonoid",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instIsTopologicalRingReal",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/TaskFaithfulRadialPriceDerivative.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "V",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "X",
+          "type": "Type u_2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.2622055491._hygCtx._hyg.4",
+          "type": "NormedAddCommGroup V"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.2622055491._hygCtx._hyg.7",
+          "type": "InnerProductSpace ℂ V"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.2622055491._hygCtx._hyg.13",
+          "type": "Module.Finite ℂ V"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.2622055491._hygCtx._hyg.19",
+          "type": "NormedAddCommGroup X"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.2622055491._hygCtx._hyg.22",
+          "type": "InnerProductSpace ℂ X"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.2622055491._hygCtx._hyg.28",
+          "type": "Module.Finite ℂ X"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "Type u_3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.2622055491._hygCtx._hyg.35",
+          "type": "Fintype n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.TaskFaithfulRadialPriceDerivative.2622055491._hygCtx._hyg.38",
+          "type": "(a b : n) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "K",
+          "type": "V →L[ℂ] X"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b",
+          "type": "OrthonormalBasis n ℂ V"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "other",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hz",
+          "type": "Real.le✝ 0 z"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hzOne",
+          "type": "Real.lt✝ z 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dc",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc",
+          "type": "Real.lt✝ 0 (c x)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hc'",
+          "type": "HasFDerivAtFilter c (ContinuousLinearMap.toSpanSingleton ℝ dc) (nhds x ×ˢ pure x)"
+        }
+      ],
+      "conclusion_whnf": "HasFDerivAtFilter\n  (fun y => D0.Analysis.regularizedReturnPrice (1 - z) (↑(c y ^ 2) • ↑(z * other ^ 2) • D0.Analysis.gramMatrix (↑K) b))\n  (ContinuousLinearMap.toSpanSingleton ℝ\n    (-(2 * dc / c x) *\n      D0.Analysis.regularizedReturnGain (1 - z) (↑(c x ^ 2) • ↑(z * other ^ 2) • D0.Analysis.gramMatrix (↑K) b)))\n  (nhds x ×ˢ pure x)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 35,
+            "line": 73
+          },
+          "start": {
+            "column": 0,
+            "line": 55
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 51,
+            "line": 58
+          },
+          "start": {
+            "column": 8,
+            "line": 58
+          }
+        }
+      },
+      "elaborated_type": "∀ {V : Type u_1} {X : Type u_2} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℂ V]\n  [inst_2 : FiniteDimensional ℂ V] [inst_3 : NormedAddCommGroup X] [inst_4 : InnerProductSpace ℂ X]\n  [inst_5 : FiniteDimensional ℂ X] {n : Type u_3} [inst_6 : Fintype n] [inst_7 : DecidableEq n] (K : V →L[ℂ] X)\n  (b : OrthonormalBasis n ℂ V) (z other x : ℝ),\n  0 ≤ z →\n    z < 1 →\n      ∀ (c : ℝ → ℝ) (dc : ℝ),\n        0 < c x →\n          HasDerivAt c dc x →\n            have S := ↑(z * other ^ 2) • D0.Analysis.gramMatrix (↑K) b;\n            HasDerivAt (fun y => D0.Analysis.regularizedReturnPrice (1 - z) (↑(c y ^ 2) • S))\n              (-(2 * dc / c x) * D0.Analysis.regularizedReturnGain (1 - z) (↑(c x ^ 2) • S)) x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.TaskFaithfulRadialPriceDerivative",
+      "name": "D0.Research.taskReturnGramPrice_hasDerivAt_scalarCorner",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommGroup.toAddGroup",
+        "AddCommMagma.toAdd",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddGroup.toSubNegMonoid",
+        "AddGroup.toSubtractionMonoid",
+        "AddLeftCancelSemigroup.toIsLeftCancelAdd",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Algebra.id",
+        "Algebra.toSMul",
+        "Algebra.to_smulCommClass",
+        "CStarAlgebra.toStarModule",
+        "CommCStarAlgebra.toCStarAlgebra",
+        "CommCStarAlgebra.toNonUnitalCommCStarAlgebra",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNormedField",
+        "Complex.instRCLike",
+        "Complex.instRing",
+        "Complex.instSemiring",
+        "Complex.instStarRing",
+        "Complex.instZero",
+        "Complex.ofReal",
+        "Complex.partialOrder",
+        "Complex.zero_le_real",
+        "ContinuousLinearMap",
+        "ContinuousLinearMap.toLinearMap",
+        "D0.Analysis.gramMatrix",
+        "D0.Analysis.gramMatrix_posSemidef",
+        "D0.Research.regularizedReturnPrice_hasDerivAt_scalarCorner",
+        "DecidableEq",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "DivisionSemiring.toSemiring",
+        "Field.toSemifield",
+        "FiniteDimensional",
+        "Fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "HSub.hSub",
+        "HasDerivAt",
+        "Iff.mpr",
+        "InnerProductSpace",
+        "InnerProductSpace.toNormedSpace",
+        "IsLeftCancelAdd.addLeftReflectLE_of_addLeftReflectLT",
+        "IsModuleTopology.toContinuousSMul",
+        "IsOrderedAddMonoid.toAddLeftMono",
+        "IsOrderedModule.toPosSMulMono",
+        "IsOrderedRing.toPosMulMono",
+        "IsRightCancelAdd.addRightStrictMono_of_addRightMono",
+        "IsScalarTower.right",
+        "IsTopologicalRing.toIsTopologicalSemiring",
+        "IsTopologicalSemiring.toIsModuleTopology",
+        "LE.le",
+        "LT.lt",
+        "Matrix",
+        "Matrix.PosSemidef",
+        "Matrix.PosSemidef.smul",
+        "Matrix.smul",
+        "Module.toDistribMulAction",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "NegZeroClass.toZero",
+        "NonUnitalCommCStarAlgebra.toNonUnitalNormedCommRing",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocSemiring.toMulZeroClass",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NontriviallyNormedField.toNormedField",
+        "NormedAddCommGroup",
+        "NormedAddCommGroup.toAddCommGroup",
+        "NormedAddCommGroup.toSeminormedAddCommGroup",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toSeminormedCommRing",
+        "NormedDivisionRing.toDivisionRing",
+        "NormedField.toField",
+        "NormedField.toNormedCommRing",
+        "NormedField.toNormedDivisionRing",
+        "NormedSpace.toModule",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "OrthonormalBasis",
+        "PartialOrder.toPreorder",
+        "Preorder.toLE",
+        "PseudoMetricSpace.toUniformSpace",
+        "RCLike.toStarOrderedRing",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instAddCommSemigroup",
+        "Real.instAddGroup",
+        "Real.instAddLeftCancelSemigroup",
+        "Real.instIsOrderedAddMonoid",
+        "Real.instIsOrderedRing",
+        "Real.instLE",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instPreorder",
+        "Real.instStarOrderedRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.normedCommRing",
+        "Real.partialOrder",
+        "Real.pseudoMetricSpace",
+        "Real.semiring",
+        "Ring.toSemiring",
+        "RingHom.id",
+        "SMulZeroClass.toSMul",
+        "Semifield.toDivisionSemiring",
+        "SeminormedAddCommGroup.toPseudoMetricSpace",
+        "SeminormedCommRing.toSeminormedRing",
+        "SeminormedRing.toPseudoMetricSpace",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "StarOrderedRing.toExistsAddOfLE",
+        "SubNegMonoid.toAddMonoid",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "addRightReflectLE_of_addLeftReflectLE",
+        "contravariant_lt_of_covariant_le",
+        "covariant_swap_add_of_covariant_add",
+        "instCommCStarAlgebraComplex",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instHSub",
+        "instIsOrderedModule",
+        "instIsRightCancelAddOfAddRightReflectLE",
+        "instIsTopologicalRingReal",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "instStarRingReal",
+        "mul_nonneg",
+        "sq_nonneg",
+        "sub_pos"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommGroup.toAddGroup",
+        "AddGroup.toSubNegMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Complex",
+        "Complex.instMul",
+        "Complex.instNormedField",
+        "Complex.instRCLike",
+        "Complex.instSemiring",
+        "Complex.ofReal",
+        "ContinuousLinearMap",
+        "ContinuousLinearMap.toLinearMap",
+        "D0.Analysis.gramMatrix",
+        "D0.Analysis.regularizedReturnGain",
+        "D0.Analysis.regularizedReturnPrice",
+        "DecidableEq",
+        "DenselyNormedField.toNontriviallyNormedField",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "DivInvMonoid.toDiv",
+        "DivisionSemiring.toSemiring",
+        "Field.toSemifield",
+        "FiniteDimensional",
+        "Fintype",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "HSub.hSub",
+        "HasDerivAt",
+        "InnerProductSpace",
+        "InnerProductSpace.toNormedSpace",
+        "IsModuleTopology.toContinuousSMul",
+        "IsTopologicalRing.toIsTopologicalSemiring",
+        "IsTopologicalSemiring.toIsModuleTopology",
+        "LE.le",
+        "LT.lt",
+        "Matrix",
+        "Matrix.smul",
+        "Module.toDistribMulAction",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Neg.neg",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NontriviallyNormedField.toNormedField",
+        "NormedAddCommGroup",
+        "NormedAddCommGroup.toAddCommGroup",
+        "NormedAddCommGroup.toSeminormedAddCommGroup",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toSeminormedCommRing",
+        "NormedDivisionRing.toDivisionRing",
+        "NormedField.toField",
+        "NormedField.toNormedCommRing",
+        "NormedField.toNormedDivisionRing",
+        "NormedSpace.toModule",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "OrthonormalBasis",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.denselyNormedField",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instDivInvMonoid",
+        "Real.instLE",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instOne",
+        "Real.instSub",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.pseudoMetricSpace",
+        "Real.semiring",
+        "RingHom.id",
+        "SMulZeroClass.toSMul",
+        "Semifield.toDivisionSemiring",
+        "SeminormedAddCommGroup.toPseudoMetricSpace",
+        "SeminormedCommRing.toSeminormedRing",
+        "SeminormedRing.toPseudoMetricSpace",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toAddMonoid",
+        "UniformSpace.toTopologicalSpace",
+        "Zero.toOfNat0",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instHSub",
+        "instIsTopologicalRingReal",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/TaskFaithfulRadialPriceDerivative.lean"
+    }
+  ]
+}
