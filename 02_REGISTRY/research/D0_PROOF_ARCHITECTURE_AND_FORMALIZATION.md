@@ -17753,3 +17753,13 @@ The [code transition refactor and C0 receipts](sources/d0_proof_architecture_for
 reuse `stateCode_eq_iff` in `codeStep_respects_profile`, with the same theorem
 statement and assumptions. Versioned provenance and compiled views remain
 technical evidence, not semantic acceptance or physical realization.
+
+### #334 §7fj: Lean binding remains open
+
+The [pinned source-to-Lean gap review](sources/d0_proof_architecture_formalization_2026-10-24/reports/owner_7fj_lean_binding_gap_2026-11-05/SUMMARY_RU.md)
+compares the full same-clock Book/CQ source identity with the existing finite
+moving-projector derivative and return-contrast interfaces. The owner carrier,
+return block, determinant and physical source map are not yet bound to those
+interfaces; their possible equivalence is not rejected. The Lean derivative has
+fixed β and z, while the owner's full identity allows varying β. No new
+conditional wrapper, physical selection or GR closure is claimed.

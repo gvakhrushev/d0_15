@@ -1,0 +1,65 @@
+D0.Algebra.MovingProjectorTransport.cut.{u_1} {R : Type u_1} [Ring R] (P U : R) : R
+D0.Analysis.MovingProjectorBookPrice.matrixBook03Price.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (β z : ℝ)
+  (Δ P U : ℝ → Matrix ι ι ℂ) (s : ℝ) : ℝ
+D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] [Nonempty ι] (β z : ℝ) {Δ P U : ℝ → Matrix ι ι ℂ} {dΔ dP dU : Matrix ι ι ℂ} {t : ℝ} (hβ : β ≠ 0)
+  (hΔ : HasDerivAt Δ dΔ t) (hHerm : star (Δ t) = Δ t) (hP : HasDerivAt P dP t) (hU : HasDerivAt U dU t)
+  (hIdem : ∀ᶠ (s : ℝ) in nhds t, P s * P s = P s) (hSelfAdjoint : ∀ᶠ (s : ℝ) in nhds t, star (P s) = P s)
+  (hSlit :
+    (1 -
+          ↑z •
+            (star (D0.Algebra.MovingProjectorTransport.cut (P t) (U t)) *
+              D0.Algebra.MovingProjectorTransport.cut (P t) (U t))).det ∈
+      Complex.slitPlane) :
+  have K := D0.Algebra.MovingProjectorTransport.generator (P t) dP;
+  have ρ := D0.Analysis.MovingProjectorBookPrice.matrixThermalState β (Δ t);
+  have C := D0.Algebra.MovingProjectorTransport.cut (P t) (U t);
+  have R := (1 - ↑z • (star C * C))⁻¹;
+  have V := (1 - P t) * (dU - D0.Algebra.MovingProjectorTransport.comm K (U t)) * P t;
+  HasDerivAt (fun s => D0.Analysis.MovingProjectorBookPrice.matrixBook03Price β z Δ P U s)
+    (-(ρ * (dΔ - D0.Algebra.MovingProjectorTransport.comm K (Δ t))).trace.re + z * (2 * (R * star C * V).trace.re)) t
+D0.Analysis.regularizedReturnPrice_contrast_bound.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (S HPlus HMinus : Matrix n n ℂ) (hS : S.PosSemidef) (hHPlus : HPlus.PosSemidef) (hHMinus : HMinus.PosSemidef)
+  (a qPlus qMinus η θ t Λ : ℝ) (ha : 0 < a) (hqPlus : 0 < qPlus) (hqMinus : 0 < qMinus) (hη : 0 ≤ η) (hθ : 0 ≤ θ)
+  (hqPlusUpper : qPlus ≤ Real.exp θ) (hqMinusUpper : qMinus ≤ Real.exp θ)
+  (hgain : 0 < D0.Analysis.regularizedReturnGain a S) (ht : t ≠ 0) (hΛ : 0 < Λ)
+  (hPlusLower : (HPlus - ↑(Real.exp (-2 * η)) • ↑qPlus • S).PosSemidef)
+  (hPlusUpper : (↑(Real.exp (2 * η)) • ↑qPlus • S - HPlus).PosSemidef)
+  (hMinusLower : (HMinus - ↑(Real.exp (-2 * η)) • ↑qMinus • S).PosSemidef)
+  (hMinusUpper : (↑(Real.exp (2 * η)) • ↑qMinus • S - HMinus).PosSemidef) :
+  |(D0.Analysis.regularizedReturnPrice a HPlus - D0.Analysis.regularizedReturnPrice a HMinus -
+            D0.Analysis.regularizedReturnPrice a (↑qPlus • S) +
+          D0.Analysis.regularizedReturnPrice a (↑qMinus • S)) /
+        (2 * t * (D0.Analysis.regularizedReturnGain a S * Λ))| ≤
+    Real.exp θ * (Real.exp (2 * η) - 1) / (|t| * Λ)
+D0.Research.taskReturnProduct_price_contrast_bound.{u_1, u_2, u_3, u_4, u_5} {J : Type u_1} {I : Type u_2}
+  {X : Type u_3} [NormedAddCommGroup I] [InnerProductSpace ℂ I] [FiniteDimensional ℂ I] [NormedAddCommGroup X]
+  [InnerProductSpace ℂ X] [FiniteDimensional ℂ X] {V : Type u_4} [NormedAddCommGroup V] [InnerProductSpace ℂ V]
+  [FiniteDimensional ℂ V] {n : Type u_5} [Fintype n] [DecidableEq n] (prepare : Bool → J → X →ₗᵢ[ℂ] I)
+  (reference actual : Bool → J → I →ₗ[ℂ] I) (c ε : Bool → J → ℝ) (w : Bool → List J)
+  (hc : ∀ (k : Bool), ∀ j ∈ w k, 0 < c k j)
+  (hcorner :
+    ∀ (k : Bool), ∀ j ∈ w k, D0.Research.taskReturnCompression (prepare k j).toLinearMap (reference k j) = ↑(c k j) • 1)
+  (heffect : ∀ (k : Bool), ∀ j ∈ w k, ‖LinearMap.toContinuousLinearMap (actual k j - reference k j)‖ ≤ ε k j)
+  (hsmall : ∀ (k : Bool), ∀ j ∈ w k, 2 * ε k j / c k j < 1) (K : V →L[ℂ] X) (b : OrthonormalBasis n ℂ V)
+  (z T0 η θ t Λ : ℝ) (q : Bool → ℝ) (hz : 0 ≤ z) (hzOne : z < 1) (hT0 : 0 < T0) (hq : ∀ (k : Bool), 0 < q k)
+  (hscale : ∀ (k : Bool), (List.map (c k) (w k)).prod ^ 2 = q k * T0) (hη : 0 ≤ η) (hθ : 0 ≤ θ)
+  (hηend : ∀ (k : Bool), D0.Analysis.perturbationEta (fun j => 2 * ε k j / c k j) (w k) ≤ η)
+  (hqUpper : ∀ (k : Bool), q k ≤ Real.exp θ)
+  (hgain : 0 < D0.Analysis.regularizedReturnGain (1 - z) (↑(z * T0) • D0.Analysis.gramMatrix (↑K) b)) (ht : t ≠ 0)
+  (hΛ : 0 < Λ) :
+  have T := fun k => (List.map (c k) (w k)).prod ^ 2;
+  have S0 := ↑(z * T0) • D0.Analysis.gramMatrix (↑K) b;
+  have S := fun k => ↑(z * T k) • D0.Analysis.gramMatrix (↑K) b;
+  have H := fun k =>
+    ↑z • D0.Analysis.gramMatrix (↑(D0.Research.taskReturnProduct (prepare k) (actual k) (w k) ∘SL K)) b;
+  |(D0.Analysis.regularizedReturnPrice (1 - z) (H true) - D0.Analysis.regularizedReturnPrice (1 - z) (H false) -
+            D0.Analysis.regularizedReturnPrice (1 - z) (S true) +
+          D0.Analysis.regularizedReturnPrice (1 - z) (S false)) /
+        (2 * t * (D0.Analysis.regularizedReturnGain (1 - z) S0 * Λ))| ≤
+    Real.exp θ * (Real.exp (2 * η) - 1) / (|t| * Λ)
+'D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Analysis.regularizedReturnPrice_contrast_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.taskReturnProduct_price_contrast_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
