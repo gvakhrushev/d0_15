@@ -1,0 +1,1878 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "593129552501368e6701fd39046a9d0745481968",
+  "worktree_dirty": false,
+  "lean_source_digest": "7d283fe9a37f4181d6e29a044c9063695d0512d5f52ba489a3badcc1d7a20d33",
+  "collector_sha256": "2fc92671f0bca80d43e7dcbe366fd085a145708bb18be594eceffcb963203f24",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Foundation.FutureShortlexAdapter"
+  ],
+  "module_prefix": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.3009100647._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.3009100647._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "List Symbol"
+        }
+      ],
+      "conclusion_whnf": "List Symbol",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 58,
+            "line": 30
+          },
+          "start": {
+            "column": 0,
+            "line": 28
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 23,
+            "line": 28
+          },
+          "start": {
+            "column": 18,
+            "line": 28
+          }
+        }
+      },
+      "elaborated_type": "{Symbol : Type} →\n  [inst : LinearOrder Symbol] →\n    [WellFoundedLT Symbol] →\n      (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) →\n        (List Symbol → F.State) → List Symbol → List Symbol",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.canon",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.FutureShortlexAdapter.futureWordSetoid",
+        "D0.Foundation.VerificationCore.CodePresentation.canon",
+        "D0.Foundation.VerificationCore.wordClassPresentation",
+        "DistribLattice.toLattice",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "Quotient",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "DistribLattice.toLattice",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.777704805._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.777704805._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "d",
+          "type": "List Symbol"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureShortlexAdapter.canon F dec c = D0.Foundation.FutureShortlexAdapter.canon F dec d ↔\n  F.profile (dec c) = F.profile (dec d)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 53,
+            "line": 35
+          },
+          "start": {
+            "column": 0,
+            "line": 32
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 20,
+            "line": 32
+          },
+          "start": {
+            "column": 8,
+            "line": 32
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State) (c d : List Symbol),\n  D0.Foundation.FutureShortlexAdapter.canon F dec c = D0.Foundation.FutureShortlexAdapter.canon F dec d ↔\n    F.profile (dec c) = F.profile (dec d)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.canon_eq_iff",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.FutureShortlexAdapter.futureWordSetoid",
+        "D0.Foundation.VerificationCore.wordClass_canon_eq_iff",
+        "DistribLattice.toLattice",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.canon",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Iff",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.2192897458._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.2192897458._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "d",
+          "type": "List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "F.profile (dec c) = F.profile (dec d)"
+        }
+      ],
+      "conclusion_whnf": "(D0.Foundation.FutureShortlexAdapter.canon F dec c).length < d.length ∨\n  (D0.Foundation.FutureShortlexAdapter.canon F dec c).length = d.length ∧\n    (D0.Foundation.FutureShortlexAdapter.canon F dec c = d ∨\n      List.Lex (fun a b => a < b) (D0.Foundation.FutureShortlexAdapter.canon F dec c) d)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 56,
+            "line": 44
+          },
+          "start": {
+            "column": 0,
+            "line": 41
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 41
+          },
+          "start": {
+            "column": 8,
+            "line": 41
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State) (c d : List Symbol),\n  F.profile (dec c) = F.profile (dec d) →\n    D0.Foundation.VerificationCore.ShortlexLE (D0.Foundation.FutureShortlexAdapter.canon F dec c) d",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.canon_minimal",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.futureWordSetoid",
+        "D0.Foundation.VerificationCore.wordClass_canon_minimal",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.canon",
+        "D0.Foundation.VerificationCore.ShortlexLE",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.2275642706._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.2275642706._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "List Symbol"
+        }
+      ],
+      "conclusion_whnf": "F.profile (dec (D0.Foundation.FutureShortlexAdapter.canon F dec c)) = F.profile (dec c)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 52,
+            "line": 39
+          },
+          "start": {
+            "column": 0,
+            "line": 37
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 37
+          },
+          "start": {
+            "column": 8,
+            "line": 37
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State) (c : List Symbol),\n  F.profile (dec (D0.Foundation.FutureShortlexAdapter.canon F dec c)) = F.profile (dec c)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.canon_profile",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.FutureShortlexAdapter.futureWordSetoid",
+        "D0.Foundation.VerificationCore.wordClass_canon_related",
+        "DistribLattice.toLattice",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.canon",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.1592318403._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.1592318403._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a",
+          "type": "F.2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "List Symbol"
+        }
+      ],
+      "conclusion_whnf": "List Symbol",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 38,
+            "line": 53
+          },
+          "start": {
+            "column": 0,
+            "line": 50
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 26,
+            "line": 51
+          },
+          "start": {
+            "column": 18,
+            "line": 51
+          }
+        }
+      },
+      "elaborated_type": "{Symbol : Type} →\n  [inst : LinearOrder Symbol] →\n    [WellFoundedLT Symbol] →\n      (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) →\n        (List Symbol → F.State) → (F.State → List Symbol) → F.Action → List Symbol → List Symbol",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.codeStep",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.step",
+        "D0.Foundation.FutureShortlexAdapter.canon",
+        "DistribLattice.toLattice",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "DistribLattice.toLattice",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.996179685._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.996179685._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), F.profile (dec (enc s)) = F.profile s"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a",
+          "type": "F.2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "d",
+          "type": "List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "F.profile (dec c) = F.profile (dec d)"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a c = D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a d",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 32,
+            "line": 73
+          },
+          "start": {
+            "column": 0,
+            "line": 63
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 33,
+            "line": 64
+          },
+          "start": {
+            "column": 8,
+            "line": 64
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State)\n  (enc : F.State → List Symbol),\n  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) →\n    ∀ (a : F.Action) (c d : List Symbol),\n      F.profile (dec c) = F.profile (dec d) →\n        D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a c =\n          D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a d",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.codeStep_respects_profile",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_step_congr",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.step",
+        "D0.Foundation.FutureShortlexAdapter.canon",
+        "D0.Foundation.FutureShortlexAdapter.canon_eq_iff",
+        "D0.Foundation.FutureShortlexAdapter.codeStep",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.mpr",
+        "Iff.mpr",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "congrArg",
+        "id",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.codeStep",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.2261790890._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.2261790890._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), F.profile (dec (enc s)) = F.profile s"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a",
+          "type": "F.2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "F.1"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a (D0.Foundation.FutureShortlexAdapter.stateCode F dec enc s) =\n  D0.Foundation.FutureShortlexAdapter.stateCode F dec enc (F.step a s)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 55,
+            "line": 86
+          },
+          "start": {
+            "column": 0,
+            "line": 75
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 26,
+            "line": 76
+          },
+          "start": {
+            "column": 8,
+            "line": 76
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State)\n  (enc : F.State → List Symbol),\n  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) →\n    ∀ (a : F.Action) (s : F.State),\n      D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a\n          (D0.Foundation.FutureShortlexAdapter.stateCode F dec enc s) =\n        D0.Foundation.FutureShortlexAdapter.stateCode F dec enc (F.step a s)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.codeStep_stateCode",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_step_congr",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.step",
+        "D0.Foundation.FutureShortlexAdapter.canon",
+        "D0.Foundation.FutureShortlexAdapter.canon_eq_iff",
+        "D0.Foundation.FutureShortlexAdapter.canon_profile",
+        "D0.Foundation.FutureShortlexAdapter.codeStep",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.mpr",
+        "Eq.trans",
+        "Iff.mpr",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "congrArg",
+        "id",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.step",
+        "D0.Foundation.FutureShortlexAdapter.codeStep",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        }
+      ],
+      "conclusion_whnf": "Setoid (List Symbol)",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 67,
+            "line": 26
+          },
+          "start": {
+            "column": 0,
+            "line": 23
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 20,
+            "line": 25
+          },
+          "start": {
+            "column": 4,
+            "line": 25
+          }
+        }
+      },
+      "elaborated_type": "{Symbol : Type} →\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) → (List Symbol → F.State) → Setoid (List Symbol)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.futureWordSetoid",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "List",
+        "Setoid.ker"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "List",
+        "Setoid"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.observe (false, false) () =\n    D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.observe (false, true) () ∧\n  D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution\n      D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, false) ≠\n    D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution\n      D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, true)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 84,
+            "line": 136
+          },
+          "start": {
+            "column": 0,
+            "line": 127
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 50,
+            "line": 129
+          },
+          "start": {
+            "column": 8,
+            "line": 129
+          }
+        }
+      },
+      "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.observe (false, false) () =\n    D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.observe (false, true) () ∧\n  D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution\n      D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, false) ≠\n    D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution\n      D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, true)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.hiddenBit_current_same_but_codes_different",
+      "proof_dependencies": [
+        "And.intro",
+        "Bool",
+        "Bool.false",
+        "Bool.instWellFoundedLT",
+        "Bool.linearOrder",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.observe",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_different_future",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_same_current",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode_encode",
+        "D0.Foundation.FutureShortlexAdapter.pairEncode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff",
+        "Eq",
+        "Iff.mp",
+        "List",
+        "Ne",
+        "Prod.mk",
+        "Unit.unit",
+        "congrArg"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "Bool",
+        "Bool.false",
+        "Bool.instWellFoundedLT",
+        "Bool.linearOrder",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.observe",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode",
+        "D0.Foundation.FutureShortlexAdapter.pairEncode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "Eq",
+        "List",
+        "Ne",
+        "Prod.mk",
+        "Unit.unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a._@._internal._hyg.0",
+          "type": "List Bool"
+        }
+      ],
+      "conclusion_whnf": "Bool × Bool",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 24,
+            "line": 103
+          },
+          "start": {
+            "column": 0,
+            "line": 100
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 14,
+            "line": 100
+          },
+          "start": {
+            "column": 4,
+            "line": 100
+          }
+        }
+      },
+      "elaborated_type": "List Bool → Bool × Bool",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.pairDecode",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.false",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode.match_1",
+        "List",
+        "Prod",
+        "Prod.mk",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "List",
+        "Prod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "List Bool → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Foundation.FutureShortlexAdapter.178755516._hygCtx.17.D0.Foundation.FutureShortlexAdapter.178755516._hygCtx._hyg.29",
+          "type": "List Bool"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "(a b : Bool) → (tail : List Bool) → motive (a :: b :: tail)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "(a : Bool) → motive [a]"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_3",
+          "type": "Unit → motive []"
+        }
+      ],
+      "conclusion_whnf": "motive x✝",
+      "declaration_kind": "definition",
+      "declaration_ranges": null,
+      "elaborated_type": "(motive : List Bool → Sort u_1) →\n  (x : List Bool) →\n    ((a b : Bool) → (tail : List Bool) → motive (a :: b :: tail)) →\n      ((a : Bool) → motive [a]) → (Unit → motive []) → motive x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.pairDecode.match_1",
+      "proof_dependencies": [
+        "Bool",
+        "List",
+        "List.casesOn",
+        "List.cons",
+        "List.nil",
+        "Unit",
+        "Unit.unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "List",
+        "List.cons",
+        "List.nil",
+        "Unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Bool × Bool"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureShortlexAdapter.pairDecode (D0.Foundation.FutureShortlexAdapter.pairEncode s) = s",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 5,
+            "line": 109
+          },
+          "start": {
+            "column": 0,
+            "line": 107
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 25,
+            "line": 107
+          },
+          "start": {
+            "column": 8,
+            "line": 107
+          }
+        }
+      },
+      "elaborated_type": "∀ (s : Bool × Bool),\n  D0.Foundation.FutureShortlexAdapter.pairDecode (D0.Foundation.FutureShortlexAdapter.pairEncode s) = s",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.pairDecode_encode",
+      "proof_dependencies": [
+        "Bool",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode",
+        "D0.Foundation.FutureShortlexAdapter.pairEncode",
+        "Eq",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "Prod",
+        "Prod.casesOn",
+        "Prod.mk"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode",
+        "D0.Foundation.FutureShortlexAdapter.pairEncode",
+        "Eq",
+        "Prod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Bool × Bool"
+        }
+      ],
+      "conclusion_whnf": "List Bool",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 58,
+            "line": 105
+          },
+          "start": {
+            "column": 0,
+            "line": 105
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 14,
+            "line": 105
+          },
+          "start": {
+            "column": 4,
+            "line": 105
+          }
+        }
+      },
+      "elaborated_type": "Bool × Bool → List Bool",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.pairEncode",
+      "proof_dependencies": [
+        "Bool",
+        "List.cons",
+        "List.nil",
+        "Prod",
+        "Prod.fst",
+        "Prod.snd"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "List",
+        "Prod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.3030146620._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.3030146620._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "F.1"
+        }
+      ],
+      "conclusion_whnf": "List Symbol",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 21,
+            "line": 48
+          },
+          "start": {
+            "column": 0,
+            "line": 46
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 27,
+            "line": 46
+          },
+          "start": {
+            "column": 18,
+            "line": 46
+          }
+        }
+      },
+      "elaborated_type": "{Symbol : Type} →\n  [inst : LinearOrder Symbol] →\n    [WellFoundedLT Symbol] →\n      (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) →\n        (List Symbol → F.State) → (F.State → List Symbol) → F.State → List Symbol",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.stateCode",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.FutureShortlexAdapter.canon",
+        "DistribLattice.toLattice",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "DistribLattice.toLattice",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.2184475422._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.2184475422._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), F.profile (dec (enc s)) = F.profile s"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "F.1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "F.1"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureShortlexAdapter.stateCode F dec enc s = D0.Foundation.FutureShortlexAdapter.stateCode F dec enc t ↔\n  F.profile s = F.profile t",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 41,
+            "line": 61
+          },
+          "start": {
+            "column": 0,
+            "line": 55
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 24,
+            "line": 56
+          },
+          "start": {
+            "column": 8,
+            "line": 56
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State)\n  (enc : F.State → List Symbol),\n  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) →\n    ∀ (s t : F.State),\n      D0.Foundation.FutureShortlexAdapter.stateCode F dec enc s =\n          D0.Foundation.FutureShortlexAdapter.stateCode F dec enc t ↔\n        F.profile s = F.profile t",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.canon",
+        "D0.Foundation.FutureShortlexAdapter.canon_eq_iff",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.mpr",
+        "Iff",
+        "Iff.rfl",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "congrArg",
+        "id",
+        "instDistribLatticeOfLinearOrder",
+        "propext"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Iff",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.3329198486._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureShortlexAdapter.3329198486._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), F.profile (dec (enc s)) = F.profile s"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "E",
+          "type": "D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "F.1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "F.1"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureShortlexAdapter.stateCode F dec enc s = D0.Foundation.FutureShortlexAdapter.stateCode F dec enc t ↔\n  D0.Foundation.VerificationCore.representedRecord E s = D0.Foundation.VerificationCore.representedRecord E t",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 67,
+            "line": 96
+          },
+          "start": {
+            "column": 0,
+            "line": 88
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 90
+          },
+          "start": {
+            "column": 8,
+            "line": 90
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State)\n  (enc : F.State → List Symbol),\n  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) →\n    ∀ (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (s t : F.State),\n      D0.Foundation.FutureShortlexAdapter.stateCode F dec enc s =\n          D0.Foundation.FutureShortlexAdapter.stateCode F dec enc t ↔\n        D0.Foundation.VerificationCore.representedRecord E s = D0.Foundation.VerificationCore.representedRecord E t",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff_record",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "D0.Foundation.VerificationCore.representedRecord_eq_iff",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.mpr",
+        "Iff",
+        "Iff.rfl",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "congrArg",
+        "id",
+        "instDistribLatticeOfLinearOrder",
+        "propext"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Iff",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.TheoryTransfer.visibleBitSystem\n      D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, false) =\n    D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.TheoryTransfer.visibleBitSystem\n      D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (true, false) →\n  False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 92,
+            "line": 125
+          },
+          "start": {
+            "column": 0,
+            "line": 118
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 32,
+            "line": 119
+          },
+          "start": {
+            "column": 8,
+            "line": 119
+          }
+        }
+      },
+      "elaborated_type": "D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.TheoryTransfer.visibleBitSystem\n    D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, false) ≠\n  D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.TheoryTransfer.visibleBitSystem\n    D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (true, false)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.visibleBit_distinct_code",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.false",
+        "Bool.false_eq_true",
+        "Bool.instWellFoundedLT",
+        "Bool.linearOrder",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode_encode",
+        "D0.Foundation.FutureShortlexAdapter.pairEncode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff",
+        "D0.Foundation.TheoryTransfer.visibleBitSystem",
+        "Eq",
+        "Eq.mp",
+        "False",
+        "False.elim",
+        "Iff.mp",
+        "List",
+        "List.nil",
+        "Prod.mk",
+        "Unit.unit",
+        "congrArg",
+        "congrFun"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "Bool.false",
+        "Bool.instWellFoundedLT",
+        "Bool.linearOrder",
+        "Bool.true",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode",
+        "D0.Foundation.FutureShortlexAdapter.pairEncode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.TheoryTransfer.visibleBitSystem",
+        "List",
+        "Ne",
+        "Prod.mk"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.TheoryTransfer.visibleBitSystem\n    D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, false) =\n  D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.TheoryTransfer.visibleBitSystem\n    D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, true)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 57,
+            "line": 116
+          },
+          "start": {
+            "column": 0,
+            "line": 111
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 28,
+            "line": 112
+          },
+          "start": {
+            "column": 8,
+            "line": 112
+          }
+        }
+      },
+      "elaborated_type": "D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.TheoryTransfer.visibleBitSystem\n    D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, false) =\n  D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.TheoryTransfer.visibleBitSystem\n    D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, true)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.FutureShortlexAdapter.visibleBit_same_code",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.false",
+        "Bool.instWellFoundedLT",
+        "Bool.linearOrder",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode_encode",
+        "D0.Foundation.FutureShortlexAdapter.pairEncode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff",
+        "D0.Foundation.TheoryTransfer.visibleBitSystem",
+        "D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures",
+        "Eq",
+        "Iff.mpr",
+        "List",
+        "Prod.mk",
+        "congrArg"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "Bool.false",
+        "Bool.instWellFoundedLT",
+        "Bool.linearOrder",
+        "Bool.true",
+        "D0.Foundation.FutureShortlexAdapter.pairDecode",
+        "D0.Foundation.FutureShortlexAdapter.pairEncode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.TheoryTransfer.visibleBitSystem",
+        "Eq",
+        "List",
+        "Prod.mk"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.TheoryTransfer.visibleBitSystem =\n  { State := Bool × Bool, Action := Unit, Test := Unit, Outcome := Bool, step := fun x s => s,\n    observe := fun s x => s.1 }",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "D0.Foundation.TheoryTransfer.visibleBitSystem =\n  { State := Bool × Bool, Action := Unit, Test := Unit, Outcome := Bool, step := fun x s => s,\n    observe := fun s x => s.1 }",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "name": "D0.Foundation.TheoryTransfer.visibleBitSystem.eq_1",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.TheoryTransfer.visibleBitSystem",
+        "Eq.refl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.mk",
+        "D0.Foundation.TheoryTransfer.visibleBitSystem",
+        "Eq",
+        "Prod",
+        "Prod.fst",
+        "Unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+    }
+  ]
+}
