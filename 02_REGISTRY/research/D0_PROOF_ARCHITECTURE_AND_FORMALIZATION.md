@@ -17356,3 +17356,37 @@ the merged public build are recorded with exact source and cache boundaries in
 [the integrated receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/creator_bridge_integrated_d2d_2026-11-04/SUMMARY_RU.md).
 The Python-to-Lean correspondence is a checked manual transcription, not an
 extracted formal semantics of Python.
+
+
+### Original CAR generator and rational modular boost
+
+`D0.Geometry.OriginalBookBoost` uses the original creator reindexing to build
+the concrete generator `G=c₀c₁†+c₁c₀†` from roles A and D. It proves its
+eight-entry sparse form, the diagonal projector `G²` and `G³=G` over the
+integers and rationals. It constructs the exact modular-source matrix
+`U=I+G²/40+9G/40` and four complex operands with `ν=3/5` and phases
+`(i,i,-1,-i)` in the original bit order, placing `U` on the right only for
+mode 1 (role D). The coefficient identity records `r=1/9` as the half-angle
+parameter, while `tanh(theta)=9/41`; the separate uniform numerical fixture
+uses `theta=.08`. These parameter settings are not interchangeable.
+
+The exact finite Lean proof and axiom check passed with the existing scratch
+cache, without `native_decide`, `sorry` or heartbeat overrides; the checked
+theorems report `propext`, `Classical.choice`, and `Quot.sound`. Independent
+read-only review verified the entries, phases and ordering against the pinned
+source. This formalization does not yet prove that the rational matrix equals
+the analytic matrix exponential; it does not construct the original 128
+Kraus words, prove their effect span or identify it with the abstract matrix
+pair. Physical admission, clock/work and owner #334 remain open, with
+`GR_closed=false`.
+
+`tools/check_original_boost_mapping.py` checks the two pinned source blob
+hashes before executing the uniform module and the modular generator/boost AST
+fragment. At modulus 1009 it compares all 256 entries of each of G and U and
+checks G³=G; this finite field check does not establish analytic exponentiation
+or the full 128-Kraus result. Like the creator check, it executes trusted
+pinned upstream code and requires NumPy, SciPy and SymPy.
+The modular fragment here receives the uniform creator matrices reduced modulo
+1009; their agreement with the modular creator block is separately checked by
+`check_original_creator_mapping.py`. The Python sparse reconstruction is not
+a machine extraction of the Lean matrix.
