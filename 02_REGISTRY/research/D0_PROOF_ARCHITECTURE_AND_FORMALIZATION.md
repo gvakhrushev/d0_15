@@ -16502,3 +16502,28 @@ isolated checkout and did not complete: the `rg` output capture exhausted
 memory before result processing. Its final coverage remains unresolved until a
 successful replay; no expected result has been changed. This infrastructure
 error is separate from the scoped mathematical claims and physical premises.
+
+### Fixed-history return price derivative — 4 November 2026
+
+The source owned by #334, §5 at owner commit
+`fd35893d77e4aa5f819bafa0c6428c8e7a8f1812` and source blob
+`c99e90a8c8e96bae70e700fa88d1c2d824a1831b`, gives the log-scale price/gain
+identity for fixed history. `D0.Analysis.ReturnPriceLogScaleDerivative`
+proves it for any finite nonnegative spectrum and positive offset, then uses
+the existing matrix spectral identities for any fixed positive semidefinite
+matrix, including singular and zero matrices. For the source's parameters use
+`a=1−ζ>0`, `ζ≥0`, the Lean matrix `ζ S`, and `t=log T` for `T>0`. An
+independent review checked this substitution.
+
+The result does not differentiate a changing history, vary the offset, prove
+a compiler error derivative, select or admit a native physical source, or
+establish the missing full price. When gain is zero, the derivative is zero;
+normalization by gain is not defined. Owner #334 and its physical obligations
+remain unchanged.
+
+The module passed a direct Lean invocation on the separately reviewed blob
+`2cb856f5c92a19c60d3dda5704836620b5c12866`. The local `narrow` build
+compiled all 2,694 jobs, but its post-build toolchain snapshot failed, so the
+repository build helper reported `INVALID_BUILD`; the compiled jobs alone do
+not constitute an accepted build receipt. A subsequent independent toolchain
+query succeeded. An authenticated helper replay remains outstanding.

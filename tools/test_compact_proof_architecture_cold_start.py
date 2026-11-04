@@ -15,6 +15,14 @@ from tools.test_receipt_freshness import ReceiptFreshnessTests
 from tools.test_c0_reconciliation import ReconciliationFixtureTests
 from tools.test_c0_book_byte_partition import BytePartitionTests, GitEvidenceTests
 from tools.test_c0_candidate_ranges import CandidateRangeTests
+from tools.test_proof_search_streaming import StreamingTextTests
+from tools import test_proof_architecture as proof_tests
+
+
+class DirectContentThresholdTests(unittest.TestCase):
+    test_direct_content_requires_content_alone_to_meet_threshold = (
+        proof_tests.ProofArchitectureTests.test_direct_content_requires_content_alone_to_meet_threshold
+    )
 
 
 def example_case():
