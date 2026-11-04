@@ -16431,6 +16431,15 @@ The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/repor
 has content SHA-256 `3458f406768116974825ae75f5c23719c305d10c75c9d00adb1fa549649d0ed5`.
 Existing warnings in other modules remain.
 
+The [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_uncoupled_center_inventory_2026-11-04.json)
+was collected from clean published snapshot `2669b054c4cbd62d8d21380b4513c83aa7fc0f8f`
+at the same Lean source digest. It records the four declarations, their
+elaborated types and proof dependencies; their axiom union is `Classical.choice`,
+`Quot.sound` and `propext`. Its content SHA-256 is
+`101e436042b711f80934088e83b5f2cbce6918c550cd75a321f90af57e30ced1`.
+The inventory documents the compiled scope; it does not accept the source's
+stronger ontological statement.
+
 The read-only command `python tools/proof_architecture.py --json c0-ranges
 --snapshot <published-primary-commit>` verifies the two declared Book01
 §01.1.8 and Book02 §02.3b review tables against their pinned source blobs,

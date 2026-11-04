@@ -1,0 +1,351 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "2669b054c4cbd62d8d21380b4513c83aa7fc0f8f",
+  "worktree_dirty": false,
+  "lean_source_digest": "78c9b3daa863a996163b01d200a46c68e3d03dea73710239467973262216661b",
+  "collector_sha256": "8bd19cbc4b171fd1b189ed8d04d3ce369631665fc543d176dd50748951944fd1",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Foundation.UncoupledCenterRawWitness"
+  ],
+  "module_prefix": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "∃ x y,\n  x ≠ y ∧\n    D0.Foundation.TheoryTransfer.visibleBitSystem.profile x = D0.Foundation.TheoryTransfer.visibleBitSystem.profile y ∧\n      D0.Foundation.VerificationCore.representedRecord\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification x =\n        D0.Foundation.VerificationCore.representedRecord\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 109,
+            "line": 68
+          },
+          "start": {
+            "column": 0,
+            "line": 54
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 52,
+            "line": 55
+          },
+          "start": {
+            "column": 8,
+            "line": 55
+          }
+        }
+      },
+      "elaborated_type": "∃ x y,\n  x ≠ y ∧\n    D0.Foundation.TheoryTransfer.visibleBitSystem.profile x = D0.Foundation.TheoryTransfer.visibleBitSystem.profile y ∧\n      D0.Foundation.VerificationCore.representedRecord\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification x =\n        D0.Foundation.VerificationCore.representedRecord\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "name": "D0.Foundation.UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record",
+      "proof_dependencies": [
+        "And",
+        "And.intro",
+        "Bool",
+        "Bool.ctorIdx",
+        "Bool.false",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.TheoryTransfer.visibleBitSystem",
+        "D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+        "D0.Foundation.VerificationTransferApplication.visibleBit_records_follow_complete_future_equivalence",
+        "Eq",
+        "Eq.casesOn",
+        "Eq.refl",
+        "Exists",
+        "Exists.intro",
+        "False",
+        "False.elim",
+        "HEq",
+        "HEq.refl",
+        "List",
+        "Ne",
+        "Prod",
+        "Prod.mk",
+        "Prod.snd",
+        "congrArg",
+        "noConfusion_of_Nat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.TheoryTransfer.visibleBitSystem",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+        "Eq",
+        "Exists",
+        "List",
+        "Ne"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/UncoupledCenterRawWitness.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "binders": [],
+      "conclusion_whnf": "∃ x y,\n  x ≠ y ∧\n    D0.Foundation.UncoupledCenterRawWitness.unitExecution.uncoupledCenter.profile x =\n      D0.Foundation.UncoupledCenterRawWitness.unitExecution.uncoupledCenter.profile y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 73,
+            "line": 37
+          },
+          "start": {
+            "column": 0,
+            "line": 28
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 32,
+            "line": 29
+          },
+          "start": {
+            "column": 8,
+            "line": 29
+          }
+        }
+      },
+      "elaborated_type": "∃ x y,\n  x ≠ y ∧\n    D0.Foundation.UncoupledCenterRawWitness.unitExecution.uncoupledCenter.profile x =\n      D0.Foundation.UncoupledCenterRawWitness.unitExecution.uncoupledCenter.profile y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "name": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future",
+      "proof_dependencies": [
+        "And",
+        "And.intro",
+        "Bool",
+        "Bool.ctorIdx",
+        "Bool.false",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter_profile_independent",
+        "D0.Foundation.UncoupledCenterRawWitness.unitExecution",
+        "Eq",
+        "Eq.casesOn",
+        "Eq.refl",
+        "Exists",
+        "Exists.intro",
+        "False",
+        "False.elim",
+        "HEq",
+        "HEq.refl",
+        "List",
+        "Ne",
+        "Prod",
+        "Prod.mk",
+        "Prod.snd",
+        "Unit.unit",
+        "congrArg",
+        "noConfusion_of_Nat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter",
+        "D0.Foundation.UncoupledCenterRawWitness.unitExecution",
+        "Eq",
+        "Exists",
+        "List",
+        "Ne"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/UncoupledCenterRawWitness.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "F.1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "E",
+          "type": "D0.Foundation.VerifiabilityNecessity.TheoryVerification F.uncoupledCenter.futureEmpiricalTheory"
+        }
+      ],
+      "conclusion_whnf": "∃ x y,\n  x ≠ y ∧\n    F.uncoupledCenter.profile x = F.uncoupledCenter.profile y ∧\n      D0.Foundation.VerificationCore.representedRecord E x = D0.Foundation.VerificationCore.representedRecord E y",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 56,
+            "line": 52
+          },
+          "start": {
+            "column": 0,
+            "line": 39
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 43,
+            "line": 40
+          },
+          "start": {
+            "column": 8,
+            "line": 40
+          }
+        }
+      },
+      "elaborated_type": "∀ (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (s : F.State)\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.uncoupledCenter.futureEmpiricalTheory),\n  ∃ x y,\n    x ≠ y ∧\n      F.uncoupledCenter.profile x = F.uncoupledCenter.profile y ∧\n        D0.Foundation.VerificationCore.representedRecord E x = D0.Foundation.VerificationCore.representedRecord E y",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "name": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future_and_record",
+      "proof_dependencies": [
+        "And",
+        "And.intro",
+        "Bool",
+        "Bool.ctorIdx",
+        "Bool.false",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter_profile_independent",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "D0.Foundation.VerificationCore.uncoupledCenter_records_equal",
+        "Eq",
+        "Eq.casesOn",
+        "Eq.refl",
+        "Exists",
+        "Exists.intro",
+        "False",
+        "False.elim",
+        "HEq",
+        "HEq.refl",
+        "List",
+        "Ne",
+        "Prod",
+        "Prod.mk",
+        "Prod.snd",
+        "congrArg",
+        "noConfusion_of_Nat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "Eq",
+        "Exists",
+        "List",
+        "Ne"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/UncoupledCenterRawWitness.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 26,
+            "line": 26
+          },
+          "start": {
+            "column": 0,
+            "line": 19
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 17,
+            "line": 20
+          },
+          "start": {
+            "column": 4,
+            "line": 20
+          }
+        }
+      },
+      "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "name": "D0.Foundation.UncoupledCenterRawWitness.unitExecution",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.mk",
+        "Unit",
+        "Unit.unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/UncoupledCenterRawWitness.lean"
+    }
+  ]
+}
