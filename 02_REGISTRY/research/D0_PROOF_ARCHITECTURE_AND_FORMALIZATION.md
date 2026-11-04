@@ -17686,3 +17686,11 @@ checks computable positional access to an already supplied list of codes and
 its actual coded-core consumer. The absent-index control preserves the
 precondition of append retention; physical record creation, encoding and cost
 remain separate.
+
+### Independent source review: finite singleton-code witness
+
+The [Book01 §01.1.8 finite witness review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0118_finite_sigma_review_2026-11-05/SUMMARY_RU.md)
+checks `finiteSigmaWitness` and its visible archive consumer at the supplied
+finite protocol hypotheses. The invalid-code control does not invalidate the
+round trip for represented objects. Physical alphabet, raw-state encoding and
+work remain separate; complete C0 acceptance is not implied.
